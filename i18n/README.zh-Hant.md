@@ -1,6 +1,7 @@
 [English](../README.md) · [العربية](README.ar.md) · [Español](README.es.md) · [Français](README.fr.md) · [日本語](README.ja.md) · [한국어](README.ko.md) · [Tiếng Việt](README.vi.md) · [中文 (简体)](README.zh-Hans.md) · [中文（繁體）](README.zh-Hant.md) · [Deutsch](README.de.md) · [Русский](README.ru.md)
 
 
+
 [![LazyingArt banner](https://github.com/lachlanchen/lachlanchen/raw/main/figs/banner.png)](https://github.com/lachlanchen/lachlanchen/blob/main/figs/banner.png)
 
 # Leonard Susskind 講義筆記儲存庫
@@ -16,35 +17,43 @@
 ![Forks](https://img.shields.io/github/forks/lachlanchen/leonardsusskind?style=flat-square&logo=github&label=forks&color=3b82f6)
 ![Last Commit](https://img.shields.io/github/last-commit/lachlanchen/leonardsusskind?style=flat-square&color=8b5cf6)
 
-> 🎓 一個多語系封存的 Leonard Susskind 講義資料庫，保留可閱讀的精美 PDF 與可編輯的 LaTeX 原始檔，方便學習、重複使用與查閱。
+> 🎓 一個多語言講義檔案庫，保留了 Leonard Susskind 的講義 PDF 與可編輯 LaTeX 原始檔，供學習、重用與參考。
+
+---
 
 ## 概覽
-本儲存庫是個以內容為先的講義資料彙整庫，集中整理自 Leonard Susskind 教授的教學體系。
+本儲存庫是以內容為核心的 Leonard Susskind 教授教學體系講義資料檔案庫。
 
-> 這是 Leonard Susskind 教授的課堂講義。若有任何版權疑慮，請聯絡我刪除此儲存庫。Susskind 教授不對筆記中的錯誤或誤導性資訊負責，我也同樣不負責。
+> 這是 Leonard Susskind 教授的課堂筆記。若涉及版權問題，請聯繫我以刪除此儲存庫。Susskind 教授不對筆記中的錯誤或誤導性資訊負責，我也一樣不負責。
+
+它在同一處彙整了三層內容：
+
+- 精選課程軌道與課程進度。
+- 已發布成果（`.pdf`）以供閱讀與分享。
+- 原始檔（`.tex`、`.bib`、範本）供維護與延伸本檔案庫。
 
 ### 主要目標
-- 將課程筆記與進度集中管理於一處。
-- 在核心軌道與補充軌道中保留草稿與筆記進度的可見性。
-- 提供源資料（PDF、TeX、BibTeX、範本），讓後續編寫與延展更順暢。
+- 將課程筆記與進度集中在同一位置。
+- 在核心與補充軌道中保留草稿與筆記進度的可見性。
+- 提供原始資料（PDF、TeX、BibTeX、範本）以支援後續撰寫。
 
 ## 特性
-- 核心課程追蹤與參考資料。
-- 補充課程進度追蹤。
-- 若干核心軌道已有課程 PDF。
-- 選定軌道具備 LaTeX 原始檔。
-- 可重複使用的 LaTeX 範本位於 `template/tuftle` 與 `template/kaobook`。
-- 倉庫視覺素材位於 `figs/`。
-- 多語系 README 存放於 `i18n/`。
+- 📚 核心課程追蹤與參考資源。
+- 📌 補充課程進度追蹤。
+- 📄 若干核心軌道已提供現有課程 PDF。
+- 🧪 選定軌道包含 LaTeX 原始素材。
+- 🧷 可重複使用的 LaTeX 範本位於 `template/tuftle` 與 `template/kaobook`。
+- 🎨 儲存庫視覺素材位於 `figs/`。
+- 🌐 多語言 README 組合位於 `i18n/`。
 
 ## 快速快照
 | 區域 | 可用內容 |
 |---|---|
 | 📝 筆記 | 多套課程筆記並含進度追蹤 |
-| 🧾 原始碼 | 選定子專案提供 TeX/BibTeX 原始檔 |
+| 🧾 原始檔 | 指定子專案提供 TeX/BibTeX 檔案 |
 | 🧱 範本 | `template/tuftle` 與 `template/kaobook` |
 | 🎨 品牌素材 | `figs/banner.*`、`figs/logo.*`、`figs/logo-w-text.*` |
-| 🌍 國際化 | `i18n/README.*.md` 多語系版本 |
+| 🌍 國際化 | `i18n/README.*.md` 多語言版本 |
 
 ## 目錄
 - [概覽](#概覽)
@@ -58,12 +67,12 @@
 - [範例](#範例)
 - [開發說明](#開發說明)
 - [標準化課程進度（已保留並重組）](#標準化課程進度已保留並重組)
-- [問題排解](#問題排解)
+- [疑難排解](#疑難排解)
 - [路線圖](#路線圖)
 - [貢獻](#貢獻)
 - [❤️ Support](#-support)
 - [致謝](#致謝)
-- [授權條款](#授權條款)
+- [授權](#授權)
 
 ## 專案結構
 ```text
@@ -146,17 +155,19 @@ leonardsusskind/
 
 ## 先決條件
 閱讀時：
-- 一個 PDF 閱讀器（系統內建或應用程式皆可）。
+- 📖 PDF 閱讀器（系統內建或應用程式皆可）。
 
-編輯／建立 TeX 材料時：
-- 一套 LaTeX 環境（TeX Live / MiKTeX）。
-- `pdflatex`。
-- 依子專案需求，使用 `bibtex` 或 `biber`。
-- 使用索引功能的專案需額外安裝 `makeindex`。
+編修／建置 TeX 素材時：
+- 📦 LaTeX 發行套件（TeX Live / MiKTeX）。
+- ⚙️ `pdflatex`。
+- 🗂️ 視子專案而定，使用 `bibtex` 或 `biber`。
+- 🔎 使用索引的專案需有 `makeindex`。
 
-前提說明：
-- 倉庫根目錄未提供單一建置系統（例如 `Makefile`、`package.json`、`pyproject.toml`）。
-- 各子專案應於各自目錄內執行建置流程。
+---
+
+備註：
+- 根目錄沒有單一全域建置系統（例如 `Makefile`、`package.json`、`pyproject.toml`）。
+- 建置流程預期在每個子專案目錄中個別執行。
 
 ## 安裝
 ```bash
@@ -165,36 +176,36 @@ git clone https://github.com/lachlanchen/leonardsusskind.git
 cd leonardsusskind
 ```
 
-本儲存庫以內容為核心。如欲鏡像或 fork，請依你的版本替換 remote URL。
+本儲存庫以內容為先。若要鏡像或 Fork，請改為使用你自己的遠端網址。
 
-僅閱讀現有筆記不需要安裝任何全域套件。
+閱讀現有筆記不需安裝任何全域套件。
 
 ## 使用方式
 ### 1) 閱讀現有筆記
-在對應資料夾開啟 PDF，例如：
+開啟對應資料夾中的 PDF，例如：
 - `core_general_relativity/lesson_1.pdf`
 - `core_cosmology/lesson_1.pdf`
 - `core_statistical_mechanics/lesson_1.pdf`
 - `supplemental_particle_physics_2/NumberTheory.pdf`
 
-### 2) 編寫或擴充 LaTeX 材料
-- 在目標課程／範本目錄中編輯 `.tex` 與 `.bib`。
-- 依該目錄指定流程進行編譯。
-- 在原地建置，確保相對路徑與樣式檔正確解析。
+### 2) 編寫或延伸 LaTeX 素材
+- 在目標課程／範本資料夾編修 `.tex` 與 `.bib`。
+- 依該資料夾指定流程進行編譯。
+- 在當地目錄內建置，以確保本機相對路徑與樣式檔可正確解析。
 
-### 3) 依軌道入口檔案導航
-每個主要軌道都有自己的 `README.md`，內含該軌道的進度與範圍說明。
+### 3) 依軌道入口檔導覽
+每個主要軌道都有自己的 `README.md`，提供該軌道的範圍說明、參考資料與進度。
 
 ## 設定
-本倉庫沒有全域設定檔。
+沒有全域設定檔。
 
-設定為每個 TeX 專案本地維護，常見設定點如下：
-- `template/kaobook/main.tex` 中的文件類型與套件設定。
-- `template/kaobook/` 中可重複使用的樣式／結構。
-- 本地 `main.tex` / `ref.bib` 配對中的參考文獻後端與引用樣式。
-- 各專案中各章節資源與圖片的 include 路徑。
+設定位於各 LaTeX 專案內部，本地維護，常見位置如下：
+- `template/kaobook/main.tex` 中的文件類別與套件設定。
+- `template/kaobook/` 的可重複使用樣式與架構。
+- 本地 `main.tex`／`ref.bib` 組合中的參考文獻後端與引用樣式。
+- 各專案中的圖片與章節資源 include 路徑。
 
-代表性設定入口：
+代表性本地設定點：
 - `template/kaobook/main.tex`
 - `template/tuftle/main.tex`
 - `core_cosmology/cosmology_ch10/cosmology_ch10.tex`
@@ -203,7 +214,7 @@ cd leonardsusskind
 
 ## 範例
 ### 範例 A：建置 `template/kaobook`
-`template/kaobook/main.tex` 示範了以下編譯流程：
+`template/kaobook/main.tex` 說明了以下編譯流程：
 
 ```bash
 cd template/kaobook
@@ -215,7 +226,7 @@ pdflatex main
 ```
 
 ### 範例 B：建置 `core_cosmology/cosmology_ch10`
-`cosmology_ch10.tex` 使用類似 BibTeX 的流程：
+`cosmology_ch10.tex` 採用類似 BibTeX 的流程：
 
 ```bash
 cd core_cosmology/cosmology_ch10
@@ -245,38 +256,38 @@ pdflatex main.tex
 pdflatex main.tex
 ```
 
-### 範例 E：本機查看輸出
+### 範例 E：在本機查看輸出結果
 ```bash
 xdg-open supplemental_particle_physics_1/ch1/main.pdf
 ```
 
 ## 開發說明
-- 本儲存庫主要是文件／筆記庫，而非應用程式原始碼。
-- 部分目錄已提交已生成的 TeX 產物（如 `.aux`、`.log`、`.toc`、`.bbl` 等）。
-- 建置指令可能因子目錄不同而異；請依各 `.tex` 內部規定。
-- 每個核心與補充課程下都有 `README.md`，應與根目錄進度描述一致。
-- `i18n/` 用於管理多語系 README。
-- 根目錄 README 視為規範版本，本地化更新時請與之對齊。
+- 這是主要以文件／筆記為主的儲存庫，非應用程式原始碼庫。
+- 某些資料夾會提交已產生的 TeX 檔（如 `.aux`、`.log`、`.toc`、`.bbl` 等）。
+- 編譯命令會依子目錄不同而有差異；請以各子目錄的 `.tex` 規範為準。
+- 核心與補充目錄皆有對應 `README.md`，且應與根目錄進度主張保持一致。
+- `i18n/` 用於管理多語言 README。
+- 根 README 視為權威版本，本地化檔案應在更新時保持同步。
 
 ## 標準化課程進度（已保留並重組）
 
 ### 核心課程
 
 #### 古典力學
-本課程教材 [Classical Mechanics](https://www.amazon.com/gp/product/0465075681?ie=UTF8&tag=lachlanchen-20&camp=1789&linkCode=xm2&creativeASIN=0465075681) 已出版。可於 Amazon 購買 [Classical Mechanics](https://www.amazon.com/gp/product/0465075681?ie=UTF8&tag=lachlanchen-20&camp=1789&linkCode=xm2&creativeASIN=0465075681)。
+此課程的教材 [Classical Mechanics](https://www.amazon.com/gp/product/0465075681?ie=UTF8&tag=lachlanchen-20&camp=1789&linkCode=xm2&creativeASIN=0465075681) 已出版。你可以在 Amazon 購買 [Classical Mechanics](https://www.amazon.com/gp/product/0465075681?ie=UTF8&tag=lachlanchen-20&camp=1789&linkCode=xm2&creativeASIN=0465075681)。
 
 #### 量子力學
-本課程教材 [Quantum Mechanics](https://www.amazon.com/gp/product/0465062903?ie=UTF8&tag=lachlanchen-20&camp=1789&linkCode=xm2&creativeASIN=0465062903) 已出版。可於 Amazon 購買 [Quantum Mechanics](https://www.amazon.com/gp/product/0465062903?ie=UTF8&tag=lachlanchen-20&camp=1789&linkCode=xm2&creativeASIN=0465062903)。
+此課程的教材 [Quantum Mechanics](https://www.amazon.com/gp/product/0465062903?ie=UTF8&tag=lachlanchen-20&camp=1789&linkCode=xm2&creativeASIN=0465062903) 已出版。你可以在 Amazon 購買 [Quantum Mechanics](https://www.amazon.com/gp/product/0465062903?ie=UTF8&tag=lachlanchen-20&camp=1789&linkCode=xm2&creativeASIN=0465062903)。
 
-#### 特殊相對論與電動力學
-本課程教材 [Special Relativity and Electrodynamics](https://www.amazon.com/gp/product/1541674065?ie=UTF8&tag=lachlanchen-20&camp=1789&linkCode=xm2&creativeASIN=1541674065) 已出版。可於 Amazon 購買 [Special Relativity and Electrodynamics](https://www.amazon.com/gp/product/1541674065?ie=UTF8&tag=lachlanchen-20&camp=1789&linkCode=xm2&creativeASIN=1541674065)。
+#### 狹義相對論與電磁學
+此課程的教材 [Special Relativity and Electrodynamics](https://www.amazon.com/gp/product/1541674065?ie=UTF8&tag=lachlanchen-20&camp=1789&linkCode=xm2&creativeASIN=1541674065) 已出版。你可以在 Amazon 購買 [Special Relativity and Electrodynamics](https://www.amazon.com/gp/product/1541674065?ie=UTF8&tag=lachlanchen-20&camp=1789&linkCode=xm2&creativeASIN=1541674065)。
 
-#### 核心課程進度表
-| 課程 | 草稿進度 | 筆記進度 | 筆記/參考來源 |
+#### 核心進度表
+| 課程 | 草稿進度 | 筆記進度 | 筆記/參考 |
 |---|---:|---:|---|
-| 一般相對論 | 10/10 | 10/10 | 講義由 https://www.lapasserelle.com/general_relativity/ 記錄。 |
-| 宇宙學 | 10/10 | 9/10 | 講義已由 https://www.lapasserelle.com/cosmology/ 記錄第 1 到 9 章，第 10 章仍在進行中。 |
-| 統計力學 | 11/11 | 10/10 | 講義由 https://www.lapasserelle.com/statistical_mechanics/ 記錄。 |
+| 一般相對論 | 10/10 | 10/10 | 講義由 https://www.lapasserelle.com/general_relativity/ 取材。 |
+| 宇宙學 | 10/10 | 9/10 | 第 1 至 9 章的講義由 https://www.lapasserelle.com/cosmology/ 取材，第 10 章尚在進行中。 |
+| 統計力學 | 11/11 | 10/10 | 講義由 https://www.lapasserelle.com/statistical_mechanics/ 取材。 |
 
 ### 補充課程
 | 課程 | 草稿進度 | 筆記進度 |
@@ -285,57 +296,58 @@ xdg-open supplemental_particle_physics_1/ch1/main.pdf
 | 希格斯玻色子 | 0/1 | 0/1 |
 | 量子糾纏 | 0/9 | 0/9 |
 | 相對論 | 0/9 | 0/9 |
-| 粒子物理學 1：基本概念 | 6/10 | 0/10 |
+| 粒子物理學 1：基礎觀念 | 6/10 | 0/10 |
 | 粒子物理學 2：標準模型 | 0/10 | 0/10 |
-| 粒子物理學 3：超對稱與大統一 | 0/10 | 0/10 |
-| 弦論 | 0/11 | 10/10 |
+| 粒子物理學 3：超對稱與大一統 | 0/10 | 0/10 |
+| 弦理論 | 0/11 | 10/10 |
 | 宇宙學與黑洞 | 0/8 | 0/10 |
 
 ### 進度完整性說明
-- 上述進度表沿用自標準化英文 README 文字。
-- 倉庫同時包含成熟內容與占位內容；若某項目錄與表格條目看似不一致，請以表格為文件化目標，並在後續版本中同步更新。
+- 上述進度表沿用英文主 README 的原始文本。
+- 倉庫同時包含成熟內容與預留版塊；若表格條目與資料夾實際狀態不一致，請以表格為文件化目標，並於後續修訂同步更新。
 
-## 問題排解
+## 疑難排解
 | 問題 | 解法 |
 |---|---|
-| `pdflatex: command not found` | 安裝 LaTeX 發行版，並確認可執行檔已加入 `PATH`。 |
-| 參考文獻或索引未顯示 | 執行必要後端（`bibtex` 或 `biber`）並如有需要加上 `makeindex`，再重跑 `pdflatex`。 |
-| 缺少樣式／類別檔 | 請在預期的專案目錄中建置，確保本機相對資源路徑正確。 |
-| 不同環境建置結果不同 | 倉庫中的素材來自不同環境；可盡量對齊套件版本。 |
-| 語系連結過時或缺少語系 README | 維持頂部語言選項列與 `i18n/` 內的文件同步。 |
-| GitHub markdown 連結在資料夾改名後失效 | 請整體重新驗證根 README 與所有 `i18n/README.*.md` 的語系連結。 |
+| `pdflatex: command not found` | 安裝 LaTeX 發行套件，並確認可執行檔已加入 `PATH`。 |
+| 書目／索引未顯示 | 先執行所需後端（`bibtex` 或 `biber`），若有索引再執行 `makeindex`，接著重跑 `pdflatex`。 |
+| 缺少樣式／類別檔錯誤 | 請在目標專案目錄中建置，確保本機資源與樣式檔相對路徑解析正確。 |
+| 不同環境下建置結果不同 | 此儲存庫含多個環境產生的內容；儘量調整套件版本以求一致。 |
+| 語言連結過期或缺少語言 README | 請確保頂部語言清單及 `i18n/` 下各檔案保持同步。 |
+| GitHub Markdown 連結在資料夾改名後不一致 | 請一次性重新確認根 README 與所有 `i18n/README.*.md` 連結。 |
 
 ## 路線圖
-- 繼續補齊補充軌道的實際章節內容與源檔。
+- 繼續補上補充軌道中的完整章節內容與原始檔。
 - 提升各課程 README 的一致性。
-- 擴充並維護 `i18n/` 下的多語 README，並同步語言選擇器。
-- 為每個含 TeX 原始檔的子專案新增倉庫層級建置指引。
-- 在各軌道補齊本地工具鏈差異的編譯範例。
-- 新增最小化自動化流程以驗證 README 與多語連結完整性。
+- 擴充並維護 `i18n/` 內的多語言 README，並維持語言切換同步。
+- 為每個含 TeX 原始檔的子專案新增專案層級建置指引。
+- 在工具鏈差異明顯的軌道中補充每軌編譯範例。
+- 導入輕量化流程自動檢查 README 與 i18n 連結完整性。
 
 ## 貢獻
-你可透過 fork 並提交 pull request 來為專案做出貢獻。
+你可透過 Fork 並提交 pull request 參與本專案。
 
 建議的貢獻範圍：
-- 新增或改善章節筆記與參考資料。
-- 改善 TeX 原始檔品質與可重現建置指引。
-- 維持根 README 與各課程 README 的進度陳述同步。
-- 在英文 README 變更後，更新 `i18n/` 的多語 README。
+- 增加或改進章節筆記與參考資料。
+- 改善 TeX 原始檔品質並補上可重現建置指令。
+- 保持根 README 與各課程 README 進度敘述同步。
+- 每次更新英文 README 後，請同步更新 `i18n/` 的 README。
 
-建議的 PR 操作方式：
-- 明確說明變更的軌道資料夾。
-- 若有編輯源檔，請附上實際使用的 TeX 編譯指令。
-- 當章節狀態變更時，更新相關進度表。
-- 更新 `i18n/` 內 README，以回應英文 README 的變更。
+建議的 PR 規範：
+- 明確列出變更的課程資料夾。
+- 若有編修原始檔，請附上實際使用的 TeX 編譯命令。
+- 章節狀態有變更時，更新對應進度表。
+- 根據英文 README 變更，記得更新 `i18n/` 下的 README。
 
 ## 致謝
-- Leonard Susskind 教授，原始講義內容的授權與啟發來源。
-- 現有筆記參考來源： https://www.lapasserelle.com/general_relativity/
-- 現有筆記參考來源： https://www.lapasserelle.com/cosmology/
-- 現有筆記參考來源： https://www.lapasserelle.com/statistical_mechanics/
+- Leonard Susskind 教授的原始講義內容。
+- 已參考的講義來源：
+  - https://www.lapasserelle.com/general_relativity/
+  - https://www.lapasserelle.com/cosmology/
+  - https://www.lapasserelle.com/statistical_mechanics/
 
-## 授權條款
-本儲存庫採用 GNU General Public License v3.0 授權。請參閱 [LICENSE](LICENSE)。
+## 授權
+本儲存庫採用 GNU General Public License v3.0 授權。詳情請見 [LICENSE](LICENSE)。
 
 
 ## ❤️ Support

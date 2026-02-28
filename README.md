@@ -1,6 +1,7 @@
 [English](README.md) · [العربية](i18n/README.ar.md) · [Español](i18n/README.es.md) · [Français](i18n/README.fr.md) · [日本語](i18n/README.ja.md) · [한국어](i18n/README.ko.md) · [Tiếng Việt](i18n/README.vi.md) · [中文 (简体)](i18n/README.zh-Hans.md) · [中文（繁體）](i18n/README.zh-Hant.md) · [Deutsch](i18n/README.de.md) · [Русский](i18n/README.ru.md)
 
 
+
 [![LazyingArt banner](https://github.com/lachlanchen/lachlanchen/raw/main/figs/banner.png)](https://github.com/lachlanchen/lachlanchen/blob/main/figs/banner.png)
 
 # Leonard Susskind Lecture Notes Repository
@@ -17,6 +18,8 @@
 ![Last Commit](https://img.shields.io/github/last-commit/lachlanchen/leonardsusskind?style=flat-square&color=8b5cf6)
 
 > 🎓 A multilingual archive of Leonard Susskind lecture-note materials, preserving both polished PDFs and editable LaTeX sources for study, reuse, and reference.
+
+---
 
 ## Overview
 This repository is a content-first archive of lecture-note materials from Professor Leonard Susskind's teaching ecosystem.
@@ -35,13 +38,13 @@ It combines three layers in one place:
 - Provide source materials (PDF, TeX, BibTeX, templates) for continued authoring.
 
 ## Features
-- Core course tracking and references.
-- Supplementary course progress tracking.
-- Existing lesson PDFs for several core tracks.
-- LaTeX source material in selected tracks.
-- Reusable LaTeX templates in `template/tuftle` and `template/kaobook`.
-- Repository visuals in `figs/`.
-- Multilingual README set in `i18n/`.
+- 📚 Core course tracking and references.
+- 📌 Supplementary course progress tracking.
+- 📄 Existing lesson PDFs for several core tracks.
+- 🧪 LaTeX source material in selected tracks.
+- 🧷 Reusable LaTeX templates in `template/tuftle` and `template/kaobook`.
+- 🎨 Repository visuals in `figs/`.
+- 🌐 Multilingual README set in `i18n/`.
 
 ## Quick Snapshot
 | Area | What is available |
@@ -152,13 +155,15 @@ leonardsusskind/
 
 ## Prerequisites
 For reading:
-- A PDF reader (system or app-based).
+- 📖 A PDF reader (system or app-based).
 
 For editing/building TeX materials:
-- A LaTeX distribution (TeX Live / MiKTeX).
-- `pdflatex`.
-- `bibtex` or `biber` depending on subproject.
-- `makeindex` for projects that use indexed entries.
+- 📦 A LaTeX distribution (TeX Live / MiKTeX).
+- ⚙️ `pdflatex`.
+- 🗂️ `bibtex` or `biber` depending on subproject.
+- 🔎 `makeindex` for projects that use indexed entries.
+
+---
 
 Assumption notes:
 - There is no single root-level build system (`Makefile`, `package.json`, `pyproject.toml`) visible in this repository.

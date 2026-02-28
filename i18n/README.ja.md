@@ -3,7 +3,7 @@
 
 [![LazyingArt banner](https://github.com/lachlanchen/lachlanchen/raw/main/figs/banner.png)](https://github.com/lachlanchen/lachlanchen/blob/main/figs/banner.png)
 
-# Leonard Susskind 講義ノート・リポジトリ
+# レナード・サスキンド講義ノートリポジトリ
 
 ![License](https://img.shields.io/badge/license-GPL--3.0-blue.svg)
 ![Content Type](https://img.shields.io/badge/content-Lecture%20Notes%20%26%20LaTeX-informational)
@@ -16,62 +16,64 @@
 ![Forks](https://img.shields.io/github/forks/lachlanchen/leonardsusskind?style=flat-square&logo=github&label=forks&color=3b82f6)
 ![Last Commit](https://img.shields.io/github/last-commit/lachlanchen/leonardsusskind?style=flat-square&color=8b5cf6)
 
-> 🎓 レオナルド・サスキンド（Leonard Susskind）の講義ノート資料を多言語でまとめたアーカイブです。読みやすい PDF と編集可能な LaTeX ソースを、学習・再利用・参照用に保持しています。
+> 🎓 レオナルド・サスキンドの講義ノート資料を多言語でまとめたアーカイブ。学習・再利用・参照のために、完成版 PDF と編集可能な LaTeX ソースを併せて保管しています。
 
-## 概要
-このリポジトリは、Leonard Susskind 教授の講義活動全体から得られた講義ノート資料を一元化したアーカイブです。
+---
 
-> Leonard Susskind 教授の講義ノートです。著作権上の懸念がある場合は、このリポジトリを削除するため連絡してください。講義ノート内の誤りや誤情報について、Susskind 教授も筆者も責任を負いません。
+## Overview
+このリポジトリは、レオナルド・サスキンド教授の教育資源を集約した、講義ノート中心のアーカイブです。
 
-1 か所で 3 層をまとめています。
+> レオナルド・サスキンド教授の講義ノートです。著作権に抵触する場合は削除依頼をお願いします。サスキンド教授はノートの誤りや誤情報について責任を負いません。私も同様です。
 
-- 選定済みのトラックとコース別の進捗。
-- 閲覧・共有用の公開成果物（` .pdf`）。
-- アーカイブを保守・拡張する方向けのソース (`.tex`, `.bib`, テンプレート)。
+ここでは、三つの層を一箇所にまとめています。
 
-### 主な目標
-- 各コースのノートと進捗を 1 箇所で管理する。
-- コア・補助トラック全体で下書きとノート進捗の可視化を維持する。
-- 継続的な執筆のための素材（PDF, TeX, BibTeX, テンプレート）を提供する。
+- 厳選されたノートトラックとコース進行状況の管理。
+- 読了・共有用の公開成果物（`.pdf`）。
+- アーカイブの保守・拡張向けに `.tex`、`.bib`、テンプレートといったソースを提供。
 
-## 特徴
-- コアコースの進捗管理と参照情報。
-- 補助コースの進捗管理。
-- 複数のコアトラックで既存の講義 PDF を保有。
-- 一部トラックで TeX ソースを公開。
-- 再利用可能な LaTeX テンプレートを `template/tuftle` と `template/kaobook` に収録。
-- リポジトリ素材を `figs/` に保管。
-- 多言語 README を `i18n/` に配置。
+### Primary Goals
+- コースノートと進行管理を一元化する。
+- コア・補助トラック双方でドラフトとノート進行の可視性を維持する。
+- 継続的な執筆向けに教材ソース（PDF、TeX、BibTeX、テンプレート）を提供する。
 
-## クイックスナップショット
+## Features
+- 📚 コア科目の追跡と参照情報。
+- 📌 補助科目の進行トラッキング。
+- 📄 いくつかのコアトラック向けに既存のレッスン PDF を掲載。
+- 🧪 一部トラックで LaTeX ソースを公開。
+- 🧷 `template/tuftle` と `template/kaobook` の再利用可能テンプレート。
+- 🎨 ビジュアル素材は `figs/` に保存。
+- 🌐 多言語版 README は `i18n/` で管理。
+
+## Quick Snapshot
 | 領域 | 利用可能内容 |
 |---|---|
-| 📝 ノート | 進捗追跡付きの複数コースノート |
-| 🧾 ソース | 選定されたサブプロジェクトの TeX/BibTeX ソース |
-| 🧱 テンプレート | `template/tuftle` と `template/kaobook` |
-| 🎨 ブランディング | `figs/banner.*`, `figs/logo.*`, `figs/logo-w-text.*` |
-| 🌍 i18n | `i18n/README.*.md` 各言語版 |
+| 📝 ノート | 進行管理付きの複数のコースノートセット |
+| 🧾 ソース | 選定サブプロジェクトでの TeX/BibTeX ソース |
+| 🧱 テンプレート | `template/tuftle` および `template/kaobook` |
+| 🎨 ブランディング | `figs/banner.*`、`figs/logo.*`、`figs/logo-w-text.*` |
+| 🌍 i18n | `i18n/README.*.md` 言語版 |
 
-## 目次
-- [概要](#概要)
-- [特徴](#特徴)
-- [クイックスナップショット](#クイックスナップショット)
-- [プロジェクト構成](#プロジェクト構成)
-- [前提条件](#前提条件)
-- [インストール](#インストール)
-- [使い方](#使い方)
-- [設定](#設定)
-- [例](#例)
-- [開発ノート](#開発ノート)
-- [標準コース進捗（保持・再編成版）](#標準コース進捗保持・再編成版)
-- [トラブルシューティング](#トラブルシューティング)
-- [ロードマップ](#ロードマップ)
-- [コントリビューション](#コントリビューション)
+## Table of Contents
+- [Overview](#overview)
+- [Features](#features)
+- [Quick Snapshot](#quick-snapshot)
+- [Project Structure](#project-structure)
+- [Prerequisites](#prerequisites)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Configuration](#configuration)
+- [Examples](#examples)
+- [Development Notes](#development-notes)
+- [Canonical Course Progress (Preserved and Reorganized)](#canonical-course-progress-preserved-and-reorganized)
+- [Troubleshooting](#troubleshooting)
+- [Roadmap](#roadmap)
+- [Contribution](#contribution)
 - [❤️ Support](#-support)
-- [謝辞](#謝辞)
-- [ライセンス](#ライセンス)
+- [Acknowledgements](#acknowledgements)
+- [License](#license)
 
-## プロジェクト構成
+## Project Structure
 ```text
 leonardsusskind/
 ├── README.md
@@ -150,66 +152,68 @@ leonardsusskind/
         └── bibliography.bib
 ```
 
-## 前提条件
+## Prerequisites
 閲覧時:
-- PDF リーダー（システム標準またはアプリ）
+- 📖 PDF リーダー（OS標準またはアプリ）。
 
-TeX 資料の編集・ビルド時:
-- LaTeX ディストリビューション（TeX Live / MiKTeX）
-- `pdflatex`
-- サブプロジェクトにより `bibtex` または `biber`
-- 索引を使うプロジェクトでは `makeindex`
+TeX 材料の編集・ビルド時:
+- 📦 LaTeX ディストリビューション（TeX Live / MiKTeX）。
+- ⚙️ `pdflatex`。
+- 🗂️ サブプロジェクトに応じた `bibtex` または `biber`。
+- 🔎 インデックスを使うプロジェクトでは `makeindex`。
 
-補足:
-- このリポジトリにはルート直下の統一ビルドシステム（`Makefile`, `package.json`, `pyproject.toml`）はありません。
-- ビルドは各サブプロジェクトのディレクトリ内で実行する前提です。
+---
 
-## インストール
+Assumption notes:
+- このリポジトリのルートには、単一のビルドシステム (`Makefile`、`package.json`、`pyproject.toml`) がありません。
+- 各サブプロジェクトのディレクトリ内でビルドを実行する前提です。
+
+## Installation
 ```bash
-# リポジトリをクローン
+# Clone the repository
 git clone https://github.com/lachlanchen/leonardsusskind.git
 cd leonardsusskind
 ```
 
-このリポジトリはコンテンツ優先で構成されています。ミラーやフォークを作成する場合は、リモート URL を自分のコピー先に置き換えてください。
+このリポジトリはコンテンツ重視です。ミラーやフォークを作成する場合は、用途に合わせてリモート URL をあなた自身のコピーへ置き換えてください。
 
-既存ノートを読むために必要な全体パッケージのインストールは不要です。
+既存ノートを読むだけなら、追加のグローバルパッケージは不要です。
 
-## 使い方
-### 1) 既存ノートを読む
-対象フォルダ内の PDF を開きます。例:
+## Usage
+### 1) Read existing notes
+対応フォルダ内の PDF を開いてください。例:
 - `core_general_relativity/lesson_1.pdf`
 - `core_cosmology/lesson_1.pdf`
 - `core_statistical_mechanics/lesson_1.pdf`
 - `supplemental_particle_physics_2/NumberTheory.pdf`
 
-### 2) LaTeX 資料の執筆・拡張
-- 対象コース/テンプレートのフォルダ内で `.tex` と `.bib` を編集します。
-- そのフォルダで規定されるワークフローでコンパイルします。
-- 相対パス参照が正しく解決されるよう、プロジェクト内で直接ビルドします。
+### 2) Author or extend LaTeX materials
+- 対象のコース／テンプレートフォルダ内の `.tex` と `.bib` を編集。
+- そのフォルダで定義されているワークフローに従ってコンパイル。
+- 相対パスが正しく解決されるよう、対象ディレクトリ内でビルドする。
 
-### 3) トラック別エントリーポイントを辿る
-各主要トラックは独自の `README.md` を持ち、範囲を限定したノート、参考情報、進捗情報が記載されています。
+### 3) Navigate by track-level entry points
+主要トラックごとに `README.md` があり、参照先・進行状況・ノート範囲を定義しています。
 
-## 設定
+## Configuration
 グローバル設定ファイルはありません。
 
-設定は各 TeX プロジェクトのローカル内にあります。典型例として、以下が含まれます:
-- 書誌設定などを含む文書クラスやパッケージ設定は `template/kaobook/main.tex`
-- 再利用可能なスタイル/構造は `template/kaobook/`
-- 引用スタイルや参考文献エンジンは `main.tex` と `ref.bib` の対応関係
-- 画像パスや章別アセットの include path は各プロジェクト内
+設定は各 TeX プロジェクト単位で管理されます。典型的な設定箇所は以下です。
+- 文書クラスとパッケージ設定：`template/kaobook/main.tex`
+- 再利用可能なスタイル／構成：`template/kaobook/`
+- 文献管理と引用スタイル：ローカルの `main.tex` / `ref.bib` ペア
+- 画像や章別アセットの参照パス：各プロジェクト内
 
-代表的なローカル設定ポイント:
+代表的なローカル設定ファイル:
 - `template/kaobook/main.tex`
 - `template/tuftle/main.tex`
 - `core_cosmology/cosmology_ch10/cosmology_ch10.tex`
 - `supplemental_particle_physics_1/ch1/main.tex`
 - `supplemental_advanced_quantum/ch1/main.tex`
 
-## 例
-### 例 A: `template/kaobook` をビルド
-`template/kaobook/main.tex` はこのコンパイル手順を想定しています:
+## Examples
+### Example A: Build `template/kaobook`
+`template/kaobook/main.tex` の手順は以下です。
 
 ```bash
 cd template/kaobook
@@ -220,8 +224,8 @@ pdflatex main
 pdflatex main
 ```
 
-### 例 B: `core_cosmology/cosmology_ch10` をビルド
-`cosmology_ch10.tex` は BibTeX ベースのワークフローを使用します:
+### Example B: Build `core_cosmology/cosmology_ch10`
+`cosmology_ch10.tex` は BibTeX 系のワークフローを使います。
 
 ```bash
 cd core_cosmology/cosmology_ch10
@@ -231,7 +235,7 @@ pdflatex cosmology_ch10.tex
 pdflatex cosmology_ch10.tex
 ```
 
-### 例 C: `supplemental_particle_physics_1/ch1` をビルド
+### Example C: Build `supplemental_particle_physics_1/ch1`
 ```bash
 cd supplemental_particle_physics_1/ch1
 pdflatex main.tex
@@ -241,7 +245,7 @@ pdflatex main.tex
 pdflatex main.tex
 ```
 
-### 例 D: `supplemental_advanced_quantum/ch1` をビルド
+### Example D: Build `supplemental_advanced_quantum/ch1`
 ```bash
 cd supplemental_advanced_quantum/ch1
 pdflatex main.tex
@@ -251,41 +255,41 @@ pdflatex main.tex
 pdflatex main.tex
 ```
 
-### 例 E: 出力をローカルで表示
+### Example E: View output locally
 ```bash
 xdg-open supplemental_particle_physics_1/ch1/main.pdf
 ```
 
-## 開発ノート
-- このリポジトリはアプリケーションコードベースではなく、主にドキュメント/ノートの保存を目的としたものです。
-- フォルダによっては生成済み TeX アーティファクト（`.aux`, `.log`, `.toc`, `.bbl` など）がレポジトリにコミットされています。
-- ビルドコマンドはサブディレクトリごとに異なる場合があり、各 `.tex` のローカル規約に従ってください。
-- コア・補助トラック全体でトラック別の `README.md` が存在し、ルートの進捗説明と整合させる必要があります。
-- `i18n/` は多言語 README バリアントを収容するために存在します。
-- ルート README が正本として扱われるため、ローカル版は更新時にそれに追従してください。
+## Development Notes
+- 本リポジトリは主に文書・ノート中心であり、アプリケーションコードのコードベースではありません。
+- 一部のフォルダには、生成物としての TeX アーティファクト（`.aux`、`.log`、`.toc`、`.bbl` など）がコミットされています。
+- フォルダごとにビルドコマンドが異なる場合があるため、ローカルの `.tex` 規約に従ってください。
+- コア・補助各ディレクトリにはトラック別 `README.md` があり、ルートの進行ステータスと整合させる必要があります。
+- 多言語化は `i18n/` で管理されています。
+- ルート README を正規情報源とし、更新時には各言語版も追従します。
 
-## 標準コース進捗（保持・再編成版）
+## Canonical Course Progress (Preserved and Reorganized)
 
-### コアコース
+### Core Courses
 
-#### 古典力学
-このコースの教科書 [Classical Mechanics](https://www.amazon.com/gp/product/0465075681?ie=UTF8&tag=lachlanchen-20&camp=1789&linkCode=xm2&creativeASIN=0465075681) は出版済みです。Amazon の [Classical Mechanics](https://www.amazon.com/gp/product/0465075681?ie=UTF8&tag=lachlanchen-20&camp=1789&linkCode=xm2&creativeASIN=0465075681) から購入できます。
+#### Classical Mechanics
+この講義の教科書は [Classical Mechanics](https://www.amazon.com/gp/product/0465075681?ie=UTF8&tag=lachlanchen-20&camp=1789&linkCode=xm2&creativeASIN=0465075681) として刊行されています。Amazon から購入できます: [Classical Mechanics](https://www.amazon.com/gp/product/0465075681?ie=UTF8&tag=lachlanchen-20&camp=1789&linkCode=xm2&creativeASIN=0465075681)。
 
-#### 量子力学
-このコースの教科書 [Quantum Mechanics](https://www.amazon.com/gp/product/0465062903?ie=UTF8&tag=lachlanchen-20&camp=1789&linkCode=xm2&creativeASIN=0465062903) は出版済みです。Amazon の [Quantum Mechanics](https://www.amazon.com/gp/product/0465062903?ie=UTF8&tag=lachlanchen-20&camp=1789&linkCode=xm2&creativeASIN=0465062903) から購入できます。
+#### Quantum Mechanics
+この講義の教科書は [Quantum Mechanics](https://www.amazon.com/gp/product/0465062903?ie=UTF8&tag=lachlanchen-20&camp=1789&linkCode=xm2&creativeASIN=0465062903) として刊行されています。Amazon から購入できます: [Quantum Mechanics](https://www.amazon.com/gp/product/0465062903?ie=UTF8&tag=lachlanchen-20&camp=1789&linkCode=xm2&creativeASIN=0465062903)。
 
-#### 特殊相対性理論と電磁気学
-このコースの教科書 [Special Relativity and Electrodynamics](https://www.amazon.com/gp/product/1541674065?ie=UTF8&tag=lachlanchen-20&camp=1789&linkCode=xm2&creativeASIN=1541674065) は出版済みです。Amazon の [Special Relativity and Electrodynamics](https://www.amazon.com/gp/product/1541674065?ie=UTF8&tag=lachlanchen-20&camp=1789&linkCode=xm2&creativeASIN=1541674065) から購入できます。
+#### Special Relativity and Electrodynamics
+この講義の教科書は [Special Relativity and Electrodynamics](https://www.amazon.com/gp/product/1541674065?ie=UTF8&tag=lachlanchen-20&camp=1789&linkCode=xm2&creativeASIN=1541674065) として刊行されています。Amazon から購入できます: [Special Relativity and Electrodynamics](https://www.amazon.com/gp/product/1541674065?ie=UTF8&tag=lachlanchen-20&camp=1789&linkCode=xm2&creativeASIN=1541674065)。
 
-#### コア進捗表
-| コース | 下書き進捗 | ノート進捗 | ノート/参照 |
+#### Core Progress Table
+| Course | Draft Progress | Notes Progress | Notes/Reference |
 |---|---:|---:|---|
-| General Relativity | 10/10 | 10/10 | The lecture notes had been taken by https://www.lapasserelle.com/general_relativity/ . |
-| Cosmology | 10/10 | 9/10 | The lecture notes, from chapter 1 to 9, had been taken by https://www.lapasserelle.com/cosmology/ . The chapter 10 is in the process. |
-| Statistical Mechanics | 11/11 | 10/10 | The lecture notes had been taken by https://www.lapasserelle.com/statistical_mechanics/. |
+| General Relativity | 10/10 | 10/10 | 講義ノートは https://www.lapasserelle.com/general_relativity/ から取得されています。 |
+| Cosmology | 10/10 | 9/10 | 講義ノート（第1〜9章）は https://www.lapasserelle.com/cosmology/ から取得されています。第10章は作成中です。 |
+| Statistical Mechanics | 11/11 | 10/10 | 講義ノートは https://www.lapasserelle.com/statistical_mechanics/ から取得されています。 |
 
-### 補助コース
-| コース | 下書き進捗 | ノート進捗 |
+### Supplementary Courses
+| Course | Draft Progress | Notes Progress |
 |---|---:|---:|
 | Advanced Quantum Mechanics | 0/10 | 0/10 |
 | Higgs Boson | 0/1 | 0/1 |
@@ -297,55 +301,54 @@ xdg-open supplemental_particle_physics_1/ch1/main.pdf
 | String Theory | 0/11 | 10/10 |
 | Cosmology and Black Holes | 0/8 | 0/10 |
 
-### 進捗整合性ノート
-- 上記の進捗表は、ルート README の原文を踏襲して保持しています。
-- リポジトリには成熟したトラックとプレースホルダーのトラックが混在します。表の値と実ファイルの状態に不一致がある場合は、表を正式な方針として扱い、将来の更新で双方を同時に整合してください。
+### Progress Integrity Note
+- 上記の進行表はルートの正規 README から継承しています。
+- このリポジトリには完成済みトラックとプレースホルダートラックが混在しています。表の値と実フォルダの状態に差異がある場合は、表を基準（将来改訂時に両者を同時更新）として扱ってください。
 
-## トラブルシューティング
-| 問題 | 解決方法 |
+## Troubleshooting
+| Issue | Resolution |
 |---|---|
-| `pdflatex: command not found` | LaTeX ディストリビューションをインストールし、`PATH` にバイナリを含めます。 |
-| 参考文献/索引が表示されない | 必要なバックエンド（`bibtex` または `biber`）と `makeindex`（該当時）を実行し、その後 `pdflatex` を再実行します。 |
-| style/class ファイルが見つからないエラー | 正しいプロジェクトディレクトリ内でビルドし、ローカル資産の相対パスを正しく解決します。 |
-| 環境間で出力が異なる | このリポジトリの素材は生成環境が混在するため、可能なら使用パッケージの版を合わせます。 |
-| 多言語リンクが古い／言語 README が不足 | 先頭の言語選択行と `i18n/` 配下のファイルが同期しているか確認します。 |
-| GitHub Markdown リンクがフォルダ名変更後にズレる | ルート言語リンクとすべての `i18n/README.*.md` 参照を一括見直します。 |
+| `pdflatex: command not found` | LaTeX ディストリビューションをインストールし、バイナリが `PATH` に含まれていることを確認してください。 |
+| 参考文献/インデックスが表示されない | 必要なバックエンド（`bibtex` または `biber`）と `makeindex` を実行してから `pdflatex` を再実行します。 |
+| スタイル／クラスファイルエラー | プロジェクト用のディレクトリからビルドし、ローカルアセットへの相対パスが解決されるようにします。 |
+| 環境間でビルド結果が異なる | 本リポジトリには異なる環境由来の資料が混在しています。可能な範囲でパッケージバージョンを揃えてください。 |
+| 多言語リンクの崩れ、または言語 README の欠落 | 先頭の言語リンク行と `i18n/` 配下の README を同期させます。 |
+| GitHub Markdown のリンク不整合（フォルダ名変更後） | ルートの言語リンクと全 `i18n/README.*.md` のリンクを一括で再検証してください。 |
 
-## ロードマップ
-- 補助トラックに実際の章コンテンツとソースファイルを継続的に追加。
-- コース別 README の一貫性を改善。
-- `i18n/` 下の多言語 README を拡張・維持し、言語選択の同期を保つ。
-- TeX ソースを持つ各サブプロジェクトにリポジトリレベルのビルドガイドを追加。
-- ローカルのツールチェーン差分がある箇所にトラック別コンパイル例を追加。
-- README と i18n リンクの整合性を検証する軽量自動化を追加。
+## Roadmap
+- 補助トラックの実際の章コンテンツとソースを継続追加。
+- トラック別 README の整合性を改善。
+- `i18n/` の多言語 README を拡充・維持し、言語セレクタの同期を確保。
+- TeX ソースを持つサブプロジェクトごとに、リポジトリレベルのビルドガイダンスを追加。
+- ローカルツールチェーン差分のあるトラックごとのコンパイル例を追加。
+- README / i18n リンク整合を検証する最小限の自動化を追加。
 
-## コントリビューション
-このプロジェクトへの貢献は、フォークしてプルリクエストを送ることで可能です。
+## Contribution
+このプロジェクトには、フォークしてプルリクエストを送ることで参加できます。
 
-貢献の推奨範囲:
-- 章ノートや参考文献の追加・改善。
-- TeX ソース品質と再現可能なビルド手順の改善。
-- ルート README とトラック別 README の進捗整合を保つ。
-- `i18n/` の多言語 README パリティを維持。
+推奨される貢献範囲:
+- 章ノートや参考資料の追加・改善。
+- TeX ソース品質向上と再現可能なビルド手順の整備。
+- ルートと各トラック README の進行状況表を同期。
+- `i18n/` のREADMEを `README.md` 更新時に対応する言語版へ反映。
 
-推奨 PR フォーマット:
-- 変更したトラックフォルダを明確に記載。
-- ソースファイルを編集した場合は、実行した TeX コンパイルコマンドを添付。
-- 章状態が変わったら該当進捗表を更新。
-- ルート README の更新後、`i18n/` README も更新。
+プルリクエストの運用推奨:
+- 変更したトラックフォルダを明記する。
+- ソース編集を伴う場合は使用した TeX コンパイルコマンドを添える。
+- 章の状態が変わったときは関連する進行表を更新する。
+- 英語版 README 変更後は `i18n/` の README を更新する。
 
-## 謝辞
-- 元となる講義コンテンツを提供された Leonard Susskind 教授。
-- 参照元ノート（既存）: https://www.lapasserelle.com/general_relativity/
-- 参照元ノート（既存）: https://www.lapasserelle.com/cosmology/
-- 参照元ノート（既存）: https://www.lapasserelle.com/statistical_mechanics/
-
-## ライセンス
-このリポジトリは GNU General Public License v3.0 の下で公開されています。[LICENSE](../LICENSE) を参照してください。
-
+## Acknowledgements
+- 元講義コンテンツの提供者であるレオナルド・サスキンド教授に感謝します。
+- 参照元ノート: https://www.lapasserelle.com/general_relativity/
+- 参照元ノート: https://www.lapasserelle.com/cosmology/
+- 参照元ノート: https://www.lapasserelle.com/statistical_mechanics/
 
 ## ❤️ Support
 
 | Donate | PayPal | Stripe |
 | --- | --- | --- |
 | [![Donate](https://camo.githubusercontent.com/24a4914f0b42c6f435f9e101621f1e52535b02c225764b2f6cc99416926004b7/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f446f6e6174652d4c617a79696e674172742d3045413545393f7374796c653d666f722d7468652d6261646765266c6f676f3d6b6f2d6669266c6f676f436f6c6f723d7768697465)](https://chat.lazying.art/donate) | [![PayPal](https://camo.githubusercontent.com/d0f57e8b016517a4b06961b24d0ca87d62fdba16e18bbdb6aba28e978dc0ea21/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f50617950616c2d526f6e677a686f754368656e2d3030343537433f7374796c653d666f722d7468652d6261646765266c6f676f3d70617970616c266c6f676f436f6c6f723d7768697465)](https://paypal.me/RongzhouChen) | [![Stripe](https://camo.githubusercontent.com/1152dfe04b6943afe3a8d2953676749603fb9f95e24088c92c97a01a897b4942/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f5374726970652d446f6e6174652d3633354246463f7374796c653d666f722d7468652d6261646765266c6f676f3d737472697065266c6f676f436f6c6f723d7768697465)](https://buy.stripe.com/aFadR8gIaflgfQV6T4fw400) |
+
+## License
+このリポジトリは GNU General Public License v3.0 の下で公開されています。詳細は [LICENSE](LICENSE)。

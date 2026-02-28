@@ -1,9 +1,10 @@
 [English](../README.md) · [العربية](README.ar.md) · [Español](README.es.md) · [Français](README.fr.md) · [日本語](README.ja.md) · [한국어](README.ko.md) · [Tiếng Việt](README.vi.md) · [中文 (简体)](README.zh-Hans.md) · [中文（繁體）](README.zh-Hant.md) · [Deutsch](README.de.md) · [Русский](README.ru.md)
 
 
+
 [![LazyingArt banner](https://github.com/lachlanchen/lachlanchen/raw/main/figs/banner.png)](https://github.com/lachlanchen/lachlanchen/blob/main/figs/banner.png)
 
-# Repositorio de notas de clase de Leonard Susskind
+# Repositorio de apuntes de Leonard Susskind
 
 ![License](https://img.shields.io/badge/license-GPL--3.0-blue.svg)
 ![Content Type](https://img.shields.io/badge/content-Lecture%20Notes%20%26%20LaTeX-informational)
@@ -16,43 +17,45 @@
 ![Forks](https://img.shields.io/github/forks/lachlanchen/leonardsusskind?style=flat-square&logo=github&label=forks&color=3b82f6)
 ![Last Commit](https://img.shields.io/github/last-commit/lachlanchen/leonardsusskind?style=flat-square&color=8b5cf6)
 
-> 🎓 Un archivo multilingüe de materiales de notas de clase de Leonard Susskind, que conserva tanto PDFs pulidos como fuentes LaTeX editables para estudio, reutilización y consulta.
+> 🎓 Un archivo multilingüe de apuntes de Leonard Susskind que conserva tanto PDFs pulidos como fuentes LaTeX editables para estudiar, reutilizar y consultar.
+
+---
 
 ## Descripción general
-Este repositorio es un archivo centrado en contenido de notas de clase del entorno docente del profesor Leonard Susskind.
+Este repositorio es un archivo centrado en el contenido de apuntes del ecosistema docente del profesor Leonard Susskind.
 
-> Las notas de clase del profesor Leonard Susskind. Si esto viola algún derecho de autor, por favor contáctame para eliminar este repositorio. El profesor Susskind no se hace responsable de errores o desinformación en las notas, y yo tampoco.
+> Los apuntes del profesor Leonard Susskind. Si esto viola algún derecho de autor, por favor contáctame para eliminar este repositorio. El profesor Susskind no se hace responsable de errores o desinformación en los apuntes, y yo tampoco.
 
 Combina tres capas en un solo lugar:
 
-- Pistas de notas y progreso por curso seleccionadas.
-- Recursos publicados (`.pdf`) para leer y compartir.
-- Archivos fuente (`.tex`, `.bib`, plantillas) para quienes mantengan o amplíen el archivo.
+- Pistas de apuntes y progreso por curso.
+- Recursos publicados (`.pdf`) para lectura y compartir.
+- Archivos fuente (`.tex`, `.bib`, plantillas) para quienes mantienen o amplían el archivo.
 
 ### Objetivos principales
-- Mantener las notas de curso y el progreso en un mismo sitio.
-- Conservar la visibilidad del avance de borradores/notas entre rutas principales y complementarias.
-- Proporcionar materiales fuente (PDF, TeX, BibTeX, plantillas) para la autoría continua.
+- Mantener las notas y el progreso del curso en un mismo lugar.
+- Conservar la visibilidad del progreso de borradores/notas entre rutas principales y complementarias.
+- Proporcionar materiales fuente (PDF, TeX, BibTeX, plantillas) para continuar escribiendo.
 
 ## Características
-- Seguimiento y referencias de cursos principales.
-- Seguimiento de progreso de cursos complementarios.
-- PDFs de lecciones existentes para varias rutas principales.
-- Fuentes de LaTeX en rutas seleccionadas.
-- Plantillas reutilizables de LaTeX en `template/tuftle` y `template/kaobook`.
-- Recursos visuales del repositorio en `figs/`.
-- Conjunto de README multilingües en `i18n/`.
+- 📚 Seguimiento y referencias de cursos principales.
+- 📌 Seguimiento de progreso de cursos complementarios.
+- 📄 PDFs de lecciones existentes para varias rutas principales.
+- 🧪 Material fuente LaTeX en rutas seleccionadas.
+- 🧷 Plantillas reutilizables de LaTeX en `template/tuftle` y `template/kaobook`.
+- 🎨 Recursos gráficos del repositorio en `figs/`.
+- 🌐 Conjunto de README multilingües en `i18n/`.
 
 ## Resumen rápido
 | Área | Qué está disponible |
 |---|---|
-| 📝 Notas | Múltiples conjuntos de notas de curso con seguimiento de progreso |
-| 🧾 Fuente | Fuentes TeX/BibTeX en subproyectos seleccionados |
+| 📝 Notas | Múltiples conjuntos de notas con seguimiento de progreso |
+| 🧾 Fuente | Archivos TeX/BibTeX en subproyectos seleccionados |
 | 🧱 Plantillas | `template/tuftle` y `template/kaobook` |
 | 🎨 Identidad visual | `figs/banner.*`, `figs/logo.*`, `figs/logo-w-text.*` |
-| 🌍 i18n | Variantes de idioma `i18n/README.*.md` |
+| 🌍 i18n | Variantes de idioma en `i18n/README.*.md` |
 
-## Índice
+## Tabla de contenido
 - [Descripción general](#descripción-general)
 - [Características](#características)
 - [Resumen rápido](#resumen-rápido)
@@ -152,17 +155,19 @@ leonardsusskind/
 
 ## Requisitos previos
 Para leer:
-- Un lector PDF (del sistema o aplicación).
+- 📖 Un lector de PDF (del sistema o de aplicación).
 
 Para editar/compilar materiales TeX:
-- Una distribución LaTeX (TeX Live / MiKTeX).
-- `pdflatex`.
-- `bibtex` o `biber` según el subproyecto.
-- `makeindex` para proyectos que usan entradas indexadas.
+- 📦 Una distribución LaTeX (TeX Live / MiKTeX).
+- ⚙️ `pdflatex`.
+- 🗂️ `bibtex` o `biber`, según el subproyecto.
+- 🔎 `makeindex` para proyectos que usan índices.
 
-Notas de supuesto:
-- No hay un sistema de construcción único a nivel raíz (`Makefile`, `package.json`, `pyproject.toml`) visible en este repositorio.
-- Los flujos de trabajo se esperan ejecutar desde cada directorio de subproyecto.
+---
+
+Notas sobre supuestos:
+- No hay un sistema de compilación global en raíz (`Makefile`, `package.json`, `pyproject.toml`) visible en este repositorio.
+- Se espera ejecutar los flujos de trabajo desde cada directorio de subproyecto.
 
 ## Instalación
 ```bash
@@ -171,34 +176,34 @@ git clone https://github.com/lachlanchen/leonardsusskind.git
 cd leonardsusskind
 ```
 
-Este repositorio es de contenido primero. Si se clona en espejo o se bifurca, reemplaza la URL remota por tu propia copia según corresponda.
+Este repositorio es de contenido primero. Si se clona por espejo o se hace un fork, reemplaza la URL remota con tu propia copia según corresponda.
 
-No se requiere instalar paquetes globales para leer las notas existentes.
+No es necesario instalar paquetes globales para leer los apuntes existentes.
 
 ## Uso
-### 1) Leer notas existentes
-Abre los PDFs en las carpetas relevantes, por ejemplo:
+### 1) Leer apuntes existentes
+Abre los PDFs en las carpetas correspondientes, por ejemplo:
 - `core_general_relativity/lesson_1.pdf`
 - `core_cosmology/lesson_1.pdf`
 - `core_statistical_mechanics/lesson_1.pdf`
 - `supplemental_particle_physics_2/NumberTheory.pdf`
 
 ### 2) Crear o ampliar materiales LaTeX
-- Edita archivos `.tex` y `.bib` en la carpeta de curso/plantilla objetivo.
-- Compila con el flujo de trabajo especificado por esa carpeta.
-- Compila en el lugar para que los recursos locales y rutas relativas se resuelvan correctamente.
+- Edita archivos `.tex` y `.bib` en la carpeta de curso/plantilla de destino.
+- Compila con el flujo de trabajo indicado por esa carpeta.
+- Compila en el mismo directorio para que los recursos y rutas locales se resuelvan correctamente.
 
 ### 3) Navegar por puntos de entrada por ruta
-Cada ruta principal tiene su propio `README.md` con notas de alcance limitado, referencias y progreso.
+Cada ruta principal tiene su propio `README.md` con notas de alcance delimitado, referencias y progreso.
 
 ## Configuración
 No existe un archivo de configuración global.
 
-La configuración es local para cada proyecto TeX. Los parámetros típicos se incrustan en fuentes de documentos, incluidos:
-- Clase de documento y configuración de paquetes en `template/kaobook/main.tex`
-- Estructura/estilo reutilizable en `template/kaobook/`
-- Backend de bibliografía y estilo de cita en pares locales `main.tex`/`ref.bib`
-- Rutas de inclusión para imágenes y activos de capítulo en cada proyecto
+La configuración es local para cada proyecto TeX. Los parámetros típicos se encuentran en las fuentes del documento, incluyendo:
+- Clase del documento y configuración de paquetes en `template/kaobook/main.tex`
+- Estilo/estructura reutilizable en `template/kaobook/`
+- Backend de bibliografía y estilo de citas en pares locales `main.tex`/`ref.bib`
+- Rutas de inclusión de imágenes y activos específicos de capítulo en cada proyecto
 
 Puntos de configuración locales representativos:
 - `template/kaobook/main.tex`
@@ -208,7 +213,7 @@ Puntos de configuración locales representativos:
 - `supplemental_advanced_quantum/ch1/main.tex`
 
 ## Ejemplos
-### Ejemplo A: Construir `template/kaobook`
+### Ejemplo A: Compilar `template/kaobook`
 `template/kaobook/main.tex` describe esta cadena de compilación:
 
 ```bash
@@ -220,7 +225,7 @@ pdflatex main
 pdflatex main
 ```
 
-### Ejemplo B: Construir `core_cosmology/cosmology_ch10`
+### Ejemplo B: Compilar `core_cosmology/cosmology_ch10`
 `cosmology_ch10.tex` usa un flujo estilo BibTeX:
 
 ```bash
@@ -231,7 +236,7 @@ pdflatex cosmology_ch10.tex
 pdflatex cosmology_ch10.tex
 ```
 
-### Ejemplo C: Construir `supplemental_particle_physics_1/ch1`
+### Ejemplo C: Compilar `supplemental_particle_physics_1/ch1`
 ```bash
 cd supplemental_particle_physics_1/ch1
 pdflatex main.tex
@@ -241,7 +246,7 @@ pdflatex main.tex
 pdflatex main.tex
 ```
 
-### Ejemplo D: Construir `supplemental_advanced_quantum/ch1`
+### Ejemplo D: Compilar `supplemental_advanced_quantum/ch1`
 ```bash
 cd supplemental_advanced_quantum/ch1
 pdflatex main.tex
@@ -257,25 +262,25 @@ xdg-open supplemental_particle_physics_1/ch1/main.pdf
 ```
 
 ## Notas de desarrollo
-- Este repositorio es principalmente de documentación/notas, no una base de código de aplicación.
+- Este repositorio es principalmente de documentación y apuntes, no una base de código de aplicación.
 - Algunas carpetas incluyen artefactos TeX generados (`.aux`, `.log`, `.toc`, `.bbl`, etc.) versionados en el repositorio.
 - Los comandos de compilación pueden variar por subdirectorio; sigue las convenciones locales de `.tex`.
-- Existen archivos `README.md` por ruta en directorios principales y complementarios y deben mantenerse alineados con las afirmaciones de progreso de nivel raíz.
+- Existen `README.md` por ruta en directorios principales y complementarios y deben mantenerse alineados con las afirmaciones de progreso de nivel raíz.
 - `i18n/` existe y se usa para variantes multilingües del README.
-- El README raíz se trata como canónico; los archivos localizados deben seguirlo en actualizaciones.
+- El README raíz se toma como canónico; los archivos localizados deben seguirlo cuando se actualiza.
 
 ## Progreso canónico del curso (conservado y reorganizado)
 
 ### Cursos principales
 
 #### Mecánica clásica
-El libro de texto de este curso [Classical Mechanics](https://www.amazon.com/gp/product/0465075681?ie=UTF8&tag=lachlanchen-20&camp=1789&linkCode=xm2&creativeASIN=0465075681) ya fue publicado. Puedes comprarlo en Amazon [Classical Mechanics](https://www.amazon.com/gp/product/0465075681?ie=UTF8&tag=lachlanchen-20&camp=1789&linkCode=xm2&creativeASIN=0465075681).
+El libro de texto de este curso [Classical Mechanics](https://www.amazon.com/gp/product/0465075681?ie=UTF8&tag=lachlanchen-20&camp=1789&linkCode=xm2&creativeASIN=0465075681) ya fue publicado. Puedes comprarlo en Amazon como [Classical Mechanics](https://www.amazon.com/gp/product/0465075681?ie=UTF8&tag=lachlanchen-20&camp=1789&linkCode=xm2&creativeASIN=0465075681).
 
 #### Mecánica cuántica
-El libro de texto de este curso [Quantum Mechanics](https://www.amazon.com/gp/product/0465062903?ie=UTF8&tag=lachlanchen-20&camp=1789&linkCode=xm2&creativeASIN=0465062903) ya fue publicado. Puedes comprarlo en Amazon [Quantum Mechanics](https://www.amazon.com/gp/product/0465062903?ie=UTF8&tag=lachlanchen-20&camp=1789&linkCode=xm2&creativeASIN=0465062903).
+El libro de texto de este curso [Quantum Mechanics](https://www.amazon.com/gp/product/0465062903?ie=UTF8&tag=lachlanchen-20&camp=1789&linkCode=xm2&creativeASIN=0465062903) ya fue publicado. Puedes comprarlo en Amazon como [Quantum Mechanics](https://www.amazon.com/gp/product/0465062903?ie=UTF8&tag=lachlanchen-20&camp=1789&linkCode=xm2&creativeASIN=0465062903).
 
-#### Relatividad Especial y Electrodinámica
-El libro de texto de este curso [Special Relativity and Electrodynamics](https://www.amazon.com/gp/product/1541674065?ie=UTF8&tag=lachlanchen-20&camp=1789&linkCode=xm2&creativeASIN=1541674065) ya fue publicado. Puedes comprarlo en Amazon [Special Relativity and Electrodynamics](https://www.amazon.com/gp/product/1541674065?ie=UTF8&tag=lachlanchen-20&camp=1789&linkCode=xm2&creativeASIN=1541674065).
+#### Relatividad especial y electrodinámica
+El libro de texto de este curso [Special Relativity and Electrodynamics](https://www.amazon.com/gp/product/1541674065?ie=UTF8&tag=lachlanchen-20&camp=1789&linkCode=xm2&creativeASIN=1541674065) ya fue publicado. Puedes comprarlo en Amazon como [Special Relativity and Electrodynamics](https://www.amazon.com/gp/product/1541674065?ie=UTF8&tag=lachlanchen-20&camp=1789&linkCode=xm2&creativeASIN=1541674065).
 
 #### Tabla de progreso principal
 | Curso | Progreso de borradores | Progreso de notas | Notas/Referencia |
@@ -299,49 +304,49 @@ El libro de texto de este curso [Special Relativity and Electrodynamics](https:/
 
 ### Nota de integridad del progreso
 - Las tablas de progreso anteriores se conservaron del texto canónico del README.
-- Los archivos del repositorio incluyen rutas maduras y de marcador; si una entrada de tabla y el estado real de la carpeta parecen inconsistentes, trata la tabla como la intención documentada y actualiza ambos a futuro en una revisión conjunta.
+- El repositorio contiene carpetas maduras y de marcador; si una entrada de tabla y el estado real de la carpeta parecen inconsistentes, trata la tabla como la intención documentada y actualiza ambos en futuras revisiones.
 
 ## Solución de problemas
 | Problema | Resolución |
 |---|---|
 | `pdflatex: command not found` | Instala una distribución LaTeX y asegúrate de que los binarios estén en `PATH`. |
-| Falta de bibliografía/índice | Ejecuta el backend requerido (`bibtex` o `biber`) y `makeindex` si se usa, luego vuelve a correr `pdflatex`. |
-| Errores de archivos de estilo/clase faltantes | Compila desde el directorio del proyecto previsto para que las rutas relativas a recursos locales se resuelvan correctamente. |
-| El resultado de compilación difiere entre entornos | Este repositorio contiene materiales generados en entornos distintos; alinea las versiones de paquetes cuando sea posible. |
-| Enlaces multilingües obsoletos o README de idioma faltante | Asegura que la línea superior de opciones de idioma y los archivos en `i18n/` permanezcan sincronizados. |
-| Desajuste de enlace Markdown de GitHub tras renombrar una carpeta | Vuelve a validar los enlaces de idioma del README raíz y todas las referencias `i18n/README.*.md` en una sola pasada. |
+| Falta la bibliografía/índice | Ejecuta el backend requerido (`bibtex` o `biber`) y `makeindex` si se usa, luego vuelve a correr `pdflatex`. |
+| Errores por archivos de estilo/clase faltantes | Compila desde el directorio del proyecto previsto para que las rutas relativas a activos locales se resuelvan correctamente. |
+| Los resultados de compilación difieren entre entornos | Este repositorio contiene materiales generados en distintos entornos; alinea las versiones de paquetes cuando sea posible. |
+| Enlaces multilingües obsoletos o falta de README de idioma | Asegura que la línea superior de selección de idioma y los archivos en `i18n/` permanezcan sincronizados. |
+| Inconsistencia de enlaces de GitHub tras renombrar carpetas | Revalida en una sola pasada los enlaces de idioma del README raíz y de todas las referencias `i18n/README.*.md`. |
 
 ## Hoja de ruta
-- Continuar con rutas complementarias con contenido real de capítulos y archivos fuente.
+- Continuar con rutas complementarias con contenido real de capítulo y archivos fuente.
 - Mejorar la consistencia de los README por curso.
 - Ampliar y mantener README multilingües en `i18n/` y mantener sincronizado el selector de idioma.
 - Añadir una sección de guía de compilación a nivel de repositorio para cada subproyecto con fuentes TeX.
-- Añadir fragmentos de compilación por ruta cuando existan diferencias locales de cadena de herramientas.
-- Añadir automatización mínima para validar la integridad de enlaces README/i18n.
+- Añadir fragmentos de compilación por ruta donde existan diferencias locales de cadena de herramientas.
+- Añadir automatización mínima para validar la integridad de enlaces de README/i18n.
 
 ## Contribución
-Puedes contribuir a este proyecto biforcándolo y enviando una pull request.
+Puedes contribuir a este proyecto haciendo un fork y enviando una pull request.
 
-Alcance sugerido de la contribución:
+Alcance sugerido de contribución:
 - Añadir o mejorar notas de capítulo y referencias.
-- Mejorar la calidad de fuentes TeX e instrucciones reproducibles de compilación.
+- Mejorar la calidad de las fuentes TeX e instrucciones reproducibles de compilación.
 - Mantener sincronizadas las declaraciones de progreso entre README raíz y README por ruta.
 - Mantener la paridad de README multilingües en `i18n/`.
 
-Buenas prácticas recomendadas para pull requests:
+Higiene recomendada para pull request:
 - Menciona la(s) carpeta(s) de ruta exacta(s) modificada(s).
-- Incluye los comandos de compilación TeX usados (si se editaron archivos fuente).
-- Actualiza las tablas de progreso relevantes cuando el estado de capítulos cambie.
-- Actualiza los readmes de `i18n/` después de cambios en el README canónico en inglés.
+- Incluye los comandos de compilación LaTeX usados (si se editaron archivos fuente).
+- Actualiza las tablas de progreso relevantes cuando cambie el estado de capítulos.
+- Actualiza `i18n/` después de cambios en el README canónico en inglés.
 
 ## Agradecimientos
 - El profesor Leonard Susskind por el contenido original de las clases.
-- Fuente de notas de referencia existente: https://www.lapasserelle.com/general_relativity/
-- Fuente de notas de referencia existente: https://www.lapasserelle.com/cosmology/
-- Fuente de notas de referencia existente: https://www.lapasserelle.com/statistical_mechanics/
+- Fuente de apuntes de referencia existente: https://www.lapasserelle.com/general_relativity/
+- Fuente de apuntes de referencia existente: https://www.lapasserelle.com/cosmology/
+- Fuente de apuntes de referencia existente: https://www.lapasserelle.com/statistical_mechanics/
 
 ## Licencia
-Este repositorio está licenciado bajo la GNU General Public License v3.0. Ver [LICENSE](LICENSE).
+Este repositorio está licenciado bajo la GNU General Public License v3.0. Ver [LICENSE](../LICENSE).
 
 
 ## ❤️ Support

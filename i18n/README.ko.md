@@ -1,6 +1,7 @@
 [English](../README.md) · [العربية](README.ar.md) · [Español](README.es.md) · [Français](README.fr.md) · [日本語](README.ja.md) · [한국어](README.ko.md) · [Tiếng Việt](README.vi.md) · [中文 (简体)](README.zh-Hans.md) · [中文（繁體）](README.zh-Hant.md) · [Deutsch](README.de.md) · [Русский](README.ru.md)
 
 
+
 [![LazyingArt banner](https://github.com/lachlanchen/lachlanchen/raw/main/figs/banner.png)](https://github.com/lachlanchen/lachlanchen/blob/main/figs/banner.png)
 
 # Leonard Susskind 강의 노트 저장소
@@ -17,6 +18,8 @@
 ![Last Commit](https://img.shields.io/github/last-commit/lachlanchen/leonardsusskind?style=flat-square&color=8b5cf6)
 
 > 🎓 Leonard Susskind 강의 노트 자료의 다국어 아카이브입니다. 정리된 PDF와 편집 가능한 LaTeX 소스를 모두 보존해 학습, 재사용, 참조에 활용할 수 있습니다.
+
+---
 
 ## 개요
 이 저장소는 Leonard Susskind 교수의 교육 생태계에서 제공된 강의 노트 자료를 콘텐츠 우선 방식으로 아카이브한 저장소입니다.
@@ -159,6 +162,8 @@ TeX 자료 편집/빌드 시:
 - `pdflatex`.
 - 하위 프로젝트에 따라 `bibtex` 또는 `biber`.
 - 색인 항목을 사용하는 프로젝트는 `makeindex`.
+
+---
 
 참고:
 - 이 저장소에는 루트 수준의 단일 빌드 시스템(`Makefile`, `package.json`, `pyproject.toml`)이 보이지 않습니다.
@@ -340,7 +345,7 @@ xdg-open supplemental_particle_physics_1/ch1/main.pdf
 - 기존 노트 참고 출처: https://www.lapasserelle.com/statistical_mechanics/
 
 ## 라이선스
-이 저장소는 GNU General Public License v3.0에 따라 라이선스됩니다. [LICENSE](../LICENSE)를 확인하세요.
+이 저장소는 GNU General Public License v3.0에 따라 라이선스됩니다. [LICENSE](LICENSE).
 
 
 ## ❤️ Support

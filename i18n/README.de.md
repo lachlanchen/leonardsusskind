@@ -17,32 +17,34 @@
 ![Forks](https://img.shields.io/github/forks/lachlanchen/leonardsusskind?style=flat-square&logo=github&label=forks&color=3b82f6)
 ![Last Commit](https://img.shields.io/github/last-commit/lachlanchen/leonardsusskind?style=flat-square&color=8b5cf6)
 
-> 🎓 Ein mehrsprachiges Archiv von Leonard Susskind-Vorlesungsunterlagen, das sowohl aufbereitete PDFs als auch editierbare LaTeX-Quellen für Studium, Wiederverwendung und Referenz bewahrt.
+> 🎓 Ein mehrsprachiges Archiv der Vorlesungsunterlagen von Professor Leonard Susskind, das sowohl aufbereitete PDFs als auch editierbare LaTeX-Quellen für Studium, Wiederverwendung und Referenz bereithält.
+
+---
 
 ## Überblick
 Dieses Repository ist ein inhaltlich ausgerichtetes Archiv von Vorlesungsunterlagen aus dem Lehrumfeld von Professor Leonard Susskind.
 
-> Die Vorlesungsnotizen von Professor Leonard Susskind. Wenn dies gegen Urheberrechte verstößt, kontaktieren Sie mich bitte, um dieses Repository zu entfernen. Professor Susskind übernimmt weder Verantwortung für Fehler noch Fehlinformationen in den Notizen – das gilt ebenfalls für mich.
+> Die Vorlesungsnotizen von Professor Leonard Susskind. Falls dies gegen Urheberrechte verstößt, kontaktieren Sie mich bitte, damit ich dieses Repository lösche. Professor Susskind übernimmt keine Verantwortung für Fehler oder Fehlinformationen in den Notizen; dasselbe gilt für mich.
 
 Es vereint drei Ebenen an einem Ort:
 
-- Kuratierte Notizspuren und kursbezogenen Fortschritt.
-- Verfügbare Artefakte (`.pdf`) zum Lesen und Teilen.
-- Quelldateien (`.tex`, `.bib`, Templates) für Personen, die das Archiv pflegen oder erweitern.
+- Kuratierte Notizspur- und Kursfortschrittsdaten.
+- Bereitgestellte Artefakte (`.pdf`) zum Lesen und Teilen.
+- Quelldateien (`.tex`, `.bib`, Templates) für alle, die das Archiv pflegen oder erweitern.
 
 ### Hauptziele
-- Kursnotizen und Fortschritt an einer Stelle zusammenführen.
+- Kursnotizen und Fortschritt an einem Ort bündeln.
 - Entwurfs- und Notizfortschritt für Kern- und Ergänzungskurse sichtbar halten.
-- Quellmaterialien (PDF, TeX, BibTeX, Templates) für fortgesetztes Erstellen bereitstellen.
+- Quellmaterialien (PDF, TeX, BibTeX, Templates) für die Weiterarbeit bereitstellen.
 
 ## Funktionen
-- Nachverfolgung und Referenzen für Kernkurse.
-- Fortschrittsnachverfolgung für Ergänzungskurse.
-- Vorliegende Vorlesungs-PDFs für mehrere Kernkurse.
-- LaTeX-Quellmaterial in ausgewählten Pfaden.
-- Wiederverwendbare LaTeX-Templates in `template/tuftle` und `template/kaobook`.
-- Repository-Assets in `figs/`.
-- Mehrsprachige README-Varianten in `i18n/`.
+- 📚 Fortschritt und Referenzen der Kernkurse.
+- 📌 Fortschrittsnachverfolgung für Ergänzungskurse.
+- 📄 Vorliegende Vorlesungs-PDFs für mehrere Kernkurse.
+- 🧪 LaTeX-Quellmaterialien in ausgewählten Spuren.
+- 🧷 Wiederverwendbare LaTeX-Templates in `template/tuftle` und `template/kaobook`.
+- 🎨 Repository-Materialien in `figs/`.
+- 🌐 Mehrsprachige README-Varianten in `i18n/`.
 
 ## Schnellübersicht
 | Bereich | Verfügbarkeit |
@@ -51,7 +53,7 @@ Es vereint drei Ebenen an einem Ort:
 | 🧾 Quelle | TeX/BibTeX-Quellen in ausgewählten Teilprojekten |
 | 🧱 Templates | `template/tuftle` und `template/kaobook` |
 | 🎨 Branding | `figs/banner.*`, `figs/logo.*`, `figs/logo-w-text.*` |
-| 🌍 Mehrsprachigkeit | Sprachvarianten `i18n/README.*.md` |
+| 🌍 i18n | Sprachvarianten `i18n/README.*.md` |
 
 ## Inhaltsverzeichnis
 - [Überblick](#überblick)
@@ -82,7 +84,7 @@ leonardsusskind/
 │   ├── banner.(png|svg)
 │   ├── logo.(png|svg)
 │   └── logo-w-text.(png|svg)
-├── i18n/
+i18n/
 │   ├── README.ar.md
 │   ├── README.de.md
 │   ├── README.es.md
@@ -153,20 +155,21 @@ leonardsusskind/
 
 ## Voraussetzungen
 Zum Lesen:
-- Ein PDF-Reader (systemseitig oder als App).
+- Ein PDF-Reader (systemseitig oder per App).
 
 Zum Bearbeiten/Erstellen von TeX-Materialien:
 - Eine LaTeX-Distribution (TeX Live / MiKTeX).
 - `pdflatex`.
 - `bibtex` oder `biber`, je nach Unterprojekt.
-- `makeindex` für Projekte, die Indizes verwenden.
+- `makeindex` für Projekte, die Indexeinträge verwenden.
 
 Hinweis zu Annahmen:
-- Es gibt kein einheitliches Root-Buildsystem (`Makefile`, `package.json`, `pyproject.toml`) in diesem Repository.
-- Build-Workflows werden voraussichtlich aus jedem Unterverzeichnis ausgeführt.
+- Es gibt kein einheitliches Root-Buildsystem (`Makefile`, `package.json`, `pyproject.toml`) im Repository.
+- Build-Workflows werden erfahrungsgemäß aus jedem Unterordner heraus ausgeführt.
 
 ## Installation
 ```bash
+# Repository klonen
 git clone https://github.com/lachlanchen/leonardsusskind.git
 cd leonardsusskind
 ```
@@ -177,7 +180,7 @@ Für das reine Lesen bestehender Notizen ist keine globale Paketinstallation erf
 
 ## Nutzung
 ### 1) Bestehende Notizen lesen
-Öffnen Sie die PDFs in den passenden Ordnern, zum Beispiel:
+Öffnen Sie PDFs in den passenden Ordnern, zum Beispiel:
 - `core_general_relativity/lesson_1.pdf`
 - `core_cosmology/lesson_1.pdf`
 - `core_statistical_mechanics/lesson_1.pdf`
@@ -188,8 +191,8 @@ Für das reine Lesen bestehender Notizen ist keine globale Paketinstallation erf
 - Kompilieren Sie mit dem in diesem Ordner vorgesehenen Workflow.
 - Arbeiten Sie lokal im jeweiligen Projektverzeichnis, damit relative Pfade zu Assets und Stil-Dateien korrekt aufgelöst werden.
 
-### 3) Per Track-Einstieg navigieren
-Jede große Spur (`track`) hat ihr eigenes `README.md` mit lokalem Kontext, Referenzen und Fortschrittsstatus.
+### 3) Nach Track-Einstieg navigieren
+Jede größere Spur hat ihr eigenes `README.md` mit lokalem Kontext, Referenzen und Fortschrittsstand.
 
 ## Konfiguration
 Es gibt keine globale Konfigurationsdatei.
@@ -197,8 +200,8 @@ Es gibt keine globale Konfigurationsdatei.
 Die Konfiguration ist lokal für jedes TeX-Projekt definiert. Typische Einstellpunkte sind in den Quelldateien eingebettet, darunter:
 - Dokumentenklasse und Paketkonfiguration in `template/kaobook/main.tex`
 - Wiederverwendbarer Stil/Struktur in `template/kaobook/`
-- Bibliografie-Backend und Zitierstil in lokalen `main.tex`/`ref.bib`-Paaren
-- Einbindepfade für Bilder und kapitelspezifische Assets in jedem Projekt
+- Bibliografie-Backend und Zitierstil in lokalen `main.tex`/`ref.bib`-Kombinationen
+- Include-Pfade für Bilder und kapitelspezifische Assets in jedem Projekt
 
 Typische lokale Konfigurationspunkte:
 - `template/kaobook/main.tex`
@@ -260,29 +263,29 @@ xdg-open supplemental_particle_physics_1/ch1/main.pdf
 - Dieses Repository ist primär ein Dokumentations- und Notiz-Repository, kein Anwendungs-Codebestand.
 - Einige Ordner enthalten generierte TeX-Artefakte (`.aux`, `.log`, `.toc`, `.bbl` usw.), die im Repository versioniert sind.
 - Build-Befehle können je nach Unterverzeichnis variieren; folgen Sie den lokalen `.tex`-Konventionen.
-- Pro-Track-`README.md`-Dateien existieren in den Kern- und Ergänzungsverzeichnissen und sollten mit den Fortschrittsangaben der Wurzel synchron bleiben.
-- `i18n/` ist vorhanden und dient den mehrsprachigen README-Varianten.
-- Die Root-README ist kanonisch; lokalisierte Dateien sollten ihr bei Aktualisierungen folgen.
+- Pro-Track-`README.md`-Dateien existieren in Kern- und Ergänzungsbereichen und sollten mit den Fortschrittsangaben der Wurzel synchron bleiben.
+- `i18n/` existiert und dient der Bereitstellung mehrsprachiger README-Varianten.
+- Die Root-README ist die kanonische Quelle; lokalisierte Dateien sollten bei Aktualisierungen daran ausgerichtet werden.
 
 ## Kanonischer Kursfortschritt (Erhalten und reorganisiert)
 
 ### Kernkurse
 
 #### Klassische Mechanik
-Das Lehrbuch zu diesem Kurs [Classical Mechanics](https://www.amazon.com/gp/product/0465075681?ie=UTF8&tag=lachlanchen-20&camp=1789&linkCode=xm2&creativeASIN=0465075681) wurde veröffentlicht. Sie können es bei Amazon unter [Classical Mechanics](https://www.amazon.com/gp/product/0465075681?ie=UTF8&tag=lachlanchen-20&camp=1789&linkCode=xm2&creativeASIN=0465075681) kaufen.
+Das Lehrbuch zu diesem Kurs [Classical Mechanics](https://www.amazon.com/gp/product/0465075681?ie=UTF8&tag=lachlanchen-20&camp=1789&linkCode=xm2&creativeASIN=0465075681) wurde veröffentlicht. Sie können es auf Amazon unter [Classical Mechanics](https://www.amazon.com/gp/product/0465075681?ie=UTF8&tag=lachlanchen-20&camp=1789&linkCode=xm2&creativeASIN=0465075681) erwerben.
 
 #### Quantenmechanik
-Das Lehrbuch zu diesem Kurs [Quantum Mechanics](https://www.amazon.com/gp/product/0465062903?ie=UTF8&tag=lachlanchen-20&camp=1789&linkCode=xm2&creativeASIN=0465062903) wurde veröffentlicht. Sie können es bei Amazon unter [Quantum Mechanics](https://www.amazon.com/gp/product/0465062903?ie=UTF8&tag=lachlanchen-20&camp=1789&linkCode=xm2&creativeASIN=0465062903) kaufen.
+Das Lehrbuch zu diesem Kurs [Quantum Mechanics](https://www.amazon.com/gp/product/0465062903?ie=UTF8&tag=lachlanchen-20&camp=1789&linkCode=xm2&creativeASIN=0465062903) wurde veröffentlicht. Sie können es auf Amazon unter [Quantum Mechanics](https://www.amazon.com/gp/product/0465062903?ie=UTF8&tag=lachlanchen-20&camp=1789&linkCode=xm2&creativeASIN=0465062903) erwerben.
 
 #### Spezielle Relativitätstheorie und Elektrodynamik
-Das Lehrbuch zu diesem Kurs [Special Relativity and Electrodynamics](https://www.amazon.com/gp/product/1541674065?ie=UTF8&tag=lachlanchen-20&camp=1789&linkCode=xm2&creativeASIN=1541674065) wurde veröffentlicht. Sie können es bei Amazon unter [Special Relativity and Electrodynamics](https://www.amazon.com/gp/product/1541674065?ie=UTF8&tag=lachlanchen-20&camp=1789&linkCode=xm2&creativeASIN=1541674065) kaufen.
+Das Lehrbuch zu diesem Kurs [Special Relativity and Electrodynamics](https://www.amazon.com/gp/product/1541674065?ie=UTF8&tag=lachlanchen-20&camp=1789&linkCode=xm2&creativeASIN=1541674065) wurde veröffentlicht. Sie können es auf Amazon unter [Special Relativity and Electrodynamics](https://www.amazon.com/gp/product/1541674065?ie=UTF8&tag=lachlanchen-20&camp=1789&linkCode=xm2&creativeASIN=1541674065) erwerben.
 
 #### Kernfortschrittstabelle
 | Kurs | Entwurfsfortschritt | Notizfortschritt | Notizen/Referenzen |
 |---|---:|---:|---|
-| General Relativity | 10/10 | 10/10 | Die Vorlesungsnotizen wurden von https://www.lapasserelle.com/general_relativity/ erstellt. |
-| Cosmology | 10/10 | 9/10 | Die Vorlesungsnotizen von Kapitel 1 bis 9 wurden von https://www.lapasserelle.com/cosmology/ erstellt. Kapitel 10 befindet sich in Bearbeitung. |
-| Statistical Mechanics | 11/11 | 10/10 | Die Vorlesungsnotizen wurden von https://www.lapasserelle.com/statistical_mechanics/ erstellt. |
+| General Relativity | 10/10 | 10/10 | Die Vorlesungsnotizen wurden von https://www.lapasserelle.com/general_relativity/ erfasst. |
+| Cosmology | 10/10 | 9/10 | Die Vorlesungsnotizen von Kapitel 1 bis 9 wurden von https://www.lapasserelle.com/cosmology/ erfasst. Kapitel 10 befindet sich in Arbeit. |
+| Statistical Mechanics | 11/11 | 10/10 | Die Vorlesungsnotizen wurden von https://www.lapasserelle.com/statistical_mechanics/ erfasst. |
 
 ### Ergänzende Kurse
 | Kurs | Entwurfsfortschritt | Notizfortschritt |
@@ -299,43 +302,43 @@ Das Lehrbuch zu diesem Kurs [Special Relativity and Electrodynamics](https://www
 
 ### Fortschrittsintegrität
 - Die obigen Fortschrittstabellen wurden aus dem kanonischen README-Text übernommen.
-- Das Repository enthält sowohl ausgearbeitete als auch Platzhalter-Tracks; stimmen ein Tabellenwert und der aktuelle Ordnerzustand nicht überein, ist die Tabelle als dokumentierte Intention zu behandeln und beide sollten in zukünftigen Überarbeitungen gemeinsam aktualisiert werden.
+- Das Repository enthält sowohl ausgereifte als auch Platzhalter-Spuren; wenn ein Tabellenwert und der Ordnerzustand nicht übereinstimmen, gilt die Tabelle als dokumentierte Absicht. In zukünftigen Revisionen sollten beide gemeinsam aktualisiert werden.
 
 ## Fehlerbehebung
 | Problem | Lösung |
 |---|---|
-| `pdflatex: command not found` | Installieren Sie eine LaTeX-Distribution und stellen Sie sicher, dass die Binaries im `PATH` verfügbar sind. |
-| Literaturverzeichnis/Index erscheint nicht | Führen Sie das erforderliche Backend (`bibtex` oder `biber`) und `makeindex` falls nötig aus und starten Sie `pdflatex` anschließend erneut. |
-| Fehler durch fehlende Style-/Klassen-Dateien | Bauen Sie im vorgesehenen Projektverzeichnis, damit relative Pfade zu lokalen Assets korrekt aufgelöst werden. |
-| Build-Ausgabe unterscheidet sich zwischen Umgebungen | Dieses Repository enthält Materialien aus unterschiedlichen Umgebungen; versuchen Sie, Paketversionen wo möglich zu synchronisieren. |
-| Veraltete Mehrsprachigkeitslinks oder fehlende Sprach-README | Halten Sie die Sprachauswahllinie oben und die Dateien unter `i18n/` synchron. |
-| GitHub-Markdown-Linkfehler nach Ordnerumbenennung | Validieren Sie die Root-Sprachlinks und sämtliche Verweise auf `i18n/README.*.md` in einem Durchlauf. |
+| `pdflatex: command not found` | Installieren Sie eine LaTeX-Distribution und stellen Sie sicher, dass die Binaries im `PATH` liegen. |
+| Literaturverzeichnis/Index erscheint nicht | Führen Sie das erforderliche Backend (`bibtex` oder `biber`) und gegebenenfalls `makeindex` aus, dann `pdflatex` erneut. |
+| Fehler durch fehlende Style-/Klassen-Datei | Bauen Sie im vorgesehenen Projektverzeichnis, damit relative Pfade zu lokalen Assets korrekt aufgelöst werden. |
+| Build-Ausgabe unterscheidet sich zwischen Umgebungen | Dieses Repository enthält Materialien aus unterschiedlichen Umgebungen; versuchen Sie, Paketversionen nach Möglichkeit anzugleichen. |
+| Veraltete i18n-Links oder fehlende Sprach-README | Halten Sie die Sprachauswahllinie oben und die Dateien unter `i18n/` synchron. |
+| GitHub-Markdown-Linkfehler nach Ordnerumbenennung | Prüfen Sie Root-Sprachlinks und alle `i18n/README.*.md`-Verweise in einem Durchgang neu. |
 
 ## Roadmap
-- Fortführung ergänzender Kurse mit echtem Kapitelinhalt und Quelldateien.
-- Konsistenz der pro-Kurs-README-Dateien verbessern.
-- Erweiterung und Pflege der mehrsprachigen README-Dateien unter `i18n/` und Synchronisierung des Sprachselectors.
-- Ergänzen eines repositoryweiten Build-Leitfadens pro Unterprojekt mit TeX-Quellen.
-- Ergänzen von pro-Track-Kompilierungsschnipseln dort, wo lokale Toolchains differieren.
-- Einführung minimaler Automatisierung zur Validierung von README-/i18n-Link-Konsistenz.
+- Ergänzen Sie ergänzende Kurse mit echtem Kapitelinhalt und Quelldateien.
+- Verbessern Sie die Konsistenz der per-Kurs-README-Dateien.
+- Erweitern und pflegen Sie mehrsprachige README-Dateien unter `i18n/` und halten Sie den Sprachselektor synchron.
+- Ergänzen Sie einen repositoryweiten Build-Leitfaden für Unterprojekte mit TeX-Quellen.
+- Ergänzen Sie pro-Track-Kompilierungsschnipsel, wo lokale Toolchain-Unterschiede bestehen.
+- Führen Sie minimale Automatisierungen zur Validierung der README-/i18n-Link-Integrität ein.
 
 ## Beitrag
 Sie können zu diesem Projekt beitragen, indem Sie es forken und einen Pull Request einreichen.
 
-Empfohlener Beitrag:
+Mögliche Beitragsbereiche:
 - Ergänzen oder verbessern Sie Kapitelnotizen und Referenzen.
-- Verbessern Sie die Qualität der TeX-Quellen und anwendbare Build-Anleitungen.
-- Halten Sie Fortschrittsangaben von Root- und Track-README synchron.
-- Sorgen Sie für mehrsprachige README-Konsistenz unter `i18n/`.
+- Verbessern Sie die Qualität der TeX-Quellen und reproduzierbaren Build-Anleitungen.
+- Halten Sie Fortschrittsangaben in Root- und Track-READMEs synchron.
+- Sorgen Sie für Konsistenz der mehrsprachigen README-Dateien unter `i18n/`.
 
 Empfohlene Pull-Request-Hygiene:
 - Nennen Sie die genauen geänderten Track-Ordner.
 - Fügen Sie die verwendeten TeX-Kompilierungsbefehle bei (falls Quelldateien bearbeitet wurden).
-- Aktualisieren Sie relevante Fortschrittstabellen, wenn sich Kapitelzustände ändern.
-- Aktualisieren Sie `i18n/`-README-Dateien nach Änderungen an der kanonischen englischen README.
+- Aktualisieren Sie relevante Fortschrittstabellen, wenn sich der Kapitelstand ändert.
+- Aktualisieren Sie die Dateien in `i18n/` nach Änderungen an der kanonischen englischen README.
 
 ## Danksagung
-- Professor Leonard Susskind für die ursprünglichen Vorlesungsinhalte.
+- Professor Leonard Susskind für den ursprünglichen Vorlesungsinhalt.
 - Referenzierte Notizquelle: https://www.lapasserelle.com/general_relativity/
 - Referenzierte Notizquelle: https://www.lapasserelle.com/cosmology/
 - Referenzierte Notizquelle: https://www.lapasserelle.com/statistical_mechanics/
