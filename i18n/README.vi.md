@@ -1,46 +1,66 @@
 [English](../README.md) · [العربية](README.ar.md) · [Español](README.es.md) · [Français](README.fr.md) · [日本語](README.ja.md) · [한국어](README.ko.md) · [Tiếng Việt](README.vi.md) · [中文 (简体)](README.zh-Hans.md) · [中文（繁體）](README.zh-Hant.md) · [Deutsch](README.de.md) · [Русский](README.ru.md)
 
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/lachlanchen/lachlanchen/main/logos/banner.png" alt="LazyingArt banner" />
-</p>
+[![LazyingArt banner](https://github.com/lachlanchen/lachlanchen/raw/main/figs/banner.png)](https://github.com/lachlanchen/lachlanchen/blob/main/figs/banner.png)
 
 # Kho Lưu Trữ Ghi Chú Bài Giảng Leonard Susskind
-
 
 ![License](https://img.shields.io/badge/license-GPL--3.0-blue.svg)
 ![Content Type](https://img.shields.io/badge/content-Lecture%20Notes%20%26%20LaTeX-informational)
 ![Status](https://img.shields.io/badge/status-Active%20Archive-success)
 ![LaTeX](https://img.shields.io/badge/tooling-LaTeX-008080)
-![i18n](https://img.shields.io/badge/i18n-directory%20ready-orange)
+![Core Tracks](https://img.shields.io/badge/core_tracks-6-1f6feb)
+![Supplemental Tracks](https://img.shields.io/badge/supplemental_tracks-9-9a6700)
+![i18n](https://img.shields.io/badge/i18n-10%20translations%20%2B%20English-orange)
 
-## 📖 Tổng quan
-Kho lưu trữ này là một kho tư liệu ưu tiên nội dung, lưu trữ các tài liệu ghi chú bài giảng liên quan đến các khóa học của Giáo sư Leonard Susskind.
+## Tổng quan
+Kho lưu trữ này ưu tiên nội dung, tập trung lưu trữ tài liệu ghi chú bài giảng liên quan đến các khóa học của Giáo sư Leonard Susskind.
 
-Các ghi chú bài giảng của Giáo sư Leonard Susskind. Nếu nội dung này vi phạm bất kỳ bản quyền nào, vui lòng liên hệ để tôi xóa kho lưu trữ này. Giáo sư Susskind không chịu trách nhiệm cho lỗi hoặc thông tin sai lệch trong các ghi chú này, và tôi cũng vậy.
+> Ghi chú bài giảng của Giáo sư Leonard Susskind. Nếu nội dung này vi phạm bản quyền, vui lòng liên hệ tôi để xóa kho lưu trữ này. Giáo sư Susskind không chịu trách nhiệm về lỗi hay thông tin sai lệch trong các ghi chú, và tôi cũng vậy.
 
 ### Mục tiêu chính
-- Lưu ghi chú khóa học và tiến độ ở cùng một nơi.
-- Duy trì khả năng hiển thị tiến độ bản nháp/ghi chú trên cả các lộ trình cốt lõi và bổ trợ.
-- Cung cấp tài liệu nguồn (PDF, TeX, BibTeX, template) để tiếp tục biên soạn.
+- Lưu trữ ghi chú khóa học và tiến độ trong cùng một nơi.
+- Duy trì khả năng theo dõi tiến độ bản nháp/ghi chú trên cả các tuyến học cốt lõi và bổ sung.
+- Cung cấp tài liệu nguồn (PDF, TeX, BibTeX, mẫu) để tiếp tục biên soạn.
 
-## ✨ Tính năng
-- Theo dõi và tham chiếu các khóa học cốt lõi.
-- Theo dõi tiến độ các khóa học bổ trợ.
-- Có sẵn PDF bài học cho một số lộ trình cốt lõi.
-- Có tài liệu nguồn LaTeX ở một số lộ trình đã chọn.
-- Template LaTeX có thể tái sử dụng trong `template/tuftle` và `template/kaobook`.
-- Hình ảnh của kho lưu trữ trong `figs/`.
+## Tính năng
+- Theo dõi các khóa học cốt lõi và tài liệu tham chiếu.
+- Theo dõi tiến độ các khóa học bổ sung.
+- Có sẵn PDF bài học cho một số tuyến học cốt lõi.
+- Tài liệu nguồn LaTeX trong một số tuyến học.
+- Mẫu LaTeX tái sử dụng trong `template/tuftle` và `template/kaobook`.
+- Tài nguyên hình ảnh của kho trong `figs/`.
+- Bộ README đa ngôn ngữ trong `i18n/`.
 
-## 📌 Ảnh chụp nhanh
+## Ảnh chụp nhanh
 | Khu vực | Nội dung có sẵn |
 |---|---|
-| 📚 Ghi chú | Nhiều bộ ghi chú khóa học, có theo dõi tiến độ |
-| 🧪 Mã nguồn | Mã nguồn TeX/BibTeX trong một số dự án con |
-| 🧰 Template | `template/tuftle` và `template/kaobook` |
-| 🌐 i18n | Thư mục `i18n/` đã tồn tại (hiện đang trống) |
+| 📝 Ghi chú | Nhiều bộ ghi chú khóa học có theo dõi tiến độ |
+| 🧾 Nguồn | Nguồn TeX/BibTeX trong một số dự án con |
+| 🧱 Mẫu | `template/tuftle` và `template/kaobook` |
+| 🎨 Nhận diện | `figs/banner.*`, `figs/logo.*`, `figs/logo-w-text.*` |
+| 🌍 i18n | Các biến thể ngôn ngữ `i18n/README.*.md` |
 
-## 🗂️ Cấu trúc dự án
+## Mục lục
+- [Tổng quan](#tổng-quan)
+- [Tính năng](#tính-năng)
+- [Ảnh chụp nhanh](#ảnh-chụp-nhanh)
+- [Cấu trúc dự án](#cấu-trúc-dự-án)
+- [Yêu cầu trước](#yêu-cầu-trước)
+- [Cài đặt](#cài-đặt)
+- [Sử dụng](#sử-dụng)
+- [Cấu hình](#cấu-hình)
+- [Ví dụ](#ví-dụ)
+- [Ghi chú phát triển](#ghi-chú-phát-triển)
+- [Tiến độ khóa học chuẩn (được giữ nguyên và tái tổ chức)](#tiến-độ-khóa-học-chuẩn-được-giữ-nguyên-và-tái-tổ-chức)
+- [Khắc phục sự cố](#khắc-phục-sự-cố)
+- [Lộ trình](#lộ-trình)
+- [Đóng góp](#đóng-góp)
+- [❤️ Support](#-support)
+- [Lời cảm ơn](#lời-cảm-ơn)
+- [Giấy phép](#giấy-phép)
+
+## Cấu trúc dự án
 ```text
 leonardsusskind/
 ├── README.md
@@ -50,70 +70,127 @@ leonardsusskind/
 │   ├── banner.(png|svg)
 │   ├── logo.(png|svg)
 │   └── logo-w-text.(png|svg)
-├── i18n/                      # exists; currently empty
+├── i18n/
+│   ├── README.ar.md
+│   ├── README.de.md
+│   ├── README.es.md
+│   ├── README.fr.md
+│   ├── README.ja.md
+│   ├── README.ko.md
+│   ├── README.ru.md
+│   ├── README.vi.md
+│   ├── README.zh-Hans.md
+│   └── README.zh-Hant.md
 ├── core_classical/
+│   └── README.md
 ├── core_quantum/
+│   └── README.md
 ├── core_special_relativity/
-├── core_general_relativity/   # lesson_1.pdf ... lesson_10.pdf
-├── core_cosmology/            # lesson_1.pdf ... lesson_9.pdf + cosmology_ch10/
-├── core_statistical_mechanics/# lesson_1.pdf ... lesson_11.pdf
+│   └── README.md
+├── core_general_relativity/
+│   ├── README.md
+│   └── lesson_1.pdf ... lesson_10.pdf
+├── core_cosmology/
+│   ├── README.md
+│   ├── lesson_1.pdf ... lesson_9.pdf
+│   └── cosmology_ch10/
+│       ├── cosmology_ch10.tex
+│       └── ref.bib
+├── core_statistical_mechanics/
+│   ├── README.md
+│   └── lesson_1.pdf ... lesson_11.pdf
 ├── supplemental_advanced_quantum/
+│   ├── README.md
+│   └── ch1/
+│       ├── main.tex
+│       ├── book_1_template.tex
+│       └── bibliography.bib
 ├── supplemental_cosmology_and_black_holes/
+│   └── README.md
 ├── supplemental_higgs_boson/
+│   └── README.md
 ├── supplemental_particle_physics_1/
+│   ├── README.md
+│   ├── ch1/
+│   │   ├── main.tex
+│   │   ├── book_1_template.tex
+│   │   └── bibliography.bib
+│   └── lecture transcript .txt files
 ├── supplemental_particle_physics_2/
+│   ├── README.md
+│   ├── NumberTheory.pdf
+│   └── lecture transcript .txt files
 ├── supplemental_particle_physics_3/
+│   └── README.md
 ├── supplemental_quantum_entanglement/
+│   └── README.md
 ├── supplemental_relativity/
+│   └── README.md
 ├── supplemental_string_theory/
+│   └── README.md
 └── template/
-   ├── tuftle/
-   └── kaobook/
+    ├── kaobook/
+    │   ├── main.tex
+    │   ├── structure.tex
+    │   └── bibliography.bib
+    └── tuftle/
+        ├── main.tex
+        ├── book_1_template.tex
+        └── bibliography.bib
 ```
 
-## 🧩 Điều kiện tiên quyết
-Chỉ để đọc:
+## Yêu cầu trước
+Dành cho mục đích chỉ đọc:
 - Trình đọc PDF.
 
-Để chỉnh sửa/biên dịch tài liệu TeX:
+Dành cho chỉnh sửa/biên dịch tài liệu TeX:
 - Một bản phân phối LaTeX (TeX Live / MiKTeX).
 - `pdflatex`.
 - `bibtex` hoặc `biber` tùy theo từng dự án con.
-- `makeindex` cho các template có dùng đánh chỉ mục.
+- `makeindex` cho các mẫu có dùng chỉ mục.
 
-Lưu ý giả định:
-- Không có hệ thống build duy nhất ở cấp thư mục gốc (`Makefile`, `package.json`, `pyproject.toml`) trong kho lưu trữ này.
+Ghi chú giả định:
+- Không có hệ thống build chung ở cấp thư mục gốc (`Makefile`, `package.json`, `pyproject.toml`) trong kho này.
 
-## 🚀 Cài đặt
+## Cài đặt
 ```bash
 git clone https://github.com/<your-user>/leonardsusskind.git
 cd leonardsusskind
 ```
 
-Không cần bước cài đặt package cho mục đích sử dụng cơ bản (đọc các ghi chú hiện có).
+Nếu kho này được fork hoặc mirror, hãy thay `<your-user>` bằng tài khoản phù hợp.
 
-## 🛠️ Cách sử dụng
+Không cần bước cài đặt gói cho nhu cầu cơ bản (đọc các ghi chú có sẵn).
+
+## Sử dụng
 ### 1) Đọc các ghi chú hiện có
-- Mở các file PDF trong những thư mục liên quan, ví dụ:
-  - `core_general_relativity/lesson_1.pdf`
-  - `core_cosmology/lesson_1.pdf`
-  - `core_statistical_mechanics/lesson_1.pdf`
+Mở các tệp PDF trong thư mục liên quan, ví dụ:
+- `core_general_relativity/lesson_1.pdf`
+- `core_cosmology/lesson_1.pdf`
+- `core_statistical_mechanics/lesson_1.pdf`
+- `supplemental_particle_physics_2/NumberTheory.pdf`
 
 ### 2) Làm việc với tài liệu LaTeX
-- Chỉnh sửa file `.tex` và `.bib` trong thư mục khóa học/template mục tiêu.
-- Biên dịch bằng chuỗi công cụ mà thư mục đó yêu cầu.
+- Chỉnh sửa các tệp `.tex` và `.bib` trong thư mục khóa học/mẫu mục tiêu.
+- Biên dịch bằng chuỗi công cụ phù hợp với thư mục đó.
+- Ưu tiên chạy lệnh build từ bên trong thư mục dự án cục bộ để các đường dẫn tương đối được phân giải chính xác.
 
-## ⚙️ Cấu hình
-Không có file cấu hình toàn cục.
+### 3) Điều hướng theo README của từng tuyến học
+Mỗi tuyến học chính có `README.md` riêng để quản lý ghi chú theo phạm vi và ngữ cảnh tiến độ.
 
-Cấu hình nằm cục bộ trong từng dự án TeX (document class, backend thư mục tham khảo, file style, đường dẫn hình ảnh), ví dụ:
+## Cấu hình
+Không có tệp cấu hình toàn cục.
+
+Cấu hình nằm cục bộ trong từng dự án TeX (lớp tài liệu, backend thư mục tài liệu tham khảo, tệp style, đường dẫn hình ảnh), ví dụ:
 - `template/kaobook/main.tex`
 - `template/tuftle/main.tex`
 - `core_cosmology/cosmology_ch10/cosmology_ch10.tex`
+- `supplemental_particle_physics_1/ch1/main.tex`
+- `supplemental_advanced_quantum/ch1/main.tex`
 
-## 🧪 Ví dụ
+## Ví dụ
 ### Ví dụ A: Build `template/kaobook`
-`template/kaobook/main.tex` mô tả chuỗi biên dịch này:
+`template/kaobook/main.tex` mô tả chuỗi biên dịch sau:
 
 ```bash
 cd template/kaobook
@@ -135,18 +212,40 @@ pdflatex cosmology_ch10.tex
 pdflatex cosmology_ch10.tex
 ```
 
-### Ví dụ C: Xem file PDF chương đã tạo
+### Ví dụ C: Build một chương dựa trên Tufte (`supplemental_particle_physics_1/ch1`)
+```bash
+cd supplemental_particle_physics_1/ch1
+pdflatex main.tex
+bibtex main
+makeindex main.idx
+pdflatex main.tex
+pdflatex main.tex
+```
+
+### Ví dụ D: Build một chương dựa trên Tufte (`supplemental_advanced_quantum/ch1`)
+```bash
+cd supplemental_advanced_quantum/ch1
+pdflatex main.tex
+bibtex main
+makeindex main.idx
+pdflatex main.tex
+pdflatex main.tex
+```
+
+### Ví dụ E: Xem PDF chương đã được tạo
 ```bash
 xdg-open supplemental_particle_physics_1/ch1/main.pdf
 ```
 
-## 📝 Ghi chú phát triển
+## Ghi chú phát triển
 - Đây chủ yếu là kho tài liệu/ghi chú, không phải codebase ứng dụng.
-- Một số thư mục có chứa các artifact TeX đã tạo (`.aux`, `.log`, `.toc`, `.bbl`, v.v.) được commit trực tiếp trong repo.
-- Lệnh build có thể khác nhau theo từng thư mục con; hãy làm theo quy ước `.tex` cục bộ.
-- `i18n/` đã tồn tại và được dành cho các biến thể README đa ngôn ngữ.
+- Một số thư mục bao gồm các tệp phát sinh từ TeX (`.aux`, `.log`, `.toc`, `.bbl`, v.v.) đã được commit trong kho.
+- Lệnh build có thể khác nhau theo từng thư mục con; hãy theo quy ước `.tex` tại chỗ.
+- Các tệp `README.md` theo từng tuyến học tồn tại trong thư mục core/supplemental và cần giữ đồng bộ với phát biểu tiến độ ở README gốc.
+- `i18n/` đã tồn tại và được dùng cho các biến thể README đa ngôn ngữ.
+- README gốc được xem là chuẩn; khi cập nhật cần đồng bộ các bản đa ngôn ngữ theo README này.
 
-## 📚 Tiến độ khóa học chuẩn (Được bảo toàn và sắp xếp lại)
+## Tiến độ khóa học chuẩn (được giữ nguyên và tái tổ chức)
 
 ### Các khóa học cốt lõi
 
@@ -166,7 +265,7 @@ Giáo trình của khóa học này [Special Relativity and Electrodynamics](htt
 | Cosmology | 10/10 | 9/10 | The lecture notes, from chapter 1 to 9, had been taken by https://www.lapasserelle.com/cosmology/ . The chapter 10 is in the process. |
 | Statistical Mechanics | 11/11 | 10/10 | The lecture notes had been taken by https://www.lapasserelle.com/statistical_mechanics/. |
 
-### Các khóa học bổ trợ
+### Các khóa học bổ sung
 | Course | Draft Progress | Notes Progress |
 |---|---:|---:|
 | Advanced Quantum Mechanics | 0/10 | 0/10 |
@@ -179,31 +278,54 @@ Giáo trình của khóa học này [Special Relativity and Electrodynamics](htt
 | String Theory | 0/11 | 10/10 |
 | Cosmology and Black Holes | 0/8 | 0/10 |
 
-## 🧯 Khắc phục sự cố
-- `pdflatex: command not found`
-  - Cài đặt một bản phân phối LaTeX và đảm bảo các binary nằm trong `PATH`.
-- Thư mục tham khảo/chỉ mục không hiển thị
-  - Chạy backend bắt buộc (`bibtex` hoặc `biber`) và `makeindex` nếu có dùng, sau đó chạy lại `pdflatex`.
-- Lỗi thiếu file style/class
-  - Build từ đúng thư mục dự án để các đường dẫn tương đối đến tài nguyên cục bộ được resolve chính xác.
-- Kết quả build khác nhau giữa các môi trường
-  - Kho lưu trữ này chứa tài liệu được tạo ở các môi trường khác nhau; hãy đồng bộ phiên bản package khi có thể.
+### Ghi chú về tính toàn vẹn tiến độ
+- Các bảng tiến độ ở trên được giữ nguyên từ nội dung README chuẩn.
+- Các tệp trong kho bao gồm cả tuyến học đã hoàn thiện và tuyến học còn ở dạng placeholder; nếu có điểm không nhất quán giữa mục trong bảng và trạng thái thư mục, hãy coi bảng là ý định đã được ghi nhận và cập nhật cả hai cùng nhau trong các lần chỉnh sửa sau.
 
-## 🗺️ Lộ trình
-- Tiếp tục các lộ trình bổ trợ với nội dung chương thực tế và file nguồn.
-- Cải thiện tính nhất quán của README theo từng khóa học.
-- Thêm các file README đa ngôn ngữ dưới `i18n/` và giữ bộ chọn ngôn ngữ luôn đồng bộ.
-- Thêm phần hướng dẫn build ở cấp kho cho từng dự án con có mã nguồn TeX.
+## Khắc phục sự cố
+| Vấn đề | Cách xử lý |
+|---|---|
+| `pdflatex: command not found` | Cài đặt một bản phân phối LaTeX và đảm bảo binary nằm trong `PATH`. |
+| Tài liệu tham khảo/chỉ mục không hiển thị | Chạy backend cần thiết (`bibtex` hoặc `biber`) và `makeindex` nếu có dùng, sau đó chạy lại `pdflatex`. |
+| Lỗi thiếu style/class file | Build từ đúng thư mục dự án để các đường dẫn tương đối tới tài nguyên cục bộ được phân giải chính xác. |
+| Kết quả build khác nhau giữa các môi trường | Kho này chứa tài liệu được tạo trong các môi trường khác nhau; hãy đồng bộ phiên bản package khi có thể. |
+| Liên kết đa ngôn ngữ lỗi thời hoặc thiếu README ngôn ngữ | Đảm bảo dòng chọn ngôn ngữ ở đầu tệp và các tệp dưới `i18n/` luôn đồng bộ. |
+| Liên kết markdown GitHub sai sau khi đổi tên thư mục | Kiểm tra lại liên kết ngôn ngữ gốc và mọi tham chiếu `i18n/README.*.md` trong một lượt. |
 
-## ❤️ Đóng góp hoặc ủng hộ
-Bạn có thể đóng góp cho dự án này bằng cách fork dự án và gửi pull request. Nếu dự án này giúp bạn tiết kiệm thời gian phát triển, bạn có thể mời tôi một ly cà phê :)
+## Lộ trình
+- Tiếp tục các tuyến học bổ sung với nội dung chương thực tế và tệp nguồn.
+- Cải thiện tính nhất quán của các tệp README theo từng khóa học.
+- Mở rộng và duy trì các README đa ngôn ngữ trong `i18n/`, đồng thời giữ bộ chọn ngôn ngữ luôn đồng bộ.
+- Bổ sung mục hướng dẫn build ở cấp kho cho từng dự án con có nguồn TeX.
+- Bổ sung đoạn lệnh biên dịch theo từng tuyến học khi có khác biệt toolchain cục bộ.
+- Thêm tự động hóa tối thiểu để kiểm tra tính toàn vẹn liên kết README/i18n.
 
-## 🙏 Lời cảm ơn
+## Đóng góp
+Bạn có thể đóng góp cho dự án này bằng cách fork và gửi pull request.
+
+Phạm vi đóng góp gợi ý:
+- Thêm mới hoặc cải thiện ghi chú chương và tài liệu tham chiếu.
+- Nâng cao chất lượng nguồn TeX và hướng dẫn build có thể tái lập.
+- Giữ đồng bộ phát biểu tiến độ giữa README gốc và README theo từng tuyến học.
+- Duy trì tính tương đương đa ngôn ngữ trong `i18n/`.
+
+Khuyến nghị cho pull request:
+- Nêu rõ chính xác thư mục tuyến học đã thay đổi.
+- Kèm các lệnh biên dịch TeX đã dùng (nếu có chỉnh sửa tệp nguồn).
+- Cập nhật các bảng tiến độ liên quan khi trạng thái chương thay đổi.
+- Cập nhật các README trong `i18n/` sau khi README tiếng Anh chuẩn thay đổi.
+
+## ❤️ Support
+
+| Donate | PayPal | Stripe |
+|---|---|---|
+| [![Donate](https://img.shields.io/badge/Donate-LazyingArt-0EA5E9?style=for-the-badge&logo=ko-fi&logoColor=white)](https://chat.lazying.art/donate) | [![PayPal](https://img.shields.io/badge/PayPal-RongzhouChen-00457C?style=for-the-badge&logo=paypal&logoColor=white)](https://paypal.me/RongzhouChen) | [![Stripe](https://img.shields.io/badge/Stripe-Donate-635BFF?style=for-the-badge&logo=stripe&logoColor=white)](https://buy.stripe.com/aFadR8gIaflgfQV6T4fw400) |
+
+## Lời cảm ơn
 - Giáo sư Leonard Susskind vì nội dung bài giảng gốc.
-- Các nguồn ghi chú đã tham chiếu:
-  - https://www.lapasserelle.com/general_relativity/
-  - https://www.lapasserelle.com/cosmology/
-  - https://www.lapasserelle.com/statistical_mechanics/
+- Nguồn ghi chú được tham chiếu hiện có: https://www.lapasserelle.com/general_relativity/
+- Nguồn ghi chú được tham chiếu hiện có: https://www.lapasserelle.com/cosmology/
+- Nguồn ghi chú được tham chiếu hiện có: https://www.lapasserelle.com/statistical_mechanics/
 
-## 📄 Giấy phép
-Kho lưu trữ này được cấp phép theo GNU General Public License v3.0. Xem [LICENSE](LICENSE).
+## Giấy phép
+Kho lưu trữ này được cấp phép theo GNU General Public License v3.0. Xem [LICENSE](../LICENSE).
