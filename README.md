@@ -12,11 +12,22 @@
 ![Core Tracks](https://img.shields.io/badge/core_tracks-6-1f6feb)
 ![Supplemental Tracks](https://img.shields.io/badge/supplemental_tracks-9-9a6700)
 ![i18n](https://img.shields.io/badge/i18n-10%20translations%20%2B%20English-orange)
+![Stars](https://img.shields.io/github/stars/lachlanchen/leonardsusskind?style=flat-square&logo=github&label=stars&color=22c55e)
+![Forks](https://img.shields.io/github/forks/lachlanchen/leonardsusskind?style=flat-square&logo=github&label=forks&color=3b82f6)
+![Last Commit](https://img.shields.io/github/last-commit/lachlanchen/leonardsusskind?style=flat-square&color=8b5cf6)
+
+> 🎓 A multilingual archive of Leonard Susskind lecture-note materials, preserving both polished PDFs and editable LaTeX sources for study, reuse, and reference.
 
 ## Overview
-This repository is a content-first archive of lecture-note materials related to Professor Leonard Susskind courses.
+This repository is a content-first archive of lecture-note materials from Professor Leonard Susskind's teaching ecosystem.
 
 > The lecture notes of Professor Leonard Susskind. If this violates any copyrights, please contact me to delete this repository. Professor Susskind takes no responsibility for the error or misinformation in the notes, neither do I.
+
+It combines three layers in one place:
+
+- Curated note tracks and course-level progress.
+- Published artifacts (`.pdf`) for reading and sharing.
+- Source files (`.tex`, `.bib`, templates) for people who maintain or extend the archive.
 
 ### Primary Goals
 - Keep course notes and progress in one place.
@@ -140,27 +151,29 @@ leonardsusskind/
 ```
 
 ## Prerequisites
-For reading only:
-- A PDF reader.
+For reading:
+- A PDF reader (system or app-based).
 
 For editing/building TeX materials:
 - A LaTeX distribution (TeX Live / MiKTeX).
 - `pdflatex`.
 - `bibtex` or `biber` depending on subproject.
-- `makeindex` for templates that use indexing.
+- `makeindex` for projects that use indexed entries.
 
-Assumption note:
-- There is no single root-level build system (`Makefile`, `package.json`, `pyproject.toml`) in this repository.
+Assumption notes:
+- There is no single root-level build system (`Makefile`, `package.json`, `pyproject.toml`) visible in this repository.
+- Build workflows are expected to be run from each subproject directory.
 
 ## Installation
 ```bash
-git clone https://github.com/<your-user>/leonardsusskind.git
+# Clone the repository
+git clone https://github.com/lachlanchen/leonardsusskind.git
 cd leonardsusskind
 ```
 
-If this repository is forked or mirrored, replace `<your-user>` with the correct account.
+This repository is content-first. If it is mirrored or forked, replace the remote URL with your own copy accordingly.
 
-No package installation step is required for basic use (reading existing notes).
+No global package install is required to read existing notes.
 
 ## Usage
 ### 1) Read existing notes
@@ -170,18 +183,24 @@ Open PDFs in relevant folders, for example:
 - `core_statistical_mechanics/lesson_1.pdf`
 - `supplemental_particle_physics_2/NumberTheory.pdf`
 
-### 2) Work on LaTeX materials
+### 2) Author or extend LaTeX materials
 - Edit `.tex` and `.bib` files in the target course/template folder.
-- Compile with the toolchain expected by that folder.
-- Prefer running build commands from inside the local project directory so relative paths resolve correctly.
+- Compile with the workflow specified by that folder.
+- Build in-place so local relative assets and style files resolve correctly.
 
-### 3) Navigate by track README files
-Each major track has its own local `README.md` for scoped notes and progress context.
+### 3) Navigate by track-level entry points
+Each major track has its own `README.md` with scoped scope notes, references, and progress.
 
 ## Configuration
 There is no global configuration file.
 
-Configuration is local to each TeX project (document class, bibliography backend, style files, graphics paths), for example:
+Configuration is local to each TeX project. Typical knobs are embedded in document sources, including:
+- Document class and package setup in `template/kaobook/main.tex`
+- Reusable style/structure in `template/kaobook/`
+- Bibliography backend and cite style in local `main.tex`/`ref.bib` pairs
+- Include paths for images and chapter-specific assets in each project
+
+Representative local configuration points:
 - `template/kaobook/main.tex`
 - `template/tuftle/main.tex`
 - `core_cosmology/cosmology_ch10/cosmology_ch10.tex`
@@ -202,7 +221,7 @@ pdflatex main
 ```
 
 ### Example B: Build `core_cosmology/cosmology_ch10`
-`cosmology_ch10.tex` uses `\bibliography{ref}` (BibTeX-style workflow):
+`cosmology_ch10.tex` uses a BibTeX-style workflow:
 
 ```bash
 cd core_cosmology/cosmology_ch10
@@ -212,7 +231,7 @@ pdflatex cosmology_ch10.tex
 pdflatex cosmology_ch10.tex
 ```
 
-### Example C: Build a Tufte-based chapter (`supplemental_particle_physics_1/ch1`)
+### Example C: Build `supplemental_particle_physics_1/ch1`
 ```bash
 cd supplemental_particle_physics_1/ch1
 pdflatex main.tex
@@ -222,7 +241,7 @@ pdflatex main.tex
 pdflatex main.tex
 ```
 
-### Example D: Build a Tufte-based chapter (`supplemental_advanced_quantum/ch1`)
+### Example D: Build `supplemental_advanced_quantum/ch1`
 ```bash
 cd supplemental_advanced_quantum/ch1
 pdflatex main.tex
@@ -232,7 +251,7 @@ pdflatex main.tex
 pdflatex main.tex
 ```
 
-### Example E: View a generated chapter PDF
+### Example E: View output locally
 ```bash
 xdg-open supplemental_particle_physics_1/ch1/main.pdf
 ```
@@ -241,9 +260,9 @@ xdg-open supplemental_particle_physics_1/ch1/main.pdf
 - This is primarily a documentation/notes repository, not an application codebase.
 - Some folders include generated TeX artifacts (`.aux`, `.log`, `.toc`, `.bbl`, etc.) committed in-repo.
 - Build commands can vary by subdirectory; follow the local `.tex` conventions.
-- Per-track `README.md` files exist across core/supplemental directories and should be kept aligned with root-level progress claims.
+- Per-track `README.md` files exist across core and supplemental directories and should be kept aligned with root-level progress claims.
 - `i18n/` exists and is used for multilingual README variants.
-- The root README is treated as canonical; multilingual files should follow it when updated.
+- The root README is treated as canonical; localized files should follow it when updated.
 
 ## Canonical Course Progress (Preserved and Reorganized)
 
@@ -315,17 +334,17 @@ Recommended pull request hygiene:
 - Update relevant progress tables when chapter state changes.
 - Update `i18n/` readmes after canonical English README changes.
 
-## ❤️ Support
-
-| Donate | PayPal | Stripe |
-|---|---|---|
-| [![Donate](https://img.shields.io/badge/Donate-LazyingArt-0EA5E9?style=for-the-badge&logo=ko-fi&logoColor=white)](https://chat.lazying.art/donate) | [![PayPal](https://img.shields.io/badge/PayPal-RongzhouChen-00457C?style=for-the-badge&logo=paypal&logoColor=white)](https://paypal.me/RongzhouChen) | [![Stripe](https://img.shields.io/badge/Stripe-Donate-635BFF?style=for-the-badge&logo=stripe&logoColor=white)](https://buy.stripe.com/aFadR8gIaflgfQV6T4fw400) |
-
 ## Acknowledgements
 - Professor Leonard Susskind for the original lecture content.
 - Existing referenced note source: https://www.lapasserelle.com/general_relativity/
 - Existing referenced note source: https://www.lapasserelle.com/cosmology/
 - Existing referenced note source: https://www.lapasserelle.com/statistical_mechanics/
+
+## ❤️ Support
+
+| Donate | PayPal | Stripe |
+| --- | --- | --- |
+| [![Donate](https://camo.githubusercontent.com/24a4914f0b42c6f435f9e101621f1e52535b02c225764b2f6cc99416926004b7/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f446f6e6174652d4c617a79696e674172742d3045413545393f7374796c653d666f722d7468652d6261646765266c6f676f3d6b6f2d6669266c6f676f436f6c6f723d7768697465)](https://chat.lazying.art/donate) | [![PayPal](https://camo.githubusercontent.com/d0f57e8b016517a4b06961b24d0ca87d62fdba16e18bbdb6aba28e978dc0ea21/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f50617950616c2d526f6e677a686f754368656e2d3030343537433f7374796c653d666f722d7468652d6261646765266c6f676f3d70617970616c266c6f676f436f6c6f723d7768697465)](https://paypal.me/RongzhouChen) | [![Stripe](https://camo.githubusercontent.com/1152dfe04b6943afe3a8d2953676749603fb9f95e24088c92c97a01a897b4942/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f5374726970652d446f6e6174652d3633354246463f7374796c653d666f722d7468652d6261646765266c6f676f3d737472697065266c6f676f436f6c6f723d7768697465)](https://buy.stripe.com/aFadR8gIaflgfQV6T4fw400) |
 
 ## License
 This repository is licensed under the GNU General Public License v3.0. See [LICENSE](LICENSE).
