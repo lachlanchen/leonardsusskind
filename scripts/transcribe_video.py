@@ -121,6 +121,10 @@ def render_markdown(entries: list[dict], source_rel: Path) -> str:
     return "\n".join(lines)
 
 
+def has_meaningful_entries(entries: list[dict]) -> bool:
+    return any(clean_text(str(entry.get("text", ""))) for entry in entries)
+
+
 def parse_srt_entries(srt_path: Path) -> list[dict]:
     entries: list[dict] = []
     content = srt_path.read_text(encoding="utf-8").strip()
@@ -211,10 +215,14 @@ def transcribe_video(
             raise FileNotFoundError(f"JSON output not produced: {work_json}")
 
         entries = json.loads(work_json.read_text(encoding="utf-8"))
+        if not has_meaningful_entries(entries):
+            raise RuntimeError(
+                f"Transcription produced no usable subtitle content for {source_rel.as_posix()}"
+            )
         shutil.move(str(work_srt), str(subtitle_path))
         markdown_path.write_text(render_markdown(entries, source_rel), encoding="utf-8")
     finally:
-        cleanup_paths([work_video, work_json, work_wav])
+        cleanup_paths([work_video, work_srt, work_json, work_wav])
 
     print(f"VIDEO {video_path}")
     print(f"SUBTITLE {subtitle_path}")
