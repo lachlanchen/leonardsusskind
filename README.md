@@ -42,6 +42,7 @@ It combines three layers in one place:
 - 📌 Supplementary course progress tracking.
 - 📄 Existing lesson PDFs for several core tracks.
 - 🧪 LaTeX source material in selected tracks.
+- 📚 Imported companion notes in `theoretical_minimum_companion_notes/`.
 - 🧷 Reusable LaTeX templates in `template/tuftle` and `template/kaobook`.
 - 🎨 Repository visuals in `figs/`.
 - 🌐 Multilingual README set in `i18n/`.
@@ -51,6 +52,7 @@ It combines three layers in one place:
 |---|---|
 | 📝 Notes | Multiple course note sets with progress tracking |
 | 🧾 Source | TeX/BibTeX sources in selected subprojects |
+| 📚 Companion Notes | `theoretical_minimum_companion_notes/` imported from `weka511/tm` |
 | 🧱 Templates | `template/tuftle` and `template/kaobook` |
 | 🎨 Branding | `figs/banner.*`, `figs/logo.*`, `figs/logo-w-text.*` |
 | 🌍 i18n | `i18n/README.*.md` language variants |
@@ -95,6 +97,13 @@ leonardsusskind/
 │   ├── README.vi.md
 │   ├── README.zh-Hans.md
 │   └── README.zh-Hant.md
+├── theoretical_minimum_companion_notes/
+│   ├── README.md
+│   ├── build_all.sh
+│   ├── shared/
+│   ├── core/
+│   ├── supplementary/
+│   └── extras/
 ├── core_classical/
 │   └── README.md
 ├── core_quantum/
@@ -195,6 +204,13 @@ Open PDFs in relevant folders, for example:
 
 ### 3) Navigate by track-level entry points
 Each major track has its own `README.md` with scoped scope notes, references, and progress.
+
+### 4) Use imported companion notes
+`theoretical_minimum_companion_notes/` contains a dedicated import of companion TeX notes sourced from `https://github.com/weka511/tm`. Build them with:
+
+```bash
+./theoretical_minimum_companion_notes/build_all.sh
+```
 
 ## Configuration
 There is no global configuration file.
@@ -341,6 +357,8 @@ Recommended pull request hygiene:
 
 ## Acknowledgements
 - Professor Leonard Susskind for the original lecture content.
+- Simon Crase for the companion-note repository imported under `theoretical_minimum_companion_notes/`.
+- Companion note source repository: https://github.com/weka511/tm
 - Existing referenced note source: https://www.lapasserelle.com/general_relativity/
 - Existing referenced note source: https://www.lapasserelle.com/cosmology/
 - Existing referenced note source: https://www.lapasserelle.com/statistical_mechanics/

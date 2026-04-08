@@ -1,6 +1,6 @@
-# TM Notes Import
+# Theoretical Minimum Companion Notes
 
-This directory imports the TeX note set from `/home/lachlan/ProjectsLFS/Physics/tm` into a dedicated tree inside this repository without mixing it into the existing `core_*`, `supplemental_*`, or `the_theoretical_minimum/` structures.
+This directory imports the TeX note set from `/home/lachlan/ProjectsLFS/Physics/tm` into a dedicated tree inside this repository without mixing it into the existing `core_*`, `supplemental_*`, or `the_theoretical_minimum/` structures. The original upstream repository is `https://github.com/weka511/tm` by Simon Crase.
 
 Structure:
 
@@ -16,13 +16,13 @@ The imported copies include a few minimal compatibility fixes for this environme
 Build everything:
 
 ```bash
-./tm_notes_import/build_all.sh
+./theoretical_minimum_companion_notes/build_all.sh
 ```
 
 Build one note manually:
 
 ```bash
-cd tm_notes_import/core/cosmology/cosmology
+cd theoretical_minimum_companion_notes/core/cosmology/cosmology
 lualatex cosmology.tex
 makeglossaries cosmology
 bibtex cosmology
