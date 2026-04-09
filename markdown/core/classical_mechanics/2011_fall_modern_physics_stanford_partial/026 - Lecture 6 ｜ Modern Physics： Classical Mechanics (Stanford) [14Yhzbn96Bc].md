@@ -1,0 +1,2716 @@
+# Transcript
+
+Source: core/classical_mechanics/2011_fall_modern_physics_stanford_partial/026 - Lecture 6 ｜ Modern Physics： Classical Mechanics (Stanford) [14Yhzbn96Bc].mp4
+
+- [00:00:06,639 - 00:00:09,720] This program is brought to you by Stanford University.
+- [00:00:10,200 - 00:00:12,720] Please visit us at stanford.edu.
+- [00:00:15,960 - 00:00:18,000] We're going to plunge deeply,
+- [00:00:18,000 - 00:00:18,620] deeply,
+- [00:00:18,620 - 00:00:21,840] deeply into the Hamiltonian method of mechanics,
+- [00:00:22,120 - 00:00:22,900] not quantum mechanics.
+- [00:00:24,160 - 00:00:26,400] We've studied the Lebrangian method.
+- [00:00:26,400 - 00:00:28,560] We've studied the principle of least action.
+- [00:00:29,980 - 00:00:32,430] We've even gone to the
+- [00:00:32,430 - 00:00:34,880] extremely advanced study of Newton's equations.
+- [00:00:38,080 - 00:00:41,000] Tonight is Hamilton's night.
+- [00:00:47,920 - 00:00:49,280] Part of the point,
+- [00:00:49,280 - 00:00:51,240] in fact maybe the main point,
+- [00:00:51,240 - 00:00:53,940] of the Hamiltonian formulation of mechanics
+- [00:00:54,180 - 00:00:56,380] goes back to something that I talked about earlier.
+- [00:00:56,380 - 00:00:57,780] I talked about it at the very first lecture.
+- [00:00:58,920 - 00:01:01,760] We talked about the basic structure of classical thinking,
+- [00:01:01,760 - 00:01:03,800] classical mechanics,
+- [00:01:03,800 - 00:01:04,760] but not classical
+- [00:01:04,760 - 00:01:06,040] mechanics quite,
+- [00:01:06,040 - 00:01:08,460] but something even a little more primitive.
+- [00:01:08,840 - 00:01:11,400] We talked about discrete systems,
+- [00:01:11,400 - 00:01:12,840] the coin,
+- [00:01:12,840 - 00:01:18,600] which could either be heads or tails.
+- [00:01:20,380 - 00:01:21,840] That's a two-state system,
+- [00:01:21,840 - 00:01:23,380] two simple states.
+- [00:01:23,660 - 00:01:26,300] Then we talked about possible laws of evolution.
+- [00:01:26,380 - 00:01:30,060] One simple law of evolution is nothing happens.
+- [00:01:31,080 - 00:01:34,790] Evolution now might mean a sequence of
+- [00:01:34,790 - 00:01:38,500] states separated by a small time interval,
+- [00:01:38,500 - 00:01:39,080] a discrete
+- [00:01:39,080 - 00:01:39,940] time interval,
+- [00:01:39,940 - 00:01:41,340] a tenth of a second or whatever.
+- [00:01:41,520 - 00:01:43,260] We update every tenth of a second.
+- [00:01:43,740 - 00:01:46,580] Then we spoke about a simple law of nature,
+- [00:01:46,580 - 00:01:49,960] which was a simple law of coin flipping or
+- [00:01:49,960 - 00:01:51,640] coin changing,
+- [00:01:51,640 - 00:01:53,880] which would be no change at all.
+- [00:01:54,100 - 00:01:54,560] Here.
+- [00:01:54,840 - 00:01:55,480] Here.
+- [00:01:55,480 - 00:01:57,580] Without doing anything.
+- [00:01:58,160 - 00:02:03,320] That's a simple law of evolution.
+- [00:02:04,940 - 00:02:08,060] Another less simple law of evolution is if it heads,
+- [00:02:08,060 - 00:02:10,639] then the next time it's tails.
+- [00:02:11,020 - 00:02:11,960] If it's tails,
+- [00:02:11,960 - 00:02:13,620] the next time it's heads.
+- [00:02:15,980 - 00:02:16,580] Tails,
+- [00:02:16,580 - 00:02:16,860] heads,
+- [00:02:16,860 - 00:02:17,260] tails,
+- [00:02:17,260 - 00:02:17,620] heads,
+- [00:02:17,620 - 00:02:17,920] tails,
+- [00:02:17,920 - 00:02:18,240] heads.
+- [00:02:18,860 - 00:02:22,080] Both of these rules have the feature that if
+- [00:02:22,080 - 00:02:25,300] you know the state of the system in any
+- [00:02:25,300 - 00:02:26,160] instant of time,
+- [00:02:26,160 - 00:02:29,660] you know it at the next instant of time.
+- [00:02:30,040 - 00:02:31,020] In other words,
+- [00:02:31,020 - 00:02:32,920] the updating rule is precise.
+- [00:02:35,040 - 00:02:35,920] But also,
+- [00:02:35,920 - 00:02:39,100] the backdating rule is also precise.
+- [00:02:39,320 - 00:02:41,180] If you know where you are in any instant,
+- [00:02:41,180 - 00:02:42,920] you know where you were.
+- [00:02:43,900 - 00:02:46,650] We even talked about the
+- [00:02:46,650 - 00:02:49,400] general structure of such simple theories.
+- [00:02:49,960 - 00:02:51,480] Instead of just two states,
+- [00:02:51,480 - 00:02:54,620] we could imagine a system with many states.
+- [00:02:54,740 - 00:02:55,280] We could imagine a system with many states.
+- [00:02:55,280 - 00:02:59,980] Each one being represented by a point in a space.
+- [00:03:00,240 - 00:03:03,940] We might as well now call that space phase space.
+- [00:03:05,520 - 00:03:08,660] It's the phase space of a simple discrete system.
+- [00:03:08,860 - 00:03:10,000] In this case,
+- [00:03:10,000 - 00:03:11,220] it's got one,
+- [00:03:11,220 - 00:03:11,680] two,
+- [00:03:11,680 - 00:03:12,160] three,
+- [00:03:12,160 - 00:03:12,580] four,
+- [00:03:12,580 - 00:03:13,040] five,
+- [00:03:13,040 - 00:03:13,620] six.
+- [00:03:14,200 - 00:03:16,620] If I stop there with only six states,
+- [00:03:16,620 - 00:03:18,980] then we could be talking about a die.
+- [00:03:19,360 - 00:03:20,700] A die isn't dice.
+- [00:03:21,360 - 00:03:23,100] Six possible configurations.
+- [00:03:24,580 - 00:03:25,260] All right.
+- [00:03:25,260 - 00:03:26,320] Add two more.
+- [00:03:26,500 - 00:03:26,980] I don't know.
+- [00:03:27,080 - 00:03:27,560] We could be talking.
+- [00:03:27,720 - 00:03:29,440] What system has eight states?
+- [00:03:31,080 - 00:03:32,280] Three pennies.
+- [00:03:32,300 - 00:03:33,080] Three pennies.
+- [00:03:33,220 - 00:03:33,640] Three coins.
+- [00:03:33,640 - 00:03:34,960] Three coins.
+- [00:03:38,240 - 00:03:38,880] Precisely.
+- [00:03:41,700 - 00:03:46,200] So this is a general kind of situation.
+- [00:03:47,420 - 00:03:50,380] And the basic setup,
+- [00:03:50,380 - 00:03:51,380] in fact,
+- [00:03:51,380 - 00:03:53,120] the definition of a phase space
+- [00:03:53,120 - 00:03:54,860] is if you know where you
+- [00:03:54,860 - 00:03:55,240] are in the system,
+- [00:03:55,240 - 00:03:55,240] you know where you are in the space.
+- [00:03:55,260 - 00:03:57,240] You know where you'll be next.
+- [00:03:57,400 - 00:03:58,780] And you know where you came from.
+- [00:04:00,240 - 00:04:03,240] So there's a rule which could be represented
+- [00:04:03,240 - 00:04:06,240] simply by a set of arrows which tells you
+- [00:04:06,240 - 00:04:07,160] where to go next.
+- [00:04:08,340 - 00:04:08,780] Oh,
+- [00:04:08,780 - 00:04:09,180] look,
+- [00:04:09,180 - 00:04:10,940] you can't come back because you've already been there.
+- [00:04:12,000 - 00:04:12,440] Here.
+- [00:04:13,240 - 00:04:13,680] Here.
+- [00:04:14,480 - 00:04:14,920] Here.
+- [00:04:15,660 - 00:04:16,100] Here.
+- [00:04:16,240 - 00:04:17,100] And then back to here.
+- [00:04:17,240 - 00:04:17,779] For example,
+- [00:04:17,779 - 00:04:20,480] you can have other kinds of laws.
+- [00:04:23,040 - 00:04:25,000] Not different than in kind,
+- [00:04:25,000 - 00:04:25,240] but different in type.
+- [00:04:25,240 - 00:04:26,080] And different in detail.
+- [00:04:26,800 - 00:04:27,780] For example,
+- [00:04:27,780 - 00:04:30,120] you could have some closed loops like this.
+- [00:04:38,240 - 00:04:38,760] So,
+- [00:04:38,760 - 00:04:39,660] wherever you are,
+- [00:04:39,660 - 00:04:40,860] you go to the next place.
+- [00:04:41,100 - 00:04:43,940] But now there's some closed sort of
+- [00:04:43,940 - 00:04:46,780] cycles so that if you're on this cycle,
+- [00:04:46,780 - 00:04:47,140] you will
+- [00:04:47,140 - 00:04:47,720] stay there.
+- [00:04:47,960 - 00:04:49,160] And if you're on this cycle,
+- [00:04:49,160 - 00:04:49,940] you will stay there.
+- [00:04:50,660 - 00:04:53,820] This corresponds to the existence of a conservation law.
+- [00:04:53,820 - 00:04:58,770] We can imagine that these three states
+- [00:04:58,770 - 00:05:03,720] over here are labeled as having property equal
+- [00:05:03,720 - 00:05:04,500] to plus one.
+- [00:05:05,240 - 00:05:06,420] And over here,
+- [00:05:06,420 - 00:05:07,080] property,
+- [00:05:07,080 - 00:05:08,140] the same property,
+- [00:05:08,140 - 00:05:09,760] minus one.
+- [00:05:10,140 - 00:05:10,780] Well,
+- [00:05:10,780 - 00:05:12,140] if you've got plus one,
+- [00:05:12,140 - 00:05:13,280] you stay plus one.
+- [00:05:13,400 - 00:05:15,520] Plus one never becomes minus one.
+- [00:05:15,620 - 00:05:19,710] And minus one never becomes plus one because
+- [00:05:19,710 - 00:05:23,800] all of the configurations with the state of
+- [00:05:23,800 - 00:05:25,860] number minus one go to configurations
+- [00:05:25,860 - 00:05:27,920] with number minus one and so forth.
+- [00:05:29,840 - 00:05:31,700] But both of these kinds of laws have
+- [00:05:31,700 - 00:05:33,560] the property that if you know where you are,
+- [00:05:33,560 - 00:05:34,420] you know where
+- [00:05:34,420 - 00:05:34,680] you'll be.
+- [00:05:34,900 - 00:05:35,860] And you know where you are.
+- [00:05:36,720 - 00:05:40,460] That's to be contrasted with a
+- [00:05:40,460 - 00:05:44,200] law which might look something like this.
+- [00:05:44,900 - 00:05:45,940] If you're over here,
+- [00:05:45,940 - 00:05:47,660] you go to here.
+- [00:05:48,380 - 00:05:49,440] If you're over here,
+- [00:05:49,440 - 00:05:50,680] you go to here.
+- [00:05:51,060 - 00:05:52,220] And if you're over here,
+- [00:05:52,220 - 00:05:53,280] you go to here.
+- [00:05:54,560 - 00:05:56,800] That's a very definite updating rule.
+- [00:05:57,340 - 00:05:58,280] Wherever you are,
+- [00:05:58,280 - 00:05:59,260] you know where to go next.
+- [00:06:00,239 - 00:06:02,460] But there's something funny about it.
+- [00:06:03,219 - 00:06:03,700] Namely,
+- [00:06:03,700 - 00:06:04,620] in particular,
+- [00:06:04,620 - 00:06:08,460] you can't go backward in a unique way.
+- [00:06:09,200 - 00:06:11,220] You can go backward from this point.
+- [00:06:11,280 - 00:06:12,160] From this point,
+- [00:06:12,160 - 00:06:13,840] you know that you must have come from here.
+- [00:06:14,700 - 00:06:15,860] But if you're over here,
+- [00:06:15,860 - 00:06:17,990] you don't know whether you came
+- [00:06:17,990 - 00:06:20,120] from here or whether you came from
+- [00:06:20,120 - 00:06:20,380] here.
+- [00:06:21,700 - 00:06:23,260] What's going on here is point-based.
+- [00:06:23,260 - 00:06:24,460] And the points are running into each other.
+- [00:06:25,480 - 00:06:27,340] There's yet another way to think of it.
+- [00:06:27,820 - 00:06:30,400] Imagine the phase space being populated.
+- [00:06:31,979 - 00:06:34,060] Populated with points.
+- [00:06:36,320 - 00:06:37,480] And the point,
+- [00:06:37,480 - 00:06:38,020] in fact,
+- [00:06:38,020 - 00:06:40,420] let's imagine the entire phase
+- [00:06:40,420 - 00:06:42,820] space is populated with red dots.
+- [00:06:45,640 - 00:06:48,820] And the red dots all move.
+- [00:06:49,060 - 00:06:50,200] They do a dance.
+- [00:06:50,200 - 00:06:54,260] The dance is simply to follow the
+- [00:06:54,260 - 00:06:58,320] trajectories as they're prescribed by the law,
+- [00:06:58,320 - 00:06:58,980] whatever
+- [00:06:58,980 - 00:06:59,600] the law is.
+- [00:07:00,100 - 00:07:02,080] So this red dot goes to here.
+- [00:07:02,180 - 00:07:03,300] This red dot goes to here.
+- [00:07:03,380 - 00:07:04,440] This red dot goes to here.
+- [00:07:04,520 - 00:07:05,560] This red dot goes to here.
+- [00:07:06,920 - 00:07:07,400] Notice,
+- [00:07:07,400 - 00:07:09,240] every red dot knows where to go,
+- [00:07:09,240 - 00:07:10,300] knows where to come from.
+- [00:07:13,239 - 00:07:18,560] And there's a kind of rigidity to the red dots.
+- [00:07:18,560 - 00:07:20,460] None disappear,
+- [00:07:20,460 - 00:07:23,920] none spontaneously appear.
+- [00:07:24,400 - 00:07:25,300] None disappear,
+- [00:07:25,300 - 00:07:27,140] none appear.
+- [00:07:27,940 - 00:07:31,010] They simply just rigidly or what's
+- [00:07:31,010 - 00:07:34,080] an even better word than rigidly?
+- [00:07:36,120 - 00:07:37,240] A fluid,
+- [00:07:37,240 - 00:07:37,900] an incompressible.
+- [00:07:38,460 - 00:07:40,860] A kind of incompressible motion where
+- [00:07:40,860 - 00:07:43,260] points don't run into each other.
+- [00:07:43,460 - 00:07:44,780] Same thing here.
+- [00:07:45,640 - 00:07:46,980] Same thing here.
+- [00:07:47,080 - 00:07:48,540] If we populate the point.
+- [00:07:48,540 - 00:07:50,820] points with red dots and we allow them to move
+- [00:07:53,260 - 00:07:54,440] along the arrows
+- [00:07:55,300 - 00:07:57,020] instant by instant by instant
+- [00:07:57,900 - 00:07:58,840] each instant
+- [00:07:58,840 - 00:08:01,220] the number of red dots is the same
+- [00:08:02,040 - 00:08:03,580] they don't run into each other
+- [00:08:04,300 - 00:08:05,680] they don't bifurcate
+- [00:08:05,680 - 00:08:08,780] the whole thing just moves in an incompressible way
+- [00:08:08,780 - 00:08:11,180] on the other hand with this law
+- [00:08:11,800 - 00:08:13,660] we could start a red point
+- [00:08:14,940 - 00:08:15,980] at each place
+- [00:08:15,980 - 00:08:16,320] twice
+- [00:08:16,320 - 00:08:19,080] but then after one motion
+- [00:08:21,040 - 00:08:22,760] this one would have disappeared,
+- [00:08:22,760 - 00:08:24,220] never to reappear
+- [00:08:24,220 - 00:08:28,580] and we would have only two places which were occupied
+- [00:08:28,580 - 00:08:31,460] going back and forth back and forth
+- [00:08:31,460 - 00:08:34,159] there would be some loss in a sense
+- [00:08:34,159 - 00:08:36,539] of points
+- [00:08:38,539 - 00:08:40,200] in the phase space
+- [00:08:41,120 - 00:08:44,020] phase space points would not be conserved
+- [00:08:45,980 - 00:08:49,480] the whole point of Hamilton's mechanics
+- [00:08:49,480 - 00:08:51,480] Hamilton's form of mechanics
+- [00:08:51,480 - 00:08:53,180] is number one,
+- [00:08:53,180 - 00:08:56,040] it's a form in which every point
+- [00:08:56,569 - 00:08:57,920] knows where to go next
+- [00:08:57,920 - 00:08:59,700] and knows where it came from
+- [00:08:59,700 - 00:09:02,940] without points ever being lost or gained
+- [00:09:03,640 - 00:09:05,400] in other words a kind of
+- [00:09:05,400 - 00:09:07,160] rigid motion in a phase space
+- [00:09:07,160 - 00:09:08,860] or an incompressible motion
+- [00:09:09,469 - 00:09:11,060] of the points in phase space
+- [00:09:14,400 - 00:09:15,960] which may also be considered a form of motion
+- [00:09:15,960 - 00:09:17,860] but it can also be called information conservation
+- [00:09:18,720 - 00:09:19,440] we'll see,
+- [00:09:19,440 - 00:09:20,600] we'll talk about that
+- [00:09:20,600 - 00:09:22,760] a little bit further in the future
+- [00:09:25,959 - 00:09:26,560] okay,
+- [00:09:26,560 - 00:09:29,360] another point of Hamilton's equations
+- [00:09:30,120 - 00:09:33,800] let's think about ordinary F equals M A type equations
+- [00:09:34,420 - 00:09:35,540] they're not of this form
+- [00:09:36,420 - 00:09:37,000] why not?
+- [00:09:37,980 - 00:09:38,580] well,
+- [00:09:38,580 - 00:09:40,920] let's suppose you know where you are
+- [00:09:41,340 - 00:09:43,300] let's make a plot
+- [00:09:44,120 - 00:09:44,900] let's make a plot
+- [00:09:45,760 - 00:09:47,380] here's the positions of a particle
+- [00:09:47,380 - 00:09:49,180] possible positions of a particle
+- [00:09:50,339 - 00:09:51,780] here's the particle x,
+- [00:09:51,780 - 00:09:52,120] y,
+- [00:09:52,120 - 00:09:52,500] and z
+- [00:09:56,239 - 00:09:58,160] supposing I know the particle is over here
+- [00:09:58,160 - 00:10:00,080] do I know where it will be next?
+- [00:10:00,919 - 00:10:01,359] no,
+- [00:10:01,359 - 00:10:03,000] I need to know something else
+- [00:10:03,000 - 00:10:05,300] I need to know not only where it is now
+- [00:10:05,920 - 00:10:07,290] but I need to know
+- [00:10:07,290 - 00:10:08,660] where it was an instant back
+- [00:10:09,339 - 00:10:10,320] in other words,
+- [00:10:10,320 - 00:10:12,720] I need to know the position and the velocity
+- [00:10:13,439 - 00:10:14,159] knowing the position and the velocity of the
+- [00:10:14,159 - 00:10:14,880] particle is a very important part of the equation
+- [00:10:14,880 - 00:10:16,480] the velocity is the same thing
+- [00:10:16,480 - 00:10:18,080] as knowing the position and the instant
+- [00:10:18,080 - 00:10:21,900] and knowing the position a slight bit earlier
+- [00:10:22,650 - 00:10:24,420] so I need two pieces of information
+- [00:10:24,420 - 00:10:27,220] I need to know where the object is
+- [00:10:27,750 - 00:10:28,905] and I also need a
+- [00:10:28,905 - 00:10:30,060] kind of ghost piece of information
+- [00:10:30,880 - 00:10:33,720] which is where it was an instant ago
+- [00:10:34,800 - 00:10:37,030] and that's enough to tell
+- [00:10:37,030 - 00:10:39,260] me where it will be next
+- [00:10:40,240 - 00:10:44,780] next means after a short prescribed period of time
+- [00:10:47,260 - 00:10:50,040] so specifying the locations of a system
+- [00:10:50,720 - 00:10:52,300] by now we can simply call
+- [00:10:52,300 - 00:10:53,880] them the cues of a system
+- [00:10:54,640 - 00:10:56,780] does not constitute a phase space
+- [00:10:56,780 - 00:11:00,700] the phase space constitutes everything you need to know
+- [00:11:02,360 - 00:11:04,660] in order to tell where you'll be next
+- [00:11:06,719 - 00:11:09,259] but in such a way that
+- [00:11:09,259 - 00:11:11,800] there's a rigidity to the motion
+- [00:11:12,740 - 00:11:14,600] a rigidity to the motion
+- [00:11:14,600 - 00:11:17,340] points never gained nor lost
+- [00:11:17,340 - 00:11:19,580] that's what phase space is
+- [00:11:19,580 - 00:11:21,950] phase space is a way of
+- [00:11:21,950 - 00:11:24,320] representing the configurations of a mechanical system
+- [00:11:26,079 - 00:11:30,300] so that the motions are described
+- [00:11:31,180 - 00:11:35,100] much as I've described these discrete motions
+- [00:11:35,100 - 00:11:36,600] we'll come back to it in detail
+- [00:11:37,260 - 00:11:39,760] may I ask a question here before we move on?
+- [00:11:39,900 - 00:11:40,160] yeah
+- [00:11:40,160 - 00:11:42,230] and I wonder if you can
+- [00:11:42,230 - 00:11:44,300] talk about what some of the
+- [00:11:44,600 - 00:11:47,180] insights or pressures or motivations were
+- [00:11:47,180 - 00:11:50,460] for this reformulation of Newtonian mechanics
+- [00:11:51,300 - 00:11:51,740] well
+- [00:11:53,680 - 00:11:55,420] yeah I think
+- [00:11:55,420 - 00:11:58,010] the Lagrangian formulation was formulated
+- [00:11:58,010 - 00:12:00,600] by people for practical reasons
+- [00:12:01,359 - 00:12:03,259] the practical reasons being
+- [00:12:03,259 - 00:12:05,160] most systems were awfully complicated
+- [00:12:05,160 - 00:12:08,260] and difficult to apply if people's M.A.
+- [00:12:09,260 - 00:12:13,360] and so a more general formulation
+- [00:12:14,600 - 00:12:18,320] which was not dependent on particular sets of coordinates
+- [00:12:18,320 - 00:12:19,780] in many many contexts
+- [00:12:21,260 - 00:12:22,980] rectilinear coordinates are simply
+- [00:12:22,980 - 00:12:24,700] not appropriate for a problem
+- [00:12:25,580 - 00:12:28,700] components of vectors are not appropriate to a problem
+- [00:12:28,700 - 00:12:30,160] or not particularly useful
+- [00:12:31,260 - 00:12:31,900] motion,
+- [00:12:31,900 - 00:12:32,840] for example
+- [00:12:33,760 - 00:12:37,500] motion of a particle on the flat blackboard
+- [00:12:37,500 - 00:12:40,460] can be nicely described by X's and Y's
+- [00:12:40,460 - 00:12:42,240] and we can use X and Y components
+- [00:12:42,960 - 00:12:44,580] and write F equals M.A.
+- [00:12:44,580 - 00:12:47,200] motion on the surface of a sphere
+- [00:12:48,140 - 00:12:50,960] an object moving around on the surface of a sphere
+- [00:12:51,580 - 00:12:53,700] it's not natural in any
+- [00:12:53,700 - 00:12:55,820] special sense to introduce rectangular coordinates
+- [00:12:55,820 - 00:12:58,840] you can't introduce rectangular coordinates onto the sphere
+- [00:12:58,840 - 00:13:01,400] you can introduce coordinates
+- [00:13:02,400 - 00:13:03,900] latitude and longitude
+- [00:13:04,580 - 00:13:07,140] but you can't introduce rectangular coordinates
+- [00:13:07,140 - 00:13:12,340] and the naive idea of components
+- [00:13:12,340 - 00:13:14,300] the naive idea of components
+- [00:13:14,580 - 00:13:17,220] rectangular Cartesian coordinates is not useful
+- [00:13:18,199 - 00:13:21,809] so it's more useful to define mechanics in a
+- [00:13:21,809 - 00:13:25,420] way that doesn't depend on any specific set of coordinates
+- [00:13:26,140 - 00:13:28,700] that was the that was Lagrange's motivation
+- [00:13:29,939 - 00:13:32,760] what Hamilton was smoking I don't know
+- [00:13:34,199 - 00:13:38,139] but what he developed was an
+- [00:13:38,139 - 00:13:42,080] extremely beautiful elegant formulation of mechanics
+- [00:13:42,080 - 00:13:44,910] which turned out which I don't
+- [00:13:44,910 - 00:13:47,740] think he ever really used for anything
+- [00:13:47,740 - 00:13:50,420] he simply admired it
+- [00:13:50,970 - 00:13:53,760] and physicists admired it afterwards
+- [00:13:54,540 - 00:13:56,720] it turned out to be very useful
+- [00:13:58,060 - 00:13:59,880] part of the usefulness of it
+- [00:13:59,880 - 00:14:02,880] was because it does conserve information in
+- [00:14:02,880 - 00:14:05,880] the same sense that I described over here
+- [00:14:05,880 - 00:14:06,980] I'm sure he was aware of that
+- [00:14:07,830 - 00:14:08,805] but I don't know if
+- [00:14:08,805 - 00:14:09,780] it was foremost in his mind
+- [00:14:09,780 - 00:14:11,680] but ultimately
+- [00:14:12,080 - 00:14:13,600] the real power of it
+- [00:14:13,600 - 00:14:16,100] came when quantum mechanics was developed
+- [00:14:17,000 - 00:14:17,600] so
+- [00:14:21,040 - 00:14:24,240] it's hard for me to put myself in Hamilton's position
+- [00:14:24,240 - 00:14:27,160] I mean it was one of these brilliant mathematical insights
+- [00:14:28,079 - 00:14:30,120] that kind of came from nowhere
+- [00:14:30,120 - 00:14:30,740] just
+- [00:14:33,900 - 00:14:36,660] somehow he saw the structures there
+- [00:14:36,660 - 00:14:38,370] in ways that I think
+- [00:14:38,370 - 00:14:40,080] most of us would not have
+- [00:14:40,080 - 00:14:42,060] and so no I can't really give you
+- [00:14:42,080 - 00:14:42,900] his intuitions
+- [00:14:42,900 - 00:14:44,500] what we can do is do it
+- [00:14:44,500 - 00:14:45,940] and after we've done it
+- [00:14:45,940 - 00:14:48,100] go out back and talk about why it's so useful
+- [00:14:48,100 - 00:14:51,140] and why it's of such power
+- [00:14:51,140 - 00:14:53,830] I'm not particularly sure that anybody
+- [00:14:53,830 - 00:14:56,520] realized how powerful and useful it was
+- [00:14:59,000 - 00:15:00,880] until quantum mechanics was developed
+- [00:15:00,880 - 00:15:02,600] I think that really was the
+- [00:15:02,600 - 00:15:04,320] time when people first really began
+- [00:15:04,320 - 00:15:07,760] feeling they had to learn what Hamilton had to say
+- [00:15:07,760 - 00:15:09,780] because he was long dead by that time
+- [00:15:11,040 - 00:15:11,560] alright
+- [00:15:11,560 - 00:15:12,200] another way
+- [00:15:12,200 - 00:15:14,040] another observation about it
+- [00:15:15,199 - 00:15:15,920] is
+- [00:15:16,720 - 00:15:17,860] it takes
+- [00:15:17,860 - 00:15:22,240] a certain number of second order differential equations
+- [00:15:23,060 - 00:15:26,280] F equals m a is a second order differential equation
+- [00:15:26,280 - 00:15:27,600] for each component
+- [00:15:28,360 - 00:15:31,700] second order means that it involves second derivatives
+- [00:15:32,560 - 00:15:35,160] not first derivatives but second derivatives
+- [00:15:35,160 - 00:15:36,390] so it may also involve
+- [00:15:36,390 - 00:15:37,620] a first derivative here and there
+- [00:15:38,300 - 00:15:40,480] but it contains second derivatives
+- [00:15:41,819 - 00:15:43,980] it contains accelerations
+- [00:15:43,980 - 00:15:46,580] second derivatives with respect to time or something
+- [00:15:46,580 - 00:15:49,580] how many equations are there?
+- [00:15:49,720 - 00:15:52,560] well if there are a certain number of particles
+- [00:15:53,560 - 00:15:55,240] in a certain number of dimensions
+- [00:15:55,880 - 00:15:58,240] that tells you how many equations there are
+- [00:15:58,240 - 00:16:00,900] one particle there are three equations
+- [00:16:00,900 - 00:16:03,280] two particles there are six equations
+- [00:16:03,280 - 00:16:04,060] and so forth
+- [00:16:04,060 - 00:16:07,040] each one being a second order differential equation
+- [00:16:11,699 - 00:16:14,220] what Hamilton's equations are in general
+- [00:16:14,220 - 00:16:16,430] you can always take a
+- [00:16:16,430 - 00:16:18,640] system of second order differential equations
+- [00:16:18,640 - 00:16:20,000] let's say n of them
+- [00:16:20,000 - 00:16:24,260] and replace them by twice as many first order equations
+- [00:16:24,260 - 00:16:26,260] that only contain first derivatives
+- [00:16:27,100 - 00:16:28,460] it's very easy
+- [00:16:28,460 - 00:16:29,840] it's so easy it's almost stupid
+- [00:16:30,480 - 00:16:32,800] so let's discuss
+- [00:16:35,000 - 00:16:39,580] how you take n second order equations
+- [00:16:40,480 - 00:16:44,360] and how you take n of them
+- [00:16:44,360 - 00:16:45,420] the method is completely general
+- [00:16:45,420 - 00:16:49,340] but I'll just illustrate it for Newton's equations
+- [00:16:50,060 - 00:16:51,390] supposing we have a certain
+- [00:16:51,390 - 00:16:52,720] number of equations of the form
+- [00:16:52,720 - 00:16:53,440] derivative,
+- [00:16:53,440 - 00:16:54,680] second derivative
+- [00:16:55,459 - 00:16:57,840] of some i-th component of x
+- [00:16:58,820 - 00:17:00,060] by dt squared
+- [00:17:01,640 - 00:17:04,839] is equal to the i-th component of force
+- [00:17:05,480 - 00:17:06,920] divided by the mass
+- [00:17:07,480 - 00:17:10,460] I've written acceleration is equal to f
+- [00:17:10,480 - 00:17:11,140] over n
+- [00:17:11,140 - 00:17:12,140] I don't know why exactly
+- [00:17:12,140 - 00:17:13,599] I just wanted to write the
+- [00:17:13,599 - 00:17:15,060] acceleration on the left hand side
+- [00:17:16,260 - 00:17:17,819] let's suppose now that there
+- [00:17:17,819 - 00:17:19,380] are n such differential equations
+- [00:17:22,460 - 00:17:24,740] let's take that and make two n equations
+- [00:17:24,740 - 00:17:28,220] each of which only contains a first time derivative
+- [00:17:28,760 - 00:17:30,700] to do that first of all define
+- [00:17:32,300 - 00:17:33,700] now we can do it many ways
+- [00:17:34,179 - 00:17:35,619] but I'm going to do it
+- [00:17:35,619 - 00:17:37,060] in a particular way that will be
+- [00:17:37,060 - 00:17:39,100] in order to get familiar
+- [00:17:40,480 - 00:17:41,040] with the terminology
+- [00:17:41,940 - 00:17:44,900] first of all let's define
+- [00:17:45,440 - 00:17:47,060] the x i by dt
+- [00:17:48,620 - 00:17:51,200] and let's throw in a factor of the mass
+- [00:17:51,840 - 00:17:53,340] the mass of the i-th
+- [00:17:55,100 - 00:17:56,380] that's one mass
+- [00:17:56,940 - 00:17:58,380] everybody has the same mass
+- [00:17:59,260 - 00:18:02,680] let's take n times the x sub i by dt
+- [00:18:02,680 - 00:18:03,860] and give it a name
+- [00:18:04,480 - 00:18:05,380] what do we call it?
+- [00:18:05,400 - 00:18:06,620] we call it p sub i
+- [00:18:09,520 - 00:18:10,040] now
+- [00:18:10,480 - 00:18:11,080] let's write
+- [00:18:12,060 - 00:18:13,200] I don't know why I
+- [00:18:13,200 - 00:18:14,340] put m on the left hand
+- [00:18:14,340 - 00:18:15,760] on the right hand side of the equation
+- [00:18:15,760 - 00:18:16,700] why did I do that?
+- [00:18:16,800 - 00:18:18,500] let's put it backwards and wrongs
+- [00:18:18,500 - 00:18:19,960] f equals m a
+- [00:18:20,480 - 00:18:22,580] now let's write f equals m a
+- [00:18:22,580 - 00:18:23,440] in the form
+- [00:18:23,440 - 00:18:23,840] m i
+- [00:18:23,840 - 00:18:25,680] m i
+- [00:18:25,680 - 00:18:28,180] in fact let's just make one m
+- [00:18:29,240 - 00:18:30,560] alright now let's take
+- [00:18:31,740 - 00:18:34,380] this is of course a first order equation
+- [00:18:34,380 - 00:18:37,100] it only contains first time derivatives
+- [00:18:37,100 - 00:18:39,420] but now let's write f equals m a
+- [00:18:39,420 - 00:18:41,420] in the form dp by dt
+- [00:18:43,220 - 00:18:46,840] is equal to f i i
+- [00:18:48,160 - 00:18:49,920] both of these equations
+- [00:18:49,920 - 00:18:52,160] are only first order equations
+- [00:18:53,040 - 00:18:54,900] but there are twice as many of them
+- [00:18:55,620 - 00:18:57,240] there are twice as many equations
+- [00:18:57,240 - 00:19:00,780] but each one only contains first time derivatives
+- [00:19:01,410 - 00:19:03,680] they become a 2n
+- [00:19:03,680 - 00:19:06,540] a system of 2n differential equations
+- [00:19:07,150 - 00:19:08,520] for twice as many variables
+- [00:19:08,520 - 00:19:10,680] and now what are the twice as many variables?
+- [00:19:11,740 - 00:19:13,180] x sub i
+- [00:19:13,180 - 00:19:14,920] and p sub i
+- [00:19:20,460 - 00:19:23,620] first order equations are the kind which tell you
+- [00:19:23,620 - 00:19:24,900] where to go
+- [00:19:25,400 - 00:19:26,620] if you know where you are
+- [00:19:27,440 - 00:19:29,500] without knowing where you were
+- [00:19:30,260 - 00:19:32,560] a first order equation tells you
+- [00:19:32,560 - 00:19:35,120] how to update to the next position
+- [00:19:35,120 - 00:19:37,260] if you know where you are
+- [00:19:37,260 - 00:19:38,920] but knowing where you are now
+- [00:19:38,920 - 00:19:41,440] means knowing where you are in the phase space
+- [00:19:41,440 - 00:19:43,540] it's equivalent to the old view
+- [00:19:43,540 - 00:19:45,820] you again need to know two things
+- [00:19:45,820 - 00:19:48,140] a position and something equivalent to a velocity
+- [00:19:48,140 - 00:19:50,440] but it's just a different mindset
+- [00:19:51,680 - 00:19:53,540] thinking about the phase space
+- [00:19:55,520 - 00:19:57,080] gives you a picture
+- [00:19:57,980 - 00:19:58,920] x and p
+- [00:19:59,640 - 00:20:01,340] in which wherever you are
+- [00:20:01,340 - 00:20:02,780] you know where to go next
+- [00:20:06,140 - 00:20:07,240] so there's no new form of this equation
+- [00:20:07,240 - 00:20:07,820] no new physics in it
+- [00:20:07,820 - 00:20:09,020] no new laws of nature
+- [00:20:09,020 - 00:20:10,720] just a different mindset
+- [00:20:10,720 - 00:20:14,020] thinking about the state of a system
+- [00:20:14,020 - 00:20:15,540] not as a configuration
+- [00:20:16,200 - 00:20:19,560] but as a combination of a position and a momentum
+- [00:20:20,200 - 00:20:22,240] or not just one position and momentum
+- [00:20:22,240 - 00:20:24,400] but a position and a momentum
+- [00:20:24,400 - 00:20:26,080] for each degree of freedom
+- [00:20:26,080 - 00:20:27,100] for each coordinate
+- [00:20:28,800 - 00:20:31,040] more generally of course we would talk about
+- [00:20:31,040 - 00:20:33,300] q's and p's or q's and pi's
+- [00:20:33,300 - 00:20:35,680] I think I'm going to give up the notation pi
+- [00:20:35,680 - 00:20:36,900] I get that
+- [00:20:38,379 - 00:20:41,000] we'll just call canonical momentum p's
+- [00:20:41,000 - 00:20:41,860] and be done with it
+- [00:20:44,919 - 00:20:46,960] but those are the various
+- [00:20:46,960 - 00:20:48,240] motivations,
+- [00:20:48,240 - 00:20:51,580] various properties
+- [00:20:51,580 - 00:20:53,240] of the Hamiltonian description
+- [00:20:53,240 - 00:20:55,140] it's the equation of
+- [00:20:55,140 - 00:20:57,200] the Hamiltonian description of mechanics
+- [00:20:57,200 - 00:20:59,080] is the equations
+- [00:20:59,540 - 00:21:02,440] for how things move around on a phase space
+- [00:21:02,440 - 00:21:04,180] knowing where you are
+- [00:21:04,180 - 00:21:05,840] they tell you where you move next
+- [00:21:05,840 - 00:21:08,560] in fact you can almost think of it
+- [00:21:08,560 - 00:21:09,160] just as
+- [00:21:10,100 - 00:21:11,560] did I erase what I had to do?
+- [00:21:11,680 - 00:21:12,760] yeah I did erase what I had to do
+- [00:21:12,760 - 00:21:13,920] we have it but let's put it back
+- [00:21:14,800 - 00:21:15,240] we
+- [00:21:16,179 - 00:21:18,180] the thought of a law
+- [00:21:18,180 - 00:21:19,720] as being a kind of flow
+- [00:21:21,840 - 00:21:24,280] a flow of the points in phase space
+- [00:21:26,440 - 00:21:27,340] we're going to see
+- [00:21:27,879 - 00:21:29,500] that there's a natural sense
+- [00:21:29,980 - 00:21:31,880] in which mechanics constitutes
+- [00:21:31,880 - 00:21:33,780] a flow in the phase space
+- [00:21:34,380 - 00:21:35,340] wherever you are
+- [00:21:35,340 - 00:21:36,400] you know where to go next
+- [00:21:36,940 - 00:21:38,100] and if you were to imagine
+- [00:21:38,100 - 00:21:39,840] a populating the phase space
+- [00:21:40,880 - 00:21:41,940] populating the phase space
+- [00:21:41,940 - 00:21:44,400] would mean taking a lot of identical systems
+- [00:21:45,140 - 00:21:46,760] and starting each one
+- [00:21:46,760 - 00:21:49,020] at a different point in the phase space
+- [00:21:49,020 - 00:21:51,800] and watching them as they evolve
+- [00:21:52,420 - 00:21:54,940] that would define a flow in the phase space
+- [00:21:54,940 - 00:21:56,780] and it's that flow in the phase space
+- [00:21:56,780 - 00:21:59,720] that Hamiltonian mechanics is all about
+- [00:22:01,140 - 00:22:02,720] it's almost as if
+- [00:22:02,720 - 00:22:04,160] the points in phase space were all the same
+- [00:22:04,180 - 00:22:04,980] they're all kind of fluid
+- [00:22:05,560 - 00:22:08,100] and we're studying how that fluid moves
+- [00:22:08,100 - 00:22:11,000] if we're interested in any specific system
+- [00:22:11,000 - 00:22:12,520] then we think of it
+- [00:22:13,040 - 00:22:15,480] as a little particle moving along with the flow
+- [00:22:16,320 - 00:22:17,740] we start at some place
+- [00:22:17,740 - 00:22:19,640] we allow it to move along with the flow
+- [00:22:20,540 - 00:22:23,140] and follow its coordinates and its momentum
+- [00:22:25,260 - 00:22:27,600] alright now we need a small piece of mathematics
+- [00:22:27,600 - 00:22:29,240] it's an easy piece of mathematics
+- [00:22:30,060 - 00:22:31,760] but it's a rather formal piece
+- [00:22:33,026 - 00:22:33,246] ありがとうございました
+- [00:22:33,826 - 00:22:35,826] It's the mathematics that's
+- [00:22:35,826 - 00:22:37,826] called the Legendre transformation.
+- [00:22:41,066 - 00:22:43,906] We'll do it first in the simplest possible case.
+- [00:22:45,966 - 00:22:47,726] Suppose there are two variables.
+- [00:22:48,366 - 00:22:50,506] Let me call them V and P.
+- [00:22:52,686 - 00:22:53,806] Just secretly,
+- [00:22:53,806 - 00:22:54,786] between you and me,
+- [00:22:54,786 - 00:22:57,706] V stands for velocity and P stands for momentum.
+- [00:22:57,706 - 00:23:01,716] But now forget I told you that because we're going to
+- [00:23:01,716 - 00:23:05,726] think about the Legendre transformation as a mathematical trick in many,
+- [00:23:05,726 - 00:23:06,846] many different contexts.
+- [00:23:07,666 - 00:23:09,506] There are two variables.
+- [00:23:22,145 - 00:23:25,226] There are two variables.
+- [00:23:25,226 - 00:23:26,546] And let's suppose...
+- [00:23:27,076 - 00:23:27,426] Whoops.
+- [00:23:27,706 - 00:23:28,146] It's a funny P,
+- [00:23:28,146 - 00:23:28,466] isn't it?
+- [00:23:29,366 - 00:23:30,166] V and P.
+- [00:23:30,466 - 00:23:32,126] But they're not independent variables.
+- [00:23:32,846 - 00:23:33,606] In fact,
+- [00:23:33,606 - 00:23:34,786] there's really only one variable.
+- [00:23:35,006 - 00:23:36,366] They're functions of each other.
+- [00:23:37,246 - 00:23:38,645] They're functions of each other,
+- [00:23:38,645 - 00:23:39,786] and for simplicity...
+- [00:23:39,786 - 00:23:40,406] Not for simplicity.
+- [00:23:40,626 - 00:23:41,246] This is important.
+- [00:23:42,066 - 00:23:45,046] Let's suppose they're single-valued functions of each other.
+- [00:23:45,446 - 00:23:48,066] Single-valued function means that if you know P,
+- [00:23:48,066 - 00:23:48,826] you know V,
+- [00:23:48,826 - 00:23:49,686] and if you know V,
+- [00:23:49,686 - 00:23:50,366] you know P.
+- [00:23:50,506 - 00:23:50,966] No ambiguity.
+- [00:23:51,886 - 00:23:55,206] That means the graph of P versus V...
+- [00:23:57,706 - 00:23:58,546] Looks something like that.
+- [00:23:59,486 - 00:24:01,316] What it can't do is
+- [00:24:01,316 - 00:24:03,146] it's not allowed to do that.
+- [00:24:03,346 - 00:24:04,086] Why not?
+- [00:24:04,606 - 00:24:05,886] Because if it did this,
+- [00:24:05,886 - 00:24:08,586] there would be certain values of P where
+- [00:24:08,586 - 00:24:11,286] you would have an ambiguity about what V is.
+- [00:24:12,626 - 00:24:15,306] It's also not allowed to do this.
+- [00:24:15,966 - 00:24:18,756] Because then there would be certain values of
+- [00:24:18,756 - 00:24:21,546] V where you wouldn't know what P was.
+- [00:24:23,646 - 00:24:27,566] Single-valued means that the graph of...
+- [00:24:27,706 - 00:24:31,246] Function P versus V looks like this.
+- [00:24:31,786 - 00:24:33,266] Any point on it,
+- [00:24:33,266 - 00:24:36,186] or for any value of V,
+- [00:24:36,186 - 00:24:38,446] is a unique P.
+- [00:24:38,706 - 00:24:40,306] And for any value of P,
+- [00:24:40,306 - 00:24:41,626] is a unique V.
+- [00:24:43,066 - 00:24:43,606] Actually,
+- [00:24:43,606 - 00:24:44,585] just for simplicity,
+- [00:24:44,585 - 00:24:47,366] although this is not important,
+- [00:24:48,006 - 00:24:50,076] let's just draw the graph so
+- [00:24:50,076 - 00:24:52,146] that it goes to the origin.
+- [00:24:52,846 - 00:24:53,386] Okay.
+- [00:24:58,166 - 00:25:00,786] Then if we have such a single-valued function,
+- [00:25:03,646 - 00:25:05,306] not just a single-valued function,
+- [00:25:05,306 - 00:25:07,366] but a one-to-one function,
+- [00:25:09,406 - 00:25:12,036] meaning it's single-valued whether you think about it as P as
+- [00:25:12,036 - 00:25:14,666] a function of V or V as a function of P,
+- [00:25:15,466 - 00:25:19,686] then it's possible to invent a pair of functions,
+- [00:25:22,146 - 00:25:23,866] one which I'll call L,
+- [00:25:25,126 - 00:25:25,606] and one which I'll call P.
+- [00:25:28,406 - 00:25:29,966] Secretly the Lagrangian.
+- [00:25:31,106 - 00:25:34,026] And the Lagrangian is a function of V.
+- [00:25:36,806 - 00:25:39,306] And it has the property
+- [00:25:39,306 - 00:25:41,806] that the derivative of the Lagrangian,
+- [00:25:43,806 - 00:25:45,466] with respect to V,
+- [00:25:46,626 - 00:25:47,846] defines P.
+- [00:25:48,086 - 00:25:48,446] P.
+- [00:25:52,526 - 00:25:55,926] Why would I bother inventing a function L
+- [00:25:55,926 - 00:25:56,646] L
+- [00:25:56,646 - 00:25:57,686] L
+- [00:25:57,706 - 00:26:00,006] whose derivative with respect to V is P?
+- [00:26:00,246 - 00:26:00,626] Well,
+- [00:26:00,626 - 00:26:01,206] I'll come to Y.
+- [00:26:02,186 - 00:26:03,546] But I can always do it.
+- [00:26:04,506 - 00:26:06,686] This is just ordinary derivative for the moment.
+- [00:26:06,846 - 00:26:08,426] This is only one variable V.
+- [00:26:09,146 - 00:26:10,866] We don't have to make it a partial derivative.
+- [00:26:13,605 - 00:26:15,226] D L by D V.
+- [00:26:20,186 - 00:26:21,706] We're going to find that,
+- [00:26:26,366 - 00:26:27,266] given L,
+- [00:26:27,366 - 00:26:27,686] we're going to find that,
+- [00:26:27,686 - 00:26:31,886] we can construct a symmetrically related function
+- [00:26:31,886 - 00:26:33,626] that we're going to call H.
+- [00:26:34,726 - 00:26:37,126] H is to be regarded as a function of P.
+- [00:26:39,366 - 00:26:40,786] When we think about L,
+- [00:26:40,946 - 00:26:43,766] we will think about V as the independent variable.
+- [00:26:44,266 - 00:26:45,686] When we think about H,
+- [00:26:45,886 - 00:26:48,066] we will think about P as the independent variable.
+- [00:26:48,386 - 00:26:49,206] Of course,
+- [00:26:49,206 - 00:26:51,546] L is also a function of P
+- [00:26:51,546 - 00:26:53,506] because V is a function of P.
+- [00:26:54,166 - 00:26:54,905] Of course,
+- [00:26:54,905 - 00:26:57,206] H is also a function of V,
+- [00:26:57,266 - 00:26:57,666] because P is a function of P.
+- [00:26:59,146 - 00:27:02,726] But each one is thought of
+- [00:27:02,726 - 00:27:06,306] as a function of its own variable,
+- [00:27:06,526 - 00:27:07,946] L of V or H of P.
+- [00:27:08,766 - 00:27:10,166] And the relationship is,
+- [00:27:10,766 - 00:27:15,456] H and L are connected by the derivative
+- [00:27:15,456 - 00:27:20,146] of H with respect to P is V.
+- [00:27:21,486 - 00:27:25,346] This is a completely symmetrical relation between P and V
+- [00:27:25,906 - 00:27:27,426] and between L and H.
+- [00:27:27,626 - 00:27:27,646] So,
+- [00:27:27,646 - 00:27:27,646] this is a very,
+- [00:27:27,646 - 00:27:27,646] very similar relationship.
+- [00:27:27,666 - 00:27:30,906] The derivative with respect to V of L is P.
+- [00:27:31,206 - 00:27:34,406] The derivative of P of H is V.
+- [00:27:35,266 - 00:27:35,746] Now,
+- [00:27:35,746 - 00:27:37,766] let me show you why that's always possible to do
+- [00:27:37,766 - 00:27:41,926] and to show you the relationship between L and H.
+- [00:27:43,166 - 00:27:43,646] Okay,
+- [00:27:43,646 - 00:27:48,926] let's take our function,
+- [00:27:49,066 - 00:27:51,766] which the simplicity I just had passed through the origin,
+- [00:27:51,866 - 00:27:53,606] but you can work it out whether
+- [00:27:53,606 - 00:27:55,346] it passes through the origin or not.
+- [00:27:57,646 - 00:27:59,776] Notice the derivative of L with
+- [00:27:59,776 - 00:28:01,906] respect to V is equal to P.
+- [00:28:02,466 - 00:28:05,066] Think of that as P as a function of V,
+- [00:28:05,066 - 00:28:05,506] of course.
+- [00:28:05,846 - 00:28:08,566] V is the independent variable in the top equation.
+- [00:28:09,386 - 00:28:09,786] So,
+- [00:28:09,786 - 00:28:11,206] P is really a function of V,
+- [00:28:11,206 - 00:28:12,606] as it is over here,
+- [00:28:12,606 - 00:28:13,206] P of V.
+- [00:28:14,426 - 00:28:14,826] Remember,
+- [00:28:14,826 - 00:28:15,926] the P is a function of V.
+- [00:28:15,946 - 00:28:17,026] I've just re-tried it already.
+- [00:28:17,766 - 00:28:19,106] P of V.
+- [00:28:19,106 - 00:28:20,936] We can also think of
+- [00:28:20,936 - 00:28:22,766] V as a function of P.
+- [00:28:23,346 - 00:28:24,026] And now,
+- [00:28:24,026 - 00:28:25,326] we're going to do the same thing.
+- [00:28:26,686 - 00:28:27,386] We're going to do the same thing over here.
+- [00:28:27,386 - 00:28:31,506] Let's solve this equation for L
+- [00:28:31,506 - 00:28:35,626] by just writing that L is equal
+- [00:28:35,626 - 00:28:38,826] to the integral of P of V,
+- [00:28:38,826 - 00:28:39,166] dV.
+- [00:28:44,846 - 00:28:46,686] Does everybody recognize that?
+- [00:28:46,946 - 00:28:50,246] If the derivative of L is P,
+- [00:28:50,246 - 00:28:53,886] then L is the integral of P.
+- [00:28:54,606 - 00:28:55,306] Okay?
+- [00:28:57,666 - 00:28:59,746] We can write this as dL.
+- [00:28:59,986 - 00:29:01,946] Does everybody recognize what I've done here?
+- [00:29:02,226 - 00:29:04,146] Is that a definite and indefinite?
+- [00:29:04,486 - 00:29:04,806] Okay.
+- [00:29:04,806 - 00:29:06,946] That can be taken to be a definite integral.
+- [00:29:07,166 - 00:29:08,306] And for definiteness,
+- [00:29:08,306 - 00:29:10,426] let's take it to be the integral from 0.
+- [00:29:10,886 - 00:29:11,926] But it doesn't matter.
+- [00:29:13,546 - 00:29:15,846] It doesn't matter where we take the integral from,
+- [00:29:15,966 - 00:29:18,546] but let's for definiteness take it from 0,
+- [00:29:18,546 - 00:29:19,626] from V equals 0.
+- [00:29:22,246 - 00:29:24,906] If we differentiate an integral,
+- [00:29:24,906 - 00:29:25,286] then we get the integral from 0.
+- [00:29:25,306 - 00:29:26,686] We just get the integrand.
+- [00:29:27,365 - 00:29:30,106] So if we differentiate L with respect to,
+- [00:29:30,106 - 00:29:31,446] let's put V up here,
+- [00:29:31,566 - 00:29:33,766] definite integral from 0 to V,
+- [00:29:33,766 - 00:29:35,846] P of V,
+- [00:29:35,846 - 00:29:36,106] dV.
+- [00:29:37,306 - 00:29:39,366] If you differentiate an integral
+- [00:29:39,366 - 00:29:41,426] with respect to the endpoint
+- [00:29:41,426 - 00:29:42,206] of integration,
+- [00:29:42,206 - 00:29:45,026] you just get the integrand.
+- [00:29:45,806 - 00:29:47,426] So that's this relationship here.
+- [00:29:47,726 - 00:29:49,626] Derivative of L is equal to P.
+- [00:29:49,626 - 00:29:51,706] We can always do this.
+- [00:29:52,666 - 00:29:53,226] Here,
+- [00:29:53,226 - 00:29:55,086] that's L of the endpoint.
+- [00:29:55,306 - 00:29:55,966] If you like.
+- [00:29:58,626 - 00:29:59,306] All right.
+- [00:29:59,326 - 00:30:01,586] We can now draw a picture of what L means,
+- [00:30:01,586 - 00:30:04,226] at least on this graph.
+- [00:30:04,766 - 00:30:06,506] L is the area,
+- [00:30:06,506 - 00:30:08,706] L of V,
+- [00:30:08,706 - 00:30:10,946] or let's say L of V
+- [00:30:10,946 - 00:30:13,186] is constructed in the following way.
+- [00:30:14,426 - 00:30:15,926] You go to your point V,
+- [00:30:15,926 - 00:30:21,206] and you draw that line,
+- [00:30:21,946 - 00:30:23,926] and then you consider all the area.
+- [00:30:24,766 - 00:30:25,286] Okay.
+- [00:30:25,306 - 00:30:26,506] Underneath the curve here.
+- [00:30:27,906 - 00:30:29,186] This is not a triangle,
+- [00:30:29,186 - 00:30:29,846] it's a curve.
+- [00:30:31,146 - 00:30:32,906] That's the integral of P of V,
+- [00:30:32,906 - 00:30:33,146] dV,
+- [00:30:33,146 - 00:30:36,886] and it's the L at point V.
+- [00:30:36,886 - 00:30:39,926] L of V.
+- [00:30:43,366 - 00:30:45,076] It has the property that if
+- [00:30:45,076 - 00:30:46,786] you differentiate it with respect to V,
+- [00:30:46,786 - 00:30:47,866] you get P.
+- [00:30:49,246 - 00:30:49,686] Now,
+- [00:30:49,686 - 00:30:50,246] what about H?
+- [00:30:51,326 - 00:30:51,766] Well,
+- [00:30:51,766 - 00:30:53,386] we can do the same thing with H.
+- [00:30:54,326 - 00:30:57,646] H must be the integral of V,
+- [00:30:57,646 - 00:30:58,066] dP,
+- [00:30:58,066 - 00:30:59,906] just by symmetry.
+- [00:31:00,966 - 00:31:05,286] The other equation is that
+- [00:31:05,286 - 00:31:09,606] H of P is the integral,
+- [00:31:09,606 - 00:31:11,266] we can again start at zero,
+- [00:31:11,426 - 00:31:15,726] and go to P of V of P,
+- [00:31:15,726 - 00:31:17,146] dP.
+- [00:31:18,626 - 00:31:22,106] Notice that if we differentiate H with respect to P,
+- [00:31:22,306 - 00:31:23,366] we just get the integral of V of P,
+- [00:31:23,366 - 00:31:23,366] dP.
+- [00:31:25,046 - 00:31:27,306] That's the other defining equation here,
+- [00:31:27,406 - 00:31:28,936] derivative of H with respect
+- [00:31:28,936 - 00:31:30,466] to P is equal to V.
+- [00:31:31,506 - 00:31:32,226] All right,
+- [00:31:32,226 - 00:31:33,666] so the geometry of that then,
+- [00:31:33,666 - 00:31:40,846] is that H,
+- [00:31:43,606 - 00:31:45,906] the area in here is H,
+- [00:31:45,906 - 00:31:47,326] H of P.
+- [00:31:47,966 - 00:31:50,826] And the area in here is L of V.
+- [00:31:52,286 - 00:31:53,106] This is,
+- [00:31:53,106 - 00:31:53,366] this is an integral,
+- [00:31:53,366 - 00:31:53,366] yeah.
+- [00:31:53,386 - 00:31:54,206] this area in here
+- [00:31:54,206 - 00:31:57,926] is the integral of v of p dp
+- [00:32:03,626 - 00:32:05,846] does that need further explanation?
+- [00:32:10,726 - 00:32:11,406] well,
+- [00:32:11,406 - 00:32:15,046] now we know the relationship between h and l
+- [00:32:17,265 - 00:32:19,926] take h and add it to l
+- [00:32:19,926 - 00:32:21,466] h plus l
+- [00:32:21,466 - 00:32:27,366] is the area of this whole rectangle
+- [00:32:30,405 - 00:32:31,666] what's the area of the rectangle?
+- [00:32:32,106 - 00:32:33,346] it's p times v
+- [00:32:38,706 - 00:32:41,186] this is usually written as
+- [00:32:42,846 - 00:32:45,646] h is equal to pv minus l
+- [00:32:46,746 - 00:32:48,106] but it's clearly the same thing
+- [00:32:49,346 - 00:32:50,926] for some reason
+- [00:32:51,686 - 00:32:52,566] we tend to write
+- [00:32:52,566 - 00:32:54,386] we tend to think of l first
+- [00:32:54,386 - 00:32:56,926] and then try to figure out what h is
+- [00:32:58,006 - 00:32:58,306] alright,
+- [00:32:58,306 - 00:33:00,246] so now let's write our system of equations
+- [00:33:01,285 - 00:33:03,726] that are called a Legendre transformation
+- [00:33:04,606 - 00:33:06,526] you start with an l of v
+- [00:33:09,866 - 00:33:11,666] you differentiate l of v
+- [00:33:13,606 - 00:33:15,506] ordinary derivative we'll do here
+- [00:33:17,486 - 00:33:18,086] and then you write the equation of the triangle
+- [00:33:18,106 - 00:33:20,226] derivative of l with respect to v
+- [00:33:23,926 - 00:33:25,046] defines p
+- [00:33:25,046 - 00:33:28,546] and gives you p as a function of v
+- [00:33:30,606 - 00:33:33,766] then you construct h
+- [00:33:35,145 - 00:33:37,326] by multiplying p times v
+- [00:33:38,126 - 00:33:39,466] and subtracting l
+- [00:33:40,945 - 00:33:43,206] now l of course is a function of v
+- [00:33:43,826 - 00:33:45,406] but wherever you see v
+- [00:33:46,645 - 00:33:48,086] substitute its value of l
+- [00:33:48,086 - 00:33:49,306] in terms of p
+- [00:33:49,866 - 00:33:51,106] so we can think of this as
+- [00:33:51,106 - 00:33:51,526] l,
+- [00:33:51,526 - 00:33:53,286] same script for branching
+- [00:33:53,286 - 00:33:55,226] l of v
+- [00:33:55,226 - 00:33:57,006] but v is a function of p
+- [00:33:59,466 - 00:33:59,946] so,
+- [00:33:59,946 - 00:34:02,006] v is also a function of p here
+- [00:34:03,086 - 00:34:04,486] so h gets to be thought
+- [00:34:04,486 - 00:34:05,886] of as a function of p
+- [00:34:10,126 - 00:34:11,646] l is a function of v
+- [00:34:13,645 - 00:34:14,866] and when we do this
+- [00:34:15,606 - 00:34:16,525] we'll now prove,
+- [00:34:16,525 - 00:34:17,186] I'll now prove
+- [00:34:17,186 - 00:34:20,085] although it's clear from the geometry here
+- [00:34:20,085 - 00:34:22,106] that the derivative of h
+- [00:34:22,106 - 00:34:24,126] with respect to p is v
+- [00:34:25,265 - 00:34:27,985] let's do a little manipulation algebraically
+- [00:34:29,565 - 00:34:30,525] here's what we do
+- [00:34:30,525 - 00:34:33,426] we consider a small change of p
+- [00:34:33,426 - 00:34:36,306] and ask how much h changes
+- [00:34:37,186 - 00:34:40,505] how much does h change when we change p
+- [00:34:40,505 - 00:34:42,045] let's work it out
+- [00:34:44,265 - 00:34:45,706] the change in h
+- [00:34:45,706 - 00:34:47,166] let's just call it p
+- [00:34:47,166 - 00:34:47,585] delta h
+- [00:34:47,966 - 00:34:49,786] small change in h
+- [00:34:50,366 - 00:34:51,626] is first of all
+- [00:34:51,626 - 00:34:52,906] what's the change in a product
+- [00:34:54,085 - 00:34:55,045] if we change
+- [00:34:55,045 - 00:34:57,005] if we make a small change
+- [00:34:57,005 - 00:34:58,966] in the values of some variables
+- [00:34:58,966 - 00:35:00,966] what's the change in a product
+- [00:35:01,706 - 00:35:02,986] it's the sum of two terms
+- [00:35:02,986 - 00:35:04,146] the sum of two terms
+- [00:35:04,146 - 00:35:05,926] one term being
+- [00:35:05,926 - 00:35:08,906] the first factor times the change in the second
+- [00:35:08,906 - 00:35:10,366] and vice versa
+- [00:35:10,886 - 00:35:11,406] alright,
+- [00:35:11,406 - 00:35:13,066] so first of all we get a term
+- [00:35:14,206 - 00:35:17,146] which is p times the smaller value of p
+- [00:35:17,146 - 00:35:17,786] the small change in v
+- [00:35:17,786 - 00:35:20,446] the second term is v
+- [00:35:21,326 - 00:35:23,286] plus the small change in p
+- [00:35:25,266 - 00:35:26,546] and finally
+- [00:35:27,846 - 00:35:28,166] minus
+- [00:35:29,506 - 00:35:31,686] the derivative of a Lagrangian
+- [00:35:31,686 - 00:35:32,906] the derivative of l
+- [00:35:32,906 - 00:35:34,486] with respect to v
+- [00:35:35,846 - 00:35:38,566] remember that l depends only on v
+- [00:35:39,286 - 00:35:40,906] times the change in v
+- [00:35:45,966 - 00:35:46,276] so we're going to have
+- [00:35:46,276 - 00:35:46,586] v times the change in v
+- [00:35:46,586 - 00:35:47,046] well wait a minute
+- [00:35:47,046 - 00:35:49,466] I defined the l by dv
+- [00:35:49,466 - 00:35:50,826] to be called p
+- [00:35:51,586 - 00:35:52,466] that was
+- [00:35:52,466 - 00:35:55,026] the way that I constructed p
+- [00:35:55,786 - 00:35:56,366] from l
+- [00:35:57,046 - 00:35:58,346] the l by dv
+- [00:35:58,886 - 00:35:59,726] is equal to p
+- [00:35:59,726 - 00:36:01,106] so what do I really have
+- [00:36:01,106 - 00:36:02,006] the l by dv
+- [00:36:02,746 - 00:36:04,906] I'm sorry I sometimes write partial derivatives
+- [00:36:04,906 - 00:36:06,066] and sometimes total derivatives
+- [00:36:06,066 - 00:36:06,526] it doesn't matter
+- [00:36:06,526 - 00:36:07,546] there's only one variable
+- [00:36:07,546 - 00:36:09,326] partial and total are the same
+- [00:36:10,006 - 00:36:10,526] alright
+- [00:36:10,906 - 00:36:11,566] so this thing is
+- [00:36:13,378 - 00:36:13,538] はい
+- [00:36:14,946 - 00:36:16,026] here I have pdv.
+- [00:36:16,506 - 00:36:18,326] Here I have minus pdv.
+- [00:36:18,646 - 00:36:20,786] So these two cancel completely.
+- [00:36:22,606 - 00:36:23,826] These two are the same,
+- [00:36:23,826 - 00:36:24,686] and therefore cancel.
+- [00:36:26,246 - 00:36:27,486] Not the same,
+- [00:36:27,486 - 00:36:28,066] but not the same.
+- [00:36:28,426 - 00:36:31,696] And that just leaves the change in
+- [00:36:31,696 - 00:36:34,966] h is v times the change in p.
+- [00:36:37,706 - 00:36:40,666] That's the same thing as saying that
+- [00:36:40,666 - 00:36:43,626] the h by dp is equal to v.
+- [00:36:49,446 - 00:36:52,986] The h by dp is equal to v.
+- [00:36:53,126 - 00:36:53,606] In other words,
+- [00:36:53,606 - 00:36:54,486] the change in h,
+- [00:36:54,486 - 00:36:56,446] when I change p a little bit,
+- [00:36:56,446 - 00:36:57,446] is just equal to v.
+- [00:36:59,146 - 00:36:59,706] Okay,
+- [00:36:59,706 - 00:37:02,066] that is the Legendre transformation.
+- [00:37:03,386 - 00:37:04,406] So l,
+- [00:37:04,406 - 00:37:06,506] define dl,
+- [00:37:06,506 - 00:37:07,326] dv to be p.
+- [00:37:08,545 - 00:37:10,186] Then construct h,
+- [00:37:10,186 - 00:37:12,046] which is pv minus l.
+- [00:37:12,546 - 00:37:14,926] And now you have a reciprocal relationship.
+- [00:37:14,946 - 00:37:18,426] Where the h by dp is equal to v.
+- [00:37:19,386 - 00:37:21,256] So if we interchange l
+- [00:37:21,256 - 00:37:23,126] and we interchange l and h,
+- [00:37:23,126 - 00:37:24,946] and we also interchange p and v,
+- [00:37:25,166 - 00:37:26,626] it's completely symmetric.
+- [00:37:26,946 - 00:37:29,326] They're completely symmetrically related to each other.
+- [00:37:29,946 - 00:37:34,046] This little demonstration over here is nothing
+- [00:37:34,046 - 00:37:38,146] but the geometry of that rectangle being divided.
+- [00:37:42,846 - 00:37:44,646] That's a mathematical construction.
+- [00:37:44,946 - 00:37:46,646] Which is not only,
+- [00:37:46,646 - 00:37:48,066] which is at the heart of many,
+- [00:37:48,066 - 00:37:48,786] many things,
+- [00:37:49,546 - 00:37:50,826] in particular,
+- [00:37:50,826 - 00:37:51,746] mechanics,
+- [00:37:51,746 - 00:37:54,646] but also thermodynamics.
+- [00:37:56,646 - 00:37:58,816] Thermodynamics is just filled with
+- [00:37:58,816 - 00:38:00,986] Legendre transformations all over the place.
+- [00:38:01,386 - 00:38:05,626] And variables are related in pairs,
+- [00:38:05,626 - 00:38:08,166] Legendre pairs.
+- [00:38:08,706 - 00:38:11,046] Now what happens if there are many v's?
+- [00:38:11,166 - 00:38:12,666] Instead of just one v,
+- [00:38:12,666 - 00:38:14,846] supposing there are many of them.
+- [00:38:16,026 - 00:38:18,066] Then the definitions go as follows.
+- [00:38:18,466 - 00:38:21,366] The derivative of l with respect to the i,
+- [00:38:21,366 - 00:38:22,226] v,
+- [00:38:22,226 - 00:38:25,046] is the i,
+- [00:38:25,046 - 00:38:25,446] p.
+- [00:38:25,985 - 00:38:26,966] Now just keep,
+- [00:38:26,966 - 00:38:29,786] you should probably remember what v is.
+- [00:38:29,806 - 00:38:30,586] v is some velocity.
+- [00:38:31,186 - 00:38:33,306] And in Hamiltonian,
+- [00:38:33,306 - 00:38:33,786] sorry,
+- [00:38:33,786 - 00:38:34,786] in Lagrangian mechanics,
+- [00:38:34,786 - 00:38:38,266] keep in mind that the derivative of the Lagrangian
+- [00:38:38,266 - 00:38:40,386] with respect to a velocity is a momentum.
+- [00:38:41,286 - 00:38:42,206] This is just,
+- [00:38:42,206 - 00:38:42,826] alright,
+- [00:38:42,826 - 00:38:43,346] let's,
+- [00:38:43,346 - 00:38:43,686] let's,
+- [00:38:43,686 - 00:38:44,506] let's.
+- [00:38:44,506 - 00:38:44,906] Okay.
+- [00:38:44,926 - 00:38:47,446] Apply this to Lagrangian mechanics in a few minutes.
+- [00:38:47,866 - 00:38:50,546] But this is not a new relationship for us.
+- [00:38:51,266 - 00:38:53,526] Now of course we should use
+- [00:38:53,526 - 00:38:55,786] partial derivatives because I'm imagining many variables.
+- [00:38:58,206 - 00:39:00,466] Partial of l with respect to v sub i.
+- [00:39:05,306 - 00:39:06,406] That's p sub i.
+- [00:39:07,466 - 00:39:08,626] Definition at this point.
+- [00:39:09,726 - 00:39:10,246] Okay.
+- [00:39:10,566 - 00:39:12,946] Now we construct h of p.
+- [00:39:13,906 - 00:39:14,906] Now of a series.
+- [00:39:14,906 - 00:39:16,376] Now we have a single momentum
+- [00:39:16,376 - 00:39:17,846] but of a collection of p's.
+- [00:39:18,086 - 00:39:21,166] h of p meaning h of all of the p's.
+- [00:39:21,306 - 00:39:28,966] And this becomes summation over all of the i's,
+- [00:39:28,966 - 00:39:30,086] p sub i,
+- [00:39:30,086 - 00:39:30,846] v sub i,
+- [00:39:30,846 - 00:39:32,606] minus l.
+- [00:39:33,846 - 00:39:35,866] This may start to look familiar to you.
+- [00:39:37,966 - 00:39:42,746] Let's go through the same little derivation here.
+- [00:39:54,086 - 00:39:54,486] Now,
+- [00:39:54,486 - 00:39:57,006] the change in h is a
+- [00:39:57,006 - 00:39:59,526] sum of terms of p sub i,
+- [00:39:59,526 - 00:40:00,046] v sub i.
+- [00:40:00,106 - 00:40:01,466] I'm not going to write summation signs.
+- [00:40:02,386 - 00:40:04,066] Whenever I write a p sub i and
+- [00:40:04,066 - 00:40:05,746] a v sub i like that and so forth,
+- [00:40:05,746 - 00:40:08,386] think sum over the i's.
+- [00:40:09,326 - 00:40:09,726] Alright,
+- [00:40:09,726 - 00:40:10,486] so first of all,
+- [00:40:10,486 - 00:40:11,186] a p sub i,
+- [00:40:11,186 - 00:40:12,886] delta v sub i.
+- [00:40:13,266 - 00:40:14,286] A v sub i,
+- [00:40:14,286 - 00:40:14,886] delta p.
+- [00:40:14,886 - 00:40:15,406] A p sub i.
+- [00:40:15,826 - 00:40:18,296] And then a derivative of l with respect
+- [00:40:18,296 - 00:40:20,766] to v sub i times delta v sub i.
+- [00:40:22,306 - 00:40:24,046] When I change things a little bit,
+- [00:40:24,046 - 00:40:25,706] this is what happens to h.
+- [00:40:27,786 - 00:40:28,266] Again,
+- [00:40:28,266 - 00:40:29,646] exactly the same pattern.
+- [00:40:30,186 - 00:40:31,686] The l by d v sub i
+- [00:40:31,686 - 00:40:33,186] is the same as p sub i.
+- [00:40:34,025 - 00:40:34,986] So they cancel.
+- [00:40:35,266 - 00:40:36,986] The things inside rate cancel.
+- [00:40:37,406 - 00:40:40,676] And all I'm left with is that the
+- [00:40:40,676 - 00:40:43,946] change in h is equal to the i-th.
+- [00:40:44,886 - 00:40:48,406] The v variable times the
+- [00:40:48,406 - 00:40:51,926] change in the i-th p variable.
+- [00:40:54,246 - 00:40:55,286] From this,
+- [00:40:55,286 - 00:41:00,366] you could easily read off that the derivative of h,
+- [00:41:00,366 - 00:41:02,266] the partial derivative of h,
+- [00:41:02,446 - 00:41:04,716] with respect to p sub i
+- [00:41:04,716 - 00:41:06,986] is equal to v sub i.
+- [00:41:07,586 - 00:41:08,726] In other words,
+- [00:41:08,726 - 00:41:09,946] the change in h,
+- [00:41:09,946 - 00:41:12,966] if you only change one of the p's,
+- [00:41:14,886 - 00:41:15,646] say the third p,
+- [00:41:15,646 - 00:41:17,546] the change in h,
+- [00:41:17,546 - 00:41:19,786] if you change p sub 3 a little bit,
+- [00:41:19,966 - 00:41:21,306] is just v sub 3,
+- [00:41:21,306 - 00:41:23,286] keeping all the other p's fixed.
+- [00:41:24,166 - 00:41:26,516] So the derivative of h with respect to
+- [00:41:26,516 - 00:41:28,866] p sub i is just v sub i.
+- [00:41:30,786 - 00:41:31,226] Okay,
+- [00:41:31,226 - 00:41:31,826] so again,
+- [00:41:31,826 - 00:41:34,366] same kind of reciprocity.
+- [00:41:35,066 - 00:41:36,206] The l by d v
+- [00:41:36,206 - 00:41:37,346] sub i is p sub i.
+- [00:41:37,486 - 00:41:38,786] The h by d p
+- [00:41:38,786 - 00:41:40,086] sub i is v sub i.
+- [00:41:40,286 - 00:41:42,546] Completely symmetrically related to each other.
+- [00:41:43,266 - 00:41:44,166] Now at the moment,
+- [00:41:44,166 - 00:41:44,866] these are just abstract equations.
+- [00:41:44,866 - 00:41:45,366] They're abstract variables.
+- [00:41:46,466 - 00:41:48,766] Sometimes I've called one of them a momentum.
+- [00:41:48,986 - 00:41:50,866] Sometimes I've called one of them a velocity.
+- [00:41:53,166 - 00:41:55,306] But they could be just abstract variables.
+- [00:42:02,686 - 00:42:03,646] And as I said,
+- [00:42:03,646 - 00:42:07,806] there are many applications of the change of variables
+- [00:42:07,806 - 00:42:11,296] from a v-type variable to a p-type variable
+- [00:42:11,296 - 00:42:14,786] that's kept track of by what I usually call
+- [00:42:14,866 - 00:42:15,986] generating functions,
+- [00:42:15,986 - 00:42:17,786] l and h.
+- [00:42:19,526 - 00:42:21,266] But our interest is in mechanics.
+- [00:42:25,226 - 00:42:26,386] In mechanics,
+- [00:42:26,386 - 00:42:30,306] the Lagrangian is not only a function of velocities.
+- [00:42:30,766 - 00:42:33,206] It's also a function of positions.
+- [00:42:34,266 - 00:42:36,566] We haven't talked about positions at all.
+- [00:42:36,666 - 00:42:37,906] We have velocities here,
+- [00:42:37,906 - 00:42:39,346] things I call v,
+- [00:42:39,346 - 00:42:41,466] and we have things I call p.
+- [00:42:42,986 - 00:42:46,076] The relationship between p's and v's and
+- [00:42:46,076 - 00:42:49,166] Lagrangians and Hamiltonians is exactly what I've written.
+- [00:42:49,546 - 00:42:51,286] But with the coordinates q,
+- [00:42:51,286 - 00:42:52,946] just going along for the ride.
+- [00:42:53,506 - 00:42:55,246] Just going along as if they,
+- [00:42:55,246 - 00:42:57,906] as if you didn't care about them.
+- [00:42:58,266 - 00:42:59,866] As if they were just passive.
+- [00:43:00,326 - 00:43:04,866] So let me show you how the relationship between Hamiltonians and
+- [00:43:04,866 - 00:43:09,406] Lagrangians is nothing but a Legendre transformation of the Zachariah's type.
+- [00:43:12,306 - 00:43:15,306] With the extra added ingredient that there's some
+- [00:43:15,306 - 00:43:18,306] more variables that go along for the ride.
+- [00:43:20,446 - 00:43:20,886] Alright,
+- [00:43:20,886 - 00:43:22,046] now we're doing mechanics.
+- [00:43:22,566 - 00:43:23,726] We have a Lagrangian.
+- [00:43:26,286 - 00:43:28,066] The Lagrangian is a function of what?
+- [00:43:28,106 - 00:43:29,486] It's a function of the q-dots.
+- [00:43:30,886 - 00:43:32,986] But let's call the q-dots v's.
+- [00:43:34,066 - 00:43:34,506] Velocities,
+- [00:43:34,506 - 00:43:35,906] generalized velocities,
+- [00:43:35,906 - 00:43:36,606] v sub i.
+- [00:43:37,086 - 00:43:40,026] q sub i dot is by definition v sub i.
+- [00:43:40,026 - 00:43:42,196] So then the Lagrangian is a
+- [00:43:42,196 - 00:43:44,366] function of the v's and the q's.
+- [00:43:45,686 - 00:43:47,686] Don't confuse q's with p's.
+- [00:44:02,826 - 00:44:04,646] v sub i is equal to q dot.
+- [00:44:05,046 - 00:44:06,786] Let me write up here another
+- [00:44:06,786 - 00:44:08,526] equation of mechanics that you're familiar with.
+- [00:44:08,846 - 00:44:09,946] p sub i.
+- [00:44:10,026 - 00:44:12,466] v sub i is the derivative of
+- [00:44:12,466 - 00:44:14,906] the Lagrangian with respect to q dot.
+- [00:44:15,246 - 00:44:15,906] Remember that?
+- [00:44:17,226 - 00:44:20,066] The L by the q dot defines p.
+- [00:44:20,746 - 00:44:24,226] But that's the same as saying the L by dv.
+- [00:44:28,586 - 00:44:29,386] Uh huh.
+- [00:44:30,206 - 00:44:37,206] The L by dv equals p sub i.
+- [00:44:38,866 - 00:44:39,746] That's right.
+- [00:44:39,746 - 00:44:41,806] The first of our equations over here.
+- [00:44:43,486 - 00:44:47,356] So we start to see the Legendre transformation
+- [00:44:47,356 - 00:44:51,226] between p's and velocities beginning to shape up.
+- [00:44:51,745 - 00:44:55,345] And it's simply the definition of canonical momentum as
+- [00:44:55,345 - 00:44:58,946] the derivative of Lagrangian with respect to q dot.
+- [00:45:03,866 - 00:45:04,466] Next,
+- [00:45:04,466 - 00:45:06,446] let's define the Hamiltonian.
+- [00:45:07,926 - 00:45:10,326] I'm absolutely repeating myself now.
+- [00:45:10,566 - 00:45:13,746] But I'm repeating myself in the language of mechanics.
+- [00:45:14,506 - 00:45:17,976] Let's define the Hamiltonian h to
+- [00:45:17,976 - 00:45:21,446] be the sum of p sub i.
+- [00:45:22,966 - 00:45:24,246] p sub i what?
+- [00:45:24,886 - 00:45:27,086] p sub i v sub i.
+- [00:45:27,826 - 00:45:31,166] Usually we write p sub i q sub i dot.
+- [00:45:31,386 - 00:45:31,586] Right?
+- [00:45:31,646 - 00:45:34,266] That's the language that we've done previously.
+- [00:45:34,826 - 00:45:35,626] But q sub i dot
+- [00:45:35,626 - 00:45:36,426] is the derivative of q dot.
+- [00:45:36,426 - 00:45:37,326] It's nothing but v sub i.
+- [00:45:37,526 - 00:45:38,686] So let's put v sub i.
+- [00:45:42,606 - 00:45:43,726] Minus Lagrangian.
+- [00:45:44,466 - 00:45:46,206] That's precisely the same definition
+- [00:45:46,206 - 00:45:47,946] that we had for the Hamiltonian,
+- [00:45:47,946 - 00:45:48,706] I think,
+- [00:45:48,706 - 00:45:49,726] in the last two lectures.
+- [00:45:51,286 - 00:45:51,846] So,
+- [00:45:51,846 - 00:45:52,706] you see,
+- [00:45:52,706 - 00:45:54,746] we see the pattern shaping up.
+- [00:45:55,126 - 00:45:58,626] But now let's calculate the small change in h.
+- [00:45:59,086 - 00:46:00,466] When we change things.
+- [00:46:00,846 - 00:46:01,746] What things?
+- [00:46:02,586 - 00:46:05,966] We're going to change the p's and the q's.
+- [00:46:06,506 - 00:46:08,716] What happens if we make
+- [00:46:08,716 - 00:46:10,926] small changes in p's and q's?
+- [00:46:11,766 - 00:46:13,586] How does the Hamiltonian change?
+- [00:46:14,106 - 00:46:15,186] Let's calculate that.
+- [00:46:15,746 - 00:46:18,816] You're taking the velocity to be
+- [00:46:18,816 - 00:46:21,886] a function of p and q.
+- [00:46:22,626 - 00:46:24,726] It is a function of p and q.
+- [00:46:24,766 - 00:46:25,306] Generally,
+- [00:46:25,306 - 00:46:26,326] that's right.
+- [00:46:26,466 - 00:46:26,866] In general,
+- [00:46:26,866 - 00:46:28,846] you can think of q as just going
+- [00:46:28,846 - 00:46:30,826] along for a ride as a set of parameters.
+- [00:46:31,566 - 00:46:32,106] Right.
+- [00:46:32,406 - 00:46:35,046] So the velocity depends on the point p.
+- [00:46:35,326 - 00:46:35,866] The whole thing.
+- [00:46:35,986 - 00:46:36,266] Yeah.
+- [00:46:36,426 - 00:46:36,666] That's right.
+- [00:46:37,525 - 00:46:38,686] So that's correct.
+- [00:46:39,026 - 00:46:39,506] Now,
+- [00:46:39,506 - 00:46:41,906] what was said was correct.
+- [00:46:42,186 - 00:46:43,146] Let me rephrase it.
+- [00:46:43,146 - 00:46:44,026] Let me not rephrase it,
+- [00:46:44,026 - 00:46:45,086] but let me just restate it.
+- [00:46:47,885 - 00:46:48,366] Now,
+- [00:46:48,366 - 00:46:53,136] the relationship between the p's and the v's is
+- [00:46:53,136 - 00:46:57,906] such that p is a function not just of v,
+- [00:46:57,906 - 00:46:59,346] but also the q's.
+- [00:46:59,886 - 00:47:01,646] And v is a function
+- [00:47:01,646 - 00:47:03,406] of the p's and the q's.
+- [00:47:04,146 - 00:47:05,276] But you can simply think of the
+- [00:47:05,276 - 00:47:06,406] q's as a function of the v's.
+- [00:47:06,406 - 00:47:07,436] So you can think of the
+- [00:47:07,436 - 00:47:08,466] q's as being parameters at this point,
+- [00:47:08,466 - 00:47:10,366] which,
+- [00:47:10,366 - 00:47:14,766] as I said,
+- [00:47:14,766 - 00:47:16,386] go along for the ride for the moment.
+- [00:47:18,946 - 00:47:19,746] The point is,
+- [00:47:19,746 - 00:47:20,126] of course,
+- [00:47:20,126 - 00:47:22,226] when you calculate the L by the v sub i,
+- [00:47:22,226 - 00:47:23,666] in general,
+- [00:47:23,666 - 00:47:25,666] it might contain some q
+- [00:47:25,666 - 00:47:27,666] dependence and not just v dependence.
+- [00:47:28,546 - 00:47:29,406] But that's okay.
+- [00:47:31,325 - 00:47:32,466] Just pursue it.
+- [00:47:33,046 - 00:47:33,506] Okay.
+- [00:47:33,506 - 00:47:35,366] Let's calculate the change in h
+- [00:47:35,366 - 00:47:37,226] when you change things a little bit.
+- [00:47:37,386 - 00:47:39,586] Change things means change everything a little bit.
+- [00:47:39,686 - 00:47:40,546] P's and q's.
+- [00:47:42,986 - 00:47:43,586] All right.
+- [00:47:43,606 - 00:47:44,386] The change in h.
+- [00:47:45,946 - 00:47:47,146] Same thing as before.
+- [00:47:48,026 - 00:47:49,046] First of all,
+- [00:47:49,046 - 00:47:49,426] the sum,
+- [00:47:49,426 - 00:47:51,246] which I won't write the summation sign.
+- [00:47:52,006 - 00:47:55,796] P sub i delta v sub i
+- [00:47:55,796 - 00:47:59,586] plus v sub i delta p sub i.
+- [00:48:01,025 - 00:48:04,706] Now I have minus the derivative of the Lagrangian.
+- [00:48:07,726 - 00:48:10,706] We have two things that the Lagrangian depends on.
+- [00:48:10,866 - 00:48:11,966] Let's see which way I wrote it.
+- [00:48:12,446 - 00:48:14,656] The L by the q
+- [00:48:14,656 - 00:48:16,866] sub i delta q sub i.
+- [00:48:20,626 - 00:48:25,096] And minus the L by the
+- [00:48:25,096 - 00:48:29,566] v sub i delta v sub i.
+- [00:48:31,925 - 00:48:34,226] Lagrangians depend on q's and v's.
+- [00:48:35,446 - 00:48:37,366] And now we're varying everything in sight.
+- [00:48:38,626 - 00:48:39,566] P's and q's.
+- [00:48:40,166 - 00:48:43,666] You don't have to separately vary the velocities.
+- [00:48:44,265 - 00:48:46,015] Because you know the velocities if
+- [00:48:46,015 - 00:48:47,766] you know the p's and q's.
+- [00:48:48,726 - 00:48:49,166] Okay.
+- [00:48:49,506 - 00:48:50,406] So there we are.
+- [00:48:50,446 - 00:48:52,806] That's the formula for changing h a little bit.
+- [00:48:53,246 - 00:48:54,366] It has several terms.
+- [00:48:54,586 - 00:48:55,966] P sub i delta v sub i.
+- [00:48:56,026 - 00:48:57,346] v sub i delta p sub i.
+- [00:48:57,446 - 00:48:57,786] Okay.
+- [00:48:59,626 - 00:49:01,376] So we have the derivative of the Lagrangian
+- [00:49:01,376 - 00:49:03,126] with respect to q times the change in q.
+- [00:49:04,246 - 00:49:06,806] Derivative of the Lagrangian with respect to v delta v.
+- [00:49:08,346 - 00:49:08,786] Okay.
+- [00:49:08,846 - 00:49:09,986] It's a little bit complicated.
+- [00:49:10,146 - 00:49:12,446] But fortunately big pieces of it just cancel.
+- [00:49:13,926 - 00:49:15,166] Just as they did over here.
+- [00:49:15,806 - 00:49:16,486] In fact,
+- [00:49:16,486 - 00:49:20,006] the same rate cancellation takes place over here.
+- [00:49:22,026 - 00:49:24,116] Remember that the L by the
+- [00:49:24,116 - 00:49:26,206] v sub i is p sub i.
+- [00:49:26,206 - 00:49:28,546] Here is p sub i.
+- [00:49:29,246 - 00:49:30,546] Here is p sub i.
+- [00:49:31,386 - 00:49:31,986] Here is p sub i.
+- [00:49:32,186 - 00:49:35,006] Things in the red squares cancel again.
+- [00:49:35,966 - 00:49:36,446] They're gone.
+- [00:49:40,206 - 00:49:42,646] The other two terms can't cancel each other.
+- [00:49:42,746 - 00:49:44,626] One involves delta p.
+- [00:49:44,786 - 00:49:46,106] The other involves delta q.
+- [00:49:46,286 - 00:49:47,806] Those are independent variations.
+- [00:49:48,246 - 00:49:49,486] They can't cancel each other.
+- [00:49:49,846 - 00:49:53,016] But what we can write down now is
+- [00:49:53,016 - 00:49:56,186] that the derivative of the Hamiltonian with respect
+- [00:49:56,186 - 00:49:57,626] respect for p sub i.
+- [00:49:58,666 - 00:50:00,626] That's a small change in h
+- [00:50:00,626 - 00:50:03,246] when you change p sub i a little bit,
+- [00:50:04,386 - 00:50:06,066] keeping q sub i fixed.
+- [00:50:07,826 - 00:50:09,606] The h by the p sub i,
+- [00:50:09,726 - 00:50:11,246] keeping the q's fixed,
+- [00:50:11,766 - 00:50:12,666] is just what?
+- [00:50:13,546 - 00:50:14,706] What do you read off this?
+- [00:50:15,546 - 00:50:17,346] v sub i.
+- [00:50:20,246 - 00:50:23,126] And the h by the q sub i,
+- [00:50:23,126 - 00:50:23,506] what's that?
+- [00:50:30,586 - 00:50:31,166] What's this?
+- [00:50:32,306 - 00:50:33,226] It's minus
+- [00:50:36,986 - 00:50:38,766] dL by the q sub i.
+- [00:50:40,926 - 00:50:41,406] So,
+- [00:50:41,406 - 00:50:41,766] okay,
+- [00:50:41,766 - 00:50:43,086] that's not bad.
+- [00:50:43,286 - 00:50:44,166] It's nice equations.
+- [00:50:44,686 - 00:50:45,986] But they get a little bit nice,
+- [00:50:45,986 - 00:50:46,166] right?
+- [00:50:47,346 - 00:50:47,646] Yeah.
+- [00:50:51,106 - 00:50:51,646] 要改變
+- [00:50:53,282 - 00:50:54,322] dL by dv sub i,
+- [00:50:54,322 - 00:50:54,542] right?
+- [00:50:54,742 - 00:50:55,082] Well,
+- [00:50:55,082 - 00:50:55,262] no,
+- [00:50:55,262 - 00:50:55,482] sorry,
+- [00:50:55,482 - 00:50:56,462] dL by dq sub i,
+- [00:50:56,462 - 00:50:56,702] right?
+- [00:50:56,842 - 00:50:57,282] That's it.
+- [00:50:58,482 - 00:51:00,122] Do you remember Lagrange's equations?
+- [00:51:00,482 - 00:51:01,602] dL by dq sub i,
+- [00:51:01,602 - 00:51:01,902] what's that?
+- [00:51:06,342 - 00:51:06,782] Okay,
+- [00:51:06,782 - 00:51:08,942] let's write down Lagrange's equations over here.
+- [00:51:11,862 - 00:51:12,962] d by dt
+- [00:51:15,462 - 00:51:17,502] of dL by dq sub i
+- [00:51:18,502 - 00:51:18,942] dot
+- [00:51:18,942 - 00:51:23,222] is equal to dL by dq sub i.
+- [00:51:25,522 - 00:51:26,882] That's Lagrange's equations.
+- [00:51:30,622 - 00:51:32,082] What's dL by dq dot?
+- [00:51:33,282 - 00:51:33,882] P.
+- [00:51:34,362 - 00:51:35,582] So this is,
+- [00:51:35,582 - 00:51:37,582] the left-hand side is P dot
+- [00:51:38,782 - 00:51:39,382] i
+- [00:51:39,382 - 00:51:43,422] is equal to dL by dq sub i.
+- [00:51:45,322 - 00:51:46,422] That's all that says.
+- [00:51:46,642 - 00:51:48,922] That the time derivative of the constant
+- [00:51:48,942 - 00:51:51,082] of the canonical momentum is dL by dq.
+- [00:51:52,062 - 00:51:52,622] Well,
+- [00:51:52,622 - 00:51:54,002] let's look at what we have here.
+- [00:51:54,242 - 00:51:55,822] We have dL by dq,
+- [00:51:55,822 - 00:51:56,142] right?
+- [00:51:58,522 - 00:52:02,482] That's just equal to minus P dot.
+- [00:52:04,182 - 00:52:05,562] That's Lagrange's equations.
+- [00:52:06,582 - 00:52:08,862] P dot is dL by dq.
+- [00:52:10,342 - 00:52:11,822] So we have one equation.
+- [00:52:12,242 - 00:52:14,182] Let's get rid of the middle man here.
+- [00:52:14,302 - 00:52:14,862] We don't need him.
+- [00:52:15,742 - 00:52:17,502] The H by dq
+- [00:52:18,942 - 00:52:22,082] is minus the time derivative of P.
+- [00:52:24,442 - 00:52:24,922] Well,
+- [00:52:24,922 - 00:52:25,502] what is dI?
+- [00:52:29,842 - 00:52:30,482] Q dot.
+- [00:52:39,062 - 00:52:40,282] I'm going to go through this again.
+- [00:52:41,922 - 00:52:42,942] I'm going to do it again.
+- [00:52:43,762 - 00:52:44,242] Well,
+- [00:52:44,242 - 00:52:44,422] these,
+- [00:52:44,422 - 00:52:45,002] of course,
+- [00:52:45,082 - 00:52:46,582] are Hamilton's equations.
+- [00:52:48,422 - 00:52:49,442] They're quite beautiful.
+- [00:52:50,282 - 00:52:52,582] H is a function of P's and Q's.
+- [00:52:53,722 - 00:52:55,122] That's the way you think about it.
+- [00:52:55,322 - 00:52:58,822] The Hamiltonian is a function of P's and Q's,
+- [00:52:58,902 - 00:53:00,042] momenta and coordinates.
+- [00:53:00,622 - 00:53:02,261] You get rid of the velocities.
+- [00:53:02,502 - 00:53:03,921] You replace them by P's.
+- [00:53:04,321 - 00:53:07,482] And then the derivative of the Hamiltonian
+- [00:53:07,482 - 00:53:09,982] with respect to P's defines the Q dots.
+- [00:53:10,082 - 00:53:11,762] And the derivative of the Hamiltonian
+- [00:53:11,762 - 00:53:14,282] with respect to Q's is minus the P dots.
+- [00:53:15,842 - 00:53:16,562] That's the story of the Hamiltonian.
+- [00:53:16,562 - 00:53:17,682] So you can see the structure of mechanics
+- [00:53:19,422 - 00:53:21,162] in the Hamiltonian nutshell,
+- [00:53:21,162 - 00:53:21,922] if you like.
+- [00:53:25,682 - 00:53:26,922] Let's go through it again,
+- [00:53:27,082 - 00:53:30,382] just since it was a series of steps,
+- [00:53:30,462 - 00:53:31,662] all of which are abstract,
+- [00:53:32,342 - 00:53:34,902] none of which are highly intuitive.
+- [00:53:35,582 - 00:53:36,782] Let's go through it again.
+- [00:53:37,482 - 00:53:41,982] Here we have H is
+- [00:53:41,982 - 00:53:46,482] equal to summation P sub i,
+- [00:53:46,562 - 00:53:47,202] V sub i,
+- [00:53:47,202 - 00:53:49,862] minus L.
+- [00:53:52,022 - 00:53:54,942] L being a function of Q and V.
+- [00:53:56,102 - 00:53:57,842] Now let's make a little variation.
+- [00:54:00,362 - 00:54:01,662] That's going to be equal
+- [00:54:01,662 - 00:54:04,062] P sub i delta V sub i
+- [00:54:05,262 - 00:54:07,542] of V sub i delta P sub i
+- [00:54:08,962 - 00:54:09,482] minus
+- [00:54:10,522 - 00:54:12,142] the change in the Lagrangian.
+- [00:54:13,602 - 00:54:14,142] What's that?
+- [00:54:14,742 - 00:54:15,262] Oh,
+- [00:54:15,262 - 00:54:15,522] sorry,
+- [00:54:15,522 - 00:54:16,022] excuse me.
+- [00:54:17,962 - 00:54:20,342] Minus V sub i delta P sub i.
+- [00:54:22,702 - 00:54:24,222] But now we have to calculate
+- [00:54:24,222 - 00:54:25,362] the change in L.
+- [00:54:26,142 - 00:54:27,382] The change in L
+- [00:54:28,322 - 00:54:30,082] is minus the derivative of L
+- [00:54:30,082 - 00:54:31,962] with respect to whatever it depends on.
+- [00:54:32,342 - 00:54:34,642] But it depends on Q's,
+- [00:54:35,962 - 00:54:36,802] delta Q's,
+- [00:54:37,342 - 00:54:39,042] and it depends on V's.
+- [00:54:46,562 - 00:54:47,642] Everybody gets an i.
+- [00:54:51,862 - 00:54:53,862] And there should be a summation sign
+- [00:54:53,862 - 00:54:56,522] which I'm too lazy to write.
+- [00:54:57,902 - 00:54:58,382] Okay,
+- [00:54:58,382 - 00:54:58,622] now,
+- [00:54:58,622 - 00:54:59,182] first of all,
+- [00:54:59,182 - 00:54:59,862] what cancels?
+- [00:55:00,382 - 00:55:01,622] The things multiplying
+- [00:55:02,162 - 00:55:03,682] delta V cancel.
+- [00:55:04,462 - 00:55:04,942] Why?
+- [00:55:05,502 - 00:55:06,882] Here you have P sub i,
+- [00:55:09,462 - 00:55:10,322] and here,
+- [00:55:10,561 - 00:55:11,162] sorry,
+- [00:55:11,162 - 00:55:11,962] did I say that right?
+- [00:55:12,042 - 00:55:12,301] Yes?
+- [00:55:12,301 - 00:55:13,082] Yeah.
+- [00:55:13,702 - 00:55:14,102] Um...
+- [00:55:15,982 - 00:55:16,382] That's it.
+- [00:55:17,002 - 00:55:17,402] That's it.
+- [00:55:19,482 - 00:55:20,302] P sub i.
+- [00:55:24,682 - 00:55:25,082] Yeah.
+- [00:55:26,982 - 00:55:28,422] The L by D V sub i,
+- [00:55:29,482 - 00:55:30,362] that's P sub i.
+- [00:55:30,742 - 00:55:31,822] Definition of P sub i.
+- [00:55:32,302 - 00:55:32,702] Definition of P sub i.
+- [00:55:32,738 - 00:55:33,118] نهاية
+- [00:55:33,118 - 00:55:33,498] الدرس
+- [00:55:34,626 - 00:55:36,146] That's how we define canonical momentum.
+- [00:55:36,146 - 00:55:37,646] Gone,
+- [00:55:37,646 - 00:55:38,526] gone.
+- [00:55:41,486 - 00:55:43,686] And then we look at what's left over
+- [00:55:43,686 - 00:55:45,716] and we see that the derivative of
+- [00:55:45,716 - 00:55:47,746] h with respect to p sub i
+- [00:55:48,686 - 00:55:49,906] is v sub i
+- [00:55:50,306 - 00:55:51,606] but v sub i is q dot.
+- [00:55:56,426 - 00:55:58,246] Then we look at the other one
+- [00:55:58,246 - 00:56:00,386] that says the derivative of h
+- [00:56:01,346 - 00:56:02,406] with respect to
+- [00:56:02,406 - 00:56:03,886] q sub i
+- [00:56:05,745 - 00:56:07,355] is equal to minus the
+- [00:56:07,355 - 00:56:08,966] l by the q sub i,
+- [00:56:08,966 - 00:56:09,706] minus
+- [00:56:10,886 - 00:56:12,826] but then we use Lagrange's equations.
+- [00:56:13,686 - 00:56:15,706] The l by the q sub i
+- [00:56:17,046 - 00:56:17,986] is d by dt
+- [00:56:20,405 - 00:56:21,646] of p sub i.
+- [00:56:22,106 - 00:56:23,326] That's Lagrange's equation.
+- [00:56:24,286 - 00:56:26,206] Or just minus p dot.
+- [00:56:33,066 - 00:56:34,746] So we see that mechanics
+- [00:56:35,446 - 00:56:37,186] in great generality
+- [00:56:37,186 - 00:56:39,466] gets repackaged
+- [00:56:39,466 - 00:56:42,346] as a system of first order equations
+- [00:56:42,346 - 00:56:44,786] of very great simplicity.
+- [00:56:45,306 - 00:56:48,466] You need to know one function of p's and q's.
+- [00:56:48,926 - 00:56:50,916] Knowing that function of p's
+- [00:56:50,916 - 00:56:52,906] and q's immediately by differentiation
+- [00:56:52,906 - 00:56:54,686] tells you
+- [00:56:54,686 - 00:56:57,626] how the point moves through phase space.
+- [00:56:58,026 - 00:57:00,806] It tells you the velocity through phase space.
+- [00:57:01,626 - 00:57:02,386] So here's the next part.
+- [00:57:02,386 - 00:57:02,986] Q dot,
+- [00:57:02,986 - 00:57:03,486] of course,
+- [00:57:03,486 - 00:57:04,666] is just the ordinary velocity,
+- [00:57:05,226 - 00:57:07,726] but the combination Q dot and P dot,
+- [00:57:08,426 - 00:57:10,466] let's put the sign on the other side over here.
+- [00:57:11,765 - 00:57:14,226] The combination Q dot and P dot
+- [00:57:14,226 - 00:57:17,326] is a kind of velocity through the phase space.
+- [00:57:17,886 - 00:57:20,226] It tells you if you know P and Q,
+- [00:57:21,025 - 00:57:23,986] you plug it in to H,
+- [00:57:23,986 - 00:57:25,726] calculate the H dP,
+- [00:57:25,726 - 00:57:26,546] the H dQ.
+- [00:57:27,386 - 00:57:29,266] If you know P and Q,
+- [00:57:29,266 - 00:57:31,686] then you immediately know P dot and Q dot.
+- [00:57:33,146 - 00:57:35,146] So it reduces mechanics from
+- [00:57:35,146 - 00:57:37,146] the system of first-order equations
+- [00:57:37,866 - 00:57:39,286] for P's and Q's.
+- [00:57:39,846 - 00:57:42,006] Every P has a partner called Q.
+- [00:57:42,086 - 00:57:43,545] Every Q has a partner called P.
+- [00:57:43,686 - 00:57:44,765] They come in pairs.
+- [00:57:45,946 - 00:57:53,266] And the Hamilton equations are two for each I.
+- [00:57:54,046 - 00:57:56,406] A pair of equations for each I.
+- [00:57:59,666 - 00:58:00,746] Let's do it,
+- [00:58:00,746 - 00:58:01,666] just for simplicity,
+- [00:58:01,886 - 00:58:02,206] for...
+- [00:58:02,386 - 00:58:03,666] for F equals M.A.
+- [00:58:04,566 - 00:58:06,626] Let's just check that it really is correct
+- [00:58:07,466 - 00:58:08,806] for F equals M.A.
+- [00:58:20,646 - 00:58:21,506] As I said,
+- [00:58:21,506 - 00:58:24,046] I have no idea what motivated Hamilton
+- [00:58:24,046 - 00:58:25,426] to write these things down,
+- [00:58:25,526 - 00:58:28,286] but they certainly do have a very,
+- [00:58:28,286 - 00:58:29,286] very simple structure.
+- [00:58:29,686 - 00:58:31,406] And one of the things they show you
+- [00:58:31,406 - 00:58:32,366] is that suppose you have a P,
+- [00:58:32,386 - 00:58:32,906] we have a Driver's function.
+- [00:58:32,906 - 00:58:32,906] But surprisingly,
+- [00:58:32,906 - 00:58:34,626] with very,
+- [00:58:34,626 - 00:58:35,746] very different physical
+- [00:58:35,746 - 00:58:36,606] interpretation,
+- [00:58:36,606 - 00:58:39,906] P's and Q's seem to be very,
+- [00:58:39,926 - 00:58:40,906] very different things.
+- [00:58:42,566 - 00:58:44,646] Q's in our coordinates,
+- [00:58:44,646 - 00:58:46,006] P's are velocities,
+- [00:58:46,006 - 00:58:47,426] connected to velocities,
+- [00:58:47,426 - 00:58:48,426] and yet,
+- [00:58:48,606 - 00:58:52,486] there's this enormous symmetry between P's and Q's.
+- [00:58:52,486 - 00:58:55,136] they seem to come into the equations
+- [00:58:55,136 - 00:58:57,786] in an extremely parallel and symmetric way,
+- [00:58:58,626 - 00:59:00,846] apart from a single minus sign over here.
+- [00:59:02,486 - 00:59:09,686] They seem to enter in a symmetric way into mechanics.
+- [00:59:12,406 - 00:59:13,006] Now,
+- [00:59:13,006 - 00:59:15,016] it's the study of these
+- [00:59:15,016 - 00:59:17,026] equations which really defines modern mechanics,
+- [00:59:17,446 - 00:59:19,746] modern classical mechanics.
+- [00:59:27,746 - 00:59:30,046] Let's draw a picture to indicate what's going on.
+- [00:59:37,326 - 00:59:38,806] Here's general phase space,
+- [00:59:38,806 - 00:59:39,466] P and Q.
+- [00:59:40,806 - 00:59:42,206] It's not just one variable,
+- [00:59:42,206 - 00:59:43,126] there's many variables.
+- [00:59:44,266 - 00:59:46,006] Some subset are called P's,
+- [00:59:46,006 - 00:59:47,426] half of them are called P's,
+- [00:59:47,426 - 00:59:48,386] half of them are called Q's.
+- [00:59:48,446 - 00:59:49,966] I can't draw them all on the blackboard,
+- [00:59:49,966 - 00:59:52,085] so I'll draw just one P and one Q.
+- [00:59:53,706 - 00:59:54,926] At every point,
+- [00:59:54,926 - 00:59:58,246] where's my equations?
+- [00:59:58,386 - 00:59:58,786] Here they are.
+- [00:59:58,986 - 01:00:00,146] At every point,
+- [01:00:00,146 - 01:00:01,956] I could calculate the H by
+- [01:00:01,956 - 01:00:03,766] P and the H by PQ
+- [01:00:03,766 - 01:00:05,206] and tell you exactly what
+- [01:00:05,206 - 01:00:06,646] Q dot and P dot are.
+- [01:00:06,946 - 01:00:09,076] That defines a kind of
+- [01:00:09,076 - 01:00:11,206] velocity vector through the phase space.
+- [01:00:12,146 - 01:00:13,626] Not an ordinary velocity,
+- [01:00:13,626 - 01:00:15,126] but a phase space velocity.
+- [01:00:15,186 - 01:00:17,726] Let's draw that phase space velocity as an arrow.
+- [01:00:18,206 - 01:00:19,836] It's showing which way that point
+- [01:00:19,836 - 01:00:21,466] is moving in the phase space.
+- [01:00:22,486 - 01:00:24,786] And the length of the arrow we can take
+- [01:00:24,786 - 01:00:27,086] to represent how fast you're moving through the phase space.
+- [01:00:28,386 - 01:00:32,296] And so what the Hamiltonian gives you is
+- [01:00:32,296 - 01:00:36,206] a kind of flow through the phase space.
+- [01:00:41,426 - 01:00:42,946] Where the arrows are long,
+- [01:00:42,946 - 01:00:43,826] you're moving fast.
+- [01:00:43,966 - 01:00:47,726] Where the arrows are small,
+- [01:00:47,726 - 01:00:49,446] you move slowly.
+- [01:00:52,486 - 01:00:53,326] And the velocity,
+- [01:00:53,326 - 01:00:53,886] as I said,
+- [01:00:53,886 - 01:00:55,766] is related to derivatives.
+- [01:00:56,226 - 01:00:57,386] Notice one funny thing.
+- [01:00:58,086 - 01:01:01,466] That the Q velocity is a P derivative
+- [01:01:01,466 - 01:01:04,846] and the P velocity is minus a Q derivative.
+- [01:01:07,066 - 01:01:10,366] So it's not that Q dot is the derivative of H with respect
+- [01:01:10,366 - 01:01:13,666] to Q and P dot is the derivative of H with respect to P.
+- [01:01:13,986 - 01:01:15,586] They get crossed here.
+- [01:01:15,726 - 01:01:16,906] They get crossed in the equations.
+- [01:01:17,046 - 01:01:18,256] That has a profound implication
+- [01:01:18,256 - 01:01:19,466] as we'll see in a moment.
+- [01:01:24,306 - 01:01:27,546] Any questions about Hamilton's equations?
+- [01:01:27,866 - 01:01:28,806] Up the mountain.
+- [01:01:31,806 - 01:01:33,686] Any second order system?
+- [01:01:34,406 - 01:01:37,206] Any second order system can always be.
+- [01:01:38,106 - 01:01:41,586] Just by defining the first derivatives to be new variables.
+- [01:01:42,246 - 01:01:44,976] Then that simply defines a set
+- [01:01:44,976 - 01:01:47,706] of twice as many first order equations.
+- [01:01:48,266 - 01:01:49,266] That's trivial.
+- [01:01:49,586 - 01:01:52,466] But this elegant structure.
+- [01:01:52,486 - 01:01:54,186] This structure here is far more than that.
+- [01:01:54,346 - 01:01:56,566] It has some properties that we'll see in a moment.
+- [01:01:58,266 - 01:01:58,766] Yeah.
+- [01:02:00,226 - 01:02:02,336] Are there any systems where P and
+- [01:02:02,336 - 01:02:04,446] B are not one to one relationships?
+- [01:02:06,686 - 01:02:07,726] When it happens,
+- [01:02:07,726 - 01:02:10,996] they usually badly define systems for
+- [01:02:10,996 - 01:02:14,266] which the evolution is not well defined.
+- [01:02:14,546 - 01:02:16,146] And usually rejected as being.
+- [01:02:16,366 - 01:02:18,886] You mean are there any systems in nature which require?
+- [01:02:19,426 - 01:02:19,926] No.
+- [01:02:20,346 - 01:02:21,106] We don't have any systems.
+- [01:02:22,026 - 01:02:25,586] Circular systems with friction.
+- [01:02:26,226 - 01:02:28,206] Doesn't that be slowly?
+- [01:02:28,606 - 01:02:28,986] Well,
+- [01:02:28,986 - 01:02:29,506] first of all,
+- [01:02:29,506 - 01:02:34,706] friction is outside the boundaries
+- [01:02:34,706 - 01:02:39,906] of Lebrangian and Hamiltonian mechanics.
+- [01:02:40,546 - 01:02:41,226] Now,
+- [01:02:41,226 - 01:02:43,846] not really because all systems
+- [01:02:43,846 - 01:02:46,466] in nature are of this type.
+- [01:02:46,626 - 01:02:48,446] And friction is a part of nature.
+- [01:02:48,446 - 01:02:51,286] But as I've emphasized over and over again,
+- [01:02:51,286 - 01:02:54,226] you don't really see friction in
+- [01:02:54,226 - 01:02:57,166] a system unless you ignore a large,
+- [01:02:57,166 - 01:02:58,326] large number of coordinates.
+- [01:03:00,426 - 01:03:03,436] Friction is simply the excitation and the moving around
+- [01:03:03,436 - 01:03:06,446] of microscopic coordinates that you don't keep track of.
+- [01:03:08,926 - 01:03:09,486] So,
+- [01:03:09,486 - 01:03:10,046] yeah.
+- [01:03:10,566 - 01:03:11,846] Let me see.
+- [01:03:11,886 - 01:03:12,466] I'm trying to think.
+- [01:03:12,566 - 01:03:15,496] Are there any systems that I can
+- [01:03:15,496 - 01:03:18,426] think of where you can't invert the system?
+- [01:03:18,426 - 01:03:20,846] The relation between coordinates and momentum.
+- [01:03:22,606 - 01:03:23,086] Yeah,
+- [01:03:23,086 - 01:03:24,066] I can think of one.
+- [01:03:25,646 - 01:03:26,126] No,
+- [01:03:26,126 - 01:03:27,346] I can't think of any.
+- [01:03:27,406 - 01:03:27,726] No,
+- [01:03:27,726 - 01:03:28,106] I'm sorry.
+- [01:03:28,226 - 01:03:28,966] I was going to say something else.
+- [01:03:29,106 - 01:03:29,366] No,
+- [01:03:29,366 - 01:03:34,086] I can't think of any offhand that make physical sense.
+- [01:03:37,246 - 01:03:39,326] We'll talk about why and talk about
+- [01:03:39,326 - 01:03:41,406] the importance of this one-to-one sort of law.
+- [01:03:41,506 - 01:03:44,946] How about the Fallen and Terminal Velocity?
+- [01:03:45,266 - 01:03:45,526] What?
+- [01:03:46,165 - 01:03:46,646] No,
+- [01:03:46,646 - 01:03:47,406] that's friction.
+- [01:03:48,766 - 01:03:49,486] That's friction.
+- [01:03:49,766 - 01:03:50,926] What's happening is,
+- [01:03:50,926 - 01:03:52,586] right.
+- [01:03:53,506 - 01:03:56,606] You cannot write equations with friction in this form.
+- [01:03:58,966 - 01:04:01,846] Friction outside the boundaries of this formulation.
+- [01:04:02,906 - 01:04:05,105] In the sense that if you wrote the
+- [01:04:05,105 - 01:04:07,305] equations that you normally write down for friction,
+- [01:04:07,305 - 01:04:08,886] they won't be of this form.
+- [01:04:09,326 - 01:04:12,766] If you write the equations governing all of the molecules,
+- [01:04:12,766 - 01:04:14,285] every single one of them
+- [01:04:14,285 - 01:04:15,805] and keep track of them all,
+- [01:04:15,805 - 01:04:18,015] then there's simply a huge number
+- [01:04:18,015 - 01:04:20,226] of equations which do have this form.
+- [01:04:21,786 - 01:04:26,706] So introducing friction is a way of approximating a very,
+- [01:04:26,706 - 01:04:28,646] very large number of equations of
+- [01:04:28,646 - 01:04:32,946] this form by a very small number of equations
+- [01:04:32,946 - 01:04:37,246] and ignoring the motion of most of the degrees
+- [01:04:37,246 - 01:04:37,706] of freedom.
+- [01:04:37,926 - 01:04:40,726] Energy is leaking off into other degrees of freedom.
+- [01:04:41,526 - 01:04:42,046] Okay.
+- [01:04:42,786 - 01:04:44,986] So friction we don't want to deal with now.
+- [01:04:45,126 - 01:04:45,546] No.
+- [01:04:45,806 - 01:04:47,206] Friction is exceedingly complicated.
+- [01:04:49,186 - 01:04:52,386] If we define H as that lower left-hand corner.
+- [01:04:52,766 - 01:04:53,126] Yes.
+- [01:04:53,286 - 01:04:54,806] And then take the delta H.
+- [01:04:55,066 - 01:04:55,426] Yes.
+- [01:04:55,466 - 01:04:56,546] And we apply the,
+- [01:04:56,546 - 01:05:00,666] equate the oil of Lagrange equations.
+- [01:05:00,926 - 01:05:02,646] Then we get how many of these equations?
+- [01:05:02,766 - 01:05:03,146] That's correct.
+- [01:05:03,466 - 01:05:03,846] Okay.
+- [01:05:04,266 - 01:05:04,746] Now,
+- [01:05:04,746 - 01:05:05,566] but that's,
+- [01:05:05,566 - 01:05:08,486] but where is this Le Genre thing coming in here?
+- [01:05:08,666 - 01:05:09,066] I mean,
+- [01:05:09,066 - 01:05:09,346] what I,
+- [01:05:09,346 - 01:05:10,166] I mean.
+- [01:05:10,346 - 01:05:10,686] Well,
+- [01:05:10,686 - 01:05:10,826] here,
+- [01:05:10,826 - 01:05:12,806] we did the L by dv is P.
+- [01:05:13,006 - 01:05:13,446] Okay.
+- [01:05:15,626 - 01:05:18,566] And the H by the…
+- [01:05:21,705 - 01:05:22,146] Here,
+- [01:05:22,146 - 01:05:23,646] this is the Lagrange and transformation.
+- [01:05:25,986 - 01:05:26,866] What is the,
+- [01:05:26,866 - 01:05:28,246] what is the equation,
+- [01:05:28,246 - 01:05:29,326] is it the,
+- [01:05:29,326 - 01:05:30,946] is it the right hand side,
+- [01:05:30,946 - 01:05:31,806] is it the?
+- [01:05:34,366 - 01:05:35,466] It's taking a fun,
+- [01:05:35,466 - 01:05:37,006] it's taking a function of V,
+- [01:05:37,006 - 01:05:38,726] or what is it?
+- [01:05:38,786 - 01:05:39,346] It's a procedure.
+- [01:05:40,506 - 01:05:43,426] It's a procedure of changing the function of,
+- [01:05:43,426 - 01:05:43,426] of the rotation,
+- [01:05:43,426 - 01:05:43,426] right?
+- [01:05:43,426 - 01:05:43,846] changing variables
+- [01:05:43,846 - 01:05:47,306] changing variables for the set called the
+- [01:05:48,666 - 01:05:49,426] it's
+- [01:05:49,426 - 01:05:49,886] except for
+- [01:05:49,886 - 01:05:56,766] was on the transmission of the whole bunch of arithmetic
+- [01:05:56,766 - 01:05:59,326] if you like
+- [01:06:08,046 - 01:06:11,326] this is the clearest definition of
+- [01:06:11,326 - 01:06:11,346] so
+- [01:06:11,346 - 01:06:14,446] you have a pair of variables the mp
+- [01:06:14,446 - 01:06:16,526] the connect to each other
+- [01:06:17,076 - 01:06:18,906] if they're connected in one-to-one way
+- [01:06:18,906 - 01:06:20,166] then you can
+- [01:06:20,166 - 01:06:22,326] find a lovely
+- [01:06:23,076 - 01:06:24,166] and he should be
+- [01:06:24,996 - 01:06:25,306] elvi
+- [01:06:25,306 - 01:06:27,486] the world under this curve
+- [01:06:27,816 - 01:06:28,546] out this week
+- [01:06:29,446 - 01:06:33,346] h of p is the integral over this curve
+- [01:06:33,696 - 01:06:34,306] up to p
+- [01:06:36,986 - 01:06:39,606] the rebel l with respect to speak
+- [01:06:42,986 - 01:06:44,526] the river of our
+- [01:06:44,526 - 01:06:46,186] age with respect to
+- [01:06:46,186 - 01:06:46,386] he
+- [01:06:49,366 - 01:06:50,946] he has the
+- [01:06:50,946 - 01:06:51,846] is a little bit
+- [01:06:52,686 - 01:06:53,846] that's the simple geometry
+- [01:06:54,366 - 01:06:56,026] why is it so useful
+- [01:06:57,866 - 01:07:00,176] you get used to it that you were you do
+- [01:07:00,176 - 01:07:02,486] it over and over again to get to see why it's
+- [01:07:02,486 - 01:07:02,706] useful
+- [01:07:03,526 - 01:07:04,286] but though
+- [01:07:05,806 - 01:07:08,286] what i would suggest we just go with it
+- [01:07:09,205 - 01:07:11,306] and we will find out just how useful it is
+- [01:07:11,306 - 01:07:11,626] there's no use of it
+- [01:07:11,626 - 01:07:12,926] they're all
+- [01:07:12,926 - 01:07:13,106] there
+- [01:07:13,106 - 01:07:13,446] and
+- [01:07:13,446 - 01:07:15,686] by
+- [01:07:17,406 - 01:07:18,806] it's
+- [01:07:18,806 - 01:07:19,126] not
+- [01:07:19,126 - 01:07:20,666] uh...
+- [01:07:20,666 - 01:07:20,946] output
+- [01:07:20,946 - 01:07:23,546] position
+- [01:07:23,546 - 01:07:26,366] here April
+- [01:07:43,445 - 01:07:45,825] Can you identify a typical situation
+- [01:07:45,825 - 01:07:48,206] of a grump that's not bad?
+- [01:07:48,306 - 01:07:48,786] Sure enough.
+- [01:07:49,546 - 01:07:49,826] Oh,
+- [01:07:49,826 - 01:07:50,066] okay.
+- [01:07:51,206 - 01:07:54,416] We could write down some Lagrangians and Hamiltonians which
+- [01:07:54,416 - 01:07:57,626] are bad and try to see why they're bad.
+- [01:07:58,266 - 01:08:00,266] I think that's a good thing to do.
+- [01:08:00,426 - 01:08:01,406] I'm not going to do it tonight.
+- [01:08:02,206 - 01:08:03,586] Somebody send me an email.
+- [01:08:03,786 - 01:08:05,496] Just send me an email
+- [01:08:05,496 - 01:08:07,206] saying write down some bad systems.
+- [01:08:07,206 - 01:08:11,046] And we'll write down some examples when things don't work out well
+- [01:08:11,046 - 01:08:14,886] and try to follow them and see where the motion breaks down.
+- [01:08:15,386 - 01:08:17,166] See what happens to the motion,
+- [01:08:17,166 - 01:08:18,886] how it tells you.
+- [01:08:18,906 - 01:08:20,046] All of a sudden you
+- [01:08:20,046 - 01:08:21,185] don't know which way to go.
+- [01:08:23,345 - 01:08:26,426] It usually means at some point
+- [01:08:26,426 - 01:08:29,506] the equation of motion simply is singular.
+- [01:08:29,666 - 01:08:30,986] There's some infinity in it.
+- [01:08:31,486 - 01:08:33,196] And something breaks down that
+- [01:08:33,196 - 01:08:34,906] doesn't tell you where to go.
+- [01:08:34,986 - 01:08:36,626] Something in the equation comes into it.
+- [01:08:36,685 - 01:08:37,185] As a general rule.
+- [01:08:39,406 - 01:08:40,725] Presumably it means that your
+- [01:08:40,725 - 01:08:42,046] physics is wrong at some point.
+- [01:08:42,066 - 01:08:42,666] I think it usually,
+- [01:08:42,666 - 01:08:44,246] it always means your physics is wrong.
+- [01:08:44,426 - 01:08:44,866] Yeah.
+- [01:08:45,086 - 01:08:45,566] Yeah.
+- [01:08:48,206 - 01:08:51,546] I know at least one example where
+- [01:08:51,546 - 01:08:54,886] it means something can travel with infinite velocity.
+- [01:08:55,506 - 01:08:57,145] All kinds of things can go wrong.
+- [01:08:57,366 - 01:08:59,095] But I think it's a good idea
+- [01:08:59,095 - 01:09:00,826] to take an example or two which,
+- [01:09:00,826 - 01:09:03,546] where you cannot invert the relationship between velocity
+- [01:09:03,546 - 01:09:06,265] and momentum and see exactly what goes wrong.
+- [01:09:06,506 - 01:09:07,126] And I will do that.
+- [01:09:07,206 - 01:09:07,486] I will do that for you.
+- [01:09:08,526 - 01:09:09,946] Send me an email message,
+- [01:09:09,946 - 01:09:10,506] we can do it.
+- [01:09:10,725 - 01:09:11,946] A strange question.
+- [01:09:13,305 - 01:09:16,636] Why is it ok to have an infinite
+- [01:09:16,636 - 01:09:19,966] number of degrees of freedom in quantum mechanics when
+- [01:09:19,966 - 01:09:23,426] we're frightened of many degrees of freedom in friction?
+- [01:09:27,546 - 01:09:28,826] It's not...
+- [01:09:30,386 - 01:09:31,026] Well,
+- [01:09:31,026 - 01:09:32,765] first of all we can have infinite
+- [01:09:32,765 - 01:09:34,506] number of degrees of freedom in classical mechanics.
+- [01:09:35,765 - 01:09:37,765] Infinite doesn't have to do with the
+- [01:09:37,765 - 01:09:39,765] difference between quantum mechanics and classical mechanics.
+- [01:09:40,126 - 01:09:42,566] A field has an infinite number of degrees of freedom.
+- [01:09:43,866 - 01:09:45,805] Are we frightened of it?
+- [01:09:45,805 - 01:09:48,466] It can get pretty frightening.
+- [01:09:51,765 - 01:09:54,086] Having a field can lead to friction,
+- [01:09:54,086 - 01:09:54,646] for example.
+- [01:09:55,506 - 01:09:59,346] An electron accelerating radiates.
+- [01:09:59,346 - 01:10:00,206] It radiates photons.
+- [01:10:00,206 - 01:10:02,176] The radiation of those photons tend
+- [01:10:02,176 - 01:10:04,146] to act like a kind of friction.
+- [01:10:05,426 - 01:10:07,106] And it can get very,
+- [01:10:07,106 - 01:10:09,926] very complicated to follow the motion of an electron,
+- [01:10:09,926 - 01:10:12,266] including radiation reactions and so forth.
+- [01:10:14,066 - 01:10:15,586] Why are we afraid?
+- [01:10:15,586 - 01:10:18,086] We're not afraid of the many degrees of freedom.
+- [01:10:18,086 - 01:10:19,866] We just have to remember that they're there.
+- [01:10:22,406 - 01:10:26,156] I think you're asking me why it's so terribly difficult
+- [01:10:26,156 - 01:10:29,906] to derive the laws of friction from the laws of mechanics.
+- [01:10:30,466 - 01:10:31,026] Well,
+- [01:10:31,026 - 01:10:31,666] that is hard.
+- [01:10:31,666 - 01:10:33,346] But it's also hard to
+- [01:10:33,346 - 01:10:35,026] derive the laws of radiation reaction.
+- [01:10:37,586 - 01:10:40,226] It is hard to derive the laws of friction.
+- [01:10:44,546 - 01:10:46,586] But that's not for tonight,
+- [01:10:46,586 - 01:10:47,246] in any case.
+- [01:10:49,506 - 01:10:50,346] For tonight,
+- [01:10:50,346 - 01:10:54,166] we want to discuss energy conservation,
+- [01:10:54,166 - 01:10:55,266] among other things.
+- [01:10:56,086 - 01:10:58,806] We've already discussed energy conservation several times.
+- [01:10:59,266 - 01:11:00,186] But it's interesting.
+- [01:11:00,206 - 01:11:02,166] It's interesting to see how these equations,
+- [01:11:02,166 - 01:11:04,986] from the present perspective,
+- [01:11:04,986 - 01:11:08,806] these now become the equations of mechanics.
+- [01:11:09,326 - 01:11:11,506] This is a new formulation of mechanics
+- [01:11:11,506 - 01:11:13,686] based on H of P and Q.
+- [01:11:14,406 - 01:11:16,446] Given an H of P and Q,
+- [01:11:16,446 - 01:11:20,966] you now have a phase space.
+- [01:11:21,346 - 01:11:23,306] You have a motion through the phase space.
+- [01:11:23,966 - 01:11:27,646] You can imagine dots in the phase space.
+- [01:11:27,646 - 01:11:32,656] A fluid of points in the phase space moving each point
+- [01:11:32,656 - 01:11:37,666] with a velocity that depends on its position according to these equations.
+- [01:11:37,946 - 01:11:39,586] And so it's a flow of a fluid.
+- [01:11:39,806 - 01:11:43,146] And it's simply a new way of formulating mechanics.
+- [01:11:43,506 - 01:11:45,566] Let's forget about all the old ways.
+- [01:11:46,586 - 01:11:47,106] Oh,
+- [01:11:47,106 - 01:11:48,676] I said I would work that
+- [01:11:48,676 - 01:11:50,246] out for you for the ordinary particle.
+- [01:11:50,366 - 01:11:51,306] Let's do that first.
+- [01:11:52,146 - 01:11:53,046] Ordinary particle,
+- [01:11:53,046 - 01:11:53,426] again,
+- [01:11:53,426 - 01:11:54,826] one half m d squared.
+- [01:11:58,066 - 01:11:59,666] Minus u of x.
+- [01:11:59,846 - 01:12:01,026] That's the Lagrangian.
+- [01:12:02,586 - 01:12:04,746] One half m x dot squared.
+- [01:12:05,346 - 01:12:07,426] Now I've replaced Q by x.
+- [01:12:10,086 - 01:12:11,266] We've done this before.
+- [01:12:11,986 - 01:12:14,306] I just want to check these equations.
+- [01:12:15,686 - 01:12:17,006] So what is the hand of comedy?
+- [01:12:17,166 - 01:12:17,906] We've done that before.
+- [01:12:18,206 - 01:12:20,596] Everybody remember that it's p squared
+- [01:12:20,596 - 01:12:22,986] over 2m plus u of x?
+- [01:12:26,346 - 01:12:28,516] p squared over 2m plus
+- [01:12:28,516 - 01:12:30,686] u of x is the Hamiltonian.
+- [01:12:30,986 - 01:12:33,046] Let's just check Hamilton's equations.
+- [01:12:33,806 - 01:12:35,386] The h by dp,
+- [01:12:35,386 - 01:12:40,646] differentiate that.
+- [01:12:40,705 - 01:12:41,646] That's p over m.
+- [01:12:45,985 - 01:12:46,926] That's what it is.
+- [01:12:47,026 - 01:12:49,386] Is p over m equal to Q dot?
+- [01:12:50,046 - 01:12:51,066] Or in other words,
+- [01:12:51,066 - 01:12:52,066] is it equal to x dot?
+- [01:12:53,406 - 01:12:53,985] Yes,
+- [01:12:53,985 - 01:12:54,445] it is.
+- [01:12:54,485 - 01:12:55,725] m x dot is equal to p.
+- [01:12:56,186 - 01:12:58,046] So the first of Hamilton's equations,
+- [01:12:58,566 - 01:13:01,245] the h by dp is equal to Q dot.
+- [01:13:01,906 - 01:13:04,026] That's nothing but the definition
+- [01:13:04,026 - 01:13:06,146] of momentum in terms of velocity.
+- [01:13:07,406 - 01:13:08,986] And what about the other equation?
+- [01:13:09,736 - 01:13:13,261] The h by dx minus the
+- [01:13:13,261 - 01:13:16,786] h by dx should equal p dot.
+- [01:13:18,326 - 01:13:19,686] The h by dx,
+- [01:13:19,686 - 01:13:21,926] that's just the u by dx.
+- [01:13:23,326 - 01:13:24,866] Minus the u by dx.
+- [01:13:27,186 - 01:13:28,666] That's equal to p dot.
+- [01:13:29,526 - 01:13:30,246] Well,
+- [01:13:30,246 - 01:13:31,346] that's just Newton's equations.
+- [01:13:33,206 - 01:13:36,326] Mass times acceleration is equal to force.
+- [01:13:37,246 - 01:13:38,746] So the second equation,
+- [01:13:38,746 - 01:13:42,626] typically the way it works,
+- [01:13:42,746 - 01:13:46,406] is the first equation is
+- [01:13:46,406 - 01:13:50,066] the relationship between velocity and momentum.
+- [01:13:50,786 - 01:13:51,506] Okay.
+- [01:13:52,126 - 01:13:53,776] It's just p over m equals
+- [01:13:53,776 - 01:13:55,426] x dot in the sequence here.
+- [01:13:55,786 - 01:13:57,676] It's the second equation which really
+- [01:13:57,676 - 01:13:59,566] looks more like f equals m a.
+- [01:14:00,486 - 01:14:02,026] This is mass times acceleration.
+- [01:14:02,786 - 01:14:03,786] And this is force.
+- [01:14:07,086 - 01:14:07,566] Okay.
+- [01:14:07,626 - 01:14:08,506] So it does work.
+- [01:14:08,566 - 01:14:09,266] It is correct.
+- [01:14:09,426 - 01:14:10,006] It is true.
+- [01:14:11,706 - 01:14:15,066] And it is equivalent to all the other formulations.
+- [01:14:15,906 - 01:14:17,106] ありがとうございました。
+- [01:14:18,274 - 01:14:20,174] we could work out some more complicated examples,
+- [01:14:20,334 - 01:14:21,054] and maybe we will.
+- [01:14:22,178 - 01:14:22,398] ありがとうございました
+- [01:14:23,714 - 01:14:25,114] first let's concentrate on,
+- [01:14:25,114 - 01:14:25,994] in this new form,
+- [01:14:25,994 - 01:14:27,934] let's concentrate on energy conservation.
+- [01:14:28,674 - 01:14:30,253] Let's see if we can
+- [01:14:30,253 - 01:14:31,833] prove directly that energy is conserved.
+- [01:14:33,414 - 01:14:35,734] Let's calculate the H dt.
+- [01:14:40,093 - 01:14:42,634] Time derivative of the Hamiltonian.
+- [01:14:45,094 - 01:14:46,874] If the Hamiltonian is energy,
+- [01:14:46,874 - 01:14:47,714] which it is,
+- [01:14:47,714 - 01:14:49,734] then it should be conserved.
+- [01:14:49,894 - 01:14:51,254] Its time derivative should be zero.
+- [01:14:52,014 - 01:14:53,174] Let's calculate it.
+- [01:14:53,174 - 01:15:01,884] It's equal to the derivative of H with respect to P times P
+- [01:15:01,884 - 01:15:10,594] dot plus the derivative of H with respect to Q times Q dot.
+- [01:15:14,954 - 01:15:16,114] Sum number I.
+- [01:15:17,954 - 01:15:20,404] The change in H when you change P times P
+- [01:15:20,404 - 01:15:22,854] dot plus the change in H when you change Q.
+- [01:15:24,554 - 01:15:27,294] That's the change in the Hamiltonian per unit time.
+- [01:15:27,874 - 01:15:29,854] But now let's use Hamilton's equations
+- [01:15:29,854 - 01:15:31,834] for P dot and Q dot.
+- [01:15:32,774 - 01:15:33,774] What is P dot?
+- [01:15:33,874 - 01:15:34,514] P dot,
+- [01:15:34,514 - 01:15:37,594] this is equal to the sum I,
+- [01:15:37,594 - 01:15:40,274] the H by the P sub I.
+- [01:15:42,654 - 01:15:43,374] That's this.
+- [01:15:43,794 - 01:15:45,214] But what is P sub I dot?
+- [01:15:45,454 - 01:15:46,254] Can somebody read it to me?
+- [01:15:46,334 - 01:15:47,874] It's just a sign that I don't remember.
+- [01:15:48,554 - 01:15:49,214] That's minus.
+- [01:15:49,434 - 01:15:52,994] So minus the H by the Q.
+- [01:15:53,174 - 01:15:53,314] Right?
+- [01:15:55,314 - 01:15:56,434] And how about this one?
+- [01:15:56,494 - 01:15:58,974] This is plus the H by the Q.
+- [01:16:04,774 - 01:16:06,354] The H by the P sub I.
+- [01:16:09,374 - 01:16:10,214] And they cancel.
+- [01:16:11,674 - 01:16:13,454] That's what the minus sign is doing there.
+- [01:16:16,634 - 01:16:18,394] Is that equation if and only if,
+- [01:16:18,394 - 01:16:19,994] so if we have the conservation of energy,
+- [01:16:19,994 - 01:16:20,834] we get balance equations?
+- [01:16:26,933 - 01:16:30,083] I think it's possible to imagine equations which have a
+- [01:16:30,083 - 01:16:33,234] conservation of energy which are not of the Hamilton form.
+- [01:16:35,534 - 01:16:37,434] If you have Hamilton's equations,
+- [01:16:37,434 - 01:16:41,314] with a time independent Hamiltonian,
+- [01:16:41,314 - 01:16:42,674] I've assumed the time,
+- [01:16:42,674 - 01:16:44,254] I've assumed there's no explicit
+- [01:16:44,254 - 01:16:45,834] dependence on the Hamiltonian time.
+- [01:16:47,974 - 01:16:49,754] Then you do get energy conservation.
+- [01:16:50,394 - 01:16:51,334] The other way,
+- [01:16:51,334 - 01:16:51,914] no.
+- [01:16:52,014 - 01:16:52,874] I think you can.
+- [01:16:53,174 - 01:16:53,294] No,
+- [01:16:53,294 - 01:16:54,984] you can certainly have
+- [01:16:54,984 - 01:16:56,674] equations which have conservation laws,
+- [01:16:56,674 - 01:16:57,934] conservation of an energy,
+- [01:16:57,934 - 01:17:00,474] without them being of Hamilton's form.
+- [01:17:00,574 - 01:17:01,694] So it's not if and only if.
+- [01:17:11,754 - 01:17:12,414] All right,
+- [01:17:12,414 - 01:17:14,004] so we see that these
+- [01:17:14,004 - 01:17:15,594] two terms simply cancel each other.
+- [01:17:18,954 - 01:17:22,534] And energy conservation is a very,
+- [01:17:22,534 - 01:17:23,154] very simple equation.
+- [01:17:23,174 - 01:17:25,374] It's a very simple consequence of Hamilton's equations.
+- [01:17:26,734 - 01:17:27,714] It's kind of interesting.
+- [01:17:29,794 - 01:17:32,134] What this says is that if you
+- [01:17:32,134 - 01:17:34,474] take a point and you follow it.
+- [01:17:35,054 - 01:17:35,654] Now,
+- [01:17:35,654 - 01:17:36,114] from now on,
+- [01:17:36,114 - 01:17:38,784] I want you to think about this phase space as
+- [01:17:38,784 - 01:17:41,454] a collection of points that you can follow in time.
+- [01:17:42,774 - 01:17:44,794] As you follow them in time,
+- [01:17:44,794 - 01:17:48,754] you stay on a contour of constant energy.
+- [01:17:49,634 - 01:17:50,974] Imagine the space space.
+- [01:17:51,434 - 01:17:53,154] And imagine it being filled with energy.
+- [01:17:53,174 - 01:17:54,934] Filled with contours of energy.
+- [01:17:55,134 - 01:17:55,814] In other words,
+- [01:17:55,814 - 01:17:57,774] surfaces on which the energy is constant.
+- [01:18:01,414 - 01:18:04,214] It's simply filled up with surfaces
+- [01:18:04,214 - 01:18:07,014] on which the energy is constant.
+- [01:18:10,694 - 01:18:12,074] The phase point,
+- [01:18:12,074 - 01:18:14,344] meaning a point in this
+- [01:18:14,344 - 01:18:16,614] phase space as you follow it,
+- [01:18:16,614 - 01:18:20,314] stays on the same surface of constant energy.
+- [01:18:20,314 - 01:18:21,914] That's just energy conservation.
+- [01:18:22,454 - 01:18:24,094] And the fluid flows.
+- [01:18:24,814 - 01:18:27,674] The fluid defined by the phase space dust.
+- [01:18:27,974 - 01:18:30,014] Think of a dust in phase space.
+- [01:18:30,254 - 01:18:32,034] Flows along these lines,
+- [01:18:32,034 - 01:18:35,494] which are lines of constant energy.
+- [01:18:36,014 - 01:18:37,594] The lines of constant energy,
+- [01:18:37,594 - 01:18:38,354] in general,
+- [01:18:38,354 - 01:18:39,034] could be closed.
+- [01:18:39,154 - 01:18:40,814] They don't have to look like this.
+- [01:18:40,854 - 01:18:41,854] They could be closed curves.
+- [01:18:46,214 - 01:18:47,174] For example,
+- [01:18:47,174 - 01:18:49,954] we studied a case last time called the harmonic oscillator.
+- [01:18:49,954 - 01:18:52,324] In which h was proportional
+- [01:18:52,324 - 01:18:54,694] to p squared plus x squared.
+- [01:18:58,433 - 01:19:00,374] Let's forget the constants.
+- [01:19:01,254 - 01:19:02,414] Forgetting the constants,
+- [01:19:02,414 - 01:19:04,454] it was essentially p squared plus x squared.
+- [01:19:05,154 - 01:19:06,414] So in that case,
+- [01:19:06,414 - 01:19:08,434] the contours of constant energy
+- [01:19:08,434 - 01:19:10,454] were just circles around the origin.
+- [01:19:12,414 - 01:19:16,434] The contours could be open or off to infinity.
+- [01:19:16,694 - 01:19:18,254] They could be closed curves.
+- [01:19:18,754 - 01:19:19,934] They could even be closed curves.
+- [01:19:19,954 - 01:19:20,994] So the velocity of dot.
+- [01:19:21,994 - 01:19:24,954] That corresponds to a motion which doesn't go anywhere.
+- [01:19:25,074 - 01:19:25,954] It just sits there.
+- [01:19:26,554 - 01:19:27,594] For example,
+- [01:19:27,594 - 01:19:28,514] the harmonic oscillator,
+- [01:19:28,514 - 01:19:32,034] which is at the origin with no velocity.
+- [01:19:32,254 - 01:19:33,834] It simply sits there.
+- [01:19:33,914 - 01:19:34,474] It doesn't move.
+- [01:19:35,744 - 01:19:37,314] That's a kind of degenerate circle.
+- [01:19:39,374 - 01:19:40,494] Right at the origin.
+- [01:19:40,814 - 01:19:43,874] So the phase point moves on these surfaces.
+- [01:19:44,354 - 01:19:49,074] This is very much like the discrete situation.
+- [01:19:49,314 - 01:19:49,934] But it's not.
+- [01:19:49,954 - 01:19:57,734] Where you have different closed pieces of the phase space.
+- [01:19:58,494 - 01:20:00,594] And that defines a conservation law.
+- [01:20:00,934 - 01:20:05,014] Which one of the cycles you are.
+- [01:20:05,334 - 01:20:05,814] Well,
+- [01:20:05,814 - 01:20:08,874] in phase space it's very similar.
+- [01:20:09,074 - 01:20:12,374] Every point is on some contour of constant energy.
+- [01:20:12,594 - 01:20:14,394] And you move along those contours.
+- [01:20:14,594 - 01:20:14,774] Yeah?
+- [01:20:15,054 - 01:20:16,914] The density of points is constant.
+- [01:20:17,434 - 01:20:18,994] We're going to talk about that.
+- [01:20:19,134 - 01:20:19,214] Yeah.
+- [01:20:19,854 - 01:20:22,174] Because if the density of points is constant,
+- [01:20:22,174 - 01:20:23,874] how do you get these diverging lines?
+- [01:20:25,094 - 01:20:25,614] Oh.
+- [01:20:25,894 - 01:20:26,414] Well,
+- [01:20:26,414 - 01:20:27,274] that's easy actually.
+- [01:20:27,794 - 01:20:29,704] We haven't discussed the fact yet
+- [01:20:29,704 - 01:20:31,614] that the density of points is constant.
+- [01:20:33,554 - 01:20:36,274] But let me answer your question.
+- [01:20:37,294 - 01:20:38,234] So let's...
+- [01:20:44,834 - 01:20:48,134] Let's imagine lines that look like this.
+- [01:20:57,494 - 01:20:59,824] So the fluid comes in
+- [01:20:59,824 - 01:21:02,154] and goes through a narrow channel.
+- [01:21:04,694 - 01:21:07,014] What happens when fluid goes through a narrow channel?
+- [01:21:07,214 - 01:21:07,634] Suspension.
+- [01:21:08,234 - 01:21:08,794] It moves faster.
+- [01:21:09,974 - 01:21:13,574] It moves faster just so that the density doesn't change.
+- [01:21:13,934 - 01:21:16,614] A big lump of fluid comes in
+- [01:21:16,614 - 01:21:19,294] and it doesn't want to change its volume.
+- [01:21:19,434 - 01:21:22,394] So it has to squeeze between these lines faster.
+- [01:21:22,774 - 01:21:25,084] The lesson is where the
+- [01:21:25,084 - 01:21:27,394] lines clump up and get close.
+- [01:21:27,594 - 01:21:28,934] Where the contours get close.
+- [01:21:29,274 - 01:21:31,074] The fluid is moving fast.
+- [01:21:33,634 - 01:21:35,614] That's in fact what Maxwell's...
+- [01:21:35,614 - 01:21:37,734] What Hamilton's equations say.
+- [01:21:38,933 - 01:21:41,374] When the contours are close together...
+- [01:21:41,374 - 01:21:43,234] Think about a contour map.
+- [01:21:43,594 - 01:21:45,594] What does it mean in a contour
+- [01:21:45,594 - 01:21:47,594] map that the contours are very close?
+- [01:21:47,754 - 01:21:48,194] Steep.
+- [01:21:48,434 - 01:21:49,374] It's steep.
+- [01:21:49,874 - 01:21:53,034] It means the altitude is changing very fast.
+- [01:21:53,774 - 01:21:56,434] What does it mean on the contours of
+- [01:21:56,434 - 01:21:59,094] constant energy that the contours are very close together?
+- [01:21:59,954 - 01:22:03,694] It means that H is changing rapidly with respect to
+- [01:22:03,694 - 01:22:07,434] either P or Q or some combination of P and Q.
+- [01:22:07,434 - 01:22:12,644] So where the lines clump up is where the H by P and
+- [01:22:12,644 - 01:22:17,854] the H by Q is large and it's where the fluid is moving fast.
+- [01:22:20,034 - 01:22:21,834] So the lines can diverge alright.
+- [01:22:22,174 - 01:22:24,734] It's just that the places where they diverge like that,
+- [01:22:24,734 - 01:22:26,214] the fluid slows down.
+- [01:22:28,254 - 01:22:31,194] And we're going to study that behavior a little bit.
+- [01:22:33,494 - 01:22:34,054] Question.
+- [01:22:34,494 - 01:22:35,954] You have closed curves and
+- [01:22:35,954 - 01:22:37,414] open ones at the same time.
+- [01:22:38,234 - 01:22:38,874] What's that?
+- [01:22:39,014 - 01:22:41,194] You have closed curves together with open ones.
+- [01:22:41,234 - 01:22:41,534] Absolutely.
+- [01:22:41,534 - 01:22:42,594] Let me give you an example.
+- [01:22:43,414 - 01:22:44,374] The pendulum.
+- [01:22:46,614 - 01:22:48,374] In the pendulum...
+- [01:22:59,434 - 01:23:02,094] Small oscillations at the bottom are closed curves.
+- [01:23:04,574 - 01:23:06,734] The system just goes back and forth,
+- [01:23:06,734 - 01:23:07,393] back and forth,
+- [01:23:07,393 - 01:23:12,294] just cycles over the same defined closed curves.
+- [01:23:13,314 - 01:23:17,134] When it swings over the top like this,
+- [01:23:17,134 - 01:23:19,014] they sort of correspond to open curves.
+- [01:23:19,694 - 01:23:20,034] Well,
+- [01:23:20,034 - 01:23:21,194] let me give you...
+- [01:23:21,194 - 01:23:22,494] Let's sit it there.
+- [01:23:22,634 - 01:23:23,714] Forget the pendulum.
+- [01:23:25,034 - 01:23:27,914] Take a particle that's moving
+- [01:23:27,914 - 01:23:30,794] on a washboard potential like that.
+- [01:23:31,354 - 01:23:31,994] Okay.
+- [01:23:32,094 - 01:23:33,614] Potential which is just a sine wave.
+- [01:23:34,654 - 01:23:35,134] Alright.
+- [01:23:35,514 - 01:23:37,554] If you start down near the bottom here and
+- [01:23:37,554 - 01:23:39,594] you give the particle a little bit of energy,
+- [01:23:39,754 - 01:23:41,814] all it does is oscillate back and forth.
+- [01:23:42,154 - 01:23:43,954] So it looks like a harmonic oscillator.
+- [01:23:44,794 - 01:23:45,534] In fact,
+- [01:23:45,534 - 01:23:47,384] it is a harmonic oscillator
+- [01:23:47,384 - 01:23:49,234] plus a little bit of extra.
+- [01:23:50,634 - 01:23:51,114] Alright.
+- [01:23:51,114 - 01:23:52,844] So it just oscillates back and
+- [01:23:52,844 - 01:23:54,574] forth and the contours are closed curves.
+- [01:23:55,134 - 01:23:56,394] So for small energy,
+- [01:23:56,394 - 01:23:57,614] the contours are closed curves.
+- [01:23:58,034 - 01:23:59,864] Give it a big energy and it just
+- [01:23:59,864 - 01:24:01,694] goes whistling off over the top of the washboard.
+- [01:24:02,494 - 01:24:04,444] If it has enough energy to
+- [01:24:04,444 - 01:24:06,394] climb over the top and keep going,
+- [01:24:06,394 - 01:24:09,194] then the curves are open.
+- [01:24:09,654 - 01:24:11,814] The system doesn't come back to itself.
+- [01:24:11,894 - 01:24:13,634] It just keeps going off forever and ever.
+- [01:24:14,374 - 01:24:15,094] So yes,
+- [01:24:15,094 - 01:24:17,074] you can certainly have both closed and
+- [01:24:17,074 - 01:24:19,054] open curves in the same phase space.
+- [01:24:22,114 - 01:24:23,794] It would be interesting to try to...
+- [01:24:23,794 - 01:24:24,534] I'm not going to do it,
+- [01:24:24,534 - 01:24:28,104] but it would be interesting to try to plot what the
+- [01:24:28,104 - 01:24:31,674] contours of constant energy look like here on the phase space.
+- [01:24:31,814 - 01:24:32,074] Alright.
+- [01:24:34,274 - 01:24:35,354] Any other questions?
+- [01:24:41,174 - 01:24:43,014] Is there anything you want me to go back over?
+- [01:24:46,734 - 01:24:47,334] Yes.
+- [01:24:48,814 - 01:24:49,854] In general,
+- [01:24:49,854 - 01:24:58,394] is PI always a constant marketable of QI prime?
+- [01:24:58,814 - 01:24:59,594] Say it again.
+- [01:24:59,754 - 01:25:00,194] QI dot.
+- [01:25:02,094 - 01:25:03,334] Say it again extremely clearly.
+- [01:25:04,314 - 01:25:05,314] In general,
+- [01:25:05,314 - 01:25:06,494] in generalized coordinates.
+- [01:25:06,934 - 01:25:08,374] In generalized coordinates.
+- [01:25:08,694 - 01:25:08,854] Yeah.
+- [01:25:08,854 - 01:25:12,574] Is PI always a constant marketable of QI dot?
+- [01:25:12,814 - 01:25:13,034] No.
+- [01:25:14,534 - 01:25:15,534] Definitely not.
+- [01:25:16,974 - 01:25:18,234] It can...
+- [01:25:18,234 - 01:25:18,554] No,
+- [01:25:18,554 - 01:25:19,154] no,
+- [01:25:19,154 - 01:25:19,494] no,
+- [01:25:19,494 - 01:25:19,914] no,
+- [01:25:19,914 - 01:25:20,574] not at all.
+- [01:25:21,214 - 01:25:21,854] No.
+- [01:25:21,974 - 01:25:23,274] It's just...
+- [01:25:24,094 - 01:25:26,294] We can invent all sorts of Hamiltonians.
+- [01:25:26,414 - 01:25:28,294] Here's a Hamiltonian.
+- [01:25:28,354 - 01:25:29,494] H is equal...
+- [01:25:29,494 - 01:25:31,074] Instead of P squared plus Q squared,
+- [01:25:31,814 - 01:25:34,634] let's take P cubed plus...
+- [01:25:37,814 - 01:25:40,474] X cubed instead of P squared plus X squared.
+- [01:25:41,234 - 01:25:43,194] This doesn't correspond to any system
+- [01:25:43,194 - 01:25:45,154] that I know about in nature,
+- [01:25:45,274 - 01:25:46,834] but there's nothing wrong with it from
+- [01:25:46,834 - 01:25:48,394] the point of view of the Hamiltonian.
+- [01:25:49,034 - 01:25:49,554] Now,
+- [01:25:49,554 - 01:25:50,554] what are the equations?
+- [01:25:50,714 - 01:25:53,824] The equations are that derivative of H with
+- [01:25:53,824 - 01:25:56,934] respect to P is equal to X dot,
+- [01:25:56,934 - 01:26:00,954] and that's 3P squared is equal to X dot.
+- [01:26:02,434 - 01:26:02,874] Well,
+- [01:26:02,874 - 01:26:05,364] that does not say that the relation between P and X
+- [01:26:05,364 - 01:26:07,854] dot is that P is a constant multiple of X dot.
+- [01:26:08,554 - 01:26:09,574] So the answer is no,
+- [01:26:09,574 - 01:26:10,134] not in general.
+- [01:26:11,694 - 01:26:12,134] Other...
+- [01:26:12,134 - 01:26:13,634] This is sort of unusual,
+- [01:26:13,914 - 01:26:15,994] but you could have an X here.
+- [01:26:16,114 - 01:26:17,234] That would be less unusual.
+- [01:26:17,914 - 01:26:18,354] No,
+- [01:26:18,354 - 01:26:18,574] sorry,
+- [01:26:18,574 - 01:26:19,594] X times P squared.
+- [01:26:20,154 - 01:26:23,694] Also X times P occurs in Hamiltonians.
+- [01:26:24,134 - 01:26:25,574] But X times P squared.
+- [01:26:26,934 - 01:26:29,334] So you would have the H
+- [01:26:29,334 - 01:26:31,734] by dP is X times P.
+- [01:26:32,074 - 01:26:34,974] And you would have P and X,
+- [01:26:36,094 - 01:26:39,034] the relationship between them having an extra factor of X.
+- [01:26:39,154 - 01:26:39,394] So no.
+- [01:26:40,114 - 01:26:40,714] No.
+- [01:26:41,514 - 01:26:44,494] There's no reason for such a simple relationship.
+- [01:26:45,414 - 01:26:46,014] Yeah?
+- [01:26:46,254 - 01:26:48,514] It sounds like we're describing sort
+- [01:26:48,514 - 01:26:50,774] of a perpetual motion of sorts.
+- [01:26:51,354 - 01:26:51,954] Really?
+- [01:26:52,734 - 01:26:53,334] No.
+- [01:26:53,914 - 01:26:54,514] Yeah.
+- [01:26:57,934 - 01:26:59,074] Motion is perpetual.
+- [01:27:00,134 - 01:27:01,894] That's why energy is concerned.
+- [01:27:02,694 - 01:27:04,334] But I'm not sure what you're getting at.
+- [01:27:04,554 - 01:27:04,774] No,
+- [01:27:04,774 - 01:27:09,554] it's the idea that when you factor in friction,
+- [01:27:09,774 - 01:27:12,754] that you're actually transferring the
+- [01:27:12,754 - 01:27:15,734] energy into another part of the...
+- [01:27:15,734 - 01:27:15,914] Yeah,
+- [01:27:15,914 - 01:27:16,174] okay.
+- [01:27:18,074 - 01:27:21,064] Before we can address the real meaning of perpetual motion
+- [01:27:21,064 - 01:27:24,054] and the pros and cons of it and so forth,
+- [01:27:24,234 - 01:27:26,914] we have to understand something about thermal motion.
+- [01:27:26,914 - 01:27:29,004] And we have to understand the
+- [01:27:29,004 - 01:27:31,094] difference between usable and non-usable energy
+- [01:27:31,094 - 01:27:33,494] and entropy and all that sort of stuff.
+- [01:27:33,974 - 01:27:39,024] So we're now at a more basic level
+- [01:27:39,024 - 01:27:44,074] studying the individual degrees of freedom of a system.
+- [01:27:45,534 - 01:27:46,094] Microscope,
+- [01:27:46,094 - 01:27:46,634] for example,
+- [01:27:46,634 - 01:27:48,464] if it's this table with all the
+- [01:27:48,464 - 01:27:50,294] molecules moving around in it and so forth,
+- [01:27:50,334 - 01:27:51,154] with the air in the room,
+- [01:27:51,354 - 01:27:53,244] these are the equations that
+- [01:27:53,244 - 01:27:55,134] really do govern the entire system.
+- [01:27:58,953 - 01:28:01,554] In various kinds of approximations,
+- [01:28:01,554 - 01:28:03,904] you divide energy into usable energy
+- [01:28:03,904 - 01:28:06,254] or available energy and unavailable energy.
+- [01:28:07,234 - 01:28:09,194] Heat is unavailable energy,
+- [01:28:09,194 - 01:28:10,494] but that's got to do
+- [01:28:10,494 - 01:28:11,794] with the second law of thermodynamics,
+- [01:28:11,794 - 01:28:13,134] which we haven't got to yet.
+- [01:28:13,254 - 01:28:14,394] I hope to get to it.
+- [01:28:14,474 - 01:28:15,124] It would be nice to
+- [01:28:15,124 - 01:28:15,774] be able to get to it.
+- [01:28:16,054 - 01:28:17,994] It's deeply connected with these equations,
+- [01:28:17,994 - 01:28:19,564] and it's deeply connected with the
+- [01:28:19,564 - 01:28:21,134] structure of motion and phase space.
+- [01:28:21,414 - 01:28:22,454] But we're not there yet.
+- [01:28:22,674 - 01:28:22,974] Okay.
+- [01:28:25,554 - 01:28:28,254] Before we understand thermodynamics,
+- [01:28:28,254 - 01:28:29,454] we have to understand chaos.
+- [01:28:30,014 - 01:28:33,794] And we are not ready to do that tonight.
+- [01:28:34,854 - 01:28:36,134] Hopefully we'll get to it.
+- [01:28:37,134 - 01:28:37,774] Maybe.
+- [01:28:39,614 - 01:28:40,254] Okay.
+- [01:28:40,374 - 01:28:45,854] So let's discuss other conservation laws.
+- [01:28:47,014 - 01:28:49,374] Energy is a conservation law that
+- [01:28:49,374 - 01:28:51,734] follows just from Hamilton's equations here.
+- [01:28:51,754 - 01:28:53,154] There are other conservation laws,
+- [01:28:53,214 - 01:28:55,114] but let's look at the general form of conservation.
+- [01:29:11,394 - 01:29:14,344] We know from the Lagrangian point of view
+- [01:29:14,344 - 01:29:17,294] that conservation laws have to do with symmetries.
+- [01:29:17,594 - 01:29:19,334] I'm going to suppress that now.
+- [01:29:20,514 - 01:29:21,374] Later on,
+- [01:29:21,374 - 01:29:23,244] we'll come back to it and
+- [01:29:23,244 - 01:29:25,114] discuss symmetries from the Hamiltonian equations.
+- [01:29:25,114 - 01:29:28,304] But now let's not worry about
+- [01:29:28,304 - 01:29:31,494] why there might be a conservation law.
+- [01:29:31,634 - 01:29:33,024] Just let's see what it
+- [01:29:33,024 - 01:29:34,414] means to have a conservation law.
+- [01:29:35,514 - 01:29:37,474] What the necessary and sufficient
+- [01:29:37,474 - 01:29:39,434] conditions for a conservation law are.
+- [01:29:42,794 - 01:29:47,694] Let's ask whether the quantity A is conserved or not.
+- [01:29:47,914 - 01:29:48,474] What is A?
+- [01:29:49,014 - 01:29:54,894] A is a function of the phase space.
+- [01:29:55,694 - 01:29:57,614] Wherever you are in the phase space,
+- [01:29:57,614 - 01:29:59,154] A has some value.
+- [01:30:00,154 - 01:30:02,674] It's a function of the p's and the q's.
+- [01:30:02,834 - 01:30:05,994] Or equivalently a function of position and velocity.
+- [01:30:06,534 - 01:30:07,834] Let me give you an example.
+- [01:30:08,514 - 01:30:11,244] We worked out a number of times ago that
+- [01:30:11,244 - 01:30:13,974] the angular momentum of a particle moving in a plane
+- [01:30:15,034 - 01:30:20,774] is given by x times py minus y times px.
+- [01:30:21,794 - 01:30:24,374] It's a function of the p's and the q's.
+- [01:30:26,634 - 01:30:27,754] In general,
+- [01:30:27,754 - 01:30:30,364] all quantities that we might be interested
+- [01:30:30,364 - 01:30:32,974] in are functions of positions and momentum.
+- [01:30:33,474 - 01:30:35,794] If we know the position and momentum of something,
+- [01:30:35,794 - 01:30:36,914] we know everything about it.
+- [01:30:36,974 - 01:30:37,774] So in particular,
+- [01:30:37,774 - 01:30:40,754] we know the value of its various quantities.
+- [01:30:41,414 - 01:30:44,064] Let's ask whether A of
+- [01:30:44,064 - 01:30:46,714] p and q might be conserved.
+- [01:30:46,754 - 01:30:47,914] Might it be conserved?
+- [01:30:48,114 - 01:30:49,334] Under what conditions?
+- [01:30:49,514 - 01:30:51,394] What mathematical conditions?
+- [01:30:52,054 - 01:30:53,204] Now I want to express
+- [01:30:53,204 - 01:30:54,354] those conditions in some other way.
+- [01:30:54,374 - 01:30:55,434] In terms of Hamilton's equations.
+- [01:30:57,574 - 01:30:58,894] That's going to introduce for
+- [01:30:58,894 - 01:31:00,214] us a new set of quantities.
+- [01:31:02,154 - 01:31:03,614] Called Poisson brackets.
+- [01:31:04,214 - 01:31:05,054] Fish brackets.
+- [01:31:05,974 - 01:31:07,534] For those who don't speak French.
+- [01:31:07,894 - 01:31:08,234] Okay.
+- [01:31:08,234 - 01:31:14,074] This is easy.
+- [01:31:14,694 - 01:31:16,904] All we want to know is whether the
+- [01:31:16,904 - 01:31:19,114] time derivative of A is zero or not.
+- [01:31:19,914 - 01:31:20,674] In fact,
+- [01:31:20,674 - 01:31:23,134] let's just calculate the time derivative of A.
+- [01:31:24,654 - 01:31:26,094] dA by dt.
+- [01:31:29,034 - 01:31:29,874] Let's just do it.
+- [01:31:29,934 - 01:31:31,293] Bruce Borse will calculate it.
+- [01:31:31,734 - 01:31:40,504] It's the derivative of A with respect to p sub i times p sub i dot
+- [01:31:40,504 - 01:31:49,274] plus the derivative of A with respect to q sub i times q sub i dot.
+- [01:31:50,074 - 01:31:51,774] I'm going to write the summation sign.
+- [01:31:54,094 - 01:31:55,934] Explicitly now for a little while.
+- [01:31:57,154 - 01:31:58,094] Summation over i.
+- [01:32:02,534 - 01:32:04,684] But now let's substitute in for p
+- [01:32:04,684 - 01:32:06,834] sub i dot and q sub i dot.
+- [01:32:07,334 - 01:32:11,094] Their value in terms of Hamiltonian.
+- [01:32:11,974 - 01:32:12,494] So,
+- [01:32:12,494 - 01:32:13,874] this is sum over i.
+- [01:32:15,394 - 01:32:18,654] Derivative of A with respect to p sub i.
+- [01:32:19,074 - 01:32:20,274] What's p sub i dot?
+- [01:32:21,194 - 01:32:21,714] Again,
+- [01:32:21,714 - 01:32:22,274] the sign.
+- [01:32:22,454 - 01:32:23,454] I can never remember the sign.
+- [01:32:24,934 - 01:32:25,814] It's minus,
+- [01:32:25,814 - 01:32:26,094] right?
+- [01:32:28,354 - 01:32:31,354] Minus dH by dq sub i.
+- [01:32:35,134 - 01:32:37,834] So we have dA by dp
+- [01:32:37,834 - 01:32:40,534] sub i dH by dq sub i.
+- [01:32:41,574 - 01:32:42,634] Now what's this one?
+- [01:32:43,014 - 01:32:46,834] Plus dA by dq sub i.
+- [01:32:49,054 - 01:32:50,034] And q dot.
+- [01:32:52,054 - 01:32:53,214] That's dH by dp,
+- [01:32:53,214 - 01:32:53,554] right?
+- [01:33:02,554 - 01:33:03,074] Well,
+- [01:33:03,074 - 01:33:03,434] look at that.
+- [01:33:03,454 - 01:33:04,194] That's kind of interesting.
+- [01:33:04,694 - 01:33:08,174] We find out that the time derivative of any
+- [01:33:08,174 - 01:33:11,654] quantity is given by the sum of two terms.
+- [01:33:12,474 - 01:33:13,834] Let me start with this one.
+- [01:33:15,394 - 01:33:18,814] dA by dq dH by dp.
+- [01:33:19,454 - 01:33:20,014] And q.
+- [01:33:20,034 - 01:33:22,014] So if you know what A is,
+- [01:33:22,194 - 01:33:24,514] and you also know what the Hamiltonian is,
+- [01:33:24,694 - 01:33:26,234] you can compute these things.
+- [01:33:26,634 - 01:33:29,094] dA by dq dH by dp
+- [01:33:29,094 - 01:33:31,554] minus dA by dp dH by dq.
+- [01:33:32,634 - 01:33:35,394] A very symmetric looking construction,
+- [01:33:35,754 - 01:33:37,274] a very symmetric looking expression,
+- [01:33:37,954 - 01:33:39,194] mathematical expression,
+- [01:33:39,574 - 01:33:42,314] that tells you what the time derivative of A is.
+- [01:33:44,753 - 01:33:46,854] This mathematical construction,
+- [01:33:46,854 - 01:33:48,214] let's generalize it.
+- [01:33:48,214 - 01:33:51,394] Take any two functions of P and Q.
+- [01:33:51,554 - 01:33:53,404] A of P and Q
+- [01:33:53,404 - 01:33:55,254] and B of P and Q.
+- [01:33:55,414 - 01:33:56,234] Any two.
+- [01:33:58,754 - 01:34:01,234] How do you get these diverging lines?
+- [01:34:03,214 - 01:34:06,194] Then you define something called the Poisson bracket.
+- [01:34:08,714 - 01:34:10,674] That's the symbol for the Poisson bracket.
+- [01:34:11,514 - 01:34:14,174] You take A and B,
+- [01:34:14,274 - 01:34:16,074] put them inside the bracket,
+- [01:34:16,074 - 01:34:17,834] and put a comma between them.
+- [01:34:18,054 - 01:34:20,954] That's the symbol for the Poisson bracket.
+- [01:34:21,094 - 01:34:22,234] Its definition is
+- [01:34:23,614 - 01:34:26,444] sum over I of all the
+- [01:34:26,444 - 01:34:29,274] coordinates of dA by dq dI
+- [01:34:33,534 - 01:34:35,534] dB by dq dI
+- [01:34:40,034 - 01:34:43,514] minus dA by dP dI
+- [01:34:46,134 - 01:34:47,954] b by bq sub i.
+- [01:34:52,034 - 01:34:53,794] You can see the symmetry of it.
+- [01:34:54,454 - 01:34:56,054] It's composed of two terms,
+- [01:34:56,614 - 01:34:58,894] one in which a gets differentiated with q,
+- [01:34:59,054 - 01:35:01,614] one in which b gets differentiated with p,
+- [01:35:01,614 - 01:35:02,514] and vice versa.
+- [01:35:03,674 - 01:35:05,794] That's called the Poisson bracket of a and b.
+- [01:35:08,154 - 01:35:10,454] We will see that another formulation
+- [01:35:10,454 - 01:35:12,394] of classical mechanics
+- [01:35:12,394 - 01:35:16,174] is to write everything in terms of these Poisson brackets.
+- [01:35:17,114 - 01:35:17,894] But here we are,
+- [01:35:17,894 - 01:35:18,874] let's rewrite.
+- [01:35:19,614 - 01:35:21,634] This tells us that any quantity,
+- [01:35:21,774 - 01:35:23,814] the time derivative of any quantity,
+- [01:35:24,494 - 01:35:25,954] any quantity at all,
+- [01:35:26,174 - 01:35:27,794] whether it's conserved or not,
+- [01:35:28,154 - 01:35:29,194] in fact,
+- [01:35:29,194 - 01:35:31,234] what I'm talking about now is not conservation,
+- [01:35:31,514 - 01:35:33,654] but the time derivative of any quantity,
+- [01:35:34,234 - 01:35:37,874] and that's equal to the Poisson bracket
+- [01:35:38,334 - 01:35:40,474] of a with the Hamiltonian.
+- [01:35:44,974 - 01:35:47,474] The Poisson bracket of any quantity
+- [01:35:47,474 - 01:35:49,634] with the Hamiltonian is its time derivative.
+- [01:35:50,174 - 01:35:52,514] That's another formulation of mechanics,
+- [01:35:53,294 - 01:35:55,334] closely related to Hamilton's.
+- [01:35:58,494 - 01:36:01,294] But if you're interested in whatever it happens to be,
+- [01:36:01,884 - 01:36:03,429] if you can express it
+- [01:36:03,429 - 01:36:04,974] in terms of positions and momenta,
+- [01:36:04,994 - 01:36:08,134] then its time derivative is given by the Poisson bracket
+- [01:36:08,134 - 01:36:10,294] with the Hamiltonian.
+- [01:36:10,554 - 01:36:12,374] The Hamiltonian is a special equation,
+- [01:36:12,374 - 01:36:12,374] but it's not a time derivative.
+- [01:36:12,374 - 01:36:15,354] It's a special object which generates velocities,
+- [01:36:15,634 - 01:36:19,454] generates time derivatives by taking Poisson brackets.
+- [01:36:20,574 - 01:36:21,734] So as I said,
+- [01:36:21,734 - 01:36:22,514] this is another,
+- [01:36:22,714 - 01:36:24,834] yet another formulation of quantum mechanics,
+- [01:36:25,214 - 01:36:25,634] sorry,
+- [01:36:25,634 - 01:36:26,694] classical mechanics,
+- [01:36:26,854 - 01:36:32,234] where the motion of any quantity is expressed
+- [01:36:32,234 - 01:36:35,074] in terms of Poisson bracket perspective,
+- [01:36:36,014 - 01:36:37,334] the Hamiltonian.
+- [01:36:38,394 - 01:36:39,394] Let's just check it.
+- [01:36:40,434 - 01:36:41,734] Let's do one or two examples.
+- [01:36:49,954 - 01:36:51,034] If you like,
+- [01:36:51,034 - 01:36:53,114] this is a generalization
+- [01:36:53,994 - 01:36:55,614] of Hamilton's equations.
+- [01:36:55,734 - 01:36:57,714] It includes Hamilton's equations.
+- [01:36:58,294 - 01:36:58,934] For example,
+- [01:36:58,934 - 01:37:01,354] let's check q dot.
+- [01:37:02,774 - 01:37:04,684] q dot must be the
+- [01:37:04,684 - 01:37:06,594] Poisson bracket of q with h,
+- [01:37:07,694 - 01:37:09,094] according to those equations.
+- [01:37:09,654 - 01:37:10,874] Let's see what that says.
+- [01:37:10,874 - 01:37:15,854] That says one variable now,
+- [01:37:15,854 - 01:37:16,774] one p and one q.
+- [01:37:17,054 - 01:37:19,214] That says dq by dq,
+- [01:37:19,214 - 01:37:22,494] dh by dp,
+- [01:37:22,494 - 01:37:27,974] minus dq by dp,
+- [01:37:27,974 - 01:37:30,434] dh by dq.
+- [01:37:32,634 - 01:37:34,854] I've now just substituted for a,
+- [01:37:34,854 - 01:37:36,614] just good old q.
+- [01:37:37,294 - 01:37:40,314] q dot is the Poisson bracket of q with h.
+- [01:37:40,514 - 01:37:40,854] That's q dot.
+- [01:37:40,874 - 01:37:42,114] The Poisson bracket of q
+- [01:37:42,114 - 01:37:43,354] with h is dq by dq.
+- [01:37:43,494 - 01:37:43,774] What's that?
+- [01:37:44,254 - 01:37:44,734] One.
+- [01:37:44,954 - 01:37:45,434] One.
+- [01:37:46,354 - 01:37:46,974] All right,
+- [01:37:46,974 - 01:37:47,794] so this is just one.
+- [01:37:48,734 - 01:37:49,894] What's dq by dp?
+- [01:37:50,954 - 01:37:51,434] Zero.
+- [01:37:51,494 - 01:37:51,554] Zero.
+- [01:37:52,714 - 01:37:54,494] q and p are independent variables.
+- [01:37:54,654 - 01:37:55,354] This goes away.
+- [01:37:55,734 - 01:37:57,124] And this just says that
+- [01:37:57,124 - 01:37:58,514] q dot is dh by dp.
+- [01:37:59,334 - 01:37:59,814] No,
+- [01:37:59,814 - 01:38:00,754] that's Hamilton's equations.
+- [01:38:01,454 - 01:38:02,554] What about p dot?
+- [01:38:03,074 - 01:38:08,614] P dot is the Poisson bracket of p with h.
+- [01:38:12,754 - 01:38:14,774] That's dp by dq,
+- [01:38:14,774 - 01:38:19,994] dh by dp,
+- [01:38:19,994 - 01:38:24,114] minus dp by dp,
+- [01:38:24,114 - 01:38:26,934] dh by dq.
+- [01:38:31,194 - 01:38:32,534] What's dp by dq?
+- [01:38:33,094 - 01:38:33,694] Zero.
+- [01:38:33,954 - 01:38:34,554] Zero?
+- [01:38:35,434 - 01:38:36,934] And dp by dp?
+- [01:38:37,314 - 01:38:37,914] One.
+- [01:38:38,374 - 01:38:40,554] I think I just erased the minus sign.
+- [01:38:40,634 - 01:38:40,854] It's not going to work.
+- [01:38:40,854 - 01:38:41,874] One.
+- [01:38:42,034 - 01:38:42,314] One.
+- [01:38:43,454 - 01:38:45,434] So that's the other of Hamilton's equations.
+- [01:38:45,934 - 01:38:49,014] So the two Hamilton equations are special cases
+- [01:38:49,014 - 01:38:52,094] of a much more general rule that the
+- [01:38:52,094 - 01:38:54,644] time derivative of anything is the Poisson
+- [01:38:54,644 - 01:38:57,194] bracket of the anything with the Hamiltonian.
+- [01:38:58,754 - 01:39:02,694] This gives a new view of Hamiltonians as
+- [01:39:02,694 - 01:39:06,634] generating time dependence by the action of Poisson brackets.
+- [01:39:07,974 - 01:39:10,514] The action of taking the Poisson bracket,
+- [01:39:10,514 - 01:39:10,834] that's the Poisson bracket.
+- [01:39:10,854 - 01:39:14,014] The Hamiltonian tells you how systems change with time.
+- [01:39:14,814 - 01:39:18,674] That's yet another representation of classical mechanics.
+- [01:39:21,814 - 01:39:23,794] I think that's probably...
+- [01:39:24,754 - 01:39:26,874] Let's stop the questions and not
+- [01:39:26,874 - 01:39:28,994] go any further at this point.
+- [01:39:29,114 - 01:39:31,194] Is a carbon tax a conservation law?
+- [01:39:31,454 - 01:39:32,074] What's that?
+- [01:39:32,334 - 01:39:34,574] Is a carbon tax a conservation law?
+- [01:39:35,894 - 01:39:36,534] Yeah.
+- [01:39:37,954 - 01:39:38,594] Oh.
+- [01:39:38,594 - 01:39:38,774] Well,
+- [01:39:38,774 - 01:39:41,554] since I started talking about conservation laws,
+- [01:39:41,554 - 01:39:44,234] now we see that it's a necessary and
+- [01:39:44,234 - 01:39:47,174] sufficient condition to have a conservation law
+- [01:39:47,174 - 01:39:50,114] that the quantity in question have zero
+- [01:39:50,114 - 01:39:52,894] Poisson bracket with the Hamiltonian.
+- [01:39:53,594 - 01:39:54,154] Now,
+- [01:39:54,154 - 01:39:57,114] that may seem like an incredibly abstract view of things,
+- [01:39:57,114 - 01:39:57,874] and it is,
+- [01:39:57,874 - 01:39:59,874] but it's also a
+- [01:39:59,874 - 01:40:02,534] very powerful and very general formulation.
+- [01:40:03,254 - 01:40:05,594] If you want to know whether something's conserved,
+- [01:40:05,594 - 01:40:08,574] you Poisson bracket it,
+- [01:40:08,574 - 01:40:08,574] and you can't do anything
+- [01:40:08,574 - 01:40:08,694] I mentioned the Poisson needed,
+- [01:40:08,694 - 01:40:10,074] or the Hamiltonian.
+- [01:40:10,194 - 01:40:11,234] And if it's zero,
+- [01:40:11,234 - 01:40:12,874] then it's conserved.
+- [01:40:13,294 - 01:40:14,434] If it's not zero,
+- [01:40:14,434 - 01:40:17,554] then whatever it is gives you the time derivative.
+- [01:40:22,074 - 01:40:24,874] Try it out for angular momentum for example.
+- [01:40:25,534 - 01:40:27,554] Try to take just the preparation,
+- [01:40:27,554 - 01:40:29,914] and see if the angular momentum is conserved by taking
+- [01:40:29,914 - 01:40:32,294] the Poisson bracket with p squared over 2m,
+- [01:40:32,294 - 01:40:32,894] and so forth.
+- [01:40:34,034 - 01:40:36,224] Let's just take some questions
+- [01:40:36,224 - 01:40:38,414] now and stop for the B.
+- [01:40:38,434 - 01:40:38,554] Okay.
+- [01:40:38,554 - 01:40:42,114] I think we've probably done enough for tonight.
+- [01:40:43,494 - 01:40:45,254] This is very abstract,
+- [01:40:45,254 - 01:40:47,654] but it is very powerful.
+- [01:40:48,074 - 01:40:52,354] Powerful means that apart from the fact
+- [01:40:52,354 - 01:40:53,514] that you can use it to calculate,
+- [01:40:53,514 - 01:40:54,274] which you can,
+- [01:40:55,014 - 01:40:55,694] or .
+- [01:40:55,694 - 01:40:57,974] We haven't discussed the fact yet,
+- [01:40:58,014 - 01:40:59,894] but it depends on your points as a concept.
+- [01:40:59,994 - 01:41:02,494] Not only the structure of classical mechanics,
+- [01:41:02,734 - 01:41:06,234] but quantum mechanics reoccurs and reoccurs and reoccurs
+- [01:41:06,234 - 01:41:06,974] all over the place.
+- [01:41:08,714 - 01:41:09,214] Yeah?
+- [01:41:09,694 - 01:41:11,474] How did Pisan come up with that?
+- [01:41:11,714 - 01:41:12,114] What's that?
+- [01:41:13,094 - 01:41:15,174] How did Pisan come up with that?
+- [01:41:19,434 - 01:41:20,854] I really don't know.
+- [01:41:22,574 - 01:41:23,944] I wouldn't be surprised if
+- [01:41:23,944 - 01:41:25,314] he came up with it exactly
+- [01:41:25,314 - 01:41:25,914] this way,
+- [01:41:25,914 - 01:41:29,394] by calculating small changes in things.
+- [01:41:30,894 - 01:41:32,204] My guess is he came
+- [01:41:32,204 - 01:41:33,514] up with it exactly this way.
+- [01:41:33,774 - 01:41:34,054] Yeah.
+- [01:41:34,334 - 01:41:35,934] What did he do by this practice?
+- [01:41:35,934 - 01:41:38,274] By when did he find the bracket?
+- [01:41:38,414 - 01:41:39,814] Because the chain rule is there.
+- [01:41:40,734 - 01:41:41,214] Well,
+- [01:41:41,214 - 01:41:42,454] he just found this structure
+- [01:41:42,454 - 01:41:43,974] recurring in many contexts.
+- [01:41:44,294 - 01:41:44,534] I mean,
+- [01:41:44,534 - 01:41:45,994] that's when the,
+- [01:41:45,994 - 01:41:48,934] now we're
+- [01:41:48,934 - 01:41:50,894] going to study more general plus-sum brackets,
+- [01:41:51,134 - 01:41:52,534] not just with the Hamiltonian,
+- [01:41:52,534 - 01:41:53,694] but between any pairs
+- [01:41:53,694 - 01:41:54,154] of things.
+- [01:41:57,570 - 01:41:57,770] さっきの
+- [01:42:00,034 - 01:42:00,774] mathematicians,
+- [01:42:00,774 - 01:42:01,914] good mathematicians,
+- [01:42:03,213 - 01:42:04,594] and theoretical physicists,
+- [01:42:04,594 - 01:42:06,534] are people who tend to see patterns.
+- [01:42:06,974 - 01:42:08,624] They see the same thing a
+- [01:42:08,624 - 01:42:10,274] couple of times and they say,
+- [01:42:10,374 - 01:42:10,454] ah,
+- [01:42:10,454 - 01:42:11,054] a pattern,
+- [01:42:11,054 - 01:42:11,894] I see a pattern.
+- [01:42:12,334 - 01:42:14,564] And you saw the same pattern occurring
+- [01:42:14,564 - 01:42:16,794] in a couple of places and you said,
+- [01:42:16,794 - 01:42:17,034] ah,
+- [01:42:17,034 - 01:42:19,594] I'm going to call it a key practice.
+- [01:42:20,914 - 01:42:22,294] What are some other examples
+- [01:42:22,294 - 01:42:23,674] where B and it's not H?
+- [01:42:35,533 - 01:42:38,334] I don't think we ever really got back to that.
+- [01:42:39,194 - 01:42:39,674] Oh,
+- [01:42:39,674 - 01:42:40,014] wait,
+- [01:42:40,014 - 01:42:42,114] you're talking about the non-conservation of energy?
+- [01:42:42,354 - 01:42:42,554] Right.
+- [01:42:42,554 - 01:42:42,834] Yeah,
+- [01:42:42,834 - 01:42:43,114] good.
+- [01:42:47,753 - 01:42:51,993] I would assume that both the Lagrangian and
+- [01:42:51,993 - 01:42:56,234] the Hamiltonian do not explicitly depend on time.
+- [01:42:56,634 - 01:42:58,854] Now if I explicitly depend on time,
+- [01:42:59,474 - 01:43:00,014] in the case of the Lagrangian,
+- [01:43:00,014 - 01:43:03,824] it means that there's some time dependence above and beyond the fact that the
+- [01:43:03,824 - 01:43:07,634] Q's and the P's or the Q's and the Q dots depend on time.
+- [01:43:09,314 - 01:43:11,074] Let's go and ask what happens
+- [01:43:17,033 - 01:43:20,154] if the Hamiltonian really does depend on time.
+- [01:43:20,394 - 01:43:21,434] How can that happen?
+- [01:43:21,734 - 01:43:22,154] Well,
+- [01:43:22,154 - 01:43:23,374] it's dumping in energy,
+- [01:43:23,374 - 01:43:23,734] right?
+- [01:43:23,734 - 01:43:24,734] Yeah.
+- [01:43:28,054 - 01:43:29,994] Let's suppose there's a big lump of energy,
+- [01:43:29,994 - 01:43:30,774] a freaking lump of matter over here.
+- [01:43:31,454 - 01:43:33,074] Our system is over here.
+- [01:43:34,714 - 01:43:36,374] We're not going to include this as
+- [01:43:36,374 - 01:43:38,034] part of the mathematics of our system,
+- [01:43:38,534 - 01:43:40,074] but it exerts forces on here.
+- [01:43:41,954 - 01:43:43,174] And it's moving.
+- [01:43:44,014 - 01:43:47,554] It moves from here to here in a certain way.
+- [01:43:50,874 - 01:43:52,244] That will mean the forces on
+- [01:43:52,244 - 01:43:53,614] this system will depend on time.
+- [01:43:54,294 - 01:43:55,034] In fact,
+- [01:43:55,034 - 01:43:56,454] there will be a term in the energy.
+- [01:43:56,694 - 01:43:57,994] Let's just pick a single particle.
+- [01:43:59,194 - 01:43:59,584] There'll be a term in
+- [01:43:59,584 - 01:43:59,974] the energy that becomes the force.
+- [01:43:59,974 - 01:44:01,334] the energy of this particle,
+- [01:44:01,554 - 01:44:03,394] u of its position,
+- [01:44:04,214 - 01:44:07,034] which also depends on the position of this big lump.
+- [01:44:08,054 - 01:44:10,733] But the position of the big lump depends on time.
+- [01:44:11,054 - 01:44:13,054] So that means the potential energy
+- [01:44:13,534 - 01:44:14,674] depends on x
+- [01:44:15,414 - 01:44:17,334] and also explicitly time.
+- [01:44:18,354 - 01:44:20,084] It means it depends on time
+- [01:44:20,084 - 01:44:21,814] even if the particle doesn't move.
+- [01:44:22,514 - 01:44:24,584] It certainly depends on time just
+- [01:44:24,584 - 01:44:26,654] because x may depend on time,
+- [01:44:26,654 - 01:44:29,774] but that's an implicit dependence on time.
+- [01:44:30,484 - 01:44:32,774] There's also an explicit dependence on time
+- [01:44:33,484 - 01:44:36,639] corresponding to the fact that the source
+- [01:44:36,639 - 01:44:39,794] of the force happens to be moving.
+- [01:44:42,964 - 01:44:48,394] If the Hamiltonian depends explicitly on time,
+- [01:44:57,134 - 01:44:59,834] it's calculating the time derivative of the energy itself.
+- [01:45:09,114 - 01:45:10,364] This was our equation that
+- [01:45:10,364 - 01:45:11,614] we had a few minutes ago,
+- [01:45:11,814 - 01:45:13,074] and these two things cancelled
+- [01:45:13,834 - 01:45:15,324] because p dot and q
+- [01:45:15,324 - 01:45:16,814] dot are also derivatives of h.
+- [01:45:18,094 - 01:45:19,694] But there's just another term.
+- [01:45:19,914 - 01:45:21,794] If h also depends on t,
+- [01:45:22,594 - 01:45:24,544] then we have to write that the time
+- [01:45:24,544 - 01:45:26,494] derivative of h is the h by dp,
+- [01:45:26,514 - 01:45:26,634] which is the time derivative of h,
+- [01:45:26,634 - 01:45:28,284] times p dot plus the h
+- [01:45:28,284 - 01:45:29,934] by dq times q dot plus...
+- [01:45:31,330 - 01:45:32,190] エクストラセイト
+- [01:45:33,154 - 01:45:35,614] derivative of H with respect to T.
+- [01:45:36,494 - 01:45:37,474] In other words,
+- [01:45:37,474 - 01:45:39,154] the change in the Hamiltonian,
+- [01:45:39,254 - 01:45:41,914] even if P and Q are standing still,
+- [01:45:42,074 - 01:45:44,614] if P dot and Q dot are equal to zero.
+- [01:45:45,694 - 01:45:48,014] That's what happens if the potential energy,
+- [01:45:48,014 - 01:45:48,694] for example,
+- [01:45:48,694 - 01:45:50,414] depends explicitly on time.
+- [01:45:51,473 - 01:45:53,303] Then this would of course be
+- [01:45:53,303 - 01:45:55,134] just the U by the T.
+- [01:45:55,314 - 01:45:56,074] That's what it would be.
+- [01:46:00,134 - 01:46:00,954] All right,
+- [01:46:00,954 - 01:46:01,974] so in that case,
+- [01:46:01,974 - 01:46:03,954] even though these two terms
+- [01:46:03,954 - 01:46:06,154] completely cancel each other by virtue
+- [01:46:06,154 - 01:46:06,954] of Hamilton's equations,
+- [01:46:06,954 - 01:46:09,374] there's another term left over.
+- [01:46:09,834 - 01:46:12,954] Just the explicit derivative of H with respect to T.
+- [01:46:13,014 - 01:46:14,334] And that's in general not zero.
+- [01:46:15,174 - 01:46:17,114] It won't be zero if the Hamiltonian,
+- [01:46:17,194 - 01:46:18,854] it says what it says,
+- [01:46:18,854 - 01:46:19,694] if the Hamiltonian
+- [01:46:19,694 - 01:46:21,174] explicitly depends on time,
+- [01:46:21,174 - 01:46:23,014] then that will appear
+- [01:46:23,614 - 01:46:25,374] in the equation for the time derivative
+- [01:46:25,374 - 01:46:26,054] of the total energy.
+- [01:46:28,273 - 01:46:29,974] So that's as simple as that.
+- [01:46:30,074 - 01:46:32,534] We can do some examples.
+- [01:46:32,654 - 01:46:33,514] It's getting a little bit late.
+- [01:46:33,574 - 01:46:34,574] I don't want to do an example now,
+- [01:46:34,574 - 01:46:35,694] but let's come back to it.
+- [01:46:36,154 - 01:46:39,874] An example of a time-dependent Hamiltonian.
+- [01:46:41,054 - 01:46:43,834] Just a little definition in the Poisson bracket.
+- [01:46:46,193 - 01:46:47,593] Is there a convention in
+- [01:46:47,593 - 01:46:48,994] terms of which order there is?
+- [01:46:49,094 - 01:46:50,494] Because there's a minus between the two.
+- [01:46:50,654 - 01:46:52,954] I hope my convention is the same as Poisson's.
+- [01:46:56,194 - 01:46:57,434] And I'm not sure it is.
+- [01:47:01,554 - 01:47:02,054] Let's see,
+- [01:47:02,054 - 01:47:03,214] I always define it this way.
+- [01:47:07,034 - 01:47:12,834] A comma B is the A by BQ,
+- [01:47:12,834 - 01:47:15,494] the B by BP,
+- [01:47:17,354 - 01:47:19,114] minus the A by BP,
+- [01:47:19,114 - 01:47:21,974] the B by BQ.
+- [01:47:22,074 - 01:47:22,474] And you know,
+- [01:47:22,474 - 01:47:23,714] I don't think I've ever looked that up.
+- [01:47:23,794 - 01:47:25,114] But my question was,
+- [01:47:25,114 - 01:47:25,814] since you said this,
+- [01:47:25,814 - 01:47:26,234] that's general,
+- [01:47:26,234 - 01:47:30,394] not just Q's and P's being these variables.
+- [01:47:31,234 - 01:47:33,874] Is it A of Q comma
+- [01:47:33,874 - 01:47:36,514] B or A of P comma Q?
+- [01:47:37,874 - 01:47:39,774] As just a mathematical definition.
+- [01:47:40,414 - 01:47:41,674] A just looks like a machine.
+- [01:47:41,674 - 01:47:42,054] E or Q,
+- [01:47:42,054 - 01:47:43,073] which is the first variable,
+- [01:47:43,094 - 01:47:43,974] which is the first variable,
+- [01:47:43,974 - 01:47:44,754] which is the second?
+- [01:47:46,674 - 01:47:49,114] He said this was just an abstract definition.
+- [01:47:49,534 - 01:47:50,514] You see what I'm saying?
+- [01:47:51,354 - 01:47:52,634] I don't think that means anything.
+- [01:47:53,274 - 01:47:54,894] You can write it either way.
+- [01:47:54,974 - 01:47:55,334] I mean.
+- [01:47:56,794 - 01:47:57,974] You make a convention.
+- [01:47:58,194 - 01:47:58,794] Let's make a convention.
+- [01:47:58,994 - 01:47:59,994] Isn't one minus the other?
+- [01:48:00,314 - 01:48:00,714] Hm?
+- [01:48:03,514 - 01:48:04,854] Could it be the A,
+- [01:48:04,854 - 01:48:05,134] B,
+- [01:48:05,134 - 01:48:05,934] B,
+- [01:48:05,934 - 01:48:06,734] the B,
+- [01:48:06,734 - 01:48:06,954] BQ?
+- [01:48:11,634 - 01:48:13,554] We could define it by the A by BP,
+- [01:48:13,554 - 01:48:14,514] the B by BQ,
+- [01:48:14,574 - 01:48:15,434] minus the other one.
+- [01:48:15,534 - 01:48:16,554] But this is the way it's defined.
+- [01:48:20,134 - 01:48:21,574] That's not my question.
+- [01:48:22,474 - 01:48:25,594] Since you said you have a function A of P,
+- [01:48:25,594 - 01:48:26,114] you can't just say A of P and Q.
+- [01:48:26,394 - 01:48:28,734] Does that mean that Q is the second variable?
+- [01:48:29,054 - 01:48:30,864] When you say A of Q is
+- [01:48:30,864 - 01:48:32,674] the same as A of Q and B.
+- [01:48:35,654 - 01:48:38,894] Are you taking the derivative of A with respect
+- [01:48:38,894 - 01:48:41,434] to the first variable or to the second variable
+- [01:48:41,874 - 01:48:44,354] in your capital letter?
+- [01:48:46,434 - 01:48:48,054] Which one is first and which one is second?
+- [01:48:48,734 - 01:48:49,534] You choose.
+- [01:48:49,974 - 01:48:50,254] No,
+- [01:48:50,254 - 01:48:50,374] no,
+- [01:48:50,374 - 01:48:50,494] no,
+- [01:48:50,494 - 01:48:50,614] no,
+- [01:48:50,614 - 01:48:50,674] no.
+- [01:48:50,754 - 01:48:51,934] There's no first and second.
+- [01:48:52,074 - 01:48:52,934] There's P's and Q's.
+- [01:48:53,014 - 01:48:53,254] That's all.
+- [01:48:54,694 - 01:48:55,134] Normally,
+- [01:48:55,134 - 01:48:55,574] you'll get the first and second.
+- [01:48:55,594 - 01:48:57,834] But you put Q position first before momentum.
+- [01:48:58,234 - 01:48:59,054] It doesn't make any difference.
+- [01:48:59,054 - 01:48:59,754] It doesn't make any difference.
+- [01:49:00,354 - 01:49:00,454] Well,
+- [01:49:00,454 - 01:49:00,734] remember,
+- [01:49:00,734 - 01:49:01,334] they're different.
+- [01:49:02,354 - 01:49:05,274] You're just going to end up with one variation
+- [01:49:06,314 - 01:49:09,654] of the Poisson bracket and then minus of the other.
+- [01:49:09,734 - 01:49:10,034] Right.
+- [01:49:10,034 - 01:49:11,174] You just want to know what the convention is.
+- [01:49:11,174 - 01:49:16,094] If I write that the Hamiltonian
+- [01:49:16,094 - 01:49:21,014] is P squared over 2m plus 1
+- [01:49:21,014 - 01:49:25,554] over x plus gx.
+- [01:49:25,594 - 01:49:28,894] And then you get m over x.
+- [01:49:31,594 - 01:49:33,414] Will you please tell me which is the first one
+- [01:49:33,414 - 01:49:34,234] and which is the second one?
+- [01:49:35,634 - 01:49:36,574] It's just two variables.
+- [01:49:37,434 - 01:49:39,254] But it will reverse the sign.
+- [01:49:39,354 - 01:49:41,054] You'll get a reversal of the sign.
+- [01:49:42,234 - 01:49:42,634] No,
+- [01:49:42,634 - 01:49:42,734] no,
+- [01:49:42,734 - 01:49:42,914] no,
+- [01:49:42,914 - 01:49:43,394] no,
+- [01:49:43,394 - 01:49:43,594] no,
+- [01:49:43,594 - 01:49:44,134] no,
+- [01:49:44,134 - 01:49:44,514] no,
+- [01:49:44,514 - 01:49:44,754] no,
+- [01:49:44,754 - 01:49:45,454] no,
+- [01:49:45,454 - 01:49:46,314] no,
+- [01:49:46,314 - 01:49:46,374] no,
+- [01:49:46,374 - 01:49:46,394] no,
+- [01:49:46,394 - 01:49:46,514] no.
+- [01:49:48,094 - 01:49:50,494] I'm never going to tell you
+- [01:49:50,494 - 01:49:52,894] whether x is the first variable.
+- [01:49:53,014 - 01:49:54,774] I don't want to differentiate something.
+- [01:49:54,894 - 01:49:55,574] It's a domino effect.
+- [01:49:55,594 - 01:49:56,854] Please don't force me.
+- [01:49:57,474 - 01:49:59,574] I understand what you mean.
+- [01:49:59,694 - 01:50:00,854] I understand what you mean,
+- [01:50:00,854 - 01:50:01,914] momentum and position,
+- [01:50:02,174 - 01:50:03,614] that there's only one way of saying it.
+- [01:50:04,214 - 01:50:05,314] That's not my question.
+- [01:50:05,494 - 01:50:06,754] You said as an abstract math,
+- [01:50:06,754 - 01:50:09,334] you said that this Poisson bracket
+- [01:50:09,334 - 01:50:10,834] is going to come up in all kinds of places.
+- [01:50:11,114 - 01:50:13,434] So maybe that's not momentum and position,
+- [01:50:13,654 - 01:50:15,874] in which case it doesn't matter which is which variable.
+- [01:50:16,054 - 01:50:17,884] And I was wondering if there
+- [01:50:17,884 - 01:50:19,714] was a definition of that convention.
+- [01:50:23,494 - 01:50:24,994] As to the sign of mu,
+- [01:50:24,994 - 01:50:25,834] I don't think you have to go into detail.
+- [01:50:26,274 - 01:50:29,114] This particular structure doesn't come up anywhere
+- [01:50:29,114 - 01:50:31,354] that I know of except in mechanics.
+- [01:50:33,034 - 01:50:37,134] But some people seem to be under the impression
+- [01:50:37,954 - 01:50:40,464] that it's important to describe
+- [01:50:40,464 - 01:50:42,974] whether x is the first variable
+- [01:50:42,974 - 01:50:44,054] or the second variable.
+- [01:50:44,414 - 01:50:45,074] It's not.
+- [01:50:45,194 - 01:50:46,314] It's just the x variable.
+- [01:50:47,194 - 01:50:48,634] And p is the p variable.
+- [01:50:49,794 - 01:50:52,034] When I calculate the h by the p,
+- [01:50:52,594 - 01:50:54,834] I don't have to ask whether p comes first,
+- [01:50:54,994 - 01:50:55,834] and x second,
+- [01:50:55,834 - 01:50:57,654] and so forth.
+- [01:51:00,653 - 01:51:01,133] Now,
+- [01:51:01,133 - 01:51:03,454] you could have defined the Poisson bracket
+- [01:51:03,454 - 01:51:04,414] in the opposite way.
+- [01:51:04,834 - 01:51:05,594] In fact,
+- [01:51:05,594 - 01:51:07,554] you could have defined the Hamiltonian
+- [01:51:07,554 - 01:51:08,474] with the opposite sign.
+- [01:51:09,174 - 01:51:11,294] All kinds of things we could have done differently.
+- [01:51:11,414 - 01:51:12,494] We made some conventions.
+- [01:51:14,094 - 01:51:15,714] This is one of the conventions.
+- [01:51:19,253 - 01:51:21,234] I don't know what else to say about it.
+- [01:51:26,334 - 01:51:27,694] Let me answer your question.
+- [01:51:28,794 - 01:51:29,674] So that's...
+- [01:51:35,314 - 01:51:36,134] You're not satisfied.
+- [01:51:39,074 - 01:51:40,714] The only question I had was,
+- [01:51:41,194 - 01:51:43,794] you didn't know what p was,
+- [01:51:43,934 - 01:51:44,914] you didn't know what q was,
+- [01:51:44,954 - 01:51:45,674] it wasn't momentum,
+- [01:51:45,854 - 01:51:46,634] it wasn't position.
+- [01:51:47,034 - 01:51:48,214] In which case,
+- [01:51:48,334 - 01:51:50,274] there is a difference of a minus sign.
+- [01:51:51,274 - 01:51:53,454] And the only reason I ask that is you said
+- [01:51:53,454 - 01:51:54,974] Poisson brackets come up all over.
+- [01:51:54,994 - 01:51:56,614] You didn't know that it was always
+- [01:51:56,614 - 01:51:59,054] in the nature of position and momentum.
+- [01:51:59,374 - 01:51:59,854] Yeah,
+- [01:51:59,854 - 01:52:01,114] I don't know any other place
+- [01:52:01,114 - 01:52:02,334] where Poisson brackets come up,
+- [01:52:02,914 - 01:52:04,554] except for positions and momentum.
+- [01:52:05,294 - 01:52:07,934] What I did say comes up all over the place
+- [01:52:07,934 - 01:52:09,314] is Legendre transformations.
+- [01:52:12,154 - 01:52:14,114] Legendre transformations do have this habit
+- [01:52:14,114 - 01:52:15,354] of coming up all over the place.
+- [01:52:15,894 - 01:52:17,734] The equations for Legendre transformations
+- [01:52:17,734 - 01:52:19,774] don't have a funny minus sign in them.
+- [01:52:20,194 - 01:52:23,974] They read the L by the v
+- [01:52:23,974 - 01:52:24,934] and the h by the v is equal to p.
+- [01:52:25,763 - 01:52:28,594] The h by the v is equal to p.
+- [01:52:30,494 - 01:52:32,214] So in that particular case,
+- [01:52:32,394 - 01:52:33,494] there is no...
+- [01:52:40,214 - 01:52:42,754] The preceding program is copyrighted
+- [01:52:42,754 - 01:52:43,734] by Stanford University.
+- [01:52:44,174 - 01:52:46,874] Please visit us at stanford.edu.
