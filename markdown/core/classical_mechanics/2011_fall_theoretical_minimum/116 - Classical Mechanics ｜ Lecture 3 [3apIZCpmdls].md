@@ -1,0 +1,3052 @@
+# Transcript
+
+Source: core/classical_mechanics/2011_fall_theoretical_minimum/116 - Classical Mechanics ｜ Lecture 3 [3apIZCpmdls].webm
+
+- [00:00:05,159 - 00:00:06,200] Stanford University.
+- [00:00:07,780 - 00:00:08,420] All right,
+- [00:00:08,420 - 00:00:10,520] let's begin if there are no other questions.
+- [00:00:11,240 - 00:00:11,900] All right.
+- [00:00:12,440 - 00:00:14,390] What we're going to talk about
+- [00:00:14,390 - 00:00:16,340] tonight is the principle of least action.
+- [00:00:16,800 - 00:00:17,320] Now,
+- [00:00:17,320 - 00:00:19,380] the principle of least action is a misnomer.
+- [00:00:21,520 - 00:00:23,180] Which of the words is wrong?
+- [00:00:23,560 - 00:00:25,200] The word that's wrong is least.
+- [00:00:26,040 - 00:00:31,090] It is not generally the case that the equations
+- [00:00:31,090 - 00:00:36,140] of motion of Newton or anybody else for that matter,
+- [00:00:36,140 - 00:00:37,300] classical equations,
+- [00:00:37,300 - 00:00:39,380] tell you that the action,
+- [00:00:39,380 - 00:00:40,160] whatever that is,
+- [00:00:40,160 - 00:00:40,840] we're going to come to it,
+- [00:00:40,840 - 00:00:42,420] that the action is minimum.
+- [00:00:42,980 - 00:00:45,220] It tells you that the action is stationary.
+- [00:00:45,820 - 00:00:48,160] So let's talk about the notion of minimum,
+- [00:00:48,160 - 00:00:48,740] stationary,
+- [00:00:48,740 - 00:00:49,940] and so forth in,
+- [00:00:49,940 - 00:00:50,660] first of all,
+- [00:00:50,660 - 00:00:51,540] a simpler context.
+- [00:00:52,100 - 00:00:54,140] Let's think about the laws of physics.
+- [00:00:55,200 - 00:00:57,740] But a special case of the laws of physics.
+- [00:00:58,000 - 00:01:01,220] The special case of the laws of
+- [00:01:01,220 - 00:01:04,440] physics is what are the laws determining equilibrium?
+- [00:01:05,000 - 00:01:08,920] What are the laws determining the configurations
+- [00:01:08,920 - 00:01:12,840] of a system when it doesn't move,
+- [00:01:12,840 - 00:01:14,260] when it's not moving,
+- [00:01:14,260 - 00:01:15,400] when it's stationary?
+- [00:01:16,520 - 00:01:18,080] So that's a question.
+- [00:01:18,220 - 00:01:19,360] What are the laws of equilibrium?
+- [00:01:20,400 - 00:01:25,180] Equilibrium means that there are no reasons to think.
+- [00:01:25,200 - 00:01:26,180] We don't think the object moves,
+- [00:01:26,180 - 00:01:27,980] if it's an object or whatever it is.
+- [00:01:28,340 - 00:01:29,180] And the answer,
+- [00:01:29,180 - 00:01:29,620] of course,
+- [00:01:29,620 - 00:01:31,960] is that the forces are equal to zero.
+- [00:01:32,680 - 00:01:33,740] If we have an object
+- [00:01:33,740 - 00:01:34,800] and it's not going to move,
+- [00:01:34,800 - 00:01:35,560] doesn't move,
+- [00:01:35,560 - 00:01:37,040] it doesn't accelerate,
+- [00:01:37,040 - 00:01:39,340] let's say it doesn't accelerate,
+- [00:01:39,340 - 00:01:41,240] it doesn't move,
+- [00:01:41,240 - 00:01:42,860] but in particular it doesn't accelerate,
+- [00:01:42,860 - 00:01:44,080] then we can ask what
+- [00:01:44,080 - 00:01:45,300] are the laws that govern that?
+- [00:01:45,460 - 00:01:47,280] And the answer is that the forces are zero.
+- [00:01:47,880 - 00:01:51,480] If the forces are derived from a potential,
+- [00:01:51,480 - 00:01:53,280] as all real forces are,
+- [00:01:53,280 - 00:01:57,840] if the forces are derived as the derivatives of potentials,
+- [00:01:58,420 - 00:01:59,760] potential energy function,
+- [00:01:59,760 - 00:02:02,960] which is a function of a collection of coordinates,
+- [00:02:03,740 - 00:02:05,020] I'll call them x,
+- [00:02:05,020 - 00:02:07,500] later on tonight I may start calling them q,
+- [00:02:07,780 - 00:02:10,139] but for the moment let's just call them x,
+- [00:02:10,139 - 00:02:12,120] they could be the coordinates of a particle,
+- [00:02:12,120 - 00:02:14,140] they could be the coordinates of many particles,
+- [00:02:14,720 - 00:02:16,670] then the condition that nothing
+- [00:02:16,670 - 00:02:18,620] moves is that the forces vanish,
+- [00:02:18,920 - 00:02:20,760] which is the same thing as
+- [00:02:20,760 - 00:02:22,600] saying that the derivative of the potential,
+- [00:02:23,600 - 00:02:25,140] let's take the case first of all
+- [00:02:25,140 - 00:02:26,680] of a particle moving on a line,
+- [00:02:26,860 - 00:02:29,200] that the ordinary derivative in that case,
+- [00:02:29,200 - 00:02:31,000] the ordinary derivative of the potential,
+- [00:02:31,680 - 00:02:33,360] d by dx is equal to zero.
+- [00:02:34,200 - 00:02:36,280] That's the condition that the force is equal to zero.
+- [00:02:37,220 - 00:02:38,740] And another way of saying
+- [00:02:38,740 - 00:02:40,260] that is that the force is,
+- [00:02:40,260 - 00:02:42,400] that the potential energy is stationary.
+- [00:02:43,040 - 00:02:44,320] What does stationary mean?
+- [00:02:44,320 - 00:02:45,100] It could mean,
+- [00:02:45,100 - 00:02:47,800] it means that the derivative is equal to zero,
+- [00:02:47,800 - 00:02:48,520] that's all it means.
+- [00:02:49,000 - 00:02:49,440] Okay,
+- [00:02:49,440 - 00:02:50,420] but if you want to
+- [00:02:50,420 - 00:02:51,400] draw a graph of the potential,
+- [00:02:52,540 - 00:02:58,680] where in this graph are the forces equal to zero,
+- [00:02:58,900 - 00:03:00,060] they're equal to zero,
+- [00:03:00,060 - 00:03:01,540] where the derivative is equal to zero,
+- [00:03:01,640 - 00:03:04,600] at the minima and the maxima of the functions.
+- [00:03:05,880 - 00:03:06,519] Now,
+- [00:03:06,519 - 00:03:07,160] notice,
+- [00:03:07,160 - 00:03:08,080] first of all,
+- [00:03:08,080 - 00:03:10,600] equilibrium does not require that
+- [00:03:10,600 - 00:03:13,120] the potential energy be minimum.
+- [00:03:13,580 - 00:03:16,640] It requires that the derivative be zero,
+- [00:03:16,640 - 00:03:19,340] which is the right words of it,
+- [00:03:19,340 - 00:03:21,040] the potential energy is stationary.
+- [00:03:22,340 - 00:03:24,840] Stationary means it doesn't change if you move,
+- [00:03:24,840 - 00:03:26,680] if you move slightly to the
+- [00:03:26,680 - 00:03:28,520] left or slightly to the right,
+- [00:03:28,600 - 00:03:30,620] and it's just another way of saying the derivative vanishes.
+- [00:03:31,080 - 00:03:32,620] But let's think about,
+- [00:03:32,620 - 00:03:35,960] let's think about a small displacement of x.
+- [00:03:36,500 - 00:03:37,380] At the moment,
+- [00:03:37,380 - 00:03:39,220] we're not necessarily at the minimum.
+- [00:03:39,340 - 00:03:40,300] We might be at the minimum,
+- [00:03:40,300 - 00:03:41,420] we might be anywheres.
+- [00:03:41,800 - 00:03:44,260] And let's think about how much the potential
+- [00:03:44,260 - 00:03:46,720] energy changes when we move a little bit.
+- [00:03:46,940 - 00:03:47,940] And the answer is,
+- [00:03:47,940 - 00:03:48,420] of course,
+- [00:03:48,420 - 00:03:50,040] dv by dx.
+- [00:03:51,400 - 00:03:51,880] Times,
+- [00:03:51,880 - 00:03:52,520] let's say,
+- [00:03:52,520 - 00:03:54,400] let's call the motion delta x.
+- [00:03:55,760 - 00:03:57,020] Times delta x.
+- [00:03:58,260 - 00:04:00,130] The change per unit x
+- [00:04:00,130 - 00:04:02,000] times the small change in x,
+- [00:04:02,140 - 00:04:04,060] and that we can just call delta v.
+- [00:04:06,640 - 00:04:08,490] The change in v when we change
+- [00:04:08,490 - 00:04:10,340] x a little bit by amount delta x.
+- [00:04:10,800 - 00:04:12,040] And what is the rule?
+- [00:04:12,040 - 00:04:14,490] The rule is you're in equilibrium
+- [00:04:14,490 - 00:04:16,940] when delta v is equal to zero.
+- [00:04:17,579 - 00:04:18,100] Now,
+- [00:04:18,100 - 00:04:20,660] I made it a little more complicated.
+- [00:04:21,399 - 00:04:22,289] It's a little more complicated over
+- [00:04:22,289 - 00:04:23,180] here than it was over here.
+- [00:04:23,720 - 00:04:24,900] But we're going to find out,
+- [00:04:24,900 - 00:04:25,860] it's a useful notation,
+- [00:04:25,860 - 00:04:27,900] a useful way to think about it,
+- [00:04:27,960 - 00:04:32,140] that you're in equilibrium whenever you're at
+- [00:04:32,140 - 00:04:36,320] a point where the potential doesn't change
+- [00:04:36,900 - 00:04:38,420] when you move a little bit,
+- [00:04:38,420 - 00:04:40,160] when you make a little delta of x.
+- [00:04:41,180 - 00:04:41,660] Now,
+- [00:04:41,660 - 00:04:41,880] of course,
+- [00:04:41,880 - 00:04:44,280] this is true to first order in delta x.
+- [00:04:45,300 - 00:04:46,660] It's not completely true,
+- [00:04:46,660 - 00:04:48,830] but it's true as an approximation
+- [00:04:48,830 - 00:04:51,000] for first order in delta x.
+- [00:04:51,540 - 00:04:52,060] Now,
+- [00:04:52,060 - 00:04:54,200] let's go on to a little more complicated situation.
+- [00:04:54,880 - 00:04:57,660] Suppose there are several coordinates.
+- [00:04:59,720 - 00:05:03,290] I'll draw it as two coordinates because I'm
+- [00:05:03,290 - 00:05:06,860] not very good at drawing 12 or 15 coordinates.
+- [00:05:07,760 - 00:05:08,440] You say,
+- [00:05:08,440 - 00:05:09,060] why not three?
+- [00:05:09,640 - 00:05:10,160] Well,
+- [00:05:10,160 - 00:05:11,660] the reason they're three is because
+- [00:05:11,660 - 00:05:13,160] I need an axis for v.
+- [00:05:14,720 - 00:05:17,060] I only have two axes left over,
+- [00:05:17,060 - 00:05:18,760] and I'm not even very good at that.
+- [00:05:18,920 - 00:05:20,460] But here's two axes left over.
+- [00:05:20,520 - 00:05:20,900] x,
+- [00:05:20,900 - 00:05:21,380] 2,
+- [00:05:21,380 - 00:05:21,380] 3.
+- [00:05:21,400 - 00:05:22,760] x and y.
+- [00:05:23,000 - 00:05:23,440] I don't know.
+- [00:05:23,480 - 00:05:24,320] Let's call this x.
+- [00:05:25,240 - 00:05:26,620] Let's call this one y.
+- [00:05:27,180 - 00:05:28,280] Let's call this one y.
+- [00:05:29,100 - 00:05:32,380] And suppose that the potential energy has some shape.
+- [00:05:32,840 - 00:05:34,760] It's a function of position.
+- [00:05:35,040 - 00:05:37,440] And it's a function which varies both with...
+- [00:05:37,440 - 00:05:37,700] Now,
+- [00:05:37,700 - 00:05:38,160] don't get...
+- [00:05:38,160 - 00:05:40,260] This is not a roller coaster.
+- [00:05:41,140 - 00:05:44,680] This is a hilly terrain which varies in both directions.
+- [00:05:45,320 - 00:05:47,780] Then where is an object in equilibrium?
+- [00:05:48,220 - 00:05:48,780] Again,
+- [00:05:48,780 - 00:05:50,060] it's in equilibrium
+- [00:05:50,060 - 00:05:52,100] when all the components of
+- [00:05:52,100 - 00:05:54,140] the force are equal to zero.
+- [00:05:54,400 - 00:05:56,590] And that means when all
+- [00:05:56,590 - 00:05:58,780] of the partial derivatives of v
+- [00:06:00,280 - 00:06:01,640] with respect to,
+- [00:06:01,640 - 00:06:02,280] let's call it,
+- [00:06:02,280 - 00:06:02,520] x,
+- [00:06:02,520 - 00:06:03,320] i now.
+- [00:06:05,020 - 00:06:05,820] And x,
+- [00:06:05,820 - 00:06:07,500] i can mean x or y,
+- [00:06:07,500 - 00:06:09,920] or it could mean 59 other coordinates
+- [00:06:09,920 - 00:06:11,880] or 10 to the 23rd more of them.
+- [00:06:12,400 - 00:06:14,940] v of x is a function of all the coordinates.
+- [00:06:16,060 - 00:06:17,470] Partial of v with respect
+- [00:06:17,470 - 00:06:18,880] to any given one of them
+- [00:06:18,880 - 00:06:22,680] is the component of force along that particular direction.
+- [00:06:23,300 - 00:06:25,600] And when all of them are equal to zero,
+- [00:06:25,600 - 00:06:26,280] not one of them,
+- [00:06:26,380 - 00:06:27,910] but when all of them are
+- [00:06:27,910 - 00:06:29,440] equal to zero for all i...
+- [00:06:30,280 - 00:06:32,560] How do mathematicians write for all i?
+- [00:06:34,180 - 00:06:35,980] Upside down a or something.
+- [00:06:36,660 - 00:06:37,860] And where do they put the i?
+- [00:06:37,860 - 00:06:38,300] Over here?
+- [00:06:39,380 - 00:06:40,040] All right.
+- [00:06:40,100 - 00:06:41,840] I won't write it right,
+- [00:06:41,840 - 00:06:42,680] so I won't even try.
+- [00:06:43,460 - 00:06:46,660] dv by dx is equal to zero for all v.
+- [00:06:47,300 - 00:06:47,740] Now,
+- [00:06:47,740 - 00:06:48,780] on this side over here,
+- [00:06:50,939 - 00:06:51,900] let's imagine...
+- [00:06:51,900 - 00:06:52,280] Oh,
+- [00:06:52,280 - 00:06:53,160] and where is that?
+- [00:06:53,660 - 00:06:56,480] Let's first talk about what kind of places satisfy that.
+- [00:06:56,980 - 00:06:57,900] First of all,
+- [00:06:57,900 - 00:06:58,860] the bottoms of hills
+- [00:07:00,080 - 00:07:03,900] are places where dv dx is equal to zero.
+- [00:07:04,580 - 00:07:06,840] The tops of hills are also.
+- [00:07:08,600 - 00:07:09,980] At the top of a hill,
+- [00:07:09,980 - 00:07:12,840] every place you go goes downward.
+- [00:07:13,140 - 00:07:13,620] Well,
+- [00:07:13,620 - 00:07:15,480] every place you go starts out flat,
+- [00:07:15,480 - 00:07:16,600] that's this condition,
+- [00:07:16,840 - 00:07:18,400] but then it proceeds to go downward.
+- [00:07:18,880 - 00:07:19,800] At the bottom of a hill,
+- [00:07:19,800 - 00:07:20,720] you're at the bottom,
+- [00:07:20,800 - 00:07:22,300] so any place you go is up.
+- [00:07:23,480 - 00:07:24,500] It's a second order.
+- [00:07:24,840 - 00:07:27,300] There are other kinds of stationary points.
+- [00:07:27,380 - 00:07:28,560] The other kinds of stationary
+- [00:07:28,560 - 00:07:29,740] points are called saddle points.
+- [00:07:30,200 - 00:07:31,900] A saddle point is...
+- [00:07:32,420 - 00:07:36,140] You've all been on saddle points out in the mountains.
+- [00:07:36,420 - 00:07:40,500] A saddle point looks like that.
+- [00:07:40,980 - 00:07:42,340] Is that clear?
+- [00:07:43,160 - 00:07:44,240] I think it's clear.
+- [00:07:44,560 - 00:07:45,240] All right,
+- [00:07:45,240 - 00:07:48,260] somebody standing over here is in equilibrium.
+- [00:07:48,260 - 00:07:50,880] The derivative of v,
+- [00:07:50,880 - 00:07:51,760] this is v,
+- [00:07:51,960 - 00:07:53,100] with respect to,
+- [00:07:53,100 - 00:07:53,660] let's say,
+- [00:07:53,660 - 00:07:53,940] y,
+- [00:07:53,940 - 00:07:55,140] is equal to zero.
+- [00:07:55,860 - 00:07:57,420] There's no variation as you go over
+- [00:07:57,420 - 00:07:58,980] the top of the hill this way,
+- [00:07:59,060 - 00:08:00,550] and it's also zero if
+- [00:08:00,550 - 00:08:02,040] you go this way over here.
+- [00:08:02,460 - 00:08:04,800] So you are in equilibrium at this point,
+- [00:08:07,480 - 00:08:09,200] but two different directions,
+- [00:08:09,860 - 00:08:10,960] and one of them,
+- [00:08:10,960 - 00:08:11,480] the force...
+- [00:08:11,480 - 00:08:11,860] In fact,
+- [00:08:11,860 - 00:08:12,440] in one of them,
+- [00:08:12,440 - 00:08:13,540] the force pulls you back,
+- [00:08:13,640 - 00:08:14,220] and the other,
+- [00:08:14,220 - 00:08:16,200] if you deviate a little bit,
+- [00:08:16,340 - 00:08:17,200] the other one,
+- [00:08:17,200 - 00:08:18,020] the force...
+- [00:08:18,020 - 00:08:19,500] sends you down the hill.
+- [00:08:19,840 - 00:08:22,180] But as long as you're right at the top,
+- [00:08:22,280 - 00:08:23,220] you're in equilibrium,
+- [00:08:23,220 - 00:08:24,700] right at the saddle point.
+- [00:08:24,840 - 00:08:25,420] Not at the top,
+- [00:08:25,420 - 00:08:26,540] but right at the saddle point.
+- [00:08:26,760 - 00:08:30,260] So the generic situation for a stationary point
+- [00:08:30,940 - 00:08:33,520] is not that it's a maximum or a minimum,
+- [00:08:33,720 - 00:08:36,720] but that it's stationary in the maybe different directions
+- [00:08:36,720 - 00:08:38,120] where you go down,
+- [00:08:38,120 - 00:08:39,799] some directions where you go up,
+- [00:08:39,900 - 00:08:43,460] but right at the saddle point.
+- [00:08:43,659 - 00:08:45,040] If you move a little bit,
+- [00:08:45,200 - 00:08:47,380] the change in the potential energy is zero
+- [00:08:48,020 - 00:08:48,500] in the first order.
+- [00:08:49,719 - 00:08:51,489] Now what is the change in
+- [00:08:51,489 - 00:08:53,260] potential if you move a little bit?
+- [00:08:53,760 - 00:08:55,820] Let's say we change x and y,
+- [00:08:55,820 - 00:08:57,160] or however many there are.
+- [00:08:57,380 - 00:08:58,900] If there are only two coordinates,
+- [00:08:59,140 - 00:09:00,720] the change in v would be the
+- [00:09:00,720 - 00:09:02,300] derivative of v with respect to x.
+- [00:09:03,120 - 00:09:04,810] That's the amount that v changes
+- [00:09:04,810 - 00:09:06,500] if you move x a little bit
+- [00:09:06,500 - 00:09:13,660] times delta x plus dv by dy times delta y.
+- [00:09:13,820 - 00:09:14,440] What this says,
+- [00:09:14,440 - 00:09:16,660] wherever you are,
+- [00:09:16,700 - 00:09:17,680] you don't have to be at the bottom.
+- [00:09:18,560 - 00:09:19,560] Wherever you are,
+- [00:09:19,560 - 00:09:20,920] the change in v,
+- [00:09:20,920 - 00:09:22,140] if you move a little bit,
+- [00:09:22,760 - 00:09:25,000] is the derivative of v with respect to x
+- [00:09:26,760 - 00:09:28,220] times the little change in x
+- [00:09:28,660 - 00:09:30,580] plus the derivative of v with respect to y
+- [00:09:30,580 - 00:09:31,960] times the little change in y.
+- [00:09:33,000 - 00:09:34,780] And that we can call delta v.
+- [00:09:35,300 - 00:09:36,360] Let's call it delta v.
+- [00:09:39,140 - 00:09:39,900] Delta v,
+- [00:09:39,900 - 00:09:42,460] a symbol like this means,
+- [00:09:42,640 - 00:09:44,860] it's a little bit of an implicit symbol,
+- [00:09:45,040 - 00:09:47,460] it means the change in v for any,
+- [00:09:47,460 - 00:09:49,540] any little motion.
+- [00:09:50,340 - 00:09:51,910] It doesn't specify which direction
+- [00:09:51,910 - 00:09:53,480] or how much you're moving,
+- [00:09:53,760 - 00:09:56,390] but for any infinitesimal deviation
+- [00:09:56,390 - 00:09:59,020] from the point in question,
+- [00:09:59,220 - 00:10:00,560] this is the change in v.
+- [00:10:00,840 - 00:10:03,070] And the condition of equilibrium is
+- [00:10:03,070 - 00:10:05,300] exactly the same as it was before,
+- [00:10:05,640 - 00:10:07,620] that delta v is equal to zero
+- [00:10:08,520 - 00:10:12,320] for every possible choice of delta x and delta y.
+- [00:10:13,640 - 00:10:17,440] For every possible choice of the v.
+- [00:10:18,240 - 00:10:19,780] That's the condition of equilibrium.
+- [00:10:20,180 - 00:10:21,740] And so we can write then,
+- [00:10:21,860 - 00:10:23,640] that the general law of nature
+- [00:10:25,740 - 00:10:26,860] for equilibrium
+- [00:10:29,360 - 00:10:32,740] is that the variation of v is equal to zero
+- [00:10:33,359 - 00:10:35,180] for any little motion at all,
+- [00:10:35,260 - 00:10:37,780] to first order in small quantities.
+- [00:10:39,680 - 00:10:42,660] That's a sort of summary of all of classical physics
+- [00:10:43,640 - 00:10:45,700] when equilibrium is,
+- [00:10:45,880 - 00:10:47,420] when there's no time dependence.
+- [00:10:50,060 - 00:10:50,820] All right,
+- [00:10:50,820 - 00:10:51,360] and it's also,
+- [00:10:51,480 - 00:10:52,300] you know,
+- [00:10:52,300 - 00:10:53,380] just a little bit of mathematics,
+- [00:10:53,680 - 00:10:54,620] stationary points.
+- [00:10:55,520 - 00:10:56,400] Now of course,
+- [00:10:56,400 - 00:10:59,260] we're not interested in equilibrium only,
+- [00:10:59,360 - 00:11:00,940] we're interested in more complicated motions.
+- [00:11:02,880 - 00:11:04,360] We're interested in whole motions.
+- [00:11:04,560 - 00:11:07,180] We're interested not in finding points
+- [00:11:07,980 - 00:11:09,960] that satisfy the equations of motion,
+- [00:11:10,100 - 00:11:11,340] but whole trajectories.
+- [00:11:13,800 - 00:11:16,520] Trajectories are curves through space and time.
+- [00:11:16,620 - 00:11:17,180] They're functions.
+- [00:11:17,440 - 00:11:18,280] X of t,
+- [00:11:18,280 - 00:11:19,540] y of t,
+- [00:11:19,540 - 00:11:20,680] z of t.
+- [00:11:21,740 - 00:11:24,420] And the principle of stationary action
+- [00:11:24,420 - 00:11:26,920] is a principle that says not that you,
+- [00:11:27,000 - 00:11:30,160] that some point is preferred,
+- [00:11:30,420 - 00:11:31,540] but a whole trajectory,
+- [00:11:31,540 - 00:11:32,480] a whole function.
+- [00:11:33,220 - 00:11:35,240] The problem of finding functions
+- [00:11:35,240 - 00:11:38,040] which minimize some quantity
+- [00:11:38,040 - 00:11:40,540] is this famous mathematical problem.
+- [00:11:40,660 - 00:11:42,080] It's called the calculus of variations,
+- [00:11:42,320 - 00:11:43,960] and we're going to go through some examples.
+- [00:11:44,680 - 00:11:45,910] We're going to go through a
+- [00:11:45,910 - 00:11:47,140] little bit of the mathematics of it.
+- [00:11:47,140 - 00:11:47,880] It's not very hard,
+- [00:11:47,880 - 00:11:48,600] it's pretty easy.
+- [00:11:49,480 - 00:11:51,360] There's an analog of this equation,
+- [00:11:52,040 - 00:11:53,480] analog of these equations,
+- [00:11:53,680 - 00:11:54,880] just a little more complicated.
+- [00:11:55,720 - 00:11:57,480] But let me give you some physical
+- [00:11:57,480 - 00:11:59,540] or some physical and mathematical examples
+- [00:12:00,140 - 00:12:03,160] of questions which are answered by
+- [00:12:03,160 - 00:12:06,100] the principles of the variational calculus.
+- [00:12:06,560 - 00:12:07,360] For example,
+- [00:12:07,360 - 00:12:08,220] the simplest one,
+- [00:12:08,300 - 00:12:09,260] which you probably all know,
+- [00:12:09,420 - 00:12:10,920] but let's spell it out anyway,
+- [00:12:11,880 - 00:12:15,100] is what is the shortest line between two points?
+- [00:12:16,619 - 00:12:18,400] Shortest means minimum.
+- [00:12:18,780 - 00:12:20,100] Minimum means stationary.
+- [00:12:20,640 - 00:12:21,840] So what does that mean?
+- [00:12:22,900 - 00:12:24,080] You pick two points,
+- [00:12:24,080 - 00:12:25,160] let's say two points,
+- [00:12:25,220 - 00:12:27,200] and on the plane,
+- [00:12:27,480 - 00:12:29,660] it could be in three-dimensional space,
+- [00:12:29,900 - 00:12:30,780] it could be whatever you like,
+- [00:12:30,920 - 00:12:33,480] but pick two points on the plane
+- [00:12:34,199 - 00:12:36,040] and ask what curve
+- [00:12:41,420 - 00:12:43,300] minimizes the distance between them.
+- [00:12:43,460 - 00:12:45,080] The distance now is this.
+- [00:12:45,100 - 00:12:46,040] It's the incremental distance
+- [00:12:46,040 - 00:12:47,620] as you move along the curve.
+- [00:12:48,220 - 00:12:49,120] It's not this one,
+- [00:12:49,120 - 00:12:49,900] that's for sure.
+- [00:12:50,720 - 00:12:52,040] You all know what it is,
+- [00:12:52,040 - 00:12:52,760] it's a straight line.
+- [00:12:56,780 - 00:12:58,380] Let's see if we can set that question,
+- [00:12:58,540 - 00:12:59,360] if not the answer,
+- [00:12:59,360 - 00:13:00,260] let's see if we can set
+- [00:13:00,260 - 00:13:01,380] the question up mathematically.
+- [00:13:10,940 - 00:13:12,440] Let's not put the origin over here.
+- [00:13:13,600 - 00:13:14,840] We have two points,
+- [00:13:15,100 - 00:13:16,220] let's call them x,
+- [00:13:16,380 - 00:13:17,760] this is x and y,
+- [00:13:17,760 - 00:13:18,460] one,
+- [00:13:19,040 - 00:13:20,000] this is x,
+- [00:13:20,000 - 00:13:20,340] two,
+- [00:13:20,980 - 00:13:21,580] and y,
+- [00:13:21,580 - 00:13:22,060] two.
+- [00:13:23,200 - 00:13:25,340] And I want to find the curve,
+- [00:13:25,860 - 00:13:26,660] here's the curve,
+- [00:13:27,500 - 00:13:29,380] which minimizes the distance between them.
+- [00:13:31,160 - 00:13:33,720] That curve is defined by a function.
+- [00:13:33,980 - 00:13:35,580] And we could take it to be just a,
+- [00:13:35,640 - 00:13:37,480] let's take this to be the x-axis,
+- [00:13:37,580 - 00:13:39,200] let's take this to be the y-axis,
+- [00:13:39,780 - 00:13:41,800] and it's defined by some y of x.
+- [00:13:45,520 - 00:13:47,320] Suppose I give you a y of x
+- [00:13:47,320 - 00:13:49,280] that passes through these two points,
+- [00:13:49,540 - 00:13:51,700] then along that y of x,
+- [00:13:51,820 - 00:13:52,980] there's some distance,
+- [00:13:53,100 - 00:13:54,720] measured along y of x.
+- [00:13:54,800 - 00:13:55,120] In other words,
+- [00:13:55,120 - 00:13:55,920] you take a tape measure
+- [00:13:55,920 - 00:13:58,540] and you hug it to the line,
+- [00:13:58,700 - 00:13:59,900] you measure some distance,
+- [00:13:59,900 - 00:14:00,680] what is it?
+- [00:14:00,720 - 00:14:01,820] Let's see if we can calculate it.
+- [00:14:02,200 - 00:14:04,780] If I take some little incremental distance there,
+- [00:14:05,400 - 00:14:07,580] let's say it corresponds to dx,
+- [00:14:08,660 - 00:14:10,680] there's a little incremental distance dx,
+- [00:14:11,300 - 00:14:13,060] then what's the length of that segment?
+- [00:14:13,460 - 00:14:14,900] The length of that segment,
+- [00:14:15,100 - 00:14:15,660] of course,
+- [00:14:16,579 - 00:14:18,100] the length of that segment,
+- [00:14:18,220 - 00:14:19,740] the distance here is dy,
+- [00:14:23,459 - 00:14:24,860] the length of the segment
+- [00:14:24,860 - 00:14:27,500] is the square root of dx squared plus dy squared.
+- [00:14:28,220 - 00:14:29,960] It's the length of this little line here,
+- [00:14:30,020 - 00:14:31,680] which is the hypotenuse of a triangle,
+- [00:14:31,880 - 00:14:33,510] I don't want to draw too
+- [00:14:33,510 - 00:14:35,140] many pieces to this curve here.
+- [00:14:35,500 - 00:14:36,720] There's a horizontal distance,
+- [00:14:36,860 - 00:14:37,620] a vertical distance,
+- [00:14:38,259 - 00:14:41,240] and the length of the little segment,
+- [00:14:42,160 - 00:14:43,580] let's call it ds.
+- [00:14:45,100 - 00:14:46,120] I don't know,
+- [00:14:46,120 - 00:14:46,600] again,
+- [00:14:46,800 - 00:14:48,760] I don't know what the history is
+- [00:14:48,760 - 00:14:51,800] of using s for distance along a curve.
+- [00:14:53,120 - 00:14:54,420] I don't know what it is.
+- [00:14:55,740 - 00:14:56,400] ds,
+- [00:14:56,870 - 00:14:58,500] s is distance along a curve,
+- [00:14:59,500 - 00:15:02,220] ds is obviously the square root
+- [00:15:03,100 - 00:15:05,180] of dx squared plus dy squared.
+- [00:15:11,040 - 00:15:14,120] Let me divide inside the square root
+- [00:15:14,120 - 00:15:15,160] by dx squared.
+- [00:15:15,860 - 00:15:16,460] Alright,
+- [00:15:16,460 - 00:15:18,860] then I can take out a dx on the outside,
+- [00:15:19,160 - 00:15:20,460] dx on the outside,
+- [00:15:20,800 - 00:15:25,980] and write this as one plus dy by dx squared.
+- [00:15:29,840 - 00:15:30,700] Is that much clearer?
+- [00:15:34,120 - 00:15:37,960] All I did was divide in the denominator
+- [00:15:37,960 - 00:15:38,720] by dx,
+- [00:15:38,720 - 00:15:39,960] by dx squared,
+- [00:15:40,120 - 00:15:42,580] but that means I have to multiply
+- [00:15:42,580 - 00:15:44,100] by square root of dx squared,
+- [00:15:44,120 - 00:15:45,840] which is just the dx on the outside.
+- [00:15:46,420 - 00:15:48,580] That's the distance in this little increment here.
+- [00:15:48,820 - 00:15:51,060] And then what's the total distance from here to here?
+- [00:15:51,200 - 00:15:52,980] The total distance is the integral,
+- [00:15:53,180 - 00:15:55,220] the sum of all these little incremental distances.
+- [00:15:55,800 - 00:15:57,220] And so here we have it.
+- [00:15:57,400 - 00:15:59,260] The distance from one to two
+- [00:15:59,960 - 00:16:02,700] is just equal to the integral of this,
+- [00:16:02,820 - 00:16:03,740] dx.
+- [00:16:05,640 - 00:16:07,560] What do I mean by dy by dx?
+- [00:16:08,020 - 00:16:09,700] y is some function of x.
+- [00:16:09,960 - 00:16:12,980] dy by dx is simply the derivative of it.
+- [00:16:14,120 - 00:16:15,180] So here's what you're instructed.
+- [00:16:15,340 - 00:16:17,700] You're instructed to find the curve
+- [00:16:18,360 - 00:16:19,860] that has the property
+- [00:16:20,600 - 00:16:22,600] that the integral along it,
+- [00:16:22,600 - 00:16:22,960] dx,
+- [00:16:23,380 - 00:16:25,340] of the square root of one
+- [00:16:26,000 - 00:16:28,600] plus the derivative of the function squared,
+- [00:16:28,820 - 00:16:30,900] plus the square root of the derivative of the function
+- [00:16:30,900 - 00:16:32,100] underneath the square root,
+- [00:16:32,260 - 00:16:35,360] is equal to the shortest possible length,
+- [00:16:35,480 - 00:16:36,580] is minimal.
+- [00:16:37,320 - 00:16:38,700] To say that it's minimal
+- [00:16:40,020 - 00:16:43,640] means that if you move it any little bit,
+- [00:16:45,239 - 00:16:46,120] it'll increase.
+- [00:16:46,300 - 00:16:47,080] If you move it this way,
+- [00:16:47,080 - 00:16:47,720] it'll increase that,
+- [00:16:47,800 - 00:16:48,480] and if you move it that way,
+- [00:16:48,480 - 00:16:48,920] it'll increase.
+- [00:16:49,200 - 00:16:51,460] But it also means you're at the bottom of something.
+- [00:16:51,700 - 00:16:54,820] You're at the bottom of this quantity
+- [00:16:55,660 - 00:16:57,540] with respect to any little change
+- [00:16:57,540 - 00:16:59,240] in what the function is.
+- [00:16:59,280 - 00:17:00,000] By analogy,
+- [00:17:00,000 - 00:17:02,920] with the case of just an ordinary function,
+- [00:17:03,619 - 00:17:05,220] we can write that
+- [00:17:05,220 - 00:17:08,760] the condition is that the variation of this
+- [00:17:08,760 - 00:17:09,780] is equal to zero.
+- [00:17:10,300 - 00:17:13,000] The analog of being at the bottom of something
+- [00:17:14,119 - 00:17:17,560] is always that the variation,
+- [00:17:17,880 - 00:17:18,780] no matter,
+- [00:17:18,780 - 00:17:20,859] for any little change of what,
+- [00:17:20,859 - 00:17:22,040] what are we going to change,
+- [00:17:22,040 - 00:17:22,700] incidentally?
+- [00:17:22,940 - 00:17:24,900] We're going to change the function.
+- [00:17:25,660 - 00:17:27,500] Any little change in the function
+- [00:17:28,119 - 00:17:29,840] will increase the length.
+- [00:17:30,740 - 00:17:32,680] Any little change in the function
+- [00:17:32,680 - 00:17:34,720] will increase the length in the same way
+- [00:17:34,720 - 00:17:37,180] that any motion away from here will increase it.
+- [00:17:39,180 - 00:17:41,740] Implication is that the derivative is equal to zero,
+- [00:17:41,900 - 00:17:42,640] or
+- [00:17:42,640 - 00:17:44,960] the variation is equal to zero.
+- [00:17:46,700 - 00:17:47,980] So the question then is,
+- [00:17:48,040 - 00:17:49,600] how do we solve a problem like this?
+- [00:17:50,960 - 00:17:53,760] Solving it for us is going to mean one thing.
+- [00:17:54,380 - 00:17:56,280] We are not going to frequently
+- [00:17:56,280 - 00:17:58,180] be able to solve most problems.
+- [00:17:58,300 - 00:17:59,100] This one we can solve.
+- [00:18:00,180 - 00:18:02,720] But the answer is a straight line,
+- [00:18:02,720 - 00:18:03,120] of course.
+- [00:18:05,580 - 00:18:07,880] But solving an equation like this for us
+- [00:18:07,880 - 00:18:09,400] is going to mean to
+- [00:18:09,400 - 00:18:10,920] reduce it to a differential equation,
+- [00:18:11,140 - 00:18:12,620] to an equation similar to this one,
+- [00:18:12,640 - 00:18:14,920] similar to Newton's equations.
+- [00:18:16,840 - 00:18:18,980] Reducing it to an equation of motion
+- [00:18:19,450 - 00:18:21,205] which would allow us to
+- [00:18:21,205 - 00:18:22,960] study it in little incremental steps.
+- [00:18:24,860 - 00:18:25,520] So,
+- [00:18:25,520 - 00:18:28,160] solving a variational problem like this
+- [00:18:28,160 - 00:18:32,080] means reducing it to a simple differential equation.
+- [00:18:32,540 - 00:18:33,520] That's the,
+- [00:18:33,520 - 00:18:35,020] that's,
+- [00:18:35,020 - 00:18:36,540] we will take that to
+- [00:18:36,540 - 00:18:38,060] be a solution of the problem.
+- [00:18:39,060 - 00:18:39,720] Alright,
+- [00:18:39,720 - 00:18:40,940] that's one example.
+- [00:18:41,120 - 00:18:42,340] Let me give you some more examples
+- [00:18:43,100 - 00:18:44,540] of similar situations.
+- [00:18:48,280 - 00:18:49,220] Here's another one,
+- [00:18:49,220 - 00:18:50,220] a very similar one.
+- [00:18:50,640 - 00:18:52,180] It's the principle not of,
+- [00:18:52,180 - 00:18:52,380] oh,
+- [00:18:52,380 - 00:18:53,260] incidentally,
+- [00:18:54,620 - 00:18:56,380] you could ask this question,
+- [00:18:56,380 - 00:18:57,780] not on the flat blackboard,
+- [00:18:58,020 - 00:19:01,600] but you could ask this question on an arbitrary surface.
+- [00:19:02,000 - 00:19:03,120] Supposing I give you a surface,
+- [00:19:03,120 - 00:19:04,300] it could be the surface of the Earth,
+- [00:19:04,400 - 00:19:06,140] it could be the spherical surface of the Earth,
+- [00:19:06,639 - 00:19:09,500] or it could be a terrain out in,
+- [00:19:09,500 - 00:19:11,860] in a hilly country somewheres.
+- [00:19:12,640 - 00:19:13,860] And I would like to
+- [00:19:13,860 - 00:19:15,080] put a stake in over here
+- [00:19:15,080 - 00:19:16,260] and a stake in over here,
+- [00:19:16,360 - 00:19:19,120] and find the shortest distance between them,
+- [00:19:19,220 - 00:19:19,620] in other words,
+- [00:19:19,620 - 00:19:21,720] the shortest route between them.
+- [00:19:22,580 - 00:19:24,360] Physically or experimentally,
+- [00:19:24,360 - 00:19:25,060] how would I do it?
+- [00:19:25,120 - 00:19:26,940] I might attach a string over here,
+- [00:19:27,180 - 00:19:29,180] pull the string as tight as possible,
+- [00:19:29,700 - 00:19:31,800] and when it's pulled as tight as possible,
+- [00:19:31,960 - 00:19:34,240] it will define some shortest distance between them.
+- [00:19:34,420 - 00:19:35,880] It will not be a straight line.
+- [00:19:36,200 - 00:19:36,620] Why?
+- [00:19:36,620 - 00:19:37,860] Because the surface is curved.
+- [00:19:38,220 - 00:19:40,220] So you could generalize this question.
+- [00:19:40,220 - 00:19:42,380] I won't write the equations for it,
+- [00:19:42,460 - 00:19:48,460] but you could generalize the equation here,
+- [00:19:48,600 - 00:19:50,680] and it would be the same kind of thing.
+- [00:19:50,960 - 00:19:54,120] The distance from here to here would be some integral,
+- [00:19:55,040 - 00:19:56,820] sum of little incremental pieces,
+- [00:19:57,180 - 00:20:00,340] and the condition that it's minimum or stationary
+- [00:20:00,340 - 00:20:03,240] would be that its variation is equal to zero.
+- [00:20:03,740 - 00:20:04,700] When you change,
+- [00:20:04,700 - 00:20:05,540] when you do what?
+- [00:20:05,720 - 00:20:07,940] When you change the trajectory a little bit.
+- [00:20:08,940 - 00:20:09,920] Not trajectory,
+- [00:20:09,920 - 00:20:10,200] but trajectory.
+- [00:20:10,220 - 00:20:10,920] You can shift the line a little bit.
+- [00:20:10,980 - 00:20:11,820] So that's another example.
+- [00:20:13,300 - 00:20:14,000] Principle of,
+- [00:20:14,000 - 00:20:14,720] not the principle,
+- [00:20:14,920 - 00:20:17,020] but the problem of finding
+- [00:20:17,020 - 00:20:19,120] the shortest path between two points.
+- [00:20:19,900 - 00:20:22,780] The shortest path between two points on a curved surface
+- [00:20:22,780 - 00:20:23,960] is called a geodesic.
+- [00:20:24,720 - 00:20:26,580] And a geodesic on a
+- [00:20:26,580 - 00:20:28,440] flat plane is a straight line.
+- [00:20:28,720 - 00:20:29,020] Okay,
+- [00:20:29,020 - 00:20:29,740] so we all know this.
+- [00:20:30,360 - 00:20:31,560] Let's do another one.
+- [00:20:32,220 - 00:20:34,040] There is a physical principle,
+- [00:20:34,040 - 00:20:34,780] a law,
+- [00:20:34,780 - 00:20:36,440] about light.
+- [00:20:37,400 - 00:20:39,580] It's Fermat's principle of least time.
+- [00:20:40,220 - 00:20:41,040] How much,
+- [00:20:41,040 - 00:20:45,120] what's the path of a light ray between two points?
+- [00:20:46,200 - 00:20:48,220] Path of a light ray between two points.
+- [00:20:48,400 - 00:20:50,060] Now of course the answer is a straight line.
+- [00:20:50,780 - 00:20:51,960] Why is it a straight line?
+- [00:20:52,200 - 00:20:54,210] Because the principle is that it
+- [00:20:54,210 - 00:20:56,220] should take the least amount of time.
+- [00:20:56,380 - 00:20:56,980] That's the principle.
+- [00:20:57,120 - 00:20:58,240] The principle of least time,
+- [00:20:58,600 - 00:21:00,250] light rays move in a way
+- [00:21:00,250 - 00:21:01,900] which minimize the amount of time
+- [00:21:01,900 - 00:21:03,180] to go from one point to another,
+- [00:21:03,700 - 00:21:06,160] and if the light ray moves with constant velocity,
+- [00:21:07,060 - 00:21:07,880] constant speed,
+- [00:21:08,260 - 00:21:10,200] then it's just going to be the shortest distance
+- [00:21:10,220 - 00:21:11,320] between the two points.
+- [00:21:11,480 - 00:21:13,180] But you can imagine situations
+- [00:21:13,780 - 00:21:16,580] where light moves with a variable velocity
+- [00:21:16,580 - 00:21:17,720] from place to place.
+- [00:21:18,520 - 00:21:19,120] Like,
+- [00:21:19,120 - 00:21:19,760] for example,
+- [00:21:19,760 - 00:21:21,460] neutrinos move faster in Italy
+- [00:21:21,460 - 00:21:22,400] than they do in...
+- [00:21:26,060 - 00:21:27,260] But no,
+- [00:21:27,260 - 00:21:29,200] we don't need to go that route.
+- [00:21:30,920 - 00:21:33,940] Light moving through materials moves with a velocity
+- [00:21:33,940 - 00:21:35,880] that depends on the index of refraction.
+- [00:21:36,980 - 00:21:40,080] Index of refraction can vary from place to place.
+- [00:21:41,100 - 00:21:43,060] So supposing we had a light ray
+- [00:21:43,060 - 00:21:45,040] moving from here to here
+- [00:21:45,620 - 00:21:48,100] with a speed of light
+- [00:21:48,100 - 00:21:50,560] which depended on where we were.
+- [00:21:50,960 - 00:21:51,920] So here we are,
+- [00:21:51,920 - 00:21:54,500] we have a light ray moving from here to here,
+- [00:21:56,060 - 00:21:57,220] and the speed of light,
+- [00:21:57,220 - 00:21:57,480] c,
+- [00:21:57,960 - 00:22:00,840] is some general function of x and y.
+- [00:22:01,160 - 00:22:02,480] It's a function.
+- [00:22:02,640 - 00:22:03,560] Now how do we do the problem?
+- [00:22:04,639 - 00:22:05,080] Well,
+- [00:22:05,080 - 00:22:08,780] let's again construct the time that it takes
+- [00:22:08,780 - 00:22:10,200] to go from here to here as an integral.
+- [00:22:10,220 - 00:22:12,660] It's clearly the sum of the time that it takes
+- [00:22:12,660 - 00:22:14,320] to go every little incremental distance.
+- [00:22:15,440 - 00:22:17,160] The little incremental distance,
+- [00:22:17,380 - 00:22:18,340] let's go back a step,
+- [00:22:18,720 - 00:22:21,640] the little incremental distance from one point to another
+- [00:22:21,640 - 00:22:24,140] was the square root of dx squared plus dy squared.
+- [00:22:26,160 - 00:22:26,680] Now,
+- [00:22:26,680 - 00:22:28,760] that's the distance between these two points.
+- [00:22:28,840 - 00:22:30,020] How long does it take
+- [00:22:30,020 - 00:22:31,200] for light to go between them?
+- [00:22:35,100 - 00:22:38,400] Time is equal to distance divided by velocity.
+- [00:22:39,360 - 00:22:39,880] Right?
+- [00:22:40,220 - 00:22:42,740] Time is distance divided by velocity.
+- [00:22:43,420 - 00:22:44,960] Here's the distance the light
+- [00:22:44,960 - 00:22:46,500] ray goes between here and here.
+- [00:22:46,920 - 00:22:48,400] Divide it by the velocity,
+- [00:22:48,760 - 00:22:50,360] but now remember that the
+- [00:22:50,360 - 00:22:51,960] velocity is a function of position.
+- [00:22:55,180 - 00:22:57,440] We can do the same trick that we did before.
+- [00:22:58,020 - 00:22:59,900] Take out the factor dx
+- [00:22:59,900 - 00:23:05,800] and write this as one plus dy by dx squared.
+- [00:23:10,400 - 00:23:11,720] And now our problem
+- [00:23:12,960 - 00:23:15,800] is to find the function y of x
+- [00:23:17,660 - 00:23:19,660] which minimizes this integral.
+- [00:23:20,020 - 00:23:21,880] The thing in the integral
+- [00:23:21,880 - 00:23:23,740] depends on both x and y,
+- [00:23:23,980 - 00:23:25,710] but also on the derivative
+- [00:23:25,710 - 00:23:27,440] of y with respect to x.
+- [00:23:27,820 - 00:23:28,880] That's characteristic,
+- [00:23:29,180 - 00:23:30,670] that the things in the integrals
+- [00:23:30,670 - 00:23:32,160] that we're going to be examining
+- [00:23:32,160 - 00:23:34,100] depend not only on x and y,
+- [00:23:34,200 - 00:23:37,160] or position or whatever it happens to be,
+- [00:23:37,300 - 00:23:39,160] but also derivatives.
+- [00:23:40,080 - 00:23:41,880] Derivatives or slopes of functions.
+- [00:23:43,140 - 00:23:44,540] So here's another example,
+- [00:23:44,780 - 00:23:46,220] very similar to the...
+- [00:23:46,220 - 00:23:47,380] And in fact,
+- [00:23:47,480 - 00:23:49,700] this is the way light moves
+- [00:23:49,700 - 00:23:53,040] through a medium of variable index of refraction.
+- [00:23:53,600 - 00:23:55,800] It finds not the shortest path,
+- [00:23:56,960 - 00:24:00,940] but the shortest time that it can go.
+- [00:24:02,280 - 00:24:04,160] We don't need to dwell on that very much.
+- [00:24:04,280 - 00:24:06,160] I think probably a good many of you know that.
+- [00:24:07,960 - 00:24:09,140] But now let's think about this.
+- [00:24:09,140 - 00:24:10,480] Let's talk about mechanics problem.
+- [00:24:10,880 - 00:24:12,660] The general mechanics problem,
+- [00:24:12,860 - 00:24:14,700] let's take the special mechanics problem first.
+- [00:24:14,960 - 00:24:17,740] The special mechanics problem that we always deal with first
+- [00:24:17,740 - 00:24:19,000] is a motion on a line,
+- [00:24:19,140 - 00:24:20,620] one dimensional motion on a line.
+- [00:24:22,759 - 00:24:26,880] And we can think of the horizontal axis as x,
+- [00:24:27,860 - 00:24:29,460] the vertical axis as t.
+- [00:24:29,880 - 00:24:30,520] Now,
+- [00:24:30,520 - 00:24:32,940] t is the independent variable.
+- [00:24:33,260 - 00:24:36,000] Usually you plot the independent variable horizontally,
+- [00:24:36,719 - 00:24:39,120] but because time is a variable,
+- [00:24:39,140 - 00:24:39,640] as everybody knows,
+- [00:24:39,780 - 00:24:40,640] flows upward.
+- [00:24:43,060 - 00:24:45,720] I got a very interesting...
+- [00:24:45,720 - 00:24:47,360] from your granddad,
+- [00:24:47,440 - 00:24:49,040] gave me a very interesting paper
+- [00:24:49,040 - 00:24:55,500] on the cognitive issue
+- [00:24:55,500 - 00:24:59,660] of how time is represented in various cultures.
+- [00:25:00,040 - 00:25:04,020] And how is it represented graphically
+- [00:25:04,020 - 00:25:05,680] in terms of space things.
+- [00:25:06,020 - 00:25:07,480] And it turns out
+- [00:25:07,480 - 00:25:09,480] that the psychological experiments
+- [00:25:10,220 - 00:25:14,960] say that for all people who use an alphabet
+- [00:25:15,879 - 00:25:18,600] which proceeds from left to right,
+- [00:25:19,480 - 00:25:20,780] they all...
+- [00:25:21,480 - 00:25:22,880] Here's the experiment they did,
+- [00:25:22,960 - 00:25:23,860] a fascinating experiment.
+- [00:25:24,260 - 00:25:26,340] They took a bunch of pictures of people,
+- [00:25:26,500 - 00:25:27,460] for example,
+- [00:25:27,460 - 00:25:30,080] starting with a child,
+- [00:25:30,919 - 00:25:32,260] an older child,
+- [00:25:32,260 - 00:25:32,820] same person,
+- [00:25:32,880 - 00:25:33,220] older,
+- [00:25:33,220 - 00:25:33,620] older,
+- [00:25:33,620 - 00:25:34,400] old man.
+- [00:25:34,640 - 00:25:36,840] And they told them to arrange those pictures
+- [00:25:36,840 - 00:25:37,420] in a sequence.
+- [00:25:37,820 - 00:25:39,500] All people who used
+- [00:25:42,480 - 00:25:44,000] systems of writing
+- [00:25:44,000 - 00:25:45,680] which proceed from left to right
+- [00:25:46,980 - 00:25:47,880] put them,
+- [00:25:47,880 - 00:25:49,680] you know,
+- [00:25:50,700 - 00:25:52,000] from left to right,
+- [00:25:54,540 - 00:25:55,740] that way.
+- [00:25:59,200 - 00:25:59,800] Chinese,
+- [00:25:59,800 - 00:26:01,440] who write from top down,
+- [00:26:01,720 - 00:26:03,840] put them this way.
+- [00:26:03,840 - 00:26:04,940] Child,
+- [00:26:04,940 - 00:26:07,500] old man.
+- [00:26:10,100 - 00:26:10,740] Israelis,
+- [00:26:10,740 - 00:26:11,880] which way they go?
+- [00:26:12,080 - 00:26:12,980] The other way.
+- [00:26:16,320 - 00:26:19,560] So it's apparent that they envision time differently,
+- [00:26:19,840 - 00:26:20,940] this way,
+- [00:26:20,940 - 00:26:21,800] for Israelis.
+- [00:26:23,300 - 00:26:27,000] And the only people who go from bottom to top
+- [00:26:27,000 - 00:26:27,640] are physicists.
+- [00:26:32,560 - 00:26:34,020] She didn't say that,
+- [00:26:34,020 - 00:26:34,620] the psychologist.
+- [00:26:34,960 - 00:26:35,820] I just said it now.
+- [00:26:35,960 - 00:26:39,180] It's apparently the only people who realize
+- [00:26:39,180 - 00:26:41,980] that time flows upward are physicists.
+- [00:26:43,760 - 00:26:44,800] Don't ask me why,
+- [00:26:44,800 - 00:26:45,440] I have no idea.
+- [00:26:45,840 - 00:26:49,080] But in any case,
+- [00:26:49,080 - 00:26:49,840] that's a bit awkward,
+- [00:26:49,980 - 00:26:52,340] because we also usually think of
+- [00:26:52,340 - 00:26:54,280] the independent variable in a graph
+- [00:26:54,280 - 00:26:55,480] as the horizontal axis,
+- [00:26:55,480 - 00:26:56,500] right?
+- [00:26:56,500 - 00:26:57,940] And we like to think
+- [00:26:57,940 - 00:26:59,380] of time as the independent variable
+- [00:26:59,380 - 00:27:01,300] and position as the dependent variable.
+- [00:27:01,480 - 00:27:02,500] What's x of t?
+- [00:27:03,260 - 00:27:05,300] So I'm going to turn this graph around.
+- [00:27:08,140 - 00:27:09,540] We're going to make this time
+- [00:27:11,240 - 00:27:12,240] this x,
+- [00:27:13,260 - 00:27:15,440] and the trajectory of a particle
+- [00:27:15,440 - 00:27:16,460] is going to be a curve.
+- [00:27:18,820 - 00:27:19,860] The problem,
+- [00:27:20,900 - 00:27:23,480] so there's a standard problem of mechanics,
+- [00:27:23,740 - 00:27:24,880] we've talked about it before.
+- [00:27:26,500 - 00:27:28,120] If you know the initial conditions,
+- [00:27:28,800 - 00:27:30,880] and what do the initial conditions consist of?
+- [00:27:31,040 - 00:27:32,880] They consist of knowing the position
+- [00:27:33,440 - 00:27:34,240] and the velocity.
+- [00:27:34,700 - 00:27:36,360] So on this diagram here,
+- [00:27:36,600 - 00:27:39,360] knowing the position is of course knowing what x is
+- [00:27:39,360 - 00:27:40,320] at a particular time.
+- [00:27:40,620 - 00:27:43,220] Knowing the velocity is knowing the derivative.
+- [00:27:43,960 - 00:27:46,360] So if you know the position and the derivative
+- [00:27:46,360 - 00:27:47,400] at one instant of time,
+- [00:27:47,500 - 00:27:49,520] Newton's equations allow you to construct
+- [00:27:49,520 - 00:27:51,240] the whole trajectory if you know the forces.
+- [00:27:52,600 - 00:27:54,200] You need two pieces of information
+- [00:27:54,200 - 00:27:55,220] for each coordinate,
+- [00:27:55,220 - 00:27:56,340] a position and a velocity.
+- [00:27:56,760 - 00:28:00,100] The other version of classical mechanics
+- [00:28:00,100 - 00:28:01,540] is to say,
+- [00:28:01,540 - 00:28:02,000] again,
+- [00:28:02,060 - 00:28:04,260] you need two pieces of information for each coordinate.
+- [00:28:04,560 - 00:28:07,680] Instead of knowing the initial position and velocity,
+- [00:28:08,120 - 00:28:11,580] you know the position at time t0,
+- [00:28:11,800 - 00:28:12,780] let's call it x0,
+- [00:28:13,040 - 00:28:15,020] and you know the position,
+- [00:28:16,120 - 00:28:17,020] let's call it,
+- [00:28:17,020 - 00:28:19,260] this is at t1,
+- [00:28:20,720 - 00:28:24,000] and you know x at time t1,
+- [00:28:24,040 - 00:28:25,200] let's call it just x of 1.
+- [00:28:27,440 - 00:28:29,020] So what you're given then
+- [00:28:29,020 - 00:28:31,200] is the location of an object,
+- [00:28:31,320 - 00:28:31,740] a particle,
+- [00:28:31,740 - 00:28:32,660] or whatever it is,
+- [00:28:32,740 - 00:28:34,100] at two different times,
+- [00:28:34,200 - 00:28:36,840] and you're asked to fill in the trajectory in between
+- [00:28:39,040 - 00:28:41,500] that corresponds to the actual orbit
+- [00:28:41,500 - 00:28:42,800] between those two points.
+- [00:28:45,540 - 00:28:46,540] This time,
+- [00:28:46,540 - 00:28:47,820] the initial velocity
+- [00:28:47,820 - 00:28:49,200] will be part of the solution.
+- [00:28:50,440 - 00:28:52,680] You'll need to aim it in the right way
+- [00:28:52,680 - 00:28:53,640] with the right velocity
+- [00:28:53,640 - 00:28:55,200] to get it to go to that point,
+- [00:28:55,220 - 00:28:56,100] in space and time.
+- [00:28:56,400 - 00:28:59,500] So the initial velocity will not be now an input,
+- [00:28:59,680 - 00:29:00,800] it will be part of the solution.
+- [00:29:01,920 - 00:29:06,000] This is the other form of the problems of mechanics,
+- [00:29:06,240 - 00:29:07,220] the problems of all of physics.
+- [00:29:07,640 - 00:29:09,980] Given an initial and final configuration,
+- [00:29:10,420 - 00:29:12,260] find what interpolates between them.
+- [00:29:14,180 - 00:29:15,180] And guess what?
+- [00:29:15,380 - 00:29:18,500] The answer in all problems of classical physics
+- [00:29:18,500 - 00:29:20,420] is to minimize something,
+- [00:29:20,660 - 00:29:24,000] is to minimize something associated with the path
+- [00:29:24,000 - 00:29:25,200] between these two points.
+- [00:29:25,220 - 00:29:25,740] And in fact,
+- [00:29:25,740 - 00:29:26,740] that something is an integral
+- [00:29:26,740 - 00:29:27,880] from one point to another,
+- [00:29:28,000 - 00:29:29,480] and it's called the action.
+- [00:29:29,920 - 00:29:31,000] When I say minimize,
+- [00:29:32,100 - 00:29:34,020] I mean make stationary.
+- [00:29:35,260 - 00:29:35,900] Minimize,
+- [00:29:35,900 - 00:29:36,560] maximize,
+- [00:29:36,560 - 00:29:38,320] or otherwise make stationary.
+- [00:29:39,200 - 00:29:40,780] Something called the action.
+- [00:29:41,120 - 00:29:44,180] It's analogous to the distance between two points in space
+- [00:29:44,180 - 00:29:50,480] or the time along a trajectory for a light ray.
+- [00:29:50,940 - 00:29:52,060] One other example,
+- [00:29:52,180 - 00:29:55,140] one other example of a problem
+- [00:29:55,220 - 00:29:56,360] of calculus of variations,
+- [00:29:57,000 - 00:29:58,580] just to make one more example,
+- [00:30:00,240 - 00:30:03,340] is the problem of finding the configuration
+- [00:30:03,340 - 00:30:05,160] of a chain,
+- [00:30:05,320 - 00:30:06,740] of a chain with a weight
+- [00:30:06,740 - 00:30:08,520] in a gravitational field.
+- [00:30:09,460 - 00:30:10,200] All right,
+- [00:30:10,200 - 00:30:10,620] again,
+- [00:30:10,620 - 00:30:12,740] it's pinned down at two places.
+- [00:30:12,920 - 00:30:13,910] The two places don't have
+- [00:30:13,910 - 00:30:14,900] to be at the same elevation.
+- [00:30:15,440 - 00:30:17,120] It's pinned down at two places.
+- [00:30:17,560 - 00:30:19,620] The chain itself is a function,
+- [00:30:19,780 - 00:30:21,460] and you're trying to find a function
+- [00:30:21,460 - 00:30:22,640] which minimizes what?
+- [00:30:25,220 - 00:30:25,760] The energy,
+- [00:30:25,760 - 00:30:26,680] the potential energy,
+- [00:30:26,880 - 00:30:28,220] the potential energy.
+- [00:30:28,600 - 00:30:31,560] Find the configuration of lowest potential energy
+- [00:30:31,560 - 00:30:32,960] or stationary potential energy.
+- [00:30:33,040 - 00:30:33,440] There's another one,
+- [00:30:33,500 - 00:30:35,220] but all these problems have the character
+- [00:30:35,220 - 00:30:36,760] two points that are fixed,
+- [00:30:36,940 - 00:30:39,460] and some integral in between.
+- [00:30:40,560 - 00:30:42,940] The potential energy is also an integral.
+- [00:30:43,120 - 00:30:44,980] It's the potential energy of each little piece,
+- [00:30:45,200 - 00:30:47,120] and some integral
+- [00:30:49,880 - 00:30:51,680] needs to be made stationary.
+- [00:30:56,860 - 00:30:57,340] Now,
+- [00:30:57,340 - 00:30:58,580] what's the connection between
+- [00:30:59,680 - 00:31:01,000] this form of mechanics?
+- [00:31:01,420 - 00:31:01,640] Well,
+- [00:31:01,640 - 00:31:02,720] let's write it out first.
+- [00:31:02,880 - 00:31:03,700] Let's write it out first.
+- [00:31:04,080 - 00:31:05,180] There is a quantity.
+- [00:31:06,040 - 00:31:07,780] Let's call it A for action.
+- [00:31:09,220 - 00:31:11,760] It is an integral over the trajectory.
+- [00:31:12,920 - 00:31:15,200] So we can write it as an integral dt
+- [00:31:16,639 - 00:31:19,240] from t naught to t1
+- [00:31:21,420 - 00:31:23,720] of something that depends on the trajectory.
+- [00:31:24,840 - 00:31:26,100] What is that thing?
+- [00:31:26,240 - 00:31:27,400] We're going to call it L,
+- [00:31:27,620 - 00:31:28,580] the Lagrangian.
+- [00:31:29,620 - 00:31:30,920] It's the Lagrangian,
+- [00:31:31,040 - 00:31:32,140] and what does it depend on?
+- [00:31:32,300 - 00:31:36,060] It depends on every point along the trajectory.
+- [00:31:36,360 - 00:31:38,900] It depends on the position along the trajectory,
+- [00:31:39,900 - 00:31:43,080] and it depends on the velocity along the trajectory,
+- [00:31:43,400 - 00:31:44,200] x dot.
+- [00:31:46,560 - 00:31:47,800] That's analogous
+- [00:31:47,800 - 00:31:50,840] to the situation over here
+- [00:31:51,920 - 00:31:53,700] where the thing in the interval
+- [00:31:53,720 - 00:31:53,960] is an integral
+- [00:31:53,960 - 00:31:55,880] dependent on both the derivative
+- [00:31:56,600 - 00:31:57,700] of the function
+- [00:31:57,700 - 00:32:00,100] and the quantity,
+- [00:32:00,260 - 00:32:02,280] and the x itself,
+- [00:32:02,520 - 00:32:02,900] x,
+- [00:32:02,900 - 00:32:03,720] maybe even y.
+- [00:32:04,260 - 00:32:06,900] The analogy here would have,
+- [00:32:07,020 - 00:32:07,680] well,
+- [00:32:07,680 - 00:32:09,520] it would have x being like t.
+- [00:32:10,340 - 00:32:12,320] The thing you're integrating over is x.
+- [00:32:12,460 - 00:32:12,880] Here,
+- [00:32:12,880 - 00:32:14,280] the thing you're integrating over is t.
+- [00:32:14,620 - 00:32:16,760] And you're trying to find a trajectory
+- [00:32:18,360 - 00:32:20,500] which minimizes a certain quantity.
+- [00:32:21,300 - 00:32:22,380] The question is,
+- [00:32:22,380 - 00:32:23,260] how do you do that
+- [00:32:23,720 - 00:32:25,240] or better yet,
+- [00:32:25,340 - 00:32:26,700] maybe not better yet,
+- [00:32:26,880 - 00:32:28,800] but maybe a little more modest,
+- [00:32:28,940 - 00:32:30,520] how do you,
+- [00:32:31,620 - 00:32:32,920] how do you
+- [00:32:36,080 - 00:32:37,540] reconstruct this problem
+- [00:32:37,540 - 00:32:40,200] as a problem that looks like Newton's equations?
+- [00:32:40,720 - 00:32:41,720] That's what we want to know.
+- [00:32:41,740 - 00:32:43,180] What's the connection between this form
+- [00:32:43,180 - 00:32:44,400] and Newton's equations?
+- [00:32:45,200 - 00:32:45,780] All right,
+- [00:32:45,780 - 00:32:47,080] so the first thing I'm going to show you
+- [00:32:47,080 - 00:32:50,100] is that such problems can always be reduced
+- [00:32:50,100 - 00:32:51,220] to differential equations.
+- [00:32:51,860 - 00:32:53,440] So let's see how this works.
+- [00:32:56,000 - 00:32:58,260] It can always be reduced to a differential equation,
+- [00:32:58,600 - 00:33:00,780] and the differential equation has a name.
+- [00:33:00,860 - 00:33:02,620] It's called the Euler-Lagrange equation.
+- [00:33:03,460 - 00:33:03,940] Now,
+- [00:33:03,940 - 00:33:04,380] it's,
+- [00:33:04,380 - 00:33:06,180] the equation depends on what
+- [00:33:06,180 - 00:33:07,700] L of x and x dot are.
+- [00:33:07,900 - 00:33:08,990] L of x and x
+- [00:33:08,990 - 00:33:10,080] dot could be many different things.
+- [00:33:10,200 - 00:33:11,760] You could put all kinds of functions in there.
+- [00:33:12,080 - 00:33:13,880] Each function that you put in gives you
+- [00:33:13,880 - 00:33:15,340] a different Euler-Lagrange equation.
+- [00:33:15,980 - 00:33:16,940] But nevertheless,
+- [00:33:18,659 - 00:33:19,620] this problem,
+- [00:33:19,860 - 00:33:21,060] let's write the problem,
+- [00:33:21,540 - 00:33:23,700] the problem is to minimize
+- [00:33:23,720 - 00:33:25,280] or otherwise make stationary
+- [00:33:25,280 - 00:33:26,460] the action.
+- [00:33:32,700 - 00:33:33,740] Make it stationary,
+- [00:33:34,020 - 00:33:34,760] in other words,
+- [00:33:34,760 - 00:33:35,880] to do the same thing to it
+- [00:33:35,880 - 00:33:37,680] as you do when you find the minimum
+- [00:33:37,680 - 00:33:38,720] of a potential energy.
+- [00:33:38,920 - 00:33:39,680] Make it stationary.
+- [00:33:40,640 - 00:33:41,120] Okay,
+- [00:33:41,120 - 00:33:43,600] so the way to do it is to reduce it
+- [00:33:43,600 - 00:33:46,000] to the problem of minimizing an ordinary function.
+- [00:33:46,440 - 00:33:47,640] And the way you do that
+- [00:33:48,220 - 00:33:49,500] is by replacing
+- [00:33:50,879 - 00:33:52,280] this precise problem
+- [00:33:52,280 - 00:33:53,680] by an approximate problem.
+- [00:33:54,880 - 00:33:56,500] The approximate problem
+- [00:33:56,500 - 00:33:57,260] goes like this.
+- [00:33:57,380 - 00:33:58,920] Divide up the time axis
+- [00:34:00,100 - 00:34:01,460] into little increments.
+- [00:34:06,020 - 00:34:07,500] Replace the trajectory,
+- [00:34:07,820 - 00:34:08,639] let's,
+- [00:34:14,139 - 00:34:15,420] replace the trajectory
+- [00:34:15,920 - 00:34:17,440] by a sequence of
+- [00:34:18,279 - 00:34:18,800] intervals
+- [00:34:20,299 - 00:34:21,719] and so forth.
+- [00:34:25,400 - 00:34:27,460] Take the size of each increment
+- [00:34:27,460 - 00:34:28,719] and call it epsilon.
+- [00:34:28,980 - 00:34:29,300] Epsilon,
+- [00:34:29,300 - 00:34:30,719] small number.
+- [00:34:30,880 - 00:34:32,420] Epsilon is always a small number.
+- [00:34:32,900 - 00:34:33,920] Call it epsilon.
+- [00:34:34,280 - 00:34:35,520] What we're going to do in the end
+- [00:34:35,520 - 00:34:36,560] is shrink it to zero.
+- [00:34:36,880 - 00:34:38,980] In the process of shrinking it to zero,
+- [00:34:39,060 - 00:34:41,420] we will replace this sort of piecewise
+- [00:34:42,100 - 00:34:44,920] straight line by an arbitrary curve.
+- [00:34:45,080 - 00:34:46,540] We're going to shrink epsilon to zero.
+- [00:34:46,659 - 00:34:47,500] But before we do,
+- [00:34:48,279 - 00:34:50,400] let's work out the approximate theory.
+- [00:34:50,719 - 00:34:52,260] The approximate theory here
+- [00:34:52,280 - 00:34:53,540] replaces the integral
+- [00:34:54,120 - 00:34:55,000] by a sum.
+- [00:34:55,580 - 00:34:56,060] Alright,
+- [00:34:56,060 - 00:34:57,700] so how do you replace an integral by a sum?
+- [00:34:59,320 - 00:35:00,280] Integral dx
+- [00:35:00,280 - 00:35:01,580] or integral dt.
+- [00:35:04,220 - 00:35:06,340] Integral is just a fancy symbol for sum.
+- [00:35:08,820 - 00:35:09,720] This becomes
+- [00:35:10,360 - 00:35:10,840] summation.
+- [00:35:13,940 - 00:35:16,220] The reason the integral is drawn like an s
+- [00:35:16,220 - 00:35:17,420] is because it stands for sum.
+- [00:35:18,920 - 00:35:19,400] But,
+- [00:35:19,400 - 00:35:20,480] we're going to replace
+- [00:35:20,480 - 00:35:21,640] that continuous sum,
+- [00:35:22,280 - 00:35:23,660] integral by an ordinary sum.
+- [00:35:24,000 - 00:35:25,280] What are we going to sum over?
+- [00:35:25,520 - 00:35:27,980] We're going to sum over each one
+- [00:35:27,980 - 00:35:29,460] of these little segments here.
+- [00:35:29,560 - 00:35:32,600] Let's call this the i-th segment over here.
+- [00:35:33,320 - 00:35:33,600] Well,
+- [00:35:33,600 - 00:35:34,300] let's call it,
+- [00:35:34,360 - 00:35:35,280] let's not use the segments.
+- [00:35:35,400 - 00:35:37,260] Let's call this the i-th site.
+- [00:35:37,920 - 00:35:40,200] This is i minus one.
+- [00:35:40,640 - 00:35:42,560] This is i plus one.
+- [00:35:42,780 - 00:35:43,960] Can everybody read that?
+- [00:35:44,420 - 00:35:45,480] i minus one,
+- [00:35:45,640 - 00:35:46,220] i,
+- [00:35:46,220 - 00:35:47,420] i plus one,
+- [00:35:47,480 - 00:35:48,740] and so forth and so on.
+- [00:35:48,740 - 00:35:51,360] We'll label these lines i.
+- [00:35:52,500 - 00:35:54,900] And let's take into account,
+- [00:35:55,020 - 00:35:55,500] first of all,
+- [00:35:55,540 - 00:35:56,420] what do we do with dt?
+- [00:35:57,080 - 00:35:58,640] What does dt really mean?
+- [00:36:00,720 - 00:36:02,520] It means this little distance here.
+- [00:36:02,620 - 00:36:03,200] This is what it means.
+- [00:36:03,300 - 00:36:04,440] It really means that little distance.
+- [00:36:05,900 - 00:36:07,260] That becomes epsilon.
+- [00:36:08,900 - 00:36:10,500] dt is replaced by epsilon.
+- [00:36:10,860 - 00:36:11,380] Now,
+- [00:36:11,380 - 00:36:12,340] how about
+- [00:36:14,780 - 00:36:17,000] the action from here to here?
+- [00:36:17,900 - 00:36:18,420] Well,
+- [00:36:18,740 - 00:36:19,540] up on the top,
+- [00:36:19,540 - 00:36:20,160] we wrote
+- [00:36:20,759 - 00:36:22,360] that it is an integral
+- [00:36:22,360 - 00:36:24,920] of that thing called l over there.
+- [00:36:25,940 - 00:36:26,380] So,
+- [00:36:26,480 - 00:36:27,620] we should write l here.
+- [00:36:30,200 - 00:36:31,080] l of
+- [00:36:31,660 - 00:36:32,820] Let's see how I did it.
+- [00:36:32,860 - 00:36:33,600] I want to get it
+- [00:36:33,600 - 00:36:34,340] just the way I did it.
+- [00:36:34,440 - 00:36:34,680] Yeah.
+- [00:36:35,260 - 00:36:36,460] l of what?
+- [00:36:36,900 - 00:36:38,880] l of x sub i.
+- [00:36:42,320 - 00:36:43,300] That's the value of
+- [00:36:43,900 - 00:36:45,480] x at this point over here.
+- [00:36:46,020 - 00:36:46,900] That's replacing
+- [00:36:49,339 - 00:36:50,280] x over here.
+- [00:36:50,660 - 00:36:51,060] Incidentally,
+- [00:36:51,060 - 00:36:52,500] what is x a function of over here?
+- [00:36:54,620 - 00:36:55,520] x is a function.
+- [00:36:56,460 - 00:36:57,420] It's a function of time.
+- [00:36:57,820 - 00:37:00,500] It gets replaced by a function
+- [00:37:00,500 - 00:37:02,120] or a discrete function of i.
+- [00:37:02,900 - 00:37:03,300] Alright,
+- [00:37:03,300 - 00:37:04,300] so l is a function of i.
+- [00:37:04,360 - 00:37:05,220] And what about the velocity?
+- [00:37:05,420 - 00:37:06,440] What are we going to do with the velocity?
+- [00:37:07,460 - 00:37:08,120] x dot.
+- [00:37:08,120 - 00:37:09,640] x dot is the velocity.
+- [00:37:09,940 - 00:37:10,840] What are we going to do with it?
+- [00:37:11,080 - 00:37:11,480] Well,
+- [00:37:11,480 - 00:37:12,900] we're going to replace x dot
+- [00:37:15,220 - 00:37:16,440] by the ratio,
+- [00:37:16,660 - 00:37:17,380] the slope,
+- [00:37:17,380 - 00:37:17,920] basically,
+- [00:37:18,740 - 00:37:20,720] the ratio of delta x
+- [00:37:20,720 - 00:37:22,560] to delta t.
+- [00:37:23,740 - 00:37:24,880] In other words,
+- [00:37:24,900 - 00:37:26,040] we're going to replace it by,
+- [00:37:26,200 - 00:37:27,220] let's see what it is,
+- [00:37:32,320 - 00:37:33,420] let's write it
+- [00:37:34,660 - 00:37:36,740] x sub i plus 1
+- [00:37:36,740 - 00:37:38,800] minus x sub i
+- [00:37:39,540 - 00:37:40,900] over epsilon.
+- [00:37:43,420 - 00:37:44,960] This is the approximation
+- [00:37:46,360 - 00:37:48,180] to the velocity between
+- [00:37:48,740 - 00:37:49,900] i and i plus 1.
+- [00:37:50,100 - 00:37:52,360] I'm now focusing on the interval
+- [00:37:52,360 - 00:37:54,320] between i and i plus 1.
+- [00:37:54,460 - 00:37:55,360] Right over here.
+- [00:37:58,240 - 00:37:59,240] This quantity,
+- [00:37:59,240 - 00:38:00,460] this Lagrangian quantity,
+- [00:38:00,740 - 00:38:01,640] depends on position
+- [00:38:01,640 - 00:38:03,600] and it depends on velocity,
+- [00:38:03,800 - 00:38:05,580] and velocity is being approximated
+- [00:38:05,580 - 00:38:08,500] by the change in position
+- [00:38:08,500 - 00:38:10,600] divided by the time interval.
+- [00:38:11,960 - 00:38:13,440] What do we do with this?
+- [00:38:13,500 - 00:38:16,040] We sum it over all of these little
+- [00:38:16,980 - 00:38:17,940] intervals here.
+- [00:38:18,740 - 00:38:20,340] That's an approximation to the action.
+- [00:38:20,960 - 00:38:22,900] Now we have a function
+- [00:38:22,900 - 00:38:24,600] which is only a function
+- [00:38:24,600 - 00:38:26,220] of some discrete variables,
+- [00:38:26,660 - 00:38:27,660] x sub i,
+- [00:38:27,660 - 00:38:28,640] all the x's.
+- [00:38:28,960 - 00:38:30,880] We've replaced the continuous function
+- [00:38:30,880 - 00:38:32,960] by a function of these heights.
+- [00:38:34,520 - 00:38:36,280] This is an ordinary function now
+- [00:38:36,280 - 00:38:36,980] of these heights.
+- [00:38:38,020 - 00:38:39,840] And we can ask to make it stationary.
+- [00:38:40,080 - 00:38:40,940] How do we make it stationary?
+- [00:38:41,260 - 00:38:44,300] By differentiating with respect to the x i's.
+- [00:38:45,440 - 00:38:46,300] Let me just,
+- [00:38:46,860 - 00:38:48,460] just in case anybody has gotten
+- [00:38:48,740 - 00:38:49,100] confused,
+- [00:38:49,100 - 00:38:50,640] i does not stand
+- [00:38:50,640 - 00:38:51,700] for the direction of space,
+- [00:38:51,900 - 00:38:53,900] it doesn't stand for the particle number,
+- [00:38:54,200 - 00:38:56,200] it just stands for time.
+- [00:38:57,580 - 00:38:57,780] Okay?
+- [00:38:59,260 - 00:38:59,860] Alright,
+- [00:38:59,860 - 00:39:00,660] so let's go to
+- [00:39:00,660 - 00:39:02,280] a particular point over here,
+- [00:39:02,340 - 00:39:03,040] the point i.
+- [00:39:04,840 - 00:39:05,840] And let's ask,
+- [00:39:06,320 - 00:39:08,280] let's differentiate this expression
+- [00:39:08,280 - 00:39:10,020] with respect to x i.
+- [00:39:10,360 - 00:39:11,580] We're changing x i,
+- [00:39:11,580 - 00:39:12,700] keeping everything else
+- [00:39:12,700 - 00:39:13,180] fixed.
+- [00:39:13,760 - 00:39:15,460] Keep everything else fixed,
+- [00:39:15,660 - 00:39:17,900] and we're going to calculate the derivative,
+- [00:39:18,740 - 00:39:20,360] the partial derivative with respect to x i,
+- [00:39:20,700 - 00:39:22,100] moving this up and down,
+- [00:39:22,160 - 00:39:23,320] varying it a little bit,
+- [00:39:23,400 - 00:39:24,800] of this expression.
+- [00:39:26,340 - 00:39:26,900] Now,
+- [00:39:27,780 - 00:39:29,620] it varies for two reasons
+- [00:39:29,620 - 00:39:31,360] when you change x i a little bit.
+- [00:39:31,540 - 00:39:34,140] It varies because x i varies,
+- [00:39:34,540 - 00:39:35,820] but it also varies
+- [00:39:35,820 - 00:39:39,420] because if you keep x i plus one fixed,
+- [00:39:40,820 - 00:39:42,180] and vary x i,
+- [00:39:42,420 - 00:39:44,340] the velocity changes a little bit.
+- [00:39:44,960 - 00:39:46,300] So there's two reasons
+- [00:39:46,300 - 00:39:47,960] why this expression
+- [00:39:48,740 - 00:39:50,500] changes when you change x i a little bit.
+- [00:39:50,720 - 00:39:52,460] We have to take them both into account
+- [00:39:52,460 - 00:39:53,440] to get
+- [00:39:54,360 - 00:39:54,840] the
+- [00:39:56,280 - 00:39:57,100] right thing.
+- [00:39:57,280 - 00:40:00,920] So let's blow up
+- [00:40:00,920 - 00:40:02,780] the region
+- [00:40:02,780 - 00:40:03,320] of interest.
+- [00:40:04,400 - 00:40:05,700] The region of interest,
+- [00:40:05,700 - 00:40:06,580] here's x i
+- [00:40:06,580 - 00:40:07,260] over here,
+- [00:40:08,960 - 00:40:10,620] here's x i plus one
+- [00:40:10,620 - 00:40:11,260] over here,
+- [00:40:12,440 - 00:40:12,920] no,
+- [00:40:12,920 - 00:40:13,640] this is t i,
+- [00:40:13,640 - 00:40:14,040] sorry,
+- [00:40:14,180 - 00:40:15,040] this is t i,
+- [00:40:15,780 - 00:40:16,260] no,
+- [00:40:16,260 - 00:40:16,800] this is just i,
+- [00:40:16,800 - 00:40:17,280] no,
+- [00:40:17,280 - 00:40:17,780] sorry.
+- [00:40:20,260 - 00:40:21,380] Here's x i,
+- [00:40:23,180 - 00:40:25,000] here's x i plus one,
+- [00:40:26,760 - 00:40:29,240] and here's x i minus one.
+- [00:40:29,820 - 00:40:31,960] x i minus one.
+- [00:40:32,260 - 00:40:34,380] And this is i minus one.
+- [00:40:34,960 - 00:40:36,040] i plus one.
+- [00:40:38,500 - 00:40:39,920] Why don't I bother drawing
+- [00:40:39,920 - 00:40:40,680] any more than that?
+- [00:40:43,480 - 00:40:44,420] Here's the curve
+- [00:40:44,420 - 00:40:44,900] in here,
+- [00:40:45,060 - 00:40:46,040] I don't want to draw it flat.
+- [00:40:47,380 - 00:40:48,640] Here's the curve in here.
+- [00:40:48,660 - 00:40:48,720] I don't want to draw it flat.
+- [00:40:50,720 - 00:40:51,930] The reason I don't need to
+- [00:40:51,930 - 00:40:53,140] draw the rest of the curve
+- [00:40:53,140 - 00:40:55,560] is because I'm only interested in what happens
+- [00:40:55,560 - 00:40:57,140] when I change x i a little bit,
+- [00:40:57,260 - 00:40:58,560] keeping all the other ones fixed.
+- [00:40:59,300 - 00:40:59,740] So,
+- [00:40:59,740 - 00:41:01,120] the only terms
+- [00:41:01,120 - 00:41:02,100] in this sum
+- [00:41:02,700 - 00:41:03,460] which change
+- [00:41:04,259 - 00:41:06,020] when I change x i a little bit
+- [00:41:07,299 - 00:41:08,360] are these two.
+- [00:41:08,920 - 00:41:10,680] The two neighboring intervals.
+- [00:41:11,580 - 00:41:13,120] If I change x i plus one,
+- [00:41:13,260 - 00:41:14,500] I have to worry about the next one over.
+- [00:41:14,620 - 00:41:15,260] But at the moment,
+- [00:41:15,460 - 00:41:17,020] I'm just writing down
+- [00:41:18,740 - 00:41:19,500] in the action,
+- [00:41:19,660 - 00:41:21,460] if I vary x i a little bit.
+- [00:41:21,520 - 00:41:23,980] I'm differentiating this expression with respect to x i.
+- [00:41:24,470 - 00:41:24,780] So,
+- [00:41:24,780 - 00:41:26,120] let's just focus
+- [00:41:26,120 - 00:41:27,240] on these two terms.
+- [00:41:27,580 - 00:41:29,060] These two terms are
+- [00:41:30,500 - 00:41:31,740] L of
+- [00:41:32,980 - 00:41:34,000] x i
+- [00:41:35,400 - 00:41:36,640] I'm rewriting
+- [00:41:36,640 - 00:41:37,140] what's there.
+- [00:41:37,340 - 00:41:38,700] x i plus one
+- [00:41:39,720 - 00:41:42,500] minus x i over epsilon
+- [00:41:44,860 - 00:41:45,480] plus
+- [00:41:49,180 - 00:41:50,460] L of
+- [00:41:51,900 - 00:41:53,960] x i minus one
+- [00:41:55,440 - 00:41:59,460] x i minus x i minus one
+- [00:41:59,460 - 00:42:00,680] over epsilon.
+- [00:42:02,740 - 00:42:05,100] It should all be multiplied by epsilon,
+- [00:42:05,300 - 00:42:06,760] but that's not going to make any difference.
+- [00:42:07,260 - 00:42:08,920] All multiplied by epsilon.
+- [00:42:09,560 - 00:42:10,820] Epsilon is from here.
+- [00:42:13,180 - 00:42:13,820] Okay,
+- [00:42:13,820 - 00:42:15,060] so I've just selected out
+- [00:42:15,060 - 00:42:16,000] these two terms.
+- [00:42:16,300 - 00:42:18,720] This one depends on x i over here.
+- [00:42:18,720 - 00:42:20,060] This one depends on x i
+- [00:42:20,650 - 00:42:22,000] an interval over.
+- [00:42:22,620 - 00:42:24,540] This one depends on the velocity
+- [00:42:24,540 - 00:42:25,640] between here and here.
+- [00:42:25,920 - 00:42:28,600] This one depends on the velocity between here and here.
+- [00:42:28,740 - 00:42:30,340] Now I want to differentiate
+- [00:42:30,340 - 00:42:32,460] this function with respect
+- [00:42:32,460 - 00:42:33,300] to x i.
+- [00:42:35,800 - 00:42:36,560] This could be
+- [00:42:36,560 - 00:42:37,020] x seven.
+- [00:42:38,020 - 00:42:39,220] i could be seven,
+- [00:42:39,220 - 00:42:40,060] i plus one eight,
+- [00:42:40,060 - 00:42:40,740] and so forth.
+- [00:42:41,200 - 00:42:42,660] Let's differentiate it with respect
+- [00:42:42,660 - 00:42:43,180] to x i.
+- [00:42:43,180 - 00:42:44,180] Okay.
+- [00:42:48,780 - 00:42:51,320] This term depends on x i directly.
+- [00:42:51,760 - 00:42:52,960] This one does not.
+- [00:42:53,040 - 00:42:54,680] It only depends on x i minus one.
+- [00:42:55,040 - 00:42:56,700] So this one we have to
+- [00:42:56,700 - 00:42:59,160] differentiate with respect to x i over here.
+- [00:42:59,400 - 00:43:00,560] That will give us
+- [00:43:00,560 - 00:43:02,800] epsilon times the derivative
+- [00:43:02,800 - 00:43:04,880] of L with respect
+- [00:43:04,880 - 00:43:05,820] to x i.
+- [00:43:07,460 - 00:43:08,940] And this is
+- [00:43:08,940 - 00:43:11,120] x i
+- [00:43:11,120 - 00:43:12,880] and x i
+- [00:43:12,880 - 00:43:14,680] plus one minus x i
+- [00:43:14,680 - 00:43:15,500] over epsilon.
+- [00:43:16,060 - 00:43:17,440] Let's just call this velocity.
+- [00:43:20,240 - 00:43:20,680] velocity
+- [00:43:20,680 - 00:43:20,940] i.
+- [00:43:23,420 - 00:43:24,680] This symbol I'm just
+- [00:43:24,680 - 00:43:25,420] going to call velocity.
+- [00:43:26,760 - 00:43:28,420] It's an approximation to the velocity.
+- [00:43:28,740 - 00:43:30,440] And I'm going to label it as
+- [00:43:30,440 - 00:43:31,880] belonging to the point v i.
+- [00:43:32,360 - 00:43:34,020] Now what about this one over here?
+- [00:43:34,340 - 00:43:36,660] This one does not depend on x i.
+- [00:43:37,000 - 00:43:38,740] This depends on x i minus one.
+- [00:43:38,920 - 00:43:40,860] So when I differentiate it with respect to x i
+- [00:43:40,860 - 00:43:41,600] I don't get anything.
+- [00:43:42,600 - 00:43:43,040] Alright.
+- [00:43:44,100 - 00:43:47,020] What about when I differentiate with respect to x i
+- [00:43:47,020 - 00:43:48,540] from the dependence from here?
+- [00:43:48,720 - 00:43:49,360] What do I get?
+- [00:43:50,940 - 00:43:52,280] Now this one's a little bit easier.
+- [00:43:52,440 - 00:43:53,400] Let's do this one first.
+- [00:43:55,960 - 00:43:56,580] We get
+- [00:43:56,580 - 00:43:57,300] plus epsilon
+- [00:43:59,600 - 00:44:00,480] L of
+- [00:44:01,140 - 00:44:02,480] x i minus one
+- [00:44:04,020 - 00:44:04,460] sorry
+- [00:44:06,340 - 00:44:06,780] We're
+- [00:44:06,780 - 00:44:08,920] differentiating with respect to x i here.
+- [00:44:09,120 - 00:44:10,580] Anybody know what we could do?
+- [00:44:10,860 - 00:44:10,880] Yeah.
+- [00:44:12,700 - 00:44:13,140] V.
+- [00:44:16,100 - 00:44:16,540] Right.
+- [00:44:16,700 - 00:44:16,900] Good.
+- [00:44:16,900 - 00:44:17,780] Partial of L.
+- [00:44:20,680 - 00:44:22,740] With respect to v i
+- [00:44:24,760 - 00:44:26,740] times the change in v i
+- [00:44:26,740 - 00:44:28,800] when I change x i a little bit.
+- [00:44:28,900 - 00:44:29,760] And what is that?
+- [00:44:29,920 - 00:44:30,700] That's one over epsilon.
+- [00:44:32,300 - 00:44:33,680] The change in v i when
+- [00:44:33,680 - 00:44:35,060] I change x i a little bit.
+- [00:44:35,260 - 00:44:36,800] Now what about this one over here?
+- [00:44:37,580 - 00:44:39,100] Same kind of thing.
+- [00:44:41,180 - 00:44:42,340] One over epsilon
+- [00:44:43,240 - 00:44:44,720] derivative of Lagrangian
+- [00:44:44,720 - 00:44:47,060] with respect to the velocity
+- [00:44:47,060 - 00:44:48,700] and the derivative of the velocity
+- [00:44:48,700 - 00:44:50,520] with a minus sign.
+- [00:44:51,640 - 00:44:52,200] Why?
+- [00:44:52,680 - 00:44:55,000] Because when I move v i a little bit
+- [00:44:55,000 - 00:44:56,820] in this term over here
+- [00:44:56,820 - 00:44:57,480] if I,
+- [00:44:57,480 - 00:44:58,740] let's say I increase v i
+- [00:44:58,740 - 00:45:01,000] then the velocity increases here
+- [00:45:01,000 - 00:45:02,140] but it decreases here.
+- [00:45:02,300 - 00:45:03,840] So that means there's a minus sign here
+- [00:45:04,760 - 00:45:06,140] and this is the derivative
+- [00:45:06,540 - 00:45:08,560] of L with respect to v
+- [00:45:08,560 - 00:45:10,040] but at point
+- [00:45:10,700 - 00:45:12,000] i plus one.
+- [00:45:13,760 - 00:45:14,620] This point
+- [00:45:14,620 - 00:45:16,840] is moved forward by one unit
+- [00:45:16,840 - 00:45:18,320] relative to this one over here.
+- [00:45:18,680 - 00:45:20,140] So there are two terms
+- [00:45:21,580 - 00:45:22,600] well three terms,
+- [00:45:22,720 - 00:45:23,240] excuse me.
+- [00:45:23,240 - 00:45:24,720] One of them is just
+- [00:45:24,720 - 00:45:26,880] the derivative of the Lagrangian with respect to position
+- [00:45:26,880 - 00:45:28,460] and the other two
+- [00:45:28,460 - 00:45:29,730] have to do with the derivative
+- [00:45:29,730 - 00:45:31,000] of the Lagrangian with respect to velocity.
+- [00:45:31,400 - 00:45:32,720] But notice that
+- [00:45:32,720 - 00:45:35,000] they're shifted with respect to each other a little bit.
+- [00:45:35,900 - 00:45:36,760] In fact
+- [00:45:36,760 - 00:45:38,680] this is the difference of
+- [00:45:38,680 - 00:45:40,560] two functions at neighboring
+- [00:45:40,560 - 00:45:42,680] points divided by
+- [00:45:42,680 - 00:45:43,040] epsilon
+- [00:45:45,259 - 00:45:46,220] all times
+- [00:45:46,840 - 00:45:48,600] there's an overall epsilon everywhere
+- [00:45:48,600 - 00:45:49,700] that doesn't matter.
+- [00:45:51,680 - 00:45:52,640] What is
+- [00:45:52,640 - 00:45:54,620] the difference of two functions
+- [00:45:54,620 - 00:45:56,580] divided by epsilon and the limit that
+- [00:45:56,580 - 00:45:57,320] epsilon is small?
+- [00:45:59,080 - 00:46:00,640] It's just the derivative.
+- [00:46:01,180 - 00:46:02,540] It's just the derivative.
+- [00:46:02,660 - 00:46:04,060] The derivative with respect to what?
+- [00:46:05,660 - 00:46:06,300] Time.
+- [00:46:07,480 - 00:46:08,120] And
+- [00:46:09,140 - 00:46:10,700] so we can replace
+- [00:46:10,700 - 00:46:12,700] all of this by simply
+- [00:46:12,700 - 00:46:14,400] writing its minus
+- [00:46:14,400 - 00:46:16,020] if you keep track of the signs
+- [00:46:17,720 - 00:46:19,540] derivative with respect to time
+- [00:46:20,240 - 00:46:21,260] of the
+- [00:46:21,260 - 00:46:23,280] derivative of the Lagrangian
+- [00:46:23,280 - 00:46:25,320] with respect to the velocity.
+- [00:46:25,780 - 00:46:27,380] So it has two terms
+- [00:46:27,380 - 00:46:28,660] the variation
+- [00:46:29,300 - 00:46:30,600] we can write this now
+- [00:46:30,600 - 00:46:32,280] the variation of the action
+- [00:46:34,540 - 00:46:35,620] when I vary
+- [00:46:35,620 - 00:46:36,900] x i a little bit
+- [00:46:38,060 - 00:46:39,380] has two terms
+- [00:46:40,860 - 00:46:42,340] it's proportional to
+- [00:46:42,340 - 00:46:43,700] d by dt
+- [00:46:44,560 - 00:46:46,820] of the derivative of the Lagrangian
+- [00:46:46,840 - 00:46:48,700] with respect to the velocity
+- [00:46:48,700 - 00:46:49,720] which is x dot
+- [00:46:51,460 - 00:46:52,820] and there's a minus sign
+- [00:46:53,720 - 00:46:54,400] let's see
+- [00:46:54,400 - 00:46:56,000] maybe this one's the minus sign
+- [00:46:56,640 - 00:46:56,900] plus
+- [00:46:58,000 - 00:47:00,780] derivative of the Lagrangian with respect to x
+- [00:47:04,340 - 00:47:04,860] Okay,
+- [00:47:04,860 - 00:47:05,960] again just to go through it
+- [00:47:05,960 - 00:47:06,800] briefly again
+- [00:47:09,860 - 00:47:10,700] we just
+- [00:47:10,700 - 00:47:13,140] differentiate the Lagrangian with respect to x
+- [00:47:13,140 - 00:47:15,140] that's clearly an obvious thing to do
+- [00:47:15,140 - 00:47:16,820] we want to see how much
+- [00:47:16,840 - 00:47:17,980] this thing changes when we
+- [00:47:17,980 - 00:47:19,120] vary x i a little bit
+- [00:47:19,120 - 00:47:19,940] that's this term
+- [00:47:20,620 - 00:47:21,900] and then there are two terms
+- [00:47:22,940 - 00:47:24,700] coming from the velocity dependence
+- [00:47:25,920 - 00:47:26,400] one
+- [00:47:27,920 - 00:47:28,400] associated
+- [00:47:31,660 - 00:47:33,020] with the interval
+- [00:47:33,020 - 00:47:34,160] in front of that point
+- [00:47:34,160 - 00:47:37,180] and one associated with the interval behind that point
+- [00:47:37,180 - 00:47:39,020] and they come in with opposite sign
+- [00:47:39,500 - 00:47:40,860] because when you move this point
+- [00:47:40,860 - 00:47:41,580] up and down
+- [00:47:42,540 - 00:47:44,700] the velocities in the two terms here differ
+- [00:47:44,700 - 00:47:45,800] by sign
+- [00:47:46,840 - 00:47:46,960] and by velocity
+- [00:47:46,960 - 00:47:49,280] if you move this point up
+- [00:47:50,600 - 00:47:52,200] this velocity increases
+- [00:47:52,200 - 00:47:53,600] and this velocity decreases
+- [00:47:53,600 - 00:47:55,560] that's why there's a minus sign
+- [00:47:55,560 - 00:47:58,000] and that's why there's a derivative with respect to time
+- [00:47:58,760 - 00:47:59,360] alright,
+- [00:47:59,360 - 00:48:00,500] so the general rule
+- [00:48:01,180 - 00:48:02,780] the action principle
+- [00:48:04,600 - 00:48:05,800] is equivalent
+- [00:48:06,600 - 00:48:08,220] you go to each point
+- [00:48:09,440 - 00:48:10,320] you say
+- [00:48:10,320 - 00:48:12,260] the action is really a function
+- [00:48:12,260 - 00:48:14,460] of a whole bunch of discrete points
+- [00:48:14,460 - 00:48:15,860] you apply
+- [00:48:15,860 - 00:48:16,820] the principle of the Lagrangian
+- [00:48:16,840 - 00:48:18,240] principle of differentiating
+- [00:48:18,240 - 00:48:19,180] and setting equal to zero
+- [00:48:19,180 - 00:48:20,760] and you get
+- [00:48:20,760 - 00:48:22,620] you now have an equation
+- [00:48:22,620 - 00:48:23,540] at each time
+- [00:48:23,540 - 00:48:26,580] this equation has to be true
+- [00:48:26,580 - 00:48:27,240] what is the equation?
+- [00:48:27,500 - 00:48:28,820] it has to be equal to zero
+- [00:48:31,780 - 00:48:33,740] differentiating the action with respect to x i
+- [00:48:33,740 - 00:48:34,940] and setting equal to zero
+- [00:48:34,940 - 00:48:36,700] that makes the action stationary
+- [00:48:38,000 - 00:48:39,920] this is the general form
+- [00:48:39,920 - 00:48:41,260] of Lagrange's equations
+- [00:48:41,260 - 00:48:42,920] the Euler-Lagrange equations
+- [00:48:43,720 - 00:48:44,980] let's write them down here
+- [00:48:46,840 - 00:48:48,320] somebody gives you a Lagrangian
+- [00:48:48,620 - 00:48:50,400] you simply spit out the answer
+- [00:48:50,400 - 00:48:51,460] it's a machine
+- [00:48:51,940 - 00:48:53,160] given a Lagrangian,
+- [00:48:53,160 - 00:48:54,100] you spit out
+- [00:48:54,100 - 00:48:55,620] the machine spits out an answer
+- [00:48:55,620 - 00:48:58,160] and the answer is simply a differential equation
+- [00:48:59,540 - 00:49:00,560] d by dt
+- [00:49:01,740 - 00:49:03,220] of partial of L
+- [00:49:03,220 - 00:49:04,660] with respect to
+- [00:49:04,660 - 00:49:05,700] let's call it x dot
+- [00:49:07,100 - 00:49:08,040] is equal
+- [00:49:10,200 - 00:49:11,700] this one came with a minus sign
+- [00:49:11,700 - 00:49:12,940] this one came with a plus sign
+- [00:49:12,940 - 00:49:15,480] so it's just equal to partial of L
+- [00:49:15,480 - 00:49:16,520] with respect to x
+- [00:49:22,860 - 00:49:25,140] that's a general way of
+- [00:49:25,720 - 00:49:27,600] and this is a differential equation
+- [00:49:27,600 - 00:49:28,180] we'll see
+- [00:49:28,180 - 00:49:29,520] we'll work out some examples
+- [00:49:29,520 - 00:49:30,780] this is a differential equation
+- [00:49:30,780 - 00:49:31,820] we'll work out versus
+- [00:49:31,820 - 00:49:32,640] a question
+- [00:49:37,220 - 00:49:37,800] yeah
+- [00:49:37,800 - 00:49:40,260] so the results
+- [00:49:40,260 - 00:49:41,280] that we have
+- [00:49:41,980 - 00:49:43,120] correct me if I'm wrong
+- [00:49:43,120 - 00:49:44,640] it seems like it depends on
+- [00:49:45,320 - 00:49:46,820] that this result is similar
+- [00:49:46,840 - 00:49:49,240] is valid for any function of
+- [00:49:49,240 - 00:49:50,180] x and x dot
+- [00:49:50,180 - 00:49:50,820] is that true?
+- [00:49:50,960 - 00:49:51,240] yeah
+- [00:49:51,240 - 00:49:52,800] we call it Lagrangian
+- [00:49:52,800 - 00:49:57,300] you can call it the distance between two points
+- [00:49:57,300 - 00:49:58,900] you can now take
+- [00:49:58,900 - 00:50:00,140] there's an example up there
+- [00:50:00,140 - 00:50:01,340] in that example
+- [00:50:01,340 - 00:50:03,020] x replaces t
+- [00:50:03,020 - 00:50:04,860] and y replaces x
+- [00:50:04,860 - 00:50:06,000] I'm sorry I did that,
+- [00:50:06,000 - 00:50:06,480] but I did
+- [00:50:16,840 - 00:50:18,390] that basically tells you what the
+- [00:50:18,390 - 00:50:19,940] trajectory of a straight line is,
+- [00:50:19,940 - 00:50:23,140] an equation that has linear solutions,
+- [00:50:23,140 - 00:50:24,460] straight line solutions.
+- [00:50:25,220 - 00:50:26,000] All right,
+- [00:50:26,000 - 00:50:26,160] now,
+- [00:50:26,160 - 00:50:27,940] the question.
+- [00:50:28,740 - 00:50:30,870] I said that this is
+- [00:50:30,870 - 00:50:33,000] an alternative formulation of Newton's equations.
+- [00:50:35,040 - 00:50:40,150] What I meant by that is that we can find
+- [00:50:40,150 - 00:50:45,260] an L such that when you write down the Euler-Lagrange equations,
+- [00:50:45,260 - 00:50:46,620] it is Newton's equation.
+- [00:50:47,720 - 00:50:48,680] I will tell you,
+- [00:50:48,680 - 00:50:50,060] now we're just going to do it.
+- [00:50:50,320 - 00:50:51,480] Now we're just going to do it.
+- [00:50:51,560 - 00:50:53,840] We're going to write down what L is
+- [00:50:53,840 - 00:50:56,120] for a particle moving in a potential energy.
+- [00:50:57,820 - 00:51:00,000] Our potential energy is V of X.
+- [00:51:05,920 - 00:51:08,100] Another thing we need is the kinetic energy.
+- [00:51:08,420 - 00:51:09,880] This is the potential energy,
+- [00:51:09,880 - 00:51:11,200] P.
+- [00:51:14,460 - 00:51:15,240] Kinetic energy.
+- [00:51:17,299 - 00:51:18,880] One-half m,
+- [00:51:18,880 - 00:51:20,620] X dot squared.
+- [00:51:22,560 - 00:51:24,080] Potential energy and kinetic energy.
+- [00:51:24,380 - 00:51:26,460] And now I'll tell you what the Lagrangian is.
+- [00:51:27,759 - 00:51:28,680] The Lagrangian,
+- [00:51:28,680 - 00:51:31,860] which depends on X dot and X,
+- [00:51:31,860 - 00:51:34,440] is just equal to the kinetic energy.
+- [00:51:37,260 - 00:51:38,580] And now we can take a vote,
+- [00:51:38,580 - 00:51:39,260] but I won't.
+- [00:51:40,960 - 00:51:43,020] Should we put in V of X?
+- [00:51:43,900 - 00:51:44,360] No,
+- [00:51:44,360 - 00:51:44,860] I won't.
+- [00:51:44,860 - 00:51:45,240] I want the sub-divide.
+- [00:51:45,260 - 00:51:46,120] I object you to a vote.
+- [00:51:46,240 - 00:51:47,140] The answer is no.
+- [00:51:47,320 - 00:51:49,140] You put in minus V of X.
+- [00:51:49,340 - 00:51:49,940] Now that's odd.
+- [00:51:49,980 - 00:51:50,340] That's weird,
+- [00:51:50,340 - 00:51:50,660] right?
+- [00:51:51,080 - 00:51:53,110] How come it's not the sum of
+- [00:51:53,110 - 00:51:55,140] the kinetic energy plus the potential energy?
+- [00:51:55,780 - 00:51:56,300] Well,
+- [00:51:56,300 - 00:51:57,400] it's just not the energy.
+- [00:51:57,580 - 00:52:00,880] We're looking for something which will have the
+- [00:52:00,880 - 00:52:04,180] property that when we apply the Euler-Lagrange equations,
+- [00:52:04,480 - 00:52:05,560] we get Newton's equations.
+- [00:52:06,120 - 00:52:09,610] The only thing we can do now is to apply
+- [00:52:09,610 - 00:52:13,100] the Euler-Lagrange equation and see that it really is Newton's equation.
+- [00:52:14,100 - 00:52:14,620] Okay.
+- [00:52:14,620 - 00:52:16,040] So what's partial of L with
+- [00:52:16,040 - 00:52:17,460] respect to X dot in this formula?
+- [00:52:23,440 - 00:52:25,580] Partial of L with respect to
+- [00:52:25,580 - 00:52:27,720] X dot is just M X dot,
+- [00:52:27,720 - 00:52:28,020] right?
+- [00:52:29,280 - 00:52:29,920] In fact,
+- [00:52:29,920 - 00:52:30,460] it's the momentum.
+- [00:52:31,440 - 00:52:32,760] And that's a good thing to remember.
+- [00:52:34,500 - 00:52:36,400] That partial of L with respect to
+- [00:52:36,400 - 00:52:38,300] X dot is what we usually call momentum.
+- [00:52:38,940 - 00:52:40,680] That's going to recur and recur and recur.
+- [00:52:41,000 - 00:52:43,400] And it's going to be our general definition of momentum.
+- [00:52:46,319 - 00:52:48,740] We still have to differentiate with respect to time.
+- [00:52:49,440 - 00:52:50,120] So far,
+- [00:52:50,120 - 00:52:51,190] I just wrote partial of
+- [00:52:51,190 - 00:52:52,260] L with respect to X dot.
+- [00:52:52,880 - 00:52:55,360] Now it says differentiate it with respect to time.
+- [00:52:55,540 - 00:52:57,920] So this is going to be X double dot.
+- [00:53:00,440 - 00:53:00,880] Okay.
+- [00:53:01,800 - 00:53:03,340] What about DL by DX?
+- [00:53:09,980 - 00:53:11,000] Here's the X dependence.
+- [00:53:11,760 - 00:53:14,520] DL by DX is minus...
+- [00:53:14,620 - 00:53:16,060] Because of this minus sign,
+- [00:53:16,060 - 00:53:19,720] is equal to minus DV by DX.
+- [00:53:22,040 - 00:53:26,000] Or just ordinary derivative of V with respect to X.
+- [00:53:28,260 - 00:53:29,320] DV by DX.
+- [00:53:33,340 - 00:53:33,880] Well,
+- [00:53:33,880 - 00:53:34,560] if you remember,
+- [00:53:34,560 - 00:53:36,400] this is nothing but Newton's equations.
+- [00:53:37,420 - 00:53:37,960] Equation.
+- [00:53:38,140 - 00:53:38,660] One equation.
+- [00:53:39,440 - 00:53:42,400] Mass times acceleration is equal to minus DV DX,
+- [00:53:42,400 - 00:53:43,860] which we call force.
+- [00:53:47,640 - 00:53:48,320] OK.
+- [00:53:48,420 - 00:53:49,900] So at least in this one example,
+- [00:53:49,900 - 00:53:54,940] we have reduced the problem of making
+- [00:53:54,940 - 00:53:59,980] the action stationary to solving Newton's equations.
+- [00:54:00,300 - 00:54:00,980] They're equivalent.
+- [00:54:01,580 - 00:54:01,920] Okay.
+- [00:54:02,020 - 00:54:03,180] They're completely equivalent.
+- [00:54:03,820 - 00:54:06,580] How about many particles and many coordinates?
+- [00:54:07,260 - 00:54:09,760] If there are many particles and many coordinates,
+- [00:54:10,820 - 00:54:14,520] that means that the X space here is many dimensions.
+- [00:54:14,620 - 00:54:16,500] things coming out of the blackboard,
+- [00:54:16,500 - 00:54:18,940] but the trajectory is still just a curve.
+- [00:54:19,400 - 00:54:20,960] The trajectory is now a
+- [00:54:20,960 - 00:54:22,520] curve through a many dimensional space,
+- [00:54:22,520 - 00:54:25,280] and we have to apply
+- [00:54:25,280 - 00:54:28,440] the same rule to every coordinate,
+- [00:54:28,440 - 00:54:28,720] x,
+- [00:54:28,720 - 00:54:29,080] y,
+- [00:54:29,080 - 00:54:29,420] z,
+- [00:54:29,420 - 00:54:31,080] x of particle 1,
+- [00:54:31,080 - 00:54:32,800] y of particle 7,
+- [00:54:32,800 - 00:54:33,900] and so forth.
+- [00:54:34,060 - 00:54:36,280] We have to apply exactly the same rule.
+- [00:54:37,680 - 00:54:38,560] First of all,
+- [00:54:38,560 - 00:54:39,400] what is the Lagrangian?
+- [00:54:39,500 - 00:54:41,000] I should start with what the Lagrangian is.
+- [00:54:41,000 - 00:54:44,170] The Lagrangian is exactly the same except that
+- [00:54:44,170 - 00:54:47,340] it's a function of all of the coordinates.
+- [00:54:47,660 - 00:54:49,440] I hesitate to write x,
+- [00:54:49,440 - 00:54:50,620] y because I've used that,
+- [00:54:50,620 - 00:54:51,500] I made a mistake.
+- [00:54:51,720 - 00:54:53,720] I should not have used i over here.
+- [00:54:54,240 - 00:54:55,940] That was a bad thing
+- [00:54:55,940 - 00:54:57,640] to do because by doing it,
+- [00:54:57,640 - 00:55:01,560] I used the notation which I'm going to...
+- [00:55:05,760 - 00:55:07,750] i now stands for the
+- [00:55:07,750 - 00:55:09,740] particles and the directions of space.
+- [00:55:09,980 - 00:55:10,300] Okay.
+- [00:55:11,000 - 00:55:11,640] Different i.
+- [00:55:11,880 - 00:55:13,400] We're finished with this i.
+- [00:55:13,600 - 00:55:14,640] We're finished with that one.
+- [00:55:14,780 - 00:55:16,680] We did what we needed with that.
+- [00:55:16,740 - 00:55:17,580] We're finished with it.
+- [00:55:17,640 - 00:55:18,980] Let's erase that blackboard.
+- [00:55:20,000 - 00:55:22,660] i does not stand for discrete time anymore.
+- [00:55:23,240 - 00:55:24,660] It stands for x,
+- [00:55:24,660 - 00:55:25,060] y,
+- [00:55:25,060 - 00:55:25,600] or z.
+- [00:55:25,840 - 00:55:27,960] It stands for particle number 1,
+- [00:55:27,960 - 00:55:28,260] 3,
+- [00:55:28,260 - 00:55:28,720] 7,
+- [00:55:28,720 - 00:55:29,120] 15.
+- [00:55:29,560 - 00:55:35,600] It's all of the coordinates that we're interested in.
+- [00:55:37,400 - 00:55:40,980] The Lagrangian becomes a function of all of the coordinates.
+- [00:55:41,000 - 00:55:42,030] It's a function of all of
+- [00:55:42,030 - 00:55:43,060] the coordinates and all of the velocities.
+- [00:55:44,260 - 00:55:46,560] All of the coordinates and all of the velocities.
+- [00:55:46,800 - 00:55:49,360] And if you go through exactly the same exercise,
+- [00:55:49,360 - 00:55:51,060] you can try it out yourself,
+- [00:55:51,060 - 00:55:51,940] go through exactly
+- [00:55:51,940 - 00:55:52,840] the same exercise,
+- [00:55:52,840 - 00:55:55,860] you find out that at each point of time,
+- [00:55:55,860 - 00:55:56,660] at each interval,
+- [00:55:56,660 - 00:55:57,540] there's a
+- [00:55:57,540 - 00:55:59,580] separate equation for each coordinate.
+- [00:55:59,980 - 00:56:01,580] You want to minimize the
+- [00:56:01,580 - 00:56:03,180] action with respect to each coordinate.
+- [00:56:04,480 - 00:56:07,700] And so all that happens is you
+- [00:56:07,700 - 00:56:10,920] have a separate equation for each i.
+- [00:56:12,200 - 00:56:13,500] You have a Lagrangian,
+- [00:56:13,500 - 00:56:15,280] which depends on all of the
+- [00:56:15,280 - 00:56:17,060] coordinates and all of the velocities,
+- [00:56:17,280 - 00:56:18,280] and the equations,
+- [00:56:18,280 - 00:56:19,600] the Euler-Lagrange equations,
+- [00:56:19,600 - 00:56:22,680] are simply one equation for each coordinate.
+- [00:56:24,620 - 00:56:25,300] All right,
+- [00:56:25,300 - 00:56:27,640] so let's go through what the
+- [00:56:27,640 - 00:56:29,980] construction is then for many particles.
+- [00:56:30,880 - 00:56:32,300] If you have many particles,
+- [00:56:32,300 - 00:56:33,880] you do exactly the same thing.
+- [00:56:34,560 - 00:56:36,320] Potential energy is v of xi.
+- [00:56:36,900 - 00:56:39,480] Kinetic energy is the sum over all the i's.
+- [00:56:39,540 - 00:56:40,060] m xi.
+- [00:56:41,260 - 00:56:42,140] mv squared.
+- [00:56:43,700 - 00:56:45,920] You do exactly the same thing,
+- [00:56:45,920 - 00:56:47,840] and what do you get?
+- [00:56:47,940 - 00:56:50,420] You get m x sub i double dot,
+- [00:56:50,420 - 00:56:52,540] and what happens to dv by dx?
+- [00:56:54,980 - 00:56:56,730] It becomes the partial derivative
+- [00:56:56,730 - 00:56:58,480] of V with respect to xi.
+- [00:57:06,320 - 00:57:08,680] When you vary things with respect to xi,
+- [00:57:08,680 - 00:57:10,980] you get things called invi.
+- [00:57:10,980 - 00:57:13,930] coming from the velocities and things coming
+- [00:57:13,930 - 00:57:16,880] from the explicit dependence of v on xi.
+- [00:57:17,580 - 00:57:18,580] And what is that?
+- [00:57:18,580 - 00:57:20,910] That's just ma is equal
+- [00:57:20,910 - 00:57:23,240] to the ith component of force.
+- [00:57:25,460 - 00:57:26,740] Now you can see why
+- [00:57:26,740 - 00:57:28,020] this had to be minus here.
+- [00:57:28,020 - 00:57:30,880] If I would have made it plus,
+- [00:57:30,880 - 00:57:32,620] I would have
+- [00:57:32,620 - 00:57:33,940] gotten instead of Newton's equation,
+- [00:57:33,940 - 00:57:37,520] I would have gotten mass times acceleration is minus
+- [00:57:37,520 - 00:57:38,000] the force,
+- [00:57:38,000 - 00:57:39,960] and then I'd have to go back and say,
+- [00:57:39,960 - 00:57:40,140] look,
+- [00:57:40,140 - 00:57:42,700] I have to redefine what I mean
+- [00:57:42,700 - 00:57:43,260] by force,
+- [00:57:43,260 - 00:57:45,400] I have to redefine what I mean by potential energy,
+- [00:57:45,400 - 00:57:47,640] but with the definitions
+- [00:57:47,640 - 00:57:49,060] we've used up till now,
+- [00:57:49,060 - 00:57:53,360] the Lagrangian is kinetic energy minus potential energy,
+- [00:57:53,360 - 00:57:54,240] and
+- [00:57:54,240 - 00:57:57,750] that gives you Newton's equations as
+- [00:57:57,750 - 00:58:01,260] the Euler-Lagrange equations for the action principle.
+- [00:58:02,260 - 00:58:03,360] Now that's a lot of stuff,
+- [00:58:03,360 - 00:58:04,920] that's a lot of stuff and it's abstract.
+- [00:58:06,960 - 00:58:07,440] Is it?
+- [00:58:07,440 - 00:58:07,640] Yeah.
+- [00:58:07,800 - 00:58:10,850] So it seems like the Lagrangian and the
+- [00:58:10,850 - 00:58:13,900] action principle comes from a kind of working back
+- [00:58:13,900 - 00:58:14,640] from the answer.
+- [00:58:14,640 - 00:58:17,380] Like we want to use Kagan's
+- [00:58:17,380 - 00:58:20,120] variations and we still need a functional
+- [00:58:20,120 - 00:58:21,720] that's equivalent to Newton's law.
+- [00:58:21,720 - 00:58:23,140] Is that the way to look at it?
+- [00:58:23,420 - 00:58:23,900] No.
+- [00:58:24,320 - 00:58:24,620] No.
+- [00:58:27,920 - 00:58:28,400] No,
+- [00:58:28,400 - 00:58:29,300] it's not the way we
+- [00:58:29,300 - 00:58:30,200] would want to look at it.
+- [00:58:30,200 - 00:58:32,020] We would want to think about it differently.
+- [00:58:32,800 - 00:58:35,110] What we want to think is that the specification
+- [00:58:35,110 - 00:58:37,420] of a Lagrangian is a function of the momentum
+- [00:58:37,420 - 00:58:37,540] of the energy.
+- [00:58:37,540 - 00:58:41,630] So the Lagrangian is an extremely neat packaging
+- [00:58:41,630 - 00:58:45,720] of the laws of physics for a particular system.
+- [00:58:46,680 - 00:58:47,980] That the Lagrangian,
+- [00:58:47,980 - 00:58:50,640] one function of all of the coordinates,
+- [00:58:50,640 - 00:58:53,500] one function of all the coordinates,
+- [00:58:54,300 - 00:58:56,740] which is built out of the kinetic and potential energy,
+- [00:58:56,740 - 00:59:00,500] but one function packages all of the
+- [00:59:00,500 - 00:59:02,140] laws of physics for that system.
+- [00:59:04,460 - 00:59:05,980] So really I...
+- [00:59:05,980 - 00:59:06,580] No.
+- [00:59:06,580 - 00:59:06,660] No.
+- [00:59:07,339 - 00:59:07,620] No.
+- [00:59:07,660 - 00:59:08,560] And you have to think about it the other way.
+- [00:59:08,560 - 00:59:12,320] The given is the Lagrangian.
+- [00:59:12,320 - 00:59:13,760] It's the
+- [00:59:13,760 - 00:59:17,740] way physical problems are packaged and
+- [00:59:17,740 - 00:59:21,720] the calculation calculates for you the equations
+- [00:59:21,720 - 00:59:23,660] of motion from the Lagrangian.
+- [00:59:23,660 - 00:59:27,360] So physicists usually think about the Lagrangian as given
+- [00:59:28,120 - 00:59:31,070] and whenever a new law of physics
+- [00:59:31,070 - 00:59:34,020] of some kind is being speculated about,
+- [00:59:34,020 - 00:59:35,340] it's never
+- [00:59:35,340 - 00:59:36,560] speculated about by the academic.
+- [00:59:36,560 - 00:59:38,020] writing down the equations of motion.
+- [00:59:38,020 - 00:59:42,080] You speculate because it's more convenient,
+- [00:59:42,180 - 00:59:42,720] it's simpler,
+- [00:59:42,720 - 00:59:44,720] there are fewer unknowns,
+- [00:59:44,720 - 00:59:47,320] you speculate about what the form of the
+- [00:59:47,320 - 00:59:47,940] action is.
+- [00:59:47,940 - 00:59:53,960] So it's one function that packages
+- [00:59:53,960 - 00:59:59,980] the entire laws of physics for
+- [00:59:59,980 - 01:00:00,880] that particular system.
+- [01:00:00,880 - 01:00:02,160] Okay,
+- [01:00:02,160 - 01:00:02,720] that's good.
+- [01:00:02,720 - 01:00:10,280] That's one reason why it's a useful
+- [01:00:10,280 - 01:00:10,640] thing,
+- [01:00:10,640 - 01:00:12,580] because it packages things simply.
+- [01:00:12,580 - 01:00:15,560] The other reason is because it's an
+- [01:00:15,560 - 01:00:18,800] extremely good tool for changing variables,
+- [01:00:18,800 - 01:00:20,140] for changing coordinates.
+- [01:00:20,140 - 01:00:21,920] We
+- [01:00:21,920 - 01:00:26,760] have written down the laws of scones.
+- [01:00:43,200 - 01:00:45,870] In Cartesian coordinates we can
+- [01:00:45,870 - 01:00:48,540] write them down on polar coordinates,
+- [01:00:48,540 - 01:00:48,880] we could
+- [01:00:48,880 - 01:00:50,500] write them down in your favorite coordinates.
+- [01:00:50,500 - 01:00:52,720] We've written them down in
+- [01:00:52,720 - 01:00:55,180] coordinates that we've imagined to be standing still.
+- [01:00:55,180 - 01:00:56,980] We could try writing them
+- [01:00:56,980 - 01:00:59,380] down in coordinates which are moving,
+- [01:00:59,380 - 01:00:59,760] or
+- [01:00:59,760 - 01:00:59,960] expanding.
+- [01:00:59,960 - 01:00:59,960] We can write them down in
+- [01:00:59,960 - 01:00:59,960] coordinates that we've imagined to be
+- [01:00:59,960 - 01:01:00,980] accelerating or rotating,
+- [01:01:00,980 - 01:01:01,920] we'll do that in a minute.
+- [01:01:06,740 - 01:01:10,220] It's complicated to rewrite all of Newton's equations
+- [01:01:11,740 - 01:01:13,100] directly in,
+- [01:01:13,100 - 01:01:13,560] for example,
+- [01:01:13,560 - 01:01:15,360] rotating or other kinds of coordinates.
+- [01:01:15,660 - 01:01:17,100] It is a lot easier
+- [01:01:17,100 - 01:01:20,900] to rewrite the Lagrangian or the action
+- [01:01:21,879 - 01:01:23,740] in an arbitrary coordinate system
+- [01:01:24,440 - 01:01:25,080] and then
+- [01:01:25,759 - 01:01:27,320] once you have the Lagrangian
+- [01:01:27,320 - 01:01:30,580] you can construct the equations of motion.
+- [01:01:32,480 - 01:01:35,400] The point is that the action principle
+- [01:01:36,420 - 01:01:38,370] is really a statement that doesn't
+- [01:01:38,370 - 01:01:40,320] depend on the coordinates you use.
+- [01:01:41,060 - 01:01:43,040] If I tell you that
+- [01:01:43,660 - 01:01:46,160] the shortest distance between here and here
+- [01:01:46,880 - 01:01:48,220] is a straight line,
+- [01:01:49,620 - 01:01:51,220] that doesn't depend on what coordinates
+- [01:01:51,220 - 01:01:52,820] I use on the table here.
+- [01:01:53,280 - 01:01:55,220] I could use Cartesian coordinates,
+- [01:01:55,220 - 01:01:56,580] I could use polar coordinates,
+- [01:01:56,680 - 01:01:57,300] I could use Cartesian coordinates,
+- [01:01:57,320 - 01:01:59,140] curvilinear coordinates of all kinds.
+- [01:01:59,460 - 01:02:01,960] The physical fact that it's a straight line
+- [01:02:02,600 - 01:02:04,720] is independent of the coordinates.
+- [01:02:05,880 - 01:02:08,000] And the physical fact that the straight line
+- [01:02:08,000 - 01:02:10,540] is the shortest distance between the two points
+- [01:02:10,540 - 01:02:12,140] does not depend on the coordinates.
+- [01:02:12,620 - 01:02:13,760] So when I say
+- [01:02:15,260 - 01:02:16,820] a straight line
+- [01:02:16,820 - 01:02:19,360] is the shortest distance between two points,
+- [01:02:19,620 - 01:02:21,520] that's true in any coordinate system.
+- [01:02:23,260 - 01:02:25,680] The action principle in the same way
+- [01:02:25,680 - 01:02:28,120] is true in any coordinate system.
+- [01:02:29,220 - 01:02:30,760] If you change coordinates,
+- [01:02:30,780 - 01:02:32,960] the form of the equations of motion change,
+- [01:02:33,520 - 01:02:36,160] but the actual value of the Lagrangian doesn't.
+- [01:02:36,260 - 01:02:38,860] So we're going to do some examples of that type.
+- [01:02:39,020 - 01:02:39,540] I don't know,
+- [01:02:39,540 - 01:02:40,480] maybe we're up to that now.
+- [01:02:42,940 - 01:02:45,480] So it's an extremely convenient tool
+- [01:02:45,480 - 01:02:47,300] for changing coordinates.
+- [01:02:47,800 - 01:02:49,640] Let me give you the first example.
+- [01:02:52,200 - 01:02:53,920] The first example is taking
+- [01:02:53,920 - 01:02:57,780] a simple particle and...
+- [01:02:57,780 - 01:03:01,040] This is a terribly complicated problem,
+- [01:03:01,040 - 01:03:01,520] in fact.
+- [01:03:01,640 - 01:03:03,300] If you tried to do it directly,
+- [01:03:03,460 - 01:03:04,560] taking Newton's equations,
+- [01:03:04,900 - 01:03:06,220] or even just,
+- [01:03:06,220 - 01:03:07,300] forget Newton's equations,
+- [01:03:08,000 - 01:03:11,100] just the equation without any force,
+- [01:03:11,300 - 01:03:12,300] just forget forces,
+- [01:03:12,580 - 01:03:14,620] just the equation for a particle moving
+- [01:03:14,620 - 01:03:16,320] in a straight line.
+- [01:03:16,640 - 01:03:18,240] And what I'm interested in now
+- [01:03:18,920 - 01:03:23,760] is two frames of reference,
+- [01:03:23,760 - 01:03:26,420] one is a stationary frame of reference,
+- [01:03:26,540 - 01:03:27,840] an inertial frame of reference,
+- [01:03:28,100 - 01:03:29,580] and in this frame of reference,
+- [01:03:30,600 - 01:03:31,780] Newton's equations apply.
+- [01:03:32,980 - 01:03:33,940] And in fact,
+- [01:03:33,940 - 01:03:35,400] we're going to set force equal to zero,
+- [01:03:35,600 - 01:03:39,460] so that just says mass times acceleration equals zero,
+- [01:03:40,060 - 01:03:42,840] mass times y double dot is equal to zero.
+- [01:03:43,240 - 01:03:44,780] It's a two-dimensional problem.
+- [01:03:45,160 - 01:03:46,580] The other coordinate system,
+- [01:03:46,820 - 01:03:47,800] which I'll draw in red,
+- [01:03:50,420 - 01:03:51,480] looks like this.
+- [01:03:54,700 - 01:03:55,820] Now that's pretty easy,
+- [01:03:55,880 - 01:03:56,880] except we're going to make it harder.
+- [01:03:57,260 - 01:03:58,300] We're going to make it harder
+- [01:03:58,300 - 01:04:01,720] by making the red coordinates rotate with time.
+- [01:04:03,660 - 01:04:04,280] All right?
+- [01:04:04,460 - 01:04:05,240] And ask,
+- [01:04:05,240 - 01:04:06,420] in other words,
+- [01:04:06,480 - 01:04:09,400] if physics is seen by somebody standing on a carousel,
+- [01:04:10,700 - 01:04:12,760] what do the laws of physics look like?
+- [01:04:12,780 - 01:04:13,440] In particular,
+- [01:04:13,440 - 01:04:15,120] the simplest of all laws of physics,
+- [01:04:15,320 - 01:04:16,620] what does it look like,
+- [01:04:16,620 - 01:04:17,660] and how do we describe it
+- [01:04:17,660 - 01:04:22,120] from the viewpoint of a turntable or a carousel?
+- [01:04:26,340 - 01:04:27,740] You might have a little bit of fun
+- [01:04:27,740 - 01:04:29,000] trying to work it out directly
+- [01:04:29,000 - 01:04:31,340] without ever having heard of the Lagrangian,
+- [01:04:31,500 - 01:04:33,180] and then try it with the Lagrangian,
+- [01:04:33,300 - 01:04:34,840] and I think you'll find that the Lagrangian
+- [01:04:34,840 - 01:04:35,960] is the fast way to do it.
+- [01:04:39,120 - 01:04:39,560] Okay.
+- [01:04:40,620 - 01:04:42,140] The blue coordinate system
+- [01:04:43,600 - 01:04:46,160] is described by x,
+- [01:04:46,160 - 01:04:47,380] little x and little y.
+- [01:04:48,680 - 01:04:50,260] The red coordinate system
+- [01:04:50,260 - 01:04:52,980] is described by big X and big Y.
+- [01:04:53,300 - 01:04:53,740] And the red coordinate system
+- [01:04:57,460 - 01:04:57,940] is described by a little x and little y.
+- [01:04:57,940 - 01:04:58,540] Can I prove that?
+- [01:04:58,740 - 01:04:59,080] No.
+- [01:05:02,140 - 01:05:03,400] You're supposed to laugh at that.
+- [01:05:05,040 - 01:05:05,520] Okay.
+- [01:05:05,800 - 01:05:09,320] The angle between the x-axis is theta,
+- [01:05:09,540 - 01:05:11,440] but theta depends on time.
+- [01:05:11,680 - 01:05:12,540] In particular,
+- [01:05:12,540 - 01:05:14,060] theta is going to depend on time
+- [01:05:14,060 - 01:05:15,100] like omega t.
+- [01:05:16,240 - 01:05:17,080] In other words,
+- [01:05:17,100 - 01:05:19,880] it's a uniformly rotating coordinate system.
+- [01:05:21,760 - 01:05:23,740] If you can set omega t equal to theta,
+- [01:05:23,760 - 01:05:24,440] if you want,
+- [01:05:24,440 - 01:05:24,980] temporarily.
+- [01:05:25,800 - 01:05:27,520] And now the question is,
+- [01:05:27,580 - 01:05:28,840] what is the coordinate transformation
+- [01:05:28,840 - 01:05:30,280] between the big coordinates
+- [01:05:30,280 - 01:05:31,180] and the little coordinates?
+- [01:05:31,560 - 01:05:32,900] I'll let you work that out.
+- [01:05:32,960 - 01:05:33,820] I'm going to give you the answer.
+- [01:05:34,240 - 01:05:36,380] The answer is little x,
+- [01:05:36,560 - 01:05:38,180] I'm going to write little x and little y
+- [01:05:38,180 - 01:05:39,740] in terms of big X and big Y.
+- [01:05:40,340 - 01:05:43,060] Little x is equal to big X
+- [01:05:43,680 - 01:05:46,680] times cosine of the angle,
+- [01:05:51,200 - 01:05:52,380] cosine omega t,
+- [01:05:54,620 - 01:05:58,760] plus big Y times sine omega t.
+- [01:05:59,920 - 01:06:01,100] How about little y?
+- [01:06:03,380 - 01:06:05,020] Anybody want to take a shot at it?
+- [01:06:08,640 - 01:06:15,460] Minus X sine omega t.
+- [01:06:20,380 - 01:06:22,000] Plus Y cosine.
+- [01:06:22,000 - 01:06:25,040] Plus Y cosine of omega t.
+- [01:06:26,000 - 01:06:26,660] That's correct.
+- [01:06:27,300 - 01:06:28,340] You can check this.
+- [01:06:28,440 - 01:06:29,360] You have to sit down
+- [01:06:29,360 - 01:06:30,820] and do a little bit of coordinate change.
+- [01:06:30,960 - 01:06:31,980] This doesn't depend on the fact
+- [01:06:31,980 - 01:06:33,460] that the coordinate system is rotating.
+- [01:06:34,040 - 01:06:35,860] If you just call omega t theta,
+- [01:06:36,220 - 01:06:37,300] you'll see that this,
+- [01:06:37,400 - 01:06:38,920] and experiment around with it,
+- [01:06:38,980 - 01:06:40,740] you'll find out that this is the way
+- [01:06:41,720 - 01:06:43,440] two-dimensional coordinates change
+- [01:06:43,440 - 01:06:47,000] if you rotate by angle theta.
+- [01:06:48,060 - 01:06:48,680] All right,
+- [01:06:48,680 - 01:06:49,400] now here's what we know.
+- [01:06:49,400 - 01:06:52,300] We know in the little coordinate system,
+- [01:06:52,500 - 01:06:53,540] let's give them names.
+- [01:06:55,520 - 01:06:56,160] Oh,
+- [01:06:56,160 - 01:06:56,620] let's not.
+- [01:06:57,600 - 01:06:59,600] In the stationary coordinate system,
+- [01:06:59,880 - 01:07:01,540] the non-rotating coordinate system,
+- [01:07:01,860 - 01:07:04,420] Newton's equations and Newton's laws
+- [01:07:04,420 - 01:07:05,080] are the right laws,
+- [01:07:05,320 - 01:07:06,620] and we can summarize that
+- [01:07:06,620 - 01:07:07,860] by writing a Lagrangian.
+- [01:07:08,080 - 01:07:10,900] The Lagrangian in action.
+- [01:07:11,820 - 01:07:16,060] Integral L d t with L equaling.
+- [01:07:16,520 - 01:07:19,040] Little one half m,
+- [01:07:19,400 - 01:07:20,060] m over two,
+- [01:07:21,680 - 01:07:22,800] x dot squared,
+- [01:07:22,980 - 01:07:23,900] little x dot squared,
+- [01:07:24,120 - 01:07:25,280] plus y dot squared.
+- [01:07:26,720 - 01:07:28,180] No potential energy.
+- [01:07:28,400 - 01:07:29,420] The simplest thing,
+- [01:07:29,440 - 01:07:30,780] with no potential energy at all,
+- [01:07:31,400 - 01:07:34,360] if we apply the Euler-Lagrange equations to this,
+- [01:07:35,900 - 01:07:37,340] we'll just get m x
+- [01:07:37,340 - 01:07:38,780] double dot is equal to zero
+- [01:07:38,780 - 01:07:40,000] from the left-hand side.
+- [01:07:40,220 - 01:07:42,000] m x double dot is equal to zero.
+- [01:07:42,480 - 01:07:43,840] No potential energy,
+- [01:07:44,020 - 01:07:45,520] so there's no right-hand side at all.
+- [01:07:45,700 - 01:07:46,840] Same thing for y,
+- [01:07:47,060 - 01:07:48,300] and that just tells us
+- [01:07:48,300 - 01:07:49,380] that things move without exception.
+- [01:07:49,400 - 01:07:49,800] So we have to do
+- [01:07:50,940 - 01:07:52,100] How do we work it out
+- [01:07:52,100 - 01:07:52,960] in the big coordinates?
+- [01:07:53,440 - 01:07:53,800] Well,
+- [01:07:53,800 - 01:07:54,180] we say,
+- [01:07:55,060 - 01:07:56,140] all we have to do,
+- [01:07:56,180 - 01:07:57,320] the principle is the same,
+- [01:07:57,400 - 01:07:59,320] the principle is the principle of least action,
+- [01:07:59,779 - 01:08:02,100] but all we have to do is rewrite the action
+- [01:08:02,100 - 01:08:03,280] or the Lagrangian
+- [01:08:03,819 - 01:08:05,860] in terms of big x's and big y's.
+- [01:08:06,300 - 01:08:07,140] That's not hard.
+- [01:08:07,480 - 01:08:09,500] It looks much harder than it is,
+- [01:08:09,580 - 01:08:11,040] but it's easy to do.
+- [01:08:11,100 - 01:08:12,020] All we have to do is figure out
+- [01:08:12,020 - 01:08:13,200] what x dot and y dot are,
+- [01:08:13,360 - 01:08:14,620] and plug them into here.
+- [01:08:15,200 - 01:08:16,960] So I'll write down the answers for you.
+- [01:08:17,359 - 01:08:18,319] You can check them.
+- [01:08:20,840 - 01:08:24,439] Little x dot is equal,
+- [01:08:24,640 - 01:08:26,120] we're just going to differentiate this
+- [01:08:26,120 - 01:08:27,000] with respect to time.
+- [01:08:27,380 - 01:08:30,540] It's big x dot times cosine omega t.
+- [01:08:32,000 - 01:08:32,479] Oh,
+- [01:08:32,479 - 01:08:33,500] it's going to take more room.
+- [01:08:35,140 - 01:08:35,620] All right,
+- [01:08:35,620 - 01:08:37,319] let's do it.
+- [01:08:38,100 - 01:08:39,200] Cosine omega t,
+- [01:08:39,380 - 01:08:42,160] and now we have to differentiate the sine.
+- [01:08:42,680 - 01:08:44,460] Sine also depends on time.
+- [01:08:44,760 - 01:08:46,460] So what's the derivative of this term?
+- [01:08:51,920 - 01:08:53,140] Am I making a mistake?
+- [01:08:55,359 - 01:08:55,800] Oh,
+- [01:08:55,800 - 01:08:56,080] sorry,
+- [01:08:56,080 - 01:08:56,240] sorry.
+- [01:08:56,319 - 01:08:57,700] We're doing this one.
+- [01:08:58,200 - 01:08:58,640] Yeah.
+- [01:08:58,760 - 01:09:00,060] We need a factor of omega.
+- [01:09:00,319 - 01:09:00,660] Yep,
+- [01:09:00,660 - 01:09:01,640] we need a factor of omega,
+- [01:09:01,819 - 01:09:02,760] omega x,
+- [01:09:05,899 - 01:09:07,700] times the derivative of the cosine,
+- [01:09:07,819 - 01:09:09,000] which is sine omega t.
+- [01:09:14,740 - 01:09:17,060] I think I have the sine of,
+- [01:09:17,060 - 01:09:17,700] here's the sine,
+- [01:09:17,700 - 01:09:18,240] right?
+- [01:09:19,240 - 01:09:19,800] Good.
+- [01:09:20,240 - 01:09:22,200] Now we have to differentiate this,
+- [01:09:22,240 - 01:09:27,840] or it's plus y dot sine omega t,
+- [01:09:30,040 - 01:09:36,640] and then plus omega y cosine omega t.
+- [01:09:38,579 - 01:09:41,060] Straightforward differentiation of x
+- [01:09:41,060 - 01:09:41,899] with respect to t.
+- [01:09:42,020 - 01:09:43,500] You do the same with y.
+- [01:09:44,880 - 01:09:46,300] You do the same with y,
+- [01:09:47,979 - 01:09:50,169] and then you calculate x
+- [01:09:50,169 - 01:09:52,359] dot squared plus y dot squared.
+- [01:09:52,760 - 01:09:54,700] It looks a bit messy,
+- [01:09:54,780 - 01:09:56,060] but it's really very simple.
+- [01:09:56,200 - 01:09:57,660] It takes just a little,
+- [01:09:58,250 - 01:09:58,980] essentially by inspection,
+- [01:09:59,640 - 01:10:00,880] and I will tell you what it is.
+- [01:10:00,940 - 01:10:02,160] We're rewriting the Lagrangian
+- [01:10:02,160 - 01:10:03,420] in terms of the big coordinates.
+- [01:10:04,360 - 01:10:06,040] You have to use over and over again
+- [01:10:06,040 - 01:10:08,020] cosine squared plus sine squared is one.
+- [01:10:08,160 - 01:10:08,660] For example,
+- [01:10:09,780 - 01:10:10,200] well,
+- [01:10:10,200 - 01:10:11,600] let's just see what's in y here.
+- [01:10:11,660 - 01:10:13,160] There's going to be another term in y,
+- [01:10:13,420 - 01:10:14,200] in y dot,
+- [01:10:16,300 - 01:10:17,240] I'm not going to write it all down.
+- [01:10:17,360 - 01:10:18,360] I'm just going to write one term.
+- [01:10:18,740 - 01:10:22,540] y dot is going to have
+- [01:10:22,540 - 01:10:26,340] minus x dot sine omega t,
+- [01:10:26,340 - 01:10:26,700] right?
+- [01:10:27,560 - 01:10:28,900] Plus all sorts of other stuff.
+- [01:10:30,440 - 01:10:32,460] What happens when I square this one,
+- [01:10:32,640 - 01:10:33,100] sorry,
+- [01:10:33,200 - 01:10:34,650] when I square this x
+- [01:10:34,650 - 01:10:36,100] dot squared plus y dot squared,
+- [01:10:37,240 - 01:10:39,400] little x dot squared plus y dot squared,
+- [01:10:39,600 - 01:10:42,140] I'm going to get big x dot squared cosine squared
+- [01:10:42,800 - 01:10:44,840] and big x dot squared sine squared.
+- [01:10:44,840 - 01:10:46,260] That adds to one.
+- [01:10:46,460 - 01:10:48,380] So I can be pretty sure there's going to be
+- [01:10:48,380 - 01:10:52,440] an m over two times big x dot squared.
+- [01:10:55,219 - 01:10:55,740] Likewise,
+- [01:10:55,740 - 01:10:58,060] when I square y,
+- [01:10:58,220 - 01:10:58,940] where's y dot?
+- [01:10:59,000 - 01:11:00,360] When I square y dot squared,
+- [01:11:00,640 - 01:11:03,400] I'll also get a big y dot squared.
+- [01:11:05,340 - 01:11:07,060] And both of these will multiply
+- [01:11:07,660 - 01:11:09,340] sine squared plus cosine squared,
+- [01:11:09,660 - 01:11:10,440] which is one.
+- [01:11:11,360 - 01:11:11,880] Now,
+- [01:11:11,880 - 01:11:13,620] the next type of term which appears,
+- [01:11:13,620 - 01:11:16,340] will be what happens when
+- [01:11:16,340 - 01:11:19,060] I square this term over here.
+- [01:11:19,580 - 01:11:21,480] This is going to have an omega squared,
+- [01:11:21,760 - 01:11:22,380] an x squared,
+- [01:11:22,560 - 01:11:23,960] and a sine squared omega t.
+- [01:11:24,580 - 01:11:26,320] I will also find in here,
+- [01:11:26,520 - 01:11:30,120] an omega squared x squared cosine squared omega t.
+- [01:11:30,960 - 01:11:32,560] Just spend a few minutes with it.
+- [01:11:32,820 - 01:11:34,480] So what I'm going to find is,
+- [01:11:34,640 - 01:11:39,040] I think it's plus omega squared.
+- [01:11:41,680 - 01:11:43,040] What you get is two dot,
+- [01:11:43,660 - 01:11:44,140] well,
+- [01:11:44,140 - 01:11:44,520] let's see,
+- [01:11:45,940 - 01:11:49,560] this x dot by this y over here,
+- [01:11:50,420 - 01:11:53,160] cross terms with x dots and y's,
+- [01:11:53,320 - 01:11:55,080] and y dots and x's.
+- [01:11:55,420 - 01:11:56,880] The last term that you get,
+- [01:11:58,460 - 01:12:01,420] and that only has one power of omega in it.
+- [01:12:03,260 - 01:12:04,120] So that's,
+- [01:12:04,120 - 01:12:04,380] I think,
+- [01:12:04,380 - 01:12:05,260] plus or minus,
+- [01:12:05,320 - 01:12:06,680] let me just see what the sine is.
+- [01:12:11,440 - 01:12:11,920] Plus,
+- [01:12:14,820 - 01:12:20,400] omega times x dot y minus y dot x.
+- [01:12:22,080 - 01:12:26,340] All the variables on the side are the rotating coordinates.
+- [01:12:26,780 - 01:12:27,580] That's what you get.
+- [01:12:27,680 - 01:12:28,700] As I said,
+- [01:12:28,700 - 01:12:30,020] it looks much harder than it is.
+- [01:12:30,260 - 01:12:31,820] I don't want to go through the algebra,
+- [01:12:31,900 - 01:12:34,320] because I make algebra mistakes all over the place,
+- [01:12:34,440 - 01:12:35,240] but this is what you get.
+- [01:12:35,760 - 01:12:37,660] No sines and cosines left over.
+- [01:12:37,800 - 01:12:39,620] They all come in the pattern,
+- [01:12:39,740 - 01:12:40,540] sums of squares,
+- [01:12:40,820 - 01:12:42,120] or they just cancel.
+- [01:12:43,260 - 01:12:43,700] Okay.
+- [01:12:43,920 - 01:12:44,960] So this is what you get.
+- [01:12:45,080 - 01:12:45,200] Now,
+- [01:12:45,200 - 01:12:46,100] what do you do with it?
+- [01:12:46,440 - 01:12:47,060] You say,
+- [01:12:47,760 - 01:12:49,140] principle of least action.
+- [01:12:49,540 - 01:12:51,260] We think of this as the Lagrangian.
+- [01:12:52,140 - 01:12:53,180] The rule is,
+- [01:12:53,760 - 01:12:55,000] principle of least action,
+- [01:12:55,220 - 01:12:58,520] and so we apply the Euler-Lagrange equations to it.
+- [01:12:59,560 - 01:13:02,120] Let's work out the Euler-Lagrange equation for x.
+- [01:13:03,160 - 01:13:04,100] I think I can,
+- [01:13:04,200 - 01:13:04,300] well,
+- [01:13:04,300 - 01:13:05,080] let's put this up.
+- [01:13:05,540 - 01:13:06,500] Put this up,
+- [01:13:06,540 - 01:13:06,980] pull this down.
+- [01:13:10,340 - 01:13:11,800] And how does this work out?
+- [01:13:13,380 - 01:13:14,640] If there's a combination of .
+- [01:13:14,640 - 01:13:15,760] If there's a combination of .
+- [01:13:17,560 - 01:13:19,220] There's something wrong.
+- [01:13:36,520 - 01:13:36,920] Yeah,
+- [01:13:36,920 - 01:13:37,860] everything's capitalized,
+- [01:13:37,860 - 01:13:38,100] sorry.
+- [01:13:39,080 - 01:13:39,480] Sorry,
+- [01:13:39,480 - 01:13:39,700] I see.
+- [01:13:57,800 - 01:13:59,360] Before we do the equation,
+- [01:13:59,360 - 01:14:01,100] let's just look at this for a minute.
+- [01:14:01,100 - 01:14:02,320] First of all,
+- [01:14:02,320 - 01:14:03,300] if omega is zero,
+- [01:14:03,300 - 01:14:05,980] if the coordinates are not rotating at all,
+- [01:14:05,980 - 01:14:07,340] omega equals zero,
+- [01:14:07,520 - 01:14:10,180] this just looks like the good
+- [01:14:10,180 - 01:14:12,840] old Lagrangian for x and y.
+- [01:14:13,460 - 01:14:14,640] And what are we going to get?
+- [01:14:14,720 - 01:14:16,870] We're going to get that things move
+- [01:14:16,870 - 01:14:19,020] in straight lines in the capital XY coordinates.
+- [01:14:19,200 - 01:14:19,840] Of course they are,
+- [01:14:19,840 - 01:14:22,360] if the coordinate system is not rotating.
+- [01:14:23,120 - 01:14:25,000] Now let's forget for a moment this
+- [01:14:25,000 - 01:14:26,880] term over here and look at this term.
+- [01:14:28,440 - 01:14:31,080] This has the look of a particular coordinate system.
+- [01:14:31,100 - 01:14:31,680] It's a potential energy.
+- [01:14:32,460 - 01:14:34,180] It's a function of x and y.
+- [01:14:34,720 - 01:14:36,720] Remember what we normally would write.
+- [01:14:36,820 - 01:14:39,250] We would normally write that the
+- [01:14:39,250 - 01:14:41,680] Lagrangian is equal to t minus v.
+- [01:14:43,420 - 01:14:46,570] So this has the look of a
+- [01:14:46,570 - 01:14:49,720] potential energy where the potential energy here,
+- [01:14:49,920 - 01:14:51,040] it's a fictitious,
+- [01:14:51,040 - 01:14:52,920] but you can call it fictitious if you want,
+- [01:14:53,040 - 01:14:55,160] call it a fictitious potential energy,
+- [01:14:55,260 - 01:14:56,760] a fictitious potential energy,
+- [01:14:56,760 - 01:14:58,660] v fictitious,
+- [01:14:59,660 - 01:15:00,780] which is equal,
+- [01:15:01,100 - 01:15:05,460] to minus omega squared m over two,
+- [01:15:06,360 - 01:15:08,200] x squared plus y squared,
+- [01:15:10,420 - 01:15:12,140] capital x squared and y squared,
+- [01:15:12,280 - 01:15:12,820] minus,
+- [01:15:12,820 - 01:15:15,320] because the Lagrangian always has t minus v.
+- [01:15:16,760 - 01:15:19,190] What would a potential energy like this
+- [01:15:19,190 - 01:15:21,620] do to a particle in xy space?
+- [01:15:22,260 - 01:15:23,040] It's a circle.
+- [01:15:24,260 - 01:15:25,680] There's a radius there,
+- [01:15:25,680 - 01:15:26,420] looks like a radius.
+- [01:15:26,700 - 01:15:28,890] It's a potential energy which depends
+- [01:15:28,890 - 01:15:31,080] on the square of the triangle.
+- [01:15:31,100 - 01:15:31,940] It's a distance from the origin.
+- [01:15:32,440 - 01:15:33,780] Which way is the force point?
+- [01:15:40,340 - 01:15:40,780] Outward.
+- [01:15:41,940 - 01:15:42,760] Radially outward.
+- [01:15:43,200 - 01:15:45,010] You have a potential energy
+- [01:15:45,010 - 01:15:46,820] which falls off in any direction,
+- [01:15:47,040 - 01:15:49,000] x squared plus y squared is r squared.
+- [01:15:50,000 - 01:15:51,760] The potential energy is negative.
+- [01:15:51,860 - 01:15:53,780] That means you're on the top
+- [01:15:53,780 - 01:15:55,700] of a hill at the origin.
+- [01:15:55,840 - 01:15:56,600] If you're at the origin,
+- [01:15:56,600 - 01:15:57,800] you're at the top of a hill,
+- [01:15:58,280 - 01:16:00,900] and the top of the hill is falling off quadratically.
+- [01:16:02,099 - 01:16:03,160] What is this?
+- [01:16:05,000 - 01:16:06,500] It's a centrifugal force.
+- [01:16:07,020 - 01:16:10,400] If you're on a rotating carousel,
+- [01:16:10,440 - 01:16:12,920] and you put a particle down on the floor,
+- [01:16:13,160 - 01:16:16,920] it'll get pushed out toward the edge by centrifugal force.
+- [01:16:18,340 - 01:16:20,180] So this is just centrifugal force.
+- [01:16:21,740 - 01:16:24,340] This one is Coriolis force.
+- [01:16:25,440 - 01:16:26,760] It's Coriolis force,
+- [01:16:27,040 - 01:16:28,540] and notice it's a new
+- [01:16:28,540 - 01:16:30,040] kind of term in the Lagrangian.
+- [01:16:30,040 - 01:16:32,680] It's a new kind of term
+- [01:16:32,680 - 01:16:35,320] which depends both on coordinates and velocities.
+- [01:16:36,500 - 01:16:38,380] Linear in velocities and coordinates.
+- [01:16:38,440 - 01:16:39,480] It's something new.
+- [01:16:40,340 - 01:16:42,200] It leads to a kind of force.
+- [01:16:42,260 - 01:16:43,860] Whenever you have a situation like this,
+- [01:16:43,920 - 01:16:45,360] it leads to a kind of
+- [01:16:45,360 - 01:16:46,800] force which is called a velocity-dependent force.
+- [01:16:47,360 - 01:16:48,620] So to see how it works,
+- [01:16:48,620 - 01:16:49,820] what we want to do
+- [01:16:49,820 - 01:16:51,020] is write out the Euler-Lagrange equations.
+- [01:16:53,560 - 01:16:56,300] Let's write out the Euler-Lagrange equation for x.
+- [01:17:06,160 - 01:17:08,660] We start with partial of
+- [01:17:08,660 - 01:17:11,160] L with respect to x dot.
+- [01:17:12,040 - 01:17:12,940] What is that?
+- [01:17:15,280 - 01:17:16,180] mx dot,
+- [01:17:22,139 - 01:17:23,820] what we usually call momentum,
+- [01:17:24,060 - 01:17:25,840] but now there's another term.
+- [01:17:26,760 - 01:17:30,000] It's m omega over 2 times y.
+- [01:17:30,740 - 01:17:32,640] Derivative of L with respect to x dot.
+- [01:17:33,540 - 01:17:34,920] So let's add that in.
+- [01:17:35,180 - 01:17:48,840] Plus m omega over 2 times y,
+- [01:17:48,840 - 01:17:49,160] right?
+- [01:17:51,540 - 01:17:52,440] Did I get that right?
+- [01:17:54,360 - 01:17:56,060] Now what are we supposed to do with this?
+- [01:17:56,100 - 01:17:58,100] We're supposed to take d by dt of it.
+- [01:18:00,040 - 01:18:01,240] What does that give us?
+- [01:18:03,260 - 01:18:07,900] mx double dot plus y dot...
+- [01:18:08,559 - 01:18:09,920] And what does that equal?
+- [01:18:10,160 - 01:18:12,780] It equals the derivative of
+- [01:18:12,780 - 01:18:15,400] the Lagrangean with respect to x.
+- [01:18:16,240 - 01:18:17,680] Does it depend on x?
+- [01:18:17,900 - 01:18:18,160] Yeah,
+- [01:18:18,160 - 01:18:18,480] you bet.
+- [01:18:18,480 - 01:18:19,680] It depends on x over here.
+- [01:18:20,499 - 01:18:24,500] So there's an omega squared m times x...
+- [01:18:28,920 - 01:18:31,260] and it depends on x over here.
+- [01:18:32,579 - 01:18:37,620] That's minus m omega over two times y dot,
+- [01:18:37,620 - 01:18:40,840] plus or minus.
+- [01:18:45,460 - 01:18:46,060] Oh,
+- [01:18:46,060 - 01:18:46,280] sorry.
+- [01:18:46,280 - 01:18:49,320] We're supposed to set this equal to this,
+- [01:18:49,320 - 01:18:49,540] right?
+- [01:18:50,560 - 01:18:51,040] Yeah.
+- [01:18:51,040 - 01:18:55,030] Partial of L with respect to x dot
+- [01:18:55,030 - 01:18:59,020] equals partial of L with respect to x,
+- [01:18:59,020 - 01:18:59,420] equals.
+- [01:18:59,760 - 01:19:01,000] And what's the other term?
+- [01:19:01,000 - 01:19:04,110] The other term should be plus
+- [01:19:04,110 - 01:19:07,220] m omega over two y dot.
+- [01:19:08,120 - 01:19:09,020] Comes from here.
+- [01:19:09,020 - 01:19:12,880] Differentiating with respect to x gives us
+- [01:19:12,880 - 01:19:16,740] m omega over two times y dot.
+- [01:19:16,840 - 01:19:17,620] Now the sine,
+- [01:19:17,620 - 01:19:18,060] the sine.
+- [01:19:18,060 - 01:19:19,080] Do I have a sine mistake?
+- [01:19:22,160 - 01:19:22,600] Yes,
+- [01:19:22,600 - 01:19:23,460] I have a sine mistake.
+- [01:19:23,460 - 01:19:25,120] Over here.
+- [01:19:25,120 - 01:19:28,380] Coming from this sine over here.
+- [01:19:30,100 - 01:19:31,680] Now this doesn't look too familiar,
+- [01:19:31,680 - 01:19:34,940] but I can make it look more familiar by saying,
+- [01:19:35,020 - 01:19:35,140] look,
+- [01:19:35,140 - 01:19:36,580] this is what I call acceleration,
+- [01:19:36,580 - 01:19:37,720] and this is m a.
+- [01:19:38,380 - 01:19:40,820] Let's put everything on the other side.
+- [01:19:40,820 - 01:19:43,020] Let's put everything on the other
+- [01:19:43,020 - 01:19:45,220] side and call it the fictitious force.
+- [01:19:46,340 - 01:19:47,960] What does the fictitious force have?
+- [01:19:48,260 - 01:19:49,440] It has omega.
+- [01:19:49,440 - 01:19:52,120] Omega squared m times x.
+- [01:19:52,120 - 01:19:52,920] What is that?
+- [01:19:52,920 - 01:19:55,160] This is the x component of acceleration.
+- [01:20:01,740 - 01:20:03,240] That's a centrifugal force.
+- [01:20:03,240 - 01:20:05,700] It's a centrifugal force.
+- [01:20:06,320 - 01:20:07,240] Centrifugal force,
+- [01:20:07,240 - 01:20:10,120] the component of it is proportional to x.
+- [01:20:10,120 - 01:20:12,480] The x component of it is proportional to x.
+- [01:20:13,019 - 01:20:14,100] What about the other term?
+- [01:20:15,300 - 01:20:16,260] The other term,
+- [01:20:16,260 - 01:20:18,040] they add,
+- [01:20:18,260 - 01:20:19,080] minus,
+- [01:20:19,080 - 01:20:21,980] minus m omega y dot.
+- [01:20:22,220 - 01:20:24,540] And now we have something truly new.
+- [01:20:24,820 - 01:20:26,910] We have a force on
+- [01:20:26,910 - 01:20:29,000] the right-hand side which is proportional,
+- [01:20:29,000 - 01:20:31,080] it's the x component of force,
+- [01:20:31,670 - 01:20:34,640] which is proportional to the y component of velocity.
+- [01:20:36,760 - 01:20:38,920] Or minus the y component of velocity.
+- [01:20:40,950 - 01:20:42,940] It's a velocity-dependent force.
+- [01:20:44,450 - 01:20:45,760] It's called Coriolis force.
+- [01:20:46,629 - 01:20:47,844] I'm not going to go
+- [01:20:47,844 - 01:20:49,060] into why hurricanes are so important.
+- [01:20:49,080 - 01:20:50,680] I'm going to go into why planes work
+- [01:20:50,680 - 01:20:52,280] and to show you how the details are just,
+- [01:20:52,280 - 01:20:55,940] what I'm mainly interested in is showing you how
+- [01:20:55,940 - 01:20:59,600] the action principle makes calculations like this easy and fast.
+- [01:21:00,340 - 01:21:02,360] What about the y component of equation?
+- [01:21:02,940 - 01:21:07,450] It's m a sub y or m a y
+- [01:21:07,450 - 01:21:11,960] double dot is equal to omega squared m times y.
+- [01:21:12,380 - 01:21:14,160] This is capital Y.
+- [01:21:14,160 - 01:21:15,020] Capital Y.
+- [01:21:15,440 - 01:21:19,060] And then plus m omega y.
+- [01:21:19,060 - 01:21:20,400] And then we have a x-dot.
+- [01:21:26,620 - 01:21:29,390] So there's an effective force seen on
+- [01:21:29,390 - 01:21:32,160] the rotating turntable or on the carousel,
+- [01:21:32,160 - 01:21:34,040] which is centrifugal force.
+- [01:21:34,360 - 01:21:37,720] It looks sort of like a garden-variety potential energy.
+- [01:21:38,220 - 01:21:39,960] Garden-variety potential energy,
+- [01:21:39,960 - 01:21:41,100] except it's pushing outward.
+- [01:21:42,740 - 01:21:45,280] And then a velocity-dependent force.
+- [01:21:45,600 - 01:21:46,400] A new thing,
+- [01:21:46,400 - 01:21:47,440] a new kind of thing.
+- [01:21:47,820 - 01:21:49,040] We might not have guessed the term,
+- [01:21:49,040 - 01:21:49,040] but this is interesting.
+- [01:21:49,040 - 01:21:49,760] it very easily.
+- [01:21:49,760 - 01:21:50,780] Well,
+- [01:21:50,780 - 01:21:52,060] we might have or we might not have,
+- [01:21:52,060 - 01:21:55,200] but it's packaged extremely
+- [01:21:55,200 - 01:21:57,040] neatly in the action principle.
+- [01:22:01,119 - 01:22:05,320] Would this work for arbitrarily curved coordinates?
+- [01:22:05,500 - 01:22:06,020] Yes.
+- [01:22:06,020 - 01:22:06,340] Yes.
+- [01:22:06,340 - 01:22:07,760] For any coordinates.
+- [01:22:07,760 - 01:22:10,580] And not only can the coordinates be curved,
+- [01:22:10,580 - 01:22:11,200] but they can
+- [01:22:11,200 - 01:22:11,860] be time dependent.
+- [01:22:11,860 - 01:22:15,280] Here these coordinates were not only curved,
+- [01:22:15,280 - 01:22:17,220] but they were also time
+- [01:22:17,220 - 01:22:17,440] dependent.
+- [01:22:17,440 - 01:22:20,480] Let's do another simple example.
+- [01:22:20,480 - 01:22:22,760] This is a simpler example.
+- [01:22:22,760 - 01:22:24,820] Polar coordinates,
+- [01:22:25,040 - 01:22:26,920] just ordinary polar coordinates,
+- [01:22:26,920 - 01:22:28,040] not time dependent,
+- [01:22:28,040 - 01:22:28,840] not moving,
+- [01:22:28,840 - 01:22:30,820] ordinary polar coordinates.
+- [01:22:32,240 - 01:22:36,440] And work out the equations of motion for
+- [01:22:36,440 - 01:22:40,640] an ordinary particle with a potential which depends
+- [01:22:40,640 - 01:22:42,540] on radius,
+- [01:22:42,540 - 01:22:43,300] let's say.
+- [01:22:46,260 - 01:22:46,940] Okay.
+- [01:22:47,220 - 01:22:48,020] So what's our coordinates?
+- [01:22:48,020 - 01:22:51,600] Now our coordinates are just,
+- [01:22:51,600 - 01:22:53,060] this is x and this is y,
+- [01:22:53,060 - 01:22:54,600] this is
+- [01:22:54,600 - 01:22:54,900] r,
+- [01:22:54,900 - 01:22:56,960] and this is theta.
+- [01:22:56,960 - 01:22:58,560] Okay.
+- [01:22:58,560 - 01:23:03,450] I want to write down the one
+- [01:23:03,450 - 01:23:08,340] half m x dot squared plus y dot
+- [01:23:08,340 - 01:23:08,780] squared.
+- [01:23:08,780 - 01:23:11,190] But I want to write it
+- [01:23:11,190 - 01:23:13,600] in terms of r and theta.
+- [01:23:13,600 - 01:23:15,080] Okay.
+- [01:23:15,080 - 01:23:16,020] That's easy.
+- [01:23:16,020 - 01:23:16,980] You just write
+- [01:23:16,980 - 01:23:17,540] that x,
+- [01:23:17,540 - 01:23:20,080] now theta is not changing with time.
+- [01:23:20,080 - 01:23:25,840] Theta is now the theta coordinate of the particle.
+- [01:23:26,420 - 01:23:27,840] It is changing with time.
+- [01:23:27,840 - 01:23:28,760] If the particle moves,
+- [01:23:28,760 - 01:23:29,980] theta changes with time.
+- [01:23:29,980 - 01:23:31,060] Okay.
+- [01:23:31,060 - 01:23:32,400] And
+- [01:23:32,400 - 01:23:33,040] so does r.
+- [01:23:33,040 - 01:23:38,480] But x is equal to r cosine theta,
+- [01:23:38,480 - 01:23:41,500] y is equal to r sine theta.
+- [01:23:41,500 - 01:23:43,160] We can take the
+- [01:23:43,160 - 01:23:45,140] time derivative of x,
+- [01:23:45,140 - 01:23:46,600] the time derivative of y.
+- [01:23:46,600 - 01:23:49,820] Square them and add them together.
+- [01:23:49,820 - 01:23:51,480] Yeah,
+- [01:23:51,480 - 01:23:52,540] what do we get?
+- [01:23:52,540 - 01:23:53,520] This is equal.
+- [01:23:53,520 - 01:23:54,340] I'll tell you what
+- [01:23:54,340 - 01:23:54,660] it is.
+- [01:23:54,660 - 01:23:59,100] It's one half m times r dot squared.
+- [01:23:59,100 - 01:24:03,420] That's the term coming from r.
+- [01:24:03,420 - 01:24:04,520] And then there's
+- [01:24:04,520 - 01:24:06,750] a term coming from theta and it happens
+- [01:24:06,750 - 01:24:08,980] to be plus r squared theta dot squared.
+- [01:24:08,980 - 01:24:11,260] Now as
+- [01:24:11,260 - 01:24:11,560] I said,
+- [01:24:11,560 - 01:24:13,210] you get this simply by
+- [01:24:13,210 - 01:24:14,860] differentiating x with respect to time.
+- [01:24:14,860 - 01:24:16,580] X dot squared,
+- [01:24:16,580 - 01:24:16,580] r squared.
+- [01:24:16,580 - 01:24:17,220] for example,
+- [01:24:17,220 - 01:24:21,050] will be r dot cosine theta plus
+- [01:24:21,050 - 01:24:24,880] r minus r sine theta theta dot.
+- [01:24:28,620 - 01:24:34,770] y dot will be r dot sine
+- [01:24:34,770 - 01:24:40,920] theta plus r cosine theta theta dot.
+- [01:24:40,920 - 01:24:43,640] Let's look at it,
+- [01:24:43,640 - 01:24:45,160] x dot squared plus y dot squared.
+- [01:24:45,160 - 01:24:48,560] x dot squared will have r dot squared times
+- [01:24:48,560 - 01:24:51,760] cosine theta plus cosine squared plus sine squared,
+- [01:24:51,760 - 01:24:53,320] so that'll be your r dot
+- [01:24:53,320 - 01:24:53,600] squared.
+- [01:24:53,600 - 01:24:59,240] It'll also have r squared sine squared,
+- [01:24:59,240 - 01:25:00,980] cosine squared,
+- [01:25:00,980 - 01:25:02,360] and theta dot
+- [01:25:02,360 - 01:25:02,680] squared.
+- [01:25:02,680 - 01:25:03,900] That's this term here.
+- [01:25:03,900 - 01:25:05,920] What about the cross terms?
+- [01:25:05,920 - 01:25:10,000] We have this times
+- [01:25:10,000 - 01:25:11,760] this and this times this in a cancel.
+- [01:25:11,760 - 01:25:13,440] So this is
+- [01:25:13,440 - 01:25:13,620] then going to be the какимokias.
+- [01:25:13,620 - 01:25:13,620] Now that this is the other way around,
+- [01:25:13,620 - 01:25:13,620] the last
+- [01:25:13,620 - 01:25:15,840] the Lagrangian and polar coordinates.
+- [01:25:15,840 - 01:25:18,320] If I want to add a potential energy,
+- [01:25:18,320 - 01:25:18,680] let's
+- [01:25:18,680 - 01:25:19,600] add a potential energy,
+- [01:25:19,600 - 01:25:24,480] that will be minus V of R.
+- [01:25:24,480 - 01:25:25,840] I'm taking the case now
+- [01:25:25,840 - 01:25:27,790] where the potential energy depends
+- [01:25:27,790 - 01:25:29,740] on distance from the origin.
+- [01:25:29,740 - 01:25:31,080] It could
+- [01:25:31,080 - 01:25:31,960] depend on theta too,
+- [01:25:31,960 - 01:25:33,940] but for our purposes now
+- [01:25:33,940 - 01:25:35,920] it's called a central force problem.
+- [01:25:36,060 - 01:25:37,080] The central force problem,
+- [01:25:37,080 - 01:25:39,540] the potential energy only depends on distance from the
+- [01:25:39,540 - 01:25:39,880] origin,
+- [01:25:39,880 - 01:25:41,320] and there it is.
+- [01:25:41,320 - 01:25:44,700] Now we can write down the Euler-Lagrange equations very
+- [01:25:44,700 - 01:25:45,100] simply.
+- [01:25:49,900 - 01:25:50,420] Okay,
+- [01:25:50,420 - 01:25:51,180] let's fool,
+- [01:25:51,180 - 01:25:54,540] the Euler-Lagrange equations are now for R and theta.
+- [01:25:54,540 - 01:25:55,420] R and
+- [01:25:55,420 - 01:25:56,840] theta are our new variables.
+- [01:25:56,840 - 01:26:00,180] So what is the Euler-Lagrange equation for R?
+- [01:26:00,180 - 01:26:00,800] You
+- [01:26:00,800 - 01:26:04,020] start with partial of L with respect to R dot.
+- [01:26:04,020 - 01:26:07,600] R is replacing one of the X's,
+- [01:26:07,600 - 01:26:08,240] and
+- [01:26:08,960 - 01:26:09,440] that's a
+- [01:26:09,440 - 01:26:09,520] equation for R dot.
+- [01:26:09,520 - 01:26:09,520] R is replacing one of the X's,
+- [01:26:09,520 - 01:26:09,520] and that's a
+- [01:26:09,540 - 01:26:09,920] equation for R dot.
+- [01:26:09,920 - 01:26:09,920] Sorry,
+- [01:26:09,920 - 01:26:10,680] there's an M here,
+- [01:26:10,680 - 01:26:11,100] isn't there?
+- [01:26:11,100 - 01:26:14,380] That's M R dot,
+- [01:26:14,380 - 01:26:17,440] and
+- [01:26:17,440 - 01:26:17,760] that's it,
+- [01:26:17,760 - 01:26:17,960] right?
+- [01:26:17,960 - 01:26:20,260] That's partial of L with respect to R dot.
+- [01:26:20,260 - 01:26:21,820] We have to
+- [01:26:21,820 - 01:26:23,640] differentiate this with respect to time.
+- [01:26:23,640 - 01:26:26,900] That gives us M R double dot.
+- [01:26:26,900 - 01:26:28,220] What is that?
+- [01:26:28,300 - 01:26:28,700] That's the,
+- [01:26:28,700 - 01:26:30,680] the radial acceleration,
+- [01:26:30,680 - 01:26:33,980] and it is equal to the sum of two terms.
+- [01:26:33,980 - 01:26:34,780] The
+- [01:26:34,780 - 01:26:38,500] first term is the derivative of Lagrangian with respect to,
+- [01:26:38,500 - 01:26:39,420] to
+- [01:26:39,420 - 01:26:41,100] to r contains,
+- [01:26:41,100 - 01:26:51,020] looks like it's equal to m r theta dot squared,
+- [01:26:51,020 - 01:26:53,840] and then from here,
+- [01:26:53,840 - 01:26:58,340] minus
+- [01:26:58,340 - 01:26:59,880] dv by dr,
+- [01:26:59,880 - 01:27:02,900] derivative of v with respect to r.
+- [01:27:02,900 - 01:27:08,440] What do we have here?
+- [01:27:08,440 - 01:27:10,060] First of all,
+- [01:27:10,060 - 01:27:10,220] you
+- [01:27:10,220 - 01:27:11,620] might have guessed this in the first place.
+- [01:27:11,620 - 01:27:13,340] This is the r component of force.
+- [01:27:13,340 - 01:27:14,080] r component
+- [01:27:14,080 - 01:27:14,800] of acceleration,
+- [01:27:14,800 - 01:27:16,720] r component of force.
+- [01:27:16,720 - 01:27:18,620] What is this thing over here?
+- [01:27:18,620 - 01:27:21,200] It's again a centrifugal
+- [01:27:21,200 - 01:27:22,200] force.
+- [01:27:22,200 - 01:27:24,240] It's a centrifugal force,
+- [01:27:24,240 - 01:27:27,020] not because the coordinates are rotating,
+- [01:27:27,020 - 01:27:28,240] but because
+- [01:27:28,340 - 01:27:33,260] the particle itself may be changing theta.
+- [01:27:33,260 - 01:27:35,260] As the particle changes,
+- [01:27:35,260 - 01:27:36,560] as the particle is
+- [01:27:36,560 - 01:27:37,100] moving around,
+- [01:27:37,100 - 01:27:37,760] whipping around,
+- [01:27:37,760 - 01:27:40,570] it also experiences a force
+- [01:27:40,570 - 01:27:43,380] outward proportional to theta dot
+- [01:27:43,380 - 01:27:43,680] squared.
+- [01:27:43,680 - 01:27:46,480] So that's the r equation.
+- [01:27:46,480 - 01:27:47,700] What about the theta equation?
+- [01:27:47,700 - 01:27:48,280] The theta,
+- [01:27:48,280 - 01:27:49,540] this is of
+- [01:27:49,540 - 01:27:49,820] course,
+- [01:27:49,820 - 01:27:52,440] tells you how r changes with time,
+- [01:27:52,440 - 01:27:55,240] but you have to know what theta dot,
+- [01:27:55,240 - 01:27:55,520] you have
+- [01:27:55,520 - 01:27:56,460] to know what theta is doing.
+- [01:27:56,460 - 01:27:58,320] So the question is,
+- [01:27:58,320 - 01:27:58,320] what is this?
+- [01:27:58,320 - 01:27:58,320] This is the r component
+- [01:27:58,340 - 01:27:58,340] of force.
+- [01:27:58,340 - 01:27:58,840] The question then is,
+- [01:27:58,840 - 01:27:59,720] what is theta doing?
+- [01:27:59,720 - 01:28:01,840] To find what theta is doing,
+- [01:28:01,840 - 01:28:02,200] you work
+- [01:28:02,200 - 01:28:04,340] out the Lagrange equations for theta.
+- [01:28:04,340 - 01:28:07,540] So that's d by dt of
+- [01:28:07,540 - 01:28:10,740] partial of l with respect to theta
+- [01:28:10,740 - 01:28:11,080] dot.
+- [01:28:11,080 - 01:28:13,920] That's the left-hand side.
+- [01:28:13,920 - 01:28:15,640] And what does that give?
+- [01:28:15,640 - 01:28:19,580] That gives m r squared theta dot,
+- [01:28:19,680 - 01:28:19,860] right?
+- [01:28:19,860 - 01:28:27,060] d by dt of m r squared theta dot.
+- [01:28:28,340 - 01:28:29,160] And what's it equal to?
+- [01:28:29,160 - 01:28:34,440] d l by d theta.
+- [01:28:34,440 - 01:28:38,560] That's the other part of the Euler-Lagrange equation.
+- [01:28:38,780 - 01:28:40,600] The other half of the Euler-Lagrange
+- [01:28:40,600 - 01:28:42,420] equation is the l by d coordinate.
+- [01:28:42,420 - 01:28:43,460] Well,
+- [01:28:43,460 - 01:28:43,780] what is the
+- [01:28:43,780 - 01:28:44,380] l by d theta?
+- [01:28:44,380 - 01:28:46,200] l doesn't depend on theta.
+- [01:28:46,200 - 01:28:47,460] It depends on theta dot,
+- [01:28:47,460 - 01:28:48,140] but it doesn't depend
+- [01:28:48,140 - 01:28:48,500] on theta.
+- [01:28:48,500 - 01:28:50,640] So it's just what?
+- [01:28:50,640 - 01:28:52,740] Zero.
+- [01:28:52,740 - 01:28:55,320] Now that's very interesting.
+- [01:28:55,320 - 01:28:57,680] Look what it says.
+- [01:28:57,680 - 01:28:58,320] It says,
+- [01:28:58,340 - 01:29:00,320] let's erase this over here.
+- [01:29:00,320 - 01:29:03,390] d by dt of m r
+- [01:29:03,390 - 01:29:06,460] squared theta dot is equal to zero.
+- [01:29:06,460 - 01:29:07,240] This
+- [01:29:07,240 - 01:29:08,820] says something is conserved.
+- [01:29:08,820 - 01:29:11,440] Here's the conserved quantity right here.
+- [01:29:11,440 - 01:29:13,840] Angular momentum.
+- [01:29:13,840 - 01:29:15,680] Angular
+- [01:29:15,680 - 01:29:16,320] momentum.
+- [01:29:16,320 - 01:29:18,960] m r squared theta dot.
+- [01:29:18,960 - 01:29:20,740] Its derivative is zero.
+- [01:29:20,740 - 01:29:24,720] That's the conservation of angular
+- [01:29:24,720 - 01:29:25,080] momentum.
+- [01:29:25,080 - 01:29:26,360] What did it follow from?
+- [01:29:26,360 - 01:29:28,320] It followed from a moment ago.
+- [01:29:28,320 - 01:29:28,320] It followed from a moment
+- [01:29:28,340 - 01:29:28,360] ago.
+- [01:29:28,360 - 01:29:28,360] When it was a moment ago,
+- [01:29:28,360 - 01:29:28,360] it followed from a moment ago.
+- [01:29:28,360 - 01:29:28,360] So it followed from a moment
+- [01:29:28,360 - 01:29:28,360] That's what it's doing now.
+- [01:29:28,360 - 01:29:28,780] It's doing other things,
+- [01:29:28,780 - 01:29:31,320] assuming that v did not depend on
+- [01:29:31,320 - 01:29:31,580] theta.
+- [01:29:31,580 - 01:29:33,880] If v had depended on theta,
+- [01:29:33,880 - 01:29:36,040] we would have gotten another term on the right hand
+- [01:29:36,040 - 01:29:36,680] side here.
+- [01:29:36,680 - 01:29:40,060] So if v only depends on radial distance,
+- [01:29:40,060 - 01:29:43,660] then there's a conservation law.
+- [01:29:44,480 - 01:29:45,800] And this is very general.
+- [01:29:45,800 - 01:29:48,140] If you have a Lagrangian that
+- [01:29:48,140 - 01:29:50,480] doesn't depend on a coordinate for one
+- [01:29:50,480 - 01:29:51,160] reason or another,
+- [01:29:51,160 - 01:29:53,520] then there will always be a conservation law.
+- [01:29:53,520 - 01:29:54,360] We'll come back to
+- [01:29:54,360 - 01:29:54,520] that.
+- [01:29:54,520 - 01:29:56,200] That's going to be a very important theme,
+- [01:29:56,200 - 01:29:57,220] probably next time.
+- [01:29:57,300 - 01:29:58,240] Do we do that?
+- [01:29:59,799 - 01:30:00,320] Yeah,
+- [01:30:00,320 - 01:30:01,860] if you have a Lagrangian that
+- [01:30:01,860 - 01:30:03,400] doesn't depend explicitly on a coordinate,
+- [01:30:04,699 - 01:30:07,040] then there will be a conservation law,
+- [01:30:07,040 - 01:30:09,980] and it'll be a conservation of this quantity right here.
+- [01:30:11,280 - 01:30:11,800] Okay?
+- [01:30:11,800 - 01:30:13,600] We're going to come back to that.
+- [01:30:13,600 - 01:30:14,140] Incidentally,
+- [01:30:14,140 - 01:30:15,910] there's a name for coordinates
+- [01:30:15,910 - 01:30:17,680] which don't appear in the Lagrangian.
+- [01:30:18,260 - 01:30:19,840] It's a historical name.
+- [01:30:19,840 - 01:30:21,320] They're called cyclic coordinates,
+- [01:30:21,320 - 01:30:23,340] and there's nothing cyclic about them.
+- [01:30:24,180 - 01:30:26,220] Absolutely nothing cyclic about them.
+- [01:30:26,220 - 01:30:28,960] They're called cyclic coordinates if they
+- [01:30:28,960 - 01:30:31,700] don't appear directly in the Lagrangian.
+- [01:30:31,940 - 01:30:33,900] And theta is a cyclic coordinate.
+- [01:30:33,900 - 01:30:34,100] Now,
+- [01:30:34,100 - 01:30:34,520] of course,
+- [01:30:34,520 - 01:30:35,780] theta happens to be cyclic.
+- [01:30:35,780 - 01:30:36,360] It's an angle.
+- [01:30:36,540 - 01:30:38,360] But you can have all kinds of
+- [01:30:38,360 - 01:30:40,180] coordinates that aren't angles that can be cyclic.
+- [01:30:40,440 - 01:30:40,940] Okay.
+- [01:30:40,940 - 01:30:42,140] It's a bad name,
+- [01:30:42,140 - 01:30:45,220] but it is the name that goes with them.
+- [01:30:46,000 - 01:30:47,540] Whenever there's a cyclic coordinate,
+- [01:30:47,540 - 01:30:49,220] there is a conservation law,
+- [01:30:49,220 - 01:30:51,270] and the conservation law happens
+- [01:30:51,270 - 01:30:53,320] just because there's no right-hand side.
+- [01:30:53,340 - 01:30:55,090] There's a d by dt
+- [01:30:55,090 - 01:30:56,840] of something with no right-hand side,
+- [01:30:56,840 - 01:30:58,120] and so it's conserved.
+- [01:30:58,360 - 01:30:59,840] The thing which is conserved?
+- [01:30:59,840 - 01:31:03,060] Partial of L with respect to velocity.
+- [01:31:04,300 - 01:31:04,820] Okay,
+- [01:31:04,820 - 01:31:05,500] but now that,
+- [01:31:05,500 - 01:31:07,420] just to go a little bit further,
+- [01:31:07,420 - 01:31:08,860] we can now say,
+- [01:31:08,860 - 01:31:09,520] look,
+- [01:31:09,520 - 01:31:12,900] I can't tell you what the angular momentum is.
+- [01:31:13,120 - 01:31:16,180] The angular momentum is determined by initial conditions.
+- [01:31:16,180 - 01:31:17,840] Whatever the initial condition was,
+- [01:31:17,840 - 01:31:19,400] it determined some angular momentum.
+- [01:31:20,280 - 01:31:22,360] Angular momentum is usually called L.
+- [01:31:22,520 - 01:31:23,320] But whatever the initial condition was,
+- [01:31:23,320 - 01:31:23,320] it determines some angular momentum.
+- [01:31:23,340 - 01:31:23,700] Whatever it is,
+- [01:31:23,700 - 01:31:25,280] it doesn't change with time.
+- [01:31:26,080 - 01:31:27,820] So this tells us then,
+- [01:31:27,820 - 01:31:28,520] sorry,
+- [01:31:28,520 - 01:31:35,540] the angular momentum is equal to a constant L.
+- [01:31:35,780 - 01:31:37,480] It doesn't change with time.
+- [01:31:37,980 - 01:31:39,540] So once you know it,
+- [01:31:39,540 - 01:31:40,000] you know it.
+- [01:31:40,140 - 01:31:42,680] The initial condition tells you what it is.
+- [01:31:42,680 - 01:31:44,460] Whatever it was to start with,
+- [01:31:44,460 - 01:31:45,820] it stays that way.
+- [01:31:46,180 - 01:31:49,310] And so what it tells you is that
+- [01:31:49,310 - 01:31:52,440] theta dot is equal to L over L.
+- [01:31:53,359 - 01:31:55,360] Over m r squared.
+- [01:31:58,080 - 01:32:00,220] That's what it tells you.
+- [01:32:00,540 - 01:32:02,040] We can plug it into here.
+- [01:32:02,480 - 01:32:03,920] We can plug it into here.
+- [01:32:05,720 - 01:32:06,760] I'll let you do that.
+- [01:32:07,459 - 01:32:10,060] Just plug into this equation here.
+- [01:32:10,220 - 01:32:11,440] Theta dot equals this.
+- [01:32:11,860 - 01:32:14,740] And you get an equation just for r.
+- [01:32:15,520 - 01:32:17,400] You've figured out what theta is doing.
+- [01:32:17,820 - 01:32:20,440] The conservation law has told you what theta is doing.
+- [01:32:20,640 - 01:32:22,420] And now you can plug it back into here.
+- [01:32:22,420 - 01:32:23,220] And you can plug it
+- [01:32:23,220 - 01:32:24,020] back into the equation for r.
+- [01:32:24,560 - 01:32:25,280] Okay,
+- [01:32:25,280 - 01:32:26,960] the central points here.
+- [01:32:27,160 - 01:32:27,660] What are they?
+- [01:32:27,800 - 01:32:29,080] The central points are,
+- [01:32:29,080 - 01:32:29,940] number one,
+- [01:32:29,940 - 01:32:32,520] Lagrangians package problems in a
+- [01:32:32,520 - 01:32:35,100] simple and minimal kind of way.
+- [01:32:35,320 - 01:32:38,310] One function of all the coordinates and velocities
+- [01:32:38,310 - 01:32:41,300] completely determines all of the equations of motion.
+- [01:32:42,180 - 01:32:42,800] Number two,
+- [01:32:42,800 - 01:32:46,140] the Euler-Lagrange equations are a very,
+- [01:32:46,140 - 01:32:49,860] very efficient tool for changing coordinates.
+- [01:32:50,639 - 01:32:53,289] One way of saying it is the
+- [01:32:53,289 - 01:32:55,940] Euler-Lagrange equations are invariant on the coordinate.
+- [01:32:56,120 - 01:32:58,360] They take the same form in every coordinate system.
+- [01:32:58,760 - 01:32:59,800] If it's minimum,
+- [01:32:59,800 - 01:33:00,380] it's minimum.
+- [01:33:00,500 - 01:33:02,300] And it doesn't matter what coordinates you use.
+- [01:33:02,660 - 01:33:06,480] So they're an efficient tool for changing coordinates.
+- [01:33:06,820 - 01:33:07,980] And number three,
+- [01:33:07,980 - 01:33:12,150] the idea of a conservation law coming when
+- [01:33:12,150 - 01:33:16,320] a certain coordinate doesn't appear in the Lagrangian.
+- [01:33:17,660 - 01:33:18,260] Okay,
+- [01:33:18,260 - 01:33:18,980] do we have any questions?
+- [01:33:19,860 - 01:33:20,880] There must be many.
+- [01:33:22,320 - 01:33:23,400] Or exhausting.
+- [01:33:25,820 - 01:33:29,060] Is there another motivation or meaning for the
+- [01:33:29,060 - 01:33:32,300] Lagrangian that captures some aspect of the system?
+- [01:33:34,700 - 01:33:35,820] Is there another?
+- [01:33:38,760 - 01:33:39,980] Try a little bit harder.
+- [01:33:40,420 - 01:33:40,600] Well,
+- [01:33:40,600 - 01:33:43,180] is there an independent reason why
+- [01:33:43,180 - 01:33:45,760] you would arrive at the Lagrangian?
+- [01:33:45,760 - 01:33:46,540] Other than that,
+- [01:33:46,540 - 01:33:48,020] it's the right thing to put in?
+- [01:33:48,040 - 01:33:48,260] Oh,
+- [01:33:48,260 - 01:33:48,600] yes.
+- [01:33:48,600 - 01:33:50,500] It's called quantum mechanics.
+- [01:33:56,560 - 01:33:57,820] But for us now,
+- [01:33:57,820 - 01:34:01,640] it's simply a fact of experience.
+- [01:34:02,600 - 01:34:04,300] Not a fact of experience of
+- [01:34:04,300 - 01:34:06,000] pushing things around and so forth.
+- [01:34:06,120 - 01:34:08,830] I'm talking about the experience of basically a hundred
+- [01:34:08,830 - 01:34:11,540] years of classical physics in the 19th century between the,
+- [01:34:11,540 - 01:34:13,040] well,
+- [01:34:13,180 - 01:34:15,880] between the end of the 17th century
+- [01:34:15,880 - 01:34:18,580] and the later part of the mid-19th century.
+- [01:34:18,600 - 01:34:21,300] That many laws of physics,
+- [01:34:21,300 - 01:34:22,060] it was realized,
+- [01:34:22,060 - 01:34:23,740] could be cast in this form.
+- [01:34:25,720 - 01:34:27,580] Not just particles moving around,
+- [01:34:27,580 - 01:34:28,360] incidentally.
+- [01:34:29,140 - 01:34:29,620] Waves,
+- [01:34:29,620 - 01:34:30,760] electromagnetic fields,
+- [01:34:30,760 - 01:34:34,320] everything you can think of is cast in this form.
+- [01:34:37,500 - 01:34:37,980] So,
+- [01:34:37,980 - 01:34:38,700] as I said,
+- [01:34:38,700 - 01:34:39,500] a matter of experience,
+- [01:34:39,500 - 01:34:42,040] meaning the experience of a physicist for a
+- [01:34:42,040 - 01:34:44,580] hundred years or more than a hundred years,
+- [01:34:45,840 - 01:34:48,420] eventually led to this framework.
+- [01:34:48,420 - 01:34:51,220] And there are no examples,
+- [01:34:51,220 - 01:34:52,960] there are no known examples of laws
+- [01:34:52,960 - 01:34:54,700] of physics that don't fall into this framework.
+- [01:34:55,740 - 01:34:57,400] If this was all there was to it,
+- [01:34:57,400 - 01:34:59,300] we would be puzzled.
+- [01:34:59,320 - 01:35:00,280] Why is this true?
+- [01:35:00,640 - 01:35:03,160] The answer is that it's a deep
+- [01:35:03,160 - 01:35:05,680] aspect of quantum mechanics that leads to it,
+- [01:35:05,680 - 01:35:07,280] but that's for a later time.
+- [01:35:07,660 - 01:35:08,100] Okay.
+- [01:35:08,880 - 01:35:09,320] Yeah.
+- [01:35:10,100 - 01:35:11,630] In the Lagrangian you have in
+- [01:35:11,630 - 01:35:13,160] the right-hand side of the board,
+- [01:35:13,160 - 01:35:15,780] can you resolve the energy there
+- [01:35:15,780 - 01:35:18,400] into kinetic energy plus some other energy?
+- [01:35:18,400 - 01:35:19,220] Potential energy?
+- [01:35:20,180 - 01:35:21,290] Because it looks like you
+- [01:35:21,290 - 01:35:22,400] have that last term as neither.
+- [01:35:23,120 - 01:35:23,600] Yeah,
+- [01:35:23,600 - 01:35:24,080] ignore it.
+- [01:35:24,180 - 01:35:24,620] That's right.
+- [01:35:26,920 - 01:35:27,400] Okay.
+- [01:35:27,640 - 01:35:31,480] We need a deeper concept of energy.
+- [01:35:33,520 - 01:35:37,160] The deeper concept of energy is called the Hamiltonian.
+- [01:35:37,920 - 01:35:39,060] And we will come to it.
+- [01:35:39,200 - 01:35:41,140] This is the Lagrangian form of the equations.
+- [01:35:41,420 - 01:35:44,320] But I will tell you anyway what the energy is.
+- [01:35:44,500 - 01:35:46,440] The energy is just the sum of these two.
+- [01:35:46,620 - 01:35:48,380] This does not contribute to the energy.
+- [01:35:50,360 - 01:35:50,880] Exercise.
+- [01:35:53,199 - 01:35:56,320] Prove that the sum of these two is conserved.
+- [01:35:57,760 - 01:36:01,430] Take the equations of motion and prove that
+- [01:36:01,430 - 01:36:05,100] the sum of these two is conserved with time.
+- [01:36:05,600 - 01:36:09,610] I don't want to do it now because we're going to do it
+- [01:36:09,610 - 01:36:13,620] in a uniform way when we study the Hamiltonian formulation of classical mechanics.
+- [01:36:17,420 - 01:36:18,380] But it's a good question.
+- [01:36:18,400 - 01:36:19,560] What happened to energy?
+- [01:36:20,720 - 01:36:21,400] Answer,
+- [01:36:21,400 - 01:36:23,440] this one doesn't contribute to energy at all.
+- [01:36:28,840 - 01:36:29,760] All right.
+- [01:36:30,320 - 01:36:31,000] Question.
+- [01:36:33,160 - 01:36:36,010] If you know you're describing
+- [01:36:36,010 - 01:36:38,860] an object curving through a trajectory,
+- [01:36:38,860 - 01:36:46,240] what if that curvature is caused by a gravitational field?
+- [01:36:47,700 - 01:36:48,380] Yeah.
+- [01:36:48,380 - 01:36:48,580] Well,
+- [01:36:48,580 - 01:36:49,120] first of all,
+- [01:36:49,120 - 01:36:50,700] we're not thinking about general relativity.
+- [01:36:50,880 - 01:36:51,040] True.
+- [01:36:51,340 - 01:36:51,780] Right.
+- [01:36:51,860 - 01:36:52,600] If we want to do,
+- [01:36:52,600 - 01:36:53,420] all right,
+- [01:36:53,420 - 01:36:55,220] gravity is all set up for us here.
+- [01:36:55,620 - 01:36:58,680] All we have to do is remember
+- [01:36:58,680 - 01:37:01,740] what V is for a gravitational field.
+- [01:37:02,120 - 01:37:04,640] What is a gravitational field of a massive object?
+- [01:37:06,100 - 01:37:06,540] M.
+- [01:37:08,480 - 01:37:08,920] M.
+- [01:37:10,600 - 01:37:11,360] Little m,
+- [01:37:11,360 - 01:37:12,340] the mass of the object,
+- [01:37:12,340 - 01:37:13,220] times big M,
+- [01:37:13,220 - 01:37:14,760] the mass of the gravitating center,
+- [01:37:14,760 - 01:37:17,580] times G over R.
+- [01:37:17,580 - 01:37:19,360] So that's for general relativity.
+- [01:37:19,720 - 01:37:20,220] No,
+- [01:37:20,220 - 01:37:21,940] but we're not doing general relativity at the moment.
+- [01:37:23,200 - 01:37:25,160] General relativity is a long way down the line.
+- [01:37:28,800 - 01:37:29,300] So,
+- [01:37:29,300 - 01:37:29,860] excuse me,
+- [01:37:29,860 - 01:37:31,900] those energy terms,
+- [01:37:31,900 - 01:37:36,540] you stated earlier they're from fictitious forces.
+- [01:37:36,880 - 01:37:37,000] So are,
+- [01:37:37,000 - 01:37:37,440] no,
+- [01:37:37,440 - 01:37:38,220] that's the connection.
+- [01:37:38,900 - 01:37:40,760] So are those fictitious energies?
+- [01:37:42,620 - 01:37:43,120] Look,
+- [01:37:43,120 - 01:37:44,600] fictitious is a funny word.
+- [01:37:44,920 - 01:37:45,420] Well,
+- [01:37:45,420 - 01:37:47,040] no,
+- [01:37:47,040 - 01:37:47,420] because.
+- [01:37:47,420 - 01:37:48,850] Because we're talking about you're on
+- [01:37:48,850 - 01:37:50,280] the merry-go-round and you're seeing something.
+- [01:37:50,480 - 01:37:50,520] Yeah.
+- [01:37:50,640 - 01:37:52,020] And by definition,
+- [01:37:52,020 - 01:37:53,060] in the first coordinate system,
+- [01:37:53,060 - 01:37:54,060] you said no forces.
+- [01:37:54,420 - 01:37:54,820] Right.
+- [01:37:55,060 - 01:37:55,280] Okay.
+- [01:37:55,380 - 01:37:56,360] But from a merry-go-round,
+- [01:37:56,360 - 01:37:57,580] it looks like there are forces.
+- [01:37:57,760 - 01:37:57,940] Right.
+- [01:37:58,300 - 01:38:00,230] So then you would back calculate and
+- [01:38:00,230 - 01:38:02,160] it would look like there were energies.
+- [01:38:02,940 - 01:38:03,340] Right.
+- [01:38:03,780 - 01:38:04,500] So there are forces.
+- [01:38:04,500 - 01:38:06,660] The person on the rotating frame of
+- [01:38:06,660 - 01:38:08,820] reference will say in every possible respect,
+- [01:38:08,820 - 01:38:11,480] this is a potential energy and that's a.
+- [01:38:15,000 - 01:38:15,840] So the answer.
+- [01:38:15,920 - 01:38:16,080] Okay.
+- [01:38:17,420 - 01:38:20,740] The answer is that energy is not something
+- [01:38:20,740 - 01:38:24,060] which is invariant under coordinate transformations in general.
+- [01:38:24,280 - 01:38:25,240] In particular,
+- [01:38:25,240 - 01:38:26,890] it's not invariant
+- [01:38:26,890 - 01:38:28,540] under time-dependent coordinate transformations.
+- [01:38:29,200 - 01:38:30,620] Given a coordinate set,
+- [01:38:30,620 - 01:38:31,340] given this problem,
+- [01:38:31,340 - 01:38:33,100] there is a conserved energy,
+- [01:38:33,100 - 01:38:37,150] but it is not the same energy that
+- [01:38:37,150 - 01:38:41,200] the other fellow in the rest frame said.
+- [01:38:42,340 - 01:38:42,900] Actually,
+- [01:38:42,900 - 01:38:43,280] it is.
+- [01:38:43,500 - 01:38:44,620] I take that back.
+- [01:38:44,680 - 01:38:45,540] It is the same energy,
+- [01:38:45,540 - 01:38:46,020] isn't it?
+- [01:38:46,400 - 01:38:46,740] Right.
+- [01:38:47,700 - 01:38:48,980] Remember what this came from?
+- [01:38:49,300 - 01:38:49,680] Let's see.
+- [01:38:49,780 - 01:38:50,440] Where did it come from?
+- [01:38:51,880 - 01:38:52,220] No.
+- [01:38:52,320 - 01:38:53,120] It's not the same energy.
+- [01:38:53,840 - 01:38:54,180] Yes.
+- [01:38:54,560 - 01:38:54,900] No.
+- [01:38:56,960 - 01:38:57,300] No,
+- [01:38:57,300 - 01:38:57,760] not quite.
+- [01:38:57,960 - 01:38:58,300] No,
+- [01:38:58,300 - 01:38:58,700] it's not.
+- [01:39:01,160 - 01:39:01,500] Yeah.
+- [01:39:04,420 - 01:39:04,900] That's right.
+- [01:39:05,020 - 01:39:05,660] It could be.
+- [01:39:06,660 - 01:39:07,100] That's right.
+- [01:39:07,200 - 01:39:08,700] You could have a particle at rest.
+- [01:39:09,980 - 01:39:10,360] Let's see.
+- [01:39:10,420 - 01:39:11,020] What do we want to do?
+- [01:39:14,639 - 01:39:15,880] A particle at rest.
+- [01:39:15,960 - 01:39:16,000] Yes.
+- [01:39:16,000 - 01:39:16,900] in the rotating frame.
+- [01:39:16,900 - 01:39:18,780] Now it won't stay at rest in the rotating frame,
+- [01:39:18,780 - 01:39:19,460] but somebody could
+- [01:39:19,460 - 01:39:20,080] be holding it.
+- [01:39:20,080 - 01:39:21,380] If they were holding it,
+- [01:39:21,380 - 01:39:23,200] it would have no kinetic energy.
+- [01:39:23,200 - 01:39:23,420] Well,
+- [01:39:23,420 - 01:39:23,820] no,
+- [01:39:23,820 - 01:39:24,020] no,
+- [01:39:24,080 - 01:39:24,120] no.
+- [01:39:25,920 - 01:39:28,040] The particles at rest at the stationary frame,
+- [01:39:28,040 - 01:39:29,860] how does it look from the rotating
+- [01:39:29,860 - 01:39:30,260] frame?
+- [01:39:30,500 - 01:39:30,860] Oh,
+- [01:39:30,860 - 01:39:32,000] it moves around in a circle.
+- [01:39:32,200 - 01:39:32,380] Right.
+- [01:39:32,800 - 01:39:33,940] It moves around in a circle.
+- [01:39:34,100 - 01:39:34,700] So it looks like it has kinetic energy.
+- [01:39:35,040 - 01:39:36,280] It looks like it has kinetic energy,
+- [01:39:36,280 - 01:39:36,660] right.
+- [01:39:36,660 - 01:39:38,320] Right.
+- [01:39:38,320 - 01:39:40,640] But it also has some centripetal
+- [01:39:40,640 - 01:39:40,960] energy.
+- [01:39:40,960 - 01:39:45,480] And it has some centripetal energy also.
+- [01:39:47,000 - 01:39:47,820] All of it.
+- [01:39:48,300 - 01:39:48,840] Yes.
+- [01:39:55,920 - 01:39:57,960] But that term gives it no energy.
+- [01:39:57,960 - 01:39:59,180] There's no energy there.
+- [01:39:59,180 - 01:40:03,820] Yeah,
+- [01:40:03,820 - 01:40:05,060] so energy is another
+- [01:40:05,060 - 01:40:05,400] subject.
+- [01:40:05,400 - 01:40:07,590] Energy is not a terribly
+- [01:40:07,590 - 01:40:09,780] natural object in the Lagrangian formulation.
+- [01:40:09,780 - 01:40:10,620] It's
+- [01:40:10,640 - 01:40:13,100] a very natural object in the Hamiltonian formulation.
+- [01:40:13,100 - 01:40:14,080] We will come to it.
+- [01:40:14,080 - 01:40:17,280] Anything else?
+- [01:40:22,260 - 01:40:23,220] A question?
+- [01:40:23,220 - 01:40:25,120] And where you have that,
+- [01:40:25,120 - 01:40:26,800] the rightmost term,
+- [01:40:26,800 - 01:40:27,980] x dot,
+- [01:40:27,980 - 01:40:29,900] the perpendicular term,
+- [01:40:29,900 - 01:40:30,140] if I
+- [01:40:30,140 - 01:40:30,780] can call it that.
+- [01:40:31,080 - 01:40:31,460] Yeah.
+- [01:40:31,960 - 01:40:33,260] Up in here on the left.
+- [01:40:33,300 - 01:40:33,400] No,
+- [01:40:33,400 - 01:40:33,980] here,
+- [01:40:33,980 - 01:40:34,400] right.
+- [01:40:34,740 - 01:40:35,220] Sure.
+- [01:40:35,220 - 01:40:38,240] On the red cord that's up there,
+- [01:40:38,240 - 01:40:39,160] I was wondering if,
+- [01:40:39,160 - 01:40:40,620] I was trying to figure out
+- [01:40:40,640 - 01:40:44,460] how to draw using the red x-axis
+- [01:40:44,460 - 01:40:48,280] that component from this point of view.
+- [01:40:48,280 - 01:40:49,040] I don't know how
+- [01:40:49,040 - 01:40:49,540] to draw that.
+- [01:40:49,620 - 01:40:49,640] Right.
+- [01:40:49,640 - 01:40:52,140] So let's draw the red axis of the
+- [01:40:52,140 - 01:40:54,640] stationary as if we were in the red coordinate
+- [01:40:54,640 - 01:40:55,060] frame.
+- [01:40:55,060 - 01:40:59,220] And you want to know what
+- [01:40:59,220 - 01:41:03,380] that final force or perpendicular component.
+- [01:41:03,380 - 01:41:05,380] It's going
+- [01:41:05,380 - 01:41:07,040] to be proportional to y dot.
+- [01:41:08,320 - 01:41:08,760] Right.
+- [01:41:08,760 - 01:41:09,440] Whatever it is,
+- [01:41:09,440 - 01:41:09,920] this is,
+- [01:41:09,920 - 01:41:10,220] all right.
+- [01:41:10,220 - 01:41:10,620] Where is the y dot?
+- [01:41:10,640 - 01:41:10,900] Where is it?
+- [01:41:10,900 - 01:41:12,040] Where is the force?
+- [01:41:12,040 - 01:41:12,780] The force is,
+- [01:41:12,780 - 01:41:15,360] what was the x component of force?
+- [01:41:15,360 - 01:41:19,040] Well,
+- [01:41:19,160 - 01:41:20,760] it was proportional to y dot.
+- [01:41:20,760 - 01:41:23,060] It was some coefficient.
+- [01:41:23,060 - 01:41:26,040] And the x component,
+- [01:41:26,040 - 01:41:26,280] and the
+- [01:41:26,280 - 01:41:28,900] y component of force was proportional to minus x dot.
+- [01:41:29,740 - 01:41:30,220] Yeah,
+- [01:41:30,220 - 01:41:31,120] there's an omega there,
+- [01:41:31,120 - 01:41:33,320] probably an m,
+- [01:41:33,320 - 01:41:35,440] but the important thing was the y dot and
+- [01:41:35,440 - 01:41:35,920] the x dot.
+- [01:41:35,920 - 01:41:37,260] All right.
+- [01:41:37,260 - 01:41:40,620] So the first thing is,
+- [01:41:40,620 - 01:41:40,620] you want to know what the y dot is.
+- [01:41:40,620 - 01:41:40,620] And you
+- [01:41:40,640 - 01:41:46,880] got to draw it like this.
+- [01:41:46,880 - 01:41:46,880] Now,
+- [01:41:46,880 - 01:41:46,880] what it's actually performing,
+- [01:41:46,880 - 01:41:48,220] is a vector of some Trajectory 3,
+- [01:41:48,220 - 01:41:48,380] an over B
+- [01:41:48,380 - 01:41:48,380] vector after some intervalks.
+- [01:41:48,380 - 01:41:49,240] And the labor is going to be a constant.
+- [01:41:49,240 - 01:41:49,240] It will move as
+- [01:41:49,240 - 01:41:49,680] This is where we got the F of x,
+- [01:41:49,680 - 01:41:50,700] too.
+- [01:41:51,280 - 01:41:52,780] I'm going to get the F of x.
+- [01:41:52,980 - 01:41:53,700] A step wind down,
+- [01:41:53,700 - 01:42:09,240] and then it launches a little Hudun's force,
+- [01:42:09,240 - 01:42:09,920] and then it into a
+- [01:42:09,920 - 01:42:10,240] tricolor.
+- [01:42:10,240 - 01:42:12,140] force is perpendicular to it.
+- [01:42:12,140 - 01:42:15,340] It's proportional to the magnitude of the velocity.
+- [01:42:15,340 - 01:42:17,420] That tells
+- [01:42:17,420 - 01:42:17,940] you a lot,
+- [01:42:17,940 - 01:42:19,280] there's not that much more to know.
+- [01:42:19,280 - 01:42:22,380] It's proportional to the magnitude of the
+- [01:42:22,380 - 01:42:22,740] velocity.
+- [01:42:22,740 - 01:42:24,040] Let's go back,
+- [01:42:24,040 - 01:42:25,080] take this away.
+- [01:42:25,080 - 01:42:30,540] So it's perpendicular to the velocity,
+- [01:42:30,540 - 01:42:31,340] proportional
+- [01:42:31,340 - 01:42:32,800] to the magnitude of the velocity,
+- [01:42:32,800 - 01:42:36,900] and proportional to the angular velocity of the coordinate
+- [01:42:36,900 - 01:42:37,200] system.
+- [01:42:37,200 - 01:42:38,080] Thank you.
+- [01:42:38,080 - 01:42:41,860] So all this discussion about energy,
+- [01:42:41,860 - 01:42:42,780] what thing,
+- [01:42:42,780 - 01:42:43,500] when you compute
+- [01:42:43,500 - 01:42:44,440] the Lagrangian,
+- [01:42:44,440 - 01:42:47,040] you're doing in an inertial frame,
+- [01:42:47,040 - 01:42:47,420] right?
+- [01:42:47,420 - 01:42:48,320] Well,
+- [01:42:48,320 - 01:42:50,900] you probably wouldn't
+- [01:42:55,040 - 01:42:56,300] start out in a rotating frame,
+- [01:42:56,300 - 01:42:56,740] right,
+- [01:42:56,740 - 01:42:57,640] you probably wouldn't.
+- [01:42:57,640 - 01:42:59,440] But I think the lesson
+- [01:42:59,440 - 01:43:03,130] here is that not so much that you
+- [01:43:03,130 - 01:43:06,820] start with a form of the equations of motion,
+- [01:43:06,820 - 01:43:06,880] but you
+- [01:43:06,900 - 01:43:08,480] got from somewheres.
+- [01:43:08,480 - 01:43:10,350] You got from somewheres and here is
+- [01:43:10,350 - 01:43:12,220] how to transform it from one coordinate
+- [01:43:12,220 - 01:43:13,080] system to another.
+- [01:43:13,080 - 01:43:14,140] Right?
+- [01:43:14,140 - 01:43:16,040] But yeah,
+- [01:43:16,040 - 01:43:16,380] sure.
+- [01:43:16,380 - 01:43:18,380] Typically for a problem involving particles
+- [01:43:18,380 - 01:43:19,020] like this,
+- [01:43:19,020 - 01:43:20,360] you might say,
+- [01:43:20,360 - 01:43:20,660] look,
+- [01:43:20,660 - 01:43:22,780] we know the answer in the inertial frame.
+- [01:43:25,240 - 01:43:26,320] But I think you wouldn't,
+- [01:43:26,320 - 01:43:28,040] you wouldn't write down a Lagrangian as,
+- [01:43:28,040 - 01:43:30,860] I mean this seems obvious,
+- [01:43:30,940 - 01:43:32,760] but as m over two big
+- [01:43:32,760 - 01:43:34,580] X dot squared plus Y dot squared,
+- [01:43:34,580 - 01:43:35,780] just a priori,
+- [01:43:35,780 - 01:43:36,880] because you have,
+- [01:43:36,880 - 01:43:40,400] kinetic energy is in an inertial frame of reference,
+- [01:43:40,400 - 01:43:40,760] right?
+- [01:43:40,940 - 01:43:41,280] Right.
+- [01:43:41,320 - 01:43:41,520] Yeah.
+- [01:43:41,720 - 01:43:42,240] Right.
+- [01:43:44,860 - 01:43:45,380] No,
+- [01:43:45,380 - 01:43:46,040] the rule is,
+- [01:43:46,040 - 01:43:49,240] Newton's rule is that in an inertial frame,
+- [01:43:49,420 - 01:43:51,840] the laws of motion are Newton's equations,
+- [01:43:51,840 - 01:43:53,510] which translates into the statement
+- [01:43:53,510 - 01:43:55,180] that in an inertial frame,
+- [01:43:57,219 - 01:43:59,000] this is the form of the Lagrangian.
+- [01:43:59,500 - 01:44:00,020] Right.
+- [01:44:00,020 - 01:44:00,020] Right.
+- [01:44:00,020 - 01:44:02,340] Incidentally,
+- [01:44:02,340 - 01:44:05,110] this kind of term here is
+- [01:44:05,110 - 01:44:07,880] not particularly unique to Coriolis force.
+- [01:44:08,840 - 01:44:10,120] You know any place else where
+- [01:44:10,120 - 01:44:11,400] a similar term like that occurs?
+- [01:44:14,200 - 01:44:16,020] Charged particle in a magnetic field.
+- [01:44:16,880 - 01:44:17,360] Right.
+- [01:44:17,360 - 01:44:20,620] For a charged particle in a magnetic field,
+- [01:44:23,240 - 01:44:25,720] you would have the charge of the
+- [01:44:25,720 - 01:44:28,200] particle and the magnitude of the magnetic field.
+- [01:44:28,700 - 01:44:29,640] In particular,
+- [01:44:30,020 - 01:44:32,980] if you had a magnetic field pointing into the blackboard,
+- [01:44:32,980 - 01:44:34,000] or out of the blackboard,
+- [01:44:34,000 - 01:44:34,420] either way,
+- [01:44:35,839 - 01:44:38,500] charged particle of charge E,
+- [01:44:38,500 - 01:44:39,920] magnetic field B,
+- [01:44:40,639 - 01:44:42,040] uniform magnetic field,
+- [01:44:42,040 - 01:44:43,820] this would be the form of the Lagrangian.
+- [01:44:46,940 - 01:44:50,390] Are there any constraints on what kind of
+- [01:44:50,390 - 01:44:53,840] function can be a Lagrangian other than smoothness?
+- [01:44:54,160 - 01:44:54,540] There are.
+- [01:44:54,540 - 01:44:55,720] There are.
+- [01:44:55,720 - 01:44:56,840] And we'll come to that.
+- [01:44:57,320 - 01:44:58,540] But at the moment,
+- [01:44:58,760 - 01:44:59,860] I haven't...
+- [01:44:59,860 - 01:45:01,420] I haven't told you anything that would make you
+- [01:45:01,420 - 01:45:03,300] to suggest there are certain kinds of constraints.
+- [01:45:03,480 - 01:45:04,260] But the answer is yes.
+- [01:45:05,700 - 01:45:06,220] Incidentally,
+- [01:45:06,220 - 01:45:06,720] one thing.
+- [01:45:08,400 - 01:45:11,440] An exercise is to take those equations of motion.
+- [01:45:11,560 - 01:45:12,100] I lost them.
+- [01:45:12,100 - 01:45:12,620] Where are they?
+- [01:45:12,880 - 01:45:15,170] They are of the form X
+- [01:45:15,170 - 01:45:17,460] double dot is equal to omega...
+- [01:45:17,460 - 01:45:18,280] What is it?
+- [01:45:18,300 - 01:45:26,180] Omega squared X plus Y dot...
+- [01:45:26,580 - 01:45:28,080] I'm leaving out masses.
+- [01:45:28,080 - 01:45:31,640] Y double dot is equal to omega here.
+- [01:45:32,240 - 01:45:36,280] Omega squared Y minus omega X dot...
+- [01:45:36,280 - 01:45:36,940] something like that.
+- [01:45:38,040 - 01:45:40,960] Can you prove that one of the trajectories
+- [01:45:40,960 - 01:45:43,880] of the system is just moving in a circle
+- [01:45:43,880 - 01:45:44,620] about the origin?
+- [01:45:44,880 - 01:45:45,520] It better be,
+- [01:45:45,520 - 01:45:47,390] because that's just the
+- [01:45:47,390 - 01:45:49,260] original particle standing still somewhere.
+- [01:45:49,840 - 01:45:51,990] Moving in a circle would be
+- [01:45:51,990 - 01:45:54,140] what the person on the carousel sees.
+- [01:45:54,580 - 01:45:56,660] You should be able to see that that...
+- [01:45:56,660 - 01:45:57,820] that that...
+- [01:45:57,820 - 01:45:58,840] that gives rise to a
+- [01:45:58,840 - 01:45:59,860] particle that moves in a circle.
+- [01:46:01,140 - 01:46:02,140] Once you know that,
+- [01:46:02,140 - 01:46:05,050] then you should know that particles
+- [01:46:05,050 - 01:46:07,960] in a magnetic field move in circles,
+- [01:46:08,520 - 01:46:10,340] because the equations are exactly the same.
+- [01:46:11,400 - 01:46:13,190] Would it remain in the same circle
+- [01:46:13,190 - 01:46:14,980] or would it tend to go out?
+- [01:46:16,260 - 01:46:16,660] No,
+- [01:46:16,660 - 01:46:17,560] it leaves in the same circle.
+- [01:46:17,740 - 01:46:18,380] It leaves in the circle.
+- [01:46:20,194 - 01:46:20,354] では
+- [01:46:20,834 - 01:46:22,394] There are solutions of the equations
+- [01:46:22,394 - 01:46:23,954] where it just stays in circles.
+- [01:46:27,894 - 01:46:28,654] Of course,
+- [01:46:28,654 - 01:46:31,174] you can also have it going out and going out.
+- [01:46:35,894 - 01:46:37,294] Without this term,
+- [01:46:37,294 - 01:46:38,494] it wouldn't move out.
+- [01:46:40,814 - 01:46:42,214] This term is so important.
+- [01:46:43,374 - 01:46:44,694] A divergence though.
+- [01:46:45,634 - 01:46:46,854] A charged particle
+- [01:46:47,324 - 01:46:48,234] moving in a circle.
+- [01:46:49,273 - 01:46:50,574] In a magnetic field.
+- [01:46:51,194 - 01:46:53,364] Let's just say some force is
+- [01:46:53,364 - 01:46:55,534] making it move in a circle.
+- [01:46:55,934 - 01:46:57,534] I remember a long,
+- [01:46:57,534 - 01:46:58,094] long time ago,
+- [01:46:58,094 - 01:47:00,014] something about physics says that it's
+- [01:47:00,014 - 01:47:00,934] that's unstable.
+- [01:47:00,934 - 01:47:03,614] It's going to radiate energy and collapse.
+- [01:47:14,173 - 01:47:16,093] These are the equations
+- [01:47:16,093 - 01:47:18,014] without taking into account radiation.
+- [01:47:20,094 - 01:47:21,194] Radiation is another story.
+- [01:47:28,193 - 01:47:29,474] No other questions?
+- [01:47:30,674 - 01:47:31,854] Where do we get hurricanes?
+- [01:47:35,954 - 01:47:36,914] They're fictitious.
+- [01:47:40,654 - 01:47:41,134] Coriolis,
+- [01:47:41,134 - 01:47:41,414] of course,
+- [01:47:41,414 - 01:47:42,714] I'm told is very important today.
+- [01:47:44,214 - 01:47:45,834] Are there any meteorologists here?
+- [01:47:47,634 - 01:47:48,214] The geological science.
+- [01:47:48,234 - 01:47:48,814] Can you explain that?
+- [01:47:48,994 - 01:47:49,154] No,
+- [01:47:49,154 - 01:47:49,534] I can't.
+- [01:47:57,033 - 01:48:00,674] So this framework is thought to cover everything,
+- [01:48:00,674 - 01:48:01,694] correct?
+- [01:48:02,134 - 01:48:02,474] Everything.
+- [01:48:02,634 - 01:48:03,134] Classical.
+- [01:48:04,414 - 01:48:07,154] But an analogous framework would be
+- [01:48:07,154 - 01:48:09,894] thought to cover everything else as well.
+- [01:48:09,934 - 01:48:10,854] Everything that we know about,
+- [01:48:10,854 - 01:48:11,134] yes.
+- [01:48:11,294 - 01:48:14,374] So if somebody came across some principle of
+- [01:48:14,374 - 01:48:17,454] physics that we were not able to cast into
+- [01:48:17,454 - 01:48:18,214] this lagoon,
+- [01:48:18,214 - 01:48:18,214] what would that be?
+- [01:48:18,813 - 01:48:19,354] Well,
+- [01:48:19,354 - 01:48:21,694] that would be like a revelation.
+- [01:48:22,034 - 01:48:22,454] Absolutely.
+- [01:48:23,854 - 01:48:24,394] Right.
+- [01:48:26,274 - 01:48:30,014] Because it comes from quantum physics and that can't be.
+- [01:48:30,014 - 01:48:30,274] Now,
+- [01:48:30,274 - 01:48:32,974] there are phenomena which look like they
+- [01:48:32,974 - 01:48:35,674] come from equations which are different than this.
+- [01:48:35,794 - 01:48:36,674] For example,
+- [01:48:36,674 - 01:48:38,444] just the phenomena of a
+- [01:48:38,444 - 01:48:40,214] particle moving through a viscous fluid.
+- [01:48:40,634 - 01:48:44,414] But the reason why these equations don't look like the
+- [01:48:44,414 - 01:48:48,194] right equations is because you're ignoring the fact that they're not.
+- [01:48:48,194 - 01:48:49,614] The degrees of freedom of
+- [01:48:49,614 - 01:48:51,034] all the molecules and everything else,
+- [01:48:51,034 - 01:48:52,754] as far as we know,
+- [01:48:52,754 - 01:48:53,614] and
+- [01:48:53,614 - 01:48:54,904] we certainly know about molecules and
+- [01:48:54,904 - 01:48:56,194] atoms and all that sort of stuff,
+- [01:48:56,194 - 01:48:57,014] everything in
+- [01:48:57,014 - 01:48:57,374] nature,
+- [01:48:57,374 - 01:48:59,574] when everything is taken into account,
+- [01:48:59,574 - 01:49:00,694] falls into this pattern.
+- [01:49:00,994 - 01:49:01,974] General relativity,
+- [01:49:01,974 - 01:49:04,414] Maxwell's electrodynamics,
+- [01:49:04,414 - 01:49:06,974] the standard model of particle physics.
+- [01:49:07,994 - 01:49:08,474] And,
+- [01:49:08,474 - 01:49:08,814] you know,
+- [01:49:08,814 - 01:49:10,874] these days when a particle physicist is,
+- [01:49:10,874 - 01:49:11,554] or a particle,
+- [01:49:11,554 - 01:49:12,374] any kind of physicist,
+- [01:49:12,594 - 01:49:18,094] is interested in trying out new laws.
+- [01:49:18,134 - 01:49:18,174] Right.
+- [01:49:18,194 - 01:49:18,674] The laws of physics,
+- [01:49:18,674 - 01:49:20,794] trying out new equations and so forth,
+- [01:49:20,794 - 01:49:23,854] the usual pattern is to write down a Lagrangian.
+- [01:49:24,334 - 01:49:26,454] Is to write down a Lagrangian
+- [01:49:26,454 - 01:49:28,574] and then from that derive the equations.
+- [01:49:28,934 - 01:49:29,214] Now,
+- [01:49:29,214 - 01:49:30,764] that's not to say someday
+- [01:49:30,764 - 01:49:32,314] somebody may not discover something else.
+- [01:49:32,694 - 01:49:33,714] It looks unlikely,
+- [01:49:33,714 - 01:49:39,294] but at the moment the action principle is extremely general.
+- [01:49:41,774 - 01:49:42,674] For more,
+- [01:49:42,674 - 01:49:45,094] please visit us at stanford.edu.
