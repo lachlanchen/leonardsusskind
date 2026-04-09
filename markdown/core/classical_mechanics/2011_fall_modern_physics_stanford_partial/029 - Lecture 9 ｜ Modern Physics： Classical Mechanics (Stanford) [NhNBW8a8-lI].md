@@ -1,0 +1,1970 @@
+# Transcript
+
+Source: core/classical_mechanics/2011_fall_modern_physics_stanford_partial/029 - Lecture 9 ｜ Modern Physics： Classical Mechanics (Stanford) [NhNBW8a8-lI].mp4
+
+- [00:00:06,740 - 00:00:09,740] This program is brought to you by Stanford University.
+- [00:00:10,220 - 00:00:12,720] Please visit us at stanford.edu.
+- [00:00:16,259 - 00:00:21,240] Let's proceed on with Poisson brackets.
+- [00:00:24,580 - 00:00:26,900] Phase space has a structure to it.
+- [00:00:27,660 - 00:00:30,160] It's not just a bunch of P's and Q's,
+- [00:00:30,160 - 00:00:31,520] but it's P's and Q's
+- [00:00:31,520 - 00:00:32,880] with a certain kind of structure.
+- [00:00:34,120 - 00:00:35,700] Spaces have structures.
+- [00:00:36,060 - 00:00:39,260] The structures are the things which are
+- [00:00:39,260 - 00:00:42,460] invariant under the various transformations that you
+- [00:00:42,460 - 00:00:43,280] might want to do.
+- [00:00:43,980 - 00:00:45,400] An example of the structure
+- [00:00:45,400 - 00:00:46,820] that can be on a space,
+- [00:00:46,820 - 00:00:49,540] if you know anything about curved
+- [00:00:49,540 - 00:00:52,060] spaces and differential geometry and so forth,
+- [00:00:52,060 - 00:00:54,340] the metric structure of certain,
+- [00:00:54,340 - 00:00:54,940] of metrical
+- [00:00:54,940 - 00:00:55,340] spaces.
+- [00:00:55,340 - 00:00:57,430] The spaces of Riemann spaces are
+- [00:00:57,430 - 00:00:59,520] part of the structure of those spaces.
+- [00:01:00,140 - 00:01:02,940] They're characterized by a metric on the space,
+- [00:01:02,940 - 00:01:04,980] a distance formula between neighboring
+- [00:01:04,980 - 00:01:05,480] points.
+- [00:01:07,682 - 00:01:07,802] 對
+- [00:01:08,962 - 00:01:11,742] Poisson structures are different than metric structures.
+- [00:01:12,062 - 00:01:13,242] They're more abstract.
+- [00:01:14,002 - 00:01:17,672] And they were invented largely to describe
+- [00:01:17,672 - 00:01:21,342] the structure of phase space and its properties.
+- [00:01:21,942 - 00:01:24,512] Its properties under transformations
+- [00:01:24,512 - 00:01:27,082] which change the coordinates.
+- [00:01:27,342 - 00:01:27,482] Now,
+- [00:01:27,482 - 00:01:29,072] the coordinates of a phase
+- [00:01:29,072 - 00:01:30,662] space are not just the q's.
+- [00:01:31,022 - 00:01:32,652] The coordinates of a phase space
+- [00:01:32,652 - 00:01:34,282] are the q's and the p's.
+- [00:01:34,282 - 00:01:35,822] And roughly speaking,
+- [00:01:35,822 - 00:01:36,302] the question,
+- [00:01:36,302 - 00:01:39,011] the kind of question that you might ask is
+- [00:01:39,011 - 00:01:41,721] what are the various transformations that you can do?
+- [00:01:41,802 - 00:01:42,262] For example,
+- [00:01:42,262 - 00:01:45,652] that mix up p's and q's that
+- [00:01:45,652 - 00:01:49,042] preserve the basic structure of classical mechanics.
+- [00:01:50,502 - 00:01:51,262] As I said,
+- [00:01:51,262 - 00:01:52,582] this is the kind of question,
+- [00:01:52,582 - 00:01:54,082] the kind of structural question,
+- [00:01:54,082 - 00:01:56,782] the kind of formal question that the
+- [00:01:56,782 - 00:01:59,482] French mathematicians were awfully damn good at.
+- [00:02:00,442 - 00:02:02,002] It turned out to be very
+- [00:02:02,002 - 00:02:03,562] important to the future of physics.
+- [00:02:04,282 - 00:02:05,352] It wasn't the French who
+- [00:02:05,352 - 00:02:06,422] figured out why it was important.
+- [00:02:06,562 - 00:02:08,312] It was the French who
+- [00:02:08,312 - 00:02:10,062] figured out how the basic structure,
+- [00:02:10,062 - 00:02:12,942] the French and Hamilton basically,
+- [00:02:12,942 - 00:02:14,552] who figured out what the
+- [00:02:14,552 - 00:02:16,162] structure of classical mechanics is.
+- [00:02:18,581 - 00:02:22,302] And it got more and more abstract.
+- [00:02:23,042 - 00:02:25,062] The most concrete version was,
+- [00:02:25,062 - 00:02:25,402] of course,
+- [00:02:25,402 - 00:02:26,162] Newton's version.
+- [00:02:27,622 - 00:02:29,322] The most abstract version,
+- [00:02:29,322 - 00:02:31,002] I don't know how abstract it is.
+- [00:02:31,022 - 00:02:32,522] It probably can get infinitely more abstract
+- [00:02:32,522 - 00:02:34,022] than anything I'm likely to teach you.
+- [00:02:34,282 - 00:02:38,452] But the most abstract end of it for our purposes is the
+- [00:02:38,452 - 00:02:42,622] Poisson formulation of classical mechanics based on the idea of Poisson brackets.
+- [00:02:44,702 - 00:02:46,942] What Poisson brackets do,
+- [00:02:46,942 - 00:02:50,402] or what they're useful for,
+- [00:02:50,402 - 00:02:53,782] is describing flows on phase space.
+- [00:02:55,582 - 00:02:57,982] One kind of flow on phase space is
+- [00:02:57,982 - 00:03:00,382] the motion of the phase space with time,
+- [00:03:00,382 - 00:03:02,102] or the motion of the
+- [00:03:02,102 - 00:03:03,822] points in phase space with time.
+- [00:03:04,501 - 00:03:07,821] How the actual points evolve with time
+- [00:03:07,821 - 00:03:11,142] under the influence of a particular Hamiltonian.
+- [00:03:11,582 - 00:03:14,022] That's one kind of flow on phase space.
+- [00:03:14,402 - 00:03:17,372] But there are other kinds of flows on phase
+- [00:03:17,372 - 00:03:20,342] space that you can imagine with possibly somewhat different purposes.
+- [00:03:21,382 - 00:03:22,422] For example,
+- [00:03:22,422 - 00:03:25,342] we can talk about symmetries.
+- [00:03:25,822 - 00:03:27,522] Now we've talked about symmetries.
+- [00:03:27,602 - 00:03:28,362] The basic symmetry,
+- [00:03:28,362 - 00:03:30,282] the problem for me in explaining symmetries
+- [00:03:30,282 - 00:03:32,202] is not that it's hard to explain.
+- [00:03:32,502 - 00:03:34,262] It's that there aren't too many symmetries.
+- [00:03:34,262 - 00:03:37,512] There are too many examples in classical mechanics that
+- [00:03:37,512 - 00:03:40,762] allow you a wide range of different situations to describe.
+- [00:03:41,002 - 00:03:44,652] The basic symmetries of most classical mechanical
+- [00:03:44,652 - 00:03:48,302] systems are rotations about various axes and translations.
+- [00:03:51,361 - 00:03:56,221] Special systems with particularly simple mathematics sometimes have
+- [00:03:56,221 - 00:04:01,082] some hidden symmetries that you might not have expected.
+- [00:04:01,462 - 00:04:03,622] But the basic symmetries are just those.
+- [00:04:03,622 - 00:04:04,722] The motions of space,
+- [00:04:04,722 - 00:04:05,302] translation,
+- [00:04:05,302 - 00:04:05,762] rotation.
+- [00:04:06,502 - 00:04:08,882] As you move on to more advanced physics,
+- [00:04:08,882 - 00:04:10,402] you discover more symmetries,
+- [00:04:10,402 - 00:04:11,702] different kinds of symmetries,
+- [00:04:11,702 - 00:04:13,862] symmetries among element-t particles and so forth.
+- [00:04:14,102 - 00:04:15,862] But those are not for us now.
+- [00:04:19,442 - 00:04:22,082] What do those symmetries have to do with flows?
+- [00:04:22,942 - 00:04:24,282] Flows in phase space.
+- [00:04:24,562 - 00:04:24,682] Well,
+- [00:04:24,682 - 00:04:27,702] let me begin with flows in just coordinate space.
+- [00:04:28,302 - 00:04:29,142] X-space.
+- [00:04:29,962 - 00:04:31,642] We can think of a rotation.
+- [00:04:31,802 - 00:04:33,522] We can think of rotations in space.
+- [00:04:33,622 - 00:04:36,462] As defining a kind of flow in the space.
+- [00:04:36,642 - 00:04:39,222] Just imagine going from here to here.
+- [00:04:39,962 - 00:04:41,762] Rotating our coordinates in space.
+- [00:04:42,222 - 00:04:44,252] By imagining an infinite
+- [00:04:44,252 - 00:04:46,282] number of intermediate configurations.
+- [00:04:47,322 - 00:04:50,162] And imagine in your head going from
+- [00:04:50,162 - 00:04:53,002] one configuration to another configuration of the axes.
+- [00:04:53,122 - 00:04:55,142] Of the axes of the space continuously.
+- [00:04:56,822 - 00:04:59,922] Or we don't have to imagine motion of the axes.
+- [00:05:00,102 - 00:05:02,782] We can actually imagine motion of a system.
+- [00:05:02,782 - 00:05:04,942] Where we rotate the whole system.
+- [00:05:05,002 - 00:05:06,262] We keep the axes fixed.
+- [00:05:06,482 - 00:05:08,402] And rotate the whole room.
+- [00:05:09,682 - 00:05:12,702] That rotation might not have anything to do
+- [00:05:12,702 - 00:05:15,722] with the actual time dependence of the system.
+- [00:05:15,902 - 00:05:17,872] It simply allows us to
+- [00:05:17,872 - 00:05:19,842] describe mathematically what a rotation is.
+- [00:05:20,022 - 00:05:22,432] A rotation is something which is built
+- [00:05:22,432 - 00:05:24,842] up out of lots of little rotations basically.
+- [00:05:26,002 - 00:05:28,412] And so we can think of
+- [00:05:28,412 - 00:05:30,822] the idea of a coordinate transformation.
+- [00:05:30,822 - 00:05:32,932] Which rotates the coordinates of
+- [00:05:32,932 - 00:05:35,042] space as a kind of flow.
+- [00:05:36,662 - 00:05:38,842] Likewise the translation of space.
+- [00:05:39,182 - 00:05:42,502] The motion from one point moving our coordinate axes.
+- [00:05:42,562 - 00:05:43,562] Not rotating them.
+- [00:05:43,722 - 00:05:45,162] But translating them.
+- [00:05:45,402 - 00:05:48,202] We can also think of that as being built up.
+- [00:05:49,142 - 00:05:51,212] A given translation as being built
+- [00:05:51,212 - 00:05:53,282] up by a lot of little translations.
+- [00:05:53,422 - 00:05:54,682] Which define a flow.
+- [00:05:55,342 - 00:05:57,522] It's those flows in phase space.
+- [00:05:57,702 - 00:05:59,162] Not just in coordinate space.
+- [00:05:59,162 - 00:06:01,222] But transformations which mix together
+- [00:06:01,222 - 00:06:03,282] or potentially could mix together.
+- [00:06:03,622 - 00:06:05,562] Both the P's and the Q's.
+- [00:06:05,762 - 00:06:07,442] Into a richer structure.
+- [00:06:07,942 - 00:06:11,622] Than just the transformations which mix up the coordinates.
+- [00:06:12,142 - 00:06:15,962] I use coordinates to mean Q's or X's.
+- [00:06:16,242 - 00:06:18,352] I use phase space to talk
+- [00:06:18,352 - 00:06:20,462] about the P's and the Q's.
+- [00:06:21,722 - 00:06:24,762] We can become interested and we will become interested.
+- [00:06:24,982 - 00:06:27,442] In transformations which mix the P's and Q's.
+- [00:06:27,642 - 00:06:29,142] And so it's a richer flow.
+- [00:06:29,162 - 00:06:32,122] A family of transformations that we can imagine.
+- [00:06:32,742 - 00:06:34,782] And those flows which move things
+- [00:06:34,782 - 00:06:36,822] around in phase space in various ways.
+- [00:06:36,942 - 00:06:40,442] Are described by the method of Poisson brackets.
+- [00:06:41,982 - 00:06:44,962] So I try to make it a
+- [00:06:44,962 - 00:06:47,942] habit of not beginning in the middle.
+- [00:06:48,442 - 00:06:50,262] Even though I may have covered
+- [00:06:50,262 - 00:06:52,082] something fairly completely in the previous lecture.
+- [00:06:52,502 - 00:06:53,922] So I like to go back over.
+- [00:06:54,122 - 00:06:55,592] Even if it means I
+- [00:06:55,592 - 00:06:57,062] do it two or three times.
+- [00:06:58,162 - 00:06:59,142] Let's just read through.
+- [00:06:59,162 - 00:07:01,062] And review what we know about Poisson brackets.
+- [00:07:02,562 - 00:07:05,562] But let's be French mathematicians.
+- [00:07:05,622 - 00:07:06,342] Let's abstract.
+- [00:07:06,862 - 00:07:09,452] Rather than write down the
+- [00:07:09,452 - 00:07:12,042] concrete definition of a Poisson bracket.
+- [00:07:12,682 - 00:07:16,082] Let's think about it from a more abstract
+- [00:07:16,082 - 00:07:19,482] collection of postulates or axioms about Poisson brackets.
+- [00:07:20,882 - 00:07:22,482] The Poisson brackets.
+- [00:07:24,462 - 00:07:25,202] Between.
+- [00:07:25,602 - 00:07:27,742] What are Poisson brackets.
+- [00:07:27,982 - 00:07:29,142] What go into the Poisson brackets.
+- [00:07:29,162 - 00:07:30,982] A thing that I'll call A
+- [00:07:30,982 - 00:07:32,802] and a thing that I'll call B.
+- [00:07:33,262 - 00:07:35,582] Both A and B are imagined to
+- [00:07:35,582 - 00:07:37,902] be functions of the P's and Q's.
+- [00:07:38,542 - 00:07:42,752] So we can write Poisson bracket of A of
+- [00:07:42,752 - 00:07:46,962] P and Q with B of P and Q.
+- [00:07:49,302 - 00:07:51,232] First of all has the
+- [00:07:51,232 - 00:07:53,162] abstract property that it's anti-symmetric.
+- [00:07:53,782 - 00:07:56,032] Anti-symmetric means that it changes sign
+- [00:07:56,032 - 00:07:58,282] if you interchange A and B.
+- [00:08:05,502 - 00:08:07,182] That's the first abstract property.
+- [00:08:09,862 - 00:08:10,322] Oops.
+- [00:08:10,322 - 00:08:11,202] Minus sign.
+- [00:08:11,202 - 00:08:11,782] Thank you.
+- [00:08:12,342 - 00:08:13,462] Most important thing.
+- [00:08:13,462 - 00:08:14,102] The minus sign.
+- [00:08:16,222 - 00:08:16,682] Right.
+- [00:08:16,682 - 00:08:18,602] So that's abstract property number one.
+- [00:08:19,222 - 00:08:21,192] Abstract property number two I won't write
+- [00:08:21,192 - 00:08:23,162] down in detail unless you ask me to.
+- [00:08:23,762 - 00:08:25,082] It's the linearity.
+- [00:08:25,742 - 00:08:26,982] Oh let me write it down.
+- [00:08:30,342 - 00:08:33,602] Supposing we have the Poisson bracket
+- [00:08:33,602 - 00:08:36,861] of some combination of A and B.
+- [00:08:37,722 - 00:08:39,402] Let's say alpha A,
+- [00:08:39,402 - 00:08:40,902] alpha and beta are numbers.
+- [00:08:41,202 - 00:08:42,241] Any numbers.
+- [00:08:42,741 - 00:08:49,232] Alpha A plus beta B Poisson bracket with C is just
+- [00:08:49,232 - 00:08:55,722] equal to alpha times the Poisson bracket of A with C.
+- [00:08:58,162 - 00:09:03,082] Plus beta times the Poisson bracket of B with C.
+- [00:09:10,102 - 00:09:12,502] So that's the property of linearity.
+- [00:09:12,542 - 00:09:13,742] This is anti-symmetry.
+- [00:09:18,242 - 00:09:19,822] This is linearity.
+- [00:09:24,482 - 00:09:25,702] Then there's the product.
+- [00:09:25,702 - 00:09:25,962] Product rule.
+- [00:09:26,602 - 00:09:28,822] What kinds of things are the A's and the B's?
+- [00:09:29,402 - 00:09:30,042] Capital A.
+- [00:09:30,042 - 00:09:30,722] What kind of what?
+- [00:09:30,982 - 00:09:31,982] Things are the A's.
+- [00:09:32,322 - 00:09:32,762] Functions.
+- [00:09:32,762 - 00:09:34,562] Functions of P's and Q's.
+- [00:09:34,802 - 00:09:36,162] P squared plus Q squared.
+- [00:09:36,162 - 00:09:37,102] Sine of P.
+- [00:09:37,102 - 00:09:37,522] Whatever.
+- [00:09:37,862 - 00:09:38,442] Is it real value?
+- [00:09:39,002 - 00:09:39,762] Not necessarily.
+- [00:09:40,862 - 00:09:41,822] But you can add it.
+- [00:09:42,662 - 00:09:44,932] There's no reason why in these formulas you
+- [00:09:44,932 - 00:09:47,202] can't take alpha and beta to be complex numbers.
+- [00:09:47,822 - 00:09:49,342] But you can't add A's and B's.
+- [00:09:49,342 - 00:09:49,942] That's all it says.
+- [00:09:50,062 - 00:09:50,722] You can add A's.
+- [00:09:50,722 - 00:09:51,001] Oh yes.
+- [00:09:51,001 - 00:09:52,021] You can add A's and B's.
+- [00:09:52,021 - 00:09:52,381] Absolutely.
+- [00:09:52,702 - 00:09:54,202] You can add A's and B's.
+- [00:09:54,202 - 00:09:55,602] Just adding the functions.
+- [00:09:55,882 - 00:09:56,222] Yeah.
+- [00:09:56,942 - 00:09:58,502] You can certainly add A's and B's.
+- [00:09:59,402 - 00:10:00,502] They're just functions.
+- [00:10:03,302 - 00:10:06,082] In classical mechanics there isn't much reason
+- [00:10:06,082 - 00:10:08,862] to be thinking about complex valued functions.
+- [00:10:09,222 - 00:10:11,082] But there's no reason that you can't.
+- [00:10:11,262 - 00:10:12,662] And sometimes you do.
+- [00:10:12,802 - 00:10:13,722] Sometimes you do.
+- [00:10:13,802 - 00:10:14,602] Sometimes it's useful.
+- [00:10:14,782 - 00:10:16,852] So they're just general functions
+- [00:10:16,852 - 00:10:18,922] of the coordinates of momenta.
+- [00:10:19,062 - 00:10:21,502] Remember the coordinates when I write down P's and
+- [00:10:21,502 - 00:10:23,942] Q's I don't just mean one P and one Q.
+- [00:10:24,202 - 00:10:27,012] I mean N P's and N Q's where
+- [00:10:27,012 - 00:10:29,822] N is the number of coordinates of the system.
+- [00:10:31,422 - 00:10:32,022] Okay.
+- [00:10:32,022 - 00:10:33,362] So that's the linearity.
+- [00:10:34,122 - 00:10:35,722] Then there's the product rule.
+- [00:10:38,762 - 00:10:45,142] The Poisson bracket of A times B with C is
+- [00:10:45,142 - 00:10:51,522] equal to A times the Poisson bracket of B with C.
+- [00:10:59,222 - 00:11:00,262] Plus B.
+- [00:11:04,642 - 00:11:05,162] A.
+- [00:11:05,602 - 00:11:05,602] A.
+- [00:11:05,602 - 00:11:09,082] Thank you.
+- [00:11:12,102 - 00:11:12,622] B.
+- [00:11:14,682 - 00:11:18,062] Now I've written these formulas in a particular order here.
+- [00:11:18,402 - 00:11:20,262] I've left the A on the left
+- [00:11:20,262 - 00:11:22,122] here and the B on the right.
+- [00:11:22,422 - 00:11:23,782] There's no reason for that.
+- [00:11:23,782 - 00:11:25,122] These are just numbers.
+- [00:11:25,342 - 00:11:26,882] That is to say they're
+- [00:11:26,882 - 00:11:28,422] functions whose values are just numbers.
+- [00:11:28,802 - 00:11:33,432] And it doesn't matter whether you multiply A times
+- [00:11:33,432 - 00:11:38,062] the Poisson bracket or the Poisson bracket times A.
+- [00:11:39,062 - 00:11:41,472] Mathematically speaking these things all commute which
+- [00:11:41,472 - 00:11:43,882] means you can multiply them in any order.
+- [00:11:44,822 - 00:11:49,042] I've written it in a form which won't mean anything to you
+- [00:11:49,042 - 00:11:53,262] now but it will mean next quarter when we study quantum mechanics.
+- [00:11:53,262 - 00:11:55,582] In quantum mechanics things don't commute.
+- [00:11:55,762 - 00:11:57,762] And I've written in a particular order
+- [00:11:57,762 - 00:11:59,762] which is still correct in quantum mechanics.
+- [00:12:00,042 - 00:12:04,482] But for our purposes now A times the Poisson bracket of B and
+- [00:12:04,482 - 00:12:08,922] C is just nothing but the Poisson bracket of B and C times A.
+- [00:12:09,122 - 00:12:11,312] So it doesn't matter whether the B's
+- [00:12:11,312 - 00:12:13,502] come first or the Poisson brackets come first.
+- [00:12:13,682 - 00:12:15,362] It does matter the order that
+- [00:12:15,362 - 00:12:17,042] you write down the Poisson bracket itself.
+- [00:12:18,482 - 00:12:20,282] That order does matter because you have to
+- [00:12:20,282 - 00:12:22,082] change the sign if you want to change them.
+- [00:12:22,082 - 00:12:22,282] Yeah?
+- [00:12:22,462 - 00:12:25,122] So these A's and B's have to be scalar functions?
+- [00:12:27,162 - 00:12:28,602] Scalar has to do with
+- [00:12:28,602 - 00:12:30,042] their properties under rotation of space.
+- [00:12:30,362 - 00:12:32,022] I mean it's not a vector.
+- [00:12:34,462 - 00:12:36,482] They could be components of vectors.
+- [00:12:38,862 - 00:12:39,622] Vectors meaning?
+- [00:12:39,942 - 00:12:41,652] I mean if they were
+- [00:12:41,652 - 00:12:43,362] vectors of our matrix or something.
+- [00:12:46,522 - 00:12:47,042] Oh,
+- [00:12:47,042 - 00:12:47,562] oh,
+- [00:12:47,562 - 00:12:47,802] oh.
+- [00:12:47,922 - 00:12:49,552] We're not talking about matrix
+- [00:12:49,552 - 00:12:51,182] multiplication if that's what you mean.
+- [00:12:51,182 - 00:12:52,222] We're not talking about vector.
+- [00:12:52,322 - 00:12:54,082] We're talking about just numerical multiplication.
+- [00:12:54,582 - 00:12:54,942] Yeah.
+- [00:12:55,322 - 00:12:56,682] Let's not call them scalars.
+- [00:12:57,122 - 00:12:58,262] Let's call them numbers.
+- [00:12:59,362 - 00:13:00,462] Let's call them numbers.
+- [00:13:00,722 - 00:13:03,442] Numbers which simply mean that when you multiply two
+- [00:13:03,442 - 00:13:06,162] numbers it doesn't matter which order you multiply them.
+- [00:13:07,402 - 00:13:07,922] Yeah,
+- [00:13:07,922 - 00:13:10,442] mathematicians tend to just use the word scalar.
+- [00:13:10,642 - 00:13:11,162] Oh,
+- [00:13:11,162 - 00:13:11,422] do they?
+- [00:13:11,582 - 00:13:12,102] Yeah.
+- [00:13:13,042 - 00:13:15,412] Well physicists use the word scalar to
+- [00:13:15,412 - 00:13:17,782] represent the property of a system under rotation.
+- [00:13:18,002 - 00:13:18,702] What's the function of these?
+- [00:13:18,802 - 00:13:20,982] The alpha and beta are scalar.
+- [00:13:21,182 - 00:13:23,442] But they're just functions.
+- [00:13:25,042 - 00:13:26,402] Because they depend on the...
+- [00:13:26,402 - 00:13:29,582] We're going to get into linguistic ambiguities here because it
+- [00:13:29,582 - 00:13:32,762] may be that mathematicians use the terminology different than physicists.
+- [00:13:33,962 - 00:13:36,322] Physicist means by a scalar something
+- [00:13:36,322 - 00:13:38,682] which doesn't transform under rotation of space.
+- [00:13:39,782 - 00:13:40,382] Okay.
+- [00:13:41,922 - 00:13:44,842] Mathematicians may use the word scalar to mean a number.
+- [00:13:46,002 - 00:13:47,822] Physicists often use the word
+- [00:13:47,822 - 00:13:49,642] C number meaning a constant number.
+- [00:13:49,642 - 00:13:51,962] It doesn't matter whether it's constant or not.
+- [00:13:52,082 - 00:13:53,402] There's a whole terminology here
+- [00:13:53,402 - 00:13:54,722] that we'll get confused about.
+- [00:13:55,042 - 00:13:57,442] But the important thing is we're
+- [00:13:57,442 - 00:13:59,842] talking about multiplications which are commutative.
+- [00:14:00,742 - 00:14:04,022] But the Poisson bracket process itself is not commutative.
+- [00:14:05,762 - 00:14:06,942] A times B,
+- [00:14:06,942 - 00:14:08,692] A Poisson bracket with B is
+- [00:14:08,692 - 00:14:10,442] not B Poisson bracket with A.
+- [00:14:11,382 - 00:14:11,942] Okay,
+- [00:14:11,942 - 00:14:13,242] I think we know what we mean.
+- [00:14:16,642 - 00:14:18,922] Those are the basic abstract rules.
+- [00:14:18,922 - 00:14:21,502] And then there's some concrete rules.
+- [00:14:22,002 - 00:14:24,722] If the functions A and B are simply
+- [00:14:24,722 - 00:14:27,442] P's and Q's and nothing but P's and Q's,
+- [00:14:27,662 - 00:14:31,422] then we presume that there are some simple laws of Poisson
+- [00:14:31,422 - 00:14:35,182] brackets or simple rules for Poisson brackets for P's with Q's,
+- [00:14:35,182 - 00:14:36,122] P's with P's,
+- [00:14:36,122 - 00:14:37,002] and Q's with Q's.
+- [00:14:38,782 - 00:14:41,982] If we only had one P and one Q,
+- [00:14:41,982 - 00:14:46,722] then we could immediately write down that P with P
+- [00:14:48,262 - 00:14:50,862] with now means Poisson bracket with.
+- [00:14:50,942 - 00:14:53,142] I get tired of saying take the Poisson bracket with.
+- [00:14:53,382 - 00:14:55,482] With simply means take the Poisson bracket.
+- [00:14:56,042 - 00:14:59,542] P with P can only be equal to zero.
+- [00:15:04,302 - 00:15:08,712] That follows from the anti-symmetry P with P is equal to minus
+- [00:15:08,712 - 00:15:13,122] P with P from the top equation if we interchange the order.
+- [00:15:13,342 - 00:15:15,342] But if something is equal to its own negative,
+- [00:15:15,342 - 00:15:16,602] it's got to be equal to zero.
+- [00:15:16,722 - 00:15:19,302] Same is true with Q with...
+- [00:15:19,302 - 00:15:19,622] What?
+- [00:15:21,462 - 00:15:22,062] What's that?
+- [00:15:23,102 - 00:15:23,622] Right.
+- [00:15:25,182 - 00:15:26,962] But that doesn't tell you what the
+- [00:15:26,962 - 00:15:28,742] Poisson bracket of P with Q is.
+- [00:15:33,662 - 00:15:34,942] Let's take Q with P.
+- [00:15:38,662 - 00:15:39,542] For that,
+- [00:15:39,542 - 00:15:42,322] we need to use the definition of the Poisson bracket.
+- [00:15:44,262 - 00:15:46,302] The definition in terms of derivatives.
+- [00:15:46,722 - 00:15:48,022] And then we just find
+- [00:15:48,022 - 00:15:49,322] out that it's equal to one.
+- [00:15:54,342 - 00:15:54,862] Yeah.
+- [00:15:54,982 - 00:15:57,122] Now if we put subscripts in,
+- [00:15:57,122 - 00:16:00,652] we can't be quite as confident that
+- [00:16:00,652 - 00:16:04,182] this is true for every I and J.
+- [00:16:06,602 - 00:16:07,122] Nevertheless,
+- [00:16:07,122 - 00:16:08,782] by the definition of Poisson
+- [00:16:08,782 - 00:16:10,442] brackets in terms of derivatives,
+- [00:16:10,442 - 00:16:13,572] remember that every Poisson bracket has in
+- [00:16:13,572 - 00:16:16,702] it derivatives with respect to P and Q.
+- [00:16:16,722 - 00:16:17,272] So what's the definition of the
+- [00:16:17,272 - 00:16:17,822] Poisson bracket of P with P?
+- [00:16:18,002 - 00:16:18,002] Well,
+- [00:16:18,002 - 00:16:22,202] you can't differentiate a P with respect to Q.
+- [00:16:22,282 - 00:16:22,702] You get zero.
+- [00:16:23,402 - 00:16:24,982] So any time you take a Poisson
+- [00:16:24,982 - 00:16:26,562] bracket of a P with a P,
+- [00:16:26,562 - 00:16:27,742] you must get zero.
+- [00:16:28,162 - 00:16:29,202] A Q with a Q,
+- [00:16:29,202 - 00:16:30,002] you must get zero.
+- [00:16:33,562 - 00:16:34,762] But a Q with a P,
+- [00:16:34,762 - 00:16:38,502] you get one or zero,
+- [00:16:38,502 - 00:16:41,082] depending on whether I is equal to J.
+- [00:16:42,982 - 00:16:43,782] Delta IJ.
+- [00:16:43,902 - 00:16:45,882] Delta IJ is the Kronecker symbol.
+- [00:16:46,302 - 00:16:46,702] So you can get a P with respect to Q.
+- [00:16:47,742 - 00:16:48,102] Kronecker.
+- [00:16:52,421 - 00:16:54,242] I don't know if I spelled that right or not.
+- [00:16:59,202 - 00:16:59,942] No C here?
+- [00:17:00,942 - 00:17:01,302] No,
+- [00:17:01,302 - 00:17:01,442] no,
+- [00:17:01,442 - 00:17:02,822] that was right.
+- [00:17:02,922 - 00:17:03,302] I don't know.
+- [00:17:04,422 - 00:17:04,781] Yeah.
+- [00:17:04,922 - 00:17:05,982] It's either zero or one,
+- [00:17:05,982 - 00:17:08,102] depending on whether I equal to J or not.
+- [00:17:09,321 - 00:17:09,682] Namely,
+- [00:17:09,682 - 00:17:10,912] it's equal to 1 if I
+- [00:17:10,912 - 00:17:12,142] is equal to J and 0 otherwise.
+- [00:17:13,021 - 00:17:14,462] That's the Kronecker Delta symbol.
+- [00:17:15,862 - 00:17:16,222] And...
+- [00:17:16,702 - 00:17:17,301] That's the,
+- [00:17:17,301 - 00:17:20,162] these are the Poisson bracket relations for P and Q.
+- [00:17:20,462 - 00:17:21,061] Now,
+- [00:17:21,061 - 00:17:24,702] it's easy to prove that if you take,
+- [00:17:24,702 - 00:17:25,521] well,
+- [00:17:25,521 - 00:17:26,362] in fact,
+- [00:17:26,362 - 00:17:27,281] you can prove,
+- [00:17:27,281 - 00:17:29,132] you can prove almost everything about
+- [00:17:29,132 - 00:17:30,982] Poisson brackets just from these relationships.
+- [00:17:31,502 - 00:17:34,232] But if you also allow yourself to
+- [00:17:34,232 - 00:17:36,962] use the definition of the Poisson bracket,
+- [00:17:37,182 - 00:17:38,642] which can be derived,
+- [00:17:38,642 - 00:17:39,382] incidentally,
+- [00:17:39,382 - 00:17:40,082] from these relations.
+- [00:17:43,942 - 00:17:46,282] But if you use that,
+- [00:17:46,282 - 00:17:49,332] you can also immediately prove that the
+- [00:17:49,332 - 00:17:52,382] Poisson bracket of any function of the Qs,
+- [00:17:52,482 - 00:17:53,462] not the Ps,
+- [00:17:53,462 - 00:17:57,202] with any other function of the Qs,
+- [00:17:58,342 - 00:17:59,142] in other words,
+- [00:17:59,142 - 00:18:01,742] if both functions only have Q in them,
+- [00:18:01,742 - 00:18:03,602] that's automatically zero.
+- [00:18:05,302 - 00:18:05,982] Why?
+- [00:18:05,982 - 00:18:06,902] Because,
+- [00:18:06,902 - 00:18:07,302] again,
+- [00:18:07,302 - 00:18:10,062] every Poisson bracket will have derivatives
+- [00:18:10,082 - 00:18:11,821] with respect to P and derivatives
+- [00:18:11,821 - 00:18:13,561] with respect to Q in its definition.
+- [00:18:13,962 - 00:18:15,041] So at least,
+- [00:18:15,041 - 00:18:18,171] so it will turn out to be zero
+- [00:18:18,171 - 00:18:21,301] if there's nothing to differentiate with respect to P,
+- [00:18:21,301 - 00:18:21,902] so to speak.
+- [00:18:22,462 - 00:18:23,982] So this will be zero.
+- [00:18:25,242 - 00:18:25,762] Likewise,
+- [00:18:25,762 - 00:18:29,482] any function of P with any other function
+- [00:18:29,482 - 00:18:33,202] of P will also be equal to zero.
+- [00:18:34,322 - 00:18:36,802] It's only when you take Poisson
+- [00:18:36,802 - 00:18:39,282] brackets between functions of P with functions,
+- [00:18:42,121 - 00:18:43,711] in which at least one of them
+- [00:18:43,711 - 00:18:45,302] has both P and Q in it.
+- [00:18:45,362 - 00:18:45,502] No,
+- [00:18:45,502 - 00:18:46,062] that's not right.
+- [00:18:48,042 - 00:18:49,242] What do we have to say?
+- [00:18:51,141 - 00:18:52,901] Something on one side has to
+- [00:18:52,901 - 00:18:54,662] mismatch something on the other side.
+- [00:18:54,782 - 00:18:56,752] There's got to be a P on one side and
+- [00:18:56,752 - 00:18:58,722] a Q on the other side to get anything non-zero.
+- [00:18:59,722 - 00:19:00,162] Okay.
+- [00:19:02,222 - 00:19:03,982] So that's a collection of rules.
+- [00:19:04,982 - 00:19:06,302] There are more rules,
+- [00:19:06,302 - 00:19:07,502] but they all follow from these.
+- [00:19:07,722 - 00:19:08,822] There's no independent rules.
+- [00:19:09,282 - 00:19:10,062] For example,
+- [00:19:11,562 - 00:19:13,962] supposing we take the Poisson bracket
+- [00:19:13,962 - 00:19:16,362] of any function of Q with P.
+- [00:19:22,382 - 00:19:26,002] Poisson bracket of any function of Q with P.
+- [00:19:27,782 - 00:19:28,942] What is that equal to?
+- [00:19:29,322 - 00:19:29,762] Well,
+- [00:19:29,762 - 00:19:31,162] I'll tell you right now what it's equal to,
+- [00:19:31,162 - 00:19:32,222] and then we'll try to prove it.
+- [00:19:32,762 - 00:19:34,412] That is equal to the derivative
+- [00:19:34,412 - 00:19:36,062] of F with respect to Q.
+- [00:19:38,082 - 00:19:40,062] So taking a Poisson bracket with P,
+- [00:19:40,082 - 00:19:44,162] is the same as differentiating with respect to Q.
+- [00:19:44,842 - 00:19:46,822] We can see that in a number of ways.
+- [00:19:47,542 - 00:19:49,982] One way of seeing it is just use the definition,
+- [00:19:50,502 - 00:19:52,442] but another way of seeing it is here.
+- [00:19:52,502 - 00:19:54,262] We can prove it by mathematical induction.
+- [00:19:55,382 - 00:19:57,722] Let's prove it for all polynomials,
+- [00:19:57,722 - 00:19:58,582] F of Q.
+- [00:19:58,802 - 00:20:00,112] If we prove something like
+- [00:20:00,112 - 00:20:01,422] this for every conceivable polynomial,
+- [00:20:01,742 - 00:20:03,082] it will be true for every function.
+- [00:20:03,442 - 00:20:05,742] Every function can be arbitrarily well
+- [00:20:05,742 - 00:20:08,042] approximated by a sufficiently complicated polynomial.
+- [00:20:08,462 - 00:20:08,762] So,
+- [00:20:10,542 - 00:20:12,332] the linearity would tell us we
+- [00:20:12,332 - 00:20:14,122] need to only prove it for monomials.
+- [00:20:14,922 - 00:20:15,362] So,
+- [00:20:15,362 - 00:20:17,282] let's prove it for some monomials.
+- [00:20:18,102 - 00:20:18,922] Let's take one.
+- [00:20:18,922 - 00:20:20,942] Let's take F of Q equals one.
+- [00:20:21,582 - 00:20:22,872] What does this equation say
+- [00:20:22,872 - 00:20:24,162] for F of Q equals one?
+- [00:20:24,262 - 00:20:26,422] It says the Poisson bracket of one.
+- [00:20:26,622 - 00:20:27,602] One is a function.
+- [00:20:27,602 - 00:20:28,782] It's a perfectly good function.
+- [00:20:28,882 - 00:20:29,482] It doesn't vary,
+- [00:20:29,482 - 00:20:30,822] but it is a function.
+- [00:20:31,802 - 00:20:34,712] One with P must be equal to
+- [00:20:34,712 - 00:20:37,622] the derivative of one with respect to Q.
+- [00:20:37,682 - 00:20:39,782] What is the derivative of one with respect to Q?
+- [00:20:40,482 - 00:20:40,882] Zero.
+- [00:20:43,141 - 00:20:43,542] Now,
+- [00:20:43,542 - 00:20:44,842] how do I prove this?
+- [00:20:47,342 - 00:20:48,682] I'll tell you how I can prove it.
+- [00:20:49,941 - 00:20:51,291] One is just as good as
+- [00:20:51,291 - 00:20:52,642] F of P is without Q.
+- [00:20:52,942 - 00:20:53,342] Yeah.
+- [00:20:54,462 - 00:20:54,862] Yeah,
+- [00:20:54,862 - 00:20:55,222] yeah,
+- [00:20:55,222 - 00:20:55,382] yeah.
+- [00:20:55,782 - 00:20:56,902] But I didn't prove these,
+- [00:20:56,902 - 00:20:57,832] but let me give you
+- [00:20:57,832 - 00:20:58,762] a simple proof of this one.
+- [00:20:59,922 - 00:21:01,222] The simple proof of this one
+- [00:21:01,222 - 00:21:02,522] is to use the product formula.
+- [00:21:04,962 - 00:21:06,682] one squared with P
+- [00:21:08,542 - 00:21:09,662] is equal to,
+- [00:21:10,082 - 00:21:12,202] one with one P
+- [00:21:14,762 - 00:21:18,182] plus one P with one,
+- [00:21:19,162 - 00:21:21,142] which is equal to twice
+- [00:21:21,142 - 00:21:23,122] Poisson bracket of one with P.
+- [00:21:24,242 - 00:21:25,982] But one squared is just one.
+- [00:21:26,222 - 00:21:28,742] So this says that the Poisson bracket of one with
+- [00:21:28,742 - 00:21:31,262] P is twice the Poisson bracket of one with P.
+- [00:21:32,782 - 00:21:33,922] That proves it's zero.
+- [00:21:36,982 - 00:21:37,502] Okay.
+- [00:21:37,502 - 00:21:37,862] So,
+- [00:21:37,862 - 00:21:38,522] indeed,
+- [00:21:38,522 - 00:21:40,162] the first one is right.
+- [00:21:40,282 - 00:21:42,742] Let's go to the next monomial.
+- [00:21:43,902 - 00:21:44,922] Q with P.
+- [00:21:47,882 - 00:21:50,502] That's the next more complicated monomial for F.
+- [00:21:51,082 - 00:21:53,792] Q with P should be equal to
+- [00:21:53,792 - 00:21:56,502] the derivative of Q with respect to Q,
+- [00:21:56,502 - 00:21:58,002] which is just equal to one.
+- [00:21:58,662 - 00:22:00,402] But that's certainly true.
+- [00:22:00,522 - 00:22:04,722] That is the defining property of Q with P.
+- [00:22:05,722 - 00:22:07,062] Let's just go one more.
+- [00:22:07,202 - 00:22:08,222] Q squared with P.
+- [00:22:08,942 - 00:22:10,282] Q squared with P,
+- [00:22:10,282 - 00:22:13,082] for that we use the product formula again.
+- [00:22:13,582 - 00:22:17,962] And that gives us Q with QP
+- [00:22:23,882 - 00:22:27,242] plus QP with Q.
+- [00:22:29,562 - 00:22:32,002] Plus Poisson bracket of Q with P is just one.
+- [00:22:32,242 - 00:22:33,762] So this just gives us two Q.
+- [00:22:36,442 - 00:22:38,202] And that happens to be the product formula.
+- [00:22:38,202 - 00:22:39,252] And that's the derivative of
+- [00:22:39,252 - 00:22:40,302] Q squared with respect to Q.
+- [00:22:41,382 - 00:22:41,982] All right.
+- [00:22:41,982 - 00:22:42,682] So by a process,
+- [00:22:42,682 - 00:22:43,382] of course,
+- [00:22:43,382 - 00:22:45,352] we use mathematical induction to prove
+- [00:22:45,352 - 00:22:47,322] it for Q to the nth.
+- [00:22:47,722 - 00:22:49,782] Once you've proved it for Q to the nth,
+- [00:22:49,782 - 00:22:53,762] then you use linearity to prove it for every polynomial.
+- [00:22:56,662 - 00:23:00,032] And then to go from
+- [00:23:00,032 - 00:23:03,402] polynomials to arbitrary differentiable smooth functions,
+- [00:23:03,522 - 00:23:05,852] you can use the fact that
+- [00:23:05,852 - 00:23:08,182] any smooth function can be approximated arbitrarily.
+- [00:23:08,202 - 00:23:09,002] And that's done really well by a polynomial.
+- [00:23:09,922 - 00:23:10,282] So,
+- [00:23:10,282 - 00:23:11,402] in fact,
+- [00:23:11,402 - 00:23:15,552] we see that Poisson bracketing with
+- [00:23:15,552 - 00:23:19,702] P is simply another way to differentiate.
+- [00:23:23,722 - 00:23:24,442] Likewise,
+- [00:23:24,442 - 00:23:29,382] differentiating with respect to P is the
+- [00:23:29,382 - 00:23:34,322] same as taking the Poisson bracket with Q.
+- [00:23:43,322 - 00:23:45,422] Notice there's a slight difference in
+- [00:23:45,422 - 00:23:47,522] the order of Poisson brackets here.
+- [00:23:47,782 - 00:23:49,802] To differentiate with respect to Q,
+- [00:23:49,802 - 00:23:52,362] you take the Poisson bracket with
+- [00:23:52,362 - 00:23:54,922] P with P on the right-hand side.
+- [00:23:55,182 - 00:23:57,542] To differentiate with respect to P,
+- [00:23:57,542 - 00:24:05,782] you put the Q first.
+- [00:24:08,202 - 00:24:08,362] All right.
+- [00:24:08,362 - 00:24:10,262] So that's another property.
+- [00:24:11,802 - 00:24:12,562] Yeah?
+- [00:24:12,722 - 00:24:15,442] So are you assuming that Poisson
+- [00:24:15,442 - 00:24:18,162] brackets are continuous in each variable?
+- [00:24:19,102 - 00:24:19,862] Yeah.
+- [00:24:20,542 - 00:24:21,782] So that also...
+- [00:24:23,182 - 00:24:24,942] Assuming everything is continuous,
+- [00:24:24,942 - 00:24:26,422] functions are...
+- [00:24:28,881 - 00:24:30,562] Every function is continuous,
+- [00:24:30,562 - 00:24:31,362] differentiable,
+- [00:24:31,362 - 00:24:32,982] multiply differentiable.
+- [00:24:34,542 - 00:24:35,302] Um...
+- [00:24:36,762 - 00:24:38,042] I'm assuming that.
+- [00:24:38,082 - 00:24:38,182] Yeah.
+- [00:24:38,202 - 00:24:38,242] Yeah.
+- [00:24:45,142 - 00:24:45,982] All right.
+- [00:24:46,022 - 00:24:47,002] So we have our...
+- [00:24:47,002 - 00:24:51,552] One could say we have an algebra of Poisson brackets that
+- [00:24:51,552 - 00:24:56,102] characterize the relationships between P's and Q's in the phase space.
+- [00:24:57,262 - 00:24:57,902] Now,
+- [00:24:57,902 - 00:25:00,692] we add to that another postulate
+- [00:25:00,692 - 00:25:03,482] about the time evolution of a system.
+- [00:25:04,242 - 00:25:06,022] And that postulate,
+- [00:25:06,022 - 00:25:06,322] again,
+- [00:25:06,322 - 00:25:07,222] can be derived...
+- [00:25:07,222 - 00:25:12,362] It can be completely derived from Hamilton's equations.
+- [00:25:12,622 - 00:25:13,502] We've derived it.
+- [00:25:13,522 - 00:25:14,682] We've derived it at least twice,
+- [00:25:14,682 - 00:25:15,282] as I remember.
+- [00:25:16,022 - 00:25:17,522] But let's just write it down.
+- [00:25:17,702 - 00:25:19,242] It can be just added to
+- [00:25:19,242 - 00:25:20,782] these postulates as one more postulate.
+- [00:25:21,182 - 00:25:23,462] And it is that the time derivative,
+- [00:25:23,462 - 00:25:24,682] A dot,
+- [00:25:24,682 - 00:25:28,062] of any function of P and Q...
+- [00:25:28,562 - 00:25:29,042] Now,
+- [00:25:29,042 - 00:25:30,082] let's just remember what that means.
+- [00:25:30,242 - 00:25:31,162] We have the phase space,
+- [00:25:31,162 - 00:25:33,242] which is...
+- [00:25:33,242 - 00:25:34,342] Which is...
+- [00:25:34,342 - 00:25:36,842] Coordinate ties by P's and Q's.
+- [00:25:36,842 - 00:25:39,732] We have points of phase space moving through the
+- [00:25:39,732 - 00:25:42,622] phase space under the equations of motion of a system.
+- [00:25:43,742 - 00:25:45,682] And as they move through the phase space,
+- [00:25:45,682 - 00:25:51,192] the value of A of P and Q
+- [00:25:51,192 - 00:25:56,702] will change along the orbit of the phase point.
+- [00:25:58,162 - 00:25:59,682] That's what A dot means.
+- [00:26:00,022 - 00:26:03,022] The rate of change of A of P and Q...
+- [00:26:03,022 - 00:26:06,702] Because you're moving along the orbit in phase space.
+- [00:26:06,702 - 00:26:11,492] That time derivative is the
+- [00:26:11,492 - 00:26:16,282] Poisson bracket of A with H.
+- [00:26:18,782 - 00:26:23,602] This basically sets the pattern that a flow...
+- [00:26:24,802 - 00:26:27,562] A flow applied to a function...
+- [00:26:27,562 - 00:26:30,402] We have a function on the phase space.
+- [00:26:31,042 - 00:26:33,102] And we apply the flow to it.
+- [00:26:33,182 - 00:26:33,562] I don't know.
+- [00:26:33,662 - 00:26:35,062] We apply the flow to it.
+- [00:26:35,442 - 00:26:36,682] That causes the flow.
+- [00:26:36,682 - 00:26:37,772] We have the function to change
+- [00:26:37,772 - 00:26:38,862] as we move along the flow.
+- [00:26:39,802 - 00:26:42,792] That flow is characterized as
+- [00:26:42,792 - 00:26:45,782] a Poisson bracket with something.
+- [00:26:46,122 - 00:26:49,252] That something happens to be the Hamiltonian if
+- [00:26:49,252 - 00:26:52,382] we're talking about the genuine flow with time.
+- [00:26:54,282 - 00:26:55,522] In other words,
+- [00:26:55,522 - 00:26:57,482] the real flow of the system as time evolves.
+- [00:26:57,982 - 00:27:00,682] But we may just be interested in some mathematical
+- [00:27:00,682 - 00:27:03,382] flow that has nothing to do with the time evolution,
+- [00:27:03,642 - 00:27:04,942] but just has to do with the fact,
+- [00:27:04,942 - 00:27:05,582] for example,
+- [00:27:05,582 - 00:27:06,762] that we're studying some symmetry,
+- [00:27:06,922 - 00:27:10,622] which might correspond to a change of coordinates
+- [00:27:12,242 - 00:27:16,022] through a sequence of intermediate coordinates,
+- [00:27:16,322 - 00:27:17,402] coordinate configurations.
+- [00:27:19,522 - 00:27:20,082] Yeah?
+- [00:27:20,242 - 00:27:21,702] From an abstract standpoint,
+- [00:27:22,082 - 00:27:23,522] without bringing in Hamilton,
+- [00:27:23,742 - 00:27:25,792] does this basically assume that P's
+- [00:27:25,792 - 00:27:27,842] and Q's are functions of time,
+- [00:27:27,842 - 00:27:28,302] basically?
+- [00:27:28,502 - 00:27:28,962] Mm-hmm.
+- [00:27:28,982 - 00:27:31,402] We didn't want to think about...
+- [00:27:31,402 - 00:27:31,602] Yeah.
+- [00:27:31,722 - 00:27:31,922] Yeah.
+- [00:27:32,462 - 00:27:33,962] But of course we could apply...
+- [00:27:33,962 - 00:27:34,122] Yes.
+- [00:27:34,382 - 00:27:35,482] But we could just apply
+- [00:27:35,482 - 00:27:36,582] this to the P's and Q's
+- [00:27:36,582 - 00:27:37,892] and see that they're functions of
+- [00:27:37,892 - 00:27:39,202] time just by saying that P dot...
+- [00:27:42,201 - 00:27:46,062] P dot is Poisson bracket of P with H.
+- [00:27:46,662 - 00:27:48,362] And then if we know H...
+- [00:27:50,062 - 00:27:51,322] If we know what H is
+- [00:27:51,322 - 00:27:52,582] as a function of P and Q,
+- [00:27:52,642 - 00:27:52,802] let's,
+- [00:27:52,802 - 00:27:53,202] for example,
+- [00:27:53,202 - 00:27:54,862] let's just suppose...
+- [00:27:54,862 - 00:27:58,272] Let's just see what happens if our
+- [00:27:58,272 - 00:28:01,682] Hamiltonian happens to be P squared over 2M.
+- [00:28:03,262 - 00:28:04,562] And we apply...
+- [00:28:05,262 - 00:28:08,162] We apply this to P dot.
+- [00:28:12,442 - 00:28:13,862] It tells us that P dot,
+- [00:28:13,862 - 00:28:15,002] time derivative of P,
+- [00:28:15,202 - 00:28:16,472] is the Poisson bracket of
+- [00:28:16,472 - 00:28:17,742] P with P squared over 2M.
+- [00:28:18,162 - 00:28:18,642] Well,
+- [00:28:18,642 - 00:28:21,482] that's zero because of a formula,
+- [00:28:21,522 - 00:28:22,882] which I think I have erased,
+- [00:28:23,362 - 00:28:24,622] which says that the Poisson
+- [00:28:24,622 - 00:28:25,882] bracket of any function of P
+- [00:28:25,882 - 00:28:27,382] with any other function of P is zero.
+- [00:28:28,242 - 00:28:28,722] Okay?
+- [00:28:28,922 - 00:28:29,822] So that's zero.
+- [00:28:29,882 - 00:28:31,382] That tells us momentum conservation.
+- [00:28:31,682 - 00:28:33,022] On the other hand,
+- [00:28:33,022 - 00:28:33,822] Q dot...
+- [00:28:36,682 - 00:28:37,802] is Q with P.
+- [00:28:38,841 - 00:28:41,042] Now we use the product formula.
+- [00:28:41,262 - 00:28:42,662] We use the product formula.
+- [00:28:42,682 - 00:28:44,662] We have P squared here and Q here.
+- [00:28:45,882 - 00:28:48,042] The product formula can be
+- [00:28:48,042 - 00:28:50,202] used to tell us that this...
+- [00:28:50,202 - 00:28:52,382] that this is just P over M.
+- [00:28:56,522 - 00:28:58,402] We have P squared over 2M.
+- [00:28:58,482 - 00:28:59,582] That gives us...
+- [00:28:59,582 - 00:29:00,842] A P with a Q is 1.
+- [00:29:01,062 - 00:29:01,342] Well,
+- [00:29:01,342 - 00:29:01,662] you know how to do it.
+- [00:29:01,682 - 00:29:02,122] You know how to do this.
+- [00:29:02,382 - 00:29:03,862] Just gives us a P over M.
+- [00:29:04,322 - 00:29:06,902] Without ever using anything other
+- [00:29:06,902 - 00:29:09,482] than the algebra of these functions,
+- [00:29:09,822 - 00:29:11,482] the algebra of these Poisson brackets,
+- [00:29:12,182 - 00:29:14,472] we can conclude that the Poisson bracket
+- [00:29:14,472 - 00:29:16,762] of Q with P squared over 2M
+- [00:29:16,762 - 00:29:18,242] is P over M.
+- [00:29:18,542 - 00:29:20,242] And that tells us that Q dot...
+- [00:29:20,242 - 00:29:20,762] Excuse me.
+- [00:29:20,802 - 00:29:22,422] That Q dot is P over M.
+- [00:29:24,322 - 00:29:24,962] And that,
+- [00:29:24,962 - 00:29:25,282] of course,
+- [00:29:25,282 - 00:29:30,382] is the velocity as a function of momentum
+- [00:29:30,382 - 00:29:32,892] for a non-relativistic particle with
+- [00:29:32,892 - 00:29:35,402] Hamiltonian P squared over 2M.
+- [00:29:35,882 - 00:29:36,762] All right.
+- [00:29:36,782 - 00:29:40,542] So without knowing Hamilton's equations,
+- [00:29:41,322 - 00:29:42,922] we could derive the equations,
+- [00:29:42,922 - 00:29:43,822] Hamilton's equations,
+- [00:29:44,082 - 00:29:46,482] from the algebra of these Poisson brackets.
+- [00:29:52,162 - 00:29:52,882] Okay.
+- [00:29:52,982 - 00:29:56,762] Now let's come to a wider class of transformations.
+- [00:29:57,162 - 00:29:57,602] Yes.
+- [00:29:57,902 - 00:29:59,502] Just a little pinch on that.
+- [00:29:59,502 - 00:30:00,722] You said non-relativism.
+- [00:30:00,862 - 00:30:02,262] Does this actually hold up in relativity?
+- [00:30:02,922 - 00:30:03,302] Mm-hmm.
+- [00:30:04,362 - 00:30:05,122] Mm-hmm.
+- [00:30:06,222 - 00:30:06,782] Yep.
+- [00:30:07,562 - 00:30:09,202] But it's a little more complicated.
+- [00:30:09,662 - 00:30:10,222] Yes,
+- [00:30:10,222 - 00:30:10,482] it does.
+- [00:30:14,402 - 00:30:17,492] These basic formulas hold for every
+- [00:30:17,492 - 00:30:20,582] physical system that I know of.
+- [00:30:21,562 - 00:30:23,662] I don't know of any physical
+- [00:30:23,662 - 00:30:25,762] system where these basic formulas don't hold,
+- [00:30:26,402 - 00:30:27,562] including general relativity,
+- [00:30:27,882 - 00:30:29,342] including quantum field theory,
+- [00:30:29,502 - 00:30:29,682] well,
+- [00:30:29,682 - 00:30:33,262] in the appropriate form in quantum mechanics.
+- [00:30:33,282 - 00:30:35,322] The appropriate form in quantum mechanics they hold.
+- [00:30:35,442 - 00:30:36,842] But for all classical systems,
+- [00:30:36,842 - 00:30:41,642] these formulas absolutely hold.
+- [00:30:42,262 - 00:30:42,822] Sorry,
+- [00:30:42,822 - 00:30:43,982] field theory,
+- [00:30:43,982 - 00:30:45,202] electromagnetism,
+- [00:30:45,202 - 00:30:45,522] everything.
+- [00:30:48,542 - 00:30:49,102] Okay.
+- [00:30:50,502 - 00:30:52,442] Now let's move on to symmetries.
+- [00:30:55,422 - 00:30:56,602] What are symmetries?
+- [00:30:56,602 - 00:30:58,362] Symmetries are coordinate,
+- [00:30:58,362 - 00:30:59,662] are transformations,
+- [00:31:00,442 - 00:31:05,442] transformations of a system which don't change the dynamics.
+- [00:31:06,202 - 00:31:07,002] Now,
+- [00:31:07,002 - 00:31:09,402] in the cases we've studied up till now,
+- [00:31:09,682 - 00:31:13,702] symmetries were typically of the
+- [00:31:13,702 - 00:31:17,722] form changes of the variables q
+- [00:31:21,341 - 00:31:23,382] without mixing in the p's.
+- [00:31:23,582 - 00:31:24,482] For example,
+- [00:31:24,482 - 00:31:25,662] rotations of space.
+- [00:31:26,602 - 00:31:28,462] They don't mix up the x's and the y's.
+- [00:31:28,662 - 00:31:30,672] They don't mix in the
+- [00:31:30,672 - 00:31:32,682] momenta with the x's and y's.
+- [00:31:33,122 - 00:31:36,842] Could there be more interesting symmetries of
+- [00:31:36,842 - 00:31:40,562] nature which do mix the p's and q's?
+- [00:31:41,182 - 00:31:42,362] And if they do,
+- [00:31:42,362 - 00:31:45,392] what are the rules and what are the laws
+- [00:31:45,392 - 00:31:48,422] which allow you to mix up p's and q's
+- [00:31:48,422 - 00:31:51,442] and preserve the structure of classical mechanics?
+- [00:31:52,542 - 00:31:53,522] That's the question.
+- [00:31:53,522 - 00:31:57,002] What are the allowable transformations that
+- [00:31:57,002 - 00:32:00,482] don't screw up mechanics so badly
+- [00:32:00,482 - 00:32:03,282] that it becomes unrecognizable?
+- [00:32:04,302 - 00:32:06,922] Recognizable means that it has the Poisson form.
+- [00:32:08,542 - 00:32:10,642] So that's the question we want to ask.
+- [00:32:10,722 - 00:32:13,302] What are the allowable transformations on phase space?
+- [00:32:14,482 - 00:32:16,812] Allowable transformations mean they don't ruin
+- [00:32:16,812 - 00:32:19,142] this Poisson structure that we've written down.
+- [00:32:20,802 - 00:32:22,152] If you were just to take
+- [00:32:22,152 - 00:32:23,502] a bunch of p's and q's,
+- [00:32:23,502 - 00:32:26,862] which satisfy this algebra of Poisson brackets
+- [00:32:26,862 - 00:32:28,862] and make arbitrary transformations
+- [00:32:29,722 - 00:32:31,102] Let's do it this way.
+- [00:32:31,202 - 00:32:35,542] Let's suppose we have a
+- [00:32:35,542 - 00:32:39,882] single p and a single q.
+- [00:32:43,142 - 00:32:43,622] Now,
+- [00:32:43,622 - 00:32:44,662] let me make a transformation.
+- [00:32:46,222 - 00:32:47,662] I'm going to make a new
+- [00:32:47,662 - 00:32:49,102] transformation to new p's and q's,
+- [00:32:49,102 - 00:32:49,842] capital P,
+- [00:32:50,341 - 00:32:52,182] which is going to be twice little p,
+- [00:32:53,502 - 00:32:54,362] and capital Q,
+- [00:32:54,362 - 00:32:57,022] which is twice little q.
+- [00:32:58,702 - 00:33:02,102] Does this preserve the Poisson bracket structure?
+- [00:33:02,942 - 00:33:03,982] It does not.
+- [00:33:04,142 - 00:33:04,962] Let me show you why.
+- [00:33:05,622 - 00:33:08,392] Let's calculate the Poisson bracket
+- [00:33:08,392 - 00:33:11,162] of big P with big Q.
+- [00:33:13,722 - 00:33:14,262] Well,
+- [00:33:14,262 - 00:33:14,922] that's easy.
+- [00:33:14,922 - 00:33:16,322] I don't even have to do any work here.
+- [00:33:16,482 - 00:33:18,592] I just know that this is the Poisson
+- [00:33:18,592 - 00:33:20,702] bracket of twice little p with twice little q.
+- [00:33:21,002 - 00:33:21,622] What's that?
+- [00:33:24,202 - 00:33:25,342] It's the wrong answer.
+- [00:33:25,502 - 00:33:27,282] It does not preserve the
+- [00:33:27,282 - 00:33:29,062] form of the Poisson bracket relations.
+- [00:33:29,602 - 00:33:31,162] Let me try something else.
+- [00:33:31,662 - 00:33:35,202] Instead of big P equals twice little p,
+- [00:33:35,462 - 00:33:37,782] let's take it to be one half little p.
+- [00:33:39,902 - 00:33:41,042] Now what happens?
+- [00:33:41,722 - 00:33:44,782] What's the Poisson bracket of big P with big Q?
+- [00:33:51,802 - 00:33:54,142] This formula has preserved
+- [00:33:54,142 - 00:33:56,482] the structure of Poisson brackets.
+- [00:33:57,082 - 00:34:00,002] If I do this transformation on the p's and q's,
+- [00:34:00,082 - 00:34:03,902] it's not necessarily a symmetry of a physical system,
+- [00:34:04,082 - 00:34:07,652] but it is another set of coordinates
+- [00:34:07,652 - 00:34:11,222] which has exactly the same Poisson bracket relations
+- [00:34:11,222 - 00:34:13,262] as the original p's and q's.
+- [00:34:14,141 - 00:34:15,362] It's kind of interesting.
+- [00:34:15,581 - 00:34:16,022] Well,
+- [00:34:16,022 - 00:34:16,462] I've done that.
+- [00:34:16,462 - 00:34:17,382] So what happens when I turn to the phase space
+- [00:34:20,722 - 00:34:23,092] is I have squeezed it in
+- [00:34:23,092 - 00:34:25,462] one direction by a factor of 2
+- [00:34:25,462 - 00:34:27,272] and stretched it in the other
+- [00:34:27,272 - 00:34:29,081] direction by a factor of 2.
+- [00:34:29,262 - 00:34:31,542] And that has preserved the
+- [00:34:31,542 - 00:34:33,822] structure of the Poisson bracket relations.
+- [00:34:34,882 - 00:34:37,272] Stretching both directions by a factor
+- [00:34:37,272 - 00:34:39,661] of 2 did not preserve the relations.
+- [00:34:40,222 - 00:34:41,522] How about the following?
+- [00:34:43,661 - 00:34:44,862] Supposing I...
+- [00:34:44,862 - 00:34:46,562] Let's try another example.
+- [00:34:48,482 - 00:34:49,681] Let's take...
+- [00:34:51,462 - 00:34:54,462] It seems like conservation of volume and mass.
+- [00:34:54,842 - 00:34:56,922] It's basically conservation of area.
+- [00:34:57,222 - 00:34:57,622] Yeah.
+- [00:34:59,302 - 00:35:00,842] But it's conservation...
+- [00:35:02,782 - 00:35:04,182] It's a little more complicated.
+- [00:35:04,522 - 00:35:06,062] Once you leave the domain of
+- [00:35:06,062 - 00:35:07,602] just one p and one q,
+- [00:35:07,782 - 00:35:08,862] it's more complicated.
+- [00:35:09,162 - 00:35:11,302] But for one p and one q,
+- [00:35:13,522 - 00:35:15,382] the transformations that we're talking about
+- [00:35:15,382 - 00:35:17,242] are the ones that preserve areas.
+- [00:35:17,822 - 00:35:19,641] For more p's and more q's,
+- [00:35:19,641 - 00:35:20,442] it's more complicated.
+- [00:35:20,962 - 00:35:23,862] But let's just do one or two more examples.
+- [00:35:26,782 - 00:35:27,822] Let's take...
+- [00:35:29,101 - 00:35:31,002] Big P is...
+- [00:35:31,002 - 00:35:32,782] Let's rotate p into q.
+- [00:35:33,762 - 00:35:35,022] Rotate p into q.
+- [00:35:35,181 - 00:35:35,742] In other words,
+- [00:35:35,742 - 00:35:38,322] we have the p-q axes and we rotate.
+- [00:35:40,042 - 00:35:44,802] Let's take big P equals cosine theta
+- [00:35:44,802 - 00:35:49,562] little p plus sine theta little q.
+- [00:35:51,282 - 00:35:59,072] And let's take big Q equal minus sine
+- [00:35:59,072 - 00:36:06,862] of theta little p plus cosine theta little q.
+- [00:36:08,742 - 00:36:12,202] This is the form of a rotation in phase space.
+- [00:36:12,842 - 00:36:14,812] It's a rotation in phase
+- [00:36:14,812 - 00:36:16,782] space where you've rotated the axes.
+- [00:36:17,402 - 00:36:19,882] From what I just told you about areas,
+- [00:36:20,262 - 00:36:22,212] it's quite clear that this also
+- [00:36:22,212 - 00:36:24,162] should preserve the structure of Poisson brackets.
+- [00:36:24,382 - 00:36:25,022] Let's check it.
+- [00:36:25,582 - 00:36:27,442] Let's calculate the Poisson bracket
+- [00:36:27,442 - 00:36:29,302] of big P with big Q.
+- [00:36:29,502 - 00:36:30,932] Do I have to check the Poisson
+- [00:36:30,932 - 00:36:32,362] bracket of big P with big P?
+- [00:36:33,022 - 00:36:34,582] Big P with big P.
+- [00:36:34,962 - 00:36:36,842] This is linguistically the hardest part.
+- [00:36:36,842 - 00:36:36,842] I'm sorry,
+- [00:36:36,842 - 00:36:37,562] you're going to have to do this lecture for me.
+- [00:36:39,502 - 00:36:41,122] Though I have to check the
+- [00:36:41,122 - 00:36:42,742] Poisson bracket of big P with...
+- [00:36:42,742 - 00:36:44,202] Too many Bs and Ps.
+- [00:36:44,382 - 00:36:45,402] Big P with big P.
+- [00:36:48,042 - 00:36:48,562] What's that?
+- [00:36:49,102 - 00:36:50,842] By the linearity it all works.
+- [00:36:51,142 - 00:36:52,222] It all just comes by.
+- [00:36:52,522 - 00:36:52,962] Well,
+- [00:36:52,962 - 00:36:54,642] it's just a big P with big P.
+- [00:36:57,122 - 00:36:58,362] Antisymmetry tells me it's zero.
+- [00:36:58,822 - 00:37:00,852] Big P with big P has to be the same
+- [00:37:00,852 - 00:37:02,882] as big P with big P in the opposite order.
+- [00:37:04,142 - 00:37:05,222] That tells me it's zero.
+- [00:37:06,142 - 00:37:08,162] Antisymmetry tells me big P with big P is zero.
+- [00:37:08,382 - 00:37:10,482] It tells me big Q with big Q is zero.
+- [00:37:10,942 - 00:37:12,192] It's only big P with big Q
+- [00:37:12,192 - 00:37:13,442] that I've got to watch out for.
+- [00:37:14,102 - 00:37:14,502] Okay,
+- [00:37:14,502 - 00:37:15,482] so let's just do it.
+- [00:37:19,242 - 00:37:20,822] So that's going to be...
+- [00:37:25,142 - 00:37:28,162] Big Q with big P equals
+- [00:37:31,502 - 00:37:31,902] cosine...
+- [00:37:35,562 - 00:37:36,162] Sorry,
+- [00:37:36,162 - 00:37:36,882] sine...
+- [00:37:38,942 - 00:37:40,142] Sine theta...
+- [00:37:40,842 - 00:37:42,562] Let's begin with Qs.
+- [00:37:42,662 - 00:37:43,002] All right.
+- [00:37:45,722 - 00:37:50,982] Cosine theta Q plus sine theta P.
+- [00:37:51,802 - 00:37:53,022] That's this one here.
+- [00:37:55,502 - 00:37:56,742] There's one of them minus,
+- [00:37:56,742 - 00:37:57,622] one of them is minus,
+- [00:37:57,622 - 00:37:57,902] right?
+- [00:37:58,582 - 00:37:59,822] This one is minus.
+- [00:38:00,322 - 00:38:04,042] And then the other one is cosine theta P.
+- [00:38:06,142 - 00:38:07,442] Plus sine theta Q.
+- [00:38:11,002 - 00:38:11,582] All right,
+- [00:38:11,582 - 00:38:14,062] the only combinations which give me anything are a
+- [00:38:14,062 - 00:38:16,542] Q with a P and a P with a Q.
+- [00:38:17,682 - 00:38:20,662] Let's first take the Q with the P over here.
+- [00:38:21,062 - 00:38:22,462] That's going to have cosine
+- [00:38:22,462 - 00:38:23,862] squared theta in front of it.
+- [00:38:25,122 - 00:38:29,322] Cosine squared theta plus some bracket of Q with P.
+- [00:38:29,542 - 00:38:31,302] Plus some bracket of Q with P is one.
+- [00:38:32,002 - 00:38:33,502] And then we're going to have minus...
+- [00:38:35,702 - 00:38:36,882] Sine squared theta.
+- [00:38:38,182 - 00:38:39,522] That's coming from here.
+- [00:38:39,922 - 00:38:42,082] But what's the plus some bracket of P with Q?
+- [00:38:43,282 - 00:38:43,842] Minus one.
+- [00:38:44,122 - 00:38:45,662] So that corrects this sine here
+- [00:38:45,662 - 00:38:47,202] and makes it plus sine squared.
+- [00:38:47,902 - 00:38:49,322] And gives us a one again.
+- [00:38:50,362 - 00:38:51,022] All right,
+- [00:38:51,022 - 00:38:53,662] so the rotation of coordinates
+- [00:38:53,662 - 00:38:56,302] preserve the plus some bracket structure.
+- [00:38:57,282 - 00:39:00,482] The stretching of one coordinate and the squeezing
+- [00:39:00,482 - 00:39:03,682] of the other coordinate by the same factor...
+- [00:39:03,682 - 00:39:04,422] It didn't have to be two,
+- [00:39:04,422 - 00:39:05,082] incidentally.
+- [00:39:06,002 - 00:39:08,402] That will preserve the plus some bracket structure.
+- [00:39:08,882 - 00:39:10,082] On the other hand,
+- [00:39:10,082 - 00:39:13,042] other kinds of transformations will not preserve it.
+- [00:39:13,142 - 00:39:13,962] In particular,
+- [00:39:13,962 - 00:39:15,722] those that don't preserve the area.
+- [00:39:18,122 - 00:39:20,562] So there are those which do and those which don't.
+- [00:39:21,902 - 00:39:24,162] Those transformations which preserve
+- [00:39:24,162 - 00:39:26,422] the entire class of them...
+- [00:39:26,422 - 00:39:28,242] And they can be much more complicated than this.
+- [00:39:29,662 - 00:39:30,682] In general,
+- [00:39:30,682 - 00:39:33,202] for arbitrary numbers of P's and Q's...
+- [00:39:33,202 - 00:39:34,972] The transformations which preserve
+- [00:39:34,972 - 00:39:36,742] the plus some bracket structure...
+- [00:39:36,742 - 00:39:39,142] Are called canonical transformations.
+- [00:39:40,362 - 00:39:41,122] Canonical.
+- [00:39:42,802 - 00:39:46,842] Canonical transformations are those which keep intact...
+- [00:39:46,842 - 00:39:48,982] The relations between...
+- [00:39:48,982 - 00:39:52,402] The plus some bracket relations between P's and Q's.
+- [00:39:52,982 - 00:39:56,022] If they keep the relation between P's and Q's...
+- [00:39:56,022 - 00:39:58,102] Then they will keep all the
+- [00:39:58,102 - 00:40:00,182] plus some bracket relations between P squared,
+- [00:40:00,182 - 00:40:00,882] Q squared,
+- [00:40:00,882 - 00:40:01,562] P...
+- [00:40:01,922 - 00:40:02,742] Whatever you have.
+- [00:40:04,382 - 00:40:06,142] So what's the equation of motion?
+- [00:40:06,682 - 00:40:07,262] What's that?
+- [00:40:07,762 - 00:40:09,682] The equation of motion should be unchanged.
+- [00:40:10,462 - 00:40:10,942] Yeah,
+- [00:40:10,942 - 00:40:13,202] but you have to remember that when you change...
+- [00:40:13,202 - 00:40:14,762] That the Hamiltonian has to be
+- [00:40:14,762 - 00:40:16,322] expressed in terms of the new variables.
+- [00:40:16,542 - 00:40:16,822] Yes,
+- [00:40:16,822 - 00:40:17,302] that's correct.
+- [00:40:17,382 - 00:40:18,242] So when you generate the...
+- [00:40:18,242 - 00:40:18,842] That's right.
+- [00:40:19,002 - 00:40:20,202] The equation of motion.
+- [00:40:20,302 - 00:40:20,642] That's right.
+- [00:40:21,442 - 00:40:23,842] These are really examples of gauge transformations?
+- [00:40:24,182 - 00:40:26,622] These are not gauge transformations.
+- [00:40:28,662 - 00:40:29,142] No,
+- [00:40:29,142 - 00:40:31,322] these are canonical transformations.
+- [00:40:31,382 - 00:40:32,642] They're not gauge transformations.
+- [00:40:32,642 - 00:40:33,522] They'reCRIKING
+- [00:40:35,022 - 00:40:37,162] They're not redundancies of a description.
+- [00:40:37,342 - 00:40:41,022] They're just changes of the description to new coordinates.
+- [00:40:42,882 - 00:40:43,562] You're 않을GE ко worrying that you areÖ闪
+- [00:40:43,562 - 00:40:43,602] The
+- [00:40:43,602 - 00:40:43,642] gauge
+- [00:40:43,642 - 00:40:47,672] transformation drags something on to
+- [00:40:47,672 - 00:40:51,702] the existing space … 사용 Those
+- [00:40:54,582 - 00:40:55,662] not called gauge transformations.
+- [00:40:55,662 - 00:40:57,962] Gauge
+- [00:40:57,962 - 00:40:58,742] transformations working to access the cardinal regulars.
+- [00:40:58,742 - 00:40:58,742] Translations
+- [00:40:58,742 - 00:40:59,342] of a definite meaning.
+- [00:41:05,902 - 00:41:06,482] Now,
+- [00:41:06,482 - 00:41:07,362] the point is,
+- [00:41:07,362 - 00:41:09,902] if you start with canonical p's and q's,
+- [00:41:09,902 - 00:41:12,142] and you do canonical transformations
+- [00:41:12,142 - 00:41:12,902] on them,
+- [00:41:12,902 - 00:41:15,422] they stay canonical.
+- [00:41:15,422 - 00:41:16,442] Now,
+- [00:41:16,442 - 00:41:17,262] that's a tautology.
+- [00:41:17,262 - 00:41:22,522] But to make it not a tautology,
+- [00:41:22,742 - 00:41:24,222] what do you mean by canonical?
+- [00:41:24,222 - 00:41:26,522] You mean these Poisson bracket relations.
+- [00:41:26,522 - 00:41:29,222] These are the canonical
+- [00:41:29,222 - 00:41:30,442] Poisson bracket relations.
+- [00:41:30,442 - 00:41:33,522] If after transformation all of
+- [00:41:33,522 - 00:41:36,602] the Poisson bracket relations are kept
+- [00:41:36,602 - 00:41:36,962] intact,
+- [00:41:36,962 - 00:41:39,242] then it's called a canonical transformation.
+- [00:41:40,442 - 00:41:40,722] Okay.
+- [00:41:42,722 - 00:41:46,522] I have a general question about,
+- [00:41:46,522 - 00:41:54,062] must it preserve the Poisson bracket to be a canonical
+- [00:41:54,062 - 00:41:54,722] transformation,
+- [00:41:54,722 - 00:41:59,202] as opposed to the canonical transformation?
+- [00:42:00,241 - 00:42:01,002] I guess.
+- [00:42:01,002 - 00:42:01,622] Well,
+- [00:42:01,622 - 00:42:03,622] let's say if you have
+- [00:42:03,622 - 00:42:05,622] any two sets of p's and,
+- [00:42:05,622 - 00:42:06,982] you know,
+- [00:42:06,982 - 00:42:08,082] small p's and
+- [00:42:08,082 - 00:42:10,342] small q's and big p's and big q's.
+- [00:42:10,882 - 00:42:12,832] With big p's and big q's being
+- [00:42:12,832 - 00:42:14,782] functions of the small p's and small q's.
+- [00:42:16,662 - 00:42:17,102] Okay.
+- [00:42:17,322 - 00:42:18,522] There's changes of coordinates,
+- [00:42:18,522 - 00:42:19,222] is what they are.
+- [00:42:19,222 - 00:42:21,702] There are changes of p-q coordinates.
+- [00:42:21,922 - 00:42:24,622] So you might have two different
+- [00:42:24,622 - 00:42:27,322] sets of coordinates of different systems.
+- [00:42:27,722 - 00:42:28,162] No,
+- [00:42:28,162 - 00:42:28,282] no,
+- [00:42:28,282 - 00:42:28,422] no,
+- [00:42:28,422 - 00:42:28,602] no,
+- [00:42:28,602 - 00:42:28,762] no,
+- [00:42:28,762 - 00:42:28,942] no,
+- [00:42:28,942 - 00:42:29,062] no.
+- [00:42:29,062 - 00:42:30,572] We're talking about different
+- [00:42:30,572 - 00:42:32,082] coordinates for the same system.
+- [00:42:32,082 - 00:42:34,122] That's what we're talking
+- [00:42:34,122 - 00:42:34,382] about.
+- [00:42:34,382 - 00:42:36,842] Different coordinates for the same system.
+- [00:42:36,842 - 00:42:41,542] And by coordinates I now mean coordinates
+- [00:42:41,542 - 00:42:42,402] on phase space.
+- [00:42:42,402 - 00:42:46,222] So we're talking about different representations
+- [00:42:46,222 - 00:42:50,042] of the same system by different
+- [00:42:50,042 - 00:42:53,522] choices of axes or different choices
+- [00:42:53,522 - 00:42:57,002] of coordinates on the same phase space.
+- [00:42:57,982 - 00:42:59,042] So you can't go back and forth?
+- [00:42:59,062 - 00:43:01,442] You can't go from arbitrarily one
+- [00:43:01,442 - 00:43:03,822] phase space to any other phase space?
+- [00:43:03,822 - 00:43:04,022] No,
+- [00:43:04,022 - 00:43:04,462] no,
+- [00:43:04,462 - 00:43:04,862] no,
+- [00:43:04,862 - 00:43:05,162] no.
+- [00:43:05,162 - 00:43:06,762] We're talking about the same system.
+- [00:43:06,942 - 00:43:07,382] All right,
+- [00:43:07,382 - 00:43:07,542] good.
+- [00:43:07,742 - 00:43:08,002] Yeah,
+- [00:43:08,002 - 00:43:09,582] these are changes of description
+- [00:43:09,582 - 00:43:11,162] rather than changes of system.
+- [00:43:11,162 - 00:43:13,062] Okay?
+- [00:43:13,062 - 00:43:15,142] Changes of description
+- [00:43:15,142 - 00:43:16,582] of a given system.
+- [00:43:16,582 - 00:43:18,062] Right,
+- [00:43:18,062 - 00:43:19,122] we must keep that in mind.
+- [00:43:19,122 - 00:43:21,262] It doesn't mean anything,
+- [00:43:21,262 - 00:43:22,102] for example,
+- [00:43:22,122 - 00:43:25,582] to change the coordinates from a harmonic oscillator
+- [00:43:25,582 - 00:43:29,042] to a system of ten-tenths of a second.
+- [00:43:29,062 - 00:43:30,222] Ten-tenths of a second to the twenty-third molecules,
+- [00:43:30,222 - 00:43:31,362] it doesn't mean anything.
+- [00:43:31,702 - 00:43:34,702] You don't necessarily have a canonical
+- [00:43:34,702 - 00:43:37,702] transformation that transforms one totally different system
+- [00:43:37,702 - 00:43:38,062] to another.
+- [00:43:38,102 - 00:43:40,002] It doesn't mean anything.
+- [00:43:40,002 - 00:43:40,542] I mean,
+- [00:43:40,542 - 00:43:41,522] if it does mean something,
+- [00:43:41,522 - 00:43:42,722] we have to make up a definition
+- [00:43:42,722 - 00:43:43,542] for what it means.
+- [00:43:43,542 - 00:43:46,532] Here we're talking about p's and
+- [00:43:46,532 - 00:43:49,522] q's which are really functions of
+- [00:43:49,522 - 00:43:50,862] the original p's and q's,
+- [00:43:50,862 - 00:43:54,022] which means they're just re-descriptions of the same system.
+- [00:43:54,022 - 00:43:56,842] Yeah?
+- [00:43:56,982 - 00:43:58,962] Aren't they just characterized by dimension?
+- [00:43:59,002 - 00:43:59,042] Yes.
+- [00:43:59,062 - 00:43:59,922] I mean,
+- [00:43:59,922 - 00:44:02,922] n is 5,
+- [00:44:02,922 - 00:44:05,962] there's a whole set of
+- [00:44:05,962 - 00:44:09,002] canonical transformations for 5p's and 5q's.
+- [00:44:09,262 - 00:44:09,482] Yeah.
+- [00:44:11,322 - 00:44:13,852] The phase space of n degrees of
+- [00:44:13,852 - 00:44:16,382] freedom are all isomorphic to each other.
+- [00:44:16,882 - 00:44:17,662] But still,
+- [00:44:17,662 - 00:44:21,962] you don't—nevertheless,
+- [00:44:21,962 - 00:44:24,002] when you're talking about canonical transformations,
+- [00:44:24,002 - 00:44:25,632] you're talking about the changes
+- [00:44:25,632 - 00:44:27,262] of description of a given system.
+- [00:44:31,602 - 00:44:32,082] Yeah,
+- [00:44:32,082 - 00:44:34,342] but the different phase spaces,
+- [00:44:34,342 - 00:44:37,162] all with the same number of degrees of freedom,
+- [00:44:37,302 - 00:44:38,842] are isomorphic to each other.
+- [00:44:39,602 - 00:44:40,262] That's correct.
+- [00:44:41,702 - 00:44:43,042] If it works on one,
+- [00:44:43,042 - 00:44:43,882] it works on another.
+- [00:44:46,582 - 00:44:47,062] Yeah,
+- [00:44:47,062 - 00:44:47,542] yeah.
+- [00:44:48,482 - 00:44:49,242] But still,
+- [00:44:49,242 - 00:44:50,842] you don't transform between systems.
+- [00:44:51,722 - 00:44:52,202] Right.
+- [00:44:52,302 - 00:44:52,762] Okay.
+- [00:44:56,682 - 00:44:57,322] All right.
+- [00:44:57,342 - 00:44:58,642] Now we want to come
+- [00:44:58,642 - 00:44:59,942] towards the heart of the discussion,
+- [00:44:59,942 - 00:45:02,182] the subject of symmetries itself.
+- [00:45:07,142 - 00:45:08,402] Can I ask a question?
+- [00:45:08,722 - 00:45:09,262] Mm-hmm.
+- [00:45:09,642 - 00:45:12,552] Is there any way of expressing the
+- [00:45:12,552 - 00:45:15,462] necessary and sufficient conditions for something to
+- [00:45:15,462 - 00:45:16,482] be a canonical transformation,
+- [00:45:16,482 - 00:45:18,202] other than the way you put it,
+- [00:45:18,202 - 00:45:19,262] or are you going to go
+- [00:45:19,262 - 00:45:19,502] for that?
+- [00:45:20,962 - 00:45:21,422] Um.
+- [00:45:24,802 - 00:45:27,082] This is the necessary and sufficient condition,
+- [00:45:27,082 - 00:45:33,142] that the P's and Q's preserve their Poisson
+- [00:45:33,142 - 00:45:33,742] bracket structure.
+- [00:45:34,142 - 00:45:35,322] That is the necessary.
+- [00:45:35,542 - 00:45:35,642] Now,
+- [00:45:35,642 - 00:45:39,102] you're asking if you give me a certain—well,
+- [00:45:39,102 - 00:45:39,922] what are you asking?
+- [00:45:40,202 - 00:45:44,112] I guess is there another way of expressing it
+- [00:45:44,112 - 00:45:48,022] in some way other than that's of some general
+- [00:45:48,022 - 00:45:48,402] purpose?
+- [00:45:48,702 - 00:45:48,862] Yeah.
+- [00:45:49,222 - 00:45:49,762] Yes.
+- [00:45:50,342 - 00:45:50,882] Yes.
+- [00:45:50,882 - 00:45:52,572] There is another way of expressing
+- [00:45:52,572 - 00:45:54,262] it that is of great general interest,
+- [00:45:54,262 - 00:45:56,382] but is also
+- [00:45:56,382 - 00:45:57,362] not completely general.
+- [00:45:59,662 - 00:46:02,202] We tend to build transformations,
+- [00:46:02,202 - 00:46:03,282] not all of them,
+- [00:46:03,282 - 00:46:04,722] but we tend to build transformations
+- [00:46:04,722 - 00:46:06,422] out of infinitesimal transformations,
+- [00:46:06,422 - 00:46:08,442] out of small steps.
+- [00:46:09,442 - 00:46:09,962] Okay?
+- [00:46:10,142 - 00:46:12,922] If we're talking about an infinitesimal transformation,
+- [00:46:12,922 - 00:46:16,242] I'll explain exactly what I mean by an infinitesimal
+- [00:46:16,242 - 00:46:17,442] transformation in a moment,
+- [00:46:17,442 - 00:46:18,902] but I think you know what I mean,
+- [00:46:18,902 - 00:46:19,022] though.
+- [00:46:19,082 - 00:46:19,562] Yeah.
+- [00:46:19,562 - 00:46:19,662] Yeah.
+- [00:46:20,082 - 00:46:22,622] If we're talking about infinitesimal transformations,
+- [00:46:22,622 - 00:46:23,782] then yes,
+- [00:46:23,782 - 00:46:26,562] there is a way to describe them,
+- [00:46:26,662 - 00:46:27,582] a unique,
+- [00:46:27,582 - 00:46:29,302] special way to describe them,
+- [00:46:29,302 - 00:46:31,482] which we're about to come to now.
+- [00:46:32,442 - 00:46:35,942] So if we can build up
+- [00:46:35,942 - 00:46:39,442] the transformations out of infinitesimal transformations—and
+- [00:46:40,562 - 00:46:41,962] what is an infinitesimal transformation?
+- [00:46:42,422 - 00:46:47,302] It means one—well,
+- [00:46:47,302 - 00:46:48,422] let's just write down what it means.
+- [00:46:48,982 - 00:46:49,542] Okay.
+- [00:46:52,422 - 00:46:57,462] It means q is almost exactly equal to little q,
+- [00:46:57,462 - 00:47:01,022] but with a very small deviation,
+- [00:47:01,022 - 00:47:02,202] and that
+- [00:47:02,202 - 00:47:05,762] small deviation we'll just call delta sub q,
+- [00:47:05,762 - 00:47:06,762] delta of q,
+- [00:47:06,762 - 00:47:07,802] and this,
+- [00:47:07,802 - 00:47:08,122] of course,
+- [00:47:08,122 - 00:47:08,582] is a function
+- [00:47:08,582 - 00:47:09,862] of the q's and the p's.
+- [00:47:11,362 - 00:47:15,762] It just means the deviation from a trivial transformation,
+- [00:47:15,762 - 00:47:17,202] big q equals little q,
+- [00:47:17,202 - 00:47:18,422] is
+- [00:47:18,422 - 00:47:19,262] infinitesimal.
+- [00:47:20,422 - 00:47:21,862] In practice,
+- [00:47:21,862 - 00:47:23,882] what it means is in their formulas,
+- [00:47:23,882 - 00:47:27,522] we will drop things proportional to quadratic
+- [00:47:27,522 - 00:47:30,342] and higher powers of the deltas.
+- [00:47:31,082 - 00:47:34,622] It means that small quantities mean quantities which
+- [00:47:34,622 - 00:47:38,162] are so small that we can drop higher
+- [00:47:38,162 - 00:47:39,082] powers in them.
+- [00:47:39,442 - 00:47:42,782] That's what we'll always mean by an infinitesimal operation,
+- [00:47:42,782 - 00:47:45,182] that we can drop higher powers.
+- [00:47:45,442 - 00:47:46,142] Now.
+- [00:47:46,222 - 00:47:49,522] We can always build transformations out of small quantities.
+- [00:47:49,542 - 00:47:52,022] We can build sequences of little transformations for
+- [00:47:52,022 - 00:47:54,502] each one of which we can drop higher powers,
+- [00:47:54,742 - 00:47:56,762] but then we have to combine them together,
+- [00:47:56,762 - 00:47:59,222] and sometimes that makes something more complicated.
+- [00:47:59,762 - 00:48:04,882] But we can test out very easily
+- [00:48:04,882 - 00:48:10,002] what are the rules for infinitesimal canonical transformations.
+- [00:48:11,282 - 00:48:11,962] Okay.
+- [00:48:11,962 - 00:48:12,382] Okay.
+- [00:48:14,722 - 00:48:15,402] Okay.
+- [00:48:18,982 - 00:48:20,432] I won't bother writing down that
+- [00:48:20,432 - 00:48:21,882] it's a function of p and q.
+- [00:48:22,622 - 00:48:23,242] All right.
+- [00:48:24,502 - 00:48:26,272] Let's just remember that
+- [00:48:26,272 - 00:48:28,042] the deltas are themselves functions.
+- [00:48:28,462 - 00:48:29,222] They're functions,
+- [00:48:29,222 - 00:48:31,332] but they're small such that we
+- [00:48:31,332 - 00:48:33,442] can ignore higher powers of them.
+- [00:48:35,142 - 00:48:35,762] All right.
+- [00:48:35,762 - 00:48:38,362] Let's first write down the condition
+- [00:48:38,362 - 00:48:40,962] that this be a canonical transformation.
+- [00:48:41,302 - 00:48:41,762] Incidentally,
+- [00:48:41,762 - 00:48:42,202] of course,
+- [00:48:42,202 - 00:48:43,402] there are some indices here.
+- [00:48:43,402 - 00:48:47,282] I'll suppress the indices up until the last step.
+- [00:48:49,542 - 00:48:51,342] Let's write down the condition
+- [00:48:51,342 - 00:48:53,142] that this be a canonical transformation.
+- [00:48:53,802 - 00:48:54,322] All right.
+- [00:48:54,362 - 00:48:56,782] It just says that...
+- [00:48:57,702 - 00:48:59,832] Let's just do it as if it
+- [00:48:59,832 - 00:49:01,962] was just one p and one q.
+- [00:49:04,922 - 00:49:07,022] And we can fill in the gaps later.
+- [00:49:07,622 - 00:49:08,182] Okay.
+- [00:49:08,202 - 00:49:08,482] Um.
+- [00:49:11,262 - 00:49:11,822] Okay.
+- [00:49:11,822 - 00:49:12,062] Okay.
+- [00:49:12,782 - 00:49:13,342] Okay.
+- [00:49:15,022 - 00:49:15,702] All right,
+- [00:49:15,702 - 00:49:22,482] so let's weigh up y1 plus y2.
+- [00:49:22,482 - 00:49:23,062] Let's do it here.
+- [00:49:25,162 - 00:49:25,842] We'll count all these together.
+- [00:49:25,902 - 00:49:26,562] Okay.
+- [00:49:26,842 - 00:49:27,642] Coming down to,
+- [00:49:27,642 - 00:49:29,022] where on the bar,
+- [00:49:29,022 - 00:49:30,482] what's the characterized from of the scheematical
+- [00:49:30,482 - 00:49:31,342] bege drops and every drop here.
+- [00:49:31,342 - 00:49:31,462] And it says that y is no constant constant.
+- [00:49:31,462 - 00:49:31,482] Walmart mathematical numbers don't just go round and round.
+- [00:49:31,482 - 00:49:31,842] So any hhere,
+- [00:49:31,842 - 00:49:32,742] if we put 100 hundred dollars,
+- [00:49:32,742 - 00:49:32,742] we have nothing,
+- [00:49:32,742 - 00:49:32,742] we haveolutely zero odds
+- [00:49:32,742 - 00:49:33,762] Anything of y is going to get anywhere.
+- [00:49:35,782 - 00:49:38,842] Anything of y is going to get anywhere.
+- [00:49:38,842 - 00:49:39,362] We know the autism or some more Laura Sal's.
+- [00:49:39,942 - 00:49:41,342] Therefore let's also separate into the fairness.
+- [00:49:41,842 - 00:49:43,322] All right.
+- [00:49:46,222 - 00:49:51,902] plus the Poisson bracket of Q with delta P.
+- [00:49:56,242 - 00:49:58,122] I've just stuck in for big Q,
+- [00:49:58,122 - 00:49:59,862] Q plus delta Q.
+- [00:49:59,942 - 00:50:00,742] For big P,
+- [00:50:00,742 - 00:50:02,002] P plus delta P.
+- [00:50:02,282 - 00:50:05,362] And then use linearity to expand it out.
+- [00:50:05,722 - 00:50:07,262] I've left out one term.
+- [00:50:07,542 - 00:50:09,522] I've left out the Poisson bracket
+- [00:50:09,522 - 00:50:11,502] of delta Q with delta P,
+- [00:50:11,502 - 00:50:15,122] but that's already quadratic in small quantities.
+- [00:50:16,062 - 00:50:17,742] Quadratic in small quantities are
+- [00:50:17,742 - 00:50:19,422] too small to be significant.
+- [00:50:20,042 - 00:50:22,022] So this is our formula.
+- [00:50:23,102 - 00:50:23,662] Now,
+- [00:50:23,662 - 00:50:24,702] what do we want to be true?
+- [00:50:24,902 - 00:50:27,202] We want this to be equal to this.
+- [00:50:28,262 - 00:50:30,402] So a necessary and sufficient condition,
+- [00:50:30,402 - 00:50:30,922] then,
+- [00:50:30,942 - 00:50:36,092] is that delta Q with P should
+- [00:50:36,092 - 00:50:41,242] be equal to minus Q with delta P.
+- [00:50:43,642 - 00:50:45,622] Let me show you how to satisfy that.
+- [00:50:46,522 - 00:50:48,802] This actually is necessary and sufficient,
+- [00:50:48,802 - 00:50:53,292] but it's not hard to
+- [00:50:53,292 - 00:50:57,782] show that it's necessary and sufficient.
+- [00:50:58,002 - 00:50:59,242] But let me just show you the construction.
+- [00:51:01,662 - 00:51:02,442] What do we do?
+- [00:51:06,642 - 00:51:08,782] We write that delta Q
+- [00:51:10,602 - 00:51:11,482] is equal to delta P.
+- [00:51:12,762 - 00:51:14,662] It's equal to some small number.
+- [00:51:15,102 - 00:51:18,122] The epsilon is just a small number in the problem.
+- [00:51:18,762 - 00:51:19,342] Delta Q,
+- [00:51:19,342 - 00:51:22,002] delta P are all proportional to the same small number.
+- [00:51:22,262 - 00:51:25,922] I introduced explicitly the small number so that I'll know,
+- [00:51:25,922 - 00:51:27,302] so I'll keep track of it.
+- [00:51:28,622 - 00:51:32,382] Times the Poisson bracket of Q with something.
+- [00:51:32,582 - 00:51:33,282] With what?
+- [00:51:33,562 - 00:51:35,422] With an object that's called
+- [00:51:35,422 - 00:51:37,282] the generator of the canonical transformation.
+- [00:51:39,122 - 00:51:40,742] G of P and Q.
+- [00:51:47,522 - 00:51:50,802] And delta P is equal
+- [00:51:50,802 - 00:51:54,082] to epsilon times P with G.
+- [00:51:56,482 - 00:51:59,052] Another way to say it
+- [00:51:59,052 - 00:52:01,622] is that every infinitesimal canonical transformation
+- [00:52:02,452 - 00:52:05,822] is characterized by a function G of P and Q,
+- [00:52:06,682 - 00:52:08,662] which itself defines a flow.
+- [00:52:08,662 - 00:52:11,342] Is it the same or reverse in order?
+- [00:52:11,942 - 00:52:12,762] Same order.
+- [00:52:14,462 - 00:52:15,302] Same order.
+- [00:52:16,942 - 00:52:19,002] This is a kind of flow.
+- [00:52:19,142 - 00:52:20,462] A coordinate transformation,
+- [00:52:20,462 - 00:52:23,202] in particular an infinitesimal coordinate transformation,
+- [00:52:23,722 - 00:52:25,762] is a kind of flow on the phase space.
+- [00:52:26,202 - 00:52:27,472] You take every point and
+- [00:52:27,472 - 00:52:28,742] you shift it a little bit.
+- [00:52:28,942 - 00:52:29,922] You take every point and
+- [00:52:29,922 - 00:52:30,902] you shift it a little bit.
+- [00:52:32,502 - 00:52:34,262] That's a flow on the phase space.
+- [00:52:34,682 - 00:52:36,662] And flows on the phase
+- [00:52:36,662 - 00:52:38,642] space are characterized by things called
+- [00:52:38,642 - 00:52:39,142] generators.
+- [00:52:40,162 - 00:52:41,942] Generators are functions of P and Q,
+- [00:52:42,162 - 00:52:44,902] and they characterize how the flow takes place.
+- [00:52:45,342 - 00:52:47,622] Let me prove now the theorem.
+- [00:52:48,422 - 00:52:50,232] I'm going to prove the theorem that
+- [00:52:50,232 - 00:52:52,042] says that if delta Q and delta P
+- [00:52:52,042 - 00:52:54,922] are obtained by Poisson brackets with a generator,
+- [00:52:55,202 - 00:52:57,262] then this will always be true.
+- [00:52:58,462 - 00:53:00,042] It goes the other way also.
+- [00:53:01,382 - 00:53:03,782] This is not hard to prove.
+- [00:53:04,302 - 00:53:05,342] First of all,
+- [00:53:05,342 - 00:53:06,982] what is the Poisson bracket of
+- [00:53:06,982 - 00:53:08,622] Q with G of P and Q?
+- [00:53:09,202 - 00:53:09,722] Remember,
+- [00:53:09,722 - 00:53:13,042] taking a Poisson bracket with Q is
+- [00:53:13,042 - 00:53:16,362] the same as differentiating with respect to P.
+- [00:53:17,882 - 00:53:18,682] What is this?
+- [00:53:18,742 - 00:53:19,962] This is dQ by dQ,
+- [00:53:19,962 - 00:53:22,522] dG by dP minus,
+- [00:53:22,522 - 00:53:22,962] yeah,
+- [00:53:22,962 - 00:53:28,362] this is just epsilon dG by dP.
+- [00:53:31,122 - 00:53:33,742] Just using the definition of Poisson bracket now.
+- [00:53:34,302 - 00:53:35,382] dQ by dQ,
+- [00:53:35,382 - 00:53:36,382] dG by dP,
+- [00:53:36,382 - 00:53:38,262] that just gives you dG by dP.
+- [00:53:38,262 - 00:53:40,122] And then dQ by dP,
+- [00:53:40,122 - 00:53:40,502] ah,
+- [00:53:40,502 - 00:53:40,922] that's zero.
+- [00:53:42,002 - 00:53:43,102] What about this one?
+- [00:53:44,702 - 00:53:49,362] This one is equal to minus epsilon dG by dQ.
+- [00:53:51,942 - 00:53:54,762] So now we have specific formulas
+- [00:53:54,762 - 00:53:57,582] for delta P and delta Q.
+- [00:53:57,682 - 00:53:58,182] Here they are.
+- [00:53:59,262 - 00:54:01,422] Let's plug them into this formula over here.
+- [00:54:02,822 - 00:54:03,942] What's delta Q?
+- [00:54:04,102 - 00:54:07,762] Delta Q is epsilon dG by dP.
+- [00:54:08,262 - 00:54:14,042] Epsilon Poisson bracket of dG by dP with P.
+- [00:54:15,442 - 00:54:19,132] And that should equal minus Poisson
+- [00:54:19,132 - 00:54:22,822] bracket of Q with delta P.
+- [00:54:22,962 - 00:54:24,262] What's delta P again?
+- [00:54:25,992 - 00:54:33,082] Delta P is minus dG by dQ,
+- [00:54:33,082 - 00:54:33,342] right?
+- [00:54:43,302 - 00:54:43,982] Epsilon.
+- [00:54:45,082 - 00:54:45,762] Epsilon.
+- [00:54:49,742 - 00:54:50,582] All right,
+- [00:54:50,582 - 00:54:52,562] the minus signs cancel themselves out.
+- [00:54:54,762 - 00:54:55,682] I hope.
+- [00:55:00,242 - 00:55:03,482] And what is the Poisson bracket with P?
+- [00:55:06,762 - 00:55:08,242] It just differentiates.
+- [00:55:08,242 - 00:55:09,062] It just differentiates with respect to Q.
+- [00:55:09,802 - 00:55:11,372] So this is just the second derivative
+- [00:55:11,372 - 00:55:12,942] of G with respect to P and Q.
+- [00:55:14,542 - 00:55:15,942] What's Poisson bracket with Q?
+- [00:55:17,722 - 00:55:18,862] Derivative with respect to P.
+- [00:55:21,342 - 00:55:22,642] This is identically,
+- [00:55:22,642 - 00:55:24,132] the left side and the right
+- [00:55:24,132 - 00:55:25,622] side are identically equal to each other.
+- [00:55:27,782 - 00:55:29,882] They're identically equal to each other,
+- [00:55:29,882 - 00:55:32,432] each one being the second derivative of
+- [00:55:32,432 - 00:55:34,982] G with respect to P and Q.
+- [00:55:38,622 - 00:55:39,222] So...
+- [00:55:44,022 - 00:55:44,322] Okay,
+- [00:55:44,322 - 00:55:45,322] so here's what we find.
+- [00:55:45,542 - 00:55:50,602] We find that flows which are generated by Poisson
+- [00:55:50,602 - 00:55:55,662] bracketing with respect to a generator always define canonical transformations.
+- [00:55:56,282 - 00:55:59,542] A special case of this is the Hamiltonian flow.
+- [00:56:00,422 - 00:56:02,042] Let's just look at this equation here.
+- [00:56:02,122 - 00:56:02,622] What does this say?
+- [00:56:03,382 - 00:56:05,012] Supposing we were talking about
+- [00:56:05,012 - 00:56:06,642] the time motion of a system.
+- [00:56:06,642 - 00:56:10,272] The time motion of a system is Q
+- [00:56:10,272 - 00:56:13,902] dot equals Poisson bracket of Q with H.
+- [00:56:16,802 - 00:56:17,462] Well,
+- [00:56:17,462 - 00:56:20,042] if I write that Q dot
+- [00:56:20,042 - 00:56:22,622] is delta Q by delta T,
+- [00:56:22,622 - 00:56:24,812] and I just think of
+- [00:56:24,812 - 00:56:27,002] delta T as a small epsilon.
+- [00:56:27,862 - 00:56:29,302] Let's put epsilon here.
+- [00:56:30,142 - 00:56:31,222] In other words,
+- [00:56:31,222 - 00:56:33,182] I change the time interval by amount epsilon.
+- [00:56:33,682 - 00:56:36,622] Then the Hamiltonian flow is exactly the same.
+- [00:56:36,642 - 00:56:37,602] It's exactly the same as the
+- [00:56:37,602 - 00:56:38,562] sort of thing I've written here.
+- [00:56:39,762 - 00:56:41,442] Hamiltonian evolution of a
+- [00:56:41,442 - 00:56:43,122] system is a canonical transformation.
+- [00:56:43,982 - 00:56:44,962] In other words,
+- [00:56:44,962 - 00:56:49,642] the coordinate transformations of P's and Q's which are generated by the actual
+- [00:56:49,642 - 00:56:54,322] flow of the system is itself a special case of a canonical transformation.
+- [00:56:56,002 - 00:56:56,642] Furthermore,
+- [00:56:56,642 - 00:57:00,002] all canonical transformations can be generated by picking
+- [00:57:00,002 - 00:57:03,362] some generator as if it were the Hamiltonian.
+- [00:57:03,842 - 00:57:05,302] Imagining in our mind,
+- [00:57:05,302 - 00:57:08,262] a Hamiltonian which caused the flow,
+- [00:57:08,262 - 00:57:11,322] which took the points from one to another,
+- [00:57:12,102 - 00:57:13,952] that defines the most
+- [00:57:13,952 - 00:57:15,802] general class of canonical transformations.
+- [00:57:17,182 - 00:57:17,662] Now...
+- [00:57:17,662 - 00:57:18,222] The most general?
+- [00:57:19,262 - 00:57:19,742] Hamiltonian?
+- [00:57:20,342 - 00:57:21,002] I'm sorry,
+- [00:57:21,002 - 00:57:21,622] say that one more time.
+- [00:57:22,082 - 00:57:22,562] Yeah,
+- [00:57:22,562 - 00:57:23,582] the most general...
+- [00:57:23,582 - 00:57:26,782] I think I'm saying something a little too strong.
+- [00:57:27,202 - 00:57:28,022] I'm not sure.
+- [00:57:28,062 - 00:57:28,622] Maybe I'm not.
+- [00:57:30,642 - 00:57:33,062] Every canonical transformation that I know...
+- [00:57:33,062 - 00:57:34,342] Now I know I'm saying something correct.
+- [00:57:35,302 - 00:57:37,382] Every canonical transformation that I know of...
+- [00:57:38,502 - 00:57:40,042] I think it's true...
+- [00:57:40,042 - 00:57:41,892] can be generated
+- [00:57:41,892 - 00:57:43,742] from infinitesimal canonical transformations.
+- [00:57:44,142 - 00:57:46,612] If it can be generated
+- [00:57:46,612 - 00:57:49,082] from an infinitesimal canonical transformation,
+- [00:57:50,062 - 00:57:52,402] then it's got a generator G of P and Q,
+- [00:57:52,582 - 00:57:56,182] which allows it to be constructed in this way.
+- [00:57:56,562 - 00:57:57,022] So,
+- [00:57:57,022 - 00:57:59,502] if you want a small canonical transformation,
+- [00:57:59,762 - 00:58:01,942] which just displaces the points a little bit,
+- [00:58:02,122 - 00:58:03,962] you just take Poisson brackets
+- [00:58:03,962 - 00:58:06,582] of the variables you're interested in
+- [00:58:06,582 - 00:58:07,902] with the generator,
+- [00:58:08,142 - 00:58:10,622] and that gives you the
+- [00:58:10,622 - 00:58:13,102] changes in the phase-space coordinates.
+- [00:58:14,142 - 00:58:15,782] That's the basic idea.
+- [00:58:16,642 - 00:58:19,142] That all motions on the phase-space,
+- [00:58:19,442 - 00:58:22,102] whether they have to do with the actual time evolution,
+- [00:58:22,462 - 00:58:23,842] or whether they just have
+- [00:58:23,842 - 00:58:25,222] to do with coordinate transformations,
+- [00:58:25,322 - 00:58:26,542] moving points around,
+- [00:58:27,102 - 00:58:29,442] are of the form of
+- [00:58:29,442 - 00:58:31,782] canonical transformations generated by generators.
+- [00:58:32,202 - 00:58:33,942] The Hamiltonian being a space,
+- [00:58:33,962 - 00:58:34,502] is a special case.
+- [00:58:35,002 - 00:58:35,502] Yeah?
+- [00:58:35,702 - 00:58:39,322] Are there any restrictions on what the Hamiltonian would be?
+- [00:58:39,522 - 00:58:41,252] It looks like G is
+- [00:58:41,252 - 00:58:42,982] just the Hamiltonian for another system.
+- [00:58:43,242 - 00:58:43,562] Yeah,
+- [00:58:43,562 - 00:58:44,182] yeah,
+- [00:58:44,182 - 00:58:44,742] yeah.
+- [00:58:45,642 - 00:58:46,342] It is.
+- [00:58:47,542 - 00:58:49,242] It's just that it could
+- [00:58:49,242 - 00:58:50,942] be the Hamiltonian for another system.
+- [00:58:51,902 - 00:58:55,662] And the Hamiltonian could just be some arbitrary flow.
+- [00:58:57,562 - 00:58:58,242] That's right.
+- [00:59:02,981 - 00:59:04,522] What the Hamiltonian is,
+- [00:59:04,522 - 00:59:04,822] of course,
+- [00:59:04,842 - 00:59:06,762] is really determined by the physics of a system,
+- [00:59:06,822 - 00:59:08,322] experiment and all that kind of thing.
+- [00:59:08,862 - 00:59:10,392] But the mathematics cannot tell
+- [00:59:10,392 - 00:59:11,922] you whether G is the Hamiltonian
+- [00:59:11,922 - 00:59:13,062] or H is the Hamiltonian.
+- [00:59:13,102 - 00:59:14,702] You do an experiment to find out.
+- [00:59:17,462 - 00:59:17,822] Okay,
+- [00:59:17,822 - 00:59:19,802] now we can discuss,
+- [00:59:24,202 - 00:59:26,742] if the transformations which we are allowed to do,
+- [00:59:26,742 - 00:59:28,522] which preserve the structure of mechanics,
+- [00:59:28,742 - 00:59:29,302] are canonical,
+- [00:59:31,662 - 00:59:33,682] then what is the subclass of those?
+- [00:59:33,902 - 00:59:35,942] For a given system with a given Hamiltonian,
+- [00:59:36,022 - 00:59:38,762] what is the subclass that are called symmetries?
+- [00:59:41,502 - 00:59:43,602] Symmetries are the canonical transformations
+- [00:59:43,602 - 00:59:46,202] which don't change the Hamiltonian.
+- [00:59:47,022 - 00:59:49,382] Just like in the case of Lagrangians,
+- [00:59:49,382 - 00:59:51,022] we said that the
+- [00:59:51,022 - 00:59:52,662] symmetries were the coordinate transformations
+- [00:59:52,662 - 00:59:54,522] which didn't change the Lagrangian,
+- [00:59:54,642 - 00:59:55,602] now,
+- [00:59:55,602 - 00:59:57,402] the more general idea becomes
+- [00:59:58,602 - 01:00:00,842] coordinate transformations in phase space,
+- [01:00:01,102 - 01:00:01,842] which are canonical,
+- [01:00:02,102 - 01:00:03,982] and which don't change the energy.
+- [01:00:05,542 - 01:00:09,142] Those are the symmetries of a mechanical system.
+- [01:00:09,942 - 01:00:13,382] We can actually say that in a somewhat geometric way.
+- [01:00:15,542 - 01:00:16,822] Here's our phase space.
+- [01:00:18,642 - 01:00:19,242] Oh,
+- [01:00:19,242 - 01:00:19,922] incidentally,
+- [01:00:19,922 - 01:00:22,222] I didn't keep track of the little indices i.
+- [01:00:22,722 - 01:00:25,542] You can go home and do the derivation over again.
+- [01:00:25,602 - 01:00:28,182] Keeping track of all the indices i and j,
+- [01:00:29,002 - 01:00:31,462] and see that the construction still works.
+- [01:00:33,062 - 01:00:34,902] It's more or less obvious.
+- [01:00:36,002 - 01:00:36,602] Okay.
+- [01:00:36,862 - 01:00:38,922] But let's imagine here's our phase space,
+- [01:00:39,142 - 01:00:40,462] multidimensional phase space.
+- [01:00:40,942 - 01:00:41,542] Now,
+- [01:00:41,542 - 01:00:43,802] the Hamiltonian corresponds to some flow.
+- [01:00:45,422 - 01:00:47,982] And it's also a canonical transformation.
+- [01:00:49,602 - 01:00:53,382] The infinitesimal small time flow from one point to another
+- [01:00:53,382 - 01:00:54,562] is the canonical trans...
+- [01:00:54,562 - 01:00:56,822] is generated by the Hamiltonian.
+- [01:00:57,342 - 01:00:59,562] And the full transformation over
+- [01:00:59,562 - 01:01:01,782] a period of time is canonical.
+- [01:01:03,642 - 01:01:04,162] Now,
+- [01:01:04,162 - 01:01:06,222] let's imagine there's some other quantity,
+- [01:01:07,482 - 01:01:08,842] a generator g,
+- [01:01:09,542 - 01:01:11,262] that generates another flow.
+- [01:01:11,522 - 01:01:13,392] It's not to be thought of
+- [01:01:13,392 - 01:01:15,262] as the time evolution of the system.
+- [01:01:15,442 - 01:01:17,502] It's just another flow on the phase space.
+- [01:01:18,262 - 01:01:20,062] Just another motion on the phase space,
+- [01:01:20,182 - 01:01:21,372] which moves points through the
+- [01:01:21,372 - 01:01:22,562] phase space in some other way.
+- [01:01:27,562 - 01:01:28,462] In general,
+- [01:01:28,462 - 01:01:29,742] you can see from this picture
+- [01:01:32,362 - 01:01:34,162] that the new flow,
+- [01:01:34,162 - 01:01:35,222] the green flow,
+- [01:01:35,442 - 01:01:38,482] will change the value of the energy along the flow.
+- [01:01:40,262 - 01:01:41,802] But supposing it's true,
+- [01:01:41,802 - 01:01:43,062] supposing it's true
+- [01:01:43,062 - 01:01:44,882] that the green flow,
+- [01:01:44,882 - 01:01:45,802] g,
+- [01:01:47,042 - 01:01:48,322] and the black flow,
+- [01:01:48,322 - 01:01:48,882] h,
+- [01:01:49,202 - 01:01:50,822] the Hamiltonian of the system,
+- [01:01:50,902 - 01:01:52,222] are in just such a way
+- [01:01:52,222 - 01:01:58,142] that the flow along the g direction
+- [01:01:58,842 - 01:02:00,382] doesn't change the energy,
+- [01:02:00,582 - 01:02:02,702] causes the energy not to change at all.
+- [01:02:02,982 - 01:02:03,922] In other words,
+- [01:02:03,922 - 01:02:06,882] flows the system along surfaces of constant energy.
+- [01:02:07,402 - 01:02:09,042] Then it's called a symmetry.
+- [01:02:09,922 - 01:02:11,042] It's a symmetry,
+- [01:02:11,042 - 01:02:12,162] g is a symmetry,
+- [01:02:13,482 - 01:02:17,702] if the flow created by g doesn't change the energy.
+- [01:02:19,402 - 01:02:21,042] What's the condition for that?
+- [01:02:23,042 - 01:02:24,022] This is easy.
+- [01:02:25,582 - 01:02:26,102] Hmm?
+- [01:02:28,862 - 01:02:29,382] Right,
+- [01:02:29,382 - 01:02:29,902] right.
+- [01:02:30,742 - 01:02:31,762] Geometrically the condition,
+- [01:02:31,962 - 01:02:34,202] but in a multidimensional space it's not so obvious.
+- [01:02:34,842 - 01:02:35,362] Alright.
+- [01:02:39,022 - 01:02:42,102] Here's how q and p change under the flow.
+- [01:02:44,042 - 01:02:47,162] Let's take a general function of p and q.
+- [01:02:48,522 - 01:02:50,802] Let's take a general function of p and q
+- [01:02:50,802 - 01:02:53,082] and see how it changes along this flow.
+- [01:02:57,542 - 01:02:58,842] I'm not going to call it,
+- [01:02:58,922 - 01:03:00,542] I'm going to call the function a again.
+- [01:03:00,702 - 01:03:01,422] Let's call it a.
+- [01:03:02,062 - 01:03:04,822] How does a change along the flow?
+- [01:03:06,062 - 01:03:06,662] Well,
+- [01:03:06,662 - 01:03:09,502] it changes dA by dp
+- [01:03:11,142 - 01:03:12,402] times delta p
+- [01:03:13,702 - 01:03:15,722] plus dA by dq
+- [01:03:17,822 - 01:03:18,782] delta q.
+- [01:03:21,102 - 01:03:22,902] But what is delta p and delta q?
+- [01:03:23,042 - 01:03:23,802] Here we have them.
+- [01:03:24,062 - 01:03:28,462] They're proportional dg by dp and dg by dq.
+- [01:03:29,422 - 01:03:30,682] So this is,
+- [01:03:30,682 - 01:03:31,122] let's see,
+- [01:03:31,122 - 01:03:34,602] delta p is dg by dq,
+- [01:03:40,262 - 01:03:41,402] dg by dp.
+- [01:03:45,702 - 01:03:46,582] In other words,
+- [01:03:46,582 - 01:03:47,742] not too surprisingly,
+- [01:03:47,742 - 01:03:52,382] the change in any function of a is just proportional,
+- [01:03:53,922 - 01:03:55,382] there's an epsilon in here,
+- [01:03:55,382 - 01:03:55,762] isn't there,
+- [01:03:58,082 - 01:04:01,842] is just epsilon times the
+- [01:04:01,842 - 01:04:05,602] Poisson bracket of a with g.
+- [01:04:06,962 - 01:04:08,922] This is exactly the same formula
+- [01:04:08,922 - 01:04:10,882] we use for time derivatives of things
+- [01:04:10,882 - 01:04:13,022] when g was the Hamiltonian.
+- [01:04:13,462 - 01:04:16,602] The change of functions along the Hamiltonian flow
+- [01:04:16,602 - 01:04:19,422] is just the Poisson bracket with the Hamiltonian.
+- [01:04:19,642 - 01:04:22,622] The change of an arbitrary function along any flow
+- [01:04:22,622 - 01:04:24,372] is just the Poisson bracket
+- [01:04:24,372 - 01:04:26,122] with the generator of the flow.
+- [01:04:27,742 - 01:04:29,442] That's what these generators do.
+- [01:04:30,222 - 01:04:33,142] Poisson brackets with the generators create the flow
+- [01:04:33,142 - 01:04:34,522] and they give you the derivatives
+- [01:04:34,522 - 01:04:36,702] or the way the functions change along the flow.
+- [01:04:37,762 - 01:04:38,542] All right,
+- [01:04:38,542 - 01:04:38,922] so then,
+- [01:04:38,922 - 01:04:40,042] what does it say
+- [01:04:41,242 - 01:04:44,802] that the energy does not change along the flow g?
+- [01:04:48,822 - 01:04:54,662] It says that the Poisson bracket of
+- [01:04:54,662 - 01:05:00,502] h with g is equal to zero.
+- [01:05:01,102 - 01:05:02,692] It says that h does
+- [01:05:02,692 - 01:05:04,282] not change along the flow g.
+- [01:05:05,702 - 01:05:06,342] All right?
+- [01:05:07,982 - 01:05:09,922] If I were to just plug in here for a,
+- [01:05:09,922 - 01:05:10,702] h,
+- [01:05:13,922 - 01:05:14,402] everywheres,
+- [01:05:14,402 - 01:05:16,202] this would just be the Poisson bracket
+- [01:05:16,602 - 01:05:17,182] of h with g.
+- [01:05:19,042 - 01:05:21,922] So this is the condition that the energy doesn't change
+- [01:05:22,522 - 01:05:24,622] along the symmetry flow g.
+- [01:05:26,922 - 01:05:28,982] But now we can read this the other way also.
+- [01:05:29,142 - 01:05:31,402] This also tells us that g
+- [01:05:31,402 - 01:05:33,662] with h is equal to zero.
+- [01:05:36,862 - 01:05:38,152] h with g and g with h
+- [01:05:38,152 - 01:05:39,442] are just the negative of each other.
+- [01:05:39,622 - 01:05:41,082] And what does this equation say?
+- [01:05:44,082 - 01:05:47,822] This says that the time derivative of g vanishes.
+- [01:05:50,002 - 01:05:50,722] All right?
+- [01:05:51,102 - 01:05:51,662] Remember,
+- [01:05:51,662 - 01:05:53,972] the other equation was that
+- [01:05:53,972 - 01:05:56,282] a with h equals a dot.
+- [01:05:58,022 - 01:06:00,742] The same equation which says that
+- [01:06:00,742 - 01:06:03,462] h doesn't vary along the flow g
+- [01:06:04,082 - 01:06:07,302] says that g doesn't vary along the flow h.
+- [01:06:08,242 - 01:06:09,742] But what does this equation say?
+- [01:06:14,222 - 01:06:16,402] It says that a is conserved.
+- [01:06:18,382 - 01:06:20,442] It says that a is conserved.
+- [01:06:21,382 - 01:06:23,542] So if you have a Hamiltonian
+- [01:06:23,542 - 01:06:25,702] and you have a generator g,
+- [01:06:27,162 - 01:06:28,122] a quantity,
+- [01:06:28,122 - 01:06:29,162] a quantity g,
+- [01:06:29,882 - 01:06:33,882] which has the property that the flows created by g
+- [01:06:33,882 - 01:06:35,342] don't change the energy,
+- [01:06:35,582 - 01:06:38,022] then the flows created by the energy,
+- [01:06:38,162 - 01:06:39,822] that's the time dependence of the system,
+- [01:06:40,322 - 01:06:43,322] don't change g.
+- [01:06:48,502 - 01:06:50,482] This is kind of the reciprocal relation,
+- [01:06:50,642 - 01:06:52,642] an interesting reciprocal relationship.
+- [01:06:53,302 - 01:06:54,622] If you have two quantities,
+- [01:06:54,622 - 01:06:55,502] h and g,
+- [01:06:56,562 - 01:06:58,292] and you say h is the
+- [01:06:58,292 - 01:07:00,022] Hamiltonian which generates the time dependence,
+- [01:07:02,522 - 01:07:04,662] and g doesn't change the Hamiltonian,
+- [01:07:04,722 - 01:07:06,562] then if you switch the system
+- [01:07:06,562 - 01:07:08,402] and you said g was the Hamiltonian,
+- [01:07:08,402 - 01:07:10,962] and h was just some arbitrary thing,
+- [01:07:12,221 - 01:07:13,622] I think you get the point.
+- [01:07:13,782 - 01:07:15,802] I'm going to use too many words to say it.
+- [01:07:16,022 - 01:07:18,032] There's a parallel relationship
+- [01:07:18,032 - 01:07:20,042] between quantities which are conserved
+- [01:07:20,042 - 01:07:21,602] and the energy of the system.
+- [01:07:22,402 - 01:07:22,882] Parallel,
+- [01:07:22,882 - 01:07:24,542] symmetrical relationship between them.
+- [01:07:25,642 - 01:07:27,802] I think this would be a good point to stop.
+- [01:07:28,762 - 01:07:30,162] This is a very,
+- [01:07:30,162 - 01:07:31,682] very highly abstract business,
+- [01:07:34,142 - 01:07:38,382] and it does have to do with the fact that,
+- [01:07:38,382 - 01:07:39,542] I don't want to start with
+- [01:07:39,542 - 01:07:40,702] the intrinsic structure of classical mechanics,
+- [01:07:40,982 - 01:07:42,902] but as I said to you time and again,
+- [01:07:43,162 - 01:07:45,202] the place where the real glory of
+- [01:07:45,202 - 01:07:47,242] this comes forth is in quantum mechanics.
+- [01:07:47,902 - 01:07:50,742] It's very abstract in classical mechanics.
+- [01:07:50,962 - 01:07:54,162] It's extremely concrete in quantum mechanics,
+- [01:07:54,342 - 01:07:56,482] much easier to understand in quantum mechanics.
+- [01:07:56,862 - 01:07:57,862] What could be an example?
+- [01:07:58,342 - 01:07:59,022] Of what?
+- [01:07:59,222 - 01:08:00,382] In quantum mechanics.
+- [01:08:01,942 - 01:08:03,542] Angular momentum and energy.
+- [01:08:05,182 - 01:08:06,422] H could be,
+- [01:08:06,422 - 01:08:06,862] let's see,
+- [01:08:06,862 - 01:08:08,642] h could be the energy of a system.
+- [01:08:08,782 - 01:08:13,302] It could be p squared over 2m plus,
+- [01:08:15,122 - 01:08:15,942] I don't know,
+- [01:08:15,942 - 01:08:18,662] function of x squared plus y squared,
+- [01:08:18,662 - 01:08:19,162] let's say.
+- [01:08:21,282 - 01:08:22,442] That could be h.
+- [01:08:22,721 - 01:08:24,522] g could be the angular momentum.
+- [01:08:25,562 - 01:08:29,602] Angular momentum is xpy minus ypx.
+- [01:08:31,602 - 01:08:34,921] If you calculate the Poisson bracket between this and this,
+- [01:08:34,982 - 01:08:35,822] you'll find that it's zero,
+- [01:08:35,921 - 01:08:36,841] corresponding to,
+- [01:08:37,462 - 01:08:38,261] let's do that.
+- [01:08:38,282 - 01:08:38,381] Oh,
+- [01:08:38,381 - 01:08:38,522] yeah,
+- [01:08:38,522 - 01:08:38,702] yeah,
+- [01:08:38,702 - 01:08:38,761] yeah,
+- [01:08:38,761 - 01:08:39,502] that's going to be complicated.
+- [01:08:42,462 - 01:08:43,841] Let's do it for a free particle.
+- [01:08:45,322 - 01:08:46,362] It's going to be a little
+- [01:08:46,362 - 01:08:47,402] too complicated to do in general.
+- [01:08:48,782 - 01:08:49,142] Yeah,
+- [01:08:49,142 - 01:08:50,202] let's do it for a free particle.
+- [01:08:50,442 - 01:08:50,801] Okay,
+- [01:08:50,801 - 01:08:52,622] so let's take p squared over 2m,
+- [01:08:53,421 - 01:08:56,622] and that means px squared plus py squared.
+- [01:09:00,462 - 01:09:03,301] Do you mind if I set m equal to 1?
+- [01:09:04,482 - 01:09:04,841] No.
+- [01:09:05,341 - 01:09:06,841] px squared over 2 plus py squared.
+- [01:09:09,702 - 01:09:11,042] That's the Hamiltonian.
+- [01:09:14,442 - 01:09:16,202] g is the angular momentum.
+- [01:09:16,662 - 01:09:18,202] The expression for the angular,
+- [01:09:18,282 - 01:09:18,962] this is two dimensions,
+- [01:09:19,122 - 01:09:19,921] just for simplicity,
+- [01:09:19,921 - 01:09:20,582] two dimensions.
+- [01:09:21,002 - 01:09:22,642] g is the angular momentum.
+- [01:09:24,682 - 01:09:30,241] That's xpy minus ypx.
+- [01:09:35,122 - 01:09:35,721] Okay.
+- [01:09:35,721 - 01:09:38,442] Now we want to start calculating
+- [01:09:38,442 - 01:09:41,162] Poisson brackets between g and h.
+- [01:09:41,321 - 01:09:42,241] This is not too bad.
+- [01:09:42,962 - 01:09:43,441] Remember,
+- [01:09:43,441 - 01:09:44,482] all p's...
+- [01:09:44,482 - 01:09:44,962] All p's.
+- [01:09:44,962 - 01:09:45,162] Hmm?
+- [01:09:45,401 - 01:09:46,221] It's all p's.
+- [01:09:46,421 - 01:09:46,901] No,
+- [01:09:46,901 - 01:09:47,582] this isn't p's.
+- [01:09:49,102 - 01:09:49,582] Oh,
+- [01:09:49,582 - 01:09:49,881] yes.
+- [01:09:50,042 - 01:09:50,522] Right.
+- [01:09:51,282 - 01:09:52,482] I didn't see the q.
+- [01:09:53,522 - 01:09:54,002] Yup.
+- [01:09:55,962 - 01:09:57,622] X's and y's are q's.
+- [01:09:58,042 - 01:09:58,522] Good.
+- [01:09:59,322 - 01:09:59,982] All right.
+- [01:10:00,982 - 01:10:03,032] It wouldn't be true if
+- [01:10:03,032 - 01:10:05,082] I just took xpy or ypx,
+- [01:10:05,182 - 01:10:05,702] but I'm going to do it.
+- [01:10:05,702 - 01:10:06,302] But it's a combination,
+- [01:10:06,302 - 01:10:07,542] xpy minus ypx.
+- [01:10:07,542 - 01:10:07,682] Okay,
+- [01:10:07,682 - 01:10:08,342] so let's do it.
+- [01:10:09,962 - 01:10:12,022] Poisson bracket of g with h.
+- [01:10:16,642 - 01:10:17,102] Okay,
+- [01:10:17,102 - 01:10:17,842] so what is that?
+- [01:10:19,422 - 01:10:22,022] It's going to have xpy with px,
+- [01:10:22,082 - 01:10:23,962] and it's going to have xpy with py.
+- [01:10:24,662 - 01:10:27,622] How about let's do xpy with py first of all.
+- [01:10:28,002 - 01:10:29,462] Do I get anything from that?
+- [01:10:33,202 - 01:10:34,792] The Poisson bracket of an
+- [01:10:34,792 - 01:10:36,382] x with a py is 0.
+- [01:10:37,562 - 01:10:38,082] Remember,
+- [01:10:38,082 - 01:10:40,842] the only non-zero Poisson brackets that you begin with
+- [01:10:40,842 - 01:10:42,941] are x with px and y with py.
+- [01:10:44,382 - 01:10:47,342] When I start calculating xpy with py,
+- [01:10:47,542 - 01:10:48,562] I'm not going to get anything.
+- [01:10:49,521 - 01:10:51,982] py Poisson bracket with py is 0,
+- [01:10:52,182 - 01:10:53,702] x with py is 0.
+- [01:10:54,321 - 01:10:56,062] So there's nothing on this side
+- [01:10:56,062 - 01:10:58,342] which has a non-zero Poisson bracket
+- [01:10:58,342 - 01:10:59,441] with anything over here.
+- [01:11:01,142 - 01:11:03,102] The only non-zero Poisson brackets
+- [01:11:03,102 - 01:11:05,962] are x with px and y with py.
+- [01:11:07,482 - 01:11:08,062] Okay,
+- [01:11:08,062 - 01:11:10,742] so let's begin with x with px.
+- [01:11:11,962 - 01:11:13,702] This is going to be then
+- [01:11:14,562 - 01:11:19,862] Poisson bracket of xpy with px squared over 2.
+- [01:11:21,222 - 01:11:26,622] And then the other term will be minus ypx,
+- [01:11:30,822 - 01:11:32,962] with py squared over 2,
+- [01:11:33,042 - 01:11:34,382] with py squared over 2.
+- [01:11:37,202 - 01:11:37,802] Okay,
+- [01:11:37,802 - 01:11:40,242] how about xpy with px squared over 2?
+- [01:11:42,462 - 01:11:43,062] Well,
+- [01:11:43,062 - 01:11:44,622] we use the product formula here.
+- [01:11:45,502 - 01:11:47,862] We take out one term as just py
+- [01:11:49,241 - 01:11:51,822] with x px squared over 2.
+- [01:11:54,142 - 01:11:57,642] Then there's another term where the x comes out,
+- [01:11:57,642 - 01:12:01,142] and py gets Poisson with px.
+- [01:12:01,362 - 01:12:04,322] But what's Poisson of xpy with px?
+- [01:12:05,722 - 01:12:07,602] So this is the only
+- [01:12:07,602 - 01:12:09,482] term coming from the first bracket.
+- [01:12:10,362 - 01:12:13,542] py times x with px squared.
+- [01:12:13,902 - 01:12:15,462] What's x with px squared?
+- [01:12:17,802 - 01:12:20,382] Remember what Poisson bracketing with a q does.
+- [01:12:21,501 - 01:12:22,862] It differentiates.
+- [01:12:23,522 - 01:12:26,282] So x with px squared gives what?
+- [01:12:27,442 - 01:12:28,282] Just px.
+- [01:12:28,522 - 01:12:30,542] This whole thing is just py px.
+- [01:12:36,242 - 01:12:37,622] It's just py px.
+- [01:12:37,662 - 01:12:38,342] What about this one?
+- [01:12:41,822 - 01:12:43,422] We'll get a px on the outside,
+- [01:12:43,582 - 01:12:45,022] and we'll get y with py squared,
+- [01:12:45,282 - 01:12:46,922] which will be py,
+- [01:12:47,502 - 01:12:49,642] which will just be minus py px.
+- [01:12:53,302 - 01:12:56,022] So this is an example.
+- [01:12:56,022 - 01:12:59,762] This is an example of two generators which have zero...
+- [01:12:59,762 - 01:13:02,082] I keep wanting to use the word commute.
+- [01:13:02,342 - 01:13:03,082] In quantum mechanics,
+- [01:13:03,082 - 01:13:03,822] it would be commute.
+- [01:13:04,182 - 01:13:06,182] But let's not use that terminology.
+- [01:13:06,842 - 01:13:08,962] This is an example of two quantities,
+- [01:13:08,962 - 01:13:09,762] two generators,
+- [01:13:10,162 - 01:13:13,402] which have vanishing Poisson bracket between them.
+- [01:13:13,802 - 01:13:15,742] The implication is the following.
+- [01:13:16,102 - 01:13:19,422] If the Hamiltonian is px squared plus py squared,
+- [01:13:20,102 - 01:13:23,022] then the angular momentum is conserved.
+- [01:13:23,022 - 01:13:25,782] If we invented a new system
+- [01:13:25,782 - 01:13:28,882] where the Hamiltonian happens to be this thing...
+- [01:13:30,821 - 01:13:31,942] Crazy Hamiltonian,
+- [01:13:31,942 - 01:13:32,922] but let's do it anyway.
+- [01:13:33,282 - 01:13:36,082] A new system where the Hamiltonian is this thing,
+- [01:13:36,981 - 01:13:39,602] then this object would be conserved.
+- [01:13:41,462 - 01:13:43,902] The Poisson bracket between them is zero,
+- [01:13:44,102 - 01:13:46,322] so whichever one is the Hamiltonian,
+- [01:13:46,362 - 01:13:47,862] the other one is conserved.
+- [01:13:49,502 - 01:13:50,062] Okay.
+- [01:13:52,341 - 01:13:53,442] And again,
+- [01:13:53,442 - 01:13:57,442] the idea that the Hamiltonian doesn't change
+- [01:13:58,481 - 01:13:59,762] under a transformation,
+- [01:14:00,102 - 01:14:02,502] that is the basic idea of a symmetry,
+- [01:14:03,242 - 01:14:04,982] that a symmetry is an
+- [01:14:04,982 - 01:14:06,722] operation which doesn't change the energy.
+- [01:14:08,222 - 01:14:08,562] Okay.
+- [01:14:09,022 - 01:14:10,712] But we see here there's a
+- [01:14:10,712 - 01:14:12,402] rich structure to the whole thing,
+- [01:14:12,422 - 01:14:14,062] a much richer structure than...
+- [01:14:16,061 - 01:14:16,662] than...
+- [01:14:17,282 - 01:14:17,882] well,
+- [01:14:17,882 - 01:14:19,002] than you might have expected.
+- [01:14:19,002 - 01:14:19,822] Okay,
+- [01:14:19,822 - 01:14:21,722] any questions about this?
+- [01:14:21,842 - 01:14:23,542] And then I want to move on to...
+- [01:14:24,742 - 01:14:27,042] I want to move back and
+- [01:14:27,042 - 01:14:29,342] review what we said the first time.
+- [01:14:29,522 - 01:14:29,762] Yeah?
+- [01:14:30,082 - 01:14:30,942] You said you...
+- [01:14:31,982 - 01:14:34,442] You have a system where g is the Hamiltonian.
+- [01:14:34,502 - 01:14:34,962] Where it said...
+- [01:14:34,962 - 01:14:35,122] yeah,
+- [01:14:35,122 - 01:14:35,502] oh.
+- [01:14:36,262 - 01:14:37,362] What does that mean?
+- [01:14:39,082 - 01:14:40,142] Let's see what it means.
+- [01:14:40,342 - 01:14:41,162] Let's see what it means.
+- [01:14:41,582 - 01:14:42,762] To see what it means,
+- [01:14:42,762 - 01:14:43,242] it means...
+- [01:14:43,242 - 01:14:45,122] it simply means let's find out the
+- [01:14:45,122 - 01:14:47,002] equations of motion that go with it
+- [01:14:47,002 - 01:14:48,982] and ask how a particle would move under the Hamiltonian.
+- [01:14:49,002 - 01:14:50,322] And that's the influence of that Hamiltonian.
+- [01:14:51,082 - 01:14:51,682] Well,
+- [01:14:51,682 - 01:14:52,202] let's see.
+- [01:14:52,322 - 01:14:53,342] I never worked it out.
+- [01:14:54,902 - 01:14:56,242] Here's a Hamiltonian.
+- [01:14:56,302 - 01:14:57,002] New system.
+- [01:14:58,282 - 01:15:00,562] Hamiltonian is x p y minus y p x.
+- [01:15:03,662 - 01:15:05,282] Let's work out Hamilton's equations.
+- [01:15:07,122 - 01:15:10,302] Hamilton's equations say
+- [01:15:12,641 - 01:15:16,522] x dot is equal to
+- [01:15:16,522 - 01:15:20,642] the Poisson bracket of x with h.
+- [01:15:22,562 - 01:15:25,062] What's the Poisson bracket of x with h?
+- [01:15:26,402 - 01:15:27,882] Can anybody read this off?
+- [01:15:30,702 - 01:15:31,862] Where does it come from?
+- [01:15:31,902 - 01:15:32,322] Which term?
+- [01:15:35,702 - 01:15:37,492] The only term in h which can
+- [01:15:37,492 - 01:15:39,282] contribute to a Poisson bracket with x
+- [01:15:39,282 - 01:15:40,822] is a term that has p x in it.
+- [01:15:44,262 - 01:15:44,782] So,
+- [01:15:44,782 - 01:15:47,342] this looks like it's going to be minus y.
+- [01:15:49,542 - 01:15:51,122] x dot equals minus y.
+- [01:15:52,682 - 01:15:53,942] And what about y dot?
+- [01:16:00,418 - 01:16:00,633] y
+- [01:16:00,633 - 01:16:00,848] دارس
+- [01:16:00,848 - 01:16:01,063] اكوت
+- [01:16:01,063 - 01:16:01,278] X
+- [01:16:03,234 - 01:16:05,134] Anybody have any idea what kind of motion this is?
+- [01:16:05,134 - 01:16:06,734] Circle,
+- [01:16:06,734 - 01:16:07,594] circular motion.
+- [01:16:08,954 - 01:16:11,194] It just describes something going in a circle.
+- [01:16:13,294 - 01:16:15,484] So you're saying that h is
+- [01:16:15,484 - 01:16:17,674] equal to what was the generator?
+- [01:16:17,934 - 01:16:18,394] Yeah,
+- [01:16:18,394 - 01:16:19,613] I'm into change now.
+- [01:16:19,613 - 01:16:22,403] So let's make up a new system where the Hamiltonian
+- [01:16:22,403 - 01:16:25,194] just happens to be x p y minus y p x.
+- [01:16:26,073 - 01:16:27,274] And what do I get?
+- [01:16:27,274 - 01:16:31,214] I get a system which just moves
+- [01:16:31,214 - 01:16:35,154] in a circle counterclockwise direction like so.
+- [01:16:37,414 - 01:16:39,294] So if we had some mechanical system
+- [01:16:39,294 - 01:16:41,174] which could only move in a circle,
+- [01:16:41,174 - 01:16:43,274] we would describe it by this Hamiltonian,
+- [01:16:43,334 - 01:16:45,854] but then we would find that p
+- [01:16:45,854 - 01:16:48,374] x squared plus p y squared was conserved.
+- [01:16:50,274 - 01:16:51,694] And in fact that would be true.
+- [01:17:01,114 - 01:17:02,904] You've gone through these with
+- [01:17:02,904 - 01:17:04,694] just a p and a q,
+- [01:17:04,694 - 01:17:08,834] and what one confirms,
+- [01:17:08,834 - 01:17:09,714] my sense is,
+- [01:17:09,714 - 01:17:12,014] you're always talking about the same index.
+- [01:17:12,954 - 01:17:13,594] Well...
+- [01:17:13,594 - 01:17:16,754] And that for each index,
+- [01:17:16,754 - 01:17:19,314] the transformation could be different?
+- [01:17:19,834 - 01:17:21,294] For each index,
+- [01:17:21,294 - 01:17:23,014] the transformation could be different,
+- [01:17:23,014 - 01:17:23,414] yes.
+- [01:17:24,454 - 01:17:25,094] Yeah,
+- [01:17:25,094 - 01:17:25,174] yeah.
+- [01:17:25,194 - 01:17:25,214] I understand,
+- [01:17:25,214 - 01:17:26,634] but it's more complicated than that.
+- [01:17:30,534 - 01:17:31,574] The transformation...
+- [01:17:31,954 - 01:17:32,214] No,
+- [01:17:32,214 - 01:17:32,974] there's one...
+- [01:17:32,974 - 01:17:33,634] Okay.
+- [01:17:38,014 - 01:17:40,774] It's not that there's a transformation for each index.
+- [01:17:42,354 - 01:17:44,794] There's a set of transformations...
+- [01:17:44,794 - 01:17:45,194] Well,
+- [01:17:45,194 - 01:17:46,674] there is a transformation for each index,
+- [01:17:46,674 - 01:17:47,314] I take that back.
+- [01:17:47,674 - 01:17:51,054] q i is a function not
+- [01:17:51,054 - 01:17:54,434] just of q i and p i,
+- [01:17:54,614 - 01:17:55,174] but of all the other functions.
+- [01:17:55,194 - 01:17:56,354] All the q's and p's.
+- [01:17:56,594 - 01:17:57,154] Okay.
+- [01:17:57,954 - 01:17:58,234] Okay.
+- [01:17:58,494 - 01:18:01,794] So there's a transformation for each index,
+- [01:18:01,794 - 01:18:03,874] but each transformation in general
+- [01:18:03,874 - 01:18:05,954] involves all the q's and p's.
+- [01:18:06,394 - 01:18:06,954] Yeah.
+- [01:18:08,594 - 01:18:09,154] Right.
+- [01:18:11,854 - 01:18:12,414] Yeah.
+- [01:18:12,754 - 01:18:17,094] What's the condition for getting p if you know q?
+- [01:18:17,474 - 01:18:18,134] Say it again.
+- [01:18:18,374 - 01:18:20,714] What's the condition for getting p if you know q?
+- [01:18:21,714 - 01:18:24,494] I remember what it was when we were back in...
+- [01:18:26,154 - 01:18:27,314] in Lagrangian,
+- [01:18:27,314 - 01:18:29,314] but in this form,
+- [01:18:29,314 - 01:18:35,974] what is the momentum that's not canonical with a q?
+- [01:18:37,454 - 01:18:38,794] How do you define it?
+- [01:18:39,634 - 01:18:40,214] Oh,
+- [01:18:40,214 - 01:18:43,094] how do you get the momentum in terms of q's?
+- [01:18:45,494 - 01:18:47,574] I think for this system,
+- [01:18:47,574 - 01:18:50,474] p y is actually equal to x,
+- [01:18:50,474 - 01:18:52,714] and p x is equal to minus y.
+- [01:18:53,274 - 01:18:53,834] Let's see.
+- [01:18:54,094 - 01:18:55,494] Can we see why that is?
+- [01:18:55,814 - 01:18:58,274] I'm talking about the general definition.
+- [01:19:02,913 - 01:19:03,714] I remember...
+- [01:19:08,994 - 01:19:10,504] You mean how do we find
+- [01:19:10,504 - 01:19:12,014] the p's in terms of the velocities?
+- [01:19:13,094 - 01:19:13,494] Yeah,
+- [01:19:13,494 - 01:19:14,114] if you have a q,
+- [01:19:14,114 - 01:19:15,554] how do you know the...
+- [01:19:18,533 - 01:19:20,613] I think the question you're asking is how do
+- [01:19:20,613 - 01:19:22,694] you know the p's in terms of the velocities?
+- [01:19:24,394 - 01:19:24,834] Okay,
+- [01:19:24,834 - 01:19:25,594] yeah.
+- [01:19:25,814 - 01:19:27,194] I think that's the only question I
+- [01:19:27,194 - 01:19:28,574] can think of that you could ask.
+- [01:19:28,834 - 01:19:29,714] It's not always mv.
+- [01:19:31,094 - 01:19:32,294] It's not always mv,
+- [01:19:32,294 - 01:19:32,654] no.
+- [01:19:32,774 - 01:19:34,114] But you go to Hamilton's equations.
+- [01:19:35,014 - 01:19:36,374] You go to Hamilton's equations,
+- [01:19:36,374 - 01:19:37,994] and...
+- [01:19:39,654 - 01:19:41,264] Let's do it for an ordinary case and
+- [01:19:41,264 - 01:19:42,874] see how it works for an ordinary case.
+- [01:19:43,014 - 01:19:46,494] We could have h is equal to
+- [01:19:46,494 - 01:19:49,974] p squared plus some u of x,
+- [01:19:49,974 - 01:19:50,254] okay?
+- [01:19:51,654 - 01:19:52,834] Let's just do it for the...
+- [01:19:55,234 - 01:19:55,934] Excuse me.
+- [01:19:59,594 - 01:20:01,064] Let's just do it for
+- [01:20:01,064 - 01:20:02,534] the good old familiar simple particle,
+- [01:20:02,534 - 01:20:03,994] and we'll see the pattern.
+- [01:20:04,654 - 01:20:05,074] All right,
+- [01:20:05,074 - 01:20:06,834] so we just go to Hamilton's equations.
+- [01:20:07,294 - 01:20:11,424] Hamilton's equations are x dot equals
+- [01:20:11,424 - 01:20:15,554] Poisson bracket of x with h,
+- [01:20:15,554 - 01:20:19,234] and that's just going to give us p over m.
+- [01:20:20,774 - 01:20:21,354] That's it.
+- [01:20:21,573 - 01:20:22,133] That's it.
+- [01:20:22,214 - 01:20:23,714] That tells us p in terms of x dot.
+- [01:20:25,694 - 01:20:28,834] The other equation is the equation that
+- [01:20:28,834 - 01:20:31,974] p dot is equal to p with h,
+- [01:20:31,974 - 01:20:41,094] and that gives us du by dx.
+- [01:20:44,314 - 01:20:45,234] And that's,
+- [01:20:45,234 - 01:20:45,734] of course,
+- [01:20:45,734 - 01:20:46,454] f equals ma.
+- [01:20:49,034 - 01:20:50,234] Force is equal to...
+- [01:20:50,254 - 01:20:51,154] Force is equal to mass times acceleration.
+- [01:20:52,034 - 01:20:53,514] So one of the Hamilton equations,
+- [01:20:53,514 - 01:20:54,114] typically,
+- [01:20:54,114 - 01:20:57,024] the usual situation is one of the Hamilton equations tells
+- [01:20:57,024 - 01:20:59,934] you the relation between the p's and the x dots,
+- [01:21:00,274 - 01:21:03,574] and the other is like Newton's equations,
+- [01:21:03,574 - 01:21:05,114] involves the acceleration.
+- [01:21:08,034 - 01:21:08,334] Yeah.
+- [01:21:15,974 - 01:21:19,374] The preceding program is copyrighted by Stanford University.
+- [01:21:19,374 - 01:21:22,434] Please visit us at stanford.edu.
