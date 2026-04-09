@@ -1,0 +1,1574 @@
+# Transcript
+
+Source: core/classical_mechanics/2011_fall_modern_physics_stanford_partial/021 - Lecture 1 ｜ Modern Physics： Classical Mechanics (Stanford) [pyX8kQ-JzHI].webm
+
+- [00:00:06,780 - 00:00:09,760] This program is brought to you by Stanford University.
+- [00:00:10,180 - 00:00:12,700] Please visit us at stanford.edu.
+- [00:00:15,640 - 00:00:20,780] Classical mechanics is the basis for all of physics.
+- [00:00:21,960 - 00:00:23,440] It's the basis of all of physics,
+- [00:00:23,440 - 00:00:27,100] not only because it describes the motion
+- [00:00:27,100 - 00:00:29,060] of objects like particles and
+- [00:00:29,060 - 00:00:31,020] mechanical systems and so forth,
+- [00:00:31,020 - 00:00:32,380] but because the
+- [00:00:32,380 - 00:00:33,320] basic framework,
+- [00:00:33,320 - 00:00:36,190] the basic structure of all
+- [00:00:36,190 - 00:00:39,060] of physics is based on the
+- [00:00:39,060 - 00:00:40,600] principles of classical mechanics.
+- [00:00:40,600 - 00:00:42,660] The conservation of energy,
+- [00:00:42,660 - 00:00:43,500] the conservation
+- [00:00:43,500 - 00:00:44,140] of momentum,
+- [00:00:44,140 - 00:00:48,800] the principles by which all systems
+- [00:00:48,800 - 00:00:53,460] evolve in nature is the same set
+- [00:00:53,460 - 00:00:54,080] of rules,
+- [00:00:54,080 - 00:00:56,800] essentially exactly the same set of rules,
+- [00:00:56,840 - 00:00:57,080] and the same set of rules,
+- [00:00:57,080 - 00:00:57,080] and the same set of rules,
+- [00:00:57,080 - 00:00:57,080] and the same set of rules,
+- [00:00:57,080 - 00:00:59,210] and the more abstract and the more general
+- [00:00:59,210 - 00:01:01,340] setting than the rules which govern how a
+- [00:01:01,340 - 00:01:02,380] simple particle moves,
+- [00:01:02,380 - 00:01:02,960] for example,
+- [00:01:02,960 - 00:01:04,260] under the influence of gravity.
+- [00:01:05,019 - 00:01:06,500] But in order to understand it,
+- [00:01:06,500 - 00:01:09,020] we have to understand the principles in a fairly general
+- [00:01:09,020 - 00:01:09,580] context.
+- [00:01:09,580 - 00:01:14,320] Let's begin with the very,
+- [00:01:14,320 - 00:01:15,240] very simplest
+- [00:01:15,240 - 00:01:17,600] kinds of systems that we can think of,
+- [00:01:17,600 - 00:01:21,240] systems that are so simple that in fact they're simpler
+- [00:01:21,240 - 00:01:23,260] than any real systems in nature.
+- [00:01:23,260 - 00:01:25,880] Laws of nature,
+- [00:01:25,880 - 00:01:27,060] let's imagine laws of nature
+- [00:01:27,060 - 00:01:30,140] which are of the most primitive and simple
+- [00:01:30,140 - 00:01:33,220] kind acting on the most primitive and simple
+- [00:01:33,220 - 00:01:34,480] systems that we can imagine.
+- [00:01:34,480 - 00:01:38,080] I want you to first of all suppose that time,
+- [00:01:38,080 - 00:01:39,040] which evolves
+- [00:01:39,040 - 00:01:40,640] continuously under the,
+- [00:01:40,640 - 00:01:41,360] my watch,
+- [00:01:41,360 - 00:01:42,550] I see the second hand
+- [00:01:42,550 - 00:01:43,740] goes around and around and around,
+- [00:01:43,840 - 00:01:44,780] it goes around continuously,
+- [00:01:44,780 - 00:01:49,100] the time can evolve and be any real number,
+- [00:01:49,100 - 00:01:50,420] t,
+- [00:01:50,420 - 00:01:51,860] I want you
+- [00:01:51,860 - 00:01:53,780] to imagine it only occurs in beats.
+- [00:01:53,780 - 00:01:55,410] A stroboscopic world in which you
+- [00:01:55,410 - 00:01:57,040] only have a number of times,
+- [00:01:57,060 - 00:01:59,880] you only look at the world at intervals of
+- [00:01:59,880 - 00:02:02,700] time which we could be a thousandth of a second
+- [00:02:02,700 - 00:02:04,440] or it could be a millionth of a second,
+- [00:02:04,440 - 00:02:07,080] let's just take it to be one second intervals,
+- [00:02:07,080 - 00:02:08,539] and
+- [00:02:09,080 - 00:02:14,000] ask how in the stroboscopic world systems change with time.
+- [00:02:14,000 - 00:02:16,860] Let's also imagine a very,
+- [00:02:16,880 - 00:02:18,620] very simple set of systems,
+- [00:02:18,620 - 00:02:20,680] systems which are so simple
+- [00:02:20,680 - 00:02:22,740] that they only have a handful
+- [00:02:22,740 - 00:02:23,600] of configurations.
+- [00:02:25,180 - 00:02:26,460] Configurations mean
+- [00:02:26,460 - 00:02:27,040] a number of times,
+- [00:02:27,060 - 00:02:28,750] everything we need to know about
+- [00:02:28,750 - 00:02:30,440] the system to characterize it completely.
+- [00:02:30,440 - 00:02:32,020] So the simplest
+- [00:02:32,020 - 00:02:34,030] system I can think of would be
+- [00:02:34,030 - 00:02:36,040] a system that has only two configurations,
+- [00:02:36,040 - 00:02:37,260] heads or tails,
+- [00:02:37,480 - 00:02:37,960] a coin.
+- [00:02:37,960 - 00:02:40,500] Lay a coin down on the table,
+- [00:02:40,500 - 00:02:41,820] I don't have a coin
+- [00:02:41,820 - 00:02:43,140] so we'll take this coffee top
+- [00:02:43,140 - 00:02:43,460] here,
+- [00:02:43,460 - 00:02:45,100] I could put it down heads
+- [00:02:45,100 - 00:02:46,740] or I could put it down tails.
+- [00:02:46,740 - 00:02:48,200] I doubt if you can tell
+- [00:02:48,200 - 00:02:49,230] the difference from where you're sitting
+- [00:02:49,230 - 00:02:50,260] but I can tell the difference,
+- [00:02:50,260 - 00:02:51,700] this is heads,
+- [00:02:51,960 - 00:02:52,700] that's tails.
+- [00:02:52,700 - 00:02:54,870] So we have a system
+- [00:02:54,870 - 00:02:57,040] then that's characterized by two systems,
+- [00:02:57,040 - 00:02:57,040] the first one
+- [00:02:57,040 - 00:02:57,280] is a state,
+- [00:02:57,280 - 00:02:57,640] the second one is a state of being,
+- [00:02:57,640 - 00:02:57,640] and the third one is a state of evolution.
+- [00:02:57,640 - 00:02:57,640] So we have two states,
+- [00:02:57,640 - 00:03:01,370] two states of being and we want
+- [00:03:01,370 - 00:03:05,100] to add to those two states a law,
+- [00:03:05,140 - 00:03:07,930] a law of evolution in going from one
+- [00:03:07,930 - 00:03:10,720] instant of time to the next instant of time,
+- [00:03:10,720 - 00:03:11,020] from
+- [00:03:11,020 - 00:03:13,780] one beat of the stroboscopic light to the next one.
+- [00:03:13,780 - 00:03:17,100] What kind of laws are allowable,
+- [00:03:17,220 - 00:03:20,040] what kind of laws do the basic principles
+- [00:03:20,040 - 00:03:22,860] of physics allow and what kind of laws don't
+- [00:03:22,860 - 00:03:23,240] they allow?
+- [00:03:23,240 - 00:03:25,580] That's going to be our
+- [00:03:25,580 - 00:03:27,920] first kind of question for tonight.
+- [00:03:44,000 - 00:03:48,500] So our first concept is the space of states,
+- [00:03:48,500 - 00:03:51,200] in this case just heads and tails,
+- [00:03:51,200 - 00:03:52,240] it's just
+- [00:03:52,860 - 00:03:53,060] two points,
+- [00:03:53,060 - 00:03:54,760] heads and tails,
+- [00:03:54,760 - 00:03:56,460] so two points in an abstract space,
+- [00:03:56,460 - 00:03:58,860] heads and tails.
+- [00:03:58,860 - 00:04:02,260] It's
+- [00:04:02,260 - 00:04:03,300] called the phase space,
+- [00:04:03,300 - 00:04:05,900] it's called the phase space of a system,
+- [00:04:05,900 - 00:04:07,440] the space of possible states
+- [00:04:07,440 - 00:04:08,080] of a system.
+- [00:04:08,080 - 00:04:09,500] And what do I mean
+- [00:04:09,500 - 00:04:10,920] by a state of a system?
+- [00:04:10,920 - 00:04:12,520] I mean everything that you need
+- [00:04:12,520 - 00:04:15,420] to know in order to predict what happens next,
+- [00:04:15,420 - 00:04:18,800] everything you need to know in order to be
+- [00:04:18,800 - 00:04:20,260] able to say with certainty what the
+- [00:04:20,260 - 00:04:21,720] next state of the system will be.
+- [00:04:22,860 - 00:04:25,300] So that's called the phase space of the system,
+- [00:04:25,300 - 00:04:27,620] in this case just heads and tails.
+- [00:04:27,620 - 00:04:29,460] What kind
+- [00:04:29,460 - 00:04:31,220] of laws can you imagine,
+- [00:04:31,220 - 00:04:32,670] what kind of laws of nature
+- [00:04:32,670 - 00:04:34,120] can you imagine for this extremely
+- [00:04:34,120 - 00:04:35,100] simple world?
+- [00:04:35,100 - 00:04:37,080] It is the simplest—well,
+- [00:04:37,080 - 00:04:39,420] I suppose you could imagine a slightly simpler
+- [00:04:39,420 - 00:04:39,900] world.
+- [00:04:39,900 - 00:04:42,420] You can imagine a world with only one state,
+- [00:04:42,420 - 00:04:43,260] heads.
+- [00:04:43,260 - 00:04:45,780] Not much can happen in that
+- [00:04:45,780 - 00:04:46,020] world.
+- [00:04:46,020 - 00:04:47,440] There's only one law of physics.
+- [00:04:47,440 - 00:04:49,520] Heads go to heads,
+- [00:04:49,520 - 00:04:51,600] and heads go to heads go to heads.
+- [00:04:51,600 - 00:04:52,880] that's extremely boring,
+- [00:04:52,880 - 00:04:54,060] nothing ever happens,
+- [00:04:54,060 - 00:04:55,140] because there's only one state,
+- [00:04:55,140 - 00:04:55,700] so how could
+- [00:04:55,700 - 00:04:56,300] anything happen?
+- [00:04:56,300 - 00:04:58,140] But with two states,
+- [00:04:58,140 - 00:04:58,840] heads and tails,
+- [00:04:58,840 - 00:05:01,520] you can have a richer variety of possible
+- [00:05:01,520 - 00:05:02,360] laws of physics.
+- [00:05:02,360 - 00:05:04,080] One law,
+- [00:05:04,080 - 00:05:06,020] let's take the various varieties of
+- [00:05:06,020 - 00:05:07,960] laws of physics we could have,
+- [00:05:08,480 - 00:05:10,280] one law might just say,
+- [00:05:10,280 - 00:05:12,740] you stay the same.
+- [00:05:12,740 - 00:05:15,020] If the state of the system
+- [00:05:15,020 - 00:05:17,300] is heads at one instant of
+- [00:05:17,300 - 00:05:17,420] time,
+- [00:05:17,420 - 00:05:20,000] then the next instant of time it will be heads.
+- [00:05:20,000 - 00:05:22,040] If it starts tails,
+- [00:05:22,040 - 00:05:23,580] it will stay tails.
+- [00:05:24,180 - 00:05:25,620] That's a very boring law,
+- [00:05:25,620 - 00:05:29,180] and let's graph that law by drawing an arrow.
+- [00:05:29,180 - 00:05:30,800] If it starts heads,
+- [00:05:31,600 - 00:05:33,160] then it stays heads.
+- [00:05:33,160 - 00:05:35,830] Let's just represent that by drawing
+- [00:05:35,830 - 00:05:38,500] an arrow from head to head,
+- [00:05:38,600 - 00:05:39,880] and from tail to tail.
+- [00:05:39,880 - 00:05:41,680] The meaning of this arrow,
+- [00:05:41,680 - 00:05:43,620] you start at the tail end of the arrow,
+- [00:05:43,740 - 00:05:45,200] and you follow it,
+- [00:05:45,200 - 00:05:46,240] and you see that it
+- [00:05:46,240 - 00:05:47,280] comes around to the same point.
+- [00:05:48,060 - 00:05:50,230] That stands for the rule that
+- [00:05:50,230 - 00:05:52,400] says that a heads stays a heads,
+- [00:05:52,400 - 00:05:53,800] and in this case,
+- [00:05:53,900 - 00:05:55,000] a tail stays a tail.
+- [00:05:55,000 - 00:05:57,060] So this is a very dull law of nature.
+- [00:05:57,060 - 00:06:00,200] This stays that way for endless amounts
+- [00:06:00,200 - 00:06:00,800] of time,
+- [00:06:00,800 - 00:06:05,480] and this stays that way for endless amounts of time.
+- [00:06:05,480 - 00:06:08,560] Another possible law of nature
+- [00:06:08,560 - 00:06:14,920] would be a slightly more interesting situation.
+- [00:06:14,920 - 00:06:17,280] If you look at it at one instant of time,
+- [00:06:17,300 - 00:06:18,480] the next instant,
+- [00:06:18,480 - 00:06:19,160] it's the opposite.
+- [00:06:19,160 - 00:06:20,720] Heads goes to tails,
+- [00:06:20,720 - 00:06:21,480] goes to heads,
+- [00:06:21,480 - 00:06:22,260] goes to tails.
+- [00:06:22,600 - 00:06:24,620] These are deterministic laws.
+- [00:06:24,620 - 00:06:27,160] Deterministic laws mean that if you
+- [00:06:27,160 - 00:06:29,700] know what is happening at one
+- [00:06:29,700 - 00:06:30,040] instant,
+- [00:06:30,040 - 00:06:32,000] you know forever after.
+- [00:06:32,000 - 00:06:36,120] You know everything about the system infinitely into
+- [00:06:36,120 - 00:06:36,600] the future.
+- [00:06:36,600 - 00:06:38,700] Completely deterministic.
+- [00:06:38,700 - 00:06:40,980] Classical mechanics has that nature to it,
+- [00:06:40,980 - 00:06:41,660] that it is
+- [00:06:41,660 - 00:06:43,060] completely deterministic.
+- [00:06:43,400 - 00:06:44,960] You know the adversals?
+- [00:06:45,200 - 00:06:45,440] No.
+- [00:06:46,080 - 00:06:46,720] No.
+- [00:06:47,300 - 00:06:48,800] The adversals is in a certain sense always reversible,
+- [00:06:48,800 - 00:06:50,100] but we're coming to that.
+- [00:06:50,640 - 00:06:51,200] All right,
+- [00:06:51,200 - 00:06:53,670] so to draw the graph representing heads
+- [00:06:53,670 - 00:06:56,140] goes to tails and tails goes to heads,
+- [00:06:56,640 - 00:06:58,630] we draw an arrow from heads
+- [00:06:58,630 - 00:07:00,620] to tails and from tails to heads.
+- [00:07:00,620 - 00:07:02,660] And we read that as saying
+- [00:07:02,660 - 00:07:03,680] that if you start at heads,
+- [00:07:03,680 - 00:07:04,740] you go to tails.
+- [00:07:04,740 - 00:07:05,840] If you start at tails,
+- [00:07:05,840 - 00:07:06,400] you go to heads.
+- [00:07:07,260 - 00:07:08,900] What is the evolution of a
+- [00:07:08,900 - 00:07:10,540] system under this law of nature?
+- [00:07:10,540 - 00:07:12,120] If you start with heads,
+- [00:07:12,140 - 00:07:12,460] it's heads,
+- [00:07:12,460 - 00:07:12,680] tails,
+- [00:07:12,680 - 00:07:12,960] heads,
+- [00:07:12,960 - 00:07:13,200] tails,
+- [00:07:13,200 - 00:07:13,480] heads,
+- [00:07:13,480 - 00:07:13,780] tails,
+- [00:07:13,780 - 00:07:13,940] heads,
+- [00:07:13,940 - 00:07:14,200] tails,
+- [00:07:14,200 - 00:07:14,860] forever after.
+- [00:07:15,960 - 00:07:19,120] These are two consistent laws of physics
+- [00:07:19,120 - 00:07:22,280] in a world of only two states.
+- [00:07:24,100 - 00:07:25,940] Whether we can think of more laws,
+- [00:07:25,940 - 00:07:26,420] yes,
+- [00:07:26,420 - 00:07:26,800] we can,
+- [00:07:26,800 - 00:07:28,160] but for the moment,
+- [00:07:28,160 - 00:07:29,080] these are two interesting
+- [00:07:29,080 - 00:07:29,360] ones.
+- [00:07:29,800 - 00:07:30,320] Now,
+- [00:07:30,320 - 00:07:32,420] how can we generalize this?
+- [00:07:32,420 - 00:07:33,960] We can generalize this,
+- [00:07:33,960 - 00:07:34,700] first of all,
+- [00:07:34,700 - 00:07:36,760] to systems with more states.
+- [00:07:36,920 - 00:07:38,280] Two states is not very many.
+- [00:07:39,560 - 00:07:40,980] We could have a die.
+- [00:07:41,300 - 00:07:42,620] A die isn't dice.
+- [00:07:43,480 - 00:07:44,840] A die has 16 states.
+- [00:07:44,840 - 00:07:45,180] states,
+- [00:07:45,180 - 00:07:45,620] 1,
+- [00:07:45,620 - 00:07:45,800] 2,
+- [00:07:45,800 - 00:07:45,960] 3,
+- [00:07:45,960 - 00:07:46,120] 4,
+- [00:07:46,120 - 00:07:46,380] 5,
+- [00:07:46,380 - 00:07:46,760] and 6,
+- [00:07:46,760 - 00:07:49,340] and we could represent them as points,
+- [00:07:49,340 - 00:07:50,940] six points.
+- [00:07:54,040 - 00:07:55,940] Now we have a large variety of
+- [00:07:55,940 - 00:07:57,840] different laws of physics that we could have.
+- [00:07:58,680 - 00:07:59,480] For example,
+- [00:07:59,480 - 00:08:00,460] we could simply have,
+- [00:08:00,460 - 00:08:01,640] we could label these 1,
+- [00:08:01,640 - 00:08:02,060] 2,
+- [00:08:02,060 - 00:08:02,300] 3,
+- [00:08:02,300 - 00:08:02,540] 4,
+- [00:08:02,540 - 00:08:02,860] 5,
+- [00:08:02,860 - 00:08:03,300] and 6.
+- [00:08:03,780 - 00:08:05,170] Which one is 1 and which
+- [00:08:05,170 - 00:08:06,560] one is 6 is not very important,
+- [00:08:06,560 - 00:08:08,840] but there are six of them.
+- [00:08:08,840 - 00:08:10,620] We could have a law of
+- [00:08:10,620 - 00:08:12,400] physics which is 1 goes to 2,
+- [00:08:12,400 - 00:08:13,580] 2 goes to 3,
+- [00:08:13,580 - 00:08:14,700] 3 goes to 4,
+- [00:08:15,120 - 00:08:16,180] 4 goes to 5,
+- [00:08:16,180 - 00:08:17,180] 5 goes to 6,
+- [00:08:17,180 - 00:08:18,320] and 6 goes back to 1.
+- [00:08:19,140 - 00:08:20,750] This would be a complicated motion when
+- [00:08:20,750 - 00:08:22,360] thought of in terms of a die.
+- [00:08:23,060 - 00:08:24,600] You start with a 1 up,
+- [00:08:24,600 - 00:08:26,220] and then it goes to the 2 up,
+- [00:08:26,220 - 00:08:26,700] 3 up,
+- [00:08:26,700 - 00:08:27,240] and so forth,
+- [00:08:27,380 - 00:08:29,160] but it's a relatively simple picture
+- [00:08:29,160 - 00:08:30,940] when drawn in this manner here.
+- [00:08:32,200 - 00:08:33,980] You can imagine more complicated
+- [00:08:33,980 - 00:08:35,760] laws of physics with six states.
+- [00:08:36,600 - 00:08:37,000] Well,
+- [00:08:37,000 - 00:08:38,820] whether they're more complicated or not is in the
+- [00:08:38,820 - 00:08:39,460] eye of the beholder,
+- [00:08:39,460 - 00:08:42,340] but first of all we could
+- [00:08:42,340 - 00:08:45,220] have a similar law where instead
+- [00:08:45,220 - 00:08:46,840] of 1 going to 2,
+- [00:08:46,840 - 00:08:48,240] 1 could go to 3,
+- [00:08:48,240 - 00:08:50,780] 3 could go to 2,
+- [00:08:50,780 - 00:08:53,500] 2 could go to 5,
+- [00:08:53,500 - 00:08:55,960] 1,
+- [00:08:55,960 - 00:08:56,460] 2,
+- [00:08:56,460 - 00:08:56,860] 3,
+- [00:08:56,860 - 00:08:57,320] 4,
+- [00:08:59,839 - 00:09:00,740] something like that.
+- [00:09:00,740 - 00:09:03,340] That's really not very different than this.
+- [00:09:03,340 - 00:09:04,340] Each one goes
+- [00:09:04,340 - 00:09:05,400] to a neighboring one,
+- [00:09:05,400 - 00:09:06,500] well not to a neighboring one,
+- [00:09:06,500 - 00:09:07,520] each one goes to a next
+- [00:09:07,520 - 00:09:07,800] one.
+- [00:09:08,820 - 00:09:09,620] And they cycle around,
+- [00:09:09,620 - 00:09:13,600] and one characteristic of such systems is they
+- [00:09:13,600 - 00:09:16,600] will just cycle around forever and ever and ever.
+- [00:09:17,780 - 00:09:18,220] Okay,
+- [00:09:18,220 - 00:09:20,740] now you can have more complicated,
+- [00:09:24,319 - 00:09:25,700] I don't know if they're more complicated,
+- [00:09:25,700 - 00:09:26,480] different laws.
+- [00:09:26,480 - 00:09:28,260] For example,
+- [00:09:28,260 - 00:09:30,260] you could
+- [00:09:30,260 - 00:09:31,960] have a law which goes this way.
+- [00:09:35,420 - 00:09:36,620] If you start at 1,
+- [00:09:36,620 - 00:09:37,300] you go to 2,
+- [00:09:37,300 - 00:09:38,060] if you go to 2,
+- [00:09:38,060 - 00:09:38,800] then you go to 3,
+- [00:09:38,820 - 00:09:39,820] and then you go back to 1.
+- [00:09:39,820 - 00:09:42,560] If you happen to start at 3,
+- [00:09:42,560 - 00:09:42,980] no,
+- [00:09:42,980 - 00:09:43,560] this isn't 3,
+- [00:09:43,560 - 00:09:44,200] this is 5,
+- [00:09:44,400 - 00:09:44,580] right?
+- [00:09:44,580 - 00:09:44,920] 5,
+- [00:09:44,920 - 00:09:46,140] 6,
+- [00:09:46,140 - 00:09:46,620] 6,
+- [00:09:46,620 - 00:09:46,900] 6,
+- [00:09:46,900 - 00:09:47,080] 6,
+- [00:09:47,080 - 00:09:47,800] 1,
+- [00:09:47,800 - 00:09:48,260] 2,
+- [00:09:48,260 - 00:09:48,740] 3,
+- [00:09:48,740 - 00:09:49,680] 4,
+- [00:09:49,680 - 00:09:50,260] 5.
+- [00:09:50,260 - 00:09:52,060] If you start at 3,
+- [00:09:52,060 - 00:09:52,780] you go to 4,
+- [00:09:52,780 - 00:09:53,520] if you start at 4,
+- [00:09:53,580 - 00:09:54,140] you go to 5,
+- [00:09:54,140 - 00:09:55,040] back to 3.
+- [00:09:55,040 - 00:09:56,760] In this case,
+- [00:09:56,760 - 00:09:58,520] well that's somewhat similar to this,
+- [00:09:58,520 - 00:09:59,340] you have
+- [00:09:59,340 - 00:10:00,880] two disconnected cycles,
+- [00:10:00,880 - 00:10:04,100] two more complicated things.
+- [00:10:04,100 - 00:10:04,820] Here's another one.
+- [00:10:04,820 - 00:10:08,240] In fact,
+- [00:10:08,240 - 00:10:08,680] I think it
+- [00:10:08,680 - 00:10:10,740] would take a long time to draw all the possibilities.
+- [00:10:10,740 - 00:10:13,120] 1 goes back to 1,
+- [00:10:13,120 - 00:10:15,120] 2 goes
+- [00:10:15,120 - 00:10:15,640] to 3,
+- [00:10:15,640 - 00:10:17,720] 3 goes to 4,
+- [00:10:17,720 - 00:10:19,920] 4 goes back to 2,
+- [00:10:19,920 - 00:10:24,020] 5 goes to 6,
+- [00:10:24,020 - 00:10:25,280] and 6 goes back to 5.
+- [00:10:26,100 - 00:10:26,660] Right?
+- [00:10:26,660 - 00:10:28,640] They're all acceptable laws of physics.
+- [00:10:28,640 - 00:10:30,680] Wherever you happen to be,
+- [00:10:30,680 - 00:10:32,240] you
+- [00:10:32,240 - 00:10:33,880] know exactly where to go next,
+- [00:10:33,880 - 00:10:35,800] so it's deterministic.
+- [00:10:35,800 - 00:10:37,760] It's deterministic into
+- [00:10:37,760 - 00:10:38,340] the future,
+- [00:10:39,079 - 00:10:40,880] meaning to say wherever you start,
+- [00:10:40,880 - 00:10:43,620] you know where you will be arbitrarily into
+- [00:10:43,620 - 00:10:44,080] the future.
+- [00:10:44,080 - 00:10:45,800] If you start here and
+- [00:10:45,800 - 00:10:47,520] you go a hundred thousand times,
+- [00:10:47,520 - 00:10:48,480] you'll just
+- [00:10:48,480 - 00:10:49,100] wind up,
+- [00:10:49,100 - 00:10:49,520] I don't know,
+- [00:10:49,520 - 00:10:49,780] somewhere,
+- [00:10:49,780 - 00:10:50,180] wherever,
+- [00:10:50,180 - 00:10:50,540] wherever.
+- [00:10:50,540 - 00:10:52,180] If you start here,
+- [00:10:52,180 - 00:10:52,940] you stay there.
+- [00:10:53,460 - 00:10:56,060] So these are completely deterministic into the future,
+- [00:10:56,060 - 00:10:57,160] but they're also
+- [00:10:57,160 - 00:10:59,580] completely deterministic into the past,
+- [00:10:59,580 - 00:11:01,860] which means if you know where you are,
+- [00:11:02,000 - 00:11:03,660] you know where you were before.
+- [00:11:03,660 - 00:11:06,340] If you find yourself over here,
+- [00:11:06,340 - 00:11:08,120] then you know
+- [00:11:08,120 - 00:11:10,280] in the previous cycle,
+- [00:11:10,280 - 00:11:11,440] the previous instance,
+- [00:11:11,440 - 00:11:13,800] that you are over here and so
+- [00:11:13,800 - 00:11:14,060] forth.
+- [00:11:14,060 - 00:11:16,260] So you can trace your motion either
+- [00:11:16,260 - 00:11:18,460] into the future or into the past
+- [00:11:18,460 - 00:11:20,880] with complete confidence about where you will be,
+- [00:11:20,880 - 00:11:22,660] no matter how far you go.
+- [00:11:22,660 - 00:11:25,660] That's
+- [00:11:25,660 - 00:11:27,460] the character in principle,
+- [00:11:27,460 - 00:11:30,520] if not in practice.
+- [00:11:30,520 - 00:11:31,760] In practice things
+- [00:11:31,760 - 00:11:34,060] get jumbled up and you can't see them clearly enough,
+- [00:11:34,060 - 00:11:35,220] and you miss
+- [00:11:35,220 - 00:11:35,680] detail.
+- [00:11:35,680 - 00:11:36,890] But you can see the infinite nature of
+- [00:11:36,890 - 00:11:38,100] theили that occurs in the encourage and the
+- [00:11:38,100 - 00:11:41,150] small detail in a system and get
+- [00:11:41,150 - 00:11:44,200] every single bit of physics absolutely right
+- [00:11:44,200 - 00:11:46,260] for any classical system,
+- [00:11:46,260 - 00:11:49,160] they are in this sense exactly deterministic,
+- [00:11:49,160 - 00:11:50,060] both
+- [00:11:50,060 - 00:11:51,680] into the past and into the future.
+- [00:11:51,680 - 00:11:56,280] Now what kind of laws of physics do we not
+- [00:11:56,280 - 00:11:56,660] allow?
+- [00:11:56,660 - 00:11:59,170] The kind of laws of physics that
+- [00:11:59,170 - 00:12:01,680] we don't allow I can best illustrate,
+- [00:12:01,680 - 00:12:01,940] I
+- [00:12:01,940 - 00:12:02,080] think,
+- [00:12:02,080 - 00:12:04,560] by drawing some possibilities and explaining
+- [00:12:04,560 - 00:12:07,040] to you why they are not
+- [00:12:07,040 - 00:12:07,400] allowed.
+- [00:12:07,400 - 00:12:11,600] Here's a law of physics that
+- [00:12:11,600 - 00:12:15,800] is not allowed by the principles of
+- [00:12:15,800 - 00:12:16,600] classical physics.
+- [00:12:16,600 - 00:12:18,380] Three states,
+- [00:12:18,380 - 00:12:19,800] three states is perfectly alright,
+- [00:12:19,800 - 00:12:20,160] nothing
+- [00:12:20,160 - 00:12:20,760] wrong with that,
+- [00:12:20,760 - 00:12:22,860] but let's draw some arrows.
+- [00:12:22,860 - 00:12:23,660] Two,
+- [00:12:23,660 - 00:12:24,360] three,
+- [00:12:24,360 - 00:12:26,200] two goes to three,
+- [00:12:26,200 - 00:12:26,920] and
+- [00:12:26,920 - 00:12:28,060] three goes back to two.
+- [00:12:28,060 - 00:12:30,680] That would be perfectly alright by itself.
+- [00:12:30,680 - 00:12:31,860] What about
+- [00:12:31,860 - 00:12:32,180] one?
+- [00:12:32,180 - 00:12:32,800] Well,
+- [00:12:32,800 - 00:12:34,420] I could have one goes to one,
+- [00:12:34,420 - 00:12:36,820] but I don't want one to go to one.
+- [00:12:36,820 - 00:12:38,780] I want one to go to two.
+- [00:12:44,280 - 00:12:46,720] That's completely deterministic into the future.
+- [00:12:46,720 - 00:12:48,020] If I start at one,
+- [00:12:48,020 - 00:12:48,840] I go to two,
+- [00:12:48,840 - 00:12:49,140] I
+- [00:12:49,740 - 00:12:50,220] go to two,
+- [00:12:50,220 - 00:12:50,980] I go to three,
+- [00:12:50,980 - 00:12:52,440] I go three back to two,
+- [00:12:52,440 - 00:12:53,440] two back to three.
+- [00:12:53,440 - 00:12:55,200] I always know
+- [00:12:55,200 - 00:12:56,540] where to go in the next step,
+- [00:12:56,540 - 00:12:58,600] I just follow the arrow wherever it happens to
+- [00:12:58,600 - 00:12:58,760] be.
+- [00:12:58,760 - 00:13:00,380] But what does it fail?
+- [00:13:00,380 - 00:13:03,400] It fails to be deterministic into the past.
+- [00:13:03,400 - 00:13:05,960] Supposing I
+- [00:13:06,820 - 00:13:06,900] am at one,
+- [00:13:06,900 - 00:13:08,020] then I'm at two,
+- [00:13:08,020 - 00:13:09,660] then where did I come from?
+- [00:13:09,660 - 00:13:11,700] I could have come from one,
+- [00:13:11,780 - 00:13:13,380] or I could have come from three.
+- [00:13:13,380 - 00:13:14,860] So,
+- [00:13:14,860 - 00:13:17,200] I cannot work my way backward with
+- [00:13:17,200 - 00:13:17,560] uniqueness.
+- [00:13:17,560 - 00:13:20,020] I can work my way forward,
+- [00:13:20,020 - 00:13:21,720] I cannot work my way backward.
+- [00:13:21,720 - 00:13:24,800] This is a law
+- [00:13:24,800 - 00:13:26,820] of physics which is irreversible.
+- [00:13:26,820 - 00:13:28,570] It would not allow me
+- [00:13:28,570 - 00:13:30,320] to run the laws of physics
+- [00:13:30,320 - 00:13:30,800] backward,
+- [00:13:30,800 - 00:13:32,510] it would lead to an ambiguity
+- [00:13:32,510 - 00:13:34,220] every time I were at two.
+- [00:13:34,220 - 00:13:36,420] Another law which is,
+- [00:13:36,420 - 00:13:39,580] not allowed by the principles of classical mechanics,
+- [00:13:39,580 - 00:13:40,920] or principles of
+- [00:13:40,920 - 00:13:41,680] classical physics,
+- [00:13:41,680 - 00:13:43,670] would be basically the same thing
+- [00:13:43,670 - 00:13:45,660] but with the arrows turned in
+- [00:13:45,660 - 00:13:46,520] the opposite direction,
+- [00:13:46,520 - 00:13:49,940] all arrows reversed.
+- [00:13:49,940 - 00:13:54,540] Here I have a problem not going
+- [00:13:54,540 - 00:13:55,320] into the past,
+- [00:13:55,320 - 00:13:57,340] but I have a problem going into the future.
+- [00:13:57,340 - 00:13:59,400] Let's see,
+- [00:13:59,400 - 00:14:00,500] yeah,
+- [00:14:00,500 - 00:14:01,540] supposing
+- [00:14:01,540 - 00:14:02,870] now I find myself at two and
+- [00:14:02,870 - 00:14:04,200] I want to go into the future,
+- [00:14:04,200 - 00:14:06,300] I don't know whether to
+- [00:14:06,420 - 00:14:08,870] go into the future by following this
+- [00:14:08,870 - 00:14:11,320] arrow to one or this arrow to three.
+- [00:14:11,320 - 00:14:12,680] There are two
+- [00:14:12,680 - 00:14:14,800] arrows leading out of two over here.
+- [00:14:14,800 - 00:14:16,580] One of them goes to three,
+- [00:14:16,580 - 00:14:17,900] one of them goes to one.
+- [00:14:18,360 - 00:14:20,400] Nothing tells me which arrow to follow,
+- [00:14:20,400 - 00:14:23,280] so it's not deterministic into the future.
+- [00:14:23,280 - 00:14:23,520] I
+- [00:14:23,520 - 00:14:27,440] might randomly decide to go from two to three,
+- [00:14:27,440 - 00:14:29,560] or randomly decide to go from two to one.
+- [00:14:30,720 - 00:14:33,060] These are rules,
+- [00:14:33,060 - 00:14:36,400] each one of which is deterministic into the future.
+- [00:14:36,420 - 00:14:37,480] It's deterministic in one direction,
+- [00:14:37,480 - 00:14:38,920] but not the other.
+- [00:14:38,920 - 00:14:40,660] These are the sorts of things
+- [00:14:40,660 - 00:14:41,980] which are forbidden by
+- [00:14:41,980 - 00:14:43,300] the principles of classical mechanics.
+- [00:14:43,300 - 00:14:45,680] Why are they forbidden by the principles
+- [00:14:45,680 - 00:14:45,900] of,
+- [00:14:45,900 - 00:14:46,100] yeah?
+- [00:14:46,600 - 00:14:48,820] What if you just erased one of those lines,
+- [00:14:48,820 - 00:14:51,320] one of those with .
+- [00:14:52,460 - 00:14:53,060] Which one?
+- [00:14:53,660 - 00:14:54,060] Yeah,
+- [00:14:54,060 - 00:14:56,020] just one of those two lines on the loop there.
+- [00:14:56,940 - 00:14:57,880] That wouldn't come,
+- [00:14:57,880 - 00:14:59,120] I wouldn't know where to go from three.
+- [00:14:59,120 - 00:15:03,780] You get stuck at three.
+- [00:15:04,840 - 00:15:05,240] Yeah.
+- [00:15:05,240 - 00:15:05,800] Yeah,
+- [00:15:05,800 - 00:15:06,300] no good.
+- [00:15:08,260 - 00:15:09,340] Can you ever have,
+- [00:15:09,340 - 00:15:10,280] say,
+- [00:15:10,280 - 00:15:11,660] a dangling one over here?
+- [00:15:12,140 - 00:15:12,460] Well,
+- [00:15:12,460 - 00:15:13,440] you can't have a dangling one.
+- [00:15:13,440 - 00:15:14,420] You've got no way to go next.
+- [00:15:14,420 - 00:15:15,580] No,
+- [00:15:15,580 - 00:15:15,820] you could,
+- [00:15:15,820 - 00:15:16,060] let's
+- [00:15:16,060 - 00:15:16,140] see,
+- [00:15:16,140 - 00:15:17,620] we could try to put something like that in.
+- [00:15:18,460 - 00:15:18,780] Yeah.
+- [00:15:20,540 - 00:15:20,860] Okay,
+- [00:15:20,860 - 00:15:22,480] so that would say we go from one to two,
+- [00:15:22,480 - 00:15:23,660] from two to three,
+- [00:15:23,660 - 00:15:24,720] to three,
+- [00:15:24,720 - 00:15:25,200] to three,
+- [00:15:25,220 - 00:15:25,580] to three.
+- [00:15:25,580 - 00:15:26,260] Now,
+- [00:15:26,260 - 00:15:28,040] the problem would be in going backward,
+- [00:15:28,040 - 00:15:28,500] I think.
+- [00:15:29,160 - 00:15:29,480] Right.
+- [00:15:29,580 - 00:15:29,680] Yeah.
+- [00:15:29,760 - 00:15:30,580] You don't know where you come from.
+- [00:15:30,720 - 00:15:30,760] Yeah.
+- [00:15:30,860 - 00:15:31,440] Three or two.
+- [00:15:31,460 - 00:15:31,600] Yeah,
+- [00:15:31,600 - 00:15:31,960] right.
+- [00:15:31,960 - 00:15:32,000] Right.
+- [00:15:32,000 - 00:15:34,140] So one way or the other,
+- [00:15:34,140 - 00:15:36,120] you get stuck with these rules.
+- [00:15:36,120 - 00:15:37,580] All right,
+- [00:15:37,580 - 00:15:38,320] how do we spot
+- [00:15:38,320 - 00:15:40,280] what's allowable and what's not allowable?
+- [00:15:40,280 - 00:15:40,460] Well,
+- [00:15:40,460 - 00:15:41,060] it's very simple.
+- [00:15:41,060 - 00:15:43,980] At every configuration,
+- [00:15:44,840 - 00:15:45,320] two,
+- [00:15:45,320 - 00:15:45,700] three,
+- [00:15:45,700 - 00:15:48,240] we should have one in and one out.
+- [00:15:48,240 - 00:15:50,720] We should have a unique one in,
+- [00:15:50,720 - 00:15:51,240] a unique
+- [00:15:51,240 - 00:15:52,020] arrow in,
+- [00:15:52,020 - 00:15:53,560] and a unique arrow out.
+- [00:15:53,560 - 00:15:56,520] One arrow in to tell us where we came from,
+- [00:15:56,520 - 00:15:57,380] and one
+- [00:15:57,380 - 00:15:59,200] arrow out to tell us where we're going.
+- [00:15:59,200 - 00:16:01,940] That's the character of class.
+- [00:16:01,940 - 00:16:02,720] Classical physics.
+- [00:16:02,720 - 00:16:04,940] Uniqueness into the future,
+- [00:16:04,940 - 00:16:06,180] uniqueness into the past,
+- [00:16:06,180 - 00:16:06,880] when represented
+- [00:16:06,880 - 00:16:10,840] in terms of this very simple and analog world,
+- [00:16:10,840 - 00:16:15,040] analog digital world of a finite number of
+- [00:16:15,040 - 00:16:15,280] states,
+- [00:16:15,280 - 00:16:19,540] then the rules of physics as we
+- [00:16:19,540 - 00:16:23,800] know them would say every configuration has one
+- [00:16:23,800 - 00:16:25,620] in arrow and one out arrow.
+- [00:16:25,620 - 00:16:26,960] Now,
+- [00:16:26,960 - 00:16:28,200] with this rule,
+- [00:16:28,200 - 00:16:29,000] of course,
+- [00:16:29,000 - 00:16:31,840] life is very boring.
+- [00:16:31,840 - 00:16:31,920] I mean,
+- [00:16:31,920 - 00:16:33,450] it's boring because if you only
+- [00:16:33,450 - 00:16:34,980] have a finite number of states,
+- [00:16:34,980 - 00:16:36,400] all that can happen to you
+- [00:16:36,400 - 00:16:39,440] is you cycle around endlessly among those number of states,
+- [00:16:39,440 - 00:16:41,080] always in the same order.
+- [00:16:42,740 - 00:16:46,820] You can have slightly more interesting situations.
+- [00:16:46,820 - 00:16:50,380] There's no reason why the number of states
+- [00:16:50,380 - 00:16:51,260] has to be finite.
+- [00:16:51,260 - 00:16:53,970] You could have a situation where
+- [00:16:53,970 - 00:16:56,680] there's an infinite number of possible
+- [00:16:56,680 - 00:16:57,260] states.
+- [00:16:59,620 - 00:17:01,900] A state corresponding to every integer.
+- [00:17:01,920 - 00:17:02,080] A state corresponding to every integer,
+- [00:17:02,080 - 00:17:02,940] positive and negative.
+- [00:17:02,940 - 00:17:07,920] A particle on a position on
+- [00:17:07,920 - 00:17:11,000] a line where the position could be any integer value.
+- [00:17:11,000 - 00:17:14,079] And then a simple law of physics would
+- [00:17:14,079 - 00:17:15,800] be you go from one to the next.
+- [00:17:15,800 - 00:17:16,579] Wherever you are,
+- [00:17:16,579 - 00:17:17,540] you go to the next one.
+- [00:17:17,540 - 00:17:22,079] Each point has
+- [00:17:22,079 - 00:17:23,060] one in and one out.
+- [00:17:23,060 - 00:17:24,119] I can't draw them endlessly.
+- [00:17:24,119 - 00:17:25,140] It'll take forever.
+- [00:17:25,140 - 00:17:27,800] But each mark,
+- [00:17:27,800 - 00:17:29,180] one in
+- [00:17:29,180 - 00:17:29,920] and one out.
+- [00:17:31,920 - 00:17:33,420] It's a rather boring law of nature.
+- [00:17:33,420 - 00:17:34,860] You just hop from one to
+- [00:17:34,860 - 00:17:36,300] the next to the next to the
+- [00:17:36,300 - 00:17:37,940] next to the next forever and ever and ever.
+- [00:17:37,940 - 00:17:40,960] But at least you wouldn't be cycling around
+- [00:17:40,960 - 00:17:41,500] endlessly.
+- [00:17:42,940 - 00:17:43,380] Again,
+- [00:17:43,380 - 00:17:48,060] we can add some more states onto this.
+- [00:17:48,060 - 00:17:50,320] We could add this on.
+- [00:17:50,320 - 00:17:52,680] If we start on the line,
+- [00:17:53,560 - 00:17:55,230] we simply move off and keep
+- [00:17:55,230 - 00:17:56,900] going forever and ever and ever.
+- [00:17:56,900 - 00:17:59,360] But if we start over here,
+- [00:18:00,020 - 00:18:01,240] we cycle around.
+- [00:18:02,400 - 00:18:05,000] So we could have mixtures of both kinds of things.
+- [00:18:05,000 - 00:18:08,200] Some states we cycle around in.
+- [00:18:08,200 - 00:18:08,860] Other
+- [00:18:08,860 - 00:18:10,920] states we move off to infinity.
+- [00:18:11,760 - 00:18:12,360] Now,
+- [00:18:12,360 - 00:18:15,660] notice that some of these laws of nature
+- [00:18:15,660 - 00:18:18,960] — the phase-space breaks up into different pieces,
+- [00:18:19,120 - 00:18:20,720] which are connected among themselves,
+- [00:18:20,720 - 00:18:22,440] but not connected to each other.
+- [00:18:22,440 - 00:18:25,220] For example,
+- [00:18:25,220 - 00:18:25,860] still,
+- [00:18:26,380 - 00:18:27,380] even with just two states,
+- [00:18:27,380 - 00:18:30,040] we had two possibilities —
+- [00:18:30,040 - 00:18:34,180] one like this and one like this.
+- [00:18:34,180 - 00:18:37,170] In this case where it
+- [00:18:37,170 - 00:18:40,160] breaks up into more than one
+- [00:18:40,160 - 00:18:40,900] binary,
+- [00:18:40,900 - 00:18:40,900] I could have very different possibilities.
+- [00:18:40,900 - 00:18:40,900] In the Fase-Space- прост microbial law,
+- [00:18:40,900 - 00:18:40,900] we can say there's still a modern imagination
+- [00:18:40,900 - 00:18:42,020] more than one piece,
+- [00:18:42,020 - 00:18:44,640] we have something called the conservation law.
+- [00:18:45,060 - 00:18:47,880] The conservation law is simply
+- [00:18:47,880 - 00:18:50,700] a memory of where we started.
+- [00:18:51,320 - 00:18:54,060] The conservation law means that something
+- [00:18:54,060 - 00:18:56,800] is kept intact for all time.
+- [00:18:56,920 - 00:18:59,210] Some piece of knowledge is kept
+- [00:18:59,210 - 00:19:01,500] intact for all time and doesn't change.
+- [00:19:01,820 - 00:19:03,040] In this case,
+- [00:19:03,040 - 00:19:04,220] we could label this,
+- [00:19:04,220 - 00:19:06,940] we could label a configuration over here with a plus
+- [00:19:06,940 - 00:19:10,080] one and a configuration over here with a minus one,
+- [00:19:10,080 - 00:19:12,220] and then we could call,
+- [00:19:12,220 - 00:19:13,960] we could invent
+- [00:19:13,960 - 00:19:14,580] a variable,
+- [00:19:14,580 - 00:19:18,260] plus one over here and minus one over here.
+- [00:19:18,400 - 00:19:19,400] It never changes.
+- [00:19:19,560 - 00:19:20,640] If it's plus one,
+- [00:19:20,640 - 00:19:21,540] it stays plus one.
+- [00:19:21,600 - 00:19:22,340] If it's minus one,
+- [00:19:22,340 - 00:19:23,380] it stays minus one.
+- [00:19:23,780 - 00:19:25,200] That's a conservation law,
+- [00:19:25,200 - 00:19:27,380] something which doesn't change with time.
+- [00:19:27,760 - 00:19:28,800] On the other hand,
+- [00:19:28,800 - 00:19:30,230] if we hop from plus one to
+- [00:19:30,230 - 00:19:31,660] minus one to plus one to minus one,
+- [00:19:31,660 - 00:19:32,000] we
+- [00:19:32,000 - 00:19:33,400] don't have a conservation law.
+- [00:19:34,460 - 00:19:36,920] Conservation laws are always...
+- [00:19:36,920 - 00:19:39,430] They're always associated with these kind
+- [00:19:39,430 - 00:19:41,940] of closed families of different trajectories
+- [00:19:41,940 - 00:19:44,040] in the phase space which don't mix with each other,
+- [00:19:44,040 - 00:19:49,360] which remember something about the
+- [00:19:49,360 - 00:19:51,820] system which might otherwise get mixed
+- [00:19:51,820 - 00:19:54,280] up if everything got all mixed together.
+- [00:19:54,880 - 00:19:58,780] So there's all kinds of possibilities
+- [00:19:58,780 - 00:20:02,680] that are inherent in these deterministic laws,
+- [00:20:03,140 - 00:20:06,840] but always the condition is one in line.
+- [00:20:06,840 - 00:20:08,800] One in line and one outline for every point.
+- [00:20:10,460 - 00:20:13,120] That can also be called information conservation.
+- [00:20:14,080 - 00:20:17,880] It's information conservation in exactly the sense
+- [00:20:17,880 - 00:20:21,680] that you never lose memory of where
+- [00:20:21,680 - 00:20:22,300] you started,
+- [00:20:22,300 - 00:20:25,020] either into the past or into the future.
+- [00:20:25,480 - 00:20:27,680] If you know where you are at any instant,
+- [00:20:27,680 - 00:20:29,660] you know where you came from and you know
+- [00:20:29,660 - 00:20:30,200] where you'll be,
+- [00:20:30,200 - 00:20:34,080] information about where you are is conserved,
+- [00:20:34,080 - 00:20:35,700] never changes into the past
+- [00:20:35,700 - 00:20:36,280] and the future.
+- [00:20:36,840 - 00:20:39,340] Whereas if you have one of these bad laws,
+- [00:20:39,340 - 00:20:46,000] laws which are forbidden by the rules of classical
+- [00:20:46,000 - 00:20:46,520] mechanics,
+- [00:20:46,520 - 00:20:47,860] then you do lose information.
+- [00:20:48,580 - 00:20:49,460] For example,
+- [00:20:49,460 - 00:20:51,800] if you find yourself over here,
+- [00:20:51,800 - 00:20:55,000] you don't know whether you came from here
+- [00:20:55,460 - 00:20:56,220] or from...
+- [00:20:56,220 - 00:20:56,400] Well,
+- [00:20:56,400 - 00:20:56,560] no,
+- [00:20:56,560 - 00:20:57,300] that's not quite right.
+- [00:20:57,440 - 00:20:58,400] If you find yourself over here,
+- [00:20:58,400 - 00:20:59,840] you don't know whether you
+- [00:20:59,840 - 00:21:01,280] came from here or over here,
+- [00:21:01,400 - 00:21:02,600] so you lose information.
+- [00:21:04,580 - 00:21:05,700] Information conservation is perhaps
+- [00:21:05,700 - 00:21:06,820] the most important thing.
+- [00:21:06,840 - 00:21:09,620] It's the most fundamental law of basic
+- [00:21:09,620 - 00:21:12,400] classical physics that you don't lose information about.
+- [00:21:12,520 - 00:21:12,600] Now,
+- [00:21:12,600 - 00:21:13,760] why is that so?
+- [00:21:16,420 - 00:21:18,140] It's not written into the laws of
+- [00:21:18,140 - 00:21:19,860] physics why they are what they are.
+- [00:21:20,560 - 00:21:23,140] Maybe someday we'll understand hyper laws of
+- [00:21:23,140 - 00:21:25,720] physics or meta laws of physics or deeper
+- [00:21:25,720 - 00:21:27,370] laws of physics which will tell us why
+- [00:21:27,370 - 00:21:29,020] the laws of physics are what they are.
+- [00:21:29,480 - 00:21:30,480] At the moment,
+- [00:21:30,480 - 00:21:32,610] it's more or less an experimental fact
+- [00:21:32,610 - 00:21:34,740] that all the known laws of physics fit
+- [00:21:34,740 - 00:21:36,740] into this class of information.
+- [00:21:36,740 - 00:21:37,430] The laws of physics are
+- [00:21:37,430 - 00:21:38,120] the laws of information conserving laws,
+- [00:21:38,120 - 00:21:40,240] even those which are quantum
+- [00:21:40,240 - 00:21:40,640] mechanical.
+- [00:21:42,180 - 00:21:44,480] But for our subject this quarter,
+- [00:21:44,480 - 00:21:46,720] we're only interested in classical physics.
+- [00:21:47,440 - 00:21:48,200] All right,
+- [00:21:48,200 - 00:21:50,480] so that's the basic setup if
+- [00:21:50,480 - 00:21:52,760] we were interested only in this stroboscopic
+- [00:21:52,760 - 00:21:54,760] world of discrete time intervals.
+- [00:21:57,620 - 00:21:58,900] The real world,
+- [00:21:58,900 - 00:21:59,360] of course,
+- [00:21:59,360 - 00:22:02,460] is more continuous than that.
+- [00:22:04,980 - 00:22:05,660] Supposing...
+- [00:22:05,660 - 00:22:06,720] I'm sorry.
+- [00:22:08,440 - 00:22:09,000] Okay,
+- [00:22:09,000 - 00:22:11,460] so let's make the law something like this.
+- [00:22:12,740 - 00:22:16,320] If the last two states were heads,
+- [00:22:16,320 - 00:22:16,620] heads,
+- [00:22:16,620 - 00:22:20,440] then it stays heads.
+- [00:22:22,340 - 00:22:24,660] If the last two states were heads,
+- [00:22:24,660 - 00:22:25,020] tails,
+- [00:22:25,020 - 00:22:27,280] then it goes to heads.
+- [00:22:28,320 - 00:22:30,020] If the last two were heads,
+- [00:22:30,020 - 00:22:30,520] tails,
+- [00:22:30,520 - 00:22:30,980] heads,
+- [00:22:30,980 - 00:22:32,820] then it goes to tails.
+- [00:22:33,100 - 00:22:34,920] And if the last two were tails,
+- [00:22:34,920 - 00:22:35,280] tails,
+- [00:22:35,280 - 00:22:36,640] then it goes to tails.
+- [00:22:36,720 - 00:22:41,320] I think that's a possible law.
+- [00:22:41,320 - 00:22:44,880] Then you would say,
+- [00:22:44,880 - 00:22:47,340] I can't tell from the fact that it's heads
+- [00:22:47,340 - 00:22:48,480] where it goes next.
+- [00:22:48,480 - 00:22:49,380] And indeed,
+- [00:22:49,380 - 00:22:50,060] I can't.
+- [00:22:50,060 - 00:22:51,480] But that would just be
+- [00:22:51,480 - 00:22:52,900] another way of saying that a
+- [00:22:52,900 - 00:22:55,420] specification of a heads by itself is
+- [00:22:55,420 - 00:22:57,940] not what you would call a state.
+- [00:22:57,940 - 00:22:59,900] What you would call a state
+- [00:22:59,900 - 00:23:03,800] would be the specification of the previous last two entries,
+- [00:23:03,800 - 00:23:07,040] because you need two entries to tell
+- [00:23:07,040 - 00:23:08,040] you what happens next.
+- [00:23:08,040 - 00:23:09,460] Now,
+- [00:23:09,460 - 00:23:12,060] that raises the question that's very,
+- [00:23:12,060 - 00:23:13,040] very important in classical
+- [00:23:13,040 - 00:23:13,560] mechanics.
+- [00:23:13,560 - 00:23:15,930] How much and what exactly do you
+- [00:23:15,930 - 00:23:18,300] need to know to say what happens next?
+- [00:23:18,300 - 00:23:20,380] If the phase
+- [00:23:20,380 - 00:23:22,920] space is the space of things,
+- [00:23:22,920 - 00:23:25,740] space of possibilities,
+- [00:23:25,740 - 00:23:29,580] but always in such a way that
+- [00:23:29,580 - 00:23:29,880] they are not the same,
+- [00:23:29,880 - 00:23:29,880] then you would say that it's
+- [00:23:29,880 - 00:23:29,880] not what you would call a state.
+- [00:23:29,900 - 00:23:31,420] If you can't tell what happens next,
+- [00:23:31,420 - 00:23:33,600] what is it that you do have to know next?
+- [00:23:33,600 - 00:23:35,160] So that brings us
+- [00:23:35,160 - 00:23:36,580] to continuous physics.
+- [00:23:36,580 - 00:23:41,080] Let's take the motion of a particle.
+- [00:23:41,080 - 00:23:45,780] Is it enough to know where a particle
+- [00:23:45,780 - 00:23:47,600] is to say what happens next?
+- [00:23:47,600 - 00:23:51,050] Let's hypothesize that the generalization
+- [00:23:51,050 - 00:23:54,500] to continuous time is that
+- [00:23:54,500 - 00:23:56,210] we need to know the exact
+- [00:23:56,210 - 00:23:57,920] location of a particle along a line.
+- [00:23:57,920 - 00:23:59,200] We've run out of ink,
+- [00:23:59,200 - 00:23:59,740] I'm afraid.
+- [00:24:02,399 - 00:24:02,840] Now,
+- [00:24:02,840 - 00:24:03,340] there it is.
+- [00:24:03,340 - 00:24:05,280] All right,
+- [00:24:05,280 - 00:24:06,670] so let's imagine the motion
+- [00:24:06,670 - 00:24:08,060] of a particle along a line.
+- [00:24:08,060 - 00:24:10,120] Then you might
+- [00:24:10,120 - 00:24:11,800] think that the analog of a state
+- [00:24:11,800 - 00:24:13,480] is just the location of a particle.
+- [00:24:13,480 - 00:24:14,080] Where is it?
+- [00:24:14,080 - 00:24:15,040] But is it
+- [00:24:15,040 - 00:24:17,310] enough to know where a particle is
+- [00:24:17,310 - 00:24:19,580] in order to say what happens next?
+- [00:24:19,580 - 00:24:21,040] No.
+- [00:24:21,040 - 00:24:21,840] What else do you need
+- [00:24:21,840 - 00:24:22,080] to know?
+- [00:24:22,080 - 00:24:24,500] It's velocity.
+- [00:24:24,500 - 00:24:28,160] In order to know where a particle will be next,
+- [00:24:28,160 - 00:24:29,360] you need to know not only
+- [00:24:29,360 - 00:24:29,880] where it is,
+- [00:24:29,880 - 00:24:29,880] but also where it's going to be.
+- [00:24:29,880 - 00:24:29,880] So you need to know where it's going to be.
+- [00:24:29,880 - 00:24:29,880] So you
+- [00:24:29,880 - 00:24:29,940] need to know where it is,
+- [00:24:29,940 - 00:24:31,940] but how fast it's moving.
+- [00:24:31,940 - 00:24:34,780] You need to know its velocity.
+- [00:24:34,780 - 00:24:36,600] So that means the
+- [00:24:36,600 - 00:24:37,000] state,
+- [00:24:37,000 - 00:24:38,740] in the same sense that I used it,
+- [00:24:38,740 - 00:24:40,110] that which you need to know
+- [00:24:40,110 - 00:24:41,480] in order to know what happens
+- [00:24:41,480 - 00:24:43,560] next does not just consist
+- [00:24:43,560 - 00:24:45,640] of the location of a particle,
+- [00:24:45,640 - 00:24:48,200] but you can say it two ways.
+- [00:24:48,200 - 00:24:49,260] You need
+- [00:24:49,260 - 00:24:51,120] to know not just the location of the particle,
+- [00:24:51,120 - 00:24:53,360] but you need to know also the previous location,
+- [00:24:54,100 - 00:24:55,120] or better yet,
+- [00:24:55,120 - 00:24:58,500] what is equivalent to knowing the previous location,
+- [00:24:58,500 - 00:24:59,780] the velocity.
+- [00:25:00,980 - 00:25:02,180] The velocity.
+- [00:25:02,180 - 00:25:04,940] That tells you that the phase space,
+- [00:25:04,940 - 00:25:07,760] the space of states,
+- [00:25:07,760 - 00:25:08,660] the space of
+- [00:25:08,660 - 00:25:10,560] configurations is two-dimensional,
+- [00:25:10,560 - 00:25:11,660] not one-dimensional.
+- [00:25:11,660 - 00:25:13,820] It's not just a line.
+- [00:25:15,140 - 00:25:19,200] It's a line that represents the position of the particle,
+- [00:25:19,200 - 00:25:21,860] and a second line which represents
+- [00:25:21,860 - 00:25:22,680] its velocity,
+- [00:25:22,680 - 00:25:25,120] either to the left or to the right.
+- [00:25:25,120 - 00:25:28,080] Positive velocity means moving to the right.
+- [00:25:28,440 - 00:25:29,860] Negative velocity means moving to the right.
+- [00:25:29,860 - 00:25:29,860] Negative velocity means moving to the right.
+- [00:25:29,880 - 00:25:30,820] means moving to the left.
+- [00:25:30,820 - 00:25:33,040] Supposing you're over here,
+- [00:25:33,040 - 00:25:36,140] where do you move next?
+- [00:25:39,720 - 00:25:40,940] You stay in the same place.
+- [00:25:40,940 - 00:25:41,560] Why?
+- [00:25:41,560 - 00:25:44,540] You're at the origin and you have no velocity.
+- [00:25:44,540 - 00:25:45,940] What
+- [00:25:45,940 - 00:25:46,540] if you're over here,
+- [00:25:46,540 - 00:25:47,240] so we could just,
+- [00:25:47,240 - 00:25:48,960] we could draw a little loop here to say that
+- [00:25:48,960 - 00:25:50,180] you come back to the same place.
+- [00:25:50,180 - 00:25:51,740] What if you're over here?
+- [00:25:51,740 - 00:25:55,860] You stay the same place because
+- [00:25:55,860 - 00:25:57,460] you're moving with zero velocity.
+- [00:25:57,460 - 00:25:59,140] Vertical axis is velocity,
+- [00:25:59,140 - 00:26:00,180] so you come back to the
+- [00:26:00,180 - 00:26:00,700] same place.
+- [00:26:00,700 - 00:26:03,380] What if you're over here?
+- [00:26:03,380 - 00:26:07,560] Where are you one second later?
+- [00:26:07,560 - 00:26:08,920] Let's chop time
+- [00:26:08,920 - 00:26:10,320] up into one second intervals.
+- [00:26:10,320 - 00:26:11,740] Where are you next?
+- [00:26:13,140 - 00:26:14,060] Somewhere to the right.
+- [00:26:14,160 - 00:26:15,320] Somewhere to the right,
+- [00:26:15,320 - 00:26:15,460] huh?
+- [00:26:15,460 - 00:26:20,160] What if you're over here?
+- [00:26:24,220 - 00:26:24,700] No,
+- [00:26:24,700 - 00:26:25,420] what if you're over here?
+- [00:26:28,840 - 00:26:30,000] Move twice as far,
+- [00:26:30,000 - 00:26:31,820] or roughly twice as far to the right.
+- [00:26:31,820 - 00:26:35,360] What if you're down here?
+- [00:26:35,360 - 00:26:37,600] You
+- [00:26:37,600 - 00:26:38,200] move to the left.
+- [00:26:38,200 - 00:26:41,970] So we could fill up this space
+- [00:26:41,970 - 00:26:45,740] here with little tiny arrows to show
+- [00:26:45,740 - 00:26:46,720] where you move next,
+- [00:26:46,720 - 00:26:48,040] but notice,
+- [00:26:48,040 - 00:26:49,500] to know where you move next,
+- [00:26:49,500 - 00:26:51,500] you have to know not only where
+- [00:26:51,500 - 00:26:53,500] you are in the sense of what x is,
+- [00:26:53,500 - 00:26:55,840] but you also have to know the vertical axis.
+- [00:26:55,840 - 00:26:55,840] So you're
+- [00:26:55,840 - 00:26:56,080] stress gods.
+- [00:26:56,080 - 00:26:56,260] The vertical axis is the vertical component,
+- [00:26:56,260 - 00:26:57,980] namely what the velocity is.
+- [00:26:57,980 - 00:26:58,680] So
+- [00:26:58,680 - 00:26:59,720] that means the analog,
+- [00:26:59,720 - 00:27:03,560] the analog of a point in the phase
+- [00:27:03,560 - 00:27:07,400] space is a point in a space not
+- [00:27:07,400 - 00:27:08,340] only of positions,
+- [00:27:08,340 - 00:27:09,920] but also velocities.
+- [00:27:09,920 - 00:27:11,400] So,
+- [00:27:11,400 - 00:27:15,280] if there's a conceptual issue to that,
+- [00:27:15,280 - 00:27:15,740] I understand,
+- [00:27:16,000 - 00:27:16,360] that is,
+- [00:27:16,360 - 00:27:18,340] you would think that if you were
+- [00:27:18,340 - 00:27:20,320] able to discretize time emphatically it would
+- [00:27:20,320 - 00:27:20,480] not...
+- [00:27:20,480 - 00:27:20,800] Yes?
+- [00:27:20,880 - 00:27:22,060] The two should be the same,
+- [00:27:22,060 - 00:27:23,400] and yet...
+- [00:27:23,400 - 00:27:23,700] Why?
+- [00:27:24,120 - 00:27:24,520] Why?
+- [00:27:24,520 - 00:27:26,020] A velocity that came in,
+- [00:27:26,020 - 00:27:27,870] which is readily apparent where
+- [00:27:27,870 - 00:27:29,720] that would take place if we
+- [00:27:29,720 - 00:27:33,240] had these infinitely small
+- [00:27:33,240 - 00:27:36,760] discrete time representation of that.
+- [00:27:36,880 - 00:27:36,920] No,
+- [00:27:36,920 - 00:27:38,980] it means exactly what the gentleman asked me before.
+- [00:27:39,280 - 00:27:41,040] What if you had a law of nature which
+- [00:27:41,040 - 00:27:42,800] tells you in order to know where to move next,
+- [00:27:42,800 - 00:27:43,060] you
+- [00:27:43,060 - 00:27:44,920] had to know your previous two entries?
+- [00:27:46,439 - 00:27:48,160] Now one way of saying it is,
+- [00:27:48,160 - 00:27:48,640] all right,
+- [00:27:48,640 - 00:27:50,880] in that case I need to know the previous two
+- [00:27:50,880 - 00:27:51,970] entries and it just doesn't
+- [00:27:51,970 - 00:27:53,060] fall into this class of things.
+- [00:27:53,060 - 00:27:56,820] Or you could say that the space of configurations
+- [00:27:56,820 - 00:28:00,580] doesn't just consist of a heads or a tails,
+- [00:28:00,800 - 00:28:03,260] but it consists of a pair of entries,
+- [00:28:03,260 - 00:28:03,740] a pair.
+- [00:28:04,040 - 00:28:05,190] So we can model that
+- [00:28:05,190 - 00:28:06,340] with every time the same one.
+- [00:28:06,340 - 00:28:06,540] That's right.
+- [00:28:06,680 - 00:28:07,900] We model that.
+- [00:28:08,080 - 00:28:08,820] We need the last two.
+- [00:28:08,880 - 00:28:09,180] That's right.
+- [00:28:09,240 - 00:28:10,180] We need two axes instead.
+- [00:28:10,320 - 00:28:10,620] That's right.
+- [00:28:10,700 - 00:28:12,870] We need an axis for the
+- [00:28:12,870 - 00:28:15,040] present configuration and the past one.
+- [00:28:15,760 - 00:28:16,240] Yeah.
+- [00:28:17,080 - 00:28:18,100] That's exactly right.
+- [00:28:20,960 - 00:28:22,340] Also in classical physics,
+- [00:28:22,340 - 00:28:23,040] you can't just say,
+- [00:28:23,040 - 00:28:23,040] well,
+- [00:28:23,040 - 00:28:23,040] I'm going to do this,
+- [00:28:23,040 - 00:28:23,040] and then
+- [00:28:23,060 - 00:28:24,380] you have to really know your state?
+- [00:28:24,880 - 00:28:25,480] Well,
+- [00:28:25,480 - 00:28:26,460] of course not,
+- [00:28:26,460 - 00:28:30,100] because in classical physics,
+- [00:28:30,100 - 00:28:31,760] the position of a particle and so
+- [00:28:31,760 - 00:28:33,020] forth is a real number.
+- [00:28:33,420 - 00:28:35,740] A real number is something
+- [00:28:35,740 - 00:28:38,060] that you can never determine exactly,
+- [00:28:38,060 - 00:28:42,660] and so there's always imprecision,
+- [00:28:42,780 - 00:28:46,430] and that imprecision always represents a degree
+- [00:28:46,430 - 00:28:50,080] of uncertainty in where you will be
+- [00:28:50,080 - 00:28:50,460] next.
+- [00:28:50,460 - 00:28:51,620] Now,
+- [00:28:51,620 - 00:28:54,500] it gets worse and worse in general.
+- [00:28:54,720 - 00:28:57,120] It's likely to get worse and worse as
+- [00:28:57,120 - 00:28:59,520] you try to take larger and larger time intervals.
+- [00:29:00,200 - 00:29:03,950] A given degree of imprecision in what you
+- [00:29:03,950 - 00:29:07,700] actually know can get magnified and get magnified
+- [00:29:07,700 - 00:29:10,440] into worse and worse imprecision as time goes on.
+- [00:29:10,920 - 00:29:13,180] So in practice,
+- [00:29:13,180 - 00:29:14,900] in practice,
+- [00:29:14,900 - 00:29:17,010] classical systems don't really have
+- [00:29:17,010 - 00:29:19,120] the property that you can
+- [00:29:19,120 - 00:29:20,160] predict endlessly.
+- [00:29:20,160 - 00:29:21,200] They don't predict endlessly where they're going
+- [00:29:21,200 - 00:29:22,240] to be and exactly what they're going
+- [00:29:22,240 - 00:29:22,580] to do,
+- [00:29:22,580 - 00:29:25,200] but you can always say,
+- [00:29:25,200 - 00:29:26,560] given a time interval,
+- [00:29:26,560 - 00:29:29,600] I want to be able to predict exactly
+- [00:29:29,940 - 00:29:31,720] for the next 30 seconds where
+- [00:29:31,720 - 00:29:33,500] every molecule in this room will be.
+- [00:29:34,000 - 00:29:35,720] Let's forget quantum mechanics now.
+- [00:29:36,320 - 00:29:38,730] I want to be able to
+- [00:29:38,730 - 00:29:41,140] predict exactly where every molecule will be.
+- [00:29:41,420 - 00:29:44,520] Then there's a certain degree of precision
+- [00:29:44,520 - 00:29:47,620] in the present information at exactly one
+- [00:29:47,620 - 00:29:48,440] instant of time,
+- [00:29:48,440 - 00:29:49,980] which will permit me.
+- [00:29:49,980 - 00:29:52,220] It will not permit me to extrapolate for 30 seconds.
+- [00:29:53,440 - 00:29:56,800] It will not permit me to extrapolate for 40 seconds.
+- [00:29:56,920 - 00:29:58,700] If I try to extrapolate for 40 seconds,
+- [00:29:58,700 - 00:30:00,860] I will find the errors get magnified out of
+- [00:30:00,860 - 00:30:01,180] control.
+- [00:30:01,880 - 00:30:04,420] If I want to predict correctly for 40 seconds,
+- [00:30:04,420 - 00:30:07,280] I will have to do even better in my initial
+- [00:30:07,280 - 00:30:07,920] conditions,
+- [00:30:07,920 - 00:30:09,730] in my knowledge of exactly what
+- [00:30:09,730 - 00:30:11,540] the state of the system is.
+- [00:30:12,160 - 00:30:13,540] So in practice,
+- [00:30:13,540 - 00:30:17,520] this idea of determinism is defective.
+- [00:30:17,600 - 00:30:18,420] It's defective.
+- [00:30:18,420 - 00:30:19,700] It's defective because in order to
+- [00:30:19,700 - 00:30:20,980] determine for a given length of time,
+- [00:30:20,980 - 00:30:21,700] you have to have
+- [00:30:21,700 - 00:30:22,120] precision,
+- [00:30:22,120 - 00:30:23,520] which is so good that it's way,
+- [00:30:23,520 - 00:30:25,120] way beyond anything anybody can do.
+- [00:30:25,840 - 00:30:26,900] But in principle,
+- [00:30:26,900 - 00:30:29,860] given any length of time in classical physics,
+- [00:30:29,860 - 00:30:30,960] there exists a degree
+- [00:30:30,960 - 00:30:32,660] of precision which allows you to
+- [00:30:32,660 - 00:30:34,360] extrapolate for that length of time.
+- [00:30:34,480 - 00:30:35,200] Does that answer the question?
+- [00:30:35,480 - 00:30:35,880] Yeah.
+- [00:30:38,679 - 00:30:42,440] So some systems are very predictable.
+- [00:30:43,420 - 00:30:45,140] Some systems are less predictable and
+- [00:30:45,140 - 00:30:46,860] get out of control very quickly.
+- [00:30:46,920 - 00:30:48,200] They're called chaotic systems.
+- [00:30:48,220 - 00:30:48,400] Okay.
+- [00:30:49,080 - 00:30:49,480] So you can say that the system is very predictable,
+- [00:30:49,480 - 00:30:51,480] but the principles are the same,
+- [00:30:51,480 - 00:30:52,560] that it's
+- [00:30:52,560 - 00:30:54,490] just a degree of precision which you need
+- [00:30:54,490 - 00:30:56,420] to know in the beginning in order to extrapolate
+- [00:30:56,420 - 00:30:57,460] for a given length of time.
+- [00:30:58,700 - 00:31:00,800] You could say the system is still deterministic,
+- [00:31:00,800 - 00:31:01,760] it's just not predictable.
+- [00:31:03,420 - 00:31:03,820] Well,
+- [00:31:03,820 - 00:31:04,660] you could say...
+- [00:31:05,580 - 00:31:08,080] I'm not sure what the difference between predictable and...
+- [00:31:08,080 - 00:31:09,320] The way I use the terms,
+- [00:31:09,320 - 00:31:10,440] I use them interchangeably,
+- [00:31:10,440 - 00:31:11,780] so I can't say that.
+- [00:31:11,800 - 00:31:13,440] I think the conception is quite different.
+- [00:31:13,440 - 00:31:15,020] And you could say that these
+- [00:31:15,020 - 00:31:16,600] are the equations that match reality,
+- [00:31:16,600 - 00:31:18,460] and they are deterministic.
+- [00:31:18,520 - 00:31:19,400] There's just no way out,
+- [00:31:19,400 - 00:31:22,960] except that they don't give you an algorithm to predict,
+- [00:31:22,960 - 00:31:24,140] because
+- [00:31:24,140 - 00:31:26,240] prediction requires...
+- [00:31:26,240 - 00:31:26,620] I can't imagine it.
+- [00:31:27,200 - 00:31:27,760] Okay.
+- [00:31:28,680 - 00:31:29,240] Okay.
+- [00:31:30,000 - 00:31:30,560] Yeah?
+- [00:31:31,920 - 00:31:32,980] All right.
+- [00:31:33,280 - 00:31:35,040] It's a probability of predictability.
+- [00:31:35,240 - 00:31:35,740] What's that?
+- [00:31:35,920 - 00:31:38,200] It's a probability of predictability.
+- [00:31:38,640 - 00:31:39,000] Yeah.
+- [00:31:41,140 - 00:31:41,700] Right.
+- [00:31:41,820 - 00:31:43,420] The equations are deterministic.
+- [00:31:43,440 - 00:31:46,840] They're deterministic if you know the initial conditions...
+- [00:31:46,840 - 00:31:48,180] Or deterministic or predictable,
+- [00:31:48,180 - 00:31:52,440] infinitely predictable if you know the initial conditions
+- [00:31:52,440 - 00:31:53,980] with infinite precision.
+- [00:31:54,380 - 00:31:55,200] You never do,
+- [00:31:55,200 - 00:31:57,960] and therefore they're never completely predictable.
+- [00:32:04,500 - 00:32:05,200] Now,
+- [00:32:05,200 - 00:32:09,200] the fact that you need to know
+- [00:32:09,200 - 00:32:13,200] both the position and the velocity in classical
+- [00:32:13,440 - 00:32:16,060] physics in order to predict what happens
+- [00:32:16,060 - 00:32:18,680] next reflects itself in the structure of
+- [00:32:18,680 - 00:32:20,420] the equations of mechanics.
+- [00:32:26,100 - 00:32:26,660] Specifically,
+- [00:32:26,660 - 00:32:29,040] it tells you that the equations of motion,
+- [00:32:29,040 - 00:32:30,960] Newton's equations in this case,
+- [00:32:31,540 - 00:32:33,580] are what are called second-order
+- [00:32:33,580 - 00:32:35,620] equations instead of first-order equations.
+- [00:32:35,900 - 00:32:37,090] Let me illustrate it by
+- [00:32:37,090 - 00:32:38,280] starting with a first-order equation.
+- [00:32:39,460 - 00:32:40,860] A first-order equation...
+- [00:32:40,860 - 00:32:43,420] What a first-order equation means is that...
+- [00:32:43,440 - 00:32:45,860] It only has quantities of
+- [00:32:45,860 - 00:32:48,280] first derivatives with respect to time.
+- [00:32:48,700 - 00:32:49,760] In other words,
+- [00:32:49,760 - 00:32:51,420] only contains velocities.
+- [00:32:51,880 - 00:32:55,180] Second order means it contains not only first derivatives,
+- [00:32:55,180 - 00:32:56,940] but second derivatives means
+- [00:32:56,940 - 00:32:58,320] it contains accelerations,
+- [00:32:58,320 - 00:32:59,360] the equations of motion.
+- [00:32:59,540 - 00:33:01,660] Acceleration is the second derivative of the motion.
+- [00:33:04,780 - 00:33:06,280] We could write...
+- [00:33:07,020 - 00:33:08,460] We know what the real
+- [00:33:08,460 - 00:33:09,900] equations of motion of Newton are.
+- [00:33:10,120 - 00:33:11,040] F equals ma.
+- [00:33:11,480 - 00:33:12,860] It contains acceleration.
+- [00:33:12,860 - 00:33:13,180] Acceleration.
+- [00:33:13,440 - 00:33:15,200] Let's write a phony equation.
+- [00:33:15,640 - 00:33:19,620] Let's write F equals mass times velocity.
+- [00:33:20,620 - 00:33:22,440] Force is F.
+- [00:33:22,440 - 00:33:24,300] Velocity is velocity.
+- [00:33:24,660 - 00:33:27,050] And let's suppose that force
+- [00:33:27,050 - 00:33:29,440] just depends on where you are.
+- [00:33:29,720 - 00:33:32,180] We have a particle that moves along a line.
+- [00:33:32,400 - 00:33:35,600] It's subject to forces which vary along the line.
+- [00:33:37,880 - 00:33:39,720] Force may be big here,
+- [00:33:39,720 - 00:33:40,420] small there,
+- [00:33:40,420 - 00:33:41,180] and so forth.
+- [00:33:41,380 - 00:33:42,840] So the force depends on where you are.
+- [00:33:42,860 - 00:33:43,340] on position,
+- [00:33:43,340 - 00:33:47,230] and let's imagine this fake equation of
+- [00:33:47,230 - 00:33:51,120] motion that it's equal to mass times velocity,
+- [00:33:51,460 - 00:33:52,180] and what is velocity?
+- [00:33:52,180 - 00:33:55,420] Velocity is the time derivative of the position,
+- [00:33:55,420 - 00:33:56,640] the x by dt.
+- [00:33:58,520 - 00:34:01,470] And I will use continuously throughout
+- [00:34:01,470 - 00:34:04,420] this course the notation that time derivative
+- [00:34:05,320 - 00:34:07,280] is just indicated by a dot.
+- [00:34:07,280 - 00:34:09,760] Dot means time derivative.
+- [00:34:09,760 - 00:34:11,400] All right,
+- [00:34:11,400 - 00:34:12,199] what does this tell me?
+- [00:34:12,860 - 00:34:14,489] What do I need to know
+- [00:34:14,489 - 00:34:16,120] in order to predict what happens next?
+- [00:34:16,120 - 00:34:18,120] I say for this equation,
+- [00:34:18,480 - 00:34:20,860] we only need to know the position of a particle.
+- [00:34:20,860 - 00:34:23,320] If we know the position of a particle,
+- [00:34:23,980 - 00:34:25,690] I can tell you what the
+- [00:34:25,690 - 00:34:27,400] velocity is just from the equation.
+- [00:34:27,400 - 00:34:29,540] If I know that the position is a
+- [00:34:29,540 - 00:34:30,300] particular position,
+- [00:34:30,300 - 00:34:32,040] then I know the force on it,
+- [00:34:32,040 - 00:34:34,480] and from the equation that tells me what the
+- [00:34:34,480 - 00:34:35,300] velocity is.
+- [00:34:35,300 - 00:34:37,560] Does it tell me the acceleration?
+- [00:34:37,560 - 00:34:38,900] How about the acceleration?
+- [00:34:38,900 - 00:34:39,860] Let's see if I can
+- [00:34:39,860 - 00:34:40,880] compute the acceleration.
+- [00:34:41,880 - 00:34:42,840] To compute the acceleration,
+- [00:34:42,840 - 00:34:42,840] I'm going to use the equation of the velocity.
+- [00:34:42,840 - 00:34:44,320] To compute the acceleration from this equation,
+- [00:34:44,320 - 00:34:46,699] we just differentiate it once more.
+- [00:34:47,840 - 00:34:54,739] We write that df by dt is equal to mass.
+- [00:34:54,739 - 00:34:58,860] Mass is just a constant times the second derivative
+- [00:34:58,860 - 00:35:00,900] of the position,
+- [00:35:00,900 - 00:35:02,180] or just the acceleration.
+- [00:35:02,180 - 00:35:05,320] So we have over here acceleration.
+- [00:35:05,320 - 00:35:05,760] Acceleration.
+- [00:35:05,760 - 00:35:09,120] What about the f dt,
+- [00:35:09,120 - 00:35:11,000] the time derivative of the force?
+- [00:35:11,840 - 00:35:14,290] The force varies with time
+- [00:35:14,290 - 00:35:16,740] because the position varies with time.
+- [00:35:16,740 - 00:35:21,480] So df by dt is just a reflection
+- [00:35:21,480 - 00:35:22,950] of the fact that the position
+- [00:35:22,950 - 00:35:24,420] of the particle varies with time,
+- [00:35:24,420 - 00:35:26,420] and we can write the f by dt
+- [00:35:26,420 - 00:35:30,510] using standard rules of calculus as just the
+- [00:35:30,510 - 00:35:34,600] change in f with respect to position times the
+- [00:35:34,600 - 00:35:36,420] change in position with respect to time.
+- [00:35:36,420 - 00:35:38,400] In other words,
+- [00:35:38,400 - 00:35:38,920] the velocity.
+- [00:35:40,160 - 00:35:40,920] All right.
+- [00:35:41,000 - 00:35:43,100] But we've already figured out what the velocity is,
+- [00:35:43,100 - 00:35:44,260] knowing the force,
+- [00:35:44,260 - 00:35:45,100] knowing the position.
+- [00:35:45,780 - 00:35:47,140] So we know the velocity,
+- [00:35:47,140 - 00:35:48,870] and we can read off from
+- [00:35:48,870 - 00:35:50,600] this equation what the acceleration is.
+- [00:35:51,760 - 00:35:54,770] We can figure out all of the derivatives of
+- [00:35:54,770 - 00:35:57,780] the motion if we know where the particle is
+- [00:35:57,780 - 00:36:00,060] by multiply differentiating this equation.
+- [00:36:00,060 - 00:36:01,520] So what it tells us,
+- [00:36:01,520 - 00:36:02,540] to make a short story
+- [00:36:02,540 - 00:36:03,040] out of it,
+- [00:36:03,040 - 00:36:04,850] is it tells us that if we know
+- [00:36:04,850 - 00:36:06,660] where the position of the particle at any
+- [00:36:06,660 - 00:36:07,400] instant of time,
+- [00:36:07,400 - 00:36:08,700] then we know where it's going
+- [00:36:08,700 - 00:36:10,000] to be in the next instant,
+- [00:36:10,000 - 00:36:10,980] the next two instants,
+- [00:36:10,980 - 00:36:12,140] the next three instants.
+- [00:36:12,140 - 00:36:14,420] It completely predicts the motion.
+- [00:36:14,420 - 00:36:16,860] But this is not the character
+- [00:36:16,860 - 00:36:17,720] of Newton's equations.
+- [00:36:17,720 - 00:36:19,320] Newton's equations say f is
+- [00:36:19,320 - 00:36:20,920] equal to mass times acceleration,
+- [00:36:21,300 - 00:36:22,320] not mass times velocity.
+- [00:36:22,320 - 00:36:24,820] So let's look at this equation.
+- [00:36:28,020 - 00:36:29,780] F equals mass times acceleration.
+- [00:36:29,780 - 00:36:32,860] Can I predict from this what the velocity is?
+- [00:36:32,860 - 00:36:33,620] No.
+- [00:36:33,620 - 00:36:34,820] There's
+- [00:36:34,820 - 00:36:36,400] just no equation for the velocity.
+- [00:36:36,400 - 00:36:38,040] All right.
+- [00:36:38,040 - 00:36:39,460] If I know what the position is,
+- [00:36:39,460 - 00:36:39,760] I know what
+- [00:36:39,760 - 00:36:40,460] the force is.
+- [00:36:43,140 - 00:36:45,200] That tells me what the acceleration is,
+- [00:36:45,200 - 00:36:47,040] but there's nothing in these equations which tell
+- [00:36:47,040 - 00:36:48,140] me what the velocity is.
+- [00:36:48,140 - 00:36:50,380] That means I have to add in
+- [00:36:50,380 - 00:36:52,620] the velocity as a piece of information
+- [00:36:52,620 - 00:36:53,520] to begin with.
+- [00:36:53,520 - 00:36:54,440] I have no choice.
+- [00:36:54,440 - 00:36:56,420] I have to tell you,
+- [00:36:56,420 - 00:36:57,420] in order to predict,
+- [00:36:57,420 - 00:36:58,820] I have to tell
+- [00:36:58,820 - 00:37:00,720] you the position as well as the velocity.
+- [00:37:00,720 - 00:37:01,820] Then,
+- [00:37:01,820 - 00:37:04,060] if I know the position and the velocity,
+- [00:37:05,080 - 00:37:07,880] I can then predict the acceleration.
+- [00:37:07,880 - 00:37:10,160] The next third derivative,
+- [00:37:10,160 - 00:37:10,960] the fourth derivative,
+- [00:37:10,960 - 00:37:10,960] the
+- [00:37:10,980 - 00:37:11,200] fifth derivative,
+- [00:37:11,200 - 00:37:11,860] and all of them.
+- [00:37:11,860 - 00:37:13,660] So that tells me that in
+- [00:37:13,660 - 00:37:15,460] order to know where I am
+- [00:37:15,460 - 00:37:16,540] and where I'm going to be,
+- [00:37:16,540 - 00:37:21,440] I have to know the position and the velocity.
+- [00:37:21,440 - 00:37:22,840] The phase space
+- [00:37:22,840 - 00:37:24,100] is a two-dimensional space.
+- [00:37:24,100 - 00:37:27,540] So we see then that
+- [00:37:27,540 - 00:37:30,980] classical mechanics does have this character
+- [00:37:31,860 - 00:37:35,240] of a configura—or a phase space of
+- [00:37:35,240 - 00:37:38,620] different configurations with a set of little arrows
+- [00:37:38,620 - 00:37:40,300] which tell you where to go next.
+- [00:37:40,420 - 00:37:40,960] So I can then predict the acceleration,
+- [00:37:40,960 - 00:37:40,960] the acceleration,
+- [00:37:40,960 - 00:37:40,960] and the velocity.
+- [00:37:40,960 - 00:37:40,960] And then,
+- [00:37:40,980 - 00:37:41,440] I can predict the acceleration,
+- [00:37:41,440 - 00:37:41,440] the acceleration,
+- [00:37:41,440 - 00:37:41,440] and the velocity.
+- [00:37:41,440 - 00:37:43,500] But the phase space itself
+- [00:37:44,620 - 00:37:46,820] has a position component to it
+- [00:37:46,820 - 00:37:49,020] and a velocity component to it.
+- [00:37:49,880 - 00:37:52,680] We will go on and study the classical equations
+- [00:37:52,680 - 00:37:55,480] of motion and study them in a variety of different
+- [00:37:55,480 - 00:37:56,280] formulations.
+- [00:37:56,280 - 00:37:58,980] But always,
+- [00:37:58,980 - 00:38:02,070] the connecting link will
+- [00:38:02,070 - 00:38:05,160] always be conservation of information.
+- [00:38:05,440 - 00:38:08,200] The idea that the laws of physics are
+- [00:38:08,200 - 00:38:10,960] completely deterministic and the structure of the equation
+- [00:38:10,980 - 00:38:12,540] are simply described by equations which
+- [00:38:12,540 - 00:38:14,100] tell you where you will be next.
+- [00:38:14,100 - 00:38:15,720] That's the character
+- [00:38:15,720 - 00:38:16,700] of classical physics.
+- [00:38:18,040 - 00:38:20,760] As a result of this bifurcated system—
+- [00:38:21,340 - 00:38:21,780] Bifurcated?
+- [00:38:22,060 - 00:38:23,440] —the hands and tails up,
+- [00:38:23,440 - 00:38:25,100] instead of being one system,
+- [00:38:25,100 - 00:38:26,720] you need two pieces of information
+- [00:38:26,720 - 00:38:27,340] and that's one.
+- [00:38:28,080 - 00:38:29,080] It's one system,
+- [00:38:29,080 - 00:38:31,100] but you need two pieces of information instead of one,
+- [00:38:31,100 - 00:38:31,220] yeah.
+- [00:38:31,400 - 00:38:32,840] If it weren't bifurcated then you wouldn't—
+- [00:38:32,840 - 00:38:34,160] I'm not sure what you mean by bifurcated.
+- [00:38:34,340 - 00:38:36,460] That's separate to two pieces.
+- [00:38:36,460 - 00:38:38,800] The white hands and tails up there.
+- [00:38:38,800 - 00:38:40,780] At the very top.
+- [00:38:40,980 - 00:38:42,020] up here,
+- [00:38:42,020 - 00:38:43,880] here you only need,
+- [00:38:43,880 - 00:38:44,120] no,
+- [00:38:44,120 - 00:38:44,300] no,
+- [00:38:44,300 - 00:38:45,620] here you need one piece of
+- [00:38:45,620 - 00:38:46,940] information to say where you'll be next
+- [00:38:47,480 - 00:38:48,820] if you're here you stay here,
+- [00:38:48,820 - 00:38:50,820] if you're there you stay there
+- [00:38:50,820 - 00:38:52,620] but the system is heads and tails
+- [00:38:52,620 - 00:38:54,650] the rule is complicated but the
+- [00:38:54,650 - 00:38:56,680] states are only one piece of information
+- [00:38:56,680 - 00:38:58,960] all there is is heads and tails,
+- [00:38:58,960 - 00:39:01,440] that's all there is,
+- [00:39:01,440 - 00:39:03,380] and if you know where you are,
+- [00:39:03,380 - 00:39:04,540] you know where you'll be next
+- [00:39:08,020 - 00:39:09,820] you know when there were six
+- [00:39:09,820 - 00:39:11,620] states then you had six rules,
+- [00:39:11,620 - 00:39:14,560] you can have more rules but basically
+- [00:39:15,160 - 00:39:15,600] no,
+- [00:39:15,600 - 00:39:15,820] no,
+- [00:39:15,820 - 00:39:16,100] no,
+- [00:39:16,100 - 00:39:16,540] no,
+- [00:39:16,540 - 00:39:16,760] no,
+- [00:39:16,760 - 00:39:16,900] no,
+- [00:39:16,900 - 00:39:17,020] no,
+- [00:39:17,020 - 00:39:17,040] no,
+- [00:39:17,040 - 00:39:17,120] no,
+- [00:39:17,120 - 00:39:17,980] there's one rule
+- [00:39:17,980 - 00:39:19,060] for the,
+- [00:39:19,060 - 00:39:22,300] what the dice was initial,
+- [00:39:22,300 - 00:39:25,260] so you only had one piece of information
+- [00:39:26,120 - 00:39:26,560] no,
+- [00:39:26,560 - 00:39:26,860] this,
+- [00:39:26,860 - 00:39:29,120] this is one rule,
+- [00:39:29,120 - 00:39:30,040] heads goes to heads,
+- [00:39:30,040 - 00:39:31,020] tails goes to tails,
+- [00:39:31,020 - 00:39:31,920] that's a single rule
+- [00:39:33,600 - 00:39:34,520] and if you know where you are,
+- [00:39:34,520 - 00:39:34,520] you'll be next
+- [00:39:34,540 - 00:39:35,300] if you know that you're at heads,
+- [00:39:35,300 - 00:39:37,100] then you know you'll be next at heads
+- [00:39:37,100 - 00:39:38,220] if you know you're at tails,
+- [00:39:38,220 - 00:39:38,800] you know,
+- [00:39:38,800 - 00:39:40,830] so you only need a
+- [00:39:40,830 - 00:39:42,860] piece of information heads or tails
+- [00:39:42,860 - 00:39:43,700] that does it,
+- [00:39:43,700 - 00:39:44,600] that tells you everything
+- [00:39:46,620 - 00:39:47,020] now,
+- [00:39:47,020 - 00:39:47,460] we,
+- [00:39:47,460 - 00:39:49,020] I suggested a different,
+- [00:39:49,020 - 00:39:50,700] well,
+- [00:39:50,700 - 00:39:52,820] yeah
+- [00:39:59,859 - 00:40:02,140] you don't need to know where you were before,
+- [00:40:02,140 - 00:40:04,000] you only need to know where you are now
+- [00:40:04,000 - 00:40:04,520] to know where you are now
+- [00:40:04,540 - 00:40:05,000] to know where you'll be next
+- [00:40:09,380 - 00:40:09,820] so,
+- [00:40:09,820 - 00:40:13,570] both of these laws require only knowledge of where you
+- [00:40:13,570 - 00:40:17,320] are at one instant to tell you where you'll be next
+- [00:40:18,220 - 00:40:19,620] you simply follow the,
+- [00:40:19,620 - 00:40:20,620] if you start someplace,
+- [00:40:20,620 - 00:40:22,980] you follow the arrow until you come back
+- [00:40:22,980 - 00:40:24,150] or you follow the arrow until
+- [00:40:24,150 - 00:40:25,320] you get to the next place,
+- [00:40:25,320 - 00:40:26,820] and that tells you where you'll be next
+- [00:40:28,020 - 00:40:30,240] you don't need any more information than that
+- [00:40:33,000 - 00:40:34,640] the only question is what
+- [00:40:34,640 - 00:40:36,280] one of these points corresponds to
+- [00:40:36,280 - 00:40:38,860] does one of these points correspond to,
+- [00:40:38,860 - 00:40:40,330] how much information does it correspond
+- [00:40:40,330 - 00:40:41,800] to a point in this space?
+- [00:40:43,600 - 00:40:45,480] is it enough to know heads or
+- [00:40:45,480 - 00:40:47,360] tails to know what you'll do next?
+- [00:40:47,660 - 00:40:51,620] or might you need to know the two previous things?
+- [00:40:54,660 - 00:40:55,460] that's a different,
+- [00:40:55,460 - 00:40:56,460] that's a different setup
+- [00:41:02,080 - 00:41:02,640] um
+- [00:41:03,240 - 00:41:03,720] ok,
+- [00:41:03,720 - 00:41:06,400] if you have a single particle in three space
+- [00:41:07,420 - 00:41:11,800] then that has six phase space coordinates
+- [00:41:13,300 - 00:41:13,860] let's,
+- [00:41:13,860 - 00:41:14,140] let's,
+- [00:41:14,140 - 00:41:16,520] let's stay with the heads and tails for a minute
+- [00:41:17,320 - 00:41:20,300] let's suppose that in order to say what happens next
+- [00:41:21,140 - 00:41:24,040] you need to know the previous two configurations
+- [00:41:24,960 - 00:41:25,580] let's do,
+- [00:41:25,580 - 00:41:26,820] let's work out that example
+- [00:41:26,820 - 00:41:29,600] and let's write it in this form
+- [00:41:32,960 - 00:41:34,140] let's make up a law
+- [00:41:34,140 - 00:41:35,760] I think I had one down before
+- [00:41:35,760 - 00:41:36,780] heads,
+- [00:41:36,780 - 00:41:39,480] heads goes to heads
+- [00:41:40,820 - 00:41:41,340] heads,
+- [00:41:41,340 - 00:41:44,080] tails goes to what?
+- [00:41:44,240 - 00:41:44,700] tails?
+- [00:41:46,260 - 00:41:46,780] tails,
+- [00:41:46,780 - 00:41:49,120] heads goes to heads
+- [00:41:49,120 - 00:41:50,140] and tails,
+- [00:41:50,140 - 00:41:51,920] tails goes to tails
+- [00:41:53,380 - 00:41:53,900] ok
+- [00:41:56,440 - 00:41:57,900] is there something wrong with that?
+- [00:41:58,240 - 00:41:58,520] yeah
+- [00:41:58,520 - 00:42:00,680] it's an only,
+- [00:42:00,680 - 00:42:01,180] it's an only course
+- [00:42:01,700 - 00:42:03,240] we gotta switch one of yours
+- [00:42:03,240 - 00:42:03,820] it doesn't matter
+- [00:42:03,820 - 00:42:05,740] it only depends on the last state
+- [00:42:05,740 - 00:42:06,640] it doesn't matter
+- [00:42:07,299 - 00:42:08,020] heads goes to heads
+- [00:42:08,020 - 00:42:09,380] oh this only depends on,
+- [00:42:09,380 - 00:42:10,360] heads goes to your right,
+- [00:42:10,360 - 00:42:10,740] you're right,
+- [00:42:10,740 - 00:42:11,080] you're right,
+- [00:42:11,080 - 00:42:11,360] you're right
+- [00:42:11,360 - 00:42:12,060] sorry,
+- [00:42:12,060 - 00:42:12,460] sorry,
+- [00:42:12,460 - 00:42:12,660] sorry,
+- [00:42:12,660 - 00:42:12,820] sorry,
+- [00:42:12,820 - 00:42:13,000] heads,
+- [00:42:13,000 - 00:42:13,400] yeah
+- [00:42:13,400 - 00:42:15,200] we want this one to go to tails
+- [00:42:17,359 - 00:42:17,720] uh
+- [00:42:20,879 - 00:42:22,020] second one goes to heads,
+- [00:42:22,020 - 00:42:22,420] good,
+- [00:42:22,420 - 00:42:23,600] yeah
+- [00:42:23,600 - 00:42:24,160] oh no,
+- [00:42:24,160 - 00:42:24,580] there you go
+- [00:42:25,100 - 00:42:25,460] yes
+- [00:42:26,060 - 00:42:26,420] sorry,
+- [00:42:26,420 - 00:42:27,340] that won't work
+- [00:42:27,340 - 00:42:27,480] no,
+- [00:42:27,480 - 00:42:30,000] there's two of them that were in the first one
+- [00:42:30,000 - 00:42:30,500] what,
+- [00:42:30,500 - 00:42:31,540] what,
+- [00:42:31,540 - 00:42:31,800] what,
+- [00:42:31,800 - 00:42:32,020] what?
+- [00:42:32,360 - 00:42:33,080] say it again
+- [00:42:33,080 - 00:42:34,040] then the first,
+- [00:42:34,040 - 00:42:35,690] what happened two times ago
+- [00:42:35,690 - 00:42:37,340] matters but not the last time
+- [00:42:37,340 - 00:42:38,200] that's also true,
+- [00:42:38,200 - 00:42:38,500] yeah,
+- [00:42:38,500 - 00:42:38,940] yeah,
+- [00:42:38,940 - 00:42:39,340] yeah
+- [00:42:39,340 - 00:42:42,120] see it looks a little hard to work an example,
+- [00:42:42,120 - 00:42:42,600] doesn't it?
+- [00:42:42,920 - 00:42:43,360] um,
+- [00:42:43,360 - 00:42:44,580] let's see
+- [00:42:44,580 - 00:42:46,460] switch the second one and that'll do it
+- [00:42:46,460 - 00:42:46,660] hm?
+- [00:42:47,000 - 00:42:48,180] switch the second one
+- [00:42:48,180 - 00:42:49,200] switch the second one,
+- [00:42:49,200 - 00:42:49,500] this one?
+- [00:42:49,700 - 00:42:50,320] make it tails
+- [00:42:50,320 - 00:42:51,100] make it tails,
+- [00:42:51,100 - 00:42:51,460] ok
+- [00:42:54,200 - 00:42:55,820] I think that's perfectly alright
+- [00:42:57,340 - 00:42:57,980] you lose information,
+- [00:42:57,980 - 00:42:58,700] why?
+- [00:42:58,700 - 00:42:59,260] you lose information,
+- [00:42:59,260 - 00:42:59,820] why?
+- [00:43:01,560 - 00:43:02,000] well,
+- [00:43:02,000 - 00:43:02,440] ok,
+- [00:43:02,440 - 00:43:04,120] here's a setup
+- [00:43:05,120 - 00:43:05,900] here's a setup
+- [00:43:05,900 - 00:43:07,960] if you know the previous two,
+- [00:43:07,960 - 00:43:09,420] then you know what happens next
+- [00:43:10,340 - 00:43:11,220] in fact,
+- [00:43:11,220 - 00:43:11,900] uh,
+- [00:43:11,900 - 00:43:12,620] let's,
+- [00:43:12,620 - 00:43:14,070] let's now see if we can
+- [00:43:14,070 - 00:43:15,520] make a table out of this
+- [00:43:15,520 - 00:43:16,120] not a table,
+- [00:43:16,120 - 00:43:17,000] but a set of points
+- [00:43:17,000 - 00:43:18,380] a set of points,
+- [00:43:18,380 - 00:43:19,980] then there are four possibilities
+- [00:43:19,980 - 00:43:20,660] heads heads,
+- [00:43:20,660 - 00:43:21,320] heads tails,
+- [00:43:21,320 - 00:43:21,860] tails heads,
+- [00:43:21,860 - 00:43:22,620] and tails tails
+- [00:43:24,040 - 00:43:24,480] ok,
+- [00:43:24,480 - 00:43:24,960] let's see,
+- [00:43:24,960 - 00:43:25,320] here's
+- [00:43:25,320 - 00:43:27,400] heads heads
+- [00:43:28,600 - 00:43:30,360] heads tails
+- [00:43:31,320 - 00:43:32,440] tails heads
+- [00:43:32,750 - 00:43:34,040] and tails tails
+- [00:43:35,320 - 00:43:36,000] now,
+- [00:43:36,000 - 00:43:37,160] supposing you go
+- [00:43:38,380 - 00:43:40,240] from heads heads
+- [00:43:40,240 - 00:43:42,260] to heads
+- [00:43:45,069 - 00:43:45,660] heads
+- [00:43:45,660 - 00:43:46,880] heads
+- [00:43:46,880 - 00:43:49,080] heads
+- [00:43:49,080 - 00:43:52,180] that means you go from heads heads
+- [00:43:52,180 - 00:43:53,900] to heads heads
+- [00:43:55,660 - 00:43:56,100] right?
+- [00:43:57,000 - 00:43:58,700] you go from heads heads to heads heads
+- [00:44:02,600 - 00:44:03,040] now,
+- [00:44:03,040 - 00:44:04,560] supposing you go from
+- [00:44:04,560 - 00:44:05,800] let's see what happens
+- [00:44:05,800 - 00:44:06,880] if you start with heads tails
+- [00:44:07,640 - 00:44:08,720] where do you go to?
+- [00:44:11,040 - 00:44:12,780] so you go from heads tails,
+- [00:44:12,780 - 00:44:14,280] to tails tails
+- [00:44:17,920 - 00:44:18,360] ok
+- [00:44:20,560 - 00:44:21,000] ok,
+- [00:44:21,000 - 00:44:24,180] what happens if you go from tails tails
+- [00:44:25,560 - 00:44:26,000] Well,
+- [00:44:26,000 - 00:44:26,740] we're going to run into trouble,
+- [00:44:26,740 - 00:44:27,160] aren't we?
+- [00:44:27,340 - 00:44:27,460] Yes.
+- [00:44:27,840 - 00:44:28,280] Tails,
+- [00:44:28,280 - 00:44:29,400] tails goes to tails?
+- [00:44:30,120 - 00:44:30,560] Yes.
+- [00:44:30,560 - 00:44:31,080] That's no good.
+- [00:44:32,140 - 00:44:32,960] So tails,
+- [00:44:32,960 - 00:44:33,880] tails goes to tails,
+- [00:44:33,880 - 00:44:34,100] tails.
+- [00:44:34,420 - 00:44:34,780] Bad.
+- [00:44:36,380 - 00:44:38,200] Not allowable by the laws of physics.
+- [00:44:38,760 - 00:44:38,960] Yeah.
+- [00:44:39,080 - 00:44:40,620] You could do an XOR.
+- [00:44:41,240 - 00:44:42,440] And now tails,
+- [00:44:42,440 - 00:44:43,100] heads goes where?
+- [00:44:43,800 - 00:44:44,240] Tails,
+- [00:44:44,240 - 00:44:44,540] tails.
+- [00:44:46,000 - 00:44:46,440] Tails,
+- [00:44:46,440 - 00:44:47,440] tails goes to tails,
+- [00:44:47,440 - 00:44:47,680] tails?
+- [00:44:48,080 - 00:44:48,520] Heads,
+- [00:44:48,520 - 00:44:48,740] tails.
+- [00:44:49,380 - 00:44:49,820] Wait.
+- [00:44:50,220 - 00:44:50,660] Tails,
+- [00:44:50,660 - 00:44:50,780] tails.
+- [00:44:51,700 - 00:44:52,140] Tails,
+- [00:44:52,140 - 00:44:53,100] heads.
+- [00:44:56,500 - 00:44:56,980] Tails,
+- [00:44:56,980 - 00:44:58,340] heads goes to heads,
+- [00:44:58,340 - 00:44:58,560] tails.
+- [00:44:59,000 - 00:44:59,200] Tails,
+- [00:44:59,200 - 00:44:59,200] heads goes to heads,
+- [00:44:59,200 - 00:44:59,200] tails.
+- [00:44:59,640 - 00:45:00,980] So that goes here.
+- [00:45:01,560 - 00:45:02,740] That goes to tails,
+- [00:45:02,740 - 00:45:02,980] tails.
+- [00:45:03,160 - 00:45:04,060] Change the third one.
+- [00:45:05,860 - 00:45:07,640] It seems to me we should
+- [00:45:07,640 - 00:45:09,420] be able to make a consistent law.
+- [00:45:12,820 - 00:45:13,300] What?
+- [00:45:15,440 - 00:45:16,400] This one?
+- [00:45:17,040 - 00:45:18,000] This one.
+- [00:45:19,140 - 00:45:19,620] Oh,
+- [00:45:19,620 - 00:45:20,060] tails,
+- [00:45:20,060 - 00:45:21,580] tails goes to tails,
+- [00:45:21,580 - 00:45:21,940] tails goes to tails.
+- [00:45:22,080 - 00:45:22,560] Tails,
+- [00:45:22,560 - 00:45:23,080] tails goes to tails,
+- [00:45:23,080 - 00:45:23,080] tails goes to tails.
+- [00:45:23,100 - 00:45:23,140] Tails,
+- [00:45:23,140 - 00:45:23,400] tails goes to heads.
+- [00:45:24,020 - 00:45:24,500] Yeah,
+- [00:45:24,500 - 00:45:24,820] OK.
+- [00:45:25,180 - 00:45:26,220] So then tails,
+- [00:45:26,220 - 00:45:27,320] tails goes to heads.
+- [00:45:28,280 - 00:45:30,760] And that means that tails,
+- [00:45:30,760 - 00:45:31,160] tails,
+- [00:45:31,160 - 00:45:31,660] heads.
+- [00:45:32,060 - 00:45:33,000] So that means tails,
+- [00:45:33,000 - 00:45:34,040] tails goes to tails,
+- [00:45:34,040 - 00:45:34,780] heads.
+- [00:45:36,060 - 00:45:36,540] Ah.
+- [00:45:37,540 - 00:45:38,020] Oh,
+- [00:45:38,020 - 00:45:38,340] OK,
+- [00:45:38,340 - 00:45:38,560] good,
+- [00:45:38,560 - 00:45:38,760] good.
+- [00:45:38,920 - 00:45:40,220] Now we have a workable law.
+- [00:45:40,820 - 00:45:42,300] Now we have a workable law.
+- [00:45:42,580 - 00:45:44,860] The only thing we had to do was
+- [00:45:44,860 - 00:45:47,140] to say that what we originally called a configuration,
+- [00:45:47,940 - 00:45:49,580] namely a single heads or tails,
+- [00:45:49,580 - 00:45:52,440] was not a complete specification.
+- [00:45:52,440 - 00:45:56,200] A complete specification of information
+- [00:45:56,200 - 00:45:59,960] involved two pieces of information.
+- [00:46:00,360 - 00:46:02,280] And once we recognized that,
+- [00:46:02,280 - 00:46:05,890] we were able to write this
+- [00:46:05,890 - 00:46:09,500] down as a law of physics,
+- [00:46:09,720 - 00:46:12,180] which is deterministic and reversible.
+- [00:46:13,480 - 00:46:14,080] OK.
+- [00:46:14,380 - 00:46:16,060] So you don't know offhand.
+- [00:46:16,200 - 00:46:18,930] You don't know to begin with what pieces of information you
+- [00:46:18,930 - 00:46:21,660] need to know in order to know what to do next.
+- [00:46:23,040 - 00:46:25,680] But that's what the configuration space,
+- [00:46:25,680 - 00:46:27,240] or that's what the phase space is.
+- [00:46:27,460 - 00:46:29,360] It's the collection of all the things you
+- [00:46:29,360 - 00:46:31,260] need to know to know what happens next.
+- [00:46:31,660 - 00:46:32,100] Now,
+- [00:46:32,100 - 00:46:32,380] of course,
+- [00:46:32,380 - 00:46:33,300] you could go beyond this.
+- [00:46:33,600 - 00:46:34,380] You could say,
+- [00:46:34,380 - 00:46:36,280] I need to know the first three
+- [00:46:36,280 - 00:46:38,180] things in order to know what happens next.
+- [00:46:38,700 - 00:46:39,520] You can do that.
+- [00:46:39,760 - 00:46:41,500] You'll simply need more states
+- [00:46:41,500 - 00:46:43,240] to make a deterministic system.
+- [00:46:47,060 - 00:46:49,350] What would it mean in classical mechanics to
+- [00:46:49,350 - 00:46:51,640] need more information than the positions of the tails?
+- [00:46:51,640 - 00:46:52,280] Or the positions and velocities?
+- [00:46:54,400 - 00:46:55,700] Suppose you needed the positions,
+- [00:46:55,700 - 00:46:56,280] velocities,
+- [00:46:56,280 - 00:46:57,220] and accelerations.
+- [00:46:58,920 - 00:47:00,740] That would mean third order differential equations,
+- [00:47:00,740 - 00:47:02,420] but what would it say about the phase space?
+- [00:47:04,860 - 00:47:06,580] It would mean you would need positions,
+- [00:47:06,580 - 00:47:07,340] velocities,
+- [00:47:07,340 - 00:47:10,220] and accelerations to represent the phase space.
+- [00:47:12,180 - 00:47:13,520] As it happens,
+- [00:47:13,520 - 00:47:16,920] that is not the case for classical mechanics.
+- [00:47:17,660 - 00:47:19,040] That's an experimental fact.
+- [00:47:22,480 - 00:47:24,680] But it wouldn't stop us if we did.
+- [00:47:24,820 - 00:47:26,580] If we did need the accelerations,
+- [00:47:26,580 - 00:47:28,240] we would just write third order equations,
+- [00:47:28,500 - 00:47:30,800] and we would make our phase space three-dimensional.
+- [00:47:41,360 - 00:47:44,500] The preceding program is copyrighted by Stanford University.
+- [00:47:45,060 - 00:47:47,680] Please visit us at stanford.edu.
