@@ -1,0 +1,3219 @@
+# Transcript
+
+Source: core/classical_mechanics/2011_fall_modern_physics_stanford_partial/027 - Lecture 7 ｜ Modern Physics： Classical Mechanics (Stanford) [0mcxUD53rrM].mp4
+
+- [00:00:06,759 - 00:00:09,740] This program is brought to you by Stanford University.
+- [00:00:10,200 - 00:00:12,740] Please visit us at stanford.edu.
+- [00:00:15,359 - 00:00:15,720] Now,
+- [00:00:15,720 - 00:00:17,910] Leavill's theorem is really at
+- [00:00:17,910 - 00:00:20,100] the heart of classical mechanics.
+- [00:00:21,479 - 00:00:23,980] It's at the heart of Hamiltonian classical mechanics.
+- [00:00:23,980 - 00:00:28,080] And a quantum mechanical version of it,
+- [00:00:28,080 - 00:00:29,600] which is called unitarity,
+- [00:00:29,760 - 00:00:32,400] is very much at the heart of quantum mechanics.
+- [00:00:32,960 - 00:00:39,100] It will profit us to understand Leavill's theorem because,
+- [00:00:39,100 - 00:00:40,000] as I said,
+- [00:00:40,949 - 00:00:44,474] it is the immediate classical analog of
+- [00:00:44,474 - 00:00:48,000] one of the most fundamental principles of physics,
+- [00:00:48,000 - 00:00:49,020] quantum mechanics.
+- [00:00:51,440 - 00:00:53,860] It can also be thought of...
+- [00:00:55,240 - 00:00:56,500] as the idea,
+- [00:00:56,500 - 00:00:59,260] or generalization of the idea,
+- [00:00:59,260 - 00:01:01,440] of information conservation.
+- [00:01:02,280 - 00:01:03,640] We talked about this,
+- [00:01:03,640 - 00:01:03,980] I think,
+- [00:01:03,980 - 00:01:04,819] in the first lecture,
+- [00:01:04,819 - 00:01:06,640] where...
+- [00:01:07,200 - 00:01:08,180] Let me just remind you,
+- [00:01:08,180 - 00:01:09,520] I think I've done this a couple of times,
+- [00:01:09,520 - 00:01:10,600] but let me remind you again,
+- [00:01:11,580 - 00:01:13,740] that if you have a phase space,
+- [00:01:13,740 - 00:01:17,460] which consists of a collection of points...
+- [00:01:17,460 - 00:01:18,620] By a phase space,
+- [00:01:18,620 - 00:01:23,220] I simply mean the space of possible configurations,
+- [00:01:24,520 - 00:01:25,620] of a system.
+- [00:01:26,160 - 00:01:28,260] In the case of a mechanical system,
+- [00:01:28,260 - 00:01:30,020] it would be positions and velocities.
+- [00:01:30,260 - 00:01:31,840] In the case of just a
+- [00:01:31,840 - 00:01:33,420] system with a finite number of states,
+- [00:01:33,760 - 00:01:34,970] it would be any one
+- [00:01:34,970 - 00:01:36,180] of those finite number of states.
+- [00:01:36,780 - 00:01:39,320] And then the laws of
+- [00:01:39,320 - 00:01:41,860] mechanics for this very simple setup
+- [00:01:41,860 - 00:01:45,770] would simply be expressed as a rule for
+- [00:01:45,770 - 00:01:49,680] going from any configuration to any other configuration.
+- [00:01:50,800 - 00:01:53,840] And I can draw it in a more complex way.
+- [00:01:53,860 - 00:01:54,280] I can draw it in a more complicated way,
+- [00:01:54,280 - 00:01:55,380] but there's not much point.
+- [00:01:56,300 - 00:01:57,940] I could draw it so that the lines cross,
+- [00:01:57,940 - 00:01:59,820] but that doesn't add anything to it.
+- [00:02:00,760 - 00:02:04,120] You could have some disconnected cycles,
+- [00:02:08,299 - 00:02:10,220] but generally that's the pattern.
+- [00:02:11,820 - 00:02:15,320] And you'll notice that each point has one arrow
+- [00:02:15,320 - 00:02:18,820] coming into it and one arrow going out of it.
+- [00:02:20,720 - 00:02:23,840] That's the basic idea of information conservation.
+- [00:02:23,840 - 00:02:24,780] Information conservation,
+- [00:02:24,780 - 00:02:27,520] that nothing gets lost.
+- [00:02:28,300 - 00:02:29,020] There's no,
+- [00:02:29,020 - 00:02:33,240] let's call it convergence or divergence,
+- [00:02:33,240 - 00:02:36,980] of the flow in the phase space.
+- [00:02:37,260 - 00:02:39,100] This can be thought of as a kind of flow.
+- [00:02:41,540 - 00:02:43,660] What's the word for what they do
+- [00:02:43,660 - 00:02:45,780] in discos where they flash lights at you?
+- [00:02:46,260 - 00:02:46,780] Stroboscope.
+- [00:02:47,380 - 00:02:49,200] You can think of it stroboscopically,
+- [00:02:49,200 - 00:02:52,540] where each instant you flash,
+- [00:02:52,720 - 00:02:53,680] and the system moves.
+- [00:02:53,840 - 00:02:54,720] And then it moves to the next configuration.
+- [00:02:55,280 - 00:02:57,610] So it's a sort of stroboscopic flow
+- [00:02:57,610 - 00:02:59,940] of the points in the phase space.
+- [00:03:02,080 - 00:03:06,280] But you could imagine populating each of these points.
+- [00:03:07,020 - 00:03:09,610] Populating means imagine a system
+- [00:03:09,610 - 00:03:12,200] at that point in phase space
+- [00:03:13,500 - 00:03:17,080] undergoing the motion that the system is supposed to have.
+- [00:03:17,280 - 00:03:19,360] So we would have a collection
+- [00:03:19,360 - 00:03:21,440] of systems filling up the phase space,
+- [00:03:21,660 - 00:03:23,480] one at each point in the phase space,
+- [00:03:23,840 - 00:03:25,380] and as time evolves,
+- [00:03:25,380 - 00:03:29,580] the points in the phase space just move.
+- [00:03:29,960 - 00:03:31,040] I've described this.
+- [00:03:31,120 - 00:03:33,430] I think probably the best way to
+- [00:03:33,430 - 00:03:35,740] describe it is that they move incompressibly.
+- [00:03:36,580 - 00:03:37,740] Among other things,
+- [00:03:37,740 - 00:03:41,640] that means that if you start with a separate point,
+- [00:03:41,780 - 00:03:43,760] a separate system at each point in the phase space,
+- [00:03:44,440 - 00:03:47,140] you'll never wind up with two points or two
+- [00:03:47,140 - 00:03:49,840] systems at the same point in the phase space.
+- [00:03:50,700 - 00:03:52,300] It's not like playing Monopoly,
+- [00:03:52,380 - 00:03:53,820] where the Monopoly men can wind up with two points,
+- [00:03:53,820 - 00:03:55,920] and they wind up on the same square.
+- [00:03:57,040 - 00:03:58,260] That never happens.
+- [00:03:58,640 - 00:04:00,760] They stay distinct from each other,
+- [00:04:02,500 - 00:04:04,200] the points in the phase space.
+- [00:04:05,300 - 00:04:06,840] They don't diverge.
+- [00:04:06,840 - 00:04:07,380] They don't converge.
+- [00:04:07,760 - 00:04:08,780] What would diverge mean?
+- [00:04:09,280 - 00:04:12,510] Diverge would be a situation where
+- [00:04:12,510 - 00:04:15,740] an incoming line would split in two.
+- [00:04:16,180 - 00:04:17,440] Now what would that mean?
+- [00:04:17,720 - 00:04:19,720] That would mean there was some
+- [00:04:19,720 - 00:04:21,720] ambiguity in the evolution of the system.
+- [00:04:21,980 - 00:04:23,680] If it went from here to here,
+- [00:04:23,680 - 00:04:25,260] it wouldn't know where to go next.
+- [00:04:25,680 - 00:04:27,120] Sometimes it might go this way,
+- [00:04:27,200 - 00:04:28,560] sometimes it might go that way.
+- [00:04:28,860 - 00:04:30,000] That doesn't happen.
+- [00:04:30,220 - 00:04:32,220] So there's no divergence of the flow,
+- [00:04:32,440 - 00:04:34,860] and there's also no convergence of the flow.
+- [00:04:35,140 - 00:04:39,580] Convergence would mean that from two different phase points,
+- [00:04:40,460 - 00:04:42,280] you come to the same phase point.
+- [00:04:43,240 - 00:04:45,000] Then you would always know where to go,
+- [00:04:45,220 - 00:04:47,080] but you wouldn't know where you came from.
+- [00:04:48,460 - 00:04:49,820] If you found yourself over here,
+- [00:04:49,940 - 00:04:50,740] you wouldn't know if you
+- [00:04:50,740 - 00:04:51,540] came from here or over here.
+- [00:04:53,140 - 00:04:53,660] Those are the two things that would make a difference.
+- [00:04:53,680 - 00:04:56,100] Those are the forbidden kinds of flows.
+- [00:04:56,860 - 00:04:57,920] As I said,
+- [00:04:57,920 - 00:05:01,220] you can think of a lack of
+- [00:05:01,220 - 00:05:04,520] convergence or divergence on a phase space.
+- [00:05:04,800 - 00:05:04,900] Yeah?
+- [00:05:05,300 - 00:05:08,360] Even if you had the word diverges,
+- [00:05:08,500 - 00:05:12,640] but if it diverges under a statistical law?
+- [00:05:13,020 - 00:05:14,400] It's quite thinkable.
+- [00:05:15,420 - 00:05:18,280] It's not that it's not thinkable to have these things.
+- [00:05:18,560 - 00:05:20,860] They don't occur in classical physics.
+- [00:05:21,180 - 00:05:22,000] They don't occur,
+- [00:05:22,000 - 00:05:24,840] except in so far as you ignore things.
+- [00:05:25,140 - 00:05:27,960] Except in so far as you ignore degrees of freedom.
+- [00:05:30,020 - 00:05:31,860] As I've said over and over,
+- [00:05:31,980 - 00:05:33,750] friction is an example where you start
+- [00:05:33,750 - 00:05:35,520] a system in any number of ways.
+- [00:05:36,120 - 00:05:37,240] It's not in many ways.
+- [00:05:37,260 - 00:05:38,420] It comes to the same configuration.
+- [00:05:39,280 - 00:05:39,760] Well,
+- [00:05:39,760 - 00:05:40,220] not quite,
+- [00:05:40,220 - 00:05:41,480] but you get the idea.
+- [00:05:43,100 - 00:05:44,720] Friction just slows things down,
+- [00:05:44,720 - 00:05:45,460] brings them to rest.
+- [00:05:45,580 - 00:05:46,500] No matter how they start,
+- [00:05:46,500 - 00:05:47,260] they come to rest.
+- [00:05:47,840 - 00:05:48,320] Many,
+- [00:05:48,320 - 00:05:51,440] many different configurations can wind up exactly the same.
+- [00:05:52,520 - 00:05:54,840] But that's only because you've ignored things.
+- [00:05:54,960 - 00:05:57,580] You've ignored the molecular structure of a tabletop.
+- [00:05:59,160 - 00:06:01,620] You can take this as an experimental fact,
+- [00:06:01,720 - 00:06:03,360] or you can take it as a
+- [00:06:03,360 - 00:06:05,000] consequence of the basic rules of quantum mechanics,
+- [00:06:05,280 - 00:06:08,420] but all the classical mechanical systems
+- [00:06:08,420 - 00:06:11,560] that are of interest in fundamental physics
+- [00:06:11,560 - 00:06:14,780] have the property that there's no divergence or convergence.
+- [00:06:15,300 - 00:06:15,640] Yeah?
+- [00:06:15,780 - 00:06:18,290] Is that saying something more
+- [00:06:18,290 - 00:06:20,800] than classical mechanics is based on?
+- [00:06:22,000 - 00:06:24,000] Differential equations and there's no solution?
+- [00:06:24,120 - 00:06:24,280] Yes,
+- [00:06:24,280 - 00:06:25,600] it is saying something more than that.
+- [00:06:26,260 - 00:06:27,940] It is saying something more than that.
+- [00:06:28,140 - 00:06:29,920] And we'll see what it says.
+- [00:06:30,160 - 00:06:32,100] It's what Leoville's theorem is what it says.
+- [00:06:36,740 - 00:06:37,780] But we'll come to it.
+- [00:06:38,220 - 00:06:38,960] For example,
+- [00:06:38,960 - 00:06:41,460] the sort of thing that can't happen is,
+- [00:06:42,020 - 00:06:42,920] here's phase space,
+- [00:06:42,920 - 00:06:43,340] okay?
+- [00:06:45,160 - 00:06:47,120] Every point in this phase space is
+- [00:06:47,120 - 00:06:49,080] distinct from every other point in some sense.
+- [00:06:49,520 - 00:06:51,300] Now you could take a group of points,
+- [00:06:51,300 - 00:06:52,720] and follow them,
+- [00:06:52,920 - 00:06:57,040] and they might all squeeze together into a smaller volume.
+- [00:06:58,100 - 00:06:58,800] All right?
+- [00:06:59,100 - 00:07:01,920] That's the kind of convergence that doesn't happen.
+- [00:07:03,540 - 00:07:04,080] Instead,
+- [00:07:04,080 - 00:07:05,950] the flow in phase space
+- [00:07:05,950 - 00:07:07,820] is a kind of incompressible flow.
+- [00:07:08,080 - 00:07:09,420] Both incompressible,
+- [00:07:09,420 - 00:07:10,440] what's the opposite of compression,
+- [00:07:10,700 - 00:07:11,920] and non-divergent.
+- [00:07:12,040 - 00:07:12,180] Well,
+- [00:07:12,180 - 00:07:15,340] phase space doesn't blow up,
+- [00:07:15,340 - 00:07:16,240] it doesn't shrink.
+- [00:07:16,500 - 00:07:18,010] But we'll come to the
+- [00:07:18,010 - 00:07:19,520] precise definition of it soon enough.
+- [00:07:25,180 - 00:07:26,140] So in some sense,
+- [00:07:26,140 - 00:07:29,740] the phase space doesn't pinch together or diverge.
+- [00:07:30,680 - 00:07:31,500] It's as though,
+- [00:07:31,500 - 00:07:33,020] here's the way you can think about it.
+- [00:07:34,040 - 00:07:36,740] In the continuum mechanics case,
+- [00:07:37,580 - 00:07:41,180] you can imagine populating the phase space,
+- [00:07:41,500 - 00:07:42,800] let's call it P and Q,
+- [00:07:42,800 - 00:07:43,800] Q and P.
+- [00:07:45,020 - 00:07:45,720] And of course,
+- [00:07:45,720 - 00:07:47,080] there may be many Ps and Qs,
+- [00:07:47,140 - 00:07:48,680] I simply can't draw them on the blackboard.
+- [00:07:49,580 - 00:07:50,700] And we might imagine,
+- [00:07:50,700 - 00:07:51,280] in the same way,
+- [00:07:51,300 - 00:07:54,620] that we populated each point here with a system,
+- [00:07:55,300 - 00:07:57,360] we can imagine populating the phase space,
+- [00:07:58,140 - 00:07:58,940] with a dust,
+- [00:07:58,940 - 00:08:00,060] with a dust of points.
+- [00:08:03,580 - 00:08:05,680] And follow that dust of points.
+- [00:08:06,200 - 00:08:09,900] Let's assume that the phase space is populated uniformly,
+- [00:08:10,300 - 00:08:12,200] with a constant density,
+- [00:08:12,200 - 00:08:14,100] a uniform density of points,
+- [00:08:14,100 - 00:08:15,080] of dust.
+- [00:08:17,160 - 00:08:19,040] And we follow each point as
+- [00:08:19,040 - 00:08:20,920] it moves through the phase space,
+- [00:08:21,300 - 00:08:22,800] it defines a kind of flow.
+- [00:08:24,580 - 00:08:26,900] But it defines a special kind of flow,
+- [00:08:26,900 - 00:08:28,300] which is called incompressible.
+- [00:08:29,300 - 00:08:31,549] And it basically has the property
+- [00:08:31,549 - 00:08:33,799] that each point in the phase space
+- [00:08:33,799 - 00:08:35,259] can be thought of as
+- [00:08:35,259 - 00:08:36,720] having a little volume around it.
+- [00:08:37,780 - 00:08:40,340] Each one occupies its own little volume.
+- [00:08:41,059 - 00:08:43,280] If we take the density to be uniform,
+- [00:08:43,280 - 00:08:45,900] then each one of these volumes is the same.
+- [00:08:46,440 - 00:08:48,000] And as we follow it,
+- [00:08:48,000 - 00:08:49,840] when we see it later,
+- [00:08:49,840 - 00:08:53,640] each phase point is separated from each other phase point
+- [00:08:53,640 - 00:08:57,320] by the same amount of volume in the phase space.
+- [00:08:58,680 - 00:09:00,520] Or you can say it another way.
+- [00:09:00,680 - 00:09:03,000] If you take a group of points,
+- [00:09:03,000 - 00:09:04,640] there are three ways to say it.
+- [00:09:05,060 - 00:09:06,220] All of them equivalent.
+- [00:09:06,680 - 00:09:08,850] The first is to follow individual
+- [00:09:08,850 - 00:09:11,020] points with little volumes around them,
+- [00:09:11,080 - 00:09:11,920] and watch them move.
+- [00:09:14,400 - 00:09:16,480] The volume of each little point,
+- [00:09:17,120 - 00:09:19,820] or the region occupied by that little volume,
+- [00:09:19,840 - 00:09:20,540] or the little points,
+- [00:09:20,540 - 00:09:21,380] stays the same.
+- [00:09:21,820 - 00:09:23,920] But we can generalize that.
+- [00:09:24,140 - 00:09:26,830] We can say take any region
+- [00:09:26,830 - 00:09:29,520] of the phase space to begin with.
+- [00:09:29,820 - 00:09:30,960] Take any region.
+- [00:09:31,100 - 00:09:32,480] And follow its points.
+- [00:09:33,180 - 00:09:34,740] Follow its points with time.
+- [00:09:35,040 - 00:09:35,940] After time,
+- [00:09:35,940 - 00:09:41,480] that phase space region will change.
+- [00:09:41,840 - 00:09:43,160] It will change its shape.
+- [00:09:43,520 - 00:09:45,960] Some points move faster than other points.
+- [00:09:47,719 - 00:09:50,040] It may spread one way.
+- [00:09:50,160 - 00:09:51,700] It may stretch some direction.
+- [00:09:51,960 - 00:09:53,600] It may compress in another direction.
+- [00:09:53,840 - 00:09:56,980] But the one thing that's true is that
+- [00:09:56,980 - 00:10:00,120] the volume of that region will stay the same.
+- [00:10:00,620 - 00:10:01,680] In other words,
+- [00:10:01,680 - 00:10:04,580] the volume of a fixed set of
+- [00:10:04,580 - 00:10:07,480] points in the phase space will not change.
+- [00:10:08,380 - 00:10:11,920] Will it maintain connectedness?
+- [00:10:12,240 - 00:10:14,380] And it will maintain connectedness.
+- [00:10:16,400 - 00:10:16,920] Absolutely.
+- [00:10:17,840 - 00:10:19,080] They don't disconnect.
+- [00:10:19,380 - 00:10:23,160] The connectedness is simply the predictability.
+- [00:10:23,500 - 00:10:24,860] If it became disconnected,
+- [00:10:24,860 - 00:10:26,140] how could it become disconnected?
+- [00:10:26,280 - 00:10:28,240] A phase point would split somehow.
+- [00:10:28,960 - 00:10:31,080] Which would simply mean it didn't know where to go.
+- [00:10:31,240 - 00:10:33,050] The equations broke down at this point and
+- [00:10:33,050 - 00:10:34,860] didn't tell the phase point where to go properly.
+- [00:10:35,880 - 00:10:36,400] So,
+- [00:10:36,400 - 00:10:36,920] yeah.
+- [00:10:37,300 - 00:10:39,440] Regions maintain their connectivity.
+- [00:10:40,900 - 00:10:41,980] In other words,
+- [00:10:41,980 - 00:10:44,360] a region like this can't break up into two disconnections.
+- [00:10:44,360 - 00:10:44,660] It's a connected region.
+- [00:10:46,880 - 00:10:48,260] And a hole cannot appear.
+- [00:10:49,160 - 00:10:51,120] So it's a very continuous,
+- [00:10:51,120 - 00:10:51,640] smooth,
+- [00:10:51,640 - 00:10:53,220] no holes.
+- [00:10:53,400 - 00:10:55,660] The connectivity is conserved.
+- [00:10:55,660 - 00:10:56,880] But the type of connectivity,
+- [00:10:56,880 - 00:10:58,780] simply connectedness,
+- [00:10:58,780 - 00:11:00,000] multiple connectedness,
+- [00:11:00,000 - 00:11:01,320] whatever it is,
+- [00:11:01,380 - 00:11:05,560] the topology of the chunk of phase space is maintained,
+- [00:11:05,560 - 00:11:07,020] as is its volume.
+- [00:11:08,480 - 00:11:10,200] What is not maintained,
+- [00:11:10,200 - 00:11:11,260] in general,
+- [00:11:13,199 - 00:11:17,900] is the distance in the phase space between points.
+- [00:11:18,820 - 00:11:20,990] Take a pair of points in
+- [00:11:20,990 - 00:11:23,160] the phase space and follow them.
+- [00:11:23,840 - 00:11:25,020] If we follow them,
+- [00:11:25,020 - 00:11:27,400] we may discover later that they're closer together.
+- [00:11:28,940 - 00:11:29,780] Now you say,
+- [00:11:29,780 - 00:11:30,680] how is that consistent?
+- [00:11:30,940 - 00:11:33,920] How is it possible that the
+- [00:11:33,920 - 00:11:36,900] volume of a phase region doesn't change,
+- [00:11:36,980 - 00:11:39,480] but the distance between points can change?
+- [00:11:39,940 - 00:11:40,520] Well,
+- [00:11:40,520 - 00:11:41,240] what's interesting is,
+- [00:11:41,240 - 00:11:41,680] what can happen,
+- [00:11:41,680 - 00:11:42,320] for example,
+- [00:11:43,170 - 00:11:45,625] is a volume can stretch in one
+- [00:11:45,625 - 00:11:48,080] direction and compress in the other direction.
+- [00:11:49,839 - 00:11:51,800] Volume being conserved.
+- [00:11:52,060 - 00:11:53,990] The volume of all of this
+- [00:11:53,990 - 00:11:55,920] collection of points in here is unchanged.
+- [00:11:56,520 - 00:11:58,100] But if you follow each point,
+- [00:11:58,100 - 00:12:00,700] you'll find that the shape changes.
+- [00:12:01,360 - 00:12:03,270] But the shape changes in a
+- [00:12:03,270 - 00:12:05,180] way that leaves the volume unchanged.
+- [00:12:05,760 - 00:12:06,700] But in particular,
+- [00:12:06,700 - 00:12:08,420] this point and this point
+- [00:12:08,420 - 00:12:10,140] are now found here and here,
+- [00:12:10,140 - 00:12:12,720] so they're much further from each other than they were.
+- [00:12:12,960 - 00:12:14,040] On the other hand,
+- [00:12:14,040 - 00:12:16,900] this point and this point are found here and here,
+- [00:12:17,100 - 00:12:20,000] so they're much closer together than they were.
+- [00:12:20,780 - 00:12:22,360] Two points switch places?
+- [00:12:22,740 - 00:12:24,640] Two points switch places?
+- [00:12:26,000 - 00:12:27,440] Points switch places?
+- [00:12:27,520 - 00:12:27,980] No,
+- [00:12:27,980 - 00:12:28,080] no,
+- [00:12:28,080 - 00:12:29,360] everything is extremely continuous.
+- [00:12:29,960 - 00:12:32,620] But is it conserved orientation?
+- [00:12:33,100 - 00:12:33,820] Conserved orientation.
+- [00:12:34,360 - 00:12:35,520] How do you move past each other?
+- [00:12:36,200 - 00:12:37,140] What does that mean?
+- [00:12:38,220 - 00:12:38,780] Oh.
+- [00:12:40,140 - 00:12:40,820] You mean can one...
+- [00:12:40,820 - 00:12:41,100] Well,
+- [00:12:41,100 - 00:12:43,240] you can certainly have a situation where there's
+- [00:12:43,240 - 00:12:45,380] a point in phase space moving to the right,
+- [00:12:45,540 - 00:12:48,300] and another point in phase space moving to the right,
+- [00:12:48,420 - 00:12:49,820] and they start like this,
+- [00:12:49,820 - 00:12:51,640] and this one is moving faster than this one,
+- [00:12:51,740 - 00:12:52,840] and passes it.
+- [00:12:52,980 - 00:12:53,380] Yes,
+- [00:12:53,380 - 00:12:54,100] that can happen.
+- [00:12:54,900 - 00:12:59,840] No question that that can happen.
+- [00:12:59,920 - 00:13:00,380] For example,
+- [00:13:00,380 - 00:13:02,890] you can have a situation where if
+- [00:13:02,890 - 00:13:05,400] you started with a square in phase space,
+- [00:13:06,480 - 00:13:09,440] that square could evolve into a...
+- [00:13:10,400 - 00:13:11,560] What is that called?
+- [00:13:14,840 - 00:13:15,400] Parallelogram.
+- [00:13:16,080 - 00:13:18,020] Parallelogram of the same area.
+- [00:13:18,740 - 00:13:19,740] That would happen,
+- [00:13:19,740 - 00:13:20,260] for example,
+- [00:13:20,260 - 00:13:22,380] if the top was moving faster than the bottom,
+- [00:13:23,080 - 00:13:25,300] but the width of the whole thing...
+- [00:13:26,480 - 00:13:28,740] That's a sort of shear motion where
+- [00:13:28,740 - 00:13:31,000] the top shears relative to the bottom.
+- [00:13:31,140 - 00:13:32,340] That's perfectly allowed.
+- [00:13:32,780 - 00:13:34,980] That conserves the volume.
+- [00:13:35,120 - 00:13:37,320] If the height and the width stay the same,
+- [00:13:37,320 - 00:13:38,400] it conserves the volume.
+- [00:13:38,859 - 00:13:39,840] So that's possible,
+- [00:13:39,840 - 00:13:41,910] and that would certainly allow a point back
+- [00:13:41,910 - 00:13:43,980] here to get ahead of a point over here.
+- [00:13:45,279 - 00:13:45,719] Yeah,
+- [00:13:45,719 - 00:13:46,160] so...
+- [00:13:46,160 - 00:13:48,700] I guess you did it.
+- [00:13:49,479 - 00:13:49,920] Well,
+- [00:13:49,920 - 00:13:51,100] go ahead,
+- [00:13:51,100 - 00:13:51,540] ask the question.
+- [00:13:53,260 - 00:13:53,740] What's that?
+- [00:13:53,740 - 00:13:54,040] Yeah.
+- [00:13:54,420 - 00:13:55,780] I think you said that was chaotic.
+- [00:13:56,700 - 00:13:58,780] The double pendulum and the gravitational...
+- [00:13:58,780 - 00:13:58,900] Yeah.
+- [00:13:58,960 - 00:14:00,600] So you have a little neighborhood point,
+- [00:14:00,600 - 00:14:02,640] a little point that just spread out lower.
+- [00:14:02,860 - 00:14:03,300] Absolutely.
+- [00:14:03,880 - 00:14:04,320] Absolutely,
+- [00:14:04,320 - 00:14:05,460] but we'll...
+- [00:14:05,460 - 00:14:05,740] Yeah.
+- [00:14:06,300 - 00:14:06,740] Yeah,
+- [00:14:06,740 - 00:14:07,780] we'll talk about that case.
+- [00:14:07,780 - 00:14:10,960] That is not a counterexample to this.
+- [00:14:11,420 - 00:14:11,980] Right.
+- [00:14:12,320 - 00:14:16,280] It's an example of it,
+- [00:14:16,280 - 00:14:20,900] but one which is less smooth and less predictable,
+- [00:14:21,100 - 00:14:22,100] but for reasons we'll come to.
+- [00:14:23,740 - 00:14:24,300] Okay.
+- [00:14:25,300 - 00:14:25,860] Well,
+- [00:14:25,860 - 00:14:26,980] let me just say it very quickly.
+- [00:14:27,300 - 00:14:30,020] I say the phase space
+- [00:14:30,020 - 00:14:32,740] maintains a certain degree of connectivity.
+- [00:14:32,900 - 00:14:34,080] It maintains its connectivity.
+- [00:14:34,580 - 00:14:36,360] All that happens is shape changes.
+- [00:14:36,520 - 00:14:37,760] But the shape continues.
+- [00:14:37,760 - 00:14:38,700] It can change wildly.
+- [00:14:39,260 - 00:14:40,320] For example,
+- [00:14:40,320 - 00:14:44,340] this sphere can evolve into something with...
+- [00:14:46,000 - 00:14:47,530] I'm trying to keep the volume
+- [00:14:47,530 - 00:14:49,060] the same as it was before,
+- [00:14:49,060 - 00:14:50,160] but I'm probably not.
+- [00:14:53,680 - 00:14:54,440] You know,
+- [00:14:54,440 - 00:14:55,180] horrible...
+- [00:14:59,700 - 00:15:00,980] So the...
+- [00:15:01,640 - 00:15:04,690] There's no rule that says that the
+- [00:15:04,690 - 00:15:07,740] shape can't evolve into some wildly extraordinary...
+- [00:15:07,740 - 00:15:09,500] ...extravagantly different structure,
+- [00:15:09,500 - 00:15:13,560] which eventually starts to look more and more fractal.
+- [00:15:14,520 - 00:15:15,040] Now,
+- [00:15:15,040 - 00:15:16,640] it never really forms a fractal,
+- [00:15:16,640 - 00:15:18,690] because continuity tells you that things which are close
+- [00:15:18,690 - 00:15:20,740] to each other will stay close to each other.
+- [00:15:20,860 - 00:15:21,900] But in time,
+- [00:15:21,900 - 00:15:24,360] it'll start to get more and more fragmented,
+- [00:15:24,360 - 00:15:26,200] more and more fractured,
+- [00:15:26,200 - 00:15:29,180] but always maintaining its volume.
+- [00:15:29,860 - 00:15:30,380] Okay?
+- [00:15:30,880 - 00:15:33,310] Maintaining its volume so
+- [00:15:33,310 - 00:15:35,740] that distinguishable points remain distinguishable,
+- [00:15:35,740 - 00:15:38,020] and a measure of distinguishability
+- [00:15:38,020 - 00:15:40,300] is the volume surrounding a point.
+- [00:15:40,440 - 00:15:45,880] But we will return to this particular picture.
+- [00:15:46,020 - 00:15:46,840] I ought to leave it there,
+- [00:15:46,840 - 00:15:48,520] because I'll probably wind up drawing it again,
+- [00:15:48,520 - 00:15:50,220] but not right now.
+- [00:15:55,899 - 00:15:56,339] That,
+- [00:15:56,339 - 00:15:56,780] incidentally,
+- [00:15:56,780 - 00:16:02,260] is the basic case of a chaotic system.
+- [00:16:02,520 - 00:16:04,920] Chaotic systems do exactly this kind of thing.
+- [00:16:06,440 - 00:16:09,000] Non-chaotic systems tend to maintain
+- [00:16:09,000 - 00:16:11,560] a greater degree of shape coherence,
+- [00:16:11,560 - 00:16:12,220] we can call it.
+- [00:16:13,020 - 00:16:15,520] Why do you qualify points that are
+- [00:16:15,520 - 00:16:18,020] in close proximity as being in close proximity?
+- [00:16:18,280 - 00:16:18,960] Say it again?
+- [00:16:19,180 - 00:16:22,960] Why do you qualify points that are in close proximity
+- [00:16:22,960 - 00:16:26,740] and end up in close proximity even in wild space?
+- [00:16:27,080 - 00:16:27,560] No,
+- [00:16:27,560 - 00:16:28,020] they don't.
+- [00:16:28,020 - 00:16:29,460] They don't stay in close proximity.
+- [00:16:29,720 - 00:16:29,900] No,
+- [00:16:29,900 - 00:16:30,360] no,
+- [00:16:30,360 - 00:16:30,680] no.
+- [00:16:30,800 - 00:16:32,950] The statement is the volume of
+- [00:16:32,950 - 00:16:35,100] the region in phase space is maintained.
+- [00:16:35,740 - 00:16:39,220] So what that tells you is
+- [00:16:39,220 - 00:16:42,700] that if two points do diverge,
+- [00:16:44,480 - 00:16:47,050] or let's say that if the
+- [00:16:47,050 - 00:16:49,620] phase volume stretches in one direction,
+- [00:16:49,620 - 00:16:52,040] it must compress in the other direction.
+- [00:16:53,500 - 00:16:56,040] So it's not completely without rules,
+- [00:16:56,040 - 00:16:59,640] but the only real rule is that
+- [00:16:59,640 - 00:17:03,240] the phase volume is maintained as time evolves.
+- [00:17:03,240 - 00:17:06,020] What do you mean by volume exactly in this context?
+- [00:17:09,099 - 00:17:13,079] Volume means the same thing that it does in calculus.
+- [00:17:13,220 - 00:17:14,220] It means the integral.
+- [00:17:14,980 - 00:17:17,000] It means break up the region
+- [00:17:17,000 - 00:17:19,020] into a lot of extremely small cells.
+- [00:17:21,959 - 00:17:24,420] Let's talk about area for the moment.
+- [00:17:24,540 - 00:17:25,559] Let's not try to get
+- [00:17:25,559 - 00:17:26,579] to higher dimensions for a minute.
+- [00:17:26,660 - 00:17:27,780] Let's just take the case
+- [00:17:27,780 - 00:17:28,900] of one Q and one P.
+- [00:17:30,479 - 00:17:31,849] Then what I mean by
+- [00:17:31,849 - 00:17:33,220] volume of phase space is that,
+- [00:17:33,240 - 00:17:34,720] is just the area of the region.
+- [00:17:35,680 - 00:17:38,540] Regions have area regardless of whether they're squares.
+- [00:17:38,880 - 00:17:39,900] They don't have to be
+- [00:17:39,900 - 00:17:40,920] squares or rectangles to have area.
+- [00:17:42,180 - 00:17:43,580] You have to use a little bit
+- [00:17:43,580 - 00:17:44,980] of calculus to add all of these up,
+- [00:17:45,120 - 00:17:46,740] but there's a well-defined notion of area.
+- [00:17:47,320 - 00:17:48,480] And as you follow it,
+- [00:17:48,480 - 00:17:50,500] the shape may change,
+- [00:17:50,500 - 00:17:51,880] but the area doesn't.
+- [00:17:52,240 - 00:17:52,660] Now,
+- [00:17:52,660 - 00:17:54,180] if it's a higher dimensional system
+- [00:17:54,180 - 00:17:55,700] with more than one P and Q,
+- [00:17:56,240 - 00:17:56,660] incidentally,
+- [00:17:56,660 - 00:17:57,160] as always,
+- [00:17:57,160 - 00:17:58,760] there's one Q for each P.
+- [00:17:58,840 - 00:17:59,920] They come in pairs.
+- [00:18:01,600 - 00:18:03,220] But we simply have to think,
+- [00:18:03,240 - 00:18:06,000] think about the higher dimensional version of volume,
+- [00:18:06,260 - 00:18:08,030] where we break up the
+- [00:18:08,030 - 00:18:09,800] volume into lots of little cubes,
+- [00:18:10,420 - 00:18:12,320] count the cubes and add them up.
+- [00:18:13,380 - 00:18:13,980] Yes,
+- [00:18:13,980 - 00:18:14,160] Michael.
+- [00:18:14,420 - 00:18:16,240] I think it's really pointing out that
+- [00:18:16,240 - 00:18:18,060] points that are nearby in phase space
+- [00:18:18,060 - 00:18:19,320] have both similar,
+- [00:18:19,320 - 00:18:23,480] close by in position and close by in momentum.
+- [00:18:23,960 - 00:18:24,560] Yes,
+- [00:18:24,560 - 00:18:25,000] absolutely.
+- [00:18:25,000 - 00:18:26,040] That's right.
+- [00:18:26,820 - 00:18:29,940] Nearby means close by in position and momentum.
+- [00:18:29,940 - 00:18:33,620] But it doesn't mean that they stay close by.
+- [00:18:34,939 - 00:18:36,760] And in particular,
+- [00:18:36,760 - 00:18:39,780] the chaotic case is the situation where
+- [00:18:39,780 - 00:18:42,800] there's a great deal of tendency for points
+- [00:18:42,800 - 00:18:44,550] which are close to each
+- [00:18:44,550 - 00:18:46,300] other to diverge from each other,
+- [00:18:46,400 - 00:18:48,220] but always at the expense
+- [00:18:48,220 - 00:18:50,040] of compression in some other direction.
+- [00:18:51,120 - 00:18:51,800] Yes?
+- [00:18:52,280 - 00:18:54,920] I'm thinking of throwing dice.
+- [00:18:55,260 - 00:18:55,600] Yes.
+- [00:18:56,060 - 00:18:58,020] They're traveling free in space,
+- [00:18:58,640 - 00:19:00,440] but then they get a
+- [00:19:00,440 - 00:19:02,240] table and it influences their gravitation,
+- [00:19:02,900 - 00:19:06,200] and one of six possibilities comes up.
+- [00:19:06,380 - 00:19:06,640] Right.
+- [00:19:07,080 - 00:19:10,660] So there's no way of having that happen without friction?
+- [00:19:11,100 - 00:19:12,580] Having which happen now?
+- [00:19:13,460 - 00:19:16,210] Having the free-tumbling system map
+- [00:19:16,210 - 00:19:18,960] into a system of friction.
+- [00:19:19,320 - 00:19:19,660] Oh,
+- [00:19:19,660 - 00:19:19,800] oh,
+- [00:19:19,800 - 00:19:20,000] oh,
+- [00:19:20,000 - 00:19:20,080] oh.
+- [00:19:20,380 - 00:19:20,940] Well,
+- [00:19:20,940 - 00:19:21,240] yes,
+- [00:19:21,240 - 00:19:22,340] that's basically friction.
+- [00:19:22,480 - 00:19:25,080] You say there are many ways to start,
+- [00:19:25,160 - 00:19:26,310] and you can wind up
+- [00:19:26,310 - 00:19:27,460] with a six on the table.
+- [00:19:27,460 - 00:19:28,240] Yeah,
+- [00:19:28,240 - 00:19:28,920] right.
+- [00:19:29,260 - 00:19:30,420] If you didn't have friction,
+- [00:19:30,420 - 00:19:36,800] it would just bounce off the table and rebound and...
+- [00:19:37,240 - 00:19:38,200] It wouldn't stop.
+- [00:19:38,340 - 00:19:38,800] It wouldn't stop.
+- [00:19:38,800 - 00:19:39,380] Yeah.
+- [00:19:39,380 - 00:19:40,260] Yeah.
+- [00:19:40,260 - 00:19:41,540] Right.
+- [00:19:41,700 - 00:19:42,280] Friction's pretty common.
+- [00:19:43,340 - 00:19:44,700] Friction is incredibly common.
+- [00:19:44,700 - 00:19:45,140] Right.
+- [00:19:48,540 - 00:19:48,980] Yes?
+- [00:19:48,980 - 00:19:49,420] Yes?
+- [00:19:49,840 - 00:19:52,800] And when you're doing a mechanical system in practice,
+- [00:19:53,399 - 00:19:54,340] if you're an engineer,
+- [00:19:54,340 - 00:19:55,600] you don't want to forget friction.
+- [00:19:56,160 - 00:19:57,520] If you're a physicist,
+- [00:19:57,520 - 00:19:59,220] you often want to forget friction.
+- [00:19:59,380 - 00:20:00,800] You want to pretend it didn't exist.
+- [00:20:00,980 - 00:20:01,280] In fact,
+- [00:20:01,280 - 00:20:02,180] in many situations,
+- [00:20:02,180 - 00:20:04,400] microscopic physics doesn't have friction.
+- [00:20:04,760 - 00:20:06,420] If you really follow every
+- [00:20:06,420 - 00:20:08,080] degree of freedom of a system,
+- [00:20:08,680 - 00:20:11,320] then there's no concept of friction in the equations.
+- [00:20:11,640 - 00:20:14,920] Friction is a collective effect of many variables,
+- [00:20:15,200 - 00:20:17,360] some of which you just decide,
+- [00:20:17,360 - 00:20:18,620] I'm going to ignore.
+- [00:20:21,100 - 00:20:23,020] So it's a thermodynamic idea
+- [00:20:23,020 - 00:20:26,920] rather than an idea of basic mechanics.
+- [00:20:29,420 - 00:20:30,320] Of course,
+- [00:20:30,320 - 00:20:32,800] they have to be consistent with each other.
+- [00:20:32,960 - 00:20:34,540] When you decide not to look
+- [00:20:34,540 - 00:20:36,120] at a collection of degrees of freedom,
+- [00:20:36,340 - 00:20:41,400] the behavior of it may nevertheless reflect the fact
+- [00:20:41,400 - 00:20:43,200] that in some bigger sense,
+- [00:20:43,200 - 00:20:47,440] the phase space volume is conserved.
+- [00:20:50,320 - 00:20:52,900] Energy conservation is one which,
+- [00:20:53,020 - 00:20:54,700] you might not realize if you
+- [00:20:54,700 - 00:20:56,380] were sliding around things on the table.
+- [00:20:56,800 - 00:20:58,040] So energy is lost.
+- [00:20:58,340 - 00:20:59,120] Kinetic energy.
+- [00:20:59,120 - 00:21:00,120] There's no potential energy.
+- [00:21:00,240 - 00:21:01,120] It doesn't go up or down.
+- [00:21:01,860 - 00:21:03,780] Kinetic energy is just lost.
+- [00:21:03,880 - 00:21:05,860] Looks like energy conservation is wrong.
+- [00:21:07,880 - 00:21:09,890] Those who would believe in
+- [00:21:09,890 - 00:21:11,900] energy conservation would make a prediction.
+- [00:21:12,160 - 00:21:14,230] And the prediction would be that
+- [00:21:14,230 - 00:21:16,300] if you very minutely and carefully
+- [00:21:16,300 - 00:21:17,960] measure the temperature of the table,
+- [00:21:18,040 - 00:21:19,040] the temperature of the table
+- [00:21:19,040 - 00:21:20,040] will go up a little bit,
+- [00:21:20,120 - 00:21:21,940] and if you know the specific heat of the table,
+- [00:21:21,940 - 00:21:23,590] then you can find out how
+- [00:21:23,590 - 00:21:25,240] much energy was absorbed by the table,
+- [00:21:25,340 - 00:21:25,620] et cetera,
+- [00:21:25,620 - 00:21:26,020] et cetera,
+- [00:21:26,780 - 00:21:31,060] and the conservation of energy will tell you
+- [00:21:32,140 - 00:21:34,080] that there must have been
+- [00:21:34,080 - 00:21:36,020] degrees of freedom that you ignored.
+- [00:21:36,280 - 00:21:38,900] The same is true of this conservation of information.
+- [00:21:39,860 - 00:21:42,190] If you discover a system which
+- [00:21:42,190 - 00:21:44,520] looks like the phase space is contracting,
+- [00:21:44,840 - 00:21:47,600] it means you've left things out of the system.
+- [00:21:48,900 - 00:21:49,420] Now,
+- [00:21:49,420 - 00:21:51,160] that's an empirical fact.
+- [00:21:53,040 - 00:21:55,200] In the sense that it has
+- [00:21:55,200 - 00:21:57,360] always proven to be the case.
+- [00:22:01,340 - 00:22:02,400] But by now,
+- [00:22:02,400 - 00:22:06,920] it is a fundamental fact derived from quantum mechanics.
+- [00:22:07,180 - 00:22:08,580] But let's take it as a...
+- [00:22:09,200 - 00:22:09,680] Well,
+- [00:22:09,680 - 00:22:13,200] we're not going to take Liouville's theorem as a given.
+- [00:22:13,440 - 00:22:14,420] We're going to prove it.
+- [00:22:14,500 - 00:22:16,000] But we're going to prove it from something.
+- [00:22:16,120 - 00:22:17,740] We're going to prove it from Hamilton's equations.
+- [00:22:18,960 - 00:22:19,600] All right.
+- [00:22:19,600 - 00:22:22,820] So the beauty of the Hamiltonian
+- [00:22:22,820 - 00:22:26,040] form of mechanics is this flow picture.
+- [00:22:26,340 - 00:22:28,020] A flow in phase space,
+- [00:22:28,020 - 00:22:30,440] a very predictable flow in phase space,
+- [00:22:30,780 - 00:22:33,040] where the points move in
+- [00:22:33,040 - 00:22:35,300] a very characteristic kind of way,
+- [00:22:35,440 - 00:22:38,720] and that characteristic way is Hamilton's equations.
+- [00:22:39,380 - 00:22:42,640] The entire flow is determined by a single
+- [00:22:42,640 - 00:22:45,900] function of all of the p's and q's.
+- [00:22:46,100 - 00:22:47,360] If you know that function,
+- [00:22:47,560 - 00:22:49,460] then you know the flow,
+- [00:22:49,600 - 00:22:50,460] and you know the flow on the phase space.
+- [00:22:50,960 - 00:22:52,630] And if you started a
+- [00:22:52,630 - 00:22:54,300] little boat sailing on the flow,
+- [00:22:54,480 - 00:22:56,090] which means you start a system at
+- [00:22:56,090 - 00:22:57,700] a particular point in the phase space,
+- [00:22:58,740 - 00:23:01,010] that Hamiltonian flow will tell you
+- [00:23:01,010 - 00:23:03,280] where it is at any future time.
+- [00:23:04,880 - 00:23:05,360] Okay.
+- [00:23:05,480 - 00:23:06,960] And that flow is incompressible.
+- [00:23:07,120 - 00:23:10,600] But let's first define the flow.
+- [00:23:13,020 - 00:23:16,640] So this is dynamics as a flow in phase space,
+- [00:23:16,760 - 00:23:17,780] as a kind of fluid flow.
+- [00:23:18,460 - 00:23:19,600] All right.
+- [00:23:19,620 - 00:23:22,840] So every point has associated with it a
+- [00:23:22,840 - 00:23:26,060] motion that depends only on where you are.
+- [00:23:26,260 - 00:23:29,040] And a motion means a time derivative.
+- [00:23:29,220 - 00:23:29,760] This is p.
+- [00:23:29,900 - 00:23:30,720] This is q.
+- [00:23:31,280 - 00:23:33,820] It means a p dot and a q dot.
+- [00:23:34,600 - 00:23:35,660] In other words,
+- [00:23:35,660 - 00:23:36,400] a velocity,
+- [00:23:36,540 - 00:23:37,800] but not a usual velocity,
+- [00:23:38,020 - 00:23:40,300] a velocity in phase space,
+- [00:23:41,060 - 00:23:44,720] consisting of the ordinary velocities,
+- [00:23:44,720 - 00:23:46,020] which are the q dots,
+- [00:23:46,020 - 00:23:48,320] plus the p dots,
+- [00:23:48,640 - 00:23:50,640] which are the time derivatives of the p's.
+- [00:23:51,180 - 00:23:51,740] Okay.
+- [00:23:51,820 - 00:23:53,800] So we just write down Hamilton's equations.
+- [00:23:54,220 - 00:23:56,800] p sub i dot is equal
+- [00:23:56,800 - 00:23:59,380] to minus dh by dq sub i.
+- [00:23:59,740 - 00:24:01,160] Notice they come in pairs.
+- [00:24:04,900 - 00:24:08,500] Is plus dh by dp,
+- [00:24:08,500 - 00:24:09,460] dp sub i.
+- [00:24:10,960 - 00:24:11,620] That's it.
+- [00:24:11,700 - 00:24:13,420] That's all of mechanics in a nutshell
+- [00:24:14,020 - 00:24:15,420] in the Hamiltonian form.
+- [00:24:17,180 - 00:24:17,720] Okay.
+- [00:24:21,160 - 00:24:21,860] All right.
+- [00:24:22,680 - 00:24:24,870] Let's consider what it means
+- [00:24:24,870 - 00:24:27,060] for a flow to be incompressible.
+- [00:24:27,580 - 00:24:29,750] What we're ultimately going to prove
+- [00:24:29,750 - 00:24:31,920] is that this flow is incompressible.
+- [00:24:33,220 - 00:24:34,740] What exactly does it mean?
+- [00:24:35,180 - 00:24:36,850] Let's start with a one-dimensional
+- [00:24:36,850 - 00:24:38,520] flow and see what it says.
+- [00:24:38,860 - 00:24:41,580] So a one-dimensional flow just means you have a line,
+- [00:24:41,740 - 00:24:43,940] and let's populate that line
+- [00:24:43,940 - 00:24:46,260] with a uniform distribution of points.
+- [00:24:47,480 - 00:24:48,640] For simplicity,
+- [00:24:48,640 - 00:24:50,200] I'm taking a uniform distribution.
+- [00:24:50,780 - 00:24:53,700] That means that the density of points is the same
+- [00:24:53,700 - 00:24:55,200] everywhere as along the line,
+- [00:24:55,300 - 00:24:56,780] or equivalently,
+- [00:24:56,780 - 00:24:59,380] the little tiny separation between points
+- [00:24:59,380 - 00:25:00,800] is uniform along the line.
+- [00:25:01,660 - 00:25:04,780] What kind of motion constitutes incompressible flow?
+- [00:25:05,220 - 00:25:05,880] Well,
+- [00:25:05,880 - 00:25:06,260] basically,
+- [00:25:06,260 - 00:25:07,340] there's only one kind,
+- [00:25:08,220 - 00:25:11,520] and that's just all the points move together
+- [00:25:11,520 - 00:25:13,500] with exactly the same velocity.
+- [00:25:14,140 - 00:25:16,750] What would happen if the velocity
+- [00:25:16,750 - 00:25:19,360] varied from point to point along here?
+- [00:25:19,480 - 00:25:19,940] For example,
+- [00:25:19,940 - 00:25:21,880] suppose it went faster over here than over here.
+- [00:25:22,420 - 00:25:23,760] Then there would be a
+- [00:25:23,760 - 00:25:25,100] clumping up of points in between.
+- [00:25:25,620 - 00:25:27,190] There would be a clumping up
+- [00:25:27,190 - 00:25:28,760] and an increase in their density.
+- [00:25:29,600 - 00:25:30,120] All right.
+- [00:25:30,140 - 00:25:33,900] But let's consider the mathematics of it.
+- [00:25:37,660 - 00:25:38,320] What's that?
+- [00:25:41,560 - 00:25:42,040] Yes,
+- [00:25:42,040 - 00:25:42,260] yes,
+- [00:25:42,260 - 00:25:44,020] but let's just talk about flows for a minute.
+- [00:25:44,260 - 00:25:44,900] For a minute,
+- [00:25:44,900 - 00:25:45,860] let's forget phase space
+- [00:25:45,860 - 00:25:47,310] and just talk about the
+- [00:25:47,310 - 00:25:48,760] general concept of an incompressible flow.
+- [00:25:50,680 - 00:25:51,930] And we'll come back to
+- [00:25:51,930 - 00:25:53,180] phase space as a special case.
+- [00:25:53,560 - 00:25:54,160] That's right.
+- [00:25:54,160 - 00:25:54,580] No,
+- [00:25:54,580 - 00:25:54,960] you're right.
+- [00:25:57,560 - 00:25:58,520] But nevertheless,
+- [00:25:58,520 - 00:25:59,990] it's possible to think of
+- [00:25:59,990 - 00:26:01,460] incompressible flows in one dimension.
+- [00:26:01,940 - 00:26:02,700] They're very trivial.
+- [00:26:03,380 - 00:26:05,600] You can have any velocity you like,
+- [00:26:05,780 - 00:26:08,460] but the velocity has to be completely uniform
+- [00:26:08,940 - 00:26:10,320] all across the line.
+- [00:26:10,320 - 00:26:10,700] Otherwise,
+- [00:26:10,700 - 00:26:11,440] there's a clumping.
+- [00:26:11,980 - 00:26:12,500] Now,
+- [00:26:12,500 - 00:26:13,740] you can think of it in two ways.
+- [00:26:13,960 - 00:26:15,100] You can either say,
+- [00:26:15,100 - 00:26:18,340] take a set of points and follow them.
+- [00:26:18,660 - 00:26:20,060] Let's take a connected set of
+- [00:26:20,060 - 00:26:21,460] points like this and follow them.
+- [00:26:21,880 - 00:26:23,740] One way of saying incompressibility
+- [00:26:24,260 - 00:26:26,380] is just that the volume of that
+- [00:26:26,380 - 00:26:28,500] particular set of points stays the same.
+- [00:26:29,460 - 00:26:30,100] All right.
+- [00:26:30,160 - 00:26:32,640] That's a view of it following the points.
+- [00:26:33,280 - 00:26:35,920] There's another view of it which
+- [00:26:35,920 - 00:26:38,560] stays at a particular place in space.
+- [00:26:40,360 - 00:26:42,440] Let's say we stay at a
+- [00:26:42,440 - 00:26:44,520] particular space in a place in space.
+- [00:26:45,320 - 00:26:46,200] In other words,
+- [00:26:46,200 - 00:26:46,920] a little volume.
+- [00:26:47,500 - 00:26:49,080] We're not going to move that volume,
+- [00:26:49,300 - 00:26:51,240] but points are going to come into it
+- [00:26:51,240 - 00:26:53,020] and points are going to depart from it.
+- [00:26:53,280 - 00:26:55,240] If the fluid is moving to the right,
+- [00:26:55,400 - 00:26:56,180] of course,
+- [00:26:56,180 - 00:26:57,530] it could be moving to the right in
+- [00:26:57,530 - 00:26:58,880] some places and the left in other places,
+- [00:26:59,060 - 00:27:02,280] but let's count all velocities as positive to the right.
+- [00:27:03,300 - 00:27:07,440] If the fluid is moving,
+- [00:27:07,620 - 00:27:10,220] then some points leave this region,
+- [00:27:10,320 - 00:27:11,960] and some points enter the region.
+- [00:27:12,220 - 00:27:14,020] To say it's incompressible
+- [00:27:14,020 - 00:27:17,510] says that the number of points that enters is the same
+- [00:27:17,510 - 00:27:21,000] as the number of points that leaves in any given time interval.
+- [00:27:22,300 - 00:27:24,060] What is the condition for that?
+- [00:27:24,400 - 00:27:24,900] Well,
+- [00:27:24,900 - 00:27:26,140] it's more or less obvious
+- [00:27:27,020 - 00:27:29,080] that if the velocity,
+- [00:27:29,280 - 00:27:32,240] let's imagine that the velocity is fast over here
+- [00:27:32,240 - 00:27:33,980] and slow over here.
+- [00:27:34,940 - 00:27:35,660] All right.
+- [00:27:35,680 - 00:27:37,930] Then it's quite clear that the number
+- [00:27:37,930 - 00:27:40,180] of points that are exiting the region
+- [00:27:40,320 - 00:27:43,240] is proportional to the velocity at this end.
+- [00:27:44,740 - 00:27:46,900] Let's call this point two and point one.
+- [00:27:48,460 - 00:27:50,180] The number of points exiting
+- [00:27:50,180 - 00:27:52,400] will be proportional to the velocity
+- [00:27:52,400 - 00:27:54,620] of the points to the right,
+- [00:27:54,680 - 00:27:56,440] and that we can just call V2.
+- [00:27:57,580 - 00:27:59,120] That's the number of points exiting.
+- [00:27:59,420 - 00:28:03,240] The number of points entering is the velocity at one.
+- [00:28:04,200 - 00:28:06,680] So the net increase,
+- [00:28:06,860 - 00:28:08,360] shall we take increase or decrease?
+- [00:28:08,960 - 00:28:10,300] Let's talk about the net decrease.
+- [00:28:10,320 - 00:28:13,840] The net decrease in points in this volume here
+- [00:28:13,840 - 00:28:17,040] is going to be proportional to V2 minus V1.
+- [00:28:19,180 - 00:28:19,740] Actually,
+- [00:28:19,740 - 00:28:22,420] it's V2 minus V1 times the density of the points.
+- [00:28:22,620 - 00:28:24,800] But as long as the density is uniform,
+- [00:28:28,520 - 00:28:33,040] then we can just write that the...
+- [00:28:33,840 - 00:28:34,400] Yeah?
+- [00:28:35,140 - 00:28:37,100] If the velocity is higher,
+- [00:28:37,100 - 00:28:38,280] the density's got to be changing.
+- [00:28:39,160 - 00:28:40,020] That's the point.
+- [00:28:41,480 - 00:28:42,160] That's the point.
+- [00:28:42,240 - 00:28:43,180] That's exactly the point.
+- [00:28:43,400 - 00:28:43,840] Wait,
+- [00:28:43,840 - 00:28:44,760] if the velocity...
+- [00:28:44,760 - 00:28:44,860] Yeah.
+- [00:28:45,340 - 00:28:47,360] If the velocity is higher at this end,
+- [00:28:47,520 - 00:28:48,700] or whichever way,
+- [00:28:48,800 - 00:28:49,910] if the velocity is bigger
+- [00:28:49,910 - 00:28:51,020] at one end than the other,
+- [00:28:51,100 - 00:28:52,880] then the density inside has to be changing.
+- [00:28:53,760 - 00:28:55,060] Incompressible means that the density
+- [00:28:55,060 - 00:28:56,360] is not allowed to change.
+- [00:28:56,940 - 00:28:57,380] Okay?
+- [00:28:57,680 - 00:28:59,580] So what it says is that V2
+- [00:28:59,580 - 00:29:01,480] minus V1 must be equal to zero.
+- [00:29:02,180 - 00:29:03,760] That it cannot be a gradient
+- [00:29:04,600 - 00:29:06,720] or a variation of the velocity.
+- [00:29:07,460 - 00:29:08,880] This must be equal to zero.
+- [00:29:08,880 - 00:29:09,680] Now,
+- [00:29:09,680 - 00:29:11,120] if I take a small interval,
+- [00:29:11,700 - 00:29:14,060] let's imagine that this is a small interval,
+- [00:29:14,240 - 00:29:17,240] then the difference of the velocity at 2 and 1,
+- [00:29:18,220 - 00:29:21,540] assuming everything is nice and smooth and differentiable,
+- [00:29:22,120 - 00:29:23,540] the calculus applies,
+- [00:29:23,800 - 00:29:25,280] for a small interval,
+- [00:29:25,460 - 00:29:28,060] we can say that the difference of the velocities
+- [00:29:28,060 - 00:29:30,880] is just proportional to the derivative of the velocity
+- [00:29:30,880 - 00:29:32,140] with respect to x,
+- [00:29:32,940 - 00:29:34,260] times some delta x,
+- [00:29:34,560 - 00:29:37,520] where delta x is the interval here.
+- [00:29:40,080 - 00:29:41,520] And then we would write
+- [00:29:41,520 - 00:29:43,420] that this has to be equal to zero.
+- [00:29:44,460 - 00:29:46,360] Delta x is just a small interval,
+- [00:29:46,540 - 00:29:47,160] it's not zero,
+- [00:29:47,160 - 00:29:48,060] it's just a number,
+- [00:29:48,220 - 00:29:51,740] so it follows then that the derivative of the velocity
+- [00:29:51,740 - 00:29:54,620] with respect to x must be equal to zero
+- [00:29:54,620 - 00:29:56,620] for an incompressible fluid.
+- [00:29:56,940 - 00:29:58,840] Which is what we would intuitively imagine
+- [00:29:58,840 - 00:30:00,800] that the whole fluid has to move together.
+- [00:30:01,520 - 00:30:04,040] Since all of the motion is along the x-axis,
+- [00:30:04,280 - 00:30:06,080] I'm going to write this as the derivative
+- [00:30:06,080 - 00:30:08,200] of the x component of the velocity.
+- [00:30:08,880 - 00:30:10,860] There is only an x component of the velocity.
+- [00:30:11,820 - 00:30:17,720] But just to use a notation which will generalize,
+- [00:30:17,840 - 00:30:19,410] I'll write that this is dvx
+- [00:30:19,410 - 00:30:20,980] by dx is equal to zero.
+- [00:30:21,080 - 00:30:22,760] That's the condition in one dimension
+- [00:30:22,760 - 00:30:24,100] for an incompressible fluid,
+- [00:30:24,780 - 00:30:25,960] and it is very trivial.
+- [00:30:27,220 - 00:30:27,820] Questions?
+- [00:30:29,660 - 00:30:30,260] Good.
+- [00:30:31,160 - 00:30:31,760] Alright,
+- [00:30:31,760 - 00:30:33,740] now let's move on to two dimensions.
+- [00:30:34,120 - 00:30:37,020] I'm going to call the two directions x and y.
+- [00:30:37,960 - 00:30:38,740] Why not?
+- [00:30:39,060 - 00:30:40,280] x and y.
+- [00:30:44,520 - 00:30:45,720] Now let's ask,
+- [00:30:45,720 - 00:30:47,740] in a small interval of time,
+- [00:30:48,020 - 00:30:50,540] what is the increase or the decrease,
+- [00:30:50,800 - 00:30:53,420] I guess v2 minus v1 would be the decrease
+- [00:30:53,420 - 00:30:54,460] in the number of points,
+- [00:30:54,640 - 00:30:57,140] what is the decrease in the number of points
+- [00:30:57,140 - 00:30:58,520] in this little square here?
+- [00:30:58,600 - 00:31:00,490] Let's take this square to be
+- [00:31:00,490 - 00:31:02,380] of size delta x and delta y.
+- [00:31:02,560 - 00:31:03,180] It's not a square,
+- [00:31:03,180 - 00:31:03,980] it's a rectangle.
+- [00:31:04,980 - 00:31:07,000] How many points are in this little square?
+- [00:31:07,020 - 00:31:07,900] So we're entering and leaving
+- [00:31:09,280 - 00:31:13,180] on the various sides of this rectangle.
+- [00:31:13,840 - 00:31:14,440] Alright,
+- [00:31:14,440 - 00:31:16,260] let's start with the number of points coming in here.
+- [00:31:16,760 - 00:31:17,360] Again,
+- [00:31:17,360 - 00:31:20,340] we're imagining that the density is completely uniform,
+- [00:31:21,740 - 00:31:23,320] so the number of points
+- [00:31:23,320 - 00:31:24,900] per unit area to start with
+- [00:31:26,320 - 00:31:28,000] is completely uniform.
+- [00:31:28,420 - 00:31:29,740] If it's incompressible,
+- [00:31:29,740 - 00:31:32,200] then the number of points per unit area
+- [00:31:32,200 - 00:31:33,260] must stay the same,
+- [00:31:33,260 - 00:31:35,260] must be exactly the same afterwards.
+- [00:31:36,260 - 00:31:37,000] So I'll call this dvx by dx.
+- [00:31:37,000 - 00:31:37,080] Okay,
+- [00:31:37,080 - 00:31:39,340] so how many points come in from this side here?
+- [00:31:39,740 - 00:31:40,300] Well,
+- [00:31:40,300 - 00:31:41,550] the number of points coming
+- [00:31:41,550 - 00:31:42,800] in this way per unit time
+- [00:31:42,800 - 00:31:44,700] is clearly going to be proportional
+- [00:31:44,700 - 00:31:46,600] to the x component of velocity,
+- [00:31:47,260 - 00:31:49,540] the y component of velocity,
+- [00:31:49,880 - 00:31:52,160] a velocity in the vertical direction
+- [00:31:52,890 - 00:31:56,040] will not contribute to points crossing this boundary here.
+- [00:31:56,790 - 00:31:59,400] So the x component of motion here,
+- [00:31:59,400 - 00:32:00,340] vx,
+- [00:32:02,360 - 00:32:04,980] at the left-hand end here,
+- [00:32:07,000 - 00:32:10,600] will constitute the incoming points
+- [00:32:10,600 - 00:32:13,800] coming in from the left vertical side of the square.
+- [00:32:15,020 - 00:32:16,880] What about the number going out?
+- [00:32:17,980 - 00:32:18,460] Oh,
+- [00:32:18,460 - 00:32:19,360] there's another factor.
+- [00:32:19,880 - 00:32:20,960] There's another factor.
+- [00:32:21,080 - 00:32:22,180] Anybody know what the other factor is?
+- [00:32:23,480 - 00:32:24,180] Delta y.
+- [00:32:24,640 - 00:32:25,120] Yeah,
+- [00:32:25,120 - 00:32:27,120] the size of the y interval here.
+- [00:32:27,480 - 00:32:27,960] Obviously,
+- [00:32:27,960 - 00:32:30,260] the bigger the y interval for a given velocity,
+- [00:32:30,540 - 00:32:31,840] the more points will enter there.
+- [00:32:32,000 - 00:32:32,940] So there's another factor,
+- [00:32:32,940 - 00:32:33,900] which is just delta y.
+- [00:32:37,000 - 00:32:37,180] Now,
+- [00:32:37,180 - 00:32:38,520] how about the number of
+- [00:32:38,520 - 00:32:39,860] points going out on this side?
+- [00:32:42,220 - 00:32:44,480] That's also proportional to vx,
+- [00:32:44,660 - 00:32:46,620] but vx at the displaced point.
+- [00:32:47,640 - 00:32:48,300] All right,
+- [00:32:48,300 - 00:32:49,700] so we have to move ahead a little bit
+- [00:32:49,700 - 00:32:52,840] and subtract the points coming out on this side,
+- [00:32:52,900 - 00:32:54,080] exactly what we did over here.
+- [00:32:54,500 - 00:32:56,020] The answer is going to be
+- [00:32:56,020 - 00:33:00,040] the derivative of vx with respect to x
+- [00:33:03,280 - 00:33:06,460] times delta y times delta x.
+- [00:33:06,460 - 00:33:07,940] Where does this delta x come from?
+- [00:33:10,560 - 00:33:12,960] The difference of the velocity here and here
+- [00:33:13,960 - 00:33:15,590] is the derivative of v with
+- [00:33:15,590 - 00:33:17,220] respect to x times delta x.
+- [00:33:18,140 - 00:33:18,820] All right?
+- [00:33:18,960 - 00:33:21,660] The difference between the x component of velocity
+- [00:33:21,660 - 00:33:23,460] on the right-hand side of the square
+- [00:33:23,460 - 00:33:25,020] and on the left-hand side of the square
+- [00:33:25,900 - 00:33:28,070] is the derivative of v with
+- [00:33:28,070 - 00:33:30,240] respect to x times delta x.
+- [00:33:30,800 - 00:33:33,040] We have to multiply that by delta y
+- [00:33:33,040 - 00:33:35,620] to find the net number of points
+- [00:33:35,620 - 00:33:38,700] coming into on this side
+- [00:33:38,700 - 00:33:41,080] minus out on this side,
+- [00:33:41,220 - 00:33:42,100] and that's this.
+- [00:33:43,720 - 00:33:44,400] Okay,
+- [00:33:44,400 - 00:33:46,680] so this is the net number of points
+- [00:33:46,680 - 00:33:48,200] coming into the rectangle
+- [00:33:48,200 - 00:33:50,080] through the vertical edges.
+- [00:33:50,620 - 00:33:51,300] Now,
+- [00:33:51,300 - 00:33:52,560] what about the horizontal edges?
+- [00:33:53,420 - 00:33:54,980] The horizontal edges,
+- [00:33:54,980 - 00:33:56,980] things can also move in,
+- [00:33:57,120 - 00:34:00,660] but now the x component of velocity
+- [00:34:00,660 - 00:34:03,880] is not relevant
+- [00:34:03,880 - 00:34:05,520] to particles coming in
+- [00:34:05,620 - 00:34:06,600] in this direction.
+- [00:34:06,880 - 00:34:09,320] Only the y component of the motion
+- [00:34:09,320 - 00:34:12,260] is relevant on the horizontal boundaries.
+- [00:34:12,960 - 00:34:13,520] So,
+- [00:34:13,520 - 00:34:15,699] how many particles come in from the lower end?
+- [00:34:16,139 - 00:34:16,699] Well,
+- [00:34:16,699 - 00:34:17,380] that's going to be
+- [00:34:19,379 - 00:34:20,199] v sub y
+- [00:34:22,060 - 00:34:23,400] at the lower end
+- [00:34:23,400 - 00:34:24,900] times delta x.
+- [00:34:28,580 - 00:34:30,639] But then we have to subtract off
+- [00:34:31,560 - 00:34:34,580] v sub y coming out of the top end here,
+- [00:34:38,179 - 00:34:39,860] in order to find the difference
+- [00:34:39,860 - 00:34:41,560] of the incoming points
+- [00:34:41,560 - 00:34:43,080] and the outgoing points
+- [00:34:43,409 - 00:34:44,739] on the bottom and top.
+- [00:34:45,370 - 00:34:46,534] So that will give us
+- [00:34:46,534 - 00:34:47,699] the derivative of v sub y
+- [00:34:47,699 - 00:34:49,360] with respect to what?
+- [00:34:50,300 - 00:34:51,460] With respect to y,
+- [00:34:51,760 - 00:34:53,159] because we're going from bottom to top,
+- [00:34:55,800 - 00:34:56,840] times delta y.
+- [00:35:01,460 - 00:35:03,400] The whole net change
+- [00:35:03,400 - 00:35:07,300] in the number of points in this rectangle
+- [00:35:07,300 - 00:35:10,660] is simply proportional to delta x delta y,
+- [00:35:10,920 - 00:35:12,960] that's just the area of the little region,
+- [00:35:13,120 - 00:35:15,520] times a quantity which is called
+- [00:35:15,520 - 00:35:18,140] the divergence of the velocity field.
+- [00:35:18,920 - 00:35:20,800] This is the velocity field.
+- [00:35:21,100 - 00:35:23,160] It can vary from place to place,
+- [00:35:24,200 - 00:35:25,980] but it's definite and it's fixed.
+- [00:35:26,240 - 00:35:28,680] And this is the derivative of v sub x
+- [00:35:28,680 - 00:35:29,620] with respect to x
+- [00:35:30,380 - 00:35:32,300] plus the derivative of v sub y
+- [00:35:32,300 - 00:35:33,540] with respect to y.
+- [00:35:36,260 - 00:35:37,520] If this is positive,
+- [00:35:37,660 - 00:35:39,140] it corresponds to a decrease
+- [00:35:39,140 - 00:35:40,320] in the density.
+- [00:35:42,960 - 00:35:44,680] What if it's an incompressible fluid?
+- [00:35:45,400 - 00:35:47,060] If it's an incompressible fluid,
+- [00:35:47,280 - 00:35:49,200] then the net number of points coming in
+- [00:35:49,200 - 00:35:51,100] and going out must add up to zero.
+- [00:35:53,440 - 00:35:56,840] We can forget the delta x times delta y,
+- [00:35:57,060 - 00:35:57,880] that's just a number,
+- [00:35:57,980 - 00:35:59,100] a little area,
+- [00:35:59,680 - 00:36:01,100] and so the condition of
+- [00:36:01,100 - 00:36:02,020] incompressibility
+- [00:36:02,020 - 00:36:05,420] is that the divergence of the velocity field
+- [00:36:05,420 - 00:36:06,340] is equal to zero.
+- [00:36:06,480 - 00:36:08,320] Let's drop this factor here,
+- [00:36:08,460 - 00:36:09,760] it doesn't do anything for us.
+- [00:36:11,080 - 00:36:14,180] dvx by dx plus dvy by dy
+- [00:36:14,180 - 00:36:15,720] is equal to zero.
+- [00:36:16,790 - 00:36:18,540] This is not a general rule
+- [00:36:18,540 - 00:36:20,280] about all possible flows.
+- [00:36:20,720 - 00:36:22,840] This is a rule about
+- [00:36:22,840 - 00:36:24,440] incompressible flows
+- [00:36:25,890 - 00:36:27,740] that start with uniform density
+- [00:36:27,740 - 00:36:30,500] and maintain the uniformity of the density.
+- [00:36:31,120 - 00:36:32,720] Notice that it does not say
+- [00:36:32,720 - 00:36:34,380] that the velocity can't vary
+- [00:36:34,380 - 00:36:35,460] from place to place.
+- [00:36:36,160 - 00:36:37,380] But it does say
+- [00:36:37,380 - 00:36:39,280] that if the velocity is increased,
+- [00:36:39,360 - 00:36:40,780] if the x component of velocity
+- [00:36:40,780 - 00:36:42,520] is increasing in one direction,
+- [00:36:42,820 - 00:36:45,200] then the y component must be decreasing
+- [00:36:45,200 - 00:36:46,240] in the other direction.
+- [00:36:47,020 - 00:36:48,280] So it does not say
+- [00:36:48,280 - 00:36:51,040] that the velocity can't change
+- [00:36:51,040 - 00:36:52,040] from place to place.
+- [00:36:52,500 - 00:36:54,460] It doesn't require the motion
+- [00:36:54,460 - 00:36:55,900] to be just rigid motion.
+- [00:36:58,520 - 00:37:00,540] More complicated kinds of things
+- [00:37:00,540 - 00:37:01,080] can settle here,
+- [00:37:01,100 - 00:37:05,200] but it is constrained in this way.
+- [00:37:07,840 - 00:37:08,320] Questions?
+- [00:37:09,200 - 00:37:09,460] Yes?
+- [00:37:14,900 - 00:37:15,380] Yeah,
+- [00:37:15,380 - 00:37:16,200] but we take
+- [00:37:16,200 - 00:37:18,020] an instantaneous photograph of it
+- [00:37:18,020 - 00:37:18,560] and we ask,
+- [00:37:18,640 - 00:37:19,420] at this instant,
+- [00:37:19,580 - 00:37:21,140] what's the time rate of change
+- [00:37:21,140 - 00:37:23,700] of the number of points in here?
+- [00:37:24,200 - 00:37:25,560] So at any instant,
+- [00:37:25,780 - 00:37:27,820] something which is coming in here,
+- [00:37:27,960 - 00:37:28,200] yes,
+- [00:37:28,200 - 00:37:29,720] it could turn around
+- [00:37:29,720 - 00:37:30,300] and go up here.
+- [00:37:30,400 - 00:37:31,080] That's perfectly fine.
+- [00:37:31,080 - 00:37:31,240] That's perfectly acceptable.
+- [00:37:31,780 - 00:37:33,260] But that will be at a later time
+- [00:37:33,260 - 00:37:34,860] that it will be found going out here.
+- [00:37:35,040 - 00:37:35,420] So we take,
+- [00:37:35,460 - 00:37:36,280] we imagine a snapshot.
+- [00:37:37,560 - 00:37:38,800] Instantaneously right now,
+- [00:37:38,960 - 00:37:40,980] what is the time rate of change
+- [00:37:40,980 - 00:37:43,300] of the number of points in this volume?
+- [00:37:44,520 - 00:37:44,960] Okay?
+- [00:37:45,060 - 00:37:46,480] So if a point is coming through here,
+- [00:37:46,560 - 00:37:47,480] it's not going out there.
+- [00:37:48,540 - 00:37:48,980] Okay.
+- [00:37:50,420 - 00:37:52,380] So that argument applies to any space?
+- [00:37:52,760 - 00:37:54,780] It applies to any number of dimensions.
+- [00:37:56,960 - 00:37:58,860] So in any number of dimensions,
+- [00:37:59,080 - 00:37:59,740] we could write,
+- [00:37:59,740 - 00:38:03,040] there aren't enough letters in the alphabet,
+- [00:38:03,360 - 00:38:04,080] but I,
+- [00:38:04,080 - 00:38:04,920] x,
+- [00:38:04,920 - 00:38:05,920] y,
+- [00:38:05,920 - 00:38:08,280] and z here just refer to a general space
+- [00:38:08,280 - 00:38:09,880] having nothing to do with mechanics,
+- [00:38:10,140 - 00:38:12,600] just a general flow in any number of dimensions.
+- [00:38:13,080 - 00:38:15,660] The general rule for an incompressible flow
+- [00:38:15,660 - 00:38:18,160] would be that the derivative
+- [00:38:18,160 - 00:38:20,560] of the ith component of the velocity
+- [00:38:21,380 - 00:38:24,840] with respect to the ith x
+- [00:38:25,640 - 00:38:26,960] is equal to zero.
+- [00:38:29,740 - 00:38:30,620] All right.
+- [00:38:30,660 - 00:38:32,920] That's also written in the notation.
+- [00:38:34,722 - 00:38:34,862] そう
+- [00:38:36,610 - 00:38:37,050] sum of i,
+- [00:38:37,050 - 00:38:37,630] thank you
+- [00:38:39,930 - 00:38:41,030] that's also written
+- [00:38:41,030 - 00:38:43,550] in the notation that the divergence
+- [00:38:45,310 - 00:38:46,130] of v
+- [00:38:46,510 - 00:38:47,590] is equal to zero
+- [00:38:48,570 - 00:38:51,330] divergence simply means this act
+- [00:38:51,330 - 00:38:54,090] of differentiating the i-th component with
+- [00:38:54,090 - 00:38:56,690] respect to the i-th coordinate and summing them up
+- [00:38:57,170 - 00:38:58,290] it's called the divergence
+- [00:39:02,630 - 00:39:03,030] divergence
+- [00:39:03,030 - 00:39:05,130] i've assumed uniformity of the density,
+- [00:39:05,130 - 00:39:05,490] yes
+- [00:39:07,930 - 00:39:08,330] yeah,
+- [00:39:08,330 - 00:39:11,030] if i hadn't assumed uniformity of the density,
+- [00:39:11,030 - 00:39:12,310] i just did that to make it simpler
+- [00:39:12,709 - 00:39:14,810] had i not assumed uniformity of the density
+- [00:39:15,790 - 00:39:17,910] what you would have to do is invent
+- [00:39:17,910 - 00:39:20,030] the new quantity which is the density at any
+- [00:39:20,030 - 00:39:21,190] point times the velocity
+- [00:39:22,510 - 00:39:24,480] and then that would be the thing which
+- [00:39:24,480 - 00:39:26,450] would have zero divergence but if the density is
+- [00:39:26,450 - 00:39:26,750] uniform
+- [00:39:27,330 - 00:39:28,270] then that factors out
+- [00:39:29,090 - 00:39:29,630] so
+- [00:39:30,430 - 00:39:33,890] just for simplicity i imagined that the uh...
+- [00:39:34,400 - 00:39:36,445] and after all if it's an incompressible fluid
+- [00:39:36,445 - 00:39:38,490] it stands to reason that its density is everywhere
+- [00:39:38,490 - 00:39:40,410] the same since you can't change its density
+- [00:39:41,410 - 00:39:41,950] so
+- [00:39:43,750 - 00:39:44,290] um
+- [00:39:51,809 - 00:39:53,470] let's come back to phase space
+- [00:39:54,180 - 00:39:55,270] what are the x's
+- [00:39:55,700 - 00:39:58,270] the x's are just the coordinates in space
+- [00:39:58,290 - 00:40:03,070] the coordinates are the p's and q's
+- [00:40:04,210 - 00:40:07,170] and the q's and q's are the coordinates
+- [00:40:07,729 - 00:40:10,809] so we should identify the x's not just
+- [00:40:10,809 - 00:40:13,890] with q but with a p and a q
+- [00:40:13,890 - 00:40:16,490] so the number of x's
+- [00:40:16,490 - 00:40:19,090] is twice the number of q's
+- [00:40:19,090 - 00:40:22,070] one x for each p and q
+- [00:40:23,089 - 00:40:24,650] that's the space we're dealing with
+- [00:40:24,650 - 00:40:26,460] if there's only one q
+- [00:40:26,460 - 00:40:28,270] then it's a two dimensioned x
+- [00:40:28,270 - 00:40:28,650] space,
+- [00:40:28,650 - 00:40:29,890] one p and one q,
+- [00:40:29,890 - 00:40:30,710] and so forth.
+- [00:40:30,710 - 00:40:33,750] What are these quantities over here?
+- [00:40:33,750 - 00:40:34,630] p sub i dot
+- [00:40:34,630 - 00:40:36,150] and q sub i dot.
+- [00:40:36,150 - 00:40:39,670] Those are the local velocities in the phase space.
+- [00:40:39,670 - 00:40:43,230] They are the v sub i's.
+- [00:40:44,230 - 00:40:46,450] i now goes from one to two n,
+- [00:40:46,450 - 00:40:49,830] it runs over all of the coordinates in the momenta.
+- [00:40:49,830 - 00:40:51,590] But
+- [00:40:51,590 - 00:40:52,110] these are,
+- [00:40:52,110 - 00:40:53,690] we could call this here,
+- [00:40:53,690 - 00:40:59,390] we could call it v p sub i,
+- [00:40:59,390 - 00:41:02,310] the velocity along the
+- [00:41:02,310 - 00:41:03,530] axis p sub i.
+- [00:41:03,530 - 00:41:07,070] This we could call v q sub i.
+- [00:41:07,070 - 00:41:10,650] So the p dots and
+- [00:41:10,650 - 00:41:14,230] the q dots are the things
+- [00:41:14,230 - 00:41:17,870] that are being called the velocity.
+- [00:41:17,870 - 00:41:21,330] Now let's calculate the divergence of the flow.
+- [00:41:22,890 - 00:41:24,930] We're going to calculate the divergence of the flow,
+- [00:41:24,930 - 00:41:26,250] and of course what we're going to
+- [00:41:26,250 - 00:41:28,920] use is Hamilton's equations to see that
+- [00:41:28,920 - 00:41:31,590] the divergence of the flow is exactly zero.
+- [00:41:32,050 - 00:41:32,670] All right,
+- [00:41:32,670 - 00:41:33,830] so the divergence of the flow,
+- [00:41:33,830 - 00:41:37,890] we take v p sub i and we differentiate it
+- [00:41:37,890 - 00:41:39,070] with respect to p sub i.
+- [00:41:39,070 - 00:41:43,710] So let's write the divergence of the flow over here.
+- [00:41:43,710 - 00:41:50,610] First of
+- [00:41:50,610 - 00:41:50,810] all,
+- [00:41:50,810 - 00:41:51,230] we have
+- [00:41:51,950 - 00:41:56,490] derivative of the p,
+- [00:41:56,490 - 00:42:01,830] I'm not going to bother writing the i.
+- [00:42:01,830 - 00:42:02,870] Well,
+- [00:42:02,870 - 00:42:03,670] maybe I should.
+- [00:42:03,670 - 00:42:04,590] No,
+- [00:42:04,590 - 00:42:05,150] let's
+- [00:42:05,150 - 00:42:06,810] just do it for two dimensions first,
+- [00:42:06,810 - 00:42:08,610] then we'll come back and talk about it for any
+- [00:42:08,610 - 00:42:08,910] number.
+- [00:42:08,910 - 00:42:11,890] Derivative of v p with respect to p,
+- [00:42:11,890 - 00:42:13,710] with only one p and one q,
+- [00:42:13,710 - 00:42:16,270] what is that?
+- [00:42:16,970 - 00:42:17,410] Well,
+- [00:42:17,410 - 00:42:20,810] that is equal to the derivative with respect to p,
+- [00:42:23,150 - 00:42:24,070] times v p,
+- [00:42:24,070 - 00:42:26,870] but v p is minus the
+- [00:42:26,870 - 00:42:29,670] derivative of h with respect to q.
+- [00:42:29,670 - 00:42:33,890] All right,
+- [00:42:33,890 - 00:42:34,050] that's
+- [00:42:34,050 - 00:42:34,590] the first term.
+- [00:42:34,590 - 00:42:36,410] What's the second term in the divergence?
+- [00:42:36,410 - 00:42:38,550] The second term is just dv
+- [00:42:39,270 - 00:42:41,370] q by dq.
+- [00:42:41,370 - 00:42:43,990] All right,
+- [00:42:43,990 - 00:42:44,610] what is v q?
+- [00:42:44,610 - 00:42:45,690] That's over here,
+- [00:42:45,690 - 00:42:48,910] plus dh by dp.
+- [00:42:48,910 - 00:42:51,210] So this becomes dv q,
+- [00:42:51,230 - 00:42:58,670] d by dq of plus dh by dp.
+- [00:42:58,670 - 00:43:06,410] If we have several coordinates in momenta,
+- [00:43:06,410 - 00:43:07,810] then we would put
+- [00:43:07,810 - 00:43:11,510] an i here and sum over i everywhere.
+- [00:43:11,510 - 00:43:15,650] Also in the lower equation here.
+- [00:43:15,650 - 00:43:16,950] I won't bother
+- [00:43:16,950 - 00:43:17,330] with it though.
+- [00:43:17,890 - 00:43:18,350] Well,
+- [00:43:18,350 - 00:43:19,370] now you can see what happens.
+- [00:43:20,750 - 00:43:21,210] So we have a dv q,
+- [00:43:21,210 - 00:43:21,210] and we have a dh by dp.
+- [00:43:21,210 - 00:43:21,210] So we have a dv q,
+- [00:43:21,210 - 00:43:21,210] and we have a dh by dp.
+- [00:43:21,210 - 00:43:21,470] If we have several of these derivatives,
+- [00:43:21,470 - 00:43:21,470] we have an i,
+- [00:43:21,470 - 00:43:21,470] and we have some of these derivatives.
+- [00:43:21,470 - 00:43:23,650] Partial derivatives can be interchanged.
+- [00:43:23,650 - 00:43:27,030] The derivative with respect to p of the derivative
+- [00:43:27,030 - 00:43:29,530] with respect to q is the same as the
+- [00:43:29,530 - 00:43:32,030] derivative with respect to q of the derivative with respect
+- [00:43:32,030 - 00:43:32,530] to p.
+- [00:43:32,530 - 00:43:35,770] dp dq is the same as dq dp.
+- [00:43:35,770 - 00:43:39,810] It doesn't matter which order you differentiate something
+- [00:43:39,810 - 00:43:40,210] in.
+- [00:43:40,210 - 00:43:42,870] This one has a minus sign,
+- [00:43:42,870 - 00:43:44,490] this one has a plus sign.
+- [00:43:44,490 - 00:43:47,590] So these cancel in pairs.
+- [00:43:47,590 - 00:43:49,330] They
+- [00:43:49,330 - 00:43:50,370] cancel in pairs.
+- [00:43:51,529 - 00:43:52,330] In fact,
+- [00:43:52,330 - 00:43:55,250] it's not just that the divergence is equal to zero,
+- [00:43:55,250 - 00:43:56,780] it's equal to zero in a
+- [00:43:56,780 - 00:43:58,310] special way where they cancel in pairs,
+- [00:43:58,310 - 00:43:59,250] but that's okay.
+- [00:43:59,550 - 00:44:00,470] The divergence,
+- [00:44:00,470 - 00:44:01,410] the sum of these,
+- [00:44:01,410 - 00:44:01,930] dp,
+- [00:44:01,930 - 00:44:09,930] that's exactly equal to zero.
+- [00:44:11,669 - 00:44:13,190] So the sum of these,
+- [00:44:13,190 - 00:44:14,010] add them together,
+- [00:44:14,010 - 00:44:16,430] that's exactly equal to zero.
+- [00:44:16,430 - 00:44:19,650] And that proves that the
+- [00:44:19,650 - 00:44:22,870] flow in phase space is incompressible.
+- [00:44:31,550 - 00:44:35,510] That is quite a profound theorem about mechanics,
+- [00:44:35,510 - 00:44:37,630] the incompressibility of the flow,
+- [00:44:37,830 - 00:44:40,230] the fact that the phase points
+- [00:44:40,230 - 00:44:42,630] can't get squeezed into a smaller volume,
+- [00:44:42,810 - 00:44:44,330] that they maintain sort of,
+- [00:44:44,330 - 00:44:45,130] they have elbows,
+- [00:44:45,230 - 00:44:45,950] and they keep,
+- [00:44:45,950 - 00:44:46,410] for example,
+- [00:44:46,430 - 00:44:47,330] running into each other.
+- [00:44:49,130 - 00:44:51,350] That is probably the most
+- [00:44:51,350 - 00:44:53,570] important fact about Hamiltonian mechanics,
+- [00:44:54,390 - 00:44:56,550] that it is this incompressible kind of flow.
+- [00:45:03,990 - 00:45:06,990] Let's concentrate for a little while on two dimensions,
+- [00:45:07,330 - 00:45:08,590] one p and one q.
+- [00:45:10,790 - 00:45:11,430] Remember,
+- [00:45:11,430 - 00:45:15,210] this does not say that the distance between points,
+- [00:45:16,150 - 00:45:17,290] stays the same.
+- [00:45:18,810 - 00:45:19,790] As I said,
+- [00:45:19,790 - 00:45:21,330] what it says,
+- [00:45:21,330 - 00:45:23,770] is that the volume of a
+- [00:45:23,770 - 00:45:26,210] region of phase space stays the same.
+- [00:45:26,390 - 00:45:28,380] So a region like this could flow
+- [00:45:28,380 - 00:45:30,370] into a region that looks like this,
+- [00:45:32,610 - 00:45:34,470] as long as the volume stays the same,
+- [00:45:34,470 - 00:45:37,410] and in particular two points which are fairly close,
+- [00:45:37,410 - 00:45:38,990] can get fairly far.
+- [00:45:40,050 - 00:45:42,120] So there's no conservation of the
+- [00:45:42,120 - 00:45:44,190] distance between points in the phase space.
+- [00:45:44,450 - 00:45:45,190] Only the volume.
+- [00:45:45,210 - 00:45:48,610] Only the volume of a patch of phase space.
+- [00:45:51,690 - 00:45:53,570] This idea that,
+- [00:45:53,570 - 00:45:56,750] let's take the two dimensional case,
+- [00:45:57,010 - 00:46:00,170] that area is the important thing,
+- [00:46:00,170 - 00:46:01,730] and not distance,
+- [00:46:03,190 - 00:46:05,010] you can see in another way.
+- [00:46:13,490 - 00:46:15,190] Let's take the world of space,
+- [00:46:15,190 - 00:46:15,190] and the world of space,
+- [00:46:15,190 - 00:46:16,810] the world's simplest mechanical system.
+- [00:46:17,030 - 00:46:19,130] A particle moving along one axis,
+- [00:46:19,130 - 00:46:22,530] with an energy which is x dot squared,
+- [00:46:22,730 - 00:46:25,010] a kinetic energy which is x dot squared over two.
+- [00:46:25,370 - 00:46:27,090] I have even gone so far as
+- [00:46:27,090 - 00:46:28,810] to set the mass equal to one,
+- [00:46:28,810 - 00:46:29,650] to make it simple.
+- [00:46:32,830 - 00:46:34,250] There's a canonical momentum,
+- [00:46:34,250 - 00:46:35,370] p sub x,
+- [00:46:35,370 - 00:46:38,490] which is equal to the derivative,
+- [00:46:38,790 - 00:46:39,730] this is the Lagrangian.
+- [00:46:41,430 - 00:46:43,250] Lagrangian is x dot squared over two.
+- [00:46:43,790 - 00:46:46,570] The momentum canonically conjugate to x is the
+- [00:46:46,570 - 00:46:49,350] derivative of the Lagrangian with respect to x dot,
+- [00:46:49,530 - 00:46:50,630] and that's just x dot.
+- [00:46:52,850 - 00:46:53,330] Now,
+- [00:46:53,330 - 00:46:56,570] I could have used another coordinate.
+- [00:46:56,950 - 00:46:59,370] I didn't have to use x to describe this system.
+- [00:46:59,850 - 00:47:02,550] What would have happened had I used 2x?
+- [00:47:03,350 - 00:47:05,330] Suppose I defined a new variable,
+- [00:47:05,330 - 00:47:06,350] let me call it y,
+- [00:47:06,350 - 00:47:08,190] it does not stand for another axis,
+- [00:47:08,510 - 00:47:10,560] it just stands for another
+- [00:47:10,560 - 00:47:12,610] representation of exactly the same physics.
+- [00:47:18,430 - 00:47:19,890] A new coordinate,
+- [00:47:19,890 - 00:47:22,330] I'll define,
+- [00:47:22,330 - 00:47:25,050] and let's call it alpha times x.
+- [00:47:26,150 - 00:47:28,150] Alpha is just any number,
+- [00:47:28,150 - 00:47:28,910] fixed,
+- [00:47:28,910 - 00:47:30,090] it could be two,
+- [00:47:30,090 - 00:47:30,870] it could be a half,
+- [00:47:30,870 - 00:47:31,690] it could be seven,
+- [00:47:31,690 - 00:47:32,970] whatever it is.
+- [00:47:33,090 - 00:47:36,970] This is just another representation of the same system,
+- [00:47:36,970 - 00:47:40,390] where it's been labeled by a different axis,
+- [00:47:40,570 - 00:47:43,230] or an axis with either closer or further away.
+- [00:47:43,250 - 00:47:43,250] So,
+- [00:47:43,250 - 00:47:43,470] it's just a number of points,
+- [00:47:43,470 - 00:47:46,170] different units.
+- [00:47:46,290 - 00:47:47,830] It really comes down to a unit transformation.
+- [00:47:49,630 - 00:47:50,190] Okay,
+- [00:47:50,190 - 00:47:51,450] what is x dot?
+- [00:47:52,330 - 00:47:52,890] x,
+- [00:47:52,890 - 00:47:53,690] first of all,
+- [00:47:53,690 - 00:47:55,990] is equal to y over alpha,
+- [00:47:56,170 - 00:47:58,850] and x dot is just
+- [00:47:58,850 - 00:48:01,530] equal to y dot over alpha.
+- [00:48:02,810 - 00:48:04,490] Let's rewrite the Lagrangian.
+- [00:48:04,730 - 00:48:06,930] The Lagrangian doesn't change.
+- [00:48:07,090 - 00:48:09,630] The Lagrangian is the same numerical
+- [00:48:09,630 - 00:48:12,170] quantity no matter what coordinates we use.
+- [00:48:13,250 - 00:48:15,670] The Lagrangian will now become,
+- [00:48:15,670 - 00:48:19,050] it's still x dot squared over two,
+- [00:48:19,210 - 00:48:22,410] but that becomes now y
+- [00:48:22,410 - 00:48:25,610] dot squared over twice alpha squared.
+- [00:48:26,630 - 00:48:28,560] I've just written that x dot squared
+- [00:48:28,560 - 00:48:30,490] is y dot squared over alpha squared.
+- [00:48:30,990 - 00:48:32,410] That's the new Lagrangian.
+- [00:48:32,570 - 00:48:35,270] It's just another description of exactly the same system.
+- [00:48:35,790 - 00:48:38,470] What is the canonical momentum conjugate to y?
+- [00:48:41,610 - 00:48:42,210] Well,
+- [00:48:42,210 - 00:48:43,130] it's dl.
+- [00:48:43,130 - 00:48:43,970] dL by dy dot.
+- [00:48:44,860 - 00:48:48,625] P sub y is equal
+- [00:48:48,625 - 00:48:52,390] to y dot over alpha squared.
+- [00:48:56,170 - 00:48:56,910] Okay,
+- [00:48:56,910 - 00:48:58,030] let me now write,
+- [00:48:58,030 - 00:49:03,990] right over here we have y equals alpha times x.
+- [00:49:07,820 - 00:49:11,790] We have py equals y dot over alpha squared.
+- [00:49:14,450 - 00:49:18,410] That's also equal to x dot over alpha.
+- [00:49:19,950 - 00:49:24,470] I've used that y dot is equal to x dot,
+- [00:49:24,470 - 00:49:25,250] let's see,
+- [00:49:25,250 - 00:49:25,830] what have I written?
+- [00:49:25,930 - 00:49:26,190] Yes,
+- [00:49:26,190 - 00:49:28,490] y dot is alpha times x dot.
+- [00:49:28,790 - 00:49:30,610] So wherever you see y dot here,
+- [00:49:30,610 - 00:49:32,550] just stick alpha times x dot.
+- [00:49:32,730 - 00:49:35,390] That cancels one factor of alpha.
+- [00:49:36,590 - 00:49:37,270] All right,
+- [00:49:37,270 - 00:49:39,260] but this is also equal
+- [00:49:39,260 - 00:49:41,250] to p sub x over alpha.
+- [00:49:44,049 - 00:49:44,810] All right,
+- [00:49:44,810 - 00:49:47,190] so let me combine that with this equation over here.
+- [00:49:47,470 - 00:49:50,180] P sub y is equal to
+- [00:49:50,180 - 00:49:52,890] p sub x divided by alpha.
+- [00:49:54,670 - 00:49:55,870] Notice what's happened.
+- [00:49:56,290 - 00:49:59,150] When you make a coordinate
+- [00:49:59,150 - 00:50:02,010] transformation that stretches the x axis,
+- [00:50:02,949 - 00:50:06,570] it shrinks the p axis.
+- [00:50:06,810 - 00:50:07,150] Sorry,
+- [00:50:07,150 - 00:50:07,350] p,
+- [00:50:07,350 - 00:50:07,530] yeah.
+- [00:50:07,810 - 00:50:11,210] If you make a transformation which stretches the x axis,
+- [00:50:11,210 - 00:50:11,970] remember now,
+- [00:50:11,970 - 00:50:12,150] p,
+- [00:50:12,150 - 00:50:14,370] x and y are not different directions of space.
+- [00:50:14,650 - 00:50:16,130] They're just different coordinates
+- [00:50:16,130 - 00:50:17,610] describing the same thing.
+- [00:50:17,950 - 00:50:19,550] This is a coordinate transformation.
+- [00:50:20,350 - 00:50:22,270] Y is equal to alpha x.
+- [00:50:22,670 - 00:50:24,850] Along with it goes a
+- [00:50:24,850 - 00:50:27,030] transformation of the canonical momentum,
+- [00:50:27,270 - 00:50:29,110] but in the opposite direction.
+- [00:50:29,510 - 00:50:31,650] If you stretch the x axis,
+- [00:50:31,650 - 00:50:33,410] you shrink the p axis.
+- [00:50:34,830 - 00:50:35,430] Okay.
+- [00:50:35,910 - 00:50:36,850] That means,
+- [00:50:36,850 - 00:50:37,870] for example,
+- [00:50:37,870 - 00:50:40,070] if you take the phase space,
+- [00:50:40,070 - 00:50:40,650] let's,
+- [00:50:40,650 - 00:50:41,880] we can represent it either
+- [00:50:41,880 - 00:50:43,110] in terms of x or y,
+- [00:50:47,030 - 00:50:49,110] and we take a little region,
+- [00:50:49,850 - 00:50:52,310] let's call this x and px.
+- [00:50:54,910 - 00:50:58,020] Suppose we represent that same system in
+- [00:50:58,020 - 00:51:01,130] terms of y and p sub y.
+- [00:51:01,370 - 00:51:01,990] Well,
+- [00:51:01,990 - 00:51:07,830] the width of this box,
+- [00:51:07,930 - 00:51:10,050] as measured in y units,
+- [00:51:11,250 - 00:51:12,910] is alpha times as big
+- [00:51:12,910 - 00:51:14,570] as it was in x units.
+- [00:51:14,830 - 00:51:15,990] But on the other hand,
+- [00:51:15,990 - 00:51:17,370] the height of the region
+- [00:51:17,840 - 00:51:19,245] is one over alpha times
+- [00:51:19,245 - 00:51:20,650] what it was in x units.
+- [00:51:21,070 - 00:51:25,030] So whether the height of this box
+- [00:51:25,030 - 00:51:26,830] and the width of this box,
+- [00:51:27,050 - 00:51:29,210] as measured in either x or y,
+- [00:51:29,210 - 00:51:30,210] are not the same,
+- [00:51:30,310 - 00:51:32,390] but the area of the box,
+- [00:51:32,390 - 00:51:34,110] as measured in x and y,
+- [00:51:34,110 - 00:51:34,850] are the same.
+- [00:51:35,570 - 00:51:39,050] This is a characteristic feature of classical mechanics,
+- [00:51:40,070 - 00:51:42,420] that the various coordinate
+- [00:51:42,420 - 00:51:44,770] transformations that you would do,
+- [00:51:45,490 - 00:51:46,730] if combined,
+- [00:51:46,730 - 00:51:48,670] you do some coordinate transformation,
+- [00:51:49,050 - 00:51:51,200] but you also calculate what
+- [00:51:51,200 - 00:51:53,350] happens to the canonical momenta,
+- [00:51:54,250 - 00:51:56,610] what you'll find is that areas in
+- [00:51:56,610 - 00:51:58,970] the phase space always stay the same.
+- [00:51:59,210 - 00:52:01,690] So the idea of an element of
+- [00:52:01,690 - 00:52:04,170] area in phase space is very fundamental.
+- [00:52:06,050 - 00:52:08,290] It of course comes up in quantum mechanics,
+- [00:52:08,290 - 00:52:10,350] in quantum mechanics it's basically,
+- [00:52:10,350 - 00:52:11,270] roughly speaking,
+- [00:52:11,550 - 00:52:15,170] the statement that there's a smallest area in phase space.
+- [00:52:15,770 - 00:52:18,110] A quantum of area in phase space,
+- [00:52:18,110 - 00:52:18,890] we'll come to that,
+- [00:52:19,010 - 00:52:20,810] but I'll just mention it now,
+- [00:52:21,490 - 00:52:24,330] that things cannot be localized in the phase space
+- [00:52:24,330 - 00:52:26,330] better than that quantum of area.
+- [00:52:26,630 - 00:52:27,870] How big is the quantum of area?
+- [00:52:29,390 - 00:52:30,250] Planck's constant.
+- [00:52:32,130 - 00:52:32,690] No,
+- [00:52:32,690 - 00:52:32,970] no,
+- [00:52:32,970 - 00:52:33,390] not squared.
+- [00:52:34,130 - 00:52:34,970] Not squared.
+- [00:52:35,310 - 00:52:38,270] Planck's constant is not a measure of delta x,
+- [00:52:38,270 - 00:52:39,030] or delta p,
+- [00:52:39,030 - 00:52:41,330] it's a measure of area in the phase space.
+- [00:52:43,010 - 00:52:45,320] And it says that there's a fundamental
+- [00:52:45,320 - 00:52:47,630] unit of area in the phase space,
+- [00:52:47,870 - 00:52:49,950] and that you cannot think of anything smaller than that.
+- [00:52:50,010 - 00:52:50,990] That's the uncertainty principle.
+- [00:52:51,350 - 00:52:51,710] Yeah,
+- [00:52:51,710 - 00:52:51,990] question?
+- [00:52:56,150 - 00:53:00,290] If you consider any possible evolution of a system,
+- [00:53:02,490 - 00:53:05,130] can you use that as a,
+- [00:53:06,510 - 00:53:08,070] if it's convenient,
+- [00:53:08,270 - 00:53:10,320] can you always use that
+- [00:53:10,320 - 00:53:12,370] evolution as a change of coordinates?
+- [00:53:12,470 - 00:53:12,810] Absolutely.
+- [00:53:14,510 - 00:53:15,110] Absolutely.
+- [00:53:16,969 - 00:53:18,869] The mathematical statement is that
+- [00:53:18,869 - 00:53:20,770] the time evolution of a system
+- [00:53:20,770 - 00:53:21,950] is a canonical transformation.
+- [00:53:26,510 - 00:53:27,110] Yeah?
+- [00:53:27,870 - 00:53:30,010] What if you were to start with a Hamiltonian
+- [00:53:30,950 - 00:53:32,670] that didn't conserve energy,
+- [00:53:32,890 - 00:53:34,790] like a ball falling to the earth?
+- [00:53:35,130 - 00:53:36,050] That did or did not?
+- [00:53:36,650 - 00:53:37,070] What?
+- [00:53:37,310 - 00:53:38,050] Say it again.
+- [00:53:38,290 - 00:53:39,490] You started with a Hamiltonian
+- [00:53:39,490 - 00:53:40,690] that does not conserve energy,
+- [00:53:40,870 - 00:53:42,190] like a ball falling to the earth,
+- [00:53:42,310 - 00:53:44,390] you ignore the earth's movement.
+- [00:53:46,110 - 00:53:47,070] Why does the,
+- [00:53:47,070 - 00:53:48,710] why does it not conserve energy?
+- [00:53:49,770 - 00:53:51,220] Because the ball takes up energy
+- [00:53:51,220 - 00:53:52,670] as it falls to the earth.
+- [00:53:52,750 - 00:53:52,890] No,
+- [00:53:52,890 - 00:53:54,670] it loses potential energy,
+- [00:53:54,670 - 00:53:55,710] gains kinetic energy.
+- [00:53:58,430 - 00:53:58,850] Yeah,
+- [00:53:58,850 - 00:53:59,270] okay,
+- [00:53:59,270 - 00:53:59,870] that's the same thing.
+- [00:54:00,170 - 00:54:01,570] I don't know why I was thinking that.
+- [00:54:01,990 - 00:54:02,410] Right.
+- [00:54:03,430 - 00:54:03,850] Um.
+- [00:54:07,150 - 00:54:07,590] Good,
+- [00:54:07,590 - 00:54:07,950] okay,
+- [00:54:07,950 - 00:54:08,810] so let's,
+- [00:54:11,650 - 00:54:12,210] all right,
+- [00:54:12,210 - 00:54:12,630] the statement,
+- [00:54:13,290 - 00:54:16,150] the statement that the flow in phase space,
+- [00:54:16,210 - 00:54:18,270] flow in phase space is incompressible,
+- [00:54:18,729 - 00:54:20,430] that's called Liouville's theorem.
+- [00:54:23,809 - 00:54:24,250] So,
+- [00:54:24,250 - 00:54:25,510] what you just said a while ago,
+- [00:54:25,630 - 00:54:27,550] I saw that the alpha
+- [00:54:27,550 - 00:54:29,470] can now represent the time dependence
+- [00:54:29,470 - 00:54:30,870] of the system as a point moves.
+- [00:54:31,150 - 00:54:31,530] Where,
+- [00:54:31,530 - 00:54:31,870] where,
+- [00:54:31,870 - 00:54:32,090] where,
+- [00:54:32,090 - 00:54:32,390] here?
+- [00:54:32,830 - 00:54:33,270] Yeah,
+- [00:54:33,270 - 00:54:33,490] when you.
+- [00:54:33,490 - 00:54:33,610] No,
+- [00:54:33,610 - 00:54:35,610] this wasn't representing the time dependence of anything,
+- [00:54:35,730 - 00:54:37,190] this was just two different sets of coordinates,
+- [00:54:37,190 - 00:54:37,770] that's all.
+- [00:54:38,570 - 00:54:39,290] It could,
+- [00:54:39,290 - 00:54:40,690] and you would conclude it's a point.
+- [00:54:40,690 - 00:54:40,910] No,
+- [00:54:40,910 - 00:54:41,530] well.
+- [00:54:43,450 - 00:54:44,070] Is that,
+- [00:54:44,070 - 00:54:45,630] is that what you call a canonical transformation?
+- [00:54:45,990 - 00:54:47,530] This is a canonical transformation.
+- [00:54:47,850 - 00:54:48,010] Okay.
+- [00:54:48,190 - 00:54:48,570] Yeah,
+- [00:54:48,570 - 00:54:49,750] yeah.
+- [00:54:51,490 - 00:54:51,890] Right.
+- [00:54:52,650 - 00:54:53,470] And we haven't,
+- [00:54:53,470 - 00:54:54,750] we haven't discussed that at the moment,
+- [00:54:54,750 - 00:54:54,990] but,
+- [00:54:57,390 - 00:54:58,690] but the answer is yes,
+- [00:54:58,690 - 00:55:00,050] that is a canonical transformation.
+- [00:55:01,050 - 00:55:01,450] Okay.
+- [00:55:04,510 - 00:55:06,220] All the interesting transformations
+- [00:55:06,220 - 00:55:07,930] of mechanics are called canonical,
+- [00:55:08,230 - 00:55:09,890] but we haven't defined them yet,
+- [00:55:09,890 - 00:55:10,530] so let's,
+- [00:55:15,229 - 00:55:16,390] all right,
+- [00:55:16,390 - 00:55:17,570] let's talk a little bit,
+- [00:55:17,570 - 00:55:18,630] since it's been raised,
+- [00:55:18,810 - 00:55:20,310] about what chaos means.
+- [00:55:28,550 - 00:55:30,870] The系 μelve that we had expected to represent
+- [00:55:30,870 - 00:55:30,870] When it's sticky,
+- [00:55:30,870 - 00:55:32,210] there's something called
+- [00:55:32,210 - 00:55:34,890] What does that mean?
+- [00:55:39,630 - 00:55:40,830] It means the area.
+- [00:55:58,550 - 00:55:59,590] A p dot and a q dot?
+- [00:56:00,010 - 00:56:01,390] A p dot and a q dot?
+- [00:56:01,469 - 00:56:01,770] Yeah.
+- [00:56:02,570 - 00:56:03,890] A p dot and a q dot.
+- [00:56:04,810 - 00:56:05,860] You want to multiply a
+- [00:56:05,860 - 00:56:06,910] p dot times a q dot?
+- [00:56:07,350 - 00:56:07,750] Well,
+- [00:56:07,750 - 00:56:09,370] let's put two little arrows on it.
+- [00:56:11,150 - 00:56:11,550] Okay,
+- [00:56:11,550 - 00:56:12,930] let's multiply a p dot and a q dot.
+- [00:56:13,250 - 00:56:18,150] That means that's independent of the values that you get.
+- [00:56:18,270 - 00:56:20,150] It doesn't change if you change coordinates.
+- [00:56:22,910 - 00:56:26,610] What doesn't change is delta p times delta q.
+- [00:56:26,610 - 00:56:29,690] The area of a little region of phase space.
+- [00:56:30,630 - 00:56:31,730] It doesn't change.
+- [00:56:31,930 - 00:56:37,350] You have x and p,
+- [00:56:37,350 - 00:56:39,190] p sub x,
+- [00:56:39,190 - 00:56:40,810] and you have some other coordinates,
+- [00:56:43,970 - 00:56:47,770] which you can call y and p sub y.
+- [00:56:48,070 - 00:56:48,310] Okay,
+- [00:56:48,310 - 00:56:52,190] and if you calculate the,
+- [00:56:52,190 - 00:56:54,290] take a little region of area here,
+- [00:56:55,030 - 00:56:55,990] break it up.
+- [00:56:55,990 - 00:56:59,890] And calculate its area by adding up the squares
+- [00:56:59,890 - 00:57:03,790] and giving them and assigning them an area delta p,
+- [00:57:03,970 - 00:57:04,430] sorry,
+- [00:57:04,430 - 00:57:06,210] delta x times delta p sub x.
+- [00:57:07,510 - 00:57:10,110] Or add them up by assigning them
+- [00:57:10,110 - 00:57:12,710] delta y times delta p sub y.
+- [00:57:12,870 - 00:57:13,890] You'll get the same answer.
+- [00:57:14,910 - 00:57:16,650] So it's the area element,
+- [00:57:16,650 - 00:57:19,250] the size of an area,
+- [00:57:20,470 - 00:57:23,570] which will be the same in whatever coordinates you use.
+- [00:57:24,130 - 00:57:25,730] Whatever coordinates in momentum.
+- [00:57:25,990 - 00:57:28,320] If the coordinates in momentum
+- [00:57:28,320 - 00:57:30,650] come from the same Lagrangian.
+- [00:57:33,470 - 00:57:34,030] Okay,
+- [00:57:34,030 - 00:57:34,370] so yeah,
+- [00:57:34,370 - 00:57:38,650] so area has an invariant meaning in the phase space.
+- [00:57:41,650 - 00:57:43,770] It takes on its sharpest physical
+- [00:57:43,770 - 00:57:45,890] meaning when we get to quantum mechanics,
+- [00:57:46,710 - 00:57:49,590] where it really corresponds to the uncertainty principle.
+- [00:57:50,090 - 00:57:51,870] So what would the m-th
+- [00:57:51,870 - 00:57:53,650] product mean before quantum mechanics?
+- [00:57:54,310 - 00:57:54,870] Well,
+- [00:57:54,870 - 00:57:55,130] I don't know.
+- [00:57:57,570 - 00:57:58,890] What does it mean?
+- [00:57:59,930 - 00:58:02,590] The fact that it's conserved means that it's useful.
+- [00:58:05,070 - 00:58:05,590] That,
+- [00:58:05,590 - 00:58:06,110] that...
+- [00:58:18,770 - 00:58:19,290] Yeah,
+- [00:58:19,290 - 00:58:21,190] yeah,
+- [00:58:21,190 - 00:58:21,370] yeah,
+- [00:58:21,370 - 00:58:21,710] yeah,
+- [00:58:21,710 - 00:58:22,310] yeah.
+- [00:58:22,490 - 00:58:23,010] Yeah,
+- [00:58:23,010 - 00:58:25,970] it tells you what the right probability is.
+- [00:58:25,990 - 00:58:29,150] What the right probability measure is on the phase space.
+- [00:58:29,590 - 00:58:33,270] That invariant probability measure on the phase space.
+- [00:58:34,130 - 00:58:36,650] And that's useful in statistical mechanics.
+- [00:58:37,470 - 00:58:38,010] I see.
+- [00:58:38,110 - 00:58:39,950] So it's part of the possibilities.
+- [00:58:40,810 - 00:58:41,050] Yeah.
+- [00:58:41,610 - 00:58:42,250] Yeah.
+- [00:58:44,309 - 00:58:45,590] And it...
+- [00:58:48,190 - 00:58:49,430] For example,
+- [00:58:49,430 - 00:58:51,050] for example,
+- [00:58:51,050 - 00:58:54,630] if you have some chaotic system as a phase space,
+- [00:58:54,730 - 00:58:55,970] that means the phase point...
+- [00:58:55,990 - 00:58:57,290] So if the phase point moves around and gets...
+- [00:58:57,290 - 00:58:58,630] If the phase point really
+- [00:58:58,630 - 00:58:59,970] moves around in some wild way...
+- [00:59:04,370 - 00:59:05,410] So if the phase point moves around and gets...
+- [00:59:05,410 - 00:59:09,610] And you ask how often or what is the probability
+- [00:59:09,610 - 00:59:13,810] that it is found in a little region of phase space,
+- [00:59:14,110 - 00:59:16,210] then the answer will depend only on
+- [00:59:16,210 - 00:59:18,310] the area of the region of phase space.
+- [00:59:23,250 - 00:59:25,950] So area would be the thing which would tell you...
+- [00:59:25,950 - 00:59:25,960] And now it's a matter
+- [00:59:25,960 - 00:59:25,970] of time before it does that.
+- [00:59:26,570 - 00:59:28,050] the relative probability
+- [00:59:28,050 - 00:59:30,350] if you are interested in the relative probability
+- [00:59:30,350 - 00:59:32,130] probability could mean
+- [00:59:32,130 - 00:59:35,210] the amount of time spent in this little region here
+- [00:59:35,210 - 00:59:37,170] the phase point moves around
+- [00:59:37,170 - 00:59:38,910] goes crazy
+- [00:59:38,910 - 00:59:41,110] we stand there and watch it
+- [00:59:41,110 - 00:59:42,440] and ask how much time does
+- [00:59:42,440 - 00:59:43,770] it spend in that little volume
+- [00:59:44,570 - 00:59:45,610] that's a measure
+- [00:59:45,610 - 00:59:47,910] of the probability that you would find it
+- [00:59:47,910 - 00:59:49,510] in that volume versus this volume
+- [00:59:50,410 - 00:59:50,970] alright
+- [00:59:50,970 - 00:59:52,390] the answer
+- [00:59:53,910 - 00:59:54,470] is
+- [00:59:54,470 - 00:59:56,510] is that the relative probability
+- [00:59:56,510 - 00:59:59,430] of being in two different volumes
+- [00:59:59,430 - 01:00:03,710] of phase space is simply the ratio of the areas
+- [01:00:06,870 - 01:00:10,050] for a chaotic system,
+- [01:00:10,050 - 01:00:10,370] yeah,
+- [01:00:10,370 - 01:00:11,170] for a chaotic system,
+- [01:00:11,170 - 01:00:11,770] yes
+- [01:00:21,730 - 01:00:24,150] well here I'm defining probability
+- [01:00:24,150 - 01:00:25,670] game probability is not by expectations
+- [01:00:25,670 - 01:00:26,370] your,
+- [01:00:26,370 - 01:00:27,370] your naive expectations
+- [01:00:27,370 - 01:00:29,290] I'm defining it by the amount of time
+- [01:00:29,290 - 01:00:31,250] integrated time that it spends in a region
+- [01:00:31,250 - 01:00:32,670] so that's,
+- [01:00:32,670 - 01:00:33,910] that's a stronger
+- [01:00:34,650 - 01:00:35,210] yeah
+- [01:00:39,750 - 01:00:40,310] right
+- [01:00:44,210 - 01:00:44,770] the,
+- [01:00:44,770 - 01:00:46,970] the,
+- [01:00:46,970 - 01:00:47,130] yeah
+- [01:00:47,130 - 01:00:47,570] the,
+- [01:00:47,570 - 01:00:49,750] the amount of time that it's in here
+- [01:00:49,750 - 01:00:52,290] divided by the total time that you sample the system
+- [01:00:52,290 - 01:00:53,290] tends to
+- [01:00:53,290 - 01:00:55,310] to a finite limit for chaotic systems,
+- [01:00:55,310 - 01:00:55,650] yeah.
+- [01:00:58,610 - 01:00:59,050] No,
+- [01:00:59,050 - 01:01:01,890] yes,
+- [01:01:01,890 - 01:01:02,850] no,
+- [01:01:02,850 - 01:01:03,790] it probably does,
+- [01:01:03,790 - 01:01:04,990] but I have to think about it.
+- [01:01:10,549 - 01:01:10,989] No,
+- [01:01:10,989 - 01:01:12,950] I'm not sure what the word stochastic means,
+- [01:01:12,950 - 01:01:13,530] frankly.
+- [01:01:13,890 - 01:01:16,090] I think it just means an element of randomness.
+- [01:01:17,670 - 01:01:18,870] What does stochastic,
+- [01:01:18,870 - 01:01:20,050] what does the word stochastic mean?
+- [01:01:24,750 - 01:01:25,830] Non-deterministic?
+- [01:01:26,430 - 01:01:26,970] Yeah,
+- [01:01:26,970 - 01:01:27,130] well,
+- [01:01:27,130 - 01:01:27,390] of course,
+- [01:01:27,390 - 01:01:30,630] chaotic systems are secretly deterministic,
+- [01:01:30,650 - 01:01:34,830] but you can't follow them very long in time,
+- [01:01:35,580 - 01:01:38,650] unless you have a degree of precision,
+- [01:01:38,650 - 01:01:41,370] which is far beyond what's reasonable.
+- [01:01:41,590 - 01:01:42,910] I don't want to get
+- [01:01:42,910 - 01:01:44,230] into chaos too much right now.
+- [01:01:44,350 - 01:01:46,810] I will just tell you very
+- [01:01:46,810 - 01:01:49,270] quickly one other thing about chaotic systems,
+- [01:01:49,370 - 01:01:51,590] or the difference between chaotic and not chaotic.
+- [01:01:51,910 - 01:01:53,270] Both of them have the feature...
+- [01:01:53,290 - 01:01:55,810] that the phase-space volume stays the same.
+- [01:01:56,410 - 01:01:57,990] But that seems a little odd,
+- [01:01:57,990 - 01:02:00,850] because you would think that for systems which are chaotic,
+- [01:02:01,810 - 01:02:02,450] you know,
+- [01:02:02,450 - 01:02:02,730] just
+- [01:02:03,390 - 01:02:06,630] systems banging into each other and random collisions,
+- [01:02:06,630 - 01:02:07,550] not random,
+- [01:02:07,550 - 01:02:07,870] really,
+- [01:02:07,870 - 01:02:09,690] but governed by the equations of motion,
+- [01:02:09,830 - 01:02:11,880] but nevertheless complicated enough that they
+- [01:02:11,880 - 01:02:13,930] seem to scatter all over the place,
+- [01:02:14,130 - 01:02:17,810] you would think that the phase-space volume increases.
+- [01:02:18,950 - 01:02:20,390] Increases because you get,
+- [01:02:20,390 - 01:02:21,470] because after a while,
+- [01:02:21,470 - 01:02:23,270] you know less and less about where,
+- [01:02:23,290 - 01:02:23,970] where the system is.
+- [01:02:24,530 - 01:02:25,130] Well,
+- [01:02:25,130 - 01:02:26,630] that's not exactly true.
+- [01:02:26,810 - 01:02:27,970] Here's the way it works.
+- [01:02:29,130 - 01:02:30,650] Supposing you take...
+- [01:02:32,690 - 01:02:32,990] Alright,
+- [01:02:32,990 - 01:02:36,240] so the correct statement is that
+- [01:02:36,240 - 01:02:39,490] this little sphere in phase-space will evolve,
+- [01:02:39,710 - 01:02:42,040] and it will evolve into something which
+- [01:02:42,040 - 01:02:44,370] may look more or less like a sphere,
+- [01:02:44,650 - 01:02:46,770] but it may also look,
+- [01:02:46,770 - 01:02:48,450] you know,
+- [01:02:48,450 - 01:02:50,440] grow all kinds of complicated
+- [01:02:50,440 - 01:02:52,430] fibers and become very fractalated.
+- [01:02:53,070 - 01:02:53,270] I don't know.
+- [01:02:53,290 - 01:02:54,730] Is fractalated a word?
+- [01:02:54,890 - 01:02:55,470] Probably not.
+- [01:03:00,930 - 01:03:01,490] You know,
+- [01:03:01,490 - 01:03:03,210] it'll start to grow...
+- [01:03:06,549 - 01:03:06,950] Okay,
+- [01:03:06,950 - 01:03:08,010] now here's what you do.
+- [01:03:09,970 - 01:03:10,370] You...
+- [01:03:11,230 - 01:03:12,490] I want to put some more in.
+- [01:03:20,569 - 01:03:20,970] Okay,
+- [01:03:20,970 - 01:03:21,370] etc.
+- [01:03:22,170 - 01:03:22,570] Alright,
+- [01:03:22,570 - 01:03:22,850] now,
+- [01:03:23,290 - 01:03:24,670] if I literally,
+- [01:03:24,670 - 01:03:26,090] mathematically follow
+- [01:03:27,910 - 01:03:30,490] the points – incidentally...
+- [01:03:31,390 - 01:03:34,270] this will be just as continuous as this.
+- [01:03:34,890 - 01:03:36,970] If you look at it under a microscope,
+- [01:03:36,970 - 01:03:38,710] you will discover that
+- [01:03:38,710 - 01:03:40,450] this phase-space is completely continuous
+- [01:03:42,550 - 01:03:43,510] Nothing discontinuous
+- [01:03:43,510 - 01:03:45,190] is broken off it or anything like that.
+- [01:03:45,570 - 01:03:47,290] But as time goes on,
+- [01:03:47,290 - 01:03:50,210] it tends to get more and more fractured like this,
+- [01:03:50,210 - 01:03:51,310] so let's just call it fractured.
+- [01:03:52,550 - 01:03:53,270] If you take a look at the screen,
+- [01:03:53,270 - 01:03:53,270] it starts to match.
+- [01:03:53,270 - 01:03:53,870] Take each point,
+- [01:03:53,870 - 01:03:56,170] each point goes to a definite point.
+- [01:03:56,590 - 01:03:58,130] If you follow the volume,
+- [01:03:58,130 - 01:03:59,750] you'll find the volume is the same.
+- [01:03:59,970 - 01:04:01,430] But now you can do
+- [01:04:01,430 - 01:04:02,890] something which is called coarse-graining.
+- [01:04:03,810 - 01:04:08,500] Coarse-graining means a purposeful decision to
+- [01:04:08,500 - 01:04:13,190] draw little circles or spheres around phase
+- [01:04:13,190 - 01:04:15,070] points and,
+- [01:04:15,070 - 01:04:16,410] roughly speaking,
+- [01:04:16,410 - 01:04:18,310] what it corresponds to is saying,
+- [01:04:18,310 - 01:04:21,210] I don't have enough precision
+- [01:04:21,210 - 01:04:26,270] to be able to distinguish points of phase space.
+- [01:04:27,010 - 01:04:28,010] Strictly speaking,
+- [01:04:28,010 - 01:04:30,190] I can only distinguish this
+- [01:04:30,190 - 01:04:32,370] little volume from that little volume
+- [01:04:32,370 - 01:04:34,550] from that little volume and that little volume.
+- [01:04:34,870 - 01:04:38,430] So what we do is draw little spheres
+- [01:04:38,430 - 01:04:41,990] around each phase point and follow the little spheres
+- [01:04:41,990 - 01:04:44,070] rather than the individual phase points.
+- [01:04:45,410 - 01:04:49,470] Follow the spheres and what will happen is this.
+- [01:04:49,550 - 01:04:51,190] The sphere may go over here.
+- [01:04:51,210 - 01:04:53,570] The sphere may go way over here.
+- [01:04:54,290 - 01:04:55,950] This one may go way over here.
+- [01:04:56,150 - 01:04:57,570] This one may go way over here.
+- [01:04:59,430 - 01:05:03,110] But if we were to take
+- [01:05:03,110 - 01:05:06,790] the total area occupied by these spheres,
+- [01:05:06,790 - 01:05:09,370] I think it's pretty obvious
+- [01:05:09,370 - 01:05:11,800] that the total area will be much larger than
+- [01:05:11,800 - 01:05:14,230] the area that you started with if this thing
+- [01:05:14,230 - 01:05:16,590] branches out and fractalizes.
+- [01:05:17,190 - 01:05:18,070] And it is.
+- [01:05:18,790 - 01:05:21,030] So the coarse-grained...
+- [01:05:21,210 - 01:05:23,360] The following of the phase space allows
+- [01:05:23,360 - 01:05:25,510] the area to get bigger and bigger.
+- [01:05:25,730 - 01:05:26,730] And it does get bigger.
+- [01:05:26,870 - 01:05:26,910] Yeah?
+- [01:05:27,050 - 01:05:27,510] Okay,
+- [01:05:27,510 - 01:05:30,270] so that's why I was asking that question
+- [01:05:30,270 - 01:05:33,030] because in order for those areas to stay the
+- [01:05:33,030 - 01:05:34,910] same exactly,
+- [01:05:34,910 - 01:05:37,870] it would have to be in some kind
+- [01:05:37,870 - 01:05:40,830] of a limit as they're known to be random
+- [01:05:40,830 - 01:05:41,330] distribution.
+- [01:05:43,630 - 01:05:46,570] And what you're saying is because of the coarse-graining,
+- [01:05:46,570 - 01:05:47,890] it's effectively random.
+- [01:05:48,130 - 01:05:48,470] Yeah.
+- [01:05:48,550 - 01:05:49,950] Because of the coarse-graining,
+- [01:05:49,950 - 01:05:51,070] it's effectively random.
+- [01:05:51,110 - 01:05:51,190] Yeah.
+- [01:05:51,210 - 01:05:51,290] Because of the coarse-graining,
+- [01:05:51,290 - 01:05:51,290] it's effectively random.
+- [01:05:51,590 - 01:05:52,690] In other words,
+- [01:05:52,690 - 01:05:56,310] if you take the coarse-grained phase space,
+- [01:05:56,310 - 01:05:58,910] the nasty thing that happens
+- [01:05:58,910 - 01:06:01,010] is no matter how small the coarse-graining is,
+- [01:06:01,010 - 01:06:02,610] if you wait long enough,
+- [01:06:02,610 - 01:06:04,270] points within
+- [01:06:06,270 - 01:06:09,500] one coarse grain here will separate
+- [01:06:09,500 - 01:06:12,730] and get far outside a coarse grain.
+- [01:06:13,890 - 01:06:14,590] All right?
+- [01:06:14,630 - 01:06:16,610] If the coarse grain is defined by little spheres.
+- [01:06:18,210 - 01:06:18,770] So...
+- [01:06:18,770 - 01:06:21,070] So what would your second-class sphere say?
+- [01:06:21,130 - 01:06:21,690] What's that?
+- [01:06:21,870 - 01:06:22,950] They're not mapping from the first.
+- [01:06:23,190 - 01:06:23,590] No,
+- [01:06:23,590 - 01:06:23,710] no,
+- [01:06:23,710 - 01:06:23,850] no.
+- [01:06:23,890 - 01:06:25,270] They're not the mapping from the first.
+- [01:06:25,610 - 01:06:26,010] No.
+- [01:06:26,130 - 01:06:27,550] The mapping from the...
+- [01:06:27,550 - 01:06:27,730] No,
+- [01:06:27,730 - 01:06:27,890] no,
+- [01:06:27,890 - 01:06:28,050] no.
+- [01:06:28,090 - 01:06:29,370] They're not the mapping from the first.
+- [01:06:29,490 - 01:06:31,050] They're just spheres in the phase space,
+- [01:06:31,050 - 01:06:31,410] again,
+- [01:06:31,410 - 01:06:35,290] spheres that you can distinguish by the coarse-grained
+- [01:06:35,290 - 01:06:36,870] apparatus that you happen to have.
+- [01:06:37,370 - 01:06:37,770] So,
+- [01:06:37,770 - 01:06:39,830] the coarse-grained apparatus that you happen
+- [01:06:39,830 - 01:06:41,890] to have defines a coarse-graining on
+- [01:06:41,890 - 01:06:42,130] here,
+- [01:06:42,130 - 01:06:44,610] and it's not the same as the
+- [01:06:44,610 - 01:06:47,090] coarse-graining that would inherit by following this coarse-graining.
+- [01:06:47,350 - 01:06:48,610] It's just what you can measure,
+- [01:06:48,610 - 01:06:49,470] what you can distinguish.
+- [01:06:49,690 - 01:06:49,850] Sure.
+- [01:06:50,990 - 01:06:54,480] And of course what you can distinguish depends on
+- [01:06:54,480 - 01:06:57,970] the precision of your measuring apparatuses and so forth
+- [01:06:58,710 - 01:07:02,010] But no matter how precise
+- [01:07:02,010 - 01:07:05,310] your apparatuses and your description is,
+- [01:07:05,310 - 01:07:08,670] no matter how small a coarse graining here
+- [01:07:09,340 - 01:07:12,355] eventually points within a single cell here of
+- [01:07:12,355 - 01:07:15,370] this coarse graining will diverge and get outside
+- [01:07:15,370 - 01:07:18,160] the corresponding coarse grained
+- [01:07:18,160 - 01:07:20,950] description of what happens later
+- [01:07:21,730 - 01:07:24,890] That's what happens to a chaotic system.
+- [01:07:24,890 - 01:07:26,890] Most systems are chaotic of course
+- [01:07:28,450 - 01:07:32,330] The non-chaotic systems which sort of maintain
+- [01:07:32,330 - 01:07:36,210] their integrity in the coarse grained sense,
+- [01:07:36,210 - 01:07:37,470] those are rare and exceptional
+- [01:07:38,230 - 01:07:38,870] Yeah?
+- [01:07:39,070 - 01:07:41,070] The distance between points in a
+- [01:07:41,070 - 01:07:43,070] phase state that's derived by time
+- [01:07:43,070 - 01:07:44,150] Say it again
+- [01:07:44,150 - 01:07:44,750] The distance between points in a
+- [01:07:44,750 - 01:07:45,350] phase state that's derived by time
+- [01:07:45,370 - 01:07:47,110] The distance between points in
+- [01:07:47,110 - 01:07:48,850] the phase state when they change,
+- [01:07:48,850 - 01:07:50,250] are we looking at a change in time?
+- [01:07:50,430 - 01:07:50,790] Yeah,
+- [01:07:50,790 - 01:07:51,950] change in time
+- [01:07:53,009 - 01:07:53,650] Yeah
+- [01:07:54,370 - 01:07:57,110] Would you say the area increases?
+- [01:07:57,990 - 01:08:01,350] The area of the coarse grained,
+- [01:08:01,350 - 01:08:04,070] you take the original region of phase space
+- [01:08:04,070 - 01:08:06,790] you figure out exactly what it does
+- [01:08:07,290 - 01:08:09,350] and then in the original region
+- [01:08:09,350 - 01:08:11,410] of phase space you draw spheres
+- [01:08:12,190 - 01:08:13,890] If the original region
+- [01:08:13,890 - 01:08:18,910] is a nice simple sphere or something like a sphere
+- [01:08:19,560 - 01:08:22,795] then when you add up
+- [01:08:22,795 - 01:08:26,029] all of these coarse grained spheres
+- [01:08:26,580 - 01:08:28,770] you'll get the volume of the original sphere back,
+- [01:08:28,770 - 01:08:29,729] pretty much
+- [01:08:29,729 - 01:08:34,510] But now you take this tree,
+- [01:08:34,510 - 01:08:40,370] this very very finely fractalized tree that it grows into
+- [01:08:40,819 - 01:08:43,870] which may fill up this very big piece of space
+- [01:08:43,870 - 01:08:44,340] which may fill up this
+- [01:08:44,340 - 01:08:44,810] very big piece of this blackboard
+- [01:08:44,810 - 01:08:46,350] with very fine filaments
+- [01:08:46,870 - 01:08:48,550] very very close to each other
+- [01:08:48,550 - 01:08:49,710] Okay?
+- [01:08:49,790 - 01:08:50,970] So for example,
+- [01:08:50,970 - 01:08:53,310] if there are filaments extremely close to each other
+- [01:08:53,729 - 01:08:55,069] so close to each other
+- [01:08:55,810 - 01:08:57,149] that the coarse graining
+- [01:09:04,950 - 01:09:06,930] sort of slops over,
+- [01:09:06,930 - 01:09:08,620] or slops over the
+- [01:09:08,620 - 01:09:10,310] distinction between these different filaments
+- [01:09:11,169 - 01:09:15,609] then the total volume of these coarse grained green spheres
+- [01:09:16,270 - 01:09:19,390] will in general exceed the volume that you started with
+- [01:09:23,450 - 01:09:24,090] Why?
+- [01:09:28,029 - 01:09:28,350] Yeah,
+- [01:09:28,350 - 01:09:32,250] it's basically just going to cover this whole tree there
+- [01:09:32,250 - 01:09:33,029] Yeah,
+- [01:09:33,029 - 01:09:33,970] yeah
+- [01:09:33,970 - 01:09:35,990] You just...
+- [01:09:35,990 - 01:09:36,350] Yeah,
+- [01:09:36,350 - 01:09:37,189] yeah,
+- [01:09:37,189 - 01:09:37,750] yeah
+- [01:09:37,750 - 01:09:40,170] So you just look at this picture with fuzzy eyes
+- [01:09:40,310 - 01:09:43,510] and you see how big this region is
+- [01:09:44,250 - 01:09:46,670] This region can be much much bigger
+- [01:09:46,670 - 01:09:47,990] You can think of the thing
+- [01:09:47,990 - 01:09:49,310] as starting as a solid volume
+- [01:09:49,310 - 01:09:51,029] and then evolving by having
+- [01:09:51,029 - 01:09:52,750] it being invaded by other stuff
+- [01:09:52,750 - 01:09:53,210] Yeah,
+- [01:09:53,210 - 01:09:55,190] lots of ways
+- [01:09:55,190 - 01:09:56,750] Including in your interior
+- [01:09:57,370 - 01:09:58,390] The what?
+- [01:09:59,330 - 01:10:01,850] The coarse grained in the interior
+- [01:10:06,350 - 01:10:07,010] That's right,
+- [01:10:07,010 - 01:10:08,450] yes
+- [01:10:08,450 - 01:10:09,390] Yeah,
+- [01:10:09,390 - 01:10:12,650] you're counting everything within this little sphere here
+- [01:10:13,410 - 01:10:15,730] even though the fiber in here
+- [01:10:15,730 - 01:10:18,050] may be much thinner than the sphere
+- [01:10:18,610 - 01:10:20,250] But the fibers are so thin
+- [01:10:20,250 - 01:10:22,920] that your apparatuses cannot tell exactly
+- [01:10:22,920 - 01:10:25,590] where you are in the sphere
+- [01:10:25,590 - 01:10:27,350] All you know is you're somewhere in the sphere
+- [01:10:27,350 - 01:10:29,430] So at the end of the day,
+- [01:10:29,430 - 01:10:31,260] if you ask where am
+- [01:10:31,260 - 01:10:33,090] I if I start in here
+- [01:10:33,670 - 01:10:36,910] the answer to the question is you're somewhere in here
+- [01:10:36,910 - 01:10:38,330] in a much bigger region
+- [01:10:40,210 - 01:10:43,610] If you have infinite precise control
+- [01:10:44,549 - 01:10:47,690] over either the mathematics or the measurement
+- [01:10:48,489 - 01:10:52,590] then the volume of this fibered
+- [01:10:54,089 - 01:10:56,950] ultra-fine filamentary structure
+- [01:10:57,610 - 01:11:00,790] would be exactly the same as the original ball here
+- [01:11:02,690 - 01:11:04,330] But you don't follow things that way
+- [01:11:04,330 - 01:11:06,230] That's not the way you follow things in an experiment
+- [01:11:06,910 - 01:11:07,130] You say,
+- [01:11:07,130 - 01:11:07,390] okay,
+- [01:11:07,390 - 01:11:10,650] I detect a particle
+- [01:11:10,650 - 01:11:13,370] somewhere in this phase region over here
+- [01:11:14,030 - 01:11:16,690] I can't tell exactly where it is
+- [01:11:16,690 - 01:11:18,250] because it requires too much precision
+- [01:11:19,750 - 01:11:20,890] So in that sense,
+- [01:11:20,890 - 01:11:23,010] the phase space volume does expand
+- [01:11:24,690 - 01:11:26,110] It's called coarse graining
+- [01:11:27,050 - 01:11:29,110] and it is of course the
+- [01:11:29,110 - 01:11:31,170] origin of the second law of thermodynamics
+- [01:11:32,710 - 01:11:33,230] Okay,
+- [01:11:33,230 - 01:11:35,430] there's one other point that I should emphasize
+- [01:11:37,510 - 01:11:39,540] I don't know when and if we'll
+- [01:11:39,540 - 01:11:41,570] come to it in a more thorough way
+- [01:11:42,890 - 01:11:46,490] But the entropy of a system is a measure
+- [01:11:46,490 - 01:11:51,530] of the volume in phase space that the system occupies
+- [01:11:55,550 - 01:11:57,810] the detectable volume in phase space
+- [01:11:57,810 - 01:11:58,730] Meaning to say,
+- [01:11:58,730 - 01:12:00,540] if you know about a
+- [01:12:00,540 - 01:12:02,350] system that it's somewhere in here
+- [01:12:03,490 - 01:12:05,750] you take that volume of phase space
+- [01:12:05,750 - 01:12:07,830] that volume of phase space
+- [01:12:08,650 - 01:12:11,970] which corresponds to the boundaries of the region
+- [01:12:11,970 - 01:12:14,850] that your knowledge tells you that the system
+- [01:12:14,850 - 01:12:16,710] I'm getting tied up
+- [01:12:16,710 - 01:12:18,970] You have some knowledge about the system
+- [01:12:18,970 - 01:12:20,020] The knowledge of the system
+- [01:12:20,020 - 01:12:21,070] is that it's somewhere in here
+- [01:12:21,750 - 01:12:23,510] in this volume of phase space
+- [01:12:24,130 - 01:12:27,950] The entropy is a direct measure of that volume
+- [01:12:27,950 - 01:12:28,850] In fact,
+- [01:12:28,850 - 01:12:30,370] it's the logarithm of that volume
+- [01:12:31,590 - 01:12:32,190] Okay,
+- [01:12:32,190 - 01:12:33,110] essentially that's
+- [01:12:33,110 - 01:12:34,850] Now the system evolves
+- [01:12:35,750 - 01:12:36,970] And what you know afterwards
+- [01:12:37,500 - 01:12:38,790] is that it's somewhere in here
+- [01:12:39,690 - 01:12:42,750] You're not either clever enough or precise enough
+- [01:12:42,750 - 01:12:44,849] to be able to distinguish these fibers
+- [01:12:44,849 - 01:12:46,559] So all you know is that
+- [01:12:46,559 - 01:12:48,269] the system is somewhere in here
+- [01:12:49,110 - 01:12:53,329] The phase space volume is bigger afterwards
+- [01:12:53,329 - 01:12:55,150] than it started in the beginning
+- [01:12:56,190 - 01:12:57,860] because you haven't followed
+- [01:12:57,860 - 01:12:59,530] the details sufficiently carefully
+- [01:12:59,530 - 01:13:02,210] to know precisely to distinguish
+- [01:13:02,930 - 01:13:05,050] this bit of fiber from that bit of fiber
+- [01:13:07,070 - 01:13:08,769] That's why entropy increases
+- [01:13:10,610 - 01:13:12,510] Basically it's a statement that when
+- [01:13:12,510 - 01:13:14,410] the phase space fragments like this
+- [01:13:14,410 - 01:13:16,950] you lose information for
+- [01:13:17,749 - 01:13:19,950] not because information is really lost
+- [01:13:19,950 - 01:13:23,210] but because you have a hard time following the system
+- [01:13:23,210 - 01:13:24,630] It's a technological thing
+- [01:13:24,630 - 01:13:27,070] You can't follow things with sufficient precision
+- [01:13:28,450 - 01:13:29,130] Okay,
+- [01:13:29,130 - 01:13:29,630] that's
+- [01:13:32,890 - 01:13:34,530] That's Leoville's theorem
+- [01:13:38,989 - 01:13:40,370] As I said,
+- [01:13:40,370 - 01:13:45,390] it is extremely fundamental to both classical mechanics
+- [01:13:45,390 - 01:13:47,450] and its evolution into quantum mechanics
+- [01:13:49,290 - 01:13:51,970] What I wanted to do next
+- [01:13:54,510 - 01:13:56,350] Completely different direction
+- [01:13:56,350 - 01:14:01,230] was to work out the equations of a particle
+- [01:14:01,230 - 01:14:04,170] We have not studied very many examples
+- [01:14:04,170 - 01:14:04,970] Incidentally,
+- [01:14:04,970 - 01:14:05,590] you'll notice
+- [01:14:05,750 - 01:14:08,210] I want to study the example of
+- [01:14:08,210 - 01:14:10,670] a particle moving in an electromagnetic field
+- [01:14:11,370 - 01:14:14,390] There's one thing that's new in a magnetic field
+- [01:14:14,390 - 01:14:15,950] that we haven't encountered yet
+- [01:14:15,950 - 01:14:19,150] And it's the existence of velocity dependent forces
+- [01:14:20,390 - 01:14:21,410] So far,
+- [01:14:21,410 - 01:14:23,510] the forces that we've imagined
+- [01:14:23,510 - 01:14:26,430] depend on where you are but not how you're moving
+- [01:14:26,430 - 01:14:29,490] When we said that there's a potential energy function,
+- [01:14:29,490 - 01:14:30,290] u of x
+- [01:14:31,050 - 01:14:33,050] and we differentiate it
+- [01:14:33,630 - 01:14:34,730] to find the force
+- [01:14:38,030 - 01:14:38,590] Well,
+- [01:14:38,590 - 01:14:40,790] the left hand side is just a function of position
+- [01:14:41,410 - 01:14:42,820] So the force on a system
+- [01:14:42,820 - 01:14:44,230] just depends on where you are
+- [01:14:44,850 - 01:14:47,910] There are forces in nature which depend on velocity
+- [01:14:49,210 - 01:14:53,750] Magnetic field acting on a particle is a prime example
+- [01:14:56,170 - 01:14:56,730] Incidentally,
+- [01:14:56,730 - 01:14:58,050] friction is also an example
+- [01:14:59,450 - 01:15:02,950] Friction is an example where the velocity of a
+- [01:15:02,950 - 01:15:04,340] where the force on an
+- [01:15:04,340 - 01:15:05,730] object does depend on its velocity
+- [01:15:05,750 - 01:15:07,150] If it's standing still,
+- [01:15:07,150 - 01:15:08,170] there's no friction force
+- [01:15:08,170 - 01:15:08,910] If it's moving,
+- [01:15:08,910 - 01:15:09,930] there is a friction force
+- [01:15:09,930 - 01:15:10,910] Typically,
+- [01:15:10,910 - 01:15:11,950] the faster it moves,
+- [01:15:11,950 - 01:15:13,030] the larger the force
+- [01:15:13,030 - 01:15:15,890] There's a fundamental difference between
+- [01:15:15,890 - 01:15:18,750] magnetic forces and friction forces
+- [01:15:18,750 - 01:15:21,350] And the simplest way to say it is that
+- [01:15:22,170 - 01:15:23,790] forces due to magnetic fields,
+- [01:15:23,790 - 01:15:25,090] although they're velocity dependent
+- [01:15:25,090 - 01:15:28,050] are derivable from a principle of least action
+- [01:15:28,910 - 01:15:30,650] They have a Lagrangian formulation
+- [01:15:31,330 - 01:15:33,030] There's a conservation of energy
+- [01:15:33,030 - 01:15:34,910] And there's a Hamiltonian formulation
+- [01:15:35,870 - 01:15:38,070] It's just that the Lagrangian and Hamiltonian
+- [01:15:38,070 - 01:15:40,270] have a new little twist to them
+- [01:15:40,270 - 01:15:43,750] that I want to work out now
+- [01:15:59,590 - 01:16:01,690] Forces due to electric fields
+- [01:16:03,850 - 01:16:05,510] are no different
+- [01:16:05,750 - 01:16:07,410] than the forces we've already studied
+- [01:16:07,410 - 01:16:10,470] I think I'll come back to electric fields
+- [01:16:10,470 - 01:16:12,250] I want to concentrate on magnetic fields
+- [01:16:12,250 - 01:16:15,050] because there's a new phenomenon there that's interesting
+- [01:16:17,970 - 01:16:20,000] So what is the force of a
+- [01:16:20,000 - 01:16:22,030] particle if it's in a magnetic field?
+- [01:16:22,530 - 01:16:23,850] Magnetic field is called B
+- [01:16:24,890 - 01:16:27,350] It's a vector and it depends on position
+- [01:16:28,430 - 01:16:29,330] B of X,
+- [01:16:29,330 - 01:16:30,230] the magnetic field
+- [01:16:30,750 - 01:16:32,040] What is the force of a
+- [01:16:32,040 - 01:16:33,330] charged particle on a charged particle?
+- [01:16:35,750 - 01:16:36,550] V cross B
+- [01:16:36,550 - 01:16:37,550] Well,
+- [01:16:37,550 - 01:16:38,090] actually,
+- [01:16:38,090 - 01:16:39,550] Q times V cross B
+- [01:16:39,550 - 01:16:42,230] where Q is the charge of the particle
+- [01:16:43,950 - 01:16:46,470] Velocity cross magnetic field
+- [01:16:47,070 - 01:16:48,050] It's a vector,
+- [01:16:48,050 - 01:16:49,770] the cross product of two vectors
+- [01:16:49,770 - 01:16:50,850] Both of these are vectors
+- [01:16:52,170 - 01:16:53,930] This is the velocity of the particle
+- [01:16:54,690 - 01:16:55,910] This is the magnetic field
+- [01:16:56,569 - 01:16:57,450] And so it says
+- [01:16:57,450 - 01:17:00,810] Everybody know what a cross product is?
+- [01:17:01,150 - 01:17:02,490] I assume everybody knows
+- [01:17:02,490 - 01:17:04,450] That means yes or no?
+- [01:17:05,750 - 01:17:06,290] Something to do with a thumb
+- [01:17:06,290 - 01:17:07,010] Yeah,
+- [01:17:07,010 - 01:17:07,950] right
+- [01:17:09,290 - 01:17:09,810] Right,
+- [01:17:09,810 - 01:17:10,270] let's see
+- [01:17:13,170 - 01:17:13,690] Right
+- [01:17:15,190 - 01:17:16,630] Something to do with a thumb
+- [01:17:19,630 - 01:17:21,120] I'm going to assume everybody
+- [01:17:21,120 - 01:17:22,610] knows what a cross product is
+- [01:17:22,610 - 01:17:23,770] although I will define it
+- [01:17:26,050 - 01:17:28,850] So let's define the cross product right now
+- [01:17:29,589 - 01:17:31,569] The cross product can most
+- [01:17:31,569 - 01:17:33,550] easily be defined through its components
+- [01:17:36,930 - 01:17:38,710] V has three components,
+- [01:17:38,710 - 01:17:39,130] X,
+- [01:17:39,130 - 01:17:39,410] Y,
+- [01:17:39,410 - 01:17:39,710] and Z
+- [01:17:39,710 - 01:17:41,630] B has three components,
+- [01:17:41,630 - 01:17:42,150] X,
+- [01:17:42,150 - 01:17:42,370] Y,
+- [01:17:42,370 - 01:17:42,750] and Z
+- [01:17:42,750 - 01:17:44,930] A cross product has three components
+- [01:17:46,050 - 01:17:46,870] Here's the rule
+- [01:17:47,690 - 01:17:48,830] The Z component
+- [01:17:48,830 - 01:17:50,910] Let's forget Q here and let's just write the rule
+- [01:17:50,910 - 01:17:53,290] The Z component of this
+- [01:17:55,090 - 01:17:57,210] Let's call it the Z component of it
+- [01:17:58,150 - 01:17:59,270] V cross B,
+- [01:17:59,270 - 01:18:00,890] the Z component of it
+- [01:18:00,890 - 01:18:03,950] Is equal to VX BY
+- [01:18:07,270 - 01:18:08,930] minus VY BX
+- [01:18:11,470 - 01:18:14,430] I remember one of them
+- [01:18:14,430 - 01:18:15,510] I remember the Z component
+- [01:18:16,130 - 01:18:18,470] And then if I want any of the other components
+- [01:18:19,270 - 01:18:20,510] I just cycle
+- [01:18:20,510 - 01:18:23,150] Z goes to X goes to Y
+- [01:18:23,150 - 01:18:24,810] So the next one would be X
+- [01:18:25,350 - 01:18:26,530] V cross B,
+- [01:18:26,530 - 01:18:28,470] the X component
+- [01:18:28,470 - 01:18:29,810] And I cycle
+- [01:18:29,810 - 01:18:30,950] X goes to Y,
+- [01:18:30,950 - 01:18:31,790] VY
+- [01:18:32,330 - 01:18:33,470] Y goes to Z
+- [01:18:33,950 - 01:18:36,910] minus minus
+- [01:18:37,950 - 01:18:40,170] VZ BY
+- [01:18:40,950 - 01:18:42,990] And the last one
+- [01:18:44,970 - 01:18:47,070] V cross B
+- [01:18:47,950 - 01:18:49,450] in the Y direction
+- [01:18:49,450 - 01:18:51,830] is equal to
+- [01:18:51,830 - 01:18:53,590] XYZ
+- [01:18:55,210 - 01:18:56,610] YZX
+- [01:18:57,670 - 01:19:02,270] minus VX
+- [01:19:02,270 - 01:19:03,930] BY
+- [01:19:03,950 - 01:19:04,210] Z
+- [01:19:04,210 - 01:19:05,150] Did I get that right?
+- [01:19:05,250 - 01:19:05,970] I think I got it right
+- [01:19:07,389 - 01:19:09,130] That's the definition of a cross product
+- [01:19:19,750 - 01:19:21,090] Now we need one other concept
+- [01:19:21,650 - 01:19:23,910] We need the concept of the vector potential
+- [01:19:25,690 - 01:19:27,670] The vector potential is simply a way
+- [01:19:27,670 - 01:19:29,830] of writing magnetic fields
+- [01:19:30,590 - 01:19:31,690] But you would think,
+- [01:19:31,690 - 01:19:32,030] well
+- [01:19:32,030 - 01:19:34,630] If it's just a way of writing the magnetic field
+- [01:19:34,630 - 01:19:36,330] Why not just use the magnetic field?
+- [01:19:37,230 - 01:19:39,310] And the answer is
+- [01:19:39,310 - 01:19:42,210] You cannot write the mechanics of a charged particle
+- [01:19:42,210 - 01:19:43,990] Just in terms of the magnetic field
+- [01:19:43,990 - 01:19:45,330] You need the vector potential
+- [01:19:47,070 - 01:19:49,230] You can of course write the mechanics
+- [01:19:50,830 - 01:19:51,850] F equals MA
+- [01:19:51,850 - 01:19:53,690] But you cannot write a Hamiltonian
+- [01:19:53,690 - 01:19:54,950] You cannot write a Lagrangian
+- [01:19:54,950 - 01:19:58,590] You cannot write even an expression for canonical momenta
+- [01:19:59,430 - 01:20:01,890] You need an auxiliary quantity called
+- [01:20:01,890 - 01:20:02,610] the vector potential
+- [01:20:02,610 - 01:20:05,550] And the vector potential is just defined
+- [01:20:05,550 - 01:20:08,090] by the condition that the magnetic field
+- [01:20:08,780 - 01:20:09,630] is the curl
+- [01:20:09,630 - 01:20:11,890] of the vector potential
+- [01:20:15,680 - 01:20:17,190] Let's write down what curl means
+- [01:20:17,190 - 01:20:18,430] because we'll need it later
+- [01:20:19,570 - 01:20:21,770] The vector potential is also a vector
+- [01:20:23,830 - 01:20:26,910] The magnetic field is a vector
+- [01:20:26,910 - 01:20:29,350] The vector potential is a vector
+- [01:20:32,930 - 01:20:34,710] What's special about things which
+- [01:20:34,710 - 01:20:37,150] are curls of other things?
+- [01:20:39,590 - 01:20:40,830] They have no divergence
+- [01:20:41,530 - 01:20:44,150] The magnetic field is a thing which has no divergence
+- [01:20:44,150 - 01:20:46,250] And that's why it's convenient to write it this way
+- [01:20:46,250 - 01:20:47,270] But for our purposes
+- [01:20:47,950 - 01:20:50,150] Let's imagine that the vector potential
+- [01:20:50,150 - 01:20:52,890] is something fundamental that we begin with
+- [01:20:52,890 - 01:20:55,810] And that the magnetic field is a derived quantity
+- [01:20:56,430 - 01:20:58,040] We're going to see that
+- [01:20:58,040 - 01:20:59,650] the mechanics of a charged particle
+- [01:20:59,650 - 01:21:02,870] is best written in terms of the vector potential
+- [01:21:02,870 - 01:21:04,050] not the magnetic field
+- [01:21:06,710 - 01:21:07,310] Okay,
+- [01:21:07,310 - 01:21:09,890] let's write down the definition of cross product
+- [01:21:10,790 - 01:21:12,350] The cross product again
+- [01:21:13,630 - 01:21:15,550] can be defined by its components
+- [01:21:17,050 - 01:21:18,590] del cross A,
+- [01:21:18,590 - 01:21:20,530] the z component of it
+- [01:21:20,530 - 01:21:23,010] Now it's basically the same thing
+- [01:21:23,010 - 01:21:24,970] except wherever you see a v up there
+- [01:21:24,970 - 01:21:26,570] wherever you see a b stick an a
+- [01:21:26,570 - 01:21:28,910] and wherever you see a v over there
+- [01:21:28,910 - 01:21:31,270] put an upside down delta
+- [01:21:32,510 - 01:21:32,990] Alright,
+- [01:21:32,990 - 01:21:34,290] so this just says that this is
+- [01:21:34,290 - 01:21:36,110] What does delta mean?
+- [01:21:37,130 - 01:21:39,430] It just means the collection of three derivatives
+- [01:21:39,930 - 01:21:40,730] Delta x,
+- [01:21:40,730 - 01:21:41,390] delta y,
+- [01:21:41,390 - 01:21:42,290] and delta z are just
+- [01:21:42,290 - 01:21:43,570] derivative with respect to x
+- [01:21:43,570 - 01:21:44,870] the derivative with respect to y
+- [01:21:44,870 - 01:21:46,350] and the derivative with respect to z
+- [01:21:46,350 - 01:21:47,990] I assume you all know that kind of thing
+- [01:21:47,990 - 01:21:49,590] A little bit of vector calculus
+- [01:21:50,790 - 01:21:53,390] But let's just write down exactly what this means
+- [01:21:53,910 - 01:21:54,790] This means
+- [01:21:56,490 - 01:21:58,330] derivative with respect to x
+- [01:21:58,330 - 01:22:00,310] of A sub y
+- [01:22:01,110 - 01:22:03,250] minus the derivative with respect to y
+- [01:22:04,030 - 01:22:05,470] of A sub x
+- [01:22:06,990 - 01:22:09,310] And then cycle it down
+- [01:22:10,050 - 01:22:11,330] del cross A,
+- [01:22:11,330 - 01:22:13,290] the x component of it
+- [01:22:13,290 - 01:22:15,790] is the y derivative of A z
+- [01:22:16,210 - 01:22:18,110] minus the z derivative of A y
+- [01:22:18,110 - 01:22:19,870] and just cycle it down
+- [01:22:19,870 - 01:22:20,730] x goes to y,
+- [01:22:20,730 - 01:22:21,630] y goes to z,
+- [01:22:21,630 - 01:22:22,830] z goes back to x
+- [01:22:22,830 - 01:22:24,370] I won't write them all down
+- [01:22:25,190 - 01:22:25,750] So
+- [01:22:28,330 - 01:22:31,030] We can now write that the force
+- [01:22:32,350 - 01:22:34,150] on a charged particle
+- [01:22:34,150 - 01:22:35,890] due to the magnetic field
+- [01:22:37,409 - 01:22:40,850] is the charge times v cross B
+- [01:22:40,850 - 01:22:45,530] which is also the charge times v
+- [01:22:46,330 - 01:22:48,810] cross the curl of A
+- [01:22:57,630 - 01:22:59,850] I'm going to bore you a little more with this
+- [01:22:59,850 - 01:23:02,970] by writing out the individual components
+- [01:23:02,970 - 01:23:06,510] by writing out the z component of force here
+- [01:23:06,510 - 01:23:08,390] It's a little bit tedious
+- [01:23:09,750 - 01:23:11,030] but we'll need it
+- [01:23:12,330 - 01:23:15,290] We'll need the expression for the z component of force
+- [01:23:15,290 - 01:23:17,570] explicitly in terms of the vector potential
+- [01:23:18,810 - 01:23:20,310] So let's write it out
+- [01:23:20,310 - 01:23:24,510] This is just an exercise in substituting
+- [01:23:25,290 - 01:23:25,930] Alright,
+- [01:23:25,930 - 01:23:28,410] I want the z component of the force
+- [01:23:30,310 - 01:23:31,410] F sub z
+- [01:23:34,530 - 01:23:37,330] is equal to the charge
+- [01:23:39,550 - 01:23:40,190] Now,
+- [01:23:40,190 - 01:23:41,630] the cross product
+- [01:23:41,630 - 01:23:43,410] We have the cross product,
+- [01:23:43,410 - 01:23:44,090] where is it?
+- [01:23:44,430 - 01:23:47,890] We have the z component of v cross B
+- [01:23:49,210 - 01:23:50,550] That's v cross B y
+- [01:23:57,210 - 01:23:58,890] minus v cross B y
+- [01:24:00,350 - 01:24:01,630] B cross B x
+- [01:24:01,630 - 01:24:03,090] But now let's just substitute
+- [01:24:03,090 - 01:24:04,550] in for b cross B y
+- [01:24:04,550 - 01:24:05,230] Where is it?
+- [01:24:06,470 - 01:24:07,290] Oh brother
+- [01:24:10,470 - 01:24:11,810] This is q
+- [01:24:13,310 - 01:24:14,750] v cross B x
+- [01:24:14,750 - 01:24:15,390] Now
+- [01:24:16,560 - 01:24:17,370] Go to
+- [01:24:23,389 - 01:24:24,750] b cross B y
+- [01:24:24,750 - 01:24:29,960] b y is d z A
+- [01:24:29,960 - 01:24:35,170] x minus d x A z
+- [01:24:35,810 - 01:24:38,430] That's the first term
+- [01:24:38,430 - 01:24:46,310] minus v y times B x
+- [01:24:46,310 - 01:24:49,530] which is d y A
+- [01:24:49,530 - 01:24:52,750] z minus d z A y
+- [01:24:56,490 - 01:24:57,050] Well,
+- [01:24:57,050 - 01:24:58,670] this is a fairly complicated expression
+- [01:24:58,670 - 01:25:00,290] for the z component of force
+- [01:25:00,990 - 01:25:02,830] But if you know the vector potential
+- [01:25:03,850 - 01:25:06,230] you can work out what this is
+- [01:25:06,230 - 01:25:07,870] It's just some vector field
+- [01:25:07,870 - 01:25:10,350] You can multiply it by the velocities
+- [01:25:10,350 - 01:25:11,890] and you can compute the force,
+- [01:25:11,890 - 01:25:13,270] the z component of force
+- [01:25:13,270 - 01:25:15,290] If you want the other components
+- [01:25:15,290 - 01:25:15,810] again,
+- [01:25:15,810 - 01:25:16,790] you just cycle
+- [01:25:17,650 - 01:25:18,730] The x
+- [01:25:19,650 - 01:25:20,970] x goes to y
+- [01:25:20,970 - 01:25:22,210] y goes to z
+- [01:25:22,210 - 01:25:23,410] You just cycle through
+- [01:25:25,170 - 01:25:25,770] Alright
+- [01:25:26,590 - 01:25:28,670] That's the force on a particle
+- [01:25:28,670 - 01:25:31,650] And the equation is just Newton's equation
+- [01:25:32,070 - 01:25:33,570] F equals m A
+- [01:25:36,270 - 01:25:37,850] But now the new thing
+- [01:25:38,490 - 01:25:39,890] is that the acceleration
+- [01:25:39,890 - 01:25:42,130] doesn't only depend on the position
+- [01:25:42,130 - 01:25:43,830] It does depend on the position
+- [01:25:43,830 - 01:25:46,490] through the position dependence of A
+- [01:25:46,490 - 01:25:48,870] but it also depends on the velocity
+- [01:25:48,870 - 01:25:51,730] So these are called velocity dependent forces
+- [01:25:51,730 - 01:25:53,530] because they depend on velocity
+- [01:25:55,530 - 01:25:56,090] Alright
+- [01:25:56,970 - 01:25:58,940] We want to formulate the theory of
+- [01:25:58,940 - 01:26:00,910] a charged particle moving in a magnetic field
+- [01:26:00,910 - 01:26:04,850] in the Lagrangian or Hamiltonian form
+- [01:26:04,850 - 01:26:07,330] Not obvious that we can do it
+- [01:26:07,330 - 01:26:09,530] It is not obvious that this is of the form
+- [01:26:10,450 - 01:26:12,950] that allows us to have a Hamiltonian
+- [01:26:12,950 - 01:26:15,230] a Lagrangian and so forth
+- [01:26:15,230 - 01:26:16,170] or an action principle
+- [01:26:18,250 - 01:26:20,570] The easiest way to confirm that
+- [01:26:20,570 - 01:26:22,130] is just to make a guess
+- [01:26:22,130 - 01:26:23,550] at what the action is
+- [01:26:23,550 - 01:26:24,710] and then follow it through
+- [01:26:26,050 - 01:26:27,450] The new thing in the action
+- [01:26:27,450 - 01:26:27,710] Well,
+- [01:26:27,710 - 01:26:28,390] first of all
+- [01:26:29,610 - 01:26:30,770] We do expect
+- [01:26:31,910 - 01:26:34,370] that if the electric charge was zero
+- [01:26:34,950 - 01:26:36,570] that there would be the usual terms
+- [01:26:36,570 - 01:26:37,490] Alright
+- [01:26:38,690 - 01:26:40,470] So let's write the action
+- [01:26:40,470 - 01:26:42,570] Let's make a guess for the action
+- [01:26:42,950 - 01:26:45,310] The integral of the Lagrangian dt
+- [01:26:46,310 - 01:26:46,870] Well,
+- [01:26:46,870 - 01:26:47,550] first of all,
+- [01:26:47,550 - 01:26:48,550] guess has the usual
+- [01:26:50,730 - 01:26:53,710] mv squared over 2 dt
+- [01:26:54,590 - 01:26:56,070] where v squared means
+- [01:26:56,070 - 01:26:58,430] the sums of the squares of the x component
+- [01:26:58,750 - 01:27:01,170] y component and z component of the velocities
+- [01:27:01,470 - 01:27:02,570] The usual thing
+- [01:27:02,570 - 01:27:05,190] This is what we would do for a free particle
+- [01:27:05,190 - 01:27:07,870] and if the particle has no electric charge
+- [01:27:07,870 - 01:27:09,590] it doesn't feel the magnetic field
+- [01:27:10,270 - 01:27:11,850] And then there's another term
+- [01:27:11,850 - 01:27:13,540] And the other term is as
+- [01:27:13,540 - 01:27:15,230] simple as it could possibly be
+- [01:27:15,800 - 01:27:18,490] We take the orbit of the charged particle
+- [01:27:18,490 - 01:27:19,830] We break it up
+- [01:27:21,450 - 01:27:22,910] into little segments
+- [01:27:23,670 - 01:27:26,190] Each segment we call dx
+- [01:27:26,970 - 01:27:28,810] also dy and dz
+- [01:27:29,660 - 01:27:32,230] But let's just abbreviate it by calling it dx
+- [01:27:33,660 - 01:27:34,690] Each little segment
+- [01:27:35,470 - 01:27:37,770] defines a differential displacement
+- [01:27:37,770 - 01:27:38,550] in dx,
+- [01:27:38,550 - 01:27:39,450] dy and dz
+- [01:27:39,450 - 01:27:42,350] The added term
+- [01:27:43,870 - 01:27:46,750] that's first of all proportional to the electric charge
+- [01:27:48,270 - 01:27:50,550] If there's no magnetic field
+- [01:27:50,550 - 01:27:53,570] then obviously there is no additional term
+- [01:27:53,570 - 01:27:55,130] even if there is an electric charge
+- [01:27:55,130 - 01:27:58,430] The extra term is related to both the charge
+- [01:27:58,430 - 01:27:59,610] and the magnetic field
+- [01:28:00,300 - 01:28:02,390] But it's related through the vector potential
+- [01:28:02,390 - 01:28:03,710] Where's vector potential?
+- [01:28:04,870 - 01:28:05,690] Oh boy,
+- [01:28:05,690 - 01:28:07,130] did I erase the most important equation?
+- [01:28:10,410 - 01:28:11,210] I did
+- [01:28:12,810 - 01:28:13,370] Okay
+- [01:28:15,030 - 01:28:16,920] I assume you all memorized
+- [01:28:16,920 - 01:28:18,810] what v cross b looks like
+- [01:28:18,810 - 01:28:19,970] in terms of the vector potential
+- [01:28:19,970 - 01:28:22,390] And you'll recognize it when I write it down
+- [01:28:22,990 - 01:28:24,710] I didn't mean to erase it
+- [01:28:24,710 - 01:28:25,810] Alright
+- [01:28:26,330 - 01:28:27,490] What can you write down?
+- [01:28:27,770 - 01:28:30,130] It's going to have the vector potential in it
+- [01:28:32,430 - 01:28:34,550] So let's call it a sub i
+- [01:28:36,130 - 01:28:38,250] The simplest thing you can write down
+- [01:28:38,250 - 01:28:39,430] is the integral of the vector potential
+- [01:28:39,450 - 01:28:40,510] the line integral
+- [01:28:41,350 - 01:28:42,650] of the vector potential
+- [01:28:43,429 - 01:28:46,150] dotted into the differential displacement dx
+- [01:28:46,150 - 01:28:47,190] In other words,
+- [01:28:47,190 - 01:28:47,770] what this means
+- [01:28:48,450 - 01:28:50,970] is every place in space you have a vector potential
+- [01:28:52,250 - 01:28:55,650] As the particle sweeps out through its trajectory
+- [01:28:56,510 - 01:28:58,710] there's a contribution to its action
+- [01:28:58,710 - 01:29:01,410] from each little differential displacement here
+- [01:29:01,410 - 01:29:03,590] And the contribution to the action
+- [01:29:03,590 - 01:29:05,330] is just take the dot product
+- [01:29:05,330 - 01:29:07,170] of the vector potential
+- [01:29:07,170 - 01:29:08,430] with the displacement
+- [01:29:09,450 - 01:29:09,930] In other words,
+- [01:29:09,930 - 01:29:11,410] the component of the vector potential
+- [01:29:11,410 - 01:29:13,490] along the direction of the displacement
+- [01:29:13,490 - 01:29:15,490] and add them all up
+- [01:29:18,090 - 01:29:19,450] Very simple prescription
+- [01:29:19,450 - 01:29:21,070] How do I know that's the answer?
+- [01:29:21,310 - 01:29:21,470] Well,
+- [01:29:21,470 - 01:29:23,810] I know that's the answer because it was written down
+- [01:29:23,810 - 01:29:25,510] in the early parts of the 20th century
+- [01:29:25,510 - 01:29:26,710] and I learned it as a student
+- [01:29:27,250 - 01:29:28,670] Is that dxi?
+- [01:29:30,250 - 01:29:30,770] Yeah,
+- [01:29:30,770 - 01:29:31,410] dxi
+- [01:29:31,410 - 01:29:32,050] Good
+- [01:29:32,050 - 01:29:35,390] Or you can just write a dot dx
+- [01:29:36,010 - 01:29:38,350] where you can think of both a and dx
+- [01:29:38,350 - 01:29:39,430] as little vectors
+- [01:29:39,450 - 01:29:41,430] One is a little vector
+- [01:29:41,430 - 01:29:42,650] the other is just a vector
+- [01:29:43,430 - 01:29:46,690] A dot dx can represent the dot product
+- [01:29:46,690 - 01:29:48,390] of the vector potential
+- [01:29:48,390 - 01:29:50,110] with the differential displacement
+- [01:29:51,930 - 01:29:55,730] It doesn't seem like units are working out right
+- [01:29:55,730 - 01:29:57,050] Is there a time in there?
+- [01:30:01,750 - 01:30:03,090] How do you know what the units are?
+- [01:30:03,870 - 01:30:05,310] Do you know what the units of A are?
+- [01:30:05,390 - 01:30:06,850] Or what the units of Q are?
+- [01:30:08,130 - 01:30:08,610] Well,
+- [01:30:08,610 - 01:30:09,430] you could work out
+- [01:30:09,450 - 01:30:09,990] You could work backwards
+- [01:30:09,990 - 01:30:13,510] and you'd expect to see a time in there
+- [01:30:13,510 - 01:30:14,810] A time?
+- [01:30:15,050 - 01:30:15,490] And b squared
+- [01:30:15,490 - 01:30:17,630] So b squared is
+- [01:30:17,630 - 01:30:21,090] The first integral has a
+- [01:30:21,090 - 01:30:22,710] But how can you tell me what the units are
+- [01:30:22,710 - 01:30:24,090] unless we know what the units of Q are?
+- [01:30:27,150 - 01:30:27,550] Okay
+- [01:30:27,550 - 01:30:28,090] Or A
+- [01:30:28,550 - 01:30:29,990] How do we know what the units of A are?
+- [01:30:33,490 - 01:30:33,890] Well,
+- [01:30:33,890 - 01:30:35,210] the units of A and the units of Q
+- [01:30:35,210 - 01:30:35,570] Obviously,
+- [01:30:35,570 - 01:30:37,150] the combination
+- [01:30:37,150 - 01:30:39,090] Q times A is the important thing
+- [01:30:39,450 - 01:30:41,670] And the combination of Q times A
+- [01:30:41,670 - 01:30:43,170] has units
+- [01:30:43,170 - 01:30:45,450] that are required to make this
+- [01:30:45,450 - 01:30:46,550] have the same units as that
+- [01:30:48,410 - 01:30:50,070] What are the units of an action,
+- [01:30:50,070 - 01:30:50,750] incidentally?
+- [01:30:52,690 - 01:30:54,830] Or momentum times position
+- [01:30:55,450 - 01:30:55,830] Sorry,
+- [01:30:55,830 - 01:30:56,210] momentum
+- [01:30:56,210 - 01:30:56,910] Yeah,
+- [01:30:56,910 - 01:30:58,310] momentum times x
+- [01:30:59,930 - 01:31:00,870] No problem
+- [01:31:00,870 - 01:31:02,850] You can always give Q the right dimensions
+- [01:31:02,850 - 01:31:03,670] This is correct
+- [01:31:05,430 - 01:31:08,230] In some appropriate choice of units
+- [01:31:08,230 - 01:31:08,970] This is correct
+- [01:31:09,450 - 01:31:11,370] It depends on the conventions
+- [01:31:11,890 - 01:31:13,050] In some conventions
+- [01:31:13,050 - 01:31:14,630] there are pi's floating around
+- [01:31:14,630 - 01:31:15,730] or speeds of light
+- [01:31:15,730 - 01:31:17,270] But you can set them all equal to one
+- [01:31:18,030 - 01:31:19,690] And since I'm trying to describe
+- [01:31:19,690 - 01:31:23,510] a phenomenon rather than a numerical effect
+- [01:31:24,050 - 01:31:26,730] Let's just set all the numerical constants equal to one
+- [01:31:26,730 - 01:31:27,710] in order to absorb them
+- [01:31:27,710 - 01:31:28,990] into the electric charge here
+- [01:31:30,250 - 01:31:30,730] Okay
+- [01:31:30,730 - 01:31:32,010] Now this is
+- [01:31:32,010 - 01:31:32,410] Yeah
+- [01:31:34,950 - 01:31:35,430] Yes
+- [01:31:36,790 - 01:31:38,390] That's exactly what I was about to do
+- [01:31:39,450 - 01:31:40,990] So this does not have the usual form
+- [01:31:40,990 - 01:31:41,930] of an action
+- [01:31:41,930 - 01:31:45,170] which depends on velocities and positions
+- [01:31:46,810 - 01:31:49,590] The a's depend on position as a rule
+- [01:31:49,590 - 01:31:51,790] But what is this dx here?
+- [01:31:52,690 - 01:31:54,450] All we have to do
+- [01:31:54,450 - 01:31:56,210] is divide and multiply by dt
+- [01:31:59,330 - 01:32:00,710] The x by dt
+- [01:32:01,300 - 01:32:03,530] That's just the x component of the velocity
+- [01:32:04,190 - 01:32:07,030] So we can also write this as
+- [01:32:08,450 - 01:32:09,070] a
+- [01:32:10,070 - 01:32:11,790] dotted into the velocity
+- [01:32:12,750 - 01:32:13,630] integral dt
+- [01:32:15,710 - 01:32:18,330] Or I can write it in terms of components
+- [01:32:20,010 - 01:32:21,130] a sub i
+- [01:32:22,090 - 01:32:23,170] x sub i
+- [01:32:23,170 - 01:32:24,710] dot dt
+- [01:32:25,590 - 01:32:27,710] And now we see the usual form
+- [01:32:28,970 - 01:32:29,490] What's that?
+- [01:32:29,570 - 01:32:30,070] Sum over i
+- [01:32:30,930 - 01:32:31,410] Yeah
+- [01:32:32,030 - 01:32:32,950] Sum over i
+- [01:32:36,390 - 01:32:36,870] Alright
+- [01:32:37,230 - 01:32:37,850] So we see,
+- [01:32:37,850 - 01:32:39,430] and this of course is also x sub i
+- [01:32:39,450 - 01:32:40,170] dot squared
+- [01:32:41,750 - 01:32:42,910] Sum over i
+- [01:32:42,910 - 01:32:43,910] I'm not going to write it
+- [01:32:45,490 - 01:32:46,930] Alright so we have then
+- [01:32:46,930 - 01:32:48,470] a typical Lagrangian
+- [01:32:48,470 - 01:32:50,810] We can write out now what the Lagrangian is
+- [01:32:51,270 - 01:32:53,330] And it depends on position and velocity
+- [01:32:53,950 - 01:32:54,730] the way
+- [01:32:54,730 - 01:32:57,130] any respectable Lagrangian would
+- [01:32:58,350 - 01:32:58,950] Lagrangian
+- [01:32:59,570 - 01:33:01,490] for a particle in a magnetic field
+- [01:33:02,210 - 01:33:02,810] is
+- [01:33:02,810 - 01:33:05,330] one half the mass of the particle
+- [01:33:05,330 - 01:33:07,390] times x sub i
+- [01:33:07,390 - 01:33:08,270] dot squared
+- [01:33:09,450 - 01:33:10,150] goes over x,
+- [01:33:10,150 - 01:33:10,430] y,
+- [01:33:10,430 - 01:33:10,790] and z
+- [01:33:12,090 - 01:33:12,650] sum
+- [01:33:16,510 - 01:33:17,070] plus
+- [01:33:21,110 - 01:33:21,670] q
+- [01:33:21,670 - 01:33:23,170] the charge of a particle
+- [01:33:24,110 - 01:33:25,410] x sub i dot
+- [01:33:26,650 - 01:33:28,550] times the vector potential
+- [01:33:28,550 - 01:33:29,670] a sub i
+- [01:33:37,510 - 01:33:38,650] What's the next step?
+- [01:33:38,870 - 01:33:39,430] We have to do the same
+- [01:33:39,430 - 01:33:44,140] The next step is to prove that the equation of motion for
+- [01:33:44,140 - 01:33:48,850] this object is f equals m a with the right hand side being
+- [01:33:49,770 - 01:33:50,830] Where is it?
+- [01:33:51,170 - 01:33:52,130] qv cross b
+- [01:33:53,230 - 01:33:53,910] f
+- [01:33:55,930 - 01:33:56,610] equals
+- [01:33:57,950 - 01:33:59,610] qv cross b
+- [01:34:01,970 - 01:34:03,230] If we can do that
+- [01:34:03,230 - 01:34:05,470] If we can now take the Lagrange equations
+- [01:34:05,470 - 01:34:07,150] Here's the Lagrangian
+- [01:34:07,150 - 01:34:08,890] Take the Lagrange equations
+- [01:34:09,430 - 01:34:10,670] and see if we can prove
+- [01:34:11,260 - 01:34:12,970] that the force on a particle
+- [01:34:12,970 - 01:34:15,110] which is equal to mass times acceleration
+- [01:34:15,950 - 01:34:17,970] that this is equal to qv cross b
+- [01:34:17,970 - 01:34:18,950] If we can do that
+- [01:34:18,950 - 01:34:19,610] then we're finished
+- [01:34:19,610 - 01:34:22,310] We found the Lagrangian formulation of
+- [01:34:22,310 - 01:34:24,270] particle in a magnetic field
+- [01:34:25,290 - 01:34:26,870] So this is now an exercise
+- [01:34:26,870 - 01:34:28,470] in just plugging it through
+- [01:34:31,610 - 01:34:33,450] I could tell you to go home and do it
+- [01:34:33,450 - 01:34:34,130] but let's do it
+- [01:34:34,130 - 01:34:35,930] Let's just carry it out
+- [01:34:37,610 - 01:34:39,850] There's one curious thing coming up
+- [01:34:39,850 - 01:34:40,850] that we'll see in a second
+- [01:34:45,110 - 01:34:46,290] First of all,
+- [01:34:46,290 - 01:34:47,630] what is the canonical momentum
+- [01:34:48,830 - 01:34:49,770] p sub x
+- [01:34:50,750 - 01:34:51,230] Well,
+- [01:34:51,230 - 01:34:52,130] it's the derivative
+- [01:34:52,130 - 01:34:54,490] of the Lagrangian with respect to x dot
+- [01:34:55,530 - 01:34:57,070] So let's take the x component
+- [01:34:57,070 - 01:34:58,370] I now mean the x component
+- [01:34:58,370 - 01:35:00,090] We could write down y and z also
+- [01:35:00,869 - 01:35:01,750] That's going to be
+- [01:35:01,750 - 01:35:04,650] m x dot
+- [01:35:05,150 - 01:35:05,870] from here
+- [01:35:07,850 - 01:35:08,670] Usual thing
+- [01:35:10,090 - 01:35:11,290] Normal momentum
+- [01:35:11,290 - 01:35:13,290] But then there's another term
+- [01:35:13,290 - 01:35:16,550] plus q a sub x
+- [01:35:18,710 - 01:35:20,630] And of course the same kind of thing
+- [01:35:20,630 - 01:35:21,710] for py and pz
+- [01:35:22,850 - 01:35:24,590] So we have a system now
+- [01:35:24,590 - 01:35:26,270] where the canonical momentum
+- [01:35:26,270 - 01:35:28,910] is not just m times v
+- [01:35:28,910 - 01:35:30,670] It's m times v
+- [01:35:30,670 - 01:35:31,930] plus something proportional
+- [01:35:31,930 - 01:35:32,910] to the vector potential
+- [01:35:32,910 - 01:35:35,910] So we have a system now
+- [01:35:37,370 - 01:35:39,550] Sometimes m times x dot
+- [01:35:39,550 - 01:35:41,350] is called the mechanical momentum
+- [01:35:42,410 - 01:35:43,610] It's sometimes called
+- [01:35:43,610 - 01:35:44,690] the mechanical momentum
+- [01:35:45,730 - 01:35:46,570] Meaning to say
+- [01:35:46,570 - 01:35:49,510] nothing other than that it's
+- [01:35:49,510 - 01:35:50,350] mass times velocity
+- [01:35:50,350 - 01:35:52,690] And the whole thing is called
+- [01:35:52,690 - 01:35:53,690] the canonical momentum
+- [01:35:55,810 - 01:35:58,650] So that's one new thing here
+- [01:35:58,650 - 01:35:59,630] We see something new
+- [01:35:59,630 - 01:36:02,990] that there's a discrepancy
+- [01:36:02,990 - 01:36:05,270] between the canonical momentum
+- [01:36:05,270 - 01:36:07,250] and what we naively think of
+- [01:36:07,250 - 01:36:07,770] as momentum
+- [01:36:09,470 - 01:36:11,370] But now let's work out
+- [01:36:11,370 - 01:36:12,490] the equation of motion
+- [01:36:14,010 - 01:36:15,110] Let's work out
+- [01:36:15,110 - 01:36:16,090] the z component
+- [01:36:16,090 - 01:36:18,210] There's three of these
+- [01:36:18,210 - 01:36:19,430] But let's get to pz
+- [01:36:20,050 - 01:36:22,150] is equal to m z dot
+- [01:36:22,150 - 01:36:24,410] plus q a sub z
+- [01:36:25,670 - 01:36:26,810] I'm going to work out
+- [01:36:26,810 - 01:36:28,990] the z component of the equation of motion
+- [01:36:28,990 - 01:36:30,150] What is it?
+- [01:36:30,290 - 01:36:32,830] It's the time derivative of
+- [01:36:32,830 - 01:36:34,430] the momentum
+- [01:36:35,270 - 01:36:36,190] I'll just write it down over here
+- [01:36:36,190 - 01:36:37,350] d by dt
+- [01:36:39,250 - 01:36:42,110] of dl by dz dot
+- [01:36:42,690 - 01:36:44,590] is equal to dl by dz
+- [01:36:47,030 - 01:36:48,410] dL by dz dot
+- [01:36:48,410 - 01:36:49,830] that's just pz
+- [01:36:51,990 - 01:36:52,550] dL by dz dot
+- [01:36:52,550 - 01:36:53,450] So we have to take
+- [01:36:53,450 - 01:36:54,410] the time derivative
+- [01:36:54,410 - 01:36:55,690] of this thing here
+- [01:36:55,690 - 01:36:57,310] Let's write down the time derivative
+- [01:36:57,310 - 01:37:00,830] It's m z double dot
+- [01:37:00,830 - 01:37:02,370] That's mass times acceleration
+- [01:37:04,150 - 01:37:05,050] And then
+- [01:37:05,270 - 01:37:06,130] there's another term
+- [01:37:07,190 - 01:37:08,930] in the time derivative of pz
+- [01:37:09,570 - 01:37:11,230] It's plus q
+- [01:37:12,110 - 01:37:13,570] times the time derivative
+- [01:37:13,570 - 01:37:14,470] of az
+- [01:37:17,070 - 01:37:18,710] Now in a moment we'll come back
+- [01:37:18,710 - 01:37:21,530] and work out what the time derivative of az is
+- [01:37:21,530 - 01:37:23,750] But let's go to the right hand side
+- [01:37:23,750 - 01:37:24,390] of the equation
+- [01:37:25,290 - 01:37:27,050] The right hand side of the equation
+- [01:37:28,090 - 01:37:28,570] is
+- [01:37:29,290 - 01:37:31,210] the derivative of the Lagrangian
+- [01:37:31,210 - 01:37:32,110] with respect to z
+- [01:37:33,150 - 01:37:35,250] What is it that depends on z in here?
+- [01:37:35,270 - 01:37:36,790] x dot
+- [01:37:36,790 - 01:37:38,890] or z dot doesn't depend on z
+- [01:37:39,550 - 01:37:40,110] a
+- [01:37:40,110 - 01:37:40,950] a
+- [01:37:41,970 - 01:37:43,870] And all of the a's
+- [01:37:43,870 - 01:37:44,450] a x,
+- [01:37:44,450 - 01:37:45,070] a y,
+- [01:37:45,070 - 01:37:45,790] and a z
+- [01:37:45,790 - 01:37:47,390] all depend on
+- [01:37:48,430 - 01:37:48,990] on
+- [01:37:48,990 - 01:37:52,010] on z in general
+- [01:37:52,010 - 01:37:53,910] So let's go through them
+- [01:37:54,970 - 01:37:55,530] q
+- [01:37:56,870 - 01:37:58,710] Now the first term here would be
+- [01:37:58,710 - 01:38:00,310] x dot times a sub x
+- [01:38:01,390 - 01:38:02,950] So we would get a term
+- [01:38:02,950 - 01:38:04,010] which would be x dot
+- [01:38:05,270 - 01:38:06,830] times the derivative of a sub x
+- [01:38:06,830 - 01:38:08,450] with respect to z
+- [01:38:09,270 - 01:38:11,650] Remember we're taking the derivative of the Lagrangian
+- [01:38:11,650 - 01:38:12,450] with respect to z
+- [01:38:13,090 - 01:38:14,850] The only thing that depends on z
+- [01:38:14,850 - 01:38:16,650] are the three components of a
+- [01:38:17,450 - 01:38:19,250] Let's start with the x component
+- [01:38:19,250 - 01:38:21,650] x dot times a x
+- [01:38:21,650 - 01:38:23,930] and differentiate it with respect to z
+- [01:38:24,570 - 01:38:25,570] The next one
+- [01:38:25,570 - 01:38:26,870] is plus
+- [01:38:28,710 - 01:38:29,610] y dot
+- [01:38:30,710 - 01:38:32,570] times the derivative of a y
+- [01:38:32,570 - 01:38:34,270] with respect to z
+- [01:38:35,190 - 01:38:36,850] And what's the last one?
+- [01:38:37,610 - 01:38:38,590] z dot
+- [01:38:38,590 - 01:38:41,250] times the derivative of a sub z
+- [01:38:41,250 - 01:38:42,190] with respect to z
+- [01:38:52,510 - 01:38:53,070] Okay,
+- [01:38:53,070 - 01:38:54,470] all I did was differentiate
+- [01:38:54,470 - 01:38:56,790] all three terms here with respect to z
+- [01:38:58,010 - 01:38:59,810] Each one of them depends on z
+- [01:38:59,810 - 01:39:01,690] through the components a
+- [01:39:02,830 - 01:39:03,390] So
+- [01:39:04,850 - 01:39:06,370] What about the left hand side?
+- [01:39:06,650 - 01:39:08,090] What do I do with a sub z dot?
+- [01:39:13,150 - 01:39:14,530] Let's suppose incidentally
+- [01:39:14,530 - 01:39:16,290] that it's just a static magnetic field
+- [01:39:16,290 - 01:39:18,210] Magnetic field not changing with time
+- [01:39:18,210 - 01:39:19,690] It's just a fixed magnetic field
+- [01:39:19,690 - 01:39:21,450] Does that mean that this is zero?
+- [01:39:23,230 - 01:39:24,730] If it's a fixed magnetic field?
+- [01:39:26,230 - 01:39:26,670] No
+- [01:39:28,030 - 01:39:28,470] No
+- [01:39:28,470 - 01:39:30,010] Because the particle moves
+- [01:39:30,010 - 01:39:31,290] through the magnetic field
+- [01:39:31,830 - 01:39:32,600] I don't mean when I
+- [01:39:32,600 - 01:39:33,370] say it's a fixed magnetic field
+- [01:39:33,390 - 01:39:35,730] I don't mean it's the same everywhere as in space
+- [01:39:35,730 - 01:39:37,250] I mean it doesn't depend on time
+- [01:39:38,010 - 01:39:40,030] Magnetic field varies from place to place
+- [01:39:40,670 - 01:39:42,050] Particle moves through it
+- [01:39:42,050 - 01:39:44,330] And because the particle moves through it
+- [01:39:44,330 - 01:39:45,670] there's a time dependence
+- [01:39:45,670 - 01:39:47,170] of the magnetic field
+- [01:39:47,170 - 01:39:48,650] of the vector potential
+- [01:39:49,369 - 01:39:50,650] at the point of the particle
+- [01:39:51,450 - 01:39:53,130] So how do we calculate that?
+- [01:39:53,430 - 01:39:53,990] Well,
+- [01:39:53,990 - 01:39:54,910] we simply write
+- [01:39:54,910 - 01:39:55,910] m
+- [01:39:57,290 - 01:39:59,110] z double dot plus q
+- [01:40:00,330 - 01:40:00,890] Now
+- [01:40:00,890 - 01:40:01,750] a z
+- [01:40:03,390 - 01:40:04,210] depends on x
+- [01:40:04,210 - 01:40:06,430] the a z by the x
+- [01:40:06,430 - 01:40:07,830] times x dot
+- [01:40:09,690 - 01:40:11,150] plus the a y
+- [01:40:14,550 - 01:40:15,070] Sorry,
+- [01:40:15,070 - 01:40:15,890] what are we doing here?
+- [01:40:15,990 - 01:40:16,110] Yes,
+- [01:40:16,110 - 01:40:16,950] sorry,
+- [01:40:16,950 - 01:40:18,270] the a z
+- [01:40:18,270 - 01:40:19,030] a z,
+- [01:40:19,030 - 01:40:19,370] a z
+- [01:40:19,990 - 01:40:21,730] We're calculating a z dot
+- [01:40:21,730 - 01:40:24,790] which is derivative of a z with respect to x
+- [01:40:25,690 - 01:40:27,910] times the time rate of change of x
+- [01:40:29,110 - 01:40:30,710] plus the a z
+- [01:40:30,710 - 01:40:31,850] by the y
+- [01:40:33,390 - 01:40:33,930] times y dot
+- [01:40:34,970 - 01:40:37,030] plus the a z by the z
+- [01:40:39,070 - 01:40:40,110] times z dot
+- [01:40:40,110 - 01:40:40,550] times z dot
+- [01:40:40,550 - 01:40:44,650] times z dot
+- [01:40:44,650 - 01:40:45,350] That's equal
+- [01:40:45,350 - 01:40:47,050] to what's in the bracket over here
+- [01:40:49,030 - 01:40:49,550] equals
+- [01:40:51,110 - 01:40:51,630] this
+- [01:40:54,350 - 01:40:54,870] Okay
+- [01:40:56,590 - 01:40:58,210] I'll let you stare at it for a minute
+- [01:40:58,210 - 01:40:58,450] I'll let you stare at it for a minute
+- [01:41:00,190 - 01:41:00,710] Remember,
+- [01:41:00,710 - 01:41:01,550] the right hand side
+- [01:41:01,550 - 01:41:03,550] came from explicitly differentiating
+- [01:41:04,090 - 01:41:05,410] the Lagrangian with respect to z
+- [01:41:05,410 - 01:41:07,350] The left hand side
+- [01:41:07,350 - 01:41:09,010] came from
+- [01:41:09,870 - 01:41:11,310] differentiating with respect to t
+- [01:41:12,110 - 01:41:14,150] But notice they have similar form
+- [01:41:14,150 - 01:41:15,530] Each one here
+- [01:41:15,530 - 01:41:17,370] has a velocity times a derivative
+- [01:41:17,370 - 01:41:18,010] of a
+- [01:41:18,010 - 01:41:19,750] on both sides
+- [01:41:19,750 - 01:41:22,610] So maybe they combine together in some nice way
+- [01:41:23,910 - 01:41:24,470] Well,
+- [01:41:24,470 - 01:41:25,410] first of all
+- [01:41:26,450 - 01:41:27,930] you'll see that this term
+- [01:41:27,930 - 01:41:29,370] and this term are the same
+- [01:41:29,370 - 01:41:32,190] z dot times the a z by the z
+- [01:41:33,190 - 01:41:34,030] They're the same
+- [01:41:34,030 - 01:41:35,310] So they cancel
+- [01:41:36,710 - 01:41:37,750] Let's get rid of them
+- [01:41:42,770 - 01:41:43,750] Now what's left
+- [01:41:43,750 - 01:41:45,730] Let's look at what multiplies x dot
+- [01:41:46,650 - 01:41:47,450] x dot
+- [01:41:47,450 - 01:41:49,350] has the a x by the z
+- [01:41:50,030 - 01:41:51,510] and then when we shift
+- [01:41:51,510 - 01:41:52,330] to the other side
+- [01:41:52,330 - 01:41:54,010] it will have what
+- [01:41:55,970 - 01:41:57,530] the a z by the x
+- [01:41:57,530 - 01:41:58,130] So
+- [01:41:59,390 - 01:42:00,570] it's going to have
+- [01:42:03,050 - 01:42:03,570] Let's
+- [01:42:06,170 - 01:42:07,330] Let's move this over
+- [01:42:09,090 - 01:42:10,470] Now I forgot what it was
+- [01:42:10,470 - 01:42:11,130] Now I forgot what it was
+- [01:42:11,130 - 01:42:12,630] plus y dot
+- [01:42:12,630 - 01:42:13,470] what was it
+- [01:42:15,630 - 01:42:17,370] the a y by the z
+- [01:42:18,110 - 01:42:18,630] yeah
+- [01:42:19,310 - 01:42:20,790] partial a y with respect to z
+- [01:42:20,790 - 01:42:22,350] partial a y with respect to z,
+- [01:42:22,350 - 01:42:22,610] right?
+- [01:42:22,730 - 01:42:23,090] Yeah
+- [01:42:23,090 - 01:42:24,130] Okay,
+- [01:42:24,130 - 01:42:27,070] now the term which multiplies x dot
+- [01:42:28,390 - 01:42:29,350] When I translate
+- [01:42:29,370 - 01:42:29,870] when I transpose it
+- [01:42:29,870 - 01:42:31,490] it's going to have minus
+- [01:42:31,490 - 01:42:33,870] the a z by the x
+- [01:42:34,650 - 01:42:35,130] Oh,
+- [01:42:35,130 - 01:42:36,390] that's starting to look familiar
+- [01:42:40,490 - 01:42:42,730] And when I transpose the term
+- [01:42:42,730 - 01:42:44,130] that has y dot in it
+- [01:42:44,130 - 01:42:47,170] that will have minus the a z by the y
+- [01:43:04,890 - 01:43:07,690] I've transposed this term over to the right hand side
+- [01:43:07,690 - 01:43:09,270] and I now have
+- [01:43:09,270 - 01:43:10,590] m z double dot
+- [01:43:10,590 - 01:43:12,050] or mass times
+- [01:43:13,490 - 01:43:15,570] the z component of acceleration
+- [01:43:16,470 - 01:43:18,390] is equal to this mess over here
+- [01:43:18,390 - 01:43:19,290] Well what is this mess?
+- [01:43:19,390 - 01:43:20,570] This mess is not so complicated
+- [01:43:21,110 - 01:43:23,530] It's got linear terms in the velocities
+- [01:43:23,530 - 01:43:24,690] and what are these objects?
+- [01:43:25,890 - 01:43:27,090] The magnetic field
+- [01:43:27,090 - 01:43:28,590] The curl of the vector potential
+- [01:43:29,370 - 01:43:29,790] In fact,
+- [01:43:29,790 - 01:43:30,890] this one
+- [01:43:31,650 - 01:43:32,050] is
+- [01:43:33,310 - 01:43:34,150] a x y,
+- [01:43:34,150 - 01:43:34,970] I think this is b y
+- [01:43:35,730 - 01:43:37,430] Is it b y or minus b y?
+- [01:43:38,950 - 01:43:40,650] And this one I think is minus
+- [01:43:42,170 - 01:43:42,910] b x
+- [01:43:47,230 - 01:43:49,350] The x dots and y dots are the components
+- [01:43:49,350 - 01:43:50,170] of the velocity
+- [01:43:51,310 - 01:43:52,430] If you go through it
+- [01:43:52,430 - 01:43:53,730] or just go back in your
+- [01:43:53,730 - 01:43:55,030] notes to where I wrote it down
+- [01:43:55,030 - 01:43:55,490] in the beginning
+- [01:43:55,490 - 01:43:57,130] this is just
+- [01:43:57,130 - 01:43:59,890] the z component of v cross b
+- [01:43:59,890 - 01:44:01,230] velocity
+- [01:44:01,230 - 01:44:02,030] hmm?
+- [01:44:04,350 - 01:44:05,130] Yeah
+- [01:44:05,130 - 01:44:05,770] Okay
+- [01:44:07,210 - 01:44:07,990] Right
+- [01:44:09,230 - 01:44:11,450] v x times d z
+- [01:44:11,450 - 01:44:15,170] a x minus d x a z
+- [01:44:15,170 - 01:44:16,650] and so forth
+- [01:44:16,650 - 01:44:17,410] Yeah
+- [01:44:18,290 - 01:44:19,070] Okay,
+- [01:44:19,070 - 01:44:19,590] so you see
+- [01:44:19,590 - 01:44:21,390] that first of all
+- [01:44:21,390 - 01:44:22,690] there does exist
+- [01:44:22,690 - 01:44:24,850] a Lagrangian formulation
+- [01:44:24,850 - 01:44:25,930] Here it is
+- [01:44:26,429 - 01:44:28,050] for particle in a magnetic field
+- [01:44:29,490 - 01:44:31,230] You need to know the vector potential
+- [01:44:34,370 - 01:44:35,350] First question
+- [01:44:35,350 - 01:44:36,970] Is the vector potential unique
+- [01:44:36,970 - 01:44:38,790] in terms of the magnetic field?
+- [01:44:39,930 - 01:44:40,490] No
+- [01:44:41,250 - 01:44:43,390] You can add things to the vector potential
+- [01:44:43,390 - 01:44:44,170] We'll come to that
+- [01:44:44,170 - 01:44:45,690] But not right now
+- [01:44:45,690 - 01:44:48,030] But if you know the vector potential
+- [01:44:48,030 - 01:44:50,070] or you know a particular expression
+- [01:44:50,070 - 01:44:51,090] for the vector potential
+- [01:44:51,090 - 01:44:53,370] then you can write down the Lagrangian
+- [01:44:53,370 - 01:44:56,310] The Lagrangian depends on the vector potential
+- [01:44:56,310 - 01:44:57,090] but
+- [01:44:57,690 - 01:44:59,250] the equation of motion
+- [01:44:59,250 - 01:45:01,330] only depends on the magnetic field
+- [01:45:01,330 - 01:45:03,790] So even if there is an ambiguity
+- [01:45:03,790 - 01:45:05,110] in the vector potential
+- [01:45:05,110 - 01:45:07,050] it doesn't affect
+- [01:45:07,050 - 01:45:09,430] the equation of motion itself
+- [01:45:10,410 - 01:45:11,150] Okay
+- [01:45:15,530 - 01:45:16,910] Now we have
+- [01:45:16,910 - 01:45:19,440] an example of a velocity dependent force
+- [01:45:19,650 - 01:45:21,070] A force which is
+- [01:45:21,090 - 01:45:21,930] v cross b
+- [01:45:22,810 - 01:45:25,130] It's almost like a
+- [01:45:25,830 - 01:45:26,870] friction force
+- [01:45:26,870 - 01:45:28,530] It is different
+- [01:45:29,470 - 01:45:30,970] The friction force
+- [01:45:30,970 - 01:45:33,070] acts along the direction
+- [01:45:33,070 - 01:45:33,930] of the velocity
+- [01:45:34,970 - 01:45:35,610] Okay
+- [01:45:35,610 - 01:45:37,990] If an object is moving in this direction
+- [01:45:37,990 - 01:45:40,550] the friction force is along the same axis
+- [01:45:41,090 - 01:45:42,290] What about v cross b?
+- [01:45:43,690 - 01:45:45,110] Does v cross b
+- [01:45:45,110 - 01:45:46,970] act along the direction of the velocity?
+- [01:45:47,550 - 01:45:48,190] No
+- [01:45:48,190 - 01:45:50,010] Because v cross b is perpendicular
+- [01:45:51,090 - 01:45:52,370] to the velocity and to b
+- [01:45:53,170 - 01:45:53,770] So
+- [01:45:53,770 - 01:45:56,630] This is a big difference
+- [01:45:56,630 - 01:45:57,910] A big difference
+- [01:45:57,910 - 01:46:01,050] whether the velocity dependent force
+- [01:46:01,050 - 01:46:03,090] acts along the direction of velocity
+- [01:46:03,090 - 01:46:04,390] or perpendicular to it
+- [01:46:05,090 - 01:46:07,510] If it acts along the direction of velocity
+- [01:46:07,510 - 01:46:09,110] it will obviously
+- [01:46:09,110 - 01:46:11,030] have the effect of either slowing it down
+- [01:46:11,030 - 01:46:11,810] or speeding it up
+- [01:46:11,810 - 01:46:14,110] depending on which way it's acting
+- [01:46:14,910 - 01:46:15,510] Alright
+- [01:46:15,510 - 01:46:18,090] But if it acts perpendicular to the velocity
+- [01:46:18,090 - 01:46:20,610] it will simply change the direction of the velocity
+- [01:46:21,650 - 01:46:23,070] if the force is perpendicular
+- [01:46:23,070 - 01:46:24,750] and it won't change the energy
+- [01:46:25,490 - 01:46:26,990] So energy conservation
+- [01:46:26,990 - 01:46:28,930] we can work out now
+- [01:46:28,930 - 01:46:30,570] we can work out what is the expression
+- [01:46:30,570 - 01:46:31,510] for the energy
+- [01:46:32,230 - 01:46:34,690] We do that by calculating the Hamiltonian
+- [01:46:35,470 - 01:46:37,550] and when we've calculated the Hamiltonian
+- [01:46:37,550 - 01:46:38,170] we then have
+- [01:46:38,170 - 01:46:39,970] from previous theorems
+- [01:46:40,510 - 01:46:42,850] the theorem that says that energy is conserved
+- [01:46:43,590 - 01:46:44,030] Alright
+- [01:46:44,030 - 01:46:45,190] So we can work that out
+- [01:46:45,190 - 01:46:45,890] Let's work it out
+- [01:46:47,010 - 01:46:48,840] I think that will just about take
+- [01:46:48,840 - 01:46:50,670] us to the end of the hour
+- [01:46:51,090 - 01:46:51,350] Oh,
+- [01:46:51,350 - 01:46:52,390] excuse me
+- [01:46:52,390 - 01:46:53,650] There's something I need to tell you
+- [01:46:54,709 - 01:46:57,089] I won't be here for the next two lectures
+- [01:46:58,270 - 01:46:58,650] Now
+- [01:46:58,650 - 01:47:01,049] I would like to make up one of them
+- [01:47:01,049 - 01:47:01,469] I think
+- [01:47:03,889 - 01:47:04,830] The question is
+- [01:47:04,830 - 01:47:05,610] What is a good time?
+- [01:47:05,790 - 01:47:06,990] It could be this week yet
+- [01:47:07,990 - 01:47:09,410] But it can't be next week
+- [01:47:09,850 - 01:47:11,530] And it could be the week after
+- [01:47:11,530 - 01:47:12,410] but not on Monday
+- [01:47:15,110 - 01:47:15,490] Yeah,
+- [01:47:15,490 - 01:47:16,509] we can do it this week
+- [01:47:16,509 - 01:47:19,589] Does that work out for people?
+- [01:47:19,929 - 01:47:20,770] If we were to do it,
+- [01:47:20,770 - 01:47:20,870] say,
+- [01:47:20,870 - 01:47:21,070] three weeks
+- [01:47:21,089 - 01:47:21,290] Thursday?
+- [01:47:22,690 - 01:47:24,170] I have something to say,
+- [01:47:24,170 - 01:47:24,490] sure
+- [01:47:26,110 - 01:47:27,830] Friday is a bad day for me
+- [01:47:28,770 - 01:47:30,230] Or we can put it off
+- [01:47:30,230 - 01:47:31,070] We can put it off
+- [01:47:31,070 - 01:47:31,710] until I get back
+- [01:47:31,710 - 01:47:32,210] and
+- [01:47:36,190 - 01:47:37,310] just double up
+- [01:47:37,310 - 01:47:38,530] the week that I come back
+- [01:47:38,530 - 01:47:39,210] I'll be gone for
+- [01:47:42,010 - 01:47:43,370] Should we wait until
+- [01:47:51,089 - 01:47:51,370] Thursday?
+- [01:47:53,850 - 01:47:55,230] How many cannot take it Thursday?
+- [01:47:56,009 - 01:47:56,469] Well,
+- [01:47:56,469 - 01:47:57,990] that's almost half the class
+- [01:48:01,049 - 01:48:02,429] Supposing I were to put it off
+- [01:48:02,429 - 01:48:04,070] I'll be back on the 11th
+- [01:48:04,070 - 01:48:07,049] Now the 11th is probably a Monday
+- [01:48:07,049 - 01:48:07,870] No,
+- [01:48:07,870 - 01:48:09,070] the 11th is a Tuesday
+- [01:48:09,570 - 01:48:10,750] What about Wednesday?
+- [01:48:11,070 - 01:48:11,410] Hmm?
+- [01:48:12,030 - 01:48:12,490] Yeah,
+- [01:48:12,490 - 01:48:13,929] I was thinking about Wednesday
+- [01:48:14,389 - 01:48:15,850] The 12th I think it is
+- [01:48:15,850 - 01:48:18,770] Is it the 12th or 13th?
+- [01:48:18,950 - 01:48:19,770] From Wednesday
+- [01:48:21,589 - 01:48:22,150] No
+- [01:48:23,570 - 01:48:25,410] You're probably not going to get something that works
+- [01:48:25,410 - 01:48:26,210] I know that
+- [01:48:28,230 - 01:48:29,190] Stay on Monday
+- [01:48:29,190 - 01:48:29,870] Hmm?
+- [01:48:30,630 - 01:48:31,190] Well,
+- [01:48:31,190 - 01:48:31,990] we can stay on Monday
+- [01:48:31,990 - 01:48:32,970] but
+- [01:48:35,810 - 01:48:36,370] Yeah
+- [01:48:37,850 - 01:48:38,410] No,
+- [01:48:38,410 - 01:48:38,970] we'll continue
+- [01:48:38,970 - 01:48:39,730] We'll continue
+- [01:48:39,730 - 01:48:41,330] but at some point
+- [01:48:41,330 - 01:48:43,630] we run into the next quarter
+- [01:48:45,289 - 01:48:46,410] You know
+- [01:48:47,430 - 01:48:47,990] Playing,
+- [01:48:47,990 - 01:48:48,590] you know
+- [01:48:48,590 - 01:48:50,250] Points have to move rigidly
+- [01:48:52,310 - 01:48:53,270] You can't
+- [01:48:53,270 - 01:48:55,550] Do you like doing a third hour
+- [01:48:55,550 - 01:48:56,170] or is that just
+- [01:48:56,170 - 01:48:56,350] Well,
+- [01:48:56,350 - 01:48:57,070] we could do that
+- [01:48:57,930 - 01:48:59,370] Another thing I have to do
+- [01:48:59,370 - 01:49:03,210] as I'm supposed to fill in the missing lecture
+- [01:49:03,210 - 01:49:04,750] from the first lecture
+- [01:49:04,750 - 01:49:06,910] I was thinking of doing that this week
+- [01:49:06,910 - 01:49:07,290] but
+- [01:49:08,130 - 01:49:09,290] Did you miss the lecture?
+- [01:49:09,990 - 01:49:10,470] No,
+- [01:49:10,470 - 01:49:10,750] no,
+- [01:49:10,750 - 01:49:10,910] no,
+- [01:49:10,910 - 01:49:12,130] we didn't miss a lecture
+- [01:49:12,130 - 01:49:12,890] but they didn't
+- [01:49:12,890 - 01:49:16,550] They didn't film it
+- [01:49:16,550 - 01:49:18,910] You also talked to us about sexual harassment
+- [01:49:18,910 - 01:49:19,610] Ha
+- [01:49:21,470 - 01:49:22,050] Right
+- [01:49:24,310 - 01:49:24,910] What's that?
+- [01:49:25,130 - 01:49:26,650] Is every 12th going to be the last
+- [01:49:26,650 - 01:49:28,070] lecture of the session?
+- [01:49:28,450 - 01:49:28,950] No,
+- [01:49:28,950 - 01:49:30,290] it doesn't have to be
+- [01:49:31,070 - 01:49:31,650] No,
+- [01:49:31,650 - 01:49:32,090] no
+- [01:49:33,550 - 01:49:34,690] I'm happy to
+- [01:49:34,690 - 01:49:36,590] This is fun for me
+- [01:49:36,590 - 01:49:38,550] I just do it for the fun of it
+- [01:49:39,090 - 01:49:39,610] No,
+- [01:49:39,610 - 01:49:41,110] I intend to keep going
+- [01:49:41,110 - 01:49:42,030] until the
+- [01:49:42,030 - 01:49:43,750] until sometime near Christmas
+- [01:49:44,590 - 01:49:45,170] Um
+- [01:49:46,330 - 01:49:48,450] But we will miss
+- [01:49:49,090 - 01:49:50,450] the next two lectures
+- [01:49:51,090 - 01:49:52,490] so I thought I would try to make up one
+- [01:49:53,910 - 01:49:54,470] What's that?
+- [01:49:56,070 - 01:49:58,030] You're going to skip two Mondays
+- [01:49:58,030 - 01:49:58,450] Yeah
+- [01:49:58,450 - 01:50:00,110] Two Mondays
+- [01:50:00,110 - 01:50:02,550] But then we'll be back on Monday
+- [01:50:03,090 - 01:50:03,410] Well,
+- [01:50:03,410 - 01:50:05,910] we will be back on Monday
+- [01:50:05,910 - 01:50:07,050] and we'll see
+- [01:50:07,050 - 01:50:08,710] if we need to fill in
+- [01:50:08,710 - 01:50:10,570] with another lecture
+- [01:50:10,570 - 01:50:11,830] we'll just figure out at
+- [01:50:11,830 - 01:50:13,090] that point when to fill in
+- [01:50:13,090 - 01:50:15,130] We're already scheduled for the 17th
+- [01:50:15,130 - 01:50:16,390] so the next Monday is
+- [01:50:16,990 - 01:50:17,790] Christmas Eve
+- [01:50:18,510 - 01:50:18,970] Well,
+- [01:50:18,970 - 01:50:20,610] I don't think we'll do
+- [01:50:21,090 - 01:50:21,290] Christmas Eve
+- [01:50:21,710 - 01:50:22,110] Uh
+- [01:50:24,910 - 01:50:25,310] Let's
+- [01:50:25,710 - 01:50:28,290] So that means we sort of run into the wall
+- [01:50:28,290 - 01:50:29,030] Yeah
+- [01:50:30,290 - 01:50:30,690] Yeah
+- [01:50:32,730 - 01:50:33,530] Well look,
+- [01:50:33,530 - 01:50:34,930] why don't we just decide this
+- [01:50:34,930 - 01:50:36,710] when I get back on the
+- [01:50:36,710 - 01:50:39,310] on the 17th
+- [01:50:39,310 - 01:50:41,050] we'll see when we can fill in
+- [01:50:41,050 - 01:50:41,770] an extra lecture
+- [01:50:42,630 - 01:50:43,970] and I think that will pretty much
+- [01:50:43,970 - 01:50:45,310] bring us to where we want to be
+- [01:50:45,310 - 01:50:45,710] I mean,
+- [01:50:45,710 - 01:50:47,050] I'm pretty comfortable
+- [01:50:48,030 - 01:50:48,550] I mean,
+- [01:50:48,550 - 01:50:48,830] we just
+- [01:50:48,830 - 01:50:50,010] today I guess or
+- [01:50:52,090 - 01:50:52,970] three weeks
+- [01:50:52,970 - 01:50:53,190] Yes,
+- [01:50:53,190 - 01:50:54,130] three weeks from today
+- [01:50:54,130 - 01:50:54,470] Right
+- [01:50:55,690 - 01:50:56,190] Right
+- [01:50:58,370 - 01:51:00,110] Next lecture is the 17th
+- [01:51:00,110 - 01:51:01,050] Um
+- [01:51:03,410 - 01:51:03,910] Okay,
+- [01:51:03,910 - 01:51:04,890] let's try to just
+- [01:51:04,890 - 01:51:06,710] finish up what I was talking about here
+- [01:51:06,710 - 01:51:08,170] I think I finished
+- [01:51:08,890 - 01:51:09,390] Energy
+- [01:51:11,090 - 01:51:11,590] Yeah,
+- [01:51:11,590 - 01:51:12,090] okay
+- [01:51:12,090 - 01:51:13,050] Let's do energy
+- [01:51:14,850 - 01:51:16,470] So all we have to do is calculate
+- [01:51:16,470 - 01:51:17,630] the Hamiltonian
+- [01:51:20,430 - 01:51:20,930] Incidentally
+- [01:51:21,090 - 01:51:22,950] I'm assuming that the vector potential
+- [01:51:22,950 - 01:51:25,270] has no explicit time dependence
+- [01:51:25,270 - 01:51:27,450] In other words
+- [01:51:27,450 - 01:51:29,450] equivalently that the magnetic field
+- [01:51:29,450 - 01:51:30,750] is constant in time
+- [01:51:31,949 - 01:51:33,150] In that case
+- [01:51:33,150 - 01:51:34,890] the Hamiltonian will be time independent
+- [01:51:34,890 - 01:51:37,610] and there will be a conserved energy
+- [01:51:38,270 - 01:51:39,750] The conserved energy
+- [01:51:39,750 - 01:51:41,090] is surprisingly simple
+- [01:51:41,090 - 01:51:42,810] when expressed in terms of the velocity
+- [01:51:42,810 - 01:51:44,320] is a little more complicated when
+- [01:51:44,320 - 01:51:45,830] expressed in terms of the momenta
+- [01:51:45,830 - 01:51:46,610] So let's work it out
+- [01:51:47,470 - 01:51:48,870] Let's first calculate
+- [01:51:48,870 - 01:51:49,410] uh
+- [01:51:53,190 - 01:51:54,970] P sub x as we saw before
+- [01:51:54,970 - 01:51:56,610] was m x dot
+- [01:51:57,850 - 01:51:58,290] plus
+- [01:51:59,310 - 01:52:00,190] q a
+- [01:52:00,990 - 01:52:01,650] sub x
+- [01:52:02,090 - 01:52:03,640] Same thing for y and z and
+- [01:52:03,640 - 01:52:05,190] I won't bother writing them down separately
+- [01:52:06,110 - 01:52:06,550] Okay
+- [01:52:06,550 - 01:52:07,850] The first thing we have to
+- [01:52:07,850 - 01:52:09,150] do when we calculate the Hamiltonian
+- [01:52:10,870 - 01:52:11,950] Actually we don't need to
+- [01:52:11,950 - 01:52:12,310] We can just
+- [01:52:12,310 - 01:52:13,850] Let's calculate it
+- [01:52:13,850 - 01:52:15,140] not in terms of p
+- [01:52:15,140 - 01:52:16,430] but in terms of x dot
+- [01:52:17,150 - 01:52:18,310] Let's first do it
+- [01:52:18,310 - 01:52:21,010] by calculating it in terms of velocities
+- [01:52:21,010 - 01:52:22,700] to see what the expression for
+- [01:52:22,700 - 01:52:24,390] energy is in terms of velocities
+- [01:52:24,390 - 01:52:25,570] Alright
+- [01:52:25,570 - 01:52:26,850] So what do we have to calculate
+- [01:52:26,850 - 01:52:27,710] We have to calculate
+- [01:52:27,710 - 01:52:29,230] p sub x x dot
+- [01:52:29,230 - 01:52:32,070] plus p sub y y dot
+- [01:52:32,070 - 01:52:34,010] plus p sub z
+- [01:52:34,010 - 01:52:35,370] z dot
+- [01:52:36,230 - 01:52:37,450] minus the Lagrangian,
+- [01:52:37,450 - 01:52:37,690] right?
+- [01:52:39,010 - 01:52:40,590] That's the definition of h
+- [01:52:41,989 - 01:52:44,250] Take each momenta
+- [01:52:44,250 - 01:52:46,690] multiply it by the corresponding velocity
+- [01:52:46,690 - 01:52:48,290] and then subtract it
+- [01:52:48,310 - 01:52:49,230] subtract the Lagrangian
+- [01:52:49,230 - 01:52:51,610] That's a very general rule that we derived
+- [01:52:52,310 - 01:52:52,610] Alright
+- [01:52:52,610 - 01:52:55,850] If I plug in for the p's
+- [01:52:55,850 - 01:52:58,130] their expression in terms of velocities
+- [01:52:58,130 - 01:53:00,270] I'll have an expression for the energy
+- [01:53:00,270 - 01:53:01,910] in terms of velocities
+- [01:53:02,890 - 01:53:04,790] That won't be good for Hamilton's equations
+- [01:53:04,790 - 01:53:06,410] but it will be good
+- [01:53:06,410 - 01:53:07,910] for telling me what the energy is
+- [01:53:07,910 - 01:53:09,310] in terms of velocities
+- [01:53:10,010 - 01:53:11,110] So let's do that,
+- [01:53:11,110 - 01:53:11,930] let's do that first
+- [01:53:11,930 - 01:53:14,150] p sub x times x dot
+- [01:53:14,150 - 01:53:15,590] That is
+- [01:53:15,590 - 01:53:16,170] is
+- [01:53:18,350 - 01:53:20,010] m x dot
+- [01:53:20,010 - 01:53:21,550] plus q
+- [01:53:22,310 - 01:53:23,350] a sub x
+- [01:53:26,250 - 01:53:27,710] times x dot
+- [01:53:36,100 - 01:53:37,810] Likewise for y and z
+- [01:53:37,810 - 01:53:39,030] and I won't write them out
+- [01:53:40,050 - 01:53:41,990] Then we have to subtract off
+- [01:53:41,990 - 01:53:43,690] the Lagrangian
+- [01:53:44,080 - 01:53:44,850] minus L
+- [01:53:44,850 - 01:53:48,030] So subtracting off the Lagrangian means
+- [01:53:48,310 - 01:53:49,510] subtracting off minus
+- [01:53:50,230 - 01:53:51,510] m v squared
+- [01:53:51,510 - 01:53:53,030] or m x dot squared
+- [01:53:53,030 - 01:53:54,670] I'm concentrating on the x term
+- [01:53:54,670 - 01:53:56,730] m x dot squared
+- [01:53:59,590 - 01:54:01,290] divided by 2
+- [01:54:02,950 - 01:54:04,830] and then what else?
+- [01:54:06,350 - 01:54:07,070] minus
+- [01:54:07,869 - 01:54:08,590] q
+- [01:54:12,150 - 01:54:13,970] x dot a sub x
+- [01:54:16,550 - 01:54:17,310] Well
+- [01:54:17,890 - 01:54:20,190] that gives me m x dot squared over 2
+- [01:54:20,190 - 01:54:22,030] the usual thing
+- [01:54:23,550 - 01:54:25,030] no difference there
+- [01:54:28,249 - 01:54:30,070] and look at this
+- [01:54:30,070 - 01:54:32,010] q a x x dot
+- [01:54:32,010 - 01:54:34,490] minus q a x x dot
+- [01:54:34,490 - 01:54:35,870] They cancel
+- [01:54:35,870 - 01:54:36,750] completely
+- [01:54:38,090 - 01:54:40,510] So the expression for the energy
+- [01:54:40,510 - 01:54:42,590] is exactly just the original
+- [01:54:42,590 - 01:54:43,530] kinetic energy
+- [01:54:43,530 - 01:54:43,950] So I'll just do this
+- [01:54:43,970 - 01:54:46,610] just m x dot squared over 2
+- [01:54:46,610 - 01:54:48,150] Likewise for y and z
+- [01:54:51,050 - 01:54:55,090] The magnetic field does not contribute to the energy
+- [01:54:55,930 - 01:54:58,870] when expressed in terms of velocities
+- [01:54:58,870 - 01:55:01,970] It's just one half m v squared
+- [01:55:01,970 - 01:55:03,170] end of story
+- [01:55:03,170 - 01:55:05,030] Now why is that?
+- [01:55:05,110 - 01:55:06,090] Why is that?
+- [01:55:06,210 - 01:55:07,790] That's equivalent to another statement
+- [01:55:07,790 - 01:55:09,630] It's equivalent to the statement
+- [01:55:09,630 - 01:55:11,470] that magnetic fields do no work
+- [01:55:11,470 - 01:55:12,710] It's equivalent to the statement
+- [01:55:12,710 - 01:55:13,950] that magnetic fields do no work
+- [01:55:14,690 - 01:55:15,450] What's that?
+- [01:55:15,550 - 01:55:15,750] Yeah,
+- [01:55:15,750 - 01:55:16,390] that's right
+- [01:55:16,390 - 01:55:19,350] It's because the force is perpendicular to the velocity
+- [01:55:19,950 - 01:55:22,170] So when a particle moves
+- [01:55:22,170 - 01:55:23,510] in a magnetic field
+- [01:55:24,629 - 01:55:25,910] the force is
+- [01:55:25,910 - 01:55:27,430] perpendicular to the velocity
+- [01:55:28,789 - 01:55:31,710] The force being perpendicular to the velocity
+- [01:55:31,710 - 01:55:32,030] The force being perpendicular to the velocity
+- [01:55:32,030 - 01:55:33,730] means that the magnitude of the velocity
+- [01:55:33,730 - 01:55:34,550] doesn't change
+- [01:55:35,770 - 01:55:38,150] A force perpendicular to a velocity
+- [01:55:38,150 - 01:55:39,270] deflects an object
+- [01:55:39,270 - 01:55:40,510] but doesn't change its velocity
+- [01:55:42,530 - 01:55:43,210] and
+- [01:55:44,590 - 01:55:45,190] So
+- [01:55:45,950 - 01:55:48,130] as the particle moves along
+- [01:55:48,130 - 01:55:49,810] its direction may change
+- [01:55:49,810 - 01:55:51,770] but its speed doesn't
+- [01:55:51,770 - 01:55:53,750] So the original expression
+- [01:55:53,750 - 01:55:56,450] for its energy in terms of m x dot squared
+- [01:55:56,450 - 01:55:58,270] is just the full energy
+- [01:55:58,270 - 01:56:00,630] Magnetic fields do no work
+- [01:56:00,630 - 01:56:01,710] Magnetic fields do no work
+- [01:56:01,710 - 01:56:02,790] which is the same statement
+- [01:56:02,790 - 01:56:04,490] as the statement that the energy
+- [01:56:04,490 - 01:56:07,070] when expressed in terms of velocities and so forth
+- [01:56:07,070 - 01:56:08,460] is exactly the same as
+- [01:56:08,460 - 01:56:09,850] it was in the first place
+- [01:56:10,749 - 01:56:12,230] One half m v squared
+- [01:56:12,230 - 01:56:13,150] is conserved
+- [01:56:13,950 - 01:56:15,930] And you know how particles move in a magnetic field
+- [01:56:15,930 - 01:56:16,390] For example,
+- [01:56:16,390 - 01:56:17,910] if there's a uniform magnetic field
+- [01:56:17,910 - 01:56:18,870] into the blackboard
+- [01:56:18,870 - 01:56:21,110] particles move in circular orbits
+- [01:56:21,950 - 01:56:23,290] with uniform speed
+- [01:56:23,949 - 01:56:26,050] So the kinetic energy is conserved
+- [01:56:27,350 - 01:56:28,870] That's statement number one
+- [01:56:28,870 - 01:56:30,490] But in this form
+- [01:56:30,490 - 01:56:31,730] you cannot use
+- [01:56:31,730 - 01:56:33,030] the Hamiltonian
+- [01:56:33,669 - 01:56:35,550] to write down Hamilton's equations
+- [01:56:36,169 - 01:56:38,330] You have to express it in terms of
+- [01:56:38,330 - 01:56:40,190] in terms of
+- [01:56:40,190 - 01:56:41,350] the momenta
+- [01:56:41,350 - 01:56:42,230] But that's easy.
+- [01:56:42,230 - 01:56:43,830] All we have to do is
+- [01:56:43,950 - 01:56:46,350] solve for the x dots
+- [01:56:46,350 - 01:56:47,830] in terms of the momenta
+- [01:56:47,830 - 01:56:48,530] That's easy
+- [01:56:48,530 - 01:56:50,810] x dot is just
+- [01:56:50,810 - 01:56:52,730] p sub x
+- [01:56:53,629 - 01:56:55,230] minus q a sub x
+- [01:56:55,230 - 01:56:56,310] divided by m
+- [01:56:58,129 - 01:56:58,810] So
+- [01:56:58,810 - 01:57:00,930] we can write down immediately
+- [01:57:00,930 - 01:57:03,950] what the Hamiltonian is in terms of p's
+- [01:57:03,950 - 01:57:05,950] instead of in terms of x dots
+- [01:57:05,950 - 01:57:07,650] And it's just equal
+- [01:57:08,650 - 01:57:10,070] p sub x
+- [01:57:10,869 - 01:57:13,150] minus q a sub x
+- [01:57:13,150 - 01:57:13,930] minus q a sub x
+- [01:57:13,950 - 01:57:14,870] squared
+- [01:57:15,930 - 01:57:17,430] over m squared
+- [01:57:20,390 - 01:57:22,150] over 2m squared
+- [01:57:22,150 - 01:57:22,830] Excuse me
+- [01:57:24,270 - 01:57:25,810] I've just substituted
+- [01:57:25,810 - 01:57:26,510] for the velocity
+- [01:57:26,510 - 01:57:28,950] their expression in terms of the momenta
+- [01:57:29,590 - 01:57:29,970] Yeah
+- [01:57:29,970 - 01:57:34,430] It accelerates
+- [01:57:34,430 - 01:57:35,210] No it doesn't
+- [01:57:35,590 - 01:57:37,290] It accelerates
+- [01:57:38,789 - 01:57:40,510] Oh it does
+- [01:57:40,510 - 01:57:41,570] It does,
+- [01:57:41,570 - 01:57:42,070] it does,
+- [01:57:42,070 - 01:57:43,870] but radiation is a higher order
+- [01:57:43,950 - 01:57:45,430] effect that's only important
+- [01:57:45,430 - 01:57:46,490] when the particle is
+- [01:57:47,659 - 01:57:47,970] Yeah,
+- [01:57:47,970 - 01:57:48,730] it does
+- [01:57:48,730 - 01:57:51,610] It certainly does radiate
+- [01:57:52,830 - 01:57:54,350] But thus far
+- [01:57:54,350 - 01:57:56,370] we have not even tried
+- [01:57:56,370 - 01:57:57,810] to think about radiation
+- [01:57:57,810 - 01:57:59,410] In order to understand radiation
+- [01:58:00,390 - 01:58:02,090] we will have to formulate
+- [01:58:02,090 - 01:58:03,430] Maxwell's equations
+- [01:58:03,950 - 01:58:06,190] and formulate them in a Hamiltonian form
+- [01:58:06,190 - 01:58:07,910] and discover that the radiation
+- [01:58:07,910 - 01:58:09,310] field itself has energy
+- [01:58:10,070 - 01:58:10,690] Yeah
+- [01:58:12,790 - 01:58:13,410] Right
+- [01:58:13,950 - 01:58:14,050] So
+- [01:58:15,930 - 01:58:16,530] Yeah,
+- [01:58:16,530 - 01:58:18,390] this is the radiationless approximation
+- [01:58:19,169 - 01:58:22,210] You have to put the additional terms on that
+- [01:58:22,210 - 01:58:22,730] to get the
+- [01:58:22,730 - 01:58:23,670] total
+- [01:58:23,670 - 01:58:27,190] You mean these?
+- [01:58:27,510 - 01:58:28,010] Yeah,
+- [01:58:28,010 - 01:58:28,550] sure
+- [01:58:28,550 - 01:58:29,230] Absolutely
+- [01:58:35,129 - 01:58:35,730] Plus
+- [01:58:35,730 - 01:58:36,690] z term
+- [01:58:38,550 - 01:58:39,150] Right
+- [01:58:39,150 - 01:58:40,810] So it's a little bit odd
+- [01:58:40,810 - 01:58:41,850] and a little bit surprising
+- [01:58:43,950 - 01:58:44,910] because when expressed in terms of velocities
+- [01:58:44,910 - 01:58:46,470] the energy just doesn't change
+- [01:58:47,190 - 01:58:50,030] But when expressed in terms of canonical momenta
+- [01:58:51,050 - 01:58:53,630] the expression for the energy does change
+- [01:58:53,630 - 01:58:56,110] and now if we applied
+- [01:58:56,110 - 01:58:57,290] Hamilton's equations
+- [01:58:57,290 - 01:58:58,730] to this expression here
+- [01:58:58,730 - 01:59:00,170] we would again get
+- [01:59:00,170 - 01:59:01,410] precisely the same
+- [01:59:03,829 - 01:59:05,110] equations of motion
+- [01:59:07,190 - 01:59:07,930] What's that?
+- [01:59:08,190 - 01:59:09,090] First x
+- [01:59:09,090 - 01:59:10,290] Yeah
+- [01:59:13,249 - 01:59:13,930] So
+- [01:59:14,570 - 01:59:15,190] Yeah,
+- [01:59:15,190 - 01:59:16,250] all you do is replace
+- [01:59:16,950 - 01:59:18,350] the canonical moment
+- [01:59:18,350 - 01:59:19,070] the momentum
+- [01:59:19,070 - 01:59:22,130] by the momentum minus q a sub x
+- [01:59:22,130 - 01:59:23,190] In other words
+- [01:59:23,190 - 01:59:25,390] this is just a mechanical momentum here
+- [01:59:25,390 - 01:59:26,650] the mx dot term
+- [01:59:27,550 - 01:59:29,010] The mechanical momentum
+- [01:59:29,010 - 01:59:30,650] and the canonical momentum
+- [01:59:30,650 - 01:59:32,370] differ by q times a
+- [01:59:32,370 - 01:59:34,890] The energy is just mx dot squared
+- [01:59:34,890 - 01:59:36,150] so it's just a mechanical
+- [01:59:36,150 - 01:59:36,770] you know,
+- [01:59:36,770 - 01:59:39,050] it's just the square of the mechanical momentum
+- [01:59:39,790 - 01:59:42,150] but you substitute the canonical momentum
+- [01:59:42,150 - 01:59:43,810] if you want to do
+- [01:59:43,930 - 01:59:44,690] Hamilton's equations
+- [01:59:44,690 - 01:59:46,650] So here's an exercise
+- [01:59:47,540 - 01:59:48,910] Take this Hamiltonian
+- [01:59:48,910 - 01:59:50,450] work out Hamilton's equations
+- [01:59:50,450 - 01:59:53,450] and check that you get the same
+- [01:59:53,450 - 01:59:54,650] equations of motion
+- [01:59:54,650 - 01:59:55,810] uh
+- [01:59:57,660 - 01:59:58,930] mass times acceleration
+- [01:59:58,930 - 02:00:00,570] is equal to v cross b
+- [02:00:00,570 - 02:00:02,550] That's a homework assignment
+- [02:00:04,510 - 02:00:05,330] Okay
+- [02:00:05,330 - 02:00:05,810] Good
+- [02:00:05,810 - 02:00:07,430] Music
+- [02:00:08,290 - 02:00:09,110] Music
+- [02:00:09,110 - 02:00:10,670] Music
+- [02:00:13,930 - 02:00:15,330] The program is copyrighted by
+- [02:00:15,330 - 02:00:16,110] Stanford University
+- [02:00:16,110 - 02:00:18,050] Please visit us at
+- [02:00:18,050 - 02:00:19,270] stanford.edu
