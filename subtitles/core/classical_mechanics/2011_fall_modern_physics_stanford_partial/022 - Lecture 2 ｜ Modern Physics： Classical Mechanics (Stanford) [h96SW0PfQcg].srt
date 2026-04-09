@@ -1,0 +1,10724 @@
+1
+00:00:06,920 --> 00:00:09,760
+This program is brought to you by Stanford University.
+
+2
+00:00:10,200 --> 00:00:12,720
+Please visit us at stanford.edu.
+
+3
+00:00:16,540 --> 00:00:17,700
+Let me review,
+
+4
+00:00:17,700 --> 00:00:20,320
+first of all,
+
+5
+00:00:20,320 --> 00:00:22,600
+the idea of initial conditions and
+
+6
+00:00:22,600 --> 00:00:24,680
+why we need both position and velocity.
+
+7
+00:00:24,960 --> 00:00:26,510
+Let's just take the case of
+
+8
+00:00:26,510 --> 00:00:28,060
+one dimensional motion as an example.
+
+9
+00:00:28,060 --> 00:00:31,340
+And let me begin with a false law of physics.
+
+10
+00:00:32,140 --> 00:00:35,200
+I think I called it last time Aristotle's Law.
+
+11
+00:00:37,520 --> 00:00:40,280
+Aristotle thought that in order to keep an object moving,
+
+12
+00:00:40,480 --> 00:00:43,240
+you had to continuously exert a force on it.
+
+13
+00:00:44,280 --> 00:00:44,980
+Of course,
+
+14
+00:00:44,980 --> 00:00:45,840
+we know that's not true.
+
+15
+00:00:45,980 --> 00:00:48,660
+An object moving through free space
+
+16
+00:00:48,660 --> 00:00:51,340
+under its own inertia will keep moving
+
+17
+00:00:51,340 --> 00:00:52,700
+without an external force,
+
+18
+00:00:52,700 --> 00:00:57,820
+but Aristotle's Law is a consistent mathematical law.
+
+19
+00:00:58,060 --> 00:00:58,760
+So let me write it down.
+
+20
+00:00:59,320 --> 00:01:00,160
+What it says,
+
+21
+00:01:00,160 --> 00:01:02,760
+I don't know that Aristotle,
+
+22
+00:01:02,760 --> 00:01:03,320
+of course,
+
+23
+00:01:03,320 --> 00:01:04,180
+ever said it this way.
+
+24
+00:01:04,239 --> 00:01:05,099
+I'll say it this way.
+
+25
+00:01:06,640 --> 00:01:07,900
+I would call it my own
+
+26
+00:01:07,900 --> 00:01:09,160
+law except I know that it's wrong,
+
+27
+00:01:09,360 --> 00:01:10,840
+so there's not much percentage in it.
+
+28
+00:01:14,259 --> 00:01:15,460
+Force is equal,
+
+29
+00:01:15,460 --> 00:01:17,860
+let's put a constant in and call it mass,
+
+30
+00:01:17,860 --> 00:01:19,420
+times velocity.
+
+31
+00:01:19,860 --> 00:01:21,450
+And we can make this a vector
+
+32
+00:01:21,450 --> 00:01:23,040
+equation or we can simply make it
+
+33
+00:01:23,040 --> 00:01:25,060
+a one dimensional equation along an axis.
+
+34
+00:01:25,720 --> 00:01:28,040
+It says that without force we have our force.
+
+35
+00:01:28,060 --> 00:01:29,280
+you can't have any velocity.
+
+36
+00:01:29,280 --> 00:01:31,220
+If you remove the force,
+
+37
+00:01:31,220 --> 00:01:33,900
+an object will instantly come to rest.
+
+38
+00:01:34,580 --> 00:01:35,640
+Wrong equation.
+
+39
+00:01:35,640 --> 00:01:39,320
+But we can also write this,
+
+40
+00:01:39,320 --> 00:01:39,760
+of course,
+
+41
+00:01:39,760 --> 00:01:44,420
+F equals mass times dx dt.
+
+42
+00:01:45,560 --> 00:01:47,160
+And just to remind you,
+
+43
+00:01:47,160 --> 00:01:51,580
+I often use the notation dot on top of
+
+44
+00:01:51,580 --> 00:01:56,000
+a symbol to indicate derivative with respect to time.
+
+45
+00:01:57,140 --> 00:01:58,680
+So that's Aristotle's law.
+
+46
+00:01:58,680 --> 00:01:59,840
+Now,
+
+47
+00:01:59,840 --> 00:02:01,360
+what do you need...oh,
+
+48
+00:02:01,360 --> 00:02:02,980
+and we'll also assume something else.
+
+49
+00:02:03,320 --> 00:02:07,080
+We'll assume that the force law is a law which tells you
+
+50
+00:02:07,080 --> 00:02:10,840
+what the force on the object is if you know where it is.
+
+51
+00:02:11,460 --> 00:02:13,020
+Where the object is.
+
+52
+00:02:13,020 --> 00:02:15,960
+So let's write F of x.
+
+53
+00:02:15,960 --> 00:02:23,240
+F of x is equal to mass...well,
+
+54
+00:02:23,240 --> 00:02:24,020
+that's fine.
+
+55
+00:02:24,020 --> 00:02:25,560
+Mass times dx dt.
+
+56
+00:02:27,360 --> 00:02:27,900
+Now,
+
+57
+00:02:27,900 --> 00:02:31,000
+I say that in order to follow the system,
+
+58
+00:02:31,000 --> 00:02:34,520
+all you need to know is,
+
+59
+00:02:34,520 --> 00:02:36,640
+at the initial starting point,
+
+60
+00:02:36,640 --> 00:02:38,340
+all you need to know is the position.
+
+61
+00:02:38,580 --> 00:02:40,420
+You don't need to know the velocity.
+
+62
+00:02:40,420 --> 00:02:42,260
+How do I know that?
+
+63
+00:02:42,260 --> 00:02:43,060
+Well,
+
+64
+00:02:43,060 --> 00:02:43,760
+look at this equation.
+
+65
+00:02:44,060 --> 00:02:47,940
+Supposing you knew that time t equals zero,
+
+66
+00:02:47,940 --> 00:02:48,980
+this is x,
+
+67
+00:02:48,980 --> 00:02:52,340
+the vertical axis doesn't mean anything right now.
+
+68
+00:02:52,900 --> 00:02:55,100
+Supposing we knew the particle was at x.
+
+69
+00:02:56,700 --> 00:02:57,260
+Then,
+
+70
+00:02:57,260 --> 00:03:00,720
+we would instantly know the force on it.
+
+71
+00:03:00,720 --> 00:03:01,700
+Why?
+
+72
+00:03:01,700 --> 00:03:04,440
+Because the force is a known function of position.
+
+73
+00:03:05,120 --> 00:03:06,060
+But from that,
+
+74
+00:03:06,060 --> 00:03:08,020
+we would instantly read off the velocity.
+
+75
+00:03:08,020 --> 00:03:10,460
+Just from the equation itself.
+
+76
+00:03:12,140 --> 00:03:12,700
+So,
+
+77
+00:03:12,700 --> 00:03:14,280
+with Aristotle's equation,
+
+78
+00:03:14,280 --> 00:03:17,120
+if we know x at an instant,
+
+79
+00:03:17,120 --> 00:03:19,120
+we also know the velocity.
+
+80
+00:03:19,540 --> 00:03:20,020
+Now,
+
+81
+00:03:20,020 --> 00:03:20,840
+what about the acceleration?
+
+82
+00:03:20,840 --> 00:03:23,040
+Do we know the acceleration?
+
+83
+00:03:23,580 --> 00:03:25,980
+Let's prove that we can figure out the velocity.
+
+84
+00:03:26,000 --> 00:03:26,520
+Let's figure out the acceleration.
+
+85
+00:03:28,000 --> 00:03:29,500
+To figure out the acceleration,
+
+86
+00:03:29,500 --> 00:03:31,460
+all we have to do is
+
+87
+00:03:31,460 --> 00:03:33,420
+differentiate this with respect to time.
+
+88
+00:03:34,120 --> 00:03:35,540
+We'll assume the mass,
+
+89
+00:03:35,540 --> 00:03:36,100
+in fact,
+
+90
+00:03:36,100 --> 00:03:36,980
+from here on in,
+
+91
+00:03:36,980 --> 00:03:37,660
+forever and ever,
+
+92
+00:03:37,660 --> 00:03:39,960
+mass is a constant.
+
+93
+00:03:40,120 --> 00:03:41,420
+It doesn't change with time.
+
+94
+00:03:41,420 --> 00:03:42,820
+The mass of an object,
+
+95
+00:03:42,820 --> 00:03:43,780
+just to state that.
+
+96
+00:03:43,860 --> 00:03:44,360
+Of course,
+
+97
+00:03:44,360 --> 00:03:45,920
+the mass of an object could change.
+
+98
+00:03:45,920 --> 00:03:47,580
+We could drop the bottom row off this,
+
+99
+00:03:47,580 --> 00:03:48,780
+and its mass changes.
+
+100
+00:03:49,380 --> 00:03:50,990
+But that's only because we ignored
+
+101
+00:03:50,990 --> 00:03:52,600
+part of the system that fell off.
+
+102
+00:03:53,660 --> 00:03:54,260
+All right,
+
+103
+00:03:54,260 --> 00:03:54,880
+so here we are.
+
+104
+00:03:54,880 --> 00:03:56,820
+F equals m dx dt.
+
+105
+00:03:57,040 --> 00:03:59,280
+Let's differentiate this with respect to time.
+
+106
+00:03:59,680 --> 00:04:01,140
+Then on the right-hand side,
+
+107
+00:04:01,140 --> 00:04:02,600
+we'll of course have the acceleration.
+
+108
+00:04:03,000 --> 00:04:04,300
+Mass times the acceleration.
+
+109
+00:04:05,660 --> 00:04:07,180
+What about the left-hand side?
+
+110
+00:04:07,360 --> 00:04:09,360
+The left-hand side will have
+
+111
+00:04:09,360 --> 00:04:11,360
+the time derivative of the force.
+
+112
+00:04:12,100 --> 00:04:14,900
+So let's come over to this blackboard
+
+113
+00:04:14,900 --> 00:04:17,700
+and calculate the time derivative of the force.
+
+114
+00:04:18,659 --> 00:04:21,019
+Why does the force change in the first place?
+
+115
+00:04:21,599 --> 00:04:23,920
+It changes because the particle moves.
+
+116
+00:04:24,880 --> 00:04:26,800
+And depending on where the particle is,
+
+117
+00:04:26,800 --> 00:04:28,340
+the force will change.
+
+118
+00:04:29,020 --> 00:04:33,100
+The force only changes because the particle moves.
+
+119
+00:04:34,480 --> 00:04:36,160
+So let's calculate the time
+
+120
+00:04:36,160 --> 00:04:37,840
+rate of change of the force.
+
+121
+00:04:39,080 --> 00:04:44,920
+That's equal to the derivative of the force.
+
+122
+00:04:47,680 --> 00:04:49,970
+Let's call it the derivative of
+
+123
+00:04:49,970 --> 00:04:52,260
+the force with respect to position.
+
+124
+00:04:53,859 --> 00:04:56,020
+I'm using some crazy mixed notation,
+
+125
+00:04:56,020 --> 00:04:58,700
+partial and the derivative of
+
+126
+00:04:58,700 --> 00:05:01,380
+the force with respect to position.
+
+127
+00:05:01,540 --> 00:05:04,350
+That tells you how much the force changes when you
+
+128
+00:05:04,350 --> 00:05:07,160
+move from one position to another times how fast you move.
+
+129
+00:05:08,980 --> 00:05:09,780
+dx dt.
+
+130
+00:05:10,560 --> 00:05:11,280
+In fact,
+
+131
+00:05:11,280 --> 00:05:12,140
+if you look at this equation,
+
+132
+00:05:12,140 --> 00:05:13,610
+you'll notice it's correct because
+
+133
+00:05:13,610 --> 00:05:15,080
+you can cancel out the dx.
+
+134
+00:05:15,960 --> 00:05:17,530
+The f dt is the
+
+135
+00:05:17,530 --> 00:05:19,100
+f by dx dx by dt.
+
+136
+00:05:19,100 --> 00:05:21,670
+And what it tells you is the force
+
+137
+00:05:21,670 --> 00:05:24,240
+changes with time because it varies with position,
+
+138
+00:05:24,240 --> 00:05:27,300
+and position is varying with respect to time.
+
+139
+00:05:27,620 --> 00:05:30,120
+So this then is the
+
+140
+00:05:30,120 --> 00:05:32,620
+f by dx times the velocity.
+
+141
+00:05:33,940 --> 00:05:34,460
+Okay,
+
+142
+00:05:34,460 --> 00:05:35,400
+let's put it in here.
+
+143
+00:05:36,760 --> 00:05:41,920
+The f by dt is equal to
+
+144
+00:05:41,920 --> 00:05:47,080
+the f by dx times the velocity.
+
+145
+00:05:47,320 --> 00:05:48,720
+Let's forget this for a moment.
+
+146
+00:05:49,960 --> 00:05:50,480
+Well,
+
+147
+00:05:50,480 --> 00:05:52,760
+that immediately now tells us the acceleration.
+
+148
+00:05:53,520 --> 00:05:55,760
+We know the force is a function of position.
+
+149
+00:05:56,280 --> 00:05:58,390
+We can differentiate it and find out
+
+150
+00:05:58,390 --> 00:06:00,500
+how it varies with respect to position.
+
+151
+00:06:00,920 --> 00:06:02,360
+So if we know f of x,
+
+152
+00:06:02,360 --> 00:06:03,920
+we also know df by dx.
+
+153
+00:06:04,700 --> 00:06:07,700
+And the first equation up here tells us
+
+154
+00:06:07,700 --> 00:06:10,700
+what the velocity is if we know the position.
+
+155
+00:06:11,260 --> 00:06:13,420
+If we know the instantaneous position,
+
+156
+00:06:13,420 --> 00:06:14,840
+we know the velocity.
+
+157
+00:06:15,560 --> 00:06:17,080
+If we know the velocity,
+
+158
+00:06:17,080 --> 00:06:18,800
+then we know the acceleration.
+
+159
+00:06:20,500 --> 00:06:23,840
+So without any further information,
+
+160
+00:06:23,840 --> 00:06:25,680
+using the equation,
+
+161
+00:06:25,680 --> 00:06:29,160
+we can also deduce the acceleration of the object.
+
+162
+00:06:29,680 --> 00:06:31,000
+We can go further.
+
+163
+00:06:31,240 --> 00:06:33,620
+What's the derivative of acceleration called?
+
+164
+00:06:35,980 --> 00:06:36,600
+Jerk.
+
+165
+00:06:38,740 --> 00:06:39,360
+Jerk.
+
+166
+00:06:39,850 --> 00:06:41,460
+The time derivative of acceleration.
+
+167
+00:06:41,740 --> 00:06:42,530
+Let's see if we can
+
+168
+00:06:42,530 --> 00:06:43,320
+work that out just for fun.
+
+169
+00:06:43,520 --> 00:06:43,980
+Just...
+
+170
+00:06:47,180 --> 00:06:48,650
+Supposing we differentiate this
+
+171
+00:06:48,650 --> 00:06:50,120
+equation with respect to time.
+
+172
+00:06:50,560 --> 00:06:53,400
+Then we'll have m times the jerk,
+
+173
+00:06:53,400 --> 00:06:56,280
+the derivative of the acceleration with respect to time.
+
+174
+00:06:56,340 --> 00:06:57,100
+Let's call it jerk,
+
+175
+00:06:57,100 --> 00:06:57,400
+j.
+
+176
+00:06:58,560 --> 00:07:01,980
+Which is derivative of acceleration with respect to time.
+
+177
+00:07:02,360 --> 00:07:02,880
+Alright,
+
+178
+00:07:02,880 --> 00:07:05,000
+now we have to differentiate the right-hand side.
+
+179
+00:07:05,180 --> 00:07:06,700
+The right-hand side is a product.
+
+180
+00:07:07,100 --> 00:07:08,780
+To differentiate a product,
+
+181
+00:07:08,780 --> 00:07:10,640
+we use the product rule.
+
+182
+00:07:11,080 --> 00:07:11,980
+And that says,
+
+183
+00:07:11,980 --> 00:07:12,860
+first of all,
+
+184
+00:07:12,860 --> 00:07:13,960
+we have df by dt.
+
+185
+00:07:13,980 --> 00:07:14,280
+And that's the derivative of f by dx.
+
+186
+00:07:15,980 --> 00:07:17,620
+Times dv by dt.
+
+187
+00:07:18,120 --> 00:07:19,640
+But that's just the acceleration.
+
+188
+00:07:20,580 --> 00:07:21,720
+That's one term.
+
+189
+00:07:22,340 --> 00:07:24,880
+That's the term coming from differentiating velocity.
+
+190
+00:07:24,940 --> 00:07:27,300
+And then the other term is
+
+191
+00:07:27,300 --> 00:07:29,660
+gotten by differentiating df by dx.
+
+192
+00:07:30,819 --> 00:07:33,000
+We're differentiating with respect to time.
+
+193
+00:07:33,740 --> 00:07:36,910
+But that's just the second derivative of f
+
+194
+00:07:36,910 --> 00:07:40,080
+with respect to x squared times the velocity.
+
+195
+00:07:40,680 --> 00:07:41,940
+Forget this for a moment.
+
+196
+00:07:42,640 --> 00:07:47,130
+The time derivative of f of the derivative of f is the
+
+197
+00:07:47,130 --> 00:07:51,620
+second derivative of f with respect to x times the velocity again.
+
+198
+00:07:51,960 --> 00:07:54,120
+It's exactly the same thing as over here,
+
+199
+00:07:54,120 --> 00:07:56,820
+except applied to the derivative of f.
+
+200
+00:07:57,960 --> 00:07:58,520
+Now,
+
+201
+00:07:58,520 --> 00:08:01,020
+we have to multiply that by another velocity.
+
+202
+00:08:02,600 --> 00:08:03,160
+Okay.
+
+203
+00:08:03,520 --> 00:08:05,750
+Derivative of f with respect to
+
+204
+00:08:05,750 --> 00:08:07,980
+x times the velocity times another velocity.
+
+205
+00:08:08,280 --> 00:08:09,540
+The upshot is,
+
+206
+00:08:09,540 --> 00:08:10,440
+in fact,
+
+207
+00:08:10,440 --> 00:08:11,300
+we do know the jerk.
+
+208
+00:08:11,940 --> 00:08:12,240
+We,
+
+209
+00:08:12,240 --> 00:08:13,580
+a moment ago,
+
+210
+00:08:13,580 --> 00:08:17,120
+convinced ourselves that if we know the initial position,
+
+211
+00:08:17,120 --> 00:08:20,540
+we also know both the velocity and the acceleration.
+
+212
+00:08:21,760 --> 00:08:22,320
+Well,
+
+213
+00:08:22,320 --> 00:08:25,460
+all that goes in here is velocity
+
+214
+00:08:25,460 --> 00:08:28,600
+and acceleration and knowledge of the force law.
+
+215
+00:08:29,620 --> 00:08:30,180
+So,
+
+216
+00:08:30,180 --> 00:08:31,800
+you also know the jerk.
+
+217
+00:08:32,159 --> 00:08:34,149
+I don't know what the term
+
+218
+00:08:34,149 --> 00:08:36,140
+for the derivative of the jerk is.
+
+219
+00:08:36,580 --> 00:08:37,580
+The putz,
+
+220
+00:08:37,580 --> 00:08:38,000
+the schmuck,
+
+221
+00:08:38,000 --> 00:08:38,380
+I don't know.
+
+222
+00:08:38,480 --> 00:08:38,640
+But,
+
+223
+00:08:38,640 --> 00:08:39,000
+uh...
+
+224
+00:08:40,659 --> 00:08:41,919
+I don't know what the term is.
+
+225
+00:08:41,919 --> 00:08:42,340
+I don't know what it's called.
+
+226
+00:08:43,520 --> 00:08:47,180
+But you can see the pattern differentiated again,
+
+227
+00:08:47,180 --> 00:08:51,860
+and each time you can deduce the next derivative.
+
+228
+00:08:52,360 --> 00:08:52,860
+That,
+
+229
+00:08:52,860 --> 00:08:53,320
+in effect,
+
+230
+00:08:53,320 --> 00:08:56,400
+says you can build up the entire motion if all
+
+231
+00:08:56,400 --> 00:08:59,480
+you know is the position at one instant of time.
+
+232
+00:09:00,200 --> 00:09:00,760
+Now,
+
+233
+00:09:00,760 --> 00:09:01,060
+as I said,
+
+234
+00:09:01,060 --> 00:09:01,920
+this is a false law.
+
+235
+00:09:03,620 --> 00:09:04,180
+So,
+
+236
+00:09:04,180 --> 00:09:06,440
+let's go to Newton's laws.
+
+237
+00:09:11,920 --> 00:09:13,060
+And I'm going to ask the same kind of question.
+
+238
+00:09:14,660 --> 00:09:15,260
+So,
+
+239
+00:09:15,260 --> 00:09:19,000
+f is now equal to mass times acceleration,
+
+240
+00:09:19,000 --> 00:09:21,800
+which means mass times the second
+
+241
+00:09:21,800 --> 00:09:24,600
+derivative of position with respect to time.
+
+242
+00:09:25,560 --> 00:09:26,160
+Sometimes,
+
+243
+00:09:26,160 --> 00:09:27,980
+if I use my dot notation,
+
+244
+00:09:27,980 --> 00:09:32,460
+I'll call that mx double dot.
+
+245
+00:09:32,660 --> 00:09:35,100
+Each dot means a derivative with respect to time.
+
+246
+00:09:36,140 --> 00:09:36,740
+Okay.
+
+247
+00:09:36,860 --> 00:09:37,540
+Let's suppose,
+
+248
+00:09:37,540 --> 00:09:37,980
+again,
+
+249
+00:09:37,980 --> 00:09:39,800
+I know where the particle
+
+250
+00:09:39,800 --> 00:09:41,620
+is at time t equals zero.
+
+251
+00:09:42,680 --> 00:09:44,000
+That means I know x.
+
+252
+00:09:44,620 --> 00:09:46,840
+That also means I know the force on it,
+
+253
+00:09:46,840 --> 00:09:48,660
+because the force is a function of position.
+
+254
+00:09:49,540 --> 00:09:51,110
+But how on earth am I
+
+255
+00:09:51,110 --> 00:09:52,680
+going to get the velocity from this?
+
+256
+00:09:53,440 --> 00:09:55,100
+I can't get the velocity.
+
+257
+00:09:55,340 --> 00:09:56,890
+What it tells me is the
+
+258
+00:09:56,890 --> 00:09:58,440
+acceleration in terms of the force,
+
+259
+00:09:58,440 --> 00:10:00,540
+and there is nothing in this equation
+
+260
+00:10:00,540 --> 00:10:02,640
+which tells me what the velocity is.
+
+261
+00:10:03,320 --> 00:10:04,600
+Just doesn't tell me.
+
+262
+00:10:04,920 --> 00:10:08,120
+So I've got to add in
+
+263
+00:10:08,120 --> 00:10:11,320
+the velocity as another piece of information.
+
+264
+00:10:11,920 --> 00:10:11,920
+So,
+
+265
+00:10:11,920 --> 00:10:15,180
+I've got to add in x and velocity,
+
+266
+00:10:15,180 --> 00:10:18,380
+or x and x dot,
+
+267
+00:10:18,380 --> 00:10:21,720
+are what I need to know to get started.
+
+268
+00:10:22,440 --> 00:10:22,920
+Well,
+
+269
+00:10:22,920 --> 00:10:25,020
+if I know x and the velocity,
+
+270
+00:10:25,020 --> 00:10:28,680
+then I can calculate the jerk.
+
+271
+00:10:28,840 --> 00:10:29,000
+Well,
+
+272
+00:10:29,000 --> 00:10:29,460
+first of all,
+
+273
+00:10:29,460 --> 00:10:30,740
+I can calculate the acceleration.
+
+274
+00:10:31,520 --> 00:10:35,120
+The acceleration I calculate from Newton's equation.
+
+275
+00:10:35,980 --> 00:10:37,200
+So now what do I know?
+
+276
+00:10:37,340 --> 00:10:38,160
+I know the position.
+
+277
+00:10:38,860 --> 00:10:40,220
+I know the velocity,
+
+278
+00:10:40,220 --> 00:10:41,900
+because I'm assuming that was the velocity.
+
+279
+00:10:41,920 --> 00:10:42,700
+That was given to us.
+
+280
+00:10:43,540 --> 00:10:45,820
+And I now deduce the acceleration.
+
+281
+00:10:47,100 --> 00:10:48,220
+From there on,
+
+282
+00:10:48,220 --> 00:10:50,510
+I can continue and compute the
+
+283
+00:10:50,510 --> 00:10:52,800
+jerk in exactly the same way.
+
+284
+00:10:53,420 --> 00:10:56,980
+If I know the acceleration and the velocity,
+
+285
+00:10:56,980 --> 00:10:58,680
+I then compute the jerk,
+
+286
+00:10:58,680 --> 00:11:02,560
+and then the multiple,
+
+287
+00:11:02,560 --> 00:11:03,840
+all the multiple derivatives.
+
+288
+00:11:04,660 --> 00:11:04,940
+So,
+
+289
+00:11:04,940 --> 00:11:05,680
+the lesson is,
+
+290
+00:11:05,680 --> 00:11:09,580
+in Newton's equations,
+
+291
+00:11:09,580 --> 00:11:11,280
+which are second order equations,
+
+292
+00:11:11,280 --> 00:11:14,240
+which involve second derivatives with respect to time,
+
+293
+00:11:14,400 --> 00:11:15,860
+you need to know,
+
+294
+00:11:15,860 --> 00:11:16,740
+to get started,
+
+295
+00:11:16,740 --> 00:11:18,900
+positions and velocities.
+
+296
+00:11:19,220 --> 00:11:22,200
+You need to know the position and velocity of
+
+297
+00:11:22,200 --> 00:11:25,180
+every particle and every component of the position and velocity.
+
+298
+00:11:26,460 --> 00:11:27,540
+If you know that,
+
+299
+00:11:27,540 --> 00:11:31,080
+then Newton's equations allow you to compute.
+
+300
+00:11:31,400 --> 00:11:31,980
+And,
+
+301
+00:11:31,980 --> 00:11:32,340
+of course,
+
+302
+00:11:32,340 --> 00:11:34,370
+you also need to know the force
+
+303
+00:11:34,370 --> 00:11:36,400
+law as a function of those positions.
+
+304
+00:11:38,480 --> 00:11:40,730
+The force law might depend not
+
+305
+00:11:40,730 --> 00:11:42,980
+only on the position of particles,
+
+306
+00:11:43,100 --> 00:11:44,920
+but it might depend on the different,
+
+307
+00:11:44,920 --> 00:11:47,440
+on relative positions and so forth.
+
+308
+00:11:48,160 --> 00:11:48,440
+But,
+
+309
+00:11:48,440 --> 00:11:49,660
+if you know all the positions,
+
+310
+00:11:49,660 --> 00:11:52,360
+then it's assumed that you know the force.
+
+311
+00:11:53,140 --> 00:11:55,280
+All the positions of all the particles,
+
+312
+00:11:55,280 --> 00:11:57,610
+then it's assumed that you know the
+
+313
+00:11:57,610 --> 00:11:59,940
+force on every single one of them,
+
+314
+00:12:00,080 --> 00:12:01,420
+due to all the others.
+
+315
+00:12:02,440 --> 00:12:04,200
+That's the assumption of Newton's equations.
+
+316
+00:12:05,520 --> 00:12:06,040
+Now,
+
+317
+00:12:06,040 --> 00:12:08,100
+we also talked about conservation of energy.
+
+318
+00:12:08,260 --> 00:12:09,660
+I think I was getting a little bit tired.
+
+319
+00:12:09,800 --> 00:12:11,360
+I tend to do that after two hours.
+
+320
+00:12:14,340 --> 00:12:14,860
+So,
+
+321
+00:12:14,860 --> 00:12:16,560
+let's just go back quickly
+
+322
+00:12:16,560 --> 00:12:18,260
+and discuss conservation of energy.
+
+323
+00:12:21,800 --> 00:12:23,000
+From Newton's equations.
+
+324
+00:12:23,280 --> 00:12:24,540
+Nothing deep at this point.
+
+325
+00:12:24,860 --> 00:12:25,380
+I mean,
+
+326
+00:12:25,380 --> 00:12:27,130
+conservation of energy is clearly
+
+327
+00:12:27,130 --> 00:12:28,880
+a lot deeper than Newton's equations.
+
+328
+00:12:29,720 --> 00:12:32,760
+It follows for electromagnetic radiation.
+
+329
+00:12:32,760 --> 00:12:35,800
+It follows in the theory of electrodynamics.
+
+330
+00:12:35,940 --> 00:12:38,060
+It works in relativity theory.
+
+331
+00:12:38,300 --> 00:12:39,680
+It works in general relativity.
+
+332
+00:12:40,000 --> 00:12:41,280
+It works in quantum mechanics.
+
+333
+00:12:41,600 --> 00:12:44,270
+There's clearly something much deeper
+
+334
+00:12:44,270 --> 00:12:46,940
+about the conservation of energy
+
+335
+00:12:46,940 --> 00:12:49,280
+than just what we're about to demonstrate.
+
+336
+00:12:50,060 --> 00:12:50,700
+But,
+
+337
+00:12:50,700 --> 00:12:51,320
+still,
+
+338
+00:12:51,320 --> 00:12:52,460
+we'll start slow.
+
+339
+00:12:53,600 --> 00:12:54,240
+Okay.
+
+340
+00:12:55,100 --> 00:12:55,740
+Now,
+
+341
+00:12:55,740 --> 00:12:56,620
+I gave you the example,
+
+342
+00:12:56,620 --> 00:12:58,000
+a couple of examples,
+
+343
+00:12:58,000 --> 00:12:59,840
+where energy conservation fails.
+
+344
+00:13:00,480 --> 00:13:01,600
+For example,
+
+345
+00:13:01,600 --> 00:13:03,060
+if there's friction forces,
+
+346
+00:13:03,060 --> 00:13:03,680
+of course,
+
+347
+00:13:03,680 --> 00:13:05,780
+energy conservation really does work.
+
+348
+00:13:06,960 --> 00:13:09,630
+It works if you were to follow the heat
+
+349
+00:13:09,630 --> 00:13:12,300
+and everything else that's produced by the sliding eraser.
+
+350
+00:13:12,980 --> 00:13:15,340
+But if you ignore all that and just
+
+351
+00:13:15,340 --> 00:13:17,700
+think of friction forces slowing the eraser down,
+
+352
+00:13:18,040 --> 00:13:19,980
+it would seem that the energy,
+
+353
+00:13:19,980 --> 00:13:21,200
+the kinetic energy,
+
+354
+00:13:21,200 --> 00:13:22,520
+the energy of motion,
+
+355
+00:13:23,660 --> 00:13:24,940
+suddenly goes away,
+
+356
+00:13:24,940 --> 00:13:29,480
+and it's not compensated for any change in potential energy.
+
+357
+00:13:30,200 --> 00:13:30,760
+So,
+
+358
+00:13:30,760 --> 00:13:31,580
+there are options.
+
+359
+00:13:31,600 --> 00:13:33,320
+There are obviously formulas that you can
+
+360
+00:13:33,320 --> 00:13:35,040
+write down which would not conserve energy.
+
+361
+00:13:36,300 --> 00:13:37,820
+I'll give you another example.
+
+362
+00:13:38,000 --> 00:13:39,620
+The other example was the spiral staircase.
+
+363
+00:13:40,240 --> 00:13:41,760
+The spiral staircase,
+
+364
+00:13:41,760 --> 00:13:43,160
+you can think of it this way.
+
+365
+00:13:43,840 --> 00:13:45,360
+Supposing you have a force law
+
+366
+00:13:47,140 --> 00:13:49,320
+that always pushes you around
+
+367
+00:13:49,320 --> 00:13:51,500
+a circle in the same direction.
+
+368
+00:13:52,040 --> 00:13:54,640
+The force always points around the circle.
+
+369
+00:13:55,040 --> 00:13:57,270
+Let's not worry for the moment where
+
+370
+00:13:57,270 --> 00:13:59,500
+the centrifugal force takes you off the circle.
+
+371
+00:13:59,660 --> 00:14:00,620
+Let's pretend that the force is
+
+372
+00:14:00,620 --> 00:14:01,580
+always pushing you around the circle.
+
+373
+00:14:01,600 --> 00:14:02,900
+Let's pretend that there's a good solid barrier,
+
+374
+00:14:02,900 --> 00:14:04,280
+another force,
+
+375
+00:14:04,420 --> 00:14:06,820
+which keeps the particle from moving off the circle.
+
+376
+00:14:08,160 --> 00:14:09,380
+And what's going to happen?
+
+377
+00:14:09,580 --> 00:14:11,200
+If the force is always pushing you
+
+378
+00:14:11,200 --> 00:14:12,820
+around the circle in the same direction,
+
+379
+00:14:13,080 --> 00:14:14,530
+the particle is going to
+
+380
+00:14:14,530 --> 00:14:15,980
+get faster and faster and faster.
+
+381
+00:14:16,700 --> 00:14:17,580
+And it's clear,
+
+382
+00:14:17,580 --> 00:14:20,660
+by the time it comes back to the same position,
+
+383
+00:14:21,520 --> 00:14:22,800
+it will be going faster.
+
+384
+00:14:23,500 --> 00:14:27,290
+There's no possibility of a
+
+385
+00:14:27,290 --> 00:14:31,080
+conservation of potential in kinetic energy
+
+386
+00:14:31,600 --> 00:14:34,080
+because you've come back to exactly the same spot.
+
+387
+00:14:34,860 --> 00:14:36,580
+So therefore the potential energy,
+
+388
+00:14:36,580 --> 00:14:37,380
+if there is any,
+
+389
+00:14:37,380 --> 00:14:38,240
+will be the same.
+
+390
+00:14:38,480 --> 00:14:40,460
+But the kinetic energy has increased.
+
+391
+00:14:40,780 --> 00:14:42,020
+And it'll keep increasing.
+
+392
+00:14:43,220 --> 00:14:46,680
+A force law like this is,
+
+393
+00:14:46,680 --> 00:14:47,040
+again,
+
+394
+00:14:47,040 --> 00:14:47,860
+unphysical.
+
+395
+00:14:48,040 --> 00:14:49,380
+It never occurs in nature.
+
+396
+00:14:51,060 --> 00:14:54,040
+The forces that occur in nature are called conservative.
+
+397
+00:14:55,200 --> 00:14:57,460
+And they are always of the following form.
+
+398
+00:14:57,740 --> 00:14:59,260
+The components of a force,
+
+399
+00:14:59,260 --> 00:15:01,440
+I'm speaking about a single particle now,
+
+400
+00:15:01,600 --> 00:15:03,420
+we'll generalize this to many particles,
+
+401
+00:15:03,620 --> 00:15:05,860
+in fact we'll generalize it to arbitrary systems,
+
+402
+00:15:06,800 --> 00:15:09,100
+but let's take the case of a single particle.
+
+403
+00:15:10,680 --> 00:15:11,580
+The force,
+
+404
+00:15:11,580 --> 00:15:13,480
+and now think of the force as a vector,
+
+405
+00:15:15,040 --> 00:15:16,780
+I'm drawing it in two dimensions,
+
+406
+00:15:16,780 --> 00:15:18,480
+it could be in any number of dimensions,
+
+407
+00:15:19,600 --> 00:15:22,260
+is equal to minus the derivative,
+
+408
+00:15:24,220 --> 00:15:25,820
+I'll write a formula and
+
+409
+00:15:25,820 --> 00:15:27,420
+then I'll explain what it means.
+
+410
+00:15:29,860 --> 00:15:30,800
+This formula,
+
+411
+00:15:30,800 --> 00:15:34,920
+this triangle is simply a symbol for derivatives,
+
+412
+00:15:34,920 --> 00:15:36,360
+partial derivatives.
+
+413
+00:15:37,340 --> 00:15:40,620
+Imagine that the potential energy is a function of position,
+
+414
+00:15:40,920 --> 00:15:43,380
+and if the position were two-dimensional,
+
+415
+00:15:43,380 --> 00:15:44,300
+as it is here,
+
+416
+00:15:44,980 --> 00:15:47,000
+it would be a function of x and y.
+
+417
+00:15:48,520 --> 00:15:50,140
+This is the potential energy,
+
+418
+00:15:50,140 --> 00:15:50,620
+u.
+
+419
+00:15:52,540 --> 00:15:55,300
+This formula really just means
+
+420
+00:15:55,300 --> 00:15:58,060
+that each component of the force,
+
+421
+00:15:59,140 --> 00:16:00,780
+the x component of the force,
+
+422
+00:16:00,800 --> 00:16:03,320
+and the y component of the force,
+
+423
+00:16:03,900 --> 00:16:07,000
+are equal to minus the derivative,
+
+424
+00:16:07,000 --> 00:16:09,000
+in this case with respect to x,
+
+425
+00:16:09,720 --> 00:16:11,120
+of u of x and y,
+
+426
+00:16:12,540 --> 00:16:14,680
+and minus the derivative with respect to
+
+427
+00:16:14,680 --> 00:16:16,820
+y of u of x and y.
+
+428
+00:16:18,820 --> 00:16:20,320
+That's what this symbol means.
+
+429
+00:16:20,620 --> 00:16:22,420
+It means the collection of derivatives,
+
+430
+00:16:22,420 --> 00:16:23,860
+partial derivatives,
+
+431
+00:16:24,640 --> 00:16:26,700
+with respect to the individual coordinates.
+
+432
+00:16:27,760 --> 00:16:29,100
+So what it says then,
+
+433
+00:16:29,100 --> 00:16:31,820
+is the components of force in a given direction
+
+434
+00:16:31,820 --> 00:16:34,750
+are proportional to how fast the
+
+435
+00:16:34,750 --> 00:16:37,680
+potential energy is changing along that direction.
+
+436
+00:16:38,860 --> 00:16:39,440
+Okay.
+
+437
+00:16:40,640 --> 00:16:41,220
+Alright,
+
+438
+00:16:41,220 --> 00:16:43,730
+let's use this to prove the conservation
+
+439
+00:16:43,730 --> 00:16:46,240
+of energy for the motion of a particle.
+
+440
+00:16:46,700 --> 00:16:48,160
+I did it last time,
+
+441
+00:16:48,160 --> 00:16:48,800
+but I,
+
+442
+00:16:49,540 --> 00:16:50,440
+as I said,
+
+443
+00:16:50,440 --> 00:16:51,440
+I was getting a little bit tired,
+
+444
+00:16:51,440 --> 00:16:52,380
+so I want to do it again,
+
+445
+00:16:52,480 --> 00:16:54,380
+and just do it as review.
+
+446
+00:16:55,850 --> 00:16:56,140
+Okay.
+
+447
+00:16:57,460 --> 00:17:01,760
+Let's define the quantity of the total energy
+
+448
+00:17:01,760 --> 00:17:05,220
+as the sum of kinetic energy plus potential energy.
+
+449
+00:17:05,560 --> 00:17:05,980
+Okay,
+
+450
+00:17:05,980 --> 00:17:06,420
+what about,
+
+451
+00:17:06,420 --> 00:17:07,339
+what is kinetic energy?
+
+452
+00:17:07,619 --> 00:17:08,780
+I'll define it for you now.
+
+453
+00:17:09,099 --> 00:17:10,240
+By definition,
+
+454
+00:17:10,240 --> 00:17:12,839
+for a particle moving,
+
+455
+00:17:12,839 --> 00:17:13,940
+it's one half
+
+456
+00:17:13,940 --> 00:17:17,859
+the mass of the particle times the velocity squared.
+
+457
+00:17:18,920 --> 00:17:20,660
+The velocity squared means,
+
+458
+00:17:20,660 --> 00:17:23,319
+if there's more than one component of velocity,
+
+459
+00:17:23,319 --> 00:17:25,299
+it means the sums of the
+
+460
+00:17:25,299 --> 00:17:27,280
+squares of the components of the velocity.
+
+461
+00:17:27,540 --> 00:17:28,260
+So in this case,
+
+462
+00:17:28,260 --> 00:17:28,960
+with two dimensions,
+
+463
+00:17:28,960 --> 00:17:30,140
+it would mean one half
+
+464
+00:17:31,220 --> 00:17:34,240
+m vx squared plus vy squared.
+
+465
+00:17:37,360 --> 00:17:38,440
+More generally,
+
+466
+00:17:38,440 --> 00:17:40,320
+I could write it as one
+
+467
+00:17:40,320 --> 00:17:42,200
+half the mass of the object
+
+468
+00:17:42,200 --> 00:17:46,340
+times the sum over the components of vi squared.
+
+469
+00:17:48,180 --> 00:17:48,740
+Sum,
+
+470
+00:17:48,740 --> 00:17:52,040
+meaning vx squared plus vy squared plus vz squared,
+
+471
+00:17:52,040 --> 00:17:55,800
+or whatever the number of directions of space is.
+
+472
+00:17:56,960 --> 00:17:57,560
+Okay,
+
+473
+00:17:57,560 --> 00:17:58,620
+that's the kinetic energy.
+
+474
+00:17:58,860 --> 00:18:00,720
+So that's usually called T.
+
+475
+00:18:02,600 --> 00:18:03,200
+Again,
+
+476
+00:18:03,200 --> 00:18:05,460
+just like P stands for momentum,
+
+477
+00:18:05,460 --> 00:18:07,420
+T stands for kinetic energy.
+
+478
+00:18:07,560 --> 00:18:08,340
+Don't ask me why.
+
+479
+00:18:09,740 --> 00:18:10,580
+And then,
+
+480
+00:18:10,580 --> 00:18:13,000
+the other contribution to the energy...
+
+481
+00:18:13,000 --> 00:18:16,200
+Is that also why U is potential?
+
+482
+00:18:16,800 --> 00:18:17,100
+Yeah,
+
+483
+00:18:17,100 --> 00:18:18,140
+it's also why U is potential.
+
+484
+00:18:18,800 --> 00:18:20,760
+A lot of people use V for potential.
+
+485
+00:18:22,300 --> 00:18:24,520
+But that gets mixed up with voltage,
+
+486
+00:18:25,440 --> 00:18:28,680
+which is potential energy divided by charge.
+
+487
+00:18:29,600 --> 00:18:32,340
+So I use U and I steer clear of V,
+
+488
+00:18:32,540 --> 00:18:33,740
+but other people use V.
+
+489
+00:18:33,880 --> 00:18:35,680
+It also gets confused with velocity.
+
+490
+00:18:36,700 --> 00:18:38,360
+T plus U.
+
+491
+00:18:39,560 --> 00:18:41,500
+That is the total energy.
+
+492
+00:18:43,760 --> 00:18:46,030
+I want to prove that it's
+
+493
+00:18:46,030 --> 00:18:48,300
+conserved as a consequence of Newton's equation,
+
+494
+00:18:48,660 --> 00:18:49,720
+F equals m a.
+
+495
+00:18:50,540 --> 00:18:52,020
+What does it mean that it's conserved?
+
+496
+00:18:52,040 --> 00:18:55,360
+It means that its time derivative is zero.
+
+497
+00:18:55,740 --> 00:18:57,830
+So all we have to
+
+498
+00:18:57,830 --> 00:18:59,920
+do is take its time derivative,
+
+499
+00:19:00,979 --> 00:19:02,640
+use Newton's equations,
+
+500
+00:19:03,060 --> 00:19:04,970
+and prove that everything cancels out
+
+501
+00:19:04,970 --> 00:19:06,880
+when we take the time derivative.
+
+502
+00:19:07,180 --> 00:19:07,940
+That's the exercise.
+
+503
+00:19:08,240 --> 00:19:09,080
+And it's not very hard.
+
+504
+00:19:09,180 --> 00:19:09,700
+Let's do it.
+
+505
+00:19:11,560 --> 00:19:12,200
+Okay,
+
+506
+00:19:12,200 --> 00:19:14,160
+so let's calculate the time
+
+507
+00:19:14,160 --> 00:19:16,120
+derivative of the kinetic energy.
+
+508
+00:19:17,340 --> 00:19:20,200
+Derivative with respect to time of kinetic energy.
+
+509
+00:19:20,560 --> 00:19:21,720
+That is...
+
+510
+00:19:21,720 --> 00:19:22,620
+Here it is right here.
+
+511
+00:19:22,700 --> 00:19:23,900
+Here's the kinetic energy.
+
+512
+00:19:24,020 --> 00:19:25,040
+One half mv squared.
+
+513
+00:19:25,860 --> 00:19:27,360
+m is not changing.
+
+514
+00:19:28,020 --> 00:19:29,240
+Mass is fixed.
+
+515
+00:19:29,700 --> 00:19:31,380
+One half is not changing.
+
+516
+00:19:31,660 --> 00:19:34,260
+The thing which might change is the velocity.
+
+517
+00:19:35,940 --> 00:19:36,500
+This,
+
+518
+00:19:36,500 --> 00:19:37,220
+of course,
+
+519
+00:19:37,220 --> 00:19:38,900
+is the sum of squares of velocities.
+
+520
+00:19:39,480 --> 00:19:40,320
+So it's a sum.
+
+521
+00:19:46,300 --> 00:19:50,840
+mv sub i times dv sub i by dt.
+
+522
+00:19:50,840 --> 00:19:52,880
+Now what I've done is I've
+
+523
+00:19:52,880 --> 00:19:54,920
+said that the derivative of a square,
+
+524
+00:19:55,820 --> 00:19:58,120
+namely the derivative of v squared,
+
+525
+00:19:58,460 --> 00:20:01,020
+is v times the derivative of v.
+
+526
+00:20:01,360 --> 00:20:03,890
+The derivative of a square of something
+
+527
+00:20:03,890 --> 00:20:06,420
+is the something times its own derivative.
+
+528
+00:20:08,740 --> 00:20:09,340
+Whoops.
+
+529
+00:20:09,640 --> 00:20:11,080
+I forgot a factor of...
+
+530
+00:20:11,080 --> 00:20:11,960
+I did it right,
+
+531
+00:20:11,960 --> 00:20:13,340
+but I didn't say it right.
+
+532
+00:20:13,760 --> 00:20:16,360
+The derivative of the square is twice
+
+533
+00:20:16,360 --> 00:20:18,960
+the something times the derivative of the something.
+
+534
+00:20:19,760 --> 00:20:20,540
+All right?
+
+535
+00:20:20,840 --> 00:20:22,160
+That gets rid of the factor of two.
+
+536
+00:20:23,000 --> 00:20:26,080
+So the time derivative of the kinetic energy
+
+537
+00:20:26,080 --> 00:20:29,160
+is the sum over all the directions of space,
+
+538
+00:20:30,260 --> 00:20:31,280
+the mass,
+
+539
+00:20:31,280 --> 00:20:34,640
+times the ith component of the velocity,
+
+540
+00:20:34,640 --> 00:20:36,180
+times...
+
+541
+00:20:36,180 --> 00:20:38,020
+Now what's dv sub i by dt?
+
+542
+00:20:40,120 --> 00:20:42,120
+That's the component of the acceleration.
+
+543
+00:20:42,500 --> 00:20:44,160
+So we might as well call it the acceleration.
+
+544
+00:20:47,040 --> 00:20:48,420
+a sub i.
+
+545
+00:20:48,780 --> 00:20:50,220
+Ith component of acceleration.
+
+546
+00:20:51,340 --> 00:20:53,890
+Let's calculate the time derivative
+
+547
+00:20:53,890 --> 00:20:56,440
+now of the potential energy.
+
+548
+00:20:56,720 --> 00:20:58,660
+And the potential energy is also...
+
+549
+00:20:58,660 --> 00:21:00,300
+It is a function of position.
+
+550
+00:21:00,940 --> 00:21:03,260
+When I write here that it's a function of x,
+
+551
+00:21:03,500 --> 00:21:05,580
+it could be a function of x,
+
+552
+00:21:05,580 --> 00:21:05,980
+y,
+
+553
+00:21:05,980 --> 00:21:06,400
+z,
+
+554
+00:21:06,400 --> 00:21:07,840
+all of the coordinates.
+
+555
+00:21:09,280 --> 00:21:13,540
+What is the derivative of u with respect to time?
+
+556
+00:21:14,000 --> 00:21:14,600
+Well,
+
+557
+00:21:14,600 --> 00:21:16,320
+u varies with time for the
+
+558
+00:21:16,320 --> 00:21:18,040
+same reason that it did before,
+
+559
+00:21:18,260 --> 00:21:19,960
+because the position varies.
+
+560
+00:21:20,639 --> 00:21:22,099
+It varies a little bit if
+
+561
+00:21:22,099 --> 00:21:23,560
+you move in the x direction.
+
+562
+00:21:23,800 --> 00:21:24,910
+It varies a little bit if
+
+563
+00:21:24,910 --> 00:21:26,020
+you move in the y direction.
+
+564
+00:21:26,340 --> 00:21:27,540
+It varies a little bit if
+
+565
+00:21:27,540 --> 00:21:28,740
+you move in the z direction.
+
+566
+00:21:30,040 --> 00:21:30,980
+And so in fact,
+
+567
+00:21:30,980 --> 00:21:33,220
+the derivative of u with respect
+
+568
+00:21:33,220 --> 00:21:35,460
+to t is the sum of terms,
+
+569
+00:21:37,879 --> 00:21:41,659
+each term being the derivative of u with
+
+570
+00:21:41,659 --> 00:21:45,440
+respect to x times the time derivative of x,
+
+571
+00:21:47,479 --> 00:21:49,100
+plus du by dy.
+
+572
+00:21:49,100 --> 00:21:53,200
+times the time derivative with respect to y,
+
+573
+00:21:53,200 --> 00:21:54,300
+and so forth.
+
+574
+00:21:55,020 --> 00:21:57,680
+Or I can summarize it by
+
+575
+00:21:57,680 --> 00:22:00,340
+saying it's the derivative of u
+
+576
+00:22:01,040 --> 00:22:04,910
+with respect to the ith coordinate x
+
+577
+00:22:04,910 --> 00:22:08,780
+times the velocity in the ith direction,
+
+578
+00:22:09,000 --> 00:22:11,700
+times the component of the velocity in the ith direction.
+
+579
+00:22:12,360 --> 00:22:13,000
+Again,
+
+580
+00:22:13,000 --> 00:22:14,020
+summed over i.
+
+581
+00:22:15,880 --> 00:22:17,480
+So now let's write down
+
+582
+00:22:17,480 --> 00:22:19,080
+the total time derivative of u.
+
+583
+00:22:19,780 --> 00:22:21,180
+It's the sum of these two.
+
+584
+00:22:21,740 --> 00:22:23,160
+Derivative of kinetic energy,
+
+585
+00:22:23,160 --> 00:22:24,600
+derivative of potential energy.
+
+586
+00:22:24,980 --> 00:22:27,180
+And we can write down
+
+587
+00:22:27,180 --> 00:22:29,380
+that the time derivative of energy
+
+588
+00:22:32,040 --> 00:22:36,940
+is equal to the summation over all the directions.
+
+589
+00:22:39,520 --> 00:22:41,940
+Let's take v sub i first,
+
+590
+00:22:41,940 --> 00:22:45,260
+and then write m a sub i.
+
+591
+00:22:46,440 --> 00:22:47,880
+That's the first term here.
+
+592
+00:22:49,100 --> 00:22:50,860
+You can see where this is going.
+
+593
+00:22:51,020 --> 00:22:53,720
+I'm grouping m with a sub i for a reason.
+
+594
+00:22:54,840 --> 00:22:57,580
+And then we have to add to that,
+
+595
+00:22:57,580 --> 00:22:59,360
+again,
+
+596
+00:22:59,360 --> 00:23:00,340
+a sum over i.
+
+597
+00:23:00,920 --> 00:23:06,840
+And it is plus du by dx i,
+
+598
+00:23:06,840 --> 00:23:09,340
+also times vi.
+
+599
+00:23:11,340 --> 00:23:15,800
+Both these terms have the velocities in them.
+
+600
+00:23:16,100 --> 00:23:19,080
+So let's take the velocity outside the parentheses.
+
+601
+00:23:19,100 --> 00:23:20,600
+Like so.
+
+602
+00:23:26,140 --> 00:23:26,700
+Well,
+
+603
+00:23:26,700 --> 00:23:27,440
+what do we have?
+
+604
+00:23:28,400 --> 00:23:29,740
+What's m a sub i?
+
+605
+00:23:32,120 --> 00:23:32,980
+It's a force.
+
+606
+00:23:33,520 --> 00:23:34,660
+Mass times acceleration.
+
+607
+00:23:35,640 --> 00:23:37,140
+So this is the component of
+
+608
+00:23:37,140 --> 00:23:38,640
+the force in the ith direction.
+
+609
+00:23:40,120 --> 00:23:42,060
+But what's du by dx i?
+
+610
+00:23:42,440 --> 00:23:45,780
+That's minus the force in the ith direction.
+
+611
+00:23:46,400 --> 00:23:47,760
+There's a minus sign here.
+
+612
+00:23:49,100 --> 00:23:51,640
+So this is just f minus f.
+
+613
+00:23:53,660 --> 00:23:55,120
+That's what's in the bracket here.
+
+614
+00:23:58,160 --> 00:24:01,120
+Notice that force is minus
+
+615
+00:24:01,120 --> 00:24:04,080
+the derivative of potential energy.
+
+616
+00:24:05,680 --> 00:24:06,720
+All times v.
+
+617
+00:24:07,680 --> 00:24:09,540
+But if f minus f is 0,
+
+618
+00:24:09,540 --> 00:24:11,520
+whether it's multiplied by v or not,
+
+619
+00:24:12,760 --> 00:24:14,180
+so term by term,
+
+620
+00:24:14,180 --> 00:24:16,060
+all you get is 0.
+
+621
+00:24:18,200 --> 00:24:18,740
+Upshot.
+
+622
+00:24:19,460 --> 00:24:21,220
+Energy is conserved.
+
+623
+00:24:21,680 --> 00:24:23,700
+And now we're only talking about a
+
+624
+00:24:23,700 --> 00:24:25,720
+single particle moving in a force field.
+
+625
+00:24:26,880 --> 00:24:29,700
+But we could be talking about any number of particles.
+
+626
+00:24:30,480 --> 00:24:33,070
+Instead of thinking of the sum as just
+
+627
+00:24:33,070 --> 00:24:35,660
+a sum over the three directions of space,
+
+628
+00:24:36,100 --> 00:24:39,320
+it could also include the sum over different particles.
+
+629
+00:24:40,900 --> 00:24:43,400
+And precisely the same kind of analysis would
+
+630
+00:24:43,400 --> 00:24:45,900
+say that if you have a system of particles,
+
+631
+00:24:46,620 --> 00:24:47,670
+that the system of particles will function in
+
+632
+00:24:47,670 --> 00:24:48,720
+a way that is not a system of particles.
+
+633
+00:24:48,720 --> 00:24:49,760
+That the system of particles will have a conserved energy.
+
+634
+00:24:50,600 --> 00:24:52,140
+No matter what the force is,
+
+635
+00:24:52,140 --> 00:24:54,120
+as long as the rule is
+
+636
+00:24:54,120 --> 00:24:56,100
+that the force on every particle
+
+637
+00:24:56,600 --> 00:24:58,470
+is minus the derivative of
+
+638
+00:24:58,470 --> 00:25:00,340
+u with respect to its position.
+
+639
+00:25:02,900 --> 00:25:03,380
+Okay.
+
+640
+00:25:04,380 --> 00:25:05,380
+So that was review.
+
+641
+00:25:07,040 --> 00:25:08,960
+I don't remember if we talked
+
+642
+00:25:08,960 --> 00:25:10,880
+about conservation of momentum last time.
+
+643
+00:25:11,000 --> 00:25:11,280
+Did we?
+
+644
+00:25:12,660 --> 00:25:13,140
+No.
+
+645
+00:25:13,140 --> 00:25:13,540
+Okay.
+
+646
+00:25:13,640 --> 00:25:16,010
+So I will now begin reviewing
+
+647
+00:25:16,010 --> 00:25:18,380
+what I did not do last time.
+
+648
+00:25:18,720 --> 00:25:20,460
+But which I had intended to do.
+
+649
+00:25:20,740 --> 00:25:23,320
+So let's review conservation of momentum.
+
+650
+00:25:25,620 --> 00:25:26,600
+Now as I said,
+
+651
+00:25:26,600 --> 00:25:27,730
+this was a little bit of
+
+652
+00:25:27,730 --> 00:25:28,860
+trickery and a little bit of magic.
+
+653
+00:25:29,080 --> 00:25:29,660
+And you might say,
+
+654
+00:25:29,660 --> 00:25:30,680
+yeah,
+
+655
+00:25:30,680 --> 00:25:32,860
+but why is energy really conserved?
+
+656
+00:25:33,320 --> 00:25:34,660
+We will come to that.
+
+657
+00:25:34,920 --> 00:25:35,960
+But for the moment,
+
+658
+00:25:35,960 --> 00:25:38,470
+we're just observing that Newton's equations
+
+659
+00:25:38,470 --> 00:25:40,980
+allow you to define a certain thing.
+
+660
+00:25:42,060 --> 00:25:42,540
+Namely,
+
+661
+00:25:42,540 --> 00:25:45,160
+T plus V to be called energy.
+
+662
+00:25:46,400 --> 00:25:46,880
+Okay.
+
+663
+00:25:46,880 --> 00:25:48,180
+Now let's come to momentum.
+
+664
+00:25:51,080 --> 00:25:52,220
+Now first of all,
+
+665
+00:25:52,220 --> 00:25:54,050
+let me rewrite Newton's equation
+
+666
+00:25:54,050 --> 00:25:55,880
+in a slightly different form.
+
+667
+00:25:56,260 --> 00:25:57,180
+Nothing very deep.
+
+668
+00:25:57,340 --> 00:25:58,680
+Now we're talking about a single particle.
+
+669
+00:25:59,320 --> 00:26:01,020
+The single particle is just,
+
+670
+00:26:01,020 --> 00:26:01,920
+has the equation.
+
+671
+00:26:02,440 --> 00:26:03,440
+The force,
+
+672
+00:26:03,440 --> 00:26:03,960
+again,
+
+673
+00:26:03,960 --> 00:26:06,800
+we can do it in components.
+
+674
+00:26:06,800 --> 00:26:11,080
+F sub i is just equal to mass times
+
+675
+00:26:11,080 --> 00:26:15,360
+the derivative of V sub i with respect to T.
+
+676
+00:26:16,880 --> 00:26:17,060
+Again,
+
+677
+00:26:17,060 --> 00:26:18,950
+i simply stands for one
+
+678
+00:26:18,950 --> 00:26:20,840
+of the three coordinates of space.
+
+679
+00:26:21,200 --> 00:26:22,440
+So these are the three coordinates.
+
+680
+00:26:24,180 --> 00:26:24,880
+All right.
+
+681
+00:26:24,900 --> 00:26:27,240
+Mass doesn't change with time.
+
+682
+00:26:27,760 --> 00:26:30,080
+So I can bring it into the
+
+683
+00:26:30,080 --> 00:26:32,400
+time derivative and just write the force.
+
+684
+00:26:33,560 --> 00:26:36,560
+I'm not going to bother putting indices down here.
+
+685
+00:26:36,840 --> 00:26:39,190
+Is the derivative with respect
+
+686
+00:26:39,190 --> 00:26:41,540
+to time of mass times V.
+
+687
+00:26:42,860 --> 00:26:45,000
+And now give mass times V a name.
+
+688
+00:26:45,000 --> 00:26:46,800
+The name is momentum.
+
+689
+00:26:48,280 --> 00:26:49,760
+Mass times velocity,
+
+690
+00:26:49,760 --> 00:26:50,500
+and it's a vector.
+
+691
+00:26:50,700 --> 00:26:51,500
+It has components.
+
+692
+00:26:51,980 --> 00:26:52,780
+It has,
+
+693
+00:26:52,780 --> 00:26:54,520
+we can write this for each component.
+
+694
+00:26:56,100 --> 00:26:58,200
+M times V is called momentum.
+
+695
+00:26:58,500 --> 00:27:04,310
+And so another form of Newton's equations is that force is
+
+696
+00:27:04,310 --> 00:27:10,120
+equal to the time derivative of the momentum of an object.
+
+697
+00:27:11,240 --> 00:27:12,440
+Momentum is called P.
+
+698
+00:27:13,940 --> 00:27:14,980
+And so we have this.
+
+699
+00:27:14,980 --> 00:27:17,940
+We can make this a vector equation if we like.
+
+700
+00:27:20,440 --> 00:27:23,580
+Force is simply the time derivative of the momentum.
+
+701
+00:27:24,000 --> 00:27:25,960
+And wasn't that the original formulation
+
+702
+00:27:25,960 --> 00:27:27,920
+that was along the way being stated?
+
+703
+00:27:28,300 --> 00:27:28,980
+I don't know.
+
+704
+00:27:29,200 --> 00:27:31,250
+I don't think Newton actually defined the
+
+705
+00:27:31,250 --> 00:27:33,300
+definition of momentum as far as I know.
+
+706
+00:27:33,340 --> 00:27:33,840
+I'm not sure.
+
+707
+00:27:36,560 --> 00:27:37,910
+It's been quite a number of
+
+708
+00:27:37,910 --> 00:27:39,260
+years since I read the Principia.
+
+709
+00:27:44,980 --> 00:27:46,200
+What assumptions are we making about
+
+710
+00:27:46,200 --> 00:27:47,420
+time before we can do the Newton's?
+
+711
+00:27:48,520 --> 00:27:50,780
+What assumptions are we making about time?
+
+712
+00:27:50,940 --> 00:27:51,380
+Well...
+
+713
+00:27:51,380 --> 00:27:51,960
+Yeah,
+
+714
+00:27:51,960 --> 00:27:53,000
+I know we didn't talk about it.
+
+715
+00:27:53,060 --> 00:27:53,220
+No,
+
+716
+00:27:53,220 --> 00:27:54,260
+we didn't talk about it.
+
+717
+00:27:54,320 --> 00:27:58,220
+We're assuming that there's a universal concept
+
+718
+00:27:58,220 --> 00:28:02,120
+of time at every point in this room.
+
+719
+00:28:02,320 --> 00:28:04,080
+We could have a watch or a clock,
+
+720
+00:28:04,080 --> 00:28:05,340
+each one of you has a clock.
+
+721
+00:28:05,440 --> 00:28:06,560
+They're synchronized.
+
+722
+00:28:06,920 --> 00:28:08,900
+And we're making the dumbest,
+
+723
+00:28:08,900 --> 00:28:11,880
+simplest Newtonian assumption that time
+
+724
+00:28:11,880 --> 00:28:14,860
+is an absolutely universal thing.
+
+725
+00:28:14,860 --> 00:28:17,890
+At every point of space we can synchronize our
+
+726
+00:28:17,890 --> 00:28:20,920
+watches so that everybody will agree upon the time.
+
+727
+00:28:22,100 --> 00:28:26,100
+And that time just flows uniformly
+
+728
+00:28:26,100 --> 00:28:30,100
+in the most naive kind of sense.
+
+729
+00:28:33,260 --> 00:28:36,820
+One of the things we have assumed is that
+
+730
+00:28:36,820 --> 00:28:40,380
+the force law here does not explicitly depend on time.
+
+731
+00:28:40,620 --> 00:28:44,540
+We could imagine force laws which change with time.
+
+732
+00:28:44,860 --> 00:28:47,300
+I'm assuming for the moment that that's not the case.
+
+733
+00:28:48,420 --> 00:28:49,160
+All right,
+
+734
+00:28:49,160 --> 00:28:51,260
+now let's come to conservation of momentum.
+
+735
+00:28:51,840 --> 00:28:52,740
+First of all,
+
+736
+00:28:52,740 --> 00:28:54,200
+even if there were just a single
+
+737
+00:28:54,200 --> 00:28:55,660
+particle and there was no force on it,
+
+738
+00:28:56,340 --> 00:28:58,640
+momentum would be conserved because who would say
+
+739
+00:28:58,640 --> 00:29:00,940
+the time derivative of momentum is equal to zero?
+
+740
+00:29:02,220 --> 00:29:05,000
+So for a single particle with no forces on it,
+
+741
+00:29:05,000 --> 00:29:05,920
+out in outer space,
+
+742
+00:29:05,920 --> 00:29:09,800
+far away in between galaxies,
+
+743
+00:29:10,560 --> 00:29:12,420
+the momentum is conserved.
+
+744
+00:29:13,340 --> 00:29:15,130
+At least to the approximation that
+
+745
+00:29:15,130 --> 00:29:16,920
+we ignore forces on the particle.
+
+746
+00:29:17,540 --> 00:29:21,860
+But that's hardly a very general example.
+
+747
+00:29:22,180 --> 00:29:24,040
+So let's think about a more general example.
+
+748
+00:29:24,520 --> 00:29:27,390
+The basic foundation for the conservation of momentum
+
+749
+00:29:27,390 --> 00:29:30,260
+is another one of Newton's laws about force.
+
+750
+00:29:30,920 --> 00:29:32,160
+Here's what Newton said.
+
+751
+00:29:33,480 --> 00:29:36,460
+He said the forces between objects.
+
+752
+00:29:36,800 --> 00:29:37,000
+Well,
+
+753
+00:29:37,000 --> 00:29:37,540
+first of all,
+
+754
+00:29:37,540 --> 00:29:39,220
+he said the force on every object,
+
+755
+00:29:39,220 --> 00:29:42,000
+and by every object we can mean particles now,
+
+756
+00:29:42,420 --> 00:29:43,960
+everything being made out of particles.
+
+757
+00:29:44,480 --> 00:29:47,520
+The force on every object is the sum
+
+758
+00:29:47,520 --> 00:29:50,560
+of forces due to all the other objects.
+
+759
+00:29:51,480 --> 00:29:52,340
+All right,
+
+760
+00:29:52,340 --> 00:29:53,660
+so if we call this particle one,
+
+761
+00:29:54,800 --> 00:29:59,610
+then the force on particle one is equal to
+
+762
+00:29:59,610 --> 00:30:04,420
+the force on particle one due to particle two,
+
+763
+00:30:04,680 --> 00:30:05,940
+let's call that F12,
+
+764
+00:30:07,719 --> 00:30:12,340
+plus the force on particle one due to particle three,
+
+765
+00:30:12,420 --> 00:30:15,170
+we assume that a particle
+
+766
+00:30:15,170 --> 00:30:17,920
+doesn't exert a force on itself.
+
+767
+00:30:21,860 --> 00:30:23,220
+Plus F14,
+
+768
+00:30:23,220 --> 00:30:24,840
+and so forth.
+
+769
+00:30:25,240 --> 00:30:28,080
+Force on particle one is the sum,
+
+770
+00:30:28,260 --> 00:30:28,940
+this is one,
+
+771
+00:30:28,940 --> 00:30:29,660
+two,
+
+772
+00:30:29,660 --> 00:30:30,460
+three,
+
+773
+00:30:30,460 --> 00:30:31,380
+four,
+
+774
+00:30:31,380 --> 00:30:32,280
+five.
+
+775
+00:30:34,560 --> 00:30:36,800
+Same thing for particle two.
+
+776
+00:30:39,140 --> 00:30:40,770
+The force on particle two
+
+777
+00:30:40,770 --> 00:30:42,400
+is the force on particle three,
+
+778
+00:30:42,400 --> 00:30:44,080
+plus the force on two due to one.
+
+779
+00:30:45,300 --> 00:30:45,820
+Okay,
+
+780
+00:30:45,820 --> 00:30:46,580
+so notice what I've,
+
+781
+00:30:46,580 --> 00:30:47,540
+notice my notation.
+
+782
+00:30:48,020 --> 00:30:50,200
+My notation is the first entry
+
+783
+00:30:50,200 --> 00:30:52,380
+is the particle that we're talking about,
+
+784
+00:30:52,540 --> 00:30:53,040
+who's,
+
+785
+00:30:53,040 --> 00:30:56,440
+we're talking about the force on the first particle here.
+
+786
+00:30:56,820 --> 00:30:59,640
+The second entry is,
+
+787
+00:30:59,640 --> 00:31:02,700
+refers to the particle that the force is due to.
+
+788
+00:31:03,160 --> 00:31:05,800
+So this is the force on one due to two.
+
+789
+00:31:07,040 --> 00:31:09,240
+Here's the force on two due to one,
+
+790
+00:31:09,240 --> 00:31:13,140
+plus the force on two due to three,
+
+791
+00:31:13,340 --> 00:31:16,680
+plus the force on two due to four,
+
+792
+00:31:16,680 --> 00:31:17,440
+and so forth.
+
+793
+00:31:19,360 --> 00:31:20,640
+Let's just take three,
+
+794
+00:31:20,640 --> 00:31:22,420
+I don't want to write too much.
+
+795
+00:31:22,560 --> 00:31:25,920
+Let's just truncate it at three particles.
+
+796
+00:31:26,240 --> 00:31:27,300
+And finally,
+
+797
+00:31:27,300 --> 00:31:31,900
+the third particle would have a force due to,
+
+798
+00:31:33,980 --> 00:31:36,640
+a force on three due to one,
+
+799
+00:31:37,440 --> 00:31:39,220
+plus a force on three due to one.
+
+800
+00:31:39,240 --> 00:31:40,360
+Plus a force on three due to two.
+
+801
+00:31:41,580 --> 00:31:42,520
+And that's all.
+
+802
+00:31:43,380 --> 00:31:45,120
+Now Newton's assumption,
+
+803
+00:31:45,120 --> 00:31:46,640
+Newton's law,
+
+804
+00:31:46,860 --> 00:31:49,040
+it's called action and reaction of course,
+
+805
+00:31:49,960 --> 00:31:53,460
+is that the forces of a particle on another particle,
+
+806
+00:31:53,580 --> 00:31:55,820
+the forces between a pair of particles,
+
+807
+00:31:56,060 --> 00:31:57,620
+are equal and opposite.
+
+808
+00:31:59,140 --> 00:32:02,660
+So the force on one due to two,
+
+809
+00:32:03,340 --> 00:32:05,380
+might be an attraction for example,
+
+810
+00:32:05,580 --> 00:32:07,230
+is equal and opposite to the
+
+811
+00:32:07,230 --> 00:32:08,880
+force on two due to one.
+
+812
+00:32:09,240 --> 00:32:13,660
+So if two is pulling one upward to the left,
+
+813
+00:32:13,880 --> 00:32:16,740
+one is pulling two downward to the right,
+
+814
+00:32:16,920 --> 00:32:19,080
+with the same magnitude of force.
+
+815
+00:32:19,540 --> 00:32:21,620
+Now there was another element to this,
+
+816
+00:32:21,760 --> 00:32:24,150
+that the force is along
+
+817
+00:32:24,150 --> 00:32:26,540
+the line separating the two particles,
+
+818
+00:32:26,700 --> 00:32:28,460
+but we're going to not worry about that right now.
+
+819
+00:32:28,640 --> 00:32:29,860
+We'll come back to that.
+
+820
+00:32:30,140 --> 00:32:32,400
+The important point is that the
+
+821
+00:32:32,400 --> 00:32:34,660
+force on one due to two,
+
+822
+00:32:34,840 --> 00:32:38,320
+is minus the force on two due to one.
+
+823
+00:32:39,240 --> 00:32:40,620
+We can make a vector equations
+
+824
+00:32:40,620 --> 00:32:42,000
+out of these if we like.
+
+825
+00:32:42,200 --> 00:32:43,640
+They are vector equations.
+
+826
+00:32:48,879 --> 00:32:51,140
+And what does Newton's law say?
+
+827
+00:32:51,440 --> 00:32:55,120
+It says that F12 is minus F21.
+
+828
+00:32:56,440 --> 00:32:58,920
+F13 is minus F31.
+
+829
+00:32:59,300 --> 00:33:03,000
+And F32 is minus F23.
+
+830
+00:33:04,200 --> 00:33:04,960
+Okay,
+
+831
+00:33:04,960 --> 00:33:08,280
+now let's see if we can explore momentum conservation.
+
+832
+00:33:09,560 --> 00:33:12,560
+What we'd like to prove is that the time derivative
+
+833
+00:33:13,240 --> 00:33:16,760
+of the total momentum of a system is zero,
+
+834
+00:33:16,920 --> 00:33:18,300
+as a consequence of this.
+
+835
+00:33:18,920 --> 00:33:20,600
+What do I mean by the total momentum?
+
+836
+00:33:20,960 --> 00:33:22,960
+I mean the total sum of momentum
+
+837
+00:33:22,960 --> 00:33:24,960
+on all the parts of the system,
+
+838
+00:33:25,080 --> 00:33:26,580
+all the particles that make it up.
+
+839
+00:33:28,680 --> 00:33:29,240
+So,
+
+840
+00:33:29,240 --> 00:33:30,580
+let's write them down,
+
+841
+00:33:30,580 --> 00:33:32,020
+let's do the three particle case.
+
+842
+00:33:33,620 --> 00:33:35,180
+dP1 by dt.
+
+843
+00:33:35,180 --> 00:33:38,560
+I'm not going to bother putting vector signs above the,
+
+844
+00:33:39,180 --> 00:33:40,520
+think vector.
+
+845
+00:33:41,400 --> 00:33:45,440
+dP1 by dt is equal to F1,
+
+846
+00:33:45,980 --> 00:33:49,140
+which means F12 plus F13.
+
+847
+00:33:49,700 --> 00:33:51,020
+Plus all the others,
+
+848
+00:33:51,020 --> 00:33:52,320
+if there were more.
+
+849
+00:33:53,300 --> 00:33:55,400
+What about dP2 by dt?
+
+850
+00:33:57,880 --> 00:34:01,780
+That's equal to F21 plus F23.
+
+851
+00:34:01,780 --> 00:34:03,760
+And finally,
+
+852
+00:34:03,760 --> 00:34:12,080
+dP3 by dt is equal to F31 plus F32.
+
+853
+00:34:13,179 --> 00:34:14,600
+Now let's add them up.
+
+854
+00:34:16,580 --> 00:34:17,699
+dP1 by dt,
+
+855
+00:34:17,699 --> 00:34:18,920
+dP2 by dt,
+
+856
+00:34:18,920 --> 00:34:20,239
+and dP3 by dt.
+
+857
+00:34:20,380 --> 00:34:22,080
+That gives us the total
+
+858
+00:34:22,080 --> 00:34:23,780
+time derivative of the total momentum.
+
+859
+00:34:24,560 --> 00:34:25,159
+So,
+
+860
+00:34:25,159 --> 00:34:27,400
+the time derivative of the total momentum,
+
+861
+00:34:27,400 --> 00:34:28,440
+dP by dt,
+
+862
+00:34:29,159 --> 00:34:30,460
+is just the sum of
+
+863
+00:34:30,460 --> 00:34:31,760
+everything in the right hand corner.
+
+864
+00:34:31,780 --> 00:34:32,060
+The left hand side.
+
+865
+00:34:32,400 --> 00:34:33,960
+But they cancel in pairs.
+
+866
+00:34:34,620 --> 00:34:36,600
+F12 is minus F21.
+
+867
+00:34:38,020 --> 00:34:39,920
+This is just saying the forces cancel.
+
+868
+00:34:40,780 --> 00:34:42,940
+F13 is minus F31,
+
+869
+00:34:42,940 --> 00:34:45,580
+and F23 is minus F23.
+
+870
+00:34:46,800 --> 00:34:48,400
+They all add up to zero.
+
+871
+00:34:48,699 --> 00:34:51,249
+And it says that the
+
+872
+00:34:51,249 --> 00:34:53,800
+total momentum of any closed system
+
+873
+00:34:53,800 --> 00:34:56,659
+means a system with no external forces on it.
+
+874
+00:34:57,120 --> 00:34:57,980
+Of course,
+
+875
+00:34:57,980 --> 00:34:59,420
+we might have other forces,
+
+876
+00:35:00,060 --> 00:35:02,140
+due to some other object in the system.
+
+877
+00:35:02,620 --> 00:35:05,240
+Then we would have to take it into account also.
+
+878
+00:35:06,080 --> 00:35:07,700
+But if we have a closed system,
+
+879
+00:35:07,760 --> 00:35:09,210
+a closed system means we've
+
+880
+00:35:09,210 --> 00:35:10,660
+accounted for everything in the system
+
+881
+00:35:10,660 --> 00:35:11,980
+that can exert forces.
+
+882
+00:35:12,560 --> 00:35:15,460
+Then the time rate of change of momentum is zero,
+
+883
+00:35:15,520 --> 00:35:17,480
+and momentum is conserved.
+
+884
+00:35:20,060 --> 00:35:20,580
+Again,
+
+885
+00:35:20,580 --> 00:35:22,860
+it comes from a rather special assumption
+
+886
+00:35:24,720 --> 00:35:26,020
+about Newtonian forces,
+
+887
+00:35:26,760 --> 00:35:28,640
+but it's far more general.
+
+888
+00:35:28,640 --> 00:35:30,800
+It applies to light.
+
+889
+00:35:31,120 --> 00:35:34,160
+If a light ray bangs into the wall,
+
+890
+00:35:34,460 --> 00:35:36,720
+it'll give the wall a little bit of push.
+
+891
+00:35:36,880 --> 00:35:38,620
+It'll change the momentum of the wall.
+
+892
+00:35:38,820 --> 00:35:39,000
+Why?
+
+893
+00:35:39,000 --> 00:35:40,740
+Because the light ray has some momentum.
+
+894
+00:35:41,040 --> 00:35:42,860
+It applies in quantum mechanics.
+
+895
+00:35:43,100 --> 00:35:45,020
+It applies in the general theory of relativity.
+
+896
+00:35:45,880 --> 00:35:47,080
+So it's far,
+
+897
+00:35:47,080 --> 00:35:49,880
+far more general than this little example shows.
+
+898
+00:35:53,880 --> 00:35:58,040
+And our object will eventually be
+
+899
+00:35:58,040 --> 00:36:00,260
+to write the laws of physics,
+
+900
+00:36:00,980 --> 00:36:02,120
+in particular mechanics,
+
+901
+00:36:02,860 --> 00:36:05,100
+in a form which is so general
+
+902
+00:36:05,100 --> 00:36:08,480
+that we can see why these things had to happen.
+
+903
+00:36:09,280 --> 00:36:09,880
+Okay,
+
+904
+00:36:09,880 --> 00:36:12,060
+any questions?
+
+905
+00:36:14,640 --> 00:36:15,360
+Yes?
+
+906
+00:36:15,800 --> 00:36:18,100
+Is action and reaction instant?
+
+907
+00:36:20,000 --> 00:36:20,720
+Loud.
+
+908
+00:36:20,880 --> 00:36:22,840
+Is action and reaction instant?
+
+909
+00:36:23,500 --> 00:36:25,200
+In Newtonian physics,
+
+910
+00:36:25,200 --> 00:36:25,740
+it is.
+
+911
+00:36:26,440 --> 00:36:27,320
+All right?
+
+912
+00:36:27,320 --> 00:36:28,520
+In classical mechanics,
+
+913
+00:36:28,520 --> 00:36:29,580
+Newtonian physics,
+
+914
+00:36:29,900 --> 00:36:32,940
+and Newtonian physics means forget relativity.
+
+915
+00:36:34,480 --> 00:36:35,520
+In Newtonian,
+
+916
+00:36:35,520 --> 00:36:36,800
+let's put it this way.
+
+917
+00:36:37,200 --> 00:36:38,620
+In Newtonian physics,
+
+918
+00:36:38,620 --> 00:36:39,900
+the speed of light is infinite.
+
+919
+00:36:40,240 --> 00:36:42,120
+You turn on the lights
+
+920
+00:36:42,120 --> 00:36:44,000
+and the room lights up instantaneously.
+
+921
+00:36:44,280 --> 00:36:45,260
+There's no lag.
+
+922
+00:36:45,760 --> 00:36:46,920
+In the real world,
+
+923
+00:36:46,920 --> 00:36:47,320
+of course,
+
+924
+00:36:48,100 --> 00:36:50,160
+forces do not act instantaneously.
+
+925
+00:36:50,240 --> 00:36:51,980
+It takes time for a force,
+
+926
+00:36:52,100 --> 00:36:55,520
+when you do something to a particle over here,
+
+927
+00:36:55,700 --> 00:36:57,020
+it takes time for it to,
+
+928
+00:36:57,320 --> 00:36:58,520
+for a force to respond over there.
+
+929
+00:36:59,300 --> 00:37:00,720
+That's because of relativity,
+
+930
+00:37:00,720 --> 00:37:02,040
+special relativity.
+
+931
+00:37:02,320 --> 00:37:05,300
+We're assuming Newtonian physics,
+
+932
+00:37:06,100 --> 00:37:09,500
+and Newtonian physics means that forces are instantaneous.
+
+933
+00:37:09,940 --> 00:37:10,660
+So yes,
+
+934
+00:37:10,660 --> 00:37:11,980
+we're assuming they're instantaneous.
+
+935
+00:37:12,580 --> 00:37:13,260
+Again,
+
+936
+00:37:16,460 --> 00:37:19,900
+what's curious is that special relativity
+
+937
+00:37:21,720 --> 00:37:24,260
+undermines that instantaneousness of forces,
+
+938
+00:37:24,420 --> 00:37:26,120
+but it does not undermine
+
+939
+00:37:27,320 --> 00:37:28,340
+the conservation of momentum.
+
+940
+00:37:29,660 --> 00:37:31,380
+So it's somehow much deeper
+
+941
+00:37:31,380 --> 00:37:33,980
+than our examples indicate.
+
+942
+00:37:35,320 --> 00:37:37,840
+The momentum law seems a little more deeper
+
+943
+00:37:37,840 --> 00:37:38,820
+than the energy law,
+
+944
+00:37:38,820 --> 00:37:40,260
+in the sense that...
+
+945
+00:37:40,260 --> 00:37:41,400
+It's easier to derive.
+
+946
+00:37:42,680 --> 00:37:43,200
+Also,
+
+947
+00:37:43,200 --> 00:37:44,820
+you can choose any direction,
+
+948
+00:37:45,820 --> 00:37:46,720
+and momentum,
+
+949
+00:37:46,720 --> 00:37:48,620
+the component of momentum,
+
+950
+00:37:48,700 --> 00:37:50,020
+will be conserved in that direction.
+
+951
+00:37:50,160 --> 00:37:51,820
+It seems like there are more laws...
+
+952
+00:37:51,820 --> 00:37:52,260
+Right,
+
+953
+00:37:52,260 --> 00:37:53,320
+there are more momentum laws
+
+954
+00:37:53,320 --> 00:37:54,240
+than there is energy law.
+
+955
+00:37:54,980 --> 00:37:56,660
+How many momentum laws are there
+
+956
+00:37:56,660 --> 00:37:57,600
+for a single particle,
+
+957
+00:37:57,600 --> 00:37:58,160
+for example?
+
+958
+00:37:58,340 --> 00:37:58,540
+Well,
+
+959
+00:37:58,540 --> 00:38:00,320
+how many momentum laws are there altogether
+
+960
+00:38:00,320 --> 00:38:02,160
+for a combined system?
+
+961
+00:38:02,500 --> 00:38:02,840
+Three.
+
+962
+00:38:03,000 --> 00:38:04,340
+One for each direction of space.
+
+963
+00:38:05,340 --> 00:38:06,640
+How many energy laws?
+
+964
+00:38:06,860 --> 00:38:07,100
+One.
+
+965
+00:38:07,480 --> 00:38:08,320
+So altogether,
+
+966
+00:38:08,320 --> 00:38:09,940
+there are four conservation laws.
+
+967
+00:38:10,440 --> 00:38:12,760
+Three for the three directions of space,
+
+968
+00:38:12,900 --> 00:38:14,340
+and one for the direction of time.
+
+969
+00:38:15,020 --> 00:38:17,060
+And in the special theory of relativity,
+
+970
+00:38:17,440 --> 00:38:22,220
+they form a complex of four related conservation laws,
+
+971
+00:38:22,540 --> 00:38:24,340
+but this...
+
+972
+00:38:24,340 --> 00:38:26,340
+It's more general than that.
+
+973
+00:38:27,480 --> 00:38:28,040
+Okay.
+
+974
+00:38:28,760 --> 00:38:29,320
+Now,
+
+975
+00:38:29,320 --> 00:38:31,840
+it's my usual...
+
+976
+00:38:32,900 --> 00:38:33,460
+Yeah.
+
+977
+00:38:34,520 --> 00:38:36,200
+We're going to need a little bit of mathematics,
+
+978
+00:38:36,640 --> 00:38:37,880
+not heavy-duty mathematics,
+
+979
+00:38:37,880 --> 00:38:38,860
+fairly light,
+
+980
+00:38:39,580 --> 00:38:42,100
+but let's spend a little bit of time...
+
+981
+00:38:42,100 --> 00:38:42,980
+What we're going to do next
+
+982
+00:38:42,980 --> 00:38:43,860
+is we're going to go on
+
+983
+00:38:43,860 --> 00:38:48,140
+to what really is the deep law of classical physics.
+
+984
+00:38:48,380 --> 00:38:51,640
+It's called the principle or the law of least action.
+
+985
+00:38:52,300 --> 00:38:54,100
+And it contains all this junk.
+
+986
+00:38:54,640 --> 00:38:56,240
+The law of least action,
+
+987
+00:38:56,660 --> 00:38:58,180
+has all of this stuck into it,
+
+988
+00:38:58,180 --> 00:38:58,880
+plus a lot more.
+
+989
+00:38:59,800 --> 00:39:01,580
+But before we do,
+
+990
+00:39:01,580 --> 00:39:03,000
+we need some math.
+
+991
+00:39:03,820 --> 00:39:04,780
+Elementary mathematics,
+
+992
+00:39:04,780 --> 00:39:05,860
+extremely simple.
+
+993
+00:39:06,220 --> 00:39:07,720
+Math that you know very well.
+
+994
+00:39:10,620 --> 00:39:12,120
+I just want to spell it out
+
+995
+00:39:13,400 --> 00:39:16,260
+and remind some of you who haven't done calculus
+
+996
+00:39:16,260 --> 00:39:18,360
+for a couple of years,
+
+997
+00:39:19,420 --> 00:39:23,000
+so that we're all on the same playing field.
+
+998
+00:39:24,040 --> 00:39:24,520
+Okay.
+
+999
+00:39:25,740 --> 00:39:28,360
+The first thing has to do with minimizing functions.
+
+1000
+00:39:29,120 --> 00:39:30,480
+This is very elementary.
+
+1001
+00:39:30,680 --> 00:39:32,100
+I'm not telling you anything you don't know.
+
+1002
+00:39:32,280 --> 00:39:34,700
+If you have a function of several variables,
+
+1003
+00:39:34,920 --> 00:39:36,600
+let's start with a function of one variable.
+
+1004
+00:39:37,500 --> 00:39:38,200
+Function of y.
+
+1005
+00:39:41,380 --> 00:39:42,260
+Some known...
+
+1006
+00:39:42,260 --> 00:39:43,020
+Not force.
+
+1007
+00:39:43,240 --> 00:39:44,920
+F does not stand for force now.
+
+1008
+00:39:44,980 --> 00:39:45,760
+It just stands for function.
+
+1009
+00:39:46,460 --> 00:39:47,180
+F of y.
+
+1010
+00:39:49,020 --> 00:39:53,040
+And y is just some generic independent variable.
+
+1011
+00:39:54,140 --> 00:39:54,680
+Okay.
+
+1012
+00:39:55,180 --> 00:39:55,980
+Here it is.
+
+1013
+00:39:56,040 --> 00:39:57,060
+Here's the function.
+
+1014
+00:39:57,200 --> 00:39:57,620
+It's plotted.
+
+1015
+00:39:57,920 --> 00:39:58,460
+Vertically,
+
+1016
+00:39:58,460 --> 00:39:59,280
+I plot f.
+
+1017
+00:40:00,140 --> 00:40:00,680
+Horizontally,
+
+1018
+00:40:00,680 --> 00:40:02,360
+I plot the independent variable y.
+
+1019
+00:40:02,760 --> 00:40:04,140
+And it has some shape,
+
+1020
+00:40:04,140 --> 00:40:04,620
+something.
+
+1021
+00:40:06,220 --> 00:40:07,520
+The first fact is,
+
+1022
+00:40:07,520 --> 00:40:09,900
+if you want to find the local minima,
+
+1023
+00:40:09,900 --> 00:40:12,160
+the local minima of the function
+
+1024
+00:40:12,930 --> 00:40:14,720
+mean the places where,
+
+1025
+00:40:14,720 --> 00:40:15,900
+if you're there,
+
+1026
+00:40:16,180 --> 00:40:18,300
+if you go in either direction,
+
+1027
+00:40:18,560 --> 00:40:20,140
+the function increases.
+
+1028
+00:40:21,160 --> 00:40:22,620
+A global minimum
+
+1029
+00:40:23,040 --> 00:40:24,580
+would mean the absolute minimum,
+
+1030
+00:40:24,720 --> 00:40:26,120
+the lowest possible minimum.
+
+1031
+00:40:26,600 --> 00:40:29,100
+But we're going to speak about local minima.
+
+1032
+00:40:29,100 --> 00:40:30,850
+Local minima mean that if
+
+1033
+00:40:30,850 --> 00:40:32,600
+you are confined to that region,
+
+1034
+00:40:32,880 --> 00:40:34,760
+you would think that the function
+
+1035
+00:40:34,760 --> 00:40:36,640
+was minimum right at that point.
+
+1036
+00:40:37,840 --> 00:40:41,520
+What is the mathematical condition for searching for minima?
+
+1037
+00:40:42,600 --> 00:40:43,200
+Well...
+
+1038
+00:40:44,360 --> 00:40:47,140
+The derivative of a function should be equal to zero.
+
+1039
+00:40:47,320 --> 00:40:47,680
+Right.
+
+1040
+00:40:48,400 --> 00:40:50,780
+That's not sufficient.
+
+1041
+00:40:51,280 --> 00:40:51,540
+Yeah.
+
+1042
+00:40:53,040 --> 00:40:53,300
+Yeah.
+
+1043
+00:40:55,400 --> 00:40:56,000
+Right.
+
+1044
+00:40:56,220 --> 00:40:58,060
+So the first condition,
+
+1045
+00:40:58,060 --> 00:40:59,300
+and the easiest one,
+
+1046
+00:41:00,040 --> 00:41:01,780
+is that at a minimum,
+
+1047
+00:41:02,000 --> 00:41:04,120
+the slope of the function is zero.
+
+1048
+00:41:06,980 --> 00:41:09,040
+That says that the derivative of the
+
+1049
+00:41:09,040 --> 00:41:11,100
+function is equal to zero at minima.
+
+1050
+00:41:11,180 --> 00:41:13,120
+It's also zero at maxima,
+
+1051
+00:41:13,120 --> 00:41:13,400
+notice.
+
+1052
+00:41:14,320 --> 00:41:14,920
+Right.
+
+1053
+00:41:16,120 --> 00:41:18,940
+The first condition is that df by dx,
+
+1054
+00:41:19,280 --> 00:41:20,360
+or df by dy,
+
+1055
+00:41:22,700 --> 00:41:23,860
+total derivative,
+
+1056
+00:41:24,160 --> 00:41:24,920
+in this case,
+
+1057
+00:41:24,920 --> 00:41:26,560
+total derivative,
+
+1058
+00:41:26,660 --> 00:41:28,360
+if it's only a function of one variable,
+
+1059
+00:41:31,360 --> 00:41:32,600
+is equal to zero.
+
+1060
+00:41:33,520 --> 00:41:34,120
+Now,
+
+1061
+00:41:34,120 --> 00:41:35,300
+there are other conditions.
+
+1062
+00:41:35,720 --> 00:41:39,180
+The other conditions are basically there to sort out
+
+1063
+00:41:39,180 --> 00:41:40,800
+two other cases.
+
+1064
+00:41:41,260 --> 00:41:42,360
+The maximum,
+
+1065
+00:41:44,120 --> 00:41:47,380
+the f by dy is also zero at maxima,
+
+1066
+00:41:48,700 --> 00:41:49,300
+but,
+
+1067
+00:41:49,300 --> 00:41:51,400
+you can check
+
+1068
+00:41:52,620 --> 00:41:54,500
+whether it's a maximum or a minimum
+
+1069
+00:41:54,500 --> 00:41:56,200
+by looking at the second derivative.
+
+1070
+00:41:56,700 --> 00:41:59,540
+The second derivative is positive at a minimum
+
+1071
+00:41:59,540 --> 00:42:01,740
+and negative at a maximum.
+
+1072
+00:42:01,980 --> 00:42:04,220
+But we're not going to worry about that distinction.
+
+1073
+00:42:05,260 --> 00:42:06,720
+The principle of...
+
+1074
+00:42:06,720 --> 00:42:08,660
+What's the generic term
+
+1075
+00:42:09,400 --> 00:42:13,120
+for a function which is either maximum or minimum,
+
+1076
+00:42:13,260 --> 00:42:14,840
+and you may not know which?
+
+1077
+00:42:16,200 --> 00:42:16,520
+Extremum.
+
+1078
+00:42:17,880 --> 00:42:19,120
+Extremum is one word.
+
+1079
+00:42:19,120 --> 00:42:20,520
+In fact,
+
+1080
+00:42:20,520 --> 00:42:22,580
+there's even another possibility,
+
+1081
+00:42:22,940 --> 00:42:25,800
+an inflection point where the function is flat
+
+1082
+00:42:25,800 --> 00:42:27,280
+and then goes down like that.
+
+1083
+00:42:27,760 --> 00:42:28,420
+Again,
+
+1084
+00:42:28,420 --> 00:42:30,060
+zero derivative at that point.
+
+1085
+00:42:30,680 --> 00:42:34,440
+X cubed is a function which has a...
+
+1086
+00:42:35,100 --> 00:42:37,760
+an inflection point like that at the origin.
+
+1087
+00:42:38,500 --> 00:42:41,840
+Its derivative is also zero at the origin.
+
+1088
+00:42:42,720 --> 00:42:44,880
+Knowing that the derivative is zero
+
+1089
+00:42:44,880 --> 00:42:47,340
+doesn't sort out these three cases of
+
+1090
+00:42:47,340 --> 00:42:48,000
+minimum,
+
+1091
+00:42:48,000 --> 00:42:48,680
+maximum,
+
+1092
+00:42:49,280 --> 00:42:50,380
+or inflection point.
+
+1093
+00:42:51,380 --> 00:42:51,900
+So,
+
+1094
+00:42:52,060 --> 00:42:54,620
+the word for either minimum or maximum
+
+1095
+00:42:54,620 --> 00:42:56,240
+is extremal,
+
+1096
+00:42:56,260 --> 00:42:57,240
+extremum point,
+
+1097
+00:42:57,460 --> 00:42:59,020
+but what's the word for
+
+1098
+00:42:59,020 --> 00:43:00,660
+any one of these three?
+
+1099
+00:43:03,320 --> 00:43:03,840
+Stationary,
+
+1100
+00:43:03,840 --> 00:43:04,260
+stationary.
+
+1101
+00:43:05,380 --> 00:43:05,900
+Stationary.
+
+1102
+00:43:05,900 --> 00:43:07,560
+The function is stationary at those points.
+
+1103
+00:43:08,000 --> 00:43:08,780
+Which means
+
+1104
+00:43:08,780 --> 00:43:10,680
+that if you move a little to the left
+
+1105
+00:43:10,680 --> 00:43:11,580
+or move it to the right,
+
+1106
+00:43:11,760 --> 00:43:13,860
+it neither increases nor decreases.
+
+1107
+00:43:14,360 --> 00:43:14,840
+Well,
+
+1108
+00:43:14,840 --> 00:43:15,500
+it may increase
+
+1109
+00:43:15,500 --> 00:43:17,080
+to second order,
+
+1110
+00:43:17,080 --> 00:43:18,520
+but it doesn't increase to first order.
+
+1111
+00:43:18,580 --> 00:43:19,720
+The derivative is zero there.
+
+1112
+00:43:20,060 --> 00:43:21,400
+It's said to be stationary.
+
+1113
+00:43:22,080 --> 00:43:24,300
+The real principle of least action
+
+1114
+00:43:24,300 --> 00:43:26,600
+is really the principle of stationary action.
+
+1115
+00:43:27,420 --> 00:43:29,480
+We'll call it the principle of least action
+
+1116
+00:43:29,480 --> 00:43:31,560
+and always pretend that we're looking for
+
+1117
+00:43:31,560 --> 00:43:32,500
+minima of things,
+
+1118
+00:43:33,200 --> 00:43:34,640
+but in fact,
+
+1119
+00:43:34,740 --> 00:43:36,240
+it's more general.
+
+1120
+00:43:37,140 --> 00:43:39,640
+The principle of action
+
+1121
+00:43:40,260 --> 00:43:42,260
+is the principle of stationary action.
+
+1122
+00:43:42,480 --> 00:43:44,020
+But I'm not going to draw that distinction
+
+1123
+00:43:44,800 --> 00:43:46,120
+after this point now.
+
+1124
+00:43:47,240 --> 00:43:49,540
+The condition for a stationary point
+
+1125
+00:43:49,540 --> 00:43:52,560
+is that the derivative of f with respect to y
+
+1126
+00:43:52,560 --> 00:43:53,320
+is equal to zero.
+
+1127
+00:43:54,240 --> 00:43:56,560
+And I'll often say minimum,
+
+1128
+00:43:56,680 --> 00:43:58,760
+but I will mean stationary point.
+
+1129
+00:43:58,980 --> 00:43:59,460
+Now,
+
+1130
+00:43:59,460 --> 00:44:00,560
+supposing we have a function
+
+1131
+00:44:00,560 --> 00:44:02,280
+which is a function of several variables,
+
+1132
+00:44:03,960 --> 00:44:05,140
+f of x and y.
+
+1133
+00:44:11,280 --> 00:44:13,100
+And let's think about it.
+
+1134
+00:44:13,140 --> 00:44:14,560
+Let's draw the xy plane.
+
+1135
+00:44:17,259 --> 00:44:18,900
+At every point on this plane,
+
+1136
+00:44:19,020 --> 00:44:20,480
+the function takes on some value.
+
+1137
+00:44:20,960 --> 00:44:22,500
+We could describe the function
+
+1138
+00:44:22,500 --> 00:44:23,960
+by a sort of contour map.
+
+1139
+00:44:27,420 --> 00:44:28,880
+You've all seen contour maps.
+
+1140
+00:44:29,040 --> 00:44:29,900
+You know what they look like.
+
+1141
+00:44:33,220 --> 00:44:35,340
+Each contour describing
+
+1142
+00:44:35,960 --> 00:44:38,040
+a particular value of the function.
+
+1143
+00:44:38,220 --> 00:44:39,340
+And as you move from one point,
+
+1144
+00:44:39,460 --> 00:44:41,420
+one contour point to another contour point,
+
+1145
+00:44:41,520 --> 00:44:42,300
+the function changes.
+
+1146
+00:44:42,860 --> 00:44:43,300
+Well,
+
+1147
+00:44:43,300 --> 00:44:43,780
+all right,
+
+1148
+00:44:43,780 --> 00:44:45,200
+I don't need the contour map.
+
+1149
+00:44:45,360 --> 00:44:46,100
+All we need to do is draw the xy plane.
+
+1150
+00:44:46,100 --> 00:44:46,620
+All we need to do is to remember
+
+1151
+00:44:46,620 --> 00:44:48,240
+that the function has some value
+
+1152
+00:44:48,240 --> 00:44:51,140
+at every point on this two-dimensional plane.
+
+1153
+00:44:52,160 --> 00:44:52,760
+Now,
+
+1154
+00:44:52,760 --> 00:44:53,800
+supposing what I want
+
+1155
+00:44:54,900 --> 00:44:56,160
+is the minimum,
+
+1156
+00:44:56,160 --> 00:44:57,340
+local minimum,
+
+1157
+00:44:57,560 --> 00:44:59,260
+with respect to two variables.
+
+1158
+00:44:59,819 --> 00:45:01,400
+What that means is a point
+
+1159
+00:45:02,020 --> 00:45:03,580
+where the function is minimum
+
+1160
+00:45:03,960 --> 00:45:06,260
+no matter what direction you move off in.
+
+1161
+00:45:08,780 --> 00:45:10,740
+It could be any number of dimensions.
+
+1162
+00:45:11,940 --> 00:45:13,260
+I'm interested in points
+
+1163
+00:45:13,260 --> 00:45:14,460
+where the function
+
+1164
+00:45:15,400 --> 00:45:16,280
+achieves a minimum,
+
+1165
+00:45:17,100 --> 00:45:18,920
+which means that any direction
+
+1166
+00:45:18,920 --> 00:45:19,960
+that you move off in,
+
+1167
+00:45:20,120 --> 00:45:22,040
+the function increases.
+
+1168
+00:45:24,320 --> 00:45:25,440
+However you move.
+
+1169
+00:45:25,680 --> 00:45:28,820
+Think of it as the bottom of a bowl.
+
+1170
+00:45:29,600 --> 00:45:30,120
+Right.
+
+1171
+00:45:30,600 --> 00:45:32,520
+Are you talking stationary again?
+
+1172
+00:45:32,840 --> 00:45:33,360
+Yeah,
+
+1173
+00:45:33,360 --> 00:45:34,720
+strictly speaking,
+
+1174
+00:45:34,880 --> 00:45:35,640
+we're talking stationary.
+
+1175
+00:45:36,080 --> 00:45:38,140
+But I'll use the terminology of minimum.
+
+1176
+00:45:39,580 --> 00:45:41,300
+And if you want to think about it,
+
+1177
+00:45:41,320 --> 00:45:42,200
+think about minimum.
+
+1178
+00:45:42,420 --> 00:45:44,260
+You won't be making any serious
+
+1179
+00:45:44,460 --> 00:45:45,620
+mistakes because in fact,
+
+1180
+00:45:45,780 --> 00:45:48,260
+almost every case in mechanics,
+
+1181
+00:45:48,540 --> 00:45:50,800
+we really are talking about
+
+1182
+00:45:50,800 --> 00:45:51,680
+the minimum action.
+
+1183
+00:45:52,060 --> 00:45:52,900
+I have a question.
+
+1184
+00:45:53,100 --> 00:45:56,220
+I think I read that if forces are conservative,
+
+1185
+00:45:56,600 --> 00:45:58,900
+that it is not a maximum.
+
+1186
+00:46:01,480 --> 00:46:03,140
+If forces are conservative,
+
+1187
+00:46:03,300 --> 00:46:04,240
+it's not a maximum,
+
+1188
+00:46:04,400 --> 00:46:07,580
+but I think that's probably not true
+
+1189
+00:46:07,580 --> 00:46:09,400
+if there are velocity-dependent forces
+
+1190
+00:46:09,400 --> 00:46:10,600
+like magnetic forces,
+
+1191
+00:46:11,460 --> 00:46:12,840
+although I've never checked that.
+
+1192
+00:46:13,520 --> 00:46:15,320
+That would be the non-perturbative case.
+
+1193
+00:46:16,359 --> 00:46:17,240
+Non-perturbative?
+
+1194
+00:46:18,759 --> 00:46:19,640
+Non-conservative.
+
+1195
+00:46:19,700 --> 00:46:19,920
+No,
+
+1196
+00:46:19,920 --> 00:46:20,320
+no,
+
+1197
+00:46:20,320 --> 00:46:20,500
+no,
+
+1198
+00:46:20,500 --> 00:46:20,660
+no,
+
+1199
+00:46:20,660 --> 00:46:20,800
+no,
+
+1200
+00:46:20,800 --> 00:46:20,900
+no.
+
+1201
+00:46:21,440 --> 00:46:22,920
+Magnetic forces are conservative,
+
+1202
+00:46:23,160 --> 00:46:25,000
+but they're different in nature than...
+
+1203
+00:46:25,440 --> 00:46:26,880
+Let's not get into them at the moment.
+
+1204
+00:46:27,000 --> 00:46:27,820
+We'll come back to them.
+
+1205
+00:46:28,700 --> 00:46:31,180
+I believe there are cases in physics
+
+1206
+00:46:31,180 --> 00:46:33,420
+where the action is not minimum,
+
+1207
+00:46:33,480 --> 00:46:34,040
+but they're unusual.
+
+1208
+00:46:34,460 --> 00:46:35,540
+So let's just say minimum.
+
+1209
+00:46:35,740 --> 00:46:36,180
+Minimum,
+
+1210
+00:46:36,180 --> 00:46:36,340
+minimum.
+
+1211
+00:46:36,560 --> 00:46:39,780
+Let's not worry about that subtlety.
+
+1212
+00:46:40,220 --> 00:46:40,840
+All right.
+
+1213
+00:46:40,840 --> 00:46:41,660
+Well,
+
+1214
+00:46:41,660 --> 00:46:42,600
+first of all,
+
+1215
+00:46:42,600 --> 00:46:45,440
+let's suppose we are...
+
+1216
+00:46:47,000 --> 00:46:48,340
+There's a minimum right there,
+
+1217
+00:46:48,500 --> 00:46:50,020
+and let's look at the function...
+
+1218
+00:46:50,020 --> 00:46:50,740
+Whoops,
+
+1219
+00:46:50,740 --> 00:46:52,140
+I meant to go right through that point.
+
+1220
+00:46:53,260 --> 00:46:54,420
+Let's look at the function
+
+1221
+00:46:54,420 --> 00:46:56,420
+as we move to the left or right
+
+1222
+00:46:56,420 --> 00:46:57,560
+away from that point.
+
+1223
+00:46:58,320 --> 00:47:01,160
+Now the function is only a function of one variable.
+
+1224
+00:47:01,400 --> 00:47:03,300
+Think of it as a function of one variable
+
+1225
+00:47:03,300 --> 00:47:04,440
+along this line.
+
+1226
+00:47:05,160 --> 00:47:06,660
+It should achieve a minimum
+
+1227
+00:47:06,660 --> 00:47:08,120
+right at this point.
+
+1228
+00:47:08,500 --> 00:47:10,820
+So that means as you move along this line,
+
+1229
+00:47:13,060 --> 00:47:14,840
+ignoring all the other lines,
+
+1230
+00:47:15,000 --> 00:47:17,480
+the function should be minimum at that point,
+
+1231
+00:47:17,620 --> 00:47:20,240
+and that says that the derivative of f
+
+1232
+00:47:20,240 --> 00:47:21,660
+with respect to x
+
+1233
+00:47:24,000 --> 00:47:25,260
+should be equal to zero.
+
+1234
+00:47:26,280 --> 00:47:28,260
+But we can say exactly the same thing
+
+1235
+00:47:28,260 --> 00:47:29,720
+about moving on the vertical axis.
+
+1236
+00:47:30,600 --> 00:47:32,960
+If the function is minimum at that point,
+
+1237
+00:47:33,020 --> 00:47:35,840
+it will be minimum with respect to a vertical motion.
+
+1238
+00:47:36,400 --> 00:47:38,140
+So that says the function...
+
+1239
+00:47:41,980 --> 00:47:44,780
+should have no derivative with respect to y.
+
+1240
+00:47:45,640 --> 00:47:46,900
+If you have a function
+
+1241
+00:47:46,900 --> 00:47:48,160
+of a whole bunch of variables,
+
+1242
+00:47:48,980 --> 00:47:52,260
+let's give them the generic name x sub i now.
+
+1243
+00:47:53,400 --> 00:47:54,860
+Function of x sub i.
+
+1244
+00:47:57,140 --> 00:48:00,480
+The condition that you're at a local minimum
+
+1245
+00:48:00,480 --> 00:48:02,780
+is that the derivative of f
+
+1246
+00:48:02,780 --> 00:48:06,660
+with respect to every one of the x sub i's,
+
+1247
+00:48:06,820 --> 00:48:09,100
+every single one should be equal to zero.
+
+1248
+00:48:10,860 --> 00:48:13,440
+Let's do an example or two just to...
+
+1249
+00:48:17,280 --> 00:48:19,840
+I think as a function of one variable,
+
+1250
+00:48:19,960 --> 00:48:21,520
+we don't need to do an example.
+
+1251
+00:48:21,780 --> 00:48:23,620
+Let's take a function of two variables
+
+1252
+00:48:23,620 --> 00:48:26,440
+and find its local minimum.
+
+1253
+00:48:27,600 --> 00:48:28,160
+Just,
+
+1254
+00:48:28,160 --> 00:48:28,940
+in fact,
+
+1255
+00:48:28,940 --> 00:48:31,220
+it will be its global minimum.
+
+1256
+00:48:35,720 --> 00:48:38,720
+I'm just arbitrarily making up a silly function now.
+
+1257
+00:48:41,020 --> 00:48:41,760
+All right,
+
+1258
+00:48:41,760 --> 00:48:42,200
+here it is.
+
+1259
+00:48:43,000 --> 00:48:45,020
+x squared plus y squared
+
+1260
+00:48:46,140 --> 00:48:49,060
+plus 3x plus 2y
+
+1261
+00:48:53,080 --> 00:48:54,740
+let's put in plus xy
+
+1262
+00:48:57,540 --> 00:48:58,660
+plus 7.
+
+1263
+00:48:59,820 --> 00:49:00,780
+That's my function.
+
+1264
+00:49:01,520 --> 00:49:04,560
+I want to find out where that function is minimum.
+
+1265
+00:49:05,060 --> 00:49:05,720
+All right?
+
+1266
+00:49:05,760 --> 00:49:08,100
+So I differentiate it with respect to x
+
+1267
+00:49:08,100 --> 00:49:09,960
+and set the derivative equal to zero.
+
+1268
+00:49:10,220 --> 00:49:11,660
+That gives me one equation.
+
+1269
+00:49:12,680 --> 00:49:14,120
+Do the same thing for y.
+
+1270
+00:49:14,240 --> 00:49:15,360
+It gives me a second equation.
+
+1271
+00:49:15,840 --> 00:49:17,140
+What are those equations for?
+
+1272
+00:49:17,560 --> 00:49:18,800
+They're for x and y.
+
+1273
+00:49:19,160 --> 00:49:21,120
+They tell me where the minimum is achieved.
+
+1274
+00:49:21,600 --> 00:49:23,560
+So I have two equations for two unknowns.
+
+1275
+00:49:24,140 --> 00:49:25,960
+Let's work them out just as an example.
+
+1276
+00:49:28,880 --> 00:49:29,740
+The derivative,
+
+1277
+00:49:29,740 --> 00:49:31,500
+the partial derivative of f
+
+1278
+00:49:31,500 --> 00:49:32,640
+with respect to x,
+
+1279
+00:49:35,060 --> 00:49:36,000
+df by dx.
+
+1280
+00:49:40,040 --> 00:49:40,780
+All right,
+
+1281
+00:49:40,780 --> 00:49:41,900
+that's from this term,
+
+1282
+00:49:41,900 --> 00:49:42,600
+we just get y.
+
+1283
+00:49:43,500 --> 00:49:44,500
+From this term,
+
+1284
+00:49:44,500 --> 00:49:45,580
+we get plus 2x.
+
+1285
+00:49:46,460 --> 00:49:48,660
+This term doesn't depend on x altogether.
+
+1286
+00:49:49,680 --> 00:49:50,640
+From this term,
+
+1287
+00:49:50,640 --> 00:49:51,480
+we just get 3.
+
+1288
+00:49:52,080 --> 00:49:54,700
+And there are no other terms which depend on x.
+
+1289
+00:49:55,200 --> 00:49:56,530
+So this is the derivative
+
+1290
+00:49:56,530 --> 00:49:57,860
+of f with respect to x,
+
+1291
+00:49:58,500 --> 00:50:00,540
+pretending that y were just a constant.
+
+1292
+00:50:01,100 --> 00:50:01,760
+All right,
+
+1293
+00:50:01,760 --> 00:50:02,700
+that's the partial derivative.
+
+1294
+00:50:03,240 --> 00:50:04,380
+And our rule is,
+
+1295
+00:50:04,380 --> 00:50:05,500
+set this equal to zero.
+
+1296
+00:50:06,360 --> 00:50:08,080
+That's one equation for x squared.
+
+1297
+00:50:08,100 --> 00:50:08,270
+And we're going to do the
+
+1298
+00:50:08,270 --> 00:50:08,440
+same thing for x and y.
+
+1299
+00:50:09,060 --> 00:50:09,700
+All right,
+
+1300
+00:50:09,700 --> 00:50:11,300
+let's do the same thing df by dy.
+
+1301
+00:50:14,280 --> 00:50:14,960
+All right,
+
+1302
+00:50:14,960 --> 00:50:19,500
+df by dy is x
+
+1303
+00:50:19,500 --> 00:50:24,040
+plus 2y plus 2 equals zero.
+
+1304
+00:50:24,680 --> 00:50:27,460
+Here are two linear equations for x and y.
+
+1305
+00:50:27,700 --> 00:50:29,140
+You can sit down and solve them.
+
+1306
+00:50:30,600 --> 00:50:32,960
+Notice that the 7 didn't come into it at all.
+
+1307
+00:50:33,880 --> 00:50:34,600
+Why not?
+
+1308
+00:50:35,000 --> 00:50:36,620
+Because the 7 is just the height,
+
+1309
+00:50:36,620 --> 00:50:37,940
+the overall height of the function,
+
+1310
+00:50:38,060 --> 00:50:39,640
+and it doesn't change where the minimum is.
+
+1311
+00:50:40,840 --> 00:50:41,460
+All right,
+
+1312
+00:50:41,460 --> 00:50:45,920
+so I'll tell you what the answer is.
+
+1313
+00:50:46,740 --> 00:50:49,820
+It's x is equal to minus 8 thirds,
+
+1314
+00:50:50,080 --> 00:50:52,800
+and y is equal to minus 1 third.
+
+1315
+00:50:52,940 --> 00:50:54,000
+And if that's not correct,
+
+1316
+00:50:54,000 --> 00:50:57,580
+it's not important.
+
+1317
+00:50:59,260 --> 00:51:00,580
+Is it minus 1 third?
+
+1318
+00:51:02,620 --> 00:51:04,620
+I lost the paper that I did it on.
+
+1319
+00:51:05,800 --> 00:51:07,680
+But it's not important.
+
+1320
+00:51:08,620 --> 00:51:10,520
+There is an answer to the problem,
+
+1321
+00:51:10,520 --> 00:51:11,140
+as you can see.
+
+1322
+00:51:11,220 --> 00:51:12,660
+It's just two equations for two unknowns.
+
+1323
+00:51:13,080 --> 00:51:15,100
+If you have n unknowns,
+
+1324
+00:51:15,100 --> 00:51:16,180
+in other words,
+
+1325
+00:51:16,180 --> 00:51:18,300
+if you have a function of n variables,
+
+1326
+00:51:18,620 --> 00:51:20,700
+then there are n equations like this.
+
+1327
+00:51:21,040 --> 00:51:24,500
+n equations for n unknowns typically will have a solution.
+
+1328
+00:51:24,820 --> 00:51:25,520
+Not always.
+
+1329
+00:51:26,160 --> 00:51:28,000
+Some functions don't have minima.
+
+1330
+00:51:28,260 --> 00:51:29,180
+For example,
+
+1331
+00:51:29,180 --> 00:51:31,480
+if I took a function that just was like that,
+
+1332
+00:51:32,220 --> 00:51:33,120
+forever and ever,
+
+1333
+00:51:33,120 --> 00:51:34,180
+it wouldn't have a minimum.
+
+1334
+00:51:34,180 --> 00:51:36,400
+There would just be no solution.
+
+1335
+00:51:36,700 --> 00:51:38,900
+There would be no point at which the derivative vanished.
+
+1336
+00:51:40,060 --> 00:51:42,020
+Sometimes there's more than one solution.
+
+1337
+00:51:42,300 --> 00:51:43,320
+For example,
+
+1338
+00:51:43,320 --> 00:51:44,540
+if I took a function
+
+1339
+00:51:44,540 --> 00:51:45,760
+with a few minima in it.
+
+1340
+00:51:46,140 --> 00:51:49,240
+But you have enough equations
+
+1341
+00:51:49,240 --> 00:51:52,340
+for enough unknowns to locate solutions.
+
+1342
+00:51:53,940 --> 00:51:54,720
+All right,
+
+1343
+00:51:54,720 --> 00:51:58,300
+that's mathematical point number one.
+
+1344
+00:51:58,500 --> 00:52:01,420
+You find stationary points or minima
+
+1345
+00:52:02,880 --> 00:52:04,160
+by different equations.
+
+1346
+00:52:04,180 --> 00:52:05,200
+You're differentiating the function.
+
+1347
+00:52:05,460 --> 00:52:08,560
+Or another way of saying it is finding points
+
+1348
+00:52:08,560 --> 00:52:10,740
+where if you vary the function a little bit,
+
+1349
+00:52:10,920 --> 00:52:11,940
+it doesn't change.
+
+1350
+00:52:12,500 --> 00:52:15,460
+It doesn't change the first order in the variation,
+
+1351
+00:52:15,460 --> 00:52:16,340
+basically.
+
+1352
+00:52:17,420 --> 00:52:18,180
+All right,
+
+1353
+00:52:18,180 --> 00:52:21,520
+so that's the principle of stationary functions.
+
+1354
+00:52:22,860 --> 00:52:23,460
+Now,
+
+1355
+00:52:23,460 --> 00:52:26,460
+we're not going to be interested in minimizing functions
+
+1356
+00:52:27,060 --> 00:52:29,380
+of a finite number of variables.
+
+1357
+00:52:29,960 --> 00:52:31,760
+We're going to be interested in something
+
+1358
+00:52:31,760 --> 00:52:32,100
+which,
+
+1359
+00:52:32,100 --> 00:52:32,800
+at the face of it,
+
+1360
+00:52:32,800 --> 00:52:34,460
+seems far more complicated.
+
+1361
+00:52:35,420 --> 00:52:38,640
+It's minimizing expressions which depend
+
+1362
+00:52:38,640 --> 00:52:41,520
+not on some finite set of variables,
+
+1363
+00:52:41,860 --> 00:52:45,120
+but which themselves depend on whole functions,
+
+1364
+00:52:45,320 --> 00:52:47,160
+whole trajectories,
+
+1365
+00:52:49,660 --> 00:52:53,380
+minimizing quantities which depend on a whole trajectory.
+
+1366
+00:52:55,080 --> 00:52:57,760
+Before I give you an example,
+
+1367
+00:52:58,700 --> 00:53:00,480
+let me just say some words about
+
+1368
+00:53:00,480 --> 00:53:02,780
+what the basic principle of stationary functions is.
+
+1369
+00:53:02,800 --> 00:53:04,360
+And what the basic problem of mechanics is.
+
+1370
+00:53:05,380 --> 00:53:07,040
+And more than that,
+
+1371
+00:53:07,100 --> 00:53:08,880
+the basic problem of classical physics,
+
+1372
+00:53:09,120 --> 00:53:09,960
+but let's say mechanics.
+
+1373
+00:53:10,380 --> 00:53:13,240
+The basic problem of mechanics is to determine
+
+1374
+00:53:13,799 --> 00:53:15,400
+the trajectory of a system
+
+1375
+00:53:15,400 --> 00:53:18,640
+from its initial starting conditions.
+
+1376
+00:53:19,960 --> 00:53:22,900
+That's the mathematical problem.
+
+1377
+00:53:23,380 --> 00:53:24,000
+Now,
+
+1378
+00:53:24,000 --> 00:53:24,300
+of course,
+
+1379
+00:53:24,300 --> 00:53:25,360
+in every case,
+
+1380
+00:53:25,420 --> 00:53:28,080
+we may not really be interested in determining
+
+1381
+00:53:29,600 --> 00:53:31,700
+if we have 10 to the 23rd particles,
+
+1382
+00:53:32,480 --> 00:53:34,520
+determining the trajectory of that system
+
+1383
+00:53:34,520 --> 00:53:36,520
+is equivalent to determining the trajectories
+
+1384
+00:53:36,520 --> 00:53:38,260
+of all 10 to the 23rd particles.
+
+1385
+00:53:38,760 --> 00:53:40,360
+Nobody tries to do that.
+
+1386
+00:53:40,640 --> 00:53:41,240
+Instead,
+
+1387
+00:53:41,240 --> 00:53:44,280
+we may make some statistical statements about it,
+
+1388
+00:53:44,360 --> 00:53:47,560
+or some approximate statements.
+
+1389
+00:53:48,040 --> 00:53:52,540
+But the very precise question of classical mechanics
+
+1390
+00:53:52,540 --> 00:53:55,720
+is determining the trajectory of a system.
+
+1391
+00:53:56,060 --> 00:53:56,660
+Now,
+
+1392
+00:53:56,660 --> 00:53:57,100
+what does it mean?
+
+1393
+00:53:57,480 --> 00:53:59,540
+We spoke last time a little bit
+
+1394
+00:53:59,540 --> 00:54:01,140
+about generalized coordinates.
+
+1395
+00:54:02,540 --> 00:54:04,960
+Generalized coordinates are simply
+
+1396
+00:54:04,960 --> 00:54:07,000
+the coordinates of a system.
+
+1397
+00:54:07,200 --> 00:54:09,140
+They could be the Cartesian coordinates
+
+1398
+00:54:09,140 --> 00:54:12,420
+of the positions of a system of particles.
+
+1399
+00:54:12,860 --> 00:54:14,320
+They could be angles.
+
+1400
+00:54:14,760 --> 00:54:17,640
+They could be the orientation of this eraser.
+
+1401
+00:54:18,760 --> 00:54:21,400
+They could be any number of different kinds
+
+1402
+00:54:21,400 --> 00:54:24,260
+of coordinates that we might use.
+
+1403
+00:54:24,400 --> 00:54:24,860
+For example,
+
+1404
+00:54:24,860 --> 00:54:26,260
+on the surface of the Earth,
+
+1405
+00:54:26,380 --> 00:54:28,200
+we might use latitude and longitude
+
+1406
+00:54:28,200 --> 00:54:29,480
+to locate an object.
+
+1407
+00:54:30,980 --> 00:54:33,380
+Those are all generalized coordinates,
+
+1408
+00:54:33,640 --> 00:54:36,620
+and they may not be Cartesian coordinates.
+
+1409
+00:54:36,740 --> 00:54:39,500
+They may be angles or other funny kinds of variables.
+
+1410
+00:54:40,220 --> 00:54:44,740
+But they do serve to locate an object in space,
+
+1411
+00:54:45,000 --> 00:54:48,420
+or locate a system in space.
+
+1412
+00:54:49,280 --> 00:54:51,800
+Those are called the generalized coordinates,
+
+1413
+00:54:51,960 --> 00:54:53,880
+and they're often labeled by Q.
+
+1414
+00:54:55,820 --> 00:54:58,540
+Q1 dot dot dot through Qn.
+
+1415
+00:55:00,080 --> 00:55:01,920
+For a single particle,
+
+1416
+00:55:02,160 --> 00:55:03,360
+there are three Qs.
+
+1417
+00:55:04,160 --> 00:55:04,560
+X,
+
+1418
+00:55:04,560 --> 00:55:04,860
+Y,
+
+1419
+00:55:04,860 --> 00:55:05,200
+and Z.
+
+1420
+00:55:05,580 --> 00:55:06,540
+For two particles,
+
+1421
+00:55:06,540 --> 00:55:08,060
+there are six Qs.
+
+1422
+00:55:09,500 --> 00:55:10,300
+The X,
+
+1423
+00:55:10,300 --> 00:55:10,460
+Y,
+
+1424
+00:55:10,460 --> 00:55:11,380
+and Z of one particle
+
+1425
+00:55:11,380 --> 00:55:11,860
+and the X,
+
+1426
+00:55:11,860 --> 00:55:11,980
+Y,
+
+1427
+00:55:11,980 --> 00:55:12,980
+and Z of the other particle.
+
+1428
+00:55:13,920 --> 00:55:15,660
+If there are 10 to the 23rd particles,
+
+1429
+00:55:16,440 --> 00:55:19,740
+there are three times 10 to the 23rd Qs.
+
+1430
+00:55:20,640 --> 00:55:22,020
+But as we've seen already,
+
+1431
+00:55:22,280 --> 00:55:24,600
+the Qs are not enough
+
+1432
+00:55:25,299 --> 00:55:27,080
+to be able to predict the future.
+
+1433
+00:55:27,800 --> 00:55:29,320
+If you want to predict the future,
+
+1434
+00:55:29,480 --> 00:55:30,900
+you also need the velocities.
+
+1435
+00:55:31,360 --> 00:55:33,720
+So in a more general abstract language,
+
+1436
+00:55:34,160 --> 00:55:36,620
+it also means that you need the Q dots,
+
+1437
+00:55:37,319 --> 00:55:38,320
+the time derivatives.
+
+1438
+00:55:41,400 --> 00:55:44,880
+You need six n pieces of information
+
+1439
+00:55:45,480 --> 00:55:47,700
+for n particles to predict the future.
+
+1440
+00:55:48,760 --> 00:55:50,520
+Now what does it mean to predict the future?
+
+1441
+00:55:50,720 --> 00:55:51,780
+It means to determine
+
+1442
+00:55:52,400 --> 00:55:54,200
+the trajectory of the system,
+
+1443
+00:55:54,300 --> 00:55:55,720
+which means Q1 of t,
+
+1444
+00:55:56,760 --> 00:55:57,820
+Q2 of t,
+
+1445
+00:56:01,660 --> 00:56:02,600
+Q3 of t.
+
+1446
+00:56:03,920 --> 00:56:06,660
+It means to determine all of the coordinates
+
+1447
+00:56:06,660 --> 00:56:08,060
+as a function of time.
+
+1448
+00:56:10,200 --> 00:56:12,220
+All of the particle coordinates
+
+1449
+00:56:12,220 --> 00:56:15,520
+or the angles or the orientation angles
+
+1450
+00:56:15,520 --> 00:56:17,580
+or whatever it is to determine all of them,
+
+1451
+00:56:17,620 --> 00:56:19,260
+not just one of them as a function of time,
+
+1452
+00:56:19,380 --> 00:56:20,040
+but all of them.
+
+1453
+00:56:21,260 --> 00:56:23,400
+Such a system of functions
+
+1454
+00:56:23,400 --> 00:56:24,700
+as a function of time,
+
+1455
+00:56:24,840 --> 00:56:27,440
+we can call a generalized trajectory.
+
+1456
+00:56:27,440 --> 00:56:30,300
+A generalized trajectory,
+
+1457
+00:56:30,780 --> 00:56:34,100
+we can imagine horizontally
+
+1458
+00:56:35,240 --> 00:56:37,660
+plotting all of the Qs.
+
+1459
+00:56:37,800 --> 00:56:38,880
+Now horizontally,
+
+1460
+00:56:39,100 --> 00:56:40,780
+I've just drawn two dimensions here.
+
+1461
+00:56:42,140 --> 00:56:44,480
+Two dimensions will be a stand-in
+
+1462
+00:56:44,480 --> 00:56:48,080
+for any number of dimensions,
+
+1463
+00:56:48,560 --> 00:56:49,780
+Q1 through Qn.
+
+1464
+00:56:49,940 --> 00:56:51,120
+And vertically,
+
+1465
+00:56:51,120 --> 00:56:52,380
+we plot the time.
+
+1466
+00:56:53,960 --> 00:56:57,060
+A trajectory simply means exactly what it says.
+
+1467
+00:56:57,060 --> 00:56:58,860
+Because a trajectory through the space
+
+1468
+00:56:58,860 --> 00:57:01,260
+and a trajectory through the space
+
+1469
+00:57:01,260 --> 00:57:05,900
+is a system of Qs at every value of time.
+
+1470
+00:57:06,560 --> 00:57:08,640
+That's the mathematical problem
+
+1471
+00:57:09,860 --> 00:57:11,520
+that's put in front of us
+
+1472
+00:57:11,520 --> 00:57:15,100
+by the questions of classical mechanics.
+
+1473
+00:57:15,600 --> 00:57:18,220
+To what extent can we determine
+
+1474
+00:57:18,220 --> 00:57:20,100
+the trajectory from the starting point?
+
+1475
+00:57:20,400 --> 00:57:21,020
+All right,
+
+1476
+00:57:21,020 --> 00:57:22,160
+the answer of course is,
+
+1477
+00:57:22,340 --> 00:57:23,360
+given Newton's equations,
+
+1478
+00:57:23,500 --> 00:57:26,300
+we can predict the Q of t,
+
+1479
+00:57:26,300 --> 00:57:28,420
+not just from the starting point,
+
+1480
+00:57:28,600 --> 00:57:30,000
+we need the Qs and
+
+1481
+00:57:30,000 --> 00:57:31,400
+the Q dots to start with.
+
+1482
+00:57:31,620 --> 00:57:33,320
+If we know the Qs and the Q dots,
+
+1483
+00:57:33,580 --> 00:57:35,420
+we can determine the trajectory.
+
+1484
+00:57:36,680 --> 00:57:38,400
+The equations of motion,
+
+1485
+00:57:38,660 --> 00:57:40,320
+the Newton's equations of motion,
+
+1486
+00:57:40,660 --> 00:57:42,360
+what they tell us is,
+
+1487
+00:57:42,500 --> 00:57:44,660
+every point along this trajectory,
+
+1488
+00:57:45,080 --> 00:57:46,840
+they kind of tell us,
+
+1489
+00:57:46,880 --> 00:57:48,460
+if we're moving in a certain way,
+
+1490
+00:57:48,640 --> 00:57:50,240
+how to move next.
+
+1491
+00:57:51,060 --> 00:57:52,700
+They tell us that if
+
+1492
+00:57:52,700 --> 00:57:54,340
+we know the velocity along here,
+
+1493
+00:57:55,880 --> 00:57:56,660
+or sorry,
+
+1494
+00:57:56,660 --> 00:57:58,380
+if we know where we are along here
+
+1495
+00:57:58,380 --> 00:57:59,320
+and we know the forces,
+
+1496
+00:57:59,620 --> 00:58:01,160
+then we know the acceleration.
+
+1497
+00:58:01,800 --> 00:58:04,080
+So that tells us if we know where we are
+
+1498
+00:58:04,080 --> 00:58:05,280
+and we know where we're moving,
+
+1499
+00:58:05,500 --> 00:58:07,140
+we know where we'll be next
+
+1500
+00:58:07,140 --> 00:58:08,840
+and we know where we'll be moving next.
+
+1501
+00:58:10,000 --> 00:58:12,660
+The way to say this is that
+
+1502
+00:58:12,660 --> 00:58:15,460
+Newton's equations are local equations
+
+1503
+00:58:15,460 --> 00:58:16,700
+along the trajectory,
+
+1504
+00:58:17,180 --> 00:58:18,720
+and they tell us information,
+
+1505
+00:58:18,960 --> 00:58:20,900
+they tell us how to proceed from one point
+
+1506
+00:58:20,900 --> 00:58:23,280
+to the next along the trajectory.
+
+1507
+00:58:23,840 --> 00:58:25,240
+You don't need to know anything
+
+1508
+00:58:25,240 --> 00:58:26,660
+about the rest of the trajectory.
+
+1509
+00:58:27,220 --> 00:58:28,980
+If you know where you are over here,
+
+1510
+00:58:29,100 --> 00:58:30,380
+and you know which way you're going,
+
+1511
+00:58:30,700 --> 00:58:32,320
+then you know where you'll be next
+
+1512
+00:58:32,320 --> 00:58:33,880
+and you know where you'll be going next.
+
+1513
+00:58:35,200 --> 00:58:37,140
+So they're local equations,
+
+1514
+00:58:37,680 --> 00:58:39,780
+and that's why they're differential equations.
+
+1515
+00:58:40,140 --> 00:58:41,720
+Differential equations are equations
+
+1516
+00:58:41,720 --> 00:58:44,780
+among the positions and the derivatives and so forth,
+
+1517
+00:58:44,940 --> 00:58:46,140
+and that's the kind of
+
+1518
+00:58:46,140 --> 00:58:47,340
+information that they have in them.
+
+1519
+00:58:47,800 --> 00:58:48,160
+Now,
+
+1520
+00:58:48,160 --> 00:58:48,520
+of course,
+
+1521
+00:58:48,520 --> 00:58:49,520
+if you know this information
+
+1522
+00:58:49,520 --> 00:58:50,940
+all along the trajectory,
+
+1523
+00:58:50,940 --> 00:58:53,200
+then you can build up the whole trajectory.
+
+1524
+00:58:53,620 --> 00:58:56,140
+But the equation itself is an equation
+
+1525
+00:58:56,140 --> 00:58:58,040
+which tells you local information.
+
+1526
+00:58:59,300 --> 00:59:01,600
+The principle of least action
+
+1527
+00:59:01,600 --> 00:59:04,640
+is another formulation of the same physics
+
+1528
+00:59:04,640 --> 00:59:07,340
+which looks at the trajectory as a whole.
+
+1529
+00:59:08,540 --> 00:59:11,340
+Instead of being given the position
+
+1530
+00:59:11,340 --> 00:59:14,220
+and the velocity at a single time,
+
+1531
+00:59:14,680 --> 00:59:17,020
+what you're given is different kind of information.
+
+1532
+00:59:17,480 --> 00:59:19,120
+You're given the position
+
+1533
+00:59:19,120 --> 00:59:20,740
+at the beginning of a trajectory,
+
+1534
+00:59:22,360 --> 00:59:24,660
+it could be the position of this eraser
+
+1535
+00:59:24,660 --> 00:59:26,140
+at time t equals zero,
+
+1536
+00:59:27,840 --> 00:59:31,420
+and after a certain specified amount of time,
+
+1537
+00:59:32,840 --> 00:59:34,680
+you're given the position of the system
+
+1538
+00:59:34,680 --> 00:59:36,020
+at the end of the trajectory.
+
+1539
+00:59:36,660 --> 00:59:37,540
+In other words,
+
+1540
+00:59:37,540 --> 00:59:38,900
+you're given the two endpoints
+
+1541
+00:59:38,900 --> 00:59:39,700
+of the trajectory.
+
+1542
+00:59:41,860 --> 00:59:42,340
+So,
+
+1543
+00:59:42,340 --> 00:59:42,940
+for example,
+
+1544
+00:59:42,940 --> 00:59:44,060
+here's an example,
+
+1545
+00:59:44,180 --> 00:59:44,700
+here's the eraser.
+
+1546
+00:59:45,000 --> 00:59:47,220
+I tell you at time t equals zero,
+
+1547
+00:59:47,220 --> 00:59:47,980
+it's over here.
+
+1548
+00:59:49,300 --> 00:59:50,920
+I'm not going to tell you how it's moving,
+
+1549
+00:59:50,940 --> 00:59:52,090
+so I can't tell you
+
+1550
+00:59:52,090 --> 00:59:53,240
+what it's going to do next,
+
+1551
+00:59:53,400 --> 00:59:54,850
+but what I will tell
+
+1552
+00:59:54,850 --> 00:59:56,300
+you is that after one second,
+
+1553
+00:59:56,360 --> 00:59:57,700
+it will be over here.
+
+1554
+00:59:58,280 --> 01:00:00,120
+There's only one trajectory
+
+1555
+01:00:01,040 --> 01:00:04,160
+which goes from here to here in one second.
+
+1556
+01:00:04,420 --> 01:00:05,300
+There it is.
+
+1557
+01:00:05,700 --> 01:00:08,260
+If I throw it with the wrong velocity,
+
+1558
+01:00:08,460 --> 01:00:09,320
+it won't get there.
+
+1559
+01:00:10,040 --> 01:00:12,160
+So it's just as good to
+
+1560
+01:00:12,160 --> 01:00:14,280
+know two points along the trajectory
+
+1561
+01:00:14,280 --> 01:00:17,020
+as to know the two pieces of information
+
+1562
+01:00:17,020 --> 01:00:18,880
+at a single point along the trajectory.
+
+1563
+01:00:18,980 --> 01:00:20,160
+Same amount of information.
+
+1564
+01:00:20,940 --> 01:00:24,380
+Instead of giving the position and velocity at one point,
+
+1565
+01:00:24,600 --> 01:00:28,540
+I give you the positions at two separate times.
+
+1566
+01:00:29,640 --> 01:00:30,980
+That's the problem,
+
+1567
+01:00:31,220 --> 01:00:35,320
+that's another formulation of the question of mechanics.
+
+1568
+01:00:35,980 --> 01:00:37,200
+Question of mechanics,
+
+1569
+01:00:37,580 --> 01:00:40,160
+instead of the initial data problem,
+
+1570
+01:00:40,440 --> 01:00:43,400
+the problem of finding a unique trajectory
+
+1571
+01:00:43,640 --> 01:00:45,240
+which connects two points.
+
+1572
+01:00:47,020 --> 01:00:48,400
+In this form,
+
+1573
+01:00:49,460 --> 01:00:53,460
+the principle of nature that governs trajectories
+
+1574
+01:00:53,460 --> 01:00:56,000
+is called the principle of least action.
+
+1575
+01:00:56,940 --> 01:00:59,540
+And what it says is there's some quantity
+
+1576
+01:01:00,360 --> 01:01:02,040
+associated with this trajectory,
+
+1577
+01:01:02,280 --> 01:01:03,420
+the whole trajectory,
+
+1578
+01:01:03,500 --> 01:01:05,580
+not just little pieces of local information,
+
+1579
+01:01:05,680 --> 01:01:06,620
+but the whole trajectory,
+
+1580
+01:01:07,400 --> 01:01:09,200
+there's some quantity about that trajectory
+
+1581
+01:01:09,200 --> 01:01:13,780
+which is minimum for the true trajectory,
+
+1582
+01:01:14,060 --> 01:01:15,680
+for the true trajectory,
+
+1583
+01:01:16,020 --> 01:01:17,600
+and will be larger
+
+1584
+01:01:18,400 --> 01:01:20,340
+for every deviation of the trajectory
+
+1585
+01:01:20,340 --> 01:01:21,700
+from the true trajectory.
+
+1586
+01:01:21,900 --> 01:01:22,840
+True trajectory.
+
+1587
+01:01:25,500 --> 01:01:26,720
+Correct trajectory.
+
+1588
+01:01:27,320 --> 01:01:28,480
+Here's an example.
+
+1589
+01:01:30,140 --> 01:01:31,540
+Take two points.
+
+1590
+01:01:32,460 --> 01:01:33,580
+For simplicity,
+
+1591
+01:01:33,580 --> 01:01:35,100
+we could take them in two dimensions.
+
+1592
+01:01:37,720 --> 01:01:39,600
+Calculate the distance between them
+
+1593
+01:01:40,640 --> 01:01:42,840
+and ask what is the line,
+
+1594
+01:01:43,060 --> 01:01:43,340
+well,
+
+1595
+01:01:43,340 --> 01:01:43,820
+not the distance,
+
+1596
+01:01:43,940 --> 01:01:45,200
+draw a line,
+
+1597
+01:01:45,200 --> 01:01:46,600
+draw a curve between them.
+
+1598
+01:01:52,480 --> 01:01:54,000
+Draw any curve between them.
+
+1599
+01:01:54,720 --> 01:01:56,400
+Calculate the length of that curve
+
+1600
+01:01:56,400 --> 01:02:00,760
+and then ask what curve minimizes the length.
+
+1601
+01:02:01,000 --> 01:02:04,500
+What curve gives you the smallest distance
+
+1602
+01:02:04,500 --> 01:02:07,140
+along the curve between those two points?
+
+1603
+01:02:07,620 --> 01:02:08,120
+Of course,
+
+1604
+01:02:08,120 --> 01:02:08,960
+we all know the answer,
+
+1605
+01:02:09,020 --> 01:02:09,640
+it's a straight line.
+
+1606
+01:02:11,100 --> 01:02:13,600
+But what's the mathematics that goes into it?
+
+1607
+01:02:13,760 --> 01:02:15,680
+The mathematics that goes into it
+
+1608
+01:02:15,680 --> 01:02:18,200
+is minimizing a certain quantity,
+
+1609
+01:02:18,380 --> 01:02:20,880
+but that quantity is not a function
+
+1610
+01:02:20,880 --> 01:02:22,380
+of a finite number of variables.
+
+1611
+01:02:22,680 --> 01:02:27,080
+It's a function of every point along this curve.
+
+1612
+01:02:27,560 --> 01:02:31,180
+So it's a much more complicated object
+
+1613
+01:02:31,180 --> 01:02:33,040
+than calculating the minimum
+
+1614
+01:02:33,580 --> 01:02:35,260
+of a function of a few variables.
+
+1615
+01:02:36,640 --> 01:02:38,340
+There's two approaches to it.
+
+1616
+01:02:38,500 --> 01:02:40,200
+One is the local approach,
+
+1617
+01:02:40,340 --> 01:02:41,760
+which I'll show you what it means in a moment,
+
+1618
+01:02:41,920 --> 01:02:43,460
+and one is the global approach.
+
+1619
+01:02:44,680 --> 01:02:45,200
+Yeah,
+
+1620
+01:02:45,200 --> 01:02:47,420
+let's talk about the local and the global approach.
+
+1621
+01:02:48,800 --> 01:02:50,820
+The global approach is just what I said.
+
+1622
+01:02:50,960 --> 01:02:52,200
+You pick your two points,
+
+1623
+01:02:53,560 --> 01:02:56,120
+you calculate the distance along the curve,
+
+1624
+01:02:57,020 --> 01:02:59,840
+that's some quantity that depends on the entire curve,
+
+1625
+01:03:00,760 --> 01:03:02,820
+and then you ask what
+
+1626
+01:03:02,820 --> 01:03:04,880
+minimizes the length along that curve.
+
+1627
+01:03:05,620 --> 01:03:06,580
+That's something,
+
+1628
+01:03:06,580 --> 01:03:07,780
+that's a very global view
+
+1629
+01:03:07,780 --> 01:03:09,470
+where you minimize something
+
+1630
+01:03:09,470 --> 01:03:11,160
+associated with the entire curve.
+
+1631
+01:03:11,540 --> 01:03:12,060
+Now,
+
+1632
+01:03:12,060 --> 01:03:13,440
+the local point of the curve
+
+1633
+01:03:13,460 --> 01:03:14,880
+in the view goes as follows.
+
+1634
+01:03:15,200 --> 01:03:15,880
+All right,
+
+1635
+01:03:15,880 --> 01:03:17,200
+supposing we know,
+
+1636
+01:03:17,280 --> 01:03:17,880
+let's focus,
+
+1637
+01:03:19,780 --> 01:03:21,880
+let's take our little microscope here
+
+1638
+01:03:21,880 --> 01:03:23,340
+and focus along,
+
+1639
+01:03:23,540 --> 01:03:25,440
+somewhere along the trajectory over here.
+
+1640
+01:03:25,760 --> 01:03:26,620
+In fact,
+
+1641
+01:03:26,620 --> 01:03:27,380
+for our purposes,
+
+1642
+01:03:27,420 --> 01:03:29,560
+let's imagine breaking up the trajectory
+
+1643
+01:03:29,560 --> 01:03:30,900
+into a lot of little pieces,
+
+1644
+01:03:32,120 --> 01:03:33,840
+each of some small length.
+
+1645
+01:03:35,600 --> 01:03:37,460
+And let's focus right in here.
+
+1646
+01:03:39,640 --> 01:03:41,640
+The curve comes in over here,
+
+1647
+01:03:41,780 --> 01:03:43,380
+so it's pinned down over here,
+
+1648
+01:03:43,460 --> 01:03:44,900
+it goes out over here,
+
+1649
+01:03:45,040 --> 01:03:48,300
+and I'm interested in where it goes between them.
+
+1650
+01:03:48,440 --> 01:03:51,140
+Let's just suppose in breaking it up into pieces
+
+1651
+01:03:51,140 --> 01:03:52,160
+as an approximation.
+
+1652
+01:03:52,660 --> 01:03:53,940
+As an approximation,
+
+1653
+01:03:53,940 --> 01:03:55,840
+break up the curve into little pieces,
+
+1654
+01:03:56,460 --> 01:04:00,440
+and now take two of those little pieces
+
+1655
+01:04:00,440 --> 01:04:04,260
+and ask where should you locate the midpoint
+
+1656
+01:04:05,259 --> 01:04:09,720
+in order that the curve be as short as possible.
+
+1657
+01:04:10,240 --> 01:04:10,920
+Now,
+
+1658
+01:04:10,920 --> 01:04:12,240
+the answer doesn't depend
+
+1659
+01:04:12,240 --> 01:04:14,500
+where you put this point
+
+1660
+01:04:14,500 --> 01:04:16,980
+does not depend on the rest of the curve
+
+1661
+01:04:16,980 --> 01:04:20,080
+if you happen to know this point and that point.
+
+1662
+01:04:22,640 --> 01:04:26,640
+If you know the point over here
+
+1663
+01:04:27,240 --> 01:04:29,000
+and the point over here,
+
+1664
+01:04:30,980 --> 01:04:33,380
+then the rest of the curve doesn't matter.
+
+1665
+01:04:34,480 --> 01:04:35,520
+You will have to,
+
+1666
+01:04:35,520 --> 01:04:36,760
+in any case,
+
+1667
+01:04:36,780 --> 01:04:38,140
+if you want to make
+
+1668
+01:04:38,140 --> 01:04:39,500
+the curve as short as possible
+
+1669
+01:04:39,500 --> 01:04:42,000
+and you know that it passes through here and here,
+
+1670
+01:04:42,240 --> 01:04:44,060
+then all you have to do is ask
+
+1671
+01:04:44,060 --> 01:04:46,240
+how do you make that little segment between them
+
+1672
+01:04:46,240 --> 01:04:47,300
+as short as possible.
+
+1673
+01:04:48,060 --> 01:04:49,040
+What's the answer?
+
+1674
+01:04:49,820 --> 01:04:51,140
+The answer is obvious,
+
+1675
+01:04:51,960 --> 01:04:54,600
+but it's a local version of the same question.
+
+1676
+01:04:54,820 --> 01:04:57,500
+It just depends on this little region over here.
+
+1677
+01:04:57,700 --> 01:04:59,020
+The answer is obvious.
+
+1678
+01:04:59,400 --> 01:05:00,580
+Just go straight ahead.
+
+1679
+01:05:00,780 --> 01:05:04,180
+Move this point until this little piece of the curve
+
+1680
+01:05:04,180 --> 01:05:05,260
+is as short as possible.
+
+1681
+01:05:06,360 --> 01:05:06,860
+Right?
+
+1682
+01:05:08,360 --> 01:05:09,540
+And go straight ahead.
+
+1683
+01:05:12,240 --> 01:05:14,020
+We could express this as a differential equation.
+
+1684
+01:05:14,220 --> 01:05:14,520
+We will.
+
+1685
+01:05:14,660 --> 01:05:16,080
+As a differential equation,
+
+1686
+01:05:16,680 --> 01:05:20,780
+which basically says that the difference in the slope
+
+1687
+01:05:20,780 --> 01:05:22,620
+from one point to the next is zero.
+
+1688
+01:05:23,360 --> 01:05:25,420
+But it's quite obvious that what it says
+
+1689
+01:05:25,420 --> 01:05:27,340
+within this little red region here
+
+1690
+01:05:27,340 --> 01:05:29,220
+is just go straight ahead.
+
+1691
+01:05:30,020 --> 01:05:32,740
+If you generalize that all along the curve,
+
+1692
+01:05:32,900 --> 01:05:34,320
+it will tell you at every point,
+
+1693
+01:05:34,380 --> 01:05:35,360
+just go straight ahead.
+
+1694
+01:05:35,700 --> 01:05:37,400
+So this is the local version,
+
+1695
+01:05:38,800 --> 01:05:41,560
+which says go to each point on the curve
+
+1696
+01:05:42,240 --> 01:05:43,900
+and make sure it's just going straight ahead.
+
+1697
+01:05:44,540 --> 01:05:46,800
+That's enough to tell you that the shortest distance
+
+1698
+01:05:46,800 --> 01:05:48,460
+between here and here is a straight line.
+
+1699
+01:05:52,140 --> 01:05:55,120
+So there are these two different versions
+
+1700
+01:05:56,660 --> 01:06:01,160
+of thinking about the principle of least distance.
+
+1701
+01:06:01,420 --> 01:06:03,400
+This would be the principle of least distance
+
+1702
+01:06:03,400 --> 01:06:04,760
+between these two points.
+
+1703
+01:06:05,600 --> 01:06:06,380
+Let's see.
+
+1704
+01:06:06,540 --> 01:06:08,480
+Just for future reference,
+
+1705
+01:06:11,000 --> 01:06:12,220
+let's work out
+
+1706
+01:06:12,680 --> 01:06:16,860
+Let's try to define our problem mathematically,
+
+1707
+01:06:17,100 --> 01:06:18,440
+even if we won't solve it yet.
+
+1708
+01:06:18,580 --> 01:06:20,940
+Let's try to define it mathematically.
+
+1709
+01:06:21,060 --> 01:06:22,020
+I've solved it for you.
+
+1710
+01:06:22,060 --> 01:06:23,200
+I've told you what the answer is,
+
+1711
+01:06:23,240 --> 01:06:23,820
+a straight line.
+
+1712
+01:06:24,220 --> 01:06:24,820
+Of course,
+
+1713
+01:06:24,820 --> 01:06:25,460
+you knew that anyway.
+
+1714
+01:06:29,440 --> 01:06:31,400
+But let's do a little bit of mathematics
+
+1715
+01:06:31,400 --> 01:06:34,380
+and state the problem in a mathematical form.
+
+1716
+01:06:37,060 --> 01:06:37,500
+Okay,
+
+1717
+01:06:37,500 --> 01:06:37,940
+let's...
+
+1718
+01:06:42,220 --> 01:06:43,440
+Let's take our curve,
+
+1719
+01:06:43,460 --> 01:06:45,420
+and I think I'd like to get a better pen.
+
+1720
+01:06:52,360 --> 01:06:54,140
+Let's think of our curve
+
+1721
+01:06:54,140 --> 01:06:55,920
+as existing in the xy plane.
+
+1722
+01:06:57,420 --> 01:06:58,710
+And let's suppose we know
+
+1723
+01:06:58,710 --> 01:07:00,000
+that it goes through this point.
+
+1724
+01:07:01,420 --> 01:07:03,320
+That's a point at x1,
+
+1725
+01:07:03,880 --> 01:07:05,700
+and another point at x2.
+
+1726
+01:07:07,560 --> 01:07:10,600
+And let's think of y as a function of x.
+
+1727
+01:07:10,600 --> 01:07:12,400
+So there's some curve,
+
+1728
+01:07:13,540 --> 01:07:14,780
+and what we know
+
+1729
+01:07:14,780 --> 01:07:18,940
+is the value of y at x1,
+
+1730
+01:07:19,680 --> 01:07:22,180
+and we know the value of y at x2.
+
+1731
+01:07:23,320 --> 01:07:24,360
+In other words,
+
+1732
+01:07:24,360 --> 01:07:25,920
+I tell you where the endpoints are,
+
+1733
+01:07:26,140 --> 01:07:29,580
+and I ask you to find the shortest curve.
+
+1734
+01:07:29,940 --> 01:07:30,480
+Well,
+
+1735
+01:07:30,480 --> 01:07:32,160
+the first thing we're going to have to do
+
+1736
+01:07:32,160 --> 01:07:35,380
+is calculate the distance along the curve
+
+1737
+01:07:35,380 --> 01:07:36,320
+for any curve,
+
+1738
+01:07:36,640 --> 01:07:38,580
+and then minimize it.
+
+1739
+01:07:39,360 --> 01:07:41,040
+So let's imagine...
+
+1740
+01:07:41,040 --> 01:07:42,640
+Let's not imagine,
+
+1741
+01:07:42,760 --> 01:07:45,000
+let's calculate the distance along this curve.
+
+1742
+01:07:45,260 --> 01:07:47,640
+We'll call this function y .
+
+1743
+01:07:49,860 --> 01:07:50,900
+So if you like,
+
+1744
+01:07:51,180 --> 01:07:53,640
+this is a problem of minimizing something
+
+1745
+01:07:53,640 --> 01:07:55,580
+with respect to a whole function.
+
+1746
+01:07:55,960 --> 01:07:58,940
+Finding the function which minimizes something.
+
+1747
+01:07:59,460 --> 01:07:59,940
+Alright,
+
+1748
+01:07:59,940 --> 01:08:02,300
+let's calculate the distance along this curve
+
+1749
+01:08:02,300 --> 01:08:03,460
+if we know y .
+
+1750
+01:08:04,279 --> 01:08:06,060
+First begin with a little segment.
+
+1751
+01:08:06,440 --> 01:08:07,860
+A little segment,
+
+1752
+01:08:08,840 --> 01:08:09,440
+of...
+
+1753
+01:08:12,600 --> 01:08:15,480
+size dx along the x-axis.
+
+1754
+01:08:16,020 --> 01:08:16,620
+Alright,
+
+1755
+01:08:16,620 --> 01:08:19,220
+so it's a little gap in the function,
+
+1756
+01:08:19,300 --> 01:08:21,500
+it's a little segment in the function
+
+1757
+01:08:22,699 --> 01:08:25,939
+going over the interval dx.
+
+1758
+01:08:27,399 --> 01:08:28,000
+Alright,
+
+1759
+01:08:28,000 --> 01:08:30,260
+let's draw it over here.
+
+1760
+01:08:31,000 --> 01:08:32,020
+Here it is.
+
+1761
+01:08:33,279 --> 01:08:35,359
+It goes over distance dx.
+
+1762
+01:08:36,080 --> 01:08:37,140
+There's y .
+
+1763
+01:08:40,419 --> 01:08:42,760
+And we can also speak of dy.
+
+1764
+01:08:43,160 --> 01:08:43,899
+Here's dy.
+
+1765
+01:08:45,380 --> 01:08:48,180
+As we go from point x to x plus dx,
+
+1766
+01:08:48,580 --> 01:08:51,640
+the function goes from y to y plus dy.
+
+1767
+01:08:53,699 --> 01:08:56,899
+What is the length of the hypotenuse of the triangle?
+
+1768
+01:08:57,540 --> 01:08:59,979
+If we add up all these little triangles
+
+1769
+01:08:59,979 --> 01:09:01,520
+and add up all the hypotenuse...
+
+1770
+01:09:01,520 --> 01:09:02,859
+What's the plural of hypotenuse?
+
+1771
+01:09:03,100 --> 01:09:03,960
+I don't know.
+
+1772
+01:09:04,260 --> 01:09:05,479
+A couple of problems?
+
+1773
+01:09:05,760 --> 01:09:06,479
+I guess so.
+
+1774
+01:09:09,779 --> 01:09:14,819
+If we add up all the hypotenuses,
+
+1775
+01:09:17,899 --> 01:09:20,939
+we'll then compute the entire curve.
+
+1776
+01:09:21,100 --> 01:09:21,800
+So let's compute it.
+
+1777
+01:09:22,100 --> 01:09:22,560
+Well,
+
+1778
+01:09:22,560 --> 01:09:23,620
+this side is dy,
+
+1779
+01:09:23,819 --> 01:09:24,760
+this side is dx.
+
+1780
+01:09:26,059 --> 01:09:27,700
+The distance along here,
+
+1781
+01:09:27,760 --> 01:09:29,260
+we'll call that ds squared.
+
+1782
+01:09:29,460 --> 01:09:30,680
+This is square of the distance.
+
+1783
+01:09:31,520 --> 01:09:32,979
+S stands for distance.
+
+1784
+01:09:33,080 --> 01:09:33,380
+Again,
+
+1785
+01:09:33,380 --> 01:09:35,020
+one of these letters that has
+
+1786
+01:09:35,020 --> 01:09:36,660
+nothing to do with the word.
+
+1787
+01:09:37,359 --> 01:09:38,920
+S stands for distance.
+
+1788
+01:09:39,300 --> 01:09:42,260
+The square of the distance along this hypotenuse here
+
+1789
+01:09:42,260 --> 01:09:44,540
+is clearly dx squared plus dy squared.
+
+1790
+01:09:50,460 --> 01:09:52,040
+Or if I take the square root,
+
+1791
+01:09:52,220 --> 01:09:58,220
+it tells me the distance along the hypotenuse.
+
+1792
+01:09:59,880 --> 01:10:01,920
+Let me write this in the following way.
+
+1793
+01:10:02,040 --> 01:10:03,240
+Let me write ds.
+
+1794
+01:10:03,340 --> 01:10:04,420
+I'm going to take it over here.
+
+1795
+01:10:04,460 --> 01:10:05,380
+I'll rewrite it over here.
+
+1796
+01:10:07,480 --> 01:10:10,800
+ds is equal to dx,
+
+1797
+01:10:11,260 --> 01:10:12,860
+I'm factoring out dx,
+
+1798
+01:10:13,500 --> 01:10:16,440
+times the square root of
+
+1799
+01:10:16,440 --> 01:10:19,380
+1 plus dy by dx squared.
+
+1800
+01:10:20,820 --> 01:10:22,280
+Where did I get that from?
+
+1801
+01:10:22,960 --> 01:10:26,460
+If I bring the dx inside the square root,
+
+1802
+01:10:26,580 --> 01:10:27,800
+I have to square it to
+
+1803
+01:10:27,800 --> 01:10:29,020
+bring it inside the square root,
+
+1804
+01:10:29,280 --> 01:10:32,120
+then the 1 will become dx squared,
+
+1805
+01:10:33,099 --> 01:10:35,220
+and this term here will just become dy.
+
+1806
+01:10:35,220 --> 01:10:38,780
+So I've just factored out dx.
+
+1807
+01:10:39,240 --> 01:10:41,640
+I want to think of x as the independent variable.
+
+1808
+01:10:43,440 --> 01:10:44,820
+dy by dx,
+
+1809
+01:10:44,820 --> 01:10:48,980
+that's just the derivative of the function y of x.
+
+1810
+01:10:50,320 --> 01:10:52,920
+So that's nothing but the derivative of the function.
+
+1811
+01:10:53,100 --> 01:10:55,000
+If I gave you a function y,
+
+1812
+01:10:55,340 --> 01:10:57,240
+you could differentiate it,
+
+1813
+01:10:57,340 --> 01:10:59,440
+and this would be dy by dx.
+
+1814
+01:11:01,180 --> 01:11:04,940
+Now let's add up all of the little intervals.
+
+1815
+01:11:04,940 --> 01:11:08,420
+Adding up all the intervals means doing an integral.
+
+1816
+01:11:09,639 --> 01:11:10,320
+So,
+
+1817
+01:11:10,320 --> 01:11:12,920
+the total length of the curve
+
+1818
+01:11:13,780 --> 01:11:16,440
+from point x1 to point x2,
+
+1819
+01:11:16,580 --> 01:11:20,120
+let's call it s between 1 and 2,
+
+1820
+01:11:20,940 --> 01:11:24,920
+is equal to the integral from x1 to x2
+
+1821
+01:11:25,860 --> 01:11:27,840
+of just this quantity here,
+
+1822
+01:11:27,980 --> 01:11:33,600
+square root of 1 plus dy by dx,
+
+1823
+01:11:36,139 --> 01:11:37,260
+squared dx.
+
+1824
+01:11:39,600 --> 01:11:40,750
+Now I'm not going to
+
+1825
+01:11:40,750 --> 01:11:41,900
+do anything with this right now.
+
+1826
+01:11:42,140 --> 01:11:44,140
+I just wanted to work out for you,
+
+1827
+01:11:44,160 --> 01:11:45,640
+in terms of y of x,
+
+1828
+01:11:45,980 --> 01:11:47,020
+if you know,
+
+1829
+01:11:47,020 --> 01:11:49,540
+if somebody gives you the function y of x,
+
+1830
+01:11:49,720 --> 01:11:51,450
+this is the way you
+
+1831
+01:11:51,450 --> 01:11:53,180
+calculate the total length along here.
+
+1832
+01:11:54,080 --> 01:11:55,300
+What is our problem?
+
+1833
+01:11:55,540 --> 01:11:58,260
+Our problem is to find that function,
+
+1834
+01:11:58,260 --> 01:11:59,620
+y of x,
+
+1835
+01:11:59,780 --> 01:12:03,420
+which makes this integral as small as possible.
+
+1836
+01:12:04,940 --> 01:12:05,520
+Now remember,
+
+1837
+01:12:05,520 --> 01:12:07,320
+when I say that it's as small as possible,
+
+1838
+01:12:10,640 --> 01:12:13,440
+what's inside the square root is bigger than 1.
+
+1839
+01:12:13,580 --> 01:12:15,440
+It's 1 plus something positive.
+
+1840
+01:12:15,860 --> 01:12:16,540
+You might say,
+
+1841
+01:12:16,540 --> 01:12:16,780
+okay,
+
+1842
+01:12:16,780 --> 01:12:17,040
+look,
+
+1843
+01:12:17,180 --> 01:12:19,100
+if I want to make this as small as possible,
+
+1844
+01:12:19,200 --> 01:12:21,860
+I will just make what's inside the square root here
+
+1845
+01:12:21,860 --> 01:12:22,860
+as small as possible,
+
+1846
+01:12:23,020 --> 01:12:25,420
+and make dy dx equal to 0.
+
+1847
+01:12:25,860 --> 01:12:26,320
+No,
+
+1848
+01:12:26,320 --> 01:12:28,660
+that's not the answer to this problem,
+
+1849
+01:12:28,720 --> 01:12:29,840
+because we're making an assumption.
+
+1850
+01:12:30,300 --> 01:12:31,840
+The assumption is that the
+
+1851
+01:12:31,840 --> 01:12:33,380
+curve goes between these two points.
+
+1852
+01:12:34,360 --> 01:12:36,820
+If dy by dx was 0 everywhere,
+
+1853
+01:12:36,900 --> 01:12:38,400
+it would just be flat.
+
+1854
+01:12:39,220 --> 01:12:41,320
+It wouldn't go between these two points.
+
+1855
+01:12:41,480 --> 01:12:43,300
+So it's given that the
+
+1856
+01:12:43,300 --> 01:12:45,120
+curve goes between these two points,
+
+1857
+01:12:45,640 --> 01:12:50,140
+we want to find the minimum value of this integral,
+
+1858
+01:12:50,860 --> 01:12:52,720
+the minimum value of this integral,
+
+1859
+01:12:52,900 --> 01:12:54,160
+and that means the curve,
+
+1860
+01:12:54,160 --> 01:12:55,080
+y of x,
+
+1861
+01:12:55,580 --> 01:12:57,080
+which does that for us,
+
+1862
+01:12:58,040 --> 01:12:58,980
+or the function,
+
+1863
+01:12:58,980 --> 01:12:59,760
+y of x.
+
+1864
+01:13:00,440 --> 01:13:01,300
+In this case,
+
+1865
+01:13:01,300 --> 01:13:02,940
+if we thought of x as kind of like
+
+1866
+01:13:02,940 --> 01:13:03,180
+time,
+
+1867
+01:13:03,180 --> 01:13:06,700
+and y as the coordinate of a system,
+
+1868
+01:13:06,940 --> 01:13:09,380
+this might be determining a trajectory
+
+1869
+01:13:09,960 --> 01:13:12,520
+by some funny principle of
+
+1870
+01:13:12,520 --> 01:13:15,080
+least distance in space and time.
+
+1871
+01:13:15,240 --> 01:13:15,880
+But for the moment,
+
+1872
+01:13:15,880 --> 01:13:17,440
+just all this is,
+
+1873
+01:13:17,500 --> 01:13:20,700
+is how to find the shortest distance between two points.
+
+1874
+01:13:21,420 --> 01:13:21,980
+Now,
+
+1875
+01:13:21,980 --> 01:13:23,060
+I haven't told you how to do it.
+
+1876
+01:13:23,680 --> 01:13:25,540
+We'll get to actually how you do it,
+
+1877
+01:13:25,600 --> 01:13:27,040
+but that's the mathematical problem.
+
+1878
+01:13:27,560 --> 01:13:30,880
+Find the function which minimizes this expression.
+
+1879
+01:13:31,260 --> 01:13:31,820
+Okay.
+
+1880
+01:13:32,940 --> 01:13:32,940
+Um,
+
+1881
+01:13:32,940 --> 01:13:38,560
+this s here depends on y of x.
+
+1882
+01:13:38,860 --> 01:13:40,360
+You can sort of think of
+
+1883
+01:13:40,360 --> 01:13:41,860
+it as a function of a function.
+
+1884
+01:13:42,920 --> 01:13:44,440
+Given y of x,
+
+1885
+01:13:44,440 --> 01:13:47,680
+here's a rule for calculating a number from it.
+
+1886
+01:13:49,340 --> 01:13:51,380
+It's a function of a function.
+
+1887
+01:13:51,540 --> 01:13:53,680
+It's not a function of a few variables.
+
+1888
+01:13:54,220 --> 01:13:56,680
+It's a function of an entire other function.
+
+1889
+01:13:56,780 --> 01:14:00,340
+It's a number which depends on an entire function.
+
+1890
+01:14:00,960 --> 01:14:02,920
+There's a name for a number.
+
+1891
+01:14:02,940 --> 01:14:05,140
+It's a number which depends on an entire function.
+
+1892
+01:14:06,740 --> 01:14:07,940
+It's called a functional.
+
+1893
+01:14:08,340 --> 01:14:11,960
+A functional is a function of a function.
+
+1894
+01:14:12,680 --> 01:14:14,520
+The result is a number,
+
+1895
+01:14:14,640 --> 01:14:17,980
+but the input is a whole function.
+
+1896
+01:14:18,600 --> 01:14:21,290
+So the distance between two points
+
+1897
+01:14:21,290 --> 01:14:23,980
+is a functional of y of x,
+
+1898
+01:14:24,160 --> 01:14:26,160
+and our problem is to find
+
+1899
+01:14:26,160 --> 01:14:28,160
+the minimum value of that functional,
+
+1900
+01:14:28,900 --> 01:14:32,040
+subject to some constraints that it passes through,
+
+1901
+01:14:32,040 --> 01:14:32,600
+whoops,
+
+1902
+01:14:32,940 --> 01:14:34,560
+that it passes through two points.
+
+1903
+01:14:35,480 --> 01:14:37,060
+Let me give you another example,
+
+1904
+01:14:37,060 --> 01:14:38,320
+a couple of other examples,
+
+1905
+01:14:39,080 --> 01:14:40,020
+in physics,
+
+1906
+01:14:40,020 --> 01:14:43,910
+where you might want to minimize
+
+1907
+01:14:43,910 --> 01:14:47,800
+a functional with respect to a function.
+
+1908
+01:14:50,679 --> 01:14:58,640
+A principle of optics is the principle of least time.
+
+1909
+01:14:59,520 --> 01:15:02,860
+A light ray goes from one point to another point,
+
+1910
+01:15:04,640 --> 01:15:08,260
+along a path that minimizes the amount of time
+
+1911
+01:15:08,260 --> 01:15:09,800
+that it takes for the light ray
+
+1912
+01:15:09,800 --> 01:15:11,340
+to go from that point to another.
+
+1913
+01:15:11,740 --> 01:15:13,060
+That's Fermat's principle.
+
+1914
+01:15:13,280 --> 01:15:14,260
+How we figured it out,
+
+1915
+01:15:14,260 --> 01:15:14,740
+I don't know.
+
+1916
+01:15:19,540 --> 01:15:23,720
+But it is a correct principle.
+
+1917
+01:15:27,120 --> 01:15:27,600
+Now,
+
+1918
+01:15:27,600 --> 01:15:29,130
+you say that just means the
+
+1919
+01:15:29,130 --> 01:15:30,660
+light goes in a straight line.
+
+1920
+01:15:30,660 --> 01:15:32,370
+If it minimizes the time that
+
+1921
+01:15:32,370 --> 01:15:34,080
+it goes from one place to another,
+
+1922
+01:15:34,260 --> 01:15:35,540
+and light goes with the speed of light,
+
+1923
+01:15:35,760 --> 01:15:37,260
+that must mean it minimizes
+
+1924
+01:15:37,260 --> 01:15:38,760
+the distance between the two points.
+
+1925
+01:15:39,140 --> 01:15:39,580
+Yes,
+
+1926
+01:15:39,580 --> 01:15:41,630
+that would be correct if the
+
+1927
+01:15:41,630 --> 01:15:43,680
+speed of light was everywhere's constant.
+
+1928
+01:15:44,200 --> 01:15:46,100
+But we're actually interested in a more
+
+1929
+01:15:46,100 --> 01:15:48,000
+general and more interesting kind of setup,
+
+1930
+01:15:48,220 --> 01:15:50,640
+where you might have a material of some sort,
+
+1931
+01:15:50,820 --> 01:15:52,760
+with an index of refraction,
+
+1932
+01:15:52,760 --> 01:15:54,340
+which means the speed of light,
+
+1933
+01:15:54,440 --> 01:15:56,720
+which changes from point to point in the material.
+
+1934
+01:15:57,600 --> 01:15:58,180
+All right?
+
+1935
+01:15:58,520 --> 01:15:59,580
+Then it's not so clear
+
+1936
+01:15:59,580 --> 01:16:00,640
+what trajectory we're going to get.
+
+1937
+01:16:00,660 --> 01:16:00,890
+But we're going to have
+
+1938
+01:16:00,890 --> 01:16:01,120
+a very interesting theory to take
+
+1939
+01:16:01,120 --> 01:16:03,520
+in order to minimize the time that it takes.
+
+1940
+01:16:03,620 --> 01:16:04,500
+So let me give you an example.
+
+1941
+01:16:05,180 --> 01:16:07,740
+Let's suppose we have a material,
+
+1942
+01:16:07,740 --> 01:16:09,060
+two-dimensional material.
+
+1943
+01:16:09,380 --> 01:16:09,880
+There it is.
+
+1944
+01:16:10,919 --> 01:16:15,080
+And the speed of light varies for simplicity.
+
+1945
+01:16:16,780 --> 01:16:19,380
+There's nothing special about this.
+
+1946
+01:16:19,460 --> 01:16:20,240
+But for simplicity,
+
+1947
+01:16:20,240 --> 01:16:22,610
+let's suppose the speed of light
+
+1948
+01:16:22,610 --> 01:16:24,980
+just varies with the vertical axis here.
+
+1949
+01:16:25,280 --> 01:16:28,680
+So we can divide this up into a little thin...
+
+1950
+01:16:31,420 --> 01:16:32,000
+ribbons.
+
+1951
+01:16:32,180 --> 01:16:33,440
+And in each ribbon,
+
+1952
+01:16:33,440 --> 01:16:35,020
+the speed of light is different.
+
+1953
+01:16:35,440 --> 01:16:36,400
+For example,
+
+1954
+01:16:36,400 --> 01:16:38,800
+the speed of light might vary from some minimum
+
+1955
+01:16:39,590 --> 01:16:42,680
+to some large value up at the top.
+
+1956
+01:16:43,300 --> 01:16:45,020
+Light goes slow down here.
+
+1957
+01:16:45,680 --> 01:16:46,740
+And incidentally,
+
+1958
+01:16:46,740 --> 01:16:48,980
+it goes the same velocity no
+
+1959
+01:16:48,980 --> 01:16:51,220
+matter what direction it's going in.
+
+1960
+01:16:51,380 --> 01:16:52,160
+That's an assumption.
+
+1961
+01:16:52,600 --> 01:16:55,050
+There are materials where light moves
+
+1962
+01:16:55,050 --> 01:16:57,500
+with different velocity in different directions,
+
+1963
+01:16:57,640 --> 01:16:58,440
+but I'm not doing that.
+
+1964
+01:16:58,960 --> 01:16:59,680
+All right.
+
+1965
+01:16:59,680 --> 01:17:01,560
+So if the light is going this way,
+
+1966
+01:17:01,560 --> 01:17:03,200
+it moves with a certain velocity.
+
+1967
+01:17:03,380 --> 01:17:04,080
+If it's going this way,
+
+1968
+01:17:04,080 --> 01:17:05,180
+it moves with the same velocity.
+
+1969
+01:17:06,000 --> 01:17:09,420
+But the velocity does vary from strip to strip.
+
+1970
+01:17:10,320 --> 01:17:10,760
+Okay.
+
+1971
+01:17:11,220 --> 01:17:12,300
+Now I want to know,
+
+1972
+01:17:12,300 --> 01:17:16,050
+what's the path so that the time
+
+1973
+01:17:16,050 --> 01:17:19,800
+between this point and that point is minimum?
+
+1974
+01:17:20,900 --> 01:17:23,020
+That's the true trajectory of the light ray.
+
+1975
+01:17:26,020 --> 01:17:26,460
+Well,
+
+1976
+01:17:26,460 --> 01:17:28,080
+if you take a straight line,
+
+1977
+01:17:30,699 --> 01:17:33,020
+then that's not as efficient.
+
+1978
+01:17:33,380 --> 01:17:36,600
+There may be a path which takes less time.
+
+1979
+01:17:36,960 --> 01:17:38,040
+For example,
+
+1980
+01:17:38,040 --> 01:17:42,240
+if I curve the path up a little bit,
+
+1981
+01:17:42,280 --> 01:17:43,940
+I didn't mean to curve it quite that much,
+
+1982
+01:17:43,940 --> 01:17:45,460
+but let's curve it up that much anyway,
+
+1983
+01:17:46,839 --> 01:17:49,179
+then it's going to spend more of
+
+1984
+01:17:49,179 --> 01:17:51,520
+its path moving where the speed is faster.
+
+1985
+01:17:52,880 --> 01:17:54,800
+So it'll want to get to regions,
+
+1986
+01:17:54,800 --> 01:17:55,600
+want to get,
+
+1987
+01:17:55,600 --> 01:17:57,160
+light doesn't want to do anything,
+
+1988
+01:17:57,380 --> 01:17:59,660
+but in order to minimize the speed,
+
+1989
+01:17:59,680 --> 01:18:00,750
+to minimize the time that it
+
+1990
+01:18:00,750 --> 01:18:01,820
+takes to go from here to here,
+
+1991
+01:18:02,020 --> 01:18:04,760
+it might want to get to a
+
+1992
+01:18:04,760 --> 01:18:07,500
+region quickly where the velocity is larger,
+
+1993
+01:18:07,660 --> 01:18:09,280
+and then make most of
+
+1994
+01:18:09,280 --> 01:18:10,900
+the path with a larger velocity.
+
+1995
+01:18:11,740 --> 01:18:12,820
+So it's not obvious that
+
+1996
+01:18:12,820 --> 01:18:13,900
+it goes in a straight line,
+
+1997
+01:18:13,900 --> 01:18:15,200
+and it doesn't go in a straight line.
+
+1998
+01:18:15,540 --> 01:18:16,060
+In fact,
+
+1999
+01:18:16,060 --> 01:18:18,200
+it would go in a trajectory something like that
+
+2000
+01:18:18,680 --> 01:18:22,860
+if the velocity of light increased as you moved vertically.
+
+2001
+01:18:23,660 --> 01:18:24,460
+You might think,
+
+2002
+01:18:24,460 --> 01:18:24,600
+well,
+
+2003
+01:18:24,600 --> 01:18:25,630
+maybe the best thing to
+
+2004
+01:18:25,630 --> 01:18:26,660
+do is to jump straight up
+
+2005
+01:18:26,660 --> 01:18:28,220
+and then straight across,
+
+2006
+01:18:29,680 --> 01:18:29,680
+but no,
+
+2007
+01:18:29,680 --> 01:18:31,800
+that's not as good because the upward
+
+2008
+01:18:31,800 --> 01:18:33,920
+part of the journey doesn't get you anywhere.
+
+2009
+01:18:35,200 --> 01:18:36,650
+So it's not as good to just
+
+2010
+01:18:36,650 --> 01:18:38,100
+go straight up and go straight across.
+
+2011
+01:18:39,380 --> 01:18:41,800
+There's some compromise where you curve the
+
+2012
+01:18:41,800 --> 01:18:44,220
+trajectory to get it into regions quickly
+
+2013
+01:18:44,220 --> 01:18:46,220
+where the velocity of light is faster,
+
+2014
+01:18:46,220 --> 01:18:49,400
+but not straight up and straight across.
+
+2015
+01:18:50,020 --> 01:18:50,540
+Alright,
+
+2016
+01:18:50,540 --> 01:18:53,260
+so what is then the
+
+2017
+01:18:53,260 --> 01:18:55,980
+quantity which you're trying to minimize
+
+2018
+01:18:56,500 --> 01:18:59,320
+when you speak about the principle of least time?
+
+2019
+01:19:00,120 --> 01:19:01,520
+So I'll work it out for you.
+
+2020
+01:19:01,520 --> 01:19:02,100
+Just for fun,
+
+2021
+01:19:02,100 --> 01:19:02,640
+we'll work it out.
+
+2022
+01:19:04,040 --> 01:19:04,560
+Again,
+
+2023
+01:19:04,560 --> 01:19:05,880
+we have some solution,
+
+2024
+01:19:05,880 --> 01:19:07,900
+which is y of x.
+
+2025
+01:19:08,120 --> 01:19:10,200
+So we want to find the y of x,
+
+2026
+01:19:10,200 --> 01:19:11,500
+the path,
+
+2027
+01:19:12,839 --> 01:19:16,120
+which minimizes the time between two known points.
+
+2028
+01:19:16,760 --> 01:19:17,380
+And notice,
+
+2029
+01:19:17,380 --> 01:19:18,100
+there's a theme here.
+
+2030
+01:19:18,240 --> 01:19:21,880
+We're always talking about two known points
+
+2031
+01:19:21,880 --> 01:19:25,500
+and asking for the trajectory or the function
+
+2032
+01:19:25,500 --> 01:19:28,160
+which interpolates between those two points.
+
+2033
+01:19:30,440 --> 01:19:30,960
+Okay,
+
+2034
+01:19:30,960 --> 01:19:31,660
+let's find,
+
+2035
+01:19:31,660 --> 01:19:33,460
+let's see if we can calculate the time that
+
+2036
+01:19:33,460 --> 01:19:35,260
+it takes to go from one point to another.
+
+2037
+01:19:35,460 --> 01:19:36,160
+First of all,
+
+2038
+01:19:36,160 --> 01:19:36,380
+again,
+
+2039
+01:19:36,380 --> 01:19:39,240
+we'll break up the trajectory into small little intervals.
+
+2040
+01:19:40,779 --> 01:19:44,700
+Each interval has a distance which we've already calculated.
+
+2041
+01:19:45,300 --> 01:19:46,320
+Here's the distance.
+
+2042
+01:19:46,720 --> 01:19:47,240
+Alright,
+
+2043
+01:19:47,240 --> 01:19:48,800
+so let's write that down again over here.
+
+2044
+01:19:49,320 --> 01:19:54,000
+The distance ds is equal to dx times
+
+2045
+01:19:54,000 --> 01:19:58,680
+the square root of one plus dy by dx,
+
+2046
+01:19:59,680 --> 01:20:00,780
+the derivative squared.
+
+2047
+01:20:02,280 --> 01:20:02,800
+Alright.
+
+2048
+01:20:04,040 --> 01:20:05,280
+But on the other hand,
+
+2049
+01:20:05,280 --> 01:20:07,160
+what is the speed of light?
+
+2050
+01:20:07,580 --> 01:20:09,550
+The speed of light is the distance
+
+2051
+01:20:09,550 --> 01:20:11,520
+that it goes divided by the time.
+
+2052
+01:20:11,620 --> 01:20:13,530
+So each one of these little segments
+
+2053
+01:20:13,530 --> 01:20:15,440
+will take a certain amount of time.
+
+2054
+01:20:16,220 --> 01:20:16,740
+Alright.
+
+2055
+01:20:16,900 --> 01:20:19,460
+The rule is that ds by
+
+2056
+01:20:19,460 --> 01:20:22,020
+dt is equal to the velocity,
+
+2057
+01:20:22,020 --> 01:20:23,000
+is equal to the speed.
+
+2058
+01:20:23,640 --> 01:20:24,880
+Let's call that c.
+
+2059
+01:20:25,760 --> 01:20:27,340
+But c is not a constant.
+
+2060
+01:20:27,780 --> 01:20:29,060
+It depends on y.
+
+2061
+01:20:29,680 --> 01:20:31,820
+I could also take it to depend on x,
+
+2062
+01:20:31,820 --> 01:20:33,100
+but just for simplicity,
+
+2063
+01:20:33,380 --> 01:20:35,510
+I'm imagining this material which
+
+2064
+01:20:35,510 --> 01:20:37,640
+is a kind of layered material
+
+2065
+01:20:38,460 --> 01:20:40,340
+with different speeds at different heights.
+
+2066
+01:20:40,860 --> 01:20:43,040
+So c is a function of y.
+
+2067
+01:20:46,560 --> 01:20:47,160
+Well,
+
+2068
+01:20:47,160 --> 01:20:51,010
+that allows me now to determine how long
+
+2069
+01:20:51,010 --> 01:20:54,860
+the light ray spins in each little interval dx.
+
+2070
+01:20:56,400 --> 01:20:56,700
+Alright.
+
+2071
+01:20:56,820 --> 01:20:58,300
+We just solve for dt.
+
+2072
+01:20:59,680 --> 01:21:03,240
+So dt is equal to
+
+2073
+01:21:03,240 --> 01:21:06,800
+ds divided by c of y.
+
+2074
+01:21:07,880 --> 01:21:11,320
+All I've done is solve for dt.
+
+2075
+01:21:12,340 --> 01:21:15,260
+Multiply by dt and divide by c of y.
+
+2076
+01:21:16,420 --> 01:21:16,700
+Okay.
+
+2077
+01:21:16,860 --> 01:21:19,860
+So that's how much time the light ray takes
+
+2078
+01:21:19,860 --> 01:21:22,860
+to go from one point to a neighboring point
+
+2079
+01:21:23,600 --> 01:21:25,580
+where they're separated by distance ds.
+
+2080
+01:21:25,620 --> 01:21:26,100
+But now,
+
+2081
+01:21:26,100 --> 01:21:27,400
+here's ds.
+
+2082
+01:21:27,400 --> 01:21:32,690
+So we can also write this as dx
+
+2083
+01:21:32,690 --> 01:21:37,980
+square root of 1 plus dy by dx squared,
+
+2084
+01:21:38,960 --> 01:21:41,380
+all divided by c of y.
+
+2085
+01:21:47,160 --> 01:21:48,220
+That's the time,
+
+2086
+01:21:48,220 --> 01:21:50,660
+in terms of the function y of x,
+
+2087
+01:21:50,820 --> 01:21:52,140
+remember now what we're doing.
+
+2088
+01:21:52,340 --> 01:21:54,300
+We have some function y of x,
+
+2089
+01:21:54,300 --> 01:21:55,710
+and we want to see how long
+
+2090
+01:21:55,710 --> 01:21:57,120
+it takes light to go along that function.
+
+2091
+01:21:58,400 --> 01:22:00,260
+dy by dx is just a derivative.
+
+2092
+01:22:01,320 --> 01:22:02,540
+If I gave you a function,
+
+2093
+01:22:02,540 --> 01:22:03,960
+you could differentiate it.
+
+2094
+01:22:06,500 --> 01:22:06,900
+dx,
+
+2095
+01:22:06,900 --> 01:22:09,520
+that's just a little x interval from here to here.
+
+2096
+01:22:10,360 --> 01:22:13,930
+And c of y is the velocity
+
+2097
+01:22:13,930 --> 01:22:17,500
+of light along the curve at height y.
+
+2098
+01:22:19,160 --> 01:22:20,520
+What's the total time that it
+
+2099
+01:22:20,520 --> 01:22:21,880
+takes to get from here to here?
+
+2100
+01:22:21,880 --> 01:22:24,880
+We add up all these little line,
+
+2101
+01:22:24,880 --> 01:22:26,620
+all these little intervals of time.
+
+2102
+01:22:26,820 --> 01:22:27,640
+We add them up,
+
+2103
+01:22:27,640 --> 01:22:29,420
+which obviously means we do an integral.
+
+2104
+01:22:30,060 --> 01:22:33,040
+And so the total time between 1 and 2,
+
+2105
+01:22:33,040 --> 01:22:34,080
+let's call it t12,
+
+2106
+01:22:35,099 --> 01:22:40,259
+is equal to the integral dx from the
+
+2107
+01:22:40,259 --> 01:22:45,420
+starting point x1 to the end point x2,
+
+2108
+01:22:45,580 --> 01:22:46,920
+start to end,
+
+2109
+01:22:46,920 --> 01:22:47,900
+of,
+
+2110
+01:22:47,900 --> 01:22:49,800
+here it is,
+
+2111
+01:22:49,880 --> 01:22:51,780
+square root of 1.
+
+2112
+01:22:51,780 --> 01:22:54,260
+1 plus dy by dx squared
+
+2113
+01:22:56,900 --> 01:22:58,400
+divided by c of y.
+
+2114
+01:22:59,800 --> 01:23:01,740
+If I told you what c of y was,
+
+2115
+01:23:03,080 --> 01:23:05,360
+and I gave you the function y of x,
+
+2116
+01:23:06,040 --> 01:23:08,300
+we could determine how long it takes the
+
+2117
+01:23:08,300 --> 01:23:10,560
+light rate to go from here to here.
+
+2118
+01:23:10,860 --> 01:23:12,500
+Now that doesn't solve our problem.
+
+2119
+01:23:12,580 --> 01:23:13,920
+That just sets up our problem.
+
+2120
+01:23:14,240 --> 01:23:17,020
+It tells us for every curve y of x,
+
+2121
+01:23:17,599 --> 01:23:18,709
+how long it takes to
+
+2122
+01:23:18,709 --> 01:23:19,820
+go from point 1 to 2.
+
+2123
+01:23:19,820 --> 01:23:22,320
+Then our problem is to find
+
+2124
+01:23:22,320 --> 01:23:24,820
+the curve which minimizes the time.
+
+2125
+01:23:25,060 --> 01:23:26,420
+That's obviously harder.
+
+2126
+01:23:27,140 --> 01:23:27,780
+Alright?
+
+2127
+01:23:28,000 --> 01:23:29,260
+So find the curve.
+
+2128
+01:23:29,480 --> 01:23:31,290
+Search through all possible curves
+
+2129
+01:23:31,290 --> 01:23:33,100
+that you could search through,
+
+2130
+01:23:33,280 --> 01:23:37,060
+and find out what curve minimizes the time.
+
+2131
+01:23:40,799 --> 01:23:42,980
+I'll give you another example.
+
+2132
+01:23:43,140 --> 01:23:45,320
+Some other examples where,
+
+2133
+01:23:45,320 --> 01:23:47,140
+for one reason or another,
+
+2134
+01:23:47,260 --> 01:23:48,940
+you might want to minimize something
+
+2135
+01:23:48,940 --> 01:23:51,560
+with respect to an entire function.
+
+2136
+01:23:56,740 --> 01:23:57,080
+Well,
+
+2137
+01:23:57,080 --> 01:23:58,320
+here's a famous example
+
+2138
+01:23:59,559 --> 01:24:02,680
+that everybody who builds bridges knows about.
+
+2139
+01:24:03,800 --> 01:24:06,770
+If you have a chain or
+
+2140
+01:24:06,770 --> 01:24:09,740
+a cable or a string or whatever,
+
+2141
+01:24:09,940 --> 01:24:10,980
+a weighted string,
+
+2142
+01:24:11,720 --> 01:24:13,840
+a weighted string or a weighted cable
+
+2143
+01:24:14,880 --> 01:24:16,680
+hung between two points,
+
+2144
+01:24:20,900 --> 01:24:21,200
+you can see that the
+
+2145
+01:24:21,200 --> 01:24:21,500
+length of the chain is fixed.
+
+2146
+01:24:21,500 --> 01:24:22,950
+Now we're assuming that we
+
+2147
+01:24:22,950 --> 01:24:24,400
+know the length of the chain.
+
+2148
+01:24:24,600 --> 01:24:26,300
+The length of the chain is fixed.
+
+2149
+01:24:26,760 --> 01:24:28,040
+We might ask,
+
+2150
+01:24:28,160 --> 01:24:31,080
+what configuration does the chain take?
+
+2151
+01:24:31,380 --> 01:24:33,240
+And the answer always is,
+
+2152
+01:24:33,360 --> 01:24:35,660
+it minimizes the potential energy.
+
+2153
+01:24:38,260 --> 01:24:40,260
+I'll just tell you that as a fact now.
+
+2154
+01:24:40,560 --> 01:24:42,880
+It minimizes the potential energy.
+
+2155
+01:24:43,720 --> 01:24:45,340
+That means effectively it gets
+
+2156
+01:24:45,340 --> 01:24:46,960
+as low as it possibly can,
+
+2157
+01:24:46,960 --> 01:24:50,040
+because the potential energy is just a function of height.
+
+2158
+01:24:50,440 --> 01:24:52,620
+Potential energy increases as you go up.
+
+2159
+01:24:52,700 --> 01:24:54,720
+It tries to get as low as it can.
+
+2160
+01:24:55,460 --> 01:24:55,980
+Well,
+
+2161
+01:24:55,980 --> 01:24:57,640
+it can't drop down through the floor,
+
+2162
+01:24:57,740 --> 01:24:59,580
+because the chain has a fixed length.
+
+2163
+01:25:02,379 --> 01:25:06,060
+This sort of configuration will not be terribly efficient,
+
+2164
+01:25:07,879 --> 01:25:10,300
+because we can gain some,
+
+2165
+01:25:10,460 --> 01:25:12,800
+or we can lower the potential energy in the middle
+
+2166
+01:25:12,800 --> 01:25:14,540
+by letting it hang down deeper here.
+
+2167
+01:25:14,540 --> 01:25:16,460
+So there's some curve,
+
+2168
+01:25:17,260 --> 01:25:18,220
+some function,
+
+2169
+01:25:19,300 --> 01:25:20,520
+of fixed length,
+
+2170
+01:25:20,800 --> 01:25:22,900
+which minimizes the potential energy.
+
+2171
+01:25:23,820 --> 01:25:25,540
+I'm not going to tell you what the function is,
+
+2172
+01:25:25,580 --> 01:25:26,020
+I'm going to remember,
+
+2173
+01:25:26,020 --> 01:25:26,540
+what is it?
+
+2174
+01:25:28,180 --> 01:25:29,000
+It's a catenary,
+
+2175
+01:25:29,000 --> 01:25:29,280
+right?
+
+2176
+01:25:29,380 --> 01:25:29,540
+Yeah,
+
+2177
+01:25:29,540 --> 01:25:29,940
+it's a catenary.
+
+2178
+01:25:30,020 --> 01:25:31,400
+But if you ask me what a catenary is,
+
+2179
+01:25:31,440 --> 01:25:31,920
+I can't remember.
+
+2180
+01:25:32,660 --> 01:25:33,140
+Hmm?
+
+2181
+01:25:33,720 --> 01:25:34,200
+Yeah.
+
+2182
+01:25:36,060 --> 01:25:38,580
+So that's another example of a problem
+
+2183
+01:25:38,580 --> 01:25:42,480
+in which you might want to minimize a certain function,
+
+2184
+01:25:42,660 --> 01:25:44,520
+which depends on the whole curve,
+
+2185
+01:25:46,400 --> 01:25:48,030
+you might want to minimize it
+
+2186
+01:25:48,030 --> 01:25:49,660
+with respect to the curve itself.
+
+2187
+01:25:50,060 --> 01:25:52,680
+What's the definition of the potential energy in that case?
+
+2188
+01:25:52,860 --> 01:25:53,960
+Is it relative to the...
+
+2189
+01:25:53,960 --> 01:25:54,120
+Oh,
+
+2190
+01:25:54,120 --> 01:25:55,340
+it's just the height of each,
+
+2191
+01:25:56,220 --> 01:25:58,220
+basically the height of each molecule.
+
+2192
+01:25:58,580 --> 01:26:00,300
+You mean from the fixed points,
+
+2193
+01:26:00,300 --> 01:26:00,960
+or...
+
+2194
+01:26:00,960 --> 01:26:01,720
+It doesn't matter,
+
+2195
+01:26:01,720 --> 01:26:02,120
+because,
+
+2196
+01:26:03,960 --> 01:26:06,320
+because you can take it from the fixed points,
+
+2197
+01:26:06,320 --> 01:26:06,880
+yeah.
+
+2198
+01:26:07,160 --> 01:26:08,630
+But if you were to
+
+2199
+01:26:08,630 --> 01:26:10,100
+change the zero of potential energy,
+
+2200
+01:26:10,260 --> 01:26:11,280
+it would just add a constant,
+
+2201
+01:26:11,580 --> 01:26:13,900
+and it wouldn't change the answer.
+
+2202
+01:26:13,900 --> 01:26:16,540
+But right now,
+
+2203
+01:26:16,540 --> 01:26:18,920
+I don't want to set up this problem.
+
+2204
+01:26:19,160 --> 01:26:20,920
+All I wanted to do is show you some examples
+
+2205
+01:26:20,920 --> 01:26:26,900
+where physics requires that you minimize something,
+
+2206
+01:26:27,720 --> 01:26:29,980
+not with respect to a few variables,
+
+2207
+01:26:30,180 --> 01:26:31,760
+but basically with respect to
+
+2208
+01:26:31,760 --> 01:26:33,340
+an infinite number of variables,
+
+2209
+01:26:33,620 --> 01:26:36,660
+the values of y at every point x.
+
+2210
+01:26:38,480 --> 01:26:41,860
+The mathematics is called the calculus of variations.
+
+2211
+01:26:43,280 --> 01:26:46,100
+It's the problem of minimizing a functional
+
+2212
+01:26:46,100 --> 01:26:48,140
+with respect to a function.
+
+2213
+01:26:49,240 --> 01:26:53,300
+The principle of least action is this kind of thing.
+
+2214
+01:26:53,640 --> 01:26:56,680
+It is minimizing something that is defined
+
+2215
+01:26:56,680 --> 01:26:58,520
+for the whole trajectory now,
+
+2216
+01:26:58,700 --> 01:27:00,980
+trajectory of a mechanical system.
+
+2217
+01:27:01,540 --> 01:27:02,600
+In other words,
+
+2218
+01:27:02,600 --> 01:27:03,360
+a system...
+
+2219
+01:27:03,360 --> 01:27:04,500
+Where did I write them?
+
+2220
+01:27:04,600 --> 01:27:05,640
+Did I write them down here somewhere?
+
+2221
+01:27:05,820 --> 01:27:05,960
+Yeah.
+
+2222
+01:27:05,960 --> 01:27:07,020
+Okay.
+
+2223
+01:27:08,180 --> 01:27:09,660
+Not one function,
+
+2224
+01:27:09,660 --> 01:27:11,500
+but a whole collection of functions,
+
+2225
+01:27:12,259 --> 01:27:13,200
+q1 of t,
+
+2226
+01:27:13,200 --> 01:27:15,440
+q2 of t.
+
+2227
+01:27:16,060 --> 01:27:17,440
+Remember what the q's are.
+
+2228
+01:27:17,540 --> 01:27:19,580
+They're the generalized coordinates of a system.
+
+2229
+01:27:20,120 --> 01:27:21,220
+q3 of t.
+
+2230
+01:27:25,640 --> 01:27:27,560
+They're the whole collection of functions
+
+2231
+01:27:27,560 --> 01:27:29,860
+which define a trajectory...
+
+2232
+01:27:33,620 --> 01:27:34,680
+of a system.
+
+2233
+01:27:35,360 --> 01:27:36,640
+Find the trajectory,
+
+2234
+01:27:37,559 --> 01:27:39,820
+which means find the collection of functions,
+
+2235
+01:27:40,140 --> 01:27:41,480
+q1 through q2,
+
+2236
+01:27:41,500 --> 01:27:41,920
+q2n of t,
+
+2237
+01:27:42,140 --> 01:27:43,980
+which minimize something.
+
+2238
+01:27:44,360 --> 01:27:45,600
+What is it minimizing?
+
+2239
+01:27:45,880 --> 01:27:46,560
+What is the quantity?
+
+2240
+01:27:46,780 --> 01:27:48,620
+The quantity is called the action.
+
+2241
+01:27:50,680 --> 01:27:52,740
+That's the principle of least action,
+
+2242
+01:27:52,860 --> 01:27:54,920
+that there exists a quantity called an action,
+
+2243
+01:27:56,560 --> 01:27:59,380
+which minimizing it with respect to the trajectory
+
+2244
+01:27:59,380 --> 01:28:02,460
+is equivalent to the usual rules of mechanics.
+
+2245
+01:28:03,160 --> 01:28:04,220
+In particular,
+
+2246
+01:28:04,220 --> 01:28:06,940
+equivalent to Newton's laws of mechanics,
+
+2247
+01:28:07,320 --> 01:28:08,420
+but is in many,
+
+2248
+01:28:08,420 --> 01:28:10,560
+many situations far more efficient
+
+2249
+01:28:10,560 --> 01:28:12,660
+and a far better tool
+
+2250
+01:28:15,440 --> 01:28:18,220
+than just writing down Newton's equations.
+
+2251
+01:28:20,760 --> 01:28:21,240
+So...
+
+2252
+01:28:21,960 --> 01:28:22,560
+I'm sorry,
+
+2253
+01:28:22,560 --> 01:28:23,850
+did you say there are
+
+2254
+01:28:23,850 --> 01:28:25,140
+equivalent formulations of the same thing?
+
+2255
+01:28:25,440 --> 01:28:27,460
+There are equivalent formulations of the same thing,
+
+2256
+01:28:27,540 --> 01:28:29,020
+and which one is easier and
+
+2257
+01:28:29,020 --> 01:28:30,500
+more useful depends on the system.
+
+2258
+01:28:30,980 --> 01:28:31,940
+But believe me,
+
+2259
+01:28:31,940 --> 01:28:34,200
+there are systems where the principle of least action
+
+2260
+01:28:34,200 --> 01:28:37,140
+is a lot more efficient than...
+
+2261
+01:28:37,140 --> 01:28:38,180
+In particular,
+
+2262
+01:28:38,980 --> 01:28:40,520
+if I were to take this eraser,
+
+2263
+01:28:40,820 --> 01:28:43,020
+which is composed of 10 to the 30th particles,
+
+2264
+01:28:43,540 --> 01:28:45,450
+and I had to write down
+
+2265
+01:28:45,450 --> 01:28:47,360
+all 10 to the 30th force laws
+
+2266
+01:28:47,360 --> 01:28:51,460
+between all 3 times 10 to the 30th coordinates,
+
+2267
+01:28:52,700 --> 01:28:54,430
+it would take me a long
+
+2268
+01:28:54,430 --> 01:28:56,160
+time to write down those equations.
+
+2269
+01:28:56,880 --> 01:28:57,920
+If I tell you,
+
+2270
+01:28:57,920 --> 01:28:58,720
+on the other hand,
+
+2271
+01:28:58,760 --> 01:29:01,500
+that the trajectory that this object takes
+
+2272
+01:29:01,500 --> 01:29:03,300
+in moving through space and rotating
+
+2273
+01:29:04,400 --> 01:29:05,660
+minimizes some action,
+
+2274
+01:29:05,840 --> 01:29:08,000
+and that I know how to write down the action,
+
+2275
+01:29:08,000 --> 01:29:09,680
+it is a much,
+
+2276
+01:29:09,680 --> 01:29:12,360
+much more efficient tool for many purposes.
+
+2277
+01:29:12,760 --> 01:29:13,360
+Intuitively,
+
+2278
+01:29:13,360 --> 01:29:13,700
+for me,
+
+2279
+01:29:13,700 --> 01:29:15,560
+it seems like the principle of least action
+
+2280
+01:29:15,560 --> 01:29:17,000
+might apply to Newton's laws.
+
+2281
+01:29:17,220 --> 01:29:17,600
+Yes.
+
+2282
+01:29:17,700 --> 01:29:20,620
+But not necessarily the other direction.
+
+2283
+01:29:20,780 --> 01:29:21,020
+Yeah.
+
+2284
+01:29:23,320 --> 01:29:23,920
+That's...yeah.
+
+2285
+01:29:24,140 --> 01:29:24,740
+That...
+
+2286
+01:29:26,699 --> 01:29:29,960
+It implies Newton's laws in all cases
+
+2287
+01:29:29,960 --> 01:29:35,040
+where Newton's laws would be the underlying description
+
+2288
+01:29:35,040 --> 01:29:36,320
+or one underlying...
+
+2289
+01:29:36,320 --> 01:29:37,900
+In any case where Newton's laws apply,
+
+2290
+01:29:39,280 --> 01:29:42,040
+it is equivalent to Newton's laws.
+
+2291
+01:29:42,260 --> 01:29:43,560
+But it's much more general.
+
+2292
+01:29:43,880 --> 01:29:45,040
+It's more general.
+
+2293
+01:29:45,140 --> 01:29:45,620
+For example,
+
+2294
+01:29:45,620 --> 01:29:48,100
+it applies to problems in special relativity,
+
+2295
+01:29:48,380 --> 01:29:50,420
+to the motion of objects in special relativity.
+
+2296
+01:29:50,760 --> 01:29:52,880
+It applies to fields.
+
+2297
+01:29:53,460 --> 01:29:56,140
+It applies to the electromagnetic field.
+
+2298
+01:29:56,440 --> 01:30:00,540
+It applies to basically every classical problem in physics.
+
+2299
+01:30:01,180 --> 01:30:03,360
+Not just motion of particles,
+
+2300
+01:30:03,520 --> 01:30:04,720
+but motion of waves,
+
+2301
+01:30:04,720 --> 01:30:06,240
+fields,
+
+2302
+01:30:06,780 --> 01:30:07,980
+the whole works.
+
+2303
+01:30:07,980 --> 01:30:09,740
+The principle of least action
+
+2304
+01:30:09,740 --> 01:30:13,140
+is the most general formulation of mechanics
+
+2305
+01:30:13,140 --> 01:30:16,740
+or of classical physics that we have.
+
+2306
+01:30:17,640 --> 01:30:20,000
+So all systems in classical physics
+
+2307
+01:30:20,000 --> 01:30:22,500
+that I can think of
+
+2308
+01:30:22,500 --> 01:30:23,980
+have a formulation in terms
+
+2309
+01:30:23,980 --> 01:30:25,460
+of the principle of least action.
+
+2310
+01:30:26,700 --> 01:30:27,300
+Now,
+
+2311
+01:30:27,300 --> 01:30:28,640
+if it's not particles,
+
+2312
+01:30:28,700 --> 01:30:30,040
+but it's something more complicated,
+
+2313
+01:30:30,400 --> 01:30:32,920
+the principle of least action might not...
+
+2314
+01:30:32,920 --> 01:30:33,180
+You know,
+
+2315
+01:30:33,180 --> 01:30:34,760
+we have to generalize it.
+
+2316
+01:30:35,000 --> 01:30:36,680
+But the little steps,
+
+2317
+01:30:36,780 --> 01:30:37,560
+and the little steps,
+
+2318
+01:30:37,560 --> 01:30:38,780
+the little step we're taking now
+
+2319
+01:30:38,780 --> 01:30:41,180
+is to think about trajectories for a system of particles.
+
+2320
+01:30:41,580 --> 01:30:43,040
+Could you divide action?
+
+2321
+01:30:43,300 --> 01:30:43,720
+No.
+
+2322
+01:30:45,100 --> 01:30:45,740
+No.
+
+2323
+01:30:47,320 --> 01:30:48,280
+I wonder...
+
+2324
+01:30:48,280 --> 01:30:48,840
+Not yet.
+
+2325
+01:30:49,200 --> 01:30:49,840
+Yeah.
+
+2326
+01:30:50,360 --> 01:30:54,600
+I remember a test where...
+
+2327
+01:30:55,559 --> 01:30:59,760
+an exam where the problem was a frictionless block
+
+2328
+01:30:59,760 --> 01:31:03,200
+sliding down a frictionless wedge on a frictionless table,
+
+2329
+01:31:03,320 --> 01:31:06,720
+and I remember that most of the students spent...
+
+2330
+01:31:07,560 --> 01:31:10,380
+three quarters of their test time
+
+2331
+01:31:10,380 --> 01:31:13,020
+trying to write the force equation,
+
+2332
+01:31:13,280 --> 01:31:15,420
+which was like an introductory physics class.
+
+2333
+01:31:15,560 --> 01:31:15,700
+Right.
+
+2334
+01:31:16,419 --> 01:31:20,340
+And the people that got that
+
+2335
+01:31:20,340 --> 01:31:21,800
+in a reasonable amount of time
+
+2336
+01:31:21,800 --> 01:31:24,020
+were the ones who applied conservation of energy
+
+2337
+01:31:24,020 --> 01:31:25,340
+and equated it to...
+
+2338
+01:31:25,340 --> 01:31:25,540
+Yeah.
+
+2339
+01:31:25,960 --> 01:31:27,060
+...conservation of momentum.
+
+2340
+01:31:27,320 --> 01:31:27,480
+Yeah.
+
+2341
+01:31:28,420 --> 01:31:28,980
+Yeah.
+
+2342
+01:31:30,280 --> 01:31:31,320
+But there are...
+
+2343
+01:31:31,320 --> 01:31:31,640
+Yes,
+
+2344
+01:31:31,640 --> 01:31:32,040
+yes.
+
+2345
+01:31:32,180 --> 01:31:32,940
+And of course,
+
+2346
+01:31:32,940 --> 01:31:34,220
+that is an example
+
+2347
+01:31:34,220 --> 01:31:36,180
+of using more general principles.
+
+2348
+01:31:39,620 --> 01:31:41,540
+But there are mechanical systems
+
+2349
+01:31:41,540 --> 01:31:43,740
+where you wouldn't get too far with that either,
+
+2350
+01:31:43,960 --> 01:31:46,840
+and where the more general principle of least action
+
+2351
+01:31:46,840 --> 01:31:50,880
+would be the most efficient way to go about it.
+
+2352
+01:31:52,060 --> 01:31:52,740
+All right.
+
+2353
+01:31:52,760 --> 01:31:54,200
+So I will tell you
+
+2354
+01:31:54,200 --> 01:31:55,640
+right now what the action is.
+
+2355
+01:31:56,340 --> 01:31:57,040
+All right?
+
+2356
+01:31:57,880 --> 01:31:58,380
+Now,
+
+2357
+01:31:58,380 --> 01:32:00,360
+this action is going to seem bizarre.
+
+2358
+01:32:01,080 --> 01:32:02,580
+It's going to seem strange.
+
+2359
+01:32:02,760 --> 01:32:04,060
+It's going to be a little bit surprising.
+
+2360
+01:32:06,540 --> 01:32:07,540
+But it's going to be a little bit more interesting.
+
+2361
+01:32:07,540 --> 01:32:09,190
+But the final acid test
+
+2362
+01:32:09,190 --> 01:32:10,840
+of whether it's the right action
+
+2363
+01:32:10,840 --> 01:32:13,700
+is to test it out for all Newtonian problems
+
+2364
+01:32:13,700 --> 01:32:16,220
+and see that the principle of least action
+
+2365
+01:32:16,220 --> 01:32:19,020
+gives the same rules as Newton's equations.
+
+2366
+01:32:19,720 --> 01:32:20,400
+All right?
+
+2367
+01:32:20,720 --> 01:32:21,840
+Once we do that,
+
+2368
+01:32:21,980 --> 01:32:24,300
+we will then have a reason to believe
+
+2369
+01:32:24,300 --> 01:32:25,440
+that this is the right action.
+
+2370
+01:32:25,520 --> 01:32:26,300
+So I'll tell you what it is.
+
+2371
+01:32:27,620 --> 01:32:29,340
+It's an integral over the trajectory.
+
+2372
+01:32:29,720 --> 01:32:30,220
+So it's...
+
+2373
+01:32:30,220 --> 01:32:32,860
+It's now the independent variable is time,
+
+2374
+01:32:32,860 --> 01:32:33,820
+not x.
+
+2375
+01:32:34,560 --> 01:32:36,320
+The independent variable is time.
+
+2376
+01:32:36,320 --> 01:32:38,200
+We have a whole bunch of q's of t,
+
+2377
+01:32:38,480 --> 01:32:39,760
+or x's of t,
+
+2378
+01:32:39,760 --> 01:32:40,700
+or whatever we like.
+
+2379
+01:32:42,020 --> 01:32:44,420
+We calculate the kinetic energy
+
+2380
+01:32:44,420 --> 01:32:45,760
+and the potential energy,
+
+2381
+01:32:45,960 --> 01:32:48,160
+and we integrate it over time.
+
+2382
+01:32:49,960 --> 01:32:50,520
+Integral...
+
+2383
+01:32:54,280 --> 01:32:55,760
+of the kinetic energy,
+
+2384
+01:32:56,519 --> 01:32:57,460
+which is what?
+
+2385
+01:32:57,580 --> 01:32:58,460
+One half...
+
+2386
+01:32:58,460 --> 01:33:00,540
+For an ordinary mechanical system
+
+2387
+01:33:00,540 --> 01:33:02,000
+composed of ordinary particles.
+
+2388
+01:33:05,440 --> 01:33:06,300
+Let's just...
+
+2389
+01:33:06,320 --> 01:33:07,780
+Let's just think of it for one particle.
+
+2390
+01:33:08,020 --> 01:33:08,180
+Well,
+
+2391
+01:33:08,180 --> 01:33:09,140
+the simplest thing.
+
+2392
+01:33:09,240 --> 01:33:10,460
+One particle in one dimension,
+
+2393
+01:33:10,760 --> 01:33:12,820
+and then I'll tell you what the generalization is.
+
+2394
+01:33:12,900 --> 01:33:14,700
+One particle moving up and down an axis.
+
+2395
+01:33:15,220 --> 01:33:15,800
+All right?
+
+2396
+01:33:16,140 --> 01:33:19,340
+So the problem then is to find x of t.
+
+2397
+01:33:21,480 --> 01:33:22,380
+Find the curve,
+
+2398
+01:33:22,380 --> 01:33:24,240
+or find the function x of t,
+
+2399
+01:33:24,380 --> 01:33:25,880
+which minimizes a certain thing,
+
+2400
+01:33:25,980 --> 01:33:27,340
+which I will now tell you what it is.
+
+2401
+01:33:27,400 --> 01:33:28,200
+It's called the action.
+
+2402
+01:33:28,840 --> 01:33:30,140
+You might expect...
+
+2403
+01:33:30,140 --> 01:33:31,420
+If I tell you that it
+
+2404
+01:33:31,420 --> 01:33:32,700
+has to do with the energies,
+
+2405
+01:33:33,300 --> 01:33:34,710
+you might expect that it has
+
+2406
+01:33:34,710 --> 01:33:36,120
+to do with the kinetic energy,
+
+2407
+01:33:36,120 --> 01:33:37,740
+one half mv squared,
+
+2408
+01:33:38,100 --> 01:33:40,800
+which is one half dx dt squared,
+
+2409
+01:33:44,780 --> 01:33:47,120
+plus the potential energy...
+
+2410
+01:33:51,679 --> 01:33:53,540
+integrated over time,
+
+2411
+01:33:54,500 --> 01:33:55,220
+dt.
+
+2412
+01:33:56,700 --> 01:33:57,860
+In other words,
+
+2413
+01:33:57,860 --> 01:33:59,280
+at every point along the trajectory,
+
+2414
+01:33:59,640 --> 01:34:02,280
+you might write down the...
+
+2415
+01:34:02,840 --> 01:34:04,860
+the action
+
+2416
+01:34:04,860 --> 01:34:06,920
+for a small interval of time
+
+2417
+01:34:06,920 --> 01:34:09,440
+would be the total energy times dt.
+
+2418
+01:34:09,660 --> 01:34:09,800
+Now,
+
+2419
+01:34:09,800 --> 01:34:10,360
+this is wrong.
+
+2420
+01:34:12,020 --> 01:34:12,660
+Bizarrely,
+
+2421
+01:34:13,420 --> 01:34:16,100
+the answer is almost this,
+
+2422
+01:34:16,240 --> 01:34:16,940
+but not quite.
+
+2423
+01:34:18,820 --> 01:34:19,460
+Minus.
+
+2424
+01:34:20,080 --> 01:34:23,700
+The kinetic energy minus the potential energy.
+
+2425
+01:34:25,980 --> 01:34:27,340
+That's called the action.
+
+2426
+01:34:27,880 --> 01:34:28,520
+Bizarre.
+
+2427
+01:34:28,520 --> 01:34:29,420
+That's a good explanation.
+
+2428
+01:34:31,980 --> 01:34:33,160
+The final...
+
+2429
+01:34:33,160 --> 01:34:34,260
+In the final analysis,
+
+2430
+01:34:34,879 --> 01:34:37,880
+whether you call this plus something or minus something
+
+2431
+01:34:37,880 --> 01:34:39,240
+is of course a matter of definition.
+
+2432
+01:34:39,800 --> 01:34:40,660
+You can...
+
+2433
+01:34:40,660 --> 01:34:42,720
+You can redefine a new variable,
+
+2434
+01:34:42,820 --> 01:34:43,780
+and you can call it w,
+
+2435
+01:34:43,880 --> 01:34:45,020
+which is minus u,
+
+2436
+01:34:45,220 --> 01:34:48,060
+and put in plus w here,
+
+2437
+01:34:48,200 --> 01:34:48,660
+if you like.
+
+2438
+01:34:49,240 --> 01:34:50,200
+But then...
+
+2439
+01:34:50,200 --> 01:34:50,940
+Fine,
+
+2440
+01:34:50,940 --> 01:34:51,620
+you can do that.
+
+2441
+01:34:52,160 --> 01:34:53,760
+Then we have to find out
+
+2442
+01:34:53,760 --> 01:34:55,260
+what the solution of the problem
+
+2443
+01:34:55,260 --> 01:34:56,660
+of minimizing the trajectory
+
+2444
+01:34:56,660 --> 01:34:58,020
+with respect to this thing
+
+2445
+01:34:58,020 --> 01:34:59,060
+that you've written down is.
+
+2446
+01:34:59,280 --> 01:35:01,160
+What you'll find is Newton's equations,
+
+2447
+01:35:01,400 --> 01:35:03,380
+but you'll find Newton's equations
+
+2448
+01:35:03,380 --> 01:35:05,780
+instead of finding the force being
+
+2449
+01:35:06,320 --> 01:35:07,200
+minus w,
+
+2450
+01:35:07,200 --> 01:35:07,540
+dw,
+
+2451
+01:35:07,540 --> 01:35:08,100
+dx,
+
+2452
+01:35:08,300 --> 01:35:09,340
+you'll find it plus dw,
+
+2453
+01:35:09,340 --> 01:35:09,900
+dx,
+
+2454
+01:35:10,120 --> 01:35:11,000
+and you'll find out that
+
+2455
+01:35:11,000 --> 01:35:11,880
+the thing that you call w
+
+2456
+01:35:11,880 --> 01:35:15,580
+is behaving like the negative of the potential energy.
+
+2457
+01:35:16,000 --> 01:35:16,480
+So,
+
+2458
+01:35:16,480 --> 01:35:18,000
+you can call it anything you want.
+
+2459
+01:35:18,240 --> 01:35:20,500
+I will call it minus u of x here,
+
+2460
+01:35:21,160 --> 01:35:23,140
+but this is the thing which is called the action.
+
+2461
+01:35:24,540 --> 01:35:26,380
+Sometimes action is called i.
+
+2462
+01:35:27,460 --> 01:35:29,020
+Sometimes it's called s.
+
+2463
+01:35:29,260 --> 01:35:30,340
+I don't want to use s
+
+2464
+01:35:30,340 --> 01:35:32,420
+because we've already used s for path length.
+
+2465
+01:35:32,420 --> 01:35:35,000
+And sometimes it's called a for action.
+
+2466
+01:35:35,760 --> 01:35:37,750
+This is the one case
+
+2467
+01:35:37,750 --> 01:35:39,740
+where I will use a variable
+
+2468
+01:35:40,599 --> 01:35:45,280
+which is linguistically or phonetically
+
+2469
+01:35:45,280 --> 01:35:47,040
+or whatever the word is...
+
+2470
+01:35:52,960 --> 01:35:53,680
+Sensible.
+
+2471
+01:36:02,540 --> 01:36:03,980
+What I suggest is we
+
+2472
+01:36:03,980 --> 01:36:05,420
+go through a bunch of examples.
+
+2473
+01:36:10,560 --> 01:36:12,640
+I'm throwing something at you now,
+
+2474
+01:36:13,879 --> 01:36:16,700
+and it is not easy to explain
+
+2475
+01:36:16,700 --> 01:36:19,920
+where this comes from and why this is the answer.
+
+2476
+01:36:20,100 --> 01:36:21,360
+The best thing to do,
+
+2477
+01:36:21,360 --> 01:36:21,900
+I think,
+
+2478
+01:36:21,960 --> 01:36:25,500
+is to examine it and find out
+
+2479
+01:36:25,500 --> 01:36:28,240
+that it is the same as Newton's equations.
+
+2480
+01:36:28,720 --> 01:36:30,600
+And then we can go back and say,
+
+2481
+01:36:30,680 --> 01:36:31,540
+why did it have to
+
+2482
+01:36:31,540 --> 01:36:32,400
+be this to get Newton's equations?
+
+2483
+01:36:33,519 --> 01:36:36,280
+I'd rather not try to motivate it at this point
+
+2484
+01:36:36,280 --> 01:36:38,060
+than just examine it and see what we get.
+
+2485
+01:36:39,660 --> 01:36:43,760
+So let's hold in suspension our questions
+
+2486
+01:36:43,760 --> 01:36:45,360
+about why this is the right thing.
+
+2487
+01:36:45,580 --> 01:36:47,380
+But let me notice some things about it.
+
+2488
+01:36:47,680 --> 01:36:48,660
+First of all,
+
+2489
+01:36:48,660 --> 01:36:50,520
+let's compare it
+
+2490
+01:36:50,520 --> 01:36:52,620
+with the principle of least distance
+
+2491
+01:36:52,620 --> 01:36:54,120
+or the principle of least time.
+
+2492
+01:36:54,660 --> 01:36:58,820
+The principle of least time also had integrals.
+
+2493
+01:36:58,940 --> 01:36:59,480
+Now,
+
+2494
+01:36:59,480 --> 01:37:00,500
+in those cases,
+
+2495
+01:37:00,500 --> 01:37:02,400
+I used x as the integral.
+
+2496
+01:37:02,400 --> 01:37:02,980
+So I used x as the independent variable,
+
+2497
+01:37:03,360 --> 01:37:05,560
+and y as the dependent variable.
+
+2498
+01:37:06,080 --> 01:37:09,700
+Now I'm using time as the independent variable
+
+2499
+01:37:10,400 --> 01:37:12,680
+and x as the dependent variable.
+
+2500
+01:37:13,120 --> 01:37:15,340
+So I've pulled a switch on you of notation.
+
+2501
+01:37:15,940 --> 01:37:18,120
+The independent variable,
+
+2502
+01:37:18,120 --> 01:37:19,660
+which is like x
+
+2503
+01:37:20,400 --> 01:37:21,980
+in the previous example,
+
+2504
+01:37:21,980 --> 01:37:23,320
+is now t.
+
+2505
+01:37:24,740 --> 01:37:27,660
+Instead of trying to calculate y of x,
+
+2506
+01:37:27,800 --> 01:37:29,560
+I'm trying to calculate x of t.
+
+2507
+01:37:30,040 --> 01:37:32,380
+So the dependent variable is x,
+
+2508
+01:37:32,400 --> 01:37:34,080
+the independent variable is t,
+
+2509
+01:37:34,740 --> 01:37:37,160
+but let's just compare it
+
+2510
+01:37:37,160 --> 01:37:39,580
+with the principle of least distance,
+
+2511
+01:37:39,980 --> 01:37:40,440
+for example,
+
+2512
+01:37:40,440 --> 01:37:42,640
+or the principle of least time.
+
+2513
+01:37:43,120 --> 01:37:45,640
+The principle of least distance told us to compute
+
+2514
+01:37:45,640 --> 01:37:49,620
+1 plus dy by dx squared,
+
+2515
+01:37:51,240 --> 01:37:52,380
+integrated dx.
+
+2516
+01:37:54,160 --> 01:37:56,540
+If we wanted the principle of least time,
+
+2517
+01:37:57,120 --> 01:37:58,380
+the optical principle,
+
+2518
+01:37:58,380 --> 01:37:59,740
+we would also throw in here
+
+2519
+01:37:59,740 --> 01:38:01,220
+a 1 over c of...
+
+2520
+01:38:02,420 --> 01:38:03,660
+of x,
+
+2521
+01:38:03,660 --> 01:38:04,260
+I guess.
+
+2522
+01:38:05,660 --> 01:38:06,320
+y,
+
+2523
+01:38:06,320 --> 01:38:06,940
+sorry.
+
+2524
+01:38:12,150 --> 01:38:12,660
+All right.
+
+2525
+01:38:14,160 --> 01:38:15,340
+First of all,
+
+2526
+01:38:16,060 --> 01:38:19,900
+the thing which I'm computing here depends on two things.
+
+2527
+01:38:20,260 --> 01:38:22,840
+It depends on y of x,
+
+2528
+01:38:23,120 --> 01:38:25,200
+and it depends on dy by dx.
+
+2529
+01:38:26,040 --> 01:38:26,820
+All right?
+
+2530
+01:38:26,860 --> 01:38:28,740
+So it depends on the function
+
+2531
+01:38:29,170 --> 01:38:32,300
+and the derivative of the function with respect to the...
+
+2532
+01:38:32,400 --> 01:38:33,740
+independent variable.
+
+2533
+01:38:34,640 --> 01:38:35,960
+That's also true here.
+
+2534
+01:38:36,440 --> 01:38:39,520
+This depends on the function,
+
+2535
+01:38:39,520 --> 01:38:40,420
+x of t,
+
+2536
+01:38:42,019 --> 01:38:45,960
+and also on the first derivative of the function
+
+2537
+01:38:45,960 --> 01:38:47,680
+with respect to the independent variable.
+
+2538
+01:38:48,440 --> 01:38:50,180
+So it has the same kind of depend...
+
+2539
+01:38:50,180 --> 01:38:51,500
+It doesn't have a square root in it,
+
+2540
+01:38:51,640 --> 01:38:52,560
+but still,
+
+2541
+01:38:52,560 --> 01:38:53,800
+the thing in the...
+
+2542
+01:38:53,800 --> 01:38:58,560
+in the integrand here depends both on the first derivative
+
+2543
+01:38:59,400 --> 01:39:01,880
+of the function and the function itself.
+
+2544
+01:39:01,880 --> 01:39:03,960
+It depends on y of x,
+
+2545
+01:39:04,100 --> 01:39:05,640
+and it depends on dy by dx.
+
+2546
+01:39:06,540 --> 01:39:07,560
+Likewise here,
+
+2547
+01:39:07,740 --> 01:39:09,680
+it depends on x of t
+
+2548
+01:39:10,700 --> 01:39:12,060
+through the function u,
+
+2549
+01:39:12,759 --> 01:39:14,880
+and on dx by dt.
+
+2550
+01:39:15,260 --> 01:39:17,120
+So it's a similar kind of thing.
+
+2551
+01:39:17,320 --> 01:39:21,520
+It's an integral along the independent variable
+
+2552
+01:39:21,520 --> 01:39:23,120
+from one time to another,
+
+2553
+01:39:24,019 --> 01:39:27,240
+and we will also put in an assumption
+
+2554
+01:39:27,240 --> 01:39:29,280
+which is very similar to what we put in
+
+2555
+01:39:29,280 --> 01:39:30,520
+in the principle of least time,
+
+2556
+01:39:31,259 --> 01:39:31,780
+namely,
+
+2557
+01:39:31,780 --> 01:39:33,080
+in the principle of least time,
+
+2558
+01:39:34,700 --> 01:39:39,120
+we said that the integral is between two fixed points
+
+2559
+01:39:40,040 --> 01:39:41,300
+which we don't vary.
+
+2560
+01:39:42,200 --> 01:39:44,060
+We hold the two points fixed,
+
+2561
+01:39:44,280 --> 01:39:46,060
+and we ask what's the trajectory
+
+2562
+01:39:46,060 --> 01:39:47,840
+which takes the least time between these.
+
+2563
+01:39:48,460 --> 01:39:49,020
+Likewise,
+
+2564
+01:39:49,020 --> 01:39:50,840
+in the principle of least action,
+
+2565
+01:39:51,919 --> 01:39:54,159
+we assume that we know what x
+
+2566
+01:39:54,159 --> 01:39:56,400
+at the beginning of the trajectory is,
+
+2567
+01:39:56,560 --> 01:39:57,840
+let's call that t0,
+
+2568
+01:39:58,960 --> 01:40:01,360
+and x at the end of the trajectory.
+
+2569
+01:40:01,780 --> 01:40:02,120
+t1,
+
+2570
+01:40:02,120 --> 01:40:03,500
+given,
+
+2571
+01:40:04,580 --> 01:40:05,740
+not to be changed.
+
+2572
+01:40:06,440 --> 01:40:08,950
+So it's a trajectory between
+
+2573
+01:40:08,950 --> 01:40:11,460
+two points in space and time.
+
+2574
+01:40:12,260 --> 01:40:12,880
+If you like,
+
+2575
+01:40:12,880 --> 01:40:13,180
+well,
+
+2576
+01:40:13,180 --> 01:40:15,880
+you can see what the analogy is.
+
+2577
+01:40:16,440 --> 01:40:17,260
+As I said,
+
+2578
+01:40:17,260 --> 01:40:18,640
+the basic idea is
+
+2579
+01:40:18,640 --> 01:40:21,680
+instead of giving the position and velocity,
+
+2580
+01:40:22,080 --> 01:40:24,900
+you're giving the position at two distinct times.
+
+2581
+01:40:25,480 --> 01:40:28,020
+Find the trajectory which minimizes
+
+2582
+01:40:28,760 --> 01:40:31,400
+this integral of the kinetic energy
+
+2583
+01:40:31,780 --> 01:40:33,160
+minus the potential energy.
+
+2584
+01:40:33,820 --> 01:40:35,100
+That's very surprising.
+
+2585
+01:40:35,220 --> 01:40:36,520
+It's even still surprising to me
+
+2586
+01:40:36,520 --> 01:40:38,520
+after 40 years of having studied this,
+
+2587
+01:40:38,600 --> 01:40:39,780
+more than 40 years,
+
+2588
+01:40:41,580 --> 01:40:43,420
+and I know the reason why it is,
+
+2589
+01:40:43,560 --> 01:40:45,460
+I'm still always surprised
+
+2590
+01:40:46,019 --> 01:40:49,040
+that it's the kinetic energy minus the potential energy.
+
+2591
+01:40:50,439 --> 01:40:52,780
+So you should also be surprised
+
+2592
+01:40:52,780 --> 01:40:54,440
+that it's the kinetic minus the potential,
+
+2593
+01:40:54,660 --> 01:40:55,220
+but it is.
+
+2594
+01:40:55,700 --> 01:40:56,640
+That's the action.
+
+2595
+01:40:58,780 --> 01:41:01,560
+The thing in the integral here,
+
+2596
+01:41:01,780 --> 01:41:02,640
+the integrand,
+
+2597
+01:41:02,840 --> 01:41:04,720
+is called the Lagrangian.
+
+2598
+01:41:05,500 --> 01:41:08,180
+The kinetic energy minus the potential energy
+
+2599
+01:41:08,180 --> 01:41:09,800
+is called the Lagrangian.
+
+2600
+01:41:15,280 --> 01:41:17,440
+And in a general form,
+
+2601
+01:41:17,440 --> 01:41:18,220
+a script L,
+
+2602
+01:41:18,460 --> 01:41:19,900
+it's a function
+
+2603
+01:41:22,199 --> 01:41:24,620
+of all of the q's,
+
+2604
+01:41:25,360 --> 01:41:27,700
+it's a function of the q of t's
+
+2605
+01:41:27,700 --> 01:41:30,520
+and the q dots of t's.
+
+2606
+01:41:34,079 --> 01:41:35,540
+And you can use it to calculate
+
+2607
+01:41:35,540 --> 01:41:35,720
+So the velocity of the energy
+
+2608
+01:41:35,720 --> 01:41:37,640
+is always the integral over time
+
+2609
+01:41:37,640 --> 01:41:39,900
+from the beginning of the trajectory
+
+2610
+01:41:39,900 --> 01:41:41,460
+to the end of the trajectory.
+
+2611
+01:41:44,239 --> 01:41:47,240
+The integrand depends on the coordinates,
+
+2612
+01:41:47,540 --> 01:41:48,240
+x,
+
+2613
+01:41:48,520 --> 01:41:50,320
+and the velocities,
+
+2614
+01:41:51,240 --> 01:41:52,140
+x dot,
+
+2615
+01:41:52,140 --> 01:41:53,800
+or q and q dot.
+
+2616
+01:41:55,059 --> 01:41:57,420
+That's the most general version
+
+2617
+01:41:57,420 --> 01:42:00,700
+of the principle of least action,
+
+2618
+01:42:00,900 --> 01:42:03,120
+namely that there exists something,
+
+2619
+01:42:03,360 --> 01:42:04,540
+here's the law of physics,
+
+2620
+01:42:04,820 --> 01:42:07,720
+the law of physics says that for every mechanical system
+
+2621
+01:42:07,720 --> 01:42:10,760
+there exists a quantity called the Lagrangian,
+
+2622
+01:42:11,460 --> 01:42:13,300
+out of which you build the action,
+
+2623
+01:42:15,660 --> 01:42:18,280
+and then you find the path,
+
+2624
+01:42:18,380 --> 01:42:19,180
+or the trajectory,
+
+2625
+01:42:19,440 --> 01:42:21,480
+which minimizes that action.
+
+2626
+01:42:22,779 --> 01:42:24,420
+In simple cases,
+
+2627
+01:42:24,700 --> 01:42:26,540
+in fact in all cases that correspond
+
+2628
+01:42:26,540 --> 01:42:28,980
+to Newtonian physics of one kind or another,
+
+2629
+01:42:29,260 --> 01:42:31,220
+this Lagrangian is always
+
+2630
+01:42:31,220 --> 01:42:33,860
+the difference between the kinetic energy
+
+2631
+01:42:33,860 --> 01:42:34,880
+and the potential energy.
+
+2632
+01:42:35,300 --> 01:42:36,740
+In more general systems,
+
+2633
+01:42:36,980 --> 01:42:39,480
+which don't have a Newtonian analog,
+
+2634
+01:42:39,960 --> 01:42:42,200
+this Lagrangian may well be something
+
+2635
+01:42:42,200 --> 01:42:43,720
+totally different and peculiar,
+
+2636
+01:42:44,160 --> 01:42:46,660
+but it will still depend on q and q dot,
+
+2637
+01:42:47,799 --> 01:42:51,460
+and the principle of least action,
+
+2638
+01:42:51,460 --> 01:42:54,340
+will be more fundamental than any kind of
+
+2639
+01:42:54,340 --> 01:42:55,540
+Newtonian laws of physics.
+
+2640
+01:42:56,040 --> 01:42:57,080
+In particular,
+
+2641
+01:42:58,119 --> 01:43:00,180
+this is a Newtonian rule,
+
+2642
+01:43:00,460 --> 01:43:01,960
+the motion of a particle
+
+2643
+01:43:01,960 --> 01:43:03,460
+in the special theory of relativity
+
+2644
+01:43:03,460 --> 01:43:05,000
+is quite different than this,
+
+2645
+01:43:05,160 --> 01:43:06,740
+but it still has this form.
+
+2646
+01:43:08,140 --> 01:43:08,700
+Okay?
+
+2647
+01:43:09,040 --> 01:43:09,600
+So,
+
+2648
+01:43:10,759 --> 01:43:12,560
+what we're going to have to do next time,
+
+2649
+01:43:12,620 --> 01:43:13,200
+we won't do it tonight,
+
+2650
+01:43:13,440 --> 01:43:15,980
+is learn how to find,
+
+2651
+01:43:16,200 --> 01:43:17,580
+given a Lagrangian,
+
+2652
+01:43:17,760 --> 01:43:19,920
+and given an action like this,
+
+2653
+01:43:19,920 --> 01:43:22,600
+how do we convert the rule
+
+2654
+01:43:22,600 --> 01:43:24,340
+of the principle of least action
+
+2655
+01:43:25,000 --> 01:43:26,620
+into equations of motion
+
+2656
+01:43:26,620 --> 01:43:29,220
+that look like Newtonian equations of motion?
+
+2657
+01:43:29,360 --> 01:43:30,440
+How do we go back and forth
+
+2658
+01:43:31,020 --> 01:43:33,980
+from a Lagrangian to Newton's equations of motion?
+
+2659
+01:43:34,900 --> 01:43:37,000
+And if it's not Newton's equations of motion,
+
+2660
+01:43:37,220 --> 01:43:39,140
+what are the equations of motion
+
+2661
+01:43:39,140 --> 01:43:40,740
+that follow from a given Lagrangian?
+
+2662
+01:43:41,420 --> 01:43:42,580
+Notice that this,
+
+2663
+01:43:42,660 --> 01:43:43,840
+if we knew how to do this,
+
+2664
+01:43:43,920 --> 01:43:45,740
+if we knew how to solve such problems,
+
+2665
+01:43:46,040 --> 01:43:47,100
+we would solve,
+
+2666
+01:43:47,100 --> 01:43:48,020
+among other problems,
+
+2667
+01:43:48,300 --> 01:43:49,440
+by the same rules,
+
+2668
+01:43:49,440 --> 01:43:53,560
+the optical problem of finding the path of least time.
+
+2669
+01:43:55,220 --> 01:43:57,880
+So there's a close analogy between optics
+
+2670
+01:43:58,440 --> 01:44:00,040
+and classical mechanics.
+
+2671
+01:44:00,400 --> 01:44:01,940
+Principle of least action in mechanics,
+
+2672
+01:44:02,240 --> 01:44:03,880
+principle of least time in optics,
+
+2673
+01:44:04,160 --> 01:44:05,320
+but the methods,
+
+2674
+01:44:05,320 --> 01:44:06,260
+the techniques,
+
+2675
+01:44:06,400 --> 01:44:07,540
+are exactly the same.
+
+2676
+01:44:07,820 --> 01:44:09,520
+So the next time we'll work out
+
+2677
+01:44:09,520 --> 01:44:12,200
+what are the equations of motion
+
+2678
+01:44:12,200 --> 01:44:16,020
+which follow from a particular action principle.
+
+2679
+01:44:25,200 --> 01:44:27,840
+The preceding program is copyrighted
+
+2680
+01:44:27,840 --> 01:44:28,820
+by Stanford University.
+
+2681
+01:44:29,260 --> 01:44:31,940
+Please visit us at stanford.edu.
+
