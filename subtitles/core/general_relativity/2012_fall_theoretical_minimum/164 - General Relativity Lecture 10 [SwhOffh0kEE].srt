@@ -1,0 +1,10324 @@
+1
+00:00:04,919 --> 00:00:06,200
+Stanford University.
+
+2
+00:00:09,240 --> 00:00:11,970
+So the questions that were asked to
+
+3
+00:00:11,970 --> 00:00:14,700
+me tonight are more or less by accident.
+
+4
+00:00:14,800 --> 00:00:17,160
+They're exactly the ones that I want to address tonight.
+
+5
+00:00:17,740 --> 00:00:19,620
+Weak gravitational fields,
+
+6
+00:00:19,620 --> 00:00:22,300
+linearity versus non-linearity,
+
+7
+00:00:22,300 --> 00:00:26,260
+and gravitational waves.
+
+8
+00:00:27,679 --> 00:00:28,920
+Let's begin.
+
+9
+00:00:33,040 --> 00:00:35,890
+Working out the equations of
+
+10
+00:00:35,890 --> 00:00:38,740
+general relativity is always unpleasant.
+
+11
+00:00:40,660 --> 00:00:43,320
+And we're not going to do it on the blackboard.
+
+12
+00:00:44,140 --> 00:00:49,420
+They would fill the blackboard even for simple things,
+
+13
+00:00:51,879 --> 00:00:55,520
+and they probably would not be terribly illuminating.
+
+14
+00:00:55,520 --> 00:00:56,240
+So,
+
+15
+00:00:56,260 --> 00:00:58,590
+to learn this subject really how to compute
+
+16
+00:00:58,590 --> 00:01:00,920
+and how to solve its equations and so forth,
+
+17
+00:01:01,020 --> 00:01:01,770
+I think you just have
+
+18
+00:01:01,770 --> 00:01:02,520
+to sit down and do it.
+
+19
+00:01:02,760 --> 00:01:03,660
+On the other hand,
+
+20
+00:01:03,660 --> 00:01:05,459
+the principles are straightforward enough,
+
+21
+00:01:06,080 --> 00:01:08,130
+and it's easy enough to say what
+
+22
+00:01:08,130 --> 00:01:10,180
+you get when you do solve the equations.
+
+23
+00:01:11,419 --> 00:01:13,880
+So that's the way we'll talk about gravity waves,
+
+24
+00:01:14,999 --> 00:01:16,539
+by writing down the equations
+
+25
+00:01:16,539 --> 00:01:18,080
+and then writing down the solutions.
+
+26
+00:01:20,059 --> 00:01:20,539
+Now,
+
+27
+00:01:20,539 --> 00:01:22,599
+we're interested in what could
+
+28
+00:01:22,599 --> 00:01:24,660
+be called weak gravitational waves.
+
+29
+00:01:25,800 --> 00:01:28,660
+Weak gravitational waves means that
+
+30
+00:01:28,660 --> 00:01:31,520
+the amplitudes of the gravitational waves
+
+31
+00:01:31,520 --> 00:01:36,020
+are small enough that you can make approximations
+
+32
+00:01:37,440 --> 00:01:40,390
+such as the amplitude squared
+
+33
+00:01:40,390 --> 00:01:43,340
+of the gravitational field is zero.
+
+34
+00:01:44,280 --> 00:01:45,960
+When a quantity is small,
+
+35
+00:01:45,960 --> 00:01:48,150
+and you're expanding an equation
+
+36
+00:01:48,150 --> 00:01:50,340
+about the smallness of that quantity,
+
+37
+00:01:50,480 --> 00:01:52,100
+the usual rule is to
+
+38
+00:01:52,100 --> 00:01:53,720
+ignore things which are higher order,
+
+39
+00:01:53,720 --> 00:01:54,820
+and you're going to get a greater
+
+40
+00:01:54,820 --> 00:01:55,920
+amount of matter in that small quantity.
+
+41
+00:01:56,560 --> 00:01:57,500
+All right,
+
+42
+00:01:57,500 --> 00:02:00,800
+so we start with an equilibrium.
+
+43
+00:02:01,200 --> 00:02:03,400
+We're talking now about fluctuations
+
+44
+00:02:03,400 --> 00:02:05,600
+or perturbations about an equilibrium situation,
+
+45
+00:02:06,399 --> 00:02:09,360
+and the simplest equilibrium solution of...
+
+46
+00:02:09,360 --> 00:02:11,480
+Let's write Einstein's equations first.
+
+47
+00:02:13,560 --> 00:02:15,060
+Einstein's equations...
+
+48
+00:02:16,020 --> 00:02:18,420
+Let's take the case without any matter.
+
+49
+00:02:18,640 --> 00:02:20,940
+No energy momentum tensor.
+
+50
+00:02:20,940 --> 00:02:23,510
+Then the equations of motion are just
+
+51
+00:02:23,510 --> 00:02:26,080
+r mu nu minus one-half g mu nu.
+
+52
+00:02:27,219 --> 00:02:29,660
+r is equal to zero.
+
+53
+00:02:30,839 --> 00:02:34,340
+Let's call the Einstein tensor g mu nu equals zero.
+
+54
+00:02:35,840 --> 00:02:37,280
+And it can be simplified.
+
+55
+00:02:38,080 --> 00:02:40,460
+If you take the trace of both sides,
+
+56
+00:02:40,700 --> 00:02:44,520
+the r here is the trace of the Ricci tensor.
+
+57
+00:02:44,940 --> 00:02:46,840
+If you take the trace of both sides,
+
+58
+00:02:47,020 --> 00:02:49,600
+you will discover that r,
+
+59
+00:02:49,600 --> 00:02:52,020
+the scalar curvature r,
+
+60
+00:02:52,260 --> 00:02:53,660
+is equal to zero.
+
+61
+00:02:54,040 --> 00:02:55,300
+And once you know that,
+
+62
+00:02:55,300 --> 00:02:57,500
+you can ignore the second term in the equation.
+
+63
+00:02:58,460 --> 00:02:59,840
+The equation is simpler.
+
+64
+00:03:01,040 --> 00:03:02,760
+That doesn't really matter because we're not
+
+65
+00:03:02,760 --> 00:03:04,480
+going to write down the details anyway.
+
+66
+00:03:05,000 --> 00:03:06,980
+But this is the equation of Einstein
+
+67
+00:03:07,560 --> 00:03:10,160
+in a context in which there is
+
+68
+00:03:10,160 --> 00:03:12,760
+no energy momentum tensor on the right-hand side.
+
+69
+00:03:14,020 --> 00:03:14,680
+All right,
+
+70
+00:03:14,680 --> 00:03:15,820
+what's an equilibrium situation?
+
+71
+00:03:16,360 --> 00:03:17,360
+An equilibrium situation,
+
+72
+00:03:17,360 --> 00:03:18,320
+first of all,
+
+73
+00:03:18,320 --> 00:03:18,960
+means a solution
+
+74
+00:03:19,600 --> 00:03:20,460
+that has no time dependence.
+
+75
+00:03:23,880 --> 00:03:24,640
+There's really,
+
+76
+00:03:24,640 --> 00:03:26,700
+and which also doesn't have
+
+77
+00:03:26,700 --> 00:03:28,760
+any matter on the right-hand side.
+
+78
+00:03:28,880 --> 00:03:30,450
+Matter is another word for the
+
+79
+00:03:30,450 --> 00:03:32,020
+energy momentum tensor on the right-hand side.
+
+80
+00:03:32,400 --> 00:03:33,580
+No right-hand side.
+
+81
+00:03:34,860 --> 00:03:37,320
+There's really only one equilibrium situation.
+
+82
+00:03:39,740 --> 00:03:42,540
+The equilibrium situation is just empty space.
+
+83
+00:03:42,900 --> 00:03:44,640
+Empty space is time independent.
+
+84
+00:03:45,360 --> 00:03:45,920
+The,
+
+85
+00:03:45,920 --> 00:03:46,340
+uh,
+
+86
+00:03:47,500 --> 00:03:48,320
+empty space,
+
+87
+00:03:48,320 --> 00:03:48,960
+empty space,
+
+88
+00:03:49,040 --> 00:03:49,780
+by empty space,
+
+89
+00:03:50,060 --> 00:03:52,900
+I mean empty flat space.
+
+90
+00:03:53,560 --> 00:03:54,620
+No curvature,
+
+91
+00:03:54,940 --> 00:03:57,140
+no interesting gravitational field.
+
+92
+00:03:57,540 --> 00:03:58,920
+And in that case,
+
+93
+00:03:58,920 --> 00:03:59,820
+the metric,
+
+94
+00:04:00,920 --> 00:04:02,000
+g mu nu,
+
+95
+00:04:04,019 --> 00:04:04,640
+now,
+
+96
+00:04:06,070 --> 00:04:07,635
+I'm not going to say the
+
+97
+00:04:07,635 --> 00:04:09,200
+metric is equal to such and such.
+
+98
+00:04:09,940 --> 00:04:12,560
+The metric depends on the coordinates you use.
+
+99
+00:04:13,030 --> 00:04:16,399
+If I wrote that the metric of a flat plane
+
+100
+00:04:16,399 --> 00:04:19,300
+is just the Kronecker delta symbol,
+
+101
+00:04:20,099 --> 00:04:21,660
+you would correct me and say,
+
+102
+00:04:21,740 --> 00:04:21,839
+no,
+
+103
+00:04:21,839 --> 00:04:24,159
+the metric of a flat
+
+104
+00:04:24,159 --> 00:04:26,480
+plane is not the Kronecker delta.
+
+105
+00:04:26,780 --> 00:04:30,820
+A possible metric expressing the flatness of space
+
+106
+00:04:30,820 --> 00:04:32,300
+would be the Kronecker delta.
+
+107
+00:04:32,560 --> 00:04:34,620
+But if I used other coordinates,
+
+108
+00:04:34,940 --> 00:04:36,920
+the metric would not be the Kronecker delta.
+
+109
+00:04:37,220 --> 00:04:38,720
+Use curved coordinates,
+
+110
+00:04:38,720 --> 00:04:40,040
+use polar coordinates,
+
+111
+00:04:40,200 --> 00:04:41,700
+use any other kind of coordinates.
+
+112
+00:04:42,160 --> 00:04:43,860
+What's special about flat space
+
+113
+00:04:43,860 --> 00:04:46,380
+is that you can find coordinates
+
+114
+00:04:46,380 --> 00:04:48,800
+in which the metric has a nice simple form.
+
+115
+00:04:49,360 --> 00:04:51,220
+The same is true in general relativity.
+
+116
+00:04:52,320 --> 00:04:55,160
+Flat space-time with no gravitational field,
+
+117
+00:04:55,380 --> 00:04:57,100
+there is a choice of coordinates
+
+118
+00:04:57,100 --> 00:04:59,640
+in which the metric has the simple form
+
+119
+00:05:01,360 --> 00:05:02,660
+of eta mu nu.
+
+120
+00:05:02,960 --> 00:05:05,160
+Let me just remind you what eta mu nu is.
+
+121
+00:05:06,840 --> 00:05:09,440
+Eta mu nu is a matrix.
+
+122
+00:05:13,740 --> 00:05:14,920
+Let's just write the matrix.
+
+123
+00:05:19,360 --> 00:05:21,090
+I think with the notations
+
+124
+00:05:21,090 --> 00:05:22,820
+we've been using in this class,
+
+125
+00:05:24,000 --> 00:05:25,800
+I think it's 1,
+
+126
+00:05:25,800 --> 00:05:27,400
+minus 1,
+
+127
+00:05:27,400 --> 00:05:28,100
+minus 1,
+
+128
+00:05:28,100 --> 00:05:28,840
+minus 1,
+
+129
+00:05:28,840 --> 00:05:29,860
+0,
+
+130
+00:05:29,860 --> 00:05:30,720
+0...
+
+131
+00:05:30,720 --> 00:05:30,900
+No,
+
+132
+00:05:30,900 --> 00:05:31,540
+sorry,
+
+133
+00:05:31,540 --> 00:05:32,200
+that's incorrect.
+
+134
+00:05:35,520 --> 00:05:36,800
+It's 1,
+
+135
+00:05:36,800 --> 00:05:37,620
+0,
+
+136
+00:05:37,620 --> 00:05:38,180
+0,
+
+137
+00:05:38,180 --> 00:05:38,580
+0,
+
+138
+00:05:38,580 --> 00:05:39,720
+0,
+
+139
+00:05:39,720 --> 00:05:40,800
+1...
+
+140
+00:05:41,260 --> 00:05:41,580
+Ah,
+
+141
+00:05:41,580 --> 00:05:43,000
+minus 1.
+
+142
+00:05:50,240 --> 00:05:52,540
+Which row and column corresponds to time?
+
+143
+00:05:54,580 --> 00:05:55,740
+The first one
+
+144
+00:05:56,300 --> 00:05:56,620
+T,
+
+145
+00:05:56,620 --> 00:05:58,240
+x,
+
+146
+00:05:58,240 --> 00:05:58,920
+y,
+
+147
+00:05:58,920 --> 00:05:59,580
+z
+
+148
+00:05:59,580 --> 00:06:04,200
+This is,
+
+149
+00:06:04,200 --> 00:06:05,620
+and so forth
+
+150
+00:06:06,380 --> 00:06:06,820
+Okay,
+
+151
+00:06:06,820 --> 00:06:11,040
+so that's the metric of flat spacetime
+
+152
+00:06:11,040 --> 00:06:11,860
+1,
+
+153
+00:06:11,860 --> 00:06:12,480
+minus 1,
+
+154
+00:06:12,480 --> 00:06:13,460
+and 3 pluses
+
+155
+00:06:15,100 --> 00:06:16,680
+And it's an equilibrium solution
+
+156
+00:06:16,680 --> 00:06:19,880
+It is a solution of the Einstein field equations
+
+157
+00:06:19,880 --> 00:06:22,220
+The Einstein field equations say certain
+
+158
+00:06:22,220 --> 00:06:24,560
+components of curvature are equal to 0
+
+159
+00:06:24,560 --> 00:06:26,160
+This is a geometry,
+
+160
+00:06:26,160 --> 00:06:27,380
+or this is a metric
+
+161
+00:06:27,380 --> 00:06:28,600
+that has no curvature at all
+
+162
+00:06:28,600 --> 00:06:30,580
+And so it is a solution,
+
+163
+00:06:30,580 --> 00:06:31,540
+if you plugged it in
+
+164
+00:06:31,540 --> 00:06:32,500
+you would find it's a solution
+
+165
+00:06:32,500 --> 00:06:34,000
+In fact it would be trivial
+
+166
+00:06:34,620 --> 00:06:35,380
+One step
+
+167
+00:06:36,420 --> 00:06:36,920
+Now,
+
+168
+00:06:36,920 --> 00:06:39,740
+let's think about something which is close to empty space
+
+169
+00:06:40,800 --> 00:06:41,800
+Far away,
+
+170
+00:06:41,800 --> 00:06:43,440
+some complicated thing
+
+171
+00:06:43,460 --> 00:06:44,940
+Something is happening far away,
+
+172
+00:06:44,940 --> 00:06:46,920
+too far away to be interesting to us
+
+173
+00:06:47,300 --> 00:06:50,290
+Or at least to be close
+
+174
+00:06:50,290 --> 00:06:53,280
+enough for us to directly observe
+
+175
+00:06:54,120 --> 00:06:56,220
+There's something going on
+
+176
+00:06:56,220 --> 00:07:00,220
+A binary pulsar is rotating around
+
+177
+00:07:00,220 --> 00:07:03,460
+And doing some complicated emission of gravitational waves
+
+178
+00:07:04,380 --> 00:07:05,080
+Close by,
+
+179
+00:07:05,080 --> 00:07:08,160
+the gravitational field may be very strong
+
+180
+00:07:09,020 --> 00:07:12,640
+Even the gravitational waves might be rather strong
+
+181
+00:07:12,640 --> 00:07:13,440
+But it's not
+
+182
+00:07:13,460 --> 00:07:14,440
+So if you go far enough away
+
+183
+00:07:14,440 --> 00:07:16,720
+The gravitational radiation,
+
+184
+00:07:16,720 --> 00:07:21,360
+the gravitational waves that are produced by this thing
+
+185
+00:07:21,360 --> 00:07:23,960
+Are going to be very weak
+
+186
+00:07:23,960 --> 00:07:25,820
+What does weak mean?
+
+187
+00:07:26,020 --> 00:07:33,900
+Weak means that the true metric can be chosen
+
+188
+00:07:34,219 --> 00:07:34,580
+Again,
+
+189
+00:07:34,580 --> 00:07:35,060
+I emphasize,
+
+190
+00:07:35,060 --> 00:07:36,340
+can be chosen
+
+191
+00:07:36,340 --> 00:07:41,140
+To equal eta mu nu plus something small
+
+192
+00:07:42,159 --> 00:07:44,829
+Small means that its components are much
+
+193
+00:07:44,829 --> 00:07:47,500
+smaller than the ones which appear here
+
+194
+00:07:48,140 --> 00:07:51,460
+And that small thing is usually called h mu nu
+
+195
+00:07:52,980 --> 00:07:55,020
+As far as I know it's called
+
+196
+00:07:55,020 --> 00:07:57,060
+h because h is the letter after g
+
+197
+00:07:57,060 --> 00:07:59,320
+I don't know any other reason for h
+
+198
+00:08:03,020 --> 00:08:04,040
+h mu nu,
+
+199
+00:08:04,040 --> 00:08:06,200
+unlike eta mu nu,
+
+200
+00:08:06,200 --> 00:08:08,800
+is in general a function of position
+
+201
+00:08:08,800 --> 00:08:09,960
+It's also
+
+202
+00:08:09,960 --> 00:08:10,900
+When I say position,
+
+203
+00:08:10,900 --> 00:08:13,700
+I mean position and time
+
+204
+00:08:14,240 --> 00:08:15,880
+It's a function of the coordinates
+
+205
+00:08:15,880 --> 00:08:17,800
+It varies from place to place
+
+206
+00:08:18,540 --> 00:08:20,560
+And it might describe a wave
+
+207
+00:08:26,900 --> 00:08:28,600
+We'll come back to waves in a moment
+
+208
+00:08:28,600 --> 00:08:29,500
+But let's
+
+209
+00:08:29,500 --> 00:08:31,280
+What are we going to do with this?
+
+210
+00:08:32,000 --> 00:08:35,179
+We're going to take this metric
+
+211
+00:08:37,240 --> 00:08:38,960
+Calculate from it r mu nu
+
+212
+00:08:38,960 --> 00:08:40,900
+And set it equal to zero
+
+213
+00:08:40,900 --> 00:08:43,539
+And that's going to give us an equation for h
+
+214
+00:08:45,920 --> 00:08:47,360
+Now the equation that you
+
+215
+00:08:47,360 --> 00:08:48,800
+actually get from h for h
+
+216
+00:08:49,420 --> 00:08:52,160
+It's not big enough to fill the whole blackboard
+
+217
+00:08:52,160 --> 00:08:55,520
+But it's big enough to be quite unpleasant
+
+218
+00:08:56,199 --> 00:08:58,740
+And so I'm just going to be schematic
+
+219
+00:08:59,480 --> 00:09:01,180
+I'm going to show you what goes into it
+
+220
+00:09:02,699 --> 00:09:03,600
+First of all,
+
+221
+00:09:03,600 --> 00:09:04,160
+what is r?
+
+222
+00:09:04,400 --> 00:09:08,940
+r is a combination of components
+
+223
+00:09:08,940 --> 00:09:10,360
+Of the curvature tensor
+
+224
+00:09:10,940 --> 00:09:12,360
+I'm not going to write the curvature tensor
+
+225
+00:09:12,360 --> 00:09:14,020
+I'm just going to remind you what it contains
+
+226
+00:09:15,020 --> 00:09:17,100
+The curvature tensor itself
+
+227
+00:09:17,100 --> 00:09:18,640
+The thing with four indices
+
+228
+00:09:20,140 --> 00:09:22,200
+Contains one term which is
+
+229
+00:09:22,200 --> 00:09:24,260
+a derivative with respect to position
+
+230
+00:09:24,260 --> 00:09:25,420
+With respect to x
+
+231
+00:09:25,420 --> 00:09:27,000
+And I'm not even going to write which x
+
+232
+00:09:27,000 --> 00:09:29,480
+It contains lots of different derivatives
+
+233
+00:09:29,480 --> 00:09:30,960
+Depending on the index structure
+
+234
+00:09:31,780 --> 00:09:33,560
+Derivative of the Christoffel symbol
+
+235
+00:09:34,580 --> 00:09:38,440
+So it contains a first derivative of the Christoffel symbol
+
+236
+00:09:39,400 --> 00:09:40,360
+And secondly,
+
+237
+00:09:40,360 --> 00:09:42,960
+it contains the Christoffel symbol
+
+238
+00:09:43,760 --> 00:09:44,720
+Quadratically squared
+
+239
+00:09:44,720 --> 00:09:47,880
+Or Christoffel symbol times another Christoffel symbol
+
+240
+00:09:48,780 --> 00:09:49,860
+This is really all
+
+241
+00:09:49,860 --> 00:09:52,020
+This is as much detail as we're going to do
+
+242
+00:09:52,020 --> 00:09:54,780
+I could put the indices in here
+
+243
+00:09:54,780 --> 00:09:56,480
+And remind you where the indices go
+
+244
+00:09:56,480 --> 00:09:58,700
+And there are various terms which look like this
+
+245
+00:09:58,700 --> 00:10:00,340
+There are various terms which look like that
+
+246
+00:10:00,760 --> 00:10:01,960
+But this is good enough for us
+
+247
+00:10:03,819 --> 00:10:04,980
+What about gamma?
+
+248
+00:10:06,220 --> 00:10:08,100
+What about the Christoffel symbol?
+
+249
+00:10:08,940 --> 00:10:09,620
+If you remember,
+
+250
+00:10:09,620 --> 00:10:10,600
+that can
+
+251
+00:10:10,600 --> 00:10:10,820
+Well,
+
+252
+00:10:10,820 --> 00:10:11,260
+first of all,
+
+253
+00:10:11,260 --> 00:10:12,740
+it contains a factor of one half
+
+254
+00:10:13,740 --> 00:10:19,240
+It contains the metric tensor with components upstairs
+
+255
+00:10:20,660 --> 00:10:23,240
+The metric tensor with components upstairs
+
+256
+00:10:23,660 --> 00:10:25,760
+Is simply the inverse matrix
+
+257
+00:10:26,900 --> 00:10:29,060
+Of the metric tensor itself
+
+258
+00:10:29,940 --> 00:10:34,480
+It can also be expanded in powers of h
+
+259
+00:10:34,480 --> 00:10:37,360
+The first contribution to it
+
+260
+00:10:37,360 --> 00:10:39,340
+Is just the eta symbol itself
+
+261
+00:10:39,340 --> 00:10:43,420
+So the inverse eta is its own inverse matrix
+
+262
+00:10:44,160 --> 00:10:45,900
+And so it begins with
+
+263
+00:10:45,900 --> 00:10:47,640
+a g to the minus one
+
+264
+00:10:47,640 --> 00:10:49,480
+I'll be more specific in a minute
+
+265
+00:10:49,480 --> 00:10:51,540
+And then it has derivatives of g
+
+266
+00:10:52,480 --> 00:10:55,320
+It has various kinds of derivatives of g
+
+267
+00:10:56,580 --> 00:10:58,000
+Now come back to here
+
+268
+00:11:00,940 --> 00:11:02,260
+G inverse
+
+269
+00:11:03,520 --> 00:11:06,780
+That contains again things like eta
+
+270
+00:11:08,280 --> 00:11:09,860
+Probably minus h
+
+271
+00:11:09,860 --> 00:11:11,920
+But whatever it is,
+
+272
+00:11:11,920 --> 00:11:13,180
+it contains the eta symbol
+
+273
+00:11:13,180 --> 00:11:15,000
+Plus a small correction
+
+274
+00:11:17,100 --> 00:11:19,780
+The metric tensor with upper indices
+
+275
+00:11:20,339 --> 00:11:21,700
+If you only had eta
+
+276
+00:11:21,700 --> 00:11:23,460
+Would basically be the same eta
+
+277
+00:11:24,360 --> 00:11:27,780
+And then h would appear as a correction
+
+278
+00:11:28,640 --> 00:11:29,280
+Alright,
+
+279
+00:11:29,280 --> 00:11:30,860
+so g inverse here
+
+280
+00:11:30,860 --> 00:11:32,880
+This would contain things like
+
+281
+00:11:32,880 --> 00:11:34,520
+This is a wiggly equal sign
+
+282
+00:11:34,520 --> 00:11:35,960
+Which means not equal at all
+
+283
+00:11:37,360 --> 00:11:38,960
+It would contain things like
+
+284
+00:11:38,960 --> 00:11:42,600
+Eta minus a small correction
+
+285
+00:11:42,600 --> 00:11:43,860
+Or plus a small correction
+
+286
+00:11:43,860 --> 00:11:45,160
+That's not important for us
+
+287
+00:11:45,160 --> 00:11:47,660
+But then the derivative of g
+
+288
+00:11:48,900 --> 00:11:50,900
+That only contains h
+
+289
+00:11:50,900 --> 00:11:52,060
+Why?
+
+290
+00:11:52,300 --> 00:11:57,200
+Because the derivative of this metric tensor is just zero
+
+291
+00:11:57,200 --> 00:11:58,920
+All it contains is zeros and ones
+
+292
+00:11:58,920 --> 00:12:01,620
+The derivative of zeros and ones is zero
+
+293
+00:12:02,300 --> 00:12:05,560
+And so in the approximation that we're working in
+
+294
+00:12:05,560 --> 00:12:10,060
+The derivative of g just contains derivatives of h
+
+295
+00:12:11,380 --> 00:12:14,560
+Let's just call it derivative of h
+
+296
+00:12:19,300 --> 00:12:19,900
+Okay,
+
+297
+00:12:19,900 --> 00:12:21,120
+let's look at what we have here
+
+298
+00:12:21,120 --> 00:12:22,360
+This is the Christoffel symbol
+
+299
+00:12:23,420 --> 00:12:27,280
+It contains one term which has one power of h
+
+300
+00:12:29,040 --> 00:12:29,640
+Incidentally,
+
+301
+00:12:29,640 --> 00:12:30,800
+h is small
+
+302
+00:12:30,800 --> 00:12:34,440
+And we'll also assume that its derivative is also small
+
+303
+00:12:34,440 --> 00:12:36,180
+If you have a small number,
+
+304
+00:12:36,180 --> 00:12:36,940
+a small function
+
+305
+00:12:36,940 --> 00:12:38,200
+And you differentiate it
+
+306
+00:12:38,200 --> 00:12:39,640
+It's equally small in general
+
+307
+00:12:39,640 --> 00:12:42,020
+Unless it has very sharp points or something
+
+308
+00:12:42,020 --> 00:12:43,360
+Which we'll assume it doesn't
+
+309
+00:12:43,360 --> 00:12:45,470
+So the derivative of h is
+
+310
+00:12:45,470 --> 00:12:47,580
+also considered to be a small thing
+
+311
+00:12:48,820 --> 00:12:51,880
+Eta times h is once small
+
+312
+00:12:52,700 --> 00:12:55,900
+h times the derivative of h is twice small
+
+313
+00:12:55,900 --> 00:12:58,360
+It's quadratic in the fluctuation
+
+314
+00:12:58,360 --> 00:13:02,060
+Or in the small gravitational field
+
+315
+00:13:02,060 --> 00:13:02,980
+So we ignore it
+
+316
+00:13:04,440 --> 00:13:05,500
+Too small to be important
+
+317
+00:13:06,160 --> 00:13:07,720
+If h is 0.01
+
+318
+00:13:07,720 --> 00:13:10,460
+And derivative of h is 0.01
+
+319
+00:13:11,280 --> 00:13:15,520
+Then h times h is 0.0001
+
+320
+00:13:17,420 --> 00:13:18,020
+Whatever,
+
+321
+00:13:18,020 --> 00:13:18,800
+very small
+
+322
+00:13:19,440 --> 00:13:19,820
+Alright,
+
+323
+00:13:19,820 --> 00:13:20,940
+so we can ignore this
+
+324
+00:13:22,040 --> 00:13:25,380
+And eta times h we'll just call derivative of h
+
+325
+00:13:25,380 --> 00:13:27,400
+Just call it derivative of h
+
+326
+00:13:28,180 --> 00:13:29,960
+So the Christoffel symbol itself
+
+327
+00:13:29,960 --> 00:13:33,540
+Is just in the approximation of small gravity
+
+328
+00:13:33,540 --> 00:13:35,020
+Of weak gravitational radiation
+
+329
+00:13:35,540 --> 00:13:37,580
+The Christoffel symbol itself
+
+330
+00:13:37,580 --> 00:13:39,940
+Is just proportional to some derivative
+
+331
+00:13:39,940 --> 00:13:42,300
+Or some collection of derivatives of h
+
+332
+00:13:42,300 --> 00:13:45,800
+What about the Ricci tensor then?
+
+333
+00:13:46,360 --> 00:13:49,600
+The Ricci tensor will contain
+
+334
+00:13:50,980 --> 00:13:52,120
+Derivative of gamma
+
+335
+00:13:52,120 --> 00:13:55,120
+And that's going to be second derivative of h
+
+336
+00:13:55,120 --> 00:13:59,020
+It's going to contain various kinds of second derivatives
+
+337
+00:13:59,540 --> 00:14:01,720
+Of the gravitational field
+
+338
+00:14:01,720 --> 00:14:02,820
+Incidentally,
+
+339
+00:14:02,820 --> 00:14:03,520
+h is greater than 0.01
+
+340
+00:14:03,540 --> 00:14:04,840
+And that's going to be called the gravitational field
+
+341
+00:14:04,840 --> 00:14:07,080
+Or the field of the gravitational wave
+
+342
+00:14:07,080 --> 00:14:08,860
+And then over here
+
+343
+00:14:08,860 --> 00:14:11,100
+It's going to contain plus
+
+344
+00:14:11,100 --> 00:14:14,340
+Derivative of h times derivative of h
+
+345
+00:14:16,080 --> 00:14:17,260
+Gamma times gamma
+
+346
+00:14:18,040 --> 00:14:20,760
+Is quadratic in derivatives of h
+
+347
+00:14:21,540 --> 00:14:23,140
+So immediately we say
+
+348
+00:14:24,560 --> 00:14:27,040
+This is much smaller than this
+
+349
+00:14:27,040 --> 00:14:27,880
+And we ignore it
+
+350
+00:14:31,480 --> 00:14:32,360
+And we're going to go back to the last part
+
+351
+00:14:32,360 --> 00:14:33,440
+So whatever the devil
+
+352
+00:14:33,440 --> 00:14:36,280
+This Ricci tensor is
+
+353
+00:14:36,719 --> 00:14:39,840
+It's composed out of simple second derivatives
+
+354
+00:14:39,840 --> 00:14:41,520
+Of the metric tensor
+
+355
+00:14:41,520 --> 00:14:44,180
+From that we can conclude
+
+356
+00:14:44,180 --> 00:14:46,380
+That Einstein's equations have
+
+357
+00:14:46,380 --> 00:14:49,680
+A relatively simple form
+
+358
+00:14:49,680 --> 00:14:51,720
+There's still plenty of indices around
+
+359
+00:14:51,720 --> 00:14:54,180
+And the number of different terms
+
+360
+00:14:54,800 --> 00:14:56,460
+Involving second derivatives of h
+
+361
+00:14:56,460 --> 00:14:57,120
+Are significant
+
+362
+00:14:57,720 --> 00:14:58,660
+It's not a
+
+363
+00:14:59,380 --> 00:15:01,140
+It's complicated enough
+
+364
+00:15:01,140 --> 00:15:02,640
+I don't want to write it down on the blackboard
+
+365
+00:15:03,420 --> 00:15:06,720
+But it is basically built out of second derivatives
+
+366
+00:15:06,720 --> 00:15:08,780
+Second derivatives with respect to position
+
+367
+00:15:08,780 --> 00:15:11,000
+And second derivatives with respect to time
+
+368
+00:15:11,000 --> 00:15:13,140
+And maybe even some terms
+
+369
+00:15:13,140 --> 00:15:15,220
+Which have a derivative with respect to position
+
+370
+00:15:15,220 --> 00:15:17,220
+And a derivative with respect to time
+
+371
+00:15:18,380 --> 00:15:19,460
+And furthermore
+
+372
+00:15:19,460 --> 00:15:22,000
+There are several components of it
+
+373
+00:15:22,000 --> 00:15:24,720
+It's not just how many components of it
+
+374
+00:15:24,720 --> 00:15:25,280
+Well,
+
+375
+00:15:25,280 --> 00:15:26,260
+the Ricci tensor
+
+376
+00:15:26,460 --> 00:15:27,400
+Has a mu and a nu
+
+377
+00:15:27,400 --> 00:15:29,080
+So it has two components
+
+378
+00:15:29,080 --> 00:15:31,280
+What comes out has two components
+
+379
+00:15:31,280 --> 00:15:32,380
+But the whole works
+
+380
+00:15:32,380 --> 00:15:33,240
+Whatever it is
+
+381
+00:15:33,240 --> 00:15:35,320
+Is composed of second derivatives of h
+
+382
+00:15:37,220 --> 00:15:37,780
+Okay,
+
+383
+00:15:37,780 --> 00:15:38,140
+so
+
+384
+00:15:38,140 --> 00:15:40,940
+Our equation of motion is some kind of
+
+385
+00:15:43,460 --> 00:15:44,860
+Equation that looks like this
+
+386
+00:15:47,880 --> 00:15:49,180
+Equations of that form
+
+387
+00:15:49,180 --> 00:15:51,160
+Especially in relativity
+
+388
+00:15:51,160 --> 00:15:53,280
+Are usually wave equations
+
+389
+00:15:54,120 --> 00:15:55,380
+Just to remind you
+
+390
+00:15:55,380 --> 00:15:56,100
+What a wave equation
+
+391
+00:15:56,100 --> 00:15:58,820
+For an ordinary wave looks like
+
+392
+00:15:59,380 --> 00:16:00,580
+Let's say a wave
+
+393
+00:16:00,580 --> 00:16:01,880
+Moving down
+
+394
+00:16:01,880 --> 00:16:03,840
+The z-axis
+
+395
+00:16:07,020 --> 00:16:09,440
+A wave moving down the z-axis
+
+396
+00:16:09,440 --> 00:16:12,060
+Also satisfies an equation that looks like this
+
+397
+00:16:12,060 --> 00:16:13,220
+Let's say the wave field
+
+398
+00:16:13,220 --> 00:16:14,140
+Let's call it phi
+
+399
+00:16:14,940 --> 00:16:16,340
+The wave field phi
+
+400
+00:16:16,340 --> 00:16:18,780
+Will satisfy an equation like
+
+401
+00:16:18,780 --> 00:16:21,320
+d second phi by dt squared
+
+402
+00:16:22,440 --> 00:16:23,500
+Is equal
+
+403
+00:16:23,500 --> 00:16:25,240
+To d second phi
+
+404
+00:16:25,240 --> 00:16:26,800
+By dz squared
+
+405
+00:16:26,800 --> 00:16:28,200
+This is the simplest wave equation
+
+406
+00:16:28,200 --> 00:16:29,180
+That you can imagine
+
+407
+00:16:29,960 --> 00:16:31,800
+And the solution to it
+
+408
+00:16:31,800 --> 00:16:32,480
+Are waves
+
+409
+00:16:32,480 --> 00:16:34,680
+Which move either to the right
+
+410
+00:16:34,680 --> 00:16:35,520
+Or to the left
+
+411
+00:16:36,940 --> 00:16:38,180
+You can add waves
+
+412
+00:16:38,180 --> 00:16:40,040
+Which go to the right and the left
+
+413
+00:16:40,040 --> 00:16:41,540
+It's still a solution
+
+414
+00:16:41,540 --> 00:16:42,660
+So you can take a wave
+
+415
+00:16:42,660 --> 00:16:43,480
+Which looks like this
+
+416
+00:16:43,480 --> 00:16:45,120
+Add it to a wave
+
+417
+00:16:45,120 --> 00:16:46,000
+Moving to the left
+
+418
+00:16:46,000 --> 00:16:47,880
+The sum is still a solution
+
+419
+00:16:47,880 --> 00:16:49,220
+Because the equation is linear
+
+420
+00:16:51,120 --> 00:16:51,640
+Okay,
+
+421
+00:16:51,640 --> 00:16:51,940
+so
+
+422
+00:16:51,940 --> 00:16:53,240
+This is
+
+423
+00:16:53,240 --> 00:16:54,040
+Or we can
+
+424
+00:16:54,040 --> 00:16:54,980
+Let's write it this way
+
+425
+00:16:54,980 --> 00:16:56,580
+This minus this is equal to zero
+
+426
+00:16:57,780 --> 00:17:00,140
+If we had more directions of space
+
+427
+00:17:01,040 --> 00:17:02,440
+The structure of the equation
+
+428
+00:17:02,440 --> 00:17:03,840
+Would be a little more complicated
+
+429
+00:17:03,840 --> 00:17:05,579
+Instead of just derivative of phi
+
+430
+00:17:05,579 --> 00:17:06,480
+With respect to z
+
+431
+00:17:06,480 --> 00:17:07,599
+We would also have
+
+432
+00:17:10,159 --> 00:17:11,900
+We would have a sum of terms
+
+433
+00:17:11,900 --> 00:17:14,500
+Plus second derivative of phi
+
+434
+00:17:14,500 --> 00:17:15,819
+With respect to x squared
+
+435
+00:17:18,159 --> 00:17:20,000
+Plus second derivative of phi
+
+436
+00:17:20,000 --> 00:17:21,680
+With respect to y squared
+
+437
+00:17:23,839 --> 00:17:24,579
+Equals zero
+
+438
+00:17:28,660 --> 00:17:30,680
+But it's evident that there's a
+
+439
+00:17:30,970 --> 00:17:33,220
+A family similarity
+
+440
+00:17:33,860 --> 00:17:35,240
+Between the kind of equation
+
+441
+00:17:35,240 --> 00:17:36,120
+Which occurs here
+
+442
+00:17:36,120 --> 00:17:36,960
+And the kind of equation
+
+443
+00:17:36,960 --> 00:17:37,840
+Which occurs here
+
+444
+00:17:38,800 --> 00:17:39,660
+In fact
+
+445
+00:17:40,130 --> 00:17:42,400
+By clever manipulation
+
+446
+00:17:43,300 --> 00:17:45,120
+You can make these equations
+
+447
+00:17:45,120 --> 00:17:47,760
+This is not just one equation incidentally
+
+448
+00:17:47,760 --> 00:17:50,760
+There's an equation for each mu and nu
+
+449
+00:17:52,300 --> 00:17:54,080
+Let's put a bracket around here
+
+450
+00:17:54,080 --> 00:17:55,140
+And just remind ourselves
+
+451
+00:17:55,140 --> 00:17:56,860
+That there are
+
+452
+00:17:56,860 --> 00:17:58,360
+Four times four
+
+453
+00:17:58,360 --> 00:18:00,060
+Sixteen components
+
+454
+00:18:00,780 --> 00:18:02,020
+Of r mu nu
+
+455
+00:18:02,020 --> 00:18:03,320
+Now they're not all independent
+
+456
+00:18:04,280 --> 00:18:07,300
+And it's really quite a bit simpler than that
+
+457
+00:18:07,300 --> 00:18:09,180
+But still in principle
+
+458
+00:18:09,180 --> 00:18:10,540
+There are sixteen components
+
+459
+00:18:10,540 --> 00:18:11,520
+Sixteen equations
+
+460
+00:18:11,520 --> 00:18:13,100
+In that respect
+
+461
+00:18:13,100 --> 00:18:15,280
+It's somewhat similar to Maxwell's equations
+
+462
+00:18:16,140 --> 00:18:16,960
+Maxwell's equations
+
+463
+00:18:16,960 --> 00:18:19,080
+Have the form of wave equations
+
+464
+00:18:19,080 --> 00:18:20,200
+For example
+
+465
+00:18:20,200 --> 00:18:20,740
+For the electric field
+
+466
+00:18:20,740 --> 00:18:21,740
+For electric and magnetic field
+
+467
+00:18:21,740 --> 00:18:23,820
+But there are several components
+
+468
+00:18:23,820 --> 00:18:26,040
+There are three components of electric field
+
+469
+00:18:26,040 --> 00:18:27,940
+Three components of magnetic field
+
+470
+00:18:28,680 --> 00:18:30,240
+Sounds like there's only six equations
+
+471
+00:18:30,240 --> 00:18:32,160
+But in fact there are eight equations
+
+472
+00:18:32,740 --> 00:18:33,720
+Maxwell's equations
+
+473
+00:18:34,740 --> 00:18:35,420
+And
+
+474
+00:18:35,420 --> 00:18:37,900
+This is the same sort of thing
+
+475
+00:18:38,480 --> 00:18:39,340
+Several equations
+
+476
+00:18:40,540 --> 00:18:41,800
+But all of similar
+
+477
+00:18:43,760 --> 00:18:44,900
+Similar form
+
+478
+00:18:44,900 --> 00:18:45,680
+Any questions?
+
+479
+00:18:46,020 --> 00:18:46,740
+One question
+
+480
+00:18:46,740 --> 00:18:48,480
+Doesn't that derivative
+
+481
+00:18:48,480 --> 00:18:49,600
+Put two instances
+
+482
+00:18:49,600 --> 00:18:51,280
+Doesn't it actually have four indices?
+
+483
+00:18:51,380 --> 00:18:52,100
+Doesn't it have what?
+
+484
+00:18:52,340 --> 00:18:53,320
+Four indices
+
+485
+00:18:53,320 --> 00:18:53,920
+Yeah
+
+486
+00:18:54,440 --> 00:18:56,020
+Two go with the derivative
+
+487
+00:18:56,020 --> 00:18:57,140
+And two go with the age
+
+488
+00:18:58,080 --> 00:18:58,640
+Yeah,
+
+489
+00:18:58,640 --> 00:18:59,000
+yeah
+
+490
+00:18:59,000 --> 00:19:00,680
+But they were contracted in many ways
+
+491
+00:19:00,680 --> 00:19:01,600
+Remember
+
+492
+00:19:01,600 --> 00:19:01,880
+Yeah,
+
+493
+00:19:01,880 --> 00:19:03,020
+that's correct
+
+494
+00:19:03,020 --> 00:19:04,820
+But remember where r mu nu came from
+
+495
+00:19:04,820 --> 00:19:06,370
+It came from a thing
+
+496
+00:19:06,370 --> 00:19:07,920
+with r mu nu sigma tau
+
+497
+00:19:07,920 --> 00:19:10,620
+Or upstairs or downstairs indices
+
+498
+00:19:10,620 --> 00:19:12,920
+And then we contracted them
+
+499
+00:19:15,420 --> 00:19:17,320
+Put a nu upstairs here
+
+500
+00:19:18,180 --> 00:19:19,300
+So that
+
+501
+00:19:19,300 --> 00:19:21,480
+That nu disappeared as an index
+
+502
+00:19:21,480 --> 00:19:23,480
+And we just got the Ricci tensor
+
+503
+00:19:24,160 --> 00:19:25,060
+So yes
+
+504
+00:19:25,060 --> 00:19:27,240
+With four derivatives
+
+505
+00:19:27,240 --> 00:19:27,680
+Sorry,
+
+506
+00:19:27,680 --> 00:19:28,520
+with two derivatives
+
+507
+00:19:29,760 --> 00:19:31,720
+And two components to h
+
+508
+00:19:31,720 --> 00:19:33,160
+We certainly can make
+
+509
+00:19:37,300 --> 00:19:38,540
+How many?
+
+510
+00:19:38,680 --> 00:19:39,160
+Whatever,
+
+511
+00:19:39,160 --> 00:19:39,800
+whatever number
+
+512
+00:19:39,800 --> 00:19:43,700
+We can make a number of different combinations
+
+513
+00:19:44,400 --> 00:19:46,220
+Much more than just two indices
+
+514
+00:19:46,220 --> 00:19:47,300
+But
+
+515
+00:19:47,300 --> 00:19:49,540
+The combination that we're interested in
+
+516
+00:19:49,540 --> 00:19:51,040
+Is contracted in such a way
+
+517
+00:19:51,040 --> 00:19:52,100
+That there's only two indices
+
+518
+00:19:52,100 --> 00:19:53,780
+And only two equations left over
+
+519
+00:19:55,260 --> 00:19:56,080
+Excuse me
+
+520
+00:19:56,080 --> 00:19:56,300
+Yeah
+
+521
+00:19:56,300 --> 00:19:57,740
+On that contraction
+
+522
+00:19:57,740 --> 00:20:00,120
+When you have the index upstairs
+
+523
+00:20:00,120 --> 00:20:02,140
+Doesn't part of the contraction involve
+
+524
+00:20:02,140 --> 00:20:04,640
+Introducing the metric again or not?
+
+525
+00:20:04,700 --> 00:20:05,160
+Yes it does
+
+526
+00:20:05,160 --> 00:20:05,780
+Good
+
+527
+00:20:06,500 --> 00:20:07,100
+Right
+
+528
+00:20:07,100 --> 00:20:08,080
+So part of
+
+529
+00:20:08,080 --> 00:20:10,020
+Part of contracting
+
+530
+00:20:11,260 --> 00:20:13,240
+Involves introducing the metric again
+
+531
+00:20:13,940 --> 00:20:14,540
+But
+
+532
+00:20:14,540 --> 00:20:16,160
+Again the same thing is true
+
+533
+00:20:16,160 --> 00:20:17,280
+The metric is the same thing
+
+534
+00:20:17,280 --> 00:20:20,720
+The metric is eta plus h
+
+535
+00:20:22,340 --> 00:20:24,460
+R is composed out of derivatives
+
+536
+00:20:25,120 --> 00:20:26,880
+So it already is small
+
+537
+00:20:28,320 --> 00:20:29,800
+It already is small
+
+538
+00:20:30,560 --> 00:20:33,000
+And if you multiply it by another small number
+
+539
+00:20:33,000 --> 00:20:34,080
+It's doubly small
+
+540
+00:20:34,080 --> 00:20:35,280
+I think that's what you're asking
+
+541
+00:20:35,280 --> 00:20:35,960
+Well yeah but
+
+542
+00:20:35,960 --> 00:20:36,760
+But then you'll get
+
+543
+00:20:36,760 --> 00:20:37,960
+Won't you get terms of the form
+
+544
+00:20:37,960 --> 00:20:40,580
+H times the second derivative of h?
+
+545
+00:20:40,800 --> 00:20:41,280
+Yes
+
+546
+00:20:41,280 --> 00:20:43,240
+But they're counted as infinitely small
+
+547
+00:20:43,940 --> 00:20:45,100
+Okay so they're small
+
+548
+00:20:45,100 --> 00:20:45,460
+And then
+
+549
+00:20:45,460 --> 00:20:46,340
+Yes
+
+550
+00:20:46,340 --> 00:20:47,760
+Anything that involves
+
+551
+00:20:48,320 --> 00:20:50,620
+An h multiplied by another h
+
+552
+00:20:50,620 --> 00:20:51,760
+Or a derivative of h
+
+553
+00:20:51,760 --> 00:20:53,220
+Times another derivative of h
+
+554
+00:20:53,220 --> 00:20:54,920
+Or an h times a derivative of h
+
+555
+00:20:54,920 --> 00:20:57,140
+Is dropped in this approximation
+
+556
+00:20:57,140 --> 00:20:58,120
+This is an approximation
+
+557
+00:20:59,060 --> 00:21:01,020
+But it's a well defined approximation
+
+558
+00:21:01,020 --> 00:21:04,320
+In that it is the
+
+559
+00:21:04,320 --> 00:21:06,620
+Well technically it's the linearization
+
+560
+00:21:07,040 --> 00:21:08,280
+Of Einstein's equations
+
+561
+00:21:09,120 --> 00:21:09,980
+Which means
+
+562
+00:21:09,980 --> 00:21:11,040
+Which simply means
+
+563
+00:21:11,040 --> 00:21:13,180
+You throw away everything of higher power
+
+564
+00:21:13,180 --> 00:21:13,500
+Yeah
+
+565
+00:21:14,000 --> 00:21:14,220
+Okay
+
+566
+00:21:14,220 --> 00:21:14,940
+So
+
+567
+00:21:16,699 --> 00:21:18,320
+But it is a good approximation
+
+568
+00:21:18,320 --> 00:21:20,440
+When the gravitational radiation
+
+569
+00:21:20,440 --> 00:21:22,900
+Or gravitational wave is weak
+
+570
+00:21:24,139 --> 00:21:26,760
+Okay so we have equations of this form
+
+571
+00:21:26,760 --> 00:21:28,820
+Which we're not going to specifically write down
+
+572
+00:21:28,820 --> 00:21:29,540
+They're kind of messy
+
+573
+00:21:30,340 --> 00:21:33,640
+But before we discuss them
+
+574
+00:21:34,780 --> 00:21:36,880
+Well before we discuss the solutions
+
+575
+00:21:37,460 --> 00:21:38,680
+You might ask yourself
+
+576
+00:21:38,680 --> 00:21:40,540
+Well I originally told you
+
+577
+00:21:42,040 --> 00:21:42,700
+That
+
+578
+00:21:45,240 --> 00:21:45,840
+That
+
+579
+00:21:45,840 --> 00:21:48,200
+That it's not that the metric of flat space
+
+580
+00:21:48,200 --> 00:21:50,860
+Is equal to eta mu nu
+
+581
+00:21:50,860 --> 00:21:52,900
+It's that it can be chosen
+
+582
+00:21:52,900 --> 00:21:54,740
+To be equal to eta mu nu
+
+583
+00:21:56,260 --> 00:21:57,200
+That means
+
+584
+00:21:57,200 --> 00:21:58,480
+That there are other ways
+
+585
+00:21:58,480 --> 00:21:59,960
+To represent flat space
+
+586
+00:21:59,960 --> 00:22:02,300
+Make a coordinate transformation
+
+587
+00:22:03,480 --> 00:22:05,080
+Make a coordinate transformation
+
+588
+00:22:05,080 --> 00:22:06,200
+On eta mu nu
+
+589
+00:22:06,200 --> 00:22:07,160
+And the metric changes
+
+590
+00:22:07,160 --> 00:22:09,120
+But it's still exactly the same
+
+591
+00:22:09,120 --> 00:22:12,080
+Exactly the same solution
+
+592
+00:22:12,080 --> 00:22:14,560
+And so what that means
+
+593
+00:22:14,560 --> 00:22:16,960
+Is that there must be solutions
+
+594
+00:22:16,960 --> 00:22:18,300
+Of these equations
+
+595
+00:22:19,140 --> 00:22:21,040
+Which look like they have
+
+596
+00:22:21,040 --> 00:22:22,760
+Which look like they're non-trivial
+
+597
+00:22:22,760 --> 00:22:24,940
+But really are just
+
+598
+00:22:24,940 --> 00:22:27,080
+That all they really represent
+
+599
+00:22:27,080 --> 00:22:28,800
+Is flat space
+
+600
+00:22:28,800 --> 00:22:31,460
+But in coordinates
+
+601
+00:22:31,460 --> 00:22:33,320
+Where the coordinates
+
+602
+00:22:33,320 --> 00:22:34,920
+Have little ripples in them
+
+603
+00:22:34,920 --> 00:22:36,500
+In other words
+
+604
+00:22:36,500 --> 00:22:38,240
+Supposing I
+
+605
+00:22:39,360 --> 00:22:41,340
+Take the flat blackboard
+
+606
+00:22:41,340 --> 00:22:42,060
+And I take the blackboard
+
+607
+00:22:42,080 --> 00:22:44,260
+I maintain that the flat blackboard
+
+608
+00:22:45,540 --> 00:22:48,280
+Is a solution of Einstein's equations
+
+609
+00:22:48,280 --> 00:22:49,480
+Well not really
+
+610
+00:22:49,480 --> 00:22:50,260
+Well it is yes
+
+611
+00:22:50,260 --> 00:22:52,700
+But not in the sense I mean here
+
+612
+00:22:53,460 --> 00:22:55,340
+It is a flat space
+
+613
+00:22:55,980 --> 00:22:56,500
+Okay
+
+614
+00:22:57,100 --> 00:23:01,300
+It can be represented by a metric delta m n
+
+615
+00:23:01,300 --> 00:23:01,880
+Let's say
+
+616
+00:23:02,780 --> 00:23:04,540
+M and n stand for x and y
+
+617
+00:23:05,100 --> 00:23:06,140
+On the other hand
+
+618
+00:23:06,140 --> 00:23:07,460
+There's nothing to prevent me
+
+619
+00:23:07,980 --> 00:23:08,880
+From introducing
+
+620
+00:23:11,420 --> 00:23:11,940
+Coordinates
+
+621
+00:23:12,080 --> 00:23:14,060
+With little wiggles in them
+
+622
+00:23:14,060 --> 00:23:15,700
+Well we could start with coordinates
+
+623
+00:23:15,700 --> 00:23:17,560
+Let's say we start with coordinates
+
+624
+00:23:19,360 --> 00:23:21,440
+Which are the good Cartesian coordinates
+
+625
+00:23:26,120 --> 00:23:27,200
+Let's call them
+
+626
+00:23:27,950 --> 00:23:28,260
+X
+
+627
+00:23:29,980 --> 00:23:31,460
+Standing for x and y
+
+628
+00:23:31,460 --> 00:23:33,440
+Yeah let's call them x
+
+629
+00:23:34,080 --> 00:23:34,440
+Uh
+
+630
+00:23:35,760 --> 00:23:37,160
+X and y
+
+631
+00:23:37,990 --> 00:23:39,660
+And then we can introduce
+
+632
+00:23:39,660 --> 00:23:40,580
+New coordinates
+
+633
+00:23:40,580 --> 00:23:42,900
+X prime and y prime
+
+634
+00:23:42,900 --> 00:23:44,500
+Where x prime
+
+635
+00:23:44,500 --> 00:23:45,680
+Is just x
+
+636
+00:23:46,580 --> 00:23:48,120
+Plus a small
+
+637
+00:23:50,340 --> 00:23:51,140
+Change
+
+638
+00:23:51,140 --> 00:23:53,380
+We could call that plus
+
+639
+00:23:54,600 --> 00:23:57,380
+F sub x of x and y
+
+640
+00:23:58,840 --> 00:24:00,560
+It's a coordinate change
+
+641
+00:24:00,560 --> 00:24:02,360
+A coordinate change
+
+642
+00:24:02,360 --> 00:24:03,560
+Is x prime
+
+643
+00:24:03,560 --> 00:24:04,860
+Is some function
+
+644
+00:24:04,860 --> 00:24:06,560
+Of x and y
+
+645
+00:24:06,560 --> 00:24:08,080
+And y prime
+
+646
+00:24:08,080 --> 00:24:09,280
+Is some other function
+
+647
+00:24:09,280 --> 00:24:10,740
+Of x and y
+
+648
+00:24:11,120 --> 00:24:12,120
+That's a coordinate change
+
+649
+00:24:13,020 --> 00:24:14,360
+Here the coordinate change
+
+650
+00:24:14,360 --> 00:24:17,260
+Is taken to be almost no coordinate change at all
+
+651
+00:24:17,260 --> 00:24:20,360
+Plus a small little correction
+
+652
+00:24:21,780 --> 00:24:22,980
+Same thing for y
+
+653
+00:24:22,980 --> 00:24:24,900
+Y prime is equal to y
+
+654
+00:24:25,580 --> 00:24:26,140
+Plus
+
+655
+00:24:27,120 --> 00:24:28,020
+Let's call it
+
+656
+00:24:28,020 --> 00:24:29,200
+F sub y
+
+657
+00:24:31,960 --> 00:24:33,420
+Of x and y
+
+658
+00:24:35,920 --> 00:24:38,160
+I have not changed the space in any way
+
+659
+00:24:38,160 --> 00:24:38,980
+All I've done
+
+660
+00:24:38,980 --> 00:24:40,480
+Is change coordinates
+
+661
+00:24:42,860 --> 00:24:44,980
+And perhaps put some little wiggles
+
+662
+00:24:44,980 --> 00:24:47,360
+If F has some wiggles in it
+
+663
+00:24:47,360 --> 00:24:50,480
+Then the new coordinate axes might have
+
+664
+00:24:50,480 --> 00:24:52,300
+The new coordinate lines might have
+
+665
+00:24:52,300 --> 00:24:53,340
+Some little wiggles in them
+
+666
+00:24:56,560 --> 00:24:57,880
+And now the metric
+
+667
+00:24:57,880 --> 00:24:59,520
+If I rewrite the metric
+
+668
+00:25:00,160 --> 00:25:01,420
+For the prime component
+
+669
+00:25:01,420 --> 00:25:02,360
+So let's say
+
+670
+00:25:03,219 --> 00:25:03,860
+Uh
+
+671
+00:25:05,740 --> 00:25:07,780
+Let's take the case
+
+672
+00:25:08,160 --> 00:25:09,420
+Let's assume the metric
+
+673
+00:25:09,420 --> 00:25:11,080
+In the primed coordinates
+
+674
+00:25:11,820 --> 00:25:12,520
+Is just
+
+675
+00:25:13,880 --> 00:25:15,660
+The x prime squared
+
+676
+00:25:15,660 --> 00:25:17,640
+Plus the y prime squared
+
+677
+00:25:19,360 --> 00:25:20,720
+I'm working backward
+
+678
+00:25:20,720 --> 00:25:21,500
+I'm supposing
+
+679
+00:25:21,500 --> 00:25:23,060
+That the primed coordinates
+
+680
+00:25:23,060 --> 00:25:25,140
+Are the nice coordinates
+
+681
+00:25:25,140 --> 00:25:26,660
+The nice Cartesian coordinates
+
+682
+00:25:26,660 --> 00:25:29,000
+And the x and y coordinates
+
+683
+00:25:29,000 --> 00:25:30,140
+Are the um
+
+684
+00:25:30,140 --> 00:25:32,760
+The slightly curved ones
+
+685
+00:25:32,760 --> 00:25:34,700
+Alright what is the metric
+
+686
+00:25:34,700 --> 00:25:35,400
+The metric
+
+687
+00:25:35,400 --> 00:25:36,980
+This is just a blackboard now
+
+688
+00:25:36,980 --> 00:25:37,960
+We're not doing space time
+
+689
+00:25:37,960 --> 00:25:38,800
+Just a blackboard
+
+690
+00:25:38,800 --> 00:25:41,000
+The metric of the blackboard
+
+691
+00:25:42,020 --> 00:25:43,460
+Is the x prime squared
+
+692
+00:25:43,460 --> 00:25:44,740
+Plus the y prime squared
+
+693
+00:25:44,740 --> 00:25:46,760
+Let's work it out for fun
+
+694
+00:25:46,760 --> 00:25:48,000
+In x and y
+
+695
+00:25:48,840 --> 00:25:50,900
+Okay so what is the x prime
+
+696
+00:25:50,900 --> 00:25:52,680
+We work out what the x prime is
+
+697
+00:25:52,680 --> 00:25:54,440
+The x prime comma
+
+698
+00:25:54,440 --> 00:25:55,460
+The x prime
+
+699
+00:25:56,640 --> 00:25:58,540
+Is equal to the x
+
+700
+00:25:59,820 --> 00:26:00,380
+Plus
+
+701
+00:26:00,960 --> 00:26:02,780
+The derivative of
+
+702
+00:26:02,780 --> 00:26:03,940
+F sub x
+
+703
+00:26:04,680 --> 00:26:06,540
+With respect to let's call it
+
+704
+00:26:06,980 --> 00:26:08,720
+X sub x m
+
+705
+00:26:08,720 --> 00:26:10,860
+M could be either x or y
+
+706
+00:26:10,860 --> 00:26:12,480
+Times dx m
+
+707
+00:26:14,980 --> 00:26:15,580
+And
+
+708
+00:26:17,080 --> 00:26:18,280
+Likewise for
+
+709
+00:26:18,960 --> 00:26:19,260
+Y
+
+710
+00:26:20,140 --> 00:26:22,520
+We figure out what dy prime is
+
+711
+00:26:24,340 --> 00:26:27,200
+That's dy plus a small correction
+
+712
+00:26:28,720 --> 00:26:30,020
+And you plug it into here
+
+713
+00:26:30,980 --> 00:26:32,440
+And what do you find out
+
+714
+00:26:32,440 --> 00:26:34,760
+You find out that the x prime squared
+
+715
+00:26:34,760 --> 00:26:36,660
+Plus dy prime squared is not
+
+716
+00:26:36,980 --> 00:26:38,360
+dx squared plus dy squared
+
+717
+00:26:38,360 --> 00:26:41,140
+It contains dx squared plus dy squared
+
+718
+00:26:41,140 --> 00:26:42,920
+But also contains
+
+719
+00:26:42,920 --> 00:26:44,900
+Other cross terms
+
+720
+00:26:44,900 --> 00:26:46,700
+dx times this
+
+721
+00:26:46,700 --> 00:26:48,240
+And dy times that
+
+722
+00:26:48,240 --> 00:26:49,360
+And if you work it out
+
+723
+00:26:49,360 --> 00:26:52,100
+What you find out is that this is equal to
+
+724
+00:26:52,100 --> 00:26:52,940
+dx dy
+
+725
+00:26:53,780 --> 00:26:55,880
+Sorry dx squared plus dy squared
+
+726
+00:27:03,940 --> 00:27:06,340
+Now I am assuming that f is small
+
+727
+00:27:07,860 --> 00:27:09,840
+I'm going to assume that f is small
+
+728
+00:27:09,840 --> 00:27:13,040
+And that means when I square dx prime squared
+
+729
+00:27:13,040 --> 00:27:14,180
+I can drop
+
+730
+00:27:14,180 --> 00:27:16,139
+The f dx squared
+
+731
+00:27:16,920 --> 00:27:18,080
+Likewise for y
+
+732
+00:27:18,080 --> 00:27:20,540
+So what I'm going to get is a correction
+
+733
+00:27:20,540 --> 00:27:21,960
+And the correction
+
+734
+00:27:21,960 --> 00:27:23,720
+Can be called h
+
+735
+00:27:26,499 --> 00:27:28,720
+Mn dxm dxn
+
+736
+00:27:28,720 --> 00:27:28,780
+And that's
+
+737
+00:27:28,780 --> 00:27:29,640
+And that's
+
+738
+00:27:29,640 --> 00:27:30,440
+h
+
+739
+00:27:35,120 --> 00:27:35,800
+Mn dxm dxn
+
+740
+00:27:35,800 --> 00:27:36,480
+In other words
+
+741
+00:27:36,480 --> 00:27:38,160
+Just by squaring out
+
+742
+00:27:38,160 --> 00:27:40,320
+The x prime squared and dy prime squared
+
+743
+00:27:47,000 --> 00:27:47,920
+Substituting in
+
+744
+00:27:49,100 --> 00:27:51,380
+You'll discover that there's a small correction
+
+745
+00:27:53,720 --> 00:27:55,640
+Now does a small correction to the metric tensor
+
+746
+00:27:55,640 --> 00:27:58,240
+Mean that the geometry of the blackboard
+
+747
+00:27:58,240 --> 00:27:58,740
+Has changed?
+
+748
+00:27:59,080 --> 00:27:59,580
+No,
+
+749
+00:27:59,580 --> 00:28:01,140
+it just means that the
+
+750
+00:28:01,720 --> 00:28:03,040
+That the
+
+751
+00:28:04,060 --> 00:28:05,660
+That the coordinates
+
+752
+00:28:05,660 --> 00:28:07,020
+That I've used
+
+753
+00:28:07,020 --> 00:28:08,320
+Have wiggles in them
+
+754
+00:28:08,320 --> 00:28:09,960
+You can work out
+
+755
+00:28:09,960 --> 00:28:11,540
+It's nice to work out
+
+756
+00:28:11,540 --> 00:28:12,460
+This is a little exercise
+
+757
+00:28:12,460 --> 00:28:15,760
+Work out what the correction in the metric is
+
+758
+00:28:15,760 --> 00:28:19,020
+Dropping anything which is quadratic in f
+
+759
+00:28:19,020 --> 00:28:21,020
+Dropping anything which is higher order
+
+760
+00:28:21,020 --> 00:28:22,480
+And I'll tell you what you get
+
+761
+00:28:23,860 --> 00:28:24,900
+That hmn
+
+762
+00:28:25,540 --> 00:28:27,940
+M and n now just run over x and y
+
+763
+00:28:28,840 --> 00:28:29,780
+Is equal
+
+764
+00:28:31,320 --> 00:28:32,360
+To dfm
+
+765
+00:28:32,360 --> 00:28:34,020
+By dxn
+
+766
+00:28:35,020 --> 00:28:35,540
+Plus
+
+767
+00:28:37,140 --> 00:28:37,660
+Dfn
+
+768
+00:28:37,660 --> 00:28:39,460
+By dxm
+
+769
+00:28:40,740 --> 00:28:41,680
+That will mean
+
+770
+00:28:41,680 --> 00:28:42,850
+Nothing to you until you
+
+771
+00:28:42,850 --> 00:28:44,020
+try to work out an example
+
+772
+00:28:45,160 --> 00:28:46,860
+Or until you try to prove it
+
+773
+00:28:47,920 --> 00:28:48,760
+This is
+
+774
+00:28:48,760 --> 00:28:50,680
+The correction to the metric
+
+775
+00:28:50,680 --> 00:28:52,460
+It's a correction to the metric
+
+776
+00:28:52,460 --> 00:28:53,460
+Which is small
+
+777
+00:28:53,720 --> 00:28:54,040
+Why?
+
+778
+00:28:54,220 --> 00:28:56,940
+Because I chose f to be small
+
+779
+00:28:57,959 --> 00:28:59,900
+It has the form
+
+780
+00:29:01,120 --> 00:29:01,780
+Of
+
+781
+00:29:03,659 --> 00:29:04,980
+A small
+
+782
+00:29:05,939 --> 00:29:06,600
+Perturbation
+
+783
+00:29:06,600 --> 00:29:07,260
+On the metric
+
+784
+00:29:07,260 --> 00:29:08,880
+But it doesn't represent anything
+
+785
+00:29:08,880 --> 00:29:10,440
+It represents just a trivial
+
+786
+00:29:11,480 --> 00:29:12,140
+Change
+
+787
+00:29:13,040 --> 00:29:14,480
+So there are some
+
+788
+00:29:16,659 --> 00:29:17,949
+Let's call them perturbations
+
+789
+00:29:18,399 --> 00:29:20,020
+Perturbations mean a small change
+
+790
+00:29:20,899 --> 00:29:21,560
+Perturbations
+
+791
+00:29:21,560 --> 00:29:23,640
+On the original form of the metric
+
+792
+00:29:23,720 --> 00:29:24,760
+Which are trivial
+
+793
+00:29:24,760 --> 00:29:26,220
+They don't represent anything
+
+794
+00:29:27,620 --> 00:29:28,740
+Likewise here
+
+795
+00:29:29,680 --> 00:29:31,300
+There are small fluctuations
+
+796
+00:29:31,300 --> 00:29:33,300
+That you can write down
+
+797
+00:29:33,300 --> 00:29:35,720
+Which just represent curvilinear
+
+798
+00:29:35,720 --> 00:29:37,000
+Coordinates in space time
+
+799
+00:29:37,540 --> 00:29:38,740
+How do you get rid of that?
+
+800
+00:29:39,080 --> 00:29:41,180
+How do you get rid of it and eliminate
+
+801
+00:29:41,720 --> 00:29:43,480
+The phony
+
+802
+00:29:43,480 --> 00:29:45,240
+Solutions which
+
+803
+00:29:45,860 --> 00:29:47,300
+Automatically solve the equation
+
+804
+00:29:47,300 --> 00:29:48,900
+Because they're just flat space
+
+805
+00:29:49,480 --> 00:29:51,520
+But which don't represent any real physics
+
+806
+00:29:51,520 --> 00:29:52,940
+And you do it
+
+807
+00:29:52,940 --> 00:29:55,300
+By imposing more equations
+
+808
+00:29:55,300 --> 00:29:57,040
+More equations
+
+809
+00:29:57,040 --> 00:29:57,940
+On the metric
+
+810
+00:29:57,940 --> 00:30:00,420
+That sort of cut away
+
+811
+00:30:00,420 --> 00:30:02,320
+And divide out and eliminate
+
+812
+00:30:02,320 --> 00:30:05,580
+The unwanted spurious solutions
+
+813
+00:30:07,179 --> 00:30:09,600
+I could write down the equations
+
+814
+00:30:09,600 --> 00:30:10,700
+It's not important
+
+815
+00:30:10,700 --> 00:30:12,000
+They're just equations
+
+816
+00:30:12,000 --> 00:30:13,080
+Which tell you
+
+817
+00:30:13,080 --> 00:30:14,480
+Get rid of the spurious
+
+818
+00:30:15,460 --> 00:30:15,820
+Coordinate
+
+819
+00:30:17,200 --> 00:30:18,280
+Coordinate ambiguities
+
+820
+00:30:18,280 --> 00:30:20,720
+And you can do that in a wide variety
+
+821
+00:30:21,520 --> 00:30:22,640
+Of ways
+
+822
+00:30:22,640 --> 00:30:23,840
+Wide variety of conditions
+
+823
+00:30:23,840 --> 00:30:26,380
+That will allow you to eliminate
+
+824
+00:30:26,380 --> 00:30:28,200
+The unphysical
+
+825
+00:30:28,200 --> 00:30:29,040
+Meaningless
+
+826
+00:30:30,220 --> 00:30:32,220
+Solutions of Einstein's equations
+
+827
+00:30:33,560 --> 00:30:35,060
+Once you've done that
+
+828
+00:30:35,060 --> 00:30:37,500
+And you've imposed
+
+829
+00:30:38,620 --> 00:30:40,560
+All of the Einstein equations
+
+830
+00:30:40,560 --> 00:30:41,120
+Here
+
+831
+00:30:41,120 --> 00:30:43,380
+Once you've done that incidentally
+
+832
+00:30:43,380 --> 00:30:45,700
+The equations become pretty simple
+
+833
+00:30:45,700 --> 00:30:47,040
+And in fact
+
+834
+00:30:47,040 --> 00:30:47,960
+All they become
+
+835
+00:30:49,240 --> 00:30:50,800
+Is wave equations
+
+836
+00:30:51,520 --> 00:30:52,880
+They become wave equations
+
+837
+00:30:53,280 --> 00:30:55,800
+They become several different equations
+
+838
+00:30:55,800 --> 00:30:57,600
+They become first of all
+
+839
+00:30:57,600 --> 00:30:58,300
+Ordinary,
+
+840
+00:30:58,300 --> 00:30:59,180
+just perfectly
+
+841
+00:30:59,180 --> 00:31:00,500
+Ordinary wave equations
+
+842
+00:31:00,500 --> 00:31:02,760
+For the components of H
+
+843
+00:31:04,180 --> 00:31:05,700
+Same kind of wave equations
+
+844
+00:31:05,700 --> 00:31:06,580
+That I wrote down
+
+845
+00:31:06,580 --> 00:31:08,080
+Where did I write them down
+
+846
+00:31:08,080 --> 00:31:09,180
+I guess I erased them
+
+847
+00:31:09,180 --> 00:31:12,120
+d second phi by dt squared
+
+848
+00:31:13,980 --> 00:31:15,360
+Minus d second phi
+
+849
+00:31:15,360 --> 00:31:16,680
+By dx squared
+
+850
+00:31:17,480 --> 00:31:18,400
+Blah blah blah
+
+851
+00:31:18,400 --> 00:31:20,380
+Y squared and z squared is equal to zero
+
+852
+00:31:25,720 --> 00:31:26,280
+Alright
+
+853
+00:31:26,280 --> 00:31:26,880
+So there's some
+
+854
+00:31:26,880 --> 00:31:29,220
+And let me write them now
+
+855
+00:31:29,220 --> 00:31:30,960
+In the correct form
+
+856
+00:31:32,200 --> 00:31:33,160
+Instead of phi
+
+857
+00:31:33,160 --> 00:31:34,940
+We have H here
+
+858
+00:31:37,060 --> 00:31:38,000
+H mu nu
+
+859
+00:31:38,000 --> 00:31:39,520
+Each component
+
+860
+00:31:39,520 --> 00:31:41,140
+Of the metric tensor
+
+861
+00:31:41,140 --> 00:31:42,200
+Or each component
+
+862
+00:31:42,200 --> 00:31:43,760
+Of the fluctuation
+
+863
+00:31:45,580 --> 00:31:46,820
+Satisfies a wave equation
+
+864
+00:31:46,820 --> 00:31:48,900
+That means that all the components
+
+865
+00:31:48,900 --> 00:31:49,880
+Of the wave equation
+
+866
+00:31:49,880 --> 00:31:50,520
+Sorry,
+
+867
+00:31:50,520 --> 00:31:51,360
+all the components
+
+868
+00:31:51,520 --> 00:31:51,920
+Of the metric
+
+869
+00:31:51,920 --> 00:31:55,340
+Just move down the axis
+
+870
+00:31:55,340 --> 00:31:56,760
+Like waves
+
+871
+00:31:57,520 --> 00:31:58,680
+And there are waves
+
+872
+00:31:59,350 --> 00:32:00,120
+On the other hand
+
+873
+00:32:00,120 --> 00:32:01,900
+There are also some constraints
+
+874
+00:32:01,900 --> 00:32:03,380
+The constraints come
+
+875
+00:32:03,380 --> 00:32:05,460
+There's a lot more equations
+
+876
+00:32:05,460 --> 00:32:07,580
+How many equations are there
+
+877
+00:32:09,540 --> 00:32:10,240
+Well
+
+878
+00:32:10,240 --> 00:32:13,360
+There are more equations
+
+879
+00:32:13,360 --> 00:32:15,500
+Than one for each mu and nu
+
+880
+00:32:15,500 --> 00:32:16,700
+The reason
+
+881
+00:32:16,700 --> 00:32:18,360
+That there are more equations
+
+882
+00:32:18,360 --> 00:32:21,040
+Is because you have to divide
+
+883
+00:32:21,520 --> 00:32:23,440
+Out this spurious
+
+884
+00:32:23,440 --> 00:32:24,820
+Fake solutions
+
+885
+00:32:24,820 --> 00:32:27,200
+That are there because of the coordinate ambiguity
+
+886
+00:32:27,920 --> 00:32:28,880
+Once you do that
+
+887
+00:32:28,880 --> 00:32:31,340
+You find out that the physical solutions
+
+888
+00:32:31,340 --> 00:32:33,140
+The ones that really have meaning
+
+889
+00:32:33,140 --> 00:32:35,340
+I'm going to classify them now for you
+
+890
+00:32:36,040 --> 00:32:36,520
+Supposing
+
+891
+00:32:36,520 --> 00:32:39,440
+We have a wave moving down the z axis
+
+892
+00:32:40,400 --> 00:32:41,620
+Let's suppose we have a wave
+
+893
+00:32:41,620 --> 00:32:42,780
+Moving down the z axis
+
+894
+00:32:44,320 --> 00:32:45,260
+What does a wave
+
+895
+00:32:45,260 --> 00:32:46,920
+Moving down the z axis look like
+
+896
+00:32:47,480 --> 00:32:49,080
+Wave moving down the z axis
+
+897
+00:32:49,080 --> 00:32:51,040
+If it were just a simple wave
+
+898
+00:32:51,760 --> 00:32:53,120
+Would just be phi
+
+899
+00:32:53,120 --> 00:32:55,300
+Is equal to something like
+
+900
+00:32:56,440 --> 00:32:57,380
+Some number
+
+901
+00:32:57,380 --> 00:32:58,380
+Times sine
+
+902
+00:32:59,740 --> 00:33:01,360
+Of k times
+
+903
+00:33:01,360 --> 00:33:02,400
+x minus z
+
+904
+00:33:02,400 --> 00:33:03,240
+Sorry,
+
+905
+00:33:03,240 --> 00:33:04,380
+times z minus t
+
+906
+00:33:04,380 --> 00:33:06,040
+Times t minus z
+
+907
+00:33:07,960 --> 00:33:09,060
+z minus t
+
+908
+00:33:09,720 --> 00:33:10,660
+t minus z,
+
+909
+00:33:10,660 --> 00:33:11,040
+doesn't matter
+
+910
+00:33:11,620 --> 00:33:12,380
+Same thing
+
+911
+00:33:13,500 --> 00:33:14,520
+This is a wave
+
+912
+00:33:16,400 --> 00:33:17,400
+That at a fixed
+
+913
+00:33:17,400 --> 00:33:19,260
+Instant of time is just a sine wave
+
+914
+00:33:19,260 --> 00:33:21,140
+And it moves down the axis
+
+915
+00:33:21,520 --> 00:33:22,340
+With unit velocity
+
+916
+00:33:22,340 --> 00:33:25,160
+Unit velocity here means the speed of light
+
+917
+00:33:26,280 --> 00:33:26,880
+Alright
+
+918
+00:33:27,600 --> 00:33:28,200
+Now,
+
+919
+00:33:28,200 --> 00:33:29,840
+each one of the components
+
+920
+00:33:30,700 --> 00:33:31,740
+Will have a
+
+921
+00:33:31,740 --> 00:33:33,280
+Solution like that
+
+922
+00:33:33,920 --> 00:33:34,980
+Each component
+
+923
+00:33:35,260 --> 00:33:37,120
+Will be proportional to sine k
+
+924
+00:33:37,740 --> 00:33:38,340
+Times,
+
+925
+00:33:38,340 --> 00:33:39,760
+what is k incidentally
+
+926
+00:33:42,800 --> 00:33:45,240
+It's the wave number
+
+927
+00:33:46,240 --> 00:33:46,840
+Right
+
+928
+00:33:47,580 --> 00:33:49,200
+It's the frequency of the wave
+
+929
+00:33:49,860 --> 00:33:51,420
+It's the frequency of the wave
+
+930
+00:33:52,479 --> 00:33:53,900
+It's also the wave number
+
+931
+00:33:53,900 --> 00:33:56,160
+The number of oscillations per unit length
+
+932
+00:33:56,160 --> 00:33:57,480
+And of course it can be anything
+
+933
+00:33:57,480 --> 00:33:58,260
+It can be any number
+
+934
+00:33:58,260 --> 00:34:00,840
+Short wavelengths have large k
+
+935
+00:34:00,840 --> 00:34:04,000
+Long wavelengths have small k
+
+936
+00:34:04,939 --> 00:34:05,580
+Okay
+
+937
+00:34:05,580 --> 00:34:07,420
+So that's a typical solution
+
+938
+00:34:07,420 --> 00:34:08,239
+Of a wave equation
+
+939
+00:34:08,239 --> 00:34:11,520
+And the solutions to this equation here
+
+940
+00:34:11,520 --> 00:34:13,000
+Are all of the same type
+
+941
+00:34:13,000 --> 00:34:14,440
+H naught
+
+942
+00:34:15,379 --> 00:34:16,940
+Is equal to
+
+943
+00:34:17,820 --> 00:34:19,020
+Some function
+
+944
+00:34:19,020 --> 00:34:21,080
+Well there's a coefficient here
+
+945
+00:34:21,520 --> 00:34:22,980
+We call the coefficient phi naught
+
+946
+00:34:23,540 --> 00:34:25,000
+Phi naught is just a number
+
+947
+00:34:25,940 --> 00:34:26,460
+Alright,
+
+948
+00:34:26,460 --> 00:34:27,239
+each component
+
+949
+00:34:28,500 --> 00:34:29,659
+Is a function of
+
+950
+00:34:29,659 --> 00:34:30,239
+T and z
+
+951
+00:34:30,880 --> 00:34:33,040
+Which is proportional to the same thing
+
+952
+00:34:33,040 --> 00:34:35,120
+Sine k times t minus z
+
+953
+00:34:35,800 --> 00:34:36,699
+Times a number
+
+954
+00:34:36,699 --> 00:34:37,699
+Which we can call
+
+955
+00:34:37,699 --> 00:34:40,880
+H naught
+
+956
+00:34:41,659 --> 00:34:43,139
+Let's put mu and nu here
+
+957
+00:34:44,580 --> 00:34:45,440
+Mu and nu
+
+958
+00:34:46,639 --> 00:34:48,340
+And this is not a function of position
+
+959
+00:34:48,980 --> 00:34:50,739
+It's just a numerical coefficient
+
+960
+00:34:50,739 --> 00:34:51,500
+That multiplies
+
+961
+00:34:51,520 --> 00:34:53,460
+The sine of t minus z
+
+962
+00:34:55,060 --> 00:34:56,820
+And that's about all you can write down
+
+963
+00:34:56,820 --> 00:34:59,580
+This is the nature of a gravitational wave
+
+964
+00:35:01,940 --> 00:35:03,700
+Each component of the metric
+
+965
+00:35:03,700 --> 00:35:05,400
+Behaving like a wave
+
+966
+00:35:05,400 --> 00:35:06,380
+Moving down the axis
+
+967
+00:35:06,380 --> 00:35:07,380
+However,
+
+968
+00:35:07,380 --> 00:35:08,040
+as I said
+
+969
+00:35:08,040 --> 00:35:09,180
+There are more equations
+
+970
+00:35:09,180 --> 00:35:10,440
+The additional equations
+
+971
+00:35:10,440 --> 00:35:12,600
+There's a good number of equations here
+
+972
+00:35:12,600 --> 00:35:14,960
+And when you impose them all
+
+973
+00:35:15,940 --> 00:35:17,200
+You find out
+
+974
+00:35:17,200 --> 00:35:18,060
+Oh let's
+
+975
+00:35:18,060 --> 00:35:19,040
+Before we do this
+
+976
+00:35:19,040 --> 00:35:20,200
+Let's just remind ourselves
+
+977
+00:35:22,020 --> 00:35:22,660
+That we're going to do
+
+978
+00:35:23,419 --> 00:35:23,740
+Electromagnetism
+
+979
+00:35:23,740 --> 00:35:25,760
+In electromagnetism
+
+980
+00:35:25,760 --> 00:35:27,020
+We do the same thing
+
+981
+00:35:27,020 --> 00:35:30,700
+We solve Maxwell's field equations
+
+982
+00:35:31,440 --> 00:35:33,500
+We can solve Maxwell's field equations
+
+983
+00:35:33,500 --> 00:35:34,840
+Either for the vector potential
+
+984
+00:35:34,840 --> 00:35:36,720
+Or the electric and magnetic fields
+
+985
+00:35:38,300 --> 00:35:40,060
+But when we write down
+
+986
+00:35:40,060 --> 00:35:40,960
+All the equations
+
+987
+00:35:42,020 --> 00:35:43,640
+We find some constraints
+
+988
+00:35:43,640 --> 00:35:45,440
+The constraints are called
+
+989
+00:35:45,440 --> 00:35:47,520
+Transversality of the field
+
+990
+00:35:48,040 --> 00:35:48,740
+Does everybody know what
+
+991
+00:35:48,740 --> 00:35:50,980
+Transversality of an electromagnetic field means
+
+992
+00:35:52,020 --> 00:35:54,380
+It means that the electromagnetic field
+
+993
+00:35:54,380 --> 00:35:55,860
+The electric and magnetic fields
+
+994
+00:35:55,860 --> 00:35:58,280
+Always point in the directions
+
+995
+00:35:58,280 --> 00:36:00,360
+Perpendicular to the motion of the wave
+
+996
+00:36:02,660 --> 00:36:05,420
+Not only are the solutions waves
+
+997
+00:36:06,160 --> 00:36:07,800
+But they're transverse waves
+
+998
+00:36:07,800 --> 00:36:10,060
+Meaning to say that the electric field
+
+999
+00:36:10,060 --> 00:36:11,300
+And the magnetic field
+
+1000
+00:36:11,300 --> 00:36:13,100
+The magnetic field points one way
+
+1001
+00:36:13,100 --> 00:36:14,700
+The electric field points the other way
+
+1002
+00:36:14,700 --> 00:36:16,120
+And the whole thing goes down the axis
+
+1003
+00:36:16,880 --> 00:36:18,500
+Oscillating as it goes down the axis
+
+1004
+00:36:20,240 --> 00:36:21,500
+Very similar thing to the
+
+1005
+00:36:21,520 --> 00:36:22,280
+But the way things happen here
+
+1006
+00:36:25,420 --> 00:36:27,700
+The waves have to be transverse
+
+1007
+00:36:28,480 --> 00:36:30,480
+To say that the waves are transverse
+
+1008
+00:36:30,480 --> 00:36:33,580
+Means that the time components
+
+1009
+00:36:33,580 --> 00:36:36,720
+And the z components of h are zero
+
+1010
+00:36:36,720 --> 00:36:38,500
+The only components of h
+
+1011
+00:36:38,500 --> 00:36:39,900
+Which are allowed to be non-zero
+
+1012
+00:36:39,900 --> 00:36:42,140
+Are the components in the plane
+
+1013
+00:36:42,140 --> 00:36:45,220
+Perpendicular to the direction of the wave
+
+1014
+00:36:45,220 --> 00:36:47,520
+So if you substitute this in
+
+1015
+00:36:47,520 --> 00:36:49,120
+To all the equations
+
+1016
+00:36:49,120 --> 00:36:50,960
+The full set of equations here
+
+1017
+00:36:50,960 --> 00:36:51,500
+You get the following
+
+1018
+00:36:51,520 --> 00:36:53,100
+Including the ones which
+
+1019
+00:36:53,100 --> 00:36:55,900
+Remove the fake spurious
+
+1020
+00:36:58,120 --> 00:36:58,920
+Fluctuations
+
+1021
+00:37:00,120 --> 00:37:01,400
+You find
+
+1022
+00:37:01,400 --> 00:37:02,640
+That
+
+1023
+00:37:02,640 --> 00:37:05,420
+A gravitational wave has a very very
+
+1024
+00:37:05,420 --> 00:37:06,260
+Simple form
+
+1025
+00:37:08,080 --> 00:37:09,420
+Well it does have
+
+1026
+00:37:09,420 --> 00:37:09,880
+This form
+
+1027
+00:37:12,359 --> 00:37:13,500
+A set of
+
+1028
+00:37:13,500 --> 00:37:15,280
+Numbers h nu
+
+1029
+00:37:15,280 --> 00:37:17,560
+But the only components
+
+1030
+00:37:17,560 --> 00:37:18,280
+That are allowed
+
+1031
+00:37:19,279 --> 00:37:19,820
+It's a
+
+1032
+00:37:21,520 --> 00:37:22,240
+This is z
+
+1033
+00:37:24,320 --> 00:37:25,700
+X and y
+
+1034
+00:37:28,060 --> 00:37:29,140
+I'll call
+
+1035
+00:37:29,140 --> 00:37:30,580
+I and j
+
+1036
+00:37:31,400 --> 00:37:32,540
+I and j
+
+1037
+00:37:33,480 --> 00:37:33,820
+Represent
+
+1038
+00:37:34,160 --> 00:37:36,040
+The directions in the plane
+
+1039
+00:37:36,040 --> 00:37:38,120
+Perpendicular to the motion of the wave
+
+1040
+00:37:38,120 --> 00:37:39,840
+Then the only components
+
+1041
+00:37:39,840 --> 00:37:40,540
+Which are allowed
+
+1042
+00:37:40,540 --> 00:37:42,440
+Are h i j
+
+1043
+00:37:43,520 --> 00:37:44,860
+Times sine
+
+1044
+00:37:46,160 --> 00:37:47,520
+K z
+
+1045
+00:37:49,060 --> 00:37:50,240
+K z minus
+
+1046
+00:37:50,240 --> 00:37:51,500
+K times k
+
+1047
+00:37:51,520 --> 00:37:52,060
+Z minus t
+
+1048
+00:38:02,380 --> 00:38:05,120
+So if you're looking down the z-axis
+
+1049
+00:38:05,120 --> 00:38:06,560
+If you're looking down the z-axis
+
+1050
+00:38:06,560 --> 00:38:08,260
+You see in front of you
+
+1051
+00:38:08,260 --> 00:38:09,420
+The xy plane
+
+1052
+00:38:09,420 --> 00:38:11,600
+You see in front of you the xy plane
+
+1053
+00:38:13,180 --> 00:38:14,540
+There's the xy plane
+
+1054
+00:38:15,160 --> 00:38:16,840
+And the xy plane
+
+1055
+00:38:16,840 --> 00:38:17,720
+At each
+
+1056
+00:38:18,700 --> 00:38:19,900
+Z and t
+
+1057
+00:38:21,520 --> 00:38:22,000
+I slice
+
+1058
+00:38:22,000 --> 00:38:23,500
+Here's my slice
+
+1059
+00:38:23,500 --> 00:38:26,300
+I slice it at a given location
+
+1060
+00:38:26,300 --> 00:38:27,620
+At a given time
+
+1061
+00:38:28,260 --> 00:38:30,800
+At a given location and a given time
+
+1062
+00:38:31,520 --> 00:38:32,440
+The metric
+
+1063
+00:38:32,440 --> 00:38:34,540
+Of the two dimensional plane
+
+1064
+00:38:35,540 --> 00:38:37,340
+I slice the wave
+
+1065
+00:38:37,340 --> 00:38:39,060
+Into two dimensional planes
+
+1066
+00:38:39,060 --> 00:38:40,560
+As I go down the axis here
+
+1067
+00:38:40,560 --> 00:38:42,000
+At a fixed instant of time
+
+1068
+00:38:43,220 --> 00:38:45,080
+And what I have here
+
+1069
+00:38:45,080 --> 00:38:45,920
+Is a metric
+
+1070
+00:38:45,920 --> 00:38:48,180
+For each z
+
+1071
+00:38:49,720 --> 00:38:50,360
+Which
+
+1072
+00:38:51,520 --> 00:38:51,980
+Looks like
+
+1073
+00:38:51,980 --> 00:38:53,520
+Where is it?
+
+1074
+00:38:54,060 --> 00:38:55,200
+Right over here
+
+1075
+00:38:56,000 --> 00:38:57,180
+With only two
+
+1076
+00:38:57,180 --> 00:38:58,980
+With only components
+
+1077
+00:38:59,660 --> 00:39:02,080
+With the components only in the plane
+
+1078
+00:39:02,080 --> 00:39:03,780
+Perpendicular to the motion of the
+
+1079
+00:39:03,780 --> 00:39:05,760
+Of the
+
+1080
+00:39:05,760 --> 00:39:07,540
+Of the wave
+
+1081
+00:39:07,540 --> 00:39:09,900
+And the components are simply numbers
+
+1082
+00:39:09,900 --> 00:39:11,980
+At each z and t
+
+1083
+00:39:11,980 --> 00:39:14,340
+The metric is simply
+
+1084
+00:39:14,340 --> 00:39:15,780
+A set of numbers
+
+1085
+00:39:15,780 --> 00:39:18,340
+There's one more equation
+
+1086
+00:39:18,340 --> 00:39:20,560
+One more equation that I
+
+1087
+00:39:21,520 --> 00:39:21,560
+I'm going to show you
+
+1088
+00:39:21,560 --> 00:39:23,420
+It comes from Einstein's field equations
+
+1089
+00:39:24,440 --> 00:39:25,440
+And it says
+
+1090
+00:39:25,440 --> 00:39:28,980
+That the trace of hij is equal to zero
+
+1091
+00:39:28,980 --> 00:39:30,100
+In other words
+
+1092
+00:39:31,760 --> 00:39:32,320
+Hxx
+
+1093
+00:39:32,320 --> 00:39:34,620
+Plus hyy
+
+1094
+00:39:34,620 --> 00:39:36,420
+Is equal to zero
+
+1095
+00:39:38,300 --> 00:39:39,020
+That's it
+
+1096
+00:39:39,020 --> 00:39:40,280
+That's the whole set of equations
+
+1097
+00:39:40,280 --> 00:39:42,920
+And what it tells you is that the metric
+
+1098
+00:39:50,180 --> 00:39:51,300
+The metric
+
+1099
+00:39:51,520 --> 00:39:52,920
+Of a gravitational wave is
+
+1100
+00:39:57,360 --> 00:39:59,060
+H00 equals zero
+
+1101
+00:40:02,120 --> 00:40:02,780
+Hzz
+
+1102
+00:40:02,780 --> 00:40:04,280
+Is equal to zero
+
+1103
+00:40:05,220 --> 00:40:05,880
+Hzz
+
+1104
+00:40:05,880 --> 00:40:07,120
+Is equal to zero
+
+1105
+00:40:07,120 --> 00:40:07,720
+In fact,
+
+1106
+00:40:07,720 --> 00:40:08,560
+h anything
+
+1107
+00:40:08,560 --> 00:40:10,440
+With either a time component
+
+1108
+00:40:11,320 --> 00:40:13,500
+Or a space or a z component
+
+1109
+00:40:14,400 --> 00:40:15,660
+Are equal to zero
+
+1110
+00:40:16,360 --> 00:40:17,760
+The only components
+
+1111
+00:40:17,760 --> 00:40:18,720
+Which are not zero
+
+1112
+00:40:19,900 --> 00:40:20,560
+Are
+
+1113
+00:40:22,140 --> 00:40:23,060
+Hxx
+
+1114
+00:40:24,100 --> 00:40:25,020
+Hyy
+
+1115
+00:40:25,020 --> 00:40:27,580
+And hxy
+
+1116
+00:40:29,680 --> 00:40:30,600
+Hyx
+
+1117
+00:40:30,600 --> 00:40:33,140
+The metric tensor is symmetric
+
+1118
+00:40:33,140 --> 00:40:35,160
+The metric tensor is symmetric
+
+1119
+00:40:35,160 --> 00:40:37,680
+And so hxy
+
+1120
+00:40:37,680 --> 00:40:38,820
+And hyx
+
+1121
+00:40:38,820 --> 00:40:39,400
+Are the same
+
+1122
+00:40:40,840 --> 00:40:42,280
+And finally
+
+1123
+00:40:42,280 --> 00:40:45,020
+Hxx plus hyy
+
+1124
+00:40:45,020 --> 00:40:45,860
+Is equal to zero
+
+1125
+00:40:45,860 --> 00:40:48,200
+Which means that hyy
+
+1126
+00:40:48,200 --> 00:40:49,680
+Is minus hxx
+
+1127
+00:40:49,680 --> 00:40:51,500
+So the metric tensor
+
+1128
+00:40:53,040 --> 00:40:53,640
+Is equal to zero
+
+1129
+00:40:53,640 --> 00:40:53,640
+Well,
+
+1130
+00:40:53,640 --> 00:40:55,680
+hyy is equal to minus hxx
+
+1131
+00:40:55,680 --> 00:40:56,380
+Well,
+
+1132
+00:40:56,380 --> 00:40:56,380
+hyy is equal to minus hxx
+
+1133
+00:40:56,380 --> 00:40:56,640
+Well,
+
+1134
+00:40:56,640 --> 00:41:02,860
+hyy is equal to minus hxx
+
+1135
+00:41:03,840 --> 00:41:04,880
+That's pretty simple
+
+1136
+00:41:04,880 --> 00:41:06,200
+But what does it mean
+
+1137
+00:41:11,320 --> 00:41:12,720
+First of all,
+
+1138
+00:41:12,720 --> 00:41:13,380
+all of these
+
+1139
+00:41:14,360 --> 00:41:14,960
+Vary
+
+1140
+00:41:14,960 --> 00:41:17,320
+With z and t
+
+1141
+00:41:18,540 --> 00:41:20,580
+They vary only with z and t
+
+1142
+00:41:21,520 --> 00:41:22,500
+going down the z-axis.
+
+1143
+00:41:22,500 --> 00:41:24,320
+Then by definition,
+
+1144
+00:41:24,320 --> 00:41:26,640
+the variation is along the z-axis,
+
+1145
+00:41:26,640 --> 00:41:27,800
+and so
+
+1146
+00:41:27,800 --> 00:41:31,470
+hxx is some number to begin with
+
+1147
+00:41:31,470 --> 00:41:35,140
+times sine kx times sine kz minus t.
+
+1148
+00:41:35,140 --> 00:41:37,380
+This one
+
+1149
+00:41:37,380 --> 00:41:45,920
+is h naught yy sine k times z minus t,
+
+1150
+00:41:45,920 --> 00:41:49,190
+and likewise this one is
+
+1151
+00:41:49,190 --> 00:41:52,460
+h naught xy sine kx times,
+
+1152
+00:41:52,460 --> 00:41:52,900
+yeah,
+
+1153
+00:41:52,900 --> 00:41:53,320
+okay.
+
+1154
+00:41:58,440 --> 00:41:58,980
+Okay,
+
+1155
+00:41:58,980 --> 00:42:00,400
+so think of a series of layers.
+
+1156
+00:42:00,400 --> 00:42:03,360
+Let's look at it at a fixed instant of time.
+
+1157
+00:42:03,360 --> 00:42:03,880
+At a fixed
+
+1158
+00:42:03,880 --> 00:42:04,680
+instant of time,
+
+1159
+00:42:04,680 --> 00:42:05,200
+for example,
+
+1160
+00:42:05,200 --> 00:42:06,340
+time t equals zero,
+
+1161
+00:42:08,380 --> 00:42:11,140
+as we move down the z-axis,
+
+1162
+00:42:11,140 --> 00:42:18,060
+there's a perturbation on the metric.
+
+1163
+00:42:18,060 --> 00:42:20,790
+The metric tensor is a little bit
+
+1164
+00:42:20,790 --> 00:42:23,520
+different from just a flat space metric.
+
+1165
+00:42:23,520 --> 00:42:27,400
+It oscillates as you go down the z-axis,
+
+1166
+00:42:27,400 --> 00:42:32,300
+and the components that oscillate are the components that have to
+
+1167
+00:42:32,300 --> 00:42:37,200
+do with the metric of the plane perpendicular to the wave.
+
+1168
+00:42:40,540 --> 00:42:44,860
+What does it mean to have an hxx?
+
+1169
+00:42:44,860 --> 00:42:46,980
+Well,
+
+1170
+00:42:46,980 --> 00:42:49,020
+let's just take the case of hxx.
+
+1171
+00:42:49,020 --> 00:42:50,500
+If there's
+
+1172
+00:42:50,500 --> 00:42:51,140
+an hxx,
+
+1173
+00:42:51,140 --> 00:42:53,690
+that means that the x-x component
+
+1174
+00:42:53,690 --> 00:42:56,240
+of the metric is a little bit
+
+1175
+00:42:56,240 --> 00:42:56,960
+different than 1.
+
+1176
+00:42:56,960 --> 00:43:01,760
+The x-x component of the metric was originally 1,
+
+1177
+00:43:01,760 --> 00:43:03,320
+that's a ,
+
+1178
+00:43:03,320 --> 00:43:06,460
+and it's 1.
+
+1179
+00:43:08,180 --> 00:43:09,640
+plus this little bit,
+
+1180
+00:43:09,640 --> 00:43:12,040
+blah blah blah,
+
+1181
+00:43:12,040 --> 00:43:13,800
+plus this little bit.
+
+1182
+00:43:13,800 --> 00:43:19,170
+That means that proper distances along the x-axis
+
+1183
+00:43:19,170 --> 00:43:24,540
+are a little bit different than actual distances,
+
+1184
+00:43:24,540 --> 00:43:27,800
+let's say between x equals 0 and 1,
+
+1185
+00:43:27,800 --> 00:43:30,860
+or let's say between x equals minus 1 and 1.
+
+1186
+00:43:31,600 --> 00:43:33,380
+But the actual distance,
+
+1187
+00:43:33,380 --> 00:43:34,780
+the actual distance,
+
+1188
+00:43:34,780 --> 00:43:37,060
+remember the metric tensor is the thing
+
+1189
+00:43:37,060 --> 00:43:39,340
+which tells you the actual distance between points.
+
+1190
+00:43:39,340 --> 00:43:42,260
+The coordinates are just labels.
+
+1191
+00:43:42,260 --> 00:43:47,530
+The actual distance between point minus 1 and point plus 1 is
+
+1192
+00:43:47,530 --> 00:43:52,800
+a little bit different than it would be if this perturbation weren't here.
+
+1193
+00:43:52,860 --> 00:43:54,490
+Either a little bit larger separation
+
+1194
+00:43:54,490 --> 00:43:56,120
+or a little bit smaller separation,
+
+1195
+00:43:56,120 --> 00:43:58,800
+depending on the sign of hxx.
+
+1196
+00:43:59,500 --> 00:44:00,620
+For example,
+
+1197
+00:44:00,860 --> 00:44:02,700
+if hxx is positive,
+
+1198
+00:44:02,700 --> 00:44:08,220
+then the actual physical distance between here and here
+
+1199
+00:44:08,220 --> 00:44:13,740
+would be a little bit larger than 1 meter,
+
+1200
+00:44:13,740 --> 00:44:15,320
+supposing we're working in meters.
+
+1201
+00:44:16,240 --> 00:44:20,780
+That would mean that a meter stick
+
+1202
+00:44:20,780 --> 00:44:25,320
+doesn't quite extend from minus 1 to 1.
+
+1203
+00:44:27,920 --> 00:44:29,860
+What about gyy?
+
+1204
+00:44:30,740 --> 00:44:30,840
+What about gx?
+
+1205
+00:44:30,860 --> 00:44:31,060
+What about gyy?
+
+1206
+00:44:31,900 --> 00:44:32,300
+Well,
+
+1207
+00:44:32,300 --> 00:44:34,820
+we'll take hxx to be positive.
+
+1208
+00:44:34,820 --> 00:44:36,200
+If hxx is positive,
+
+1209
+00:44:36,200 --> 00:44:37,740
+did I say that?
+
+1210
+00:44:37,740 --> 00:44:38,320
+Yeah,
+
+1211
+00:44:38,320 --> 00:44:39,080
+I did get that right.
+
+1212
+00:44:39,080 --> 00:44:40,690
+The distance between minus 1 and 1
+
+1213
+00:44:40,690 --> 00:44:42,300
+is a little bit bigger than a meter,
+
+1214
+00:44:42,300 --> 00:44:45,940
+and therefore a real meter stick would look,
+
+1215
+00:44:45,940 --> 00:44:48,300
+would not look,
+
+1216
+00:44:48,300 --> 00:44:50,840
+it would be a little bit shorter
+
+1217
+00:44:50,840 --> 00:44:53,380
+than the interval between minus 1 and 1.
+
+1218
+00:44:53,440 --> 00:44:55,400
+Not because the meter stick is necessarily shorter,
+
+1219
+00:44:55,400 --> 00:44:59,160
+but because the coordinates are such that at that,
+
+1220
+00:44:59,160 --> 00:45:00,700
+on that surface,
+
+1221
+00:45:00,700 --> 00:45:00,770
+the distance between the meter stick and
+
+1222
+00:45:00,770 --> 00:45:00,840
+the meter stick is a little bit shorter.
+
+1223
+00:45:00,840 --> 00:45:00,900
+And if it were just a
+
+1224
+00:45:00,900 --> 00:45:00,960
+white bit of glass right there,
+
+1225
+00:45:00,960 --> 00:45:04,400
+the distance between minus 1 and plus 1
+
+1226
+00:45:04,400 --> 00:45:07,840
+would be a little bit bigger than a meter.
+
+1227
+00:45:08,280 --> 00:45:08,820
+Alright,
+
+1228
+00:45:08,820 --> 00:45:09,680
+what about gyy?
+
+1229
+00:45:11,260 --> 00:45:15,080
+Gyy is equal to 1 minus hxx.
+
+1230
+00:45:16,300 --> 00:45:17,380
+Minus hxx,
+
+1231
+00:45:17,380 --> 00:45:20,160
+because Einstein's equations tell us that the
+
+1232
+00:45:20,160 --> 00:45:22,940
+sum of these two are equal to zero.
+
+1233
+00:45:24,060 --> 00:45:24,600
+That,
+
+1234
+00:45:24,600 --> 00:45:25,140
+in turn,
+
+1235
+00:45:25,140 --> 00:45:27,980
+tells us that a meter stick oriented along
+
+1236
+00:45:27,980 --> 00:45:30,820
+the 1- coexistencealter's term will not make much difference.
+
+1237
+00:45:30,820 --> 00:45:31,400
+y-axis,
+
+1238
+00:45:31,400 --> 00:45:34,440
+let's say from y equals 1 to minus 1,
+
+1239
+00:45:34,440 --> 00:45:37,980
+here's again 1 minus 1,
+
+1240
+00:45:37,980 --> 00:45:40,860
+a meter stick would
+
+1241
+00:45:40,860 --> 00:45:42,020
+look a little longer.
+
+1242
+00:45:42,020 --> 00:45:46,050
+The distance between plus 1 and minus
+
+1243
+00:45:46,050 --> 00:45:50,080
+1 would be a little bit less
+
+1244
+00:45:51,100 --> 00:45:52,880
+than if you only had the 1 here,
+
+1245
+00:45:52,880 --> 00:45:54,240
+and so our meter stick
+
+1246
+00:45:54,240 --> 00:45:55,600
+over here would look a little
+
+1247
+00:45:55,600 --> 00:45:56,140
+bit longer.
+
+1248
+00:45:56,140 --> 00:46:03,440
+Now,
+
+1249
+00:46:03,440 --> 00:46:04,580
+this would just be,
+
+1250
+00:46:04,580 --> 00:46:08,920
+this would be nothing but a squeezing of the coordinates
+
+1251
+00:46:09,880 --> 00:46:12,360
+so that you would be choosing coordinates
+
+1252
+00:46:12,360 --> 00:46:14,840
+along the x-axis where the meter stick was
+
+1253
+00:46:14,840 --> 00:46:17,330
+a little bit less than 1 unit and the
+
+1254
+00:46:17,330 --> 00:46:19,820
+meter stick along the y-axis was a little bit greater
+
+1255
+00:46:19,820 --> 00:46:20,280
+than 1.
+
+1256
+00:46:20,280 --> 00:46:21,800
+It would be nothing at all,
+
+1257
+00:46:21,800 --> 00:46:25,260
+it would be nothing significant except for the fact
+
+1258
+00:46:25,260 --> 00:46:25,580
+that it would be a little bit longer.
+
+1259
+00:46:25,600 --> 00:46:25,600
+So,
+
+1260
+00:46:25,600 --> 00:46:26,680
+what happens is that it changes
+
+1261
+00:46:26,680 --> 00:46:27,760
+as you go down the axis.
+
+1262
+00:46:27,760 --> 00:46:29,980
+As you go down the axis,
+
+1263
+00:46:30,620 --> 00:46:31,900
+from one point to another,
+
+1264
+00:46:31,900 --> 00:46:33,940
+or if the wave were passing you,
+
+1265
+00:46:33,940 --> 00:46:35,920
+imagine better even yet,
+
+1266
+00:46:35,960 --> 00:46:37,220
+the wave was passing you,
+
+1267
+00:46:37,220 --> 00:46:40,040
+the wave is passing these meter sticks.
+
+1268
+00:46:40,040 --> 00:46:43,980
+After a brief amount of
+
+1269
+00:46:43,980 --> 00:46:44,320
+time,
+
+1270
+00:46:44,320 --> 00:46:48,740
+the h's will change sign,
+
+1271
+00:46:48,740 --> 00:46:51,160
+not the sign but S-I-G-N,
+
+1272
+00:46:51,160 --> 00:46:53,580
+the sine wave oscillates,
+
+1273
+00:46:53,580 --> 00:46:54,540
+so
+
+1274
+00:46:54,540 --> 00:46:56,240
+after a brief interval of time,
+
+1275
+00:46:56,240 --> 00:46:58,260
+one half-cycle of the wave,
+
+1276
+00:46:58,260 --> 00:47:02,320
+hxx has changed sign,
+
+1277
+00:47:02,320 --> 00:47:03,800
+hyy has
+
+1278
+00:47:03,800 --> 00:47:05,770
+changed sign and the result is
+
+1279
+00:47:05,770 --> 00:47:07,740
+after a brief interval of time,
+
+1280
+00:47:07,740 --> 00:47:11,460
+the meter stick will look
+
+1281
+00:47:11,460 --> 00:47:16,300
+a little bit short in these coordinates along the y-axis,
+
+1282
+00:47:16,300 --> 00:47:17,580
+and the meter stick will look
+
+1283
+00:47:17,580 --> 00:47:20,100
+a little bit long along the x-axis.
+
+1284
+00:47:20,100 --> 00:47:22,900
+Yeah.
+
+1285
+00:47:23,460 --> 00:47:23,990
+The meter stick will look a
+
+1286
+00:47:23,990 --> 00:47:24,520
+little bit short along the y-axis.
+
+1287
+00:47:24,520 --> 00:47:26,220
+The meter stick is held together electromagnetically,
+
+1288
+00:47:26,220 --> 00:47:27,260
+it's not changing length,
+
+1289
+00:47:27,260 --> 00:47:31,040
+so you're talking about two little test masses?
+
+1290
+00:47:31,960 --> 00:47:32,620
+In fact,
+
+1291
+00:47:32,620 --> 00:47:34,720
+two little test masses would move back and forth,
+
+1292
+00:47:34,720 --> 00:47:36,080
+but not because...
+
+1293
+00:47:36,080 --> 00:47:41,000
+The meter stick is one meter long.
+
+1294
+00:47:41,000 --> 00:47:43,340
+It's always one meter long.
+
+1295
+00:47:43,340 --> 00:47:51,660
+But an oscillating wave is going back and forth,
+
+1296
+00:47:51,660 --> 00:47:53,420
+perturbing it.
+
+1297
+00:47:53,540 --> 00:47:54,440
+A real wave,
+
+1298
+00:47:54,440 --> 00:47:56,200
+a real wave of curvature.
+
+1299
+00:47:56,200 --> 00:47:58,480
+This is real curvature.
+
+1300
+00:47:58,900 --> 00:48:00,080
+And if you like,
+
+1301
+00:48:00,080 --> 00:48:02,240
+I think one way to imagine it...
+
+1302
+00:48:05,620 --> 00:48:06,260
+Well,
+
+1303
+00:48:06,260 --> 00:48:09,550
+the time dependence of this
+
+1304
+00:48:09,550 --> 00:48:12,840
+wave really does exert tidal forces.
+
+1305
+00:48:12,860 --> 00:48:13,320
+They're not just tidal forces.
+
+1306
+00:48:13,340 --> 00:48:14,000
+They're tidal forces.
+
+1307
+00:48:14,180 --> 00:48:15,200
+The wave has curvature.
+
+1308
+00:48:15,440 --> 00:48:17,180
+The wave is moving past here.
+
+1309
+00:48:17,340 --> 00:48:18,700
+It's a kind of tidal force.
+
+1310
+00:48:18,940 --> 00:48:21,960
+And the nature of the tidal force is
+
+1311
+00:48:21,960 --> 00:48:24,980
+to actually cause the meter stick to be compressed,
+
+1312
+00:48:24,980 --> 00:48:25,600
+stretched,
+
+1313
+00:48:25,600 --> 00:48:26,140
+compressed,
+
+1314
+00:48:26,140 --> 00:48:26,660
+stretched.
+
+1315
+00:48:27,300 --> 00:48:29,460
+And the way that it's compressed and
+
+1316
+00:48:29,460 --> 00:48:31,620
+stretched is that when it's compressed horizontally,
+
+1317
+00:48:31,620 --> 00:48:33,120
+it's stretched vertically.
+
+1318
+00:48:33,760 --> 00:48:35,520
+When it's compressed vertically,
+
+1319
+00:48:35,520 --> 00:48:36,680
+it's stretched horizontally.
+
+1320
+00:48:37,360 --> 00:48:37,880
+So,
+
+1321
+00:48:37,880 --> 00:48:38,660
+if you like,
+
+1322
+00:48:38,660 --> 00:48:40,820
+this wave going by a meter stick,
+
+1323
+00:48:40,820 --> 00:48:41,760
+or for that matter,
+
+1324
+00:48:41,760 --> 00:48:43,120
+if it were just two test masses,
+
+1325
+00:48:43,120 --> 00:48:45,680
+if it really were just two test masses,
+
+1326
+00:48:45,680 --> 00:48:48,920
+the two test masses would oscillate back and forth.
+
+1327
+00:48:49,360 --> 00:48:52,940
+If instead of taking a meter stick,
+
+1328
+00:48:52,940 --> 00:48:56,980
+you took a square piece of plywood,
+
+1329
+00:48:57,340 --> 00:49:03,800
+the square piece of plywood would be deformed this way,
+
+1330
+00:49:03,800 --> 00:49:06,020
+and then reverse.
+
+1331
+00:49:06,280 --> 00:49:07,040
+This way,
+
+1332
+00:49:07,040 --> 00:49:07,860
+and then reverse.
+
+1333
+00:49:11,540 --> 00:49:12,080
+Now,
+
+1334
+00:49:12,080 --> 00:49:13,000
+it's interesting.
+
+1335
+00:49:13,000 --> 00:49:14,700
+There is another solution.
+
+1336
+00:49:14,980 --> 00:49:19,130
+There is another solution in which
+
+1337
+00:49:19,130 --> 00:49:23,280
+not HX and HY are non-zero,
+
+1338
+00:49:23,859 --> 00:49:37,900
+but in which HXY is non-zero.
+
+1339
+00:49:39,940 --> 00:49:41,380
+That would be a metric
+
+1340
+00:49:41,380 --> 00:49:46,640
+which would look like a Kronecker delta,
+
+1341
+00:49:46,640 --> 00:49:49,280
+delta mn,
+
+1342
+00:49:49,280 --> 00:49:50,480
+or delta ij,
+
+1343
+00:49:53,640 --> 00:49:56,580
+plus a little matrix which had an
+
+1344
+00:49:56,580 --> 00:49:59,520
+HXY over here and an HXY over here.
+
+1345
+00:50:02,000 --> 00:50:05,680
+That still has HXX plus HYY equal to zero.
+
+1346
+00:50:06,120 --> 00:50:07,300
+There is no HXX,
+
+1347
+00:50:07,300 --> 00:50:07,860
+HYY.
+
+1348
+00:50:08,460 --> 00:50:10,440
+If you think about it a little bit,
+
+1349
+00:50:10,440 --> 00:50:11,770
+and just spend a little bit
+
+1350
+00:50:11,770 --> 00:50:13,100
+of time figuring out what this means,
+
+1351
+00:50:13,420 --> 00:50:16,440
+it's also exactly the same kind of thing,
+
+1352
+00:50:16,640 --> 00:50:20,080
+except that the squeezing and stretching
+
+1353
+00:50:20,080 --> 00:50:23,520
+are along the 45 degree axes.
+
+1354
+00:50:24,080 --> 00:50:25,240
+Stretch this way,
+
+1355
+00:50:25,240 --> 00:50:27,320
+squeeze this way.
+
+1356
+00:50:28,640 --> 00:50:29,240
+Oscillating.
+
+1357
+00:50:29,620 --> 00:50:30,980
+It's not a new thing.
+
+1358
+00:50:31,180 --> 00:50:32,440
+It's not a new solution,
+
+1359
+00:50:32,440 --> 00:50:35,860
+except that it's the original solution turned by an angle.
+
+1360
+00:50:36,520 --> 00:50:37,440
+In fact,
+
+1361
+00:50:37,440 --> 00:50:39,260
+any solution that you write down,
+
+1362
+00:50:39,260 --> 00:50:43,820
+which is a superposition of these two kinds of solutions,
+
+1363
+00:50:44,140 --> 00:50:46,940
+any solution is a linear superposition of the two solutions,
+
+1364
+00:50:47,180 --> 00:50:51,200
+and they correspond to some orientation of axes,
+
+1365
+00:50:51,400 --> 00:50:54,970
+where along those axes the compression
+
+1366
+00:50:54,970 --> 00:50:58,540
+and expansion are along those tilted axes.
+
+1367
+00:50:58,780 --> 00:50:59,540
+That's all there is.
+
+1368
+00:50:59,620 --> 00:51:03,020
+That's all the kind of gravitational waves there are.
+
+1369
+00:51:03,220 --> 00:51:05,320
+You pick a set of axes perpendicular.
+
+1370
+00:51:05,820 --> 00:51:06,560
+First of all,
+
+1371
+00:51:06,560 --> 00:51:07,900
+you pick the direction that the
+
+1372
+00:51:07,900 --> 00:51:09,240
+gravitational waves are going to go.
+
+1373
+00:51:09,260 --> 00:51:09,360
+The direction that the gravitational wave is moving.
+
+1374
+00:51:10,200 --> 00:51:12,840
+What do you use to measure
+
+1375
+00:51:12,840 --> 00:51:15,480
+this compression that does not change?
+
+1376
+00:51:15,860 --> 00:51:17,580
+A strain gauge.
+
+1377
+00:51:19,720 --> 00:51:22,340
+This will create honest,
+
+1378
+00:51:22,340 --> 00:51:25,660
+real stresses in the piece of plywood.
+
+1379
+00:51:27,420 --> 00:51:30,540
+A strain gauge will register them.
+
+1380
+00:51:32,040 --> 00:51:33,700
+When this wave is going past,
+
+1381
+00:51:33,700 --> 00:51:34,880
+if the wave was static,
+
+1382
+00:51:35,180 --> 00:51:37,680
+if the wave was static and not moving,
+
+1383
+00:51:39,260 --> 00:51:42,860
+then this piece of plywood would really be unaffected.
+
+1384
+00:51:42,900 --> 00:51:44,960
+Everything would be simultaneously squeezed
+
+1385
+00:51:44,960 --> 00:51:47,020
+or stretched the same way.
+
+1386
+00:51:47,120 --> 00:51:49,620
+The rulers which measure the plywood,
+
+1387
+00:51:50,100 --> 00:51:51,960
+the strain gauges which measure,
+
+1388
+00:51:52,100 --> 00:51:54,720
+but it's the oscillating character of the solution
+
+1389
+00:51:54,720 --> 00:51:57,080
+which really does create real
+
+1390
+00:51:57,080 --> 00:51:59,440
+honest stresses and strains in it.
+
+1391
+00:51:59,800 --> 00:52:02,140
+It does have real curvature.
+
+1392
+00:52:03,880 --> 00:52:05,700
+And this is what it does.
+
+1393
+00:52:06,220 --> 00:52:09,160
+What triggers the gravitational waves?
+
+1394
+00:52:09,260 --> 00:52:12,560
+An electromagnetic wave is triggered by currents.
+
+1395
+00:52:13,040 --> 00:52:14,920
+Or by a moving charge.
+
+1396
+00:52:15,140 --> 00:52:16,780
+Or by a charge.
+
+1397
+00:52:17,880 --> 00:52:19,080
+For example,
+
+1398
+00:52:19,080 --> 00:52:23,400
+one charge of an electron going around a proton
+
+1399
+00:52:24,140 --> 00:52:26,020
+will create electromagnetic waves.
+
+1400
+00:52:26,500 --> 00:52:27,800
+The same thing,
+
+1401
+00:52:27,800 --> 00:52:31,170
+a star or a black hole
+
+1402
+00:52:31,170 --> 00:52:34,540
+or a pulsar or whatever it is,
+
+1403
+00:52:34,600 --> 00:52:36,660
+in orbit around another one,
+
+1404
+00:52:36,660 --> 00:52:38,440
+a binary pulsar for example,
+
+1405
+00:52:38,440 --> 00:52:40,380
+the famous binary pulsar,
+
+1406
+00:52:40,560 --> 00:52:41,880
+two very,
+
+1407
+00:52:41,880 --> 00:52:43,300
+very concentrated masses,
+
+1408
+00:52:44,080 --> 00:52:46,420
+which happen to be rotating around
+
+1409
+00:52:46,420 --> 00:52:48,760
+each other at a rather small distance.
+
+1410
+00:52:49,680 --> 00:52:51,260
+Neither one is a black hole.
+
+1411
+00:52:51,480 --> 00:52:53,260
+The whole thing is not a black hole.
+
+1412
+00:52:53,460 --> 00:52:54,640
+But it is a very,
+
+1413
+00:52:54,640 --> 00:52:56,240
+very strong gravitational field.
+
+1414
+00:52:56,360 --> 00:52:57,380
+They're going around each other.
+
+1415
+00:52:57,540 --> 00:52:59,000
+And in going around each other,
+
+1416
+00:52:59,000 --> 00:53:03,040
+the accelerating masses create the gravitational waves.
+
+1417
+00:53:05,220 --> 00:53:05,760
+So,
+
+1418
+00:53:05,760 --> 00:53:08,080
+now near the binary pulsar,
+
+1419
+00:53:09,640 --> 00:53:11,680
+this is a bad approximation.
+
+1420
+00:53:12,980 --> 00:53:15,340
+The gravitational field is too strong
+
+1421
+00:53:15,340 --> 00:53:17,700
+to linearize the equation this way.
+
+1422
+00:53:18,160 --> 00:53:19,200
+But if you get back,
+
+1423
+00:53:19,200 --> 00:53:20,080
+you know,
+
+1424
+00:53:20,080 --> 00:53:23,100
+a few radii,
+
+1425
+00:53:23,100 --> 00:53:25,360
+a few distances away,
+
+1426
+00:53:25,620 --> 00:53:28,480
+then the wave spreads out,
+
+1427
+00:53:28,480 --> 00:53:29,500
+dilutes itself,
+
+1428
+00:53:30,279 --> 00:53:33,440
+and gets weak enough that this becomes a good approximation.
+
+1429
+00:53:34,060 --> 00:53:34,700
+So,
+
+1430
+00:53:34,700 --> 00:53:38,420
+if you had the binary pulsars over there,
+
+1431
+00:53:38,420 --> 00:53:40,180
+and you're standing back,
+
+1432
+00:53:40,180 --> 00:53:41,500
+the wave is coming at you,
+
+1433
+00:53:41,600 --> 00:53:43,780
+let's say the axis between you
+
+1434
+00:53:43,780 --> 00:53:45,960
+and the binary pulsar is the z-axis,
+
+1435
+00:53:46,260 --> 00:53:47,700
+then what you'll see coming
+
+1436
+00:53:47,700 --> 00:53:49,140
+past you will look like this.
+
+1437
+00:53:50,060 --> 00:53:51,710
+And what it will do is
+
+1438
+00:53:51,710 --> 00:53:53,360
+it will cause stresses and strains
+
+1439
+00:53:54,720 --> 00:53:59,040
+along perpendicular to the line of sight to the pulsar.
+
+1440
+00:53:59,780 --> 00:54:00,340
+Yeah?
+
+1441
+00:54:00,680 --> 00:54:01,920
+To clarify,
+
+1442
+00:54:01,920 --> 00:54:04,460
+that red meter stick you have,
+
+1443
+00:54:04,460 --> 00:54:06,080
+is it the red one?
+
+1444
+00:54:06,560 --> 00:54:07,120
+Yeah.
+
+1445
+00:54:07,120 --> 00:54:09,840
+The red meter stick is an abstract meter stick,
+
+1446
+00:54:09,840 --> 00:54:11,600
+not a real physical meter stick?
+
+1447
+00:54:11,600 --> 00:54:11,680
+Well,
+
+1448
+00:54:11,680 --> 00:54:13,080
+it could be a real physical meter stick.
+
+1449
+00:54:13,520 --> 00:54:14,660
+But it changes,
+
+1450
+00:54:14,660 --> 00:54:15,020
+right?
+
+1451
+00:54:15,920 --> 00:54:17,340
+It has stresses in it.
+
+1452
+00:54:17,360 --> 00:54:18,880
+Other than the stresses and strains,
+
+1453
+00:54:18,880 --> 00:54:21,980
+how do you measure it with a variable meter stick?
+
+1454
+00:54:23,220 --> 00:54:23,660
+Well,
+
+1455
+00:54:23,660 --> 00:54:25,230
+I think the way you measure it is by
+
+1456
+00:54:25,230 --> 00:54:26,800
+the stresses and strains that are induced in it.
+
+1457
+00:54:27,000 --> 00:54:27,500
+You know,
+
+1458
+00:54:27,500 --> 00:54:29,840
+it's hard to say that it's not a meter,
+
+1459
+00:54:29,840 --> 00:54:31,640
+because it's by definition a meter stick.
+
+1460
+00:54:33,000 --> 00:54:34,240
+But it's a variable,
+
+1461
+00:54:34,240 --> 00:54:35,260
+in essence,
+
+1462
+00:54:35,260 --> 00:54:35,960
+it's variable.
+
+1463
+00:54:35,960 --> 00:54:36,160
+Yeah,
+
+1464
+00:54:36,160 --> 00:54:37,660
+in fact,
+
+1465
+00:54:37,660 --> 00:54:39,720
+if you had a steel meter
+
+1466
+00:54:39,720 --> 00:54:41,780
+stick and a wood meter stick,
+
+1467
+00:54:42,080 --> 00:54:44,300
+they would probably react differently.
+
+1468
+00:54:44,440 --> 00:54:46,060
+They would probably react differently.
+
+1469
+00:54:46,280 --> 00:54:46,440
+So,
+
+1470
+00:54:46,440 --> 00:54:50,960
+once these stresses are applied,
+
+1471
+00:54:50,960 --> 00:54:53,620
+once the stress due to the curvature tensor here,
+
+1472
+00:54:53,700 --> 00:54:54,380
+and it's a real thing,
+
+1473
+00:54:54,380 --> 00:54:55,240
+the curvature tensor,
+
+1474
+00:54:55,240 --> 00:55:00,120
+it is a kind of tidal force.
+
+1475
+00:55:00,540 --> 00:55:02,680
+Once these tidal forces are applied,
+
+1476
+00:55:02,680 --> 00:55:04,420
+the meter sticks,
+
+1477
+00:55:04,420 --> 00:55:05,480
+the two meter sticks,
+
+1478
+00:55:05,960 --> 00:55:07,420
+the steel one and the wood one,
+
+1479
+00:55:07,420 --> 00:55:10,000
+will stress by different amounts in general.
+
+1480
+00:55:10,779 --> 00:55:11,220
+So,
+
+1481
+00:55:11,220 --> 00:55:13,120
+if you measured the wooden meter
+
+1482
+00:55:13,120 --> 00:55:15,020
+stick with the steel meter stick,
+
+1483
+00:55:15,280 --> 00:55:16,560
+I'm not sure which one would be
+
+1484
+00:55:16,560 --> 00:55:17,840
+bigger and which one would be smaller,
+
+1485
+00:55:18,020 --> 00:55:19,780
+but they wouldn't match up precisely.
+
+1486
+00:55:19,780 --> 00:55:20,320
+Yeah.
+
+1487
+00:55:20,480 --> 00:55:21,860
+Would this be how you
+
+1488
+00:55:21,860 --> 00:55:23,240
+would build a gravity wave detector?
+
+1489
+00:55:24,620 --> 00:55:26,120
+That's kind of the point I was making before.
+
+1490
+00:55:26,480 --> 00:55:29,300
+A steel meter stick has got a big elastic modulus.
+
+1491
+00:55:29,440 --> 00:55:30,800
+It's not going to shrink very
+
+1492
+00:55:30,800 --> 00:55:32,160
+much when the wave goes past.
+
+1493
+00:55:32,320 --> 00:55:33,820
+But if you have two test masses that are
+
+1494
+00:55:33,820 --> 00:55:35,320
+floating right at the ends of the meter stick,
+
+1495
+00:55:35,960 --> 00:55:37,500
+they have no elastic modulus.
+
+1496
+00:55:37,500 --> 00:55:39,300
+They'll move right with the space time.
+
+1497
+00:55:39,580 --> 00:55:40,020
+That's right.
+
+1498
+00:55:40,020 --> 00:55:40,480
+Well,
+
+1499
+00:55:40,480 --> 00:55:41,080
+no.
+
+1500
+00:55:41,940 --> 00:55:42,380
+No,
+
+1501
+00:55:42,380 --> 00:55:46,260
+they won't move quite with the space time.
+
+1502
+00:55:46,440 --> 00:55:47,840
+They'll be accelerated.
+
+1503
+00:55:47,840 --> 00:55:48,360
+Yeah.
+
+1504
+00:55:49,000 --> 00:55:49,440
+So,
+
+1505
+00:55:49,440 --> 00:55:50,380
+they'll start ringing.
+
+1506
+00:55:52,140 --> 00:55:52,580
+Now,
+
+1507
+00:55:52,580 --> 00:55:54,460
+if you want to detect a gravitational wave,
+
+1508
+00:55:55,480 --> 00:55:58,010
+what you want to do is
+
+1509
+00:55:58,010 --> 00:56:00,540
+create some system which has a resonance
+
+1510
+00:56:01,000 --> 00:56:03,300
+at the frequency of the gravitational wave.
+
+1511
+00:56:03,360 --> 00:56:04,360
+You know what a resonance is.
+
+1512
+00:56:04,360 --> 00:56:06,880
+A resonance means that the
+
+1513
+00:56:06,880 --> 00:56:09,400
+system has its own natural frequency,
+
+1514
+00:56:09,620 --> 00:56:11,000
+frequency of oscillation,
+
+1515
+00:56:11,000 --> 00:56:13,130
+which is the same as
+
+1516
+00:56:13,130 --> 00:56:15,260
+the oscillation frequency of the wave.
+
+1517
+00:56:15,520 --> 00:56:18,120
+Then you would have a driven system
+
+1518
+00:56:18,120 --> 00:56:20,720
+being driven at its own natural frequency,
+
+1519
+00:56:20,940 --> 00:56:22,840
+and under those circumstances,
+
+1520
+00:56:22,840 --> 00:56:25,340
+the response will be particularly big.
+
+1521
+00:56:26,740 --> 00:56:27,380
+So,
+
+1522
+00:56:27,380 --> 00:56:29,460
+if you wanted to detect a gravitational wave,
+
+1523
+00:56:30,319 --> 00:56:30,640
+oh,
+
+1524
+00:56:30,640 --> 00:56:32,490
+let me say that the gravitational
+
+1525
+00:56:32,490 --> 00:56:34,340
+waves that we expect to detect
+
+1526
+00:56:34,360 --> 00:56:36,120
+in astronomy from different sources,
+
+1527
+00:56:36,120 --> 00:56:37,060
+I'm not,
+
+1528
+00:56:37,060 --> 00:56:37,780
+believe me,
+
+1529
+00:56:37,780 --> 00:56:38,740
+I'm not an expert at this,
+
+1530
+00:56:38,900 --> 00:56:41,720
+but I know enough about it
+
+1531
+00:56:41,720 --> 00:56:44,540
+to know that the H mu nu,
+
+1532
+00:56:44,660 --> 00:56:49,020
+which are produced by a distant gravitational source,
+
+1533
+00:56:49,180 --> 00:56:50,080
+are very,
+
+1534
+00:56:50,080 --> 00:56:50,820
+very small.
+
+1535
+00:56:51,380 --> 00:56:53,790
+They're so small that the
+
+1536
+00:56:53,790 --> 00:56:56,200
+dimensionless strain on a steel rod
+
+1537
+00:56:56,200 --> 00:56:57,860
+or something like that would be
+
+1538
+00:56:57,860 --> 00:56:59,520
+something like 10 to the minus 21.
+
+1539
+00:57:00,220 --> 00:57:00,780
+Really,
+
+1540
+00:57:00,780 --> 00:57:02,040
+really small effects.
+
+1541
+00:57:02,880 --> 00:57:05,110
+The fact that people even
+
+1542
+00:57:05,110 --> 00:57:07,340
+contemplate measuring them is quite astonishing,
+
+1543
+00:57:08,020 --> 00:57:10,400
+but it seems they can be measured.
+
+1544
+00:57:12,060 --> 00:57:12,660
+And...
+
+1545
+00:57:14,620 --> 00:57:15,220
+No,
+
+1546
+00:57:15,220 --> 00:57:16,480
+no.
+
+1547
+00:57:16,640 --> 00:57:19,300
+There is a system that measures the legal system.
+
+1548
+00:57:20,040 --> 00:57:23,660
+There is a system that is built in two places,
+
+1549
+00:57:23,820 --> 00:57:26,360
+I think one in Louisiana and some other place,
+
+1550
+00:57:27,200 --> 00:57:31,200
+which is measuring the interference of...
+
+1551
+00:57:32,760 --> 00:57:33,680
+Laser waves,
+
+1552
+00:57:33,680 --> 00:57:34,260
+I believe.
+
+1553
+00:57:34,580 --> 00:57:35,520
+I'm not sure what you're asking.
+
+1554
+00:57:36,799 --> 00:57:37,560
+LIGO or...
+
+1555
+00:57:37,560 --> 00:57:37,940
+LIGO.
+
+1556
+00:57:37,980 --> 00:57:38,580
+Yeah.
+
+1557
+00:57:39,060 --> 00:57:40,240
+But they have...
+
+1558
+00:57:40,240 --> 00:57:42,240
+LIGO is a gravitational detector.
+
+1559
+00:57:42,600 --> 00:57:44,080
+It's not sensitive enough.
+
+1560
+00:57:44,240 --> 00:57:45,880
+It's not a steel rod.
+
+1561
+00:57:46,060 --> 00:57:48,620
+It's a pair of mirrors,
+
+1562
+00:57:49,820 --> 00:57:51,900
+which are monitored by laser beams,
+
+1563
+00:57:53,540 --> 00:57:55,440
+interference effects due to the
+
+1564
+00:57:55,440 --> 00:57:57,340
+relative motion and so forth.
+
+1565
+00:57:57,600 --> 00:57:58,660
+But basically,
+
+1566
+00:57:58,660 --> 00:58:00,240
+a gravitational detector
+
+1567
+00:58:00,240 --> 00:58:02,000
+is a system which is
+
+1568
+00:58:02,000 --> 00:58:03,760
+allowed to be set into oscillation
+
+1569
+00:58:03,760 --> 00:58:05,540
+either this way or that way.
+
+1570
+00:58:05,800 --> 00:58:06,280
+And...
+
+1571
+00:58:06,280 --> 00:58:07,020
+Yeah.
+
+1572
+00:58:07,160 --> 00:58:09,560
+Is there a velocity that comes out of those solutions?
+
+1573
+00:58:09,660 --> 00:58:10,020
+Oh,
+
+1574
+00:58:10,020 --> 00:58:10,100
+yeah.
+
+1575
+00:58:10,100 --> 00:58:11,080
+The speed of light.
+
+1576
+00:58:11,360 --> 00:58:11,840
+Okay.
+
+1577
+00:58:11,840 --> 00:58:15,240
+It's not been artificially in advance by...
+
+1578
+00:58:15,240 --> 00:58:15,540
+No,
+
+1579
+00:58:15,540 --> 00:58:15,720
+no.
+
+1580
+00:58:15,720 --> 00:58:16,840
+It's the speed of light.
+
+1581
+00:58:18,160 --> 00:58:19,560
+So if you were...
+
+1582
+00:58:21,140 --> 00:58:23,400
+If you saw a gravitational collapse,
+
+1583
+00:58:23,920 --> 00:58:25,440
+a gravitational collapse
+
+1584
+00:58:26,900 --> 00:58:28,860
+or the collision of two black holes
+
+1585
+00:58:28,860 --> 00:58:29,860
+would make...
+
+1586
+00:58:30,420 --> 00:58:32,880
+And that happens from time to time.
+
+1587
+00:58:33,640 --> 00:58:34,860
+When I say it happens,
+
+1588
+00:58:35,760 --> 00:58:38,100
+I mean to say that you can estimate
+
+1589
+00:58:39,100 --> 00:58:41,160
+roughly from observed facts
+
+1590
+00:58:41,160 --> 00:58:42,860
+how many black holes are out there,
+
+1591
+00:58:43,000 --> 00:58:46,780
+and you can guess how many black hole collisions
+
+1592
+00:58:46,780 --> 00:58:48,700
+take place every year.
+
+1593
+00:58:49,080 --> 00:58:49,920
+And if I remember,
+
+1594
+00:58:49,920 --> 00:58:53,600
+I think within range of such...
+
+1595
+00:58:53,600 --> 00:58:55,860
+of the best imagined detectors...
+
+1596
+00:58:56,880 --> 00:58:57,640
+If I remember,
+
+1597
+00:58:57,640 --> 00:58:58,840
+I think it's about one black hole per year.
+
+1598
+00:58:58,860 --> 00:59:01,360
+So it's a lot.
+
+1599
+00:59:03,140 --> 00:59:03,820
+When...
+
+1600
+00:59:03,820 --> 00:59:04,660
+Right.
+
+1601
+00:59:04,780 --> 00:59:05,220
+So...
+
+1602
+00:59:06,160 --> 00:59:07,240
+In principle,
+
+1603
+00:59:07,500 --> 00:59:10,300
+if it was possible to detect a black hole collision
+
+1604
+00:59:10,300 --> 00:59:14,300
+through other means other than gravitational radiation,
+
+1605
+00:59:15,420 --> 00:59:17,960
+you ought to see the signal
+
+1606
+00:59:17,960 --> 00:59:20,140
+at the same time as the gravitational radiation.
+
+1607
+00:59:23,800 --> 00:59:24,920
+Gravitational radiation
+
+1608
+00:59:24,920 --> 00:59:28,560
+is a pretty weak effect when you're far back.
+
+1609
+00:59:28,600 --> 00:59:28,840
+But it's not...
+
+1610
+00:59:28,840 --> 00:59:31,600
+But from the collision of two black holes,
+
+1611
+00:59:32,560 --> 00:59:34,860
+it's an enormous effect when you're...
+
+1612
+00:59:34,860 --> 00:59:36,420
+It's much bigger than any
+
+1613
+00:59:36,420 --> 00:59:37,980
+other kind of radiation that's emitted.
+
+1614
+00:59:39,540 --> 00:59:43,680
+So if the collision is taking place
+
+1615
+00:59:43,680 --> 00:59:45,920
+at large cosmological distances,
+
+1616
+00:59:46,640 --> 00:59:48,460
+it can be the case that
+
+1617
+00:59:48,460 --> 00:59:50,280
+the only way to detect it
+
+1618
+00:59:50,280 --> 00:59:53,460
+would be through gravitational radiation,
+
+1619
+00:59:53,860 --> 00:59:55,480
+gravitational waves like this.
+
+1620
+00:59:56,000 --> 00:59:57,220
+That's why it's interesting,
+
+1621
+00:59:57,360 --> 00:59:58,600
+because it's a new window
+
+1622
+00:59:58,840 --> 00:59:59,200
+on...
+
+1623
+00:59:59,960 --> 01:00:00,680
+on...
+
+1624
+01:00:01,980 --> 01:00:02,700
+on...
+
+1625
+01:00:02,700 --> 01:00:04,160
+for astronomy.
+
+1626
+01:00:05,120 --> 01:00:05,840
+Okay,
+
+1627
+01:00:05,840 --> 01:00:08,540
+that's what gravitational radiation is,
+
+1628
+01:00:08,580 --> 01:00:10,120
+or that's what gravitational waves are.
+
+1629
+01:00:10,180 --> 01:00:10,600
+They're real.
+
+1630
+01:00:10,740 --> 01:00:11,300
+I mean...
+
+1631
+01:00:13,560 --> 01:00:15,420
+You asked me if gravitational
+
+1632
+01:00:15,420 --> 01:00:17,280
+radiation has ever been detected.
+
+1633
+01:00:18,160 --> 01:00:19,240
+Yes and no.
+
+1634
+01:00:19,340 --> 01:00:21,880
+It's never been detected by direct detectors.
+
+1635
+01:00:22,440 --> 01:00:23,160
+But...
+
+1636
+01:00:24,340 --> 01:00:26,460
+Just like electromagnetic radiation,
+
+1637
+01:00:26,460 --> 01:00:27,400
+for example,
+
+1638
+01:00:27,400 --> 01:00:28,580
+from an orbiting system,
+
+1639
+01:00:29,680 --> 01:00:32,820
+radiation carries off energy.
+
+1640
+01:00:33,800 --> 01:00:36,140
+Carrying off energy means that as
+
+1641
+01:00:36,140 --> 01:00:38,480
+two systems are rotating about each other,
+
+1642
+01:00:38,620 --> 01:00:39,900
+they will lose energy,
+
+1643
+01:00:40,120 --> 01:00:41,360
+and in losing energy,
+
+1644
+01:00:41,360 --> 01:00:42,840
+they may speed up a little bit.
+
+1645
+01:00:42,940 --> 01:00:44,220
+They will speed up a little bit
+
+1646
+01:00:45,300 --> 01:00:47,120
+due to the loss of energy.
+
+1647
+01:00:47,680 --> 01:00:49,300
+And so the study of
+
+1648
+01:00:49,300 --> 01:00:50,920
+this binary pulsar that's out there,
+
+1649
+01:00:50,980 --> 01:00:52,160
+which is...
+
+1650
+01:00:52,160 --> 01:00:55,420
+has all the properties necessary for gravitational radiation
+
+1651
+01:00:55,420 --> 01:00:56,740
+to be emitted from it,
+
+1652
+01:00:56,740 --> 01:00:58,920
+when the timing of the...
+
+1653
+01:01:00,640 --> 01:01:00,960
+procession...
+
+1654
+01:01:01,280 --> 01:01:02,020
+not the procession,
+
+1655
+01:01:02,040 --> 01:01:04,600
+the rotation of the two systems about each other,
+
+1656
+01:01:05,460 --> 01:01:06,140
+they are...
+
+1657
+01:01:06,620 --> 01:01:09,320
+the frequency is changing a little bit in time,
+
+1658
+01:01:09,540 --> 01:01:11,500
+exactly as would be expected,
+
+1659
+01:01:11,640 --> 01:01:14,920
+quantitatively exactly as would be expected from the system
+
+1660
+01:01:14,920 --> 01:01:17,520
+if it were emitting gravitational radiation.
+
+1661
+01:01:19,300 --> 01:01:21,620
+Gravitational radiation is the main thing
+
+1662
+01:01:21,620 --> 01:01:23,980
+which would cause its energy to change,
+
+1663
+01:01:24,560 --> 01:01:26,460
+and it works out exactly right.
+
+1664
+01:01:26,740 --> 01:01:27,200
+So...
+
+1665
+01:01:27,740 --> 01:01:32,100
+What sorts of frequencies are we talking about?
+
+1666
+01:01:33,740 --> 01:01:34,340
+Milliseconds?
+
+1667
+01:01:34,820 --> 01:01:36,440
+I think milliseconds.
+
+1668
+01:01:41,920 --> 01:01:42,520
+Yeah.
+
+1669
+01:01:43,180 --> 01:01:44,040
+I think.
+
+1670
+01:01:44,880 --> 01:01:45,480
+But,
+
+1671
+01:01:45,480 --> 01:01:46,040
+um...
+
+1672
+01:01:46,040 --> 01:01:46,860
+You look it up,
+
+1673
+01:01:46,860 --> 01:01:47,220
+I'm not sure.
+
+1674
+01:01:50,800 --> 01:01:52,760
+It might be a little slower than milliseconds.
+
+1675
+01:01:53,540 --> 01:01:55,130
+Milliseconds is what a pulsar does
+
+1676
+01:01:55,130 --> 01:01:56,720
+when it rotates around its own axis.
+
+1677
+01:01:56,740 --> 01:01:57,900
+It might be a little slower than that.
+
+1678
+01:01:57,940 --> 01:01:59,260
+If I remember correctly,
+
+1679
+01:01:59,260 --> 01:01:59,820
+it's days.
+
+1680
+01:02:00,680 --> 01:02:01,080
+Oh,
+
+1681
+01:02:01,080 --> 01:02:01,480
+days.
+
+1682
+01:02:02,380 --> 01:02:02,780
+Okay,
+
+1683
+01:02:02,780 --> 01:02:03,100
+days.
+
+1684
+01:02:08,500 --> 01:02:08,900
+Yeah,
+
+1685
+01:02:08,900 --> 01:02:09,140
+yeah,
+
+1686
+01:02:09,140 --> 01:02:09,360
+yeah.
+
+1687
+01:02:09,480 --> 01:02:11,080
+This is two stars going around each other.
+
+1688
+01:02:11,140 --> 01:02:11,580
+What am I saying?
+
+1689
+01:02:11,580 --> 01:02:12,160
+Milliseconds?
+
+1690
+01:02:12,160 --> 01:02:12,440
+No.
+
+1691
+01:02:13,680 --> 01:02:15,480
+Milliseconds is for the rotation of the pulsar.
+
+1692
+01:02:15,560 --> 01:02:17,840
+These are two stars going around each other.
+
+1693
+01:02:17,980 --> 01:02:19,020
+It's not the...
+
+1694
+01:02:19,680 --> 01:02:20,660
+Take back what I said.
+
+1695
+01:02:21,360 --> 01:02:21,760
+Okay,
+
+1696
+01:02:21,760 --> 01:02:21,920
+yeah.
+
+1697
+01:02:22,660 --> 01:02:25,560
+We arbitrarily took x and y as two coordinates
+
+1698
+01:02:25,560 --> 01:02:27,820
+that we decided to put them on a flat line.
+
+1699
+01:02:27,980 --> 01:02:29,760
+What about if we took x and t?
+
+1700
+01:02:30,340 --> 01:02:31,340
+In other words,
+
+1701
+01:02:31,340 --> 01:02:33,400
+how would it affect space-time
+
+1702
+01:02:33,400 --> 01:02:35,240
+rather than just the space?
+
+1703
+01:02:37,940 --> 01:02:39,140
+This is the time direction.
+
+1704
+01:02:39,460 --> 01:02:44,420
+The wave has a directionality along which it's moving.
+
+1705
+01:02:47,980 --> 01:02:49,460
+The wave is transverse,
+
+1706
+01:02:50,160 --> 01:02:52,160
+which means the only
+
+1707
+01:02:52,160 --> 01:02:54,160
+components that have physical significance
+
+1708
+01:02:54,160 --> 01:02:56,430
+are the ones in the plane perpendicular
+
+1709
+01:02:56,430 --> 01:02:58,700
+to the direction of motion of the wave.
+
+1710
+01:03:01,020 --> 01:03:08,040
+The other components are either not there
+
+1711
+01:03:08,040 --> 01:03:11,440
+or they correspond to a wiggle in the coordinates.
+
+1712
+01:03:13,560 --> 01:03:16,360
+The other components are either wiggles in the coordinates
+
+1713
+01:03:16,919 --> 01:03:17,800
+or they're not there.
+
+1714
+01:03:19,700 --> 01:03:20,300
+Yeah?
+
+1715
+01:03:20,520 --> 01:03:21,700
+I looked it up.
+
+1716
+01:03:21,800 --> 01:03:24,000
+For the original binary pulsar,
+
+1717
+01:03:24,160 --> 01:03:25,440
+where the detection is done,
+
+1718
+01:03:25,990 --> 01:03:27,700
+it's 7.75 hours.
+
+1719
+01:03:27,900 --> 01:03:28,240
+Okay.
+
+1720
+01:03:30,060 --> 01:03:32,560
+Geometric mean of a day and a million...
+
+1721
+01:03:34,160 --> 01:03:34,660
+Right.
+
+1722
+01:03:34,960 --> 01:03:36,280
+How much has it changed over
+
+1723
+01:03:36,280 --> 01:03:37,600
+the period that it's been observed,
+
+1724
+01:03:37,600 --> 01:03:37,840
+though?
+
+1725
+01:03:45,300 --> 01:03:46,920
+A very small number.
+
+1726
+01:03:49,120 --> 01:03:50,320
+About 30 seconds.
+
+1727
+01:03:51,400 --> 01:03:51,900
+Really?
+
+1728
+01:03:51,900 --> 01:03:52,300
+That much?
+
+1729
+01:03:52,520 --> 01:03:52,840
+Yeah,
+
+1730
+01:03:52,840 --> 01:03:54,140
+but it's been looked at for...
+
+1731
+01:03:54,160 --> 01:03:54,600
+Decades.
+
+1732
+01:03:54,640 --> 01:03:54,800
+Yeah.
+
+1733
+01:03:59,740 --> 01:04:00,180
+So,
+
+1734
+01:04:00,180 --> 01:04:03,460
+time is actually oscillating as well,
+
+1735
+01:04:03,540 --> 01:04:04,400
+like you just said?
+
+1736
+01:04:05,020 --> 01:04:06,840
+It's not time is not oscillating.
+
+1737
+01:04:07,180 --> 01:04:10,080
+The wave is oscillating with time.
+
+1738
+01:04:11,200 --> 01:04:12,480
+If you stood in one place,
+
+1739
+01:04:12,740 --> 01:04:14,580
+the wave would oscillate with time.
+
+1740
+01:04:16,620 --> 01:04:17,060
+Yes,
+
+1741
+01:04:17,060 --> 01:04:18,100
+but you were going to ask.
+
+1742
+01:04:20,319 --> 01:04:20,759
+Well,
+
+1743
+01:04:20,759 --> 01:04:22,120
+but time is one of these coordinates,
+
+1744
+01:04:22,120 --> 01:04:22,420
+right?
+
+1745
+01:04:23,060 --> 01:04:23,500
+Yeah.
+
+1746
+01:04:23,500 --> 01:04:24,880
+In fourth dimensional space.
+
+1747
+01:04:24,980 --> 01:04:25,780
+Time is a coordinate.
+
+1748
+01:04:25,840 --> 01:04:27,580
+And it is orthogonal to z.
+
+1749
+01:04:28,500 --> 01:04:28,940
+No,
+
+1750
+01:04:28,940 --> 01:04:29,060
+no,
+
+1751
+01:04:29,060 --> 01:04:29,200
+no,
+
+1752
+01:04:29,200 --> 01:04:29,340
+no,
+
+1753
+01:04:29,340 --> 01:04:29,440
+no.
+
+1754
+01:04:31,740 --> 01:04:33,900
+When I said orthogonal to z,
+
+1755
+01:04:34,080 --> 01:04:38,800
+I meant the space directions orthogonal to z.
+
+1756
+01:04:39,780 --> 01:04:40,680
+But there is time.
+
+1757
+01:04:41,020 --> 01:04:41,680
+There is time.
+
+1758
+01:04:43,280 --> 01:04:44,880
+And the components of the metric
+
+1759
+01:04:45,460 --> 01:04:47,220
+which have a time component in them
+
+1760
+01:04:47,220 --> 01:04:48,280
+all are equal to zero.
+
+1761
+01:04:49,080 --> 01:04:51,260
+It's very much like an electromagnetic wave.
+
+1762
+01:04:51,260 --> 01:04:54,980
+The electromagnetic wave also has space and time,
+
+1763
+01:04:55,060 --> 01:04:58,160
+or electromagnetic field also has space and time components.
+
+1764
+01:05:00,040 --> 01:05:02,980
+The vector potential has space and time components.
+
+1765
+01:05:03,280 --> 01:05:05,440
+In a wave moving down the z-axis,
+
+1766
+01:05:05,640 --> 01:05:08,660
+only the transverse space components
+
+1767
+01:05:08,660 --> 01:05:11,940
+of the vector potential are there.
+
+1768
+01:05:12,240 --> 01:05:13,460
+So it's very much like that.
+
+1769
+01:05:15,600 --> 01:05:17,370
+You said before that H
+
+1770
+01:05:17,370 --> 01:05:19,140
+zero zero and H zero x,
+
+1771
+01:05:19,240 --> 01:05:19,980
+H zero y,
+
+1772
+01:05:19,980 --> 01:05:20,740
+H zero z,
+
+1773
+01:05:20,740 --> 01:05:21,300
+are all zero.
+
+1774
+01:05:21,520 --> 01:05:21,880
+Yep.
+
+1775
+01:05:22,040 --> 01:05:24,580
+So there's no curvature in the time direction.
+
+1776
+01:05:25,040 --> 01:05:25,300
+Well,
+
+1777
+01:05:25,300 --> 01:05:27,260
+no,
+
+1778
+01:05:27,260 --> 01:05:29,000
+there is curvature in the time direction.
+
+1779
+01:05:29,540 --> 01:05:30,020
+Remember,
+
+1780
+01:05:30,020 --> 01:05:30,660
+some things,
+
+1781
+01:05:30,660 --> 01:05:30,960
+yeah,
+
+1782
+01:05:32,300 --> 01:05:34,720
+the H's in those directions are non-zero,
+
+1783
+01:05:34,820 --> 01:05:35,920
+but when you differentiate,
+
+1784
+01:05:36,160 --> 01:05:38,180
+you can differentiate with respect to time,
+
+1785
+01:05:38,320 --> 01:05:40,100
+and get the time into it,
+
+1786
+01:05:40,100 --> 01:05:40,660
+right.
+
+1787
+01:05:43,420 --> 01:05:43,900
+So,
+
+1788
+01:05:43,900 --> 01:05:46,660
+derivative of H,
+
+1789
+01:05:46,660 --> 01:05:47,420
+let's say,
+
+1790
+01:05:47,420 --> 01:05:48,100
+x,
+
+1791
+01:05:48,100 --> 01:05:48,440
+y,
+
+1792
+01:05:48,460 --> 01:05:49,800
+with respect to t,
+
+1793
+01:05:49,800 --> 01:05:51,960
+is not equal to zero.
+
+1794
+01:05:52,200 --> 01:05:52,880
+And remember,
+
+1795
+01:05:52,880 --> 01:05:55,500
+the curvature tensor has two derivatives on H,
+
+1796
+01:05:55,700 --> 01:05:57,600
+so you can get a whole
+
+1797
+01:05:57,600 --> 01:05:59,500
+collection of different kind of components.
+
+1798
+01:06:00,000 --> 01:06:00,340
+Yeah.
+
+1799
+01:06:01,560 --> 01:06:02,160
+Yeah.
+
+1800
+01:06:04,140 --> 01:06:05,000
+But still,
+
+1801
+01:06:05,000 --> 01:06:06,820
+it's a very special kind of curvature
+
+1802
+01:06:07,520 --> 01:06:09,020
+that's not generic.
+
+1803
+01:06:14,960 --> 01:06:15,560
+Okay,
+
+1804
+01:06:15,560 --> 01:06:16,860
+that's gravitational waves.
+
+1805
+01:06:18,640 --> 01:06:19,580
+You can,
+
+1806
+01:06:19,660 --> 01:06:19,780
+you can,
+
+1807
+01:06:20,960 --> 01:06:22,950
+learn more about them by
+
+1808
+01:06:22,950 --> 01:06:24,940
+any good book on general relativity,
+
+1809
+01:06:25,200 --> 01:06:26,300
+which will assault,
+
+1810
+01:06:26,420 --> 01:06:26,800
+work,
+
+1811
+01:06:26,800 --> 01:06:29,100
+write down the details of these equations.
+
+1812
+01:06:30,180 --> 01:06:31,340
+You know they will,
+
+1813
+01:06:31,340 --> 01:06:33,700
+and we'll fill about one blackboard,
+
+1814
+01:06:34,960 --> 01:06:37,040
+but it won't be terribly illuminating.
+
+1815
+01:06:38,720 --> 01:06:39,840
+But uh...
+
+1816
+01:06:39,840 --> 01:06:42,720
+the basic principle I've told you.
+
+1817
+01:06:43,880 --> 01:06:44,920
+Any other questions?
+
+1818
+01:06:45,140 --> 01:06:45,320
+Yeah?
+
+1819
+01:06:45,620 --> 01:06:47,600
+So we start out with detto-
+
+1820
+01:06:48,240 --> 01:06:49,100
+Einstein's equations,
+
+1821
+01:06:49,100 --> 01:06:50,320
+equations which are non-linear,
+
+1822
+01:06:50,320 --> 01:06:52,280
+we wind up with a wave
+
+1823
+01:06:52,280 --> 01:06:54,240
+equation which I believe is linear.
+
+1824
+01:06:54,920 --> 01:06:57,430
+Only because we made the
+
+1825
+01:06:57,430 --> 01:06:59,940
+approximation of a very small h.
+
+1826
+01:07:00,300 --> 01:07:00,860
+Okay,
+
+1827
+01:07:00,860 --> 01:07:02,250
+so it's got nothing to do
+
+1828
+01:07:02,250 --> 01:07:03,640
+with getting rid of the non-physical solutions?
+
+1829
+01:07:04,020 --> 01:07:04,320
+No,
+
+1830
+01:07:04,320 --> 01:07:05,060
+no,
+
+1831
+01:07:05,060 --> 01:07:05,160
+no.
+
+1832
+01:07:05,160 --> 01:07:08,980
+The linearity is because the wave is weak.
+
+1833
+01:07:10,960 --> 01:07:11,880
+Generally speaking,
+
+1834
+01:07:11,880 --> 01:07:13,060
+I tried to explain before,
+
+1835
+01:07:13,060 --> 01:07:16,320
+small oscillations about an equilibrium
+
+1836
+01:07:16,320 --> 01:07:19,170
+and the approximation that the
+
+1837
+01:07:19,170 --> 01:07:22,020
+oscillation is very small are linear.
+
+1838
+01:07:23,220 --> 01:07:26,170
+This is linear because of an approximation that h
+
+1839
+01:07:26,170 --> 01:07:29,120
+is so small that the square of it is zero.
+
+1840
+01:07:33,660 --> 01:07:34,640
+Any other questions?
+
+1841
+01:07:34,640 --> 01:07:35,680
+Yes?
+
+1842
+01:07:35,980 --> 01:07:39,900
+If you do this approximation like we did and then you go back
+
+1843
+01:07:39,900 --> 01:07:43,820
+at the end and see how far off it was from an accurate solution,
+
+1844
+01:07:44,040 --> 01:07:46,180
+how much error is there?
+
+1845
+01:07:48,200 --> 01:07:49,260
+Depends how big h is.
+
+1846
+01:07:51,460 --> 01:07:53,580
+If h is .001,
+
+1847
+01:07:53,580 --> 01:07:56,860
+the corrections will be .00...
+
+1848
+01:07:57,880 --> 01:07:59,120
+If h is 1 tenth,
+
+1849
+01:07:59,120 --> 01:08:00,760
+the corrections will be 1%.
+
+1850
+01:08:04,240 --> 01:08:05,580
+Whatever h is,
+
+1851
+01:08:05,580 --> 01:08:08,100
+the corrections will be of order the square of it.
+
+1852
+01:08:09,500 --> 01:08:09,960
+Yeah.
+
+1853
+01:08:10,660 --> 01:08:11,280
+So right,
+
+1854
+01:08:11,280 --> 01:08:14,240
+so that's something you always do.
+
+1855
+01:08:14,240 --> 01:08:17,180
+When you make a linearized approximation,
+
+1856
+01:08:17,180 --> 01:08:21,649
+you always check at the end that
+
+1857
+01:08:21,649 --> 01:08:26,120
+the corrections to it would be small.
+
+1858
+01:08:27,380 --> 01:08:31,020
+But they will be if h is small enough.
+
+1859
+01:08:33,899 --> 01:08:34,460
+Yes?
+
+1860
+01:08:34,640 --> 01:08:37,430
+If you make h much larger so
+
+1861
+01:08:37,430 --> 01:08:40,220
+there is a component of a higher order,
+
+1862
+01:08:40,220 --> 01:08:42,220
+would that affect the fact that i
+
+1863
+01:08:42,220 --> 01:08:44,220
+and j are perpendicular to the z-axis?
+
+1864
+01:08:44,220 --> 01:08:45,720
+Would that...
+
+1865
+01:08:47,300 --> 01:08:47,920
+No.
+
+1866
+01:08:48,540 --> 01:08:49,160
+No.
+
+1867
+01:08:50,800 --> 01:08:54,670
+But what it will affect is
+
+1868
+01:08:54,670 --> 01:08:58,540
+whether waves will pass through each other.
+
+1869
+01:08:59,260 --> 01:09:00,240
+They won't.
+
+1870
+01:09:00,240 --> 01:09:01,979
+They will scatter off each other.
+
+1871
+01:09:03,100 --> 01:09:03,720
+Right.
+
+1872
+01:09:06,020 --> 01:09:06,640
+No,
+
+1873
+01:09:06,640 --> 01:09:08,720
+the wave will maintain...that's a good question,
+
+1874
+01:09:08,720 --> 01:09:11,200
+but the wave will maintain its transverse character.
+
+1875
+01:09:11,960 --> 01:09:12,580
+Yeah.
+
+1876
+01:09:12,580 --> 01:09:15,359
+In the mechanical wave,
+
+1877
+01:09:15,359 --> 01:09:19,769
+the magnitude of the mechanical wave is related
+
+1878
+01:09:19,769 --> 01:09:24,180
+to the energy and the stiffness of the material.
+
+1879
+01:09:24,779 --> 01:09:27,340
+The energy and the stiffness of the material,
+
+1880
+01:09:27,340 --> 01:09:27,500
+yeah.
+
+1881
+01:09:28,540 --> 01:09:30,069
+Is there any sense in talking
+
+1882
+01:09:30,069 --> 01:09:31,600
+about the stiffness of the material?
+
+1883
+01:09:31,600 --> 01:09:31,800
+Yeah,
+
+1884
+01:09:31,800 --> 01:09:32,439
+yeah.
+
+1885
+01:09:33,500 --> 01:09:36,080
+The stiffness of a material determines
+
+1886
+01:09:36,080 --> 01:09:38,660
+the velocity of propagation through the material.
+
+1887
+01:09:39,300 --> 01:09:41,220
+So you can substitute for stiffness.
+
+1888
+01:09:41,220 --> 01:09:43,060
+You can substitute velocity of propagation.
+
+1889
+01:09:45,600 --> 01:09:48,220
+Electromagnetic and gravitational waves are extremely stiff.
+
+1890
+01:09:48,380 --> 01:09:51,069
+They are the stiffest things possible
+
+1891
+01:09:51,069 --> 01:09:53,760
+in that the speed of light...
+
+1892
+01:09:53,760 --> 01:09:54,630
+And that they are both
+
+1893
+01:09:54,630 --> 01:09:55,500
+governed by the speed of light.
+
+1894
+01:09:56,140 --> 01:09:57,180
+So the...you know,
+
+1895
+01:09:57,180 --> 01:10:00,340
+in the old days when people thought about the
+
+1896
+01:10:00,340 --> 01:10:03,500
+ether and things and the mechanical properties of the ether,
+
+1897
+01:10:04,099 --> 01:10:07,100
+they attributed a stiffness...what is it called?
+
+1898
+01:10:07,140 --> 01:10:09,540
+A Young's modulus or whatever it's called to...
+
+1899
+01:10:09,540 --> 01:10:11,640
+To the ether.
+
+1900
+01:10:12,480 --> 01:10:14,000
+And it was a very,
+
+1901
+01:10:14,000 --> 01:10:16,340
+very big Young...a very,
+
+1902
+01:10:16,340 --> 01:10:18,420
+very big coefficient of whatever it's called
+
+1903
+01:10:19,020 --> 01:10:21,020
+because the speed of light is so
+
+1904
+01:10:21,020 --> 01:10:23,020
+much larger than the speed of propagation,
+
+1905
+01:10:23,020 --> 01:10:23,900
+for example,
+
+1906
+01:10:23,900 --> 01:10:24,800
+through a metal beam.
+
+1907
+01:10:26,960 --> 01:10:27,440
+So...
+
+1908
+01:10:30,740 --> 01:10:33,540
+We no longer really think of it as a stiffness,
+
+1909
+01:10:34,500 --> 01:10:36,560
+but if you did think about it as a stiffness,
+
+1910
+01:10:36,560 --> 01:10:38,280
+you would say that the...
+
+1911
+01:10:39,540 --> 01:10:42,560
+the space on which these waves move is very stiff.
+
+1912
+01:10:43,440 --> 01:10:44,000
+Well,
+
+1913
+01:10:44,000 --> 01:10:46,220
+it's really the stiffness divided by the density,
+
+1914
+01:10:46,220 --> 01:10:46,640
+isn't it?
+
+1915
+01:10:46,780 --> 01:10:47,060
+Mm-hmm.
+
+1916
+01:10:48,419 --> 01:10:51,640
+So either it's very stiff or there's not much density.
+
+1917
+01:10:52,220 --> 01:10:52,780
+Yeah.
+
+1918
+01:10:52,880 --> 01:10:57,040
+And only the combination of them appears in
+
+1919
+01:10:57,040 --> 01:11:01,200
+the...in the propagation of...in the propagation of light.
+
+1920
+01:11:02,280 --> 01:11:02,840
+Right.
+
+1921
+01:11:03,200 --> 01:11:03,960
+That's true.
+
+1922
+01:11:04,060 --> 01:11:04,980
+It's just one combination,
+
+1923
+01:11:04,980 --> 01:11:06,660
+namely the velocity which appears.
+
+1924
+01:11:08,840 --> 01:11:09,400
+Right.
+
+1925
+01:11:10,120 --> 01:11:11,060
+True enough.
+
+1926
+01:11:16,120 --> 01:11:16,600
+Okay.
+
+1927
+01:11:18,560 --> 01:11:19,040
+Let's...
+
+1928
+01:11:23,320 --> 01:11:25,160
+In the little bit of time that we have,
+
+1929
+01:11:27,100 --> 01:11:29,770
+I just wanted to tell you about another
+
+1930
+01:11:29,770 --> 01:11:32,440
+way of thinking about the equations of general relativity.
+
+1931
+01:11:34,720 --> 01:11:35,200
+Again...
+
+1932
+01:11:39,719 --> 01:11:43,359
+The complexity of actually carrying
+
+1933
+01:11:43,359 --> 01:11:47,000
+out the equations is too complicated,
+
+1934
+01:11:47,220 --> 01:11:48,400
+but nevertheless,
+
+1935
+01:11:48,400 --> 01:11:50,660
+the basic idea is there.
+
+1936
+01:11:52,480 --> 01:11:54,080
+One of the things I've
+
+1937
+01:11:54,080 --> 01:11:55,680
+told you and emphasized to you,
+
+1938
+01:11:55,680 --> 01:11:56,960
+particularly in classical mechanics,
+
+1939
+01:11:58,160 --> 01:12:01,740
+is that the principle of least action is the
+
+1940
+01:12:01,740 --> 01:12:05,320
+most central principle of classical physics that we have.
+
+1941
+01:12:05,720 --> 01:12:07,940
+All systems that we know about...
+
+1942
+01:12:09,500 --> 01:12:10,680
+Mechanical systems,
+
+1943
+01:12:10,680 --> 01:12:12,720
+electromagnetic radiation,
+
+1944
+01:12:12,720 --> 01:12:15,480
+quantum field theory,
+
+1945
+01:12:15,480 --> 01:12:16,960
+all of these things,
+
+1946
+01:12:17,100 --> 01:12:19,380
+the standard model of particle physics,
+
+1947
+01:12:19,380 --> 01:12:21,780
+they're all governed by an action principle.
+
+1948
+01:12:23,020 --> 01:12:26,000
+And the action is something which in field theory,
+
+1949
+01:12:26,000 --> 01:12:28,480
+in...for ordinary particle mechanics,
+
+1950
+01:12:28,980 --> 01:12:31,120
+the action is an integral
+
+1951
+01:12:31,120 --> 01:12:33,260
+along the trajectory of the particle,
+
+1952
+01:12:33,260 --> 01:12:35,400
+so it's an integral over time.
+
+1953
+01:12:36,100 --> 01:12:38,280
+The action of a field...
+
+1954
+01:12:38,280 --> 01:12:40,900
+is an integral over space and time.
+
+1955
+01:12:41,540 --> 01:12:44,120
+A field configuration is a value of the
+
+1956
+01:12:44,120 --> 01:12:46,700
+field at every point of space and time.
+
+1957
+01:12:47,320 --> 01:12:47,840
+So,
+
+1958
+01:12:47,840 --> 01:12:48,500
+we draw.
+
+1959
+01:12:48,500 --> 01:12:49,440
+Here's space-time.
+
+1960
+01:12:49,440 --> 01:12:50,660
+All of it.
+
+1961
+01:12:51,699 --> 01:12:54,080
+I've gotten it all down onto the blackboard.
+
+1962
+01:12:54,500 --> 01:12:55,780
+Time goes this way.
+
+1963
+01:12:55,780 --> 01:12:57,580
+Space goes this way.
+
+1964
+01:12:58,180 --> 01:12:58,980
+Here's everything.
+
+1965
+01:12:59,180 --> 01:13:00,840
+A field configuration,
+
+1966
+01:13:00,840 --> 01:13:02,360
+or a field history,
+
+1967
+01:13:02,360 --> 01:13:03,060
+even better,
+
+1968
+01:13:03,060 --> 01:13:03,780
+a field history,
+
+1969
+01:13:03,980 --> 01:13:07,740
+is just labeled by...is basically a value of the field,
+
+1970
+01:13:07,740 --> 01:13:08,140
+or...
+
+1971
+01:13:08,280 --> 01:13:08,780
+fields,
+
+1972
+01:13:08,780 --> 01:13:11,140
+at every point on here.
+
+1973
+01:13:11,540 --> 01:13:12,140
+So,
+
+1974
+01:13:12,140 --> 01:13:13,520
+it's some field,
+
+1975
+01:13:13,520 --> 01:13:14,920
+let's call it generically phi,
+
+1976
+01:13:15,240 --> 01:13:17,060
+and it's a function of x and t,
+
+1977
+01:13:17,300 --> 01:13:19,460
+and that's a field configuration.
+
+1978
+01:13:20,080 --> 01:13:22,020
+Not every configuration is a solution
+
+1979
+01:13:22,020 --> 01:13:23,960
+of the equations of a theory.
+
+1980
+01:13:24,520 --> 01:13:26,480
+Just like not every trajectory...
+
+1981
+01:13:27,379 --> 01:13:29,780
+is a solution of the equations of motion,
+
+1982
+01:13:30,060 --> 01:13:33,340
+every trajectory is a thinkable trajectory,
+
+1983
+01:13:33,860 --> 01:13:37,020
+but not every trajectory satisfies the equations of motion.
+
+1984
+01:13:37,020 --> 01:13:38,440
+In the same way,
+
+1985
+01:13:38,440 --> 01:13:40,940
+every phi of x and t is a thinkable
+
+1986
+01:13:40,940 --> 01:13:43,440
+possible value of a field in space and time,
+
+1987
+01:13:43,600 --> 01:13:45,200
+but they're not all solutions.
+
+1988
+01:13:46,639 --> 01:13:47,240
+And,
+
+1989
+01:13:47,240 --> 01:13:48,340
+in general,
+
+1990
+01:13:48,340 --> 01:13:50,000
+to the best of our knowledge,
+
+1991
+01:13:50,280 --> 01:13:53,380
+every such field is governed
+
+1992
+01:13:53,380 --> 01:13:56,480
+by a principle of least action.
+
+1993
+01:13:56,800 --> 01:14:00,220
+The principle of least action involves some action,
+
+1994
+01:14:02,400 --> 01:14:04,940
+which is composed out of the fields.
+
+1995
+01:14:05,140 --> 01:14:06,440
+This is just a generic...
+
+1996
+01:14:07,020 --> 01:14:07,740
+term for field.
+
+1997
+01:14:08,740 --> 01:14:09,860
+It's an integral...
+
+1998
+01:14:10,780 --> 01:14:12,840
+it's an integral over space and time,
+
+1999
+01:14:12,940 --> 01:14:13,780
+dx,
+
+2000
+01:14:13,780 --> 01:14:15,240
+dt,
+
+2001
+01:14:15,520 --> 01:14:17,360
+and x now means x,
+
+2002
+01:14:17,360 --> 01:14:17,640
+y,
+
+2003
+01:14:17,640 --> 01:14:18,000
+and z,
+
+2004
+01:14:18,160 --> 01:14:19,740
+so it's a four-dimensional integral,
+
+2005
+01:14:20,480 --> 01:14:22,040
+of some thing,
+
+2006
+01:14:22,040 --> 01:14:24,220
+usually called the Lagrange density,
+
+2007
+01:14:25,299 --> 01:14:27,260
+which is a function of the fields,
+
+2008
+01:14:27,900 --> 01:14:28,760
+and their derivatives.
+
+2009
+01:14:29,400 --> 01:14:31,540
+Let's call them phi sub mu,
+
+2010
+01:14:31,740 --> 01:14:33,840
+derivatives of the field with respect to x mu.
+
+2011
+01:14:34,560 --> 01:14:35,860
+And what do you do with this?
+
+2012
+01:14:37,020 --> 01:14:37,600
+You minimize it,
+
+2013
+01:14:37,600 --> 01:14:38,980
+or you make it stationary.
+
+2014
+01:14:39,340 --> 01:14:41,360
+You find the field configurations,
+
+2015
+01:14:42,880 --> 01:14:43,920
+let's use shorthand,
+
+2016
+01:14:44,140 --> 01:14:45,680
+which minimize the action,
+
+2017
+01:14:46,700 --> 01:14:48,020
+subject to a constraint.
+
+2018
+01:14:49,540 --> 01:14:54,420
+You go out to a large space,
+
+2019
+01:14:54,680 --> 01:14:56,340
+some large distance,
+
+2020
+01:14:56,600 --> 01:14:58,160
+and some large times.
+
+2021
+01:14:58,720 --> 01:15:00,780
+You take some region of space-time,
+
+2022
+01:15:01,060 --> 01:15:06,160
+and you say what the values are on the boundary.
+
+2023
+01:15:07,020 --> 01:15:08,240
+It's the same deal as when
+
+2024
+01:15:08,240 --> 01:15:09,460
+you look at a particle motion,
+
+2025
+01:15:10,040 --> 01:15:11,980
+and you say I'm interested in the solution,
+
+2026
+01:15:12,160 --> 01:15:14,160
+given that the particle goes through two points.
+
+2027
+01:15:15,000 --> 01:15:17,900
+Given that the particle starts someplace,
+
+2028
+01:15:18,280 --> 01:15:19,280
+and ends someplace,
+
+2029
+01:15:20,719 --> 01:15:22,840
+then what's the trajectory in between?
+
+2030
+01:15:23,380 --> 01:15:24,340
+In the same way,
+
+2031
+01:15:24,340 --> 01:15:24,660
+you say,
+
+2032
+01:15:24,660 --> 01:15:26,100
+supposing you know that the field,
+
+2033
+01:15:26,200 --> 01:15:27,200
+at some late time,
+
+2034
+01:15:27,200 --> 01:15:28,040
+has some value,
+
+2035
+01:15:28,820 --> 01:15:29,780
+let's say final,
+
+2036
+01:15:31,819 --> 01:15:32,860
+phi initial,
+
+2037
+01:15:35,759 --> 01:15:36,780
+and you ask,
+
+2038
+01:15:36,780 --> 01:15:40,560
+what is the solution which interpolates between these two?
+
+2039
+01:15:40,840 --> 01:15:44,080
+The answer will be the field that,
+
+2040
+01:15:44,700 --> 01:15:47,840
+or the solutions that make the action stationary.
+
+2041
+01:15:48,840 --> 01:15:49,420
+Okay,
+
+2042
+01:15:49,420 --> 01:15:52,300
+so the point here is that the field equations,
+
+2043
+01:15:52,440 --> 01:15:53,900
+the Einstein field equations,
+
+2044
+01:15:53,980 --> 01:15:57,640
+can be derived from an action principle.
+
+2045
+01:15:58,340 --> 01:15:59,740
+It's a long computation,
+
+2046
+01:16:00,020 --> 01:16:01,680
+but the action is simple.
+
+2047
+01:16:02,540 --> 01:16:04,760
+I'm just going to tell you what the action is,
+
+2048
+01:16:04,760 --> 01:16:06,960
+and then you can go home,
+
+2049
+01:16:10,100 --> 01:16:12,020
+and try to take that action,
+
+2050
+01:16:12,160 --> 01:16:15,940
+and apply the Euler Lagrange equations to it,
+
+2051
+01:16:16,060 --> 01:16:18,900
+and see if you can derive Einstein's field equations.
+
+2052
+01:16:20,280 --> 01:16:22,080
+I guarantee you it can be done.
+
+2053
+01:16:22,720 --> 01:16:24,960
+I also can tell you I never finished it.
+
+2054
+01:16:25,800 --> 01:16:27,500
+I started it several times,
+
+2055
+01:16:27,620 --> 01:16:29,640
+and never quite got to the end of it.
+
+2056
+01:16:30,180 --> 01:16:30,660
+Uh,
+
+2057
+01:16:33,300 --> 01:16:34,300
+but it is,
+
+2058
+01:16:34,300 --> 01:16:35,160
+it's just tedious.
+
+2059
+01:16:35,500 --> 01:16:36,180
+It's straightforward,
+
+2060
+01:16:36,180 --> 01:16:36,960
+but tedious.
+
+2061
+01:16:37,700 --> 01:16:38,220
+Alright,
+
+2062
+01:16:38,220 --> 01:16:38,940
+so you go back,
+
+2063
+01:16:38,960 --> 01:16:40,540
+and you look at Euler Lagrange equations,
+
+2064
+01:16:40,800 --> 01:16:41,980
+I'll tell you what the action is.
+
+2065
+01:16:42,080 --> 01:16:43,720
+It has some interesting pieces in it.
+
+2066
+01:16:45,200 --> 01:16:46,300
+First of all,
+
+2067
+01:16:47,580 --> 01:16:49,800
+let's do a simpler thing first.
+
+2068
+01:16:50,500 --> 01:16:53,500
+Let's just calculate the space-time volume.
+
+2069
+01:16:53,820 --> 01:16:54,880
+I will tell you what I mean,
+
+2070
+01:16:54,940 --> 01:16:55,040
+but,
+
+2071
+01:16:55,040 --> 01:16:55,360
+well,
+
+2072
+01:16:55,360 --> 01:16:58,880
+let's actually even think about ordinary space for a minute.
+
+2073
+01:16:59,280 --> 01:17:01,280
+Let's suppose we have ordinary space,
+
+2074
+01:17:01,280 --> 01:17:04,340
+and it has a metric,
+
+2075
+01:17:04,600 --> 01:17:06,360
+g m n.
+
+2076
+01:17:06,760 --> 01:17:07,860
+When I'm thinking about space,
+
+2077
+01:17:07,860 --> 01:17:08,700
+I use m n.
+
+2078
+01:17:08,940 --> 01:17:12,560
+g m n dx m dx n.
+
+2079
+01:17:13,560 --> 01:17:14,620
+That's the metric,
+
+2080
+01:17:14,860 --> 01:17:15,940
+ds squared.
+
+2081
+01:17:16,280 --> 01:17:18,110
+The distance between two neighboring
+
+2082
+01:17:18,110 --> 01:17:19,940
+points is given by this formula.
+
+2083
+01:17:21,020 --> 01:17:23,840
+Now supposing I'm interested in the
+
+2084
+01:17:23,840 --> 01:17:26,660
+volume of a small region of space,
+
+2085
+01:17:26,980 --> 01:17:28,700
+let's say dx dy.
+
+2086
+01:17:32,099 --> 01:17:36,660
+Let me begin by supposing the metric has two components,
+
+2087
+01:17:37,000 --> 01:17:39,220
+g x x and g y y.
+
+2088
+01:17:41,540 --> 01:17:43,150
+And I have a small interval
+
+2089
+01:17:43,150 --> 01:17:44,760
+dx and a small interval dy.
+
+2090
+01:17:45,480 --> 01:17:47,820
+I want to know the area,
+
+2091
+01:17:48,060 --> 01:17:49,140
+and we'll call it the volume.
+
+2092
+01:17:49,340 --> 01:17:51,860
+Volume means three dimensions,
+
+2093
+01:17:52,799 --> 01:17:54,260
+area means two dimensions,
+
+2094
+01:17:54,460 --> 01:17:55,520
+but they're the same concept.
+
+2095
+01:17:56,320 --> 01:17:56,840
+Okay,
+
+2096
+01:17:56,840 --> 01:17:58,080
+what's the area of this,
+
+2097
+01:17:58,740 --> 01:17:59,580
+little square?
+
+2098
+01:18:00,100 --> 01:18:01,700
+The area of the little square,
+
+2099
+01:18:01,700 --> 01:18:02,640
+I would know it
+
+2100
+01:18:03,240 --> 01:18:05,680
+if I knew the distance,
+
+2101
+01:18:05,920 --> 01:18:08,760
+the actual proper distance associated with dx,
+
+2102
+01:18:09,020 --> 01:18:11,420
+and the actual proper distance associated with dy.
+
+2103
+01:18:12,720 --> 01:18:13,280
+Alright,
+
+2104
+01:18:13,280 --> 01:18:15,270
+what's the proper distance associated
+
+2105
+01:18:15,270 --> 01:18:17,260
+with a little x dx here?
+
+2106
+01:18:23,020 --> 01:18:24,560
+Square root of g x x,
+
+2107
+01:18:27,580 --> 01:18:29,760
+square root of g x x,
+
+2108
+01:18:29,760 --> 01:18:31,060
+dx.
+
+2109
+01:18:32,220 --> 01:18:33,280
+Can you read that?
+
+2110
+01:18:34,980 --> 01:18:36,080
+Let's make it bigger.
+
+2111
+01:18:41,100 --> 01:18:43,880
+This distance is square root of g x x,
+
+2112
+01:18:43,880 --> 01:18:45,260
+dx,
+
+2113
+01:18:45,580 --> 01:18:48,780
+and this distance is square root of g y y,
+
+2114
+01:18:48,780 --> 01:18:50,960
+dy.
+
+2115
+01:18:50,960 --> 01:18:51,780
+So,
+
+2116
+01:18:51,780 --> 01:18:54,540
+what's the area of the rectangle?
+
+2117
+01:18:55,140 --> 01:18:56,880
+It's square root of g x x,
+
+2118
+01:18:56,880 --> 01:18:58,160
+square root of g y y,
+
+2119
+01:18:58,160 --> 01:19:05,980
+dx,
+
+2120
+01:19:05,980 --> 01:19:06,340
+dy.
+
+2121
+01:19:07,960 --> 01:19:09,160
+It's not just the x,
+
+2122
+01:19:09,160 --> 01:19:09,340
+dy.
+
+2123
+01:19:09,600 --> 01:19:10,690
+The important thing is it's not
+
+2124
+01:19:10,690 --> 01:19:11,780
+just the x or the y.
+
+2125
+01:19:12,260 --> 01:19:14,370
+No more so than the distance between two
+
+2126
+01:19:14,370 --> 01:19:16,480
+points is just the x or the y.
+
+2127
+01:19:17,460 --> 01:19:19,200
+The actual physical area is the
+
+2128
+01:19:19,200 --> 01:19:20,940
+square root of g x x,
+
+2129
+01:19:20,940 --> 01:19:20,940
+dy.
+
+2130
+01:19:20,940 --> 01:19:21,870
+The actual physical area in this case
+
+2131
+01:19:21,870 --> 01:19:22,800
+is the square root of g x x,
+
+2132
+01:19:22,800 --> 01:19:23,460
+g y y.
+
+2133
+01:19:24,320 --> 01:19:24,760
+Now,
+
+2134
+01:19:24,760 --> 01:19:27,450
+I've used a case here where there was
+
+2135
+01:19:27,450 --> 01:19:30,140
+only g x x and g y y.
+
+2136
+01:19:30,320 --> 01:19:32,480
+There could be other components of the metric.
+
+2137
+01:19:33,280 --> 01:19:34,580
+If you work it out,
+
+2138
+01:19:34,580 --> 01:19:36,820
+this is a special case.
+
+2139
+01:19:36,960 --> 01:19:38,770
+This is a special case where
+
+2140
+01:19:38,770 --> 01:19:40,580
+there's no off-diagonal g x y term.
+
+2141
+01:19:41,320 --> 01:19:41,760
+Here,
+
+2142
+01:19:41,760 --> 01:19:42,940
+let's think of it this way.
+
+2143
+01:19:43,040 --> 01:19:43,760
+You have a metric,
+
+2144
+01:19:43,760 --> 01:19:44,820
+you have a matrix,
+
+2145
+01:19:44,820 --> 01:19:46,700
+g x x,
+
+2146
+01:19:46,700 --> 01:19:48,320
+g y y.
+
+2147
+01:19:49,760 --> 01:19:50,200
+Now,
+
+2148
+01:19:50,940 --> 01:19:52,920
+there may be some other components here,
+
+2149
+01:19:52,920 --> 01:19:55,360
+g x y and g x y.
+
+2150
+01:19:56,920 --> 01:19:59,400
+But what I tell you is that when
+
+2151
+01:19:59,400 --> 01:20:01,880
+there's no g x x and g y y,
+
+2152
+01:20:01,880 --> 01:20:02,180
+sorry,
+
+2153
+01:20:02,180 --> 01:20:03,900
+when there's no off-diagonal components,
+
+2154
+01:20:04,540 --> 01:20:08,160
+the volume element involves the product of g x x,
+
+2155
+01:20:08,160 --> 01:20:08,820
+g y y.
+
+2156
+01:20:08,980 --> 01:20:10,780
+Can you guess what the general formula is?
+
+2157
+01:20:11,340 --> 01:20:12,940
+What replaces that product?
+
+2158
+01:20:13,580 --> 01:20:14,680
+The determinant.
+
+2159
+01:20:15,380 --> 01:20:17,360
+The determinant is g x x,
+
+2160
+01:20:17,360 --> 01:20:19,440
+g y y minus g x y squared.
+
+2161
+01:20:21,120 --> 01:20:23,060
+The determinant is exactly right.
+
+2162
+01:20:23,360 --> 01:20:23,880
+So,
+
+2163
+01:20:23,880 --> 01:20:26,570
+if you actually work out the volume
+
+2164
+01:20:26,570 --> 01:20:29,260
+element of a little square like this,
+
+2165
+01:20:29,300 --> 01:20:31,440
+or a little rectangle,
+
+2166
+01:20:31,440 --> 01:20:32,440
+v x d y,
+
+2167
+01:20:32,680 --> 01:20:35,300
+the actual answer is not g x x,
+
+2168
+01:20:35,300 --> 01:20:35,900
+g y y.
+
+2169
+01:20:36,060 --> 01:20:36,820
+It's g x x,
+
+2170
+01:20:36,820 --> 01:20:40,000
+g y y minus g x y squared,
+
+2171
+01:20:40,719 --> 01:20:44,459
+which is the term as
+
+2172
+01:20:44,459 --> 01:20:48,200
+the determinant of the tensor g.
+
+2173
+01:20:49,879 --> 01:20:53,239
+It's usually just written with two
+
+2174
+01:20:53,239 --> 01:20:56,600
+bars to represent determinant and g.
+
+2175
+01:20:59,000 --> 01:21:01,960
+That's the formula for the volume element,
+
+2176
+01:21:02,100 --> 01:21:05,360
+or for the volume of a small differential,
+
+2177
+01:21:05,360 --> 01:21:06,600
+d x and d y.
+
+2178
+01:21:08,320 --> 01:21:09,920
+What would be the,
+
+2179
+01:21:09,920 --> 01:21:12,540
+and this can be in curved space,
+
+2180
+01:21:13,780 --> 01:21:15,940
+this is in curved space or any space,
+
+2181
+01:21:15,940 --> 01:21:16,300
+whatever.
+
+2182
+01:21:17,620 --> 01:21:18,180
+So,
+
+2183
+01:21:18,760 --> 01:21:19,960
+given a little rectangle,
+
+2184
+01:21:19,960 --> 01:21:20,920
+d x d y,
+
+2185
+01:21:21,400 --> 01:21:22,600
+in coordinate space,
+
+2186
+01:21:23,680 --> 01:21:24,560
+the area,
+
+2187
+01:21:24,560 --> 01:21:27,260
+or in higher dimensions it would be the volume,
+
+2188
+01:21:27,800 --> 01:21:29,440
+would just be the square root of g,
+
+2189
+01:21:30,540 --> 01:21:31,940
+square root of the determinant of
+
+2190
+01:21:31,940 --> 01:21:33,340
+g times d x d y.
+
+2191
+01:21:34,240 --> 01:21:36,060
+If I have some large region,
+
+2192
+01:21:36,640 --> 01:21:38,580
+and I want the total volume of it,
+
+2193
+01:21:38,700 --> 01:21:40,080
+I integrate this.
+
+2194
+01:21:41,140 --> 01:21:43,520
+The integral of square root of the determinant
+
+2195
+01:21:43,520 --> 01:21:45,900
+of the metric times d x d y,
+
+2196
+01:21:45,920 --> 01:21:48,080
+that is equal to the area,
+
+2197
+01:21:48,200 --> 01:21:51,680
+of the entire region enclosed within some boundary.
+
+2198
+01:21:52,720 --> 01:21:54,380
+What about the volume of space?
+
+2199
+01:21:55,200 --> 01:21:57,380
+If we're talking about volume,
+
+2200
+01:21:57,600 --> 01:21:58,520
+in other words,
+
+2201
+01:21:58,520 --> 01:21:59,500
+three-dimensional space.
+
+2202
+01:21:59,680 --> 01:21:59,800
+Well,
+
+2203
+01:21:59,800 --> 01:22:00,800
+it's exactly the same,
+
+2204
+01:22:01,660 --> 01:22:03,300
+except you have d z here.
+
+2205
+01:22:06,060 --> 01:22:07,280
+Exactly the same.
+
+2206
+01:22:07,920 --> 01:22:09,830
+Square root of the determinant of
+
+2207
+01:22:09,830 --> 01:22:11,740
+the metric is called the volume element.
+
+2208
+01:22:12,040 --> 01:22:13,500
+It's usually called the volume element.
+
+2209
+01:22:15,300 --> 01:22:18,180
+And if you have four-dimensional space times,
+
+2210
+01:22:18,200 --> 01:22:21,720
+it's useful to define a similar concept,
+
+2211
+01:22:22,400 --> 01:22:24,940
+which would just involve the fourth component.
+
+2212
+01:22:27,540 --> 01:22:29,400
+We call it the space-time volume.
+
+2213
+01:22:30,280 --> 01:22:32,360
+It's an interesting quantity.
+
+2214
+01:22:32,520 --> 01:22:33,600
+It's invariant.
+
+2215
+01:22:33,600 --> 01:22:35,400
+It's the same in every coordinate system.
+
+2216
+01:22:35,760 --> 01:22:37,600
+That's the important thing about it.
+
+2217
+01:22:37,680 --> 01:22:39,920
+If you re-coordinatize the region,
+
+2218
+01:22:40,080 --> 01:22:41,080
+change coordinates,
+
+2219
+01:22:41,300 --> 01:22:42,640
+this quantity stays the same.
+
+2220
+01:22:43,620 --> 01:22:44,660
+The volume,
+
+2221
+01:22:44,780 --> 01:22:46,080
+in some sense,
+
+2222
+01:22:46,080 --> 01:22:48,180
+the physical volume of a region of space time,
+
+2223
+01:22:48,200 --> 01:22:50,000
+or the physical four-dimensional volume
+
+2224
+01:22:50,000 --> 01:22:51,800
+of a region of space time.
+
+2225
+01:22:51,940 --> 01:22:54,460
+And this integral is an invariant quantity.
+
+2226
+01:22:59,379 --> 01:23:00,740
+Other invariants,
+
+2227
+01:23:00,780 --> 01:23:02,680
+other quantities,
+
+2228
+01:23:02,700 --> 01:23:05,900
+which are invariant and which will not change
+
+2229
+01:23:05,900 --> 01:23:07,220
+when you change coordinates,
+
+2230
+01:23:09,059 --> 01:23:11,840
+are based on this quantity.
+
+2231
+01:23:13,780 --> 01:23:16,640
+If you take the volume element,
+
+2232
+01:23:19,240 --> 01:23:22,060
+and you integrate it with any scalar,
+
+2233
+01:23:22,280 --> 01:23:24,680
+let's call the scalar S of X,
+
+2234
+01:23:25,339 --> 01:23:26,580
+S of X and T,
+
+2235
+01:23:28,160 --> 01:23:29,080
+the X,
+
+2236
+01:23:29,080 --> 01:23:29,180
+D,
+
+2237
+01:23:29,180 --> 01:23:29,420
+T,
+
+2238
+01:23:30,659 --> 01:23:34,060
+this also is an invariant quantity
+
+2239
+01:23:34,060 --> 01:23:35,680
+which doesn't depend on the coordinates.
+
+2240
+01:23:36,140 --> 01:23:37,420
+It's just the sum.
+
+2241
+01:23:37,760 --> 01:23:40,080
+You take each little volume element,
+
+2242
+01:23:40,320 --> 01:23:41,460
+you take its volume,
+
+2243
+01:23:41,660 --> 01:23:43,640
+and you multiply it by the square root,
+
+2244
+01:23:43,760 --> 01:23:44,140
+sorry,
+
+2245
+01:23:44,140 --> 01:23:45,480
+by the scalar field.
+
+2246
+01:23:45,840 --> 01:23:47,960
+You take the volume of each little element,
+
+2247
+01:23:48,799 --> 01:23:51,620
+multiply it by the scalar quantity in there,
+
+2248
+01:23:51,740 --> 01:23:52,820
+and add them all up.
+
+2249
+01:23:53,300 --> 01:23:56,040
+That's a quantity which is really not dependent
+
+2250
+01:23:56,040 --> 01:23:58,180
+in any way on the coordinates you use,
+
+2251
+01:23:58,360 --> 01:23:59,920
+even though writing it down
+
+2252
+01:23:59,920 --> 01:24:01,740
+may use a certain set of coordinates.
+
+2253
+01:24:04,299 --> 01:24:05,880
+Action is a thing
+
+2254
+01:24:05,880 --> 01:24:08,440
+which is supposed to be invariant.
+
+2255
+01:24:09,480 --> 01:24:11,700
+Action in relativity theory
+
+2256
+01:24:11,700 --> 01:24:13,580
+is always supposed to be the same
+
+2257
+01:24:13,580 --> 01:24:14,900
+in every coordinate frame.
+
+2258
+01:24:15,440 --> 01:24:16,000
+Otherwise,
+
+2259
+01:24:16,000 --> 01:24:17,280
+the laws of physics
+
+2260
+01:24:17,280 --> 01:24:18,380
+which came out of it
+
+2261
+01:24:19,120 --> 01:24:21,160
+would depend on the coordinate system.
+
+2262
+01:24:22,220 --> 01:24:24,340
+If the laws of physics are supposed to be
+
+2263
+01:24:24,340 --> 01:24:25,800
+the same in every coordinate frame,
+
+2264
+01:24:26,140 --> 01:24:27,620
+one way of ensuring that
+
+2265
+01:24:27,620 --> 01:24:30,280
+is to make the action an invariant,
+
+2266
+01:24:30,280 --> 01:24:31,580
+a quantity which doesn't change
+
+2267
+01:24:31,580 --> 01:24:32,840
+from coordinate to coordinate,
+
+2268
+01:24:32,980 --> 01:24:34,740
+from coordinate system to coordinate system.
+
+2269
+01:24:35,140 --> 01:24:36,540
+So it's natural then
+
+2270
+01:24:36,540 --> 01:24:39,480
+to take the action to be,
+
+2271
+01:24:40,080 --> 01:24:41,640
+I'll call it D4X,
+
+2272
+01:24:41,640 --> 01:24:41,980
+meaning
+
+2273
+01:24:41,980 --> 01:24:42,260
+DX,
+
+2274
+01:24:42,260 --> 01:24:42,620
+DY,
+
+2275
+01:24:42,620 --> 01:24:42,980
+DC,
+
+2276
+01:24:42,980 --> 01:24:43,420
+DT,
+
+2277
+01:24:44,099 --> 01:24:45,140
+some kind,
+
+2278
+01:24:45,140 --> 01:24:46,420
+well,
+
+2279
+01:24:46,420 --> 01:24:47,380
+the square root of G,
+
+2280
+01:24:48,339 --> 01:24:50,680
+the square root of the determinant of the metric,
+
+2281
+01:24:51,400 --> 01:24:53,140
+times some scalar.
+
+2282
+01:24:55,200 --> 01:24:57,860
+Now let's just take the Einstein theory
+
+2283
+01:24:58,420 --> 01:25:01,560
+without any energy momentum tensor
+
+2284
+01:25:01,560 --> 01:25:02,680
+on the right hand side.
+
+2285
+01:25:03,100 --> 01:25:05,900
+Just pure gravitational field,
+
+2286
+01:25:06,120 --> 01:25:06,820
+nothing else.
+
+2287
+01:25:07,380 --> 01:25:09,560
+What kind of scalar could I put there?
+
+2288
+01:25:09,800 --> 01:25:11,580
+How many scalars are there
+
+2289
+01:25:11,580 --> 01:25:13,780
+that I can make up only out of the metric?
+
+2290
+01:25:14,980 --> 01:25:15,540
+Well,
+
+2291
+01:25:18,880 --> 01:25:19,280
+Indeed.
+
+2292
+01:25:21,380 --> 01:25:21,780
+So,
+
+2293
+01:25:21,780 --> 01:25:22,680
+that's called R.
+
+2294
+01:25:25,040 --> 01:25:26,160
+It's the thing on the right,
+
+2295
+01:25:26,240 --> 01:25:26,940
+let's see,
+
+2296
+01:25:26,940 --> 01:25:27,420
+it's the,
+
+2297
+01:25:35,400 --> 01:25:36,160
+that's a scalar.
+
+2298
+01:25:41,360 --> 01:25:42,680
+Anything else you can think of?
+
+2299
+01:25:45,700 --> 01:25:47,240
+I'll tell you there's one more thing.
+
+2300
+01:25:49,410 --> 01:25:51,300
+The other thing is any number,
+
+2301
+01:25:51,440 --> 01:25:54,240
+7 or 4 or 16,
+
+2302
+01:25:54,400 --> 01:25:56,260
+or whatever number you like.
+
+2303
+01:25:56,940 --> 01:25:58,700
+So you can add to this
+
+2304
+01:25:59,430 --> 01:26:01,240
+a numerical number.
+
+2305
+01:26:02,500 --> 01:26:05,400
+Numerical numbers are always regarded as invariants.
+
+2306
+01:26:05,420 --> 01:26:08,000
+Everybody who sees 7 sees the same number.
+
+2307
+01:26:09,840 --> 01:26:11,640
+And the number that you put here,
+
+2308
+01:26:14,860 --> 01:26:16,880
+depends on the laws of physics.
+
+2309
+01:26:17,400 --> 01:26:18,720
+It is a law of physics.
+
+2310
+01:26:18,860 --> 01:26:20,100
+It itself is a law of physics.
+
+2311
+01:26:20,540 --> 01:26:21,480
+It has a name,
+
+2312
+01:26:21,480 --> 01:26:21,940
+what's it called?
+
+2313
+01:26:23,960 --> 01:26:24,400
+Alright,
+
+2314
+01:26:24,400 --> 01:26:25,020
+I'll tell you what it's,
+
+2315
+01:26:25,599 --> 01:26:26,800
+I'll tell you what its symbol is.
+
+2316
+01:26:26,900 --> 01:26:27,620
+Its symbol is lambda.
+
+2317
+01:26:28,780 --> 01:26:29,760
+Now what's it called?
+
+2318
+01:26:31,040 --> 01:26:32,580
+The cosmological constant.
+
+2319
+01:26:34,940 --> 01:26:36,420
+It's a term in the action
+
+2320
+01:26:36,420 --> 01:26:40,100
+which is just proportional to the space-time volume itself.
+
+2321
+01:26:40,820 --> 01:26:42,260
+The term in the action,
+
+2322
+01:26:42,420 --> 01:26:43,800
+lambda times this integral
+
+2323
+01:26:43,800 --> 01:26:46,340
+is just the space-time action itself.
+
+2324
+01:26:47,700 --> 01:26:49,420
+The cosmological constant
+
+2325
+01:26:50,400 --> 01:26:51,460
+has not been,
+
+2326
+01:26:51,620 --> 01:26:53,880
+I have not included it
+
+2327
+01:26:53,880 --> 01:26:55,060
+in these equations here.
+
+2328
+01:26:55,860 --> 01:26:57,000
+These are the solutions,
+
+2329
+01:26:57,180 --> 01:26:59,560
+these are the equations without cosmological constants.
+
+2330
+01:26:59,640 --> 01:27:01,160
+So without cosmological constant,
+
+2331
+01:27:01,420 --> 01:27:02,300
+this is the action.
+
+2332
+01:27:07,019 --> 01:27:08,360
+And Einstein's equations
+
+2333
+01:27:08,360 --> 01:27:09,920
+are completely equivalent
+
+2334
+01:27:11,300 --> 01:27:13,240
+to saying minimize this,
+
+2335
+01:27:13,440 --> 01:27:15,260
+or make it stationary,
+
+2336
+01:27:15,540 --> 01:27:18,160
+make its variation equal to zero,
+
+2337
+01:27:18,860 --> 01:27:20,240
+away from a solution.
+
+2338
+01:27:20,580 --> 01:27:22,020
+That's minimizing something,
+
+2339
+01:27:22,280 --> 01:27:23,600
+is making it stationary.
+
+2340
+01:27:25,400 --> 01:27:26,020
+Yeah?
+
+2341
+01:27:26,280 --> 01:27:28,380
+What does the stress-energy tensor come into it?
+
+2342
+01:27:28,640 --> 01:27:30,640
+The stress-energy tensor would come in
+
+2343
+01:27:30,640 --> 01:27:32,600
+as additional terms in the action
+
+2344
+01:27:32,600 --> 01:27:34,800
+which would depend on the material
+
+2345
+01:27:34,800 --> 01:27:36,820
+and the other fields.
+
+2346
+01:27:37,380 --> 01:27:38,380
+For example,
+
+2347
+01:27:38,480 --> 01:27:40,020
+there could be electromagnetic energy,
+
+2348
+01:27:40,100 --> 01:27:41,620
+there could be other kinds of energy,
+
+2349
+01:27:41,780 --> 01:27:43,620
+they would come in as additional terms here.
+
+2350
+01:27:43,880 --> 01:27:44,740
+This is the vacuum?
+
+2351
+01:27:44,960 --> 01:27:45,360
+Yeah,
+
+2352
+01:27:45,360 --> 01:27:47,120
+this is the vacuum theory.
+
+2353
+01:27:47,920 --> 01:27:49,100
+This is the vacuum theory,
+
+2354
+01:27:49,200 --> 01:27:49,660
+for example,
+
+2355
+01:27:49,660 --> 01:27:52,040
+the theory which would govern gravitational waves.
+
+2356
+01:27:53,140 --> 01:27:54,800
+Other things could be in here,
+
+2357
+01:27:54,960 --> 01:27:56,420
+but those other things would be made up
+
+2358
+01:27:56,420 --> 01:27:57,340
+out of different fields.
+
+2359
+01:27:58,220 --> 01:27:59,680
+They always have a square root of g,
+
+2360
+01:27:59,800 --> 01:28:00,820
+they always have a scalar.
+
+2361
+01:28:03,120 --> 01:28:05,280
+If you remember your electromagnetism,
+
+2362
+01:28:06,080 --> 01:28:08,100
+the electromagnetic field is described
+
+2363
+01:28:08,100 --> 01:28:09,840
+by an anti-symmetric tensor,
+
+2364
+01:28:10,100 --> 01:28:10,980
+F mu nu.
+
+2365
+01:28:12,540 --> 01:28:15,640
+One of the things that you would put here
+
+2366
+01:28:15,640 --> 01:28:17,800
+would be F mu nu,
+
+2367
+01:28:17,800 --> 01:28:19,400
+F mu nu.
+
+2368
+01:28:20,060 --> 01:28:23,600
+That would govern the electromagnetic field.
+
+2369
+01:28:25,400 --> 01:28:26,920
+But let's leave that out.
+
+2370
+01:28:27,080 --> 01:28:27,880
+Let's leave that out.
+
+2371
+01:28:28,000 --> 01:28:30,140
+Here's the Einstein,
+
+2372
+01:28:30,360 --> 01:28:31,840
+the Hilbert-Einstein action,
+
+2373
+01:28:33,060 --> 01:28:33,540
+discovered,
+
+2374
+01:28:33,540 --> 01:28:34,140
+I think,
+
+2375
+01:28:34,160 --> 01:28:36,740
+just about simultaneously by Einstein and Hilbert.
+
+2376
+01:28:36,860 --> 01:28:37,180
+Of course,
+
+2377
+01:28:37,180 --> 01:28:38,260
+Einstein already had that.
+
+2378
+01:28:38,320 --> 01:28:39,620
+He already had the whole works,
+
+2379
+01:28:39,620 --> 01:28:40,780
+knew how it all worked,
+
+2380
+01:28:41,600 --> 01:28:47,840
+but they independently sat down and said,
+
+2381
+01:28:47,920 --> 01:28:51,180
+can these equations be derived from an action principle?
+
+2382
+01:28:51,780 --> 01:28:53,060
+And both of them,
+
+2383
+01:28:53,060 --> 01:28:54,240
+Hilbert and Einstein,
+
+2384
+01:28:54,380 --> 01:28:55,740
+both came up with the same answer.
+
+2385
+01:28:55,840 --> 01:28:56,300
+This is it.
+
+2386
+01:28:57,140 --> 01:29:01,240
+So this is a shorthand,
+
+2387
+01:29:01,300 --> 01:29:02,560
+but not just a shorthand,
+
+2388
+01:29:02,600 --> 01:29:03,860
+a physical principle
+
+2389
+01:29:05,980 --> 01:29:08,280
+that contains all the Einstein field.
+
+2390
+01:29:08,280 --> 01:29:09,220
+Incidentally,
+
+2391
+01:29:09,220 --> 01:29:13,260
+what replaces this field?
+
+2392
+01:29:13,500 --> 01:29:15,100
+I said a field in space.
+
+2393
+01:29:15,440 --> 01:29:16,360
+What do you put in there?
+
+2394
+01:29:19,500 --> 01:29:20,300
+The metric.
+
+2395
+01:29:21,660 --> 01:29:22,420
+The metric.
+
+2396
+01:29:26,660 --> 01:29:27,870
+This is an action that's
+
+2397
+01:29:27,870 --> 01:29:29,080
+made up out of the metric,
+
+2398
+01:29:30,860 --> 01:29:33,280
+and you vary the metric a little bit,
+
+2399
+01:29:33,300 --> 01:29:35,060
+you vary the metric a little bit,
+
+2400
+01:29:35,060 --> 01:29:36,040
+and you look for places
+
+2401
+01:29:36,520 --> 01:29:38,260
+where you found a minimum of value.
+
+2402
+01:29:39,879 --> 01:29:40,860
+What's the negative quality of that?
+
+2403
+01:29:40,860 --> 01:29:41,000
+A solution.
+
+2404
+01:29:44,180 --> 01:29:45,300
+You have a single solution.
+
+2405
+01:29:45,300 --> 01:29:46,480
+Why would you consider Sirius
+
+2406
+01:29:46,480 --> 01:29:48,100
+not going to support this applies to the底 Superior
+
+2407
+01:29:48,100 --> 01:29:48,160
+audiobook.
+
+2408
+01:29:49,079 --> 01:30:07,860
+Today's lecture on Ninguidal basketball
+
+2409
+01:30:07,860 --> 01:30:08,260
+is entirely specific to this problem,
+
+2410
+01:30:08,260 --> 01:30:08,920
+the metric.
+
+2411
+01:30:08,920 --> 01:30:12,260
+You do that by first calculating the Christoffel symbols,
+
+2412
+01:30:12,260 --> 01:30:15,560
+then differentiating
+
+2413
+01:30:15,560 --> 01:30:16,540
+the Christoffel symbols,
+
+2414
+01:30:16,540 --> 01:30:17,940
+multiplying them together,
+
+2415
+01:30:17,940 --> 01:30:20,300
+sticking them all together,
+
+2416
+01:30:20,300 --> 01:30:21,420
+multiply
+
+2417
+01:30:21,420 --> 01:30:22,500
+it by the square,
+
+2418
+01:30:22,500 --> 01:30:25,750
+do whatever contractions are necessary
+
+2419
+01:30:25,750 --> 01:30:29,000
+to produce the curvature scalar,
+
+2420
+01:30:29,700 --> 01:30:31,290
+multiply it by the square root
+
+2421
+01:30:31,290 --> 01:30:32,880
+of the determinant of the metric,
+
+2422
+01:30:32,880 --> 01:30:34,200
+it's a four by four metric,
+
+2423
+01:30:35,920 --> 01:30:36,880
+four rows,
+
+2424
+01:30:36,880 --> 01:30:37,880
+four columns,
+
+2425
+01:30:37,880 --> 01:30:39,730
+the determinant is a great big
+
+2426
+01:30:39,730 --> 01:30:41,580
+thing made up out of lots of
+
+2427
+01:30:41,580 --> 01:30:42,060
+components,
+
+2428
+01:30:42,060 --> 01:30:44,460
+calculate the determinant,
+
+2429
+01:30:44,460 --> 01:30:48,820
+and then apply the Euler-Lagrange variational
+
+2430
+01:30:48,820 --> 01:30:50,840
+equations to that action,
+
+2431
+01:30:50,840 --> 01:30:53,680
+and it takes about five minutes,
+
+2432
+01:30:53,680 --> 01:30:54,560
+the whole operation,
+
+2433
+01:30:54,560 --> 01:30:55,900
+and out
+
+2434
+01:30:55,900 --> 01:30:58,040
+of it you will get Einstein's field equations.
+
+2435
+01:30:58,040 --> 01:30:59,460
+If you can't do it in five minutes,
+
+2436
+01:30:59,460 --> 01:30:59,860
+you fail
+
+2437
+01:30:59,860 --> 01:31:00,300
+the course.
+
+2438
+01:31:00,300 --> 01:31:02,340
+As I said,
+
+2439
+01:31:02,340 --> 01:31:03,280
+I've been trying to do it for
+
+2440
+01:31:03,280 --> 01:31:04,180
+fifty years and I've failed.
+
+2441
+01:31:04,200 --> 01:31:05,320
+I've never quite succeeded.
+
+2442
+01:31:05,320 --> 01:31:08,360
+A lot of my friends have,
+
+2443
+01:31:08,360 --> 01:31:08,960
+but...
+
+2444
+01:31:10,300 --> 01:31:14,720
+There's a whole chapter in Tute's General Relativity Notes,
+
+2445
+01:31:14,720 --> 01:31:16,880
+and it's very involved,
+
+2446
+01:31:17,120 --> 01:31:18,940
+because it does all the things you talked about,
+
+2447
+01:31:18,940 --> 01:31:23,600
+and he plucks certain things out of
+
+2448
+01:31:23,600 --> 01:31:25,050
+the air because he knows the
+
+2449
+01:31:25,050 --> 01:31:26,500
+answer and then just verifies it,
+
+2450
+01:31:26,500 --> 01:31:28,200
+so it's really not easy.
+
+2451
+01:31:28,520 --> 01:31:28,880
+No,
+
+2452
+01:31:28,880 --> 01:31:29,280
+no,
+
+2453
+01:31:29,280 --> 01:31:29,440
+no,
+
+2454
+01:31:29,440 --> 01:31:29,520
+no.
+
+2455
+01:31:29,520 --> 01:31:31,900
+As I've told you repeatedly,
+
+2456
+01:31:31,900 --> 01:31:33,360
+the principles
+
+2457
+01:31:34,200 --> 01:31:35,580
+are not terribly hard.
+
+2458
+01:31:35,580 --> 01:31:37,820
+For whatever reason,
+
+2459
+01:31:37,820 --> 01:31:40,940
+somehow in the...
+
+2460
+01:31:41,559 --> 01:31:42,240
+You know,
+
+2461
+01:31:42,240 --> 01:31:46,920
+there are people who have such a
+
+2462
+01:31:46,920 --> 01:31:51,600
+good visual feel for curvature and differential
+
+2463
+01:31:51,600 --> 01:31:55,420
+geometry that they can more or less see through it.
+
+2464
+01:31:56,460 --> 01:31:57,760
+You have your choice.
+
+2465
+01:31:57,760 --> 01:31:59,630
+Either you're a person with a
+
+2466
+01:31:59,630 --> 01:32:01,500
+great deal of visual ability to be
+
+2467
+01:32:01,500 --> 01:32:04,180
+able to see through the complexity of a...
+
+2468
+01:32:04,180 --> 01:32:04,180
+You know,
+
+2469
+01:32:04,180 --> 01:32:04,440
+you have curvature,
+
+2470
+01:32:04,440 --> 01:32:05,240
+tensors,
+
+2471
+01:32:05,240 --> 01:32:05,960
+and so forth,
+
+2472
+01:32:05,960 --> 01:32:09,760
+and figure out how to do these processes
+
+2473
+01:32:09,760 --> 01:32:13,580
+by almost visualization,
+
+2474
+01:32:13,580 --> 01:32:16,360
+or you work them out by the algebra.
+
+2475
+01:32:18,700 --> 01:32:19,960
+So if you're good at algebra,
+
+2476
+01:32:19,960 --> 01:32:21,480
+you do it one way.
+
+2477
+01:32:21,840 --> 01:32:24,630
+If you're good at visualizing geometry and
+
+2478
+01:32:24,630 --> 01:32:27,420
+you have a great command of differential geometry,
+
+2479
+01:32:27,760 --> 01:32:30,100
+you probably can short-circuit a lot of that.
+
+2480
+01:32:30,100 --> 01:32:30,840
+I,
+
+2481
+01:32:30,840 --> 01:32:31,280
+frankly,
+
+2482
+01:32:31,280 --> 01:32:31,820
+have neither.
+
+2483
+01:32:31,820 --> 01:32:33,300
+I am not very good
+
+2484
+01:32:33,300 --> 01:32:33,820
+at algebra.
+
+2485
+01:32:34,480 --> 01:32:37,460
+And I certainly don't have the visual
+
+2486
+01:32:37,460 --> 01:32:40,440
+ability to be able to visualize four-dimensional curvature
+
+2487
+01:32:40,440 --> 01:32:41,160
+tensors.
+
+2488
+01:32:43,880 --> 01:32:44,840
+So repeatedly,
+
+2489
+01:32:44,840 --> 01:32:47,060
+I have sat down and tried to do this calculation,
+
+2490
+01:32:47,060 --> 01:32:48,200
+usually in the process
+
+2491
+01:32:48,200 --> 01:32:49,300
+of teaching the subject,
+
+2492
+01:32:49,300 --> 01:32:51,800
+and give up after about two hours.
+
+2493
+01:32:52,780 --> 01:32:54,180
+If I had to do it,
+
+2494
+01:32:54,180 --> 01:32:54,680
+I could,
+
+2495
+01:32:54,680 --> 01:32:56,740
+but since I don't have to,
+
+2496
+01:32:56,740 --> 01:32:57,300
+I don't.
+
+2497
+01:33:00,440 --> 01:33:01,160
+All right.
+
+2498
+01:33:02,080 --> 01:33:03,120
+I don't ever tell any of
+
+2499
+01:33:03,120 --> 01:33:04,160
+my friends that I don't know.
+
+2500
+01:33:04,160 --> 01:33:04,820
+I can't do it.
+
+2501
+01:33:06,380 --> 01:33:06,840
+Okay.
+
+2502
+01:33:07,080 --> 01:33:08,040
+They'll see something.
+
+2503
+01:33:08,100 --> 01:33:08,460
+Hmm?
+
+2504
+01:33:08,620 --> 01:33:09,220
+They'll see.
+
+2505
+01:33:09,320 --> 01:33:09,660
+Yeah,
+
+2506
+01:33:09,660 --> 01:33:09,900
+I know.
+
+2507
+01:33:09,980 --> 01:33:11,160
+They know I can't do it.
+
+2508
+01:33:11,480 --> 01:33:13,530
+So this is not standardly written
+
+2509
+01:33:13,530 --> 01:33:15,580
+down in a text on relativity?
+
+2510
+01:33:15,820 --> 01:33:16,780
+It probably is,
+
+2511
+01:33:16,780 --> 01:33:17,620
+but it fills pages.
+
+2512
+01:33:19,120 --> 01:33:20,200
+I'm sure it is filled,
+
+2513
+01:33:20,200 --> 01:33:21,420
+written down somewheres.
+
+2514
+01:33:23,460 --> 01:33:24,700
+It doesn't help,
+
+2515
+01:33:24,700 --> 01:33:29,300
+because when you have a thing of that complexity,
+
+2516
+01:33:29,300 --> 01:33:31,340
+it really doesn't help
+
+2517
+01:33:31,340 --> 01:33:33,760
+to follow the steps from one step to another.
+
+2518
+01:33:34,720 --> 01:33:37,100
+Either you do them yourself and you figure
+
+2519
+01:33:37,100 --> 01:33:39,480
+out what the relation between the steps is,
+
+2520
+01:33:40,120 --> 01:33:42,000
+or you don't.
+
+2521
+01:33:42,960 --> 01:33:46,260
+A very long calculation really is not very
+
+2522
+01:33:46,260 --> 01:33:49,560
+illuminating unless you try to do it yourself,
+
+2523
+01:33:50,139 --> 01:33:51,900
+and then when you run into trouble,
+
+2524
+01:33:51,900 --> 01:33:52,940
+you peek.
+
+2525
+01:33:53,180 --> 01:33:53,560
+Oh,
+
+2526
+01:33:53,560 --> 01:33:54,540
+that's the next step.
+
+2527
+01:33:54,680 --> 01:33:56,520
+And then you understand why it's the next step.
+
+2528
+01:33:56,840 --> 01:33:59,080
+But I've never learned anything
+
+2529
+01:33:59,080 --> 01:34:01,320
+by looking at these long steps.
+
+2530
+01:34:01,340 --> 01:34:02,540
+These days,
+
+2531
+01:34:02,540 --> 01:34:03,960
+people don't do them.
+
+2532
+01:34:05,640 --> 01:34:07,520
+People throw them on a computer,
+
+2533
+01:34:07,520 --> 01:34:12,400
+either numerically or analytically,
+
+2534
+01:34:12,400 --> 01:34:14,120
+and let the computer grind
+
+2535
+01:34:14,120 --> 01:34:16,280
+out because it's just too nasty and complicated.
+
+2536
+01:34:19,020 --> 01:34:19,600
+Yeah?
+
+2537
+01:34:20,060 --> 01:34:21,060
+In hindsight,
+
+2538
+01:34:21,060 --> 01:34:22,890
+this seems more motivated than
+
+2539
+01:34:22,890 --> 01:34:24,720
+the way Einstein did it originally.
+
+2540
+01:34:25,540 --> 01:34:26,560
+But I'm wondering,
+
+2541
+01:34:26,560 --> 01:34:30,610
+I think it went from 1905 to 1916.
+
+2542
+01:34:31,160 --> 01:34:31,320
+Yeah.
+
+2543
+01:34:31,340 --> 01:34:31,360
+And then it went from 1916 to 1916,
+
+2544
+01:34:31,360 --> 01:34:32,980
+before he published General Relativity.
+
+2545
+01:34:33,260 --> 01:34:34,180
+What do you think?
+
+2546
+01:34:34,300 --> 01:34:36,880
+Is it apparent from his papers what was
+
+2547
+01:34:36,880 --> 01:34:39,460
+taking so long to put it all together?
+
+2548
+01:34:45,420 --> 01:34:48,180
+The only papers I read were the early
+
+2549
+01:34:48,180 --> 01:34:50,940
+ones around 1907 and then the 1916 paper.
+
+2550
+01:34:52,320 --> 01:34:55,280
+And I read them 50 years ago.
+
+2551
+01:34:55,860 --> 01:35:00,140
+So I really don't know what the...
+
+2552
+01:35:01,259 --> 01:35:07,060
+But part of it is that very,
+
+2553
+01:35:07,060 --> 01:35:10,480
+very few people knew very much about Riemannian geometry.
+
+2554
+01:35:12,120 --> 01:35:13,260
+Einstein didn't know.
+
+2555
+01:35:13,360 --> 01:35:16,680
+He basically had to invent all of Riemannian geometry.
+
+2556
+01:35:17,320 --> 01:35:19,600
+I think one of his friends helped him with it,
+
+2557
+01:35:19,600 --> 01:35:20,760
+who knew some mathematics,
+
+2558
+01:35:20,760 --> 01:35:21,400
+was it Marcel
+
+2559
+01:35:21,400 --> 01:35:22,000
+Grossman?
+
+2560
+01:35:22,100 --> 01:35:22,620
+I don't know.
+
+2561
+01:35:25,959 --> 01:35:28,039
+But 10 years to put all of
+
+2562
+01:35:28,039 --> 01:35:30,120
+this together doesn't sound like a lot.
+
+2563
+01:35:30,120 --> 01:35:30,500
+I think it's a lot to me.
+
+2564
+01:35:34,120 --> 01:35:36,480
+And he literally had to build
+
+2565
+01:35:36,480 --> 01:35:38,840
+all of the ideas of curvature.
+
+2566
+01:35:42,820 --> 01:35:44,960
+So it took a long time.
+
+2567
+01:35:45,060 --> 01:35:46,840
+Was he aiming for that from pretty early on?
+
+2568
+01:35:47,020 --> 01:35:47,180
+Yeah.
+
+2569
+01:35:47,320 --> 01:35:49,580
+I think he knew what he was doing pretty well.
+
+2570
+01:35:51,280 --> 01:35:53,520
+But you can go back and look yourself.
+
+2571
+01:35:53,700 --> 01:35:54,980
+The papers are in English.
+
+2572
+01:35:55,140 --> 01:35:56,820
+They were translated into English.
+
+2573
+01:35:56,860 --> 01:35:57,500
+You can find them.
+
+2574
+01:35:59,540 --> 01:36:00,120
+I think they're all in English.
+
+2575
+01:36:03,120 --> 01:36:05,180
+I think we're finished for the quarter.
+
+2576
+01:36:06,380 --> 01:36:06,920
+Yeah.
+
+2577
+01:36:09,600 --> 01:36:10,140
+Anyway,
+
+2578
+01:36:10,140 --> 01:36:11,960
+I could use a rest.
+
+2579
+01:36:12,100 --> 01:36:13,280
+I'm going to take a rest.
+
+2580
+01:36:15,420 --> 01:36:16,280
+For more,
+
+2581
+01:36:16,280 --> 01:36:18,700
+please visit us at stanford.edu.
+
