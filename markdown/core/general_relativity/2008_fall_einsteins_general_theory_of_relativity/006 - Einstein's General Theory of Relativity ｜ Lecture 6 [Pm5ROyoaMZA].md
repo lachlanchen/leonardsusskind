@@ -1,0 +1,3095 @@
+# Transcript
+
+Source: core/general_relativity/2008_fall_einsteins_general_theory_of_relativity/006 - Einstein's General Theory of Relativity ｜ Lecture 6 [Pm5ROyoaMZA].mp4
+
+- [00:00:06,800 - 00:00:09,740] This program is brought to you by Stanford University.
+- [00:00:10,200 - 00:00:12,720] Please visit us at stanford.edu.
+- [00:00:15,180 - 00:00:15,860] Today,
+- [00:00:15,860 - 00:00:19,180] I want to do two things.
+- [00:00:20,440 - 00:00:24,700] One is to discuss geodesics a little more
+- [00:00:25,580 - 00:00:28,420] and to explain a little more thoroughly
+- [00:00:28,420 - 00:00:31,800] the connection between gravitational forces
+- [00:00:33,900 - 00:00:39,360] and geodesics or the motion of geodesics through space-time.
+- [00:00:39,900 - 00:00:42,440] So for the first part of the lecture tonight,
+- [00:00:42,560 - 00:00:44,300] we're going to be thinking about space-time,
+- [00:00:44,500 - 00:00:45,720] not just space,
+- [00:00:45,720 - 00:00:46,600] but space-time.
+- [00:00:46,940 - 00:00:51,640] But the mathematics for space-time is very similar
+- [00:00:52,560 - 00:00:54,880] to the mathematics for ordinary space.
+- [00:00:55,220 - 00:00:55,580] Okay.
+- [00:00:58,420 - 00:00:59,440] There's also a metric.
+- [00:01:02,840 - 00:01:05,800] When we're talking about space and time,
+- [00:01:05,920 - 00:01:08,740] instead of using m and n for indices,
+- [00:01:09,100 - 00:01:11,000] we use Greek indices,
+- [00:01:11,000 - 00:01:11,900] mu and nu.
+- [00:01:16,700 - 00:01:17,560] And again,
+- [00:01:17,560 - 00:01:19,320] there's a notion of distance,
+- [00:01:20,640 - 00:01:22,320] which is called proper time.
+- [00:01:23,360 - 00:01:24,880] I'll also write it,
+- [00:01:24,880 - 00:01:25,080] well,
+- [00:01:25,080 - 00:01:26,920] I guess I usually write it,
+- [00:01:26,980 - 00:01:28,400] I have to write it,
+- [00:01:28,400 - 00:01:30,580] but I have trouble keeping my notations entirely consistent.
+- [00:01:30,820 - 00:01:32,500] I'll try to keep them consistent as I can.
+- [00:01:32,740 - 00:01:34,960] Instead of calling it ds squared,
+- [00:01:35,920 - 00:01:40,040] s is usually the label for distance in space.
+- [00:01:40,700 - 00:01:42,710] One calls it d tau
+- [00:01:42,710 - 00:01:44,720] squared because it's more like time,
+- [00:01:44,920 - 00:01:46,500] proper time,
+- [00:01:46,500 - 00:01:49,060] the proper time along a trajectory
+- [00:01:51,460 - 00:01:54,700] has a little interval along the trajectory.
+- [00:01:55,420 - 00:01:58,380] It has a set of different degrees of time,
+- [00:01:58,380 - 00:01:59,780] and it's called the differential displacement,
+- [00:02:00,360 - 00:02:02,440] which are called dx mu.
+- [00:02:03,440 - 00:02:04,200] Remember,
+- [00:02:04,200 - 00:02:08,800] mu runs from zero,
+- [00:02:08,800 - 00:02:10,020] one,
+- [00:02:10,020 - 00:02:10,560] two,
+- [00:02:10,560 - 00:02:11,100] and three.
+- [00:02:12,020 - 00:02:12,780] One,
+- [00:02:12,780 - 00:02:13,020] two,
+- [00:02:13,020 - 00:02:14,400] and three represents space.
+- [00:02:14,660 - 00:02:16,480] Zero represents time.
+- [00:02:17,600 - 00:02:18,360] And
+- [00:02:18,360 - 00:02:28,360] the square of the proper time along the trajectory,
+- [00:02:28,360 - 00:02:29,580] along a little interval like that,
+- [00:02:29,740 - 00:02:31,740] is defined again in terms of a metric.
+- [00:02:32,720 - 00:02:33,760] In general,
+- [00:02:33,760 - 00:02:34,460] this metric,
+- [00:02:34,460 - 00:02:35,860] in special relativity,
+- [00:02:36,640 - 00:02:38,260] in special relativity,
+- [00:02:38,260 - 00:02:40,560] this metric is constant.
+- [00:02:42,040 - 00:02:43,460] Everywhere is the same,
+- [00:02:43,720 - 00:02:46,280] and it's usually taken to be
+- [00:02:50,100 - 00:02:51,740] the symbol eta mu nu.
+- [00:02:52,000 - 00:02:55,880] Eta mu nu is the analog for space-time
+- [00:02:55,880 - 00:02:58,340] of the Kronecker delta symbol,
+- [00:02:58,360 - 00:02:59,420] delta mu nu,
+- [00:02:59,420 - 00:03:00,480] delta mn,
+- [00:03:01,360 - 00:03:02,480] for ordinary space.
+- [00:03:03,060 - 00:03:05,780] And it's given not by one,
+- [00:03:05,780 - 00:03:06,280] one,
+- [00:03:06,280 - 00:03:06,660] one,
+- [00:03:06,660 - 00:03:06,960] one.
+- [00:03:09,900 - 00:03:11,760] It's a 4 by 4 matrix,
+- [00:03:12,140 - 00:03:14,740] but it's given by one,
+- [00:03:14,740 - 00:03:16,100] zero,
+- [00:03:16,100 - 00:03:16,820] zero,
+- [00:03:16,820 - 00:03:17,360] zero.
+- [00:03:17,940 - 00:03:20,060] Zero minus one,
+- [00:03:20,060 - 00:03:22,080] zero,
+- [00:03:22,080 - 00:03:22,800] zero.
+- [00:03:23,080 - 00:03:23,840] Zero,
+- [00:03:23,840 - 00:03:24,420] zero,
+- [00:03:24,420 - 00:03:25,400] minus one,
+- [00:03:25,400 - 00:03:26,020] zero.
+- [00:03:26,400 - 00:03:27,160] Zero,
+- [00:03:27,160 - 00:03:27,720] zero,
+- [00:03:27,720 - 00:03:28,340] zero.
+- [00:03:28,360 - 00:03:29,260] Zero minus one.
+- [00:03:31,560 - 00:03:32,340] All right,
+- [00:03:32,340 - 00:03:33,160] so in other words,
+- [00:03:33,280 - 00:03:36,300] it's of the form dt squared minus,
+- [00:03:36,620 - 00:03:39,520] if we wanted to replace these by t,
+- [00:03:39,520 - 00:03:41,760] x,
+- [00:03:41,760 - 00:03:42,560] y,
+- [00:03:42,560 - 00:03:43,460] and z,
+- [00:03:45,700 - 00:03:47,900] then in special relativity,
+- [00:03:48,160 - 00:03:52,380] the metric here would just be d tau squared,
+- [00:03:52,560 - 00:03:56,080] or the proper time would just be d tau squared,
+- [00:03:56,080 - 00:04:00,460] which is equal to dt squared minus dx squared
+- [00:04:00,460 - 00:04:02,800] minus dy squared minus dz squared.
+- [00:04:05,800 - 00:04:07,860] That would be the rule in units
+- [00:04:07,860 - 00:04:10,360] in which the speed of light is equal to one.
+- [00:04:11,640 - 00:04:15,480] Where would I put the speed of light
+- [00:04:16,079 - 00:04:18,540] if I wanted to include it in this formula?
+- [00:04:20,779 - 00:04:21,380] Well,
+- [00:04:21,380 - 00:04:23,040] if I wanted tau,
+- [00:04:23,180 - 00:04:25,240] which is called proper time,
+- [00:04:25,240 - 00:04:27,380] to have units of time,
+- [00:04:27,920 - 00:04:29,000] not of space,
+- [00:04:29,000 - 00:04:29,760] but of time,
+- [00:04:30,440 - 00:04:32,740] then I wouldn't want to put the speed of light
+- [00:04:32,740 - 00:04:33,880] in front of dt squared
+- [00:04:34,440 - 00:04:36,480] because the speed of light has units.
+- [00:04:36,800 - 00:04:37,880] What are those units?
+- [00:04:38,020 - 00:04:39,640] Units of velocity,
+- [00:04:39,640 - 00:04:40,980] kilometers per second.
+- [00:04:41,520 - 00:04:42,980] But the place that it
+- [00:04:42,980 - 00:04:44,440] would go would be in here,
+- [00:04:44,580 - 00:04:45,860] over c squared.
+- [00:04:46,900 - 00:04:47,420] Uh,
+- [00:04:47,420 - 00:04:48,360] we'd...
+- [00:04:49,300 - 00:04:50,220] like that.
+- [00:04:50,960 - 00:04:51,660] All right,
+- [00:04:51,660 - 00:04:51,880] so,
+- [00:04:51,880 - 00:04:52,300] um,
+- [00:04:53,240 - 00:04:53,760] notice,
+- [00:04:53,760 - 00:04:54,540] first of all,
+- [00:04:55,939 - 00:04:58,280] that if the speed of light is large,
+- [00:04:58,400 - 00:05:00,660] which it is in ordinary units,
+- [00:05:01,520 - 00:05:02,880] in ordinary units
+- [00:05:03,620 - 00:05:05,880] where the speed of light is large...
+- [00:05:05,880 - 00:05:06,440] Now,
+- [00:05:06,440 - 00:05:08,000] what does it mean to say
+- [00:05:08,000 - 00:05:09,560] the speed of light is large?
+- [00:05:09,940 - 00:05:12,580] The speed of light is the speed of light.
+- [00:05:13,340 - 00:05:15,180] It's neither large nor small.
+- [00:05:15,340 - 00:05:16,220] It is what it is.
+- [00:05:16,680 - 00:05:19,100] What it really means is that
+- [00:05:19,100 - 00:05:21,140] the things that we're interested in
+- [00:05:21,140 - 00:05:22,660] are moving very slowly with
+- [00:05:22,660 - 00:05:24,180] respect to the speed of light.
+- [00:05:24,180 - 00:05:25,280] So that,
+- [00:05:25,280 - 00:05:25,440] uh,
+- [00:05:25,440 - 00:05:27,120] so that we can think of the speed of light
+- [00:05:27,120 - 00:05:29,460] as much faster than anything we might be interested in.
+- [00:05:29,580 - 00:05:30,960] Under those circumstances,
+- [00:05:31,620 - 00:05:34,060] if this object here is moving slowly,
+- [00:05:36,100 - 00:05:36,600] then,
+- [00:05:36,600 - 00:05:37,100] uh,
+- [00:05:38,100 - 00:05:39,670] then we can treat the speed
+- [00:05:39,670 - 00:05:41,240] of light as being very large,
+- [00:05:41,500 - 00:05:44,900] and this piece here is essentially negligible.
+- [00:05:46,040 - 00:05:48,620] And d tau is the same as dt.
+- [00:05:49,300 - 00:05:51,620] So for slowly moving objects
+- [00:05:51,620 - 00:05:56,040] in a frame of reference which,
+- [00:05:56,040 - 00:05:56,440] uh,
+- [00:05:56,760 - 00:05:58,260] in a frame of reference
+- [00:05:58,260 - 00:05:59,760] in which everything is moving slowly,
+- [00:06:01,980 - 00:06:04,480] then time and proper time
+- [00:06:04,480 - 00:06:06,920] are very close to being the same thing.
+- [00:06:08,220 - 00:06:09,500] But more generally,
+- [00:06:09,560 - 00:06:12,760] if we're interested in things which are moving fast,
+- [00:06:13,540 - 00:06:16,920] then this is the proper time along a trajectory.
+- [00:06:17,220 - 00:06:20,200] It's the time as recorded by a clock
+- [00:06:20,200 - 00:06:22,020] moving with the object.
+- [00:06:23,180 - 00:06:26,740] A standard clock made in the standard clock factory
+- [00:06:26,740 - 00:06:29,240] moving with the object
+- [00:06:29,240 - 00:06:31,600] will record proper time,
+- [00:06:31,740 - 00:06:33,960] not coordinate time.
+- [00:06:34,180 - 00:06:35,660] This would be called coordinate time,
+- [00:06:35,760 - 00:06:36,920] this would be called proper time.
+- [00:06:37,220 - 00:06:39,080] Now in general theory of relativity,
+- [00:06:40,000 - 00:06:41,980] general theory of relativity
+- [00:06:41,980 - 00:06:43,960] is related to special relativity
+- [00:06:43,960 - 00:06:48,540] in the same way that flat space
+- [00:06:48,540 - 00:06:50,800] is related to curved space.
+- [00:06:51,040 - 00:06:53,200] We haven't discussed yet what curvature means.
+- [00:06:53,400 - 00:06:54,160] We're going to do that tonight.
+- [00:06:55,120 - 00:06:55,560] But,
+- [00:06:55,560 - 00:06:55,920] um,
+- [00:06:56,180 - 00:06:56,940] Yeah?
+- [00:06:57,400 - 00:06:58,700] I have a question.
+- [00:06:59,480 - 00:07:04,520] Isn't dt the one that the clock would record
+- [00:07:04,520 - 00:07:06,140] if it's moving with the object?
+- [00:07:06,440 - 00:07:06,600] No,
+- [00:07:06,600 - 00:07:08,380] d tau is the one that the clock records.
+- [00:07:12,540 - 00:07:15,280] The clock moves and ticks off
+- [00:07:15,940 - 00:07:18,400] proper time in the same way
+- [00:07:18,400 - 00:07:20,380] that if you have a curve in space
+- [00:07:20,380 - 00:07:23,400] and you lay out a tape measure along it,
+- [00:07:23,560 - 00:07:26,540] the tape measure doesn't record
+- [00:07:27,620 - 00:07:29,740] y or x,
+- [00:07:30,080 - 00:07:32,980] it records distance along the curve.
+- [00:07:33,920 - 00:07:34,380] Alright?
+- [00:07:35,050 - 00:07:37,540] Think of the clock moving with the object
+- [00:07:38,210 - 00:07:42,340] as a kind of space-time tape measure,
+- [00:07:42,520 - 00:07:47,260] keeping track of proper time along the trajectory.
+- [00:07:47,260 - 00:07:51,020] Each tick of the clock can be thought of
+- [00:07:51,020 - 00:07:54,380] as a marker along this fictitious tape measure,
+- [00:07:54,560 - 00:07:55,800] the space-time tape measure.
+- [00:07:56,220 - 00:07:58,270] The only peculiar thing is that
+- [00:07:58,270 - 00:08:00,320] there's a minus sign in here.
+- [00:08:00,580 - 00:08:01,060] Alright?
+- [00:08:01,140 - 00:08:02,420] So that we need to keep track of.
+- [00:08:03,280 - 00:08:04,740] But as I said,
+- [00:08:07,040 - 00:08:10,120] general relativity is related to special relativity
+- [00:08:10,120 - 00:08:12,240] in exactly the same way,
+- [00:08:12,280 - 00:08:15,560] or exactly in an analogous way
+- [00:08:15,560 - 00:08:17,060] to the way that
+- [00:08:17,260 - 00:08:17,980] flat space,
+- [00:08:17,980 - 00:08:19,100] that would be,
+- [00:08:19,140 - 00:08:21,080] flat space would be like special relativity,
+- [00:08:21,380 - 00:08:25,060] and curved space would be like general relativity,
+- [00:08:25,340 - 00:08:27,960] except it's curved space-time.
+- [00:08:29,060 - 00:08:29,980] Other than that,
+- [00:08:29,980 - 00:08:30,820] the rules
+- [00:08:31,780 - 00:08:34,000] are basically the same
+- [00:08:35,000 - 00:08:36,360] for geometry,
+- [00:08:37,979 - 00:08:39,780] the existence of a metric,
+- [00:08:40,059 - 00:08:43,360] the notion of covariant derivative,
+- [00:08:43,840 - 00:08:45,520] exactly the same.
+- [00:08:45,520 - 00:08:49,080] The Christoffel symbols are made up
+- [00:08:49,080 - 00:08:52,240] out of the metric tensor.
+- [00:08:52,440 - 00:08:53,700] The metric tensor is a tensor.
+- [00:08:54,420 - 00:08:57,520] There are covariant,
+- [00:08:59,620 - 00:09:00,820] contravariant tensors,
+- [00:09:02,680 - 00:09:03,540] covariant derivatives,
+- [00:09:05,100 - 00:09:06,080] Christoffel symbols,
+- [00:09:06,380 - 00:09:08,600] and they're all made exactly the same way
+- [00:09:09,500 - 00:09:12,780] as they would be in space,
+- [00:09:13,060 - 00:09:15,500] except that you use the space-time measure,
+- [00:09:15,520 - 00:09:18,380] rather than the space metric by itself.
+- [00:09:20,680 - 00:09:22,740] Notice there's one time direction,
+- [00:09:23,640 - 00:09:25,820] one direction with a plus sign,
+- [00:09:26,100 - 00:09:28,480] and all the others have a minus sign.
+- [00:09:30,720 - 00:09:31,340] Okay.
+- [00:09:36,120 - 00:09:36,740] No,
+- [00:09:36,740 - 00:09:37,560] this is last week's.
+- [00:09:37,580 - 00:09:38,200] Quick question.
+- [00:09:38,440 - 00:09:38,660] Yeah.
+- [00:09:38,860 - 00:09:42,100] The matrix size,
+- [00:09:42,360 - 00:09:44,680] whether it's four or five or six,
+- [00:09:44,680 - 00:09:46,660] is this what accounts for
+- [00:09:46,660 - 00:09:49,660] the extra dimensions in string theory?
+- [00:09:50,960 - 00:09:51,520] Yes.
+- [00:09:52,340 - 00:09:52,900] Yes.
+- [00:09:53,240 - 00:09:55,220] The number of Xs
+- [00:09:55,220 - 00:09:56,680] and the size of the matrix
+- [00:09:56,680 - 00:09:58,560] is related,
+- [00:09:58,560 - 00:09:59,780] not just related to,
+- [00:09:59,900 - 00:10:01,380] is exactly as you say,
+- [00:10:01,460 - 00:10:02,960] the number of dimensions.
+- [00:10:03,460 - 00:10:04,620] It doesn't have to be string theory.
+- [00:10:04,760 - 00:10:06,760] Whatever space-time we're talking about,
+- [00:10:06,920 - 00:10:09,380] the dimensionality is just the number
+- [00:10:09,380 - 00:10:10,740] of entries here,
+- [00:10:10,920 - 00:10:12,560] and it's also the size of the matrices.
+- [00:10:13,060 - 00:10:13,620] But,
+- [00:10:13,620 - 00:10:14,060] you know,
+- [00:10:14,060 - 00:10:15,000] apart from that,
+- [00:10:15,220 - 00:10:17,480] the rules are basically the same
+- [00:10:17,480 - 00:10:18,780] in every dimension,
+- [00:10:19,060 - 00:10:21,840] and whether it's space-time
+- [00:10:21,840 - 00:10:22,880] or just plain space.
+- [00:10:24,260 - 00:10:24,960] Now,
+- [00:10:26,199 - 00:10:27,280] excuse me.
+- [00:10:31,220 - 00:10:34,120] When we're dealing with flat space
+- [00:10:34,120 - 00:10:35,340] or space-time,
+- [00:10:36,560 - 00:10:38,900] we don't ever really need
+- [00:10:38,900 - 00:10:41,460] to introduce curvilinear coordinates.
+- [00:10:42,740 - 00:10:44,040] We may or may not.
+- [00:10:44,040 - 00:10:44,720] We may not want to.
+- [00:10:45,460 - 00:10:46,260] In fact,
+- [00:10:46,260 - 00:10:46,980] it almost seems like
+- [00:10:46,980 - 00:10:48,020] a stupid thing to do
+- [00:10:48,020 - 00:10:49,280] because it's going to complicate
+- [00:10:49,280 - 00:10:50,420] the description of things.
+- [00:10:53,620 - 00:10:54,780] When do we do it
+- [00:10:54,780 - 00:10:55,580] and why do we do it?
+- [00:10:58,660 - 00:11:02,040] We do it because we're sometimes interested
+- [00:11:02,040 - 00:11:04,520] in accelerated frames of reference.
+- [00:11:05,180 - 00:11:07,280] An accelerated frame of reference
+- [00:11:08,220 - 00:11:10,860] is basically one in which
+- [00:11:10,860 - 00:11:13,440] the coordinates of space
+- [00:11:14,040 - 00:11:14,980] are being accelerated.
+- [00:11:16,120 - 00:11:18,440] Let's say they start coming in from the left
+- [00:11:18,440 - 00:11:20,220] and run off to the right.
+- [00:11:20,340 - 00:11:20,900] You know what I mean.
+- [00:11:22,620 - 00:11:25,020] And the mathematical description
+- [00:11:25,020 - 00:11:27,260] of an accelerated frame of reference
+- [00:11:28,760 - 00:11:32,120] in terms of an original unaccelerated...
+- [00:11:32,120 - 00:11:34,160] What's an unaccelerated frame of reference called?
+- [00:11:34,600 - 00:11:36,160] An inertial frame.
+- [00:11:36,620 - 00:11:37,300] Yeah,
+- [00:11:37,300 - 00:11:39,760] the description of an accelerated frame
+- [00:11:40,440 - 00:11:42,260] in Newtonian mechanics.
+- [00:11:42,260 - 00:11:44,560] Forget relativity for a minute.
+- [00:11:44,700 - 00:11:45,540] In Newtonian mechanics,
+- [00:11:45,840 - 00:11:47,400] it's just a frame of reference...
+- [00:11:47,780 - 00:11:47,860] Well,
+- [00:11:47,860 - 00:11:48,280] let's see.
+- [00:11:48,340 - 00:11:50,240] If we have our inertial frame of reference,
+- [00:11:51,620 - 00:11:52,180] Tx,
+- [00:11:52,180 - 00:11:54,380] that's our inertial frame of reference.
+- [00:11:54,580 - 00:11:56,120] In this frame of reference,
+- [00:11:56,360 - 00:11:58,340] all objects move along straight lines.
+- [00:11:58,980 - 00:12:01,840] Then the accelerated frame of reference
+- [00:12:02,480 - 00:12:05,200] is one whose coordinates
+- [00:12:07,140 - 00:12:09,880] are curved like this.
+- [00:12:10,940 - 00:12:12,240] They form hyperboles.
+- [00:12:14,580 - 00:12:16,840] And in this frame of reference,
+- [00:12:17,200 - 00:12:20,000] an object which is moving
+- [00:12:20,000 - 00:12:22,940] along a straight line in X-T coordinates
+- [00:12:22,940 - 00:12:25,840] would in fact not be moving along
+- [00:12:25,840 - 00:12:28,820] a linear trajectory in the new coordinates.
+- [00:12:29,500 - 00:12:31,360] And so it appears to be accelerated.
+- [00:12:31,820 - 00:12:32,500] Of course,
+- [00:12:32,500 - 00:12:33,820] the object is simply accelerated
+- [00:12:33,820 - 00:12:35,880] with the equal and opposite acceleration
+- [00:12:35,880 - 00:12:38,460] to the way the coordinate frame is being accelerated.
+- [00:12:38,660 - 00:12:40,500] It's just the old elevator story.
+- [00:12:43,260 - 00:12:47,820] And had it not been for Einstein thinking about elevators
+- [00:12:47,820 - 00:12:51,220] and acceleration and its relationship to gravity,
+- [00:12:51,540 - 00:12:53,480] nobody would have been stupid enough
+- [00:12:53,480 - 00:12:56,020] to introduce curved coordinates into physics.
+- [00:12:56,140 - 00:12:57,940] Why would you do such a foolish thing?
+- [00:12:58,040 - 00:12:59,240] It makes things more complicated.
+- [00:13:00,280 - 00:13:01,280] And of course,
+- [00:13:01,280 - 00:13:02,880] the answer was the equivalence principle.
+- [00:13:03,220 - 00:13:05,520] The curved coordinates are the
+- [00:13:05,520 - 00:13:07,820] same as a gravitational field.
+- [00:13:08,420 - 00:13:09,020] Now,
+- [00:13:09,020 - 00:13:10,480] I'm going to talk about the equation of the equation.
+- [00:13:15,220 - 00:13:17,960] So we do introduce curved coordinates.
+- [00:13:18,700 - 00:13:21,820] That itself is not the same as space-time curvature.
+- [00:13:22,040 - 00:13:22,780] We'll come to it.
+- [00:13:23,700 - 00:13:26,580] But once we introduce curved coordinates and so forth,
+- [00:13:26,620 - 00:13:29,420] the whole apparatus of tensor analysis,
+- [00:13:29,680 - 00:13:32,580] transformations of things from one frame of reference
+- [00:13:32,580 - 00:13:33,160] to another,
+- [00:13:33,160 - 00:13:36,660] all of that gets inherited
+- [00:13:36,660 - 00:13:40,000] from the geometry of space
+- [00:13:40,000 - 00:13:41,600] that we've discussed up till now.
+- [00:13:45,000 - 00:13:45,660] All right,
+- [00:13:45,660 - 00:13:45,920] let's see.
+- [00:13:45,980 - 00:13:47,820] I'm not sure what order to go in.
+- [00:13:48,020 - 00:13:49,980] I think we'll begin with curvature.
+- [00:13:51,819 - 00:13:52,300] Uh,
+- [00:13:52,300 - 00:13:53,480] I had...
+- [00:13:56,480 - 00:13:58,580] Or should we begin with geodesics?
+- [00:13:58,880 - 00:13:59,760] Take a vote.
+- [00:13:59,820 - 00:14:00,840] Who wants geodesics?
+- [00:14:00,840 - 00:14:01,440] Who wants curvature?
+- [00:14:04,079 - 00:14:05,040] All right,
+- [00:14:05,040 - 00:14:05,700] we hear curvature.
+- [00:14:06,180 - 00:14:06,660] Okay.
+- [00:14:12,220 - 00:14:14,160] So I'm not even sure why I talked about this.
+- [00:14:14,320 - 00:14:14,700] All right,
+- [00:14:14,700 - 00:14:15,880] we'll come back to it.
+- [00:14:15,940 - 00:14:16,520] We'll come back to it.
+- [00:14:22,959 - 00:14:23,319] Oh,
+- [00:14:23,319 - 00:14:23,680] yeah,
+- [00:14:23,680 - 00:14:24,420] I do remember.
+- [00:14:27,480 - 00:14:27,840] Yeah.
+- [00:14:29,300 - 00:14:31,960] Curved coordinates are sort of a luxury
+- [00:14:31,960 - 00:14:35,560] that you can use or not use in special relativity.
+- [00:14:38,399 - 00:14:40,140] But they're not a luxury
+- [00:14:40,140 - 00:14:42,940] when you come to think about gravity.
+- [00:14:44,340 - 00:14:45,200] If you...
+- [00:14:45,200 - 00:14:45,560] Well,
+- [00:14:45,560 - 00:14:47,820] in the general theory of relativity,
+- [00:14:48,000 - 00:14:48,600] but in particular,
+- [00:14:48,600 - 00:14:49,960] even in Newtonian gravity,
+- [00:14:51,020 - 00:14:55,620] it's not possible to remove a real gravitational field
+- [00:14:55,620 - 00:14:57,480] by changing coordinates.
+- [00:14:58,520 - 00:15:00,720] One of these fake gravitational fields,
+- [00:15:00,780 - 00:15:02,700] which is just due to accelerated coordinates,
+- [00:15:02,820 - 00:15:04,180] that can be removed by
+- [00:15:04,180 - 00:15:05,540] just replacing the gravitational field.
+- [00:15:05,540 - 00:15:07,280] You can remove the accelerated coordinates
+- [00:15:07,280 - 00:15:09,480] by non-accelerated coordinates.
+- [00:15:10,280 - 00:15:11,860] But a real gravitational field,
+- [00:15:11,980 - 00:15:13,320] you cannot remove that way.
+- [00:15:13,860 - 00:15:14,860] For example,
+- [00:15:14,860 - 00:15:15,640] if you have a star,
+- [00:15:17,280 - 00:15:18,610] and there's a gravitational field
+- [00:15:18,610 - 00:15:19,940] pulling you toward the star,
+- [00:15:20,220 - 00:15:23,040] then in a small elevator over here,
+- [00:15:23,180 - 00:15:25,010] you might be able to remove
+- [00:15:25,010 - 00:15:26,840] the effects of the gravitational field
+- [00:15:27,340 - 00:15:30,040] by just letting the small elevator freely fall,
+- [00:15:30,260 - 00:15:33,240] and then all experiments inside the,
+- [00:15:33,240 - 00:15:33,500] uh,
+- [00:15:33,500 - 00:15:33,500] uh,
+- [00:15:33,500 - 00:15:35,400] the falling elevator
+- [00:15:35,400 - 00:15:38,780] would be exactly as if there was no gravitational field.
+- [00:15:38,860 - 00:15:40,080] And that's not quite true.
+- [00:15:40,560 - 00:15:43,860] It's not quite true because of tidal forces.
+- [00:15:44,400 - 00:15:46,480] Because across the elevator,
+- [00:15:46,680 - 00:15:49,600] the gravitational field varies a little bit.
+- [00:15:50,180 - 00:15:51,860] There's a little bit of tidal forces.
+- [00:15:52,280 - 00:15:54,660] But if you make the elevator small enough
+- [00:15:54,660 - 00:15:57,280] so that the gravitational field doesn't vary very much,
+- [00:15:57,420 - 00:15:59,900] then you completely remove the
+- [00:15:59,900 - 00:16:02,380] effects of gravity inside that elevator,
+- [00:16:03,500 - 00:16:05,100] by just letting the elevator fall.
+- [00:16:05,640 - 00:16:06,360] Well,
+- [00:16:06,360 - 00:16:08,900] that's like kind of introducing a coordinate frame
+- [00:16:09,500 - 00:16:10,640] inside the elevator,
+- [00:16:10,920 - 00:16:12,420] which is like the straight line,
+- [00:16:12,540 - 00:16:13,480] which is like the,
+- [00:16:13,480 - 00:16:13,880] um,
+- [00:16:13,880 - 00:16:14,760] the inertial frame.
+- [00:16:15,460 - 00:16:18,720] And the coordinates which are not falling,
+- [00:16:18,960 - 00:16:21,140] those are like the curved coordinates.
+- [00:16:21,560 - 00:16:22,860] You can't,
+- [00:16:22,860 - 00:16:23,300] however,
+- [00:16:23,300 - 00:16:26,220] get rid of the curved coordinates
+- [00:16:26,220 - 00:16:28,760] or the gravitational field everywhere simultaneously.
+- [00:16:30,160 - 00:16:30,960] There's an obstruction.
+- [00:16:30,960 - 00:16:34,920] If you introduce an acceleration vertically,
+- [00:16:35,320 - 00:16:37,290] that's not going to get rid
+- [00:16:37,290 - 00:16:39,260] of the gravitational field over here.
+- [00:16:40,400 - 00:16:41,020] Or,
+- [00:16:41,020 - 00:16:41,980] over here,
+- [00:16:42,160 - 00:16:44,660] if you introduce a coordinate system
+- [00:16:44,660 - 00:16:46,380] which is accelerating vertically,
+- [00:16:46,720 - 00:16:48,020] let's say in the down direction,
+- [00:16:48,520 - 00:16:50,700] that's only going to make things worse over here.
+- [00:16:50,980 - 00:16:53,340] It might remove the gravitational field
+- [00:16:53,340 - 00:16:55,340] in the falling accelerator on this side,
+- [00:16:55,380 - 00:16:55,600] falling,
+- [00:16:55,600 - 00:16:56,140] um,
+- [00:16:56,140 - 00:16:57,500] uh,
+- [00:16:57,500 - 00:16:58,820] elevator on this side,
+- [00:16:58,940 - 00:17:00,940] but the same coordinate transformation
+- [00:17:00,940 - 00:17:05,560] will only increase the gravitational field down here.
+- [00:17:05,880 - 00:17:07,760] So there's an obstruction,
+- [00:17:08,660 - 00:17:09,420] uh,
+- [00:17:09,420 - 00:17:14,240] to removing the effects of gravity,
+- [00:17:14,339 - 00:17:17,500] or an obstruction to finding coordinates
+- [00:17:18,319 - 00:17:21,980] which sort of straighten out all the effects of gravity
+- [00:17:21,980 - 00:17:22,839] and get rid of them.
+- [00:17:23,819 - 00:17:25,020] That obstruction,
+- [00:17:25,020 - 00:17:27,359] mathematically,
+- [00:17:27,800 - 00:17:28,920] is the same obstruction
+- [00:17:29,500 - 00:17:30,820] as the obstruction
+- [00:17:30,820 - 00:17:34,480] of taking a general space,
+- [00:17:34,620 - 00:17:35,980] or general space-time,
+- [00:17:36,660 - 00:17:38,660] and thinking of it as flat.
+- [00:17:40,280 - 00:17:41,240] First of all,
+- [00:17:41,240 - 00:17:41,800] what does it mean
+- [00:17:41,800 - 00:17:44,340] for a space or a space-time to be flat?
+- [00:17:44,940 - 00:17:46,420] In the case of a space,
+- [00:17:46,760 - 00:17:50,220] it means that you can find coordinates.
+- [00:17:50,260 - 00:17:51,610] It doesn't mean that every
+- [00:17:51,610 - 00:17:52,960] coordinate system has this property.
+- [00:17:53,160 - 00:17:55,440] It means you can find coordinates
+- [00:17:56,840 - 00:17:58,220] which have the property
+- [00:17:59,600 - 00:18:04,080] that the metric tensor is just delta mn.
+- [00:18:05,680 - 00:18:07,000] More specifically,
+- [00:18:07,700 - 00:18:10,300] it really doesn't need to be delta mn.
+- [00:18:10,740 - 00:18:13,000] The metric is constant in space.
+- [00:18:14,899 - 00:18:15,580] Incidentally,
+- [00:18:15,580 - 00:18:18,300] there are coordinates
+- [00:18:18,300 - 00:18:20,420] in which the metric is constant in space,
+- [00:18:20,660 - 00:18:21,060] but which,
+- [00:18:21,060 - 00:18:22,580] in which it's not delta mn.
+- [00:18:22,720 - 00:18:24,400] If you choose coordinates
+- [00:18:25,100 - 00:18:28,620] which are at angles like that,
+- [00:18:28,620 - 00:18:29,700] on this blackboard,
+- [00:18:31,639 - 00:18:33,480] but which are completely uniform,
+- [00:18:33,860 - 00:18:35,140] made up out of straight lines,
+- [00:18:35,460 - 00:18:36,520] equally spaced,
+- [00:18:36,920 - 00:18:39,380] then the metric is not delta mn,
+- [00:18:39,440 - 00:18:42,520] it's some other numerical tensor like this,
+- [00:18:42,720 - 00:18:45,060] but it's constant from point to point.
+- [00:18:45,380 - 00:18:48,160] So another way of saying it is that
+- [00:18:48,959 - 00:18:51,860] a flat space-time is one in which
+- [00:18:51,860 - 00:18:55,360] the metric can be chosen to be absolutely constant
+- [00:18:55,360 - 00:18:56,520] everywheres.
+- [00:18:58,620 - 00:19:00,040] To put it slightly differently,
+- [00:19:01,300 - 00:19:03,640] the metric can be chosen
+- [00:19:04,500 - 00:19:06,940] so that the derivative of the metric
+- [00:19:09,560 - 00:19:11,900] with respect to coordinates
+- [00:19:13,580 - 00:19:15,780] Notice this is a thing with three indices.
+- [00:19:16,020 - 00:19:18,720] The general derivative of the metric
+- [00:19:18,720 - 00:19:20,120] with respect to position
+- [00:19:20,120 - 00:19:23,040] can be chosen to be equal to zero.
+- [00:19:23,240 - 00:19:25,280] You can find a metric,
+- [00:19:25,480 - 00:19:27,939] you can find a coordinate transformation,
+- [00:19:27,940 - 00:19:31,580] which will make the derivatives of the metric
+- [00:19:31,580 - 00:19:33,040] all equal to zero.
+- [00:19:33,320 - 00:19:36,640] That is a flat space-time by definition.
+- [00:19:38,460 - 00:19:39,120] One,
+- [00:19:39,120 - 00:19:39,580] alright,
+- [00:19:39,580 - 00:19:39,880] now,
+- [00:19:40,100 - 00:19:41,940] I assert,
+- [00:19:42,860 - 00:19:44,040] not only do I assert,
+- [00:19:44,340 - 00:19:45,680] I will give you an argument
+- [00:19:46,360 - 00:19:48,180] that you can always,
+- [00:19:48,320 - 00:19:50,100] at a particular point,
+- [00:19:50,260 - 00:19:52,540] here's some curved space,
+- [00:19:52,880 - 00:19:54,180] a general space,
+- [00:19:56,639 - 00:19:57,920] without even knowing it,
+- [00:19:57,940 - 00:19:58,860] without even knowing what curvature means,
+- [00:19:59,780 - 00:20:01,000] I will tell you right now
+- [00:20:01,000 - 00:20:02,600] that it is always possible
+- [00:20:02,600 - 00:20:05,900] at a particular specific point
+- [00:20:06,639 - 00:20:08,360] to choose coordinates,
+- [00:20:08,660 - 00:20:10,260] to choose coordinates
+- [00:20:10,940 - 00:20:13,220] so that at any specific point
+- [00:20:13,940 - 00:20:15,600] the derivatives of the metric
+- [00:20:15,600 - 00:20:16,420] equal zero.
+- [00:20:16,780 - 00:20:18,580] That's always possible to do.
+- [00:20:19,000 - 00:20:22,000] Let's see how we can argue that.
+- [00:20:22,720 - 00:20:23,360] That there's,
+- [00:20:23,360 - 00:20:23,800] in other words,
+- [00:20:23,800 - 00:20:24,680] there's enough freedom
+- [00:20:24,680 - 00:20:26,820] in the choice of coordinates
+- [00:20:27,940 - 00:20:29,240] so that at one point
+- [00:20:29,680 - 00:20:31,900] you can choose g
+- [00:20:31,900 - 00:20:34,380] to have derivatives equal to zero
+- [00:20:34,380 - 00:20:35,700] in every direction.
+- [00:20:37,700 - 00:20:38,440] First derivative,
+- [00:20:38,700 - 00:20:39,460] the first derivative,
+- [00:20:39,580 - 00:20:40,480] not the second derivative
+- [00:20:40,480 - 00:20:41,260] and the third derivative
+- [00:20:41,260 - 00:20:42,160] and the fourth derivative,
+- [00:20:42,720 - 00:20:44,400] but that the first derivative of g
+- [00:20:44,400 - 00:20:46,560] can be chosen to be zero at a point.
+- [00:20:47,700 - 00:20:50,020] Let's figure out how many equations
+- [00:20:50,020 - 00:20:51,980] and how many unknowns there are.
+- [00:20:52,880 - 00:20:54,540] Supposing we have some coordinates,
+- [00:20:56,699 - 00:21:00,380] let's call them x coordinates
+- [00:21:00,380 - 00:21:06,940] in which the metric is not constant
+- [00:21:06,940 - 00:21:09,620] or does have derivatives at this point.
+- [00:21:09,760 - 00:21:10,940] In other words,
+- [00:21:10,980 - 00:21:14,640] where the g's are not without derivative
+- [00:21:14,640 - 00:21:15,420] at this point.
+- [00:21:15,680 - 00:21:17,840] And let's make a coordinate transformation.
+- [00:21:18,320 - 00:21:19,720] To a new set of coordinates,
+- [00:21:19,860 - 00:21:20,660] I'm going to call them y.
+- [00:21:22,220 - 00:21:24,440] I'm going to choose the origin
+- [00:21:24,540 - 00:21:26,060] of the y coordinates
+- [00:21:26,060 - 00:21:27,440] to be exactly the same
+- [00:21:27,440 - 00:21:29,140] as the origin of the x coordinates.
+- [00:21:30,899 - 00:21:32,180] For example,
+- [00:21:32,320 - 00:21:33,820] a simple example would be
+- [00:21:35,139 - 00:21:37,480] ym equals xm.
+- [00:21:38,500 - 00:21:40,180] That's a dumb coordinate transformation.
+- [00:21:40,360 - 00:21:42,220] It's no coordinate transformation at all.
+- [00:21:42,880 - 00:21:44,600] But now I want to
+- [00:21:44,600 - 00:21:46,320] make it more general than that.
+- [00:21:46,500 - 00:21:47,900] And I'm going to assume
+- [00:21:47,900 - 00:21:50,220] that we can tailor series expand,
+- [00:21:50,400 - 00:21:52,980] that we can expand y's and x's
+- [00:21:52,980 - 00:21:57,040] that we can start with ym equals xm
+- [00:21:57,040 - 00:21:59,340] plus a deviation
+- [00:22:01,219 - 00:22:03,240] which is going to be quadratic.
+- [00:22:03,760 - 00:22:04,940] And then of course,
+- [00:22:04,960 - 00:22:06,080] there can be cubic terms,
+- [00:22:06,240 - 00:22:07,380] higher terms than that.
+- [00:22:07,580 - 00:22:10,800] But let's add in some quadratic terms.
+- [00:22:11,180 - 00:22:12,760] And the quadratic terms
+- [00:22:12,760 - 00:22:15,280] will be quadratic in x.
+- [00:22:17,760 - 00:22:20,380] The left hand side has an index m
+- [00:22:20,380 - 00:22:21,720] associated with it.
+- [00:22:22,280 - 00:22:24,340] So we better put here some coefficients.
+- [00:22:24,540 - 00:22:26,020] These are numerical coefficients,
+- [00:22:26,320 - 00:22:27,040] just numbers.
+- [00:22:27,940 - 00:22:28,800] At the moment,
+- [00:22:28,880 - 00:22:29,840] they're not even functions
+- [00:22:29,840 - 00:22:31,340] because we're just interested
+- [00:22:31,340 - 00:22:32,740] in one particular point.
+- [00:22:33,580 - 00:22:35,100] At one particular point,
+- [00:22:35,320 - 00:22:36,480] we'll add in,
+- [00:22:36,520 - 00:22:43,080] and I'm going to put a cmrsxrxs.
+- [00:22:43,140 - 00:22:44,860] This is the most general thing
+- [00:22:44,860 - 00:22:45,880] that I can write down,
+- [00:22:46,540 - 00:22:50,120] which is quadratic in the x's,
+- [00:22:50,120 - 00:22:51,720] and of course,
+- [00:22:52,480 - 00:22:57,060] has an index m from here,
+- [00:22:57,220 - 00:22:59,460] and xr and r and s
+- [00:22:59,460 - 00:23:01,620] that combine with the x's here.
+- [00:23:02,380 - 00:23:03,880] That's in fact the most general
+- [00:23:03,880 - 00:23:04,920] coordinate transformation
+- [00:23:04,920 - 00:23:06,900] which is quadratic in the x's
+- [00:23:06,900 - 00:23:08,940] and which has the property
+- [00:23:08,940 - 00:23:10,680] that the origin of coordinates,
+- [00:23:11,040 - 00:23:12,820] namely y equals 0,
+- [00:23:12,960 - 00:23:14,620] is the same as x equals 0.
+- [00:23:15,340 - 00:23:15,900] Alright,
+- [00:23:15,900 - 00:23:16,520] x equals 0
+- [00:23:16,520 - 00:23:17,680] and y equals 0 are the same.
+- [00:23:17,940 - 00:23:18,500] Alright,
+- [00:23:18,500 - 00:23:19,020] so all that means
+- [00:23:19,020 - 00:23:20,880] I've just introduced other coordinates
+- [00:23:24,440 - 00:23:26,760] located with the same origin over here,
+- [00:23:26,920 - 00:23:30,880] but they're curved relative to the x's.
+- [00:23:31,000 - 00:23:32,480] That they're curved has to do
+- [00:23:32,480 - 00:23:33,380] with this term here,
+- [00:23:33,820 - 00:23:34,860] relative to the x's.
+- [00:23:35,520 - 00:23:36,000] Okay,
+- [00:23:36,000 - 00:23:38,140] how many variables
+- [00:23:38,140 - 00:23:39,580] do I have to play with
+- [00:23:39,580 - 00:23:40,940] in making such transformations?
+- [00:23:41,720 - 00:23:42,560] Let's figure out.
+- [00:23:42,580 - 00:23:43,740] How many such variables are there?
+- [00:23:44,020 - 00:23:44,620] One question.
+- [00:23:44,800 - 00:23:46,000] It looks as if,
+- [00:23:46,000 - 00:23:46,940] if you're saying
+- [00:23:46,940 - 00:23:48,140] that's like a Taylor expansion,
+- [00:23:48,280 - 00:23:49,000] does it look like you've already
+- [00:23:49,020 - 00:23:49,560] almost assumed,
+- [00:23:51,360 - 00:23:52,900] did you drop out
+- [00:23:53,740 - 00:23:55,000] the first derivative?
+- [00:23:55,320 - 00:23:57,000] Or I guess you didn't.
+- [00:23:57,020 - 00:23:57,100] Oh,
+- [00:23:57,100 - 00:23:58,060] that's actually here.
+- [00:23:58,420 - 00:24:00,840] And I could have made it
+- [00:24:00,840 - 00:24:02,240] a little more general in this,
+- [00:24:02,400 - 00:24:05,300] but I just decided that the leading term
+- [00:24:05,900 - 00:24:07,760] would be y is equal to x.
+- [00:24:08,640 - 00:24:09,120] Alright,
+- [00:24:09,120 - 00:24:10,580] the leading term y equal to,
+- [00:24:10,580 - 00:24:11,920] I could have made it more complicated
+- [00:24:11,920 - 00:24:13,440] so that the linear term here
+- [00:24:13,440 - 00:24:14,780] was a little more complicated,
+- [00:24:14,920 - 00:24:15,900] but there's no need to do so.
+- [00:24:16,480 - 00:24:16,960] Alright,
+- [00:24:16,960 - 00:24:18,640] so how many constants
+- [00:24:19,020 - 00:24:19,980] C are there?
+- [00:24:20,060 - 00:24:20,600] Just for fun,
+- [00:24:20,640 - 00:24:21,560] let's see how many there are.
+- [00:24:23,000 - 00:24:23,600] C,
+- [00:24:23,600 - 00:24:25,760] let's forget the M for a minute
+- [00:24:25,760 - 00:24:28,520] and just think of CRS for fixed M.
+- [00:24:29,100 - 00:24:31,060] C is a matrix.
+- [00:24:31,360 - 00:24:33,520] Just putting our hand over M here,
+- [00:24:33,660 - 00:24:34,520] C is a matrix.
+- [00:24:34,820 - 00:24:36,000] And furthermore,
+- [00:24:36,000 - 00:24:37,180] it can be taken to be
+- [00:24:37,180 - 00:24:38,260] a symmetric matrix.
+- [00:24:38,800 - 00:24:40,420] It can be a symmetric matrix
+- [00:24:40,420 - 00:24:41,820] because there's no difference
+- [00:24:41,820 - 00:24:44,040] between xR times xS
+- [00:24:44,040 - 00:24:46,000] and xS times xR.
+- [00:24:46,720 - 00:24:48,580] So C is symmetric,
+- [00:24:48,580 - 00:24:51,240] with respect to interchange of R and S,
+- [00:24:51,300 - 00:24:52,700] or can be chosen to be so.
+- [00:24:54,700 - 00:24:56,260] If we have a space
+- [00:24:56,260 - 00:24:57,860] with a certain number of dimensions,
+- [00:24:58,140 - 00:24:59,200] let's say d dimensions,
+- [00:25:00,080 - 00:25:02,200] then how many independent entries
+- [00:25:02,200 - 00:25:04,260] are there for a symmetric matrix?
+- [00:25:05,880 - 00:25:06,360] No,
+- [00:25:06,360 - 00:25:06,540] no,
+- [00:25:06,540 - 00:25:07,280] d dimensions.
+- [00:25:07,720 - 00:25:09,520] 6 is right in 3 dimensions.
+- [00:25:10,060 - 00:25:11,860] 5 times d minus 1 over 2?
+- [00:25:12,140 - 00:25:13,540] d times d plus 1 over 2.
+- [00:25:14,160 - 00:25:14,620] Yeah.
+- [00:25:15,500 - 00:25:15,980] Remember,
+- [00:25:15,980 - 00:25:16,680] we've got to get 6.
+- [00:25:16,680 - 00:25:17,760] 6 for 3,
+- [00:25:17,760 - 00:25:19,640] so 3 times 4 is 12,
+- [00:25:19,760 - 00:25:20,880] divided by 2 is 6.
+- [00:25:21,760 - 00:25:24,660] So it's d times d plus 1 over 2.
+- [00:25:27,860 - 00:25:28,880] We're not going to use this.
+- [00:25:28,940 - 00:25:31,660] I just wanted to do a little bit
+- [00:25:31,660 - 00:25:35,580] of combinatorics.
+- [00:25:35,880 - 00:25:36,700] But now,
+- [00:25:36,700 - 00:25:38,720] this one matrix like that,
+- [00:25:38,800 - 00:25:40,820] for each entry M,
+- [00:25:41,460 - 00:25:43,520] how many possibilities does M take on?
+- [00:25:44,580 - 00:25:45,100] d.
+- [00:25:45,200 - 00:25:45,480] d.
+- [00:25:46,680 - 00:25:50,660] So the answer is d squared times d plus 1
+- [00:25:52,560 - 00:25:55,000] constant C that I can play with.
+- [00:25:55,280 - 00:25:56,940] I haven't chosen them yet.
+- [00:25:57,220 - 00:25:58,400] We're going to think of
+- [00:25:58,400 - 00:25:59,580] them as unknowns in a minute,
+- [00:25:59,720 - 00:26:01,180] unknowns subject to a condition.
+- [00:26:03,140 - 00:26:03,740] Now,
+- [00:26:03,740 - 00:26:06,500] when I construct the metric
+- [00:26:06,500 - 00:26:07,820] in terms of Y,
+- [00:26:08,540 - 00:26:09,720] how do we do that?
+- [00:26:09,860 - 00:26:12,180] We transform from Y to X.
+- [00:26:12,740 - 00:26:15,140] We transform from Y to X,
+- [00:26:16,479 - 00:26:20,580] and we'll get a metric starting with GMN of X.
+- [00:26:22,380 - 00:26:24,600] We will get a new metric,
+- [00:26:24,700 - 00:26:27,920] which we can now call G,
+- [00:26:28,140 - 00:26:28,660] well,
+- [00:26:28,660 - 00:26:31,980] let's just continue to call it MN of Y.
+- [00:26:32,480 - 00:26:36,220] It's the new metric in Y coordinates.
+- [00:26:37,320 - 00:26:38,000] Okay?
+- [00:26:38,920 - 00:26:42,880] I'm going to require of the constants C,
+- [00:26:44,080 - 00:26:45,280] the condition,
+- [00:26:52,440 - 00:26:53,700] in other words,
+- [00:26:53,700 - 00:26:54,900] I'm going to try to choose
+- [00:26:55,680 - 00:26:58,020] the C coefficients here,
+- [00:26:59,600 - 00:27:01,960] so that the derivative of G
+- [00:27:01,960 - 00:27:05,160] with respect to Y is equal to 0.
+- [00:27:06,040 - 00:27:08,180] How many unknowns are there,
+- [00:27:08,240 - 00:27:09,820] and how many equations are there?
+- [00:27:10,440 - 00:27:11,920] When I write this out,
+- [00:27:11,920 - 00:27:13,660] this will just become an equation.
+- [00:27:13,840 - 00:27:16,520] Given what GMN of X is,
+- [00:27:17,740 - 00:27:19,220] I'll transform it.
+- [00:27:19,320 - 00:27:20,400] I'm not going to go through the whole business.
+- [00:27:20,480 - 00:27:21,620] We're going to transform G,
+- [00:27:21,800 - 00:27:23,080] find G of Y.
+- [00:27:23,880 - 00:27:26,280] That's going to involve the constant C,
+- [00:27:27,060 - 00:27:29,340] because they'll enter into the coordinate transformation,
+- [00:27:29,980 - 00:27:32,020] and then I'll write down the equations
+- [00:27:32,920 - 00:27:34,920] that the derivative of G
+- [00:27:34,920 - 00:27:37,460] with respect to any given direction is 0.
+- [00:27:38,360 - 00:27:40,980] Those become equations for C.
+- [00:27:41,920 - 00:27:43,760] How many equations are there?
+- [00:27:44,460 - 00:27:46,600] How many such equations are there?
+- [00:27:46,940 - 00:27:47,580] Well,
+- [00:27:47,580 - 00:27:49,260] there's a symmetric matrix
+- [00:27:50,379 - 00:27:52,820] that's D times D plus 1 over 2,
+- [00:27:53,700 - 00:27:56,220] but how many such symmetric matrices are there?
+- [00:27:56,580 - 00:27:57,480] In other words,
+- [00:27:57,480 - 00:27:59,200] there's exactly the same number
+- [00:27:59,200 - 00:28:01,360] of components of this object,
+- [00:28:02,860 - 00:28:04,840] GMN with an index S,
+- [00:28:05,160 - 00:28:07,020] as there are of this object.
+- [00:28:08,140 - 00:28:10,100] A thing with three indices
+- [00:28:10,100 - 00:28:12,020] with two of them symmetric.
+- [00:28:12,420 - 00:28:13,360] Same thing here.
+- [00:28:13,500 - 00:28:15,700] Three indices with two of them symmetric.
+- [00:28:16,320 - 00:28:17,600] These equations,
+- [00:28:17,760 - 00:28:19,900] there are just exactly the same number
+- [00:28:19,900 - 00:28:20,860] of these equations
+- [00:28:20,860 - 00:28:23,980] as there are coefficients C.
+- [00:28:24,920 - 00:28:26,400] The conclusion is
+- [00:28:26,400 - 00:28:28,140] there's just exactly enough equations
+- [00:28:28,140 - 00:28:31,120] so that you can always find
+- [00:28:31,120 - 00:28:32,200] a coordinate transformation
+- [00:28:32,919 - 00:28:35,920] which sets the first derivatives of G
+- [00:28:35,920 - 00:28:37,120] equal to 0.
+- [00:28:38,140 - 00:28:40,080] So that's something you can always do.
+- [00:28:40,100 - 00:28:43,800] Once you've done the first derivatives,
+- [00:28:43,940 - 00:28:45,760] if you start looking at the higher derivatives,
+- [00:28:46,240 - 00:28:47,900] there are just too many of them.
+- [00:28:48,160 - 00:28:51,600] If I wanted to write down higher derivatives here,
+- [00:28:51,680 - 00:28:53,420] there are too many higher derivatives
+- [00:28:53,420 - 00:28:55,060] to allow you to solve the equations.
+- [00:28:55,720 - 00:28:56,880] So at most,
+- [00:28:56,880 - 00:28:58,820] you can set the first derivatives
+- [00:28:58,820 - 00:29:00,920] of G equal to 0.
+- [00:29:02,160 - 00:29:03,440] Supposing we've done that,
+- [00:29:09,139 - 00:29:10,080] supposing we've done that,
+- [00:29:10,100 - 00:29:11,600] and we've found coordinates
+- [00:29:12,419 - 00:29:14,340] where this is equal to 0.
+- [00:29:16,900 - 00:29:17,340] Alright,
+- [00:29:17,340 - 00:29:18,800] there are various things we can say.
+- [00:29:18,920 - 00:29:19,560] First of all,
+- [00:29:19,560 - 00:29:22,000] the derivative of G with respect to X
+- [00:29:22,000 - 00:29:23,680] is equal to 0 at that point.
+- [00:29:24,200 - 00:29:25,720] But we can say a little bit more.
+- [00:29:25,940 - 00:29:28,380] We can also say that the Christoffel symbols
+- [00:29:28,380 - 00:29:30,300] at that point are equal to 0.
+- [00:29:30,780 - 00:29:31,220] Why?
+- [00:29:31,980 - 00:29:33,580] Because the Christoffel symbols,
+- [00:29:37,340 - 00:29:38,120] what are those?
+- [00:29:38,260 - 00:29:39,720] Let me write them down for you again.
+- [00:29:40,100 - 00:29:43,120] One half G R S
+- [00:29:43,120 - 00:29:49,800] derivative of G
+- [00:29:55,060 - 00:29:57,700] S M
+- [00:29:59,480 - 00:30:02,080] with respect to X N
+- [00:30:02,860 - 00:30:07,960] plus derivative of G S N
+- [00:30:07,960 - 00:30:10,080] with respect to X N
+- [00:30:10,100 - 00:30:10,780] with respect to X M
+- [00:30:11,660 - 00:30:13,540] minus the last one,
+- [00:30:13,640 - 00:30:15,900] derivative of G M N
+- [00:30:15,900 - 00:30:18,280] with respect to X S.
+- [00:30:18,420 - 00:30:19,820] This is the Christoffel symbols.
+- [00:30:21,680 - 00:30:22,740] And of course,
+- [00:30:22,740 - 00:30:24,700] if I have chosen
+- [00:30:25,740 - 00:30:28,080] the first derivatives of the metric,
+- [00:30:28,180 - 00:30:29,280] if I've chosen coordinates
+- [00:30:29,280 - 00:30:31,480] which get rid of the first derivatives
+- [00:30:31,480 - 00:30:32,420] at the point,
+- [00:30:32,420 - 00:30:33,180] at the origin,
+- [00:30:33,180 - 00:30:33,920] for example,
+- [00:30:34,100 - 00:30:36,140] then at that point,
+- [00:30:37,000 - 00:30:39,200] the Christoffel symbols are also 0.
+- [00:30:39,200 - 00:30:41,080] They're made up out of these derivatives.
+- [00:30:41,480 - 00:30:43,660] So at the point in question,
+- [00:30:43,840 - 00:30:45,380] the single point in question,
+- [00:30:48,840 - 00:30:49,860] the origin,
+- [00:30:49,860 - 00:30:50,560] for example,
+- [00:30:50,560 - 00:30:52,200] doesn't have to be the origin of coordinates,
+- [00:30:52,520 - 00:30:55,180] but at the specific point in question,
+- [00:30:55,380 - 00:30:57,440] I have succeeded in simultaneously
+- [00:30:57,920 - 00:30:59,800] finding coordinates in which
+- [00:30:59,800 - 00:31:01,560] the derivative of G is equal to 0
+- [00:31:01,560 - 00:31:03,840] and in which the Christoffel symbols
+- [00:31:03,840 - 00:31:04,780] are equal to 0.
+- [00:31:05,700 - 00:31:06,740] From that,
+- [00:31:06,740 - 00:31:07,520] it follows
+- [00:31:07,520 - 00:31:09,180] that the covariant is equal to 0.
+- [00:31:09,200 - 00:31:11,160] The covariant derivative of G is equal to 0
+- [00:31:12,120 - 00:31:14,060] because the covariant derivative of G
+- [00:31:14,820 - 00:31:17,040] is just the derivative of G
+- [00:31:18,340 - 00:31:19,740] with respect to X
+- [00:31:20,799 - 00:31:23,800] plus Christoffel symbol times G
+- [00:31:23,800 - 00:31:26,060] plus another Christoffel symbol times G,
+- [00:31:26,180 - 00:31:27,560] one for each index of G.
+- [00:31:27,820 - 00:31:29,700] I won't bother writing the details.
+- [00:31:31,059 - 00:31:34,720] So once we have found coordinates
+- [00:31:35,879 - 00:31:38,140] in which this is true,
+- [00:31:38,140 - 00:31:40,400] and in which this is also equal to 0,
+- [00:31:42,300 - 00:31:44,500] we know that at that point,
+- [00:31:45,280 - 00:31:46,400] at that point,
+- [00:31:46,600 - 00:31:48,780] the covariant derivative of G
+- [00:31:48,780 - 00:31:49,620] is equal to 0.
+- [00:31:50,100 - 00:31:51,120] But on the other hand,
+- [00:31:51,140 - 00:31:52,880] the covariant derivative of G
+- [00:31:53,780 - 00:31:54,640] is a tensor.
+- [00:31:55,780 - 00:31:57,560] The ordinary derivative of G
+- [00:31:57,560 - 00:31:58,380] is not a tensor.
+- [00:31:58,760 - 00:32:01,040] The Christoffel symbols are not tensors.
+- [00:32:01,580 - 00:32:04,220] But the covariant derivative of G,
+- [00:32:04,300 - 00:32:05,800] that was the whole purpose
+- [00:32:05,800 - 00:32:07,640] of inventing covariant derivatives,
+- [00:32:08,260 - 00:32:10,540] to make things which really are tensors.
+- [00:32:10,840 - 00:32:13,280] So the covariant derivative of G
+- [00:32:13,880 - 00:32:14,960] is equal to 0.
+- [00:32:15,340 - 00:32:16,380] It's a tensor.
+- [00:32:16,880 - 00:32:18,660] And if a tensor is equal to 0
+- [00:32:19,320 - 00:32:21,100] in one coordinate system,
+- [00:32:21,380 - 00:32:23,240] then it's equal to 0
+- [00:32:23,240 - 00:32:24,840] in every coordinate system.
+- [00:32:25,800 - 00:32:26,400] Well,
+- [00:32:26,400 - 00:32:27,220] there was nothing special
+- [00:32:27,220 - 00:32:28,980] about the origin of coordinates.
+- [00:32:29,080 - 00:32:31,000] I could have done exactly the same thing
+- [00:32:31,000 - 00:32:32,020] at every point.
+- [00:32:33,540 - 00:32:35,240] And so I conclude
+- [00:32:35,240 - 00:32:37,840] that the covariant derivative of G
+- [00:32:38,140 - 00:32:38,720] is 0.
+- [00:32:39,520 - 00:32:40,420] Everywhere is.
+- [00:32:41,100 - 00:32:43,680] Just because I can choose coordinates
+- [00:32:43,680 - 00:32:44,560] at any point
+- [00:32:45,140 - 00:32:47,520] where the derivative of G
+- [00:32:47,520 - 00:32:50,600] and the Christoffel symbols
+- [00:32:50,600 - 00:32:51,560] are equal to 0.
+- [00:32:53,160 - 00:32:55,220] So that's the theorem that...
+- [00:32:56,260 - 00:32:58,460] How do we know that the C's
+- [00:32:59,800 - 00:33:00,360] will,
+- [00:33:00,360 - 00:33:02,500] when we make them be non-constant
+- [00:33:02,500 - 00:33:03,740] from point to point...
+- [00:33:03,740 - 00:33:07,180] We begin by doing this at a point.
+- [00:33:07,180 - 00:33:08,040] Right,
+- [00:33:08,040 - 00:33:10,920] but now we are able to extend that
+- [00:33:10,920 - 00:33:11,160] to,
+- [00:33:11,160 - 00:33:11,560] say,
+- [00:33:11,560 - 00:33:13,020] through a curve or something.
+- [00:33:13,340 - 00:33:13,560] Well,
+- [00:33:13,560 - 00:33:14,380] you can't know...
+- [00:33:14,380 - 00:33:15,780] If you go to a new point,
+- [00:33:15,980 - 00:33:16,980] there'll be new C's.
+- [00:33:18,680 - 00:33:20,240] If you go to another point...
+- [00:33:20,240 - 00:33:21,380] The functions going...
+- [00:33:22,600 - 00:33:24,720] They won't necessarily be continuous,
+- [00:33:24,840 - 00:33:25,300] would they?
+- [00:33:25,480 - 00:33:26,580] They'll be continuous,
+- [00:33:26,580 - 00:33:27,480] yeah.
+- [00:33:28,280 - 00:33:30,180] The function C will be continuous,
+- [00:33:30,200 - 00:33:31,960] but they will vary from point to point.
+- [00:33:33,660 - 00:33:35,220] The argument's a little circular.
+- [00:33:35,420 - 00:33:35,840] I mean,
+- [00:33:35,840 - 00:33:36,640] have you used...
+- [00:33:36,640 - 00:33:38,600] You used that...
+- [00:33:39,380 - 00:33:40,140] The...
+- [00:33:40,140 - 00:33:40,400] The...
+- [00:33:40,400 - 00:33:42,640] The very derivative of G being 0
+- [00:33:42,640 - 00:33:44,020] to derive a theorem...
+- [00:33:44,354 - 00:33:44,554] ありがとうございました
+- [00:33:45,538 - 00:33:46,298] You know,
+- [00:33:46,298 - 00:33:46,758] that's true.
+- [00:33:46,758 - 00:33:47,458] That's true.
+- [00:33:47,458 - 00:33:49,238] The argument is a little bit circular.
+- [00:33:49,238 - 00:33:51,378] The argument is a little bit circular,
+- [00:33:51,378 - 00:33:56,458] but what it proves is the consistency of the definitions,
+- [00:33:56,458 - 00:33:57,058] if you like.
+- [00:33:57,418 - 00:34:01,398] You could introduce other kinds of geometric structures
+- [00:34:01,398 - 00:34:05,378] where the Christoffel symbols are replaced by other objects.
+- [00:34:06,118 - 00:34:10,138] There are other definitions of the Christoffel
+- [00:34:10,138 - 00:34:14,158] symbols where the covariant derivative of g,
+- [00:34:14,158 - 00:34:14,678] for example,
+- [00:34:14,678 - 00:34:15,658] is not equal to zero.
+- [00:34:15,878 - 00:34:16,978] Such things are possible.
+- [00:34:16,978 - 00:34:20,797] I guess what we really prove here is the consistency of
+- [00:34:20,797 - 00:34:24,618] the idea that the covariant derivative of g is equal to zero.
+- [00:34:25,338 - 00:34:26,628] We assume the covariant derivative
+- [00:34:26,628 - 00:34:27,918] of g is equal to zero.
+- [00:34:27,918 - 00:34:29,848] We calculate from that the
+- [00:34:29,848 - 00:34:31,777] definition of the Christoffel symbols,
+- [00:34:31,878 - 00:34:33,487] and then we go back
+- [00:34:33,487 - 00:34:35,098] and we discover with that definition.
+- [00:34:35,378 - 00:34:38,058] The covariant derivative of g is equal to zero.
+- [00:34:38,058 - 00:34:39,178] So actually you're right.
+- [00:34:39,178 - 00:34:40,858] The definition is circular.
+- [00:34:41,277 - 00:34:44,318] Not completely circular.
+- [00:34:46,538 - 00:34:47,197] Yeah.
+- [00:34:47,197 - 00:34:47,858] Yeah.
+- [00:34:47,858 - 00:34:48,358] Yeah.
+- [00:34:48,358 - 00:34:49,138] Yeah.
+- [00:34:49,578 - 00:34:50,777] In any case,
+- [00:34:50,777 - 00:34:52,378] the definitions are consistent,
+- [00:34:52,378 - 00:34:57,058] and they are the standard definitions of
+- [00:34:57,058 - 00:35:01,738] how you covariantly differentiate tensors to get tensors.
+- [00:35:02,038 - 00:35:02,598] Question.
+- [00:35:02,978 - 00:35:03,258] Yeah.
+- [00:35:03,338 - 00:35:04,938] If this is related to...
+- [00:35:04,938 - 00:35:06,838] An intuitive notion of flatness.
+- [00:35:07,638 - 00:35:08,118] Yeah.
+- [00:35:08,238 - 00:35:10,818] What would happen if somehow or another,
+- [00:35:10,818 - 00:35:11,818] like you had a wiggle,
+- [00:35:11,818 - 00:35:13,768] and then inside of every wiggle you
+- [00:35:13,768 - 00:35:15,718] put another wiggle inside of every wiggle?
+- [00:35:15,878 - 00:35:21,578] So is there a constraint on g such that you can't get a situation that is
+- [00:35:21,578 - 00:35:27,278] sort of infinitely wiggly so you could never find a coordinate system that would be flat?
+- [00:35:28,158 - 00:35:28,638] No.
+- [00:35:30,758 - 00:35:31,578] You're asking,
+- [00:35:31,578 - 00:35:32,738] for example,
+- [00:35:32,738 - 00:35:34,778] whether g...
+- [00:35:34,938 - 00:35:40,888] Could be such an unpleasant function that its derivatives
+- [00:35:40,888 - 00:35:46,838] don't exist or aren't continuous or something like that.
+- [00:35:46,978 - 00:35:47,218] So yes.
+- [00:35:47,338 - 00:35:50,838] So the usual assumption is that
+- [00:35:50,838 - 00:35:54,338] the g's are continuous and differentiable everywhere.
+- [00:35:55,198 - 00:35:56,498] Just once or...
+- [00:35:57,378 - 00:35:58,678] Let's say just once.
+- [00:36:00,118 - 00:36:00,878] Um...
+- [00:36:00,878 - 00:36:02,278] Um...
+- [00:36:02,278 - 00:36:02,718] Um...
+- [00:36:04,158 - 00:36:04,918] Um...
+- [00:36:04,938 - 00:36:05,278] There will be exceptions.
+- [00:36:05,678 - 00:36:06,638] For example,
+- [00:36:06,638 - 00:36:10,718] exceptions are places where the geometries become singular.
+- [00:36:11,578 - 00:36:12,878] There will be exceptions,
+- [00:36:12,878 - 00:36:15,838] but in general,
+- [00:36:15,838 - 00:36:18,778] a place where the geometry becomes singular...
+- [00:36:18,778 - 00:36:20,258] I'll tell you what singularity means in a second.
+- [00:36:20,938 - 00:36:24,338] I've given you examples of polar coordinate singularities,
+- [00:36:24,338 - 00:36:25,918] which are funny right at the origin.
+- [00:36:26,518 - 00:36:27,378] All right?
+- [00:36:27,458 - 00:36:30,918] Polar coordinate singularities are not well...
+- [00:36:30,918 - 00:36:31,198] Sorry.
+- [00:36:31,258 - 00:36:33,818] Polar coordinates are singular at the origin.
+- [00:36:34,938 - 00:36:35,998] That's because...
+- [00:36:37,958 - 00:36:39,138] At the origin,
+- [00:36:39,138 - 00:36:43,698] you can't give a well-defined angular coordinate to a point.
+- [00:36:45,038 - 00:36:50,238] It can happen that you choose coordinates that are defined in
+- [00:36:50,238 - 00:36:55,438] a way that make g's not be properly differentiable or something.
+- [00:36:56,078 - 00:36:57,518] But on the other hand,
+- [00:36:57,518 - 00:36:59,548] you can also find other
+- [00:36:59,548 - 00:37:01,578] coordinates at exactly the same point,
+- [00:37:01,578 - 00:37:04,818] which are not singular at that point.
+- [00:37:04,938 - 00:37:07,478] So polar coordinates are kind of
+- [00:37:07,478 - 00:37:10,018] bad coordinates right at the origin.
+- [00:37:10,518 - 00:37:12,418] But there's nothing wrong or funny
+- [00:37:12,418 - 00:37:14,318] about the space at the origin there.
+- [00:37:14,358 - 00:37:15,238] It's not singular.
+- [00:37:15,418 - 00:37:17,128] And the way to prove it is just
+- [00:37:17,128 - 00:37:18,838] to go to other coordinates where there is...
+- [00:37:18,838 - 00:37:22,478] Where the metric is nice and continuous and differentiable.
+- [00:37:23,238 - 00:37:24,658] There may be places,
+- [00:37:24,658 - 00:37:25,878] honest places,
+- [00:37:25,878 - 00:37:29,428] where there's nothing you can do
+- [00:37:29,428 - 00:37:32,978] to make the metric differentiable and...
+- [00:37:32,978 - 00:37:33,278] Uh...
+- [00:37:34,098 - 00:37:34,698] Uh...
+- [00:37:34,698 - 00:37:34,798] Uh...
+- [00:37:34,798 - 00:37:37,298] Friendly function at a point.
+- [00:37:37,698 - 00:37:39,418] And if that's the case,
+- [00:37:39,418 - 00:37:41,518] then one says there's a singularity,
+- [00:37:41,518 - 00:37:43,078] a real physical singularity.
+- [00:37:43,458 - 00:37:45,578] A real physical singularity is a
+- [00:37:45,578 - 00:37:47,698] place where there's nothing you can do,
+- [00:37:47,698 - 00:37:50,138] not only not to make the coordinates flat,
+- [00:37:50,438 - 00:37:52,218] but also to make them smooth,
+- [00:37:52,218 - 00:37:54,558] to make the metric continuous
+- [00:37:54,558 - 00:37:56,898] and differentiable at that point.
+- [00:37:57,158 - 00:37:58,298] I'll give you an example.
+- [00:37:58,378 - 00:37:59,738] We're about to come to an example now.
+- [00:38:00,198 - 00:38:00,978] The cone.
+- [00:38:01,238 - 00:38:01,758] The cone.
+- [00:38:01,758 - 00:38:04,617] The tip of the cone is a real singularity.
+- [00:38:04,617 - 00:38:08,917] It's a singularity in space where there is no coordinate system that you
+- [00:38:08,917 - 00:38:13,218] can choose which will make the metric at the tip of the cone smooth.
+- [00:38:13,638 - 00:38:15,278] There's something real going on there.
+- [00:38:15,938 - 00:38:17,758] And that's called a singularity.
+- [00:38:18,998 - 00:38:22,638] I have a quick clarification on the
+- [00:38:22,638 - 00:38:26,278] last term in the denominator of the Christopherson.
+- [00:38:27,018 - 00:38:27,578] Oh,
+- [00:38:27,578 - 00:38:27,758] yeah.
+- [00:38:28,618 - 00:38:29,178] Sorry.
+- [00:38:29,538 - 00:38:30,098] Yeah.
+- [00:38:31,898 - 00:38:32,458] Yes.
+- [00:38:34,778 - 00:38:35,258] Yeah.
+- [00:38:35,258 - 00:38:35,878] Is this...
+- [00:38:35,878 - 00:38:38,158] When you solve for the C,
+- [00:38:38,158 - 00:38:38,778] the constant,
+- [00:38:38,778 - 00:38:41,728] is that like trying to find a
+- [00:38:41,728 - 00:38:44,678] coordinate system where the physical systems vanish?
+- [00:38:44,798 - 00:38:45,218] Yeah.
+- [00:38:45,318 - 00:38:45,778] Is that...
+- [00:38:45,778 - 00:38:46,158] Yeah.
+- [00:38:46,678 - 00:38:47,158] Yeah.
+- [00:38:47,238 - 00:38:48,668] But you can do that by making
+- [00:38:48,668 - 00:38:50,098] sure the derivatives of the metric vanish.
+- [00:38:51,498 - 00:38:51,978] Right.
+- [00:38:52,777 - 00:38:53,257] This,
+- [00:38:53,257 - 00:38:53,738] incidentally,
+- [00:38:53,738 - 00:38:54,458] among other things,
+- [00:38:54,458 - 00:38:57,378] proves that the Christoffel symbols can't be tensors.
+- [00:38:57,998 - 00:38:59,658] Because by a coordinate transformation,
+- [00:38:59,658 - 00:39:02,128] you can make Christoffel symbols which are not equal
+- [00:39:02,128 - 00:39:04,598] to zero equal to zero at a particular point.
+- [00:39:04,618 - 00:39:07,838] So the Christoffel symbol is not a tensor.
+- [00:39:08,658 - 00:39:11,598] The derivative of a tensor is not a tensor.
+- [00:39:11,858 - 00:39:14,698] But combining together derivatives of tensors
+- [00:39:14,698 - 00:39:17,538] with Christoffel symbols gives you tensors.
+- [00:39:17,898 - 00:39:18,758] All right.
+- [00:39:18,818 - 00:39:19,398] So...
+- [00:39:20,618 - 00:39:21,338] Good.
+- [00:39:23,378 - 00:39:24,098] Yeah.
+- [00:39:24,198 - 00:39:28,298] So with this definition of the Christoffel symbols,
+- [00:39:28,298 - 00:39:30,638] it follows that the covariant
+- [00:39:30,638 - 00:39:32,978] derivative of the metric is zero.
+- [00:39:33,238 - 00:39:33,598] Right.
+- [00:39:40,078 - 00:39:42,238] And whether it's a good thing or a bad thing,
+- [00:39:42,238 - 00:39:42,898] it's a true thing.
+- [00:39:45,138 - 00:39:45,658] Now,
+- [00:39:45,658 - 00:39:48,098] let's come to the idea of curvature.
+- [00:39:48,778 - 00:39:49,618] As I said,
+- [00:39:49,618 - 00:39:51,818] curvature is a mathematical obstruction.
+- [00:39:52,638 - 00:39:55,708] Its presence prevents you from finding
+- [00:39:55,708 - 00:39:58,778] coordinates in which the space is flat.
+- [00:40:00,138 - 00:40:00,658] Uh...
+- [00:40:02,798 - 00:40:04,318] And to understand...
+- [00:40:04,618 - 00:40:05,158] Curvature,
+- [00:40:05,158 - 00:40:07,188] you first have to understand something
+- [00:40:07,188 - 00:40:09,218] we've already spent some time with.
+- [00:40:09,398 - 00:40:13,018] The idea of covariant derivative
+- [00:40:13,018 - 00:40:16,638] of a vector along a curve.
+- [00:40:16,978 - 00:40:17,778] Let's go back.
+- [00:40:17,838 - 00:40:20,498] We talked about this previously,
+- [00:40:20,498 - 00:40:21,818] but let me go back to it.
+- [00:40:24,598 - 00:40:25,958] That's the starting point.
+- [00:40:27,938 - 00:40:31,818] The notion of the covariant derivative along a curve.
+- [00:40:32,638 - 00:40:33,838] The question...
+- [00:40:33,838 - 00:40:35,358] I'll tell you what question we want to answer.
+- [00:40:35,818 - 00:40:37,538] We want to answer a question like this.
+- [00:40:37,898 - 00:40:41,678] Supposing I start with a vector somewhere in space.
+- [00:40:42,478 - 00:40:45,058] And I would like to move it to another point,
+- [00:40:45,058 - 00:40:46,998] keeping it parallel to itself.
+- [00:40:48,058 - 00:40:48,898] In other words,
+- [00:40:48,898 - 00:40:51,758] I would like to move this vector over to here.
+- [00:40:52,338 - 00:40:53,858] And I would like to know
+- [00:40:53,858 - 00:40:55,378] what its components are over here,
+- [00:40:55,378 - 00:40:57,588] if it's moved in a way
+- [00:40:57,588 - 00:40:59,798] which keeps it parallel to itself.
+- [00:41:01,498 - 00:41:03,758] That's the notion of parallel transport.
+- [00:41:03,838 - 00:41:05,698] That's the notion of parallel transport of a vector.
+- [00:41:06,278 - 00:41:09,318] Keeping it parallel to itself as you move it.
+- [00:41:09,458 - 00:41:10,918] We'd like to move it over here.
+- [00:41:11,038 - 00:41:11,158] Now,
+- [00:41:11,158 - 00:41:12,198] in flat space,
+- [00:41:12,198 - 00:41:13,358] it's pretty clear what you do.
+- [00:41:13,478 - 00:41:15,298] You just keep the vector parallel to itself.
+- [00:41:15,798 - 00:41:17,158] But when we are...
+- [00:41:17,158 - 00:41:21,518] We can just choose Cartesian coordinates.
+- [00:41:21,738 - 00:41:24,858] Cartesian coordinates where the metric is just delta m n.
+- [00:41:25,498 - 00:41:26,978] And in those coordinates,
+- [00:41:26,978 - 00:41:29,308] keeping the vector parallel to itself
+- [00:41:29,308 - 00:41:31,638] just means keeping its coordinates constant.
+- [00:41:31,798 - 00:41:33,438] Keeping its components constant.
+- [00:41:34,098 - 00:41:34,578] But,
+- [00:41:34,578 - 00:41:37,818] if either we have curved coordinates or a really
+- [00:41:37,818 - 00:41:41,058] curved space where we can't choose the metric like this,
+- [00:41:41,558 - 00:41:44,068] then we have to find some definition of what
+- [00:41:44,068 - 00:41:46,578] it means to move a vector parallel to itself.
+- [00:41:46,818 - 00:41:48,378] It's not clear that we can find such a definition,
+- [00:41:48,378 - 00:41:49,698] but I will tell you what it is.
+- [00:41:50,138 - 00:41:52,338] What an appropriate definition is.
+- [00:41:52,998 - 00:41:53,478] Alright,
+- [00:41:53,478 - 00:41:53,898] first of all,
+- [00:41:53,898 - 00:41:54,578] take your curve.
+- [00:41:55,838 - 00:41:56,878] Take your vector.
+- [00:41:58,257 - 00:42:02,198] And make the covariant derivative along the curve.
+- [00:42:02,918 - 00:42:03,818] I'll remind you what that means.
+- [00:42:03,818 - 00:42:04,298] I'll tell you what that is.
+- [00:42:04,378 - 00:42:05,238] If we have a vector.
+- [00:42:06,178 - 00:42:09,618] Let's say it's a vector with contravariant indices.
+- [00:42:11,258 - 00:42:11,738] Then...
+- [00:42:12,418 - 00:42:14,978] And it's defined all along the curve.
+- [00:42:15,218 - 00:42:16,638] All along the curve it's defined.
+- [00:42:16,818 - 00:42:18,538] It might even be defined in the rest of space.
+- [00:42:19,038 - 00:42:21,238] But I'm not interested in the rest of space.
+- [00:42:21,378 - 00:42:22,197] Just along the curve.
+- [00:42:22,717 - 00:42:23,197] Then,
+- [00:42:23,197 - 00:42:23,758] first of all,
+- [00:42:23,758 - 00:42:26,318] we differentiate the components with
+- [00:42:26,318 - 00:42:28,878] respect to distance along the curve.
+- [00:42:29,498 - 00:42:29,978] Right?
+- [00:42:30,478 - 00:42:30,958] ds.
+- [00:42:32,278 - 00:42:35,558] Where s just represents distance along the curve.
+- [00:42:36,518 - 00:42:39,278] Measured in whatever units we like.
+- [00:42:40,137 - 00:42:44,158] But this in itself is not a true vector.
+- [00:42:46,617 - 00:42:47,818] The derivative...
+- [00:42:47,818 - 00:42:50,898] The v's may vary for reasons having nothing to
+- [00:42:50,898 - 00:42:53,978] do with an actual physical variation of a vector,
+- [00:42:54,178 - 00:42:55,818] but having to do with variation
+- [00:42:55,818 - 00:42:57,458] of the coordinates as you move along.
+- [00:42:57,998 - 00:42:59,378] What do you have to do
+- [00:42:59,378 - 00:43:00,758] to make a vector out of it?
+- [00:43:00,758 - 00:43:03,268] You have to make the
+- [00:43:03,268 - 00:43:05,778] covariant derivative which involves the gammas.
+- [00:43:06,378 - 00:43:07,278] Gamma nu.
+- [00:43:07,838 - 00:43:08,478] Oh,
+- [00:43:08,478 - 00:43:11,718] I'm using now the notation of relativity.
+- [00:43:12,038 - 00:43:13,978] Nus and mus instead of m's and n's.
+- [00:43:14,938 - 00:43:16,158] It doesn't matter.
+- [00:43:16,218 - 00:43:16,738] We could...
+- [00:43:17,518 - 00:43:20,618] Somewhere I jumped into space-time.
+- [00:43:20,718 - 00:43:22,458] Let's do space instead of space-time.
+- [00:43:22,578 - 00:43:23,038] M...
+- [00:43:27,118 - 00:43:27,758] Mn...
+- [00:43:28,798 - 00:43:29,438] Mn...
+- [00:43:30,758 - 00:43:31,158] And...
+- [00:43:33,158 - 00:43:33,758] S...
+- [00:43:35,117 - 00:43:36,018] Let's say no.
+- [00:43:39,478 - 00:43:40,078] P.
+- [00:43:40,318 - 00:43:41,158] Let's call it P.
+- [00:43:41,578 - 00:43:43,718] And then there is a v.
+- [00:43:46,258 - 00:43:46,858] N...
+- [00:43:48,578 - 00:43:49,178] dx...
+- [00:43:50,698 - 00:43:51,298] P...
+- [00:43:52,078 - 00:43:53,278] By ds.
+- [00:43:56,518 - 00:43:57,958] dxp by ds.
+- [00:43:57,958 - 00:43:58,618] That's a vector.
+- [00:43:58,858 - 00:44:00,398] Remember what this vector is?
+- [00:44:00,398 - 00:44:01,678] What is the name of this vector?
+- [00:44:04,118 - 00:44:05,418] dx by ds.
+- [00:44:06,658 - 00:44:07,918] That's the tangent vector.
+- [00:44:08,858 - 00:44:11,038] That's the tangent vector along the curve.
+- [00:44:12,798 - 00:44:16,598] And we worked out last time that this is
+- [00:44:16,598 - 00:44:20,398] the covariant derivative of a vector along a curve.
+- [00:44:21,618 - 00:44:22,758] Along a curve,
+- [00:44:22,758 - 00:44:24,438] it's the covariant derivative,
+- [00:44:25,058 - 00:44:26,838] where this is the tangent vector,
+- [00:44:27,058 - 00:44:28,458] and this is the derivative
+- [00:44:28,458 - 00:44:29,858] of the vector along the curve.
+- [00:44:30,398 - 00:44:30,978] Now,
+- [00:44:30,978 - 00:44:31,938] I'll just remind you,
+- [00:44:32,018 - 00:44:35,098] we defined the geodesic last time
+- [00:44:35,098 - 00:44:38,278] by saying this curve is a geodesic
+- [00:44:38,278 - 00:44:42,418] if the covariant derivative of the tangent vector is zero.
+- [00:44:43,918 - 00:44:45,938] So let's just put that down.
+- [00:44:46,038 - 00:44:47,018] Let's write that down,
+- [00:44:47,138 - 00:44:49,598] the condition for a geodesic.
+- [00:44:51,118 - 00:44:53,778] v now is going to be replaced
+- [00:44:56,138 - 00:44:58,738] by dxm by ds.
+- [00:44:58,738 - 00:45:00,378] In other words,
+- [00:45:00,378 - 00:45:02,538] we're going to replace v by the tangent vector itself.
+- [00:45:03,238 - 00:45:05,118] And then the derivative of the
+- [00:45:05,118 - 00:45:06,998] tangent vector with respect to s
+- [00:45:06,998 - 00:45:08,358] becomes a second derivative.
+- [00:45:08,918 - 00:45:12,138] d second xm by ds squared
+- [00:45:13,938 - 00:45:16,878] plus gamma mnp.
+- [00:45:17,598 - 00:45:19,318] Now the tangent vector,
+- [00:45:19,518 - 00:45:21,138] now v is the tangent vector,
+- [00:45:21,318 - 00:45:23,598] so that's dxn by ds,
+- [00:45:24,477 - 00:45:26,318] and then dxp by ds.
+- [00:45:31,518 - 00:45:32,078] Now,
+- [00:45:32,078 - 00:45:34,698] if the covariant derivative
+- [00:45:35,478 - 00:45:37,618] of the tangent vector is equal to zero,
+- [00:45:37,738 - 00:45:38,098] if,
+- [00:45:38,098 - 00:45:41,758] I'm not saying it's always true for any curve,
+- [00:45:42,038 - 00:45:43,728] but if the curve is
+- [00:45:43,728 - 00:45:45,418] chosen so that the covariant derivative
+- [00:45:45,418 - 00:45:47,818] of the tangent vector is zero,
+- [00:45:47,978 - 00:45:51,598] then the curve is a geodesic.
+- [00:45:51,638 - 00:45:52,558] In a sense,
+- [00:45:52,558 - 00:45:54,878] it's the straightest possible kind of curve
+- [00:45:54,878 - 00:45:56,678] that you can have in the space.
+- [00:45:57,357 - 00:45:59,098] If it's flat space,
+- [00:45:59,458 - 00:46:02,418] then the geodesics are just straight lines.
+- [00:46:03,018 - 00:46:05,338] If the space is a sphere,
+- [00:46:05,598 - 00:46:08,138] then the geodesics are great circles.
+- [00:46:08,638 - 00:46:09,738] In general,
+- [00:46:09,738 - 00:46:11,598] they're nothing of the sort.
+- [00:46:11,818 - 00:46:14,738] They're curves that go through the space,
+- [00:46:14,878 - 00:46:16,878] but they're the straightest possible curves.
+- [00:46:17,398 - 00:46:19,898] They're the curves you would get by just focusing
+- [00:46:19,898 - 00:46:21,958] and going incrementally straight ahead.
+- [00:46:24,098 - 00:46:24,698] Okay.
+- [00:46:24,698 - 00:46:27,018] But now let's define something else.
+- [00:46:27,138 - 00:46:30,218] Let's define parallel transport of a vector.
+- [00:46:32,058 - 00:46:33,358] Supposing we have some vector
+- [00:46:33,358 - 00:46:35,098] which is not the tangent vector now.
+- [00:46:35,198 - 00:46:37,838] Let's come back to a general vector like this.
+- [00:46:39,658 - 00:46:41,858] This vector may not be the tangent vector.
+- [00:46:42,638 - 00:46:43,598] Here it is.
+- [00:46:43,698 - 00:46:44,118] It's v.
+- [00:46:47,478 - 00:46:50,078] And it's allowed to vary along the curve.
+- [00:46:51,458 - 00:46:52,018] Well,
+- [00:46:52,018 - 00:46:54,598] if this covariant derivative
+- [00:46:54,598 - 00:46:55,698] is equal to zero,
+- [00:46:58,138 - 00:47:00,738] then we say that that vector
+- [00:47:02,338 - 00:47:05,618] has been transported parallel to itself
+- [00:47:06,438 - 00:47:07,478] along the curve.
+- [00:47:08,118 - 00:47:09,218] In other words,
+- [00:47:09,218 - 00:47:10,938] this is as close as you can get
+- [00:47:10,938 - 00:47:14,378] to saying the vector is constant along the curve.
+- [00:47:16,298 - 00:47:19,578] If its covariant derivative along the curve
+- [00:47:19,578 - 00:47:20,518] is equal to zero,
+- [00:47:20,758 - 00:47:24,538] one says that this vector
+- [00:47:24,598 - 00:47:28,778] has been parallelly transported along the curve.
+- [00:47:29,778 - 00:47:30,298] Okay.
+- [00:47:30,418 - 00:47:31,598] Can we always do that?
+- [00:47:31,718 - 00:47:33,698] Can we always take a vector at this end
+- [00:47:33,698 - 00:47:36,318] and parallel transport it?
+- [00:47:36,398 - 00:47:36,878] In other words,
+- [00:47:36,878 - 00:47:38,418] can we take a vector at this end
+- [00:47:38,418 - 00:47:40,798] and now move it along here in such a way
+- [00:47:40,798 - 00:47:45,058] that it remains in this sense parallel to itself?
+- [00:47:45,658 - 00:47:46,178] Yeah,
+- [00:47:46,178 - 00:47:46,878] we can.
+- [00:47:48,318 - 00:47:51,258] Let's just rewrite this slightly differently.
+- [00:47:51,518 - 00:47:52,538] Let's just write this.
+- [00:47:52,538 - 00:47:56,018] The small change in vm
+- [00:47:56,178 - 00:47:59,218] as we move from one point to another
+- [00:47:59,218 - 00:48:00,858] Let's get rid of the ds.
+- [00:48:00,938 - 00:48:02,618] Just multiply through on both sides.
+- [00:48:03,098 - 00:48:06,258] The small change in vm is minus
+- [00:48:06,258 - 00:48:13,178] gamma mnp vn dxp.
+- [00:48:13,978 - 00:48:18,918] So if I have a small incremental distance,
+- [00:48:19,158 - 00:48:20,398] dxp here,
+- [00:48:23,438 - 00:48:24,418] oh sorry,
+- [00:48:24,418 - 00:48:25,518] this should be a minus sign,
+- [00:48:25,518 - 00:48:25,818] right?
+- [00:48:26,918 - 00:48:28,018] Not equal to zero.
+- [00:48:30,638 - 00:48:31,218] dvm,
+- [00:48:31,218 - 00:48:33,998] all I've done is solve this equation here,
+- [00:48:34,038 - 00:48:35,438] multiply through by ds,
+- [00:48:35,438 - 00:48:36,158] that's not important.
+- [00:48:36,478 - 00:48:39,638] And this tells me how I should vary
+- [00:48:39,638 - 00:48:41,238] the components of vm
+- [00:48:41,238 - 00:48:43,738] as I move along the curve
+- [00:48:44,497 - 00:48:48,518] so that the covariant derivative is zero.
+- [00:48:49,238 - 00:48:50,298] In other words,
+- [00:48:50,398 - 00:48:51,968] this tells me how to
+- [00:48:51,968 - 00:48:53,538] move from one point to another.
+- [00:48:53,618 - 00:48:55,178] It tells me how to change v,
+- [00:48:55,878 - 00:48:57,238] the components of v,
+- [00:48:57,298 - 00:49:01,378] given the components of v at a starting point
+- [00:49:02,398 - 00:49:03,998] and the Christoffel symbols
+- [00:49:04,798 - 00:49:07,218] and the little differential displacement dx,
+- [00:49:07,338 - 00:49:08,918] it tells me how to
+- [00:49:08,918 - 00:49:10,498] change v to the next point.
+- [00:49:11,158 - 00:49:11,978] In fact,
+- [00:49:11,978 - 00:49:12,638] it tells me,
+- [00:49:12,638 - 00:49:14,638] once I've updated it from here to here,
+- [00:49:14,798 - 00:49:16,818] I can do it again and again and again.
+- [00:49:17,698 - 00:49:20,078] And so it's always possible,
+- [00:49:21,178 - 00:49:25,118] to choose the components of v along the curve
+- [00:49:25,898 - 00:49:28,758] so that the covariant derivative is equal to zero.
+- [00:49:29,478 - 00:49:31,418] All you have to do is to solve
+- [00:49:31,418 - 00:49:34,438] for how vm changes as you move along the curve
+- [00:49:34,438 - 00:49:36,758] by knowing that at any one point
+- [00:49:36,758 - 00:49:37,888] you can find out how
+- [00:49:37,888 - 00:49:39,018] it moves to the next point,
+- [00:49:39,018 - 00:49:39,678] and so forth.
+- [00:49:40,198 - 00:49:41,278] So that's not hard.
+- [00:49:41,638 - 00:49:45,618] That's the construction and the definition
+- [00:49:45,618 - 00:49:49,978] of parallelly transporting a vector along a curve.
+- [00:49:49,978 - 00:49:52,558] To move it from one place to another,
+- [00:49:53,618 - 00:49:55,118] you just change v
+- [00:49:57,058 - 00:49:59,658] by an amount that's proportional to v
+- [00:49:59,658 - 00:50:01,088] and that's proportional to the
+- [00:50:01,088 - 00:50:02,518] amount that you're displacing it
+- [00:50:02,518 - 00:50:05,398] and is proportional to the Christoffel symbols.
+- [00:50:05,798 - 00:50:08,278] Parallel to itself.
+- [00:50:10,978 - 00:50:11,978] Parallel to itself.
+- [00:50:12,758 - 00:50:13,798] In other words,
+- [00:50:13,798 - 00:50:14,958] you have some curve in space,
+- [00:50:15,658 - 00:50:16,818] I have a vector,
+- [00:50:16,818 - 00:50:18,198] and I want to move
+- [00:50:18,198 - 00:50:19,578] it along the curve in space,
+- [00:50:19,578 - 00:50:22,538] so that it always stays parallel to itself.
+- [00:50:24,218 - 00:50:25,598] That's what we're trying to do.
+- [00:50:26,058 - 00:50:26,538] Okay?
+- [00:50:30,018 - 00:50:31,378] Just a little aside.
+- [00:50:31,758 - 00:50:34,978] I always like the Hot Wheels car example.
+- [00:50:35,378 - 00:50:36,638] If you have a globe,
+- [00:50:36,818 - 00:50:39,798] and you move a Hot Wheels car along it,
+- [00:50:39,838 - 00:50:41,718] so that the direction never changes,
+- [00:50:41,718 - 00:50:42,818] you get the great circle.
+- [00:50:43,598 - 00:50:45,278] Or even on an inner tube,
+- [00:50:45,798 - 00:50:47,438] the Hot Wheels car is the
+- [00:50:47,438 - 00:50:49,078] thing that always has the same direction,
+- [00:50:49,078 - 00:50:50,877] and it will give you the shortest distance.
+- [00:50:51,078 - 00:50:52,238] That'll give you geodesics.
+- [00:50:52,397 - 00:50:52,617] Right.
+- [00:50:53,038 - 00:50:54,298] But now we're taking a
+- [00:50:54,298 - 00:50:55,558] curve which is not a geodesic.
+- [00:50:55,558 - 00:50:56,058] First of all,
+- [00:50:56,058 - 00:50:57,578] a geodesic is a curve,
+- [00:50:57,698 - 00:51:00,357] is a vector which has been moved parallel to itself.
+- [00:51:00,818 - 00:51:02,418] I was just using that as an example
+- [00:51:02,418 - 00:51:03,758] as keeping the same direction
+- [00:51:03,758 - 00:51:05,098] is the same as minimizing distance.
+- [00:51:06,038 - 00:51:07,238] That's for a geodesic,
+- [00:51:07,238 - 00:51:07,357] yeah.
+- [00:51:07,758 - 00:51:09,498] But you can also parallel transport
+- [00:51:09,498 - 00:51:11,238] something which is not a geodesic.
+- [00:51:11,238 - 00:51:11,637] For example,
+- [00:51:12,318 - 00:51:12,978] we can parallel,
+- [00:51:12,978 - 00:51:13,778] sorry,
+- [00:51:13,877 - 00:51:15,207] you can transport a vector
+- [00:51:15,207 - 00:51:16,538] which is not the tangent vector.
+- [00:51:17,598 - 00:51:21,038] I want to transport this vector along that line.
+- [00:51:21,318 - 00:51:23,208] Now if I take that vector
+- [00:51:23,208 - 00:51:25,098] and transport it along that line,
+- [00:51:26,517 - 00:51:29,638] then the tangent vector is the thing that I'm transporting.
+- [00:51:30,118 - 00:51:32,718] If the derivative of the tangent vector is zero,
+- [00:51:32,858 - 00:51:33,738] it's a straight line.
+- [00:51:34,158 - 00:51:37,458] But I can also take any vector,
+- [00:51:38,538 - 00:51:41,138] which is not necessarily a tangent vector,
+- [00:51:41,318 - 00:51:44,758] and start transporting it along the curve,
+- [00:51:45,058 - 00:51:46,518] whether or not the tangent vector is a tangent vector,
+- [00:51:46,538 - 00:51:47,818] or whether or not the curve is a geodesic.
+- [00:51:47,818 - 00:51:48,938] Take any curve,
+- [00:51:49,118 - 00:51:50,538] any curve,
+- [00:51:51,338 - 00:51:52,238] take a vector,
+- [00:51:52,918 - 00:51:56,418] and transport it so that it stays parallel to itself.
+- [00:51:58,798 - 00:52:00,198] That you can always do.
+- [00:52:00,338 - 00:52:03,718] Parallel to itself and of the same magnitude.
+- [00:52:05,058 - 00:52:07,168] Now would this be the same as
+- [00:52:07,168 - 00:52:09,278] saying that the angle between the vector
+- [00:52:09,278 - 00:52:13,098] and the tangent vector is always constant?
+- [00:52:13,278 - 00:52:13,558] No.
+- [00:52:13,678 - 00:52:15,498] That's definitely not what it says.
+- [00:52:16,538 - 00:52:16,618] Why?
+- [00:52:17,498 - 00:52:20,198] Because the tangent vector is itself changing.
+- [00:52:20,458 - 00:52:21,978] Let's do it a little differently.
+- [00:52:22,118 - 00:52:22,258] Here,
+- [00:52:22,258 - 00:52:24,338] let's take a circle.
+- [00:52:25,378 - 00:52:27,418] And let's take a vector.
+- [00:52:27,498 - 00:52:28,038] There's a vector.
+- [00:52:28,278 - 00:52:30,098] Now I'm going to transport it along itself.
+- [00:52:31,558 - 00:52:33,858] I'm going to transport it parallel to itself.
+- [00:52:34,158 - 00:52:36,458] I'm having trouble keeping it exactly parallel.
+- [00:52:36,598 - 00:52:38,478] But notice by the time it gets down to here,
+- [00:52:39,278 - 00:52:40,938] it's become the tangent vector.
+- [00:52:42,118 - 00:52:43,878] Keeping it parallel to itself,
+- [00:52:44,598 - 00:52:45,838] along the circle,
+- [00:52:46,538 - 00:52:48,498] will make it the tangent vector over here.
+- [00:52:48,638 - 00:52:51,178] Over here it's perpendicular to the tangent vector.
+- [00:52:51,418 - 00:52:53,638] And up here it's the tangent vector again.
+- [00:52:56,138 - 00:52:57,498] So if I take a circle,
+- [00:52:57,638 - 00:52:58,938] in flat space,
+- [00:52:59,138 - 00:53:00,198] a flat space circle,
+- [00:53:00,438 - 00:53:03,158] and transport a vector parallel to itself,
+- [00:53:03,398 - 00:53:06,058] the angle relative to the curve changes.
+- [00:53:08,978 - 00:53:14,878] It's the angle relative to the neighbor
+- [00:53:14,878 - 00:53:16,238] which hasn't changed.
+- [00:53:17,058 - 00:53:19,358] The neighbor to this point,
+- [00:53:19,398 - 00:53:20,718] or to the vector over here,
+- [00:53:20,778 - 00:53:21,798] is this point over here.
+- [00:53:22,858 - 00:53:25,558] It's relative to the neighboring value
+- [00:53:25,558 - 00:53:26,918] that it hasn't changed.
+- [00:53:27,478 - 00:53:29,538] So we're moving it along incrementally,
+- [00:53:30,278 - 00:53:31,278] along the curve,
+- [00:53:31,398 - 00:53:32,198] crazy directions,
+- [00:53:32,638 - 00:53:35,458] but always keeping it parallel to
+- [00:53:35,458 - 00:53:37,818] its neighboring value.
+- [00:53:38,278 - 00:53:40,238] That's called parallel transport.
+- [00:53:41,418 - 00:53:41,748] Yeah?
+- [00:53:42,318 - 00:53:43,658] S of ds is any parameter.
+- [00:53:43,998 - 00:53:46,518] S of ds could be any parameter along the curve.
+- [00:53:46,518 - 00:53:46,978] Right.
+- [00:53:47,118 - 00:53:49,218] It's canceled out of this equation here.
+- [00:53:49,338 - 00:53:49,898] Right.
+- [00:53:50,598 - 00:53:51,198] Right.
+- [00:53:51,258 - 00:53:54,258] So there's a notion of parallel transport
+- [00:53:54,258 - 00:53:55,698] along a curve.
+- [00:53:56,898 - 00:53:57,498] Okay?
+- [00:53:57,578 - 00:53:59,738] But now you could ask an interesting question.
+- [00:54:02,058 - 00:54:02,658] Supposing...
+- [00:54:03,938 - 00:54:05,818] Does everybody understand what it means?
+- [00:54:06,218 - 00:54:08,718] It means as you move along the curve,
+- [00:54:08,858 - 00:54:10,418] even if the curve is turning,
+- [00:54:10,558 - 00:54:16,238] you make sure that the vector stays parallel to itself.
+- [00:54:16,518 - 00:54:17,408] Let me give you an
+- [00:54:17,408 - 00:54:18,298] example how you could do that,
+- [00:54:18,957 - 00:54:20,738] physically in the real world.
+- [00:54:20,978 - 00:54:22,098] A gyroscope.
+- [00:54:22,298 - 00:54:23,498] You take a gyroscope.
+- [00:54:23,758 - 00:54:25,498] A gyroscope is a spinning object.
+- [00:54:25,998 - 00:54:26,518] All right?
+- [00:54:26,618 - 00:54:29,418] If you don't really forcibly change its direction
+- [00:54:29,418 - 00:54:32,118] and you just hold it by
+- [00:54:32,118 - 00:54:34,818] its tip or whatever it is,
+- [00:54:34,878 - 00:54:36,018] and you move it around,
+- [00:54:36,358 - 00:54:38,038] it will always face in the same direction.
+- [00:54:38,478 - 00:54:40,398] You don't have to move it along a straight line.
+- [00:54:40,518 - 00:54:41,898] You can move it along a curve.
+- [00:54:43,017 - 00:54:44,898] That gyroscope will transport
+- [00:54:45,437 - 00:54:46,498] parallel to itself.
+- [00:54:46,518 - 00:54:52,598] So a gyroscope is a physical implementation
+- [00:54:52,598 - 00:54:56,038] of parallel transport in space along a curve.
+- [00:54:57,158 - 00:54:57,778] Okay?
+- [00:54:57,878 - 00:54:59,078] You move it around.
+- [00:55:00,958 - 00:55:02,698] Pay no attention to it.
+- [00:55:02,758 - 00:55:03,958] Just move the tip of it.
+- [00:55:04,058 - 00:55:07,218] And because of its angular momentum,
+- [00:55:07,438 - 00:55:09,538] it will continue to point in the same direction.
+- [00:55:10,058 - 00:55:13,378] Even if you transport it along the wildest,
+- [00:55:13,378 - 00:55:14,238] wiggliest curve,
+- [00:55:15,238 - 00:55:16,498] that's the idea of parallel transport.
+- [00:55:16,518 - 00:55:19,318] So this would be the equation then
+- [00:55:19,318 - 00:55:20,858] that would govern,
+- [00:55:21,078 - 00:55:22,978] in three dimensions for example,
+- [00:55:23,238 - 00:55:25,438] would govern the components
+- [00:55:26,428 - 00:55:28,687] of the axis of a gyroscope
+- [00:55:29,038 - 00:55:30,078] as you move it around.
+- [00:55:33,308 - 00:55:36,198] Now that's not the same as Cartesian coordinates
+- [00:55:36,198 - 00:55:37,658] relative to that point though.
+- [00:55:38,378 - 00:55:40,658] We haven't even introduced any coordinates.
+- [00:55:41,018 - 00:55:41,458] Well,
+- [00:55:41,458 - 00:55:43,018] we have introduced the coordinates.
+- [00:55:43,198 - 00:55:43,338] Well,
+- [00:55:43,338 - 00:55:44,498] I'm saying there's perpendicularity implied here.
+- [00:55:44,638 - 00:55:44,998] What's that?
+- [00:55:44,998 - 00:55:48,018] Is perpendicularity implied with parallelism?
+- [00:55:48,578 - 00:55:49,738] Perpendicular to what?
+- [00:55:50,898 - 00:55:51,618] Well,
+- [00:55:51,618 - 00:55:52,618] in order to be parallel,
+- [00:55:52,778 - 00:55:55,258] it must be perpendicular to something
+- [00:55:55,258 - 00:55:56,898] that's perpendicular to it.
+- [00:55:56,978 - 00:55:57,518] Yes,
+- [00:55:57,518 - 00:55:58,098] yes.
+- [00:55:58,218 - 00:56:00,678] So let me say it a different way.
+- [00:56:00,818 - 00:56:02,738] Take two distinct vectors,
+- [00:56:02,838 - 00:56:05,418] which happen to be perpendicular to each other,
+- [00:56:05,538 - 00:56:09,238] and now parallel transport both of them.
+- [00:56:09,338 - 00:56:11,078] They will stay perpendicular.
+- [00:56:11,698 - 00:56:12,418] Okay.
+- [00:56:12,558 - 00:56:14,938] Three vectors forming a tetrahedron,
+- [00:56:14,938 - 00:56:15,938] a triad,
+- [00:56:16,858 - 00:56:20,698] which you could make by three perpendicular gyroscopes
+- [00:56:20,698 - 00:56:22,358] and transport them around,
+- [00:56:22,598 - 00:56:24,538] and they'll stay perpendicular to each other.
+- [00:56:24,998 - 00:56:28,478] So parallel transport sort of preserves
+- [00:56:28,478 - 00:56:30,818] the angles between vectors and so forth,
+- [00:56:30,878 - 00:56:33,338] and it's the closest thing that you can have
+- [00:56:33,698 - 00:56:35,678] to the notion of moving a vector around
+- [00:56:35,678 - 00:56:39,438] so that its direction and its magnitude stay fixed.
+- [00:56:40,098 - 00:56:40,738] Okay.
+- [00:56:40,918 - 00:56:43,278] That's the notion of parallel transport.
+- [00:56:44,938 - 00:56:45,518] In fact,
+- [00:56:45,518 - 00:56:47,218] it's possible to prove that the magnitude
+- [00:56:47,218 - 00:56:48,718] of the vector stays fixed,
+- [00:56:48,898 - 00:56:50,998] but mostly I'm interested in the direction now.
+- [00:56:51,118 - 00:56:52,898] But now I come to a funny question.
+- [00:56:53,798 - 00:56:57,348] How do I know that
+- [00:56:57,348 - 00:57:00,898] if I parallel transport a vector
+- [00:57:00,898 - 00:57:05,178] from one place to another along curve A,
+- [00:57:05,538 - 00:57:07,118] let's call that curve A,
+- [00:57:07,718 - 00:57:09,238] I start it over here,
+- [00:57:09,698 - 00:57:12,118] and I transport that gyroscope,
+- [00:57:12,118 - 00:57:14,158] I transport that gyroscope
+- [00:57:14,158 - 00:57:15,858] over here till I get to here,
+- [00:57:16,858 - 00:57:18,508] how do I know that if
+- [00:57:18,508 - 00:57:20,158] I did it along a different curve,
+- [00:57:20,938 - 00:57:23,598] I would come to the same final conclusion?
+- [00:57:23,878 - 00:57:25,638] How do I know that if
+- [00:57:25,638 - 00:57:27,398] I transported it along a different curve,
+- [00:57:27,538 - 00:57:29,158] it wouldn't come out in some other direction?
+- [00:57:30,918 - 00:57:31,398] No.
+- [00:57:31,558 - 00:57:34,558] That equation is just a definition of parallel transport,
+- [00:57:34,778 - 00:57:37,278] and it refers to a curve.
+- [00:57:38,538 - 00:57:41,578] How do I know if I chose another curve,
+- [00:57:41,578 - 00:57:44,558] then in fact I would get the same result?
+- [00:57:44,818 - 00:57:44,898] Well,
+- [00:57:44,898 - 00:57:46,978] I'm just saying you already canceled ds,
+- [00:57:47,018 - 00:57:48,278] so it doesn't refer to a curve.
+- [00:57:48,458 - 00:57:49,998] It does refer to a curve.
+- [00:57:50,558 - 00:57:53,038] The dx's here refer to the curve.
+- [00:57:54,198 - 00:57:57,698] The s is only the parameter along the curve.
+- [00:57:58,198 - 00:58:01,828] The dx's are the sequence of little differentials
+- [00:58:02,358 - 00:58:03,438] along the curve.
+- [00:58:03,838 - 00:58:04,158] Okay.
+- [00:58:04,398 - 00:58:04,978] Right.
+- [00:58:05,278 - 00:58:08,298] So this definition of parallel transport,
+- [00:58:09,418 - 00:58:10,578] and in particular,
+- [00:58:10,578 - 00:58:15,158] the idea of transporting it all along a curve,
+- [00:58:17,437 - 00:58:18,598] we could ask,
+- [00:58:18,678 - 00:58:22,698] does it guarantee that the result of a parallel transport
+- [00:58:24,118 - 00:58:27,938] leads to a unique final answer
+- [00:58:28,578 - 00:58:32,818] independent of the curve connecting the two points?
+- [00:58:34,158 - 00:58:34,878] Well,
+- [00:58:34,878 - 00:58:36,718] the answer is no,
+- [00:58:36,958 - 00:58:38,738] it does not guarantee that,
+- [00:58:39,398 - 00:58:40,358] and in fact,
+- [00:58:40,578 - 00:58:41,118] in general,
+- [00:58:41,218 - 00:58:42,058] it's not true.
+- [00:58:42,938 - 00:58:43,418] If you,
+- [00:58:43,458 - 00:58:45,698] or you could say the same thing another way.
+- [00:58:46,518 - 00:58:48,288] Instead of parallelly transporting
+- [00:58:48,288 - 00:58:50,058] it along two different curves,
+- [00:58:50,458 - 00:58:53,398] let's imagine parallelly transporting a curve,
+- [00:58:53,638 - 00:58:53,978] sorry,
+- [00:58:54,158 - 00:58:56,578] a vector around a closed curve.
+- [00:58:57,318 - 00:58:58,838] That's an even better situation.
+- [00:58:59,438 - 00:59:00,818] Take the gyroscope,
+- [00:59:00,818 - 00:59:04,598] and parallelly transport it around a closed curve.
+- [00:59:05,058 - 00:59:08,378] Does it necessarily come back to the same direction?
+- [00:59:09,417 - 00:59:10,138] Okay.
+- [00:59:10,298 - 00:59:11,838] The answer is,
+- [00:59:12,018 - 00:59:13,678] in flat space,
+- [00:59:14,018 - 00:59:14,438] yes,
+- [00:59:14,518 - 00:59:15,978] that's intuitively obvious.
+- [00:59:18,598 - 00:59:19,318] Well,
+- [00:59:19,618 - 00:59:20,298] right.
+- [00:59:22,218 - 00:59:23,698] But the question is,
+- [00:59:23,798 - 00:59:24,798] in a general space,
+- [00:59:25,018 - 00:59:26,038] in a curved space,
+- [00:59:26,838 - 00:59:28,638] is it necessarily true
+- [00:59:28,638 - 00:59:31,038] that if incrementally,
+- [00:59:31,038 - 00:59:32,798] from point to point,
+- [00:59:32,878 - 00:59:34,518] you make sure that you keep
+- [00:59:34,518 - 00:59:36,838] the vector parallel to itself,
+- [00:59:36,838 - 00:59:37,938] the gyroscope,
+- [00:59:38,098 - 00:59:40,518] must the gyroscope come back to itself?
+- [00:59:40,838 - 00:59:41,998] And the answer is no.
+- [00:59:42,738 - 00:59:43,338] The
+- [00:59:46,018 - 00:59:46,618] obstruction,
+- [00:59:46,678 - 00:59:48,318] or the fact,
+- [00:59:48,358 - 00:59:49,298] or the condition,
+- [00:59:49,598 - 00:59:50,318] the situation,
+- [00:59:50,418 - 00:59:52,818] in which it doesn't come back to itself,
+- [00:59:53,098 - 00:59:55,518] is the situation in which there is curvature.
+- [00:59:56,398 - 00:59:58,578] That's the diagnostic test
+- [00:59:58,578 - 01:00:01,758] to find out if a space is flat or not,
+- [01:00:01,938 - 01:00:04,998] is to transport vectors around curves,
+- [01:00:06,838 - 01:00:08,578] and if you ever find
+- [01:00:08,578 - 01:00:12,498] a curve that you can take the vector around
+- [01:00:12,498 - 01:00:15,418] where the vector does not come back to itself,
+- [01:00:16,237 - 01:00:19,058] somewhere in there is some curvature.
+- [01:00:19,418 - 01:00:21,158] That's the definition of curvature,
+- [01:00:21,458 - 01:00:24,378] that parallel transport around a closed curve
+- [01:00:24,378 - 01:00:26,978] does not bring you back to the same vector.
+- [01:00:27,598 - 01:00:28,938] If there is curvature,
+- [01:00:29,728 - 01:00:32,158] it's quite obvious that you cannot,
+- [01:00:32,878 - 01:00:33,538] uh,
+- [01:00:36,158 - 01:00:37,678] flatten the space out
+- [01:00:38,378 - 01:00:40,238] to give it a metric
+- [01:00:40,238 - 01:00:41,958] which looks like a conventional
+- [01:00:42,398 - 01:00:43,298] flat space metric.
+- [01:00:43,898 - 01:00:44,378] Yeah?
+- [01:00:44,538 - 01:00:46,898] Does a Mobius strip have this property?
+- [01:00:47,998 - 01:00:48,658] Sort of,
+- [01:00:48,658 - 01:00:48,858] yeah,
+- [01:00:48,858 - 01:00:49,218] let's see.
+- [01:00:49,298 - 01:00:49,978] A Mobius strip,
+- [01:00:49,978 - 01:00:50,378] actually,
+- [01:00:50,418 - 01:00:51,338] when you go around a circle,
+- [01:00:51,398 - 01:00:52,258] a vector can flip,
+- [01:00:52,298 - 01:00:53,378] it's a flipper,
+- [01:00:53,378 - 01:00:53,638] yeah,
+- [01:00:53,638 - 01:00:54,178] yeah.
+- [01:00:54,338 - 01:00:54,818] Yeah,
+- [01:00:54,818 - 01:00:55,178] but there's,
+- [01:00:55,178 - 01:00:55,378] there's,
+- [01:00:55,418 - 01:00:55,838] uh,
+- [01:00:55,838 - 01:00:56,218] yes,
+- [01:00:56,418 - 01:00:58,258] a Mobius strip does have
+- [01:00:58,898 - 01:01:00,558] a kind of global,
+- [01:01:00,738 - 01:01:02,098] I'll call it global curvature,
+- [01:01:02,098 - 01:01:03,358] and I'll come back to
+- [01:01:03,358 - 01:01:04,618] the Mobius strip in a minute.
+- [01:01:04,758 - 01:01:05,278] Uh,
+- [01:01:05,278 - 01:01:07,498] Mobius strip is a non-orientable surface,
+- [01:01:07,698 - 01:01:09,078] and so it's a little bit peculiar,
+- [01:01:09,238 - 01:01:09,558] but,
+- [01:01:09,558 - 01:01:09,818] uh,
+- [01:01:09,818 - 01:01:11,498] we can certainly find examples
+- [01:01:11,498 - 01:01:13,758] without going to non-orientable surfaces.
+- [01:01:14,378 - 01:01:19,298] The cone is the sort of simplest example of all.
+- [01:01:23,438 - 01:01:25,718] The cone is a space which is,
+- [01:01:26,358 - 01:01:27,418] by the cone,
+- [01:01:28,018 - 01:01:29,638] everybody know what I mean by a cone?
+- [01:01:30,238 - 01:01:30,758] Heh.
+- [01:01:31,558 - 01:01:32,878] Like an ice cream cone.
+- [01:01:34,598 - 01:01:35,948] It's what you get if
+- [01:01:35,948 - 01:01:37,298] you take a sheet of paper,
+- [01:01:42,498 - 01:01:44,578] cut out an angular wedge.
+- [01:01:46,558 - 01:01:46,918] Alright,
+- [01:01:46,918 - 01:01:48,158] there's an angular wedge.
+- [01:01:48,498 - 01:01:49,538] I wish I had a knife.
+- [01:01:49,618 - 01:01:50,518] Does anybody have a,
+- [01:01:50,518 - 01:01:50,758] uh,
+- [01:01:50,798 - 01:01:51,598] scissor with them?
+- [01:01:54,698 - 01:01:55,058] Hmm?
+- [01:01:56,518 - 01:01:56,878] Yeah,
+- [01:01:56,878 - 01:01:58,418] I,
+- [01:01:58,418 - 01:01:59,358] I know I can do a,
+- [01:01:59,438 - 01:02:00,138] I can do a trick,
+- [01:02:00,138 - 01:02:00,618] but let me,
+- [01:02:00,618 - 01:02:00,738] uh,
+- [01:02:01,378 - 01:02:03,198] what I do with the cover to this?
+- [01:02:07,558 - 01:02:07,998] Oh,
+- [01:02:07,998 - 01:02:08,338] okay.
+- [01:02:08,418 - 01:02:08,638] Ah,
+- [01:02:08,638 - 01:02:09,418] my knees.
+- [01:02:12,298 - 01:02:12,738] Oh,
+- [01:02:12,738 - 01:02:13,078] cool.
+- [01:02:14,358 - 01:02:14,798] Okay.
+- [01:02:17,718 - 01:02:18,158] Okay,
+- [01:02:18,158 - 01:02:19,358] so let's cut out
+- [01:02:20,798 - 01:02:22,138] the angular wedge.
+- [01:02:23,318 - 01:02:24,978] It's called an angular deficit,
+- [01:02:25,198 - 01:02:26,198] or an angled deficit.
+- [01:02:30,138 - 01:02:32,118] I should have brought a big piece of,
+- [01:02:32,118 - 01:02:32,338] uh,
+- [01:02:32,798 - 01:02:34,798] what do we call that kind of paper in kindergarten?
+- [01:02:35,158 - 01:02:35,598] Oak tag,
+- [01:02:35,598 - 01:02:36,218] oak tag,
+- [01:02:36,218 - 01:02:36,478] yeah.
+- [01:02:37,418 - 01:02:37,878] Uh,
+- [01:02:37,878 - 01:02:38,818] big piece of it,
+- [01:02:38,818 - 01:02:38,998] and
+- [01:02:40,138 - 01:02:41,058] cut it out.
+- [01:02:43,638 - 01:02:45,958] So you cut out a wedge,
+- [01:02:45,958 - 01:02:46,778] like that,
+- [01:02:47,238 - 01:02:50,158] and then you sew it together
+- [01:02:51,378 - 01:02:51,838] along,
+- [01:02:51,838 - 01:02:53,318] along the wedge like that,
+- [01:02:53,418 - 01:02:55,538] and you make a cone.
+- [01:02:55,658 - 01:02:56,878] Is that obviously a cone?
+- [01:02:57,417 - 01:02:57,878] Yeah.
+- [01:02:57,878 - 01:02:58,298] Yeah,
+- [01:02:58,298 - 01:02:59,438] that's obviously a cone,
+- [01:02:59,438 - 01:02:59,898] right?
+- [01:03:00,218 - 01:03:00,678] Now,
+- [01:03:00,678 - 01:03:02,238] once you sew it together that way,
+- [01:03:03,618 - 01:03:06,298] you could cut it and slice it some other place
+- [01:03:06,298 - 01:03:07,098] and open it up,
+- [01:03:07,158 - 01:03:09,118] so it doesn't matter where you cut it
+- [01:03:10,458 - 01:03:11,778] and open it up,
+- [01:03:11,858 - 01:03:14,458] but wherever you cut it and open it up,
+- [01:03:14,498 - 01:03:15,438] it looks like that.
+- [01:03:15,678 - 01:03:16,438] Now notice,
+- [01:03:16,438 - 01:03:17,958] it looks pretty darn flat,
+- [01:03:18,738 - 01:03:20,498] but when you put it together like this,
+- [01:03:20,518 - 01:03:21,798] it no longer looks flat,
+- [01:03:22,358 - 01:03:23,358] and in fact,
+- [01:03:23,358 - 01:03:24,698] you can't flatten it out,
+- [01:03:24,738 - 01:03:26,418] not without smooshing it in the,
+- [01:03:26,418 - 01:03:26,658] uh,
+- [01:03:26,658 - 01:03:27,358] and stretching it.
+- [01:03:27,818 - 01:03:30,778] So the cur- the cone is a curved space,
+- [01:03:31,358 - 01:03:33,838] but it's a curved space of a very special type
+- [01:03:33,838 - 01:03:36,998] where there's no curvature anywhere except at the tip.
+- [01:03:37,118 - 01:03:38,758] Let's see if we can refine that and,
+- [01:03:38,758 - 01:03:38,958] uh,
+- [01:03:38,998 - 01:03:39,738] and understand it.
+- [01:03:40,338 - 01:03:41,778] So let's start with a cone.
+- [01:03:42,178 - 01:03:44,858] I'll first draw it as a cone.
+- [01:03:47,958 - 01:03:49,178] Here's the tip up here.
+- [01:03:52,478 - 01:03:53,538] And of course,
+- [01:03:53,538 - 01:03:55,438] a real mathematical cone
+- [01:03:55,438 - 01:03:57,318] goes on and on forever.
+- [01:03:57,598 - 01:03:59,798] It doesn't terminate at this point over here,
+- [01:03:59,898 - 01:04:00,958] but we can terminate it
+- [01:04:00,958 - 01:04:02,018] because I can't draw it forever.
+- [01:04:02,378 - 01:04:04,338] And then we come with our scissors.
+- [01:04:04,598 - 01:04:06,278] I don't think I need this anymore,
+- [01:04:06,498 - 01:04:07,638] but let's leave it here.
+- [01:04:07,678 - 01:04:08,878] I might want to do some more.
+- [01:04:09,757 - 01:04:10,858] We cut it,
+- [01:04:11,998 - 01:04:12,978] open it up,
+- [01:04:13,838 - 01:04:15,418] and it looks like,
+- [01:04:16,658 - 01:04:17,698] I guess like,
+- [01:04:17,698 - 01:04:18,358] um...
+- [01:04:23,898 - 01:04:24,398] What's that?
+- [01:04:25,618 - 01:04:26,138] Yeah,
+- [01:04:26,138 - 01:04:27,278] a pie with a,
+- [01:04:27,278 - 01:04:27,598] uh,
+- [01:04:27,598 - 01:04:28,818] slice taken out.
+- [01:04:29,158 - 01:04:29,678] Alright,
+- [01:04:29,678 - 01:04:31,258] so that's a cone with a rule.
+- [01:04:32,298 - 01:04:35,198] The rule is that point over here
+- [01:04:35,198 - 01:04:37,538] is identified with a point over here.
+- [01:04:37,938 - 01:04:38,898] For example,
+- [01:04:38,898 - 01:04:41,298] if a fly walks around across here
+- [01:04:41,298 - 01:04:43,338] and crosses the red line,
+- [01:04:43,618 - 01:04:45,878] then in this map over here,
+- [01:04:45,938 - 01:04:47,278] think of this as a map of the cone,
+- [01:04:47,418 - 01:04:49,618] the fly walks around over here and then jumps.
+- [01:04:50,378 - 01:04:51,478] Jumps over to here.
+- [01:04:51,558 - 01:04:52,178] The red line
+- [01:04:54,238 - 01:04:55,958] has been sliced open,
+- [01:04:57,898 - 01:05:01,138] but then we have to remember to identify points
+- [01:05:02,138 - 01:05:03,778] in the appropriate way.
+- [01:05:03,858 - 01:05:06,178] That's the mathematical construction of a cone
+- [01:05:06,178 - 01:05:08,038] in terms of a flat space.
+- [01:05:08,538 - 01:05:08,918] Now,
+- [01:05:08,918 - 01:05:13,578] notice that this sheet of paper,
+- [01:05:13,698 - 01:05:15,978] as well as this drawing over here,
+- [01:05:16,138 - 01:05:18,038] is completely flat.
+- [01:05:18,238 - 01:05:20,778] Everywhere's along here,
+- [01:05:20,878 - 01:05:22,158] and it's not flat.
+- [01:05:22,178 - 01:05:25,398] As long as we keep away from the problematic areas
+- [01:05:25,398 - 01:05:26,418] where we've cut it,
+- [01:05:26,458 - 01:05:27,878] and the tip of the cone over here,
+- [01:05:28,038 - 01:05:29,438] it's completely flat.
+- [01:05:29,898 - 01:05:30,918] So first of all,
+- [01:05:30,978 - 01:05:33,018] let's take a closed curve over here.
+- [01:05:35,158 - 01:05:36,578] That's a closed curve
+- [01:05:38,038 - 01:05:41,538] on this flat sheet of paper.
+- [01:05:42,018 - 01:05:42,678] And now,
+- [01:05:42,678 - 01:05:43,918] take our gyroscope
+- [01:05:43,918 - 01:05:45,758] and transport it around.
+- [01:05:47,038 - 01:05:48,498] Taking the gyroscope
+- [01:05:48,498 - 01:05:50,738] and transporting it around the closed curve,
+- [01:05:50,918 - 01:05:52,158] parallel to its center,
+- [01:05:52,178 - 01:05:53,138] it moves itself at every point.
+- [01:05:54,078 - 01:05:54,638] Alright,
+- [01:05:54,638 - 01:05:54,938] so,
+- [01:05:56,218 - 01:05:58,198] whoever's doing this parallel transporting,
+- [01:05:58,458 - 01:05:59,198] as he moves it,
+- [01:05:59,318 - 01:06:02,098] he makes sure that incrementally
+- [01:06:02,098 - 01:06:03,498] it stays in the same direction.
+- [01:06:03,958 - 01:06:05,538] And as he goes all the way around,
+- [01:06:06,198 - 01:06:07,038] guess what?
+- [01:06:07,338 - 01:06:08,578] What happens to it?
+- [01:06:08,718 - 01:06:10,138] It comes back to itself.
+- [01:06:11,238 - 01:06:11,798] Alright?
+- [01:06:11,918 - 01:06:12,198] So,
+- [01:06:12,198 - 01:06:13,598] there's an example
+- [01:06:14,178 - 01:06:15,858] of a parallel transport
+- [01:06:15,858 - 01:06:17,398] around the closed curve
+- [01:06:18,178 - 01:06:20,918] where the vector did come back
+- [01:06:20,918 - 01:06:22,178] to its original value.
+- [01:06:22,918 - 01:06:23,778] But now,
+- [01:06:23,938 - 01:06:25,578] let's parallel transport
+- [01:06:25,578 - 01:06:27,558] around the tip of the cone.
+- [01:06:28,618 - 01:06:29,178] Alright,
+- [01:06:29,178 - 01:06:30,198] so now we're going to take
+- [01:06:30,198 - 01:06:32,918] a curve that circumnavigates
+- [01:06:33,458 - 01:06:34,478] the tip of the cone.
+- [01:06:35,878 - 01:06:36,438] Alright?
+- [01:06:36,598 - 01:06:37,698] And in particular,
+- [01:06:37,858 - 01:06:39,618] let's start with a vector,
+- [01:06:40,498 - 01:06:43,078] just for the sake of clarity,
+- [01:06:43,258 - 01:06:44,438] I think I find it a little clearer.
+- [01:06:44,698 - 01:06:47,098] Let's start with the vector being
+- [01:06:47,098 - 01:06:50,898] aligned along the red line.
+- [01:06:52,098 - 01:06:53,998] And let's parallel transport
+- [01:06:55,038 - 01:06:56,618] along the curve.
+- [01:06:57,098 - 01:06:57,698] Alright,
+- [01:06:57,698 - 01:06:58,338] first of all,
+- [01:06:58,398 - 01:07:00,338] the curve on here looks like that.
+- [01:07:00,518 - 01:07:01,138] It's a circle.
+- [01:07:01,918 - 01:07:03,158] It's a piece of a circle
+- [01:07:03,158 - 01:07:04,358] when we open it up.
+- [01:07:05,298 - 01:07:07,638] And the vector starts out
+- [01:07:07,638 - 01:07:08,458] in this direction.
+- [01:07:08,638 - 01:07:08,858] Oops.
+- [01:07:10,758 - 01:07:12,458] Starts out by assumption
+- [01:07:12,458 - 01:07:13,818] along the red line.
+- [01:07:16,018 - 01:07:18,258] Now we move it parallel to itself.
+- [01:07:19,098 - 01:07:20,838] Parallel to itself does not
+- [01:07:20,918 - 01:07:22,878] mean that we move it
+- [01:07:22,878 - 01:07:25,358] so that it's pointing radially out.
+- [01:07:25,538 - 01:07:27,158] That's not parallel to itself.
+- [01:07:27,838 - 01:07:29,218] Parallel to itself means
+- [01:07:29,218 - 01:07:30,858] we keep its direction fixed.
+- [01:07:35,878 - 01:07:37,658] And by the time we get over to here,
+- [01:07:37,798 - 01:07:38,818] it's now pointing,
+- [01:07:39,718 - 01:07:40,818] in this case,
+- [01:07:40,938 - 01:07:42,318] practically perpendicular
+- [01:07:42,318 - 01:07:43,338] to the red line.
+- [01:07:44,178 - 01:07:45,338] What's going to happen,
+- [01:07:45,998 - 01:07:48,558] supposing we now close this up.
+- [01:07:48,758 - 01:07:50,478] We might slice it along
+- [01:07:50,478 - 01:07:51,358] some new place.
+- [01:07:51,498 - 01:07:52,458] We might slice it along
+- [01:07:52,458 - 01:07:52,998] a new place
+- [01:07:52,998 - 01:07:54,438] and close it up over here
+- [01:07:54,438 - 01:07:56,118] so that we close it up
+- [01:07:56,118 - 01:07:57,578] back into the curve over here.
+- [01:07:57,958 - 01:07:58,878] Look what it's done.
+- [01:07:59,177 - 01:08:00,518] It's gone from something
+- [01:08:01,418 - 01:08:03,458] which is parallel to the red line
+- [01:08:03,458 - 01:08:05,158] to something no longer parallel
+- [01:08:05,158 - 01:08:06,018] to the red line.
+- [01:08:06,237 - 01:08:07,398] And that means when we
+- [01:08:07,398 - 01:08:09,118] parallelly transported it around,
+- [01:08:09,398 - 01:08:10,878] it's going to come back
+- [01:08:10,878 - 01:08:12,058] to some new vector
+- [01:08:12,058 - 01:08:13,438] which is going to be
+- [01:08:16,537 - 01:08:16,978] perpendicular,
+- [01:08:18,237 - 01:08:19,457] or not perpendicular,
+- [01:08:19,537 - 01:08:20,457] but at some end
+- [01:08:20,478 - 01:08:20,717] at some angle
+- [01:08:21,698 - 01:08:23,598] relative to the original vector.
+- [01:08:24,118 - 01:08:25,098] In other words,
+- [01:08:25,138 - 01:08:25,777] it's quite clear.
+- [01:08:25,898 - 01:08:27,158] When I close this up,
+- [01:08:27,398 - 01:08:29,558] this vector will wind up
+- [01:08:29,558 - 01:08:30,957] coming out in this direction.
+- [01:08:31,217 - 01:08:32,938] Just think about closing this up
+- [01:08:34,058 - 01:08:36,037] and this vector over here
+- [01:08:36,037 - 01:08:37,358] will wind up pointing
+- [01:08:37,358 - 01:08:38,777] in some new direction.
+- [01:08:39,417 - 01:08:40,917] So here's an example
+- [01:08:41,437 - 01:08:43,698] of parallelly transporting a vector
+- [01:08:43,698 - 01:08:44,758] at every stage,
+- [01:08:44,917 - 01:08:46,518] keeping it parallel to itself,
+- [01:08:47,198 - 01:08:48,798] and by the time it goes around
+- [01:08:48,798 - 01:08:49,738] a closed curve,
+- [01:08:49,738 - 01:08:53,417] it's not parallel to the starting point.
+- [01:08:55,398 - 01:08:57,478] Notice that only happens
+- [01:08:57,478 - 01:08:59,438] if we go around the tip.
+- [01:09:00,558 - 01:09:02,438] If we steer clear of the tip,
+- [01:09:02,578 - 01:09:03,398] that doesn't happen.
+- [01:09:07,358 - 01:09:09,798] The tip is the point
+- [01:09:09,798 - 01:09:10,858] at which there is curvature.
+- [01:09:12,478 - 01:09:13,718] So the tip,
+- [01:09:13,877 - 01:09:16,398] the diagnostic test,
+- [01:09:18,178 - 01:09:18,778] has,
+- [01:09:18,778 - 01:09:19,497] I don't know whether
+- [01:09:19,497 - 01:09:20,457] we should say it failed
+- [01:09:20,457 - 01:09:21,098] or it succeeded,
+- [01:09:21,478 - 01:09:23,438] it's failed to demonstrate
+- [01:09:23,438 - 01:09:24,718] that the space is flat.
+- [01:09:24,837 - 01:09:26,798] It has succeeded in finding
+- [01:09:26,798 - 01:09:27,837] a point of curvature.
+- [01:09:28,278 - 01:09:30,337] Why do I say a point of curvature?
+- [01:09:30,758 - 01:09:33,718] Because if I circumnavigate
+- [01:09:33,718 - 01:09:34,997] any other point,
+- [01:09:35,917 - 01:09:39,537] I find no shift in the direction,
+- [01:09:39,778 - 01:09:41,118] but only,
+- [01:09:41,218 - 01:09:42,598] but every circumnavigation
+- [01:09:42,598 - 01:09:44,358] of this point gives me
+- [01:09:44,358 - 01:09:47,118] the same angular shift.
+- [01:09:47,718 - 01:09:49,037] So what does it do?
+- [01:09:49,898 - 01:09:52,298] The presence of this point of curvature
+- [01:09:52,877 - 01:09:55,938] has the effect of rotating vectors
+- [01:09:55,938 - 01:09:58,258] which have been parallel transported
+- [01:09:58,258 - 01:09:59,818] around in a closed curve.
+- [01:10:00,198 - 01:10:02,258] It doesn't matter that this closed curve
+- [01:10:02,258 - 01:10:02,998] is a circle,
+- [01:10:03,118 - 01:10:04,578] it could be any closed curve
+- [01:10:05,978 - 01:10:07,878] around the tip.
+- [01:10:08,178 - 01:10:11,338] It will always rotate the vector
+- [01:10:12,038 - 01:10:13,758] by the same angle.
+- [01:10:14,598 - 01:10:15,278] Incidentally,
+- [01:10:15,837 - 01:10:17,758] if we started with a vector
+- [01:10:24,358 - 01:10:26,958] which was not along the red axis
+- [01:10:26,958 - 01:10:28,458] but some other direction,
+- [01:10:29,098 - 01:10:30,418] and we went around,
+- [01:10:30,798 - 01:10:31,458] again,
+- [01:10:31,458 - 01:10:32,618] it would still come out
+- [01:10:33,578 - 01:10:35,358] in some new direction.
+- [01:10:36,098 - 01:10:37,858] And how about this angle,
+- [01:10:37,938 - 01:10:40,318] the angle that the vector gets rotated?
+- [01:10:40,598 - 01:10:41,338] How much is that?
+- [01:10:42,538 - 01:10:44,438] That depends on this angle here.
+- [01:10:46,518 - 01:10:47,618] This is called,
+- [01:10:47,758 - 01:10:50,138] the angular deficit here.
+- [01:10:50,298 - 01:10:52,478] It's the amount that was bit out of the pie.
+- [01:10:53,198 - 01:10:54,318] Let's call it theta.
+- [01:10:55,038 - 01:10:56,758] When you take a vector
+- [01:10:56,758 - 01:10:58,458] around this closed path,
+- [01:10:58,778 - 01:11:01,418] it gets rotated by the same angle theta.
+- [01:11:03,858 - 01:11:06,218] So one might say that there's an amount
+- [01:11:06,218 - 01:11:07,058] of curvature
+- [01:11:07,718 - 01:11:10,478] which is parameterized by the angle theta.
+- [01:11:11,558 - 01:11:12,998] The bigger theta is,
+- [01:11:13,098 - 01:11:13,558] or is it,
+- [01:11:13,638 - 01:11:14,478] yeah,
+- [01:11:15,098 - 01:11:17,278] if theta is a very small angle,
+- [01:11:17,278 - 01:11:18,038] in other words,
+- [01:11:18,058 - 01:11:18,978] if just a very,
+- [01:11:18,978 - 01:11:20,358] very tiny piece of pie
+- [01:11:20,358 - 01:11:21,398] were taken out,
+- [01:11:22,158 - 01:11:23,538] then there's very,
+- [01:11:23,538 - 01:11:24,178] very little
+- [01:11:24,918 - 01:11:27,038] change in the direction of the vector
+- [01:11:27,038 - 01:11:28,258] that's been parallel transported.
+- [01:11:29,618 - 01:11:31,778] The bigger that the angle theta is,
+- [01:11:32,018 - 01:11:34,938] the more rotation there is in this vector.
+- [01:11:36,798 - 01:11:39,998] So that's an example of a point of curvature.
+- [01:11:41,038 - 01:11:42,938] Now let me point something out that,
+- [01:11:44,718 - 01:11:46,078] here we are,
+- [01:11:46,138 - 01:11:48,198] we're going to parallel transport
+- [01:11:48,198 - 01:11:50,878] around this particular curve.
+- [01:11:52,498 - 01:11:54,358] Nothing can depend
+- [01:11:54,938 - 01:11:58,598] on whether the tip of this cone here
+- [01:11:58,598 - 01:12:00,398] was truly pointed
+- [01:12:00,398 - 01:12:03,518] or whether I came along with my sandpapering machine
+- [01:12:03,518 - 01:12:09,038] and whittled off and made it smooth.
+- [01:12:10,258 - 01:12:11,598] So somehow,
+- [01:12:17,317 - 01:12:19,798] the effect of going around this curve
+- [01:12:20,877 - 01:12:24,118] is the same whether this has been smoothed or not.
+- [01:12:25,377 - 01:12:25,817] However,
+- [01:12:25,817 - 01:12:27,118] supposing I go around the curve
+- [01:12:27,118 - 01:12:28,458] very close to the top here,
+- [01:12:29,538 - 01:12:31,898] then I'll get a different answer than on the cone.
+- [01:12:33,218 - 01:12:34,598] Then I'll get a different answer.
+- [01:12:35,278 - 01:12:36,038] In fact,
+- [01:12:36,038 - 01:12:37,778] I'll get a much smaller angle
+- [01:12:37,778 - 01:12:39,238] at the top of the cone here
+- [01:12:39,778 - 01:12:41,058] than if I go around
+- [01:12:41,598 - 01:12:41,838] this particular curve here.
+- [01:12:42,698 - 01:12:43,298] Okay,
+- [01:12:43,298 - 01:12:43,878] so somehow,
+- [01:12:44,118 - 01:12:48,298] this operation of going around this particular curve
+- [01:12:48,298 - 01:12:52,358] has located the fact that there's some curvature in there,
+- [01:12:52,658 - 01:12:54,998] but it hasn't told me the details.
+- [01:12:56,818 - 01:12:59,918] This particular curve has not diagnosed
+- [01:12:59,918 - 01:13:02,218] whether there was a point of curvature here
+- [01:13:02,218 - 01:13:04,978] or whether there was a smooth curvature there,
+- [01:13:05,198 - 01:13:08,078] but it's told me there is some curvature in there
+- [01:13:08,598 - 01:13:10,358] because when I go around the curve,
+- [01:13:10,358 - 01:13:12,258] because when I go around the closed curve,
+- [01:13:12,378 - 01:13:13,218] I don't come back to itself.
+- [01:13:14,678 - 01:13:15,158] So,
+- [01:13:18,958 - 01:13:19,758] let's see now.
+- [01:13:20,278 - 01:13:20,758] Oh,
+- [01:13:20,758 - 01:13:21,398] let's do a sphere.
+- [01:13:21,758 - 01:13:22,738] Let's do a sphere.
+- [01:13:23,318 - 01:13:24,918] A sphere is also curved.
+- [01:13:26,618 - 01:13:27,098] Question?
+- [01:13:27,498 - 01:13:27,978] Yeah.
+- [01:13:28,198 - 01:13:30,078] When you say parallelly transported,
+- [01:13:30,598 - 01:13:32,718] can you nail that down a bit more?
+- [01:13:32,998 - 01:13:33,398] No.
+- [01:13:35,318 - 01:13:37,058] Because if that's the angle
+- [01:13:38,198 - 01:13:40,278] to the circle going around,
+- [01:13:41,038 - 01:13:43,718] then that basically defeats the argument.
+- [01:13:44,598 - 01:13:45,038] Sorry?
+- [01:13:45,158 - 01:13:46,698] It's not radially out.
+- [01:13:46,798 - 01:13:48,558] I can understand why it's not radially out.
+- [01:13:48,718 - 01:13:50,778] If it's pointed towards infinity,
+- [01:13:51,618 - 01:13:52,898] then again the argument...
+- [01:13:52,898 - 01:13:53,698] We take the curve
+- [01:13:53,698 - 01:13:54,918] and we break it up
+- [01:13:54,918 - 01:13:56,138] into lots of little straight lines,
+- [01:13:56,138 - 01:13:56,498] okay?
+- [01:13:59,898 - 01:14:02,718] And then we parallel transport from one to the other,
+- [01:14:05,797 - 01:14:07,778] and I'm not sure how to say this right.
+- [01:14:08,318 - 01:14:10,258] We're not transporting out
+- [01:14:10,278 - 01:14:11,948] the vector so that it stays
+- [01:14:11,948 - 01:14:13,618] at the same angle to the curve.
+- [01:14:14,418 - 01:14:16,148] We're transporting it so that it
+- [01:14:16,148 - 01:14:17,878] stays the same angle to itself.
+- [01:14:19,318 - 01:14:20,878] But if it's a geodesic,
+- [01:14:20,878 - 01:14:23,838] does it stay at the same angle to the tangent?
+- [01:14:24,218 - 01:14:24,398] Right.
+- [01:14:26,438 - 01:14:27,658] I have a question.
+- [01:14:27,858 - 01:14:30,058] I think that helps answer that question
+- [01:14:30,058 - 01:14:31,418] because in a sense,
+- [01:14:31,458 - 01:14:33,958] if that's constant direction,
+- [01:14:34,218 - 01:14:36,078] then parallel transport is constant
+- [01:14:36,078 - 01:14:37,318] with respect to the constant curve.
+- [01:14:37,338 - 01:14:37,498] That's right.
+- [01:14:37,558 - 01:14:39,218] If you parallel transport something
+- [01:14:40,278 - 01:14:40,938] to a geodesic,
+- [01:14:40,938 - 01:14:43,298] it will stay at the same angle to the geodesic.
+- [01:14:44,658 - 01:14:46,198] At least in two dimensions.
+- [01:14:46,478 - 01:14:48,478] Three dimensions gets a little more complicated
+- [01:14:49,438 - 01:14:51,858] because a vector can twist around.
+- [01:14:52,098 - 01:14:53,578] So there's something called torsion
+- [01:14:53,578 - 01:14:54,718] where the vector can twist around.
+- [01:14:54,838 - 01:14:55,798] But at least in two dimensions,
+- [01:14:56,358 - 01:14:59,258] that if you transport a vector on a geodesic,
+- [01:15:01,118 - 01:15:03,398] then it will stay at
+- [01:15:03,398 - 01:15:05,678] the same angle to the curve.
+- [01:15:07,498 - 01:15:09,278] But on a column,
+- [01:15:09,278 - 01:15:11,038] that would be sort of a spiral.
+- [01:15:11,338 - 01:15:11,998] Say it again.
+- [01:15:12,238 - 01:15:13,178] On a cone,
+- [01:15:13,358 - 01:15:15,238] a geodesic would look like a spiral.
+- [01:15:15,418 - 01:15:19,278] It wouldn't be just a circle perpendicular to the axis.
+- [01:15:20,318 - 01:15:24,578] The geodesics on a cone
+- [01:15:25,278 - 01:15:28,558] are simply the geodesics that it inherits from flat space.
+- [01:15:29,998 - 01:15:32,158] So straight lines in here
+- [01:15:32,158 - 01:15:35,318] are geodesics on the cone.
+- [01:15:39,278 - 01:15:39,638] Yeah.
+- [01:15:41,718 - 01:15:42,158] Well,
+- [01:15:42,158 - 01:15:46,438] they will get curved when you curl them up.
+- [01:15:46,518 - 01:15:47,158] Say it again.
+- [01:15:47,478 - 01:15:50,538] They'll get curved when you curl them up.
+- [01:15:52,038 - 01:15:52,478] Well,
+- [01:15:52,478 - 01:15:53,398] when you...
+- [01:15:56,837 - 01:15:58,558] You see the straight lines on here?
+- [01:15:58,698 - 01:15:59,338] They're geodesics.
+- [01:16:00,638 - 01:16:01,078] Also,
+- [01:16:01,078 - 01:16:02,918] the straight line here is a geodesic.
+- [01:16:02,918 - 01:16:04,498] The straight line here is a geodesic.
+- [01:16:04,538 - 01:16:05,218] I don't know,
+- [01:16:05,258 - 01:16:07,078] would you say they get curved when you...
+- [01:16:07,998 - 01:16:08,438] Yeah,
+- [01:16:08,438 - 01:16:08,878] sort of.
+- [01:16:09,278 - 01:16:10,078] Looking at it from the top,
+- [01:16:10,198 - 01:16:11,198] they appear to get curved.
+- [01:16:11,498 - 01:16:11,998] Yeah.
+- [01:16:12,078 - 01:16:13,078] The point is,
+- [01:16:13,158 - 01:16:17,338] what happens when a straight line crosses the identified...
+- [01:16:18,098 - 01:16:19,618] When a straight line crosses where?
+- [01:16:19,958 - 01:16:22,218] The lines that were identified.
+- [01:16:22,838 - 01:16:26,498] It is no longer a straight unless it actually has...
+- [01:16:26,498 - 01:16:26,638] Okay.
+- [01:16:26,798 - 01:16:27,318] Right.
+- [01:16:27,758 - 01:16:28,278] Right.
+- [01:16:28,538 - 01:16:29,498] What you do,
+- [01:16:29,558 - 01:16:32,078] if you're interested in a geodesic which crosses here,
+- [01:16:32,718 - 01:16:33,778] then what you do,
+- [01:16:33,838 - 01:16:37,278] that's like a geodesic which crosses from here to here,
+- [01:16:37,458 - 01:16:38,978] then the thing to do
+- [01:16:39,278 - 01:16:40,658] is to close it up over here,
+- [01:16:42,678 - 01:16:44,638] and this is going to be hard,
+- [01:16:44,778 - 01:16:45,358] and...
+- [01:16:49,738 - 01:16:51,178] I don't want it to fall apart.
+- [01:16:57,018 - 01:16:58,798] And open it up over there.
+- [01:17:00,418 - 01:17:00,918] Okay?
+- [01:17:01,158 - 01:17:02,038] It's the same space,
+- [01:17:03,058 - 01:17:05,058] and now the geodesic that goes
+- [01:17:05,058 - 01:17:07,058] across the original thing can be drawn.
+- [01:17:08,258 - 01:17:09,098] All right?
+- [01:17:09,118 - 01:17:09,978] And you're right.
+- [01:17:10,058 - 01:17:11,518] What will happen is that
+- [01:17:11,518 - 01:17:12,978] when I open it up again,
+- [01:17:13,958 - 01:17:19,198] that geodesic which went across here will look bent.
+- [01:17:22,238 - 01:17:26,118] The geodesic which crosses across here will look bent,
+- [01:17:26,238 - 01:17:27,738] but when I close it up again,
+- [01:17:27,958 - 01:17:29,138] it'll look straight.
+- [01:17:32,598 - 01:17:33,158] Okay?
+- [01:17:33,258 - 01:17:34,458] So there is a geodesic,
+- [01:17:34,458 - 01:17:35,258] for example,
+- [01:17:35,258 - 01:17:37,038] which connects this point to this point,
+- [01:17:38,238 - 01:17:39,878] it doesn't go around here,
+- [01:17:40,158 - 01:17:41,738] it goes across here,
+- [01:17:41,898 - 01:17:44,038] and then changes angle and goes over here.
+- [01:17:44,618 - 01:17:46,758] And that angle would be repeated on
+- [01:17:46,758 - 01:17:48,898] the slice you made on the other side
+- [01:17:48,898 - 01:17:50,358] to make it parallel.
+- [01:17:50,458 - 01:17:50,658] Yeah,
+- [01:17:50,658 - 01:17:51,178] for example,
+- [01:17:51,258 - 01:17:53,818] if the angle was 90 degrees over here,
+- [01:17:54,038 - 01:17:55,958] then it'll be 90 degrees over here.
+- [01:17:56,078 - 01:17:57,958] What I'm saying is once you close that up,
+- [01:17:57,998 - 01:17:59,878] by making the other slit,
+- [01:18:00,018 - 01:18:02,278] the angle becomes the same in the other...
+- [01:18:02,278 - 01:18:02,558] Oh,
+- [01:18:02,558 - 01:18:02,558] yes.
+- [01:18:02,558 - 01:18:02,938] Absolutely.
+- [01:18:03,678 - 01:18:04,198] Absolutely.
+- [01:18:04,198 - 01:18:06,128] But this curve from here to here
+- [01:18:06,128 - 01:18:08,058] will then become a smooth straight line.
+- [01:18:08,878 - 01:18:09,278] Right.
+- [01:18:10,718 - 01:18:12,118] So if you're interested in curves
+- [01:18:12,118 - 01:18:13,518] that go from here to here,
+- [01:18:13,638 - 01:18:16,438] the thing to do is not to use this representation,
+- [01:18:16,998 - 01:18:18,238] but close it up over here
+- [01:18:18,238 - 01:18:19,478] and open it up somewhere else.
+- [01:18:20,138 - 01:18:21,178] And you can always do that.
+- [01:18:21,358 - 01:18:22,868] So cutting and pasting is
+- [01:18:22,868 - 01:18:24,378] the way to think about cones.
+- [01:18:30,098 - 01:18:32,338] So we do see that there are situations
+- [01:18:32,338 - 01:18:35,958] where parallel transport along a closed curve
+- [01:18:35,958 - 01:18:38,098] does not bring you back to the same thing.
+- [01:18:38,538 - 01:18:40,738] And when you don't come back to the same thing
+- [01:18:40,738 - 01:18:41,698] under such circumstances,
+- [01:18:42,258 - 01:18:45,118] that is the diagnosis of curvature.
+- [01:18:45,138 - 01:18:46,338] Somewhere is in the geometry.
+- [01:18:47,578 - 01:18:48,098] Usually,
+- [01:18:48,098 - 01:18:48,618] I mean,
+- [01:18:48,618 - 01:18:50,118] typically it means that this curvature
+- [01:18:50,118 - 01:18:52,398] somewhere is inside that curve,
+- [01:18:52,558 - 01:18:54,078] somewhere is in the interior of that curve.
+- [01:18:54,978 - 01:18:57,278] Curvature in higher dimensions is a little more complicated.
+- [01:18:57,438 - 01:18:58,098] We'll come to it.
+- [01:19:00,078 - 01:19:02,158] But let's just do a...
+- [01:19:02,338 - 01:19:03,558] Let's draw a sphere for a moment.
+- [01:19:04,218 - 01:19:05,938] Let's take a hemisphere.
+- [01:19:08,738 - 01:19:09,938] I'm interested in the sphere,
+- [01:19:10,098 - 01:19:11,088] but I just want to
+- [01:19:11,088 - 01:19:12,078] draw a hemisphere for the moment.
+- [01:19:12,718 - 01:19:15,438] And now I want to parallel transport
+- [01:19:16,198 - 01:19:17,838] a vector around
+- [01:19:19,638 - 01:19:20,878] not a great circle,
+- [01:19:21,478 - 01:19:22,718] but some other circle.
+- [01:19:22,938 - 01:19:24,838] A great circle is a geodesic.
+- [01:19:26,058 - 01:19:28,258] A great circle being,
+- [01:19:28,258 - 01:19:28,958] for example,
+- [01:19:28,958 - 01:19:29,458] the equator.
+- [01:19:30,598 - 01:19:31,638] So transporting
+- [01:19:32,338 - 01:19:34,358] parallel transporting a vector
+- [01:19:35,098 - 01:19:36,558] along a great circle
+- [01:19:38,718 - 01:19:40,748] just means keeping the angle
+- [01:19:40,748 - 01:19:42,778] relative to the great circle fixed.
+- [01:19:43,478 - 01:19:44,778] But that's not true
+- [01:19:45,338 - 01:19:47,698] of a curve which is not a great circle.
+- [01:19:48,778 - 01:19:50,978] Parallel transporting is a little more complicated.
+- [01:19:51,258 - 01:19:53,418] And here's a simple way to think about it.
+- [01:19:53,978 - 01:19:56,858] Think about the bug moving along here,
+- [01:19:56,958 - 01:19:59,058] carrying his little gyroscope with him.
+- [01:19:59,378 - 01:20:00,698] Can that bug,
+- [01:20:00,698 - 01:20:03,018] who can only see an
+- [01:20:03,018 - 01:20:05,338] infinitesimal little distance around him,
+- [01:20:05,478 - 01:20:06,958] can he tell,
+- [01:20:06,958 - 01:20:07,958] he or she,
+- [01:20:08,518 - 01:20:09,778] can he or she tell
+- [01:20:09,778 - 01:20:13,798] that this curve was not a curve
+- [01:20:13,798 - 01:20:16,138] on a cone?
+- [01:20:18,638 - 01:20:21,798] A cone which has been fit
+- [01:20:22,578 - 01:20:25,538] so that it's tangent to the sphere.
+- [01:20:25,678 - 01:20:28,098] Can everybody visualize that cone?
+- [01:20:28,778 - 01:20:29,258] Yeah,
+- [01:20:29,258 - 01:20:30,118] I don't think you can.
+- [01:20:30,238 - 01:20:30,998] You just said so.
+- [01:20:31,338 - 01:20:31,818] Right.
+- [01:20:31,958 - 01:20:32,578] It's a dunce cap.
+- [01:20:32,758 - 01:20:33,598] It's a dunce cap.
+- [01:20:33,798 - 01:20:36,318] It's a dunce cap on a spherical head.
+- [01:20:36,738 - 01:20:38,778] And it just happens to be tangent
+- [01:20:38,778 - 01:20:41,598] right along that curve.
+- [01:20:42,578 - 01:20:44,658] What's going to happen when I transport
+- [01:20:45,238 - 01:20:47,118] parallelly a vector around there?
+- [01:20:48,058 - 01:20:50,398] It's going to do exactly the same thing
+- [01:20:50,398 - 01:20:51,318] as it would have done
+- [01:20:51,318 - 01:20:53,238] on the corresponding cone.
+- [01:20:54,218 - 01:20:54,698] Okay?
+- [01:20:55,198 - 01:20:57,438] How big is the angle deficit
+- [01:20:57,438 - 01:20:58,438] of the cone?
+- [01:20:58,818 - 01:20:59,398] Well,
+- [01:20:59,398 - 01:21:01,258] that depends on where I draw this curve.
+- [01:21:02,358 - 01:21:03,278] For example,
+- [01:21:03,278 - 01:21:05,158] if I draw the curve up here,
+- [01:21:07,038 - 01:21:08,438] the angle deficit,
+- [01:21:08,678 - 01:21:10,198] there'll be less of an angle deficit.
+- [01:21:10,458 - 01:21:11,798] It'll be a flatter cone.
+- [01:21:14,318 - 01:21:15,758] It'll be more like this.
+- [01:21:18,208 - 01:21:18,878] In fact,
+- [01:21:18,878 - 01:21:22,138] if I make the circle
+- [01:21:22,138 - 01:21:23,598] a very small one,
+- [01:21:24,438 - 01:21:24,758] way,
+- [01:21:24,758 - 01:21:26,798] way up close to the North Pole,
+- [01:21:27,438 - 01:21:32,798] then that cone is practically a flat cone
+- [01:21:32,798 - 01:21:33,758] with a very,
+- [01:21:33,758 - 01:21:35,218] very small angular deficit.
+- [01:21:35,778 - 01:21:37,218] So the answer is,
+- [01:21:37,298 - 01:21:39,778] if I take a vector around the North Pole,
+- [01:21:40,797 - 01:21:43,378] staying very close to the North Pole,
+- [01:21:43,578 - 01:21:44,918] transport it around,
+- [01:21:45,218 - 01:21:48,158] the angle may deviate a tiny bit,
+- [01:21:48,278 - 01:21:49,518] but not very much.
+- [01:21:50,098 - 01:21:52,958] If I take it around at 45 degrees here,
+- [01:21:53,378 - 01:21:54,258] it'll,
+- [01:21:54,258 - 01:21:55,338] you'll discover
+- [01:21:55,338 - 01:21:57,418] a fairly large angular deficit.
+- [01:21:57,438 - 01:21:59,538] And so,
+- [01:21:59,538 - 01:22:00,918] but in any case,
+- [01:22:00,938 - 01:22:03,298] the point is that the sphere is curved.
+- [01:22:03,758 - 01:22:05,398] We've diagnosed the curve,
+- [01:22:05,398 - 01:22:05,938] the sphere,
+- [01:22:06,158 - 01:22:07,998] by transporting vectors
+- [01:22:08,938 - 01:22:11,358] parallelly to themselves along closed curves
+- [01:22:11,358 - 01:22:13,478] and found out that they don't come back to themselves.
+- [01:22:14,598 - 01:22:15,798] Not surprisingly,
+- [01:22:16,038 - 01:22:19,198] that means that there's curvature on the sphere,
+- [01:22:19,298 - 01:22:20,798] that the sphere is a curved surface.
+- [01:22:21,418 - 01:22:23,978] It also means that you cannot find
+- [01:22:23,978 - 01:22:25,778] flat coordinates,
+- [01:22:25,778 - 01:22:26,878] you know,
+- [01:22:26,878 - 01:22:28,558] delta mu nu type coordinates
+- [01:22:28,558 - 01:22:29,478] on the flat sphere.
+- [01:22:29,938 - 01:22:32,858] So curvature is the obstruction
+- [01:22:32,858 - 01:22:35,158] to flattening a geometry out
+- [01:22:35,538 - 01:22:37,418] and making it everywhere flat.
+- [01:22:37,958 - 01:22:38,758] Uh,
+- [01:22:40,618 - 01:22:41,858] I'll tell you
+- [01:22:41,858 - 01:22:45,198] the fact now
+- [01:22:45,458 - 01:22:47,378] that if you have a curved geometry
+- [01:22:48,398 - 01:22:51,538] and you go around a small curve,
+- [01:22:51,938 - 01:22:53,278] a small curve,
+- [01:22:53,278 - 01:22:54,998] then of course
+- [01:22:56,018 - 01:22:58,338] the angle deficit is small.
+- [01:22:59,078 - 01:22:59,698] Okay?
+- [01:22:59,878 - 01:23:01,078] So if you take,
+- [01:23:01,118 - 01:23:02,238] in any geometry,
+- [01:23:02,418 - 01:23:04,718] as long as you take a small enough curve
+- [01:23:05,278 - 01:23:06,938] and you take a vector
+- [01:23:06,938 - 01:23:09,078] and parallelly transport it around,
+- [01:23:10,008 - 01:23:12,758] the deviation of the direction
+- [01:23:13,278 - 01:23:14,658] will turn out to be small.
+- [01:23:15,098 - 01:23:17,078] You can see that on the sphere here
+- [01:23:17,078 - 01:23:18,218] that,
+- [01:23:18,218 - 01:23:18,518] uh,
+- [01:23:18,518 - 01:23:20,518] that up near the north pole of the sphere,
+- [01:23:20,518 - 01:23:22,878] the corresponding cone
+- [01:23:23,337 - 01:23:25,638] has a very small angular deficit.
+- [01:23:26,618 - 01:23:26,798] Alright?
+- [01:23:28,138 - 01:23:29,758] How much of an,
+- [01:23:29,778 - 01:23:31,378] how much of an angle,
+- [01:23:31,578 - 01:23:34,518] how much of a rotation do you think occurs
+- [01:23:35,518 - 01:23:39,378] for a given circle up here?
+- [01:23:41,638 - 01:23:44,138] Is the angle
+- [01:23:45,977 - 01:23:48,858] here proportional to the distance
+- [01:23:48,858 - 01:23:50,618] or what?
+- [01:23:52,398 - 01:23:53,318] Anybody know?
+- [01:23:53,498 - 01:23:54,118] The area.
+- [01:23:55,158 - 01:23:55,758] The area.
+- [01:23:55,758 - 01:23:56,238] The area.
+- [01:23:56,578 - 01:23:57,178] Right.
+- [01:23:57,318 - 01:23:59,418] This is something that's worth working out.
+- [01:23:59,458 - 01:24:00,758] You can work this out by yourself.
+- [01:24:01,178 - 01:24:02,978] It's just a question of
+- [01:24:02,978 - 01:24:06,298] taking a small circle up here,
+- [01:24:06,418 - 01:24:07,678] fitting it to a cone.
+- [01:24:07,878 - 01:24:09,578] All that means is you have,
+- [01:24:09,618 - 01:24:10,278] here's your circle,
+- [01:24:11,718 - 01:24:12,318] you,
+- [01:24:12,318 - 01:24:12,698] uh,
+- [01:24:12,998 - 01:24:15,078] here you have your two points
+- [01:24:15,078 - 01:24:16,878] that correspond to the circle
+- [01:24:16,878 - 01:24:18,038] and,
+- [01:24:18,038 - 01:24:18,678] uh,
+- [01:24:19,938 - 01:24:21,818] draw the tangent vectors.
+- [01:24:22,638 - 01:24:24,618] How much of an angle is involved?
+- [01:24:24,998 - 01:24:27,958] The angle will be proportional to the area
+- [01:24:27,958 - 01:24:29,218] of that little region.
+- [01:24:30,078 - 01:24:32,558] So it's the area that controls
+- [01:24:32,558 - 01:24:34,378] how much of a,
+- [01:24:34,378 - 01:24:34,638] uh,
+- [01:24:34,778 - 01:24:36,378] how much of a deficit
+- [01:24:36,378 - 01:24:37,438] or how much of a,
+- [01:24:37,438 - 01:24:37,878] um,
+- [01:24:38,678 - 01:24:40,198] a displacement you get
+- [01:24:40,198 - 01:24:42,998] when you go around a small circle
+- [01:24:42,998 - 01:24:44,198] or a small curve.
+- [01:24:44,658 - 01:24:45,258] Yeah?
+- [01:24:45,418 - 01:24:47,918] Even if the area is not a circular...
+- [01:24:47,918 - 01:24:49,098] Even if it's not a circle,
+- [01:24:49,698 - 01:24:49,978] the,
+- [01:24:49,978 - 01:24:50,498] uh,
+- [01:24:50,498 - 01:24:52,738] the displacement and angle
+- [01:24:52,738 - 01:24:54,718] will be proportional to the area.
+- [01:24:55,118 - 01:24:55,878] All right.
+- [01:24:55,898 - 01:24:56,978] So we can write down,
+- [01:24:57,058 - 01:24:58,538] let's call it delta theta.
+- [01:24:58,838 - 01:24:59,398] Well,
+- [01:24:59,398 - 01:24:59,638] let's,
+- [01:24:59,638 - 01:24:59,818] yes,
+- [01:24:59,838 - 01:25:01,038] let's just call it delta theta.
+- [01:25:01,478 - 01:25:04,918] The angle that the vector,
+- [01:25:06,578 - 01:25:07,138] uh,
+- [01:25:08,358 - 01:25:10,998] fails to reproduce the original direction,
+- [01:25:11,698 - 01:25:14,178] that delta theta will be proportional
+- [01:25:15,238 - 01:25:17,898] to the area of the enclosure,
+- [01:25:17,918 - 01:25:18,698] the closed curve,
+- [01:25:19,598 - 01:25:20,678] times something,
+- [01:25:21,018 - 01:25:22,138] a number,
+- [01:25:23,638 - 01:25:25,798] and that number is called the curvature,
+- [01:25:26,118 - 01:25:26,518] R.
+- [01:25:29,258 - 01:25:30,398] For example,
+- [01:25:30,658 - 01:25:33,118] if I have a very big sphere
+- [01:25:34,658 - 01:25:37,198] and I take the same little area over here,
+- [01:25:37,778 - 01:25:39,898] I'll get a very small angular deficit.
+- [01:25:40,338 - 01:25:41,318] On the other hand,
+- [01:25:41,318 - 01:25:42,578] if I take a small sphere
+- [01:25:43,418 - 01:25:44,978] and take the same ang,
+- [01:25:44,978 - 01:25:45,358] uh,
+- [01:25:45,398 - 01:25:47,638] the same size circle over here,
+- [01:25:47,918 - 01:25:51,478] I'll get a rather large angular deficit.
+- [01:25:51,938 - 01:25:53,918] The smaller the geometry,
+- [01:25:54,238 - 01:25:55,598] the bigger the curvature.
+- [01:25:56,378 - 01:25:58,238] The smaller the geometry,
+- [01:25:58,518 - 01:25:59,558] the bigger the curvature.
+- [01:26:00,638 - 01:26:01,978] That's called,
+- [01:26:03,198 - 01:26:05,878] that's the curvature of a two-dimensional surface,
+- [01:26:05,978 - 01:26:09,258] is the relationship between the area
+- [01:26:09,258 - 01:26:11,758] of small little curves
+- [01:26:11,758 - 01:26:14,718] and the angular,
+- [01:26:14,898 - 01:26:17,158] let's just call it the angle deficit
+- [01:26:17,878 - 01:26:19,818] that's suffered when you go around the curve.
+- [01:26:20,178 - 01:26:20,658] Yeah?
+- [01:26:20,658 - 01:26:21,658] The area here,
+- [01:26:21,698 - 01:26:22,838] the area on the surface
+- [01:26:22,838 - 01:26:25,018] or the area of the projected surface?
+- [01:26:25,278 - 01:26:25,498] Well,
+- [01:26:25,498 - 01:26:26,438] it really doesn't matter
+- [01:26:26,438 - 01:26:27,278] because we're talking about,
+- [01:26:27,418 - 01:26:27,538] yeah,
+- [01:26:27,638 - 01:26:30,758] we should be talking only about very small areas,
+- [01:26:30,878 - 01:26:32,198] so let's call this delta area.
+- [01:26:32,998 - 01:26:34,018] In other words,
+- [01:26:34,038 - 01:26:35,398] the right thing to say
+- [01:26:35,978 - 01:26:38,138] is that for an infinitesimal area,
+- [01:26:38,418 - 01:26:40,418] you get an infinitesimal angle
+- [01:26:40,418 - 01:26:42,798] and the coefficient is called the curvature.
+- [01:26:43,278 - 01:26:45,498] And it doesn't matter in detail
+- [01:26:45,498 - 01:26:47,138] what the shape of the curve is.
+- [01:26:48,038 - 01:26:49,398] That's something you need to prove,
+- [01:26:49,478 - 01:26:50,638] but it's a true statement.
+- [01:26:51,198 - 01:26:51,598] Yeah?
+- [01:26:52,098 - 01:26:54,338] In case of the conical example,
+- [01:26:54,638 - 01:26:56,358] vectors that we're talking about
+- [01:26:56,358 - 01:26:57,918] must lie on the surface of the cone
+- [01:26:57,918 - 01:26:58,978] in the two-dimensional space,
+- [01:26:58,978 - 01:26:59,558] correct?
+- [01:26:59,618 - 01:26:59,718] Yeah.
+- [01:27:00,078 - 01:27:02,078] In the case of the three-dimensional sphere,
+- [01:27:02,218 - 01:27:02,918] is that also true?
+- [01:27:02,918 - 01:27:03,038] No,
+- [01:27:03,038 - 01:27:04,718] the surface of the sphere is two-dimensional.
+- [01:27:05,998 - 01:27:06,758] The vectors,
+- [01:27:06,758 - 01:27:07,038] however,
+- [01:27:07,738 - 01:27:09,798] do not lie on the surface of the sphere,
+- [01:27:09,958 - 01:27:10,948] do not have to lie
+- [01:27:10,948 - 01:27:11,938] on the surface of the sphere.
+- [01:27:12,418 - 01:27:13,298] You can think,
+- [01:27:14,518 - 01:27:15,958] that is a good question.
+- [01:27:15,958 - 01:27:18,458] You don't usually think of vectors
+- [01:27:18,458 - 01:27:20,658] as lying in the space.
+- [01:27:21,098 - 01:27:23,298] You usually just think of the vectors
+- [01:27:23,298 - 01:27:24,678] as having a magnitude
+- [01:27:24,678 - 01:27:26,518] and having a direction.
+- [01:27:27,598 - 01:27:29,898] So you can think of the vectors
+- [01:27:29,898 - 01:27:32,018] as sort of lying in the tangent space
+- [01:27:32,018 - 01:27:33,438] to the surface.
+- [01:27:34,278 - 01:27:35,198] The vectors,
+- [01:27:35,278 - 01:27:36,838] you don't think of the vectors
+- [01:27:36,838 - 01:27:38,778] as being creatures
+- [01:27:38,778 - 01:27:41,118] which live on the surface.
+- [01:27:41,478 - 01:27:43,898] They're creatures which have a direction
+- [01:27:43,898 - 01:27:45,078] and a magnitude,
+- [01:27:46,298 - 01:27:49,078] and they point along the surface,
+- [01:27:49,318 - 01:27:50,978] but they don't stick to the surface
+- [01:27:50,978 - 01:27:52,878] when the surface changes.
+- [01:27:53,038 - 01:27:54,278] So you think of them as things
+- [01:27:54,278 - 01:27:56,458] which live in the tangent space.
+- [01:27:57,538 - 01:27:58,058] Okay,
+- [01:27:58,058 - 01:27:59,498] that's the official words.
+- [01:27:59,758 - 01:28:00,198] But yes,
+- [01:28:00,198 - 01:28:00,598] you're right.
+- [01:28:00,678 - 01:28:00,978] I mean,
+- [01:28:00,978 - 01:28:03,518] the vectors don't really
+- [01:28:03,518 - 01:28:06,278] literally exist in the space itself.
+- [01:28:07,178 - 01:28:08,838] They're mathematical objects
+- [01:28:08,838 - 01:28:10,158] which live in the tangent space.
+- [01:28:10,598 - 01:28:10,698] Okay.
+- [01:28:11,198 - 01:28:11,718] Well,
+- [01:28:11,718 - 01:28:12,218] if you,
+- [01:28:12,218 - 01:28:14,338] if you,
+- [01:28:14,338 - 01:28:15,778] if you go around the equator,
+- [01:28:15,958 - 01:28:17,258] the tangent vector,
+- [01:28:17,478 - 01:28:18,878] that's going to work just fine,
+- [01:28:19,078 - 01:28:21,038] and yet there's an area deficit there,
+- [01:28:21,058 - 01:28:21,398] isn't there?
+- [01:28:21,458 - 01:28:21,818] Yeah,
+- [01:28:21,818 - 01:28:22,038] yeah.
+- [01:28:22,118 - 01:28:22,618] But that's,
+- [01:28:22,618 - 01:28:25,558] this formula is only for small areas.
+- [01:28:25,938 - 01:28:27,218] For large areas,
+- [01:28:28,078 - 01:28:30,058] you have to work it out in general.
+- [01:28:30,218 - 01:28:31,338] There's some integral to do.
+- [01:28:32,118 - 01:28:33,338] And that's right.
+- [01:28:36,298 - 01:28:38,378] Now somebody asked me about the Miebius strip.
+- [01:28:38,798 - 01:28:41,518] The Miebius strip is a funny thing.
+- [01:28:42,498 - 01:28:44,558] How do you define a Miebius strip?
+- [01:28:48,238 - 01:28:49,958] You define a Miebius strip
+- [01:28:50,408 - 01:28:52,158] by taking a strip,
+- [01:28:53,098 - 01:28:53,998] like that,
+- [01:28:54,218 - 01:28:56,698] and then making identifications
+- [01:28:57,518 - 01:28:59,458] that this point over here
+- [01:28:59,458 - 01:29:02,058] is equivalent to this point,
+- [01:29:02,318 - 01:29:02,718] A,
+- [01:29:02,718 - 01:29:03,458] A.
+- [01:29:04,658 - 01:29:07,518] This point over here is equivalent to this point,
+- [01:29:07,738 - 01:29:07,898] B,
+- [01:29:07,898 - 01:29:08,298] B.
+- [01:29:09,538 - 01:29:11,258] The vector from,
+- [01:29:11,518 - 01:29:14,098] or the segment from A to B
+- [01:29:14,098 - 01:29:16,638] is equivalent to the segment over here
+- [01:29:16,638 - 01:29:17,378] from A to B.
+- [01:29:18,018 - 01:29:19,818] But quite clearly that means
+- [01:29:19,818 - 01:29:21,078] if you take a vector
+- [01:29:21,078 - 01:29:22,958] around the Miebius strip,
+- [01:29:23,178 - 01:29:24,018] it changes,
+- [01:29:24,258 - 01:29:25,918] it flips its direction.
+- [01:29:27,198 - 01:29:30,378] So that's an example of a kind of curvature.
+- [01:29:30,898 - 01:29:33,198] But Miebius strips are so weird
+- [01:29:33,198 - 01:29:34,938] that they don't fall into the,
+- [01:29:35,497 - 01:29:36,838] into the same classification.
+- [01:29:36,978 - 01:29:38,598] They're non-orientable surfaces,
+- [01:29:38,898 - 01:29:41,298] and they get confused.
+- [01:29:41,438 - 01:29:41,498] Did you call it,
+- [01:29:41,518 - 01:29:42,878] what is it you're calling it?
+- [01:29:42,918 - 01:29:43,398] That's,
+- [01:29:43,398 - 01:29:44,738] in my language,
+- [01:29:44,838 - 01:29:46,058] it's called a Möbius band.
+- [01:29:47,898 - 01:29:48,418] Möbius.
+- [01:29:48,518 - 01:29:50,438] And you're calling it what?
+- [01:29:50,478 - 01:29:50,878] Miebius strip.
+- [01:29:51,138 - 01:29:51,838] Not just neither.
+- [01:29:52,318 - 01:29:54,158] It's M-O-U-M-L-A-U-T.
+- [01:29:54,278 - 01:29:55,098] Is it U-L-A-U-T?
+- [01:29:55,098 - 01:29:55,258] Möbius.
+- [01:29:55,578 - 01:29:56,018] Oh,
+- [01:29:56,018 - 01:29:56,518] okay.
+- [01:29:57,158 - 01:29:57,998] It's pronunciation,
+- [01:29:58,438 - 01:29:58,998] same word,
+- [01:29:58,998 - 01:29:59,738] different pronunciation.
+- [01:30:00,338 - 01:30:00,858] Möbius.
+- [01:30:07,378 - 01:30:09,078] Forgive me for being American.
+- [01:30:11,518 - 01:30:12,018] Excuse me.
+- [01:30:12,498 - 01:30:12,898] Well,
+- [01:30:12,898 - 01:30:14,678] it's Möbius in the same sense
+- [01:30:14,678 - 01:30:16,318] that a Mieba is.
+- [01:30:16,618 - 01:30:17,058] Is it?
+- [01:30:17,178 - 01:30:17,558] I don't know.
+- [01:30:17,718 - 01:30:18,038] No,
+- [01:30:18,038 - 01:30:18,158] no,
+- [01:30:18,158 - 01:30:21,058] it's M-O-E-B-A,
+- [01:30:21,058 - 01:30:21,398] right?
+- [01:30:21,498 - 01:30:21,938] A Mieba.
+- [01:30:22,798 - 01:30:23,638] Wait a second.
+- [01:30:23,778 - 01:30:25,018] Möbius was a person.
+- [01:30:26,038 - 01:30:26,438] No,
+- [01:30:26,438 - 01:30:27,038] no,
+- [01:30:27,038 - 01:30:27,998] I'm just saying that
+- [01:30:29,337 - 01:30:30,138] it's anglicized,
+- [01:30:30,138 - 01:30:31,498] it's pronounced the way we do.
+- [01:30:31,498 - 01:30:31,498] Oh,
+- [01:30:31,498 - 01:30:31,518] okay.
+- [01:30:31,618 - 01:30:31,918] Right,
+- [01:30:31,918 - 01:30:32,238] right,
+- [01:30:32,238 - 01:30:32,438] right,
+- [01:30:32,438 - 01:30:32,638] right,
+- [01:30:32,638 - 01:30:32,798] right.
+- [01:30:33,078 - 01:30:33,718] That's what I meant.
+- [01:30:34,798 - 01:30:36,858] I'm raising the question about the Taurus.
+- [01:30:37,278 - 01:30:37,938] The Taurus,
+- [01:30:37,938 - 01:30:38,198] good.
+- [01:30:39,038 - 01:30:39,558] All right.
+- [01:30:39,558 - 01:30:43,738] Because that's also a rectangle with identifications.
+- [01:30:44,038 - 01:30:44,478] Right.
+- [01:30:44,658 - 01:30:47,358] So the mathematically idealized Taurus,
+- [01:30:47,458 - 01:30:48,898] which is made in the way you just said,
+- [01:30:48,978 - 01:30:49,378] is flat,
+- [01:30:50,878 - 01:30:52,318] is strictly flat
+- [01:30:52,318 - 01:30:53,978] when the Taurus is defined
+- [01:30:53,978 - 01:30:55,638] in the way that you said,
+- [01:30:55,818 - 01:30:58,778] which is a rectangle with identifications
+- [01:30:58,778 - 01:31:00,178] across the rectangle.
+- [01:31:00,598 - 01:31:01,758] A real Taurus,
+- [01:31:01,758 - 01:31:02,478] like the bagel,
+- [01:31:02,558 - 01:31:03,758] the surface of a bagel,
+- [01:31:03,778 - 01:31:05,218] is curved,
+- [01:31:07,018 - 01:31:09,418] but it has an integrated curvature,
+- [01:31:09,558 - 01:31:10,318] which is zero.
+- [01:31:10,458 - 01:31:11,178] We'll come to that.
+- [01:31:11,278 - 01:31:11,378] Well,
+- [01:31:11,378 - 01:31:12,418] maybe we'll come to it.
+- [01:31:14,477 - 01:31:17,698] The problem is you can't construct a flat Taurus
+- [01:31:17,698 - 01:31:18,898] in three-dimensional space.
+- [01:31:19,118 - 01:31:20,698] You can do it in four-dimensional space.
+- [01:31:20,858 - 01:31:22,938] You can't embed it in three-dimensional space.
+- [01:31:27,698 - 01:31:28,098] Actually,
+- [01:31:28,098 - 01:31:28,558] you can.
+- [01:31:28,778 - 01:31:29,838] I just realized you can.
+- [01:31:31,817 - 01:31:32,618] Not so.
+- [01:31:32,618 - 01:31:32,878] Hmm?
+- [01:31:33,338 - 01:31:33,898] Not so.
+- [01:31:34,018 - 01:31:34,198] It's,
+- [01:31:34,198 - 01:31:35,318] well,
+- [01:31:35,318 - 01:31:36,158] it's intrinsically flat,
+- [01:31:36,178 - 01:31:37,418] but you can't get a flat embedding.
+- [01:31:37,458 - 01:31:37,798] Yeah,
+- [01:31:37,798 - 01:31:39,198] I'm going to make a flat embedding for you.
+- [01:31:42,238 - 01:31:42,878] All right,
+- [01:31:42,878 - 01:31:43,578] here's the rectangle.
+- [01:31:44,058 - 01:31:45,568] What we want to do is
+- [01:31:45,568 - 01:31:47,078] identify this edge with this edge
+- [01:31:47,078 - 01:31:48,798] and this edge with this edge.
+- [01:31:48,978 - 01:31:50,718] Some people don't know what I'm talking about,
+- [01:31:50,798 - 01:31:51,618] so I'll explain it.
+- [01:31:52,498 - 01:31:54,588] A Taurus is the surface
+- [01:31:54,588 - 01:31:56,678] of a bagel or a doughnut,
+- [01:31:57,877 - 01:31:59,358] and it looks like that.
+- [01:31:59,718 - 01:32:01,038] Just think of the surface.
+- [01:32:01,238 - 01:32:02,558] We're not thinking about the interior,
+- [01:32:02,738 - 01:32:03,938] not the good stuff that you eat,
+- [01:32:04,018 - 01:32:05,678] but just the surface.
+- [01:32:06,258 - 01:32:07,778] And now cut it.
+- [01:32:08,218 - 01:32:09,178] Cut it open.
+- [01:32:09,178 - 01:32:12,238] Open over here and open it up.
+- [01:32:12,338 - 01:32:12,998] What does it become?
+- [01:32:13,278 - 01:32:15,378] It becomes a piece of a cylinder,
+- [01:32:15,378 - 01:32:15,698] right?
+- [01:32:15,918 - 01:32:16,098] I mean,
+- [01:32:16,098 - 01:32:22,258] just topologically,
+- [01:32:22,918 - 01:32:26,018] it has the properties of a piece of a cylinder.
+- [01:32:26,938 - 01:32:28,618] And now when you've done that,
+- [01:32:28,618 - 01:32:30,558] cut it along here.
+- [01:32:30,618 - 01:32:32,638] Cut it along here and open it up.
+- [01:32:33,238 - 01:32:34,398] And what does it become?
+- [01:32:34,538 - 01:32:36,018] It becomes a rectangle.
+- [01:32:37,598 - 01:32:39,078] It becomes a rectangle,
+- [01:32:39,178 - 01:32:42,978] this edge over here is identified with this edge,
+- [01:32:43,258 - 01:32:45,618] so that means this edge over here,
+- [01:32:45,798 - 01:32:46,338] A,
+- [01:32:46,338 - 01:32:46,798] B,
+- [01:32:46,798 - 01:32:47,338] C,
+- [01:32:47,338 - 01:32:47,698] D,
+- [01:32:47,698 - 01:32:48,938] becomes A,
+- [01:32:48,938 - 01:32:49,298] B,
+- [01:32:49,298 - 01:32:49,998] C,
+- [01:32:49,998 - 01:32:50,358] D.
+- [01:32:50,718 - 01:32:54,478] A fly which walks across from here to here
+- [01:32:54,478 - 01:32:57,718] walks across here and reappears over here.
+- [01:32:58,638 - 01:33:00,118] And the bottom,
+- [01:33:00,118 - 01:33:00,558] A,
+- [01:33:00,558 - 01:33:01,078] B,
+- [01:33:01,078 - 01:33:01,558] C,
+- [01:33:01,638 - 01:33:03,578] is identified with the top,
+- [01:33:03,578 - 01:33:03,818] A,
+- [01:33:03,818 - 01:33:04,138] B,
+- [01:33:04,138 - 01:33:04,458] C.
+- [01:33:05,178 - 01:33:05,778] Okay,
+- [01:33:05,778 - 01:33:06,618] that's a Taurus.
+- [01:33:06,818 - 01:33:09,158] And clearly that Taurus can do this.
+- [01:33:09,178 - 01:33:10,218] It can be drawn on the
+- [01:33:10,218 - 01:33:11,258] blackboard so that it is flat.
+- [01:33:14,458 - 01:33:16,658] Normally when you draw a Taurus,
+- [01:33:16,658 - 01:33:18,238] it's curved.
+- [01:33:18,458 - 01:33:19,678] Over here at this edge here,
+- [01:33:19,678 - 01:33:20,878] it almost looks like a sphere,
+- [01:33:20,998 - 01:33:22,398] so it must be curved over here.
+- [01:33:22,858 - 01:33:24,578] In the inside over here,
+- [01:33:24,578 - 01:33:26,218] it has negative curvature.
+- [01:33:26,498 - 01:33:27,078] On the outside,
+- [01:33:27,078 - 01:33:28,258] it has positive curvature.
+- [01:33:28,438 - 01:33:30,838] So far we haven't defined the sign of the curvature.
+- [01:33:31,478 - 01:33:31,878] But,
+- [01:33:31,878 - 01:33:32,318] you know,
+- [01:33:32,318 - 01:33:32,598] question,
+- [01:33:32,598 - 01:33:38,258] can you take this sheet of paper,
+- [01:33:39,437 - 01:33:42,578] and fold it together so that it forms a Taurus?
+- [01:33:42,678 - 01:33:42,838] Well,
+- [01:33:42,838 - 01:33:43,058] yeah,
+- [01:33:43,058 - 01:33:43,878] you actually can.
+- [01:33:43,998 - 01:33:44,778] You fold it together.
+- [01:33:47,478 - 01:33:48,838] You gotta put a fold in it.
+- [01:33:49,618 - 01:33:50,038] Alright,
+- [01:33:50,038 - 01:33:51,258] now this edge,
+- [01:33:52,618 - 01:33:54,998] this edge has been identified with this edge.
+- [01:33:55,138 - 01:33:56,838] I could take a piece of tape and fold it.
+- [01:33:57,178 - 01:33:59,638] Now I want to identify this edge with this edge,
+- [01:33:59,778 - 01:34:00,938] so I fold it again,
+- [01:34:00,938 - 01:34:02,218] like that.
+- [01:34:02,298 - 01:34:03,298] I don't even need to fold it.
+- [01:34:03,818 - 01:34:04,838] I just do this.
+- [01:34:05,318 - 01:34:08,418] And now think of a bug walking around.
+- [01:34:08,418 - 01:34:09,918] The bug walks around from here,
+- [01:34:09,918 - 01:34:11,478] comes out on this side,
+- [01:34:11,618 - 01:34:12,658] comes around over here,
+- [01:34:12,658 - 01:34:13,758] comes out on this side.
+- [01:34:14,238 - 01:34:16,518] So that's going around the Taurus this way.
+- [01:34:17,698 - 01:34:18,218] Or,
+- [01:34:18,218 - 01:34:19,978] it can go around this way.
+- [01:34:20,458 - 01:34:22,358] That's going around the Taurus this way.
+- [01:34:23,138 - 01:34:24,158] So in fact,
+- [01:34:24,158 - 01:34:27,538] I can make a flat Taurus.
+- [01:34:27,598 - 01:34:28,758] It's just a little bit...
+- [01:34:30,998 - 01:34:32,598] Not much nourishment in it.
+- [01:34:35,958 - 01:34:36,478] Well,
+- [01:34:36,478 - 01:34:38,318] actually there is no integrated curvature.
+- [01:34:38,418 - 01:34:39,038] on the edge.
+- [01:34:39,898 - 01:34:40,378] No?
+- [01:34:42,438 - 01:34:43,818] It's got a little bit
+- [01:34:43,818 - 01:34:45,198] of positive curvature on one side,
+- [01:34:45,238 - 01:34:46,938] a little bit of negative curvature on the other side.
+- [01:34:47,198 - 01:34:47,658] Yeah.
+- [01:34:48,558 - 01:34:50,458] So it's a little bit degenerate,
+- [01:34:50,458 - 01:34:50,878] as you say.
+- [01:34:52,418 - 01:34:54,078] But in four dimensions,
+- [01:34:54,298 - 01:34:55,778] in four dimensions,
+- [01:34:55,778 - 01:34:57,618] you can draw a surface,
+- [01:34:57,698 - 01:34:58,958] a two-dimensional surface,
+- [01:35:00,178 - 01:35:02,978] that is an absolutely flat Taurus.
+- [01:35:04,038 - 01:35:07,598] So a Taurus can be flattened.
+- [01:35:08,418 - 01:35:10,678] A sphere cannot be flattened.
+- [01:35:13,678 - 01:35:14,718] Interesting difference.
+- [01:35:16,518 - 01:35:17,038] And...
+- [01:35:20,418 - 01:35:20,938] Yeah.
+- [01:35:21,998 - 01:35:22,518] Now,
+- [01:35:22,518 - 01:35:23,778] notice what we're doing.
+- [01:35:23,918 - 01:35:24,178] Yeah.
+- [01:35:25,778 - 01:35:26,818] The constant,
+- [01:35:26,818 - 01:35:27,238] I mean,
+- [01:35:27,238 - 01:35:29,138] if you draw small circles
+- [01:35:29,138 - 01:35:32,158] at various points in place on the Taurus,
+- [01:35:32,238 - 01:35:34,698] do you get angular deficit in circles?
+- [01:35:36,738 - 01:35:37,778] As you go around?
+- [01:35:38,878 - 01:35:41,618] Are you asking me about positive and negative curvature?
+- [01:35:41,998 - 01:35:44,778] I'm asking you if delta theta equals r delta a,
+- [01:35:46,238 - 01:35:47,278] what does...
+- [01:35:47,278 - 01:35:48,218] You're asking me about...
+- [01:35:48,218 - 01:35:50,538] What value do you get from r?
+- [01:35:50,758 - 01:35:52,118] You don't always get zero.
+- [01:35:52,798 - 01:35:53,858] On a flat plane,
+- [01:35:53,858 - 01:35:54,138] zero.
+- [01:35:54,558 - 01:35:54,778] No,
+- [01:35:54,778 - 01:35:55,558] but on the Taurus.
+- [01:35:55,898 - 01:35:56,338] Oh,
+- [01:35:56,338 - 01:35:56,658] no,
+- [01:35:56,658 - 01:35:56,978] that's...
+- [01:35:56,978 - 01:35:58,578] On a real Taurus,
+- [01:35:59,258 - 01:36:01,698] meaning one which is embedded in three dimensions,
+- [01:36:02,778 - 01:36:05,038] there's curvature all over it.
+- [01:36:05,218 - 01:36:06,758] So you get r as a different value.
+- [01:36:07,317 - 01:36:08,238] Different values,
+- [01:36:08,238 - 01:36:09,238] and in particular,
+- [01:36:09,718 - 01:36:11,778] on the outside of the Taurus...
+- [01:36:11,778 - 01:36:13,658] I'm going to explain now the sign of the curvature,
+- [01:36:14,178 - 01:36:15,738] and then we'll come back to...
+- [01:36:15,738 - 01:36:16,798] And I'll tell you about the Taurus.
+- [01:36:17,658 - 01:36:18,118] Okay.
+- [01:36:18,658 - 01:36:20,558] There's a notion of the sign of the curvature,
+- [01:36:20,638 - 01:36:21,658] and here's the way it works.
+- [01:36:23,558 - 01:36:24,998] Look down from the top,
+- [01:36:25,178 - 01:36:28,218] and let's go around clockwise,
+- [01:36:29,938 - 01:36:30,858] or counterclockwise,
+- [01:36:30,858 - 01:36:31,678] either way.
+- [01:36:33,518 - 01:36:34,138] Let's see.
+- [01:36:34,238 - 01:36:36,598] We're going to go around this cone.
+- [01:36:36,758 - 01:36:37,318] Around the cone.
+- [01:36:37,738 - 01:36:38,038] Oh,
+- [01:36:38,038 - 01:36:38,878] incidentally,
+- [01:36:39,618 - 01:36:40,918] in the case of the cone,
+- [01:36:41,298 - 01:36:42,758] what is the curvature?
+- [01:36:43,158 - 01:36:44,078] How much curvature?
+- [01:36:44,218 - 01:36:46,258] What is the numerical value of the curvature?
+- [01:36:47,378 - 01:36:49,978] The numerical value of the curvature is zero everywhere,
+- [01:36:50,398 - 01:36:51,598] except at the tip,
+- [01:36:51,718 - 01:36:53,938] and the curvature at the tip is...
+- [01:36:53,938 - 01:36:57,118] You think that's the angle deficit?
+- [01:36:57,358 - 01:36:57,718] No,
+- [01:36:57,718 - 01:36:58,218] it's infinite.
+- [01:36:58,418 - 01:37:00,718] It's infinite because the curvature
+- [01:37:00,718 - 01:37:04,258] is the ratio of the angle deficit to the area,
+- [01:37:04,518 - 01:37:06,738] and I can take an infinite way
+- [01:37:06,758 - 01:37:06,778] of the curvature,
+- [01:37:06,778 - 01:37:07,758] and I can take an infinitely small area
+- [01:37:07,758 - 01:37:09,458] and still find that angle deficit.
+- [01:37:09,778 - 01:37:11,858] So the curvature at the tip of the cone
+- [01:37:11,858 - 01:37:12,958] is actually infinite.
+- [01:37:13,338 - 01:37:15,638] It's an example of infinite curvature.
+- [01:37:16,238 - 01:37:19,438] Infinite curvature means a singularity in the geometry,
+- [01:37:19,598 - 01:37:21,238] a place where it's not smooth.
+- [01:37:21,678 - 01:37:22,278] Okay.
+- [01:37:22,918 - 01:37:25,018] So we have the idea of curvature,
+- [01:37:25,178 - 01:37:26,878] but now what about the sign of the curvature?
+- [01:37:27,238 - 01:37:29,918] So let's take a vector,
+- [01:37:30,058 - 01:37:30,958] let's say,
+- [01:37:30,958 - 01:37:32,198] pointing perpendicular.
+- [01:37:32,638 - 01:37:34,358] Let's amuse ourselves
+- [01:37:34,358 - 01:37:35,898] by taking a perpendicular vector
+- [01:37:35,898 - 01:37:39,018] and parallelly transporting it around to here.
+- [01:37:39,298 - 01:37:41,058] By the time it gets over to here,
+- [01:37:41,238 - 01:37:43,238] it will be pointing in the same direction,
+- [01:37:43,478 - 01:37:45,838] be sort of pointing this way,
+- [01:37:47,378 - 01:37:48,518] parallel to itself,
+- [01:37:49,158 - 01:37:51,598] and now close up the angle.
+- [01:37:52,618 - 01:37:53,998] Close up the angle,
+- [01:37:54,158 - 01:37:55,688] and which way is it pointing
+- [01:37:55,688 - 01:37:57,218] after you close up the angle?
+- [01:37:57,658 - 01:37:59,758] It's pointing kind of this way,
+- [01:37:59,758 - 01:38:00,038] right?
+- [01:38:01,098 - 01:38:01,798] All right.
+- [01:38:02,318 - 01:38:04,238] We've transported the vector
+- [01:38:04,358 - 01:38:06,398] in the counterclockwise direction.
+- [01:38:07,078 - 01:38:10,018] We've transported it counterclockwise,
+- [01:38:10,138 - 01:38:11,758] and which way did it rotate?
+- [01:38:13,178 - 01:38:14,178] Same way.
+- [01:38:14,178 - 01:38:14,898] Same way.
+- [01:38:15,538 - 01:38:17,138] Rotated the same way,
+- [01:38:17,218 - 01:38:21,098] and so we could give signs to these things.
+- [01:38:21,998 - 01:38:23,718] We could say that,
+- [01:38:23,718 - 01:38:24,598] um,
+- [01:38:28,377 - 01:38:32,118] that going around this circle
+- [01:38:32,118 - 01:38:34,238] in the counterclockwise direction
+- [01:38:34,358 - 01:38:39,218] is a positive little area.
+- [01:38:39,398 - 01:38:41,598] Let's imagine now that areas can have signs.
+- [01:38:42,258 - 01:38:44,798] Here's the way we assign a sign to an area.
+- [01:38:45,198 - 01:38:46,638] If we have a little area
+- [01:38:46,638 - 01:38:49,638] and we go around it counterclockwise,
+- [01:38:49,778 - 01:38:51,578] we call that area positive.
+- [01:38:52,258 - 01:38:54,418] If we go around it the other way,
+- [01:38:54,598 - 01:38:55,718] we call it negative.
+- [01:38:56,918 - 01:38:59,618] So areas are things which have a sign.
+- [01:38:59,758 - 01:39:01,018] You don't usually think of
+- [01:39:01,018 - 01:39:02,278] an area as having a sign,
+- [01:39:03,158 - 01:39:04,338] but think of it as having a sign.
+- [01:39:04,338 - 01:39:05,858] Think of the area as having a sign
+- [01:39:05,858 - 01:39:07,658] because it's not just an area.
+- [01:39:07,858 - 01:39:11,558] It's an area plus an oriented boundary.
+- [01:39:12,558 - 01:39:14,578] There's a sense that we're imagining
+- [01:39:14,578 - 01:39:17,458] a sense of direction around the boundary.
+- [01:39:17,978 - 01:39:19,518] For counterclockwise,
+- [01:39:20,038 - 01:39:21,758] let's call it positive.
+- [01:39:22,198 - 01:39:23,198] For clockwise,
+- [01:39:23,198 - 01:39:24,498] let's call it negative.
+- [01:39:24,898 - 01:39:30,958] Then on the sphere here
+- [01:39:30,958 - 01:39:32,478] or on the cone,
+- [01:39:32,478 - 01:39:35,358] if we go around clockwise,
+- [01:39:35,938 - 01:39:38,058] delta theta is also clockwise,
+- [01:39:38,278 - 01:39:41,658] and that corresponds to positive curvature.
+- [01:39:43,278 - 01:39:46,058] Since delta theta and delta area
+- [01:39:46,058 - 01:39:47,878] have the same sign,
+- [01:39:48,138 - 01:39:48,978] in other words,
+- [01:39:48,978 - 01:39:50,778] if we go around the area clockwise,
+- [01:39:51,958 - 01:39:55,118] we transport around a curve which goes around clockwise,
+- [01:39:55,458 - 01:39:57,038] delta theta is also clockwise,
+- [01:39:57,438 - 01:39:58,998] that's positive curvature.
+- [01:39:59,958 - 01:40:02,278] Is there such a thing as negative curvature?
+- [01:40:03,178 - 01:40:04,498] And the answer is yes.
+- [01:40:04,958 - 01:40:07,378] It's not hard to manufacture geometries
+- [01:40:07,378 - 01:40:09,258] which have negative curvature.
+- [01:40:10,938 - 01:40:12,618] It's a little harder to see,
+- [01:40:12,758 - 01:40:14,258] not nearly as easy to see.
+- [01:40:15,198 - 01:40:17,138] But if you take a saddle shape,
+- [01:40:26,158 - 01:40:26,678] the,
+- [01:40:26,678 - 01:40:27,338] you know,
+- [01:40:27,338 - 01:40:28,058] a mountain pass,
+- [01:40:29,098 - 01:40:30,798] is it clear what shape that is?
+- [01:40:31,278 - 01:40:32,458] Pringles potato chip.
+- [01:40:32,458 - 01:40:32,898] What's that?
+- [01:40:33,238 - 01:40:34,378] Pringles potato chip.
+- [01:40:34,658 - 01:40:35,078] Yeah,
+- [01:40:35,078 - 01:40:35,698] potato chip,
+- [01:40:35,698 - 01:40:35,958] right,
+- [01:40:35,958 - 01:40:36,418] exactly.
+- [01:40:38,377 - 01:40:38,797] Uh,
+- [01:40:38,797 - 01:40:39,378] that's right.
+- [01:40:41,817 - 01:40:42,658] A Pringle,
+- [01:40:42,658 - 01:40:43,598] is it Pringles?
+- [01:40:43,718 - 01:40:43,998] Yeah,
+- [01:40:43,998 - 01:40:44,998] those are the ones that mold it.
+- [01:40:45,118 - 01:40:46,318] They are truly...
+- [01:40:46,318 - 01:40:46,818] They're bad.
+- [01:40:47,318 - 01:40:48,178] They look like it.
+- [01:40:48,238 - 01:40:48,398] No,
+- [01:40:48,398 - 01:40:50,938] let's take Kettles potato chips or something.
+- [01:40:51,118 - 01:40:51,578] The good ones,
+- [01:40:51,578 - 01:40:52,078] some good one.
+- [01:40:52,238 - 01:40:52,658] Yeah,
+- [01:40:52,658 - 01:40:52,998] that's right.
+- [01:40:53,218 - 01:40:55,518] The potato chip or the saddle surface,
+- [01:40:55,998 - 01:40:58,498] the saddle surface has the property,
+- [01:40:58,598 - 01:40:59,398] believe it or not,
+- [01:40:59,398 - 01:41:02,198] that if you go around the closed curve,
+- [01:41:02,578 - 01:41:04,978] clockwise around the closed curve,
+- [01:41:05,378 - 01:41:10,978] the transported vector rotates in the opposite direction.
+- [01:41:11,878 - 01:41:12,878] All right?
+- [01:41:13,698 - 01:41:15,698] Here's the way you can
+- [01:41:15,698 - 01:41:17,698] think about negatively curved surfaces.
+- [01:41:18,198 - 01:41:19,498] In particular,
+- [01:41:21,458 - 01:41:26,038] we made a positive curvature singularity
+- [01:41:26,038 - 01:41:29,378] by cutting out the surface,
+- [01:41:29,398 - 01:41:30,478] by cutting out a piece of the pie,
+- [01:41:30,478 - 01:41:31,138] right?
+- [01:41:32,418 - 01:41:33,538] I'm going to show you
+- [01:41:33,538 - 01:41:34,658] how to make a negative curve,
+- [01:41:34,698 - 01:41:35,798] and you go home and do this
+- [01:41:35,798 - 01:41:38,078] and prove to yourself that what happens
+- [01:41:38,078 - 01:41:39,018] is what I say happens.
+- [01:41:40,118 - 01:41:41,998] We're going to make a cut.
+- [01:41:45,738 - 01:41:49,698] And now instead of cutting out a wedge,
+- [01:41:49,998 - 01:41:51,358] we're going to add something,
+- [01:41:51,618 - 01:41:54,158] we're going to add an extra angular piece in,
+- [01:41:55,658 - 01:41:58,478] an angle excess instead of an angle deficit.
+- [01:42:00,278 - 01:42:01,358] Here's the way we do it.
+- [01:42:09,278 - 01:42:09,918] All right,
+- [01:42:09,918 - 01:42:11,058] here's our angle excess.
+- [01:42:12,398 - 01:42:13,218] Right here,
+- [01:42:13,218 - 01:42:16,178] I take my surface,
+- [01:42:16,317 - 01:42:17,218] I open it up.
+- [01:42:17,317 - 01:42:18,698] Notice it gets kind of floppy.
+- [01:42:19,358 - 01:42:21,778] And stick the angle excess in.
+- [01:42:23,818 - 01:42:25,288] And now tape it along
+- [01:42:25,288 - 01:42:26,758] here and tape it along here.
+- [01:42:27,398 - 01:42:28,578] And I have now,
+- [01:42:28,578 - 01:42:29,918] instead of an angle,
+- [01:42:30,017 - 01:42:30,798] can everybody see it?
+- [01:42:31,678 - 01:42:33,238] Instead of an angle,
+- [01:42:33,317 - 01:42:34,698] a piece of angle missing,
+- [01:42:35,478 - 01:42:38,918] it has more than 360 degrees going,
+- [01:42:38,998 - 01:42:41,558] instead of having less than 360 degrees going around,
+- [01:42:41,778 - 01:42:44,618] it has more than 360 degrees going around.
+- [01:42:45,498 - 01:42:49,498] Doing that makes a piece of negative curvature.
+- [01:42:50,118 - 01:42:52,958] If you transport a vector around that,
+- [01:42:53,158 - 01:42:55,558] you'll find out that if you transport
+- [01:42:56,317 - 01:42:56,958] counterclockwise,
+- [01:42:56,958 - 01:42:58,977] the vector rotates clockwise.
+- [01:43:00,198 - 01:43:02,798] That's a surface of negative curvature.
+- [01:43:03,977 - 01:43:07,378] So negative curvature and positive curvature both exist.
+- [01:43:08,078 - 01:43:10,878] Negative curvature is a little bit less intuitive
+- [01:43:10,878 - 01:43:12,977] because it doesn't involve things like spheres,
+- [01:43:13,707 - 01:43:14,897] but rather things like,
+- [01:43:14,977 - 01:43:16,158] I don't know how to describe them,
+- [01:43:16,258 - 01:43:16,798] I'm not sure.
+- [01:43:17,418 - 01:43:17,958] Hmm?
+- [01:43:19,118 - 01:43:19,578] Say it again.
+- [01:43:20,158 - 01:43:22,118] It is the inner surface of the torus.
+- [01:43:22,158 - 01:43:22,517] Absolutely.
+- [01:43:22,638 - 01:43:23,638] That's what I was going to come to.
+- [01:43:23,678 - 01:43:23,878] Right.
+- [01:43:24,357 - 01:43:26,778] It is the inner surface of the torus.
+- [01:43:26,958 - 01:43:29,598] So the outer surface of the torus,
+- [01:43:29,638 - 01:43:30,838] by the outer surface,
+- [01:43:31,138 - 01:43:32,238] I don't,
+- [01:43:32,238 - 01:43:33,078] what I mean,
+- [01:43:33,178 - 01:43:35,578] I don't mean looking at the torus from the,
+- [01:43:35,578 - 01:43:36,357] from the dough,
+- [01:43:36,558 - 01:43:39,938] I mean the outer surface is the part around here.
+- [01:43:40,818 - 01:43:44,198] The inner surface of the torus is that part.
+- [01:43:45,738 - 01:43:48,098] The inner surface is more saddle-shaped.
+- [01:43:48,458 - 01:43:50,838] The outer surface is more sphere-shaped.
+- [01:43:51,658 - 01:43:54,478] You'll discover that the outer parts of the torus,
+- [01:43:54,478 - 01:43:54,938] in other words,
+- [01:43:54,938 - 01:43:55,898] the boundary out here,
+- [01:43:55,898 - 01:43:57,238] is positively curved.
+- [01:43:57,498 - 01:43:59,138] The portion in,
+- [01:43:59,258 - 01:44:01,778] near the whole layer is negatively curved.
+- [01:44:02,538 - 01:44:05,478] And the total integrated curvature,
+- [01:44:05,598 - 01:44:07,118] if I integrate the curvature,
+- [01:44:07,218 - 01:44:08,678] what does integrating the curvature do?
+- [01:44:08,798 - 01:44:09,298] Forget it,
+- [01:44:09,318 - 01:44:10,678] not important right now,
+- [01:44:10,818 - 01:44:12,818] but there's as much positive curvature
+- [01:44:12,818 - 01:44:15,178] as there is negative curvature on the torus.
+- [01:44:15,398 - 01:44:16,638] On the other hand,
+- [01:44:16,638 - 01:44:17,978] the sphere is,
+- [01:44:18,038 - 01:44:19,678] everywhere is positively curved.
+- [01:44:20,638 - 01:44:21,278] Okay,
+- [01:44:21,278 - 01:44:23,818] so we now have the basic idea
+- [01:44:23,818 - 01:44:25,018] in two dimensions,
+- [01:44:25,898 - 01:44:27,078] of what curvature means.
+- [01:44:27,558 - 01:44:29,838] And the most important thing for us
+- [01:44:30,557 - 01:44:31,838] is that curvature
+- [01:44:32,698 - 01:44:33,858] is an obstruction
+- [01:44:33,858 - 01:44:35,978] to flattening the geometry.
+- [01:44:36,258 - 01:44:38,878] Flattening the geometry by definition means
+- [01:44:39,658 - 01:44:40,858] finding coordinates
+- [01:44:40,858 - 01:44:44,378] where the metric is just delta mu nu.
+- [01:44:45,618 - 01:44:48,798] All of these words are exactly the same
+- [01:44:49,878 - 01:44:50,838] in space-time.
+- [01:44:52,538 - 01:44:53,938] They're exactly the same.
+- [01:44:54,118 - 01:44:55,698] There are curves in space-time.
+- [01:44:55,698 - 01:44:58,358] You can take closed curves in space-time.
+- [01:44:58,578 - 01:45:00,338] You can transport vectors
+- [01:45:00,338 - 01:45:02,238] by exactly the same rules,
+- [01:45:02,518 - 01:45:04,698] the rule being right here.
+- [01:45:06,038 - 01:45:07,698] The Christoffel symbols
+- [01:45:07,698 - 01:45:09,758] are constructed from the metric
+- [01:45:09,758 - 01:45:11,398] in exactly the same way.
+- [01:45:11,758 - 01:45:13,578] And the notion of curvature,
+- [01:45:13,618 - 01:45:14,978] space-time curvature,
+- [01:45:15,338 - 01:45:18,878] is the same as the notion
+- [01:45:18,878 - 01:45:20,438] of just spatial curvature.
+- [01:45:20,798 - 01:45:22,318] It is harder to visualize.
+- [01:45:22,898 - 01:45:24,738] It's much harder to visualize
+- [01:45:24,738 - 01:45:26,798] the geometry of space-time
+- [01:45:26,798 - 01:45:28,278] than it is of just ordinary space.
+- [01:45:28,818 - 01:45:30,038] We weren't equipped
+- [01:45:30,038 - 01:45:31,238] with the mental architecture
+- [01:45:31,238 - 01:45:32,938] to visualize space-time.
+- [01:45:33,578 - 01:45:36,758] But the rules are essentially the same.
+- [01:45:38,298 - 01:45:40,918] So a curved space-time is one,
+- [01:45:40,998 - 01:45:41,698] if you like,
+- [01:45:41,918 - 01:45:44,138] which when you go around closed paths
+- [01:45:44,138 - 01:45:46,098] trying to keep a four vector,
+- [01:45:46,378 - 01:45:48,438] a space-time vector parallel to itself,
+- [01:45:48,778 - 01:45:50,378] you won't be able to
+- [01:45:50,378 - 01:45:52,598] because there's curvature in the middle.
+- [01:45:54,278 - 01:45:56,438] We're going to define next time
+- [01:45:56,438 - 01:45:57,538] the curvature tensor.
+- [01:45:59,838 - 01:46:03,458] But the basic idea of general relativity
+- [01:46:03,458 - 01:46:06,498] is first of all that space-time is curved.
+- [01:46:07,718 - 01:46:09,298] And second of all,
+- [01:46:09,318 - 01:46:12,178] the curvature is due to masses,
+- [01:46:12,218 - 01:46:14,338] is due to mass
+- [01:46:14,338 - 01:46:17,878] or more generally energy and momentum.
+- [01:46:18,618 - 01:46:20,478] E equals mc squared,
+- [01:46:20,478 - 01:46:21,218] of course,
+- [01:46:21,218 - 01:46:21,838] is the,
+- [01:46:21,838 - 01:46:22,578] it goes to the mass.
+- [01:46:22,598 - 01:46:24,238] And the equality or the equivalence
+- [01:46:24,238 - 01:46:26,618] between energy and mass,
+- [01:46:27,598 - 01:46:30,438] energy and mass are the same thing
+- [01:46:30,438 - 01:46:32,078] except for a conversion factor,
+- [01:46:32,298 - 01:46:33,098] the square root of,
+- [01:46:33,198 - 01:46:35,058] the square of the speed of light.
+- [01:46:37,438 - 01:46:39,058] Energy and momentum
+- [01:46:39,058 - 01:46:40,278] will find out,
+- [01:46:40,278 - 01:46:40,818] come together.
+- [01:46:41,218 - 01:46:43,438] But energy and momentum
+- [01:46:43,438 - 01:46:46,058] are the things which create curvature.
+- [01:46:46,858 - 01:46:49,418] That's the analog of the statement
+- [01:46:49,418 - 01:46:52,578] that mass creates gravitational force
+- [01:46:52,598 - 01:46:53,918] and gravitational field
+- [01:46:53,918 - 01:46:54,358] and gravitational field
+- [01:46:54,358 - 01:46:55,978] that cannot be removed
+- [01:46:56,258 - 01:46:57,698] by a coordinate transformation.
+- [01:46:59,158 - 01:47:01,598] Gravitational field that cannot be removed
+- [01:47:01,598 - 01:47:03,878] by going to an accelerated frame of reference.
+- [01:47:05,398 - 01:47:07,078] That's the presence of a chunk of mass.
+- [01:47:07,538 - 01:47:08,738] It's an obstruction
+- [01:47:09,338 - 01:47:11,518] to getting rid of the gravitational field.
+- [01:47:12,178 - 01:47:14,638] Energy and momentum create curvature.
+- [01:47:15,298 - 01:47:17,098] Curvature is also an obstruction
+- [01:47:17,098 - 01:47:20,598] to getting rid of the curvature of space-time.
+- [01:47:20,598 - 01:47:23,278] So that's the basic theme.
+- [01:47:24,238 - 01:47:27,498] We're going to write down,
+- [01:47:27,638 - 01:47:28,558] if not derive,
+- [01:47:29,297 - 01:47:31,938] the equations relating the curvature
+- [01:47:31,938 - 01:47:32,818] of space-time
+- [01:47:32,818 - 01:47:34,638] to the presence of energy and momentum.
+- [01:47:36,278 - 01:47:38,098] And then we're going to talk about
+- [01:47:38,098 - 01:47:40,138] how particles move
+- [01:47:41,417 - 01:47:43,138] in a curved space-time.
+- [01:47:43,518 - 01:47:45,798] And the answer is they move along geodesics.
+- [01:47:46,098 - 01:47:47,238] So what we're going to do,
+- [01:47:47,378 - 01:47:48,338] here's the goal.
+- [01:47:48,818 - 01:47:50,478] Start with some energy and momentum.
+- [01:47:50,598 - 01:47:51,198] Some mass.
+- [01:47:52,598 - 01:47:54,318] Calculate the curvature around it.
+- [01:47:54,558 - 01:47:57,798] And then that gives us a set of geodesics.
+- [01:47:58,098 - 01:47:59,578] And what we're going to want to see
+- [01:47:59,578 - 01:48:01,438] is that those geodesics behave
+- [01:48:02,577 - 01:48:04,198] almost identically to the way
+- [01:48:04,198 - 01:48:06,278] Newtonian trajectories move
+- [01:48:06,877 - 01:48:10,978] around a mass in Newtonian gravity.
+- [01:48:12,078 - 01:48:12,758] Of course,
+- [01:48:12,758 - 01:48:13,958] we're going to do a little better than that.
+- [01:48:14,058 - 01:48:15,238] We're going to see that
+- [01:48:15,238 - 01:48:16,418] there are some corrections to Newton.
+- [01:48:17,178 - 01:48:18,278] But that's the goal.
+- [01:48:19,257 - 01:48:21,438] Curvature is like gravitational field.
+- [01:48:21,598 - 01:48:22,738] It's created by mass.
+- [01:48:24,158 - 01:48:25,998] Solutions of F equals mA
+- [01:48:25,998 - 01:48:29,798] are essentially just geodesics in space-time.
+- [01:48:30,398 - 01:48:33,438] That's the goal for the next couple of lectures.
+- [01:48:33,778 - 01:48:36,958] And then we'll try to study some particular examples.
+- [01:48:37,738 - 01:48:38,858] In particular,
+- [01:48:38,858 - 01:48:42,178] the Schwarzschild geometry
+- [01:48:42,178 - 01:48:44,758] of a chunk of mass.
+- [01:48:46,858 - 01:48:47,898] And I think,
+- [01:48:48,278 - 01:48:49,618] I'm not sure where we'll go after that.
+- [01:48:50,178 - 01:48:51,098] Any questions?
+- [01:48:54,978 - 01:48:55,918] Absolutely none.
+- [01:48:56,438 - 01:48:57,278] I have a question.
+- [01:48:58,218 - 01:48:59,278] I have a question.
+- [01:48:59,998 - 01:49:02,318] A space embedded in another space,
+- [01:49:02,358 - 01:49:04,418] they said the upper space,
+- [01:49:04,578 - 01:49:06,138] the higher space is flat.
+- [01:49:06,478 - 01:49:08,098] Then is parallel transport
+- [01:49:08,098 - 01:49:10,278] equivalent to keeping parallel
+- [01:49:10,278 - 01:49:12,578] in the higher dimensional space?
+- [01:49:12,938 - 01:49:13,378] Well,
+- [01:49:13,378 - 01:49:13,698] okay.
+- [01:49:13,818 - 01:49:14,118] So,
+- [01:49:14,118 - 01:49:14,638] let's see.
+- [01:49:14,638 - 01:49:14,838] So,
+- [01:49:14,838 - 01:49:18,098] no,
+- [01:49:18,098 - 01:49:18,498] not,
+- [01:49:18,498 - 01:49:18,958] no,
+- [01:49:18,958 - 01:49:19,678] no,
+- [01:49:19,678 - 01:49:20,498] no.
+- [01:49:21,418 - 01:49:23,818] Parallel transport is not defined
+- [01:49:23,818 - 01:49:27,898] by staying parallel in the embedding space.
+- [01:49:28,478 - 01:49:29,898] But we would lie outside it.
+- [01:49:29,978 - 01:49:31,658] Then we'd just project it in there.
+- [01:49:31,698 - 01:49:31,778] Yeah.
+- [01:49:33,858 - 01:49:34,878] Let's put it this way.
+- [01:49:35,198 - 01:49:36,678] Take three-dimensional space
+- [01:49:36,678 - 01:49:39,118] and now make a curved surface in it.
+- [01:49:39,478 - 01:49:41,558] If the rule for parallel transport
+- [01:49:41,558 - 01:49:43,358] was to keep the vector parallel
+- [01:49:43,358 - 01:49:44,818] in the three-dimensional sense,
+- [01:49:46,218 - 01:49:47,898] then when you went around any curve,
+- [01:49:48,458 - 01:49:50,318] there would be no such thing as curvature.
+- [01:49:50,678 - 01:49:50,958] No,
+- [01:49:50,958 - 01:49:51,058] no.
+- [01:49:51,118 - 01:49:52,818] You keep the parallel a little ways
+- [01:49:52,818 - 01:49:53,398] and it's objective.
+- [01:49:54,786 - 01:49:54,906] 好
+- [01:49:56,258 - 01:49:56,358] OK,
+- [01:49:56,358 - 01:49:59,498] when you parallelly transport a vector
+- [01:49:59,938 - 01:50:01,278] in the two-dimensional space,
+- [01:50:01,278 - 01:50:02,138] you
+- [01:50:02,138 - 01:50:04,338] keep it in the two-dimensional space.
+- [01:50:04,618 - 01:50:06,778] It's always pointing in the two-dimensional space.
+- [01:50:10,678 - 01:50:11,158] Yeah,
+- [01:50:11,158 - 01:50:12,637] you can probably think of it.
+- [01:50:13,218 - 01:50:15,538] You can understand it better if you
+- [01:50:15,538 - 01:50:18,018] think that for it to be a vector,
+- [01:50:18,258 - 01:50:19,958] it has to be just two numbers.
+- [01:50:20,178 - 01:50:21,438] It cannot be three numbers.
+- [01:50:21,498 - 01:50:21,838] That's right.
+- [01:50:22,218 - 01:50:22,838] That's right.
+- [01:50:22,898 - 01:50:23,708] But let me give you
+- [01:50:23,708 - 01:50:24,518] another way to think about it.
+- [01:50:26,258 - 01:50:26,978] As we said,
+- [01:50:26,978 - 01:50:29,258] we can always find coordinates
+- [01:50:29,258 - 01:50:34,638] at a point which are delta mn.
+- [01:50:36,558 - 01:50:37,338] All right,
+- [01:50:37,338 - 01:50:39,438] that means that the coordinate axes locally
+- [01:50:39,438 - 01:50:41,678] at that point are perpendicular to each other.
+- [01:50:41,858 - 01:50:42,758] And in fact,
+- [01:50:42,758 - 01:50:43,878] they're as straight as possible.
+- [01:50:45,678 - 01:50:48,458] Parallel transport from one point
+- [01:50:48,458 - 01:50:50,858] to another point in the vicinity of this point
+- [01:50:50,858 - 01:50:52,718] where we've made the metric look like this
+- [01:50:53,098 - 01:50:55,758] is just keeping the components of the metric
+- [01:50:56,258 - 01:50:56,998] I'm sorry,
+- [01:50:56,998 - 01:50:58,158] the components of the vector
+- [01:50:58,158 - 01:50:58,678] fixed,
+- [01:50:58,678 - 01:51:02,258] transporting it as if space was flat.
+- [01:51:02,478 - 01:51:05,558] The problem is that when you go over to here,
+- [01:51:07,218 - 01:51:12,878] the original coordinates here for which the metric was just
+- [01:51:12,878 - 01:51:17,078] delta mn are no longer the coordinates at this point
+- [01:51:17,078 - 01:51:18,778] where the metric is delta mn.
+- [01:51:18,978 - 01:51:20,798] There's a little bit of shift of coordinates
+- [01:51:20,798 - 01:51:23,578] to keep them to the new coordinate system.
+- [01:51:23,898 - 01:51:24,738] And so,
+- [01:51:24,738 - 01:51:25,858] well,
+- [01:51:25,858 - 01:51:26,238] it's not that simple.
+- [01:51:26,238 - 01:51:26,378] OK.
+- [01:51:28,278 - 01:51:29,498] It's a little more complicated.
+- [01:51:32,738 - 01:51:33,378] Anyway,
+- [01:51:33,378 - 01:51:35,218] familiarize yourself as much as you can
+- [01:51:35,218 - 01:51:36,998] with the idea of parallel transport.
+- [01:51:37,958 - 01:51:39,318] And the next time,
+- [01:51:39,318 - 01:51:41,458] we will define the curvature tensor.
+- [01:51:41,798 - 01:51:42,498] And again,
+- [01:51:42,498 - 01:51:44,138] the curvature tensor is always
+- [01:51:44,138 - 01:51:49,518] related to what happens to a vector when you parallelly
+- [01:51:49,518 - 01:51:51,238] transport it around a curve.
+- [01:51:52,078 - 01:51:54,158] It's more complicated in three dimensions.
+- [01:51:54,398 - 01:51:54,738] Why?
+- [01:51:55,238 - 01:51:55,878] Because.
+- [01:51:55,878 - 01:51:59,958] Because the curve could be oriented along any plane.
+- [01:52:01,038 - 01:52:02,198] And furthermore,
+- [01:52:02,198 - 01:52:03,558] the rotation of the vector
+- [01:52:03,558 - 01:52:05,517] could be a rotation about any axis.
+- [01:52:06,038 - 01:52:07,218] In four dimensions,
+- [01:52:07,218 - 01:52:08,638] it's even more complicated.
+- [01:52:09,377 - 01:52:11,367] But the basic idea is
+- [01:52:11,367 - 01:52:13,358] go around a little curve oriented
+- [01:52:13,358 - 01:52:15,418] along some plane and see
+- [01:52:15,418 - 01:52:17,478] how the vector rotates in space
+- [01:52:17,478 - 01:52:18,378] or in spacetime.
+- [01:52:19,238 - 01:52:21,978] And that rotation of the vector,
+- [01:52:21,978 - 01:52:22,258] when
+- [01:52:22,258 - 01:52:23,318] you go around a little circle,
+- [01:52:23,318 - 01:52:25,078] that is what defines curvature.
+- [01:52:25,078 - 01:52:27,478] That's the notion of Riemannian curvature.
+- [01:52:27,858 - 01:52:31,878] And it's the notion that's at the heart
+- [01:52:31,878 - 01:52:33,698] of the gravitational field.
+- [01:52:34,038 - 01:52:34,538] OK.
+- [01:52:42,428 - 01:52:45,058] The preceding program is copyrighted by Stanford
+- [01:52:45,058 - 01:52:45,438] University.
+- [01:52:45,918 - 01:52:48,598] Please visit us at stanford.edu.
