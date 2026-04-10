@@ -1,0 +1,3185 @@
+# Transcript
+
+Source: core/general_relativity/2012_fall_theoretical_minimum/161 - General Relativity Lecture 7 [BdYtfYkdGDk].mkv
+
+- [00:00:05,220 - 00:00:06,140] Stanford University
+- [00:00:09,740 - 00:00:10,200] Okay,
+- [00:00:10,200 - 00:00:12,020] let's get back to the Schwarzschild metric,
+- [00:00:12,020 - 00:00:13,040] Karl Schwarzschild.
+- [00:00:15,520 - 00:00:17,320] I don't know too much about him.
+- [00:00:17,320 - 00:00:20,280] He was before my time.
+- [00:00:21,620 - 00:00:22,880] But I know his metric.
+- [00:00:22,880 - 00:00:24,100] I know his metric really well.
+- [00:00:24,860 - 00:00:27,280] It's one of the few equations that I have,
+- [00:00:27,280 - 00:00:28,560] you know,
+- [00:00:28,560 - 00:00:30,360] permanently fixed in my head.
+- [00:00:31,080 - 00:00:32,560] So let's write it down,
+- [00:00:32,560 - 00:00:35,460] and I want to simplify it a little
+- [00:00:35,460 - 00:00:38,360] bit for you by just rescaling the coordinates.
+- [00:00:39,300 - 00:00:40,660] Let's write it down first,
+- [00:00:40,660 - 00:00:43,440] and I'm going to write it down
+- [00:00:43,440 - 00:00:46,220] with the radius variable and the time variable.
+- [00:00:46,960 - 00:00:49,020] I'm going to put little primes over them.
+- [00:00:49,180 - 00:00:50,180] The primes,
+- [00:00:50,180 - 00:00:52,130] the purpose of the primes is
+- [00:00:52,130 - 00:00:54,080] just so after the time variable,
+- [00:00:54,100 - 00:00:55,260] after I rescale variables,
+- [00:00:55,260 - 00:00:57,860] I don't have to put primes in.
+- [00:00:58,280 - 00:01:01,200] I want to minimize the number
+- [00:01:01,200 - 00:01:04,120] of little symbols that I write down.
+- [00:01:04,760 - 00:01:06,260] And so to begin with,
+- [00:01:06,260 - 00:01:09,850] I'm going to write the metric
+- [00:01:09,850 - 00:01:13,440] in coordinates r prime and t prime.
+- [00:01:14,000 - 00:01:15,000] No difference.
+- [00:01:15,000 - 00:01:16,840] Same thing as last time,
+- [00:01:16,840 - 00:01:18,960] except just a slight change of notation.
+- [00:01:19,340 - 00:01:21,060] We'll write that d tau squared,
+- [00:01:21,060 - 00:01:22,660] that's the proper time,
+- [00:01:22,660 - 00:01:26,980] is equal to one minus two m g,
+- [00:01:26,980 - 00:01:28,860] and I'm going to write r prime here.
+- [00:01:29,060 - 00:01:30,080] Can everybody see the prime?
+- [00:01:32,260 - 00:01:38,190] d t prime squared minus the r
+- [00:01:38,190 - 00:01:44,120] prime squared divided by this same thing,
+- [00:01:44,280 - 00:01:48,480] one minus two m g over r prime.
+- [00:01:50,680 - 00:01:51,960] And then,
+- [00:01:52,660 - 00:01:55,420] plus r squared times the
+- [00:01:55,420 - 00:01:58,180] metric of a unit two sphere.
+- [00:01:58,420 - 00:02:00,110] Two sphere just means the
+- [00:02:00,110 - 00:02:01,800] two-dimensional surface of a sphere.
+- [00:02:02,920 - 00:02:03,940] What was it?
+- [00:02:03,940 - 00:02:05,680] It was d theta squared plus
+- [00:02:05,680 - 00:02:07,420] cosine squared theta d phi squared.
+- [00:02:09,199 - 00:02:09,839] Now,
+- [00:02:09,839 - 00:02:10,979] first of all,
+- [00:02:10,979 - 00:02:13,540] the first simplification I will make,
+- [00:02:13,580 - 00:02:16,980] is we'll just remember that the Schwarzschild radius,
+- [00:02:16,980 - 00:02:18,560] the radius of the horizon,
+- [00:02:19,279 - 00:02:22,460] the place where this coefficient function
+- [00:02:22,660 - 00:02:23,620] here becomes zero,
+- [00:02:24,560 - 00:02:26,980] is at r prime equals two m g.
+- [00:02:27,420 - 00:02:30,560] So two m g is the Schwarzschild radius.
+- [00:02:30,880 - 00:02:32,790] It is the radius of
+- [00:02:32,790 - 00:02:34,700] the horizon of the black hole.
+- [00:02:35,020 - 00:02:38,160] So let's give it a new name.
+- [00:02:38,320 - 00:02:42,960] Two m g is just r Schwarzschild.
+- [00:02:43,640 - 00:02:46,440] Two m g is just r Schwarzschild.
+- [00:02:49,959 - 00:02:50,640] Okay?
+- [00:02:50,820 - 00:02:53,940] And now I simply want to do something very simple.
+- [00:02:54,620 - 00:02:58,480] I'm going to redefine or rescale r.
+- [00:02:59,240 - 00:03:02,170] I'm going to define r to
+- [00:03:02,170 - 00:03:05,100] be r prime divided by r Schwarzschild.
+- [00:03:05,940 - 00:03:07,060] Now normally,
+- [00:03:07,060 - 00:03:10,020] r's have units of length.
+- [00:03:11,380 - 00:03:12,060] Okay?
+- [00:03:12,560 - 00:03:15,500] When I divide two lengths,
+- [00:03:16,440 - 00:03:17,980] I get something which is dimensionless.
+- [00:03:18,600 - 00:03:20,080] So now my r,
+- [00:03:20,080 - 00:03:21,340] which is not the same
+- [00:03:21,340 - 00:03:22,600] r that I used last time,
+- [00:03:22,760 - 00:03:25,060] r prime is the r from last time,
+- [00:03:25,240 - 00:03:27,900] but now my r is dimensionless,
+- [00:03:28,120 - 00:03:29,820] and I can rewrite this,
+- [00:03:29,820 - 00:03:30,160] oh,
+- [00:03:30,160 - 00:03:30,860] one other thing,
+- [00:03:30,860 - 00:03:31,180] sorry,
+- [00:03:31,300 - 00:03:33,200] we're going to do the same thing with t.
+- [00:03:33,860 - 00:03:35,280] We're going to write that t,
+- [00:03:37,680 - 00:03:39,200] what are the units of t?
+- [00:03:40,600 - 00:03:41,040] Time.
+- [00:03:41,440 - 00:03:41,880] Right?
+- [00:03:42,220 - 00:03:44,260] But if the speed of light is equal to one,
+- [00:03:44,460 - 00:03:45,760] which we're always assuming,
+- [00:03:45,760 - 00:03:46,720] c equals one,
+- [00:03:48,520 - 00:03:50,350] then the units of time and
+- [00:03:50,350 - 00:03:52,180] the units of length are the same.
+- [00:03:53,480 - 00:03:54,440] Meters or whatever.
+- [00:03:56,060 - 00:03:56,600] Okay?
+- [00:03:56,720 - 00:04:00,760] And I also want to turn t into something dimensionless,
+- [00:04:00,940 - 00:04:02,540] so I'm going to do the same thing.
+- [00:04:02,660 - 00:04:05,500] t prime divided by the same r Schwarzschild.
+- [00:04:06,480 - 00:04:10,320] r Schwarzschild is both a distance and a time.
+- [00:04:10,760 - 00:04:11,850] If you want to know
+- [00:04:11,850 - 00:04:12,940] in what sense it's a time,
+- [00:04:13,649 - 00:04:15,400] it's just a time that it takes
+- [00:04:15,760 - 00:04:18,160] a light ray to go
+- [00:04:18,160 - 00:04:20,560] the distance of one Schwarzschild radius.
+- [00:04:21,720 - 00:04:22,440] Okay,
+- [00:04:22,440 - 00:04:24,800] so now let's rewrite this metric here.
+- [00:04:26,640 - 00:04:27,920] First of all,
+- [00:04:28,659 - 00:04:31,860] one minus r Schwarzschild over r prime,
+- [00:04:32,120 - 00:04:35,720] that's just one minus one over r.
+- [00:04:38,760 - 00:04:39,700] Same thing.
+- [00:04:40,940 - 00:04:43,100] r Schwarzschild over r prime,
+- [00:04:43,300 - 00:04:44,320] that's just one over r.
+- [00:04:44,320 - 00:04:45,120] Now,
+- [00:04:45,120 - 00:04:46,640] d t prime squared,
+- [00:04:46,880 - 00:04:48,480] d t prime squared,
+- [00:04:48,700 - 00:04:52,040] let's look at that equation for a minute.
+- [00:04:52,440 - 00:04:56,660] That's d t squared times r Schwarzschild squared.
+- [00:04:59,080 - 00:04:59,560] Alright,
+- [00:04:59,560 - 00:05:00,560] so that's the first term.
+- [00:05:01,080 - 00:05:01,940] Next term,
+- [00:05:01,940 - 00:05:03,100] minus,
+- [00:05:04,359 - 00:05:04,840] now,
+- [00:05:04,840 - 00:05:07,240] the thing in the denominator is exactly the same thing
+- [00:05:07,240 - 00:05:08,400] as in the numerator over here,
+- [00:05:08,600 - 00:05:09,380] so it's again,
+- [00:05:09,380 - 00:05:11,040] one minus one over r.
+- [00:05:12,620 - 00:05:14,300] And now we have d r prime,
+- [00:05:14,300 - 00:05:14,840] d t prime squared.
+- [00:05:15,260 - 00:05:17,900] r prime is r times r Schwarzschild.
+- [00:05:18,300 - 00:05:18,880] So,
+- [00:05:18,880 - 00:05:20,600] this is just d r squared
+- [00:05:20,600 - 00:05:21,900] times again,
+- [00:05:21,900 - 00:05:23,540] r Schwarzschild squared.
+- [00:05:24,700 - 00:05:26,660] And what about the last term here?
+- [00:05:26,780 - 00:05:28,960] The last term is plus,
+- [00:05:29,060 - 00:05:30,060] this should be prime.
+- [00:05:31,300 - 00:05:33,080] This should be r prime squared.
+- [00:05:34,620 - 00:05:37,680] r prime again is r times r Schwarzschild.
+- [00:05:37,840 - 00:05:38,720] So this is again,
+- [00:05:38,720 - 00:05:42,000] r squared d omega squared,
+- [00:05:43,000 - 00:05:44,160] times again,
+- [00:05:44,160 - 00:05:45,620] r Schwarzschild squared.
+- [00:05:47,500 - 00:05:48,080] So,
+- [00:05:48,080 - 00:05:49,400] the Schwarzschild radius,
+- [00:05:49,400 - 00:05:50,320] or the square of it,
+- [00:05:50,360 - 00:05:51,740] just factors out from everything.
+- [00:05:53,460 - 00:05:54,960] Let's put it on the outside.
+- [00:05:57,180 - 00:05:59,040] Put a big bracket around it.
+- [00:06:02,240 - 00:06:04,400] And that is d tau squared.
+- [00:06:06,740 - 00:06:08,060] All you have to remember,
+- [00:06:08,800 - 00:06:11,240] is this simplified version,
+- [00:06:12,000 - 00:06:12,660] of course,
+- [00:06:12,660 - 00:06:13,240] what is this,
+- [00:06:13,320 - 00:06:14,800] what appears in the brackets?
+- [00:06:15,040 - 00:06:17,740] That is the metric that we would have written down
+- [00:06:17,740 - 00:06:20,140] if 2mg was equal to one.
+- [00:06:20,720 - 00:06:22,940] If 2mg happened to have been equal to one,
+- [00:06:23,120 - 00:06:25,340] we would have written down this in the first place.
+- [00:06:25,960 - 00:06:28,940] What we find out from this exercise
+- [00:06:29,700 - 00:06:33,060] is that basically the metric of all
+- [00:06:33,060 - 00:06:35,500] Schwarzschild black holes is the same,
+- [00:06:37,340 - 00:06:39,180] except for an overall
+- [00:06:42,120 - 00:06:44,070] factor which is proportional to the square
+- [00:06:44,070 - 00:06:46,020] of the radius of the black hole.
+- [00:06:46,760 - 00:06:47,820] In other words,
+- [00:06:48,440 - 00:06:50,640] everything in here is dimensionless,
+- [00:06:52,720 - 00:06:53,900] carries no dimensions,
+- [00:06:53,900 - 00:06:54,600] no meters,
+- [00:06:54,600 - 00:06:55,400] or anything else.
+- [00:06:55,740 - 00:06:57,700] All of the dimensions are in here,
+- [00:06:57,700 - 00:06:58,740] r Schwarzschild squared.
+- [00:06:59,700 - 00:07:02,580] And for most purposes,
+- [00:07:02,780 - 00:07:06,340] in studying the geometry of the black hole,
+- [00:07:06,560 - 00:07:09,160] really we can just set r Schwarzschild
+- [00:07:09,180 - 00:07:09,900] equal to one.
+- [00:07:10,080 - 00:07:11,100] You know what it's like?
+- [00:07:11,300 - 00:07:13,640] It's like studying the metric of a sphere
+- [00:07:13,909 - 00:07:15,080] of different sizes.
+- [00:07:15,760 - 00:07:17,240] The metric of a sphere,
+- [00:07:17,240 - 00:07:18,240] of all spheres,
+- [00:07:18,520 - 00:07:19,440] is the same,
+- [00:07:20,440 - 00:07:23,480] except that bigger spheres and smaller spheres
+- [00:07:24,010 - 00:07:25,675] we simply have to multiply by the
+- [00:07:25,675 - 00:07:27,340] square of the radius of the sphere.
+- [00:07:28,180 - 00:07:29,360] But other than that,
+- [00:07:29,360 - 00:07:30,640] all spheres are the same.
+- [00:07:31,140 - 00:07:31,720] Well,
+- [00:07:31,720 - 00:07:35,180] all Schwarzschild black holes are the same,
+- [00:07:35,300 - 00:07:37,700] except for this overall factor here.
+- [00:07:37,700 - 00:07:39,060] So from now on,
+- [00:07:39,060 - 00:07:39,560] we're going to,
+- [00:07:39,580 - 00:07:42,220] at least for the most part tonight,
+- [00:07:42,500 - 00:07:43,960] we're going to be just
+- [00:07:43,960 - 00:07:45,420] writing this thing down over here.
+- [00:07:46,060 - 00:07:47,560] It makes things a little bit easier.
+- [00:07:48,240 - 00:07:50,340] Should that last term have a minus sign?
+- [00:07:50,720 - 00:07:51,160] Yeah,
+- [00:07:51,160 - 00:07:51,480] probably.
+- [00:07:51,480 - 00:07:52,060] Yes.
+- [00:07:54,580 - 00:07:55,020] Good.
+- [00:07:56,040 - 00:07:56,620] All right,
+- [00:07:56,620 - 00:07:59,980] let's address a question that we haven't asked before.
+- [00:08:00,660 - 00:08:02,060] Why does that have a minus sign?
+- [00:08:02,220 - 00:08:03,420] If the top is...
+- [00:08:04,560 - 00:08:06,140] Should the top have a minus sign?
+- [00:08:07,700 - 00:08:08,120] Say it again?
+- [00:08:08,380 - 00:08:10,040] Should the top also have a minus sign?
+- [00:08:10,040 - 00:08:10,200] Yes,
+- [00:08:10,200 - 00:08:10,460] it should.
+- [00:08:10,680 - 00:08:10,820] Yes.
+- [00:08:11,780 - 00:08:12,260] Okay.
+- [00:08:20,260 - 00:08:21,220] All right,
+- [00:08:21,220 - 00:08:24,580] so what about the curvature?
+- [00:08:25,120 - 00:08:26,940] You remember the old curvature tensor.
+- [00:08:27,900 - 00:08:32,960] Curvature tensor is the thing which tells us
+- [00:08:32,960 - 00:08:34,400] that the spacetime is not flat.
+- [00:08:34,400 - 00:08:43,840] I told you that it's analogous to tidal forces,
+- [00:08:44,140 - 00:08:48,460] the tendency for the geometry to distort objects,
+- [00:08:49,740 - 00:08:51,120] and indeed it is.
+- [00:08:51,280 - 00:08:52,280] In fact,
+- [00:08:52,280 - 00:08:54,440] tidal forces are curvature.
+- [00:08:54,800 - 00:08:58,960] How big are the components of the curvature tensor,
+- [00:08:59,820 - 00:09:00,800] let's say,
+- [00:09:00,800 - 00:09:02,040] near the horizon?
+- [00:09:02,619 - 00:09:06,020] The horizon corresponds to r equals 1.
+- [00:09:07,540 - 00:09:08,260] All right.
+- [00:09:08,540 - 00:09:09,100] Well,
+- [00:09:09,100 - 00:09:13,520] the first question is what are the units of curvature?
+- [00:09:14,460 - 00:09:15,680] So let's just go back.
+- [00:09:15,840 - 00:09:16,440] I'm just going to...
+- [00:09:16,440 - 00:09:18,420] I realize you probably don't
+- [00:09:18,420 - 00:09:20,400] remember the formula for the curvature.
+- [00:09:21,000 - 00:09:24,260] I'll just very briefly remind you what it looks like,
+- [00:09:24,420 - 00:09:25,940] but the main thing is to
+- [00:09:25,940 - 00:09:27,460] read off from it its units.
+- [00:09:27,700 - 00:09:28,540] That's all we want.
+- [00:09:29,020 - 00:09:29,760] All right,
+- [00:09:29,760 - 00:09:31,400] the metric tensor g mu nu,
+- [00:09:32,640 - 00:09:34,620] that doesn't carry any dimensions.
+- [00:09:35,620 - 00:09:38,360] Normally it's the dx mu dx nu.
+- [00:09:38,460 - 00:09:39,580] These things have length,
+- [00:09:39,580 - 00:09:41,240] units of length,
+- [00:09:41,960 - 00:09:44,170] and so this is supposed to
+- [00:09:44,170 - 00:09:46,380] be the square of some length,
+- [00:09:46,560 - 00:09:47,560] the square of some distance.
+- [00:09:48,140 - 00:09:49,890] And so g mu nu is a
+- [00:09:49,890 - 00:09:51,640] thing that doesn't carry any units at all.
+- [00:09:51,740 - 00:09:52,500] It's dimensionless.
+- [00:09:53,340 - 00:09:53,840] Now,
+- [00:09:53,840 - 00:09:54,640] let's go back.
+- [00:09:54,740 - 00:09:56,260] Remember the Christoffel symbols.
+- [00:09:56,440 - 00:09:58,090] I'm not going to write
+- [00:09:58,090 - 00:09:59,740] the Christoffel symbols in any detail.
+- [00:10:00,080 - 00:10:00,730] I'm just going to remind you that
+- [00:10:00,730 - 00:10:01,380] the Christoffel symbols are not just the same.
+- [00:10:01,380 - 00:10:04,620] I'm going to remind you that they
+- [00:10:04,620 - 00:10:07,860] contain derivatives of g with respect to x.
+- [00:10:08,360 - 00:10:10,760] They also have g inverses here.
+- [00:10:11,020 - 00:10:12,800] But g is dimensionless,
+- [00:10:12,800 - 00:10:14,500] and g inverse is dimensionless.
+- [00:10:16,160 - 00:10:19,140] So what are the units of a Christoffel symbol?
+- [00:10:20,360 - 00:10:21,760] They're one over length.
+- [00:10:22,140 - 00:10:23,620] g is dimensionless.
+- [00:10:23,960 - 00:10:25,920] x carries units of length.
+- [00:10:26,400 - 00:10:31,360] And so the Christoffel symbol has units of inverse length.
+- [00:10:31,360 - 00:10:31,960] Now,
+- [00:10:31,960 - 00:10:33,420] if you remember,
+- [00:10:33,420 - 00:10:34,760] if you don't,
+- [00:10:34,760 - 00:10:35,340] I'll tell you now,
+- [00:10:35,540 - 00:10:40,500] the curvature tensor contains two kinds of terms.
+- [00:10:40,720 - 00:10:43,120] It contains derivatives of the Christoffel symbol,
+- [00:10:45,220 - 00:10:48,680] and it contains Christoffel symbols squared.
+- [00:10:51,580 - 00:10:53,260] Don't try to remember the formula.
+- [00:10:53,460 - 00:10:54,200] It's not important.
+- [00:10:56,660 - 00:10:59,780] This term will have units of one over length squared.
+- [00:11:00,220 - 00:11:01,340] If I differentiate the two,
+- [00:11:01,360 - 00:11:02,580] I can differentiate the Christoffel symbol,
+- [00:11:02,800 - 00:11:04,620] which already has units of one over length,
+- [00:11:04,800 - 00:11:07,040] then this has units of one over length squared.
+- [00:11:07,460 - 00:11:08,560] But so does this.
+- [00:11:09,580 - 00:11:12,460] If the Christoffel symbol has units of one over length,
+- [00:11:12,480 - 00:11:13,840] the square of this Christoffel symbol
+- [00:11:13,840 - 00:11:15,200] is units of one over length.
+- [00:11:15,460 - 00:11:17,060] So the units of curvature,
+- [00:11:17,440 - 00:11:18,980] the units of the curvature tensor,
+- [00:11:20,060 - 00:11:21,220] usually write it
+- [00:11:21,220 - 00:11:24,180] the square bracket stands for units of.
+- [00:11:24,780 - 00:11:27,020] The units of the curvature tensor
+- [00:11:27,920 - 00:11:30,500] are one over length squared.
+- [00:11:31,360 - 00:11:32,160] 1 over meters squared.
+- [00:11:32,160 - 00:11:34,620] And now come back.
+- [00:11:34,620 - 00:11:38,980] Let's ask at any given distance,
+- [00:11:38,980 - 00:11:40,040] at any given r,
+- [00:11:40,320 - 00:11:41,240] in particular,
+- [00:11:41,240 - 00:11:44,220] where is the horizon in these units?
+- [00:11:44,220 - 00:11:47,540] The horizon in these units is at r equals 1.
+- [00:11:48,620 - 00:11:53,320] Let's ask what is the curvature at r equals 1?
+- [00:11:53,320 - 00:11:56,240] At r equals 1,
+- [00:11:56,240 - 00:11:59,180] the only quantity in the metric here,
+- [00:11:59,180 - 00:12:00,900] which has units of length,
+- [00:12:00,900 - 00:12:02,860] is r Schwarzschild.
+- [00:12:02,860 - 00:12:05,100] The only possibility,
+- [00:12:05,100 - 00:12:09,240] the only possibility is that
+- [00:12:09,240 - 00:12:13,260] the curvature is going to be proportional
+- [00:12:13,260 - 00:12:17,280] to the inverse of the Schwarzschild radius squared.
+- [00:12:18,030 - 00:12:20,865] The only possible formula that you could possibly
+- [00:12:20,865 - 00:12:23,700] get by doing all the derivatives and everything else,
+- [00:12:23,840 - 00:12:25,620] since r Schwarzschild is the only
+- [00:12:25,620 - 00:12:27,400] thing with any units in here.
+- [00:12:28,750 - 00:12:29,080] So,
+- [00:12:29,080 - 00:12:29,160] if you want to get the curvature of the curve,
+- [00:12:29,160 - 00:12:29,160] you have to get the curvature of the curve.
+- [00:12:29,160 - 00:12:29,280] So,
+- [00:12:29,280 - 00:12:32,120] the curvature at the horizon,
+- [00:12:32,120 - 00:12:35,060] the curvature at the horizon,
+- [00:12:35,060 - 00:12:36,100] let's call it horizon,
+- [00:12:37,500 - 00:12:40,700] is the numerical number in front of it,
+- [00:12:40,700 - 00:12:42,420] is not important.
+- [00:12:42,420 - 00:12:44,440] The curvature at the horizon
+- [00:12:44,440 - 00:12:47,360] is approximately equal to 1
+- [00:12:47,360 - 00:12:50,280] over the Schwarzschild radius squared.
+- [00:12:55,080 - 00:12:58,740] As you move around in the black hole geometry,
+- [00:13:00,720 - 00:13:03,380] the curvature at the horizon will always
+- [00:13:03,380 - 00:13:06,040] be 1 over Schwarzschild squared times something,
+- [00:13:06,240 - 00:13:09,040] which may depend on where you are.
+- [00:13:09,040 - 00:13:12,380] For example,
+- [00:13:12,380 - 00:13:14,200] at r equals,
+- [00:13:14,200 - 00:13:15,460] instead of r equals 1,
+- [00:13:15,720 - 00:13:17,100] go to r equals a half.
+- [00:13:17,100 - 00:13:19,500] If you go to r equals a half,
+- [00:13:19,500 - 00:13:22,100] the curvature will still be proportional
+- [00:13:22,100 - 00:13:23,400] to the same thing,
+- [00:13:23,400 - 00:13:25,520] but in fact it will be bigger,
+- [00:13:25,520 - 00:13:27,500] numerically bigger,
+- [00:13:27,500 - 00:13:29,140] maybe twice as big or something like that.
+- [00:13:29,140 - 00:13:30,700] It's not easy to read off.
+- [00:13:30,700 - 00:13:33,340] And as you go to r equals 0,
+- [00:13:33,340 - 00:13:36,080] that's where the singularity is,
+- [00:13:36,240 - 00:13:37,940] the curvature becomes infinite,
+- [00:13:37,940 - 00:13:40,260] but at the horizon,
+- [00:13:40,260 - 00:13:41,740] at r equals 1,
+- [00:13:41,740 - 00:13:43,600] curvature is 1 over r squared.
+- [00:13:44,080 - 00:13:46,320] The meaning of that is the
+- [00:13:46,320 - 00:13:48,560] curvature for the bigger the black hole,
+- [00:13:48,560 - 00:13:50,720] the more massive it is.
+- [00:13:52,340 - 00:13:52,860] Remember,
+- [00:13:52,860 - 00:13:54,410] r Schwarzschild is proportional to
+- [00:13:54,410 - 00:13:55,960] the mass of the black hole.
+- [00:13:55,960 - 00:13:57,960] The bigger the mass,
+- [00:13:57,960 - 00:13:59,120] the bigger the Schwarzschild,
+- [00:13:59,120 - 00:13:59,120] the bigger the Schwarzschild.
+- [00:13:59,120 - 00:14:00,730] The smaller the Schwarzschild radius and
+- [00:14:00,730 - 00:14:02,340] the smaller the curvature at the horizon.
+- [00:14:05,060 - 00:14:08,350] So the tidal forces associated with
+- [00:14:08,350 - 00:14:11,640] a big black hole at the horizon,
+- [00:14:11,640 - 00:14:12,380] at the horizon,
+- [00:14:12,580 - 00:14:15,780] the tidal forces associated with a large black
+- [00:14:15,780 - 00:14:18,980] hole are less severe than the tidal forces
+- [00:14:18,980 - 00:14:20,180] at a small black hole.
+- [00:14:20,180 - 00:14:22,940] A small black hole is a
+- [00:14:22,940 - 00:14:25,700] much worse nasty thing near the horizon
+- [00:14:26,219 - 00:14:27,600] than a very big black hole.
+- [00:14:29,460 - 00:14:30,020] Alright,
+- [00:14:30,020 - 00:14:33,200] that's one observation that you read off directly from this.
+- [00:14:35,080 - 00:14:37,000] That the bigger the black hole,
+- [00:14:37,000 - 00:14:37,740] the more massive,
+- [00:14:37,740 - 00:14:41,040] the less curved it is at any particular r.
+- [00:14:46,240 - 00:14:46,800] Next.
+- [00:14:46,800 - 00:14:54,160] Now let's concentrate on this geometry.
+- [00:14:55,700 - 00:14:58,440] Let's throw away this r squared here.
+- [00:14:59,900 - 00:15:00,560] It's there,
+- [00:15:00,560 - 00:15:05,270] but let's concentrate on the
+- [00:15:05,270 - 00:15:09,980] geometry of a unit black hole,
+- [00:15:09,980 - 00:15:11,080] or a black hole
+- [00:15:12,760 - 00:15:16,400] for which you have set 2mg equal to 1.
+- [00:15:16,500 - 00:15:19,180] Let's concentrate on that and study that a little bit.
+- [00:15:22,460 - 00:15:24,350] Okay so let's go back to
+- [00:15:24,350 - 00:15:26,240] something we talked about last time.
+- [00:15:26,720 - 00:15:29,080] We'll go back to something we talked about last time.
+- [00:15:29,080 - 00:15:30,400] I only,
+- [00:15:30,400 - 00:15:32,420] I more or less outlined for you,
+- [00:15:32,420 - 00:15:33,340] but let's do it again.
+- [00:15:35,460 - 00:15:37,860] Let's ask for,
+- [00:15:37,860 - 00:15:39,460] I want a new coordinate now.
+- [00:15:40,180 - 00:15:41,780] Now I apologize for the
+- [00:15:41,780 - 00:15:43,380] fact that we keep changing coordinates,
+- [00:15:43,380 - 00:15:44,820] but that's,
+- [00:15:44,820 - 00:15:45,940] that's what
+- [00:15:45,940 - 00:15:47,400] relativity is all about,
+- [00:15:47,400 - 00:15:48,440] is changing coordinates.
+- [00:15:49,820 - 00:15:51,730] Okay we're going to introduce
+- [00:15:51,730 - 00:15:53,640] a new coordinate to replace r.
+- [00:15:55,700 - 00:15:57,360] R is going to be replaced.
+- [00:15:59,080 - 00:16:00,640] Let's draw the r axis,
+- [00:16:00,640 - 00:16:04,180] and somewhere is r equals 1.
+- [00:16:05,680 - 00:16:07,040] Here's r equals 0,
+- [00:16:07,040 - 00:16:09,040] and far away is,
+- [00:16:09,040 - 00:16:11,060] far away from the black hole.
+- [00:16:11,500 - 00:16:14,920] r equals 1 is the horizon in these coordinates.
+- [00:16:15,360 - 00:16:15,840] Alright,
+- [00:16:15,840 - 00:16:16,420] it is,
+- [00:16:16,420 - 00:16:18,560] it is the horizon,
+- [00:16:18,560 - 00:16:19,760] so right over here is the horizon.
+- [00:16:22,300 - 00:16:24,510] And I want to invent a
+- [00:16:24,510 - 00:16:26,720] new coordinate which is just distance,
+- [00:16:26,720 - 00:16:28,800] proper distance from the
+- [00:16:28,800 - 00:16:29,100] horizon.
+- [00:16:30,840 - 00:16:33,160] Distance measured from the horizon.
+- [00:16:33,540 - 00:16:34,280] Alright,
+- [00:16:34,280 - 00:16:37,280] how do we calculate the distance from the horizon?
+- [00:16:38,680 - 00:16:40,800] Let's go back to this formula up here.
+- [00:16:41,960 - 00:16:46,420] Remember that d tau squared is proper time,
+- [00:16:46,420 - 00:16:52,260] d s squared is proper distance,
+- [00:16:52,260 - 00:16:53,540] and these
+- [00:16:53,540 - 00:16:56,220] are just equal to minus each other.
+- [00:16:58,980 - 00:17:00,560] d tau squared and d
+- [00:17:00,560 - 00:17:02,140] s squared are minus each other.
+- [00:17:02,980 - 00:17:05,109] Proper distance is the same
+- [00:17:05,109 - 00:17:07,240] formula but with plus signs here.
+- [00:17:07,940 - 00:17:09,700] And now let's move a
+- [00:17:09,700 - 00:17:11,460] little bit away from the horizon,
+- [00:17:11,460 - 00:17:13,359] radially outward,
+- [00:17:13,359 - 00:17:15,220] and ask,
+- [00:17:15,220 - 00:17:17,440] let's
+- [00:17:17,440 - 00:17:20,060] take a little differential distance
+- [00:17:20,060 - 00:17:22,680] away from the horizon here,
+- [00:17:22,680 - 00:17:22,880] no,
+- [00:17:22,880 - 00:17:23,339] not a little,
+- [00:17:23,339 - 00:17:24,940] let's just
+- [00:17:24,940 - 00:17:26,680] take some differential distance over here.
+- [00:17:26,940 - 00:17:27,740] And how?
+- [00:17:27,819 - 00:17:28,780] Ask what the proper distance is.
+- [00:17:28,780 - 00:17:30,760] What the proper distance between these two points is.
+- [00:17:30,980 - 00:17:33,220] The proper distance between those
+- [00:17:33,220 - 00:17:35,460] two points is just d s.
+- [00:17:38,760 - 00:17:41,260] Now I'm moving radially outward.
+- [00:17:41,660 - 00:17:42,740] Here's my black hole.
+- [00:17:44,260 - 00:17:45,560] I'm moving from here,
+- [00:17:45,560 - 00:17:47,000] radially outward,
+- [00:17:47,000 - 00:17:49,540] and I'm asking how much distance that corresponds
+- [00:17:49,540 - 00:17:50,060] to.
+- [00:17:50,380 - 00:17:51,660] But first of all,
+- [00:17:51,660 - 00:17:52,340] I'm moving,
+- [00:17:52,340 - 00:17:54,680] not literally moving,
+- [00:17:54,680 - 00:17:57,040] I'm just displacing a point without
+- [00:17:57,040 - 00:17:58,240] changing the time.
+- [00:17:58,240 - 00:17:59,140] First of all,
+- [00:17:59,140 - 00:18:01,160] just comparing two points at two
+- [00:18:01,160 - 00:18:03,180] different distances from the black hole
+- [00:18:03,180 - 00:18:04,300] at the same time.
+- [00:18:04,660 - 00:18:07,480] So d t from here to here is zero.
+- [00:18:08,120 - 00:18:09,160] And furthermore,
+- [00:18:09,160 - 00:18:10,440] I'm not changing the angle,
+- [00:18:10,440 - 00:18:12,300] I'm just moving radially,
+- [00:18:12,300 - 00:18:14,660] so d omega is equal
+- [00:18:14,660 - 00:18:15,080] to zero,
+- [00:18:15,080 - 00:18:17,200] no change in angle.
+- [00:18:17,980 - 00:18:21,900] That means that d s squared is just equal
+- [00:18:21,900 - 00:18:25,820] to d r squared over 1 minus 1 over.
+- [00:18:25,820 - 00:18:26,560] And then I'm changing this one within this triangle,
+- [00:18:26,560 - 00:18:26,560] right.
+- [00:18:26,560 - 00:18:26,760] What outcome is the result?
+- [00:18:26,760 - 00:18:26,760] .
+- [00:18:26,760 - 00:18:26,760] .
+- [00:18:26,760 - 00:18:26,760] .
+- [00:18:26,760 - 00:18:26,760] .
+- [00:18:26,760 - 00:18:26,760] .
+- [00:18:26,760 - 00:18:26,760] .
+- [00:18:26,760 - 00:18:26,760] .
+- [00:18:26,760 - 00:18:26,760] .
+- [00:18:26,760 - 00:18:26,760] .
+- [00:18:26,760 - 00:18:26,760] .
+- [00:18:26,760 - 00:18:26,760] .
+- [00:18:26,760 - 00:18:26,760] .
+- [00:18:26,760 - 00:18:26,760] .
+- [00:18:26,760 - 00:18:26,760] .
+- [00:18:26,760 - 00:18:26,760] .
+- [00:18:26,760 - 00:18:26,760] .
+- [00:18:26,760 - 00:18:26,760] .
+- [00:18:26,760 - 00:18:26,760] .
+- [00:18:26,760 - 00:18:26,760] .
+- [00:18:26,760 - 00:18:28,220] R R squared over 1 minus 1 over 1.
+- [00:18:28,220 - 00:18:28,220] And what?
+- [00:18:28,220 - 00:18:28,620] over r.
+- [00:18:28,620 - 00:18:35,120] Or ds,
+- [00:18:35,120 - 00:18:40,380] the distance between these two points is just dr,
+- [00:18:40,380 - 00:18:41,980] little dr,
+- [00:18:41,980 - 00:18:43,820] divided
+- [00:18:43,820 - 00:18:44,980] by the square root.
+- [00:18:44,980 - 00:18:46,740] I took the square root.
+- [00:18:46,740 - 00:18:50,800] We can also write this in another
+- [00:18:50,800 - 00:18:51,220] way.
+- [00:18:51,220 - 00:18:52,960] In fact,
+- [00:18:52,960 - 00:18:55,440] we can go right back to here
+- [00:18:55,440 - 00:18:57,920] and write it multiply and divide by little
+- [00:18:57,920 - 00:18:58,080] r.
+- [00:18:58,080 - 00:19:01,420] This becomes little r minus 1,
+- [00:19:01,420 - 00:19:03,920] little r minus 1 over r.
+- [00:19:03,920 - 00:19:08,180] Little r minus 1 over r,
+- [00:19:08,180 - 00:19:09,140] and
+- [00:19:09,140 - 00:19:11,720] this is also little r minus 1 over r.
+- [00:19:11,720 - 00:19:18,000] r upstairs.
+- [00:19:18,000 - 00:19:22,720] Everybody see what I did?
+- [00:19:22,720 - 00:19:24,980] I just wrote that
+- [00:19:24,980 - 00:19:26,440] 1 minus 1 over r is
+- [00:19:26,440 - 00:19:27,900] equal to r minus 1 over r.
+- [00:19:27,900 - 00:19:31,560] r over here,
+- [00:19:31,560 - 00:19:33,680] and over here,
+- [00:19:33,680 - 00:19:34,600] I just turned it upside
+- [00:19:34,600 - 00:19:34,980] down.
+- [00:19:34,980 - 00:19:36,820] Okay,
+- [00:19:36,820 - 00:19:38,860] so now here's my formula,
+- [00:19:38,860 - 00:19:41,520] I can read it a little bit differently,
+- [00:19:41,900 - 00:19:48,960] square root of r times r minus 1.
+- [00:19:48,960 - 00:19:57,480] Let's call the distance from the
+- [00:19:57,480 - 00:19:57,860] horizon,
+- [00:19:57,860 - 00:19:59,800] let's give it a name,
+- [00:19:59,800 - 00:20:00,940] let's call it rho.
+- [00:20:00,940 - 00:20:04,280] The proper distance from the
+- [00:20:04,280 - 00:20:06,140] horizon we'll call rho.
+- [00:20:06,140 - 00:20:09,080] That's not r minus 1.
+- [00:20:09,080 - 00:20:12,240] r minus 1 is a certain kind of
+- [00:20:12,240 - 00:20:12,480] distance,
+- [00:20:12,480 - 00:20:14,440] but it's not the proper distance from the horizon.
+- [00:20:14,440 - 00:20:16,480] How do we find
+- [00:20:16,480 - 00:20:16,660] it?
+- [00:20:16,660 - 00:20:18,420] Well,
+- [00:20:18,420 - 00:20:20,150] this is the differential displacement
+- [00:20:20,150 - 00:20:21,880] in distance in moving a
+- [00:20:21,880 - 00:20:22,620] radial distance,
+- [00:20:22,620 - 00:20:23,200] dr.
+- [00:20:23,200 - 00:20:25,880] Rho,
+- [00:20:25,880 - 00:20:27,980] the actual distance from the horizon,
+- [00:20:27,980 - 00:20:29,280] is the
+- [00:20:29,280 - 00:20:33,910] integral square root of r over r
+- [00:20:33,910 - 00:20:38,540] minus 1 dr from where to where.
+- [00:20:38,540 - 00:20:39,080] This is a
+- [00:20:39,080 - 00:20:40,280] definite integral.
+- [00:20:40,280 - 00:20:46,780] Maybe we should call this prime since it's just an
+- [00:20:46,780 - 00:20:47,640] integration variable.
+- [00:20:47,640 - 00:20:50,280] Not the same prime as before.
+- [00:20:51,880 - 00:20:52,680] Let's just call it r.
+- [00:20:52,680 - 00:20:55,740] What are the limits of integration if I want to
+- [00:20:55,740 - 00:20:58,230] calculate the distance from the
+- [00:20:58,230 - 00:21:00,720] horizon to some particular point at
+- [00:21:01,260 - 00:21:02,240] coordinate r?
+- [00:21:02,240 - 00:21:06,420] I integrate from the horizon,
+- [00:21:06,420 - 00:21:07,540] which is 1,
+- [00:21:07,540 - 00:21:09,540] to the point r.
+- [00:21:14,320 - 00:21:16,470] Let's call this prime if
+- [00:21:16,470 - 00:21:18,620] I don't want to abuse mathematical
+- [00:21:19,120 - 00:21:19,560] terminology,
+- [00:21:19,560 - 00:21:21,820] so I'll call this an integral over dr.
+- [00:21:21,880 - 00:21:22,120] prime.
+- [00:21:22,120 - 00:21:26,580] This is some function of r.
+- [00:21:26,580 - 00:21:29,340] We can't,
+- [00:21:29,340 - 00:21:30,480] we actually can't,
+- [00:21:30,480 - 00:21:30,900] I'll tell you,
+- [00:21:30,920 - 00:21:31,980] I'll tell you what we know.
+- [00:21:31,980 - 00:21:32,820] You can do the integral.
+- [00:21:32,820 - 00:21:35,580] The integral is a doable
+- [00:21:35,580 - 00:21:36,060] integral,
+- [00:21:36,060 - 00:21:37,320] but I'm not going to do it.
+- [00:21:37,320 - 00:21:42,060] But I'll tell you some things about it.
+- [00:22:00,020 - 00:22:06,450] told us row of r and what's
+- [00:22:06,450 - 00:22:12,880] more what's more the metric over here is
+- [00:22:13,420 - 00:22:16,340] also just a function of row we
+- [00:22:16,340 - 00:22:19,260] know the relations a relationship between Row and
+- [00:22:19,260 - 00:22:19,500] R
+- [00:22:27,060 - 00:22:29,620] There's a relationship between rho and r,
+- [00:22:29,620 - 00:22:33,060] and our favorite function over here,
+- [00:22:33,060 - 00:22:34,620] r minus
+- [00:22:34,620 - 00:22:35,400] one over r,
+- [00:22:35,400 - 00:22:38,340] that's also a function of rho.
+- [00:22:39,720 - 00:22:40,520] Let's call it,
+- [00:22:40,520 - 00:22:41,180] let's give it a name,
+- [00:22:41,180 - 00:22:41,860] let's,
+- [00:22:41,860 - 00:22:53,860] I'm on the wrong page,
+- [00:22:53,860 - 00:22:54,380] here it is.
+- [00:22:56,880 - 00:23:01,040] Let's call it f of rho.
+- [00:23:07,880 - 00:23:08,240] Now,
+- [00:23:08,240 - 00:23:08,320] if you look at the equation,
+- [00:23:08,320 - 00:23:08,320] you can see that the function of
+- [00:23:08,320 - 00:23:08,320] rho is equal to the function of rho.
+- [00:23:08,320 - 00:23:08,420] Now,
+- [00:23:08,420 - 00:23:10,840] I'm going to cheat a little bit,
+- [00:23:10,840 - 00:23:12,920] that's not quite what this is.
+- [00:23:13,180 - 00:23:16,080] I'm also going to change the definition of t,
+- [00:23:16,080 - 00:23:17,660] but only in a very,
+- [00:23:17,660 - 00:23:18,580] very simple way.
+- [00:23:18,800 - 00:23:20,540] In an extremely simple way,
+- [00:23:20,540 - 00:23:25,000] I'm going to define,
+- [00:23:25,000 - 00:23:26,540] this is definition now,
+- [00:23:26,540 - 00:23:28,020] omega,
+- [00:23:28,020 - 00:23:35,240] omega is just
+- [00:23:35,240 - 00:23:36,080] equal to t,
+- [00:23:36,080 - 00:23:37,620] I think it's divided by two.
+- [00:23:37,620 - 00:23:39,140] T divided by two.
+- [00:23:39,320 - 00:23:40,280] No big deal.
+- [00:23:40,860 - 00:23:42,160] Just for convenience,
+- [00:23:42,160 - 00:23:44,500] I'm going to use a variable
+- [00:23:44,500 - 00:23:46,840] which is the time divided by two.
+- [00:23:48,020 - 00:23:50,300] This is a sort of artifact
+- [00:23:50,300 - 00:23:52,580] of a particular original definition of time.
+- [00:23:52,820 - 00:23:54,310] It might have been nicer if
+- [00:23:54,310 - 00:23:55,800] I would have used 2t over two,
+- [00:23:55,800 - 00:23:56,880] or if Schwarzschild would have
+- [00:23:56,880 - 00:23:57,740] used t over two,
+- [00:23:57,740 - 00:23:58,900] but here it is.
+- [00:23:59,160 - 00:24:00,140] We're stuck with it.
+- [00:24:00,440 - 00:24:02,440] Omega is equal to t over two.
+- [00:24:02,780 - 00:24:04,810] And let's write the metric
+- [00:24:04,810 - 00:24:06,840] in the form f of rho.
+- [00:24:07,480 - 00:24:08,760] F of rho times rho squared.
+- [00:24:09,280 - 00:24:10,790] Now f of rho times
+- [00:24:10,790 - 00:24:12,300] rho squared is just some function.
+- [00:24:13,440 - 00:24:15,010] The fact that I wrote it
+- [00:24:15,010 - 00:24:16,580] as f of rho times rho squared,
+- [00:24:16,580 - 00:24:18,540] no content in that yet.
+- [00:24:18,760 - 00:24:22,880] It's just some function of rho squared times dt squared,
+- [00:24:22,880 - 00:24:24,680] but dt squared I'm going to replace
+- [00:24:24,680 - 00:24:25,880] by d omega squared.
+- [00:24:28,100 - 00:24:31,520] Dt squared is just for d omega squared,
+- [00:24:31,520 - 00:24:34,660] so I can absorb that extra factor of two right
+- [00:24:34,660 - 00:24:35,160] into here.
+- [00:24:35,360 - 00:24:35,960] Okay.
+- [00:24:36,840 - 00:24:36,920] So I'm going to use this function over here.
+- [00:24:37,300 - 00:24:40,460] I've just used the fact
+- [00:24:40,460 - 00:24:43,620] that r and rho are related.
+- [00:24:45,400 - 00:24:46,380] If I know r,
+- [00:24:46,380 - 00:24:47,200] then I know rho.
+- [00:24:47,300 - 00:24:48,000] If I know rho,
+- [00:24:48,000 - 00:24:48,780] then I know r.
+- [00:24:49,400 - 00:24:51,350] And so I can rewrite this thing
+- [00:24:51,350 - 00:24:53,300] over here as a function of rho.
+- [00:24:53,740 - 00:24:57,520] And here I've done it somewhat arbitrarily,
+- [00:24:57,520 - 00:24:59,840] dividing it into a rho squared and an f of
+- [00:24:59,840 - 00:25:00,040] rho,
+- [00:25:00,040 - 00:25:01,740] for reasons that will become clear in a minute.
+- [00:25:02,640 - 00:25:03,060] Okay.
+- [00:25:03,140 - 00:25:03,520] Next.
+- [00:25:03,520 - 00:25:07,060] What about this piece over here?
+- [00:25:07,980 - 00:25:09,210] This piece over here looks like
+- [00:25:09,210 - 00:25:10,440] it's going to be a mess,
+- [00:25:10,440 - 00:25:12,480] but it's not a mess.
+- [00:25:12,600 - 00:25:13,360] It's very simple.
+- [00:25:18,620 - 00:25:19,720] It is just,
+- [00:25:19,720 - 00:25:21,580] let's see why in a minute,
+- [00:25:21,580 - 00:25:24,140] it is just minus d rho squared.
+- [00:25:24,400 - 00:25:25,920] Why is it minus d rho squared?
+- [00:25:27,960 - 00:25:30,330] The reason is because rho
+- [00:25:30,330 - 00:25:32,700] was defined to be proper distance.
+- [00:25:33,000 - 00:25:33,500] Okay.
+- [00:25:33,500 - 00:25:37,200] And s is defined to be proper distance.
+- [00:25:37,400 - 00:25:37,860] Where is it?
+- [00:25:39,060 - 00:25:44,140] We did the whole point of changing variable to rho.
+- [00:25:45,320 - 00:25:46,320] There it is.
+- [00:25:50,100 - 00:25:52,280] Let's take this definition of rho here.
+- [00:25:52,680 - 00:25:56,020] What is d rho by d r?
+- [00:25:56,340 - 00:25:59,480] d rho by d r is just
+- [00:25:59,480 - 00:26:02,620] square root of r over r minus 1.
+- [00:26:02,800 - 00:26:03,380] Okay.
+- [00:26:03,380 - 00:26:04,700] So if you differentiate an integral,
+- [00:26:04,700 - 00:26:06,280] you just get the integrand.
+- [00:26:06,780 - 00:26:08,080] Now square this.
+- [00:26:08,340 - 00:26:09,480] d rho squared,
+- [00:26:09,480 - 00:26:10,700] d r squared,
+- [00:26:10,700 - 00:26:12,700] that's just this thing here.
+- [00:26:13,360 - 00:26:15,640] And now multiply by d r squared.
+- [00:26:17,460 - 00:26:23,940] d rho squared is precisely the thing which appears here.
+- [00:26:24,040 - 00:26:27,640] That was the whole point of changing variables to rho,
+- [00:26:27,640 - 00:26:29,860] so that this term here would just
+- [00:26:29,860 - 00:26:31,000] be minus d rho squared.
+- [00:26:31,540 - 00:26:32,100] Okay.
+- [00:26:32,760 - 00:26:35,740] It just measures distance along the radial direction,
+- [00:26:35,740 - 00:26:36,900] proper distance.
+- [00:26:37,800 - 00:26:38,280] Yeah?
+- [00:26:39,360 - 00:26:42,300] When you have f of rho times rho squared,
+- [00:26:42,300 - 00:26:46,060] are you essentially just defining f to be
+- [00:26:46,060 - 00:26:48,500] such that the whole term up there looks like that?
+- [00:26:48,720 - 00:26:48,880] Yes.
+- [00:26:48,880 - 00:26:49,340] Okay.
+- [00:26:49,420 - 00:26:49,780] So far,
+- [00:26:49,780 - 00:26:50,240] yes.
+- [00:26:50,700 - 00:26:51,180] Yes.
+- [00:26:51,540 - 00:26:52,880] There is no content,
+- [00:26:52,880 - 00:26:54,890] I mean there is never going
+- [00:26:54,890 - 00:26:56,900] to be any content into this division,
+- [00:26:57,260 - 00:26:58,960] but we will find that it is a convenience.
+- [00:26:59,480 - 00:27:01,000] I think for ds,
+- [00:27:01,000 - 00:27:02,080] you want to reverse the integral.
+- [00:27:02,080 - 00:27:10,280] For ds I'm going to reverse it,
+- [00:27:10,280 - 00:27:10,280] but I mean then,
+- [00:27:10,280 - 00:27:14,340] but thinking why is it kind of mouse
+- [00:27:14,340 - 00:27:15,840] If we multiply by d 1996 that's still walnut.
+- [00:27:16,140 - 00:27:23,580] I mean I'm always using
+- [00:27:23,580 - 00:27:31,020] rosetta wave мат pri أ connector.
+- [00:27:31,020 - 00:27:31,480] For calling signs.
+- [00:27:31,480 - 00:27:32,060] delegating prefers math within the protocol.
+- [00:27:32,060 - 00:27:32,940] what it is exactly,
+- [00:27:32,940 - 00:27:36,310] but it is a function
+- [00:27:36,310 - 00:27:39,680] of rho times the omega squared.
+- [00:27:39,680 - 00:27:43,800] It is
+- [00:27:43,800 - 00:27:45,800] possible to work out what R as a
+- [00:27:45,800 - 00:27:47,800] function of rho R and what rho as a
+- [00:27:47,800 - 00:27:49,380] function of R R is,
+- [00:27:49,380 - 00:27:51,740] but we don't need to.
+- [00:27:51,740 - 00:27:55,140] It's the form of this metric just
+- [00:27:55,140 - 00:27:58,300] exactly as it is here that's interesting,
+- [00:27:58,300 - 00:28:00,020] plus a little bit of
+- [00:28:00,020 - 00:28:02,280] knowledge about what f of rho
+- [00:28:02,280 - 00:28:04,540] and R of rho are like.
+- [00:28:04,540 - 00:28:08,080] We actually worked out last
+- [00:28:08,080 - 00:28:11,720] time when you're near the horizon,
+- [00:28:11,720 - 00:28:13,540] when you're near rho,
+- [00:28:13,540 - 00:28:15,360] where is the horizon in
+- [00:28:15,360 - 00:28:15,960] this form here?
+- [00:28:15,960 - 00:28:17,980] In terms of rho,
+- [00:28:17,980 - 00:28:19,960] what is the horizon?
+- [00:28:19,960 - 00:28:24,520] Rho equals zero because what
+- [00:28:24,520 - 00:28:24,840] is rho?
+- [00:28:24,840 - 00:28:26,320] It's the distance from the horizon.
+- [00:28:26,320 - 00:28:27,440] Right,
+- [00:28:27,440 - 00:28:29,600] so rho equals zero is the
+- [00:28:29,600 - 00:28:29,920] horizon.
+- [00:28:31,240 - 00:28:33,040] And if you work this integral,
+- [00:28:33,040 - 00:28:34,580] it's not hard.
+- [00:28:34,580 - 00:28:36,280] Oh sorry,
+- [00:28:36,280 - 00:28:37,520] it's a hard integral,
+- [00:28:37,520 - 00:28:38,220] but
+- [00:28:38,220 - 00:28:40,320] if you work it out
+- [00:28:40,320 - 00:28:42,420] in the vicinity of the horizon,
+- [00:28:42,420 - 00:28:43,920] in other words near R equals
+- [00:28:43,920 - 00:28:44,280] one,
+- [00:28:44,280 - 00:28:45,660] you can do that.
+- [00:28:45,660 - 00:28:48,300] You can approximate and you find a simple formula.
+- [00:28:48,300 - 00:28:49,200] You find
+- [00:28:49,200 - 00:28:50,000] a number of things.
+- [00:28:50,000 - 00:28:53,640] First of all you find that
+- [00:28:53,640 - 00:28:57,280] the limit as rho goes to infinity,
+- [00:28:58,240 - 00:28:59,560] large or far away,
+- [00:29:00,260 - 00:29:04,400] of f of rho times rho squared.
+- [00:29:04,400 - 00:29:05,620] Now what is that?
+- [00:29:05,620 - 00:29:06,100] What is that?
+- [00:29:06,100 - 00:29:07,160] That's basically
+- [00:29:08,100 - 00:29:10,260] just the coefficient function here,
+- [00:29:10,260 - 00:29:11,520] far away.
+- [00:29:11,520 - 00:29:14,680] What is the coefficient function
+- [00:29:14,680 - 00:29:15,360] far away?
+- [00:29:15,360 - 00:29:17,740] It's R minus one over R,
+- [00:29:17,740 - 00:29:19,620] which is just one far away.
+- [00:29:19,620 - 00:29:23,700] Not quite one
+- [00:29:23,700 - 00:29:27,260] because the omega squared is not quite dt squared.
+- [00:29:27,260 - 00:29:28,960] It differs by a factor.
+- [00:29:30,020 - 00:29:31,480] What you find is that this
+- [00:29:31,480 - 00:29:32,940] is equal to the number four.
+- [00:29:32,940 - 00:29:34,920] So far away,
+- [00:29:34,920 - 00:29:36,880] f of rho times rho
+- [00:29:36,880 - 00:29:38,240] squared is just equal to four.
+- [00:29:38,240 - 00:29:46,960] That just reflects the metric far from the black hole.
+- [00:29:47,720 - 00:29:49,100] Far from the black hole,
+- [00:29:49,100 - 00:29:50,660] f of rho times rho
+- [00:29:50,660 - 00:29:52,220] squared is just equal to four.
+- [00:29:52,220 - 00:29:52,580] That's one
+- [00:29:52,580 - 00:29:52,800] thing.
+- [00:29:54,379 - 00:29:54,860] Next,
+- [00:29:54,860 - 00:29:58,620] limit as rho goes to zero.
+- [00:29:58,620 - 00:30:00,000] Rho goes to zero,
+- [00:30:00,000 - 00:30:00,000] you have to make sure that you're
+- [00:30:00,000 - 00:30:01,670] goes to zero is getting right up
+- [00:30:01,670 - 00:30:03,340] against the horizon and it's where we're really
+- [00:30:03,340 - 00:30:04,780] interested trying to find out
+- [00:30:04,780 - 00:30:06,220] what's going on at the horizon,
+- [00:30:06,220 - 00:30:10,600] f of rho is
+- [00:30:10,600 - 00:30:11,820] equal to one.
+- [00:30:11,820 - 00:30:15,310] So close to the horizon f of rho
+- [00:30:15,310 - 00:30:18,800] is just equal to one and you just
+- [00:30:18,800 - 00:30:20,360] have rho squared d Omega squared.
+- [00:30:20,360 - 00:30:22,840] You may find that familiar.
+- [00:30:22,840 - 00:30:25,680] Rho squared d Omega
+- [00:30:25,680 - 00:30:25,980] squared,
+- [00:30:25,980 - 00:30:27,340] we've seen that before.
+- [00:30:27,340 - 00:30:29,390] So close to the horizon f
+- [00:30:29,390 - 00:30:31,440] of rho is just equal to
+- [00:30:31,440 - 00:30:34,500] one and we just get rho squared d Omega squared.
+- [00:30:34,500 - 00:30:35,020] That was my,
+- [00:30:35,020 - 00:30:35,880] that was the reason
+- [00:30:35,880 - 00:30:39,120] incidentally for dividing it up in this
+- [00:30:39,120 - 00:30:42,360] way because close to the horizon f of
+- [00:30:42,360 - 00:30:44,530] rho times rho squared is equal to just
+- [00:30:44,530 - 00:30:46,700] rho squared or f just equal to one.
+- [00:30:46,700 - 00:30:48,220] Now a
+- [00:30:48,220 - 00:30:49,340] little more,
+- [00:30:49,340 - 00:30:50,160] do we know anything else?
+- [00:30:50,160 - 00:30:50,980] Yeah,
+- [00:30:50,980 - 00:30:52,220] we know that the limit
+- [00:30:56,680 - 00:31:01,320] of R of rho near rho equals zero,
+- [00:31:01,320 - 00:31:04,540] that we can work out.
+- [00:31:04,540 - 00:31:08,600] What is R of rho right at
+- [00:31:10,500 - 00:31:11,700] rho equals zero?
+- [00:31:11,700 - 00:31:16,460] Rho equals zero means at the horizons.
+- [00:31:16,460 - 00:31:18,940] R equals one,
+- [00:31:18,940 - 00:31:19,440] one,
+- [00:31:19,440 - 00:31:20,840] right.
+- [00:31:20,840 - 00:31:21,880] So
+- [00:31:22,880 - 00:31:24,270] it's equal to one but we
+- [00:31:24,270 - 00:31:25,660] can do a little bit better.
+- [00:31:25,680 - 00:31:27,060] We can do a little bit better.
+- [00:31:27,060 - 00:31:30,720] It's plus rho squared over four.
+- [00:31:30,720 - 00:31:34,760] These are really
+- [00:31:34,760 - 00:31:36,000] all we need to know.
+- [00:31:36,000 - 00:31:37,140] I'm not even sure I need
+- [00:31:37,140 - 00:31:38,280] to know this rho squared over four
+- [00:31:38,280 - 00:31:38,780] at the moment.
+- [00:31:38,780 - 00:31:39,540] I might use it,
+- [00:31:39,540 - 00:31:39,960] I don't remember.
+- [00:31:39,960 - 00:31:42,440] But this is basically the
+- [00:31:42,440 - 00:31:45,960] properties of everything here.
+- [00:31:45,960 - 00:31:49,120] Now the most important thing is to look at this
+- [00:31:49,120 - 00:31:50,340] when rho is small.
+- [00:31:50,340 - 00:31:52,820] When rho is small,
+- [00:31:52,820 - 00:31:55,020] it's just rho squared d Omega squared minus
+- [00:31:55,560 - 00:31:55,660] zero.
+- [00:31:55,680 - 00:32:03,840] That's exactly flat space in hyperbolic polar coordinates.
+- [00:32:03,840 - 00:32:08,400] So let's just review for a minute
+- [00:32:09,040 - 00:32:10,420] hyperbolic polar coordinates.
+- [00:32:26,100 - 00:32:29,240] That's the light cone of flat space.
+- [00:32:29,240 - 00:32:38,980] Okay and rho squared d Omega squared.
+- [00:32:38,980 - 00:32:39,780] No,
+- [00:32:39,780 - 00:32:40,340] not that Omega,
+- [00:32:40,340 - 00:32:40,900] little Omega.
+- [00:32:53,980 - 00:32:55,260] That's the light cone of flat space.
+- [00:32:55,260 - 00:32:55,260] Okay and rho squared d Omega squared.
+- [00:32:55,260 - 00:32:55,260] No,
+- [00:32:55,260 - 00:32:55,260] not that Omega,
+- [00:32:55,260 - 00:32:55,260] little Omega.
+- [00:32:56,080 - 00:32:58,180] Those are the hyperbolic coordinates,
+- [00:32:58,180 - 00:33:00,160] hyperbolic polar coordinates,
+- [00:33:00,160 - 00:33:06,980] where rho is constant along hyperboloids.
+- [00:33:08,460 - 00:33:10,200] This could be rho equals 1.
+- [00:33:11,100 - 00:33:11,940] This could be rho,
+- [00:33:11,940 - 00:33:12,120] this,
+- [00:33:12,120 - 00:33:12,860] in other words,
+- [00:33:12,860 - 00:33:15,160] all along this trajectory here,
+- [00:33:15,160 - 00:33:18,460] this point is one unit
+- [00:33:18,460 - 00:33:21,760] of rho away from the horizon.
+- [00:33:22,040 - 00:33:23,380] The horizon is right at the center,
+- [00:33:23,380 - 00:33:24,580] rho equals 0.
+- [00:33:25,680 - 00:33:26,880] This is rho equals 2,
+- [00:33:26,880 - 00:33:28,720] rho equals 3,
+- [00:33:28,720 - 00:33:30,720] rho equals 4,
+- [00:33:30,720 - 00:33:31,420] and so forth.
+- [00:33:31,720 - 00:33:34,680] And that's just looking at this metric here
+- [00:33:34,680 - 00:33:37,640] and noticing that apart from this f of rho,
+- [00:33:37,640 - 00:33:39,060] near the horizon,
+- [00:33:39,400 - 00:33:41,480] it just has the form
+- [00:33:41,480 - 00:33:43,560] of flat space in polar coordinates,
+- [00:33:43,560 - 00:33:45,840] hyperbolic polar coordinates.
+- [00:33:46,800 - 00:33:47,380] Omega,
+- [00:33:47,380 - 00:33:49,040] lines of constant omega,
+- [00:33:49,040 - 00:33:52,920] they look like this.
+- [00:33:55,980 - 00:33:57,260] Omega equals 0,
+- [00:33:57,260 - 00:33:59,440] omega equals 1,
+- [00:33:59,440 - 00:34:00,140] for example,
+- [00:34:00,140 - 00:34:02,140] omega equals 2,
+- [00:34:02,140 - 00:34:04,380] omega equals 3.
+- [00:34:07,080 - 00:34:09,100] Where is omega equals infinity?
+- [00:34:09,639 - 00:34:14,420] Omega equals infinity is right along this light cone here.
+- [00:34:14,960 - 00:34:16,360] Omega equals infinity.
+- [00:34:18,340 - 00:34:19,820] Remember what omega is.
+- [00:34:19,960 - 00:34:21,560] Omega is just t over 2.
+- [00:34:21,980 - 00:34:24,719] So we've discovered some coordinates.
+- [00:34:29,699 - 00:34:35,699] Ob atraria will be light again in this case.
+- [00:34:35,699 - 00:34:40,320] Here's a nice illustration of the absorb anxiety first.
+- [00:34:40,320 - 00:34:40,360] These images form a gotten scan
+- [00:34:40,360 - 00:34:40,400] window into theorama where Auga vision vision
+- [00:34:40,400 - 00:34:40,929] The system will star skinned as T become better
+- [00:34:40,929 - 00:34:41,460] as It exposes everything that has countépment around the sphere.
+- [00:34:41,460 - 00:34:54,900] ang like a hyperbolic angle.
+- [00:34:54,900 - 00:34:57,460] in here is the place that's
+- [00:34:57,460 - 00:35:00,020] where r is less than 1.
+- [00:35:00,020 - 00:35:02,660] When r is less than 1,
+- [00:35:02,740 - 00:35:04,420] in here r is less than 1,
+- [00:35:04,420 - 00:35:07,440] and when r is less than 1,
+- [00:35:07,440 - 00:35:10,280] the sign of these two terms
+- [00:35:10,280 - 00:35:11,220] interchanges.
+- [00:35:11,220 - 00:35:14,220] This one becomes negative,
+- [00:35:14,220 - 00:35:15,720] this one becomes positive.
+- [00:35:15,720 - 00:35:19,000] In here,
+- [00:35:19,000 - 00:35:19,660] rho
+- [00:35:19,660 - 00:35:21,420] squared is actually negative,
+- [00:35:21,420 - 00:35:22,780] less than 0.
+- [00:35:22,780 - 00:35:23,200] In here,
+- [00:35:23,200 - 00:35:24,820] rho squared is less than 0.
+- [00:35:28,140 - 00:35:28,740] Let's see,
+- [00:35:28,740 - 00:35:29,320] can we see that?
+- [00:35:29,320 - 00:35:29,620] Yeah.
+- [00:35:29,620 - 00:35:31,940] Yeah.
+- [00:35:31,940 - 00:35:34,300] When rho squared is positive,
+- [00:35:34,300 - 00:35:35,420] r is
+- [00:35:35,420 - 00:35:36,260] greater than 1.
+- [00:35:36,260 - 00:35:38,240] That means outside the horizon.
+- [00:35:38,240 - 00:35:40,360] When rho squared is negative,
+- [00:35:40,360 - 00:35:40,900] to
+- [00:35:40,900 - 00:35:42,000] get behind the horizon,
+- [00:35:42,000 - 00:35:44,440] you want r to be less than 1,
+- [00:35:44,440 - 00:35:46,040] and that's rho squared
+- [00:35:46,040 - 00:35:46,520] equal negative.
+- [00:35:46,520 - 00:35:48,240] Okay,
+- [00:35:48,240 - 00:35:51,540] so behind the horizon is in here,
+- [00:35:51,540 - 00:35:52,720] rho squared negative,
+- [00:35:53,780 - 00:35:54,340] and
+- [00:35:54,820 - 00:35:59,360] the lines of constant rho in here look like that.
+- [00:35:59,360 - 00:36:04,340] The lines of constant
+- [00:36:04,960 - 00:36:05,420] omega,
+- [00:36:05,420 - 00:36:08,780] they're still angles,
+- [00:36:08,780 - 00:36:10,400] they look like this.
+- [00:36:10,400 - 00:36:14,200] Nothing crazy is going on here.
+- [00:36:14,300 - 00:36:15,760] Space has not become time,
+- [00:36:15,760 - 00:36:17,120] time has not become space.
+- [00:36:17,120 - 00:36:19,220] We've just introduced
+- [00:36:19,220 - 00:36:21,130] coordinates which have a funny property that
+- [00:36:21,130 - 00:36:23,040] when you go from here to here,
+- [00:36:25,400 - 00:36:28,900] what was space-like out here becomes time-like in here.
+- [00:36:28,900 - 00:36:29,620] It's a complete
+- [00:36:29,620 - 00:36:31,960] coordinate artifact.
+- [00:36:31,960 - 00:36:36,660] And yet there's something interesting about it.
+- [00:36:36,660 - 00:36:40,580] If we go
+- [00:36:40,580 - 00:36:41,140] far away,
+- [00:36:41,140 - 00:36:43,680] if we go far away,
+- [00:36:43,680 - 00:36:45,110] we have to remember that f
+- [00:36:45,110 - 00:36:46,540] of rho is not just 1.
+- [00:36:48,260 - 00:36:50,300] f of rho is not just 1,
+- [00:36:50,300 - 00:36:54,760] and so that means the metric along this omega direction,
+- [00:36:54,820 - 00:36:55,140] here,
+- [00:36:55,140 - 00:36:56,500] that's what this is,
+- [00:36:56,500 - 00:36:57,920] f of rho times rho squared,
+- [00:36:57,920 - 00:37:00,480] it does differ from flat
+- [00:37:00,480 - 00:37:00,840] space.
+- [00:37:00,840 - 00:37:02,400] It does differ from flat space,
+- [00:37:02,400 - 00:37:05,500] but the differences show up in the way f
+- [00:37:05,500 - 00:37:06,860] of rho varies as you
+- [00:37:06,860 - 00:37:08,220] move away from the black hole,
+- [00:37:08,220 - 00:37:10,480] and the way this thing varies.
+- [00:37:11,300 - 00:37:12,620] Close to the black hole,
+- [00:37:12,620 - 00:37:12,880] though,
+- [00:37:12,880 - 00:37:15,560] this is what the geometry looks like.
+- [00:37:15,560 - 00:37:17,160] Now,
+- [00:37:17,160 - 00:37:20,060] this was
+- [00:37:21,240 - 00:37:22,420] rho equals 0,
+- [00:37:22,420 - 00:37:26,140] but r equals 1.
+- [00:37:26,140 - 00:37:30,780] What happens as we move up
+- [00:37:30,780 - 00:37:35,420] into here is that r decreases.
+- [00:37:35,920 - 00:37:38,260] rho squared is negative in that region,
+- [00:37:38,260 - 00:37:40,300] so as we move into this region,
+- [00:37:40,480 - 00:37:42,440] r gets smaller and smaller.
+- [00:37:42,440 - 00:37:47,260] We get one plus a negative quantity.
+- [00:37:48,640 - 00:37:50,940] And as that negative quantity increases,
+- [00:37:50,940 - 00:37:52,400] r gets smaller and smaller.
+- [00:37:52,420 - 00:37:52,980] smaller and smaller.
+- [00:37:52,980 - 00:37:55,800] Eventually we hit the point,
+- [00:37:55,800 - 00:37:59,260] the nasty point where r is equal to zero.
+- [00:38:00,960 - 00:38:02,500] That is a nasty point.
+- [00:38:02,500 - 00:38:06,240] That is not just a coordinate glitch.
+- [00:38:06,880 - 00:38:08,100] r equals zero
+- [00:38:12,800 - 00:38:14,300] is over here.
+- [00:38:21,740 - 00:38:23,980] It's a hyperboloid in these coordinates.
+- [00:38:27,760 - 00:38:28,700] And if you would,
+- [00:38:28,700 - 00:38:30,540] if we were to calculate the curvature,
+- [00:38:30,540 - 00:38:32,480] if we were to calculate the curvature,
+- [00:38:34,140 - 00:38:37,200] it's not too hard to believe what's happening here.
+- [00:38:37,200 - 00:38:39,320] As r goes to zero,
+- [00:38:42,160 - 00:38:44,080] the sphere is getting
+- [00:38:44,300 - 00:38:45,780] smaller and smaller and smaller.
+- [00:38:45,780 - 00:38:48,760] Curvature is getting larger and larger.
+- [00:38:49,160 - 00:38:51,020] As we move toward this point here,
+- [00:38:51,020 - 00:38:54,180] the curvature becomes bigger and bigger and in fact becomes
+- [00:38:54,180 - 00:38:56,440] infinite on the green line here.
+- [00:38:56,440 - 00:38:58,900] This is a true singularity.
+- [00:38:58,900 - 00:39:00,860] It's a place of infinite tidal forces
+- [00:39:01,820 - 00:39:03,090] and now it's basically a
+- [00:39:03,090 - 00:39:04,360] place you wouldn't want to be.
+- [00:39:04,360 - 00:39:08,300] The problem with it is you can't avoid it.
+- [00:39:09,060 - 00:39:10,500] It's not really a place,
+- [00:39:10,500 - 00:39:11,900] as we discussed last time.
+- [00:39:11,900 - 00:39:12,940] It's not really a place.
+- [00:39:13,420 - 00:39:14,280] It's really in a certain order.
+- [00:39:14,280 - 00:39:14,280] It's going to be an infinite order over here,
+- [00:39:14,280 - 00:39:14,280] and that's where r gets to.
+- [00:39:14,280 - 00:39:15,040] sense of time.
+- [00:39:15,040 - 00:39:18,840] So imagine yourself,
+- [00:39:18,840 - 00:39:21,080] imagine finding yourself over here
+- [00:39:21,080 - 00:39:21,520] somehow.
+- [00:39:21,520 - 00:39:25,600] Let's not go there yet.
+- [00:39:25,600 - 00:39:28,940] Here's the black hole.
+- [00:39:28,940 - 00:39:31,620] Here's an orbiting space
+- [00:39:31,620 - 00:39:33,080] station far away.
+- [00:39:33,080 - 00:39:34,040] Where is that?
+- [00:39:34,040 - 00:39:35,220] That's very far away,
+- [00:39:35,220 - 00:39:35,800] it's out here.
+- [00:39:35,800 - 00:39:38,840] It's out
+- [00:39:38,840 - 00:39:39,100] here,
+- [00:39:39,100 - 00:39:41,060] it's at the r equals a hundred thousand,
+- [00:39:41,060 - 00:39:42,400] a hundred or a million,
+- [00:39:42,400 - 00:39:43,460] that's
+- [00:39:43,460 - 00:39:45,380] way way out here and as
+- [00:39:45,380 - 00:39:47,300] long as you don't do anything stupid,
+- [00:39:47,300 - 00:39:48,780] namely jump off
+- [00:39:48,780 - 00:39:48,940] the,
+- [00:39:48,940 - 00:39:53,100] or allow yourself to get sucked in by
+- [00:39:53,100 - 00:39:53,520] gravity,
+- [00:39:53,520 - 00:39:55,380] you're safe enough out here.
+- [00:39:55,380 - 00:39:57,160] Nothing bad will happen to you,
+- [00:39:57,160 - 00:39:58,640] but if
+- [00:39:58,640 - 00:40:00,850] you're foolish enough to go and say
+- [00:40:00,850 - 00:40:03,060] I want to explore what's in here,
+- [00:40:03,060 - 00:40:04,240] long in
+- [00:40:04,240 - 00:40:06,030] the past jump off the
+- [00:40:06,030 - 00:40:07,820] space station and fly in here,
+- [00:40:07,820 - 00:40:08,360] you might find
+- [00:40:08,360 - 00:40:09,020] yourself in there.
+- [00:40:09,020 - 00:40:11,020] If you find yourself in there,
+- [00:40:11,020 - 00:40:11,380] you're cooked,
+- [00:40:11,380 - 00:40:12,460] there's no way out,
+- [00:40:12,500 - 00:40:13,440] you can't get out and then you go in.
+- [00:40:13,460 - 00:40:17,020] you've passed a point where in order to
+- [00:40:17,020 - 00:40:20,580] get out you have to exceed the speed of
+- [00:40:20,580 - 00:40:24,150] light the speed of light corresponds to
+- [00:40:24,150 - 00:40:27,720] 45 degree lines in this diagram or light
+- [00:40:27,720 - 00:40:31,430] cones light cones are 45 degree cones and
+- [00:40:31,430 - 00:40:35,140] so the best you can do in trying to
+- [00:40:35,140 - 00:40:39,080] escape is this dotted line here no
+- [00:40:39,080 - 00:40:43,020] matter what you do and so inevitably
+- [00:40:43,020 - 00:40:45,780] you're going to hit the singularity once
+- [00:40:45,780 - 00:40:48,540] you're behind there there's no choice no
+- [00:40:49,060 - 00:40:51,270] matter how hard you try to accelerate
+- [00:40:51,270 - 00:40:53,480] from here unless you can exceed the
+- [00:40:53,480 - 00:40:55,890] speed of light which I assume you
+- [00:40:55,890 - 00:40:58,300] cannot you're going to wind up hitting the
+- [00:40:58,300 - 00:41:01,240] singularity and so you're stuck where is the
+- [00:41:01,240 - 00:41:04,180] point of no return the point of no
+- [00:41:04,180 - 00:41:05,120] return is right here
+- [00:41:05,140 - 00:41:09,280] right over here that distance that that
+- [00:41:09,280 - 00:41:13,420] light cone what is that light cone well
+- [00:41:13,420 - 00:41:17,300] each one of these hyperboloids is a
+- [00:41:17,300 - 00:41:21,180] different value of Rho Rho equals 4
+- [00:41:21,180 - 00:41:22,820] Rho equals 3 Rho equals 2 Rho equals
+- [00:41:22,820 - 00:41:24,460] 1 what is this one what is this point
+- [00:41:24,460 - 00:41:28,890] right over here Rho equals 0 right but
+- [00:41:28,890 - 00:41:33,320] Rho is equal to 0 all along well just
+- [00:41:33,320 - 00:41:34,740] imagine a hyperboloid
+- [00:41:34,740 - 00:41:35,100] V
+- [00:41:35,140 - 00:41:39,780] very very close to here essentially all
+- [00:41:39,780 - 00:41:44,420] along this line here and this line Rho
+- [00:41:44,420 - 00:41:49,200] is equal to 0 Rho equals let's say
+- [00:41:49,200 - 00:41:53,980] Rho equals epsilon Rho equals a tiny tiny
+- [00:41:53,980 - 00:41:56,570] number Rho equals a tiny number is
+- [00:41:56,570 - 00:41:59,160] a hyperboloid very very close to here
+- [00:41:59,920 - 00:42:01,770] there's something very different about
+- [00:42:01,770 - 00:42:03,620] this kind of geometry than ordinary
+- [00:42:03,620 - 00:42:04,160] geometry
+- [00:42:04,160 - 00:42:07,740] if I drew ordinary geometry and I said
+- [00:42:07,740 - 00:42:11,320] where is the point R equals 0 well we
+- [00:42:11,320 - 00:42:13,610] know where that is that's right over
+- [00:42:13,610 - 00:42:15,900] here right where is the point R equals
+- [00:42:15,900 - 00:42:18,650] some tiny number well it's not a
+- [00:42:18,650 - 00:42:21,400] point it's a tiny little circle but that
+- [00:42:21,400 - 00:42:23,390] circle gets closer and closer to the
+- [00:42:23,390 - 00:42:25,380] center as I make the distance smaller
+- [00:42:25,380 - 00:42:29,760] and smaller quite different than here
+- [00:42:29,760 - 00:42:34,140] where is Rho equals something like this
+- [00:42:34,140 - 00:42:36,960] something tiny it's this whole hyperboloid
+- [00:42:36,960 - 00:42:39,780] here as Rho gets smaller and
+- [00:42:39,780 - 00:42:44,070] smaller it tends to the light cone here
+- [00:42:44,070 - 00:42:48,360] not to not just to this point the
+- [00:42:48,360 - 00:42:52,860] meaning of that and what was Rho equals
+- [00:42:52,860 - 00:42:57,360] 0 Rho equals 0 was the horizon so the
+- [00:42:57,360 - 00:43:00,620] horizon is not just this point at
+- [00:43:00,620 - 00:43:03,880] the center the horizon is all along this
+- [00:43:03,880 - 00:43:07,610] line here anybody who finds himself
+- [00:43:07,610 - 00:43:11,340] beyond this point is inside the black
+- [00:43:11,340 - 00:43:14,560] hole is it less than R less than
+- [00:43:14,560 - 00:43:17,780] 1 inside the interior of the horizon and as
+- [00:43:17,780 - 00:43:19,600] you can see just looking at the
+- [00:43:19,600 - 00:43:21,420] diagram they're doomed they can't get out
+- [00:43:21,420 - 00:43:24,350] they're going to hit the singularity so
+- [00:43:24,350 - 00:43:27,280] the point of no return is indeed Rho
+- [00:43:27,280 - 00:43:29,600] equals 0 but it's not this point it's
+- [00:43:29,600 - 00:43:31,920] this whole line this whole thing is the
+- [00:43:31,920 - 00:43:33,140] horizon of the black hole
+- [00:43:34,820 - 00:43:37,350] and once you pass it you've passed
+- [00:43:37,350 - 00:43:39,880] the point of no return and you're doomed
+- [00:43:50,120 - 00:43:56,600] any questions now don't don't don't tell my wife
+- [00:43:59,560 - 00:44:00,700] I hope she's not mad
+- [00:44:00,700 - 00:44:03,860] I hope she's not mad
+- [00:44:03,880 - 00:44:04,400] I hope she's not mad
+- [00:44:06,520 - 00:44:08,460] How many calories are in that?
+- [00:44:08,940 - 00:44:10,240] I'm gonna ask
+- [00:44:10,240 - 00:44:12,020] This is last week
+- [00:44:12,590 - 00:44:16,535] These sort of I guess horizontally oriented like
+- [00:44:16,535 - 00:44:20,480] bowls hyperbolas are those still constant Rho words?
+- [00:44:20,720 - 00:44:23,470] yes they are right but they're
+- [00:44:23,470 - 00:44:26,220] places where Rho squared is negative they're
+- [00:44:26,220 - 00:44:28,520] imaginary values of Rho if you like
+- [00:44:28,520 - 00:44:30,820] they're places where R is less than one
+- [00:44:32,000 - 00:44:33,820] Rho and R are
+- [00:44:33,820 - 00:44:36,140] functionally connected if you know R you know Rho,
+- [00:44:36,140 - 00:44:37,280] if you know Rho you know R
+- [00:44:38,320 - 00:44:42,060] okay so these are also lines of
+- [00:44:42,060 - 00:44:45,800] constant R but there are the real they're
+- [00:44:45,800 - 00:44:50,090] perfectly good values of R but they're less
+- [00:44:50,090 - 00:44:54,380] than one and the red lines are lines
+- [00:44:54,380 - 00:44:59,060] of constant T they don't look like
+- [00:44:59,060 - 00:45:03,740] it but they are okay okay these coordinates
+- [00:45:03,740 - 00:45:06,260] the coordinates that I've constructed over
+- [00:45:06,260 - 00:45:08,780] here have a name they're called
+- [00:45:08,780 - 00:45:11,200] Kruskal coordinates I'll tell you the
+- [00:45:11,200 - 00:45:13,620] history last you know maybe I should
+- [00:45:14,200 - 00:45:16,750] spend five minutes telling you the
+- [00:45:16,750 - 00:45:19,300] history of black hole physics when
+- [00:45:19,300 - 00:45:21,810] Schwarzschild wrote down the Schwarzschild
+- [00:45:21,810 - 00:45:24,320] metric he didn't know that
+- [00:45:24,320 - 00:45:24,340] that was the black hole physics that
+- [00:45:24,340 - 00:45:24,360] was the black hole physics that was the
+- [00:45:24,360 - 00:45:27,340] horizon was a horizon as far as
+- [00:45:27,340 - 00:45:30,320] he could tell in Einstein and all the
+- [00:45:30,320 - 00:45:34,100] people who studied these things for a
+- [00:45:34,100 - 00:45:37,880] while the R equals one was a nasty
+- [00:45:37,880 - 00:45:40,320] singular place they looked at this function
+- [00:45:40,320 - 00:45:42,760] and they said oh dear this is
+- [00:45:42,760 - 00:45:45,210] divergent that R equals one something
+- [00:45:45,210 - 00:45:47,660] bad is happening there and so the
+- [00:45:47,660 - 00:45:51,520] conclusion was that the horizon was a bad place
+- [00:45:54,620 - 00:45:58,480] it took the vertical axis of your
+- [00:45:58,480 - 00:46:02,340] diagram what's the vertical axis is that
+- [00:46:02,340 - 00:46:05,910] is that time or is that it is a
+- [00:46:05,910 - 00:46:09,480] time variable but it's not the same time that
+- [00:46:09,480 - 00:46:11,880] occurs up in there the time that occurs
+- [00:46:11,880 - 00:46:14,280] up there is the one which evolves along
+- [00:46:14,280 - 00:46:17,890] here so whose reference frame
+- [00:46:17,890 - 00:46:21,500] does this these axes correspond to?
+- [00:46:23,200 - 00:46:26,750] it's a reference frame of a in
+- [00:46:26,750 - 00:46:30,300] falling observer as opposed to somebody who
+- [00:46:30,300 - 00:46:32,720] stays outside the black hole somebody
+- [00:46:32,720 - 00:46:35,140] who stays outside the black hole lives
+- [00:46:35,140 - 00:46:38,460] on one of these hyperboloids somebody
+- [00:46:38,460 - 00:46:41,780] falling in for example might find it
+- [00:46:41,780 - 00:46:44,690] convenient to use you know rectangular
+- [00:46:44,690 - 00:46:47,600] coordinates in here right so that's a
+- [00:46:47,600 - 00:46:48,840] good question but
+- [00:46:51,520 - 00:46:55,150] so as I said the the history was
+- [00:46:55,150 - 00:46:58,780] the first people did not realize that that
+- [00:46:58,780 - 00:47:02,750] the horizon was a smooth non singular
+- [00:47:02,750 - 00:47:06,720] ordinary place it was sometime in 1950s
+- [00:47:06,720 - 00:47:10,540] that friend of mine David
+- [00:47:10,540 - 00:47:14,360] Finkelstein wrote down what were essentially
+- [00:47:14,360 - 00:47:16,480] coordinates of this type not
+- [00:47:16,480 - 00:47:18,600] exactly these coordinates but coordinates of
+- [00:47:18,600 - 00:47:20,050] these type and realized that the
+- [00:47:20,050 - 00:47:21,500] horizon was a smooth non-singular ordinary place
+- [00:47:21,500 - 00:47:24,310] and was a point of no return
+- [00:47:24,310 - 00:47:27,120] and not itself a significantly dangerous place
+- [00:47:27,120 - 00:47:29,750] the coordinates that he used he invented
+- [00:47:29,750 - 00:47:32,380] himself but they were they had been
+- [00:47:32,380 - 00:47:34,300] previously invented by Eddington by
+- [00:47:34,300 - 00:47:36,220] Arthur Eddington and they're known as
+- [00:47:36,220 - 00:47:38,100] Finkelstein or any Eddington Finkelstein
+- [00:47:38,100 - 00:47:39,980] coordinates they're not exactly these
+- [00:47:41,360 - 00:47:44,840] somewhat later a few years later a
+- [00:47:44,840 - 00:47:48,320] gentleman by the name of Kruskal who was
+- [00:47:48,320 - 00:47:49,900] not a relativity expert at all he was a
+- [00:47:49,900 - 00:47:51,480] placerist and he was a scientist and he was a
+- [00:47:51,500 - 00:47:53,170] plasma physicist but very good at
+- [00:47:53,170 - 00:47:54,840] equations and very good at changing
+- [00:47:54,840 - 00:47:57,350] coordinates this was his thing he
+- [00:47:57,350 - 00:47:59,860] loved to change coordinates so somebody
+- [00:47:59,860 - 00:48:01,400] showed him this thing he changed
+- [00:48:01,400 - 00:48:02,940] the coordinates and changed the coordinates
+- [00:48:02,940 - 00:48:06,290] and eventually found these coordinates
+- [00:48:06,290 - 00:48:09,640] that that I've indicated where the
+- [00:48:09,640 - 00:48:12,830] metric has this nice form and where
+- [00:48:12,830 - 00:48:16,020] the picture looks exactly like this these
+- [00:48:16,020 - 00:48:17,340] are called Kruskal coordinates
+- [00:48:18,880 - 00:48:19,520] Kruskal
+- [00:48:28,060 - 00:48:28,580] coordinates
+- [00:48:28,580 - 00:48:32,280] the term for this object was I think
+- [00:48:32,280 - 00:48:35,980] I don't know what it was called just a
+- [00:48:35,980 - 00:48:39,940] massive star a collapsed star I think it
+- [00:48:39,940 - 00:48:43,900] was called a collapsed star it was John
+- [00:48:43,900 - 00:48:47,110] Wheeler who called it first the black hole
+- [00:48:47,110 - 00:48:50,320] John Wheeler was a very nice man he
+- [00:48:50,320 - 00:48:50,900] was a very sweet man he was a
+- [00:48:50,900 - 00:48:51,480] very good journalist a very good professor in how
+- [00:48:51,500 - 00:48:54,440] good friend of mine too he had a kind
+- [00:48:54,440 - 00:48:57,380] of side to him which I didn't approve of he
+- [00:48:57,380 - 00:49:01,260] had a politically very conservative
+- [00:49:01,260 - 00:49:05,140] side his political kind of
+- [00:49:05,140 - 00:49:07,660] conservativeness incidentally did not extend
+- [00:49:07,660 - 00:49:10,180] to social issues his political
+- [00:49:10,180 - 00:49:12,530] conservativeness had to do with one thing
+- [00:49:12,530 - 00:49:14,880] and only one thing only he was
+- [00:49:14,880 - 00:49:17,560] afraid of the Soviet Union having
+- [00:49:17,560 - 00:49:20,240] nuclear weapons so he was very anti
+- [00:49:20,240 - 00:49:23,590] Soviet Union and especially anti-soviet expansionism
+- [00:49:23,590 - 00:49:26,940] and so he had this very
+- [00:49:26,940 - 00:49:29,280] strong politically conservative side to him and
+- [00:49:29,280 - 00:49:31,620] we would argue about it but not
+- [00:49:31,919 - 00:49:34,659] so much me but some of my friends and
+- [00:49:34,659 - 00:49:37,400] he but he was a very thoughtful and gentle
+- [00:49:37,400 - 00:49:41,780] and nice person did not have a
+- [00:49:41,780 - 00:49:46,160] socially conservative side to him in fact I
+- [00:49:46,160 - 00:49:48,760] remember once we were sitting in a cafe in
+- [00:49:49,620 - 00:49:50,180] Valpo
+- [00:49:50,240 - 00:49:54,500] Izo Chile and John he was about 85
+- [00:49:54,500 - 00:49:58,760] years old my wife him and and he was
+- [00:49:58,760 - 00:50:01,070] sitting around and he started to look
+- [00:50:01,070 - 00:50:03,380] very agitated and I said what's my job
+- [00:50:03,380 - 00:50:05,090] don't you feel well and he said no he
+- [00:50:05,090 - 00:50:06,800] wants to get up and take a walk I said
+- [00:50:06,800 - 00:50:08,800] well okay you want me to take a walk
+- [00:50:08,800 - 00:50:10,800] no no I'm gonna take a walk myself and I
+- [00:50:10,800 - 00:50:13,490] said what do you do John they said I
+- [00:50:13,490 - 00:50:16,180] want to check out the bikinis so he was
+- [00:50:16,180 - 00:50:18,860] not a social and social conservative and in fact
+- [00:50:20,240 - 00:50:20,300] an activist that was but a eigenlijk
+- [00:50:20,300 - 00:50:20,360] that to go out no because which being
+- [00:50:20,360 - 00:50:22,580] andigo at that time in fact maybe配笑
+- [00:50:38,060 - 00:50:39,000] actually
+- [00:50:39,000 - 00:50:39,940] but
+- [00:50:39,940 - 00:50:44,244] nevertheless I could not quite but said
+- [00:50:44,244 - 00:50:48,549] no there was no such thing for �
+- [00:50:48,900 - 00:50:49,560] shutdown belonged by some and even one precaution
+- [00:50:49,560 - 00:50:50,220] typically where the world veterans we resumed his studies
+- [00:50:50,220 - 00:50:52,070] self but no they were hyper conservative
+- [00:50:52,070 - 00:50:53,920] they thought that the term black hole
+- [00:50:53,920 - 00:50:56,650] was obscene and so they refused to
+- [00:50:56,650 - 00:50:59,380] publish it at first he fought and he
+- [00:50:59,380 - 00:51:01,320] fought and he fought with them eventually
+- [00:51:01,320 - 00:51:03,260] won but then just to get back
+- [00:51:03,260 - 00:51:06,650] with it at them his next paper was
+- [00:51:06,650 - 00:51:10,040] called black holes have no hair and it
+- [00:51:11,480 - 00:51:13,370] was already too late incidentally what what
+- [00:51:13,370 - 00:51:15,260] it means for black holes not to
+- [00:51:15,260 - 00:51:17,450] have any hair I'll tell you what
+- [00:51:17,450 - 00:51:19,640] it means if you take a non-rotating black
+- [00:51:19,640 - 00:51:22,620] hole gravity is so strong there will
+- [00:51:22,620 - 00:51:25,600] always pull it together so strong that
+- [00:51:25,600 - 00:51:28,160] eventually after a very small amount of
+- [00:51:28,160 - 00:51:30,720] time the horizon even if it starts out
+- [00:51:30,720 - 00:51:34,120] being spherically very asymmetric could
+- [00:51:34,120 - 00:51:37,520] be two rocks coming together very
+- [00:51:37,520 - 00:51:40,730] unsymmetric might start out looking like that
+- [00:51:40,730 - 00:51:43,940] in a very small amount of time it
+- [00:51:43,940 - 00:51:46,730] will pull itself into a
+- [00:51:46,730 - 00:51:49,520] sphere and become indistinguishable from
+- [00:51:49,520 - 00:51:53,030] a sphere and John called that property
+- [00:51:53,030 - 00:51:56,540] the property of not having any any
+- [00:51:58,040 - 00:52:00,790] visible structure or any visible defects on
+- [00:52:00,790 - 00:52:03,540] it he called that not having hair so
+- [00:52:03,540 - 00:52:05,010] the statement that black holes have no
+- [00:52:05,010 - 00:52:06,480] hair is just a statement that gravity is
+- [00:52:06,480 - 00:52:09,250] so strong that it will pull any
+- [00:52:09,250 - 00:52:12,020] black hole the horizon of it into
+- [00:52:12,020 - 00:52:15,280] a perfect sphere if it's rotating then
+- [00:52:15,280 - 00:52:18,540] the sphere can get deformed can get into
+- [00:52:18,540 - 00:52:19,820] into an oblate spheroid,
+- [00:52:19,820 - 00:52:23,210] but the nature of the oblate
+- [00:52:23,210 - 00:52:26,600] spheroid depends only on the angular momentum.
+- [00:52:27,060 - 00:52:30,320] So black holes have no hair.
+- [00:52:32,260 - 00:52:32,860] Okay,
+- [00:52:32,860 - 00:52:33,420] um,
+- [00:52:33,420 - 00:52:34,080] question?
+- [00:52:34,380 - 00:52:34,540] Yeah.
+- [00:52:35,060 - 00:52:35,660] Um,
+- [00:52:35,660 - 00:52:39,820] we have rho squared equaling a negative five.
+- [00:52:40,840 - 00:52:43,940] How come we don't see I's,
+- [00:52:43,940 - 00:52:45,780] imaginary number of things going on?
+- [00:52:45,780 - 00:52:45,800] No,
+- [00:52:45,800 - 00:52:46,600] you can put them in if you want.
+- [00:52:46,600 - 00:52:47,940] You can say if rho squared is negative,
+- [00:52:47,940 - 00:52:48,900] then rho is imaginary.
+- [00:52:49,200 - 00:52:49,560] Okay,
+- [00:52:49,560 - 00:52:51,960] but it doesn't seem to come up as a...
+- [00:52:51,960 - 00:52:52,180] No,
+- [00:52:52,180 - 00:52:52,400] no,
+- [00:52:52,400 - 00:52:54,880] it's because normally you tend to use r.
+- [00:52:55,460 - 00:52:56,760] And r is rho squared.
+- [00:52:56,760 - 00:52:58,980] Or r minus one is rho squared.
+- [00:52:58,980 - 00:53:00,140] Or one minus r,
+- [00:53:00,140 - 00:53:00,880] one of the two of them.
+- [00:53:03,620 - 00:53:03,980] Okay.
+- [00:53:03,980 - 00:53:04,340] Now,
+- [00:53:04,340 - 00:53:05,520] let's talk about,
+- [00:53:05,520 - 00:53:05,780] um,
+- [00:53:05,780 - 00:53:07,720] things falling into a black hole.
+- [00:53:14,400 - 00:53:15,080] A thing falling into a
+- [00:53:15,080 - 00:53:15,760] black hole is a black hole.
+- [00:53:15,780 - 00:53:16,600] Incidentally,
+- [00:53:16,600 - 00:53:18,060] you might ask,
+- [00:53:18,060 - 00:53:20,340] what about the other half of this diagram down here?
+- [00:53:20,940 - 00:53:23,240] We're going to see that the other half
+- [00:53:23,240 - 00:53:25,540] of it down here has no real physical significance.
+- [00:53:25,780 - 00:53:26,800] We're going to come to it.
+- [00:53:27,220 - 00:53:27,880] For the moment,
+- [00:53:27,880 - 00:53:31,120] we're mainly interested in this upper right-hand part.
+- [00:53:31,760 - 00:53:34,080] Where is the exterior of the black hole?
+- [00:53:34,200 - 00:53:36,120] The exterior of the black hole is out here.
+- [00:53:36,260 - 00:53:38,520] The interior of the horizon is in here.
+- [00:53:40,180 - 00:53:40,660] Okay,
+- [00:53:40,660 - 00:53:41,000] um,
+- [00:53:41,000 - 00:53:44,240] so let's redraw our picture.
+- [00:53:44,600 - 00:53:45,080] Okay.
+- [00:53:45,980 - 00:53:48,180] And let's talk about somebody falling in.
+- [00:53:49,080 - 00:53:50,260] Falling in is Alice.
+- [00:53:52,780 - 00:53:53,980] Alice falls in,
+- [00:53:53,980 - 00:53:58,660] and let's redraw some lines on here.
+- [00:53:58,880 - 00:54:00,000] She falls in.
+- [00:54:00,000 - 00:54:02,480] Those are lines of constant r.
+- [00:54:02,780 - 00:54:04,280] But I'm more interested right
+- [00:54:04,280 - 00:54:05,780] now in lines of constant time.
+- [00:54:06,700 - 00:54:08,620] So here's the lines of constant time.
+- [00:54:20,560 - 00:54:23,600] And this one over here is t equals infinity.
+- [00:54:24,000 - 00:54:24,880] In other words,
+- [00:54:24,880 - 00:54:27,020] the horizon is t equals infinity.
+- [00:54:27,300 - 00:54:28,000] Very strange,
+- [00:54:28,000 - 00:54:30,620] but this place that you thought was a place,
+- [00:54:30,620 - 00:54:31,700] the horizon,
+- [00:54:32,380 - 00:54:37,820] really also has the character of being a time,
+- [00:54:37,920 - 00:54:39,100] and it's time,
+- [00:54:39,100 - 00:54:40,200] t equals infinity,
+- [00:54:40,200 - 00:54:41,560] or omega equals infinity.
+- [00:54:41,900 - 00:54:42,600] Strictly speaking,
+- [00:54:42,600 - 00:54:43,780] it's omega equals infinity.
+- [00:54:43,780 - 00:54:46,140] But omega and t are closely connected.
+- [00:54:47,460 - 00:54:49,120] And so if you look at this diagram,
+- [00:54:49,120 - 00:54:51,360] you can see that when Alice falls in,
+- [00:54:51,540 - 00:54:55,400] she doesn't pass the horizon until t equals infinity.
+- [00:54:56,280 - 00:54:59,340] That's the sense in which an
+- [00:54:59,340 - 00:55:02,400] infalling object never passes the horizon.
+- [00:55:02,860 - 00:55:04,400] It does pass the horizon.
+- [00:55:04,620 - 00:55:05,020] Here it is.
+- [00:55:05,020 - 00:55:06,670] She went sailing right through
+- [00:55:06,670 - 00:55:08,320] and counted nothing crazy there.
+- [00:55:08,600 - 00:55:10,550] But it's just a strange set of coordinates
+- [00:55:10,550 - 00:55:12,500] that says that this is t equals zero.
+- [00:55:12,500 - 00:55:14,000] T equals infinity.
+- [00:55:15,640 - 00:55:16,120] So,
+- [00:55:16,120 - 00:55:18,480] you might say it doesn't really mean anything to anybody,
+- [00:55:18,700 - 00:55:20,220] the fact that Alice never gets in.
+- [00:55:20,360 - 00:55:21,400] But on the other hand,
+- [00:55:21,400 - 00:55:22,300] here's Bob out here,
+- [00:55:22,300 - 00:55:24,020] and Bob is watching.
+- [00:55:24,280 - 00:55:25,700] Bob is watching Alice.
+- [00:55:26,000 - 00:55:27,420] Let's put him in a little closer.
+- [00:55:39,540 - 00:55:40,940] Bob moves on a .
+- [00:55:40,940 - 00:55:41,980] .
+- [00:55:41,980 - 00:55:42,480] .
+- [00:55:42,480 - 00:55:43,060] into the black hole,
+- [00:55:43,060 - 00:55:43,440] ever.
+- [00:55:43,960 - 00:55:46,140] He's going to stay out a fixed distance away,
+- [00:55:46,140 - 00:55:47,460] and he's going to watch Alice.
+- [00:55:48,040 - 00:55:49,760] And let's see what he sees about Alice.
+- [00:55:53,960 - 00:55:55,840] I seem to have lost my pen top.
+- [00:55:55,840 - 00:55:56,260] Oh well.
+- [00:56:00,880 - 00:56:01,920] Here he is over here.
+- [00:56:05,840 - 00:56:06,840] Let's put him over here.
+- [00:56:08,360 - 00:56:09,000] Here's Bob,
+- [00:56:09,000 - 00:56:10,200] and he looks back.
+- [00:56:10,320 - 00:56:11,120] What does he look back?
+- [00:56:11,120 - 00:56:12,560] He looks into the past.
+- [00:56:12,780 - 00:56:14,590] He can't see Alice at the
+- [00:56:14,590 - 00:56:16,400] instant that he looks at her,
+- [00:56:16,400 - 00:56:16,920] that he looks.
+- [00:56:17,120 - 00:56:18,900] He sees Alice in the past.
+- [00:56:19,200 - 00:56:21,420] He sees light coming from Alice.
+- [00:56:22,980 - 00:56:24,560] So he sees Alice over here.
+- [00:56:25,840 - 00:56:26,360] Remember,
+- [00:56:26,360 - 00:56:28,540] light traveling on 45 degree angles.
+- [00:56:29,320 - 00:56:30,200] Later on,
+- [00:56:30,200 - 00:56:30,820] over here,
+- [00:56:30,820 - 00:56:31,960] he looks back again.
+- [00:56:32,420 - 00:56:34,320] And he sees Alice over here.
+- [00:56:34,920 - 00:56:36,280] He looks back again.
+- [00:56:37,060 - 00:56:39,920] As long as he stays outside the black hole,
+- [00:56:41,400 - 00:56:42,700] and he looks back,
+- [00:56:44,200 - 00:56:46,010] what he will see is Alice
+- [00:56:46,010 - 00:56:47,820] getting closer and closer to the horizon,
+- [00:56:48,080 - 00:56:49,440] but never passing it.
+- [00:56:50,180 - 00:56:51,220] So in fact,
+- [00:56:51,220 - 00:56:53,500] it's not just a coordinate artifact
+- [00:56:54,420 - 00:56:57,230] that Alice doesn't go through
+- [00:56:57,230 - 00:57:00,040] the horizon until t equals infinity.
+- [00:57:00,340 - 00:57:02,340] It's actually what Bob sees.
+- [00:57:03,360 - 00:57:05,140] As far as Bob is concerned,
+- [00:57:05,140 - 00:57:06,980] Alice never passes the horizon.
+- [00:57:07,580 - 00:57:08,460] If Alice,
+- [00:57:08,460 - 00:57:10,280] in her own frame of reference,
+- [00:57:10,280 - 00:57:11,100] passes the horizon,
+- [00:57:11,100 - 00:57:13,220] she can't send a signal to Bob
+- [00:57:13,220 - 00:57:15,340] to say that I've passed the horizon.
+- [00:57:15,660 - 00:57:18,540] So all of everything that Bob measures,
+- [00:57:18,680 - 00:57:21,140] everything that Bob cares about,
+- [00:57:21,300 - 00:57:22,580] everything that he can see,
+- [00:57:22,700 - 00:57:27,240] his entire physical observations,
+- [00:57:27,840 - 00:57:30,860] all involve Alice outside the horizon.
+- [00:57:31,040 - 00:57:32,000] She gets closer and closer.
+- [00:57:32,460 - 00:57:36,150] So you might say then
+- [00:57:36,150 - 00:57:39,840] that Alice gets closer and closer,
+- [00:57:39,840 - 00:57:41,240] and as she gets closer and closer,
+- [00:57:41,500 - 00:57:43,680] all of her parts get closer and closer,
+- [00:57:45,880 - 00:57:46,920] and she...
+- [00:57:48,560 - 00:57:49,480] that's what she does.
+- [00:57:50,660 - 00:57:51,520] On the other hand,
+- [00:57:51,520 - 00:57:52,420] as far as she's concerned,
+- [00:57:52,660 - 00:57:54,160] nothing very special happens.
+- [00:57:54,220 - 00:57:55,460] She just goes through the horizon.
+- [00:57:56,780 - 00:57:57,820] Next question.
+- [00:57:58,820 - 00:58:00,640] What if Alice is watching Bob?
+- [00:58:01,140 - 00:58:01,900] Let's ask now...
+- [00:58:04,080 - 00:58:06,080] It's quite apparent from this diagram
+- [00:58:06,080 - 00:58:08,280] that when Bob watches Alice,
+- [00:58:08,420 - 00:58:09,720] he sees Alice slow down.
+- [00:58:10,720 - 00:58:13,380] Alice simply takes an infinite amount of time
+- [00:58:13,380 - 00:58:14,260] to get to the horizon.
+- [00:58:14,780 - 00:58:16,140] All of her clocks,
+- [00:58:16,140 - 00:58:17,420] as far as he can tell,
+- [00:58:18,100 - 00:58:19,770] all of her clocks just slow
+- [00:58:19,770 - 00:58:21,440] down and slow down and slow down.
+- [00:58:24,000 - 00:58:27,280] So she just seems to asymptotically slow down
+- [00:58:28,080 - 00:58:29,620] and approach the horizon.
+- [00:58:31,620 - 00:58:34,340] People generally tend to think that that must mean
+- [00:58:34,340 - 00:58:35,840] that if Alice is watching Bob,
+- [00:58:36,060 - 00:58:37,960] she sees Bob speed up.
+- [00:58:38,380 - 00:58:39,600] But that's not the case.
+- [00:58:39,840 - 00:58:41,740] She does not see Bob speed up.
+- [00:58:42,240 - 00:58:43,480] Here's Alice over here.
+- [00:58:44,700 - 00:58:46,280] And she looks back at Bob,
+- [00:58:46,400 - 00:58:48,080] and she doesn't see anything very special.
+- [00:58:48,360 - 00:58:48,740] Oh,
+- [00:58:48,740 - 00:58:51,100] let's put in the singularity over here.
+- [00:58:51,920 - 00:58:53,160] The singularity is here.
+- [00:58:53,280 - 00:58:55,080] That means Alice is terminated.
+- [00:58:56,040 - 00:58:57,940] Alice is terminated at that point.
+- [00:58:58,060 - 00:58:59,860] No more Alice beyond this point.
+- [00:59:00,340 - 00:59:02,300] Probably before she gets to that point,
+- [00:59:02,380 - 00:59:03,320] she's terminated,
+- [00:59:03,320 - 00:59:03,780] but...
+- [00:59:03,780 - 00:59:05,380] but mathematically,
+- [00:59:05,380 - 00:59:06,820] she's terminated over here.
+- [00:59:07,100 - 00:59:08,280] So she looks back.
+- [00:59:08,440 - 00:59:09,760] Let's say from this vantage point,
+- [00:59:09,840 - 00:59:10,160] Alice is over here,
+- [00:59:10,440 - 00:59:11,940] and she sees Bob.
+- [00:59:12,980 - 00:59:13,540] Hi,
+- [00:59:13,540 - 00:59:13,780] Bob.
+- [00:59:14,120 - 00:59:14,680] Oh,
+- [00:59:14,680 - 00:59:15,600] Bob says hello to her.
+- [00:59:16,980 - 00:59:17,540] Now,
+- [00:59:17,540 - 00:59:18,140] a little later,
+- [00:59:18,800 - 00:59:19,960] she looks back,
+- [00:59:19,980 - 00:59:21,600] and she sees Bob again.
+- [00:59:21,820 - 00:59:22,560] In fact,
+- [00:59:22,560 - 00:59:24,240] she passes the horizon over here.
+- [00:59:25,280 - 00:59:27,320] Bob can no longer see her.
+- [00:59:27,420 - 00:59:29,500] Bob can never see her beyond this point.
+- [00:59:29,780 - 00:59:32,740] There's no point on Bob's trajectory here
+- [00:59:32,740 - 00:59:34,520] where when Bob looks back,
+- [00:59:34,520 - 00:59:35,320] he can see Alice.
+- [00:59:35,540 - 00:59:38,460] But Alice has absolutely no problem seeing Bob.
+- [00:59:40,040 - 00:59:41,420] So Alice sees Bob.
+- [00:59:41,680 - 00:59:42,820] And moreover,
+- [00:59:42,900 - 00:59:45,160] there's nothing that would make you think
+- [00:59:45,160 - 00:59:46,700] that she sees Bob speed up,
+- [00:59:46,820 - 00:59:47,700] and she doesn't.
+- [00:59:47,780 - 00:59:49,220] What does happen
+- [00:59:50,040 - 00:59:51,980] is there's a last point
+- [00:59:52,840 - 00:59:54,080] on Bob's trajectory
+- [00:59:54,080 - 00:59:55,860] that Alice can ever see.
+- [00:59:56,800 - 00:59:59,680] Alice cannot see Bob past this point.
+- [01:00:00,140 - 01:00:00,980] Why not?
+- [01:00:01,180 - 01:00:02,060] Because she's dead.
+- [01:00:02,140 - 01:00:02,600] That's why.
+- [01:00:02,800 - 01:00:03,360] Okay?
+- [01:00:09,940 - 01:00:11,640] So there's a complete asymmetry.
+- [01:00:11,940 - 01:00:13,660] Bob sees Alice slow down.
+- [01:00:13,840 - 01:00:15,440] She's flattened out like a pancake.
+- [01:00:17,020 - 01:00:20,260] It takes infinite time for her to get anywhere.
+- [01:00:21,080 - 01:00:24,320] Alice looks back and sees nothing special about...
+- [01:00:24,480 - 01:00:25,060] So,
+- [01:00:25,060 - 01:00:25,640] geometrically,
+- [01:00:25,760 - 01:00:28,400] there's some special point between the two
+- [01:00:28,400 - 01:00:31,680] where it looks like where she sees Bob
+- [01:00:31,680 - 01:00:33,420] is way in the past,
+- [01:00:33,420 - 01:00:34,260] right?
+- [01:00:34,380 - 01:00:37,960] Before Bob is seeing her going to the horizon.
+- [01:00:38,220 - 01:00:39,820] Everybody sees everybody else in the past.
+- [01:00:39,840 - 01:00:40,680] Right,
+- [01:00:40,680 - 01:00:40,940] right,
+- [01:00:40,940 - 01:00:41,080] right.
+- [01:00:41,180 - 01:00:41,300] But,
+- [01:00:41,300 - 01:00:41,580] I mean,
+- [01:00:41,580 - 01:00:42,180] there are junctures
+- [01:00:42,180 - 01:00:43,500] where the geometry is such
+- [01:00:43,500 - 01:00:44,840] that it's a special point where...
+- [01:00:45,800 - 01:00:46,620] Nothing special.
+- [01:00:46,900 - 01:00:47,340] So,
+- [01:00:47,340 - 01:00:48,480] according to this diagram,
+- [01:00:48,620 - 01:00:49,900] she's never going to see Bob
+- [01:00:49,900 - 01:00:53,300] while he's seeing her go across the horizon.
+- [01:00:55,360 - 01:00:55,840] Right.
+- [01:00:56,020 - 01:00:57,400] She will never see Bob
+- [01:00:57,400 - 01:00:58,670] at the time when he
+- [01:00:58,670 - 01:00:59,940] sees her go through the horizon.
+- [01:01:00,580 - 01:01:01,880] That's partly because he never
+- [01:01:01,880 - 01:01:03,180] sees her go through the horizon.
+- [01:01:03,740 - 01:01:04,220] But,
+- [01:01:04,220 - 01:01:04,400] uh,
+- [01:01:04,400 - 01:01:04,960] right.
+- [01:01:07,200 - 01:01:08,340] But more than that,
+- [01:01:08,480 - 01:01:09,460] he can never...
+- [01:01:11,200 - 01:01:14,560] She can never see him after that point.
+- [01:01:16,120 - 01:01:16,640] So...
+- [01:01:17,280 - 01:01:18,000] But again,
+- [01:01:18,000 - 01:01:19,680] not because he's hiding
+- [01:01:19,680 - 01:01:21,180] or because he's accelerating,
+- [01:01:21,440 - 01:01:23,280] just because she's terminated.
+- [01:01:23,500 - 01:01:23,800] Right.
+- [01:01:24,140 - 01:01:25,020] One question.
+- [01:01:25,240 - 01:01:26,320] Is this...
+- [01:01:26,740 - 01:01:27,160] I mean,
+- [01:01:27,160 - 01:01:28,220] if I'm Bob and I understand
+- [01:01:28,220 - 01:01:30,140] all this total relativity and so on,
+- [01:01:30,200 - 01:01:31,180] but I say to myself,
+- [01:01:31,360 - 01:01:31,440] well,
+- [01:01:31,440 - 01:01:33,120] I can't see her phone,
+- [01:01:33,180 - 01:01:34,800] but I know she's on a written phone,
+- [01:01:34,800 - 01:01:35,180] then...
+- [01:01:35,840 - 01:01:36,140] No,
+- [01:01:36,140 - 01:01:36,600] no,
+- [01:01:36,600 - 01:01:36,880] no,
+- [01:01:36,880 - 01:01:37,060] no,
+- [01:01:37,060 - 01:01:37,180] no.
+- [01:01:37,520 - 01:01:38,940] There's no sense...
+- [01:01:38,940 - 01:01:41,240] There's no sense in which she has fallen in.
+- [01:01:41,320 - 01:01:43,400] He looks and she has not fallen in.
+- [01:01:43,400 - 01:01:44,620] It's not just about what he sees.
+- [01:01:44,720 - 01:01:46,120] It's actually in his reference frame
+- [01:01:46,120 - 01:01:47,280] she doesn't fall in.
+- [01:01:49,680 - 01:01:50,980] I don't know if you see the distinction.
+- [01:01:51,060 - 01:01:52,140] Can he go back and get her?
+- [01:01:54,140 - 01:01:55,260] Before she falls in,
+- [01:01:55,300 - 01:01:56,020] can he go back and get
+- [01:01:56,020 - 01:01:56,740] her and bring her back out?
+- [01:01:57,000 - 01:01:57,140] No.
+- [01:01:57,260 - 01:01:57,780] Why not?
+- [01:02:00,140 - 01:02:00,500] Well,
+- [01:02:00,500 - 01:02:02,020] once you pass the air...
+- [01:02:02,899 - 01:02:03,900] The question would be,
+- [01:02:03,940 - 01:02:06,140] what happens if there's someone following Alice in?
+- [01:02:06,360 - 01:02:07,260] What if they see her?
+- [01:02:07,780 - 01:02:08,260] Take a look.
+- [01:02:08,260 - 01:02:09,600] What happens if somebody's following Alice?
+- [01:02:10,000 - 01:02:10,520] Okay,
+- [01:02:10,520 - 01:02:11,220] good.
+- [01:02:11,400 - 01:02:12,740] Let's draw somebody following Alice.
+- [01:02:13,600 - 01:02:15,120] Here's somebody following Alice.
+- [01:02:18,960 - 01:02:21,240] That person following Alice...
+- [01:02:22,060 - 01:02:22,580] Incidentally,
+- [01:02:22,580 - 01:02:24,480] I've drawn Alice as if she was moving...
+- [01:02:24,880 - 01:02:25,120] No,
+- [01:02:25,120 - 01:02:25,260] no,
+- [01:02:25,260 - 01:02:26,420] this is Alice over here.
+- [01:02:26,480 - 01:02:26,720] Sorry,
+- [01:02:26,720 - 01:02:27,060] not that.
+- [01:02:27,620 - 01:02:29,200] Here's somebody following Alice,
+- [01:02:29,200 - 01:02:29,480] right?
+- [01:02:33,820 - 01:02:34,980] She sees nothing special.
+- [01:02:35,720 - 01:02:37,180] She sees Alice over here,
+- [01:02:37,180 - 01:02:38,420] sees Alice over here,
+- [01:02:38,500 - 01:02:39,800] sees Alice over here,
+- [01:02:39,880 - 01:02:41,120] sees Alice over here,
+- [01:02:41,160 - 01:02:41,300] sees Alice over here.
+- [01:02:41,780 - 01:02:42,840] Nothing particular.
+- [01:02:44,040 - 01:02:44,640] Likewise,
+- [01:02:44,640 - 01:02:45,960] Alice watching...
+- [01:02:45,960 - 01:02:47,660] Who is this fellow?
+- [01:02:47,760 - 01:02:48,040] Charlie?
+- [01:02:48,180 - 01:02:48,740] That's Charlie.
+- [01:02:49,280 - 01:02:51,700] Alice watching Charlie sees nothing special.
+- [01:02:52,280 - 01:02:53,060] Of course,
+- [01:02:53,060 - 01:02:55,920] both of them eventually get terminated.
+- [01:02:56,760 - 01:02:59,080] But if Charlie is following Alice in,
+- [01:02:59,200 - 01:03:01,280] nothing special at this point.
+- [01:03:01,800 - 01:03:02,920] It's only Bob,
+- [01:03:03,040 - 01:03:05,620] and this is a consequence of the fact that he's...
+- [01:03:05,620 - 01:03:06,680] that he...
+- [01:03:07,240 - 01:03:08,980] that he has to accelerate
+- [01:03:08,980 - 01:03:10,720] to stay outside the black hole.
+- [01:03:13,160 - 01:03:15,380] If Alice is falling in in free fall,
+- [01:03:15,680 - 01:03:18,420] and Charlie is following her just behind her,
+- [01:03:18,980 - 01:03:20,100] they're just in free fall.
+- [01:03:21,340 - 01:03:22,660] They talk to each other,
+- [01:03:22,780 - 01:03:24,060] they can hold hands,
+- [01:03:24,340 - 01:03:26,160] they can have a conversation.
+- [01:03:27,300 - 01:03:28,780] Conversation can go back and forth.
+- [01:03:29,200 - 01:03:29,480] Here,
+- [01:03:29,480 - 01:03:31,380] Alice says something to Bob,
+- [01:03:31,580 - 01:03:33,080] Bob says something back to Alice,
+- [01:03:33,260 - 01:03:34,320] Alice says something to Bob,
+- [01:03:34,540 - 01:03:35,440] and of course,
+- [01:03:37,020 - 01:03:37,960] of course,
+- [01:03:38,000 - 01:03:40,800] of course,
+- [01:03:40,800 - 01:03:40,800] so,
+- [01:03:40,800 - 01:03:41,620] did I say Bob?
+- [01:03:41,840 - 01:03:42,920] I meant Charlie.
+- [01:03:43,260 - 01:03:44,340] I meant Charlie.
+- [01:03:44,460 - 01:03:46,300] Alice and Charlie have a nice conversation.
+- [01:03:48,160 - 01:03:48,760] Now,
+- [01:03:48,760 - 01:03:50,140] Alice can look back
+- [01:03:51,840 - 01:03:55,020] and hear Bob's half of the conversation,
+- [01:03:55,320 - 01:03:55,960] well,
+- [01:03:55,960 - 01:03:56,560] maybe not hear,
+- [01:03:56,780 - 01:03:57,840] but in any case,
+- [01:03:57,840 - 01:03:59,640] see Bob's half of the conversation.
+- [01:04:00,180 - 01:04:02,600] But once Alice gets past this point,
+- [01:04:02,740 - 01:04:03,640] Bob cannot,
+- [01:04:03,640 - 01:04:06,860] cannot receive anything from Alice,
+- [01:04:06,860 - 01:04:07,240] ever.
+- [01:04:07,780 - 01:04:09,340] So it's completely asymmetric.
+- [01:04:10,500 - 01:04:11,340] What does...
+- [01:04:11,340 - 01:04:12,060] So,
+- [01:04:12,060 - 01:04:12,760] if...
+- [01:04:12,760 - 01:04:13,380] So,
+- [01:04:13,380 - 01:04:15,120] there was a hoop going in,
+- [01:04:15,160 - 01:04:17,220] and then a basketball followed right after,
+- [01:04:17,280 - 01:04:17,820] after a minute.
+- [01:04:18,500 - 01:04:19,820] Would Bob see...
+- [01:04:19,820 - 01:04:21,220] What would Bob see?
+- [01:04:21,380 - 01:04:23,540] He would see the hoop going in through the...
+- [01:04:23,540 - 01:04:26,100] He would see the basketball going in through the hoop?
+- [01:04:27,600 - 01:04:30,100] Because it's kind of getting superimposed.
+- [01:04:30,280 - 01:04:31,460] I'm not sure where your...
+- [01:04:31,460 - 01:04:33,620] I'm not sure where your basketball and your hoop are.
+- [01:04:36,600 - 01:04:37,080] Look,
+- [01:04:37,080 - 01:04:39,460] the question is...
+- [01:04:39,460 - 01:04:40,140] I can't...
+- [01:04:40,140 - 01:04:41,040] Alice goes in,
+- [01:04:41,160 - 01:04:42,800] and Charlie follows right after,
+- [01:04:42,820 - 01:04:43,440] after a minute,
+- [01:04:43,600 - 01:04:43,900] you know what I'm saying?
+- [01:04:44,080 - 01:04:45,300] What does Bob see?
+- [01:04:45,600 - 01:04:47,060] He sees...
+- [01:04:47,060 - 01:04:47,360] Sorry,
+- [01:04:47,360 - 01:04:47,860] who...
+- [01:04:47,860 - 01:04:48,560] We have Alice,
+- [01:04:48,560 - 01:04:48,980] Charlie,
+- [01:04:48,980 - 01:04:49,320] and Bob.
+- [01:04:49,440 - 01:04:50,000] Who's doing what?
+- [01:04:50,680 - 01:04:52,060] Alice falls in...
+- [01:04:52,060 - 01:04:52,180] Yeah.
+- [01:04:52,520 - 01:04:53,760] Charlie follows him or not?
+- [01:04:53,940 - 01:04:54,620] Charlie follows,
+- [01:04:54,620 - 01:04:55,000] like,
+- [01:04:55,000 - 01:04:55,800] right after her.
+- [01:04:55,820 - 01:04:56,040] Right.
+- [01:04:56,100 - 01:04:58,800] And what does it appear to Bob on the outside?
+- [01:04:59,000 - 01:04:59,920] It appears...
+- [01:04:59,920 - 01:05:01,560] Once they've passed the horizon,
+- [01:05:02,600 - 01:05:03,080] Bob...
+- [01:05:03,080 - 01:05:03,620] Bob's not going to be able to see anything.
+- [01:05:03,620 - 01:05:04,800] Bob doesn't see them altogether.
+- [01:05:06,900 - 01:05:07,340] No.
+- [01:05:07,740 - 01:05:09,820] Bob never sees...
+- [01:05:09,820 - 01:05:10,540] Bob never...
+- [01:05:10,540 - 01:05:10,760] No,
+- [01:05:10,760 - 01:05:10,860] right.
+- [01:05:10,920 - 01:05:11,740] Bob never sees...
+- [01:05:11,740 - 01:05:11,860] Oh,
+- [01:05:11,860 - 01:05:12,080] I see.
+- [01:05:12,100 - 01:05:12,820] I see what you're asking.
+- [01:05:13,020 - 01:05:13,260] Right.
+- [01:05:13,320 - 01:05:13,540] Good,
+- [01:05:13,540 - 01:05:13,780] good,
+- [01:05:13,780 - 01:05:14,000] good.
+- [01:05:14,580 - 01:05:15,020] Yeah.
+- [01:05:15,140 - 01:05:19,140] So what it looks like to Bob is...
+- [01:05:21,920 - 01:05:22,720] Here's Alice.
+- [01:05:23,560 - 01:05:24,440] Here's Charlie.
+- [01:05:25,320 - 01:05:27,220] And they're both moving toward the horizon.
+- [01:05:30,300 - 01:05:31,200] Alice is first.
+- [01:05:31,800 - 01:05:33,080] So she gets...
+- [01:05:34,520 - 01:05:35,000] Contracted,
+- [01:05:35,000 - 01:05:35,720] according to him,
+- [01:05:35,720 - 01:05:36,120] first.
+- [01:05:36,340 - 01:05:37,440] Charlie is still moving.
+- [01:05:37,540 - 01:05:38,600] He's a little bit contracted.
+- [01:05:40,420 - 01:05:41,900] And then a little bit later,
+- [01:05:41,900 - 01:05:44,980] Alice is getting squashed flat.
+- [01:05:45,820 - 01:05:47,060] Maybe a lot later.
+- [01:05:47,140 - 01:05:47,680] Excuse me.
+- [01:05:47,700 - 01:05:48,280] A lot later,
+- [01:05:48,280 - 01:05:49,960] Alice is getting very squashed.
+- [01:05:50,540 - 01:05:52,020] Charlie is right behind her.
+- [01:05:54,880 - 01:05:58,240] And he just sees them fall in
+- [01:05:58,240 - 01:06:01,600] with Charlie getting closer and closer and closer,
+- [01:06:01,600 - 01:06:02,500] right
+- [01:06:02,500 - 01:06:03,120] behind her,
+- [01:06:03,120 - 01:06:05,240] but never catching her.
+- [01:06:06,380 - 01:06:06,900] Question.
+- [01:06:07,900 - 01:06:09,700] We're watching them get flatter and
+- [01:06:09,700 - 01:06:11,500] flatter as they move towards the horizon.
+- [01:06:11,860 - 01:06:14,190] But isn't that the opposite of what you
+- [01:06:14,190 - 01:06:16,520] would guess would happen based on tidal forces?
+- [01:06:17,500 - 01:06:19,940] Tidal forces would take us in the other direction?
+- [01:06:20,200 - 01:06:20,360] Right.
+- [01:06:21,940 - 01:06:22,460] Remember,
+- [01:06:22,460 - 01:06:23,820] the bigger the black hole,
+- [01:06:23,820 - 01:06:24,700] we're thinking about...
+- [01:06:24,700 - 01:06:24,980] All right.
+- [01:06:25,120 - 01:06:28,360] There's an important point here.
+- [01:06:30,680 - 01:06:32,470] When we're talking about all of this and
+- [01:06:32,470 - 01:06:34,260] all of the stuff happening near the horizon,
+- [01:06:34,840 - 01:06:38,720] we were assuming the black hole is big enough that...
+- [01:06:39,360 - 01:06:42,910] Or that Alice and Charlie are small enough
+- [01:06:42,910 - 01:06:46,460] that tidal forces don't affect them very much.
+- [01:06:46,960 - 01:06:47,440] Okay.
+- [01:06:47,480 - 01:06:49,100] So we're not looking at tidal forces in that.
+- [01:06:49,180 - 01:06:50,440] We're not looking at tidal forces.
+- [01:06:50,600 - 01:06:50,840] Right.
+- [01:06:51,380 - 01:06:52,780] We're imagining a very,
+- [01:06:52,780 - 01:06:53,760] very big black hole.
+- [01:06:54,960 - 01:06:55,440] Incidentally,
+- [01:06:55,440 - 01:06:56,940] that black hole would have to be very big.
+- [01:06:57,860 - 01:06:58,340] Right.
+- [01:06:58,340 - 01:07:00,460] If you took a solar mass black hole,
+- [01:07:00,460 - 01:07:04,160] which has a Schwarzschild radius of about a kilometer,
+- [01:07:04,920 - 01:07:08,880] it has incredibly fierce tidal forces at the horizon.
+- [01:07:09,600 - 01:07:11,100] It's not very big.
+- [01:07:11,580 - 01:07:12,700] It's not very big.
+- [01:07:12,960 - 01:07:14,320] You would get squeezed through
+- [01:07:14,320 - 01:07:15,680] like toothpaste at the horizon.
+- [01:07:15,980 - 01:07:17,960] But if you were to take a black hole as
+- [01:07:17,960 - 01:07:19,940] big as the one at the center of the galaxy,
+- [01:07:21,300 - 01:07:24,320] the tidal forces at the horizon would be pretty weak.
+- [01:07:24,760 - 01:07:26,440] If you took one which is as
+- [01:07:26,440 - 01:07:28,120] big as any that are known anywhere,
+- [01:07:28,120 - 01:07:28,320] as long as the Earth,
+- [01:07:28,340 - 01:07:28,800] as big as the stars in the universe,
+- [01:07:28,800 - 01:07:32,160] 10 to the 9th solar masses,
+- [01:07:32,160 - 01:07:35,260] then an ordinary person
+- [01:07:35,260 - 01:07:37,510] would be small enough that they would
+- [01:07:37,510 - 01:07:39,760] not experience serious trouble due to tidal forces.
+- [01:07:40,060 - 01:07:41,520] That's what we're thinking about here.
+- [01:07:42,080 - 01:07:42,680] Right.
+- [01:07:42,820 - 01:07:43,760] You're perfectly right.
+- [01:07:43,920 - 01:07:46,480] The tidal forces would have the elongating effect.
+- [01:07:47,620 - 01:07:48,220] Question.
+- [01:07:49,000 - 01:07:50,940] From the perspective of Charlie...
+- [01:07:50,940 - 01:07:52,120] That,
+- [01:07:52,120 - 01:07:52,620] of course,
+- [01:07:52,620 - 01:07:54,250] is a real effect as far
+- [01:07:54,250 - 01:07:55,880] as Alice and Charlie are concerned.
+- [01:07:56,180 - 01:07:57,240] Tidal forces,
+- [01:07:57,240 - 01:07:58,320] they're not...
+- [01:07:58,320 - 01:07:59,080] They're not deceived about.
+- [01:07:59,160 - 01:07:59,700] They feel them.
+- [01:07:59,980 - 01:08:00,940] This effect,
+- [01:08:00,940 - 01:08:01,600] they don't feel.
+- [01:08:01,860 - 01:08:05,580] Their meter sticks get squashed.
+- [01:08:06,240 - 01:08:08,780] Their clocks get slowed down,
+- [01:08:08,780 - 01:08:10,260] including their internal clocks.
+- [01:08:10,900 - 01:08:14,439] Their biology does exactly what's necessary for
+- [01:08:14,439 - 01:08:17,979] them to not experience anything at this...
+- [01:08:18,620 - 01:08:19,260] Yeah.
+- [01:08:19,479 - 01:08:19,960] Yeah,
+- [01:08:19,960 - 01:08:21,840] I was looking at,
+- [01:08:21,840 - 01:08:24,180] from Charlie's perspective,
+- [01:08:24,180 - 01:08:25,479] following...
+- [01:08:26,220 - 01:08:28,000] I was going to the black hole.
+- [01:08:28,319 - 01:08:30,760] I was going to the 100 feet away or whatever,
+- [01:08:30,760 - 01:08:31,700] and they're communicating.
+- [01:08:33,519 - 01:08:37,479] Will Charlie ever see Alice go across the event horizon?
+- [01:08:37,740 - 01:08:37,979] Yeah.
+- [01:08:38,720 - 01:08:41,120] Even though he's outside the event horizon?
+- [01:08:41,420 - 01:08:41,560] Yeah.
+- [01:08:41,580 - 01:08:41,840] Well,
+- [01:08:41,840 - 01:08:42,359] okay,
+- [01:08:42,359 - 01:08:43,020] let's look at it.
+- [01:08:43,060 - 01:08:43,200] No,
+- [01:08:43,200 - 01:08:43,760] no,
+- [01:08:43,760 - 01:08:44,200] no.
+- [01:08:45,740 - 01:08:48,040] Here's where you've got to draw a picture.
+- [01:08:49,040 - 01:08:50,600] Every question like this,
+- [01:08:50,600 - 01:08:53,200] draw a picture.
+- [01:08:53,319 - 01:08:54,300] Here's Alice going through.
+- [01:08:54,359 - 01:08:55,420] Here's Charlie going through.
+- [01:08:57,240 - 01:08:59,200] Charlie is going to look at Alice.
+- [01:08:59,439 - 01:09:01,140] You're asking me about Charlie looking at Alice,
+- [01:09:01,140 - 01:09:01,399] right?
+- [01:09:01,600 - 01:09:01,899] No,
+- [01:09:01,899 - 01:09:02,700] he looks at her here,
+- [01:09:02,700 - 01:09:03,620] sees her here.
+- [01:09:03,880 - 01:09:04,880] Looks at her here,
+- [01:09:04,880 - 01:09:05,680] sees her here.
+- [01:09:05,979 - 01:09:06,899] Looks at her here,
+- [01:09:06,899 - 01:09:08,000] sees her here.
+- [01:09:08,340 - 01:09:11,309] When does he see her pass the horizon at
+- [01:09:11,309 - 01:09:14,279] exactly the same time that he passes the horizon?
+- [01:09:15,560 - 01:09:18,390] He sees her pass the horizon
+- [01:09:18,390 - 01:09:21,220] just as he passes the horizon.
+- [01:09:22,319 - 01:09:23,359] He looks back.
+- [01:09:24,340 - 01:09:24,819] Okay.
+- [01:09:24,899 - 01:09:25,399] He looks back.
+- [01:09:25,399 - 01:09:27,200] After he has passed the horizon,
+- [01:09:27,200 - 01:09:29,279] he looks back and he sees that she's inside.
+- [01:09:31,600 - 01:09:33,960] But if they all go through at the same time?
+- [01:09:34,439 - 01:09:34,880] Well,
+- [01:09:34,880 - 01:09:36,040] if they go through at the same time,
+- [01:09:36,040 - 01:09:37,180] they go through at the same time.
+- [01:09:37,279 - 01:09:37,380] No,
+- [01:09:37,380 - 01:09:38,580] not at the same time.
+- [01:09:39,279 - 01:09:40,240] Not at the same time.
+- [01:09:40,479 - 01:09:42,800] Here they're not going through at the same time.
+- [01:09:43,319 - 01:09:44,040] But of course,
+- [01:09:44,040 - 01:09:46,080] remember that Charlie sees Alice in the past,
+- [01:09:46,080 - 01:09:47,020] in his past.
+- [01:09:48,600 - 01:09:53,240] So Charlie visually sees her pass the horizon.
+- [01:09:53,700 - 01:09:55,380] There's no signpost at the horizon.
+- [01:09:55,380 - 01:09:58,610] But if he happens to know by calculation
+- [01:09:58,610 - 01:10:01,840] and by being a physicist or whatever it is,
+- [01:10:01,920 - 01:10:03,480] if he happens to know exactly
+- [01:10:03,480 - 01:10:05,040] when she's going to pass the horizon,
+- [01:10:05,400 - 01:10:09,200] he will see her at that point at the same,
+- [01:10:09,200 - 01:10:10,960] at the time and at the
+- [01:10:10,960 - 01:10:12,720] point when he passes the horizon.
+- [01:10:13,399 - 01:10:15,780] So taking that and extrapolating that,
+- [01:10:15,780 - 01:10:18,470] if you have like a million people separated
+- [01:10:18,470 - 01:10:21,160] by light years falling into the black hole,
+- [01:10:21,280 - 01:10:21,860] they will all,
+- [01:10:21,860 - 01:10:22,920] from their perspective,
+- [01:10:22,920 - 01:10:25,280] see each other under the vendor of horizons.
+- [01:10:25,380 - 01:10:25,880] At the same time.
+- [01:10:25,920 - 01:10:26,120] Yeah.
+- [01:10:26,540 - 01:10:27,180] That's odd.
+- [01:10:29,520 - 01:10:30,000] Now,
+- [01:10:30,000 - 01:10:31,280] Charlie is over here.
+- [01:10:31,340 - 01:10:32,460] He's watching Alice.
+- [01:10:35,060 - 01:10:38,020] But now he decides at the very last minute,
+- [01:10:38,320 - 01:10:38,800] no,
+- [01:10:38,800 - 01:10:40,280] I don't want to follow Alice.
+- [01:10:40,420 - 01:10:41,730] I am going to accelerate my
+- [01:10:41,730 - 01:10:43,040] way out of this black hole.
+- [01:10:43,240 - 01:10:44,670] And so he accelerates and
+- [01:10:44,670 - 01:10:46,100] stays out of the black hole.
+- [01:10:47,960 - 01:10:49,300] Then as he looks back,
+- [01:10:49,300 - 01:10:50,000] again,
+- [01:10:50,000 - 01:10:52,220] he never gets to see Alice cross the horizon.
+- [01:10:54,180 - 01:10:55,360] From this point onward,
+- [01:10:55,360 - 01:10:55,360] he's going to follow Alice.
+- [01:10:55,380 - 01:10:55,560] He's going to go over here.
+- [01:10:55,720 - 01:10:57,600] He sees her getting close to the horizon.
+- [01:10:57,920 - 01:11:00,590] But if he changes his mind at this
+- [01:11:00,590 - 01:11:03,260] point and accelerates himself out of the black hole,
+- [01:11:04,280 - 01:11:06,540] then he will not see Alice cross the horizon.
+- [01:11:07,020 - 01:11:09,100] It's only if he crosses the horizon himself
+- [01:11:09,100 - 01:11:11,180] that he gets to see Alice cross the horizon.
+- [01:11:13,600 - 01:11:14,240] One more.
+- [01:11:14,360 - 01:11:16,620] So let's say Alice has gone through,
+- [01:11:16,620 - 01:11:18,040] from her perspective,
+- [01:11:18,900 - 01:11:20,040] and from her perspective,
+- [01:11:20,040 - 01:11:21,340] Charlie is still outside.
+- [01:11:21,800 - 01:11:22,240] Okay.
+- [01:11:22,360 - 01:11:23,920] So she sees him out there.
+- [01:11:23,920 - 01:11:24,560] Yeah,
+- [01:11:24,560 - 01:11:25,000] she does.
+- [01:11:25,280 - 01:11:26,700] Once he gets inside,
+- [01:11:26,700 - 01:11:27,920] from his,
+- [01:11:27,920 - 01:11:29,480] once he's inside the black hole,
+- [01:11:29,580 - 01:11:31,480] it seems like from his perspective,
+- [01:11:31,480 - 01:11:34,620] he and Alice are in exactly the same radius.
+- [01:11:35,160 - 01:11:36,180] Exactly the same what?
+- [01:11:36,380 - 01:11:36,760] Radius.
+- [01:11:36,900 - 01:11:39,060] Because they went through the horizon at the same point,
+- [01:11:39,060 - 01:11:39,940] at the same time.
+- [01:11:41,380 - 01:11:41,860] Well,
+- [01:11:41,860 - 01:11:44,600] Alice doesn't see Bob go through the
+- [01:11:44,600 - 01:11:47,340] horizon at the same time she does.
+- [01:11:47,720 - 01:11:49,210] She sees Bob go through
+- [01:11:49,210 - 01:11:50,700] the horizon when she's over here.
+- [01:11:51,000 - 01:11:52,560] But then once he's through,
+- [01:11:53,200 - 01:11:54,440] from his perspective,
+- [01:11:54,440 - 01:11:56,000] they are both at the same radius,
+- [01:11:56,000 - 01:11:56,340] right?
+- [01:11:56,460 - 01:11:57,440] But from hers,
+- [01:11:57,440 - 01:11:57,840] they're not.
+- [01:11:58,000 - 01:11:58,460] She's,
+- [01:11:58,460 - 01:11:58,640] well,
+- [01:11:58,640 - 01:11:59,120] closer.
+- [01:12:00,720 - 01:12:01,200] It's,
+- [01:12:01,200 - 01:12:03,260] the diagram says it all.
+- [01:12:04,020 - 01:12:05,520] The diagram says it all.
+- [01:12:06,300 - 01:12:06,780] If,
+- [01:12:06,780 - 01:12:06,960] uh,
+- [01:12:06,960 - 01:12:09,160] really.
+- [01:12:09,820 - 01:12:10,860] Can I suggest,
+- [01:12:10,860 - 01:12:13,120] as you were saying,
+- [01:12:13,120 - 01:12:14,840] he's looking at the past.
+- [01:12:15,440 - 01:12:15,920] Okay,
+- [01:12:15,920 - 01:12:17,040] so when he sees her,
+- [01:12:17,040 - 01:12:20,500] he's not looking at her present.
+- [01:12:20,580 - 01:12:22,540] He's just looking in the past.
+- [01:12:22,540 - 01:12:24,430] Same as everything that we look
+- [01:12:24,430 - 01:12:26,320] at is always in the past.
+- [01:12:26,420 - 01:12:26,580] Right,
+- [01:12:26,580 - 01:12:26,760] right.
+- [01:12:27,200 - 01:12:28,740] It's always on the light cone.
+- [01:12:28,900 - 01:12:29,040] Right,
+- [01:12:29,040 - 01:12:30,090] we never see anything at
+- [01:12:30,090 - 01:12:31,140] the same instant that we look.
+- [01:12:31,540 - 01:12:32,020] Um,
+- [01:12:32,020 - 01:12:33,240] what does the,
+- [01:12:33,240 - 01:12:33,620] uh,
+- [01:12:33,620 - 01:12:36,280] free fall path actually look like on this diagram?
+- [01:12:36,580 - 01:12:37,120] You drew,
+- [01:12:37,120 - 01:12:39,200] drew it curvy once and...
+- [01:12:39,200 - 01:12:40,820] It looks almost like a straight line.
+- [01:12:41,580 - 01:12:42,540] Pretty much.
+- [01:12:42,540 - 01:12:43,520] Approximately.
+- [01:12:43,520 - 01:12:44,120] Not exactly,
+- [01:12:44,120 - 01:12:44,820] but approximately.
+- [01:12:47,100 - 01:12:47,780] Pretty much.
+- [01:12:48,560 - 01:12:51,200] What if they fall through at the same point?
+- [01:12:53,580 - 01:12:54,220] Uh...
+- [01:12:56,559 - 01:12:57,740] Then the Democrats.
+- [01:13:04,459 - 01:13:05,099] Look,
+- [01:13:05,099 - 01:13:07,580] quantum mechanics apparently can unify,
+- [01:13:07,580 - 01:13:08,200] or,
+- [01:13:08,200 - 01:13:08,480] or,
+- [01:13:08,480 - 01:13:08,640] uh,
+- [01:13:08,640 - 01:13:09,970] string theory can unify
+- [01:13:09,970 - 01:13:11,300] quantum mechanics and general relativity.
+- [01:13:11,440 - 01:13:13,210] Can it be used to examine
+- [01:13:13,210 - 01:13:14,980] that far less than one sector?
+- [01:13:17,539 - 01:13:18,179] Tough,
+- [01:13:18,179 - 01:13:18,820] hard.
+- [01:13:19,880 - 01:13:20,520] That's,
+- [01:13:20,520 - 01:13:20,600] uh,
+- [01:13:20,600 - 01:13:21,180] that's...
+- [01:13:21,200 - 01:13:21,620] That's...
+- [01:13:21,620 - 01:13:24,760] That is a very,
+- [01:13:24,760 - 01:13:25,920] very current question,
+- [01:13:25,920 - 01:13:26,740] which is,
+- [01:13:26,740 - 01:13:27,040] um,
+- [01:13:27,040 - 01:13:28,380] being debated like,
+- [01:13:28,380 - 01:13:30,740] like mad at the present time.
+- [01:13:31,760 - 01:13:32,440] And,
+- [01:13:32,440 - 01:13:33,080] uh...
+- [01:13:34,940 - 01:13:36,120] Let's put it this way.
+- [01:13:36,120 - 01:13:37,760] It is very subtle and very hard.
+- [01:13:38,400 - 01:13:39,660] I have a question.
+- [01:13:40,160 - 01:13:41,580] Everything depends on...
+- [01:13:43,660 - 01:13:44,340] Question?
+- [01:13:44,640 - 01:13:45,120] Yeah.
+- [01:13:45,120 - 01:13:45,980] Uh...
+- [01:13:45,980 - 01:13:48,640] Could you discuss Alice's clock?
+- [01:13:48,640 - 01:13:51,160] What happens to Alice's clock as she goes in?
+- [01:13:51,220 - 01:13:51,340] Yeah.
+- [01:13:51,340 - 01:13:52,220] Here's Alice's clock.
+- [01:13:52,220 - 01:13:52,680] Goes...
+- [01:13:52,680 - 01:13:53,440] Tick,
+- [01:13:53,440 - 01:13:53,680] tick,
+- [01:13:53,680 - 01:13:54,020] tick,
+- [01:13:54,020 - 01:13:54,460] tick,
+- [01:13:54,460 - 01:13:54,740] tick,
+- [01:13:54,740 - 01:13:55,160] tick,
+- [01:13:55,160 - 01:13:55,640] tick,
+- [01:13:55,640 - 01:13:56,020] tick,
+- [01:13:56,020 - 01:13:56,160] tick,
+- [01:13:56,160 - 01:13:56,160] tick,
+- [01:13:56,160 - 01:13:56,160] tick,
+- [01:13:56,160 - 01:13:56,160] tick.
+- [01:13:56,160 - 01:13:57,120] How about her velocity?
+- [01:13:57,120 - 01:13:58,600] Does that have any meaning?
+- [01:13:58,800 - 01:13:59,000] What's that?
+- [01:13:59,220 - 01:14:01,240] What about her velocity in the time...
+- [01:14:01,240 - 01:14:02,920] In her own reference frame,
+- [01:14:02,920 - 01:14:04,280] her velocity is constant.
+- [01:14:04,440 - 01:14:05,620] And in this picture,
+- [01:14:05,620 - 01:14:08,060] she pretty much moves with,
+- [01:14:08,060 - 01:14:08,340] uh,
+- [01:14:08,340 - 01:14:10,160] in her own reference frame with constant velocity.
+- [01:14:10,720 - 01:14:12,800] And if you measure off proper time,
+- [01:14:12,800 - 01:14:14,180] it'll just look like this.
+- [01:14:16,940 - 01:14:17,900] She's practically...
+- [01:14:17,900 - 01:14:18,560] Yeah.
+- [01:14:20,940 - 01:14:22,980] This is practically flat space-time,
+- [01:14:22,980 - 01:14:24,440] at least near the horizon.
+- [01:14:24,880 - 01:14:26,920] If you don't get too near the singularity,
+- [01:14:26,920 - 01:14:28,960] what goes on here is
+- [01:14:28,960 - 01:14:31,000] pretty much close to flat space-time.
+- [01:14:31,300 - 01:14:33,440] So let's keep her away from the singularity.
+- [01:14:33,440 - 01:14:34,100] That's a little too,
+- [01:14:34,100 - 01:14:34,320] uh,
+- [01:14:34,320 - 01:14:35,040] too much,
+- [01:14:35,040 - 01:14:35,580] too bad.
+- [01:14:35,960 - 01:14:37,460] But as she falls through here,
+- [01:14:37,460 - 01:14:40,240] with pretty much free fall,
+- [01:14:40,240 - 01:14:41,940] her clock,
+- [01:14:41,940 - 01:14:42,200] uh,
+- [01:14:42,200 - 01:14:42,780] just,
+- [01:14:42,780 - 01:14:43,020] uh,
+- [01:14:43,020 - 01:14:43,640] ticks off.
+- [01:14:45,340 - 01:14:45,780] Time.
+- [01:14:47,900 - 01:14:49,760] So if Bob is accelerating fast enough
+- [01:14:49,760 - 01:14:51,620] to not fall in a black hole,
+- [01:14:51,620 - 01:14:53,440] he'll never see her tomorrow.
+- [01:14:53,580 - 01:14:56,600] But if he's accelerating not quite that fast,
+- [01:14:56,600 - 01:14:59,360] he'll cross the event horizon at the same time.
+- [01:14:59,580 - 01:15:00,140] So there's...
+- [01:15:00,759 - 01:15:01,020] What's that?
+- [01:15:01,380 - 01:15:02,800] Suppose Bob is accelerating.
+- [01:15:02,800 - 01:15:05,660] How would that be described in that diagram?
+- [01:15:05,660 - 01:15:06,700] Here is Bob is accelerating.
+- [01:15:06,960 - 01:15:07,240] But no,
+- [01:15:07,240 - 01:15:07,400] no,
+- [01:15:07,400 - 01:15:08,200] not that fast.
+- [01:15:09,000 - 01:15:10,100] He's trying to get away,
+- [01:15:10,100 - 01:15:11,420] but he doesn't have quite enough pump.
+- [01:15:11,720 - 01:15:11,920] Well,
+- [01:15:11,920 - 01:15:12,700] then he falls through.
+- [01:15:12,700 - 01:15:13,960] Then he falls...
+- [01:15:13,960 - 01:15:16,060] He might wind up falling through over here.
+- [01:15:16,060 - 01:15:16,800] Right.
+- [01:15:17,680 - 01:15:18,360] Okay.
+- [01:15:18,560 - 01:15:19,240] Okay,
+- [01:15:19,240 - 01:15:19,700] so...
+- [01:15:19,700 - 01:15:20,060] Now,
+- [01:15:20,060 - 01:15:21,260] if he falls through late enough,
+- [01:15:21,260 - 01:15:22,700] if he falls through very,
+- [01:15:22,700 - 01:15:23,580] very late,
+- [01:15:24,800 - 01:15:28,320] let's suppose he falls through way out here,
+- [01:15:28,320 - 01:15:30,760] then he looks back,
+- [01:15:32,679 - 01:15:35,739] and what he sees is Alice
+- [01:15:35,739 - 01:15:38,800] just after she passes the horizon.
+- [01:15:39,880 - 01:15:41,740] He doesn't have much time.
+- [01:15:42,380 - 01:15:45,160] He gets terminated pretty quickly up here.
+- [01:15:45,160 - 01:15:47,160] And so he doesn't get to see
+- [01:15:47,160 - 01:15:49,160] much of Alice after she passes the horizon.
+- [01:15:51,000 - 01:15:52,160] He's watching her.
+- [01:15:52,260 - 01:15:53,940] Nothing strange about her,
+- [01:15:53,940 - 01:15:56,720] but he gets terminated very quickly.
+- [01:15:57,520 - 01:16:00,440] So from Alice...
+- [01:16:00,440 - 01:16:00,500] Well,
+- [01:16:00,500 - 01:16:01,540] in watching Alice,
+- [01:16:01,540 - 01:16:05,220] Bob will just barely see her cross the horizon,
+- [01:16:06,040 - 01:16:07,480] not before she gets killed,
+- [01:16:07,480 - 01:16:08,700] but before he gets killed.
+- [01:16:09,900 - 01:16:12,520] So that means that if you're trying to
+- [01:16:12,520 - 01:16:15,140] accelerate to get out of the black hole,
+- [01:16:15,160 - 01:16:16,680] you can't quite get there.
+- [01:16:17,000 - 01:16:19,760] You hit the singularity sooner rather than later.
+- [01:16:21,380 - 01:16:21,860] No,
+- [01:16:21,860 - 01:16:22,340] no,
+- [01:16:22,340 - 01:16:23,120] no,
+- [01:16:23,120 - 01:16:23,760] no.
+- [01:16:24,880 - 01:16:28,390] You have to remember that distances and
+- [01:16:28,390 - 01:16:31,900] times on this diagram have to be...
+- [01:16:32,900 - 01:16:33,380] Okay,
+- [01:16:33,380 - 01:16:36,520] so that's...
+- [01:16:37,060 - 01:16:38,760] Everything is assuming that nothing
+- [01:16:38,760 - 01:16:40,460] can cause the speed of light,
+- [01:16:40,460 - 01:16:40,740] right?
+- [01:16:41,000 - 01:16:41,580] Nothing what?
+- [01:16:41,740 - 01:16:43,300] Nothing can cause the speed of light.
+- [01:16:43,480 - 01:16:43,640] Yeah,
+- [01:16:43,640 - 01:16:44,980] nothing can exceed the speed of light.
+- [01:16:44,980 - 01:16:46,880] So far there's absolutely no credible
+- [01:16:46,880 - 01:16:48,780] evidence of anything causing the light.
+- [01:16:48,860 - 01:16:50,280] No credible evidence of what?
+- [01:16:50,600 - 01:16:52,440] Anything causing the speed of light.
+- [01:16:52,720 - 01:16:56,080] There's no evidence of anything causing the speed of light.
+- [01:16:56,420 - 01:16:58,200] The media sometimes...
+- [01:16:58,200 - 01:16:58,240] What?
+- [01:16:58,460 - 01:16:59,520] The media...
+- [01:16:59,520 - 01:17:02,200] They sometimes say in the media that there's
+- [01:17:02,200 - 01:17:04,880] some evidence of something causing the speed of light.
+- [01:17:05,440 - 01:17:06,180] In Italy,
+- [01:17:06,180 - 01:17:06,660] for example.
+- [01:17:06,960 - 01:17:07,420] In Italy,
+- [01:17:07,420 - 01:17:07,600] yeah.
+- [01:17:07,640 - 01:17:09,960] That does happen in Italy.
+- [01:17:11,260 - 01:17:11,740] Yeah,
+- [01:17:11,740 - 01:17:12,720] we've been through this.
+- [01:17:12,720 - 01:17:17,240] We've spent time discussing the Italian laws of physics.
+- [01:17:20,460 - 01:17:22,680] It's worse in southern Italy than in northern Italy,
+- [01:17:22,820 - 01:17:24,240] but as soon as you cross the French...
+- [01:17:24,240 - 01:17:25,680] The Alps or the...
+- [01:17:26,340 - 01:17:29,240] Going through the Mont Blanc tunnel...
+- [01:17:29,240 - 01:17:29,300] Well,
+- [01:17:29,300 - 01:17:30,740] you don't go through the Mont Blanc tunnel anymore,
+- [01:17:30,740 - 01:17:31,760] but...
+- [01:17:31,760 - 01:17:33,720] I have one more question.
+- [01:17:34,440 - 01:17:36,500] Suppose Alice and Bob are together.
+- [01:17:36,820 - 01:17:38,660] They have a quote,
+- [01:17:38,660 - 01:17:39,660] a synchronized clock,
+- [01:17:39,660 - 01:17:40,440] whatever that means.
+- [01:17:40,440 - 01:17:42,820] And Alice goes and gets very,
+- [01:17:42,820 - 01:17:45,880] very close to the event horizon and circles back out.
+- [01:17:47,360 - 01:17:47,840] Well,
+- [01:17:47,840 - 01:17:50,580] if Alice makes a sudden change in her motion,
+- [01:17:50,580 - 01:17:52,860] it's not even clear what it means
+- [01:17:52,860 - 01:17:55,140] to say that their clocks are synchronized.
+- [01:17:55,380 - 01:17:55,540] I agree.
+- [01:17:56,560 - 01:17:58,270] So we'll get her in the same
+- [01:17:58,270 - 01:17:59,980] place and then you say it's 12 o'clock,
+- [01:17:59,980 - 01:18:00,340] that's it.
+- [01:18:00,640 - 01:18:01,120] Okay.
+- [01:18:01,540 - 01:18:02,680] And then Alice says,
+- [01:18:02,680 - 01:18:03,760] I'm going to take a dive.
+- [01:18:03,860 - 01:18:04,000] Look,
+- [01:18:04,000 - 01:18:06,800] you can think of a zillion questions to ask,
+- [01:18:06,800 - 01:18:09,620] but draw the diagram.
+- [01:18:09,940 - 01:18:10,420] Draw the diagram.
+- [01:18:10,440 - 01:18:12,600] Draw the diagram and answer the question.
+- [01:18:12,640 - 01:18:15,160] You've got the tools now to answer the question yourself.
+- [01:18:16,020 - 01:18:18,300] I showed you how to answer a few questions.
+- [01:18:20,960 - 01:18:25,620] And the diagram is all you really need.
+- [01:18:27,540 - 01:18:28,040] Okay,
+- [01:18:28,040 - 01:18:29,440] if there are no other urgent questions...
+- [01:18:29,960 - 01:18:30,060] Yes,
+- [01:18:30,060 - 01:18:30,320] okay,
+- [01:18:30,320 - 01:18:31,520] there are urgent questions.
+- [01:18:32,420 - 01:18:33,420] I really...
+- [01:18:33,420 - 01:18:35,020] Bob...
+- [01:18:35,900 - 01:18:37,150] You've got to speak up
+- [01:18:37,150 - 01:18:38,400] because I'm deaf as a stone.
+- [01:18:38,680 - 01:18:39,340] I'm sorry.
+- [01:18:40,000 - 01:18:43,380] If Bob manages to accelerate on his original path,
+- [01:18:43,380 - 01:18:46,130] and I'm still not clear about
+- [01:18:46,130 - 01:18:48,880] what he actually sees with Alice,
+- [01:18:48,880 - 01:18:51,360] does he see her for an infinity of time?
+- [01:18:51,600 - 01:18:51,820] Sorry,
+- [01:18:51,820 - 01:18:53,380] if he does or doesn't accelerate?
+- [01:18:53,800 - 01:18:54,180] He does accelerate.
+- [01:18:54,520 - 01:18:55,080] He does not.
+- [01:18:55,280 - 01:18:55,980] He does.
+- [01:18:56,020 - 01:18:57,060] He does accelerate.
+- [01:18:57,320 - 01:18:58,980] He doesn't cross the event horizon.
+- [01:18:59,240 - 01:19:00,900] He doesn't cross the event horizon.
+- [01:19:01,080 - 01:19:01,800] But she does.
+- [01:19:02,080 - 01:19:02,660] And she does.
+- [01:19:02,680 - 01:19:05,580] So what I'm trying to understand is whether or not
+- [01:19:05,580 - 01:19:08,480] he actually sees her for an infinite amount of time.
+- [01:19:08,480 - 01:19:09,960] Because if that's so,
+- [01:19:09,960 - 01:19:11,460] then she never,
+- [01:19:11,460 - 01:19:13,360] you know,
+- [01:19:13,360 - 01:19:15,140] she never dies,
+- [01:19:15,140 - 01:19:15,980] right?
+- [01:19:16,120 - 01:19:16,480] So,
+- [01:19:16,480 - 01:19:17,980] from his perspective.
+- [01:19:18,680 - 01:19:19,840] And that's...
+- [01:19:19,840 - 01:19:21,220] From his perspective,
+- [01:19:21,220 - 01:19:24,580] he sees her for an infinite amount of time,
+- [01:19:24,580 - 01:19:27,640] but he sees her slow down.
+- [01:19:28,200 - 01:19:28,520] Yes,
+- [01:19:28,520 - 01:19:28,900] of course.
+- [01:19:29,060 - 01:19:30,020] He sees her slow down.
+- [01:19:31,540 - 01:19:34,740] He will see a finite number of heartbeats.
+- [01:19:35,100 - 01:19:37,720] But her reality then is different from his reality.
+- [01:19:38,480 - 01:19:39,020] Well,
+- [01:19:39,020 - 01:19:40,240] I don't know what...
+- [01:19:40,240 - 01:19:41,960] Reality is a loaded word.
+- [01:19:42,720 - 01:19:44,120] It's a loaded word,
+- [01:19:44,120 - 01:19:48,220] and we can come back to that question of,
+- [01:19:48,220 - 01:19:48,560] you know,
+- [01:19:48,560 - 01:19:49,980] what is real and what is not real.
+- [01:19:50,180 - 01:19:53,280] But the figure,
+- [01:19:53,280 - 01:19:53,860] for example,
+- [01:19:53,860 - 01:19:55,100] tells us...
+- [01:19:55,100 - 01:19:59,640] There is a sense in which Bob sees Alice die.
+- [01:20:00,300 - 01:20:00,980] Okay?
+- [01:20:01,060 - 01:20:01,880] Think about it.
+- [01:20:01,960 - 01:20:02,980] He's watching her,
+- [01:20:02,980 - 01:20:06,440] and he sees a finite number of heartbeats.
+- [01:20:06,440 - 01:20:09,260] It takes an infinite amount of time,
+- [01:20:09,260 - 01:20:12,380] and over that infinite amount of time,
+- [01:20:12,380 - 01:20:15,080] he sees a finite number of heartbeats.
+- [01:20:15,340 - 01:20:17,440] That means in him watching her,
+- [01:20:17,440 - 01:20:19,300] most of the time,
+- [01:20:19,300 - 01:20:20,760] her heart doesn't beat.
+- [01:20:21,240 - 01:20:22,840] So in some stupid sense,
+- [01:20:22,840 - 01:20:24,900] he might conclude that her heart...
+- [01:20:25,320 - 01:20:27,440] Unless he said to himself,
+- [01:20:27,440 - 01:20:27,780] oh,
+- [01:20:27,780 - 01:20:29,000] I know she's crossing the horizon.
+- [01:20:29,340 - 01:20:31,320] But just in terms of watching her,
+- [01:20:31,320 - 01:20:32,720] she slows down,
+- [01:20:32,720 - 01:20:34,100] and her heart stops.
+- [01:20:34,560 - 01:20:35,500] Not quite,
+- [01:20:35,500 - 01:20:36,140] but...
+- [01:20:36,440 - 01:20:38,320] Slows down to almost...
+- [01:20:39,140 - 01:20:41,690] So you might say that Bob
+- [01:20:41,690 - 01:20:44,240] sees Alice die at the horizon.
+- [01:20:44,540 - 01:20:45,400] But of course,
+- [01:20:45,400 - 01:20:48,510] that's to some extent just an artifact of
+- [01:20:48,510 - 01:20:51,620] the fact that he's accelerating away from her.
+- [01:20:54,020 - 01:20:59,400] She is perfectly happy until she gets near the singularity.
+- [01:21:00,200 - 01:21:00,920] Okay.
+- [01:21:01,400 - 01:21:01,840] I...
+- [01:21:01,840 - 01:21:02,180] Yeah.
+- [01:21:02,600 - 01:21:04,520] So from Alice's perspective,
+- [01:21:04,520 - 01:21:06,180] as she's falling through...
+- [01:21:06,440 - 01:21:07,800] Until she falls through,
+- [01:21:07,800 - 01:21:09,720] every bit of matter in that
+- [01:21:09,720 - 01:21:11,640] black hole is all on the surface,
+- [01:21:11,640 - 01:21:11,900] right?
+- [01:21:12,000 - 01:21:12,580] Until she...
+- [01:21:12,580 - 01:21:12,640] Yeah.
+- [01:21:14,000 - 01:21:14,520] Well...
+- [01:21:16,559 - 01:21:17,980] You're asking what she sees?
+- [01:21:18,460 - 01:21:18,980] Yeah.
+- [01:21:19,640 - 01:21:20,160] Well...
+- [01:21:20,160 - 01:21:20,780] I mean,
+- [01:21:20,780 - 01:21:22,290] it seems like what she sees
+- [01:21:22,290 - 01:21:23,800] is she falls through just the same,
+- [01:21:23,800 - 01:21:25,180] all the other matter falls through.
+- [01:21:25,180 - 01:21:27,880] Exactly the same as Charlie following Alice.
+- [01:21:28,960 - 01:21:30,980] Charlie following Alice until
+- [01:21:30,980 - 01:21:33,000] Charlie here passes the horizon,
+- [01:21:33,000 - 01:21:34,620] he sees Alice...
+- [01:21:37,180 - 01:21:37,620] Outside.
+- [01:21:38,420 - 01:21:40,480] So she sees everything on the surface,
+- [01:21:40,480 - 01:21:41,660] or just about...
+- [01:21:41,660 - 01:21:42,260] In some sense,
+- [01:21:42,260 - 01:21:42,480] yeah.
+- [01:21:42,580 - 01:21:43,200] In some sense,
+- [01:21:43,200 - 01:21:43,460] yeah.
+- [01:21:43,620 - 01:21:44,060] Right.
+- [01:21:44,580 - 01:21:45,120] That's right.
+- [01:21:45,220 - 01:21:46,140] Until she falls through.
+- [01:21:47,660 - 01:21:50,080] But she doesn't see anything very unusual.
+- [01:21:50,960 - 01:21:54,260] Charlie doesn't see anything unusual about Alice.
+- [01:21:55,560 - 01:21:57,660] He just sees Alice going about her business,
+- [01:21:57,660 - 01:22:00,620] and at the point where he crosses the horizon...
+- [01:22:00,620 - 01:22:00,880] Remember,
+- [01:22:00,880 - 01:22:03,200] nothing special happens when he crosses the horizon.
+- [01:22:03,320 - 01:22:04,400] There's no signpost there.
+- [01:22:04,900 - 01:22:06,420] He just goes on his merry way.
+- [01:22:06,420 - 01:22:08,080] She goes on her merry way,
+- [01:22:08,080 - 01:22:10,360] and he sees exactly what he would have
+- [01:22:10,360 - 01:22:12,640] seen if there was no real black hole there.
+- [01:22:13,420 - 01:22:15,920] It is true that he does not see her cross
+- [01:22:15,920 - 01:22:18,420] the horizon until the point where he crosses the horizon,
+- [01:22:18,420 - 01:22:19,560] but that's okay.
+- [01:22:19,780 - 01:22:19,900] I mean,
+- [01:22:19,900 - 01:22:22,760] nothing special happens there.
+- [01:22:25,380 - 01:22:27,800] What's the view from the other perspective?
+- [01:22:28,300 - 01:22:29,160] Which other perspective?
+- [01:22:29,500 - 01:22:31,260] From Alice looking back to Bob.
+- [01:22:31,460 - 01:22:32,140] We just did that.
+- [01:22:32,280 - 01:22:33,060] Here's Alice.
+- [01:22:35,520 - 01:22:36,220] Here's Bob.
+- [01:22:36,420 - 01:22:38,420] Alice looks back and sees Bob,
+- [01:22:38,420 - 01:22:39,100] sees Bob,
+- [01:22:39,100 - 01:22:39,680] sees Bob.
+- [01:22:40,160 - 01:22:42,800] Nothing special until she hits the singularity,
+- [01:22:42,800 - 01:22:44,180] and then she doesn't see anything anymore.
+- [01:22:44,740 - 01:22:46,360] But is there a sudden clarity?
+- [01:22:46,580 - 01:22:46,840] Like,
+- [01:22:46,840 - 01:22:47,380] basically,
+- [01:22:47,380 - 01:22:49,140] when Alice is just outside,
+- [01:22:49,140 - 01:22:51,700] all the things that have fallen in before
+- [01:22:51,700 - 01:22:54,260] she did are all smeared on the horizon.
+- [01:22:54,640 - 01:22:55,740] And all of a sudden,
+- [01:22:55,740 - 01:22:56,860] she gets to the other side.
+- [01:22:56,960 - 01:22:58,820] Now she sees chairs and dinosaurs.
+- [01:22:59,240 - 01:23:01,700] She doesn't see anything sudden happen.
+- [01:23:02,339 - 01:23:04,369] Exactly the same as Charlie sees nothing
+- [01:23:04,369 - 01:23:06,400] happen to Alice when he crosses the horizon.
+- [01:23:09,660 - 01:23:10,960] Doesn't see anything special.
+- [01:23:11,580 - 01:23:13,500] So where's all that matter that she was
+- [01:23:13,500 - 01:23:15,420] seeing on the surface before she went across?
+- [01:23:15,740 - 01:23:16,760] As she's falling in,
+- [01:23:16,760 - 01:23:18,000] she sees it fall in.
+- [01:23:18,060 - 01:23:19,060] As she's falling in,
+- [01:23:19,060 - 01:23:20,100] it crosses the horizon.
+- [01:23:20,540 - 01:23:21,000] With her.
+- [01:23:21,320 - 01:23:22,080] With her.
+- [01:23:22,220 - 01:23:22,460] Well,
+- [01:23:22,460 - 01:23:23,060] she sees it.
+- [01:23:23,100 - 01:23:24,040] She looks back in time.
+- [01:23:24,740 - 01:23:25,440] She says,
+- [01:23:25,440 - 01:23:25,560] look,
+- [01:23:25,560 - 01:23:27,120] she says she knows that things don't
+- [01:23:27,120 - 01:23:28,680] move faster than the speed of light.
+- [01:23:28,920 - 01:23:30,020] So she looks back.
+- [01:23:30,060 - 01:23:31,500] She watches the stuff fall in,
+- [01:23:31,500 - 01:23:31,980] and she says,
+- [01:23:31,980 - 01:23:32,200] you know,
+- [01:23:32,200 - 01:23:34,120] I know that stuff fell in a long time ago
+- [01:23:34,120 - 01:23:36,040] because it was moving faster than the speed of light.
+- [01:23:36,040 - 01:23:36,040] And she says,
+- [01:23:36,040 - 01:23:36,040] you know,
+- [01:23:36,040 - 01:23:36,210] I know that stuff fell in a long time ago
+- [01:23:36,210 - 01:23:36,380] because it was moving faster than the speed of light.
+- [01:23:36,380 - 01:23:37,820] It's been traveling with the speed of light.
+- [01:23:38,640 - 01:23:39,120] Right.
+- [01:23:39,280 - 01:23:41,460] So she's not deceived into,
+- [01:23:41,460 - 01:23:41,740] well,
+- [01:23:41,740 - 01:23:42,640] she might be deceived,
+- [01:23:42,640 - 01:23:44,120] but if she knows anything about light,
+- [01:23:44,120 - 01:23:45,500] she will know that the
+- [01:23:45,500 - 01:23:46,880] stuff fell in before she did.
+- [01:23:47,700 - 01:23:48,180] Yeah.
+- [01:23:50,040 - 01:23:50,520] Okay.
+- [01:23:51,100 - 01:23:51,960] Are we happy?
+- [01:23:57,900 - 01:24:01,840] You have the tool to answer any question about this.
+- [01:24:02,180 - 01:24:03,960] If you want to know who sees what,
+- [01:24:03,960 - 01:24:06,080] just draw the lines and the...
+- [01:24:06,380 - 01:24:07,040] And...
+- [01:24:08,160 - 01:24:09,000] And...
+- [01:24:11,460 - 01:24:13,380] One final question,
+- [01:24:13,380 - 01:24:13,780] maybe.
+- [01:24:14,000 - 01:24:18,450] Are you aware of any either movies or fiction that
+- [01:24:18,450 - 01:24:22,900] deals with this stuff in sort of a scientifically realistic way?
+- [01:24:27,099 - 01:24:32,280] You mean movies of somebody falling into a black hole?
+- [01:24:32,820 - 01:24:33,440] There are,
+- [01:24:33,440 - 01:24:34,520] and I don't...
+- [01:24:34,520 - 01:24:36,180] You might...
+- [01:24:38,239 - 01:24:39,960] Try Andrew Hamilton.
+- [01:24:41,359 - 01:24:42,400] Andrew Hamilton,
+- [01:24:42,400 - 01:24:43,000] I think,
+- [01:24:43,000 - 01:24:44,710] has made some simulations of what it
+- [01:24:44,710 - 01:24:46,420] looks like to fall into a black...
+- [01:24:46,420 - 01:24:47,890] What it looks and feels like
+- [01:24:47,890 - 01:24:49,360] to fall into a black hole.
+- [01:24:50,000 - 01:24:50,780] Of course,
+- [01:24:50,780 - 01:24:51,820] you know,
+- [01:24:51,820 - 01:24:53,120] I say nothing special happens,
+- [01:24:53,120 - 01:24:53,880] but of course,
+- [01:24:53,880 - 01:24:55,140] that's right.
+- [01:24:55,839 - 01:24:58,829] But the light that's coming at you is
+- [01:24:58,829 - 01:25:01,820] coming at you in very peculiar and funny ways.
+- [01:25:02,280 - 01:25:02,800] Okay?
+- [01:25:04,520 - 01:25:06,910] Don't blame me if you watch one
+- [01:25:06,910 - 01:25:09,300] of these simulations and get very nauseous.
+- [01:25:10,220 - 01:25:10,700] No,
+- [01:25:10,700 - 01:25:10,860] no,
+- [01:25:10,860 - 01:25:11,740] I mean it.
+- [01:25:12,100 - 01:25:14,440] I have seen some of them.
+- [01:25:14,500 - 01:25:15,420] I can't remember where.
+- [01:25:15,520 - 01:25:16,720] They're not very illuminating.
+- [01:25:16,980 - 01:25:18,580] You won't get much out of them,
+- [01:25:18,580 - 01:25:19,880] but it might be fun to watch one.
+- [01:25:19,980 - 01:25:22,900] But they really are disorienting if you're in a
+- [01:25:22,900 - 01:25:25,820] big room with one of them in front of you.
+- [01:25:27,600 - 01:25:28,920] It makes you seasick.
+- [01:25:30,560 - 01:25:31,040] Okay.
+- [01:25:37,880 - 01:25:38,720] Let's move on,
+- [01:25:38,720 - 01:25:40,000] or should we maybe...
+- [01:25:41,040 - 01:25:41,400] Well,
+- [01:25:41,400 - 01:25:42,580] we can do one of two things.
+- [01:25:42,640 - 01:25:43,770] We can either move on or
+- [01:25:43,770 - 01:25:44,900] we can ask some more questions.
+- [01:25:45,040 - 01:25:49,060] But there's something repetitive about the questions that,
+- [01:25:49,060 - 01:25:49,760] you know,
+- [01:25:49,760 - 01:25:50,500] what does Alice see?
+- [01:25:50,520 - 01:25:51,120] What does Bob see?
+- [01:25:51,180 - 01:25:51,800] What does Alice see?
+- [01:25:51,800 - 01:25:52,340] What does Bob see?
+- [01:25:52,420 - 01:25:53,040] What does Alice see?
+- [01:25:53,180 - 01:25:55,420] So let's break loose from that.
+- [01:25:56,660 - 01:25:58,660] I think this is a little different question.
+- [01:25:58,920 - 01:25:59,100] Yeah,
+- [01:25:59,100 - 01:25:59,340] go ahead.
+- [01:25:59,480 - 01:26:02,400] What's the significance of the apex of the...
+- [01:26:02,400 - 01:26:04,020] The light column there.
+- [01:26:04,420 - 01:26:05,320] Which one?
+- [01:26:05,320 - 01:26:05,600] Where?
+- [01:26:05,900 - 01:26:06,940] Right in the middle.
+- [01:26:07,080 - 01:26:07,400] Here?
+- [01:26:07,580 - 01:26:07,900] No.
+- [01:26:08,040 - 01:26:08,480] Here?
+- [01:26:08,560 - 01:26:08,980] No,
+- [01:26:08,980 - 01:26:09,160] no.
+- [01:26:09,660 - 01:26:10,260] Here.
+- [01:26:10,900 - 01:26:11,500] Ah.
+- [01:26:13,120 - 01:26:13,720] Okay.
+- [01:26:14,320 - 01:26:16,560] Nothing much because,
+- [01:26:16,560 - 01:26:17,420] in fact,
+- [01:26:17,420 - 01:26:20,140] a real black hole that's formed,
+- [01:26:20,140 - 01:26:20,780] for example,
+- [01:26:20,780 - 01:26:22,620] by stellar collapse or something like that,
+- [01:26:22,660 - 01:26:23,840] this isn't even on the diagram.
+- [01:26:24,320 - 01:26:27,220] Only a portion of the diagram up here is relevant.
+- [01:26:27,780 - 01:26:30,680] So that is where I would go right now if...
+- [01:26:30,680 - 01:26:35,540] if we want to go forward or next week.
+- [01:26:37,360 - 01:26:37,960] Next...
+- [01:26:37,960 - 01:26:40,800] This is a sort of idealized black hole,
+- [01:26:40,800 - 01:26:46,240] but a real black hole which forms by collapse,
+- [01:26:46,520 - 01:26:49,500] only a portion of this diagram means anything,
+- [01:26:49,500 - 01:26:52,140] and in particular the part down here doesn't.
+- [01:26:52,960 - 01:26:53,560] Yeah.
+- [01:26:55,420 - 01:27:00,120] Question here about as stuff falls into the black hole,
+- [01:27:00,120 - 01:27:01,780] its mass gets larger.
+- [01:27:02,320 - 01:27:03,720] Its mass gets larger?
+- [01:27:04,540 - 01:27:05,140] Why?
+- [01:27:05,760 - 01:27:07,380] Because mass is falling in.
+- [01:27:07,600 - 01:27:08,040] Oh,
+- [01:27:08,040 - 01:27:09,340] the mass of the black hole gets larger.
+- [01:27:09,480 - 01:27:09,640] Yes,
+- [01:27:09,640 - 01:27:09,900] yes,
+- [01:27:09,900 - 01:27:10,120] yes,
+- [01:27:10,120 - 01:27:10,340] yes.
+- [01:27:10,520 - 01:27:10,980] Yes,
+- [01:27:10,980 - 01:27:11,780] that's true.
+- [01:27:12,240 - 01:27:14,020] And therefore the...
+- [01:27:15,379 - 01:27:17,460] ...Schwarzschild radius is getting larger.
+- [01:27:17,740 - 01:27:17,960] Yes,
+- [01:27:17,960 - 01:27:18,100] indeed.
+- [01:27:18,520 - 01:27:20,120] What's happening to the...
+- [01:27:20,120 - 01:27:22,280] the things on the surface there?
+- [01:27:22,460 - 01:27:23,140] They're not...
+- [01:27:23,140 - 01:27:24,360] They aren't...
+- [01:27:25,000 - 01:27:26,020] Which surface?
+- [01:27:26,420 - 01:27:26,740] Hmm?
+- [01:27:26,900 - 01:27:27,580] Which surface?
+- [01:27:28,120 - 01:27:30,100] Near the surface of the black hole.
+- [01:27:30,100 - 01:27:32,140] Near the surface of the black hole.
+- [01:27:32,320 - 01:27:33,100] Near the surface of the black hole.
+- [01:27:33,100 - 01:27:33,620] You mean the horizon.
+- [01:27:33,880 - 01:27:34,520] The horizon,
+- [01:27:34,520 - 01:27:34,820] yes.
+- [01:27:35,860 - 01:27:36,360] Yeah.
+- [01:27:37,620 - 01:27:38,120] And...
+- [01:27:42,040 - 01:27:45,080] Is it coming out when it gets bigger?
+- [01:27:45,160 - 01:27:46,120] Do they move out?
+- [01:27:46,260 - 01:27:47,000] Sort of?
+- [01:27:47,120 - 01:27:47,260] Yeah.
+- [01:27:47,320 - 01:27:52,000] The pictures that I drew here were appropriate for...
+- [01:27:54,680 - 01:27:57,380] for Alice's and Bob's who are much lighter
+- [01:27:57,380 - 01:28:00,080] than the black hole and don't have that much
+- [01:28:00,080 - 01:28:00,740] react...
+- [01:28:00,740 - 01:28:03,240] The black hole doesn't react very strongly to them.
+- [01:28:03,820 - 01:28:04,640] If you were to take,
+- [01:28:04,640 - 01:28:05,180] for example,
+- [01:28:05,180 - 01:28:09,460] another heavy mass and drop it in and really follow
+- [01:28:09,460 - 01:28:09,820] it,
+- [01:28:09,820 - 01:28:14,490] what you would see is at
+- [01:28:14,490 - 01:28:19,160] first the horizon would bulge out,
+- [01:28:19,160 - 01:28:22,260] sort of be attracted by the
+- [01:28:22,260 - 01:28:22,780] other object,
+- [01:28:22,780 - 01:28:29,220] and then they would merge and form one horizon.
+- [01:28:33,000 - 01:28:33,560] Then,
+- [01:28:33,560 - 01:28:35,600] because black holes have no hair,
+- [01:28:35,600 - 01:28:40,000] it would pull itself together into a sphere,
+- [01:28:40,320 - 01:28:42,560] but the sphere would be slightly larger.
+- [01:28:44,200 - 01:28:46,630] And we can calculate how much larger
+- [01:28:46,630 - 01:28:49,060] if we know how much mass was added.
+- [01:28:49,780 - 01:28:52,240] Remember the radius is 2mg.
+- [01:28:54,120 - 01:28:54,680] Sorry,
+- [01:28:54,680 - 01:28:55,080] 2...
+- [01:28:55,080 - 01:28:55,620] Yeah,
+- [01:28:55,620 - 01:28:56,220] 2mg.
+- [01:28:56,420 - 01:28:57,860] So if we add some
+- [01:28:57,860 - 01:28:59,300] energy in the form of mass,
+- [01:28:59,300 - 01:29:02,340] then the radius responds in an appropriate way.
+- [01:29:02,440 - 01:29:05,100] The Schwarzschild radius responds in an appropriate way.
+- [01:29:06,760 - 01:29:07,320] Yeah?
+- [01:29:07,440 - 01:29:10,370] There was a recent NASA picture about the
+- [01:29:10,370 - 01:29:13,300] center of the Milky Way galaxy absorbing some
+- [01:29:14,339 - 01:29:15,440] adjacent matter,
+- [01:29:15,440 - 01:29:17,690] but it didn't take an infinite amount of
+- [01:29:17,690 - 01:29:19,940] time for us to see flashes and so
+- [01:29:19,940 - 01:29:20,180] forth.
+- [01:29:20,460 - 01:29:20,740] No,
+- [01:29:20,740 - 01:29:20,860] no.
+- [01:29:20,860 - 01:29:21,320] Yeah.
+- [01:29:21,820 - 01:29:22,380] No.
+- [01:29:22,920 - 01:29:25,780] The light that you see from a
+- [01:29:25,780 - 01:29:28,640] black hole is not coming from the horizon.
+- [01:29:29,660 - 01:29:33,220] It's coming from all sorts of stuff,
+- [01:29:33,220 - 01:29:36,060] hot stuff that's circulating around the horizon,
+- [01:29:40,400 - 01:29:43,520] and that's heated up by...
+- [01:29:44,860 - 01:29:45,500] Remember,
+- [01:29:45,500 - 01:29:46,600] for example,
+- [01:29:46,600 - 01:29:48,480] that at a certain distance around,
+- [01:29:48,480 - 01:29:51,960] you can have photons or light just
+- [01:29:51,960 - 01:29:53,140] moving around on circles.
+- [01:29:53,440 - 01:29:57,920] All sorts of very complicated collisions can take place.
+- [01:29:58,900 - 01:29:59,620] We're not...
+- [01:29:59,620 - 01:30:01,360] In a real black hole,
+- [01:30:01,360 - 01:30:02,640] there's stuff out there.
+- [01:30:02,740 - 01:30:04,760] It's not just a black hole in empty space.
+- [01:30:05,120 - 01:30:06,560] Here we're pretty much talking about
+- [01:30:06,560 - 01:30:08,000] a black hole in empty space.
+- [01:30:08,460 - 01:30:10,020] There's all kinds of stuff out there.
+- [01:30:10,120 - 01:30:11,180] There's an accretion disk,
+- [01:30:11,180 - 01:30:12,720] all sorts of things falling in.
+- [01:30:13,300 - 01:30:16,410] And what you see is not
+- [01:30:16,410 - 01:30:19,520] really coming from precisely the horizon.
+- [01:30:19,700 - 01:30:21,260] It's coming from outside the horizon.
+- [01:30:22,580 - 01:30:23,060] So...
+- [01:30:26,200 - 01:30:27,900] Regarding the mass falling from the horizon,
+- [01:30:27,900 - 01:30:28,600] falling in on the horizon,
+- [01:30:28,600 - 01:30:29,580] growing out to meet it,
+- [01:30:29,640 - 01:30:32,320] I think you've said previously that in black holes,
+- [01:30:32,380 - 01:30:34,240] it re-equilibrates essentially at the speed
+- [01:30:34,240 - 01:30:36,100] of light or something like that.
+- [01:30:36,260 - 01:30:37,180] They equilibrate very,
+- [01:30:37,180 - 01:30:37,780] very fast.
+- [01:30:38,260 - 01:30:39,580] Almost at the speed of light,
+- [01:30:39,580 - 01:30:39,840] yeah.
+- [01:30:40,160 - 01:30:40,620] Very,
+- [01:30:40,620 - 01:30:41,200] very fast.
+- [01:30:43,280 - 01:30:44,200] All right.
+- [01:30:45,720 - 01:30:48,740] The time that it would take if
+- [01:30:48,740 - 01:30:51,760] you made two solar mass black holes collide
+- [01:30:52,680 - 01:30:55,190] so that they form the sort
+- [01:30:55,190 - 01:30:57,700] of dumbbell at first like that,
+- [01:30:58,860 - 01:31:03,060] the time that it would take for it to equilibrate
+- [01:31:03,060 - 01:31:04,980] is not much longer than
+- [01:31:04,980 - 01:31:06,900] the light transit time across it,
+- [01:31:07,000 - 01:31:10,120] which is a very small fraction of a second.
+- [01:31:13,799 - 01:31:18,060] Maybe 10 or 100 times the light transit time.
+- [01:31:18,140 - 01:31:19,920] What's the light transit time
+- [01:31:19,920 - 01:31:21,700] across a one kilometer black hole?
+- [01:31:23,200 - 01:31:23,880] Well,
+- [01:31:23,880 - 01:31:26,160] light travels at 3 times 10 to the 8 meters,
+- [01:31:26,180 - 01:31:27,880] so 3 times 10 to the 8 meters.
+- [01:31:27,900 - 01:31:29,680] 10 to the 5 kilometers per second.
+- [01:31:30,340 - 01:31:32,620] Let's say 10 to the 5 kilometers per second.
+- [01:31:32,840 - 01:31:35,530] So 10 to the minus 5 seconds for
+- [01:31:35,530 - 01:31:38,220] light to travel across a solar mass black hole.
+- [01:31:41,120 - 01:31:43,480] Maybe 10 to the minus 3 seconds,
+- [01:31:44,900 - 01:31:46,400] millisecond or something like that,
+- [01:31:46,580 - 01:31:48,670] for this great big massive
+- [01:31:48,670 - 01:31:50,760] object to equilibrate to the point
+- [01:31:50,760 - 01:31:51,980] where it's the shiniest,
+- [01:31:51,980 - 01:31:54,080] most perfect sphere that you can imagine.
+- [01:31:56,560 - 01:31:57,880] If you had the time,
+- [01:31:57,880 - 01:32:00,080] if you had two very massive
+- [01:32:00,080 - 01:32:02,280] black holes starting to merge together,
+- [01:32:06,299 - 01:32:08,100] each black hole will not have,
+- [01:32:08,960 - 01:32:09,520] appreciably,
+- [01:32:09,520 - 01:32:10,160] I don't believe,
+- [01:32:10,220 - 01:32:11,470] affect the shape of the
+- [01:32:11,470 - 01:32:12,720] event horizon on the other one.
+- [01:32:12,880 - 01:32:13,120] Well,
+- [01:32:13,120 - 01:32:14,160] no,
+- [01:32:14,160 - 01:32:15,660] of course it will.
+- [01:32:17,759 - 01:32:19,400] As they come together,
+- [01:32:19,400 - 01:32:23,160] the event horizon will look like that,
+- [01:32:24,759 - 01:32:27,580] and then it'll look like that,
+- [01:32:27,580 - 01:32:28,200] well,
+- [01:32:28,200 - 01:32:29,360] you know what I mean,
+- [01:32:30,020 - 01:32:31,060] peanut-shaped,
+- [01:32:31,760 - 01:32:36,240] and then almost spherical but not quite,
+- [01:32:37,260 - 01:32:38,420] and then spherical,
+- [01:32:38,680 - 01:32:41,300] all within about 10 to the minus 3 seconds.
+- [01:32:41,560 - 01:32:42,260] But if it's very,
+- [01:32:42,260 - 01:32:42,980] very massive,
+- [01:32:43,040 - 01:32:45,190] would it take years or
+- [01:32:45,190 - 01:32:47,340] longer for the merger to occur?
+- [01:32:48,240 - 01:32:50,000] Transit time of light is,
+- [01:32:50,660 - 01:32:53,760] if the separation is...
+- [01:32:53,760 - 01:32:54,260] Transit time,
+- [01:32:54,260 - 01:32:54,820] okay.
+- [01:32:54,820 - 01:32:58,060] If you make the black hole big enough,
+- [01:32:58,140 - 01:32:59,380] you can make the transit
+- [01:32:59,380 - 01:33:00,620] time across it anything you like.
+- [01:33:01,600 - 01:33:04,220] But the biggest black hole that's known,
+- [01:33:04,460 - 01:33:05,520] I think,
+- [01:33:05,520 - 01:33:08,300] is something like about 10 to the 9th solar masses.
+- [01:33:09,420 - 01:33:11,600] I remember that would take about 20 minutes,
+- [01:33:11,600 - 01:33:12,120] I think,
+- [01:33:12,140 - 01:33:13,280] for light to cross it.
+- [01:33:14,379 - 01:33:16,900] So 20 minutes for it to equilibrate.
+- [01:33:20,459 - 01:33:22,780] My question before was really,
+- [01:33:22,780 - 01:33:28,260] Bob is looking at something between the original,
+- [01:33:28,600 - 01:33:33,860] not the massive object falling in,
+- [01:33:34,000 - 01:33:37,560] but something that had been falling in
+- [01:33:37,560 - 01:33:43,920] and is currently between where the original horizon is
+- [01:33:43,920 - 01:33:45,740] and the new horizon,
+- [01:33:45,900 - 01:33:47,120] or somehow,
+- [01:33:47,120 - 01:33:49,880] or can it not happen like that?
+- [01:33:58,540 - 01:34:03,600] What will happen if Bob carries,
+- [01:34:03,820 - 01:34:05,560] or Alice carries a heavy man,
+- [01:34:05,760 - 01:34:08,040] let's suppose Alice carries a heavy object in
+- [01:34:09,980 - 01:34:12,380] and crosses the horizon over here?
+- [01:34:13,500 - 01:34:14,760] And what will happen...
+- [01:34:14,760 - 01:34:17,800] Now I'm thinking something else.
+- [01:34:20,420 - 01:34:22,040] Martha falls in.
+- [01:34:22,040 - 01:34:23,560] Martha falls in,
+- [01:34:23,560 - 01:34:23,740] yeah.
+- [01:34:23,740 - 01:34:24,880] And what happens to,
+- [01:34:24,980 - 01:34:27,020] what does Bob see happen to Alice?
+- [01:34:27,720 - 01:34:28,760] Where is Alice?
+- [01:34:29,120 - 01:34:32,940] Alice is falling in somewhere else on the other side.
+- [01:34:33,620 - 01:34:34,560] Here or here?
+- [01:34:35,740 - 01:34:37,840] Do you want it before Martha or after Martha?
+- [01:34:38,160 - 01:34:38,640] Before.
+- [01:34:39,100 - 01:34:41,080] It's not really a spatial dimension.
+- [01:34:41,640 - 01:34:43,600] You only have one spatial dimension.
+- [01:34:43,600 - 01:34:43,840] I know,
+- [01:34:43,840 - 01:34:45,320] so we only have that much,
+- [01:34:45,320 - 01:34:47,580] we only have a bit of flexibility in drawing pictures.
+- [01:34:47,960 - 01:34:49,120] So let's decide.
+- [01:34:49,260 - 01:34:51,400] Do we want Alice before Martha
+- [01:34:51,400 - 01:34:52,380] or Alice after Martha?
+- [01:34:52,660 - 01:34:53,020] Okay,
+- [01:34:53,020 - 01:34:53,680] before.
+- [01:34:54,200 - 01:34:54,440] Okay,
+- [01:34:54,440 - 01:34:55,160] so here's Alice,
+- [01:34:55,160 - 01:34:55,440] right?
+- [01:34:56,760 - 01:34:57,280] Okay.
+- [01:34:57,840 - 01:34:58,360] Now,
+- [01:34:58,360 - 01:35:00,080] we haven't got to the point
+- [01:35:00,080 - 01:35:02,800] where we can talk about what happens
+- [01:35:02,800 - 01:35:04,560] to the black hole when something falls in,
+- [01:35:04,660 - 01:35:06,020] but I will tell you.
+- [01:35:09,100 - 01:35:09,620] No,
+- [01:35:09,620 - 01:35:10,800] you know I won't.
+- [01:35:10,880 - 01:35:11,600] I won't,
+- [01:35:11,600 - 01:35:12,060] I won't,
+- [01:35:12,060 - 01:35:12,480] I won't.
+- [01:35:12,640 - 01:35:13,340] This is,
+- [01:35:13,340 - 01:35:15,900] keep the question in mind for next week.
+- [01:35:16,060 - 01:35:18,520] Next week we're going to talk exactly about
+- [01:35:18,520 - 01:35:20,240] how black holes are formed,
+- [01:35:20,240 - 01:35:22,400] how their horizons form,
+- [01:35:22,660 - 01:35:24,240] and if you throw in more material,
+- [01:35:24,420 - 01:35:25,520] how the horizon responds,
+- [01:35:25,980 - 01:35:28,120] and we will get there.
+- [01:35:28,200 - 01:35:28,820] We will get there,
+- [01:35:28,820 - 01:35:29,800] and I'll show you.
+- [01:35:29,900 - 01:35:32,060] It's surprising,
+- [01:35:32,060 - 01:35:34,260] it's different than you expect,
+- [01:35:35,619 - 01:35:37,360] but all very logical.
+- [01:35:39,620 - 01:35:41,120] Let's come back to it.
+- [01:35:41,420 - 01:35:46,600] How does this diagram change as a function of rs,
+- [01:35:46,620 - 01:35:48,320] as a function of the short-circuit?
+- [01:35:48,340 - 01:35:49,040] This is bigger.
+- [01:35:50,799 - 01:35:52,640] So the light tones...
+- [01:35:52,640 - 01:35:53,460] Oh,
+- [01:35:53,460 - 01:35:54,420] this diagram over here.
+- [01:35:55,160 - 01:35:55,760] Oh,
+- [01:35:55,760 - 01:35:56,140] I see,
+- [01:35:56,140 - 01:35:56,300] okay.
+- [01:35:56,600 - 01:35:57,200] Well,
+- [01:35:57,200 - 01:35:59,660] remember what we did was we scaled out,
+- [01:36:00,820 - 01:36:03,100] we scaled out our Schwarzschild.
+- [01:36:03,180 - 01:36:04,620] The diagram doesn't change,
+- [01:36:04,760 - 01:36:08,260] but the meaning of distances on the diagram changes.
+- [01:36:08,340 - 01:36:10,380] The diagram stays exactly the same,
+- [01:36:10,560 - 01:36:12,520] but the proper distance,
+- [01:36:12,520 - 01:36:13,040] let's say,
+- [01:36:13,060 - 01:36:14,620] between this point and this point
+- [01:36:14,620 - 01:36:17,220] is proportional to the Schwarzschild radius.
+- [01:36:19,040 - 01:36:20,700] So the diagram is exactly the same.
+- [01:36:21,660 - 01:36:23,960] It's just like having a sphere.
+- [01:36:24,180 - 01:36:25,260] Supposing you had a sphere,
+- [01:36:25,260 - 01:36:26,880] two spheres,
+- [01:36:27,120 - 01:36:30,760] the moon and the earth.
+- [01:36:31,180 - 01:36:31,680] Well,
+- [01:36:31,680 - 01:36:33,740] I can draw them both exactly the same way.
+- [01:36:33,800 - 01:36:34,660] They look like spheres.
+- [01:36:35,860 - 01:36:38,120] Does the picture change when
+- [01:36:38,120 - 01:36:40,380] I go from moon to earth?
+- [01:36:40,840 - 01:36:41,340] No,
+- [01:36:41,340 - 01:36:45,340] if I have scaled the radius of the earth
+- [01:36:45,340 - 01:36:46,860] or moon out of the problem.
+- [01:36:46,980 - 01:36:47,440] What is true,
+- [01:36:47,440 - 01:36:47,720] though,
+- [01:36:47,720 - 01:36:49,020] is the same data,
+- [01:36:49,040 - 01:36:49,400] the same diagram,
+- [01:36:50,620 - 01:36:54,140] that distance on the moon
+- [01:36:55,700 - 01:36:57,220] might be a hundred miles.
+- [01:36:58,700 - 01:37:01,780] On the earth,
+- [01:37:02,400 - 01:37:04,820] the same angular distance would be,
+- [01:37:04,840 - 01:37:05,300] how much was it,
+- [01:37:05,300 - 01:37:07,680] about four times bigger,
+- [01:37:07,680 - 01:37:08,040] right?
+- [01:37:08,480 - 01:37:09,020] Yeah,
+- [01:37:09,020 - 01:37:11,140] so on the earth it would be 400 miles.
+- [01:37:11,880 - 01:37:13,300] Same thing is true here.
+- [01:37:13,580 - 01:37:16,340] If we had a black hole of solar,
+- [01:37:17,040 - 01:37:19,020] like a one kilometer radius black hole,
+- [01:37:19,040 - 01:37:22,800] then this distance here might be,
+- [01:37:22,860 - 01:37:23,820] let's say,
+- [01:37:23,820 - 01:37:24,740] half a kilometer.
+- [01:37:26,640 - 01:37:27,760] On the other hand,
+- [01:37:27,760 - 01:37:29,440] we would draw exactly the same picture
+- [01:37:29,440 - 01:37:33,180] for a huge 10 to the ninth solar mass,
+- [01:37:33,260 - 01:37:34,240] a monster black hole.
+- [01:37:34,980 - 01:37:37,740] And then instead of being 0.5 kilometers,
+- [01:37:37,900 - 01:37:40,660] it might be 0.5 times 10 to the ninth kilometers.
+- [01:37:41,480 - 01:37:43,880] But the diagram would be exactly the same,
+- [01:37:44,020 - 01:37:46,500] just the meaning of distances,
+- [01:37:46,700 - 01:37:48,540] the actual number of meters,
+- [01:37:49,040 - 01:37:51,160] the number of meter sticks connecting those two points
+- [01:37:51,160 - 01:37:53,440] would depend on the Schwarzschild radius.
+- [01:37:53,820 - 01:37:55,790] Just exactly the same as if
+- [01:37:55,790 - 01:37:57,760] we took the moon and the earth,
+- [01:37:58,000 - 01:37:59,960] drew exactly the same picture,
+- [01:38:00,040 - 01:38:01,420] a sphere is a sphere is a sphere,
+- [01:38:02,259 - 01:38:05,920] but then remember that distances between points
+- [01:38:05,920 - 01:38:10,760] will scale as the radius of the sphere.
+- [01:38:12,440 - 01:38:14,720] Does anything change if Bob's orbiting the black hole?
+- [01:38:15,080 - 01:38:15,600] No,
+- [01:38:15,600 - 01:38:16,140] not much.
+- [01:38:16,140 - 01:38:16,480] No,
+- [01:38:16,480 - 01:38:17,140] very little.
+- [01:38:17,140 - 01:38:21,160] It becomes a much more complicated problem
+- [01:38:21,160 - 01:38:23,940] to be quantitative about exactly what he sees,
+- [01:38:24,180 - 01:38:24,660] but no,
+- [01:38:24,660 - 01:38:26,040] nothing really changes,
+- [01:38:26,040 - 01:38:26,280] no.
+- [01:38:26,680 - 01:38:27,200] Yeah?
+- [01:38:28,140 - 01:38:29,360] When you have an earth,
+- [01:38:29,360 - 01:38:30,160] something like that,
+- [01:38:30,240 - 01:38:31,420] and you fall in it,
+- [01:38:32,139 - 01:38:34,209] then gravity goes to zero because
+- [01:38:34,209 - 01:38:36,280] the mass is outside of you.
+- [01:38:36,340 - 01:38:37,760] You have a distribution of mass.
+- [01:38:38,120 - 01:38:38,420] No,
+- [01:38:38,420 - 01:38:38,560] no,
+- [01:38:38,560 - 01:38:38,700] no,
+- [01:38:38,700 - 01:38:38,920] no,
+- [01:38:38,920 - 01:38:39,100] no,
+- [01:38:39,100 - 01:38:39,260] no,
+- [01:38:39,260 - 01:38:39,500] no,
+- [01:38:39,500 - 01:38:39,600] no,
+- [01:38:39,600 - 01:38:39,680] no,
+- [01:38:39,680 - 01:38:39,780] no.
+- [01:38:39,780 - 01:38:41,140] I understand what you're asking.
+- [01:38:41,300 - 01:38:41,820] No.
+- [01:38:42,620 - 01:38:46,360] The distribution of mass is not on the horizon.
+- [01:38:47,860 - 01:38:48,300] Yeah,
+- [01:38:48,300 - 01:38:50,200] it's not on the horizon.
+- [01:38:50,400 - 01:38:51,400] It's not on the horizon.
+- [01:38:52,020 - 01:38:57,460] And so that the gravity then would go to zero,
+- [01:38:58,460 - 01:38:59,880] essentially inside the black hole,
+- [01:38:59,960 - 01:39:01,100] and similarly to the earth.
+- [01:39:01,180 - 01:39:01,800] Inside the horizon?
+- [01:39:02,440 - 01:39:02,880] No.
+- [01:39:03,660 - 01:39:04,100] No,
+- [01:39:04,100 - 01:39:07,280] the time when gravity goes to zero inside an object
+- [01:39:07,280 - 01:39:08,660] is if you have a shell of mass,
+- [01:39:10,140 - 01:39:11,560] and you're inside the shell.
+- [01:39:13,060 - 01:39:13,500] No,
+- [01:39:13,500 - 01:39:15,480] there's no shell of mass at the horizon.
+- [01:39:15,480 - 01:39:15,620] No,
+- [01:39:15,620 - 01:39:15,720] no,
+- [01:39:15,720 - 01:39:16,000] no,
+- [01:39:16,000 - 01:39:16,140] no,
+- [01:39:16,140 - 01:39:16,220] no.
+- [01:39:16,600 - 01:39:19,700] In a solid earth where you have many shells,
+- [01:39:20,440 - 01:39:22,400] inside each shell it goes to zero,
+- [01:39:22,520 - 01:39:24,200] but then of course you have other shells inside,
+- [01:39:24,540 - 01:39:25,970] but the gravitational force when you
+- [01:39:25,970 - 01:39:27,400] fall to the center of the earth
+- [01:39:27,400 - 01:39:28,380] goes to zero.
+- [01:39:28,940 - 01:39:30,300] Now how about the distribution of
+- [01:39:30,300 - 01:39:31,660] mass inside of a black hole?
+- [01:39:31,700 - 01:39:33,080] It's all of the singularity,
+- [01:39:33,080 - 01:39:33,700] all of it,
+- [01:39:33,700 - 01:39:34,460] all of it,
+- [01:39:34,460 - 01:39:34,680] yeah,
+- [01:39:34,680 - 01:39:35,320] all of it.
+- [01:39:37,080 - 01:39:37,980] It's like having a,
+- [01:39:37,980 - 01:39:40,080] it's the analog of having a point mass,
+- [01:39:41,680 - 01:39:44,860] so that there is no inside and outside.
+- [01:39:44,860 - 01:39:48,200] Except for after travel time in the very recent time.
+- [01:39:48,300 - 01:39:48,960] Except for what?
+- [01:39:49,120 - 01:39:50,800] Travel time in the very recent time.
+- [01:39:51,420 - 01:39:52,020] I mean,
+- [01:39:52,020 - 01:39:54,900] Alice is not at the singularity until she gets there.
+- [01:39:57,020 - 01:39:57,460] Yeah,
+- [01:39:57,460 - 01:39:58,100] you are,
+- [01:39:58,100 - 01:39:59,040] but you don't get to,
+- [01:39:59,620 - 01:40:04,120] if you had a point mass at the origin,
+- [01:40:05,040 - 01:40:06,660] you don't get there until you get there.
+- [01:40:08,100 - 01:40:09,640] But if you're out here,
+- [01:40:09,640 - 01:40:11,760] that doesn't mean that there's no gravity.
+- [01:40:12,400 - 01:40:12,840] Oh,
+- [01:40:12,840 - 01:40:12,920] no,
+- [01:40:12,920 - 01:40:13,100] no,
+- [01:40:13,100 - 01:40:13,260] no,
+- [01:40:13,260 - 01:40:13,400] no,
+- [01:40:13,400 - 01:40:13,900] but I mean,
+- [01:40:13,900 - 01:40:15,100] there might be other masses,
+- [01:40:15,220 - 01:40:17,800] masses which are in the process of falling in.
+- [01:40:17,920 - 01:40:18,220] Oh,
+- [01:40:18,220 - 01:40:18,840] good,
+- [01:40:18,840 - 01:40:19,360] good,
+- [01:40:19,360 - 01:40:19,580] good,
+- [01:40:19,580 - 01:40:19,740] good,
+- [01:40:19,740 - 01:40:19,880] good.
+- [01:40:20,140 - 01:40:21,640] We're going to talk about that next time.
+- [01:40:21,720 - 01:40:23,920] We're going to talk about exactly that next time.
+- [01:40:24,080 - 01:40:25,700] So keep these questions for next time.
+- [01:40:26,960 - 01:40:30,580] You're asking about the questions of how,
+- [01:40:30,720 - 01:40:33,620] of the evolution of the black hole as it forms.
+- [01:40:34,200 - 01:40:35,000] We'll get there.
+- [01:40:35,640 - 01:40:37,540] We'll make a very simple
+- [01:40:37,540 - 01:40:39,440] construction of a black hole forming,
+- [01:40:39,520 - 01:40:41,400] and you'll be able to see everything happening.
+- [01:40:42,560 - 01:40:43,000] Oh.
+- [01:40:45,480 - 01:40:47,820] There's no way you can even measure the angular momentum,
+- [01:40:47,920 - 01:40:50,000] momentum of a black hole,
+- [01:40:50,000 - 01:40:50,160] right?
+- [01:40:50,460 - 01:40:50,900] Say again?
+- [01:40:51,500 - 01:40:53,170] Is there any concept called
+- [01:40:53,170 - 01:40:54,840] angular momentum of a black hole?
+- [01:40:55,040 - 01:40:56,720] What about angular momentum of a black hole?
+- [01:40:56,860 - 01:40:57,080] I mean,
+- [01:40:57,080 - 01:40:58,680] you said,
+- [01:40:58,680 - 01:40:59,960] I suppose you,
+- [01:40:59,960 - 01:41:00,700] somewhere you said that
+- [01:41:00,700 - 01:41:02,020] if it is relatively fast,
+- [01:41:02,020 - 01:41:03,000] then the thing,
+- [01:41:04,080 - 01:41:07,280] instead of the horizon being spherical,
+- [01:41:07,280 - 01:41:08,940] it can be elliptical.
+- [01:41:10,440 - 01:41:10,840] Now,
+- [01:41:10,840 - 01:41:12,160] can we actually sense that?
+- [01:41:12,240 - 01:41:12,440] I mean,
+- [01:41:13,900 - 01:41:15,180] if a black hole is rotating,
+- [01:41:15,180 - 01:41:17,260] its shape is deformed.
+- [01:41:18,670 - 01:41:18,960] Yeah,
+- [01:41:18,960 - 01:41:19,440] and you could,
+- [01:41:19,440 - 01:41:20,410] you can see it from
+- [01:41:20,410 - 01:41:21,380] the outside of the black hole.
+- [01:41:21,680 - 01:41:22,860] Does gravity change?
+- [01:41:22,880 - 01:41:23,460] Hmm?
+- [01:41:24,600 - 01:41:27,880] Does gravity change because it's rotating or is it?
+- [01:41:29,670 - 01:41:29,960] Yes,
+- [01:41:29,960 - 01:41:30,960] gravity changes,
+- [01:41:30,960 - 01:41:33,020] gravity changes because it's rotating.
+- [01:41:34,560 - 01:41:36,940] And the whole geometry changes.
+- [01:41:38,460 - 01:41:40,100] The whole geometry changes.
+- [01:41:41,179 - 01:41:44,360] And if we have time,
+- [01:41:44,360 - 01:41:48,820] the rotating black hole is much more complicated than that.
+- [01:41:50,100 - 01:41:53,180] And it sort of drags space around with it.
+- [01:41:54,180 - 01:41:55,200] Maybe I'll talk,
+- [01:41:55,200 - 01:41:56,600] we'll discuss it a little bit,
+- [01:41:56,600 - 01:41:57,360] but...
+- [01:42:00,380 - 01:42:02,960] Are you talking about rotating singular,
+- [01:42:02,960 - 01:42:03,420] I think?
+- [01:42:04,000 - 01:42:09,680] We're talking about material with angular momentum,
+- [01:42:10,100 - 01:42:11,860] coming together and forming a black hole.
+- [01:42:12,600 - 01:42:13,120] Okay.
+- [01:42:13,120 - 01:42:15,040] It doesn't lose its angular momentum.
+- [01:42:16,159 - 01:42:20,220] And the angular momentum is permanently there.
+- [01:42:20,820 - 01:42:22,910] The effect of the angular momentum is
+- [01:42:22,910 - 01:42:25,000] to deform the black hole exactly like,
+- [01:42:25,000 - 01:42:27,180] exactly like the angular momentum of the
+- [01:42:27,180 - 01:42:29,360] Earth deforms the surface of the Earth.
+- [01:42:30,480 - 01:42:33,100] Makes it into an oblate,
+- [01:42:33,100 - 01:42:34,680] I think it's an oblate spheroid.
+- [01:42:35,640 - 01:42:36,160] Yeah.
+- [01:42:36,780 - 01:42:38,760] And you say rho depends,
+- [01:42:38,760 - 01:42:39,900] or is it a function of?
+- [01:42:39,900 - 01:42:39,920] It's a function of r.
+- [01:42:40,060 - 01:42:43,260] Are you saying that space away,
+- [01:42:43,260 - 01:42:45,980] near a big source of gravity is contracted?
+- [01:42:47,500 - 01:42:47,980] No.
+- [01:42:48,040 - 01:42:50,020] It's just the bigger the r,
+- [01:42:50,020 - 01:42:51,460] the smaller the rho.
+- [01:42:51,720 - 01:42:52,900] In other words...
+- [01:42:52,900 - 01:42:53,300] The bigger the r,
+- [01:42:53,300 - 01:42:54,060] the smaller the rho?
+- [01:42:54,840 - 01:42:55,160] No.
+- [01:42:57,920 - 01:42:58,940] Why do you say that?
+- [01:43:00,220 - 01:43:02,320] It's an inverse function,
+- [01:43:02,320 - 01:43:02,720] isn't it?
+- [01:43:02,940 - 01:43:03,800] It's a function,
+- [01:43:03,800 - 01:43:04,360] but...
+- [01:43:04,900 - 01:43:05,200] Okay.
+- [01:43:05,880 - 01:43:07,600] But are we saying that then,
+- [01:43:07,600 - 01:43:09,880] that the presence of a big source of gravity,
+- [01:43:09,880 - 01:43:11,740] contracts the space around it,
+- [01:43:11,740 - 01:43:12,520] in effect,
+- [01:43:12,520 - 01:43:13,420] is that what we are saying?
+- [01:43:14,660 - 01:43:15,400] A few y.
+- [01:43:15,660 - 01:43:15,820] Yeah.
+- [01:43:16,760 - 01:43:17,220] Yeah.
+- [01:43:18,520 - 01:43:18,980] Yeah.
+- [01:43:19,040 - 01:43:19,860] In a sense,
+- [01:43:19,860 - 01:43:20,240] that's right.
+- [01:43:21,100 - 01:43:21,980] One more question.
+- [01:43:22,500 - 01:43:23,900] Going back to Bob and Alice.
+- [01:43:24,580 - 01:43:26,020] From Bob's point of view,
+- [01:43:26,020 - 01:43:28,040] Alice's time has stopped.
+- [01:43:28,320 - 01:43:29,540] Is it right to say that?
+- [01:43:29,780 - 01:43:29,980] Hmm?
+- [01:43:30,360 - 01:43:32,500] From Alice's point of view...
+- [01:43:32,500 - 01:43:32,720] Well,
+- [01:43:32,720 - 01:43:33,200] of course,
+- [01:43:33,200 - 01:43:34,660] it depends on...
+- [01:43:34,660 - 01:43:35,320] I just...
+- [01:43:35,320 - 01:43:36,560] So the first statement is true,
+- [01:43:36,560 - 01:43:36,760] right?
+- [01:43:37,420 - 01:43:38,320] Let's qualify.
+- [01:43:38,320 - 01:43:38,840] It's not true,
+- [01:43:38,840 - 01:43:40,980] but it's coming to almost zero,
+- [01:43:40,980 - 01:43:41,320] isn't it?
+- [01:43:41,440 - 01:43:43,220] It's dilating down to no time.
+- [01:43:44,800 - 01:43:45,280] No?
+- [01:43:45,740 - 01:43:46,220] Yes.
+- [01:43:46,340 - 01:43:46,820] Yes.
+- [01:43:46,820 - 01:43:47,260] Yes.
+- [01:43:47,260 - 01:43:47,640] Yes.
+- [01:43:47,640 - 01:43:48,000] Yes.
+- [01:43:48,000 - 01:43:48,720] But what's the...
+- [01:43:48,720 - 01:43:50,140] It's approaching no time.
+- [01:43:52,560 - 01:43:53,400] From Alice's...
+- [01:43:53,400 - 01:43:54,800] I'm having trouble getting past the question.
+- [01:43:54,940 - 01:43:56,740] The question really was,
+- [01:43:56,740 - 01:43:58,240] from Alice's point of view,
+- [01:43:58,240 - 01:44:00,340] what is...
+- [01:44:00,340 - 01:44:02,560] Is space coming to an end for Bob?
+- [01:44:03,220 - 01:44:03,700] No.
+- [01:44:04,920 - 01:44:05,400] No?
+- [01:44:05,680 - 01:44:06,160] No?
+- [01:44:06,220 - 01:44:07,000] We draw it again.
+- [01:44:07,000 - 01:44:08,340] We draw it again.
+- [01:44:09,000 - 01:44:10,420] Here's Alice going through.
+- [01:44:10,560 - 01:44:11,840] Here's Bob out here.
+- [01:44:13,360 - 01:44:14,080] Stays outside.
+- [01:44:14,220 - 01:44:15,780] From Alice's point of view,
+- [01:44:15,780 - 01:44:17,000] she sees Bob.
+- [01:44:17,220 - 01:44:17,960] She sees Bob.
+- [01:44:18,160 - 01:44:18,840] Nothing special,
+- [01:44:18,840 - 01:44:19,200] Bob.
+- [01:44:19,500 - 01:44:20,940] It's just when she gets to here,
+- [01:44:20,940 - 01:44:22,420] she doesn't see Bob after that.
+- [01:44:22,480 - 01:44:24,020] Not because anything happened to Bob,
+- [01:44:24,020 - 01:44:25,180] because something happened to her.
+- [01:44:25,960 - 01:44:26,580] That's it.
+- [01:44:30,080 - 01:44:31,520] Just draw the diagram.
+- [01:44:31,800 - 01:44:32,920] Draw the light cones.
+- [01:44:33,620 - 01:44:35,300] She sees him over here.
+- [01:44:35,920 - 01:44:36,400] And...
+- [01:44:37,360 - 01:44:37,840] She sees him over here.
+- [01:44:37,840 - 01:44:37,840] Hi,
+- [01:44:37,840 - 01:44:38,280] Alice.
+- [01:44:40,060 - 01:44:41,500] She sees him over here.
+- [01:44:42,440 - 01:44:43,860] She sees him over here.
+- [01:44:44,640 - 01:44:46,500] She never gets to see him over here.
+- [01:44:47,020 - 01:44:47,500] Again,
+- [01:44:47,500 - 01:44:49,240] not because anything happened to him,
+- [01:44:49,240 - 01:44:50,780] but because she's no longer there.
+- [01:44:53,160 - 01:44:54,120] Which one?
+- [01:44:54,240 - 01:44:54,440] This?
+- [01:44:54,860 - 01:44:56,110] The light from Bob to
+- [01:44:56,110 - 01:44:57,360] Alice should be a straight line.
+- [01:44:57,580 - 01:44:58,920] The light would end there.
+- [01:44:58,920 - 01:44:59,900] The light from Bob to Alice.
+- [01:45:01,100 - 01:45:02,860] The light going from Bob to Alice.
+- [01:45:03,300 - 01:45:03,780] Yeah.
+- [01:45:03,780 - 01:45:04,740] It's not traveling straight.
+- [01:45:04,820 - 01:45:06,320] It curves because of gravity.
+- [01:45:06,380 - 01:45:08,620] then and not in these coordinates
+- [01:45:08,620 - 01:45:10,860] not in these coordinates not in these
+- [01:45:10,860 - 01:45:13,430] coordinates in these coordinates
+- [01:45:13,430 - 01:45:16,000] it's straight in these coordinates
+- [01:45:16,000 - 01:45:20,810] so like you'd be returning to Einstein's field equations yeah
+- [01:45:20,810 - 01:45:25,620] yeah yeah they're not as much fun as doing this
+- [01:45:28,039 - 01:45:30,089] but of course you have to do them
+- [01:45:30,089 - 01:45:32,140] that's the other side of the coin given a
+- [01:45:32,140 - 01:45:34,210] geometry and given a solution to
+- [01:45:34,210 - 01:45:36,280] Einstein's equations it's kind of fun to
+- [01:45:36,280 - 01:45:38,740] analyze it and to think what what people see
+- [01:45:38,740 - 01:45:41,200] who are in it and so forth the other
+- [01:45:41,200 - 01:45:43,370] side of the coin is to say if
+- [01:45:43,370 - 01:45:45,540] you had some material how do you solve
+- [01:45:45,540 - 01:45:47,760] Einstein's equations mass collapsing or
+- [01:45:47,760 - 01:45:49,980] whatever how do you solve Einstein's
+- [01:45:49,980 - 01:45:53,560] equations to find out what the
+- [01:45:53,560 - 01:45:57,140] geometry is that's usually a less pleasant
+- [01:45:57,140 - 01:46:00,220] exercise yeah except in some very
+- [01:46:00,220 - 01:46:03,300] special cases and we'll do the special
+- [01:46:03,300 - 01:46:03,780] cases
+- [01:46:04,760 - 01:46:05,510] So what happens if you have a material
+- [01:46:05,510 - 01:46:06,260] that's not a square and it's not a square?
+- [01:46:06,260 - 01:46:08,340] Does it simply vent horizon for an evaporating black hole?
+- [01:46:08,460 - 01:46:09,820] Does it simply just go to
+- [01:46:09,820 - 01:46:11,180] zero and approach the singularity or?
+- [01:46:11,360 - 01:46:15,340] Well what happens is the yeah
+- [01:46:15,340 - 01:46:19,320] it the singularity and the horizon merge
+- [01:46:20,280 - 01:46:22,600] everything just shrinks shrinks shrinks shrinks
+- [01:46:22,600 - 01:46:24,920] and it shrinks down to the point
+- [01:46:24,920 - 01:46:26,740] where the horizon just comes in
+- [01:46:26,740 - 01:46:28,560] contact with the singularity and then
+- [01:46:28,560 - 01:46:32,400] It seems like any stellar type black hole
+- [01:46:32,400 - 01:46:36,240] in the universe is going to be an
+- [01:46:36,240 - 01:46:36,620] evaporating black hole
+- [01:46:36,620 - 01:46:38,050] I mean what if the black hole would be
+- [01:46:38,050 - 01:46:39,480] spinning are there thought to be any macroscopic ones
+- [01:46:39,480 - 01:46:41,020] that aren't spinning naturally?
+- [01:46:41,180 - 01:46:45,920] Well that's a good question very very unlikely
+- [01:46:45,920 - 01:46:50,660] how many black holes are there in the universe
+- [01:46:52,879 - 01:46:56,959] well there's 10 to the 22 stars altogether 10
+- [01:46:56,959 - 01:47:01,040] to the 11th galaxies I don't know I actually
+- [01:47:01,040 - 01:47:03,630] don't know how many black holes there
+- [01:47:03,630 - 01:47:06,220] are there's but there's somewhere between 10 to
+- [01:47:06,220 - 01:47:09,800] the 11th and 10 to the 22 let's say
+- [01:47:09,800 - 01:47:13,380] 10 to the 15th or something like that of course
+- [01:47:13,750 - 01:47:16,805] no no object is going to have strictly
+- [01:47:16,805 - 01:47:19,860] zero angular momentum when you say zero angular
+- [01:47:19,860 - 01:47:23,770] momentum you mean within some tolerance that's
+- [01:47:23,770 - 01:47:27,680] that's it's pretty unlikely that a black
+- [01:47:27,680 - 01:47:30,910] hole would have such a small angular momentum
+- [01:47:30,910 - 01:47:34,140] that that you wouldn't notice it and the reason
+- [01:47:34,140 - 01:47:34,460] is this
+- [01:47:34,460 - 01:47:37,340] first of all stars rotate almost anything
+- [01:47:37,340 - 01:47:40,220] will have some angular momentum and when it
+- [01:47:40,220 - 01:47:44,830] collapses you know you've seen the the skater pull
+- [01:47:44,830 - 01:47:49,440] the arms in and speed up same thing happens
+- [01:47:49,980 - 01:47:53,970] when the black hole collapses even a
+- [01:47:53,970 - 01:47:57,960] relatively small amount of rotational motion will get
+- [01:47:57,960 - 01:48:01,200] escalated into a very rapid rotation so it's
+- [01:48:01,200 - 01:48:04,440] very unlikely that it's going to be a black
+- [01:48:04,440 - 01:48:04,560] hole
+- [01:48:04,560 - 01:48:08,690] that there's a black hole out there with
+- [01:48:08,690 - 01:48:12,820] such small angular momentum that would be undetectable
+- [01:48:14,820 - 01:48:17,940] there's the singularity spinning at an infinite rate
+- [01:48:23,600 - 01:48:26,250] the singularity of a rotating black hole
+- [01:48:26,250 - 01:48:28,900] is different than we've drawn here the singularity
+- [01:48:28,900 - 01:48:32,760] of a rotating black hole is a different thing so
+- [01:48:33,780 - 01:48:34,420] but
+- [01:48:34,440 - 01:48:37,660] i would say no that it's not rotating
+- [01:48:37,660 - 01:48:40,880] with an infinite velocity but the infinite angular
+- [01:48:41,679 - 01:48:42,280] velocity
+- [01:48:43,139 - 01:48:45,559] we might cover this later on but are
+- [01:48:45,559 - 01:48:47,980] black holes formed by condensation of existing matter
+- [01:48:47,980 - 01:48:50,820] or do they come into existence by quantum nature
+- [01:48:51,220 - 01:48:52,870] well they come into existence
+- [01:48:52,870 - 01:48:54,520] by stars collapsing ordinary material
+- [01:48:54,520 - 01:48:55,940] so it's existing matter that
+- [01:48:55,940 - 01:48:57,360] collapses and that's the gravity
+- [01:48:57,360 - 01:48:57,760] gravity
+- [01:48:57,760 - 01:49:01,090] when a star runs out of fuel the thing
+- [01:49:01,090 - 01:49:04,420] which is supporting it and keeping gravity out of
+- [01:49:04,420 - 01:49:07,730] it is the heat flowing out through it the
+- [01:49:07,730 - 01:49:11,040] heat flowing out through it is created in the
+- [01:49:11,040 - 01:49:14,400] interior of the star by burning by burning
+- [01:49:14,400 - 01:49:17,760] hydrogen or helium or whatever it is when
+- [01:49:17,760 - 01:49:20,860] the star eventually runs out of fuel
+- [01:49:20,860 - 01:49:23,960] the forces the radiation pressure that's keeping
+- [01:49:23,960 - 01:49:27,550] it from collapsing disappears and it contracts now
+- [01:49:27,550 - 01:49:31,140] depending on how heavy it is it might
+- [01:49:31,140 - 01:49:32,770] contract to a white dwarf that's more or less
+- [01:49:32,770 - 01:49:34,400] all right but it's not a white dwarf it's
+- [01:49:34,400 - 01:49:37,340] an ordinary thing it's it's pretty it's pretty
+- [01:49:37,340 - 01:49:40,280] dense but it's still made up out of nuclei
+- [01:49:40,280 - 01:49:44,320] and atoms and so forth if it's yet
+- [01:49:44,320 - 01:49:48,360] heavier it might collapse into a neutron star that's
+- [01:49:48,360 - 01:49:51,540] a very very compact object but it can
+- [01:49:51,540 - 01:49:54,720] still support itself the the material is still strong
+- [01:49:54,720 - 01:49:57,430] enough to support itself against gravity if
+- [01:49:57,430 - 01:50:00,140] it's yet heavier then it can't support itself
+- [01:50:00,140 - 01:50:02,260] against gravity and it just go and uh and
+- [01:50:02,260 - 01:50:04,380] falls past itself and it just goes up and
+- [01:50:04,380 - 01:50:06,790] falls past its own schwarzschild radius once
+- [01:50:06,790 - 01:50:09,200] it falls past its own schwarzschild radius
+- [01:50:09,200 - 01:50:13,190] then then uh then it's doomed once any part of
+- [01:50:13,190 - 01:50:17,180] it though once once uh a part of it gets
+- [01:50:17,180 - 01:50:20,160] within the schwarzschild radius then it just
+- [01:50:20,160 - 01:50:23,140] collapses i have a question i've heard speculation
+- [01:50:23,140 - 01:50:26,280] about these existence of micro black holes
+- [01:50:26,280 - 01:50:29,420] speculation what's the theory for how they
+- [01:50:29,420 - 01:50:31,710] form it is not okay it wouldn't be
+- [01:50:31,710 - 01:50:34,000] great if they were there though because the reason
+- [01:50:34,380 - 01:50:36,260] great if they were there depending on their size.
+- [01:50:36,260 - 01:50:38,160] The time scale for the
+- [01:50:38,160 - 01:50:40,640] evaporation of a black hole is very very long,
+- [01:50:40,640 - 01:50:41,820] extremely long.
+- [01:50:41,820 - 01:50:43,200] It's faster for
+- [01:50:43,200 - 01:50:46,920] small black holes and slower for big black holes.
+- [01:50:46,920 - 01:50:49,700] If you would like to see a
+- [01:50:49,700 - 01:50:51,980] black hole evaporate it better be small.
+- [01:50:51,980 - 01:50:56,980] And so if black holes were formed in
+- [01:50:56,980 - 01:50:59,650] particular a black hole of about the
+- [01:50:59,650 - 01:51:02,320] mass of Mount Everest or something like
+- [01:51:02,320 - 01:51:05,290] that would have a lifetime before
+- [01:51:05,290 - 01:51:08,260] it completely evaporates which would be
+- [01:51:08,260 - 01:51:09,420] about the age of the universe.
+- [01:51:09,420 - 01:51:14,200] So if there was a mechanism to form such black
+- [01:51:14,200 - 01:51:17,060] holes we might be seeing them evaporate now.
+- [01:51:17,060 - 01:51:20,980] Now it's very hard to imagine given
+- [01:51:20,980 - 01:51:24,890] a mass the size of Mount Everest there's
+- [01:51:24,890 - 01:51:28,800] simply not enough mass there to cause it
+- [01:51:28,800 - 01:51:30,400] to contract and collapse.
+- [01:51:31,160 - 01:51:32,300] The whole Earth's
+- [01:51:32,300 - 01:51:33,820] will not form a black hole.
+- [01:51:33,820 - 01:51:36,480] The Earth is not heavy enough
+- [01:51:36,480 - 01:51:39,140] to to do very much of
+- [01:51:39,140 - 01:51:40,660] anything when it cools down.
+- [01:51:40,660 - 01:51:42,570] The Sun will not form a
+- [01:51:42,570 - 01:51:44,480] black hole at least it's not
+- [01:51:44,480 - 01:51:45,880] thought that it will form a black hole.
+- [01:51:45,880 - 01:51:47,920] It's thought that it will form a white
+- [01:51:47,920 - 01:51:48,120] dwarf.
+- [01:51:48,120 - 01:51:54,380] So what would be the mechanism for creating these things?
+- [01:51:54,380 - 01:51:58,700] You can imagine
+- [01:51:58,700 - 01:52:01,820] very violent things happening in the early universe
+- [01:52:02,300 - 01:52:04,680] could smash stuff together so wouldn't be
+- [01:52:04,680 - 01:52:07,060] them there are two things that you
+- [01:52:07,060 - 01:52:09,960] could think of that could help create a black hole.
+- [01:52:09,960 - 01:52:11,880] One is making a thing so
+- [01:52:11,880 - 01:52:13,670] massive that it contracts under its own
+- [01:52:13,670 - 01:52:15,460] weight that it collapses under its own
+- [01:52:15,460 - 01:52:15,720] weight.
+- [01:52:15,720 - 01:52:22,620] The other is just motion you know velocity.
+- [01:52:22,620 - 01:52:25,380] Velocity can replace gravity and
+- [01:52:25,380 - 01:52:29,820] slam stuff together and if there was enough violent
+- [01:52:29,820 - 01:52:30,640] uh...
+- [01:52:32,300 - 01:52:35,110] it was a contracting stuff it could form
+- [01:52:35,110 - 01:52:37,920] a black hole even though it wasn't massive
+- [01:52:37,920 - 01:52:39,260] enough to do it on its own.
+- [01:52:49,440 - 01:52:51,700] What kind of particle is that?
+- [01:52:52,160 - 01:52:58,560] I mean is it any conceivable uh...
+- [01:52:58,560 - 01:53:00,420] The smallest black hole the smallest black hole
+- [01:53:00,420 - 01:53:02,280] that makes any sense is a black hole.
+- [01:53:02,280 - 01:53:04,220] a black hole of about a Planck mass
+- [01:53:04,220 - 01:53:06,520] that's about 10 to the minus 5 grams
+- [01:53:07,160 - 01:53:10,520] to create particles colliding with that much energy
+- [01:53:12,200 - 01:53:12,680] would,
+- [01:53:12,680 - 01:53:14,380] if you were to take slack
+- [01:53:14,380 - 01:53:15,720] and just lengthen it
+- [01:53:17,060 - 01:53:18,060] you'd have to make it
+- [01:53:18,060 - 01:53:19,060] about as big as the galaxy
+- [01:53:19,060 - 01:53:20,100] or something like that
+- [01:53:23,100 - 01:53:24,060] but yes,
+- [01:53:24,060 - 01:53:24,680] in principle
+- [01:53:24,680 - 01:53:26,440] the answer is yes
+- [01:53:26,940 - 01:53:27,860] in principle,
+- [01:53:27,860 - 01:53:30,000] by slamming particles together hard enough
+- [01:53:30,000 - 01:53:31,280] you could make a black hole
+- [01:53:33,720 - 01:53:37,800] can we get into the Einstein equations
+- [01:53:37,800 - 01:53:39,740] and how that relates to the expanding universe
+- [01:53:39,740 - 01:53:40,740] and dark energy,
+- [01:53:40,740 - 01:53:41,260] dark matter,
+- [01:53:41,260 - 01:53:41,840] that kind of stuff
+- [01:53:43,720 - 01:53:44,580] was that a question?
+- [01:53:45,660 - 01:53:46,060] pardon?
+- [01:53:46,880 - 01:53:48,000] was there a question there?
+- [01:53:48,100 - 01:53:48,400] yeah,
+- [01:53:48,400 - 01:53:49,510] are we going to be
+- [01:53:49,510 - 01:53:50,620] talking about those kind of things?
+- [01:53:50,900 - 01:53:51,160] yeah
+- [01:53:54,060 - 01:53:54,940] I'm sending a question
+- [01:53:54,940 - 01:53:56,020] is there going to be time
+- [01:53:56,020 - 01:53:57,100] to talk about entropy at all?
+- [01:53:58,600 - 01:53:59,360] not this quarter
+- [01:54:00,260 - 01:54:00,760] I don't know if we're
+- [01:54:00,760 - 01:54:01,260] going to be talking about entropy
+- [01:54:01,280 - 01:54:02,430] we'll even get to the
+- [01:54:02,430 - 01:54:03,580] things that gentleman said this quarter
+- [01:54:03,580 - 01:54:04,000] but we'll see,
+- [01:54:04,000 - 01:54:04,800] we go where we go
+- [01:54:08,820 - 01:54:09,800] not this quarter,
+- [01:54:09,800 - 01:54:10,280] next quarter
+- [01:54:10,920 - 01:54:14,140] do you already cover gravitational waves?
+- [01:54:14,820 - 01:54:15,500] maybe not
+- [01:54:16,019 - 01:54:17,040] are you going to cover those?
+- [01:54:17,660 - 01:54:18,100] maybe
+- [01:54:18,580 - 01:54:19,280] I can't tell,
+- [01:54:19,280 - 01:54:19,820] I can't tell
+- [01:54:19,820 - 01:54:23,200] we go from week to week,
+- [01:54:23,200 - 01:54:24,360] however much
+- [01:54:24,360 - 01:54:25,600] I got about a quarter
+- [01:54:25,600 - 01:54:26,840] done tonight that I intended to
+- [01:54:27,600 - 01:54:28,680] but that's fine,
+- [01:54:28,680 - 01:54:29,040] I mean,
+- [01:54:29,040 - 01:54:29,760] it's good
+- [01:54:32,900 - 01:54:34,540] I don't regard that as a problem
+- [01:54:34,540 - 01:54:38,720] as long as everybody is learning something
+- [01:54:42,139 - 01:54:42,660] okay,
+- [01:54:42,660 - 01:54:43,580] we're ready to go
+- [01:54:45,280 - 01:54:46,100] for more,
+- [01:54:46,100 - 01:54:48,560] please visit us at stanford.edu
