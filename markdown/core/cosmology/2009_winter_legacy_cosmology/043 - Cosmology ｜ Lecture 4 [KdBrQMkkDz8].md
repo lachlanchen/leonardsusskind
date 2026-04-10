@@ -1,0 +1,3632 @@
+# Transcript
+
+Source: core/cosmology/2009_winter_legacy_cosmology/043 - Cosmology ｜ Lecture 4 [KdBrQMkkDz8].mkv
+
+- [00:00:06,739 - 00:00:09,640] This program is brought to you by Stanford University.
+- [00:00:12,519 - 00:00:13,959] Somebody asked me some questions
+- [00:00:13,959 - 00:00:15,400] which I thought were good questions,
+- [00:00:15,400 - 00:00:16,920] so I asked them to
+- [00:00:16,920 - 00:00:18,440] write them down and list them.
+- [00:00:20,019 - 00:00:20,520] One,
+- [00:00:20,520 - 00:00:22,790] and I thought I would answer them
+- [00:00:22,790 - 00:00:25,060] in class because other people might be interested.
+- [00:00:25,060 - 00:00:25,560] One,
+- [00:00:25,560 - 00:00:28,350] does the apparent wavelength of the cosmic
+- [00:00:28,350 - 00:00:31,140] radiation depend on the motion of the observer,
+- [00:00:31,140 - 00:00:32,320] i.e.,
+- [00:00:32,320 - 00:00:33,540] is there a Doppler effect?
+- [00:00:33,960 - 00:00:34,620] If so,
+- [00:00:34,620 - 00:00:36,840] doesn't that mean there is a preferred frame,
+- [00:00:36,840 - 00:00:38,440] the one in which the wavelength
+- [00:00:38,440 - 00:00:40,040] is the same in all directions,
+- [00:00:40,040 - 00:00:45,340] neglecting the small fluctuations?
+- [00:00:46,220 - 00:00:46,760] All right,
+- [00:00:46,760 - 00:00:47,720] so the question is,
+- [00:00:47,720 - 00:00:49,880] it's a good question,
+- [00:00:49,880 - 00:00:51,060] it's a right question,
+- [00:00:51,060 - 00:00:52,170] and the answer is yes
+- [00:00:52,170 - 00:00:53,280] to almost all parts of it,
+- [00:00:53,340 - 00:00:54,960] except where the...
+- [00:00:55,060 - 00:00:56,800] The author of the question realized
+- [00:00:56,800 - 00:00:58,540] that the answer must be no.
+- [00:00:59,240 - 00:00:59,840] All right,
+- [00:00:59,840 - 00:01:02,600] so there's a lot of matter around,
+- [00:01:02,600 - 00:01:06,280] and also photons all over the place.
+- [00:01:08,720 - 00:01:14,260] And the photons are isotropic.
+- [00:01:15,100 - 00:01:16,060] What does that mean?
+- [00:01:17,400 - 00:01:19,850] The typical energy of a photon coming from
+- [00:01:19,850 - 00:01:22,300] the left is more or less the same as...
+- [00:01:22,300 - 00:01:23,120] Not more or less,
+- [00:01:23,120 - 00:01:24,080] it's about the same as the typical
+- [00:01:24,080 - 00:01:25,040] energy of a photon coming from the right.
+- [00:01:25,060 - 00:01:30,100] The temperature of the photons is pretty well
+- [00:01:30,100 - 00:01:35,140] described by the average energy of the photons.
+- [00:01:35,759 - 00:01:36,840] And so if we're way,
+- [00:01:36,840 - 00:01:37,960] way out in outer space,
+- [00:01:37,960 - 00:01:38,920] into galactic space,
+- [00:01:38,920 - 00:01:42,960] and I'm not talking about the photons
+- [00:01:42,960 - 00:01:47,000] that come from the sun or from stars,
+- [00:01:47,300 - 00:01:49,760] I'm talking about the cosmic microwave background,
+- [00:01:49,760 - 00:01:55,040] that which is there when everything else is removed.
+- [00:01:55,040 - 00:01:55,760] So to speak.
+- [00:01:56,300 - 00:02:00,200] Those photons appear to be isotropic.
+- [00:02:00,320 - 00:02:01,800] They come at you from every
+- [00:02:01,800 - 00:02:03,280] direction with about the same energy.
+- [00:02:03,560 - 00:02:07,220] But then that means something a little puzzling.
+- [00:02:07,320 - 00:02:08,120] Not too puzzling,
+- [00:02:08,120 - 00:02:08,960] but a little bit puzzling.
+- [00:02:09,799 - 00:02:15,380] If you are moving through this mess of stuff,
+- [00:02:15,380 - 00:02:16,460] including photons,
+- [00:02:16,460 - 00:02:17,700] mainly photons,
+- [00:02:18,040 - 00:02:19,760] and you are moving through it,
+- [00:02:19,760 - 00:02:20,300] let's say,
+- [00:02:20,300 - 00:02:22,200] to the right with a large velocity,
+- [00:02:22,200 - 00:02:25,300] large means comparable to the speed of light,
+- [00:02:25,300 - 00:02:28,440] or some fraction of the speed of light,
+- [00:02:29,120 - 00:02:32,160] then because of the Doppler effect,
+- [00:02:32,160 - 00:02:35,060] you would see the photons coming
+- [00:02:35,060 - 00:02:37,960] from this direction as having shorter wavelength,
+- [00:02:38,320 - 00:02:40,280] meaning somewhat bluer than the
+- [00:02:40,280 - 00:02:42,240] photons coming from the other direction.
+- [00:02:43,140 - 00:02:43,820] Yes,
+- [00:02:43,820 - 00:02:44,460] somewhat bluer.
+- [00:02:44,940 - 00:02:48,200] Meaning to say that you would have
+- [00:02:48,200 - 00:02:51,460] a bias in directions in the sky,
+- [00:02:52,200 - 00:02:56,500] where in some directions you would see hotter photons,
+- [00:02:56,500 - 00:02:57,780] higher energy photons,
+- [00:02:57,980 - 00:03:00,200] and in other directions you would see lower energy photons.
+- [00:03:00,920 - 00:03:01,240] Yes,
+- [00:03:01,240 - 00:03:02,040] this is true.
+- [00:03:02,400 - 00:03:04,420] That is really the way it works.
+- [00:03:05,760 - 00:03:09,020] We are moving through the microwave background,
+- [00:03:09,020 - 00:03:10,160] our planet,
+- [00:03:13,120 - 00:03:15,800] moving with the solar system rotation,
+- [00:03:15,800 - 00:03:17,580] with the galactic rotation,
+- [00:03:17,800 - 00:03:19,990] and with the motion of the
+- [00:03:19,990 - 00:03:22,180] galaxy and the clusters of galaxies,
+- [00:03:22,180 - 00:03:23,780] and in fact,
+- [00:03:23,780 - 00:03:25,290] when we look at the
+- [00:03:25,290 - 00:03:26,800] microwave temperature in different directions,
+- [00:03:27,040 - 00:03:28,560] it is not the same in all directions.
+- [00:03:29,260 - 00:03:30,740] One direction is preferred.
+- [00:03:31,060 - 00:03:32,720] I couldn't tell you which it is offhand.
+- [00:03:33,360 - 00:03:34,120] I mean,
+- [00:03:34,120 - 00:03:34,520] you know,
+- [00:03:34,520 - 00:03:35,660] I don't remember.
+- [00:03:36,000 - 00:03:37,830] But it has got to do
+- [00:03:37,830 - 00:03:39,660] with known motions of the Earth.
+- [00:03:41,280 - 00:03:43,660] And so the answer is yes,
+- [00:03:43,660 - 00:03:45,280] there is such a Doppler effect,
+- [00:03:45,440 - 00:03:45,820] and yes,
+- [00:03:45,820 - 00:03:49,200] there is a preferred frame of reference.
+- [00:03:49,320 - 00:03:51,900] The preferred frame of reference is the one,
+- [00:03:52,180 - 00:03:54,330] where the microwave background
+- [00:03:54,330 - 00:03:56,480] looks isotropic from all directions.
+- [00:03:56,820 - 00:03:58,540] It happens to be,
+- [00:03:58,540 - 00:03:59,780] and this is the key point,
+- [00:04:00,120 - 00:04:03,950] it is the same preferred frame of reference
+- [00:04:03,950 - 00:04:07,780] as defined by the galaxies themselves on the average.
+- [00:04:08,100 - 00:04:12,620] The galaxies are at rest at any particular place,
+- [00:04:12,780 - 00:04:14,020] any particular place,
+- [00:04:14,020 - 00:04:16,690] the local galaxies are on the average
+- [00:04:16,690 - 00:04:19,360] at rest in some frame of reference.
+- [00:04:19,700 - 00:04:21,519] That's a preferred frame of reference.
+- [00:04:22,180 - 00:04:25,040] And it is the same preferred frame of
+- [00:04:25,040 - 00:04:27,900] reference that the cosmic microwave background is isotropic.
+- [00:04:28,480 - 00:04:30,760] So that's the answer to question number one.
+- [00:04:33,060 - 00:04:33,620] Yes,
+- [00:04:33,620 - 00:04:35,120] there is a special frame of reference.
+- [00:04:36,800 - 00:04:37,600] If not,
+- [00:04:37,600 - 00:04:39,300] that's even harder to understand.
+- [00:04:39,760 - 00:04:39,920] Yeah,
+- [00:04:39,920 - 00:04:41,630] fortunately we don't have to get
+- [00:04:41,630 - 00:04:43,340] into that part of the question.
+- [00:04:45,860 - 00:04:46,920] Next question.
+- [00:04:48,480 - 00:04:50,190] Is there anything in relativity
+- [00:04:50,190 - 00:04:51,900] to limit the relative velocity?
+- [00:04:52,180 - 00:04:54,280] Or can two coordinate points,
+- [00:04:54,280 - 00:04:55,340] let's just call them galaxies,
+- [00:04:56,180 - 00:05:00,420] can two galaxies have a relative velocity greater than c,
+- [00:05:00,600 - 00:05:01,660] greater than the speed of light?
+- [00:05:02,100 - 00:05:03,000] The answer is yes.
+- [00:05:03,160 - 00:05:04,460] If they're far enough apart,
+- [00:05:04,460 - 00:05:07,140] this is just the Hubble law,
+- [00:05:07,220 - 00:05:13,280] and the Hubble law holds on distances which are much,
+- [00:05:14,099 - 00:05:16,200] which may be arbitrarily large,
+- [00:05:16,200 - 00:05:17,040] we don't know for sure,
+- [00:05:17,260 - 00:05:19,630] but there's nothing wrong with extending
+- [00:05:19,630 - 00:05:22,000] the Hubble law out to distances
+- [00:05:22,180 - 00:05:28,500] such that velocity is equal to Hubble times distance.
+- [00:05:30,300 - 00:05:33,120] If space is as flat as it appears to be,
+- [00:05:33,120 - 00:05:34,540] and it does appear to be flat,
+- [00:05:35,300 - 00:05:38,820] then there's no obvious bound,
+- [00:05:38,820 - 00:05:42,120] certainly nothing within observation,
+- [00:05:42,960 - 00:05:44,920] no obvious bound on distances.
+- [00:05:45,300 - 00:05:47,240] If distance is big enough,
+- [00:05:47,240 - 00:05:49,380] then the velocity,
+- [00:05:49,380 - 00:05:51,440] the relative velocity of us,
+- [00:05:52,180 - 00:05:55,060] to some distant galaxy will exceed the speed of light.
+- [00:05:55,820 - 00:05:56,980] Can't do anything about it,
+- [00:05:56,980 - 00:05:57,300] it's true.
+- [00:05:59,040 - 00:06:01,100] Einstein never said that that was impossible.
+- [00:06:02,160 - 00:06:03,060] Let's put it this way,
+- [00:06:03,060 - 00:06:04,400] what he would say was impossible
+- [00:06:04,920 - 00:06:06,860] is for one thing to pass
+- [00:06:06,860 - 00:06:08,800] another right in front of your nose
+- [00:06:08,800 - 00:06:10,440] at faster than the speed of light.
+- [00:06:10,740 - 00:06:12,810] It doesn't say anything about very
+- [00:06:12,810 - 00:06:14,880] distant things moving relative to each other
+- [00:06:14,880 - 00:06:16,140] where they're greater than the speed of light.
+- [00:06:16,540 - 00:06:17,340] But of course,
+- [00:06:17,340 - 00:06:19,260] if something is moving faster than
+- [00:06:19,260 - 00:06:21,180] the speed of light away from you,
+- [00:06:21,180 - 00:06:23,500] and assuming that it continues to do that,
+- [00:06:23,720 - 00:06:26,040] then it can never send a message to you,
+- [00:06:28,960 - 00:06:32,380] because if it's moving away from you
+- [00:06:32,380 - 00:06:35,800] with faster than the speed of light,
+- [00:06:39,039 - 00:06:41,479] then light rays which are sent to the left
+- [00:06:41,479 - 00:06:43,920] and light waves which are sent to the right
+- [00:06:43,920 - 00:06:46,310] will be both swept along with the
+- [00:06:46,310 - 00:06:48,700] motion and effectively be moving away from you.
+- [00:06:49,480 - 00:06:49,960] So...
+- [00:06:51,180 - 00:06:54,190] There is no such cosmic limitation on whether
+- [00:06:54,190 - 00:06:57,200] distant things can be moving away from you.
+- [00:06:57,420 - 00:06:59,900] The place where they're moving with the speed
+- [00:06:59,900 - 00:07:02,380] of light relative to you is a horizon.
+- [00:07:02,680 - 00:07:03,220] Yeah?
+- [00:07:03,600 - 00:07:06,030] Wouldn't the light ray sent
+- [00:07:06,030 - 00:07:08,460] in the reverse direction be backward?
+- [00:07:08,760 - 00:07:09,320] Right,
+- [00:07:09,320 - 00:07:09,700] yeah.
+- [00:07:09,960 - 00:07:13,880] Wouldn't that still be traveling at sea towards you,
+- [00:07:13,900 - 00:07:15,750] but stretched in wavelength to
+- [00:07:15,750 - 00:07:17,600] where it is no longer light?
+- [00:07:17,880 - 00:07:19,680] It's actually moving away from you.
+- [00:07:20,120 - 00:07:20,760] Well,
+- [00:07:20,760 - 00:07:21,160] let's put it this way.
+- [00:07:21,180 - 00:07:21,660] Let's put it this way.
+- [00:07:21,800 - 00:07:22,760] Let's put it this way.
+- [00:07:23,840 - 00:07:24,320] Okay,
+- [00:07:24,320 - 00:07:26,580] the light ray is moving that way,
+- [00:07:27,159 - 00:07:29,519] but space is growing faster
+- [00:07:29,519 - 00:07:31,880] than the light ray can overcome.
+- [00:07:33,080 - 00:07:33,260] Okay?
+- [00:07:35,879 - 00:07:36,359] So,
+- [00:07:36,359 - 00:07:38,260] there's a model for this which I like.
+- [00:07:38,460 - 00:07:40,020] It's a model which I
+- [00:07:40,020 - 00:07:41,580] invented in order to explain inflation.
+- [00:07:42,939 - 00:07:46,660] But let me explain what the model is.
+- [00:07:47,060 - 00:07:47,340] Okay.
+- [00:07:50,719 - 00:07:52,340] Imagine you have a line.
+- [00:07:53,700 - 00:07:55,800] And now you start stretching the line.
+- [00:07:55,900 - 00:07:57,300] The line is made up out of atoms.
+- [00:07:57,680 - 00:07:58,040] Okay?
+- [00:07:58,060 - 00:07:59,480] The line is made up out of atoms.
+- [00:08:02,360 - 00:08:04,040] And now you start stretching it.
+- [00:08:04,100 - 00:08:04,560] What happens?
+- [00:08:05,300 - 00:08:08,730] Eventually it'll break because the distance between the atoms
+- [00:08:08,730 - 00:08:12,160] will grow larger than the atomic forces can handle.
+- [00:08:12,640 - 00:08:16,700] But we also have secretly a source of extra atoms.
+- [00:08:16,700 - 00:08:18,610] And every time two atoms get
+- [00:08:18,610 - 00:08:20,520] further apart than a certain distance,
+- [00:08:20,800 - 00:08:22,140] we put another one in.
+- [00:08:22,760 - 00:08:23,980] Everywhere that it happens,
+- [00:08:24,220 - 00:08:25,360] everywhere that it happens,
+- [00:08:25,520 - 00:08:27,920] we keep filling it up with more and more atoms,
+- [00:08:28,880 - 00:08:29,920] so that the line,
+- [00:08:29,920 - 00:08:30,240] yeah,
+- [00:08:31,859 - 00:08:34,000] so that the line continues to grow,
+- [00:08:34,999 - 00:08:37,559] constantly being resupplied with atoms.
+- [00:08:38,460 - 00:08:38,900] Okay?
+- [00:08:38,940 - 00:08:39,140] Now,
+- [00:08:39,140 - 00:08:41,240] it's not atoms really that we want to think about,
+- [00:08:41,400 - 00:08:42,640] but it's a good model for it.
+- [00:08:43,539 - 00:08:43,980] Then,
+- [00:08:46,960 - 00:08:48,680] this line will grow,
+- [00:08:48,680 - 00:08:49,560] first of all,
+- [00:08:49,560 - 00:08:50,660] according to Hubble's law.
+- [00:08:51,240 - 00:08:53,140] It will also grow exponentially.
+- [00:08:53,760 - 00:08:56,980] The distance between any two points will grow exponentially.
+- [00:08:58,100 - 00:09:00,860] And there will be some distance beyond which
+- [00:09:02,100 - 00:09:03,720] two things will be receding with
+- [00:09:03,720 - 00:09:05,340] greater than the speed of light.
+- [00:09:05,820 - 00:09:07,980] But if you go to those places,
+- [00:09:10,460 - 00:09:11,560] you can ask,
+- [00:09:11,560 - 00:09:14,120] supposing here's where the velocity of separation
+- [00:09:14,120 - 00:09:16,680] gets to be about the speed of light,
+- [00:09:16,700 - 00:09:18,080] if you go to the left
+- [00:09:18,080 - 00:09:19,460] and you send a light beam,
+- [00:09:19,620 - 00:09:21,580] you can still certainly send a light beam this way,
+- [00:09:21,660 - 00:09:23,120] and you can send a light beam that way.
+- [00:09:23,580 - 00:09:25,790] The only problem is the
+- [00:09:25,790 - 00:09:28,000] atoms are filling in so fast
+- [00:09:28,719 - 00:09:31,469] that the distance between you and
+- [00:09:31,469 - 00:09:34,220] where the light ray has gotten to
+- [00:09:34,220 - 00:09:39,680] is growing faster than the light ray can overcome.
+- [00:09:40,900 - 00:09:42,000] Can I ask you a question?
+- [00:09:42,360 - 00:09:42,440] Yeah.
+- [00:09:42,580 - 00:09:43,860] Does the ordinary,
+- [00:09:43,860 - 00:09:46,680] does the relativistic form like this,
+- [00:09:46,680 - 00:09:48,480] in order for the addition of velocities hold?
+- [00:09:48,940 - 00:09:49,400] Locally,
+- [00:09:49,400 - 00:09:49,960] at a point,
+- [00:09:49,960 - 00:09:50,300] yes.
+- [00:09:50,520 - 00:09:51,520] In other words,
+- [00:09:51,520 - 00:09:52,580] if we have two observers,
+- [00:09:52,580 - 00:09:53,740] three observers,
+- [00:09:54,020 - 00:09:55,520] and they all pass each other,
+- [00:09:55,520 - 00:09:57,000] one after another after another...
+- [00:09:57,000 - 00:09:57,840] But it only holds in that,
+- [00:09:57,840 - 00:09:59,530] but it doesn't hold in the
+- [00:09:59,530 - 00:10:01,220] case of velocities exceeding the speed.
+- [00:10:01,220 - 00:10:01,380] Yeah,
+- [00:10:01,380 - 00:10:01,760] that's right.
+- [00:10:01,760 - 00:10:04,240] You have to go back to the first principles again.
+- [00:10:04,520 - 00:10:08,840] There you have to use some more fancy geometric...
+- [00:10:09,500 - 00:10:11,590] If you have two photons
+- [00:10:11,590 - 00:10:13,680] that are radiated from a point,
+- [00:10:13,780 - 00:10:16,420] their separation velocity is 2c.
+- [00:10:17,220 - 00:10:17,640] Yes.
+- [00:10:18,500 - 00:10:19,820] As seen by you.
+- [00:10:20,100 - 00:10:20,980] As seen by you.
+- [00:10:21,180 - 00:10:21,580] Yeah,
+- [00:10:21,580 - 00:10:23,530] but you could send something out with three
+- [00:10:23,530 - 00:10:25,480] quarters of the speed of light that way,
+- [00:10:25,620 - 00:10:26,940] and three quarters of the
+- [00:10:26,940 - 00:10:28,260] speed of light the other way,
+- [00:10:29,260 - 00:10:31,950] and their relative separation to you will seem to
+- [00:10:31,950 - 00:10:34,640] be one and a half times the speed of light,
+- [00:10:35,360 - 00:10:37,620] but to one of them looking at the other,
+- [00:10:37,620 - 00:10:38,320] uh-uh,
+- [00:10:38,320 - 00:10:39,580] it looks less than the speed of light.
+- [00:10:39,860 - 00:10:40,740] So this is different.
+- [00:10:41,480 - 00:10:45,440] And a photon itself doesn't have an inertial reference rate.
+- [00:10:46,040 - 00:10:46,560] Well,
+- [00:10:46,560 - 00:10:47,720] it's moving with the speed of light.
+- [00:10:51,180 - 00:10:51,700] So,
+- [00:10:51,700 - 00:10:54,400] the point is you can't answer questions
+- [00:10:54,400 - 00:10:57,100] like this just using ordinary special relativity.
+- [00:10:57,360 - 00:10:58,460] You have to use general relativity,
+- [00:10:59,560 - 00:11:03,760] and general relativity allows the metric of space to expand.
+- [00:11:04,320 - 00:11:06,260] When the metric of space is expanding,
+- [00:11:06,880 - 00:11:10,700] that's very much like this picture where
+- [00:11:10,700 - 00:11:14,520] molecules are filling in the gaps in between.
+- [00:11:15,600 - 00:11:16,480] For example,
+- [00:11:16,480 - 00:11:19,680] if this were an ordinary line of atoms,
+- [00:11:20,000 - 00:11:23,200] there would be a maximum velocity on it.
+- [00:11:23,380 - 00:11:24,600] What would that maximum,
+- [00:11:24,600 - 00:11:26,400] an ordinary maximum velocity,
+- [00:11:26,860 - 00:11:28,700] the speed of sound on the,
+- [00:11:28,700 - 00:11:28,980] uh,
+- [00:11:28,980 - 00:11:30,160] or the speed of,
+- [00:11:30,160 - 00:11:30,500] uh,
+- [00:11:30,500 - 00:11:32,580] waves which vibrate on the,
+- [00:11:32,580 - 00:11:32,780] uh,
+- [00:11:32,780 - 00:11:34,300] on the string here.
+- [00:11:35,040 - 00:11:35,640] Uh,
+- [00:11:35,640 - 00:11:37,620] we could take it to be the speed of sound.
+- [00:11:39,459 - 00:11:40,060] Ordinary,
+- [00:11:40,060 - 00:11:44,700] ordinary signals sent back and forth by elastic vibrations,
+- [00:11:45,440 - 00:11:46,840] or sound waves and so forth,
+- [00:11:46,980 - 00:11:48,720] also have a limiting velocity.
+- [00:11:50,280 - 00:11:52,920] As long as you're not stretching the string
+- [00:11:52,920 - 00:11:55,560] and filling it in and filling it in,
+- [00:11:57,260 - 00:11:59,620] then no signal,
+- [00:11:59,620 - 00:12:03,000] other than a supersonic signal,
+- [00:12:03,280 - 00:12:05,920] no signal which is restricted to be moving
+- [00:12:05,920 - 00:12:08,560] slower than the speed of sound for some reason,
+- [00:12:08,820 - 00:12:09,420] uh,
+- [00:12:11,480 - 00:12:12,420] I forgot to say,
+- [00:12:12,420 - 00:12:14,330] no signal which is moving slower than the
+- [00:12:14,330 - 00:12:16,240] speed of sound can exceed the speed of sound.
+- [00:12:17,940 - 00:12:18,700] That's a true,
+- [00:12:18,700 - 00:12:19,620] that's a true statement.
+- [00:12:20,000 - 00:12:20,740] But now,
+- [00:12:21,920 - 00:12:22,740] but now,
+- [00:12:22,740 - 00:12:24,270] imagine this thing is being filled
+- [00:12:24,270 - 00:12:25,800] in in the way that I described.
+- [00:12:26,620 - 00:12:27,380] What is the rule?
+- [00:12:27,640 - 00:12:29,840] The rule is that the sound
+- [00:12:29,840 - 00:12:32,040] waves relative to the local molecules
+- [00:12:32,720 - 00:12:34,460] can't exceed the speed of sound.
+- [00:12:35,000 - 00:12:36,180] That's gonna be our rule,
+- [00:12:36,180 - 00:12:36,480] right?
+- [00:12:36,660 - 00:12:38,640] The sound waves themselves propagating
+- [00:12:38,640 - 00:12:40,620] from one molecule to the next
+- [00:12:40,620 - 00:12:41,840] move through this material,
+- [00:12:42,420 - 00:12:43,580] with the speed of sound,
+- [00:12:43,640 - 00:12:47,060] and let's also suppose that nothing else can move faster.
+- [00:12:48,170 - 00:12:48,440] Nevertheless,
+- [00:12:48,440 - 00:12:51,860] if the string is big enough and long enough,
+- [00:12:52,200 - 00:12:55,220] distant parts of it will be moving away fast enough
+- [00:12:55,220 - 00:12:59,020] that they'll be moving away faster from you.
+- [00:12:59,160 - 00:13:01,240] Just because more and more is filling in,
+- [00:13:01,300 - 00:13:02,620] it's filling in so fast and
+- [00:13:02,620 - 00:13:03,940] so much of it is filling in,
+- [00:13:04,100 - 00:13:06,420] that a point sufficiently far away
+- [00:13:06,420 - 00:13:08,300] will be moving away
+- [00:13:08,840 - 00:13:10,920] in a way that sound
+- [00:13:10,920 - 00:13:12,900] cannot get back to this point.
+- [00:13:13,040 - 00:13:14,720] It tries to get back to that point.
+- [00:13:15,140 - 00:13:16,640] It moves in this direction,
+- [00:13:17,180 - 00:13:18,600] but by the time it's
+- [00:13:18,600 - 00:13:20,020] moved one meter in this direction,
+- [00:13:20,880 - 00:13:23,050] more than a meter's worth
+- [00:13:23,050 - 00:13:25,220] of new molecules have been inserted.
+- [00:13:26,280 - 00:13:26,960] All right,
+- [00:13:26,960 - 00:13:27,880] so general relativity,
+- [00:13:28,040 - 00:13:30,680] which allows space to behave in this way,
+- [00:13:32,460 - 00:13:34,420] does allow objects
+- [00:13:35,120 - 00:13:37,080] to exceed the speed of sound,
+- [00:13:37,160 - 00:13:37,920] or speed of light,
+- [00:13:37,920 - 00:13:38,460] excuse me,
+- [00:13:38,480 - 00:13:39,680] in this sense.
+- [00:13:39,680 - 00:13:43,740] But not relative to the local observers.
+- [00:13:44,320 - 00:13:46,260] So no observer over here
+- [00:13:46,260 - 00:13:48,500] can see a sound wave going past him
+- [00:13:48,500 - 00:13:49,740] with,
+- [00:13:49,740 - 00:13:51,100] faster than the speed of sound.
+- [00:13:51,640 - 00:13:56,340] Are you saying that recession is a kind of drag?
+- [00:13:57,260 - 00:14:00,640] It is what it is.
+- [00:14:02,480 - 00:14:03,120] Uh,
+- [00:14:03,120 - 00:14:03,760] no.
+- [00:14:04,000 - 00:14:06,200] The stretching of the wavelengths
+- [00:14:06,200 - 00:14:07,840] due to the expansion,
+- [00:14:08,540 - 00:14:09,660] does that do something?
+- [00:14:09,680 - 00:14:11,020] Is it due solely to expansion,
+- [00:14:11,360 - 00:14:12,660] or is there another element to it?
+- [00:14:13,620 - 00:14:15,020] It's solely due to the expansion,
+- [00:14:15,479 - 00:14:18,180] but it's not distinct from the Doppler effect.
+- [00:14:18,360 - 00:14:19,100] It's the same effect.
+- [00:14:20,960 - 00:14:22,520] You can solely think of it,
+- [00:14:22,560 - 00:14:24,020] if you want a simple way to think about it,
+- [00:14:24,060 - 00:14:26,640] just think about it as being due to the expansion.
+- [00:14:27,680 - 00:14:29,600] So a wave on here,
+- [00:14:31,659 - 00:14:35,980] when the system expands,
+- [00:14:36,459 - 00:14:38,160] the wave expands with it.
+- [00:14:38,160 - 00:14:40,520] That's the simplest way to think about it.
+- [00:14:42,660 - 00:14:44,820] Is that statement you just made,
+- [00:14:44,920 - 00:14:46,480] is that theoretical,
+- [00:14:46,720 - 00:14:48,180] is that just an empirical statement,
+- [00:14:48,360 - 00:14:50,300] or is that just some sort of statement?
+- [00:14:50,540 - 00:14:54,740] That the wave stretches as the universe stretches?
+- [00:14:55,240 - 00:14:55,780] No,
+- [00:14:55,780 - 00:14:56,840] it's a theoretical statement
+- [00:14:56,840 - 00:15:00,540] based on the general theory of relativity
+- [00:15:01,160 - 00:15:03,060] combined with the theory of waves
+- [00:15:03,060 - 00:15:06,040] propagating in an expanding space.
+- [00:15:06,980 - 00:15:07,520] No.
+- [00:15:07,520 - 00:15:11,120] It is part of the mathematics
+- [00:15:11,120 - 00:15:12,680] of the general theory of relativity,
+- [00:15:12,820 - 00:15:13,860] of expanding space-time.
+- [00:15:15,300 - 00:15:16,880] If you write a wave equation
+- [00:15:18,540 - 00:15:21,620] in a geometry which is expanding,
+- [00:15:21,920 - 00:15:23,480] you will find the waves expand.
+- [00:15:24,020 - 00:15:25,140] So it's not an...
+- [00:15:25,140 - 00:15:26,460] Is it an empirical fact?
+- [00:15:28,599 - 00:15:29,199] Well,
+- [00:15:29,199 - 00:15:29,800] yes,
+- [00:15:30,080 - 00:15:31,670] but not in the sense
+- [00:15:31,670 - 00:15:33,260] that we can actually expand space
+- [00:15:33,260 - 00:15:35,640] and see the wavelength expanding.
+- [00:15:36,840 - 00:15:38,140] It's an empirical fact,
+- [00:15:38,280 - 00:15:39,440] an astronomical fact,
+- [00:15:40,060 - 00:15:42,560] but it's also a deeply theoretical fact
+- [00:15:42,560 - 00:15:44,360] that would be very,
+- [00:15:44,360 - 00:15:45,100] very surprising
+- [00:15:45,100 - 00:15:45,860] if it were false.
+- [00:15:47,140 - 00:15:49,300] This idea is predicated on the idea
+- [00:15:49,300 - 00:15:51,880] that atoms fill in the blanks as a script.
+- [00:15:52,100 - 00:15:54,120] Is that what's really happening out in the cosmos?
+- [00:15:54,460 - 00:15:54,600] No,
+- [00:15:54,600 - 00:15:55,200] it's not atoms.
+- [00:15:56,640 - 00:15:57,720] Little bits of space.
+- [00:15:57,980 - 00:15:59,580] Little bits of newly formed space.
+- [00:16:01,040 - 00:16:02,640] That's one way to think about it.
+- [00:16:02,700 - 00:16:03,840] The other way to think about it
+- [00:16:03,840 - 00:16:04,980] is just through the equations
+- [00:16:04,980 - 00:16:05,920] of general relativity
+- [00:16:06,540 - 00:16:10,300] in which there is an expanding metric.
+- [00:16:18,280 - 00:16:19,960] This is the expansion factor,
+- [00:16:20,140 - 00:16:21,040] the scale factor.
+- [00:16:22,100 - 00:16:24,200] And the expansion of the scale factor
+- [00:16:24,780 - 00:16:26,700] just produces more and more space.
+- [00:16:27,120 - 00:16:30,080] If you like a model for it,
+- [00:16:30,120 - 00:16:30,900] people like models,
+- [00:16:33,060 - 00:16:34,960] is it like expanding space
+- [00:16:34,980 - 00:16:35,620] and building a rubber band?
+- [00:16:36,140 - 00:16:36,840] No,
+- [00:16:36,840 - 00:16:38,920] because rubber bands have this habit
+- [00:16:38,920 - 00:16:40,880] of thinning out when you stretch them.
+- [00:16:43,239 - 00:16:45,720] And let's forget whether they break.
+- [00:16:46,200 - 00:16:48,420] Somebody living in that rubber band
+- [00:16:49,259 - 00:16:52,580] would notice the fact that with time
+- [00:16:52,580 - 00:16:56,240] the interaction between neighboring atoms changes.
+- [00:16:58,860 - 00:17:00,860] He would notice with time
+- [00:17:00,860 - 00:17:04,000] the properties of the space that he lives in changing.
+- [00:17:05,099 - 00:17:07,880] That's not the way general relativity works.
+- [00:17:07,980 - 00:17:10,700] It works more like the situation
+- [00:17:10,700 - 00:17:13,099] where there's a hidden reservoir of points
+- [00:17:13,099 - 00:17:14,940] that you can keep inserting
+- [00:17:15,619 - 00:17:17,520] so that as time goes on
+- [00:17:17,520 - 00:17:20,160] the properties that one ascribes
+- [00:17:20,160 - 00:17:21,980] to a region of space don't change.
+- [00:17:22,920 - 00:17:25,200] Space doesn't thin out in that sense.
+- [00:17:26,040 - 00:17:27,760] That's the way the mathematics works.
+- [00:17:28,700 - 00:17:30,960] This actually would be very,
+- [00:17:30,960 - 00:17:31,580] very useful.
+- [00:17:31,580 - 00:17:34,920] Exactly these equations would be rather useful
+- [00:17:34,920 - 00:17:40,940] in describing a line of atoms
+- [00:17:40,940 - 00:17:43,380] if you really did insert more and more atoms.
+- [00:17:43,740 - 00:17:45,980] They would be described by those equations.
+- [00:17:46,320 - 00:17:46,460] Anyway,
+- [00:17:46,460 - 00:17:47,940] let's see.
+- [00:17:48,020 - 00:17:48,880] Did we finish the questions?
+- [00:17:51,620 - 00:17:52,260] Yeah,
+- [00:17:52,260 - 00:17:52,900] okay.
+- [00:17:53,760 - 00:17:54,700] Allison Bob,
+- [00:17:54,700 - 00:17:56,280] from the first lecture,
+- [00:17:56,440 - 00:17:59,100] is there a relationship between the relative velocity
+- [00:17:59,100 - 00:18:01,560] exceeding C and the surface of life
+- [00:18:01,580 - 00:18:02,280] and the last scattering
+- [00:18:02,280 - 00:18:04,680] and the size of the observable universe?
+- [00:18:05,180 - 00:18:06,060] In other words,
+- [00:18:06,060 - 00:18:07,300] coming back to this question
+- [00:18:09,100 - 00:18:09,620] of,
+- [00:18:09,620 - 00:18:10,980] here I suppose is Bob,
+- [00:18:12,640 - 00:18:13,940] Alice is moving outward.
+- [00:18:16,340 - 00:18:16,860] Well,
+- [00:18:16,860 - 00:18:18,220] according to the Hubble law,
+- [00:18:18,900 - 00:18:20,780] there is some distance out there
+- [00:18:22,720 - 00:18:23,500] Here's Bob.
+- [00:18:24,500 - 00:18:26,080] There's some distance out there
+- [00:18:26,080 - 00:18:28,420] where things are just moving away from him
+- [00:18:28,420 - 00:18:29,700] faster than the speed of light
+- [00:18:29,700 - 00:18:32,280] and he can't get signals from them.
+- [00:18:33,620 - 00:18:34,220] Alice,
+- [00:18:34,220 - 00:18:36,260] let me get the question again.
+- [00:18:37,440 - 00:18:39,880] Is there a relationship between the relative velocity
+- [00:18:39,880 - 00:18:45,940] exceeding C and the surface of life scattering?
+- [00:18:46,340 - 00:18:46,500] Yeah.
+- [00:18:46,760 - 00:18:48,400] So there's some distance.
+- [00:18:50,300 - 00:18:52,480] When Alice is beyond that distance,
+- [00:18:52,780 - 00:18:54,940] her light waves cannot get back to Bob.
+- [00:18:55,660 - 00:18:56,840] That's called a horizon.
+- [00:18:57,480 - 00:18:58,340] That's called a horizon.
+- [00:18:58,340 - 00:19:00,740] We're going to have more to do with a horizon,
+- [00:19:00,980 - 00:19:02,600] but that's just called a cosmic horizon.
+- [00:19:03,040 - 00:19:05,660] And if space is expanding in the right way,
+- [00:19:06,380 - 00:19:09,320] then that cosmic horizon has a fixed size
+- [00:19:09,320 - 00:19:11,200] and it just sits there
+- [00:19:11,200 - 00:19:13,080] and Bob is surrounded by it
+- [00:19:13,080 - 00:19:14,900] and anything out beyond that horizon
+- [00:19:14,900 - 00:19:16,400] is just invisible to him
+- [00:19:16,400 - 00:19:18,300] because the light can't get back.
+- [00:19:18,820 - 00:19:19,380] Now,
+- [00:19:19,380 - 00:19:23,940] that distance is the place
+- [00:19:23,940 - 00:19:26,280] where the Hubble law says
+- [00:19:26,280 - 00:19:27,900] that distance d
+- [00:19:28,340 - 00:19:30,200] is the place where the Hubble law says
+- [00:19:30,200 - 00:19:32,360] that the velocity of recession
+- [00:19:32,360 - 00:19:34,380] becomes equal to the speed of light.
+- [00:19:35,020 - 00:19:37,680] It is not quite the place
+- [00:19:37,680 - 00:19:39,520] where the surface of life scattering is.
+- [00:19:39,900 - 00:19:43,580] The surface of life scattering is slightly in.
+- [00:19:46,100 - 00:19:47,000] Slightly in.
+- [00:19:47,100 - 00:19:50,900] It is the place where if a light ray
+- [00:19:50,900 - 00:19:52,800] was emitted from that place,
+- [00:19:52,920 - 00:19:54,560] by the time it got to us,
+- [00:19:55,340 - 00:19:58,160] its wavelength would have been infinitely stretched.
+- [00:19:59,340 - 00:20:00,900] That's what the horizon is.
+- [00:20:01,080 - 00:20:03,700] Any light ray emitted from the horizon
+- [00:20:03,700 - 00:20:06,200] by the time it would get to us,
+- [00:20:06,360 - 00:20:08,640] why would it be infinitely stretched?
+- [00:20:09,500 - 00:20:10,100] Well,
+- [00:20:10,100 - 00:20:11,460] the reason is fairly simple.
+- [00:20:14,020 - 00:20:18,180] A light ray emitted from very close to that point
+- [00:20:18,900 - 00:20:20,280] takes a very,
+- [00:20:20,280 - 00:20:23,120] very long time to get to us.
+- [00:20:23,760 - 00:20:25,320] If it takes a long time,
+- [00:20:25,580 - 00:20:28,320] then the amount of stretching that it undergoes
+- [00:20:28,320 - 00:20:28,800] is enormous.
+- [00:20:29,020 - 00:20:30,260] But the other way to think about it
+- [00:20:30,260 - 00:20:31,040] is Doppler shift.
+- [00:20:31,620 - 00:20:33,580] Anything that's moving away from us
+- [00:20:33,580 - 00:20:35,220] with close to the speed of light
+- [00:20:35,220 - 00:20:38,560] will emit Doppler shifted radiation
+- [00:20:39,220 - 00:20:40,520] that we'll see stretched.
+- [00:20:40,980 - 00:20:42,660] So things coming from the horizon,
+- [00:20:42,920 - 00:20:45,080] that's the place where things are infinitely stretched.
+- [00:20:47,260 - 00:20:49,040] That is what the horizon is.
+- [00:20:49,640 - 00:20:51,580] The horizon is not quite
+- [00:20:52,120 - 00:20:53,760] the surface of life scattering.
+- [00:20:53,960 - 00:20:54,800] How do we know that?
+- [00:20:55,200 - 00:20:55,680] Well,
+- [00:20:55,680 - 00:20:57,640] the light from the surface of life scattering
+- [00:20:58,320 - 00:20:58,460] is very close to the horizon.
+- [00:20:58,460 - 00:20:58,980] We see it.
+- [00:20:59,000 - 00:21:00,040] It is not infinitely.
+- [00:21:00,160 - 00:21:01,600] We don't see it with our eyeballs.
+- [00:21:01,820 - 00:21:03,240] We see it with infrared detectors.
+- [00:21:03,840 - 00:21:06,120] It's not infinitely redshifted.
+- [00:21:06,580 - 00:21:07,380] In fact,
+- [00:21:07,380 - 00:21:10,180] it's redshifted by about a factor of a thousand.
+- [00:21:11,080 - 00:21:13,720] It's a thousand times longer wavelength
+- [00:21:13,720 - 00:21:15,260] by the time that it gets to us,
+- [00:21:15,300 - 00:21:16,020] we discussed this,
+- [00:21:16,679 - 00:21:18,180] than it was when it was emitted.
+- [00:21:19,500 - 00:21:21,060] A thousand is a big number.
+- [00:21:21,180 - 00:21:23,220] To the extent that a thousand is a big number,
+- [00:21:23,899 - 00:21:25,500] the surface of life scattering
+- [00:21:25,500 - 00:21:27,380] is very close to the horizon.
+- [00:21:28,320 - 00:21:30,080] Where the redshift factor would be infinite.
+- [00:21:30,480 - 00:21:31,120] So,
+- [00:21:31,120 - 00:21:33,080] for many practical purposes,
+- [00:21:33,520 - 00:21:35,380] the surface of life scattering
+- [00:21:35,380 - 00:21:36,660] is at the horizon,
+- [00:21:36,660 - 00:21:37,740] or close enough to it.
+- [00:21:38,480 - 00:21:39,120] Yes,
+- [00:21:39,120 - 00:21:42,060] that does define the size of the observable universe.
+- [00:21:42,300 - 00:21:44,640] That's exactly what the observable universe is.
+- [00:21:45,040 - 00:21:46,680] It's a portion of the universe
+- [00:21:47,539 - 00:21:50,220] that light can reach us from.
+- [00:21:50,820 - 00:21:52,740] So it's the portion of the universe
+- [00:21:52,740 - 00:21:56,300] within our cosmic horizon.
+- [00:22:00,100 - 00:22:01,580] In a box,
+- [00:22:01,580 - 00:22:02,080] let's say,
+- [00:22:02,180 - 00:22:04,980] there's a long wavelength that can happen,
+- [00:22:05,600 - 00:22:08,560] I think it's half the distance or whatever.
+- [00:22:09,280 - 00:22:10,980] Could you extend that to the universe?
+- [00:22:11,180 - 00:22:11,480] No,
+- [00:22:11,480 - 00:22:11,760] you see,
+- [00:22:11,760 - 00:22:12,560] not really.
+- [00:22:15,000 - 00:22:15,580] Here,
+- [00:22:15,580 - 00:22:16,780] imagine this again.
+- [00:22:17,220 - 00:22:20,740] There's nothing to forbid you
+- [00:22:20,740 - 00:22:22,800] from having an arbitrarily long wave
+- [00:22:23,210 - 00:22:24,400] embedded in this thing here
+- [00:22:25,080 - 00:22:27,200] that's even larger than the horizon.
+- [00:22:29,260 - 00:22:31,120] It's not like being in a box.
+- [00:22:31,480 - 00:22:33,100] Not quite like being in a box.
+- [00:22:33,640 - 00:22:34,200] So,
+- [00:22:34,200 - 00:22:35,060] a little bit different.
+- [00:22:36,520 - 00:22:37,080] Okay,
+- [00:22:37,080 - 00:22:37,420] let's see,
+- [00:22:37,420 - 00:22:38,220] is there any last question?
+- [00:22:43,040 - 00:22:43,600] Yes,
+- [00:22:43,600 - 00:22:46,000] that's right.
+- [00:22:46,700 - 00:22:47,640] Distant galaxies
+- [00:22:48,640 - 00:22:51,040] will someday pass beyond the horizon.
+- [00:22:53,080 - 00:22:54,160] And will...
+- [00:22:54,780 - 00:22:56,420] Not only distant galaxies,
+- [00:22:56,440 - 00:22:58,220] even relatively close galaxies
+- [00:22:58,320 - 00:22:59,960] will pass behind the horizon.
+- [00:23:02,540 - 00:23:03,780] That was my question.
+- [00:23:03,840 - 00:23:04,960] The d in that,
+- [00:23:04,960 - 00:23:06,320] since h is going to be
+- [00:23:06,320 - 00:23:07,560] a function of time,
+- [00:23:07,720 - 00:23:09,780] is d getting shorter?
+- [00:23:10,280 - 00:23:10,440] Oh,
+- [00:23:10,440 - 00:23:10,780] okay,
+- [00:23:10,780 - 00:23:12,220] we'll come to that.
+- [00:23:13,159 - 00:23:14,549] I said h in principle
+- [00:23:14,549 - 00:23:15,940] can be a function of time,
+- [00:23:16,040 - 00:23:17,220] and it is a function of time.
+- [00:23:17,700 - 00:23:19,600] What we know about the universe today,
+- [00:23:20,639 - 00:23:22,680] if it continues the way it's going,
+- [00:23:22,880 - 00:23:26,120] is h is asymptotically going to a constant.
+- [00:23:26,880 - 00:23:28,020] So at late times,
+- [00:23:28,020 - 00:23:29,600] you can think of h as a constant.
+- [00:23:29,760 - 00:23:30,980] That's the accelerated expansion,
+- [00:23:31,220 - 00:23:32,240] which we're going to come to today.
+- [00:23:33,020 - 00:23:34,680] h is tending toward a constant.
+- [00:23:35,040 - 00:23:36,800] So then d will fix that.
+- [00:23:37,380 - 00:23:37,880] That's right.
+- [00:23:38,000 - 00:23:38,200] So,
+- [00:23:38,200 - 00:23:42,720] once h becomes a constant,
+- [00:23:42,860 - 00:23:44,160] then this becomes a relationship
+- [00:23:44,160 - 00:23:47,540] between distance and speed of light.
+- [00:23:47,560 - 00:23:48,860] Does that mean that we won't be able
+- [00:23:48,860 - 00:23:50,240] to see the microwave radiation?
+- [00:23:50,800 - 00:23:54,340] The microwave radiation will get stretched
+- [00:23:55,020 - 00:23:56,880] and stretched and stretched and stretched,
+- [00:23:56,880 - 00:23:58,000] exponentially,
+- [00:23:58,879 - 00:24:02,600] and so it'll just fade out of existence.
+- [00:24:02,860 - 00:24:04,560] That's going to fade out of existence
+- [00:24:04,560 - 00:24:06,080] before nearby galaxies.
+- [00:24:06,500 - 00:24:07,180] Uh,
+- [00:24:07,180 - 00:24:10,260] yeah.
+- [00:24:11,640 - 00:24:11,980] Well,
+- [00:24:11,980 - 00:24:15,260] a nearby galaxy will disappear,
+- [00:24:16,840 - 00:24:18,220] will fade out of...
+- [00:24:19,919 - 00:24:22,120] Depends on how good your detectors are,
+- [00:24:22,120 - 00:24:22,620] obviously.
+- [00:24:23,460 - 00:24:26,860] I would guess it will become undetected,
+- [00:24:26,880 - 00:24:28,320] detectable before the galaxies,
+- [00:24:28,320 - 00:24:29,180] uh...
+- [00:24:30,159 - 00:24:30,600] Right.
+- [00:24:32,440 - 00:24:34,080] Because the microwave...
+- [00:24:34,080 - 00:24:35,440] I'm not sure which goes first,
+- [00:24:35,440 - 00:24:36,200] the galaxy.
+- [00:24:36,280 - 00:24:36,420] Well,
+- [00:24:36,420 - 00:24:39,320] it would seem like the microwave radiation
+- [00:24:39,320 - 00:24:41,520] is coming from even more remote things
+- [00:24:42,780 - 00:24:44,320] than nearby galaxies,
+- [00:24:44,400 - 00:24:45,260] so if we're not going
+- [00:24:45,260 - 00:24:46,120] to be able to see them,
+- [00:24:46,120 - 00:24:46,580] we...
+- [00:24:47,179 - 00:24:47,620] Oh,
+- [00:24:47,620 - 00:24:48,800] by the time the galaxies...
+- [00:24:48,800 - 00:24:49,020] Yeah,
+- [00:24:49,020 - 00:24:49,440] yeah,
+- [00:24:49,440 - 00:24:49,960] I think that's right.
+- [00:24:51,439 - 00:24:51,879] Yeah,
+- [00:24:51,879 - 00:24:52,320] right.
+- [00:24:53,060 - 00:24:54,540] So everything will cool down,
+- [00:24:54,660 - 00:24:55,460] everything will disappear
+- [00:24:55,460 - 00:24:56,420] behind the horizon.
+- [00:24:57,000 - 00:24:59,400] Only the things which are accidentally
+- [00:24:59,400 - 00:25:01,780] more or less gravitationally bound to us,
+- [00:25:01,880 - 00:25:03,820] the solar system won't fly apart,
+- [00:25:04,120 - 00:25:06,160] the galaxy won't fly apart,
+- [00:25:06,400 - 00:25:09,120] but the distant galaxies will all recede
+- [00:25:09,120 - 00:25:12,400] and will eventually be left in a...
+- [00:25:12,400 - 00:25:14,820] as a truly isolated island
+- [00:25:15,330 - 00:25:19,100] with nothing to tell us that those other galaxies
+- [00:25:19,100 - 00:25:19,640] are out there,
+- [00:25:20,270 - 00:25:21,360] except history,
+- [00:25:21,360 - 00:25:22,420] except history books.
+- [00:25:23,660 - 00:25:24,440] All right,
+- [00:25:24,440 - 00:25:24,580] look,
+- [00:25:24,580 - 00:25:25,340] I want to get on to...
+- [00:25:25,460 - 00:25:28,010] I want to get on
+- [00:25:28,010 - 00:25:30,560] to some more things about cosmology.
+- [00:25:34,140 - 00:25:34,680] Now,
+- [00:25:34,680 - 00:25:35,300] the name...
+- [00:25:36,280 - 00:25:39,360] We're going to get just a little bit technical today,
+- [00:25:39,440 - 00:25:40,260] not too technical,
+- [00:25:40,960 - 00:25:44,360] but there are pieces which are essential.
+- [00:25:45,020 - 00:25:47,140] The name of this series of courses,
+- [00:25:47,220 - 00:25:48,880] at least in my own mind,
+- [00:25:49,060 - 00:25:51,160] are the theoretical minimum,
+- [00:25:51,460 - 00:25:54,440] the minimum number of things you need to know
+- [00:25:54,440 - 00:25:58,320] in order to really understand the next step.
+- [00:25:58,580 - 00:26:00,480] And the next step would mean
+- [00:26:00,480 - 00:26:03,860] following a serious cosmology argument.
+- [00:26:05,660 - 00:26:08,660] So I don't skimp on the essentials.
+- [00:26:08,840 - 00:26:10,460] When the essentials are hard,
+- [00:26:10,600 - 00:26:12,740] I do them in the simplest,
+- [00:26:12,740 - 00:26:13,860] cleanest,
+- [00:26:13,960 - 00:26:15,380] least technical,
+- [00:26:15,380 - 00:26:17,620] least mathematical way that I can,
+- [00:26:18,820 - 00:26:22,640] but I try to do them preserving the essentials.
+- [00:26:23,679 - 00:26:24,700] We're going to do that today.
+- [00:26:25,420 - 00:26:27,340] The other thing I don't like very much
+- [00:26:27,340 - 00:26:28,240] is lots of jargon.
+- [00:26:29,240 - 00:26:32,120] But sometimes it's useful to tell you about the jargon
+- [00:26:32,120 - 00:26:36,800] so that when you read about astrophysicists
+- [00:26:36,800 - 00:26:39,480] determining that W is equal to minus one,
+- [00:26:40,240 - 00:26:42,340] you may want to know what W is.
+- [00:26:43,459 - 00:26:45,880] And in order to tell you what W is,
+- [00:26:45,960 - 00:26:47,190] I will have to tell you
+- [00:26:47,190 - 00:26:48,420] what the definition of W is.
+- [00:26:48,580 - 00:26:50,390] But there are six things which
+- [00:26:50,390 - 00:26:52,200] are all pretty much the same
+- [00:26:52,200 - 00:26:54,720] with different letters that describe them.
+- [00:26:55,560 - 00:26:57,500] So I've sort of...
+- [00:26:58,700 - 00:27:00,700] Somebody will put this on the web
+- [00:27:00,700 - 00:27:03,740] and it's got some definitions and so forth.
+- [00:27:04,060 - 00:27:04,680] All right.
+- [00:27:04,840 - 00:27:06,520] But enough excuses.
+- [00:27:06,520 - 00:27:07,520] Let's get down to it.
+- [00:27:09,000 - 00:27:10,920] What I want to talk about is the relationship
+- [00:27:10,920 - 00:27:13,060] between pressure and energy.
+- [00:27:13,160 - 00:27:13,260] No,
+- [00:27:13,260 - 00:27:14,140] let's go back a step.
+- [00:27:14,760 - 00:27:15,640] We're late.
+- [00:27:15,640 - 00:27:16,220] We're late.
+- [00:27:16,340 - 00:27:17,540] I'm going to start the class now.
+- [00:27:17,600 - 00:27:18,940] We're going to stay a little bit late today
+- [00:27:18,940 - 00:27:20,760] because I want to...
+- [00:27:22,200 - 00:27:23,840] deal with some issues here.
+- [00:27:24,060 - 00:27:26,120] Let me just do a very brief review.
+- [00:27:27,360 - 00:27:31,580] So far we have found two kinds of matter
+- [00:27:32,200 - 00:27:34,320] which can cause the universe to expand.
+- [00:27:34,680 - 00:27:36,060] One of them was radiation
+- [00:27:36,060 - 00:27:40,840] and the other was just ordinary atoms sitting still
+- [00:27:40,840 - 00:27:43,240] moving together with the galaxies.
+- [00:27:43,400 - 00:27:43,760] In fact,
+- [00:27:43,760 - 00:27:44,660] they are just the galaxies.
+- [00:27:45,580 - 00:27:46,180] One,
+- [00:27:46,180 - 00:27:48,560] I think I named matter,
+- [00:27:48,560 - 00:27:50,180] a matter-dominated universe,
+- [00:27:50,380 - 00:27:51,760] a universe which is dominated,
+- [00:27:52,200 - 00:27:53,160] whose energy is dominated,
+- [00:27:54,000 - 00:27:56,660] by things which are more or less standing still
+- [00:27:56,660 - 00:27:58,080] in their own reference frame
+- [00:27:58,939 - 00:28:01,360] even though the entire universe is expanding.
+- [00:28:02,300 - 00:28:04,960] As we move along with the expansion,
+- [00:28:05,300 - 00:28:06,520] things standing still,
+- [00:28:07,300 - 00:28:08,640] massive objects,
+- [00:28:09,000 - 00:28:11,060] their energy is simply their mass,
+- [00:28:12,220 - 00:28:17,140] and a universe based on that kind of energy density
+- [00:28:17,140 - 00:28:19,500] is called matter-dominated.
+- [00:28:20,040 - 00:28:20,560] All right.
+- [00:28:20,560 - 00:28:21,320] So,
+- [00:28:21,320 - 00:28:22,340] there's an energy density.
+- [00:28:22,640 - 00:28:25,500] Let me just write the fundamental equation over here.
+- [00:28:25,860 - 00:28:30,200] The fundamental equation that we've been working with
+- [00:28:30,200 - 00:28:34,980] is that the scale factor squared,
+- [00:28:35,460 - 00:28:36,940] the ratio of the square,
+- [00:28:37,060 - 00:28:38,680] this is the Hubble constant squared,
+- [00:28:39,520 - 00:28:40,680] that's equal...
+- [00:28:41,440 - 00:28:42,040] Incidentally,
+- [00:28:42,040 - 00:28:43,500] can green be seen well?
+- [00:28:44,520 - 00:28:45,440] Does that work?
+- [00:28:46,380 - 00:28:47,720] It's not as good as black?
+- [00:28:48,240 - 00:28:49,320] Let me try black.
+- [00:28:56,540 - 00:28:58,050] The trouble is the black ones
+- [00:28:58,050 - 00:28:59,560] have always run out of ink.
+- [00:29:07,920 - 00:29:09,840] a dot over a squared,
+- [00:29:10,160 - 00:29:11,400] that's the Hubble constant squared,
+- [00:29:11,780 - 00:29:17,020] is equal to 8 pi g over 3
+- [00:29:18,300 - 00:29:20,460] times the energy density.
+- [00:29:21,560 - 00:29:22,640] As always,
+- [00:29:22,640 - 00:29:24,760] the speed of light I'll set equal to 1.
+- [00:29:25,060 - 00:29:28,180] 8 pi g over 3 times the energy density.
+- [00:29:28,760 - 00:29:33,200] And that's our basic equation for how the universe expands.
+- [00:29:33,700 - 00:29:36,280] a is simply the scale factor.
+- [00:29:36,860 - 00:29:38,740] Expands or contracts or whatever it does.
+- [00:29:39,320 - 00:29:39,900] All right.
+- [00:29:39,920 - 00:29:41,340] The energy on the right-hand side
+- [00:29:41,340 - 00:29:42,980] can come from various components.
+- [00:29:43,600 - 00:29:45,600] And in standard cosmology,
+- [00:29:45,760 - 00:29:47,000] what's called the standard momentum,
+- [00:29:47,020 - 00:29:47,960] the model of cosmology,
+- [00:29:48,260 - 00:29:50,620] there are basically three components
+- [00:29:51,260 - 00:29:53,660] to the energy density on the right-hand side.
+- [00:29:54,240 - 00:29:55,960] The first is matter.
+- [00:29:56,220 - 00:29:56,460] Now,
+- [00:29:56,460 - 00:30:00,160] matter is by definition particles or objects.
+- [00:30:00,360 - 00:30:01,160] It could be black holes.
+- [00:30:01,300 - 00:30:02,160] It could be galaxies.
+- [00:30:02,480 - 00:30:05,020] But objects that are at rest moving,
+- [00:30:05,300 - 00:30:08,760] and at rest means moving with the overall expansion.
+- [00:30:10,020 - 00:30:11,540] That's called matter,
+- [00:30:11,540 - 00:30:12,840] such things.
+- [00:30:13,060 - 00:30:16,280] And the universe that is matter-dominated,
+- [00:30:17,060 - 00:30:18,520] let's write down what it means.
+- [00:30:18,720 - 00:30:21,480] It first of all means that the energy density
+- [00:30:23,340 - 00:30:25,460] goes like some constant
+- [00:30:25,460 - 00:30:30,140] divided by the cube of the scale factor.
+- [00:30:30,760 - 00:30:33,420] The cube of the scale factor is just the volume.
+- [00:30:34,740 - 00:30:36,810] And if the number of
+- [00:30:36,810 - 00:30:38,880] particles within the volume stays fixed
+- [00:30:38,880 - 00:30:41,040] and the mass of each particle stays fixed,
+- [00:30:41,300 - 00:30:43,570] then the energy density is
+- [00:30:43,570 - 00:30:45,840] just the mass within that region.
+- [00:30:45,920 - 00:30:46,260] I guess I'm wrong.
+- [00:30:46,280 - 00:30:47,520] I guess I called it m at one point,
+- [00:30:47,560 - 00:30:48,580] the mass within the region,
+- [00:30:49,100 - 00:30:53,100] divided by the volume of our co-moving piece of space.
+- [00:30:54,220 - 00:30:55,560] And that's just a cubed.
+- [00:30:55,880 - 00:30:57,260] So this is matter-dominated.
+- [00:31:00,000 - 00:31:01,680] And we solved the equation
+- [00:31:03,560 - 00:31:07,340] with that particular setup.
+- [00:31:07,680 - 00:31:08,840] And what did we find?
+- [00:31:09,040 - 00:31:11,140] We find that the scale factor grew
+- [00:31:11,880 - 00:31:14,480] like t to the two-thirds.
+- [00:31:16,460 - 00:31:17,140] Next,
+- [00:31:17,140 - 00:31:20,040] we introduced another kind of energy density,
+- [00:31:20,320 - 00:31:21,300] radiation,
+- [00:31:21,300 - 00:31:22,940] made up out of photons.
+- [00:31:24,420 - 00:31:27,940] Because the energy of a photon decreases
+- [00:31:28,979 - 00:31:31,220] when a volume grows,
+- [00:31:31,440 - 00:31:32,340] imagine a box,
+- [00:31:32,340 - 00:31:34,020] imagine expanding the box,
+- [00:31:34,340 - 00:31:37,160] each photon's wavelength grows,
+- [00:31:37,580 - 00:31:38,860] its energy decreases,
+- [00:31:39,020 - 00:31:41,680] and so as A increases,
+- [00:31:42,240 - 00:31:42,760] this is,
+- [00:31:42,760 - 00:31:43,640] let's call this matter,
+- [00:31:43,640 - 00:31:44,440] rho matter,
+- [00:31:44,620 - 00:31:45,600] rho,
+- [00:31:45,600 - 00:31:47,060] let's call it radiation,
+- [00:31:47,939 - 00:31:49,740] energy density and radiation,
+- [00:31:51,480 - 00:31:53,760] instead of being one over A cubed,
+- [00:31:54,100 - 00:31:57,160] is some constant divided by A to the fourth power.
+- [00:31:57,820 - 00:32:00,720] It's the fourth power because each photon
+- [00:32:01,439 - 00:32:04,580] has an energy which decreases
+- [00:32:04,580 - 00:32:06,240] as A gets bigger,
+- [00:32:06,240 - 00:32:07,660] as one power of A.
+- [00:32:08,180 - 00:32:10,760] This is the radiation domina-
+- [00:32:10,760 - 00:32:12,020] if all there is,
+- [00:32:12,020 - 00:32:13,120] is radiation,
+- [00:32:13,920 - 00:32:16,240] and no other kind of energy in the universe,
+- [00:32:16,520 - 00:32:18,500] then it's called radiation dominated.
+- [00:32:19,280 - 00:32:21,400] Of course you can have both together.
+- [00:32:22,520 - 00:32:24,600] Then the equations get more complicated,
+- [00:32:24,840 - 00:32:26,600] but in that circumstance,
+- [00:32:26,880 - 00:32:29,960] A grows like t to the one-half.
+- [00:32:32,220 - 00:32:32,900] Now,
+- [00:32:32,900 - 00:32:34,780] the smaller A is,
+- [00:32:35,040 - 00:32:40,300] the bigger the radiation component is
+- [00:32:40,300 - 00:32:42,000] relative to the matter component.
+- [00:32:43,140 - 00:32:44,560] The smaller A,
+- [00:32:44,640 - 00:32:45,900] when A is very small,
+- [00:32:46,000 - 00:32:47,160] this is bigger than this.
+- [00:32:47,360 - 00:32:49,620] So that means in the very early universe,
+- [00:32:49,840 - 00:32:51,760] the universe was radiation dominated.
+- [00:32:53,040 - 00:32:54,300] After a time,
+- [00:32:54,320 - 00:32:57,680] the individual photons lost their potency
+- [00:32:57,680 - 00:32:58,940] because they expanded,
+- [00:32:59,040 - 00:33:01,340] and the universe became matter dominated,
+- [00:33:01,920 - 00:33:03,960] and so it made a kind of transition,
+- [00:33:04,120 - 00:33:05,240] not a sudden transition,
+- [00:33:05,440 - 00:33:06,380] a smooth transition,
+- [00:33:06,580 - 00:33:10,080] from an expansion like square root of t
+- [00:33:10,080 - 00:33:11,960] to an expansion that was
+- [00:33:12,020 - 00:33:12,960] t to the two-thirds.
+- [00:33:13,320 - 00:33:15,940] This is a little bit faster expansion than this,
+- [00:33:17,260 - 00:33:20,520] and that happened after about 10,000 years,
+- [00:33:20,760 - 00:33:21,380] pretty early,
+- [00:33:22,120 - 00:33:23,900] at least according to the parameters
+- [00:33:23,900 - 00:33:24,920] as we now know them.
+- [00:33:25,100 - 00:33:27,540] We actually can't see back to that point,
+- [00:33:27,700 - 00:33:30,920] but we can infer it by a variety of arguments.
+- [00:33:32,120 - 00:33:32,760] All right,
+- [00:33:32,760 - 00:33:34,800] there is a third component of energy
+- [00:33:34,800 - 00:33:37,140] that's important in the universe.
+- [00:33:37,200 - 00:33:37,460] Of course,
+- [00:33:37,460 - 00:33:38,620] there's zillions of components,
+- [00:33:39,800 - 00:33:40,320] but
+- [00:33:40,320 - 00:33:42,060] the important,
+- [00:33:42,720 - 00:33:44,580] dynamically important components
+- [00:33:44,580 - 00:33:45,500] that really govern
+- [00:33:46,100 - 00:33:48,900] the way the universe behaves on a large scale
+- [00:33:48,900 - 00:33:49,880] is
+- [00:33:51,020 - 00:33:52,560] what I'll call rho naught,
+- [00:33:53,760 - 00:33:55,640] and that's vacuum energy,
+- [00:33:55,880 - 00:33:56,940] dark energy,
+- [00:33:57,160 - 00:33:58,520] cosmological constant,
+- [00:33:58,920 - 00:33:59,960] all the same thing,
+- [00:34:00,080 - 00:34:01,720] and we're going to come to that tonight.
+- [00:34:02,920 - 00:34:04,720] What I will tell you about it
+- [00:34:05,720 - 00:34:08,000] is it doesn't depend on A at all.
+- [00:34:08,920 - 00:34:10,300] It's energy that's zillion,
+- [00:34:10,320 - 00:34:11,580] and it's there in the vacuum.
+- [00:34:11,880 - 00:34:17,239] Think again about this growing chain of atoms.
+- [00:34:20,480 - 00:34:22,100] Waves along here,
+- [00:34:24,000 - 00:34:24,840] sound waves,
+- [00:34:25,300 - 00:34:27,620] would get less and less energy
+- [00:34:27,620 - 00:34:30,500] as they got longer and longer wavelength.
+- [00:34:31,139 - 00:34:32,219] So they,
+- [00:34:32,219 - 00:34:32,780] in fact,
+- [00:34:32,780 - 00:34:33,020] would,
+- [00:34:33,179 - 00:34:37,900] the energy density would decrease with time
+- [00:34:37,900 - 00:34:39,300] from a sound wave.
+- [00:34:40,320 - 00:34:43,260] So let's suppose that there were embedded in this string
+- [00:34:43,260 - 00:34:46,080] a set of impurities.
+- [00:34:46,699 - 00:34:47,900] These impurities,
+- [00:34:48,060 - 00:34:50,980] we do not have a source of new impurities.
+- [00:34:51,699 - 00:34:53,460] We don't have in our pocket
+- [00:34:53,460 - 00:34:55,560] a source of these new impurities.
+- [00:34:55,739 - 00:34:56,960] Let's give those impurities names.
+- [00:34:57,520 - 00:34:59,260] Let's call them hydrogen.
+- [00:34:59,900 - 00:35:00,500] Okay,
+- [00:35:00,500 - 00:35:01,360] they're hydrogen,
+- [00:35:01,580 - 00:35:02,700] or we could call them galaxies,
+- [00:35:02,740 - 00:35:03,940] or just ordinary stuff.
+- [00:35:04,400 - 00:35:05,140] All right,
+- [00:35:05,140 - 00:35:06,100] what happens
+- [00:35:06,100 - 00:35:08,920] as more and more points fill in here,
+- [00:35:09,000 - 00:35:10,300] points of space fill in,
+- [00:35:10,300 - 00:35:13,600] the atoms get further and further apart.
+- [00:35:14,220 - 00:35:15,240] And so again,
+- [00:35:15,240 - 00:35:16,940] the energy density decreases.
+- [00:35:17,460 - 00:35:20,740] But there is also just the energy density,
+- [00:35:21,500 - 00:35:23,260] I shouldn't have called them atoms.
+- [00:35:23,380 - 00:35:24,700] I wanted to reserve atoms
+- [00:35:24,700 - 00:35:26,360] for the little rubber molecules
+- [00:35:26,360 - 00:35:27,240] that were in here,
+- [00:35:27,360 - 00:35:29,060] that were adding into it.
+- [00:35:29,340 - 00:35:31,060] These are galaxies.
+- [00:35:33,020 - 00:35:33,660] Galaxies,
+- [00:35:33,660 - 00:35:33,940] galaxies.
+- [00:35:34,800 - 00:35:37,700] The galaxies get thinned out by expansion,
+- [00:35:38,000 - 00:35:39,880] and so their energy decreases,
+- [00:35:40,300 - 00:35:42,140] that's why it decreases here.
+- [00:35:42,580 - 00:35:43,960] The sound waves,
+- [00:35:45,460 - 00:35:50,840] the number of waves that can fit in,
+- [00:35:50,920 - 00:35:53,020] the wavelengths get longer and longer,
+- [00:35:53,180 - 00:35:56,040] the sound waves get less and less potent,
+- [00:35:56,360 - 00:35:57,500] less and less energetic.
+- [00:35:58,060 - 00:35:59,460] So radiation,
+- [00:36:00,640 - 00:36:02,820] which is the analog of the sound waves,
+- [00:36:03,100 - 00:36:05,940] also the energy density decreases
+- [00:36:05,940 - 00:36:07,560] as A gets bigger and bigger.
+- [00:36:07,940 - 00:36:09,760] But we can just imagine,
+- [00:36:10,300 - 00:36:11,560] that there's some kind of energy
+- [00:36:12,080 - 00:36:14,400] associated with the material
+- [00:36:14,400 - 00:36:16,340] that the string is made up out of.
+- [00:36:16,740 - 00:36:18,520] It doesn't change with time.
+- [00:36:18,840 - 00:36:21,440] It doesn't dilute.
+- [00:36:21,480 - 00:36:23,900] It doesn't dilute because every time it tries to dilute,
+- [00:36:23,920 - 00:36:25,160] we put another atom in there.
+- [00:36:26,000 - 00:36:27,240] The atoms themselves,
+- [00:36:27,540 - 00:36:28,120] the rubber atoms,
+- [00:36:28,180 - 00:36:29,100] let's call them rubber atoms,
+- [00:36:29,200 - 00:36:30,580] make believe the string is made of rubber.
+- [00:36:32,500 - 00:36:34,500] Every time the distance between
+- [00:36:34,500 - 00:36:35,880] rubber molecules increases,
+- [00:36:36,120 - 00:36:38,060] we throw another rubber molecule in there.
+- [00:36:38,200 - 00:36:39,380] So what happens
+- [00:36:39,380 - 00:36:41,540] to this component of the energy,
+- [00:36:41,660 - 00:36:45,280] the component that is associated
+- [00:36:45,280 - 00:36:48,760] with the rubber molecules that we put in?
+- [00:36:49,520 - 00:36:52,060] That does not go away
+- [00:36:52,060 - 00:36:55,320] as the universe gets bigger and bigger.
+- [00:36:55,420 - 00:36:56,460] It stays constant.
+- [00:36:56,960 - 00:36:59,080] What's going on locally
+- [00:36:59,080 - 00:37:00,740] within that rubber string
+- [00:37:01,380 - 00:37:03,000] never changes with time.
+- [00:37:03,200 - 00:37:06,120] And so this so-called vacuum energy
+- [00:37:06,120 - 00:37:07,880] or dark energy,
+- [00:37:07,880 - 00:37:10,280] it's the component which does not
+- [00:37:11,280 - 00:37:13,920] go to zero as A gets bigger.
+- [00:37:14,180 - 00:37:15,400] It's just a constant.
+- [00:37:16,000 - 00:37:16,840] In fact,
+- [00:37:16,840 - 00:37:18,600] you can think of it as a constant of nature.
+- [00:37:18,660 - 00:37:19,240] It's a number.
+- [00:37:19,240 - 00:37:19,700] It's there.
+- [00:37:19,760 - 00:37:20,620] It's there in the vacuum.
+- [00:37:22,160 - 00:37:23,120] It's peculiar.
+- [00:37:23,360 - 00:37:24,420] You may find it odd.
+- [00:37:24,880 - 00:37:27,000] I'm just going to write rho naught equals rho naught.
+- [00:37:27,260 - 00:37:28,260] It doesn't change.
+- [00:37:30,400 - 00:37:32,780] Those are the three components of energy
+- [00:37:35,279 - 00:37:36,880] which are important.
+- [00:37:38,800 - 00:37:41,560] In the evolution of the universe.
+- [00:37:41,860 - 00:37:44,860] We're going to talk about them individually now.
+- [00:37:45,060 - 00:37:45,600] Now,
+- [00:37:45,600 - 00:37:49,320] with each component of energy,
+- [00:37:50,000 - 00:37:51,780] these are the energy densities,
+- [00:37:51,780 - 00:37:52,200] of course.
+- [00:37:52,380 - 00:37:54,020] These are the energies per unit volume.
+- [00:37:54,620 - 00:37:56,640] With each component of energy,
+- [00:37:56,820 - 00:37:58,660] there is also a pressure
+- [00:37:58,660 - 00:38:00,300] that's associated with it.
+- [00:38:01,080 - 00:38:02,140] Let me begin.
+- [00:38:02,340 - 00:38:04,420] I want to describe how energy
+- [00:38:04,420 - 00:38:05,760] is connected with pressure.
+- [00:38:06,480 - 00:38:09,900] Pressure is important in cosmology.
+- [00:38:12,600 - 00:38:14,260] Let's talk about the relationship
+- [00:38:14,260 - 00:38:18,680] between pressure and energy density.
+- [00:38:20,800 - 00:38:21,440] Particularly,
+- [00:38:21,440 - 00:38:22,920] let's start with radiation.
+- [00:38:24,540 - 00:38:25,860] Let's start with radiation.
+- [00:38:26,480 - 00:38:29,320] I'm going to start with a one-dimensional box.
+- [00:38:29,620 - 00:38:31,880] A one-dimensional box is just a line segment.
+- [00:38:32,280 - 00:38:33,900] Let's imagine that it's actually
+- [00:38:33,900 - 00:38:35,180] a finite line segment.
+- [00:38:35,760 - 00:38:36,540] For the time being,
+- [00:38:36,540 - 00:38:37,340] it's not growing.
+- [00:38:37,800 - 00:38:40,840] But it contains photons going back and forth.
+- [00:38:41,040 - 00:38:42,660] And the photons move with the speed of light.
+- [00:38:43,500 - 00:38:45,340] Every photon has an energy.
+- [00:38:46,280 - 00:38:48,520] And when the photons bounce off,
+- [00:38:48,580 - 00:38:49,880] let's assume that they bounce
+- [00:38:49,880 - 00:38:51,180] off the walls of the box.
+- [00:38:51,320 - 00:38:52,240] The walls of the box are
+- [00:38:52,240 - 00:38:53,160] just the ends of the interval.
+- [00:38:53,460 - 00:38:56,160] What happens when a photon bounces off
+- [00:38:56,660 - 00:38:57,620] the end of the,
+- [00:38:57,620 - 00:38:59,240] when it bounces off the interval?
+- [00:39:00,700 - 00:39:02,020] It creates a pressure.
+- [00:39:02,740 - 00:39:04,020] It creates a pressure.
+- [00:39:04,020 - 00:39:05,640] It creates radiation pressure.
+- [00:39:06,260 - 00:39:08,840] Light bouncing back and forth between mirrors
+- [00:39:08,840 - 00:39:11,020] exerts a pressure on the mirrors.
+- [00:39:11,560 - 00:39:14,320] It's that radiation pressure which I want to,
+- [00:39:14,400 - 00:39:16,940] and the relationship between the radiation pressure
+- [00:39:16,940 - 00:39:19,180] and the energy density in there
+- [00:39:19,180 - 00:39:20,760] that's going to occupy us for a while.
+- [00:39:21,140 - 00:39:22,820] So let's see if we can figure it out.
+- [00:39:27,760 - 00:39:28,920] The formula,
+- [00:39:28,920 - 00:39:29,480] let's,
+- [00:39:29,480 - 00:39:30,620] what we're interested in now
+- [00:39:30,620 - 00:39:34,620] is the force on the wall of the box,
+- [00:39:35,410 - 00:39:36,160] the average,
+- [00:39:36,160 - 00:39:37,640] the time averaged force
+- [00:39:38,470 - 00:39:40,375] on the wall of the box due
+- [00:39:40,375 - 00:39:42,280] to the photon bouncing back and forth.
+- [00:39:42,420 - 00:39:43,020] For the moment,
+- [00:39:43,020 - 00:39:44,200] just one photon.
+- [00:39:44,700 - 00:39:45,600] Later on,
+- [00:39:45,600 - 00:39:47,040] we'll fill it up with lots of photons.
+- [00:39:47,840 - 00:39:48,500] All right.
+- [00:39:48,800 - 00:39:50,940] What is the equation for force?
+- [00:39:51,780 - 00:39:53,760] Force is equal to
+- [00:39:55,680 - 00:39:57,860] the time rate of change of something.
+- [00:39:59,680 - 00:40:00,520] What is it?
+- [00:40:00,620 - 00:40:01,520] What's the time rate of change of?
+- [00:40:01,980 - 00:40:02,580] Momentum.
+- [00:40:02,800 - 00:40:03,400] Momentum.
+- [00:40:03,880 - 00:40:04,480] P.
+- [00:40:05,600 - 00:40:08,180] Why does the momentum of a photon change?
+- [00:40:08,640 - 00:40:10,640] The momentum of a photon changes
+- [00:40:10,640 - 00:40:13,560] because the photon is originally going to the right
+- [00:40:13,560 - 00:40:15,280] and it changes to the left.
+- [00:40:15,700 - 00:40:16,300] Supposing,
+- [00:40:16,300 - 00:40:17,760] let's call it small p.
+- [00:40:17,940 - 00:40:19,960] Small p stands for momentum.
+- [00:40:20,720 - 00:40:23,020] Large p will stand for pressure later.
+- [00:40:23,380 - 00:40:26,100] Pressure and force in one dimension are the same thing.
+- [00:40:26,480 - 00:40:27,160] All right.
+- [00:40:27,200 - 00:40:27,600] So,
+- [00:40:30,620 - 00:40:32,830] let's think of the photon
+- [00:40:32,830 - 00:40:35,040] rattling back and forth many times.
+- [00:40:36,460 - 00:40:38,620] Each time it hits the wall,
+- [00:40:39,419 - 00:40:41,380] what's the change in the momentum of the photon
+- [00:40:42,140 - 00:40:44,900] if the photon happens to have a momentum p?
+- [00:40:45,740 - 00:40:46,520] 2 p.
+- [00:40:46,700 - 00:40:47,360] 2 p.
+- [00:40:47,960 - 00:40:48,520] Okay.
+- [00:40:48,600 - 00:40:48,720] So,
+- [00:40:48,720 - 00:40:50,320] if the magnitude of the momentum is p,
+- [00:40:50,500 - 00:40:51,700] when it reflects,
+- [00:40:52,300 - 00:40:55,120] there's a change in momentum twice p.
+- [00:40:56,520 - 00:40:59,000] What's the time interval between
+- [00:41:00,600 - 00:41:03,420] successive jolts at the end of the box here?
+- [00:41:03,900 - 00:41:06,060] The photon moves with the speed of light
+- [00:41:06,779 - 00:41:08,620] and the distance is l.
+- [00:41:11,140 - 00:41:11,700] So,
+- [00:41:11,700 - 00:41:14,700] how long does it take between collisions with the wall?
+- [00:41:15,380 - 00:41:16,520] 2 l over c.
+- [00:41:17,040 - 00:41:19,760] 2 l over c.
+- [00:41:19,760 - 00:41:20,460] Why 2?
+- [00:41:21,760 - 00:41:22,560] Why 2?
+- [00:41:22,560 - 00:41:24,200] Because it's got to go and come back.
+- [00:41:24,720 - 00:41:25,480] All right.
+- [00:41:25,580 - 00:41:26,140] So,
+- [00:41:26,140 - 00:41:28,000] the rate at which momentum
+- [00:41:29,000 - 00:41:29,460] is being,
+- [00:41:29,460 - 00:41:29,940] if you like,
+- [00:41:30,000 - 00:41:32,600] which momentum is being deposited on the wall,
+- [00:41:33,360 - 00:41:36,200] the momentum per unit time
+- [00:41:37,620 - 00:41:39,980] that's changing by virtue of the reflection
+- [00:41:40,540 - 00:41:41,720] is twice p,
+- [00:41:42,000 - 00:41:43,740] but it happens every,
+- [00:41:44,040 - 00:41:44,900] what did we say,
+- [00:41:44,900 - 00:41:45,960] l over c?
+- [00:41:47,980 - 00:41:49,020] 2 l over c.
+- [00:41:49,680 - 00:41:50,320] All right.
+- [00:41:50,320 - 00:41:50,920] The 2s cancel.
+- [00:41:55,860 - 00:41:57,640] And we can write this in the form
+- [00:41:57,640 - 00:42:00,140] pc divided by l.
+- [00:42:02,780 - 00:42:07,560] That's the force on the wall of the box.
+- [00:42:08,360 - 00:42:09,000] Now,
+- [00:42:09,000 - 00:42:09,800] next question.
+- [00:42:09,980 - 00:42:12,680] What is the relationship between
+- [00:42:12,680 - 00:42:14,220] the momentum of a photon
+- [00:42:14,220 - 00:42:17,280] and the energy of the photon?
+- [00:42:18,020 - 00:42:18,960] Anybody know?
+- [00:42:20,700 - 00:42:22,620] We've done this a number of times.
+- [00:42:23,420 - 00:42:24,260] In fact,
+- [00:42:24,260 - 00:42:25,980] I think I'm not going to work it out.
+- [00:42:26,960 - 00:42:28,700] Let's just state what it is.
+- [00:42:30,480 - 00:42:32,840] The energy of a photon is its momentum
+- [00:42:32,840 - 00:42:33,980] times the speed of light.
+- [00:42:34,220 - 00:42:35,600] Let's just check its units.
+- [00:42:35,880 - 00:42:37,420] It's easy to check its units.
+- [00:42:37,880 - 00:42:40,760] Ordinary momentum is mass times velocity,
+- [00:42:40,760 - 00:42:41,120] right?
+- [00:42:42,480 - 00:42:43,200] All right.
+- [00:42:45,940 - 00:42:47,460] Supposing we multiply that
+- [00:42:47,980 - 00:42:49,080] by another velocity.
+- [00:42:49,500 - 00:42:50,380] Here's momentum,
+- [00:42:50,380 - 00:42:51,960] and we're multiplying it
+- [00:42:51,960 - 00:42:52,800] by another velocity.
+- [00:42:52,800 - 00:42:55,520] Then it will have units of mv squared.
+- [00:42:55,920 - 00:42:58,540] But mv squared obviously has units of energy.
+- [00:42:58,800 - 00:42:59,960] It's the kinetic energy.
+- [00:43:00,380 - 00:43:02,660] So momentum times speed of light
+- [00:43:02,660 - 00:43:04,080] does have units of energy,
+- [00:43:04,220 - 00:43:05,860] and it is the energy of a photon.
+- [00:43:06,340 - 00:43:08,620] It's momentum times its velocity
+- [00:43:09,820 - 00:43:11,400] is its energy.
+- [00:43:12,040 - 00:43:13,690] So we can rewrite that
+- [00:43:13,690 - 00:43:15,340] the force on the end here,
+- [00:43:16,060 - 00:43:17,320] this is the force,
+- [00:43:17,380 - 00:43:19,580] that's pc over l.
+- [00:43:19,820 - 00:43:21,360] That is the energy
+- [00:43:21,360 - 00:43:23,020] of the photon
+- [00:43:23,020 - 00:43:25,680] divided by the length of the box.
+- [00:43:26,900 - 00:43:27,540] Well,
+- [00:43:27,540 - 00:43:29,200] the photon rattles around many,
+- [00:43:29,200 - 00:43:29,880] many times,
+- [00:43:30,000 - 00:43:32,100] and we average over long periods of time.
+- [00:43:32,360 - 00:43:33,900] What is the energy divided
+- [00:43:33,900 - 00:43:35,440] by the length of the box?
+- [00:43:35,840 - 00:43:38,100] It's the average energy density.
+- [00:43:39,140 - 00:43:41,620] The energy divided by the length,
+- [00:43:41,660 - 00:43:43,400] the average energy per unit length.
+- [00:43:43,940 - 00:43:46,200] So we found out that the force
+- [00:43:46,840 - 00:43:48,480] in this simple example
+- [00:43:48,480 - 00:43:50,360] with just one photon rattling around,
+- [00:43:50,360 - 00:43:54,940] the force is just equal to the energy density,
+- [00:43:55,340 - 00:43:56,040] and that's it.
+- [00:43:57,660 - 00:43:58,220] Force,
+- [00:43:58,220 - 00:43:59,880] and let's call it rho.
+- [00:44:00,200 - 00:44:01,760] Rho for energy density,
+- [00:44:01,920 - 00:44:03,200] but let's keep in mind
+- [00:44:03,200 - 00:44:04,840] that in this example,
+- [00:44:05,480 - 00:44:08,060] energy density means energy per unit length,
+- [00:44:08,160 - 00:44:10,000] not per unit volume for the moment.
+- [00:44:12,700 - 00:44:14,180] Energy density rho,
+- [00:44:14,380 - 00:44:16,280] rho stands for energy density,
+- [00:44:16,520 - 00:44:18,290] is now supposing there's a
+- [00:44:18,290 - 00:44:20,060] lot of photons in the box.
+- [00:44:20,760 - 00:44:23,960] Each photon exerts a force
+- [00:44:23,960 - 00:44:26,720] when it bounces into the end,
+- [00:44:27,020 - 00:44:28,880] and each photon has an energy.
+- [00:44:29,520 - 00:44:30,860] For each photon,
+- [00:44:31,180 - 00:44:32,880] the force that it exerts
+- [00:44:32,880 - 00:44:35,800] is equal to the energy divided by the length.
+- [00:44:36,360 - 00:44:38,020] So when I add them all up,
+- [00:44:38,200 - 00:44:39,440] it will still be true
+- [00:44:39,440 - 00:44:41,980] that the total force will equal
+- [00:44:41,980 - 00:44:44,460] the total energy divided by the length.
+- [00:44:44,840 - 00:44:47,580] So this formula is not necessarily
+- [00:44:47,580 - 00:44:49,620] the formula for a single photon.
+- [00:44:50,840 - 00:44:51,660] In fact,
+- [00:44:51,660 - 00:44:52,400] for a single photon,
+- [00:44:52,540 - 00:44:53,580] it's kind of a little bit funny
+- [00:44:53,580 - 00:44:56,060] because everything happens in jolts
+- [00:44:56,620 - 00:44:58,300] that take a long time between jolts,
+- [00:44:58,880 - 00:45:01,120] but if you have a lot of photons in there
+- [00:45:01,120 - 00:45:02,460] and they're all doing the same thing,
+- [00:45:03,420 - 00:45:05,280] then it gets smoothed out,
+- [00:45:05,420 - 00:45:06,420] and the force,
+- [00:45:06,420 - 00:45:07,740] or the pressure at the end,
+- [00:45:07,780 - 00:45:10,120] is simply equal to the energy density.
+- [00:45:11,080 - 00:45:11,600] Okay?
+- [00:45:12,860 - 00:45:14,960] That's the one-dimensional case.
+- [00:45:15,640 - 00:45:17,580] Now let's think about...
+- [00:45:17,580 - 00:45:18,680] Any questions about this?
+- [00:45:20,240 - 00:45:20,980] All right,
+- [00:45:20,980 - 00:45:22,340] this is a fundamental fact,
+- [00:45:23,060 - 00:45:25,240] and it's true in any number of dimensions,
+- [00:45:25,380 - 00:45:27,260] not specifically this exact fact,
+- [00:45:27,440 - 00:45:29,180] but similar facts are true
+- [00:45:29,180 - 00:45:30,180] in any number of dimensions,
+- [00:45:30,380 - 00:45:35,140] that energy density and pressure
+- [00:45:37,080 - 00:45:38,860] are closely related.
+- [00:45:39,180 - 00:45:41,620] So now let's come to three dimensions.
+- [00:45:42,540 - 00:45:43,460] Let's take,
+- [00:45:43,460 - 00:45:45,940] instead of a line interval,
+- [00:45:46,100 - 00:45:48,400] let's imagine a box.
+- [00:45:50,060 - 00:45:51,700] A three-dimensional box,
+- [00:45:51,940 - 00:45:53,580] and for the moment,
+- [00:45:54,460 - 00:45:57,260] let me suppose that all the molecules...
+- [00:45:57,260 - 00:45:58,060] Not the molecules.
+- [00:45:58,260 - 00:45:59,900] The box is full of photons,
+- [00:46:00,200 - 00:46:01,980] uniformly distributed,
+- [00:46:02,400 - 00:46:08,420] but let's make a simple wrong assumption.
+- [00:46:08,880 - 00:46:10,960] The simple wrong assumption is that
+- [00:46:10,960 - 00:46:14,620] all the photons are moving only along the x-axis
+- [00:46:14,620 - 00:46:15,340] for the moment.
+- [00:46:15,640 - 00:46:18,680] Suppose they only move along the x-axis.
+- [00:46:19,240 - 00:46:20,980] The box is full of photons,
+- [00:46:21,200 - 00:46:22,580] but let's take all those photons
+- [00:46:23,140 - 00:46:24,380] in a narrow...
+- [00:46:27,746 - 00:46:28,086] おやすみ
+- [00:46:31,106 - 00:46:32,126] do you call such a shape?
+- [00:46:33,266 - 00:46:36,006] a rectangular parallel pipette,
+- [00:46:36,006 - 00:46:36,686] I believe
+- [00:46:40,626 - 00:46:43,846] let's take all the photons in there
+- [00:46:43,846 - 00:46:45,086] and let's assume,
+- [00:46:45,086 - 00:46:46,406] as I said wrongly,
+- [00:46:46,406 - 00:46:48,926] that they are all moving only in the horizontal
+- [00:46:48,926 - 00:46:49,446] direction
+- [00:46:50,026 - 00:46:52,056] then we can say exactly the same things
+- [00:46:52,056 - 00:46:54,086] except we really should say it in the
+- [00:46:54,086 - 00:46:54,606] following way
+- [00:46:55,306 - 00:46:57,486] let's take a little element of area here
+- [00:46:58,306 - 00:46:59,786] here's a little element of area
+- [00:46:59,786 - 00:47:02,766] and take all of the photons
+- [00:47:02,766 - 00:47:05,746] in that little element of area
+- [00:47:07,246 - 00:47:10,666] I'm not going to write that as rho times the
+- [00:47:10,666 - 00:47:14,086] length because I'm now going to think of rho as
+- [00:47:14,786 - 00:47:15,446] oh,
+- [00:47:15,446 - 00:47:15,966] I'm sorry,
+- [00:47:15,966 - 00:47:17,186] I'm not going,
+- [00:47:17,186 - 00:47:17,586] yes,
+- [00:47:17,586 - 00:47:20,086] I'm going to think of rho
+- [00:47:20,086 - 00:47:22,586] as the density per three-dimensional volume
+- [00:47:22,586 - 00:47:23,686] alright
+- [00:47:23,686 - 00:47:27,286] what is the corresponding formula?
+- [00:47:27,946 - 00:47:28,606] well,
+- [00:47:28,606 - 00:47:29,766] we can write it that way
+- [00:47:29,786 - 00:47:30,326] so we can write it the same way
+- [00:47:30,326 - 00:47:31,786] the force
+- [00:47:33,446 - 00:47:34,486] is equal,
+- [00:47:34,486 - 00:47:36,046] it is in fact equal
+- [00:47:36,606 - 00:47:38,316] to the energy
+- [00:47:38,316 - 00:47:40,026] in that rectangular hyperbolo-blah-blah-blah-blah-blah
+- [00:47:40,566 - 00:47:42,526] divided by the length,
+- [00:47:42,526 - 00:47:43,466] that hasn't changed
+- [00:47:44,966 - 00:47:47,946] but now I want to divide both sides of this,
+- [00:47:47,946 - 00:47:48,546] oh sorry,
+- [00:47:48,546 - 00:47:50,006] that's divided by the length
+- [00:47:51,366 - 00:47:53,326] now I want to divide both sides
+- [00:47:53,326 - 00:47:55,286] of this by the little element of area
+- [00:47:56,106 - 00:47:57,686] so let's divide it by
+- [00:47:57,686 - 00:47:59,266] the little element of area there
+- [00:48:00,026 - 00:48:02,286] A stands for a small area now
+- [00:48:02,286 - 00:48:06,366] and now what's the length times the area?
+- [00:48:08,406 - 00:48:11,146] that's the volume in this region here
+- [00:48:12,166 - 00:48:14,366] what's the force divided by the area?
+- [00:48:15,526 - 00:48:16,626] that's the pressure
+- [00:48:16,626 - 00:48:18,626] that's the definition of pressure,
+- [00:48:18,626 - 00:48:19,786] force per unit area
+- [00:48:20,546 - 00:48:23,166] so we come to pressure,
+- [00:48:23,166 - 00:48:25,706] not momentum now
+- [00:48:26,626 - 00:48:29,226] I think I used small p for momentum,
+- [00:48:29,226 - 00:48:29,586] yeah
+- [00:48:31,005 - 00:48:36,766] pressure is equal again to energy divided by volume
+- [00:48:37,406 - 00:48:39,226] which is again rho
+- [00:48:39,786 - 00:48:42,886] but now this doesn't mean energy per unit length
+- [00:48:42,886 - 00:48:44,446] it means energy per unit volume
+- [00:48:44,446 - 00:48:45,906] now what's wrong with this?
+- [00:48:46,146 - 00:48:47,906] this is a funny setup here
+- [00:48:47,906 - 00:48:50,986] I have pressure on the ends of the box here
+- [00:48:50,986 - 00:48:53,746] but if there are no particles going vertically
+- [00:48:54,326 - 00:48:56,266] bouncing off the roof and the floor
+- [00:48:56,786 - 00:48:57,936] there will be no pressure
+- [00:48:57,936 - 00:48:59,086] on the roof and the floor
+- [00:48:59,086 - 00:49:03,136] we know from experience that a nice thermalized
+- [00:49:03,136 - 00:49:07,186] distribution of molecules or photons or whatever they are
+- [00:49:07,186 - 00:49:10,006] will exert equal pressures in all directions
+- [00:49:10,006 - 00:49:13,506] so let's imagine now
+- [00:49:13,506 - 00:49:15,846] here's an oversimplification
+- [00:49:15,846 - 00:49:17,486] but it's closer to the truth
+- [00:49:18,086 - 00:49:20,566] let's suppose that there are
+- [00:49:20,566 - 00:49:23,046] photons which move along the x-axis
+- [00:49:23,986 - 00:49:26,626] photons which move along the y-axis
+- [00:49:27,726 - 00:49:29,066] and photons which move along the y-axis
+- [00:49:29,086 - 00:49:30,326] and photons which move along the z-axis
+- [00:49:31,125 - 00:49:33,406] this of course is still an oversimplification
+- [00:49:34,086 - 00:49:37,206] the typical photon will be moving at some oblique direction
+- [00:49:37,206 - 00:49:38,346] which is neither x,
+- [00:49:38,346 - 00:49:38,546] y,
+- [00:49:38,546 - 00:49:38,886] or z
+- [00:49:38,886 - 00:49:41,666] but let's just take this simple case here
+- [00:49:41,666 - 00:49:44,346] where there are equal density of photons
+- [00:49:45,586 - 00:49:46,626] moving vertically,
+- [00:49:46,626 - 00:49:47,566] horizontally,
+- [00:49:47,566 - 00:49:48,566] and in and out
+- [00:49:49,266 - 00:49:50,726] same density of photons
+- [00:49:50,726 - 00:49:52,486] and what will the right equation be?
+- [00:49:52,946 - 00:49:56,566] well only those photons which are moving horizontally
+- [00:49:56,566 - 00:50:03,966] will contribute to the pressure on this wall
+- [00:50:04,566 - 00:50:06,066] only those moving vertically
+- [00:50:06,066 - 00:50:08,546] will contribute to the pressure on the ceiling
+- [00:50:08,546 - 00:50:10,706] only those moving in and out
+- [00:50:10,706 - 00:50:13,066] will contribute to the pressure on the front wall
+- [00:50:13,066 - 00:50:15,246] so what's the right formula?
+- [00:50:15,466 - 00:50:17,526] the right formula is the pressure
+- [00:50:17,526 - 00:50:19,726] is equal to the energy density
+- [00:50:19,726 - 00:50:21,826] divided by three
+- [00:50:21,826 - 00:50:23,846] one third of the photons
+- [00:50:23,846 - 00:50:25,226] are moving this way
+- [00:50:25,226 - 00:50:26,146] they all have energy
+- [00:50:26,966 - 00:50:28,186] all of them have energy
+- [00:50:29,966 - 00:50:32,096] but only a third of them
+- [00:50:32,096 - 00:50:34,226] contribute to each component of the pressure
+- [00:50:35,046 - 00:50:36,466] so the formula would be
+- [00:50:37,366 - 00:50:40,346] in this oversimplified setup
+- [00:50:42,746 - 00:50:44,426] rho divided by three
+- [00:50:45,666 - 00:50:46,306] now
+- [00:50:48,266 - 00:50:49,146] is this
+- [00:50:49,146 - 00:50:51,945] the setup was oversimplified
+- [00:50:51,945 - 00:50:53,446] the answer is correct
+- [00:50:53,446 - 00:50:55,406] the answer is correct
+- [00:50:55,406 - 00:50:57,246] the answer is correct
+- [00:50:57,246 - 00:51:00,186] no matter what directions the photons are moving in
+- [00:51:00,186 - 00:51:03,546] as long as they're all scrambled up enough
+- [00:51:04,845 - 00:51:06,746] the right answer of course
+- [00:51:06,746 - 00:51:09,526] is a given photon
+- [00:51:09,526 - 00:51:11,146] is moving in some random direction
+- [00:51:11,765 - 00:51:14,166] but it has an x component of momentum
+- [00:51:14,166 - 00:51:15,846] a y component of momentum
+- [00:51:15,846 - 00:51:17,406] and a z component of momentum
+- [00:51:19,186 - 00:51:20,466] the total energy
+- [00:51:21,985 - 00:51:23,426] is whatever the total energy is
+- [00:51:23,446 - 00:51:27,266] but it works exactly as if
+- [00:51:27,266 - 00:51:29,606] a third of the photons are moving this way
+- [00:51:29,606 - 00:51:31,186] a third of the photons are moving this way
+- [00:51:31,186 - 00:51:32,056] and a third of the
+- [00:51:32,056 - 00:51:32,926] photons are moving the other way
+- [00:51:32,926 - 00:51:34,726] so this is a correct relationship
+- [00:51:34,726 - 00:51:36,866] I don't want to do it in detail
+- [00:51:37,386 - 00:51:38,886] it is a correct relationship
+- [00:51:41,105 - 00:51:43,366] really it's just that on the average
+- [00:51:43,366 - 00:51:45,546] a third of the energy is
+- [00:51:45,546 - 00:51:47,726] going into motion in this direction
+- [00:51:47,726 - 00:51:49,566] a third is going into this direction
+- [00:51:49,566 - 00:51:50,066] and so forth
+- [00:51:50,066 - 00:51:52,826] alright so p equals rho over three
+- [00:51:52,826 - 00:51:53,426] so this is the right answer
+- [00:51:53,426 - 00:51:55,986] let's write that down over here
+- [00:51:57,506 - 00:51:58,506] pressure
+- [00:51:59,126 - 00:52:01,866] for the radiation dominated world
+- [00:52:02,426 - 00:52:04,706] is energy density
+- [00:52:05,426 - 00:52:06,006] radiation
+- [00:52:07,006 - 00:52:08,286] divided by three
+- [00:52:09,766 - 00:52:11,146] what about
+- [00:52:11,146 - 00:52:13,166] the matter dominated world
+- [00:52:13,166 - 00:52:15,566] the matter dominated world
+- [00:52:16,666 - 00:52:19,946] is a world in which atoms are there
+- [00:52:22,326 - 00:52:23,406] or they are there
+- [00:52:23,426 - 00:52:23,846] galaxies,
+- [00:52:23,846 - 00:52:25,226] objects are there
+- [00:52:26,926 - 00:52:28,866] but relative to the box
+- [00:52:28,866 - 00:52:29,706] the box,
+- [00:52:29,706 - 00:52:31,666] if you want to imagine what the box is
+- [00:52:31,666 - 00:52:33,306] the box is a certain
+- [00:52:33,306 - 00:52:35,046] region of space that's moving along
+- [00:52:35,046 - 00:52:35,786] with the flow
+- [00:52:39,126 - 00:52:40,706] the atoms are not moving
+- [00:52:40,706 - 00:52:42,766] or whatever is making up the material
+- [00:52:42,766 - 00:52:45,006] is not moving relative
+- [00:52:45,006 - 00:52:46,666] to the walls of the box
+- [00:52:47,926 - 00:52:48,826] they're frozen
+- [00:52:48,826 - 00:52:49,406] they're stuck
+- [00:52:51,646 - 00:52:53,226] do they have energy density
+- [00:52:53,426 - 00:52:53,886] sure,
+- [00:52:53,886 - 00:52:55,666] each one has a mass
+- [00:52:55,666 - 00:52:57,646] multiply the mass by mc squared
+- [00:52:57,646 - 00:52:57,986] no,
+- [00:52:57,986 - 00:52:59,706] don't multiply the mass by mc squared
+- [00:52:59,706 - 00:53:01,146] multiply the mass by c squared
+- [00:53:01,146 - 00:53:03,686] and you will find the energy of each one
+- [00:53:03,686 - 00:53:05,066] but what about the pressure
+- [00:53:05,066 - 00:53:06,426] is it exerting any pressure
+- [00:53:06,426 - 00:53:07,786] on the walls of the box
+- [00:53:08,706 - 00:53:09,206] no
+- [00:53:09,206 - 00:53:11,986] because they're not banging into the walls of the box
+- [00:53:11,986 - 00:53:12,946] they're standing still
+- [00:53:13,546 - 00:53:14,786] they don't exert any force
+- [00:53:14,786 - 00:53:16,026] on the walls of the box
+- [00:53:16,626 - 00:53:17,126] so
+- [00:53:17,126 - 00:53:18,286] this limit
+- [00:53:18,946 - 00:53:21,746] of very slowly moving particles
+- [00:53:21,746 - 00:53:23,366] moving with the flow
+- [00:53:24,386 - 00:53:25,446] corresponds to
+- [00:53:25,446 - 00:53:26,546] pressure equals zero
+- [00:53:30,306 - 00:53:32,226] are there other possibilities
+- [00:53:32,226 - 00:53:33,146] sure,
+- [00:53:33,146 - 00:53:35,166] we could heat up this material
+- [00:53:35,166 - 00:53:37,046] so that the molecules
+- [00:53:37,046 - 00:53:38,086] are moving more
+- [00:53:38,086 - 00:53:40,226] or so that the galaxies were moving more
+- [00:53:40,226 - 00:53:42,206] then we would have some pressure
+- [00:53:44,825 - 00:53:47,546] and we could get sort of halfway in between
+- [00:53:47,546 - 00:53:49,426] we could have a parameter
+- [00:53:50,806 - 00:53:53,286] the temperature of what's going on in here
+- [00:53:53,426 - 00:53:56,006] when the molecules are cold
+- [00:53:56,006 - 00:53:58,246] hydrogen is cold
+- [00:53:58,246 - 00:53:59,446] or the galaxies are
+- [00:54:00,626 - 00:54:01,426] cold
+- [00:54:01,426 - 00:54:02,606] what does cold mean
+- [00:54:03,206 - 00:54:05,426] cold doesn't mean that the stars are cold
+- [00:54:05,426 - 00:54:07,826] it means that they're not moving
+- [00:54:07,826 - 00:54:09,406] relative to the
+- [00:54:09,406 - 00:54:11,266] to the
+- [00:54:12,145 - 00:54:13,486] ambient background
+- [00:54:15,246 - 00:54:17,906] cold molecules don't exert pressure
+- [00:54:17,906 - 00:54:20,346] fast molecules exert pressure
+- [00:54:21,406 - 00:54:22,686] speed of light,
+- [00:54:22,686 - 00:54:23,406] sort of the same thing
+- [00:54:23,426 - 00:54:24,146] as a limiting case
+- [00:54:24,146 - 00:54:27,466] the pressure is fairly large
+- [00:54:27,466 - 00:54:27,706] yeah
+- [00:54:27,706 - 00:54:29,446] in the case of expanding the universe
+- [00:54:29,446 - 00:54:31,546] aren't the particles actually moving apart
+- [00:54:32,266 - 00:54:33,186] yes they are,
+- [00:54:33,186 - 00:54:35,046] but take a small enough box
+- [00:54:35,046 - 00:54:36,326] take a small box
+- [00:54:36,326 - 00:54:37,606] so we don't have to
+- [00:54:37,606 - 00:54:38,886] worry about the growth of it
+- [00:54:39,236 - 00:54:41,626] and examine this for an infinitesimal box
+- [00:54:42,366 - 00:54:44,026] for an infinitesimal box
+- [00:54:44,026 - 00:54:44,926] this
+- [00:54:44,926 - 00:54:46,726] this will work
+- [00:54:47,426 - 00:54:47,886] ok,
+- [00:54:47,886 - 00:54:48,786] so here we have
+- [00:54:48,786 - 00:54:51,626] p equals rho over 3
+- [00:54:51,626 - 00:54:53,226] radiation over 3
+- [00:54:53,426 - 00:54:55,006] here we have p equals 0
+- [00:54:56,386 - 00:54:57,786] and I'm going to write
+- [00:54:57,786 - 00:54:59,266] a more general equation
+- [00:55:00,066 - 00:55:01,186] I'm going to write
+- [00:55:01,186 - 00:55:03,566] the equation that the pressure
+- [00:55:03,566 - 00:55:04,386] this doesn't
+- [00:55:04,386 - 00:55:07,066] not associated with this third line yet
+- [00:55:07,066 - 00:55:08,265] let's erase the third line,
+- [00:55:08,265 - 00:55:09,645] we don't know about the third line yet
+- [00:55:11,906 - 00:55:12,826] not erase it,
+- [00:55:12,826 - 00:55:13,626] just put it down here
+- [00:55:13,626 - 00:55:14,905] rho naught
+- [00:55:15,886 - 00:55:17,866] let me write a general equation
+- [00:55:17,866 - 00:55:19,486] it's an equation which covers
+- [00:55:19,486 - 00:55:21,226] a lot of different assumptions
+- [00:55:21,806 - 00:55:23,026] it is the pressure
+- [00:55:23,426 - 00:55:24,566] is proportional
+- [00:55:24,566 - 00:55:27,306] to the energy density
+- [00:55:27,306 - 00:55:28,166] rho,
+- [00:55:28,166 - 00:55:30,066] whatever the energy density is
+- [00:55:30,066 - 00:55:32,986] times a numerical factor
+- [00:55:32,986 - 00:55:34,066] times a numerical factor
+- [00:55:35,246 - 00:55:38,206] what is w for the cold gas
+- [00:55:38,206 - 00:55:39,726] what is w for the cold gas
+- [00:55:41,426 - 00:55:42,646] w equals 0
+- [00:55:43,706 - 00:55:45,526] what is w over here
+- [00:55:45,526 - 00:55:45,886] what is w over here
+- [00:55:46,926 - 00:55:48,066] a third
+- [00:55:48,066 - 00:55:48,406] a third
+- [00:55:48,406 - 00:55:49,046] a third
+- [00:55:55,166 - 00:55:56,946] w is a parameter
+- [00:55:56,946 - 00:55:59,006] w is a parameter
+- [00:55:59,006 - 00:56:00,106] which when you vary it
+- [00:56:00,106 - 00:56:01,326] from one thing to another
+- [00:56:01,326 - 00:56:03,466] you can cover a lot of ground
+- [00:56:03,466 - 00:56:05,126] about what the material
+- [00:56:05,126 - 00:56:07,746] which is driving the universe is
+- [00:56:07,746 - 00:56:08,966] for example
+- [00:56:08,966 - 00:56:11,886] something between 0 and 1 third
+- [00:56:11,886 - 00:56:14,006] would describe something called
+- [00:56:14,006 - 00:56:15,466] warm dark matter
+- [00:56:15,466 - 00:56:18,846] dark matter is not thought to be warm
+- [00:56:18,846 - 00:56:21,326] dark matter is thought to be just as cold
+- [00:56:21,326 - 00:56:23,406] and correspond to p equals 0
+- [00:56:23,406 - 00:56:26,206] but for a while
+- [00:56:26,206 - 00:56:28,086] people thought that dark matter
+- [00:56:28,086 - 00:56:30,266] might correspond to neutrinos
+- [00:56:31,066 - 00:56:32,586] neutrinos move pretty fast
+- [00:56:32,586 - 00:56:34,406] they whiz back and forth
+- [00:56:34,406 - 00:56:37,166] and they don't quite move
+- [00:56:37,166 - 00:56:38,046] with the speed of light
+- [00:56:39,526 - 00:56:41,806] and if that was what the dark matter was
+- [00:56:41,806 - 00:56:43,986] then we wouldn't have p equals 0
+- [00:56:43,986 - 00:56:45,966] because the neutrinos would be moving
+- [00:56:45,966 - 00:56:47,346] we wouldn't quite have
+- [00:56:47,346 - 00:56:49,166] w equals a third
+- [00:56:49,166 - 00:56:50,826] because that corresponds to motion
+- [00:56:50,826 - 00:56:51,866] with the speed of light
+- [00:56:51,866 - 00:56:53,386] you would have something like
+- [00:56:53,406 - 00:56:54,706] a little bit less than a third
+- [00:56:55,926 - 00:56:57,806] so there's a wide variety
+- [00:56:57,806 - 00:56:59,126] of different kinds
+- [00:56:59,126 - 00:57:00,926] this is called the equation of state
+- [00:57:01,606 - 00:57:03,066] w is the parameter
+- [00:57:03,066 - 00:57:04,386] in the equation of state
+- [00:57:06,286 - 00:57:07,906] that's just terminology
+- [00:57:07,906 - 00:57:09,906] and w is just terminology
+- [00:57:11,646 - 00:57:12,886] but if you want to follow
+- [00:57:12,886 - 00:57:14,366] what's going on in cosmology
+- [00:57:15,466 - 00:57:17,166] and the article says
+- [00:57:17,166 - 00:57:18,866] well there's something or other called w
+- [00:57:19,166 - 00:57:21,026] and astronomers are measuring it
+- [00:57:21,026 - 00:57:22,266] to equal something or other
+- [00:57:23,406 - 00:57:24,046] and they want to know what it is
+- [00:57:24,046 - 00:57:25,726] so that's what w is
+- [00:57:27,166 - 00:57:29,346] okay so that covers
+- [00:57:30,546 - 00:57:31,486] the different
+- [00:57:31,486 - 00:57:33,686] kinds of equations of state
+- [00:57:37,446 - 00:57:38,906] but now let's come
+- [00:57:40,486 - 00:57:41,046] to
+- [00:57:41,046 - 00:57:42,706] yeah I want to continue with this
+- [00:57:42,706 - 00:57:44,986] line of reasoning about the equation of state
+- [00:57:45,566 - 00:57:47,386] how is w
+- [00:57:48,606 - 00:57:49,166] related
+- [00:57:49,166 - 00:57:51,106] notice that there's a relationship
+- [00:57:51,106 - 00:57:52,506] or could be a relationship
+- [00:57:53,406 - 00:57:54,766] between what w is
+- [00:57:54,766 - 00:57:56,326] when w is equal to zero
+- [00:57:56,326 - 00:57:58,786] it looks like the energy density
+- [00:57:59,565 - 00:58:01,266] goes like one over eight cubed
+- [00:58:01,846 - 00:58:04,206] when w is equal to one third
+- [00:58:04,206 - 00:58:05,786] it looks like it goes
+- [00:58:05,786 - 00:58:07,286] one over eight to the fourth
+- [00:58:07,286 - 00:58:08,306] is there a pattern there
+- [00:58:08,306 - 00:58:09,746] is there some reason
+- [00:58:09,746 - 00:58:12,146] that as you vary this w
+- [00:58:12,146 - 00:58:14,666] the energy momentum
+- [00:58:15,336 - 00:58:16,966] sorry the energy pressure
+- [00:58:16,966 - 00:58:17,986] ratio
+- [00:58:17,986 - 00:58:19,786] is there some reason
+- [00:58:19,786 - 00:58:23,306] that that governs how the energy density
+- [00:58:23,406 - 00:58:24,306] changes with a
+- [00:58:24,306 - 00:58:26,706] and the answer is yes there is a relationship
+- [00:58:26,706 - 00:58:28,246] I'm going to show it to you
+- [00:58:29,126 - 00:58:29,426] uh
+- [00:58:31,586 - 00:58:32,506] it's tricky
+- [00:58:33,466 - 00:58:34,626] it's not hard
+- [00:58:34,626 - 00:58:36,606] no fancy mathematics
+- [00:58:37,126 - 00:58:38,086] no fancy calculus
+- [00:58:38,086 - 00:58:39,746] just subtle
+- [00:58:40,545 - 00:58:41,726] it's a little bit subtle
+- [00:58:44,266 - 00:58:45,506] little bit of calculus
+- [00:58:45,506 - 00:58:46,626] but nothing fancy
+- [00:58:47,246 - 00:58:48,106] but uh
+- [00:58:49,006 - 00:58:50,386] some subtle reasoning
+- [00:58:56,766 - 00:58:58,306] it's called thermodynamics
+- [00:58:58,306 - 00:58:59,946] and thermodynamics is always hard
+- [00:58:59,946 - 00:59:02,466] not because it's mathematically hard
+- [00:59:03,106 - 00:59:05,466] this is very easy thermodynamics
+- [00:59:05,466 - 00:59:06,426] but uh
+- [00:59:06,426 - 00:59:06,986] nevertheless
+- [00:59:06,986 - 00:59:08,806] a little bit hard
+- [00:59:09,406 - 00:59:10,346] let's take a box
+- [00:59:11,626 - 00:59:13,686] this box does not have to be a cube
+- [00:59:13,686 - 00:59:15,006] it could be any shape whatever
+- [00:59:16,806 - 00:59:17,366] alright
+- [00:59:17,366 - 00:59:19,986] and expand the box a little bit
+- [00:59:20,766 - 00:59:22,286] we could expand the box
+- [00:59:22,286 - 00:59:23,386] by moving one word
+- [00:59:23,406 - 00:59:24,386] we could move one wall out a little bit
+- [00:59:24,386 - 00:59:26,566] we could move all three walls out a little bit
+- [00:59:26,566 - 00:59:28,806] but what we're doing is just increasing
+- [00:59:28,806 - 00:59:30,266] the volume of the box
+- [00:59:31,566 - 00:59:33,326] there's molecules on the inside
+- [00:59:34,946 - 00:59:35,466] molecules
+- [00:59:35,466 - 00:59:37,186] or photons
+- [00:59:37,186 - 00:59:38,206] or whatever
+- [00:59:39,326 - 00:59:40,906] there may or may not be
+- [00:59:40,906 - 00:59:42,246] and typically there will be
+- [00:59:42,246 - 00:59:44,506] pressure on the walls of the box
+- [00:59:45,526 - 00:59:47,246] pressure on the walls of the box
+- [00:59:49,006 - 00:59:51,686] when we move the walls of the box
+- [00:59:51,686 - 00:59:53,326] we do some work
+- [00:59:53,406 - 00:59:54,826] on the walls
+- [00:59:54,826 - 00:59:56,406] the pressure on the inside
+- [00:59:56,926 - 00:59:58,446] pushes against the wall
+- [00:59:58,446 - 01:00:00,166] and does some work
+- [01:00:00,166 - 01:00:02,226] how much work does it do?
+- [01:00:02,346 - 01:00:03,246] let's see if we can figure
+- [01:00:03,246 - 01:00:04,146] out how much work it does
+- [01:00:05,006 - 01:00:07,006] supposing this wall moves
+- [01:00:07,666 - 01:00:09,066] by a little distance
+- [01:00:09,066 - 01:00:09,926] called dx
+- [01:00:11,406 - 01:00:13,586] only the x wall moves a little bit
+- [01:00:13,586 - 01:00:15,666] we move the x wall a little bit
+- [01:00:15,666 - 01:00:16,726] how much work
+- [01:00:16,726 - 01:00:19,806] is done on the x wall
+- [01:00:19,806 - 01:00:22,146] by moving it a little distance dx
+- [01:00:22,146 - 01:00:23,386] by moving it a little distance dx
+- [01:00:23,406 - 01:00:25,906] force times dx
+- [01:00:25,906 - 01:00:27,526] that's the work done
+- [01:00:27,526 - 01:00:29,266] what's the force?
+- [01:00:30,846 - 01:00:32,166] pressure times area
+- [01:00:32,166 - 01:00:33,966] so the work done
+- [01:00:34,706 - 01:00:36,486] on the walls of the box
+- [01:00:36,486 - 01:00:38,106] is the pressure
+- [01:00:38,106 - 01:00:39,506] times dx
+- [01:00:39,506 - 01:00:41,346] times the area
+- [01:00:41,346 - 01:00:42,786] of the wall
+- [01:00:44,346 - 01:00:46,046] what is dx times a?
+- [01:00:48,966 - 01:00:50,726] that's the change in the volume
+- [01:00:50,726 - 01:00:51,506] of the box
+- [01:00:51,506 - 01:00:53,386] so it's pressure times area
+- [01:00:54,006 - 01:00:56,046] times the change in the volume
+- [01:00:56,046 - 01:00:56,766] of the box
+- [01:00:57,506 - 01:00:59,086] you would get the same thing
+- [01:00:59,086 - 01:01:01,346] if you moved the vertical
+- [01:01:02,246 - 01:01:03,546] dimension a little bit
+- [01:01:03,546 - 01:01:05,246] or the in out direction
+- [01:01:05,246 - 01:01:05,926] a little bit
+- [01:01:05,926 - 01:01:07,726] in fact you would get the same thing
+- [01:01:07,726 - 01:01:10,206] if you changed all the directions simultaneously
+- [01:01:11,166 - 01:01:12,266] the work done
+- [01:01:12,266 - 01:01:15,126] is the pressure times the change in the volume
+- [01:01:16,166 - 01:01:16,726] now
+- [01:01:18,066 - 01:01:19,026] where does
+- [01:01:19,026 - 01:01:20,306] what does that work
+- [01:01:20,306 - 01:01:21,826] where does that work come from?
+- [01:01:23,406 - 01:01:24,366] energy conservation
+- [01:01:24,906 - 01:01:26,366] tells you that that
+- [01:01:26,366 - 01:01:27,186] where does that work?
+- [01:01:27,246 - 01:01:29,686] that work is the increase in the energy
+- [01:01:29,686 - 01:01:30,866] of the walls of the box
+- [01:01:30,866 - 01:01:31,866] where did it come from?
+- [01:01:32,186 - 01:01:33,526] it came from
+- [01:01:33,526 - 01:01:35,246] it got robbed
+- [01:01:35,246 - 01:01:38,546] or the internal energy in the gas
+- [01:01:38,546 - 01:01:41,106] whether it be photons or whatever it is
+- [01:01:41,106 - 01:01:43,266] got robbed of a little bit of energy
+- [01:01:43,266 - 01:01:45,526] and that energy went into work
+- [01:01:46,326 - 01:01:48,286] the energy in the box decreased
+- [01:01:48,286 - 01:01:50,966] that is why the temperature of a box
+- [01:01:50,966 - 01:01:53,346] goes down when you increase the size of the box
+- [01:01:53,346 - 01:01:55,166] the internal energy decreases
+- [01:01:56,066 - 01:01:57,206] so we can write
+- [01:01:57,206 - 01:02:00,386] the decrease in the energy of the box
+- [01:02:03,326 - 01:02:04,446] is pdv
+- [01:02:04,446 - 01:02:05,926] why the minus sign?
+- [01:02:06,566 - 01:02:08,606] because the energy of the box
+- [01:02:08,606 - 01:02:09,826] goes down a little bit
+- [01:02:09,826 - 01:02:13,046] this is a very general fact
+- [01:02:13,046 - 01:02:15,186] about gases of all kinds
+- [01:02:15,186 - 01:02:17,886] that the change in the internal energy
+- [01:02:17,886 - 01:02:20,466] when you just shift the walls
+- [01:02:20,466 - 01:02:20,946] a little bit
+- [01:02:20,966 - 01:02:23,666] is just pdv
+- [01:02:23,666 - 01:02:25,846] this could be a spherical box
+- [01:02:25,846 - 01:02:26,666] let's take it
+- [01:02:26,666 - 01:02:27,806] it could be a spherical box
+- [01:02:27,806 - 01:02:29,366] it could be a cubical box
+- [01:02:29,366 - 01:02:30,286] it doesn't matter
+- [01:02:30,286 - 01:02:32,306] and we might also write
+- [01:02:33,886 - 01:02:35,446] that later on
+- [01:02:35,446 - 01:02:36,286] let's do it now
+- [01:02:36,286 - 01:02:37,026] no,
+- [01:02:37,026 - 01:02:38,386] let's leave it this way for a moment
+- [01:02:38,386 - 01:02:39,986] later on we're going to write
+- [01:02:39,986 - 01:02:42,146] that the volume of the box is a cubed
+- [01:02:43,406 - 01:02:45,646] a being the scale factor
+- [01:02:46,206 - 01:02:48,246] later on we'll think of this as a box
+- [01:02:48,246 - 01:02:50,046] one scale factor on a side
+- [01:02:50,966 - 01:02:52,226] but for the time being it's just that
+- [01:02:52,856 - 01:02:53,146] now,
+- [01:02:53,146 - 01:02:55,206] what is the energy in the box?
+- [01:02:55,386 - 01:02:56,386] the energy in the box
+- [01:02:56,966 - 01:02:58,526] is the energy density
+- [01:02:58,526 - 01:03:00,006] times the volume
+- [01:03:00,006 - 01:03:03,226] e is energy density times volume
+- [01:03:05,266 - 01:03:07,586] so what is the change in energy
+- [01:03:07,586 - 01:03:09,446] if energy is
+- [01:03:10,146 - 01:03:11,546] rho times v
+- [01:03:12,805 - 01:03:14,526] and we don't know offhand
+- [01:03:14,526 - 01:03:16,286] rho may change a little bit
+- [01:03:16,286 - 01:03:17,906] we know that the energy is going to change
+- [01:03:18,585 - 01:03:20,946] it may change because rho changes
+- [01:03:20,966 - 01:03:23,306] or it may change because the volume of the box
+- [01:03:23,306 - 01:03:24,046] or maybe both
+- [01:03:24,925 - 01:03:26,286] so we should write
+- [01:03:26,845 - 01:03:28,906] that the change in the energy of the box
+- [01:03:30,086 - 01:03:31,206] is equal
+- [01:03:31,206 - 01:03:32,486] to
+- [01:03:32,486 - 01:03:33,186] rho
+- [01:03:34,866 - 01:03:35,506] dv
+- [01:03:35,506 - 01:03:38,086] plus v d rho
+- [01:03:38,805 - 01:03:41,326] that's just the change in a product
+- [01:03:41,326 - 01:03:43,066] when you change each term
+- [01:03:43,066 - 01:03:44,246] each factor a little bit
+- [01:03:44,966 - 01:03:46,526] just elementary calculus
+- [01:03:46,526 - 01:03:49,286] dE equals rho dv plus v d rho
+- [01:03:49,286 - 01:03:49,685] so
+- [01:03:50,965 - 01:03:52,146] and that's equal
+- [01:03:52,965 - 01:03:55,465] to minus p dv
+- [01:03:57,646 - 01:03:58,766] let's take
+- [01:03:58,766 - 01:04:00,566] everything with a dv
+- [01:04:00,566 - 01:04:01,826] with a d volume and put
+- [01:04:01,826 - 01:04:03,086] it on the right hand side
+- [01:04:03,086 - 01:04:04,686] then we get
+- [01:04:04,686 - 01:04:06,806] volume times dp
+- [01:04:06,806 - 01:04:09,146] is equal
+- [01:04:09,146 - 01:04:10,766] to minus
+- [01:04:10,766 - 01:04:12,486] p
+- [01:04:12,486 - 01:04:14,426] plus rho
+- [01:04:14,966 - 01:04:16,946] times dv
+- [01:04:18,366 - 01:04:19,566] dv rho
+- [01:04:19,566 - 01:04:20,326] dv rho
+- [01:04:20,966 - 01:04:21,466] sorry
+- [01:04:21,466 - 01:04:22,406] dv rho
+- [01:04:28,245 - 01:04:30,806] I have written in my notes here
+- [01:04:30,806 - 01:04:33,446] which you will get a copy of over the internet
+- [01:04:33,446 - 01:04:34,106] or something
+- [01:04:34,966 - 01:04:37,206] I have p equals one third rho
+- [01:04:37,206 - 01:04:37,906] some place
+- [01:04:37,906 - 01:04:39,266] and then I put in brackets
+- [01:04:39,266 - 01:04:43,126] p e e equals one third rho
+- [01:04:43,126 - 01:04:44,166] r h rho
+- [01:04:44,166 - 01:04:45,946] so that I wouldn't make that mistake
+- [01:04:45,946 - 01:04:46,766] laughter
+- [01:04:49,745 - 01:04:50,406] right
+- [01:04:51,406 - 01:04:53,986] rho and p are not the same thing
+- [01:04:54,826 - 01:04:56,566] v d rho
+- [01:04:56,566 - 01:04:58,626] there's an equation
+- [01:04:58,626 - 01:05:01,026] now let's remember now
+- [01:05:01,026 - 01:05:03,286] that for a lot of interesting situations
+- [01:05:03,286 - 01:05:04,806] the
+- [01:05:04,806 - 01:05:06,446] where is it
+- [01:05:07,846 - 01:05:08,806] that p
+- [01:05:08,806 - 01:05:11,266] is related to the energy density
+- [01:05:11,266 - 01:05:13,806] by a numerical number w
+- [01:05:13,806 - 01:05:16,226] which happens to be one third
+- [01:05:16,226 - 01:05:17,006] for photons
+- [01:05:17,006 - 01:05:19,546] happens to be zero for cold
+- [01:05:19,546 - 01:05:20,946] motionless energy
+- [01:05:20,966 - 01:05:23,086] and it could be other things
+- [01:05:23,086 - 01:05:25,286] so let's plug that in
+- [01:05:25,286 - 01:05:26,986] let's plug that in
+- [01:05:35,166 - 01:05:37,146] and we get an equation
+- [01:05:38,626 - 01:05:39,966] v d rho
+- [01:05:41,005 - 01:05:42,646] is equal to minus
+- [01:05:43,326 - 01:05:44,486] now let's see
+- [01:05:44,486 - 01:05:47,506] p is w times rho
+- [01:05:47,506 - 01:05:48,966] so I think I will write
+- [01:05:48,966 - 01:05:50,946] that this is w plus one third rho
+- [01:05:50,946 - 01:05:51,346] one
+- [01:05:55,246 - 01:05:56,446] rho dv
+- [01:05:56,446 - 01:05:58,686] does everybody see what I've done
+- [01:05:59,746 - 01:06:01,046] I've simply said
+- [01:06:01,046 - 01:06:03,486] that w times rho
+- [01:06:03,486 - 01:06:04,826] is equal to p
+- [01:06:07,006 - 01:06:09,406] if I happen to know what w is
+- [01:06:10,046 - 01:06:12,286] if I happen to know what w is
+- [01:06:12,286 - 01:06:14,486] then this equation
+- [01:06:14,486 - 01:06:15,886] can be nicely solved
+- [01:06:15,886 - 01:06:17,166] I'll show you the solution
+- [01:06:17,166 - 01:06:19,106] the solution we write
+- [01:06:19,106 - 01:06:20,226] I'm going to do a little bit of
+- [01:06:20,226 - 01:06:20,926] differentiation
+- [01:06:20,946 - 01:06:22,066] differential equations here
+- [01:06:22,066 - 01:06:24,586] we can write d rho over rho
+- [01:06:25,406 - 01:06:26,966] is equal to minus
+- [01:06:26,966 - 01:06:28,806] w plus one
+- [01:06:28,806 - 01:06:30,406] w now is a number
+- [01:06:31,085 - 01:06:32,286] w is a number
+- [01:06:32,766 - 01:06:34,186] dv divided by v
+- [01:06:35,866 - 01:06:37,346] I've divided by v
+- [01:06:37,346 - 01:06:38,506] and I've divided by rho
+- [01:06:41,585 - 01:06:43,026] alright for those who know
+- [01:06:43,026 - 01:06:45,226] enough calculus what is d rho over rho
+- [01:06:45,226 - 01:06:47,626] it's the differential change in
+- [01:06:47,626 - 01:06:49,386] log of rho
+- [01:06:50,245 - 01:06:50,886] so
+- [01:06:50,946 - 01:06:52,966] this is the change in log of rho
+- [01:06:54,966 - 01:06:55,586] minus
+- [01:06:56,866 - 01:06:58,246] w plus one
+- [01:06:58,246 - 01:06:59,546] what's dv over v
+- [01:07:01,826 - 01:07:03,206] d of log v
+- [01:07:05,446 - 01:07:07,266] this is not very hard to solve
+- [01:07:07,266 - 01:07:09,126] it says that log of rho
+- [01:07:11,926 - 01:07:12,886] is equal
+- [01:07:12,886 - 01:07:13,646] whoops
+- [01:07:13,646 - 01:07:14,206] minus
+- [01:07:14,206 - 01:07:16,626] equals minus w plus one
+- [01:07:16,626 - 01:07:17,886] log of v
+- [01:07:20,306 - 01:07:20,926] so
+- [01:07:20,946 - 01:07:21,286] what
+- [01:07:21,286 - 01:07:25,106] the right hand side
+- [01:07:25,106 - 01:07:26,866] if I multiply something
+- [01:07:26,866 - 01:07:28,246] by the logarithm of v
+- [01:07:28,246 - 01:07:30,566] that's equal to the logarithm of something else
+- [01:07:36,686 - 01:07:37,666] logarithm of
+- [01:07:41,166 - 01:07:43,006] v to what power
+- [01:07:44,666 - 01:07:45,926] minus w plus one
+- [01:07:46,745 - 01:07:48,406] minus w plus one
+- [01:07:48,946 - 01:07:49,726] alright
+- [01:07:50,946 - 01:07:52,166] in other words one over v
+- [01:07:54,505 - 01:07:56,186] to the w plus one
+- [01:07:56,186 - 01:08:02,526] to the w plus one
+- [01:08:02,526 - 01:08:03,686] is there a constant
+- [01:08:03,686 - 01:08:05,746] nope I don't think so
+- [01:08:05,746 - 01:08:06,806] oh
+- [01:08:06,806 - 01:08:07,246] uh
+- [01:08:10,446 - 01:08:12,426] yeah there's an additive constant
+- [01:08:12,946 - 01:08:14,846] yeah there's a one can add a constant
+- [01:08:16,565 - 01:08:17,746] won't change anything
+- [01:08:17,746 - 01:08:20,066] okay what's the solution to this
+- [01:08:20,946 - 01:08:22,926] rho is equal to one
+- [01:08:22,926 - 01:08:25,586] divided by volume to the w plus one
+- [01:08:25,586 - 01:08:26,706] that's just right
+- [01:08:26,706 - 01:08:29,285] just throw away the log cancel out the logarithms
+- [01:08:29,786 - 01:08:31,526] rho is equal
+- [01:08:31,526 - 01:08:33,086] to one
+- [01:08:33,086 - 01:08:34,586] divided by the volume
+- [01:08:35,426 - 01:08:37,246] to the w plus one
+- [01:08:38,126 - 01:08:39,546] let me just remind you
+- [01:08:39,546 - 01:08:41,006] what we use we basically used
+- [01:08:41,006 - 01:08:42,066] energy conservation
+- [01:08:42,826 - 01:08:45,046] that the work done in expanding
+- [01:08:45,046 - 01:08:46,845] the box is
+- [01:08:46,845 - 01:08:48,185] the energy
+- [01:08:48,946 - 01:08:50,805] that is wrong
+- [01:08:50,946 - 01:08:54,626] and then we used
+- [01:08:54,626 - 01:08:56,026] the relationship between
+- [01:08:56,026 - 01:08:58,145] internal energy and pressure
+- [01:08:58,145 - 01:09:00,406] pressure to tell us the work
+- [01:09:01,805 - 01:09:02,645] and
+- [01:09:05,666 - 01:09:06,506] that's
+- [01:09:06,506 - 01:09:07,706] this is the equation
+- [01:09:08,746 - 01:09:10,466] dE equals pdV
+- [01:09:10,466 - 01:09:12,486] and then we used
+- [01:09:12,486 - 01:09:13,026] for energy
+- [01:09:13,026 - 01:09:14,426] rho times volume
+- [01:09:14,426 - 01:09:15,826] and for pressure
+- [01:09:15,826 - 01:09:18,166] w times energy density
+- [01:09:18,166 - 01:09:19,765] and that told us
+- [01:09:19,765 - 01:09:20,926] that the density of the work
+- [01:09:20,946 - 01:09:23,645] density behaves like one over the volume
+- [01:09:23,645 - 01:09:24,486] this tells us
+- [01:09:24,486 - 01:09:26,966] how the energy density changes
+- [01:09:26,966 - 01:09:29,166] as we change the size of the box
+- [01:09:29,866 - 01:09:32,166] now what box are we talking about
+- [01:09:32,166 - 01:09:34,006] we're talking about a box
+- [01:09:34,006 - 01:09:35,765] or we could be talking about a box
+- [01:09:35,765 - 01:09:38,006] which is one unit
+- [01:09:38,845 - 01:09:39,966] on a side
+- [01:09:39,966 - 01:09:41,166] in cosmology
+- [01:09:43,106 - 01:09:45,506] one coordinate unit on a side
+- [01:09:46,486 - 01:09:48,506] one coordinate unit on a side
+- [01:09:48,506 - 01:09:49,716] but a box which is
+- [01:09:49,716 - 01:09:50,926] one coordinate unit on a side
+- [01:09:50,926 - 01:09:53,506] in a small amount of time
+- [01:09:53,506 - 01:09:54,366] will expand
+- [01:09:55,726 - 01:09:57,346] when that box expands
+- [01:09:57,346 - 01:10:00,366] we apply exactly this rule here
+- [01:10:00,366 - 01:10:01,866] and what does it tell us
+- [01:10:01,866 - 01:10:03,466] it tells us that rho
+- [01:10:04,506 - 01:10:06,106] what's the volume of the box
+- [01:10:07,846 - 01:10:09,426] proportional to a cubed
+- [01:10:09,426 - 01:10:10,466] if I take a box
+- [01:10:10,466 - 01:10:11,926] which is one unit on the side
+- [01:10:11,926 - 01:10:13,886] its volume is a cubed
+- [01:10:14,446 - 01:10:15,886] so what does it tell me
+- [01:10:15,886 - 01:10:17,386] well there's a constant here
+- [01:10:17,386 - 01:10:18,646] there's a numerical constant
+- [01:10:18,646 - 01:10:20,646] a numerical constant
+- [01:10:20,926 - 01:10:24,566] divided by a to the w plus one
+- [01:10:25,545 - 01:10:26,886] that tells me
+- [01:10:26,886 - 01:10:28,706] how the energy density changes
+- [01:10:28,706 - 01:10:30,566] as you expand the box
+- [01:10:31,525 - 01:10:32,206] well
+- [01:10:32,206 - 01:10:33,726] did I get it right?
+- [01:10:33,966 - 01:10:35,286] no I didn't get it right
+- [01:10:35,286 - 01:10:36,666] there's a three
+- [01:10:37,485 - 01:10:38,606] it's a cubed
+- [01:10:38,606 - 01:10:40,346] w is a cubed
+- [01:10:40,346 - 01:10:42,426] so it's three w plus three
+- [01:10:43,726 - 01:10:44,906] did I do that right?
+- [01:10:45,086 - 01:10:48,146] no three w plus three
+- [01:10:48,146 - 01:10:48,686] yeah
+- [01:10:50,926 - 01:10:52,006] three w plus three
+- [01:10:55,065 - 01:10:56,846] no no it's not three w plus three
+- [01:10:56,846 - 01:10:57,226] what is it
+- [01:10:59,686 - 01:11:00,646] I've lost something
+- [01:11:05,525 - 01:11:06,526] there's a four in there
+- [01:11:06,526 - 01:11:07,146] where's my four
+- [01:11:07,146 - 01:11:07,386] um
+- [01:11:11,666 - 01:11:12,306] hmm
+- [01:11:13,686 - 01:11:14,766] w times one
+- [01:11:14,766 - 01:11:15,906] or is it w plus one
+- [01:11:15,906 - 01:11:21,306] three times one plus w
+- [01:11:21,306 - 01:11:21,626] three times one plus w
+- [01:11:21,626 - 01:11:22,326] that seems right
+- [01:11:22,326 - 01:11:23,626] three times one plus w
+- [01:11:23,626 - 01:11:25,126] yeah that's right
+- [01:11:25,126 - 01:11:28,166] okay let's try it out
+- [01:11:29,166 - 01:11:30,646] here's w equals zero
+- [01:11:30,646 - 01:11:32,066] that's matter,
+- [01:11:32,066 - 01:11:33,006] cold matter
+- [01:11:33,825 - 01:11:35,126] w equals zero
+- [01:11:35,866 - 01:11:37,126] c divided by w
+- [01:11:37,146 - 01:11:37,966] divided by a cubed
+- [01:11:37,966 - 01:11:39,886] w is equal to zero
+- [01:11:39,886 - 01:11:41,146] one plus w is one
+- [01:11:41,146 - 01:11:43,326] c divided by a cubed
+- [01:11:43,326 - 01:11:45,646] that's exactly this formula here
+- [01:11:47,286 - 01:11:49,266] so we've got a very very
+- [01:11:49,266 - 01:11:50,186] fancy argument
+- [01:11:50,826 - 01:11:52,166] just to tell us
+- [01:11:52,166 - 01:11:53,926] that if we have a bunch of
+- [01:11:53,926 - 01:11:56,666] unmoving particles which exert no pressure
+- [01:11:57,306 - 01:11:58,926] that the energy density
+- [01:11:59,666 - 01:12:01,746] decreases like one over a cubed
+- [01:12:01,746 - 01:12:02,526] duh
+- [01:12:04,686 - 01:12:06,626] okay let's try it for radiation
+- [01:12:07,146 - 01:12:08,366] for radiation
+- [01:12:08,366 - 01:12:10,166] w is equal to a third
+- [01:12:11,226 - 01:12:13,686] this is one plus a third
+- [01:12:13,686 - 01:12:14,506] is four thirds
+- [01:12:15,146 - 01:12:16,586] divided by three is four
+- [01:12:17,146 - 01:12:18,426] that's a little less duh
+- [01:12:19,106 - 01:12:20,266] a over four
+- [01:12:21,446 - 01:12:22,086] okay
+- [01:12:22,086 - 01:12:24,486] so for radiation it's a over four
+- [01:12:25,325 - 01:12:27,086] but now you have the tools
+- [01:12:27,086 - 01:12:29,246] to decide exactly
+- [01:12:29,246 - 01:12:30,606] how rho behaves
+- [01:12:31,146 - 01:12:33,006] given any equation of state
+- [01:12:33,006 - 01:12:35,506] an equation of state means a value of w
+- [01:12:35,506 - 01:12:36,126] w
+- [01:12:37,285 - 01:12:40,066] so you could have other kinds of material
+- [01:12:40,886 - 01:12:42,586] other kinds of warm gas
+- [01:12:42,586 - 01:12:43,606] cold gas,
+- [01:12:43,606 - 01:12:44,986] other kinds of mixtures
+- [01:12:44,986 - 01:12:45,546] of gases,
+- [01:12:45,546 - 01:12:46,486] whatever
+- [01:12:47,146 - 01:12:49,146] for which w might be
+- [01:12:49,146 - 01:12:49,986] some other number
+- [01:12:50,886 - 01:12:51,846] if so
+- [01:12:52,886 - 01:12:54,626] you simply plug into this formula
+- [01:12:54,966 - 01:12:57,026] and this will tell you how rho changes
+- [01:12:57,026 - 01:12:57,546] with a,
+- [01:12:57,546 - 01:12:58,926] what good does that do you
+- [01:12:58,926 - 01:13:00,986] well you couple it up
+- [01:13:00,986 - 01:13:02,766] again with the
+- [01:13:02,766 - 01:13:05,126] frw equation of motion
+- [01:13:05,126 - 01:13:06,106] where is it,
+- [01:13:06,106 - 01:13:06,746] we've erased it
+- [01:13:07,146 - 01:13:08,046] we don't need this anymore
+- [01:13:09,126 - 01:13:11,166] this was the final conclusion
+- [01:13:11,166 - 01:13:12,766] and it's the reason
+- [01:13:12,766 - 01:13:15,226] this tells you why w is an interesting
+- [01:13:15,226 - 01:13:16,726] quantity in cosmology
+- [01:13:16,726 - 01:13:18,806] tells you how the energy density changes
+- [01:13:18,806 - 01:13:20,646] as the universe expands
+- [01:13:29,185 - 01:13:30,466] but remember
+- [01:13:31,086 - 01:13:32,606] we have a dot over a
+- [01:13:33,726 - 01:13:34,366] squared
+- [01:13:35,386 - 01:13:36,566] is equal to
+- [01:13:37,226 - 01:13:38,226] eight thirds
+- [01:13:40,266 - 01:13:41,386] pi g
+- [01:13:41,386 - 01:13:42,486] times rho
+- [01:13:43,626 - 01:13:44,966] so once we know
+- [01:13:44,966 - 01:13:46,406] how rho depends on a
+- [01:13:46,406 - 01:13:47,986] we can put it into here
+- [01:13:50,406 - 01:13:51,286] and now
+- [01:13:51,286 - 01:13:52,566] with a little bit of work
+- [01:13:53,046 - 01:13:54,506] we put some constant
+- [01:13:56,486 - 01:13:57,586] divided by
+- [01:13:57,586 - 01:13:58,786] a cubed
+- [01:13:58,786 - 01:14:00,326] to the one plus w
+- [01:14:03,186 - 01:14:04,806] now with a little bit of work
+- [01:14:04,806 - 01:14:06,706] you should be able to tell me
+- [01:14:06,706 - 01:14:07,126] how rho depends on a
+- [01:14:07,146 - 01:14:09,086] how a depends on time
+- [01:14:09,086 - 01:14:10,666] for a given w
+- [01:14:13,446 - 01:14:14,506] how do we do that
+- [01:14:14,506 - 01:14:16,686] we just try out different power laws
+- [01:14:18,186 - 01:14:19,466] t to the two thirds
+- [01:14:19,466 - 01:14:20,566] t to the one half
+- [01:14:21,146 - 01:14:22,286] I'm going to leave that for you
+- [01:14:22,286 - 01:14:24,286] all you have to do is plug in
+- [01:14:24,286 - 01:14:26,986] a goes like t to a power
+- [01:14:26,986 - 01:14:28,846] plug it into this equation
+- [01:14:28,846 - 01:14:30,926] and require that the left hand side
+- [01:14:30,926 - 01:14:32,126] and the right hand side balance
+- [01:14:32,666 - 01:14:34,326] and you'll find that this power
+- [01:14:34,326 - 01:14:36,406] I don't remember the detailed relation
+- [01:14:37,146 - 01:14:38,686] this power depends on w
+- [01:14:40,126 - 01:14:42,626] when w is equal to zero
+- [01:14:43,146 - 01:14:44,546] this power is two thirds
+- [01:14:45,066 - 01:14:46,866] when w is equal to a half
+- [01:14:46,866 - 01:14:48,226] the power is
+- [01:14:48,226 - 01:14:50,486] one half
+- [01:14:50,486 - 01:14:52,566] no no when w is equal to a third
+- [01:14:53,306 - 01:14:53,906] radiation
+- [01:14:53,906 - 01:14:55,006] yeah
+- [01:14:55,986 - 01:14:58,106] so you can work that out yourself
+- [01:14:58,106 - 01:15:00,746] and you can find out how the universe expands
+- [01:15:00,746 - 01:15:02,806] for any value of w
+- [01:15:03,406 - 01:15:04,586] with one exception
+- [01:15:05,186 - 01:15:06,206] what's the exception
+- [01:15:08,246 - 01:15:09,946] well you may have a little bit of trouble
+- [01:15:11,486 - 01:15:12,086] yeah
+- [01:15:12,086 - 01:15:13,706] you might have a little bit of trouble
+- [01:15:13,706 - 01:15:14,626] with minus one
+- [01:15:15,466 - 01:15:16,066] right
+- [01:15:16,066 - 01:15:18,266] with w equals minus one
+- [01:15:19,066 - 01:15:20,986] what is w equals minus one
+- [01:15:20,986 - 01:15:21,826] does it mean anything
+- [01:15:21,826 - 01:15:24,226] and is there an answer to the problem
+- [01:15:25,106 - 01:15:25,406] yeah
+- [01:15:25,406 - 01:15:27,946] w equals minus one
+- [01:15:27,946 - 01:15:29,166] we'll see why
+- [01:15:29,166 - 01:15:32,246] is exactly this vacuum energy here
+- [01:15:32,886 - 01:15:35,606] the vacuum energy which doesn't grow
+- [01:15:35,606 - 01:15:37,126] is the vacuum energy
+- [01:15:37,146 - 01:15:38,966] or shrink or do anything
+- [01:15:40,146 - 01:15:42,066] w equals minus one
+- [01:15:42,866 - 01:15:44,046] just means
+- [01:15:44,046 - 01:15:45,306] if you look at it
+- [01:15:45,306 - 01:15:46,606] w equals minus one
+- [01:15:47,146 - 01:15:49,066] that's a to the zero power
+- [01:15:49,066 - 01:15:49,586] right
+- [01:15:53,906 - 01:15:56,266] if w equals minus one
+- [01:15:56,266 - 01:15:58,906] that says that the energy density
+- [01:15:59,846 - 01:16:01,646] doesn't depend on a at all
+- [01:16:05,745 - 01:16:07,126] one plus w equals minus one
+- [01:16:07,126 - 01:16:08,506] w in that case would be zero
+- [01:16:08,506 - 01:16:10,016] and we would just have c
+- [01:16:10,016 - 01:16:11,526] divided by a to the zero
+- [01:16:11,526 - 01:16:13,206] and a to the zero
+- [01:16:13,926 - 01:16:14,866] is just
+- [01:16:14,866 - 01:16:16,086] doesn't depend on a
+- [01:16:16,985 - 01:16:17,706] alright
+- [01:16:17,706 - 01:16:20,006] so w equals minus one
+- [01:16:20,006 - 01:16:22,246] is exactly this situation
+- [01:16:23,126 - 01:16:23,846] where
+- [01:16:24,906 - 01:16:27,006] rho is constant
+- [01:16:28,005 - 01:16:28,966] where rho
+- [01:16:28,966 - 01:16:30,646] simply doesn't change
+- [01:16:30,646 - 01:16:32,786] when you expand the universe
+- [01:16:32,786 - 01:16:34,606] it's the situation
+- [01:16:34,906 - 01:16:37,106] where the energy doesn't
+- [01:16:37,126 - 01:16:37,826] dilute
+- [01:16:38,846 - 01:16:41,046] it's as if you keep putting in
+- [01:16:41,046 - 01:16:42,026] new things
+- [01:16:42,026 - 01:16:45,046] as the universe expands to make up
+- [01:16:45,046 - 01:16:45,766] for the increased
+- [01:16:47,446 - 01:16:49,166] distance between things
+- [01:16:49,166 - 01:16:50,966] alright is it an interesting
+- [01:16:50,966 - 01:16:53,106] situation yes it is a very interesting
+- [01:16:53,106 - 01:16:54,826] situation it corresponds to
+- [01:16:55,566 - 01:16:56,706] Einstein's cosmological
+- [01:16:56,706 - 01:16:58,986] constant it corresponds to what's called dark
+- [01:16:58,986 - 01:17:00,506] energy or
+- [01:17:01,886 - 01:17:02,966] vacuum energy
+- [01:17:02,966 - 01:17:04,166] so
+- [01:17:04,906 - 01:17:07,046] it's worth our while to spend a little
+- [01:17:07,126 - 01:17:07,826] bit of time
+- [01:17:09,606 - 01:17:11,006] working out
+- [01:17:11,006 - 01:17:12,826] what happens when
+- [01:17:12,826 - 01:17:14,126] w is equal to zero
+- [01:17:14,126 - 01:17:16,646] no when w is equal to minus one
+- [01:17:18,106 - 01:17:18,806] incidentally
+- [01:17:18,806 - 01:17:20,126] w equals minus one
+- [01:17:20,816 - 01:17:22,106] you might say wait that's weird
+- [01:17:23,126 - 01:17:24,886] that means that the
+- [01:17:24,886 - 01:17:27,046] pressure is minus
+- [01:17:27,046 - 01:17:28,226] the energy density
+- [01:17:28,816 - 01:17:30,566] well the energy density is positive
+- [01:17:30,566 - 01:17:32,926] this is not the energy density being negative
+- [01:17:32,926 - 01:17:35,226] the pressure is negative
+- [01:17:35,926 - 01:17:36,986] is pressure
+- [01:17:37,126 - 01:17:39,106] being negative weird how weird is
+- [01:17:39,106 - 01:17:40,046] pressure being negative
+- [01:17:41,045 - 01:17:43,186] well if you have two walls
+- [01:17:43,186 - 01:17:45,126] positive pressure means
+- [01:17:45,126 - 01:17:47,026] pushing against the walls
+- [01:17:47,026 - 01:17:48,986] if you have two walls connected
+- [01:17:48,986 - 01:17:50,986] by a rubber band you have to
+- [01:17:50,986 - 01:17:52,026] pull them apart
+- [01:17:52,966 - 01:17:54,926] they're being pulled together that's negative
+- [01:17:54,926 - 01:17:56,746] pressure all negative pressure is is
+- [01:17:56,746 - 01:17:59,026] tension a resistance against
+- [01:17:59,026 - 01:18:00,086] against expansion
+- [01:18:00,985 - 01:18:03,046] so negative pressure is a perfectly
+- [01:18:03,046 - 01:18:04,906] good thing you take a rubber
+- [01:18:04,906 - 01:18:06,946] band and you stretch it and it's an
+- [01:18:07,126 - 01:18:08,926] example of negative pressure
+- [01:18:08,926 - 01:18:11,246] it's pulling the ends together
+- [01:18:11,246 - 01:18:13,026] positive pressure
+- [01:18:13,026 - 01:18:15,366] is that which pushes against the ends
+- [01:18:15,366 - 01:18:16,846] so negative pressure
+- [01:18:16,846 - 01:18:18,626] is in itself not weird
+- [01:18:19,366 - 01:18:20,046] uh
+- [01:18:20,745 - 01:18:23,126] as i said it corresponds to a
+- [01:18:23,126 - 01:18:23,926] kind of tension
+- [01:18:25,086 - 01:18:26,786] it's certainly not mathematically
+- [01:18:26,786 - 01:18:27,866] strange
+- [01:18:28,846 - 01:18:30,346] and it's common in physics
+- [01:18:31,446 - 01:18:32,806] pressure tension
+- [01:18:32,806 - 01:18:35,046] the same thing one is just
+- [01:18:35,046 - 01:18:36,626] the opposite of the other in sign
+- [01:18:38,366 - 01:18:39,026] and the other is the opposite of the other
+- [01:18:39,026 - 01:18:40,366] okay so let's work out
+- [01:18:40,936 - 01:18:42,766] how the f r w
+- [01:18:42,766 - 01:18:43,946] equation behaves
+- [01:18:45,105 - 01:18:47,126] if w is equal
+- [01:18:47,126 - 01:18:47,946] to minus one
+- [01:18:49,585 - 01:18:51,306] in that case
+- [01:18:51,306 - 01:18:53,026] the energy density
+- [01:18:53,026 - 01:18:54,226] is just constant
+- [01:18:55,126 - 01:18:56,706] so let's just plug in
+- [01:18:56,706 - 01:18:58,466] that the energy density is constant
+- [01:18:58,466 - 01:19:00,606] and we've already named it we've called it
+- [01:19:00,606 - 01:19:01,246] rho zero
+- [01:19:02,166 - 01:19:04,566] rho zero is a constant it doesn't
+- [01:19:04,566 - 01:19:06,826] by constant i mean it doesn't depend on
+- [01:19:07,126 - 01:19:08,766] time it's a constant of nature
+- [01:19:08,766 - 01:19:09,386] if you like
+- [01:19:11,086 - 01:19:12,906] it's something which you measure
+- [01:19:12,906 - 01:19:14,966] and it never changes why doesn't
+- [01:19:14,966 - 01:19:16,646] it change because it doesn't dilute
+- [01:19:18,525 - 01:19:19,226] whoops
+- [01:19:20,066 - 01:19:20,766] okay
+- [01:19:24,325 - 01:19:26,686] the combination just as
+- [01:19:26,686 - 01:19:28,566] again i hate terminology
+- [01:19:28,796 - 01:19:31,146] there's too much terminology we can't help it
+- [01:19:31,146 - 01:19:32,386] because
+- [01:19:32,386 - 01:19:34,626] things get named independently
+- [01:19:34,626 - 01:19:36,846] by different people and eventually
+- [01:19:37,126 - 01:19:39,146] we just have too many names for things
+- [01:19:39,146 - 01:19:40,546] the combination
+- [01:19:40,825 - 01:19:42,326] eight pi g
+- [01:19:42,326 - 01:19:44,526] rho naught has another name
+- [01:19:45,106 - 01:19:46,206] anybody know what it is
+- [01:19:47,266 - 01:19:48,026] lambda
+- [01:19:54,146 - 01:19:56,506] rho naught is called vacuum energy
+- [01:19:57,126 - 01:19:58,806] lambda is called cosmological
+- [01:19:58,806 - 01:19:59,406] constant
+- [01:19:59,406 - 01:20:02,386] they are the same thing
+- [01:20:02,386 - 01:20:04,826] apart from some numerical factors
+- [01:20:04,826 - 01:20:06,806] whenever there is a
+- [01:20:07,126 - 01:20:09,266] cosmological constant it means there is a vacuum energy
+- [01:20:09,266 - 01:20:11,246] whenever there is a vacuum energy it means
+- [01:20:11,246 - 01:20:12,406] there is a cosmological constant
+- [01:20:12,866 - 01:20:15,086] now why lambda was not
+- [01:20:15,086 - 01:20:16,986] named eight pi g over
+- [01:20:16,986 - 01:20:18,286] three times rho naught
+- [01:20:19,046 - 01:20:20,386] that's a historical
+- [01:20:21,406 - 01:20:21,966] fact
+- [01:20:21,966 - 01:20:24,406] we'll find out why
+- [01:20:25,046 - 01:20:26,806] Einstein didn't include the three here
+- [01:20:27,786 - 01:20:28,966] there is no interesting
+- [01:20:28,966 - 01:20:29,826] physics in it
+- [01:20:31,786 - 01:20:32,346] yeah
+- [01:20:32,946 - 01:20:35,026] I'll tell you what the interesting physics is
+- [01:20:35,706 - 01:20:36,726] Einstein's equations
+- [01:20:37,126 - 01:20:38,046] actually look like this
+- [01:20:39,245 - 01:20:39,805] laughter
+- [01:20:41,506 - 01:20:43,426] so when Einstein wrote his equations
+- [01:20:43,426 - 01:20:45,366] it was natural for him to define
+- [01:20:45,366 - 01:20:46,345] this thing over here
+- [01:20:46,925 - 01:20:49,126] but when he solved the equations
+- [01:20:49,126 - 01:20:50,466] not he
+- [01:20:50,466 - 01:20:52,526] but when de Sitter solved the equations
+- [01:20:52,905 - 01:20:54,265] he put the three over here
+- [01:20:56,946 - 01:20:57,506] so
+- [01:20:59,166 - 01:21:00,906] lambda is by definition
+- [01:21:00,906 - 01:21:02,825] not the right hand side of this equation
+- [01:21:02,825 - 01:21:04,265] there is an extra factor of three
+- [01:21:04,846 - 01:21:05,406] alright
+- [01:21:05,406 - 01:21:07,106] remember the right hand side of this equation
+- [01:21:07,126 - 01:21:08,305] the right hand side is just a number
+- [01:21:09,066 - 01:21:11,186] the right hand side is just a number
+- [01:21:11,186 - 01:21:13,206] don't think about how it changes
+- [01:21:13,206 - 01:21:13,706] or anything
+- [01:21:13,706 - 01:21:14,956] if it's seven or six
+- [01:21:14,956 - 01:21:16,206] or five or whatever it is
+- [01:21:16,206 - 01:21:17,166] in some units or other
+- [01:21:17,166 - 01:21:19,066] and we can take its square root
+- [01:21:19,066 - 01:21:21,825] and we can write that a dot over a
+- [01:21:22,406 - 01:21:25,106] is equal to the square root of this number
+- [01:21:25,106 - 01:21:27,106] eight pi g over three
+- [01:21:27,106 - 01:21:28,046] rho naught
+- [01:21:31,365 - 01:21:32,666] or a dot
+- [01:21:33,566 - 01:21:35,546] is a times a number
+- [01:21:36,086 - 01:21:36,746] or a dot is a times a number
+- [01:21:37,126 - 01:21:39,186] what's the solution to an equation like
+- [01:21:39,186 - 01:21:41,106] a dot is proportional to a
+- [01:21:41,106 - 01:21:43,006] an exponential
+- [01:21:43,006 - 01:21:45,126] an exponential
+- [01:21:46,346 - 01:21:48,546] the time rate of change of a
+- [01:21:48,846 - 01:21:50,946] is proportional to an exponential
+- [01:21:50,946 - 01:21:52,606] now of course
+- [01:21:53,586 - 01:21:54,886] the combination
+- [01:21:54,886 - 01:21:56,966] a pi g over three
+- [01:21:56,966 - 01:21:59,106] the square root of it
+- [01:21:59,106 - 01:22:00,986] a pi g rho
+- [01:22:00,986 - 01:22:02,246] over three
+- [01:22:02,246 - 01:22:04,206] has yet another name
+- [01:22:05,126 - 01:22:05,546] laughter
+- [01:22:07,126 - 01:22:08,546] let me tell you what the other name is
+- [01:22:08,546 - 01:22:09,326] but we don't need
+- [01:22:09,326 - 01:22:10,476] I can tell you what
+- [01:22:10,476 - 01:22:11,626] the other name is very quickly
+- [01:22:11,626 - 01:22:13,686] let's put it back in this form here
+- [01:22:13,686 - 01:22:15,076] do you remember what a
+- [01:22:15,076 - 01:22:16,466] dot over a is in general
+- [01:22:17,646 - 01:22:18,846] it's the Hubble constant
+- [01:22:19,626 - 01:22:21,066] but of course the Hubble constant
+- [01:22:21,066 - 01:22:22,306] is not typically a constant
+- [01:22:22,966 - 01:22:25,366] but in this case it is a constant
+- [01:22:26,046 - 01:22:27,046] in this case
+- [01:22:27,046 - 01:22:27,486] the Hubble
+- [01:22:27,486 - 01:22:29,486] this is the unique special case
+- [01:22:29,486 - 01:22:30,946] w equals minus one
+- [01:22:31,446 - 01:22:33,966] where the Hubble constant really is a constant
+- [01:22:35,006 - 01:22:36,546] alright it doesn't change with time
+- [01:22:37,126 - 01:22:38,266] this is rho naught I'm sorry
+- [01:22:39,426 - 01:22:40,366] rho naught
+- [01:22:41,126 - 01:22:43,366] so it's sometimes just called h
+- [01:22:43,366 - 01:22:45,306] but if I call it h
+- [01:22:45,306 - 01:22:47,026] we'll lose track of the fact
+- [01:22:47,026 - 01:22:49,246] that h already
+- [01:22:49,246 - 01:22:51,326] is something which can change with time
+- [01:22:51,326 - 01:22:52,086] and so forth
+- [01:22:52,086 - 01:22:54,066] so I'm just going to call it this
+- [01:22:55,366 - 01:22:56,886] and our equation
+- [01:22:56,886 - 01:22:59,246] is the time rate of change of a
+- [01:22:59,246 - 01:23:01,446] is proportional to a
+- [01:23:01,446 - 01:23:02,886] with a numerical coefficient
+- [01:23:03,946 - 01:23:05,066] what's the solution
+- [01:23:05,066 - 01:23:06,686] a equals
+- [01:23:08,566 - 01:23:09,376] a constant
+- [01:23:09,646 - 01:23:10,166] times
+- [01:23:10,726 - 01:23:11,266] what
+- [01:23:13,126 - 01:23:14,766] oh no not rho naught
+- [01:23:14,766 - 01:23:15,186] a
+- [01:23:17,566 - 01:23:18,646] e exponential
+- [01:23:18,646 - 01:23:21,366] when the rate of change of something
+- [01:23:21,366 - 01:23:22,706] is proportional to the thing
+- [01:23:23,546 - 01:23:24,986] that's when you have an exponential
+- [01:23:24,986 - 01:23:26,466] an exponential growth
+- [01:23:26,466 - 01:23:29,066] the rate of change is proportional to the thing itself
+- [01:23:29,826 - 01:23:30,366] alright
+- [01:23:30,956 - 01:23:32,606] and what's the thing in the exponential
+- [01:23:32,896 - 01:23:33,926] e to the
+- [01:23:34,866 - 01:23:36,366] it's going to be e to the time
+- [01:23:37,126 - 01:23:38,006] but there's a time constant
+- [01:23:39,486 - 01:23:41,126] and the time constant
+- [01:23:41,126 - 01:23:42,726] is just the square root here
+- [01:23:48,926 - 01:23:49,606] square root
+- [01:23:49,606 - 01:23:49,686] square root
+- [01:23:50,986 - 01:23:52,326] a dot over a squared
+- [01:23:52,326 - 01:23:53,426] came from the square there
+- [01:23:54,886 - 01:23:55,826] not a cube root
+- [01:23:59,046 - 01:23:59,586] what's that
+- [01:23:59,586 - 01:24:00,786] rho naught
+- [01:24:00,786 - 01:24:02,566] rho naught
+- [01:24:02,566 - 01:24:05,166] rho naught inside the square root
+- [01:24:06,806 - 01:24:07,446] alright
+- [01:24:07,446 - 01:24:09,586] let me write it over
+- [01:24:09,586 - 01:24:10,206] so it's clear
+- [01:24:13,046 - 01:24:14,906] e to the square root
+- [01:24:14,906 - 01:24:15,846] of eight
+- [01:24:15,846 - 01:24:17,366] pi g
+- [01:24:18,526 - 01:24:19,526] rho naught
+- [01:24:19,526 - 01:24:21,046] divided by three
+- [01:24:21,046 - 01:24:22,526] all of which is a number
+- [01:24:23,166 - 01:24:23,886] times t
+- [01:24:27,186 - 01:24:27,826] so
+- [01:24:28,586 - 01:24:30,586] if there is a vacuum energy
+- [01:24:30,586 - 01:24:32,546] if there is a vacuum energy
+- [01:24:33,446 - 01:24:34,966] if there is a component
+- [01:24:34,966 - 01:24:35,146] of a vacuum energy
+- [01:24:35,166 - 01:24:37,086] well if
+- [01:24:37,946 - 01:24:40,226] here we're just doing pure vacuum energy
+- [01:24:40,226 - 01:24:42,226] in a few minutes we'll talk about what happens
+- [01:24:42,226 - 01:24:44,786] if all three of them are present simultaneously
+- [01:24:45,866 - 01:24:47,966] but if there was only a vacuum energy
+- [01:24:47,966 - 01:24:50,866] the universe would exponentially expand
+- [01:24:51,766 - 01:24:52,946] and it would expand
+- [01:24:53,806 - 01:24:54,806] at a rate
+- [01:24:54,806 - 01:24:57,186] which is governed by this rho naught
+- [01:24:58,346 - 01:24:58,946] now
+- [01:24:59,566 - 01:25:00,486] the universe
+- [01:25:00,486 - 01:25:01,706] it doesn't expand
+- [01:25:01,706 - 01:25:03,306] it doesn't double in size
+- [01:25:04,126 - 01:25:05,146] this is not a problem
+- [01:25:05,166 - 01:25:07,326] e to this number here
+- [01:25:07,326 - 01:25:08,246] or this number here
+- [01:25:08,246 - 01:25:10,446] is not the doubling time
+- [01:25:11,005 - 01:25:12,566] it's called the e-folding time
+- [01:25:12,566 - 01:25:15,226] it's the amount of time that it takes
+- [01:25:15,226 - 01:25:17,526] the universe to expand by a factor of e
+- [01:25:18,226 - 01:25:20,066] but it's sort of like the doubling time
+- [01:25:20,066 - 01:25:22,186] the doubling time for the universe
+- [01:25:22,186 - 01:25:23,086] is not a second
+- [01:25:23,086 - 01:25:24,746] and it's not a thousandth of a second
+- [01:25:24,746 - 01:25:26,806] and it's not ten to the minus forty-three seconds
+- [01:25:26,806 - 01:25:28,926] the doubling time for the universe
+- [01:25:28,926 - 01:25:30,006] is pretty darn slow
+- [01:25:31,506 - 01:25:32,866] what's roughly speaking
+- [01:25:32,866 - 01:25:34,306] the doubling time of the universe
+- [01:25:37,186 - 01:25:38,266] something like that
+- [01:25:38,266 - 01:25:39,266] some of it
+- [01:25:39,266 - 01:25:39,506] five,
+- [01:25:39,506 - 01:25:40,566] ten billion years
+- [01:25:40,566 - 01:25:43,366] of order the age of the universe
+- [01:25:43,366 - 01:25:45,086] which sounds like an accident
+- [01:25:45,086 - 01:25:46,766] and it doesn't seem like an accident
+- [01:25:46,766 - 01:25:48,506] more or less accidental
+- [01:25:48,506 - 01:25:49,786] at the present time
+- [01:25:49,786 - 01:25:52,086] that the age of the universe
+- [01:25:52,086 - 01:25:54,566] and the doubling time are about the same
+- [01:25:55,166 - 01:25:56,786] that means that rho naught
+- [01:25:56,786 - 01:25:57,406] is very,
+- [01:25:57,406 - 01:25:58,126] very small
+- [01:25:59,606 - 01:26:01,046] rho naught thought of
+- [01:26:01,046 - 01:26:02,886] as an ordinary energy density
+- [01:26:02,886 - 01:26:03,906] is very,
+- [01:26:03,906 - 01:26:04,566] very small
+- [01:26:05,166 - 01:26:07,406] but of course what it's competing with
+- [01:26:07,406 - 01:26:09,606] is other very small energy densities
+- [01:26:09,606 - 01:26:11,926] the energy density in the universe
+- [01:26:11,926 - 01:26:13,366] due to ordinary matter
+- [01:26:13,366 - 01:26:14,846] and galaxies and so forth
+- [01:26:14,846 - 01:26:15,486] is very,
+- [01:26:15,486 - 01:26:16,106] very small
+- [01:26:17,526 - 01:26:19,006] galaxies are far apart
+- [01:26:19,846 - 01:26:21,126] and so
+- [01:26:21,126 - 01:26:23,446] the question comes up
+- [01:26:23,446 - 01:26:25,186] which one of these is present
+- [01:26:26,106 - 01:26:27,766] the answer is all of them
+- [01:26:27,766 - 01:26:30,126] and let's discuss
+- [01:26:31,546 - 01:26:33,226] let's first of all add this in
+- [01:26:34,226 - 01:26:35,146] rho naught
+- [01:26:35,166 - 01:26:36,026] equals
+- [01:26:37,106 - 01:26:38,726] I'm just going to write rho naught
+- [01:26:38,726 - 01:26:41,226] this is called vacuum
+- [01:26:44,246 - 01:26:44,846] dominant
+- [01:26:45,686 - 01:26:47,566] the vacuum dominated universe
+- [01:26:47,566 - 01:26:48,866] and it's
+- [01:26:48,866 - 01:26:50,146] a is equal
+- [01:26:51,266 - 01:26:52,226] to e
+- [01:26:52,226 - 01:26:54,046] to the square root
+- [01:26:54,046 - 01:26:54,846] of a pi g
+- [01:26:54,846 - 01:26:55,626] rho naught three
+- [01:26:55,626 - 01:26:56,506] I'm not going to write it
+- [01:26:56,506 - 01:26:57,066] times t
+- [01:26:57,066 - 01:26:58,826] exponentially increasing
+- [01:26:58,826 - 01:27:02,206] and this corresponds to w equals minus one
+- [01:27:05,806 - 01:27:07,726] p equals minus rho
+- [01:27:07,726 - 01:27:12,966] p equals minus rho
+- [01:27:12,966 - 01:27:15,006] that's the basic idea of vacuum
+- [01:27:15,006 - 01:27:15,326] dominant
+- [01:27:16,726 - 01:27:18,406] doesn't that mean that eventually
+- [01:27:18,406 - 01:27:19,966] even if rho is very small
+- [01:27:19,966 - 01:27:23,166] it doesn't mean that eventually
+- [01:27:24,785 - 01:27:26,306] it's exponential
+- [01:27:26,306 - 01:27:28,306] it will overwhelm the other two
+- [01:27:28,306 - 01:27:30,586] it will overwhelm the other two
+- [01:27:30,586 - 01:27:32,066] so wouldn't everything ripple
+- [01:27:32,066 - 01:27:33,686] so wouldn't everything ripple
+- [01:27:33,686 - 01:27:35,146] doesn't mean one thing
+- [01:27:35,166 - 01:27:36,706] would just mean everything would rip apart
+- [01:27:36,706 - 01:27:38,046] and it goes exponential
+- [01:27:38,706 - 01:27:39,346] well
+- [01:27:40,406 - 01:27:43,286] no it doesn't mean necessarily everything would rip apart
+- [01:27:44,326 - 01:27:44,966] um
+- [01:27:47,846 - 01:27:49,926] if you're holding hands
+- [01:27:51,146 - 01:27:52,266] with your mate
+- [01:27:52,266 - 01:27:54,646] with your mate
+- [01:27:54,646 - 01:27:56,646] and there's a weak tendency
+- [01:27:56,646 - 01:27:57,666] or a small
+- [01:27:58,506 - 01:27:59,466] exponential growth
+- [01:28:00,286 - 01:28:02,266] it's not going to tear your partners
+- [01:28:02,266 - 01:28:03,266] away from you
+- [01:28:03,266 - 01:28:04,446] your grip
+- [01:28:05,946 - 01:28:07,046] maybe stronger
+- [01:28:07,046 - 01:28:09,006] than the tendency for
+- [01:28:09,006 - 01:28:11,406] the expansion to pull him or her
+- [01:28:11,406 - 01:28:12,126] away from you
+- [01:28:13,486 - 01:28:14,886] um so no
+- [01:28:14,886 - 01:28:16,846] it won't necessarily pull everything apart
+- [01:28:17,626 - 01:28:18,226] but
+- [01:28:19,466 - 01:28:21,166] what won't get pulled apart
+- [01:28:21,166 - 01:28:22,626] is the clumpiness
+- [01:28:23,666 - 01:28:25,426] on some average scale
+- [01:28:25,426 - 01:28:27,346] on some long distance scale
+- [01:28:27,346 - 01:28:29,006] a scale which is large enough
+- [01:28:29,006 - 01:28:31,166] that the gravity
+- [01:28:31,166 - 01:28:32,946] holding things together is too weak
+- [01:28:32,946 - 01:28:35,146] to hold them together yes it will pull everything apart
+- [01:28:35,166 - 01:28:37,306] it won't pull apart our galaxy
+- [01:28:37,306 - 01:28:39,366] our galaxy is concentrated
+- [01:28:40,046 - 01:28:41,806] and dense enough
+- [01:28:41,806 - 01:28:43,526] and sort of well above
+- [01:28:43,526 - 01:28:45,026] average energy density
+- [01:28:45,026 - 01:28:47,766] so well above average energy density
+- [01:28:47,766 - 01:28:49,626] that it's being pulled together in fact
+- [01:28:49,626 - 01:28:51,806] it won't pull a solar system apart
+- [01:28:51,806 - 01:28:53,026] it won't pull an atom apart
+- [01:28:53,026 - 01:28:55,986] but it will pull apart a super cluster
+- [01:28:55,986 - 01:28:57,526] or a sufficiently big
+- [01:28:57,526 - 01:28:59,066] um sample
+- [01:29:00,626 - 01:29:02,946] and so it's a delicate question
+- [01:29:02,946 - 01:29:03,826] of what gets pulled apart
+- [01:29:03,826 - 01:29:04,586] and what doesn't
+- [01:29:05,166 - 01:29:06,986] I'm trying to be quantitative about that
+- [01:29:06,986 - 01:29:08,546] and maybe I'll come back to it
+- [01:29:09,166 - 01:29:11,746] but on the average over very large scales
+- [01:29:11,746 - 01:29:12,926] yes things will get
+- [01:29:12,926 - 01:29:14,566] or get pulled apart by this effect
+- [01:29:15,426 - 01:29:16,526] ok so
+- [01:29:17,426 - 01:29:18,026] um
+- [01:29:18,726 - 01:29:20,246] excuse me a question
+- [01:29:20,246 - 01:29:21,446] that last line
+- [01:29:21,446 - 01:29:23,226] a equals e to the
+- [01:29:23,226 - 01:29:26,986] that implies no asymptotic limit does it
+- [01:29:26,986 - 01:29:28,686] does that imply the vacuum
+- [01:29:28,686 - 01:29:29,706] the vacuum line
+- [01:29:29,706 - 01:29:31,086] this is it asymptotic
+- [01:29:31,086 - 01:29:33,746] right but
+- [01:29:35,166 - 01:29:37,246] there's no upper limit
+- [01:29:37,246 - 01:29:38,126] it keeps going
+- [01:29:38,126 - 01:29:39,446] it keeps going
+- [01:29:40,226 - 01:29:43,006] if t is large then that's big
+- [01:29:43,006 - 01:29:43,586] yeah
+- [01:29:43,586 - 01:29:46,086] if t is large it's very big
+- [01:29:46,086 - 01:29:48,466] so it doesn't mean that a even over little distances
+- [01:29:49,366 - 01:29:51,986] doesn't mean that a even over little distances
+- [01:29:51,986 - 01:29:52,706] is close to it
+- [01:29:52,706 - 01:29:53,946] if t is very large
+- [01:29:56,646 - 01:29:57,206] yeah
+- [01:29:57,206 - 01:29:58,086] eventually
+- [01:29:58,086 - 01:30:01,686] but again over small enough distances
+- [01:30:01,686 - 01:30:03,866] it's counteracted by other forces
+- [01:30:03,866 - 01:30:05,146] this can be done
+- [01:30:05,166 - 01:30:05,666] this can be modeled
+- [01:30:05,666 - 01:30:09,266] by a weak force pulling things apart
+- [01:30:10,826 - 01:30:12,166] on the average
+- [01:30:12,166 - 01:30:14,746] if things were far enough apart
+- [01:30:14,746 - 01:30:15,766] and dilute enough
+- [01:30:15,766 - 01:30:18,006] everything would expand with it
+- [01:30:18,006 - 01:30:19,866] but there may be places
+- [01:30:19,866 - 01:30:22,326] where the energy density
+- [01:30:22,326 - 01:30:24,366] is sort of concentrated in lumps
+- [01:30:25,326 - 01:30:26,346] those lumps
+- [01:30:26,346 - 01:30:28,386] may have enough internal gravity
+- [01:30:28,386 - 01:30:29,286] to hold them together
+- [01:30:29,286 - 01:30:31,486] so instead of the lumps expanding
+- [01:30:31,686 - 01:30:33,066] the lump might even contract
+- [01:30:33,066 - 01:30:35,106] but distant lumps will fall
+- [01:30:35,166 - 01:30:35,486] and they will fly apart
+- [01:30:35,486 - 01:30:37,806] so there is a lumpiness to the universe
+- [01:30:37,806 - 01:30:40,706] the universe is doing two things simultaneously
+- [01:30:40,706 - 01:30:44,526] the lumpiness is contracting
+- [01:30:44,526 - 01:30:46,246] ever into more lumpiness
+- [01:30:47,166 - 01:30:48,066] but meanwhile
+- [01:30:48,066 - 01:30:49,566] on larger scales
+- [01:30:49,566 - 01:30:50,946] everything is separating
+- [01:30:50,946 - 01:30:54,066] and becoming more dilute
+- [01:30:54,066 - 01:30:55,726] what about dark matter
+- [01:30:55,726 - 01:30:57,846] which has all the gravity
+- [01:30:57,846 - 01:30:58,246] yeah
+- [01:30:58,246 - 01:30:59,866] okay so
+- [01:31:00,965 - 01:31:04,046] dark matter is a
+- [01:31:05,166 - 01:31:06,706] is part of this
+- [01:31:06,706 - 01:31:09,166] there are two components
+- [01:31:09,166 - 01:31:11,406] to the matter energy density
+- [01:31:12,706 - 01:31:13,666] one of which
+- [01:31:13,666 - 01:31:14,726] is familiar matter
+- [01:31:14,726 - 01:31:16,646] it's the stuff which shines in the sky
+- [01:31:18,026 - 01:31:19,606] and the rest of it
+- [01:31:19,606 - 01:31:20,326] is dark matter
+- [01:31:20,996 - 01:31:21,586] what do we say
+- [01:31:21,586 - 01:31:23,146] dark matter is about 10 times
+- [01:31:23,146 - 01:31:24,906] as much as ordinary matter
+- [01:31:25,826 - 01:31:28,286] but it has the same equation of state
+- [01:31:28,916 - 01:31:30,846] and so from the overall behavior
+- [01:31:31,926 - 01:31:33,546] just from the overall behavior
+- [01:31:33,546 - 01:31:35,026] without knowing more
+- [01:31:35,166 - 01:31:36,566] all you can say is
+- [01:31:36,566 - 01:31:37,606] there is a certain amount of matter
+- [01:31:37,606 - 01:31:40,866] is there anything interesting in the
+- [01:31:41,846 - 01:31:43,906] negative sign in front of that square root
+- [01:31:43,906 - 01:31:44,546] is there
+- [01:31:45,326 - 01:31:47,266] no negative sign in front of the square root
+- [01:31:47,266 - 01:31:48,366] could be
+- [01:31:48,366 - 01:31:50,886] when you take the square root
+- [01:31:50,886 - 01:31:51,346] oh
+- [01:31:52,706 - 01:31:55,086] yeah there are two possible solutions
+- [01:31:55,986 - 01:31:57,986] there are always two possible solutions
+- [01:31:58,626 - 01:31:59,566] does the universe
+- [01:31:59,566 - 01:32:01,006] and the universe run backward
+- [01:32:02,486 - 01:32:03,786] universe run backward
+- [01:32:03,786 - 01:32:04,266] contracts
+- [01:32:06,086 - 01:32:06,946] there's always
+- [01:32:06,946 - 01:32:09,146] the equations are always such
+- [01:32:09,146 - 01:32:10,646] that they admit two solutions
+- [01:32:11,166 - 01:32:12,166] the forward going
+- [01:32:12,746 - 01:32:14,826] thing and the thing which you would watch
+- [01:32:14,826 - 01:32:16,106] if you ran the movie backward
+- [01:32:16,106 - 01:32:17,846] there are always both solutions
+- [01:32:19,986 - 01:32:21,486] and it comes from the fact
+- [01:32:21,486 - 01:32:22,306] there's a square here
+- [01:32:22,306 - 01:32:24,306] so when you solve for a dot over a
+- [01:32:24,306 - 01:32:25,406] you take the square root
+- [01:32:25,406 - 01:32:26,506] it could be positive or negative
+- [01:32:28,406 - 01:32:29,406] physically of course
+- [01:32:29,406 - 01:32:29,926] they're the same
+- [01:32:30,546 - 01:32:33,066] but they correspond to watching it going forward
+- [01:32:33,066 - 01:32:34,306] or watching it going backward
+- [01:32:35,166 - 01:32:36,706] does that answer your question
+- [01:32:37,326 - 01:32:39,846] it's not a contracting universe then
+- [01:32:39,846 - 01:32:41,486] it's not a question of
+- [01:32:41,486 - 01:32:41,646] no
+- [01:32:41,646 - 01:32:42,766] no,
+- [01:32:42,766 - 01:32:43,786] no,
+- [01:32:43,786 - 01:32:44,286] okay
+- [01:32:45,016 - 01:32:46,306] the universe
+- [01:32:47,026 - 01:32:49,326] let's forget for the moment this vacuum energy
+- [01:32:51,086 - 01:32:53,546] in any case you always have two solutions
+- [01:32:53,546 - 01:32:54,486] now
+- [01:32:55,166 - 01:32:56,326] what are the two solutions
+- [01:32:56,326 - 01:32:59,356] you see an object
+- [01:33:00,086 - 01:33:01,486] far from the earth
+- [01:33:02,626 - 01:33:03,966] and it has a certain
+- [01:33:03,966 - 01:33:05,006] kinetic energy
+- [01:33:06,546 - 01:33:08,066] and a certain potential energy
+- [01:33:08,646 - 01:33:09,846] how is it moving
+- [01:33:10,646 - 01:33:13,306] well all you can tell from its kinetic energy
+- [01:33:13,306 - 01:33:14,546] is what its overall velocity
+- [01:33:14,546 - 01:33:15,906] overall speed is
+- [01:33:15,906 - 01:33:18,666] you can't tell whether it's moving away from the earth
+- [01:33:18,666 - 01:33:19,386] or toward the earth
+- [01:33:20,446 - 01:33:21,626] if you know something
+- [01:33:21,626 - 01:33:22,866] you know we see
+- [01:33:22,866 - 01:33:23,846] it's not a satellite
+- [01:33:23,846 - 01:33:24,686] it's not going around
+- [01:33:24,686 - 01:33:27,126] but you see a distant object moving radially
+- [01:33:27,986 - 01:33:29,026] moving radially
+- [01:33:30,226 - 01:33:32,106] we know it's kinetic energy
+- [01:33:32,106 - 01:33:33,626] is it moving toward us or
+- [01:33:33,626 - 01:33:35,146] is it moving away from us
+- [01:33:35,706 - 01:33:36,866] you can't tell
+- [01:33:36,866 - 01:33:38,826] unless you know an additional piece of information
+- [01:33:38,826 - 01:33:41,166] namely whether it's moving away from you or toward you
+- [01:33:41,166 - 01:33:42,706] its kinetic energy doesn't tell you
+- [01:33:42,706 - 01:33:44,686] this is basically an equation
+- [01:33:44,686 - 01:33:46,746] telling you about the kinetic energy
+- [01:33:46,746 - 01:33:47,786] of something receding
+- [01:33:47,786 - 01:33:50,126] it could be positive or it could be negative
+- [01:33:51,306 - 01:33:51,826] things
+- [01:33:52,926 - 01:33:54,386] given where it is
+- [01:33:54,386 - 01:33:56,966] it doesn't help to say that the earth
+- [01:33:56,966 - 01:33:57,286] attracts,
+- [01:33:57,286 - 01:33:59,066] that doesn't mean that the object
+- [01:33:59,066 - 01:34:00,606] far away is moving toward you
+- [01:34:01,766 - 01:34:03,086] it simply means
+- [01:34:03,086 - 01:34:04,066] that it may
+- [01:34:05,166 - 01:34:05,346] decelerate,
+- [01:34:05,346 - 01:34:07,146] if it's going away it may decelerate
+- [01:34:07,146 - 01:34:09,046] but there's no way that you can know whether
+- [01:34:09,046 - 01:34:11,106] it's moving away from you or toward you
+- [01:34:11,106 - 01:34:12,886] that's an additional piece of information
+- [01:34:14,026 - 01:34:14,486] alright,
+- [01:34:14,486 - 01:34:15,166] the additional piece
+- [01:34:15,166 - 01:34:17,166] of information is at least with a normal
+- [01:34:17,166 - 01:34:18,326] concept of things
+- [01:34:19,106 - 01:34:20,586] the universe is expanding
+- [01:34:21,036 - 01:34:22,266] with ordinary time
+- [01:34:29,206 - 01:34:31,526] what if we were contracting with ordinary time
+- [01:34:31,526 - 01:34:32,386] would we know the difference
+- [01:34:35,166 - 01:34:35,766] hard to tell
+- [01:34:35,766 - 01:34:36,406] no,
+- [01:34:36,406 - 01:34:37,986] no,
+- [01:34:37,986 - 01:34:38,386] I mean
+- [01:34:45,266 - 01:34:47,146] well if everything was
+- [01:34:47,146 - 01:34:47,846] running backwards,
+- [01:34:47,846 - 01:34:48,626] including us
+- [01:34:49,206 - 01:34:50,566] obviously we couldn't tell
+- [01:34:51,146 - 01:34:53,086] we would just be part of a movie
+- [01:34:53,086 - 01:34:53,746] running backwards
+- [01:34:53,746 - 01:34:56,646] we would speak backwards
+- [01:34:56,646 - 01:34:57,806] we would think backwards
+- [01:34:57,806 - 01:34:58,546] so
+- [01:35:01,186 - 01:35:01,706] turning,
+- [01:35:01,706 - 01:35:02,666] it would just be
+- [01:35:02,666 - 01:35:05,026] a change of variables from t
+- [01:35:05,166 - 01:35:05,846] to minus t
+- [01:35:05,846 - 01:35:08,486] so there's always that ambiguity in the equations
+- [01:35:09,146 - 01:35:11,066] and we always pick out more or less
+- [01:35:11,066 - 01:35:11,706] by definition,
+- [01:35:11,706 - 01:35:12,806] the expanding
+- [01:35:12,806 - 01:35:13,286] solution
+- [01:35:15,206 - 01:35:15,806] ok
+- [01:35:15,806 - 01:35:17,706] the expanding solution
+- [01:35:17,706 - 01:35:20,406] what is it that determines
+- [01:35:20,406 - 01:35:22,826] the direction of time when we say the future
+- [01:35:22,826 - 01:35:23,726] versus the past
+- [01:35:25,566 - 01:35:26,166] thermodynamics
+- [01:35:26,166 - 01:35:27,186] it's thermodynamics
+- [01:35:28,806 - 01:35:31,066] so it's the second law of thermodynamics
+- [01:35:31,066 - 01:35:33,086] but we won't get into that today
+- [01:35:33,086 - 01:35:33,986] uh
+- [01:35:35,166 - 01:35:36,436] there certainly is ordinarily a
+- [01:35:36,436 - 01:35:37,706] difference between past and future
+- [01:35:37,706 - 01:35:39,106] but let's not do that now
+- [01:35:39,106 - 01:35:39,926] alright,
+- [01:35:39,926 - 01:35:40,546] let's
+- [01:35:40,546 - 01:35:42,846] let's summarize now
+- [01:35:42,846 - 01:35:44,546] the three components of
+- [01:35:45,306 - 01:35:46,926] matter in the universe
+- [01:35:46,926 - 01:35:48,266] these are all called matter
+- [01:35:48,976 - 01:35:50,486] even though this is just plain vacuum
+- [01:35:52,306 - 01:35:53,406] they're all called
+- [01:35:53,406 - 01:35:53,626] well
+- [01:35:54,986 - 01:35:55,606] again,
+- [01:35:55,606 - 01:35:56,566] ambiguities of
+- [01:35:57,156 - 01:35:57,466] terminology
+- [01:35:59,386 - 01:36:00,306] that's matter,
+- [01:36:00,306 - 01:36:00,926] that's radiation
+- [01:36:00,926 - 01:36:01,726] that's vacuum
+- [01:36:02,876 - 01:36:03,186] alright,
+- [01:36:03,186 - 01:36:05,086] but collectively they're all called matter
+- [01:36:09,046 - 01:36:10,866] maybe we should just call it stuff
+- [01:36:11,746 - 01:36:12,486] stuff
+- [01:36:12,486 - 01:36:13,346] let's call it stuff
+- [01:36:14,146 - 01:36:14,886] alright
+- [01:36:17,406 - 01:36:18,146] matter
+- [01:36:18,146 - 01:36:19,586] meaning this
+- [01:36:19,586 - 01:36:21,366] has two components
+- [01:36:21,366 - 01:36:22,346] dark matter
+- [01:36:22,346 - 01:36:24,346] and luminous matter
+- [01:36:24,346 - 01:36:27,026] of which there is more dark matter
+- [01:36:28,346 - 01:36:30,086] the radiation today
+- [01:36:30,086 - 01:36:32,446] is very very weak
+- [01:36:32,446 - 01:36:33,986] because it's been redshifted
+- [01:36:33,986 - 01:36:35,146] but at some time
+- [01:36:35,166 - 01:36:35,846] in the past
+- [01:36:35,846 - 01:36:38,726] when the universe was about a thousand times smaller
+- [01:36:40,386 - 01:36:42,846] because of the difference in the way
+- [01:36:44,286 - 01:36:47,166] radiation depends on scale factor
+- [01:36:47,866 - 01:36:49,526] at some time in the past
+- [01:36:49,526 - 01:36:50,066] the radiation
+- [01:36:50,876 - 01:36:52,106] was the dominant component
+- [01:36:54,166 - 01:36:55,446] and in the future
+- [01:36:56,546 - 01:36:58,066] long time future
+- [01:36:58,066 - 01:37:00,086] as the universe expands
+- [01:37:01,106 - 01:37:03,426] both of these will get smaller and smaller
+- [01:37:03,426 - 01:37:05,046] and this does not get smaller
+- [01:37:05,046 - 01:37:05,146] and smaller
+- [01:37:05,166 - 01:37:06,266] and smaller and smaller
+- [01:37:06,266 - 01:37:07,406] so in the remote future
+- [01:37:08,686 - 01:37:10,586] the expansion of the universe
+- [01:37:10,586 - 01:37:12,546] will be governed by the vacuum energy
+- [01:37:13,166 - 01:37:13,466] alright,
+- [01:37:13,466 - 01:37:14,406] let's draw some graphs
+- [01:37:14,406 - 01:37:16,466] just to illustrate
+- [01:37:25,626 - 01:37:26,846] drawing these graphs
+- [01:37:26,846 - 01:37:28,686] because these are the kind of graphs you'll see
+- [01:37:28,686 - 01:37:31,046] if you read a scientific american article
+- [01:37:31,766 - 01:37:32,326] unfortunately
+- [01:37:33,005 - 01:37:35,046] astronomers and astrophysicists have this
+- [01:37:35,166 - 01:37:36,126] terrible habit
+- [01:37:36,126 - 01:37:38,686] of taking simple graphs
+- [01:37:38,686 - 01:37:41,226] and superimposing them upon each other
+- [01:37:41,226 - 01:37:43,086] until you have so many
+- [01:37:43,086 - 01:37:45,086] things on the graph that you can't possibly
+- [01:37:45,086 - 01:37:46,546] figure out what's going on
+- [01:37:47,146 - 01:37:48,946] but you could take them apart and say
+- [01:37:48,946 - 01:37:49,606] you know
+- [01:37:50,266 - 01:37:51,966] I'm taking the graphs apart
+- [01:37:51,966 - 01:37:53,306] one by one
+- [01:37:53,306 - 01:37:54,106] no,
+- [01:37:54,106 - 01:37:56,246] I'm not going to take them apart
+- [01:37:56,246 - 01:37:57,626] I'm going to put them on top of each other
+- [01:37:57,626 - 01:37:59,366] I'm going to be an astrophysicist today
+- [01:38:00,726 - 01:38:01,246] alright,
+- [01:38:01,246 - 01:38:02,366] we could plot
+- [01:38:03,006 - 01:38:05,046] as a function of scale factor
+- [01:38:05,166 - 01:38:06,666] this is a function of the
+- [01:38:06,666 - 01:38:08,626] expansion of the universe
+- [01:38:09,166 - 01:38:11,066] we could plot energy density
+- [01:38:11,066 - 01:38:13,266] and there are three kinds of energy densities
+- [01:38:13,266 - 01:38:15,186] and let's put all three of them
+- [01:38:15,186 - 01:38:16,026] on the same graph
+- [01:38:16,026 - 01:38:17,886] it does help to put them on the same graph
+- [01:38:18,706 - 01:38:19,326] alright,
+- [01:38:19,326 - 01:38:20,426] we can start with
+- [01:38:20,426 - 01:38:21,786] the easiest one
+- [01:38:21,786 - 01:38:24,126] the easiest one is
+- [01:38:24,126 - 01:38:25,266] rho naught,
+- [01:38:25,266 - 01:38:26,846] it's just constant
+- [01:38:26,846 - 01:38:29,666] it does not depend on a at all
+- [01:38:29,666 - 01:38:31,246] we're not talking about now
+- [01:38:31,246 - 01:38:32,626] a is a function of time
+- [01:38:33,166 - 01:38:34,846] we're talking about rho
+- [01:38:35,166 - 01:38:36,086] as a function of a
+- [01:38:36,086 - 01:38:37,646] it's just constant
+- [01:38:37,646 - 01:38:40,246] it looks like that
+- [01:38:41,706 - 01:38:43,426] it doesn't dilute
+- [01:38:43,426 - 01:38:45,566] diluting would mean going to zero
+- [01:38:45,566 - 01:38:47,706] now let's take
+- [01:38:47,706 - 01:38:49,206] radiation
+- [01:38:49,206 - 01:38:50,266] I'm working upward
+- [01:38:50,945 - 01:38:51,346] radiation
+- [01:38:52,766 - 01:38:54,466] is very big
+- [01:38:54,466 - 01:38:55,986] when a is small
+- [01:38:55,986 - 01:38:58,586] and very small when a is big
+- [01:38:59,166 - 01:39:00,066] alright
+- [01:39:00,066 - 01:39:01,886] so it falls off quickly
+- [01:39:03,045 - 01:39:04,466] here's radiation
+- [01:39:05,166 - 01:39:07,506] it falls off quickly
+- [01:39:09,946 - 01:39:11,266] now finally
+- [01:39:11,266 - 01:39:12,626] sort of in between
+- [01:39:12,626 - 01:39:13,586] is matter
+- [01:39:13,586 - 01:39:15,606] let's make matter in blue
+- [01:39:16,846 - 01:39:18,386] matter falls off
+- [01:39:18,386 - 01:39:19,506] like one over a cubed
+- [01:39:19,506 - 01:39:22,126] that means that small a
+- [01:39:22,126 - 01:39:24,446] is smaller than the radiation component
+- [01:39:24,446 - 01:39:26,366] but at large a
+- [01:39:26,366 - 01:39:27,246] it's larger
+- [01:39:27,246 - 01:39:29,326] and so it crosses over
+- [01:39:29,326 - 01:39:31,706] it crosses over
+- [01:39:31,706 - 01:39:34,646] but also goes to zero eventually
+- [01:39:34,646 - 01:39:35,146] so it's a constant
+- [01:39:40,546 - 01:39:41,906] let's imagine now
+- [01:39:42,886 - 01:39:45,326] alright so there's a crossover point here
+- [01:39:45,326 - 01:39:46,886] at that point
+- [01:39:46,886 - 01:39:49,346] that's the point at which the universe goes
+- [01:39:49,346 - 01:39:51,086] from being radiation dominated
+- [01:39:51,086 - 01:39:53,286] to being matter dominated
+- [01:39:54,366 - 01:39:56,926] that happened after about
+- [01:39:56,926 - 01:39:58,306] 10,000 years
+- [01:39:59,486 - 01:40:01,986] very very early in the history of the universe
+- [01:40:01,986 - 01:40:05,086] the universe was very very hot
+- [01:40:05,086 - 01:40:05,146] and it was a very very
+- [01:40:05,166 - 01:40:07,526] hot much too hot to be transparent
+- [01:40:07,526 - 01:40:10,766] and so we can't directly look back to that point
+- [01:40:10,766 - 01:40:13,546] it was about 100,000 years
+- [01:40:13,546 - 01:40:15,666] in other words another factor of 10 later
+- [01:40:15,666 - 01:40:17,206] when the universe became transparent
+- [01:40:17,206 - 01:40:19,006] it's in here some place
+- [01:40:19,006 - 01:40:20,746] but this is the crossover
+- [01:40:20,746 - 01:40:22,626] from matter let's write down
+- [01:40:23,146 - 01:40:24,066] this is radiation
+- [01:40:24,986 - 01:40:26,146] this is matter
+- [01:40:27,926 - 01:40:28,966] this is vacuum
+- [01:40:33,166 - 01:40:35,066] and then later on when the universe
+- [01:40:35,166 - 01:40:35,786] got bigger
+- [01:40:36,846 - 01:40:38,766] there was a crossover between
+- [01:40:38,766 - 01:40:39,786] matter and vacuum
+- [01:40:40,966 - 01:40:42,746] what's the total energy density
+- [01:40:42,746 - 01:40:44,726] well very early it was dominated
+- [01:40:44,726 - 01:40:46,666] by radiation
+- [01:40:46,666 - 01:40:49,266] so let's get a red pen
+- [01:40:49,266 - 01:40:49,846] here let's
+- [01:40:49,846 - 01:40:52,906] very early it was mostly just radiation
+- [01:40:52,906 - 01:40:54,086] so it was this
+- [01:40:54,926 - 01:40:56,706] then when it crossed over
+- [01:40:56,706 - 01:40:58,726] it was mostly matter the radiation
+- [01:40:58,726 - 01:41:00,326] became less important
+- [01:41:00,326 - 01:41:01,966] and it tracked along here
+- [01:41:01,966 - 01:41:04,766] well eventually
+- [01:41:05,166 - 01:41:06,686] it just moved on to this line
+- [01:41:06,686 - 01:41:09,326] but then if we waited long enough
+- [01:41:09,326 - 01:41:10,446] the
+- [01:41:11,186 - 01:41:13,046] both of these became smaller
+- [01:41:13,046 - 01:41:14,766] than the vacuum energy and so it
+- [01:41:14,766 - 01:41:17,126] gradually shifted and just became vacuum energy
+- [01:41:17,126 - 01:41:19,226] so there were three eras
+- [01:41:19,226 - 01:41:20,906] if you like the radiation dominated
+- [01:41:20,906 - 01:41:21,446] era
+- [01:41:22,906 - 01:41:25,106] everything was much too hot to be
+- [01:41:25,106 - 01:41:26,546] to be transparent
+- [01:41:27,166 - 01:41:28,946] the matter dominated era
+- [01:41:29,866 - 01:41:30,506] where
+- [01:41:31,046 - 01:41:33,026] most interesting things
+- [01:41:33,026 - 01:41:35,066] of cosmology happened
+- [01:41:35,166 - 01:41:36,686] but not life
+- [01:41:37,826 - 01:41:39,186] life formed
+- [01:41:39,946 - 01:41:41,066] some place
+- [01:41:41,066 - 01:41:42,666] around here
+- [01:41:42,666 - 01:41:44,746] where the crossover happened
+- [01:41:44,746 - 01:41:47,286] this crossover is about
+- [01:41:47,286 - 01:41:49,126] I don't know if it's four million years
+- [01:41:49,126 - 01:41:50,066] four billion years,
+- [01:41:50,066 - 01:41:50,366] five,
+- [01:41:50,366 - 01:41:51,506] six billion years
+- [01:41:51,506 - 01:41:54,046] some number of billions of years
+- [01:41:54,046 - 01:41:55,786] of order of magnitude
+- [01:41:55,786 - 01:41:57,246] the age of the universe
+- [01:41:57,246 - 01:41:59,426] so more or less
+- [01:41:59,426 - 01:42:01,826] we're in the transition region
+- [01:42:01,826 - 01:42:04,406] more on the vacuum side
+- [01:42:04,406 - 01:42:05,146] but more on the
+- [01:42:05,166 - 01:42:06,166] than on the matter side
+- [01:42:07,025 - 01:42:08,146] we're in here somewheres
+- [01:42:08,146 - 01:42:11,066] but we're in this transition region
+- [01:42:11,066 - 01:42:13,046] now let's
+- [01:42:13,046 - 01:42:15,246] let's talk how do we know this
+- [01:42:15,246 - 01:42:17,386] what's the observations that tell us
+- [01:42:17,386 - 01:42:19,726] that this sequence is what happened
+- [01:42:19,726 - 01:42:22,106] and for that we look at another graph
+- [01:42:25,466 - 01:42:26,686] the other graph
+- [01:42:26,686 - 01:42:28,966] is not energy density
+- [01:42:28,966 - 01:42:31,106] versus scale factor
+- [01:42:31,106 - 01:42:33,566] but scale factor versus time
+- [01:42:33,566 - 01:42:35,146] it's simply the time history
+- [01:42:35,166 - 01:42:35,906] of the universe
+- [01:42:35,906 - 01:42:37,566] and how it grew
+- [01:42:40,386 - 01:42:41,606] here it is
+- [01:42:43,946 - 01:42:45,106] early on
+- [01:42:45,106 - 01:42:47,226] the dominant form
+- [01:42:47,226 - 01:42:48,486] of energy was radiation
+- [01:42:49,106 - 01:42:50,706] the others were negligible
+- [01:42:50,706 - 01:42:52,686] and the implication is
+- [01:42:52,686 - 01:42:54,466] that the universe grew
+- [01:42:54,846 - 01:42:56,366] like t to the one half
+- [01:42:58,446 - 01:43:01,226] t to the one half is a parabola
+- [01:43:01,226 - 01:43:02,326] turned on its side
+- [01:43:05,166 - 01:43:07,086] so if there was only radiation
+- [01:43:07,086 - 01:43:09,026] it would go like that
+- [01:43:10,126 - 01:43:11,866] but then at some point
+- [01:43:11,866 - 01:43:12,906] the crossover
+- [01:43:14,526 - 01:43:15,226] matter
+- [01:43:15,226 - 01:43:17,626] became more important
+- [01:43:17,626 - 01:43:18,426] than radiation
+- [01:43:19,166 - 01:43:20,066] but still
+- [01:43:20,996 - 01:43:21,346] sorry,
+- [01:43:21,346 - 01:43:22,866] more important than anything
+- [01:43:22,866 - 01:43:24,706] still more important than vacuum
+- [01:43:24,706 - 01:43:27,446] and it became more important
+- [01:43:27,446 - 01:43:28,006] than radiation
+- [01:43:28,006 - 01:43:29,766] and at that point
+- [01:43:29,766 - 01:43:32,406] when I say point of course I mean
+- [01:43:33,166 - 01:43:34,566] a range of times
+- [01:43:35,166 - 01:43:36,666] but over a range of times
+- [01:43:36,666 - 01:43:38,546] let's put it in here somewheres
+- [01:43:39,766 - 01:43:40,206] it
+- [01:43:41,026 - 01:43:42,186] made a transition
+- [01:43:44,046 - 01:43:45,086] and instead of
+- [01:43:47,405 - 01:43:49,746] going like t to the one half
+- [01:43:50,586 - 01:43:52,826] it went like t to the two thirds
+- [01:43:53,385 - 01:43:55,046] it didn't have a bump like that
+- [01:43:55,046 - 01:43:56,306] in it but that's
+- [01:43:57,346 - 01:43:59,146] so it made a transition
+- [01:43:59,146 - 01:44:00,386] from t to the one half
+- [01:44:00,386 - 01:44:01,626] to t to the two thirds
+- [01:44:01,626 - 01:44:03,246] as I said we can't
+- [01:44:03,246 - 01:44:05,026] see back that far it happened too early
+- [01:44:05,166 - 01:44:06,086] so let's put it early
+- [01:44:07,426 - 01:44:08,866] t to the one half
+- [01:44:10,806 - 01:44:13,146] then t to the two thirds
+- [01:44:15,386 - 01:44:17,106] and then somewheres in here
+- [01:44:17,106 - 01:44:18,726] something very dramatic happened
+- [01:44:21,146 - 01:44:22,926] instead of following
+- [01:44:22,926 - 01:44:23,906] something like this
+- [01:44:24,806 - 01:44:26,306] the universe began
+- [01:44:26,936 - 01:44:29,326] to expand in an accelerated
+- [01:44:29,326 - 01:44:29,866] way
+- [01:44:32,666 - 01:44:34,606] why is it called accelerated
+- [01:44:34,606 - 01:44:36,646] it's called accelerated
+- [01:44:36,646 - 01:44:38,206] because exponential expansion
+- [01:44:38,786 - 01:44:40,086] an exponential
+- [01:44:40,086 - 01:44:41,966] is accelerated
+- [01:44:41,966 - 01:44:42,726] that's,
+- [01:44:42,726 - 01:44:44,426] what does acceleration mean
+- [01:44:44,426 - 01:44:45,666] means it's the second derivative
+- [01:44:45,666 - 01:44:47,226] second time derivative of something
+- [01:44:47,766 - 01:44:48,146] ah
+- [01:44:50,126 - 01:44:51,826] the second time derivative
+- [01:44:51,826 - 01:44:54,466] of an exponential is as big as the exponential itself
+- [01:44:54,466 - 01:44:56,026] so it's accelerated expansion
+- [01:44:56,026 - 01:44:58,886] but just exponential expansion
+- [01:44:58,886 - 01:44:59,846] or it's the same thing
+- [01:44:59,866 - 01:45:00,686] Where are we?
+- [01:45:00,686 - 01:45:03,526] Where are somewheres around over here?
+- [01:45:03,526 - 01:45:05,066] Maybe a little bit further out
+- [01:45:05,766 - 01:45:08,236] We've seen enough of this
+- [01:45:08,236 - 01:45:10,706] exponential to know that it's there
+- [01:45:11,986 - 01:45:14,606] We've seen enough of the exponential to be
+- [01:45:14,606 - 01:45:17,226] pretty sure that it's behaving like an exponential
+- [01:45:21,566 - 01:45:23,326] at the present time
+- [01:45:24,746 - 01:45:27,046] But how do we see these different behaviors?
+- [01:45:27,046 - 01:45:28,946] All we have now,
+- [01:45:28,946 - 01:45:30,406] we're at a certain time.
+- [01:45:30,406 - 01:45:31,286] How do we see?
+- [01:45:32,126 - 01:45:33,826] We can't see the future
+- [01:45:34,466 - 01:45:36,266] But we can see the past
+- [01:45:36,905 - 01:45:38,475] And the way we see the past
+- [01:45:38,475 - 01:45:40,046] is by looking out with large telescopes
+- [01:45:40,646 - 01:45:41,606] out to
+- [01:45:42,426 - 01:45:42,986] distances
+- [01:45:43,686 - 01:45:45,546] that correspond to earlier times
+- [01:45:46,386 - 01:45:49,476] So when we look far out and we count
+- [01:45:49,476 - 01:45:52,566] galaxies and we see how the galaxies are moving
+- [01:45:53,025 - 01:45:55,846] And how their motion correlates with their distance
+- [01:45:56,706 - 01:45:58,846] Effectively we're measuring
+- [01:45:58,846 - 01:46:01,006] What we're measuring is the Hubble
+- [01:46:01,006 - 01:46:03,166] constant as a function of time
+- [01:46:03,726 - 01:46:07,426] But equivalently we're measuring this whole curve
+- [01:46:08,326 - 01:46:10,346] We can't see back
+- [01:46:11,546 - 01:46:14,006] directly to the radiation dominated era
+- [01:46:14,425 - 01:46:15,966] Most people believe it was there
+- [01:46:16,385 - 01:46:19,486] But we can certainly see the matter dominated era
+- [01:46:20,146 - 01:46:22,026] and the transition to the
+- [01:46:22,026 - 01:46:25,826] to the cosmological constant dominated era
+- [01:46:26,766 - 01:46:27,286] So
+- [01:46:29,886 - 01:46:32,396] This is sort of looking at a certain
+- [01:46:32,396 - 01:46:34,906] distance and measuring the couple constant it for that
+- [01:46:34,906 - 01:46:37,856] Distance at that time and then a later time and an
+- [01:46:37,856 - 01:46:40,806] earlier time and you get this curve when you're done with it
+- [01:46:41,766 - 01:46:43,566] So it's a reconstruction but
+- [01:46:43,566 - 01:46:45,366] it's not a very difficult reconstruction
+- [01:46:45,986 - 01:46:46,646] If you,
+- [01:46:46,646 - 01:46:48,886] what's difficult is the observations
+- [01:46:50,106 - 01:46:52,396] but once you have the observations and
+- [01:46:52,396 - 01:46:54,686] you've cleared out all the garbage in the
+- [01:46:55,226 - 01:46:55,746] systematic
+- [01:46:55,746 - 01:46:56,986] errors and everything else,
+- [01:46:56,986 - 01:46:59,966] it's a relatively simple matter to reconstruct
+- [01:46:59,966 - 01:47:04,466] the time history of the scale factor,
+- [01:47:04,466 - 01:47:09,386] and it is completely
+- [01:47:09,386 - 01:47:12,766] consistent with this transition
+- [01:47:12,766 - 01:47:16,146] from matter dominated to cosmological
+- [01:47:16,146 - 01:47:17,266] constant dominated.
+- [01:47:17,266 - 01:47:19,686] As far as we know,
+- [01:47:19,686 - 01:47:24,866] this is really tending to a
+- [01:47:24,866 - 01:47:25,586] pure exponential.
+- [01:47:25,586 - 01:47:29,606] We don't know anything else that looks like that.
+- [01:47:31,046 - 01:47:33,576] And what that means is the
+- [01:47:33,576 - 01:47:36,106] universe is going to exponentially increase apart
+- [01:47:36,106 - 01:47:38,906] from those things which are attached to
+- [01:47:38,906 - 01:47:41,706] us by gravitational cords or other kinds
+- [01:47:41,706 - 01:47:43,646] of strong forces,
+- [01:47:43,646 - 01:47:47,066] things which are sufficiently far away that they're
+- [01:47:47,066 - 01:47:49,806] participating in this overall expansion,
+- [01:47:49,806 - 01:47:53,126] those things will eventually just
+- [01:47:53,126 - 01:47:54,826] disappear through the horizon.
+- [01:47:54,866 - 01:47:57,446] I haven't told you yet about the horizon,
+- [01:47:57,446 - 01:47:58,646] but now it's easy to,
+- [01:47:58,646 - 01:47:59,926] it's now easy to
+- [01:47:59,926 - 01:48:01,346] figure out what the horizon is.
+- [01:48:01,346 - 01:48:03,306] Yeah,
+- [01:48:03,306 - 01:48:05,526] let's see if we can understand now
+- [01:48:05,526 - 01:48:06,886] the idea of the horizon.
+- [01:48:07,286 - 01:48:09,366] I have a quick question about that,
+- [01:48:09,366 - 01:48:11,706] because there seems to be
+- [01:48:11,706 - 01:48:14,046] an implication what you said earlier,
+- [01:48:14,046 - 01:48:18,046] the surface of last gathering kind of fades
+- [01:48:18,046 - 01:48:22,046] into the horizon instead of going through it.
+- [01:48:22,406 - 01:48:22,926] Well,
+- [01:48:22,926 - 01:48:24,846] the surface of last gathering is quite a bit different.
+- [01:48:32,386 - 01:48:33,466] It's not moving.
+- [01:48:34,166 - 01:48:36,826] It's the place where the radiation that we're,
+- [01:48:36,826 - 01:48:37,306] well,
+- [01:48:37,306 - 01:48:37,746] sorry.
+- [01:48:39,266 - 01:48:39,826] Yeah,
+- [01:48:39,826 - 01:48:41,106] it is moving,
+- [01:48:41,106 - 01:48:43,186] as time goes on,
+- [01:48:43,186 - 01:48:48,226] the surface of last gathering will move out and,
+- [01:48:48,226 - 01:48:49,866] but it will never get past the horizon.
+- [01:48:50,926 - 01:48:51,966] In other words,
+- [01:48:51,966 - 01:48:53,246] we will see the rate,
+- [01:48:53,246 - 01:48:54,786] the radiation that we will see,
+- [01:48:54,786 - 01:48:54,846] the radiation that we will see,
+- [01:48:54,846 - 01:48:54,846] will be in the horizon.
+- [01:48:54,866 - 01:48:56,716] The radiation that we will see will
+- [01:48:56,716 - 01:48:58,566] be coming as our own time goes on,
+- [01:48:58,566 - 01:49:00,206] the radiation will be coming from
+- [01:49:00,206 - 01:49:01,846] a place which gradually moves out,
+- [01:49:01,846 - 01:49:06,606] which is equivalent to the radiation cooling.
+- [01:49:07,646 - 01:49:09,886] We will see a cooler and cooler universe,
+- [01:49:09,886 - 01:49:12,106] which is equivalent to the universe expanding.
+- [01:49:12,566 - 01:49:14,926] How is it different from the
+- [01:49:14,926 - 01:49:17,286] local galaxies moving beyond the horizon?
+- [01:49:19,206 - 01:49:19,806] No,
+- [01:49:19,806 - 01:49:21,806] it's not the same thing.
+- [01:49:22,426 - 01:49:23,026] Um.
+- [01:49:23,306 - 01:49:23,766] Okay.
+- [01:49:24,886 - 01:49:26,246] At a later time,
+- [01:49:26,246 - 01:49:29,736] the radiation that we see will not come from
+- [01:49:29,736 - 01:49:33,226] the same atoms as the radiation that we see now.
+- [01:49:34,986 - 01:49:36,876] It will come from atoms which
+- [01:49:36,876 - 01:49:38,766] were further away at that time.
+- [01:49:39,766 - 01:49:43,706] So it's like seeing deeper and deeper and deeper into
+- [01:49:43,706 - 01:49:47,646] the universe rather than seeing something moving away from us.
+- [01:49:49,126 - 01:49:50,946] What is the chronological time
+- [01:49:50,946 - 01:49:52,766] frame on this thinking on this?
+- [01:49:52,766 - 01:49:52,926] Yes.
+- [01:49:52,926 - 01:49:54,406] Like 50 years ago,
+- [01:49:54,406 - 01:49:57,386] it was about the time when they
+- [01:49:57,386 - 01:50:00,366] determined the early portion of the universe,
+- [01:50:00,366 - 01:50:00,726] right,
+- [01:50:00,726 - 01:50:01,966] when the big man theory started.
+- [01:50:03,486 - 01:50:03,966] Yes.
+- [01:50:04,126 - 01:50:05,986] It was kind of clarified by the man theory.
+- [01:50:06,186 - 01:50:08,006] And that pre-takes my high
+- [01:50:08,006 - 01:50:09,826] school education and it takes me.
+- [01:50:10,686 - 01:50:11,406] I was like,
+- [01:50:11,406 - 01:50:11,586] um,
+- [01:50:11,586 - 01:50:12,926] are you really close to this?
+- [01:50:14,086 - 01:50:15,826] It was the late 50s,
+- [01:50:15,826 - 01:50:16,566] early 60s.
+- [01:50:16,606 - 01:50:17,666] I graduated in 56,
+- [01:50:17,666 - 01:50:18,126] so.
+- [01:50:18,186 - 01:50:18,626] Sure.
+- [01:50:19,986 - 01:50:22,746] And then the vacuum of the universe.
+- [01:50:22,746 - 01:50:24,506] And then the energy portion.
+- [01:50:24,626 - 01:50:26,346] That's like 10 years ago,
+- [01:50:26,346 - 01:50:26,686] right?
+- [01:50:26,986 - 01:50:27,386] Yeah.
+- [01:50:27,706 - 01:50:28,506] 10 years.
+- [01:50:28,586 - 01:50:28,786] Sure.
+- [01:50:28,946 - 01:50:31,106] And it was like in the 90s.
+- [01:50:32,886 - 01:50:36,326] So all prior stuff was like the matter
+- [01:50:36,326 - 01:50:39,766] dominated and it's pretty much the same thing.
+- [01:50:40,806 - 01:50:42,856] Matter dominated was believed to
+- [01:50:42,856 - 01:50:44,906] be the way the universe is,
+- [01:50:44,906 - 01:50:45,126] yeah.
+- [01:50:47,106 - 01:50:48,926] There's another difference also.
+- [01:50:49,586 - 01:50:51,076] The other difference is what
+- [01:50:51,076 - 01:50:52,566] we have left out so far.
+- [01:50:52,566 - 01:50:54,006] Where's the FRW equation?
+- [01:50:54,406 - 01:50:55,926] We're going to put it back next time.
+- [01:50:56,726 - 01:51:00,266] A dot over A squared is equal to rho.
+- [01:51:00,486 - 01:51:02,326] I'm leaving out A pi over 3,
+- [01:51:02,326 - 01:51:02,546] blah,
+- [01:51:02,546 - 01:51:02,646] blah,
+- [01:51:02,646 - 01:51:02,826] blah,
+- [01:51:02,826 - 01:51:03,646] and G.
+- [01:51:03,946 - 01:51:05,146] Rho times stuff.
+- [01:51:05,366 - 01:51:07,406] And then there was that other
+- [01:51:07,406 - 01:51:09,446] thing minus K over A squared.
+- [01:51:09,666 - 01:51:10,086] Remember that?
+- [01:51:11,246 - 01:51:12,406] We've left that out.
+- [01:51:12,866 - 01:51:13,426] Now,
+- [01:51:13,426 - 01:51:14,386] numerically,
+- [01:51:14,386 - 01:51:16,706] it seems to be very insignificant.
+- [01:51:16,946 - 01:51:20,406] And so leaving it out seems okay numerically.
+- [01:51:21,206 - 01:51:24,106] But it really is conceptually important.
+- [01:51:24,566 - 01:51:27,616] It determines whether the universe is closed and
+- [01:51:27,616 - 01:51:30,666] bounded or whether it's open or whatever it's doing.
+- [01:51:31,226 - 01:51:31,766] Now,
+- [01:51:31,766 - 01:51:32,306] in the old days,
+- [01:51:32,306 - 01:51:35,326] before there was a cosmological constant and it
+- [01:51:35,326 - 01:51:38,346] was believed that the universe was closed and bounded,
+- [01:51:38,426 - 01:51:39,766] so that this term was there,
+- [01:51:39,766 - 01:51:44,566] then people would have drawn curves which look like this.
+- [01:51:48,846 - 01:51:50,386] They would have drawn curves like this.
+- [01:51:50,386 - 01:51:51,916] And then they would have drawn curves where
+- [01:51:51,916 - 01:51:53,446] the universe expands for a while and then recontracts.
+- [01:51:53,766 - 01:51:55,646] And followed by a crunch.
+- [01:51:56,586 - 01:51:58,956] This is nothing but the phenomena of
+- [01:51:58,956 - 01:52:01,326] something going up and then coming back down.
+- [01:52:03,106 - 01:52:05,016] K here tells you whether the
+- [01:52:05,016 - 01:52:06,926] total energy is positive or negative.
+- [01:52:07,446 - 01:52:09,966] K equals zero is right at the escape velocity.
+- [01:52:11,126 - 01:52:13,926] So in the early days of Big Bang cosmology,
+- [01:52:13,926 - 01:52:17,106] it was assumed the universe was closed and bounded,
+- [01:52:17,346 - 01:52:19,286] which meant that K had a certain sign.
+- [01:52:20,546 - 01:52:23,206] And nobody knew about vacuum energy.
+- [01:52:23,486 - 01:52:33,046] Einstein had rejected his child as a bad mistake.
+- [01:52:34,886 - 01:52:38,706] And so it was thought that the universe was
+- [01:52:38,706 - 01:52:42,526] matter dominated with a net total energy below zero,
+- [01:52:43,286 - 01:52:44,896] which means that just like
+- [01:52:44,896 - 01:52:46,506] this thing will come back down,
+- [01:52:46,506 - 01:52:47,846] the universe would crash.
+- [01:52:48,186 - 01:52:49,866] This was called the Big Crunch.
+- [01:52:49,906 - 01:52:50,366] And this was called the Big Crunch.
+- [01:52:50,386 - 01:52:51,206] This was the Big Bang.
+- [01:52:53,146 - 01:52:55,026] Now we don't believe in this part anymore.
+- [01:52:56,106 - 01:52:57,566] Not that we don't believe in it.
+- [01:52:58,426 - 01:52:58,906] Mathematically,
+- [01:52:58,906 - 01:53:00,186] there was nothing wrong with it.
+- [01:53:00,906 - 01:53:01,866] But empirically,
+- [01:53:01,866 - 01:53:07,606] this K seems to be zero to a higher approximation.
+- [01:53:08,566 - 01:53:11,176] And there's a component in the
+- [01:53:11,176 - 01:53:13,786] energy which is driving this accelerated expansion.
+- [01:53:14,886 - 01:53:16,526] So to the best of our knowledge,
+- [01:53:16,526 - 01:53:18,306] the universe is not going to crash.
+- [01:53:19,306 - 01:53:21,456] I missed the time when
+- [01:53:21,456 - 01:53:23,606] the transition to the exponential occurred.
+- [01:53:24,166 - 01:53:26,886] It's somewhere in the vicinity of about five billion years.
+- [01:53:27,186 - 01:53:27,666] Ago.
+- [01:53:28,386 - 01:53:30,186] Both ago and from the beginning.
+- [01:53:30,346 - 01:53:30,666] Remember,
+- [01:53:30,666 - 01:53:32,406] the universe is about ten billion years old.
+- [01:53:32,586 - 01:53:33,206] Beginning of 13.
+- [01:53:33,906 - 01:53:34,426] Oh,
+- [01:53:34,426 - 01:53:34,786] okay.
+- [01:53:34,886 - 01:53:35,666] I don't remember.
+- [01:53:36,166 - 01:53:37,426] It's a fuzzy beginning.
+- [01:53:38,186 - 01:53:39,346] It's a fuzzy beginning.
+- [01:53:39,506 - 01:53:42,726] But it's order of magnitude the age of the universe.
+- [01:53:43,046 - 01:53:44,386] Half the age of the universe.
+- [01:53:45,106 - 01:53:45,626] Yeah.
+- [01:53:46,826 - 01:53:48,086] Somebody might look it up.
+- [01:53:48,086 - 01:53:49,166] But I don't have the number.
+- [01:53:50,506 - 01:53:51,726] Two quick ones.
+- [01:53:51,846 - 01:53:52,186] One is,
+- [01:53:52,186 - 01:53:55,886] is that vacuum energy related to the quantum vacuum energy?
+- [01:53:55,986 - 01:53:56,246] Yes.
+- [01:53:57,066 - 01:53:58,426] Or at least we believe it is.
+- [01:53:58,746 - 01:53:59,186] Yes.
+- [01:53:59,586 - 01:54:00,006] All right.
+- [01:54:00,006 - 01:54:01,166] Let me just tell you one more thing.
+- [01:54:01,266 - 01:54:01,726] Today,
+- [01:54:01,726 - 01:54:06,386] these energy densities scale differently with time.
+- [01:54:07,406 - 01:54:08,386] A1 of A cube,
+- [01:54:08,386 - 01:54:09,226] 1 of A fourth.
+- [01:54:09,646 - 01:54:10,966] But today,
+- [01:54:10,966 - 01:54:13,046] today you can ask,
+- [01:54:13,046 - 01:54:16,296] what is the relative abundance or the relative magnitude
+- [01:54:17,026 - 01:54:18,066] of the different energy densities?
+- [01:54:19,046 - 01:54:19,566] Well,
+- [01:54:19,566 - 01:54:20,306] the relative abundance is the
+- [01:54:20,306 - 01:54:21,046] sum of all the energy densities.
+- [01:54:21,046 - 01:54:22,946] So I'll tell you what the relative abundance are.
+- [01:54:23,306 - 01:54:24,766] Now that you know what they mean.
+- [01:54:30,066 - 01:54:30,586] Relative.
+- [01:54:30,726 - 01:54:31,646] Not absolute.
+- [01:54:31,866 - 01:54:33,186] I could also tell you absolute.
+- [01:54:33,406 - 01:54:35,066] But relative abundance.
+- [01:54:35,766 - 01:54:38,386] The biggest single one is the vacuum energy.
+- [01:54:38,946 - 01:54:39,726] Rho naught.
+- [01:54:40,206 - 01:54:42,646] Let's write rho naught over rho total.
+- [01:54:42,826 - 01:54:43,106] Okay?
+- [01:54:43,406 - 01:54:45,026] This just means the fractional.
+- [01:54:45,206 - 01:54:47,585] Rho total means the sum of all the energy densities.
+- [01:54:47,585 - 01:54:48,925] This is today.
+- [01:54:49,946 - 01:54:52,906] Today is about 70%,
+- [01:54:52,906 - 01:54:54,786] 0.7.
+- [01:54:55,346 - 01:54:56,686] So most of the energy,
+- [01:54:56,686 - 01:54:58,736] that means that we are well
+- [01:54:58,736 - 01:55:00,786] into the region dominated by the
+- [01:55:01,436 - 01:55:01,726] vacuum.
+- [01:55:02,005 - 01:55:03,385] But not that well.
+- [01:55:03,726 - 01:55:04,026] I mean,
+- [01:55:04,026 - 01:55:04,326] it's not,
+- [01:55:04,326 - 01:55:04,526] you know,
+- [01:55:04,526 - 01:55:08,526] it's not 0.999 vacuum energy.
+- [01:55:08,646 - 01:55:11,166] It's 0.7 today.
+- [01:55:12,186 - 01:55:16,686] Rho matter is today.
+- [01:55:16,686 - 01:55:16,906] Today,
+- [01:55:16,906 - 01:55:19,965] about 0.3.
+- [01:55:20,786 - 01:55:24,026] Rho radiation is negligible.
+- [01:55:24,385 - 01:55:25,146] Very,
+- [01:55:25,146 - 01:55:25,826] very small.
+- [01:55:27,846 - 01:55:28,606] About,
+- [01:55:28,606 - 01:55:33,566] I think about 10,000 times smaller than the matter energy.
+- [01:55:33,826 - 01:55:35,106] So this is very,
+- [01:55:35,106 - 01:55:35,666] very small.
+- [01:55:35,885 - 01:55:36,806] Essentially zero.
+- [01:55:37,085 - 01:55:38,005] Not much there.
+- [01:55:38,766 - 01:55:41,826] But the rho matter comes in two pieces.
+- [01:55:44,925 - 01:55:47,626] Rho dark plus rho,
+- [01:55:47,626 - 01:55:49,085] let's call it luminous.
+- [01:55:51,085 - 01:55:52,286] The dark matter,
+- [01:55:52,286 - 01:55:52,526] well,
+- [01:55:52,526 - 01:55:52,806] let's see,
+- [01:55:52,806 - 01:55:55,146] the luminous is about 5%,
+- [01:55:55,146 - 01:55:56,066] 0.05.
+- [01:55:57,885 - 01:55:59,226] And this is,
+- [01:55:59,226 - 01:55:59,446] I guess,
+- [01:55:59,446 - 01:56:00,686] is about 0.25.
+- [01:56:02,026 - 01:56:03,646] That's the composition today.
+- [01:56:05,026 - 01:56:06,545] That's the composition today.
+- [01:56:06,746 - 01:56:09,186] If you run it backward or forward,
+- [01:56:09,186 - 01:56:11,806] the ratio of dark matter and luminous is 0.25.
+- [01:56:11,806 - 01:56:13,486] And the ratio of luminous matter will stay the same.
+- [01:56:13,666 - 01:56:16,965] That's because they both scale like 1 over a cubed.
+- [01:56:17,385 - 01:56:18,465] That'll stay the same.
+- [01:56:20,605 - 01:56:22,885] So the ratio between these two.
+- [01:56:23,146 - 01:56:23,626] But the,
+- [01:56:23,626 - 01:56:24,126] oh,
+- [01:56:24,126 - 01:56:24,425] I should,
+- [01:56:24,425 - 01:56:24,786] I'm sorry,
+- [01:56:24,786 - 01:56:26,566] I should divide by rho total.
+- [01:56:28,446 - 01:56:29,546] Over rho total.
+- [01:56:31,806 - 01:56:33,506] But depending on the era,
+- [01:56:33,506 - 01:56:34,386] on the time,
+- [01:56:34,386 - 01:56:38,586] the relative abundance of these three will be different.
+- [01:56:38,586 - 01:56:39,966] If you go into the remote past,
+- [01:56:39,966 - 01:56:41,526] radiation dominated.
+- [01:56:41,986 - 01:56:43,986] If you go into the mid-past,
+- [01:56:43,986 - 01:56:45,026] the moderate past,
+- [01:56:45,026 - 01:56:46,266] matter dominated.
+- [01:56:46,566 - 01:56:48,326] Go into the remote future,
+- [01:56:48,326 - 01:56:50,686] this will become essentially one,
+- [01:56:50,686 - 01:56:53,966] and it'll all be vacuum energy.
+- [01:56:54,466 - 01:56:55,666] At which point,
+- [01:56:55,666 - 01:56:58,126] the universe will just exponentially increase.
+- [01:57:00,366 - 01:57:01,686] Cooling as it increases,
+- [01:57:01,686 - 01:57:04,136] and it's interesting to think
+- [01:57:04,136 - 01:57:06,586] about the astronomers of that period.
+- [01:57:08,926 - 01:57:09,766] They will,
+- [01:57:09,766 - 01:57:11,906] they will live in a universe
+- [01:57:11,906 - 01:57:14,046] and look around them and see nothing.
+- [01:57:14,366 - 01:57:15,246] Except for the,
+- [01:57:15,246 - 01:57:17,026] except for the immediate galaxies which
+- [01:57:17,026 - 01:57:18,806] will be in falling toward them.
+- [01:57:20,006 - 01:57:20,486] The,
+- [01:57:20,486 - 01:57:23,896] I think the Andromeda and the Magellanic clouds are
+- [01:57:23,896 - 01:57:27,306] about the only thing that they'll see out there.
+- [01:57:27,426 - 01:57:28,066] And by that time,
+- [01:57:28,066 - 01:57:29,046] they will have merged anyway.
+- [01:57:29,866 - 01:57:31,406] So they'll see a single galaxy.
+- [01:57:31,546 - 01:57:33,266] This will be about in 100 billion years.
+- [01:57:33,406 - 01:57:33,966] It'll take 100,
+- [01:57:33,966 - 01:57:36,226] 150 billion years or something like that.
+- [01:57:36,226 - 01:57:39,746] Our galaxy will be completely isolated.
+- [01:57:40,166 - 01:57:40,646] Oh,
+- [01:57:40,646 - 01:57:41,726] another question is,
+- [01:57:41,726 - 01:57:43,946] where is the horizon?
+- [01:57:44,326 - 01:57:45,906] How far away is the horizon?
+- [01:57:47,466 - 01:57:47,946] So,
+- [01:57:47,946 - 01:57:49,766] to figure out where the horizon is,
+- [01:57:49,766 - 01:57:51,396] what we want to do is
+- [01:57:51,396 - 01:57:53,026] figure out what the Hubble constant is.
+- [01:57:53,486 - 01:57:55,086] Let's figure out the Hubble constant.
+- [01:57:55,666 - 01:57:56,726] Here we have it.
+- [01:57:58,206 - 01:57:58,686] A...
+- [01:58:04,926 - 01:58:05,406] Well,
+- [01:58:05,406 - 01:58:06,206] let's just write down the name.
+- [01:58:06,226 - 01:58:06,386] Let's write down the equation.
+- [01:58:06,726 - 01:58:09,646] A dot over A is equal to,
+- [01:58:09,646 - 01:58:10,926] what is it,
+- [01:58:10,926 - 01:58:19,306] square root 8 pi g over 3 rho naught.
+- [01:58:22,346 - 01:58:22,966] That's it.
+- [01:58:23,546 - 01:58:24,746] That's the Hubble constant.
+- [01:58:25,026 - 01:58:25,586] Did I get everything?
+- [01:58:25,766 - 01:58:26,126] I think so.
+- [01:58:26,946 - 01:58:27,466] Yeah.
+- [01:58:30,406 - 01:58:31,546] And in the future.
+- [01:58:32,546 - 01:58:33,506] And in the future.
+- [01:58:33,706 - 01:58:34,866] In the remote future,
+- [01:58:34,866 - 01:58:36,206] there will only be...
+- [01:58:36,226 - 01:58:36,786] There will only be rho naught.
+- [01:58:37,726 - 01:58:39,706] So this is not quite true today.
+- [01:58:39,846 - 01:58:41,126] The other energies are in there.
+- [01:58:41,446 - 01:58:42,826] But in the future,
+- [01:58:42,826 - 01:58:44,246] wait a little while,
+- [01:58:44,246 - 01:58:46,766] mostly it'll just be rho naught.
+- [01:58:47,046 - 01:58:48,846] And this will be the form of the equation.
+- [01:58:49,186 - 01:58:50,966] This is also the Hubble constant.
+- [01:58:51,966 - 01:58:54,206] And so if we write
+- [01:58:54,206 - 01:58:56,446] the equation that Hubble originally wrote,
+- [01:58:56,446 - 01:58:57,706] namely,
+- [01:58:57,706 - 01:59:02,806] velocity is equal to distance times Hubble,
+- [01:59:03,486 - 01:59:06,846] square root of 8 pi g over 3 rho naught,
+- [01:59:06,846 - 01:59:09,786] then we can ask the question,
+- [01:59:09,786 - 01:59:12,936] how far away do you have to be so
+- [01:59:12,936 - 01:59:16,086] that the outward recessional velocity is the speed of light?
+- [01:59:16,686 - 01:59:18,266] And all you have to do
+- [01:59:18,266 - 01:59:19,846] is substitute speed of light in there.
+- [01:59:20,526 - 01:59:21,006] One.
+- [01:59:21,286 - 01:59:22,266] In our units,
+- [01:59:22,266 - 01:59:22,686] one.
+- [01:59:25,066 - 01:59:29,326] And that tells you that the distance to the horizon,
+- [01:59:29,326 - 01:59:31,056] the distance to where things are
+- [01:59:31,056 - 01:59:32,786] moving away from you with the light,
+- [01:59:32,786 - 01:59:32,786] is equal to the speed of light.
+- [01:59:32,786 - 01:59:36,496] And the distance to the speed of light is 1
+- [01:59:36,496 - 01:59:40,206] over square root of 8 pi g over 3 rho naught.
+- [01:59:42,006 - 01:59:45,046] It's this distance which is about 10,
+- [01:59:45,046 - 01:59:46,946] 12 billion light years away.
+- [01:59:50,026 - 01:59:52,566] But notice that it doesn't change with time.
+- [01:59:54,306 - 01:59:57,506] Once this exponential expansion sets in,
+- [01:59:57,506 - 02:00:00,046] the Hubble constant stays constant,
+- [02:00:00,616 - 02:00:02,766] and the distance to the horizon stays constant.
+- [02:00:02,786 - 02:00:03,826] The horizon is just fixed.
+- [02:00:05,026 - 02:00:06,146] What is the horizon?
+- [02:00:06,586 - 02:00:08,406] The horizon is where things are moving
+- [02:00:08,406 - 02:00:10,226] away from us with the speed of light.
+- [02:00:11,186 - 02:00:13,686] So as the galaxies in the universe expands,
+- [02:00:13,686 - 02:00:15,166] one by one,
+- [02:00:16,225 - 02:00:19,926] the galaxies will pass through this horizon,
+- [02:00:19,926 - 02:00:22,346] and we can just wave goodbye to them.
+- [02:00:23,346 - 02:00:23,986] They will get,
+- [02:00:23,986 - 02:00:27,106] actually what will happen to them is they'll get more and
+- [02:00:27,106 - 02:00:30,226] more and more redshifted until we just can't see them anymore.
+- [02:00:31,365 - 02:00:35,125] That will happen to just about everything with the
+- [02:00:35,125 - 02:00:38,886] exception of the nearby Magellanic clouds and Andromeda Galaxy.
+- [02:00:39,866 - 02:00:42,106] And so the astronomers of that period,
+- [02:00:42,106 - 02:00:44,176] unless they have good history books to remind
+- [02:00:44,176 - 02:00:46,246] them of what people knew in the past,
+- [02:00:46,246 - 02:00:47,166] will be very puzzled.
+- [02:00:47,366 - 02:00:50,806] They will think that the universe is an
+- [02:00:50,806 - 02:00:54,246] island in an otherwise infinite sea of empty space.
+- [02:00:55,166 - 02:00:59,786] They will not be able to see the blackbody moon.
+- [02:01:00,226 - 02:01:00,926] They will not be able
+- [02:01:00,926 - 02:01:01,626] to see the microwave background radiation.
+- [02:01:01,886 - 02:01:03,786] It will be too thinned out,
+- [02:01:03,786 - 02:01:05,086] too redshifted.
+- [02:01:05,606 - 02:01:09,066] They will have no way of even knowing there's a
+- [02:01:09,066 - 02:01:12,526] cosmological constant because they won't see anything receding away from them.
+- [02:01:12,626 - 02:01:13,926] There will be nothing out there.
+- [02:01:16,105 - 02:01:20,895] So we can imagine them being very puzzled and
+- [02:01:20,895 - 02:01:25,686] thinking that the universe was one galaxy and nothing else.
+- [02:01:26,006 - 02:01:27,146] Read the early books.
+- [02:01:28,026 - 02:01:29,666] Read the early books.
+- [02:01:34,905 - 02:01:37,705] That's actually very hard to keep
+- [02:01:37,705 - 02:01:40,506] information over long periods of time.
+- [02:01:41,486 - 02:01:43,766] If you just look at our brief history.
+- [02:01:45,626 - 02:01:46,846] Back to literacy.
+- [02:01:48,846 - 02:01:52,266] But certainly you can even go
+- [02:01:52,266 - 02:01:55,686] back in time and you can say,
+- [02:01:55,686 - 02:01:57,586] someone back there,
+- [02:01:57,586 - 02:02:02,826] that there may have been other terms and they said,
+- [02:02:02,826 - 02:02:03,526] well,
+- [02:02:03,526 - 02:02:05,446] now it's only year three.
+- [02:02:06,246 - 02:02:07,586] And they say,
+- [02:02:07,586 - 02:02:07,786] well,
+- [02:02:07,786 - 02:02:09,886] in year five billion,
+- [02:02:09,886 - 02:02:12,086] they're going to only see this,
+- [02:02:12,086 - 02:02:12,246] this,
+- [02:02:12,246 - 02:02:12,566] and this.
+- [02:02:12,826 - 02:02:12,886] Right.
+- [02:02:13,446 - 02:02:20,226] It would be extremely hard for the astronomers at year three to know
+- [02:02:20,226 - 02:02:27,006] that there was a cosmological constant because it was so much so subdominant.
+- [02:02:28,145 - 02:02:30,445] But it's also true that there were no
+- [02:02:30,445 - 02:02:32,746] astronomers at year three because it was too hot.
+- [02:02:35,186 - 02:02:38,826] It's a curious fact that the cosmological,
+- [02:02:38,826 - 02:02:45,516] all the cosmological parameters point to about the same scale of
+- [02:02:45,516 - 02:02:52,206] time as the evolutionary time scale for evolving a human being.
+- [02:02:53,306 - 02:02:54,106] You know,
+- [02:02:54,106 - 02:02:57,566] a couple of billion years to a billion years.
+- [02:02:57,566 - 02:02:58,366] You've got to go from the,
+- [02:02:58,366 - 02:02:59,006] well,
+- [02:02:59,006 - 02:02:59,586] first of all,
+- [02:02:59,586 - 02:03:00,926] you've got to get the sun to cool.
+- [02:03:01,226 - 02:03:01,486] I mean,
+- [02:03:01,486 - 02:03:02,506] you've got to get the
+- [02:03:02,506 - 02:03:03,526] sun to form and so forth.
+- [02:03:03,806 - 02:03:06,246] That takes a couple of billion years or so.
+- [02:03:06,646 - 02:03:09,026] But then the time scale for evolution is what,
+- [02:03:09,026 - 02:03:10,326] three billion years or something?
+- [02:03:10,506 - 02:03:10,646] Four,
+- [02:03:10,646 - 02:03:11,746] five billion,
+- [02:03:11,746 - 02:03:12,686] four billion years?
+- [02:03:14,546 - 02:03:15,026] Yeah,
+- [02:03:15,026 - 02:03:16,106] you've got to get the metals.
+- [02:03:16,766 - 02:03:21,266] So the time scale for evolution of
+- [02:03:21,266 - 02:03:25,766] a complex organism was about four billion years.
+- [02:03:26,186 - 02:03:27,546] The first three billion years.
+- [02:03:27,546 - 02:03:27,546] I mean,
+- [02:03:27,546 - 02:03:28,676] another billion years of which
+- [02:03:28,676 - 02:03:29,806] was simple single cell things.
+- [02:03:30,246 - 02:03:33,106] And it required stability of things for that long,
+- [02:03:33,106 - 02:03:34,006] for evolution to take place.
+- [02:03:34,126 - 02:03:36,816] But you did say that the surface of
+- [02:03:36,816 - 02:03:39,506] the last scattering would not go over the horizon,
+- [02:03:39,506 - 02:03:40,826] it would just get weaker and weaker and weaker.
+- [02:03:41,686 - 02:03:42,466] So the galaxies,
+- [02:03:42,466 - 02:03:43,986] other than our local cluster,
+- [02:03:43,986 - 02:03:45,156] are going to move through
+- [02:03:45,156 - 02:03:46,326] the surface of the last scattering.
+- [02:03:46,406 - 02:03:46,566] Yeah,
+- [02:03:46,566 - 02:03:48,236] except that we won't be able to
+- [02:03:48,236 - 02:03:49,906] see them as galaxies at that point.
+- [02:03:51,266 - 02:03:53,446] We'll just see them merge into the…
+- [02:03:54,086 - 02:03:55,806] They'll get so red shifted that they'll
+- [02:03:55,806 - 02:03:57,526] get red shifting into the other galaxies.
+- [02:03:57,526 - 02:03:59,876] it down to the same three degrees and it'll
+- [02:03:59,876 - 02:04:02,226] be hard to distinguish them from any of the
+- [02:04:02,226 - 02:04:02,906] other black holes.
+- [02:04:03,086 - 02:04:04,756] So the surface of last scattering depends
+- [02:04:04,756 - 02:04:06,426] on where you are because the astronomers
+- [02:04:06,426 - 02:04:08,216] in those galaxies are not going to see
+- [02:04:08,216 - 02:04:10,006] themselves moving through the surface of last scattering.
+- [02:04:10,266 - 02:04:10,626] Oh,
+- [02:04:10,626 - 02:04:11,206] they're not going to see,
+- [02:04:11,206 - 02:04:11,386] no,
+- [02:04:11,386 - 02:04:11,626] no,
+- [02:04:11,626 - 02:04:12,866] they're going to see us moving through the
+- [02:04:12,866 - 02:04:13,906] surface of last scattering.
+- [02:04:13,906 - 02:04:14,306] Right,
+- [02:04:14,306 - 02:04:15,166] right.
+- [02:04:15,166 - 02:04:16,866] Everybody's on an equal footing.
+- [02:04:19,406 - 02:04:20,126] I've seen,
+- [02:04:20,126 - 02:04:21,826] maybe at Ronald's stand,
+- [02:04:21,826 - 02:04:22,246] I recall,
+- [02:04:22,246 - 02:04:22,506] that,
+- [02:04:22,506 - 02:04:22,666] you know,
+- [02:04:22,666 - 02:04:23,166] first of all,
+- [02:04:23,166 - 02:04:23,366] I should
+- [02:04:23,366 - 02:04:25,506] say there's reason to believe that the universe,
+- [02:04:25,506 - 02:04:27,886] the size of the universe is some order,
+- [02:04:27,886 - 02:04:28,126] the
+- [02:04:28,126 - 02:04:31,086] size of the universe is some order of
+- [02:04:31,086 - 02:04:34,046] magnitude larger than what we can see now.
+- [02:04:34,046 - 02:04:35,926] Is that evident
+- [02:04:35,926 - 02:04:36,986] from what you said?
+- [02:04:37,226 - 02:04:38,026] Not yet.
+- [02:04:38,026 - 02:04:39,446] Not yet.
+- [02:04:39,446 - 02:04:42,716] It becomes evident when we
+- [02:04:42,716 - 02:04:45,986] talk about measurements of the geometry
+- [02:04:45,986 - 02:04:46,666] of space.
+- [02:04:46,666 - 02:04:50,586] And we can measure the geometry of space,
+- [02:04:50,586 - 02:04:53,086] basically measure the sums of
+- [02:04:53,086 - 02:04:53,346] angular mass.
+- [02:04:53,366 - 02:04:54,246] So we can measure the angles of triangles.
+- [02:04:54,246 - 02:04:55,866] But how big a triangle?
+- [02:04:55,866 - 02:04:56,486] Very,
+- [02:04:56,486 - 02:04:57,546] very big triangles.
+- [02:04:58,186 - 02:04:59,246] What we can do,
+- [02:04:59,246 - 02:05:03,526] here we are at the center.
+- [02:05:03,526 - 02:05:06,886] We look out and we see the surface of last
+- [02:05:06,886 - 02:05:08,206] scattering way out here.
+- [02:05:08,206 - 02:05:11,726] And we see some blob
+- [02:05:11,726 - 02:05:15,246] in the surface of last scattering.
+- [02:05:15,246 - 02:05:16,286] What is
+- [02:05:16,286 - 02:05:16,406] it?
+- [02:05:16,406 - 02:05:18,526] It's a blob of over density or
+- [02:05:18,526 - 02:05:20,646] under density or whatever it happens to be.
+- [02:05:20,646 - 02:05:22,606] The surface
+- [02:05:22,606 - 02:05:22,976] of last scattering is a blob
+- [02:05:22,976 - 02:05:23,346] of over density or under density.
+- [02:05:23,346 - 02:05:23,526] It's not a lump.
+- [02:05:23,526 - 02:05:23,526] It's a lump.
+- [02:05:23,526 - 02:05:23,526] It's not a lump.
+- [02:05:23,526 - 02:05:23,526] It's not a lump.
+- [02:05:23,526 - 02:05:23,526] I think it's a lump.
+- [02:05:23,526 - 02:05:24,586] The surface of last scattering is somewhat blobby.
+- [02:05:24,586 - 02:05:27,426] It's got some lumpiness in it.
+- [02:05:27,426 - 02:05:28,086] We
+- [02:05:28,086 - 02:05:30,646] see a lump and we have very good reason
+- [02:05:30,646 - 02:05:33,206] to believe that that lump has a certain size.
+- [02:05:33,966 - 02:05:34,546] Okay.
+- [02:05:34,546 - 02:05:36,386] We draw a triangle.
+- [02:05:36,386 - 02:05:38,856] We also know with fairly
+- [02:05:38,856 - 02:05:41,326] good precision by now the distance
+- [02:05:42,886 - 02:05:44,846] to the surface of last scattering.
+- [02:05:44,846 - 02:05:46,106] So we draw a triangle,
+- [02:05:46,106 - 02:05:48,526] an isosceles triangle with two
+- [02:05:48,526 - 02:05:51,026] two d's and let's call it,
+- [02:05:51,026 - 02:05:51,886] the third leg,
+- [02:05:51,886 - 02:05:54,486] call it L for length or L for lump
+- [02:05:56,565 - 02:05:59,105] Now if we have a triangle like
+- [02:05:59,105 - 02:06:01,646] this and we know d's and L,
+- [02:06:01,646 - 02:06:03,446] we know this angle,
+- [02:06:03,446 - 02:06:04,986] theta
+- [02:06:06,306 - 02:06:09,626] We know the angle if space is flat
+- [02:06:09,626 - 02:06:13,066] If space is positively curved,
+- [02:06:13,066 - 02:06:15,346] then this angle would be bigger
+- [02:06:15,346 - 02:06:17,626] than we would estimate from Euclidean geometry
+- [02:06:17,626 - 02:06:20,266] If space is negatively curved,
+- [02:06:20,266 - 02:06:22,106] this is gonna be the subject of next week,
+- [02:06:22,106 - 02:06:23,746] negative and positive curvature
+- [02:06:23,746 - 02:06:26,366] But depending on the curvature of space,
+- [02:06:26,366 - 02:06:29,826] we would either see this angle bigger or less,
+- [02:06:29,826 - 02:06:32,866] bigger or smaller or equal to
+- [02:06:32,866 - 02:06:35,906] what we would expect for Euclidean geometry
+- [02:06:36,726 - 02:06:37,906] What do we find?
+- [02:06:38,126 - 02:06:39,606] We find that to a point
+- [02:06:39,626 - 02:06:41,306] We find that to about 2% or
+- [02:06:41,306 - 02:06:42,986] better or 1% or better or better
+- [02:06:43,626 - 02:06:46,026] That Euclidean geometry is correct
+- [02:06:46,026 - 02:06:48,086] That means that space is flat
+- [02:06:48,526 - 02:06:51,156] It is very much like measuring
+- [02:06:51,156 - 02:06:53,786] triangles from me standing at the center
+- [02:06:54,626 - 02:06:56,146] Looking out some distance,
+- [02:06:56,146 - 02:06:57,446] a thousand feet or a
+- [02:06:57,446 - 02:06:58,746] hundred feet or whatever it is
+- [02:06:59,346 - 02:07:01,586] Some object of known size out
+- [02:07:01,586 - 02:07:03,826] there and looking at the angle
+- [02:07:04,366 - 02:07:06,776] And discovering that the angle
+- [02:07:06,776 - 02:07:09,186] is consistent with Euclidean geometry
+- [02:07:09,626 - 02:07:10,006] I know the size,
+- [02:07:10,006 - 02:07:11,986] I see some battleship out on the horizon
+- [02:07:12,586 - 02:07:14,046] Not quite on the horizon,
+- [02:07:14,046 - 02:07:14,766] in closer
+- [02:07:14,766 - 02:07:16,806] I know that battleship is,
+- [02:07:16,806 - 02:07:17,746] how big is a battleship?
+- [02:07:17,746 - 02:07:18,506] How many feet?
+- [02:07:19,106 - 02:07:19,706] How many?
+- [02:07:20,306 - 02:07:21,046] 800 feet
+- [02:07:21,046 - 02:07:23,186] I know that that's the battleship Missouri
+- [02:07:23,186 - 02:07:24,546] Was Missouri a battleship?
+- [02:07:29,106 - 02:07:29,986] The Bismarck,
+- [02:07:29,986 - 02:07:31,346] I see the Bismarck out there
+- [02:07:32,566 - 02:07:34,086] I see the Bismarck
+- [02:07:34,466 - 02:07:37,166] The Bismarck is bigger than 800 feet I bet
+- [02:07:37,166 - 02:07:39,466] And I know just how big it is
+- [02:07:39,466 - 02:07:41,206] I also have reason to think
+- [02:07:41,206 - 02:07:42,946] I know exactly how far it is
+- [02:07:42,946 - 02:07:44,446] And I measure the angle
+- [02:07:44,446 - 02:07:47,916] And I see that it satisfies
+- [02:07:47,916 - 02:07:51,386] Euclidean geometry with a flat Earth
+- [02:07:52,445 - 02:07:53,686] Well not quite flat,
+- [02:07:53,686 - 02:07:55,106] I don't know that it's exactly flat
+- [02:07:55,106 - 02:07:57,626] But I know it's flat to a good approximation
+- [02:07:58,426 - 02:08:02,246] That tells me that the Earth is bigger,
+- [02:08:02,246 - 02:08:05,386] significantly bigger than the distance to the Bismarck
+- [02:08:08,485 - 02:08:09,046] Yeah,
+- [02:08:09,046 - 02:08:09,506] yeah,
+- [02:08:09,506 - 02:08:09,846] yeah
+- [02:08:09,846 - 02:08:12,086] This is good for battleships
+- [02:08:12,086 - 02:08:14,256] But what's an example of an object
+- [02:08:14,256 - 02:08:16,426] out there that we know the size of?
+- [02:08:17,346 - 02:08:18,486] We'll come to that
+- [02:08:18,486 - 02:08:19,166] Oh,
+- [02:08:19,166 - 02:08:20,486] next please
+- [02:08:22,905 - 02:08:23,466] Lumps,
+- [02:08:23,466 - 02:08:25,646] the largest lumps in the microwave background
+- [02:08:27,405 - 02:08:29,645] And we think we know their size because
+- [02:08:29,645 - 02:08:31,886] we know how long it took them to evolve
+- [02:08:31,886 - 02:08:33,876] And we know the speed of
+- [02:08:33,876 - 02:08:35,866] sound and so a variety of things
+- [02:08:37,205 - 02:08:39,715] But it's the largest lumps that
+- [02:08:39,715 - 02:08:42,226] are seen on the microwave background
+- [02:08:44,806 - 02:08:47,646] It also turned out that the
+- [02:08:47,646 - 02:08:50,486] real knot is not necessarily the constant
+- [02:08:50,486 - 02:08:52,446] Just like the bubble that's passing
+- [02:08:56,785 - 02:08:58,666] Experimentally it's very close to a constant
+- [02:09:01,185 - 02:09:02,386] When you,
+- [02:09:02,386 - 02:09:04,126] incidentally,
+- [02:09:04,126 - 02:09:05,706] when you read about it,
+- [02:09:05,706 - 02:09:06,506] if you read about it,
+- [02:09:06,506 - 02:09:08,266] and you read about the measurement of W,
+- [02:09:09,106 - 02:09:11,746] if people tell you that they've measured
+- [02:09:11,746 - 02:09:14,386] W to be minus one to good accuracy,
+- [02:09:15,346 - 02:09:16,886] that's the same thing as saying
+- [02:09:16,886 - 02:09:18,426] that the vacuum energy is constant
+- [02:09:19,605 - 02:09:21,835] So if you read in the
+- [02:09:21,835 - 02:09:24,066] Scientific American that astronomers have concluded
+- [02:09:24,066 - 02:09:26,196] that this strange parameter that
+- [02:09:26,196 - 02:09:28,326] they call W is minus one
+- [02:09:28,326 - 02:09:29,796] and it's getting more and more
+- [02:09:29,796 - 02:09:31,266] and more closer to minus one,
+- [02:09:33,146 - 02:09:36,066] that's an indication that the vacuum energy is constant,
+- [02:09:36,066 - 02:09:38,446] and how close is it?
+- [02:09:39,166 - 02:09:41,566] It's something like one plus or minus,
+- [02:09:41,566 - 02:09:44,026] well it can only go on one side,
+- [02:09:44,206 - 02:09:46,706] but to within about ten or five percent it's one,
+- [02:09:46,706 - 02:09:48,226] minus one
+- [02:09:48,946 - 02:09:53,186] Would general relativity work with a vacuum energy
+- [02:09:53,186 - 02:09:56,026] for which the equation is stable enough?
+- [02:09:58,166 - 02:10:00,526] There are ways of making a cropping constant
+- [02:10:01,645 - 02:10:02,766] So does,
+- [02:10:02,766 - 02:10:04,886] so at least in principle,
+- [02:10:04,886 - 02:10:09,896] so general relativity doesn't exclude the
+- [02:10:09,896 - 02:10:14,906] possibility of more radical vacuum energy
+- [02:10:14,906 - 02:10:15,306] Right
+- [02:10:15,886 - 02:10:19,576] But the vacuum energy is something which
+- [02:10:19,576 - 02:10:23,266] is good reason to believe is there,
+- [02:10:23,486 - 02:10:24,786] the other things are much
+- [02:10:24,786 - 02:10:26,086] less reason to believe is there,
+- [02:10:26,086 - 02:10:26,666] or comfortably
+- [02:10:30,226 - 02:10:32,586] There's no singularity or anything at W equals zero,
+- [02:10:32,586 - 02:10:34,026] things are well-begun
+- [02:10:34,026 - 02:10:34,146] No,
+- [02:10:34,146 - 02:10:34,626] there's nothing,
+- [02:10:34,626 - 02:10:37,566] W equals zero is just non-relativistic cold matter
+- [02:10:38,625 - 02:10:39,886] W equals zero
+- [02:10:40,646 - 02:10:42,186] W equals one,
+- [02:10:42,186 - 02:10:43,406] not minus one,
+- [02:10:43,406 - 02:10:45,446] it's believed there's good reasons
+- [02:10:48,065 - 02:10:49,885] to believe that W has to
+- [02:10:49,885 - 02:10:51,706] lie between minus one and one
+- [02:10:52,886 - 02:10:56,786] W being minus two would really violate general relativity
+- [02:10:56,786 - 02:11:00,946] W equaling plus two would also violate general relativity
+- [02:11:04,026 - 02:11:04,186] So the,
+- [02:11:04,186 - 02:11:09,986] so the density calculation for matter and for radiation,
+- [02:11:10,306 - 02:11:12,856] you assume that the energy was constant
+- [02:11:12,856 - 02:11:15,406] and then you adjusted the scale factor
+- [02:11:15,406 - 02:11:16,766] to figure out the formula
+- [02:11:16,766 - 02:11:16,886] No,
+- [02:11:16,886 - 02:11:17,146] no,
+- [02:11:17,146 - 02:11:18,426] I did not assume it was constant,
+- [02:11:18,426 - 02:11:19,966] we used that the change in energy
+- [02:11:19,966 - 02:11:20,866] Is PPP
+- [02:11:22,945 - 02:11:23,546] Yeah
+- [02:11:26,686 - 02:11:27,646] Minus PPP
+- [02:11:27,646 - 02:11:32,666] So we assumed that if we had an imaginary box
+- [02:11:32,666 - 02:11:39,266] that was following a unit volume and the universe expanded
+- [02:11:40,125 - 02:11:44,226] that the imaginary box moving along with it,
+- [02:11:44,226 - 02:11:46,006] that work would be done on the walls
+- [02:11:46,006 - 02:11:48,366] by the expansion and that would
+- [02:11:48,366 - 02:11:50,726] account exactly for the change in energy
+- [02:11:51,945 - 02:11:52,466] Okay
+- [02:11:52,466 - 02:11:54,306] Now this can be done using fancier,
+- [02:11:54,306 - 02:11:55,966] there are fancier ways to do this
+- [02:11:56,546 - 02:11:57,866] But that doesn't have to
+- [02:11:57,866 - 02:11:59,186] assume the total energy was fixed,
+- [02:11:59,186 - 02:11:59,606] right,
+- [02:11:59,706 - 02:12:02,126] and so the larger volume means a lower energy density
+- [02:12:02,126 - 02:12:02,726] Okay,
+- [02:12:02,726 - 02:12:03,026] yeah,
+- [02:12:03,026 - 02:12:03,886] that's right,
+- [02:12:03,886 - 02:12:04,726] the total energy,
+- [02:12:04,726 - 02:12:06,686] total energy is fixed
+- [02:12:06,686 - 02:12:08,546] So that's true for the first two,
+- [02:12:08,546 - 02:12:10,566] but for the vacuum energy,
+- [02:12:10,566 - 02:12:11,746] the density is constant
+- [02:12:11,746 - 02:12:13,086] So that implies the energy
+- [02:12:13,086 - 02:12:13,226] Well,
+- [02:12:13,226 - 02:12:14,566] what if this equation is satisfied?
+- [02:12:15,406 - 02:12:16,146] That's energy,
+- [02:12:16,146 - 02:12:17,606] that is energy conservation
+- [02:12:18,486 - 02:12:19,086] All right,
+- [02:12:19,086 - 02:12:19,206] well,
+- [02:12:19,206 - 02:12:20,426] remind me,
+- [02:12:20,426 - 02:12:22,166] remind me to talk about energy conservation
+- [02:12:22,786 - 02:12:24,526] The trouble with energy conservation is that
+- [02:12:24,526 - 02:12:26,266] the energy of the universe is zero
+- [02:12:26,926 - 02:12:28,146] So it doesn't say very much
+- [02:12:35,286 - 02:12:38,086] so it doesn't say very much
