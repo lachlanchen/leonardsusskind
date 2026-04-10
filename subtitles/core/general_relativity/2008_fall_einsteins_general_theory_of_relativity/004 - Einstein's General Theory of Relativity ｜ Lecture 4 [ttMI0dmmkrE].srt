@@ -1,0 +1,9972 @@
+1
+00:00:06,299 --> 00:00:09,760
+This program is brought to you by Stanford University.
+
+2
+00:00:10,180 --> 00:00:12,700
+Please visit us at stanford.edu.
+
+3
+00:00:14,800 --> 00:00:18,940
+Let's very quickly review and
+
+4
+00:00:18,940 --> 00:00:20,920
+then I want to move on to some,
+
+5
+00:00:20,920 --> 00:00:22,820
+I think,
+
+6
+00:00:22,820 --> 00:00:24,860
+somewhat difficult concepts.
+
+7
+00:00:31,120 --> 00:00:34,660
+My purpose in teaching these courses was to
+
+8
+00:00:34,660 --> 00:00:38,200
+try to teach what I called the theoretical
+
+9
+00:00:38,200 --> 00:00:38,800
+minimum.
+
+10
+00:00:39,600 --> 00:00:42,650
+The minimum amount of stuff that you really
+
+11
+00:00:42,650 --> 00:00:45,700
+need if you truly want to technically be able
+
+12
+00:00:45,700 --> 00:00:46,960
+to go on to the next step.
+
+13
+00:00:48,300 --> 00:00:50,480
+The next step in this case
+
+14
+00:00:50,480 --> 00:00:52,660
+after general relativity might be cosmology.
+
+15
+00:00:52,900 --> 00:00:54,400
+And you really want to do it right,
+
+16
+00:00:54,400 --> 00:00:56,440
+but you don't want to do everything.
+
+17
+00:00:56,680 --> 00:00:58,100
+You don't want to do all the applications.
+
+18
+00:00:58,340 --> 00:00:59,520
+You don't want to learn everything.
+
+19
+00:00:59,520 --> 00:01:00,740
+You want to learn just enough,
+
+20
+00:01:00,740 --> 00:01:01,700
+the bare minimum,
+
+21
+00:01:01,700 --> 00:01:03,120
+to be able to go to the next step.
+
+22
+00:01:05,340 --> 00:01:08,070
+Tonight I think we're going to face the
+
+23
+00:01:08,070 --> 00:01:10,800
+fact that the bare minimum is already a little
+
+24
+00:01:10,800 --> 00:01:16,280
+bit complicated and requires some mathematical effort.
+
+25
+00:01:16,640 --> 00:01:19,060
+It doesn't require advanced mathematics.
+
+26
+00:01:19,620 --> 00:01:21,960
+It just requires patience to go through
+
+27
+00:01:21,960 --> 00:01:24,300
+the calculations and to do them right.
+
+28
+00:01:25,460 --> 00:01:27,480
+If I just told you
+
+29
+00:01:27,480 --> 00:01:29,500
+in words what the answers are.
+
+30
+00:01:30,179 --> 00:01:32,460
+I think I would not be giving you the minimum.
+
+31
+00:01:32,460 --> 00:01:33,420
+I think I would be
+
+32
+00:01:33,420 --> 00:01:34,380
+giving you less than the minimum.
+
+33
+00:01:34,380 --> 00:01:35,340
+So
+
+34
+00:01:36,579 --> 00:01:38,299
+Today today may be a little
+
+35
+00:01:38,299 --> 00:01:40,020
+bit trying but bear with it
+
+36
+00:01:40,479 --> 00:01:41,969
+What you get out of it if
+
+37
+00:01:41,969 --> 00:01:43,460
+you follow it will be worth the effort
+
+38
+00:01:44,220 --> 00:01:44,620
+Okay,
+
+39
+00:01:44,620 --> 00:01:47,020
+let's just go through the definitions of
+
+40
+00:01:48,419 --> 00:01:51,589
+the transformation properties of the two
+
+41
+00:01:51,589 --> 00:01:54,760
+kinds of components covariant and contravariant
+
+42
+00:01:56,380 --> 00:01:57,460
+if I have a
+
+43
+00:02:01,100 --> 00:02:03,180
+Covariant set of components
+
+44
+00:02:06,660 --> 00:02:08,160
+Covariant means lower
+
+45
+00:02:11,200 --> 00:02:15,380
+And they're now referring to a coordinate system Y
+
+46
+00:02:18,420 --> 00:02:20,130
+Not only do I think
+
+47
+00:02:20,130 --> 00:02:21,840
+of them as functions of Y
+
+48
+00:02:21,840 --> 00:02:24,100
+But I also think of them
+
+49
+00:02:24,100 --> 00:02:26,360
+as the components the covariant components
+
+50
+00:02:27,380 --> 00:02:29,480
+relative to the coordinate axes of Y
+
+51
+00:02:29,480 --> 00:02:31,060
+defined by the Y coordinates
+
+52
+00:02:34,180 --> 00:02:34,840
+Okay,
+
+53
+00:02:34,840 --> 00:02:38,760
+so this is V sub M in the Y
+
+54
+00:02:38,760 --> 00:02:42,680
+coordinate system both with respect to its components and
+
+55
+00:02:42,680 --> 00:02:45,140
+With respect to what it depends on Y
+
+56
+00:02:46,480 --> 00:02:49,710
+Those components can be expressed in terms of
+
+57
+00:02:49,710 --> 00:02:52,940
+the components in terms of some other coordinate system
+
+58
+00:02:52,940 --> 00:02:57,240
+You know some other coordinate system X Y and X
+
+59
+00:02:59,480 --> 00:03:01,290
+Given the components the covariant
+
+60
+00:03:01,290 --> 00:03:03,100
+components in one coordinate system
+
+61
+00:03:03,100 --> 00:03:05,350
+You can translate them to
+
+62
+00:03:05,350 --> 00:03:07,600
+the components in another coordinate system,
+
+63
+00:03:07,600 --> 00:03:10,200
+and here's the formula that we worked out last time
+
+64
+00:03:10,940 --> 00:03:11,420
+that
+
+65
+00:03:13,440 --> 00:03:17,240
+Vm is related to Vn of X
+
+66
+00:03:18,880 --> 00:03:24,420
+By multiplying it by dx n by dy M
+
+67
+00:03:27,460 --> 00:03:29,400
+We worked that out last time
+
+68
+00:03:29,400 --> 00:03:32,800
+These are the set of objects that you use and
+
+69
+00:03:32,800 --> 00:03:34,880
+Keep in mind that the
+
+70
+00:03:34,880 --> 00:03:36,960
+summation convention is in force here
+
+71
+00:03:36,960 --> 00:03:39,340
+So summing over n the open
+
+72
+00:03:39,340 --> 00:03:41,720
+index on this side is M
+
+73
+00:03:42,340 --> 00:03:45,780
+So this side here is the Mth component of V
+
+74
+00:03:46,700 --> 00:03:48,590
+The n index here is summed
+
+75
+00:03:48,590 --> 00:03:50,480
+over so it's just a dummy index
+
+76
+00:03:51,280 --> 00:03:55,270
+But on both sides you have an open index M and
+
+77
+00:03:55,270 --> 00:03:59,260
+notice that that open index M has to do with Y
+
+78
+00:04:00,260 --> 00:04:03,290
+It's the Mth Y coordinate here and on the
+
+79
+00:04:03,290 --> 00:04:06,320
+left hand side this also has to do with Y
+
+80
+00:04:06,840 --> 00:04:09,410
+Because we're talking about the components of
+
+81
+00:04:09,410 --> 00:04:11,980
+the vector in the Y coordinate system
+
+82
+00:04:12,800 --> 00:04:16,680
+the X coordinate system that's been summed over and
+
+83
+00:04:17,560 --> 00:04:19,860
+It appears only as a dummy index here.
+
+84
+00:04:19,860 --> 00:04:22,680
+This is the transformation property of
+
+85
+00:04:23,780 --> 00:04:26,840
+A vector if it doesn't transform this way,
+
+86
+00:04:26,840 --> 00:04:28,360
+it's not called a vector
+
+87
+00:04:28,360 --> 00:04:31,080
+Even if it has components even if you
+
+88
+00:04:31,080 --> 00:04:33,800
+might try building up an arrow to represent it
+
+89
+00:04:34,440 --> 00:04:35,220
+You know,
+
+90
+00:04:35,220 --> 00:04:36,560
+there's no question you can take
+
+91
+00:04:38,620 --> 00:04:42,000
+Let's take the temperature the pressure and
+
+92
+00:04:43,259 --> 00:04:46,539
+The humidity there are three numbers and
+
+93
+00:04:46,539 --> 00:04:49,820
+I could now build myself a arrow
+
+94
+00:04:50,520 --> 00:04:54,140
+Which along that axis has a length equal to the
+
+95
+00:04:54,140 --> 00:04:57,760
+temperature along that axis has a length equal to the humidity?
+
+96
+00:04:57,760 --> 00:04:59,740
+And so forth and so on
+
+97
+00:04:59,740 --> 00:05:01,720
+that object is not a tensor.
+
+98
+00:05:01,720 --> 00:05:03,500
+It is not a vector
+
+99
+00:05:04,140 --> 00:05:05,450
+It's just a thing you
+
+100
+00:05:05,450 --> 00:05:06,760
+made up out of three scalars
+
+101
+00:05:08,520 --> 00:05:10,320
+It's not a tensor because
+
+102
+00:05:11,660 --> 00:05:15,010
+The its components when you go to a different
+
+103
+00:05:15,010 --> 00:05:18,360
+reference frame don't transform right the temperature is the temperature
+
+104
+00:05:18,360 --> 00:05:20,500
+It's the same in all coordinate systems,
+
+105
+00:05:20,500 --> 00:05:23,330
+and it doesn't change from one coordinate system
+
+106
+00:05:23,330 --> 00:05:26,160
+to another so the temperature does not transform
+
+107
+00:05:26,160 --> 00:05:27,740
+like one of the components of a vector
+
+108
+00:05:27,740 --> 00:05:28,320
+In fact,
+
+109
+00:05:28,320 --> 00:05:29,560
+it transforms as a scalar
+
+110
+00:05:30,760 --> 00:05:31,440
+All right,
+
+111
+00:05:31,440 --> 00:05:38,050
+so any set of three numbers or four numbers depending on the dimensionality of the space is not
+
+112
+00:05:38,050 --> 00:05:44,660
+does not constitute a vector a vector is characterized by its transformation properties given it in one coordinate system.
+
+113
+00:05:44,660 --> 00:05:45,800
+How do you get it in the other?
+
+114
+00:05:46,440 --> 00:05:46,920
+likewise
+
+115
+00:05:49,520 --> 00:05:53,020
+I'm using V now is the generic term for a vector
+
+116
+00:05:53,020 --> 00:05:56,520
+not necessarily the same vector if I have a vector with
+
+117
+00:06:02,780 --> 00:06:04,300
+Total vector higher or lower you can stored element together
+
+118
+00:06:04,300 --> 00:06:05,570
+which is the set of confirming
+
+119
+00:06:05,570 --> 00:06:06,840
+the segment in a set of signs
+
+120
+00:06:06,840 --> 00:06:09,450
+What I see is that the set of superintendent you
+
+121
+00:06:09,450 --> 00:06:12,060
+have inside yourла set has an Hotel have aual name
+
+122
+00:06:12,060 --> 00:06:14,000
+Well now my test is to remove the constraint
+
+123
+00:06:14,000 --> 00:06:15,940
+or the solution on x from the hits vector.
+
+124
+00:06:15,940 --> 00:06:15,940
+I'm not going to leave it 영상
+
+125
+00:06:18,440 --> 00:06:19,690
+I see this something trained to
+
+126
+00:06:19,690 --> 00:06:20,940
+break mine and sort my equations
+
+127
+00:06:20,940 --> 00:06:23,780
+Let's say I have as one gradient vector
+
+128
+00:06:23,780 --> 00:06:25,120
+With a very long now I can't find it unless you have
+
+129
+00:06:25,120 --> 00:06:26,460
+a Russia counter-variant variant but you know what we addressed this idea?
+
+130
+00:06:26,460 --> 00:06:29,380
+mistake about whether it's dxdy or dy dx,
+
+131
+00:06:29,380 --> 00:06:31,620
+if you're talking about a thing
+
+132
+00:06:31,620 --> 00:06:33,400
+with a covariant index here,
+
+133
+00:06:33,400 --> 00:06:36,700
+it's got to match with a contravariant index here.
+
+134
+00:06:37,760 --> 00:06:41,060
+On the left-hand side you have a covariant M,
+
+135
+00:06:41,060 --> 00:06:43,160
+on the right-hand side you
+
+136
+00:06:43,160 --> 00:06:44,120
+have a covariant M,
+
+137
+00:06:44,120 --> 00:06:46,460
+and what's more the covariant M
+
+138
+00:06:46,460 --> 00:06:48,800
+on this side has to do with
+
+139
+00:06:48,800 --> 00:06:49,100
+Y,
+
+140
+00:06:49,100 --> 00:06:50,920
+so the covariant M on this
+
+141
+00:06:50,920 --> 00:06:52,740
+side has to do with Y,
+
+142
+00:06:52,740 --> 00:06:54,460
+so you can bet your boots that
+
+143
+00:06:54,460 --> 00:06:55,420
+that this one is going
+
+144
+00:06:55,420 --> 00:06:56,380
+to be X in the upstairs.
+
+145
+00:06:56,380 --> 00:06:57,620
+Same here,
+
+146
+00:06:57,620 --> 00:06:59,720
+on the left-hand side
+
+147
+00:06:59,720 --> 00:07:02,120
+you have a contravariant index M,
+
+148
+00:07:02,120 --> 00:07:03,840
+an upstairs index M,
+
+149
+00:07:03,840 --> 00:07:05,640
+associated with the Y
+
+150
+00:07:05,640 --> 00:07:08,300
+coordinates and that's why you have
+
+151
+00:07:08,300 --> 00:07:10,960
+an upstairs index here also associated with
+
+152
+00:07:10,960 --> 00:07:11,600
+the Y coordinates.
+
+153
+00:07:11,600 --> 00:07:12,840
+So there's a pattern,
+
+154
+00:07:12,840 --> 00:07:15,760
+that's the pattern of transformation
+
+155
+00:07:15,760 --> 00:07:17,060
+properties of a vector.
+
+156
+00:07:17,060 --> 00:07:19,300
+I won't bother writing down the transformation
+
+157
+00:07:19,300 --> 00:07:20,480
+properties of a scalar,
+
+158
+00:07:20,480 --> 00:07:22,600
+they don't transform,
+
+159
+00:07:22,600 --> 00:07:23,760
+they're the same in every
+
+160
+00:07:23,760 --> 00:07:24,440
+coordinates as a vector.
+
+161
+00:07:24,460 --> 00:07:28,540
+I think I'm a little confused about,
+
+162
+00:07:28,540 --> 00:07:30,440
+you said if it's a vector
+
+163
+00:07:30,440 --> 00:07:32,340
+it has to satisfy that top equation.
+
+164
+00:07:33,960 --> 00:07:36,800
+Does it have to satisfy the second equation?
+
+165
+00:07:37,080 --> 00:07:39,690
+Don't identify this set of objects
+
+166
+00:07:39,690 --> 00:07:42,300
+with this set of objects yet.
+
+167
+00:07:43,120 --> 00:07:46,260
+This is just some covariant vector.
+
+168
+00:07:46,260 --> 00:07:49,260
+Remember I gave you some example of a
+
+169
+00:07:49,260 --> 00:07:49,960
+covariant vector.
+
+170
+00:07:49,960 --> 00:07:51,620
+The gradient,
+
+171
+00:07:51,620 --> 00:07:54,440
+the derivative of a scalar with respect to
+
+172
+00:07:54,460 --> 00:07:57,420
+a coordinate is a covariant vector.
+
+173
+00:07:57,420 --> 00:08:05,100
+Don't try to think of now of the connection
+
+174
+00:08:05,100 --> 00:08:06,680
+between covariant and contra,
+
+175
+00:08:06,680 --> 00:08:08,200
+they're different objects for the moment.
+
+176
+00:08:08,200 --> 00:08:09,240
+So I
+
+177
+00:08:09,240 --> 00:08:11,460
+shouldn't have called them by the same letter,
+
+178
+00:08:11,460 --> 00:08:13,040
+I just don't want to
+
+179
+00:08:13,040 --> 00:08:13,660
+run out of letters,
+
+180
+00:08:13,660 --> 00:08:15,420
+so I'll call them both V.
+
+181
+00:08:15,420 --> 00:08:16,820
+Wait,
+
+182
+00:08:16,820 --> 00:08:17,620
+let's not,
+
+183
+00:08:17,620 --> 00:08:18,360
+let's call it W.
+
+184
+00:08:18,360 --> 00:08:20,180
+Okay,
+
+185
+00:08:20,180 --> 00:08:22,100
+this is,
+
+186
+00:08:22,100 --> 00:08:22,100
+let's call it W.
+
+187
+00:08:22,100 --> 00:08:22,200
+Okay.
+
+188
+00:08:24,460 --> 00:08:26,110
+So here is the transformation
+
+189
+00:08:26,110 --> 00:08:27,760
+property of a covariant object,
+
+190
+00:08:27,760 --> 00:08:28,960
+this is the transformation
+
+191
+00:08:28,960 --> 00:08:31,060
+property of a contravariant object.
+
+192
+00:08:31,060 --> 00:08:33,320
+And they're not the same thing.
+
+193
+00:08:33,320 --> 00:08:36,280
+Here's a covariant vector.
+
+194
+00:08:36,620 --> 00:08:39,789
+An example of a contravariant vector
+
+195
+00:08:39,789 --> 00:08:42,960
+would just be a small displacement,
+
+196
+00:08:42,960 --> 00:08:44,740
+dx,
+
+197
+00:08:44,740 --> 00:08:46,700
+m.
+
+198
+00:08:47,620 --> 00:08:53,320
+dx and dy representing a small little displacement.
+
+199
+00:08:53,320 --> 00:08:53,640
+Well,
+
+200
+00:08:53,640 --> 00:08:54,360
+the x,
+
+201
+00:08:54,360 --> 00:08:54,620
+sorry,
+
+202
+00:08:54,620 --> 00:08:55,920
+dx1 and dx2.
+
+203
+00:08:55,920 --> 00:08:58,380
+dx1 and dx2.
+
+204
+00:08:58,380 --> 00:08:59,380
+Let's see,
+
+205
+00:08:59,380 --> 00:09:00,460
+here's the x coordinates.
+
+206
+00:09:00,960 --> 00:09:02,600
+Let's say this one is x1,
+
+207
+00:09:02,600 --> 00:09:04,640
+let's say this one is x2.
+
+208
+00:09:04,640 --> 00:09:09,910
+You build yourself a vector by going off and
+
+209
+00:09:09,910 --> 00:09:15,180
+making an excursion along the x1 axis by dx1,
+
+210
+00:09:15,180 --> 00:09:18,820
+and then along the x2 axis by x2.
+
+211
+00:09:19,000 --> 00:09:21,150
+And the resultant is the vector that
+
+212
+00:09:21,150 --> 00:09:23,300
+we can use to find the vector.
+
+213
+00:09:23,300 --> 00:09:24,340
+So we can just call dx.
+
+214
+00:09:27,110 --> 00:09:29,445
+The vector that we call
+
+215
+00:09:29,445 --> 00:09:31,780
+dx has components which are contravariant.
+
+216
+00:09:33,040 --> 00:09:34,740
+They're contravariant indices.
+
+217
+00:09:34,740 --> 00:09:39,120
+The components of a gradient are covariant.
+
+218
+00:09:39,360 --> 00:09:40,720
+And you can't go wrong.
+
+219
+00:09:40,720 --> 00:09:42,460
+If you remember,
+
+220
+00:09:42,460 --> 00:09:45,770
+the only rule you have to remember
+
+221
+00:09:45,770 --> 00:09:49,080
+is that coordinates carry their indices upstairs.
+
+222
+00:09:49,880 --> 00:09:51,420
+That's an arbitrary rule.
+
+223
+00:09:51,420 --> 00:09:52,520
+It could have been the other way.
+
+224
+00:09:53,520 --> 00:09:55,040
+But it's an arbitrary rule.
+
+225
+00:09:55,040 --> 00:09:56,540
+I'm not sure whom it's due to.
+
+226
+00:09:57,199 --> 00:09:59,280
+But you label the coordinates,
+
+227
+00:09:59,280 --> 00:09:59,740
+x1,
+
+228
+00:09:59,740 --> 00:10:00,060
+x2,
+
+229
+00:10:00,060 --> 00:10:00,540
+x3,
+
+230
+00:10:00,540 --> 00:10:02,300
+with superscripts.
+
+231
+00:10:02,460 --> 00:10:03,560
+And once you do that,
+
+232
+00:10:03,560 --> 00:10:04,400
+it's hard to go wrong.
+
+233
+00:10:06,100 --> 00:10:07,760
+Here's a superscript on an m,
+
+234
+00:10:07,760 --> 00:10:10,420
+but it's downstairs in the denominator of something.
+
+235
+00:10:11,040 --> 00:10:13,280
+It just looks like it has
+
+236
+00:10:13,280 --> 00:10:15,520
+to do with something with lower indices.
+
+237
+00:10:15,680 --> 00:10:16,400
+And in fact,
+
+238
+00:10:16,400 --> 00:10:18,510
+it is true that this can
+
+239
+00:10:18,510 --> 00:10:20,620
+be thought of as the gradient vector.
+
+240
+00:10:20,620 --> 00:10:22,060
+Let me call it v again.
+
+241
+00:10:22,060 --> 00:10:23,520
+v sub m.
+
+242
+00:10:23,940 --> 00:10:25,500
+It's a covariant vector.
+
+243
+00:10:26,340 --> 00:10:28,400
+dx has its indices upstairs.
+
+244
+00:10:28,400 --> 00:10:31,280
+It's a contravariant vector.
+
+245
+00:10:31,580 --> 00:10:34,790
+Now the transformation properties came from
+
+246
+00:10:34,790 --> 00:10:38,000
+the transformation properties of this object.
+
+247
+00:10:38,880 --> 00:10:39,540
+Right?
+
+248
+00:10:39,540 --> 00:10:40,840
+Let's just see.
+
+249
+00:10:43,080 --> 00:10:48,920
+If the vector we're talking about is a gradient,
+
+250
+00:10:49,720 --> 00:10:53,460
+then this equation just says that
+
+251
+00:10:53,460 --> 00:10:57,200
+partial of phi with respect to ym,
+
+252
+00:10:57,400 --> 00:10:59,420
+that's the left-hand side here,
+
+253
+00:10:59,420 --> 00:11:03,400
+because v is a gradient,
+
+254
+00:11:03,720 --> 00:11:04,860
+that's equal,
+
+255
+00:11:04,860 --> 00:11:06,520
+on the right-hand side,
+
+256
+00:11:06,520 --> 00:11:10,780
+we have partial of phi with respect to x,
+
+257
+00:11:10,960 --> 00:11:11,660
+whoops,
+
+258
+00:11:11,660 --> 00:11:11,980
+x,
+
+259
+00:11:11,980 --> 00:11:12,340
+y,
+
+260
+00:11:12,340 --> 00:11:12,760
+m,
+
+261
+00:11:12,760 --> 00:11:14,020
+n.
+
+262
+00:11:14,660 --> 00:11:18,280
+That's this object times dxn.
+
+263
+00:11:20,540 --> 00:11:21,700
+By dyn.
+
+264
+00:11:23,200 --> 00:11:24,460
+And dym.
+
+265
+00:11:25,280 --> 00:11:26,860
+Is this a correct equation?
+
+266
+00:11:28,740 --> 00:11:29,380
+Yeah.
+
+267
+00:11:29,380 --> 00:11:30,860
+That's a correct equation.
+
+268
+00:11:31,380 --> 00:11:33,300
+d phi by dy is d
+
+269
+00:11:33,300 --> 00:11:35,220
+phi by dx times dx by dy.
+
+270
+00:11:37,080 --> 00:11:39,920
+This equation didn't come from the
+
+271
+00:11:39,920 --> 00:11:42,760
+definition of any vector or covariant-contravariant.
+
+272
+00:11:42,840 --> 00:11:45,030
+It just came from element of calculus
+
+273
+00:11:45,030 --> 00:11:47,220
+that the gradient with respect to y
+
+274
+00:11:47,220 --> 00:11:49,900
+is just equal to the gradient with respect
+
+275
+00:11:49,900 --> 00:11:52,580
+to x times the set of components dxdy.
+
+276
+00:11:52,800 --> 00:11:55,480
+That's elementary calculus.
+
+277
+00:11:55,640 --> 00:11:57,040
+Elementary multivariable calculus.
+
+278
+00:11:59,119 --> 00:12:02,560
+But it's the place that we abstracted this rule.
+
+279
+00:12:02,880 --> 00:12:05,020
+If I now call this vm,
+
+280
+00:12:05,020 --> 00:12:06,340
+sorry,
+
+281
+00:12:06,340 --> 00:12:07,040
+vm,
+
+282
+00:12:07,040 --> 00:12:08,760
+and this one vn,
+
+283
+00:12:08,760 --> 00:12:11,300
+then that's my rule.
+
+284
+00:12:13,739 --> 00:12:14,319
+Likewise,
+
+285
+00:12:14,319 --> 00:12:17,200
+the transformation property of the complex,
+
+286
+00:12:17,200 --> 00:12:18,220
+the quanta-variant vectors,
+
+287
+00:12:18,400 --> 00:12:21,700
+came from the statement that dym
+
+288
+00:12:21,700 --> 00:12:25,000
+is equal to the partial of ym
+
+289
+00:12:25,000 --> 00:12:29,360
+with respect to xn times dxn.
+
+290
+00:12:30,020 --> 00:12:30,700
+Again,
+
+291
+00:12:30,700 --> 00:12:32,900
+this here had,
+
+292
+00:12:33,140 --> 00:12:36,020
+did not come from somebody's preconceived notion
+
+293
+00:12:36,020 --> 00:12:38,640
+about how tensors should transform.
+
+294
+00:12:39,020 --> 00:12:40,460
+It's just a calculus fact.
+
+295
+00:12:41,540 --> 00:12:43,360
+Or some sort of chain rule.
+
+296
+00:12:43,740 --> 00:12:45,380
+They're both some sort of chain rules,
+
+297
+00:12:45,380 --> 00:12:45,760
+I guess.
+
+298
+00:12:48,520 --> 00:12:52,550
+And now if I replace dym
+
+299
+00:12:52,550 --> 00:12:56,580
+by wm and dxn by wn here,
+
+300
+00:12:56,800 --> 00:12:58,780
+that defines,
+
+301
+00:12:58,780 --> 00:12:59,760
+or this defines,
+
+302
+00:12:59,760 --> 00:13:01,240
+the transformation property
+
+303
+00:13:01,240 --> 00:13:02,720
+of a covariant-contravariant vector.
+
+304
+00:13:03,200 --> 00:13:04,800
+That's where they came from.
+
+305
+00:13:05,440 --> 00:13:08,310
+So covariant and contravariant mean things that transform
+
+306
+00:13:08,310 --> 00:13:11,180
+the same way as gradients on the one hand
+
+307
+00:13:11,180 --> 00:13:12,900
+and differentials,
+
+308
+00:13:12,900 --> 00:13:14,540
+differential displacements.
+
+309
+00:13:14,880 --> 00:13:16,540
+Differential displacements,
+
+310
+00:13:17,200 --> 00:13:21,860
+and gradients.
+
+311
+00:13:22,260 --> 00:13:24,430
+Those are the sort of
+
+312
+00:13:24,430 --> 00:13:26,600
+archetypes of covariant and contravariant objects.
+
+313
+00:13:30,540 --> 00:13:33,060
+We can have more complicated
+
+314
+00:13:33,060 --> 00:13:35,580
+objects with any number of indices.
+
+315
+00:13:36,100 --> 00:13:38,630
+The transformation properties of objects
+
+316
+00:13:38,630 --> 00:13:41,160
+with more indices are similar.
+
+317
+00:13:41,400 --> 00:13:43,260
+Let me just give you an example.
+
+318
+00:13:46,420 --> 00:13:47,180
+Let's say that we have a complex object.
+
+319
+00:13:47,180 --> 00:13:49,150
+Here's the transformation property
+
+320
+00:13:49,150 --> 00:13:51,120
+of a covariant expression.
+
+321
+00:13:52,060 --> 00:13:57,460
+Supposing I have a tensor with two indices.
+
+322
+00:13:57,780 --> 00:14:00,540
+Let's say m and r.
+
+323
+00:14:03,860 --> 00:14:06,040
+Then the rule is for each index,
+
+324
+00:14:06,400 --> 00:14:07,560
+for each index,
+
+325
+00:14:08,420 --> 00:14:11,300
+there's a factor of a dx by dy.
+
+326
+00:14:11,820 --> 00:14:12,880
+And here's the way it works.
+
+327
+00:14:13,220 --> 00:14:16,760
+This is t in the y coordinate.
+
+328
+00:14:17,540 --> 00:14:19,450
+We're going to relate it
+
+329
+00:14:19,450 --> 00:14:21,360
+to t in the x coordinate.
+
+330
+00:14:22,920 --> 00:14:23,940
+Not mr,
+
+331
+00:14:23,940 --> 00:14:25,760
+but we better choose some new,
+
+332
+00:14:25,760 --> 00:14:28,140
+let's call it ns.
+
+333
+00:14:29,380 --> 00:14:30,140
+And now,
+
+334
+00:14:30,140 --> 00:14:31,700
+just as over here,
+
+335
+00:14:31,700 --> 00:14:34,940
+to relate the m index to the n index,
+
+336
+00:14:35,300 --> 00:14:36,360
+we need dx.
+
+337
+00:14:36,480 --> 00:14:39,240
+This is a sort of operation which takes
+
+338
+00:14:39,240 --> 00:14:42,000
+us from an n index to an m index.
+
+339
+00:14:42,980 --> 00:14:44,320
+We do exactly that.
+
+340
+00:14:44,320 --> 00:14:46,820
+dxn by dym.
+
+341
+00:14:49,080 --> 00:14:51,920
+But that works on the first index here.
+
+342
+00:14:52,100 --> 00:14:54,300
+We also need to work on the second index,
+
+343
+00:14:54,580 --> 00:14:59,200
+and that's dxs by dyr.
+
+344
+00:15:00,960 --> 00:15:02,200
+Now look at it.
+
+345
+00:15:02,240 --> 00:15:03,180
+On the right-hand side,
+
+346
+00:15:03,440 --> 00:15:06,720
+we have the components of the tensor,
+
+347
+00:15:06,960 --> 00:15:08,880
+the rank two tensor,
+
+348
+00:15:08,880 --> 00:15:09,680
+two indices,
+
+349
+00:15:09,860 --> 00:15:11,840
+in the x coordinates.
+
+350
+00:15:12,240 --> 00:15:13,200
+All right.
+
+351
+00:15:13,200 --> 00:15:14,520
+Two lower indices.
+
+352
+00:15:14,940 --> 00:15:17,480
+Those lower indices have to do with x.
+
+353
+00:15:18,400 --> 00:15:19,960
+So on the right-hand side,
+
+354
+00:15:20,220 --> 00:15:20,480
+sorry,
+
+355
+00:15:20,480 --> 00:15:23,360
+it must multiply something with
+
+356
+00:15:24,600 --> 00:15:25,560
+contravariant indices,
+
+357
+00:15:27,280 --> 00:15:27,920
+again,
+
+358
+00:15:27,920 --> 00:15:29,300
+referring to x.
+
+359
+00:15:29,920 --> 00:15:31,500
+But on the left-hand side,
+
+360
+00:15:31,500 --> 00:15:33,920
+we have covariant indices referring to y,
+
+361
+00:15:34,180 --> 00:15:36,260
+likewise on this side over here.
+
+362
+00:15:37,260 --> 00:15:38,340
+That's the pattern.
+
+363
+00:15:40,540 --> 00:15:42,720
+Indices are the things which transform.
+
+364
+00:15:42,720 --> 00:15:43,080
+Yeah?
+
+365
+00:15:43,480 --> 00:15:46,220
+Could you mix them or make any sense,
+
+366
+00:15:46,220 --> 00:15:46,500
+sir?
+
+367
+00:15:47,120 --> 00:15:48,700
+How would you want to mix them?
+
+368
+00:15:49,240 --> 00:15:50,680
+Some upper and some lower.
+
+369
+00:15:50,720 --> 00:15:50,900
+Yes.
+
+370
+00:15:51,260 --> 00:15:51,820
+Certainly.
+
+371
+00:15:51,960 --> 00:15:52,460
+For example,
+
+372
+00:15:52,460 --> 00:15:53,780
+you could have a,
+
+373
+00:15:53,960 --> 00:15:54,280
+all right,
+
+374
+00:15:54,280 --> 00:15:55,460
+let's do another example.
+
+375
+00:15:56,440 --> 00:15:57,840
+Supposing we had a tensor
+
+376
+00:15:59,300 --> 00:16:03,380
+which had one lower index and one upper index.
+
+377
+00:16:05,740 --> 00:16:06,680
+Perfectly good object.
+
+378
+00:16:07,260 --> 00:16:08,480
+How does it transform?
+
+379
+00:16:09,000 --> 00:16:09,520
+Well,
+
+380
+00:16:09,520 --> 00:16:10,000
+we should have,
+
+381
+00:16:10,000 --> 00:16:13,180
+I should not have erased the transformation properties
+
+382
+00:16:13,180 --> 00:16:15,380
+of the things with upper indices here.
+
+383
+00:16:15,520 --> 00:16:17,760
+Let me write them down over here.
+
+384
+00:16:24,260 --> 00:16:24,860
+So,
+
+385
+00:16:27,699 --> 00:16:28,300
+yeah,
+
+386
+00:16:28,300 --> 00:16:32,040
+here's for the lower index m,
+
+387
+00:16:32,880 --> 00:16:36,000
+and let me change variable here.
+
+388
+00:16:36,120 --> 00:16:37,860
+Let's call it rr.
+
+389
+00:16:40,000 --> 00:16:42,780
+And now let's write the transformation property
+
+390
+00:16:42,780 --> 00:16:43,980
+of an upper index,
+
+391
+00:16:44,680 --> 00:16:52,000
+and that's going to be dyn by dxs vs.
+
+392
+00:16:53,780 --> 00:16:54,440
+All right,
+
+393
+00:16:54,440 --> 00:16:55,920
+so here's the thing with the lower index.
+
+394
+00:16:56,160 --> 00:16:57,500
+Here's the thing with an upper index.
+
+395
+00:16:58,300 --> 00:16:59,200
+Here's an object,
+
+396
+00:16:59,200 --> 00:17:00,900
+a tensor with a lower index
+
+397
+00:17:00,900 --> 00:17:02,060
+and an upper index.
+
+398
+00:17:03,100 --> 00:17:04,339
+How does it transform?
+
+399
+00:17:05,220 --> 00:17:05,700
+Well,
+
+400
+00:17:05,700 --> 00:17:06,180
+just,
+
+401
+00:17:06,180 --> 00:17:07,839
+first of all,
+
+402
+00:17:07,839 --> 00:17:09,180
+we have to work on the m index.
+
+403
+00:17:09,180 --> 00:17:12,800
+That's going to give us a dxr by dyn.
+
+404
+00:17:15,740 --> 00:17:18,060
+And then we have to work on the upper index.
+
+405
+00:17:18,260 --> 00:17:23,079
+That will give us a dyn by dxs
+
+406
+00:17:24,560 --> 00:17:25,720
+times t.
+
+407
+00:17:27,280 --> 00:17:27,859
+Now,
+
+408
+00:17:27,859 --> 00:17:28,319
+let's see,
+
+409
+00:17:28,319 --> 00:17:28,860
+what is it?
+
+410
+00:17:28,900 --> 00:17:29,100
+T,
+
+411
+00:17:29,100 --> 00:17:33,200
+the upper index is s,
+
+412
+00:17:34,040 --> 00:17:36,520
+and the lower index is r.
+
+413
+00:17:41,240 --> 00:17:41,900
+All right,
+
+414
+00:17:41,900 --> 00:17:42,220
+so,
+
+415
+00:17:44,399 --> 00:17:46,540
+that's the transformation properties of a thing
+
+416
+00:17:46,540 --> 00:17:47,740
+with an upper and lower index.
+
+417
+00:17:48,120 --> 00:17:49,240
+And it's just borrowed,
+
+418
+00:17:49,480 --> 00:17:51,000
+it's just exactly the same as
+
+419
+00:17:51,000 --> 00:17:52,520
+if you just stuck this thing
+
+420
+00:17:52,520 --> 00:17:53,400
+next to this thing,
+
+421
+00:17:55,360 --> 00:17:57,620
+and thought of the tensor as just a product,
+
+422
+00:17:57,780 --> 00:17:58,320
+vm,
+
+423
+00:17:58,320 --> 00:17:58,860
+vn.
+
+424
+00:17:59,520 --> 00:18:00,800
+On the left-hand side,
+
+425
+00:18:00,800 --> 00:18:01,340
+vm,
+
+426
+00:18:01,340 --> 00:18:01,820
+vn,
+
+427
+00:18:01,860 --> 00:18:03,680
+referred to the y coordinates.
+
+428
+00:18:04,040 --> 00:18:05,320
+On the right-hand side,
+
+429
+00:18:05,320 --> 00:18:06,020
+vr,
+
+430
+00:18:06,020 --> 00:18:06,360
+vs,
+
+431
+00:18:07,240 --> 00:18:08,780
+related to the y coordinates.
+
+432
+00:18:09,180 --> 00:18:09,720
+All right?
+
+433
+00:18:10,100 --> 00:18:14,540
+So that's the transformation property of a mixed tensor
+
+434
+00:18:14,540 --> 00:18:16,180
+with some upper and some lower indices.
+
+435
+00:18:16,880 --> 00:18:18,890
+And the general rule for
+
+436
+00:18:18,890 --> 00:18:20,900
+any number of indices is similar.
+
+437
+00:18:22,760 --> 00:18:23,360
+Okay,
+
+438
+00:18:23,360 --> 00:18:23,760
+that's,
+
+439
+00:18:23,760 --> 00:18:23,960
+that,
+
+440
+00:18:25,760 --> 00:18:27,560
+without this set of rules,
+
+441
+00:18:27,800 --> 00:18:30,060
+it would be hopeless to try to explain
+
+442
+00:18:30,060 --> 00:18:35,600
+the geometry of even a simple thing like a sphere
+
+443
+00:18:35,600 --> 00:18:37,120
+in any great detail.
+
+444
+00:18:37,120 --> 00:18:38,480
+But certainly,
+
+445
+00:18:38,480 --> 00:18:39,920
+a general geometry
+
+446
+00:18:39,920 --> 00:18:41,720
+of arbitrary curvature,
+
+447
+00:18:41,720 --> 00:18:42,640
+wiggles,
+
+448
+00:18:42,640 --> 00:18:43,380
+and so forth,
+
+449
+00:18:43,520 --> 00:18:44,080
+hopeless,
+
+450
+00:18:45,379 --> 00:18:46,700
+without tensors.
+
+451
+00:18:46,800 --> 00:18:48,780
+So tensors are the key
+
+452
+00:18:48,780 --> 00:18:51,420
+to understanding the geometry of curved spaces.
+
+453
+00:18:56,440 --> 00:18:57,100
+Okay,
+
+454
+00:18:57,100 --> 00:18:57,700
+let me point,
+
+455
+00:18:57,700 --> 00:18:59,120
+let's do something else.
+
+456
+00:18:59,460 --> 00:19:02,940
+Let's take a tensor
+
+457
+00:19:03,840 --> 00:19:05,300
+which happens to have,
+
+458
+00:19:05,420 --> 00:19:05,600
+yes,
+
+459
+00:19:05,600 --> 00:19:06,500
+let's take this tensor,
+
+460
+00:19:06,500 --> 00:19:09,240
+which happens to have an upper and lower index.
+
+461
+00:19:10,520 --> 00:19:11,500
+And now,
+
+462
+00:19:11,500 --> 00:19:14,000
+let's identify and sum
+
+463
+00:19:14,000 --> 00:19:16,220
+the upper index with the lower index.
+
+464
+00:19:16,580 --> 00:19:17,700
+In other words,
+
+465
+00:19:17,700 --> 00:19:20,240
+let's take tmm.
+
+466
+00:19:21,620 --> 00:19:22,660
+That means
+
+467
+00:19:25,080 --> 00:19:29,500
+t11 plus t22 plus t33,
+
+468
+00:19:30,300 --> 00:19:32,500
+however many dimensions of space I have.
+
+469
+00:19:32,740 --> 00:19:33,400
+t,
+
+470
+00:19:33,400 --> 00:19:35,320
+one lower and one upper index.
+
+471
+00:19:35,320 --> 00:19:38,060
+This is a legal operation to combine
+
+472
+00:19:38,060 --> 00:19:40,940
+or to identify an upper index with a lower index
+
+473
+00:19:40,940 --> 00:19:42,780
+and sum over them.
+
+474
+00:19:42,940 --> 00:19:44,800
+I don't need to write the summation sign.
+
+475
+00:19:45,460 --> 00:19:47,520
+I claim that this object
+
+476
+00:19:48,720 --> 00:19:50,620
+with the indices identified
+
+477
+00:19:51,240 --> 00:19:52,100
+and then summed,
+
+478
+00:19:52,100 --> 00:19:52,680
+how many indices,
+
+479
+00:19:52,820 --> 00:19:54,900
+what indices does this whole object have?
+
+480
+00:19:55,080 --> 00:19:55,940
+Does it have any indices?
+
+481
+00:19:57,420 --> 00:19:57,940
+No,
+
+482
+00:19:57,940 --> 00:19:59,340
+it has no indices left over.
+
+483
+00:19:59,500 --> 00:20:00,240
+They've been summed over.
+
+484
+00:20:00,940 --> 00:20:02,180
+It doesn't have a t1.
+
+485
+00:20:02,380 --> 00:20:02,880
+It doesn't have a,
+
+486
+00:20:02,880 --> 00:20:04,400
+it's just a pure thing.
+
+487
+00:20:05,260 --> 00:20:05,940
+It's a sum
+
+488
+00:20:05,940 --> 00:20:08,160
+and it doesn't have any leftover indices.
+
+489
+00:20:08,500 --> 00:20:10,180
+What kind of thing is it likely to be?
+
+490
+00:20:10,780 --> 00:20:11,520
+A scalar.
+
+491
+00:20:12,240 --> 00:20:12,680
+Alright,
+
+492
+00:20:12,680 --> 00:20:14,140
+let's check that it really is a scalar.
+
+493
+00:20:17,660 --> 00:20:18,820
+All we have to do
+
+494
+00:20:18,820 --> 00:20:21,520
+is identify m with n.
+
+495
+00:20:21,740 --> 00:20:22,800
+Let's do it over here.
+
+496
+00:20:23,600 --> 00:20:25,420
+Set m equal to n
+
+497
+00:20:25,420 --> 00:20:26,960
+or n equal to m.
+
+498
+00:20:27,280 --> 00:20:28,840
+We better do it over here also.
+
+499
+00:20:29,080 --> 00:20:30,940
+I've set n equal to m.
+
+500
+00:20:33,580 --> 00:20:34,500
+And sum.
+
+501
+00:20:35,860 --> 00:20:36,460
+Now,
+
+502
+00:20:37,600 --> 00:20:38,800
+what do we have here?
+
+503
+00:20:38,920 --> 00:20:40,640
+We have the change in xr
+
+504
+00:20:40,640 --> 00:20:42,620
+when we vary y
+
+505
+00:20:43,600 --> 00:20:44,760
+times the change in y
+
+506
+00:20:44,760 --> 00:20:47,000
+when we vary xs.
+
+507
+00:20:47,240 --> 00:20:48,780
+What is this whole object here?
+
+508
+00:20:50,240 --> 00:20:51,140
+Anybody know?
+
+509
+00:20:52,200 --> 00:20:53,540
+That's the Kronecker delta.
+
+510
+00:20:54,100 --> 00:20:55,480
+It's the Kronecker delta.
+
+511
+00:20:56,120 --> 00:20:58,940
+It's really just the derivative of xr
+
+512
+00:20:58,940 --> 00:21:00,380
+with respect to xs.
+
+513
+00:21:01,040 --> 00:21:02,740
+The derivative of xr
+
+514
+00:21:02,880 --> 00:21:03,860
+with respect to ym
+
+515
+00:21:03,860 --> 00:21:05,580
+times the derivative of ym
+
+516
+00:21:05,580 --> 00:21:06,620
+with respect to xs.
+
+517
+00:21:06,900 --> 00:21:07,780
+Summed over m
+
+518
+00:21:07,780 --> 00:21:09,560
+is the same as
+
+519
+00:21:10,040 --> 00:21:11,740
+the derivative of xr
+
+520
+00:21:11,740 --> 00:21:13,700
+with respect to xs.
+
+521
+00:21:14,360 --> 00:21:16,020
+Just cancel out the ym.
+
+522
+00:21:16,280 --> 00:21:16,680
+Well,
+
+523
+00:21:16,680 --> 00:21:17,840
+what's the derivative of xr
+
+524
+00:21:17,840 --> 00:21:18,960
+with respect to xs?
+
+525
+00:21:21,040 --> 00:21:22,560
+It's like having three coordinates,
+
+526
+00:21:22,680 --> 00:21:22,820
+x,
+
+527
+00:21:22,820 --> 00:21:23,080
+y,
+
+528
+00:21:23,080 --> 00:21:23,400
+and z.
+
+529
+00:21:23,960 --> 00:21:26,380
+The derivative of x with respect to x is 1.
+
+530
+00:21:26,660 --> 00:21:30,900
+The derivative of x with respect to y is 0.
+
+531
+00:21:30,900 --> 00:21:34,000
+So this is a number
+
+532
+00:21:34,540 --> 00:21:35,520
+which is 1
+
+533
+00:21:37,380 --> 00:21:39,580
+when r is the same as s
+
+534
+00:21:39,580 --> 00:21:41,240
+and 0 otherwise.
+
+535
+00:21:41,800 --> 00:21:42,700
+In other words,
+
+536
+00:21:42,700 --> 00:21:43,780
+it's just the Kronecker delta.
+
+537
+00:21:45,700 --> 00:21:47,300
+We could replace this
+
+538
+00:21:47,900 --> 00:21:50,160
+and replace it by the Kronecker delta,
+
+539
+00:21:50,300 --> 00:21:51,420
+delta rs.
+
+540
+00:21:51,940 --> 00:21:53,880
+1 when r is equal to s,
+
+541
+00:21:54,020 --> 00:21:56,140
+0 when r is not equal to s.
+
+542
+00:21:56,620 --> 00:21:59,060
+But now we're supposed to sum over r and s.
+
+543
+00:21:59,260 --> 00:22:00,320
+What will that give us?
+
+544
+00:22:02,040 --> 00:22:03,620
+It'll just give us the sums
+
+545
+00:22:03,620 --> 00:22:07,540
+of t11 plus t22 plus t33 again.
+
+546
+00:22:08,660 --> 00:22:10,400
+Whenever you see a Kronecker delta,
+
+547
+00:22:10,620 --> 00:22:13,800
+it's really just a shorthand
+
+548
+00:22:13,800 --> 00:22:15,540
+or it's just an instruction
+
+549
+00:22:15,540 --> 00:22:17,680
+to set r equal to s.
+
+550
+00:22:18,860 --> 00:22:19,380
+Why?
+
+551
+00:22:19,580 --> 00:22:21,420
+Because it's 1 if r equals s
+
+552
+00:22:21,420 --> 00:22:22,360
+and it's 0 otherwise.
+
+553
+00:22:22,800 --> 00:22:24,220
+So it's just an instruction.
+
+554
+00:22:24,620 --> 00:22:25,920
+You can throw it away
+
+555
+00:22:25,920 --> 00:22:27,640
+and the rest of the expression
+
+556
+00:22:27,640 --> 00:22:29,080
+set r equal to s.
+
+557
+00:22:30,320 --> 00:22:32,000
+So look what we have.
+
+558
+00:22:32,240 --> 00:22:35,020
+We have tmm of y
+
+559
+00:22:35,020 --> 00:22:38,840
+equals trr of x.
+
+560
+00:22:39,260 --> 00:22:40,880
+In other words,
+
+561
+00:22:40,880 --> 00:22:43,260
+this particular combination
+
+562
+00:22:46,420 --> 00:22:49,560
+doesn't depend on which coordinate system you use.
+
+563
+00:22:50,080 --> 00:22:54,120
+The dependence of the components
+
+564
+00:22:54,120 --> 00:22:56,020
+on coordinate system
+
+565
+00:22:56,020 --> 00:22:57,520
+cancel out
+
+566
+00:22:58,120 --> 00:23:00,260
+when you identify the upper index
+
+567
+00:23:00,320 --> 00:23:01,660
+and the lower index and sum.
+
+568
+00:23:02,540 --> 00:23:03,920
+That's a general pattern.
+
+569
+00:23:04,400 --> 00:23:06,000
+If I have some tensor,
+
+570
+00:23:07,740 --> 00:23:08,840
+let's call it w,
+
+571
+00:23:09,100 --> 00:23:10,640
+with a whole bunch of indices,
+
+572
+00:23:15,480 --> 00:23:16,000
+mnrpq,
+
+573
+00:23:16,880 --> 00:23:17,600
+I don't know,
+
+574
+00:23:17,600 --> 00:23:18,280
+what's another letter?
+
+575
+00:23:19,440 --> 00:23:19,960
+Z.
+
+576
+00:23:20,540 --> 00:23:21,980
+That's a terrible notation.
+
+577
+00:23:22,200 --> 00:23:23,480
+You're not supposed to do that.
+
+578
+00:23:25,060 --> 00:23:25,580
+Mnr.
+
+579
+00:23:25,900 --> 00:23:27,760
+And now that's a tensor
+
+580
+00:23:27,760 --> 00:23:29,000
+with six indices,
+
+581
+00:23:29,000 --> 00:23:30,080
+a six-rank tensor
+
+582
+00:23:30,080 --> 00:23:33,120
+with three covariant
+
+583
+00:23:33,120 --> 00:23:34,460
+and three contravariant indices.
+
+584
+00:23:34,800 --> 00:23:36,080
+Let me make it a little general.
+
+585
+00:23:36,280 --> 00:23:37,300
+Let's make a different number
+
+586
+00:23:37,300 --> 00:23:39,140
+of upper indices and lower indices.
+
+587
+00:23:39,400 --> 00:23:39,860
+So a,
+
+588
+00:23:40,699 --> 00:23:42,120
+four upper indices
+
+589
+00:23:42,120 --> 00:23:43,280
+and three lower indices.
+
+590
+00:23:43,700 --> 00:23:44,340
+Now,
+
+591
+00:23:44,340 --> 00:23:47,220
+if I identify an upper index
+
+592
+00:23:47,220 --> 00:23:48,180
+with a lower index,
+
+593
+00:23:48,540 --> 00:23:49,840
+for example,
+
+594
+00:23:49,920 --> 00:23:53,160
+replace z by m and sum,
+
+595
+00:23:54,199 --> 00:23:55,920
+the result is a tensor
+
+596
+00:23:57,259 --> 00:23:58,980
+with three upper indices
+
+597
+00:23:59,000 --> 00:24:00,800
+and two lower indices.
+
+598
+00:24:02,400 --> 00:24:03,380
+That's a pattern.
+
+599
+00:24:03,480 --> 00:24:04,540
+You prove it the same way
+
+600
+00:24:04,540 --> 00:24:05,580
+as I proved this,
+
+601
+00:24:06,280 --> 00:24:07,640
+that when you identify
+
+602
+00:24:07,640 --> 00:24:09,160
+upper and lower indices
+
+603
+00:24:09,880 --> 00:24:10,980
+and sum over them,
+
+604
+00:24:11,800 --> 00:24:13,020
+what's left over,
+
+605
+00:24:13,140 --> 00:24:14,820
+the index structure that's left over
+
+606
+00:24:14,820 --> 00:24:16,600
+after you've summed over m,
+
+607
+00:24:17,840 --> 00:24:20,120
+the components still transform
+
+608
+00:24:20,120 --> 00:24:21,220
+as a tensor,
+
+609
+00:24:21,460 --> 00:24:23,500
+in this case with three upper indices
+
+610
+00:24:23,500 --> 00:24:24,740
+and two lower indices.
+
+611
+00:24:25,360 --> 00:24:26,740
+So that's a process
+
+612
+00:24:26,740 --> 00:24:28,040
+that you can do on a tensor,
+
+613
+00:24:29,760 --> 00:24:32,300
+that creates another tensor
+
+614
+00:24:32,300 --> 00:24:33,780
+of lower rank,
+
+615
+00:24:34,080 --> 00:24:35,700
+smaller number of indices.
+
+616
+00:24:36,120 --> 00:24:37,380
+For example,
+
+617
+00:24:37,540 --> 00:24:40,680
+if you construct a tensor
+
+618
+00:24:40,680 --> 00:24:41,660
+out of two vectors,
+
+619
+00:24:41,960 --> 00:24:43,040
+let's construct,
+
+620
+00:24:43,200 --> 00:24:44,080
+let's take two vectors,
+
+621
+00:24:44,340 --> 00:24:45,660
+v and w.
+
+622
+00:24:46,880 --> 00:24:49,340
+Let's suppose v has upper indices
+
+623
+00:24:49,340 --> 00:24:51,460
+and w has lower indices.
+
+624
+00:24:52,920 --> 00:24:54,160
+That's a tensor,
+
+625
+00:24:54,340 --> 00:24:55,680
+just a product.
+
+626
+00:24:56,300 --> 00:24:57,460
+In other words,
+
+627
+00:24:57,480 --> 00:24:58,000
+the components
+
+628
+00:24:58,040 --> 00:24:59,620
+are simply the products
+
+629
+00:24:59,620 --> 00:25:00,360
+of components.
+
+630
+00:25:00,940 --> 00:25:02,600
+We call that T m n.
+
+631
+00:25:05,240 --> 00:25:08,200
+If I then identify m with n
+
+632
+00:25:08,200 --> 00:25:09,060
+and sum,
+
+633
+00:25:15,020 --> 00:25:16,420
+that defines a scalar.
+
+634
+00:25:17,140 --> 00:25:18,400
+What is that scalar called?
+
+635
+00:25:19,960 --> 00:25:21,000
+That's the dot product
+
+636
+00:25:21,000 --> 00:25:21,760
+of two vectors.
+
+637
+00:25:22,000 --> 00:25:23,000
+It's the inner product,
+
+638
+00:25:23,180 --> 00:25:24,780
+sometimes called the inner product
+
+639
+00:25:24,780 --> 00:25:25,720
+between two vectors.
+
+640
+00:25:26,420 --> 00:25:26,980
+So,
+
+641
+00:25:28,240 --> 00:25:29,620
+the inner product,
+
+642
+00:25:29,720 --> 00:25:30,880
+and even better,
+
+643
+00:25:30,960 --> 00:25:32,800
+supposing they're the same vector,
+
+644
+00:25:36,580 --> 00:25:37,140
+well,
+
+645
+00:25:37,320 --> 00:25:39,320
+we haven't defined what it means
+
+646
+00:25:39,320 --> 00:25:40,660
+for them to be the same vector.
+
+647
+00:25:40,940 --> 00:25:41,760
+So far,
+
+648
+00:25:41,800 --> 00:25:43,160
+things with upper components
+
+649
+00:25:43,520 --> 00:25:44,640
+are simply different
+
+650
+00:25:44,640 --> 00:25:45,920
+than things with lower components.
+
+651
+00:25:46,120 --> 00:25:46,240
+Yeah?
+
+652
+00:25:46,520 --> 00:25:47,440
+Can we therefore say
+
+653
+00:25:47,440 --> 00:25:48,120
+that w,
+
+654
+00:25:48,220 --> 00:25:48,980
+you've expressed there,
+
+655
+00:25:49,000 --> 00:25:50,320
+with seven indices
+
+656
+00:25:50,320 --> 00:25:54,740
+is equal to a scalar times w n r a?
+
+657
+00:25:55,120 --> 00:25:55,380
+No,
+
+658
+00:25:55,380 --> 00:25:55,660
+no,
+
+659
+00:25:55,660 --> 00:25:56,260
+it's not a scale,
+
+660
+00:25:56,260 --> 00:25:56,400
+no,
+
+661
+00:25:56,400 --> 00:25:57,460
+it's not a scale of times.
+
+662
+00:25:57,520 --> 00:25:58,940
+It could be,
+
+663
+00:25:59,500 --> 00:26:01,060
+depending on the character
+
+664
+00:26:01,060 --> 00:26:02,500
+of this tensor.
+
+665
+00:26:02,640 --> 00:26:03,080
+It could be that,
+
+666
+00:26:03,160 --> 00:26:04,960
+but it's not typically a product,
+
+667
+00:26:04,960 --> 00:26:05,260
+no.
+
+668
+00:26:06,020 --> 00:26:07,380
+But when you do contract,
+
+669
+00:26:07,660 --> 00:26:09,300
+this is called contracting the indices.
+
+670
+00:26:09,860 --> 00:26:11,140
+This process is called
+
+671
+00:26:11,480 --> 00:26:13,040
+contracting the indices m.
+
+672
+00:26:13,200 --> 00:26:14,820
+When you contract the index m,
+
+673
+00:26:15,620 --> 00:26:17,560
+it simply lowers the rank
+
+674
+00:26:17,560 --> 00:26:18,180
+of the tensor,
+
+675
+00:26:18,660 --> 00:26:19,740
+and the remaining objects
+
+676
+00:26:19,740 --> 00:26:20,640
+do form a tensor.
+
+677
+00:26:21,000 --> 00:26:22,100
+It doesn't mean
+
+678
+00:26:22,480 --> 00:26:23,580
+that this w here
+
+679
+00:26:23,580 --> 00:26:29,100
+is some scalar times w n r a,
+
+680
+00:26:29,760 --> 00:26:30,660
+or you know,
+
+681
+00:26:30,680 --> 00:26:33,480
+n r a p q.
+
+682
+00:26:34,460 --> 00:26:35,640
+It does not mean that.
+
+683
+00:26:36,920 --> 00:26:37,720
+In general,
+
+684
+00:26:37,800 --> 00:26:38,460
+that won't be true.
+
+685
+00:26:42,500 --> 00:26:42,980
+What's that?
+
+686
+00:26:44,000 --> 00:26:44,800
+In general,
+
+687
+00:26:44,880 --> 00:26:45,060
+no,
+
+688
+00:26:45,060 --> 00:26:45,900
+it's not equal to that.
+
+689
+00:26:47,180 --> 00:26:48,760
+It may be equal to that
+
+690
+00:26:48,760 --> 00:26:49,680
+in a special case.
+
+691
+00:26:49,940 --> 00:26:51,120
+That's a special case,
+
+692
+00:26:51,740 --> 00:26:52,880
+but in general,
+
+693
+00:26:52,920 --> 00:26:53,440
+it's not true.
+
+694
+00:26:55,380 --> 00:26:55,900
+So,
+
+695
+00:26:55,900 --> 00:26:56,420
+yeah.
+
+696
+00:26:57,820 --> 00:26:59,420
+When you have one vector,
+
+697
+00:26:59,560 --> 00:27:00,640
+when you have one index,
+
+698
+00:27:00,880 --> 00:27:01,760
+you have vectors.
+
+699
+00:27:02,100 --> 00:27:03,680
+When you have two indexes,
+
+700
+00:27:03,680 --> 00:27:04,400
+does that correspond
+
+701
+00:27:04,400 --> 00:27:05,880
+to planes or anything?
+
+702
+00:27:06,200 --> 00:27:06,380
+Yeah,
+
+703
+00:27:06,380 --> 00:27:07,080
+it corresponds
+
+704
+00:27:07,080 --> 00:27:07,720
+to planes.
+
+705
+00:27:08,420 --> 00:27:08,940
+Yeah.
+
+706
+00:27:09,720 --> 00:27:10,240
+But,
+
+707
+00:27:17,260 --> 00:27:18,540
+sometimes it corresponds
+
+708
+00:27:18,540 --> 00:27:19,180
+to planes.
+
+709
+00:27:21,120 --> 00:27:22,560
+The tensor that we,
+
+710
+00:27:22,560 --> 00:27:24,340
+got a little bit familiar with
+
+711
+00:27:24,340 --> 00:27:24,960
+last time,
+
+712
+00:27:25,040 --> 00:27:26,000
+the rank two tensor,
+
+713
+00:27:26,240 --> 00:27:27,700
+was the metric tensor.
+
+714
+00:27:28,340 --> 00:27:29,980
+The metric tensor has
+
+715
+00:27:29,980 --> 00:27:31,000
+a geometric meaning.
+
+716
+00:27:31,520 --> 00:27:32,960
+It's simply related
+
+717
+00:27:32,960 --> 00:27:34,740
+to the distance between
+
+718
+00:27:34,740 --> 00:27:36,280
+neighboring points.
+
+719
+00:27:36,980 --> 00:27:38,740
+Neighboring points mean points
+
+720
+00:27:38,740 --> 00:27:39,580
+which are separated
+
+721
+00:27:44,360 --> 00:27:46,460
+by differential distances.
+
+722
+00:27:48,900 --> 00:27:49,740
+All right,
+
+723
+00:27:49,740 --> 00:27:50,480
+so if I have
+
+724
+00:27:50,480 --> 00:27:50,840
+a,
+
+725
+00:27:52,120 --> 00:27:54,200
+a set of differentials,
+
+726
+00:27:54,220 --> 00:27:54,900
+dxm,
+
+727
+00:27:55,720 --> 00:27:56,920
+and that corresponds
+
+728
+00:27:56,920 --> 00:27:58,480
+to two neighboring points,
+
+729
+00:27:58,680 --> 00:27:59,240
+and we can ask,
+
+730
+00:27:59,320 --> 00:27:59,800
+what's the difference,
+
+731
+00:27:59,900 --> 00:28:00,580
+what's the distance,
+
+732
+00:28:00,700 --> 00:28:01,900
+what's the distance between them?
+
+733
+00:28:02,420 --> 00:28:03,640
+The actual distance.
+
+734
+00:28:04,900 --> 00:28:06,680
+The distance between them,
+
+735
+00:28:06,720 --> 00:28:07,860
+squared,
+
+736
+00:28:07,980 --> 00:28:09,240
+it's called ds squared,
+
+737
+00:28:09,980 --> 00:28:11,240
+and it's given by
+
+738
+00:28:11,240 --> 00:28:12,000
+dxm,
+
+739
+00:28:12,000 --> 00:28:13,000
+dxn,
+
+740
+00:28:13,900 --> 00:28:15,480
+times the metric tensor,
+
+741
+00:28:16,220 --> 00:28:17,820
+gmn of x.
+
+742
+00:28:18,760 --> 00:28:19,700
+Now notice,
+
+743
+00:28:19,700 --> 00:28:21,000
+this is a special case
+
+744
+00:28:21,560 --> 00:28:23,720
+of the rule of contracting indices.
+
+745
+00:28:24,400 --> 00:28:26,420
+We've contracted m with m
+
+746
+00:28:26,420 --> 00:28:27,800
+and n with n.
+
+747
+00:28:28,000 --> 00:28:29,700
+There are no leftover indices.
+
+748
+00:28:30,500 --> 00:28:31,700
+This is a scalar.
+
+749
+00:28:32,920 --> 00:28:34,300
+Two contravariant indices,
+
+750
+00:28:34,560 --> 00:28:35,800
+two covariant indices,
+
+751
+00:28:37,120 --> 00:28:38,840
+and the metric tensor
+
+752
+00:28:38,840 --> 00:28:40,320
+is the object
+
+753
+00:28:41,200 --> 00:28:43,300
+which allows you to compute,
+
+754
+00:28:43,400 --> 00:28:44,140
+if you know it,
+
+755
+00:28:44,180 --> 00:28:44,500
+you know,
+
+756
+00:28:44,500 --> 00:28:45,040
+if you know it,
+
+757
+00:28:46,000 --> 00:28:47,640
+it allows you to compute
+
+758
+00:28:47,640 --> 00:28:48,100
+the,
+
+759
+00:28:48,100 --> 00:28:51,200
+the distance between neighboring points.
+
+760
+00:28:52,180 --> 00:28:52,740
+Now,
+
+761
+00:28:53,360 --> 00:28:55,020
+is g really a tensor?
+
+762
+00:28:55,360 --> 00:28:56,300
+Let's check.
+
+763
+00:28:56,820 --> 00:28:57,880
+To check,
+
+764
+00:28:57,880 --> 00:28:59,540
+we have to see how it transforms.
+
+765
+00:29:00,240 --> 00:29:00,900
+All right,
+
+766
+00:29:00,900 --> 00:29:01,740
+to see how it transforms,
+
+767
+00:29:01,840 --> 00:29:03,680
+we need to write the distance
+
+768
+00:29:03,680 --> 00:29:05,360
+between the same two points,
+
+769
+00:29:06,100 --> 00:29:08,660
+but instead of in x notation,
+
+770
+00:29:08,960 --> 00:29:10,580
+in y notation.
+
+771
+00:29:11,400 --> 00:29:11,960
+So,
+
+772
+00:29:11,960 --> 00:29:13,740
+all we need to do is write
+
+773
+00:29:13,740 --> 00:29:15,080
+that dxm
+
+774
+00:29:15,880 --> 00:29:17,460
+is equal to the derivative
+
+775
+00:29:17,460 --> 00:29:19,940
+of xm with respect to
+
+776
+00:29:19,940 --> 00:29:21,040
+yr,
+
+777
+00:29:22,360 --> 00:29:23,000
+dyr.
+
+778
+00:29:26,760 --> 00:29:27,400
+Right?
+
+779
+00:29:27,600 --> 00:29:29,080
+The change in xm
+
+780
+00:29:29,080 --> 00:29:29,820
+is just,
+
+781
+00:29:29,920 --> 00:29:32,420
+or the differential displacement in xm
+
+782
+00:29:32,420 --> 00:29:34,280
+is the derivative of xm
+
+783
+00:29:34,280 --> 00:29:35,280
+with respect to yr
+
+784
+00:29:35,280 --> 00:29:37,920
+times the differential displacement in y.
+
+785
+00:29:38,380 --> 00:29:39,800
+If I plug that in
+
+786
+00:29:39,800 --> 00:29:40,880
+for both x,
+
+787
+00:29:40,940 --> 00:29:42,280
+dxm and dxn,
+
+788
+00:29:42,520 --> 00:29:43,900
+what will I find?
+
+789
+00:29:44,040 --> 00:29:46,500
+I'll find that this is the derivative of xm
+
+790
+00:29:46,500 --> 00:29:47,440
+with respect to yr,
+
+791
+00:29:49,060 --> 00:29:50,300
+that's for this one,
+
+792
+00:29:50,380 --> 00:29:51,600
+and this one,
+
+793
+00:29:52,939 --> 00:29:53,580
+dxn
+
+794
+00:29:53,580 --> 00:29:55,280
+by dys
+
+795
+00:29:59,299 --> 00:30:00,580
+times gmn
+
+796
+00:30:02,139 --> 00:30:02,780
+times
+
+797
+00:30:10,260 --> 00:30:10,900
+dyr
+
+798
+00:30:10,900 --> 00:30:11,520
+dys
+
+799
+00:30:15,879 --> 00:30:16,660
+All right,
+
+800
+00:30:16,680 --> 00:30:17,120
+I've just
+
+801
+00:30:17,120 --> 00:30:17,440
+got
+
+802
+00:30:17,440 --> 00:30:18,580
+the derivative of xm
+
+803
+00:30:18,580 --> 00:30:19,180
+Here's gmn,
+
+804
+00:30:19,340 --> 00:30:20,280
+that's still there,
+
+805
+00:30:20,420 --> 00:30:21,480
+gmn of x,
+
+806
+00:30:22,879 --> 00:30:23,980
+that's still there.
+
+807
+00:30:24,680 --> 00:30:26,120
+dxm and dxn,
+
+808
+00:30:26,220 --> 00:30:27,720
+I've each replaced by
+
+809
+00:30:27,720 --> 00:30:28,620
+dx by dy
+
+810
+00:30:28,620 --> 00:30:30,280
+times the corresponding dy.
+
+811
+00:30:31,600 --> 00:30:32,840
+Each one of them,
+
+812
+00:30:32,900 --> 00:30:34,560
+dxm and dxn.
+
+813
+00:30:34,980 --> 00:30:35,940
+And now,
+
+814
+00:30:35,940 --> 00:30:37,360
+if I take this whole thing here,
+
+815
+00:30:39,120 --> 00:30:40,100
+and call it
+
+816
+00:30:41,320 --> 00:30:42,800
+grs of y,
+
+817
+00:30:45,280 --> 00:30:46,920
+then my formula reads,
+
+818
+00:30:47,440 --> 00:30:48,220
+that ds squared
+
+819
+00:30:50,320 --> 00:30:51,280
+is equal to
+
+820
+00:30:51,280 --> 00:30:52,240
+grs of y
+
+821
+00:30:53,239 --> 00:30:54,120
+dyr
+
+822
+00:30:54,120 --> 00:30:54,920
+dys
+
+823
+00:30:54,920 --> 00:30:57,660
+In other words,
+
+824
+00:30:57,660 --> 00:30:58,260
+we've discovered
+
+825
+00:30:58,260 --> 00:30:59,460
+that
+
+826
+00:30:59,460 --> 00:31:00,000
+g
+
+827
+00:31:00,000 --> 00:31:02,400
+in the y-coordinate system
+
+828
+00:31:02,400 --> 00:31:03,500
+is g
+
+829
+00:31:03,500 --> 00:31:05,200
+in the x-coordinate system
+
+830
+00:31:05,200 --> 00:31:07,560
+times these familiar factors,
+
+831
+00:31:07,940 --> 00:31:09,720
+which are the standard factors
+
+832
+00:31:09,720 --> 00:31:11,580
+for the transformation of
+
+833
+00:31:11,580 --> 00:31:13,360
+covariant indices.
+
+834
+00:31:14,240 --> 00:31:16,600
+So this is the simple illustration
+
+835
+00:31:16,600 --> 00:31:18,620
+that the metric tensor
+
+836
+00:31:18,620 --> 00:31:19,900
+is indeed a tensor.
+
+837
+00:31:21,080 --> 00:31:22,700
+If you express the distance
+
+838
+00:31:22,700 --> 00:31:24,360
+in either the x-coordinates
+
+839
+00:31:24,360 --> 00:31:25,360
+or the y-coordinates,
+
+840
+00:31:26,320 --> 00:31:27,380
+you'll wind up
+
+841
+00:31:27,380 --> 00:31:29,300
+with a grs of y
+
+842
+00:31:29,300 --> 00:31:30,380
+or a grs,
+
+843
+00:31:30,380 --> 00:31:31,680
+or a gmn of x,
+
+844
+00:31:31,900 --> 00:31:33,160
+and they are related
+
+845
+00:31:33,160 --> 00:31:35,360
+by this transformation property.
+
+846
+00:31:36,860 --> 00:31:37,420
+So,
+
+847
+00:31:37,540 --> 00:31:39,660
+that's the notion
+
+848
+00:31:40,280 --> 00:31:41,540
+of the metric tensor.
+
+849
+00:31:42,240 --> 00:31:43,760
+Now there's another important
+
+850
+00:31:43,760 --> 00:31:45,240
+thing that goes with
+
+851
+00:31:45,240 --> 00:31:46,040
+the metric tensor.
+
+852
+00:31:50,660 --> 00:31:52,800
+Second-rank tensors like this
+
+853
+00:31:52,800 --> 00:31:54,040
+are matrices.
+
+854
+00:31:54,320 --> 00:31:55,800
+They have two indices.
+
+855
+00:31:56,220 --> 00:31:57,100
+They are matrices.
+
+856
+00:31:57,720 --> 00:31:58,360
+g
+
+857
+00:31:59,840 --> 00:32:01,460
+Think of gmn
+
+858
+00:32:01,460 --> 00:32:04,120
+at an arbitrary point,
+
+859
+00:32:04,240 --> 00:32:05,760
+and I won't label the point.
+
+860
+00:32:05,940 --> 00:32:08,560
+It's a matrix.
+
+861
+00:32:08,920 --> 00:32:10,500
+I can put g11,
+
+862
+00:32:12,240 --> 00:32:12,960
+g12,
+
+863
+00:32:13,300 --> 00:32:14,200
+g13,
+
+864
+00:32:15,300 --> 00:32:16,020
+g21,
+
+865
+00:32:16,040 --> 00:32:17,180
+g22,
+
+866
+00:32:17,800 --> 00:32:18,400
+g23,
+
+867
+00:32:19,800 --> 00:32:20,400
+g31,
+
+868
+00:32:20,600 --> 00:32:20,920
+dot,
+
+869
+00:32:20,920 --> 00:32:21,160
+dot,
+
+870
+00:32:21,160 --> 00:32:21,340
+dot,
+
+871
+00:32:21,340 --> 00:32:21,980
+and so forth.
+
+872
+00:32:23,240 --> 00:32:24,240
+It's a matrix.
+
+873
+00:32:25,980 --> 00:32:27,160
+It's symmetric.
+
+874
+00:32:30,580 --> 00:32:31,480
+It's symmetric.
+
+875
+00:32:31,700 --> 00:32:33,440
+g12 is equal to g21.
+
+876
+00:32:37,700 --> 00:32:39,940
+And it has an inverse.
+
+877
+00:32:40,200 --> 00:32:41,680
+This is something you can prove.
+
+878
+00:32:43,140 --> 00:32:44,800
+Matrices have inverses.
+
+879
+00:32:44,860 --> 00:32:45,440
+What does it mean
+
+880
+00:32:45,440 --> 00:32:46,020
+that a matrix has inverses?
+
+881
+00:32:46,020 --> 00:32:46,800
+A matrix has an inverse.
+
+882
+00:32:47,180 --> 00:32:49,400
+It means there's another matrix
+
+883
+00:32:49,400 --> 00:32:50,960
+that you can multiply it by
+
+884
+00:32:50,960 --> 00:32:52,960
+to get the unit matrix.
+
+885
+00:32:53,540 --> 00:32:55,100
+What is the unit matrix
+
+886
+00:32:55,100 --> 00:32:56,080
+in this notation,
+
+887
+00:32:56,080 --> 00:32:56,800
+incidentally?
+
+888
+00:32:58,760 --> 00:33:00,800
+The unit matrix in this notation
+
+889
+00:33:02,380 --> 00:33:02,980
+is,
+
+890
+00:33:02,980 --> 00:33:03,520
+of course,
+
+891
+00:33:03,560 --> 00:33:06,300
+the matrix 1111
+
+892
+00:33:06,300 --> 00:33:07,480
+with all zeros.
+
+893
+00:33:13,120 --> 00:33:14,140
+That's the matrix,
+
+894
+00:33:14,140 --> 00:33:15,020
+which is...
+
+895
+00:33:15,620 --> 00:33:16,280
+It's what?
+
+896
+00:33:19,160 --> 00:33:19,700
+Yeah,
+
+897
+00:33:19,700 --> 00:33:20,320
+yeah,
+
+898
+00:33:20,320 --> 00:33:20,420
+yeah.
+
+899
+00:33:20,760 --> 00:33:21,300
+Well,
+
+900
+00:33:21,300 --> 00:33:22,600
+however many components there are.
+
+901
+00:33:22,740 --> 00:33:23,000
+Yeah.
+
+902
+00:33:23,380 --> 00:33:23,920
+Yeah.
+
+903
+00:33:24,220 --> 00:33:26,340
+The unit matrix is the matrix
+
+904
+00:33:27,420 --> 00:33:29,980
+which every component is either zero
+
+905
+00:33:29,980 --> 00:33:32,020
+if m is not equal to n
+
+906
+00:33:33,280 --> 00:33:35,740
+or one if m is equal to n.
+
+907
+00:33:36,380 --> 00:33:37,400
+In other words,
+
+908
+00:33:37,400 --> 00:33:38,180
+it's the matrix
+
+909
+00:33:39,040 --> 00:33:39,580
+representing
+
+910
+00:33:39,580 --> 00:33:42,960
+the Kronecker delta symbol.
+
+911
+00:33:44,258 --> 00:33:44,588
+دلتا
+
+912
+00:33:44,588 --> 00:33:44,918
+أمان
+
+913
+00:33:48,906 --> 00:33:51,686
+Should both be lower m and n though?
+
+914
+00:33:52,286 --> 00:33:53,146
+That's not right,
+
+915
+00:33:53,146 --> 00:33:53,486
+equals,
+
+916
+00:33:53,486 --> 00:33:54,046
+that's right.
+
+917
+00:33:55,826 --> 00:33:56,626
+Say it again?
+
+918
+00:33:57,886 --> 00:33:59,176
+Should the m and n
+
+919
+00:33:59,176 --> 00:34:00,466
+and the delta both be lower?
+
+920
+00:34:00,686 --> 00:34:01,046
+No.
+
+921
+00:34:02,806 --> 00:34:05,876
+The Kronecker delta in relativity theory always
+
+922
+00:34:05,876 --> 00:34:08,946
+has one index upper and one index lower.
+
+923
+00:34:10,926 --> 00:34:13,176
+If ever you have a formula with two
+
+924
+00:34:13,176 --> 00:34:15,426
+lower indices and it says delta m n,
+
+925
+00:34:15,426 --> 00:34:17,286
+either you're
+
+926
+00:34:17,286 --> 00:34:19,206
+doing something special and unusual
+
+927
+00:34:19,206 --> 00:34:21,126
+and not following the usual conventions,
+
+928
+00:34:21,126 --> 00:34:21,806
+which is
+
+929
+00:34:21,806 --> 00:34:22,005
+okay,
+
+930
+00:34:22,005 --> 00:34:22,666
+you're allowed to,
+
+931
+00:34:22,666 --> 00:34:24,626
+you're allowed to break conventions if you need to,
+
+932
+00:34:24,626 --> 00:34:28,206
+but it means
+
+933
+00:34:28,206 --> 00:34:30,246
+it's not associated with a tensor,
+
+934
+00:34:30,246 --> 00:34:31,686
+it's not a tensor operation.
+
+935
+00:34:32,806 --> 00:34:34,246
+So delta n m,
+
+936
+00:34:34,246 --> 00:34:36,906
+its components are also a tensor.
+
+937
+00:34:37,726 --> 00:34:38,266
+Now,
+
+938
+00:34:38,946 --> 00:34:43,386
+to say that there's another matrix,
+
+939
+00:34:43,386 --> 00:34:44,346
+let's call this matrix,
+
+940
+00:34:44,346 --> 00:34:45,446
+let's just call it g,
+
+941
+00:34:45,446 --> 00:34:46,706
+let's
+
+942
+00:34:46,706 --> 00:34:48,416
+not indicate any indices at all and
+
+943
+00:34:48,416 --> 00:34:50,126
+let's just think of it as a matrix.
+
+944
+00:34:51,126 --> 00:34:52,505
+There's another matrix,
+
+945
+00:34:52,505 --> 00:34:54,886
+which is the inverse matrix,
+
+946
+00:34:54,886 --> 00:34:58,006
+and the product of the two matrices
+
+947
+00:34:58,546 --> 00:34:59,926
+are the unit matrix.
+
+948
+00:35:05,606 --> 00:35:07,266
+In index notation,
+
+949
+00:35:07,266 --> 00:35:10,186
+to write that in index notation,
+
+950
+00:35:10,186 --> 00:35:11,766
+it's g,
+
+951
+00:35:11,766 --> 00:35:14,346
+let's call it,
+
+952
+00:35:14,346 --> 00:35:20,646
+let's call it r n,
+
+953
+00:35:20,646 --> 00:35:23,686
+g inverse,
+
+954
+00:35:25,326 --> 00:35:30,886
+and now m r.
+
+955
+00:35:36,186 --> 00:35:37,246
+Here's the matrix.
+
+956
+00:35:37,266 --> 00:35:37,646
+Here's the rule,
+
+957
+00:35:37,646 --> 00:35:41,386
+the standard rule for contracting indices.
+
+958
+00:35:42,506 --> 00:35:44,426
+Take a upper index here.
+
+959
+00:35:44,646 --> 00:35:47,786
+Now so far I haven't told you that the,
+
+960
+00:35:47,786 --> 00:35:48,806
+I'm telling you now,
+
+961
+00:35:48,806 --> 00:35:49,626
+the thing,
+
+962
+00:35:49,626 --> 00:35:51,006
+the inverse matrix
+
+963
+00:35:52,366 --> 00:35:53,646
+defines a tensor.
+
+964
+00:35:54,006 --> 00:35:56,946
+The components of the inverse matrix
+
+965
+00:35:56,946 --> 00:35:59,886
+define a tensor with upper indices,
+
+966
+00:35:59,886 --> 00:36:01,606
+with contravariant
+
+967
+00:36:01,606 --> 00:36:01,926
+indices.
+
+968
+00:36:02,146 --> 00:36:03,206
+This is not obvious.
+
+969
+00:36:03,746 --> 00:36:05,026
+This is not obvious.
+
+970
+00:36:05,166 --> 00:36:05,666
+It's a theorem.
+
+971
+00:36:05,946 --> 00:36:07,066
+I would look it up.
+
+972
+00:36:07,266 --> 00:36:08,226
+If you want,
+
+973
+00:36:08,226 --> 00:36:13,406
+look up the theorem that the inverse of the metric,
+
+974
+00:36:13,406 --> 00:36:15,046
+thought of as a matrix,
+
+975
+00:36:16,026 --> 00:36:18,606
+is itself also a tensor,
+
+976
+00:36:18,606 --> 00:36:20,356
+or also defines a set
+
+977
+00:36:20,356 --> 00:36:22,106
+of components which are tensor components.
+
+978
+00:36:22,966 --> 00:36:27,276
+Now this operation here of contracting r
+
+979
+00:36:27,276 --> 00:36:31,586
+and summing over r is matrix multiplication.
+
+980
+00:36:32,466 --> 00:36:35,026
+This is the process of matrix multiplication.
+
+981
+00:36:35,206 --> 00:36:36,626
+It gives another matrix.
+
+982
+00:36:36,626 --> 00:36:36,826
+It gives another matrix.
+
+983
+00:36:36,826 --> 00:36:37,906
+It's a matrix with an
+
+984
+00:36:37,906 --> 00:36:38,986
+index m and an index n.
+
+985
+00:36:39,666 --> 00:36:40,906
+I've summed over r.
+
+986
+00:36:41,166 --> 00:36:44,406
+The right hand side here is the identity matrix,
+
+987
+00:36:44,406 --> 00:36:45,826
+which is the Kronecker delta,
+
+988
+00:36:45,826 --> 00:36:48,166
+m n.
+
+989
+00:36:49,306 --> 00:36:52,626
+That's the definition of the inverse matrix here.
+
+990
+00:36:53,246 --> 00:36:56,516
+It's the thing which when you multiply it
+
+991
+00:36:56,516 --> 00:36:59,786
+by g with lower indices and then contract
+
+992
+00:36:59,786 --> 00:37:00,506
+one index,
+
+993
+00:37:00,506 --> 00:37:02,206
+you get the Kronecker delta.
+
+994
+00:37:03,546 --> 00:37:05,406
+Let's see if we can find it.
+
+995
+00:37:05,966 --> 00:37:06,606
+Okay.
+
+996
+00:37:06,626 --> 00:37:07,766
+First of all,
+
+997
+00:37:07,766 --> 00:37:08,166
+yeah,
+
+998
+00:37:08,166 --> 00:37:13,726
+let's take the polar coordinates.
+
+999
+00:37:15,766 --> 00:37:16,786
+Polar coordinates,
+
+1000
+00:37:16,786 --> 00:37:20,826
+we have the metric ds squared is equal
+
+1001
+00:37:20,826 --> 00:37:24,866
+to the r squared plus r squared sine
+
+1002
+00:37:24,866 --> 00:37:25,506
+squared theta.
+
+1003
+00:37:25,806 --> 00:37:26,206
+No,
+
+1004
+00:37:26,206 --> 00:37:26,506
+sorry,
+
+1005
+00:37:26,506 --> 00:37:27,746
+r squared d theta squared.
+
+1006
+00:37:35,346 --> 00:37:36,626
+All right,
+
+1007
+00:37:36,626 --> 00:37:39,326
+what's g11 in this case?
+
+1008
+00:37:41,486 --> 00:37:44,526
+Let's say r corresponds to the first coordinate,
+
+1009
+00:37:44,526 --> 00:37:46,766
+theta corresponds to the second coordinate.
+
+1010
+00:37:48,306 --> 00:37:49,306
+Just one.
+
+1011
+00:37:51,126 --> 00:37:52,746
+What about g22?
+
+1012
+00:37:55,006 --> 00:37:56,506
+r squared.
+
+1013
+00:37:56,666 --> 00:37:56,926
+r squared.
+
+1014
+00:37:56,966 --> 00:37:57,726
+r squared.
+
+1015
+00:37:59,326 --> 00:38:01,186
+No off-diagonal elements at all.
+
+1016
+00:38:01,706 --> 00:38:04,026
+This is gmn.
+
+1017
+00:38:05,006 --> 00:38:06,446
+What about its inverse?
+
+1018
+00:38:07,086 --> 00:38:09,766
+Its inverse in this case is very simple.
+
+1019
+00:38:09,986 --> 00:38:11,526
+When you have a diagonal matrix,
+
+1020
+00:38:11,526 --> 00:38:13,446
+if you have a diagonal matrix,
+
+1021
+00:38:13,446 --> 00:38:15,365
+its inverse...
+
+1022
+00:38:17,766 --> 00:38:18,586
+Say it again?
+
+1023
+00:38:19,266 --> 00:38:21,066
+I was wondering if it was r squared or r.
+
+1024
+00:38:21,346 --> 00:38:22,146
+r squared.
+
+1025
+00:38:22,466 --> 00:38:23,186
+r squared.
+
+1026
+00:38:23,346 --> 00:38:23,906
+Yep,
+
+1027
+00:38:23,906 --> 00:38:25,006
+it's r squared.
+
+1028
+00:38:26,486 --> 00:38:27,726
+You don't square d.
+
+1029
+00:38:27,746 --> 00:38:27,866
+You don't square g.
+
+1030
+00:38:30,706 --> 00:38:31,466
+Yeah,
+
+1031
+00:38:31,466 --> 00:38:37,686
+the components of the metric are already squared lengths.
+
+1032
+00:38:37,966 --> 00:38:40,066
+They already correspond to squared lengths.
+
+1033
+00:38:42,826 --> 00:38:44,846
+The inverse matrix,
+
+1034
+00:38:44,846 --> 00:38:48,286
+the matrix that's inverse to that
+
+1035
+00:38:48,286 --> 00:38:51,726
+is just 1 over r squared.
+
+1036
+00:38:56,926 --> 00:38:57,686
+So,
+
+1037
+00:38:57,686 --> 00:38:57,726
+what's g?
+
+1038
+00:38:58,886 --> 00:39:01,186
+If you multiply the two matrices together,
+
+1039
+00:39:01,186 --> 00:39:02,606
+you'll get the unit matrix.
+
+1040
+00:39:03,306 --> 00:39:06,596
+If you think of them as objects
+
+1041
+00:39:06,596 --> 00:39:09,886
+with indices and contract the r index,
+
+1042
+00:39:09,886 --> 00:39:11,446
+you'll get the Karmica
+
+1043
+00:39:11,446 --> 00:39:11,666
+delta.
+
+1044
+00:39:12,226 --> 00:39:13,086
+Try it out.
+
+1045
+00:39:13,126 --> 00:39:13,826
+Check it out.
+
+1046
+00:39:19,286 --> 00:39:22,386
+This inverse of the metric...
+
+1047
+00:39:23,606 --> 00:39:25,266
+I don't know that it has the next...
+
+1048
+00:39:25,266 --> 00:39:26,296
+I don't think it has
+
+1049
+00:39:26,296 --> 00:39:27,326
+a special name of its own.
+
+1050
+00:39:27,746 --> 00:39:31,566
+It's just called the metric with contravariant components.
+
+1051
+00:39:31,786 --> 00:39:33,586
+It's called the collection of
+
+1052
+00:39:33,586 --> 00:39:35,386
+contravariant components of the metric.
+
+1053
+00:39:35,706 --> 00:39:37,206
+If you know one of them,
+
+1054
+00:39:37,206 --> 00:39:37,926
+you know the other.
+
+1055
+00:39:38,066 --> 00:39:39,326
+If you know a matrix,
+
+1056
+00:39:39,326 --> 00:39:40,526
+you know its inverse.
+
+1057
+00:39:41,386 --> 00:39:44,006
+The inverse of the inverse is the original matrix.
+
+1058
+00:39:45,166 --> 00:39:48,716
+So knowledge of g with lower indices is
+
+1059
+00:39:48,716 --> 00:39:52,266
+equivalent to knowledge of g with upper indices.
+
+1060
+00:39:53,445 --> 00:39:54,346
+The theorem...
+
+1061
+00:39:54,346 --> 00:39:56,286
+And this is not a trivial theorem.
+
+1062
+00:39:57,425 --> 00:39:58,426
+The theorem is...
+
+1063
+00:39:58,426 --> 00:40:00,066
+And I'm not going to do it on the blackboard.
+
+1064
+00:40:00,286 --> 00:40:03,346
+The theorem is that the set of components
+
+1065
+00:40:03,346 --> 00:40:06,406
+of the inverse matrix are themselves a tensor.
+
+1066
+00:40:06,726 --> 00:40:09,726
+They're a tensor with contravariant components.
+
+1067
+00:40:10,546 --> 00:40:13,216
+So if you take the metric
+
+1068
+00:40:13,216 --> 00:40:15,886
+and you invert it as a matrix,
+
+1069
+00:40:15,886 --> 00:40:17,786
+it's a collection of components.
+
+1070
+00:40:18,186 --> 00:40:21,826
+Those components form a contravariant tensor.
+
+1071
+00:40:22,926 --> 00:40:25,566
+It's another representation of the metric.
+
+1072
+00:40:25,566 --> 00:40:27,566
+Since it has the same information in it,
+
+1073
+00:40:27,566 --> 00:40:29,986
+but it's just presented in a different way.
+
+1074
+00:40:30,366 --> 00:40:32,686
+Those two objects are fundamental.
+
+1075
+00:40:33,006 --> 00:40:35,526
+G with lower indices and g with upper indices.
+
+1076
+00:40:35,946 --> 00:40:39,366
+And we don't bother writing the inverse there.
+
+1077
+00:40:39,606 --> 00:40:42,446
+We just remember that when
+
+1078
+00:40:42,446 --> 00:40:45,286
+g is written with upper indices,
+
+1079
+00:40:45,286 --> 00:40:48,066
+it's the inverse matrix to
+
+1080
+00:40:48,066 --> 00:40:49,206
+the ones with lower indices.
+
+1081
+00:40:49,666 --> 00:40:51,426
+And so the identity...
+
+1082
+00:40:52,706 --> 00:40:53,326
+The...
+
+1083
+00:40:54,006 --> 00:40:55,506
+Identity in the sense of a...
+
+1084
+00:40:55,506 --> 00:40:55,546
+A...
+
+1085
+00:40:55,566 --> 00:40:55,826
+This is...
+
+1086
+00:40:55,826 --> 00:40:55,926
+This is the definition of the equation.
+
+1087
+00:40:58,666 --> 00:41:00,866
+GMRGRN is delta MN.
+
+1088
+00:41:01,026 --> 00:41:01,746
+This is,
+
+1089
+00:41:01,746 --> 00:41:03,526
+if you like,
+
+1090
+00:41:03,526 --> 00:41:09,666
+the definition of the object with contravariant components.
+
+1091
+00:41:10,745 --> 00:41:12,066
+It's a...
+
+1092
+00:41:12,925 --> 00:41:15,646
+Now its geometric meaning is a little more obscure.
+
+1093
+00:41:16,026 --> 00:41:19,886
+The geometric meaning of this object is clear.
+
+1094
+00:41:20,066 --> 00:41:22,126
+It has to do with the separation between points.
+
+1095
+00:41:22,686 --> 00:41:24,946
+This object you'll just get familiar with.
+
+1096
+00:41:24,946 --> 00:41:27,106
+You'll get to use it and
+
+1097
+00:41:27,106 --> 00:41:29,266
+you'll see it does some useful things.
+
+1098
+00:41:30,606 --> 00:41:31,206
+Alright,
+
+1099
+00:41:31,206 --> 00:41:33,416
+that's the idea of the metric tensor
+
+1100
+00:41:33,416 --> 00:41:35,626
+and its inverse or the metric tensor with
+
+1101
+00:41:35,626 --> 00:41:37,806
+covariant indices and the
+
+1102
+00:41:37,806 --> 00:41:39,986
+metric tensor with contravariant indices.
+
+1103
+00:41:41,746 --> 00:41:45,516
+Now once you have this
+
+1104
+00:41:45,516 --> 00:41:49,286
+metric in covariant and contravariant form,
+
+1105
+00:41:49,286 --> 00:41:51,146
+you can start playing
+
+1106
+00:41:51,146 --> 00:41:55,226
+games and write mappings that
+
+1107
+00:41:55,226 --> 00:41:59,306
+relate covariant and contravariant vectors.
+
+1108
+00:42:00,006 --> 00:42:01,006
+In fact,
+
+1109
+00:42:01,006 --> 00:42:04,636
+you can define for every covariant vector
+
+1110
+00:42:04,636 --> 00:42:08,266
+or for every set of covariant components,
+
+1111
+00:42:08,526 --> 00:42:12,766
+you can define a set of contravariant components
+
+1112
+00:42:12,766 --> 00:42:17,006
+and think of it as contravariant and covariant
+
+1113
+00:42:17,006 --> 00:42:18,505
+components of the same vector.
+
+1114
+00:42:18,906 --> 00:42:19,865
+Here's the rule.
+
+1115
+00:42:20,106 --> 00:42:20,615
+If I give a set of
+
+1116
+00:42:20,615 --> 00:42:21,125
+contravariant components of the same vector,
+
+1117
+00:42:21,125 --> 00:42:21,125
+I can define a set of
+
+1118
+00:42:21,125 --> 00:42:21,206
+covariant components of the same vector.
+
+1119
+00:42:21,206 --> 00:42:23,095
+If I give a set of
+
+1120
+00:42:23,095 --> 00:42:24,985
+contravariant components of the same vector,
+
+1121
+00:42:24,985 --> 00:42:24,985
+I can define a set of
+
+1122
+00:42:24,985 --> 00:42:26,666
+covariant components of the same vector.
+
+1123
+00:42:26,666 --> 00:42:28,906
+I can construct from it,
+
+1124
+00:42:28,906 --> 00:42:32,206
+from it together with the metric tensor.
+
+1125
+00:42:32,406 --> 00:42:32,646
+Well,
+
+1126
+00:42:32,646 --> 00:42:34,066
+let's start with contravariant.
+
+1127
+00:42:34,106 --> 00:42:35,426
+Let's start with contravariant.
+
+1128
+00:42:36,546 --> 00:42:39,746
+I can construct from it and the
+
+1129
+00:42:39,746 --> 00:42:42,946
+metric an object with a lower index.
+
+1130
+00:42:45,946 --> 00:42:50,286
+By multiplying it by GMN and summing over M,
+
+1131
+00:42:50,286 --> 00:42:51,106
+I can get a set of covariant components
+
+1132
+00:42:51,106 --> 00:42:51,506
+of the same vector.
+
+1133
+00:42:51,506 --> 00:42:52,846
+That gives me a new thing,
+
+1134
+00:42:52,846 --> 00:42:57,006
+which I'll call V sub N.
+
+1135
+00:42:59,726 --> 00:43:02,686
+If I know V with
+
+1136
+00:43:02,686 --> 00:43:05,646
+superscript and I know the metric,
+
+1137
+00:43:05,646 --> 00:43:07,086
+let's say the metric is given.
+
+1138
+00:43:07,226 --> 00:43:08,926
+The metric is given knowledge.
+
+1139
+00:43:09,726 --> 00:43:11,826
+It's a piece of the geometry of space.
+
+1140
+00:43:12,386 --> 00:43:14,686
+If I know V and I know G,
+
+1141
+00:43:14,686 --> 00:43:17,676
+then I can reconstruct a
+
+1142
+00:43:17,676 --> 00:43:20,666
+corresponding set of components with lower
+
+1143
+00:43:20,666 --> 00:43:20,946
+indices.
+
+1144
+00:43:21,926 --> 00:43:24,796
+You can just think of this as the representation
+
+1145
+00:43:24,796 --> 00:43:27,666
+of the same vector except with a lower index.
+
+1146
+00:43:28,266 --> 00:43:28,826
+Now,
+
+1147
+00:43:28,826 --> 00:43:30,526
+what is the connection between them really?
+
+1148
+00:43:30,926 --> 00:43:31,926
+I'll tell you now.
+
+1149
+00:43:32,006 --> 00:43:33,416
+The connection between them is what
+
+1150
+00:43:33,416 --> 00:43:34,826
+I told you in the first place.
+
+1151
+00:43:34,906 --> 00:43:39,366
+The connection between these two things is if
+
+1152
+00:43:39,366 --> 00:43:43,826
+VM are the set of coefficients that you
+
+1153
+00:43:43,826 --> 00:43:46,446
+multiply by unit vectors and sum them up.
+
+1154
+00:43:47,506 --> 00:43:48,066
+Think about it.
+
+1155
+00:43:50,086 --> 00:43:50,646
+I'm going to do a little bit of math here.
+
+1156
+00:43:50,646 --> 00:43:51,686
+If you get the vector V,
+
+1157
+00:43:51,686 --> 00:43:55,936
+if you think of these Vs here
+
+1158
+00:43:55,936 --> 00:44:00,186
+as defining a vector by adding up
+
+1159
+00:44:00,186 --> 00:44:03,046
+the Vs times unit vectors,
+
+1160
+00:44:03,046 --> 00:44:07,626
+then the Vs with lower components are,
+
+1161
+00:44:07,626 --> 00:44:08,746
+as I told you in the
+
+1162
+00:44:08,746 --> 00:44:09,106
+beginning,
+
+1163
+00:44:09,106 --> 00:44:13,206
+the covariant components of the same vector.
+
+1164
+00:44:13,406 --> 00:44:14,266
+In other words,
+
+1165
+00:44:14,266 --> 00:44:16,126
+the projections onto the axes.
+
+1166
+00:44:17,046 --> 00:44:18,736
+These are the set of coefficients
+
+1167
+00:44:18,736 --> 00:44:20,426
+that you use to expand the vector.
+
+1168
+00:44:20,646 --> 00:44:26,326
+These are the set of orthogonal projections onto the axes.
+
+1169
+00:44:26,666 --> 00:44:29,706
+So they're really representations of the same object,
+
+1170
+00:44:29,706 --> 00:44:31,566
+two different representations,
+
+1171
+00:44:31,566 --> 00:44:32,166
+and
+
+1172
+00:44:32,166 --> 00:44:33,326
+they're related in this form.
+
+1173
+00:44:35,146 --> 00:44:35,726
+Question?
+
+1174
+00:44:36,046 --> 00:44:36,166
+Yeah.
+
+1175
+00:44:36,706 --> 00:44:40,086
+Going back to the other blackboard,
+
+1176
+00:44:40,086 --> 00:44:43,526
+can't there be tensors that don't have inverses?
+
+1177
+00:44:43,906 --> 00:44:44,626
+There are,
+
+1178
+00:44:44,626 --> 00:44:46,586
+but the metric tensor is never one of them.
+
+1179
+00:44:46,806 --> 00:44:47,386
+Oh,
+
+1180
+00:44:47,386 --> 00:44:47,646
+okay.
+
+1181
+00:44:48,246 --> 00:44:48,826
+Yeah.
+
+1182
+00:44:50,046 --> 00:44:50,626
+Okay.
+
+1183
+00:44:55,346 --> 00:44:56,586
+Let's not prove that now.
+
+1184
+00:44:57,686 --> 00:45:01,776
+It follows from the fact that G is
+
+1185
+00:45:01,776 --> 00:45:05,866
+symmetric and that there are no directions in which
+
+1186
+00:45:05,866 --> 00:45:14,306
+the vector has no length at all,
+
+1187
+00:45:14,306 --> 00:45:17,426
+or no zero eigenvalues of the metric.
+
+1188
+00:45:18,466 --> 00:45:19,026
+Right.
+
+1189
+00:45:19,126 --> 00:45:19,986
+But that's a good question.
+
+1190
+00:45:19,986 --> 00:45:20,706
+It's a fair question.
+
+1191
+00:45:21,326 --> 00:45:23,946
+Let's just take it as a rule
+
+1192
+00:45:23,946 --> 00:45:26,566
+that the metric tensor always has an inverse.
+
+1193
+00:45:26,946 --> 00:45:27,646
+And we'll see.
+
+1194
+00:45:28,226 --> 00:45:29,186
+I'll come back to it.
+
+1195
+00:45:29,266 --> 00:45:31,166
+I'll prove it for you another day.
+
+1196
+00:45:31,246 --> 00:45:32,146
+I hadn't thought about it,
+
+1197
+00:45:32,146 --> 00:45:34,486
+but it's an easy thing to prove.
+
+1198
+00:45:34,706 --> 00:45:34,826
+Yeah.
+
+1199
+00:45:34,886 --> 00:45:36,986
+Is that also true in the
+
+1200
+00:45:36,986 --> 00:45:39,086
+bubble statistic where you have minus?
+
+1201
+00:45:39,266 --> 00:45:39,626
+Yeah,
+
+1202
+00:45:39,626 --> 00:45:40,006
+it is.
+
+1203
+00:45:40,086 --> 00:45:40,646
+It is.
+
+1204
+00:45:40,726 --> 00:45:41,286
+It is.
+
+1205
+00:45:41,306 --> 00:45:41,826
+It's still true.
+
+1206
+00:45:41,966 --> 00:45:42,186
+Yeah.
+
+1207
+00:45:42,386 --> 00:45:43,526
+On the upper board there,
+
+1208
+00:45:43,526 --> 00:45:44,846
+it can be shown.
+
+1209
+00:45:44,926 --> 00:45:45,426
+On the left.
+
+1210
+00:45:45,446 --> 00:45:46,266
+The upper board on the left.
+
+1211
+00:45:46,386 --> 00:45:47,466
+It can be shown,
+
+1212
+00:45:47,466 --> 00:45:47,766
+right?
+
+1213
+00:45:47,946 --> 00:45:48,126
+Yeah.
+
+1214
+00:45:48,126 --> 00:45:50,986
+The ds squares are the same regardless of the coordinates.
+
+1215
+00:45:51,226 --> 00:45:51,586
+Yeah.
+
+1216
+00:45:51,706 --> 00:45:52,866
+The distance is in fact the same.
+
+1217
+00:45:53,146 --> 00:45:53,586
+Wait,
+
+1218
+00:45:53,586 --> 00:45:53,986
+say that again.
+
+1219
+00:45:54,126 --> 00:45:54,926
+The distance,
+
+1220
+00:45:54,926 --> 00:45:57,166
+the ds would be the same regardless of the coordinates.
+
+1221
+00:45:57,226 --> 00:45:57,326
+Yeah.
+
+1222
+00:45:57,906 --> 00:45:59,246
+It's not obvious in the expression,
+
+1223
+00:45:59,246 --> 00:46:00,346
+but I assume it can be shown.
+
+1224
+00:46:03,266 --> 00:46:03,706
+Wait.
+
+1225
+00:46:04,706 --> 00:46:06,306
+That the ds squares are the same?
+
+1226
+00:46:06,506 --> 00:46:08,896
+The ds squared is the same whether you
+
+1227
+00:46:08,896 --> 00:46:11,286
+compute it with the gmn or the gr.
+
+1228
+00:46:11,426 --> 00:46:11,526
+No,
+
+1229
+00:46:11,526 --> 00:46:11,786
+that's...
+
+1230
+00:46:13,006 --> 00:46:16,546
+That is where we got the...
+
+1231
+00:46:16,546 --> 00:46:18,106
+We assumed that to find the...
+
+1232
+00:46:18,106 --> 00:46:19,616
+We assumed that to find the relationship
+
+1233
+00:46:19,616 --> 00:46:21,126
+between gmn of x and grs of y.
+
+1234
+00:46:24,806 --> 00:46:25,746
+In other words,
+
+1235
+00:46:25,746 --> 00:46:30,306
+I simply took this and rewrote it in this way.
+
+1236
+00:46:30,866 --> 00:46:32,066
+It's really the same equation.
+
+1237
+00:46:32,106 --> 00:46:33,106
+It's really the same equation.
+
+1238
+00:46:33,346 --> 00:46:33,866
+Yeah.
+
+1239
+00:46:34,346 --> 00:46:38,376
+Given that the g's are related as they
+
+1240
+00:46:38,376 --> 00:46:42,406
+have to be related by tensor transformation properties.
+
+1241
+00:46:43,166 --> 00:46:43,686
+Yeah.
+
+1242
+00:46:43,826 --> 00:46:44,346
+Yeah.
+
+1243
+00:46:49,665 --> 00:46:50,586
+All right,
+
+1244
+00:46:50,586 --> 00:46:53,326
+so let's see what it would mean for
+
+1245
+00:46:53,326 --> 00:46:56,066
+them to not be symmetric and then see
+
+1246
+00:46:56,066 --> 00:46:56,286
+why.
+
+1247
+00:46:56,566 --> 00:46:58,126
+The answer is it doesn't matter whether
+
+1248
+00:46:58,126 --> 00:46:59,686
+you're choosing to be symmetric or not,
+
+1249
+00:46:59,686 --> 00:47:00,126
+but let's
+
+1250
+00:47:00,126 --> 00:47:00,446
+see why.
+
+1251
+00:47:01,386 --> 00:47:02,006
+All right.
+
+1252
+00:47:04,566 --> 00:47:06,746
+What does g12 multiply?
+
+1253
+00:47:09,165 --> 00:47:11,466
+G12 multiplies dx1 dx2,
+
+1254
+00:47:11,466 --> 00:47:11,726
+right?
+
+1255
+00:47:12,966 --> 00:47:14,326
+What does g21 number?
+
+1256
+00:47:14,326 --> 00:47:15,046
+multiply,
+
+1257
+00:47:15,046 --> 00:47:19,686
+multiplies dx2 dx1.
+
+1258
+00:47:19,686 --> 00:47:24,726
+But really what that means is that the only thing
+
+1259
+00:47:24,726 --> 00:47:29,876
+that comes in when you calculate ds
+
+1260
+00:47:29,876 --> 00:47:35,026
+squared is g12 plus g21 dx1 dx2.
+
+1261
+00:47:36,266 --> 00:47:41,306
+Only the combination g12 plus g21 enters into anything.
+
+1262
+00:47:41,306 --> 00:47:43,466
+That means you can
+
+1263
+00:47:43,466 --> 00:47:46,016
+take g21 and g12 to be equal
+
+1264
+00:47:46,016 --> 00:47:48,566
+to each other and sort of divide it
+
+1265
+00:47:48,566 --> 00:47:50,326
+symmetrically between the x1.
+
+1266
+00:47:50,326 --> 00:47:53,886
+There's a piece in the metric which has dx1
+
+1267
+00:47:53,886 --> 00:47:55,206
+multiplying dx2.
+
+1268
+00:47:55,206 --> 00:47:57,936
+You could call it all coming
+
+1269
+00:47:57,936 --> 00:48:00,666
+from g12 if you like or you
+
+1270
+00:48:00,666 --> 00:48:02,956
+could all call it all coming from
+
+1271
+00:48:02,956 --> 00:48:05,246
+g21 but the convention is to split it
+
+1272
+00:48:05,246 --> 00:48:07,786
+equally between g12 and g21
+
+1273
+00:48:07,786 --> 00:48:10,326
+and therefore make the g symmetric.
+
+1274
+00:48:10,326 --> 00:48:12,126
+So it's
+
+1275
+00:48:12,126 --> 00:48:13,446
+partly a convention but it's not a convention.
+
+1276
+00:48:13,466 --> 00:48:14,566
+It's a useful convention.
+
+1277
+00:48:18,906 --> 00:48:19,546
+And,
+
+1278
+00:48:19,546 --> 00:48:20,186
+right.
+
+1279
+00:48:22,386 --> 00:48:24,846
+So the general rule would be that
+
+1280
+00:48:24,846 --> 00:48:27,306
+g12 is not the same thing as g21?
+
+1281
+00:48:28,746 --> 00:48:31,126
+You could imagine generalizing things
+
+1282
+00:48:31,126 --> 00:48:33,506
+that way but then the difference,
+
+1283
+00:48:33,506 --> 00:48:36,766
+the non-symmetric piece would never come into anything.
+
+1284
+00:48:37,906 --> 00:48:38,546
+Right?
+
+1285
+00:48:40,066 --> 00:48:43,446
+Supposing g12 and g21 were the negative of each other.
+
+1286
+00:48:43,926 --> 00:48:45,586
+Then this would just cancel out.
+
+1287
+00:48:46,126 --> 00:48:47,666
+You'd say you just wrote
+
+1288
+00:48:47,666 --> 00:48:49,206
+something redundant that you didn't need.
+
+1289
+00:48:50,826 --> 00:48:53,736
+So there's no loss of generality in taking it to be
+
+1290
+00:48:53,736 --> 00:48:56,646
+symmetric but you don't have to take it to be symmetric.
+
+1291
+00:48:57,706 --> 00:48:59,476
+If you don't take it to be
+
+1292
+00:48:59,476 --> 00:49:01,246
+symmetric it's not clear there's always an inverse.
+
+1293
+00:49:03,086 --> 00:49:04,046
+Matrices with,
+
+1294
+00:49:04,046 --> 00:49:07,656
+well I'll come back to the
+
+1295
+00:49:07,656 --> 00:49:11,266
+question of the inverse next time.
+
+1296
+00:49:11,666 --> 00:49:12,686
+I don't want to interrupt.
+
+1297
+00:49:12,686 --> 00:49:14,926
+I don't want to interrupt it right now.
+
+1298
+00:49:16,566 --> 00:49:17,326
+Okay,
+
+1299
+00:49:17,326 --> 00:49:22,326
+so the metric allows you to play new games where
+
+1300
+00:49:22,326 --> 00:49:27,326
+you take tensors and shift the index from upstairs to downstairs.
+
+1301
+00:49:27,786 --> 00:49:30,886
+And think of them as the same
+
+1302
+00:49:30,886 --> 00:49:33,986
+object except covariant components and contravariant components.
+
+1303
+00:49:34,106 --> 00:49:37,466
+It allows you to find a one
+
+1304
+00:49:37,466 --> 00:49:40,826
+to one correspondence between a set of
+
+1305
+00:49:41,906 --> 00:49:42,666
+contravariant components and contravariant components.
+
+1306
+00:49:43,726 --> 00:49:45,946
+And a set of covariant components.
+
+1307
+00:49:46,886 --> 00:49:48,646
+And you're free to think of them as
+
+1308
+00:49:48,646 --> 00:49:50,406
+the same thing since they have the same information.
+
+1309
+00:49:50,686 --> 00:49:51,166
+Incidentally,
+
+1310
+00:49:51,166 --> 00:49:56,986
+you can solve this equation for the upper components.
+
+1311
+00:49:57,246 --> 00:49:58,826
+This is the lower components written
+
+1312
+00:49:58,826 --> 00:50:00,406
+in terms of the upper components.
+
+1313
+00:50:00,906 --> 00:50:03,946
+See if you can prove using the property,
+
+1314
+00:50:03,946 --> 00:50:05,526
+where is it?
+
+1315
+00:50:06,866 --> 00:50:10,506
+Using only the property that g,
+
+1316
+00:50:10,506 --> 00:50:11,466
+what is it?
+
+1317
+00:50:11,466 --> 00:50:18,786
+m r g r n equals delta r n.
+
+1318
+00:50:23,366 --> 00:50:24,046
+Oh,
+
+1319
+00:50:24,046 --> 00:50:24,726
+sorry.
+
+1320
+00:50:26,026 --> 00:50:26,966
+M and n.
+
+1321
+00:50:27,666 --> 00:50:28,566
+M and n.
+
+1322
+00:50:32,146 --> 00:50:34,026
+See if you can prove,
+
+1323
+00:50:34,026 --> 00:50:35,146
+it's very straight forward,
+
+1324
+00:50:35,146 --> 00:50:38,206
+that you can solve this as
+
+1325
+00:50:38,206 --> 00:50:41,266
+v m equals g m n.
+
+1326
+00:50:41,266 --> 00:50:42,536
+And you can solve this as v
+
+1327
+00:50:42,536 --> 00:50:43,806
+n with upper index times v n.
+
+1328
+00:50:46,686 --> 00:50:48,086
+Really all it is,
+
+1329
+00:50:48,086 --> 00:50:50,866
+is another way of writing in matrix language,
+
+1330
+00:50:50,866 --> 00:50:53,046
+it would be g times,
+
+1331
+00:50:53,046 --> 00:50:53,606
+ah,
+
+1332
+00:50:53,606 --> 00:50:54,366
+do it,
+
+1333
+00:50:54,366 --> 00:50:54,925
+do it,
+
+1334
+00:50:54,925 --> 00:50:55,486
+do it,
+
+1335
+00:50:55,486 --> 00:50:56,026
+do it.
+
+1336
+00:50:56,145 --> 00:50:59,086
+It follows immediately from this equation over here.
+
+1337
+00:50:59,986 --> 00:51:00,586
+Okay.
+
+1338
+00:51:04,426 --> 00:51:05,026
+Right.
+
+1339
+00:51:07,966 --> 00:51:08,566
+Yeah.
+
+1340
+00:51:09,386 --> 00:51:11,236
+All you have to do is
+
+1341
+00:51:11,236 --> 00:51:13,086
+take v n from this equation,
+
+1342
+00:51:13,086 --> 00:51:14,286
+plug it into here,
+
+1343
+00:51:14,286 --> 00:51:15,896
+and you'll get an identity
+
+1344
+00:51:15,896 --> 00:51:17,506
+that v m equals v m.
+
+1345
+00:51:17,626 --> 00:51:18,106
+You do it.
+
+1346
+00:51:19,066 --> 00:51:19,666
+Okay.
+
+1347
+00:51:19,806 --> 00:51:22,636
+So you can go back and forth symmetrically
+
+1348
+00:51:22,636 --> 00:51:25,466
+between things with upper indices and lower indices.
+
+1349
+00:51:25,926 --> 00:51:28,256
+And the process is called
+
+1350
+00:51:28,256 --> 00:51:30,586
+raising and lowering indices of tensors.
+
+1351
+00:51:31,906 --> 00:51:35,006
+So every tensor has multiple tensors.
+
+1352
+00:51:35,026 --> 00:51:39,196
+And there are multiple identities in which you can
+
+1353
+00:51:39,196 --> 00:51:43,366
+raise and lower any of the indices at will.
+
+1354
+00:51:43,486 --> 00:51:44,226
+Keep track of them.
+
+1355
+00:51:44,306 --> 00:51:45,856
+Keep track of which ones you've
+
+1356
+00:51:45,856 --> 00:51:47,406
+lowered and which ones you've raised.
+
+1357
+00:51:48,526 --> 00:51:49,506
+For example,
+
+1358
+00:51:49,506 --> 00:51:52,866
+if I have a general tensor t m n,
+
+1359
+00:51:52,866 --> 00:51:56,446
+I can raise the index m.
+
+1360
+00:51:56,706 --> 00:51:57,806
+How would I do that?
+
+1361
+00:51:57,966 --> 00:52:05,006
+I would multiply it by g m r n.
+
+1362
+00:52:06,126 --> 00:52:07,636
+I would multiply it by
+
+1363
+00:52:07,636 --> 00:52:09,146
+g m r t r n.
+
+1364
+00:52:11,146 --> 00:52:13,886
+I've taken the first index,
+
+1365
+00:52:13,886 --> 00:52:16,006
+the first index on the left here,
+
+1366
+00:52:16,006 --> 00:52:18,096
+and I've applied the trick to
+
+1367
+00:52:18,096 --> 00:52:20,186
+the first index to raise it.
+
+1368
+00:52:20,406 --> 00:52:21,666
+And what does this give me?
+
+1369
+00:52:21,846 --> 00:52:23,706
+This gives me an object that
+
+1370
+00:52:23,706 --> 00:52:25,566
+I can call t m n.
+
+1371
+00:52:27,306 --> 00:52:30,046
+So I can raise and lower the indices.
+
+1372
+00:52:36,546 --> 00:52:37,466
+And of course,
+
+1373
+00:52:37,466 --> 00:52:39,346
+the objects that you get are
+
+1374
+00:52:39,346 --> 00:52:41,226
+different when you raise and lower them,
+
+1375
+00:52:41,226 --> 00:52:44,536
+but they're collections of objects which have
+
+1376
+00:52:44,536 --> 00:52:47,846
+the same content as the original starting ones,
+
+1377
+00:52:47,846 --> 00:52:50,126
+since you can go back and forth freely between them.
+
+1378
+00:52:52,426 --> 00:52:53,086
+All right.
+
+1379
+00:52:53,106 --> 00:52:55,546
+That's the sense in which vectors have an identity.
+
+1380
+00:52:55,546 --> 00:52:57,926
+That's the sense in which a
+
+1381
+00:52:57,926 --> 00:53:00,306
+vector has both covariant and contravariant indices.
+
+1382
+00:53:02,366 --> 00:53:02,946
+All right.
+
+1383
+00:53:02,966 --> 00:53:07,746
+That's basic tensor arithmetic.
+
+1384
+00:53:11,046 --> 00:53:12,606
+Tensor algebra,
+
+1385
+00:53:12,606 --> 00:53:14,006
+I guess one would say.
+
+1386
+00:53:16,326 --> 00:53:17,186
+Upper indices,
+
+1387
+00:53:17,186 --> 00:53:18,266
+lower indices,
+
+1388
+00:53:18,266 --> 00:53:22,526
+transformation properties of the indices,
+
+1389
+00:53:22,526 --> 00:53:25,526
+and the metric tensor that allows you to do this.
+
+1390
+00:53:25,546 --> 00:53:27,006
+And that allows you to raise and lower indices.
+
+1391
+00:53:29,386 --> 00:53:30,186
+Let's,
+
+1392
+00:53:30,186 --> 00:53:30,986
+yeah.
+
+1393
+00:53:35,166 --> 00:53:36,466
+In particular,
+
+1394
+00:53:36,466 --> 00:53:39,726
+take the object dx m.
+
+1395
+00:53:40,146 --> 00:53:43,826
+That stands for a little interval dx.
+
+1396
+00:53:44,526 --> 00:53:45,786
+A little vector.
+
+1397
+00:53:46,486 --> 00:53:48,166
+I can assign it,
+
+1398
+00:53:48,166 --> 00:53:50,796
+and it's natural to think of
+
+1399
+00:53:50,796 --> 00:53:53,426
+the little interval as having contravariant components.
+
+1400
+00:53:54,426 --> 00:53:55,226
+But,
+
+1401
+00:53:55,546 --> 00:53:59,006
+you could also define an object dx sub m,
+
+1402
+00:53:59,006 --> 00:54:00,706
+the same vector,
+
+1403
+00:54:00,706 --> 00:54:05,906
+by writing it as g m n dx n.
+
+1404
+00:54:06,446 --> 00:54:09,346
+The natural thing to define to
+
+1405
+00:54:09,346 --> 00:54:12,246
+start with is the contravariant components.
+
+1406
+00:54:12,406 --> 00:54:14,086
+Those are just the little intervals dx.
+
+1407
+00:54:15,046 --> 00:54:19,386
+But then nothing prevents you from constructing
+
+1408
+00:54:19,386 --> 00:54:23,726
+the covariant version of the same object.
+
+1409
+00:54:24,046 --> 00:54:25,286
+And this is the way you would do it.
+
+1410
+00:54:26,066 --> 00:54:26,626
+Now,
+
+1411
+00:54:26,626 --> 00:54:30,316
+before I told you earlier that if you have
+
+1412
+00:54:30,316 --> 00:54:34,006
+an upper index and a lower index in a tensor,
+
+1413
+00:54:34,006 --> 00:54:35,026
+you can contract them.
+
+1414
+00:54:35,526 --> 00:54:38,186
+So let's take a new tensor.
+
+1415
+00:54:38,346 --> 00:54:39,906
+Let's take a tensor which
+
+1416
+00:54:39,906 --> 00:54:41,466
+has an upper and lower index.
+
+1417
+00:54:42,006 --> 00:54:44,696
+And it's made just by
+
+1418
+00:54:44,696 --> 00:54:47,386
+multiplying dx m by dx n.
+
+1419
+00:54:50,126 --> 00:54:52,696
+That is now an object
+
+1420
+00:54:52,696 --> 00:54:55,266
+with indices of x and y.
+
+1421
+00:54:57,946 --> 00:54:58,766
+It's a tensor.
+
+1422
+00:55:00,146 --> 00:55:01,806
+And now I want to
+
+1423
+00:55:01,806 --> 00:55:03,466
+contract the index m with n.
+
+1424
+00:55:04,706 --> 00:55:08,266
+And get dx m dx m.
+
+1425
+00:55:12,146 --> 00:55:15,406
+What happens when you take a tensor with two indices,
+
+1426
+00:55:15,406 --> 00:55:16,706
+one upper and one lower,
+
+1427
+00:55:16,706 --> 00:55:17,606
+and you contract them?
+
+1428
+00:55:17,726 --> 00:55:18,066
+What do you get?
+
+1429
+00:55:18,906 --> 00:55:19,686
+A scalar.
+
+1430
+00:55:20,126 --> 00:55:21,746
+So this object is a scalar.
+
+1431
+00:55:21,846 --> 00:55:23,006
+But now let's rewrite it.
+
+1432
+00:55:23,586 --> 00:55:25,246
+Let's rewrite it by using the tensor.
+
+1433
+00:55:25,246 --> 00:55:27,776
+So we're saying that dx with the
+
+1434
+00:55:27,776 --> 00:55:30,306
+lower m is g m n dx n.
+
+1435
+00:55:30,546 --> 00:55:34,606
+That means that this object here is dx m.
+
+1436
+00:55:37,406 --> 00:55:38,126
+Well,
+
+1437
+00:55:38,126 --> 00:55:39,866
+let's change.
+
+1438
+00:55:40,546 --> 00:55:41,266
+Yeah,
+
+1439
+00:55:41,266 --> 00:55:43,446
+let's write it this way.
+
+1440
+00:55:43,566 --> 00:55:43,726
+n.
+
+1441
+00:55:44,226 --> 00:55:44,946
+Yeah,
+
+1442
+00:55:44,946 --> 00:55:45,166
+no,
+
+1443
+00:55:45,166 --> 00:55:45,746
+it was right.
+
+1444
+00:55:46,946 --> 00:55:47,866
+dx m.
+
+1445
+00:55:49,526 --> 00:55:54,366
+It's clearly dx m dx n g m n.
+
+1446
+00:55:58,126 --> 00:56:01,806
+This object is just a dx with the lower index.
+
+1447
+00:56:04,006 --> 00:56:06,206
+I lowered the index of dx n.
+
+1448
+00:56:06,406 --> 00:56:07,086
+That's here.
+
+1449
+00:56:07,226 --> 00:56:08,906
+And I multiply it by another dx.
+
+1450
+00:56:09,446 --> 00:56:13,036
+So what is this object with one
+
+1451
+00:56:13,036 --> 00:56:16,626
+dx m upper and one dx lower contracted?
+
+1452
+00:56:17,346 --> 00:56:19,566
+It's g m n dx m dx n.
+
+1453
+00:56:19,646 --> 00:56:19,886
+What is that?
+
+1454
+00:56:21,306 --> 00:56:22,346
+It's the s squared.
+
+1455
+00:56:22,626 --> 00:56:24,306
+It's the distance between them.
+
+1456
+00:56:26,486 --> 00:56:30,526
+So by using the metric tensor to lower the index,
+
+1457
+00:56:30,666 --> 00:56:33,686
+you can write the distance formula in two distinct ways.
+
+1458
+00:56:34,646 --> 00:56:36,946
+You can write it g
+
+1459
+00:56:36,946 --> 00:56:39,246
+m n dx m dx n.
+
+1460
+00:56:39,726 --> 00:56:43,566
+Or you can just write it dx m dx m.
+
+1461
+00:56:44,226 --> 00:56:45,886
+One lower and one upper.
+
+1462
+00:56:46,146 --> 00:56:47,046
+Same thing.
+
+1463
+00:56:47,986 --> 00:56:49,926
+This is a little more condensed.
+
+1464
+00:56:50,646 --> 00:56:52,266
+This is a little more explicit.
+
+1465
+00:56:57,206 --> 00:56:59,866
+Would you go back over that first equation you wrote,
+
+1466
+00:56:59,926 --> 00:57:02,426
+dx m superscript and then subscript?
+
+1467
+00:57:03,006 --> 00:57:03,246
+Here?
+
+1468
+00:57:03,526 --> 00:57:03,866
+Yes.
+
+1469
+00:57:03,866 --> 00:57:05,226
+And you ended up making those equal.
+
+1470
+00:57:05,966 --> 00:57:06,486
+Sorry.
+
+1471
+00:57:07,306 --> 00:57:08,386
+I didn't mean to write equals.
+
+1472
+00:57:09,126 --> 00:57:14,866
+I just meant it goes to by contracting the indices.
+
+1473
+00:57:16,566 --> 00:57:18,626
+I did not mean to write an equation.
+
+1474
+00:57:19,186 --> 00:57:21,016
+I simply meant that you could
+
+1475
+00:57:21,016 --> 00:57:22,846
+contract the index m and n
+
+1476
+00:57:22,846 --> 00:57:25,886
+and construct the x with superscript,
+
+1477
+00:57:26,046 --> 00:57:27,766
+the x with a subscript,
+
+1478
+00:57:27,806 --> 00:57:29,086
+and this is a scalar.
+
+1479
+00:57:30,426 --> 00:57:32,026
+This doesn't transform.
+
+1480
+00:57:32,486 --> 00:57:34,046
+It's an invariant quantity.
+
+1481
+00:57:34,626 --> 00:57:37,506
+Whereas the things that it was built out of transformed,
+
+1482
+00:57:37,746 --> 00:57:41,106
+but then you contracted the index and got a scalar.
+
+1483
+00:57:42,506 --> 00:57:44,306
+So there's two distinct ways.
+
+1484
+00:57:45,666 --> 00:57:46,506
+In fact,
+
+1485
+00:57:46,506 --> 00:57:51,346
+there's another way that you could write the metric.
+
+1486
+00:57:51,346 --> 00:57:54,006
+Another way you could write it.
+
+1487
+00:57:54,086 --> 00:57:58,706
+A third way is to write two lower indices,
+
+1488
+00:57:59,326 --> 00:58:00,266
+dx m,
+
+1489
+00:58:00,266 --> 00:58:00,986
+dx n,
+
+1490
+00:58:00,986 --> 00:58:03,586
+and then what would I have to multiply it by?
+
+1491
+00:58:06,306 --> 00:58:07,986
+G with upper indices.
+
+1492
+00:58:08,806 --> 00:58:09,366
+Indeed.
+
+1493
+00:58:11,146 --> 00:58:13,566
+That's also equal to the same thing.
+
+1494
+00:58:14,706 --> 00:58:16,326
+They're all equal to each other,
+
+1495
+00:58:16,426 --> 00:58:20,486
+and they're all equal to the distance between the points.
+
+1496
+00:58:20,486 --> 00:58:20,746
+Okay.
+
+1497
+00:58:20,746 --> 00:58:22,746
+The points which are
+
+1498
+00:58:22,746 --> 00:58:24,746
+separated by the differential displacements,
+
+1499
+00:58:25,366 --> 00:58:25,786
+the x.
+
+1500
+00:58:26,926 --> 00:58:27,626
+All right.
+
+1501
+00:58:27,646 --> 00:58:31,126
+That's the basic idea of the metric and simple.
+
+1502
+00:58:31,346 --> 00:58:34,306
+What's the significance of the Gs in that relationship?
+
+1503
+00:58:35,206 --> 00:58:35,766
+Where?
+
+1504
+00:58:36,486 --> 00:58:37,286
+Say it again.
+
+1505
+00:58:37,866 --> 00:58:40,226
+That you could do the orthogonal projections now.
+
+1506
+00:58:40,266 --> 00:58:41,686
+Is there PC in those terms?
+
+1507
+00:58:42,586 --> 00:58:45,406
+The GMN in the top equation and the bottom equation.
+
+1508
+00:58:46,026 --> 00:58:46,766
+Lower board.
+
+1509
+00:58:47,026 --> 00:58:47,546
+Yeah.
+
+1510
+00:58:47,706 --> 00:58:48,266
+GMN.
+
+1511
+00:58:48,286 --> 00:58:48,726
+Yeah.
+
+1512
+00:58:48,966 --> 00:58:50,726
+Is there any correlation between those?
+
+1513
+00:58:50,746 --> 00:58:51,566
+The upper and the lower.
+
+1514
+00:58:54,166 --> 00:58:54,566
+Here?
+
+1515
+00:58:54,706 --> 00:58:55,126
+The G,
+
+1516
+00:58:55,126 --> 00:58:55,786
+GMN.
+
+1517
+00:58:55,926 --> 00:58:56,246
+Yeah.
+
+1518
+00:58:56,346 --> 00:58:58,046
+And then the GMN in the third equation.
+
+1519
+00:58:58,866 --> 00:58:59,266
+Oh,
+
+1520
+00:58:59,266 --> 00:59:00,406
+they're all summation indices,
+
+1521
+00:59:00,446 --> 00:59:02,266
+so it doesn't matter what you call them.
+
+1522
+00:59:03,006 --> 00:59:03,406
+Yeah.
+
+1523
+00:59:03,826 --> 00:59:05,086
+As long as they're summed over,
+
+1524
+00:59:05,266 --> 00:59:06,866
+it doesn't matter what you call them.
+
+1525
+00:59:09,126 --> 00:59:11,726
+But is there a relationship in the values of them?
+
+1526
+00:59:11,946 --> 00:59:13,866
+Like are they like inverses or ?
+
+1527
+00:59:14,886 --> 00:59:15,286
+Well,
+
+1528
+00:59:15,286 --> 00:59:17,446
+this is the inverse matrix to this.
+
+1529
+00:59:17,646 --> 00:59:18,946
+So you have to know
+
+1530
+00:59:18,946 --> 00:59:20,246
+how to construct inverses of matrices.
+
+1531
+00:59:20,246 --> 00:59:21,396
+All right?
+
+1532
+00:59:21,986 --> 00:59:23,866
+For simple diagonal matrices,
+
+1533
+00:59:23,866 --> 00:59:25,246
+the inverses are easy.
+
+1534
+00:59:25,366 --> 00:59:27,906
+You just turn the entries upside down.
+
+1535
+00:59:28,426 --> 00:59:30,586
+For things of off-diagonal elements,
+
+1536
+00:59:30,586 --> 00:59:31,566
+it's more complicated,
+
+1537
+00:59:31,766 --> 00:59:34,806
+and you have to consult the book
+
+1538
+00:59:34,806 --> 00:59:37,846
+or use a computer program or whatever.
+
+1539
+00:59:38,826 --> 00:59:40,006
+And in particular,
+
+1540
+00:59:40,006 --> 00:59:41,846
+for 4x4 matrices,
+
+1541
+00:59:41,846 --> 00:59:43,746
+it's no picnic.
+
+1542
+00:59:48,446 --> 00:59:49,986
+For 2x2 matrices,
+
+1543
+00:59:49,986 --> 00:59:50,226
+it's no picnic.
+
+1544
+00:59:50,226 --> 00:59:50,766
+It's always easy.
+
+1545
+00:59:53,246 --> 00:59:53,786
+But...
+
+1546
+00:59:59,406 --> 00:59:59,946
+Good.
+
+1547
+01:00:00,126 --> 01:00:00,406
+All right.
+
+1548
+01:00:00,446 --> 01:00:05,466
+So that takes us through tensor arithmetic,
+
+1549
+01:00:05,466 --> 01:00:08,386
+tensor algebra.
+
+1550
+01:00:09,106 --> 01:00:09,646
+Incidentally,
+
+1551
+01:00:09,646 --> 01:00:12,326
+there are some other operations you can do with tensors
+
+1552
+01:00:12,326 --> 01:00:13,606
+that may give you tensors.
+
+1553
+01:00:13,646 --> 01:00:15,776
+I haven't exhausted all the operations that
+
+1554
+01:00:15,776 --> 01:00:17,906
+you can do that give you tensors.
+
+1555
+01:00:18,066 --> 01:00:19,606
+You can add tensors.
+
+1556
+01:00:21,026 --> 01:00:22,586
+Add two tensors.
+
+1557
+01:00:22,666 --> 01:00:23,466
+But when you do,
+
+1558
+01:00:23,466 --> 01:00:24,846
+you had better make sure
+
+1559
+01:00:24,846 --> 01:00:26,226
+they're tensors of the same type.
+
+1560
+01:00:26,866 --> 01:00:27,966
+In other words,
+
+1561
+01:00:27,966 --> 01:00:30,166
+you would not want to add...
+
+1562
+01:00:36,826 --> 01:00:40,586
+Tmn plus Wmn.
+
+1563
+01:00:42,146 --> 01:00:43,506
+That's a nonsense expression.
+
+1564
+01:00:43,786 --> 01:00:45,986
+It has no distinct transformation properties.
+
+1565
+01:00:46,366 --> 01:00:47,826
+This transforms one way.
+
+1566
+01:00:47,906 --> 01:00:49,046
+This transforms the other way.
+
+1567
+01:00:49,046 --> 01:00:50,406
+For example,
+
+1568
+01:00:50,406 --> 01:00:52,506
+if this happened to be
+
+1569
+01:00:52,506 --> 01:00:54,606
+zero in one set of coordinates,
+
+1570
+01:00:54,986 --> 01:00:57,926
+it might not be zero in another set of coordinates
+
+1571
+01:00:57,926 --> 01:01:00,436
+because the t's with the lower
+
+1572
+01:01:00,436 --> 01:01:02,946
+indices don't transform the same way.
+
+1573
+01:01:04,106 --> 01:01:07,386
+If a tensor is zero,
+
+1574
+01:01:07,386 --> 01:01:11,286
+if its components are all zero in one coordinate system,
+
+1575
+01:01:11,686 --> 01:01:14,026
+there's zero in all coordinate systems.
+
+1576
+01:01:14,686 --> 01:01:15,846
+Why is that?
+
+1577
+01:01:15,846 --> 01:01:18,926
+Let's just look at the sorts of things...
+
+1578
+01:01:21,566 --> 01:01:22,346
+Well,
+
+1579
+01:01:22,346 --> 01:01:25,066
+that's because if we have a
+
+1580
+01:01:25,066 --> 01:01:27,786
+tensor with any number of indices
+
+1581
+01:01:27,786 --> 01:01:32,446
+upstairs and downstairs in the y coordinates,
+
+1582
+01:01:32,826 --> 01:01:36,766
+it is equal to a bunch of dx's
+
+1583
+01:01:36,766 --> 01:01:40,706
+times dy's and dy's times dx's of various kinds
+
+1584
+01:01:40,706 --> 01:01:44,726
+times the corresponding tensor in the x coordinates.
+
+1585
+01:01:47,465 --> 01:01:49,646
+If it's zero on one side,
+
+1586
+01:01:49,646 --> 01:01:51,366
+it's zero on the other side.
+
+1587
+01:01:52,206 --> 01:01:54,506
+So if a tensor is zero,
+
+1588
+01:01:54,506 --> 01:01:55,106
+in other words,
+
+1589
+01:01:55,106 --> 01:01:57,946
+a tensor being zero means all of its components,
+
+1590
+01:01:58,086 --> 01:02:00,766
+if all of its components are zero,
+
+1591
+01:02:01,805 --> 01:02:05,246
+then it follows they are zero in every coordinate system.
+
+1592
+01:02:06,006 --> 01:02:08,316
+So a tensor being zero is
+
+1593
+01:02:08,316 --> 01:02:10,626
+an invariant statement about that tensor.
+
+1594
+01:02:12,025 --> 01:02:14,546
+Another way to say the same thing...
+
+1595
+01:02:15,846 --> 01:02:17,506
+perhaps it's saying something a little different,
+
+1596
+01:02:17,506 --> 01:02:18,566
+but almost the same thing,
+
+1597
+01:02:18,726 --> 01:02:20,506
+is that if two tensors
+
+1598
+01:02:20,506 --> 01:02:22,286
+are equal in one coordinate system,
+
+1599
+01:02:22,966 --> 01:02:24,706
+let's say t equals w,
+
+1600
+01:02:24,706 --> 01:02:26,686
+m,
+
+1601
+01:02:26,686 --> 01:02:30,626
+n in the x coordinates.
+
+1602
+01:02:32,486 --> 01:02:33,686
+That also says,
+
+1603
+01:02:33,686 --> 01:02:34,126
+of course,
+
+1604
+01:02:34,126 --> 01:02:36,926
+that the difference between them is equal to zero.
+
+1605
+01:02:37,806 --> 01:02:39,686
+Then the difference is going to
+
+1606
+01:02:39,686 --> 01:02:41,566
+be zero in every coordinate system,
+
+1607
+01:02:41,806 --> 01:02:43,516
+which means that the tensors
+
+1608
+01:02:43,516 --> 01:02:45,226
+are equal in every coordinate system.
+
+1609
+01:02:45,846 --> 01:02:49,186
+So once you prove a tensor relationship,
+
+1610
+01:02:50,625 --> 01:02:53,586
+namely that the left-hand side of an equation
+
+1611
+01:02:53,586 --> 01:02:55,846
+is equal to the right-hand side of an equation
+
+1612
+01:02:55,846 --> 01:02:57,846
+in one set of coordinates,
+
+1613
+01:02:58,246 --> 01:03:00,686
+it's true in every set of coordinates.
+
+1614
+01:03:01,606 --> 01:03:05,046
+That's one of the powerful things about tensors,
+
+1615
+01:03:05,666 --> 01:03:10,506
+that it allows you to make statements such as
+
+1616
+01:03:10,506 --> 01:03:11,926
+one thing is equal to another,
+
+1617
+01:03:13,545 --> 01:03:14,826
+although each...
+
+1618
+01:03:15,965 --> 01:03:18,125
+side of the equation
+
+1619
+01:03:18,125 --> 01:03:20,286
+may have complicated transformation properties,
+
+1620
+01:03:20,806 --> 01:03:22,856
+you can be assured that
+
+1621
+01:03:22,856 --> 01:03:24,906
+both before and after the transformation,
+
+1622
+01:03:25,266 --> 01:03:26,546
+they will remain equal.
+
+1623
+01:03:26,886 --> 01:03:28,966
+That may not have come out right.
+
+1624
+01:03:29,406 --> 01:03:31,356
+You can be sure that if
+
+1625
+01:03:31,356 --> 01:03:33,306
+they are equal in one coordinate system,
+
+1626
+01:03:33,546 --> 01:03:35,266
+they will be equal in the other coordinate system.
+
+1627
+01:03:35,526 --> 01:03:37,926
+That's part of the power of...
+
+1628
+01:03:42,626 --> 01:03:44,506
+The equality of tensors
+
+1629
+01:03:44,506 --> 01:03:46,506
+is a geometric fact which
+
+1630
+01:03:46,506 --> 01:03:48,506
+doesn't depend on the coordinate system.
+
+1631
+01:03:48,786 --> 01:03:50,666
+The components of the tensors
+
+1632
+01:03:50,666 --> 01:03:53,586
+are things which do depend on the coordinate system.
+
+1633
+01:03:55,745 --> 01:03:56,406
+Okay,
+
+1634
+01:03:56,406 --> 01:03:58,706
+now let's take a little bit of a break
+
+1635
+01:03:58,706 --> 01:04:01,306
+and then come to tensor calculus,
+
+1636
+01:04:02,646 --> 01:04:06,226
+which is harder than tensor arithmetic and tensor algebra.
+
+1637
+01:04:08,006 --> 01:04:09,526
+I was going to start
+
+1638
+01:04:10,646 --> 01:04:13,286
+the subject that I call tensor calculus,
+
+1639
+01:04:14,966 --> 01:04:18,566
+which means the study of how you differentiate tensors.
+
+1640
+01:04:20,366 --> 01:04:21,006
+Of course,
+
+1641
+01:04:21,006 --> 01:04:22,506
+you can just differentiate them,
+
+1642
+01:04:23,466 --> 01:04:25,646
+but then it's not clear that you get tensors
+
+1643
+01:04:25,646 --> 01:04:27,806
+when you differentiate the components of a tensor,
+
+1644
+01:04:27,966 --> 01:04:29,126
+and in fact you don't.
+
+1645
+01:04:29,446 --> 01:04:33,226
+You have to do something smarter than just differentiate
+
+1646
+01:04:33,226 --> 01:04:36,106
+the components of the tensor to get the component.
+
+1647
+01:04:37,586 --> 01:04:39,926
+The derivatives of the components of tensors
+
+1648
+01:04:39,926 --> 01:04:43,066
+are not ordinarily components of tensors.
+
+1649
+01:04:43,246 --> 01:04:44,226
+Does that make sense?
+
+1650
+01:04:45,746 --> 01:04:47,506
+The derivatives of components
+
+1651
+01:04:47,506 --> 01:04:50,806
+are not themselves components of tensors.
+
+1652
+01:04:52,166 --> 01:04:52,706
+Hmm?
+
+1653
+01:04:54,586 --> 01:04:55,126
+Position.
+
+1654
+01:04:55,126 --> 01:04:56,146
+Xs.
+
+1655
+01:04:56,146 --> 01:04:57,066
+Xs.
+
+1656
+01:04:58,126 --> 01:05:03,706
+But I think I won't do that now.
+
+1657
+01:05:04,666 --> 01:05:07,326
+I think instead we'll do that next time,
+
+1658
+01:05:07,486 --> 01:05:09,926
+and I think I would like to get to space-time.
+
+1659
+01:05:10,266 --> 01:05:11,566
+We've been talking about space,
+
+1660
+01:05:11,566 --> 01:05:11,966
+space,
+
+1661
+01:05:11,966 --> 01:05:12,266
+space,
+
+1662
+01:05:12,446 --> 01:05:14,386
+and we have not been talking about relatives.
+
+1663
+01:05:14,506 --> 01:05:14,686
+We've been talking about relativity.
+
+1664
+01:05:14,686 --> 01:05:15,726
+We've been talking about space.
+
+1665
+01:05:16,466 --> 01:05:19,246
+So I think we're all set up in a way
+
+1666
+01:05:19,246 --> 01:05:27,446
+that allows us to jump straight into space-time.
+
+1667
+01:05:30,166 --> 01:05:33,286
+And then somebody asked me what the meaning of saying
+
+1668
+01:05:33,286 --> 01:05:34,846
+that the universe is expanding,
+
+1669
+01:05:34,846 --> 01:05:35,766
+what does that mean,
+
+1670
+01:05:36,046 --> 01:05:38,666
+and I think we can probably do that yet tonight,
+
+1671
+01:05:41,686 --> 01:05:43,986
+once we introduce the idea of space-time.
+
+1672
+01:05:46,126 --> 01:05:46,566
+Now,
+
+1673
+01:05:46,566 --> 01:05:48,166
+to introduce the idea of space-time,
+
+1674
+01:05:48,366 --> 01:05:50,226
+we have to go back to special relativity.
+
+1675
+01:06:03,005 --> 01:06:07,246
+Special relativity is a subject that you can learn,
+
+1676
+01:06:08,346 --> 01:06:09,506
+and you can learn in three days.
+
+1677
+01:06:10,106 --> 01:06:12,106
+I assume that we all know it,
+
+1678
+01:06:12,166 --> 01:06:13,386
+and if not,
+
+1679
+01:06:13,386 --> 01:06:16,666
+we can all learn it quickly.
+
+1680
+01:06:18,686 --> 01:06:19,646
+I think we...
+
+1681
+01:06:21,146 --> 01:06:22,486
+If you've been in my class,
+
+1682
+01:06:22,566 --> 01:06:24,766
+you've taken special relativity a couple of times already,
+
+1683
+01:06:24,906 --> 01:06:26,246
+at least two times,
+
+1684
+01:06:26,246 --> 01:06:26,806
+maybe more,
+
+1685
+01:06:26,966 --> 01:06:28,656
+and I'm going to assume
+
+1686
+01:06:28,656 --> 01:06:30,346
+that you have a basic understanding
+
+1687
+01:06:30,866 --> 01:06:32,306
+of Lorentz transformations.
+
+1688
+01:06:35,166 --> 01:06:36,726
+But even if not,
+
+1689
+01:06:38,646 --> 01:06:41,856
+I think we're set up in a
+
+1690
+01:06:41,856 --> 01:06:45,066
+manner that allows us to sort of
+
+1691
+01:06:45,986 --> 01:06:47,486
+make quick work of it.
+
+1692
+01:06:52,666 --> 01:06:53,246
+First,
+
+1693
+01:06:53,246 --> 01:06:55,566
+let me just make some remarks about ordinary space.
+
+1694
+01:06:59,346 --> 01:07:00,816
+Even if I am only going
+
+1695
+01:07:00,816 --> 01:07:02,286
+to use the term ordinary space,
+
+1696
+01:07:02,286 --> 01:07:05,526
+even if I am not interested in curvilinear coordinates,
+
+1697
+01:07:06,286 --> 01:07:07,466
+or curved space,
+
+1698
+01:07:07,766 --> 01:07:10,626
+all I'm interested in now is Cartesian coordinates,
+
+1699
+01:07:11,826 --> 01:07:16,286
+there are still more than one Cartesian coordinate system
+
+1700
+01:07:16,286 --> 01:07:18,866
+that we can use to describe space.
+
+1701
+01:07:20,286 --> 01:07:21,586
+Even if I don't even...
+
+1702
+01:07:21,586 --> 01:07:24,026
+Even if I place the origin of coordinates,
+
+1703
+01:07:24,146 --> 01:07:26,066
+nail it to the center of someplace,
+
+1704
+01:07:26,546 --> 01:07:28,086
+there's my origin of coordinates,
+
+1705
+01:07:28,406 --> 01:07:31,106
+I still have not fully specified
+
+1706
+01:07:31,106 --> 01:07:34,686
+a set of coordinates by saying they're Cartesian.
+
+1707
+01:07:35,326 --> 01:07:37,346
+Here's a set of Cartesian coordinates.
+
+1708
+01:07:39,726 --> 01:07:40,926
+Here's another set.
+
+1709
+01:07:41,486 --> 01:07:42,066
+Well,
+
+1710
+01:07:42,066 --> 01:07:43,886
+I meant to place the origin
+
+1711
+01:07:44,566 --> 01:07:47,846
+at the intersection of the axes.
+
+1712
+01:07:48,686 --> 01:07:49,786
+Here's another set.
+
+1713
+01:07:55,886 --> 01:07:57,086
+Can that be seen?
+
+1714
+01:08:00,125 --> 01:08:01,326
+Let me...
+
+1715
+01:08:04,965 --> 01:08:08,206
+And they're just related by rotation of the coordinates,
+
+1716
+01:08:08,206 --> 01:08:08,706
+of course.
+
+1717
+01:08:09,985 --> 01:08:14,606
+Rotation of Cartesian coordinates is a special case
+
+1718
+01:08:14,606 --> 01:08:18,626
+of transformations between x coordinates and y coordinates.
+
+1719
+01:08:19,025 --> 01:08:20,575
+Another thing you can do
+
+1720
+01:08:20,575 --> 01:08:22,126
+is translate the coordinate systems,
+
+1721
+01:08:22,746 --> 01:08:23,985
+keep them parallel,
+
+1722
+01:08:23,985 --> 01:08:26,545
+but translate their locations.
+
+1723
+01:08:27,086 --> 01:08:28,965
+Those are also coordinate transformations.
+
+1724
+01:08:29,505 --> 01:08:32,606
+In neither case do they correspond to curved coordinates,
+
+1725
+01:08:32,866 --> 01:08:33,866
+curvilinear coordinates,
+
+1726
+01:08:34,225 --> 01:08:36,406
+but they are coordinate transformations.
+
+1727
+01:08:37,586 --> 01:08:38,345
+And...
+
+1728
+01:08:41,085 --> 01:08:42,835
+All of the rules we've
+
+1729
+01:08:42,835 --> 01:08:44,586
+set up up till now hold.
+
+1730
+01:08:44,966 --> 01:08:46,595
+The only thing is that
+
+1731
+01:08:46,595 --> 01:08:48,225
+in all of these coordinate systems,
+
+1732
+01:08:48,685 --> 01:08:51,586
+the metric tensor has the same form.
+
+1733
+01:08:51,966 --> 01:08:55,966
+The metric tensor is just the Kronecker delta.
+
+1734
+01:08:57,086 --> 01:08:57,926
+In other words,
+
+1735
+01:08:57,926 --> 01:09:00,286
+ds squared...
+
+1736
+01:09:01,765 --> 01:09:04,586
+Let's talk about two dimensions for a moment.
+
+1737
+01:09:04,946 --> 01:09:07,466
+It's just equal to dx1 squared
+
+1738
+01:09:09,326 --> 01:09:11,166
+plus dx2 squared.
+
+1739
+01:09:12,606 --> 01:09:16,206
+That's the same as saying that the metric tensor gmn
+
+1740
+01:09:17,706 --> 01:09:20,526
+is equal to the Kronecker delta,
+
+1741
+01:09:20,526 --> 01:09:21,626
+delta mn.
+
+1742
+01:09:21,786 --> 01:09:22,466
+Now,
+
+1743
+01:09:22,466 --> 01:09:24,386
+I said that,
+
+1744
+01:09:24,386 --> 01:09:26,506
+strictly speaking,
+
+1745
+01:09:26,506 --> 01:09:30,326
+delta mn with both of its indices lower
+
+1746
+01:09:30,326 --> 01:09:32,685
+is not a good tensor object.
+
+1747
+01:09:33,066 --> 01:09:35,345
+It is a good tensor if only...
+
+1748
+01:09:35,345 --> 01:09:37,616
+If all we're doing is translating
+
+1749
+01:09:37,616 --> 01:09:39,886
+between one set of Cartesian coordinates
+
+1750
+01:09:39,886 --> 01:09:40,685
+and another.
+
+1751
+01:09:41,526 --> 01:09:43,286
+For curvilinear coordinates,
+
+1752
+01:09:43,845 --> 01:09:45,946
+this equation would be nonsense,
+
+1753
+01:09:46,486 --> 01:09:49,496
+but if we're just
+
+1754
+01:09:49,496 --> 01:09:52,506
+translating between Cartesian coordinate systems,
+
+1755
+01:09:52,566 --> 01:09:54,726
+just rotating them or translating them,
+
+1756
+01:09:54,726 --> 01:09:58,626
+then in every such coordinate system,
+
+1757
+01:09:59,006 --> 01:10:02,266
+the metric is just dx1 squared plus dx2 squared,
+
+1758
+01:10:02,426 --> 01:10:10,746
+which I can also write as delta mn dxm dxn.
+
+1759
+01:10:12,866 --> 01:10:14,586
+In Cartesian coordinates,
+
+1760
+01:10:14,586 --> 01:10:16,106
+there's no difference between
+
+1761
+01:10:16,106 --> 01:10:18,226
+upper indices and lower indices.
+
+1762
+01:10:18,466 --> 01:10:19,286
+They're the same things.
+
+1763
+01:10:19,626 --> 01:10:21,846
+So there's a lot of simplification.
+
+1764
+01:10:22,466 --> 01:10:24,706
+But there's another way to do it.
+
+1765
+01:10:24,726 --> 01:10:25,426
+There's another way to say this,
+
+1766
+01:10:25,466 --> 01:10:27,186
+that the transformations,
+
+1767
+01:10:27,226 --> 01:10:29,946
+the class of transformations that takes you
+
+1768
+01:10:29,946 --> 01:10:32,006
+from one coordinate system to another
+
+1769
+01:10:32,456 --> 01:10:36,646
+are the transformations which preserve the form
+
+1770
+01:10:37,946 --> 01:10:39,766
+of the interval,
+
+1771
+01:10:40,006 --> 01:10:42,646
+preserve the form of the length,
+
+1772
+01:10:42,786 --> 01:10:44,726
+preserve the form of Pythagoras'
+
+1773
+01:10:44,946 --> 01:10:45,306
+theorem.
+
+1774
+01:10:47,066 --> 01:10:48,486
+That the s squared,
+
+1775
+01:10:48,786 --> 01:10:52,426
+the length of an interval is dx squared.
+
+1776
+01:10:52,566 --> 01:10:54,006
+And what happens if I have more components,
+
+1777
+01:10:54,726 --> 01:10:55,326
+more than mn,
+
+1778
+01:10:56,306 --> 01:10:57,986
+dx3 squared and so forth?
+
+1779
+01:10:59,546 --> 01:11:02,846
+So the ordinary transformations that you can do
+
+1780
+01:11:02,846 --> 01:11:05,226
+on Cartesian coordinates are the transformations
+
+1781
+01:11:05,226 --> 01:11:09,786
+which preserve the form of the simple
+
+1782
+01:11:11,466 --> 01:11:14,566
+sums of dx squared as the length interval.
+
+1783
+01:11:15,446 --> 01:11:17,086
+Now let me come to space-time.
+
+1784
+01:11:25,646 --> 01:11:26,986
+As you know,
+
+1785
+01:11:26,986 --> 01:11:28,446
+and if you don't,
+
+1786
+01:11:28,446 --> 01:11:29,406
+you better find out quickly,
+
+1787
+01:11:32,086 --> 01:11:37,106
+space-time has four coordinates.
+
+1788
+01:11:37,426 --> 01:11:39,246
+It's a four-dimensional space.
+
+1789
+01:11:39,666 --> 01:11:41,926
+One of the coordinates is time.
+
+1790
+01:11:43,146 --> 01:11:43,806
+Incidentally,
+
+1791
+01:11:43,806 --> 01:11:45,926
+we are always going to work
+
+1792
+01:11:46,726 --> 01:11:48,636
+in units in which the speed
+
+1793
+01:11:48,636 --> 01:11:50,546
+of light is equal to one.
+
+1794
+01:11:55,186 --> 01:11:55,866
+Now,
+
+1795
+01:11:55,866 --> 01:11:59,746
+there's a notion in special relativity
+
+1796
+01:12:00,426 --> 01:12:02,946
+of the proper time,
+
+1797
+01:12:03,506 --> 01:12:06,906
+or of the interval separating two points.
+
+1798
+01:12:09,766 --> 01:12:12,066
+Space and time will work
+
+1799
+01:12:12,066 --> 01:12:14,366
+with speed of light equal one,
+
+1800
+01:12:14,586 --> 01:12:16,666
+except when I say that we won't.
+
+1801
+01:12:17,286 --> 01:12:19,166
+And we can consider two points.
+
+1802
+01:12:19,206 --> 01:12:19,726
+For example,
+
+1803
+01:12:19,726 --> 01:12:20,966
+these could be two points
+
+1804
+01:12:20,966 --> 01:12:23,446
+on the trajectory of a particle.
+
+1805
+01:12:26,606 --> 01:12:29,446
+There's a notion that we've discussed
+
+1806
+01:12:29,446 --> 01:12:33,346
+in previous quarters of the idea of the proper time,
+
+1807
+01:12:33,686 --> 01:12:37,246
+the proper time interval between two points,
+
+1808
+01:12:37,466 --> 01:12:39,306
+which is very similar,
+
+1809
+01:12:39,306 --> 01:12:40,266
+but not,
+
+1810
+01:12:40,266 --> 01:12:41,166
+a little different,
+
+1811
+01:12:41,346 --> 01:12:44,626
+but very similar to the distance between two points.
+
+1812
+01:12:45,456 --> 01:12:46,526
+But you might expect,
+
+1813
+01:12:46,526 --> 01:12:47,586
+if you were naive,
+
+1814
+01:12:48,516 --> 01:12:48,846
+that,
+
+1815
+01:12:48,846 --> 01:12:50,646
+let's say there's only two dimensions,
+
+1816
+01:12:50,846 --> 01:12:51,526
+one coordinate,
+
+1817
+01:12:51,526 --> 01:12:52,946
+one space coordinate,
+
+1818
+01:12:53,026 --> 01:12:54,066
+one time coordinate.
+
+1819
+01:12:54,726 --> 01:12:58,486
+You might write ds squared is equal to dt squared
+
+1820
+01:13:00,386 --> 01:13:01,886
+plus dx squared.
+
+1821
+01:13:04,406 --> 01:13:05,666
+And you could write that.
+
+1822
+01:13:05,726 --> 01:13:07,686
+That's a possible definition of something.
+
+1823
+01:13:08,626 --> 01:13:11,346
+But it's not the right thing for relativity theory.
+
+1824
+01:13:11,826 --> 01:13:12,826
+In particular,
+
+1825
+01:13:12,826 --> 01:13:14,806
+the Lorentz transformations,
+
+1826
+01:13:14,866 --> 01:13:16,786
+the things which transform you
+
+1827
+01:13:16,786 --> 01:13:18,846
+from one frame of reference to another,
+
+1828
+01:13:19,046 --> 01:13:20,346
+are not the things,
+
+1829
+01:13:20,346 --> 01:13:21,386
+are not the transformations
+
+1830
+01:13:21,386 --> 01:13:23,366
+which keep this invariant,
+
+1831
+01:13:24,726 --> 01:13:26,666
+but keep something else invariant.
+
+1832
+01:13:26,726 --> 01:13:27,066
+What is it?
+
+1833
+01:13:29,406 --> 01:13:31,726
+dt squared minus dx squared.
+
+1834
+01:13:32,206 --> 01:13:34,146
+And that's called the proper time,
+
+1835
+01:13:35,826 --> 01:13:38,386
+often labeled by d tau squared.
+
+1836
+01:13:44,886 --> 01:13:48,466
+If we insist on taking the speed of light
+
+1837
+01:13:48,466 --> 01:13:49,626
+not to be one,
+
+1838
+01:13:50,306 --> 01:13:53,266
+then the speed of light goes into this equation,
+
+1839
+01:13:53,366 --> 01:13:56,026
+in the denominator over here.
+
+1840
+01:13:57,086 --> 01:14:00,006
+But in special relativity,
+
+1841
+01:14:02,066 --> 01:14:05,426
+not using c equals one
+
+1842
+01:14:05,426 --> 01:14:07,026
+is as stupid
+
+1843
+01:14:07,026 --> 01:14:14,446
+as using meters for x components of vectors
+
+1844
+01:14:14,446 --> 01:14:17,086
+and inches for y components.
+
+1845
+01:14:17,586 --> 01:14:18,766
+If you did so,
+
+1846
+01:14:18,766 --> 01:14:20,866
+think about what your equations would look like.
+
+1847
+01:14:21,106 --> 01:14:23,346
+You would have some crazy factors,
+
+1848
+01:14:24,506 --> 01:14:26,466
+appearing all over the place.
+
+1849
+01:14:26,726 --> 01:14:27,586
+First of all,
+
+1850
+01:14:27,586 --> 01:14:30,146
+your equations would not look rotation invariant.
+
+1851
+01:14:30,306 --> 01:14:32,306
+And they would have all over the place
+
+1852
+01:14:32,306 --> 01:14:34,026
+peculiar numbers,
+
+1853
+01:14:34,306 --> 01:14:36,646
+which was simply the conversion factor
+
+1854
+01:14:36,646 --> 01:14:39,166
+for the units that you use for x dimensions
+
+1855
+01:14:39,166 --> 01:14:41,346
+and for y dimensions and z dimensions.
+
+1856
+01:14:42,186 --> 01:14:44,826
+The speed of light is very much like that.
+
+1857
+01:14:45,006 --> 01:14:46,666
+It's a conversion factor
+
+1858
+01:14:48,826 --> 01:14:51,706
+from units of length to units of time.
+
+1859
+01:14:53,986 --> 01:14:55,606
+Choosing c equals to one
+
+1860
+01:14:55,606 --> 01:14:57,626
+is the natural analog
+
+1861
+01:14:57,626 --> 01:15:02,366
+of using the same units
+
+1862
+01:15:02,366 --> 01:15:05,186
+for x measurements as y measurements.
+
+1863
+01:15:06,366 --> 01:15:07,046
+Notice,
+
+1864
+01:15:07,046 --> 01:15:07,986
+incidentally,
+
+1865
+01:15:07,986 --> 01:15:10,666
+if I talked about the distance between two points,
+
+1866
+01:15:10,906 --> 01:15:14,346
+and I measured x in different units than y,
+
+1867
+01:15:14,686 --> 01:15:18,526
+would the distance be dx squared plus dy squared?
+
+1868
+01:15:20,626 --> 01:15:21,686
+Let's suppose I measured x in different units than y.
+
+1869
+01:15:21,686 --> 01:15:23,426
+Suppose I measure y in inches
+
+1870
+01:15:24,006 --> 01:15:25,826
+and x in,
+
+1871
+01:15:25,826 --> 01:15:28,066
+let's say,
+
+1872
+01:15:28,066 --> 01:15:28,406
+feet.
+
+1873
+01:15:29,446 --> 01:15:31,156
+And now I want the distance
+
+1874
+01:15:31,156 --> 01:15:32,866
+between those two points in feet.
+
+1875
+01:15:33,586 --> 01:15:34,966
+What would I have to put there?
+
+1876
+01:15:38,986 --> 01:15:41,466
+If I want the distance in dx squared,
+
+1877
+01:15:41,706 --> 01:15:43,306
+if I want it in feet,
+
+1878
+01:15:43,546 --> 01:15:45,246
+and x is measured in feet,
+
+1879
+01:15:45,466 --> 01:15:46,486
+then I'll have dx squared.
+
+1880
+01:15:47,126 --> 01:15:48,446
+But what about dy squared?
+
+1881
+01:15:48,766 --> 01:15:49,806
+y is measured in inches.
+
+1882
+01:15:51,686 --> 01:15:52,186
+Yeah.
+
+1883
+01:15:52,226 --> 01:15:53,026
+Divided by 12 squared.
+
+1884
+01:15:53,186 --> 01:15:53,426
+Right.
+
+1885
+01:15:54,366 --> 01:15:57,286
+Plus dy squared divided by 144.
+
+1886
+01:15:58,366 --> 01:16:01,406
+You have a stupid factor of 1 over 144
+
+1887
+01:16:01,406 --> 01:16:03,486
+multiplying the dy squared term.
+
+1888
+01:16:04,346 --> 01:16:07,426
+Basically the same silly factor that's here.
+
+1889
+01:16:08,746 --> 01:16:10,266
+If you use units in which the
+
+1890
+01:16:10,266 --> 01:16:11,786
+speed of light is equal to one,
+
+1891
+01:16:11,966 --> 01:16:15,766
+it's the same thing as using meters or inches for...
+
+1892
+01:16:15,766 --> 01:16:16,026
+Yeah.
+
+1893
+01:16:16,386 --> 01:16:18,226
+I think I've read somewhere that
+
+1894
+01:16:18,886 --> 01:16:20,796
+particle physicists use units
+
+1895
+01:16:20,796 --> 01:16:24,116
+in which electron volts is everything.
+
+1896
+01:16:27,456 --> 01:16:29,576
+Are they measured in electron volts?
+
+1897
+01:16:30,616 --> 01:16:31,236
+Yes.
+
+1898
+01:16:31,436 --> 01:16:31,916
+Well,
+
+1899
+01:16:31,916 --> 01:16:32,336
+you can.
+
+1900
+01:16:33,576 --> 01:16:34,636
+How does that work?
+
+1901
+01:16:34,876 --> 01:16:35,796
+If it's in a plasma?
+
+1902
+01:16:38,416 --> 01:16:40,016
+You get length and time.
+
+1903
+01:16:40,336 --> 01:16:42,256
+You need the Planck's constant,
+
+1904
+01:16:45,776 --> 01:16:47,536
+which isn't in here yet.
+
+1905
+01:16:47,896 --> 01:16:49,876
+The speed of light relates...
+
+1906
+01:16:49,876 --> 01:16:50,056
+Look,
+
+1907
+01:16:50,056 --> 01:16:51,796
+normally you say there are
+
+1908
+01:16:51,796 --> 01:16:53,536
+three distinct units that you need.
+
+1909
+01:16:54,476 --> 01:16:54,916
+Length,
+
+1910
+01:16:54,916 --> 01:16:55,356
+time,
+
+1911
+01:16:55,356 --> 01:16:56,156
+and mass.
+
+1912
+01:16:58,056 --> 01:16:58,496
+Okay.
+
+1913
+01:16:58,936 --> 01:16:59,376
+Now,
+
+1914
+01:16:59,376 --> 01:17:01,536
+given that the speed of light is equal to one,
+
+1915
+01:17:01,656 --> 01:17:03,976
+or assuming the speed of light is equal to one,
+
+1916
+01:17:03,996 --> 01:17:05,016
+it eliminates one of these.
+
+1917
+01:17:06,316 --> 01:17:08,996
+Setting Planck's constant equal to one
+
+1918
+01:17:09,556 --> 01:17:11,476
+will allow you to write masses
+
+1919
+01:17:11,476 --> 01:17:13,996
+in the same units as you use length and time.
+
+1920
+01:17:14,496 --> 01:17:15,976
+But we're not going there today.
+
+1921
+01:17:16,156 --> 01:17:17,776
+We're not going to quantum mechanics today.
+
+1922
+01:17:17,776 --> 01:17:17,956
+Today,
+
+1923
+01:17:17,956 --> 01:17:20,276
+we're just going to set c equal to one.
+
+1924
+01:17:21,316 --> 01:17:21,996
+So...
+
+1925
+01:17:27,516 --> 01:17:28,416
+And now,
+
+1926
+01:17:28,416 --> 01:17:29,456
+Lorentz transformations
+
+1927
+01:17:30,616 --> 01:17:32,896
+and the special theory of relativity
+
+1928
+01:17:33,776 --> 01:17:36,436
+is simply the theory of transformations
+
+1929
+01:17:36,436 --> 01:17:40,596
+or coordinate systems which preserve this form,
+
+1930
+01:17:40,816 --> 01:17:42,756
+dt squared minus dx squared.
+
+1931
+01:17:42,976 --> 01:17:44,456
+Coordinate transformations,
+
+1932
+01:17:44,796 --> 01:17:46,816
+space-time coordinate transformations,
+
+1933
+01:17:46,816 --> 01:17:51,276
+which preserve the form of the metric.
+
+1934
+01:17:51,676 --> 01:17:54,696
+This metric now represents proper time,
+
+1935
+01:17:54,856 --> 01:17:55,576
+not the...
+
+1936
+01:17:57,096 --> 01:17:57,856
+uh...
+
+1937
+01:17:59,256 --> 01:18:01,636
+not the spatial distance,
+
+1938
+01:18:01,636 --> 01:18:02,396
+necessarily.
+
+1939
+01:18:02,556 --> 01:18:04,416
+It can also represent spatial distance,
+
+1940
+01:18:04,696 --> 01:18:07,536
+but it represents what it represents.
+
+1941
+01:18:07,956 --> 01:18:09,556
+And the Lorentz transformations
+
+1942
+01:18:09,556 --> 01:18:12,216
+are transformations from one set of coordinates
+
+1943
+01:18:12,736 --> 01:18:14,096
+to another set of coordinates
+
+1944
+01:18:14,576 --> 01:18:15,336
+in which,
+
+1945
+01:18:15,336 --> 01:18:16,656
+in both sets of coordinates,
+
+1946
+01:18:16,816 --> 01:18:18,636
+the form of d tau squared
+
+1947
+01:18:18,636 --> 01:18:21,176
+is equal to dt squared minus dx squared.
+
+1948
+01:18:21,316 --> 01:18:21,816
+Now,
+
+1949
+01:18:21,816 --> 01:18:23,016
+I've written it for two dimensions.
+
+1950
+01:18:23,276 --> 01:18:25,036
+What if there are more dimensions of space
+
+1951
+01:18:25,036 --> 01:18:26,756
+as there really are in the real world?
+
+1952
+01:18:27,236 --> 01:18:29,236
+Then it will be d tau squared
+
+1953
+01:18:29,816 --> 01:18:31,296
+is equal to dt squared
+
+1954
+01:18:33,076 --> 01:18:34,536
+minus dx squared
+
+1955
+01:18:34,536 --> 01:18:35,976
+minus dy squared
+
+1956
+01:18:35,976 --> 01:18:37,396
+minus dz squared,
+
+1957
+01:18:37,396 --> 01:18:38,176
+or whatever...
+
+1958
+01:18:40,936 --> 01:18:42,956
+if there are three coordinates of space.
+
+1959
+01:18:44,136 --> 01:18:44,656
+Okay.
+
+1960
+01:18:44,656 --> 01:18:45,576
+So...
+
+1961
+01:18:49,236 --> 01:18:49,776
+That's it.
+
+1962
+01:18:49,836 --> 01:18:51,296
+That's all you have to know about special relativity.
+
+1963
+01:18:51,596 --> 01:18:54,136
+It's the theory of transformations
+
+1964
+01:18:55,076 --> 01:18:57,316
+which preserve a length element
+
+1965
+01:18:57,316 --> 01:18:58,756
+which is a funny thing
+
+1966
+01:18:58,756 --> 01:19:00,196
+with a minus sign in it.
+
+1967
+01:19:00,556 --> 01:19:00,836
+Now,
+
+1968
+01:19:00,836 --> 01:19:02,336
+we're going to assume that everybody knows that,
+
+1969
+01:19:02,896 --> 01:19:04,376
+and we're going to move on.
+
+1970
+01:19:04,716 --> 01:19:06,016
+What we're going to say is,
+
+1971
+01:19:06,076 --> 01:19:10,536
+supposing I introduce curved coordinates into space-time.
+
+1972
+01:19:11,576 --> 01:19:14,456
+Have we ever seen any examples of curved coordinates
+
+1973
+01:19:14,656 --> 01:19:16,316
+in space-time in this quarter so far?
+
+1974
+01:19:20,276 --> 01:19:20,876
+Yeah.
+
+1975
+01:19:21,416 --> 01:19:23,396
+Accelerated coordinates were examples
+
+1976
+01:19:23,396 --> 01:19:25,736
+of curved coordinates in space-time.
+
+1977
+01:19:26,436 --> 01:19:27,036
+Remember,
+
+1978
+01:19:27,036 --> 01:19:27,756
+I gave you...
+
+1979
+01:19:28,356 --> 01:19:28,956
+like,
+
+1980
+01:19:28,956 --> 01:19:30,336
+coordinates which look like this,
+
+1981
+01:19:30,536 --> 01:19:32,736
+and we also talked about coordinates
+
+1982
+01:19:32,736 --> 01:19:33,996
+which were accelerated.
+
+1983
+01:19:35,036 --> 01:19:37,416
+There's an example of the...
+
+1984
+01:19:37,416 --> 01:19:41,576
+of the introduction of curved coordinates
+
+1985
+01:19:41,576 --> 01:19:43,616
+into space-time for a particular purpose
+
+1986
+01:19:43,616 --> 01:19:46,376
+in order to study accelerated coordinate systems.
+
+1987
+01:19:47,736 --> 01:19:48,296
+So,
+
+1988
+01:19:48,296 --> 01:19:49,056
+it's not insane,
+
+1989
+01:19:49,056 --> 01:19:49,756
+not silly,
+
+1990
+01:19:49,876 --> 01:19:52,336
+to introduce curved coordinates into space-time.
+
+1991
+01:19:53,536 --> 01:19:54,616
+And if you do,
+
+1992
+01:19:54,836 --> 01:19:56,656
+what's going to happen to this formula?
+
+1993
+01:19:57,356 --> 01:19:58,876
+What's going to happen to this formula
+
+1994
+01:19:58,876 --> 01:20:01,216
+is the same thing that happens to the formula
+
+1995
+01:20:01,216 --> 01:20:02,856
+for distance between points
+
+1996
+01:20:02,856 --> 01:20:06,436
+when you introduce curved coordinates into space.
+
+1997
+01:20:07,216 --> 01:20:07,776
+Namely,
+
+1998
+01:20:07,776 --> 01:20:10,356
+you're going to get some new coefficient functions,
+
+1999
+01:20:10,976 --> 01:20:13,136
+and the formula is going to look like...
+
+2000
+01:20:14,476 --> 01:20:14,996
+Well,
+
+2001
+01:20:14,996 --> 01:20:15,716
+first of all,
+
+2002
+01:20:15,716 --> 01:20:17,036
+notation.
+
+2003
+01:20:19,236 --> 01:20:21,416
+There are four coordinates of space-time,
+
+2004
+01:20:21,676 --> 01:20:21,896
+t,
+
+2005
+01:20:21,896 --> 01:20:22,416
+x,
+
+2006
+01:20:22,416 --> 01:20:22,736
+y,
+
+2007
+01:20:22,736 --> 01:20:23,136
+and z.
+
+2008
+01:20:23,636 --> 01:20:25,756
+We're going to label them x,
+
+2009
+01:20:25,756 --> 01:20:26,096
+mu.
+
+2010
+01:20:26,996 --> 01:20:28,656
+Whenever you see a Greek index
+
+2011
+01:20:28,656 --> 01:20:31,616
+as a coordinate index,
+
+2012
+01:20:31,976 --> 01:20:34,896
+it always means that you're talking about space-time.
+
+2013
+01:20:36,776 --> 01:20:37,796
+And how many...
+
+2014
+01:20:37,796 --> 01:20:38,856
+what does mu run over?
+
+2015
+01:20:39,076 --> 01:20:41,036
+Mu runs over four possibilities,
+
+2016
+01:20:41,396 --> 01:20:43,496
+one of time and three directions.
+
+2017
+01:20:43,616 --> 01:20:44,056
+Three directions of space.
+
+2018
+01:20:45,426 --> 01:20:46,716
+The usual convention
+
+2019
+01:20:48,456 --> 01:20:51,296
+is not to call it x1 through x4,
+
+2020
+01:20:51,596 --> 01:20:54,156
+but to call it x0...
+
+2021
+01:20:57,696 --> 01:20:59,576
+I don't know how that got started.
+
+2022
+01:21:01,156 --> 01:21:03,316
+Why x0 through x3,
+
+2023
+01:21:03,476 --> 01:21:05,196
+rather than x1 through x4,
+
+2024
+01:21:05,396 --> 01:21:06,016
+I don't know.
+
+2025
+01:21:07,216 --> 01:21:10,276
+With x0 being the time coordinate.
+
+2026
+01:21:10,656 --> 01:21:11,856
+Time versus...
+
+2027
+01:21:13,616 --> 01:21:13,736
+Time first.
+
+2028
+01:21:14,656 --> 01:21:16,176
+Before you start with space,
+
+2029
+01:21:16,456 --> 01:21:16,996
+you got one,
+
+2030
+01:21:16,996 --> 01:21:17,256
+two,
+
+2031
+01:21:17,256 --> 01:21:17,596
+three.
+
+2032
+01:21:17,876 --> 01:21:18,656
+What are you going to do,
+
+2033
+01:21:18,656 --> 01:21:19,136
+add four?
+
+2034
+01:21:20,136 --> 01:21:20,576
+Eh,
+
+2035
+01:21:20,576 --> 01:21:21,636
+why not add zero?
+
+2036
+01:21:21,856 --> 01:21:22,176
+Yeah.
+
+2037
+01:21:23,336 --> 01:21:23,776
+Yeah.
+
+2038
+01:21:28,616 --> 01:21:30,236
+If you decide you want
+
+2039
+01:21:30,236 --> 01:21:31,856
+to make higher dimensional space times,
+
+2040
+01:21:32,375 --> 01:21:34,056
+you add more space components,
+
+2041
+01:21:34,376 --> 01:21:35,956
+you never add more time components.
+
+2042
+01:21:36,196 --> 01:21:36,616
+That's...
+
+2043
+01:21:36,616 --> 01:21:37,716
+I mean,
+
+2044
+01:21:37,716 --> 01:21:38,836
+you can play with that if you like,
+
+2045
+01:21:38,836 --> 01:21:39,776
+but...
+
+2046
+01:21:40,796 --> 01:21:41,236
+Uh...
+
+2047
+01:21:41,236 --> 01:21:42,156
+It's a thing,
+
+2048
+01:21:42,156 --> 01:21:42,356
+though.
+
+2049
+01:21:42,356 --> 01:21:42,936
+Oh,
+
+2050
+01:21:42,936 --> 01:21:43,116
+yeah,
+
+2051
+01:21:43,116 --> 01:21:43,516
+sure.
+
+2052
+01:21:43,676 --> 01:21:44,356
+Anyway.
+
+2053
+01:21:46,196 --> 01:21:46,916
+So,
+
+2054
+01:21:46,916 --> 01:21:49,396
+what's the natural generalization
+
+2055
+01:21:49,396 --> 01:21:50,716
+of this formula
+
+2056
+01:21:50,716 --> 01:21:54,036
+when you introduce new sets of coordinates,
+
+2057
+01:21:54,096 --> 01:21:55,896
+let's call them y mu now,
+
+2058
+01:21:57,256 --> 01:21:59,996
+which also has a time component
+
+2059
+01:21:59,996 --> 01:22:02,396
+and three space components,
+
+2060
+01:22:03,496 --> 01:22:06,036
+and assume that the y coordinates
+
+2061
+01:22:06,036 --> 01:22:09,856
+and the x coordinates are related to each other
+
+2062
+01:22:09,856 --> 01:22:10,936
+by coordinate transformation.
+
+2063
+01:22:12,356 --> 01:22:13,676
+Then what's the natural analog,
+
+2064
+01:22:14,036 --> 01:22:15,556
+or the generalization,
+
+2065
+01:22:15,556 --> 01:22:16,176
+I should say,
+
+2066
+01:22:16,336 --> 01:22:19,716
+of the simple special relativity formula?
+
+2067
+01:22:20,536 --> 01:22:22,636
+That's exactly what you might expect.
+
+2068
+01:22:23,016 --> 01:22:29,416
+d tau squared is equal to g mu nu of...
+
+2069
+01:22:29,416 --> 01:22:30,256
+Now,
+
+2070
+01:22:30,256 --> 01:22:32,336
+when I write just of x,
+
+2071
+01:22:32,596 --> 01:22:36,616
+it means of space and time.
+
+2072
+01:22:36,956 --> 01:22:40,016
+A general function of position in space-time
+
+2073
+01:22:40,016 --> 01:22:42,576
+is just written as a function of x
+
+2074
+01:22:42,576 --> 01:22:45,616
+without specifying whether we're talking about
+
+2075
+01:22:45,616 --> 01:22:46,076
+x zero,
+
+2076
+01:22:46,076 --> 01:22:46,596
+x one,
+
+2077
+01:22:46,596 --> 01:22:46,936
+x two,
+
+2078
+01:22:46,936 --> 01:22:47,356
+x three,
+
+2079
+01:22:47,356 --> 01:22:47,896
+and so forth,
+
+2080
+01:22:49,376 --> 01:22:52,796
+times dx mu dx nu.
+
+2081
+01:23:02,376 --> 01:23:06,476
+We don't need to have real genuine curvature
+
+2082
+01:23:06,975 --> 01:23:09,536
+and gravity and so forth to do this.
+
+2083
+01:23:09,536 --> 01:23:11,496
+We could just do this by introducing
+
+2084
+01:23:11,496 --> 01:23:15,376
+curvy linear coordinates for x and t.
+
+2085
+01:23:18,216 --> 01:23:19,676
+So at the moment,
+
+2086
+01:23:19,676 --> 01:23:20,876
+we haven't introduced
+
+2087
+01:23:20,876 --> 01:23:22,676
+the theory of gravity when we say
+
+2088
+01:23:22,676 --> 01:23:23,516
+we can write this down.
+
+2089
+01:23:23,696 --> 01:23:26,316
+We're just generalizing the allowable coordinates
+
+2090
+01:23:26,316 --> 01:23:28,056
+that we can play with.
+
+2091
+01:23:30,076 --> 01:23:32,756
+So that's the general form
+
+2092
+01:23:32,756 --> 01:23:35,476
+of the proper time element between two points
+
+2093
+01:23:36,176 --> 01:23:37,396
+in space-time,
+
+2094
+01:23:37,396 --> 01:23:39,516
+where space-time has a number,
+
+2095
+01:23:39,536 --> 01:23:39,696
+and space-time has a number.
+
+2096
+01:23:39,696 --> 01:23:40,376
+So we're just going to use a metric tensor.
+
+2097
+01:23:41,016 --> 01:23:41,576
+Now,
+
+2098
+01:23:41,576 --> 01:23:42,676
+what is the metric tensor?
+
+2099
+01:23:43,276 --> 01:23:47,336
+Let's call these simple coordinates like this.
+
+2100
+01:23:47,456 --> 01:23:48,276
+Let's call these...
+
+2101
+01:23:48,276 --> 01:23:49,556
+Should we call them Cartesian?
+
+2102
+01:23:52,976 --> 01:23:54,756
+What's the right term for...
+
+2103
+01:23:54,756 --> 01:23:55,476
+Hmm?
+
+2104
+01:23:56,876 --> 01:23:57,996
+You have a name for them?
+
+2105
+01:23:59,296 --> 01:23:59,856
+Minkowski.
+
+2106
+01:24:00,056 --> 01:24:00,196
+Good,
+
+2107
+01:24:00,196 --> 01:24:00,496
+good.
+
+2108
+01:24:00,576 --> 01:24:01,376
+Minkowski coordinates.
+
+2109
+01:24:01,696 --> 01:24:01,836
+Yeah.
+
+2110
+01:24:02,796 --> 01:24:04,256
+Ordinary Minkowski coordinates.
+
+2111
+01:24:04,596 --> 01:24:06,396
+And Minkowski coordinates are not unique.
+
+2112
+01:24:06,396 --> 01:24:08,596
+Just like Cartesian coordinates are not unique,
+
+2113
+01:24:08,776 --> 01:24:09,656
+you can rotate them,
+
+2114
+01:24:09,656 --> 01:24:10,656
+you can translate them,
+
+2115
+01:24:10,816 --> 01:24:14,436
+you can Lorentz transform Minkowski coordinates.
+
+2116
+01:24:15,416 --> 01:24:18,896
+What's the Minkowski form for the metric tensor?
+
+2117
+01:24:19,596 --> 01:24:20,196
+Well,
+
+2118
+01:24:20,196 --> 01:24:20,636
+it's clear.
+
+2119
+01:24:21,176 --> 01:24:25,476
+It's of the form 1 for the dt squared
+
+2120
+01:24:25,476 --> 01:24:27,036
+and minus 1,
+
+2121
+01:24:27,036 --> 01:24:27,736
+minus 1,
+
+2122
+01:24:27,736 --> 01:24:29,396
+minus 1 for the dx squared.
+
+2123
+01:24:29,716 --> 01:24:30,876
+In other words,
+
+2124
+01:24:30,876 --> 01:24:34,356
+it's a matrix
+
+2125
+01:24:34,356 --> 01:24:38,256
+just like G was a matrix before.
+
+2126
+01:24:38,776 --> 01:24:39,496
+The,
+
+2127
+01:24:39,496 --> 01:24:39,936
+uh,
+
+2128
+01:24:39,936 --> 01:24:41,816
+in flat coordinates,
+
+2129
+01:24:41,916 --> 01:24:45,376
+originally the metric was 1,
+
+2130
+01:24:45,376 --> 01:24:45,636
+1,
+
+2131
+01:24:45,636 --> 01:24:45,936
+1,
+
+2132
+01:24:45,936 --> 01:24:46,596
+whatever.
+
+2133
+01:24:46,996 --> 01:24:48,216
+What is it now?
+
+2134
+01:24:49,736 --> 01:24:53,816
+It's a 1 and 3 minus 1s
+
+2135
+01:24:55,176 --> 01:24:57,196
+with all 0s elsewhere.
+
+2136
+01:25:06,216 --> 01:25:07,076
+All right.
+
+2137
+01:25:07,096 --> 01:25:09,236
+So a special case of a metric,
+
+2138
+01:25:09,316 --> 01:25:12,836
+of a formula like this
+
+2139
+01:25:13,346 --> 01:25:15,236
+would be where G mu nu
+
+2140
+01:25:15,916 --> 01:25:17,356
+was simply 1,
+
+2141
+01:25:17,356 --> 01:25:18,076
+minus 1,
+
+2142
+01:25:18,076 --> 01:25:18,576
+minus 1,
+
+2143
+01:25:18,576 --> 01:25:19,136
+minus 1,
+
+2144
+01:25:19,216 --> 01:25:21,116
+in which case you would reproduce
+
+2145
+01:25:21,116 --> 01:25:22,596
+the usual Minkowski
+
+2146
+01:25:25,676 --> 01:25:26,836
+proper time.
+
+2147
+01:25:27,536 --> 01:25:28,196
+Okay.
+
+2148
+01:25:33,816 --> 01:25:34,956
+This symbol has a name.
+
+2149
+01:25:35,536 --> 01:25:40,596
+It's the analog of delta Mn.
+
+2150
+01:25:41,696 --> 01:25:43,236
+But it's not delta Mn.
+
+2151
+01:25:43,296 --> 01:25:44,016
+It's not 1,
+
+2152
+01:25:44,016 --> 01:25:44,276
+1,
+
+2153
+01:25:44,276 --> 01:25:44,596
+1,
+
+2154
+01:25:44,596 --> 01:25:44,836
+1.
+
+2155
+01:25:44,996 --> 01:25:45,616
+It's 1,
+
+2156
+01:25:45,616 --> 01:25:46,216
+minus 1,
+
+2157
+01:25:46,216 --> 01:25:46,656
+minus 1,
+
+2158
+01:25:46,656 --> 01:25:47,116
+minus 1,
+
+2159
+01:25:47,116 --> 01:25:47,616
+minus 1.
+
+2160
+01:25:47,936 --> 01:25:48,936
+It has a name.
+
+2161
+01:25:48,956 --> 01:25:49,996
+It's called eta.
+
+2162
+01:25:52,856 --> 01:25:53,896
+Eta Mn.
+
+2163
+01:25:54,716 --> 01:25:56,296
+Greek letter eta.
+
+2164
+01:25:57,136 --> 01:26:00,256
+So eta is the metric of space-time
+
+2165
+01:26:00,256 --> 01:26:01,856
+in Minkowski coordinates.
+
+2166
+01:26:03,336 --> 01:26:08,696
+So we could write in Minkowski-type coordinates,
+
+2167
+01:26:08,796 --> 01:26:10,516
+the analog of Cartesian coordinates,
+
+2168
+01:26:10,876 --> 01:26:13,776
+that tau squared is equal to eta mu nu
+
+2169
+01:26:15,495 --> 01:26:17,716
+dx mu dx nu.
+
+2170
+01:26:21,076 --> 01:26:21,836
+Okay.
+
+2171
+01:26:22,036 --> 01:26:23,876
+That's space-time in a nutshell.
+
+2172
+01:26:24,936 --> 01:26:28,296
+Almost everything we said about tensors,
+
+2173
+01:26:28,296 --> 01:26:30,136
+their transformation properties,
+
+2174
+01:26:30,336 --> 01:26:31,236
+is still correct.
+
+2175
+01:26:51,076 --> 01:26:55,596
+of tensors are identical to what they were before.
+
+2176
+01:26:55,596 --> 01:26:58,076
+I'll write them again.
+
+2177
+01:26:58,076 --> 01:27:01,116
+You have things like dx mu
+
+2178
+01:27:02,556 --> 01:27:05,436
+which have a contravariant structure.
+
+2179
+01:27:05,436 --> 01:27:09,906
+They're related to dy mu by partial of
+
+2180
+01:27:09,906 --> 01:27:14,376
+y mu with respect to x nu dx nu.
+
+2181
+01:27:14,376 --> 01:27:17,246
+So this defines the
+
+2182
+01:27:17,246 --> 01:27:20,116
+transformation properties of contravariant indices.
+
+2183
+01:27:20,116 --> 01:27:22,216
+It's exactly the same as it was before.
+
+2184
+01:27:22,556 --> 01:27:26,056
+The transformation properties of tensors are exactly
+
+2185
+01:27:26,056 --> 01:27:29,556
+what they were in the pure space case.
+
+2186
+01:27:29,896 --> 01:27:31,036
+You don't have to change it,
+
+2187
+01:27:31,036 --> 01:27:31,536
+not at all,
+
+2188
+01:27:31,536 --> 01:27:34,556
+for both contravariant and covariant indices.
+
+2189
+01:27:34,916 --> 01:27:38,466
+The only thing is that the metric tensor
+
+2190
+01:27:38,466 --> 01:27:42,016
+typically has minuses as well as pluses in it.
+
+2191
+01:27:42,576 --> 01:27:43,256
+Now,
+
+2192
+01:27:43,256 --> 01:27:44,096
+what kind,
+
+2193
+01:27:44,096 --> 01:27:44,356
+what kind of tensor is this?
+
+2194
+01:27:44,376 --> 01:27:46,496
+What are the special rules about how many
+
+2195
+01:27:46,496 --> 01:27:48,616
+minuses and how many pluses will come to that?
+
+2196
+01:27:48,996 --> 01:27:49,736
+But this,
+
+2197
+01:27:49,736 --> 01:27:50,216
+for example,
+
+2198
+01:27:50,216 --> 01:27:51,056
+is a special case,
+
+2199
+01:27:51,056 --> 01:27:52,596
+three minuses and one plus.
+
+2200
+01:27:54,076 --> 01:27:57,976
+I'll be more precise about what's an allowable tensor,
+
+2201
+01:27:57,976 --> 01:27:59,796
+an allowable metric tensor.
+
+2202
+01:28:00,256 --> 01:28:01,236
+But for now,
+
+2203
+01:28:01,236 --> 01:28:04,746
+the rules are almost exactly the same
+
+2204
+01:28:04,746 --> 01:28:08,256
+with the Kronecker delta being replaced by eta.
+
+2205
+01:28:09,016 --> 01:28:11,596
+What do you do with the transformation of
+
+2206
+01:28:11,596 --> 01:28:14,176
+x and y instead of y and super?
+
+2207
+01:28:15,455 --> 01:28:16,776
+What do you mean by that?
+
+2208
+01:28:17,196 --> 01:28:18,536
+Just a definition of a,
+
+2209
+01:28:18,536 --> 01:28:19,196
+just a notation.
+
+2210
+01:28:20,575 --> 01:28:21,836
+x super zero equals,
+
+2211
+01:28:21,836 --> 01:28:22,376
+is t.
+
+2212
+01:28:23,456 --> 01:28:24,196
+So I mean,
+
+2213
+01:28:24,196 --> 01:28:24,496
+you could,
+
+2214
+01:28:24,496 --> 01:28:25,596
+one transformation could be,
+
+2215
+01:28:25,596 --> 01:28:26,376
+you could just reverse,
+
+2216
+01:28:26,376 --> 01:28:28,196
+let's say,
+
+2217
+01:28:28,196 --> 01:28:29,276
+x and t,
+
+2218
+01:28:29,276 --> 01:28:30,946
+and then you could say the
+
+2219
+01:28:30,946 --> 01:28:32,616
+new x would be the time dimension.
+
+2220
+01:28:33,116 --> 01:28:33,476
+Yeah,
+
+2221
+01:28:33,476 --> 01:28:34,676
+you could do that.
+
+2222
+01:28:34,956 --> 01:28:36,736
+You can do it if you like.
+
+2223
+01:28:37,036 --> 01:28:38,096
+You can do it if you like.
+
+2224
+01:28:38,096 --> 01:28:39,456
+It even happens in some
+
+2225
+01:28:39,456 --> 01:28:40,816
+situations that you might want to.
+
+2226
+01:28:40,956 --> 01:28:41,316
+Now,
+
+2227
+01:28:41,316 --> 01:28:42,076
+there is a rule.
+
+2228
+01:28:42,596 --> 01:28:43,296
+I'll tell you,
+
+2229
+01:28:43,296 --> 01:28:44,356
+I'll tell you what the rule is.
+
+2230
+01:28:44,356 --> 01:28:44,736
+The rule is now,
+
+2231
+01:28:44,736 --> 01:28:46,016
+and we'll go through it another time,
+
+2232
+01:28:46,016 --> 01:28:46,596
+but we need to,
+
+2233
+01:28:46,596 --> 01:28:47,656
+we do need to go through it.
+
+2234
+01:28:48,036 --> 01:28:50,156
+The rule is that g mu nu,
+
+2235
+01:28:50,156 --> 01:28:51,976
+g mu nu is again a symmetric,
+
+2236
+01:28:51,976 --> 01:28:53,436
+is a symmetric tensor.
+
+2237
+01:28:54,196 --> 01:28:56,136
+Symmetric tensors have eigenvalues.
+
+2238
+01:28:56,556 --> 01:28:58,196
+They have a complete set of eigenvalues.
+
+2239
+01:28:58,476 --> 01:29:00,196
+They will always have four eigenvalues.
+
+2240
+01:29:01,856 --> 01:29:03,376
+For an ordinary space,
+
+2241
+01:29:03,376 --> 01:29:05,816
+those eigenvalues are all positive.
+
+2242
+01:29:06,196 --> 01:29:08,106
+And it corresponds to the fact
+
+2243
+01:29:08,106 --> 01:29:10,016
+that spatial distances are always positive.
+
+2244
+01:29:11,496 --> 01:29:12,536
+In relativity,
+
+2245
+01:29:12,536 --> 01:29:14,276
+there is always three negative.
+
+2246
+01:29:14,336 --> 01:29:15,776
+And one positive eigenvalue.
+
+2247
+01:29:16,756 --> 01:29:20,176
+If you're writing something down which has not
+
+2248
+01:29:20,176 --> 01:29:23,596
+the right number of positive and negative eigenvalues,
+
+2249
+01:29:23,736 --> 01:29:25,476
+you have some sort of pathological space.
+
+2250
+01:29:25,856 --> 01:29:26,996
+But we'll come to that.
+
+2251
+01:29:27,216 --> 01:29:28,136
+We'll come to that.
+
+2252
+01:29:28,216 --> 01:29:28,516
+For now,
+
+2253
+01:29:28,516 --> 01:29:30,636
+the rules are really unchanged.
+
+2254
+01:29:32,276 --> 01:29:33,856
+The rules are really unchanged,
+
+2255
+01:29:33,856 --> 01:29:37,156
+apart from the fact that a typical metric
+
+2256
+01:29:37,156 --> 01:29:40,456
+will have some minus signs and some plus signs.
+
+2257
+01:29:41,016 --> 01:29:43,296
+And in terms of eigenvalues,
+
+2258
+01:29:43,296 --> 01:29:44,316
+there are always three.
+
+2259
+01:29:44,336 --> 01:29:46,296
+Three negative ones and one positive one.
+
+2260
+01:29:46,636 --> 01:29:47,356
+Which means,
+
+2261
+01:29:47,356 --> 01:29:47,776
+yeah?
+
+2262
+01:29:49,916 --> 01:29:51,456
+It is its own inverse,
+
+2263
+01:29:51,456 --> 01:29:51,676
+yeah.
+
+2264
+01:29:51,756 --> 01:29:53,236
+Just like the Kronecker delta is.
+
+2265
+01:29:53,976 --> 01:29:54,456
+Right.
+
+2266
+01:29:55,916 --> 01:29:56,396
+So,
+
+2267
+01:29:56,396 --> 01:29:58,336
+the eta with the upper indices is the
+
+2268
+01:29:58,336 --> 01:30:00,276
+same as the eta with the lower indices.
+
+2269
+01:30:00,636 --> 01:30:00,856
+Right.
+
+2270
+01:30:06,956 --> 01:30:07,436
+Uh,
+
+2271
+01:30:07,436 --> 01:30:08,456
+I'll go through this,
+
+2272
+01:30:08,456 --> 01:30:09,616
+I will go through this again.
+
+2273
+01:30:10,116 --> 01:30:11,516
+But I just wanted to,
+
+2274
+01:30:11,516 --> 01:30:13,476
+since I was asked the question about,
+
+2275
+01:30:14,336 --> 01:30:17,676
+how to think about the geometry of an expanding space-time,
+
+2276
+01:30:17,876 --> 01:30:18,916
+let me answer it right now.
+
+2277
+01:30:19,576 --> 01:30:21,696
+We have everything we need now to write,
+
+2278
+01:30:21,696 --> 01:30:24,696
+to express it.
+
+2279
+01:30:28,616 --> 01:30:30,176
+In a general space-time,
+
+2280
+01:30:30,176 --> 01:30:33,436
+these metric components are functions
+
+2281
+01:30:33,436 --> 01:30:36,696
+of all of the coordinates.
+
+2282
+01:30:38,596 --> 01:30:41,316
+A particularly simple kind of
+
+2283
+01:30:41,316 --> 01:30:44,036
+space-time is one where the coordinates,
+
+2284
+01:30:44,036 --> 01:30:47,056
+where the metric only depends on time,
+
+2285
+01:30:47,056 --> 01:30:49,096
+and doesn't depend on space.
+
+2286
+01:30:49,856 --> 01:30:51,486
+That's the sort of situation
+
+2287
+01:30:51,486 --> 01:30:53,116
+you have when space is homogeneous.
+
+2288
+01:30:54,416 --> 01:30:55,816
+If space is homogeneous,
+
+2289
+01:30:55,816 --> 01:30:57,156
+everywhere the same,
+
+2290
+01:30:58,196 --> 01:31:00,576
+that's a typical cosmological setup,
+
+2291
+01:31:00,576 --> 01:31:03,536
+where space is everywhere is the same,
+
+2292
+01:31:03,676 --> 01:31:04,096
+apart,
+
+2293
+01:31:04,096 --> 01:31:04,696
+of course,
+
+2294
+01:31:04,696 --> 01:31:06,136
+when I say it's everywhere is the same,
+
+2295
+01:31:06,136 --> 01:31:07,356
+I mean on very large scales,
+
+2296
+01:31:07,516 --> 01:31:09,736
+on scales much bigger than galaxies and so forth.
+
+2297
+01:31:10,036 --> 01:31:12,096
+Space is the same one place as another.
+
+2298
+01:31:12,096 --> 01:31:14,316
+The metric doesn't depend on space,
+
+2299
+01:31:14,316 --> 01:31:16,696
+but it does depend on time,
+
+2300
+01:31:16,876 --> 01:31:22,096
+and that time dependence is the expansion of the universe.
+
+2301
+01:31:22,296 --> 01:31:24,376
+So let me write down for you a particular metric,
+
+2302
+01:31:24,376 --> 01:31:26,796
+and then just look at it a little bit.
+
+2303
+01:31:27,756 --> 01:31:31,836
+It corresponds to G mu nu is equal,
+
+2304
+01:31:31,836 --> 01:31:32,576
+instead of,
+
+2305
+01:31:32,576 --> 01:31:35,276
+instead of 1,
+
+2306
+01:31:35,276 --> 01:31:36,156
+minus 1,
+
+2307
+01:31:36,156 --> 01:31:36,616
+minus 1,
+
+2308
+01:31:36,616 --> 01:31:37,176
+minus 1,
+
+2309
+01:31:37,296 --> 01:31:39,196
+let's write 1,
+
+2310
+01:31:39,196 --> 01:31:40,676
+0,
+
+2311
+01:31:40,676 --> 01:31:41,276
+0,
+
+2312
+01:31:41,276 --> 01:31:41,616
+0.
+
+2313
+01:31:42,476 --> 01:31:43,036
+0,
+
+2314
+01:31:43,036 --> 01:31:44,796
+now instead of minus 1,
+
+2315
+01:31:44,796 --> 01:31:48,276
+let's write minus A of t,
+
+2316
+01:31:48,616 --> 01:31:50,636
+where A of t is time dependent.
+
+2317
+01:31:51,356 --> 01:31:51,916
+0,
+
+2318
+01:31:51,916 --> 01:31:52,336
+0,
+
+2319
+01:31:52,336 --> 01:31:54,216
+0,
+
+2320
+01:31:54,216 --> 01:31:55,056
+0,
+
+2321
+01:31:55,056 --> 01:31:56,656
+minus A of t,
+
+2322
+01:31:56,656 --> 01:31:57,876
+0,
+
+2323
+01:31:57,876 --> 01:31:58,956
+0,
+
+2324
+01:31:58,956 --> 01:31:59,736
+0,
+
+2325
+01:31:59,736 --> 01:32:00,356
+0,
+
+2326
+01:32:00,356 --> 01:32:01,696
+minus A of t.
+
+2327
+01:32:02,856 --> 01:32:04,716
+One function A of t,
+
+2328
+01:32:04,716 --> 01:32:06,156
+just one function,
+
+2329
+01:32:06,156 --> 01:32:08,736
+and that function is called the scale factor.
+
+2330
+01:32:08,736 --> 01:32:15,396
+What this means is that the proper time or the line
+
+2331
+01:32:15,396 --> 01:32:22,056
+interval is the t squared minus A of t squared dx squared.
+
+2332
+01:32:25,436 --> 01:32:28,196
+dx squared plus dy squared plus dz squared.
+
+2333
+01:32:31,056 --> 01:32:33,616
+It may not be obvious to you,
+
+2334
+01:32:33,616 --> 01:32:38,636
+but this space-time with a time dependence,
+
+2335
+01:32:38,636 --> 01:32:38,936
+here,
+
+2336
+01:32:38,936 --> 01:32:42,876
+is very different than flat space-time.
+
+2337
+01:32:43,416 --> 01:32:45,156
+To show you the kind of difference,
+
+2338
+01:32:45,156 --> 01:32:48,656
+supposing we did something similar with space.
+
+2339
+01:32:48,776 --> 01:32:49,136
+Incidentally,
+
+2340
+01:32:49,136 --> 01:32:51,456
+this is the characteristic metric.
+
+2341
+01:32:51,676 --> 01:32:54,516
+If A of t is an expanding function of time,
+
+2342
+01:32:54,516 --> 01:32:56,476
+if it's an increasing function of time,
+
+2343
+01:32:58,096 --> 01:33:00,876
+then that's called an expanding universe.
+
+2344
+01:33:03,096 --> 01:33:04,376
+I'll come back to this,
+
+2345
+01:33:04,376 --> 01:33:07,496
+but let me just show you qualitatively what this means
+
+2346
+01:33:07,496 --> 01:33:10,976
+by giving you the analog for ordinary space.
+
+2347
+01:33:11,696 --> 01:33:14,936
+Let's just think about two dimensions of space,
+
+2348
+01:33:15,236 --> 01:33:17,796
+and let me imagine one of
+
+2349
+01:33:17,796 --> 01:33:20,356
+the directions is an angular direction.
+
+2350
+01:33:20,836 --> 01:33:22,716
+We've already done things like that.
+
+2351
+01:33:22,816 --> 01:33:30,136
+We considered dr squared plus r squared d theta squared.
+
+2352
+01:33:31,676 --> 01:33:35,016
+dr squared plus r squared d theta squared.
+
+2353
+01:33:35,236 --> 01:33:37,416
+That's somewhat similar to this.
+
+2354
+01:33:37,496 --> 01:33:40,096
+The r squared is like dt squared,
+
+2355
+01:33:40,096 --> 01:33:44,916
+and r squared itself is like A squared.
+
+2356
+01:33:45,316 --> 01:33:46,536
+It's a function of t.
+
+2357
+01:33:46,536 --> 01:33:48,296
+A is a function of t.
+
+2358
+01:33:48,736 --> 01:33:49,336
+Here,
+
+2359
+01:33:49,336 --> 01:33:52,836
+r is a function of r,
+
+2360
+01:33:52,836 --> 01:33:54,296
+or r squared is a function of r.
+
+2361
+01:33:54,736 --> 01:33:58,236
+So there's a similarity between this formula here,
+
+2362
+01:33:59,316 --> 01:34:02,216
+dt squared minus A of t squared dx squared,
+
+2363
+01:34:02,216 --> 01:34:05,816
+and the r squared plus r squared d theta squared.
+
+2364
+01:34:05,816 --> 01:34:07,476
+Now what is this space here?
+
+2365
+01:34:12,356 --> 01:34:13,076
+It's a plane.
+
+2366
+01:34:13,716 --> 01:34:15,076
+It's just polar coordinates.
+
+2367
+01:34:15,076 --> 01:34:15,676
+It's a plane.
+
+2368
+01:34:15,716 --> 01:34:16,776
+It's flat spacetime,
+
+2369
+01:34:16,776 --> 01:34:18,316
+and it's just looking at
+
+2370
+01:34:18,316 --> 01:34:19,856
+that spacetime and polar coordinates.
+
+2371
+01:34:20,176 --> 01:34:20,896
+But now,
+
+2372
+01:34:20,896 --> 01:34:23,116
+supposing instead of just r squared,
+
+2373
+01:34:23,116 --> 01:34:25,776
+I put some general function of r in.
+
+2374
+01:34:26,156 --> 01:34:26,636
+First,
+
+2375
+01:34:26,636 --> 01:34:28,376
+before putting a general function in,
+
+2376
+01:34:28,376 --> 01:34:30,076
+let's put in another specific function,
+
+2377
+01:34:30,636 --> 01:34:32,276
+sine of r squared.
+
+2378
+01:34:32,436 --> 01:34:33,776
+What is this space now?
+
+2379
+01:34:34,556 --> 01:34:35,036
+Square.
+
+2380
+01:34:35,816 --> 01:34:36,496
+That's a sphere.
+
+2381
+01:34:36,676 --> 01:34:40,276
+And the way to think about it
+
+2382
+01:34:40,276 --> 01:34:43,876
+now is that the distance around the,
+
+2383
+01:34:43,876 --> 01:34:44,356
+well,
+
+2384
+01:34:44,516 --> 01:34:48,196
+the distance around the theta axis
+
+2385
+01:34:48,196 --> 01:34:51,876
+depends on r in a characteristic way.
+
+2386
+01:34:52,396 --> 01:34:53,416
+Here's the sphere.
+
+2387
+01:34:53,596 --> 01:34:55,396
+Let's think of r as,
+
+2388
+01:34:55,396 --> 01:34:58,336
+r is now like the polar angle.
+
+2389
+01:34:59,076 --> 01:35:00,896
+And as you go around the sphere,
+
+2390
+01:35:00,896 --> 01:35:03,596
+or as you go around the theta direction,
+
+2391
+01:35:04,556 --> 01:35:06,356
+theta I'm having go this way now.
+
+2392
+01:35:06,896 --> 01:35:08,396
+I think I've turned the sphere
+
+2393
+01:35:08,396 --> 01:35:09,896
+on its side for some odd reason.
+
+2394
+01:35:11,656 --> 01:35:12,816
+Why did I do that?
+
+2395
+01:35:12,816 --> 01:35:13,336
+It was stupid.
+
+2396
+01:35:13,916 --> 01:35:14,616
+Let's put it,
+
+2397
+01:35:14,616 --> 01:35:15,476
+let's stand it up again.
+
+2398
+01:35:23,656 --> 01:35:24,996
+Theta goes around this way.
+
+2399
+01:35:26,116 --> 01:35:29,556
+And r is just replacing what I called phi before.
+
+2400
+01:35:30,976 --> 01:35:31,416
+Right?
+
+2401
+01:35:31,416 --> 01:35:33,986
+What's happening is instead of sine
+
+2402
+01:35:33,986 --> 01:35:36,556
+of r just increasing like r,
+
+2403
+01:35:36,976 --> 01:35:39,476
+it increases and then it decreases.
+
+2404
+01:35:40,096 --> 01:35:43,476
+Sine is a function which increases and then decreases.
+
+2405
+01:35:44,076 --> 01:35:44,636
+Right?
+
+2406
+01:35:44,736 --> 01:35:47,096
+It increases from zero to
+
+2407
+01:35:47,096 --> 01:35:49,456
+pi over two and then decreases.
+
+2408
+01:35:49,976 --> 01:35:54,916
+That's why the sphere increases and then decreases.
+
+2409
+01:35:56,216 --> 01:35:57,016
+Right?
+
+2410
+01:35:57,096 --> 01:35:58,926
+It starts growing as you
+
+2411
+01:35:58,926 --> 01:36:00,756
+move away from the south pole.
+
+2412
+01:36:00,756 --> 01:36:04,356
+It starts growing but then shrinks again.
+
+2413
+01:36:07,696 --> 01:36:08,536
+That sphere,
+
+2414
+01:36:08,536 --> 01:36:09,216
+of course,
+
+2415
+01:36:09,216 --> 01:36:10,696
+is not a flat spacetime.
+
+2416
+01:36:11,056 --> 01:36:13,096
+If I only had r squared here,
+
+2417
+01:36:13,096 --> 01:36:16,856
+it would be like looking at just a plane.
+
+2418
+01:36:17,776 --> 01:36:19,256
+With sine squared here,
+
+2419
+01:36:19,256 --> 01:36:21,376
+it's more complicated and it's curved.
+
+2420
+01:36:22,556 --> 01:36:23,076
+Okay?
+
+2421
+01:36:23,636 --> 01:36:25,776
+Supposing I put an arbitrary function,
+
+2422
+01:36:25,776 --> 01:36:28,596
+some kind of function which,
+
+2423
+01:36:28,596 --> 01:36:29,016
+um,
+
+2424
+01:36:30,756 --> 01:36:31,256
+I don't know,
+
+2425
+01:36:31,256 --> 01:36:34,536
+let's put an exponential function here,
+
+2426
+01:36:34,536 --> 01:36:35,556
+e to the two r.
+
+2427
+01:36:36,036 --> 01:36:38,056
+What kind of space would that look like?
+
+2428
+01:36:42,056 --> 01:36:43,536
+It would look like a horn.
+
+2429
+01:36:43,936 --> 01:36:44,076
+Yeah.
+
+2430
+01:36:44,256 --> 01:36:45,156
+It would look like a,
+
+2431
+01:36:45,156 --> 01:36:46,376
+by a horn I mean,
+
+2432
+01:36:46,376 --> 01:36:46,716
+you know,
+
+2433
+01:36:46,716 --> 01:36:47,176
+toot toot.
+
+2434
+01:36:51,756 --> 01:36:56,076
+The distance around the theta axis would grow exponentially.
+
+2435
+01:36:56,816 --> 01:36:58,036
+And it would look like that.
+
+2436
+01:36:59,736 --> 01:37:00,736
+Now it's not growing exponentially.
+
+2437
+01:37:00,736 --> 01:37:01,316
+It's not growing with time.
+
+2438
+01:37:01,476 --> 01:37:02,596
+It's growing with r.
+
+2439
+01:37:03,116 --> 01:37:05,956
+So this would be some kind of space which had
+
+2440
+01:37:05,956 --> 01:37:08,796
+the property that as you move away from r equals zero,
+
+2441
+01:37:08,916 --> 01:37:10,236
+r equals zero is over here,
+
+2442
+01:37:10,236 --> 01:37:11,356
+it grows.
+
+2443
+01:37:11,596 --> 01:37:12,476
+It grows rapidly.
+
+2444
+01:37:13,256 --> 01:37:14,396
+It grows exponentially.
+
+2445
+01:37:16,076 --> 01:37:17,056
+Supposing I put in,
+
+2446
+01:37:17,056 --> 01:37:17,476
+I don't know,
+
+2447
+01:37:17,476 --> 01:37:18,916
+you could put in all kinds of things.
+
+2448
+01:37:19,516 --> 01:37:19,776
+Uh,
+
+2449
+01:37:19,776 --> 01:37:24,296
+I don't know,
+
+2450
+01:37:24,296 --> 01:37:26,256
+e to the two r times,
+
+2451
+01:37:26,256 --> 01:37:26,736
+uh,
+
+2452
+01:37:26,736 --> 01:37:27,316
+times,
+
+2453
+01:37:27,316 --> 01:37:27,716
+uh,
+
+2454
+01:37:27,716 --> 01:37:28,016
+oh,
+
+2455
+01:37:28,016 --> 01:37:28,316
+I don't know.
+
+2456
+01:37:28,316 --> 01:37:31,346
+Some arbitrary function which grows
+
+2457
+01:37:31,346 --> 01:37:34,376
+and at the same time oscillates.
+
+2458
+01:37:34,916 --> 01:37:36,996
+It grows and oscillates at the same time.
+
+2459
+01:37:37,276 --> 01:37:37,716
+Well,
+
+2460
+01:37:37,716 --> 01:37:41,476
+you could make very complicated kinds
+
+2461
+01:37:41,476 --> 01:37:45,236
+of spaces which look like that.
+
+2462
+01:37:48,916 --> 01:37:50,016
+They're just surfaces,
+
+2463
+01:37:50,016 --> 01:37:53,356
+but the character of the surface and the way that
+
+2464
+01:37:53,356 --> 01:37:56,696
+it grows as you move away from r equals zero
+
+2465
+01:37:56,696 --> 01:37:58,296
+depends on the space.
+
+2466
+01:37:58,296 --> 01:37:59,176
+So what is function f of r?
+
+2467
+01:38:01,256 --> 01:38:03,116
+Most of these spaces are not flat.
+
+2468
+01:38:03,876 --> 01:38:05,416
+They have curvature of all kinds
+
+2469
+01:38:05,416 --> 01:38:06,956
+that we'll talk about next time.
+
+2470
+01:38:07,456 --> 01:38:10,176
+But that's exactly what this a of t does here.
+
+2471
+01:38:10,416 --> 01:38:14,356
+It creates a space-time which as a function of time,
+
+2472
+01:38:14,356 --> 01:38:15,716
+the space-time grows.
+
+2473
+01:38:16,076 --> 01:38:16,476
+Grows,
+
+2474
+01:38:16,476 --> 01:38:17,016
+shrinks,
+
+2475
+01:38:17,016 --> 01:38:18,536
+does whatever it does.
+
+2476
+01:38:19,216 --> 01:38:21,156
+It can do all kinds of wiggles.
+
+2477
+01:38:21,516 --> 01:38:22,576
+And instead of r,
+
+2478
+01:38:22,576 --> 01:38:23,636
+this would be t.
+
+2479
+01:38:24,396 --> 01:38:28,276
+So this is the metric of a time-dependent space.
+
+2480
+01:38:28,276 --> 01:38:28,656
+It's a space-time.
+
+2481
+01:38:29,076 --> 01:38:31,496
+And if a is a growing function,
+
+2482
+01:38:31,496 --> 01:38:34,256
+then it's an expanding space-time.
+
+2483
+01:38:34,876 --> 01:38:37,616
+That's all it means to say
+
+2484
+01:38:37,616 --> 01:38:40,356
+that space-time is expanding in this language,
+
+2485
+01:38:40,556 --> 01:38:41,936
+in this language of a metric tensor.
+
+2486
+01:38:43,596 --> 01:38:44,196
+Uh,
+
+2487
+01:38:44,196 --> 01:38:45,416
+we'll come back to it.
+
+2488
+01:38:46,596 --> 01:38:49,996
+Next time we'll talk about curvature and parallel transport.
+
+2489
+01:38:51,976 --> 01:38:52,576
+And,
+
+2490
+01:38:52,576 --> 01:38:52,996
+uh,
+
+2491
+01:38:52,996 --> 01:38:55,116
+try to get to the Einstein equations.
+
+2492
+01:39:03,136 --> 01:39:06,636
+The preceding program is copyrighted by Stanford University.
+
+2493
+01:39:07,096 --> 01:39:09,776
+Please visit us at stanford.edu.
+
