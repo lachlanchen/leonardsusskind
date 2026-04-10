@@ -1,0 +1,2801 @@
+# Transcript
+
+Source: core/quantum_mechanics/2012_winter_modern_physics_stanford/038 - Lecture 9 ｜ Modern Physics： Quantum Mechanics (Stanford) [7vzKUoBfWUY].mp4
+
+- [00:00:06,480 - 00:00:09,740] This program is brought to you by Stanford University.
+- [00:00:10,200 - 00:00:12,720] Please visit us at stanford.edu.
+- [00:00:15,060 - 00:00:15,780] Now,
+- [00:00:15,780 - 00:00:18,800] how much people after Michelson-Morley really,
+- [00:00:19,120 - 00:00:20,810] there were all kinds
+- [00:00:20,810 - 00:00:22,500] of explanations of Michelson-Morley experiment.
+- [00:00:23,040 - 00:00:23,760] Ether drift,
+- [00:00:23,760 - 00:00:25,740] that the ether was being swept
+- [00:00:25,740 - 00:00:27,720] along with the earth and so forth.
+- [00:00:28,900 - 00:00:30,220] Or Lorentz contraction.
+- [00:00:30,840 - 00:00:31,080] Yeah,
+- [00:00:31,080 - 00:00:31,560] I mean,
+- [00:00:31,560 - 00:00:32,180] Lorentz contraction,
+- [00:00:32,180 - 00:00:32,580] of course,
+- [00:00:32,580 - 00:00:33,000] was correct.
+- [00:00:33,820 - 00:00:36,260] But the way Lorentz thought about it
+- [00:00:36,260 - 00:00:38,700] is things moving relative to the ether
+- [00:00:38,700 - 00:00:40,780] somehow got squeezed by the ether.
+- [00:00:41,260 - 00:00:41,780] Well,
+- [00:00:41,780 - 00:00:43,940] I suppose you could always describe it that way,
+- [00:00:44,020 - 00:00:46,180] but it wasn't the right way that
+- [00:00:46,180 - 00:00:48,340] Einstein thought about it in the end.
+- [00:00:48,560 - 00:00:50,820] So they had these mechanistic descriptions.
+- [00:00:51,040 - 00:00:54,500] They had these mechanistic attempts at explanations,
+- [00:00:55,480 - 00:00:57,700] which were not the real form.
+- [00:00:57,720 - 00:01:00,400] They were the far-reaching principle that Einstein came to.
+- [00:01:00,800 - 00:01:03,400] So I don't know how much
+- [00:01:03,400 - 00:01:06,000] the Michelson-Morley experiment really shook the foundations,
+- [00:01:06,840 - 00:01:08,590] but it certainly was a signal
+- [00:01:08,590 - 00:01:10,340] that there was something going on
+- [00:01:10,340 - 00:01:12,360] that was different than what they expected.
+- [00:01:12,900 - 00:01:14,440] So Michelson-Morley.
+- [00:01:14,780 - 00:01:20,780] And does everybody know what the problem with radiation was?
+- [00:01:21,140 - 00:01:23,240] The problem with black body radiation?
+- [00:01:23,720 - 00:01:24,360] The ultraviolet.
+- [00:01:24,360 - 00:01:24,900] The ultraviolet.
+- [00:01:25,080 - 00:01:26,660] The ultraviolet.
+- [00:01:27,720 - 00:01:28,040] The ultraviolet catastrophe.
+- [00:01:28,580 - 00:01:28,900] Well,
+- [00:01:28,900 - 00:01:29,260] if not,
+- [00:01:29,260 - 00:01:30,420] I'll explain it right now.
+- [00:01:32,899 - 00:01:34,540] It was a conflict.
+- [00:01:34,780 - 00:01:36,860] It was a conflict between two sets of principles.
+- [00:01:37,640 - 00:01:40,980] One principle was the wave theory of light.
+- [00:01:41,200 - 00:01:42,810] And the wave theory of
+- [00:01:42,810 - 00:01:44,420] light said that light could come,
+- [00:01:44,560 - 00:01:45,120] light,
+- [00:01:45,120 - 00:01:46,320] electromagnetic radiation,
+- [00:01:46,320 - 00:01:48,600] could come in any wavelength,
+- [00:01:48,600 - 00:01:48,960] whatever.
+- [00:01:49,640 - 00:01:52,800] Each wavelength behaved like a harmonic oscillator.
+- [00:01:53,380 - 00:01:56,660] The mathematics of a wave of a given wavelength,
+- [00:01:56,660 - 00:01:58,800] is just the mathematics of an oscillation.
+- [00:01:59,780 - 00:02:00,420] So,
+- [00:02:00,420 - 00:02:02,320] and this was understood long
+- [00:02:02,320 - 00:02:04,220] before the quantum mechanics of oscillations.
+- [00:02:04,500 - 00:02:07,780] Was understood in the late 19th century,
+- [00:02:07,940 - 00:02:10,680] that the mechanics of light,
+- [00:02:10,680 - 00:02:12,420] the mechanics of,
+- [00:02:12,560 - 00:02:13,740] not just light,
+- [00:02:13,740 - 00:02:14,820] any kind of waves,
+- [00:02:14,820 - 00:02:18,920] that each wave was basically a harmonic oscillator.
+- [00:02:18,980 - 00:02:20,220] Each wavelength of waves.
+- [00:02:20,460 - 00:02:21,640] That was number one.
+- [00:02:23,780 - 00:02:25,520] The other thing,
+- [00:02:25,520 - 00:02:27,560] that it was in conflict with,
+- [00:02:27,680 - 00:02:29,940] was the principle of statistical mechanics.
+- [00:02:30,620 - 00:02:33,340] According to the principles of statistical mechanics,
+- [00:02:33,740 - 00:02:36,380] there's something called the equi partition of energy.
+- [00:02:37,560 - 00:02:38,200] That,
+- [00:02:38,200 - 00:02:41,840] if you have a collection of harmonic oscillators,
+- [00:02:42,000 - 00:02:44,160] and it doesn't matter what
+- [00:02:44,160 - 00:02:46,320] the frequency of the oscillators are.
+- [00:02:46,560 - 00:02:47,220] There are many,
+- [00:02:47,220 - 00:02:48,520] many different oscillators,
+- [00:02:48,520 - 00:02:49,520] with different frequencies.
+- [00:02:49,920 - 00:02:52,080] When they come into thermal equilibrium,
+- [00:02:52,920 - 00:02:55,500] each one has the same amount of energy,
+- [00:02:55,520 - 00:02:59,320] basically it said that the energy of an oscillation,
+- [00:03:00,200 - 00:03:04,080] is equal to Boltzmann's constant times the temperature,
+- [00:03:04,400 - 00:03:07,150] quite independently of what the
+- [00:03:07,150 - 00:03:09,900] frequency of the oscillator is.
+- [00:03:10,360 - 00:03:11,000] Alright,
+- [00:03:11,000 - 00:03:13,220] so now you have light in a cavity,
+- [00:03:13,500 - 00:03:16,140] or electromagnetic radiation in a cavity.
+- [00:03:16,380 - 00:03:18,220] And in that cavity you can
+- [00:03:18,220 - 00:03:20,060] have waves bouncing back and forth.
+- [00:03:20,440 - 00:03:22,830] You can't have waves which of course
+- [00:03:22,830 - 00:03:25,220] are longer than the size of the cavity.
+- [00:03:25,220 - 00:03:26,380] They won't fit into the cavity.
+- [00:03:26,880 - 00:03:29,160] But you can have waves of arbitrary
+- [00:03:29,160 - 00:03:31,440] wavelength that will fit into the cavity.
+- [00:03:31,540 - 00:03:32,920] Very small wavelengths.
+- [00:03:34,720 - 00:03:36,040] Wavelengths like that,
+- [00:03:36,040 - 00:03:37,820] that just barely fit into the cavity.
+- [00:03:38,340 - 00:03:40,230] And every single wavelength
+- [00:03:40,230 - 00:03:42,120] corresponds to a harmonic oscillator,
+- [00:03:42,280 - 00:03:46,460] according to the principles of statistical mechanics.
+- [00:03:47,120 - 00:03:49,480] According to the principles of Boltzmann,
+- [00:03:49,480 - 00:03:50,220] and Maxwell,
+- [00:03:50,220 - 00:03:51,700] and Gibbs,
+- [00:03:51,900 - 00:03:54,340] and the other people who invented statistical mechanics,
+- [00:03:55,840 - 00:03:57,850] every one of these oscillations should
+- [00:03:57,850 - 00:03:59,860] have exactly the same amount of energy.
+- [00:04:00,220 - 00:04:00,740] Well,
+- [00:04:00,740 - 00:04:03,060] that just means an infinite amount of energy,
+- [00:04:03,180 - 00:04:04,500] because there's an infinite number
+- [00:04:04,500 - 00:04:05,820] of different kinds of waves
+- [00:04:05,820 - 00:04:07,700] that can be supported inside the cavity.
+- [00:04:08,480 - 00:04:09,000] Well,
+- [00:04:09,000 - 00:04:09,680] that's a disaster.
+- [00:04:10,160 - 00:04:12,980] If you bring the cavity to thermal equilibrium,
+- [00:04:13,100 - 00:04:14,610] and it has an infinite
+- [00:04:14,610 - 00:04:16,120] number of different kinds of oscillations,
+- [00:04:16,120 - 00:04:17,380] each with the same energy,
+- [00:04:18,060 - 00:04:20,640] then there's an infinite amount of energy in the cavity,
+- [00:04:21,899 - 00:04:23,960] and it would simply melt,
+- [00:04:24,340 - 00:04:24,580] and it would just destroy the cavity,
+- [00:04:24,940 - 00:04:26,680] or vaporize the cavity,
+- [00:04:26,800 - 00:04:28,560] or destroy the cavity in one way or another.
+- [00:04:30,180 - 00:04:32,280] The result is something was deeply wrong.
+- [00:04:32,920 - 00:04:33,400] Now,
+- [00:04:33,400 - 00:04:34,140] how wrong,
+- [00:04:34,140 - 00:04:35,460] people didn't really know.
+- [00:04:35,540 - 00:04:38,270] They thought maybe there was something wrong
+- [00:04:38,270 - 00:04:41,000] with the way the atoms emitted radiation.
+- [00:04:41,280 - 00:04:42,020] For some reason,
+- [00:04:42,020 - 00:04:44,060] they didn't emit very high frequency radiation.
+- [00:04:44,340 - 00:04:45,020] Nobody really knew.
+- [00:04:47,780 - 00:04:49,520] Planck did not recognize.
+- [00:04:49,960 - 00:04:51,700] Planck was not the one who recognized.
+- [00:04:51,700 - 00:04:52,800] He did write down,
+- [00:04:54,340 - 00:04:55,000] E equals h nu.
+- [00:04:56,880 - 00:04:57,560] No,
+- [00:04:57,560 - 00:04:58,560] he wrote down,
+- [00:04:58,620 - 00:05:02,520] E equals n times h nu.
+- [00:05:03,160 - 00:05:07,040] He did say that energy comes in discrete multiples
+- [00:05:08,120 - 00:05:12,620] of a certain constant times the frequency of oscillators,
+- [00:05:13,200 - 00:05:15,280] and it comes in multiples of that.
+- [00:05:15,500 - 00:05:16,700] He did write that down.
+- [00:05:16,820 - 00:05:18,240] But he was not thinking
+- [00:05:18,240 - 00:05:19,660] about the radiation in the cavity.
+- [00:05:20,440 - 00:05:24,280] His theory was that the oscillators in the walls
+- [00:05:24,340 - 00:05:26,680] the walls of the cavity,
+- [00:05:26,820 - 00:05:28,460] the things which emitted the radiation,
+- [00:05:29,060 - 00:05:31,200] that those things had frequencies which
+- [00:05:31,200 - 00:05:33,340] were integer multiples of h nu.
+- [00:05:33,800 - 00:05:35,940] That was his theory,
+- [00:05:36,060 - 00:05:39,800] and therefore could only emit radiation of
+- [00:05:39,800 - 00:05:43,540] integer multiples of E equals h nu.
+- [00:05:44,300 - 00:05:45,820] He didn't have a correct
+- [00:05:45,820 - 00:05:47,340] theory of what was going on.
+- [00:05:47,480 - 00:05:48,640] He wrote this equation down,
+- [00:05:48,820 - 00:05:50,920] but the equation didn't apply
+- [00:05:50,920 - 00:05:53,020] to the radiation in the cavity,
+- [00:05:53,020 - 00:05:56,140] it applied to the things in the walls,
+- [00:05:56,360 - 00:05:57,820] according to Planck.
+- [00:05:58,320 - 00:06:00,770] He managed to fit the
+- [00:06:00,770 - 00:06:03,220] curves of blackbody radiation correctly.
+- [00:06:04,460 - 00:06:10,000] He managed to reproduce the spectrum of blackbody radiation,
+- [00:06:10,360 - 00:06:12,900] but by arguments which really didn't make sense.
+- [00:06:13,180 - 00:06:17,070] The main thing in the argument is that
+- [00:06:17,070 - 00:06:20,960] there was a parameter h in the problem.
+- [00:06:20,960 - 00:06:25,120] The way we understand it now is to say
+- [00:06:25,760 - 00:06:31,020] you simply can't have in each one of these oscillations,
+- [00:06:31,060 - 00:06:33,120] you can't have less than one quantum.
+- [00:06:34,820 - 00:06:36,600] If each quantum,
+- [00:06:36,600 - 00:06:39,220] if each oscillator has the same energy,
+- [00:06:39,940 - 00:06:42,960] and you take oscillators which have very,
+- [00:06:42,960 - 00:06:44,040] very high frequency,
+- [00:06:45,260 - 00:06:48,180] then they will have to have less than one quantum.
+- [00:06:49,320 - 00:06:50,200] In other words,
+- [00:06:50,200 - 00:06:52,360] if E equals kT,
+- [00:06:52,360 - 00:06:54,420] and kT is a certain number,
+- [00:06:54,600 - 00:06:55,200] temperature,
+- [00:06:55,200 - 00:06:58,520] Boltzmann's constant is just a numerical constant,
+- [00:06:58,900 - 00:07:00,740] whatever the temperature is,
+- [00:07:01,940 - 00:07:05,700] then there will be frequencies which are so large
+- [00:07:05,700 - 00:07:09,120] that this energy is less than one quantum,
+- [00:07:10,000 - 00:07:11,480] one quantum of energy.
+- [00:07:11,700 - 00:07:13,400] According to classical physics,
+- [00:07:13,400 - 00:07:14,140] no problem.
+- [00:07:14,240 - 00:07:18,940] You can have an oscillator with any amount of energy.
+- [00:07:18,940 - 00:07:20,820] According to quantum mechanics,
+- [00:07:21,220 - 00:07:23,070] you cannot have less than
+- [00:07:23,070 - 00:07:24,920] one quantum of worth of energy.
+- [00:07:25,100 - 00:07:27,800] Less than one quantum means no quanta.
+- [00:07:28,060 - 00:07:30,810] And so Einstein's idea was that
+- [00:07:30,810 - 00:07:33,560] the waves inside the cavity were quantized,
+- [00:07:33,560 - 00:07:37,780] and all those waves which had frequencies so large,
+- [00:07:37,780 - 00:07:39,360] or wavelengths so small,
+- [00:07:39,940 - 00:07:42,360] that h knew exceeded kT,
+- [00:07:42,680 - 00:07:43,960] they just wouldn't be there.
+- [00:07:44,580 - 00:07:46,120] That was Einstein's idea.
+- [00:07:46,220 - 00:07:47,570] They wouldn't be there because you
+- [00:07:47,570 - 00:07:48,920] couldn't have less than one frequency.
+- [00:07:48,940 - 00:07:49,160] So,
+- [00:07:49,160 - 00:07:52,260] you could have less than one photon for each oscillator.
+- [00:07:54,840 - 00:07:55,340] So,
+- [00:07:55,340 - 00:07:56,420] now at first,
+- [00:07:56,420 - 00:07:56,820] of course,
+- [00:07:57,620 - 00:08:00,640] people did not believe Einstein,
+- [00:08:00,980 - 00:08:02,980] that light was composed of particles,
+- [00:08:03,140 - 00:08:05,000] that it was composed of discrete quanta.
+- [00:08:05,780 - 00:08:09,820] For about 20 years,
+- [00:08:09,980 - 00:08:11,400] a little bit less than 20 years,
+- [00:08:11,460 - 00:08:12,700] for about 18 years,
+- [00:08:13,640 - 00:08:14,140] people,
+- [00:08:14,140 - 00:08:15,760] Einstein was very famous,
+- [00:08:15,960 - 00:08:18,040] they all agreed he had done something wonderful
+- [00:08:18,040 - 00:08:20,190] when he had said that the radiation
+- [00:08:20,190 - 00:08:22,340] inside the cavity had E equals h nu,
+- [00:08:22,560 - 00:08:24,200] but yet they didn't believe it.
+- [00:08:24,300 - 00:08:25,620] They thought there was going to
+- [00:08:25,620 - 00:08:26,940] be some way to wiggle out,
+- [00:08:27,060 - 00:08:28,910] and somehow the wave theory of
+- [00:08:28,910 - 00:08:30,760] light would wind up being correct.
+- [00:08:31,240 - 00:08:32,380] They didn't believe it.
+- [00:08:32,419 - 00:08:34,600] They didn't believe it until experiments were done
+- [00:08:35,780 - 00:08:39,539] where light shines off atoms,
+- [00:08:39,659 - 00:08:40,919] gives the atom a kick,
+- [00:08:41,120 - 00:08:44,020] and radiation goes off in other directions.
+- [00:08:45,040 - 00:08:46,680] This is the Compton effect.
+- [00:08:46,680 - 00:08:48,430] The Compton effect of scattering
+- [00:08:48,430 - 00:08:50,180] of light by charged particles,
+- [00:08:50,440 - 00:08:53,580] and it was discovered that the energies and the angles
+- [00:08:53,580 - 00:08:56,600] exactly conformed to what you would expect
+- [00:08:56,600 - 00:08:58,080] from the scattering of particles.
+- [00:08:58,900 - 00:09:00,000] Particles come in,
+- [00:09:00,000 - 00:09:01,220] particles go out,
+- [00:09:01,340 - 00:09:05,040] and if you use energy and momentum conservation,
+- [00:09:05,520 - 00:09:07,410] then you can predict various
+- [00:09:07,410 - 00:09:09,300] things about the angles and energy
+- [00:09:09,300 - 00:09:10,840] that the radiation goes off in.
+- [00:09:11,120 - 00:09:13,920] Those things did not follow just from wave theory.
+- [00:09:14,060 - 00:09:15,180] They followed from wave theory,
+- [00:09:15,260 - 00:09:16,660] supplemented with the energy,
+- [00:09:16,680 - 00:09:19,840] with the idea that the radiation comes in discrete packets,
+- [00:09:20,040 - 00:09:21,440] and when those experiments were done,
+- [00:09:22,100 - 00:09:24,730] it basically took 18 years for people
+- [00:09:24,730 - 00:09:27,360] to buy into the theory of photons,
+- [00:09:28,000 - 00:09:29,320] and within weeks,
+- [00:09:29,320 - 00:09:30,720] literally within weeks,
+- [00:09:30,780 - 00:09:31,660] or maybe it was months,
+- [00:09:31,660 - 00:09:32,360] I'm not sure,
+- [00:09:32,640 - 00:09:35,560] everybody agreed light is made out of photons.
+- [00:09:36,440 - 00:09:38,050] So it's one of these critical
+- [00:09:38,050 - 00:09:39,660] things that happens all of a sudden,
+- [00:09:39,800 - 00:09:41,980] and you wonder why it took so long,
+- [00:09:42,140 - 00:09:45,520] but a certain particular experiment sharply,
+- [00:09:46,719 - 00:09:50,700] sharply separated the time when people believed in photons
+- [00:09:50,700 - 00:09:51,700] until they didn't.
+- [00:09:52,460 - 00:09:53,340] By that time,
+- [00:09:53,340 - 00:09:53,800] of course,
+- [00:09:53,800 - 00:09:56,220] everybody knew that the foundations
+- [00:09:56,220 - 00:10:00,400] of classical mechanics were wrong when it came to atoms,
+- [00:10:00,560 - 00:10:02,660] but they didn't want to believe that
+- [00:10:02,660 - 00:10:04,760] the wave theory of light was wrong.
+- [00:10:05,020 - 00:10:05,280] Of course,
+- [00:10:05,280 - 00:10:06,640] the wave theory of light was not wrong,
+- [00:10:06,800 - 00:10:07,620] it was just sort of incomplete.
+- [00:10:09,080 - 00:10:10,740] Didn't the photoelectric effect show that
+- [00:10:10,740 - 00:10:12,400] there were photons in the wave?
+- [00:10:12,420 - 00:10:12,560] Yeah,
+- [00:10:12,560 - 00:10:13,850] you would think that the
+- [00:10:13,850 - 00:10:15,140] photoelectric effect would have been enough,
+- [00:10:15,140 - 00:10:17,520] but psychologically it was not enough.
+- [00:10:18,060 - 00:10:18,700] Right,
+- [00:10:18,700 - 00:10:19,340] exactly.
+- [00:10:20,800 - 00:10:24,060] I've got a candidate date of 1915,
+- [00:10:24,420 - 00:10:27,300] when Bohr explained the hydrogen atom.
+- [00:10:27,380 - 00:10:28,080] It was 1913.
+- [00:10:28,400 - 00:10:28,760] 13,
+- [00:10:28,760 - 00:10:31,920] using Planck's constant.
+- [00:10:32,280 - 00:10:32,400] Yeah,
+- [00:10:32,400 - 00:10:33,800] yeah,
+- [00:10:33,800 - 00:10:36,760] when he reproduced the Rydberg constant,
+- [00:10:37,000 - 00:10:40,680] the levels of,
+- [00:10:40,680 - 00:10:41,360] yeah,
+- [00:10:41,360 - 00:10:43,240] that was certainly a very critical time,
+- [00:10:43,440 - 00:10:45,120] but that was not enough for them to believe
+- [00:10:45,140 - 00:10:45,790] that they were going to be
+- [00:10:45,790 - 00:10:46,440] able to buy into the photon theory.
+- [00:10:48,439 - 00:10:50,789] So the photon theory of
+- [00:10:50,789 - 00:10:53,140] light they didn't buy into yet.
+- [00:10:53,400 - 00:10:56,820] They did recognize that something radically different
+- [00:10:56,820 - 00:11:00,960] was governing the motion of atoms and electrons in atoms
+- [00:11:00,960 - 00:11:02,100] than classical mechanics,
+- [00:11:02,100 - 00:11:03,620] and that's absolutely right.
+- [00:11:03,820 - 00:11:04,040] I mean,
+- [00:11:04,040 - 00:11:13,080] Bohr's explanation of atomic levels was a sharp transition.
+- [00:11:13,080 - 00:11:15,520] So there were several sharp transitions,
+- [00:11:15,840 - 00:11:19,200] but the whole thing stretched
+- [00:11:19,200 - 00:11:22,560] itself out over about 20 years,
+- [00:11:22,700 - 00:11:23,240] from 19,
+- [00:11:23,240 - 00:11:23,560] well,
+- [00:11:23,560 - 00:11:24,560] 25 years,
+- [00:11:24,800 - 00:11:25,840] from 1900,
+- [00:11:25,840 - 00:11:28,980] Planck's discovery of the Planck constant,
+- [00:11:29,100 - 00:11:31,800] to basically 1926,
+- [00:11:31,800 - 00:11:32,840] 27,
+- [00:11:32,840 - 00:11:34,000] something like that,
+- [00:11:34,160 - 00:11:34,820] with,
+- [00:11:34,820 - 00:11:36,000] well,
+- [00:11:36,000 - 00:11:36,500] 26,
+- [00:11:36,500 - 00:11:38,580] which was Schrödinger,
+- [00:11:38,580 - 00:11:39,620] Heisenberg,
+- [00:11:39,640 - 00:11:41,200] and a little bit later,
+- [00:11:41,200 - 00:11:41,760] Dirac,
+- [00:11:41,760 - 00:11:43,020] putting the elements together.
+- [00:11:43,360 - 00:11:44,760] It was Einstein,
+- [00:11:44,760 - 00:11:49,360] it was Einstein who understood most clearly
+- [00:11:49,360 - 00:11:52,460] and said it most forcefully,
+- [00:11:52,460 - 00:11:53,080] very early,
+- [00:11:53,140 - 00:11:54,520] I'm not sure exactly what year,
+- [00:11:54,520 - 00:11:56,540] very early,
+- [00:11:56,660 - 00:11:59,100] that whatever's going on,
+- [00:11:59,100 - 00:12:01,120] because of this new quantum structure,
+- [00:12:01,600 - 00:12:04,820] one had to suppose that
+- [00:12:04,820 - 00:12:08,040] nature was fundamentally not deterministic.
+- [00:12:08,320 - 00:12:09,660] He was the one who
+- [00:12:09,660 - 00:12:11,000] said that the emission of radiation,
+- [00:12:11,000 - 00:12:11,960] he realized,
+- [00:12:11,960 - 00:12:12,920] was a spontaneous,
+- [00:12:13,300 - 00:12:16,000] he spoke about spontaneous emission of photons
+- [00:12:16,000 - 00:12:18,260] from atoms and from other things,
+- [00:12:18,560 - 00:12:21,660] and he understood that it was not deterministic,
+- [00:12:21,780 - 00:12:25,180] that it was essentially probabilistic,
+- [00:12:25,709 - 00:12:27,280] and it was he who first said,
+- [00:12:27,280 - 00:12:28,460] nature is not,
+- [00:12:28,620 - 00:12:30,360] he who first said,
+- [00:12:30,360 - 00:12:31,380] God rolls dice.
+- [00:12:34,180 - 00:12:39,500] And it was not Bohr,
+- [00:12:39,500 - 00:12:39,840] not,
+- [00:12:42,719 - 00:12:43,680] not Bohr,
+- [00:12:43,680 - 00:12:44,240] not Bohr,
+- [00:12:44,240 - 00:12:44,300] not Bohr,
+- [00:12:44,300 - 00:12:44,300] not Bohr,
+- [00:12:44,300 - 00:12:44,300] not Bohr,
+- [00:12:44,300 - 00:12:44,300] not Bohr,
+- [00:12:44,300 - 00:12:44,300] not Bohr,
+- [00:12:44,300 - 00:12:44,300] not Bohr,
+- [00:12:44,300 - 00:12:44,340] not Bohr,
+- [00:12:44,340 - 00:12:44,780] anybody else.
+- [00:12:44,840 - 00:12:46,180] It was Einstein who said that first.
+- [00:12:46,760 - 00:12:50,340] And I think it's kind of interesting,
+- [00:12:50,340 - 00:12:50,660] though,
+- [00:12:50,740 - 00:12:53,120] that Bohr and the people
+- [00:12:53,120 - 00:12:55,500] who were working with the atom
+- [00:12:55,500 - 00:12:56,860] were still working with,
+- [00:12:56,860 - 00:13:00,180] with essentially particles
+- [00:13:00,920 - 00:13:03,760] in specific orbits and things like that.
+- [00:13:03,780 - 00:13:04,000] Yes,
+- [00:13:04,000 - 00:13:04,240] yes.
+- [00:13:04,560 - 00:13:06,540] And they were trying to jigger
+- [00:13:06,540 - 00:13:08,520] it to get the quantum effects.
+- [00:13:08,680 - 00:13:09,120] That's right.
+- [00:13:09,180 - 00:13:10,740] So it's not completely clear
+- [00:13:11,000 - 00:13:13,000] that they recognized the magnitude of their problem.
+- [00:13:13,380 - 00:13:13,860] Right.
+- [00:13:14,740 - 00:13:15,220] When,
+- [00:13:15,220 - 00:13:19,360] when Heisenberg finally decided something's,
+- [00:13:20,000 - 00:13:20,820] something's wrong with the whole thing,
+- [00:13:20,900 - 00:13:21,520] we have to jump it,
+- [00:13:21,520 - 00:13:21,880] let's try.
+- [00:13:22,220 - 00:13:22,700] Yeah.
+- [00:13:23,040 - 00:13:24,240] But as I said,
+- [00:13:24,240 - 00:13:27,120] Einstein had already said,
+- [00:13:27,320 - 00:13:29,400] the world is not deterministic,
+- [00:13:29,500 - 00:13:32,320] and you can never ever know enough to,
+- [00:13:32,360 - 00:13:37,320] to be able to predict the emission of,
+- [00:13:37,540 - 00:13:39,320] the time of emission of a photon.
+- [00:13:39,320 - 00:13:42,520] There's nothing you can do to measure,
+- [00:13:42,660 - 00:13:44,900] that you can measure enough to know
+- [00:13:44,900 - 00:13:46,440] when an atom is going to decay.
+- [00:13:46,900 - 00:13:49,580] He also talked about radioactivity the same way.
+- [00:13:49,680 - 00:13:51,080] He said there's nothing you can do,
+- [00:13:51,120 - 00:13:52,880] no measurement that you can make in the atom.
+- [00:13:53,520 - 00:13:54,000] He,
+- [00:13:54,000 - 00:13:54,840] he sensed that.
+- [00:13:54,940 - 00:13:56,960] He could tell from what was going on that,
+- [00:13:59,579 - 00:14:01,400] that physics was fundamentally limited
+- [00:14:01,880 - 00:14:05,860] to probabilistic explanations of things.
+- [00:14:06,840 - 00:14:07,780] I'm just wondering,
+- [00:14:07,780 - 00:14:08,500] since every,
+- [00:14:08,500 - 00:14:12,520] every observation of a photon involves an electron,
+- [00:14:13,420 - 00:14:14,880] Or some charged particle,
+- [00:14:14,880 - 00:14:15,560] some charge.
+- [00:14:15,760 - 00:14:18,720] Isn't it enough that one of those particles is quantized?
+- [00:14:19,060 - 00:14:19,620] Um,
+- [00:14:19,620 - 00:14:22,540] it's enough to know that one of them is quantized
+- [00:14:22,540 - 00:14:23,600] to prove that the other is.
+- [00:14:25,360 - 00:14:25,920] Uh,
+- [00:14:25,920 - 00:14:29,540] you really can't,
+- [00:14:29,540 - 00:14:32,980] you really can't couple together classical things
+- [00:14:32,980 - 00:14:34,340] to quantum mechanical things.
+- [00:14:34,480 - 00:14:35,380] It doesn't make sense.
+- [00:14:35,600 - 00:14:36,260] You run into,
+- [00:14:36,260 - 00:14:38,120] you run into contradiction.
+- [00:14:38,859 - 00:14:39,300] Uh,
+- [00:14:39,300 - 00:14:41,460] trying to keep part of a,
+- [00:14:41,460 - 00:14:44,080] part of a theory classical and the rest quantum mechanical.
+- [00:14:44,800 - 00:14:47,220] It really does run itself into the ground,
+- [00:14:47,400 - 00:14:48,100] uh,
+- [00:14:48,100 - 00:14:49,500] pretty quickly.
+- [00:14:49,640 - 00:14:50,020] So,
+- [00:14:50,020 - 00:14:52,280] it's enough to know that one is quantum mechanical
+- [00:14:52,280 - 00:14:54,260] to know that the other has to be quantum mechanical.
+- [00:14:55,619 - 00:14:56,060] Um,
+- [00:14:56,060 - 00:14:56,500] but,
+- [00:14:56,500 - 00:14:56,900] uh,
+- [00:14:56,900 - 00:14:58,860] yeah.
+- [00:14:59,040 - 00:14:59,480] Yeah,
+- [00:14:59,480 - 00:14:59,680] so,
+- [00:14:59,680 - 00:15:02,640] so why did Einstein never really accept the theory?
+- [00:15:02,780 - 00:15:02,860] I mean,
+- [00:15:02,860 - 00:15:05,180] he was never really satisfied with quantum mechanics,
+- [00:15:05,340 - 00:15:05,820] even though,
+- [00:15:05,820 - 00:15:07,020] what you just said,
+- [00:15:07,560 - 00:15:08,160] I mean,
+- [00:15:08,160 - 00:15:09,640] he was one of the first scientists.
+- [00:15:09,900 - 00:15:09,940] Well,
+- [00:15:09,940 - 00:15:11,600] I don't really know.
+- [00:15:14,599 - 00:15:15,079] Um,
+- [00:15:15,079 - 00:15:16,200] I don't really know.
+- [00:15:16,780 - 00:15:18,220] If I had to guess,
+- [00:15:18,220 - 00:15:20,040] I would guess he was very,
+- [00:15:20,040 - 00:15:20,800] very uncomfortable
+- [00:15:20,800 - 00:15:23,020] with the idea of a probabilistic theory.
+- [00:15:24,020 - 00:15:25,540] What does probability mean?
+- [00:15:26,380 - 00:15:28,420] You flip a coin a thousand times.
+- [00:15:28,580 - 00:15:30,180] What does it tell you about nature
+- [00:15:30,860 - 00:15:33,520] that the probability is 50% heads,
+- [00:15:33,520 - 00:15:34,640] 50% tails?
+- [00:15:35,360 - 00:15:37,000] Does it tell you anything about nature?
+- [00:15:37,859 - 00:15:39,480] Does it tell you that,
+- [00:15:39,480 - 00:15:39,660] uh,
+- [00:15:39,920 - 00:15:42,520] that it will turn up heads 500 times?
+- [00:15:42,960 - 00:15:43,240] No,
+- [00:15:43,240 - 00:15:44,400] it doesn't tell you that.
+- [00:15:44,760 - 00:15:46,390] Does it tell you 500
+- [00:15:46,390 - 00:15:48,020] times within the margin of error,
+- [00:15:48,140 - 00:15:49,740] the margin of error being what,
+- [00:15:49,740 - 00:15:51,300] square of 1,030?
+- [00:15:52,280 - 00:15:52,720] No,
+- [00:15:52,720 - 00:15:53,940] it doesn't tell you that.
+- [00:15:54,480 - 00:15:56,490] Does it tell you that
+- [00:15:56,490 - 00:15:58,500] you cannot flip a thousand heads?
+- [00:15:58,980 - 00:15:59,420] No,
+- [00:15:59,420 - 00:16:00,560] it doesn't tell you that.
+- [00:16:00,920 - 00:16:01,900] What does it tell you?
+- [00:16:01,920 - 00:16:03,800] It tells you that it's
+- [00:16:03,800 - 00:16:05,680] improbable to flip a thousand heads.
+- [00:16:06,620 - 00:16:07,100] Well,
+- [00:16:07,100 - 00:16:09,660] probability is being defined in terms of probability.
+- [00:16:10,420 - 00:16:12,820] What ultimately does it say about nature
+- [00:16:12,820 - 00:16:13,260] that,
+- [00:16:13,260 - 00:16:13,440] uh,
+- [00:16:13,440 - 00:16:15,620] that if you flip a coin a thousand times
+- [00:16:15,620 - 00:16:17,640] that the probability is heads that it will turn up,
+- [00:16:17,640 - 00:16:17,840] uh,
+- [00:16:18,480 - 00:16:21,020] the probability is 50% that it will turn up heads?
+- [00:16:21,940 - 00:16:23,460] I think the only thing I
+- [00:16:23,460 - 00:16:24,980] can think of that makes sense
+- [00:16:24,980 - 00:16:26,780] is to say you'd be very,
+- [00:16:26,780 - 00:16:27,460] very surprised
+- [00:16:27,460 - 00:16:29,540] if you're outside the margin of error.
+- [00:16:30,740 - 00:16:32,560] It doesn't happen very often.
+- [00:16:32,740 - 00:16:34,340] Why doesn't it happen very often?
+- [00:16:34,340 - 00:16:35,760] It could happen very often.
+- [00:16:35,800 - 00:16:36,900] It could happen every time.
+- [00:16:37,480 - 00:16:39,140] Probability theory doesn't tell you
+- [00:16:39,140 - 00:16:40,800] that improbable things don't happen.
+- [00:16:41,080 - 00:16:42,520] It just tells you they're improbable.
+- [00:16:42,940 - 00:16:43,100] Well,
+- [00:16:43,100 - 00:16:44,060] what does improbable mean?
+- [00:16:44,460 - 00:16:46,420] It just means they hardly ever happen.
+- [00:16:46,540 - 00:16:46,680] Well,
+- [00:16:46,680 - 00:16:47,860] what do you mean they hardly ever happen?
+- [00:16:47,900 - 00:16:48,900] They could happen every time.
+- [00:16:49,580 - 00:16:50,060] Oh,
+- [00:16:50,060 - 00:16:51,080] but they're improbable.
+- [00:16:51,720 - 00:16:52,960] It doesn't say anything.
+- [00:16:53,240 - 00:16:54,460] It just says you'd be surprised.
+- [00:16:54,940 - 00:16:58,100] I think Einstein was probably troubled by the idea
+- [00:16:58,100 - 00:17:00,280] that the most fundamental principles in physics
+- [00:17:00,280 - 00:17:01,680] were dependent on nothing more than
+- [00:17:01,680 - 00:17:03,080] what he would be surprised by.
+- [00:17:04,339 - 00:17:05,240] That's my guess.
+- [00:17:06,099 - 00:17:07,800] I think it's probably true.
+- [00:17:09,460 - 00:17:12,920] The impression that I had gotten was that
+- [00:17:12,920 - 00:17:15,359] he realized fairly early that
+- [00:17:15,359 - 00:17:17,800] there was this probabilistic thing
+- [00:17:17,800 - 00:17:19,280] about quantum mechanics,
+- [00:17:19,280 - 00:17:20,280] quantum theory.
+- [00:17:20,579 - 00:17:23,309] And a lot of people felt
+- [00:17:23,309 - 00:17:26,040] that the new quantum theory was fundamental,
+- [00:17:26,160 - 00:17:28,290] and he thought that it wasn't
+- [00:17:28,290 - 00:17:30,420] because he realized this about the theory.
+- [00:17:31,960 - 00:17:32,840] Say it again?
+- [00:17:32,840 - 00:17:35,690] He realized that he saw the probabilistic
+- [00:17:35,690 - 00:17:38,540] nature of the theory as a defect.
+- [00:17:39,600 - 00:17:40,260] Yeah.
+- [00:17:40,540 - 00:17:41,200] Yeah.
+- [00:17:41,940 - 00:17:44,360] And a lot of people thought it
+- [00:17:44,360 - 00:17:46,780] was the be-all and end-all fundamental theory
+- [00:17:46,780 - 00:17:48,500] because it's at the atomic level,
+- [00:17:48,500 - 00:17:49,400] it must be fundamental.
+- [00:17:49,820 - 00:17:49,980] Right.
+- [00:17:50,780 - 00:17:54,440] What's peculiar is how naive he was
+- [00:17:54,440 - 00:17:58,100] at his attempts to outflank quantum mechanics.
+- [00:17:58,680 - 00:17:59,920] That's what's surprising.
+- [00:17:59,920 - 00:18:02,520] Not that he was troubled by quantum mechanics.
+- [00:18:02,780 - 00:18:04,800] Everybody who grows up in physics becomes
+- [00:18:04,800 - 00:18:06,820] troubled by quantum mechanics at some point.
+- [00:18:07,340 - 00:18:09,920] What's surprising is how naive his
+- [00:18:09,920 - 00:18:12,500] attempts to get around it were.
+- [00:18:13,920 - 00:18:14,480] Just,
+- [00:18:14,480 - 00:18:15,040] well,
+- [00:18:15,040 - 00:18:17,060] it doesn't matter because
+- [00:18:17,060 - 00:18:19,080] it historically didn't go anywhere.
+- [00:18:19,300 - 00:18:20,960] Let's get back to the Schrodinger equation.
+- [00:18:21,740 - 00:18:23,520] We were studying the Schrodinger equation,
+- [00:18:23,520 - 00:18:27,660] and let's really go through it now.
+- [00:18:27,660 - 00:18:29,160] And finally tonight,
+- [00:18:29,160 - 00:18:29,780] I think,
+- [00:18:29,780 - 00:18:31,640] if we can get to it,
+- [00:18:31,740 - 00:18:35,380] we will understand the connection with classical mechanics,
+- [00:18:35,760 - 00:18:38,420] why momentum in quantum mechanics,
+- [00:18:38,420 - 00:18:40,400] which is one thing,
+- [00:18:40,520 - 00:18:43,720] is related to momentum in classical mechanics,
+- [00:18:43,720 - 00:18:44,780] which is another thing,
+- [00:18:46,460 - 00:18:47,620] what energy,
+- [00:18:47,620 - 00:18:48,480] why energy,
+- [00:18:48,480 - 00:18:50,770] why the Hamiltonian of quantum mechanics
+- [00:18:50,770 - 00:18:53,060] is called energy and so forth.
+- [00:18:53,240 - 00:18:54,960] And of course the answer is,
+- [00:18:54,960 - 00:18:59,020] because in contexts where things are heavy
+- [00:18:59,020 - 00:19:03,080] enough to behave according to approximate classical mechanics,
+- [00:19:03,840 - 00:19:08,080] these quantities that have been defined in quantum mechanics
+- [00:19:08,080 - 00:19:12,320] behave approximately like the corresponding quantities in classical mechanics.
+- [00:19:12,900 - 00:19:14,760] But always keep in mind,
+- [00:19:14,760 - 00:19:16,360] quantum mechanics is more fundamental.
+- [00:19:16,460 - 00:19:19,460] You don't derive quantum mechanics from classical mechanics.
+- [00:19:19,620 - 00:19:21,120] You derive the other way.
+- [00:19:21,320 - 00:19:22,380] So that's what we're going to do tonight.
+- [00:19:22,720 - 00:19:24,780] But let's come back to the Schrodinger equation.
+- [00:19:24,960 - 00:19:26,980] Let me remind you what it is.
+- [00:19:27,260 - 00:19:29,350] It says it's the equation which tells
+- [00:19:29,350 - 00:19:31,440] you how the state vector changes with time.
+- [00:19:31,800 - 00:19:35,060] It contains Planck's constant h-bar.
+- [00:19:36,980 - 00:19:40,590] And it says that the rate of change
+- [00:19:40,590 - 00:19:44,200] of the state vector with respect to time
+- [00:19:45,980 - 00:19:48,480] is equal to an operator,
+- [00:19:48,480 - 00:19:52,800] a Hermitian observable operator that's called h.
+- [00:19:53,900 - 00:19:55,520] When I remember to do so,
+- [00:19:55,520 - 00:19:57,920] I put a little hat on top of it
+- [00:19:57,920 - 00:20:00,320] to indicate that it's an operator acting on psi.
+- [00:20:01,460 - 00:20:03,000] That's called the general,
+- [00:20:03,000 - 00:20:05,460] we should call it the general Schrodinger equation.
+- [00:20:05,680 - 00:20:05,920] Of course,
+- [00:20:05,920 - 00:20:07,940] it's not the exact thing that Schrodinger wrote down.
+- [00:20:10,540 - 00:20:11,660] We'll supplement this.
+- [00:20:11,740 - 00:20:12,950] I want to make a list of
+- [00:20:12,950 - 00:20:14,160] some of the equations that we need.
+- [00:20:15,860 - 00:20:18,920] Another equation is that momentum,
+- [00:20:19,220 - 00:20:22,780] this says that energy is related to time.
+- [00:20:22,780 - 00:20:25,760] Time derivatives with a factor of i h-bar.
+- [00:20:26,780 - 00:20:28,260] A similar equation,
+- [00:20:28,260 - 00:20:30,460] similar looking equation,
+- [00:20:30,780 - 00:20:32,020] is that momentum,
+- [00:20:32,020 - 00:20:35,580] I don't need to,
+- [00:20:35,580 - 00:20:36,920] momentum is an operator.
+- [00:20:37,400 - 00:20:39,200] Its whole purpose in life is
+- [00:20:39,200 - 00:20:41,000] to act on a state vector.
+- [00:20:41,140 - 00:20:42,120] I won't bother writing,
+- [00:20:42,120 - 00:20:42,800] well,
+- [00:20:42,800 - 00:20:43,540] maybe I will write.
+- [00:20:44,160 - 00:20:44,720] Nah,
+- [00:20:44,720 - 00:20:46,760] let's not write the state vector for it.
+- [00:20:46,900 - 00:20:48,040] Let's just write p,
+- [00:20:48,040 - 00:20:52,380] that that's equal to minus i h-bar.
+- [00:20:52,780 - 00:20:53,740] d by dx.
+- [00:20:56,560 - 00:20:57,460] In other words,
+- [00:20:57,460 - 00:21:01,300] the time derivative of the wave function
+- [00:21:02,480 - 00:21:06,020] is obtained by the Hamiltonian acting on the wave function.
+- [00:21:06,260 - 00:21:08,630] The space derivative of the wave
+- [00:21:08,630 - 00:21:11,000] function is related to the momentum operator
+- [00:21:11,560 - 00:21:13,540] by the same factor i h-bar.
+- [00:21:13,940 - 00:21:15,740] The minus sign in there,
+- [00:21:15,740 - 00:21:17,230] the fact that there's a minus
+- [00:21:17,230 - 00:21:18,720] sign here and no minus sign here,
+- [00:21:18,900 - 00:21:20,480] is something of a convention.
+- [00:21:22,780 - 00:21:22,780] Now,
+- [00:21:22,780 - 00:21:25,300] it just historically evolved that way,
+- [00:21:25,440 - 00:21:27,830] that there's a minus sign
+- [00:21:27,830 - 00:21:30,220] here and no minus sign here.
+- [00:21:30,740 - 00:21:33,200] We could change conventions and
+- [00:21:33,200 - 00:21:35,660] put a minus sign there too.
+- [00:21:35,720 - 00:21:36,120] We won't,
+- [00:21:36,120 - 00:21:37,140] because after all,
+- [00:21:37,140 - 00:21:41,140] these are venerable conventions,
+- [00:21:41,420 - 00:21:42,320] so we'll stick with them.
+- [00:21:43,660 - 00:21:44,220] Alright,
+- [00:21:44,220 - 00:21:44,540] now,
+- [00:21:44,540 - 00:21:47,180] last but not least,
+- [00:21:47,320 - 00:21:49,560] we're thinking about a particle moving along a line.
+- [00:21:51,300 - 00:21:53,100] It has a Hamiltonian,
+- [00:21:53,200 - 00:21:54,830] and here's where we use
+- [00:21:54,830 - 00:21:56,460] classical physics to make a guess.
+- [00:21:57,160 - 00:21:58,640] Not a derivation,
+- [00:21:58,640 - 00:21:59,300] but a guess.
+- [00:22:00,520 - 00:22:05,500] Pure guess that the Hamiltonian of classical physics,
+- [00:22:05,780 - 00:22:07,910] now so far we don't know
+- [00:22:07,910 - 00:22:10,040] any particular relationship between this Hamiltonian
+- [00:22:10,040 - 00:22:11,900] and the classical physics Hamiltonian,
+- [00:22:12,540 - 00:22:14,590] but that's equal to our free
+- [00:22:14,590 - 00:22:16,640] particle to p squared over 2m.
+- [00:22:18,540 - 00:22:20,120] The fact that it's proportional
+- [00:22:20,120 - 00:22:21,700] to p squared and not p,
+- [00:22:21,920 - 00:22:22,880] let's start with that.
+- [00:22:23,420 - 00:22:25,390] p is a vector for which
+- [00:22:25,390 - 00:22:27,360] for a particle moving along a line
+- [00:22:27,960 - 00:22:29,760] means that it has either a
+- [00:22:29,760 - 00:22:31,560] forward sense or a backward sense.
+- [00:22:31,940 - 00:22:33,110] Momentum can go this way
+- [00:22:33,110 - 00:22:34,280] or it can go this way.
+- [00:22:34,980 - 00:22:35,500] Alright?
+- [00:22:35,940 - 00:22:38,620] We wouldn't want the energy to depend
+- [00:22:38,620 - 00:22:41,300] on whether the momentum is in that direction
+- [00:22:41,300 - 00:22:42,680] or in that direction.
+- [00:22:43,020 - 00:22:44,730] We expect that the energy of
+- [00:22:44,730 - 00:22:46,440] a particle moving to the left
+- [00:22:46,640 - 00:22:48,510] with a certain momentum is the
+- [00:22:48,510 - 00:22:50,380] same as the energy of a particle
+- [00:22:50,380 - 00:22:52,220] moving to the right with the same momentum.
+- [00:22:53,380 - 00:22:56,060] And so it makes a lot of sense to
+- [00:22:56,060 - 00:22:58,740] say that it's proportional to p squared and not p.
+- [00:22:59,480 - 00:23:01,480] If p was here by itself,
+- [00:23:03,100 - 00:23:05,290] then the energy would be opposite
+- [00:23:05,290 - 00:23:07,480] for positive momentum and negative momentum.
+- [00:23:09,080 - 00:23:11,140] The fact that there's a 2m here,
+- [00:23:11,280 - 00:23:11,420] well,
+- [00:23:11,420 - 00:23:13,200] that's essentially the definition of mass,
+- [00:23:13,200 - 00:23:13,920] if you like.
+- [00:23:14,540 - 00:23:15,100] Again,
+- [00:23:15,100 - 00:23:17,240] you could call it something else,
+- [00:23:17,280 - 00:23:18,460] you don't need to call it m,
+- [00:23:18,580 - 00:23:20,750] but the fact is that energy
+- [00:23:20,750 - 00:23:22,920] is proportional to p squared over 2m.
+- [00:23:23,480 - 00:23:25,360] Fairly general fact
+- [00:23:25,360 - 00:23:27,240] about ordinary non-relativistic particles.
+- [00:23:28,500 - 00:23:30,020] So we make the guess.
+- [00:23:30,180 - 00:23:31,320] We try it out
+- [00:23:31,320 - 00:23:33,580] and see what we learn from it
+- [00:23:33,980 - 00:23:36,660] to suppose that the Hamiltonian of quantum mechanics
+- [00:23:36,660 - 00:23:39,040] is also p squared over 2m.
+- [00:23:41,080 - 00:23:43,560] But now it's in the sense of operators.
+- [00:23:43,560 - 00:23:47,300] The operator h is the
+- [00:23:47,300 - 00:23:51,040] operator p hat squared over 2m.
+- [00:23:52,420 - 00:23:53,720] And as I said,
+- [00:23:53,800 - 00:23:56,330] keep in mind the real derivation
+- [00:23:56,330 - 00:23:58,860] goes from this blackboard to this blackboard.
+- [00:23:58,940 - 00:24:00,420] And we're going to do that derivation tonight.
+- [00:24:05,219 - 00:24:08,100] So let's see what that means.
+- [00:24:08,360 - 00:24:10,200] What is the meaning of this equation
+- [00:24:10,200 - 00:24:11,870] and how does it connect together
+- [00:24:11,870 - 00:24:13,540] with the other equations above it?
+- [00:24:13,560 - 00:24:15,640] The only other thing you need to know
+- [00:24:15,640 - 00:24:16,840] is what it means,
+- [00:24:17,000 - 00:24:18,360] I wrote down what p is,
+- [00:24:18,500 - 00:24:19,780] what does p squared mean?
+- [00:24:20,240 - 00:24:22,640] p squared simply means you
+- [00:24:22,640 - 00:24:25,040] act twice with the same operator.
+- [00:24:25,600 - 00:24:28,380] You act with the operator on a state vector
+- [00:24:28,380 - 00:24:29,900] and then you operate with it again,
+- [00:24:30,120 - 00:24:32,040] once followed by the second time.
+- [00:24:32,680 - 00:24:33,120] Alright,
+- [00:24:33,120 - 00:24:34,400] so this is enough for us to now
+- [00:24:34,400 - 00:24:37,100] write down the Schrodinger equation for a free particle.
+- [00:24:37,700 - 00:24:41,160] Instead of writing the ket vector psi,
+- [00:24:41,500 - 00:24:43,220] I will just remember,
+- [00:24:43,560 - 00:24:47,340] that wave function psi of x form a vector space.
+- [00:24:50,260 - 00:24:52,120] The wave function is in general
+- [00:24:52,120 - 00:24:53,980] not just a function of position,
+- [00:24:54,899 - 00:24:56,540] it is a function of position.
+- [00:24:57,160 - 00:24:59,430] It's square tells you the probability
+- [00:24:59,430 - 00:25:01,700] for finding the particle at different locations.
+- [00:25:02,540 - 00:25:05,580] But of course it's also implicitly a function of time.
+- [00:25:06,420 - 00:25:08,020] It changes with time.
+- [00:25:08,420 - 00:25:12,520] It's dependence on time is logically of a different kind
+- [00:25:12,520 - 00:25:14,880] than its dependence on space.
+- [00:25:15,840 - 00:25:18,080] The state vector is psi of x,
+- [00:25:18,200 - 00:25:20,200] but the state vector changes with time.
+- [00:25:20,600 - 00:25:21,080] Okay,
+- [00:25:21,080 - 00:25:22,600] so that's the way to think about it.
+- [00:25:23,080 - 00:25:23,560] Now,
+- [00:25:23,560 - 00:25:26,540] we wouldn't speak for example about psi star psi
+- [00:25:27,080 - 00:25:29,580] being the probability for different times.
+- [00:25:30,880 - 00:25:32,240] That doesn't make any sense.
+- [00:25:32,420 - 00:25:34,700] What's the probability that the time is such and such?
+- [00:25:34,740 - 00:25:35,020] Well,
+- [00:25:35,020 - 00:25:36,020] that doesn't make any sense.
+- [00:25:36,220 - 00:25:37,620] But it does make sense to say,
+- [00:25:37,680 - 00:25:39,720] what's the probability that the particle is located
+- [00:25:39,720 - 00:25:42,500] at a particular position at a certain time?
+- [00:25:42,520 - 00:25:43,140] So,
+- [00:25:43,140 - 00:25:45,690] the dependence on x and
+- [00:25:45,690 - 00:25:48,240] t are quite logically quite different.
+- [00:25:48,960 - 00:25:50,440] x is an observable.
+- [00:25:50,860 - 00:25:51,480] Of course,
+- [00:25:51,480 - 00:25:52,440] when I look at my clock,
+- [00:25:52,540 - 00:25:53,780] I also observe the time.
+- [00:25:54,020 - 00:25:55,970] But what I'm really doing is observing
+- [00:25:55,970 - 00:25:57,920] the position of the hands on the clock.
+- [00:25:58,360 - 00:25:59,340] Those are positions.
+- [00:26:01,260 - 00:26:01,740] Okay,
+- [00:26:01,740 - 00:26:03,700] so let's write down the Schrodinger equation now.
+- [00:26:03,860 - 00:26:05,830] All we have to do
+- [00:26:05,830 - 00:26:07,800] is substitute into the top equation.
+- [00:26:08,740 - 00:26:09,800] And we get,
+- [00:26:09,800 - 00:26:10,460] what do we get?
+- [00:26:10,540 - 00:26:11,120] We get i.
+- [00:26:11,460 - 00:26:12,500] Let's write down the top equation.
+- [00:26:13,280 - 00:26:14,460] Let's pull down.
+- [00:26:17,440 - 00:26:21,110] We get i h bar d
+- [00:26:21,110 - 00:26:24,780] psi of x and t by dt.
+- [00:26:25,020 - 00:26:26,140] That's the left-hand side.
+- [00:26:27,900 - 00:26:29,300] The right-hand side,
+- [00:26:29,300 - 00:26:34,140] we use h is equal to p squared over 2m.
+- [00:26:34,240 - 00:26:34,420] So,
+- [00:26:34,420 - 00:26:35,000] first of all,
+- [00:26:35,000 - 00:26:36,020] it's a 1 over 2m.
+- [00:26:37,620 - 00:26:39,380] And then p acts twice.
+- [00:26:39,540 - 00:26:42,500] p is minus i h bar d psi.
+- [00:26:42,520 - 00:26:43,060] h bar d by dx.
+- [00:26:43,960 - 00:26:44,520] So,
+- [00:26:44,520 - 00:26:47,840] we get minus i h bar d by dx.
+- [00:26:49,260 - 00:26:50,220] But we write it twice.
+- [00:26:51,100 - 00:26:53,480] Minus i h bar d by dx.
+- [00:26:55,620 - 00:26:58,100] Acting on psi of x and t.
+- [00:26:59,960 - 00:27:00,520] So,
+- [00:27:00,520 - 00:27:01,160] what does this mean?
+- [00:27:02,540 - 00:27:03,800] First of all,
+- [00:27:03,800 - 00:27:05,510] we can take out the factor
+- [00:27:05,510 - 00:27:07,220] of minus i h bar squared.
+- [00:27:08,160 - 00:27:10,820] Minus i times minus i is minus 1.
+- [00:27:10,820 - 00:27:11,640] So,
+- [00:27:11,640 - 00:27:12,820] first of all,
+- [00:27:12,820 - 00:27:13,960] let's get rid of the i's.
+- [00:27:16,260 - 00:27:18,440] It gives us our overall minus sign.
+- [00:27:19,400 - 00:27:20,960] There's an h bar squared.
+- [00:27:21,140 - 00:27:21,600] So,
+- [00:27:21,600 - 00:27:23,060] let's take out the h bar squared.
+- [00:27:25,480 - 00:27:28,400] And we have d by dx
+- [00:27:28,400 - 00:27:31,320] multiplying the d by dx times psi.
+- [00:27:31,680 - 00:27:34,020] d by dx times psi just means,
+- [00:27:34,020 - 00:27:36,250] it means nothing but derivative
+- [00:27:36,250 - 00:27:38,480] of psi with respect to x.
+- [00:27:40,200 - 00:27:41,520] Differentiating it again just
+- [00:27:41,520 - 00:27:42,840] gives us the second derivative.
+- [00:27:43,340 - 00:27:43,900] So,
+- [00:27:43,900 - 00:27:47,100] this whole thing becomes nothing but the second
+- [00:27:47,100 - 00:27:50,300] derivative with respect to x of psi of x.
+- [00:27:53,140 - 00:27:54,820] And that's our Schrodinger equation.
+- [00:27:56,920 - 00:27:59,300] That's the Schrodinger equation for a free particle.
+- [00:28:01,120 - 00:28:02,760] It's the actual equation
+- [00:28:02,760 - 00:28:04,400] that Schrodinger actually wrote down.
+- [00:28:06,760 - 00:28:08,460] We could get into y here.
+- [00:28:08,460 - 00:28:09,120] He wrote this down,
+- [00:28:09,120 - 00:28:09,800] but let's not.
+- [00:28:10,020 - 00:28:11,960] Let's just pursue it and work
+- [00:28:11,960 - 00:28:13,900] at it from the other end.
+- [00:28:14,280 - 00:28:16,720] And we'll eventually see why he wrote it down.
+- [00:28:17,680 - 00:28:18,220] Okay,
+- [00:28:18,220 - 00:28:20,740] now let's look for solutions of this equation.
+- [00:28:21,580 - 00:28:23,580] Let's look for solutions which have
+- [00:28:23,580 - 00:28:25,580] the character of being plane waves.
+- [00:28:26,300 - 00:28:28,340] Let's look for wave-like solutions.
+- [00:28:29,220 - 00:28:29,920] In other words,
+- [00:28:29,920 - 00:28:32,220] let's look for solutions whose
+- [00:28:32,220 - 00:28:34,520] x dependence is of the form
+- [00:28:38,840 - 00:28:43,860] e to the i p over h bar x.
+- [00:28:46,720 - 00:28:48,780] Let's look for solutions of that type.
+- [00:28:50,779 - 00:28:53,020] Why p over h bar?
+- [00:28:53,520 - 00:28:54,160] Well,
+- [00:28:54,160 - 00:28:56,420] I can just describe them that way.
+- [00:28:57,380 - 00:29:00,280] Let's say y p over h bar.
+- [00:29:00,680 - 00:29:00,940] Well,
+- [00:29:00,940 - 00:29:01,880] if I differentiate,
+- [00:29:01,880 - 00:29:05,160] just look for solutions of that form.
+- [00:29:05,660 - 00:29:06,460] Omega means?
+- [00:29:06,460 - 00:29:07,060] Hm?
+- [00:29:07,260 - 00:29:08,720] You want omega there maybe?
+- [00:29:08,960 - 00:29:09,320] No,
+- [00:29:09,320 - 00:29:10,640] I don't want omega there.
+- [00:29:10,840 - 00:29:12,380] Omega multiplies time.
+- [00:29:14,640 - 00:29:15,200] Okay,
+- [00:29:15,200 - 00:29:16,580] so let's put in omega.
+- [00:29:17,560 - 00:29:19,740] Omega has to do with time dependence.
+- [00:29:20,420 - 00:29:23,380] Let's put in a factor
+- [00:29:23,380 - 00:29:26,340] e to the i omega t.
+- [00:29:27,460 - 00:29:28,500] In other words,
+- [00:29:28,500 - 00:29:31,400] let's assume that the wave function oscillates with time
+- [00:29:31,400 - 00:29:33,140] and oscillates with space.
+- [00:29:33,760 - 00:29:35,100] The justification for this will
+- [00:29:35,100 - 00:29:36,440] be that the difference between
+- [00:29:36,460 - 00:29:38,600] the two is that there do exist solutions like this.
+- [00:29:39,680 - 00:29:40,980] These solutions,
+- [00:29:40,980 - 00:29:42,480] if we find them,
+- [00:29:42,480 - 00:29:45,340] will at any instant of time
+- [00:29:45,340 - 00:29:47,780] be eigenvectors of the momentum operator.
+- [00:29:48,040 - 00:29:48,280] Remember,
+- [00:29:48,280 - 00:29:51,460] eigenvectors of the momentum operator have the form
+- [00:29:52,439 - 00:29:55,479] as wave functions e to the
+- [00:29:55,479 - 00:29:58,520] i p x over h bar.
+- [00:29:59,560 - 00:30:02,960] Those are eigenvectors of the momentum operator.
+- [00:30:02,960 - 00:30:08,320] They're the things which minus i h bar
+- [00:30:08,320 - 00:30:13,680] d by dx act on to give an eigenvector.
+- [00:30:13,700 - 00:30:14,520] They're eigenvectors.
+- [00:30:14,720 - 00:30:17,620] They're eigenvectors of the momentum operator.
+- [00:30:18,920 - 00:30:20,880] The time dependence here,
+- [00:30:20,880 - 00:30:21,660] well,
+- [00:30:21,660 - 00:30:26,340] this tells us that wave functions have time dependence.
+- [00:30:26,600 - 00:30:27,240] And I'm guessing,
+- [00:30:27,240 - 00:30:29,500] I'm guessing now that they oscillate with time.
+- [00:30:30,060 - 00:30:31,240] That's an oscillation,
+- [00:30:31,240 - 00:30:32,300] typical oscillation.
+- [00:30:32,800 - 00:30:35,140] Let's plug this into the Schrodinger equation and
+- [00:30:35,140 - 00:30:37,480] see if we can find out what omega is.
+- [00:30:37,600 - 00:30:38,760] Omega is the unknown.
+- [00:30:39,500 - 00:30:40,140] Of course,
+- [00:30:40,140 - 00:30:42,020] there may be no such solution like this.
+- [00:30:42,120 - 00:30:43,000] We may find that it,
+- [00:30:43,000 - 00:30:43,680] that,
+- [00:30:43,680 - 00:30:44,240] you know,
+- [00:30:44,240 - 00:30:47,120] we run the bus into the ditch.
+- [00:30:49,780 - 00:30:51,960] That we can't find solutions like this.
+- [00:30:53,020 - 00:30:53,820] But of course,
+- [00:30:53,820 - 00:30:54,420] if we couldn't,
+- [00:30:54,420 - 00:30:55,420] I wouldn't have written it down.
+- [00:30:57,800 - 00:30:58,240] Okay,
+- [00:30:58,240 - 00:31:00,260] what happens if we take psi of
+- [00:31:00,260 - 00:31:02,280] x and differentiate it with respect to time?
+- [00:31:02,300 - 00:31:05,440] Every time we differentiate with respect to time,
+- [00:31:05,440 - 00:31:08,720] we pull down a factor of i omega.
+- [00:31:09,800 - 00:31:13,000] So the left-hand side is just going to be,
+- [00:31:13,000 - 00:31:17,400] give us an i omega times
+- [00:31:17,400 - 00:31:21,800] i h bar times psi itself.
+- [00:31:22,460 - 00:31:23,180] Here's psi.
+- [00:31:24,120 - 00:31:24,660] Alright.
+- [00:31:24,880 - 00:31:27,200] When I differentiate with respect to time,
+- [00:31:27,200 - 00:31:29,580] it'll give me back the same thing except
+- [00:31:29,580 - 00:31:31,960] with an i omega in front of it.
+- [00:31:32,300 - 00:31:35,960] So that's just psi of x and t.
+- [00:31:37,920 - 00:31:40,180] i omega times i h bar,
+- [00:31:40,180 - 00:31:44,260] that's just minus h bar omega.
+- [00:31:45,640 - 00:31:47,660] Now let's look on the right-hand side.
+- [00:31:48,060 - 00:31:49,420] On the right-hand side,
+- [00:31:49,420 - 00:31:51,920] every time I differentiate with respect to x,
+- [00:31:51,920 - 00:31:55,560] it pulls down i p over h bar.
+- [00:31:55,780 - 00:31:56,910] It gives me a factor
+- [00:31:56,910 - 00:31:58,040] of i p over h bar.
+- [00:31:58,300 - 00:31:59,840] So let's write it all down.
+- [00:31:59,880 - 00:32:01,340] Is equal to...
+- [00:32:03,760 - 00:32:09,220] Minus h bar squared over 2m.
+- [00:32:10,920 - 00:32:11,440] Incidentally,
+- [00:32:11,440 - 00:32:12,700] I could have cancelled out a
+- [00:32:12,700 - 00:32:13,960] factor of h bar from here,
+- [00:32:13,960 - 00:32:17,620] so it doesn't appear here and only appears once here.
+- [00:32:17,700 - 00:32:19,020] We'll do it in this form.
+- [00:32:19,760 - 00:32:20,280] Now,
+- [00:32:20,280 - 00:32:21,840] what is the second derivative of psi?
+- [00:32:22,260 - 00:32:24,710] The second derivative of psi
+- [00:32:24,710 - 00:32:27,160] just contains this factor squared.
+- [00:32:27,700 - 00:32:29,540] i p over h bar squared.
+- [00:32:29,540 - 00:32:30,480] So,
+- [00:32:30,480 - 00:32:34,520] that gives me i squared is minus 1.
+- [00:32:35,140 - 00:32:37,600] That turns this minus sign into a plus sign.
+- [00:32:38,160 - 00:32:43,580] It gives me p squared over h bar squared.
+- [00:32:45,880 - 00:32:46,680] And then,
+- [00:32:46,680 - 00:32:47,840] just psi again.
+- [00:32:53,840 - 00:32:54,380] Alright,
+- [00:32:54,380 - 00:32:56,060] so now let's clean it up a little bit.
+- [00:32:56,540 - 00:32:58,960] h bar squared over h bar squared.
+- [00:32:59,540 - 00:33:00,240] That cancels.
+- [00:33:04,240 - 00:33:05,640] Cancel out the h bars.
+- [00:33:07,660 - 00:33:12,420] And we get p squared over 2m times psi.
+- [00:33:14,180 - 00:33:19,360] The left-hand side minus omega times h bar times psi.
+- [00:33:19,800 - 00:33:21,100] The right-hand side,
+- [00:33:21,100 - 00:33:23,960] p squared over 2m times psi.
+- [00:33:24,920 - 00:33:26,480] Cancel out the psi's.
+- [00:33:26,520 - 00:33:27,420] And what do we find?
+- [00:33:27,420 - 00:33:32,850] We find that the frequency minus
+- [00:33:32,850 - 00:33:38,280] omega must equal p squared over 2m.
+- [00:33:41,300 - 00:33:41,720] Yes,
+- [00:33:41,720 - 00:33:43,260] divided by 2mh.
+- [00:33:43,260 - 00:33:43,860] Thank you.
+- [00:33:45,580 - 00:33:46,420] Now,
+- [00:33:46,420 - 00:33:49,210] what we're doing from a mathematical point
+- [00:33:49,210 - 00:33:52,000] of view is actually finding the eigenvectors.
+- [00:33:52,580 - 00:33:56,840] One way of saying it is we're finding the eigenvalues.
+- [00:33:56,840 - 00:33:58,920] The eigenvalues of the Hamiltonian.
+- [00:33:59,160 - 00:33:59,700] Omega,
+- [00:33:59,700 - 00:34:02,280] when the...
+- [00:34:02,280 - 00:34:02,800] Okay,
+- [00:34:02,800 - 00:34:03,380] let's...
+- [00:34:04,780 - 00:34:05,980] We'll come back to it.
+- [00:34:06,040 - 00:34:08,400] We'll come back to the eigenvalues of the Hamiltonian.
+- [00:34:08,480 - 00:34:10,239] That's what omega basically is.
+- [00:34:10,400 - 00:34:12,060] An eigenvalue of the Hamiltonian.
+- [00:34:12,639 - 00:34:13,179] But,
+- [00:34:13,179 - 00:34:16,859] we find that the omegas have to be
+- [00:34:16,859 - 00:34:20,540] equal to minus p squared over 2m h bar.
+- [00:34:20,679 - 00:34:24,179] Let's now use that to rewrite the wave function.
+- [00:34:24,179 - 00:34:26,379] The wave function that we found now
+- [00:34:26,379 - 00:34:28,580] has the form psi of x and t.
+- [00:34:30,159 - 00:34:30,960] And of course,
+- [00:34:30,960 - 00:34:32,480] this is only one of many solutions.
+- [00:34:33,560 - 00:34:40,889] Is of the form e to the i p over h
+- [00:34:40,889 - 00:34:48,219] bar x minus i p squared over 2m h bar t.
+- [00:34:50,520 - 00:34:51,040] So,
+- [00:34:51,040 - 00:34:52,800] it oscillates with x.
+- [00:34:52,800 - 00:34:54,179] And it oscillates with t.
+- [00:34:54,679 - 00:34:57,900] The x oscillation is governed by the momentum itself.
+- [00:34:59,000 - 00:35:02,520] And the t oscillation is governed by the momentum.
+- [00:35:02,640 - 00:35:03,840] If we forget the h bars.
+- [00:35:04,200 - 00:35:05,260] In a little while,
+- [00:35:05,260 - 00:35:07,160] I'll probably set h bar equal to 1.
+- [00:35:08,180 - 00:35:10,300] Notice how h bar comes into these formulas.
+- [00:35:10,720 - 00:35:15,260] It always comes in in the form of a coordinate.
+- [00:35:15,600 - 00:35:15,840] Now,
+- [00:35:15,840 - 00:35:16,440] a coordinate,
+- [00:35:16,440 - 00:35:18,340] I can either mean x or t.
+- [00:35:19,160 - 00:35:22,140] Think of both x's and t's as being coordinates.
+- [00:35:22,960 - 00:35:25,030] It always comes in the form x
+- [00:35:25,030 - 00:35:27,100] over h bar or t over h bar.
+- [00:35:28,420 - 00:35:29,600] Once you know that,
+- [00:35:29,600 - 00:35:32,900] you can set h bar to 1 and recover
+- [00:35:32,900 - 00:35:36,200] it later by sticking it back into the equations.
+- [00:35:37,140 - 00:35:39,850] x over h bar is the only way
+- [00:35:39,850 - 00:35:42,560] in which Planck's constant enters into this wave function.
+- [00:35:43,040 - 00:35:44,340] And t over h bar.
+- [00:35:44,960 - 00:35:45,440] So,
+- [00:35:45,440 - 00:35:46,360] every time you see x
+- [00:35:46,360 - 00:35:47,280] and every time you see t,
+- [00:35:47,280 - 00:35:49,160] put an h bar in the denominator.
+- [00:35:49,220 - 00:35:50,920] And that will recover for
+- [00:35:50,920 - 00:35:52,620] you the factors of Planck's constant.
+- [00:35:54,340 - 00:35:55,020] Alright,
+- [00:35:55,020 - 00:35:56,060] so here was the,
+- [00:35:56,060 - 00:35:58,640] this is the simplest solution of
+- [00:35:58,640 - 00:36:01,220] the Schrodinger equation for a free particle.
+- [00:36:01,480 - 00:36:04,580] It corresponds to a particle of momentum
+- [00:36:04,580 - 00:36:07,680] p and energy p squared over 2m.
+- [00:36:10,300 - 00:36:13,080] Notice there is another wave function
+- [00:36:13,080 - 00:36:15,860] which corresponds to exactly the same energy.
+- [00:36:17,100 - 00:36:18,140] What is it?
+- [00:36:18,980 - 00:36:21,880] If this is a particle moving to the right.
+- [00:36:22,100 - 00:36:22,780] Okay.
+- [00:36:22,800 - 00:36:25,780] It corresponds to a momentum p which is positive.
+- [00:36:26,580 - 00:36:28,200] Then there's another one,
+- [00:36:28,200 - 00:36:29,480] if we fix p.
+- [00:36:29,560 - 00:36:30,140] Fix p.
+- [00:36:30,920 - 00:36:33,300] p is some positive number for example.
+- [00:36:34,140 - 00:36:36,440] The energy is p squared over 2m.
+- [00:36:37,020 - 00:36:39,220] There are two states,
+- [00:36:39,220 - 00:36:41,480] two configurations with the same energy.
+- [00:36:41,780 - 00:36:43,520] One has p going that way,
+- [00:36:43,520 - 00:36:44,920] the other has p going that way.
+- [00:36:45,500 - 00:36:48,260] So there's another wave function we could have written down.
+- [00:36:48,460 - 00:36:50,840] I'll write it down side by side with this.
+- [00:36:50,840 - 00:36:53,800] Which would have had the form e to
+- [00:36:53,800 - 00:36:56,760] the minus i p over h bar x.
+- [00:36:59,560 - 00:37:03,120] But the time dependence is exactly the same.
+- [00:37:03,360 - 00:37:04,260] Why is that?
+- [00:37:04,340 - 00:37:06,120] That's because this only depends on p squared.
+- [00:37:07,260 - 00:37:07,820] Alright.
+- [00:37:07,920 - 00:37:09,500] So if I change the sign of p,
+- [00:37:09,500 - 00:37:11,340] it doesn't change the sign of p squared.
+- [00:37:11,440 - 00:37:14,060] And it's minus i p
+- [00:37:14,060 - 00:37:16,680] squared over 2m h bar t.
+- [00:37:17,400 - 00:37:19,040] These are two wave functions.
+- [00:37:19,040 - 00:37:21,580] Which both correspond to the same energy.
+- [00:37:21,860 - 00:37:23,940] But opposite going momentum.
+- [00:37:26,000 - 00:37:30,160] You can add them together with arbitrary coefficients.
+- [00:37:31,320 - 00:37:34,260] They will no longer be eigenvectors of the momentum.
+- [00:37:34,460 - 00:37:36,720] Because you're mixing together two momenta.
+- [00:37:36,960 - 00:37:39,100] But they will have the same energy.
+- [00:37:40,280 - 00:37:42,520] So if you add wave functions like this.
+- [00:37:42,700 - 00:37:45,700] The energy of the combined wave
+- [00:37:45,700 - 00:37:48,700] function is still p squared over 2m.
+- [00:37:49,500 - 00:37:49,980] 2m,
+- [00:37:49,980 - 00:37:50,680] not n.
+- [00:37:51,320 - 00:37:51,800] m.
+- [00:37:53,740 - 00:37:55,800] But you're mixing two momenta.
+- [00:37:56,720 - 00:37:58,270] Depending on the coefficients that you
+- [00:37:58,270 - 00:37:59,820] would put these two together with.
+- [00:37:59,860 - 00:38:01,220] Let's put them together with some coefficients.
+- [00:38:02,540 - 00:38:05,020] Let's call this one alpha.
+- [00:38:05,480 - 00:38:07,680] And let's call this one beta.
+- [00:38:10,080 - 00:38:10,560] Alright.
+- [00:38:10,780 - 00:38:12,240] What's the probability that the
+- [00:38:12,240 - 00:38:13,700] particle is moving to the right?
+- [00:38:19,620 - 00:38:21,000] Alpha star alpha.
+- [00:38:22,480 - 00:38:25,360] Alpha star alpha is the coefficient
+- [00:38:25,360 - 00:38:28,240] of the eigenvector with right moving momentum.
+- [00:38:28,880 - 00:38:30,570] And the probability that it's moving
+- [00:38:30,570 - 00:38:32,260] to the left is beta star beta.
+- [00:38:32,720 - 00:38:34,430] What's the probability that it
+- [00:38:34,430 - 00:38:36,140] has energy p squared over 2m?
+- [00:38:38,620 - 00:38:39,260] Alright.
+- [00:38:40,860 - 00:38:41,500] Alright.
+- [00:38:41,500 - 00:38:43,480] So this is a simple example.
+- [00:38:47,340 - 00:38:50,180] What constitutes the special relation?
+- [00:38:54,960 - 00:38:56,360] I don't know.
+- [00:38:59,900 - 00:39:01,620] Special relationship.
+- [00:39:07,740 - 00:39:10,080] That knocked me off balance.
+- [00:39:15,720 - 00:39:16,040] Alright.
+- [00:39:16,040 - 00:39:16,420] Now,
+- [00:39:16,420 - 00:39:17,720] what's the general solution?
+- [00:39:18,280 - 00:39:20,510] This is a special solution
+- [00:39:20,510 - 00:39:22,740] of the Schrodinger equation corresponding,
+- [00:39:23,160 - 00:39:25,000] or it's a family of special solutions,
+- [00:39:25,660 - 00:39:26,880] with an alpha and a beta,
+- [00:39:27,060 - 00:39:29,120] but they all correspond to the same energy.
+- [00:39:29,600 - 00:39:32,720] What is the general solution of the Schrodinger equation?
+- [00:39:33,040 - 00:39:36,460] The general solution is sums or
+- [00:39:36,460 - 00:39:39,880] integrals of wave functions like this.
+- [00:39:40,140 - 00:39:42,680] We can take wave functions of the form,
+- [00:39:42,960 - 00:39:43,880] e to the i,
+- [00:39:43,880 - 00:39:46,260] p over h bar,
+- [00:39:46,260 - 00:39:49,340] x minus i,
+- [00:39:49,340 - 00:39:52,880] p squared over 2m h bar t.
+- [00:39:54,160 - 00:39:56,160] And now we can add them,
+- [00:39:56,160 - 00:39:57,140] or better yet,
+- [00:39:57,140 - 00:39:58,060] we've added them there,
+- [00:39:58,320 - 00:40:02,200] but now we can better yet integrate them,
+- [00:40:02,200 - 00:40:03,320] dp,
+- [00:40:04,080 - 00:40:06,560] and just for reasons of convention,
+- [00:40:06,560 - 00:40:08,280] I put in the standard
+- [00:40:08,280 - 00:40:10,000] square root of 2 pi here,
+- [00:40:10,220 - 00:40:11,040] but you don't need to,
+- [00:40:11,040 - 00:40:13,620] times an amplitude,
+- [00:40:13,620 - 00:40:15,260] psi of p,
+- [00:40:15,260 - 00:40:17,660] or psi twiddle of p.
+- [00:40:19,880 - 00:40:20,520] Now,
+- [00:40:20,520 - 00:40:21,560] in this expression here,
+- [00:40:21,560 - 00:40:23,640] I don't have to include
+- [00:40:23,640 - 00:40:25,720] a left-moving and a right-moving momentum.
+- [00:40:26,400 - 00:40:28,380] Since I'm integrating over p,
+- [00:40:28,380 - 00:40:30,740] let's say from minus infinity to infinity,
+- [00:40:31,140 - 00:40:33,910] there are contributions in here where p
+- [00:40:33,910 - 00:40:36,680] is positive and contributions where p is negative.
+- [00:40:37,220 - 00:40:38,800] So this wave function,
+- [00:40:39,620 - 00:40:40,800] which is a sum,
+- [00:40:40,800 - 00:40:42,520] which is a superposition,
+- [00:40:42,520 - 00:40:43,880] a quantum superposition,
+- [00:40:44,440 - 00:40:47,160] of states with different momentum p,
+- [00:40:48,160 - 00:40:50,300] very much like any quantum superposition,
+- [00:40:50,880 - 00:40:52,550] it's a quantum superposition
+- [00:40:52,550 - 00:40:54,220] of states with different momenta,
+- [00:40:54,780 - 00:40:56,820] and also in general different energies.
+- [00:40:57,440 - 00:40:58,180] It's true,
+- [00:40:58,180 - 00:41:00,180] the left-moving and the right-moving with the
+- [00:41:00,180 - 00:41:02,180] same value of p have the same energy,
+- [00:41:02,300 - 00:41:02,860] but in general,
+- [00:41:02,860 - 00:41:05,100] when I integrate up lots of different momenta,
+- [00:41:05,620 - 00:41:07,980] I have states in there of very different energy.
+- [00:41:08,800 - 00:41:11,160] So this is a quantum superposition that
+- [00:41:11,160 - 00:41:13,520] is not only a superposition of different momenta,
+- [00:41:13,520 - 00:41:15,260] but also different energies.
+- [00:41:16,200 - 00:41:17,340] What's the probability,
+- [00:41:17,340 - 00:41:18,160] for example,
+- [00:41:18,160 - 00:41:20,720] that this particle has momentum p?
+- [00:41:20,920 - 00:41:21,100] Now,
+- [00:41:21,100 - 00:41:22,320] when I say it has momentum p,
+- [00:41:22,520 - 00:41:24,830] I really mean the momentum
+- [00:41:24,830 - 00:41:27,140] density as a function of p.
+- [00:41:28,140 - 00:41:30,780] Because momentum is a continuous variable,
+- [00:41:31,060 - 00:41:33,480] we describe it by a momentum density.
+- [00:41:34,260 - 00:41:36,490] The probability that the momentum is
+- [00:41:36,490 - 00:41:38,720] between p and p plus dp,
+- [00:41:39,580 - 00:41:41,980] but what's the probability density
+- [00:41:41,980 - 00:41:44,380] for the momentum to be p?
+- [00:41:45,680 - 00:41:46,220] Well,
+- [00:41:46,220 - 00:41:48,020] that's just psi star,
+- [00:41:48,020 - 00:41:52,220] psi twiddle of p times psi twiddle star of p.
+- [00:41:52,620 - 00:41:53,160] Yes?
+- [00:41:55,240 - 00:41:59,260] I thought the dummy variable of integration was p.
+- [00:42:00,280 - 00:42:00,820] Oh,
+- [00:42:00,820 - 00:42:01,040] okay,
+- [00:42:01,040 - 00:42:01,260] yes,
+- [00:42:01,260 - 00:42:01,720] yes.
+- [00:42:01,780 - 00:42:03,420] The dummy variable of integration is p.
+- [00:42:03,420 - 00:42:03,600] Good,
+- [00:42:03,600 - 00:42:04,020] thank you.
+- [00:42:04,320 - 00:42:05,700] And so what is the,
+- [00:42:05,700 - 00:42:07,620] why is...
+- [00:42:07,620 - 00:42:07,740] Oh,
+- [00:42:07,740 - 00:42:08,700] this is in the integral.
+- [00:42:08,800 - 00:42:09,300] Oh,
+- [00:42:09,300 - 00:42:10,040] that's in the integral.
+- [00:42:10,100 - 00:42:10,800] That's in the integral,
+- [00:42:10,800 - 00:42:11,260] absolutely.
+- [00:42:11,760 - 00:42:12,040] Oh,
+- [00:42:12,040 - 00:42:12,220] okay.
+- [00:42:12,460 - 00:42:13,880] That's in the integral.
+- [00:42:14,240 - 00:42:15,760] What's the parameters of the...
+- [00:42:15,760 - 00:42:17,600] The parameters of what?
+- [00:42:17,980 - 00:42:20,120] Of the psi twiddle of p.
+- [00:42:20,540 - 00:42:21,720] The parameters.
+- [00:42:23,220 - 00:42:24,340] What's fixed?
+- [00:42:25,840 - 00:42:26,880] What is fixed?
+- [00:42:27,160 - 00:42:28,080] The side-decks of t.
+- [00:42:29,660 - 00:42:31,120] I guess nothing is fixed.
+- [00:42:31,200 - 00:42:31,920] Nothing's fixed.
+- [00:42:32,940 - 00:42:33,500] Yeah,
+- [00:42:33,500 - 00:42:34,800] and m.
+- [00:42:35,520 - 00:42:36,080] Yeah,
+- [00:42:36,080 - 00:42:36,320] oh,
+- [00:42:36,320 - 00:42:36,660] yeah,
+- [00:42:36,660 - 00:42:36,940] sure,
+- [00:42:36,940 - 00:42:37,560] sure.
+- [00:42:39,140 - 00:42:40,620] H-bar is fixed,
+- [00:42:40,620 - 00:42:41,580] m is fixed,
+- [00:42:41,580 - 00:42:42,660] i is fixed,
+- [00:42:42,660 - 00:42:43,640] e is fixed,
+- [00:42:43,640 - 00:42:44,860] infinity is fixed,
+- [00:42:44,860 - 00:42:45,960] pi is fixed,
+- [00:42:45,960 - 00:42:46,840] 2 is fixed.
+- [00:42:48,620 - 00:42:49,220] Right?
+- [00:42:51,520 - 00:42:52,720] But other than that,
+- [00:42:52,720 - 00:42:55,880] other than almost everything on the board,
+- [00:42:55,880 - 00:42:57,360] nothing is fixed.
+- [00:42:57,660 - 00:42:59,180] We're integrating over p,
+- [00:42:59,180 - 00:43:03,020] which means we're summing up waves of different wavelength,
+- [00:43:03,780 - 00:43:06,300] we're summing up waves of different wavelength,
+- [00:43:06,300 - 00:43:08,240] some moving to the right,
+- [00:43:08,240 - 00:43:09,460] some moving to the left,
+- [00:43:09,660 - 00:43:11,400] and we're summing them up
+- [00:43:11,400 - 00:43:13,140] with an amplitude psi of p.
+- [00:43:13,480 - 00:43:16,100] Each wave has a time dependence,
+- [00:43:16,100 - 00:43:18,180] so we're summing up these things.
+- [00:43:18,260 - 00:43:19,420] Each one is oscillating.
+- [00:43:19,500 - 00:43:20,520] The different ones,
+- [00:43:20,520 - 00:43:22,340] they're oscillating with different frequencies.
+- [00:43:23,120 - 00:43:23,980] It's a mess.
+- [00:43:24,320 - 00:43:26,000] The whole thing is doing very,
+- [00:43:26,000 - 00:43:27,280] very complicated things,
+- [00:43:27,920 - 00:43:30,690] but it can all be represented
+- [00:43:30,690 - 00:43:33,460] as a superposition of different momentum eigenstates.
+- [00:43:34,240 - 00:43:34,920] All right,
+- [00:43:34,920 - 00:43:36,080] now I come back to my question.
+- [00:43:36,080 - 00:43:38,060] What is the probability density?
+- [00:43:38,680 - 00:43:40,320] What's the probability density
+- [00:43:40,320 - 00:43:41,960] that the particle has momentum,
+- [00:43:42,300 - 00:43:43,260] let's say q,
+- [00:43:43,260 - 00:43:44,590] let's not call it p
+- [00:43:44,590 - 00:43:45,920] since p is an integration variable.
+- [00:43:47,760 - 00:43:51,100] Probability density p of q.
+- [00:43:51,740 - 00:43:52,340] That,
+- [00:43:52,340 - 00:43:52,940] of course,
+- [00:43:52,940 - 00:43:55,240] is nothing but this amplitude squared.
+- [00:43:56,360 - 00:43:56,960] Again,
+- [00:43:56,960 - 00:43:58,060] it's the same sort of thing.
+- [00:43:58,160 - 00:44:01,180] We're adding up wave functions with different coefficients.
+- [00:44:01,920 - 00:44:04,220] So this probability is
+- [00:44:04,220 - 00:44:06,520] psi twiddle star of q,
+- [00:44:06,520 - 00:44:08,520] psi of q.
+- [00:44:09,880 - 00:44:12,000] I've just picked a particular value of momentum.
+- [00:44:12,320 - 00:44:13,480] I didn't want to call
+- [00:44:13,480 - 00:44:14,640] it p because in this formula,
+- [00:44:14,640 - 00:44:16,060] p is an integration variable.
+- [00:44:16,960 - 00:44:18,200] One more twiddle.
+- [00:44:19,240 - 00:44:20,840] Did I miss a twiddle?
+- [00:44:21,240 - 00:44:21,920] Thank you.
+- [00:44:23,720 - 00:44:24,200] Good.
+- [00:44:25,600 - 00:44:26,240] All right.
+- [00:44:26,440 - 00:44:27,060] Up there,
+- [00:44:27,060 - 00:44:29,000] it's a function of momentum.
+- [00:44:29,100 - 00:44:29,640] Down here,
+- [00:44:29,640 - 00:44:30,440] it's a function of position.
+- [00:44:30,780 - 00:44:31,260] No,
+- [00:44:31,260 - 00:44:32,280] it's not a function of position.
+- [00:44:32,520 - 00:44:32,900] Oh,
+- [00:44:32,900 - 00:44:33,480] I'm sorry.
+- [00:44:33,480 - 00:44:33,860] We should,
+- [00:44:33,860 - 00:44:35,500] you're thinking of p's and q's
+- [00:44:35,500 - 00:44:37,140] in the sense of positions and momentum.
+- [00:44:37,460 - 00:44:37,880] No.
+- [00:44:38,760 - 00:44:39,240] p,
+- [00:44:39,240 - 00:44:40,380] q here is a momentum.
+- [00:44:42,380 - 00:44:42,860] Yeah,
+- [00:44:42,860 - 00:44:44,720] we could just call it p prime or something.
+- [00:44:45,120 - 00:44:45,600] Yeah,
+- [00:44:45,600 - 00:44:46,440] maybe I should do that.
+- [00:44:47,580 - 00:44:48,060] No,
+- [00:44:48,060 - 00:44:48,960] I don't have to.
+- [00:44:49,140 - 00:44:52,120] I've already established the notation that position is x.
+- [00:44:53,220 - 00:44:55,680] And p's and q's both mean momentum here.
+- [00:44:55,860 - 00:44:57,800] But it's a fair point.
+- [00:44:59,440 - 00:45:01,220] If I use x for position,
+- [00:45:01,960 - 00:45:03,460] then I won't use q for position.
+- [00:45:03,480 - 00:45:04,340] Good.
+- [00:45:04,780 - 00:45:05,180] Thank you.
+- [00:45:05,340 - 00:45:06,160] All right.
+- [00:45:06,220 - 00:45:08,240] So this is the probability
+- [00:45:08,240 - 00:45:10,260] that the particle has momentum q.
+- [00:45:10,440 - 00:45:15,060] What's the probability that the energy is e?
+- [00:45:17,200 - 00:45:19,160] What's the probability that the energy is e?
+- [00:45:19,520 - 00:45:20,120] Well,
+- [00:45:20,120 - 00:45:22,180] the probability that the energy is e,
+- [00:45:22,980 - 00:45:25,800] you get two contributions with the same energy.
+- [00:45:26,259 - 00:45:29,920] You first write e equals p squared over 2m.
+- [00:45:31,100 - 00:45:33,300] That tells you what p to look for.
+- [00:45:33,740 - 00:45:35,400] If I want the probability
+- [00:45:35,400 - 00:45:37,060] that the particle has energy e,
+- [00:45:37,920 - 00:45:40,420] I look for those pieces of the wave function
+- [00:45:40,420 - 00:45:44,500] where the momentum satisfies p squared over 2m equals e.
+- [00:45:44,560 - 00:45:44,960] In other words,
+- [00:45:44,960 - 00:45:48,500] I look for p squared equals 2me.
+- [00:45:49,220 - 00:45:51,850] How many p's are there such
+- [00:45:51,850 - 00:45:54,480] that p squared is equal to 2me?
+- [00:45:55,140 - 00:45:55,660] Two.
+- [00:45:56,560 - 00:45:57,080] Namely,
+- [00:45:57,080 - 00:45:59,140] the two possible square roots.
+- [00:46:02,240 - 00:46:04,280] The two possible square roots.
+- [00:46:04,400 - 00:46:05,080] Can this be seen?
+- [00:46:05,180 - 00:46:05,340] No,
+- [00:46:05,340 - 00:46:05,900] it can't.
+- [00:46:05,920 - 00:46:07,120] But believe me,
+- [00:46:07,120 - 00:46:08,700] there's a plus or minus sign here.
+- [00:46:10,800 - 00:46:13,120] Plus or minus square root
+- [00:46:13,120 - 00:46:15,440] of 2me is equal to p.
+- [00:46:15,880 - 00:46:17,410] So what I do is
+- [00:46:17,410 - 00:46:18,940] I look in this wave function
+- [00:46:18,940 - 00:46:21,220] or in this general wave function here
+- [00:46:21,220 - 00:46:25,060] for the contributions which have a given energy,
+- [00:46:25,440 - 00:46:27,160] there will be two of them.
+- [00:46:27,180 - 00:46:27,600] Okay.
+- [00:46:28,860 - 00:46:30,440] And the probability,
+- [00:46:30,440 - 00:46:32,420] let's call these p plus minus.
+- [00:46:34,000 - 00:46:36,600] p plus minus is plus or minus.
+- [00:46:37,500 - 00:46:38,780] I'm going to rewrite it.
+- [00:46:38,880 - 00:46:40,960] I'm going to rewrite it so everybody can see it.
+- [00:46:41,020 - 00:46:44,520] p plus or minus equals plus or minus.
+- [00:46:45,000 - 00:46:46,400] Now I forgot what it was.
+- [00:46:46,840 - 00:46:51,360] Square root of 2me,
+- [00:46:51,360 - 00:46:52,100] right?
+- [00:46:53,700 - 00:46:54,860] I think that's it.
+- [00:46:55,100 - 00:46:55,660] Yeah.
+- [00:46:55,660 - 00:46:57,710] So what I do is I go
+- [00:46:57,710 - 00:46:59,760] to the two wave functions in here
+- [00:46:59,760 - 00:47:01,340] which have this value of energy,
+- [00:47:02,320 - 00:47:04,350] and I take the total
+- [00:47:04,350 - 00:47:06,380] probability for that value of energy.
+- [00:47:06,540 - 00:47:07,320] What's it going to be?
+- [00:47:07,600 - 00:47:09,560] It's going to be that probability,
+- [00:47:09,800 - 00:47:11,800] let's say probability for a given energy
+- [00:47:12,360 - 00:47:18,460] is going to be psi twiddle of p plus
+- [00:47:22,800 - 00:47:25,580] star psi twiddle of p plus.
+- [00:47:26,360 - 00:47:29,160] That's the probability that the momentum is p plus
+- [00:47:30,060 - 00:47:35,700] plus the probability that the momentum is p minus.
+- [00:47:42,760 - 00:47:44,490] Where p plus and p minus
+- [00:47:44,490 - 00:47:46,220] are just opposite values of the momentum.
+- [00:47:46,320 - 00:47:47,240] One going one way,
+- [00:47:47,240 - 00:47:48,520] one going the other way.
+- [00:47:49,120 - 00:47:49,680] Alright,
+- [00:47:49,680 - 00:47:54,660] so that's the Schrodinger equation for a free particle.
+- [00:47:58,299 - 00:47:58,740] Probably,
+- [00:47:58,740 - 00:48:00,700] but I think by now I may have,
+- [00:48:00,700 - 00:48:01,220] where?
+- [00:48:02,980 - 00:48:03,420] Yeah,
+- [00:48:03,420 - 00:48:03,860] no,
+- [00:48:03,860 - 00:48:04,820] no,
+- [00:48:04,820 - 00:48:06,180] not in there.
+- [00:48:07,660 - 00:48:08,100] Not,
+- [00:48:08,100 - 00:48:08,440] no,
+- [00:48:08,440 - 00:48:08,760] no,
+- [00:48:08,760 - 00:48:09,200] no,
+- [00:48:09,200 - 00:48:09,900] no.
+- [00:48:11,660 - 00:48:12,100] Nope.
+- [00:48:12,640 - 00:48:14,170] The energy in terms of the
+- [00:48:14,170 - 00:48:15,700] momentum does not have an h bar.
+- [00:48:17,200 - 00:48:18,860] Energy in terms of momentum is
+- [00:48:18,860 - 00:48:20,520] just the same as in classical physics.
+- [00:48:24,800 - 00:48:25,640] So have we got it?
+- [00:48:25,640 - 00:48:27,560] We found general solution of...
+- [00:48:27,560 - 00:48:27,720] Yeah,
+- [00:48:27,720 - 00:48:29,620] that's the general solution of the Schrodinger equation.
+- [00:48:29,620 - 00:48:31,460] I don't have to roll over the shape of it.
+- [00:48:31,700 - 00:48:31,960] Yep,
+- [00:48:31,960 - 00:48:32,760] that's it.
+- [00:48:32,900 - 00:48:33,300] And psi,
+- [00:48:33,300 - 00:48:33,740] of course,
+- [00:48:33,740 - 00:48:34,440] can be complex.
+- [00:48:35,440 - 00:48:39,200] So it's parameterized by a complex function of p.
+- [00:48:39,440 - 00:48:40,160] And that's it.
+- [00:48:40,220 - 00:48:41,680] That's all of the solutions.
+- [00:48:41,980 - 00:48:42,320] Well,
+- [00:48:42,320 - 00:48:43,880] I take that back.
+- [00:48:44,100 - 00:48:45,680] There are other solutions,
+- [00:48:46,439 - 00:48:48,059] but the other solutions have the
+- [00:48:48,059 - 00:48:49,680] property that they either blow up
+- [00:48:49,680 - 00:48:51,960] or do something terrible in infinity.
+- [00:48:52,100 - 00:48:54,140] They are...
+- [00:48:54,140 - 00:48:56,300] They simply blow up at infinity.
+- [00:48:56,520 - 00:48:58,700] These are all of the solutions
+- [00:48:58,700 - 00:49:00,880] that don't blow up at infinity.
+- [00:49:02,840 - 00:49:03,820] In other words,
+- [00:49:03,820 - 00:49:05,600] which don't have all of their probability
+- [00:49:06,140 - 00:49:07,820] way out at infinity.
+- [00:49:07,920 - 00:49:09,060] This is all of them.
+- [00:49:09,919 - 00:49:10,220] Yeah.
+- [00:49:10,640 - 00:49:12,100] All the relevant solutions.
+- [00:49:12,580 - 00:49:14,180] Does that depend on the assumption
+- [00:49:14,180 - 00:49:15,780] you made at the very beginning
+- [00:49:15,780 - 00:49:16,780] that you can...
+- [00:49:16,780 - 00:49:17,700] that they're separable?
+- [00:49:18,120 - 00:49:19,890] That you can separate the
+- [00:49:19,890 - 00:49:21,660] e to the i omega t
+- [00:49:21,660 - 00:49:24,120] and i p x over...
+- [00:49:24,140 - 00:49:24,580] over h bar?
+- [00:49:25,640 - 00:49:26,080] If...
+- [00:49:26,080 - 00:49:26,440] If...
+- [00:49:26,440 - 00:49:28,580] If they weren't separable,
+- [00:49:28,720 - 00:49:30,360] would that still be the general solution?
+- [00:49:33,920 - 00:49:35,460] If they weren't separable,
+- [00:49:35,500 - 00:49:37,100] this wouldn't be the equation.
+- [00:49:37,400 - 00:49:38,680] And if this weren't the equation,
+- [00:49:38,880 - 00:49:39,840] this wouldn't be the solution.
+- [00:49:44,160 - 00:49:46,300] Let's talk about the case where they're not separable.
+- [00:49:47,420 - 00:49:49,500] The case where they're not separable...
+- [00:49:50,460 - 00:49:52,840] Separable just means the wave function factors...
+- [00:49:52,840 - 00:49:53,360] No,
+- [00:49:53,360 - 00:49:56,140] it's always separable in the sense
+- [00:49:56,140 - 00:49:58,920] that there's a function of x
+- [00:49:58,920 - 00:50:01,700] which may not be a simple e to
+- [00:50:01,700 - 00:50:04,480] the i p x times an oscillation in t.
+- [00:50:05,580 - 00:50:06,500] We'll prove that.
+- [00:50:06,620 - 00:50:07,160] We'll prove that.
+- [00:50:07,260 - 00:50:08,020] I hope we'll prove that.
+- [00:50:08,060 - 00:50:09,100] I hope we have time to prove it.
+- [00:50:09,420 - 00:50:10,920] Is there an arbitrary phase?
+- [00:50:13,000 - 00:50:13,680] Arbitrary phase.
+- [00:50:14,480 - 00:50:14,960] Yeah,
+- [00:50:14,960 - 00:50:17,860] you can put an arbitrary coefficient here,
+- [00:50:17,860 - 00:50:19,760] complex or real.
+- [00:50:20,760 - 00:50:21,240] Yeah.
+- [00:50:21,240 - 00:50:21,320] Yeah,
+- [00:50:21,320 - 00:50:22,160] it will still...
+- [00:50:22,160 - 00:50:22,640] Any...
+- [00:50:23,240 - 00:50:24,020] And in fact,
+- [00:50:24,020 - 00:50:26,800] these are the arbitrary coefficients.
+- [00:50:27,720 - 00:50:29,320] So this could contain a phase.
+- [00:50:32,820 - 00:50:33,300] Okay.
+- [00:50:37,820 - 00:50:39,460] Phase p depends on p.
+- [00:50:40,700 - 00:50:41,180] Yeah,
+- [00:50:41,180 - 00:50:41,760] the phase...
+- [00:50:41,760 - 00:50:41,960] Yeah,
+- [00:50:41,960 - 00:50:43,550] the psi of p can contain
+- [00:50:43,550 - 00:50:45,140] a phase which depends on p,
+- [00:50:45,140 - 00:50:45,480] absolutely.
+- [00:50:46,060 - 00:50:47,540] If it didn't depend on p,
+- [00:50:47,540 - 00:50:48,640] it wouldn't be very interesting.
+- [00:50:48,760 - 00:50:51,120] A phase that depends on p is interesting.
+- [00:50:51,240 - 00:50:52,180] In other words,
+- [00:50:52,180 - 00:50:55,200] it affects the probabilities.
+- [00:50:57,200 - 00:50:57,720] Okay,
+- [00:50:57,720 - 00:50:58,240] let's...
+- [00:50:59,380 - 00:51:01,500] We want to come to a more...
+- [00:51:02,200 - 00:51:02,840] Let's see.
+- [00:51:05,920 - 00:51:06,440] Yeah,
+- [00:51:06,440 - 00:51:07,040] just a second.
+- [00:51:07,060 - 00:51:07,860] Let me just see my notes.
+- [00:51:10,140 - 00:51:10,660] Yeah.
+- [00:51:12,960 - 00:51:14,000] Psi twiddle.
+- [00:51:15,120 - 00:51:19,540] Psi twiddle is the Fourier transform of psi of x.
+- [00:51:19,540 - 00:51:21,920] Of psi of x at time 0.
+- [00:51:22,800 - 00:51:24,420] Supposing you go to time 0.
+- [00:51:25,120 - 00:51:26,540] If we go to time 0,
+- [00:51:26,540 - 00:51:27,580] this is a good question.
+- [00:51:27,660 - 00:51:28,920] Let's pursue it.
+- [00:51:31,900 - 00:51:33,940] Let's go to time t equals 0.
+- [00:51:34,720 - 00:51:36,260] At time t equals 0,
+- [00:51:36,260 - 00:51:39,780] this wave function is just minus infinity to infinity,
+- [00:51:39,780 - 00:51:41,200] integral dp,
+- [00:51:41,200 - 00:51:43,320] over square root of 2 pi,
+- [00:51:43,320 - 00:51:45,940] e to the i px,
+- [00:51:45,940 - 00:51:47,740] psi twiddle of p.
+- [00:51:49,380 - 00:51:53,960] That's equal to psi of x at time equals 0.
+- [00:51:54,140 - 00:51:55,560] Let's just call it psi of x.
+- [00:51:56,560 - 00:51:58,680] This is the definition of the
+- [00:51:58,680 - 00:52:00,800] Fourier transform of psi of x.
+- [00:52:02,720 - 00:52:04,540] If we happen to have known...
+- [00:52:04,540 - 00:52:05,460] Here might be the way
+- [00:52:05,460 - 00:52:06,380] we might set up a problem.
+- [00:52:07,400 - 00:52:10,520] Supposing we knew that at time t equals 0,
+- [00:52:10,520 - 00:52:13,820] the wave function of the particle was psi of x.
+- [00:52:14,020 - 00:52:14,860] I don't know how we know.
+- [00:52:14,860 - 00:52:16,410] We know that the wave function is
+- [00:52:16,410 - 00:52:17,960] psi of x at time t equals 0.
+- [00:52:18,240 - 00:52:20,560] And we want to find it at a later time.
+- [00:52:20,900 - 00:52:21,580] What do we do?
+- [00:52:22,300 - 00:52:22,780] Well,
+- [00:52:22,780 - 00:52:24,460] the first thing we do
+- [00:52:24,460 - 00:52:26,140] is we find the Fourier transform,
+- [00:52:26,140 - 00:52:27,620] psi twiddle of p.
+- [00:52:28,380 - 00:52:30,680] Let me remind you how you do that.
+- [00:52:32,040 - 00:52:32,660] Let's see.
+- [00:52:32,780 - 00:52:33,680] Let's put it up here.
+- [00:52:36,640 - 00:52:38,020] Psi twiddle of p
+- [00:52:41,480 - 00:52:44,840] is equal to the integral from minus infinity to infinity.
+- [00:52:44,840 - 00:52:47,200] Now not integral dp,
+- [00:52:47,200 - 00:52:50,180] but integral dx.
+- [00:52:52,300 - 00:52:53,100] Integral dx.
+- [00:52:56,860 - 00:53:01,230] e to the minus i px over square
+- [00:53:01,230 - 00:53:05,600] root of 2 pi times psi of x.
+- [00:53:06,140 - 00:53:08,310] So if somebody tells us what psi of
+- [00:53:08,310 - 00:53:10,480] x is at a certain instant of time,
+- [00:53:10,800 - 00:53:12,680] let's say at time t equals 0,
+- [00:53:13,320 - 00:53:14,820] we can reconstruct this.
+- [00:53:14,840 - 00:53:15,880] We can reconstruct what psi of p is.
+- [00:53:15,960 - 00:53:19,420] Remember now the reciprocal relationship between Fourier
+- [00:53:19,420 - 00:53:22,880] transform of x and Fourier transform of p.
+- [00:53:23,580 - 00:53:27,660] Fourier transforms are reciprocally related in such a way that if psi of
+- [00:53:27,660 - 00:53:31,740] x is an integral e to the i px psi twiddle of p,
+- [00:53:32,060 - 00:53:34,580] then psi twiddle of p is integral,
+- [00:53:34,580 - 00:53:36,040] same kind of integral,
+- [00:53:36,040 - 00:53:39,800] except over x with a minus sign up here.
+- [00:53:40,620 - 00:53:43,380] This is the reciprocal relationship between
+- [00:53:46,180 - 00:53:48,300] functions and their Fourier transforms.
+- [00:53:49,680 - 00:53:51,860] So you first find psi twiddle of p.
+- [00:53:52,480 - 00:53:54,700] Once you've found psi twiddle of p,
+- [00:53:54,900 - 00:53:56,480] you stick it into this formula,
+- [00:53:57,600 - 00:53:59,740] which is basically the same formula,
+- [00:54:00,440 - 00:54:02,580] except that it now has time dependence.
+- [00:54:03,960 - 00:54:05,040] In other words,
+- [00:54:05,640 - 00:54:07,360] then this becomes psi of x and t.
+- [00:54:08,200 - 00:54:10,540] This becomes psi of x and t.
+- [00:54:17,400 - 00:54:19,480] So you start out at time t equals
+- [00:54:19,480 - 00:54:21,560] 0 with some knowledge of the wave function.
+- [00:54:22,520 - 00:54:24,480] You compute the Fourier transform.
+- [00:54:25,040 - 00:54:26,820] That tells you psi twiddle of p.
+- [00:54:27,480 - 00:54:31,300] You then stick it into this time dependent formula here.
+- [00:54:31,640 - 00:54:34,660] The only time dependence is that for each wave,
+- [00:54:34,880 - 00:54:36,440] there's an e to the i
+- [00:54:36,440 - 00:54:38,000] p squared over 2m times t.
+- [00:54:38,720 - 00:54:40,760] And that gives you the full
+- [00:54:40,760 - 00:54:42,800] time dependence of the wave function.
+- [00:54:42,800 - 00:54:47,040] Now the wave function will evolve in a complicated way.
+- [00:54:47,400 - 00:54:49,780] The different waves that are in
+- [00:54:49,780 - 00:54:52,160] it are oscillating with different time dependencies.
+- [00:54:52,580 - 00:54:53,820] So for example,
+- [00:54:53,820 - 00:54:56,560] the shape of the wave function will not be preserved.
+- [00:54:57,060 - 00:54:58,680] If we start out with
+- [00:54:58,680 - 00:55:00,300] some general wave function like that,
+- [00:55:01,080 - 00:55:03,020] and we start evolving it,
+- [00:55:03,240 - 00:55:05,460] the different Fourier components
+- [00:55:05,460 - 00:55:07,680] oscillate with different periods.
+- [00:55:08,180 - 00:55:10,094] The result is the whole thing is
+- [00:55:10,094 - 00:55:12,009] going to move in a complicated pattern,
+- [00:55:12,010 - 00:55:14,610] which is not going to preserve its shape.
+- [00:55:15,890 - 00:55:16,450] But,
+- [00:55:16,450 - 00:55:17,010] nevertheless,
+- [00:55:17,010 - 00:55:22,550] that's the evolution of the wave function.
+- [00:55:23,030 - 00:55:24,210] Once you know this,
+- [00:55:24,570 - 00:55:26,350] you can then ask what's
+- [00:55:26,350 - 00:55:28,130] the probability at a later time
+- [00:55:28,130 - 00:55:31,030] that the particle is located in some particular place.
+- [00:55:31,650 - 00:55:34,330] So the kind of problem we might solve is
+- [00:55:34,330 - 00:55:35,570] by hook or crook,
+- [00:55:35,570 - 00:55:38,830] somebody tells us what the initial wave function is.
+- [00:55:39,010 - 00:55:40,480] And what we want to find
+- [00:55:40,480 - 00:55:41,950] out is not at that instant
+- [00:55:42,010 - 00:55:46,050] of time what the probability for its location is.
+- [00:55:46,130 - 00:55:46,570] That's easy.
+- [00:55:46,910 - 00:55:49,470] That's just psi star of x,
+- [00:55:49,470 - 00:55:50,050] psi of x.
+- [00:55:50,250 - 00:55:51,910] But we want to find out what
+- [00:55:51,910 - 00:55:53,570] the probability will be at a later time.
+- [00:55:53,870 - 00:55:57,310] After all this complicated motion has taken place,
+- [00:55:57,870 - 00:55:59,370] what's the probability to find
+- [00:55:59,370 - 00:56:00,870] the particle at a particular place?
+- [00:56:01,310 - 00:56:02,750] We go through this operation.
+- [00:56:03,070 - 00:56:04,390] We find psi twiddle of p.
+- [00:56:04,650 - 00:56:05,670] We plug it into here.
+- [00:56:06,330 - 00:56:08,130] That gives us psi of x and t.
+- [00:56:08,610 - 00:56:10,050] We can put this on a computer,
+- [00:56:10,050 - 00:56:11,930] calculate psi of x and t,
+- [00:56:12,090 - 00:56:13,870] and then psi star of x and
+- [00:56:13,870 - 00:56:15,650] t times psi of x and t
+- [00:56:15,650 - 00:56:18,250] is the new probability at a later time
+- [00:56:19,110 - 00:56:21,450] for locating the particle in different places.
+- [00:56:22,130 - 00:56:23,110] That's the logic.
+- [00:56:23,310 - 00:56:24,230] That's the logic.
+- [00:56:24,750 - 00:56:26,650] That's the way quantum mechanics works.
+- [00:56:29,070 - 00:56:29,630] Okay.
+- [00:56:30,890 - 00:56:31,950] Any other questions?
+- [00:56:31,950 - 00:56:32,250] Yes?
+- [00:56:32,530 - 00:56:34,820] So you can also derive the
+- [00:56:34,820 - 00:56:37,110] psi twiddle of p and t
+- [00:56:37,110 - 00:56:40,030] and also evolve the psi twiddle of x and t?
+- [00:56:40,050 - 00:56:41,990] Psi twiddle of p and
+- [00:56:41,990 - 00:56:43,930] t is really just this combination.
+- [00:56:45,810 - 00:56:46,550] You see,
+- [00:56:46,550 - 00:56:47,870] if I called all of this,
+- [00:56:48,650 - 00:56:49,590] everything here,
+- [00:56:49,590 - 00:56:51,570] let's put an e to the minus i,
+- [00:56:51,770 - 00:56:53,610] and group this together,
+- [00:56:56,570 - 00:56:59,970] then we see that we can combine
+- [00:56:59,970 - 00:57:02,230] psi twiddle of p with this factor here,
+- [00:57:02,930 - 00:57:06,170] and this just becomes the time-dependent Fourier transform
+- [00:57:06,970 - 00:57:08,210] of psi of x and t.
+- [00:57:08,210 - 00:57:09,750] Does that answer your question?
+- [00:57:10,370 - 00:57:10,850] Good.
+- [00:57:11,790 - 00:57:12,270] Right,
+- [00:57:12,270 - 00:57:13,330] so another way to say it
+- [00:57:13,330 - 00:57:16,430] is that the Fourier transform evolves with time,
+- [00:57:16,630 - 00:57:18,710] and it evolves with this phase factor here.
+- [00:57:20,330 - 00:57:20,810] But,
+- [00:57:20,810 - 00:57:21,390] as I said,
+- [00:57:21,390 - 00:57:22,310] the important thing is
+- [00:57:22,310 - 00:57:25,010] this time-dependence of the Fourier transform
+- [00:57:25,010 - 00:57:28,510] translates in general into a rather complicated
+- [00:57:29,630 - 00:57:31,710] variation of the wave function with time,
+- [00:57:31,930 - 00:57:33,870] but you can always find it in this way.
+- [00:57:34,730 - 00:57:35,210] Yeah?
+- [00:57:35,370 - 00:57:37,750] If the wave doesn't preserve its shape with time,
+- [00:57:37,750 - 00:57:39,150] that's a dispersive wave,
+- [00:57:39,210 - 00:57:40,390] and it means that different components
+- [00:57:40,990 - 00:57:42,170] propagate at different speeds.
+- [00:57:42,210 - 00:57:42,690] Absolutely.
+- [00:57:45,370 - 00:57:45,850] Right?
+- [00:57:45,850 - 00:57:46,350] Now,
+- [00:57:46,350 - 00:57:46,830] this is true.
+- [00:57:48,190 - 00:57:48,670] Right.
+- [00:57:52,310 - 00:57:52,790] Right.
+- [00:57:55,450 - 00:57:57,270] The different components do propagate
+- [00:57:57,270 - 00:57:58,030] with different speeds,
+- [00:57:58,030 - 00:57:58,630] for sure.
+- [00:57:59,930 - 00:58:00,910] It's not surprising,
+- [00:58:00,910 - 00:58:02,070] since the different components
+- [00:58:02,070 - 00:58:03,410] correspond to different momenta.
+- [00:58:04,950 - 00:58:05,570] In fact,
+- [00:58:05,570 - 00:58:07,010] there are several different kinds of speeds,
+- [00:58:07,010 - 00:58:08,230] group velocity,
+- [00:58:08,230 - 00:58:08,970] phase velocity,
+- [00:58:08,970 - 00:58:10,010] and so forth,
+- [00:58:10,150 - 00:58:14,850] but I won't do that now,
+- [00:58:14,970 - 00:58:16,750] group velocity and phase velocity.
+- [00:58:17,050 - 00:58:17,510] Yeah,
+- [00:58:17,510 - 00:58:19,110] okay.
+- [00:58:20,690 - 00:58:23,130] Remind me to tell you something about the schedule
+- [00:58:23,130 - 00:58:25,570] for this class,
+- [00:58:25,570 - 00:58:28,390] because I will be gone for some period,
+- [00:58:28,530 - 00:58:30,000] and I don't want you to show
+- [00:58:30,000 - 00:58:31,470] up here when I won't be here.
+- [00:58:33,810 - 00:58:34,810] When might you be here?
+- [00:58:36,370 - 00:58:37,490] When I'm off the air.
+- [00:58:41,650 - 00:58:42,090] Okay.
+- [00:58:46,069 - 00:58:46,509] Now,
+- [00:58:46,509 - 00:58:47,969] the next thing we want to
+- [00:58:47,969 - 00:58:49,430] do is we want to study
+- [00:58:50,250 - 00:58:53,690] the evolution of the expectation values.
+- [00:58:53,910 - 00:58:54,390] First of all,
+- [00:58:54,390 - 00:58:55,690] we want to study a more complicated
+- [00:58:55,690 - 00:58:58,550] kind of Schrodinger equation in which the particle
+- [00:58:58,550 - 00:58:59,970] is subjected to forces,
+- [00:58:59,970 - 00:59:02,550] in which the particle is moving
+- [00:59:02,550 - 00:59:04,790] in the presence of energy.
+- [00:59:04,810 - 00:59:06,080] And then we want to study
+- [00:59:06,080 - 00:59:07,350] the potential of a potential function.
+- [00:59:07,990 - 00:59:09,550] That's one thing we're going to want to do,
+- [00:59:09,610 - 00:59:11,210] and work out the Schrodinger equation.
+- [00:59:11,770 - 00:59:12,880] But the other thing we're
+- [00:59:12,880 - 00:59:13,990] going to want to do is,
+- [00:59:14,030 - 00:59:14,810] once we've done that,
+- [00:59:14,810 - 00:59:17,650] we want to see how wave packets move.
+- [00:59:17,950 - 00:59:20,370] A wave packet is simply
+- [00:59:20,370 - 00:59:22,790] a concentrated wave of some sort
+- [00:59:23,370 - 00:59:26,150] which moves along with some sort of coherent motion.
+- [00:59:26,710 - 00:59:29,290] The center of the wave packet,
+- [00:59:29,290 - 00:59:30,730] or the average position
+- [00:59:30,730 - 00:59:31,710] of the wave packet,
+- [00:59:31,710 - 00:59:32,710] moves in some way,
+- [00:59:32,710 - 00:59:34,210] and it had better be
+- [00:59:34,210 - 00:59:36,290] that at least in the appropriate circumstances,
+- [00:59:36,750 - 00:59:40,250] that the motion of the wave packet looks pretty much
+- [00:59:40,250 - 00:59:43,490] like the corresponding motion of a classical system,
+- [00:59:43,690 - 00:59:44,670] of a classical particle.
+- [00:59:44,810 - 00:59:45,770] We're going to want to work that out.
+- [00:59:45,830 - 00:59:46,430] We'll do that tonight.
+- [00:59:48,290 - 00:59:50,000] But before we study
+- [00:59:50,000 - 00:59:51,710] the more complicated Schrodinger equation,
+- [00:59:52,070 - 00:59:53,840] I want to remind you
+- [00:59:53,840 - 00:59:55,610] how you calculate the time evolution
+- [00:59:55,610 - 00:59:57,090] of expectation values,
+- [00:59:57,090 - 00:59:58,410] because that's what we're going to do.
+- [00:59:58,510 - 01:00:00,170] We're going to do it for the Schrodinger equation.
+- [01:00:02,530 - 01:00:02,990] So,
+- [01:00:02,990 - 01:00:03,650] two steps.
+- [01:00:04,730 - 01:00:05,170] Question?
+- [01:00:05,530 - 01:00:05,690] Yeah.
+- [01:00:05,830 - 01:00:06,930] Just a quick question.
+- [01:00:07,030 - 01:00:11,170] So that equation there for psi of x of t,
+- [01:00:11,290 - 01:00:12,650] so that could be for a photon,
+- [01:00:12,650 - 01:00:13,050] right?
+- [01:00:15,690 - 01:00:16,130] Well,
+- [01:00:16,130 - 01:00:18,410] photons are not nonrelativistic particles.
+- [01:00:18,610 - 01:00:21,490] This is really the theory of nonrelativistic particles.
+- [01:00:22,810 - 01:00:24,180] So you wouldn't apply this
+- [01:00:24,180 - 01:00:25,550] in this form to a photon.
+- [01:00:27,950 - 01:00:29,790] Photons simply don't have energies
+- [01:00:29,790 - 01:00:31,630] which are p squared over 2m.
+- [01:00:31,750 - 01:00:32,110] In fact,
+- [01:00:32,110 - 01:00:32,930] they don't have any m.
+- [01:00:34,230 - 01:00:35,830] So you wouldn't apply it in
+- [01:00:35,830 - 01:00:37,430] quite this form to a photon.
+- [01:00:40,150 - 01:00:41,190] Is that the question?
+- [01:00:41,790 - 01:00:42,090] Yeah.
+- [01:00:42,130 - 01:00:42,530] Yeah.
+- [01:00:42,550 - 01:00:43,890] You would have to...
+- [01:00:48,150 - 01:00:51,870] The rule is that this is an appropriate description
+- [01:00:51,870 - 01:00:53,630] for particles moving much,
+- [01:00:53,630 - 01:00:54,990] much slower than the speed of light.
+- [01:00:56,990 - 01:00:57,290] Okay.
+- [01:00:57,670 - 01:01:00,210] The question is whether I should...
+- [01:01:00,210 - 01:01:00,550] Well,
+- [01:01:00,550 - 01:01:01,450] I'm trying to...
+- [01:01:01,450 - 01:01:01,970] Okay.
+- [01:01:04,530 - 01:01:06,730] Let's put a little variety into this.
+- [01:01:06,810 - 01:01:09,190] Let's back off the particle on a line
+- [01:01:09,190 - 01:01:12,050] and remind ourselves how we compute
+- [01:01:12,050 - 01:01:14,910] the time dependence of expectation values.
+- [01:01:15,370 - 01:01:17,610] Then we'll come back to a more complicated
+- [01:01:17,610 - 01:01:19,850] version of a particle moving on a line.
+- [01:01:21,010 - 01:01:22,190] Let's take...
+- [01:01:29,490 - 01:01:30,850] some observable.
+- [01:01:31,130 - 01:01:31,810] Ah,
+- [01:01:31,810 - 01:01:32,710] that's a surprise,
+- [01:01:32,710 - 01:01:32,990] red.
+- [01:01:33,390 - 01:01:35,250] Let's take an observable.
+- [01:01:35,370 - 01:01:36,270] Let's call it k.
+- [01:01:37,890 - 01:01:40,050] And let's take its average value,
+- [01:01:40,050 - 01:01:41,850] its expectation value.
+- [01:01:43,150 - 01:01:44,970] There's its expectation value.
+- [01:01:46,970 - 01:01:49,810] And let's study its time dependence.
+- [01:01:50,850 - 01:01:54,550] This is the closest thing to
+- [01:01:54,550 - 01:01:58,250] the corresponding classical evolution of that observable.
+- [01:01:59,350 - 01:01:59,930] Right?
+- [01:02:00,250 - 01:02:01,730] Its expectation value.
+- [01:02:03,350 - 01:02:04,690] To calculate it,
+- [01:02:04,690 - 01:02:07,310] and we're imagining some fixed observable.
+- [01:02:07,410 - 01:02:10,330] The observable itself is not changing with time.
+- [01:02:10,470 - 01:02:11,190] It could be position.
+- [01:02:11,390 - 01:02:12,050] It could be momentum.
+- [01:02:12,330 - 01:02:13,450] It could be spin.
+- [01:02:13,690 - 01:02:14,630] It could be polarization.
+- [01:02:15,070 - 01:02:16,790] But we're not changing it with time.
+- [01:02:16,870 - 01:02:19,670] What is changing with time is the state vectors.
+- [01:02:19,670 - 01:02:20,270] So,
+- [01:02:20,270 - 01:02:23,250] we use the rule for differentiating products.
+- [01:02:23,930 - 01:02:25,430] k is not time dependent,
+- [01:02:25,430 - 01:02:27,030] but the two sys here are.
+- [01:02:27,590 - 01:02:30,090] And let's write this just in
+- [01:02:30,090 - 01:02:32,590] the form bra vector time derivative.
+- [01:02:32,710 - 01:02:34,730] The dot indicates time derivative.
+- [01:02:35,090 - 01:02:35,730] k,
+- [01:02:35,730 - 01:02:37,550] sy,
+- [01:02:37,550 - 01:02:44,870] plus sy k times sy dot.
+- [01:02:46,810 - 01:02:49,550] I'm going over stuff which we did last time.
+- [01:02:49,590 - 01:02:49,650] I'm going over stuff which we did last time.
+- [01:02:50,490 - 01:02:50,990] Now,
+- [01:02:50,990 - 01:02:52,410] we use the Schrodinger equation.
+- [01:02:52,570 - 01:02:55,130] Let's use the Schrodinger equation over here for sy dot.
+- [01:02:55,390 - 01:02:59,830] Sy dot is either plus or minus i h sy.
+- [01:03:00,350 - 01:03:01,710] I am now going to
+- [01:03:01,710 - 01:03:03,070] set h bar equal to one.
+- [01:03:04,350 - 01:03:05,790] H bar equal to one,
+- [01:03:05,790 - 01:03:07,250] because it'll drive me crazy to
+- [01:03:07,250 - 01:03:08,710] keep track of it in these equations.
+- [01:03:09,230 - 01:03:10,770] H bar is equal to one.
+- [01:03:11,050 - 01:03:13,880] Does anybody remember whether sy dot is plus i
+- [01:03:13,880 - 01:03:16,710] times h sy or minus i times h sy?
+- [01:03:17,290 - 01:03:18,250] I don't.
+- [01:03:21,750 - 01:03:22,330] Minus i.
+- [01:03:24,010 - 01:03:28,550] Sy dot is the same thing as sy k.
+- [01:03:31,710 - 01:03:32,390] And now,
+- [01:03:32,390 - 01:03:33,490] sy dot is,
+- [01:03:33,490 - 01:03:35,530] I forgot what I just said.
+- [01:03:35,670 - 01:03:36,610] Did I say minus or plus?
+- [01:03:36,870 - 01:03:37,310] I.
+- [01:03:37,810 - 01:03:38,290] Hmm?
+- [01:03:38,930 - 01:03:39,590] Minus i.
+- [01:03:39,790 - 01:03:40,510] Minus i.
+- [01:03:41,190 - 01:03:41,670] So,
+- [01:03:41,670 - 01:03:42,670] minus i,
+- [01:03:42,670 - 01:03:44,670] this one is minus i,
+- [01:03:44,670 - 01:03:45,450] I hope I'm right,
+- [01:03:45,450 - 01:03:48,030] times h times sy.
+- [01:03:49,290 - 01:03:52,210] Notice we have k over here and h over here.
+- [01:03:52,930 - 01:03:54,550] How about this one over here?
+- [01:03:55,470 - 01:03:56,870] This one over here,
+- [01:03:56,870 - 01:03:59,130] we have to apply the
+- [01:03:59,130 - 01:04:01,390] time evolution to the bra vector.
+- [01:04:01,790 - 01:04:04,330] That involves a complex conjugation.
+- [01:04:04,690 - 01:04:07,090] The minus i will become a plus i.
+- [01:04:07,310 - 01:04:08,810] This becomes i,
+- [01:04:08,810 - 01:04:10,490] sy,
+- [01:04:10,490 - 01:04:12,390] h,
+- [01:04:12,390 - 01:04:14,290] k,
+- [01:04:14,290 - 01:04:16,170] sy.
+- [01:04:18,190 - 01:04:19,870] We have two different terms.
+- [01:04:20,170 - 01:04:21,930] One of them has h,
+- [01:04:21,930 - 01:04:22,170] k.
+- [01:04:22,230 - 01:04:23,790] The other one has k,
+- [01:04:23,790 - 01:04:24,230] h.
+- [01:04:24,590 - 01:04:28,960] The result is i times the expectation
+- [01:04:28,960 - 01:04:33,330] value of the commutator of h with k.
+- [01:04:35,810 - 01:04:37,610] Remember what the commutator is?
+- [01:04:37,750 - 01:04:38,370] It's h,
+- [01:04:38,370 - 01:04:39,370] k minus k,
+- [01:04:39,370 - 01:04:39,770] h.
+- [01:04:41,910 - 01:04:44,830] I won't bother putting in the size here.
+- [01:04:44,990 - 01:04:48,010] I just indicate the expectation value of the commutator.
+- [01:04:48,010 - 01:04:49,970] The commutator of h and k.
+- [01:04:50,710 - 01:04:51,530] That's the rule.
+- [01:04:51,670 - 01:04:51,850] In fact,
+- [01:04:51,850 - 01:04:55,920] let's just write this as the time
+- [01:04:55,920 - 01:04:59,990] derivative of the expectation value of k.
+- [01:05:00,630 - 01:05:01,710] For any state,
+- [01:05:01,710 - 01:05:03,350] it doesn't matter what state we choose,
+- [01:05:03,350 - 01:05:06,910] that is the way the expectation value will evolve.
+- [01:05:07,610 - 01:05:08,130] Now,
+- [01:05:08,130 - 01:05:08,910] of course,
+- [01:05:08,910 - 01:05:11,810] both sides will depend on what state we're talking about.
+- [01:05:13,030 - 01:05:15,810] The relationship between the two is always the same,
+- [01:05:15,970 - 01:05:17,550] but the actual magnitude,
+- [01:05:18,010 - 01:05:19,360] the magnitude of each of these sides
+- [01:05:19,360 - 01:05:20,710] depends on what state we're talking about.
+- [01:05:21,770 - 01:05:24,670] This is the rule that we're going to use to
+- [01:05:24,670 - 01:05:27,570] try to figure out how things evolve in the Schrodinger,
+- [01:05:27,670 - 01:05:30,630] how the motion of a wave packet evolves in time.
+- [01:05:31,970 - 01:05:32,910] For example,
+- [01:05:32,910 - 01:05:35,290] we could apply this to the position,
+- [01:05:35,290 - 01:05:36,370] to x,
+- [01:05:36,370 - 01:05:37,170] to x itself,
+- [01:05:37,170 - 01:05:38,330] to the position operator,
+- [01:05:38,870 - 01:05:41,330] and find out how the average
+- [01:05:41,330 - 01:05:43,790] position of a particle changes with time.
+- [01:05:44,070 - 01:05:45,690] We could apply it to the momentum
+- [01:05:45,690 - 01:05:47,770] and find out how the average momentum
+- [01:05:48,010 - 01:05:49,470] of a particle changes with time.
+- [01:05:49,730 - 01:05:51,350] So let's put this upstairs
+- [01:05:52,130 - 01:05:56,610] and keep it for future reference
+- [01:05:57,810 - 01:06:00,170] while we do a couple of other simple things.
+- [01:06:02,810 - 01:06:03,410] Evidently,
+- [01:06:06,090 - 01:06:09,090] we're going to have to compute commutators.
+- [01:06:10,050 - 01:06:11,610] Commutators are the things that
+- [01:06:11,610 - 01:06:13,170] we're going to have to compute
+- [01:06:13,170 - 01:06:15,530] to see how things evolve with time.
+- [01:06:15,530 - 01:06:17,760] So let's study a little
+- [01:06:17,760 - 01:06:19,990] bit about commutators in quantum mechanics.
+- [01:06:21,450 - 01:06:23,250] Just a few simple things.
+- [01:06:25,629 - 01:06:26,390] Oh,
+- [01:06:26,390 - 01:06:27,150] incidentally,
+- [01:06:27,150 - 01:06:29,890] let's compare this with another equation.
+- [01:06:36,289 - 01:06:39,130] The corresponding classical equation
+- [01:06:40,229 - 01:06:42,110] is that the time derivative
+- [01:06:42,970 - 01:06:44,590] of an observable,
+- [01:06:44,710 - 01:06:47,030] we won't put brackets around it now
+- [01:06:47,030 - 01:06:49,090] because now it really means the time derivative
+- [01:06:49,090 - 01:06:50,570] of some classical quantity.
+- [01:06:50,870 - 01:06:52,490] Anybody remember what it's given by?
+- [01:06:54,630 - 01:06:56,130] By the Poisson bracket.
+- [01:06:58,070 - 01:06:59,410] The Poisson bracket,
+- [01:07:00,970 - 01:07:02,240] I can't remember if it's k
+- [01:07:02,240 - 01:07:03,510] with h or h with k.
+- [01:07:04,810 - 01:07:06,690] I always have trouble with these signs.
+- [01:07:07,170 - 01:07:07,430] Hm?
+- [01:07:07,430 - 01:07:08,070] K with h?
+- [01:07:08,790 - 01:07:09,610] Are you sure?
+- [01:07:09,610 - 01:07:10,610] Are you absolutely sure?
+- [01:07:14,090 - 01:07:14,570] OK,
+- [01:07:14,570 - 01:07:15,530] I'll trust you.
+- [01:07:20,170 - 01:07:21,470] So how come it's reversed?
+- [01:07:23,050 - 01:07:23,530] Well,
+- [01:07:23,530 - 01:07:23,970] first of all,
+- [01:07:23,970 - 01:07:25,010] there's an i in there,
+- [01:07:25,130 - 01:07:25,930] among other things.
+- [01:07:26,250 - 01:07:27,850] I doubt that it is reversed.
+- [01:07:28,610 - 01:07:30,610] Let me just find my own notes.
+- [01:07:38,370 - 01:07:40,370] I have h with k in my notes.
+- [01:07:41,190 - 01:07:41,640] We can find out that
+- [01:07:41,640 - 01:07:42,090] the time derivative of a function,
+- [01:07:42,090 - 01:07:43,030] So I can just find out fast enough.
+- [01:07:44,350 - 01:07:45,530] Everybody will send you an email.
+- [01:07:45,770 - 01:07:46,050] Hm?
+- [01:07:46,550 - 01:07:47,870] Everybody will send you an email.
+- [01:07:48,930 - 01:07:49,470] That's true,
+- [01:07:49,470 - 01:07:50,830] but I'm going to write h with k.
+- [01:07:51,090 - 01:07:52,350] Last time you had it the other way around.
+- [01:07:52,990 - 01:07:54,370] Last time I had it the other way around?
+- [01:07:54,570 - 01:07:54,730] Yeah,
+- [01:07:54,730 - 01:07:55,570] I had k with an h.
+- [01:07:56,150 - 01:07:56,510] Well,
+- [01:07:56,510 - 01:07:57,910] it's one way or the other.
+- [01:08:00,490 - 01:08:00,850] OK,
+- [01:08:00,850 - 01:08:02,130] let's figure it out.
+- [01:08:12,730 - 01:08:13,130] OK,
+- [01:08:13,130 - 01:08:14,190] let's figure it out.
+- [01:08:15,530 - 01:08:16,810] We have some function,
+- [01:08:16,810 - 01:08:19,149] let's call it k since we've already called it k.
+- [01:08:21,810 - 01:08:24,029] k of x and p,
+- [01:08:24,029 - 01:08:24,770] for example.
+- [01:08:26,029 - 01:08:28,529] The time derivative of k of x and p
+- [01:08:28,529 - 01:08:30,699] is equal to the derivative
+- [01:08:30,699 - 01:08:32,870] of k with respect to x
+- [01:08:33,689 - 01:08:35,410] times the derivative of x,
+- [01:08:35,410 - 01:08:36,710] just the x dt,
+- [01:08:36,710 - 01:08:37,850] let's call it x dot,
+- [01:08:42,390 - 01:08:45,090] plus the derivative of k with
+- [01:08:45,090 - 01:08:47,790] respect to p times p dot.
+- [01:08:47,850 - 01:08:49,270] I don't like this red pen,
+- [01:08:49,270 - 01:08:52,069] but I've sort of run out of black pens.
+- [01:08:53,029 - 01:08:53,510] No,
+- [01:08:53,510 - 01:08:53,970] I haven't.
+- [01:08:53,970 - 01:08:54,729] Here's another one.
+- [01:08:56,689 - 01:08:58,270] Let's hope it's got something in it.
+- [01:08:58,529 - 01:08:59,510] All right,
+- [01:08:59,510 - 01:09:00,450] this is true.
+- [01:09:00,630 - 01:09:00,890] Now,
+- [01:09:00,890 - 01:09:02,029] do you remember Hamilton's equations?
+- [01:09:02,970 - 01:09:08,950] Hamilton's equations say that x dot is dh dp.
+- [01:09:09,870 - 01:09:11,609] So this is dh dp.
+- [01:09:13,350 - 01:09:14,510] And that's correct.
+- [01:09:14,510 - 01:09:16,029] It really is dh dp,
+- [01:09:16,029 - 01:09:17,970] not minus dh dp.
+- [01:09:18,390 - 01:09:23,069] p dot is minus dh dx.
+- [01:09:24,750 - 01:09:25,910] This is correct.
+- [01:09:27,649 - 01:09:28,090] Now,
+- [01:09:28,090 - 01:09:28,870] what is this?
+- [01:09:28,950 - 01:09:31,750] This is the Poisson bracket of k with h.
+- [01:09:32,210 - 01:09:33,029] You were right,
+- [01:09:33,029 - 01:09:33,370] Michael,
+- [01:09:33,370 - 01:09:33,990] I think.
+- [01:09:34,770 - 01:09:35,210] Well,
+- [01:09:35,210 - 01:09:36,229] I was just reading that.
+- [01:09:37,770 - 01:09:38,609] What did you say?
+- [01:09:38,609 - 01:09:40,050] You did that in your head while I was...
+- [01:09:40,050 - 01:09:40,189] Oh.
+- [01:09:43,830 - 01:09:45,090] k with h is right.
+- [01:09:45,090 - 01:09:45,569] Okay.
+- [01:09:45,970 - 01:09:48,609] So you can always go back to the basic principle
+- [01:09:48,609 - 01:09:50,350] and figure out what's going on.
+- [01:09:50,350 - 01:09:51,090] That's correct.
+- [01:09:53,210 - 01:09:54,550] Is it possible that we made
+- [01:09:54,550 - 01:09:55,890] a mistake in the quantum equation?
+- [01:09:55,890 - 01:09:57,110] I can't tell.
+- [01:09:57,110 - 01:09:57,770] I'm not sure.
+- [01:09:57,810 - 01:09:59,460] The sign of the ih could
+- [01:09:59,460 - 01:10:01,110] be the sign of the ih.
+- [01:10:01,210 - 01:10:02,170] That's the choice,
+- [01:10:02,170 - 01:10:02,850] the bra ket.
+- [01:10:03,090 - 01:10:03,350] Yeah.
+- [01:10:03,350 - 01:10:05,410] It could be,
+- [01:10:05,410 - 01:10:06,210] and maybe it's right.
+- [01:10:06,210 - 01:10:06,930] I don't remember.
+- [01:10:07,150 - 01:10:08,770] That's where that order came from,
+- [01:10:08,770 - 01:10:10,940] is that we chose the bra to be
+- [01:10:10,940 - 01:10:13,110] a minus i and the ket to be...
+- [01:10:13,110 - 01:10:15,010] And I think that's right with all
+- [01:10:15,010 - 01:10:16,910] of the conventions I've used up till now.
+- [01:10:17,410 - 01:10:19,030] So it looks like that's the way it is.
+- [01:10:19,030 - 01:10:20,330] It's just the way it is.
+- [01:10:20,450 - 01:10:21,150] The i kdh?
+- [01:10:22,910 - 01:10:24,250] Change the sign...
+- [01:10:24,250 - 01:10:25,610] change it to minus i.
+- [01:10:25,890 - 01:10:25,970] Yeah,
+- [01:10:25,970 - 01:10:26,090] yeah.
+- [01:10:26,090 - 01:10:26,610] Yeah.
+- [01:10:27,430 - 01:10:30,410] There's nothing sacred about the sign of i.
+- [01:10:31,150 - 01:10:32,670] I suppose that's the way it is.
+- [01:10:32,670 - 01:10:33,810] I'm a little surprised,
+- [01:10:33,810 - 01:10:34,870] but nevertheless...
+- [01:10:36,090 - 01:10:36,450] Oh.
+- [01:10:36,450 - 01:10:36,810] No,
+- [01:10:36,810 - 01:10:37,730] I think it's right.
+- [01:10:37,730 - 01:10:38,610] I think it's right.
+- [01:10:39,150 - 01:10:42,130] I think that's the right convention,
+- [01:10:42,130 - 01:10:43,550] although it seems weird.
+- [01:10:43,810 - 01:10:44,010] Yeah,
+- [01:10:44,010 - 01:10:45,230] I think all the conventions are right.
+- [01:10:45,910 - 01:10:46,270] Yeah,
+- [01:10:46,270 - 01:10:46,830] it's okay.
+- [01:10:46,830 - 01:10:47,710] It's right.
+- [01:10:49,270 - 01:10:49,770] All right,
+- [01:10:49,770 - 01:10:52,500] so let's consider then the
+- [01:10:52,500 - 01:10:55,230] connection between Poisson brackets and commutators.
+- [01:10:55,230 - 01:10:56,810] There must be some connection between them.
+- [01:10:56,810 - 01:10:58,050] They must somehow be the same
+- [01:10:58,050 - 01:10:59,290] thing or almost the same thing.
+- [01:11:00,390 - 01:11:04,820] So let's look at various Poisson brackets and various commutators
+- [01:11:04,820 - 01:11:09,250] and just see to what extent they're similar to each other,
+- [01:11:09,250 - 01:11:10,350] to what extent they're different.
+- [01:11:10,850 - 01:11:11,510] In fact,
+- [01:11:11,510 - 01:11:12,990] we're not going to bother with the differences.
+- [01:11:12,990 - 01:11:14,570] They are sometimes different,
+- [01:11:14,570 - 01:11:16,280] but almost in most contexts
+- [01:11:16,280 - 01:11:17,990] they're very similar to each other.
+- [01:11:18,410 - 01:11:20,290] Poisson brackets and commutators.
+- [01:11:20,550 - 01:11:23,250] So let's start with some function of position.
+- [01:11:23,250 - 01:11:25,930] It could be the position itself.
+- [01:11:26,510 - 01:11:30,170] And take its Poisson bracket with momentum.
+- [01:11:32,050 - 01:11:37,010] The definition of that is df by dx,
+- [01:11:37,010 - 01:11:39,570] dp by dp,
+- [01:11:39,570 - 01:11:40,770] but that's just one.
+- [01:11:41,130 - 01:11:42,150] Let's write it.
+- [01:11:42,150 - 01:11:48,330] dp by dp minus df by dp,
+- [01:11:48,330 - 01:11:51,250] dp by dx.
+- [01:11:53,250 - 01:11:55,910] The second term is zero on at least two counts.
+- [01:11:56,310 - 01:11:57,230] The f,
+- [01:11:57,230 - 01:11:57,930] sorry,
+- [01:11:57,930 - 01:12:01,230] the f by dp.
+- [01:12:02,110 - 01:12:03,090] First of all,
+- [01:12:03,090 - 01:12:04,450] the f by dp is zero.
+- [01:12:04,450 - 01:12:06,230] f doesn't depend on p.
+- [01:12:06,950 - 01:12:08,090] And second of all,
+- [01:12:08,090 - 01:12:09,470] the p by dx doesn't,
+- [01:12:09,470 - 01:12:11,430] the p doesn't depend on x.
+- [01:12:11,810 - 01:12:14,130] So the second term here is completely zero.
+- [01:12:16,710 - 01:12:19,750] The derivative of p with respect to itself is one.
+- [01:12:20,270 - 01:12:21,750] And we find the lovely fact
+- [01:12:21,750 - 01:12:23,230] that the Poisson bracket is zero.
+- [01:12:23,230 - 01:12:26,960] The Poisson bracket of any function of x with p
+- [01:12:26,960 - 01:12:30,690] is just the derivative of f with respect to x.
+- [01:12:30,950 - 01:12:31,870] In other words,
+- [01:12:31,870 - 01:12:33,190] the operation of,
+- [01:12:33,190 - 01:12:34,830] there should be a verb for this,
+- [01:12:34,830 - 01:12:35,970] a single verb for it.
+- [01:12:36,290 - 01:12:41,030] But the operation of Poisson bracketing with p,
+- [01:12:41,030 - 01:12:43,870] Poissing,
+- [01:12:43,870 - 01:12:45,990] Poissing with respect to,
+- [01:12:49,809 - 01:12:53,210] Poissing f with p gives you the following.
+- [01:12:53,210 - 01:12:53,950] You can do df by dx.
+- [01:12:55,589 - 01:12:59,110] What about commuting f of x?
+- [01:12:59,330 - 01:13:00,510] Let's take f of x
+- [01:13:00,510 - 01:13:01,690] now to be a quantum operator.
+- [01:13:02,950 - 01:13:04,030] What does it mean?
+- [01:13:04,250 - 01:13:08,310] It means f of x is an operator
+- [01:13:08,310 - 01:13:12,370] which multiplies a wave function by f of x.
+- [01:13:12,710 - 01:13:14,690] It takes any function of x,
+- [01:13:14,690 - 01:13:15,670] psi of x,
+- [01:13:15,670 - 01:13:17,930] and multiplies it by f of
+- [01:13:17,930 - 01:13:20,190] x to give a new wave function.
+- [01:13:20,910 - 01:13:22,030] That's the operation,
+- [01:13:22,030 - 01:13:23,770] quantum mechanically,
+- [01:13:23,770 - 01:13:25,350] of f of x.
+- [01:13:26,130 - 01:13:28,000] Let's figure out what the commutator
+- [01:13:28,000 - 01:13:29,870] is of f of x with p.
+- [01:13:30,310 - 01:13:31,390] To do that,
+- [01:13:31,390 - 01:13:34,010] we just write down f of x.
+- [01:13:34,650 - 01:13:35,170] Now,
+- [01:13:35,170 - 01:13:38,230] p is minus i h bar.
+- [01:13:39,050 - 01:13:40,450] I'm going to keep the
+- [01:13:40,450 - 01:13:41,850] h bars in for a minute.
+- [01:13:42,610 - 01:13:43,130] Minus,
+- [01:13:43,130 - 01:13:45,130] I should have kept the h bars in here also.
+- [01:13:46,370 - 01:13:48,310] The h bar here is here.
+- [01:13:48,810 - 01:13:49,330] Okay.
+- [01:13:50,190 - 01:13:51,870] If you put a minus i there,
+- [01:13:51,870 - 01:13:55,430] that's what's in this book as Ehrenfest's theorem.
+- [01:13:55,750 - 01:13:57,910] You think there's a minus sign?
+- [01:13:57,910 - 01:13:58,690] I'm not even going to try.
+- [01:13:58,790 - 01:13:59,810] I'm just saying you have kh,
+- [01:13:59,810 - 01:14:01,210] and it's minus i.
+- [01:14:03,450 - 01:14:04,810] It's correct as written,
+- [01:14:04,810 - 01:14:07,390] or you can have minus i and kh.
+- [01:14:07,610 - 01:14:07,750] Oh,
+- [01:14:07,750 - 01:14:08,050] I see,
+- [01:14:08,050 - 01:14:08,390] I see.
+- [01:14:08,390 - 01:14:08,630] Yeah,
+- [01:14:08,630 - 01:14:08,990] okay,
+- [01:14:08,990 - 01:14:09,230] good.
+- [01:14:10,430 - 01:14:10,830] Right.
+- [01:14:10,830 - 01:14:11,990] Okay,
+- [01:14:11,990 - 01:14:12,430] so,
+- [01:14:12,430 - 01:14:14,790] and I put the h bar back in
+- [01:14:14,790 - 01:14:17,150] because I want to keep track of it.
+- [01:14:17,190 - 01:14:17,790] There's no h bar,
+- [01:14:17,790 - 01:14:18,230] of course,
+- [01:14:18,230 - 01:14:19,190] in classical physics.
+- [01:14:19,190 - 01:14:20,770] Classical physics has no h bars.
+- [01:14:21,390 - 01:14:22,070] All right,
+- [01:14:22,070 - 01:14:25,190] so let's take the commutator of f
+- [01:14:25,190 - 01:14:28,310] of x with minus i d by dx.
+- [01:14:28,830 - 01:14:29,930] That's what p is,
+- [01:14:29,930 - 01:14:31,170] and there's an h bar in there,
+- [01:14:31,170 - 01:14:31,410] right?
+- [01:14:32,170 - 01:14:34,470] Minus i h bar d by dx.
+- [01:14:39,510 - 01:14:42,190] I want the commutator of f
+- [01:14:42,190 - 01:14:44,870] of x with this object over here.
+- [01:14:45,210 - 01:14:48,950] That means I take f of x times this.
+- [01:14:48,970 - 01:14:49,170] Okay.
+- [01:14:50,110 - 01:14:51,410] Minus the opposite order.
+- [01:14:51,590 - 01:14:52,930] Let's put a bracket around there.
+- [01:14:53,350 - 01:14:57,960] Minus i h bar d
+- [01:14:57,960 - 01:15:02,570] by dx times f of x.
+- [01:15:04,910 - 01:15:06,850] That's the commutator between f of
+- [01:15:06,850 - 01:15:08,790] x and the thing inside the bracket,
+- [01:15:09,590 - 01:15:10,750] which happens to be p.
+- [01:15:11,590 - 01:15:12,030] Now,
+- [01:15:12,030 - 01:15:12,810] what do I do with this?
+- [01:15:12,870 - 01:15:13,730] How am I going to find
+- [01:15:13,730 - 01:15:14,590] out what this is equal to?
+- [01:15:15,130 - 01:15:17,150] The way to find out what it's equal to
+- [01:15:17,150 - 01:15:20,610] is to apply it to an arbitrary wave function,
+- [01:15:20,610 - 01:15:21,870] any wave function.
+- [01:15:22,310 - 01:15:24,570] So let's take this and apply
+- [01:15:24,570 - 01:15:26,830] it to an arbitrary wave function,
+- [01:15:27,010 - 01:15:27,710] psi of x,
+- [01:15:27,710 - 01:15:28,530] and see what we get.
+- [01:15:30,550 - 01:15:34,410] That's the way to figure out what an operator does,
+- [01:15:34,970 - 01:15:36,890] is apply it to a wave function.
+- [01:15:39,010 - 01:15:39,490] Okay,
+- [01:15:39,490 - 01:15:41,010] let's see if we can figure it out.
+- [01:15:41,170 - 01:15:41,670] Do I have the...
+- [01:15:41,670 - 01:15:41,730] yeah.
+- [01:15:42,030 - 01:15:42,510] Okay.
+- [01:15:42,810 - 01:15:43,650] First of all,
+- [01:15:43,650 - 01:15:44,270] the first term.
+- [01:15:44,330 - 01:15:46,230] The first term gives us f of x.
+- [01:15:47,150 - 01:15:49,570] It gives us minus i h bar,
+- [01:15:49,570 - 01:15:51,250] minus i h bar.
+- [01:15:52,290 - 01:15:53,190] That's from here.
+- [01:15:53,430 - 01:15:54,530] f of x,
+- [01:15:54,530 - 01:15:58,410] and then the derivative of psi with respect to x.
+- [01:16:00,850 - 01:16:01,410] Right?
+- [01:16:01,710 - 01:16:03,990] d by dx just hits
+- [01:16:03,990 - 01:16:06,270] psi of x and differentiates it.
+- [01:16:06,590 - 01:16:08,950] So what it does is it multiplies,
+- [01:16:08,950 - 01:16:12,050] it first differentiates and then multiplies by f of x.
+- [01:16:12,910 - 01:16:15,770] The second term gives me a plus i.
+- [01:16:17,150 - 01:16:18,250] Plus i h bar.
+- [01:16:19,910 - 01:16:21,850] Minus times minus is plus h bar.
+- [01:16:22,230 - 01:16:25,190] But now the derivative operation hits
+- [01:16:25,190 - 01:16:28,150] the product f of x times psi.
+- [01:16:28,950 - 01:16:30,730] First f of x multiplies psi,
+- [01:16:30,730 - 01:16:32,750] and then you differentiate.
+- [01:16:33,270 - 01:16:34,990] You get two terms.
+- [01:16:35,370 - 01:16:38,130] So let's put some great big bracket around this.
+- [01:16:38,250 - 01:16:39,130] We get two terms.
+- [01:16:39,730 - 01:16:43,510] The first term just differentiates psi,
+- [01:16:43,510 - 01:16:44,950] leaving f alone.
+- [01:16:44,950 - 01:16:47,540] So that gives you f of
+- [01:16:47,540 - 01:16:50,130] x times d psi by dx.
+- [01:16:52,270 - 01:16:53,490] That's the first term.
+- [01:16:53,690 - 01:16:57,230] The second term differentiates f and leaves psi alone.
+- [01:16:57,830 - 01:17:00,920] So that gives me plus df
+- [01:17:00,920 - 01:17:04,010] by dx times psi of x.
+- [01:17:05,330 - 01:17:06,790] Everything inside the bracket.
+- [01:17:07,870 - 01:17:11,290] That's the operation of this commutator
+- [01:17:11,290 - 01:17:14,710] acting on a wave function psi.
+- [01:17:14,950 - 01:17:16,630] Now some terms cancel.
+- [01:17:17,250 - 01:17:19,200] Here's d psi by dx times
+- [01:17:19,200 - 01:17:21,150] i times minus i h bar f.
+- [01:17:21,730 - 01:17:23,510] Here's the same thing with a plus sign.
+- [01:17:24,030 - 01:17:25,490] These cancel each other.
+- [01:17:25,630 - 01:17:27,050] So we might as well just erase them.
+- [01:17:28,930 - 01:17:31,370] I think we've done this kind of manipulation before,
+- [01:17:31,370 - 01:17:32,630] but let's do it.
+- [01:17:32,890 - 01:17:35,390] This term cancels this term.
+- [01:17:40,550 - 01:17:44,770] All we have left is i h bar.
+- [01:17:46,129 - 01:17:47,190] df by dx.
+- [01:17:47,610 - 01:17:51,050] Now df by dx is just a function of x.
+- [01:17:51,550 - 01:17:53,130] It's just a function of x,
+- [01:17:53,130 - 01:17:56,390] which we then multiply by psi of x.
+- [01:17:57,930 - 01:17:59,090] Here's what we learned.
+- [01:17:59,310 - 01:18:02,180] We learned that taking this complicated commutator
+- [01:18:02,180 - 01:18:05,050] and applying it to any psi of x
+- [01:18:05,610 - 01:18:08,710] is the same thing as multiplying psi of
+- [01:18:08,710 - 01:18:11,810] x by i h bar df by dx.
+- [01:18:12,950 - 01:18:14,390] We can now write.
+- [01:18:14,770 - 01:18:15,190] Very simply,
+- [01:18:15,190 - 01:18:18,590] that the commutator is just equal.
+- [01:18:19,789 - 01:18:23,099] The commutator as an operator is just equal
+- [01:18:23,099 - 01:18:26,410] to multiplication by i h bar df by dx.
+- [01:18:27,090 - 01:18:28,970] So now I have a simple formula.
+- [01:18:30,389 - 01:18:32,810] The commutator of f with p,
+- [01:18:32,810 - 01:18:34,110] let's call it p now.
+- [01:18:39,130 - 01:18:40,550] Minus p times f.
+- [01:18:45,469 - 01:18:50,689] Has exactly the same action as multiplying
+- [01:18:50,689 - 01:18:55,910] by i h bar df by dx.
+- [01:18:58,550 - 01:18:59,310] Well,
+- [01:18:59,310 - 01:19:00,430] let's just compare that.
+- [01:19:00,810 - 01:19:01,650] Poisson bracket,
+- [01:19:01,650 - 01:19:06,770] poissing with p gives us df by dx.
+- [01:19:07,430 - 01:19:10,010] Commuting with p gives us
+- [01:19:10,010 - 01:19:12,590] i h bar df by dx.
+- [01:19:12,590 - 01:19:17,890] We could also do a similar calculation to find out
+- [01:19:17,890 - 01:19:23,190] what the commutator of x with a function of p is.
+- [01:19:24,410 - 01:19:26,410] This is easy for one reason.
+- [01:19:26,930 - 01:19:28,940] Remember there's this reciprocal
+- [01:19:28,940 - 01:19:30,950] relationship between p and x.
+- [01:19:31,110 - 01:19:33,690] They come in completely parallel to each other.
+- [01:19:35,390 - 01:19:38,250] p and x can be sort of interchanged.
+- [01:19:38,290 - 01:19:41,190] They're simply Fourier transforms of each other.
+- [01:19:41,190 - 01:19:44,230] And it wouldn't be surprising if this
+- [01:19:44,230 - 01:19:47,270] formula just gave way to a similar formula
+- [01:19:47,270 - 01:19:50,170] in which we differentiate f
+- [01:19:50,170 - 01:19:53,070] of p with respect to p.
+- [01:19:53,730 - 01:19:56,190] Here when we commute f of x with p,
+- [01:19:56,190 - 01:19:58,010] we get the f by dx.
+- [01:19:58,430 - 01:20:02,850] Here what you get is i h
+- [01:20:02,850 - 01:20:07,270] bar df of p with respect to p.
+- [01:20:10,350 - 01:20:11,170] So p is the commutator of x.
+- [01:20:11,170 - 01:20:15,990] So poissing with either x or p differentiates.
+- [01:20:17,030 - 01:20:20,350] Poissing with p differentiates with respect to x.
+- [01:20:21,050 - 01:20:24,010] Poissing with x differentiates with respect to p.
+- [01:20:24,110 - 01:20:24,880] Now let me just see
+- [01:20:24,880 - 01:20:25,650] if I have the sign right.
+- [01:20:25,730 - 01:20:26,250] I think I do.
+- [01:20:26,630 - 01:20:27,090] Yeah,
+- [01:20:27,090 - 01:20:29,010] there's an easy way to tell.
+- [01:20:29,830 - 01:20:31,980] The easy way to tell is supposing
+- [01:20:31,980 - 01:20:34,130] f of x was nothing but x itself.
+- [01:20:34,470 - 01:20:35,930] Let's write down what this says
+- [01:20:35,930 - 01:20:37,390] if f of x is just x.
+- [01:20:38,050 - 01:20:41,150] Then it says that the commutator of x is x.
+- [01:20:41,170 - 01:20:44,860] So the commutator of x with p is
+- [01:20:44,860 - 01:20:48,550] equal to i h bar times dx by dx.
+- [01:20:48,910 - 01:20:49,530] That's just 1.
+- [01:20:50,470 - 01:20:52,190] So it says commutator of x
+- [01:20:52,190 - 01:20:53,910] with p is i h bar.
+- [01:20:55,250 - 01:20:56,620] That's what happens if you just
+- [01:20:56,620 - 01:20:57,990] say f is equal to x.
+- [01:20:58,190 - 01:20:59,670] Then df by dx is 1.
+- [01:21:00,410 - 01:21:03,210] Let's suppose that f of p is just p.
+- [01:21:05,329 - 01:21:08,530] Then this would also say exactly the same thing.
+- [01:21:08,530 - 01:21:11,030] It would say commutator of x with
+- [01:21:11,030 - 01:21:13,530] p is i h bar times 1.
+- [01:21:13,950 - 01:21:15,210] So I have the sign right.
+- [01:21:15,590 - 01:21:17,190] If I had put another sign here,
+- [01:21:17,190 - 01:21:19,590] I would have an inconsistency between these two formulas.
+- [01:21:21,370 - 01:21:23,850] Commutator of x with p is i h bar.
+- [01:21:24,330 - 01:21:26,810] What's the Poisson bracket of x with p?
+- [01:21:32,070 - 01:21:32,610] That's 1.
+- [01:21:34,790 - 01:21:36,690] We can kind of read off this.
+- [01:21:38,610 - 01:21:42,950] The relationship between Poisson brackets and commutators.
+- [01:21:43,370 - 01:21:44,810] They appear to be,
+- [01:21:44,810 - 01:21:46,710] at least in simple situations,
+- [01:21:47,410 - 01:21:50,120] they appear to be essentially the same thing
+- [01:21:50,120 - 01:21:52,830] except for a factor of i h bar.
+- [01:21:53,990 - 01:21:58,360] We can write this in the form
+- [01:21:58,360 - 01:22:02,730] that Poisson bracket is equal to commutator.
+- [01:22:03,250 - 01:22:03,850] Now,
+- [01:22:03,850 - 01:22:06,310] where does the i h bar go?
+- [01:22:06,430 - 01:22:07,110] That's the question.
+- [01:22:10,269 - 01:22:12,270] i h bar goes here,
+- [01:22:12,270 - 01:22:12,830] I believe.
+- [01:22:13,050 - 01:22:13,670] Is that correct?
+- [01:22:15,969 - 01:22:16,490] Notice,
+- [01:22:16,490 - 01:22:17,010] incidentally,
+- [01:22:17,010 - 01:22:18,750] that the commutator,
+- [01:22:18,750 - 01:22:20,690] whatever it happens to be,
+- [01:22:20,790 - 01:22:21,770] let's say x and p,
+- [01:22:21,770 - 01:22:22,710] as an example,
+- [01:22:22,710 - 01:22:23,470] x and p,
+- [01:22:23,470 - 01:22:24,710] x and p.
+- [01:22:26,269 - 01:22:28,470] The commutator is much,
+- [01:22:28,470 - 01:22:30,350] much smaller than the Poisson bracket
+- [01:22:30,350 - 01:22:32,230] by a factor of Planck's constant.
+- [01:22:32,430 - 01:22:34,310] Planck's constant is a terribly small number.
+- [01:22:35,430 - 01:22:37,110] Commutators are very small.
+- [01:22:37,790 - 01:22:40,430] That's natural because in classical physics,
+- [01:22:40,430 - 01:22:42,830] x p minus p x,
+- [01:22:42,830 - 01:22:43,690] that's 0.
+- [01:22:45,990 - 01:22:48,210] Commutators are 0 in the classical limit.
+- [01:22:48,610 - 01:22:50,850] The limit that h bar is equal to 0.
+- [01:22:51,370 - 01:22:52,330] Commutators are 0.
+- [01:22:52,590 - 01:22:54,370] They're only non-zero when h
+- [01:22:54,370 - 01:22:56,150] bar is not equal to 0.
+- [01:22:56,950 - 01:22:57,250] Then,
+- [01:22:57,250 - 01:22:59,190] so here we see how h
+- [01:22:59,190 - 01:23:01,130] bar gets into the commutation relations.
+- [01:23:02,130 - 01:23:02,690] Okay,
+- [01:23:02,690 - 01:23:07,090] so let's just check a few facts about commutators.
+- [01:23:07,090 - 01:23:09,730] Let's look at commutators and Poisson brackets and
+- [01:23:09,730 - 01:23:12,370] see that they're pretty parallel to each other.
+- [01:23:12,710 - 01:23:13,690] Here's an example.
+- [01:23:14,369 - 01:23:16,810] A B Poisson bracket.
+- [01:23:17,910 - 01:23:20,970] What's the relationship between that and,
+- [01:23:20,970 - 01:23:22,710] I'm writing equal,
+- [01:23:22,710 - 01:23:24,070] but I'm going to change it in a moment,
+- [01:23:24,070 - 01:23:26,550] B A?
+- [01:23:29,370 - 01:23:30,290] What's the relation?
+- [01:23:30,490 - 01:23:30,570] Well,
+- [01:23:30,570 - 01:23:31,740] one of them is derivative
+- [01:23:31,740 - 01:23:32,910] of A with respect to x,
+- [01:23:32,910 - 01:23:35,370] derivative of B with respect to p minus the opposite.
+- [01:23:35,370 - 01:23:38,950] The other one is exactly the same thing,
+- [01:23:38,950 - 01:23:40,730] except in the opposite order.
+- [01:23:40,890 - 01:23:42,530] They're negatives of each other.
+- [01:23:44,570 - 01:23:48,320] Poisson brackets have this anti-symmetry that Poisson bracket of A
+- [01:23:48,320 - 01:23:52,070] with B is minus the Poisson bracket of B with A.
+- [01:23:52,330 - 01:23:52,850] Well,
+- [01:23:52,850 - 01:23:53,170] of course,
+- [01:23:53,170 - 01:23:54,710] that's also true of commutators.
+- [01:23:55,170 - 01:23:59,010] The commutator is A B minus B A.
+- [01:23:59,850 - 01:24:04,650] That's obviously minus B A.
+- [01:24:05,730 - 01:24:06,510] Minus A B.
+- [01:24:08,050 - 01:24:09,930] Here we have A B with a plus sign.
+- [01:24:10,110 - 01:24:11,610] Here we have A B with a plus sign.
+- [01:24:12,470 - 01:24:12,950] Okay.
+- [01:24:13,270 - 01:24:16,350] So Poisson brackets and commutators
+- [01:24:16,350 - 01:24:19,430] share the property of anti-symmetry,
+- [01:24:19,430 - 01:24:20,090] it's called,
+- [01:24:20,570 - 01:24:23,520] that when you invert the order of the
+- [01:24:23,520 - 01:24:26,470] two things which you're either Poissing or commuting,
+- [01:24:26,470 - 01:24:28,350] the sign changes.
+- [01:24:28,590 - 01:24:29,490] So that's a good sign.
+- [01:24:29,710 - 01:24:31,070] They have some algebraic similarity.
+- [01:24:31,630 - 01:24:33,250] Let me give you another example,
+- [01:24:33,250 - 01:24:34,790] which is a very useful fact.
+- [01:24:35,370 - 01:24:37,500] When you're trying to either
+- [01:24:37,500 - 01:24:39,630] compute quickly commutators or Poisson brackets.
+- [01:24:42,310 - 01:24:42,830] Oh,
+- [01:24:42,830 - 01:24:43,050] good.
+- [01:24:43,190 - 01:24:44,070] An empty blackboard.
+- [01:24:45,950 - 01:24:47,270] Supposing you have a product,
+- [01:24:47,270 - 01:24:47,830] A B,
+- [01:24:47,830 - 01:24:49,960] and you want to take its
+- [01:24:49,960 - 01:24:52,090] Poisson bracket with a third thing,
+- [01:24:52,090 - 01:24:52,450] C.
+- [01:24:53,090 - 01:24:55,720] You can build up a lot of stuff
+- [01:24:55,720 - 01:24:58,350] by starting with some simple things and constructing products.
+- [01:24:59,350 - 01:25:00,810] Let's work out what that is.
+- [01:25:01,770 - 01:25:03,530] That's D A B.
+- [01:25:05,370 - 01:25:06,230] By D X.
+- [01:25:06,890 - 01:25:08,110] But let me work,
+- [01:25:08,110 - 01:25:08,430] alright,
+- [01:25:08,430 - 01:25:09,370] that's D A B.
+- [01:25:10,410 - 01:25:11,730] By D X.
+- [01:25:12,510 - 01:25:14,710] D C by D P.
+- [01:25:15,929 - 01:25:17,950] Minus D A B.
+- [01:25:18,810 - 01:25:20,070] By D P.
+- [01:25:20,290 - 01:25:22,050] D C by D X.
+- [01:25:23,710 - 01:25:27,250] But now let's work out the derivative of A B.
+- [01:25:28,110 - 01:25:29,030] That's A.
+- [01:25:30,510 - 01:25:32,770] Times the X derivative of B.
+- [01:25:34,390 - 01:25:35,030] Plus.
+- [01:25:35,929 - 01:25:36,610] B.
+- [01:25:37,190 - 01:25:39,670] Times the X derivative of A.
+- [01:25:40,750 - 01:25:42,070] All times.
+- [01:25:42,690 - 01:25:45,270] The derivative of C with respect to P.
+- [01:25:49,110 - 01:25:50,410] And this one.
+- [01:25:50,870 - 01:25:52,050] Is minus.
+- [01:25:53,110 - 01:25:53,790] A.
+- [01:25:55,150 - 01:25:56,390] D P B.
+- [01:26:02,650 - 01:26:04,010] Plus B.
+- [01:26:04,010 - 01:26:06,390] D P A.
+- [01:26:07,190 - 01:26:08,250] All times.
+- [01:26:08,350 - 01:26:09,790] D C by D X.
+- [01:26:11,670 - 01:26:13,010] Now let's group these.
+- [01:26:13,230 - 01:26:15,130] Let's find all the terms with
+- [01:26:15,130 - 01:26:17,030] A standing out in front of them.
+- [01:26:17,250 - 01:26:18,390] We have A.
+- [01:26:20,050 - 01:26:20,950] Times something.
+- [01:26:21,810 - 01:26:22,950] D X B.
+- [01:26:24,070 - 01:26:25,370] D P C.
+- [01:26:25,710 - 01:26:26,270] Alright,
+- [01:26:26,270 - 01:26:26,510] D,
+- [01:26:26,510 - 01:26:28,750] this is derivative of B with respect to X.
+- [01:26:29,410 - 01:26:31,190] Derivative of C with respect to P.
+- [01:26:31,270 - 01:26:32,430] Let's write it in the same notation.
+- [01:26:38,530 - 01:26:40,530] Take this one and this one.
+- [01:26:40,630 - 01:26:41,290] What does it give you?
+- [01:26:42,550 - 01:26:45,280] It gives you A times the
+- [01:26:45,280 - 01:26:48,010] Poisson bracket of B with C.
+- [01:26:48,530 - 01:26:49,490] Look at it.
+- [01:26:49,690 - 01:26:53,130] A times D X B.
+- [01:26:54,270 - 01:26:55,430] D P C.
+- [01:26:56,350 - 01:26:59,250] Minus A times D P B.
+- [01:26:59,310 - 01:27:00,550] D X C.
+- [01:27:00,770 - 01:27:02,380] That is nothing but A times
+- [01:27:02,380 - 01:27:03,990] the Poisson bracket of B with C.
+- [01:27:03,990 - 01:27:06,990] Now there's the other term.
+- [01:27:07,110 - 01:27:08,280] We've gotten rid of this
+- [01:27:08,280 - 01:27:09,450] and we've gotten rid of this.
+- [01:27:10,150 - 01:27:13,150] Now there's the term with B undifferentiated.
+- [01:27:13,510 - 01:27:14,390] Two of them.
+- [01:27:14,550 - 01:27:16,650] Two terms with B undifferentiated.
+- [01:27:17,250 - 01:27:20,130] So let's put the B out here.
+- [01:27:21,330 - 01:27:22,670] And what does it multiply?
+- [01:27:23,110 - 01:27:25,330] It multiplies the X derivative of
+- [01:27:25,330 - 01:27:27,550] A times the P derivative of C.
+- [01:27:28,710 - 01:27:30,430] Minus the opposite order.
+- [01:27:30,790 - 01:27:33,250] And that's just the Poisson bracket.
+- [01:27:33,250 - 01:27:35,690] Minus the Poisson bracket of A with C.
+- [01:27:37,090 - 01:27:39,890] It doesn't matter that I put the B on
+- [01:27:39,890 - 01:27:42,690] the right here and the A on the left.
+- [01:27:42,810 - 01:27:44,470] We're talking about classical physics.
+- [01:27:45,210 - 01:27:46,150] Classical physics,
+- [01:27:46,150 - 01:27:48,750] the order of multiplication doesn't matter.
+- [01:27:49,050 - 01:27:51,600] I just wrote it that way because that's
+- [01:27:51,600 - 01:27:54,150] the way it comes out in quantum mechanics.
+- [01:27:54,570 - 01:27:55,670] But look what it says.
+- [01:27:55,830 - 01:27:58,870] It says if you have AB Poisson with C,
+- [01:27:59,070 - 01:28:02,810] it gives you A times B Poisson with C.
+- [01:28:02,810 - 01:28:06,330] Plus B times A Poisson with C.
+- [01:28:06,870 - 01:28:08,190] It's a simple rule.
+- [01:28:08,450 - 01:28:10,750] A simple rule that will carry you
+- [01:28:10,750 - 01:28:13,050] a long ways in calculating Poisson brackets.
+- [01:28:14,010 - 01:28:16,370] Let's compare it with commutators.
+- [01:28:17,190 - 01:28:19,090] Let's do the corresponding thing.
+- [01:28:19,170 - 01:28:19,710] Let's ask.
+- [01:28:20,190 - 01:28:22,890] Could it be the same for commutators?
+- [01:28:24,510 - 01:28:25,190] Alright,
+- [01:28:25,190 - 01:28:29,450] so let's take AB commuted with C.
+- [01:28:29,710 - 01:28:32,790] Same operation except in terms of commutators.
+- [01:28:32,810 - 01:28:37,250] This would suggest that it's given by
+- [01:28:41,709 - 01:28:47,690] A commutator BC plus commutator AC with B.
+- [01:28:48,550 - 01:28:50,370] Is this true or is it not true?
+- [01:28:50,510 - 01:28:50,650] Well,
+- [01:28:50,650 - 01:28:51,690] it's easy to find out.
+- [01:28:52,110 - 01:28:53,350] On the left side,
+- [01:28:53,350 - 01:28:57,210] we have ABC minus CAB.
+- [01:28:58,890 - 01:29:01,030] AB is a single entity.
+- [01:29:01,110 - 01:29:02,570] AB times C.
+- [01:29:02,810 - 01:29:04,330] Minus C times AB.
+- [01:29:05,410 - 01:29:06,390] Do I have it right?
+- [01:29:06,970 - 01:29:07,530] Yes.
+- [01:29:08,070 - 01:29:09,290] That's the commutator.
+- [01:29:09,490 - 01:29:10,770] Let's check over here.
+- [01:29:10,890 - 01:29:14,950] Here we have A times BC minus CB.
+- [01:29:16,210 - 01:29:17,750] That's the commutator of BC.
+- [01:29:18,210 - 01:29:25,490] And here we have AC minus CA times B.
+- [01:29:27,370 - 01:29:28,450] Let's see what we have.
+- [01:29:28,470 - 01:29:28,990] We have ABC.
+- [01:29:29,690 - 01:29:30,830] Here we have ABC.
+- [01:29:30,830 - 01:29:33,310] Here we have ABC minus CAB.
+- [01:29:33,830 - 01:29:36,250] Here we have CAB with a minus sign.
+- [01:29:36,630 - 01:29:44,690] And then we have ACB minus ACB,
+- [01:29:44,690 - 01:29:45,250] I hope.
+- [01:29:47,830 - 01:29:49,270] Did I lose a minus sign?
+- [01:29:49,370 - 01:29:49,530] Oh,
+- [01:29:49,530 - 01:29:49,750] yes.
+- [01:29:50,310 - 01:29:53,470] Minus ACB plus ACB is zero.
+- [01:29:54,130 - 01:29:54,730] So,
+- [01:29:54,730 - 01:29:55,310] in fact,
+- [01:29:55,310 - 01:29:57,470] commutators have exactly the
+- [01:29:57,470 - 01:29:59,630] same property as Poisson brackets.
+- [01:29:59,630 - 01:30:01,710] This tells you,
+- [01:30:01,710 - 01:30:05,130] if you only know some very simple Poisson brackets,
+- [01:30:05,130 - 01:30:06,650] like just X with P,
+- [01:30:06,890 - 01:30:12,030] you can start building up complicated products of
+- [01:30:12,030 - 01:30:17,170] Xs and Ps and commuting them or Poissing them,
+- [01:30:17,450 - 01:30:19,490] and you'll get the same answers.
+- [01:30:19,890 - 01:30:21,350] You'll get the same answers.
+- [01:30:21,470 - 01:30:23,770] So Poisson brackets are the natural analog.
+- [01:30:24,210 - 01:30:24,710] Sorry.
+- [01:30:27,790 - 01:30:29,610] Commutators are the natural analog.
+- [01:30:29,610 - 01:30:30,710] The analog are Poisson brackets.
+- [01:30:32,890 - 01:30:37,230] The equality is not always absolutely true.
+- [01:30:37,430 - 01:30:39,660] And the reason is sometimes
+- [01:30:39,660 - 01:30:41,890] you get expressions in quantum mechanics,
+- [01:30:42,070 - 01:30:43,270] which are a little bit,
+- [01:30:43,270 - 01:30:44,670] in classical mechanics,
+- [01:30:45,349 - 01:30:48,170] which are a little bit ambiguous in quantum mechanics.
+- [01:30:48,510 - 01:30:50,750] If I do some complicated calculation,
+- [01:30:50,750 - 01:30:53,600] and at the end of the
+- [01:30:53,600 - 01:30:56,450] day I get X cubed P,
+- [01:30:56,450 - 01:31:00,630] then I don't know whether in quantum
+- [01:31:00,630 - 01:31:04,810] mechanics this stands for X cubed P,
+- [01:31:05,070 - 01:31:07,670] it might stand for X squared P X,
+- [01:31:08,110 - 01:31:12,650] it might stand for X P X squared,
+- [01:31:12,950 - 01:31:18,930] or it might stand for P X cubed.
+- [01:31:19,290 - 01:31:21,770] There are different operators in quantum mechanics.
+- [01:31:22,070 - 01:31:24,250] So there is some ambiguity that
+- [01:31:24,250 - 01:31:26,430] when you calculate a Poisson bracket,
+- [01:31:26,430 - 01:31:28,640] you don't always know exactly what
+- [01:31:28,640 - 01:31:30,850] it stands for in quantum mechanics.
+- [01:31:31,390 - 01:31:34,590] But apart from ambiguities like this,
+- [01:31:34,850 - 01:31:37,440] Poisson brackets and commutators are equal to
+- [01:31:37,440 - 01:31:40,030] within a factor of I H bar.
+- [01:31:40,350 - 01:31:41,030] All right.
+- [01:31:41,110 - 01:31:43,190] So that's something that's very useful,
+- [01:31:43,190 - 01:31:44,270] and we'll use it.
+- [01:31:48,690 - 01:31:49,770] We're getting late,
+- [01:31:49,770 - 01:31:51,110] so we're running out of time.
+- [01:31:52,150 - 01:31:53,610] But I do want to,
+- [01:31:55,129 - 01:31:55,690] first,
+- [01:31:55,690 - 01:31:56,630] I want to,
+- [01:31:56,630 - 01:31:58,130] I'm going to do this quickly now.
+- [01:31:58,450 - 01:32:00,780] We're going to write the Schrodinger
+- [01:32:00,780 - 01:32:03,110] equation for a particle and a potential,
+- [01:32:03,910 - 01:32:06,110] and then we're going to study
+- [01:32:06,110 - 01:32:08,310] the classical limit using these principles
+- [01:32:08,310 - 01:32:10,120] to find out how the
+- [01:32:10,120 - 01:32:11,930] averages of the wave packets move.
+- [01:32:12,590 - 01:32:14,010] That's our goal for tonight.
+- [01:32:14,790 - 01:32:15,730] Work out,
+- [01:32:15,730 - 01:32:17,790] or to write down the Schrodinger equation
+- [01:32:20,370 - 01:32:23,490] for a particle moving in a potential.
+- [01:32:26,530 - 01:32:28,170] We're not going to do much with it.
+- [01:32:28,230 - 01:32:29,210] We're not going to solve it.
+- [01:32:29,590 - 01:32:31,930] We're just going to calculate how
+- [01:32:31,930 - 01:32:34,270] a wave packet moves in time.
+- [01:32:35,730 - 01:32:36,490] All right.
+- [01:32:36,570 - 01:32:37,930] The starting point is,
+- [01:32:37,930 - 01:32:38,610] as always,
+- [01:32:38,610 - 01:32:40,950] I d psi by dt,
+- [01:32:43,970 - 01:32:47,100] X and t is equal to
+- [01:32:47,100 - 01:32:50,230] H times psi of X and t.
+- [01:32:51,090 - 01:32:53,590] But now H is not just going to be partial.
+- [01:32:53,610 - 01:32:54,730] It's going to be P squared over 2m.
+- [01:32:56,370 - 01:32:58,900] But it's going to be P squared
+- [01:32:58,900 - 01:33:01,430] over 2m plus some potential energy function,
+- [01:33:03,450 - 01:33:05,210] which only depends on X.
+- [01:33:06,370 - 01:33:08,830] U of X is the potential energy.
+- [01:33:09,349 - 01:33:11,110] It corresponds to a force,
+- [01:33:11,110 - 01:33:12,640] which is minus the derivative
+- [01:33:12,640 - 01:33:14,170] of U with respect to X.
+- [01:33:14,690 - 01:33:16,550] And so we're going to plug that into here.
+- [01:33:17,570 - 01:33:20,150] What does the P squared over 2m give us?
+- [01:33:20,870 - 01:33:22,290] I've left out H bar,
+- [01:33:22,290 - 01:33:22,990] incidentally,
+- [01:33:23,610 - 01:33:24,290] and I'm going to keep leaving
+- [01:33:24,290 - 01:33:24,970] out H bar for the moment,
+- [01:33:25,530 - 01:33:26,710] for the rest of the night.
+- [01:33:26,890 - 01:33:27,930] Left out H bar.
+- [01:33:28,630 - 01:33:30,150] What did we get before?
+- [01:33:30,350 - 01:33:33,810] We got P squared over 2m gave us,
+- [01:33:33,810 - 01:33:34,530] I believe,
+- [01:33:35,790 - 01:33:38,510] minus 1 over 2m times
+- [01:33:38,510 - 01:33:41,230] second derivative with respect to X.
+- [01:33:44,130 - 01:33:44,610] Sorry,
+- [01:33:44,610 - 01:33:46,090] I'm going to put back the H bars.
+- [01:33:46,490 - 01:33:48,910] But let's leave them out for the moment.
+- [01:33:49,410 - 01:33:51,410] That's the P squared over 2m term.
+- [01:33:51,410 - 01:33:53,410] What does U of X mean?
+- [01:33:53,510 - 01:33:55,510] U of X just means multiplication
+- [01:33:55,510 - 01:33:57,510] by the function U of X.
+- [01:33:58,030 - 01:33:59,150] That's all it means.
+- [01:33:59,550 - 01:34:02,590] So the second term here is plus
+- [01:34:02,590 - 01:34:05,630] U of X times psi of X.
+- [01:34:07,910 - 01:34:10,030] I d psi by dt.
+- [01:34:11,430 - 01:34:13,280] This is the Schrodinger equation
+- [01:34:13,280 - 01:34:15,130] that Schrodinger actually wrote down.
+- [01:34:15,330 - 01:34:17,930] It says the time rate of change of
+- [01:34:17,930 - 01:34:20,530] psi is just exactly what it was before,
+- [01:34:20,530 - 01:34:22,430] plus an extra term,
+- [01:34:22,430 - 01:34:25,050] which is U of X times psi of X.
+- [01:34:26,530 - 01:34:28,090] Why is the psi of X here?
+- [01:34:28,130 - 01:34:29,170] Why not just U of X?
+- [01:34:29,490 - 01:34:31,430] Because U of X is an
+- [01:34:31,430 - 01:34:33,370] operator that operates on the state vector.
+- [01:34:35,190 - 01:34:38,130] So always there's a state vector in there somewhere.
+- [01:34:38,310 - 01:34:41,770] It's either differentiated or undifferentiated.
+- [01:34:42,230 - 01:34:42,890] It's there.
+- [01:34:43,070 - 01:34:44,770] This is the Schrodinger equation.
+- [01:34:44,970 - 01:34:46,310] Let's put in the H bars again.
+- [01:34:46,370 - 01:34:48,790] There's an I H bar here.
+- [01:34:48,790 - 01:34:51,630] I think there's an H bar squared here,
+- [01:34:51,890 - 01:34:53,970] and no H bar at all here.
+- [01:34:55,450 - 01:34:56,010] Okay,
+- [01:34:56,010 - 01:34:57,130] that's Schrodinger.
+- [01:34:57,170 - 01:34:58,750] That is literally the Schrodinger
+- [01:34:58,750 - 01:35:00,330] equation that Schrodinger wrote down.
+- [01:35:01,930 - 01:35:02,490] Yeah?
+- [01:35:03,430 - 01:35:06,110] P is a P now a function of T.
+- [01:35:06,790 - 01:35:08,530] P is not a function of T.
+- [01:35:08,610 - 01:35:10,130] It's just a different,
+- [01:35:10,130 - 01:35:12,010] it's an operation.
+- [01:35:12,490 - 01:35:15,690] The average of P is a function of time.
+- [01:35:16,910 - 01:35:19,290] The average of P is a function of time,
+- [01:35:19,370 - 01:35:20,410] and that's what we're going to calculate.
+- [01:35:20,790 - 01:35:24,110] P itself is just the operator P,
+- [01:35:24,110 - 01:35:25,350] I d by dx.
+- [01:35:26,470 - 01:35:28,590] It has no explicit time dependence.
+- [01:35:29,090 - 01:35:31,710] The fact that momentum changes with time
+- [01:35:31,710 - 01:35:34,710] is the fact that its average changes with time.
+- [01:35:34,790 - 01:35:36,370] Why does its average change with time?
+- [01:35:36,590 - 01:35:38,670] Because psi changes with time,
+- [01:35:38,850 - 01:35:40,990] not because P changes with time.
+- [01:35:41,610 - 01:35:42,830] So that's what I wanted to,
+- [01:35:42,830 - 01:35:43,290] this is the,
+- [01:35:43,290 - 01:35:44,610] this is the Schrodinger equation.
+- [01:35:45,690 - 01:35:47,270] But I'm actually more interested
+- [01:35:47,270 - 01:35:48,850] in the form of the Hamiltonian.
+- [01:35:49,310 - 01:35:51,210] Here's the form of the Hamiltonian,
+- [01:35:51,270 - 01:35:53,010] and I want to compute,
+- [01:35:53,010 - 01:35:54,450] I would like to compute
+- [01:35:55,429 - 01:35:59,410] how the average of X and P change with time.
+- [01:36:00,030 - 01:36:03,150] They change with time because psi changes with time.
+- [01:36:03,510 - 01:36:05,830] This is a complicated equation now.
+- [01:36:06,010 - 01:36:07,990] A wave packet may come in,
+- [01:36:07,990 - 01:36:09,630] it may hit the potential.
+- [01:36:09,970 - 01:36:11,550] There's a potential U of X,
+- [01:36:11,550 - 01:36:11,910] which,
+- [01:36:11,910 - 01:36:13,950] let's draw the potential as a dotted line.
+- [01:36:13,950 - 01:36:15,490] It might look like this.
+- [01:36:15,790 - 01:36:17,650] The wave packet comes in,
+- [01:36:17,650 - 01:36:20,650] experiences the fact that there's a potential.
+- [01:36:22,650 - 01:36:23,130] Previously,
+- [01:36:23,130 - 01:36:24,770] it didn't have any potential.
+- [01:36:24,870 - 01:36:25,970] It did whatever it did,
+- [01:36:25,970 - 01:36:27,210] which may have been complicated,
+- [01:36:27,510 - 01:36:29,510] but now it's even more complicated.
+- [01:36:29,950 - 01:36:33,110] It does something because the potential is there,
+- [01:36:33,730 - 01:36:35,670] and we would like to find out,
+- [01:36:35,670 - 01:36:36,870] on the average,
+- [01:36:36,870 - 01:36:37,770] what does it do?
+- [01:36:37,970 - 01:36:38,990] On the average,
+- [01:36:38,990 - 01:36:41,750] how does the center of this wave packet move?
+- [01:36:42,870 - 01:36:43,350] Right?
+- [01:36:43,950 - 01:36:44,170] Now,
+- [01:36:44,170 - 01:36:47,950] the answer is that if the wave,
+- [01:36:47,950 - 01:36:50,650] if the potential is a very smooth function,
+- [01:36:50,950 - 01:36:53,510] if it varies very smoothly on the
+- [01:36:53,510 - 01:36:56,070] scale of the oscillations of the wave function,
+- [01:36:56,849 - 01:36:58,889] then the center of the wave
+- [01:36:58,889 - 01:37:00,930] function moves exactly according to classical physics.
+- [01:37:01,390 - 01:37:02,930] But let's see if we can see that.
+- [01:37:04,910 - 01:37:09,410] We have the rules for Poisson brackets and commutators.
+- [01:37:11,169 - 01:37:13,550] I'll erase off the blackboard here,
+- [01:37:13,550 - 01:37:15,390] but of course we all have them memorized.
+- [01:37:18,330 - 01:37:19,350] And we have,
+- [01:37:19,350 - 01:37:20,470] here's the equation,
+- [01:37:20,770 - 01:37:23,530] here's the operative equation that we want to apply.
+- [01:37:26,070 - 01:37:27,810] Let's first figure out,
+- [01:37:27,810 - 01:37:28,950] what should we do?
+- [01:37:29,030 - 01:37:30,630] Let's first figure out how X,
+- [01:37:30,630 - 01:37:33,530] how the average of X changes with time.
+- [01:37:34,670 - 01:37:37,290] The average of X changes with time.
+- [01:37:37,770 - 01:37:39,250] This is dx dt.
+- [01:37:41,310 - 01:37:43,120] We don't have to stick in the
+- [01:37:43,120 - 01:37:44,930] wave functions now and do the whole thing.
+- [01:37:45,150 - 01:37:48,740] We know it's just equal to
+- [01:37:48,740 - 01:37:52,330] the expectation value of the commutator of,
+- [01:37:53,810 - 01:37:54,190] well,
+- [01:37:54,190 - 01:37:55,150] it's I H bar,
+- [01:37:55,150 - 01:37:56,190] I over H bar,
+- [01:37:59,090 - 01:38:00,490] commutator of H,
+- [01:38:00,490 - 01:38:02,670] which is P squared over 2M,
+- [01:38:03,210 - 01:38:04,510] plus U of X,
+- [01:38:04,510 - 01:38:05,570] that's H,
+- [01:38:06,190 - 01:38:06,950] with K,
+- [01:38:06,950 - 01:38:08,510] and K is just X.
+- [01:38:13,630 - 01:38:14,110] Okay.
+- [01:38:15,650 - 01:38:16,530] First thing,
+- [01:38:16,530 - 01:38:20,270] the commutator of U of X with X is zero.
+- [01:38:21,390 - 01:38:24,550] A thing commutes with any function of itself.
+- [01:38:26,070 - 01:38:28,070] X and X squared commute,
+- [01:38:28,310 - 01:38:29,730] X and X cubed commute,
+- [01:38:29,870 - 01:38:31,430] X with sine of X commute,
+- [01:38:31,590 - 01:38:34,710] because all they are is multiplication by functions of X,
+- [01:38:34,790 - 01:38:37,110] and it doesn't matter which order you multiply them.
+- [01:38:37,610 - 01:38:38,870] So the first thing is,
+- [01:38:39,250 - 01:38:43,370] in calculating the commutator of the Hamiltonian with X,
+- [01:38:44,070 - 01:38:45,990] U doesn't come into it at all.
+- [01:38:46,190 - 01:38:46,970] Let's erase it.
+- [01:38:47,869 - 01:38:50,030] U commutes completely with X.
+- [01:38:50,170 - 01:38:50,850] It's gone.
+- [01:38:51,450 - 01:38:53,500] The important thing is the commutator
+- [01:38:53,500 - 01:38:55,550] of X with P squared over 2M.
+- [01:38:56,990 - 01:38:58,030] Let's write it down.
+- [01:38:58,430 - 01:38:59,910] It's I over H bar,
+- [01:39:01,410 - 01:39:02,630] 2M in the denominator,
+- [01:39:03,030 - 01:39:05,810] and then the commutator of P squared with X.
+- [01:39:06,429 - 01:39:07,929] How do we calculate the
+- [01:39:07,929 - 01:39:09,430] commutator of P squared with X?
+- [01:39:09,510 - 01:39:10,370] We use this trick.
+- [01:39:10,890 - 01:39:12,010] Remember the trick.
+- [01:39:12,770 - 01:39:15,510] Commutator AB with C
+- [01:39:16,129 - 01:39:19,130] is A commutator BC
+- [01:39:22,709 - 01:39:23,830] plus BCA.
+- [01:39:25,730 - 01:39:27,210] That's the trick we're going to use.
+- [01:39:27,590 - 01:39:30,230] So what's the commutator of P squared with X?
+- [01:39:30,690 - 01:39:32,230] Just this piece of it here
+- [01:39:33,030 - 01:39:33,890] is P
+- [01:39:35,129 - 01:39:36,450] commutator P with X
+- [01:39:37,889 - 01:39:38,450] plus
+- [01:39:38,450 - 01:39:40,890] A and B are both P now.
+- [01:39:41,110 - 01:39:42,470] A and B are both P.
+- [01:39:43,350 - 01:39:44,390] So it's P
+- [01:39:45,030 - 01:39:46,030] commutator PX
+- [01:39:46,830 - 01:39:47,390] plus
+- [01:39:48,490 - 01:39:49,470] commutator PX
+- [01:39:49,470 - 01:39:50,770] with P.
+- [01:39:52,090 - 01:39:53,750] That's just using for AB
+- [01:39:53,750 - 01:39:54,970] P squared.
+- [01:39:55,650 - 01:39:57,970] Well what's the commutator of P with X?
+- [01:39:58,930 - 01:39:59,750] Not quite.
+- [01:40:00,870 - 01:40:02,010] Minus I H bar.
+- [01:40:03,450 - 01:40:04,470] Minus I H bar.
+- [01:40:05,230 - 01:40:07,110] Commutator of X with P is I H bar.
+- [01:40:07,230 - 01:40:09,450] Commutator of P with X is minus I H bar.
+- [01:40:09,950 - 01:40:11,130] Each one of these
+- [01:40:12,490 - 01:40:14,810] commutators here is just minus I H bar.
+- [01:40:15,750 - 01:40:16,990] Minus I H bar.
+- [01:40:17,790 - 01:40:19,410] H bar is just a number
+- [01:40:19,410 - 01:40:22,710] and all of this is just equal to twice
+- [01:40:25,990 - 01:40:28,250] minus 2 I H bar
+- [01:40:29,530 - 01:40:30,310] times P.
+- [01:40:32,230 - 01:40:32,750] Okay,
+- [01:40:32,750 - 01:40:33,830] let's group it together.
+- [01:40:37,690 - 01:40:41,230] On your formula of the second part
+- [01:40:41,230 - 01:40:42,110] BCA
+- [01:40:42,110 - 01:40:44,010] maybe that should be ACB.
+- [01:40:44,690 - 01:40:44,910] Yeah,
+- [01:40:44,910 - 01:40:45,330] I think so.
+- [01:40:45,490 - 01:40:46,730] Well AB with C
+- [01:40:46,730 - 01:40:48,010] is A
+- [01:40:48,010 - 01:40:48,810] yeah,
+- [01:40:48,810 - 01:40:49,010] yeah,
+- [01:40:49,010 - 01:40:49,150] yeah,
+- [01:40:49,150 - 01:40:49,310] yeah.
+- [01:40:49,390 - 01:40:49,830] Sorry.
+- [01:40:50,610 - 01:40:52,530] A with C times B.
+- [01:40:52,710 - 01:40:53,150] Good.
+- [01:40:54,830 - 01:40:55,350] Okay.
+- [01:40:56,810 - 01:40:57,330] Alright,
+- [01:40:57,330 - 01:40:58,250] let's group it together
+- [01:40:58,250 - 01:40:59,370] and see what we have here.
+- [01:40:59,770 - 01:41:01,990] We have I over 2 over P.
+- [01:41:02,010 - 01:41:02,790] So we have 2M H bar.
+- [01:41:03,090 - 01:41:05,850] And then we have minus 2I
+- [01:41:05,850 - 01:41:07,070] let's just erase this
+- [01:41:07,950 - 01:41:13,470] and put minus 2I H bar P.
+- [01:41:17,270 - 01:41:19,770] I times I is minus 1.
+- [01:41:20,730 - 01:41:22,630] That cancels this minus over here.
+- [01:41:22,930 - 01:41:25,190] The 2 cancels the 2 over here
+- [01:41:25,190 - 01:41:26,910] and the H bars cancel.
+- [01:41:27,830 - 01:41:29,790] H bar cancels H bar.
+- [01:41:29,950 - 01:41:30,930] 2 cancels 2.
+- [01:41:32,010 - 01:41:33,430] I times I is minus 1.
+- [01:41:33,510 - 01:41:34,810] That cancels the minus here.
+- [01:41:35,150 - 01:41:36,310] And what's the net result?
+- [01:41:36,510 - 01:41:38,590] The result is P over M.
+- [01:41:40,550 - 01:41:42,390] Average of P over M.
+- [01:41:42,510 - 01:41:43,210] What have I discovered?
+- [01:41:43,610 - 01:41:47,210] I've discovered that the average velocity
+- [01:41:48,629 - 01:41:50,010] What is this?
+- [01:41:50,270 - 01:41:52,770] This is just the average velocity of the particle
+- [01:41:53,790 - 01:41:57,590] is equal to the average momentum divided by the mass.
+- [01:41:59,250 - 01:41:59,810] Okay.
+- [01:42:00,750 - 01:42:01,790] Not supr-
+- [01:42:01,790 - 01:42:01,990] Wow,
+- [01:42:01,990 - 01:42:02,650] is it surprising?
+- [01:42:05,769 - 01:42:06,330] Uh,
+- [01:42:06,330 - 01:42:06,890] not...
+- [01:42:08,769 - 01:42:10,430] Perhaps it's not so surprising
+- [01:42:10,430 - 01:42:12,230] because if it wouldn't have come out this way
+- [01:42:12,230 - 01:42:14,450] we would have said something's wrong with the connection
+- [01:42:14,450 - 01:42:16,550] between classical mechanics and quantum mechanics.
+- [01:42:16,910 - 01:42:18,410] But it does come out correct
+- [01:42:18,410 - 01:42:22,090] that the average velocity is the average momentum
+- [01:42:22,710 - 01:42:23,790] divided by the mass.
+- [01:42:24,050 - 01:42:25,130] Just as we would expect.
+- [01:42:26,489 - 01:42:27,049] Now,
+- [01:42:27,049 - 01:42:28,550] what about the average
+- [01:42:28,550 - 01:42:31,390] what about the time dependence of the momentum?
+- [01:42:32,050 - 01:42:34,290] It's the time dependence of the momentum
+- [01:42:34,290 - 01:42:36,630] which is given by F equals M A.
+- [01:42:37,250 - 01:42:39,990] Force is time derivative of momentum.
+- [01:42:40,370 - 01:42:41,610] That's classical physics.
+- [01:42:42,230 - 01:42:44,850] That's the interesting part here.
+- [01:42:45,850 - 01:42:48,690] Let's see if we can recover Newton's equations
+- [01:42:49,490 - 01:42:51,410] at least as an average.
+- [01:42:51,910 - 01:42:53,430] At least as an average.
+- [01:42:53,530 - 01:42:55,570] That's what we want to do is recover Newton's equations.
+- [01:42:56,190 - 01:42:57,090] Newton's equation.
+- [01:42:57,090 - 01:42:58,310] F equals M A.
+- [01:42:58,879 - 01:43:01,190] So let's apply exactly the same rule
+- [01:43:01,190 - 01:43:06,290] to the average of momentum
+- [01:43:07,090 - 01:43:08,110] d by dp,
+- [01:43:08,110 - 01:43:09,110] d by dt.
+- [01:43:09,650 - 01:43:12,010] And that's given by
+- [01:43:13,990 - 01:43:16,110] I over h bar
+- [01:43:17,490 - 01:43:18,890] commutator of
+- [01:43:20,650 - 01:43:22,410] P squared over 2m
+- [01:43:22,410 - 01:43:23,830] P squared over 2m
+- [01:43:23,830 - 01:43:24,590] plus U
+- [01:43:24,590 - 01:43:26,250] plus U of x.
+- [01:43:27,090 - 01:43:27,470] With what?
+- [01:43:28,590 - 01:43:29,070] P.
+- [01:43:32,130 - 01:43:32,610] Okay,
+- [01:43:32,610 - 01:43:33,330] this time
+- [01:43:33,870 - 01:43:35,710] it's the U of x which is important.
+- [01:43:36,950 - 01:43:38,670] P commutes with P squared.
+- [01:43:40,090 - 01:43:41,030] That's not there.
+- [01:43:41,470 - 01:43:44,350] It's just the commutator of P with U of x.
+- [01:43:44,930 - 01:43:47,330] So this whole thing is I over h bar
+- [01:43:48,850 - 01:43:49,330] times
+- [01:43:51,250 - 01:43:53,190] the commutator of U of x
+- [01:43:53,730 - 01:43:54,450] with P.
+- [01:43:54,450 - 01:43:56,480] Do you remember what the commutator
+- [01:43:56,480 - 01:43:58,510] of U of x with P is?
+- [01:43:59,270 - 01:44:01,370] Poising with P does what?
+- [01:44:01,770 - 01:44:05,410] It differentiates with respect to x.
+- [01:44:06,850 - 01:44:10,730] Poising with P differentiates with respect to x.
+- [01:44:10,830 - 01:44:12,350] That was one of the first things we worked out
+- [01:44:12,350 - 01:44:14,530] which has long gone off the blackboard unfortunately.
+- [01:44:16,169 - 01:44:20,730] But commuting with P also differentiates with respect to x.
+- [01:44:21,950 - 01:44:22,470] Well,
+- [01:44:22,470 - 01:44:23,230] we worked that out.
+- [01:44:23,230 - 01:44:24,050] that we work that out,
+- [01:44:24,050 - 01:44:27,150] commuting a function of x with p
+- [01:44:27,150 - 01:44:30,350] gives you the derivative of the function of x
+- [01:44:30,350 - 01:44:33,650] and so this all gives us then i over h-bar
+- [01:44:35,009 - 01:44:36,690] and then I can't remember,
+- [01:44:36,690 - 01:44:39,110] then I think it's plus another i
+- [01:44:41,490 - 01:44:42,010] times
+- [01:44:42,010 - 01:44:46,750] h-bar times du dx,
+- [01:44:46,750 - 01:44:47,310] right?
+- [01:44:50,610 - 01:44:51,530] h-bar
+- [01:44:51,530 - 01:44:52,670] h-bar cancels h-bar,
+- [01:44:52,670 - 01:44:54,790] i times i is minus
+- [01:44:54,790 - 01:44:56,610] and what we find out is
+- [01:44:56,610 - 01:44:58,430] that the derivative of the momentum
+- [01:44:59,370 - 01:45:03,330] is minus the derivative of u with respect to x
+- [01:45:03,330 - 01:45:05,600] there's another word for the derivative
+- [01:45:05,600 - 01:45:07,870] of u with respect to x
+- [01:45:07,870 - 01:45:09,650] and it is force
+- [01:45:10,389 - 01:45:10,950] yeah,
+- [01:45:10,950 - 01:45:11,770] it's also the gradient,
+- [01:45:11,770 - 01:45:13,910] force,
+- [01:45:13,910 - 01:45:14,690] f
+- [01:45:17,009 - 01:45:17,570] alright,
+- [01:45:17,570 - 01:45:18,930] so first of all we find
+- [01:45:18,930 - 01:45:21,090] that the velocity
+- [01:45:21,090 - 01:45:21,510] of the momentum
+- [01:45:21,530 - 01:45:23,110] is given by p over m
+- [01:45:23,850 - 01:45:26,850] that's one of the two equations of Newton
+- [01:45:27,490 - 01:45:28,110] actually,
+- [01:45:28,110 - 01:45:29,390] the definition of momentum
+- [01:45:29,390 - 01:45:31,530] and the other piece of it
+- [01:45:31,530 - 01:45:32,810] is that the force
+- [01:45:32,810 - 01:45:34,870] is equal to the time derivative
+- [01:45:34,870 - 01:45:35,930] of the momentum
+- [01:45:37,050 - 01:45:39,630] that's all the content of Newton's equations
+- [01:45:39,630 - 01:45:41,930] force is derivative of momentum
+- [01:45:42,630 - 01:45:44,530] it's actually mass times acceleration
+- [01:45:44,530 - 01:45:46,510] since momentum we've already shown
+- [01:45:47,650 - 01:45:49,750] is m times velocity
+- [01:45:49,750 - 01:45:51,410] this says momentum
+- [01:45:51,410 - 01:45:52,530] is m times velocity
+- [01:45:53,110 - 01:45:56,890] and this says force is m times the derivative
+- [01:45:56,890 - 01:45:58,010] of the velocity
+- [01:45:58,010 - 01:45:59,190] which is the acceleration
+- [01:46:00,170 - 01:46:01,170] so we see that
+- [01:46:03,150 - 01:46:07,030] the identification of minus i d by dx with momentum
+- [01:46:07,030 - 01:46:10,470] and i d by dt with Hamiltonian
+- [01:46:10,470 - 01:46:11,550] as energy
+- [01:46:12,410 - 01:46:13,230] is a,
+- [01:46:13,230 - 01:46:15,890] you can't call it a correct identification
+- [01:46:16,410 - 01:46:17,590] what you can say
+- [01:46:18,090 - 01:46:19,740] is that it's an identification which
+- [01:46:19,740 - 01:46:21,390] in the classical world is called momentum
+- [01:46:30,170 - 01:46:38,410] but when we look at it as effective
+- [01:46:38,410 - 01:46:40,570] it's tablegraphing
+- [01:46:40,570 - 01:46:49,790] where you get to the quartz
+- [01:46:49,790 - 01:46:51,350] if the quadruple rate for this
+- [01:46:51,350 - 01:46:51,370] the Challenger daqui
+- [01:46:51,390 - 01:46:53,190] and then there's also longer you can revert to
+- [01:46:53,190 - 01:46:54,730] show it's negative and there's some others.
+- [01:46:54,910 - 01:46:55,910] If you do those,
+- [01:46:55,910 - 01:46:57,710] are those all analogous?
+- [01:46:57,970 - 01:46:58,550] Mm-hmm.
+- [01:46:59,660 - 01:46:59,950] No.
+- [01:47:00,370 - 01:47:02,430] Would you say that in
+- [01:47:02,430 - 01:47:04,950] classical mechanics what you have is
+- [01:47:04,950 - 01:47:06,410] a resultant force
+- [01:47:07,250 - 01:47:09,030] whereas in quantum mechanics
+- [01:47:09,030 - 01:47:11,250] you don't get a resultant force
+- [01:47:11,850 - 01:47:12,910] because you have
+- [01:47:12,910 - 01:47:14,010] the whole thing evolves.
+- [01:47:15,050 - 01:47:16,110] The average
+- [01:47:17,270 - 01:47:19,350] is a rough equivalent
+- [01:47:19,350 - 01:47:20,510] of a resultant force.
+- [01:47:20,510 - 01:47:22,150] What's a resultant force?
+- [01:47:22,290 - 01:47:24,510] It has to do with adding vectors.
+- [01:47:24,970 - 01:47:25,210] Well,
+- [01:47:25,210 - 01:47:26,330] when you take the
+- [01:47:26,330 - 01:47:27,850] gradient of a function,
+- [01:47:28,090 - 01:47:30,290] obviously it has vectors pointing in
+- [01:47:30,290 - 01:47:31,090] other directions.
+- [01:47:31,090 - 01:47:31,310] Well,
+- [01:47:31,310 - 01:47:32,610] here we're only doing one dimension
+- [01:47:33,450 - 01:47:35,030] at the moment.
+- [01:47:43,190 - 01:47:46,610] The preceding program is copyrighted by Stanford University.
+- [01:47:47,070 - 01:47:48,530] Please visit us at
+- [01:47:48,530 - 01:47:49,790] stanford.edu.
+- [01:47:50,610 - 01:47:50,990] Thank you.
