@@ -1,0 +1,2985 @@
+# Transcript
+
+Source: core/quantum_mechanics/2012_winter_theoretical_minimum_alt_title/131 - Lecture 8 ｜ The Theoretical Minimum [x0m2sQuAr34].mp4
+
+- [00:00:04,919 - 00:00:06,200] Stanford University.
+- [00:00:08,500 - 00:00:11,940] Was talking about what happens during or
+- [00:00:11,940 - 00:00:12,800] from beginning,
+- [00:00:12,800 - 00:00:15,580] from before a measurement to after a measurement.
+- [00:00:15,980 - 00:00:18,170] They were talking about what happens to
+- [00:00:18,170 - 00:00:20,360] the evolution of an isolated black hole
+- [00:00:21,040 - 00:00:23,490] left to itself between the time that it
+- [00:00:23,490 - 00:00:25,940] was prepared and the time it was measured.
+- [00:00:25,940 - 00:00:26,480] Okay,
+- [00:00:26,480 - 00:00:28,820] nevertheless,
+- [00:00:28,820 - 00:00:30,040] I could answer the question,
+- [00:00:30,140 - 00:00:35,260] is entanglement inevitably irreversible?
+- [00:00:36,099 - 00:00:40,120] If two things which are not entangled come together,
+- [00:00:40,120 - 00:00:41,440] interact with each other,
+- [00:00:41,480 - 00:00:42,500] do whatever they do,
+- [00:00:42,500 - 00:00:44,460] and become entangled,
+- [00:00:44,460 - 00:00:46,380] is it irreversible?
+- [00:00:46,460 - 00:00:47,080] Not necessarily.
+- [00:00:48,040 - 00:00:49,560] Anything that can happen,
+- [00:00:49,560 - 00:00:51,980] the opposite can happen.
+- [00:00:52,540 - 00:00:55,360] And now we're not talking about an external
+- [00:00:55,360 - 00:00:57,120] apparatus measuring a system.
+- [00:00:57,400 - 00:00:59,000] We're simply talking,
+- [00:00:59,000 - 00:00:59,580] for example,
+- [00:00:59,580 - 00:01:00,340] about two spins.
+- [00:01:01,190 - 00:01:03,240] Two spins interact with each other,
+- [00:01:03,240 - 00:01:03,860] come together,
+- [00:01:03,860 - 00:01:04,560] go off,
+- [00:01:04,560 - 00:01:05,440] and they're entangled.
+- [00:01:06,420 - 00:01:07,420] What happens?
+- [00:01:07,420 - 00:01:10,560] Is it possible to disentangle them by,
+- [00:01:10,560 - 00:01:11,080] for example,
+- [00:01:11,080 - 00:01:12,260] reflecting them,
+- [00:01:12,890 - 00:01:15,960] letting them come together and interact again?
+- [00:01:16,160 - 00:01:17,920] Can they become disentangled?
+- [00:01:17,920 - 00:01:18,180] Yes.
+- [00:01:18,400 - 00:01:18,980] Yes,
+- [00:01:18,980 - 00:01:23,100] there's no rule that says entanglement is irreversible.
+- [00:01:23,910 - 00:01:24,860] On the other hand,
+- [00:01:25,360 - 00:01:27,600] if an entanglement happens and you take one
+- [00:01:27,600 - 00:01:29,840] of the electrons off and throw it away,
+- [00:01:30,940 - 00:01:32,980] then the other one is stuck there,
+- [00:01:32,980 - 00:01:35,820] left being entangled with a thing that just does,
+- [00:01:37,160 - 00:01:38,600] not going to come back.
+- [00:01:40,640 - 00:01:42,300] Not going to come back unless,
+- [00:01:42,300 - 00:01:42,800] of course,
+- [00:01:42,800 - 00:01:45,260] somebody out there reflects it back in.
+- [00:01:45,700 - 00:01:46,400] So yeah,
+- [00:01:46,400 - 00:01:47,980] entanglement is reversible.
+- [00:01:50,700 - 00:01:52,380] But as far as you're concerned,
+- [00:01:52,380 - 00:01:55,340] the measurements that you do are irreversible.
+- [00:01:58,240 - 00:02:01,100] That's a very peculiar situation,
+- [00:02:01,100 - 00:02:02,250] and you have to think about
+- [00:02:02,250 - 00:02:03,400] it to understand what it means.
+- [00:02:04,360 - 00:02:06,970] We're going to move off the
+- [00:02:06,970 - 00:02:09,580] question of these very simple systems,
+- [00:02:09,580 - 00:02:10,460] spins,
+- [00:02:10,460 - 00:02:12,340] sometimes called qubits,
+- [00:02:14,500 - 00:02:15,960] tonight at some point,
+- [00:02:15,960 - 00:02:19,660] but I want to just go over just very briefly,
+- [00:02:19,780 - 00:02:23,440] I think I probably discussed this in class last time,
+- [00:02:23,440 - 00:02:24,440] but nevertheless,
+- [00:02:24,440 - 00:02:25,320] it's so important,
+- [00:02:25,340 - 00:02:30,520] that I want to hammer on it.
+- [00:02:31,240 - 00:02:32,220] First of all,
+- [00:02:32,220 - 00:02:34,040] there was a notion of a density matrix.
+- [00:02:34,540 - 00:02:35,980] If we have two systems,
+- [00:02:35,980 - 00:02:38,720] Alice's system and Bob's system,
+- [00:02:38,940 - 00:02:40,740] and Alice's and Bob's system
+- [00:02:40,740 - 00:02:42,540] are far away from each other,
+- [00:02:42,560 - 00:02:44,180] so that Alice doesn't get to
+- [00:02:44,180 - 00:02:45,800] do any experiments on Bob's system,
+- [00:02:45,920 - 00:02:48,660] Bob doesn't get to do any experiments on Alice's system,
+- [00:02:48,820 - 00:02:50,140] but they're entangled,
+- [00:02:50,140 - 00:02:52,060] either they are or they are not entangled,
+- [00:02:52,600 - 00:02:53,960] they may be entangled.
+- [00:02:53,960 - 00:02:57,400] Is there a description that Alice by
+- [00:02:57,400 - 00:03:00,840] herself uses to describe just her subsystem?
+- [00:03:01,360 - 00:03:02,660] The answer is yes,
+- [00:03:02,660 - 00:03:05,500] and the working description of her
+- [00:03:05,500 - 00:03:08,340] subsystem is called the density matrix.
+- [00:03:08,880 - 00:03:10,940] So let me just review that very,
+- [00:03:10,940 - 00:03:11,720] very quickly,
+- [00:03:12,580 - 00:03:15,440] and go back over some concepts.
+- [00:03:16,460 - 00:03:19,320] If the wave function of the Alice-Bob system,
+- [00:03:20,100 - 00:03:23,940] the combined system of Alice and Bob,
+- [00:03:23,940 - 00:03:25,680] Alice's subsystem and Bob's,
+- [00:03:25,780 - 00:03:27,320] if the wave function
+- [00:03:30,020 - 00:03:32,860] is called psi of A and B,
+- [00:03:32,860 - 00:03:33,880] B for Bob,
+- [00:03:33,880 - 00:03:34,720] A for Alice,
+- [00:03:36,300 - 00:03:41,120] then Alice's density matrix is defined
+- [00:03:41,760 - 00:03:43,140] to be psi star,
+- [00:03:44,580 - 00:03:46,900] the complex conjugate of the wave function,
+- [00:03:48,060 - 00:03:48,660] alright,
+- [00:03:48,660 - 00:03:49,860] now let's say rho,
+- [00:03:49,860 - 00:03:50,660] it's rho,
+- [00:03:50,940 - 00:03:52,580] called the density matrix,
+- [00:03:52,580 - 00:03:53,920] it's indicated by rho,
+- [00:03:54,800 - 00:03:58,160] it has subscripts A and A prime,
+- [00:03:58,380 - 00:03:59,220] because it's a matrix,
+- [00:04:00,300 - 00:04:02,260] but it doesn't have anything to do with Bob,
+- [00:04:02,420 - 00:04:05,120] so it's purely a matrix with respect to Alice's variables,
+- [00:04:05,740 - 00:04:09,500] let's indicate that by calling this Alice's density matrix,
+- [00:04:11,680 - 00:04:16,920] and it's given by psi star of A B,
+- [00:04:17,959 - 00:04:19,019] A prime B,
+- [00:04:19,160 - 00:04:20,279] I always get confused,
+- [00:04:20,279 - 00:04:20,640] yeah,
+- [00:04:20,640 - 00:04:21,260] A prime,
+- [00:04:21,260 - 00:04:31,860] psi of A B summed over Bob's variables.
+- [00:04:33,140 - 00:04:35,360] It doesn't depend on Bob's variables,
+- [00:04:35,460 - 00:04:36,560] because they've been summed over.
+- [00:04:36,860 - 00:04:38,340] When you sum over something,
+- [00:04:38,480 - 00:04:40,460] it no longer depends on that set of variables,
+- [00:04:40,780 - 00:04:43,780] so this is only a function of Alice's variables,
+- [00:04:44,760 - 00:04:47,140] and it contains all possible,
+- [00:04:48,159 - 00:04:49,360] all possible,
+- [00:04:52,960 - 00:04:54,160] statistical information
+- [00:04:55,120 - 00:04:57,610] that Alice can ever know
+- [00:04:57,610 - 00:05:00,100] about her half of a system,
+- [00:05:00,300 - 00:05:05,800] unless Bob comes and interacts with her system.
+- [00:05:06,560 - 00:05:07,380] Of course,
+- [00:05:07,380 - 00:05:09,800] if Bob comes from wherever he is,
+- [00:05:10,000 - 00:05:12,700] and gives her system a shot of some sort,
+- [00:05:12,880 - 00:05:15,040] that will change her density matrix,
+- [00:05:15,180 - 00:05:18,400] but as long as Bob stays away from her system,
+- [00:05:19,020 - 00:05:20,200] Bob's in Palo Alto,
+- [00:05:20,200 - 00:05:21,820] Alice is on Alpha Centauri,
+- [00:05:21,900 - 00:05:23,670] as long as Bob does
+- [00:05:23,670 - 00:05:25,440] not interact directly with her system,
+- [00:05:25,560 - 00:05:28,300] her density matrix doesn't change,
+- [00:05:28,680 - 00:05:30,740] no matter what Bob does.
+- [00:05:31,060 - 00:05:33,280] Let me give a little proof of that.
+- [00:05:35,780 - 00:05:38,680] Let's take Bob's subsystem,
+- [00:05:38,880 - 00:05:41,280] to not be so narrow as just to
+- [00:05:41,280 - 00:05:43,680] be the little spin that he's carrying around,
+- [00:05:44,419 - 00:05:46,000] and also Alice's,
+- [00:05:46,000 - 00:05:49,490] let's imagine that Alice's subsystem
+- [00:05:49,490 - 00:05:52,980] consists of everything in Alice's neighborhood,
+- [00:05:53,800 - 00:05:55,960] everything that she can have any contact with,
+- [00:05:56,200 - 00:05:58,380] and everything in Bob's system
+- [00:05:58,380 - 00:06:00,560] is everything in Bob's neighborhood,
+- [00:06:00,840 - 00:06:02,720] maybe even including Bob,
+- [00:06:02,940 - 00:06:06,120] and now Bob is going to do something.
+- [00:06:06,300 - 00:06:07,940] He's going to do something,
+- [00:06:07,940 - 00:06:09,080] interact,
+- [00:06:09,520 - 00:06:11,700] of course he can only interact,
+- [00:06:11,840 - 00:06:13,890] interact may mean he may
+- [00:06:13,890 - 00:06:15,940] turn on in a magnetic field,
+- [00:06:15,940 - 00:06:18,560] he may do all sorts of things,
+- [00:06:18,720 - 00:06:22,840] to change the evolution of his subsystem.
+- [00:06:23,940 - 00:06:26,860] He's going to make a subsystem evolve in some way.
+- [00:06:28,460 - 00:06:30,710] What are the ways which Bob
+- [00:06:30,710 - 00:06:32,960] can cause his subsystem to evolve?
+- [00:06:33,360 - 00:06:33,960] Many,
+- [00:06:33,960 - 00:06:34,540] many ways,
+- [00:06:34,880 - 00:06:36,620] but whatever they are,
+- [00:06:36,620 - 00:06:39,740] they are always governed by unitary matrices.
+- [00:06:40,600 - 00:06:43,200] Let's come over here and forget Alice for a minute,
+- [00:06:43,280 - 00:06:45,240] and ask what Bob can do to his subsystem.
+- [00:06:45,240 - 00:06:46,880] He has a wavefunction,
+- [00:06:47,180 - 00:06:49,120] let's leave Alice out of the picture altogether,
+- [00:06:50,480 - 00:06:51,120] just,
+- [00:06:51,120 - 00:06:53,260] let's suppose that Bob has a wavefunction,
+- [00:06:53,980 - 00:06:57,000] and he's going to manipulate the system somehow.
+- [00:06:58,180 - 00:07:00,340] He's going to manipulate the system somehow,
+- [00:07:01,040 - 00:07:03,080] and send it to a new wavefunction.
+- [00:07:03,460 - 00:07:04,640] The rule is,
+- [00:07:04,640 - 00:07:06,720] the new wavefunction of his subsystem
+- [00:07:07,240 - 00:07:09,670] must be related to the
+- [00:07:09,670 - 00:07:12,100] old wavefunction by a unitary operator.
+- [00:07:12,860 - 00:07:15,220] Unitary operators are the things which govern the system,
+- [00:07:15,240 - 00:07:16,280] and govern time evolution.
+- [00:07:16,680 - 00:07:17,640] Go back,
+- [00:07:17,640 - 00:07:19,280] remember about time evolution,
+- [00:07:20,150 - 00:07:21,080] unitary operators,
+- [00:07:21,080 - 00:07:22,080] and that means that
+- [00:07:22,080 - 00:07:26,860] psi of b becomes replaced by sum over b,
+- [00:07:27,100 - 00:07:29,360] some unitary matrix,
+- [00:07:29,360 - 00:07:31,660] bb prime,
+- [00:07:32,880 - 00:07:34,440] psi of b prime.
+- [00:07:36,990 - 00:07:39,780] In terms of wavefunctions and matrices,
+- [00:07:42,050 - 00:07:44,980] this is the description of what happens
+- [00:07:45,240 - 00:07:46,000] to Bob's matrix,
+- [00:07:46,000 - 00:07:46,840] sorry,
+- [00:07:46,840 - 00:07:48,720] Bob's column vector,
+- [00:07:48,880 - 00:07:51,460] this is basically Bob's column vector,
+- [00:07:52,280 - 00:07:54,340] describing his half of the world,
+- [00:07:54,340 - 00:07:55,440] or his system,
+- [00:07:56,620 - 00:07:58,840] and to find out what happens to it,
+- [00:07:58,860 - 00:07:59,520] no matter what he does,
+- [00:07:59,520 - 00:08:00,520] even if he doesn't do anything,
+- [00:08:01,120 - 00:08:02,800] but let's suppose he does something,
+- [00:08:02,960 - 00:08:03,840] if he does something,
+- [00:08:03,840 - 00:08:06,580] it generates a unitary evolution
+- [00:08:06,580 - 00:08:09,000] of his wavefunction.
+- [00:08:09,620 - 00:08:10,180] Now,
+- [00:08:10,180 - 00:08:11,980] how do we describe the same thing
+- [00:08:11,980 - 00:08:13,960] in the composite language?
+- [00:08:13,960 - 00:08:16,020] In the composite language,
+- [00:08:17,740 - 00:08:21,500] if the wavefunction is psi of a and b,
+- [00:08:21,600 - 00:08:23,180] Alice's and Bob's variable,
+- [00:08:23,500 - 00:08:27,180] what happens to it when Bob manipulates
+- [00:08:27,180 - 00:08:28,780] his half of the world?
+- [00:08:30,520 - 00:08:33,900] Exactly the same thing with Alice's variables
+- [00:08:33,900 - 00:08:35,580] being just spectators,
+- [00:08:35,580 - 00:08:37,679] just being passive spectators,
+- [00:08:37,760 - 00:08:41,260] so psi of a and b just becomes psi of,
+- [00:08:41,480 - 00:08:42,460] whoops,
+- [00:08:42,460 - 00:08:43,840] let's put in there,
+- [00:08:44,480 - 00:08:45,420] b prime,
+- [00:08:45,420 - 00:08:46,560] this is sum of b prime,
+- [00:08:47,540 - 00:08:49,020] this is a function of b,
+- [00:08:49,200 - 00:08:51,480] and you sum over b prime,
+- [00:08:51,480 - 00:08:53,120] okay?
+- [00:08:53,540 - 00:08:54,320] That's again,
+- [00:08:54,320 - 00:08:55,400] the sum over b prime
+- [00:08:58,020 - 00:09:00,180] of u of b and b prime,
+- [00:09:01,280 - 00:09:04,180] psi of a and b prime,
+- [00:09:04,800 - 00:09:06,440] a just passed through,
+- [00:09:07,060 - 00:09:11,060] Alice knew nothing whatever about this whole process,
+- [00:09:11,320 - 00:09:13,880] her subsystem was not,
+- [00:09:13,880 - 00:09:15,440] was not in any way influenced,
+- [00:09:15,660 - 00:09:17,100] her index,
+- [00:09:17,100 - 00:09:19,500] or her part of the wavefunction,
+- [00:09:19,740 - 00:09:21,680] her half of the dependence of the wavefunction,
+- [00:09:21,960 - 00:09:24,820] was uninfluenced by Bob's manipulation.
+- [00:09:25,620 - 00:09:28,600] So let's go back and take
+- [00:09:29,560 - 00:09:31,460] the manipulated wavefunction,
+- [00:09:31,680 - 00:09:34,080] here's the manipulated wavefunction,
+- [00:09:35,400 - 00:09:36,700] let's call it
+- [00:09:37,720 - 00:09:41,880] psi manipulated,
+- [00:09:41,880 - 00:09:43,980] the manipulated wavefunction
+- [00:09:44,569 - 00:09:47,000] of b and a,
+- [00:09:47,120 - 00:09:48,260] of a and b,
+- [00:09:48,400 - 00:09:50,480] and that's this.
+- [00:09:50,940 - 00:09:52,420] It's been modified
+- [00:09:52,420 - 00:09:55,080] by the action of Bob's
+- [00:09:55,880 - 00:09:57,160] unitary operator.
+- [00:09:58,080 - 00:09:58,980] Okay,
+- [00:09:58,980 - 00:10:00,740] now let's recalculate,
+- [00:10:00,740 - 00:10:02,380] let's recalculate
+- [00:10:02,380 - 00:10:05,740] Alice's density matrix.
+- [00:10:06,560 - 00:10:07,680] After all,
+- [00:10:07,680 - 00:10:10,120] Alice's density matrix contains all information
+- [00:10:10,120 - 00:10:11,310] that she can ever know
+- [00:10:11,310 - 00:10:12,500] about her half of the world,
+- [00:10:13,160 - 00:10:14,880] and so let's see what happened to it.
+- [00:10:15,420 - 00:10:15,820] Well,
+- [00:10:15,820 - 00:10:17,700] we first of all have to take
+- [00:10:17,700 - 00:10:20,020] the manipulated psi star,
+- [00:10:21,199 - 00:10:22,960] we still have sum over b,
+- [00:10:23,220 - 00:10:25,940] but now we take the manipulated psi star,
+- [00:10:26,080 - 00:10:26,240] oh,
+- [00:10:26,240 - 00:10:27,380] we haven't written psi star,
+- [00:10:27,660 - 00:10:28,620] sorry about that,
+- [00:10:28,620 - 00:10:29,920] we have to write psi star,
+- [00:10:32,780 - 00:10:33,740] manipulated of,
+- [00:10:34,599 - 00:10:36,700] and we want to know about it
+- [00:10:37,240 - 00:10:39,400] with index a prime in b,
+- [00:10:40,380 - 00:10:41,680] a prime in b,
+- [00:10:42,479 - 00:10:45,240] and that we get just by complex conjugating.
+- [00:10:45,340 - 00:10:47,300] This tells us how psi changes.
+- [00:10:47,980 - 00:10:50,680] Let's just work out the complex conjugate.
+- [00:10:51,240 - 00:10:53,480] That's the complex conjugate of
+- [00:10:55,240 - 00:10:56,220] a prime,
+- [00:10:58,880 - 00:10:59,780] Where is it,
+- [00:10:59,780 - 00:11:00,540] a and b prime?
+- [00:11:01,620 - 00:11:03,580] This is a prime in b,
+- [00:11:04,300 - 00:11:05,420] just a prime in b.
+- [00:11:05,560 - 00:11:06,440] But here,
+- [00:11:06,440 - 00:11:09,480] since b prime is a summation variable,
+- [00:11:10,120 - 00:11:12,600] we do not want to write b prime here.
+- [00:11:12,660 - 00:11:15,380] b prime was the summation variable used over here.
+- [00:11:15,720 - 00:11:18,280] Let's just invent another one called b double prime.
+- [00:11:20,220 - 00:11:22,480] That's going to be a summation variable in a moment.
+- [00:11:23,180 - 00:11:32,300] And u complex conjugate of b and b double prime.
+- [00:11:33,760 - 00:11:34,300] Yeah.
+- [00:11:34,980 - 00:11:36,620] u complex conjugate,
+- [00:11:36,700 - 00:11:37,960] and of course there's a
+- [00:11:37,960 - 00:11:39,220] sum over b double prime here.
+- [00:11:41,200 - 00:11:42,990] And the only reason I called it
+- [00:11:42,990 - 00:11:44,780] b double prime instead of b prime
+- [00:11:44,780 - 00:11:47,700] was so as not to confuse it with b prime.
+- [00:11:48,040 - 00:11:49,080] Here's one sum,
+- [00:11:49,080 - 00:11:50,620] and here's a separate sum.
+- [00:11:51,640 - 00:11:52,200] Alright?
+- [00:11:53,660 - 00:11:54,220] Now,
+- [00:11:54,220 - 00:11:55,040] here's something.
+- [00:11:55,260 - 00:11:56,920] What do we know about unitary operators?
+- [00:11:57,880 - 00:12:04,360] Unitary operators are operators that if we interchange b,
+- [00:12:05,360 - 00:12:07,440] if we interchange the two indices,
+- [00:12:07,440 - 00:12:09,620] and complex conjugate,
+- [00:12:10,280 - 00:12:11,060] what happens?
+- [00:12:12,000 - 00:12:13,240] That's called,
+- [00:12:13,240 - 00:12:15,260] it's called the inverse operator,
+- [00:12:15,380 - 00:12:17,220] or the Hermitian conjugate.
+- [00:12:17,980 - 00:12:19,160] For a unit,
+- [00:12:19,160 - 00:12:21,400] in general it's called the Hermitian conjugate.
+- [00:12:22,240 - 00:12:24,120] Specifically for a unitary,
+- [00:12:24,380 - 00:12:26,720] it becomes the inverse operator.
+- [00:12:27,360 - 00:12:29,720] Now let's just call it the Hermitian conjugate.
+- [00:12:30,080 - 00:12:30,880] If I
+- [00:12:33,720 - 00:12:34,840] uncomplex conjugate,
+- [00:12:34,840 - 00:12:37,320] and interchange these two,
+- [00:12:37,540 - 00:12:38,180] sorry,
+- [00:12:38,180 - 00:12:39,040] b double prime,
+- [00:12:39,780 - 00:12:41,080] b double prime b,
+- [00:12:41,660 - 00:12:44,080] then this becomes Hermitian conjugate.
+- [00:12:46,180 - 00:12:46,740] Alright,
+- [00:12:46,740 - 00:12:47,940] so this is the usual story.
+- [00:12:48,700 - 00:12:52,620] If operators operate to the right on ket vectors,
+- [00:12:52,720 - 00:12:57,400] the corresponding action on bra vectors is given by the,
+- [00:12:57,400 - 00:12:59,440] by the Hermitian conjugate.
+- [00:13:00,080 - 00:13:00,640] Alright,
+- [00:13:00,640 - 00:13:01,540] so now all we have
+- [00:13:01,540 - 00:13:02,440] to do is plug this in.
+- [00:13:02,500 - 00:13:03,840] We plug this in for the left,
+- [00:13:03,840 - 00:13:04,440] for the,
+- [00:13:04,480 - 00:13:05,880] for the manipulated manners,
+- [00:13:06,920 - 00:13:08,440] where h times times Sh
+- [00:13:08,440 - 00:13:08,960] plus what,
+- [00:13:12,660 - 00:13:18,620] plus just A prime
+- [00:13:18,620 - 00:13:32,800] and all the
+- [00:13:33,900 - 00:13:34,780] That's a nuisance,
+- [00:13:34,780 - 00:13:36,090] too many indices for me
+- [00:13:36,090 - 00:13:37,400] to be comfortable on the blackboard,
+- [00:13:37,400 - 00:13:39,900] but I think this is worth doing.
+- [00:13:40,360 - 00:13:40,920] Now,
+- [00:13:40,920 - 00:13:41,500] what about psi?
+- [00:13:41,600 - 00:13:43,410] Psi is the other half
+- [00:13:43,410 - 00:13:45,220] that comes into the density matrix,
+- [00:13:45,220 - 00:13:46,860] and that's u,
+- [00:13:46,860 - 00:13:48,220] b,
+- [00:13:48,220 - 00:13:49,380] b prime,
+- [00:13:49,380 - 00:13:53,340] psi of what?
+- [00:13:54,860 - 00:13:56,900] Psi of a and b prime.
+- [00:14:00,020 - 00:14:01,180] Complicated little mess.
+- [00:14:03,520 - 00:14:04,079] Oh,
+- [00:14:04,079 - 00:14:05,520] what are we summing over?
+- [00:14:07,780 - 00:14:09,680] We're summing over all the b's,
+- [00:14:09,680 - 00:14:10,160] basically.
+- [00:14:10,460 - 00:14:10,720] Yeah.
+- [00:14:11,240 - 00:14:13,620] We're summing over this b over here.
+- [00:14:13,760 - 00:14:15,360] Let's put a b summation here.
+- [00:14:15,860 - 00:14:18,690] We were summing over b double prime to
+- [00:14:18,690 - 00:14:21,520] get the manipulated wave for this complex conjugate,
+- [00:14:21,780 - 00:14:24,340] but we also have to sum over b prime here.
+- [00:14:25,540 - 00:14:28,280] Sum over all the b's in sight.
+- [00:14:28,500 - 00:14:30,260] Each b is a summation variable.
+- [00:14:30,420 - 00:14:31,100] By the time...
+- [00:14:31,100 - 00:14:31,560] We're finished.
+- [00:14:32,440 - 00:14:33,120] All right,
+- [00:14:33,120 - 00:14:34,420] but now look at what we have.
+- [00:14:34,600 - 00:14:35,700] It looks complicated,
+- [00:14:35,700 - 00:14:37,080] but what is this thing over here?
+- [00:14:38,719 - 00:14:39,199] Well,
+- [00:14:39,199 - 00:14:40,180] not quite...
+- [00:14:40,180 - 00:14:40,260] Yeah,
+- [00:14:40,260 - 00:14:43,700] one is essentially correct,
+- [00:14:43,700 - 00:14:46,000] but of course what you mean is the unit matrix.
+- [00:14:47,280 - 00:14:50,000] This is the product matrix of u dagger.
+- [00:14:50,760 - 00:14:52,340] This is a unitary matrix,
+- [00:14:52,340 - 00:14:54,600] so u dagger is u's inverse.
+- [00:14:55,380 - 00:14:56,660] b double prime b,
+- [00:14:56,660 - 00:14:57,500] b b prime.
+- [00:14:57,880 - 00:14:59,800] This is just the Kronecker delta.
+- [00:15:01,100 - 00:15:02,560] b double prime b prime.
+- [00:15:03,140 - 00:15:06,880] It just instructs you to set b double prime
+- [00:15:06,880 - 00:15:10,620] equal to b prime when you do the sum,
+- [00:15:11,200 - 00:15:12,580] when you do one of the two sums.
+- [00:15:12,760 - 00:15:14,240] Let's say the b double prime sum.
+- [00:15:14,640 - 00:15:20,060] So all of this then becomes sum over b prime.
+- [00:15:20,320 - 00:15:20,800] Well,
+- [00:15:20,800 - 00:15:21,280] let's see.
+- [00:15:21,960 - 00:15:23,120] What have we got?
+- [00:15:23,220 - 00:15:25,820] We've set b double prime.
+- [00:15:26,880 - 00:15:27,360] Yeah.
+- [00:15:27,740 - 00:15:29,240] We've done the sum over b.
+- [00:15:29,340 - 00:15:29,760] That's done.
+- [00:15:29,980 - 00:15:31,080] No sum over b.
+- [00:15:31,100 - 00:15:31,800] We just did it.
+- [00:15:32,160 - 00:15:33,430] And now we set b
+- [00:15:33,430 - 00:15:34,700] double prime equal to b prime.
+- [00:15:35,480 - 00:15:38,520] Psi star of a prime,
+- [00:15:38,520 - 00:15:40,340] b prime,
+- [00:15:40,340 - 00:15:43,560] psi of a and b prime.
+- [00:15:45,480 - 00:15:46,040] That's it.
+- [00:15:47,560 - 00:15:48,000] Now,
+- [00:15:48,000 - 00:15:49,880] it doesn't matter whether we call b prime
+- [00:15:49,880 - 00:15:51,760] b prime or whether we call it b,
+- [00:15:52,219 - 00:15:53,900] because it's a summation variable.
+- [00:15:54,200 - 00:15:55,060] So let's do that.
+- [00:15:55,140 - 00:15:55,980] Let's just call it b.
+- [00:15:57,040 - 00:15:58,080] And what do we have?
+- [00:15:58,320 - 00:15:59,380] We have exactly,
+- [00:15:59,380 - 00:16:00,140] I hope,
+- [00:16:00,140 - 00:16:00,640] I pray,
+- [00:16:01,100 - 00:16:04,120] the original density matrix.
+- [00:16:04,440 - 00:16:05,340] So Bob,
+- [00:16:05,340 - 00:16:06,760] no matter what he does,
+- [00:16:06,840 - 00:16:09,310] as long as what he does
+- [00:16:09,310 - 00:16:11,780] is described by a unitary matrix,
+- [00:16:12,620 - 00:16:14,850] Bob will have absolutely no
+- [00:16:14,850 - 00:16:17,080] effect on Alice's density matrix.
+- [00:16:17,540 - 00:16:19,980] It does not matter whether they're entangled or not.
+- [00:16:20,600 - 00:16:23,480] Nowheres did I specify that this was a product state.
+- [00:16:27,620 - 00:16:31,080] That is what physicists call location.
+- [00:16:31,080 - 00:16:31,440] Locality.
+- [00:16:31,979 - 00:16:36,219] The inability of Bob to
+- [00:16:36,219 - 00:16:40,460] influence any statistical prediction of Alice's
+- [00:16:40,460 - 00:16:44,720] by doing a manipulation on his own degrees of freedom.
+- [00:16:47,280 - 00:16:49,820] Locality is not violated.
+- [00:16:50,800 - 00:16:52,600] This form of locality,
+- [00:16:52,700 - 00:16:56,820] this form of locality is not violated in any way
+- [00:16:56,820 - 00:16:59,660] by the phenomenon of entanglement.
+- [00:17:00,420 - 00:17:01,900] That's the technical argument.
+- [00:17:04,599 - 00:17:07,680] Notice that it does depend on unitarity.
+- [00:17:07,819 - 00:17:07,940] So,
+- [00:17:07,940 - 00:17:09,740] and what did unitarity do with?
+- [00:17:09,900 - 00:17:16,480] Unitarity had to do with conservation of distinctions.
+- [00:17:17,220 - 00:17:19,180] What I call the minus first law,
+- [00:17:19,300 - 00:17:20,960] at least in its quantum mechanical version.
+- [00:17:21,660 - 00:17:24,480] So there's a funny and interesting interplay.
+- [00:17:24,920 - 00:17:25,440] Funny,
+- [00:17:25,440 - 00:17:26,800] interesting interplay between
+- [00:17:26,800 - 00:17:29,640] the conservation of distinctions on the one hand,
+- [00:17:29,640 - 00:17:30,860] and locality.
+- [00:17:31,240 - 00:17:36,520] If Bob somehow had access to changes
+- [00:17:36,520 - 00:17:39,380] which were not described by unitary operators,
+- [00:17:40,060 - 00:17:43,220] this would not have become the unit matrix over here,
+- [00:17:44,240 - 00:17:46,420] and the final density matrix would,
+- [00:17:47,120 - 00:17:48,760] Alice's final density matrix,
+- [00:17:48,900 - 00:17:50,640] indeed would have been modified.
+- [00:17:52,000 - 00:17:53,180] This is interesting,
+- [00:17:53,180 - 00:17:54,840] the way the whole thing holds together.
+- [00:17:55,000 - 00:17:57,760] This is why it's so hard to change quantum mechanics.
+- [00:17:58,040 - 00:17:59,460] You want to play a little game?
+- [00:17:59,460 - 00:18:01,140] Let's let Bob,
+- [00:18:01,140 - 00:18:04,580] let Bob's evolution not quite be unitary,
+- [00:18:04,740 - 00:18:06,340] only approximately unitary.
+- [00:18:06,840 - 00:18:07,180] Well,
+- [00:18:07,180 - 00:18:10,160] then immediately you start sending signals
+- [00:18:10,160 - 00:18:11,500] faster than the speed of light.
+- [00:18:11,640 - 00:18:12,220] How?
+- [00:18:12,420 - 00:18:16,040] By instantly modifying Alice's density matrix.
+- [00:18:17,739 - 00:18:18,419] So,
+- [00:18:18,419 - 00:18:20,360] things hold together tightly,
+- [00:18:21,120 - 00:18:22,580] and it's hard to change them.
+- [00:18:26,020 - 00:18:26,700] Good,
+- [00:18:26,700 - 00:18:27,120] so,
+- [00:18:27,120 - 00:18:28,260] yes.
+- [00:18:28,360 - 00:18:28,660] So.
+- [00:18:29,460 - 00:18:31,860] Is it correct to say that if Bob's
+- [00:18:35,080 - 00:18:36,320] matrix is unitary,
+- [00:18:36,540 - 00:18:38,740] the evolution matrix is vector?
+- [00:18:38,880 - 00:18:39,060] Yeah.
+- [00:18:39,060 - 00:18:39,480] Essentially,
+- [00:18:39,480 - 00:18:41,000] you can't do it if he's
+- [00:18:41,000 - 00:18:42,520] not really able to touch his system.
+- [00:18:42,740 - 00:18:43,720] He's not able to...
+- [00:18:43,720 - 00:18:44,460] Touch it,
+- [00:18:44,460 - 00:18:44,860] change it.
+- [00:18:44,940 - 00:18:48,460] He's not able to change Alice's system.
+- [00:18:49,060 - 00:18:51,060] He's changed his own system by
+- [00:18:52,159 - 00:18:53,040] doing something,
+- [00:18:53,040 - 00:18:54,540] and that doing something was
+- [00:18:54,540 - 00:18:56,040] described by this unitary matrix.
+- [00:18:56,780 - 00:18:57,220] Okay.
+- [00:18:57,680 - 00:18:59,160] That's the part that confuses me.
+- [00:18:59,160 - 00:19:00,440] If he's doing something,
+- [00:19:00,440 - 00:19:02,480] isn't he going to be violating unitarity?
+- [00:19:03,420 - 00:19:03,820] No.
+- [00:19:04,300 - 00:19:05,080] For example,
+- [00:19:05,080 - 00:19:07,000] he might be turning a magnet.
+- [00:19:08,400 - 00:19:10,910] He might be turning a magnet in such a
+- [00:19:10,910 - 00:19:13,420] way that it has an influence on his spin.
+- [00:19:14,720 - 00:19:15,760] What is that influence?
+- [00:19:16,160 - 00:19:17,560] It will change the state of the spin.
+- [00:19:17,640 - 00:19:17,960] For example,
+- [00:19:19,560 - 00:19:19,960] yeah.
+- [00:19:23,080 - 00:19:24,860] If you have a spin in a given direction,
+- [00:19:24,860 - 00:19:26,960] and it's coupled to a magnetic field,
+- [00:19:26,960 - 00:19:28,880] and you turn the magnetic field,
+- [00:19:28,880 - 00:19:29,540] in some way,
+- [00:19:29,540 - 00:19:32,240] you'll typically change the evolution of that spin.
+- [00:19:33,160 - 00:19:33,680] Okay.
+- [00:19:33,960 - 00:19:35,200] So Bob can do that.
+- [00:19:35,580 - 00:19:37,560] He can change a magnetic field
+- [00:19:37,560 - 00:19:39,540] that's acting on a certain spin.
+- [00:19:40,060 - 00:19:42,190] The result will be to
+- [00:19:42,190 - 00:19:44,320] change the way the spin evolves.
+- [00:19:44,860 - 00:19:48,280] That will change his own measurements of the spin,
+- [00:19:48,280 - 00:19:48,980] of his spin.
+- [00:19:50,320 - 00:19:52,220] If he does act
+- [00:19:53,580 - 00:19:54,100] by
+- [00:19:54,860 - 00:19:56,300] rotating a magnetic field,
+- [00:19:57,040 - 00:19:58,780] which is mathematically described,
+- [00:19:58,880 - 00:20:00,600] by some sort of evolution,
+- [00:20:00,600 - 00:20:01,800] doesn't matter what,
+- [00:20:01,940 - 00:20:03,260] some sort of evolution,
+- [00:20:03,260 - 00:20:05,300] it's described by a unitary operator,
+- [00:20:06,020 - 00:20:06,540] then,
+- [00:20:06,540 - 00:20:06,700] uh,
+- [00:20:10,900 - 00:20:13,700] then he does change the results of his own measurements.
+- [00:20:15,440 - 00:20:16,140] For example,
+- [00:20:16,140 - 00:20:18,060] he rotates the magnetic field,
+- [00:20:18,060 - 00:20:19,480] but he doesn't rotate his apparatus.
+- [00:20:20,120 - 00:20:22,140] The result is that he's going to
+- [00:20:22,140 - 00:20:24,160] change the probability distributions of his own spin.
+- [00:20:24,860 - 00:20:26,710] But he will not change any
+- [00:20:26,710 - 00:20:28,560] of the probabilities of Alice's spin.
+- [00:20:29,120 - 00:20:29,600] Okay.
+- [00:20:30,620 - 00:20:32,550] So are you saying quantum
+- [00:20:32,550 - 00:20:34,480] mechanics is always based on locality?
+- [00:20:37,139 - 00:20:40,749] Locality defined by the inability
+- [00:20:40,749 - 00:20:44,360] of Bob to influence Alice's measurements.
+- [00:20:45,200 - 00:20:45,680] Okay.
+- [00:20:45,880 - 00:20:46,360] Yeah.
+- [00:20:46,360 - 00:20:46,720] Now,
+- [00:20:46,720 - 00:20:47,060] the question is,
+- [00:20:47,060 - 00:20:47,840] so what's the big deal?
+- [00:20:48,480 - 00:20:49,600] Is that what you were going to ask?
+- [00:20:50,620 - 00:20:51,480] You asked it.
+- [00:20:52,920 - 00:20:53,600] I was,
+- [00:20:53,600 - 00:20:53,920] um,
+- [00:20:53,920 - 00:20:55,780] guessing what you were going to ask.
+- [00:20:56,620 - 00:20:57,600] Why don't you ask it?
+- [00:20:59,300 - 00:21:01,100] Single particle wave function,
+- [00:21:01,100 - 00:21:02,920] put a photon through a beam splitter,
+- [00:21:03,060 - 00:21:05,600] it goes off in two different directions.
+- [00:21:06,180 - 00:21:07,880] You catch it at one detector
+- [00:21:07,880 - 00:21:09,580] faster than the speed of light,
+- [00:21:09,580 - 00:21:10,360] the wave function collapses.
+- [00:21:10,760 - 00:21:10,940] Whoa,
+- [00:21:10,940 - 00:21:11,100] whoa,
+- [00:21:11,100 - 00:21:11,200] whoa,
+- [00:21:11,200 - 00:21:11,360] what?
+- [00:21:12,540 - 00:21:13,500] You do what?
+- [00:21:13,820 - 00:21:16,200] You detect a photon at one detector.
+- [00:21:16,640 - 00:21:20,100] The wave function at the other detector collapses to zero,
+- [00:21:20,100 - 00:21:21,140] instantaneously.
+- [00:21:22,380 - 00:21:23,860] I showed you what happens.
+- [00:21:24,420 - 00:21:28,020] The density matrix of the other system does not change.
+- [00:21:28,020 - 00:21:28,520] Period.
+- [00:21:31,460 - 00:21:31,960] Really.
+- [00:21:32,300 - 00:21:34,060] You get average measurements that don't change.
+- [00:21:35,440 - 00:21:36,040] What's it,
+- [00:21:36,040 - 00:21:36,660] what,
+- [00:21:36,660 - 00:21:37,440] what hap-
+- [00:21:41,040 - 00:21:42,040] I know,
+- [00:21:42,040 - 00:21:42,620] I know,
+- [00:21:42,620 - 00:21:42,980] I know.
+- [00:21:43,060 - 00:21:43,340] People,
+- [00:21:43,340 - 00:21:44,480] look,
+- [00:21:44,480 - 00:21:47,390] I'm doing my absolute best to tell it
+- [00:21:47,390 - 00:21:50,300] to you as it really is and to cut
+- [00:21:50,300 - 00:21:52,280] through the crap that's out there.
+- [00:21:54,420 - 00:21:56,760] To cut through the crap that's out there,
+- [00:21:56,760 - 00:21:58,000] because there is a huge amount of information
+- [00:21:58,600 - 00:21:59,120] that's out there.
+- [00:21:59,120 - 00:22:00,660] There is a pile a mile high.
+- [00:22:01,580 - 00:22:03,520] And we somehow want to cut through that.
+- [00:22:04,560 - 00:22:07,880] This is the mathematics of cutting through it.
+- [00:22:08,380 - 00:22:08,900] Now,
+- [00:22:08,900 - 00:22:09,920] nevertheless,
+- [00:22:09,920 - 00:22:12,490] there were some pretty damn
+- [00:22:12,490 - 00:22:15,060] smart people who are uncomfortable about
+- [00:22:15,060 - 00:22:15,640] something,
+- [00:22:15,640 - 00:22:17,980] something that they call nonlocality.
+- [00:22:18,780 - 00:22:19,180] I mean,
+- [00:22:19,180 - 00:22:19,420] you know,
+- [00:22:19,420 - 00:22:20,600] Einstein was no jerk.
+- [00:22:20,700 - 00:22:21,580] He was pretty smart.
+- [00:22:22,580 - 00:22:24,880] And they didn't call him Einstein for nothing.
+- [00:22:25,020 - 00:22:25,900] That's my favorite joke.
+- [00:22:32,179 - 00:22:33,720] John Bell was pretty smart.
+- [00:22:33,900 - 00:22:35,360] They didn't call him Einstein,
+- [00:22:35,360 - 00:22:35,800] though.
+- [00:22:38,460 - 00:22:38,900] Yeah.
+- [00:22:39,520 - 00:22:40,820] So there's something going on.
+- [00:22:40,880 - 00:22:41,740] There's something going on.
+- [00:22:41,940 - 00:22:42,140] Yeah,
+- [00:22:42,140 - 00:22:42,400] go ahead.
+- [00:22:42,500 - 00:22:43,660] And this goes back to
+- [00:22:43,660 - 00:22:44,820] your original comment about the question.
+- [00:22:45,200 - 00:22:46,180] I want to get,
+- [00:22:46,180 - 00:22:47,800] I'm reviewing last week,
+- [00:22:47,800 - 00:22:49,740] so make it quick.
+- [00:22:49,960 - 00:22:50,300] To me,
+- [00:22:50,300 - 00:22:51,660] this is real clear,
+- [00:22:51,660 - 00:22:52,080] I think.
+- [00:22:53,040 - 00:22:54,520] And that is the,
+- [00:22:54,520 - 00:22:57,720] your idea of locality means that the,
+- [00:22:57,720 - 00:22:57,980] the,
+- [00:22:57,980 - 00:22:57,980] the,
+- [00:22:57,980 - 00:22:57,980] the,
+- [00:22:57,980 - 00:22:57,980] the,
+- [00:22:57,980 - 00:22:57,980] the,
+- [00:22:57,980 - 00:22:57,980] the,
+- [00:22:57,980 - 00:22:57,980] the,
+- [00:22:57,980 - 00:22:57,980] the,
+- [00:22:57,980 - 00:23:00,000] the states don't affect each other.
+- [00:23:00,040 - 00:23:00,620] In other words,
+- [00:23:00,620 - 00:23:00,900] there's,
+- [00:23:00,900 - 00:23:01,640] there's two things.
+- [00:23:01,740 - 00:23:02,320] The density.
+- [00:23:02,560 - 00:23:04,340] The information about the states.
+- [00:23:04,460 - 00:23:04,600] Yeah.
+- [00:23:05,540 - 00:23:06,020] And,
+- [00:23:06,020 - 00:23:08,620] and it seems that in the confusing part
+- [00:23:08,620 - 00:23:11,220] of quantum mechanics is that those two different
+- [00:23:11,220 - 00:23:12,700] things get mixed up somehow.
+- [00:23:13,160 - 00:23:14,380] Is that accurate or?
+- [00:23:15,980 - 00:23:16,460] No,
+- [00:23:16,460 - 00:23:16,820] it's fuzzy.
+- [00:23:17,780 - 00:23:18,700] But it's true.
+- [00:23:20,880 - 00:23:22,140] That cleared it up a lot.
+- [00:23:23,620 - 00:23:24,940] So I will try to,
+- [00:23:24,940 - 00:23:26,450] I will try to tell
+- [00:23:26,450 - 00:23:27,960] you as often as I can.
+- [00:23:27,960 - 00:23:29,180] I understand it.
+- [00:23:30,820 - 00:23:36,120] What the concrete operational facts are.
+- [00:23:36,980 - 00:23:38,440] So I told you last time,
+- [00:23:38,440 - 00:23:41,040] I was a little bit tired last time,
+- [00:23:41,040 - 00:23:42,100] and I'm not sure I was completely
+- [00:23:42,100 - 00:23:42,520] clear.
+- [00:23:42,620 - 00:23:44,200] So I won't go over it again because it's very,
+- [00:23:44,200 - 00:23:45,060] very interesting.
+- [00:23:47,200 - 00:23:48,830] And it really is at the
+- [00:23:48,830 - 00:23:50,460] heart of all of the confusions about,
+- [00:23:50,460 - 00:23:51,680] confusions,
+- [00:23:51,680 - 00:23:51,960] I mean,
+- [00:23:51,960 - 00:23:52,160] I must
+- [00:23:52,160 - 00:23:52,340] say,
+- [00:23:52,340 - 00:23:54,150] including my own internal
+- [00:23:54,150 - 00:23:55,960] confusions about quantum mechanics.
+- [00:23:56,680 - 00:23:58,880] When I first learned about ERP,
+- [00:23:58,880 - 00:23:59,740] Einstein,
+- [00:23:59,740 - 00:24:00,280] Rosen,
+- [00:24:00,280 - 00:24:00,920] Podolsky,
+- [00:24:00,920 - 00:24:01,900] that was the discovery.
+- [00:24:02,480 - 00:24:02,960] Well,
+- [00:24:02,960 - 00:24:03,680] I don't know if it was,
+- [00:24:03,680 - 00:24:04,920] I don't know if it was a discovery.
+- [00:24:05,040 - 00:24:06,720] I think maybe Schrodinger
+- [00:24:06,720 - 00:24:08,400] said some things about entanglement.
+- [00:24:08,980 - 00:24:10,360] But it was Einstein,
+- [00:24:10,360 - 00:24:10,760] Rosen,
+- [00:24:10,760 - 00:24:13,840] and Podolsky who really called attention to how peculiar it
+- [00:24:13,840 - 00:24:14,060] was.
+- [00:24:15,020 - 00:24:15,500] Basically,
+- [00:24:15,500 - 00:24:17,410] what they said is we have a
+- [00:24:17,410 - 00:24:19,320] very funny situation here where although we can
+- [00:24:19,320 - 00:24:20,920] know everything that can possibly
+- [00:24:20,920 - 00:24:22,520] be known about a composite system,
+- [00:24:22,520 - 00:24:23,760] we know nothing
+- [00:24:23,760 - 00:24:25,060] at all about its constituents.
+- [00:24:25,060 - 00:24:25,720] That's crazy.
+- [00:24:25,900 - 00:24:27,840] That violates my sense of reality.
+- [00:24:28,100 - 00:24:30,540] That violates my sense of what it
+- [00:24:30,540 - 00:24:32,980] means to know what a system is doing.
+- [00:24:33,699 - 00:24:35,260] It violates all sorts of things.
+- [00:24:35,380 - 00:24:36,620] I remember when I first heard about it,
+- [00:24:36,620 - 00:24:38,040] it was actually before John Bell,
+- [00:24:38,040 - 00:24:39,560] sometime in
+- [00:24:39,560 - 00:24:40,900] the 60s when I was a student.
+- [00:24:41,000 - 00:24:41,080] No,
+- [00:24:41,080 - 00:24:41,780] I wasn't a student.
+- [00:24:41,840 - 00:24:42,920] I was a young assistant professor.
+- [00:24:44,760 - 00:24:46,500] And I started to think about it,
+- [00:24:46,500 - 00:24:47,640] and I thought about it a lot.
+- [00:24:48,280 - 00:24:49,900] I tried to figure out what it means.
+- [00:24:51,179 - 00:24:53,109] I was sort of inclined
+- [00:24:53,109 - 00:24:55,040] to try to think about it.
+- [00:24:55,040 - 00:24:56,540] I was very inclined to think about
+- [00:24:56,540 - 00:24:58,040] it in terms of simulating quantum mechanics,
+- [00:24:58,040 - 00:24:58,740] and I still
+- [00:24:58,740 - 00:24:59,000] am.
+- [00:24:59,460 - 00:25:00,800] What are the limits?
+- [00:25:01,040 - 00:25:03,710] If quantum mechanics is so very strange
+- [00:25:03,710 - 00:25:06,380] and so very different than classical physics,
+- [00:25:06,560 - 00:25:09,590] does it mean that you can't fool
+- [00:25:09,590 - 00:25:12,620] somebody into thinking a system is quantum mechanical
+- [00:25:12,620 - 00:25:14,500] if all you have,
+- [00:25:14,500 - 00:25:15,580] your resources,
+- [00:25:15,580 - 00:25:16,900] are entirely classical?
+- [00:25:17,640 - 00:25:19,800] And the answer is yes and no.
+- [00:25:20,040 - 00:25:22,200] So I know I talked about this last time,
+- [00:25:22,200 - 00:25:23,860] but it really is at the center of things.
+- [00:25:23,940 - 00:25:25,020] So let's go back over it quickly.
+- [00:25:25,020 - 00:25:26,460] As quick as I can.
+- [00:25:27,140 - 00:25:29,200] We're going to build ourselves a quantum simulator.
+- [00:25:29,480 - 00:25:32,080] I think somebody built one on the site.
+- [00:25:32,320 - 00:25:34,220] I came across it about an hour ago.
+- [00:25:34,480 - 00:25:34,960] Who's that?
+- [00:25:35,760 - 00:25:36,200] Yeah.
+- [00:25:36,320 - 00:25:37,020] Does it work?
+- [00:25:37,940 - 00:25:38,380] Well,
+- [00:25:38,380 - 00:25:40,120] it doesn't actually simulate yet.
+- [00:25:40,300 - 00:25:40,600] Not yet.
+- [00:25:41,360 - 00:25:43,540] Is that picture your picture?
+- [00:25:43,940 - 00:25:45,940] It was a picture of Einstein and Heisenberg,
+- [00:25:45,940 - 00:25:47,060] and Einstein says,
+- [00:25:47,060 - 00:25:47,800] I don't like this,
+- [00:25:47,800 - 00:25:48,080] and
+- [00:25:48,080 - 00:25:49,020] Heisenberg said what?
+- [00:25:49,820 - 00:25:50,700] Einstein says,
+- [00:25:50,700 - 00:25:52,700] I think I'm not going to like this.
+- [00:25:52,920 - 00:25:53,140] Yeah.
+- [00:25:53,220 - 00:25:54,100] I'm not going to like this.
+- [00:25:54,180 - 00:25:54,440] Right.
+- [00:25:55,020 - 00:25:55,040] He says,
+- [00:25:55,040 - 00:25:56,300] how can you be so sure?
+- [00:25:59,220 - 00:25:59,660] Yes.
+- [00:26:00,820 - 00:26:01,260] Right.
+- [00:26:01,900 - 00:26:03,320] I think that captures it.
+- [00:26:03,700 - 00:26:04,580] Why go on?
+- [00:26:04,720 - 00:26:05,000] But okay,
+- [00:26:05,000 - 00:26:08,300] let's talk about the nature of quantum simulators.
+- [00:26:09,020 - 00:26:09,980] First of all,
+- [00:26:09,980 - 00:26:11,640] I just want to simulate a single spin.
+- [00:26:11,880 - 00:26:13,280] I think I told you how to do it,
+- [00:26:13,280 - 00:26:14,740] but let's write down the steps.
+- [00:26:15,240 - 00:26:16,740] We have a computer screen.
+- [00:26:18,220 - 00:26:19,480] Here's our computer screen.
+- [00:26:19,900 - 00:26:20,860] On the screen,
+- [00:26:20,860 - 00:26:22,800] we have a picture of a detector.
+- [00:26:23,580 - 00:26:24,480] Not a detector,
+- [00:26:24,480 - 00:26:25,000] an apparatus.
+- [00:26:25,000 - 00:26:27,230] And the apparatus can be oriented
+- [00:26:27,230 - 00:26:29,460] in any direction in three-dimensional space.
+- [00:26:29,740 - 00:26:32,280] We need to do some three-dimensional graphics here.
+- [00:26:33,560 - 00:26:34,920] And it has a window,
+- [00:26:34,920 - 00:26:39,760] and the window shows one of three possible states.
+- [00:26:40,100 - 00:26:41,680] One is called blank B.
+- [00:26:41,680 - 00:26:44,320] That's the detector or the
+- [00:26:44,320 - 00:26:46,960] apparatus before it's interacted with
+- [00:26:46,960 - 00:26:47,240] anything.
+- [00:26:47,520 - 00:26:48,870] So it can be B or
+- [00:26:48,870 - 00:26:50,220] it can be plus or minus one.
+- [00:26:52,040 - 00:26:53,360] B is not important.
+- [00:26:53,460 - 00:26:54,620] It's just to say,
+- [00:26:54,620 - 00:26:54,980] three-dimensional.
+- [00:26:54,980 - 00:26:56,220] It's not important to be able to
+- [00:26:56,220 - 00:26:57,460] see anything before the detector interacts with anything.
+- [00:26:57,720 - 00:26:59,940] There's a button over here called M.
+- [00:27:01,360 - 00:27:04,600] And the operator of the system,
+- [00:27:04,600 - 00:27:06,060] of the computer game,
+- [00:27:06,060 - 00:27:08,160] basically all he ever gets to do is
+- [00:27:08,160 - 00:27:10,120] press M and then look at the
+- [00:27:10,120 - 00:27:12,080] result of the M stands for measure.
+- [00:27:12,200 - 00:27:13,320] It performs a measurement.
+- [00:27:14,320 - 00:27:14,880] Now,
+- [00:27:14,880 - 00:27:15,700] over here,
+- [00:27:15,700 - 00:27:17,540] connected to the computer by wires,
+- [00:27:17,540 - 00:27:19,900] by cables,
+- [00:27:19,900 - 00:27:22,780] connected to the screen
+- [00:27:22,780 - 00:27:23,500] by cables,
+- [00:27:23,500 - 00:27:25,060] is a computer.
+- [00:27:25,360 - 00:27:28,700] And the computer stores information in its memory.
+- [00:27:29,000 - 00:27:30,760] And the basic information that
+- [00:27:30,760 - 00:27:32,520] it stores is two complex numbers,
+- [00:27:32,520 - 00:27:34,600] alpha up and alpha down.
+- [00:27:35,060 - 00:27:36,740] Those are supposed to be the components
+- [00:27:36,740 - 00:27:38,420] of the wave function of the spin.
+- [00:27:39,320 - 00:27:41,220] I didn't say yet that there was a spin here,
+- [00:27:41,220 - 00:27:42,900] but that's what we're talking about.
+- [00:27:43,220 - 00:27:44,960] Alpha up and alpha down.
+- [00:27:46,220 - 00:27:49,490] The computer only can generate alphas which
+- [00:27:49,490 - 00:27:52,760] satisfy alpha star alpha up plus alpha star
+- [00:27:52,780 - 00:27:54,300] alpha down is equal to one.
+- [00:27:55,300 - 00:27:57,240] Whenever it generates them.
+- [00:27:58,460 - 00:28:00,360] And it can do something else.
+- [00:28:00,560 - 00:28:01,720] It can do two other things.
+- [00:28:02,560 - 00:28:05,360] It can update the alphas by
+- [00:28:05,360 - 00:28:08,160] solving the Schrodinger equation for them.
+- [00:28:08,700 - 00:28:10,040] There's some Hamiltonian,
+- [00:28:10,040 - 00:28:10,660] for example,
+- [00:28:10,660 - 00:28:13,270] it could be that the spin
+- [00:28:13,270 - 00:28:15,880] is in an imaginary magnetic field,
+- [00:28:16,640 - 00:28:19,580] in which case the alphas would change with time.
+- [00:28:19,840 - 00:28:21,860] The computer knows how to do that.
+- [00:28:21,860 - 00:28:24,020] It knows how to solve Schrodinger's equation.
+- [00:28:24,520 - 00:28:26,900] Computers can solve Schrodinger's equation beautifully.
+- [00:28:28,460 - 00:28:32,480] And it updates these as a function of time.
+- [00:28:33,960 - 00:28:36,720] Updates them according to the rules of quantum mechanics.
+- [00:28:37,120 - 00:28:38,080] One other thing,
+- [00:28:38,080 - 00:28:40,600] the cables are instantaneous.
+- [00:28:40,840 - 00:28:42,920] They convey information instantly.
+- [00:28:46,460 - 00:28:48,580] So we'll have one more element.
+- [00:28:48,620 - 00:28:50,760] The other element will be a random number generator.
+- [00:28:51,860 - 00:28:53,700] Let me just say some words about random number generators.
+- [00:28:53,940 - 00:28:55,290] Random number generators sounds
+- [00:28:55,290 - 00:28:56,640] like we're introducing quantum mechanics.
+- [00:28:56,860 - 00:28:56,980] No,
+- [00:28:56,980 - 00:28:58,140] we don't need quantum mechanics.
+- [00:28:58,880 - 00:29:01,780] You can simulate to a very,
+- [00:29:01,780 - 00:29:03,640] very high degree of confidence
+- [00:29:04,500 - 00:29:07,860] a sequence of random numbers or random number generator
+- [00:29:08,640 - 00:29:11,740] purely out of classical considerations.
+- [00:29:12,120 - 00:29:13,160] You know how to do it.
+- [00:29:13,200 - 00:29:14,980] You take the digits of pi or whatever
+- [00:29:15,860 - 00:29:18,080] and you make something that looks
+- [00:29:18,660 - 00:29:20,000] would fool anybody,
+- [00:29:20,000 - 00:29:21,840] including a sophisticated scientist.
+- [00:29:21,860 - 00:29:23,620] A sophisticated mathematician into believing
+- [00:29:23,620 - 00:29:26,280] that you were generating a set of random numbers.
+- [00:29:26,380 - 00:29:28,540] So there's a random number generator inside the computer.
+- [00:29:29,200 - 00:29:29,740] Alright,
+- [00:29:29,740 - 00:29:33,020] the operator starts by initializing the system.
+- [00:29:33,280 - 00:29:38,060] And initializing the system simply means
+- [00:29:38,810 - 00:29:42,560] starting out some orientation for the detector,
+- [00:29:42,760 - 00:29:43,400] for the apparatus,
+- [00:29:43,400 - 00:29:44,340] doesn't matter what.
+- [00:29:44,880 - 00:29:48,100] And setting the alphas to some initial values.
+- [00:29:49,620 - 00:29:51,500] He can plug in what he wants to plug,
+- [00:29:51,860 - 00:29:53,120] initial values to b,
+- [00:29:53,340 - 00:29:55,130] or the computer just sets them
+- [00:29:55,130 - 00:29:56,920] according to whatever rule it likes.
+- [00:29:57,360 - 00:30:01,540] Then the system runs for a period of time,
+- [00:30:01,720 - 00:30:03,940] an indeterminate period of time,
+- [00:30:04,800 - 00:30:06,160] updating the alphas
+- [00:30:06,840 - 00:30:12,540] until the operator decides to press m.
+- [00:30:13,060 - 00:30:15,360] A certain amount of time has elapsed,
+- [00:30:15,380 - 00:30:17,240] the operator decides how much time,
+- [00:30:17,400 - 00:30:18,720] and presses m.
+- [00:30:19,020 - 00:30:20,460] At that point,
+- [00:30:20,460 - 00:30:23,480] the random number generator
+- [00:30:24,220 - 00:30:26,980] generates a plus one or a minus one,
+- [00:30:27,160 - 00:30:30,660] but with probability alpha star alpha up,
+- [00:30:30,760 - 00:30:31,720] that it's plus one,
+- [00:30:32,560 - 00:30:33,160] sorry,
+- [00:30:33,160 - 00:30:33,900] alpha up,
+- [00:30:33,900 - 00:30:34,940] alpha up star,
+- [00:30:35,120 - 00:30:36,280] that it's plus one,
+- [00:30:36,380 - 00:30:40,180] or else alpha star alpha down,
+- [00:30:40,380 - 00:30:41,560] that it's minus one.
+- [00:30:41,700 - 00:30:42,080] Remember,
+- [00:30:42,080 - 00:30:44,440] the sum of these two alpha star alphas
+- [00:30:44,440 - 00:30:45,380] add up to one.
+- [00:30:46,380 - 00:30:46,980] So,
+- [00:30:46,980 - 00:30:49,400] armed with the random number generator,
+- [00:30:49,400 - 00:30:52,260] the computer sends a signal
+- [00:30:52,260 - 00:30:53,960] with a probability,
+- [00:30:54,320 - 00:30:55,980] of the appropriate probability,
+- [00:30:56,800 - 00:30:58,560] to the detector,
+- [00:30:58,800 - 00:31:00,429] and the detector detects,
+- [00:31:00,940 - 00:31:02,100] or registers,
+- [00:31:02,180 - 00:31:04,400] what the computer sent it.
+- [00:31:04,680 - 00:31:05,360] Okay?
+- [00:31:06,130 - 00:31:07,800] That's one measurement.
+- [00:31:08,120 - 00:31:08,800] Now,
+- [00:31:08,800 - 00:31:10,120] as soon as that happens,
+- [00:31:10,340 - 00:31:14,960] the computer re-initializes the alphas.
+- [00:31:15,300 - 00:31:17,440] How does it re-initialize the alphas?
+- [00:31:17,440 - 00:31:21,200] If the detector detected plus one,
+- [00:31:22,760 - 00:31:24,420] then it sends back a message.
+- [00:31:24,500 - 00:31:26,080] It doesn't really need to send back a message.
+- [00:31:26,120 - 00:31:26,720] After all,
+- [00:31:26,720 - 00:31:28,180] this message got from here to here.
+- [00:31:28,320 - 00:31:28,700] All right?
+- [00:31:28,700 - 00:31:28,940] So,
+- [00:31:28,940 - 00:31:30,380] the computer over here knows
+- [00:31:31,139 - 00:31:33,080] whether it got plus one or minus one.
+- [00:31:33,540 - 00:31:36,380] If the detector saw plus one,
+- [00:31:36,960 - 00:31:40,620] then it sets alpha u back to one,
+- [00:31:40,800 - 00:31:43,400] and sends alpha d to zero.
+- [00:31:44,600 - 00:31:45,640] In other words,
+- [00:31:45,820 - 00:31:46,840] it does what we call
+- [00:31:46,840 - 00:31:48,240] collapsing the wave function.
+- [00:31:48,960 - 00:31:52,200] According to the result,
+- [00:31:52,380 - 00:31:54,220] or according to the outcome of the measurement,
+- [00:31:54,460 - 00:31:57,740] it re-initializes the alphas.
+- [00:31:58,520 - 00:31:59,080] So,
+- [00:31:59,080 - 00:32:00,020] whatever was measured,
+- [00:32:00,820 - 00:32:03,200] you start with probability one
+- [00:32:03,840 - 00:32:04,800] for the outcome,
+- [00:32:05,040 - 00:32:07,300] and probability zero for the,
+- [00:32:07,380 - 00:32:08,260] what shall we call it,
+- [00:32:08,300 - 00:32:09,420] the anti-outcome.
+- [00:32:10,700 - 00:32:12,020] And then it runs again.
+- [00:32:12,400 - 00:32:13,720] Solves the Schrodinger equation,
+- [00:32:13,940 - 00:32:14,460] does it again.
+- [00:32:14,460 - 00:32:17,260] The operator makes a ramp,
+- [00:32:17,340 - 00:32:18,740] makes whatever decision he likes.
+- [00:32:18,920 - 00:32:19,160] I mean,
+- [00:32:19,160 - 00:32:20,800] what makes him decide
+- [00:32:20,800 - 00:32:22,300] to pressure,
+- [00:32:22,300 - 00:32:23,180] to press M?
+- [00:32:23,960 - 00:32:25,600] He's an experimental physicist.
+- [00:32:25,920 - 00:32:27,320] What makes experimental physicists
+- [00:32:27,320 - 00:32:28,300] do what they do?
+- [00:32:28,400 - 00:32:29,060] I don't really know.
+- [00:32:29,280 - 00:32:33,720] But he does what experimental physicists do.
+- [00:32:33,860 - 00:32:35,300] Now and then he presses M,
+- [00:32:35,460 - 00:32:37,740] and does the whole operation over again.
+- [00:32:38,260 - 00:32:38,860] Oh,
+- [00:32:38,860 - 00:32:39,920] sorry.
+- [00:32:40,720 - 00:32:41,960] Before he does,
+- [00:32:42,280 - 00:32:44,440] he may decide to run
+- [00:32:44,460 - 00:32:45,440] and rotate the apparatus.
+- [00:32:47,020 - 00:32:47,860] Now,
+- [00:32:47,860 - 00:32:50,280] the computer in here knows
+- [00:32:50,280 - 00:32:53,000] what the orientation of the apparatus is.
+- [00:32:53,260 - 00:32:55,380] So when it calculates,
+- [00:32:56,080 - 00:32:59,560] it not only calculates the updated alphas,
+- [00:32:59,780 - 00:33:02,060] but it also calculates
+- [00:33:02,060 - 00:33:05,500] the probabilities for the rotated detector
+- [00:33:05,500 - 00:33:07,620] to detect whatever it's going to detect.
+- [00:33:08,140 - 00:33:10,980] That's all algebra and a little bit of,
+- [00:33:11,160 - 00:33:12,780] that's purely algebra.
+- [00:33:12,780 - 00:33:15,520] The computer makes the kind of calculations
+- [00:33:15,520 - 00:33:16,540] that you did,
+- [00:33:16,660 - 00:33:18,420] or presumably did,
+- [00:33:18,600 - 00:33:20,340] makes the kind of calculations
+- [00:33:20,340 - 00:33:23,620] to calculate what the probability would be
+- [00:33:23,620 - 00:33:26,340] that if the detector was rotated
+- [00:33:26,340 - 00:33:27,900] in some arbitrary direction,
+- [00:33:30,340 - 00:33:31,980] then what's the probability
+- [00:33:31,980 - 00:33:33,240] that it will get up or down?
+- [00:33:33,740 - 00:33:34,340] Now,
+- [00:33:34,340 - 00:33:35,220] who is it that decides
+- [00:33:35,220 - 00:33:36,540] to rotate the computer?
+- [00:33:36,880 - 00:33:37,460] Well,
+- [00:33:37,460 - 00:33:38,860] it's the operator again,
+- [00:33:39,040 - 00:33:40,220] the experimentalist.
+- [00:33:40,220 - 00:33:42,420] The experimentalist not only can press M,
+- [00:33:42,420 - 00:33:46,940] but he can also reorient the detector
+- [00:33:46,940 - 00:33:47,960] anytime he wants.
+- [00:33:49,240 - 00:33:51,260] This is about as much
+- [00:33:51,260 - 00:33:53,580] as an experimental physicist can do
+- [00:33:53,580 - 00:33:54,740] with that spin.
+- [00:33:56,000 - 00:33:57,120] Rotate the apparatus,
+- [00:33:57,120 - 00:33:59,400] measure.
+- [00:34:00,220 - 00:34:01,820] Rotate the apparatus again,
+- [00:34:01,820 - 00:34:02,620] measure.
+- [00:34:02,940 - 00:34:03,720] All right?
+- [00:34:03,800 - 00:34:06,360] And what's the result of the outcome of this?
+- [00:34:06,420 - 00:34:08,380] The outcome of this is indistinguishable
+- [00:34:08,380 - 00:34:11,820] from what the experimental physicist
+- [00:34:11,820 - 00:34:13,460] examining the spin would see.
+- [00:34:14,020 - 00:34:15,960] So we've simulated quantum mechanics.
+- [00:34:16,900 - 00:34:17,540] All right,
+- [00:34:17,540 - 00:34:18,219] now we want to know
+- [00:34:18,219 - 00:34:20,179] whether we can simulate quantum mechanics
+- [00:34:20,179 - 00:34:21,380] of two spins,
+- [00:34:22,620 - 00:34:25,560] one on Alice's side of the world over here,
+- [00:34:25,639 - 00:34:27,739] and one on Bob's side of the world.
+- [00:34:28,239 - 00:34:28,719] Yeah?
+- [00:34:29,179 - 00:34:31,440] I don't understand the purpose of the button M
+- [00:34:32,139 - 00:34:32,800] in our,
+- [00:34:32,800 - 00:34:33,300] in our,
+- [00:34:33,300 - 00:34:35,800] in other words,
+- [00:34:37,300 - 00:34:39,100] when he decided to push it,
+- [00:34:39,739 - 00:34:41,280] some amount of time is involved.
+- [00:34:41,820 - 00:34:41,920] Yeah.
+- [00:34:41,940 - 00:34:44,580] Has that affected anything going on in the computer?
+- [00:34:44,880 - 00:34:45,320] Yeah,
+- [00:34:45,320 - 00:34:47,480] the computer has been updating all this time.
+- [00:34:47,780 - 00:34:48,120] Right,
+- [00:34:48,120 - 00:34:49,900] but when we talked about our basic model
+- [00:34:49,900 - 00:34:51,139] of how spin works,
+- [00:34:51,500 - 00:34:53,320] time did not come into it at all.
+- [00:34:53,620 - 00:34:55,820] We did talk about Hamiltonians.
+- [00:34:57,240 - 00:34:58,960] We talked about Hamiltonians
+- [00:34:58,960 - 00:35:02,220] and how Hamiltonians update the state of a system.
+- [00:35:02,460 - 00:35:03,080] You're right,
+- [00:35:03,080 - 00:35:05,660] we didn't discuss how a,
+- [00:35:05,860 - 00:35:08,440] we didn't discuss much about Hamiltonians for spins.
+- [00:35:09,200 - 00:35:09,680] Yes,
+- [00:35:09,680 - 00:35:10,080] we did.
+- [00:35:10,080 - 00:35:11,020] Yes,
+- [00:35:11,020 - 00:35:11,520] we did.
+- [00:35:11,720 - 00:35:16,440] I believe I described a spin and a magnetic field
+- [00:35:16,440 - 00:35:19,200] and how the average spin precesses.
+- [00:35:19,940 - 00:35:20,560] We did.
+- [00:35:20,580 - 00:35:21,920] But if we didn't have the magnetic field,
+- [00:35:22,500 - 00:35:23,700] because that's how we started
+- [00:35:23,700 - 00:35:24,900] out talking about all this stuff,
+- [00:35:24,900 - 00:35:25,120] right?
+- [00:35:26,120 - 00:35:27,380] Then time is not,
+- [00:35:27,380 - 00:35:28,460] should not be a factor.
+- [00:35:28,680 - 00:35:29,160] Okay,
+- [00:35:29,160 - 00:35:29,580] I understand.
+- [00:35:32,580 - 00:35:33,060] Right.
+- [00:35:33,320 - 00:35:35,000] Now there's no real magnetic field.
+- [00:35:35,900 - 00:35:37,960] There's just an imaginary magnetic field
+- [00:35:37,960 - 00:35:39,200] that the computer knows about.
+- [00:35:40,080 - 00:35:41,560] And where does that come into it?
+- [00:35:41,580 - 00:35:43,000] It comes into the solution,
+- [00:35:43,160 - 00:35:45,400] the nature of the exact Schrodinger equation.
+- [00:35:45,900 - 00:35:46,420] Okay.
+- [00:35:47,760 - 00:35:48,280] Now,
+- [00:35:48,280 - 00:35:50,220] we do this over here
+- [00:35:50,800 - 00:35:53,380] and precisely the same thing over here,
+- [00:35:54,160 - 00:35:55,720] except instead of alphas,
+- [00:35:55,720 - 00:35:56,980] we have betas.
+- [00:35:57,380 - 00:35:58,700] Beta stands for Bob.
+- [00:36:01,960 - 00:36:03,500] Exactly the same setup,
+- [00:36:03,500 - 00:36:04,920] replicated twice.
+- [00:36:13,060 - 00:36:14,540] Bob does his measurement.
+- [00:36:14,680 - 00:36:16,020] Alice does her measurements.
+- [00:36:16,220 - 00:36:17,340] They're perfectly happy.
+- [00:36:17,500 - 00:36:18,220] Each one says,
+- [00:36:18,220 - 00:36:19,160] I have a spin.
+- [00:36:19,480 - 00:36:20,600] It's quantum mechanical.
+- [00:36:21,240 - 00:36:22,740] They don't talk to each other.
+- [00:36:23,000 - 00:36:24,180] And each one says,
+- [00:36:24,180 - 00:36:26,280] my spin is in a state.
+- [00:36:27,480 - 00:36:30,120] The language that we would describe this by,
+- [00:36:30,240 - 00:36:31,140] quantum mechanically,
+- [00:36:31,320 - 00:36:34,300] is they have simulated a product state.
+- [00:36:34,660 - 00:36:37,780] A product state in which Bob's,
+- [00:36:37,880 - 00:36:38,880] sorry,
+- [00:36:38,880 - 00:36:40,060] Alice's wave function
+- [00:36:40,080 - 00:36:40,940] is this,
+- [00:36:40,940 - 00:36:43,400] and Bob's wave function is this,
+- [00:36:43,920 - 00:36:46,260] and the combined system is in a product state.
+- [00:36:47,560 - 00:36:51,660] Supposing now we want to simulate a any state,
+- [00:36:51,920 - 00:36:55,380] a more complete description that includes entangled states.
+- [00:36:56,040 - 00:36:56,520] Well,
+- [00:36:56,520 - 00:36:57,380] we can do it this way.
+- [00:36:57,480 - 00:36:58,600] Let's start with a way
+- [00:36:58,600 - 00:36:59,720] that's sort of guaranteed to work.
+- [00:37:00,900 - 00:37:02,180] We take the computer and
+- [00:37:02,180 - 00:37:03,460] we put it in the middle,
+- [00:37:03,500 - 00:37:04,400] a single computer.
+- [00:37:05,560 - 00:37:07,440] We can think of the single computer,
+- [00:37:07,440 - 00:37:08,100] if we like,
+- [00:37:08,200 - 00:37:09,940] as a pair of computers,
+- [00:37:10,080 - 00:37:11,100] connected by wires,
+- [00:37:11,260 - 00:37:12,430] but just by the fact
+- [00:37:12,430 - 00:37:13,600] that they're communicating with each other
+- [00:37:13,600 - 00:37:14,940] and interacting with each other,
+- [00:37:15,000 - 00:37:16,260] really makes them a single computer.
+- [00:37:18,220 - 00:37:19,840] And in that single computer,
+- [00:37:19,960 - 00:37:22,460] we now store four complex numbers.
+- [00:37:22,820 - 00:37:26,480] The four complex numbers that we store in there are
+- [00:37:28,060 - 00:37:29,000] alpha up,
+- [00:37:29,000 - 00:37:29,380] up,
+- [00:37:29,990 - 00:37:30,580] alpha up,
+- [00:37:30,580 - 00:37:30,960] down,
+- [00:37:31,640 - 00:37:32,560] alpha down,
+- [00:37:32,560 - 00:37:32,960] up,
+- [00:37:33,580 - 00:37:34,560] alpha down,
+- [00:37:34,560 - 00:37:35,020] down.
+- [00:37:36,280 - 00:37:38,140] These complex numbers here
+- [00:37:38,140 - 00:37:39,860] are not necessarily
+- [00:37:39,860 - 00:37:40,480] products.
+- [00:37:40,840 - 00:37:41,220] In fact,
+- [00:37:41,220 - 00:37:42,580] let's assume they're not products.
+- [00:37:43,000 - 00:37:43,960] In other words,
+- [00:37:43,960 - 00:37:45,200] that this is not a product state.
+- [00:37:45,360 - 00:37:47,180] Let's assume it's a highly entangled state.
+- [00:37:47,760 - 00:37:50,100] Even a highly entangled state is
+- [00:37:50,100 - 00:37:52,440] described by four complex numbers like this.
+- [00:37:53,460 - 00:37:54,740] That's what's in the computer.
+- [00:37:55,660 - 00:37:57,320] And what does the computer do with it?
+- [00:37:58,380 - 00:38:01,560] It evolves the Schrodinger equation.
+- [00:38:01,920 - 00:38:02,540] First of all,
+- [00:38:02,540 - 00:38:03,500] we initialize.
+- [00:38:03,580 - 00:38:04,140] Same deal.
+- [00:38:04,420 - 00:38:05,680] We initialize.
+- [00:38:05,680 - 00:38:06,980] We start with some alphas.
+- [00:38:08,060 - 00:38:09,100] The alphas,
+- [00:38:10,200 - 00:38:13,200] are allowed to run according
+- [00:38:13,200 - 00:38:16,200] to whatever Schrodinger equation describes them.
+- [00:38:16,940 - 00:38:18,100] And at the end,
+- [00:38:18,100 - 00:38:19,800] either Bob or Alice or both,
+- [00:38:21,020 - 00:38:23,360] without knowing what the other one is doing,
+- [00:38:24,040 - 00:38:24,680] press,
+- [00:38:24,680 - 00:38:26,080] or as the case may be,
+- [00:38:26,080 - 00:38:28,000] don't press their measurement buttons.
+- [00:38:28,720 - 00:38:31,700] Once the measurement button has been pressed,
+- [00:38:32,080 - 00:38:35,520] an instantaneous signal goes back to the computer.
+- [00:38:35,780 - 00:38:38,960] The computer grinds out its random number generator,
+- [00:38:38,960 - 00:38:41,450] and whichever side was measured
+- [00:38:41,450 - 00:38:43,940] sends a signal to the detector
+- [00:38:43,940 - 00:38:46,180] with appropriate probability,
+- [00:38:46,180 - 00:38:48,120] either plus one or minus one,
+- [00:38:48,820 - 00:38:51,460] and then reinitializes itself,
+- [00:38:52,900 - 00:38:55,980] reinitializes itself in a way that doesn't touch,
+- [00:38:55,980 - 00:38:56,500] for example,
+- [00:38:56,500 - 00:38:58,340] if Alice does the experiment,
+- [00:39:00,340 - 00:39:04,420] then it doesn't touch Bob's end of things.
+- [00:39:04,560 - 00:39:06,300] If Bob does the experiment,
+- [00:39:06,300 - 00:39:08,940] the computer reinitializes itself.
+- [00:39:08,940 - 00:39:10,960] And then Bob re-normalizes his half of the wave function,
+- [00:39:11,260 - 00:39:13,120] which is another way of saying it
+- [00:39:13,120 - 00:39:14,980] throws away the piece that you didn't measure.
+- [00:39:15,640 - 00:39:17,600] Throws away the pieces you didn't measure,
+- [00:39:17,700 - 00:39:19,810] and re-normalizes the wave function so
+- [00:39:19,810 - 00:39:21,920] that the total probability is one.
+- [00:39:23,720 - 00:39:25,120] Exactly the same thing,
+- [00:39:25,120 - 00:39:28,320] there's no real difference with a single system.
+- [00:39:28,560 - 00:39:30,080] You can simulate it,
+- [00:39:30,080 - 00:39:31,170] and you can simulate it
+- [00:39:31,170 - 00:39:32,260] in a way which would describe
+- [00:39:32,260 - 00:39:36,060] all the possible things that Alice and Bob could measure,
+- [00:39:36,060 - 00:39:41,000] whether or not the system was entangled.
+- [00:39:42,320 - 00:39:45,160] Where do we get in trouble?
+- [00:39:45,500 - 00:39:48,620] We get in trouble if after initializing,
+- [00:39:48,660 - 00:39:52,140] we try to separate the computers and break the wires.
+- [00:39:53,260 - 00:39:54,320] For example,
+- [00:39:54,320 - 00:39:55,900] here's what we might do.
+- [00:39:56,800 - 00:39:58,140] Given these alphas,
+- [00:39:58,140 - 00:40:01,120] we might put them into both computers.
+- [00:40:01,820 - 00:40:04,020] Take the set of alphas that we generated,
+- [00:40:04,260 - 00:40:05,960] put this one into this computer,
+- [00:40:06,000 - 00:40:06,020] and put this one into this computer,
+- [00:40:06,060 - 00:40:08,220] now since the computers are not
+- [00:40:08,220 - 00:40:10,380] going to talk to each other,
+- [00:40:10,500 - 00:40:13,440] they have to have separate random number generators.
+- [00:40:14,660 - 00:40:17,560] The random number generators will not talk to each other.
+- [00:40:18,000 - 00:40:21,380] Each one contains the full entangled state,
+- [00:40:23,200 - 00:40:25,520] and then we go through the same operation.
+- [00:40:26,200 - 00:40:27,580] What's going to happen?
+- [00:40:27,820 - 00:40:30,760] The computer is simply going to forget.
+- [00:40:31,830 - 00:40:32,520] For example,
+- [00:40:32,520 - 00:40:34,240] for a highly entangled state,
+- [00:40:34,420 - 00:40:36,040] let's say the entangled state is this one,
+- [00:40:36,040 - 00:40:36,580] and the singlet state,
+- [00:40:37,860 - 00:40:40,280] then the right answer would be that
+- [00:40:40,280 - 00:40:43,180] if Bob and Alice both measure,
+- [00:40:44,060 - 00:40:47,780] they should get opposite values for any spin.
+- [00:40:48,500 - 00:40:50,820] If they measure the x component of spin,
+- [00:40:51,020 - 00:40:52,220] they should get opposite values.
+- [00:40:52,540 - 00:40:54,780] If they measure y components of spin,
+- [00:40:54,920 - 00:40:56,000] they should get opposite values.
+- [00:40:56,620 - 00:40:57,220] But,
+- [00:40:57,220 - 00:40:58,920] if when we separate them,
+- [00:40:58,980 - 00:41:01,200] they have separate random number generators,
+- [00:41:02,020 - 00:41:04,920] and the random number generators don't talk to each other,
+- [00:41:04,920 - 00:41:06,600] then guess what's going to happen?
+- [00:41:06,680 - 00:41:09,700] There's going to be no correlation of any kind
+- [00:41:09,700 - 00:41:12,600] between what Bob measures and what Alice measures.
+- [00:41:13,640 - 00:41:14,200] Nope.
+- [00:41:14,620 - 00:41:17,300] Bob may measure plus,
+- [00:41:17,540 - 00:41:19,460] and Alice may also measure plus,
+- [00:41:19,600 - 00:41:21,300] because their random number generators
+- [00:41:21,300 - 00:41:23,000] are not connected to each other.
+- [00:41:23,740 - 00:41:25,820] And so even though both computers may
+- [00:41:25,820 - 00:41:27,900] know about the full state of the system,
+- [00:41:28,100 - 00:41:31,140] if the random number generators don't talk to each other,
+- [00:41:31,260 - 00:41:34,860] then the results of the experiment
+- [00:41:34,860 - 00:41:38,020] will not contain the correlation.
+- [00:41:39,320 - 00:41:41,850] The correlation that Bob and Alice
+- [00:41:41,850 - 00:41:44,380] could later come together and report,
+- [00:41:45,500 - 00:41:46,480] Bob would say,
+- [00:41:46,480 - 00:41:48,320] my first experiments are a plus.
+- [00:41:49,240 - 00:41:50,720] If things were working right,
+- [00:41:50,920 - 00:41:52,120] then Alice should say,
+- [00:41:52,120 - 00:41:54,000] my first experiments are a minus.
+- [00:41:54,580 - 00:41:56,180] And so forth and so on.
+- [00:41:56,300 - 00:41:58,360] That correlation will not be there
+- [00:41:58,360 - 00:42:00,620] once you try to separate the computers.
+- [00:42:00,980 - 00:42:02,620] Are the random numbers correlated
+- [00:42:02,620 - 00:42:04,260] if you don't separate the computers?
+- [00:42:05,020 - 00:42:10,380] You can have a single random number generator
+- [00:42:10,380 - 00:42:12,600] that sends out signals to both computers.
+- [00:42:13,100 - 00:42:15,180] If it sends out a
+- [00:42:15,180 - 00:42:17,260] signal plus one to this computer,
+- [00:42:17,440 - 00:42:20,460] it sends out a signal minus one to that computer.
+- [00:42:21,560 - 00:42:24,400] So all you need is a single random number generator,
+- [00:42:24,640 - 00:42:26,140] but it has to be
+- [00:42:26,140 - 00:42:27,640] able to talk to both computers.
+- [00:42:29,980 - 00:42:32,500] So there's got to be wires in the world.
+- [00:42:32,540 - 00:42:34,240] There's got to be wires in the world
+- [00:42:34,940 - 00:42:36,920] connecting this side and this side,
+- [00:42:37,140 - 00:42:38,940] if for no other reason,
+- [00:42:39,500 - 00:42:41,040] then they can both connect
+- [00:42:41,040 - 00:42:42,580] to the same random number generator.
+- [00:42:43,480 - 00:42:45,180] You've got four alphas there,
+- [00:42:45,260 - 00:42:46,720] but it sounds like you just
+- [00:42:46,720 - 00:42:48,180] described that the alphas are independent.
+- [00:42:48,720 - 00:42:50,060] Now you've got to think about it.
+- [00:42:50,180 - 00:42:50,380] Yeah,
+- [00:42:50,380 - 00:42:50,560] yeah,
+- [00:42:50,560 - 00:42:50,720] yeah,
+- [00:42:50,720 - 00:42:50,920] yeah.
+- [00:42:53,360 - 00:42:53,880] Well,
+- [00:42:53,880 - 00:42:55,100] that's sort of right.
+- [00:42:55,200 - 00:42:56,620] Once you've separated them,
+- [00:42:59,180 - 00:43:00,740] then what happens next,
+- [00:43:00,880 - 00:43:02,360] after some measurements are made,
+- [00:43:03,080 - 00:43:05,580] doesn't preserve the relationship between them.
+- [00:43:06,100 - 00:43:08,280] They become disconnected from each other.
+- [00:43:09,440 - 00:43:09,840] Yeah,
+- [00:43:09,840 - 00:43:11,040] so think about it a little bit.
+- [00:43:11,320 - 00:43:11,860] I mean,
+- [00:43:11,860 - 00:43:12,380] even better,
+- [00:43:12,380 - 00:43:13,620] try to simulate it.
+- [00:43:14,680 - 00:43:15,300] This is,
+- [00:43:15,300 - 00:43:15,420] this,
+- [00:43:15,420 - 00:43:16,480] I've never tried,
+- [00:43:16,600 - 00:43:17,920] but I don't think it should be that hard
+- [00:43:17,920 - 00:43:19,760] if you can do a little bit of computer programming.
+- [00:43:21,960 - 00:43:24,220] I've simulated much harder things than that
+- [00:43:24,220 - 00:43:26,920] when my son was a little kid.
+- [00:43:27,720 - 00:43:29,280] We had this thing called BASIC.
+- [00:43:29,400 - 00:43:30,600] Anybody remember BASIC?
+- [00:43:30,660 - 00:43:30,780] Yeah.
+- [00:43:30,780 - 00:43:33,380] And he and I designed a basketball game,
+- [00:43:33,540 - 00:43:34,380] and it had friction,
+- [00:43:34,380 - 00:43:35,260] and it had,
+- [00:43:35,460 - 00:43:36,060] oh,
+- [00:43:36,060 - 00:43:36,740] it was really,
+- [00:43:36,740 - 00:43:37,860] much harder than this.
+- [00:43:38,180 - 00:43:41,840] So that was my last experience ever programming anything.
+- [00:43:42,280 - 00:43:44,500] Can I say a quick scenario?
+- [00:43:45,180 - 00:43:46,540] I think you'll learn a
+- [00:43:46,540 - 00:43:47,900] lot by trying to simulate this.
+- [00:43:48,260 - 00:43:48,520] Okay,
+- [00:43:48,520 - 00:43:51,640] you have a detector called a cell phone,
+- [00:43:51,740 - 00:43:55,080] and I get a signal from Alice or Bob
+- [00:43:55,080 - 00:43:57,660] about some random event.
+- [00:43:57,760 - 00:43:58,660] It could be a spin.
+- [00:43:58,860 - 00:43:59,860] Let's suppose we're,
+- [00:43:59,860 - 00:44:01,860] Will you please speak concretely?
+- [00:44:02,500 - 00:44:05,080] We get a signal from Bob of some random event.
+- [00:44:05,220 - 00:44:05,700] What does it mean?
+- [00:44:06,120 - 00:44:07,520] Can you please be exact?
+- [00:44:07,820 - 00:44:08,900] I will be very precise.
+- [00:44:08,920 - 00:44:09,540] Very exact.
+- [00:44:09,860 - 00:44:12,040] I'm getting two text messages,
+- [00:44:12,180 - 00:44:12,980] one from A,
+- [00:44:12,980 - 00:44:13,700] one from B,
+- [00:44:13,700 - 00:44:14,780] okay?
+- [00:44:15,200 - 00:44:16,360] And they can have a
+- [00:44:16,360 - 00:44:17,520] value of one or a zero,
+- [00:44:17,520 - 00:44:18,200] each of them.
+- [00:44:18,640 - 00:44:19,080] Okay?
+- [00:44:19,480 - 00:44:22,440] And I get a million of these things,
+- [00:44:22,520 - 00:44:24,040] and I notice the distribution that
+- [00:44:24,040 - 00:44:26,520] the A signal is about a
+- [00:44:26,520 - 00:44:29,000] 50% chance of being one or zero,
+- [00:44:29,180 - 00:44:29,840] same with the B signal.
+- [00:44:29,860 - 00:44:30,600] Okay?
+- [00:44:31,460 - 00:44:33,180] It could be from a spin.
+- [00:44:33,420 - 00:44:33,620] Yes,
+- [00:44:33,620 - 00:44:33,760] yes,
+- [00:44:33,760 - 00:44:34,000] okay,
+- [00:44:34,000 - 00:44:34,340] go ahead.
+- [00:44:34,740 - 00:44:35,140] Now,
+- [00:44:35,140 - 00:44:36,680] when I look at the correlation,
+- [00:44:36,840 - 00:44:40,160] it turns out that whether it's A or B,
+- [00:44:41,160 - 00:44:42,440] the other one is the same.
+- [00:44:42,500 - 00:44:42,840] In other words,
+- [00:44:42,840 - 00:44:43,380] it's correlated,
+- [00:44:43,380 - 00:44:44,460] a correlation of one.
+- [00:44:44,840 - 00:44:46,980] That's in the real world of entangled states.
+- [00:44:47,340 - 00:44:47,440] Right.
+- [00:44:47,500 - 00:44:47,740] Now,
+- [00:44:47,740 - 00:44:49,060] this could be,
+- [00:44:49,759 - 00:44:51,240] we don't know where it's coming from.
+- [00:44:51,340 - 00:44:52,420] I'm just getting information.
+- [00:44:52,720 - 00:44:54,920] So I get an information to,
+- [00:44:55,400 - 00:44:56,420] A comes through,
+- [00:44:56,600 - 00:44:57,400] I don't look at it,
+- [00:44:57,440 - 00:44:58,260] B comes through,
+- [00:44:58,400 - 00:44:59,840] I know it's a 50-50 chance,
+- [00:44:59,840 - 00:45:01,020] I don't look at it,
+- [00:45:01,060 - 00:45:02,060] but as soon as I look at A,
+- [00:45:02,240 - 00:45:03,380] I know what B is,
+- [00:45:03,440 - 00:45:05,120] so the wave function completely changes.
+- [00:45:05,560 - 00:45:06,000] Now,
+- [00:45:06,000 - 00:45:08,660] the example I'm using is not a state,
+- [00:45:08,800 - 00:45:09,140] I'm just,
+- [00:45:09,660 - 00:45:11,800] Bob and Alice are sexting twins.
+- [00:45:12,240 - 00:45:13,060] One's a boy,
+- [00:45:13,140 - 00:45:13,740] one's a girl.
+- [00:45:13,880 - 00:45:14,760] You gotta hurry up,
+- [00:45:14,760 - 00:45:16,420] because I gotta get on to particles.
+- [00:45:16,840 - 00:45:19,560] So there is nothing magical about that.
+- [00:45:19,660 - 00:45:21,920] There is nothing weird about that.
+- [00:45:22,080 - 00:45:23,720] If it's correlated like that,
+- [00:45:23,780 - 00:45:25,880] it's very probable they're identical twins
+- [00:45:25,880 - 00:45:26,980] instead of fraternal twins.
+- [00:45:27,240 - 00:45:29,480] So what am I missing?
+- [00:45:29,600 - 00:45:29,820] What is the correlation between the two?
+- [00:45:29,840 - 00:45:30,620] What is weird about that?
+- [00:45:31,640 - 00:45:32,940] If you don't find it weird,
+- [00:45:32,940 - 00:45:33,180] good.
+- [00:45:36,760 - 00:45:39,780] What's weird is that you can't simulate it classically
+- [00:45:40,520 - 00:45:49,180] without having a central processor connected by wires.
+- [00:45:49,380 - 00:45:50,580] That's what's weird about it.
+- [00:45:51,000 - 00:45:54,920] So don't those wires that connect the two distant computers
+- [00:45:54,920 - 00:45:56,440] represent non-locality?
+- [00:45:56,700 - 00:45:56,980] Oh,
+- [00:45:56,980 - 00:45:57,260] okay.
+- [00:45:57,380 - 00:45:58,120] Now we ask.
+- [00:45:58,920 - 00:45:59,660] All right,
+- [00:45:59,660 - 00:45:59,820] the last one.
+- [00:45:59,840 - 00:45:59,840] All right,
+- [00:45:59,840 - 00:46:00,500] those wires are there.
+- [00:46:00,660 - 00:46:01,480] For goodness sakes,
+- [00:46:01,480 - 00:46:03,700] surely Bob can send a message
+- [00:46:03,700 - 00:46:05,000] through the wires to Alice.
+- [00:46:05,140 - 00:46:06,200] That takes no time at all,
+- [00:46:06,220 - 00:46:07,000] because they're instantaneous.
+- [00:46:07,920 - 00:46:08,520] Yeah.
+- [00:46:09,960 - 00:46:10,880] True enough,
+- [00:46:10,880 - 00:46:13,020] if this were a real computer setup.
+- [00:46:13,260 - 00:46:17,380] But if Bob is restricted to only do the things
+- [00:46:17,380 - 00:46:20,100] which quantum mechanics allows him to do,
+- [00:46:21,420 - 00:46:25,240] if he is restricted by the rules of quantum mechanics,
+- [00:46:28,380 - 00:46:29,820] then we find that,
+- [00:46:29,820 - 00:46:30,260] we find out,
+- [00:46:30,260 - 00:46:30,900] amazingly,
+- [00:46:30,900 - 00:46:33,920] that Bob can never send a message
+- [00:46:33,920 - 00:46:36,800] through the wires that violates locality.
+- [00:46:37,240 - 00:46:37,760] Why?
+- [00:46:37,960 - 00:46:41,700] Because all Bob can do is manipulate his own system
+- [00:46:41,700 - 00:46:42,980] with unitary operators.
+- [00:46:46,240 - 00:46:49,280] And so that's what's curious here.
+- [00:46:50,820 - 00:46:52,010] Does that mean that the
+- [00:46:52,010 - 00:46:53,200] world is filled up with wires
+- [00:46:53,200 - 00:46:54,100] that we can't see?
+- [00:46:54,500 - 00:46:55,940] I don't think that's the message.
+- [00:46:56,160 - 00:46:57,520] I think the right message,
+- [00:46:57,520 - 00:46:59,740] but of course here you can hear,
+- [00:46:59,740 - 00:47:00,920] there's room for debate,
+- [00:47:01,080 - 00:47:03,000] what the right message of all of this is.
+- [00:47:04,420 - 00:47:07,820] The message I take away from it is basically
+- [00:47:07,820 - 00:47:11,260] quantum mechanics cannot be simulated by a classical system.
+- [00:47:11,600 - 00:47:13,020] The logic is too different.
+- [00:47:13,160 - 00:47:15,440] The structures of the two theories are too different.
+- [00:47:16,820 - 00:47:18,330] And I don't take away the message
+- [00:47:18,330 - 00:47:19,840] that the world is full of wires,
+- [00:47:20,000 - 00:47:21,400] that if only we could access them,
+- [00:47:21,440 - 00:47:23,040] we could send messages back and forth.
+- [00:47:23,500 - 00:47:24,480] Other people do.
+- [00:47:25,860 - 00:47:27,790] But I think at least if
+- [00:47:27,790 - 00:47:29,720] we know how to do quantum mechanics,
+- [00:47:29,720 - 00:47:31,020] we'll agree on the facts,
+- [00:47:31,020 - 00:47:34,220] we may disagree on basically
+- [00:47:34,220 - 00:47:37,000] whether there are or are not wires there.
+- [00:47:37,100 - 00:47:38,790] Are there really wires there or
+- [00:47:38,790 - 00:47:40,480] are there really not wires there?
+- [00:47:41,080 - 00:47:41,720] Well,
+- [00:47:41,720 - 00:47:43,940] perhaps the culprit is the word really.
+- [00:47:45,140 - 00:47:46,740] But this is,
+- [00:47:46,740 - 00:47:47,300] oh,
+- [00:47:47,300 - 00:47:50,160] there is one other element to it,
+- [00:47:50,220 - 00:47:52,040] which is quite interesting.
+- [00:47:53,480 - 00:47:59,580] We've made an assumption that Bob and Alice get
+- [00:47:59,720 - 00:48:02,950] to kind of randomly make decisions
+- [00:48:02,950 - 00:48:06,180] about when to press the button,
+- [00:48:06,400 - 00:48:08,260] about what orientations,
+- [00:48:08,260 - 00:48:09,900] about what to decide to measure.
+- [00:48:10,420 - 00:48:12,860] Bob sits here and says,
+- [00:48:12,860 - 00:48:14,160] okay,
+- [00:48:14,160 - 00:48:15,120] northwest,
+- [00:48:15,120 - 00:48:17,460] southeast,
+- [00:48:17,460 - 00:48:18,580] or whatever,
+- [00:48:19,010 - 00:48:21,585] makes these random decisions according
+- [00:48:21,585 - 00:48:24,160] to the principle of free will,
+- [00:48:24,300 - 00:48:24,960] so to speak.
+- [00:48:26,000 - 00:48:29,120] That's fine as long as Alice and Bob
+- [00:48:29,120 - 00:48:31,900] are outside the system and not part of it.
+- [00:48:32,160 - 00:48:34,940] We don't need to ask the question
+- [00:48:34,940 - 00:48:37,720] of consciousness and the question of free will.
+- [00:48:37,880 - 00:48:40,990] We'll just admit that Alice and Bob can
+- [00:48:40,990 - 00:48:44,100] make random decisions about when to measure various things.
+- [00:48:44,240 - 00:48:45,700] It's obviously a pretty good approximation.
+- [00:48:46,760 - 00:48:49,200] But once we take Alice and
+- [00:48:49,200 - 00:48:51,640] Bob and put them into the system
+- [00:48:52,100 - 00:48:55,480] so that they are governed by the laws of physics,
+- [00:48:56,540 - 00:48:59,020] then things get a little bit touchy.
+- [00:48:59,120 - 00:49:01,240] What do we mean by saying
+- [00:49:01,240 - 00:49:03,360] that Alice can decide to do this,
+- [00:49:03,440 - 00:49:05,240] or Bob can decide to do that?
+- [00:49:05,740 - 00:49:06,260] And that,
+- [00:49:06,260 - 00:49:06,840] I think,
+- [00:49:06,840 - 00:49:08,990] is where the possible loopholes in
+- [00:49:08,990 - 00:49:11,140] all of this can come from.
+- [00:49:11,800 - 00:49:12,300] That,
+- [00:49:12,300 - 00:49:12,640] uh,
+- [00:49:12,640 - 00:49:14,780] now,
+- [00:49:14,780 - 00:49:16,660] I don't want to get
+- [00:49:16,660 - 00:49:18,540] too deep into heavy philosophical discussions
+- [00:49:18,540 - 00:49:21,540] of all sorts of
+- [00:49:21,540 - 00:49:24,540] psychological and questions of consciousness.
+- [00:49:24,940 - 00:49:26,480] I don't know the answers.
+- [00:49:26,600 - 00:49:26,880] That's it.
+- [00:49:26,980 - 00:49:29,100] I don't know the answers beyond what I've told you.
+- [00:49:31,640 - 00:49:32,160] Uh,
+- [00:49:32,160 - 00:49:34,220] I'm certain of two things about it.
+- [00:49:34,620 - 00:49:36,500] I am certain that there are a lot
+- [00:49:36,500 - 00:49:38,380] of people who think they do know the answers,
+- [00:49:38,540 - 00:49:40,000] and I'm also certain that they don't.
+- [00:49:41,120 - 00:49:41,740] That's it.
+- [00:49:42,220 - 00:49:43,160] I have a question.
+- [00:49:43,440 - 00:49:43,600] Yeah.
+- [00:49:43,780 - 00:49:44,020] Um,
+- [00:49:44,020 - 00:49:44,480] actually,
+- [00:49:44,480 - 00:49:45,100] not a question,
+- [00:49:45,100 - 00:49:45,500] a comment.
+- [00:49:45,860 - 00:49:46,380] Uh,
+- [00:49:46,380 - 00:49:49,240] if you Google for Quantum Randy Challenge,
+- [00:49:49,800 - 00:49:52,010] you'll find a blog entry that
+- [00:49:52,010 - 00:49:54,220] has the setup for this simulation.
+- [00:49:54,920 - 00:49:55,060] Really?
+- [00:49:55,320 - 00:49:55,700] Yeah.
+- [00:49:55,840 - 00:49:57,500] For the entangled case?
+- [00:49:58,080 - 00:49:59,080] It doesn't have the...
+- [00:49:59,080 - 00:49:59,620] It doesn't solve it.
+- [00:49:59,700 - 00:49:59,900] It says,
+- [00:49:59,900 - 00:50:00,740] if you can...
+- [00:50:00,740 - 00:50:01,620] Here's a program.
+- [00:50:01,840 - 00:50:01,880] Yeah.
+- [00:50:02,080 - 00:50:03,700] Your challenge is to put...
+- [00:50:03,700 - 00:50:05,460] Fill in this blank place.
+- [00:50:05,800 - 00:50:06,100] I see.
+- [00:50:06,320 - 00:50:07,340] And if you can,
+- [00:50:07,340 - 00:50:09,300] he'll give you a million dollars.
+- [00:50:09,400 - 00:50:09,580] Hey,
+- [00:50:09,580 - 00:50:09,980] okay.
+- [00:50:10,460 - 00:50:10,700] Well,
+- [00:50:10,700 - 00:50:10,920] actually,
+- [00:50:10,920 - 00:50:12,600] he won't give you a million dollars.
+- [00:50:12,780 - 00:50:14,920] Somebody in Sweden will give you a million dollars.
+- [00:50:18,180 - 00:50:18,580] Yeah.
+- [00:50:19,939 - 00:50:20,339] Okay,
+- [00:50:20,339 - 00:50:21,700] that's very interesting.
+- [00:50:22,500 - 00:50:22,900] Okay,
+- [00:50:22,900 - 00:50:24,320] so I'm not the first one to...
+- [00:50:24,320 - 00:50:24,460] Well,
+- [00:50:24,460 - 00:50:25,540] I bet I was the first
+- [00:50:25,540 - 00:50:26,620] one to think about it this way,
+- [00:50:26,700 - 00:50:28,920] but I've been telling this to people for 50 years.
+- [00:50:28,920 - 00:50:29,160] Hmm?
+- [00:50:29,980 - 00:50:30,160] No.
+- [00:50:31,860 - 00:50:32,560] I don't know.
+- [00:50:32,620 - 00:50:33,460] I probably wasn't.
+- [00:50:33,580 - 00:50:36,860] I think maybe Bohr thought about it this way.
+- [00:50:36,960 - 00:50:37,260] Who knows?
+- [00:50:37,340 - 00:50:37,880] It doesn't matter.
+- [00:50:38,700 - 00:50:38,700] Um,
+- [00:50:38,700 - 00:50:39,900] let's,
+- [00:50:39,900 - 00:50:40,200] uh...
+- [00:50:40,200 - 00:50:43,780] We could spend the rest of eternity talking about spins.
+- [00:50:44,700 - 00:50:45,460] They're so...
+- [00:50:45,460 - 00:50:45,840] Why?
+- [00:50:46,040 - 00:50:47,940] Because they really are interesting.
+- [00:50:48,820 - 00:50:49,260] But,
+- [00:50:49,260 - 00:50:49,480] uh,
+- [00:50:49,480 - 00:50:50,200] you know,
+- [00:50:50,200 - 00:50:51,620] we want to get to something else.
+- [00:50:51,680 - 00:50:52,580] We want to get to particles.
+- [00:50:52,920 - 00:50:54,460] We want to get to more complex systems.
+- [00:50:54,780 - 00:50:57,540] The most complex system we've discussed is two spins,
+- [00:50:57,780 - 00:50:58,780] four-dimensional,
+- [00:50:58,780 - 00:50:58,900] and...
+- [00:50:58,900 - 00:50:58,920] Well,
+- [00:50:58,920 - 00:50:59,380] Hilbert space.
+- [00:51:01,000 - 00:51:01,480] Uh,
+- [00:51:01,480 - 00:51:05,360] we've gotten about to the point where in classical physics
+- [00:51:05,360 - 00:51:06,800] we got through the first lecture.
+- [00:51:06,880 - 00:51:08,340] The first lecture was about these simple,
+- [00:51:08,340 - 00:51:09,160] discrete systems,
+- [00:51:09,380 - 00:51:13,200] and then we rather immediately moved on to continuous motion
+- [00:51:13,880 - 00:51:15,900] of things like particles
+- [00:51:15,900 - 00:51:17,920] moving continuously with an infinite,
+- [00:51:18,040 - 00:51:18,920] and not just an infinite,
+- [00:51:19,080 - 00:51:22,160] but a continuously infinite range of possibilities.
+- [00:51:23,100 - 00:51:24,560] That's where we have to go now.
+- [00:51:24,960 - 00:51:25,440] Now,
+- [00:51:25,440 - 00:51:25,900] fortunately,
+- [00:51:25,900 - 00:51:27,720] we've set up so much of the apparatus
+- [00:51:27,720 - 00:51:28,780] of quantum mechanics,
+- [00:51:28,780 - 00:51:28,880] and we've got a lot of things going on.
+- [00:51:28,880 - 00:51:30,500] So we can do it fairly quickly.
+- [00:51:32,780 - 00:51:36,290] There's a little bit of
+- [00:51:36,290 - 00:51:39,800] subtlety about replacing sums by integrals.
+- [00:51:40,279 - 00:51:41,080] That's about it.
+- [00:51:41,140 - 00:51:42,760] That's about the nature of the subtlety.
+- [00:51:43,040 - 00:51:44,340] Sums and integrals.
+- [00:51:45,680 - 00:51:48,780] We've expressed the general principles of quantum mechanics,
+- [00:51:49,020 - 00:51:52,030] and then exhibited it in a
+- [00:51:52,030 - 00:51:55,040] variety of simple spin system examples.
+- [00:51:56,000 - 00:51:57,820] Now we'll plunge right in.
+- [00:51:58,180 - 00:51:58,860] We'll go back to the first lecture.
+- [00:51:58,860 - 00:52:01,460] We'll plunge right in to quantum gravity.
+- [00:52:03,280 - 00:52:03,860] No.
+- [00:52:07,040 - 00:52:09,910] We'll plunge right in to the problem of
+- [00:52:09,910 - 00:52:12,780] a single particle moving on a one-dimensional axis.
+- [00:52:15,620 - 00:52:17,680] We'll take the axis to be infinite,
+- [00:52:17,680 - 00:52:20,180] although that's mostly because I don't
+- [00:52:20,180 - 00:52:22,680] have time to be more careful.
+- [00:52:24,320 - 00:52:26,040] If we want to get anywhere else,
+- [00:52:26,040 - 00:52:26,760] we're going to have to...
+- [00:52:33,160 - 00:52:33,880] it's much,
+- [00:52:33,880 - 00:52:33,880] much more
+- [00:52:33,880 - 00:52:35,680] slightly less mathematically rigorous.
+- [00:52:37,180 - 00:52:39,980] All right and in order to be rigorous,
+- [00:52:39,980 - 00:52:42,400] you really have to contain a system
+- [00:52:42,400 - 00:52:44,820] in a finite volume and so forth,
+- [00:52:45,060 - 00:52:46,220] but we don't need to do that.
+- [00:52:46,440 - 00:52:47,200] So we have a line,
+- [00:52:47,200 - 00:52:47,880] an infinite line.
+- [00:52:48,440 - 00:52:49,780] Along an infinite line,
+- [00:52:49,780 - 00:52:51,780] one particle can exist.
+- [00:52:51,960 - 00:52:53,240] We won't do two particles yet.
+- [00:52:53,700 - 00:52:55,960] One particle can exist in one dimension.
+- [00:52:57,880 - 00:52:58,840] That line is a galaxy.
+- [00:52:58,840 - 00:53:00,960] is labeled by a coordinate x,
+- [00:53:00,960 - 00:53:03,020] let me not write down the coordinate x,
+- [00:53:03,020 - 00:53:04,500] but also the
+- [00:53:04,500 - 00:53:05,860] states of the particle,
+- [00:53:05,860 - 00:53:12,060] the states of the particle are also labeled by the
+- [00:53:12,060 - 00:53:13,140] position of a particle.
+- [00:53:13,140 - 00:53:16,700] Now here we are departing from classical logic.
+- [00:53:16,700 - 00:53:17,880] In
+- [00:53:17,880 - 00:53:18,780] classical logic,
+- [00:53:18,780 - 00:53:21,000] the states of a particle are
+- [00:53:21,000 - 00:53:23,220] labeled by a position and a momentum.
+- [00:53:25,680 - 00:53:28,360] If we were talking about the states of a spin,
+- [00:53:28,360 - 00:53:31,260] we would say the state of a spin is
+- [00:53:31,260 - 00:53:34,240] described by all of the co- or maybe
+- [00:53:34,240 - 00:53:37,220] at least two of the components of spin,
+- [00:53:37,220 - 00:53:38,380] but
+- [00:53:38,380 - 00:53:39,820] we can't do that in quantum mechanics.
+- [00:53:39,820 - 00:53:41,660] We can't specify two components
+- [00:53:41,660 - 00:53:42,280] simultaneously.
+- [00:53:42,280 - 00:53:44,040] Same in classical mechanics,
+- [00:53:44,040 - 00:53:45,560] specifying,
+- [00:53:45,560 - 00:53:45,980] as you,
+- [00:53:45,980 - 00:53:46,620] I'm sure you
+- [00:53:46,620 - 00:53:46,800] know,
+- [00:53:46,800 - 00:53:49,800] specifying the position and the momentum is too much,
+- [00:53:49,800 - 00:53:52,580] and we'll see how
+- [00:53:52,580 - 00:53:53,140] that works.
+- [00:53:53,220 - 00:53:54,020] We'll see how that works,
+- [00:53:54,020 - 00:53:55,420] but for the moment let's
+- [00:53:55,420 - 00:53:56,820] take it as a postulate that
+- [00:53:56,820 - 00:54:00,240] a complete description of the state of a particle,
+- [00:54:00,240 - 00:54:01,900] and you can't get any more out,
+- [00:54:02,880 - 00:54:03,360] is,
+- [00:54:03,360 - 00:54:04,360] for example,
+- [00:54:04,360 - 00:54:07,860] to know that it's located at a position x,
+- [00:54:07,860 - 00:54:09,740] and if it's located at
+- [00:54:09,740 - 00:54:10,420] position x,
+- [00:54:10,420 - 00:54:12,400] we'll describe that by a ket vector.
+- [00:54:12,400 - 00:54:14,940] The ket vector x,
+- [00:54:14,940 - 00:54:16,260] that's the state
+- [00:54:16,260 - 00:54:18,660] of a particle when it's located at position x.
+- [00:54:18,660 - 00:54:21,260] Now of course we can consider
+- [00:54:21,260 - 00:54:22,060] more complicated,
+- [00:54:22,060 - 00:54:22,520] more
+- [00:54:22,520 - 00:54:23,200] complicated,
+- [00:54:23,200 - 00:54:23,200] more
+- [00:54:23,220 - 00:54:24,820] complicated states,
+- [00:54:24,820 - 00:54:27,880] linear superpositions of these.
+- [00:54:27,880 - 00:54:29,320] In quantum mechanics we are
+- [00:54:29,320 - 00:54:31,620] always allowed to make linear superpositions,
+- [00:54:31,620 - 00:54:33,380] and so the space of
+- [00:54:33,380 - 00:54:36,710] states is bigger than just the
+- [00:54:36,710 - 00:54:40,040] space of particles located at definite positions.
+- [00:54:41,820 - 00:54:44,640] Let's call the general state psi.
+- [00:54:44,640 - 00:54:49,420] This is the general state of a particle,
+- [00:54:49,420 - 00:54:50,320] doesn't
+- [00:54:50,320 - 00:54:51,040] mean anything now,
+- [00:54:51,040 - 00:54:52,260] it's just an abstract symbol,
+- [00:54:52,260 - 00:54:55,120] and it's a vector in some vector space.
+- [00:54:55,120 - 00:54:59,480] The vector space now has a continuously infinite
+- [00:54:59,899 - 00:55:01,440] number of basis vectors.
+- [00:55:01,440 - 00:55:05,280] Now strictly speaking that's a mathematically bad thing,
+- [00:55:05,280 - 00:55:05,920] but we're
+- [00:55:05,920 - 00:55:06,780] going to play that game.
+- [00:55:06,780 - 00:55:09,300] If you want to understand more
+- [00:55:09,300 - 00:55:11,820] deeply the mathematics of quantum mechanics,
+- [00:55:12,120 - 00:55:14,160] you go and you learn about Hilbert space,
+- [00:55:14,160 - 00:55:16,680] but we're not going to do that tonight.
+- [00:55:17,000 - 00:55:19,620] So the general state of a particle is called psi.
+- [00:55:21,140 - 00:55:23,960] Remember what the wave function of a system is.
+- [00:55:23,960 - 00:55:25,420] The wave function of a system,
+- [00:55:25,420 - 00:55:26,660] in a particular
+- [00:55:26,660 - 00:55:30,040] basis is the projection of
+- [00:55:30,040 - 00:55:33,420] a state onto the basis vectors,
+- [00:55:33,420 - 00:55:35,260] and we call that psi of A.
+- [00:55:38,160 - 00:55:40,380] Now we come to a particle,
+- [00:55:40,380 - 00:55:43,540] the basis of states are the position states,
+- [00:55:43,540 - 00:55:45,100] and what is the wave
+- [00:55:45,100 - 00:55:45,440] function?
+- [00:55:45,440 - 00:55:49,540] The wave function is the inner product,
+- [00:55:49,540 - 00:55:49,600] the inner product of the particle.
+- [00:55:49,600 - 00:55:49,600] And the
+- [00:55:49,600 - 00:55:51,750] inner product of the state
+- [00:55:51,750 - 00:55:53,900] vector with the eigenvectors of position,
+- [00:55:53,900 - 00:55:55,500] and that's called
+- [00:55:55,500 - 00:55:56,240] psi of x.
+- [00:56:01,820 - 00:56:02,780] That's the wave function.
+- [00:56:02,780 - 00:56:04,000] That's the classical,
+- [00:56:04,000 - 00:56:06,300] not classical but that's the standard quantum
+- [00:56:06,300 - 00:56:08,140] mechanical wave function of a particle.
+- [00:56:08,140 - 00:56:12,040] It plays the same role as in the simple systems
+- [00:56:12,040 - 00:56:12,700] we've discussed,
+- [00:56:12,700 - 00:56:15,560] the inner product of the state vector with A.
+- [00:56:16,620 - 00:56:17,900] Now we can say a little more.
+- [00:56:19,060 - 00:56:19,580] What is the basic function,
+- [00:56:19,580 - 00:56:19,580] and is it greater than
+- [00:56:19,580 - 00:56:19,580] the class of the state vector?
+- [00:56:19,600 - 00:56:20,380] In this context,
+- [00:56:20,380 - 00:56:24,360] the probability that the system,
+- [00:56:24,360 - 00:56:25,320] whatever it is,
+- [00:56:25,320 - 00:56:26,800] exhibits property
+- [00:56:26,800 - 00:56:30,160] A is given by this thing squared.
+- [00:56:30,540 - 00:56:30,980] In fact,
+- [00:56:30,980 - 00:56:33,100] it's given by psi star of A,
+- [00:56:33,100 - 00:56:34,860] psi of A.
+- [00:56:35,870 - 00:56:38,420] That's the probability that the system is,
+- [00:56:38,420 - 00:56:41,160] that the outcome of an experiment to determine
+- [00:56:41,160 - 00:56:42,260] whether the system was,
+- [00:56:42,260 - 00:56:43,480] had property A,
+- [00:56:43,480 - 00:56:44,480] that's the probability.
+- [00:56:46,040 - 00:56:46,680] Likewise,
+- [00:56:46,680 - 00:56:48,680] in exact parallel,
+- [00:56:48,680 - 00:56:51,280] the probability to find the particle
+- [00:56:51,280 - 00:56:53,880] at X is equal to psi
+- [00:56:53,880 - 00:56:57,200] star of X times psi of X.
+- [00:56:59,040 - 00:57:01,960] I really haven't done anything that we haven't done before.
+- [00:57:03,580 - 00:57:05,140] Now in quantum mechanics,
+- [00:57:05,140 - 00:57:08,380] like in any other sensible statistical theory,
+- [00:57:08,380 - 00:57:10,140] the sum of all
+- [00:57:10,140 - 00:57:11,880] probabilities should add up to one.
+- [00:57:14,480 - 00:57:16,000] So the sum of psi star
+- [00:57:16,000 - 00:57:17,520] of psi should add up to one.
+- [00:57:18,320 - 00:57:21,280] But when probabilities refer to a continuous variable,
+- [00:57:21,280 - 00:57:24,300] we don't talk about the probability
+- [00:57:24,300 - 00:57:27,400] that the particle is located exactly at point X.
+- [00:57:28,320 - 00:57:29,340] That's too sharp.
+- [00:57:29,800 - 00:57:31,650] The probability that a thing is located
+- [00:57:31,650 - 00:57:33,500] exactly at any given X is zero.
+- [00:57:34,280 - 00:57:36,370] We talk about the probability that
+- [00:57:36,370 - 00:57:38,460] it's located within a range of X.
+- [00:57:38,740 - 00:57:39,520] Or better yet,
+- [00:57:39,520 - 00:57:41,400] we talk about the density of probability.
+- [00:57:42,080 - 00:57:44,460] We talk about the probability density.
+- [00:57:44,460 - 00:57:48,290] And we integrate this over a little range
+- [00:57:48,290 - 00:57:52,120] of X to find the probability that you're in
+- [00:57:52,120 - 00:57:53,140] that range of X.
+- [00:57:54,100 - 00:57:55,660] We do something like that here.
+- [00:57:55,820 - 00:57:57,920] If we want to know not whether
+- [00:57:57,920 - 00:58:00,020] the system is definitely specified at A,
+- [00:58:00,020 - 00:58:00,640] but we want
+- [00:58:00,640 - 00:58:01,920] to know whether it's at a range of A,
+- [00:58:01,920 - 00:58:03,120] we sum over them.
+- [00:58:04,900 - 00:58:07,460] But here we sort of have to do it.
+- [00:58:09,020 - 00:58:10,760] Total probability equal to one.
+- [00:58:11,240 - 00:58:12,220] That's the condition.
+- [00:58:12,220 - 00:58:15,140] That the integral of psi star of X,
+- [00:58:15,140 - 00:58:17,380] psi of X,
+- [00:58:17,380 - 00:58:18,700] dx,
+- [00:58:18,700 - 00:58:20,640] is equal to one.
+- [00:58:21,560 - 00:58:22,970] Total probability of the system
+- [00:58:22,970 - 00:58:24,380] has to add up to one.
+- [00:58:28,560 - 00:58:30,240] And as I said,
+- [00:58:30,240 - 00:58:32,220] the only new thing here is that
+- [00:58:32,220 - 00:58:34,200] we have to replace sums by integrals.
+- [00:58:34,260 - 00:58:35,710] And that does make mathematical subtlety
+- [00:58:35,710 - 00:58:37,160] that we have to worry about,
+- [00:58:37,160 - 00:58:40,600] but it's sort
+- [00:58:40,600 - 00:58:42,200] of in the mathematical deepening.
+- [00:58:42,200 - 00:58:42,820] OK,
+- [00:58:42,820 - 00:58:48,740] what about the inner product between two state vectors,
+- [00:58:48,740 - 00:58:50,880] one at X and one at X prime?
+- [00:58:52,380 - 00:58:52,900] Well,
+- [00:58:52,900 - 00:58:53,680] here we go back,
+- [00:58:53,680 - 00:58:54,420] for inspiration,
+- [00:58:54,420 - 00:59:07,280] right back to this case.
+- [00:59:08,420 - 00:59:08,940] OK.
+- [00:59:11,660 - 00:59:12,180] And let's make sure that we get a better idea.
+- [00:59:15,380 - 00:59:18,290] 0 if a is not equal to a prime
+- [00:59:18,290 - 00:59:21,200] and 1 if a is equal to a prime.
+- [00:59:22,040 - 00:59:23,360] And we're not going to be able
+- [00:59:23,360 - 00:59:24,680] to quite get away with that here.
+- [00:59:26,460 - 00:59:28,210] We're not going to quite be able
+- [00:59:28,210 - 00:59:29,960] to get away with the statement that
+- [00:59:34,040 - 00:59:39,220] x prime is equal to 0 or 1.
+- [00:59:40,160 - 00:59:42,240] We are going to say that if
+- [00:59:42,240 - 00:59:44,320] x is not equal to x prime,
+- [00:59:44,320 - 00:59:46,540] then it's 0.
+- [00:59:47,700 - 00:59:49,240] But we're not going to say
+- [00:59:49,240 - 00:59:50,780] that when it's equal to x prime,
+- [00:59:50,780 - 00:59:52,360] that it's 1.
+- [00:59:53,920 - 00:59:55,320] That would not leave us anywhere.
+- [00:59:56,740 - 00:59:59,900] What we're going to say is that it's
+- [00:59:59,900 - 01:00:03,060] a function which vanishes unless x equals x prime,
+- [01:00:03,799 - 01:00:06,200] but has area 1 under it.
+- [01:00:06,800 - 01:00:08,060] We'll see how that works out.
+- [01:00:08,160 - 01:00:09,140] We'll see what that does for us.
+- [01:00:09,220 - 01:00:09,580] In a moment.
+- [01:00:10,620 - 01:00:13,420] What it really comes down
+- [01:00:13,420 - 01:00:16,220] to is a different normalization here.
+- [01:00:16,680 - 01:00:17,460] But again,
+- [01:00:17,460 - 01:00:20,180] the basic idea that states are orthogonal
+- [01:00:20,180 - 01:00:22,900] if x is not equal to x prime,
+- [01:00:23,160 - 01:00:24,220] that we will retain.
+- [01:00:24,680 - 01:00:26,840] But the numerical value of what we
+- [01:00:26,840 - 01:00:29,000] get when x is equal to x prime,
+- [01:00:29,200 - 01:00:31,060] we're going to take to be slightly different.
+- [01:00:31,280 - 01:00:32,080] And in fact,
+- [01:00:32,080 - 01:00:33,360] we're going to invent a function,
+- [01:00:33,360 - 01:00:34,920] not we are,
+- [01:00:34,920 - 01:00:35,800] Dirac did,
+- [01:00:36,520 - 01:00:37,940] the Dirac delta function.
+- [01:00:38,100 - 01:00:39,200] x minus...
+- [01:00:39,220 - 01:00:39,740] x minus x prime.
+- [01:00:41,540 - 01:00:43,440] The Dirac delta function is
+- [01:00:43,440 - 01:00:45,340] not a real mathematical function,
+- [01:00:45,540 - 01:00:47,710] although by now I think
+- [01:00:47,710 - 01:00:49,880] mathematicians have defined it to death
+- [01:00:49,880 - 01:00:52,300] so that it is a real mathematical entity.
+- [01:00:55,060 - 01:00:57,040] But for our purposes,
+- [01:00:57,040 - 01:00:59,540] we can think of it in a very simple way.
+- [01:01:00,260 - 01:01:04,840] It's a function which is 0...
+- [01:01:04,840 - 01:01:05,060] Well,
+- [01:01:05,060 - 01:01:06,820] let's take delta of x.
+- [01:01:07,140 - 01:01:08,860] Not delta of x minus x prime.
+- [01:01:08,860 - 01:01:10,660] This is basically delta of x minus 0.
+- [01:01:11,419 - 01:01:12,140] x prime 0.
+- [01:01:12,260 - 01:01:13,620] The function delta of x.
+- [01:01:14,060 - 01:01:15,620] It's a function which is 0
+- [01:01:15,620 - 01:01:17,180] unless x is equal to 0.
+- [01:01:17,740 - 01:01:19,540] That's the same as saying this thing is
+- [01:01:19,540 - 01:01:21,340] 0 unless x is equal to x prime.
+- [01:01:22,440 - 01:01:23,860] So if this is x,
+- [01:01:23,860 - 01:01:29,040] it's 0 everywheres except x equals x prime.
+- [01:01:29,400 - 01:01:31,240] And at x equals x prime,
+- [01:01:31,240 - 01:01:34,640] it's a very high narrow spike.
+- [01:01:35,560 - 01:01:36,840] How high and narrow?
+- [01:01:37,040 - 01:01:38,660] High enough and narrow enough,
+- [01:01:38,860 - 01:01:40,960] that the area under it is one unit.
+- [01:01:42,240 - 01:01:44,610] That means if it's approximated by
+- [01:01:44,610 - 01:01:46,980] a narrow interval of size epsilon,
+- [01:01:47,280 - 01:01:50,240] that it has height 1 over epsilon.
+- [01:01:52,240 - 01:01:54,000] And then you imagine a limit
+- [01:01:54,000 - 01:01:55,760] where you take epsilon smaller and smaller,
+- [01:01:56,100 - 01:01:58,100] 1 over epsilon higher and higher,
+- [01:01:58,100 - 01:02:01,560] always keeping the area under it equal to 1.
+- [01:02:01,740 - 01:02:03,660] That's the Dirac delta function.
+- [01:02:03,820 - 01:02:04,900] Dirac delta function,
+- [01:02:04,900 - 01:02:08,300] 0 everywheres except when x equals x prime.
+- [01:02:09,080 - 01:02:09,520] So here's the area under x prime.
+- [01:02:09,520 - 01:02:10,630] And the Dirac delta function is infinite in
+- [01:02:10,630 - 01:02:11,740] some sense when x is equal to x prime,
+- [01:02:12,200 - 01:02:13,850] but in such a way that the
+- [01:02:13,850 - 01:02:15,500] area under it is equal to 1.
+- [01:02:16,180 - 01:02:16,620] Okay?
+- [01:02:18,360 - 01:02:19,000] All right,
+- [01:02:19,000 - 01:02:22,730] now let's use this to further elaborate on
+- [01:02:22,730 - 01:02:26,460] what the meaning of psi of x is.
+- [01:02:31,200 - 01:02:32,260] I'm going to guess,
+- [01:02:32,260 - 01:02:33,100] and then we're going to check.
+- [01:02:33,720 - 01:02:35,190] I'm going to guess that the meaning
+- [01:02:35,190 - 01:02:36,660] of psi of x is the following.
+- [01:02:36,660 - 01:02:39,700] That if I want to write a general state vector,
+- [01:02:47,280 - 01:02:47,780] psi,
+- [01:02:47,780 - 01:02:49,280] that I can think of it
+- [01:02:49,280 - 01:02:50,780] as a sum over the basis vectors.
+- [01:02:51,080 - 01:02:52,080] But not a sum,
+- [01:02:52,080 - 01:02:52,520] an integral.
+- [01:02:52,920 - 01:02:53,960] Of course an integral,
+- [01:02:53,960 - 01:02:56,720] because the basis vectors are continuous.
+- [01:02:57,620 - 01:03:01,460] The x of some coefficients,
+- [01:03:01,460 - 01:03:04,440] some coefficients,
+- [01:03:04,440 - 01:03:05,080] well let's,
+- [01:03:05,080 - 01:03:05,200] no,
+- [01:03:05,200 - 01:03:06,020] let's write it this way.
+- [01:03:06,020 - 01:03:09,640] Psi is equal to an integral
+- [01:03:09,640 - 01:03:13,260] dx of some set of coefficients.
+- [01:03:14,540 - 01:03:15,900] I'm going to guess what they are.
+- [01:03:16,100 - 01:03:17,720] I'm going to guess that they're psi of x.
+- [01:03:20,940 - 01:03:21,980] Times the,
+- [01:03:21,980 - 01:03:23,060] times the,
+- [01:03:23,060 - 01:03:25,940] the state,
+- [01:03:25,940 - 01:03:29,860] the quantum state where the particle is located at x,
+- [01:03:30,020 - 01:03:31,200] but then we're going to
+- [01:03:31,200 - 01:03:32,380] add them up for different x's.
+- [01:03:33,040 - 01:03:35,120] It's exactly the same thing that we did,
+- [01:03:36,020 - 01:03:37,480] for ordinary quantum systems,
+- [01:03:37,480 - 01:03:39,840] except this was replaced by a sum.
+- [01:03:43,300 - 01:03:43,820] Alright,
+- [01:03:43,820 - 01:03:45,320] now I've given you two
+- [01:03:45,320 - 01:03:46,820] distinct definitions of psi of x.
+- [01:03:47,120 - 01:03:49,570] One is that it's the inner product
+- [01:03:49,570 - 01:03:52,020] of the state vector with the eigenvector x.
+- [01:03:52,140 - 01:03:53,480] I'll call it the eigenvector of x.
+- [01:03:53,900 - 01:03:57,490] The other is that it's the expansion coefficients
+- [01:03:57,490 - 01:04:01,080] in writing psi as a sum over vectors.
+- [01:04:02,920 - 01:04:03,440] Now,
+- [01:04:03,440 - 01:04:06,000] if you're a little bit uncomfortable with the idea of,
+- [01:04:06,020 - 01:04:09,300] of a continuous basis of vectors that you integrate over,
+- [01:04:09,859 - 01:04:10,740] you're in good company.
+- [01:04:11,340 - 01:04:14,200] The mathematics of this is,
+- [01:04:14,200 - 01:04:14,800] um,
+- [01:04:17,240 - 01:04:17,920] as I said,
+- [01:04:17,920 - 01:04:19,100] by now it is,
+- [01:04:19,100 - 01:04:20,640] been made rigorous,
+- [01:04:21,400 - 01:04:22,280] but it's,
+- [01:04:22,280 - 01:04:22,820] it's,
+- [01:04:22,820 - 01:04:23,640] it's,
+- [01:04:23,640 - 01:04:24,380] um,
+- [01:04:24,380 - 01:04:27,560] it took pages and pages and pages and pages
+- [01:04:28,180 - 01:04:30,030] and books and books and
+- [01:04:30,030 - 01:04:31,880] books on something called distribution theory
+- [01:04:31,880 - 01:04:33,700] to make sense out of this with precision,
+- [01:04:33,920 - 01:04:35,260] but it's pretty intuitive.
+- [01:04:35,260 - 01:04:36,200] It's pretty intuitive,
+- [01:04:36,200 - 01:04:36,980] and we'll,
+- [01:04:36,980 - 01:04:37,700] we'll stick with that.
+- [01:04:38,200 - 01:04:38,640] Alright,
+- [01:04:38,640 - 01:04:39,680] so let's calculate,
+- [01:04:39,680 - 01:04:41,060] or let's put a prime here.
+- [01:04:41,140 - 01:04:41,920] This is a sum,
+- [01:04:41,920 - 01:04:42,560] an integral.
+- [01:04:43,180 - 01:04:44,240] It doesn't matter,
+- [01:04:44,240 - 01:04:47,260] it doesn't matter what you call the integration variable.
+- [01:04:47,680 - 01:04:48,800] Let's call it x prime.
+- [01:04:49,220 - 01:04:51,130] And now let's calculate the
+- [01:04:51,130 - 01:04:53,040] inner product of x with psi.
+- [01:04:55,120 - 01:04:55,940] As I said,
+- [01:04:55,940 - 01:04:58,940] there were two different definitions of psi of x.
+- [01:04:59,040 - 01:05:00,340] Let's check that they're the same.
+- [01:05:00,940 - 01:05:01,380] So,
+- [01:05:01,380 - 01:05:02,360] here we have it.
+- [01:05:03,220 - 01:05:04,240] Integral dx prime.
+- [01:05:05,960 - 01:05:07,160] Psi of x prime.
+- [01:05:08,460 - 01:05:11,400] Inner product of x with x prime.
+- [01:05:15,200 - 01:05:17,180] What's the inner product of x with x prime?
+- [01:05:17,340 - 01:05:18,220] I think I wrote it someplace.
+- [01:05:18,220 - 01:05:18,960] Where is it?
+- [01:05:20,300 - 01:05:21,620] I think I erased it.
+- [01:05:32,720 - 01:05:37,240] That's equal to the integral of the x prime,
+- [01:05:37,520 - 01:05:39,200] psi of x prime,
+- [01:05:39,200 - 01:05:43,520] delta of x minus x prime.
+- [01:05:46,600 - 01:05:47,300] Okay,
+- [01:05:47,300 - 01:05:47,800] what is that?
+- [01:05:48,720 - 01:05:49,420] Alright.
+- [01:05:49,420 - 01:05:50,220] First of all,
+- [01:05:50,220 - 01:05:53,080] delta is a function which is zero
+- [01:05:53,080 - 01:05:55,940] everywhere except at x equals x prime.
+- [01:05:56,340 - 01:05:59,380] So that means that in doing this integral here,
+- [01:05:59,380 - 01:06:01,610] you'll only get a contribution when
+- [01:06:01,610 - 01:06:03,840] x prime is equal to x.
+- [01:06:05,100 - 01:06:06,880] That means the answer is going to come
+- [01:06:06,880 - 01:06:08,660] out to be proportional to psi of x.
+- [01:06:09,800 - 01:06:10,420] Furthermore,
+- [01:06:10,420 - 01:06:14,320] the area under this delta function is exactly one.
+- [01:06:15,700 - 01:06:19,380] If we imagine that this delta function is a p,
+- [01:06:19,380 - 01:06:21,900] pinched narrower and narrower high spike,
+- [01:06:22,180 - 01:06:24,500] so that the area under it is one,
+- [01:06:25,299 - 01:06:30,420] then this integral would tend to psi of x.
+- [01:06:31,000 - 01:06:32,320] The rule is,
+- [01:06:32,320 - 01:06:33,910] if you have an integral
+- [01:06:33,910 - 01:06:35,500] over a delta function like this,
+- [01:06:36,340 - 01:06:40,640] it simply picks out the value of
+- [01:06:40,640 - 01:06:44,940] the integration variable where the delta function vanishes.
+- [01:06:45,260 - 01:06:45,940] Sorry,
+- [01:06:45,940 - 01:06:48,280] where the argument of the delta function vanishes.
+- [01:06:48,280 - 01:06:49,940] Where x minus x prime vanishes.
+- [01:06:50,680 - 01:06:52,400] That's where the function is not zero.
+- [01:06:54,460 - 01:06:57,730] And the integral of a function with a delta function just
+- [01:06:57,730 - 01:07:01,000] gives you the value of the function at the point x.
+- [01:07:03,100 - 01:07:03,780] That's a rule.
+- [01:07:03,780 - 01:07:04,840] We might as well write that down.
+- [01:07:04,920 - 01:07:06,040] Let's write that down as a rule.
+- [01:07:06,840 - 01:07:09,540] Integral delta of x minus x prime,
+- [01:07:09,540 - 01:07:11,670] f of x prime is
+- [01:07:11,670 - 01:07:13,800] always equal to f of x.
+- [01:07:15,180 - 01:07:18,160] It picks out the value x prime equal to x.
+- [01:07:18,280 - 01:07:20,500] That's part of the definition of the delta function.
+- [01:07:22,340 - 01:07:22,780] Okay,
+- [01:07:22,780 - 01:07:24,600] so it's just equal to psi of x.
+- [01:07:24,760 - 01:07:27,390] And we find consistency that the thing
+- [01:07:27,390 - 01:07:30,020] that we called psi of x over here
+- [01:07:30,460 - 01:07:32,150] is the same as the thing that
+- [01:07:32,150 - 01:07:33,840] we called psi of x over here.
+- [01:07:35,380 - 01:07:37,430] All of this has its
+- [01:07:37,430 - 01:07:39,480] exact parallel for the ordinary systems.
+- [01:07:41,040 - 01:07:45,160] Top integral on the bottom board,
+- [01:07:45,160 - 01:07:45,300] yeah.
+- [01:07:45,420 - 01:07:47,740] So I'm looking at psi of x prime times,
+- [01:07:48,440 - 01:07:50,840] the ket vector x prime.
+- [01:07:50,940 - 01:07:51,600] Adding them up,
+- [01:07:51,600 - 01:07:52,200] superposing.
+- [01:07:52,460 - 01:07:56,020] I'm trying to figure out which are the basis vectors.
+- [01:07:56,540 - 01:07:57,900] These are the basis vectors.
+- [01:07:58,240 - 01:08:00,000] Let's compare that with
+- [01:08:01,160 - 01:08:05,240] psi is equal to sum over a,
+- [01:08:05,240 - 01:08:06,100] a prime,
+- [01:08:06,100 - 01:08:07,120] let's call it a prime.
+- [01:08:08,360 - 01:08:10,320] Psi of a prime,
+- [01:08:10,320 - 01:08:12,200] a prime.
+- [01:08:15,820 - 01:08:16,479] Okay?
+- [01:08:17,740 - 01:08:19,540] If we use the fact that
+- [01:08:19,540 - 01:08:21,340] a and a prime are orthogonal
+- [01:08:21,340 - 01:08:23,399] and do exactly the same
+- [01:08:23,399 - 01:08:25,460] thing except replacing sums by integrals,
+- [01:08:25,580 - 01:08:31,000] we will also find that the psi that appears here
+- [01:08:31,540 - 01:08:33,350] is the same as the inner
+- [01:08:33,350 - 01:08:35,160] product of psi with the basis vectors.
+- [01:08:35,720 - 01:08:38,640] So I've really done nothing that we haven't done before.
+- [01:08:38,800 - 01:08:40,520] I appreciate it's a little,
+- [01:08:40,520 - 01:08:42,180] possibly a little unfamiliar.
+- [01:08:43,920 - 01:08:45,359] But all it is,
+- [01:08:46,599 - 01:08:47,200] is,
+- [01:08:47,740 - 01:08:49,120] same thing we've done before.
+- [01:08:50,540 - 01:08:52,979] So the psi of x prime sort of plays
+- [01:08:52,979 - 01:08:55,420] the same role as the alphas and some other?
+- [01:08:55,640 - 01:08:57,240] The x prime plays the same
+- [01:08:57,240 - 01:08:58,840] role as the a prime here.
+- [01:08:59,399 - 01:08:59,920] Yeah.
+- [01:09:00,460 - 01:09:02,600] The psi plays the same role as the psi.
+- [01:09:03,180 - 01:09:05,439] The sum is replaced by the integral.
+- [01:09:05,580 - 01:09:07,960] Sum over a prime is replaced by integral,
+- [01:09:07,960 - 01:09:08,680] the x prime.
+- [01:09:09,640 - 01:09:11,960] And otherwise it's exactly the same.
+- [01:09:13,300 - 01:09:13,819] Okay?
+- [01:09:14,939 - 01:09:16,120] Now let's calculate
+- [01:09:16,120 - 01:09:18,200] the inner product.
+- [01:09:19,319 - 01:09:20,660] One quick question.
+- [01:09:21,220 - 01:09:23,260] It may be nitpicking or something,
+- [01:09:23,260 - 01:09:23,540] but
+- [01:09:23,979 - 01:09:26,319] on the left hand side where you have the
+- [01:09:27,899 - 01:09:28,819] Dirac's formula,
+- [01:09:28,819 - 01:09:29,939] lower right hand corner,
+- [01:09:31,319 - 01:09:34,540] you've got a vertical line between the axis.
+- [01:09:36,339 - 01:09:39,140] Over here in the middle formula,
+- [01:09:40,839 - 01:09:42,340] there's no vertical line.
+- [01:09:42,760 - 01:09:43,420] Thank you.
+- [01:09:44,020 - 01:09:44,420] Okay.
+- [01:09:46,319 - 01:09:46,720] Good?
+- [01:09:46,880 - 01:09:48,819] Because it could have been a line or a column.
+- [01:09:48,840 - 01:09:49,180] I got you,
+- [01:09:49,180 - 01:09:49,580] got you,
+- [01:09:49,580 - 01:09:50,080] got you.
+- [01:09:50,920 - 01:09:51,319] Right?
+- [01:09:51,600 - 01:09:52,000] Nope.
+- [01:09:52,300 - 01:09:52,700] Absolutely.
+- [01:09:56,280 - 01:09:58,140] How about the inner product of two vectors?
+- [01:09:59,380 - 01:09:59,780] Well,
+- [01:09:59,780 - 01:10:01,720] the inner product of two vectors is some inner product.
+- [01:10:02,380 - 01:10:04,900] But one way of calculating the inner product,
+- [01:10:05,000 - 01:10:08,120] let's go back to ordinary quantum mechanics,
+- [01:10:08,220 - 01:10:10,680] ordinary means for the discrete systems.
+- [01:10:10,840 - 01:10:11,060] Here,
+- [01:10:11,060 - 01:10:12,060] we don't need this right now.
+- [01:10:14,599 - 01:10:16,440] How do we calculate the inner product?
+- [01:10:16,640 - 01:10:17,160] Let's take it.
+- [01:10:18,299 - 01:10:20,320] Inner product of psi with phi.
+- [01:10:21,460 - 01:10:23,590] We first write psi and phi
+- [01:10:23,590 - 01:10:25,720] as sums over the basis vectors.
+- [01:10:26,160 - 01:10:27,930] So this is equal to sum
+- [01:10:27,930 - 01:10:29,700] over two sets of basis vectors,
+- [01:10:29,860 - 01:10:30,600] a prime and a,
+- [01:10:31,580 - 01:10:35,740] psi star of a prime times a prime.
+- [01:10:37,020 - 01:10:38,120] That's the bra vector.
+- [01:10:38,740 - 01:10:40,340] We complex conjugate,
+- [01:10:40,340 - 01:10:40,920] of course,
+- [01:10:40,920 - 01:10:42,300] when we deal with bra vectors.
+- [01:10:42,960 - 01:10:44,380] That's the psi half of it.
+- [01:10:45,920 - 01:10:51,960] And then the phi half of it is the
+- [01:10:51,960 - 01:10:58,000] sum over a of phi of a times a.
+- [01:11:00,720 - 01:11:04,540] Phi of a being the coefficients of the phi vector,
+- [01:11:04,700 - 01:11:09,180] psi star being the coefficients of the psi bra vector.
+- [01:11:10,480 - 01:11:11,140] All right.
+- [01:11:11,140 - 01:11:11,260] Now,
+- [01:11:11,260 - 01:11:12,780] phi of a is just a number.
+- [01:11:13,180 - 01:11:14,880] Psi star of a is just a number.
+- [01:11:15,200 - 01:11:16,950] And the inner product of a prime
+- [01:11:16,950 - 01:11:18,700] with a is just the Kronecker delta.
+- [01:11:19,060 - 01:11:22,100] So all of this adds up to
+- [01:11:22,100 - 01:11:25,140] sum of psi star of a prime,
+- [01:11:27,300 - 01:11:28,180] phi of a,
+- [01:11:30,460 - 01:11:34,840] and then a Kronecker delta of a and a prime,
+- [01:11:34,960 - 01:11:36,960] which is exactly the instruction to
+- [01:11:36,960 - 01:11:38,960] set a equal to a prime.
+- [01:11:39,220 - 01:11:39,660] Now,
+- [01:11:39,660 - 01:11:40,720] I think you've seen that before.
+- [01:11:41,620 - 01:11:44,940] This is simply the rule about row vectors.
+- [01:11:45,300 - 01:11:46,980] If psi star of a
+- [01:11:46,980 - 01:11:48,660] is represented by a row vector,
+- [01:11:48,780 - 01:11:49,760] psi star of a1,
+- [01:11:49,760 - 01:11:50,140] blah,
+- [01:11:50,140 - 01:11:50,360] blah,
+- [01:11:50,360 - 01:11:50,500] blah,
+- [01:11:50,500 - 01:11:50,720] blah,
+- [01:11:50,720 - 01:11:50,880] blah,
+- [01:11:50,920 - 01:11:53,860] and phi is represented by a column vector,
+- [01:11:54,480 - 01:11:55,720] then this is just the
+- [01:11:55,720 - 01:11:56,960] rule to take this times this,
+- [01:11:57,080 - 01:11:57,960] plus this times this,
+- [01:11:57,960 - 01:11:58,920] plus this times this,
+- [01:11:58,920 - 01:11:59,800] plus this times that.
+- [01:12:01,920 - 01:12:04,180] So this is the common garden
+- [01:12:04,180 - 01:12:06,440] variety quantum mechanical in a product.
+- [01:12:08,258 - 01:12:08,578] أنا
+- [01:12:08,578 - 01:12:08,898] كن...
+- [01:12:10,434 - 01:12:13,514] don't need to go through the same exercise here.
+- [01:12:13,903 - 01:12:15,908] We can immediately write down what the
+- [01:12:15,908 - 01:12:17,914] result is going to be just by analogy.
+- [01:12:18,954 - 01:12:21,134] It's almost not even an analogy,
+- [01:12:21,134 - 01:12:24,954] it's just replacing wherever we see a's put x's,
+- [01:12:25,154 - 01:12:28,834] and wherever we see some put integral.
+- [01:12:29,944 - 01:12:35,334] The inner product of two state vectors
+- [01:12:35,334 - 01:12:41,924] for a particle on a line is integral
+- [01:12:41,924 - 01:12:48,514] dx psi star of x phi of x.
+- [01:12:53,134 - 01:12:55,134] It satisfies incidentally one of
+- [01:12:55,134 - 01:12:57,134] the basic rules of inner products.
+- [01:12:58,674 - 01:13:00,914] What happens to an inner product
+- [01:13:00,914 - 01:13:03,154] if you interchange the two vectors?
+- [01:13:03,534 - 01:13:05,034] What's the relation between
+- [01:13:05,034 - 01:13:06,474] the inner product psi phi
+- [01:13:06,474 - 01:13:07,914] and the inner product phi psi?
+- [01:13:10,773 - 01:13:11,894] Complex conjugation.
+- [01:13:12,254 - 01:13:13,904] Now what would happen in here
+- [01:13:13,904 - 01:13:15,554] if you interchange psi with phi?
+- [01:13:16,234 - 01:13:21,614] You'd wind up writing phi star here and psi here.
+- [01:13:21,734 - 01:13:24,634] That again would be the complex conjugate.
+- [01:13:25,914 - 01:13:27,894] And for exactly the same reasons.
+- [01:13:28,654 - 01:13:29,214] Alright,
+- [01:13:29,214 - 01:13:32,254] so this is equal to this.
+- [01:13:34,894 - 01:13:38,814] For both discrete systems and for these continuous systems.
+- [01:13:41,194 - 01:13:42,234] Inner products.
+- [01:13:42,794 - 01:13:45,374] The inner product of a vector with
+- [01:13:45,374 - 01:13:47,954] itself is the norm of the vector.
+- [01:13:49,034 - 01:13:51,834] And just as in previous examples,
+- [01:13:51,834 - 01:13:54,204] you normalize the vector to
+- [01:13:54,204 - 01:13:56,574] one to express the fact that
+- [01:13:56,574 - 01:13:58,174] total probability adds up to one.
+- [01:14:00,993 - 01:14:01,613] So,
+- [01:14:01,613 - 01:14:02,234] that's the problem.
+- [01:14:04,594 - 01:14:05,714] Not much difference.
+- [01:14:06,334 - 01:14:09,394] Just a difference of notation.
+- [01:14:11,414 - 01:14:14,544] And I think what gets to be confusing
+- [01:14:14,544 - 01:14:17,674] about it is you know both of these things.
+- [01:14:17,794 - 01:14:20,913] You know about these simple row vectors and column vectors.
+- [01:14:21,174 - 01:14:22,774] And you know about functions.
+- [01:14:23,134 - 01:14:25,994] But you're not used to thinking of functions as vectors.
+- [01:14:26,494 - 01:14:27,574] Or maybe you are.
+- [01:14:27,674 - 01:14:28,054] If you are,
+- [01:14:28,054 - 01:14:28,274] good.
+- [01:14:28,654 - 01:14:31,834] But if you're not used to using functions as vectors.
+- [01:14:31,834 - 01:14:34,134] F of x's or functions as psi of x's.
+- [01:14:34,574 - 01:14:35,954] Then you have to get used to it.
+- [01:14:36,214 - 01:14:36,914] But it's not.
+- [01:14:37,054 - 01:14:39,374] But functions are vectors in a vector space.
+- [01:14:39,594 - 01:14:40,334] You can add them.
+- [01:14:40,434 - 01:14:42,874] You can multiply them by complex constants.
+- [01:14:44,534 - 01:14:46,094] And you can add them.
+- [01:14:46,194 - 01:14:48,194] You can multiply them by numbers.
+- [01:14:48,774 - 01:14:53,114] And so they satisfy the axioms of a vector space.
+- [01:14:54,154 - 01:14:56,594] Space of functions is a vector space.
+- [01:14:57,634 - 01:14:58,114] Now,
+- [01:14:58,114 - 01:14:59,194] sometimes you may want.
+- [01:14:59,314 - 01:14:59,454] Yeah.
+- [01:14:59,454 - 01:15:01,754] In more classical mathematics,
+- [01:15:01,754 - 01:15:06,314] would you put as the limits of integration minus and
+- [01:15:06,314 - 01:15:06,894] plus infinity?
+- [01:15:07,214 - 01:15:07,414] You would.
+- [01:15:10,054 - 01:15:11,914] Which incidentally says something.
+- [01:15:13,214 - 01:15:16,084] It says that we shouldn't be
+- [01:15:16,084 - 01:15:18,954] thinking about functions which grow at infinity,
+- [01:15:18,954 - 01:15:19,694] for example.
+- [01:15:20,674 - 01:15:23,684] We should be only thinking
+- [01:15:23,684 - 01:15:26,694] about functions which are square integrable.
+- [01:15:26,874 - 01:15:29,394] Now we're going to have to modify that.
+- [01:15:29,394 - 01:15:32,214] Square integral means you square them.
+- [01:15:32,314 - 01:15:33,314] This is called squaring them.
+- [01:15:33,474 - 01:15:34,954] That the integral exists.
+- [01:15:35,754 - 01:15:38,934] Functions which grow at infinity won't do that.
+- [01:15:39,194 - 01:15:40,294] Now those are crazy.
+- [01:15:40,574 - 01:15:42,414] Because it would say that all of the.
+- [01:15:42,474 - 01:15:44,214] If you had functions which grew at infinity,
+- [01:15:44,214 - 01:15:45,754] where would the probability be?
+- [01:15:46,254 - 01:15:49,854] The probability would be all located off at infinity.
+- [01:15:50,074 - 01:15:50,994] And that's not what we want.
+- [01:15:51,354 - 01:15:54,004] We want to be talking about probability
+- [01:15:54,004 - 01:15:56,654] distributions which have a total finite probability under
+- [01:15:56,654 - 01:15:56,894] them.
+- [01:15:58,314 - 01:15:58,834] So.
+- [01:16:00,574 - 01:16:03,604] That means we should take perhaps with a grain
+- [01:16:03,604 - 01:16:06,634] of salt the idea that we can write down
+- [01:16:06,634 - 01:16:07,314] any function.
+- [01:16:07,574 - 01:16:09,354] But for the moment we're going to
+- [01:16:09,354 - 01:16:11,134] be a little bit loose about that.
+- [01:16:12,294 - 01:16:12,814] Okay.
+- [01:16:17,273 - 01:16:20,343] I think I'll slow down here for a few
+- [01:16:20,343 - 01:16:23,414] minutes and let you digest that and ask for questions.
+- [01:16:25,494 - 01:16:26,014] Yeah.
+- [01:16:26,294 - 01:16:27,634] Can I go back to entanglement?
+- [01:16:27,814 - 01:16:28,114] No.
+- [01:16:28,114 - 01:16:28,474] No,
+- [01:16:28,474 - 01:16:28,634] no,
+- [01:16:28,634 - 01:16:28,754] no.
+- [01:16:29,554 - 01:16:30,114] I.
+- [01:16:31,374 - 01:16:31,934] Yeah,
+- [01:16:31,934 - 01:16:32,354] go ahead.
+- [01:16:32,453 - 01:16:34,654] I didn't want to,
+- [01:16:34,654 - 01:16:36,234] I meant about this but okay.
+- [01:16:36,514 - 01:16:37,354] Maybe this is quick.
+- [01:16:37,534 - 01:16:40,144] It seems like just about everything must
+- [01:16:40,144 - 01:16:42,754] be entangled with something almost all the time.
+- [01:16:43,134 - 01:16:43,414] Oh,
+- [01:16:43,414 - 01:16:43,554] yeah.
+- [01:16:44,774 - 01:16:45,334] Yeah.
+- [01:16:45,474 - 01:16:45,874] Yeah.
+- [01:16:46,394 - 01:16:47,864] You're entangled with all sorts
+- [01:16:47,864 - 01:16:49,334] of things in the environment.
+- [01:16:49,914 - 01:16:51,814] And we haven't talked about
+- [01:16:51,814 - 01:16:53,714] the importance of a complex environment.
+- [01:16:54,434 - 01:16:54,994] Uh.
+- [01:16:55,634 - 01:16:58,814] It's not so important in the very foundations of it.
+- [01:16:58,814 - 01:16:59,194] the subject,
+- [01:16:59,194 - 01:17:00,684] but it is important to why we
+- [01:17:00,684 - 01:17:02,174] see the world the way we are,
+- [01:17:02,174 - 01:17:02,974] that we're constantly
+- [01:17:02,974 - 01:17:05,894] being bombarded and getting entangled with things.
+- [01:17:08,274 - 01:17:11,394] Has a theory of distribution been useful for physicists,
+- [01:17:11,394 - 01:17:12,314] or is it just …
+- [01:17:12,314 - 01:17:12,434] Oh,
+- [01:17:12,434 - 01:17:12,674] boy.
+- [01:17:12,674 - 01:17:14,354] Certainly.
+- [01:17:14,994 - 01:17:15,434] Okay,
+- [01:17:15,434 - 01:17:18,114] so it's not just some … it
+- [01:17:18,114 - 01:17:20,794] didn't just clean up the Dirac delta function,
+- [01:17:21,014 - 01:17:21,294] is it?
+- [01:17:21,714 - 01:17:22,154] Oh,
+- [01:17:22,154 - 01:17:22,494] you mean,
+- [01:17:22,494 - 01:17:22,974] has it … well,
+- [01:17:22,974 - 01:17:23,894] oh,
+- [01:17:23,894 - 01:17:24,974] I see what you mean.
+- [01:17:24,974 - 01:17:25,654] You mean,
+- [01:17:25,654 - 01:17:26,014] has it done
+- [01:17:26,014 - 01:17:28,454] anything else besides clean up the … I don't know.
+- [01:17:28,454 - 01:17:29,174] I don't know.
+- [01:17:29,174 - 01:17:29,894] I don't know.
+- [01:17:30,654 - 01:17:33,234] I think it's made rigorous a set
+- [01:17:33,234 - 01:17:35,814] of concepts that physicists use all the time.
+- [01:17:35,814 - 01:17:39,794] Has it really
+- [01:17:42,494 - 01:17:43,114] changed?
+- [01:17:43,114 - 01:17:43,734] No,
+- [01:17:43,734 - 01:17:44,434] no.
+- [01:17:44,434 - 01:17:50,134] The theory of distributions … yeah,
+- [01:17:50,134 - 01:17:52,214] I'll tell you what it did for physicists.
+- [01:17:53,538 - 01:17:54,238] えっと
+- [01:17:56,514 - 01:17:59,534] made them have to argue less with mathematicians
+- [01:17:59,534 - 01:18:03,194] it was one of the many
+- [01:18:03,194 - 01:18:06,854] examples where mathematicians got dragged screaming and
+- [01:18:06,854 - 01:18:07,974] kicking by physicists
+- [01:18:08,833 - 01:18:11,634] of course the opposite also happens but
+- [01:18:12,393 - 01:18:14,543] it was an example where mathematicians
+- [01:18:14,543 - 01:18:16,694] at first looked at this thing
+- [01:18:16,694 - 01:18:18,474] and said what are you
+- [01:18:18,474 - 01:18:20,254] crazy that doesn't make any sense
+- [01:18:21,514 - 01:18:23,474] it's non-rigorous and
+- [01:18:23,474 - 01:18:25,594] and in time
+- [01:18:26,614 - 01:18:28,294] they came to peace with it
+- [01:18:29,054 - 01:18:33,214] through defining it in their own way
+- [01:18:34,054 - 01:18:35,874] but no i i don't
+- [01:18:35,874 - 01:18:37,694] think the mathematical structure of it
+- [01:18:38,214 - 01:18:42,294] has influenced physics as much as you might have expected
+- [01:18:46,274 - 01:18:48,914] unfortunately because there are big problems
+- [01:18:48,914 - 01:18:51,554] of confusion related to it in
+- [01:18:51,554 - 01:18:53,254] quantum field theory and it hasn't
+- [01:18:53,254 - 01:18:53,454] presented
+- [01:18:53,474 - 01:18:54,314] all those problems
+- [01:18:54,774 - 01:18:55,054] okay
+- [01:18:59,234 - 01:19:02,494] okay next place we want to go is observables
+- [01:19:04,334 - 01:19:06,324] we want to talk about observables
+- [01:19:06,324 - 01:19:08,314] and give some examples of observables
+- [01:19:10,394 - 01:19:11,934] observables are linear operators
+- [01:19:14,094 - 01:19:18,254] what are linear operators acting on a space of functions
+- [01:19:18,914 - 01:19:21,054] they're operations on the state on
+- [01:19:21,054 - 01:19:23,194] a function that gives another function
+- [01:19:24,314 - 01:19:27,234] if you have a linear operator let's call it m
+- [01:19:32,134 - 01:19:38,174] for some reason i've saved l to stand for observables
+- [01:19:39,794 - 01:19:42,434] and i've used previously m for a general
+- [01:19:42,434 - 01:19:45,074] linear operator so let's continue to do so
+- [01:19:45,594 - 01:19:47,054] whatever m is it's a machine
+- [01:19:48,294 - 01:19:51,714] and thought of as an abstract operator in a space
+- [01:19:53,194 - 01:19:56,414] it takes a state vector into another state vector
+- [01:19:56,414 - 01:19:58,034] psi prime let's say
+- [01:19:58,574 - 01:20:00,274] or a vector in the vector space
+- [01:20:00,814 - 01:20:02,784] but it also can be thought of
+- [01:20:02,784 - 01:20:04,754] as a thing which acts on wave functions
+- [01:20:04,754 - 01:20:07,394] every state has a wave function that describes it
+- [01:20:08,853 - 01:20:11,574] and the machine
+- [01:20:12,494 - 01:20:13,954] oh that's why that was why we
+- [01:20:13,954 - 01:20:15,414] called it m yes i remember now
+- [01:20:15,414 - 01:20:17,014] we called it m for machine
+- [01:20:17,614 - 01:20:19,514] the machine can also be
+- [01:20:19,514 - 01:20:21,414] thought of as acting on a
+- [01:20:22,114 - 01:20:24,954] wave function to give another wave function
+- [01:20:24,954 - 01:20:28,254] so let's think of it that way uh...
+- [01:20:28,254 - 01:20:30,034] let's think of it in concrete terms
+- [01:20:31,873 - 01:20:34,043] as an action that we do on
+- [01:20:34,043 - 01:20:36,214] a wave function to produce another wave function
+- [01:20:36,214 - 01:20:37,714] now it's linear
+- [01:20:38,994 - 01:20:41,774] linear means that when it acts on the sum of
+- [01:20:41,774 - 01:20:44,554] two functions it gives back the sum of the results
+- [01:20:44,554 - 01:20:48,044] it means that if it acts on a function which
+- [01:20:48,044 - 01:20:51,534] is a numerical product a numerical multiple of some function
+- [01:20:51,534 - 01:20:53,914] it gives back the same numerical uh...
+- [01:20:53,914 - 01:20:54,854] multiple
+- [01:20:55,854 - 01:20:58,574] all the ideas of what a linear operator are
+- [01:20:59,934 - 01:21:01,754] continue to be exactly the same
+- [01:21:03,693 - 01:21:05,973] let's talk about some linear op- oh oh
+- [01:21:05,973 - 01:21:08,254] okay that's that's the notion of a linear operator
+- [01:21:08,254 - 01:21:10,714] now what about a hermitian linear operator
+- [01:21:11,654 - 01:21:13,554] i'll tell you the definition of
+- [01:21:13,554 - 01:21:15,454] hermitian we've we've talked about it before
+- [01:21:15,454 - 01:21:16,504] but i'm going to give it
+- [01:21:16,504 - 01:21:17,554] to you in a condensed form
+- [01:21:18,234 - 01:21:19,534] the condensed form
+- [01:21:19,534 - 01:21:21,194] is also true
+- [01:21:21,534 - 01:21:24,094] for all of the vector spaces we've studied
+- [01:21:24,094 - 01:21:26,234] and you may recognize it
+- [01:21:26,234 - 01:21:27,554] uh...
+- [01:21:28,524 - 01:21:31,129] if not go back and prove
+- [01:21:31,129 - 01:21:33,734] that it follows from the previous definitions
+- [01:21:34,324 - 01:21:35,594] a hermitian operator
+- [01:21:36,484 - 01:21:38,279] hermitian for operators is roughly
+- [01:21:38,279 - 01:21:40,074] speaking the analog of real
+- [01:21:40,794 - 01:21:42,694] as opposed to complex
+- [01:21:44,174 - 01:21:46,794] okay here's what's true about hermitian operators
+- [01:21:46,794 - 01:21:48,184] if you have a hermitian operator
+- [01:21:48,184 - 01:21:49,574] which i will now call L
+- [01:21:50,554 - 01:21:51,254] right
+- [01:21:51,794 - 01:21:54,134] then it has the property that if you
+- [01:21:54,134 - 01:21:56,474] take if you act on a wave function psi
+- [01:21:56,474 - 01:21:58,314] or state vector psi
+- [01:21:58,314 - 01:22:00,954] and take its inner product with phi
+- [01:22:03,774 - 01:22:06,014] that that is equal to
+- [01:22:08,334 - 01:22:11,634] psi L phi but not quite
+- [01:22:11,634 - 01:22:12,853] what do i have to do with it
+- [01:22:14,034 - 01:22:15,353] complex conjugate it
+- [01:22:15,353 - 01:22:18,093] now if L were not let's go back a
+- [01:22:18,093 - 01:22:20,834] step supposing L was not hermitian would this be right
+- [01:22:20,834 - 01:22:22,314] not quite
+- [01:22:22,754 - 01:22:23,754] what would we have to do
+- [01:22:25,094 - 01:22:26,834] we'd have to put a dagger here
+- [01:22:27,754 - 01:22:29,844] in other words we'd have
+- [01:22:29,844 - 01:22:31,934] to roughly speaking complex conjugate L
+- [01:22:33,154 - 01:22:33,834] okay
+- [01:22:33,834 - 01:22:35,574] if L is hermitian
+- [01:22:36,474 - 01:22:37,914] then the rule for that
+- [01:22:38,954 - 01:22:41,874] is that it's matrix elements
+- [01:22:41,874 - 01:22:44,934] it's when sandwiched
+- [01:22:44,934 - 01:22:47,414] when sandwiched in opposite order
+- [01:22:48,334 - 01:22:50,814] you don't have to complex conjugate L
+- [01:22:50,834 - 01:22:51,934] because it's already
+- [01:22:52,574 - 01:22:54,014] the analog of real
+- [01:22:54,824 - 01:22:57,934] this is the condition that an operator is hermitian
+- [01:22:57,934 - 01:23:00,074] that's important because hermitian operators
+- [01:23:00,074 - 01:23:02,214] are the class of observables
+- [01:23:02,834 - 01:23:03,254] okay
+- [01:23:03,604 - 01:23:05,369] so let's work out one or
+- [01:23:05,369 - 01:23:07,134] two hermitian operators while we're at it
+- [01:23:08,613 - 01:23:11,034] i guess we may need this so
+- [01:23:12,534 - 01:23:13,834] let's work out a couple
+- [01:23:16,454 - 01:23:18,154] first of all one of the simplest things
+- [01:23:18,154 - 01:23:19,854] that i can do to a wave function
+- [01:23:22,634 - 01:23:24,054] i don't know what's there
+- [01:23:24,054 - 01:23:26,154] there are many simple things i can do to it
+- [01:23:27,034 - 01:23:29,014] but a very simple thing
+- [01:23:29,014 - 01:23:30,994] is to multiply it by x
+- [01:23:33,314 - 01:23:35,234] an even simpler thing would be
+- [01:23:35,234 - 01:23:37,154] to multiply it by a simple number
+- [01:23:38,554 - 01:23:40,214] but let's take slightly more
+- [01:23:40,214 - 01:23:41,874] complicated and multiply it by x
+- [01:23:41,874 - 01:23:44,394] multiplying by x gives back a function
+- [01:23:44,394 - 01:23:47,234] so this is at minimum an operation on a function
+- [01:23:47,234 - 01:23:47,874] is it linear
+- [01:23:47,874 - 01:23:49,194] sure it is
+- [01:23:49,194 - 01:23:51,334] if x multiplies psi of x
+- [01:23:51,334 - 01:23:53,474] let's say plus phi of x
+- [01:23:54,534 - 01:23:56,914] it gives x psi of
+- [01:23:56,914 - 01:23:59,294] x plus x phi of x
+- [01:24:00,173 - 01:24:02,293] in other words when it acts on a
+- [01:24:02,293 - 01:24:04,414] sum it gives the sum of the results
+- [01:24:05,294 - 01:24:09,274] if it acts on a numerical multiple of a psi
+- [01:24:09,274 - 01:24:11,374] it gives back the numerical multiple
+- [01:24:11,374 - 01:24:12,454] so it's a linear operator
+- [01:24:14,014 - 01:24:15,874] question is it hermitian
+- [01:24:17,113 - 01:24:19,114] is it a hermitian operator
+- [01:24:19,194 - 01:24:20,634] okay so let's check
+- [01:24:21,194 - 01:24:22,734] here's what we have to take
+- [01:24:22,734 - 01:24:23,614] we have to take
+- [01:24:24,194 - 01:24:24,934] psi
+- [01:24:26,714 - 01:24:28,314] in a product
+- [01:24:29,134 - 01:24:29,834] of
+- [01:24:32,774 - 01:24:34,594] x times phi
+- [01:24:35,634 - 01:24:36,734] that's this one
+- [01:24:36,734 - 01:24:38,324] oh sorry i think i wanted
+- [01:24:38,324 - 01:24:39,914] to do it the other way
+- [01:24:39,914 - 01:24:42,374] phi x psi the top
+- [01:24:43,024 - 01:24:44,874] phi x psi
+- [01:24:48,034 - 01:24:48,384] and
+- [01:24:48,384 - 01:24:51,084] and ask whether this is true or not
+- [01:24:51,084 - 01:24:52,664] we'll check in a minute
+- [01:24:52,664 - 01:24:54,344] and x is a real number right?
+- [01:24:54,644 - 01:24:55,724] no x is not a
+- [01:24:55,724 - 01:24:56,804] number x is a function x
+- [01:24:57,624 - 01:25:00,484] we've multiplied one function by another function
+- [01:25:00,484 - 01:25:02,904] that takes functions to functions
+- [01:25:02,904 - 01:25:04,644] x is not a number
+- [01:25:05,164 - 01:25:06,104] it's a variable
+- [01:25:08,184 - 01:25:10,324] any given value of it is a number
+- [01:25:10,944 - 01:25:11,464] but
+- [01:25:12,364 - 01:25:15,044] it's a machine that takes the function psi of x
+- [01:25:15,044 - 01:25:18,244] and replaces it by x psi of x
+- [01:25:18,384 - 01:25:19,744] alright so let's calculate
+- [01:25:20,364 - 01:25:21,624] the wave function
+- [01:25:22,724 - 01:25:23,344] of
+- [01:25:24,384 - 01:25:25,944] the ket vector
+- [01:25:25,944 - 01:25:28,104] is x psi of x
+- [01:25:29,624 - 01:25:31,924] the wave function of the bra vector
+- [01:25:31,924 - 01:25:33,744] is phi star of x
+- [01:25:36,864 - 01:25:38,584] the inner product is
+- [01:25:40,304 - 01:25:42,064] let's put some brackets around it
+- [01:25:42,064 - 01:25:42,744] bracket
+- [01:25:43,384 - 01:25:45,924] this is a ket vector inside the red bracket
+- [01:25:45,924 - 01:25:47,264] and this is a bra vector
+- [01:25:47,264 - 01:25:49,824] and the rule for taking the inner product
+- [01:25:49,824 - 01:25:52,504] whoops i think i interchanged star and not star
+- [01:25:52,504 - 01:25:54,084] but the rule for taking the inner product
+- [01:25:54,084 - 01:25:55,624] is to integrate
+- [01:25:56,964 - 01:25:59,004] so let's get rid of the bracket here
+- [01:25:59,004 - 01:26:00,784] and just integrate dx
+- [01:26:04,284 - 01:26:05,464] oops sorry dx
+- [01:26:08,424 - 01:26:10,344] alright that's in this order
+- [01:26:10,344 - 01:26:11,924] what about this order
+- [01:26:13,024 - 01:26:16,104] this order over here the inner product without the star
+- [01:26:16,104 - 01:26:17,244] without the star there's a star here
+- [01:26:17,264 - 01:26:18,384] the thing we're going to compare it with
+- [01:26:18,384 - 01:26:19,824] is the same thing
+- [01:26:21,444 - 01:26:23,524] except with psi star
+- [01:26:25,264 - 01:26:27,124] x phi of x
+- [01:26:29,064 - 01:26:30,404] well look at it
+- [01:26:30,404 - 01:26:33,004] is this integral the complex conjugate of this
+- [01:26:34,024 - 01:26:35,144] yes it is
+- [01:26:35,144 - 01:26:37,344] the complex conjugate of phi star
+- [01:26:37,344 - 01:26:38,323] is phi
+- [01:26:38,323 - 01:26:41,364] the complex conjugate of psi is psi star
+- [01:26:41,364 - 01:26:42,424] and what about x
+- [01:26:44,064 - 01:26:46,204] x is its own complex conjugate
+- [01:26:46,204 - 01:26:47,244] so what about this
+- [01:26:47,264 - 01:26:48,104] so yes indeed
+- [01:26:49,214 - 01:26:51,879] x is an operator which satisfies
+- [01:26:51,879 - 01:26:54,544] the basic rule of Hermitian operator
+- [01:26:55,264 - 01:26:58,064] that if you interchange the psi and the phi
+- [01:26:58,064 - 01:26:59,924] it complex conjugates
+- [01:27:00,804 - 01:27:02,584] alright if yeah
+- [01:27:04,644 - 01:27:08,124] what observable does x correspond to
+- [01:27:09,604 - 01:27:10,384] position
+- [01:27:10,954 - 01:27:12,164] it is the position
+- [01:27:13,484 - 01:27:15,844] is the delta function a
+- [01:27:19,824 - 01:27:20,724] eigenvector of position
+- [01:27:20,724 - 01:27:22,324] well maybe we'll come to that next time
+- [01:27:22,324 - 01:27:23,404] I think I won't yes it is
+- [01:27:23,404 - 01:27:25,424] but we'll come back to that
+- [01:27:26,003 - 01:27:27,284] x is an observable
+- [01:27:27,284 - 01:27:28,684] what does it correspond to
+- [01:27:28,684 - 01:27:30,684] it corresponds to position of a particle
+- [01:27:31,264 - 01:27:35,824] we will prove that by showing that the eigenvectors x
+- [01:27:36,424 - 01:27:39,144] that the vectors x are eigenvectors of that operator
+- [01:27:39,144 - 01:27:41,584] but not right now we'll do that the next time
+- [01:27:42,304 - 01:27:43,544] it's easy it's trivial
+- [01:27:44,563 - 01:27:45,444] stupid question
+- [01:27:45,444 - 01:27:46,344] so
+- [01:27:46,344 - 01:27:47,984] am I correct in assuming that
+- [01:27:47,984 - 01:27:49,624] when you write x up there
+- [01:27:49,624 - 01:27:52,044] it's implied that that is really f of x
+- [01:27:52,044 - 01:27:54,644] the x is a function of x
+- [01:27:54,644 - 01:27:55,404] so it is
+- [01:27:55,404 - 01:27:59,564] x is an n f of x
+- [01:27:59,564 - 01:28:01,394] yes it's implied that that
+- [01:28:01,394 - 01:28:03,224] x is a function of x
+- [01:28:03,224 - 01:28:04,624] it has a whole bunch of different values
+- [01:28:04,624 - 01:28:06,104] it has a whole bunch that's right
+- [01:28:06,104 - 01:28:07,984] it itself is a function
+- [01:28:07,984 - 01:28:09,864] which is multiplying another function
+- [01:28:11,204 - 01:28:11,764] alright
+- [01:28:11,764 - 01:28:13,454] so it's an operation on
+- [01:28:13,454 - 01:28:15,144] a function which gives another function
+- [01:28:15,684 - 01:28:16,204] yeah
+- [01:28:18,984 - 01:28:20,084] that's exactly right
+- [01:28:21,604 - 01:28:24,124] let's take another operation or operator
+- [01:28:24,924 - 01:28:25,444] differentiation
+- [01:28:26,584 - 01:28:28,784] if I differentiate a function I get a function
+- [01:28:29,424 - 01:28:31,524] that's the first test of whether it's an operator
+- [01:28:32,344 - 01:28:33,994] if I differentiate the sum of two
+- [01:28:33,994 - 01:28:35,644] functions I get the sum of derivatives
+- [01:28:36,344 - 01:28:39,904] if I differentiate a numerical multiple of a function
+- [01:28:39,904 - 01:28:42,004] I get the numerical multiple of the derivative
+- [01:28:42,004 - 01:28:43,064] it's a linear function
+- [01:28:43,064 - 01:28:46,824] is it a Hermitian operator
+- [01:28:46,824 - 01:28:48,504] so here we have to
+- [01:28:48,894 - 01:28:51,524] here we have to get ourselves a fresh blackboard
+- [01:28:52,983 - 01:28:56,364] and check once and for all whether it's
+- [01:28:56,364 - 01:28:58,344] well check whether it's Hermitian
+- [01:29:00,564 - 01:29:01,264] okay
+- [01:29:03,564 - 01:29:04,884] what happened what is
+- [01:29:05,804 - 01:29:07,964] let's call a derivative operation
+- [01:29:08,884 - 01:29:10,804] let's call it capital D
+- [01:29:11,784 - 01:29:12,484] D
+- [01:29:13,064 - 01:29:14,084] on psi
+- [01:29:14,984 - 01:29:17,144] gives us some psi prime
+- [01:29:19,664 - 01:29:21,584] what about wave functions
+- [01:29:22,644 - 01:29:25,404] D when it acts on psi of x
+- [01:29:25,404 - 01:29:26,804] by definition now
+- [01:29:26,804 - 01:29:29,544] this is the definition of how D acts
+- [01:29:29,864 - 01:29:32,824] it simply gives D psi by D x
+- [01:29:34,804 - 01:29:36,784] I may sometimes lapse into calling
+- [01:29:36,784 - 01:29:38,764] this partial derivative with respect to x
+- [01:29:38,764 - 01:29:39,244] that's fine
+- [01:29:39,244 - 01:29:40,264] doesn't matter
+- [01:29:40,264 - 01:29:41,104] there's only one x
+- [01:29:42,164 - 01:29:44,144] so it just differentiates
+- [01:29:44,144 - 01:29:45,984] it creates a new function
+- [01:29:48,504 - 01:29:49,864] it's a linear operator
+- [01:29:49,864 - 01:29:51,544] is it Hermitian
+- [01:29:52,104 - 01:29:54,564] okay so let's write down the two sides
+- [01:29:55,083 - 01:29:56,663] of the Hermitian condition here
+- [01:29:56,663 - 01:29:58,244] and see if they're the same
+- [01:29:58,244 - 01:29:59,884] that's all there is to it
+- [01:30:00,804 - 01:30:03,564] the left side is integral
+- [01:30:04,944 - 01:30:06,484] phi star of x
+- [01:30:08,624 - 01:30:10,464] times the operation
+- [01:30:11,824 - 01:30:13,124] D on psi
+- [01:30:13,124 - 01:30:15,984] which is just D psi by D x
+- [01:30:18,924 - 01:30:20,584] what's the other way of doing it
+- [01:30:20,584 - 01:30:21,724] or the right hand side
+- [01:30:21,724 - 01:30:22,984] the other way of doing it is
+- [01:30:22,984 - 01:30:23,544] integral
+- [01:30:24,744 - 01:30:25,644] psi star
+- [01:30:25,644 - 01:30:27,004] not doing the same thing
+- [01:30:27,004 - 01:30:27,764] doing something different
+- [01:30:27,764 - 01:30:29,604] psi star of x
+- [01:30:30,364 - 01:30:31,964] D phi by D x
+- [01:30:33,084 - 01:30:34,944] and the question is
+- [01:30:34,944 - 01:30:37,524] whether this is the complex conjugate of this
+- [01:30:38,084 - 01:30:40,644] so let's write equals with a question mark
+- [01:30:40,644 - 01:30:42,124] we don't know
+- [01:30:42,644 - 01:30:44,084] complex conjugate
+- [01:30:49,524 - 01:30:53,264] so let's do this integral over here
+- [01:30:57,664 - 01:31:00,484] first of all the thing in the bracket here
+- [01:31:00,484 - 01:31:02,144] is just equal
+- [01:31:02,144 - 01:31:03,604] to integral
+- [01:31:04,644 - 01:31:05,664] psi of x
+- [01:31:07,484 - 01:31:09,064] D phi star
+- [01:31:09,723 - 01:31:10,884] by D x
+- [01:31:11,944 - 01:31:13,484] just complex conjugate
+- [01:31:13,484 - 01:31:15,644] the complex conjugate of a product
+- [01:31:15,644 - 01:31:18,184] is just a product of complex conjugates
+- [01:31:18,784 - 01:31:19,964] so the thing in the bracket
+- [01:31:19,964 - 01:31:22,884] is psi of x D phi star by D x
+- [01:31:22,884 - 01:31:25,444] and we're asking whether this is equal to this
+- [01:31:26,684 - 01:31:28,184] they look similar
+- [01:31:28,184 - 01:31:29,284] this has a psi
+- [01:31:29,284 - 01:31:30,484] this has a psi
+- [01:31:31,004 - 01:31:32,024] this has a phi star
+- [01:31:32,024 - 01:31:33,104] this has a phi star
+- [01:31:33,804 - 01:31:37,064] but unfortunately this one has psi differentiated
+- [01:31:37,884 - 01:31:39,044] and this one has a phi star
+- [01:31:39,064 - 01:31:39,304] and this one has a psi
+- [01:31:40,064 - 01:31:41,104] you know what I mean
+- [01:31:41,104 - 01:31:41,924] psi and phi
+- [01:31:42,824 - 01:31:44,784] how do you go from this to this
+- [01:31:46,144 - 01:31:48,124] integration by parts
+- [01:31:49,664 - 01:31:52,084] and integrate like this assuming
+- [01:31:52,084 - 01:31:53,574] what are we assuming when we
+- [01:31:53,574 - 01:31:55,064] say we can integrate by parts
+- [01:31:57,744 - 01:32:01,444] we're assuming that far away the integral
+- [01:32:01,444 - 01:32:03,144] the functions go to zero
+- [01:32:04,284 - 01:32:08,544] that the end point contributions from integration by parts
+- [01:32:08,544 - 01:32:09,644] don't give us anything
+- [01:32:10,664 - 01:32:12,214] well of course the functions
+- [01:32:12,214 - 01:32:13,764] must go to zero far away
+- [01:32:13,764 - 01:32:16,904] because the integral of the total thing must be one
+- [01:32:17,704 - 01:32:19,964] so we can integrate by parts
+- [01:32:19,964 - 01:32:21,624] everybody know what integrating by parts is
+- [01:32:21,624 - 01:32:22,724] if not find out fast
+- [01:32:23,364 - 01:32:24,444] it's simply a rule
+- [01:32:24,444 - 01:32:25,824] I'll tell you what the rule is
+- [01:32:26,504 - 01:32:29,084] you can shift the derivative from one
+- [01:32:29,084 - 01:32:29,944] if you have a product
+- [01:32:31,184 - 01:32:31,924] D x
+- [01:32:31,924 - 01:32:32,924] this is D x here
+- [01:32:33,624 - 01:32:34,824] if you have a product
+- [01:32:34,824 - 01:32:36,474] psi of x times the
+- [01:32:36,474 - 01:32:38,124] derivative of phi star of x
+- [01:32:38,124 - 01:32:40,304] then you can simply shift
+- [01:32:40,924 - 01:32:43,324] the derivative from one function to the other
+- [01:32:43,324 - 01:32:44,244] but it's at a cost
+- [01:32:44,244 - 01:32:44,924] the cost
+- [01:32:44,924 - 01:32:47,164] a minus sign right
+- [01:32:47,164 - 01:32:48,344] good
+- [01:32:49,124 - 01:32:50,384] so this is equal
+- [01:32:50,384 - 01:32:53,324] to minus
+- [01:32:54,144 - 01:32:55,344] the integral
+- [01:32:56,104 - 01:32:57,724] phi star of x
+- [01:32:58,784 - 01:33:00,584] D psi by D x
+- [01:33:02,124 - 01:33:02,764] whoops
+- [01:33:03,504 - 01:33:04,584] we're in bad shape
+- [01:33:05,864 - 01:33:08,104] this is integral phi star D psi
+- [01:33:08,124 - 01:33:08,224] D x
+- [01:33:08,224 - 01:33:10,284] this is minus the integral of
+- [01:33:10,284 - 01:33:12,344] phi star D psi D x
+- [01:33:12,344 - 01:33:13,244] they are not equal
+- [01:33:13,244 - 01:33:15,044] in fact worse than that
+- [01:33:15,044 - 01:33:18,024] they're absolutely the opposite of each other
+- [01:33:18,024 - 01:33:20,684] the opposite in the sense
+- [01:33:20,684 - 01:33:23,344] of the negative of each other
+- [01:33:23,344 - 01:33:24,604] can we fix it
+- [01:33:25,124 - 01:33:26,924] well no we can't fix this
+- [01:33:26,924 - 01:33:30,464] but we can redefine an operator which is her mission
+- [01:33:31,324 - 01:33:33,884] the redefined operator which is her mission
+- [01:33:33,884 - 01:33:35,424] is not derivative
+- [01:33:36,044 - 01:33:37,964] it is minus r
+- [01:33:38,124 - 01:33:39,684] the minus sign doesn't matter
+- [01:33:39,684 - 01:33:41,264] you can put i or minus i
+- [01:33:41,983 - 01:33:43,304] D by D x
+- [01:33:47,743 - 01:33:49,424] so let's go through it again
+- [01:33:49,424 - 01:33:52,244] and check whether now it's her mission
+- [01:33:52,244 - 01:33:54,084] this is the new thing that we're going to call
+- [01:33:54,084 - 01:33:55,844] and we're going to give it a different name
+- [01:33:55,844 - 01:33:56,934] I'm not going to call
+- [01:33:56,934 - 01:33:58,024] it D because it's not derivative
+- [01:33:58,723 - 01:34:00,344] it's minus i times the derivative
+- [01:34:00,344 - 01:34:01,294] anybody have a good suggestion
+- [01:34:01,294 - 01:34:02,244] for what I might call this
+- [01:34:02,244 - 01:34:03,584] P brilliant
+- [01:34:08,904 - 01:34:09,304] P
+- [01:34:10,864 - 01:34:11,664] P for
+- [01:34:13,004 - 01:34:13,404] momentum
+- [01:34:14,944 - 01:34:15,344] momentum
+- [01:34:16,724 - 01:34:17,124] alright
+- [01:34:17,984 - 01:34:19,714] and if I really wanted it
+- [01:34:19,714 - 01:34:21,444] to be momentum with units of momentum
+- [01:34:21,444 - 01:34:22,784] what else would I put there
+- [01:34:24,504 - 01:34:24,904] where
+- [01:34:26,444 - 01:34:27,244] right or left
+- [01:34:28,924 - 01:34:29,324] right
+- [01:34:29,324 - 01:34:30,524] well you can put it on the
+- [01:34:30,524 - 01:34:31,724] left but then you better put it downstairs
+- [01:34:33,004 - 01:34:34,744] alright but we're not going to worry about h bar
+- [01:34:36,084 - 01:34:38,104] we're going to use our usual convention of equations
+- [01:34:38,124 - 01:34:39,424] ignoring h bar for the moment
+- [01:34:40,664 - 01:34:43,124] P is minus i D by D x
+- [01:34:43,124 - 01:34:44,604] let's see what happens
+- [01:34:45,704 - 01:34:47,664] over here we have to replace
+- [01:34:47,664 - 01:34:49,624] this by an i over here
+- [01:34:53,024 - 01:34:54,384] minus i thank you
+- [01:34:55,024 - 01:34:55,584] minus i
+- [01:34:58,904 - 01:34:59,864] what about this one
+- [01:35:02,304 - 01:35:04,343] we've complex conjugated everything
+- [01:35:05,784 - 01:35:07,184] we better change the sign
+- [01:35:07,184 - 01:35:10,343] because the complex conjugate of minus i is plus i
+- [01:35:11,364 - 01:35:12,224] and so
+- [01:35:13,844 - 01:35:15,264] let's do it this way
+- [01:35:15,264 - 01:35:16,083] minus i
+- [01:35:18,484 - 01:35:21,184] and we should get plus i here
+- [01:35:22,124 - 01:35:23,324] if it's Hermitian
+- [01:35:24,324 - 01:35:24,924] why
+- [01:35:24,924 - 01:35:27,664] because in the process of taking the complex conjugate
+- [01:35:28,184 - 01:35:30,944] every i gets converted to a minus i
+- [01:35:30,944 - 01:35:34,104] and every minus i gets converted to a plus i
+- [01:35:35,044 - 01:35:36,284] is it true now
+- [01:35:38,743 - 01:35:39,384] yeah
+- [01:35:40,163 - 01:35:40,804] why
+- [01:35:40,804 - 01:35:43,524] because this is equal to minus this
+- [01:35:43,524 - 01:35:45,284] that's what we proved over here
+- [01:35:46,463 - 01:35:47,104] okay
+- [01:35:47,104 - 01:35:49,564] so if we stick an i here
+- [01:35:49,564 - 01:35:52,024] because i changes sign in the complex conjugate
+- [01:35:52,784 - 01:35:54,924] this little operation here
+- [01:35:55,703 - 01:35:56,664] tells us
+- [01:35:57,184 - 01:35:59,034] that minus i D by
+- [01:35:59,034 - 01:36:00,884] D x is a Hermitian operator
+- [01:36:02,223 - 01:36:03,964] it's a little odd isn't it
+- [01:36:03,964 - 01:36:06,444] that minus i D by D x
+- [01:36:06,444 - 01:36:08,384] should somehow be a real thing
+- [01:36:08,384 - 01:36:10,104] should represent a real thing
+- [01:36:10,784 - 01:36:12,784] and that D by D x should not
+- [01:36:13,584 - 01:36:14,104] but
+- [01:36:15,804 - 01:36:17,724] let's check something out
+- [01:36:17,724 - 01:36:19,264] let's check something out right now
+- [01:36:22,764 - 01:36:23,564] let's just
+- [01:36:23,564 - 01:36:25,184] we're going to finish up in a moment
+- [01:36:28,084 - 01:36:31,144] we haven't talked about expectation values yet tonight
+- [01:36:31,144 - 01:36:32,194] but I think you can
+- [01:36:32,194 - 01:36:33,244] guess how to think about them
+- [01:36:33,944 - 01:36:35,884] expectation values in the state psi
+- [01:36:36,444 - 01:36:38,384] of an observable L
+- [01:36:38,384 - 01:36:41,824] are just the sandwich composed of
+- [01:36:41,824 - 01:36:44,044] psi on both sides and L in the middle
+- [01:36:44,044 - 01:36:47,844] so let's take the expectation value of momentum
+- [01:36:48,584 - 01:36:49,684] it's integral
+- [01:36:49,684 - 01:36:51,304] psi star of x
+- [01:36:52,504 - 01:36:53,764] psi of x
+- [01:36:54,604 - 01:36:57,024] and then according to the rule here
+- [01:36:57,024 - 01:37:00,284] p is minus i D by D x
+- [01:37:00,284 - 01:37:06,424] P is minus i D by D x
+- [01:37:06,424 - 01:37:08,024] is this real or imaginary?
+- [01:37:10,384 - 01:37:11,124] you're wrong
+- [01:37:11,704 - 01:37:12,464] it's real
+- [01:37:13,064 - 01:37:14,524] so let's prove that it's real
+- [01:37:14,524 - 01:37:15,504] I hope it's real
+- [01:37:15,504 - 01:37:16,284] god I hope it's real
+- [01:37:17,224 - 01:37:17,784] okay
+- [01:37:18,624 - 01:37:19,184] alright
+- [01:37:19,864 - 01:37:22,544] so let's integrate by parts
+- [01:37:24,044 - 01:37:24,604] alright
+- [01:37:24,604 - 01:37:25,424] this is equal
+- [01:37:25,424 - 01:37:27,124] first of all let's take out the minus i
+- [01:37:27,124 - 01:37:30,914] minus i integral psi star of
+- [01:37:30,914 - 01:37:34,704] x D psi by D x
+- [01:37:35,664 - 01:37:36,404] now let's look at this again
+- [01:37:36,424 - 01:37:37,624] so let's integrate that by parts
+- [01:37:38,504 - 01:37:40,004] this is equal to
+- [01:37:41,784 - 01:37:42,804] minus i
+- [01:37:43,784 - 01:37:46,204] and then we can switch the derivative
+- [01:37:47,604 - 01:37:50,884] we can switch the derivative to the starred variable
+- [01:37:52,524 - 01:37:53,164] integral
+- [01:37:54,024 - 01:37:55,404] D psi star
+- [01:37:56,423 - 01:37:57,524] by D x
+- [01:37:58,183 - 01:37:59,664] times psi of x
+- [01:38:01,663 - 01:38:02,624] but then
+- [01:38:02,624 - 01:38:04,924] in doing the integration by parts
+- [01:38:04,924 - 01:38:07,544] we have to change the sign
+- [01:38:08,764 - 01:38:11,464] so here we have a little theorem
+- [01:38:11,464 - 01:38:14,724] the integral of this thing here with a minus i
+- [01:38:14,724 - 01:38:16,814] is the integral of this
+- [01:38:16,814 - 01:38:18,904] thing here with a plus i
+- [01:38:27,544 - 01:38:30,524] what's the complex conjugate of this whole thing?
+- [01:38:31,004 - 01:38:32,904] the complex conjugate it
+- [01:38:33,964 - 01:38:34,904] you replace it with this
+- [01:38:34,904 - 01:38:36,884] you replace psi star by psi
+- [01:38:36,884 - 01:38:38,284] well psi is over here
+- [01:38:39,024 - 01:38:42,014] you replace D psi by D x
+- [01:38:42,014 - 01:38:45,004] by D psi star by D x
+- [01:38:45,004 - 01:38:48,464] and you replace minus i by plus i
+- [01:38:49,204 - 01:38:52,384] this over here is the complex conjugate of this
+- [01:38:53,204 - 01:38:56,204] can everybody see that or shall I explain it further?
+- [01:38:56,344 - 01:38:57,844] let's put a minus i out here
+- [01:38:57,844 - 01:38:59,554] and write that this is equal
+- [01:38:59,554 - 01:39:01,264] to D psi by D x
+- [01:39:01,264 - 01:39:02,764] this just gives us D psi by D x
+- [01:39:07,004 - 01:39:09,284] minus i D psi by D x
+- [01:39:13,964 - 01:39:15,764] this is clearly the complex
+- [01:39:15,764 - 01:39:16,484] the integral
+- [01:39:18,404 - 01:39:20,524] are complex conjugates of each other
+- [01:39:21,444 - 01:39:23,184] D psi by D x
+- [01:39:23,184 - 01:39:24,924] is the complex conjugate of this
+- [01:39:24,924 - 01:39:26,564] that one is the complex conjugate of this
+- [01:39:27,114 - 01:39:28,689] and i and minus i
+- [01:39:28,689 - 01:39:30,264] are complex conjugates of each other
+- [01:39:31,904 - 01:39:34,904] so given that this is the complex conjugate of this
+- [01:39:34,904 - 01:39:36,344] and they're equal to each other
+- [01:39:36,344 - 01:39:38,134] what do you say about a thing
+- [01:39:38,134 - 01:39:39,924] which is equal to its own complex conjugate?
+- [01:39:40,504 - 01:39:41,184] it's real
+- [01:39:42,504 - 01:39:44,604] so we prove a rather startling fact
+- [01:39:47,484 - 01:39:51,964] that the integral of psi star of x
+- [01:39:54,584 - 01:40:00,164] minus i D psi by D x is real
+- [01:40:02,504 - 01:40:03,024] no,
+- [01:40:03,024 - 01:40:04,244] yes i did yeah,
+- [01:40:04,244 - 01:40:04,564] right
+- [01:40:04,564 - 01:40:08,064] and again it's because when you integrate by parts
+- [01:40:08,064 - 01:40:09,404] you pick up an extra minus sign
+- [01:40:10,964 - 01:40:15,124] so instead of this thing being minus its complex conjugate
+- [01:40:15,124 - 01:40:16,624] it's plus its complex conjugate
+- [01:40:18,164 - 01:40:18,684] okay,
+- [01:40:18,684 - 01:40:19,424] so what did we learn?
+- [01:40:19,584 - 01:40:22,344] we learned that this is a Hermitian operator
+- [01:40:23,464 - 01:40:25,644] it's a Hermitian operator and therefore
+- [01:40:25,644 - 01:40:27,864] an observable in quantum mechanics
+- [01:40:29,724 - 01:40:31,244] the next time we'll explore something like that
+- [01:40:31,244 - 01:40:31,884] a little more.
+- [01:40:31,884 - 01:40:34,404] We'll discuss what this has to do with Fourier transforms.
+- [01:40:34,404 - 01:40:35,924] We'll
+- [01:40:35,924 - 01:40:37,874] discuss questions about what the
+- [01:40:37,874 - 01:40:39,824] probability for finding the particle at
+- [01:40:39,824 - 01:40:40,924] different locations are,
+- [01:40:40,924 - 01:40:43,904] but then we'll also talk about what the probability for
+- [01:40:43,904 - 01:40:45,684] having different momentum are.
+- [01:40:45,684 - 01:40:49,164] And then we'll move to the Schrodinger equation.
+- [01:40:49,404 - 01:40:54,084] We'll move to the evolution of the wave function.
+- [01:40:54,084 - 01:40:55,744] This after all now is
+- [01:40:55,744 - 01:40:56,024] really,
+- [01:40:56,024 - 01:40:58,904] in the classic sense of the word,
+- [01:40:58,904 - 01:40:59,504] a wave function,
+- [01:40:59,504 - 01:41:03,864] and we'll think about
+- [01:41:03,864 - 01:41:04,924] how it evolves with time.
+- [01:41:04,924 - 01:41:07,304] Oh,
+- [01:41:07,304 - 01:41:10,284] one other thing we could do it tonight.
+- [01:41:10,284 - 01:41:10,544] I
+- [01:41:10,544 - 01:41:15,324] think we're probably at the point of diminishing returns.
+- [01:41:15,324 - 01:41:16,404] Are you exhausted?
+- [01:41:18,064 - 01:41:19,524] We could do one more thing.
+- [01:41:19,524 - 01:41:20,924] Let me do one more thing for you.
+- [01:41:20,924 - 01:41:24,784] Let's calculate an
+- [01:41:24,784 - 01:41:25,644] interesting quantity.
+- [01:41:25,744 - 01:41:27,164] And why it's an interesting quantity
+- [01:41:27,164 - 01:41:28,584] we'll come to in a moment.
+- [01:41:28,584 - 01:41:30,324] So let's take a
+- [01:41:30,324 - 01:41:31,864] quantity which seems very dull,
+- [01:41:31,864 - 01:41:33,964] but which is interesting,
+- [01:41:33,964 - 01:41:35,184] and calculate it.
+- [01:41:35,184 - 01:41:37,044] It's the
+- [01:41:37,044 - 01:41:40,084] commutator of x with p.
+- [01:41:48,424 - 01:41:49,904] Take any wave function,
+- [01:41:49,904 - 01:41:51,344] whatever it is,
+- [01:41:51,344 - 01:41:52,124] psi of x,
+- [01:41:52,124 - 01:41:52,464] anyone,
+- [01:41:52,464 - 01:41:55,724] and we're going to do
+- [01:41:55,724 - 01:41:56,524] two things with it.
+- [01:41:56,524 - 01:41:59,704] We're first going to multiply it by x,
+- [01:41:59,704 - 01:42:01,064] and then we're going to
+- [01:42:01,064 - 01:42:02,804] multiply it by minus i d by,
+- [01:42:02,804 - 01:42:06,044] or operate with minus i d by dx.
+- [01:42:06,044 - 01:42:07,624] Alright?
+- [01:42:07,624 - 01:42:08,624] This can be
+- [01:42:08,624 - 01:42:12,784] called px operating on psi.
+- [01:42:12,784 - 01:42:14,864] This is p,
+- [01:42:14,864 - 01:42:18,664] this is x in the order first x,
+- [01:42:18,664 - 01:42:19,404] then p.
+- [01:42:21,504 - 01:42:23,464] Then we're going to calculate it the other way.
+- [01:42:23,464 - 01:42:25,244] xp,
+- [01:42:25,244 - 01:42:25,704] and then we're going to calculate it by psi.
+- [01:42:25,704 - 01:42:26,704] on psi.
+- [01:42:26,704 - 01:42:27,384] What is that?
+- [01:42:27,384 - 01:42:27,844] Let's,
+- [01:42:27,844 - 01:42:29,724] on the other half of the blackboard over here,
+- [01:42:29,724 - 01:42:31,504] we're going to write x
+- [01:42:33,163 - 01:42:35,444] times minus i d by dx,
+- [01:42:35,444 - 01:42:37,604] psi of x,
+- [01:42:37,604 - 01:42:39,264] and see what we get.
+- [01:42:39,264 - 01:42:41,144] In fact,
+- [01:42:41,144 - 01:42:42,264] what we're going to do is we're
+- [01:42:42,264 - 01:42:43,604] going to compute the commutator,
+- [01:42:43,604 - 01:42:45,224] which means we're going to calculate
+- [01:42:45,224 - 01:42:46,844] this one with a plus sign,
+- [01:42:46,904 - 01:42:49,134] we're going to calculate this one with a
+- [01:42:49,134 - 01:42:51,364] plus sign and this one with a minus sign.
+- [01:42:52,064 - 01:42:53,544] So this one with a minus sign,
+- [01:42:53,544 - 01:42:55,244] but before we subtract them,
+- [01:42:55,244 - 01:42:57,104] let's just calculate them.
+- [01:42:57,684 - 01:42:58,384] All right,
+- [01:42:58,384 - 01:43:01,024] this is just minus i,
+- [01:43:01,024 - 01:43:04,124] and now the derivative of a product.
+- [01:43:04,124 - 01:43:06,664] The derivative of a
+- [01:43:06,664 - 01:43:06,904] product.
+- [01:43:06,904 - 01:43:11,324] This derivative here now has to act on the
+- [01:43:11,324 - 01:43:15,744] whole result of x acting on psi of x.
+- [01:43:15,844 - 01:43:16,924] x acting on psi of
+- [01:43:16,924 - 01:43:18,004] x gives a new wave function,
+- [01:43:18,004 - 01:43:20,144] and then p acts on it.
+- [01:43:20,864 - 01:43:21,344] So,
+- [01:43:21,344 - 01:43:24,084] what do you get when you hit the product?
+- [01:43:24,984 - 01:43:26,204] You get two terms.
+- [01:43:26,204 - 01:43:29,264] The first term is the derivative of x times psi,
+- [01:43:29,264 - 01:43:31,024] derivative of x is just 1,
+- [01:43:31,264 - 01:43:33,304] so the first term is just psi of x,
+- [01:43:33,304 - 01:43:36,454] and the second term is
+- [01:43:36,454 - 01:43:39,604] plus x d psi by dx.
+- [01:43:40,284 - 01:43:41,544] Everybody agree with that?
+- [01:43:47,984 - 01:43:48,504] Okay.
+- [01:43:48,504 - 01:43:50,644] The derivative hit x and left psi,
+- [01:43:50,884 - 01:43:51,224] and
+- [01:43:51,224 - 01:43:53,144] and then the derivative hits i and left x.
+- [01:43:53,904 - 01:43:55,124] That's this side over here.
+- [01:43:55,244 - 01:43:56,484] Now what about this side over here?
+- [01:43:57,544 - 01:43:57,984] Here,
+- [01:43:57,984 - 01:44:00,624] the d by dx doesn't act on x,
+- [01:44:00,624 - 01:44:01,604] it just acts this way.
+- [01:44:01,744 - 01:44:05,794] It just acts on psi of x and gives
+- [01:44:05,794 - 01:44:09,844] us minus i d by dx psi of x.
+- [01:44:15,684 - 01:44:21,744] x minus i x d psi by dx.
+- [01:44:25,364 - 01:44:26,844] Now let's subtract them.
+- [01:44:27,384 - 01:44:29,274] Let's take this one with
+- [01:44:29,274 - 01:44:31,164] minus and this one with plus.
+- [01:44:31,564 - 01:44:35,364] This corresponds to taking the commutator of
+- [01:44:35,364 - 01:44:39,164] x with p acting on psi of x.
+- [01:44:39,964 - 01:44:41,894] Commutator of x with p is another
+- [01:44:41,894 - 01:44:43,824] operator and it acts on psi of x.
+- [01:44:43,944 - 01:44:45,244] What do we get when we subtract?
+- [01:44:46,924 - 01:44:47,504] Let's see,
+- [01:44:47,504 - 01:44:48,884] this one now has to come
+- [01:44:48,884 - 01:44:50,264] with a plus sign since we're subtracting.
+- [01:44:51,724 - 01:44:53,084] Since we're subtracting,
+- [01:44:53,084 - 01:44:54,584] we have to change sign here.
+- [01:44:55,624 - 01:44:58,084] And this term cancels.
+- [01:44:58,564 - 01:44:59,004] Yeah.
+- [01:45:01,404 - 01:45:02,844] This term cancels,
+- [01:45:02,844 - 01:45:04,424] goes away,
+- [01:45:04,424 - 01:45:06,844] and all we're left with is psi of x.
+- [01:45:07,884 - 01:45:09,024] That's all we're left with.
+- [01:45:09,064 - 01:45:09,824] This term cancels.
+- [01:45:09,844 - 01:45:11,884] And we're just left with,
+- [01:45:11,884 - 01:45:12,184] what is it,
+- [01:45:12,184 - 01:45:13,024] i psi of x?
+- [01:45:13,484 - 01:45:15,564] i psi of x.
+- [01:45:16,604 - 01:45:17,284] All right,
+- [01:45:17,284 - 01:45:18,084] so here's what we found.
+- [01:45:18,504 - 01:45:20,424] For any psi of x whatever,
+- [01:45:20,424 - 01:45:22,224] for any psi of x,
+- [01:45:22,224 - 01:45:25,664] the commutator of x with p
+- [01:45:25,664 - 01:45:29,104] acting on psi of x just gives,
+- [01:45:29,104 - 01:45:30,484] is it plus i?
+- [01:45:30,624 - 01:45:33,104] I think it's plus i psi of x.
+- [01:45:36,324 - 01:45:36,844] Now,
+- [01:45:36,844 - 01:45:39,824] if an operator acting on any wave form,
+- [01:45:39,824 - 01:45:39,824] if an operator acting on any wave form,
+- [01:45:39,824 - 01:45:39,824] if an operator acting on any wave form,
+- [01:45:39,844 - 01:45:42,444] gives another operator,
+- [01:45:42,444 - 01:45:47,414] if the operator x p acting on any wave function
+- [01:45:47,414 - 01:45:52,384] is the same as i acting on that same wave function,
+- [01:45:52,504 - 01:45:53,744] for any wave function whatever,
+- [01:45:53,744 - 01:45:59,664] it follows that this operator is equal to this operator.
+- [01:45:59,904 - 01:46:02,444] Another way of saying it
+- [01:46:02,444 - 01:46:04,984] is if x p minus i,
+- [01:46:04,984 - 01:46:06,604] put it all in a big bracket,
+- [01:46:06,604 - 01:46:09,824] when it hits any wave function at all,
+- [01:46:09,824 - 01:46:10,484] gives zero,
+- [01:46:10,484 - 01:46:14,944] then it means that this is zero.
+- [01:46:15,344 - 01:46:17,574] There's only one operator which gives
+- [01:46:17,574 - 01:46:19,804] zero when it acts on every state,
+- [01:46:19,804 - 01:46:20,964] on every vector.
+- [01:46:22,284 - 01:46:22,864] Okay,
+- [01:46:22,864 - 01:46:27,704] there's no vector which escapes when this thing hits it.
+- [01:46:28,184 - 01:46:28,924] All right,
+- [01:46:28,924 - 01:46:31,344] the implication is that this thing is zero.
+- [01:46:33,374 - 01:46:35,604] There's only one operator which annihilates,
+- [01:46:35,604 - 01:46:36,804] which kills every vector,
+- [01:46:36,804 - 01:46:37,544] and it's a zero.
+- [01:46:38,394 - 01:46:38,684] So.
+- [01:46:39,044 - 01:46:39,804] x p minus i.
+- [01:46:39,804 - 01:46:40,264] x p minus,
+- [01:46:40,264 - 01:46:43,924] or commutator x p is equal to i.
+- [01:46:56,124 - 01:46:57,804] If I put back the h bars,
+- [01:46:57,804 - 01:46:59,064] there would be an h bar here.
+- [01:47:00,364 - 01:47:00,844] Yeah,
+- [01:47:00,844 - 01:47:01,904] i h bar.
+- [01:47:06,664 - 01:47:08,404] We've seen things like this before.
+- [01:47:09,804 - 01:47:11,624] You may have to go back to your classical mechanics,
+- [01:47:11,624 - 01:47:13,404] we've seen things before like this.
+- [01:47:13,764 - 01:47:15,264] We've seen Poisson brackets,
+- [01:47:15,264 - 01:47:17,704] which had similar relationships.
+- [01:47:18,644 - 01:47:21,814] The Poisson bracket of x
+- [01:47:21,814 - 01:47:24,984] with p is equal to 1.
+- [01:47:26,824 - 01:47:28,884] Earlier in this course,
+- [01:47:28,884 - 01:47:31,744] we discussed the potential relationship,
+- [01:47:31,744 - 01:47:35,084] we had reason to discuss why commutators,
+- [01:47:35,084 - 01:47:37,204] it had to do with Schrodinger's equation,
+- [01:47:37,204 - 01:47:38,524] go back.
+- [01:47:38,824 - 01:47:39,784] But we discussed this.
+- [01:47:39,784 - 01:47:40,864] We discussed the relationship,
+- [01:47:40,864 - 01:47:43,624] that there might be a relationship between commutators
+- [01:47:43,624 - 01:47:44,364] and Poisson brackets,
+- [01:47:44,364 - 01:47:45,724] and in particular,
+- [01:47:45,724 - 01:47:48,284] the relation involved this i h bar.
+- [01:47:48,764 - 01:47:49,264] Okay.
+- [01:47:50,384 - 01:47:52,344] This is actually where Dirac
+- [01:47:52,344 - 01:47:54,304] began his discussion of quantum mechanics.
+- [01:47:54,724 - 01:47:56,974] He said there must be something analogous
+- [01:47:56,974 - 01:47:59,224] to a Poisson bracket in quantum mechanics.
+- [01:47:59,704 - 01:48:01,854] And the only thing you could think
+- [01:48:01,854 - 01:48:04,004] of which had the right algebraic structure,
+- [01:48:04,004 - 01:48:05,444] was anti-symmetric,
+- [01:48:05,684 - 01:48:08,044] it had a certain mathematical structure,
+- [01:48:08,044 - 01:48:09,764] was the commutator.
+- [01:48:11,364 - 01:48:14,364] And he postulated that commutators and
+- [01:48:14,364 - 01:48:17,364] Poisson brackets were related with each other,
+- [01:48:17,364 - 01:48:18,044] through
+- [01:48:18,044 - 01:48:18,864] an i h bar,
+- [01:48:18,864 - 01:48:20,804] and then proceeded to go exactly
+- [01:48:20,804 - 01:48:22,744] backwards from the way that we went.
+- [01:48:23,144 - 01:48:23,984] He said,
+- [01:48:23,984 - 01:48:26,764] if this is the Poisson bracket,
+- [01:48:26,764 - 01:48:28,884] then this must be the commutator,
+- [01:48:28,884 - 01:48:29,664] and so there
+- [01:48:29,664 - 01:48:32,144] must be an operator p
+- [01:48:32,144 - 01:48:34,624] whose commutator with x is i,
+- [01:48:34,624 - 01:48:37,124] and he went back through the operation,
+- [01:48:37,424 - 01:48:38,584] and discovered that p was
+- [01:48:38,584 - 01:48:39,744] analogous to the i h bar.
+- [01:48:39,744 - 01:48:40,004] And so he said,
+- [01:48:40,004 - 01:48:40,004] what does this mean?
+- [01:48:40,004 - 01:48:40,554] So what we found is that the
+- [01:48:40,554 - 01:48:41,104] commutator is minus i d by dx.
+- [01:48:42,164 - 01:48:43,804] So he went in the opposite direction.
+- [01:48:44,344 - 01:48:46,744] We discovered p by just playing a game,
+- [01:48:46,744 - 01:48:46,964] said,
+- [01:48:46,964 - 01:48:47,424] let's see,
+- [01:48:47,424 - 01:48:49,324] how about this operator d by dx?
+- [01:48:49,564 - 01:48:50,044] What does it do?
+- [01:48:50,684 - 01:48:53,204] What we found is that it was not Hermitian.
+- [01:48:53,384 - 01:48:54,704] We had to multiply it
+- [01:48:54,704 - 01:48:56,024] by i to make it Hermitian.
+- [01:48:56,664 - 01:48:58,164] We explored it a little bit,
+- [01:48:58,164 - 01:49:00,204] found out some interesting properties of it,
+- [01:49:00,204 - 01:49:01,164] but the most
+- [01:49:01,164 - 01:49:03,604] interesting property is that its commutator
+- [01:49:03,604 - 01:49:06,044] is equal to i h bar,
+- [01:49:06,044 - 01:49:07,264] which,
+- [01:49:07,264 - 01:49:07,564] uh,
+- [01:49:07,564 - 01:49:09,724] I think it's
+- [01:49:10,484 - 01:49:13,544] It suggests that it's connected with the Poisson bracket,
+- [01:49:13,544 - 01:49:15,324] the classical Poisson bracket being
+- [01:49:15,324 - 01:49:16,264] one.
+- [01:49:18,644 - 01:49:19,344] Of course,
+- [01:49:19,344 - 01:49:20,304] the upshot of it is,
+- [01:49:20,304 - 01:49:22,514] and of course we need to
+- [01:49:22,514 - 01:49:24,724] do a lot more to convince ourselves
+- [01:49:25,284 - 01:49:27,814] that the operator minus i d by
+- [01:49:27,814 - 01:49:30,344] dx really behaves like quantum mechanical momentum.
+- [01:49:31,304 - 01:49:32,324] We can't just say,
+- [01:49:32,324 - 01:49:32,444] well,
+- [01:49:32,444 - 01:49:34,124] it looks like a Poisson bracket,
+- [01:49:34,124 - 01:49:35,184] it must be the quantum mechanical
+- [01:49:35,184 - 01:49:35,644] momentum.
+- [01:49:36,084 - 01:49:39,464] We have to show that wave packets move.
+- [01:49:39,464 - 01:49:43,224] They move with velocities that are governed by this,
+- [01:49:43,224 - 01:49:45,304] that the thing,
+- [01:49:45,304 - 01:49:46,724] that it's conserved,
+- [01:49:46,884 - 01:49:49,464] that it has all the properties of momentum,
+- [01:49:49,464 - 01:49:50,244] but we will.
+- [01:49:52,004 - 01:49:56,184] There must be some connection between
+- [01:49:56,184 - 01:50:00,364] this abstract operator minus i derivative mass.
+- [01:50:03,204 - 01:50:03,944] And what?
+- [01:50:04,104 - 01:50:04,324] And what?
+- [01:50:04,464 - 01:50:05,684] And the idea of mass.
+- [01:50:06,184 - 01:50:06,484] Well,
+- [01:50:06,484 - 01:50:07,924] we would like to show that
+- [01:50:07,924 - 01:50:09,364] in some way that it is.
+- [01:50:09,364 - 01:50:09,444] Well,
+- [01:50:09,444 - 01:50:09,444] we would like to show that
+- [01:50:09,444 - 01:50:09,444] in some way that it is.
+- [01:50:10,504 - 01:50:12,144] That it's the mass times the velocity.
+- [01:50:12,944 - 01:50:13,984] So what we'll try,
+- [01:50:13,984 - 01:50:15,564] what we'll eventually show is that
+- [01:50:15,564 - 01:50:17,144] if you have a wave packet,
+- [01:50:17,144 - 01:50:18,544] in other
+- [01:50:18,544 - 01:50:19,604] words a psi of x,
+- [01:50:19,604 - 01:50:23,064] which is a concentrated distribution like this,
+- [01:50:23,064 - 01:50:24,564] that that wave packet
+- [01:50:24,564 - 01:50:28,644] moves along the x-axis with a velocity which
+- [01:50:28,644 - 01:50:32,724] is given by the expectation value of this
+- [01:50:32,724 - 01:50:35,024] momentum operator divided by the mass.
+- [01:50:36,824 - 01:50:38,084] That's what we would like to show.
+- [01:50:38,164 - 01:50:38,794] That the velocity with which the mass moves
+- [01:50:38,794 - 01:50:39,424] along the x-axis is the velocity with which
+- [01:50:39,424 - 01:50:42,284] this wave packet propagates along the axis.
+- [01:50:44,044 - 01:50:45,084] That velocity,
+- [01:50:45,084 - 01:50:47,424] you can call it the group velocity,
+- [01:50:47,424 - 01:50:49,084] it's usually called the group velocity,
+- [01:50:49,084 - 01:50:50,044] the
+- [01:50:50,044 - 01:50:52,854] velocity that the group of waves moves along
+- [01:50:52,854 - 01:50:55,664] times the mass of the particle is equal to
+- [01:50:55,664 - 01:50:57,504] the expectation value of the momentum.
+- [01:50:58,844 - 01:51:00,184] Once we do that,
+- [01:51:00,184 - 01:51:01,204] then I think we're,
+- [01:51:01,204 - 01:51:04,144] and that it's conserved,
+- [01:51:04,144 - 01:51:06,284] that'll take us a long way
+- [01:51:06,284 - 01:51:07,504] to calling it momentum.
+- [01:51:08,884 - 01:51:09,404] I'm sorry.
+- [01:51:09,424 - 01:51:11,584] At some point we have to say
+- [01:51:11,584 - 01:51:13,744] quantum mechanics is more fundamental than classical mechanics.
+- [01:51:14,544 - 01:51:16,554] And the definition of momentum should be
+- [01:51:16,554 - 01:51:18,564] through quantum mechanics and then we should show
+- [01:51:18,564 - 01:51:20,624] it behaves in a certain way
+- [01:51:20,624 - 01:51:22,684] when particles are heavy and so forth.
+- [01:51:23,884 - 01:51:24,404] Okay.
+- [01:51:26,684 - 01:51:27,504] For more,
+- [01:51:27,504 - 01:51:29,904] please visit us at stanford.edu.
