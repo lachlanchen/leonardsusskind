@@ -1,0 +1,2218 @@
+# Transcript
+
+Source: core/special_relativity/2012_spring_modern_physics_stanford_partial/013 - Lecture 1 ｜ Modern Physics： Special Relativity (Stanford) [BAurgxtOdxY].mp4
+
+- [00:00:00,000 - 00:00:10,520] This program is brought to you by Stanford University.
+- [00:00:10,520 - 00:00:13,200] Please visit us at stanford.edu.
+- [00:00:15,640 - 00:00:21,080] This quarter, we're going to learn about field theory, classical field theory.
+- [00:00:21,080 - 00:00:34,220] Fields such as the electromagnetic field, gravitational field, other fields in nature,
+- [00:00:34,220 - 00:00:42,400] which I won't name right now, propagate, which means they change according to rules
+- [00:00:42,400 - 00:00:45,780] which give them a wave-like character moving through space.
+- [00:00:47,680 - 00:00:49,860] And one of the fundamental principles
+- [00:00:49,860 - 00:00:51,060] of the classical field theory is that it's a field that is a wave-like character.
+- [00:00:51,060 - 00:00:56,040] One of the fundamental principles of field theory, in fact, more broadly,
+- [00:00:57,120 - 00:01:02,220] nature in general, is the principle of relativity.
+- [00:01:03,200 - 00:01:08,580] The principle of special relativity in this particular case.
+- [00:01:10,200 - 00:01:15,100] The principle of special relativity, well, let's just call it the principle of relativity,
+- [00:01:15,820 - 00:01:17,000] goes way back.
+- [00:01:17,000 - 00:01:20,200] There was not an invention of Einstein's.
+- [00:01:21,060 - 00:01:21,960] There was not an invention of Einstein's.
+- [00:01:21,960 - 00:01:28,880] I'm not absolutely sure when it was first announced or articulated in the form which I'll spell it out.
+- [00:01:28,880 - 00:01:33,860] I don't know whether it was Galileo or Newton or those who came after them,
+- [00:01:34,340 - 00:01:38,460] but those early pioneers certainly had the right idea.
+- [00:01:43,020 - 00:01:45,980] It begins with the idea of an inertial reference frame.
+- [00:01:45,980 - 00:01:50,160] Now, an inertial reference frame, this is something a bit tautological.
+- [00:01:51,060 - 00:01:53,060] It's an inertial reference frame.
+- [00:01:53,060 - 00:01:59,060] Newton's equations, F equals m a, are satisfied in an inertial reference frame.
+- [00:01:59,060 - 00:02:01,060] What is an inertial reference frame?
+- [00:02:01,060 - 00:02:05,060] It's a frame of reference in which Newton's equations are satisfied.
+- [00:02:05,060 - 00:02:12,060] I'm not going to explain any further what an inertial reference frame is,
+- [00:02:12,060 - 00:02:18,060] except to say that the idea of an inertial reference frame is by no means unique.
+- [00:02:18,060 - 00:02:20,860] A reference frame, first of all, what is a reference frame?
+- [00:02:20,860 - 00:02:22,860] What does a reference frame entail?
+- [00:02:22,860 - 00:02:27,860] A reference frame, first of all, entails a set of coordinate axes in ordinary space,
+- [00:02:28,860 - 00:02:32,860] x, y, and z, and you know how to think about those.
+- [00:02:32,860 - 00:02:40,860] But it also entails the idea that the coordinate system may be moving or not moving,
+- [00:02:40,860 - 00:02:44,860] relative to whom, relative to whomever.
+- [00:02:44,860 - 00:02:50,860] We sitting here, or you sitting here in this classroom here, define a frame of reference.
+- [00:02:50,860 - 00:02:54,860] We can pick the vertical direction to be the z-axis,
+- [00:02:54,860 - 00:02:58,860] the horizontal direction along my arms here to be the x-axis,
+- [00:02:58,860 - 00:03:02,860] x plus that way, x is minus in that direction.
+- [00:03:02,860 - 00:03:04,860] And which one have I left out?
+- [00:03:04,860 - 00:03:10,860] I have left out the y-axis, which points toward you from me.
+- [00:03:10,860 - 00:03:16,860] So there are some coordinate axes for space, x, y, and z,
+- [00:03:16,860 - 00:03:18,860] and in addition to specify a...
+- [00:03:20,860 - 00:03:27,040] frame of reference, one also imagines that this entire
+- [00:03:27,820 - 00:03:34,300] coordinate system is moving in some way relative to you sitting there
+- [00:03:34,300 - 00:03:38,860] presumably with a uniform velocity in a definite direction
+- [00:03:39,680 - 00:03:43,580] If your frame of reference is an inertial frame of reference
+- [00:03:43,580 - 00:03:50,420] in other words, if when you throw balls around or juggle or do whatever you're supposed to do in an inertial frame of reference
+- [00:03:50,420 - 00:03:53,620] if you find yourself in an inertial frame of reference
+- [00:03:53,620 - 00:04:01,080] then every other frame of reference that's moving with uniform velocity relative to you
+- [00:04:01,080 - 00:04:03,340] now remember what uniform velocity means
+- [00:04:03,340 - 00:04:06,340] it doesn't just mean with uniform speed
+- [00:04:06,340 - 00:04:10,620] it means with uniform speed in an unchanging direction
+- [00:04:10,620 - 00:04:13,860] such a frame of reference is also inertial
+- [00:04:13,860 - 00:04:15,860] if it's accelerated
+- [00:04:15,860 - 00:04:20,400] if it starts standing still and then suddenly picks up some speed
+- [00:04:20,400 - 00:04:23,400] then it's not an inertial frame of reference
+- [00:04:23,400 - 00:04:28,900] all inertial frames of reference according to Newton
+- [00:04:28,900 - 00:04:32,900] and also I think also Galileo
+- [00:04:32,900 - 00:04:38,900] Galileo was often credited with the idea but I never read enough of Galileo to know whether he actually had it or not
+- [00:04:38,900 - 00:04:43,900] neither did I read enough of Newton
+- [00:04:43,900 - 00:04:48,900] they both wrote in languages that I don't understand
+- [00:04:50,400 - 00:04:54,900] what was I saying?
+- [00:04:54,900 - 00:04:56,900] oh yes
+- [00:04:56,900 - 00:04:57,900] right
+- [00:04:57,900 - 00:05:02,900] according to both Newton and anybody else who thought about it very hard
+- [00:05:02,900 - 00:05:08,900] the laws of physics are the same in all inertial reference frames
+- [00:05:08,900 - 00:05:12,900] laws of physics meaning F equals ma
+- [00:05:12,900 - 00:05:15,400] the forces between objects
+- [00:05:15,400 - 00:05:20,400] all the things that we would normally call laws of nature or laws of physics
+- [00:05:20,400 - 00:05:24,400] don't distinguish between one frame of reference and another
+- [00:05:24,400 - 00:05:33,400] if you want a kind of pictorial example that I like to use a lot when I'm explaining this to children
+- [00:05:33,400 - 00:05:35,400] or to grown-ups
+- [00:05:35,400 - 00:05:37,900] I like to think about the laws of juggling
+- [00:05:37,900 - 00:05:43,400] there are very definite procedures that you train your body to do
+- [00:05:43,400 - 00:05:47,400] in order to be able to juggle balls correctly
+- [00:05:47,400 - 00:05:50,400] now you can imagine yourself being
+- [00:05:50,400 - 00:05:52,400] in a railroad car
+- [00:05:52,400 - 00:05:55,400] moving with perfectly uniform velocity
+- [00:05:55,400 - 00:05:57,400] down the x-axis
+- [00:05:57,400 - 00:05:59,400] and trying to juggle
+- [00:05:59,400 - 00:06:03,400] do you have to compensate for the fact that the train is moving?
+- [00:06:03,400 - 00:06:11,400] in particular when you throw a ball up into the air do you have to reach over to the right to compensate for the fact that the train is moving to the left?
+- [00:06:11,400 - 00:06:12,400] my left, your right?
+- [00:06:12,400 - 00:06:14,400] the answer is no
+- [00:06:14,400 - 00:06:15,400] you don't
+- [00:06:15,400 - 00:06:19,400] the laws of juggling are the same in every reference frame
+- [00:06:19,400 - 00:06:21,400] in every inertial reference frame
+- [00:06:21,400 - 00:06:25,400] whatever you do in one reference frame you do exactly the same thing
+- [00:06:25,400 - 00:06:30,400] and you'll succeed or fail depending on whether you're a good juggler or not
+- [00:06:30,400 - 00:06:35,400] but it will not depend on whether you're moving with uniform velocity
+- [00:06:35,400 - 00:06:39,400] so the laws of juggling are the same in every inertial reference frame
+- [00:06:39,400 - 00:06:44,400] the laws of mechanics are the same in every inertial reference frame
+- [00:06:44,400 - 00:06:48,400] the laws, Newtonian laws of gravity are the same in every inertial frame
+- [00:06:48,400 - 00:06:50,400] according to Newton
+- [00:06:52,400 - 00:06:56,400] what about the laws of electrical phenomena?
+- [00:06:56,400 - 00:07:00,400] well, there, there was a clash
+- [00:07:00,400 - 00:07:05,400] the clash had to do with Maxwell's equations
+- [00:07:05,400 - 00:07:09,400] Maxwell's equations were the field equations, the field theory
+- [00:07:09,400 - 00:07:12,400] that governed the electromagnetic field
+- [00:07:12,400 - 00:07:15,400] and the way that it propagated and sent waves
+- [00:07:15,400 - 00:07:17,400] electromagnetic waves
+- [00:07:17,400 - 00:07:19,400] that we ordinarily call light
+- [00:07:19,400 - 00:07:21,400] or radio waves or so forth
+- [00:07:21,400 - 00:07:25,400] and the fundamental dilemma, as you all know, I'm sure you all know
+- [00:07:25,400 - 00:07:31,400] the fundamental dilemma was both according to, well, here was the dilemma
+- [00:07:31,400 - 00:07:38,400] Maxwell's equations said light moves with a certain velocity
+- [00:07:38,400 - 00:07:42,400] if you take the various constants that appear in Maxwell's equations
+- [00:07:42,400 - 00:07:44,400] and put them together in the right way
+- [00:07:44,400 - 00:07:47,400] you get the velocity of waves moving with a certain velocity
+- [00:07:47,400 - 00:07:49,400] moving down an axis
+- [00:07:49,400 - 00:07:54,400] and that velocity comes out to be a certain number out of Maxwell's equations
+- [00:07:54,400 - 00:07:56,400] you have two choices
+- [00:07:56,400 - 00:08:01,400] one is to believe that Maxwell's equations are true laws of nature
+- [00:08:01,400 - 00:08:04,400] as good as any other laws of nature
+- [00:08:04,400 - 00:08:10,400] in which case the principle of relativity says they should be the same in every reference frame
+- [00:08:10,400 - 00:08:15,400] but if it follows from Maxwell's equations that the speed of light is
+- [00:08:15,400 - 00:08:19,400] three times ten to the eighth meters per second
+- [00:08:19,400 - 00:08:21,400] which is about what it is
+- [00:08:21,400 - 00:08:24,400] if it follows from Maxwell's equations that light moves that fast
+- [00:08:24,400 - 00:08:29,400] and if Maxwell's equations are laws of physics, fundamental laws of physics
+- [00:08:29,400 - 00:08:33,400] and if the laws of physics are the same in every reference frame
+- [00:08:33,400 - 00:08:37,400] then the speed of light must be the same in every reference frame
+- [00:08:37,400 - 00:08:40,400] but that was very hard to swallow
+- [00:08:40,400 - 00:08:43,400] because if a light beam is going down that axis
+- [00:08:43,400 - 00:08:45,400] and you chase it and run along with it
+- [00:08:45,400 - 00:08:48,400] at let's say three quarters of the speed of light
+- [00:08:48,400 - 00:08:52,400] then you ought to see that light ray moving much more slowly
+- [00:08:52,400 - 00:08:56,400] than three times ten to the eighth meters per second relative to you
+- [00:08:56,400 - 00:08:59,400] on the other hand, a light ray going in the other direction
+- [00:08:59,400 - 00:09:01,400] since you're sort of running into it
+- [00:09:01,400 - 00:09:04,400] you should see going even faster
+- [00:09:04,400 - 00:09:09,400] so all these possibilities could not simultaneously be correct
+- [00:09:09,400 - 00:09:13,400] that the laws of nature are the same in every reference frame
+- [00:09:13,400 - 00:09:15,400] and that Maxwell's equations
+- [00:09:15,400 - 00:09:17,400] are laws of physics
+- [00:09:17,400 - 00:09:20,400] in the same sense that Newton's laws of physics
+- [00:09:20,400 - 00:09:22,400] namely the same in every reference frame
+- [00:09:22,400 - 00:09:24,400] something had to give
+- [00:09:24,400 - 00:09:27,400] well, the point was of course
+- [00:09:27,400 - 00:09:29,400] that they were good laws of nature
+- [00:09:29,400 - 00:09:32,400] and that they were the same in every reference frame
+- [00:09:32,400 - 00:09:34,400] the thing that had to give
+- [00:09:34,400 - 00:09:37,400] is our concepts of velocity, space, and time
+- [00:09:37,400 - 00:09:39,400] and how we measure velocity
+- [00:09:42,400 - 00:09:45,400] especially velocities which are up near the surface
+- [00:09:45,400 - 00:09:47,400] near the speed of light
+- [00:09:47,400 - 00:09:50,400] now, I'm not going to spend the full amount of time
+- [00:09:50,400 - 00:09:54,400] that I did previously on the special theory of relativity
+- [00:09:54,400 - 00:09:58,400] that can be found on lectures from how long ago?
+- [00:09:58,400 - 00:10:00,400] they're on the internet I believe
+- [00:10:00,400 - 00:10:02,400] relativity and electromagnetism
+- [00:10:02,400 - 00:10:04,400] I think that was maybe about three quarters ago
+- [00:10:04,400 - 00:10:06,400] I've lost track
+- [00:10:06,400 - 00:10:09,400] yeah, they're up there, they're on the net
+- [00:10:09,400 - 00:10:11,400] and they're the lectures on relativity
+- [00:10:11,400 - 00:10:14,400] special relativity and electromagnetic theory
+- [00:10:15,400 - 00:10:17,400] we're just going to cut through it real fast
+- [00:10:17,400 - 00:10:20,400] we're going to cut through the basic ideas of relativity
+- [00:10:20,400 - 00:10:22,400] a little more mathematically
+- [00:10:22,400 - 00:10:25,400] than I would do if I were teaching it for the first time
+- [00:10:25,400 - 00:10:27,400] if I teach it the first time
+- [00:10:27,400 - 00:10:29,400] I tend to teach it the way
+- [00:10:29,400 - 00:10:31,400] Einstein first conceived of it
+- [00:10:31,400 - 00:10:33,400] how do you measure distances?
+- [00:10:33,400 - 00:10:35,400] how do you measure velocities?
+- [00:10:35,400 - 00:10:39,400] how does the propagation of light influence these things?
+- [00:10:39,400 - 00:10:42,400] instead I'm going to take a more mathematical view of it
+- [00:10:42,400 - 00:10:45,400] and think about the properties of light
+- [00:10:45,400 - 00:10:51,400] and the properties of various kinds of coordinate transformations
+- [00:10:51,400 - 00:10:55,400] coordinates now consist not only of x, y, and z
+- [00:10:55,400 - 00:10:58,400] but also time, t
+- [00:10:58,400 - 00:11:02,400] so imagine every event in the world
+- [00:11:02,400 - 00:11:04,400] is characterized by
+- [00:11:04,400 - 00:11:06,400] just like every particle
+- [00:11:06,400 - 00:11:09,400] would be characterized by a position
+- [00:11:09,400 - 00:11:11,400] x, y, and z
+- [00:11:11,400 - 00:11:14,400] every event taking place in space-time
+- [00:11:14,400 - 00:11:16,400] is characterized by four coordinates
+- [00:11:16,400 - 00:11:18,400] x, y, z, and t
+- [00:11:18,400 - 00:11:22,400] let's suppress for the moment y and z
+- [00:11:22,400 - 00:11:25,400] let's just forget them for the moment
+- [00:11:25,400 - 00:11:27,400] and concentrate on x and t
+- [00:11:27,400 - 00:11:29,400] that would be appropriate
+- [00:11:29,400 - 00:11:33,400] if we were mainly interested in motion along one axis
+- [00:11:33,400 - 00:11:35,400] let's focus on that
+- [00:11:35,400 - 00:11:37,400] motion along the x-axis
+- [00:11:37,400 - 00:11:40,400] let's suppose there is no motion along y and z
+- [00:11:40,400 - 00:11:43,400] then we can forget y and z for the moment
+- [00:11:43,400 - 00:11:44,400] momentarily
+- [00:11:44,400 - 00:11:46,400] we'll come back to them
+- [00:11:46,400 - 00:11:48,400] and think of
+- [00:11:48,400 - 00:11:50,400] motion along x and t
+- [00:11:50,400 - 00:11:52,400] and the various reference frames
+- [00:11:52,400 - 00:11:56,400] that might be moving along the x-axis
+- [00:11:56,400 - 00:11:59,400] alright, here's
+- [00:11:59,400 - 00:12:02,400] here's time vertically
+- [00:12:02,400 - 00:12:04,400] here's space horizontally
+- [00:12:04,400 - 00:12:08,400] physicists always draw space horizontally
+- [00:12:08,400 - 00:12:10,400] and time vertically
+- [00:12:10,400 - 00:12:13,400] I found out that mathematicians are at least
+- [00:12:13,400 - 00:12:17,400] certain computer scientists always draw time going horizontally
+- [00:12:17,400 - 00:12:18,400] I didn't know that
+- [00:12:18,400 - 00:12:23,400] and I got into an enormous argument with a quantum computer scientist
+- [00:12:23,400 - 00:12:27,400] which was ultimately resolved by the fact that he had time going horizontally
+- [00:12:27,400 - 00:12:30,400] and I had it going vertically
+- [00:12:30,400 - 00:12:32,400] these are traditions, I guess
+- [00:12:32,400 - 00:12:34,400] traditions grow up around subjects
+- [00:12:34,400 - 00:12:36,400] but time is north
+- [00:12:36,400 - 00:12:39,400] and x is east, I guess
+- [00:12:39,400 - 00:12:42,400] or at least time is upward
+- [00:12:42,400 - 00:12:45,400] I think the mathematicians are thinking of it independently
+- [00:12:45,400 - 00:12:47,400] yeah, yeah, that's the point
+- [00:12:47,400 - 00:12:48,400] that is the point, yes
+- [00:12:48,400 - 00:12:51,400] they're thinking of time as the independent variable
+- [00:12:51,400 - 00:12:53,400] and everybody knows
+- [00:12:53,400 - 00:12:57,400] that it's a law of nature that the independent variable should be horizontal
+- [00:13:00,400 - 00:13:01,400] alright
+- [00:13:01,400 - 00:13:04,400] now, let's imagine a moving observer
+- [00:13:04,400 - 00:13:08,400] moving down the x-axis with a velocity v
+- [00:13:08,400 - 00:13:12,400] let's take his origin of spatial coordinates
+- [00:13:12,400 - 00:13:16,400] his origin of spatial coordinates at time t equals zero
+- [00:13:16,400 - 00:13:19,400] is just at the same, let's assume that
+- [00:13:19,400 - 00:13:22,400] I'll be the moving observer
+- [00:13:22,400 - 00:13:24,400] I move down the x-axis
+- [00:13:24,400 - 00:13:26,400] I am my own origin
+- [00:13:26,400 - 00:13:29,400] there's nobody who is your origin
+- [00:13:29,400 - 00:13:31,400] that seat is vacant over there
+- [00:13:31,400 - 00:13:35,400] so that absence of human over there
+- [00:13:35,400 - 00:13:40,400] is the center of the x-coordinates in your frame
+- [00:13:40,400 - 00:13:41,400] I'm the x prime coordinate over there, right?
+- [00:13:41,400 - 00:13:43,400] I'm the x prime coordinates
+- [00:13:43,400 - 00:13:45,400] and of course I being very egocentric
+- [00:13:45,400 - 00:13:50,400] will take my x origin to be where I am
+- [00:13:50,400 - 00:13:52,400] there I do, I move down the x-axis
+- [00:13:52,400 - 00:13:54,400] we pass each other
+- [00:13:54,400 - 00:13:58,400] our origins pass each other at t equals zero
+- [00:13:58,400 - 00:14:01,400] so that means at t equals zero
+- [00:14:01,400 - 00:14:04,400] your axis and my axis are the same
+- [00:14:04,400 - 00:14:07,400] or your origin and my origin are the same
+- [00:14:07,400 - 00:14:09,400] but then as I move down the x-axis
+- [00:14:09,400 - 00:14:11,400] my coordinate
+- [00:14:11,400 - 00:14:13,400] center moves to the right
+- [00:14:13,400 - 00:14:14,400] it moves to the right
+- [00:14:14,400 - 00:14:16,400] that's supposed to be a straight line
+- [00:14:16,400 - 00:14:19,400] it's as good as I can do under the circumstances
+- [00:14:19,400 - 00:14:20,400] that's a straight line
+- [00:14:20,400 - 00:14:23,400] and it's moving with velocity v
+- [00:14:23,400 - 00:14:26,400] which means it's x prime equals
+- [00:14:26,400 - 00:14:30,400] sorry, it means x equals vt
+- [00:14:30,400 - 00:14:32,400] but it's also
+- [00:14:32,400 - 00:14:34,400] that's the way you describe it
+- [00:14:34,400 - 00:14:36,400] in terms of your coordinates
+- [00:14:36,400 - 00:14:38,400] my center
+- [00:14:38,400 - 00:14:40,400] you describe by saying x equals vt
+- [00:14:40,400 - 00:14:42,400] how do I describe it?
+- [00:14:42,400 - 00:14:47,400] I just say x prime my coordinate x prime is zero
+- [00:14:47,400 - 00:14:52,400] x prime equals zero is the same as x equals vt
+- [00:14:52,400 - 00:14:55,400] alright, what's the relationship between
+- [00:14:55,400 - 00:14:59,400] x prime and x and t?
+- [00:14:59,400 - 00:15:01,400] well it's easy to work out
+- [00:15:01,400 - 00:15:03,400] if you believe this picture
+- [00:15:03,400 - 00:15:07,400] the x prime coordinate
+- [00:15:07,400 - 00:15:10,400] is the distance from my origin
+- [00:15:10,400 - 00:15:12,400] the x coordinate
+- [00:15:12,400 - 00:15:15,400] is the distance from your origin
+- [00:15:15,400 - 00:15:18,400] so one of these is x
+- [00:15:18,400 - 00:15:19,400] the other is x prime
+- [00:15:19,400 - 00:15:21,400] the upper one here is x prime
+- [00:15:21,400 - 00:15:23,400] the lower one here is x
+- [00:15:23,400 - 00:15:25,400] and the relationship between them
+- [00:15:25,400 - 00:15:28,400] is that they differ by an amount vt
+- [00:15:28,400 - 00:15:30,400] in particular
+- [00:15:30,400 - 00:15:35,400] x is equal to x prime minus vt
+- [00:15:35,400 - 00:15:40,400] or x prime is equal to x plus vt
+- [00:15:40,400 - 00:15:43,400] do I have it wrong?
+- [00:15:43,400 - 00:15:45,400] yes I do
+- [00:15:45,400 - 00:15:47,400] x prime is x minus vt
+- [00:15:47,400 - 00:15:50,400] and x is x prime plus vt
+- [00:15:50,400 - 00:15:51,400] yeah I think I have it
+- [00:15:51,400 - 00:15:53,400] that's correct now
+- [00:15:53,400 - 00:15:55,400] alright, what about time itself?
+- [00:15:55,400 - 00:15:58,400] well according to Newton
+- [00:15:58,400 - 00:16:00,400] and according to Galileo
+- [00:16:00,400 - 00:16:02,400] and according to everybody who came afterward
+- [00:16:02,400 - 00:16:04,400] up until Einstein
+- [00:16:04,400 - 00:16:07,400] time is just time is just time is just time
+- [00:16:07,400 - 00:16:10,400] there was no notion that time might be a constant
+- [00:16:10,400 - 00:16:13,400] that time might be different in different reference frames
+- [00:16:13,400 - 00:16:17,400] Newton had the idea of a universal time
+- [00:16:17,400 - 00:16:19,400] sort of God's time
+- [00:16:19,400 - 00:16:21,400] God up on his cloud
+- [00:16:21,400 - 00:16:24,400] ticking off with his super accurate watch
+- [00:16:24,400 - 00:16:27,400] and that time was universal for everybody
+- [00:16:27,400 - 00:16:29,400] no matter how they were moving
+- [00:16:29,400 - 00:16:31,400] and so everybody would agree
+- [00:16:31,400 - 00:16:33,400] on what
+- [00:16:33,400 - 00:16:35,400] on the time of any given event
+- [00:16:35,400 - 00:16:38,400] in this map of space and time here
+- [00:16:38,400 - 00:16:40,400] and so the other equation that went with this
+- [00:16:40,400 - 00:16:43,400] is that t prime is equal to t
+- [00:16:43,400 - 00:16:46,400] let's forget the top equation here
+- [00:16:46,400 - 00:16:48,400] let's just forget it
+- [00:16:48,400 - 00:16:52,400] one might say that this
+- [00:16:52,400 - 00:16:55,400] was the Newtonian or the Galilean
+- [00:16:55,400 - 00:16:57,400] transformation properties
+- [00:16:57,400 - 00:16:59,400] between x and t
+- [00:16:59,400 - 00:17:01,400] your coordinates
+- [00:17:01,400 - 00:17:03,400] and the coordinates that I ascribe
+- [00:17:03,400 - 00:17:05,400] to a point in space time
+- [00:17:05,400 - 00:17:08,400] now let's examine a light ray
+- [00:17:08,400 - 00:17:09,400] moving down the
+- [00:17:09,400 - 00:17:12,400] plus x axis
+- [00:17:12,400 - 00:17:15,400] if it starts at the origin here
+- [00:17:15,400 - 00:17:17,400] then it moves along a trajectory
+- [00:17:17,400 - 00:17:20,400] which is x equals ct
+- [00:17:20,400 - 00:17:22,400] c being the speed of light
+- [00:17:22,400 - 00:17:25,400] now shortly I'm going to set c equal to one
+- [00:17:25,400 - 00:17:27,400] we're going to work in units
+- [00:17:27,400 - 00:17:28,400] in which c is equal to one
+- [00:17:28,400 - 00:17:30,400] but not quite yet
+- [00:17:30,400 - 00:17:33,400] incidentally
+- [00:17:33,400 - 00:17:36,400] once you understand a bit of relativity
+- [00:17:36,400 - 00:17:39,400] working in coordinates in which c is not equal to one
+- [00:17:39,400 - 00:17:41,400] is about as stupid
+- [00:17:41,400 - 00:17:45,400] as using different units for x and y
+- [00:17:45,400 - 00:17:48,400] if we used yards for x
+- [00:17:48,400 - 00:17:51,400] and feet for y
+- [00:17:51,400 - 00:17:54,400] then we would have all kinds of funny factors
+- [00:17:54,400 - 00:17:55,400] in our equations
+- [00:17:55,400 - 00:17:57,400] which would be conversion factors
+- [00:17:57,400 - 00:17:59,400] from x which is measured in feet
+- [00:17:59,400 - 00:18:03,400] to y which is measured in yards
+- [00:18:03,400 - 00:18:05,400] those factors
+- [00:18:05,400 - 00:18:07,400] log scale has its uses
+- [00:18:07,400 - 00:18:09,400] log scale has its uses
+- [00:18:09,400 - 00:18:10,400] well I don't know
+- [00:18:10,400 - 00:18:12,400] log scale I don't think we're going to do log scale
+- [00:18:12,400 - 00:18:14,400] oh like compound interest
+- [00:18:14,400 - 00:18:15,400] yeah
+- [00:18:15,400 - 00:18:17,400] I'm not sure what you're getting at but okay
+- [00:18:17,400 - 00:18:19,400] I'm just saying it is quite often
+- [00:18:19,400 - 00:18:21,400] in practical circumstances
+- [00:18:21,400 - 00:18:24,400] that one uses different scales
+- [00:18:24,400 - 00:18:25,400] yeah sometimes
+- [00:18:25,400 - 00:18:27,400] there might be a good reason
+- [00:18:27,400 - 00:18:29,400] I mean
+- [00:18:29,400 - 00:18:31,400] it wouldn't be totally unreasonable
+- [00:18:31,400 - 00:18:34,400] for a sailor to use different units
+- [00:18:34,400 - 00:18:38,400] for horizontal direction and vertical direction
+- [00:18:38,400 - 00:18:39,400] hmm
+- [00:18:39,400 - 00:18:41,400] I mean he's used to moving around horizontally
+- [00:18:41,400 - 00:18:43,400] he might use what miles
+- [00:18:43,400 - 00:18:46,400] miles versus fathoms or something
+- [00:18:46,400 - 00:18:49,400] nautical miles versus fathoms
+- [00:18:49,400 - 00:18:52,400] I'm not sure if this question is relevant
+- [00:18:52,400 - 00:18:54,400] sure it's relevant
+- [00:18:54,400 - 00:18:58,400] but when you talk about a frame of reference
+- [00:18:58,400 - 00:19:01,400] do you need to specify a period of time
+- [00:19:01,400 - 00:19:04,400] because obviously it goes back 15 million years
+- [00:19:04,400 - 00:19:05,400] there is no
+- [00:19:05,400 - 00:19:06,400] yeah
+- [00:19:06,400 - 00:19:08,400] we're ignoring now
+- [00:19:08,400 - 00:19:11,400] the fact that the universe began at some time
+- [00:19:11,400 - 00:19:13,400] and we're imagining now
+- [00:19:13,400 - 00:19:14,400] as Newton did
+- [00:19:14,400 - 00:19:16,400] and as the early Einstein did
+- [00:19:16,400 - 00:19:20,400] that the universe has just been here forever and ever and ever
+- [00:19:20,400 - 00:19:21,400] unchanging
+- [00:19:21,400 - 00:19:22,400] totally static
+- [00:19:22,400 - 00:19:27,400] and space and time have properties which don't change with time
+- [00:19:27,400 - 00:19:30,400] now of course that's incorrect in the real world
+- [00:19:30,400 - 00:19:31,400] and at some point
+- [00:19:31,400 - 00:19:34,400] we will take up the subject of cosmology
+- [00:19:34,400 - 00:19:36,400] and find that's not right
+- [00:19:36,400 - 00:19:38,400] but as long as we're interested in time
+- [00:19:38,400 - 00:19:39,400] intervals which are not
+- [00:19:39,400 - 00:19:41,400] I suspect this is what you're getting at
+- [00:19:41,400 - 00:19:44,400] as long as we're interested in time intervals which are not too long
+- [00:19:44,400 - 00:19:50,400] in particular time intervals over which the universe doesn't expand very much and so forth
+- [00:19:50,400 - 00:19:54,400] we can mainly say the properties of space don't change over a period of time
+- [00:19:54,400 - 00:19:59,400] and so everything just stays the same as it always was
+- [00:19:59,400 - 00:20:00,400] is that what you're asking?
+- [00:20:00,400 - 00:20:03,400] well it seems that
+- [00:20:03,400 - 00:20:06,400] this assumption if it is made
+- [00:20:06,400 - 00:20:07,400] at least to what you're describing
+- [00:20:07,400 - 00:20:09,400] so the question is
+- [00:20:09,400 - 00:20:11,400] would that eventually lead to some
+- [00:20:11,400 - 00:20:13,400] the point is it doesn't lead
+- [00:20:13,400 - 00:20:15,400] it doesn't lead to what I'm describing
+- [00:20:15,400 - 00:20:21,400] there's room for different formulas here
+- [00:20:21,400 - 00:20:24,400] this is a formula which is based on an assumption
+- [00:20:24,400 - 00:20:28,400] the assumption being that time is universal
+- [00:20:28,400 - 00:20:31,400] that's what Einstein found was wrong
+- [00:20:31,400 - 00:20:32,400] basically what he found
+- [00:20:32,400 - 00:20:35,400] is that when you're in a moving frame of reference
+- [00:20:35,400 - 00:20:37,400] two different observations
+- [00:20:37,400 - 00:20:39,400] will not agree
+- [00:20:39,400 - 00:20:41,400] about what time
+- [00:20:41,400 - 00:20:44,400] a particular event takes place
+- [00:20:44,400 - 00:20:45,400] this is the culprit here
+- [00:20:45,400 - 00:20:46,400] this one
+- [00:20:46,400 - 00:20:49,400] and some modifications to this one
+- [00:20:49,400 - 00:20:51,400] but in any case to see what's wrong
+- [00:20:51,400 - 00:20:54,400] let's go to Maxwell's equations
+- [00:20:54,400 - 00:20:58,400] Maxwell's equations say that light always moves with this velocity
+- [00:20:58,400 - 00:21:02,400] c being some numbers in meters per second
+- [00:21:02,400 - 00:21:03,400] okay
+- [00:21:03,400 - 00:21:05,400] three times ten to the eighth meters per second
+- [00:21:07,400 - 00:21:10,400] we will later as I said say c equals one
+- [00:21:10,400 - 00:21:14,400] let's imagine a light beam moving down the x-axis
+- [00:21:14,400 - 00:21:17,400] let's describe how x prime sees it
+- [00:21:17,400 - 00:21:20,400] in other words you see the light move this way
+- [00:21:20,400 - 00:21:21,400] to the right
+- [00:21:21,400 - 00:21:23,400] how do I see the light
+- [00:21:23,400 - 00:21:24,400] well let's see what I see
+- [00:21:24,400 - 00:21:26,400] let's just work it out
+- [00:21:26,400 - 00:21:29,400] x prime will be x
+- [00:21:29,400 - 00:21:31,400] which is ct for that light ray
+- [00:21:31,400 - 00:21:33,400] minus vt
+- [00:21:33,400 - 00:21:36,400] which is the same as c minus vt
+- [00:21:36,400 - 00:21:39,400] all this says
+- [00:21:39,400 - 00:21:43,400] is that I see the light moving with a diminished velocity
+- [00:21:43,400 - 00:21:45,400] a velocity c minus v
+- [00:21:45,400 - 00:21:47,400] why is that because I'm moving along with the light
+- [00:21:47,400 - 00:21:49,400] so naturally I see it move slowly
+- [00:21:49,400 - 00:21:52,400] but slow compared to what you see it
+- [00:21:52,400 - 00:21:55,400] what about the light going in the other direction
+- [00:21:55,400 - 00:21:57,400] supposing it was a light beam going in the other direction
+- [00:21:57,400 - 00:22:00,400] then how would you describe it
+- [00:22:00,400 - 00:22:04,400] you would describe it as x equals minus ct
+- [00:22:04,400 - 00:22:06,400] and if I do exactly the same thing
+- [00:22:06,400 - 00:22:09,400] I will find that x prime
+- [00:22:09,400 - 00:22:12,400] is equal to x
+- [00:22:12,400 - 00:22:14,400] that's minus ct
+- [00:22:14,400 - 00:22:16,400] minus vt
+- [00:22:16,400 - 00:22:18,400] which is the same as
+- [00:22:18,400 - 00:22:22,400] minus c plus v
+- [00:22:22,400 - 00:22:24,400] times t
+- [00:22:24,400 - 00:22:28,400] so what this says is that I will see the light moving
+- [00:22:28,400 - 00:22:31,400] also in the negative direction
+- [00:22:31,400 - 00:22:33,400] that's the minus sign
+- [00:22:33,400 - 00:22:35,400] but I'll see it moving with an enhanced velocity
+- [00:22:35,400 - 00:22:37,400] c plus v
+- [00:22:37,400 - 00:22:39,400] if this were the right story
+- [00:22:39,400 - 00:22:42,400] and if these were the right transformation laws
+- [00:22:42,400 - 00:22:44,400] for space and time
+- [00:22:44,400 - 00:22:46,400] then it could not be the case
+- [00:22:46,400 - 00:22:49,400] that Maxwell's equations are
+- [00:22:49,400 - 00:22:52,400] laws of physics or laws of nature
+- [00:22:52,400 - 00:22:54,400] in the sense that they were true
+- [00:22:54,400 - 00:22:56,400] in every reference frame
+- [00:22:56,400 - 00:22:58,400] they would have to be corrected
+- [00:22:58,400 - 00:23:00,400] in moving frames
+- [00:23:00,400 - 00:23:02,400] just like the juggler who had to reach to the right
+- [00:23:02,400 - 00:23:03,400] who didn't actually
+- [00:23:03,400 - 00:23:04,400] but who thought he had to reach to the right
+- [00:23:04,400 - 00:23:08,400] to collect the ball when the train is moving
+- [00:23:08,400 - 00:23:11,400] the physicist interested in light beams
+- [00:23:11,400 - 00:23:13,400] would have to correct things
+- [00:23:13,400 - 00:23:16,400] for the motion of his reference frame
+- [00:23:16,400 - 00:23:18,400] now it's an experimental fact
+- [00:23:18,400 - 00:23:19,400] that this is not the case
+- [00:23:19,400 - 00:23:22,400] that you don't have to correct for motion
+- [00:23:22,400 - 00:23:25,400] was the famous Michelson-Morley experiment
+- [00:23:25,400 - 00:23:27,400] Einstein
+- [00:23:27,400 - 00:23:29,400] he just rejected
+- [00:23:29,400 - 00:23:32,400] he just felt this can't be right
+- [00:23:32,400 - 00:23:34,400] Maxwell's equations were much too beautiful
+- [00:23:34,400 - 00:23:37,400] to be relegated to the approximate
+- [00:23:37,400 - 00:23:40,400] or to the contingent on which reference frame
+- [00:23:40,400 - 00:23:43,400] and so he set about
+- [00:23:43,400 - 00:23:45,400] to find a framework
+- [00:23:45,400 - 00:23:48,400] in which the speed of light would be the same
+- [00:23:48,400 - 00:23:50,400] in every reference frame
+- [00:23:50,400 - 00:23:53,400] and he basically focused on these equations
+- [00:23:53,400 - 00:23:57,400] and after various very very beautiful
+- [00:23:57,400 - 00:23:59,400] gedanken experiments
+- [00:23:59,400 - 00:24:01,400] thought experiments about light
+- [00:24:01,400 - 00:24:03,400] and about measuring and so forth
+- [00:24:03,400 - 00:24:06,400] he came to a set of formulas
+- [00:24:06,400 - 00:24:10,400] called the Lorentz transformations
+- [00:24:10,400 - 00:24:14,400] I'm going to explain the Lorentz transformations
+- [00:24:14,400 - 00:24:16,400] in a more mathematical way
+- [00:24:16,400 - 00:24:18,400] not fancy mathematics
+- [00:24:18,400 - 00:24:20,400] but just
+- [00:24:20,400 - 00:24:23,400] we want to get right to the heart of it
+- [00:24:23,400 - 00:24:25,400] and not spend three weeks doing it
+- [00:24:25,400 - 00:24:29,400] the best way is to set up a mathematical problem
+- [00:24:29,400 - 00:24:31,400] but before I do
+- [00:24:31,400 - 00:24:33,400] let me set up a different mathematical problem
+- [00:24:33,400 - 00:24:35,400] which is
+- [00:24:35,400 - 00:24:37,400] for most of you
+- [00:24:37,400 - 00:24:39,400] you've seen me do this before
+- [00:24:39,400 - 00:24:41,400] but nonetheless
+- [00:24:41,400 - 00:24:43,400] let's go through it again
+- [00:24:43,400 - 00:24:45,400] the problem of rotation of coordinates
+- [00:24:45,400 - 00:24:47,400] we're going to do this quickly
+- [00:24:47,400 - 00:24:49,400] let's just take spatial coordinates now
+- [00:24:49,400 - 00:24:51,400] for the moment
+- [00:24:51,400 - 00:24:53,400] two dimensional spatial coordinates
+- [00:24:53,400 - 00:24:55,400] let's forget x and t
+- [00:24:55,400 - 00:24:57,400] and just concentrate on x and y
+- [00:24:57,400 - 00:24:59,400] two coordinates in space
+- [00:24:59,400 - 00:25:01,400] instead of events in space-time
+- [00:25:01,400 - 00:25:03,400] concentrate on x and y
+- [00:25:03,400 - 00:25:05,400] concentrate on a point in space
+- [00:25:05,400 - 00:25:08,400] a point in space has coordinates
+- [00:25:08,400 - 00:25:12,400] and we can determine those coordinates
+- [00:25:12,400 - 00:25:14,400] the x and y coordinates
+- [00:25:14,400 - 00:25:18,400] just by dropping perpendiculars to the x-axis and the y-axis
+- [00:25:18,400 - 00:25:20,400] and we would describe this point
+- [00:25:20,400 - 00:25:22,400] as the point at position
+- [00:25:22,400 - 00:25:24,400] let's just call it xy
+- [00:25:24,400 - 00:25:26,400] now there's nothing sacred
+- [00:25:26,400 - 00:25:29,400] about horizontal and vertical
+- [00:25:29,400 - 00:25:31,400] so somebody else might come along
+- [00:25:31,400 - 00:25:33,400] some crazy mathematician
+- [00:25:33,400 - 00:25:36,400] a really nutty one
+- [00:25:36,400 - 00:25:38,400] who wants to use coordinates
+- [00:25:38,400 - 00:25:40,400] which are at an angle
+- [00:25:40,400 - 00:25:42,400] relative to the vertical
+- [00:25:46,400 - 00:25:47,400] maybe a couple of beers
+- [00:25:47,400 - 00:25:49,400] and you don't know the difference between
+- [00:25:49,400 - 00:25:51,400] vertical and
+- [00:25:51,400 - 00:25:53,400] what, what, what
+- [00:25:53,400 - 00:25:55,400] we should give this direction a name
+- [00:25:55,400 - 00:25:59,400] oblique
+- [00:25:59,400 - 00:26:01,400] yeah, alright
+- [00:26:01,400 - 00:26:02,400] the oblique observer
+- [00:26:02,400 - 00:26:03,400] the blue observer
+- [00:26:03,400 - 00:26:05,400] can blue be seen?
+- [00:26:05,400 - 00:26:07,400] everybody can see blue, ok
+- [00:26:07,400 - 00:26:08,400] good
+- [00:26:08,400 - 00:26:14,400] the blue observer also characterizes points by coordinates
+- [00:26:14,400 - 00:26:19,400] which he calls x prime and y prime
+- [00:26:19,400 - 00:26:23,400] the x prime and the y prime coordinates are found
+- [00:26:23,400 - 00:26:27,400] by dropping perpendiculars to the x prime and the y prime axis
+- [00:26:27,400 - 00:26:29,400] so here's x prime
+- [00:26:29,400 - 00:26:30,400] here's y prime
+- [00:26:30,400 - 00:26:32,400] and given a point at a point in space
+- [00:26:32,400 - 00:26:33,400] xy
+- [00:26:33,400 - 00:26:34,400] there's a rule
+- [00:26:34,400 - 00:26:35,400] there must be a rule
+- [00:26:35,400 - 00:26:37,400] if you know the value of x and y
+- [00:26:37,400 - 00:26:39,400] you should be able to deduce
+- [00:26:39,400 - 00:26:42,400] the value of x prime and y prime
+- [00:26:42,400 - 00:26:44,400] if you know
+- [00:26:44,400 - 00:26:47,400] the angle between the two coordinates
+- [00:26:47,400 - 00:26:50,400] between the x coordinate and the x prime coordinate
+- [00:26:50,400 - 00:26:52,400] and the formula is simple
+- [00:26:52,400 - 00:26:55,400] we've used it in these classes many times
+- [00:26:55,400 - 00:26:57,400] I'll just remind you what it is
+- [00:26:57,400 - 00:27:00,400] that's x prime is equal to
+- [00:27:00,400 - 00:27:01,400] x
+- [00:27:01,400 - 00:27:04,400] x times cosine
+- [00:27:04,400 - 00:27:06,400] of the angle between the two frames
+- [00:27:06,400 - 00:27:08,400] between the two coordinate systems
+- [00:27:08,400 - 00:27:13,400] minus y times sine of the angle
+- [00:27:13,400 - 00:27:17,400] and y prime is equal to
+- [00:27:17,400 - 00:27:20,400] minus, plus I think
+- [00:27:20,400 - 00:27:23,400] x sine of theta
+- [00:27:23,400 - 00:27:29,400] plus y cosine theta
+- [00:27:29,400 - 00:27:32,400] I just want to remind you about a little bit of trigonometry
+- [00:27:34,400 - 00:27:36,400] all of trigonometry
+- [00:27:36,400 - 00:27:38,400] is encoded
+- [00:27:38,400 - 00:27:41,400] in two very simple formulas
+- [00:27:43,400 - 00:27:45,400] I've used them
+- [00:27:45,400 - 00:27:48,400] the signs on the signs are wrong
+- [00:27:48,400 - 00:27:50,400] you're right, let's see, hold on
+- [00:27:50,400 - 00:27:54,400] x prime is bigger than x for small theta
+- [00:27:54,400 - 00:27:59,400] you say the signs here are wrong
+- [00:27:59,400 - 00:28:01,400] yeah, so it's x
+- [00:28:01,400 - 00:28:04,400] x prime is bigger than x
+- [00:28:04,400 - 00:28:05,400] is it?
+- [00:28:05,400 - 00:28:06,400] yeah
+- [00:28:06,400 - 00:28:08,400] let's see
+- [00:28:08,400 - 00:28:13,400] if you rotate it to the next
+- [00:28:13,400 - 00:28:17,400] so that y prime is zero
+- [00:28:17,400 - 00:28:21,400] it's further out
+- [00:28:21,400 - 00:28:23,400] x prime
+- [00:28:24,400 - 00:28:28,400] do I have it backwards?
+- [00:28:28,400 - 00:28:29,400] yeah
+- [00:28:29,400 - 00:28:32,400] I'm not convinced
+- [00:28:32,400 - 00:28:33,400] no, not either
+- [00:28:33,400 - 00:28:38,400] so, let's see
+- [00:28:38,400 - 00:28:42,400] x prime is a little perpendicular there
+- [00:28:42,400 - 00:28:43,400] no, y prime is a little
+- [00:28:43,400 - 00:28:45,400] no, that's y prime
+- [00:28:45,400 - 00:28:47,400] this is y prime here
+- [00:28:47,400 - 00:28:48,400] right
+- [00:28:48,400 - 00:28:49,400] that's y prime here
+- [00:28:49,400 - 00:28:51,400] and x prime is bigger than x
+- [00:28:51,400 - 00:28:53,400] so there has to be a plus sign on the second term
+- [00:28:53,400 - 00:28:55,400] yeah, x prime is bigger than x, let's see
+- [00:28:55,400 - 00:28:59,400] yeah, x prime is bigger than x
+- [00:28:59,400 - 00:29:01,400] yeah, x prime is bigger than x
+- [00:29:01,400 - 00:29:02,400] looks like that's probably right
+- [00:29:02,400 - 00:29:04,400] probably a sign
+- [00:29:04,400 - 00:29:07,400] but then this one must be negative
+- [00:29:07,400 - 00:29:09,400] yeah, okay
+- [00:29:11,400 - 00:29:13,400] there's an easy way to correct for it
+- [00:29:13,400 - 00:29:14,400] another way to correct for it
+- [00:29:14,400 - 00:29:17,400] just call this angle minus theta
+- [00:29:17,400 - 00:29:19,400] that would also do the trick
+- [00:29:19,400 - 00:29:22,400] because cosine of minus theta is the same as cosine of theta
+- [00:29:23,400 - 00:29:27,400] and sine changes sine when you change theta to minus theta
+- [00:29:27,400 - 00:29:31,400] so if instead of calling this angle theta I called it minus theta
+- [00:29:31,400 - 00:29:34,400] then my previous formulas would be right
+- [00:29:35,400 - 00:29:36,400] it's true
+- [00:29:36,400 - 00:29:39,400] true, but it's an excuse
+- [00:29:39,400 - 00:29:42,400] alright, what do we know about sine and cosine?
+- [00:29:42,400 - 00:29:44,400] it's important to understand sine and cosine
+- [00:29:44,400 - 00:29:47,400] everything you ever learned about trigonometry
+- [00:29:47,400 - 00:29:51,400] can be codified in two very simple formulas
+- [00:29:51,400 - 00:29:53,400] if you know about complex functions
+- [00:29:53,400 - 00:29:55,400] you know about complex numbers
+- [00:29:55,400 - 00:29:58,400] the two very simple formulas are that
+- [00:29:58,400 - 00:30:02,400] cosine of theta is e to the i theta
+- [00:30:02,400 - 00:30:05,400] plus e to the minus i theta over 2
+- [00:30:05,400 - 00:30:16,400] and sine of theta is e to the i theta minus e to the minus i theta over 2i
+- [00:30:16,400 - 00:30:20,400] those two formulas contain everything about trigonometry
+- [00:30:20,400 - 00:30:22,400] you don't have to know any other formulas
+- [00:30:22,400 - 00:30:24,400] other than these
+- [00:30:24,400 - 00:30:27,400] for example, I will assign you the homework problem
+- [00:30:27,400 - 00:30:29,400] of using these two formulas
+- [00:30:29,400 - 00:30:32,400] to find cosine of the sum of two angles
+- [00:30:32,400 - 00:30:34,400] but the way you would do it
+- [00:30:34,400 - 00:30:37,400] is just write the sum of two angles in here
+- [00:30:37,400 - 00:30:40,400] and then re-express the exponentials
+- [00:30:40,400 - 00:30:42,400] in terms of cosine and sine
+- [00:30:42,400 - 00:30:44,400] that's easy to do
+- [00:30:44,400 - 00:30:49,400] e to the i theta is equal to cosine of theta
+- [00:30:49,400 - 00:30:51,400] plus i sine theta
+- [00:30:52,400 - 00:30:57,400] and e to the minus i theta is cosine of theta minus i sine theta
+- [00:30:57,400 - 00:31:00,400] so work through these formulas
+- [00:31:00,400 - 00:31:01,400] get familiar with them
+- [00:31:01,400 - 00:31:03,400] they're extremely useful formulas
+- [00:31:03,400 - 00:31:04,400] once you know them
+- [00:31:04,400 - 00:31:08,400] you will never have to remember any trigonometric formulas again
+- [00:31:08,400 - 00:31:10,400] the other thing to know is that
+- [00:31:10,400 - 00:31:14,400] e to the i theta times e to the minus i theta is 1
+- [00:31:14,400 - 00:31:19,400] e to the anything times e to the minus the same thing is 1
+- [00:31:19,400 - 00:31:22,400] those things characterize all of the formulas
+- [00:31:22,400 - 00:31:24,400] all trigonometric formulas
+- [00:31:24,400 - 00:31:26,400] in particular
+- [00:31:26,400 - 00:31:30,400] as was explained to me by Michael
+- [00:31:30,400 - 00:31:32,400] a number of times
+- [00:31:32,400 - 00:31:37,400] if we multiply e to the i theta times e to the minus i theta
+- [00:31:37,400 - 00:31:39,400] we will get 1 on this side
+- [00:31:39,400 - 00:31:45,400] but on this side we will get cosine squared of theta plus sine squared of theta
+- [00:31:45,400 - 00:31:48,400] not minus sine squared but plus sine squared
+- [00:31:48,400 - 00:31:50,400] cosine squared
+- [00:31:50,400 - 00:31:52,400] and then minus i squared sine squared
+- [00:31:52,400 - 00:31:55,400] that gives us cosine squared plus sine squared
+- [00:31:55,400 - 00:31:59,400] cosine squared theta plus sine squared theta
+- [00:31:59,400 - 00:32:05,400] so that's equivalent to the fact that e to the i theta times e to the minus i theta is 1
+- [00:32:05,400 - 00:32:06,400] alright
+- [00:32:06,400 - 00:32:10,400] now the most important fact
+- [00:32:10,400 - 00:32:16,400] that again follows from the simple trigonometry
+- [00:32:16,400 - 00:32:19,400] is that when you make the change of coordinates
+- [00:32:19,400 - 00:32:22,400] from xy to x prime y prime
+- [00:32:22,400 - 00:32:26,400] something is left unchanged
+- [00:32:26,400 - 00:32:31,400] namely the distance from the origin to the point xy
+- [00:32:31,400 - 00:32:35,400] that's something which is
+- [00:32:35,400 - 00:32:40,400] you know you count the number of the molecules along the blackboard from here to here
+- [00:32:40,400 - 00:32:44,400] and that doesn't change when I change coordinates
+- [00:32:44,400 - 00:32:47,400] so the distance from the origin to the point xy
+- [00:32:47,400 - 00:32:52,400] has to be the same independent of which coordinate axes we use
+- [00:32:52,400 - 00:32:54,400] well let's take the square of that distance
+- [00:32:54,400 - 00:32:57,400] the square of that distance we know what it is
+- [00:32:57,400 - 00:32:59,400] let's call it s squared
+- [00:32:59,400 - 00:33:02,400] I'm not sure why I use s
+- [00:33:02,400 - 00:33:05,400] but s for distance
+- [00:33:05,400 - 00:33:07,400] s for distance
+- [00:33:07,400 - 00:33:08,400] s for space
+- [00:33:08,400 - 00:33:10,400] I think it must be for space that I'm using it
+- [00:33:10,400 - 00:33:15,400] for the spatial distance from the origin to the point xy
+- [00:33:15,400 - 00:33:16,400] we know what that is
+- [00:33:16,400 - 00:33:17,400] it's Pythagoras' theorem
+- [00:33:17,400 - 00:33:19,400] x squared plus y squared
+- [00:33:19,400 - 00:33:22,400] but as I said there's nothing special about this
+- [00:33:22,400 - 00:33:24,400] about the xy axes
+- [00:33:24,400 - 00:33:27,400] we also ought to be able to calculate it
+- [00:33:27,400 - 00:33:31,400] as x prime squared plus y prime squared
+- [00:33:31,400 - 00:33:34,400] well it's not too hard to work out
+- [00:33:34,400 - 00:33:37,400] that x prime squared plus y prime squared
+- [00:33:37,400 - 00:33:40,400] is x squared plus y squared
+- [00:33:40,400 - 00:33:42,400] it's easy to use, do
+- [00:33:42,400 - 00:33:45,400] x prime squared plus y prime squared
+- [00:33:45,400 - 00:33:48,400] will have x squared cosine squared theta
+- [00:33:48,400 - 00:33:51,400] it will also have x squared sine squared theta
+- [00:33:51,400 - 00:33:53,400] when you add them you'll get x squared plus y squared
+- [00:33:53,400 - 00:33:55,400] you know the rigmarole
+- [00:33:55,400 - 00:33:59,400] so it follows from
+- [00:33:59,400 - 00:34:03,400] cosine squared plus sine squared equals one
+- [00:34:03,400 - 00:34:06,400] that x prime squared plus y prime squared
+- [00:34:06,400 - 00:34:09,400] is equal to x squared plus y squared
+- [00:34:09,400 - 00:34:11,400] work that out
+- [00:34:11,400 - 00:34:13,400] make sure that you have this under control
+- [00:34:13,400 - 00:34:15,400] that you understand why
+- [00:34:15,400 - 00:34:16,400] from the trigonometry
+- [00:34:16,400 - 00:34:18,400] not from the basic physics of it
+- [00:34:18,400 - 00:34:20,400] or the basic geometry of it is clear
+- [00:34:20,400 - 00:34:21,400] but
+- [00:34:21,400 - 00:34:25,400] make sure that you understand that you can see that from the trigonometry
+- [00:34:25,400 - 00:34:28,400] okay
+- [00:34:28,400 - 00:34:31,400] one last thing about sines and cosines
+- [00:34:31,400 - 00:34:35,400] if I plot
+- [00:34:35,400 - 00:34:37,400] on the blackboard
+- [00:34:37,400 - 00:34:39,400] for every angle
+- [00:34:39,400 - 00:34:41,400] if I plot
+- [00:34:41,400 - 00:34:43,400] sine or cosine
+- [00:34:43,400 - 00:34:46,400] along the horizontal axis
+- [00:34:46,400 - 00:34:50,400] supposing I plot cosine of theta along the horizontal axis
+- [00:34:50,400 - 00:34:55,400] and sine of theta along the vertical axis
+- [00:34:55,400 - 00:34:59,400] then if I plot all possible angles
+- [00:34:59,400 - 00:35:01,400] they will correspond to a bunch of points
+- [00:35:01,400 - 00:35:03,400] that lie on a unit circle
+- [00:35:03,400 - 00:35:05,400] why on a unit circle?
+- [00:35:05,400 - 00:35:09,400] because sine squared plus cosine squared equals one
+- [00:35:09,400 - 00:35:11,400] so
+- [00:35:11,400 - 00:35:13,400] one might call
+- [00:35:13,400 - 00:35:16,400] the properties of sine and cosine
+- [00:35:16,400 - 00:35:19,400] the properties of circular functions
+- [00:35:19,400 - 00:35:20,400] circular
+- [00:35:20,400 - 00:35:22,400] in that they're convenient
+- [00:35:22,400 - 00:35:24,400] for rotating
+- [00:35:24,400 - 00:35:27,400] they're convenient for describing unit circles
+- [00:35:27,400 - 00:35:30,400] points on unit circles are described in terms of coordinates
+- [00:35:30,400 - 00:35:34,400] which are cosines and sines of angles and so forth
+- [00:35:34,400 - 00:35:36,400] it's natural to call them
+- [00:35:36,400 - 00:35:38,400] circular functions
+- [00:35:38,400 - 00:35:41,400] these are not the functions
+- [00:35:41,400 - 00:35:44,400] that come in to the transformation
+- [00:35:44,400 - 00:35:46,400] the new transformation properties
+- [00:35:46,400 - 00:35:47,400] first of all
+- [00:35:47,400 - 00:35:48,400] these are wrong
+- [00:35:48,400 - 00:35:51,400] I don't want to use x
+- [00:35:51,400 - 00:35:53,400] let's uh
+- [00:35:53,400 - 00:35:55,400] x
+- [00:35:55,400 - 00:35:56,400] yeah yeah
+- [00:35:56,400 - 00:35:57,400] no just
+- [00:35:57,400 - 00:35:59,400] wrong
+- [00:35:59,400 - 00:36:01,400] Newton had it wrong
+- [00:36:01,400 - 00:36:05,400] Newton or Galileo or whoever it was who postulated it
+- [00:36:05,400 - 00:36:08,400] Einstein modified it
+- [00:36:08,400 - 00:36:10,400] now we're going to have to make sure
+- [00:36:10,400 - 00:36:13,400] that Einstein's modification
+- [00:36:13,400 - 00:36:16,400] doesn't change things in situations where Newton
+- [00:36:16,400 - 00:36:18,400] where Newton's equations
+- [00:36:18,400 - 00:36:21,400] were good approximations
+- [00:36:21,400 - 00:36:23,400] the
+- [00:36:23,400 - 00:36:25,400] situations
+- [00:36:25,400 - 00:36:27,400] where Einstein's modifications
+- [00:36:27,400 - 00:36:29,400] are important
+- [00:36:29,400 - 00:36:32,400] is when we're talking about frames of reference moving very rapidly
+- [00:36:32,400 - 00:36:34,400] up near the speed of light
+- [00:36:34,400 - 00:36:36,400] before the 20th century
+- [00:36:36,400 - 00:36:39,400] nobody or nothing had ever moved faster than
+- [00:36:39,400 - 00:36:41,400] than a hundred miles an hour probably
+- [00:36:41,400 - 00:36:43,400] well of course some things did
+- [00:36:43,400 - 00:36:45,400] light did
+- [00:36:45,400 - 00:36:47,400] but for all practical purposes light did not move fast enough
+- [00:36:47,400 - 00:36:50,400] for all practical purposes light didn't travel at all
+- [00:36:50,400 - 00:36:52,400] it just when you turned on the switch
+- [00:36:52,400 - 00:36:54,400] the light just went on
+- [00:36:54,400 - 00:36:57,400] so light didn't travel
+- [00:36:57,400 - 00:36:59,400] nothing in anybody's experience
+- [00:36:59,400 - 00:37:03,400] direct experience traveled faster than a hundred or two hundred miles an hour
+- [00:37:03,400 - 00:37:04,400] well I should say
+- [00:37:04,400 - 00:37:07,400] nothing traveled faster than a hundred miles an hour
+- [00:37:07,400 - 00:37:09,400] and lived to tell about it
+- [00:37:09,400 - 00:37:14,400] so all of experience was about very slow velocities
+- [00:37:14,400 - 00:37:16,400] on the scale of the speed of light
+- [00:37:16,400 - 00:37:18,400] on the scale of such velocities
+- [00:37:18,400 - 00:37:20,400] Newton's formulas must be correct
+- [00:37:20,400 - 00:37:21,400] they work
+- [00:37:21,400 - 00:37:22,400] they're very useful
+- [00:37:22,400 - 00:37:23,400] they work
+- [00:37:23,400 - 00:37:24,400] Newton got away with it
+- [00:37:24,400 - 00:37:27,400] so they must be good approximations
+- [00:37:27,400 - 00:37:30,400] it had better be that whatever Einstein did to the equations
+- [00:37:30,400 - 00:37:33,400] in particular to these two equations here
+- [00:37:33,400 - 00:37:35,400] had better reduced to Newton's equations
+- [00:37:35,400 - 00:37:37,400] in the appropriate limit
+- [00:37:37,400 - 00:37:39,400] okay let's come back now to light
+- [00:37:39,400 - 00:37:42,400] light according to the Newton formulas
+- [00:37:42,400 - 00:37:45,400] doesn't always move with the speed of light
+- [00:37:45,400 - 00:37:52,400] but let's try to figure out what it would mean
+- [00:37:52,400 - 00:37:54,400] of a better formula
+- [00:37:54,400 - 00:37:56,400] of a replacement for this
+- [00:37:56,400 - 00:38:00,400] that light always moves with the speed of light
+- [00:38:00,400 - 00:38:05,400] first of all let's set the speed of light equal to one
+- [00:38:05,400 - 00:38:07,400] that's a choice of units
+- [00:38:07,400 - 00:38:10,400] in particular it's a choice of
+- [00:38:10,400 - 00:38:14,400] the relation between space units and time units
+- [00:38:15,400 - 00:38:18,400] if we work in
+- [00:38:18,400 - 00:38:21,400] um
+- [00:38:21,400 - 00:38:23,400] light years
+- [00:38:23,400 - 00:38:25,400] for distance
+- [00:38:25,400 - 00:38:27,400] and years for time
+- [00:38:27,400 - 00:38:30,400] then light moves one light year per year
+- [00:38:30,400 - 00:38:32,400] the speed of light is one
+- [00:38:32,400 - 00:38:34,400] if we use seconds and light seconds
+- [00:38:34,400 - 00:38:35,400] it's also one
+- [00:38:35,400 - 00:38:38,400] whatever scale we use for space
+- [00:38:38,400 - 00:38:40,400] if we use for time
+- [00:38:40,400 - 00:38:43,400] the time that it takes light to go that distance
+- [00:38:43,400 - 00:38:44,400] one unit of space
+- [00:38:44,400 - 00:38:46,400] if we use that for time units
+- [00:38:46,400 - 00:38:48,400] then the speed of light is equal to one
+- [00:38:48,400 - 00:38:49,400] now
+- [00:38:49,400 - 00:38:50,400] from the ordinary point of view
+- [00:38:50,400 - 00:38:52,400] of very slowly moving things
+- [00:38:52,400 - 00:38:53,400] those are odd units
+- [00:38:53,400 - 00:38:55,400] but if we were electrons
+- [00:38:55,400 - 00:38:56,400] we're neutrinos
+- [00:38:56,400 - 00:38:58,400] and whizzing around like photons
+- [00:38:58,400 - 00:39:00,400] they would be the natural units for us
+- [00:39:00,400 - 00:39:01,400] uh
+- [00:39:01,400 - 00:39:02,400] speed of light equals one
+- [00:39:02,400 - 00:39:04,400] so let's set the speed of light equal to one
+- [00:39:04,400 - 00:39:07,400] as I said it's just a choice of units
+- [00:39:07,400 - 00:39:09,400] and then a light ray
+- [00:39:09,400 - 00:39:11,400] moving to the right
+- [00:39:11,400 - 00:39:14,400] just moves along a trajectory x equals two
+- [00:39:14,400 - 00:39:16,400] t
+- [00:39:16,400 - 00:39:18,400] c is just equal to one
+- [00:39:18,400 - 00:39:20,400] a light ray moving to the left
+- [00:39:20,400 - 00:39:23,400] is x equals minus t
+- [00:39:24,400 - 00:39:26,400] how can we
+- [00:39:26,400 - 00:39:28,400] take both of these equations
+- [00:39:28,400 - 00:39:29,400] and put them together
+- [00:39:29,400 - 00:39:31,400] sorry, x equals minus t
+- [00:39:33,400 - 00:39:35,400] can I write a single equation
+- [00:39:35,400 - 00:39:37,400] which if it's satisfied
+- [00:39:37,400 - 00:39:40,400] is a light ray either moving to the left or to the right
+- [00:39:40,400 - 00:39:41,400] yes
+- [00:39:41,400 - 00:39:43,400] here's an equation
+- [00:39:43,400 - 00:39:45,400] x squared equals t squared
+- [00:39:45,400 - 00:39:47,400] it has two solutions
+- [00:39:47,400 - 00:39:50,400] x equals t and x equals minus t
+- [00:39:50,400 - 00:39:52,400] the two square roots
+- [00:39:52,400 - 00:39:53,400] well, x squared equals t squared
+- [00:39:53,400 - 00:39:56,400] is equivalent to either x equals t
+- [00:39:56,400 - 00:39:58,400] or x equals minus t
+- [00:39:58,400 - 00:40:00,400] in other words
+- [00:40:00,400 - 00:40:02,400] this equation here
+- [00:40:02,400 - 00:40:05,400] is a necessary and sufficient
+- [00:40:05,400 - 00:40:07,400] condition
+- [00:40:07,400 - 00:40:09,400] for describing the motion of a light ray
+- [00:40:09,400 - 00:40:11,400] either to the right
+- [00:40:11,400 - 00:40:12,400] or to the left
+- [00:40:13,400 - 00:40:16,400] supposing we found
+- [00:40:16,400 - 00:40:18,400] a replacement for this equation
+- [00:40:18,400 - 00:40:21,400] which had the following interesting property
+- [00:40:21,400 - 00:40:23,400] that whenever
+- [00:40:23,400 - 00:40:24,400] let's write it this way
+- [00:40:24,400 - 00:40:26,400] x squared minus t squared equals zero
+- [00:40:26,400 - 00:40:28,400] this is even better
+- [00:40:28,400 - 00:40:30,400] for our purposes
+- [00:40:30,400 - 00:40:34,400] x squared minus t squared equals zero
+- [00:40:36,400 - 00:40:38,400] that's the necessary and sufficient condition
+- [00:40:38,400 - 00:40:41,400] to describe the motion of a light ray
+- [00:40:43,400 - 00:40:45,400] supposing we found
+- [00:40:45,400 - 00:40:47,400] a new set of rules
+- [00:40:47,400 - 00:40:49,400] a new set of transformation properties
+- [00:40:49,400 - 00:40:51,400] which
+- [00:40:51,400 - 00:40:53,400] which
+- [00:40:53,400 - 00:40:55,400] had the property
+- [00:40:55,400 - 00:40:59,400] that if x squared minus t squared is equal to zero
+- [00:40:59,400 - 00:41:01,400] then we would find
+- [00:41:01,400 - 00:41:05,400] that x prime squared minus t prime squared
+- [00:41:05,400 - 00:41:07,400] is equal to zero
+- [00:41:07,400 - 00:41:09,400] in other words
+- [00:41:09,400 - 00:41:11,400] supposing this implied this
+- [00:41:13,400 - 00:41:16,400] is equal to zero
+- [00:41:16,400 - 00:41:17,400] then we would find
+- [00:41:17,400 - 00:41:19,400] that x squared minus t squared is equal to zero
+- [00:41:19,400 - 00:41:21,400] and vice versa
+- [00:41:21,400 - 00:41:23,400] then it would follow
+- [00:41:23,400 - 00:41:25,400] that what the unprimed observer
+- [00:41:25,400 - 00:41:26,400] you and your seats
+- [00:41:26,400 - 00:41:27,400] see as a light ray
+- [00:41:27,400 - 00:41:28,400] the primed observer
+- [00:41:28,400 - 00:41:29,400] me moving along
+- [00:41:29,400 - 00:41:31,400] also see as a light ray
+- [00:41:31,400 - 00:41:33,400] both of us agreeing
+- [00:41:33,400 - 00:41:36,400] that light rays move with unit velocity
+- [00:41:36,400 - 00:41:37,400] now
+- [00:41:37,400 - 00:41:38,400] this doesn't work
+- [00:41:38,400 - 00:41:41,400] for Newton's formula here
+- [00:41:41,400 - 00:41:42,400] it just doesn't work
+- [00:41:42,400 - 00:41:43,400] but it does not follow
+- [00:41:43,400 - 00:41:45,400] that x prime is equal to t prime
+- [00:41:45,400 - 00:41:47,400] in fact it says something quite different
+- [00:41:47,400 - 00:41:48,400] okay
+- [00:41:48,400 - 00:41:49,400] so
+- [00:41:49,400 - 00:41:51,400] the form of these equations must be wrong
+- [00:41:53,400 - 00:41:55,400] let's look for some better equations
+- [00:41:55,400 - 00:41:56,400] now at this point
+- [00:41:56,400 - 00:41:57,400] oh let's
+- [00:41:57,400 - 00:41:59,400] in fact let's even be a little bit more ambitious
+- [00:42:00,400 - 00:42:02,400] it turns out being a little bit more ambitious
+- [00:42:02,400 - 00:42:04,400] actually simplifies things
+- [00:42:05,400 - 00:42:07,400] let's not only say
+- [00:42:07,400 - 00:42:11,400] that when x squared minus t squared is equal to zero
+- [00:42:11,400 - 00:42:15,400] then x prime squared minus t prime squared is equal to zero.
+- [00:42:15,880 - 00:42:18,060] Let's say something even bolder.
+- [00:42:19,080 - 00:42:24,300] Let's say the relation between x t and x prime t prime is such that
+- [00:42:24,300 - 00:42:33,000] x squared minus t squared is equal to x prime squared minus t prime squared.
+- [00:42:33,000 - 00:42:42,060] In other words, pick any x and any t and calculate x squared minus t squared.
+- [00:42:42,820 - 00:42:50,180] Then take the same point except reckoned in the primed coordinates.
+- [00:42:50,460 - 00:42:53,740] In other words, we take a certain event, a light bulb goes off someplace.
+- [00:42:54,880 - 00:42:57,240] You say that corresponds to x and t.
+- [00:42:57,920 - 00:43:00,720] I say it corresponds to x prime and t prime.
+- [00:43:00,720 - 00:43:02,840] But let's require...
+- [00:43:02,840 - 00:43:04,620] Just try it out. See if we can do it.
+- [00:43:05,020 - 00:43:09,000] Let's look for transformations so that x squared minus t squared
+- [00:43:09,000 - 00:43:12,540] will always be equal to x prime squared minus t prime squared.
+- [00:43:13,080 - 00:43:18,720] That would be enough to ensure that everybody will agree about the speed of light.
+- [00:43:19,180 - 00:43:19,620] Why?
+- [00:43:20,760 - 00:43:24,960] If x squared minus t squared equals x prime minus t prime squared
+- [00:43:24,960 - 00:43:26,980] for all x and t and so forth,
+- [00:43:27,220 - 00:43:29,800] then when x squared minus t squared equals zero,
+- [00:43:30,220 - 00:43:32,680] x prime minus t prime squared will be zero.
+- [00:43:32,840 - 00:43:37,300] And then if this is a light ray, so is this a light ray.
+- [00:43:37,500 - 00:43:38,340] Everybody get the logic?
+- [00:43:40,540 - 00:43:41,200] Okay, good.
+- [00:43:41,200 - 00:43:43,260] So let's assume now...
+- [00:43:43,260 - 00:43:49,440] Let's ask, can we find transformations which have this particular property?
+- [00:43:50,200 - 00:43:54,540] Now, it's not so different from looking for transformations
+- [00:43:54,540 - 00:44:02,820] which preserve x squared plus y squared.
+- [00:44:02,840 - 00:44:11,340] So, we can find transformations which preserve x squared minus t squared
+- [00:44:11,340 - 00:44:13,840] and the look of these two is very similar.
+- [00:44:13,840 - 00:44:17,220] And the mathematics is quite similar.
+- [00:44:17,220 - 00:44:23,460] Here are the transformations which preserve x squared plus y squared.
+- [00:44:23,460 - 00:44:28,160] What are the transformations which preserve x squared minus t squared?
+- [00:44:28,160 - 00:44:30,540] Well, we're going to have to find out.
+- [00:44:30,540 - 00:44:32,540] So, we're going to have to find out.
+- [00:44:32,540 - 00:44:35,540] What are the transformations which preserve x squared minus t squared?
+- [00:44:35,540 - 00:44:37,540] Well, they are the Lorentz transformations.
+- [00:44:37,540 - 00:44:41,540] They are the fundamental transformations of the special theory of relativity.
+- [00:44:41,540 - 00:44:44,540] They're not this, but they're closely related,
+- [00:44:44,540 - 00:44:49,540] or perhaps one should say closely analogous to these equations here.
+- [00:44:49,540 - 00:44:56,540] But, we have to substitute for circular trigonometry, hyperbolic trigonometry.
+- [00:44:56,540 - 00:45:01,540] So, let's go back and remember a little bit about hyperbolic functions
+- [00:45:01,540 - 00:45:02,240] instead of circular trigonometry.
+- [00:45:02,240 - 00:45:09,240] Instead of circular functions.
+- [00:45:09,240 - 00:45:15,240] Well, I didn't want to erase that.
+- [00:45:15,240 - 00:45:18,240] Alright, these are the basic rules governing circular functions.
+- [00:45:18,240 - 00:45:22,240] Cosine theta is equal to this.
+- [00:45:22,240 - 00:45:24,240] Sine theta is equal to this.
+- [00:45:24,240 - 00:45:31,240] And the e to the i theta in terms of cosine and sine.
+- [00:45:32,240 - 00:45:33,240] Alright, let's see if we have a...
+- [00:45:33,240 - 00:45:37,240] Now, we do have a blank blackboard here.
+- [00:45:37,240 - 00:45:38,240] Let me write...
+- [00:45:38,240 - 00:45:40,240] Whoops, what did I do here?
+- [00:45:40,240 - 00:45:42,240] I erased something I didn't mean to erase.
+- [00:45:42,240 - 00:45:43,240] Here it is.
+- [00:45:43,240 - 00:45:44,240] Okay.
+- [00:45:44,240 - 00:45:56,240] .
+- [00:45:56,240 - 00:45:59,240] Incidentally, does everybody see how I got this side from this side?
+- [00:45:59,240 - 00:46:00,240] .
+- [00:46:00,240 - 00:46:06,240] You just add and subtract the equations appropriately,
+- [00:46:06,240 - 00:46:09,240] and you isolate e to the i theta and e to the minus i theta.
+- [00:46:09,240 - 00:46:11,240] That's elementary exercise.
+- [00:46:11,240 - 00:46:13,240] Alright, hyperbolic functions.
+- [00:46:13,240 - 00:46:15,240] What are hyperbolic functions?
+- [00:46:15,240 - 00:46:24,240] Alright, those are functions of the form hyperbolic cosine cosh.
+- [00:46:24,240 - 00:46:26,240] Hyperbolic cosine...
+- [00:46:26,240 - 00:46:29,240] First of all, the angle theta is replaced by cosh.
+- [00:46:29,240 - 00:46:32,240] And the angle theta is replaced by a variable called omega,
+- [00:46:32,240 - 00:46:34,240] which I will call omega.
+- [00:46:34,240 - 00:46:37,240] Omega is called a hyperbolic angle.
+- [00:46:37,240 - 00:46:41,240] It doesn't go from 0 to 2 pi and then wind around on a circle.
+- [00:46:41,240 - 00:46:45,240] It goes from minus infinity to infinity.
+- [00:46:45,240 - 00:46:50,240] It goes from minus infinity to infinity.
+- [00:46:50,240 - 00:46:55,240] So it's a variable that just extends over the entire real axis.
+- [00:46:55,240 - 00:46:58,240] But it's defined in a manner fairly similar to cosine and sine.
+- [00:46:59,240 - 00:47:03,240] Cosh omega is by definition...
+- [00:47:03,240 - 00:47:04,240] You're not allowed to ask why.
+- [00:47:04,240 - 00:47:06,240] This is definition.
+- [00:47:06,240 - 00:47:13,240] e to the omega plus e to the minus omega over 2.
+- [00:47:13,240 - 00:47:21,240] All we do is substitute for theta or for i theta, substitute omega.
+- [00:47:21,240 - 00:47:25,240] And that gives you hyperbolic functions.
+- [00:47:25,240 - 00:47:28,240] Likewise or similarly,
+- [00:47:28,240 - 00:47:31,240] there's the hyperbolic sine.
+- [00:47:31,240 - 00:47:38,240] And that's given by e to the omega minus e to the minus omega over 2.
+- [00:47:38,240 - 00:47:42,240] Essentially, you throw away all i's out of that formula,
+- [00:47:42,240 - 00:47:44,240] out of the top formulas.
+- [00:47:44,240 - 00:47:48,240] Just throw away all i's.
+- [00:47:48,240 - 00:47:53,240] The equations on the right-hand side become
+- [00:47:53,240 - 00:47:56,240] e to the omega equals hyperbolic cosh.
+- [00:47:56,240 - 00:48:03,240] Omega plus sinh omega.
+- [00:48:03,240 - 00:48:11,240] And e to the minus omega equals cosh omega minus sinh omega.
+- [00:48:11,240 - 00:48:15,240] I think that's right. Is it right?
+- [00:48:15,240 - 00:48:20,240] Cosh minus sinh...
+- [00:48:20,240 - 00:48:23,240] It is?
+- [00:48:23,240 - 00:48:25,240] Yeah. It is right.
+- [00:48:25,240 - 00:48:27,240] Okay.
+- [00:48:27,240 - 00:48:34,240] Now, what about the analog of cosine squared plus sine squared equals 1?
+- [00:48:34,240 - 00:48:37,240] That simply came by multiplying this one by this one.
+- [00:48:37,240 - 00:48:41,240] So let's do the same operation.
+- [00:48:41,240 - 00:48:49,240] Multiplying e to the omega by e to the minus omega gives 1.
+- [00:48:49,240 - 00:48:53,240] And now that gives cosh squared minus sinh squared.
+- [00:48:53,240 - 00:48:54,240] You see we're getting a minus.
+- [00:48:54,240 - 00:48:56,240] What we want? We want that minus.
+- [00:48:56,240 - 00:48:57,240] The minus is important.
+- [00:48:57,240 - 00:48:59,240] We want the...
+- [00:48:59,240 - 00:49:04,240] Well, somewhere under here was a formula with a minus sign.
+- [00:49:04,240 - 00:49:08,240] Yeah. We want to get that minus into play here.
+- [00:49:08,240 - 00:49:13,240] That's cosh omega squared...
+- [00:49:13,240 - 00:49:20,240] No, not cosh, but cosh squared omega minus sinh squared omega.
+- [00:49:24,240 - 00:49:26,240] So it's very similar.
+- [00:49:26,240 - 00:49:30,240] Everything you want to know about hyperbolic trigonometry,
+- [00:49:30,240 - 00:49:33,240] and the theory of these functions is called hyperbolic trigonometry,
+- [00:49:33,240 - 00:49:38,240] everything you ever want to know is codified in these simple formulas,
+- [00:49:38,240 - 00:49:40,240] these and these.
+- [00:49:40,240 - 00:49:44,240] And they're more or less definitions, but they're rather useful definitions.
+- [00:49:44,240 - 00:49:46,240] Now, for... Yeah, go ahead.
+- [00:49:46,240 - 00:49:52,240] Is it worth mentioning that x squared plus y squared equals constant is a circle?
+- [00:49:52,240 - 00:49:53,240] Yeah.
+- [00:49:53,240 - 00:49:55,240] And x squared minus y squared equals constant.
+- [00:49:55,240 - 00:50:00,240] Not only is it worth mentioning, I was just about to mention it.
+- [00:50:00,240 - 00:50:03,240] Sorry, x squared minus y squared is what?
+- [00:50:03,240 - 00:50:07,240] x squared minus y squared equals constant is hyperbolic.
+- [00:50:07,240 - 00:50:10,240] Hyperbolic, yeah. Right, exactly.
+- [00:50:10,240 - 00:50:13,240] So if I were to play the same game that I did here,
+- [00:50:13,240 - 00:50:18,240] namely plot on the horizontal and vertical axis
+- [00:50:18,240 - 00:50:22,240] the values not of cosine of theta and sine of theta,
+- [00:50:22,240 - 00:50:29,240] but cosine, cosh, of omega and sinh omega,
+- [00:50:29,240 - 00:50:33,240] in other words, on the x-axis now,
+- [00:50:33,240 - 00:50:36,240] we're going to plot cosh omega,
+- [00:50:36,240 - 00:50:40,240] and on the y-axis, sinh omega.
+- [00:50:40,240 - 00:50:43,240] Then this is a hyperbola.
+- [00:50:43,240 - 00:50:46,240] Not a circle, but a hyperbola.
+- [00:50:52,240 - 00:51:01,240] And it's a hyperbola with asymptotes that are at 45 degrees.
+- [00:51:01,240 - 00:51:03,240] You can see...
+- [00:51:03,240 - 00:51:06,240] Let me show you why...
+- [00:51:08,240 - 00:51:12,240] why the asymptotes are at 45 degrees.
+- [00:51:12,240 - 00:51:15,240] When omega is very large...
+- [00:51:17,240 - 00:51:20,240] When omega is very large,
+- [00:51:20,240 - 00:51:24,240] then e to the minus omega is very small, right?
+- [00:51:24,240 - 00:51:28,240] When omega is very large, e to the minus omega is very small.
+- [00:51:28,240 - 00:51:31,240] And that means both cosh and sinh
+- [00:51:31,240 - 00:51:34,240] are both essentially equal to e to the plus omega.
+- [00:51:34,240 - 00:51:37,240] In other words, when omega gets very big,
+- [00:51:37,240 - 00:51:41,240] cosh and sinh become equal to each other.
+- [00:51:41,240 - 00:51:43,240] And that's this line here.
+- [00:51:43,240 - 00:51:47,240] Cosh equals sinh along this line here.
+- [00:51:47,240 - 00:51:49,240] So when omega gets very large,
+- [00:51:49,240 - 00:51:56,240] the curve asymptotes to a curve which is at 45 degrees.
+- [00:51:56,240 - 00:51:59,240] It's not hard to see that in the other direction,
+- [00:51:59,240 - 00:52:02,240] when omega is very negative,
+- [00:52:02,240 - 00:52:07,240] that it asymptotes to the other asymptotic line here.
+- [00:52:07,240 - 00:52:11,240] So that's why it's called hyperbolic geometry.
+- [00:52:13,240 - 00:52:18,240] The hyperbolic angles, the coshes, the sinhs,
+- [00:52:18,240 - 00:52:21,240] play the same role relative to hyperbolas
+- [00:52:21,240 - 00:52:26,240] as sines and cosines do to circles.
+- [00:52:29,240 - 00:52:31,240] Any questions?
+- [00:52:35,240 - 00:52:36,240] No questions.
+- [00:52:36,240 - 00:52:40,240] So cosh, omega equals zero?
+- [00:52:40,240 - 00:52:43,240] How would you plot that hyperbola?
+- [00:52:43,240 - 00:52:46,240] Oh, cosh squared minus sinh squared equals zero?
+- [00:52:46,240 - 00:52:48,240] No.
+- [00:52:48,240 - 00:52:49,240] No, no.
+- [00:52:49,240 - 00:52:51,240] Cosh squared minus sinh squared equals one
+- [00:52:51,240 - 00:52:53,240] in the same sense that sine squared plus cosine squared.
+- [00:52:53,240 - 00:52:55,240] It never equals zero.
+- [00:52:55,240 - 00:52:58,240] I think you wanted to ask a different question.
+- [00:52:58,240 - 00:53:00,240] I think...
+- [00:53:00,240 - 00:53:03,240] Oh.
+- [00:53:03,240 - 00:53:07,240] Well, sinh omega equals zero is the horizontal axis.
+- [00:53:07,240 - 00:53:10,240] Cosh omega equals zero is the vertical axis.
+- [00:53:10,240 - 00:53:11,240] Right, right, okay.
+- [00:53:11,240 - 00:53:13,240] Well, it's the x-intercept.
+- [00:53:13,240 - 00:53:14,240] Yeah.
+- [00:53:14,240 - 00:53:15,240] It's the vertex.
+- [00:53:15,240 - 00:53:19,240] Yeah, I was just thinking, here's one point on the graph.
+- [00:53:19,240 - 00:53:20,240] Yeah.
+- [00:53:20,240 - 00:53:22,240] All right.
+- [00:53:22,240 - 00:53:24,240] The x-intercept there is one.
+- [00:53:24,240 - 00:53:25,240] Yeah.
+- [00:53:25,240 - 00:53:26,240] Yeah.
+- [00:53:26,240 - 00:53:29,240] Because cosh of zero is one.
+- [00:53:29,240 - 00:53:33,240] To see that, just plug zero in here.
+- [00:53:33,240 - 00:53:36,240] One plus one divided by two is one.
+- [00:53:36,240 - 00:53:38,240] At least it was yesterday.
+- [00:53:41,240 - 00:53:43,240] Yeah, it still is.
+- [00:53:43,240 - 00:53:44,240] Okay.
+- [00:53:45,240 - 00:53:48,240] So now we're sort of starting to cook a little bit.
+- [00:53:48,240 - 00:53:53,240] We're starting to see something that has that nice minus sign in it.
+- [00:53:53,240 - 00:53:58,240] But what's it got to do with x and t and x prime and t prime?
+- [00:53:58,240 - 00:54:02,240] We're now set up to make, let's call it a guess.
+- [00:54:02,240 - 00:54:11,240] .
+- [00:54:11,240 - 00:54:21,240] Well, it's a guess which is based on the extreme similarity between hyperbolas and circles, coshes and cosines and so forth.
+- [00:54:21,240 - 00:54:23,240] Here's the guess I'm going to make.
+- [00:54:23,240 - 00:54:24,240] And then we'll check it.
+- [00:54:24,240 - 00:54:27,240] We'll see if it does the thing we want it to do.
+- [00:54:27,240 - 00:54:35,240] My formula, instead of being this, we're now going to have, instead of x and y, we're going to have x and t.
+- [00:54:35,240 - 00:54:37,240] Time and x.
+- [00:54:37,240 - 00:54:39,240] Later on, we'll put back y and z.
+- [00:54:39,240 - 00:54:40,240] We're going to have to put back y and z.
+- [00:54:40,240 - 00:54:42,240] But they're very easy.
+- [00:54:42,240 - 00:54:43,240] Okay.
+- [00:54:43,240 - 00:54:46,240] So let's start with x prime.
+- [00:54:46,240 - 00:54:53,240] X prime is the coordinate given to a point of spacetime by the moving observer, namely me.
+- [00:54:53,240 - 00:54:59,240] And I'm going to guess that it's some combination of x and t.
+- [00:54:59,240 - 00:55:03,240] Not too different, but not the same as, where is it?
+- [00:55:03,240 - 00:55:06,240] X prime equals x minus vt.
+- [00:55:06,240 - 00:55:08,240] I'm going to try.
+- [00:55:10,240 - 00:55:15,240] Cosh omega x.
+- [00:55:15,240 - 00:55:16,240] That's right.
+- [00:55:16,240 - 00:55:25,240] X cosh omega minus t sinh omega.
+- [00:55:25,240 - 00:55:29,240] Sort of in parallel with this.
+- [00:55:29,240 - 00:55:37,240] I could put a plus sign here, but you can go back and forth between the plus and the minus by changing the sign of omega, just as you did here.
+- [00:55:37,240 - 00:55:38,240] So let's do it this way.
+- [00:55:38,240 - 00:55:43,240] X cosh omega minus t sinh omega.
+- [00:55:43,240 - 00:55:45,240] And t prime.
+- [00:55:45,240 - 00:55:50,240] Going to look similar, but without the extra minus sign here.
+- [00:55:50,240 - 00:55:58,240] This, you know, the relation between sines, cosines, and koshes and sinhs is one of just leaving out an i.
+- [00:55:58,240 - 00:56:03,240] You go from sines and cosines to koshes and sinhs by leaving out the i.
+- [00:56:03,240 - 00:56:06,240] Well, if you track it through carefully, you'll find that this minus sign is the same as the minus sign.
+- [00:56:06,240 - 00:56:11,240] You'll find that this minus sign was really an i squared.
+- [00:56:11,240 - 00:56:14,240] It's not going to matter much.
+- [00:56:14,240 - 00:56:15,240] I will just tell you.
+- [00:56:15,240 - 00:56:17,240] It really came from some i squared.
+- [00:56:17,240 - 00:56:22,240] And if you leave out i, i squared just becomes one squared.
+- [00:56:22,240 - 00:56:24,240] There's no minus sign.
+- [00:56:24,240 - 00:56:30,240] So here's the guess for the formula connecting x prime t prime with x and t.
+- [00:56:30,240 - 00:56:35,240] It equals, let's see, x sinh omega.
+- [00:56:36,240 - 00:56:44,240] Minus, no, minus.
+- [00:56:44,240 - 00:56:50,240] Plus t cosh omega.
+- [00:56:50,240 - 00:56:53,240] In this case, there are two minus signs.
+- [00:56:53,240 - 00:56:56,240] In this case, there was only one minus sign.
+- [00:56:56,240 - 00:56:57,240] Okay.
+- [00:56:57,240 - 00:57:00,240] But let's check.
+- [00:57:00,240 - 00:57:02,240] What do we want to check?
+- [00:57:02,240 - 00:57:05,240] We want to check that x prime squared.
+- [00:57:05,240 - 00:57:13,240] Minus t prime squared is equal to x squared minus t squared.
+- [00:57:13,240 - 00:57:16,240] You're probably asking yourself, what is this omega?
+- [00:57:16,240 - 00:57:19,240] What does it have to do with moving reference frames?
+- [00:57:19,240 - 00:57:22,240] I'll tell you right now what omega is.
+- [00:57:22,240 - 00:57:25,240] It's a stand-in for the velocity between the frames.
+- [00:57:25,240 - 00:57:33,240] We're going to find the relationship between omega and the relative velocity of the reference frames in a moment.
+- [00:57:33,240 - 00:57:36,240] There has to be a parameter in the Lorentz.
+- [00:57:36,240 - 00:57:42,240] These are the Lorentz transformations connecting two frames of reference.
+- [00:57:42,240 - 00:57:44,240] In the Lorentz transformations, there's a parameter.
+- [00:57:44,240 - 00:57:47,240] It's the velocity, the relative velocity.
+- [00:57:47,240 - 00:57:50,240] That parameter has been replaced by omega.
+- [00:57:50,240 - 00:57:54,240] It's a kind of angle relating the two frames, a hyperbolic angle.
+- [00:57:54,240 - 00:57:56,240] But we'll come back to that.
+- [00:57:56,240 - 00:58:01,240] For the moment, let's prove that with this transformation law here,
+- [00:58:03,240 - 00:58:07,240] that x prime squared minus t prime squared is equal to zero.
+- [00:58:07,240 - 00:58:10,240] Ah, is equal to x squared minus t squared.
+- [00:58:10,240 - 00:58:13,240] I'm getting to that point in the evening where I'm going to make mistakes.
+- [00:58:13,240 - 00:58:16,240] All right, this is easy.
+- [00:58:16,240 - 00:58:18,240] You just work it out.
+- [00:58:18,240 - 00:58:23,240] You use all you have to use is that cosine squared minus sine squared is one.
+- [00:58:23,240 - 00:58:27,240] You can work that out by yourself, but we can just see little pieces of it here.
+- [00:58:27,240 - 00:58:31,240] x prime squared will have x squared cosh squared omega.
+- [00:58:31,240 - 00:58:32,240] t prime squared will have x squared.
+- [00:58:32,240 - 00:58:33,240] t prime squared will have x squared.
+- [00:58:33,240 - 00:58:36,240] t prime squared will have x squared sin squared omega.
+- [00:58:36,240 - 00:58:40,240] If I take the difference between them, I'll get a term with an x squared
+- [00:58:40,240 - 00:58:43,240] times cosh squared minus sin squared.
+- [00:58:43,240 - 00:58:47,240] But cosh squared minus sin squared is one.
+- [00:58:47,240 - 00:58:51,240] All right, so we'll find a term with an x squared.
+- [00:58:51,240 - 00:58:55,240] When we square, take the square of the difference between the squares of this and this.
+- [00:58:55,240 - 00:58:59,240] And likewise, we'll also find the t squared.
+- [00:58:59,240 - 00:59:02,240] The cross term, when you square x prime, you'll have x t cosh sin squared.
+- [00:59:02,240 - 00:59:08,240] When you square t prime, you'll have x t cosh sin squared.
+- [00:59:08,240 - 00:59:11,240] When you subtract them, it'll cancel.
+- [00:59:11,240 - 00:59:13,240] And it's easy to check.
+- [00:59:13,240 - 00:59:18,240] It's basically one-liner to show that with this transformation here,
+- [00:59:18,240 - 00:59:22,240] x prime squared minus t prime squared is x squared minus t squared,
+- [00:59:22,240 - 00:59:25,240] which is exactly what we're looking for.
+- [00:59:25,240 - 00:59:28,240] Let me remind you why we're looking for it.
+- [00:59:28,240 - 00:59:31,240] If we find the transformation for what we're looking for,
+- [00:59:31,240 - 00:59:36,240] for which the left-hand side and the right-hand side are equal,
+- [00:59:36,240 - 00:59:41,240] then if x squared equals t squared,
+- [00:59:41,240 - 00:59:44,240] in other words, if the right-hand side is zero,
+- [00:59:44,240 - 00:59:47,240] the left-hand side will also be zero,
+- [00:59:47,240 - 00:59:50,240] but x squared, but x equals t,
+- [00:59:50,240 - 00:59:53,240] that's the same as something moving with the speed of light.
+- [00:59:53,240 - 00:59:56,240] In the x frame of reference,
+- [00:59:56,240 - 00:59:59,240] if this being zero is equivalent to the left-hand side,
+- [00:59:59,240 - 01:00:02,240] being zero,
+- [01:00:02,240 - 01:00:05,240] it says that in both frames of reference,
+- [01:00:05,240 - 01:00:08,240] the light rays move with the same velocity.
+- [01:00:08,240 - 01:00:13,240] So that's the basic tool that we're using here.
+- [01:00:13,240 - 01:00:21,240] x prime squared minus t prime squared is equal to x squared minus t squared.
+- [01:00:21,240 - 01:00:27,240] That does follow by a couple of lines using cosh squared minus sin squared.
+- [01:00:27,240 - 01:00:28,240] So,
+- [01:00:28,240 - 01:00:31,240] cosh squared minus sin squared equals one.
+- [01:00:31,240 - 01:00:32,240] But what I want to do,
+- [01:00:32,240 - 01:00:36,240] let's take another couple of minutes,
+- [01:00:36,240 - 01:00:38,240] no, let's take a break for five minutes,
+- [01:00:38,240 - 01:00:40,240] and then come back,
+- [01:00:40,240 - 01:00:43,240] and connect these variables,
+- [01:00:43,240 - 01:00:44,240] omega,
+- [01:00:44,240 - 01:00:50,240] with the velocity of the moving frame of reference.
+- [01:00:50,240 - 01:00:56,240] Somebody asked me a question about the ether
+- [01:00:56,240 - 01:01:00,240] and what it was that people were thinking.
+- [01:01:00,240 - 01:01:04,240] Somehow Einstein never got trapped into this mode of thinking.
+- [01:01:04,240 - 01:01:10,240] What were they thinking about when they were thinking about the ether?
+- [01:01:10,240 - 01:01:13,240] What exactly was the Michelson-Morley experiment?
+- [01:01:13,240 - 01:01:17,240] Well, I'll just spend a minute or two mentioning it.
+- [01:01:17,240 - 01:01:23,240] Certainly, Maxwell understood
+- [01:01:23,240 - 01:01:25,240] that his equations were not consistent.
+- [01:01:25,240 - 01:01:32,240] He understood that his equations were not consistent with Newtonian relativity.
+- [01:01:32,240 - 01:01:34,240] He understood that.
+- [01:01:34,240 - 01:01:37,240] But his image of what was going on
+- [01:01:37,240 - 01:01:39,240] is that the propagation of light
+- [01:01:39,240 - 01:01:44,240] was very similar to the propagation of sound in a material
+- [01:01:44,240 - 01:01:49,240] or water waves propagating on water.
+- [01:01:49,240 - 01:01:53,240] And of course it is true
+- [01:01:53,240 - 01:01:57,240] that if you move relative to the atmosphere,
+- [01:01:57,240 - 01:01:59,240] or move relative to the substance
+- [01:01:59,240 - 01:02:02,240] that sound is propagating in,
+- [01:02:02,240 - 01:02:05,240] you'll see sound move with different velocities,
+- [01:02:05,240 - 01:02:07,240] depending on your motion.
+- [01:02:07,240 - 01:02:10,240] If you're at rest in a gas of material,
+- [01:02:10,240 - 01:02:15,240] there's a natural sense in which there's a particular rest frame.
+- [01:02:15,240 - 01:02:18,240] The rest frame is the frame in which, on the average,
+- [01:02:18,240 - 01:02:20,240] the molecules have zero velocity.
+- [01:02:20,240 - 01:02:22,240] If you're in that reference frame,
+- [01:02:22,240 - 01:02:26,240] then first of all light has the same velocity that way as that way,
+- [01:02:26,240 - 01:02:27,240] number one,
+- [01:02:27,240 - 01:02:30,240] and it has a velocity that's determined by the properties
+- [01:02:30,240 - 01:02:33,240] of the fluid that the sound is moving in.
+- [01:02:33,240 - 01:02:35,240] Okay.
+- [01:02:35,240 - 01:02:41,240] Maxwell more or less thought that light was the same kind of thing,
+- [01:02:41,240 - 01:02:43,240] that there was a material,
+- [01:02:43,240 - 01:02:45,240] and the material had a rest frame,
+- [01:02:45,240 - 01:02:48,240] and that particular rest frame was the frame
+- [01:02:48,240 - 01:02:50,240] in which light would move with the same velocity
+- [01:02:50,240 - 01:02:52,240] to the left as to the right.
+- [01:02:52,240 - 01:02:56,240] And he thought that he was working out
+- [01:02:56,240 - 01:03:01,240] the mechanics or the behavior of this particular material,
+- [01:03:01,240 - 01:03:05,240] and that we were pretty much at rest relative to this material,
+- [01:03:05,240 - 01:03:08,240] and that's why we saw light moving the same way
+- [01:03:08,240 - 01:03:10,240] to the left or the right.
+- [01:03:12,240 - 01:03:14,240] One would have to say then,
+- [01:03:14,240 - 01:03:16,240] that Maxwell did not believe
+- [01:03:16,240 - 01:03:21,240] that his equations were a universal set of laws of physics,
+- [01:03:21,240 - 01:03:25,240] but that they would change
+- [01:03:25,240 - 01:03:28,240] when you moved from frame to frame.
+- [01:03:28,240 - 01:03:30,240] Just happened by some luck,
+- [01:03:30,240 - 01:03:32,240] we happened to be more or less at rest
+- [01:03:32,240 - 01:03:34,240] relative to the ether,
+- [01:03:34,240 - 01:03:36,240] to this strange material.
+- [01:03:39,240 - 01:03:42,240] Of course you could do an experiment with sound.
+- [01:03:42,240 - 01:03:45,240] If you're moving through the sound,
+- [01:03:45,240 - 01:03:48,240] you can check that the velocity in different directions
+- [01:03:48,240 - 01:03:49,240] is different.
+- [01:03:49,240 - 01:03:50,240] You do,
+- [01:03:50,240 - 01:03:54,240] let's not worry exactly how you do that.
+- [01:03:54,240 - 01:03:57,240] That's what the Michelson-Morley experiment was.
+- [01:03:57,240 - 01:04:00,240] Michelson, and Morley I suppose,
+- [01:04:00,240 - 01:04:03,240] said, look, the Earth is going around in an orbit.
+- [01:04:03,240 - 01:04:05,240] Maybe at one season of the year
+- [01:04:05,240 - 01:04:08,240] we just happen to be at rest relative to the ether,
+- [01:04:08,240 - 01:04:10,240] by accident,
+- [01:04:10,240 - 01:04:12,240] and some other season,
+- [01:04:12,240 - 01:04:13,240] six months later,
+- [01:04:13,240 - 01:04:16,240] we're going to be moving in the opposite direction,
+- [01:04:16,240 - 01:04:18,240] and we won't, well,
+- [01:04:18,240 - 01:04:19,240] we won't be at rest.
+- [01:04:20,240 - 01:04:22,240] Only at one point in the orbit
+- [01:04:22,240 - 01:04:24,240] could we be at rest relative to the ether,
+- [01:04:24,240 - 01:04:25,240] so at any other point in the orbit,
+- [01:04:25,240 - 01:04:27,240] we wouldn't be.
+- [01:04:27,240 - 01:04:29,240] So if we measure in November
+- [01:04:29,240 - 01:04:32,240] that light moves the same in all possible directions,
+- [01:04:32,240 - 01:04:34,240] then in,
+- [01:04:34,240 - 01:04:36,240] what's the opposite of November?
+- [01:04:36,240 - 01:04:37,240] May.
+- [01:04:37,240 - 01:04:40,240] Then in May we should find that light is moving
+- [01:04:40,240 - 01:04:43,240] with different velocities in different directions.
+- [01:04:43,240 - 01:04:45,240] Then he tried it,
+- [01:04:45,240 - 01:04:48,240] and a very fancy and sophisticated way
+- [01:04:48,240 - 01:04:50,240] of measuring the relative velocity
+- [01:04:50,240 - 01:04:52,240] of the light in different directions,
+- [01:04:52,240 - 01:04:54,240] but he found that there was no discrepancy,
+- [01:04:54,240 - 01:04:57,240] that the light traveled the same velocity
+- [01:04:57,240 - 01:05:00,240] in every direction at every time of year.
+- [01:05:03,240 - 01:05:05,240] There were all sorts of ways
+- [01:05:05,240 - 01:05:07,240] to try to rescue the ether,
+- [01:05:07,240 - 01:05:09,240] but none of them worked.
+- [01:05:09,240 - 01:05:11,240] None of them worked,
+- [01:05:11,240 - 01:05:13,240] and the result was
+- [01:05:13,240 - 01:05:16,240] one had to somehow get into the heart
+- [01:05:16,240 - 01:05:18,240] of space and time and velocity
+- [01:05:18,240 - 01:05:21,240] and distance and all those things
+- [01:05:21,240 - 01:05:23,240] in a much deeper way,
+- [01:05:23,240 - 01:05:25,240] in a way that didn't involve the idea
+- [01:05:25,240 - 01:05:27,240] of a material at rest
+- [01:05:27,240 - 01:05:29,240] in some frame of reference
+- [01:05:29,240 - 01:05:31,240] that propagated the light.
+- [01:05:31,240 - 01:05:33,240] Okay.
+- [01:05:33,240 - 01:05:35,240] Where are we?
+- [01:05:35,240 - 01:05:38,240] I've forgotten where we were when we stopped.
+- [01:05:38,240 - 01:05:40,240] Somebody remind me.
+- [01:05:40,240 - 01:05:43,240] What's omega?
+- [01:05:43,240 - 01:05:44,240] Who?
+- [01:05:44,240 - 01:05:46,240] What's omega?
+- [01:05:46,240 - 01:05:47,240] Ah.
+- [01:05:47,240 - 01:05:48,240] Omega.
+- [01:05:48,240 - 01:05:50,240] Yeah, what is omega?
+- [01:05:50,240 - 01:05:51,240] Forgot.
+- [01:05:51,240 - 01:05:52,240] I don't remember what omega is.
+- [01:05:52,240 - 01:05:54,240] How omega was related to the speed of light.
+- [01:05:54,240 - 01:05:55,240] Ah.
+- [01:05:55,240 - 01:05:56,240] How omega is related,
+- [01:05:56,240 - 01:05:57,240] not to the speed of light,
+- [01:05:57,240 - 01:05:58,240] but to the velocity
+- [01:05:58,240 - 01:06:00,240] of the moving reference frame.
+- [01:06:00,240 - 01:06:02,240] Here we have two reference frames,
+- [01:06:02,240 - 01:06:04,240] xt and x prime and t prime.
+- [01:06:04,240 - 01:06:06,240] What's the relationship between them?
+- [01:06:06,240 - 01:06:08,240] Well, the whole goal here
+- [01:06:08,240 - 01:06:10,240] was to understand the relationship
+- [01:06:10,240 - 01:06:12,240] between frames of reference
+- [01:06:12,240 - 01:06:14,240] moving with relative velocity
+- [01:06:14,240 - 01:06:16,240] between them.
+- [01:06:16,240 - 01:06:21,240] Omega is not exactly the relative velocity,
+- [01:06:21,240 - 01:06:23,240] but it is closely related to it.
+- [01:06:23,240 - 01:06:28,240] Okay, let's see if we can work out the relationship.
+- [01:06:28,240 - 01:06:30,240] We know enough to do it.
+- [01:06:30,240 - 01:06:32,240] Let's see if we can work out the relationship
+- [01:06:32,240 - 01:06:35,240] between omega and the velocity
+- [01:06:35,240 - 01:06:37,240] of the moving frame.
+- [01:06:37,240 - 01:06:39,240] All right.
+- [01:06:39,240 - 01:06:43,240] Again, let's go back to this picture.
+- [01:06:46,240 - 01:06:49,240] Here's a frame of reference moving.
+- [01:06:58,240 - 01:07:00,240] Let's redraw it.
+- [01:07:03,240 - 01:07:06,240] Here's my origin moving along.
+- [01:07:06,240 - 01:07:07,240] Okay.
+- [01:07:07,240 - 01:07:09,240] What does it mean to say
+- [01:07:09,240 - 01:07:11,240] that from your perspective
+- [01:07:11,240 - 01:07:13,240] my frame of reference, or my origin,
+- [01:07:13,240 - 01:07:15,240] is moving with velocity v?
+- [01:07:15,240 - 01:07:17,240] Well, by definition,
+- [01:07:17,240 - 01:07:19,240] this is not a law now,
+- [01:07:19,240 - 01:07:21,240] this is a definition,
+- [01:07:21,240 - 01:07:23,240] it says that this line here
+- [01:07:23,240 - 01:07:26,240] has the equation x equals vt.
+- [01:07:26,240 - 01:07:29,240] That's the definition of this v here.
+- [01:07:29,240 - 01:07:33,240] My origin moves relative to your origin.
+- [01:07:33,240 - 01:07:36,240] It moves with a uniform constant velocity.
+- [01:07:36,240 - 01:07:38,240] That's an assumption that we're talking about
+- [01:07:38,240 - 01:07:40,240] two inertial frames of reference.
+- [01:07:40,240 - 01:07:44,240] And you, in your frame of reference,
+- [01:07:44,240 - 01:07:47,240] will write x equals vt.
+- [01:07:47,240 - 01:07:50,240] That's the definition of v, if you like.
+- [01:07:50,240 - 01:07:52,240] What will I call it?
+- [01:07:52,240 - 01:07:55,240] I will call it x prime equals zero.
+- [01:07:55,240 - 01:07:57,240] All along there, I will say
+- [01:07:57,240 - 01:07:59,240] x prime is equal to zero.
+- [01:07:59,240 - 01:08:01,240] It's my origin of coordinates.
+- [01:08:01,240 - 01:08:02,240] Okay.
+- [01:08:02,240 - 01:08:08,240] Now let's come to this
+- [01:08:08,240 - 01:08:10,240] transformation law here
+- [01:08:10,240 - 01:08:12,240] and see if we can spot
+- [01:08:12,240 - 01:08:14,240] how to identify vt.
+- [01:08:14,240 - 01:08:19,240] Well, x prime equals zero.
+- [01:08:19,240 - 01:08:21,240] That's this trajectory moving
+- [01:08:21,240 - 01:08:24,240] at an angle with a velocity v.
+- [01:08:24,240 - 01:08:27,240] x prime equals zero is the same
+- [01:08:27,240 - 01:08:32,240] as saying x cosh omega
+- [01:08:32,240 - 01:08:38,240] equals t sinh omega.
+- [01:08:38,240 - 01:08:40,240] x prime equals zero.
+- [01:08:40,240 - 01:08:42,240] Set this side equal to zero.
+- [01:08:42,240 - 01:08:43,240] And that says that
+- [01:08:43,240 - 01:08:48,240] x cosh omega equals t sinh omega.
+- [01:08:48,240 - 01:08:49,240] All right.
+- [01:08:49,240 - 01:08:50,240] So whatever the connection
+- [01:08:50,240 - 01:08:52,240] between velocity and omega is,
+- [01:08:52,240 - 01:08:54,240] it must be such that
+- [01:08:54,240 - 01:08:56,240] when x prime is equal to zero,
+- [01:08:56,240 - 01:09:00,240] x cosh omega equals t sinh omega.
+- [01:09:00,240 - 01:09:03,240] Well, let's look at that equation.
+- [01:09:03,240 - 01:09:06,240] It also says that x is equal to
+- [01:09:06,240 - 01:09:12,240] sinh omega over cosh omega times t.
+- [01:09:12,240 - 01:09:19,240] Well, that's interesting
+- [01:09:19,240 - 01:09:21,240] because it's also supposed to be
+- [01:09:21,240 - 01:09:25,240] equivalent to x equals vt.
+- [01:09:25,240 - 01:09:27,240] Now I know exactly how to identify
+- [01:09:27,240 - 01:09:29,240] what the velocity is
+- [01:09:29,240 - 01:09:31,240] as a function of omega.
+- [01:09:31,240 - 01:09:34,240] The velocity of the moving transformation,
+- [01:09:34,240 - 01:09:36,240] the moving coordinate system,
+- [01:09:36,240 - 01:09:40,240] must just be sinh omega over cosh omega.
+- [01:09:40,240 - 01:09:41,240] Okay?
+- [01:09:41,240 - 01:09:43,240] That's the only way
+- [01:09:43,240 - 01:09:45,240] these two equations can be the same.
+- [01:09:45,240 - 01:09:47,240] x equals vt.
+- [01:09:47,240 - 01:09:50,240] x equals sinh omega over cosh omega times t.
+- [01:09:50,240 - 01:09:51,240] So now we know it.
+- [01:09:51,240 - 01:09:52,240] We know what the relationship
+- [01:09:52,240 - 01:09:55,240] between velocity and omega is.
+- [01:09:55,240 - 01:09:57,240] Write it down.
+- [01:09:57,240 - 01:10:00,240] The velocity of the moving frame.
+- [01:10:00,240 - 01:10:01,240] Now this is not the velocity of light.
+- [01:10:01,240 - 01:10:07,240] It's just the velocity of the moving frame
+- [01:10:07,240 - 01:10:09,240] must just be sinh omega
+- [01:10:09,240 - 01:10:12,240] over cosh omega.
+- [01:10:12,240 - 01:10:17,240] Well, actually I want to invert this relationship.
+- [01:10:17,240 - 01:10:20,240] I want to find sinh and cosh omega
+- [01:10:20,240 - 01:10:22,240] in terms of the velocity.
+- [01:10:22,240 - 01:10:25,240] I want to rewrite these Lorentz transformations.
+- [01:10:25,240 - 01:10:26,240] Where are they?
+- [01:10:26,240 - 01:10:30,240] I want to rewrite these Lorentz transformations
+- [01:10:30,240 - 01:10:33,240] in terms of the velocity.
+- [01:10:33,240 - 01:10:35,240] That's the familiar form
+- [01:10:35,240 - 01:10:37,240] in which you learn about it
+- [01:10:37,240 - 01:10:40,240] in elementary relativity books.
+- [01:10:40,240 - 01:10:43,240] x prime is equal to something with velocities in it.
+- [01:10:43,240 - 01:10:45,240] To exhibit that,
+- [01:10:45,240 - 01:10:48,240] all we have to do is to find sinh and cosh omega
+- [01:10:48,240 - 01:10:50,240] in terms of the velocity.
+- [01:10:50,240 - 01:10:52,240] That's not very hard.
+- [01:10:52,240 - 01:10:54,240] Let's work it out.
+- [01:10:54,240 - 01:11:00,240] The first step is to square it.
+- [01:11:00,240 - 01:11:03,240] And to write v squared is equal to
+- [01:11:03,240 - 01:11:06,240] sinh omega squared
+- [01:11:06,240 - 01:11:08,240] over cosh omega squared.
+- [01:11:08,240 - 01:11:10,240] That was easy.
+- [01:11:10,240 - 01:11:15,240] Next, I'm going to get rid of sinh omega squared
+- [01:11:15,240 - 01:11:16,240] and substitute.
+- [01:11:16,240 - 01:11:17,240] Where is it?
+- [01:11:17,240 - 01:11:20,240] I lost it.
+- [01:11:20,240 - 01:11:24,240] One is equal to cosh omega squared
+- [01:11:24,240 - 01:11:30,240] minus sinh omega squared.
+- [01:11:30,240 - 01:11:31,240] All right.
+- [01:11:31,240 - 01:11:33,240] So wherever I see sinh omega squared,
+- [01:11:33,240 - 01:11:35,240] I can substitute from here.
+- [01:11:35,240 - 01:11:40,240] Namely, cosh squared omega minus one
+- [01:11:40,240 - 01:11:44,240] is equal to sinh squared omega.
+- [01:11:44,240 - 01:11:46,240] So here we are.
+- [01:11:46,240 - 01:11:48,240] This is just equal to
+- [01:11:48,240 - 01:11:51,240] cosh of omega squared
+- [01:11:51,240 - 01:11:53,240] minus one
+- [01:11:53,240 - 01:11:59,240] divided by cosh of omega squared.
+- [01:11:59,240 - 01:12:02,240] Or,
+- [01:12:02,240 - 01:12:04,240] let's multiply by,
+- [01:12:04,240 - 01:12:07,240] what I want to do is solve for cosh omega
+- [01:12:07,240 - 01:12:09,240] in terms of velocity.
+- [01:12:09,240 - 01:12:12,240] I want to get rid of all these coshes and sinhs of omega
+- [01:12:12,240 - 01:12:14,240] and rewrite it in terms of velocity.
+- [01:12:14,240 - 01:12:18,240] So first multiply by cosh omega
+- [01:12:18,240 - 01:12:20,240] squared.
+- [01:12:20,240 - 01:12:23,240] We have cosh squared omega
+- [01:12:23,240 - 01:12:25,240] times v squared
+- [01:12:25,240 - 01:12:29,240] equals cosh squared omega minus one.
+- [01:12:29,240 - 01:12:35,240] Or,
+- [01:12:35,240 - 01:12:38,240] it looks to me like this is cosh
+- [01:12:38,240 - 01:12:40,240] squared omega
+- [01:12:40,240 - 01:12:43,240] times one minus v squared
+- [01:12:43,240 - 01:12:45,240] equals one.
+- [01:12:45,240 - 01:12:49,240] What I've done is transpose,
+- [01:12:49,240 - 01:12:57,240] yeah,
+- [01:12:57,240 - 01:13:00,240] cosh squared times v squared
+- [01:13:00,240 - 01:13:02,240] minus cosh squared itself.
+- [01:13:02,240 - 01:13:06,240] That gives you cosh squared one minus v squared
+- [01:13:06,240 - 01:13:07,240] equals one.
+- [01:13:07,240 - 01:13:09,240] Change the sign.
+- [01:13:09,240 - 01:13:13,240] Can everybody see that the second line follows from the first?
+- [01:13:15,240 - 01:13:17,240] I'll give you a second.
+- [01:13:17,240 - 01:13:24,240] Put the one on the left-hand side and then put the v squared on the right-hand side.
+- [01:13:24,240 - 01:13:25,240] Yeah.
+- [01:13:25,240 - 01:13:26,240] Yeah.
+- [01:13:26,240 - 01:13:27,240] It's clear.
+- [01:13:27,240 - 01:13:28,240] Okay.
+- [01:13:28,240 - 01:13:29,240] Finally,
+- [01:13:29,240 - 01:13:30,240] we get
+- [01:13:30,240 - 01:13:34,240] that cosh omega
+- [01:13:34,240 - 01:13:38,240] is equal to one divided by one minus v squared,
+- [01:13:38,240 - 01:13:43,240] but now I have to take the square root.
+- [01:13:43,240 - 01:13:52,240] Cosh omega
+- [01:13:52,240 - 01:13:54,240] divide by one minus v squared and then take the square root.
+- [01:13:54,240 - 01:13:55,240] Okay.
+- [01:13:55,240 - 01:13:58,240] And that gives you cosh omega.
+- [01:13:58,240 - 01:14:03,240] Now, we've all seen these square roots of one minus v squared in relativity formulas.
+- [01:14:03,240 - 01:14:04,240] Here's where it begins to come.
+- [01:14:04,240 - 01:14:06,240] Here we begin to see it materializing.
+- [01:14:06,240 - 01:14:08,240] What about sinh omega?
+- [01:14:08,240 - 01:14:13,240] Let's also write down sinh omega.
+- [01:14:13,240 - 01:14:15,240] Well, from here,
+- [01:14:15,240 - 01:14:17,240] we see that sinh omega
+- [01:14:17,240 - 01:14:20,240] is just equal to v times cosh omega.
+- [01:14:20,240 - 01:14:21,240] This is easy.
+- [01:14:21,240 - 01:14:24,240] Sinh omega equals v times cosh omega.
+- [01:14:24,240 - 01:14:35,240] So, sinh omega is v divided by square root of one minus v squared.
+- [01:14:35,240 - 01:14:40,240] Let's go back to these Lorentz transformations over here
+- [01:14:40,240 - 01:14:43,240] and write them getting rid of the trigonometric functions,
+- [01:14:43,240 - 01:14:46,240] the hyperbolic trigonometric functions,
+- [01:14:46,240 - 01:14:50,240] and substituting good old familiar velocities.
+- [01:14:50,240 - 01:14:53,240] Let's get rid of this
+- [01:14:53,240 - 01:15:00,240] and substitute the good old ordinary velocities.
+- [01:15:00,240 - 01:15:02,240] Okay, so we have here
+- [01:15:02,240 - 01:15:07,240] x prime equals x times cosh omega
+- [01:15:07,240 - 01:15:11,240] and that's divided by square root of one minus v squared.
+- [01:15:11,240 - 01:15:16,240] Then there's minus t times sinh omega,
+- [01:15:16,240 - 01:15:21,240] which is v over the square root of one minus v squared.
+- [01:15:21,240 - 01:15:22,240] If I put the two of them together,
+- [01:15:22,240 - 01:15:25,240] and combine them over the same denominator,
+- [01:15:25,240 - 01:15:30,240] it's just x minus vt
+- [01:15:30,240 - 01:15:34,240] divided by square root
+- [01:15:34,240 - 01:15:39,240] of one minus v squared.
+- [01:15:39,240 - 01:15:43,240] I think most of you have probably seen that before.
+- [01:15:43,240 - 01:15:45,240] Maybe slightly different.
+- [01:15:45,240 - 01:15:48,240] Let's clean it up a little bit.
+- [01:15:48,240 - 01:15:50,240] x prime equals
+- [01:15:50,240 - 01:15:53,240] x minus vt
+- [01:15:53,240 - 01:15:57,240] divided by the square root of one minus v squared.
+- [01:15:57,240 - 01:15:59,240] What about t prime?
+- [01:15:59,240 - 01:16:05,240] t prime is equal to t
+- [01:16:05,240 - 01:16:07,240] minus vx
+- [01:16:07,240 - 01:16:11,240] over square root of one minus v squared.
+- [01:16:11,240 - 01:16:15,240] t prime is equal to t times cosh,
+- [01:16:15,240 - 01:16:17,240] cosh is just one over square root,
+- [01:16:17,240 - 01:16:20,240] and then x times sinh,
+- [01:16:20,240 - 01:16:22,240] that gives us the extra v.
+- [01:16:22,240 - 01:16:29,240] In other words, the formulas are more or less symmetrical.
+- [01:16:29,240 - 01:16:31,240] And those are our good old Lorentz transformations.
+- [01:16:31,240 - 01:16:34,240] Now what's missing is the speed of light.
+- [01:16:34,240 - 01:16:36,240] Let's put back the speed of light.
+- [01:16:36,240 - 01:16:41,240] To put back the speed of light is an exercise in dimensional analysis.
+- [01:16:41,240 - 01:16:46,240] There's only one possible way the speed of light can fit into these equations.
+- [01:16:46,240 - 01:16:50,240] They have to be modified so that they're dimensionally correct.
+- [01:16:50,240 - 01:16:54,240] First of all, one is dimensionless.
+- [01:16:54,240 - 01:16:56,240] It has no dimensions, it's just one.
+- [01:16:56,240 - 01:16:59,240] Velocity is not dimensionless,
+- [01:16:59,240 - 01:17:03,240] unless, of course, we use dimensionless notation for it.
+- [01:17:03,240 - 01:17:08,240] But if velocity is measured in meters per second,
+- [01:17:08,240 - 01:17:10,240] then it's not dimensionless.
+- [01:17:10,240 - 01:17:12,240] How do we make v squared dimensionless?
+- [01:17:12,240 - 01:17:14,240] We divide it by the square of the speed of light.
+- [01:17:14,240 - 01:17:17,240] In other words, this v squared, which is here,
+- [01:17:17,240 - 01:17:19,240] which has been defined
+- [01:17:19,240 - 01:17:22,240] in units in which the speed of light is one,
+- [01:17:22,240 - 01:17:27,240] has to be replaced by v squared over c squared.
+- [01:17:27,240 - 01:17:30,240] Likewise over here.
+- [01:17:30,240 - 01:17:33,240] v squared over c squared.
+- [01:17:33,240 - 01:17:37,240] Now, velocity times time does have...
+- [01:17:37,240 - 01:17:41,240] Notice, first of all, the left-hand side has units of length.
+- [01:17:41,240 - 01:17:44,240] The right-hand side, this is dimensionless.
+- [01:17:44,240 - 01:17:46,240] x has units of length,
+- [01:17:46,240 - 01:17:49,240] but so does velocity times time.
+- [01:17:49,240 - 01:17:51,240] So this is okay.
+- [01:17:51,240 - 01:17:54,240] This is dimensionally consistent as it is.
+- [01:17:54,240 - 01:17:55,240] But over here it's not.
+- [01:17:55,240 - 01:17:57,240] The left-hand side has dimensions of time.
+- [01:17:57,240 - 01:17:59,240] That's all right.
+- [01:17:59,240 - 01:18:02,240] 1 minus v squared over c squared, that's dimensionless.
+- [01:18:02,240 - 01:18:04,240] This has units of time.
+- [01:18:04,240 - 01:18:07,240] But what about velocity times x?
+- [01:18:07,240 - 01:18:10,240] Velocity times x does not have units of time.
+- [01:18:10,240 - 01:18:12,240] In order to give it units of time,
+- [01:18:12,240 - 01:18:15,240] you have to divide it by c squared.
+- [01:18:15,240 - 01:18:18,240] Okay, let's check that.
+- [01:18:18,240 - 01:18:23,240] Velocity is length over time
+- [01:18:23,240 - 01:18:25,240] times length
+- [01:18:25,240 - 01:18:27,240] divided by c squared.
+- [01:18:27,240 - 01:18:29,240] That's length squared...
+- [01:18:29,240 - 01:18:32,240] Oh, it's correct.
+- [01:18:32,240 - 01:18:37,240] It's correct.
+- [01:18:37,240 - 01:18:40,240] All right, this is probably familiar to most of you
+- [01:18:40,240 - 01:18:43,240] who've seen relativity once or twice before.
+- [01:18:43,240 - 01:18:46,240] These are the equations relating
+- [01:18:46,240 - 01:18:49,240] two different moving coordinate systems
+- [01:18:49,240 - 01:18:51,240] moving relative to the x-axis.
+- [01:18:51,240 - 01:18:53,240] But you see, the deep mathematics
+- [01:18:53,240 - 01:18:56,240] or the mathematical structure of it
+- [01:18:56,240 - 01:18:59,240] in many ways is best reflected
+- [01:18:59,240 - 01:19:03,240] by this kind of hyperbolic geometry here.
+- [01:19:03,240 - 01:19:08,240] And, you know, most physicists by now
+- [01:19:08,240 - 01:19:12,240] never write down the Lorentz transformations
+- [01:19:12,240 - 01:19:14,240] in this form.
+- [01:19:14,240 - 01:19:16,240] Much more likely to write them
+- [01:19:16,240 - 01:19:18,240] in this form.
+- [01:19:18,240 - 01:19:20,240] Easier to manipulate.
+- [01:19:20,240 - 01:19:22,240] Easier to use trigonometry
+- [01:19:22,240 - 01:19:27,240] or hyperbolic trigonometry.
+- [01:19:27,240 - 01:19:29,240] It's a little exercise.
+- [01:19:29,240 - 01:19:31,240] It's a nice little exercise
+- [01:19:31,240 - 01:19:36,240] to use the hyperbolic trigonometry
+- [01:19:36,240 - 01:19:40,240] to compute the compounding
+- [01:19:40,240 - 01:19:42,240] of two Lorentz transformations.
+- [01:19:42,240 - 01:19:45,240] If frame two is moving relative
+- [01:19:45,240 - 01:19:48,240] to frame one with velocity v,
+- [01:19:48,240 - 01:19:50,240] and frame three is moving relative
+- [01:19:50,240 - 01:19:52,240] to two with velocity v prime,
+- [01:19:52,240 - 01:19:55,240] how is three moving relative to one?
+- [01:19:55,240 - 01:19:57,240] The answer is very simple
+- [01:19:57,240 - 01:19:59,240] in terms of hyperbolic angles.
+- [01:19:59,240 - 01:20:02,240] You add the hyperbolic angles.
+- [01:20:02,240 - 01:20:03,240] Not the velocities,
+- [01:20:03,240 - 01:20:05,240] but the hyperbolic angles.
+- [01:20:05,240 - 01:20:09,240] The hyperbolic angle of three moving relative to one
+- [01:20:09,240 - 01:20:13,240] is the hyperbolic angle of three moving relative to two
+- [01:20:13,240 - 01:20:16,240] plus two moving relative to one.
+- [01:20:16,240 - 01:20:18,240] And then you use a bit of trigonometry
+- [01:20:18,240 - 01:20:20,240] or hyperbolic trigonometry
+- [01:20:20,240 - 01:20:24,240] to figure out how you do
+- [01:20:24,240 - 01:20:27,240] the cinches and coshes
+- [01:20:27,240 - 01:20:30,240] of the sum of two hyperbolic angles.
+- [01:20:30,240 - 01:20:32,240] Very straightforward.
+- [01:20:32,240 - 01:20:34,240] And I'll leave it as an exercise
+- [01:20:34,240 - 01:20:36,240] to see if you can work that out.
+- [01:20:36,240 - 01:20:38,240] Much easier than anything else.
+- [01:20:38,240 - 01:20:41,240] Okay, so there we have
+- [01:20:43,240 - 01:20:46,240] the Lorentz transformations.
+- [01:20:53,240 - 01:20:55,240] Yeah, oh, absolutely, yes.
+- [01:20:55,240 - 01:20:57,240] That's a good point.
+- [01:20:57,240 - 01:21:00,240] Yeah, when we, that's right.
+- [01:21:00,240 - 01:21:04,240] If we have frame one,
+- [01:21:04,240 - 01:21:07,240] let's call this x1 and y1,
+- [01:21:07,240 - 01:21:10,240] x2 and y2,
+- [01:21:10,240 - 01:21:12,240] and finally x3,
+- [01:21:13,240 - 01:21:18,240] and y3,
+- [01:21:18,240 - 01:21:21,240] well, then the angle
+- [01:21:21,240 - 01:21:23,240] of two, let's call,
+- [01:21:23,240 - 01:21:25,240] of three relative to one,
+- [01:21:25,240 - 01:21:28,240] let's call it theta one three,
+- [01:21:28,240 - 01:21:31,240] is just equal to theta one two
+- [01:21:31,240 - 01:21:33,240] plus theta two three.
+- [01:21:33,240 - 01:21:37,240] The angle connecting frame one with frame three
+- [01:21:37,240 - 01:21:39,240] is just the sum of the angle
+- [01:21:39,240 - 01:21:41,240] theta one two
+- [01:21:41,240 - 01:21:46,240] plus theta two three.
+- [01:21:46,240 - 01:21:48,240] So in that respect,
+- [01:21:48,240 - 01:21:50,240] the Lorentz transformations are much simpler
+- [01:21:50,240 - 01:21:52,240] in terms of the omegas.
+- [01:21:52,240 - 01:21:56,240] It's the omegas which combine together
+- [01:21:56,240 - 01:21:59,240] to add when you add velocities.
+- [01:21:59,240 - 01:22:02,240] Now, how different is omega
+- [01:22:02,240 - 01:22:04,240] from the velocity?
+- [01:22:04,240 - 01:22:06,240] Let's work in units in which
+- [01:22:06,240 - 01:22:08,240] the speed of light is equal to one.
+- [01:22:08,240 - 01:22:10,240] Where is our formula for velocity?
+- [01:22:10,240 - 01:22:13,240] All right, let's take this formula over here.
+- [01:22:13,240 - 01:22:27,240] What is sinh omega for small omega?
+- [01:22:27,240 - 01:22:34,240] Let's put the c squared there.
+- [01:22:34,240 - 01:22:37,240] Let's not put the c squared there.
+- [01:22:37,240 - 01:22:39,240] We'll not put the c squared there.
+- [01:22:39,240 - 01:22:44,240] Sinh omega is essentially omega
+- [01:22:44,240 - 01:22:46,240] when omega is small,
+- [01:22:46,240 - 01:22:48,240] just like sine is theta
+- [01:22:48,240 - 01:22:50,240] when theta is small.
+- [01:22:50,240 - 01:22:53,240] The sinh function,
+- [01:22:53,240 - 01:22:58,240] the Cauch function looks like this.
+- [01:22:58,240 - 01:23:01,240] The sinh function looks like this.
+- [01:23:01,240 - 01:23:04,240] But it crosses the axis
+- [01:23:04,240 - 01:23:07,240] with a slope of one.
+- [01:23:07,240 - 01:23:09,240] For small omega,
+- [01:23:09,240 - 01:23:12,240] sinh omega is proportional to omega.
+- [01:23:12,240 - 01:23:14,240] For small velocity,
+- [01:23:14,240 - 01:23:17,240] one minus v squared is very close to one.
+- [01:23:17,240 - 01:23:19,240] If the velocity is a hundredth
+- [01:23:19,240 - 01:23:21,240] of the speed of light,
+- [01:23:21,240 - 01:23:23,240] then this to within one ten thousandth
+- [01:23:23,240 - 01:23:25,240] is just one.
+- [01:23:25,240 - 01:23:27,240] If we're talking about velocities
+- [01:23:27,240 - 01:23:29,240] a millionth of the speed of light,
+- [01:23:29,240 - 01:23:31,240] then this is very close to one.
+- [01:23:31,240 - 01:23:33,240] And so sinh omega and velocity
+- [01:23:33,240 - 01:23:35,240] are very close to each other.
+- [01:23:35,240 - 01:23:37,240] Let's see what's going on here.
+- [01:23:39,240 - 01:23:42,240] Thanks.
+- [01:23:42,240 - 01:23:44,240] Okay, so for small velocities,
+- [01:23:44,240 - 01:23:46,240] omega and velocity are the same.
+- [01:23:46,240 - 01:23:48,240] The actual correct statement
+- [01:23:48,240 - 01:23:50,240] is that v over c
+- [01:23:50,240 - 01:23:52,240] is like omega.
+- [01:23:52,240 - 01:23:54,240] The dimensionless velocity
+- [01:23:54,240 - 01:23:56,240] over the speed of light
+- [01:23:56,240 - 01:23:58,240] is like omega
+- [01:23:58,240 - 01:24:00,240] for small omega.
+- [01:24:00,240 - 01:24:02,240] And so you can see
+- [01:24:02,240 - 01:24:04,240] that the velocity of light
+- [01:24:04,240 - 01:24:06,240] is like omega.
+- [01:24:06,240 - 01:24:07,240] And so,
+- [01:24:07,240 - 01:24:08,240] for small omega,
+- [01:24:08,240 - 01:24:10,240] it's like omega over c.
+- [01:24:10,240 - 01:24:11,240] And small velocity.
+- [01:24:11,240 - 01:24:13,240] So for small velocity,
+- [01:24:13,240 - 01:24:14,240] adding velocities
+- [01:24:14,240 - 01:24:15,240] and adding omegas
+- [01:24:15,240 - 01:24:17,240] are the same things.
+- [01:24:17,240 - 01:24:20,240] But when the velocities get large,
+- [01:24:20,240 - 01:24:22,240] the right way to combine them
+- [01:24:22,240 - 01:24:23,240] to find relationships
+- [01:24:23,240 - 01:24:25,240] between different frames
+- [01:24:25,240 - 01:24:26,240] is by adding omega
+- [01:24:26,240 - 01:24:28,240] and not adding velocities.
+- [01:24:28,240 - 01:24:30,240] When you add omega,
+- [01:24:30,240 - 01:24:32,240] like compounding velocities
+- [01:24:32,240 - 01:24:33,240] as you've got up there,
+- [01:24:33,240 - 01:24:35,240] I guess you won't go
+- [01:24:35,240 - 01:24:37,240] greater than forty-five degrees,
+- [01:24:37,240 - 01:24:39,240] because that would be faster than light.
+- [01:24:39,240 - 01:24:40,240] No, no, but omega,
+- [01:24:40,240 - 01:24:43,240] no, no, you see,
+- [01:24:43,240 - 01:24:47,240] the speed of light is v equals one.
+- [01:24:47,240 - 01:24:50,240] That corresponds to omega equals infinity.
+- [01:24:50,240 - 01:24:51,240] Yeah.
+- [01:24:51,240 - 01:24:53,240] Yeah, so omega runs over
+- [01:24:53,240 - 01:24:54,240] the whole range
+- [01:24:54,240 - 01:24:56,240] from minus infinity to infinity,
+- [01:24:56,240 - 01:24:58,240] but when it does,
+- [01:24:58,240 - 01:25:01,240] v goes from
+- [01:25:01,240 - 01:25:02,240] minus the speed of light
+- [01:25:02,240 - 01:25:04,240] to the speed of light.
+- [01:25:04,240 - 01:25:05,240] So you can add any omegas,
+- [01:25:05,240 - 01:25:06,240] and it's still...
+- [01:25:06,240 - 01:25:08,240] Add any omegas.
+- [01:25:08,240 - 01:25:09,240] Omega, that's right.
+- [01:25:09,240 - 01:25:12,240] There's no speed limit on omega.
+- [01:25:12,240 - 01:25:13,240] It's just like when you draw
+- [01:25:13,240 - 01:25:14,240] on that diagram,
+- [01:25:14,240 - 01:25:15,240] it looks like it's greater
+- [01:25:15,240 - 01:25:17,240] than forty-five degrees up there.
+- [01:25:17,240 - 01:25:18,240] Where, where, where?
+- [01:25:18,240 - 01:25:19,240] With the omega.
+- [01:25:19,240 - 01:25:20,240] Omega is the distance
+- [01:25:20,240 - 01:25:22,240] along the hyperbola.
+- [01:25:22,240 - 01:25:23,240] Yeah, that's right.
+- [01:25:23,240 - 01:25:24,240] Sorry, where are we?
+- [01:25:24,240 - 01:25:25,240] Right there.
+- [01:25:25,240 - 01:25:27,240] I guess that's theta, though, isn't it?
+- [01:25:27,240 - 01:25:28,240] This is theta.
+- [01:25:28,240 - 01:25:29,240] That's theta.
+- [01:25:29,240 - 01:25:30,240] Yeah.
+- [01:25:30,240 - 01:25:31,240] Right.
+- [01:25:31,240 - 01:25:32,240] Right.
+- [01:25:32,240 - 01:25:33,240] Right.
+- [01:25:33,240 - 01:25:34,240] Yeah, omega is the distance
+- [01:25:34,240 - 01:25:35,240] along the hyperbola.
+- [01:25:35,240 - 01:25:36,240] That's right.
+- [01:25:36,240 - 01:25:37,240] That's right.
+- [01:25:37,240 - 01:25:39,240] Omega is a kind of distance
+- [01:25:39,240 - 01:25:41,240] along the hyperbola.
+- [01:25:41,240 - 01:25:42,240] All right.
+- [01:25:42,240 - 01:25:44,240] Now let's talk about that
+- [01:25:44,240 - 01:25:45,240] a little bit.
+- [01:25:45,240 - 01:25:46,240] All right.
+- [01:25:46,240 - 01:25:48,240] Now that we've established
+- [01:25:48,240 - 01:25:50,240] the basic mathematical structure
+- [01:25:50,240 - 01:25:52,240] of the transformations,
+- [01:25:52,240 - 01:25:53,240] I think we should go back
+- [01:25:53,240 - 01:25:56,240] and talk about some simple
+- [01:25:56,240 - 01:25:59,240] relativity phenomena
+- [01:25:59,240 - 01:26:02,240] and derive them.
+- [01:26:02,240 - 01:26:03,240] So, let's start with
+- [01:26:03,240 - 01:26:04,240] the basic mathematical structure
+- [01:26:04,240 - 01:26:05,240] of a transformation.
+- [01:26:05,240 - 01:26:06,240] Oh, one thing which is important,
+- [01:26:06,240 - 01:26:07,240] which I, yeah, well, let's see where,
+- [01:26:07,240 - 01:26:08,240] here are my Lorentz transformations
+- [01:26:08,240 - 01:26:09,240] over here.
+- [01:26:09,240 - 01:26:10,240] I said we ought to, at the end,
+- [01:26:10,240 - 01:26:11,240] make sure that our transformations
+- [01:26:11,240 - 01:26:12,240] are not too dissimilar
+- [01:26:12,240 - 01:26:13,240] from Newton's.
+- [01:26:13,240 - 01:26:14,240] In particular,
+- [01:26:14,240 - 01:26:15,240] when the velocities are small,
+- [01:26:15,240 - 01:26:16,240] they should reduce to Newton.
+- [01:26:16,240 - 01:26:17,240] That's all we really know.
+- [01:26:17,240 - 01:26:18,240] That's, or at least that's all
+- [01:26:18,240 - 01:26:19,240] that Newton really had a right
+- [01:26:19,240 - 01:26:20,240] to assume,
+- [01:26:20,240 - 01:26:21,240] that we should reduce to Newton.
+- [01:26:21,240 - 01:26:22,240] But we have to,
+- [01:26:22,240 - 01:26:23,240] we have to,
+- [01:26:23,240 - 01:26:24,240] we have to be careful
+- [01:26:24,240 - 01:26:25,240] that we don't have to
+- [01:26:25,240 - 01:26:26,240] take away the velocity
+- [01:26:26,240 - 01:26:27,240] of the newtons.
+- [01:26:27,240 - 01:26:28,240] That's all we really know.
+- [01:26:28,240 - 01:26:29,240] That's, or at least
+- [01:26:29,240 - 01:26:30,240] that's all that Newton
+- [01:26:30,240 - 01:26:31,240] really had a right to assume,
+- [01:26:31,240 - 01:26:33,240] that when the velocities are smaller
+- [01:26:33,240 - 01:26:35,240] than something or other,
+- [01:26:35,240 - 01:26:37,240] that his equations should be
+- [01:26:37,240 - 01:26:38,240] good approximations.
+- [01:26:38,240 - 01:26:39,240] Isn't adding velocities
+- [01:26:39,240 - 01:26:40,240] good enough?
+- [01:26:40,240 - 01:26:41,240] Hm?
+- [01:26:41,240 - 01:26:42,240] Isn't velocities
+- [01:26:42,240 - 01:26:43,240] adding good enough?
+- [01:26:43,240 - 01:26:45,240] In fact, you're right.
+- [01:26:45,240 - 01:26:46,240] In fact, you're right,
+- [01:26:46,240 - 01:26:47,240] but let's just look
+- [01:26:47,240 - 01:26:49,240] at the transformations themselves.
+- [01:26:49,240 - 01:26:51,240] All right.
+- [01:26:51,240 - 01:26:53,240] As long as the velocity
+- [01:26:53,240 - 01:26:55,240] is a small percentage
+- [01:26:55,240 - 01:26:57,240] of the speed of light,
+- [01:26:57,240 - 01:26:58,240] an ordinary velocity
+- [01:26:58,240 - 01:26:59,240] is a small percentage
+- [01:26:59,240 - 01:27:00,240] of the speed of light.
+- [01:27:00,240 - 01:27:01,240] So, if you're going to
+- [01:27:01,240 - 01:27:02,240] take a velocity
+- [01:27:02,240 - 01:27:03,240] of light,
+- [01:27:03,240 - 01:27:04,240] you're going to have
+- [01:27:04,240 - 01:27:05,240] to do a lot of things.
+- [01:27:05,240 - 01:27:06,240] Let's see what that means.
+- [01:27:06,240 - 01:27:07,240] So, if you're going to
+- [01:27:07,240 - 01:27:08,240] take a velocity
+- [01:27:08,240 - 01:27:09,240] of light,
+- [01:27:09,240 - 01:27:10,240] the velocity of light
+- [01:27:10,240 - 01:27:11,240] is equal to the speed
+- [01:27:11,240 - 01:27:12,240] of light of light.
+- [01:27:12,240 - 01:27:13,240] So, what are the velocities?
+- [01:27:13,240 - 01:27:14,240] Well, the velocities
+- [01:27:14,240 - 01:27:15,240] are what?
+- [01:27:15,240 - 01:27:16,240] A hundred miles an hour
+- [01:27:16,240 - 01:27:17,240] versus 186,000 miles an hour.
+- [01:27:17,240 - 01:27:18,240] What is that?
+- [01:27:18,240 - 01:27:19,240] Uh...
+- [01:27:19,240 - 01:27:20,240] Uh...
+- [01:27:20,240 - 01:27:21,240] It's small, right?
+- [01:27:21,240 - 01:27:22,240] And it's doubly small
+- [01:27:22,240 - 01:27:23,240] when you square it.
+- [01:27:23,240 - 01:27:24,240] So, for typical
+- [01:27:24,240 - 01:27:25,240] ordinary velocities,
+- [01:27:25,240 - 01:27:26,240] even the velocities
+- [01:27:26,240 - 01:27:27,240] of the Earth
+- [01:27:27,240 - 01:27:28,240] around the sun
+- [01:27:28,240 - 01:27:29,240] and so forth,
+- [01:27:29,240 - 01:27:30,240] fairly large velocities
+- [01:27:30,240 - 01:27:31,240] is what?
+- [01:27:31,240 - 01:27:32,220] fast
+- [01:27:32,220 - 01:27:35,540] that's the orbital earth around the sun
+- [01:27:35,540 - 01:27:39,380] it's pretty fast but it's nowhere near three hundred thousand kilometers
+- [01:27:39,380 - 01:27:44,820] per... no
+- [01:27:44,820 - 01:27:48,300] three hundred thousand meters per second
+- [01:27:48,300 - 01:27:53,680] three times ten to the eighth no three hundred thousand kilometers per second
+- [01:27:53,680 - 01:27:57,120] sixty kilometers per second three hundred thousand kilometers per second
+- [01:27:57,120 - 01:27:58,660] small fraction
+- [01:27:58,660 - 01:28:00,120] and then square it
+- [01:28:00,120 - 01:28:02,080] so for ordinary motions
+- [01:28:02,080 - 01:28:04,400] this is so close to one
+- [01:28:04,400 - 01:28:08,540] that the deviation from one is negligible so let's start with the top
+- [01:28:08,540 - 01:28:09,740] equation
+- [01:28:09,740 - 01:28:15,040] for the top equation this is negligible and it's just x prime equals x minus vt
+- [01:28:15,040 - 01:28:17,820] the bottom equation here
+- [01:28:17,820 - 01:28:21,100] you have a c squared in the denominator whenever you have a c squared in the
+- [01:28:21,100 - 01:28:25,160] denominator that's a very very large thing in the denominator
+- [01:28:25,160 - 01:28:26,080] this
+- [01:28:26,080 - 01:28:27,840] is negligible
+- [01:28:27,840 - 01:28:29,800] compared to t
+- [01:28:29,800 - 01:28:33,560] so here the speed of light is also in the denominator
+- [01:28:33,560 - 01:28:35,140] just forget this
+- [01:28:35,140 - 01:28:36,700] and it's just t
+- [01:28:36,700 - 01:28:38,560] but it's just t prime equals t
+- [01:28:38,560 - 01:28:40,540] it's just t prime equals t
+- [01:28:40,540 - 01:28:45,780] so in fact newton's formulas are essentially correct for slow velocities
+- [01:28:45,780 - 01:28:50,820] no uh... no significant departure from newton until the velocities get up to be
+- [01:28:50,820 - 01:28:55,820] some some appreciable fraction of the speed of light
+- [01:28:55,820 - 01:28:57,260] uh... let's talk about
+- [01:28:57,260 - 01:28:58,880] proper time
+- [01:28:59,800 - 01:29:06,800] proper time and then let's uh... do a couple of uh... relativity examples
+- [01:29:06,800 - 01:29:09,800] yeah
+- [01:29:09,800 - 01:29:10,800] question
+- [01:29:10,800 - 01:29:13,800] in the bottom equation
+- [01:29:13,800 - 01:29:14,800] t prime
+- [01:29:14,800 - 01:29:18,800] when x is very large would you get a difference of
+- [01:29:18,800 - 01:29:19,800] yes
+- [01:29:19,800 - 01:29:20,800] c
+- [01:29:20,800 - 01:29:23,800] that's right
+- [01:29:23,800 - 01:29:27,800] when x is exceedingly large
+- [01:29:27,800 - 01:29:28,800] you get a correction
+- [01:29:28,800 - 01:29:29,360] but
+- [01:29:29,360 - 01:29:32,360] that correction that x has to be very large
+- [01:29:32,360 - 01:29:37,360] look let's uh... let's discuss before we do anything else let's uh... let's uh...
+- [01:29:37,360 - 01:29:40,360] let's talk about that a little bit uh... x minus vt
+- [01:29:40,360 - 01:29:44,360] uh... one minus v squared over c squared
+- [01:29:44,360 - 01:29:47,360] yeah let's
+- [01:29:53,360 - 01:29:57,360] alright in my drawings i'm going to set c equal to one
+- [01:29:57,360 - 01:29:58,360] so let's say that we have a c squared in the denominator and then we're going to set c equal to one
+- [01:29:59,360 - 01:30:06,360] but in the equations you can leave the c there
+- [01:30:06,360 - 01:30:14,360] ok this equation we understand apart from this one minus v squared over c squared in the denominator
+- [01:30:14,360 - 01:30:21,360] it's just this x equals vt or x minus v x minus uh x minus vt
+- [01:30:21,360 - 01:30:22,360] that's newton
+- [01:30:22,360 - 01:30:24,360] let's look at this one over here
+- [01:30:24,360 - 01:30:27,360] ok
+- [01:30:27,360 - 01:30:34,360] let's look at the surface t prime equals zero
+- [01:30:34,360 - 01:30:49,360] t prime equals zero is the set of points that i in my moving reference frame call t call time equals zero
+- [01:30:49,360 - 01:30:56,360] it's what i call the set of points which are all simultaneous with the origin
+- [01:30:56,360 - 01:31:03,360] t prime equals zero is just every place in space time
+- [01:31:03,360 - 01:31:08,360] which has exactly the same time according to my frame of reference
+- [01:31:08,360 - 01:31:12,360] and i will therefore call all those points synchronous
+- [01:31:12,360 - 01:31:14,360] at the same time
+- [01:31:14,360 - 01:31:16,360] what do you say about them
+- [01:31:16,360 - 01:31:18,360] if t prime is equal to zero
+- [01:31:18,360 - 01:31:21,360] that says that t
+- [01:31:21,360 - 01:31:23,360] is equal to zero
+- [01:31:23,360 - 01:31:25,360] and that's the same thing
+- [01:31:25,360 - 01:31:29,360] t prime is equal to v over c squared x
+- [01:31:29,360 - 01:31:36,360] now let's set c equal to one for the purpose of drawing
+- [01:31:36,360 - 01:31:40,360] just for the purpose of drawing i don't want this huge number c squared
+- [01:31:40,360 - 01:31:43,360] to uh to distort my drawings too much
+- [01:31:43,360 - 01:31:45,360] it says that t equals v x
+- [01:31:45,360 - 01:31:48,360] what does the surface t equals v x look like
+- [01:31:48,360 - 01:31:51,360] it looks like this
+- [01:31:51,360 - 01:31:54,360] t
+- [01:31:54,360 - 01:31:57,360] equals v x
+- [01:31:57,360 - 01:32:04,360] which is also x is equal to one over v t
+- [01:32:04,360 - 01:32:07,360] so it's just a uniform
+- [01:32:07,360 - 01:32:10,360] line like that
+- [01:32:10,360 - 01:32:15,360] all of these points are at different times from your reckoning
+- [01:32:15,360 - 01:32:18,360] this one's later this one's later this one's later and so forth
+- [01:32:18,360 - 01:32:22,360] according to my reckoning all these points are at the same time
+- [01:32:22,360 - 01:32:23,360] so we disagree on the fact that the surface t is equal to zero
+- [01:32:23,360 - 01:32:24,360] so we disagree
+- [01:32:24,360 - 01:32:26,360] about what's simultaneous
+- [01:32:26,360 - 01:32:29,360] this was this was the hang up incidentally
+- [01:32:29,360 - 01:32:34,360] this was the basic hang up that took so long to overcome
+- [01:32:34,360 - 01:32:36,360] that took einstein to overcome it
+- [01:32:36,360 - 01:32:40,360] the idea that simultaneity was the same in every reference frame
+- [01:32:40,360 - 01:32:46,360] nobody in fact it was so obvious that nobody even thought to ask the question
+- [01:32:46,360 - 01:32:50,360] is simultaneous does it mean the same thing in every reference frame
+- [01:32:50,360 - 01:32:52,360] no it doesn't
+- [01:32:52,360 - 01:32:59,360] in your reference frame the horizontal points are all simultaneous with respect to each other
+- [01:32:59,360 - 01:33:03,360] in my reference frame what i call horizontal
+- [01:33:03,360 - 01:33:06,360] what i call simultaneous you do not
+- [01:33:06,360 - 01:33:10,360] okay so simultaneity had to go
+- [01:33:10,360 - 01:33:15,360] let me point out one more thing about these equations
+- [01:33:15,360 - 01:33:17,360] i'm not going to solve them for you
+- [01:33:17,360 - 01:33:20,360] but i will tell you the solution anyway
+- [01:33:20,360 - 01:33:27,360] how do you solve for x and t in terms of x prime and t prime
+- [01:33:27,360 - 01:33:34,360] well think about it in the case of angles
+- [01:33:34,360 - 01:33:38,360] supposing i have a relationship like
+- [01:33:38,360 - 01:33:42,360] x prime is equal to x cosine theta
+- [01:33:42,360 - 01:33:47,360] what is it plus y sine theta
+- [01:33:47,360 - 01:33:50,360] and y prime is equal to
+- [01:33:50,360 - 01:33:59,360] x minus x sine theta plus y cosine theta
+- [01:33:59,360 - 01:34:04,360] and supposing i want to solve for x and y in terms of x prime and y prime
+- [01:34:04,360 - 01:34:06,360] you know what the solution is
+- [01:34:06,360 - 01:34:09,360] just change theta to minus theta
+- [01:34:09,360 - 01:34:19,360] and write that x is equal to x prime cosine of minus theta
+- [01:34:19,360 - 01:34:20,360] but what's cosine of minus theta?
+- [01:34:20,360 - 01:34:27,360] right, cosine theta
+- [01:34:27,360 - 01:34:30,360] plus y sine of minus theta
+- [01:34:30,360 - 01:34:32,360] what's sine of minus theta?
+- [01:34:32,360 - 01:34:36,360] minus sine theta
+- [01:34:36,360 - 01:34:38,360] times y
+- [01:34:38,360 - 01:34:40,360] and likewise for y prime
+- [01:34:40,360 - 01:34:45,360] y prime is equal to minus x times sine of minus theta
+- [01:34:45,360 - 01:34:49,360] so that becomes plus x sine theta
+- [01:34:49,360 - 01:34:55,360] plus y cosine of minus theta which is cosine theta
+- [01:34:55,360 - 01:34:59,360] you don't have to go through the business of solving the equations
+- [01:34:59,360 - 01:35:03,360] you know that if one set of axes is related to the other
+- [01:35:03,360 - 01:35:06,360] by rotation by angle theta
+- [01:35:06,360 - 01:35:08,360] the second one is related to the first one
+- [01:35:08,360 - 01:35:09,360] or vice versa
+- [01:35:09,360 - 01:35:11,360] the first one is related to the second one
+- [01:35:11,360 - 01:35:14,360] by the negative of the angle
+- [01:35:14,360 - 01:35:16,360] if to go from one frame to another
+- [01:35:16,360 - 01:35:18,360] you rotate by angle theta
+- [01:35:18,360 - 01:35:21,360] and to go from the second frame back to the first
+- [01:35:21,360 - 01:35:23,360] you rotate by angle minus theta
+- [01:35:23,360 - 01:35:26,360] so you just write down exactly the same equations
+- [01:35:26,360 - 01:35:29,360] interchange prime and unprimed
+- [01:35:29,360 - 01:35:31,360] and substitute for theta minus theta
+- [01:35:31,360 - 01:35:35,360] same thing for the Lorentz transformations
+- [01:35:35,360 - 01:35:37,360] exactly the same thing
+- [01:35:37,360 - 01:35:40,360] if you want to solve these for x and t
+- [01:35:40,360 - 01:35:42,360] write down the same equations
+- [01:35:42,360 - 01:35:45,360] replace primed by unprimed
+- [01:35:45,360 - 01:35:47,360] and change the sine of omegas times y prime
+- [01:35:47,360 - 01:35:50,360] and the sine of omegas to minus the sine of omegas
+- [01:35:50,360 - 01:35:57,360] change the sine s-i-g-n of all the sinches
+- [01:35:57,360 - 01:36:01,360] in other words just send omega to minus omega
+- [01:36:01,360 - 01:36:05,360] and that will solve the equations in the other direction
+- [01:36:05,360 - 01:36:06,360] yeah
+- [01:36:06,360 - 01:36:08,360] you just change the v to minus v
+- [01:36:08,360 - 01:36:12,360] yes, it's also the same as changing v to minus v
+- [01:36:12,360 - 01:36:15,360] yes, the way to see that
+- [01:36:15,360 - 01:36:17,360] is to go
+- [01:36:17,360 - 01:36:19,360] right
+- [01:36:19,360 - 01:36:21,360] what was it, what did we have?
+- [01:36:21,360 - 01:36:23,360] cosh omega
+- [01:36:23,360 - 01:36:25,360] v equal sine h over cosine h
+- [01:36:25,360 - 01:36:27,360] yup
+- [01:36:27,360 - 01:36:29,360] yup, that's right
+- [01:36:29,360 - 01:36:31,360] v is sine
+- [01:36:31,360 - 01:36:33,360] yes, that was correct
+- [01:36:33,360 - 01:36:35,360] yeah
+- [01:36:35,360 - 01:36:37,360] when you change omega to minus omega
+- [01:36:37,360 - 01:36:39,360] it has the action of changing v to minus v
+- [01:36:39,360 - 01:36:41,360] you can just check that from the equations
+- [01:36:41,360 - 01:36:45,360] good, alright let's talk about proper time a little bit
+- [01:36:47,360 - 01:36:49,360] proper time
+- [01:36:55,360 - 01:36:58,360] if you're doing ordinary geometry
+- [01:36:59,360 - 01:37:03,360] you can measure the length along a curve for example
+- [01:37:04,360 - 01:37:07,360] and the way you do it is you take a tape measure
+- [01:37:07,360 - 01:37:11,360] and you sort of tick off equal intervals
+- [01:37:11,360 - 01:37:15,360] equal little separations
+- [01:37:15,360 - 01:37:21,360] you can think of these separations as differential distances
+- [01:37:21,360 - 01:37:25,360] ds squared, small little differential distances
+- [01:37:25,360 - 01:37:31,360] and that differential distance is dx squared plus dy squared
+- [01:37:31,360 - 01:37:35,360] where the x squared and the y squared are just the
+- [01:37:35,360 - 01:37:40,360] the differential increments in x and y, dx and dy
+- [01:37:40,360 - 01:37:43,360] this is ds
+- [01:37:43,360 - 01:37:44,360] alright, so that's the way
+- [01:37:44,360 - 01:37:45,360] and you add them up
+- [01:37:45,360 - 01:37:49,360] you add them up, that's the way you compute distances along curves
+- [01:37:49,360 - 01:37:52,360] it's quite obvious that if you take two points
+- [01:37:52,360 - 01:37:56,360] the distance between those two points depends on what curve
+- [01:38:00,360 - 01:38:02,360] not the same for every curve
+- [01:38:02,360 - 01:38:05,360] so measured along a curve
+- [01:38:05,360 - 01:38:07,360] you have to know not only the two points
+- [01:38:07,360 - 01:38:09,360] but you have to know the curve
+- [01:38:09,360 - 01:38:11,360] in order to say what the distance between those points are
+- [01:38:11,360 - 01:38:12,360] of course the distance between
+- [01:38:12,360 - 01:38:13,360] along a straight line
+- [01:38:13,360 - 01:38:16,360] that's well defined
+- [01:38:16,360 - 01:38:19,360] but the distance along a curve depends on the curve
+- [01:38:19,360 - 01:38:21,360] in any case
+- [01:38:21,360 - 01:38:24,360] ds squared equals dx squared plus dy squared
+- [01:38:24,360 - 01:38:29,360] is the basic defining notion
+- [01:38:29,360 - 01:38:31,360] of distance between two neighboring points
+- [01:38:31,360 - 01:38:35,360] if you know the distance between any two neighboring points in a geometry
+- [01:38:35,360 - 01:38:37,360] you basically know that geometry
+- [01:38:37,360 - 01:38:39,360] almost essentially completely
+- [01:38:39,360 - 01:38:42,360] so given this formula
+- [01:38:42,360 - 01:38:44,360] for the distance between two points
+- [01:38:44,360 - 01:38:48,360] you can compute if you like the distance along a curve
+- [01:38:48,360 - 01:38:50,360] of course you've got to take the square root of this
+- [01:38:50,360 - 01:38:51,360] and then add them up
+- [01:38:51,360 - 01:38:53,360] don't add the squares
+- [01:38:53,360 - 01:38:55,360] add the differential distances
+- [01:38:55,360 - 01:38:56,360] alright
+- [01:38:56,360 - 01:38:58,360] the important thing is here
+- [01:38:58,360 - 01:39:01,360] that square root of dx squared plus dy squared
+- [01:39:01,360 - 01:39:04,360] which is the distance between neighboring points
+- [01:39:04,360 - 01:39:07,360] doesn't depend on your choice of axes
+- [01:39:07,360 - 01:39:09,360] I could choose xy axes
+- [01:39:09,360 - 01:39:11,360] I could choose x prime y prime axes
+- [01:39:12,360 - 01:39:16,360] if I take a little differential displacement
+- [01:39:16,360 - 01:39:18,360] dx and dy
+- [01:39:18,360 - 01:39:20,360] or I just take two points
+- [01:39:20,360 - 01:39:21,360] two neighboring points
+- [01:39:21,360 - 01:39:23,360] don't even give them labels
+- [01:39:23,360 - 01:39:26,360] and measure the distance between them
+- [01:39:26,360 - 01:39:29,360] the distance between them should not depend on conventions
+- [01:39:29,360 - 01:39:31,360] such as which axes I use
+- [01:39:31,360 - 01:39:36,360] and so when I make rotational transformations
+- [01:39:36,360 - 01:39:40,360] dx squared plus dy squared doesn't change
+- [01:39:40,360 - 01:39:42,360] dx and dy may change
+- [01:39:42,360 - 01:39:45,360] but the x squared plus dy squared does not change
+- [01:39:45,360 - 01:39:48,360] the same thing is true
+- [01:39:48,360 - 01:39:50,360] in relativity
+- [01:39:50,360 - 01:39:52,360] or the analogous thing
+- [01:39:52,360 - 01:39:54,360] we don't measure distances
+- [01:39:54,360 - 01:39:57,360] along the paths of particles
+- [01:39:57,360 - 01:40:01,360] let's say now that this curve here is the path
+- [01:40:01,360 - 01:40:04,360] of a particle moving through space-time
+- [01:40:04,360 - 01:40:07,360] there's a particle moving through space-time
+- [01:40:07,360 - 01:40:10,360] and we want some notion
+- [01:40:10,360 - 01:40:13,360] of the distance along it
+- [01:40:13,360 - 01:40:16,360] the notion of distance along it
+- [01:40:16,360 - 01:40:22,360] another example would just be a particle standing still
+- [01:40:22,360 - 01:40:25,360] there's a particle standing still
+- [01:40:25,360 - 01:40:28,360] particle standing still
+- [01:40:28,360 - 01:40:31,360] is still in some sense moving in time
+- [01:40:31,360 - 01:40:34,360] I wouldn't want to say
+- [01:40:34,360 - 01:40:38,360] that the distance between these two points in space-time is zero
+- [01:40:38,360 - 01:40:40,360] they're not the same point
+- [01:40:40,360 - 01:40:43,360] I wouldn't like to say it's zero
+- [01:40:43,360 - 01:40:46,360] I would like to say there's some kind of notion of distance between them
+- [01:40:46,360 - 01:40:50,360] but it's quite clear that that distance is not measured with a tape measure
+- [01:40:50,360 - 01:40:54,360] this point and this point are the same point of space
+- [01:40:54,360 - 01:40:56,360] boom here at this point of space
+- [01:40:56,360 - 01:40:58,360] and then at a later time
+- [01:40:58,360 - 01:41:00,360] boom again at the same point of space
+- [01:41:00,360 - 01:41:03,360] two events at the same point of space
+- [01:41:03,360 - 01:41:07,360] how do I characterize in some nice way the distance
+- [01:41:07,360 - 01:41:10,360] between those two events?
+- [01:41:10,360 - 01:41:12,360] that occurred in the same place
+- [01:41:12,360 - 01:41:14,360] you don't do it with a tape measure
+- [01:41:14,360 - 01:41:16,360] alright, what do you do it with?
+- [01:41:16,360 - 01:41:18,360] a clock
+- [01:41:18,360 - 01:41:19,360] a clock
+- [01:41:19,360 - 01:41:20,360] you take a clock
+- [01:41:20,360 - 01:41:23,360] and you start it at this point
+- [01:41:23,360 - 01:41:25,360] tick tick tick tick tick tick tick
+- [01:41:25,360 - 01:41:27,360] a stopwatch
+- [01:41:27,360 - 01:41:29,360] you press it at this point
+- [01:41:29,360 - 01:41:31,360] tick tick tick tick tick
+- [01:41:31,360 - 01:41:33,360] it ticks off intervals
+- [01:41:34,360 - 01:41:36,360] and then you stop it at that point
+- [01:41:36,360 - 01:41:39,360] and you see how much time has evolved
+- [01:41:39,360 - 01:41:45,360] that's a notion of distance along a particle trajectory
+- [01:41:45,360 - 01:41:48,360] it's not the distance the particle moves in space
+- [01:41:48,360 - 01:41:52,360] it's a kind of distance that it's moved through space-time
+- [01:41:52,360 - 01:41:57,360] and it's not zero even if the particle is moving, standing perfectly still
+- [01:41:57,360 - 01:42:00,360] in fact what it is, is it's the time along the trajectory
+- [01:42:00,360 - 01:42:02,360] what about a moving particle?
+- [01:42:02,360 - 01:42:08,360] well you can imagine that a moving particle carries a clock with it
+- [01:42:08,360 - 01:42:10,360] of course not all particles carry clocks
+- [01:42:10,360 - 01:42:14,360] but we can imagine they carry clocks with them as they move
+- [01:42:14,360 - 01:42:16,360] and we can start the clock over here
+- [01:42:16,360 - 01:42:18,360] and end the clock over here
+- [01:42:19,360 - 01:42:25,360] what is the time read off by this moving clock?
+- [01:42:25,360 - 01:42:32,360] the time read off by a moving clock is much like the distance along a curve
+- [01:42:33,360 - 01:42:35,360] measured by a tape measure
+- [01:42:35,360 - 01:42:38,360] in particular, it should not depend
+- [01:42:38,360 - 01:42:40,360] on the choice of coordinates
+- [01:42:40,360 - 01:42:41,360] why not?
+- [01:42:41,360 - 01:42:44,360] this is a question that has nothing to do with coordinates
+- [01:42:44,360 - 01:42:48,360] I have a clock made in the standard clock factory
+- [01:42:48,360 - 01:42:53,360] the standard clock factory in, I don't know where, in Switzerland someplace
+- [01:42:53,360 - 01:42:55,360] makes a certain kind of clock
+- [01:42:55,360 - 01:42:58,360] that clock gets carried along with a particle
+- [01:42:58,360 - 01:43:01,360] and we ask how much time evolves
+- [01:43:01,360 - 01:43:03,360] or how much time elapses
+- [01:43:03,360 - 01:43:07,360] or how much the clock changes
+- [01:43:07,360 - 01:43:09,360] between here and here
+- [01:43:09,360 - 01:43:12,360] that should not depend on a choice of coordinates
+- [01:43:12,360 - 01:43:14,360] it shouldn't depend on a choice of coordinates
+- [01:43:14,360 - 01:43:16,360] because it's a physical question
+- [01:43:16,360 - 01:43:19,360] that only involves looking at the hands of the clock
+- [01:43:19,360 - 01:43:21,360] in fact we could ask it
+- [01:43:21,360 - 01:43:26,360] for little intervals along the trajectory
+- [01:43:26,360 - 01:43:29,360] we could ask how much time elapses
+- [01:43:29,360 - 01:43:31,360] according to the clock
+- [01:43:31,360 - 01:43:33,360] between here and here
+- [01:43:34,360 - 01:43:36,360] well the answer again
+- [01:43:36,360 - 01:43:39,360] should not depend on what coordinates you use
+- [01:43:39,360 - 01:43:41,360] which Lorentz frame you use
+- [01:43:41,360 - 01:43:44,360] and there's only one invariant quantity
+- [01:43:44,360 - 01:43:49,360] that you can make out of the dx's and dt's
+- [01:43:49,360 - 01:43:51,360] describing this point
+- [01:43:52,360 - 01:43:54,360] describing these two points
+- [01:43:54,360 - 01:43:57,360] there's a little interval dt
+- [01:43:57,360 - 01:44:00,360] and there's a little interval dx
+- [01:44:01,360 - 01:44:03,360] now we're in space and time
+- [01:44:03,360 - 01:44:05,360] not ordinary space
+- [01:44:06,360 - 01:44:08,360] and the quantity which is invariant
+- [01:44:08,360 - 01:44:10,360] there's really only one invariant quantity
+- [01:44:10,360 - 01:44:12,360] that you can make out of it
+- [01:44:12,360 - 01:44:14,360] it is dt squared
+- [01:44:16,360 - 01:44:18,360] minus dx squared
+- [01:44:18,360 - 01:44:20,360] it's the same quantity
+- [01:44:21,360 - 01:44:23,360] x squared minus t squared
+- [01:44:23,360 - 01:44:25,360] for a whole
+- [01:44:25,360 - 01:44:27,360] you know, for a whole interval
+- [01:44:28,360 - 01:44:31,360] dt squared minus dx squared
+- [01:44:32,360 - 01:44:35,360] that's the quantity which is invariant
+- [01:44:35,360 - 01:44:38,360] it's the negative of what I wrote over here
+- [01:44:38,360 - 01:44:41,360] x squared minus t squared
+- [01:44:41,360 - 01:44:43,360] this quantity
+- [01:44:43,360 - 01:44:49,360] is equal to dx prime squared
+- [01:44:49,360 - 01:44:50,360] minus dt prime
+- [01:44:50,360 - 01:44:54,360] sorry, dt prime squared minus dx prime squared
+- [01:44:58,360 - 01:45:00,360] the same algebra goes into this
+- [01:45:00,360 - 01:45:02,360] as goes into showing that
+- [01:45:02,360 - 01:45:05,360] x prime squared minus t prime squared is the same
+- [01:45:05,360 - 01:45:08,900] equals x squared minus t squared. Incidentally, this is the same as saying
+- [01:45:08,900 - 01:45:15,120] t prime squared minus x prime squared equals t squared minus x squared.
+- [01:45:15,120 - 01:45:21,020] Doesn't matter which way you write it. All right, so that suggests that
+- [01:45:21,020 - 01:45:26,540] suggests that the time read off, the invariant time read off along a
+- [01:45:26,540 - 01:45:34,600] trajectory between two points separated by dx and dt is just the square root of
+- [01:45:34,600 - 01:45:40,440] dt squared minus dx squared.
+- [01:45:43,300 - 01:45:47,880] Why the square root incidentally?
+- [01:45:48,260 - 01:45:56,160] Well, you're going to integrate it d tau. Well, I can integrate the t, yeah. Well, all right,
+- [01:45:56,160 - 01:45:59,880] why not just dt squared minus dx squared for the time between here and
+- [01:45:59,880 - 01:46:04,520] here? Here's an answer. Supposing we go to
+- [01:46:04,520 - 01:46:04,580] you,
+- [01:46:04,580 - 01:46:04,600] you,
+- [01:46:04,600 - 01:46:08,940] two intervals exactly the same as the first one. We go an interval over here,
+- [01:46:09,040 - 01:46:15,280] dx and dt, and then we go another dx and dt. What happens when we double the
+- [01:46:15,280 - 01:46:21,440] interval to dt squared minus dx squared? It gets multiplied by four because
+- [01:46:21,440 - 01:46:28,380] everything is squared. Well, I wouldn't expect a clock when it goes along, you
+- [01:46:28,380 - 01:46:34,580] know, when it goes along a trajectory for twice the interval here to measure
+- [01:46:34,580 - 01:46:40,520] four times the time. I expect it to measure twice the time. So for that
+- [01:46:40,520 - 01:46:45,140] reason, the square root is the appropriate thing here. Okay, that's called
+- [01:46:45,140 - 01:46:54,040] d tau squared. d tau squared, the proper time along the trajectory of an object.
+- [01:46:54,040 - 01:47:03,060] You're right, that's just d tau. Or d tau squared being dx squared minus dt squared.
+- [01:47:03,060 - 01:47:04,020] d tau squared being dx squared minus dt squared.
+- [01:47:04,580 - 01:47:14,800] d tau is called the proper time. Let's go. I think we'll, let's see. d tau is called
+- [01:47:14,800 - 01:47:21,560] the proper time, and it is the time read by a clock moving along a trajectory. It's
+- [01:47:21,560 - 01:47:28,640] not just dt. That's the important thing. It's not just dt. dt squared minus dx squared.
+- [01:47:28,640 - 01:47:34,200] Let's do one last thing. Let's just do the twin paradox in this language.
+- [01:47:34,580 - 01:47:45,080] I think I've had it. I'm going to finish. You can do the twin paradox in this language.
+- [01:47:46,200 - 01:47:54,260] All you have to do is to compute the proper time along two trajectories, one that goes
+- [01:47:54,260 - 01:47:59,700] out with a uniform velocity, turns around and comes back with the same uniform velocity
+- [01:47:59,700 - 01:48:04,560] versus a trajectory which just goes from here to there. So you have the proper time along
+- [01:48:04,580 - 01:48:09,760] from one point to the same to another point along a straight line
+- [01:48:09,760 - 01:48:13,180] And it's no more weird
+- [01:48:13,180 - 01:48:16,240] it's no weirder really from this perspective
+- [01:48:16,240 - 01:48:20,500] than saying the distance from one point to another
+- [01:48:20,500 - 01:48:23,380] along two different curves
+- [01:48:23,380 - 01:48:26,500] do not have to agree
+- [01:48:26,500 - 01:48:32,120] The proper time along two different curves in general will not agree
+- [01:48:32,120 - 01:48:34,560] What is a little bit weird
+- [01:48:34,560 - 01:48:37,440] is that because of this minus sign
+- [01:48:37,440 - 01:48:42,620] the proper time this way is less than the proper time this way
+- [01:48:42,620 - 01:48:46,580] That's the consequence of this minus sign here
+- [01:48:46,580 - 01:48:49,220] Moving with some dx
+- [01:48:49,220 - 01:48:52,020] decreases the proper time
+- [01:48:52,020 - 01:48:54,080] Alright, we'll do a little bit more next time
+- [01:48:54,080 - 01:48:57,280] but then I want to get to the principles of field theory
+- [01:48:57,280 - 01:49:01,520] and uh... and
+- [01:49:01,520 - 01:49:02,100] connect some
+- [01:49:02,100 - 01:49:09,100] of this with field equations for interesting wave fields
+- [01:49:15,440 - 01:49:19,020] The preceding program is copyrighted by Stanford University
+- [01:49:19,020 - 01:49:21,560] Please visit us at stanford.edu
