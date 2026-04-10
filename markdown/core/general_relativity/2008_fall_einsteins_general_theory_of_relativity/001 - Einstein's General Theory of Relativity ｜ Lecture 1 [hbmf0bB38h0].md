@@ -1,0 +1,2718 @@
+# Transcript
+
+Source: core/general_relativity/2008_fall_einsteins_general_theory_of_relativity/001 - Einstein's General Theory of Relativity ｜ Lecture 1 [hbmf0bB38h0].webm
+
+- [00:00:06,580 - 00:00:09,760] This program is brought to you by Stanford University.
+- [00:00:10,180 - 00:00:12,700] Please visit us at stanford.edu.
+- [00:00:14,840 - 00:00:15,540] Gravity.
+- [00:00:16,900 - 00:00:18,900] Gravity is a rather special force.
+- [00:00:19,100 - 00:00:19,820] It's unusual.
+- [00:00:21,150 - 00:00:23,780] It has different than electrical forces,
+- [00:00:23,780 - 00:00:24,940] magnetic forces.
+- [00:00:25,380 - 00:00:27,230] And it's connected in some
+- [00:00:27,230 - 00:00:29,080] way with geometric properties of space,
+- [00:00:29,080 - 00:00:29,660] space and
+- [00:00:29,660 - 00:00:29,800] time.
+- [00:00:31,019 - 00:00:33,259] And that connection is of
+- [00:00:33,259 - 00:00:35,500] course the general theory of relativity.
+- [00:00:36,640 - 00:00:38,180] Before we start,
+- [00:00:38,180 - 00:00:41,300] tonight for the most part,
+- [00:00:41,420 - 00:00:42,690] we will not be dealing
+- [00:00:42,690 - 00:00:43,960] with the general theory of relativity.
+- [00:00:44,300 - 00:00:47,960] We will be dealing with gravity
+- [00:00:47,960 - 00:00:51,620] in its oldest and simplest mathematical form.
+- [00:00:52,560 - 00:00:52,860] Well,
+- [00:00:52,860 - 00:00:54,780] perhaps not the oldest and simplest,
+- [00:00:54,780 - 00:00:58,200] but Newtonian gravity.
+- [00:00:58,200 - 00:01:02,360] And going a little beyond what Newton,
+- [00:01:02,360 - 00:01:04,459] certainly nothing that Newton would not
+- [00:01:04,459 - 00:01:06,720] have recognized or couldn't have grasped,
+- [00:01:06,720 - 00:01:08,200] Newton could grasp anything.
+- [00:01:08,960 - 00:01:12,290] But some ways of thinking about it which
+- [00:01:12,290 - 00:01:15,620] will not be found in Newton's actual work.
+- [00:01:16,180 - 00:01:16,860] But still,
+- [00:01:16,860 - 00:01:18,420] Newtonian gravity.
+- [00:01:19,100 - 00:01:21,500] Newtonian gravity set up in a way that,
+- [00:01:21,500 - 00:01:23,580] that is useful for
+- [00:01:23,580 - 00:01:24,840] going on to the general theory.
+- [00:01:26,760 - 00:01:27,360] Okay,
+- [00:01:27,360 - 00:01:27,840] let's.
+- [00:01:27,840 - 00:01:28,180] Let's go.
+- [00:01:31,799 - 00:01:33,480] begin with Newton's equations.
+- [00:01:34,380 - 00:01:35,580] The first equation,
+- [00:01:35,580 - 00:01:36,400] of course,
+- [00:01:36,400 - 00:01:37,500] is F equals mA.
+- [00:01:39,020 - 00:01:41,100] Force is equal to mass times acceleration.
+- [00:01:42,540 - 00:01:44,960] Let's assume that we have a frame of reference,
+- [00:01:45,120 - 00:01:47,340] a frame of reference that means a set of coordinates
+- [00:01:47,340 - 00:01:48,620] and it's a collection of clocks,
+- [00:01:48,940 - 00:01:52,220] and that frame of reference is what is called
+- [00:01:52,220 - 00:01:53,540] an inertial frame of reference.
+- [00:01:54,060 - 00:01:57,080] An inertial frame of reference simply means
+- [00:01:57,080 - 00:01:58,280] one which,
+- [00:01:58,280 - 00:02:00,420] if there are no objects around
+- [00:02:00,420 - 00:02:02,920] to exert forces on a particular,
+- [00:02:03,100 - 00:02:04,460] let's call it a test object,
+- [00:02:05,340 - 00:02:07,360] a test object is just some object,
+- [00:02:07,460 - 00:02:09,080] a small particle or anything else
+- [00:02:09,080 - 00:02:14,280] that we use to test out the various fields,
+- [00:02:14,740 - 00:02:17,040] force fields that might be acting on it.
+- [00:02:17,400 - 00:02:19,600] An inertial frame is one which,
+- [00:02:19,780 - 00:02:22,600] when there are no objects around to exert forces,
+- [00:02:23,540 - 00:02:26,660] that object will move,
+- [00:02:27,080 - 00:02:28,320] with uniform motion,
+- [00:02:28,320 - 00:02:29,580] with no acceleration.
+- [00:02:30,600 - 00:02:33,000] That's the idea of an inertial frame of reference.
+- [00:02:34,000 - 00:02:36,080] And so if you're an inertial frame of reference
+- [00:02:36,080 - 00:02:37,390] and you have a pin
+- [00:02:37,390 - 00:02:38,700] and you just let it go,
+- [00:02:39,390 - 00:02:40,240] it stays there.
+- [00:02:40,400 - 00:02:41,120] It doesn't move.
+- [00:02:41,440 - 00:02:42,540] If you give it a push,
+- [00:02:42,700 - 00:02:44,760] it will move off with uniform velocity.
+- [00:02:46,380 - 00:02:48,600] That's the idea of an inertial frame of reference.
+- [00:02:48,740 - 00:02:50,480] And in an inertial frame of reference,
+- [00:02:52,340 - 00:02:55,440] the basic Newtonian equation,
+- [00:02:57,080 - 00:02:58,200] equation number one,
+- [00:02:58,880 - 00:03:01,260] I always forget which law is which.
+- [00:03:01,720 - 00:03:03,160] There's Newton's first law,
+- [00:03:03,160 - 00:03:03,740] second law,
+- [00:03:03,740 - 00:03:04,460] and third law.
+- [00:03:04,920 - 00:03:07,100] I never can remember which is which.
+- [00:03:07,540 - 00:03:09,820] But they're all pretty much summarized by
+- [00:03:09,820 - 00:03:14,320] F equals mass times acceleration.
+- [00:03:15,140 - 00:03:16,960] This is a vector equation.
+- [00:03:17,220 - 00:03:19,000] I expect people know what a vector is.
+- [00:03:19,500 - 00:03:21,380] A three vector equation.
+- [00:03:21,700 - 00:03:23,620] We'll come later to four vectors,
+- [00:03:24,300 - 00:03:27,060] where when space and time are united into space,
+- [00:03:27,080 - 00:03:27,440] space time,
+- [00:03:27,680 - 00:03:29,140] but for the moment space
+- [00:03:29,140 - 00:03:30,600] is space and time is time,
+- [00:03:30,820 - 00:03:32,680] and a vector means a thing,
+- [00:03:32,840 - 00:03:34,520] which is a pointer,
+- [00:03:34,860 - 00:03:36,320] and a direction in space,
+- [00:03:36,600 - 00:03:37,420] it has a magnitude,
+- [00:03:37,720 - 00:03:39,000] and it has components.
+- [00:03:40,200 - 00:03:42,320] So component by component,
+- [00:03:42,360 - 00:03:44,160] the x component of the force
+- [00:03:44,160 - 00:03:46,480] is equal to the mass of the object
+- [00:03:46,480 - 00:03:48,440] times the x component of acceleration,
+- [00:03:49,079 - 00:03:50,160] y component,
+- [00:03:50,160 - 00:03:50,840] z component,
+- [00:03:50,840 - 00:03:51,760] and so forth.
+- [00:03:52,000 - 00:03:53,490] And in order to indicate
+- [00:03:53,490 - 00:03:54,980] that something is a vector equation,
+- [00:03:55,260 - 00:03:57,060] I'll try to,
+- [00:03:57,080 - 00:04:00,340] I'll try to remember to put an arrow over vectors.
+- [00:04:01,080 - 00:04:02,720] The mass is not a vector.
+- [00:04:02,880 - 00:04:04,420] The mass is simply a number.
+- [00:04:04,600 - 00:04:06,280] Every particle has a mass.
+- [00:04:06,460 - 00:04:07,700] Every object has a mass.
+- [00:04:08,260 - 00:04:10,000] And in Newtonian physics,
+- [00:04:10,300 - 00:04:12,580] the mass is conserved.
+- [00:04:12,640 - 00:04:13,500] It does not change.
+- [00:04:13,980 - 00:04:14,860] Now of course,
+- [00:04:14,860 - 00:04:18,380] the mass of this cup of coffee here can change.
+- [00:04:20,740 - 00:04:21,880] It's lighter now.
+- [00:04:22,160 - 00:04:25,180] But it only changes because mass has been transported
+- [00:04:25,180 - 00:04:26,480] from one place to another
+- [00:04:27,640 - 00:04:29,700] so you can change the mass of an object
+- [00:04:29,700 - 00:04:31,460] by whacking off a piece of it.
+- [00:04:31,580 - 00:04:34,620] But if you don't change the number of particles,
+- [00:04:34,800 - 00:04:35,840] change the number of molecules,
+- [00:04:35,840 - 00:04:36,480] and so forth,
+- [00:04:36,680 - 00:04:39,040] then the mass is a conserved,
+- [00:04:39,040 - 00:04:39,980] unchanging quantity.
+- [00:04:40,440 - 00:04:43,240] So that's the first equation.
+- [00:04:43,560 - 00:04:45,880] Now let me write that in another form.
+- [00:04:46,920 - 00:04:48,060] The other form,
+- [00:04:48,140 - 00:04:50,300] we imagine we have a coordinate system,
+- [00:04:50,880 - 00:04:51,660] an x,
+- [00:04:51,660 - 00:04:51,900] a y,
+- [00:04:51,900 - 00:04:52,380] and a z.
+- [00:04:52,760 - 00:04:55,240] I don't have enough directions on the blackboard
+- [00:04:55,240 - 00:04:55,900] to draw a z.
+- [00:04:55,900 - 00:04:56,560] I won't bother.
+- [00:04:56,560 - 00:04:57,560] There's x,
+- [00:04:57,560 - 00:04:58,880] y,
+- [00:04:58,880 - 00:04:59,660] and z.
+- [00:05:00,020 - 00:05:01,780] Sometimes we just call them x1,
+- [00:05:01,780 - 00:05:02,620] x2,
+- [00:05:02,620 - 00:05:04,020] and x3.
+- [00:05:04,220 - 00:05:05,380] I guess I can draw it in.
+- [00:05:05,460 - 00:05:06,580] x3 is over here someplace.
+- [00:05:06,920 - 00:05:07,100] x,
+- [00:05:07,100 - 00:05:07,380] y,
+- [00:05:07,380 - 00:05:07,800] and z.
+- [00:05:10,140 - 00:05:12,960] And a particle has a position,
+- [00:05:13,140 - 00:05:15,180] which means it has a set of three coordinates.
+- [00:05:16,760 - 00:05:18,200] Sometimes we will summarize
+- [00:05:18,200 - 00:05:20,720] the collection of the three coordinates,
+- [00:05:22,499 - 00:05:22,919] x1,
+- [00:05:22,919 - 00:05:23,340] x2,
+- [00:05:23,340 - 00:05:24,100] and x3.
+- [00:05:24,420 - 00:05:24,840] Incidentally,
+- [00:05:24,840 - 00:05:29,180] x1 and x2 and x3 are components of a vector.
+- [00:05:29,400 - 00:05:30,680] The components,
+- [00:05:30,680 - 00:05:31,640] they are components
+- [00:05:31,640 - 00:05:35,120] of the position vector of the particle.
+- [00:05:35,840 - 00:05:38,020] The position vector of the particle
+- [00:05:38,840 - 00:05:42,880] I will often call either small r or large r,
+- [00:05:43,840 - 00:05:47,120] depending on the particular context.
+- [00:05:47,620 - 00:05:49,500] r stands for radius.
+- [00:05:49,800 - 00:05:53,000] But the radius simply means the distance
+- [00:05:53,000 - 00:05:54,820] between a point and the origin vector.
+- [00:05:54,840 - 00:05:54,920] So,
+- [00:05:54,920 - 00:05:55,120] for example,
+- [00:05:55,820 - 00:05:58,100] we're really talking now about a thing
+- [00:05:58,100 - 00:05:59,220] with three components,
+- [00:05:59,220 - 00:05:59,800] x,
+- [00:05:59,800 - 00:06:00,100] y,
+- [00:06:00,100 - 00:06:00,440] and z,
+- [00:06:00,620 - 00:06:02,120] and it's the radial vector.
+- [00:06:02,340 - 00:06:03,620] The radial vector,
+- [00:06:04,260 - 00:06:05,940] this is the same thing as
+- [00:06:06,740 - 00:06:10,260] the components of the vector r.
+- [00:06:12,520 - 00:06:13,260] All right.
+- [00:06:13,420 - 00:06:17,160] The acceleration is a vector
+- [00:06:17,620 - 00:06:20,280] that's made up out of the time derivatives
+- [00:06:20,280 - 00:06:21,200] of x,
+- [00:06:21,200 - 00:06:21,620] y,
+- [00:06:21,620 - 00:06:22,220] and z,
+- [00:06:22,320 - 00:06:22,880] or x1,
+- [00:06:22,880 - 00:06:23,260] x2,
+- [00:06:23,260 - 00:06:23,840] and x3.
+- [00:06:24,840 - 00:06:24,840] So,
+- [00:06:24,840 - 00:06:25,720] for each component,
+- [00:06:26,020 - 00:06:26,680] the,
+- [00:06:26,680 - 00:06:29,320] for each component,
+- [00:06:29,720 - 00:06:30,300] one,
+- [00:06:30,300 - 00:06:30,560] two,
+- [00:06:30,560 - 00:06:30,960] or three,
+- [00:06:31,500 - 00:06:32,620] the acceleration,
+- [00:06:32,980 - 00:06:34,200] which let me indicate,
+- [00:06:34,460 - 00:06:35,180] well,
+- [00:06:35,180 - 00:06:36,400] let's just call it a,
+- [00:06:36,640 - 00:06:39,780] the acceleration is just equal,
+- [00:06:40,060 - 00:06:41,520] the components of it,
+- [00:06:41,600 - 00:06:45,100] are equal to the second derivatives
+- [00:06:45,100 - 00:06:48,340] of the coordinates with respect to time.
+- [00:06:50,640 - 00:06:52,200] That's what acceleration is.
+- [00:06:52,400 - 00:06:54,120] The first derivative
+- [00:06:54,840 - 00:06:56,800] of position is called velocity.
+- [00:07:02,400 - 00:07:04,720] We can take this to be component by component,
+- [00:07:04,940 - 00:07:05,400] x1,
+- [00:07:05,400 - 00:07:05,780] x2,
+- [00:07:05,780 - 00:07:06,360] and x3.
+- [00:07:06,540 - 00:07:08,160] The first derivative is velocity.
+- [00:07:08,440 - 00:07:10,020] The second derivative is acceleration.
+- [00:07:11,540 - 00:07:13,320] We can write this in vector notation.
+- [00:07:13,720 - 00:07:14,300] I won't bother.
+- [00:07:14,980 - 00:07:16,420] But we all know what we mean.
+- [00:07:16,660 - 00:07:18,400] I hope we all know what we mean
+- [00:07:18,400 - 00:07:18,900] by these,
+- [00:07:18,900 - 00:07:20,680] by acceleration and velocity.
+- [00:07:21,180 - 00:07:21,880] And so,
+- [00:07:21,880 - 00:07:24,340] Newton's equations are then summarized
+- [00:07:24,840 - 00:07:25,680] not summarized,
+- [00:07:25,680 - 00:07:26,280] but rewritten
+- [00:07:26,840 - 00:07:28,740] as the force on an object,
+- [00:07:28,940 - 00:07:29,720] whatever it is,
+- [00:07:29,820 - 00:07:31,900] component by component
+- [00:07:32,740 - 00:07:34,000] is equal to the mass
+- [00:07:34,780 - 00:07:36,120] times the second derivative
+- [00:07:36,840 - 00:07:38,780] of the component of position.
+- [00:07:40,260 - 00:07:42,100] So that's the summary of,
+- [00:07:42,220 - 00:07:44,140] I think it's Newton's first and second law.
+- [00:07:44,220 - 00:07:45,520] I can never remember which they are.
+- [00:07:47,780 - 00:07:48,760] Newton's first law,
+- [00:07:48,760 - 00:07:49,160] of course,
+- [00:07:49,360 - 00:07:52,380] is simply the statement that if there are no forces,
+- [00:07:53,460 - 00:07:55,100] then there's no acceleration.
+- [00:07:55,680 - 00:07:56,960] That's Newton's first law.
+- [00:07:57,180 - 00:07:59,000] That's the second law.
+- [00:07:59,180 - 00:08:00,480] Third law is equal and opposite.
+- [00:08:00,480 - 00:08:01,080] Equal and opposite,
+- [00:08:01,080 - 00:08:01,400] right.
+- [00:08:02,740 - 00:08:05,580] So this summarizes both the first and second law.
+- [00:08:06,640 - 00:08:08,010] I never understood why there
+- [00:08:08,010 - 00:08:09,380] was a first and second law.
+- [00:08:09,480 - 00:08:10,520] It seemed to me there was just one,
+- [00:08:10,520 - 00:08:11,300] F equals m a.
+- [00:08:12,600 - 00:08:13,320] All right,
+- [00:08:13,320 - 00:08:13,860] now,
+- [00:08:15,040 - 00:08:18,340] let's begin even previous to Newton
+- [00:08:18,340 - 00:08:20,700] with Galilean gravity.
+- [00:08:20,700 - 00:08:24,140] Gravity as Galileo understood it.
+- [00:08:24,640 - 00:08:25,200] Actually,
+- [00:08:25,200 - 00:08:27,180] I'm not sure how much of this mathematics
+- [00:08:27,180 - 00:08:28,980] Galileo did or didn't understand.
+- [00:08:30,120 - 00:08:31,919] He certainly knew what acceleration was.
+- [00:08:32,419 - 00:08:33,140] He measured it.
+- [00:08:35,080 - 00:08:36,880] I don't know that he had the...
+- [00:08:36,880 - 00:08:38,100] He certainly didn't have calculus,
+- [00:08:38,200 - 00:08:39,659] but he knew what acceleration was.
+- [00:08:40,080 - 00:08:44,760] So what Galileo studied was the motion of objects
+- [00:08:44,760 - 00:08:46,900] in the gravitational field of the Earth
+- [00:08:46,900 - 00:08:50,680] in the approximation that the Earth is moving.
+- [00:08:50,680 - 00:08:51,000] The Earth is flat.
+- [00:08:51,280 - 00:08:51,540] Now,
+- [00:08:51,540 - 00:08:53,080] Galileo knew the Earth wasn't flat.
+- [00:08:53,860 - 00:08:57,780] But he studied gravity in the approximation
+- [00:08:57,780 - 00:08:59,420] where you never moved very far
+- [00:08:59,420 - 00:09:01,060] from the surface of the Earth.
+- [00:09:01,500 - 00:09:02,720] And if you don't move very
+- [00:09:02,720 - 00:09:03,940] far from the surface of the Earth,
+- [00:09:04,000 - 00:09:04,990] you might as well take the
+- [00:09:04,990 - 00:09:05,980] surface of the Earth to be flat.
+- [00:09:06,660 - 00:09:09,500] And the significance of that is twofold.
+- [00:09:10,080 - 00:09:11,020] First of all,
+- [00:09:11,020 - 00:09:13,140] the direction of gravitational forces
+- [00:09:13,140 - 00:09:14,860] is the same everywheres.
+- [00:09:15,220 - 00:09:16,260] This is not true,
+- [00:09:16,260 - 00:09:16,720] of course,
+- [00:09:16,720 - 00:09:17,620] if the Earth is curved.
+- [00:09:18,900 - 00:09:20,660] Then gravity will point to the Earth.
+- [00:09:20,680 - 00:09:21,240] Toward the center.
+- [00:09:21,620 - 00:09:23,680] But in the flat space approximation,
+- [00:09:24,160 - 00:09:25,740] gravity points down.
+- [00:09:26,440 - 00:09:29,000] Down everywhere is always in the same direction.
+- [00:09:29,520 - 00:09:30,640] And second of all,
+- [00:09:30,640 - 00:09:32,460] perhaps a little bit less obvious,
+- [00:09:32,500 - 00:09:33,540] but nevertheless true,
+- [00:09:33,820 - 00:09:37,860] in the approximation where the Earth is infinite and flat,
+- [00:09:38,420 - 00:09:39,620] goes on and on forever,
+- [00:09:39,620 - 00:09:40,840] infinite and flat,
+- [00:09:41,480 - 00:09:44,980] the gravitational force doesn't depend on how high you are.
+- [00:09:45,140 - 00:09:47,680] Same gravitational force here as here.
+- [00:09:48,080 - 00:09:49,680] The implication of that
+- [00:09:50,680 - 00:09:52,820] is that the acceleration of gravity,
+- [00:09:53,380 - 00:09:54,500] since force,
+- [00:09:54,500 - 00:09:56,800] apart from the mass of an object,
+- [00:09:57,020 - 00:09:58,480] the acceleration on an object,
+- [00:09:58,720 - 00:10:00,680] is independent of where you put it.
+- [00:10:01,880 - 00:10:03,000] And so,
+- [00:10:04,800 - 00:10:05,360] Galileo
+- [00:10:06,500 - 00:10:08,440] either did or didn't realize,
+- [00:10:09,740 - 00:10:10,300] well,
+- [00:10:10,300 - 00:10:10,520] he,
+- [00:10:12,120 - 00:10:12,680] again,
+- [00:10:12,680 - 00:10:15,260] I don't know exactly what Galileo did or didn't know,
+- [00:10:15,360 - 00:10:17,560] but what he said was equivalent to saying
+- [00:10:17,560 - 00:10:21,340] that the force on an object
+- [00:10:21,340 - 00:10:23,420] in the flat space approximation
+- [00:10:24,140 - 00:10:25,420] is very simple.
+- [00:10:25,560 - 00:10:28,420] It's first of all has only one component pointing downward.
+- [00:10:29,820 - 00:10:32,000] If we take the upward
+- [00:10:32,000 - 00:10:34,180] sense of things to be positive,
+- [00:10:35,020 - 00:10:37,740] then we would say that the force is,
+- [00:10:38,620 - 00:10:40,960] let's just say the component of the force
+- [00:10:41,560 - 00:10:43,800] in the x2 direction,
+- [00:10:44,020 - 00:10:45,220] the vertical direction,
+- [00:10:45,220 - 00:10:47,420] is equal to minus,
+- [00:10:47,660 - 00:10:50,140] the minus simply means that the force is downward,
+- [00:10:51,620 - 00:10:55,260] and it's proportional to the mass of the object
+- [00:10:55,940 - 00:11:00,220] times a constant called the gravitational acceleration.
+- [00:11:00,980 - 00:11:01,660] Now,
+- [00:11:03,280 - 00:11:04,320] the fact
+- [00:11:05,720 - 00:11:08,620] that it's constant everywhere is,
+- [00:11:08,620 - 00:11:10,140] in other words,
+- [00:11:10,200 - 00:11:12,640] mass times g doesn't vary from place to place,
+- [00:11:12,740 - 00:11:13,420] that's this fact
+- [00:11:13,420 - 00:11:15,200] that gravity doesn't depend on where you are.
+- [00:11:15,200 - 00:11:16,140] You can't tell where you
+- [00:11:16,140 - 00:11:17,080] are in the flat space approximation.
+- [00:11:17,920 - 00:11:19,770] But the fact that the force is
+- [00:11:19,770 - 00:11:21,620] proportional to the mass of an object,
+- [00:11:21,860 - 00:11:23,460] that is not obvious.
+- [00:11:23,880 - 00:11:24,720] In fact,
+- [00:11:24,720 - 00:11:25,580] for most forces,
+- [00:11:25,580 - 00:11:26,360] it's not true.
+- [00:11:26,960 - 00:11:28,400] For electric forces,
+- [00:11:29,320 - 00:11:32,000] the force is proportional to the electric charge,
+- [00:11:32,200 - 00:11:33,260] not to the mass.
+- [00:11:34,980 - 00:11:37,920] And so gravitational forces are rather special.
+- [00:11:38,160 - 00:11:40,980] The strength of the gravitational force on an object
+- [00:11:40,980 - 00:11:42,460] is proportional to its mass.
+- [00:11:43,819 - 00:11:47,660] That characterizes gravity almost completely.
+- [00:11:47,900 - 00:11:49,660] That's the special thing about gravity,
+- [00:11:49,820 - 00:11:52,440] the force is proportional itself to the mass.
+- [00:11:53,100 - 00:11:53,700] Well,
+- [00:11:53,700 - 00:11:56,040] if we combine F equals mA
+- [00:11:56,040 - 00:11:57,660] with the force law,
+- [00:11:57,920 - 00:11:59,200] this is the law of force,
+- [00:11:59,480 - 00:12:01,420] then what we find
+- [00:12:01,420 - 00:12:04,820] is that mass times acceleration,
+- [00:12:06,020 - 00:12:08,060] d second x,
+- [00:12:08,320 - 00:12:09,920] now this is the vertical component,
+- [00:12:10,740 - 00:12:12,100] by dt squared,
+- [00:12:12,460 - 00:12:14,160] is equal to minus,
+- [00:12:14,380 - 00:12:15,280] that's the minus,
+- [00:12:16,360 - 00:12:16,940] mg,
+- [00:12:18,400 - 00:12:18,980] period.
+- [00:12:19,140 - 00:12:19,640] That's it.
+- [00:12:21,210 - 00:12:23,560] Now the interesting thing that happens in gravity
+- [00:12:23,560 - 00:12:26,080] is that the mass cancels out from both sides.
+- [00:12:27,360 - 00:12:29,300] That is what's special about gravity,
+- [00:12:29,380 - 00:12:31,560] the mass cancels out from both sides.
+- [00:12:34,660 - 00:12:36,360] And the consequence of that
+- [00:12:36,360 - 00:12:38,340] is that the motion of an object,
+- [00:12:38,440 - 00:12:39,160] its acceleration,
+- [00:12:39,900 - 00:12:41,800] doesn't depend on the mass,
+- [00:12:41,800 - 00:12:44,000] it doesn't depend on anything about the particle.
+- [00:12:45,800 - 00:12:46,320] Particle,
+- [00:12:46,320 - 00:12:46,660] object,
+- [00:12:46,760 - 00:12:47,660] I'll use the word particle,
+- [00:12:48,480 - 00:12:50,920] I don't necessarily mean a point,
+- [00:12:51,020 - 00:12:52,060] a small particle,
+- [00:12:52,260 - 00:12:53,580] a baseball is a particle,
+- [00:12:53,920 - 00:12:57,720] an eraser is a particle,
+- [00:12:57,840 - 00:12:59,020] a piece of chalk is a particle,
+- [00:12:59,980 - 00:13:01,820] that the motion of the object
+- [00:13:01,820 - 00:13:05,380] doesn't depend on the mass of the object
+- [00:13:05,380 - 00:13:06,220] or anything else.
+- [00:13:06,520 - 00:13:07,740] The result of that
+- [00:13:08,480 - 00:13:10,020] is that if you take two objects
+- [00:13:10,020 - 00:13:11,140] of quite different mass,
+- [00:13:11,920 - 00:13:13,040] and you drop them,
+- [00:13:13,160 - 00:13:14,900] they fall exactly the same way.
+- [00:13:17,060 - 00:13:18,340] Galileo did that experiment,
+- [00:13:18,620 - 00:13:19,840] I don't know whether he really
+- [00:13:20,800 - 00:13:22,480] threw something off the leaning tower
+- [00:13:22,480 - 00:13:23,400] of Pisa or not,
+- [00:13:23,580 - 00:13:24,180] it's not important.
+- [00:13:26,080 - 00:13:26,520] Yeah,
+- [00:13:26,520 - 00:13:28,560] he did balls down an inclined plane,
+- [00:13:29,419 - 00:13:32,460] I don't know whether he actually did or didn't,
+- [00:13:32,520 - 00:13:32,700] I know,
+- [00:13:32,700 - 00:13:34,920] the myth is that he didn't.
+- [00:13:34,980 - 00:13:38,320] I find it very difficult to believe that he didn't.
+- [00:13:39,680 - 00:13:40,640] I've been in Pisa,
+- [00:13:40,720 - 00:13:41,780] last week I was in Pisa,
+- [00:13:41,780 - 00:13:42,780] and I took a look
+- [00:13:42,780 - 00:13:43,780] at the leaning tower of Pisa.
+- [00:13:44,820 - 00:13:46,860] Galileo was born and lived in Pisa.
+- [00:13:47,260 - 00:13:48,840] He was interested in gravity,
+- [00:13:49,040 - 00:13:51,620] how it would be possible that he wouldn't think
+- [00:13:51,620 - 00:13:53,740] of dropping something off the leaning tower
+- [00:13:53,740 - 00:13:55,760] is beyond my comprehension.
+- [00:13:57,020 - 00:13:58,600] You look at that tower and you say,
+- [00:13:58,680 - 00:14:00,100] that tower is good for one thing,
+- [00:14:00,200 - 00:14:01,480] dropping things off.
+- [00:14:02,620 - 00:14:03,060] Now,
+- [00:14:03,060 - 00:14:03,800] I don't know,
+- [00:14:03,860 - 00:14:05,090] maybe the Doge or whoever they
+- [00:14:05,090 - 00:14:06,320] called the guy at the time
+- [00:14:06,320 - 00:14:06,760] said,
+- [00:14:06,760 - 00:14:07,000] no,
+- [00:14:07,000 - 00:14:07,240] no,
+- [00:14:07,240 - 00:14:07,840] Galileo,
+- [00:14:07,860 - 00:14:09,360] you can't drop things from the tower,
+- [00:14:09,460 - 00:14:10,100] you'll kill somebody,
+- [00:14:10,100 - 00:14:11,120] so maybe he didn't,
+- [00:14:11,160 - 00:14:13,920] but he must have surely thought of it.
+- [00:14:15,060 - 00:14:15,840] All right,
+- [00:14:15,840 - 00:14:16,580] so,
+- [00:14:16,660 - 00:14:17,500] the result,
+- [00:14:17,500 - 00:14:18,340] had he done it,
+- [00:14:18,860 - 00:14:20,550] and had he not had
+- [00:14:20,550 - 00:14:22,240] to worry about such spurious effects
+- [00:14:22,240 - 00:14:23,380] as air resistance,
+- [00:14:24,300 - 00:14:27,080] would be that a cannonball and a feather
+- [00:14:27,080 - 00:14:29,900] would fall in exactly the same way,
+- [00:14:30,680 - 00:14:32,120] independent of the mass,
+- [00:14:32,920 - 00:14:35,220] and the equation would just say,
+- [00:14:35,360 - 00:14:37,960] the acceleration would first of all be downward,
+- [00:14:38,220 - 00:14:39,260] that's the minus sign,
+- [00:14:39,260 - 00:14:42,260] and equal to this constant G.
+- [00:14:44,780 - 00:14:45,580] Excuse me,
+- [00:14:45,580 - 00:14:45,880] let me,
+- [00:14:47,420 - 00:14:47,940] now,
+- [00:14:47,940 - 00:14:50,080] G is a number,
+- [00:14:50,180 - 00:14:52,280] it's 10 meters per second per second,
+- [00:14:55,180 - 00:14:56,820] at the surface of the Earth,
+- [00:14:57,780 - 00:14:59,220] at the surface of the Moon,
+- [00:14:59,340 - 00:15:00,220] it's something smaller,
+- [00:15:00,420 - 00:15:01,400] on the surface of Jupiter,
+- [00:15:01,600 - 00:15:02,440] it's something larger,
+- [00:15:03,600 - 00:15:07,260] so it does depend on the mass of the planet,
+- [00:15:07,260 - 00:15:10,060] but the acceleration doesn't depend
+- [00:15:10,060 - 00:15:11,820] on the mass of the object you're dropping,
+- [00:15:11,920 - 00:15:13,280] it depends on the mass of
+- [00:15:13,280 - 00:15:14,640] the object you're dropping it onto,
+- [00:15:14,980 - 00:15:17,560] but not the mass of the object that's dropping.
+- [00:15:19,300 - 00:15:20,380] That fact,
+- [00:15:20,700 - 00:15:22,520] that gravitational motion
+- [00:15:22,520 - 00:15:24,680] is completely independent of mass,
+- [00:15:25,000 - 00:15:25,680] is called,
+- [00:15:25,680 - 00:15:27,060] or it's the simplest version
+- [00:15:27,060 - 00:15:29,760] of something that's called the equivalence principle.
+- [00:15:30,680 - 00:15:32,700] Why it's called the equivalence principle,
+- [00:15:32,800 - 00:15:33,460] we'll come to later,
+- [00:15:33,620 - 00:15:34,620] what's equivalent to what?
+- [00:15:35,460 - 00:15:36,520] At this stage,
+- [00:15:36,520 - 00:15:37,260] we could just say,
+- [00:15:38,260 - 00:15:40,900] gravity is equivalent between all different objects,
+- [00:15:41,020 - 00:15:42,140] independent of their mass,
+- [00:15:42,280 - 00:15:44,660] but that is not exactly what the equivalence,
+- [00:15:44,660 - 00:15:46,380] an equivalence principle was about.
+- [00:15:47,440 - 00:15:49,060] That has a consequence,
+- [00:15:49,260 - 00:15:50,440] an interesting consequence.
+- [00:15:52,480 - 00:15:54,040] Supposing I take some object,
+- [00:15:54,160 - 00:15:57,420] which is made up out of something
+- [00:15:57,420 - 00:16:00,600] which is very unrigid,
+- [00:16:01,440 - 00:16:05,180] just a collection of point masses,
+- [00:16:06,520 - 00:16:06,880] maybe,
+- [00:16:08,040 - 00:16:10,600] let's even say they're not even exerting
+- [00:16:10,600 - 00:16:11,840] any forces on each other.
+- [00:16:11,980 - 00:16:12,940] It's a cloud,
+- [00:16:13,220 - 00:16:14,520] a very diffuse
+- [00:16:16,960 - 00:16:21,740] cloud of particles,
+- [00:16:22,020 - 00:16:23,500] and we watch it fall.
+- [00:16:24,640 - 00:16:27,340] Let's suppose we start each particle from rest,
+- [00:16:27,640 - 00:16:29,560] not all at the same height,
+- [00:16:30,280 - 00:16:31,640] and we let them all fall.
+- [00:16:32,240 - 00:16:33,760] Some particles are heavy,
+- [00:16:33,860 - 00:16:35,060] some particles are light,
+- [00:16:35,060 - 00:16:37,200] some of them may be big,
+- [00:16:37,280 - 00:16:38,320] some of them may be small.
+- [00:16:38,600 - 00:16:40,200] How does the whole thing fall?
+- [00:16:40,440 - 00:16:41,300] The answer is,
+- [00:16:41,500 - 00:16:45,300] all of the particles fall at exactly the same rate.
+- [00:16:45,720 - 00:16:47,510] The consequence of it is
+- [00:16:47,510 - 00:16:49,300] that the shape of this object
+- [00:16:49,300 - 00:16:51,120] doesn't deform as it falls.
+- [00:16:51,460 - 00:16:53,720] It stays absolutely unchanged.
+- [00:16:56,120 - 00:16:59,340] The relationship between the neighboring parts
+- [00:16:59,340 - 00:17:00,500] are unchanged.
+- [00:17:01,080 - 00:17:03,820] There are no stresses or strains
+- [00:17:03,820 - 00:17:06,300] which tend to deform the object.
+- [00:17:06,940 - 00:17:09,359] So even if the object were held together
+- [00:17:09,359 - 00:17:11,839] by some sort of struts or whatever,
+- [00:17:12,099 - 00:17:14,480] there would be no forces on those struts
+- [00:17:14,480 - 00:17:16,660] because everything falls together.
+- [00:17:18,060 - 00:17:20,020] The consequence of that
+- [00:17:20,020 - 00:17:23,119] is that falling in a gravitational field
+- [00:17:23,420 - 00:17:24,980] is undetectable.
+- [00:17:25,220 - 00:17:27,240] You can't tell that you're falling
+- [00:17:27,240 - 00:17:29,900] in a gravitational field by...
+- [00:17:29,900 - 00:17:31,380] When I say you can't tell,
+- [00:17:31,580 - 00:17:33,800] certainly you can tell the difference between
+- [00:17:33,820 - 00:17:36,740] free fall and standing on the Earth.
+- [00:17:37,940 - 00:17:38,880] That's not the point.
+- [00:17:39,060 - 00:17:40,690] The point is that you can't
+- [00:17:40,690 - 00:17:42,320] tell by looking at your neighbors
+- [00:17:42,320 - 00:17:44,090] or anything else that there's
+- [00:17:44,090 - 00:17:45,860] a force being exerted on you
+- [00:17:45,860 - 00:17:48,500] and that that force that's being exerted on you
+- [00:17:48,500 - 00:17:49,940] is pulling you downward.
+- [00:17:50,300 - 00:17:51,600] You might as well,
+- [00:17:51,600 - 00:17:52,980] for all practical purposes,
+- [00:17:53,640 - 00:17:55,600] be infinitely far from the Earth
+- [00:17:55,600 - 00:17:57,540] with no gravity at all
+- [00:17:58,240 - 00:17:59,560] and just sitting there
+- [00:17:59,560 - 00:18:01,640] because as far as you can tell,
+- [00:18:02,180 - 00:18:03,760] there's no tendency
+- [00:18:03,820 - 00:18:06,700] for the gravitational field to deform this object
+- [00:18:06,700 - 00:18:07,560] or anything else.
+- [00:18:07,780 - 00:18:09,740] You cannot tell the difference
+- [00:18:09,740 - 00:18:12,100] between being in free space
+- [00:18:12,100 - 00:18:14,720] infinitely far from anything with no forces
+- [00:18:14,720 - 00:18:18,720] and falling freely in a gravitational field.
+- [00:18:19,760 - 00:18:22,080] That's another statement of the equivalence principle.
+- [00:18:22,460 - 00:18:24,280] Would you say not mechanically detectable?
+- [00:18:24,820 - 00:18:25,460] Well,
+- [00:18:25,460 - 00:18:25,880] in fact,
+- [00:18:25,880 - 00:18:26,620] not detectable,
+- [00:18:26,620 - 00:18:26,920] period,
+- [00:18:27,000 - 00:18:30,420] but so far not mechanically detectable.
+- [00:18:30,980 - 00:18:31,620] Well,
+- [00:18:31,620 - 00:18:33,240] would it be optically detectable?
+- [00:18:33,860 - 00:18:34,340] No.
+- [00:18:35,500 - 00:18:35,980] No.
+- [00:18:36,060 - 00:18:36,680] For example,
+- [00:18:37,480 - 00:18:39,120] these particles could be
+- [00:18:40,100 - 00:18:41,260] equipped with lasers.
+- [00:18:42,400 - 00:18:44,920] Lasers and optical detectors of some sort.
+- [00:18:45,360 - 00:18:46,760] I was just looking at the view.
+- [00:18:47,100 - 00:18:47,580] What's that?
+- [00:18:47,720 - 00:18:47,880] Oh,
+- [00:18:47,880 - 00:18:48,560] you could certainly tell
+- [00:18:48,560 - 00:18:49,860] if you were standing on the floor here,
+- [00:18:49,940 - 00:18:51,720] you could tell that something was falling toward you.
+- [00:18:52,040 - 00:18:53,200] But the question is,
+- [00:18:53,780 - 00:18:55,580] from within this object by itself,
+- [00:18:55,780 - 00:18:57,240] without looking at the floor,
+- [00:18:57,360 - 00:18:58,420] without knowing the floor was...
+- [00:18:58,420 - 00:19:00,320] Something that wasn't moving is still moving.
+- [00:19:01,260 - 00:19:01,740] Well,
+- [00:19:01,740 - 00:19:03,800] you can't tell whether you're falling in its...
+- [00:19:04,640 - 00:19:05,160] Yeah.
+- [00:19:06,060 - 00:19:06,580] Yeah.
+- [00:19:07,420 - 00:19:10,480] If there was something that was not falling,
+- [00:19:11,260 - 00:19:12,910] it would only be because there
+- [00:19:12,910 - 00:19:14,560] was some other force on it,
+- [00:19:14,640 - 00:19:16,710] like a beam or a tower
+- [00:19:16,710 - 00:19:18,780] of some sort holding it up.
+- [00:19:19,080 - 00:19:19,600] Why?
+- [00:19:20,040 - 00:19:21,140] Because this object,
+- [00:19:21,440 - 00:19:23,080] if there are no other forces on it,
+- [00:19:23,120 - 00:19:24,660] only the gravitational forces,
+- [00:19:25,320 - 00:19:28,760] it will fall at the same rate as this.
+- [00:19:29,520 - 00:19:30,180] All right.
+- [00:19:30,220 - 00:19:32,440] So that's another expression of the equivalence principle
+- [00:19:32,440 - 00:19:35,260] that you cannot tell the difference
+- [00:19:35,979 - 00:19:37,980] between being in free space,
+- [00:19:38,240 - 00:19:40,160] far from any gravitating object,
+- [00:19:41,979 - 00:19:44,580] versus being in a gravitational field.
+- [00:19:44,680 - 00:19:44,740] Now,
+- [00:19:44,740 - 00:19:45,720] we're going to modify this.
+- [00:19:45,840 - 00:19:46,000] This,
+- [00:19:46,000 - 00:19:46,320] of course,
+- [00:19:46,320 - 00:19:47,100] is not quite true
+- [00:19:47,100 - 00:19:48,660] in a real gravitational field.
+- [00:19:49,120 - 00:19:52,120] But in this flat space approximation,
+- [00:19:52,820 - 00:19:54,540] where everything moves together,
+- [00:19:55,379 - 00:19:58,360] you cannot tell that there's a gravitational field,
+- [00:19:58,540 - 00:20:00,000] or at least you cannot tell the difference,
+- [00:20:00,100 - 00:20:02,420] not without seeing the floor in any case,
+- [00:20:02,440 - 00:20:05,440] the self-contained object here
+- [00:20:05,440 - 00:20:08,280] does not experience anything different
+- [00:20:08,280 - 00:20:11,320] than it would experience far from any gravitating object
+- [00:20:11,320 - 00:20:12,080] standing still,
+- [00:20:12,300 - 00:20:14,560] or in uniform motion.
+- [00:20:14,840 - 00:20:15,560] Another question.
+- [00:20:16,130 - 00:20:16,350] What's up,
+- [00:20:16,350 - 00:20:16,590] yeah?
+- [00:20:17,570 - 00:20:17,810] Um.
+- [00:20:18,237 - 00:20:18,797] Well,
+- [00:20:18,797 - 00:20:20,777] we can tell when we're accelerating.
+- [00:20:22,337 - 00:20:22,737] No,
+- [00:20:22,737 - 00:20:24,877] you can't tell when you're accelerating.
+- [00:20:25,237 - 00:20:25,457] Well,
+- [00:20:25,457 - 00:20:27,617] you can't feel that you're accelerating.
+- [00:20:27,637 - 00:20:29,167] Isn't that because there's a
+- [00:20:29,167 - 00:20:30,697] connection between the different objects?
+- [00:20:30,777 - 00:20:31,017] Okay,
+- [00:20:31,017 - 00:20:32,117] here's what you can't tell.
+- [00:20:32,917 - 00:20:33,997] If you go up to
+- [00:20:33,997 - 00:20:35,077] the top of a high building,
+- [00:20:35,977 - 00:20:37,237] and you close your eyes,
+- [00:20:37,237 - 00:20:38,317] and you step off,
+- [00:20:38,377 - 00:20:39,497] and go into free fall,
+- [00:20:39,497 - 00:20:41,997] you will feel exactly the same.
+- [00:20:42,037 - 00:20:42,757] You'll feel weird.
+- [00:20:43,057 - 00:20:43,357] I mean,
+- [00:20:43,357 - 00:20:44,877] that's not the way you usually feel,
+- [00:20:44,877 - 00:20:47,407] because your stomach will come
+- [00:20:47,407 - 00:20:49,937] up and do some funny things.
+- [00:20:50,317 - 00:20:52,377] You might lose it.
+- [00:20:52,657 - 00:20:55,877] But the point is,
+- [00:20:55,877 - 00:20:58,297] you would feel exactly the same discomfort
+- [00:20:58,717 - 00:20:59,737] in outer space,
+- [00:20:59,737 - 00:21:01,777] far from any gravitating object,
+- [00:21:02,077 - 00:21:03,637] just standing still.
+- [00:21:03,897 - 00:21:06,697] You feel exactly the same peculiar feelings.
+- [00:21:08,337 - 00:21:10,477] What are those peculiar feelings due to?
+- [00:21:10,957 - 00:21:12,277] They're not due to falling.
+- [00:21:12,477 - 00:21:13,577] They're due to not fall.
+- [00:21:13,757 - 00:21:14,117] Well...
+- [00:21:15,857 - 00:21:17,207] They're due to the fact that
+- [00:21:17,207 - 00:21:18,557] when you stand on the Earth here,
+- [00:21:18,677 - 00:21:20,457] there are forces on the bottoms of your feet
+- [00:21:20,457 - 00:21:21,777] which keep you from falling.
+- [00:21:23,217 - 00:21:26,277] And if the Earth suddenly disappeared from under my feet,
+- [00:21:26,477 - 00:21:27,337] sure enough,
+- [00:21:27,337 - 00:21:28,697] my feet would feel funny,
+- [00:21:28,797 - 00:21:30,817] because they're used to having those forces
+- [00:21:30,817 - 00:21:32,057] exerted on their bottoms.
+- [00:21:32,257 - 00:21:33,017] You get it.
+- [00:21:33,357 - 00:21:33,977] I hope.
+- [00:21:35,677 - 00:21:38,057] So the fact that you feel funny in free fall
+- [00:21:39,537 - 00:21:41,577] is because you're not used to free fall.
+- [00:21:42,237 - 00:21:43,547] It doesn't matter whether you're
+- [00:21:43,547 - 00:21:44,857] infinitely far from the Earth,
+- [00:21:44,857 - 00:21:46,777] far from any gravitating object standing still,
+- [00:21:46,997 - 00:21:50,897] or freely falling in the presence of a gravitational field.
+- [00:21:51,297 - 00:21:51,817] Now,
+- [00:21:51,817 - 00:21:52,517] as I said,
+- [00:21:52,517 - 00:21:54,657] this will have to be modified in a little bit.
+- [00:21:55,577 - 00:21:57,677] There are such things as tidal forces.
+- [00:21:58,597 - 00:22:01,127] Those tidal forces are due to
+- [00:22:01,127 - 00:22:03,657] the fact that the Earth is curved,
+- [00:22:03,897 - 00:22:05,567] and that the gravitational field
+- [00:22:05,567 - 00:22:07,237] is not the same in every...
+- [00:22:07,657 - 00:22:09,957] same direction in every point,
+- [00:22:10,217 - 00:22:11,837] and that it varies with height.
+- [00:22:12,297 - 00:22:13,357] That's due...
+- [00:22:13,357 - 00:22:15,697] to the finiteness of the Earth.
+- [00:22:16,017 - 00:22:17,837] But in the flat space...
+- [00:22:17,837 - 00:22:20,337] in the flat Earth approximation,
+- [00:22:20,957 - 00:22:22,737] where the Earth is infinitely big,
+- [00:22:22,897 - 00:22:23,697] pulling uniformly,
+- [00:22:25,037 - 00:22:29,357] there is no other effect of gravity
+- [00:22:29,357 - 00:22:31,657] that is any different than being in free space.
+- [00:22:33,397 - 00:22:33,997] Okay,
+- [00:22:33,997 - 00:22:34,217] again,
+- [00:22:34,217 - 00:22:36,177] that's known as the equivalent principle.
+- [00:22:40,257 - 00:22:40,857] Now,
+- [00:22:40,857 - 00:22:43,337] let's go on beyond the flat space
+- [00:22:43,357 - 00:22:45,757] or the flat Earth approximation
+- [00:22:47,097 - 00:22:48,997] and move on
+- [00:22:51,577 - 00:22:53,917] to Newton's theory of gravity.
+- [00:22:55,577 - 00:22:57,137] Newton's theory of gravity
+- [00:22:59,317 - 00:23:01,817] says every object in the universe
+- [00:23:02,677 - 00:23:04,527] exerts a gravitational force on
+- [00:23:04,527 - 00:23:06,377] every other object in the universe.
+- [00:23:07,037 - 00:23:08,717] Let's start with just two of them.
+- [00:23:10,197 - 00:23:11,437] Equal and opposite,
+- [00:23:12,397 - 00:23:12,997] attractive,
+- [00:23:13,917 - 00:23:15,637] attractive means that the direction
+- [00:23:15,637 - 00:23:17,357] of the force on one object
+- [00:23:17,357 - 00:23:19,337] is toward the other one.
+- [00:23:21,637 - 00:23:23,377] Equal and opposite forces,
+- [00:23:23,437 - 00:23:25,737] and the magnitude of the force,
+- [00:23:26,437 - 00:23:29,337] the magnitude of the force of one object on another,
+- [00:23:29,577 - 00:23:33,117] let's characterize them by a mass.
+- [00:23:33,837 - 00:23:35,877] Let's call this one little m.
+- [00:23:36,877 - 00:23:39,097] Think of it as a lighter mass,
+- [00:23:39,177 - 00:23:40,057] and this one,
+- [00:23:40,057 - 00:23:42,277] which we can imagine is a heavier object,
+- [00:23:42,517 - 00:23:43,797] we'll call it big M.
+- [00:23:44,577 - 00:23:45,377] All right,
+- [00:23:45,377 - 00:23:46,897] Newton's law of force
+- [00:23:47,537 - 00:23:48,777] is that the force
+- [00:23:50,497 - 00:23:53,757] is proportional to the product of the masses,
+- [00:23:54,637 - 00:23:56,857] making either mass heavier
+- [00:23:56,857 - 00:23:58,597] will increase the force.
+- [00:23:59,837 - 00:24:01,557] The product of the masses,
+- [00:24:01,817 - 00:24:03,597] big M times little m,
+- [00:24:06,257 - 00:24:08,117] inversely proportional to the square
+- [00:24:08,117 - 00:24:09,977] of the distance between them,
+- [00:24:11,557 - 00:24:13,177] let's call that r squared.
+- [00:24:15,017 - 00:24:17,237] Let's call the distance between them r,
+- [00:24:19,757 - 00:24:22,197] and there's a numerical constant.
+- [00:24:22,517 - 00:24:25,677] This law by itself could not possibly be right.
+- [00:24:25,917 - 00:24:27,897] It's not dimensionally consistent.
+- [00:24:29,537 - 00:24:32,617] If you work out the dimensions of force,
+- [00:24:32,797 - 00:24:33,417] mass,
+- [00:24:33,417 - 00:24:33,837] mass,
+- [00:24:33,837 - 00:24:34,377] and r,
+- [00:24:34,637 - 00:24:36,497] it's not dimensionally consistent.
+- [00:24:36,697 - 00:24:39,777] There has to be a numerical constant in there.
+- [00:24:39,897 - 00:24:39,957] So,
+- [00:24:39,957 - 00:24:42,717] and that numerical constant is called capital G,
+- [00:24:44,597 - 00:24:45,437] Newton's constant,
+- [00:24:45,997 - 00:24:47,177] and it's very small.
+- [00:24:48,357 - 00:24:49,877] It's a very small constant.
+- [00:24:50,917 - 00:24:52,257] I'll write down what it is.
+- [00:24:52,377 - 00:24:55,957] G is equal to six,
+- [00:24:55,997 - 00:24:58,437] or 6.7 roughly,
+- [00:24:59,657 - 00:25:02,177] times 10 to the minus 11th,
+- [00:25:02,317 - 00:25:03,677] which is a small number.
+- [00:25:04,217 - 00:25:05,337] So on the face of it,
+- [00:25:05,377 - 00:25:07,197] it seems that gravity is a very weak force.
+- [00:25:09,497 - 00:25:10,857] You might not think that
+- [00:25:10,857 - 00:25:12,217] gravity is such a weak force,
+- [00:25:12,437 - 00:25:15,657] but to convince yourself it's a weak force,
+- [00:25:15,797 - 00:25:17,877] there's a simple experiment that you can do,
+- [00:25:17,997 - 00:25:19,957] weak by comparison with other forces.
+- [00:25:20,477 - 00:25:22,437] I've done this for classes,
+- [00:25:22,857 - 00:25:24,917] and you can do it yourself.
+- [00:25:25,897 - 00:25:30,877] Just take an object hanging by a string,
+- [00:25:31,977 - 00:25:33,757] and two experiments.
+- [00:25:34,077 - 00:25:35,417] The first experiment,
+- [00:25:35,657 - 00:25:36,757] take a little object here,
+- [00:25:37,197 - 00:25:39,037] and electrically charge it.
+- [00:25:39,157 - 00:25:41,937] You electrically charge it by rubbing it on your sweater.
+- [00:25:42,857 - 00:25:45,497] That doesn't put very much electric charge on it,
+- [00:25:45,577 - 00:25:47,667] but it charges it up
+- [00:25:47,667 - 00:25:49,757] enough to feel some electrostatic force.
+- [00:25:50,397 - 00:25:53,357] And then take another object of exactly the same kind,
+- [00:25:53,577 - 00:25:54,457] rub it on your shirt,
+- [00:25:54,597 - 00:25:55,677] and put it over here.
+- [00:25:56,557 - 00:25:57,477] What happens?
+- [00:25:57,817 - 00:25:58,917] They repel.
+- [00:25:59,097 - 00:26:01,877] And the fact that they repel means that
+- [00:26:03,277 - 00:26:05,117] this string will shift,
+- [00:26:05,217 - 00:26:06,037] and you'll see it shift.
+- [00:26:07,197 - 00:26:08,417] Take another example.
+- [00:26:09,197 - 00:26:11,257] Take your little ball there to be iron,
+- [00:26:11,817 - 00:26:13,657] and put a magnet next to it.
+- [00:26:17,337 - 00:26:17,897] Again,
+- [00:26:17,897 - 00:26:22,037] you'll see quite an easily detectable deflection
+- [00:26:23,197 - 00:26:25,897] of the string holding it.
+- [00:26:26,897 - 00:26:27,457] Next.
+- [00:26:31,897 - 00:26:34,837] Take a 10,000 pound weight and put it over here.
+- [00:26:37,657 - 00:26:38,757] Guess what happens?
+- [00:26:39,577 - 00:26:40,137] Undetectable.
+- [00:26:40,237 - 00:26:41,837] You cannot see anything happen.
+- [00:26:42,197 - 00:26:44,697] The gravitational force is much,
+- [00:26:44,697 - 00:26:45,517] much weaker
+- [00:26:46,197 - 00:26:48,737] than most other kinds of forces.
+- [00:26:49,277 - 00:26:51,157] And that's due to the,
+- [00:26:51,217 - 00:26:51,937] or not due to,
+- [00:26:52,097 - 00:26:52,697] but the,
+- [00:26:52,697 - 00:26:53,837] not due to that,
+- [00:26:53,997 - 00:26:55,897] the fact that it's so weak
+- [00:26:55,897 - 00:26:58,757] is encapsulated in this small number here.
+- [00:26:59,717 - 00:27:01,077] Another way to say it
+- [00:27:01,077 - 00:27:02,797] is if you take two masses,
+- [00:27:02,877 - 00:27:04,297] each of one kilo,
+- [00:27:04,457 - 00:27:05,397] not one kilometer,
+- [00:27:05,637 - 00:27:06,757] one kilogram,
+- [00:27:07,197 - 00:27:08,537] a kilogram is a good healthy mass,
+- [00:27:08,537 - 00:27:08,837] right?
+- [00:27:08,937 - 00:27:09,737] A nice chunk of iron.
+- [00:27:10,397 - 00:27:10,877] M,
+- [00:27:10,877 - 00:27:11,357] M,
+- [00:27:11,437 - 00:27:13,897] and you separate them by one meter,
+- [00:27:14,017 - 00:27:16,437] then the force between them is just G,
+- [00:27:16,657 - 00:27:20,197] and it's 6.7 times 10 to the minus 11,
+- [00:27:20,437 - 00:27:22,237] the units being Newtons.
+- [00:27:23,117 - 00:27:24,717] So it's a very weak force.
+- [00:27:26,097 - 00:27:26,577] But,
+- [00:27:26,577 - 00:27:27,637] weak as it is,
+- [00:27:27,777 - 00:27:29,957] we feel it rather strenuously,
+- [00:27:29,977 - 00:27:30,797] we feel it strongly,
+- [00:27:30,997 - 00:27:34,337] because the Earth is so darn heavy.
+- [00:27:34,697 - 00:27:36,857] So the heaviness of the Earth makes up,
+- [00:27:37,197 - 00:27:37,897] the smallness of G.
+- [00:27:38,637 - 00:27:39,117] And,
+- [00:27:39,117 - 00:27:39,737] um,
+- [00:27:41,817 - 00:27:44,117] so we wake up in the morning
+- [00:27:44,117 - 00:27:46,357] feeling like we don't want to get out of bed,
+- [00:27:46,517 - 00:27:50,217] because gravity is holding us down.
+- [00:27:50,517 - 00:27:50,997] Question.
+- [00:27:51,197 - 00:27:51,617] Yeah.
+- [00:27:51,897 - 00:27:52,377] Um,
+- [00:27:52,377 - 00:27:55,457] so that force is measuring the force between,
+- [00:27:56,097 - 00:27:57,697] from the larger to the smaller,
+- [00:27:57,697 - 00:27:58,357] or both?
+- [00:27:58,477 - 00:27:58,737] Both,
+- [00:27:58,737 - 00:27:58,997] both.
+- [00:27:59,037 - 00:27:59,777] They're equal and opposite.
+- [00:27:59,977 - 00:28:00,817] Equal and opposite.
+- [00:28:00,937 - 00:28:01,537] That's the,
+- [00:28:01,537 - 00:28:02,397] that's the rule.
+- [00:28:02,597 - 00:28:03,837] That's Newton's third law.
+- [00:28:04,777 - 00:28:06,897] The forces are equal and opposite.
+- [00:28:07,957 - 00:28:09,227] So the force on the large
+- [00:28:09,227 - 00:28:10,497] one due to the small one
+- [00:28:10,497 - 00:28:11,747] is the same as the force of
+- [00:28:11,747 - 00:28:12,997] the small one on the large one.
+- [00:28:14,877 - 00:28:15,277] And,
+- [00:28:15,277 - 00:28:15,877] uh,
+- [00:28:16,437 - 00:28:19,037] but it is proportional to the product of the masses.
+- [00:28:19,397 - 00:28:19,797] So,
+- [00:28:19,797 - 00:28:20,937] the meaning of that is,
+- [00:28:21,097 - 00:28:21,697] I'm not,
+- [00:28:22,637 - 00:28:23,037] well,
+- [00:28:23,037 - 00:28:24,277] I'm heavier than I like to be,
+- [00:28:24,357 - 00:28:24,517] but,
+- [00:28:24,517 - 00:28:24,737] uh,
+- [00:28:24,737 - 00:28:25,617] but I'm not very heavy.
+- [00:28:26,257 - 00:28:29,157] I'm certainly not heavy enough to deflect the hanging,
+- [00:28:29,297 - 00:28:29,617] uh,
+- [00:28:29,617 - 00:28:30,997] weight significantly.
+- [00:28:32,057 - 00:28:32,457] Right?
+- [00:28:32,537 - 00:28:34,957] But I do exert a force on the Earth
+- [00:28:34,957 - 00:28:37,177] which is exactly equal and opposite to the force
+- [00:28:37,197 - 00:28:39,897] that the very heavy Earth exerts on me.
+- [00:28:41,317 - 00:28:41,877] Okay.
+- [00:28:43,077 - 00:28:45,117] Why does the Earth accel-
+- [00:28:45,117 - 00:28:45,597] When I,
+- [00:28:46,197 - 00:28:49,057] if I drop from a certain height,
+- [00:28:49,717 - 00:28:51,317] I accelerate down,
+- [00:28:52,237 - 00:28:55,237] the Earth hardly accelerates at all,
+- [00:28:55,437 - 00:28:57,177] even though the forces are equal.
+- [00:28:57,457 - 00:28:59,337] Why is it that the Earth,
+- [00:28:59,537 - 00:29:01,477] if the forces are equal,
+- [00:29:01,757 - 00:29:03,257] my force on the Earth and
+- [00:29:03,257 - 00:29:04,757] the Earth's force on me are equal,
+- [00:29:05,017 - 00:29:06,777] why is it that the Earth,
+- [00:29:07,397 - 00:29:10,237] accelerates so little and I accelerate so much?
+- [00:29:10,377 - 00:29:11,457] Why is that a big mass?
+- [00:29:11,697 - 00:29:12,137] Yeah.
+- [00:29:12,257 - 00:29:14,637] Because the acceleration involves two things.
+- [00:29:14,797 - 00:29:16,677] It involves the force and the mass.
+- [00:29:17,357 - 00:29:18,817] The bigger the mass,
+- [00:29:18,937 - 00:29:21,157] the less the acceleration for a given force.
+- [00:29:21,557 - 00:29:22,037] So,
+- [00:29:22,037 - 00:29:23,277] the Earth doesn't excel-
+- [00:29:23,277 - 00:29:23,417] Yeah,
+- [00:29:23,417 - 00:29:23,697] question?
+- [00:29:24,097 - 00:29:24,617] Uh,
+- [00:29:24,617 - 00:29:26,657] how did Newton arrive at that equation
+- [00:29:27,017 - 00:29:28,477] for the gravitational force?
+- [00:29:31,077 - 00:29:32,777] I think it was largely a guess,
+- [00:29:32,897 - 00:29:33,497] but there was,
+- [00:29:33,497 - 00:29:34,957] so it was an educated guess.
+- [00:29:35,817 - 00:29:36,337] And,
+- [00:29:36,337 - 00:29:36,717] um,
+- [00:29:40,377 - 00:29:41,557] what was the key,
+- [00:29:41,557 - 00:29:41,857] uh,
+- [00:29:42,577 - 00:29:43,417] it was largely,
+- [00:29:43,417 - 00:29:43,637] ah,
+- [00:29:43,977 - 00:29:44,497] no,
+- [00:29:44,497 - 00:29:45,037] no,
+- [00:29:45,037 - 00:29:46,077] it was from Kepler's,
+- [00:29:46,077 - 00:29:47,257] it was from Kepler's laws.
+- [00:29:47,977 - 00:29:49,457] It was from Kepler's laws.
+- [00:29:49,697 - 00:29:50,357] He worked out,
+- [00:29:50,357 - 00:29:51,457] roughly speaking,
+- [00:29:51,597 - 00:29:53,397] I don't know exactly what he did.
+- [00:29:53,657 - 00:29:55,317] He was rather secretive and he
+- [00:29:55,317 - 00:29:56,977] didn't really tell people what he did.
+- [00:29:57,297 - 00:29:57,777] But,
+- [00:29:57,777 - 00:29:58,257] um,
+- [00:29:58,457 - 00:30:00,477] the piece of knowledge that he had
+- [00:30:01,117 - 00:30:03,097] was Kepler's laws of motion,
+- [00:30:03,097 - 00:30:04,197] planetary motion.
+- [00:30:04,817 - 00:30:07,117] And my guess is that he just wrote down
+- [00:30:07,197 - 00:30:08,237] a general force
+- [00:30:08,897 - 00:30:11,037] and realized that he would get
+- [00:30:11,037 - 00:30:13,457] Kepler's laws of motion for the inverse square law.
+- [00:30:13,717 - 00:30:14,317] Um,
+- [00:30:16,477 - 00:30:20,897] I don't believe he had any underlying theoretical reason
+- [00:30:20,897 - 00:30:23,657] to believe in the inverse square law.
+- [00:30:23,997 - 00:30:24,437] Yeah,
+- [00:30:24,437 - 00:30:26,457] Edmund Halley actually asked him,
+- [00:30:26,937 - 00:30:27,257] um,
+- [00:30:27,257 - 00:30:28,017] you know,
+- [00:30:28,017 - 00:30:29,777] what kind of force law do you need
+- [00:30:29,777 - 00:30:30,257] for,
+- [00:30:30,257 - 00:30:30,817] uh,
+- [00:30:30,817 - 00:30:31,857] tonic section coordinates?
+- [00:30:32,077 - 00:30:34,617] And he had already performed the calculations years before.
+- [00:30:34,857 - 00:30:35,097] Yeah.
+- [00:30:35,097 - 00:30:35,517] So,
+- [00:30:35,517 - 00:30:35,757] yeah.
+- [00:30:36,537 - 00:30:36,977] Actually,
+- [00:30:36,977 - 00:30:37,597] I don't think that,
+- [00:30:37,597 - 00:30:37,917] yeah,
+- [00:30:38,017 - 00:30:38,917] I think the question,
+- [00:30:38,937 - 00:30:39,197] that's correct.
+- [00:30:39,437 - 00:30:41,937] He asked the question for inverse square laws
+- [00:30:41,937 - 00:30:43,577] and I think that,
+- [00:30:43,577 - 00:30:43,717] uh,
+- [00:30:44,037 - 00:30:47,217] that Newton already knew the solution was an ellipse.
+- [00:30:47,337 - 00:30:47,497] Well,
+- [00:30:47,497 - 00:30:47,677] the key,
+- [00:30:47,677 - 00:30:48,257] no,
+- [00:30:48,257 - 00:30:48,397] no,
+- [00:30:48,397 - 00:30:50,197] it wasn't the ellipse which was the,
+- [00:30:50,277 - 00:30:51,017] the,
+- [00:30:51,017 - 00:30:53,777] the orbits might have been circular.
+- [00:30:54,117 - 00:30:56,397] It was the fact that the period varies
+- [00:30:56,397 - 00:30:58,537] as the three-halves power of the radius.
+- [00:30:59,637 - 00:31:00,197] All right?
+- [00:31:00,217 - 00:31:03,737] The period of motion is,
+- [00:31:03,737 - 00:31:04,077] uh,
+- [00:31:04,077 - 00:31:07,737] the circular motion has an acceleration toward the center.
+- [00:31:08,037 - 00:31:10,777] Any motion in the circle is accelerated toward the center.
+- [00:31:11,257 - 00:31:13,097] If you know the period and the radius,
+- [00:31:13,337 - 00:31:15,497] then you know the acceleration toward the center.
+- [00:31:16,237 - 00:31:16,717] Okay?
+- [00:31:17,017 - 00:31:17,497] Uh,
+- [00:31:17,497 - 00:31:18,437] we could write,
+- [00:31:18,437 - 00:31:18,877] well,
+- [00:31:18,877 - 00:31:19,317] let's,
+- [00:31:19,317 - 00:31:19,757] let's do it.
+- [00:31:20,477 - 00:31:20,957] Uh,
+- [00:31:20,957 - 00:31:21,357] anybody,
+- [00:31:21,357 - 00:31:21,837] uh,
+- [00:31:21,837 - 00:31:22,457] know what,
+- [00:31:22,457 - 00:31:22,657] uh,
+- [00:31:22,657 - 00:31:25,377] if I know the angular frequency,
+- [00:31:25,577 - 00:31:28,717] the angular frequency of going around in an orbit,
+- [00:31:28,817 - 00:31:29,017] uh,
+- [00:31:29,017 - 00:31:29,957] that's called omega,
+- [00:31:30,537 - 00:31:31,497] do you know what the,
+- [00:31:32,317 - 00:31:34,057] and it's basically just the inverse function,
+- [00:31:34,077 - 00:31:34,277] the inverse period.
+- [00:31:34,637 - 00:31:35,237] Okay?
+- [00:31:35,477 - 00:31:37,677] Omega is roughly the inverse period,
+- [00:31:37,937 - 00:31:39,077] number of,
+- [00:31:39,077 - 00:31:39,197] uh,
+- [00:31:39,197 - 00:31:40,097] cycles per second.
+- [00:31:40,797 - 00:31:41,197] What's the,
+- [00:31:41,197 - 00:31:42,847] what is the acceleration of a
+- [00:31:42,847 - 00:31:44,497] thing moving in a circular orbit?
+- [00:31:44,637 - 00:31:45,157] Anybody remember?
+- [00:31:45,477 - 00:31:46,257] Omega squared r.
+- [00:31:46,557 - 00:31:47,517] Omega squared r.
+- [00:31:48,477 - 00:31:50,017] Omega squared r,
+- [00:31:51,137 - 00:31:52,337] that's the acceleration.
+- [00:31:53,777 - 00:31:54,377] Now,
+- [00:31:54,377 - 00:31:57,617] supposing he sets that equal to some unknown force law,
+- [00:31:59,377 - 00:32:00,457] f of r,
+- [00:32:01,957 - 00:32:03,637] and then divides by r.
+- [00:32:04,257 - 00:32:08,347] Then he finds omega as a
+- [00:32:08,347 - 00:32:12,437] function of the radius of the orbit.
+- [00:32:14,057 - 00:32:14,537] Okay?
+- [00:32:14,857 - 00:32:15,337] Well,
+- [00:32:15,337 - 00:32:16,597] let's do it for the real case.
+- [00:32:16,697 - 00:32:17,457] For the real case,
+- [00:32:17,457 - 00:32:18,477] inverse square law,
+- [00:32:18,577 - 00:32:20,037] f of r is one over r squared,
+- [00:32:20,377 - 00:32:22,257] so this would be one over r cubed,
+- [00:32:24,157 - 00:32:25,757] and in that form,
+- [00:32:25,757 - 00:32:28,577] it is Kepler's second law?
+- [00:32:28,797 - 00:32:30,337] I don't remember which one it is.
+- [00:32:30,677 - 00:32:32,897] It's the law that says that the frequency,
+- [00:32:32,897 - 00:32:33,657] or the period,
+- [00:32:33,917 - 00:32:35,437] the square of the period,
+- [00:32:35,577 - 00:32:37,837] is proportional to the cube of the radius.
+- [00:32:38,237 - 00:32:39,737] That was the law of Kepler.
+- [00:32:39,937 - 00:32:41,557] So from Kepler's laws,
+- [00:32:41,757 - 00:32:43,277] he easily could,
+- [00:32:43,437 - 00:32:44,637] or that one law,
+- [00:32:44,777 - 00:32:46,137] he could easily deduce,
+- [00:32:46,637 - 00:32:46,917] uh,
+- [00:32:46,917 - 00:32:50,337] that the force was proportional to one over r squared.
+- [00:32:50,517 - 00:32:52,477] I think that's probably historically what,
+- [00:32:52,477 - 00:32:52,697] uh,
+- [00:32:52,697 - 00:32:53,337] what he did.
+- [00:32:53,837 - 00:32:54,397] Then,
+- [00:32:54,397 - 00:32:55,537] on top of that,
+- [00:32:55,637 - 00:32:59,237] he realized if you didn't have a perfectly circular orbit,
+- [00:32:59,997 - 00:33:02,877] then the inverse square law was the unique law,
+- [00:33:03,737 - 00:33:04,957] which would give,
+- [00:33:04,957 - 00:33:05,197] um,
+- [00:33:05,417 - 00:33:06,217] which would give,
+- [00:33:06,217 - 00:33:06,457] uh,
+- [00:33:06,457 - 00:33:08,537] elliptical orbits.
+- [00:33:09,717 - 00:33:11,317] So it was a two-step thing.
+- [00:33:14,197 - 00:33:17,317] What happens when the two objects are touching?
+- [00:33:18,437 - 00:33:18,917] Well,
+- [00:33:18,917 - 00:33:19,137] then,
+- [00:33:19,137 - 00:33:19,457] of course,
+- [00:33:19,457 - 00:33:20,777] there are other forces on them.
+- [00:33:21,157 - 00:33:23,537] If the two objects are actually touching each other,
+- [00:33:23,657 - 00:33:26,077] there are all sorts of forces between them
+- [00:33:26,077 - 00:33:27,477] that are not just gravitational.
+- [00:33:29,197 - 00:33:30,037] Electrostatic forces,
+- [00:33:30,037 - 00:33:31,317] atomic forces,
+- [00:33:31,317 - 00:33:32,337] nuclear forces,
+- [00:33:32,337 - 00:33:35,697] so you have to modify the whole story.
+- [00:33:35,797 - 00:33:38,337] As the distance approaches zero...
+- [00:33:39,017 - 00:33:39,437] Yeah.
+- [00:33:39,677 - 00:33:41,317] Then it breaks down.
+- [00:33:41,797 - 00:33:42,917] Then it breaks down,
+- [00:33:42,917 - 00:33:43,157] yeah.
+- [00:33:43,477 - 00:33:45,437] Then it breaks down when they get so close
+- [00:33:45,437 - 00:33:48,677] that other important forces come into play.
+- [00:33:48,997 - 00:33:50,597] The other important forces,
+- [00:33:50,597 - 00:33:51,317] for example,
+- [00:33:51,317 - 00:33:53,997] are the forces that are holding this object
+- [00:33:53,997 - 00:33:55,717] and preventing it from falling.
+- [00:33:56,277 - 00:33:56,837] These,
+- [00:33:56,837 - 00:33:58,497] we usually call them contact forces,
+- [00:33:58,697 - 00:34:00,077] but in fact what they really are
+- [00:34:00,077 - 00:34:02,317] is various kinds of electrostatic forces
+- [00:34:02,337 - 00:34:07,537] between the atoms and molecules in the table
+- [00:34:07,537 - 00:34:09,317] and the atoms and molecules in here.
+- [00:34:09,717 - 00:34:11,317] So other kinds of forces.
+- [00:34:11,737 - 00:34:12,437] All right.
+- [00:34:13,297 - 00:34:13,897] Incidentally,
+- [00:34:13,897 - 00:34:15,097] let me just point out,
+- [00:34:15,097 - 00:34:16,017] uh...
+- [00:34:18,537 - 00:34:21,537] If we're talking about other kinds of force laws,
+- [00:34:21,677 - 00:34:22,097] for example,
+- [00:34:22,097 - 00:34:23,517] electrostatic force laws,
+- [00:34:24,177 - 00:34:25,997] then the force...
+- [00:34:25,997 - 00:34:28,257] We still have F equals mA,
+- [00:34:28,937 - 00:34:30,597] but the force law...
+- [00:34:31,717 - 00:34:32,317] is the force that's going to be
+- [00:34:32,337 - 00:34:32,617] in the center of the object.
+- [00:34:32,617 - 00:34:34,317] The force law will not be
+- [00:34:34,317 - 00:34:39,217] that the force is somehow proportional to the mass
+- [00:34:39,217 - 00:34:40,457] times something else,
+- [00:34:40,617 - 00:34:42,497] but it could be the electric charge.
+- [00:34:43,257 - 00:34:45,077] If it's the electric charge,
+- [00:34:45,197 - 00:34:47,857] then electrically uncharged objects
+- [00:34:47,857 - 00:34:49,237] will have no forces on them,
+- [00:34:49,237 - 00:34:50,097] and they won't accelerate.
+- [00:34:50,557 - 00:34:52,997] Electrically charged objects will accelerate
+- [00:34:52,997 - 00:34:54,357] in an electric field.
+- [00:34:54,657 - 00:34:58,917] So electrical forces don't have this universal property
+- [00:34:58,917 - 00:35:00,077] that everything falls
+- [00:35:00,077 - 00:35:01,717] or everything moves in the same way.
+- [00:35:02,317 - 00:35:04,377] Uncharged particles move differently
+- [00:35:04,377 - 00:35:05,497] than charged particles
+- [00:35:06,077 - 00:35:08,017] with respect to electrostatic forces.
+- [00:35:08,737 - 00:35:10,197] They move the same way
+- [00:35:10,197 - 00:35:12,097] with respect to gravitational forces.
+- [00:35:14,137 - 00:35:16,117] And there's repulsion and attraction,
+- [00:35:16,477 - 00:35:19,137] whereas gravitational forces are always attractive.
+- [00:35:19,537 - 00:35:21,317] Where's my gravitational force?
+- [00:35:23,157 - 00:35:24,277] I lost it.
+- [00:35:25,917 - 00:35:26,557] Yeah,
+- [00:35:26,557 - 00:35:27,217] here it is.
+- [00:35:28,457 - 00:35:29,237] All right,
+- [00:35:29,237 - 00:35:29,737] so that's...
+- [00:35:29,737 - 00:35:33,357] that's Newtonian gravity between two objects.
+- [00:35:35,017 - 00:35:35,517] Um...
+- [00:35:37,677 - 00:35:38,677] For simplicity,
+- [00:35:38,677 - 00:35:40,077] let's just put one of them,
+- [00:35:40,117 - 00:35:40,717] the heavy one,
+- [00:35:40,877 - 00:35:42,917] at the origin of coordinates
+- [00:35:42,917 - 00:35:44,737] and study the motion of the light one.
+- [00:35:46,197 - 00:35:46,697] Then...
+- [00:35:46,697 - 00:35:47,357] Oh,
+- [00:35:47,357 - 00:35:47,877] incidentally,
+- [00:35:47,877 - 00:35:48,937] one usually puts...
+- [00:35:48,937 - 00:35:49,217] Let me...
+- [00:35:49,217 - 00:35:50,797] let me refine this a little bit.
+- [00:35:51,557 - 00:35:52,877] As I've written it here,
+- [00:35:53,037 - 00:35:55,817] I haven't really expressed it as a vector equation.
+- [00:35:56,277 - 00:35:58,737] This is the magnitude of the force
+- [00:35:58,737 - 00:35:59,997] between two objects.
+- [00:36:00,497 - 00:36:02,977] Thought of as a vector equation,
+- [00:36:04,677 - 00:36:08,617] we have to provide a direction for the force.
+- [00:36:09,117 - 00:36:10,737] Vectors have directions.
+- [00:36:10,937 - 00:36:13,697] What direction is the force
+- [00:36:15,537 - 00:36:17,277] on this particle?
+- [00:36:17,637 - 00:36:18,497] Well,
+- [00:36:18,497 - 00:36:19,337] the answer is
+- [00:36:19,337 - 00:36:23,077] it's along the radial direction itself.
+- [00:36:23,557 - 00:36:25,157] So let's call
+- [00:36:25,157 - 00:36:29,377] the radial distance r,
+- [00:36:29,697 - 00:36:31,657] or the radial vector r,
+- [00:36:32,677 - 00:36:35,297] then the force on little m here
+- [00:36:35,297 - 00:36:38,157] is along the direction r,
+- [00:36:40,357 - 00:36:44,157] but it's also opposite to the direction of r.
+- [00:36:44,457 - 00:36:48,237] The radial vector relative to the origin over here
+- [00:36:48,237 - 00:36:49,497] points this way.
+- [00:36:50,377 - 00:36:51,657] On the other hand,
+- [00:36:51,657 - 00:36:53,677] the force points in the opposite direction.
+- [00:36:53,677 - 00:36:55,497] If we want to make a
+- [00:36:55,497 - 00:36:57,317] real vector equation out of this,
+- [00:36:57,457 - 00:37:00,197] we first of all have to put a minus sign.
+- [00:37:00,617 - 00:37:03,097] That indicates that the force is opposite
+- [00:37:03,097 - 00:37:05,557] to the direction of the radial distance here.
+- [00:37:05,857 - 00:37:08,377] But we have to also put something in
+- [00:37:08,377 - 00:37:11,197] which tells us what direction the force is in.
+- [00:37:11,737 - 00:37:13,597] It's along the radial direction.
+- [00:37:14,277 - 00:37:15,357] But wait a minute.
+- [00:37:15,437 - 00:37:17,657] If I multiply it by r up here,
+- [00:37:18,477 - 00:37:20,277] I had better divide it
+- [00:37:20,277 - 00:37:23,117] by another factor of r downstairs.
+- [00:37:23,117 - 00:37:25,137] To keep the magnitude unchanged.
+- [00:37:26,157 - 00:37:29,057] The magnitude of the force is 1 over r squared.
+- [00:37:29,637 - 00:37:31,997] If I were to just randomly come
+- [00:37:31,997 - 00:37:33,277] and multiply it by r,
+- [00:37:34,037 - 00:37:36,097] that would make the magnitude bigger
+- [00:37:36,097 - 00:37:37,257] by a factor of r,
+- [00:37:37,377 - 00:37:38,587] so I have to divide
+- [00:37:38,587 - 00:37:39,797] it by the magnitude of r.
+- [00:37:42,837 - 00:37:45,157] This is Newton's force law
+- [00:37:46,477 - 00:37:48,317] expressed in vector form.
+- [00:37:56,557 - 00:37:57,897] Now let's imagine
+- [00:37:57,897 - 00:38:00,897] that we have a whole assembly of particles.
+- [00:38:05,317 - 00:38:06,717] A whole bunch of them.
+- [00:38:07,997 - 00:38:10,477] They're all exerting forces on one another.
+- [00:38:16,117 - 00:38:17,297] In pairs,
+- [00:38:18,337 - 00:38:22,477] they exert exactly the force that Newton wrote down.
+- [00:38:23,117 - 00:38:25,177] But what's the total force on a particle?
+- [00:38:25,997 - 00:38:27,537] Let's label these particles.
+- [00:38:27,877 - 00:38:28,677] This is the first one,
+- [00:38:28,677 - 00:38:29,337] the second one,
+- [00:38:29,397 - 00:38:29,957] the third one,
+- [00:38:29,957 - 00:38:30,697] the fourth one,
+- [00:38:30,797 - 00:38:31,657] dot dot dot dot dot.
+- [00:38:31,817 - 00:38:33,297] This is the ith one over here.
+- [00:38:34,257 - 00:38:36,517] So i is a running index
+- [00:38:37,097 - 00:38:39,197] which labels which particle we're talking about.
+- [00:38:40,677 - 00:38:42,857] The force on the ith particle,
+- [00:38:43,457 - 00:38:45,217] let's call it f sub i,
+- [00:38:46,797 - 00:38:48,897] and let's remember that it's a vector.
+- [00:38:50,197 - 00:38:51,697] It's equal to the sum.
+- [00:38:51,697 - 00:38:54,657] Now this is not an obvious fact
+- [00:38:56,337 - 00:38:58,417] that when you have two objects
+- [00:38:58,417 - 00:38:59,977] exerting a force on the third,
+- [00:39:00,217 - 00:39:03,117] that the force is necessarily equal
+- [00:39:03,117 - 00:39:04,737] to the sum of the two forces,
+- [00:39:05,417 - 00:39:08,197] of the two objects,
+- [00:39:08,477 - 00:39:09,377] you know what I mean.
+- [00:39:09,797 - 00:39:11,197] But it is a fact anyway.
+- [00:39:11,737 - 00:39:12,917] Obvious or not obvious,
+- [00:39:12,917 - 00:39:13,637] it is a fact.
+- [00:39:13,737 - 00:39:15,017] Gravity does work that way,
+- [00:39:15,057 - 00:39:17,877] at least in the Newtonian approximation.
+- [00:39:18,757 - 00:39:19,677] With Einstein,
+- [00:39:19,677 - 00:39:20,957] it breaks down a little bit.
+- [00:39:20,957 - 00:39:22,757] But in Newtonian physics,
+- [00:39:22,957 - 00:39:23,977] the force is the sum,
+- [00:39:24,537 - 00:39:27,897] and so it's a sum over all the other particles.
+- [00:39:29,877 - 00:39:32,517] Let's write that j not equal to i.
+- [00:39:32,757 - 00:39:34,387] That means it's a sum
+- [00:39:34,387 - 00:39:36,017] over all not equal to i.
+- [00:39:37,277 - 00:39:39,177] So the force on the first particle
+- [00:39:39,777 - 00:39:41,577] doesn't come from the first particle,
+- [00:39:41,677 - 00:39:42,837] it comes from the second particle,
+- [00:39:42,917 - 00:39:43,537] third particle,
+- [00:39:43,537 - 00:39:44,277] fourth particle,
+- [00:39:44,277 - 00:39:44,917] and so forth.
+- [00:39:46,197 - 00:39:49,717] Each individual force involves m sub i,
+- [00:39:49,717 - 00:39:51,637] the force of the i-th particle,
+- [00:39:52,577 - 00:39:55,597] times the mass of the j-th particle.
+- [00:39:57,397 - 00:39:58,597] Product of the masses
+- [00:40:00,597 - 00:40:03,557] divided by the square of the distance between them,
+- [00:40:03,617 - 00:40:04,957] let's call that r i j,
+- [00:40:05,977 - 00:40:06,497] squared.
+- [00:40:08,457 - 00:40:11,717] The distance between the i-th particle is i and j,
+- [00:40:11,917 - 00:40:13,677] the distance between the i-th particle
+- [00:40:13,677 - 00:40:15,597] and the j-th particle is r i j.
+- [00:40:17,417 - 00:40:18,337] But then,
+- [00:40:19,037 - 00:40:20,817] just as we did before,
+- [00:40:21,017 - 00:40:22,517] we have to give it a direction.
+- [00:40:23,157 - 00:40:24,777] Put a minus sign here,
+- [00:40:24,917 - 00:40:26,237] that indicates that it's attractive.
+- [00:40:27,157 - 00:40:29,377] Another r i j upstairs,
+- [00:40:29,697 - 00:40:31,637] but that's a vector r i j,
+- [00:40:31,837 - 00:40:33,497] and make this cube downstairs.
+- [00:40:34,797 - 00:40:35,357] Alright,
+- [00:40:35,357 - 00:40:36,217] so that says
+- [00:40:36,217 - 00:40:38,617] that the force on the i-th particle
+- [00:40:38,617 - 00:40:40,957] is the sum of all the forces
+- [00:40:40,957 - 00:40:42,257] due to all the other ones
+- [00:40:43,237 - 00:40:45,497] of the product of their masses,
+- [00:40:46,877 - 00:40:48,317] inverse square in the distance,
+- [00:40:48,337 - 00:40:48,517] and the denominator,
+- [00:40:48,977 - 00:40:52,497] and the direction of each individual force
+- [00:40:52,497 - 00:40:53,677] on this particle,
+- [00:40:53,817 - 00:40:55,057] is toward the other.
+- [00:40:56,497 - 00:40:57,057] Alright,
+- [00:40:57,057 - 00:40:58,017] this is a vector sum.
+- [00:40:58,477 - 00:40:58,937] Yeah?
+- [00:41:00,197 - 00:41:03,037] The minus indicates that it's attractive.
+- [00:41:05,197 - 00:41:05,757] Oh,
+- [00:41:05,757 - 00:41:06,317] excellent.
+- [00:41:06,737 - 00:41:09,137] But you've got the vector going from i to j.
+- [00:41:10,617 - 00:41:11,177] Oh.
+- [00:41:12,917 - 00:41:13,477] Uh...
+- [00:41:16,217 - 00:41:16,917] Let's see.
+- [00:41:20,057 - 00:41:22,297] That's a vector going from r to i to j.
+- [00:41:22,397 - 00:41:22,577] Yes,
+- [00:41:22,577 - 00:41:23,777] there is a question of the sign
+- [00:41:23,777 - 00:41:25,237] of this vector over here.
+- [00:41:26,297 - 00:41:26,697] So,
+- [00:41:26,697 - 00:41:27,097] yeah,
+- [00:41:27,097 - 00:41:28,257] you're absolutely...
+- [00:41:28,937 - 00:41:29,737] Let's see.
+- [00:41:30,337 - 00:41:30,737] Blah,
+- [00:41:30,737 - 00:41:30,837] blah,
+- [00:41:30,837 - 00:41:30,997] blah,
+- [00:41:30,997 - 00:41:31,137] blah,
+- [00:41:31,137 - 00:41:31,217] blah.
+- [00:41:32,717 - 00:41:33,117] Um...
+- [00:41:35,277 - 00:41:35,677] Yeah.
+- [00:41:35,957 - 00:41:37,217] I actually think it's...
+- [00:41:37,217 - 00:41:37,577] Yeah,
+- [00:41:37,577 - 00:41:37,997] you're right.
+- [00:41:38,117 - 00:41:39,117] You're absolutely right.
+- [00:41:39,257 - 00:41:40,217] The way I've written it,
+- [00:41:40,237 - 00:41:42,057] there should not be a minus sign here.
+- [00:41:43,277 - 00:41:43,677] Alright?
+- [00:41:43,757 - 00:41:45,537] But if I put r j i there,
+- [00:41:46,737 - 00:41:48,097] then there would be a minus sign.
+- [00:41:48,337 - 00:41:48,417] Alright?
+- [00:41:49,437 - 00:41:50,317] So you're right.
+- [00:41:51,657 - 00:41:52,137] Uh...
+- [00:41:53,937 - 00:41:55,397] But in any case,
+- [00:41:55,457 - 00:41:58,277] every one of the forces is attractive.
+- [00:41:59,897 - 00:42:00,377] Alright?
+- [00:42:00,977 - 00:42:02,247] And what we have to
+- [00:42:02,247 - 00:42:03,517] do is to add them up.
+- [00:42:03,697 - 00:42:05,517] We have to add them up as vectors.
+- [00:42:05,777 - 00:42:07,657] And so there's some resulting vector,
+- [00:42:07,897 - 00:42:09,057] some resultant vector,
+- [00:42:09,637 - 00:42:12,337] which doesn't point toward any one of them in particular,
+- [00:42:12,857 - 00:42:14,457] but points in some direction,
+- [00:42:14,577 - 00:42:16,057] which is determined by the
+- [00:42:16,057 - 00:42:17,537] vector sum of all the others.
+- [00:42:18,337 - 00:42:18,657] Alright?
+- [00:42:18,817 - 00:42:21,857] But the interesting fact is,
+- [00:42:21,937 - 00:42:23,357] if we combine this...
+- [00:42:23,357 - 00:42:25,397] This is the force on the i-th particle.
+- [00:42:25,677 - 00:42:28,217] If we combine it with Newton's equations...
+- [00:42:28,217 - 00:42:29,417] Let's combine it with Newton's...
+- [00:42:29,417 - 00:42:33,597] with Newton's f equals m a equations,
+- [00:42:35,017 - 00:42:35,497] then...
+- [00:42:40,757 - 00:42:41,237] Well,
+- [00:42:41,237 - 00:42:41,857] this is f.
+- [00:42:46,217 - 00:42:46,697] This...
+- [00:42:46,697 - 00:42:47,697] On the i-th particle,
+- [00:42:47,697 - 00:42:50,557] this is equal to the mass of the i-th particle
+- [00:42:51,017 - 00:42:53,217] times the acceleration of the i-th particle.
+- [00:42:53,457 - 00:42:53,917] Again,
+- [00:42:53,917 - 00:42:54,957] vector equations.
+- [00:42:56,497 - 00:42:56,957] Now,
+- [00:42:56,957 - 00:43:00,537] the sum here is over all the other particles.
+- [00:43:02,057 - 00:43:03,777] We're focusing on number i.
+- [00:43:05,957 - 00:43:06,417] i,
+- [00:43:06,417 - 00:43:08,097] the mass of the i-th particle,
+- [00:43:08,197 - 00:43:09,597] will cancel out of this equation.
+- [00:43:10,017 - 00:43:11,317] I don't want to throw it away,
+- [00:43:11,437 - 00:43:13,157] but let's just circle it
+- [00:43:13,667 - 00:43:15,057] and now put it over on the side.
+- [00:43:17,697 - 00:43:19,837] We notice that the acceleration
+- [00:43:20,317 - 00:43:21,517] of the i-th particle
+- [00:43:21,517 - 00:43:23,657] does not depend on its mass again.
+- [00:43:24,077 - 00:43:24,857] Once again,
+- [00:43:24,857 - 00:43:26,657] because the mass occurs
+- [00:43:26,657 - 00:43:28,357] in both sides of the equation,
+- [00:43:28,477 - 00:43:29,497] it can be canceled out,
+- [00:43:29,597 - 00:43:31,637] and the motion of the i-th particle
+- [00:43:31,637 - 00:43:35,177] does not depend on the mass of the i-th particle.
+- [00:43:35,237 - 00:43:37,257] It depends on the masses of all the other ones.
+- [00:43:38,557 - 00:43:39,937] All the other ones come in,
+- [00:43:39,977 - 00:43:41,557] but the mass of the i-th particle
+- [00:43:42,097 - 00:43:43,277] cancels out of the equation.
+- [00:43:43,757 - 00:43:44,777] So what that means
+- [00:43:44,777 - 00:43:47,597] is if we had a whole bunch of particles,
+- [00:43:47,597 - 00:43:47,837] here,
+- [00:43:49,277 - 00:43:51,557] and we added one more over here,
+- [00:43:52,217 - 00:43:54,877] its motion would not depend
+- [00:43:54,877 - 00:43:56,277] on the mass of that particle.
+- [00:43:56,377 - 00:43:58,357] It depends on the mass of all the other ones,
+- [00:43:58,497 - 00:44:00,057] but it doesn't depend on the mass
+- [00:44:00,057 - 00:44:01,097] of the i-th particle here.
+- [00:44:02,677 - 00:44:03,197] That's,
+- [00:44:03,197 - 00:44:03,717] again,
+- [00:44:03,717 - 00:44:05,077] the equivalence principle,
+- [00:44:05,237 - 00:44:08,477] that the motion of a particle
+- [00:44:08,477 - 00:44:10,077] doesn't depend on its mass.
+- [00:44:10,477 - 00:44:11,237] And again,
+- [00:44:11,237 - 00:44:13,917] if we had a whole bunch of particles here,
+- [00:44:14,897 - 00:44:16,477] if they were close enough together,
+- [00:44:16,477 - 00:44:18,837] they would all move in the same way.
+- [00:44:20,377 - 00:44:24,597] Before I discuss a little more mathematics,
+- [00:44:26,097 - 00:44:27,917] let's just discuss tidal forces,
+- [00:44:28,117 - 00:44:29,497] what tidal forces are.
+- [00:44:29,677 - 00:44:31,337] Can I ask one question?
+- [00:44:31,517 - 00:44:31,557] Yeah.
+- [00:44:33,077 - 00:44:35,797] Once you set this whole thing into motion,
+- [00:44:35,857 - 00:44:36,397] dynamically,
+- [00:44:37,217 - 00:44:38,857] we have all different masses,
+- [00:44:39,317 - 00:44:41,557] and each particle is going to be affected
+- [00:44:41,557 - 00:44:42,957] by each one differently.
+- [00:44:43,257 - 00:44:43,277] Yes,
+- [00:44:43,277 - 00:44:43,337] yes,
+- [00:44:43,337 - 00:44:43,557] yes.
+- [00:44:44,617 - 00:44:46,137] I think I know what you're going to ask,
+- [00:44:46,137 - 00:44:46,457] but I'm just...
+- [00:44:46,457 - 00:44:48,997] Every particle in there is going to experience
+- [00:44:48,997 - 00:44:51,077] a uniform acceleration?
+- [00:44:51,497 - 00:44:51,717] No,
+- [00:44:51,717 - 00:44:51,817] no,
+- [00:44:51,817 - 00:44:51,937] no.
+- [00:44:52,477 - 00:44:55,437] The acceleration is not uniform.
+- [00:44:56,267 - 00:44:58,817] The acceleration will get larger
+- [00:44:58,817 - 00:45:01,317] when it gets closer to one of the particles.
+- [00:45:06,017 - 00:45:08,337] It won't be uniform anymore.
+- [00:45:08,757 - 00:45:11,417] It won't be uniform now because the force
+- [00:45:12,127 - 00:45:14,277] is not independent of where you are.
+- [00:45:14,277 - 00:45:17,217] Now the force depends on where you are
+- [00:45:17,217 - 00:45:19,797] relative to the objects that are exerting the force.
+- [00:45:19,997 - 00:45:22,017] It was only in the flat Earth approximation
+- [00:45:23,057 - 00:45:25,357] where the force didn't depend on where you were.
+- [00:45:26,577 - 00:45:27,137] Okay?
+- [00:45:28,057 - 00:45:30,057] Now the force varies,
+- [00:45:30,177 - 00:45:32,717] so it's larger when you're far away,
+- [00:45:33,437 - 00:45:33,997] it's...sorry,
+- [00:45:33,997 - 00:45:35,957] it's smaller when you're far away,
+- [00:45:36,137 - 00:45:37,637] it's larger when you're in close.
+- [00:45:38,557 - 00:45:39,117] Okay?
+- [00:45:39,637 - 00:45:42,897] But is it going to be changing in a...
+- [00:45:44,317 - 00:45:47,977] It changes in a vector form
+- [00:45:47,977 - 00:45:51,717] with each individual particle.
+- [00:45:51,837 - 00:45:53,417] Each one of them is changing position.
+- [00:45:53,757 - 00:45:54,017] Yeah.
+- [00:45:54,677 - 00:45:58,257] And so is the dynamics that every one of them
+- [00:45:58,257 - 00:46:00,477] is going towards the center of gravity
+- [00:46:00,477 - 00:46:01,277] of the entire...
+- [00:46:01,857 - 00:46:02,677] Not necessarily.
+- [00:46:02,917 - 00:46:03,577] I mean,
+- [00:46:03,577 - 00:46:05,237] they could be flying apart from each other,
+- [00:46:05,297 - 00:46:07,377] but they will be accelerating toward each other.
+- [00:46:08,317 - 00:46:08,797] Okay?
+- [00:46:08,877 - 00:46:10,817] If I throw this eraser into the air
+- [00:46:10,817 - 00:46:12,157] with greater than the escape velocity,
+- [00:46:12,517 - 00:46:14,257] it's not going to turn around and fall back down.
+- [00:46:15,537 - 00:46:16,117] No,
+- [00:46:16,117 - 00:46:16,837] the question is,
+- [00:46:16,857 - 00:46:18,797] is the acceleration a uniform acceleration
+- [00:46:18,797 - 00:46:21,337] or is it a changing dynamic acceleration?
+- [00:46:21,577 - 00:46:22,337] Changing with what?
+- [00:46:22,377 - 00:46:23,217] With respect to what?
+- [00:46:23,317 - 00:46:23,817] Time?
+- [00:46:24,337 - 00:46:24,917] Oh,
+- [00:46:24,917 - 00:46:26,517] it changes with respect to time
+- [00:46:26,517 - 00:46:29,417] because the object moves further and further away.
+- [00:46:29,777 - 00:46:33,317] In the two-mass system,
+- [00:46:35,117 - 00:46:37,517] I call that a uniform acceleration.
+- [00:46:38,817 - 00:46:40,837] Uniform with respect to what?
+- [00:46:42,037 - 00:46:43,077] It's not uniform.
+- [00:46:43,137 - 00:46:44,237] The radius is...
+- [00:46:44,257 - 00:46:44,537] The radius is changing
+- [00:46:44,537 - 00:46:47,177] and it's inverse cubed with the radius.
+- [00:46:47,397 - 00:46:48,137] Inverse squared.
+- [00:46:51,137 - 00:46:52,557] One of these can't...
+- [00:46:52,557 - 00:46:53,037] Inverse squared.
+- [00:46:53,617 - 00:46:54,137] Yeah.
+- [00:46:54,317 - 00:46:55,237] Let's take the Earth.
+- [00:46:55,317 - 00:46:55,797] Here's the Earth
+- [00:46:55,797 - 00:46:58,977] and we drop a small mass from far away.
+- [00:46:59,477 - 00:47:01,177] As that mass moves in,
+- [00:47:01,357 - 00:47:02,917] its acceleration increases.
+- [00:47:03,337 - 00:47:04,777] Why does its acceleration increase?
+- [00:47:04,997 - 00:47:06,237] Its acceleration increases
+- [00:47:06,237 - 00:47:08,797] because the radial distance gets smaller.
+- [00:47:09,337 - 00:47:10,417] So in that sense,
+- [00:47:10,417 - 00:47:11,397] it's not the...
+- [00:47:11,397 - 00:47:12,997] All right.
+- [00:47:13,017 - 00:47:13,137] Now,
+- [00:47:13,137 - 00:47:17,637] once the gravitational force depends on distance,
+- [00:47:18,757 - 00:47:21,797] then it's not really quite true
+- [00:47:21,797 - 00:47:25,617] that you don't feel anything in a gravitational field.
+- [00:47:25,797 - 00:47:28,417] You feel something which is to some extent different
+- [00:47:28,417 - 00:47:32,737] than you would feel in free space
+- [00:47:32,737 - 00:47:34,737] without any gravitational field.
+- [00:47:34,977 - 00:47:37,897] The reason is more or less obvious.
+- [00:47:39,057 - 00:47:40,337] Here you are.
+- [00:47:40,457 - 00:47:40,857] Here's...
+- [00:47:41,597 - 00:47:42,577] Here's the Earth.
+- [00:47:44,257 - 00:47:44,857] Now,
+- [00:47:44,857 - 00:47:47,317] you or me or whoever it is
+- [00:47:47,317 - 00:47:49,297] happens to be extremely tall.
+- [00:47:55,477 - 00:47:57,637] A couple of thousand miles tall.
+- [00:47:59,477 - 00:48:00,077] Well,
+- [00:48:00,077 - 00:48:03,077] this person's feet are being pulled
+- [00:48:03,077 - 00:48:06,497] by the gravitational field more than his head.
+- [00:48:06,617 - 00:48:08,897] Or another way of saying the same thing is...
+- [00:48:08,897 - 00:48:10,837] Let's imagine that the person is...
+- [00:48:10,837 - 00:48:12,617] This person is very loosely held together.
+- [00:48:12,977 - 00:48:15,877] He's just more or less a gas of a...
+- [00:48:17,577 - 00:48:19,417] We are pretty loosely held together.
+- [00:48:19,617 - 00:48:20,197] At least I am.
+- [00:48:21,077 - 00:48:21,637] Right.
+- [00:48:22,137 - 00:48:22,857] All right.
+- [00:48:24,197 - 00:48:28,977] The acceleration on the lower portions of his body
+- [00:48:28,977 - 00:48:31,517] are larger than the accelerations
+- [00:48:31,517 - 00:48:33,297] on the upper portions of his body.
+- [00:48:33,477 - 00:48:35,257] So it's quite clear what happens to him.
+- [00:48:35,337 - 00:48:36,137] He gets stretched.
+- [00:48:36,517 - 00:48:40,177] He doesn't get a sense of falling as such.
+- [00:48:40,177 - 00:48:41,837] He gets a sense of stretching,
+- [00:48:41,837 - 00:48:42,997] being stretched.
+- [00:48:43,717 - 00:48:45,657] Feet being pulled away from his head.
+- [00:48:46,477 - 00:48:47,877] At the same time,
+- [00:48:47,877 - 00:48:48,517] let's...
+- [00:48:48,517 - 00:48:49,477] All right.
+- [00:48:49,497 - 00:48:49,837] So...
+- [00:48:54,397 - 00:48:56,377] Let's change his shape a little bit.
+- [00:49:00,777 - 00:49:02,337] I just spent a week,
+- [00:49:02,337 - 00:49:03,217] two weeks in Italy,
+- [00:49:03,337 - 00:49:05,357] and my shape changes whenever I go to Italy,
+- [00:49:05,517 - 00:49:06,857] and it tends to get more horizontal.
+- [00:49:06,977 - 00:49:07,877] My head is here.
+- [00:49:08,317 - 00:49:09,397] My feet are here.
+- [00:49:10,177 - 00:49:11,117] And now I'm this way.
+- [00:49:12,357 - 00:49:13,837] Still loosely put together.
+- [00:49:14,497 - 00:49:15,157] All right.
+- [00:49:15,857 - 00:49:16,617] Now what?
+- [00:49:17,117 - 00:49:17,617] Well,
+- [00:49:17,617 - 00:49:21,137] not only does the force depend on the distance,
+- [00:49:21,297 - 00:49:22,917] but it also depends on the direction.
+- [00:49:23,517 - 00:49:26,567] The force on my left
+- [00:49:26,567 - 00:49:29,617] end over here is this way.
+- [00:49:29,977 - 00:49:31,267] The force on my right
+- [00:49:31,267 - 00:49:32,557] end over here is this way.
+- [00:49:33,557 - 00:49:35,997] The force on the top of my head is down,
+- [00:49:36,177 - 00:49:38,497] but it's weaker than the force on my feet.
+- [00:49:39,417 - 00:49:40,837] So there are two effects.
+- [00:49:41,457 - 00:49:44,437] One effect is to stretch me vertically.
+- [00:49:45,097 - 00:49:46,497] It's because my head is not
+- [00:49:46,497 - 00:49:47,897] being pulled as hard as my feet.
+- [00:49:48,257 - 00:49:51,597] But the other effect is to be squished horizontally
+- [00:49:52,297 - 00:49:54,237] by the fact that the forces
+- [00:49:54,237 - 00:49:56,177] on the left end of me
+- [00:49:56,177 - 00:49:58,057] are pointing slightly to the right,
+- [00:49:58,197 - 00:50:00,317] and the forces on the right end of me
+- [00:50:00,317 - 00:50:01,757] are pointing slightly to the left.
+- [00:50:02,057 - 00:50:04,837] So a loosely knit person like this,
+- [00:50:05,877 - 00:50:08,477] falling in free fall near the ground,
+- [00:50:08,497 - 00:50:11,457] a real planet or a real gravitational object
+- [00:50:11,457 - 00:50:15,237] which has a real Newtonian gravitational field around it,
+- [00:50:15,337 - 00:50:18,617] will experience a distortion,
+- [00:50:19,057 - 00:50:21,597] will experience a degree of distortion
+- [00:50:21,597 - 00:50:24,937] and a degree of being stretched vertically,
+- [00:50:25,177 - 00:50:26,557] being compressed horizontally.
+- [00:50:29,037 - 00:50:32,517] But if the object is small enough,
+- [00:50:34,577 - 00:50:36,237] what does small enough mean?
+- [00:50:36,377 - 00:50:37,997] Let's suppose the object that's falling
+- [00:50:37,997 - 00:50:38,817] is small enough.
+- [00:50:39,777 - 00:50:41,237] If it's small enough,
+- [00:50:41,997 - 00:50:44,797] then the gradient of the gravitational field
+- [00:50:44,797 - 00:50:47,157] across the size of the object
+- [00:50:47,157 - 00:50:48,277] will be negligible,
+- [00:50:48,997 - 00:50:51,317] and so all parts of it will experience
+- [00:50:51,317 - 00:50:53,177] the same gravitational acceleration.
+- [00:50:53,937 - 00:50:54,657] All right,
+- [00:50:54,657 - 00:50:55,877] so tidal forces,
+- [00:50:55,897 - 00:50:56,737] these are tidal forces,
+- [00:50:56,957 - 00:50:59,417] these forces which tend to tear things apart vertically
+- [00:50:59,417 - 00:51:00,497] and squish them this way,
+- [00:51:00,497 - 00:51:01,277] tidal forces.
+- [00:51:01,917 - 00:51:07,217] Tidal forces are forces which are real,
+- [00:51:07,217 - 00:51:07,857] you feel them.
+- [00:51:09,217 - 00:51:12,297] Do you recall if Newton calculated lunar tides?
+- [00:51:12,757 - 00:51:13,197] Oh,
+- [00:51:13,197 - 00:51:13,657] I think he did.
+- [00:51:13,737 - 00:51:15,377] He certainly knew the cause of the tides,
+- [00:51:15,377 - 00:51:15,577] yeah.
+- [00:51:17,077 - 00:51:19,097] I don't know to what extent he calculated,
+- [00:51:19,417 - 00:51:21,157] what do you mean calculated the...
+- [00:51:21,157 - 00:51:22,667] As in this kind of a
+- [00:51:22,667 - 00:51:24,177] system with the moon and the sun.
+- [00:51:24,417 - 00:51:24,677] Well,
+- [00:51:24,677 - 00:51:25,857] I doubt that he was capable,
+- [00:51:25,917 - 00:51:27,897] I'm not sure whether he estimated the height
+- [00:51:27,897 - 00:51:32,277] of the deformation of the oceans or not,
+- [00:51:32,777 - 00:51:35,397] but I think he did understand this much about tides.
+- [00:51:36,477 - 00:51:36,917] Okay,
+- [00:51:36,917 - 00:51:39,817] so that's what's called tidal force,
+- [00:51:40,117 - 00:51:41,757] and remember the tidal force
+- [00:51:42,837 - 00:51:44,377] has this effect of stretching,
+- [00:51:46,977 - 00:51:50,357] and in particular,
+- [00:51:51,597 - 00:51:52,737] if we take the Earth,
+- [00:51:52,917 - 00:51:55,317] just to tell you why it's called tidal forces,
+- [00:51:55,397 - 00:51:57,077] of course it's because it has to do with tides,
+- [00:51:57,097 - 00:51:58,197] I'm sure you all know the story,
+- [00:51:58,477 - 00:52:00,317] but if this is the moon down here,
+- [00:52:01,757 - 00:52:04,197] then the moon exerting forces on the Earth
+- [00:52:04,197 - 00:52:05,897] exerts tidal forces on the Earth,
+- [00:52:06,077 - 00:52:07,627] which means to some extent it
+- [00:52:07,627 - 00:52:09,177] tends to stretch it this way
+- [00:52:09,177 - 00:52:10,477] and squash it this way.
+- [00:52:10,657 - 00:52:11,077] Well,
+- [00:52:11,077 - 00:52:12,077] the Earth is pretty rigid,
+- [00:52:12,217 - 00:52:18,257] so it doesn't deform very much due to the moon,
+- [00:52:18,417 - 00:52:20,157] but what's not rigid is
+- [00:52:20,157 - 00:52:21,897] the layer of water around it,
+- [00:52:21,997 - 00:52:23,597] and so the layer of water
+- [00:52:23,597 - 00:52:25,197] tends to get stretched and squeezed,
+- [00:52:25,517 - 00:52:29,847] and so it gets deformed
+- [00:52:29,847 - 00:52:34,177] into a deformed shell of water,
+- [00:52:34,177 - 00:52:35,287] with a bump on this side
+- [00:52:35,287 - 00:52:36,397] and a bump on that side.
+- [00:52:36,537 - 00:52:36,637] Alright,
+- [00:52:36,637 - 00:52:38,517] I'm not going to go any more deeply into that,
+- [00:52:38,957 - 00:52:40,497] that I'm sure you've all seen.
+- [00:52:41,537 - 00:52:41,977] Okay,
+- [00:52:41,977 - 00:52:43,877] but let's define now what
+- [00:52:43,877 - 00:52:45,777] we mean by the gravitational field.
+- [00:52:51,477 - 00:52:54,957] The gravitational field is abstracted from this formula.
+- [00:52:57,657 - 00:52:59,137] We have a bunch of particles.
+- [00:53:00,277 - 00:53:00,717] Question?
+- [00:53:01,077 - 00:53:01,217] Yeah.
+- [00:53:03,277 - 00:53:04,057] Don't you have,
+- [00:53:04,057 - 00:53:06,297] need some sort of a coordinate geometry
+- [00:53:06,297 - 00:53:08,987] so that when you have
+- [00:53:08,987 - 00:53:11,677] the poor guy in the middle
+- [00:53:11,677 - 00:53:13,717] is being pulled by all
+- [00:53:13,717 - 00:53:15,757] the other guys on the side?
+- [00:53:16,657 - 00:53:18,097] I'm not explaining it right,
+- [00:53:18,097 - 00:53:19,977] but it's always negative,
+- [00:53:20,097 - 00:53:21,117] is that what you're saying?
+- [00:53:21,577 - 00:53:22,017] No,
+- [00:53:22,017 - 00:53:22,897] I'm saying it's always attractive.
+- [00:53:25,217 - 00:53:25,657] Alright,
+- [00:53:25,657 - 00:53:26,357] so you have,
+- [00:53:27,157 - 00:53:29,147] but what about the other
+- [00:53:29,147 - 00:53:31,137] guys that are pulling upon him,
+- [00:53:31,137 - 00:53:32,717] from different directions?
+- [00:53:35,697 - 00:53:36,217] Well,
+- [00:53:36,217 - 00:53:37,437] let's suppose there's somebody over here,
+- [00:53:38,257 - 00:53:39,837] and we're talking about the
+- [00:53:39,837 - 00:53:41,417] force on this person over here.
+- [00:53:41,837 - 00:53:42,357] Alright,
+- [00:53:42,357 - 00:53:45,357] obviously there's one force pushing this way
+- [00:53:45,357 - 00:53:46,897] and another force pushing that way.
+- [00:53:47,297 - 00:53:48,157] They're all negative.
+- [00:53:48,797 - 00:53:49,317] No,
+- [00:53:49,317 - 00:53:53,147] they're all opposite to the direction of
+- [00:53:53,147 - 00:53:56,977] the object which is pulling on them.
+- [00:53:58,137 - 00:53:58,657] Alright?
+- [00:54:00,397 - 00:54:02,117] That's what this minus sign says.
+- [00:54:04,237 - 00:54:04,717] Well,
+- [00:54:04,717 - 00:54:07,657] you kind of retracted the minus sign at the front
+- [00:54:07,657 - 00:54:10,057] and reversed the J-I.
+- [00:54:10,317 - 00:54:10,657] Yeah.
+- [00:54:11,637 - 00:54:12,557] So it's the direction.
+- [00:54:12,557 - 00:54:14,247] We can get rid of the minus sign
+- [00:54:14,247 - 00:54:15,937] at the front there by making this I-J.
+- [00:54:19,177 - 00:54:22,097] R-I-J and R-J-I are opposite to each other.
+- [00:54:22,277 - 00:54:25,477] One of them is the vector between I and J,
+- [00:54:26,297 - 00:54:27,217] I and J,
+- [00:54:27,217 - 00:54:28,367] and the other one is
+- [00:54:28,367 - 00:54:29,517] the vector from J to I,
+- [00:54:29,777 - 00:54:31,737] so they're equal and opposite to each other.
+- [00:54:33,177 - 00:54:34,617] The minus sign there,
+- [00:54:34,857 - 00:54:35,397] look,
+- [00:54:35,397 - 00:54:37,717] as far as the minus sign goes,
+- [00:54:37,917 - 00:54:41,277] all it means is that every one of
+- [00:54:41,277 - 00:54:44,637] these particles is pulling on this particle toward it,
+- [00:54:45,337 - 00:54:47,297] as opposed to pushing away from it.
+- [00:54:47,417 - 00:54:49,627] It's just a convention which keeps
+- [00:54:49,627 - 00:54:51,837] track of attraction instead of repulsion.
+- [00:54:53,017 - 00:54:53,537] Yeah,
+- [00:54:53,537 - 00:54:55,817] for the ice mass,
+- [00:54:55,817 - 00:54:56,877] if that's the right word,
+- [00:54:56,877 - 00:54:57,757] that makes sense,
+- [00:54:57,757 - 00:54:59,087] but if you look at it
+- [00:54:59,087 - 00:55:00,417] as a kind of an ensemble,
+- [00:55:00,597 - 00:55:02,897] wouldn't there be a nonlinear component to it?
+- [00:55:02,997 - 00:55:05,917] Because the I-th guy affects the J-th guy,
+- [00:55:06,097 - 00:55:07,537] and then when you compute the J-th guy,
+- [00:55:07,537 - 00:55:08,897] you know what I mean?
+- [00:55:09,177 - 00:55:10,537] When you take into account the motion.
+- [00:55:10,957 - 00:55:13,617] Now what this formula is for is supposing
+- [00:55:13,617 - 00:55:16,277] you know the positions of all the others.
+- [00:55:17,577 - 00:55:18,537] You know that.
+- [00:55:19,237 - 00:55:22,377] Then what is the force on one additional one?
+- [00:55:22,677 - 00:55:23,897] But you're perfectly right.
+- [00:55:24,217 - 00:55:26,057] Once you let the system evolve,
+- [00:55:26,877 - 00:55:29,777] then each one will cause a
+- [00:55:29,777 - 00:55:32,677] change in motion in the other one,
+- [00:55:32,777 - 00:55:33,937] and so it becomes a complicated,
+- [00:55:33,937 - 00:55:34,597] as you say,
+- [00:55:34,597 - 00:55:35,377] nonlinear mess.
+- [00:55:36,817 - 00:55:40,237] But this formula is a formula for if
+- [00:55:40,237 - 00:55:43,657] you knew the position and location of every particle,
+- [00:55:43,797 - 00:55:44,857] this would be the force.
+- [00:55:45,537 - 00:55:46,097] Okay?
+- [00:55:46,717 - 00:55:48,537] Something you need to solve some
+- [00:55:48,537 - 00:55:50,357] equations to know how the particles move.
+- [00:55:51,917 - 00:55:54,237] But if you know where they are,
+- [00:55:54,237 - 00:55:56,617] then this is the force on the I-th particle.
+- [00:55:58,357 - 00:55:58,917] Alright,
+- [00:55:58,917 - 00:56:01,297] let's come to the idea of the gravitational field.
+- [00:56:02,737 - 00:56:04,507] The gravitational field is in some
+- [00:56:04,507 - 00:56:06,277] ways similar to the electric field,
+- [00:56:06,357 - 00:56:08,697] of an electric charge.
+- [00:56:11,557 - 00:56:16,077] It's the combined effect of all the masses...
+- [00:56:22,557 - 00:56:23,117] ...everywhere's.
+- [00:56:24,477 - 00:56:26,917] And the way you define it is as follows.
+- [00:56:27,497 - 00:56:30,637] You imagine one more particle.
+- [00:56:30,897 - 00:56:32,257] One more particle.
+- [00:56:32,357 - 00:56:34,567] You can take it to be a very light
+- [00:56:34,567 - 00:56:36,777] particle so it doesn't influence the motion of the others.
+- [00:56:37,737 - 00:56:41,777] Add one more particle in your imagination.
+- [00:56:42,077 - 00:56:44,097] You don't really have to add it in your imagination.
+- [00:56:44,357 - 00:56:46,217] And ask what the force on it is.
+- [00:56:46,497 - 00:56:49,047] The force is the sum of
+- [00:56:49,047 - 00:56:51,597] the force due to all the others.
+- [00:56:52,017 - 00:56:53,257] It is proportional.
+- [00:56:53,257 - 00:56:55,477] Each term is proportional to
+- [00:56:55,477 - 00:56:57,697] the mass of this extra particle.
+- [00:56:58,417 - 00:56:59,697] This extra particle,
+- [00:56:59,697 - 00:57:01,637] which may be imaginary,
+- [00:57:01,637 - 00:57:03,257] is called a test particle.
+- [00:57:03,917 - 00:57:05,787] It's a thing that you're imagining
+- [00:57:05,787 - 00:57:07,657] testing out the gravitational field with.
+- [00:57:08,097 - 00:57:10,127] You take a light little particle and you
+- [00:57:10,127 - 00:57:12,157] put it here and you see how it accelerates.
+- [00:57:13,017 - 00:57:15,047] Knowing how it accelerates tells you
+- [00:57:15,047 - 00:57:17,077] how much force is on it.
+- [00:57:17,777 - 00:57:18,257] Alright?
+- [00:57:19,337 - 00:57:19,877] In fact,
+- [00:57:19,877 - 00:57:21,297] it just tells you how it accelerates.
+- [00:57:21,437 - 00:57:23,237] And you can go around and imagine things like this.
+- [00:57:23,237 - 00:57:26,347] You're putting it in different places and mapping
+- [00:57:26,347 - 00:57:29,457] out the force field that's on that particle.
+- [00:57:29,697 - 00:57:31,517] Or the acceleration field.
+- [00:57:31,917 - 00:57:34,757] Since we already know that the
+- [00:57:34,757 - 00:57:37,597] force is proportional to the mass,
+- [00:57:39,197 - 00:57:41,617] then we can just concentrate on the acceleration.
+- [00:57:42,297 - 00:57:43,337] The acceleration,
+- [00:57:43,337 - 00:57:45,267] all particles will have the
+- [00:57:45,267 - 00:57:47,197] same acceleration independent of their mass.
+- [00:57:47,617 - 00:57:48,987] So we don't even have to know
+- [00:57:48,987 - 00:57:50,357] what the mass of the particle is.
+- [00:57:50,437 - 00:57:51,457] We put something over there,
+- [00:57:51,457 - 00:57:52,337] a little bit of dust,
+- [00:57:52,337 - 00:57:54,357] and we see how it accelerates.
+- [00:57:54,837 - 00:57:56,137] Acceleration is a vector.
+- [00:57:56,897 - 00:58:00,497] And so we map out in space the
+- [00:58:00,497 - 00:58:04,097] acceleration of a particle at every point in space.
+- [00:58:04,677 - 00:58:06,957] Either imaginary or real particle.
+- [00:58:07,537 - 00:58:09,677] And that gives us a vector
+- [00:58:09,677 - 00:58:11,817] field at every point in space.
+- [00:58:12,297 - 00:58:15,047] Every point in space there
+- [00:58:15,047 - 00:58:17,797] is a gravitational field of acceleration.
+- [00:58:18,957 - 00:58:20,857] It can be thought of as the acceleration.
+- [00:58:21,197 - 00:58:22,317] You don't have to think of it as force.
+- [00:58:22,337 - 00:58:23,217] Acceleration.
+- [00:58:23,637 - 00:58:27,837] The acceleration of a point mass located at that position.
+- [00:58:28,097 - 00:58:29,117] It's a vector.
+- [00:58:29,217 - 00:58:30,557] It has a direction.
+- [00:58:30,977 - 00:58:32,517] It has a magnitude.
+- [00:58:34,017 - 00:58:36,197] And it's a function of position.
+- [00:58:37,197 - 00:58:39,937] So we just give it a name.
+- [00:58:41,097 - 00:58:45,417] The acceleration due to all the gravitating objects.
+- [00:58:46,457 - 00:58:47,637] It's a vector.
+- [00:58:48,477 - 00:58:50,877] And it depends on position.
+- [00:58:51,457 - 00:58:51,977] Here,
+- [00:58:51,977 - 00:58:53,657] x means location.
+- [00:58:53,917 - 00:58:56,557] It means all of the components of position.
+- [00:58:56,797 - 00:58:56,977] x,
+- [00:58:56,977 - 00:58:57,237] y,
+- [00:58:57,237 - 00:58:57,577] and z.
+- [00:58:58,217 - 00:58:59,947] And it depends on all
+- [00:58:59,947 - 00:59:01,677] the other masses in the problem.
+- [00:59:06,357 - 00:59:08,457] That is what's called a gravitational field.
+- [00:59:10,737 - 00:59:12,677] It's very similar to the electric field,
+- [00:59:12,857 - 00:59:16,997] except the electric field is force per unit charge.
+- [00:59:17,837 - 00:59:19,347] It's the force on an object
+- [00:59:19,347 - 00:59:20,857] divided by the charge of the object.
+- [00:59:20,877 - 00:59:23,697] The gravitational field is the force on the
+- [00:59:23,697 - 00:59:26,517] object divided by the mass on the object.
+- [00:59:26,757 - 00:59:29,137] Since the force is proportional to the mass,
+- [00:59:29,417 - 00:59:32,587] the acceleration field doesn't depend on
+- [00:59:32,587 - 00:59:35,757] which kind of particle we're talking about.
+- [00:59:37,057 - 00:59:40,657] So that's the idea of a gravitational field.
+- [00:59:40,977 - 00:59:42,057] It's a vector field.
+- [00:59:42,637 - 00:59:44,617] And it varies from place to place.
+- [00:59:44,897 - 00:59:46,657] And of course if the particles are moving,
+- [00:59:46,897 - 00:59:48,517] it also varies in time.
+- [00:59:49,037 - 00:59:50,517] If everything is in motion,
+- [00:59:50,877 - 00:59:53,397] the gravitational field will also depend on time.
+- [00:59:56,277 - 00:59:58,157] We can even work out what it is.
+- [00:59:58,457 - 01:00:01,017] We know what the force on the i-th particle is.
+- [01:00:02,717 - 01:00:04,587] The force on a particle
+- [01:00:04,587 - 01:00:06,457] is the mass times the acceleration.
+- [01:00:07,077 - 01:00:09,077] So if we want to find the acceleration,
+- [01:00:09,377 - 01:00:12,017] let's take the i-th particle to be the test particle.
+- [01:00:12,397 - 01:00:16,497] The little i represents the test particle over here.
+- [01:00:16,937 - 01:00:20,157] Let's erase the intermediate step over here.
+- [01:00:20,877 - 01:00:27,037] And write that this is m i times a i,
+- [01:00:27,277 - 01:00:29,257] but let me call it now capital A.
+- [01:00:30,457 - 01:00:34,017] The acceleration of a particle at position x
+- [01:00:35,497 - 01:00:37,857] is given by the right-hand side.
+- [01:00:38,297 - 01:00:41,037] And we can cross out the m i,
+- [01:00:41,197 - 01:00:42,937] because it cancels from both sides.
+- [01:00:44,477 - 01:00:45,977] So here's a formula
+- [01:00:47,457 - 01:00:50,857] for the gravitational field,
+- [01:00:50,857 - 01:00:52,537] at an arbitrary point,
+- [01:00:52,717 - 01:00:57,557] due to a whole bunch of massive objects.
+- [01:00:57,877 - 01:00:59,897] A whole bunch of massive objects,
+- [01:01:02,237 - 01:01:05,277] an arbitrary particle put over here,
+- [01:01:05,437 - 01:01:08,057] will accelerate in some direction
+- [01:01:08,057 - 01:01:09,697] that's determined by all the others,
+- [01:01:09,917 - 01:01:12,837] and that acceleration is the definition
+- [01:01:12,837 - 01:01:15,657] of the gravitational field.
+- [01:01:18,977 - 01:01:19,697] Okay,
+- [01:01:19,697 - 01:01:20,837] let's take a look at this.
+- [01:01:20,857 - 01:01:21,317] I'll take a little break.
+- [01:01:21,457 - 01:01:23,237] I usually take a break at about this time.
+- [01:01:24,697 - 01:01:27,077] And I recover my breath.
+- [01:01:29,357 - 01:01:30,617] To go on,
+- [01:01:30,657 - 01:01:34,317] we need a little bit of fancy mathematics.
+- [01:01:36,517 - 01:01:38,237] We need a piece of mathematics
+- [01:01:39,717 - 01:01:41,337] called Gauss's theorem.
+- [01:01:43,097 - 01:01:45,157] And Gauss's theorem involves
+- [01:01:45,817 - 01:01:46,457] integrals,
+- [01:01:46,457 - 01:01:46,877] derivatives,
+- [01:01:46,877 - 01:01:49,117] divergences,
+- [01:01:50,857 - 01:01:52,817] and we need to spell those things out.
+- [01:01:53,857 - 01:01:56,537] They're a central part of the theory of gravity,
+- [01:01:56,717 - 01:02:02,197] and much of these things we've done
+- [01:02:02,197 - 01:02:04,657] in the context of electrical forces,
+- [01:02:05,837 - 01:02:08,617] in particular the concept of divergence,
+- [01:02:09,697 - 01:02:11,557] the divergence of a vector field.
+- [01:02:12,737 - 01:02:14,007] So I'm not going to spend
+- [01:02:14,007 - 01:02:15,277] a lot of time on it.
+- [01:02:16,477 - 01:02:19,357] If you need to fill in,
+- [01:02:19,357 - 01:02:22,657] then I suggest you just find any little book
+- [01:02:22,657 - 01:02:23,657] on vector calculus
+- [01:02:24,157 - 01:02:26,917] and find out what a divergence and a gradient
+- [01:02:26,917 - 01:02:27,697] and a curl,
+- [01:02:27,697 - 01:02:28,957] we won't do curl today,
+- [01:02:29,197 - 01:02:30,897] what those concepts are,
+- [01:02:31,097 - 01:02:32,837] and look up Gauss's theorem.
+- [01:02:33,257 - 01:02:35,717] And they're not terribly hard,
+- [01:02:35,877 - 01:02:38,797] but we're going to go through them fairly quickly here
+- [01:02:39,097 - 01:02:43,797] since we've done them several times in the past.
+- [01:02:43,977 - 01:02:44,437] All right.
+- [01:02:45,357 - 01:02:48,217] Imagine that we have a vector field.
+- [01:02:48,857 - 01:02:50,697] Let's call that vector field A.
+- [01:02:52,137 - 01:02:54,317] It could be the field of acceleration,
+- [01:02:54,657 - 01:02:55,997] and that's the way I'm going to use it,
+- [01:02:56,337 - 01:02:59,457] but for the moment it's just an arbitrary vector field,
+- [01:02:59,457 - 01:03:00,017] A.
+- [01:03:01,237 - 01:03:02,677] It depends on position.
+- [01:03:02,837 - 01:03:03,917] When I say it's a field,
+- [01:03:04,137 - 01:03:07,737] the implication is that it depends on position.
+- [01:03:10,537 - 01:03:11,357] That better?
+- [01:03:14,697 - 01:03:16,937] Now I probably made it completely unreadable.
+- [01:03:18,397 - 01:03:21,357] A of X varies from point to point,
+- [01:03:23,937 - 01:03:26,437] and I want to define a
+- [01:03:26,437 - 01:03:28,937] concept called the divergence of the field.
+- [01:03:29,097 - 01:03:29,617] Now,
+- [01:03:29,617 - 01:03:31,677] it's called the divergence
+- [01:03:32,657 - 01:03:34,037] because what it has to
+- [01:03:34,037 - 01:03:35,417] do is the way the field
+- [01:03:35,417 - 01:03:37,977] is spreading out away from a point.
+- [01:03:38,777 - 01:03:39,817] For example,
+- [01:03:39,817 - 01:03:41,157] a characteristic situation
+- [01:03:42,017 - 01:03:45,097] where we would have a strong divergence for a field
+- [01:03:45,097 - 01:03:47,337] is if the field was spreading out
+- [01:03:47,337 - 01:03:49,357] from a point like that.
+- [01:03:51,337 - 01:03:54,057] The field is diverging away from the point.
+- [01:03:55,177 - 01:03:55,777] Incidentally,
+- [01:03:55,777 - 01:03:58,397] if the field is pointing inward,
+- [01:03:59,517 - 01:04:02,277] then one might say the field has a convergence,
+- [01:04:03,317 - 01:04:05,757] but we simply say it has a negative divergence.
+- [01:04:06,237 - 01:04:06,937] All right.
+- [01:04:06,977 - 01:04:08,837] So divergence can be positive or negative,
+- [01:04:09,517 - 01:04:11,517] and there's a mathematical expression
+- [01:04:12,297 - 01:04:15,457] which represents the degree to which the field
+- [01:04:15,457 - 01:04:16,677] is spreading out like that.
+- [01:04:17,337 - 01:04:17,897] So that's what we call the divergence.
+- [01:04:23,377 - 01:04:24,537] I'm going to write it down,
+- [01:04:24,697 - 01:04:26,677] and it's a good thing to get familiar with.
+- [01:04:26,757 - 01:04:27,117] Certainly,
+- [01:04:27,117 - 01:04:29,037] if you're going to follow this course,
+- [01:04:29,157 - 01:04:30,517] it's a good thing to get familiar with.
+- [01:04:30,697 - 01:04:32,657] But if you're going to follow any kind of
+- [01:04:36,677 - 01:04:39,677] physics course past freshman physics,
+- [01:04:40,157 - 01:04:43,077] the idea of divergence is very important.
+- [01:04:43,717 - 01:04:44,337] All right.
+- [01:04:44,337 - 01:04:47,197] Supposing the field A has a set of components,
+- [01:04:48,457 - 01:04:49,337] the 1,
+- [01:04:49,337 - 01:04:51,817] 2,
+- [01:04:51,817 - 01:04:52,977] and 3 component,
+- [01:04:53,077 - 01:04:54,297] or we could call them the x,
+- [01:04:54,297 - 01:04:54,497] y,
+- [01:04:54,497 - 01:04:55,237] and z component.
+- [01:04:55,897 - 01:04:57,037] Now I'll use x,
+- [01:04:57,037 - 01:04:57,237] y,
+- [01:04:57,237 - 01:04:57,537] and z.
+- [01:04:57,617 - 01:04:58,197] I have x,
+- [01:04:58,197 - 01:04:58,857] y,
+- [01:04:58,857 - 01:04:59,497] and z,
+- [01:05:00,277 - 01:05:02,217] which I previously called x1,
+- [01:05:02,217 - 01:05:02,637] x2,
+- [01:05:02,637 - 01:05:03,217] and x3.
+- [01:05:06,257 - 01:05:08,257] It has components AX,
+- [01:05:08,257 - 01:05:09,557] AY,
+- [01:05:09,557 - 01:05:11,197] and AZ.
+- [01:05:13,457 - 01:05:14,317] Those are the three components.
+- [01:05:14,317 - 01:05:15,337] Those are the three components of the field.
+- [01:05:15,497 - 01:05:15,937] Well,
+- [01:05:15,937 - 01:05:17,717] the divergence has to do,
+- [01:05:17,717 - 01:05:18,717] among other things,
+- [01:05:18,997 - 01:05:21,377] with the way the field varies in space.
+- [01:05:21,857 - 01:05:24,497] If the field is the same everywhere it's in space,
+- [01:05:24,697 - 01:05:25,277] what does that mean?
+- [01:05:25,517 - 01:05:28,197] That would mean the field has both not only
+- [01:05:28,197 - 01:05:29,277] the same magnitude,
+- [01:05:29,277 - 01:05:30,357] but the same direction
+- [01:05:30,357 - 01:05:31,277] everywhere it's in space.
+- [01:05:31,877 - 01:05:33,837] Then it just points in the same direction
+- [01:05:33,837 - 01:05:35,517] everywhere it's with the same magnitude.
+- [01:05:35,897 - 01:05:38,637] It certainly has no tendency to spread out.
+- [01:05:40,797 - 01:05:43,457] When does a field have a tendency to spread out?
+- [01:05:44,317 - 01:05:45,137] When the field varies.
+- [01:05:45,417 - 01:05:46,197] For example,
+- [01:05:46,197 - 01:05:48,317] it could be small over here,
+- [01:05:49,137 - 01:05:50,057] growing bigger,
+- [01:05:50,057 - 01:05:51,977] growing bigger,
+- [01:05:51,977 - 01:05:54,097] growing bigger,
+- [01:05:54,197 - 01:05:56,037] and we might even go in the opposite direction
+- [01:05:56,817 - 01:05:59,577] and discover that it's in the opposite direction
+- [01:05:59,577 - 01:06:01,097] and getting bigger in that direction.
+- [01:06:01,417 - 01:06:03,737] Then clearly there's a tendency for the field
+- [01:06:03,737 - 01:06:05,817] to spread out away from the center here.
+- [01:06:06,817 - 01:06:09,257] The same thing could be true if it were varying
+- [01:06:09,257 - 01:06:10,437] in the vertical direction,
+- [01:06:10,637 - 01:06:13,717] or if it were varying in the other horizontal direction.
+- [01:06:14,317 - 01:06:15,537] And so the divergence,
+- [01:06:15,537 - 01:06:16,377] whatever it is,
+- [01:06:16,397 - 01:06:17,987] has to do with derivatives
+- [01:06:17,987 - 01:06:19,577] of the components of the field.
+- [01:06:20,377 - 01:06:22,277] I'll just tell you exactly what it is.
+- [01:06:22,737 - 01:06:25,437] It is equal to the divergence of the field,
+- [01:06:25,497 - 01:06:26,297] it's written this way,
+- [01:06:26,457 - 01:06:27,977] upside down triangle.
+- [01:06:32,637 - 01:06:34,277] And the meaning of this symbol,
+- [01:06:34,997 - 01:06:37,557] the meaning of an upside down triangle
+- [01:06:37,557 - 01:06:40,997] is always that it has to do with the derivatives,
+- [01:06:41,317 - 01:06:42,237] the three derivatives,
+- [01:06:42,397 - 01:06:44,297] derivative with the three partial derivatives
+- [01:06:44,317 - 01:06:46,577] derivative with respect to x,
+- [01:06:46,577 - 01:06:47,117] y,
+- [01:06:47,117 - 01:06:47,717] and z.
+- [01:06:48,517 - 01:06:50,177] And this is by definition
+- [01:06:52,357 - 01:06:54,457] the derivative with respect to x
+- [01:06:55,117 - 01:06:57,077] of the x component of A
+- [01:06:57,077 - 01:06:59,737] plus the derivative with respect to y
+- [01:07:00,197 - 01:07:01,677] of the y component of A
+- [01:07:02,317 - 01:07:04,337] plus the derivative with respect to z
+- [01:07:04,337 - 01:07:06,477] of the z component of A.
+- [01:07:17,097 - 01:07:18,097] That's definition.
+- [01:07:20,137 - 01:07:23,277] What's not a definition is a theorem.
+- [01:07:24,597 - 01:07:26,277] It's called Gauss's theorem.
+- [01:07:32,437 - 01:07:33,157] No,
+- [01:07:33,157 - 01:07:34,577] that's a scalar quantity.
+- [01:07:35,357 - 01:07:36,957] That's a scalar quantity.
+- [01:07:42,577 - 01:07:43,137] Yeah,
+- [01:07:43,137 - 01:07:44,177] it's a scalar quantity.
+- [01:07:46,697 - 01:07:47,417] So it's,
+- [01:07:47,417 - 01:07:48,177] let me write it.
+- [01:07:48,937 - 01:07:51,197] It's the derivative of A sub x
+- [01:07:51,197 - 01:07:52,717] with respect to x,
+- [01:07:53,357 - 01:07:54,457] that's what this means,
+- [01:07:56,077 - 01:07:58,137] plus the derivative of A sub y
+- [01:07:58,837 - 01:07:59,797] with respect to y,
+- [01:08:01,937 - 01:08:04,117] plus the derivative of A sub z
+- [01:08:04,117 - 01:08:05,477] with respect to z.
+- [01:08:07,677 - 01:08:08,157] Yeah,
+- [01:08:08,157 - 01:08:09,917] so the arrows you were drawing over there,
+- [01:08:09,977 - 01:08:10,837] those were just A
+- [01:08:11,657 - 01:08:13,497] on the other board.
+- [01:08:13,957 - 01:08:16,037] You drew some arrows on the other board
+- [01:08:16,037 - 01:08:16,637] that are now hidden.
+- [01:08:16,797 - 01:08:16,917] Yeah.
+- [01:08:17,637 - 01:08:18,817] Those were just A.
+- [01:08:18,957 - 01:08:19,297] Yeah.
+- [01:08:19,437 - 01:08:21,437] Not the divergence components.
+- [01:08:21,577 - 01:08:22,057] Right.
+- [01:08:22,057 - 01:08:22,657] Those were A.
+- [01:08:23,817 - 01:08:25,457] And A has a divergence
+- [01:08:25,457 - 01:08:27,497] when it's spreading out away from a point,
+- [01:08:27,597 - 01:08:30,897] but the divergence is itself a scalar quantity.
+- [01:08:31,937 - 01:08:32,417] Okay?
+- [01:08:33,157 - 01:08:33,637] I'll,
+- [01:08:33,637 - 01:08:35,897] let me try to give you some idea
+- [01:08:35,897 - 01:08:38,697] of what divergence means
+- [01:08:38,697 - 01:08:41,957] in a context where you can visualize it.
+- [01:08:43,557 - 01:08:49,557] Imagine that we have a flat lake.
+- [01:08:50,357 - 01:08:51,197] All right?
+- [01:08:51,237 - 01:08:52,937] Just a water-thin,
+- [01:08:52,937 - 01:08:54,957] a shallow lake.
+- [01:08:55,297 - 01:08:57,577] And water is coming up from underneath.
+- [01:08:57,957 - 01:09:00,417] It's being pumped in from somewhere underneath.
+- [01:09:00,917 - 01:09:03,857] What happens if the water's being pumped in?
+- [01:09:03,937 - 01:09:04,517] Of course,
+- [01:09:04,517 - 01:09:05,657] it tends to spread out.
+- [01:09:05,897 - 01:09:07,537] Let's assume that the high,
+- [01:09:07,617 - 01:09:09,237] let's assume the depth can't change.
+- [01:09:09,397 - 01:09:10,797] We put a lid over the whole thing
+- [01:09:10,797 - 01:09:12,237] so it can't change its depth.
+- [01:09:12,637 - 01:09:14,557] We pump some water in from underneath,
+- [01:09:14,797 - 01:09:15,957] and it spreads out.
+- [01:09:16,337 - 01:09:16,857] Okay?
+- [01:09:16,917 - 01:09:18,977] We suck some water out from underneath,
+- [01:09:19,257 - 01:09:21,117] and it spreads in.
+- [01:09:21,297 - 01:09:22,757] It anti-spreads.
+- [01:09:22,757 - 01:09:23,257] It has a,
+- [01:09:23,257 - 01:09:23,697] all right.
+- [01:09:23,737 - 01:09:25,797] So the spreading water has a divergence.
+- [01:09:26,717 - 01:09:28,977] Water coming in towards the,
+- [01:09:28,997 - 01:09:31,477] towards the place where it's being sucked out,
+- [01:09:31,597 - 01:09:34,357] it has a convergence or a negative divergence.
+- [01:09:37,137 - 01:09:37,617] Now,
+- [01:09:37,617 - 01:09:40,477] we can be more precise about that.
+- [01:09:40,697 - 01:09:42,537] We look down at the lake from above,
+- [01:09:43,017 - 01:09:44,757] and we see all the water is moving,
+- [01:09:44,757 - 01:09:45,237] of course.
+- [01:09:45,357 - 01:09:45,777] It's moving.
+- [01:09:45,917 - 01:09:47,137] If it's being pumped in,
+- [01:09:47,137 - 01:09:48,457] it's moving.
+- [01:09:49,077 - 01:09:51,457] And there is a velocity vector.
+- [01:09:51,657 - 01:09:52,357] At every point,
+- [01:09:52,357 - 01:09:53,537] there is a velocity vector.
+- [01:09:54,157 - 01:09:55,637] So at every point in this lake,
+- [01:09:55,697 - 01:09:56,637] there's a velocity vector.
+- [01:09:57,657 - 01:09:58,777] And in particular,
+- [01:09:58,997 - 01:10:01,737] if there's water being pumped in from the center here,
+- [01:10:01,737 - 01:10:02,197] right,
+- [01:10:02,897 - 01:10:04,337] underneath the bottom of the lake,
+- [01:10:04,357 - 01:10:05,697] there's some water being pumped in,
+- [01:10:05,797 - 01:10:08,457] the water will spread out away from that point.
+- [01:10:09,657 - 01:10:10,197] Okay?
+- [01:10:10,337 - 01:10:11,777] And there'll be a divergence
+- [01:10:12,357 - 01:10:14,237] where the water is being pumped in.
+- [01:10:15,077 - 01:10:15,617] Okay?
+- [01:10:15,737 - 01:10:17,437] If the water is being pumped out,
+- [01:10:17,557 - 01:10:19,417] then exactly the opposite.
+- [01:10:19,697 - 01:10:21,657] The arrows point inward,
+- [01:10:21,757 - 01:10:23,037] and there's a negative divergence.
+- [01:10:25,237 - 01:10:25,777] The,
+- [01:10:25,777 - 01:10:27,257] if there's no divergence,
+- [01:10:28,497 - 01:10:29,037] then,
+- [01:10:29,037 - 01:10:30,077] for example,
+- [01:10:30,177 - 01:10:31,917] a simple situation with no divergence,
+- [01:10:32,257 - 01:10:34,177] that doesn't mean the water is not moving.
+- [01:10:34,357 - 01:10:36,437] But a simple example with no divergence
+- [01:10:36,437 - 01:10:38,137] is the water is all moving together.
+- [01:10:38,497 - 01:10:39,077] You know,
+- [01:10:39,077 - 01:10:40,137] the river is simultaneously,
+- [01:10:40,237 - 01:10:42,497] or the lake is all simultaneously moving
+- [01:10:42,497 - 01:10:44,317] in the same direction with the same velocity.
+- [01:10:44,897 - 01:10:47,517] It can do that without any water being pumped in.
+- [01:10:47,817 - 01:10:49,897] But if you found that the water was moving
+- [01:10:49,897 - 01:10:51,097] to the right on this side
+- [01:10:51,097 - 01:10:52,897] and the left on that side,
+- [01:10:53,137 - 01:10:55,157] you'd be pretty sure that somewhere in between,
+- [01:10:55,477 - 01:10:56,797] water had to be pumped in.
+- [01:10:56,797 - 01:10:57,317] Right?
+- [01:10:57,897 - 01:10:59,817] If you found the water was spreading out
+- [01:10:59,817 - 01:11:00,997] away from a line,
+- [01:11:01,657 - 01:11:02,617] this way here,
+- [01:11:03,297 - 01:11:04,657] and this way here,
+- [01:11:05,577 - 01:11:07,537] then you'd be pretty sure that some water
+- [01:11:07,537 - 01:11:09,797] was being pumped in from underneath
+- [01:11:09,797 - 01:11:10,917] along this line here.
+- [01:11:11,237 - 01:11:11,797] Well,
+- [01:11:11,797 - 01:11:14,137] you would see it another way.
+- [01:11:14,277 - 01:11:16,777] You would discover that the x component
+- [01:11:16,777 - 01:11:19,397] of the velocity has a derivative.
+- [01:11:19,897 - 01:11:22,197] It's different over here than it is over here.
+- [01:11:22,517 - 01:11:24,717] The x component of the velocity
+- [01:11:24,717 - 01:11:26,937] varies along the x direction.
+- [01:11:27,997 - 01:11:30,677] So the fact that the x component of the velocity
+- [01:11:30,677 - 01:11:32,597] is varying along the x direction
+- [01:11:32,617 - 01:11:35,697] is an indication that there's some water
+- [01:11:35,697 - 01:11:36,677] being pumped in here.
+- [01:11:37,297 - 01:11:37,937] Likewise,
+- [01:11:37,937 - 01:11:40,517] if you discovered that the water
+- [01:11:40,517 - 01:11:44,057] was flowing up over here and down over here,
+- [01:11:44,237 - 01:11:46,537] you would expect that in here somewhere
+- [01:11:46,537 - 01:11:48,337] some water was being pumped in.
+- [01:11:49,177 - 01:11:51,537] So derivatives of the velocity
+- [01:11:51,537 - 01:11:54,777] are often an indication that there's some water
+- [01:11:54,777 - 01:11:56,337] being pumped in from underneath.
+- [01:11:56,657 - 01:11:58,637] That pumping in of the water
+- [01:11:58,637 - 01:12:01,557] is the divergence of the velocity vector.
+- [01:12:02,537 - 01:12:03,137] Now,
+- [01:12:03,137 - 01:12:06,257] the water,
+- [01:12:06,257 - 01:12:07,917] of course,
+- [01:12:07,977 - 01:12:09,237] is being pumped in from underneath.
+- [01:12:10,117 - 01:12:12,017] So there's a direction of flow,
+- [01:12:12,237 - 01:12:14,017] but it's coming from underneath.
+- [01:12:14,457 - 01:12:16,497] There's no sense of direction...
+- [01:12:16,497 - 01:12:17,177] Well,
+- [01:12:17,177 - 01:12:19,577] okay,
+- [01:12:19,577 - 01:12:21,177] that's what divergence is.
+- [01:12:21,597 - 01:12:23,657] The diagrams you already have
+- [01:12:23,657 - 01:12:24,977] on the other board behind there
+- [01:12:25,297 - 01:12:26,477] with the arrows,
+- [01:12:26,477 - 01:12:27,257] I think,
+- [01:12:27,257 - 01:12:27,897] is...
+- [01:12:27,897 - 01:12:28,197] Yeah,
+- [01:12:28,197 - 01:12:29,217] I think that's what I'll do.
+- [01:12:29,537 - 01:12:30,137] Okay,
+- [01:12:30,137 - 01:12:30,297] you take...
+- [01:12:30,297 - 01:12:31,457] You take,
+- [01:12:31,457 - 01:12:32,197] say,
+- [01:12:32,197 - 01:12:33,437] the rightmost arrow,
+- [01:12:33,557 - 01:12:37,057] and you draw a circle between the head and tail
+- [01:12:37,057 - 01:12:37,557] in between,
+- [01:12:37,557 - 01:12:40,677] then you can see the in and the out.
+- [01:12:41,397 - 01:12:43,857] The in arrow and the out arrow
+- [01:12:43,857 - 01:12:46,057] of a circle right in between those two.
+- [01:12:46,457 - 01:12:48,317] And let's say that the bigger arrow
+- [01:12:48,317 - 01:12:51,177] is created by a steeper slope of the stream.
+- [01:12:51,517 - 01:12:51,997] Oh,
+- [01:12:51,997 - 01:12:52,557] it's just faster.
+- [01:12:52,917 - 01:12:53,977] It's going faster.
+- [01:12:54,097 - 01:12:54,377] It's going faster.
+- [01:12:54,377 - 01:12:54,977] Okay,
+- [01:12:54,977 - 01:12:56,297] and because of that,
+- [01:12:56,357 - 01:12:57,637] there's a divergence there
+- [01:12:58,697 - 01:12:59,897] that's basically...
+- [01:12:59,897 - 01:13:00,277] Mm-hmm.
+- [01:13:00,297 - 01:13:01,657] It's sort of the difference
+- [01:13:01,657 - 01:13:02,957] between the in and the out.
+- [01:13:02,957 - 01:13:03,237] Right,
+- [01:13:03,237 - 01:13:03,737] that's right.
+- [01:13:04,417 - 01:13:05,017] That's right.
+- [01:13:05,197 - 01:13:06,737] If we draw a circle around here,
+- [01:13:06,857 - 01:13:10,437] we would see that more...
+- [01:13:10,437 - 01:13:12,477] Since the water is moving faster over here
+- [01:13:12,477 - 01:13:13,437] than it is over here,
+- [01:13:14,197 - 01:13:16,937] more water is flowing out over here
+- [01:13:16,937 - 01:13:18,577] than is coming in over here.
+- [01:13:19,697 - 01:13:20,757] Where's it coming from?
+- [01:13:20,897 - 01:13:22,457] It must be pumped in.
+- [01:13:23,357 - 01:13:25,617] The fact that there's more water
+- [01:13:25,617 - 01:13:26,917] flowing out on one side
+- [01:13:26,917 - 01:13:28,617] than is coming in from the other side
+- [01:13:28,617 - 01:13:30,277] must indicate that
+- [01:13:30,277 - 01:13:32,557] there's a net inflow from somewhere else,
+- [01:13:32,897 - 01:13:34,377] and the somewhere else would be
+- [01:13:34,377 - 01:13:35,877] from the pumping water from underneath.
+- [01:13:37,477 - 01:13:40,717] So that's the idea of divergence.
+- [01:13:41,917 - 01:13:44,237] Could it also be because it's thinning out?
+- [01:13:44,397 - 01:13:46,037] Would that be a crazy example,
+- [01:13:46,197 - 01:13:47,497] like the lake got shallower?
+- [01:13:47,697 - 01:13:47,957] Yeah,
+- [01:13:47,957 - 01:13:48,357] well,
+- [01:13:48,357 - 01:13:48,677] okay.
+- [01:13:48,977 - 01:13:50,157] I took a...
+- [01:13:50,157 - 01:13:50,517] All right,
+- [01:13:50,517 - 01:13:52,037] so let's be very specific now.
+- [01:13:52,117 - 01:13:56,677] I kept the lake having an absolutely uniform height,
+- [01:13:56,917 - 01:13:59,917] and let's also suppose that the density
+- [01:13:59,917 - 01:14:00,897] of water...
+- [01:14:00,897 - 01:14:03,617] Water is an incompressible fluid.
+- [01:14:03,757 - 01:14:04,957] It can't be squeezed.
+- [01:14:05,137 - 01:14:06,057] It can't be stretched.
+- [01:14:06,537 - 01:14:08,357] Then the velocity vector
+- [01:14:12,517 - 01:14:15,317] would be the right thing to think about then.
+- [01:14:15,597 - 01:14:16,997] But the density would...
+- [01:14:16,997 - 01:14:17,477] Yeah,
+- [01:14:17,477 - 01:14:18,437] but you could have...
+- [01:14:18,437 - 01:14:18,637] No,
+- [01:14:18,637 - 01:14:18,957] you're right.
+- [01:14:19,037 - 01:14:20,517] You could have a velocity vector
+- [01:14:20,517 - 01:14:22,637] having a divergence
+- [01:14:24,057 - 01:14:26,537] because the water is...
+- [01:14:26,537 - 01:14:27,957] Not because water is flowing in,
+- [01:14:28,057 - 01:14:29,457] but because it's thinning out.
+- [01:14:29,917 - 01:14:30,577] Yeah,
+- [01:14:30,577 - 01:14:31,817] that's also possible.
+- [01:14:32,237 - 01:14:32,837] Okay,
+- [01:14:32,837 - 01:14:33,717] but let's keep it simple.
+- [01:14:34,977 - 01:14:35,737] All right,
+- [01:14:35,737 - 01:14:36,637] and you can have...
+- [01:14:36,637 - 01:14:38,637] The idea of a divergence makes sense
+- [01:14:38,637 - 01:14:40,777] in three dimensions just as well as two dimensions.
+- [01:14:41,117 - 01:14:42,957] You simply have to imagine
+- [01:14:42,957 - 01:14:45,657] that all of space is filled with water,
+- [01:14:45,757 - 01:14:48,577] and there are some hidden pipes coming in,
+- [01:14:48,617 - 01:14:50,697] depositing water in different places
+- [01:14:51,377 - 01:14:53,917] so that it's spreading out away from points
+- [01:14:53,917 - 01:14:55,977] in three-dimensional space.
+- [01:14:56,417 - 01:14:58,037] In three-dimensional space,
+- [01:14:58,337 - 01:14:59,837] this is the expression
+- [01:14:59,917 - 01:15:00,957] for the divergence.
+- [01:15:01,777 - 01:15:04,677] If this were the velocity vector at every point,
+- [01:15:04,957 - 01:15:06,877] you would calculate this quantity,
+- [01:15:06,997 - 01:15:08,657] and that would tell you how much new water
+- [01:15:08,657 - 01:15:10,397] is coming in at each point of space.
+- [01:15:10,837 - 01:15:11,957] So that's the divergence.
+- [01:15:12,657 - 01:15:13,217] Now,
+- [01:15:13,217 - 01:15:14,437] there's a theorem which...
+- [01:15:15,157 - 01:15:16,857] The hint of the theorem
+- [01:15:16,857 - 01:15:18,877] was just given by Michael there.
+- [01:15:19,617 - 01:15:21,097] It's called Gauss's theorem,
+- [01:15:22,297 - 01:15:25,317] and it says something intuitive,
+- [01:15:26,197 - 01:15:27,837] very intuitively obvious.
+- [01:15:29,917 - 01:15:31,237] You take a surface,
+- [01:15:31,237 - 01:15:32,017] any surface,
+- [01:15:33,957 - 01:15:35,257] take any surface
+- [01:15:39,137 - 01:15:41,457] or any curve in two dimensions,
+- [01:15:43,017 - 01:15:45,317] and now suppose there's a vector field.
+- [01:15:46,697 - 01:15:47,697] Vector field,
+- [01:15:47,697 - 01:15:48,177] points.
+- [01:15:52,017 - 01:15:54,557] Think of it as the flow of water.
+- [01:15:56,557 - 01:15:59,117] And now let's take the total amount
+- [01:15:59,117 - 01:16:01,857] of water that's flowing out of the surface.
+- [01:16:03,157 - 01:16:03,717] Obviously,
+- [01:16:03,717 - 01:16:04,377] there's some water
+- [01:16:04,377 - 01:16:05,497] flowing out over here,
+- [01:16:06,177 - 01:16:07,057] and of course,
+- [01:16:07,057 - 01:16:07,797] we want to subtract
+- [01:16:07,797 - 01:16:09,477] the water that's flowing in.
+- [01:16:10,397 - 01:16:12,237] Let's calculate the total amount
+- [01:16:12,237 - 01:16:14,197] of water that's flowing out of the surface.
+- [01:16:14,897 - 01:16:17,237] That's an integral over the surface.
+- [01:16:17,677 - 01:16:18,777] Why is it an integral?
+- [01:16:19,017 - 01:16:20,417] Because we have to add up
+- [01:16:20,417 - 01:16:22,677] the flows of water outward.
+- [01:16:23,497 - 01:16:25,117] Where the water is coming inward,
+- [01:16:25,257 - 01:16:28,137] that's just negative flow.
+- [01:16:28,137 - 01:16:29,957] Negative outward flow.
+- [01:16:30,237 - 01:16:32,397] We add up the total outward flow
+- [01:16:32,397 - 01:16:34,557] by breaking up the surface
+- [01:16:34,557 - 01:16:36,857] into little pieces and asking
+- [01:16:36,857 - 01:16:38,797] how much flow is coming out
+- [01:16:38,797 - 01:16:40,077] from each little piece here.
+- [01:16:40,137 - 01:16:41,917] How much water is passing out
+- [01:16:41,917 - 01:16:43,037] through the surface.
+- [01:16:44,837 - 01:16:47,137] If the water is incompressible,
+- [01:16:48,977 - 01:16:51,197] incompressible means its density is fixed,
+- [01:16:51,357 - 01:16:52,397] and furthermore,
+- [01:16:52,397 - 01:16:54,097] the depth of the water
+- [01:16:54,097 - 01:16:55,097] is being kept fixed.
+- [01:16:55,157 - 01:16:57,057] There's only one way that water
+- [01:16:57,057 - 01:16:58,877] can come out of the surface,
+- [01:16:59,017 - 01:17:00,457] and that's if it's being pumped in,
+- [01:17:00,497 - 01:17:01,297] if there's a divergence.
+- [01:17:03,317 - 01:17:05,157] The divergence could be over here,
+- [01:17:05,297 - 01:17:05,997] it could be over here,
+- [01:17:06,097 - 01:17:06,797] it could be over here,
+- [01:17:06,877 - 01:17:07,577] it could be over here.
+- [01:17:07,937 - 01:17:08,717] In fact,
+- [01:17:08,717 - 01:17:10,297] anywhere where there's a divergence
+- [01:17:10,977 - 01:17:14,077] will cause an effect in which water
+- [01:17:14,077 - 01:17:15,537] will flow out of this region here.
+- [01:17:15,797 - 01:17:16,897] So there's a connection.
+- [01:17:17,377 - 01:17:18,697] There's a connection between
+- [01:17:18,697 - 01:17:20,637] what's going on on the boundary
+- [01:17:20,637 - 01:17:21,437] of this region,
+- [01:17:21,617 - 01:17:24,097] how much water is flowing through the boundary
+- [01:17:24,097 - 01:17:24,957] on the one hand,
+- [01:17:25,057 - 01:17:26,837] and what the divergence is
+- [01:17:27,057 - 01:17:27,657] in the interior.
+- [01:17:29,817 - 01:17:31,377] There's a connection between the two,
+- [01:17:31,477 - 01:17:32,717] and that connection is called
+- [01:17:32,717 - 01:17:33,717] Gauss's theorem.
+- [01:17:34,297 - 01:17:36,837] What it says is that the integral
+- [01:17:36,837 - 01:17:38,797] of the divergence in the interior,
+- [01:17:39,097 - 01:17:40,677] that's the total amount of flow
+- [01:17:40,677 - 01:17:43,337] coming in from outside,
+- [01:17:43,517 - 01:17:45,137] from underneath the bottom of the lake,
+- [01:17:45,847 - 01:17:47,317] the total integrated,
+- [01:17:49,137 - 01:17:50,837] and now by integrated I mean
+- [01:17:50,837 - 01:17:51,817] in the sense of an integral,
+- [01:17:52,077 - 01:17:55,997] the integrated amount of flow in,
+- [01:17:55,997 - 01:17:57,857] that's the integral of the divergence,
+- [01:18:00,717 - 01:18:03,437] the integral over the interior,
+- [01:18:04,217 - 01:18:06,117] in the three-dimensional case,
+- [01:18:06,317 - 01:18:08,197] it would be integral dxdy dz,
+- [01:18:09,097 - 01:18:11,237] over the interior of this region
+- [01:18:11,817 - 01:18:15,377] of the divergence of A,
+- [01:18:16,897 - 01:18:18,577] if you like to think of A
+- [01:18:18,577 - 01:18:19,777] as the velocity field,
+- [01:18:19,777 - 01:18:20,337] that's fine,
+- [01:18:20,557 - 01:18:23,977] is equal to the total amount of flow
+- [01:18:23,977 - 01:18:25,977] that's going out through the interior
+- [01:18:25,997 - 01:18:26,497] through the boundary.
+- [01:18:27,297 - 01:18:28,577] And how do we write that?
+- [01:18:29,697 - 01:18:31,657] The total amount of flow that's flowing
+- [01:18:31,657 - 01:18:33,057] outward through the boundary,
+- [01:18:33,297 - 01:18:34,457] we break up,
+- [01:18:34,557 - 01:18:35,977] let's take the three-dimensional case,
+- [01:18:36,177 - 01:18:38,217] we break up the boundary into little cells.
+- [01:18:39,137 - 01:18:41,097] Each little cell is a little area.
+- [01:18:41,877 - 01:18:44,137] Let's call each one of those little areas
+- [01:18:46,557 - 01:18:47,597] d sigma.
+- [01:18:48,997 - 01:18:50,037] d sigma,
+- [01:18:50,037 - 01:18:51,897] sigma stands for surface area,
+- [01:18:52,157 - 01:18:53,737] sigma is the Greek letter sigma,
+- [01:18:53,857 - 01:18:54,937] it stands for surface area.
+- [01:18:55,997 - 01:18:57,557] This three-dimensional integral
+- [01:18:59,997 - 01:19:02,337] over the interior here
+- [01:19:02,797 - 01:19:05,537] is equal to a two-dimensional integral
+- [01:19:05,537 - 01:19:07,897] d sigma over the surface,
+- [01:19:08,837 - 01:19:11,657] and it is just the component
+- [01:19:11,657 - 01:19:17,077] of A perpendicular to the surface.
+- [01:19:18,757 - 01:19:22,617] Let's call it A perpendicular to the surface d sigma.
+- [01:19:23,077 - 01:19:25,597] A perpendicular to the surface
+- [01:19:25,997 - 01:19:28,317] is the amount of flow that's coming out
+- [01:19:28,317 - 01:19:29,637] of each one of these little boxes.
+- [01:19:30,577 - 01:19:31,217] Notice,
+- [01:19:31,217 - 01:19:31,857] incidentally,
+- [01:19:31,857 - 01:19:33,997] that if there's a flow along the surface,
+- [01:19:34,317 - 01:19:37,077] it doesn't give rise to any fluid coming out.
+- [01:19:37,537 - 01:19:40,257] It's only the flow perpendicular to the surface,
+- [01:19:40,397 - 01:19:42,957] the component of the flow perpendicular to the surface,
+- [01:19:43,157 - 01:19:45,857] which carries fluid from the inside to the outside.
+- [01:19:46,477 - 01:19:50,077] So we integrate the perpendicular component
+- [01:19:51,077 - 01:19:52,497] of the flow
+- [01:19:54,837 - 01:19:56,677] over the surface,
+- [01:19:56,917 - 01:19:58,037] that's the little d sigma here,
+- [01:19:58,337 - 01:20:00,517] that gives us the total amount of fluid
+- [01:20:00,517 - 01:20:01,897] coming out per unit time,
+- [01:20:01,897 - 01:20:02,597] for example,
+- [01:20:03,657 - 01:20:05,277] and that has to be equal
+- [01:20:05,277 - 01:20:08,097] to the amount of fluid that's being generated
+- [01:20:08,097 - 01:20:09,997] in the interior by the divergence.
+- [01:20:10,697 - 01:20:12,297] This is Gauss's theorem,
+- [01:20:12,537 - 01:20:14,237] the relationship between
+- [01:20:14,237 - 01:20:16,437] the integral of the divergence
+- [01:20:16,437 - 01:20:18,277] on the interior of some region
+- [01:20:18,277 - 01:20:20,877] and the integral over the boundary
+- [01:20:24,417 - 01:20:26,917] where it's measuring the flux,
+- [01:20:27,297 - 01:20:29,237] the amount of stuff that's coming out
+- [01:20:29,237 - 01:20:30,057] through the boundary.
+- [01:20:32,117 - 01:20:33,037] Fundamental theorem.
+- [01:20:38,697 - 01:20:40,437] Let's see what it says now.
+- [01:20:42,517 - 01:20:44,977] Any questions about Gauss's theorem here?
+- [01:20:46,817 - 01:20:47,997] You'll see how it works.
+- [01:20:48,017 - 01:20:48,957] I'll show you how it works in a minute.
+- [01:20:50,877 - 01:20:53,397] You mentioned that for water,
+- [01:20:53,437 - 01:20:54,817] as in compressible,
+- [01:20:54,997 - 01:20:57,157] does that mean that we're,
+- [01:20:57,297 - 01:21:00,797] that we were dealing with a compressible fluid?
+- [01:21:01,137 - 01:21:01,557] Well,
+- [01:21:01,557 - 01:21:02,117] yeah,
+- [01:21:02,117 - 01:21:02,777] you could have,
+- [01:21:02,897 - 01:21:03,297] sure,
+- [01:21:03,297 - 01:21:04,977] if you had a compressible fluid,
+- [01:21:05,117 - 01:21:07,017] you could discover that all the fluid
+- [01:21:07,017 - 01:21:09,317] out in the boundary here is all moving inwards
+- [01:21:09,657 - 01:21:10,697] in every direction
+- [01:21:10,697 - 01:21:13,117] without any new fluid being formed.
+- [01:21:13,877 - 01:21:14,657] In fact,
+- [01:21:14,657 - 01:21:15,497] what's happening is just
+- [01:21:15,497 - 01:21:16,457] the fluid is getting squeezed.
+- [01:21:16,777 - 01:21:18,417] But if the fluid can't squeeze,
+- [01:21:18,557 - 01:21:19,977] if you cannot compress it,
+- [01:21:20,877 - 01:21:23,917] the only way that fluid could be flowing in
+- [01:21:23,917 - 01:21:26,137] is if it's being removed somehow from the center,
+- [01:21:26,777 - 01:21:30,817] if it's being removed by invisible pipes
+- [01:21:30,817 - 01:21:32,037] that are carrying it off.
+- [01:21:34,817 - 01:21:37,137] So that means the divergence in the case of water
+- [01:21:37,137 - 01:21:37,837] would be zero,
+- [01:21:37,977 - 01:21:40,237] would be integrated over a volume?
+- [01:21:41,117 - 01:21:42,817] If there was no water coming in,
+- [01:21:42,877 - 01:21:43,477] it wouldn't be zero.
+- [01:21:44,997 - 01:21:46,557] If there was a source of the water,
+- [01:21:46,757 - 01:21:48,897] divergence is the same as source.
+- [01:21:48,897 - 01:21:50,897] Source of water is,
+- [01:21:51,817 - 01:21:55,157] source of new water coming in from elsewhere is,
+- [01:21:56,197 - 01:21:56,837] right,
+- [01:21:56,837 - 01:21:58,857] so in the example with the two-dimensional lake,
+- [01:21:59,497 - 01:22:02,997] the source is water flowing in from underneath.
+- [01:22:03,337 - 01:22:04,297] The sink,
+- [01:22:04,297 - 01:22:05,777] which is the negative of a source,
+- [01:22:06,037 - 01:22:07,437] is the water flowing out.
+- [01:22:07,797 - 01:22:09,457] And in the two-dimensional example,
+- [01:22:09,817 - 01:22:12,477] this wouldn't be a two-dimensional surface integral.
+- [01:22:12,797 - 01:22:15,657] It would be the integral in here equal to
+- [01:22:15,657 - 01:22:18,097] a one-dimensional surface integral coming out.
+- [01:22:18,097 - 01:22:18,497] Okay.
+- [01:22:19,717 - 01:22:20,357] All right,
+- [01:22:20,357 - 01:22:21,897] let me show you how you use this.
+- [01:22:23,397 - 01:22:24,997] Let me show you how you use this
+- [01:22:26,037 - 01:22:27,627] and what it has to do
+- [01:22:27,627 - 01:22:29,217] with what we've said up till now
+- [01:22:29,217 - 01:22:30,177] about gravity.
+- [01:22:30,657 - 01:22:31,337] I think,
+- [01:22:31,337 - 01:22:32,377] I hope we'll have time.
+- [01:22:37,837 - 01:22:40,797] Let's imagine that we have a source,
+- [01:22:41,977 - 01:22:43,137] it could be water,
+- [01:22:43,257 - 01:22:45,137] but let's take three-dimensional case.
+- [01:22:45,657 - 01:22:47,537] There's a divergence of
+- [01:22:48,097 - 01:22:48,937] a vector field,
+- [01:22:49,237 - 01:22:50,117] let's say A.
+- [01:22:50,517 - 01:22:52,477] There's a divergence of a vector field,
+- [01:22:52,677 - 01:22:53,377] del dot A,
+- [01:22:54,817 - 01:22:56,497] and it's concentrated
+- [01:22:57,097 - 01:22:59,057] in some region of space
+- [01:22:59,637 - 01:23:00,917] that's a little sphere.
+- [01:23:01,997 - 01:23:04,997] In some region of space that has spherical symmetry,
+- [01:23:05,697 - 01:23:06,837] in other words,
+- [01:23:06,977 - 01:23:11,237] it doesn't mean that the divergence is uniform over here,
+- [01:23:11,457 - 01:23:12,767] but it means that it
+- [01:23:12,767 - 01:23:14,077] has the symmetry of a sphere.
+- [01:23:15,517 - 01:23:17,977] Everything is symmetrical with respect to rotation.
+- [01:23:18,657 - 01:23:21,617] Let's suppose that there's a divergence of the fluid.
+- [01:23:22,857 - 01:23:23,417] Okay.
+- [01:23:23,937 - 01:23:25,357] Now let's take,
+- [01:23:25,417 - 01:23:29,737] and it's restricted completely to be within here.
+- [01:23:31,897 - 01:23:33,657] It could be strong near the
+- [01:23:33,657 - 01:23:35,417] center and weak near the outside,
+- [01:23:35,537 - 01:23:36,967] or it could be weak near
+- [01:23:36,967 - 01:23:38,397] the center and strong near the outside,
+- [01:23:38,637 - 01:23:41,257] but a certain total amount of fluid
+- [01:23:41,937 - 01:23:43,697] or a certain total divergence,
+- [01:23:43,777 - 01:23:45,057] an integrated divergence,
+- [01:23:45,057 - 01:23:49,297] is occurring with nice spherical shape.
+- [01:23:50,237 - 01:23:50,797] Okay.
+- [01:23:51,237 - 01:23:52,877] Let's see if we can use that
+- [01:23:52,877 - 01:23:54,857] to figure out what the field,
+- [01:23:55,077 - 01:23:56,897] what the A field is.
+- [01:23:57,057 - 01:23:58,537] There's a del dot A in here.
+- [01:24:01,077 - 01:24:02,357] And now let's see,
+- [01:24:02,457 - 01:24:05,117] can we figure out what the field is elsewhere,
+- [01:24:05,277 - 01:24:06,477] outside of here?
+- [01:24:06,837 - 01:24:08,747] So what we do is
+- [01:24:08,747 - 01:24:10,657] we draw a surface around there.
+- [01:24:12,117 - 01:24:13,877] We draw a surface around there.
+- [01:24:13,877 - 01:24:17,837] And now we're going to use Gauss's theorem.
+- [01:24:19,357 - 01:24:20,217] First of all,
+- [01:24:20,217 - 01:24:21,257] let's look at the left side.
+- [01:24:21,597 - 01:24:23,677] The left side has the integral
+- [01:24:23,677 - 01:24:25,757] of the divergence of the vector field.
+- [01:24:26,417 - 01:24:26,937] Alright.
+- [01:24:27,157 - 01:24:28,297] The vector field,
+- [01:24:28,297 - 01:24:29,337] or the divergence,
+- [01:24:29,477 - 01:24:34,657] is completely restricted to some finite sphere in here.
+- [01:24:35,837 - 01:24:36,657] What is,
+- [01:24:38,197 - 01:24:38,717] incidentally,
+- [01:24:38,717 - 01:24:39,517] for the flow case,
+- [01:24:39,657 - 01:24:40,797] for the fluid flow case,
+- [01:24:40,957 - 01:24:42,737] what would be the integral of the divergence?
+- [01:24:42,737 - 01:24:43,737] Does anybody know?
+- [01:24:44,897 - 01:24:47,117] If it really was a flow of a fluid.
+- [01:24:49,997 - 01:24:51,877] It would be the total amount of fluid
+- [01:24:51,877 - 01:24:52,857] that was flowing in,
+- [01:24:53,617 - 01:24:54,937] per unit time.
+- [01:24:55,197 - 01:24:56,677] It would be the flow per unit time
+- [01:24:56,677 - 01:24:57,877] that's coming into the system.
+- [01:24:58,157 - 01:24:59,217] But whatever it is,
+- [01:24:59,357 - 01:25:03,637] this integral doesn't depend on the radius of the sphere
+- [01:25:03,637 - 01:25:05,497] as long as the sphere,
+- [01:25:05,677 - 01:25:06,897] this outer sphere here,
+- [01:25:07,037 - 01:25:08,237] is bigger than this region.
+- [01:25:08,857 - 01:25:09,377] Why?
+- [01:25:10,097 - 01:25:12,077] Because the integral over the divergence
+- [01:25:12,077 - 01:25:16,157] of A is entirely concentrated in this region here,
+- [01:25:16,817 - 01:25:19,057] and there's zero divergence on the outside.
+- [01:25:19,477 - 01:25:20,657] So first of all,
+- [01:25:20,677 - 01:25:22,397] the left-hand side
+- [01:25:23,077 - 01:25:26,377] is independent of the radius of this outer sphere
+- [01:25:26,377 - 01:25:28,637] as long as the radius of the outer sphere
+- [01:25:28,637 - 01:25:33,037] is bigger than this concentration of divergence here.
+- [01:25:33,397 - 01:25:34,597] So it's a number.
+- [01:25:35,617 - 01:25:36,817] Altogether it's a number.
+- [01:25:36,897 - 01:25:39,257] Let's call that number M.
+- [01:25:39,617 - 01:25:40,257] No,
+- [01:25:40,257 - 01:25:40,777] not M.
+- [01:25:41,477 - 01:25:42,097] Let's just,
+- [01:25:42,277 - 01:25:42,757] Q.
+- [01:25:44,517 - 01:25:45,077] Q.
+- [01:25:45,217 - 01:25:46,197] That's the left-hand side,
+- [01:25:46,477 - 01:25:48,217] and it doesn't depend on the radius.
+- [01:25:48,597 - 01:25:49,737] On the other hand,
+- [01:25:49,817 - 01:25:51,357] what is the right-hand side?
+- [01:25:51,817 - 01:25:52,277] Well,
+- [01:25:52,277 - 01:25:53,837] there's a flow going out,
+- [01:25:54,597 - 01:25:57,637] and if everything is nice and spherically symmetric,
+- [01:25:58,137 - 01:26:00,717] then the flow is going to go radially outward.
+- [01:26:01,817 - 01:26:03,417] It's going to be a pure,
+- [01:26:03,477 - 01:26:05,657] radially outward directed flow,
+- [01:26:05,897 - 01:26:08,757] if the flow is spherically symmetric.
+- [01:26:09,837 - 01:26:12,257] Radially outward directed flow means
+- [01:26:12,257 - 01:26:14,157] that the flow is perpendicular
+- [01:26:14,157 - 01:26:15,957] to the surface of the sphere.
+- [01:26:16,677 - 01:26:19,737] So the perpendicular component of A
+- [01:26:19,737 - 01:26:21,617] is just the magnitude of A.
+- [01:26:21,837 - 01:26:22,517] That's it.
+- [01:26:22,537 - 01:26:23,737] It's just the magnitude of A,
+- [01:26:23,857 - 01:26:26,257] and it's the same everywhere as on the sphere.
+- [01:26:26,737 - 01:26:28,097] Why is it the same?
+- [01:26:28,257 - 01:26:30,637] Because everything has spherical symmetry.
+- [01:26:31,297 - 01:26:32,757] Now spherical symmetry,
+- [01:26:32,977 - 01:26:34,457] the A that appears here,
+- [01:26:34,677 - 01:26:37,017] is constant over this whole sphere.
+- [01:26:38,117 - 01:26:38,737] So,
+- [01:26:38,757 - 01:26:42,197] this integral is nothing but the magnitude of A
+- [01:26:42,757 - 01:26:45,097] times the area of the total sphere.
+- [01:26:46,577 - 01:26:49,657] If I take an integral over a surface,
+- [01:26:49,897 - 01:26:51,417] a spherical surface like this,
+- [01:26:51,597 - 01:26:53,977] of something which doesn't depend on
+- [01:26:53,977 - 01:26:54,957] where I am on the sphere,
+- [01:26:55,257 - 01:26:56,637] then it's just,
+- [01:26:56,717 - 01:26:57,897] you can take this on the outside,
+- [01:26:58,237 - 01:27:00,297] the magnitude of the field,
+- [01:27:01,417 - 01:27:03,437] and the integral d sigma
+- [01:27:03,437 - 01:27:06,397] is just the total surface area of the sphere.
+- [01:27:07,237 - 01:27:09,497] What's the total surface area of the sphere?
+- [01:27:09,737 - 01:27:11,917] Four-thirds pi r squared.
+- [01:27:12,877 - 01:27:13,657] No third,
+- [01:27:13,657 - 01:27:20,297] just four pi r squared.
+- [01:27:24,117 - 01:27:24,897] Oh,
+- [01:27:24,897 - 01:27:25,677] yeah.
+- [01:27:26,997 - 01:27:30,937] Four pi r squared times the magnitude
+- [01:27:30,937 - 01:27:35,177] of the field is equal to q.
+- [01:27:38,077 - 01:27:39,537] So look what we have.
+- [01:27:39,797 - 01:27:42,577] We have that the magnitude of the field
+- [01:27:43,417 - 01:27:49,077] is equal to the total integrated divergence
+- [01:27:50,717 - 01:27:52,477] divided by four pi,
+- [01:27:52,737 - 01:27:54,457] four pi is just a number,
+- [01:27:54,637 - 01:27:56,377] times r squared.
+- [01:27:58,557 - 01:27:59,857] Does that look familiar?
+- [01:28:00,157 - 01:28:01,257] It's a vector field.
+- [01:28:02,857 - 01:28:05,157] It's pointed radially outward,
+- [01:28:05,157 - 01:28:06,277] well,
+- [01:28:06,277 - 01:28:07,437] it's pointed radially outward
+- [01:28:07,437 - 01:28:09,117] if the divergence is positive.
+- [01:28:09,857 - 01:28:11,577] If the divergence is positive,
+- [01:28:11,737 - 01:28:13,097] it's pointed radially outward,
+- [01:28:13,817 - 01:28:16,317] and its magnitude is one over r squared.
+- [01:28:17,917 - 01:28:21,717] It's exactly the gravitational field
+- [01:28:22,417 - 01:28:25,317] of a point particle at the center here.
+- [01:28:25,677 - 01:28:27,377] That doesn't look like magnitude of A.
+- [01:28:27,517 - 01:28:27,777] Hmm?
+- [01:28:27,897 - 01:28:29,277] Doesn't look like you've got a scalar.
+- [01:28:29,517 - 01:28:30,357] It's the magnitude of A.
+- [01:28:30,437 - 01:28:30,557] Yeah.
+- [01:28:31,337 - 01:28:34,057] That's why we have to put a direction in here.
+- [01:28:39,037 - 01:28:40,597] You know what this r hat,
+- [01:28:40,797 - 01:28:42,737] this r over r is?
+- [01:28:43,437 - 01:28:44,697] It's a unit vector
+- [01:28:45,257 - 01:28:46,977] pointing in the radial direction.
+- [01:28:47,497 - 01:28:49,077] It's a vector of unit length
+- [01:28:49,077 - 01:28:50,537] pointing in the radial direction.
+- [01:28:51,277 - 01:28:51,817] Right.
+- [01:28:51,997 - 01:28:54,177] So it's quite clear from the picture
+- [01:28:54,177 - 01:28:57,457] that the A field is pointing radially outward.
+- [01:28:57,857 - 01:28:59,197] That's what this says over here.
+- [01:29:00,337 - 01:29:00,917] All right.
+- [01:29:01,257 - 01:29:02,317] In any case,
+- [01:29:02,317 - 01:29:04,397] the magnitude of the field,
+- [01:29:04,397 - 01:29:05,697] it points radially outward,
+- [01:29:07,337 - 01:29:09,137] it has magnitude q,
+- [01:29:11,257 - 01:29:13,517] and it falls off like one over r squared,
+- [01:29:13,697 - 01:29:15,797] exactly like the Newtonian field
+- [01:29:16,397 - 01:29:18,257] of a point mass.
+- [01:29:19,997 - 01:29:20,597] Okay?
+- [01:29:21,637 - 01:29:24,257] So a point mass can be thought of
+- [01:29:24,257 - 01:29:26,737] as a concentrated divergence
+- [01:29:28,777 - 01:29:31,917] of the gravitational field right at the center,
+- [01:29:32,037 - 01:29:32,537] a point mass,
+- [01:29:32,537 - 01:29:33,677] a literal point mass,
+- [01:29:33,677 - 01:29:36,037] can be thought of as a concentrated
+- [01:29:42,517 - 01:29:44,897] divergence of the gravitational field,
+- [01:29:47,257 - 01:29:48,817] concentrated in some very,
+- [01:29:48,817 - 01:29:50,737] very small little volume.
+- [01:29:51,657 - 01:29:52,657] Think of it,
+- [01:29:52,657 - 01:29:54,417] if you like,
+- [01:29:54,557 - 01:29:56,477] you can think of the gravitational field
+- [01:29:56,477 - 01:29:58,917] as the flow field or the velocity field
+- [01:29:58,917 - 01:30:01,277] of a fluid that's spreading out.
+- [01:30:01,337 - 01:30:01,417] Oh,
+- [01:30:01,417 - 01:30:01,957] incidentally,
+- [01:30:01,957 - 01:30:02,317] of course,
+- [01:30:02,317 - 01:30:03,657] I've got the sign wrong here.
+- [01:30:03,817 - 01:30:06,837] The real gravitational acceleration points inward,
+- [01:30:11,377 - 01:30:15,197] which is an indication that this divergence is negative.
+- [01:30:16,137 - 01:30:18,797] The divergence is more like a convergence
+- [01:30:19,157 - 01:30:20,737] sucking fluid in.
+- [01:30:21,897 - 01:30:27,657] So the Newtonian gravitational field is isomorphic,
+- [01:30:27,657 - 01:30:29,597] is mathematically equivalent
+- [01:30:29,597 - 01:30:31,157] or mathematically similar
+- [01:30:32,317 - 01:30:34,857] to a flow field to a flow of water
+- [01:30:34,857 - 01:30:35,897] or whatever other fluid
+- [01:30:35,897 - 01:30:37,757] where it's all being sucked out
+- [01:30:37,757 - 01:30:38,697] from a single point.
+- [01:30:39,437 - 01:30:41,137] And as you can see,
+- [01:30:41,297 - 01:30:44,597] the velocity field itself,
+- [01:30:44,697 - 01:30:46,657] or in this case the field,
+- [01:30:46,837 - 01:30:48,237] the gravitational field,
+- [01:30:48,297 - 01:30:49,737] but the velocity field would go like
+- [01:30:49,737 - 01:30:50,877] one over r squared.
+- [01:30:51,897 - 01:30:53,577] That's a useful analogy.
+- [01:30:53,937 - 01:30:55,397] That is not to say that
+- [01:30:55,397 - 01:30:56,857] space is a flow of anything.
+- [01:30:57,657 - 01:31:00,217] It's a mathematical analogy that's useful
+- [01:31:00,217 - 01:31:03,257] to understand the one over r squared force law,
+- [01:31:03,897 - 01:31:06,777] that it is mathematically similar
+- [01:31:07,477 - 01:31:10,657] to a field of velocity flow
+- [01:31:11,017 - 01:31:13,757] from a flow that's being generated
+- [01:31:13,757 - 01:31:15,617] right at the center at a point.
+- [01:31:16,097 - 01:31:16,777] Okay,
+- [01:31:16,777 - 01:31:21,097] that's a useful observation.
+- [01:31:21,477 - 01:31:23,037] But notice something else.
+- [01:31:24,117 - 01:31:25,057] Supposing now,
+- [01:31:25,057 - 01:31:26,177] instead of having
+- [01:31:26,177 - 01:31:29,537] the flow concentrated at the center here,
+- [01:31:30,217 - 01:31:32,057] supposing the flow was concentrated
+- [01:31:32,057 - 01:31:33,957] over a sphere which was bigger,
+- [01:31:34,117 - 01:31:36,917] but the same total amount of flow.
+- [01:31:37,557 - 01:31:39,477] It would not change the answer.
+- [01:31:39,797 - 01:31:42,657] As long as the total amount of flow is fixed,
+- [01:31:42,877 - 01:31:45,117] the way that it flows out through here
+- [01:31:45,117 - 01:31:46,137] is also fixed.
+- [01:31:46,977 - 01:31:48,557] This is Newton's theorem.
+- [01:31:49,277 - 01:31:52,237] Newton's theorem in the gravitational context
+- [01:31:53,197 - 01:31:56,017] says that the gravitational field of an object,
+- [01:31:57,417 - 01:31:59,077] outside the object,
+- [01:32:00,217 - 01:32:03,337] is independent of whether the object
+- [01:32:03,337 - 01:32:05,017] is a point mass at the center,
+- [01:32:05,177 - 01:32:07,677] or whether it's a spread out mass,
+- [01:32:07,957 - 01:32:10,157] or whether it's a spread out mass this big.
+- [01:32:10,777 - 01:32:13,397] As long as you're outside the object,
+- [01:32:13,537 - 01:32:16,137] and as long as the object is spherically symmetric,
+- [01:32:16,697 - 01:32:17,537] in other words,
+- [01:32:17,537 - 01:32:18,177] as long as the object
+- [01:32:18,177 - 01:32:19,177] is shaped like a sphere,
+- [01:32:19,837 - 01:32:21,537] and you're outside of it,
+- [01:32:21,597 - 01:32:23,057] on the outside of it,
+- [01:32:23,177 - 01:32:25,457] outside of where the mass distribution is,
+- [01:32:26,137 - 01:32:28,277] then the gravitational field of it
+- [01:32:28,277 - 01:32:30,197] doesn't depend on the mass
+- [01:32:30,217 - 01:32:31,237] it depends on whether it's a point,
+- [01:32:31,457 - 01:32:33,037] it's a spread out object,
+- [01:32:34,997 - 01:32:37,277] whether it's denser at the center
+- [01:32:37,277 - 01:32:38,757] and less dense at the outside,
+- [01:32:39,597 - 01:32:41,137] less dense in the inside,
+- [01:32:41,357 - 01:32:42,517] more dense in the outside.
+- [01:32:42,877 - 01:32:46,837] All it depends on is the total amount of mass.
+- [01:32:47,317 - 01:32:49,397] The total amount of mass is like
+- [01:32:49,397 - 01:32:51,477] the total amount of flow through,
+- [01:32:52,417 - 01:32:53,937] coming into the...
+- [01:32:55,497 - 01:32:58,417] That theorem is very fundamental and important
+- [01:32:58,417 - 01:32:59,817] to thinking about gravity.
+- [01:33:00,777 - 01:33:01,717] For example,
+- [01:33:01,717 - 01:33:03,797] supposing we are interested
+- [01:33:05,217 - 01:33:07,257] in the motion of an object
+- [01:33:07,257 - 01:33:08,797] near the surface of the Earth,
+- [01:33:08,877 - 01:33:10,497] but not so near that we can make
+- [01:33:10,497 - 01:33:11,717] the flat space approximation.
+- [01:33:12,717 - 01:33:15,837] Let's say at a distance two or three
+- [01:33:15,837 - 01:33:16,957] or one and a half
+- [01:33:16,957 - 01:33:18,077] times the radius of the Earth.
+- [01:33:19,437 - 01:33:19,917] Well,
+- [01:33:19,917 - 01:33:22,777] that object is attracted by this point,
+- [01:33:22,897 - 01:33:24,037] it's attracted by this point,
+- [01:33:24,137 - 01:33:25,317] it's attracted by that point,
+- [01:33:25,937 - 01:33:27,457] it's close to this point,
+- [01:33:27,577 - 01:33:28,937] it's far from this point,
+- [01:33:28,937 - 01:33:30,397] it's a point that seems like a hellish problem
+- [01:33:30,397 - 01:33:33,077] to figure out what the gravitational effect
+- [01:33:33,077 - 01:33:34,177] on this point is,
+- [01:33:34,787 - 01:33:35,257] but no.
+- [01:33:36,117 - 01:33:38,337] This tells you the gravitational field
+- [01:33:38,337 - 01:33:41,317] is exactly the same as if the same total mass
+- [01:33:41,317 - 01:33:43,717] was concentrated right at the center.
+- [01:33:46,157 - 01:33:47,357] That's Newton's theorem,
+- [01:33:47,557 - 01:33:48,877] and it's a marvelous theorem,
+- [01:33:49,037 - 01:33:50,657] and it's a great piece of luck for him
+- [01:33:50,657 - 01:33:52,737] because without it he couldn't have
+- [01:33:55,997 - 01:33:57,637] solved his equations.
+- [01:33:57,977 - 01:33:58,797] He knew,
+- [01:33:59,457 - 01:34:01,297] he had an argument,
+- [01:34:01,517 - 01:34:03,357] it may have been essentially this argument,
+- [01:34:03,517 - 01:34:05,277] I'm not sure exactly what argument he made,
+- [01:34:05,457 - 01:34:07,057] but he knew that with the
+- [01:34:07,057 - 01:34:08,657] one over r squared force law,
+- [01:34:08,777 - 01:34:10,817] and only the one over r squared force law,
+- [01:34:10,917 - 01:34:11,947] wouldn't have been true if
+- [01:34:11,947 - 01:34:12,977] it was one over r cubed,
+- [01:34:13,257 - 01:34:14,257] one over r to the fourth,
+- [01:34:14,497 - 01:34:15,597] one over r to the seventh.
+- [01:34:16,117 - 01:34:18,177] With the one over r squared force law,
+- [01:34:18,897 - 01:34:21,797] a spherical distribution of mass behaves exactly
+- [01:34:22,317 - 01:34:23,997] as if all the mass
+- [01:34:23,997 - 01:34:25,677] was concentrated right at the center
+- [01:34:25,677 - 01:34:28,217] as long as you're outside the mass.
+- [01:34:30,117 - 01:34:32,857] So that's what made it possible for Newton
+- [01:34:32,857 - 01:34:35,277] to easily solve his own equations,
+- [01:34:36,037 - 01:34:37,357] that every object,
+- [01:34:37,437 - 01:34:38,857] as long as it's spherical in shape,
+- [01:34:39,457 - 01:34:42,617] behaves as if it were a point mass.
+- [01:34:43,057 - 01:34:44,407] So if you're down in
+- [01:34:44,407 - 01:34:45,757] a mine shaft that doesn't hold?
+- [01:34:46,057 - 01:34:46,637] That's right.
+- [01:34:48,397 - 01:34:50,397] If you're down in a mine shaft that doesn't hold,
+- [01:34:50,577 - 01:34:52,077] but that doesn't mean you
+- [01:34:52,077 - 01:34:53,577] can't figure out what's going on.
+- [01:34:54,197 - 01:34:55,777] You can figure out what's going on.
+- [01:34:55,837 - 01:34:56,677] I don't think we'll do it tonight,
+- [01:34:56,777 - 01:34:57,477] it's a little too late.
+- [01:34:58,017 - 01:34:58,737] But yes,
+- [01:34:58,737 - 01:35:00,277] we can work out what
+- [01:35:00,277 - 01:35:01,817] would happen in a mine shaft,
+- [01:35:01,997 - 01:35:02,457] but that's right,
+- [01:35:02,557 - 01:35:04,017] it doesn't hold in a mine shaft.
+- [01:35:06,997 - 01:35:07,877] For example,
+- [01:35:07,877 - 01:35:09,857] supposing you dig a mine shaft
+- [01:35:09,857 - 01:35:11,857] right down through the center of the earth,
+- [01:35:12,797 - 01:35:14,177] and now you get very close
+- [01:35:14,177 - 01:35:15,557] to the center of the earth,
+- [01:35:16,377 - 01:35:17,957] how much force do you expect
+- [01:35:17,957 - 01:35:19,537] to be pulling you toward the center?
+- [01:35:19,717 - 01:35:20,397] Not much.
+- [01:35:21,097 - 01:35:22,997] Certainly much less than if you were,
+- [01:35:23,177 - 01:35:24,657] than if all the mass
+- [01:35:24,657 - 01:35:26,137] were concentrated right at the center.
+- [01:35:26,657 - 01:35:27,377] You've got,
+- [01:35:27,377 - 01:35:31,917] it's not even obvious which way the force is,
+- [01:35:32,037 - 01:35:33,057] but it is toward the center,
+- [01:35:34,057 - 01:35:35,277] but it's very small.
+- [01:35:35,697 - 01:35:37,027] You displace away from the center
+- [01:35:37,027 - 01:35:38,357] of the earth a little bit,
+- [01:35:38,417 - 01:35:39,037] there's a tiny,
+- [01:35:39,037 - 01:35:39,817] tiny little force.
+- [01:35:40,417 - 01:35:40,897] Much,
+- [01:35:40,897 - 01:35:42,547] much less than as if all
+- [01:35:42,547 - 01:35:44,197] the mass was squashed toward the center.
+- [01:35:44,877 - 01:35:45,357] So,
+- [01:35:45,357 - 01:35:45,757] right,
+- [01:35:45,757 - 01:35:50,517] it doesn't work for that case.
+- [01:35:51,657 - 01:35:53,887] Another interesting case is supposing
+- [01:35:53,887 - 01:35:56,117] you have a shell of material,
+- [01:35:56,137 - 01:36:00,217] to have a shell of material,
+- [01:36:00,217 - 01:36:05,617] think about a shell of source,
+- [01:36:06,917 - 01:36:08,237] fluid flowing in.
+- [01:36:08,617 - 01:36:12,417] Fluid is flowing in from the outside onto this blackboard,
+- [01:36:12,617 - 01:36:14,357] and all the little pipes are
+- [01:36:14,357 - 01:36:16,097] arranged on a circle like this.
+- [01:36:20,197 - 01:36:22,977] What does the fluid flow look like in different places?
+- [01:36:23,357 - 01:36:23,957] Well,
+- [01:36:23,957 - 01:36:25,317] the answer is on the outside,
+- [01:36:25,557 - 01:36:26,117] in the middle,
+- [01:36:26,137 - 01:36:27,777] it looks exactly the same as
+- [01:36:27,777 - 01:36:29,417] if everything were concentrated on a point.
+- [01:36:29,517 - 01:36:30,437] But what about in the interior?
+- [01:36:30,737 - 01:36:31,497] What would you guess?
+- [01:36:32,577 - 01:36:33,017] Nothing.
+- [01:36:33,717 - 01:36:34,157] Nothing.
+- [01:36:34,357 - 01:36:37,497] Everything is just flowing out away from here.
+- [01:36:39,697 - 01:36:41,597] And there's no flow in here at all.
+- [01:36:41,757 - 01:36:42,377] How could there be?
+- [01:36:42,457 - 01:36:43,717] Which direction would it be in?
+- [01:36:43,997 - 01:36:43,997] And,
+- [01:36:43,997 - 01:36:44,177] uh,
+- [01:36:44,177 - 01:36:48,017] so there's no flow in here.
+- [01:36:48,537 - 01:36:50,537] Wouldn't you have the distance argument?
+- [01:36:50,757 - 01:36:50,917] Like,
+- [01:36:50,917 - 01:36:53,557] if you're closer to the surface of the inner shell,
+- [01:36:53,837 - 01:36:54,097] Yeah.
+- [01:36:54,097 - 01:36:56,237] wouldn't that be more force towards that?
+- [01:36:56,457 - 01:36:56,597] No.
+- [01:36:56,717 - 01:36:57,037] You see,
+- [01:36:57,037 - 01:36:58,377] you use Gauss's theorem.
+- [01:36:58,957 - 01:37:00,157] Let's do Gauss's theorem.
+- [01:37:00,257 - 01:37:00,957] Gauss's theorem says,
+- [01:37:00,957 - 01:37:01,237] okay,
+- [01:37:01,237 - 01:37:01,917] let's take a shell.
+- [01:37:03,317 - 01:37:04,277] The field,
+- [01:37:04,277 - 01:37:07,797] the integrated field coming out of that shell
+- [01:37:07,797 - 01:37:10,537] is equal to the integrated divergence in here.
+- [01:37:10,617 - 01:37:11,837] But there is no divergence in here.
+- [01:37:12,017 - 01:37:14,337] So the net integrated field coming out is zero.
+- [01:37:15,157 - 01:37:17,217] No field on the interior of the shell,
+- [01:37:17,377 - 01:37:19,457] field on the exterior of the shell.
+- [01:37:19,737 - 01:37:21,837] So the consequence is that if
+- [01:37:21,837 - 01:37:23,937] you made a spherical shell of material,
+- [01:37:23,937 - 01:37:24,517] like that,
+- [01:37:24,697 - 01:37:26,707] the interior would be absolutely
+- [01:37:26,707 - 01:37:28,717] identical to what it would be
+- [01:37:28,717 - 01:37:31,277] if there was no gravitating material there at all.
+- [01:37:31,917 - 01:37:32,857] On the other hand,
+- [01:37:32,857 - 01:37:33,477] on the outside,
+- [01:37:34,437 - 01:37:37,817] you would have a field which would be absolutely identical
+- [01:37:37,817 - 01:37:39,497] to what happens at the center.
+- [01:37:39,817 - 01:37:40,317] Now,
+- [01:37:40,317 - 01:37:41,637] there is an analog of this
+- [01:37:41,637 - 01:37:42,957] in the general theory of relativity.
+- [01:37:43,437 - 01:37:44,477] We'll get to it.
+- [01:37:46,437 - 01:37:46,937] Uh,
+- [01:37:46,937 - 01:37:49,317] basically what it says is the field of anything,
+- [01:37:49,617 - 01:37:51,857] as long as it's spherically symmetric on the outside,
+- [01:37:52,037 - 01:37:53,917] looks identical to the field of a black hole.
+- [01:37:53,937 - 01:37:54,937] Uh,
+- [01:37:54,937 - 01:37:57,857] but,
+- [01:37:57,857 - 01:37:58,177] uh,
+- [01:37:58,177 - 01:38:00,257] I think we're finished for tonight.
+- [01:38:01,657 - 01:38:04,317] Go over divergence and all those,
+- [01:38:04,317 - 01:38:04,677] uh,
+- [01:38:04,677 - 01:38:05,917] Gauss's theorem.
+- [01:38:06,057 - 01:38:07,077] Gauss's theorem is central.
+- [01:38:08,477 - 01:38:10,817] There would be no gravity without Gauss's theorem.
+- [01:38:19,437 - 01:38:22,797] The preceding program is copyrighted by Stanford University.
+- [01:38:22,797 - 01:38:25,877] Please visit us at stanford.edu.
