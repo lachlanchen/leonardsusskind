@@ -1,0 +1,10392 @@
+1
+00:00:06,959 --> 00:00:09,780
+This program is brought to you by Stanford University.
+
+2
+00:00:10,200 --> 00:00:12,720
+Please visit us at stanford.edu.
+
+3
+00:00:14,960 --> 00:00:16,260
+Tonight I want to,
+
+4
+00:00:16,260 --> 00:00:17,100
+oh,
+
+5
+00:00:17,100 --> 00:00:17,460
+thank you.
+
+6
+00:00:19,000 --> 00:00:21,630
+I want to begin studying how
+
+7
+00:00:21,630 --> 00:00:24,260
+things change with time in quantum mechanics.
+
+8
+00:00:24,440 --> 00:00:25,380
+We started a little bit.
+
+9
+00:00:25,380 --> 00:00:29,400
+But let me just very quickly remind you very,
+
+10
+00:00:29,400 --> 00:00:31,780
+very quickly again how they
+
+11
+00:00:31,780 --> 00:00:34,160
+change in time in classical physics.
+
+12
+00:00:34,920 --> 00:00:38,150
+We've discussed over and over and over how they change
+
+13
+00:00:38,150 --> 00:00:41,380
+in time for a discrete system like a coin toss,
+
+14
+00:00:41,879 --> 00:00:42,360
+up,
+
+15
+00:00:42,360 --> 00:00:42,720
+down,
+
+16
+00:00:42,720 --> 00:00:42,900
+up,
+
+17
+00:00:42,900 --> 00:00:43,180
+down,
+
+18
+00:00:43,180 --> 00:00:43,340
+up,
+
+19
+00:00:43,340 --> 00:00:43,640
+down,
+
+20
+00:00:43,640 --> 00:00:44,220
+or heads,
+
+21
+00:00:44,220 --> 00:00:44,500
+tails,
+
+22
+00:00:44,500 --> 00:00:44,760
+heads,
+
+23
+00:00:44,760 --> 00:00:45,060
+tails,
+
+24
+00:00:45,060 --> 00:00:45,260
+heads,
+
+25
+00:00:45,260 --> 00:00:45,540
+tails,
+
+26
+00:00:45,540 --> 00:00:46,360
+that sort of thing.
+
+27
+00:00:50,780 --> 00:00:53,580
+Always you have to postulate a law of change,
+
+28
+00:00:53,580 --> 00:00:54,820
+a law of evolution.
+
+29
+00:00:55,640 --> 00:01:00,009
+And that corresponds to a set of arrows which
+
+30
+00:01:00,009 --> 00:01:04,379
+tell you where to move next and so forth.
+
+31
+00:01:05,540 --> 00:01:07,880
+Notice that if a system is discrete,
+
+32
+00:01:07,880 --> 00:01:10,520
+if it only has a finite number of
+
+33
+00:01:10,520 --> 00:01:13,160
+states or a finite number of independent states,
+
+34
+00:01:13,880 --> 00:01:17,380
+then classically the only meaning you can make of
+
+35
+00:01:17,380 --> 00:01:20,880
+its evolution would have to be with discrete time intervals
+
+36
+00:01:21,800 --> 00:01:24,580
+where you would sample the system.
+
+37
+00:01:25,380 --> 00:01:27,870
+Only in discrete intervals because there's no
+
+38
+00:01:27,870 --> 00:01:30,360
+continuous way to go from one to another.
+
+39
+00:01:30,560 --> 00:01:31,040
+Heads,
+
+40
+00:01:31,040 --> 00:01:31,300
+tails,
+
+41
+00:01:31,300 --> 00:01:31,540
+heads,
+
+42
+00:01:31,540 --> 00:01:31,860
+tails.
+
+43
+00:01:32,460 --> 00:01:32,980
+Okay.
+
+44
+00:01:33,220 --> 00:01:33,740
+Well,
+
+45
+00:01:33,740 --> 00:01:37,740
+certainly classical physics allows continuous time.
+
+46
+00:01:38,280 --> 00:01:39,760
+But in order to have it,
+
+47
+00:01:39,760 --> 00:01:42,380
+we have to go to the Hamiltonian quantum mechanics,
+
+48
+00:01:42,380 --> 00:01:43,060
+or sorry,
+
+49
+00:01:43,060 --> 00:01:43,700
+excuse me,
+
+50
+00:01:43,720 --> 00:01:47,000
+the classical mechanics of continuous systems.
+
+51
+00:01:47,200 --> 00:01:48,520
+Continuous systems means,
+
+52
+00:01:48,520 --> 00:01:49,160
+for example,
+
+53
+00:01:49,160 --> 00:01:51,940
+particles which can be anywhere on an axis
+
+54
+00:01:52,900 --> 00:01:55,360
+so that the position is continuous.
+
+55
+00:01:55,380 --> 00:01:58,380
+The momentum is continuous and so forth.
+
+56
+00:01:58,660 --> 00:01:59,540
+But still,
+
+57
+00:01:59,540 --> 00:02:02,740
+the classical rules of evolution are predictive.
+
+58
+00:02:03,440 --> 00:02:05,780
+And instead of being hops
+
+59
+00:02:05,780 --> 00:02:08,120
+from one discrete state to another,
+
+60
+00:02:08,120 --> 00:02:10,100
+they become flows.
+
+61
+00:02:10,479 --> 00:02:12,000
+Flows in phase space.
+
+62
+00:02:12,360 --> 00:02:12,560
+Now,
+
+63
+00:02:12,560 --> 00:02:16,880
+if you took my class in classical mechanics,
+
+64
+00:02:16,880 --> 00:02:18,000
+you'll remember what I'm saying.
+
+65
+00:02:18,120 --> 00:02:19,480
+If you didn't and you don't know what I'm saying,
+
+66
+00:02:19,480 --> 00:02:20,640
+it's not going to be terribly important.
+
+67
+00:02:21,100 --> 00:02:22,850
+But I did want to connect
+
+68
+00:02:22,850 --> 00:02:24,600
+with classical mechanics a little bit.
+
+69
+00:02:25,380 --> 00:02:25,880
+If we have,
+
+70
+00:02:25,880 --> 00:02:26,320
+for example,
+
+71
+00:02:26,320 --> 00:02:27,420
+a particle on a line,
+
+72
+00:02:27,420 --> 00:02:31,160
+a particle on a line is characterized by a position,
+
+73
+00:02:31,160 --> 00:02:31,660
+x,
+
+74
+00:02:32,740 --> 00:02:34,580
+and either a velocity or,
+
+75
+00:02:34,580 --> 00:02:34,980
+better yet,
+
+76
+00:02:34,980 --> 00:02:35,640
+a momentum,
+
+77
+00:02:35,640 --> 00:02:36,780
+p.
+
+78
+00:02:38,000 --> 00:02:39,800
+And so that at every instant of time,
+
+79
+00:02:39,800 --> 00:02:41,260
+it has a position and a momentum,
+
+80
+00:02:41,480 --> 00:02:42,770
+something that we know is not
+
+81
+00:02:42,770 --> 00:02:44,060
+going to be right in quantum mechanics.
+
+82
+00:02:44,960 --> 00:02:48,320
+But we can describe the evolution
+
+83
+00:02:48,320 --> 00:02:51,680
+in terms of a flow on,
+
+84
+00:02:51,680 --> 00:02:52,880
+this is called phase space,
+
+85
+00:02:52,880 --> 00:02:54,600
+a flow on the phase space,
+
+86
+00:02:55,380 --> 00:02:57,190
+which is simply another way of saying that
+
+87
+00:02:57,190 --> 00:02:59,000
+if you start the system at any point,
+
+88
+00:02:59,180 --> 00:03:01,780
+a position and a velocity or a momentum,
+
+89
+00:03:01,780 --> 00:03:04,010
+it will move in general and it
+
+90
+00:03:04,010 --> 00:03:06,240
+will move along one of these flow lines.
+
+91
+00:03:07,540 --> 00:03:11,460
+The flow lines are described by a Hamiltonian.
+
+92
+00:03:11,640 --> 00:03:12,180
+Now,
+
+93
+00:03:12,180 --> 00:03:15,360
+I just want to very briefly review classical mechanics,
+
+94
+00:03:15,360 --> 00:03:16,400
+extremely briefly.
+
+95
+00:03:18,060 --> 00:03:22,820
+The law of evolution of a classical mechanical system
+
+96
+00:03:23,460 --> 00:03:25,360
+is through the object of the flow.
+
+97
+00:03:25,380 --> 00:03:26,880
+that's called the Hamiltonian.
+
+98
+00:03:26,880 --> 00:03:31,280
+And the Hamiltonian is a function of positions
+
+99
+00:03:31,280 --> 00:03:32,300
+and momenta,
+
+100
+00:03:32,300 --> 00:03:35,700
+x's and p's.
+
+101
+00:03:35,700 --> 00:03:38,380
+However many x's and p's there are,
+
+102
+00:03:38,380 --> 00:03:39,740
+there's a p for every x
+
+103
+00:03:39,740 --> 00:03:40,840
+and an x for every p.
+
+104
+00:03:40,840 --> 00:03:44,480
+If there are seven coordinates,
+
+105
+00:03:44,480 --> 00:03:45,300
+seven particles,
+
+106
+00:03:45,300 --> 00:03:45,800
+and there's
+
+107
+00:03:45,800 --> 00:03:47,500
+seven times three coordinates,
+
+108
+00:03:47,500 --> 00:03:50,060
+seven times three momenta,
+
+109
+00:03:50,060 --> 00:03:50,900
+but let's just write
+
+110
+00:03:50,900 --> 00:03:51,880
+it as one coordinate,
+
+111
+00:03:51,880 --> 00:03:52,920
+one momenta.
+
+112
+00:03:52,920 --> 00:03:54,000
+Alright,
+
+113
+00:03:54,000 --> 00:03:55,620
+that Hamiltonian determines,
+
+114
+00:03:55,620 --> 00:03:57,160
+it
+
+115
+00:03:57,160 --> 00:03:57,780
+is the energy,
+
+116
+00:03:57,780 --> 00:04:00,130
+it is the energy of the
+
+117
+00:04:00,130 --> 00:04:02,480
+system as a function of positions and
+
+118
+00:04:02,480 --> 00:04:03,080
+momenta.
+
+119
+00:04:03,080 --> 00:04:04,760
+As a function of positions,
+
+120
+00:04:04,760 --> 00:04:06,780
+typically it would give you the
+
+121
+00:04:06,780 --> 00:04:07,520
+potential energy.
+
+122
+00:04:07,520 --> 00:04:09,460
+As a function of momenta,
+
+123
+00:04:09,460 --> 00:04:10,360
+it would give you the kinetic
+
+124
+00:04:10,360 --> 00:04:10,760
+energy.
+
+125
+00:04:10,760 --> 00:04:11,940
+So a simple example,
+
+126
+00:04:11,940 --> 00:04:12,500
+for example,
+
+127
+00:04:12,500 --> 00:04:15,340
+would be p squared over 2m for the
+
+128
+00:04:15,340 --> 00:04:16,060
+kinetic energy,
+
+129
+00:04:16,060 --> 00:04:20,000
+plus some potential energy as a function of position,
+
+130
+00:04:20,000 --> 00:04:20,360
+that
+
+131
+00:04:20,360 --> 00:04:20,880
+would be an example.
+
+132
+00:04:22,099 --> 00:04:25,460
+The systems have Hamiltonians.
+
+133
+00:04:25,460 --> 00:04:27,820
+The Hamiltonians represent the energy,
+
+134
+00:04:27,820 --> 00:04:28,600
+but
+
+135
+00:04:28,600 --> 00:04:31,040
+they're written in terms of positions and momenta.
+
+136
+00:04:31,040 --> 00:04:33,300
+But the law of evolution,
+
+137
+00:04:33,660 --> 00:04:35,880
+which is a deterministic law of evolution,
+
+138
+00:04:35,880 --> 00:04:37,980
+is a law which tells you
+
+139
+00:04:37,980 --> 00:04:39,580
+wherever you start,
+
+140
+00:04:39,580 --> 00:04:41,500
+it tells you where you'll
+
+141
+00:04:41,500 --> 00:04:43,420
+be after a very brief interval.
+
+142
+00:04:43,420 --> 00:04:44,640
+So
+
+143
+00:04:44,640 --> 00:04:45,840
+it's just described,
+
+144
+00:04:45,840 --> 00:04:49,080
+instead of a bunch of points with arrows
+
+145
+00:04:49,080 --> 00:04:50,460
+connecting them in some way,
+
+146
+00:04:50,460 --> 00:04:53,080
+it becomes a set of flow
+
+147
+00:04:53,080 --> 00:04:55,700
+lines which tells you wherever you begin,
+
+148
+00:04:55,700 --> 00:04:56,640
+where you
+
+149
+00:04:56,640 --> 00:04:57,140
+go next.
+
+150
+00:04:57,140 --> 00:04:58,060
+Alright,
+
+151
+00:04:58,060 --> 00:04:58,580
+the equations,
+
+152
+00:04:58,580 --> 00:05:00,960
+the mathematical equations are differential
+
+153
+00:05:00,960 --> 00:05:01,500
+equations.
+
+154
+00:05:01,500 --> 00:05:03,660
+The differential equations,
+
+155
+00:05:03,660 --> 00:05:07,520
+which are written in terms of the
+
+156
+00:05:07,520 --> 00:05:08,120
+Hamiltonian,
+
+157
+00:05:08,120 --> 00:05:09,420
+I'm just going to write them down for you,
+
+158
+00:05:09,420 --> 00:05:10,260
+Hamilton's equations.
+
+159
+00:05:10,260 --> 00:05:11,760
+Hamilton's
+
+160
+00:05:11,760 --> 00:05:14,910
+equations are that the derivative of
+
+161
+00:05:14,910 --> 00:05:18,060
+the Hamiltonian with respect to momentum,
+
+162
+00:05:18,060 --> 00:05:20,260
+let's just do it here,
+
+163
+00:05:21,300 --> 00:05:23,330
+derivative of the Hamiltonian with respect to momentum
+
+164
+00:05:23,330 --> 00:05:25,360
+in this case would just be p over m.
+
+165
+00:05:25,900 --> 00:05:28,060
+p over m is velocity.
+
+166
+00:05:28,060 --> 00:05:32,380
+Momentum is mass times velocity.
+
+167
+00:05:32,380 --> 00:05:34,420
+So p over m is just
+
+168
+00:05:34,420 --> 00:05:34,900
+velocity,
+
+169
+00:05:34,900 --> 00:05:38,200
+and velocity is just the time derivative of x.
+
+170
+00:05:38,200 --> 00:05:39,520
+That's x dot.
+
+171
+00:05:39,520 --> 00:05:41,220
+And the other,
+
+172
+00:05:41,220 --> 00:05:42,120
+the other
+
+173
+00:05:42,120 --> 00:05:44,260
+equation is basically f equals ma,
+
+174
+00:05:44,260 --> 00:05:46,920
+the derivative of the Hamiltonian with
+
+175
+00:05:46,920 --> 00:05:47,720
+respect to position.
+
+176
+00:05:53,880 --> 00:05:56,620
+Gives you minus the force,
+
+177
+00:05:56,620 --> 00:05:58,130
+that's the derivative of the
+
+178
+00:05:58,130 --> 00:05:59,640
+potential energy with respect to position,
+
+179
+00:05:59,760 --> 00:06:00,700
+minus the force,
+
+180
+00:06:00,700 --> 00:06:02,840
+and that's the time rate of change,
+
+181
+00:06:02,840 --> 00:06:04,320
+or minus the time rate of change
+
+182
+00:06:04,320 --> 00:06:04,900
+of the momentum.
+
+183
+00:06:04,900 --> 00:06:08,140
+Those are Hamilton's equations.
+
+184
+00:06:08,140 --> 00:06:10,420
+Now,
+
+185
+00:06:10,420 --> 00:06:13,160
+supposing you have some function,
+
+186
+00:06:13,160 --> 00:06:14,120
+let's
+
+187
+00:06:14,120 --> 00:06:14,820
+call it f,
+
+188
+00:06:14,820 --> 00:06:17,660
+an observable function of position and momentum.
+
+189
+00:06:17,660 --> 00:06:20,020
+I call it an observable because
+
+190
+00:06:20,020 --> 00:06:21,140
+I mean that,
+
+191
+00:06:21,140 --> 00:06:22,620
+that you can make a
+
+192
+00:06:22,620 --> 00:06:24,100
+measurement of it p and x,
+
+193
+00:06:24,100 --> 00:06:26,080
+the x squared plus p squared,
+
+194
+00:06:26,260 --> 00:06:27,280
+or whatever it happens to be,
+
+195
+00:06:27,280 --> 00:06:29,600
+and I want to compute its time derivative,
+
+196
+00:06:29,600 --> 00:06:30,820
+all right?
+
+197
+00:06:30,820 --> 00:06:31,480
+Its
+
+198
+00:06:31,480 --> 00:06:35,690
+time derivative is given by the
+
+199
+00:06:35,690 --> 00:06:39,900
+derivative of f with respect to p,
+
+200
+00:06:40,580 --> 00:06:42,380
+times the time derivative of p,
+
+201
+00:06:42,380 --> 00:06:46,190
+plus the derivative of f with respect
+
+202
+00:06:46,190 --> 00:06:50,000
+to x times the time derivative of x,
+
+203
+00:06:50,020 --> 00:06:52,540
+but we have a formula for p dot.
+
+204
+00:06:52,540 --> 00:06:54,900
+Let's go first to x dot.
+
+205
+00:06:54,900 --> 00:06:56,420
+We have a formula for x dot.
+
+206
+00:06:56,500 --> 00:06:57,780
+It's dh by dp.
+
+207
+00:06:57,780 --> 00:07:03,300
+So we can write over here dh by dp.
+
+208
+00:07:03,300 --> 00:07:11,480
+And likewise over here for p dot,
+
+209
+00:07:11,480 --> 00:07:12,000
+oh boy.
+
+210
+00:07:17,960 --> 00:07:20,220
+I'm taking some of this home if you don't...
+
+211
+00:07:21,880 --> 00:07:22,400
+Alright,
+
+212
+00:07:22,400 --> 00:07:24,240
+and p dot is dh by dx.
+
+213
+00:07:24,240 --> 00:07:29,640
+This combination,
+
+214
+00:07:29,640 --> 00:07:34,400
+given two functions h and f,
+
+215
+00:07:34,400 --> 00:07:36,120
+one of them happens
+
+216
+00:07:36,120 --> 00:07:37,460
+to be the Hamiltonian here,
+
+217
+00:07:37,460 --> 00:07:41,340
+one of them happens to be some arbitrary observable,
+
+218
+00:07:41,360 --> 00:07:41,980
+and one of them happens to be the Hamiltonian here,
+
+219
+00:07:41,980 --> 00:07:41,980
+one of them happens to be some arbitrary observable,
+
+220
+00:07:42,000 --> 00:07:44,900
+but given two functions of x and p,
+
+221
+00:07:44,900 --> 00:07:47,960
+this combination is called the Poisson bracket.
+
+222
+00:07:48,620 --> 00:07:50,260
+You don't have to remember it,
+
+223
+00:07:50,260 --> 00:07:52,180
+I just want you to remember
+
+224
+00:07:52,180 --> 00:07:54,100
+that the time evolution of things,
+
+225
+00:07:54,300 --> 00:07:55,040
+of anything,
+
+226
+00:07:55,040 --> 00:07:59,340
+is gotten by some operation that involves the Hamiltonian.
+
+227
+00:07:59,520 --> 00:08:02,900
+This is called the Poisson bracket of h.
+
+228
+00:08:02,900 --> 00:08:06,860
+This is the Poisson bracket of f with h,
+
+229
+00:08:07,160 --> 00:08:11,060
+and we would write this the Poisson bracket of
+
+230
+00:08:11,060 --> 00:08:11,520
+h.
+
+231
+00:08:12,420 --> 00:08:14,860
+h of f with h.
+
+232
+00:08:16,640 --> 00:08:19,760
+And the definition of the Poisson bracket
+
+233
+00:08:19,760 --> 00:08:22,880
+of two objects is just this particular combination,
+
+234
+00:08:23,200 --> 00:08:23,940
+the,
+
+235
+00:08:23,940 --> 00:08:24,800
+where is it,
+
+236
+00:08:24,800 --> 00:08:26,860
+the df by dx,
+
+237
+00:08:26,860 --> 00:08:28,300
+the h by dp,
+
+238
+00:08:28,300 --> 00:08:29,060
+and so forth.
+
+239
+00:08:29,060 --> 00:08:29,960
+You can read it yourself,
+
+240
+00:08:29,960 --> 00:08:31,540
+given any two things.
+
+241
+00:08:31,680 --> 00:08:34,100
+This is the basic structure of classical mechanics.
+
+242
+00:08:34,100 --> 00:08:37,600
+The Hamiltonian determines a flow.
+
+243
+00:08:37,600 --> 00:08:40,280
+It tells you how x and p change.
+
+244
+00:08:40,940 --> 00:08:41,500
+x and p change.
+
+245
+00:08:41,500 --> 00:08:42,280
+with time,
+
+246
+00:08:42,280 --> 00:08:43,740
+so it determines a flow,
+
+247
+00:08:43,740 --> 00:08:46,340
+and if I have any interesting quantity,
+
+248
+00:08:46,620 --> 00:08:48,510
+I can determine how it
+
+249
+00:08:48,510 --> 00:08:50,400
+changes with time along the flow.
+
+250
+00:08:51,660 --> 00:08:54,140
+I can tell you how it changes
+
+251
+00:08:54,140 --> 00:08:56,620
+with time along the flow by Poisson brackets.
+
+252
+00:08:57,200 --> 00:08:59,220
+Now it's not terribly important to
+
+253
+00:08:59,220 --> 00:09:01,240
+know very much about Poisson brackets.
+
+254
+00:09:01,820 --> 00:09:04,490
+The main point is the Hamiltonian
+
+255
+00:09:04,490 --> 00:09:07,160
+is the generator of time evolution.
+
+256
+00:09:07,160 --> 00:09:08,740
+Those are the words.
+
+257
+00:09:08,740 --> 00:09:12,520
+The Hamiltonian generates the time evolution of a system.
+
+258
+00:09:13,020 --> 00:09:14,940
+The same is true in quantum mechanics,
+
+259
+00:09:14,940 --> 00:09:16,660
+and it's much more intuitive.
+
+260
+00:09:17,640 --> 00:09:19,560
+This to me was always very obscure.
+
+261
+00:09:19,560 --> 00:09:21,480
+I mean,
+
+262
+00:09:21,480 --> 00:09:21,940
+I learned it,
+
+263
+00:09:21,940 --> 00:09:22,520
+I understood it,
+
+264
+00:09:22,520 --> 00:09:23,380
+I knew how to use it.
+
+265
+00:09:25,080 --> 00:09:26,700
+I even knew where it came from,
+
+266
+00:09:26,700 --> 00:09:28,930
+but it always seemed like
+
+267
+00:09:28,930 --> 00:09:31,160
+too complicated an expression here.
+
+268
+00:09:31,360 --> 00:09:33,770
+I always thought it was just
+
+269
+00:09:33,770 --> 00:09:36,180
+something simple and must underlie it.
+
+270
+00:09:36,360 --> 00:09:37,140
+And something simple is not.
+
+271
+00:09:37,160 --> 00:09:38,440
+Something simpler does underlie it.
+
+272
+00:09:38,440 --> 00:09:39,940
+What underlies it is quantum mechanics.
+
+273
+00:09:41,880 --> 00:09:47,110
+Quantum mechanics is in many respects simpler
+
+274
+00:09:47,110 --> 00:09:52,340
+and in many ways mathematically easier to understand.
+
+275
+00:09:53,540 --> 00:09:54,360
+All right,
+
+276
+00:09:54,360 --> 00:09:56,160
+so how do systems evolve with time?
+
+277
+00:09:56,380 --> 00:09:59,600
+What's the basic rule for the evolution of a system?
+
+278
+00:09:59,860 --> 00:10:06,980
+The basic rule is that relationships between
+
+279
+00:10:06,980 --> 00:10:07,140
+relationships between
+
+280
+00:10:07,160 --> 00:10:09,160
+states don't change with time.
+
+281
+00:10:11,400 --> 00:10:17,080
+Let's suppose that some initial state of a system evolves.
+
+282
+00:10:17,420 --> 00:10:19,060
+Let the arrow stand for
+
+283
+00:10:19,060 --> 00:10:20,700
+evolves over a period of time.
+
+284
+00:10:21,060 --> 00:10:22,820
+We could put a T here
+
+285
+00:10:22,820 --> 00:10:24,580
+for indicating a period of time.
+
+286
+00:10:25,520 --> 00:10:28,080
+Evolves over a period of time to
+
+287
+00:10:28,080 --> 00:10:30,640
+something that I'll call U times A.
+
+288
+00:10:30,980 --> 00:10:32,200
+And of course U,
+
+289
+00:10:32,200 --> 00:10:34,560
+I intend to mean a unitary operator.
+
+290
+00:10:36,839 --> 00:10:37,560
+Unitary,
+
+291
+00:10:37,560 --> 00:10:39,820
+we discussed last time what it meant.
+
+292
+00:10:40,060 --> 00:10:42,020
+Let me just remind you what unitary means.
+
+293
+00:10:42,380 --> 00:10:46,260
+It means that it times its
+
+294
+00:10:46,260 --> 00:10:50,140
+Hermitian conjugate is the unit operator.
+
+295
+00:10:51,260 --> 00:10:54,240
+Or that its Hermitian conjugate is its inverse.
+
+296
+00:10:55,080 --> 00:10:57,480
+That's the definition of a unitary operator.
+
+297
+00:10:58,040 --> 00:10:58,820
+All right,
+
+298
+00:10:58,820 --> 00:11:03,560
+so let's suppose that state A evolves under time evolution.
+
+299
+00:11:04,160 --> 00:11:05,780
+To U times A.
+
+300
+00:11:05,860 --> 00:11:08,980
+And of course we should indicate here this U
+
+301
+00:11:08,980 --> 00:11:12,100
+should be parametrized by with how much time evolved.
+
+302
+00:11:13,000 --> 00:11:15,080
+T is the amount of time which evolved.
+
+303
+00:11:16,800 --> 00:11:20,480
+Some operation or some operator which acts on the state,
+
+304
+00:11:20,480 --> 00:11:21,340
+initial state,
+
+305
+00:11:21,520 --> 00:11:23,700
+to give the state after time T.
+
+306
+00:11:23,940 --> 00:11:25,480
+So here it is after time T.
+
+307
+00:11:26,120 --> 00:11:28,380
+Let's suppose the same thing is true
+
+308
+00:11:28,380 --> 00:11:30,640
+that if we started with state B.
+
+309
+00:11:32,180 --> 00:11:34,180
+After the same evolution,
+
+310
+00:11:34,180 --> 00:11:37,000
+of course we would just write the same thing.
+
+311
+00:11:37,100 --> 00:11:38,420
+Not quite the same thing.
+
+312
+00:11:39,000 --> 00:11:41,460
+We would write the action of,
+
+313
+00:11:41,460 --> 00:11:43,460
+we can call this the evolution operator.
+
+314
+00:11:43,820 --> 00:11:44,640
+Let's give it a name.
+
+315
+00:11:44,900 --> 00:11:47,420
+The evolution operator acts on
+
+316
+00:11:47,420 --> 00:11:49,940
+A to give whatever A becomes.
+
+317
+00:11:50,280 --> 00:11:52,840
+It acts on B to give whatever B becomes.
+
+318
+00:11:53,840 --> 00:11:54,500
+All right,
+
+319
+00:11:54,500 --> 00:11:56,150
+now let me write this second
+
+320
+00:11:56,150 --> 00:11:57,800
+equation in terms of bra vectors.
+
+321
+00:11:58,300 --> 00:12:00,620
+In terms of bra vectors it becomes B.
+
+322
+00:12:00,640 --> 00:12:02,480
+B evolves.
+
+323
+00:12:03,320 --> 00:12:05,280
+Now we have to complex conjugate.
+
+324
+00:12:05,680 --> 00:12:09,980
+B is the conjugate or the bra vector.
+
+325
+00:12:10,360 --> 00:12:12,960
+In order to conjugate,
+
+326
+00:12:12,960 --> 00:12:16,480
+we must do something with this U.
+
+327
+00:12:16,840 --> 00:12:17,520
+Namely,
+
+328
+00:12:17,520 --> 00:12:19,860
+we have to replace it by its Hermitian conjugate.
+
+329
+00:12:21,820 --> 00:12:22,820
+If you like,
+
+330
+00:12:22,820 --> 00:12:27,340
+bra vectors are sort of complex conjugates of ket vectors.
+
+331
+00:12:27,560 --> 00:12:29,090
+And Hermitian conjugates of operators
+
+332
+00:12:29,090 --> 00:12:30,620
+are complex conjugates of ket vectors.
+
+333
+00:12:30,620 --> 00:12:31,980
+And Hermitian conjugates of the original operators.
+
+334
+00:12:32,160 --> 00:12:35,340
+So this is the operation of conjugation.
+
+335
+00:12:36,300 --> 00:12:37,000
+All right,
+
+336
+00:12:37,000 --> 00:12:38,690
+well what happens now to the
+
+337
+00:12:38,690 --> 00:12:40,380
+inner product of A with B?
+
+338
+00:12:40,740 --> 00:12:43,100
+We started with two possible states
+
+339
+00:12:43,100 --> 00:12:45,460
+which had some relationship between them.
+
+340
+00:12:45,640 --> 00:12:49,080
+The relationship simply is codified
+
+341
+00:12:49,080 --> 00:12:52,520
+by the inner product between them,
+
+342
+00:12:52,520 --> 00:12:53,720
+B with A.
+
+343
+00:12:54,880 --> 00:12:56,660
+If B is orthogonal to A,
+
+344
+00:12:56,660 --> 00:12:57,700
+they're surely different.
+
+345
+00:12:58,180 --> 00:13:00,140
+If B is parallel to A,
+
+346
+00:13:00,140 --> 00:13:00,600
+they're the same.
+
+347
+00:13:00,620 --> 00:13:01,180
+If B is the same state,
+
+348
+00:13:01,180 --> 00:13:04,100
+and if B and A overlap,
+
+349
+00:13:05,420 --> 00:13:09,130
+then anything which is certain in B has a certain probability
+
+350
+00:13:09,130 --> 00:13:12,840
+of occurring if you're in the state vector A and vice versa.
+
+351
+00:13:13,040 --> 00:13:14,200
+So this is the basic relationship,
+
+352
+00:13:14,200 --> 00:13:16,420
+mathematical relationship between states,
+
+353
+00:13:16,680 --> 00:13:18,980
+what the inner product between them is.
+
+354
+00:13:19,400 --> 00:13:20,760
+Let's see what happens to
+
+355
+00:13:20,760 --> 00:13:22,120
+it after a period of time.
+
+356
+00:13:22,540 --> 00:13:23,980
+After a period of time,
+
+357
+00:13:23,980 --> 00:13:27,060
+this goes to...
+
+358
+00:13:29,040 --> 00:13:30,520
+Let's have it come out over here.
+
+359
+00:13:30,960 --> 00:13:32,260
+After a period of time,
+
+360
+00:13:32,260 --> 00:13:32,920
+it goes to...
+
+361
+00:13:32,920 --> 00:13:33,580
+Now what happens to B?
+
+362
+00:13:34,000 --> 00:13:39,460
+B becomes U dagger times B.
+
+363
+00:13:39,840 --> 00:13:40,840
+That's what happens to B.
+
+364
+00:13:41,060 --> 00:13:44,100
+And A becomes U times A.
+
+365
+00:13:45,940 --> 00:13:48,400
+If we insist that the relationships
+
+366
+00:13:48,400 --> 00:13:50,860
+between vectors are preserved with time,
+
+367
+00:13:51,740 --> 00:13:53,680
+if you want to picture this in your head,
+
+368
+00:13:53,840 --> 00:13:56,280
+think of these vectors as evolving in time.
+
+369
+00:13:57,060 --> 00:13:58,680
+The state vectors evolve in time,
+
+370
+00:13:58,820 --> 00:14:01,480
+but keeping the angles between them fixed.
+
+371
+00:14:01,920 --> 00:14:02,560
+In other words,
+
+372
+00:14:02,560 --> 00:14:04,700
+the whole space of states sort of rotates.
+
+373
+00:14:04,860 --> 00:14:06,300
+That's the way you can think about it.
+
+374
+00:14:06,540 --> 00:14:08,910
+With all vectors and relationships
+
+375
+00:14:08,910 --> 00:14:11,280
+between vectors being kept fixed.
+
+376
+00:14:11,620 --> 00:14:12,840
+In that case,
+
+377
+00:14:12,840 --> 00:14:15,830
+that tells you that B A must equal B
+
+378
+00:14:15,830 --> 00:14:18,820
+U dagger U A for all A and B.
+
+379
+00:14:19,560 --> 00:14:20,520
+The implication,
+
+380
+00:14:20,520 --> 00:14:24,040
+the mathematical implication of that is that U is unitary,
+
+381
+00:14:25,160 --> 00:14:27,040
+that U dagger times B is equal to B.
+
+382
+00:14:27,040 --> 00:14:29,380
+The vector times U is just the unit operator.
+
+383
+00:14:30,840 --> 00:14:31,200
+Alright,
+
+384
+00:14:31,200 --> 00:14:34,830
+so that's the fundamental underlying principle of
+
+385
+00:14:34,830 --> 00:14:38,460
+time evolution of state vectors in quantum mechanics.
+
+386
+00:14:38,720 --> 00:14:41,560
+It's the governing principle that
+
+387
+00:14:41,560 --> 00:14:44,400
+things which are orthogonal stay orthogonal.
+
+388
+00:14:45,260 --> 00:14:46,440
+That's really it.
+
+389
+00:14:46,620 --> 00:14:47,380
+In fact,
+
+390
+00:14:47,380 --> 00:14:50,420
+that's enough to ensure all of this.
+
+391
+00:14:50,900 --> 00:14:53,200
+States which are orthogonal stay orthogonal.
+
+392
+00:14:57,040 --> 00:14:59,100
+Things which are fundamentally dissimilar,
+
+393
+00:14:59,240 --> 00:15:02,220
+so dissimilar that you can tell the difference
+
+394
+00:15:02,220 --> 00:15:05,200
+between them in a single experiment stay that way.
+
+395
+00:15:06,900 --> 00:15:07,420
+Good.
+
+396
+00:15:08,660 --> 00:15:09,180
+Alright,
+
+397
+00:15:09,180 --> 00:15:12,080
+now let's study this object U of t.
+
+398
+00:15:14,140 --> 00:15:15,860
+Let's write a more general equation.
+
+399
+00:15:16,140 --> 00:15:17,720
+Let's write an equation the following way.
+
+400
+00:15:17,800 --> 00:15:19,320
+Let's suppose we start at time t,
+
+401
+00:15:20,560 --> 00:15:22,540
+and we have at time t,
+
+402
+00:15:22,640 --> 00:15:24,640
+we have a system with
+
+403
+00:15:24,640 --> 00:15:26,640
+a state vector psi of t.
+
+404
+00:15:28,020 --> 00:15:29,960
+It could be a particle on a line,
+
+405
+00:15:30,140 --> 00:15:32,400
+it could be our friend the photon polarization,
+
+406
+00:15:33,080 --> 00:15:35,440
+but it's a state vector at time t.
+
+407
+00:15:37,800 --> 00:15:41,560
+t eventually becomes t plus t,
+
+408
+00:15:41,560 --> 00:15:42,840
+capital T.
+
+409
+00:15:43,400 --> 00:15:45,200
+The system has evolved through
+
+410
+00:15:45,200 --> 00:15:47,000
+an amount of time capital T,
+
+411
+00:15:47,540 --> 00:15:48,540
+so it follows,
+
+412
+00:15:48,540 --> 00:15:50,030
+it's just a special application
+
+413
+00:15:50,030 --> 00:15:51,520
+of what I've written up there,
+
+414
+00:15:51,800 --> 00:15:54,540
+that psi of t evolves to,
+
+415
+00:15:54,540 --> 00:15:55,420
+oh,
+
+416
+00:15:55,420 --> 00:15:55,820
+let's,
+
+417
+00:15:55,820 --> 00:15:56,200
+yeah,
+
+418
+00:15:56,200 --> 00:15:57,680
+let me write it this way.
+
+419
+00:15:57,860 --> 00:15:58,240
+Yeah,
+
+420
+00:15:58,240 --> 00:15:59,780
+let me write it a special way.
+
+421
+00:16:02,540 --> 00:16:04,380
+After a time capital T,
+
+422
+00:16:05,420 --> 00:16:07,780
+the system has evolved to
+
+423
+00:16:07,780 --> 00:16:10,140
+psi of t plus capital T.
+
+424
+00:16:11,080 --> 00:16:14,260
+New time is t plus capital T,
+
+425
+00:16:14,380 --> 00:16:16,560
+amount of time capital T has evolved,
+
+426
+00:16:17,140 --> 00:16:17,960
+and that,
+
+427
+00:16:17,960 --> 00:16:19,840
+according to what we've written up there,
+
+428
+00:16:20,040 --> 00:16:22,900
+must just be U of capital T,
+
+429
+00:16:23,959 --> 00:16:26,460
+times psi of small t.
+
+430
+00:16:28,220 --> 00:16:29,600
+All this says is if we
+
+431
+00:16:29,600 --> 00:16:30,980
+want to push the system ahead
+
+432
+00:16:30,980 --> 00:16:33,180
+by an amount of time capital T,
+
+433
+00:16:33,480 --> 00:16:36,180
+we do it by applying the
+
+434
+00:16:36,180 --> 00:16:38,880
+evolution operator U of capital T.
+
+435
+00:16:41,020 --> 00:16:42,460
+So that's the first fact,
+
+436
+00:16:42,460 --> 00:16:43,260
+that's the first thing.
+
+437
+00:16:43,840 --> 00:16:46,760
+Time evolution through a certain amount of time
+
+438
+00:16:46,760 --> 00:16:49,960
+is governed by a unitary operator.
+
+439
+00:16:51,260 --> 00:16:51,860
+Next,
+
+440
+00:16:51,860 --> 00:16:54,100
+let's see what we can learn about this.
+
+441
+00:16:54,720 --> 00:16:56,880
+What happens if capital T is zero?
+
+442
+00:16:57,740 --> 00:16:59,340
+If capital T is zero,
+
+443
+00:16:59,340 --> 00:17:00,780
+that's no evolution at all.
+
+444
+00:17:01,560 --> 00:17:03,300
+If there's no evolution at all,
+
+445
+00:17:03,540 --> 00:17:05,460
+then U must be the unit operator.
+
+446
+00:17:05,880 --> 00:17:06,500
+In other words,
+
+447
+00:17:06,500 --> 00:17:07,680
+if capital T was zero,
+
+448
+00:17:09,040 --> 00:17:11,339
+then psi of t plus capital T had
+
+449
+00:17:11,339 --> 00:17:13,640
+better just be psi of the original t.
+
+450
+00:17:14,000 --> 00:17:17,380
+The implication of that is U of zero,
+
+451
+00:17:18,260 --> 00:17:19,900
+no evolution at all,
+
+452
+00:17:19,980 --> 00:17:21,040
+is just a unit.
+
+453
+00:17:22,160 --> 00:17:23,460
+The identity operator.
+
+454
+00:17:23,800 --> 00:17:24,359
+It does nothing.
+
+455
+00:17:24,540 --> 00:17:26,079
+It leaves the state unchanged.
+
+456
+00:17:27,180 --> 00:17:27,780
+Okay?
+
+457
+00:17:28,780 --> 00:17:29,500
+All right,
+
+458
+00:17:29,500 --> 00:17:30,820
+so that's the first fact.
+
+459
+00:17:31,220 --> 00:17:31,780
+Now,
+
+460
+00:17:31,780 --> 00:17:36,400
+supposing one way of finding out how systems evolve
+
+461
+00:17:36,400 --> 00:17:39,320
+is to let them evolve through very,
+
+462
+00:17:39,320 --> 00:17:40,640
+very short time intervals.
+
+463
+00:17:41,580 --> 00:17:43,530
+If we want to get from time
+
+464
+00:17:43,530 --> 00:17:45,480
+t to time t plus delta t,
+
+465
+00:17:45,680 --> 00:17:47,560
+or time t plus capital T,
+
+466
+00:17:47,780 --> 00:17:49,880
+we can break up that capital T
+
+467
+00:17:49,880 --> 00:17:51,480
+into a lot of little time intervals,
+
+468
+00:17:51,860 --> 00:17:54,520
+and evolve it over one small time interval,
+
+469
+00:17:54,640 --> 00:17:55,920
+then another small time interval,
+
+470
+00:17:56,040 --> 00:17:57,320
+then another small time interval.
+
+471
+00:17:57,500 --> 00:18:00,160
+So an interesting question then is,
+
+472
+00:18:00,360 --> 00:18:04,180
+what is U of a very small time interval?
+
+473
+00:18:04,800 --> 00:18:06,260
+If we know what U is
+
+474
+00:18:06,260 --> 00:18:07,720
+for a very small time interval,
+
+475
+00:18:07,820 --> 00:18:09,140
+we can compound it together
+
+476
+00:18:09,820 --> 00:18:11,670
+and find out how a system
+
+477
+00:18:11,670 --> 00:18:13,520
+evolves over a finite time interval.
+
+478
+00:18:14,000 --> 00:18:16,900
+So let's say U of epsilon.
+
+479
+00:18:17,520 --> 00:18:20,440
+Epsilon here means a very small time.
+
+480
+00:18:21,400 --> 00:18:21,920
+Technically,
+
+481
+00:18:21,920 --> 00:18:23,440
+it's a small enough time
+
+482
+00:18:23,440 --> 00:18:26,260
+that I can ignore things quadratic in epsilon.
+
+483
+00:18:26,660 --> 00:18:28,780
+I can work the first order in epsilon,
+
+484
+00:18:28,940 --> 00:18:30,220
+and that's what I'm going to do.
+
+485
+00:18:30,760 --> 00:18:32,300
+The first order in epsilon,
+
+486
+00:18:32,840 --> 00:18:35,040
+what can I say about U of epsilon
+
+487
+00:18:35,040 --> 00:18:36,480
+when epsilon is small?
+
+488
+00:18:36,960 --> 00:18:37,480
+Well,
+
+489
+00:18:37,480 --> 00:18:38,560
+the zeroth order,
+
+490
+00:18:38,740 --> 00:18:39,340
+in other words,
+
+491
+00:18:39,340 --> 00:18:40,240
+when epsilon is zero,
+
+492
+00:18:40,400 --> 00:18:41,840
+we should just write down one.
+
+493
+00:18:42,860 --> 00:18:46,020
+And then there's a small correction to that one.
+
+494
+00:18:46,340 --> 00:18:47,800
+If epsilon is small,
+
+495
+00:18:47,800 --> 00:18:48,800
+the correction is small.
+
+496
+00:18:49,260 --> 00:18:50,420
+So let's add one.
+
+497
+00:18:50,420 --> 00:18:53,160
+Let's write down epsilon times something.
+
+498
+00:18:54,900 --> 00:18:56,180
+Something which has,
+
+499
+00:18:58,060 --> 00:19:00,140
+which we could just call
+
+500
+00:19:00,140 --> 00:19:02,220
+it L or S for something.
+
+501
+00:19:02,520 --> 00:19:05,140
+I'm going to write it in a very peculiar way,
+
+502
+00:19:06,020 --> 00:19:10,460
+but the reason for it will become obvious later.
+
+503
+00:19:10,780 --> 00:19:12,880
+This is entirely a convention.
+
+504
+00:19:13,220 --> 00:19:14,600
+This is entirely a convention,
+
+505
+00:19:14,820 --> 00:19:16,220
+but I'm going to write it as,
+
+506
+00:19:16,220 --> 00:19:17,460
+I think,
+
+507
+00:19:17,460 --> 00:19:17,920
+minus.
+
+508
+00:19:18,080 --> 00:19:19,240
+Do I want a minus sign?
+
+509
+00:19:19,240 --> 00:19:19,480
+Yes.
+
+510
+00:19:19,480 --> 00:19:20,380
+I want a minus sign,
+
+511
+00:19:20,380 --> 00:19:21,500
+an I,
+
+512
+00:19:21,500 --> 00:19:24,300
+an epsilon.
+
+513
+00:19:26,200 --> 00:19:27,500
+That's the important thing,
+
+514
+00:19:27,500 --> 00:19:28,000
+is the epsilon.
+
+515
+00:19:28,380 --> 00:19:35,520
+And I'm going to write H divided by Planck's constant.
+
+516
+00:19:35,840 --> 00:19:36,420
+Now,
+
+517
+00:19:36,420 --> 00:19:38,490
+there's no content to all of
+
+518
+00:19:38,490 --> 00:19:40,560
+this I and H bar here.
+
+519
+00:19:40,780 --> 00:19:42,680
+It can all be absorbed
+
+520
+00:19:42,680 --> 00:19:44,580
+into the definition of capital H.
+
+521
+00:19:44,940 --> 00:19:47,580
+I've written it that way because later on
+
+522
+00:19:47,580 --> 00:19:49,460
+we're going to find out that capital H
+
+523
+00:19:49,480 --> 00:19:53,260
+has a significance as the energy of the system
+
+524
+00:19:53,260 --> 00:19:56,280
+or the quantum analog of the Hamiltonian.
+
+525
+00:19:56,320 --> 00:19:57,020
+But for the moment,
+
+526
+00:19:57,020 --> 00:19:59,600
+this is just an arbitrary convention
+
+527
+00:19:59,600 --> 00:20:00,900
+that I put an I there.
+
+528
+00:20:01,160 --> 00:20:02,960
+We'll see in a moment why the I is there.
+
+529
+00:20:03,420 --> 00:20:06,200
+The fact that Planck's constant is in the denominator,
+
+530
+00:20:06,340 --> 00:20:07,580
+that's purely definition,
+
+531
+00:20:08,280 --> 00:20:10,300
+purely definition of capital H.
+
+532
+00:20:10,540 --> 00:20:12,120
+There's no content in it yet.
+
+533
+00:20:12,600 --> 00:20:17,480
+It's just putting the small quantity
+
+534
+00:20:17,480 --> 00:20:19,920
+that goes into quantum mechanics,
+
+535
+00:20:20,040 --> 00:20:21,280
+it's putting it into the formula
+
+536
+00:20:21,280 --> 00:20:25,420
+in order that later on we will recognize this thing
+
+537
+00:20:25,420 --> 00:20:27,320
+as a certain classical object.
+
+538
+00:20:28,620 --> 00:20:29,420
+All right,
+
+539
+00:20:29,420 --> 00:20:32,120
+let's see what we can learn about capital H here.
+
+540
+00:20:33,060 --> 00:20:35,380
+We have to have that U of epsilon,
+
+541
+00:20:36,160 --> 00:20:37,860
+or U dagger of epsilon,
+
+542
+00:20:38,640 --> 00:20:39,980
+times U of epsilon,
+
+543
+00:20:40,680 --> 00:20:42,400
+to first order in epsilon.
+
+544
+00:20:42,680 --> 00:20:43,060
+We're working,
+
+545
+00:20:43,060 --> 00:20:44,960
+we're keeping things to first order in epsilon
+
+546
+00:20:44,960 --> 00:20:46,320
+and only to first order.
+
+547
+00:20:46,320 --> 00:20:48,320
+That should be equal to one.
+
+548
+00:20:50,760 --> 00:20:51,780
+Let's write it out.
+
+549
+00:20:52,140 --> 00:20:53,240
+What is U dagger?
+
+550
+00:20:53,540 --> 00:20:53,800
+Well,
+
+551
+00:20:53,800 --> 00:20:55,260
+let's write down U dagger over here.
+
+552
+00:20:55,380 --> 00:20:55,940
+U dagger
+
+553
+00:21:00,960 --> 00:21:06,340
+is equal to one plus I epsilon over H bar
+
+554
+00:21:07,240 --> 00:21:09,600
+times the Hermitian conjugate of H.
+
+555
+00:21:09,780 --> 00:21:11,280
+When you Hermitian conjugate something,
+
+556
+00:21:11,960 --> 00:21:14,900
+you have to change all the coefficients,
+
+557
+00:21:15,120 --> 00:21:16,300
+you have to complex conjugate,
+
+558
+00:21:16,320 --> 00:21:17,260
+you have to conjugate all the coefficients.
+
+559
+00:21:17,780 --> 00:21:21,740
+I epsilon becomes minus I epsilon,
+
+560
+00:21:22,020 --> 00:21:24,340
+minus I epsilon becomes I epsilon,
+
+561
+00:21:25,100 --> 00:21:26,740
+and when you Hermitian conjugate,
+
+562
+00:21:27,040 --> 00:21:28,720
+you have to Hermitian conjugate the operators.
+
+563
+00:21:29,420 --> 00:21:30,180
+All right,
+
+564
+00:21:30,180 --> 00:21:31,640
+so this is the formula for U dagger.
+
+565
+00:21:32,440 --> 00:21:33,840
+So let's write it out.
+
+566
+00:21:36,279 --> 00:21:41,260
+One plus I epsilon over H bar H
+
+567
+00:21:42,159 --> 00:21:45,380
+times one minus I epsilon
+
+568
+00:21:45,380 --> 00:21:50,540
+over H bar times H
+
+569
+00:21:51,240 --> 00:21:52,400
+has to be equal to one.
+
+570
+00:21:53,340 --> 00:21:54,960
+One meaning the unit operator.
+
+571
+00:21:55,800 --> 00:21:59,320
+And of course one here also means the unit operator.
+
+572
+00:21:59,640 --> 00:22:01,080
+This is an operator equation.
+
+573
+00:22:02,820 --> 00:22:03,300
+Ah,
+
+574
+00:22:03,300 --> 00:22:03,880
+H dagger.
+
+575
+00:22:04,080 --> 00:22:04,420
+Which one?
+
+576
+00:22:04,420 --> 00:22:04,720
+This one,
+
+577
+00:22:04,720 --> 00:22:05,080
+I think.
+
+578
+00:22:06,020 --> 00:22:07,080
+H dagger here.
+
+579
+00:22:09,740 --> 00:22:10,400
+All right,
+
+580
+00:22:10,400 --> 00:22:11,360
+we multiply it out.
+
+581
+00:22:11,540 --> 00:22:12,760
+One times one is one.
+
+582
+00:22:12,760 --> 00:22:14,160
+That's going to cancel this one.
+
+583
+00:22:14,700 --> 00:22:16,580
+Anything of order epsilon squared
+
+584
+00:22:16,580 --> 00:22:19,500
+is too small to worry about to the first order.
+
+585
+00:22:19,740 --> 00:22:20,960
+And the only thing that we have
+
+586
+00:22:20,960 --> 00:22:23,780
+will be an I epsilon over H bar.
+
+587
+00:22:24,480 --> 00:22:26,580
+And then from here times one,
+
+588
+00:22:26,680 --> 00:22:27,800
+we'll have H bar,
+
+589
+00:22:27,800 --> 00:22:28,800
+sorry,
+
+590
+00:22:28,800 --> 00:22:29,420
+H dagger.
+
+591
+00:22:31,800 --> 00:22:33,940
+But from one times here,
+
+592
+00:22:34,120 --> 00:22:35,620
+we will have minus H.
+
+593
+00:22:39,220 --> 00:22:41,140
+One times the minus H,
+
+594
+00:22:41,140 --> 00:22:43,720
+and then the H dagger times the one.
+
+595
+00:22:43,940 --> 00:22:45,660
+Those are the two terms that appear here.
+
+596
+00:22:45,900 --> 00:22:46,400
+Oh,
+
+597
+00:22:46,400 --> 00:22:47,480
+we left out the one.
+
+598
+00:22:47,580 --> 00:22:48,520
+One times one is one,
+
+599
+00:22:48,660 --> 00:22:50,420
+but that cancels the one here.
+
+600
+00:22:50,780 --> 00:22:54,920
+So the result is the condition that U be unitary
+
+601
+00:22:56,580 --> 00:23:01,300
+is the condition that H dagger equals H.
+
+602
+00:23:02,180 --> 00:23:05,080
+Or H dagger minus H equals zero.
+
+603
+00:23:06,060 --> 00:23:08,440
+Same thing as saying H dagger equals H.
+
+604
+00:23:11,360 --> 00:23:12,520
+In other words,
+
+605
+00:23:12,520 --> 00:23:13,380
+whatever H is,
+
+606
+00:23:13,520 --> 00:23:15,800
+it has to equal its own Hermitian conjugate.
+
+607
+00:23:17,060 --> 00:23:17,700
+That,
+
+608
+00:23:17,700 --> 00:23:18,100
+of course,
+
+609
+00:23:18,100 --> 00:23:20,640
+is the condition that H is Hermitian.
+
+610
+00:23:21,760 --> 00:23:26,140
+So what we learn from this basic principle
+
+611
+00:23:26,140 --> 00:23:29,860
+that relationships have to be invariant
+
+612
+00:23:29,860 --> 00:23:31,060
+under time evolution,
+
+613
+00:23:31,060 --> 00:23:32,820
+relationships of vectors,
+
+614
+00:23:33,100 --> 00:23:36,280
+is we learn that for a small interval of time,
+
+615
+00:23:36,580 --> 00:23:38,420
+the evolution procedure
+
+616
+00:23:38,440 --> 00:23:41,700
+proceeds by some kind of Hermitian operator.
+
+617
+00:23:42,720 --> 00:23:44,060
+H dagger equals H.
+
+618
+00:23:44,160 --> 00:23:45,420
+It doesn't tell us what H is,
+
+619
+00:23:45,480 --> 00:23:47,160
+doesn't tell us what H is,
+
+620
+00:23:47,320 --> 00:23:49,460
+but it does tell us whatever H is,
+
+621
+00:23:49,540 --> 00:23:50,440
+it should be Hermitian.
+
+622
+00:23:51,480 --> 00:23:51,960
+Now,
+
+623
+00:23:51,960 --> 00:23:54,280
+Hermitian in quantum mechanics
+
+624
+00:23:54,980 --> 00:23:57,240
+means the object is an observable.
+
+625
+00:23:57,840 --> 00:24:00,180
+What are the implications of it being observable?
+
+626
+00:24:01,400 --> 00:24:02,500
+First of all,
+
+627
+00:24:02,500 --> 00:24:04,440
+that it has an orthonormal basis
+
+628
+00:24:05,240 --> 00:24:06,200
+of eigenstates.
+
+629
+00:24:06,200 --> 00:24:08,560
+All of its eigenvalues are real.
+
+630
+00:24:09,480 --> 00:24:12,200
+And it's something which can be measured in the laboratory.
+
+631
+00:24:12,540 --> 00:24:13,900
+That's what it means to be observable.
+
+632
+00:24:14,140 --> 00:24:15,980
+The postulate of quantum mechanics
+
+633
+00:24:15,980 --> 00:24:17,400
+is that all Hermitian operators
+
+634
+00:24:17,400 --> 00:24:19,300
+correspond to things that can be observed
+
+635
+00:24:20,260 --> 00:24:22,520
+or physically interesting quantities.
+
+636
+00:24:23,280 --> 00:24:25,540
+They may be very hard to actually measure,
+
+637
+00:24:25,780 --> 00:24:27,360
+but in principle,
+
+638
+00:24:27,360 --> 00:24:28,520
+they should be measurable.
+
+639
+00:24:29,940 --> 00:24:31,520
+And so whatever H is,
+
+640
+00:24:36,620 --> 00:24:38,400
+it's some physical quantity.
+
+641
+00:24:40,720 --> 00:24:42,760
+The interpretation of it,
+
+642
+00:24:42,780 --> 00:24:43,620
+now,
+
+643
+00:24:43,620 --> 00:24:44,560
+we can give it a name.
+
+644
+00:24:45,000 --> 00:24:46,280
+It corresponds,
+
+645
+00:24:46,280 --> 00:24:47,780
+its eigenvalues
+
+646
+00:24:47,780 --> 00:24:49,580
+are the things that you measure
+
+647
+00:24:49,580 --> 00:24:51,180
+when you measure H.
+
+648
+00:24:51,880 --> 00:24:53,680
+Its eigenvalues have a name.
+
+649
+00:24:53,920 --> 00:24:55,340
+They are called energy.
+
+650
+00:24:56,960 --> 00:24:58,980
+We can't see yet,
+
+651
+00:24:58,980 --> 00:24:59,980
+at this point,
+
+652
+00:25:00,020 --> 00:25:02,580
+that they correspond to the same quantities
+
+653
+00:25:03,200 --> 00:25:05,480
+that we define in classical physics.
+
+654
+00:25:05,480 --> 00:25:06,920
+We will have to do some more.
+
+655
+00:25:07,000 --> 00:25:08,240
+We cannot see that.
+
+656
+00:25:08,580 --> 00:25:10,780
+No more than we could see that the momentum,
+
+657
+00:25:10,940 --> 00:25:13,400
+the strange definition of the momentum that we had,
+
+658
+00:25:13,480 --> 00:25:13,880
+what was it?
+
+659
+00:25:14,180 --> 00:25:16,840
+Minus I H bar d by dx.
+
+660
+00:25:18,380 --> 00:25:21,680
+That operator we identified with momentum.
+
+661
+00:25:22,460 --> 00:25:23,500
+I told you,
+
+662
+00:25:23,500 --> 00:25:24,340
+sometime later,
+
+663
+00:25:24,420 --> 00:25:27,280
+we will check that this object behaves
+
+664
+00:25:27,280 --> 00:25:30,020
+like the classical momentum of a particle
+
+665
+00:25:30,020 --> 00:25:31,620
+when a wave packet moves.
+
+666
+00:25:32,280 --> 00:25:33,500
+In the same sense,
+
+667
+00:25:33,500 --> 00:25:34,820
+we will eventually check,
+
+668
+00:25:34,820 --> 00:25:36,140
+I don't think we will do it tonight,
+
+669
+00:25:36,280 --> 00:25:37,270
+but we will eventually check
+
+670
+00:25:37,270 --> 00:25:38,260
+in not too long a time
+
+671
+00:25:39,739 --> 00:25:40,620
+that H,
+
+672
+00:25:40,620 --> 00:25:43,680
+or its average value,
+
+673
+00:25:43,820 --> 00:25:45,540
+the expectation value of H,
+
+674
+00:25:45,620 --> 00:25:46,520
+the average of H,
+
+675
+00:25:47,699 --> 00:25:50,600
+evolves or behaves exactly the same way,
+
+676
+00:25:50,620 --> 00:25:52,560
+has the same value as
+
+677
+00:25:52,560 --> 00:25:54,500
+the classical energy of a system,
+
+678
+00:25:54,660 --> 00:25:56,660
+or approximately the same value.
+
+679
+00:25:56,840 --> 00:25:57,820
+But not for now.
+
+680
+00:25:57,880 --> 00:25:58,200
+For now,
+
+681
+00:25:58,200 --> 00:26:00,500
+we are just going to call the eigenvalues the energy,
+
+682
+00:26:00,700 --> 00:26:03,440
+and we are going to call this object the Hamiltonian.
+
+683
+00:26:07,140 --> 00:26:07,740
+So,
+
+684
+00:26:07,740 --> 00:26:10,360
+we have learned a new principle
+
+685
+00:26:11,240 --> 00:26:14,760
+that the Hermitian operator called the Hamiltonian,
+
+686
+00:26:14,880 --> 00:26:18,540
+which governs the evolution of a system
+
+687
+00:26:18,540 --> 00:26:20,260
+as it evolves in time.
+
+688
+00:26:20,700 --> 00:26:22,440
+Are there any questions up until now?
+
+689
+00:26:24,880 --> 00:26:25,480
+Now,
+
+690
+00:26:25,480 --> 00:26:26,780
+if we know how a system evolves
+
+691
+00:26:26,780 --> 00:26:28,360
+for a short period of time,
+
+692
+00:26:29,020 --> 00:26:30,670
+that presumably means we
+
+693
+00:26:30,670 --> 00:26:32,320
+can write some differential equation
+
+694
+00:26:32,960 --> 00:26:34,800
+governing how the system evolves.
+
+695
+00:26:34,820 --> 00:26:35,480
+So,
+
+696
+00:26:35,480 --> 00:26:37,600
+let's think about that.
+
+697
+00:26:38,640 --> 00:26:39,880
+Is there a question?
+
+698
+00:26:40,120 --> 00:26:40,280
+Yeah.
+
+699
+00:26:41,240 --> 00:26:44,360
+In the classical limit where H bar goes to zero,
+
+700
+00:26:44,620 --> 00:26:46,980
+you have got to divide by zero in the denominator.
+
+701
+00:26:49,500 --> 00:26:50,600
+Is that...
+
+702
+00:26:51,280 --> 00:26:51,840
+Well,
+
+703
+00:26:51,840 --> 00:26:52,300
+that's...
+
+704
+00:26:53,780 --> 00:26:55,880
+Is it really the classical limit?
+
+705
+00:27:00,260 --> 00:27:03,480
+The classical limit is simply the limit
+
+706
+00:27:03,480 --> 00:27:04,800
+in which the energy of a system evolves.
+
+707
+00:27:04,800 --> 00:27:06,420
+The quantity of the system is
+
+708
+00:27:06,420 --> 00:27:08,040
+very large in units of H bar.
+
+709
+00:27:08,260 --> 00:27:08,640
+Actually,
+
+710
+00:27:08,640 --> 00:27:09,320
+it's not energy.
+
+711
+00:27:09,440 --> 00:27:10,620
+It's energy times time.
+
+712
+00:27:11,200 --> 00:27:11,800
+But,
+
+713
+00:27:11,800 --> 00:27:12,120
+um,
+
+714
+00:27:13,320 --> 00:27:15,380
+epsilon has units of a time.
+
+715
+00:27:15,740 --> 00:27:16,340
+So,
+
+716
+00:27:16,340 --> 00:27:19,000
+epsilon times H has units of H bar.
+
+717
+00:27:19,400 --> 00:27:22,360
+But the classical limit is simply the limit
+
+718
+00:27:22,360 --> 00:27:25,540
+in which this quantity over H bar is much,
+
+719
+00:27:25,540 --> 00:27:26,540
+much bigger than one.
+
+720
+00:27:29,300 --> 00:27:29,900
+So,
+
+721
+00:27:29,900 --> 00:27:30,500
+uh...
+
+722
+00:27:31,520 --> 00:27:33,020
+It's not necessarily goes to zero,
+
+723
+00:27:33,020 --> 00:27:34,040
+it just gets really small.
+
+724
+00:27:34,260 --> 00:27:34,460
+Yeah.
+
+725
+00:27:34,960 --> 00:27:35,440
+Yeah.
+
+726
+00:27:35,820 --> 00:27:36,300
+Uh,
+
+727
+00:27:36,300 --> 00:27:38,300
+we have to ask at the end,
+
+728
+00:27:38,340 --> 00:27:39,180
+what's left over?
+
+729
+00:27:39,280 --> 00:27:40,720
+What things have good limits
+
+730
+00:27:40,720 --> 00:27:42,400
+in the limit that H bar goes to zero?
+
+731
+00:27:42,980 --> 00:27:44,780
+I've written it in a form here
+
+732
+00:27:44,780 --> 00:27:47,380
+where in the classical limit,
+
+733
+00:27:47,500 --> 00:27:48,860
+when everything is kept classical,
+
+734
+00:27:49,120 --> 00:27:50,580
+H has a good limit.
+
+735
+00:27:51,540 --> 00:27:52,060
+All right.
+
+736
+00:27:52,080 --> 00:27:52,400
+But you...
+
+737
+00:27:52,400 --> 00:27:53,580
+We can't see that now.
+
+738
+00:27:53,760 --> 00:27:54,360
+For now,
+
+739
+00:27:54,480 --> 00:27:56,900
+that H bar is just an arbitrary thing
+
+740
+00:27:56,900 --> 00:27:58,080
+that I threw into the formula.
+
+741
+00:27:59,440 --> 00:27:59,920
+Uh...
+
+742
+00:28:01,760 --> 00:28:02,960
+About as arbitrary
+
+743
+00:28:03,020 --> 00:28:05,200
+as this H bar which appears in here.
+
+744
+00:28:05,380 --> 00:28:06,020
+In fact,
+
+745
+00:28:06,020 --> 00:28:07,240
+it's very similar,
+
+746
+00:28:07,240 --> 00:28:07,460
+uh,
+
+747
+00:28:07,460 --> 00:28:07,920
+H bar.
+
+748
+00:28:08,800 --> 00:28:09,340
+Okay,
+
+749
+00:28:09,340 --> 00:28:10,300
+let's ask now
+
+750
+00:28:10,300 --> 00:28:12,640
+if we can write a differential equation
+
+751
+00:28:13,280 --> 00:28:16,320
+for how the state of a system changes with time.
+
+752
+00:28:17,500 --> 00:28:18,620
+Let's think about that.
+
+753
+00:28:19,220 --> 00:28:20,320
+Here's what we can write.
+
+754
+00:28:20,400 --> 00:28:23,980
+We can write psi of T plus epsilon...
+
+755
+00:28:28,180 --> 00:28:29,880
+small change in time
+
+756
+00:28:29,880 --> 00:28:31,520
+from T to T plus epsilon
+
+757
+00:28:32,600 --> 00:28:33,400
+must equal...
+
+758
+00:28:33,400 --> 00:28:34,100
+Now,
+
+759
+00:28:34,100 --> 00:28:34,780
+on the one hand,
+
+760
+00:28:34,800 --> 00:28:36,380
+it has to equal this U of epsilon
+
+761
+00:28:37,100 --> 00:28:37,820
+times psi,
+
+762
+00:28:38,580 --> 00:28:39,840
+but let's not write that.
+
+763
+00:28:39,900 --> 00:28:41,460
+Let's just write that it's
+
+764
+00:28:42,840 --> 00:28:47,180
+one minus I epsilon H over H bar.
+
+765
+00:28:48,420 --> 00:28:50,160
+Within about five minutes from now,
+
+766
+00:28:50,260 --> 00:28:51,880
+I'm going to set H bar equal to one.
+
+767
+00:28:51,960 --> 00:28:53,740
+I wanted to put it in once and for all
+
+768
+00:28:53,740 --> 00:28:55,400
+so you see where it goes,
+
+769
+00:28:55,939 --> 00:28:57,180
+but for the time being,
+
+770
+00:28:57,260 --> 00:28:57,980
+let's leave it.
+
+771
+00:28:58,100 --> 00:28:58,500
+Eventually,
+
+772
+00:28:58,500 --> 00:28:59,960
+I'll probably set it equal to one.
+
+773
+00:29:00,060 --> 00:29:01,260
+It's just a nuisance to write.
+
+774
+00:29:01,520 --> 00:29:03,980
+It's this times psi of T.
+
+775
+00:29:06,560 --> 00:29:07,080
+Okay.
+
+776
+00:29:07,540 --> 00:29:08,060
+So,
+
+777
+00:29:08,060 --> 00:29:09,060
+to move ahead,
+
+778
+00:29:09,300 --> 00:29:11,240
+to push ahead a little bit in time,
+
+779
+00:29:11,460 --> 00:29:13,560
+you apply U.
+
+780
+00:29:14,520 --> 00:29:15,040
+U,
+
+781
+00:29:15,040 --> 00:29:16,000
+apply U.
+
+782
+00:29:16,260 --> 00:29:18,260
+But U is one minus
+
+783
+00:29:18,260 --> 00:29:20,260
+I epsilon H over H bar.
+
+784
+00:29:21,140 --> 00:29:21,660
+Okay,
+
+785
+00:29:21,660 --> 00:29:23,440
+let's manipulate the equation a little bit.
+
+786
+00:29:23,760 --> 00:29:24,860
+First of all,
+
+787
+00:29:24,920 --> 00:29:26,600
+the one times psi,
+
+788
+00:29:26,600 --> 00:29:27,380
+just give psi,
+
+789
+00:29:27,700 --> 00:29:30,080
+and we can transpose it over to the left-hand side.
+
+790
+00:29:30,220 --> 00:29:31,320
+So we can write this as
+
+791
+00:29:31,520 --> 00:29:36,760
+psi of T plus epsilon minus psi of T.
+
+792
+00:29:38,700 --> 00:29:43,060
+That's taking care of this,
+
+793
+00:29:43,300 --> 00:29:45,920
+and it's taking care of the one here.
+
+794
+00:29:46,460 --> 00:29:49,720
+That is equal to minus
+
+795
+00:29:49,720 --> 00:29:52,980
+I epsilon H over H bar
+
+796
+00:29:52,980 --> 00:29:55,020
+times psi itself.
+
+797
+00:29:56,560 --> 00:29:58,460
+Now let's divide by epsilon.
+
+798
+00:29:59,740 --> 00:30:00,760
+Dividing by epsilon
+
+799
+00:30:04,980 --> 00:30:06,920
+gives us the left-hand side,
+
+800
+00:30:07,520 --> 00:30:10,480
+which is obviously a derivative of psi.
+
+801
+00:30:11,320 --> 00:30:13,900
+It's the derivative of psi with respect to time.
+
+802
+00:30:14,060 --> 00:30:16,540
+I'm simply using the formula that a derivative
+
+803
+00:30:17,320 --> 00:30:20,220
+is the difference divided by the small change
+
+804
+00:30:20,220 --> 00:30:22,080
+in the argument of the function,
+
+805
+00:30:22,660 --> 00:30:25,020
+in the limit that the small change goes to zero.
+
+806
+00:30:25,680 --> 00:30:26,920
+This is just
+
+807
+00:30:26,920 --> 00:30:28,420
+the derivative.
+
+808
+00:30:30,440 --> 00:30:32,280
+I'll write it as a partial derivative,
+
+809
+00:30:32,560 --> 00:30:35,580
+just to indicate that I'm only changing time,
+
+810
+00:30:35,740 --> 00:30:37,000
+nothing else in the problem.
+
+811
+00:30:37,160 --> 00:30:38,720
+The derivative of psi
+
+812
+00:30:39,639 --> 00:30:41,620
+with respect to time
+
+813
+00:30:43,320 --> 00:30:46,450
+is equal to minus I
+
+814
+00:30:46,450 --> 00:30:49,580
+H over H bar times psi.
+
+815
+00:30:51,700 --> 00:30:54,220
+This is telling us how the state changes
+
+816
+00:30:55,200 --> 00:30:56,640
+if we know
+
+817
+00:30:56,920 --> 00:30:57,780
+the Hamiltonian.
+
+818
+00:30:58,120 --> 00:30:59,610
+If we know the action
+
+819
+00:30:59,610 --> 00:31:01,100
+of the Hamiltonian on every state,
+
+820
+00:31:01,580 --> 00:31:04,360
+then we can predict what it's going to be
+
+821
+00:31:04,360 --> 00:31:05,740
+in the next instant of time.
+
+822
+00:31:06,440 --> 00:31:08,100
+If we can predict what it's going to be
+
+823
+00:31:08,100 --> 00:31:09,400
+in the next instant of time,
+
+824
+00:31:09,620 --> 00:31:11,080
+we can do next instant,
+
+825
+00:31:11,080 --> 00:31:11,740
+next instant,
+
+826
+00:31:11,740 --> 00:31:12,360
+next instant,
+
+827
+00:31:12,420 --> 00:31:14,960
+and build up the entire evolution of the system.
+
+828
+00:31:15,180 --> 00:31:17,100
+This is simply a differential equation
+
+829
+00:31:17,600 --> 00:31:19,700
+which tells us how psi changes
+
+830
+00:31:19,700 --> 00:31:21,420
+if we know H.
+
+831
+00:31:24,300 --> 00:31:25,880
+This equation has a name.
+
+832
+00:31:25,880 --> 00:31:26,800
+Anybody know the name of it?
+
+833
+00:31:28,000 --> 00:31:29,180
+That's the Schrodinger equation.
+
+834
+00:31:30,220 --> 00:31:31,420
+That's the Schrodinger equation.
+
+835
+00:31:31,500 --> 00:31:34,880
+It's the abstract general form of the Schrodinger equation.
+
+836
+00:31:35,700 --> 00:31:37,840
+It's not the equation Schrodinger wrote down.
+
+837
+00:31:38,320 --> 00:31:39,380
+To my knowledge,
+
+838
+00:31:39,380 --> 00:31:40,660
+I think the first one to write it
+
+839
+00:31:40,660 --> 00:31:41,580
+in this form was Dirac.
+
+840
+00:31:41,940 --> 00:31:45,200
+Let's multiply it by H,
+
+841
+00:31:45,980 --> 00:31:47,120
+by little h bar,
+
+842
+00:31:48,460 --> 00:31:49,560
+and by I.
+
+843
+00:31:50,240 --> 00:31:51,960
+So if I multiply it by I,
+
+844
+00:31:52,180 --> 00:31:53,900
+there's I H bar on the left,
+
+845
+00:31:53,900 --> 00:31:56,760
+I times minus I is plus one,
+
+846
+00:31:57,460 --> 00:31:59,340
+so I can also write it this way,
+
+847
+00:31:59,460 --> 00:32:01,800
+I H bar d psi by dt
+
+848
+00:32:03,020 --> 00:32:07,480
+is the Hamiltonian operator times psi.
+
+849
+00:32:10,040 --> 00:32:14,180
+That's sort of very similar to this formula.
+
+850
+00:32:14,760 --> 00:32:17,540
+This said that a derivative with respect to position
+
+851
+00:32:17,540 --> 00:32:19,740
+is related to the momentum.
+
+852
+00:32:20,680 --> 00:32:23,540
+This says the derivative with respect to time
+
+853
+00:32:23,900 --> 00:32:26,580
+is related in a similar way to the energy,
+
+854
+00:32:26,760 --> 00:32:27,920
+to the Hamiltonian.
+
+855
+00:32:28,240 --> 00:32:29,740
+Notice there's a difference in sign.
+
+856
+00:32:30,080 --> 00:32:32,580
+This is purely a convention.
+
+857
+00:32:33,260 --> 00:32:34,690
+That there's a minus sign
+
+858
+00:32:34,690 --> 00:32:36,120
+here and a plus sign here.
+
+859
+00:32:36,260 --> 00:32:37,360
+Can everybody see the plus sign?
+
+860
+00:32:37,520 --> 00:32:38,640
+It's in the corner of the...
+
+861
+00:32:39,860 --> 00:32:40,840
+It's plus here.
+
+862
+00:32:41,180 --> 00:32:44,040
+I'm going to move it over a little bit.
+
+863
+00:32:45,080 --> 00:32:46,400
+I H bar.
+
+864
+00:32:48,880 --> 00:32:49,600
+All right,
+
+865
+00:32:49,600 --> 00:32:52,220
+that's the basic idea of the Schrodinger equation.
+
+866
+00:32:52,220 --> 00:32:54,540
+How systems evolve with time.
+
+867
+00:32:55,940 --> 00:32:57,740
+There's another equation we can write.
+
+868
+00:32:58,640 --> 00:33:01,340
+Now this equation is practically definition,
+
+869
+00:33:01,640 --> 00:33:02,260
+not much more.
+
+870
+00:33:03,739 --> 00:33:04,940
+Let's put it up here.
+
+871
+00:33:13,299 --> 00:33:13,699
+Now,
+
+872
+00:33:13,699 --> 00:33:14,720
+let's leave it for a moment.
+
+873
+00:33:14,800 --> 00:33:15,460
+We'll come back to it.
+
+874
+00:33:16,000 --> 00:33:19,160
+I was going to write the eigenvalue equation for H,
+
+875
+00:33:19,260 --> 00:33:20,120
+but I'm not going to do it now.
+
+876
+00:33:20,120 --> 00:33:21,400
+All right.
+
+877
+00:33:25,580 --> 00:33:27,220
+Let's think about a couple of examples
+
+878
+00:33:27,220 --> 00:33:28,440
+and what this says.
+
+879
+00:33:28,640 --> 00:33:30,280
+How it was actually used
+
+880
+00:33:30,280 --> 00:33:32,000
+to predict the future,
+
+881
+00:33:32,000 --> 00:33:32,580
+so to speak.
+
+882
+00:33:32,680 --> 00:33:35,720
+To predict the future from the present
+
+883
+00:33:36,860 --> 00:33:40,300
+and to see how it affects measurements of things.
+
+884
+00:33:41,360 --> 00:33:43,980
+Let's go back to our simple system
+
+885
+00:33:45,260 --> 00:33:46,380
+of polarization.
+
+886
+00:33:47,260 --> 00:33:48,380
+Polarization of photons.
+
+887
+00:33:49,540 --> 00:33:50,100
+Okay.
+
+888
+00:33:50,120 --> 00:33:52,760
+And let me suppose I have some sort of material
+
+889
+00:33:52,760 --> 00:33:54,080
+that I've constructed
+
+890
+00:33:55,039 --> 00:33:58,240
+which shifts the energy of a photon
+
+891
+00:33:58,240 --> 00:33:59,560
+of a given wavelength
+
+892
+00:33:59,560 --> 00:34:01,280
+depending on the polarization.
+
+893
+00:34:02,560 --> 00:34:03,400
+You know,
+
+894
+00:34:03,400 --> 00:34:04,920
+I don't have to tell you,
+
+895
+00:34:05,020 --> 00:34:07,040
+that a photon of a given wavelength
+
+896
+00:34:08,060 --> 00:34:10,699
+has a certain energy.
+
+897
+00:34:11,280 --> 00:34:11,780
+Okay.
+
+898
+00:34:11,980 --> 00:34:13,639
+Energy is related to wavelength.
+
+899
+00:34:13,900 --> 00:34:16,540
+But that relationship can change
+
+900
+00:34:16,540 --> 00:34:18,480
+when the photon moves through a material.
+
+901
+00:34:18,480 --> 00:34:19,679
+All right.
+
+902
+00:34:19,699 --> 00:34:20,120
+So,
+
+903
+00:34:20,120 --> 00:34:21,780
+given the wavelength,
+
+904
+00:34:22,120 --> 00:34:23,300
+you might construct a photon
+
+905
+00:34:23,300 --> 00:34:25,139
+of a given wavelength in a material.
+
+906
+00:34:25,300 --> 00:34:26,719
+It has a certain energy.
+
+907
+00:34:27,300 --> 00:34:29,159
+But that energy might be different
+
+908
+00:34:29,159 --> 00:34:31,280
+than it would be outside the material.
+
+909
+00:34:31,620 --> 00:34:32,540
+That's straightforward.
+
+910
+00:34:32,940 --> 00:34:34,739
+There's nothing spectacular about that.
+
+911
+00:34:35,060 --> 00:34:36,460
+But I might have a material
+
+912
+00:34:36,460 --> 00:34:38,639
+which has a certain polarization to it
+
+913
+00:34:38,639 --> 00:34:41,000
+so that the two states of polarization
+
+914
+00:34:41,000 --> 00:34:43,780
+might actually have different energy from each other.
+
+915
+00:34:44,460 --> 00:34:45,739
+That's quite conceivable.
+
+916
+00:34:47,360 --> 00:34:47,920
+So,
+
+917
+00:34:47,920 --> 00:34:48,460
+let's say,
+
+918
+00:34:48,460 --> 00:34:49,460
+let's suppose that
+
+919
+00:34:51,000 --> 00:34:51,760
+the
+
+920
+00:34:51,760 --> 00:34:57,400
+the x and y polarizations
+
+921
+00:34:58,400 --> 00:34:59,800
+actually have different energy.
+
+922
+00:35:00,060 --> 00:35:02,000
+And we'll say that the x polarization
+
+923
+00:35:02,000 --> 00:35:04,920
+has energy E1
+
+924
+00:35:05,220 --> 00:35:08,380
+and the y polarization has energy E2.
+
+925
+00:35:08,600 --> 00:35:10,020
+Just to give them names.
+
+926
+00:35:10,540 --> 00:35:12,840
+So we've created a material
+
+927
+00:35:13,460 --> 00:35:16,140
+in which a photon of some particular wavelength
+
+928
+00:35:16,140 --> 00:35:18,160
+has energy E1
+
+929
+00:35:18,460 --> 00:35:19,160
+or E2,
+
+930
+00:35:19,400 --> 00:35:21,860
+depending on which polarization it has.
+
+931
+00:35:22,640 --> 00:35:24,000
+That can be translated
+
+932
+00:35:24,000 --> 00:35:26,440
+into a statement about the Hamiltonian.
+
+933
+00:35:26,780 --> 00:35:29,080
+It says that the Hamiltonian is an operator
+
+934
+00:35:29,080 --> 00:35:30,880
+that has two eigenvalues,
+
+935
+00:35:31,220 --> 00:35:32,140
+E1 and E2,
+
+936
+00:35:33,280 --> 00:35:35,480
+and that the two states of polarization
+
+937
+00:35:35,480 --> 00:35:37,140
+are eigenvectors
+
+938
+00:35:38,820 --> 00:35:40,600
+of that Hamiltonian.
+
+939
+00:35:40,680 --> 00:35:41,500
+So let's write it down.
+
+940
+00:35:41,740 --> 00:35:45,200
+It says that H on...
+
+941
+00:35:45,200 --> 00:35:46,400
+I'll tell you what,
+
+942
+00:35:46,440 --> 00:35:47,420
+I'm going to call this one x
+
+943
+00:35:47,420 --> 00:35:48,140
+and this one y,
+
+944
+00:35:48,880 --> 00:35:50,060
+as we did before.
+
+945
+00:35:50,680 --> 00:35:55,680
+On x is equal to E1 on x.
+
+946
+00:35:56,020 --> 00:35:58,020
+x does not stand for the position now,
+
+947
+00:35:58,060 --> 00:35:59,240
+it just stands for the polarization.
+
+948
+00:35:59,620 --> 00:36:01,900
+We're forgetting entirely the position of the photon.
+
+949
+00:36:02,380 --> 00:36:04,240
+And H on y
+
+950
+00:36:06,760 --> 00:36:10,020
+is equal to E2 on y.
+
+951
+00:36:11,760 --> 00:36:12,280
+Alright,
+
+952
+00:36:12,280 --> 00:36:13,580
+so the two states of polarization
+
+953
+00:36:13,580 --> 00:36:14,560
+are being assumed,
+
+954
+00:36:14,700 --> 00:36:15,820
+they're making an assumption now.
+
+955
+00:36:15,820 --> 00:36:18,540
+I'm making an assumption that whatever the Hamiltonian is,
+
+956
+00:36:18,720 --> 00:36:20,220
+that the x component,
+
+957
+00:36:20,440 --> 00:36:22,660
+the x polarization and the y polarization
+
+958
+00:36:22,660 --> 00:36:24,060
+are both eigenvectors
+
+959
+00:36:24,540 --> 00:36:26,460
+with eigenvalue E1 and E2.
+
+960
+00:36:27,640 --> 00:36:29,540
+That's the material that I've constructed.
+
+961
+00:36:29,980 --> 00:36:32,560
+This particular photon of this particular wavelength,
+
+962
+00:36:32,900 --> 00:36:35,160
+the two polarizations have different energy.
+
+963
+00:36:36,040 --> 00:36:37,600
+What does that imply
+
+964
+00:36:37,600 --> 00:36:39,820
+about the evolution of this photon
+
+965
+00:36:39,820 --> 00:36:41,560
+as it moves through the material?
+
+966
+00:36:42,520 --> 00:36:45,600
+Does it have any interesting experimental consequences?
+
+967
+00:36:45,820 --> 00:36:46,660
+And we'll see that it does.
+
+968
+00:36:46,780 --> 00:36:47,540
+Quite interesting.
+
+969
+00:36:48,540 --> 00:36:49,300
+Let's begin.
+
+970
+00:36:50,340 --> 00:36:50,900
+Okay.
+
+971
+00:36:51,320 --> 00:36:51,880
+So,
+
+972
+00:36:51,880 --> 00:36:54,540
+let's start with some initial state
+
+973
+00:36:54,540 --> 00:36:55,820
+of the photon,
+
+974
+00:36:56,040 --> 00:36:57,580
+of the photon polarization.
+
+975
+00:36:57,760 --> 00:36:58,700
+Let's call it,
+
+976
+00:36:58,700 --> 00:36:59,300
+well let's,
+
+977
+00:36:59,960 --> 00:37:00,520
+yeah.
+
+978
+00:37:04,120 --> 00:37:05,600
+It's psi of t.
+
+979
+00:37:05,820 --> 00:37:07,940
+Here's the state vector of
+
+980
+00:37:07,940 --> 00:37:10,060
+the photon polarization at time t.
+
+981
+00:37:10,680 --> 00:37:12,460
+There's only two states of polarization,
+
+982
+00:37:13,100 --> 00:37:15,560
+and we usually write the x component
+
+983
+00:37:15,820 --> 00:37:18,760
+as the upper component of a column vector
+
+984
+00:37:18,760 --> 00:37:20,720
+and the lower component of a column vector
+
+985
+00:37:20,720 --> 00:37:21,540
+as the y component.
+
+986
+00:37:21,960 --> 00:37:24,860
+So let's just write that psi of t
+
+987
+00:37:25,540 --> 00:37:28,020
+can be identified with the column vector
+
+988
+00:37:28,740 --> 00:37:31,260
+alpha of t and beta of t.
+
+989
+00:37:33,580 --> 00:37:37,200
+Alpha of t is the amplitude
+
+990
+00:37:37,200 --> 00:37:39,480
+that the photon has x polarization.
+
+991
+00:37:40,080 --> 00:37:42,340
+Beta is the amplitude
+
+992
+00:37:42,340 --> 00:37:44,700
+that the photon has y polarization.
+
+993
+00:37:44,700 --> 00:37:48,540
+The probability as a function of time
+
+994
+00:37:48,540 --> 00:37:50,880
+that the photon has x polarization
+
+995
+00:37:50,880 --> 00:37:52,380
+would be alpha star alpha,
+
+996
+00:37:52,660 --> 00:37:54,720
+and likewise for beta star beta,
+
+997
+00:37:54,940 --> 00:37:56,600
+that would be the polarization probability
+
+998
+00:37:56,600 --> 00:37:57,900
+to be y.
+
+999
+00:37:58,980 --> 00:37:59,540
+Okay.
+
+1000
+00:37:59,720 --> 00:38:00,980
+Everybody remember this?
+
+1001
+00:38:01,660 --> 00:38:02,420
+If not,
+
+1002
+00:38:02,420 --> 00:38:05,080
+tell me now and I'll ignore you.
+
+1003
+00:38:07,500 --> 00:38:08,200
+All right,
+
+1004
+00:38:08,200 --> 00:38:09,380
+so that's psi of t.
+
+1005
+00:38:09,940 --> 00:38:13,740
+Let's write down now the Schrodinger equation explicitly.
+
+1006
+00:38:13,740 --> 00:38:14,700
+Where is it?
+
+1007
+00:38:14,740 --> 00:38:15,960
+We've erased it off the blackboard.
+
+1008
+00:38:16,120 --> 00:38:16,840
+I hope not.
+
+1009
+00:38:17,040 --> 00:38:17,160
+No,
+
+1010
+00:38:17,160 --> 00:38:17,640
+there it is.
+
+1011
+00:38:18,260 --> 00:38:20,880
+Let's write down the Schrodinger equation explicitly
+
+1012
+00:38:20,880 --> 00:38:22,060
+and solve it.
+
+1013
+00:38:22,860 --> 00:38:25,100
+I can think of no better way of illustrating
+
+1014
+00:38:25,100 --> 00:38:28,000
+what it means than to explicitly write it down
+
+1015
+00:38:28,000 --> 00:38:30,220
+and solve it for this very simple system.
+
+1016
+00:38:30,840 --> 00:38:31,460
+All right.
+
+1017
+00:38:31,480 --> 00:38:33,680
+So we begin with i h bar.
+
+1018
+00:38:33,780 --> 00:38:35,280
+Let me throw away h bar now.
+
+1019
+00:38:35,360 --> 00:38:37,040
+h bar equals 1 from now on,
+
+1020
+00:38:38,360 --> 00:38:40,620
+except when I want to illustrate some point
+
+1021
+00:38:40,620 --> 00:38:41,760
+about h bar itself.
+
+1022
+00:38:41,980 --> 00:38:43,620
+h bar is equal to 1 from now on.
+
+1023
+00:38:44,220 --> 00:38:44,820
+Okay,
+
+1024
+00:38:44,820 --> 00:38:45,920
+so let's write this equation.
+
+1025
+00:38:46,440 --> 00:38:47,480
+d psi by dt,
+
+1026
+00:38:47,480 --> 00:38:48,740
+what does that mean?
+
+1027
+00:38:49,020 --> 00:38:53,880
+That means the time derivative of this column vector here.
+
+1028
+00:38:54,120 --> 00:38:56,080
+The time derivative of the column vector
+
+1029
+00:38:56,080 --> 00:38:58,560
+is just another column vector whose entries
+
+1030
+00:38:58,560 --> 00:38:59,780
+are the time derivatives.
+
+1031
+00:39:00,780 --> 00:39:01,520
+All right,
+
+1032
+00:39:01,520 --> 00:39:05,180
+so d psi by dt can just be identified
+
+1033
+00:39:05,180 --> 00:39:06,420
+with the column vector.
+
+1034
+00:39:06,660 --> 00:39:08,870
+Let's call it alpha dot of
+
+1035
+00:39:08,870 --> 00:39:11,080
+t and beta dot of t.
+
+1036
+00:39:11,220 --> 00:39:13,400
+Dot indicates time derivative as usual.
+
+1037
+00:39:16,960 --> 00:39:18,840
+That's d psi by dt.
+
+1038
+00:39:19,280 --> 00:39:21,340
+Let's multiply it by i,
+
+1039
+00:39:21,340 --> 00:39:22,580
+not by h bar.
+
+1040
+00:39:22,660 --> 00:39:23,800
+h bar was set equal to 1,
+
+1041
+00:39:23,960 --> 00:39:25,180
+so let's multiply it by i.
+
+1042
+00:39:25,720 --> 00:39:27,180
+And what does that equal?
+
+1043
+00:39:27,540 --> 00:39:32,200
+That equals the Hamiltonian acting on psi.
+
+1044
+00:39:32,940 --> 00:39:33,800
+First of all,
+
+1045
+00:39:33,800 --> 00:39:35,560
+let's write out the matrix
+
+1046
+00:39:35,560 --> 00:39:38,060
+that's identified with the Hamiltonian.
+
+1047
+00:39:38,260 --> 00:39:41,780
+The matrix that's identified with the Hamiltonian
+
+1048
+00:39:42,780 --> 00:39:43,720
+is just the Hamiltonian.
+
+1049
+00:39:43,720 --> 00:39:44,500
+It's just very simple.
+
+1050
+00:39:44,920 --> 00:39:46,220
+It's just E2,
+
+1051
+00:39:46,220 --> 00:39:47,500
+0,
+
+1052
+00:39:47,500 --> 00:39:48,640
+0,
+
+1053
+00:39:48,640 --> 00:39:49,480
+E1.
+
+1054
+00:39:52,140 --> 00:39:55,980
+It has eigenvectors x and y with i...
+
+1055
+00:39:55,980 --> 00:39:56,200
+Oh,
+
+1056
+00:39:56,200 --> 00:39:56,740
+that's wrong.
+
+1057
+00:39:57,060 --> 00:39:58,080
+E1 and E2.
+
+1058
+00:39:58,660 --> 00:39:59,860
+E1 and E2.
+
+1059
+00:40:01,160 --> 00:40:02,360
+E1 and E2.
+
+1060
+00:40:03,240 --> 00:40:04,680
+The two eigenvectors,
+
+1061
+00:40:04,680 --> 00:40:05,540
+the two eigenvalues
+
+1062
+00:40:05,540 --> 00:40:07,140
+are E1 and E2,
+
+1063
+00:40:08,140 --> 00:40:12,620
+and the two eigenvectors are just x and y,
+
+1064
+00:40:12,620 --> 00:40:15,440
+and here it's displayed in the form of a matrix.
+
+1065
+00:40:16,520 --> 00:40:17,080
+Okay,
+
+1066
+00:40:17,080 --> 00:40:18,340
+so let's write down now
+
+1067
+00:40:18,340 --> 00:40:22,460
+that this is equal to h times psi.
+
+1068
+00:40:24,840 --> 00:40:26,400
+h is E1,
+
+1069
+00:40:26,400 --> 00:40:27,060
+0,
+
+1070
+00:40:27,060 --> 00:40:27,700
+0,
+
+1071
+00:40:27,700 --> 00:40:30,200
+E2 on psi,
+
+1072
+00:40:30,380 --> 00:40:31,860
+and psi is just alpha beta.
+
+1073
+00:40:33,380 --> 00:40:33,940
+Okay,
+
+1074
+00:40:33,940 --> 00:40:34,800
+what is this equal to?
+
+1075
+00:40:35,359 --> 00:40:36,380
+The right-hand side,
+
+1076
+00:40:36,460 --> 00:40:39,000
+we can multiply out the matrix times the column vector,
+
+1077
+00:40:39,220 --> 00:40:40,600
+and it's just E1,
+
+1078
+00:40:40,600 --> 00:40:41,700
+alpha,
+
+1079
+00:40:41,700 --> 00:40:42,600
+E2.
+
+1080
+00:40:42,620 --> 00:40:43,520
+beta.
+
+1081
+00:40:47,920 --> 00:40:50,340
+This is now two differential equations,
+
+1082
+00:40:51,120 --> 00:40:52,960
+one for the upper component
+
+1083
+00:40:52,960 --> 00:40:54,180
+and one for the lower component.
+
+1084
+00:40:54,420 --> 00:40:55,880
+Whenever you get an equation like this,
+
+1085
+00:40:56,060 --> 00:40:58,520
+you can read it as several different equations,
+
+1086
+00:40:58,760 --> 00:40:59,880
+one for each component.
+
+1087
+00:41:00,780 --> 00:41:02,160
+Let's take the upper component.
+
+1088
+00:41:02,560 --> 00:41:04,800
+The upper component equation now just becomes
+
+1089
+00:41:04,800 --> 00:41:06,180
+a perfectly ordinary equation.
+
+1090
+00:41:06,600 --> 00:41:10,280
+i times the alpha by dt,
+
+1091
+00:41:12,620 --> 00:41:16,280
+is equal to E1 alpha.
+
+1092
+00:41:17,680 --> 00:41:19,540
+That doesn't look so hard to solve.
+
+1093
+00:41:19,840 --> 00:41:21,820
+And the lower equation is very similar.
+
+1094
+00:41:22,280 --> 00:41:24,580
+i times d beta by dt
+
+1095
+00:41:26,360 --> 00:41:29,600
+is equal to E2 times beta.
+
+1096
+00:41:32,000 --> 00:41:35,040
+I think maybe it would be a little easier
+
+1097
+00:41:35,040 --> 00:41:35,940
+and more recognizable
+
+1098
+00:41:35,940 --> 00:41:38,200
+if I would multiply by minus i.
+
+1099
+00:41:38,700 --> 00:41:40,720
+Then it would get rid of the i over here
+
+1100
+00:41:40,720 --> 00:41:42,600
+and put a minus i over here.
+
+1101
+00:41:47,220 --> 00:41:49,360
+So both equations,
+
+1102
+00:41:49,480 --> 00:41:49,760
+they're two,
+
+1103
+00:41:49,760 --> 00:41:50,500
+in fact,
+
+1104
+00:41:50,520 --> 00:41:52,040
+for the simple example,
+
+1105
+00:41:52,100 --> 00:41:54,900
+the alphas and the betas aren't even coupled together.
+
+1106
+00:41:55,120 --> 00:41:57,200
+They satisfy separate equations
+
+1107
+00:41:58,020 --> 00:42:00,620
+with not even any mixing between them.
+
+1108
+00:42:02,140 --> 00:42:03,580
+Very simple equations.
+
+1109
+00:42:05,020 --> 00:42:06,760
+And the solutions are simple.
+
+1110
+00:42:08,800 --> 00:42:10,720
+What's the solution of an equation
+
+1111
+00:42:10,720 --> 00:42:11,660
+where the derivative of the derivative is
+
+1112
+00:42:11,660 --> 00:42:12,600
+equal to the derivative of the derivative?
+
+1113
+00:42:12,600 --> 00:42:14,040
+The derivative of an object is proportional
+
+1114
+00:42:14,040 --> 00:42:15,480
+to the object itself with a coefficient?
+
+1115
+00:42:16,880 --> 00:42:17,480
+Exponential.
+
+1116
+00:42:17,980 --> 00:42:21,200
+So the solution of the first equation here
+
+1117
+00:42:21,200 --> 00:42:24,010
+is that alpha is equal to
+
+1118
+00:42:24,010 --> 00:42:26,820
+whatever it is at time 0,
+
+1119
+00:42:27,100 --> 00:42:28,200
+alpha of 0.
+
+1120
+00:42:30,880 --> 00:42:31,840
+In fact,
+
+1121
+00:42:31,840 --> 00:42:33,240
+let's call this alpha of t
+
+1122
+00:42:34,820 --> 00:42:37,100
+is equal to alpha of time 0
+
+1123
+00:42:37,100 --> 00:42:39,480
+times E to the minus
+
+1124
+00:42:41,320 --> 00:42:45,680
+E to the minus i E1 t.
+
+1125
+00:42:47,279 --> 00:42:49,620
+If I differentiate this with respect to time,
+
+1126
+00:42:49,860 --> 00:42:52,740
+it just pulls down a minus i E1,
+
+1127
+00:42:53,279 --> 00:42:54,640
+which is exactly what's here.
+
+1128
+00:42:57,020 --> 00:42:59,460
+And let me simplify the notation
+
+1129
+00:42:59,460 --> 00:43:01,780
+by just calling alpha at time 0,
+
+1130
+00:43:01,940 --> 00:43:03,140
+let me just call it alpha.
+
+1131
+00:43:03,660 --> 00:43:05,660
+There's too many brackets
+
+1132
+00:43:05,660 --> 00:43:09,320
+and other little pieces of,
+
+1133
+00:43:09,480 --> 00:43:09,480
+uh,
+
+1134
+00:43:09,480 --> 00:43:11,080
+nuisance to write down.
+
+1135
+00:43:11,320 --> 00:43:13,150
+So we'll just call alpha is
+
+1136
+00:43:13,150 --> 00:43:14,980
+alpha at time t equals 0.
+
+1137
+00:43:15,340 --> 00:43:16,680
+And as time goes on,
+
+1138
+00:43:16,680 --> 00:43:17,960
+it just gets multiplied by
+
+1139
+00:43:17,960 --> 00:43:19,240
+E to the i E t.
+
+1140
+00:43:20,680 --> 00:43:22,020
+What about beta of t?
+
+1141
+00:43:22,680 --> 00:43:23,600
+Similar thing.
+
+1142
+00:43:24,380 --> 00:43:25,560
+That's equal to beta
+
+1143
+00:43:26,700 --> 00:43:30,840
+times E to the minus i E2 t.
+
+1144
+00:43:37,140 --> 00:43:38,880
+And so the state of the system
+
+1145
+00:43:38,880 --> 00:43:41,020
+is represented by a column vector.
+
+1146
+00:43:41,240 --> 00:43:42,760
+We can write the column vector now
+
+1147
+00:43:42,760 --> 00:43:45,520
+as a function of time alpha
+
+1148
+00:43:45,520 --> 00:43:48,280
+E to the minus i E1 t
+
+1149
+00:43:49,200 --> 00:43:53,220
+and beta E to the minus i E2 t.
+
+1150
+00:43:54,440 --> 00:43:56,220
+Now let me just point out at this point
+
+1151
+00:43:56,220 --> 00:43:57,940
+where h-bar would have gone
+
+1152
+00:43:57,940 --> 00:43:59,020
+had I included it.
+
+1153
+00:43:59,180 --> 00:44:00,820
+H-bar would go in the direction of t,
+
+1154
+00:44:00,840 --> 00:44:02,460
+as a denominator under the E's.
+
+1155
+00:44:03,060 --> 00:44:04,500
+It would go in the exponent,
+
+1156
+00:44:04,880 --> 00:44:06,380
+but as a denominator,
+
+1157
+00:44:06,740 --> 00:44:09,920
+E1 over h-bar if I had included it.
+
+1158
+00:44:10,380 --> 00:44:10,940
+Alright?
+
+1159
+00:44:11,900 --> 00:44:14,720
+So we see what the energies correspond to.
+
+1160
+00:44:14,820 --> 00:44:16,360
+They correspond to phases,
+
+1161
+00:44:17,400 --> 00:44:18,000
+to,
+
+1162
+00:44:18,000 --> 00:44:18,440
+uh,
+
+1163
+00:44:18,440 --> 00:44:18,900
+to,
+
+1164
+00:44:18,900 --> 00:44:19,380
+um,
+
+1165
+00:44:19,380 --> 00:44:20,520
+oscillations
+
+1166
+00:44:20,520 --> 00:44:22,840
+in the entries here,
+
+1167
+00:44:23,040 --> 00:44:25,900
+but different oscillations for the two entries.
+
+1168
+00:44:26,420 --> 00:44:27,840
+Different oscillations,
+
+1169
+00:44:27,840 --> 00:44:28,520
+one with E1
+
+1170
+00:44:28,520 --> 00:44:29,580
+and one with E2.
+
+1171
+00:44:31,020 --> 00:44:33,540
+That's the state of the system after a time t.
+
+1172
+00:44:34,940 --> 00:44:36,180
+Now let's ask,
+
+1173
+00:44:36,280 --> 00:44:38,040
+what if we did some measurements?
+
+1174
+00:44:39,040 --> 00:44:41,480
+Supposing we measured the polarization
+
+1175
+00:44:41,480 --> 00:44:43,120
+of the photon.
+
+1176
+00:44:43,620 --> 00:44:44,660
+In particular,
+
+1177
+00:44:44,660 --> 00:44:46,620
+we measure the photon polarization
+
+1178
+00:44:47,520 --> 00:44:49,120
+in the xy plane.
+
+1179
+00:44:49,620 --> 00:44:52,520
+The x versus y polarization.
+
+1180
+00:44:53,020 --> 00:44:55,280
+We run it through an x polarizer.
+
+1181
+00:44:55,640 --> 00:44:58,120
+We run the photon through an x polarizer
+
+1182
+00:44:58,120 --> 00:44:59,200
+and we find the probability
+
+1183
+00:44:59,200 --> 00:45:02,180
+that it's polarized along the x axis.
+
+1184
+00:45:03,440 --> 00:45:04,040
+Alright?
+
+1185
+00:45:04,380 --> 00:45:05,760
+What's the answer to that?
+
+1186
+00:45:06,100 --> 00:45:08,240
+It's just the entry up here,
+
+1187
+00:45:08,320 --> 00:45:11,220
+the square of the entry in the top.
+
+1188
+00:45:11,900 --> 00:45:13,680
+This one corresponds to x,
+
+1189
+00:45:13,780 --> 00:45:14,860
+this one corresponds to y.
+
+1190
+00:45:15,300 --> 00:45:16,380
+The probability
+
+1191
+00:45:17,520 --> 00:45:18,800
+that the polarization,
+
+1192
+00:45:19,100 --> 00:45:19,740
+let's call it probability,
+
+1193
+00:45:20,160 --> 00:45:21,380
+that the polarization,
+
+1194
+00:45:22,640 --> 00:45:23,240
+uh,
+
+1195
+00:45:23,240 --> 00:45:25,820
+is plus one,
+
+1196
+00:45:26,900 --> 00:45:28,460
+there's too many indices here,
+
+1197
+00:45:28,460 --> 00:45:29,040
+the probability
+
+1198
+00:45:32,120 --> 00:45:33,520
+that the x polarization
+
+1199
+00:45:34,480 --> 00:45:35,380
+is plus,
+
+1200
+00:45:35,600 --> 00:45:36,160
+in other words,
+
+1201
+00:45:36,160 --> 00:45:37,920
+that it's polarized along the x axis,
+
+1202
+00:45:38,120 --> 00:45:40,640
+that the photon goes through the polarizer,
+
+1203
+00:45:41,300 --> 00:45:42,320
+that's just going to be
+
+1204
+00:45:43,460 --> 00:45:45,400
+alpha e to the minus i omega,
+
+1205
+00:45:45,640 --> 00:45:47,680
+e to the minus i E1 t
+
+1206
+00:45:48,440 --> 00:45:50,100
+times its own complex conjugate.
+
+1207
+00:45:50,780 --> 00:45:51,260
+Remember,
+
+1208
+00:45:51,260 --> 00:45:52,200
+we take these entries
+
+1209
+00:45:52,820 --> 00:45:56,240
+and we multiply them by their own complex conjugate
+
+1210
+00:45:56,240 --> 00:45:57,880
+and what's that going to give?
+
+1211
+00:45:58,460 --> 00:46:00,260
+That's just going to give alpha star alpha.
+
+1212
+00:46:05,300 --> 00:46:06,810
+The e to the i E
+
+1213
+00:46:06,810 --> 00:46:08,320
+t is not going to do anything
+
+1214
+00:46:08,320 --> 00:46:11,260
+when we multiply it by its own complex conjugate.
+
+1215
+00:46:11,760 --> 00:46:12,260
+So,
+
+1216
+00:46:12,260 --> 00:46:13,120
+nothing's happened.
+
+1217
+00:46:13,300 --> 00:46:13,480
+I mean,
+
+1218
+00:46:13,480 --> 00:46:15,180
+this whole business about the time evolution
+
+1219
+00:46:15,180 --> 00:46:16,240
+hasn't done anything.
+
+1220
+00:46:16,560 --> 00:46:18,380
+It hasn't changed the probability
+
+1221
+00:46:19,160 --> 00:46:20,320
+for x polarization,
+
+1222
+00:46:20,800 --> 00:46:22,020
+not even a little bit,
+
+1223
+00:46:22,200 --> 00:46:24,500
+it's done nothing to the probability of x polarization.
+
+1224
+00:46:25,220 --> 00:46:25,720
+Likewise,
+
+1225
+00:46:26,240 --> 00:46:27,200
+the probability
+
+1226
+00:46:27,200 --> 00:46:29,360
+that it's polarized along the y axis
+
+1227
+00:46:30,070 --> 00:46:31,340
+is just beta star beta.
+
+1228
+00:46:33,900 --> 00:46:35,160
+So at first sight,
+
+1229
+00:46:35,320 --> 00:46:37,080
+it seems like this time evolution
+
+1230
+00:46:37,080 --> 00:46:38,880
+hasn't led to any big deal.
+
+1231
+00:46:39,000 --> 00:46:39,660
+It's done nothing.
+
+1232
+00:46:40,080 --> 00:46:41,220
+It's just multiplied
+
+1233
+00:46:41,220 --> 00:46:43,740
+the individual components there
+
+1234
+00:46:43,740 --> 00:46:45,200
+by phases,
+
+1235
+00:46:45,300 --> 00:46:46,940
+but that hasn't changed any probability.
+
+1236
+00:46:48,560 --> 00:46:50,420
+The interesting thing happens
+
+1237
+00:46:51,200 --> 00:46:52,140
+when we look,
+
+1238
+00:46:52,200 --> 00:46:54,460
+when we decide to use a different polarizer.
+
+1239
+00:46:54,960 --> 00:46:57,080
+So let's imagine now that we took
+
+1240
+00:46:57,200 --> 00:46:58,320
+a different polarizer.
+
+1241
+00:46:59,080 --> 00:47:01,420
+We run it through after having...
+
+1242
+00:47:06,500 --> 00:47:08,000
+We take this state,
+
+1243
+00:47:08,180 --> 00:47:08,980
+here it is,
+
+1244
+00:47:09,060 --> 00:47:10,280
+and we run it through
+
+1245
+00:47:10,280 --> 00:47:13,040
+not a vertical horizontal polarizer,
+
+1246
+00:47:13,080 --> 00:47:14,300
+not an x polarizer,
+
+1247
+00:47:14,400 --> 00:47:16,340
+but we run it through a polarizer
+
+1248
+00:47:16,340 --> 00:47:16,720
+that's,
+
+1249
+00:47:16,720 --> 00:47:17,160
+for example,
+
+1250
+00:47:17,160 --> 00:47:20,160
+polarized along the 45 degree axis.
+
+1251
+00:47:20,500 --> 00:47:21,240
+And ask,
+
+1252
+00:47:21,280 --> 00:47:22,120
+what's the probability
+
+1253
+00:47:22,120 --> 00:47:25,370
+that the photon goes through the polarizer
+
+1254
+00:47:25,800 --> 00:47:27,060
+at 45 degrees?
+
+1255
+00:47:27,060 --> 00:47:28,400
+All right,
+
+1256
+00:47:28,400 --> 00:47:30,760
+so let's do that little calculation.
+
+1257
+00:47:39,120 --> 00:47:39,800
+All right,
+
+1258
+00:47:39,800 --> 00:47:40,480
+first of all,
+
+1259
+00:47:42,140 --> 00:47:43,700
+the state vector corresponding
+
+1260
+00:47:43,700 --> 00:47:46,040
+to polarization along 45 degrees,
+
+1261
+00:47:46,340 --> 00:47:46,780
+what is that?
+
+1262
+00:47:47,360 --> 00:47:49,880
+That corresponds to the column vector
+
+1263
+00:47:49,880 --> 00:47:51,560
+one over square root of two,
+
+1264
+00:47:51,680 --> 00:47:52,960
+one over square root of two.
+
+1265
+00:47:55,700 --> 00:47:56,940
+What do we have to do?
+
+1266
+00:47:57,060 --> 00:47:58,340
+We have to take psi,
+
+1267
+00:47:58,700 --> 00:47:59,740
+the original psi,
+
+1268
+00:47:59,960 --> 00:48:01,040
+or not the original psi,
+
+1269
+00:48:01,160 --> 00:48:02,520
+but psi as it is over here,
+
+1270
+00:48:03,020 --> 00:48:04,600
+and take its inner product
+
+1271
+00:48:07,100 --> 00:48:09,360
+with the polarization state
+
+1272
+00:48:09,360 --> 00:48:10,980
+polarized at 45 degrees,
+
+1273
+00:48:11,140 --> 00:48:12,860
+and take the square of that.
+
+1274
+00:48:13,120 --> 00:48:14,420
+We'll take the square soon enough.
+
+1275
+00:48:14,860 --> 00:48:16,460
+This is called the amplitude
+
+1276
+00:48:17,000 --> 00:48:18,100
+that if we measure
+
+1277
+00:48:19,040 --> 00:48:20,380
+the diagonal polarization,
+
+1278
+00:48:20,580 --> 00:48:21,500
+what do we call this?
+
+1279
+00:48:21,520 --> 00:48:22,360
+We had a name for this,
+
+1280
+00:48:24,920 --> 00:48:25,360
+slash,
+
+1281
+00:48:25,580 --> 00:48:26,540
+the slash polarization,
+
+1282
+00:48:27,140 --> 00:48:29,000
+that if we measure the slash polarization,
+
+1283
+00:48:29,440 --> 00:48:30,100
+we'll either get,
+
+1284
+00:48:30,340 --> 00:48:31,220
+we'll either go through
+
+1285
+00:48:31,220 --> 00:48:31,900
+or it won't go through.
+
+1286
+00:48:32,200 --> 00:48:33,800
+This is the thing that gets squared.
+
+1287
+00:48:33,880 --> 00:48:34,880
+Let's not square it yet.
+
+1288
+00:48:35,320 --> 00:48:36,360
+This is equal to,
+
+1289
+00:48:36,500 --> 00:48:36,720
+okay,
+
+1290
+00:48:36,720 --> 00:48:37,640
+we take the row vector,
+
+1291
+00:48:37,760 --> 00:48:39,360
+the bra vector is slash,
+
+1292
+00:48:40,480 --> 00:48:42,760
+and that's just one over square root of two,
+
+1293
+00:48:42,900 --> 00:48:44,440
+one over square root of two.
+
+1294
+00:48:45,340 --> 00:48:46,300
+On the other hand,
+
+1295
+00:48:46,300 --> 00:48:47,740
+after a time t,
+
+1296
+00:48:49,020 --> 00:48:51,460
+we have alpha,
+
+1297
+00:48:51,460 --> 00:48:54,140
+e to the minus i e1 t,
+
+1298
+00:48:55,300 --> 00:48:55,780
+beta,
+
+1299
+00:48:55,780 --> 00:48:58,140
+e to the minus i e2 t,
+
+1300
+00:48:59,580 --> 00:49:01,640
+and we have to take the inner product of those.
+
+1301
+00:49:01,880 --> 00:49:03,000
+This is very simple.
+
+1302
+00:49:03,180 --> 00:49:05,580
+It's just equal to one over square root of two,
+
+1303
+00:49:11,140 --> 00:49:11,620
+alpha,
+
+1304
+00:49:11,620 --> 00:49:13,920
+e to the minus i e1 t,
+
+1305
+00:49:16,520 --> 00:49:18,700
+plus beta over square root of two,
+
+1306
+00:49:20,100 --> 00:49:21,440
+e to the minus i e2 t,
+
+1307
+00:49:21,460 --> 00:49:21,920
+and we get the inner product of those.
+
+1308
+00:49:21,920 --> 00:49:23,360
+e to the minus i e2 t.
+
+1309
+00:49:26,800 --> 00:49:27,840
+That's the amplitude.
+
+1310
+00:49:29,980 --> 00:49:31,860
+Now what do we have to do with it
+
+1311
+00:49:31,860 --> 00:49:33,500
+in order to get a probability?
+
+1312
+00:49:33,860 --> 00:49:34,700
+To get a probability,
+
+1313
+00:49:34,960 --> 00:49:36,140
+we have to multiply it
+
+1314
+00:49:36,140 --> 00:49:37,500
+by its own complex conjugate.
+
+1315
+00:49:37,680 --> 00:49:38,560
+We have to square it.
+
+1316
+00:49:39,500 --> 00:49:40,600
+Here's what's going to happen.
+
+1317
+00:49:40,720 --> 00:49:41,460
+Here's the point.
+
+1318
+00:49:42,240 --> 00:49:44,520
+When we square a thing like this,
+
+1319
+00:49:44,560 --> 00:49:45,680
+there are two kinds of terms.
+
+1320
+00:49:45,840 --> 00:49:47,080
+There are the terms coming from
+
+1321
+00:49:47,080 --> 00:49:48,740
+squaring the individual components,
+
+1322
+00:49:48,960 --> 00:49:50,200
+and there are the cross terms.
+
+1323
+00:49:51,180 --> 00:49:52,920
+Let's look at the individual components.
+
+1324
+00:49:53,220 --> 00:49:54,920
+The individual components will be
+
+1325
+00:49:54,920 --> 00:49:55,320
+alpha,
+
+1326
+00:49:55,320 --> 00:49:57,820
+alpha star alpha over two,
+
+1327
+00:49:58,000 --> 00:50:00,460
+and the e to the i e2 t's will cancel.
+
+1328
+00:50:00,680 --> 00:50:03,120
+When we multiply this by its own complex conjugate,
+
+1329
+00:50:03,320 --> 00:50:04,940
+the e to the i e2 t will cancel.
+
+1330
+00:50:05,660 --> 00:50:06,180
+Likewise,
+
+1331
+00:50:06,180 --> 00:50:07,320
+when we multiply this
+
+1332
+00:50:07,320 --> 00:50:08,760
+by its own complex conjugate,
+
+1333
+00:50:09,020 --> 00:50:10,620
+it's the cross term.
+
+1334
+00:50:11,160 --> 00:50:14,640
+It's the term gotten from multiplying this by this,
+
+1335
+00:50:14,760 --> 00:50:17,360
+which is going to have an interesting time dependence.
+
+1336
+00:50:18,160 --> 00:50:18,820
+All right,
+
+1337
+00:50:18,820 --> 00:50:19,820
+so let's examine that.
+
+1338
+00:50:19,820 --> 00:50:21,680
+Let's actually examine it and see what we get.
+
+1339
+00:50:22,160 --> 00:50:23,440
+But before we do,
+
+1340
+00:50:23,480 --> 00:50:25,540
+I want to simplify the problem a little bit
+
+1341
+00:50:25,540 --> 00:50:29,000
+by choosing alpha and beta in a simple way.
+
+1342
+00:50:30,440 --> 00:50:32,820
+What I'm going to do is I'm going to assume
+
+1343
+00:50:32,820 --> 00:50:34,620
+that alpha and beta are equal
+
+1344
+00:50:34,620 --> 00:50:36,780
+and both equal to one over square root of two.
+
+1345
+00:50:37,080 --> 00:50:39,300
+This corresponds to the following experiment.
+
+1346
+00:50:40,360 --> 00:50:45,800
+We send the photon through a polarizer
+
+1347
+00:50:45,800 --> 00:50:47,740
+polarized along 45 degrees.
+
+1348
+00:50:47,740 --> 00:50:50,070
+That gives us an initial
+
+1349
+00:50:50,070 --> 00:50:52,400
+state at time t equals zero,
+
+1350
+00:50:52,640 --> 00:50:55,280
+which is just polarized at 45 degrees.
+
+1351
+00:50:55,920 --> 00:50:59,100
+Then it goes downstream in this strange material
+
+1352
+00:50:59,740 --> 00:51:02,120
+where the vertical polarization states
+
+1353
+00:51:02,120 --> 00:51:03,180
+have different energy.
+
+1354
+00:51:03,820 --> 00:51:04,600
+All right,
+
+1355
+00:51:04,600 --> 00:51:06,080
+so the two vertical polarizations
+
+1356
+00:51:06,080 --> 00:51:07,200
+have different energy,
+
+1357
+00:51:07,420 --> 00:51:10,840
+and then we send it through a second polarizer
+
+1358
+00:51:10,840 --> 00:51:13,560
+oriented in exactly the same direction.
+
+1359
+00:51:14,520 --> 00:51:15,180
+Ordinarily,
+
+1360
+00:51:15,180 --> 00:51:16,520
+we would fully expect
+
+1361
+00:51:16,520 --> 00:51:17,560
+that it would go right through.
+
+1362
+00:51:18,400 --> 00:51:20,260
+And with probability one,
+
+1363
+00:51:20,440 --> 00:51:22,060
+pass through the second polarizer.
+
+1364
+00:51:22,180 --> 00:51:23,120
+Let's see if that's true.
+
+1365
+00:51:25,740 --> 00:51:27,880
+The initial state that the photon
+
+1366
+00:51:27,880 --> 00:51:29,760
+comes out of the polarizer with
+
+1367
+00:51:30,580 --> 00:51:31,600
+is just,
+
+1368
+00:51:31,600 --> 00:51:33,500
+this is just what?
+
+1369
+00:51:33,840 --> 00:51:35,780
+Let's call that time t equals zero.
+
+1370
+00:51:36,560 --> 00:51:39,320
+That just corresponds to alpha and beta
+
+1371
+00:51:39,320 --> 00:51:40,600
+with no time dependence.
+
+1372
+00:51:41,220 --> 00:51:44,000
+But let's set alpha and beta themselves
+
+1373
+00:51:44,000 --> 00:51:46,280
+equal to one over square root of two.
+
+1374
+00:51:47,340 --> 00:51:50,300
+So in passing through this polarizer,
+
+1375
+00:51:50,480 --> 00:51:52,900
+the photon comes out of the other side
+
+1376
+00:51:52,900 --> 00:51:55,300
+with alpha equals one over square root of two
+
+1377
+00:51:55,300 --> 00:51:57,920
+and beta equals one over square root of two.
+
+1378
+00:51:58,360 --> 00:52:00,120
+It's just a special case of this
+
+1379
+00:52:01,020 --> 00:52:03,380
+where alpha and beta happen to be
+
+1380
+00:52:04,480 --> 00:52:07,140
+both themselves one over square root of two.
+
+1381
+00:52:07,840 --> 00:52:09,500
+That's how the photon comes out.
+
+1382
+00:52:09,660 --> 00:52:12,560
+Then the photon propagates for a certain time t
+
+1383
+00:52:12,560 --> 00:52:15,160
+until it gets to the other polarizer.
+
+1384
+00:52:17,680 --> 00:52:19,080
+That's what we have here.
+
+1385
+00:52:19,820 --> 00:52:20,980
+We can now write this.
+
+1386
+00:52:21,040 --> 00:52:23,400
+We can specialize it to the case
+
+1387
+00:52:23,400 --> 00:52:24,620
+one over square root of two,
+
+1388
+00:52:25,270 --> 00:52:26,440
+one over square root of two.
+
+1389
+00:52:27,020 --> 00:52:29,000
+So here's how the photon came out.
+
+1390
+00:52:29,420 --> 00:52:31,960
+It propagated downstream for a time t
+
+1391
+00:52:31,960 --> 00:52:34,680
+and then we want to know
+
+1392
+00:52:35,280 --> 00:52:37,580
+what's the probability that it passes
+
+1393
+00:52:37,580 --> 00:52:39,060
+through the second polarizer,
+
+1394
+00:52:39,120 --> 00:52:40,800
+polarized exactly the same way
+
+1395
+00:52:40,800 --> 00:52:41,880
+as the first polarizer.
+
+1396
+00:52:42,460 --> 00:52:44,160
+So this becomes one half here.
+
+1397
+00:52:44,160 --> 00:52:47,040
+And this also becomes one half.
+
+1398
+00:52:47,660 --> 00:52:50,080
+I'm just doing this to put some numbers in.
+
+1399
+00:52:51,040 --> 00:52:53,920
+Just put some numbers in to see what comes out.
+
+1400
+00:52:54,520 --> 00:52:55,040
+Alright,
+
+1401
+00:52:55,040 --> 00:52:56,600
+so this is now the amplitude
+
+1402
+00:52:57,160 --> 00:53:00,080
+that the photon passes through the second polarizer.
+
+1403
+00:53:01,460 --> 00:53:02,940
+Let's calculate the probability.
+
+1404
+00:53:03,340 --> 00:53:04,940
+The probability is simply this
+
+1405
+00:53:04,940 --> 00:53:06,480
+times its own complex conjugate.
+
+1406
+00:53:06,900 --> 00:53:09,220
+Isn't that one over the square root of two times...
+
+1407
+00:53:09,220 --> 00:53:09,560
+No.
+
+1408
+00:53:09,560 --> 00:53:11,460
+There were two square roots of two here.
+
+1409
+00:53:12,800 --> 00:53:13,320
+Oh,
+
+1410
+00:53:13,320 --> 00:53:13,740
+okay.
+
+1411
+00:53:13,740 --> 00:53:14,160
+Yeah,
+
+1412
+00:53:14,160 --> 00:53:14,780
+right.
+
+1413
+00:53:15,840 --> 00:53:16,360
+Okay,
+
+1414
+00:53:16,360 --> 00:53:17,540
+so let's see what comes out.
+
+1415
+00:53:19,560 --> 00:53:20,600
+We have...
+
+1416
+00:53:21,300 --> 00:53:23,640
+We're going to have one half times one half
+
+1417
+00:53:23,640 --> 00:53:24,680
+when I square this.
+
+1418
+00:53:25,760 --> 00:53:27,540
+Let's pull out the factor of a half
+
+1419
+00:53:27,540 --> 00:53:28,460
+and square it.
+
+1420
+00:53:28,840 --> 00:53:30,360
+And then we're going to have
+
+1421
+00:53:33,920 --> 00:53:39,740
+e to the i minus i e1 t
+
+1422
+00:53:40,420 --> 00:53:43,320
+plus e to the minus i e2 t
+
+1423
+00:53:44,320 --> 00:53:48,680
+all times e to the plus i e1 t
+
+1424
+00:53:49,400 --> 00:53:52,400
+plus e to the plus i e2 t.
+
+1425
+00:53:54,260 --> 00:53:55,860
+This bracket is simply the
+
+1426
+00:53:55,860 --> 00:53:57,460
+complex conjugate of this bracket.
+
+1427
+00:53:58,020 --> 00:53:59,660
+So the half times a half,
+
+1428
+00:54:00,420 --> 00:54:03,700
+that's just squaring the overall factor of a half here.
+
+1429
+00:54:04,000 --> 00:54:07,500
+And then I've multiplied this by its own complex conjugate.
+
+1430
+00:54:07,840 --> 00:54:09,500
+The whole thing is then one quarter,
+
+1431
+00:54:09,620 --> 00:54:10,480
+and let's see what we get.
+
+1432
+00:54:12,220 --> 00:54:14,330
+e to the minus i e1 t
+
+1433
+00:54:14,330 --> 00:54:16,440
+times e to the i e1 t,
+
+1434
+00:54:16,540 --> 00:54:16,900
+that's one.
+
+1435
+00:54:19,360 --> 00:54:21,060
+This one times this one is one.
+
+1436
+00:54:21,360 --> 00:54:21,940
+All right,
+
+1437
+00:54:21,940 --> 00:54:22,640
+we're finished with that.
+
+1438
+00:54:23,540 --> 00:54:28,500
+Let's mark off as we do them.
+
+1439
+00:54:29,780 --> 00:54:31,380
+We've taken care of this product.
+
+1440
+00:54:32,480 --> 00:54:34,200
+Now let's take care of this product.
+
+1441
+00:54:35,340 --> 00:54:36,280
+That's one again,
+
+1442
+00:54:37,420 --> 00:54:38,540
+so that's plus two.
+
+1443
+00:54:40,500 --> 00:54:42,700
+Now we have two cross terms.
+
+1444
+00:54:43,060 --> 00:54:44,920
+And the two cross terms are,
+
+1445
+00:54:45,180 --> 00:54:46,620
+let's see what they are.
+
+1446
+00:54:47,380 --> 00:54:51,820
+They're e to the minus i e1 t
+
+1447
+00:54:52,540 --> 00:54:55,340
+times e to the plus i e2 t.
+
+1448
+00:54:55,840 --> 00:55:04,420
+So that's e to the i e2 minus e1 t.
+
+1449
+00:55:06,620 --> 00:55:08,340
+And the other term is simply
+
+1450
+00:55:08,540 --> 00:55:09,760
+the complex conjugate of this,
+
+1451
+00:55:11,359 --> 00:55:15,020
+plus e to the i e2,
+
+1452
+00:55:15,799 --> 00:55:16,240
+well,
+
+1453
+00:55:16,240 --> 00:55:16,840
+let's write it there,
+
+1454
+00:55:16,880 --> 00:55:19,860
+e to the minus i e2 minus e1.
+
+1455
+00:55:20,898 --> 00:55:21,078
+所以
+
+1456
+00:55:27,906 --> 00:55:30,076
+think it's a little bit
+
+1457
+00:55:30,076 --> 00:55:32,246
+helpful to define E2 minus E1.
+
+1458
+00:55:32,346 --> 00:55:33,366
+What is E2 minus E1?
+
+1459
+00:55:33,526 --> 00:55:35,106
+It's the difference of energy
+
+1460
+00:55:35,106 --> 00:55:36,686
+of the two polarization states.
+
+1461
+00:55:37,266 --> 00:55:39,086
+Notice that the answer only depends
+
+1462
+00:55:39,086 --> 00:55:41,746
+on the energy difference of the two polarization states.
+
+1463
+00:55:42,506 --> 00:55:44,306
+This is deep,
+
+1464
+00:55:44,306 --> 00:55:44,786
+important.
+
+1465
+00:55:45,366 --> 00:55:47,666
+Physics only depends on energy differences.
+
+1466
+00:55:48,146 --> 00:55:50,646
+Nothing would change if you added a constant
+
+1467
+00:55:50,886 --> 00:55:52,146
+to the energy of a system.
+
+1468
+00:55:52,846 --> 00:55:53,286
+All right,
+
+1469
+00:55:53,286 --> 00:55:54,546
+so it only depends,
+
+1470
+00:55:54,546 --> 00:55:56,886
+as we might have guessed
+
+1471
+00:55:56,886 --> 00:55:57,606
+in the first place,
+
+1472
+00:55:57,606 --> 00:55:58,206
+it only depends
+
+1473
+00:55:58,206 --> 00:55:59,086
+on the energy differences.
+
+1474
+00:55:59,766 --> 00:56:02,606
+Let's call the energy difference E2 minus E1.
+
+1475
+00:56:02,726 --> 00:56:03,766
+Let's call it delta E,
+
+1476
+00:56:03,766 --> 00:56:07,506
+just so I can stop writing E1's and E2's.
+
+1477
+00:56:07,566 --> 00:56:08,566
+Let's call it delta E,
+
+1478
+00:56:08,566 --> 00:56:11,586
+the difference
+
+1479
+00:56:11,586 --> 00:56:15,166
+of the energy of the x polarization
+
+1480
+00:56:15,645 --> 00:56:16,846
+and the y polarization.
+
+1481
+00:56:22,726 --> 00:56:23,206
+OK,
+
+1482
+00:56:23,206 --> 00:56:24,876
+what is E to the i
+
+1483
+00:56:24,876 --> 00:56:26,546
+something plus E to the minus i
+
+1484
+00:56:26,546 --> 00:56:26,866
+times?
+
+1485
+00:56:26,886 --> 00:56:27,526
+That same thing.
+
+1486
+00:56:28,966 --> 00:56:31,466
+E to the ix plus E to the minus ix.
+
+1487
+00:56:33,285 --> 00:56:34,546
+Just twice the cosine.
+
+1488
+00:56:35,686 --> 00:56:37,866
+So this whole thing is just,
+
+1489
+00:56:37,866 --> 00:56:38,286
+I can now
+
+1490
+00:56:38,286 --> 00:56:40,146
+erase all the exponentials,
+
+1491
+00:56:40,146 --> 00:56:40,526
+and it just
+
+1492
+00:56:40,526 --> 00:56:44,146
+becomes twice the cosine of delta E times t.
+
+1493
+00:56:44,426 --> 00:56:45,526
+Let's write that out.
+
+1494
+00:56:46,206 --> 00:56:49,426
+Twice the cosine plus twice the
+
+1495
+00:56:49,426 --> 00:56:52,646
+cosine of delta E times t.
+
+1496
+00:56:53,006 --> 00:56:53,566
+OK,
+
+1497
+00:56:53,566 --> 00:56:54,566
+let's review what we did.
+
+1498
+00:56:55,706 --> 00:56:56,866
+We have a material.
+
+1499
+00:56:56,866 --> 00:56:59,906
+We have a material which gives different energies
+
+1500
+00:57:01,325 --> 00:57:05,286
+to the vertical and horizontal polarizations.
+
+1501
+00:57:06,406 --> 00:57:08,066
+We then sent through the material,
+
+1502
+00:57:08,825 --> 00:57:10,486
+we sent through a polarizer,
+
+1503
+00:57:10,486 --> 00:57:11,066
+a photon,
+
+1504
+00:57:11,646 --> 00:57:15,346
+to polarize it along the 45 degree axis.
+
+1505
+00:57:16,346 --> 00:57:17,806
+And then we waited a while.
+
+1506
+00:57:17,966 --> 00:57:19,406
+We went downstream a ways.
+
+1507
+00:57:19,646 --> 00:57:21,026
+And after a time t,
+
+1508
+00:57:21,026 --> 00:57:22,546
+the photon is
+
+1509
+00:57:22,546 --> 00:57:24,246
+sent through a second polarizer,
+
+1510
+00:57:24,246 --> 00:57:26,746
+oriented exactly the same
+
+1511
+00:57:26,866 --> 00:57:27,966
+direction as the first one.
+
+1512
+00:57:28,146 --> 00:57:28,926
+And we ask,
+
+1513
+00:57:28,926 --> 00:57:29,746
+what's the probability
+
+1514
+00:57:29,746 --> 00:57:30,786
+that it goes through?
+
+1515
+00:57:31,446 --> 00:57:32,346
+Here it is.
+
+1516
+00:57:32,546 --> 00:57:35,486
+And notice that it oscillates as a function of time.
+
+1517
+00:57:36,206 --> 00:57:39,326
+It oscillates with a frequency which is determined
+
+1518
+00:57:39,326 --> 00:57:40,486
+by the energy difference.
+
+1519
+00:57:41,346 --> 00:57:42,946
+If we were to plot this function,
+
+1520
+00:57:44,046 --> 00:57:45,446
+we plotted the function.
+
+1521
+00:57:47,726 --> 00:57:48,206
+Well,
+
+1522
+00:57:48,206 --> 00:57:48,726
+what is it?
+
+1523
+00:57:48,806 --> 00:57:49,366
+It's 1 half.
+
+1524
+00:57:49,466 --> 00:57:51,976
+The quarters mixed with this is
+
+1525
+00:57:51,976 --> 00:57:54,486
+1 half plus 1 half cosine delta
+
+1526
+00:57:54,486 --> 00:57:54,926
+E t.
+
+1527
+00:57:57,666 --> 00:57:59,846
+It's a function at time t equals 0.
+
+1528
+00:58:00,066 --> 00:58:01,746
+1 half plus 1 half is 1.
+
+1529
+00:58:03,166 --> 00:58:03,466
+Now,
+
+1530
+00:58:03,466 --> 00:58:04,246
+what's the meaning of that?
+
+1531
+00:58:04,706 --> 00:58:09,106
+Time t equals 0 would correspond to putting
+
+1532
+00:58:09,106 --> 00:58:12,066
+the second polarizer close enough to the first polarizer
+
+1533
+00:58:12,705 --> 00:58:14,266
+that nothing much happens.
+
+1534
+00:58:15,506 --> 00:58:17,446
+No time evolution between them.
+
+1535
+00:58:18,506 --> 00:58:20,086
+If the time evolution between
+
+1536
+00:58:20,086 --> 00:58:21,666
+them is no time at all,
+
+1537
+00:58:22,326 --> 00:58:24,906
+then the photon surely goes through the same direction.
+
+1538
+00:58:24,906 --> 00:58:25,646
+The second polarizer.
+
+1539
+00:58:25,746 --> 00:58:27,626
+There's been no time for the state to change.
+
+1540
+00:58:28,166 --> 00:58:31,466
+And so if it goes through two parallel polarizers,
+
+1541
+00:58:31,706 --> 00:58:34,706
+the probability to get through the second one is 1.
+
+1542
+00:58:35,126 --> 00:58:36,426
+That's 1 plus 1.
+
+1543
+00:58:36,546 --> 00:58:37,486
+1 half plus 1 half.
+
+1544
+00:58:38,026 --> 00:58:39,946
+But then some time evolves.
+
+1545
+00:58:40,526 --> 00:58:43,986
+And after a time delta E times whatever it is,
+
+1546
+00:58:44,546 --> 00:58:46,546
+the probability has actually gone to 0
+
+1547
+00:58:46,546 --> 00:58:48,346
+that it gets through the second polarizer.
+
+1548
+00:58:51,026 --> 00:58:52,366
+It looks like this.
+
+1549
+00:58:52,886 --> 00:58:53,786
+Doesn't get negative.
+
+1550
+00:58:53,906 --> 00:58:54,526
+Never gets negative.
+
+1551
+00:58:54,526 --> 00:58:56,026
+Probabilities can't get negative.
+
+1552
+00:58:56,546 --> 00:58:59,026
+It just oscillates going from 1 to 0
+
+1553
+00:58:59,026 --> 00:59:01,506
+to 1 to 0 to 1 to 0.
+
+1554
+00:59:02,306 --> 00:59:03,166
+Of course,
+
+1555
+00:59:03,166 --> 00:59:04,026
+when it goes to 0,
+
+1556
+00:59:04,026 --> 00:59:05,026
+that's
+
+1557
+00:59:05,026 --> 00:59:06,886
+an indication that it will definitely pass
+
+1558
+00:59:06,886 --> 00:59:12,286
+through the polarizer at 90 degrees.
+
+1559
+00:59:13,866 --> 00:59:16,186
+So the polarization of the photon,
+
+1560
+00:59:16,865 --> 00:59:18,386
+after a certain time,
+
+1561
+00:59:18,386 --> 00:59:19,606
+has rotated.
+
+1562
+00:59:20,006 --> 00:59:21,286
+It's basically rotated.
+
+1563
+00:59:22,146 --> 00:59:24,506
+If we wait enough time until we get
+
+1564
+00:59:24,506 --> 00:59:25,906
+to the 0 over here,
+
+1565
+00:59:25,906 --> 00:59:27,726
+then it's certain that it
+
+1566
+00:59:27,726 --> 00:59:29,166
+will pass through this polarizer.
+
+1567
+00:59:30,006 --> 00:59:32,026
+So the polarization has rotated.
+
+1568
+00:59:33,386 --> 00:59:35,366
+It's not a circularly polarized photon.
+
+1569
+00:59:36,006 --> 00:59:40,066
+But the linear polarization has rotated.
+
+1570
+00:59:40,246 --> 00:59:42,206
+And it just keeps rotating as you go downstream.
+
+1571
+00:59:43,906 --> 00:59:45,185
+So this funny material,
+
+1572
+00:59:45,185 --> 00:59:47,305
+which splits the energy of the two
+
+1573
+00:59:47,305 --> 00:59:48,086
+photons,
+
+1574
+00:59:48,086 --> 00:59:49,586
+has the effect,
+
+1575
+00:59:49,586 --> 00:59:50,966
+has a real physical effect,
+
+1576
+00:59:51,726 --> 00:59:54,486
+it has the real physical effect of causing the polarization.
+
+1577
+00:59:55,946 --> 00:59:56,906
+Basically,
+
+1578
+00:59:56,906 --> 00:59:58,746
+this is an Quality-NGO.
+
+1579
+00:59:58,746 --> 00:59:59,166
+It Nursing Polarizer.
+
+1580
+00:59:59,166 --> 00:59:59,246
+So for this.
+
+1581
+01:00:04,366 --> 01:00:07,866
+This tensile relative polarizer.
+
+1582
+01:00:08,306 --> 01:00:14,006
+It's a В-Soft polarizer.
+
+1583
+01:00:14,006 --> 01:00:18,526
+But it's rock solid,
+
+1584
+01:00:18,526 --> 01:00:18,526
+that being said.
+
+1585
+01:00:18,526 --> 01:00:18,846
+It's very,
+
+1586
+01:00:18,846 --> 01:00:19,466
+very
+
+1587
+01:00:19,466 --> 01:00:20,926
+comply with hazard curriculums.
+
+1588
+01:00:21,086 --> 01:00:21,826
+So it's still drawing the afternoon temperature.
+
+1589
+01:00:21,826 --> 01:00:23,726
+What actually happened was that,
+
+1590
+01:00:23,726 --> 01:00:28,306
+That's the basic phenomenon,
+
+1591
+01:00:28,306 --> 01:00:29,786
+and this is an interference phenomenon.
+
+1592
+01:00:30,066 --> 01:00:32,686
+This is interference of
+
+1593
+01:00:32,686 --> 01:00:35,306
+probability amplitudes causing these oscillations.
+
+1594
+01:00:35,846 --> 01:00:37,586
+Destructive interference over here,
+
+1595
+01:00:37,586 --> 01:00:39,746
+constructive interference over here.
+
+1596
+01:00:40,976 --> 01:00:42,526
+And this is all with a single photon.
+
+1597
+01:00:44,516 --> 01:00:44,826
+Alright,
+
+1598
+01:00:44,826 --> 01:00:48,206
+any questions about up till now?
+
+1599
+01:00:52,906 --> 01:00:54,826
+This material has to be completely
+
+1600
+01:00:54,826 --> 01:00:56,746
+filling the space between the polarizers.
+
+1601
+01:00:56,746 --> 01:00:56,786
+Yeah,
+
+1602
+01:00:56,786 --> 01:00:56,946
+yeah,
+
+1603
+01:00:56,946 --> 01:00:58,316
+let's assume the material is
+
+1604
+01:00:58,316 --> 01:00:59,686
+filling the space between the polarizers.
+
+1605
+01:01:00,686 --> 01:01:03,366
+And it goes on and on forever in every direction.
+
+1606
+01:01:08,946 --> 01:01:10,326
+Don't ask me how to make the material,
+
+1607
+01:01:10,326 --> 01:01:11,786
+I haven't thought about it very hard.
+
+1608
+01:01:11,966 --> 01:01:13,416
+I'm sure if we went into
+
+1609
+01:01:13,416 --> 01:01:14,866
+the laboratory and asked the technician...
+
+1610
+01:01:15,826 --> 01:01:16,306
+What's that?
+
+1611
+01:01:16,306 --> 01:01:17,206
+Magic material.
+
+1612
+01:01:17,226 --> 01:01:17,826
+Magic material.
+
+1613
+01:01:18,206 --> 01:01:20,366
+If we went in and asked
+
+1614
+01:01:20,366 --> 01:01:22,526
+the technician in the lab here,
+
+1615
+01:01:22,526 --> 01:01:24,226
+he'd probably pull out a piece of something,
+
+1616
+01:01:24,446 --> 01:01:26,706
+and it probably got some name,
+
+1617
+01:01:26,706 --> 01:01:27,746
+but I don't know what it is.
+
+1618
+01:01:27,966 --> 01:01:28,326
+Yeah,
+
+1619
+01:01:28,326 --> 01:01:28,806
+question.
+
+1620
+01:01:29,046 --> 01:01:29,266
+Yeah,
+
+1621
+01:01:29,266 --> 01:01:30,146
+so the question is,
+
+1622
+01:01:30,146 --> 01:01:31,906
+so you put time on that,
+
+1623
+01:01:31,906 --> 01:01:32,866
+sort of,
+
+1624
+01:01:32,866 --> 01:01:33,526
+x-axis.
+
+1625
+01:01:33,606 --> 01:01:33,726
+Yeah,
+
+1626
+01:01:33,726 --> 01:01:34,966
+time on the x-axis.
+
+1627
+01:01:35,126 --> 01:01:37,606
+So that means that at a certain point in time,
+
+1628
+01:01:37,606 --> 01:01:40,316
+the probability of going through the material
+
+1629
+01:01:40,316 --> 01:01:43,026
+in that state of polarity goes to zero.
+
+1630
+01:01:44,746 --> 01:01:45,186
+Well,
+
+1631
+01:01:45,186 --> 01:01:46,966
+let's use some precise language.
+
+1632
+01:01:46,966 --> 01:01:50,356
+The probability that it passes through the other
+
+1633
+01:01:50,356 --> 01:01:53,746
+polarizer in the same direction has gone to zero.
+
+1634
+01:01:53,986 --> 01:01:55,066
+That's the thing to say.
+
+1635
+01:01:55,266 --> 01:01:55,786
+Okay,
+
+1636
+01:01:55,786 --> 01:02:00,346
+so depending on when you look at it...
+
+1637
+01:02:00,346 --> 01:02:00,486
+Well,
+
+1638
+01:02:00,486 --> 01:02:03,026
+or how far downstream you put the other polarizer.
+
+1639
+01:02:03,066 --> 01:02:03,206
+Remember,
+
+1640
+01:02:03,206 --> 01:02:05,506
+the photon moves with a certain velocity,
+
+1641
+01:02:05,506 --> 01:02:09,806
+and so the velocity determines how much time it...
+
+1642
+01:02:09,806 --> 01:02:10,086
+Yeah,
+
+1643
+01:02:10,086 --> 01:02:12,626
+for our simple purposes here,
+
+1644
+01:02:12,626 --> 01:02:14,736
+we can just identify the distance downstream
+
+1645
+01:02:14,736 --> 01:02:16,846
+with the time in some appropriate way.
+
+1646
+01:02:17,506 --> 01:02:18,026
+Yeah.
+
+1647
+01:02:18,886 --> 01:02:20,756
+Since we're not very much worried
+
+1648
+01:02:20,756 --> 01:02:22,626
+about the actual motion of the photon,
+
+1649
+01:02:22,626 --> 01:02:24,766
+only the motion of its polarization.
+
+1650
+01:02:25,506 --> 01:02:27,306
+So isolating out the polarization,
+
+1651
+01:02:27,306 --> 01:02:31,336
+we can then identify the time
+
+1652
+01:02:31,336 --> 01:02:35,366
+downstream with the velocity of the photon,
+
+1653
+01:02:35,726 --> 01:02:37,196
+which may or may not be the
+
+1654
+01:02:37,196 --> 01:02:38,666
+speed of light in this strange material.
+
+1655
+01:02:40,986 --> 01:02:41,506
+Well,
+
+1656
+01:02:41,506 --> 01:02:43,246
+it is the speed of light in the strange material,
+
+1657
+01:02:43,246 --> 01:02:43,926
+excuse me.
+
+1658
+01:02:44,566 --> 01:02:46,786
+What effect would it have on the circular length?
+
+1659
+01:02:46,786 --> 01:02:47,566
+Oh,
+
+1660
+01:02:47,566 --> 01:02:48,546
+that's an interesting question.
+
+1661
+01:02:48,546 --> 01:02:49,106
+I don't know.
+
+1662
+01:02:50,326 --> 01:02:51,086
+I'm not sure.
+
+1663
+01:02:51,386 --> 01:02:53,286
+I suspect it would cause...
+
+1664
+01:02:53,286 --> 01:02:53,886
+Yeah,
+
+1665
+01:02:53,886 --> 01:02:56,126
+I would suspect it would cause an
+
+1666
+01:02:56,126 --> 01:02:58,366
+oscillation back and forth between the two polarizations,
+
+1667
+01:02:58,366 --> 01:03:00,186
+between the two circular polarizations.
+
+1668
+01:03:00,846 --> 01:03:02,246
+But this is something you can do.
+
+1669
+01:03:02,406 --> 01:03:02,746
+All right,
+
+1670
+01:03:02,746 --> 01:03:04,126
+all we have to do
+
+1671
+01:03:04,126 --> 01:03:05,506
+is put an eye down here.
+
+1672
+01:03:06,586 --> 01:03:07,026
+Okay,
+
+1673
+01:03:07,026 --> 01:03:08,186
+so let's do it.
+
+1674
+01:03:08,286 --> 01:03:08,626
+Let's...
+
+1675
+01:03:10,366 --> 01:03:11,966
+We'll just put an eye over here.
+
+1676
+01:03:13,906 --> 01:03:15,526
+It'll put an eye over here.
+
+1677
+01:03:20,046 --> 01:03:23,726
+So there will be an eye over
+
+1678
+01:03:23,726 --> 01:03:27,406
+here and a minus eye over here.
+
+1679
+01:03:28,346 --> 01:03:29,286
+What will that do?
+
+1680
+01:03:31,606 --> 01:03:32,066
+Oh,
+
+1681
+01:03:32,066 --> 01:03:33,846
+it looks like it will change...
+
+1682
+01:03:33,846 --> 01:03:34,226
+Yeah,
+
+1683
+01:03:34,226 --> 01:03:35,966
+it looks like it'll turn this into sine,
+
+1684
+01:03:35,966 --> 01:03:38,166
+but it will leave the oscillation.
+
+1685
+01:03:38,546 --> 01:03:39,006
+Yeah.
+
+1686
+01:03:39,986 --> 01:03:40,646
+Thank you.
+
+1687
+01:03:40,646 --> 01:03:41,026
+That was good.
+
+1688
+01:03:43,386 --> 01:03:43,846
+Yes?
+
+1689
+01:03:44,186 --> 01:03:46,426
+It sounded a little bit unsettling to me.
+
+1690
+01:03:46,786 --> 01:03:46,886
+You know,
+
+1691
+01:03:46,886 --> 01:03:47,346
+I thought it was a lot.
+
+1692
+01:03:47,646 --> 01:03:49,506
+You arbitrarily choosing,
+
+1693
+01:03:49,506 --> 01:03:50,626
+you know,
+
+1694
+01:03:50,626 --> 01:03:51,486
+x and y this way
+
+1695
+01:03:51,486 --> 01:03:52,346
+or x and y this way,
+
+1696
+01:03:52,346 --> 01:03:54,366
+and yet it seems to change everything.
+
+1697
+01:03:55,366 --> 01:03:55,726
+Well,
+
+1698
+01:03:55,726 --> 01:03:57,426
+we have a material which
+
+1699
+01:03:57,426 --> 01:03:59,126
+was constructed in a certain factory,
+
+1700
+01:03:59,126 --> 01:04:01,646
+and we've lined it up.
+
+1701
+01:04:02,406 --> 01:04:02,766
+So,
+
+1702
+01:04:02,766 --> 01:04:04,006
+a certain factory,
+
+1703
+01:04:04,006 --> 01:04:05,445
+it has two axes in it.
+
+1704
+01:04:05,565 --> 01:04:05,986
+They're really...
+
+1705
+01:04:05,986 --> 01:04:07,306
+If you looked at it through a microscope,
+
+1706
+01:04:07,306 --> 01:04:08,626
+you would discover some axes.
+
+1707
+01:04:09,246 --> 01:04:10,956
+And we've simply lined those axes
+
+1708
+01:04:10,956 --> 01:04:12,666
+up with the x and y axes.
+
+1709
+01:04:12,866 --> 01:04:13,006
+Oh,
+
+1710
+01:04:13,006 --> 01:04:13,226
+I see.
+
+1711
+01:04:13,226 --> 01:04:14,226
+And this way it's misaligned.
+
+1712
+01:04:14,446 --> 01:04:14,906
+Mm-hmm.
+
+1713
+01:04:14,906 --> 01:04:16,386
+The material itself has...
+
+1714
+01:04:16,386 --> 01:04:16,546
+Yeah.
+
+1715
+01:04:16,546 --> 01:04:17,426
+The point is,
+
+1716
+01:04:17,426 --> 01:04:19,586
+you get an effect when the
+
+1717
+01:04:19,586 --> 01:04:21,746
+material itself is misaligned with the polarizers.
+
+1718
+01:04:22,406 --> 01:04:24,306
+It's misaligned with the polarizers.
+
+1719
+01:04:24,306 --> 01:04:25,786
+Then you see something interesting happen.
+
+1720
+01:04:25,946 --> 01:04:29,886
+You see this rotation of the polarization or
+
+1721
+01:04:29,886 --> 01:04:33,826
+the oscillation between the two states of circular polarization.
+
+1722
+01:04:34,546 --> 01:04:35,146
+So,
+
+1723
+01:04:35,146 --> 01:04:35,966
+the sine here,
+
+1724
+01:04:35,966 --> 01:04:38,606
+when you put an eye in here,
+
+1725
+01:04:38,606 --> 01:04:41,606
+would also cause an oscillation of the probabilities.
+
+1726
+01:04:41,606 --> 01:04:43,546
+It would look the same,
+
+1727
+01:04:43,546 --> 01:04:45,506
+except it would start at zero and
+
+1728
+01:04:45,506 --> 01:04:47,466
+go up to a maximum and so forth.
+
+1729
+01:04:48,926 --> 01:04:51,536
+It would correspond to an oscillation
+
+1730
+01:04:51,536 --> 01:04:54,146
+between two states of circular polarization,
+
+1731
+01:04:54,146 --> 01:04:57,366
+probably becoming elliptically polarized in between.
+
+1732
+01:04:59,166 --> 01:04:59,806
+Yeah,
+
+1733
+01:04:59,806 --> 01:05:00,706
+that's what would happen.
+
+1734
+01:05:00,866 --> 01:05:02,586
+You would have a circular polarization,
+
+1735
+01:05:02,586 --> 01:05:04,606
+and the circular polarization,
+
+1736
+01:05:04,606 --> 01:05:06,026
+I think,
+
+1737
+01:05:06,026 --> 01:05:08,266
+in the vertical direction,
+
+1738
+01:05:08,266 --> 01:05:10,606
+would become elliptically polarized.
+
+1739
+01:05:10,606 --> 01:05:12,916
+And then come out afterwards rotating in
+
+1740
+01:05:12,916 --> 01:05:15,226
+the opposite direction as you went downstream.
+
+1741
+01:05:16,806 --> 01:05:22,186
+But the main point is that there are these interference
+
+1742
+01:05:22,186 --> 01:05:27,566
+phenomena which really do happen just because of these phases.
+
+1743
+01:05:28,526 --> 01:05:29,806
+Notice something else.
+
+1744
+01:05:29,806 --> 01:05:31,986
+If the two phases were the same,
+
+1745
+01:05:31,986 --> 01:05:34,086
+if E1 equaled E2,
+
+1746
+01:05:34,086 --> 01:05:35,946
+if they were exactly the same,
+
+1747
+01:05:36,906 --> 01:05:39,566
+then this delta E would be zero.
+
+1748
+01:05:40,845 --> 01:05:43,146
+And cosine of zero is just one,
+
+1749
+01:05:43,146 --> 01:05:45,846
+so this would just be one plus one is one.
+
+1750
+01:05:46,246 --> 01:05:46,726
+And,
+
+1751
+01:05:46,726 --> 01:05:47,606
+in other words,
+
+1752
+01:05:47,606 --> 01:05:49,606
+if the two energies were the same,
+
+1753
+01:05:49,606 --> 01:05:51,676
+then it would behave as if there
+
+1754
+01:05:51,676 --> 01:05:53,746
+was no material in there at all.
+
+1755
+01:05:55,326 --> 01:05:57,656
+Which is the same thing when we
+
+1756
+01:05:57,656 --> 01:05:59,986
+use the X-polarizer to measure the X-polarization state.
+
+1757
+01:06:00,286 --> 01:06:02,046
+Then you get the cosine zero.
+
+1758
+01:06:02,386 --> 01:06:02,806
+Yeah,
+
+1759
+01:06:02,806 --> 01:06:03,266
+yeah,
+
+1760
+01:06:03,266 --> 01:06:03,886
+yeah.
+
+1761
+01:06:07,845 --> 01:06:09,906
+But if the two energies are the same,
+
+1762
+01:06:09,906 --> 01:06:10,586
+you get the cosine zero.
+
+1763
+01:06:10,606 --> 01:06:11,886
+You get no effect on anything.
+
+1764
+01:06:12,346 --> 01:06:15,326
+No matter what orientation the polarizers are,
+
+1765
+01:06:15,326 --> 01:06:16,106
+it does nothing.
+
+1766
+01:06:16,606 --> 01:06:17,226
+Yeah.
+
+1767
+01:06:17,346 --> 01:06:19,416
+So adding the same energy
+
+1768
+01:06:19,416 --> 01:06:21,486
+to both polarization states does nothing.
+
+1769
+01:06:21,986 --> 01:06:25,466
+And that's a very general property of quantum mechanics.
+
+1770
+01:06:25,846 --> 01:06:28,286
+That if you add a constant
+
+1771
+01:06:28,286 --> 01:06:30,726
+number to the energy of every state,
+
+1772
+01:06:30,726 --> 01:06:32,106
+it does nothing.
+
+1773
+01:06:32,266 --> 01:06:35,126
+It has no effect whatever on
+
+1774
+01:06:35,126 --> 01:06:37,986
+anything interesting that you can measure.
+
+1775
+01:06:39,026 --> 01:06:41,136
+So that's why only energy
+
+1776
+01:06:41,136 --> 01:06:43,246
+differences are relevant in physics.
+
+1777
+01:06:44,806 --> 01:06:45,346
+Okay,
+
+1778
+01:06:45,346 --> 01:06:46,566
+now let's...
+
+1779
+01:06:54,586 --> 01:06:56,986
+Let's do one more thing before we take a break.
+
+1780
+01:06:57,306 --> 01:07:01,286
+We're going to take a break and probably go home.
+
+1781
+01:07:01,486 --> 01:07:03,926
+But let's do one other thing,
+
+1782
+01:07:03,926 --> 01:07:05,066
+one interesting thing here.
+
+1783
+01:07:09,966 --> 01:07:11,826
+Let's suppose we have some observable.
+
+1784
+01:07:13,146 --> 01:07:14,106
+Some observable.
+
+1785
+01:07:14,266 --> 01:07:15,086
+I need a letter.
+
+1786
+01:07:15,266 --> 01:07:15,746
+K.
+
+1787
+01:07:16,106 --> 01:07:17,466
+K for observable.
+
+1788
+01:07:19,526 --> 01:07:21,046
+K is an operator.
+
+1789
+01:07:21,426 --> 01:07:22,566
+I'll put a little hat on it,
+
+1790
+01:07:22,566 --> 01:07:24,266
+but I'll probably forget it after a while.
+
+1791
+01:07:24,566 --> 01:07:27,106
+And I'm interested in its expectation value.
+
+1792
+01:07:27,466 --> 01:07:28,566
+Its average value.
+
+1793
+01:07:29,326 --> 01:07:31,606
+Let's take its average value in the state psi.
+
+1794
+01:07:36,025 --> 01:07:38,706
+We can just call that the average of K.
+
+1795
+01:07:40,326 --> 01:07:41,436
+If we want it to
+
+1796
+01:07:41,436 --> 01:07:42,546
+be even a little bit looser,
+
+1797
+01:07:42,546 --> 01:07:44,186
+we might just call it K.
+
+1798
+01:07:44,926 --> 01:07:47,526
+Which of course would be wrong to call
+
+1799
+01:07:47,526 --> 01:07:50,126
+it K because it's just the central value.
+
+1800
+01:07:50,366 --> 01:07:52,406
+It's just the average value of K.
+
+1801
+01:07:52,926 --> 01:07:56,086
+If the probability distribution is nice and peaked,
+
+1802
+01:07:56,086 --> 01:07:58,806
+then most of the times we would measure K
+
+1803
+01:07:59,306 --> 01:08:02,726
+somewhere near the expectation value.
+
+1804
+01:08:02,986 --> 01:08:04,326
+Somewhere near the average value.
+
+1805
+01:08:04,326 --> 01:08:05,746
+I won't write this.
+
+1806
+01:08:05,786 --> 01:08:07,726
+This is too loose for me.
+
+1807
+01:08:08,146 --> 01:08:08,786
+All right.
+
+1808
+01:08:09,146 --> 01:08:10,106
+We'll just call it K.
+
+1809
+01:08:10,286 --> 01:08:12,026
+How does this change with time?
+
+1810
+01:08:13,186 --> 01:08:15,946
+K is some very definite operator.
+
+1811
+01:08:17,166 --> 01:08:19,826
+It represents some specific observable.
+
+1812
+01:08:19,986 --> 01:08:22,645
+I want to take the same observable
+
+1813
+01:08:22,645 --> 01:08:25,305
+and ask how its value changes with time.
+
+1814
+01:08:25,746 --> 01:08:27,126
+So it could be the momentum,
+
+1815
+01:08:27,126 --> 01:08:28,126
+it could be the position,
+
+1816
+01:08:28,126 --> 01:08:30,036
+or it could be one of
+
+1817
+01:08:30,036 --> 01:08:31,946
+the observables associated with the polarization.
+
+1818
+01:08:32,745 --> 01:08:35,286
+And I want to know how it changes with time.
+
+1819
+01:08:35,366 --> 01:08:35,765
+For example,
+
+1820
+01:08:35,765 --> 01:08:39,816
+it could correspond to the
+
+1821
+01:08:39,816 --> 01:08:43,866
+observable associated with slashed polarization states.
+
+1822
+01:08:44,145 --> 01:08:44,946
+We had worked it out.
+
+1823
+01:08:45,046 --> 01:08:46,486
+It was some definite operator.
+
+1824
+01:08:47,725 --> 01:08:50,326
+We might ask how it changes with time.
+
+1825
+01:08:50,666 --> 01:08:55,086
+So I would like to calculate
+
+1826
+01:08:55,086 --> 01:08:59,506
+the time derivative of psi K psi.
+
+1827
+01:09:00,746 --> 01:09:01,926
+Why does it change?
+
+1828
+01:09:01,926 --> 01:09:05,486
+It changes because the psi's change with time.
+
+1829
+01:09:07,106 --> 01:09:09,566
+The state vectors of the system change with time.
+
+1830
+01:09:09,626 --> 01:09:11,286
+We're going to take a fixed observable,
+
+1831
+01:09:11,286 --> 01:09:12,765
+so we're not going to change
+
+1832
+01:09:12,765 --> 01:09:14,246
+the observable that we're talking about.
+
+1833
+01:09:14,626 --> 01:09:18,386
+It might correspond to some specific polarization state.
+
+1834
+01:09:18,566 --> 01:09:19,466
+We're not going to change it,
+
+1835
+01:09:19,466 --> 01:09:21,466
+but we're going to ask how it changes
+
+1836
+01:09:21,466 --> 01:09:23,466
+because the state of the system changes with time.
+
+1837
+01:09:24,826 --> 01:09:26,366
+So I'd like to calculate that.
+
+1838
+01:09:26,586 --> 01:09:26,966
+Well,
+
+1839
+01:09:26,966 --> 01:09:28,606
+this is just a product.
+
+1840
+01:09:28,966 --> 01:09:30,645
+It's a product of psi.
+
+1841
+01:09:31,485 --> 01:09:33,725
+Basically the complex conjugate of psi.
+
+1842
+01:09:34,866 --> 01:09:36,696
+Psi over here with the
+
+1843
+01:09:36,696 --> 01:09:38,526
+K in the sandwich in between.
+
+1844
+01:09:38,826 --> 01:09:39,845
+But the thing inside,
+
+1845
+01:09:39,845 --> 01:09:41,066
+the bologna in the sandwich,
+
+1846
+01:09:41,066 --> 01:09:42,086
+doesn't change with time.
+
+1847
+01:09:42,286 --> 01:09:44,645
+Only the bread on the outside changes with time.
+
+1848
+01:09:45,145 --> 01:09:47,106
+So we have a product to calculate.
+
+1849
+01:09:47,246 --> 01:09:47,626
+The derivative,
+
+1850
+01:09:47,626 --> 01:09:49,305
+the time derivative of a product.
+
+1851
+01:09:49,886 --> 01:09:51,746
+To calculate the time derivative of a
+
+1852
+01:09:51,746 --> 01:09:53,606
+product is just a sum of two terms.
+
+1853
+01:09:54,166 --> 01:09:55,696
+One term having to do with
+
+1854
+01:09:55,696 --> 01:09:57,226
+the time derivative of the bra.
+
+1855
+01:09:57,726 --> 01:09:59,176
+The other term having to do
+
+1856
+01:09:59,176 --> 01:10:00,626
+with the time derivative of the cap.
+
+1857
+01:10:00,626 --> 01:10:02,846
+So we can write this out.
+
+1858
+01:10:02,946 --> 01:10:07,506
+This is just a straightforward product rule for derivatives.
+
+1859
+01:10:10,526 --> 01:10:12,086
+This is equal to,
+
+1860
+01:10:12,086 --> 01:10:15,706
+we first time differentiate the ket.
+
+1861
+01:10:16,306 --> 01:10:17,746
+And that gives us psi,
+
+1862
+01:10:17,746 --> 01:10:19,086
+K.
+
+1863
+01:10:20,406 --> 01:10:22,226
+And I'm not going to write the psi dt.
+
+1864
+01:10:22,406 --> 01:10:23,626
+I'm just going to write psi dot.
+
+1865
+01:10:29,466 --> 01:10:31,506
+And then we have another term
+
+1866
+01:10:31,506 --> 01:10:33,546
+where the bra vector is differentiated.
+
+1867
+01:10:33,806 --> 01:10:36,526
+And that's plus psi dot,
+
+1868
+01:10:36,526 --> 01:10:39,526
+K psi.
+
+1869
+01:10:41,266 --> 01:10:41,746
+Well,
+
+1870
+01:10:41,746 --> 01:10:43,406
+where do we get these psi dots from?
+
+1871
+01:10:44,326 --> 01:10:45,646
+Apart from the fact that we,
+
+1872
+01:10:45,646 --> 01:10:47,866
+have we erased them off the blackboard?
+
+1873
+01:10:50,826 --> 01:10:51,306
+Okay,
+
+1874
+01:10:51,306 --> 01:10:51,906
+so let's see.
+
+1875
+01:10:51,966 --> 01:10:52,706
+Let me write down.
+
+1876
+01:10:52,706 --> 01:10:53,606
+We have the Schrodinger equation.
+
+1877
+01:10:53,846 --> 01:10:55,266
+We get them from the Schrodinger equation.
+
+1878
+01:10:55,766 --> 01:11:00,356
+So the Schrodinger equation is
+
+1879
+01:11:00,356 --> 01:11:04,946
+that I d psi by dt.
+
+1880
+01:11:13,166 --> 01:11:16,226
+I d psi by dt,
+
+1881
+01:11:16,226 --> 01:11:19,966
+which is also called psi dot.
+
+1882
+01:11:20,206 --> 01:11:21,606
+Let's just call it psi dot.
+
+1883
+01:11:25,446 --> 01:11:28,966
+Is equal to H psi.
+
+1884
+01:11:29,266 --> 01:11:30,326
+Do I have the sine correct?
+
+1885
+01:11:30,486 --> 01:11:30,706
+Yes,
+
+1886
+01:11:30,706 --> 01:11:31,026
+I do.
+
+1887
+01:11:31,506 --> 01:11:36,246
+We can put the I on the other side.
+
+1888
+01:11:36,346 --> 01:11:36,806
+Minus I.
+
+1889
+01:11:37,086 --> 01:11:42,386
+Psi dot is minus I H psi.
+
+1890
+01:11:43,586 --> 01:11:44,626
+We need to,
+
+1891
+01:11:44,626 --> 01:11:47,406
+we also need the corresponding equation for the bra vector.
+
+1892
+01:11:48,246 --> 01:11:52,066
+Psi dot is equal to plus.
+
+1893
+01:11:55,686 --> 01:11:58,406
+I bra vector psi times H.
+
+1894
+01:12:01,766 --> 01:12:02,206
+Okay,
+
+1895
+01:12:02,206 --> 01:12:03,686
+when you act on bra vectors,
+
+1896
+01:12:03,686 --> 01:12:04,766
+you act from the right.
+
+1897
+01:12:04,926 --> 01:12:06,246
+When you act on ket vectors,
+
+1898
+01:12:06,246 --> 01:12:07,226
+you act from the left.
+
+1899
+01:12:07,546 --> 01:12:09,206
+This equation here is just
+
+1900
+01:12:09,206 --> 01:12:10,866
+a complex conjugate of this equation.
+
+1901
+01:12:11,406 --> 01:12:13,246
+I've changed the sine of the
+
+1902
+01:12:13,246 --> 01:12:15,086
+I because the complex conjugate I,
+
+1903
+01:12:15,086 --> 01:12:16,206
+you have to change the sine.
+
+1904
+01:12:16,706 --> 01:12:17,306
+All right,
+
+1905
+01:12:17,306 --> 01:12:19,026
+so we have all the material we need.
+
+1906
+01:12:19,446 --> 01:12:20,626
+We have psi dot.
+
+1907
+01:12:20,966 --> 01:12:21,986
+What is psi dot?
+
+1908
+01:12:21,986 --> 01:12:25,146
+Psi dot is minus I H on psi.
+
+1909
+01:12:25,426 --> 01:12:27,066
+So let's put a minus I here.
+
+1910
+01:12:27,686 --> 01:12:29,846
+And instead of writing psi dot,
+
+1911
+01:12:29,846 --> 01:12:32,286
+we can write H times psi.
+
+1912
+01:12:38,646 --> 01:12:39,206
+Well,
+
+1913
+01:12:39,206 --> 01:12:40,525
+what about this equation over here?
+
+1914
+01:12:40,686 --> 01:12:41,926
+This equation here,
+
+1915
+01:12:41,926 --> 01:12:46,806
+we use the bra vector version of it.
+
+1916
+01:12:47,225 --> 01:12:48,046
+Plus I.
+
+1917
+01:12:48,806 --> 01:12:50,066
+And we have to put
+
+1918
+01:12:50,066 --> 01:12:51,326
+the H next to the psi.
+
+1919
+01:12:51,326 --> 01:12:54,626
+So let's put the H next to the psi.
+
+1920
+01:13:02,166 --> 01:13:03,586
+And I think it's plus I.
+
+1921
+01:13:06,186 --> 01:13:06,666
+Well,
+
+1922
+01:13:06,666 --> 01:13:08,646
+we have two terms which look very similar.
+
+1923
+01:13:10,386 --> 01:13:11,946
+But the H and the
+
+1924
+01:13:11,946 --> 01:13:13,506
+K come in the opposite order.
+
+1925
+01:13:15,146 --> 01:13:21,306
+So what we actually have here is minus I.
+
+1926
+01:13:21,306 --> 01:13:25,376
+This is the I times the expectation
+
+1927
+01:13:25,376 --> 01:13:29,446
+value of the commutator of K with H.
+
+1928
+01:13:29,786 --> 01:13:45,786
+So what is the commutator?
+
+1929
+01:13:45,906 --> 01:13:48,106
+The commutator of K with H.
+
+1930
+01:13:50,006 --> 01:13:51,106
+It's a statement.
+
+1931
+01:13:51,106 --> 01:13:56,646
+definition is just kH minus hK.
+
+1932
+01:13:56,646 --> 01:13:59,326
+We've done these things before,
+
+1933
+01:13:59,326 --> 01:13:59,826
+we've done
+
+1934
+01:13:59,826 --> 01:14:01,806
+commutators of position and momentum,
+
+1935
+01:14:01,806 --> 01:14:04,466
+we've done commutators of some of the
+
+1936
+01:14:04,466 --> 01:14:05,706
+polarization operators,
+
+1937
+01:14:05,706 --> 01:14:07,806
+here's k with H.
+
+1938
+01:14:07,806 --> 01:14:10,446
+So we've learned something interesting,
+
+1939
+01:14:10,766 --> 01:14:12,746
+we've learned that the time derivative,
+
+1940
+01:14:12,746 --> 01:14:13,986
+sorry,
+
+1941
+01:14:13,986 --> 01:14:15,606
+the time derivative of the
+
+1942
+01:14:15,606 --> 01:14:18,716
+expectation value of a quantity is
+
+1943
+01:14:18,716 --> 01:14:21,826
+simply minus i times the expectation
+
+1944
+01:14:21,826 --> 01:14:24,646
+value of the same object,
+
+1945
+01:14:24,646 --> 01:14:26,446
+the commutator of that object,
+
+1946
+01:14:26,446 --> 01:14:27,766
+with the Hamiltonian.
+
+1947
+01:14:27,766 --> 01:14:29,506
+It's
+
+1948
+01:14:29,506 --> 01:14:31,156
+the Hamiltonian which determines
+
+1949
+01:14:31,156 --> 01:14:32,806
+how things evolve with time.
+
+1950
+01:14:32,806 --> 01:14:33,146
+Let's
+
+1951
+01:14:33,666 --> 01:14:34,926
+condense the equation here.
+
+1952
+01:14:34,926 --> 01:14:40,006
+Fundamental theorem about how things change in
+
+1953
+01:14:40,006 --> 01:14:40,746
+quantum mechanics,
+
+1954
+01:14:40,746 --> 01:14:42,306
+this is equal,
+
+1955
+01:14:42,306 --> 01:14:43,306
+now I've erased it and
+
+1956
+01:14:43,306 --> 01:14:44,306
+I don't remember what it was.
+
+1957
+01:14:44,426 --> 01:14:44,946
+Okay.
+
+1958
+01:14:46,466 --> 01:14:47,706
+Minus i or plus i?
+
+1959
+01:14:47,706 --> 01:14:49,966
+Minus i,
+
+1960
+01:14:49,966 --> 01:14:51,306
+but now it depends on,
+
+1961
+01:14:51,306 --> 01:14:54,726
+let's just write it this way,
+
+1962
+01:14:54,906 --> 01:14:55,306
+let's,
+
+1963
+01:14:55,306 --> 01:14:59,646
+expectation value of k,
+
+1964
+01:14:59,646 --> 01:15:01,226
+the time derivative of it,
+
+1965
+01:15:01,226 --> 01:15:03,746
+is minus i times the
+
+1966
+01:15:03,746 --> 01:15:06,366
+expectation value of the commutator,
+
+1967
+01:15:06,366 --> 01:15:08,436
+now is it H of k
+
+1968
+01:15:08,436 --> 01:15:10,506
+with k or k with H?
+
+1969
+01:15:10,506 --> 01:15:12,586
+K with H?
+
+1970
+01:15:18,606 --> 01:15:18,846
+All right,
+
+1971
+01:15:18,846 --> 01:15:20,946
+so to find out how a thing changes with time,
+
+1972
+01:15:20,946 --> 01:15:23,126
+you commute it with the
+
+1973
+01:15:23,126 --> 01:15:23,766
+Hamiltonian.
+
+1974
+01:15:24,146 --> 01:15:30,126
+Let me just remind you that in classical mechanics,
+
+1975
+01:15:30,126 --> 01:15:31,296
+what you do if you want
+
+1976
+01:15:31,296 --> 01:15:32,466
+to find out how a thing
+
+1977
+01:15:32,466 --> 01:15:34,766
+changes with time is you take
+
+1978
+01:15:34,766 --> 01:15:37,066
+the Poisson bracket with the Hamiltonian.
+
+1979
+01:15:37,066 --> 01:15:38,466
+In both cases,
+
+1980
+01:15:38,666 --> 01:15:41,386
+it's the Hamiltonian which tells you how things change,
+
+1981
+01:15:41,386 --> 01:15:43,306
+how they change with time.
+
+1982
+01:15:44,626 --> 01:15:45,106
+Okay.
+
+1983
+01:15:45,606 --> 01:15:46,306
+In quantum mechanics,
+
+1984
+01:15:46,306 --> 01:15:47,646
+it's the commutator.
+
+1985
+01:15:47,686 --> 01:15:48,926
+In classical mechanics,
+
+1986
+01:15:48,926 --> 01:15:50,126
+it's the Poisson bracket.
+
+1987
+01:15:50,526 --> 01:15:50,806
+Now,
+
+1988
+01:15:50,806 --> 01:15:51,086
+in fact,
+
+1989
+01:15:51,086 --> 01:15:52,436
+Poisson brackets and commutators are
+
+1990
+01:15:52,436 --> 01:15:53,786
+very close to each other.
+
+1991
+01:15:53,826 --> 01:15:54,826
+They're very closely connected,
+
+1992
+01:15:54,826 --> 01:15:56,606
+and we'll talk about that connection.
+
+1993
+01:15:57,186 --> 01:15:57,886
+But for now,
+
+1994
+01:15:57,886 --> 01:16:01,706
+and this was a very easy derivation.
+
+1995
+01:16:01,766 --> 01:16:02,726
+This was very simple.
+
+1996
+01:16:02,886 --> 01:16:03,426
+What did we do?
+
+1997
+01:16:03,506 --> 01:16:04,646
+Let me just remind you what we did.
+
+1998
+01:16:05,066 --> 01:16:07,156
+We time differentiated this by
+
+1999
+01:16:07,156 --> 01:16:09,246
+time differentiating the bra vector
+
+2000
+01:16:09,846 --> 01:16:11,786
+and adding to it the
+
+2001
+01:16:11,786 --> 01:16:13,726
+time derivative of the ket vector.
+
+2002
+01:16:13,726 --> 01:16:16,436
+And then we just used the Schrodinger equation
+
+2003
+01:16:16,436 --> 01:16:19,146
+for the time derivative of the ket vector
+
+2004
+01:16:19,146 --> 01:16:21,006
+and the time derivative of the bra vector.
+
+2005
+01:16:21,226 --> 01:16:22,606
+The opposite sign,
+
+2006
+01:16:22,606 --> 01:16:25,066
+which appears here because of the complex conjugate,
+
+2007
+01:16:25,866 --> 01:16:27,926
+wound up giving us a commutator.
+
+2008
+01:16:29,326 --> 01:16:30,806
+So it's very two lines,
+
+2009
+01:16:30,806 --> 01:16:32,086
+two lines basically,
+
+2010
+01:16:33,145 --> 01:16:36,005
+to derive the connection between
+
+2011
+01:16:36,005 --> 01:16:38,866
+time derivatives and commutators with Hamiltonians.
+
+2012
+01:16:39,466 --> 01:16:40,486
+We could,
+
+2013
+01:16:40,486 --> 01:16:41,006
+well,
+
+2014
+01:16:41,006 --> 01:16:41,726
+I didn't,
+
+2015
+01:16:41,726 --> 01:16:42,286
+I didn't,
+
+2016
+01:16:42,286 --> 01:16:43,626
+we could apply,
+
+2017
+01:16:43,726 --> 01:16:45,206
+we could apply this to the problem of the polarization
+
+2018
+01:16:45,806 --> 01:16:48,336
+and see how the expectation value of
+
+2019
+01:16:48,336 --> 01:16:50,866
+polarization would change as the photon moved downstream.
+
+2020
+01:16:51,186 --> 01:16:52,226
+I'm not going to do that because
+
+2021
+01:16:52,226 --> 01:16:53,266
+I don't have it in my notes.
+
+2022
+01:16:53,866 --> 01:16:54,506
+All right,
+
+2023
+01:16:54,506 --> 01:16:55,886
+let's take a break for a few minutes.
+
+2024
+01:16:56,226 --> 01:16:58,356
+So we proved the theorem that said
+
+2025
+01:16:58,356 --> 01:17:00,486
+that the time derivative of any expectation value
+
+2026
+01:17:01,046 --> 01:17:03,126
+is related to a certain commutator,
+
+2027
+01:17:03,126 --> 01:17:06,106
+commutator of the Hamiltonian with the quantity in question.
+
+2028
+01:17:06,926 --> 01:17:09,676
+An implication of that is that if
+
+2029
+01:17:09,676 --> 01:17:12,426
+a quantity k commutes with the Hamiltonian,
+
+2030
+01:17:12,426 --> 01:17:13,306
+in other words,
+
+2031
+01:17:13,726 --> 01:17:15,266
+if the commutator is zero,
+
+2032
+01:17:15,586 --> 01:17:18,016
+then the time derivative of
+
+2033
+01:17:18,016 --> 01:17:20,446
+its expectation value is exactly zero.
+
+2034
+01:17:21,086 --> 01:17:23,386
+Exactly zero in any state.
+
+2035
+01:17:24,126 --> 01:17:25,466
+In any state,
+
+2036
+01:17:25,466 --> 01:17:28,986
+the time derivative of the expectation value will be zero
+
+2037
+01:17:28,986 --> 01:17:30,376
+if the commutator of k
+
+2038
+01:17:30,376 --> 01:17:31,766
+with h is equal to zero.
+
+2039
+01:17:32,086 --> 01:17:34,626
+So that's the condition for a conserved quantity.
+
+2040
+01:17:36,486 --> 01:17:38,726
+You can prove a stronger theorem.
+
+2041
+01:17:39,446 --> 01:17:40,846
+I won't do it tonight.
+
+2042
+01:17:41,166 --> 01:17:43,706
+This is simply a theorem about the expectation value.
+
+2043
+01:17:44,926 --> 01:17:47,326
+I'd like to prove a somewhat stronger theorem.
+
+2044
+01:17:47,446 --> 01:17:49,166
+The stronger theorem might
+
+2045
+01:17:49,166 --> 01:17:50,886
+say that the probability distribution
+
+2046
+01:17:50,886 --> 01:17:52,856
+or the probability for a given
+
+2047
+01:17:52,856 --> 01:17:54,826
+value of k doesn't change with time.
+
+2048
+01:17:55,026 --> 01:17:55,866
+It's also true.
+
+2049
+01:17:56,206 --> 01:17:57,566
+But for the time being,
+
+2050
+01:17:57,566 --> 01:17:59,146
+I'll simplify the theorem.
+
+2051
+01:17:59,306 --> 01:18:01,966
+The expectation value doesn't change if
+
+2052
+01:18:01,966 --> 01:18:04,626
+the object commutes with the Hamiltonian.
+
+2053
+01:18:05,906 --> 01:18:06,686
+And that,
+
+2054
+01:18:06,686 --> 01:18:09,006
+at least at the level of expectation values,
+
+2055
+01:18:09,286 --> 01:18:11,486
+is a statement that any quantity
+
+2056
+01:18:11,486 --> 01:18:13,686
+which commutes with the Hamiltonian is constant.
+
+2057
+01:18:13,686 --> 01:18:13,946
+It's conserved.
+
+2058
+01:18:15,406 --> 01:18:15,706
+Certainly,
+
+2059
+01:18:15,706 --> 01:18:17,726
+the implication goes the other way.
+
+2060
+01:18:17,826 --> 01:18:19,406
+If a quantity is conserved,
+
+2061
+01:18:19,526 --> 01:18:23,486
+then its expectation value is time-independent,
+
+2062
+01:18:23,486 --> 01:18:23,806
+definitely.
+
+2063
+01:18:24,286 --> 01:18:25,486
+And in that case,
+
+2064
+01:18:25,486 --> 01:18:26,946
+it must commute with the Hamiltonian.
+
+2065
+01:18:27,946 --> 01:18:30,086
+The implication goes in both directions.
+
+2066
+01:18:30,626 --> 01:18:32,126
+If a quantity is conserved,
+
+2067
+01:18:32,126 --> 01:18:33,386
+it commutes with the Hamiltonian.
+
+2068
+01:18:33,426 --> 01:18:35,546
+If a quantity commutes with the Hamiltonian,
+
+2069
+01:18:35,546 --> 01:18:36,526
+then it's conserved.
+
+2070
+01:18:36,866 --> 01:18:40,006
+But one special case is the Hamiltonian itself.
+
+2071
+01:18:40,106 --> 01:18:41,826
+Any operator commutes with itself.
+
+2072
+01:18:43,686 --> 01:18:45,246
+Any operator commutes with itself.
+
+2073
+01:18:45,606 --> 01:18:48,106
+A times A is equal to A times A,
+
+2074
+01:18:48,206 --> 01:18:49,136
+and it doesn't matter which
+
+2075
+01:18:49,136 --> 01:18:50,066
+way you put the A's in.
+
+2076
+01:18:50,906 --> 01:18:56,386
+So it implies that the Hamiltonian itself is conserved.
+
+2077
+01:18:56,766 --> 01:18:59,846
+The Hamiltonian is some kind of conserved quantity.
+
+2078
+01:19:00,586 --> 01:19:02,766
+Let me just point out the classical analog.
+
+2079
+01:19:03,226 --> 01:19:06,096
+The classical analog is that the Poisson bracket
+
+2080
+01:19:06,096 --> 01:19:08,966
+of any quantity with itself is also zero.
+
+2081
+01:19:09,366 --> 01:19:10,366
+What would that be?
+
+2082
+01:19:10,486 --> 01:19:12,006
+Let's take some object A.
+
+2083
+01:19:13,826 --> 01:19:15,806
+That's dA by dX,
+
+2084
+01:19:15,806 --> 01:19:17,726
+dB by dP,
+
+2085
+01:19:17,726 --> 01:19:22,566
+minus dA by dP,
+
+2086
+01:19:22,566 --> 01:19:25,406
+dB by dX.
+
+2087
+01:19:25,726 --> 01:19:27,666
+That's the Poisson bracket of A with B.
+
+2088
+01:19:28,126 --> 01:19:29,706
+If A and B are equal,
+
+2089
+01:19:29,706 --> 01:19:32,226
+then obviously this is equal to zero.
+
+2090
+01:19:32,566 --> 01:19:35,106
+dA by dX is the same as dB by dX,
+
+2091
+01:19:35,126 --> 01:19:36,276
+and dB by dP is
+
+2092
+01:19:36,276 --> 01:19:37,426
+the same as dA by dP,
+
+2093
+01:19:37,506 --> 01:19:39,186
+so that this is equal to zero.
+
+2094
+01:19:39,626 --> 01:19:40,146
+Again,
+
+2095
+01:19:40,146 --> 01:19:41,546
+in classical physics,
+
+2096
+01:19:41,546 --> 01:19:42,946
+it follows that
+
+2097
+01:19:42,946 --> 01:19:46,346
+any quantity whose Poisson bracket with the
+
+2098
+01:19:46,346 --> 01:19:49,746
+Hamiltonian is equal to zero is conserved.
+
+2099
+01:19:49,886 --> 01:19:51,626
+Its time derivative is equal to zero.
+
+2100
+01:19:51,866 --> 01:19:52,946
+And in particular,
+
+2101
+01:19:52,946 --> 01:19:58,246
+the Hamiltonian is a quantity which commutes...
+
+2102
+01:19:58,246 --> 01:19:58,386
+Oh,
+
+2103
+01:19:58,386 --> 01:19:58,706
+sorry.
+
+2104
+01:19:59,046 --> 01:20:00,896
+...is a quantity whose Poisson bracket
+
+2105
+01:20:00,896 --> 01:20:02,746
+with itself is equal to zero,
+
+2106
+01:20:02,946 --> 01:20:05,986
+and so it follows that the Hamiltonian is conserved.
+
+2107
+01:20:06,346 --> 01:20:07,546
+In quantum mechanics,
+
+2108
+01:20:07,546 --> 01:20:08,846
+it's the commutator,
+
+2109
+01:20:08,846 --> 01:20:10,206
+but same statement.
+
+2110
+01:20:10,786 --> 01:20:12,646
+If a quantity commutes with...
+
+2111
+01:20:12,946 --> 01:20:14,566
+If a quantity commutes with a Hamiltonian...
+
+2112
+01:20:14,566 --> 01:20:15,506
+I'm saying it over and over.
+
+2113
+01:20:15,726 --> 01:20:17,486
+If a quantity commutes with a Hamiltonian,
+
+2114
+01:20:17,486 --> 01:20:18,086
+it's conserved.
+
+2115
+01:20:18,086 --> 01:20:19,846
+The Hamiltonian commutes with a Hamiltonian,
+
+2116
+01:20:19,846 --> 01:20:20,646
+the Hamiltonian is conserved.
+
+2117
+01:20:22,566 --> 01:20:23,926
+What is that Hamiltonian?
+
+2118
+01:20:23,926 --> 01:20:24,586
+It's the energy.
+
+2119
+01:20:25,446 --> 01:20:27,906
+So this is the principle
+
+2120
+01:20:27,906 --> 01:20:30,366
+of energy conservation coming out of...
+
+2121
+01:20:30,366 --> 01:20:32,206
+just spontaneously coming out of
+
+2122
+01:20:32,206 --> 01:20:34,046
+basic formalism of quantum mechanics.
+
+2123
+01:20:35,166 --> 01:20:37,066
+There may or may not be
+
+2124
+01:20:37,066 --> 01:20:38,966
+other quantities which commute with a Hamiltonian.
+
+2125
+01:20:39,126 --> 01:20:39,986
+If there are,
+
+2126
+01:20:39,986 --> 01:20:41,566
+they are also conserved.
+
+2127
+01:20:46,586 --> 01:20:50,066
+Let's now come to a particle on a line.
+
+2128
+01:20:51,246 --> 01:20:52,626
+Particle moving on a line.
+
+2129
+01:20:53,346 --> 01:20:53,726
+Now,
+
+2130
+01:20:53,726 --> 01:20:56,166
+what is the connection...
+
+2131
+01:20:56,166 --> 01:20:56,346
+Well,
+
+2132
+01:20:56,346 --> 01:20:57,006
+first of all,
+
+2133
+01:20:57,006 --> 01:20:58,946
+let's just have a particle moving on a line.
+
+2134
+01:20:59,106 --> 01:21:00,506
+No potential energy,
+
+2135
+01:21:00,506 --> 01:21:02,426
+no forces on the particle for simplicity.
+
+2136
+01:21:03,746 --> 01:21:06,626
+Then the particle is described either by
+
+2137
+01:21:06,626 --> 01:21:09,506
+a wave function which depends on its position,
+
+2138
+01:21:10,086 --> 01:21:12,006
+or the Fourier transform,
+
+2139
+01:21:12,946 --> 01:21:13,966
+which depends on momentum.
+
+2140
+01:21:14,586 --> 01:21:17,256
+Psi star of x times psi of x
+
+2141
+01:21:17,256 --> 01:21:19,926
+is the probability to find the particle located somewhere.
+
+2142
+01:21:20,186 --> 01:21:23,126
+Psi twiddle of p times psi star twiddle of
+
+2143
+01:21:23,126 --> 01:21:26,066
+p is the probability that it has a given momentum.
+
+2144
+01:21:30,266 --> 01:21:32,426
+How do we apply this idea,
+
+2145
+01:21:32,426 --> 01:21:33,906
+this Schrodinger equation idea,
+
+2146
+01:21:34,486 --> 01:21:37,166
+to the wave function of a particle?
+
+2147
+01:21:37,446 --> 01:21:37,846
+Again,
+
+2148
+01:21:37,846 --> 01:21:39,526
+the rules are exactly the same.
+
+2149
+01:21:39,526 --> 01:21:46,256
+We would like to find some way of thinking about the
+
+2150
+01:21:46,256 --> 01:21:52,986
+time derivative of psi of x and t with respect to t.
+
+2151
+01:21:54,366 --> 01:21:55,006
+Now,
+
+2152
+01:21:55,006 --> 01:21:56,406
+what we're doing is we're doing
+
+2153
+01:21:56,406 --> 01:21:57,806
+the analog of what we did before.
+
+2154
+01:21:58,146 --> 01:22:01,926
+Instead of writing a state vector psi of t,
+
+2155
+01:22:03,305 --> 01:22:06,466
+I'm just writing the corresponding wave function,
+
+2156
+01:22:06,466 --> 01:22:07,586
+psi of x,
+
+2157
+01:22:07,586 --> 01:22:09,886
+which also depends on time.
+
+2158
+01:22:10,046 --> 01:22:11,566
+Wave functions depend on time.
+
+2159
+01:22:11,726 --> 01:22:13,426
+If they didn't depend on time,
+
+2160
+01:22:13,426 --> 01:22:14,486
+everything would be frozen.
+
+2161
+01:22:15,106 --> 01:22:17,346
+And so for a particle on a line,
+
+2162
+01:22:17,686 --> 01:22:19,666
+the state vector can simply
+
+2163
+01:22:19,666 --> 01:22:21,646
+be replaced by a wave function,
+
+2164
+01:22:21,846 --> 01:22:23,466
+which depends on x and t,
+
+2165
+01:22:23,646 --> 01:22:25,926
+or its Fourier transform,
+
+2166
+01:22:25,926 --> 01:22:28,586
+which depends on momentum and also t.
+
+2167
+01:22:29,466 --> 01:22:31,226
+How do they evolve with time?
+
+2168
+01:22:32,126 --> 01:22:33,526
+They must evolve with time
+
+2169
+01:22:33,526 --> 01:22:34,926
+by the same set of rules,
+
+2170
+01:22:36,146 --> 01:22:37,046
+minus i,
+
+2171
+01:22:37,586 --> 01:22:39,766
+times some Hermitian operator,
+
+2172
+01:22:42,186 --> 01:22:44,206
+still called the Hamiltonian,
+
+2173
+01:22:45,325 --> 01:22:47,926
+acting on psi of x and t.
+
+2174
+01:22:50,766 --> 01:22:52,286
+Same set of arguments.
+
+2175
+01:22:53,666 --> 01:22:57,686
+And I've simply just removed the brackets here
+
+2176
+01:22:57,686 --> 01:23:04,866
+just by remembering that functions are vectors.
+
+2177
+01:23:05,166 --> 01:23:06,926
+Functions of x are vectors.
+
+2178
+01:23:07,586 --> 01:23:08,326
+So I don't need...
+
+2179
+01:23:08,326 --> 01:23:10,436
+It would be a little bit redundant for
+
+2180
+01:23:10,436 --> 01:23:12,546
+me to put a ket symbol around this,
+
+2181
+01:23:12,626 --> 01:23:15,066
+since we remember that functions are a vector space.
+
+2182
+01:23:15,926 --> 01:23:16,586
+All right,
+
+2183
+01:23:16,586 --> 01:23:16,766
+now,
+
+2184
+01:23:16,766 --> 01:23:18,066
+what operator?
+
+2185
+01:23:18,426 --> 01:23:20,086
+What operators do we have around?
+
+2186
+01:23:20,766 --> 01:23:21,246
+Well,
+
+2187
+01:23:21,246 --> 01:23:23,766
+we can multiply psi by functions of x.
+
+2188
+01:23:23,986 --> 01:23:25,126
+That's something we can do.
+
+2189
+01:23:25,386 --> 01:23:27,266
+So just multiplying by some function
+
+2190
+01:23:27,266 --> 01:23:29,146
+of x is a linear operator.
+
+2191
+01:23:29,546 --> 01:23:31,426
+And we can differentiate psi.
+
+2192
+01:23:31,646 --> 01:23:33,546
+We can do all sorts of
+
+2193
+01:23:33,546 --> 01:23:35,446
+operations involving multiplying by functions of x,
+
+2194
+01:23:36,666 --> 01:23:37,566
+differentiating with a function of x,
+
+2195
+01:23:37,586 --> 01:23:38,226
+with respect to x.
+
+2196
+01:23:38,346 --> 01:23:39,426
+They're all linear operators.
+
+2197
+01:23:39,986 --> 01:23:43,086
+They're all linear operators on these psi of x's here.
+
+2198
+01:23:43,186 --> 01:23:43,726
+For example,
+
+2199
+01:23:43,726 --> 01:23:45,746
+just multiplying by x,
+
+2200
+01:23:46,866 --> 01:23:49,426
+that's the operator that corresponds to position.
+
+2201
+01:23:50,026 --> 01:23:52,626
+What about the operator that corresponds to momentum?
+
+2202
+01:23:54,006 --> 01:23:57,126
+That's minus i d by dx.
+
+2203
+01:23:58,846 --> 01:24:00,606
+Let's put the h-bar into this.
+
+2204
+01:24:00,686 --> 01:24:03,386
+Minus i h-bar d by dx,
+
+2205
+01:24:03,386 --> 01:24:04,366
+that's momentum.
+
+2206
+01:24:05,726 --> 01:24:06,286
+Okay.
+
+2207
+01:24:06,286 --> 01:24:07,446
+What do we know?
+
+2208
+01:24:08,246 --> 01:24:10,286
+We know classically...
+
+2209
+01:24:10,286 --> 01:24:11,166
+Now,
+
+2210
+01:24:11,166 --> 01:24:13,366
+classically is not a different theory.
+
+2211
+01:24:14,026 --> 01:24:16,076
+Classical physics is the limit of
+
+2212
+01:24:16,076 --> 01:24:18,126
+quantum mechanics for rather heavy objects,
+
+2213
+01:24:18,466 --> 01:24:20,656
+which are heavy enough that quantum
+
+2214
+01:24:20,656 --> 01:24:22,846
+mechanics is not important for them.
+
+2215
+01:24:23,066 --> 01:24:24,906
+But it's a limit of quantum mechanics.
+
+2216
+01:24:25,006 --> 01:24:26,336
+It's kind of a special case
+
+2217
+01:24:26,336 --> 01:24:27,666
+of quantum mechanics in a certain limit.
+
+2218
+01:24:28,746 --> 01:24:31,166
+What do we know classically about the
+
+2219
+01:24:31,166 --> 01:24:33,586
+motion of a particle on a line?
+
+2220
+01:24:33,586 --> 01:24:35,386
+We know that the energy,
+
+2221
+01:24:38,386 --> 01:24:40,906
+which we can also think of as the Hamiltonian,
+
+2222
+01:24:40,906 --> 01:24:41,666
+classically,
+
+2223
+01:24:41,846 --> 01:24:43,366
+but we know that the energy,
+
+2224
+01:24:43,366 --> 01:24:43,946
+E,
+
+2225
+01:24:44,706 --> 01:24:47,286
+which I'll also remind you is the Hamiltonian,
+
+2226
+01:24:47,346 --> 01:24:48,186
+is what?
+
+2227
+01:24:49,166 --> 01:24:50,926
+It's related to the momentum.
+
+2228
+01:24:51,146 --> 01:24:53,106
+It's the square of the momentum divided
+
+2229
+01:24:53,106 --> 01:24:55,066
+by twice the mass of the particle.
+
+2230
+01:24:56,146 --> 01:24:58,996
+I've simply used kinetic energy
+
+2231
+01:24:58,996 --> 01:25:01,846
+as one half m velocity squared,
+
+2232
+01:25:02,046 --> 01:25:03,566
+and momentum is one half.
+
+2233
+01:25:03,586 --> 01:25:04,746
+So the energy is m times velocity.
+
+2234
+01:25:06,186 --> 01:25:08,606
+Just solve this equation for the velocity,
+
+2235
+01:25:08,606 --> 01:25:09,846
+plug it back into here,
+
+2236
+01:25:10,046 --> 01:25:12,466
+and the answer is p squared over 2m.
+
+2237
+01:25:13,406 --> 01:25:14,546
+That suggests,
+
+2238
+01:25:14,546 --> 01:25:16,526
+does not prove,
+
+2239
+01:25:17,506 --> 01:25:19,976
+you can never prove something about
+
+2240
+01:25:19,976 --> 01:25:22,446
+quantum mechanics from the classical physics.
+
+2241
+01:25:22,966 --> 01:25:24,826
+You can suggest,
+
+2242
+01:25:24,826 --> 01:25:26,226
+or you can,
+
+2243
+01:25:26,226 --> 01:25:26,786
+if you like,
+
+2244
+01:25:26,786 --> 01:25:27,126
+say,
+
+2245
+01:25:27,306 --> 01:25:29,736
+the classical limit has an energy
+
+2246
+01:25:29,736 --> 01:25:32,166
+which is p squared over 2m.
+
+2247
+01:25:32,166 --> 01:25:34,996
+A suggestion and a guess
+
+2248
+01:25:34,996 --> 01:25:37,826
+is that the quantum mechanical Hamiltonian
+
+2249
+01:25:37,826 --> 01:25:40,326
+is also p squared over 2m.
+
+2250
+01:25:42,186 --> 01:25:44,266
+What does p squared over 2m
+
+2251
+01:25:44,266 --> 01:25:46,346
+mean in the quantum mechanical context?
+
+2252
+01:25:46,626 --> 01:25:47,766
+Let's guess now.
+
+2253
+01:25:48,046 --> 01:25:51,726
+p squared over twice the mass.
+
+2254
+01:25:52,066 --> 01:25:53,846
+But now this p is an operator.
+
+2255
+01:25:54,326 --> 01:25:55,586
+What does this mean?
+
+2256
+01:25:55,726 --> 01:25:56,186
+What is p?
+
+2257
+01:25:56,326 --> 01:25:58,286
+p is minus i d by dx.
+
+2258
+01:25:59,126 --> 01:26:01,526
+So if it was just p that appeared here,
+
+2259
+01:26:01,526 --> 01:26:03,606
+we would just write minus i d by dx,
+
+2260
+01:26:03,966 --> 01:26:06,606
+and this would be a differential equation for psi.
+
+2261
+01:26:07,086 --> 01:26:08,566
+What does p squared mean?
+
+2262
+01:26:08,706 --> 01:26:10,406
+p squared means p times p.
+
+2263
+01:26:11,966 --> 01:26:13,626
+When you multiply operators,
+
+2264
+01:26:14,286 --> 01:26:16,786
+it simply means you multiply the operator,
+
+2265
+01:26:17,466 --> 01:26:19,666
+if you apply it to a wave function,
+
+2266
+01:26:19,966 --> 01:26:20,486
+you multiply,
+
+2267
+01:26:20,486 --> 01:26:23,106
+you first apply the first operator,
+
+2268
+01:26:23,286 --> 01:26:24,726
+and then you apply the second operator.
+
+2269
+01:26:25,266 --> 01:26:28,286
+So here's what p squared means.
+
+2270
+01:26:29,426 --> 01:26:31,506
+p squared on psi of x,
+
+2271
+01:26:34,046 --> 01:26:38,606
+means minus i h bar d by dx
+
+2272
+01:26:40,186 --> 01:26:46,326
+being applied to minus i d psi by dx.
+
+2273
+01:26:48,746 --> 01:26:51,606
+This is p acting on psi,
+
+2274
+01:26:51,866 --> 01:26:54,046
+and here's p acting on the result.
+
+2275
+01:26:54,566 --> 01:26:56,386
+That's just p squared on psi.
+
+2276
+01:26:58,306 --> 01:27:01,226
+So now we can write the Schrodinger equation,
+
+2277
+01:27:01,226 --> 01:27:04,546
+the Schrodinger equation just becomes that it's minus i,
+
+2278
+01:27:05,466 --> 01:27:06,446
+p squared,
+
+2279
+01:27:06,446 --> 01:27:07,726
+what's p squared?
+
+2280
+01:27:07,946 --> 01:27:10,426
+Minus i times minus i is another minus sign,
+
+2281
+01:27:10,546 --> 01:27:11,386
+it looks like to me.
+
+2282
+01:27:15,006 --> 01:27:16,186
+Missing an h bar here?
+
+2283
+01:27:16,566 --> 01:27:16,786
+Yeah,
+
+2284
+01:27:16,786 --> 01:27:18,106
+there's just h bar squared.
+
+2285
+01:27:18,446 --> 01:27:19,446
+h bar squared,
+
+2286
+01:27:20,326 --> 01:27:24,146
+the second derivative of psi with respect to x.
+
+2287
+01:27:25,006 --> 01:27:26,086
+That's what this means,
+
+2288
+01:27:26,346 --> 01:27:28,626
+e by dx times d psi by dx
+
+2289
+01:27:28,626 --> 01:27:30,366
+is just the second derivative of psi
+
+2290
+01:27:30,366 --> 01:27:31,326
+with respect to x.
+
+2291
+01:27:32,286 --> 01:27:34,146
+Don't you get i squared there?
+
+2292
+01:27:35,586 --> 01:27:36,066
+Yeah,
+
+2293
+01:27:36,066 --> 01:27:36,806
+i squared,
+
+2294
+01:27:37,106 --> 01:27:39,266
+i squared which is a minus sign,
+
+2295
+01:27:39,406 --> 01:27:40,706
+no more i there.
+
+2296
+01:27:42,006 --> 01:27:43,606
+And you need an h here.
+
+2297
+01:27:43,606 --> 01:27:44,586
+But you get a minus 1.
+
+2298
+01:27:45,546 --> 01:27:46,506
+Is it a minus?
+
+2299
+01:27:46,506 --> 01:27:46,786
+Yeah.
+
+2300
+01:27:46,846 --> 01:27:47,986
+Minus i times minus i
+
+2301
+01:27:47,986 --> 01:27:49,126
+is the same as plus i,
+
+2302
+01:27:49,146 --> 01:27:49,286
+yeah,
+
+2303
+01:27:49,286 --> 01:27:49,546
+minus.
+
+2304
+01:27:50,826 --> 01:27:51,306
+Yeah.
+
+2305
+01:27:55,506 --> 01:27:57,926
+p squared is minus i
+
+2306
+01:27:57,926 --> 01:28:00,346
+times minus i is minus 1.
+
+2307
+01:28:00,726 --> 01:28:01,086
+Yeah.
+
+2308
+01:28:01,186 --> 01:28:01,546
+Yeah.
+
+2309
+01:28:01,626 --> 01:28:02,406
+There was an i there.
+
+2310
+01:28:03,666 --> 01:28:04,666
+It's just a minus sign.
+
+2311
+01:28:05,226 --> 01:28:05,586
+Minus.
+
+2312
+01:28:07,086 --> 01:28:07,706
+Oh boy,
+
+2313
+01:28:07,706 --> 01:28:08,986
+I've lost track now.
+
+2314
+01:28:10,806 --> 01:28:11,166
+Wait,
+
+2315
+01:28:11,166 --> 01:28:12,626
+so it was a minus i from here,
+
+2316
+01:28:12,626 --> 01:28:12,946
+right?
+
+2317
+01:28:14,706 --> 01:28:15,786
+Minus i from here.
+
+2318
+01:28:16,346 --> 01:28:16,706
+Right,
+
+2319
+01:28:16,706 --> 01:28:17,486
+it was three i's.
+
+2320
+01:28:17,586 --> 01:28:20,486
+And then p squared gives me another minus.
+
+2321
+01:28:21,966 --> 01:28:22,326
+Yeah.
+
+2322
+01:28:22,966 --> 01:28:23,946
+I think I got it right.
+
+2323
+01:28:24,006 --> 01:28:24,386
+In fact,
+
+2324
+01:28:24,386 --> 01:28:25,866
+I think I have it right in the first place.
+
+2325
+01:28:26,126 --> 01:28:27,446
+You should put an h bar
+
+2326
+01:28:27,446 --> 01:28:28,766
+in the Schrodinger equation as well
+
+2327
+01:28:28,766 --> 01:28:30,506
+if you're going to keep it for p.
+
+2328
+01:28:31,026 --> 01:28:31,346
+Where?
+
+2329
+01:28:31,606 --> 01:28:33,326
+In the Schrodinger equation.
+
+2330
+01:28:33,706 --> 01:28:34,166
+Oh yeah,
+
+2331
+01:28:34,166 --> 01:28:34,886
+there's no minus i.
+
+2332
+01:28:34,926 --> 01:28:34,986
+Oh,
+
+2333
+01:28:34,986 --> 01:28:35,046
+good,
+
+2334
+01:28:35,046 --> 01:28:35,326
+good,
+
+2335
+01:28:35,326 --> 01:28:35,506
+good.
+
+2336
+01:28:36,126 --> 01:28:36,446
+Yes.
+
+2337
+01:28:37,086 --> 01:28:38,026
+You're absolutely right.
+
+2338
+01:28:38,126 --> 01:28:38,816
+So I think I'm just
+
+2339
+01:28:38,816 --> 01:28:39,506
+going to do it over again.
+
+2340
+01:28:39,666 --> 01:28:40,706
+Let's just do it over again.
+
+2341
+01:28:43,986 --> 01:28:44,906
+Let's do it over again.
+
+2342
+01:28:45,006 --> 01:28:45,886
+Keep all the factors.
+
+2343
+01:28:46,766 --> 01:28:47,086
+Okay.
+
+2344
+01:28:48,966 --> 01:28:49,286
+So,
+
+2345
+01:28:49,286 --> 01:28:55,006
+our basic rule is that i h bar,
+
+2346
+01:28:56,766 --> 01:28:57,826
+i h bar,
+
+2347
+01:28:58,766 --> 01:28:59,806
+d psi by dt
+
+2348
+01:29:01,486 --> 01:29:03,766
+is equal to h psi,
+
+2349
+01:29:03,766 --> 01:29:04,126
+right?
+
+2350
+01:29:04,406 --> 01:29:05,346
+Do I have it right?
+
+2351
+01:29:06,686 --> 01:29:08,186
+Is that what I told you in the beginning?
+
+2352
+01:29:08,606 --> 01:29:08,726
+Yeah.
+
+2353
+01:29:08,746 --> 01:29:09,166
+Yeah,
+
+2354
+01:29:09,166 --> 01:29:09,446
+alright.
+
+2355
+01:29:09,726 --> 01:29:11,526
+i h bar times d psi by dt.
+
+2356
+01:29:11,646 --> 01:29:12,326
+Now what is h?
+
+2357
+01:29:12,806 --> 01:29:15,346
+h is p squared over 2m.
+
+2358
+01:29:17,086 --> 01:29:17,846
+And p,
+
+2359
+01:29:17,846 --> 01:29:19,246
+each factor of p,
+
+2360
+01:29:21,286 --> 01:29:22,526
+1 over 2m,
+
+2361
+01:29:22,646 --> 01:29:25,256
+each factor of p is minus
+
+2362
+01:29:25,256 --> 01:29:27,866
+i h bar d by dx.
+
+2363
+01:29:27,866 --> 01:29:29,446
+We have two of them.
+
+2364
+01:29:29,746 --> 01:29:32,656
+There's another minus i h
+
+2365
+01:29:32,656 --> 01:29:35,566
+bar d by dx times psi.
+
+2366
+01:29:36,366 --> 01:29:37,326
+So altogether,
+
+2367
+01:29:37,326 --> 01:29:40,366
+the right-hand side is 1 over 2m.
+
+2368
+01:29:41,585 --> 01:29:43,906
+I have the feeling I've still lost the minus sign.
+
+2369
+01:29:45,545 --> 01:29:46,105
+No?
+
+2370
+01:29:46,466 --> 01:29:47,026
+No.
+
+2371
+01:29:47,125 --> 01:29:47,466
+Okay.
+
+2372
+01:29:47,706 --> 01:29:51,826
+1 over 2m h bar squared minus
+
+2373
+01:29:51,826 --> 01:29:55,946
+i times minus i is minus 1.
+
+2374
+01:29:56,986 --> 01:29:57,846
+And dx.
+
+2375
+01:29:57,846 --> 01:29:58,065
+And dx.
+
+2376
+01:29:58,065 --> 01:29:58,326
+And then you have the minus sign.
+
+2377
+01:29:59,526 --> 01:30:01,866
+So the minus sign is dx squared over 2m.
+
+2378
+01:30:01,866 --> 01:30:02,206
+So what does that mean?
+
+2379
+01:30:02,206 --> 01:30:02,206
+Well,
+
+2380
+01:30:02,206 --> 01:30:03,306
+I've got a minus sign,
+
+2381
+01:30:03,726 --> 01:30:03,846
+and I've got a minus sign.
+
+2382
+01:30:04,246 --> 01:30:05,786
+I've got a minus sign.
+
+2383
+01:30:06,585 --> 01:30:10,846
+That's equal to i h bar d psi by dt.
+
+2384
+01:30:11,866 --> 01:30:13,045
+And if I like,
+
+2385
+01:30:13,045 --> 01:30:15,486
+I could divide away the h bar here,
+
+2386
+01:30:16,226 --> 01:30:18,625
+so we get 1 h bar on the right-hand side.
+
+2387
+01:30:18,986 --> 01:30:20,206
+And then if I like,
+
+2388
+01:30:20,206 --> 01:30:22,026
+I can multiply this by minus i,
+
+2389
+01:30:22,206 --> 01:30:23,625
+get rid of the i over here,
+
+2390
+01:30:24,165 --> 01:30:25,806
+and then I'll get what?
+
+2391
+01:30:25,946 --> 01:30:27,746
+Plus i on the side?
+
+2392
+01:30:27,746 --> 01:30:29,426
+plus i on this side.
+
+2393
+01:30:29,426 --> 01:30:30,546
+I don't see any particular,
+
+2394
+01:30:30,546 --> 01:30:31,626
+well okay let's do it.
+
+2395
+01:30:31,626 --> 01:30:32,606
+So we
+
+2396
+01:30:32,606 --> 01:30:33,766
+get plus i on this side.
+
+2397
+01:30:33,766 --> 01:30:36,626
+Okay.
+
+2398
+01:30:36,626 --> 01:30:38,306
+That's um,
+
+2399
+01:30:38,306 --> 01:30:41,806
+this is the Schrodinger equation for a
+
+2400
+01:30:41,806 --> 01:30:42,366
+free particle.
+
+2401
+01:30:42,366 --> 01:30:44,646
+For a free particle on a
+
+2402
+01:30:44,646 --> 01:30:46,926
+line with no forces on it,
+
+2403
+01:30:46,926 --> 01:30:47,266
+and we'll come
+
+2404
+01:30:47,266 --> 01:30:48,286
+to forces next time,
+
+2405
+01:30:48,286 --> 01:30:49,766
+but for a particle on a
+
+2406
+01:30:49,766 --> 01:30:51,246
+line with no forces on it,
+
+2407
+01:30:51,246 --> 01:30:51,866
+this
+
+2408
+01:30:51,866 --> 01:30:54,346
+tells us how the wave function changes with time.
+
+2409
+01:30:54,346 --> 01:30:56,966
+The basic principles are
+
+2410
+01:30:56,966 --> 01:30:59,606
+exactly the same as for the polarization.
+
+2411
+01:30:59,606 --> 01:31:02,426
+The Hamiltonian has to be
+
+2412
+01:31:02,426 --> 01:31:03,166
+a Hermitian operator.
+
+2413
+01:31:03,166 --> 01:31:04,546
+Incidentally you might ask,
+
+2414
+01:31:04,546 --> 01:31:05,806
+how do I know the Hamiltonian
+
+2415
+01:31:05,806 --> 01:31:06,606
+is a Hermitian operator?
+
+2416
+01:31:06,606 --> 01:31:09,546
+Well the square of any Hermitian operator is also
+
+2417
+01:31:09,546 --> 01:31:10,086
+Hermitian.
+
+2418
+01:31:10,086 --> 01:31:11,166
+That's easy to prove.
+
+2419
+01:31:11,166 --> 01:31:15,266
+So p squared is as Hermitian as p itself is,
+
+2420
+01:31:15,386 --> 01:31:17,126
+and we'd already proved that p was Hermitian.
+
+2421
+01:31:17,126 --> 01:31:21,066
+So p squared over 2m is a
+
+2422
+01:31:21,066 --> 01:31:22,126
+Hermitian Hamiltonian.
+
+2423
+01:31:22,126 --> 01:31:23,366
+Perfectly good.
+
+2424
+01:31:23,366 --> 01:31:24,566
+It does stand for the energy,
+
+2425
+01:31:24,566 --> 01:31:26,286
+and this is
+
+2426
+01:31:26,286 --> 01:31:26,946
+the Schrodinger equation.
+
+2427
+01:31:26,966 --> 01:31:30,026
+With all of its h bars and i's in place.
+
+2428
+01:31:30,026 --> 01:31:32,966
+Next time I think,
+
+2429
+01:31:32,966 --> 01:31:33,506
+well let's see,
+
+2430
+01:31:33,506 --> 01:31:33,826
+maybe we
+
+2431
+01:31:33,826 --> 01:31:34,606
+can still solve it.
+
+2432
+01:31:34,606 --> 01:31:34,946
+You know,
+
+2433
+01:31:34,946 --> 01:31:36,326
+let's solve it.
+
+2434
+01:31:36,326 --> 01:31:39,086
+Let's solve it while we're at it.
+
+2435
+01:31:46,446 --> 01:31:47,346
+In particular,
+
+2436
+01:31:47,346 --> 01:31:49,716
+let's look for solutions of
+
+2437
+01:31:49,716 --> 01:31:52,086
+this equation which are eigenvectors
+
+2438
+01:31:52,086 --> 01:31:53,406
+of the momentum operator.
+
+2439
+01:31:53,406 --> 01:31:55,486
+In other words,
+
+2440
+01:31:55,486 --> 01:31:56,526
+let's look to see
+
+2441
+01:31:56,966 --> 01:31:57,146
+what,
+
+2442
+01:31:57,286 --> 01:32:00,106
+how the time dependence works for
+
+2443
+01:32:00,106 --> 01:32:02,926
+eigenvectors of the of the momentum
+
+2444
+01:32:02,926 --> 01:32:03,386
+operator.
+
+2445
+01:32:03,386 --> 01:32:06,636
+Eigenvectors of the momentum operator are
+
+2446
+01:32:06,636 --> 01:32:09,886
+just e to the i p x.
+
+2447
+01:32:09,886 --> 01:32:11,946
+p is
+
+2448
+01:32:11,946 --> 01:32:12,846
+the eigenvalue.
+
+2449
+01:32:12,846 --> 01:32:16,446
+Shall I put the h bars in?
+
+2450
+01:32:16,446 --> 01:32:18,086
+I guess I should put the h bars in since
+
+2451
+01:32:18,086 --> 01:32:18,906
+I kept them around.
+
+2452
+01:32:18,906 --> 01:32:20,886
+p over h bar x.
+
+2453
+01:32:20,886 --> 01:32:24,246
+p is a number that represents the momentum.
+
+2454
+01:32:24,246 --> 01:32:28,546
+it represents the eigenvalue of the momentum operator.
+
+2455
+01:32:29,066 --> 01:32:30,246
+We've done this before,
+
+2456
+01:32:30,246 --> 01:32:32,326
+e to the i p over h bar x.
+
+2457
+01:32:32,806 --> 01:32:36,726
+Those represent wave functions which have definite momentum.
+
+2458
+01:32:38,346 --> 01:32:38,906
+Now,
+
+2459
+01:32:38,906 --> 01:32:41,776
+we can do something to this and still have it of
+
+2460
+01:32:41,776 --> 01:32:44,646
+the form e to the i p h bar over x.
+
+2461
+01:32:44,706 --> 01:32:46,186
+We can multiply it by a number.
+
+2462
+01:32:47,766 --> 01:32:50,906
+It's still an eigenvector of momentum.
+
+2463
+01:32:50,906 --> 01:32:52,426
+In fact,
+
+2464
+01:32:52,426 --> 01:32:55,926
+we can multiply it by a time-dependent number,
+
+2465
+01:32:55,926 --> 01:32:57,266
+a function of t.
+
+2466
+01:32:58,906 --> 01:33:00,526
+It still is an eigenvector.
+
+2467
+01:33:00,526 --> 01:33:01,966
+At every instant of time,
+
+2468
+01:33:01,966 --> 01:33:04,046
+it's still an eigenvector of the momentum.
+
+2469
+01:33:05,106 --> 01:33:07,366
+When I differentiate with respect to x,
+
+2470
+01:33:07,366 --> 01:33:09,626
+this f of t is just a complete spectator.
+
+2471
+01:33:09,906 --> 01:33:13,066
+And so when I calculate what the momentum operator does,
+
+2472
+01:33:14,086 --> 01:33:16,206
+the f of t is a complete spectator.
+
+2473
+01:33:16,206 --> 01:33:17,646
+It does nothing at all.
+
+2474
+01:33:17,786 --> 01:33:19,216
+And this is still an
+
+2475
+01:33:19,216 --> 01:33:20,646
+eigenvector at each instant of time.
+
+2476
+01:33:20,906 --> 01:33:24,606
+This is an eigenvector of the momentum operator.
+
+2477
+01:33:25,106 --> 01:33:26,786
+Why did I put this f of t there?
+
+2478
+01:33:27,146 --> 01:33:28,466
+Because without the f of t,
+
+2479
+01:33:28,466 --> 01:33:30,086
+there would be no time dependence to it.
+
+2480
+01:33:30,786 --> 01:33:31,386
+And I'm looking,
+
+2481
+01:33:31,386 --> 01:33:32,586
+and I know that there
+
+2482
+01:33:32,586 --> 01:33:33,786
+has to be a time dependence.
+
+2483
+01:33:35,106 --> 01:33:36,886
+d psi by dt is going
+
+2484
+01:33:36,886 --> 01:33:38,666
+to be whatever this is equal to.
+
+2485
+01:33:39,226 --> 01:33:41,026
+So let's see if we can figure
+
+2486
+01:33:41,026 --> 01:33:42,826
+out what this f of t is here.
+
+2487
+01:33:43,366 --> 01:33:44,766
+All we have to do is
+
+2488
+01:33:44,766 --> 01:33:46,166
+apply the Schrodinger equation to it.
+
+2489
+01:33:46,306 --> 01:33:47,746
+Let's first calculate d psi.
+
+2490
+01:33:47,746 --> 01:33:48,886
+This is psi here.
+
+2491
+01:33:49,086 --> 01:33:49,826
+Psi of t.
+
+2492
+01:33:51,386 --> 01:33:53,346
+Isn't there a minus sign in terms of d?
+
+2493
+01:33:54,166 --> 01:33:54,666
+No,
+
+2494
+01:33:54,666 --> 01:33:55,566
+I don't think there is.
+
+2495
+01:33:56,206 --> 01:33:57,386
+I don't think there is.
+
+2496
+01:33:57,846 --> 01:33:58,346
+Okay,
+
+2497
+01:33:58,346 --> 01:34:00,226
+so let's calculate d psi by dt.
+
+2498
+01:34:00,666 --> 01:34:03,006
+When I differentiate with respect to time,
+
+2499
+01:34:03,006 --> 01:34:06,626
+only f gets differentiated.
+
+2500
+01:34:06,906 --> 01:34:11,216
+So psi dot is equal to f dot times
+
+2501
+01:34:11,216 --> 01:34:15,526
+e to the i p over h bar x.
+
+2502
+01:34:16,626 --> 01:34:18,586
+That's the left side of the Schrodinger equation.
+
+2503
+01:34:18,586 --> 01:34:20,766
+Now let's take the right side of the Schrodinger equation.
+
+2504
+01:34:21,246 --> 01:34:26,606
+That's equal to i h bar over 2m.
+
+2505
+01:34:29,106 --> 01:34:30,856
+And now the second derivative of
+
+2506
+01:34:30,856 --> 01:34:32,606
+psi with respect to x squared.
+
+2507
+01:34:33,466 --> 01:34:36,986
+Each time I differentiate with respect to x,
+
+2508
+01:34:36,986 --> 01:34:38,486
+the f,
+
+2509
+01:34:38,486 --> 01:34:39,066
+of course,
+
+2510
+01:34:39,066 --> 01:34:40,366
+that's just a spectator.
+
+2511
+01:34:40,486 --> 01:34:41,486
+Nothing happens to it.
+
+2512
+01:34:41,486 --> 01:34:42,146
+It just stays there.
+
+2513
+01:34:42,786 --> 01:34:44,716
+Now we have to differentiate the e
+
+2514
+01:34:44,716 --> 01:34:46,646
+to the i p dot x twice.
+
+2515
+01:34:47,426 --> 01:34:48,686
+With respect to x.
+
+2516
+01:34:49,806 --> 01:34:51,186
+Each time you differentiate,
+
+2517
+01:34:51,186 --> 01:34:54,106
+it pulls down an i p over h bar.
+
+2518
+01:34:54,566 --> 01:34:59,536
+So that gives us an i p over h bar
+
+2519
+01:34:59,536 --> 01:35:04,506
+squared times e to the i p over h bar x.
+
+2520
+01:35:07,226 --> 01:35:07,706
+Okay,
+
+2521
+01:35:07,706 --> 01:35:08,526
+let's see what we have.
+
+2522
+01:35:09,726 --> 01:35:11,876
+Both sides of the equation have e to
+
+2523
+01:35:11,876 --> 01:35:14,026
+the i p over h bar x in them.
+
+2524
+01:35:14,386 --> 01:35:15,826
+We can cancel that off.
+
+2525
+01:35:15,826 --> 01:35:17,106
+Let's cancel that off.
+
+2526
+01:35:18,946 --> 01:35:22,926
+The rest of it is just an equation for f.
+
+2527
+01:35:23,386 --> 01:35:24,946
+And it says that f dot,
+
+2528
+01:35:24,946 --> 01:35:27,166
+the time derivative of f,
+
+2529
+01:35:27,166 --> 01:35:28,506
+is just,
+
+2530
+01:35:28,506 --> 01:35:30,346
+let's see,
+
+2531
+01:35:30,486 --> 01:35:33,126
+there is two powers of i here.
+
+2532
+01:35:33,326 --> 01:35:35,526
+That's a minus 1 and another i here.
+
+2533
+01:35:35,906 --> 01:35:37,346
+So that's minus i.
+
+2534
+01:35:38,006 --> 01:35:39,246
+How many h bars?
+
+2535
+01:35:40,106 --> 01:35:40,666
+One.
+
+2536
+01:35:40,926 --> 01:35:41,906
+In the denominator.
+
+2537
+01:35:43,185 --> 01:35:48,126
+So there's a 2m h bar in the denominator.
+
+2538
+01:35:49,186 --> 01:35:50,906
+There's a p squared upstairs.
+
+2539
+01:35:53,886 --> 01:35:55,026
+And an f.
+
+2540
+01:35:55,026 --> 01:35:55,846
+Is that right?
+
+2541
+01:35:56,046 --> 01:35:56,986
+I think that's all there is.
+
+2542
+01:36:00,546 --> 01:36:00,986
+No,
+
+2543
+01:36:00,986 --> 01:36:02,786
+I cancelled one of the h bars in
+
+2544
+01:36:02,786 --> 01:36:04,586
+the denominator with the h bar in the top.
+
+2545
+01:36:05,626 --> 01:36:07,126
+There's two h bars in the denominator.
+
+2546
+01:36:09,886 --> 01:36:11,326
+Because there was two p's.
+
+2547
+01:36:11,326 --> 01:36:13,766
+So each p came with an h bar.
+
+2548
+01:36:15,026 --> 01:36:15,586
+Yeah.
+
+2549
+01:36:16,446 --> 01:36:17,446
+I think it's right.
+
+2550
+01:36:18,986 --> 01:36:19,546
+Okay,
+
+2551
+01:36:19,546 --> 01:36:21,366
+so here we have an equation for f.
+
+2552
+01:36:21,586 --> 01:36:23,596
+It says that time derivative
+
+2553
+01:36:23,596 --> 01:36:25,606
+of f is a certain number,
+
+2554
+01:36:25,606 --> 01:36:26,806
+complex number,
+
+2555
+01:36:26,806 --> 01:36:27,806
+times f.
+
+2556
+01:36:28,586 --> 01:36:29,566
+What's the solution?
+
+2557
+01:36:30,086 --> 01:36:31,106
+An exponential.
+
+2558
+01:36:31,586 --> 01:36:32,546
+And here it is.
+
+2559
+01:36:32,626 --> 01:36:36,756
+f is equal to e to
+
+2560
+01:36:36,756 --> 01:36:40,886
+the minus i p squared over 2m.
+
+2561
+01:36:42,126 --> 01:36:44,566
+I'll put the h bar next to the i there.
+
+2562
+01:36:45,206 --> 01:36:45,986
+Times t.
+
+2563
+01:36:50,646 --> 01:36:52,046
+I've discovered what f is.
+
+2564
+01:36:52,166 --> 01:36:59,676
+And my whole solution then is e to the i p over
+
+2565
+01:36:59,676 --> 01:37:07,186
+h bar x minus i p squared over 2m h bar times t.
+
+2566
+01:37:08,846 --> 01:37:09,586
+That's it.
+
+2567
+01:37:09,586 --> 01:37:13,856
+That's the solution of the Schrodinger
+
+2568
+01:37:13,856 --> 01:37:18,126
+equation corresponding to a momentum eigenstate.
+
+2569
+01:37:19,226 --> 01:37:21,406
+Notice that it changes with time.
+
+2570
+01:37:22,486 --> 01:37:24,606
+But it changes with time in a very,
+
+2571
+01:37:24,606 --> 01:37:25,566
+very simple way.
+
+2572
+01:37:25,906 --> 01:37:30,006
+It changes with time with a pure phase.
+
+2573
+01:37:31,186 --> 01:37:33,146
+What does that say about the probability?
+
+2574
+01:37:33,426 --> 01:37:33,586
+Well,
+
+2575
+01:37:33,586 --> 01:37:33,906
+okay,
+
+2576
+01:37:33,906 --> 01:37:36,786
+we're now talking about a particular momentum eigenstate.
+
+2577
+01:37:37,786 --> 01:37:39,566
+We're not talking about a superposition.
+
+2578
+01:37:39,566 --> 01:37:40,346
+We're not talking about a
+
+2579
+01:37:40,346 --> 01:37:41,126
+superposition of momentum eigenstates yet.
+
+2580
+01:37:41,266 --> 01:37:43,806
+This is some specific momentum eigenstate.
+
+2581
+01:37:44,026 --> 01:37:45,826
+And that's how it varies with time.
+
+2582
+01:37:52,086 --> 01:37:54,076
+I think we'll quit here and
+
+2583
+01:37:54,076 --> 01:37:56,066
+come back to this next time.
+
+2584
+01:37:56,806 --> 01:37:59,386
+We can ask various probability questions.
+
+2585
+01:37:59,806 --> 01:38:00,266
+We can ask,
+
+2586
+01:38:00,266 --> 01:38:00,746
+for example,
+
+2587
+01:38:00,746 --> 01:38:04,606
+does the probability for a given momentum vary with time?
+
+2588
+01:38:04,746 --> 01:38:07,306
+Does the probability for a given position vary with time?
+
+2589
+01:38:07,306 --> 01:38:08,926
+But we'll deal with that next time.
+
+2590
+01:38:13,426 --> 01:38:14,006
+Incidentally,
+
+2591
+01:38:14,006 --> 01:38:16,906
+you might want to prove to yourself
+
+2592
+01:38:16,906 --> 01:38:19,806
+that the momentum commutes with the Hamiltonian.
+
+2593
+01:38:20,266 --> 01:38:22,366
+The momentum p commutes with
+
+2594
+01:38:22,366 --> 01:38:24,466
+the Hamiltonian p squared over 2m.
+
+2595
+01:38:24,706 --> 01:38:25,906
+That's a little exercise,
+
+2596
+01:38:25,906 --> 01:38:30,386
+and that exercise proves that momentum is conserved.
+
+2597
+01:38:38,366 --> 01:38:41,766
+The preceding program is copyrighted by Stanford University.
+
+2598
+01:38:42,226 --> 01:38:44,926
+Please visit us at stanford.edu.
+
