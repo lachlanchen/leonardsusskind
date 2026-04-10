@@ -1,0 +1,3245 @@
+# Transcript
+
+Source: core/quantum_mechanics/2012_winter_theoretical_minimum_alt_title/125 - Lecture 2 ｜ The Theoretical Minimum [a6ANMKRBjA8].webm
+
+- [00:00:05,280 - 00:00:06,200] Stanford University.
+- [00:00:07,880 - 00:00:08,940] So let's begin.
+- [00:00:10,920 - 00:00:12,380] I'm going to review very quickly,
+- [00:00:12,380 - 00:00:13,420] I hope quickly.
+- [00:00:14,940 - 00:00:17,900] We described a simple system consisting of one qubit.
+- [00:00:18,000 - 00:00:19,800] I'm going to change my terminology a little bit.
+- [00:00:19,980 - 00:00:21,980] I'm going to start calling that qubit a spin.
+- [00:00:23,500 - 00:00:24,700] Don't worry about what it has
+- [00:00:24,700 - 00:00:25,900] to do with spinning at the moment.
+- [00:00:25,900 - 00:00:26,400] Of course,
+- [00:00:26,400 - 00:00:29,980] more important is that it's a little pointer.
+- [00:00:30,140 - 00:00:31,440] Now I use the term pointer.
+- [00:00:32,659 - 00:00:34,999] I began to use the word pointer
+- [00:00:34,999 - 00:00:37,340] to refer to vectors in three-dimensional space.
+- [00:00:38,420 - 00:00:39,540] While I was writing,
+- [00:00:39,540 - 00:00:41,790] I realized that that's an
+- [00:00:41,790 - 00:00:44,040] awfully awkward and unfamiliar terminology.
+- [00:00:44,920 - 00:00:47,420] And I decided to replace it with another term,
+- [00:00:47,420 - 00:00:48,940] the standard term,
+- [00:00:48,940 - 00:00:49,780] three vectors.
+- [00:00:49,880 - 00:00:51,460] Vectors in three-dimensional space.
+- [00:00:52,320 - 00:00:54,600] I may sometimes use the term pointer,
+- [00:00:54,700 - 00:00:55,290] but I think I'm more
+- [00:00:55,290 - 00:00:55,880] likely to use the term pointer.
+- [00:00:55,900 - 00:00:57,400] I'm more likely to speak of three vectors.
+- [00:00:57,820 - 00:01:00,300] And a three vector means a vector in real space.
+- [00:01:01,260 - 00:01:02,760] The more general concept,
+- [00:01:02,760 - 00:01:05,019] when I simply say vector,
+- [00:01:05,239 - 00:01:07,639] more likely I'm speaking about the
+- [00:01:07,639 - 00:01:10,040] abstract notion of a vector space
+- [00:01:10,720 - 00:01:12,140] and the elements of a vector space.
+- [00:01:14,420 - 00:01:20,580] Just to warn you and keep the language clear.
+- [00:01:21,640 - 00:01:23,400] Now we talked about this qubit,
+- [00:01:23,400 - 00:01:24,800] which has now become a spin.
+- [00:01:25,900 - 00:01:28,390] It has some of the character of
+- [00:01:28,390 - 00:01:30,880] being a little three vector in space.
+- [00:01:31,690 - 00:01:33,365] There is some sense or other
+- [00:01:33,365 - 00:01:35,040] in which it points in a direction.
+- [00:01:35,580 - 00:01:39,000] And that we can confirm by an experiment.
+- [00:01:40,160 - 00:01:41,980] As was said before,
+- [00:01:41,980 - 00:01:44,960] once we start thinking about quantum mechanics,
+- [00:01:45,260 - 00:01:48,830] we really do have to think
+- [00:01:48,830 - 00:01:52,400] about systems and their connection with apparati.
+- [00:01:52,900 - 00:01:54,400] Is that a core word?
+- [00:01:54,400 - 00:01:54,840] Apparati?
+- [00:01:54,840 - 00:01:55,520] I'm not sure.
+- [00:01:56,220 - 00:01:56,760] Apparatuses?
+- [00:01:56,760 - 00:01:58,220] Apparatuses?
+- [00:01:58,220 - 00:02:00,520] I'm not sure what the plural of apparatus.
+- [00:02:00,820 - 00:02:02,740] Anybody know the plural of apparatus?
+- [00:02:03,320 - 00:02:03,860] Apparatus.
+- [00:02:04,280 - 00:02:05,160] Just apparatus?
+- [00:02:05,160 - 00:02:07,000] Okay.
+- [00:02:07,000 - 00:02:08,000] Just apparatus.
+- [00:02:08,979 - 00:02:10,460] We do have to think
+- [00:02:10,460 - 00:02:11,940] about the connection with their apparatuses.
+- [00:02:15,040 - 00:02:16,420] That measure them.
+- [00:02:17,440 - 00:02:19,880] And we don't get away with just ignoring it.
+- [00:02:20,780 - 00:02:21,800] What's the difference?
+- [00:02:21,800 - 00:02:22,420] First of all,
+- [00:02:22,420 - 00:02:24,640] I'll tell you what the basic difference is
+- [00:02:24,640 - 00:02:25,880] in classical physics and in quantum mechanics.
+- [00:02:25,900 - 00:02:29,080] In classical physics,
+- [00:02:29,080 - 00:02:32,060] measurements can be arbitrarily gentle.
+- [00:02:33,300 - 00:02:36,160] Arbitrarily gentle means that you can find out
+- [00:02:36,160 - 00:02:39,020] anything that you want about a system in principle
+- [00:02:39,660 - 00:02:44,130] by interacting with it with something that changes
+- [00:02:44,130 - 00:02:48,600] anything about it by an arbitrarily small amount.
+- [00:02:49,380 - 00:02:50,460] For example,
+- [00:02:50,460 - 00:02:52,230] you want to locate the location
+- [00:02:52,230 - 00:02:54,000] of a particle in classical physics.
+- [00:02:54,340 - 00:02:55,560] How do you do it?
+- [00:02:55,560 - 00:02:57,000] You shine some light on it.
+- [00:02:57,180 - 00:02:58,980] You shine some light on it,
+- [00:02:58,980 - 00:03:00,120] and you make an image.
+- [00:03:00,900 - 00:03:01,740] Of course,
+- [00:03:01,740 - 00:03:04,300] you have to use light which is small
+- [00:03:04,300 - 00:03:06,860] enough wavelength that it can resolve the object.
+- [00:03:07,340 - 00:03:08,020] This is true,
+- [00:03:08,020 - 00:03:13,100] but there's no limit to how weak a
+- [00:03:13,100 - 00:03:18,180] light signal can be at a given wavelength.
+- [00:03:18,820 - 00:03:21,620] You can make the light signal as weak as you
+- [00:03:21,620 - 00:03:24,420] like so that it carries as little energy as you like.
+- [00:03:25,840 - 00:03:27,640] As little momentum as you like.
+- [00:03:28,100 - 00:03:30,740] Let it interact with the thing you're interested in.
+- [00:03:31,260 - 00:03:32,480] Form an image,
+- [00:03:32,480 - 00:03:35,840] and then after that image has been formed,
+- [00:03:35,840 - 00:03:38,380] it can be magnified.
+- [00:03:38,540 - 00:03:40,700] Not magnified in the sense of making it bigger,
+- [00:03:40,700 - 00:03:43,080] but what's the right word for amplified?
+- [00:03:43,560 - 00:03:44,520] It can be amplified.
+- [00:03:45,120 - 00:03:48,950] And so the experiment itself can be arbitrarily gentle and still
+- [00:03:48,950 - 00:03:52,780] find out anything you might want to know about the system.
+- [00:03:52,780 - 00:03:57,210] The result of that is an experiment can always
+- [00:03:57,210 - 00:04:01,640] be done which has no effect whatever on future experiments,
+- [00:04:01,740 - 00:04:03,660] on subsequent experiments done,
+- [00:04:03,660 - 00:04:04,240] for example,
+- [00:04:04,240 - 00:04:04,960] right afterwards.
+- [00:04:06,080 - 00:04:07,700] That's classical physics.
+- [00:04:08,000 - 00:04:09,900] Quantum physics is not like that.
+- [00:04:10,060 - 00:04:12,890] Quantum physics is such
+- [00:04:12,890 - 00:04:15,720] that experiments inevitably change systems.
+- [00:04:17,079 - 00:04:19,920] Any experiment to measure
+- [00:04:19,920 - 00:04:22,760] something will change something else.
+- [00:04:23,480 - 00:04:26,890] It's almost as though the experiment to measure coins
+- [00:04:26,890 - 00:04:30,300] was such that every time I looked at the coin,
+- [00:04:30,440 - 00:04:32,690] the coin jumped up in
+- [00:04:32,690 - 00:04:34,940] the air and randomly flipped itself.
+- [00:04:35,260 - 00:04:36,780] We know that doesn't happen,
+- [00:04:36,780 - 00:04:38,870] and we can measure the state
+- [00:04:38,870 - 00:04:40,960] of the coin gently without changing it.
+- [00:04:42,840 - 00:04:43,700] Quantum mechanics,
+- [00:04:43,700 - 00:04:44,860] not so clear.
+- [00:04:44,980 - 00:04:45,280] Well,
+- [00:04:45,280 - 00:04:45,840] it is clear.
+- [00:04:45,960 - 00:04:47,300] It's clear that that cannot be done.
+- [00:04:47,720 - 00:04:48,240] Okay,
+- [00:04:48,240 - 00:04:48,800] but let's,
+- [00:04:48,800 - 00:04:50,020] we're going to talk a little bit.
+- [00:04:50,120 - 00:04:52,740] Before we move on to more about vector space,
+- [00:04:52,780 - 00:04:53,680] and operators,
+- [00:04:53,680 - 00:04:55,960] and the mathematics of quantum theory,
+- [00:04:56,680 - 00:04:57,740] I want to talk a little
+- [00:04:57,740 - 00:04:58,800] more about the logic of it,
+- [00:04:58,880 - 00:05:01,820] and what way logic in quantum mechanics
+- [00:05:01,820 - 00:05:04,760] is different than logic in classical physics.
+- [00:05:06,860 - 00:05:09,380] Let's go back to our spin and our apparatus.
+- [00:05:11,200 - 00:05:12,380] The spin is a,
+- [00:05:12,380 - 00:05:16,940] I'll draw it as a little arrow.
+- [00:05:17,340 - 00:05:19,940] Whether it truly corresponds to anything that looks
+- [00:05:19,940 - 00:05:22,540] like a classical arrow or not is irrelevant.
+- [00:05:22,780 - 00:05:24,080] We have to draw it on a blackboard,
+- [00:05:24,080 - 00:05:25,900] and anything I draw on the blackboard will be classical.
+- [00:05:27,120 - 00:05:29,100] Just because ink and pens are classical,
+- [00:05:29,100 - 00:05:31,920] or approximately classical.
+- [00:05:32,180 - 00:05:33,060] And an apparatus.
+- [00:05:33,520 - 00:05:35,750] The apparatus is a window that has
+- [00:05:35,750 - 00:05:37,980] a number that comes out of it.
+- [00:05:38,480 - 00:05:40,000] The number appears in the window,
+- [00:05:40,000 - 00:05:41,520] tells you the result of the experiment.
+- [00:05:41,840 - 00:05:44,890] And it also happens to have a direction
+- [00:05:44,890 - 00:05:47,940] in it which tells you which side is up.
+- [00:05:48,220 - 00:05:49,460] How to orient it.
+- [00:05:49,620 - 00:05:50,180] In fact,
+- [00:05:50,180 - 00:05:52,040] it might have a whole set of three axes
+- [00:05:52,040 - 00:05:53,540] that tell you how to orient it.
+- [00:05:54,220 - 00:05:55,480] But that's not important.
+- [00:05:55,580 - 00:05:57,360] Just the up axis is what's important.
+- [00:05:58,520 - 00:06:01,560] And when the apparatus is pointing up,
+- [00:06:02,440 - 00:06:03,360] the only,
+- [00:06:03,360 - 00:06:04,950] in fact no matter what
+- [00:06:04,950 - 00:06:06,540] direction the apparatus is pointing in,
+- [00:06:06,640 - 00:06:08,820] when it interacts with the spin,
+- [00:06:09,020 - 00:06:11,220] it produces a number in the window,
+- [00:06:11,900 - 00:06:13,780] and that number in the window
+- [00:06:13,780 - 00:06:15,660] is either plus one or minus one.
+- [00:06:15,880 - 00:06:18,980] No matter what direction the apparatus is pointing in,
+- [00:06:19,020 - 00:06:21,060] and no matter what has happened to the spin beforehand.
+- [00:06:21,060 - 00:06:24,320] When the apparatus is pointing up,
+- [00:06:24,960 - 00:06:28,260] we will say that what it has
+- [00:06:28,260 - 00:06:31,560] measured is the z component of spin.
+- [00:06:31,840 - 00:06:33,460] Let's put some axes in here.
+- [00:06:33,700 - 00:06:34,860] Z up,
+- [00:06:34,860 - 00:06:36,520] x to the right,
+- [00:06:36,520 - 00:06:38,380] and y out of the blackboard.
+- [00:06:39,300 - 00:06:41,460] And when the apparatus is pointing up,
+- [00:06:41,640 - 00:06:46,260] we'll say that it produces an experimental number
+- [00:06:46,920 - 00:06:49,240] which measures the z component of the spin.
+- [00:06:51,060 - 00:06:52,990] Now is that particularly interesting to
+- [00:06:52,990 - 00:06:54,920] think of it as having a directionality?
+- [00:06:55,000 - 00:06:56,540] When we say it's a z component of the spin,
+- [00:06:56,700 - 00:06:58,560] we're imagining that this object here
+- [00:06:58,560 - 00:07:00,420] has a sense of directionality to it.
+- [00:07:00,720 - 00:07:02,520] How can we test if it has a direction,
+- [00:07:02,520 - 00:07:04,560] a sense of directionality to it?
+- [00:07:05,859 - 00:07:06,340] Well,
+- [00:07:06,340 - 00:07:08,260] we can prepare the spin
+- [00:07:09,120 - 00:07:12,200] in a state of what we think is pointing up
+- [00:07:12,880 - 00:07:15,480] by simply letting it interact with the apparatus.
+- [00:07:16,040 - 00:07:18,340] And when the apparatus appears with
+- [00:07:18,340 - 00:07:20,640] a plus one sign in it,
+- [00:07:21,060 - 00:07:21,540] we'll say,
+- [00:07:21,540 - 00:07:21,860] uh-huh,
+- [00:07:21,860 - 00:07:22,820] the spin is up.
+- [00:07:23,800 - 00:07:26,070] If we do it again with the same apparatus
+- [00:07:26,070 - 00:07:28,340] pointing in the same direction with the same spin,
+- [00:07:28,560 - 00:07:29,880] we'll get up again,
+- [00:07:29,880 - 00:07:30,760] and up again,
+- [00:07:30,760 - 00:07:31,260] and up again.
+- [00:07:31,340 - 00:07:31,900] In that sense,
+- [00:07:31,900 - 00:07:36,940] quantum mechanics allows for reproducible experiments.
+- [00:07:38,640 - 00:07:41,660] If you measure the same thing several
+- [00:07:41,660 - 00:07:44,680] times in a row with the same apparatus,
+- [00:07:46,000 - 00:07:48,020] you will get the same answer over and over.
+- [00:07:48,160 - 00:07:49,440] So things are not that weird.
+- [00:07:50,060 - 00:07:51,320] And that's awfully important,
+- [00:07:51,760 - 00:07:54,070] because we have to have some
+- [00:07:54,070 - 00:07:56,380] concept of reproducibility of experimental results
+- [00:07:56,380 - 00:07:58,520] in order to make any sense out of things.
+- [00:07:58,920 - 00:08:00,040] So this is a good thing.
+- [00:08:00,700 - 00:08:01,800] When you measure something,
+- [00:08:01,800 - 00:08:03,300] and you measure it again and again and again,
+- [00:08:03,380 - 00:08:04,080] you get the same answer.
+- [00:08:04,080 - 00:08:04,560] Yeah?
+- [00:08:04,760 - 00:08:05,850] So how does that fit
+- [00:08:05,850 - 00:08:06,940] in with what you just said?
+- [00:08:07,180 - 00:08:07,840] We're going to come to it.
+- [00:08:07,840 - 00:08:08,900] We're going to come to it.
+- [00:08:09,060 - 00:08:09,460] Well,
+- [00:08:09,460 - 00:08:13,760] I didn't say that experiments are necessarily so ungentle
+- [00:08:14,320 - 00:08:15,520] that when you measure anything,
+- [00:08:15,520 - 00:08:16,680] you affect everything.
+- [00:08:17,160 - 00:08:18,940] The answer is you affect some things.
+- [00:08:19,660 - 00:08:20,740] In this case,
+- [00:08:20,740 - 00:08:21,780] when you measure something,
+- [00:08:21,780 - 00:08:23,840] you don't affect that same thing.
+- [00:08:23,900 - 00:08:24,720] If you measure it again,
+- [00:08:24,720 - 00:08:25,780] the same thing again,
+- [00:08:25,780 - 00:08:27,400] you'll get the same answer.
+- [00:08:28,540 - 00:08:29,060] Okay,
+- [00:08:29,060 - 00:08:29,280] now,
+- [00:08:29,280 - 00:08:30,300] you could then say,
+- [00:08:30,400 - 00:08:30,620] all right,
+- [00:08:30,620 - 00:08:33,140] now that I have detected that the spin is up,
+- [00:08:33,380 - 00:08:38,840] let me turn the apparatus completely over and point down.
+- [00:08:40,380 - 00:08:44,159] If this were a thermometer measuring the temperature,
+- [00:08:44,740 - 00:08:46,500] I don't think we would expect
+- [00:08:46,500 - 00:08:48,260] it to measure minus the temperature
+- [00:08:48,260 - 00:08:49,300] if we turned it over,
+- [00:08:49,300 - 00:08:49,620] right?
+- [00:08:50,320 - 00:08:50,880] No.
+- [00:08:50,880 - 00:08:53,140] Not if it was any kind of decent thermometer.
+- [00:08:54,340 - 00:08:56,610] So we would therefore then say that the
+- [00:08:56,610 - 00:08:58,880] temperature does not have a sense of orientation.
+- [00:08:59,460 - 00:09:00,760] Certainly not in this sense.
+- [00:09:01,360 - 00:09:02,640] On the other hand,
+- [00:09:02,640 - 00:09:04,600] if this is a true spin,
+- [00:09:04,800 - 00:09:06,640] and we turn the apparatus over,
+- [00:09:07,380 - 00:09:09,570] if initially the apparatus told us
+- [00:09:09,570 - 00:09:11,760] that the spin was plus one,
+- [00:09:11,960 - 00:09:16,200] after we've turned it over and do the experiment again,
+- [00:09:16,420 - 00:09:17,980] it will register minus one.
+- [00:09:18,680 - 00:09:20,500] So it seems to indicate that
+- [00:09:20,500 - 00:09:22,320] there is a sense of directionality.
+- [00:09:22,720 - 00:09:23,700] And of course,
+- [00:09:24,560 - 00:09:25,040] yeah.
+- [00:09:27,400 - 00:09:29,380] The same thing is true no matter
+- [00:09:29,380 - 00:09:31,360] what direction we hold the apparatus in.
+- [00:09:31,600 - 00:09:34,480] If we hold the apparatus in the horizontal direction,
+- [00:09:39,360 - 00:09:41,430] and come along and detect a
+- [00:09:41,430 - 00:09:43,500] spin that we know nothing about,
+- [00:09:43,700 - 00:09:45,860] we have not yet made a measurement on it.
+- [00:09:46,680 - 00:09:48,240] Maybe somebody else has made a measurement on it.
+- [00:09:48,260 - 00:09:52,780] Maybe some agent unavailable to us,
+- [00:09:52,880 - 00:10:01,380] who some secret person has done something to that spin,
+- [00:10:01,560 - 00:10:02,120] but we don't care,
+- [00:10:02,120 - 00:10:03,000] we don't know about it.
+- [00:10:03,100 - 00:10:04,280] We come in with our
+- [00:10:04,280 - 00:10:05,460] detector and we make a measurement.
+- [00:10:06,020 - 00:10:07,160] What will we measure?
+- [00:10:07,320 - 00:10:07,780] Again,
+- [00:10:07,780 - 00:10:10,060] we will measure plus one or minus one.
+- [00:10:12,000 - 00:10:15,090] And if we're beginning to think of this
+- [00:10:15,090 - 00:10:18,180] thing as having a sense of direction to it,
+- [00:10:18,260 - 00:10:20,860] we might say that what we're measuring
+- [00:10:20,860 - 00:10:23,460] now is this x component of the spin.
+- [00:10:24,140 - 00:10:25,100] Whereas previously,
+- [00:10:25,100 - 00:10:27,120] we were measuring the z component of the spin.
+- [00:10:27,200 - 00:10:27,960] Let's give them names.
+- [00:10:28,760 - 00:10:29,860] The sigma z,
+- [00:10:29,860 - 00:10:31,520] which is the component of
+- [00:10:31,520 - 00:10:33,180] the spin along the vertical axis.
+- [00:10:34,080 - 00:10:35,240] At the moment yet,
+- [00:10:35,240 - 00:10:36,700] I'm not asking you to
+- [00:10:36,700 - 00:10:38,160] think that this notion of component
+- [00:10:38,699 - 00:10:40,379] is the same as the
+- [00:10:40,379 - 00:10:42,060] notion of component in classical physics.
+- [00:10:42,220 - 00:10:43,280] It's just a name for the moment.
+- [00:10:43,620 - 00:10:44,520] And sigma z,
+- [00:10:44,520 - 00:10:45,400] whenever it's measured,
+- [00:10:45,400 - 00:10:46,440] is plus or minus one.
+- [00:10:46,440 - 00:10:48,380] The same thing happens when we
+- [00:10:48,380 - 00:10:50,320] turn the apparatus on its side,
+- [00:10:51,040 - 00:10:53,760] and we measure the same procedure.
+- [00:10:54,600 - 00:10:57,380] We measure something that we can now call sigma x.
+- [00:10:59,160 - 00:11:02,040] And sigma x is always plus or minus one.
+- [00:11:02,300 - 00:11:04,390] And the same thing if we turn
+- [00:11:04,390 - 00:11:06,480] the apparatus around so that it's facing frontward.
+- [00:11:06,540 - 00:11:06,860] In fact,
+- [00:11:06,860 - 00:11:09,200] no matter what direction we orient the apparatus,
+- [00:11:09,780 - 00:11:12,180] it always gives us plus or minus one.
+- [00:11:14,020 - 00:11:15,480] This would be a little bit strange,
+- [00:11:15,580 - 00:11:16,420] more than a little bit,
+- [00:11:16,440 - 00:11:21,120] if this object really were a classical vector,
+- [00:11:21,400 - 00:11:22,080] a little vector,
+- [00:11:22,420 - 00:11:24,200] perhaps a vector of unit length.
+- [00:11:24,820 - 00:11:26,940] If it were a vector of unit length,
+- [00:11:27,000 - 00:11:29,250] and this detector were really measuring the
+- [00:11:29,250 - 00:11:31,500] component of spin along its own axis,
+- [00:11:32,180 - 00:11:33,670] there is no way that it
+- [00:11:33,670 - 00:11:35,160] would just give plus or minus one.
+- [00:11:36,680 - 00:11:37,760] Components of vectors,
+- [00:11:37,760 - 00:11:39,550] even if the vector is
+- [00:11:39,550 - 00:11:41,340] required to have exactly unit length,
+- [00:11:41,480 - 00:11:43,380] here's a vector with exactly unit length,
+- [00:11:43,480 - 00:11:45,660] a pointer,
+- [00:11:45,660 - 00:11:46,420] a three vector,
+- [00:11:46,420 - 00:11:47,520] a vector of exactly unit length.
+- [00:11:48,300 - 00:11:50,620] If we turn it and do other things with it,
+- [00:11:50,700 - 00:11:53,390] the x component or the z component can
+- [00:11:53,390 - 00:11:56,080] be any number between minus one and one.
+- [00:11:56,640 - 00:11:58,140] So this is a funny vector
+- [00:11:58,140 - 00:11:59,640] if it's a vector at all.
+- [00:12:01,640 - 00:12:02,800] But still it does seem
+- [00:12:02,800 - 00:12:03,960] to have a sense of orientation.
+- [00:12:04,980 - 00:12:06,910] The results of experiments do seem
+- [00:12:06,910 - 00:12:08,840] to change when you rotate detectors.
+- [00:12:09,220 - 00:12:10,120] In particular,
+- [00:12:10,120 - 00:12:13,120] if you begin by orienting
+- [00:12:13,120 - 00:12:16,120] the spin along the z axis,
+- [00:12:16,120 - 00:12:17,260] in the up direction,
+- [00:12:17,840 - 00:12:19,020] let's call this up,
+- [00:12:19,240 - 00:12:21,960] that means sigma z is equal to plus one,
+- [00:12:23,260 - 00:12:25,040] and then rotate the apparatus,
+- [00:12:26,440 - 00:12:27,480] detect it again,
+- [00:12:27,740 - 00:12:30,400] you won't necessarily get plus one.
+- [00:12:30,960 - 00:12:31,840] In fact,
+- [00:12:31,840 - 00:12:33,570] you may get plus one or you
+- [00:12:33,570 - 00:12:35,300] may get minus one with equal probability.
+- [00:12:36,180 - 00:12:37,850] You could do the experiment
+- [00:12:37,850 - 00:12:39,520] over and over and over again.
+- [00:12:40,620 - 00:12:42,560] Half the times you would
+- [00:12:42,560 - 00:12:44,500] get sigma x equals plus one,
+- [00:12:44,600 - 00:12:45,350] half the times you would
+- [00:12:45,350 - 00:12:46,100] get sigma x equals minus one,
+- [00:12:46,120 - 00:12:49,240] even though you knew sigma z
+- [00:12:49,240 - 00:12:52,360] was exactly plus one in each case.
+- [00:12:52,920 - 00:12:56,300] So something's funny,
+- [00:12:56,440 - 00:12:59,580] but what is true is that the
+- [00:12:59,580 - 00:13:02,720] average value of sigma x will be one,
+- [00:13:02,900 - 00:13:03,300] sorry,
+- [00:13:03,300 - 00:13:06,680] will be zero if the initial starting point was
+- [00:13:06,680 - 00:13:10,060] a spin that was up along the z axis.
+- [00:13:11,180 - 00:13:12,980] Same for the y axis.
+- [00:13:12,980 - 00:13:15,490] If the initial value of the spin was
+- [00:13:15,490 - 00:13:18,000] prepared to be up along the z axis,
+- [00:13:18,340 - 00:13:23,000] and you rotate the apparatus into the y orientation,
+- [00:13:23,720 - 00:13:24,320] again,
+- [00:13:24,320 - 00:13:25,680] you'll have equal probability.
+- [00:13:26,520 - 00:13:28,150] And so the average value
+- [00:13:28,150 - 00:13:29,780] of sigma y will be zero.
+- [00:13:30,580 - 00:13:32,300] You can even go beyond that.
+- [00:13:32,580 - 00:13:33,160] You can say,
+- [00:13:33,160 - 00:13:35,060] let's start with the apparatus,
+- [00:13:35,300 - 00:13:36,120] not vertical,
+- [00:13:36,320 - 00:13:39,980] but let's start with the apparatus along the x direction.
+- [00:13:41,180 - 00:13:42,960] Use it to prepare the spin.
+- [00:13:42,980 - 00:13:45,340] So that it's known to be
+- [00:13:45,340 - 00:13:47,700] pointing horizontal along the x direction,
+- [00:13:47,960 - 00:13:48,360] in other words,
+- [00:13:48,360 - 00:13:49,920] sigma x is equal to plus one,
+- [00:13:50,460 - 00:13:52,440] and then do a y or z experiment.
+- [00:13:54,000 - 00:13:54,480] Always,
+- [00:13:54,480 - 00:13:56,630] we will get random but
+- [00:13:56,630 - 00:13:58,780] equal probabilities for up and down.
+- [00:13:59,540 - 00:14:01,280] Or plus and minus one.
+- [00:14:03,280 - 00:14:04,460] You go a little bit further.
+- [00:14:09,120 - 00:14:09,940] Now of course,
+- [00:14:09,940 - 00:14:12,400] I am quoting what would be the results
+- [00:14:12,400 - 00:14:14,600] of experiments on spins.
+- [00:14:15,420 - 00:14:17,100] I've never done such an experiment.
+- [00:14:17,260 - 00:14:18,080] I don't think I could.
+- [00:14:19,520 - 00:14:21,470] But I have no doubt that if
+- [00:14:21,470 - 00:14:23,420] I had the skill to do it,
+- [00:14:23,440 - 00:14:24,200] this is what would happen.
+- [00:14:25,760 - 00:14:26,160] What?
+- [00:14:26,900 - 00:14:28,810] Suppose we start out and we
+- [00:14:28,810 - 00:14:30,720] have not prepared the spin at all.
+- [00:14:30,780 - 00:14:31,140] Doesn't matter.
+- [00:14:31,540 - 00:14:31,940] Okay,
+- [00:14:31,940 - 00:14:32,220] go ahead.
+- [00:14:32,540 - 00:14:34,990] So it could be up or
+- [00:14:34,990 - 00:14:37,440] down or x or y or z.
+- [00:14:37,500 - 00:14:39,260] We don't know what it's past.
+- [00:14:39,300 - 00:14:40,000] We don't know what it is.
+- [00:14:40,040 - 00:14:40,240] Right.
+- [00:14:40,240 - 00:14:42,910] And we set it up so that the
+- [00:14:42,910 - 00:14:45,580] apparatus is on its side along the x axis.
+- [00:14:45,740 - 00:14:45,900] Okay.
+- [00:14:48,100 - 00:14:49,840] And we do lots of measurements.
+- [00:14:50,700 - 00:14:51,340] What's going on?
+- [00:14:51,500 - 00:14:51,580] Well,
+- [00:14:51,580 - 00:14:53,840] we first do one measurement before we do anything else.
+- [00:14:54,700 - 00:14:55,060] Yeah,
+- [00:14:55,060 - 00:14:56,320] let me come back for a second.
+- [00:14:56,500 - 00:14:57,460] Let me come back a second.
+- [00:14:57,640 - 00:14:57,760] Okay.
+- [00:14:59,120 - 00:14:59,680] You're right.
+- [00:14:59,740 - 00:15:01,430] We want to do a lot of experiments
+- [00:15:01,430 - 00:15:03,120] and a lot of measurements and quantum mechanics.
+- [00:15:03,480 - 00:15:04,690] There are two distinct ways
+- [00:15:04,690 - 00:15:05,900] we could do lots of experiments.
+- [00:15:06,160 - 00:15:07,060] It really doesn't matter which,
+- [00:15:07,060 - 00:15:07,920] which we do.
+- [00:15:08,520 - 00:15:10,220] We could imagine having a log of,
+- [00:15:10,240 - 00:15:12,940] a large number of identical spins prepared at the beginning,
+- [00:15:13,140 - 00:15:14,420] however they were prepared.
+- [00:15:15,320 - 00:15:17,060] And we can do experiments
+- [00:15:17,060 - 00:15:18,800] on a large number of them.
+- [00:15:20,100 - 00:15:23,880] Or we can do repeated experiments on the same spin.
+- [00:15:25,540 - 00:15:26,860] To a large extent it
+- [00:15:26,860 - 00:15:28,180] doesn't matter which we're talking about.
+- [00:15:28,360 - 00:15:29,600] And I'll tell you when it matters.
+- [00:15:30,080 - 00:15:31,290] But at the moment all
+- [00:15:31,290 - 00:15:32,500] we're talking about is one spin.
+- [00:15:33,560 - 00:15:37,100] You said start the apparatus horizontal,
+- [00:15:37,920 - 00:15:39,340] stick the spin into it,
+- [00:15:39,340 - 00:15:41,080] and detect what you get.
+- [00:15:42,000 - 00:15:43,090] What you get will either
+- [00:15:43,090 - 00:15:44,180] be plus one or minus one.
+- [00:15:44,840 - 00:15:45,200] Okay?
+- [00:15:47,180 - 00:15:48,960] You could then take the spin out of there.
+- [00:15:50,300 - 00:15:51,830] Give it to your friend
+- [00:15:51,830 - 00:15:53,360] who does some magic with spins.
+- [00:15:53,520 - 00:15:54,440] You don't know what it is.
+- [00:15:54,520 - 00:15:56,360] You don't know what the hell he does with it.
+- [00:15:56,960 - 00:15:57,960] He flips it around,
+- [00:15:57,960 - 00:15:58,800] juggles it,
+- [00:15:58,880 - 00:15:59,960] puts it in his pocket,
+- [00:15:59,960 - 00:16:00,560] takes it out,
+- [00:16:00,560 - 00:16:01,400] and gives it back to you,
+- [00:16:01,480 - 00:16:02,940] and tells you to do it again.
+- [00:16:03,699 - 00:16:04,060] Again,
+- [00:16:04,060 - 00:16:05,880] you'll get plus one or minus one.
+- [00:16:06,660 - 00:16:08,360] It may be that he did nothing,
+- [00:16:08,360 - 00:16:10,250] in which case the second time you'll get
+- [00:16:10,250 - 00:16:12,140] the same answer you got the first time.
+- [00:16:13,280 - 00:16:15,280] Or it may have been that he turned it over,
+- [00:16:15,380 - 00:16:16,960] in which case you'll get the opposite answer.
+- [00:16:17,100 - 00:16:17,920] But whatever you get,
+- [00:16:17,920 - 00:16:19,380] it will be plus one or minus one.
+- [00:16:20,380 - 00:16:20,800] Okay.
+- [00:16:21,760 - 00:16:24,800] Then if you do a repeated experiment
+- [00:16:25,360 - 00:16:26,770] knowing that nothing else was
+- [00:16:26,770 - 00:16:28,180] done to the spin in between,
+- [00:16:28,800 - 00:16:29,940] you'll get the same answer
+- [00:16:29,940 - 00:16:31,080] if you do the same experiment.
+- [00:16:31,520 - 00:16:31,940] Okay?
+- [00:16:33,160 - 00:16:33,580] That's,
+- [00:16:33,580 - 00:16:33,940] uh...
+- [00:16:35,780 - 00:16:36,200] Good.
+- [00:16:36,540 - 00:16:36,960] Okay,
+- [00:16:36,960 - 00:16:38,160] so let's be a little more general.
+- [00:16:38,900 - 00:16:41,740] Let's suppose that we orient the
+- [00:16:41,740 - 00:16:44,580] axis of the detector in any direction.
+- [00:16:44,960 - 00:16:47,360] So let's make a notation for a direction.
+- [00:16:47,580 - 00:16:49,580] A unit three vector.
+- [00:16:49,980 - 00:16:51,700] A unit three vector...
+- [00:16:53,100 - 00:16:55,440] Unit vectors in three-dimensional space
+- [00:16:55,440 - 00:16:57,820] are always indicated by putting a
+- [00:16:57,820 - 00:17:00,200] little hat on top of the symbol.
+- [00:17:01,140 - 00:17:04,520] So this is a unit vector along a particular axis.
+- [00:17:05,260 - 00:17:06,980] We start with our detector
+- [00:17:06,980 - 00:17:08,900] along the axis M,
+- [00:17:09,980 - 00:17:11,859] not horizontal,
+- [00:17:11,859 - 00:17:12,819] not vertical,
+- [00:17:12,819 - 00:17:13,780] not in or out,
+- [00:17:13,980 - 00:17:18,480] but just catty-cornered in some...
+- [00:17:23,689 - 00:17:25,079] some complicated way.
+- [00:17:25,280 - 00:17:26,240] There's M.
+- [00:17:29,820 - 00:17:30,880] There's M.
+- [00:17:31,580 - 00:17:32,440] And...
+- [00:17:34,260 - 00:17:35,120] uh...
+- [00:17:35,120 - 00:17:36,860] We start with the spin.
+- [00:17:37,020 - 00:17:38,540] Let's start with the spin
+- [00:17:39,120 - 00:17:42,640] previously having been oriented or prepared
+- [00:17:42,640 - 00:17:44,840] along a different axis,
+- [00:17:45,180 - 00:17:46,720] the N axis.
+- [00:17:47,580 - 00:17:48,860] How do we do that?
+- [00:17:49,080 - 00:17:49,440] Well,
+- [00:17:49,440 - 00:17:52,000] I should have gone a little slower.
+- [00:17:52,420 - 00:17:56,120] We start with the detector along the N axis.
+- [00:17:56,720 - 00:18:00,780] Do an experiment and discover that along the N axis
+- [00:18:00,780 - 00:18:03,720] the spin comes up plus one.
+- [00:18:04,360 - 00:18:08,620] Then we rotate the apparatus into the M direction,
+- [00:18:10,000 - 00:18:12,700] and we do another experiment on the same spin.
+- [00:18:13,420 - 00:18:15,690] It will either come up plus one
+- [00:18:15,690 - 00:18:17,960] or minus one along the M axis,
+- [00:18:18,300 - 00:18:19,660] never in between,
+- [00:18:21,160 - 00:18:23,880] but the average value of the
+- [00:18:23,880 - 00:18:26,600] spin along the M axis here
+- [00:18:27,440 - 00:18:28,840] will not be one.
+- [00:18:28,980 - 00:18:30,400] It will not be minus one.
+- [00:18:30,400 - 00:18:31,600] What will it be?
+- [00:18:31,900 - 00:18:33,820] It will be the cosine of
+- [00:18:33,820 - 00:18:35,740] the angle between M and N.
+- [00:18:36,120 - 00:18:37,100] In other words,
+- [00:18:37,100 - 00:18:41,220] the component of M along N.
+- [00:18:42,100 - 00:18:43,200] How do we write that?
+- [00:18:43,280 - 00:18:43,840] Let's write that.
+- [00:18:44,680 - 00:18:46,140] Let's write a formula for that.
+- [00:18:47,200 - 00:18:49,820] The symbol for averages in quantum mechanics
+- [00:18:50,180 - 00:18:52,940] are a pair of angular brackets like this.
+- [00:18:53,780 - 00:18:55,080] This one is called a bra,
+- [00:18:55,320 - 00:18:56,360] this one is called a ket,
+- [00:18:56,440 - 00:18:57,720] and the whole thing makes a braket,
+- [00:18:59,160 - 00:19:00,380] which is British law.
+- [00:19:00,400 - 00:19:01,020] British for bracket.
+- [00:19:07,980 - 00:19:08,660] Okay?
+- [00:19:09,160 - 00:19:11,400] The average value of sigma M,
+- [00:19:13,439 - 00:19:15,789] knowing that it was originally
+- [00:19:15,789 - 00:19:18,140] oriented along the N direction
+- [00:19:20,300 - 00:19:22,740] and measured along the M direction,
+- [00:19:24,220 - 00:19:26,860] is the cosine of the angle between N and M,
+- [00:19:26,980 - 00:19:29,000] which can also be written as
+- [00:19:29,000 - 00:19:30,080] N dot M,
+- [00:19:32,480 - 00:19:34,780] the ordinary dot product of the vectors,
+- [00:19:34,940 - 00:19:39,200] or just the component of N along M.
+- [00:19:39,880 - 00:19:42,340] The spin was oriented in the N direction,
+- [00:19:42,580 - 00:19:44,260] you measured it along the M direction,
+- [00:19:44,480 - 00:19:47,700] and the answer is plus or minus one,
+- [00:19:47,900 - 00:19:49,320] but on the average,
+- [00:19:50,200 - 00:19:53,340] it's what a classical physicist might have expected
+- [00:19:54,220 - 00:19:56,520] if he measured the component of a spin
+- [00:19:56,520 - 00:19:57,750] which is oriented in one
+- [00:19:57,750 - 00:19:58,980] direction along some other direction.
+- [00:19:59,000 - 00:20:03,140] This is exactly the component of M along N.
+- [00:20:04,160 - 00:20:04,820] Alright,
+- [00:20:04,820 - 00:20:05,040] so,
+- [00:20:06,220 - 00:20:07,980] if you do the experiment many,
+- [00:20:07,980 - 00:20:08,520] many times
+- [00:20:08,520 - 00:20:09,480] and collect averages,
+- [00:20:10,419 - 00:20:11,500] it seems,
+- [00:20:11,500 - 00:20:11,960] in fact,
+- [00:20:11,960 - 00:20:15,660] that the average quantities do behave like vectors,
+- [00:20:15,800 - 00:20:17,320] or like three vectors.
+- [00:20:17,840 - 00:20:20,740] But the individual experiments are very resistant
+- [00:20:20,740 - 00:20:23,620] to giving any answer other than plus or minus one.
+- [00:20:25,200 - 00:20:25,860] Okay,
+- [00:20:25,860 - 00:20:26,800] so this now...
+- [00:20:28,979 - 00:20:31,680] The apparatus doesn't know how to give any answer
+- [00:20:31,680 - 00:20:33,040] other than plus or minus one.
+- [00:20:33,160 - 00:20:34,900] It doesn't know how to give any.
+- [00:20:36,000 - 00:20:38,760] You might try to build another apparatus that does better,
+- [00:20:38,880 - 00:20:39,780] but it won't do better.
+- [00:20:41,580 - 00:20:44,220] Make sure I understand the setup here.
+- [00:20:44,320 - 00:20:47,460] The setup is that you prepare the...
+- [00:20:48,500 - 00:20:49,960] The spin along the N axis.
+- [00:20:51,400 - 00:20:53,540] And then you measure it along the M axis.
+- [00:20:54,260 - 00:20:54,700] Right.
+- [00:20:55,220 - 00:20:56,660] And you get a random answer,
+- [00:20:57,100 - 00:20:58,340] but random biased.
+- [00:20:59,300 - 00:21:00,860] Biased in such a way that the...
+- [00:21:01,440 - 00:21:03,180] that the average is N dot M.
+- [00:21:03,420 - 00:21:03,780] That,
+- [00:21:03,780 - 00:21:04,300] for example,
+- [00:21:04,300 - 00:21:04,820] would mean
+- [00:21:04,820 - 00:21:06,640] that if N and M were the same direction,
+- [00:21:06,820 - 00:21:08,540] that you didn't rotate it at all,
+- [00:21:09,240 - 00:21:10,780] what is N dot M in that case?
+- [00:21:13,220 - 00:21:13,580] One.
+- [00:21:14,420 - 00:21:14,780] Alright.
+- [00:21:15,260 - 00:21:16,640] And that would just be an indication
+- [00:21:17,960 - 00:21:20,660] that you got the same answer if N was up,
+- [00:21:20,820 - 00:21:22,200] and you did the experiment,
+- [00:21:22,320 - 00:21:23,440] you'd get it up and up and up
+- [00:21:23,440 - 00:21:24,460] over and over and over again.
+- [00:21:24,700 - 00:21:25,400] Okay.
+- [00:21:26,080 - 00:21:27,020] Quick question.
+- [00:21:27,620 - 00:21:28,720] Wouldn't it be more...
+- [00:21:28,720 - 00:21:30,280] I want to be very rigorous here.
+- [00:21:30,520 - 00:21:33,240] Wouldn't it be more accurate to say
+- [00:21:33,240 - 00:21:36,540] the expected value would be N times N
+- [00:21:36,540 - 00:21:37,240] rather than the average?
+- [00:21:37,440 - 00:21:37,880] No.
+- [00:21:38,040 - 00:21:38,600] No.
+- [00:21:38,680 - 00:21:38,820] No.
+- [00:21:39,480 - 00:21:41,780] My friend Murray Gilman loves to say
+- [00:21:41,780 - 00:21:43,020] the expected value.
+- [00:21:43,360 - 00:21:45,260] It is not the expected value.
+- [00:21:45,540 - 00:21:46,160] Why not?
+- [00:21:48,340 - 00:21:50,660] If I gave you a probability distribution
+- [00:21:50,660 - 00:21:51,820] which looked like this,
+- [00:21:53,860 - 00:21:56,380] what would be the expected value
+- [00:21:56,380 - 00:21:57,760] that you would have?
+- [00:21:58,960 - 00:22:01,580] The least expected value
+- [00:22:01,580 - 00:22:02,860] would be the one right in the middle,
+- [00:22:02,940 - 00:22:04,880] but the average value would be
+- [00:22:04,880 - 00:22:05,740] the one right in the middle.
+- [00:22:07,200 - 00:22:07,720] Okay?
+- [00:22:08,720 - 00:22:12,320] Expected values and average values
+- [00:22:12,320 - 00:22:15,580] are very different in general.
+- [00:22:16,000 - 00:22:17,880] And this is the average value.
+- [00:22:18,460 - 00:22:19,520] The average,
+- [00:22:19,520 - 00:22:20,900] if you average the quantity
+- [00:22:20,900 - 00:22:23,400] that you get in the standard sense of averaging,
+- [00:22:25,540 - 00:22:26,420] standard average,
+- [00:22:29,440 - 00:22:31,640] it's also called the expectation value.
+- [00:22:32,220 - 00:22:32,860] But again,
+- [00:22:32,860 - 00:22:33,660] that's a misnomer.
+- [00:22:33,960 - 00:22:36,880] It's not the value that you expect necessarily.
+- [00:22:38,000 - 00:22:39,230] I just want to make
+- [00:22:39,230 - 00:22:40,460] sure I'm thinking about this right.
+- [00:22:41,120 - 00:22:41,860] The spin,
+- [00:22:41,860 - 00:22:43,380] the only thing we know about the spin
+- [00:22:43,900 - 00:22:45,000] is that when we measure,
+- [00:22:45,100 - 00:22:46,760] we get plus one or minus one.
+- [00:22:46,780 - 00:22:46,940] Right.
+- [00:22:47,100 - 00:22:48,020] Really that tall...
+- [00:22:48,020 - 00:22:48,460] Well,
+- [00:22:48,460 - 00:22:49,080] that's all we know
+- [00:22:49,080 - 00:22:50,620] until we start doing a lot of experiments.
+- [00:22:50,900 - 00:22:52,060] The constant z component of this and that,
+- [00:22:52,160 - 00:22:56,280] that all has to do with results from the apparatus.
+- [00:22:56,560 - 00:22:56,840] That's right.
+- [00:22:56,940 - 00:22:58,360] It has nothing to do with the thing,
+- [00:22:58,380 - 00:22:58,660] I mean,
+- [00:22:58,660 - 00:22:59,980] at least not in order.
+- [00:23:01,139 - 00:23:01,540] Well,
+- [00:23:01,540 - 00:23:03,160] there are different experiments
+- [00:23:03,160 - 00:23:04,900] that you can do on the spin.
+- [00:23:06,200 - 00:23:10,360] The results of those experiments can be used,
+- [00:23:10,680 - 00:23:12,880] or the particular experiment you do
+- [00:23:13,719 - 00:23:15,299] can be used to label
+- [00:23:15,299 - 00:23:16,880] what it is that you measured.
+- [00:23:18,920 - 00:23:19,740] I guess what...
+- [00:23:19,740 - 00:23:21,400] I guess the point I'm trying to make is
+- [00:23:21,400 - 00:23:22,880] at one point you were drawing a spin
+- [00:23:23,439 - 00:23:25,960] and it's having an arrow either up or down,
+- [00:23:27,039 - 00:23:29,040] and that seemed to be sort of prejudiced.
+- [00:23:29,240 - 00:23:31,220] It's either plus one or minus one,
+- [00:23:31,260 - 00:23:31,920] whatever that means,
+- [00:23:31,920 - 00:23:32,480] we don't know.
+- [00:23:32,560 - 00:23:34,740] There's no geometric meaning to it.
+- [00:23:34,840 - 00:23:34,880] Yeah,
+- [00:23:34,880 - 00:23:36,100] that's right.
+- [00:23:36,200 - 00:23:37,500] There's no geometric meaning to it,
+- [00:23:37,540 - 00:23:37,920] obviously,
+- [00:23:37,920 - 00:23:38,660] to begin with.
+- [00:23:39,200 - 00:23:42,480] But we did discover that by turning this thing over,
+- [00:23:42,580 - 00:23:44,040] we always get the opposite sign.
+- [00:23:44,400 - 00:23:44,700] Well,
+- [00:23:44,700 - 00:23:46,380] that's starting to tell us there's some difference
+- [00:23:47,179 - 00:23:49,480] between the apparatus up and the apparatus down.
+- [00:23:49,480 - 00:23:51,640] It's not like a thermometer measuring temperature.
+- [00:23:51,940 - 00:23:55,000] There's some notion there that it's different
+- [00:23:55,000 - 00:23:57,300] to be up and down.
+- [00:23:58,040 - 00:23:59,880] And then if we turn it on its side,
+- [00:24:00,100 - 00:24:01,520] we find out that in
+- [00:24:01,520 - 00:24:02,940] some sense it really does behave
+- [00:24:03,370 - 00:24:04,960] on the average like a vector.
+- [00:24:05,920 - 00:24:06,840] On the average.
+- [00:24:09,940 - 00:24:11,640] But it is what it is.
+- [00:24:11,820 - 00:24:15,900] But that vector changes depending on how it's been prepared.
+- [00:24:16,720 - 00:24:17,600] In other words,
+- [00:24:17,600 - 00:24:18,740] when you prepare it,
+- [00:24:18,740 - 00:24:22,540] you may have something with an x component
+- [00:24:23,560 - 00:24:25,320] if you've got the apparatus one way,
+- [00:24:25,400 - 00:24:28,300] but if you prepare it with the apparatus another way,
+- [00:24:28,400 - 00:24:30,260] it may have a z component.
+- [00:24:30,620 - 00:24:31,720] Is that correct?
+- [00:24:32,300 - 00:24:32,720] Yeah.
+- [00:24:33,100 - 00:24:33,580] Okay.
+- [00:24:33,580 - 00:24:33,880] Yeah.
+- [00:24:35,280 - 00:24:36,760] But it is what it is,
+- [00:24:36,760 - 00:24:37,700] and I've told you the facts.
+- [00:24:38,280 - 00:24:39,300] The facts are,
+- [00:24:39,300 - 00:24:40,600] if you first prepare
+- [00:24:40,600 - 00:24:43,480] by putting your apparatus along one direction,
+- [00:24:44,000 - 00:24:45,820] and then measure with your apparatus
+- [00:24:45,820 - 00:24:47,100] along the other direction,
+- [00:24:47,620 - 00:24:49,340] the average value of the
+- [00:24:49,340 - 00:24:51,060] result will be n dot m,
+- [00:24:52,340 - 00:24:53,930] but every single event will be
+- [00:24:53,930 - 00:24:55,520] a plus one or a minus one.
+- [00:24:55,740 - 00:24:56,740] Nothing left to say.
+- [00:24:57,040 - 00:24:57,840] Say it anyway.
+- [00:24:58,060 - 00:25:01,360] But something slightly different is that if n and m
+- [00:25:01,360 - 00:25:03,500] are along the same direction or opposite direction,
+- [00:25:03,960 - 00:25:05,480] then it isn't just an average.
+- [00:25:05,540 - 00:25:06,400] It repeats itself.
+- [00:25:06,760 - 00:25:06,920] Yeah.
+- [00:25:07,020 - 00:25:08,340] Whereas if it's any of the others,
+- [00:25:08,340 - 00:25:08,980] it's an average.
+- [00:25:09,100 - 00:25:09,240] Yeah.
+- [00:25:09,240 - 00:25:10,340] Right.
+- [00:25:10,440 - 00:25:11,400] It's still an average,
+- [00:25:11,400 - 00:25:12,780] but it's different.
+- [00:25:13,240 - 00:25:13,680] Right.
+- [00:25:15,280 - 00:25:16,260] But if a number,
+- [00:25:17,100 - 00:25:17,900] or a result,
+- [00:25:17,900 - 00:25:19,580] can only be plus or minus one,
+- [00:25:19,740 - 00:25:22,060] and the average is plus one,
+- [00:25:22,240 - 00:25:24,560] it means every event was plus one.
+- [00:25:25,700 - 00:25:26,340] Okay.
+- [00:25:26,340 - 00:25:26,880] Right.
+- [00:25:29,540 - 00:25:30,180] Okay.
+- [00:25:33,160 - 00:25:35,060] Let's talk about logic a little bit.
+- [00:25:38,220 - 00:25:40,120] Our problem with quantum mechanics
+- [00:25:40,120 - 00:25:41,580] is that logic,
+- [00:25:41,840 - 00:25:44,400] the logic of quantum systems,
+- [00:25:44,460 - 00:25:45,240] is different
+- [00:25:46,120 - 00:25:48,200] than the logic of classical systems.
+- [00:25:48,980 - 00:25:51,620] But our brains are classical systems
+- [00:25:51,620 - 00:25:54,820] and incapable of thinking in quantum logic.
+- [00:25:55,360 - 00:25:56,040] Nevertheless,
+- [00:25:56,040 - 00:25:57,420] we can get a glimmering
+- [00:25:57,420 - 00:25:58,920] of what quantum logic is like
+- [00:25:58,920 - 00:26:00,660] by thinking about these experiments.
+- [00:26:07,880 - 00:26:11,180] We could either talk about the calculus of propositions
+- [00:26:11,180 - 00:26:15,220] or the nature of the states of a system.
+- [00:26:15,220 - 00:26:16,840] The space of states of a system.
+- [00:26:17,640 - 00:26:19,860] Let's start with the space of states of a system.
+- [00:26:19,940 - 00:26:21,140] The space of states of a system,
+- [00:26:21,240 - 00:26:22,540] and think classically for a moment,
+- [00:26:23,300 - 00:26:24,020] they're a set.
+- [00:26:24,240 - 00:26:26,980] And they're a set of possible states.
+- [00:26:27,420 - 00:26:28,140] Here they are.
+- [00:26:29,360 - 00:26:29,800] Heads,
+- [00:26:29,800 - 00:26:30,040] tails,
+- [00:26:31,520 - 00:26:31,960] six,
+- [00:26:31,960 - 00:26:32,420] five,
+- [00:26:32,420 - 00:26:32,720] four,
+- [00:26:32,720 - 00:26:33,000] three,
+- [00:26:33,000 - 00:26:33,180] two,
+- [00:26:33,180 - 00:26:34,080] one for the die.
+- [00:26:35,800 - 00:26:36,860] Particle on a line
+- [00:26:36,860 - 00:26:39,660] would have an infinite number of possible states,
+- [00:26:39,840 - 00:26:42,200] but the states form a set of some type.
+- [00:26:43,879 - 00:26:44,760] A proposition,
+- [00:26:45,439 - 00:26:47,280] about the states of the system,
+- [00:26:48,200 - 00:26:49,500] is basically a subset.
+- [00:26:49,980 - 00:26:51,620] It's a subset of states
+- [00:26:51,620 - 00:26:53,260] for which the proposition is true.
+- [00:26:53,740 - 00:26:54,380] Okay?
+- [00:26:54,740 - 00:26:55,380] So,
+- [00:26:55,380 - 00:26:56,660] for the die,
+- [00:26:57,560 - 00:27:01,400] my proposition is the die shows an even face.
+- [00:27:02,520 - 00:27:03,600] That's a proposition,
+- [00:27:03,840 - 00:27:07,280] and it's true for half the states of the die,
+- [00:27:07,980 - 00:27:09,920] and so it corresponds to a subset,
+- [00:27:10,200 - 00:27:10,760] two,
+- [00:27:10,760 - 00:27:11,240] four,
+- [00:27:11,240 - 00:27:11,620] and six.
+- [00:27:13,580 - 00:27:15,020] There's the contradiction.
+- [00:27:15,220 - 00:27:15,600] The victory statement,
+- [00:27:16,020 - 00:27:17,040] the not statement,
+- [00:27:18,080 - 00:27:21,260] not the die shows an even face,
+- [00:27:21,560 - 00:27:24,000] which is obviously equivalent to the statement
+- [00:27:24,000 - 00:27:25,540] the die shows an odd face.
+- [00:27:26,980 - 00:27:27,520] And so,
+- [00:27:28,560 - 00:27:30,360] in classical logic,
+- [00:27:32,540 - 00:27:34,700] the not of a statement,
+- [00:27:34,980 - 00:27:37,260] the not means the contradiction of the statement,
+- [00:27:37,400 - 00:27:38,300] if this is the statement,
+- [00:27:38,960 - 00:27:40,570] meaning to say it's true for
+- [00:27:40,570 - 00:27:42,180] all the subset of states in here,
+- [00:27:42,440 - 00:27:44,540] the not statement is the statement,
+- [00:27:45,300 - 00:27:46,760] and the not is the complement,
+- [00:27:46,960 - 00:27:51,540] or the collection of things which are not in there.
+- [00:27:53,100 - 00:27:53,660] Okay,
+- [00:27:53,660 - 00:27:55,880] let's go to our spin.
+- [00:27:58,160 - 00:27:58,720] Proposition.
+- [00:27:58,920 - 00:28:00,640] The spin is up along the z-axis.
+- [00:28:01,660 - 00:28:03,260] What's the not of that?
+- [00:28:03,540 - 00:28:05,510] The not of that is if
+- [00:28:05,510 - 00:28:07,480] we measure the spin along the z-axis,
+- [00:28:07,660 - 00:28:09,860] we get something else other than one.
+- [00:28:10,180 - 00:28:12,380] The only other possibility is minus one,
+- [00:28:13,160 - 00:28:15,200] so spin equal minus one along the z-axis,
+- [00:28:15,220 - 00:28:18,350] is the not statement of the
+- [00:28:18,350 - 00:28:21,480] spin is up along the z-axis.
+- [00:28:21,800 - 00:28:22,440] So,
+- [00:28:22,440 - 00:28:25,060] logic makes some sense,
+- [00:28:26,060 - 00:28:28,960] but we begin to find very peculiar differences
+- [00:28:28,960 - 00:28:32,200] when we start talking about the operations of combining
+- [00:28:34,239 - 00:28:37,220] propositions through the use of and and or.
+- [00:28:38,220 - 00:28:41,980] And and or are different in quantum mechanics
+- [00:28:41,980 - 00:28:43,640] than they are in classical mechanics.
+- [00:28:43,640 - 00:28:46,040] I want to lay that out.
+- [00:28:46,240 - 00:28:49,960] It's so interesting and so rarely explained
+- [00:28:51,220 - 00:28:57,480] that I sort of like to explain it.
+- [00:28:58,500 - 00:28:59,100] Yeah?
+- [00:28:59,460 - 00:29:02,140] I may be digging in what's not there,
+- [00:29:02,200 - 00:29:02,680] and if I am,
+- [00:29:02,680 - 00:29:03,360] just correct me.
+- [00:29:03,460 - 00:29:05,340] In the classical example,
+- [00:29:05,340 - 00:29:06,280] like with guys,
+- [00:29:06,640 - 00:29:09,100] the universal set is finite
+- [00:29:09,100 - 00:29:11,280] in terms of the number of elements in it.
+- [00:29:11,360 - 00:29:12,220] Number of states in it.
+- [00:29:12,260 - 00:29:13,620] And the inverse of that.
+- [00:29:13,620 - 00:29:15,700] And then you jump to the quantum example,
+- [00:29:16,200 - 00:29:18,280] and it seems like that would be infinite
+- [00:29:18,280 - 00:29:20,300] because it's all the possible times.
+- [00:29:20,520 - 00:29:21,520] Does that make a difference?
+- [00:29:21,660 - 00:29:22,560] The all possible what?
+- [00:29:22,720 - 00:29:24,180] All the possible experiments that
+- [00:29:24,180 - 00:29:25,640] you could do is not limited.
+- [00:29:25,940 - 00:29:26,280] Yeah,
+- [00:29:26,280 - 00:29:26,720] okay.
+- [00:29:26,820 - 00:29:28,400] You're getting at something important,
+- [00:29:28,480 - 00:29:29,600] which we're going to get to.
+- [00:29:31,420 - 00:29:33,180] It's clear that in some sense,
+- [00:29:33,340 - 00:29:36,080] the number of states of this spin is finite.
+- [00:29:36,220 - 00:29:37,870] It's just up or down if
+- [00:29:37,870 - 00:29:39,520] we measure it along the z-axis.
+- [00:29:40,200 - 00:29:41,620] On the other hand,
+- [00:29:41,640 - 00:29:43,600] it also looks like we can take
+- [00:29:43,620 - 00:29:45,400] and tilt our apparatus in any direction
+- [00:29:46,200 - 00:29:50,700] and prepare the state in any oriented along any direction.
+- [00:29:50,960 - 00:29:53,040] So it looks like there's an infinite ambiguity
+- [00:29:53,740 - 00:29:55,080] in the state of a system.
+- [00:29:55,400 - 00:29:59,200] This is the whole point of trying to understand
+- [00:29:59,200 - 00:30:00,100] the states of systems,
+- [00:30:00,200 - 00:30:01,120] to understand the connection
+- [00:30:02,040 - 00:30:04,920] between the continuously different direction
+- [00:30:04,920 - 00:30:06,380] that the electron could point in
+- [00:30:06,380 - 00:30:07,760] and the fact that any time
+- [00:30:07,760 - 00:30:09,140] we measure it along a given axis,
+- [00:30:09,240 - 00:30:10,560] it's only up or down.
+- [00:30:10,740 - 00:30:11,500] But we'll come to it.
+- [00:30:12,000 - 00:30:12,980] It's a good question,
+- [00:30:13,080 - 00:30:13,960] but we'll come to it.
+- [00:30:15,160 - 00:30:15,640] Okay,
+- [00:30:15,640 - 00:30:20,860] let's talk about calculus of propositions.
+- [00:30:20,880 - 00:30:22,360] If I give you two propositions,
+- [00:30:22,400 - 00:30:23,060] A and B,
+- [00:30:24,020 - 00:30:26,440] I can form two combinations of them,
+- [00:30:27,000 - 00:30:28,040] A or B,
+- [00:30:28,160 - 00:30:29,400] and A and B.
+- [00:30:29,960 - 00:30:33,040] Let's just see what that means in terms of sets.
+- [00:30:34,460 - 00:30:35,540] If we have two propositions,
+- [00:30:36,040 - 00:30:36,780] this one is A,
+- [00:30:36,920 - 00:30:37,660] this one is B,
+- [00:30:39,659 - 00:30:41,480] then A and B,
+- [00:30:41,480 - 00:30:45,120] means the set of states
+- [00:30:45,120 - 00:30:48,900] which belong both to A and to B.
+- [00:30:49,660 - 00:30:51,200] So it's the intersection
+- [00:30:51,200 - 00:30:53,760] of the set A and the set B,
+- [00:30:53,900 - 00:30:55,840] called logically the intersection
+- [00:30:55,840 - 00:30:57,740] or set theoretically the intersection,
+- [00:30:58,040 - 00:31:01,160] is basically the AND operation.
+- [00:31:01,920 - 00:31:06,060] This point is in A and it's in B.
+- [00:31:06,260 - 00:31:06,860] Okay,
+- [00:31:06,860 - 00:31:07,460] that's straightforward.
+- [00:31:08,600 - 00:31:11,460] And given any two propositions,
+- [00:31:11,460 - 00:31:15,460] you can always form the,
+- [00:31:16,680 - 00:31:17,280] oh,
+- [00:31:17,280 - 00:31:17,740] and,
+- [00:31:18,260 - 00:31:19,820] or another way to say it,
+- [00:31:19,860 - 00:31:20,680] the right way to say it,
+- [00:31:20,760 - 00:31:23,060] is this is the set of points in here
+- [00:31:23,060 - 00:31:28,040] for which the proposition A and B is true.
+- [00:31:28,800 - 00:31:31,220] A and B is true in here
+- [00:31:31,220 - 00:31:32,540] and it is true nowhere else.
+- [00:31:33,680 - 00:31:34,280] Okay,
+- [00:31:34,280 - 00:31:35,240] what about,
+- [00:31:37,420 - 00:31:41,280] what about these two subsets?
+- [00:31:41,280 - 00:31:42,800] A and B.
+- [00:31:44,040 - 00:31:48,280] A and B is still a proposition,
+- [00:31:49,260 - 00:31:51,140] but it's always false.
+- [00:31:51,480 - 00:31:52,600] There is no,
+- [00:31:53,120 - 00:31:55,260] there is no state for
+- [00:31:55,260 - 00:31:57,400] which A and B is true.
+- [00:31:58,020 - 00:31:58,880] All right,
+- [00:31:58,880 - 00:32:00,520] so there are A's and B's
+- [00:32:00,980 - 00:32:02,360] that you can put together.
+- [00:32:02,580 - 00:32:03,020] I mean,
+- [00:32:03,020 - 00:32:05,840] my friend Sanjay over here is,
+- [00:32:07,200 - 00:32:08,920] weighs 600 pounds,
+- [00:32:09,040 - 00:32:10,160] and my friend,
+- [00:32:11,560 - 00:32:12,480] that's not a good one.
+- [00:32:15,080 - 00:32:17,540] There are combinations for which A and B
+- [00:32:17,540 - 00:32:18,780] is always false,
+- [00:32:18,780 - 00:32:19,420] obviously.
+- [00:32:20,200 - 00:32:20,820] All right.
+- [00:32:20,860 - 00:32:21,740] In particular,
+- [00:32:21,740 - 00:32:23,000] if you take A and not A,
+- [00:32:23,500 - 00:32:24,640] it's always false.
+- [00:32:25,600 - 00:32:26,200] All right,
+- [00:32:26,200 - 00:32:26,600] but still,
+- [00:32:26,720 - 00:32:28,880] the definition of A and B
+- [00:32:28,880 - 00:32:30,280] is the intersection,
+- [00:32:30,760 - 00:32:31,720] and it's true
+- [00:32:32,780 - 00:32:34,460] for all the states in the intersection.
+- [00:32:35,280 - 00:32:37,200] OR is a little more complicated,
+- [00:32:37,320 - 00:32:39,020] or at least there are two versions of OR.
+- [00:32:39,360 - 00:32:41,060] There is the exclusive OR,
+- [00:32:41,280 - 00:32:42,360] and the inclusive OR.
+- [00:32:42,720 - 00:32:44,060] In the English language,
+- [00:32:44,160 - 00:32:44,760] we usually,
+- [00:32:44,840 - 00:32:45,960] when we use the word OR,
+- [00:32:46,200 - 00:32:48,500] we usually mean the exclusive OR.
+- [00:32:49,180 - 00:32:50,940] When we say that,
+- [00:32:52,780 - 00:32:57,420] I am Jewish and I am Catholic,
+- [00:32:57,540 - 00:33:01,400] I ordinarily mean that I can't be both.
+- [00:33:01,880 - 00:33:02,420] All right,
+- [00:33:02,420 - 00:33:03,240] that I can't be both.
+- [00:33:03,400 - 00:33:04,480] And so the usual OR
+- [00:33:05,160 - 00:33:06,600] is the exclusive OR,
+- [00:33:06,760 - 00:33:08,180] the one you normally think about.
+- [00:33:08,300 - 00:33:08,760] But in logic,
+- [00:33:09,340 - 00:33:10,360] the term OR
+- [00:33:10,360 - 00:33:11,840] is the inclusive OR.
+- [00:33:12,380 - 00:33:13,660] It means A,
+- [00:33:16,200 - 00:33:17,760] it's true if A is true,
+- [00:33:17,920 - 00:33:19,480] it's true if B is true,
+- [00:33:19,620 - 00:33:21,480] and it's true if both of them are true.
+- [00:33:21,600 - 00:33:22,800] It's the inclusive OR.
+- [00:33:24,340 - 00:33:24,820] So,
+- [00:33:25,720 - 00:33:26,460] I can
+- [00:33:27,500 - 00:33:28,460] correctly say
+- [00:33:29,639 - 00:33:31,020] I am a physicist
+- [00:33:31,840 - 00:33:33,200] and I am a father.
+- [00:33:34,400 - 00:33:35,100] That's true.
+- [00:33:35,220 - 00:33:37,060] But I can also say I am a physicist
+- [00:33:37,060 - 00:33:38,440] or I am a father,
+- [00:33:38,580 - 00:33:39,620] and it is also true.
+- [00:33:40,360 - 00:33:40,780] Why?
+- [00:33:40,880 - 00:33:41,880] Because both of them are true.
+- [00:33:42,040 - 00:33:43,800] So that's the inclusive OR.
+- [00:33:45,020 - 00:33:46,040] Inclusive OR
+- [00:33:46,040 - 00:33:48,980] corresponds to the union of two sets.
+- [00:33:49,280 - 00:33:51,480] If I have A and I have B,
+- [00:33:52,340 - 00:33:53,760] then the inclusive OR
+- [00:33:54,320 - 00:33:56,100] is everything in both sets
+- [00:33:57,240 - 00:33:58,520] or either set.
+- [00:33:59,360 - 00:34:00,000] Okay,
+- [00:34:00,000 - 00:34:00,400] anything,
+- [00:34:00,400 - 00:34:01,200] not in both sets,
+- [00:34:01,320 - 00:34:04,060] anything in either set or in both sets.
+- [00:34:05,100 - 00:34:06,760] The exclusive OR
+- [00:34:07,260 - 00:34:09,639] would correspond to things in one set,
+- [00:34:09,679 - 00:34:10,340] or in two sets.
+- [00:34:10,360 - 00:34:12,080] But not the other set.
+- [00:34:12,620 - 00:34:14,960] The exclusive OR includes
+- [00:34:16,820 - 00:34:18,320] we will always,
+- [00:34:18,360 - 00:34:19,960] whenever I speak of the OR,
+- [00:34:20,400 - 00:34:23,139] I always mean the inclusive OR.
+- [00:34:24,280 - 00:34:24,840] Okay,
+- [00:34:24,840 - 00:34:26,380] so that's AND and OR.
+- [00:34:27,800 - 00:34:29,380] What else can you say about them?
+- [00:34:29,420 - 00:34:30,080] Not very much.
+- [00:34:38,699 - 00:34:39,260] What?
+- [00:34:40,360 - 00:34:41,380] Plus or minus sign up.
+- [00:34:41,420 - 00:34:41,560] Yeah,
+- [00:34:41,560 - 00:34:44,020] we're going to now use that concept
+- [00:34:44,020 - 00:34:45,820] to try to formulate a
+- [00:34:45,820 - 00:34:47,620] set of AND and OR statements
+- [00:34:47,620 - 00:34:48,760] about the spin
+- [00:34:49,359 - 00:34:51,639] and then ask how would you verify them.
+- [00:34:51,860 - 00:34:53,280] How would you verify them?
+- [00:34:53,560 - 00:34:54,980] How would you verify them
+- [00:34:55,540 - 00:34:57,960] and does it mean anything to verify them?
+- [00:34:58,760 - 00:34:59,280] Okay,
+- [00:34:59,280 - 00:35:01,960] so let's take the two propositions,
+- [00:35:01,960 - 00:35:02,580] A and B,
+- [00:35:03,160 - 00:35:03,580] to be
+- [00:35:05,520 - 00:35:06,280] sigma z
+- [00:35:07,360 - 00:35:08,840] is equal to plus one
+- [00:35:11,340 - 00:35:12,040] plus one
+- [00:35:13,839 - 00:35:15,040] and sigma x,
+- [00:35:15,040 - 00:35:15,760] this is A
+- [00:35:15,760 - 00:35:17,660] and this is B.
+- [00:35:18,640 - 00:35:21,120] Sigma x is equal to plus one.
+- [00:35:21,880 - 00:35:23,160] They're both propositions.
+- [00:35:23,560 - 00:35:25,820] We would know how to check either one of them.
+- [00:35:26,480 - 00:35:28,360] If we wanted to check sigma A,
+- [00:35:28,440 - 00:35:29,440] so the first A,
+- [00:35:29,580 - 00:35:31,620] we would turn our apparatus vertically upward
+- [00:35:31,620 - 00:35:32,900] and measure the spin.
+- [00:35:33,020 - 00:35:33,660] We would check it.
+- [00:35:33,680 - 00:35:34,480] It's either true or false.
+- [00:35:34,980 - 00:35:36,490] If we wanted to find out
+- [00:35:36,490 - 00:35:38,000] if B was true or false,
+- [00:35:38,020 - 00:35:39,840] we would turn the apparatus on its side.
+- [00:35:40,880 - 00:35:42,380] In classical logic,
+- [00:35:43,700 - 00:35:44,920] if there are two propositions,
+- [00:35:45,400 - 00:35:48,880] you can form the combination A or B.
+- [00:35:49,000 - 00:35:50,340] Let's start with A or B.
+- [00:35:50,880 - 00:35:52,500] So we'll take A or B.
+- [00:35:57,220 - 00:35:59,620] And let's think about checking its truth value.
+- [00:36:00,000 - 00:36:01,400] Is it true or is it not?
+- [00:36:01,980 - 00:36:02,500] Alright,
+- [00:36:02,500 - 00:36:05,260] so we'll design an experiment to try to...
+- [00:36:05,260 - 00:36:05,340] Oh,
+- [00:36:05,340 - 00:36:06,780] and let's go back a step.
+- [00:36:07,180 - 00:36:09,540] Let's imagine the hidden ghost in the works.
+- [00:36:09,540 - 00:36:12,320] Has previously,
+- [00:36:12,320 - 00:36:13,760] unknown to us,
+- [00:36:13,840 - 00:36:15,060] unknown to us,
+- [00:36:15,160 - 00:36:19,720] has originally oriented the spin upward along the z-axis.
+- [00:36:20,600 - 00:36:21,640] He knows,
+- [00:36:21,640 - 00:36:22,280] we don't.
+- [00:36:22,620 - 00:36:23,640] As far as we know,
+- [00:36:23,640 - 00:36:24,220] we know nothing.
+- [00:36:24,720 - 00:36:27,080] But the ghost in the works
+- [00:36:27,080 - 00:36:29,440] has oriented the spin vertically upward.
+- [00:36:29,720 - 00:36:30,320] Just to...
+- [00:36:30,320 - 00:36:30,820] And it doesn't...
+- [00:36:30,820 - 00:36:31,540] This doesn't matter,
+- [00:36:31,540 - 00:36:32,720] but we could start that way.
+- [00:36:33,280 - 00:36:34,500] So the spin is upward.
+- [00:36:34,780 - 00:36:36,920] And let's check whether A or B is true.
+- [00:36:37,140 - 00:36:37,840] How do we begin?
+- [00:36:38,200 - 00:36:39,520] Let's begin by...
+- [00:36:39,520 - 00:36:42,120] By measuring the spin along the z-axis.
+- [00:36:42,340 - 00:36:43,460] We put our detector,
+- [00:36:43,460 - 00:36:44,560] or our apparatus,
+- [00:36:45,220 - 00:36:46,600] in the vertical direction.
+- [00:36:47,560 - 00:36:48,480] And we measure.
+- [00:36:48,680 - 00:36:49,320] What do we get?
+- [00:36:50,580 - 00:36:51,720] We get plus one.
+- [00:36:52,160 - 00:36:54,360] We get plus one because the ghost in the
+- [00:36:54,360 - 00:36:56,560] works has made it a point to begin with.
+- [00:36:56,860 - 00:36:58,240] We don't have to go any further.
+- [00:36:58,840 - 00:37:00,100] A or B is true.
+- [00:37:00,720 - 00:37:02,660] A or B includes the possibility
+- [00:37:02,660 - 00:37:04,600] that both A and B are true,
+- [00:37:04,820 - 00:37:06,490] but all it requires to be true
+- [00:37:06,490 - 00:37:08,160] is that one of them is true.
+- [00:37:08,160 - 00:37:11,160] And we've just discovered that A is true.
+- [00:37:11,560 - 00:37:15,040] So A or B is definitely true.
+- [00:37:15,940 - 00:37:18,680] But now let's do the experiment in another way,
+- [00:37:18,700 - 00:37:21,270] in an order which would not
+- [00:37:21,270 - 00:37:23,840] matter if we were doing classical physics.
+- [00:37:24,280 - 00:37:25,810] And the reason it doesn't
+- [00:37:25,810 - 00:37:27,340] matter when we do classical physics
+- [00:37:27,340 - 00:37:29,840] is when we do an experiment that has no
+- [00:37:29,840 - 00:37:32,340] necessary effect on the outcome of a later experiment,
+- [00:37:32,800 - 00:37:34,220] if the experiment is gentle enough.
+- [00:37:34,700 - 00:37:38,040] So let's do the experiment in the opposite order.
+- [00:37:38,920 - 00:37:43,380] Instead of first finding out whether A is true,
+- [00:37:43,640 - 00:37:45,860] let's first ask if B is true.
+- [00:37:46,280 - 00:37:47,560] And then we'll come back
+- [00:37:47,560 - 00:37:48,840] and ask if A is true.
+- [00:37:49,680 - 00:37:50,200] Alright,
+- [00:37:50,200 - 00:37:52,760] secretly the spin is pointing up in the Z direction.
+- [00:37:53,120 - 00:37:55,780] So the ghost knows that.
+- [00:37:56,800 - 00:37:58,280] But we don't.
+- [00:37:58,300 - 00:38:01,140] And so we come along knowing nothing about the spin
+- [00:38:01,140 - 00:38:01,600] and say,
+- [00:38:01,600 - 00:38:04,500] why should I measure A first?
+- [00:38:04,940 - 00:38:06,240] Let's first measure B.
+- [00:38:06,860 - 00:38:08,140] Let's first measure A.
+- [00:38:08,160 - 00:38:09,820] Let's measure the X component of the spin.
+- [00:38:10,020 - 00:38:10,720] And what do we get?
+- [00:38:12,380 - 00:38:14,500] We get either plus one or minus one.
+- [00:38:15,240 - 00:38:17,220] We get plus one or minus one.
+- [00:38:17,560 - 00:38:19,080] With a 50% probability.
+- [00:38:20,000 - 00:38:25,100] So there's a 50% probability that B is plus one.
+- [00:38:25,980 - 00:38:27,780] But if B is not plus one,
+- [00:38:27,780 - 00:38:30,980] it doesn't mean that A or B is wrong.
+- [00:38:31,600 - 00:38:34,160] We still have the chance that when we measure A,
+- [00:38:34,160 - 00:38:35,440] it'll be plus one.
+- [00:38:36,840 - 00:38:37,320] Okay.
+- [00:38:37,320 - 00:38:39,420] But the problem is that in
+- [00:38:39,420 - 00:38:41,520] measuring B the first time around,
+- [00:38:43,940 - 00:38:45,060] we orient,
+- [00:38:45,060 - 00:38:48,020] we prepare B along the X axis.
+- [00:38:48,260 - 00:38:49,200] Whatever we get,
+- [00:38:49,200 - 00:38:51,760] whether it's this way or this way,
+- [00:38:54,920 - 00:38:57,860] we have prepared that spin along the X axis.
+- [00:38:58,420 - 00:39:00,270] What will the next experiment give when
+- [00:39:00,270 - 00:39:02,120] we measure it along the Z axis?
+- [00:39:04,120 - 00:39:06,580] 50% probability of being up,
+- [00:39:06,580 - 00:39:08,620] and 50% probability of down.
+- [00:39:09,620 - 00:39:14,780] That means we have a 25% probability of finding
+- [00:39:14,780 - 00:39:19,940] both that sigma X was equal to minus one
+- [00:39:20,460 - 00:39:23,760] and sigma Z is equal to minus one.
+- [00:39:24,180 - 00:39:27,960] We have a 50% probability in the first
+- [00:39:27,960 - 00:39:31,740] experiment that sigma X was not equal to one.
+- [00:39:31,940 - 00:39:33,580] And then in the next experiment,
+- [00:39:33,660 - 00:39:36,560] we have another 50% probability on top of that.
+- [00:39:36,560 - 00:39:39,980] That sigma Z was not equal to one.
+- [00:39:40,300 - 00:39:43,480] So we have a net probability of one
+- [00:39:43,480 - 00:39:46,660] quarter that both A and B were false.
+- [00:39:47,760 - 00:39:50,340] When we did the experiment in one order.
+- [00:39:50,500 - 00:39:52,920] When we do the experiment in the other order,
+- [00:39:53,100 - 00:39:55,840] it is certain that A or B is right.
+- [00:39:56,060 - 00:39:56,400] Why?
+- [00:39:56,400 - 00:39:57,280] Because A is right.
+- [00:39:59,760 - 00:40:00,360] So,
+- [00:40:00,360 - 00:40:02,340] what is true in classical physics,
+- [00:40:02,580 - 00:40:06,480] that the idea of A or B is symmetrical,
+- [00:40:06,480 - 00:40:07,640] symmetrical between A and B,
+- [00:40:08,440 - 00:40:11,060] the idea of the or statement,
+- [00:40:11,780 - 00:40:13,620] A or B,
+- [00:40:14,220 - 00:40:16,460] if A or B is true,
+- [00:40:17,200 - 00:40:19,120] then B or A is true.
+- [00:40:19,420 - 00:40:21,540] And we find that in quantum mechanics,
+- [00:40:22,700 - 00:40:25,640] the concept of A or B at best
+- [00:40:26,780 - 00:40:28,590] can only be defined in a
+- [00:40:28,590 - 00:40:30,400] way that depends on the order
+- [00:40:30,400 - 00:40:32,600] in which you determine A or B.
+- [00:40:34,360 - 00:40:36,110] I would say that the
+- [00:40:36,110 - 00:40:37,860] two propositions are incompletely specified
+- [00:40:37,860 - 00:40:39,600] in the quantum mechanical case,
+- [00:40:39,860 - 00:40:41,060] because you have to give the order,
+- [00:40:41,060 - 00:40:41,340] right?
+- [00:40:42,220 - 00:40:45,280] It isn't like the particle has a certain X spin,
+- [00:40:45,420 - 00:40:47,140] independent of how you handle it,
+- [00:40:47,140 - 00:40:47,320] right?
+- [00:40:47,960 - 00:40:49,160] Would you say that's right?
+- [00:40:49,640 - 00:40:49,900] Yeah,
+- [00:40:49,900 - 00:40:50,200] I would.
+- [00:40:52,520 - 00:40:53,040] But,
+- [00:40:53,040 - 00:40:57,360] I would also say that any attempt
+- [00:40:57,360 - 00:41:01,680] to think of a logic of experiments
+- [00:41:01,680 - 00:41:04,180] will be different than quantum mechanics.
+- [00:41:04,500 - 00:41:06,580] What is the hierarchy between A and B?
+- [00:41:06,860 - 00:41:07,140] Why,
+- [00:41:07,140 - 00:41:07,360] the what?
+- [00:41:07,740 - 00:41:08,140] Hierarchy.
+- [00:41:08,560 - 00:41:09,240] What hierarchy?
+- [00:41:09,340 - 00:41:09,760] In other words,
+- [00:41:09,760 - 00:41:10,880] A and B,
+- [00:41:11,000 - 00:41:11,720] if you measure A,
+- [00:41:11,720 - 00:41:13,120] then you're certain of B,
+- [00:41:13,260 - 00:41:14,060] if you measure B,
+- [00:41:14,060 - 00:41:15,820] then you aren't certain of A,
+- [00:41:15,920 - 00:41:16,500] but you're certain of B.
+- [00:41:16,500 - 00:41:16,660] No,
+- [00:41:16,660 - 00:41:16,780] no,
+- [00:41:16,780 - 00:41:16,940] no,
+- [00:41:16,940 - 00:41:17,080] no,
+- [00:41:17,080 - 00:41:17,140] no,
+- [00:41:17,140 - 00:41:17,920] let's go back.
+- [00:41:18,740 - 00:41:20,330] I said the ghost in
+- [00:41:20,330 - 00:41:21,920] the woodwork has made the spin
+- [00:41:21,920 - 00:41:24,320] to be pointing up along the Z axis.
+- [00:41:25,260 - 00:41:25,740] That's a,
+- [00:41:25,740 - 00:41:27,300] we don't know that,
+- [00:41:27,300 - 00:41:27,860] but it's true.
+- [00:41:28,200 - 00:41:28,600] Okay?
+- [00:41:31,100 - 00:41:31,500] Then,
+- [00:41:31,500 - 00:41:31,660] if we're going to do the same thing
+- [00:41:31,680 - 00:41:33,380] if we measure sigma Z first,
+- [00:41:33,680 - 00:41:35,080] under those circumstances,
+- [00:41:35,300 - 00:41:37,520] we will surely find that A or B is true.
+- [00:41:39,260 - 00:41:41,900] But if we measure under the same circumstances,
+- [00:41:42,680 - 00:41:45,460] the same degree of lack of presence of knowledge,
+- [00:41:46,160 - 00:41:47,440] we measure B first,
+- [00:41:47,700 - 00:41:49,450] we find out that there's a
+- [00:41:49,450 - 00:41:51,200] 25% chance that A or B,
+- [00:41:52,580 - 00:41:54,520] this composite statement here,
+- [00:41:54,520 - 00:41:55,360] is false.
+- [00:41:55,700 - 00:41:56,180] So,
+- [00:41:56,180 - 00:41:56,880] a question,
+- [00:41:56,880 - 00:41:58,220] the operation A or B,
+- [00:41:58,320 - 00:42:00,740] the result is now going to be a probability,
+- [00:42:00,740 - 00:42:03,000] it's going to be 0.25 instead of 0.1.
+- [00:42:03,480 - 00:42:03,780] Well,
+- [00:42:03,780 - 00:42:05,100] not only that,
+- [00:42:05,100 - 00:42:06,220] but you have to specify
+- [00:42:06,620 - 00:42:09,700] which order you determine A and B.
+- [00:42:10,120 - 00:42:10,720] Right.
+- [00:42:11,480 - 00:42:13,860] So that's in itself an element of something new
+- [00:42:14,520 - 00:42:18,800] that the OR statement does not unify two statements
+- [00:42:18,800 - 00:42:19,740] into a symmetrical,
+- [00:42:19,740 - 00:42:21,880] in a symmetrical way.
+- [00:42:23,240 - 00:42:23,840] Question?
+- [00:42:26,460 - 00:42:28,280] I'm confused when we,
+- [00:42:29,779 - 00:42:32,160] the thing has been prepared so that it's up,
+- [00:42:32,200 - 00:42:33,420] we don't know if it's been prepared.
+- [00:42:33,680 - 00:42:33,740] No.
+- [00:42:34,220 - 00:42:34,960] We then...
+- [00:42:35,360 - 00:42:36,160] That doesn't,
+- [00:42:36,160 - 00:42:36,940] that didn't matter.
+- [00:42:37,060 - 00:42:38,400] Just to simplify the story,
+- [00:42:38,400 - 00:42:39,060] I said that.
+- [00:42:39,140 - 00:42:40,160] It wouldn't have mattered to her.
+- [00:42:40,420 - 00:42:42,520] But we then do the experiment,
+- [00:42:42,520 - 00:42:43,060] we do B,
+- [00:42:43,280 - 00:42:44,960] because by turning the machine,
+- [00:42:44,960 - 00:42:46,180] the apparatus on its side,
+- [00:42:46,360 - 00:42:48,560] and I thought what you'd said is,
+- [00:42:48,660 - 00:42:50,980] if we now do this multiple times,
+- [00:42:50,980 - 00:42:52,700] we'll get an average.
+- [00:42:53,080 - 00:42:53,420] Yeah,
+- [00:42:53,420 - 00:42:54,140] but we're not doing it,
+- [00:42:54,140 - 00:42:55,660] we're trying to find out...
+- [00:42:55,660 - 00:42:56,880] But you're saying we're going to prepare,
+- [00:42:56,880 - 00:43:00,020] what you're saying is when we do that first measurement
+- [00:43:00,020 - 00:43:00,660] on its side,
+- [00:43:00,660 - 00:43:03,460] we're preparing the spin again.
+- [00:43:03,920 - 00:43:05,080] And that would say then,
+- [00:43:05,080 - 00:43:05,980] then from then on,
+- [00:43:06,420 - 00:43:08,800] we should always get plus one if we prepare it.
+- [00:43:08,800 - 00:43:09,800] Plus one for sigma X,
+- [00:43:09,800 - 00:43:11,520] but then if we do sigma Z,
+- [00:43:12,339 - 00:43:13,480] we'll get a random answer.
+- [00:43:15,260 - 00:43:15,920] Measuring one,
+- [00:43:15,920 - 00:43:16,520] the random answer...
+- [00:43:16,520 - 00:43:16,900] So we're going to get a,
+- [00:43:16,900 - 00:43:17,480] we're going to get a,
+- [00:43:17,480 - 00:43:19,640] we're going to get a random answer for...
+- [00:43:19,640 - 00:43:20,100] Sigma Z.
+- [00:43:20,120 - 00:43:21,480] The first measurement of sigma X.
+- [00:43:21,940 - 00:43:22,300] Yeah.
+- [00:43:23,120 - 00:43:23,480] Yes.
+- [00:43:25,380 - 00:43:26,100] Think about it.
+- [00:43:27,640 - 00:43:30,340] I can't stop the class to...
+- [00:43:30,340 - 00:43:30,940] Okay.
+- [00:43:32,420 - 00:43:33,000] Question.
+- [00:43:33,660 - 00:43:36,870] If we have a measurement
+- [00:43:36,870 - 00:43:40,080] device to measure two different particles,
+- [00:43:41,500 - 00:43:42,080] and...
+- [00:43:42,980 - 00:43:44,020] Why have you gotten,
+- [00:43:44,020 - 00:43:45,400] why have you jumped to two particles?
+- [00:43:46,720 - 00:43:47,820] I was just wondering,
+- [00:43:47,820 - 00:43:49,060] the act of measurement,
+- [00:43:49,160 - 00:43:51,580] does it inductively spread backwards?
+- [00:43:52,440 - 00:43:53,020] What?
+- [00:43:53,920 - 00:43:54,700] I don't know.
+- [00:43:56,920 - 00:43:57,360] I don't know.
+- [00:43:57,920 - 00:43:59,220] That was all review.
+- [00:44:02,820 - 00:44:03,440] All right,
+- [00:44:03,440 - 00:44:05,100] the next thing which I was going to review,
+- [00:44:05,220 - 00:44:06,920] but I'm not going to because it took too long,
+- [00:44:08,320 - 00:44:09,360] is vector spaces.
+- [00:44:10,580 - 00:44:11,960] I'll just remind you real quickly,
+- [00:44:12,180 - 00:44:14,520] vector spaces are sets of elements.
+- [00:44:14,740 - 00:44:15,800] You can add elements.
+- [00:44:16,140 - 00:44:20,220] This is not something you would do with sets.
+- [00:44:21,280 - 00:44:22,900] You can add two sets,
+- [00:44:22,900 - 00:44:23,300] of course,
+- [00:44:23,300 - 00:44:24,360] to make a bigger set,
+- [00:44:24,360 - 00:44:28,600] but there's no natural single element,
+- [00:44:29,200 - 00:44:31,840] which is the sum of two elements.
+- [00:44:33,960 - 00:44:37,500] So the elements of set theory,
+- [00:44:37,500 - 00:44:40,060] namely the basic individual objects,
+- [00:44:40,300 - 00:44:41,490] are not things that you
+- [00:44:41,490 - 00:44:42,680] can add and make new elements.
+- [00:44:45,740 - 00:44:48,240] The space of states of a
+- [00:44:48,240 - 00:44:50,740] quantum system is a linear vector space,
+- [00:44:51,100 - 00:44:53,700] and that means given any two states,
+- [00:44:54,360 - 00:44:56,190] you can add them in
+- [00:44:56,190 - 00:44:58,020] some sense and make another state.
+- [00:44:58,380 - 00:45:00,020] And that's what we're going to explore.
+- [00:45:01,800 - 00:45:02,840] This logic,
+- [00:45:02,840 - 00:45:04,200] this peculiar logic,
+- [00:45:04,240 - 00:45:06,160] and this peculiar distortion of logic,
+- [00:45:06,400 - 00:45:08,700] turns out to be the logic of vector spaces.
+- [00:45:09,160 - 00:45:10,640] It's a logic which is embedded
+- [00:45:10,640 - 00:45:12,120] in the structure of vector spaces
+- [00:45:12,720 - 00:45:15,040] in a very neat and tidy way,
+- [00:45:15,260 - 00:45:16,100] and that's why,
+- [00:45:16,100 - 00:45:16,700] ultimately,
+- [00:45:16,700 - 00:45:18,160] why vector spaces are important.
+- [00:45:19,240 - 00:45:19,780] Okay,
+- [00:45:19,780 - 00:45:21,750] so let's just remember vectors
+- [00:45:21,750 - 00:45:23,720] are things that you can add,
+- [00:45:27,620 - 00:45:28,920] if there are two vectors,
+- [00:45:28,920 - 00:45:29,620] A and B,
+- [00:45:29,820 - 00:45:30,900] you can add them,
+- [00:45:31,520 - 00:45:33,960] you can multiply them by complex numbers.
+- [00:45:36,840 - 00:45:40,020] Every vector has a dual vector,
+- [00:45:40,220 - 00:45:41,920] which is kind of its complex conjugate.
+- [00:45:43,760 - 00:45:46,140] If we call these objects ket vectors,
+- [00:45:46,240 - 00:45:48,540] because they are the second half of a bra ket,
+- [00:45:51,279 - 00:45:52,440] then the ket,
+- [00:45:52,440 - 00:45:53,280] the bra vectors,
+- [00:45:53,280 - 00:45:55,520] which are in one-to-one correspondence,
+- [00:45:55,720 - 00:45:56,380] which are,
+- [00:45:56,380 - 00:46:00,340] for every ket vector,
+- [00:46:00,520 - 00:46:01,320] there is a bra vector,
+- [00:46:01,540 - 00:46:04,680] but its status is that of a complex conjugate,
+- [00:46:05,260 - 00:46:07,580] so there's two dual vector spaces,
+- [00:46:08,520 - 00:46:11,280] and you can take inner products of vectors,
+- [00:46:11,400 - 00:46:13,780] a bra vector with a ket vector.
+- [00:46:15,320 - 00:46:15,880] So,
+- [00:46:15,880 - 00:46:17,310] the bra vector and the
+- [00:46:17,310 - 00:46:18,740] ket vector can be combined together,
+- [00:46:18,980 - 00:46:20,700] it gives a complex number.
+- [00:46:20,980 - 00:46:22,980] The inner product is a complex number,
+- [00:46:25,920 - 00:46:28,380] and it satisfies that it
+- [00:46:28,380 - 00:46:30,840] is equal to the complex conjugate,
+- [00:46:32,040 - 00:46:36,240] complex conjugate of the opposite order.
+- [00:46:38,300 - 00:46:39,940] So when you take a complex
+- [00:46:39,940 - 00:46:41,580] vector in a complex vector space,
+- [00:46:41,760 - 00:46:42,860] and you take the inner product,
+- [00:46:43,100 - 00:46:46,700] if you interchange the two vectors,
+- [00:46:47,000 - 00:46:50,160] then that's equivalent to complex conjugation.
+- [00:46:50,540 - 00:46:52,280] That's pretty much what you need to know.
+- [00:46:53,360 - 00:46:54,920] That allows you to define,
+- [00:46:55,100 - 00:46:57,600] given the idea of an inner product,
+- [00:46:57,700 - 00:46:59,490] that allows you to define the
+- [00:46:59,490 - 00:47:01,280] notion of the length of a vector.
+- [00:47:02,540 - 00:47:04,620] We usually don't think about the length of a vector,
+- [00:47:04,680 - 00:47:05,740] we usually think about the square
+- [00:47:05,740 - 00:47:06,800] of the length of the vector.
+- [00:47:07,100 - 00:47:09,200] And the square of the length of a vector,
+- [00:47:09,400 - 00:47:10,640] let's say the vector is a,
+- [00:47:11,420 - 00:47:14,940] is the inner product with its own conjugate,
+- [00:47:15,240 - 00:47:17,060] or with its own dual.
+- [00:47:18,320 - 00:47:20,340] Usually we say it's the inner product with itself,
+- [00:47:20,580 - 00:47:22,260] but that's a sort of slight abuse of fact,
+- [00:47:22,280 - 00:47:22,460] of terminology.
+- [00:47:23,360 - 00:47:25,000] And this is always real.
+- [00:47:25,640 - 00:47:27,400] The reason it's always real,
+- [00:47:28,140 - 00:47:30,780] is because if we interchange A and A,
+- [00:47:31,040 - 00:47:32,560] we just get back to the same thing,
+- [00:47:32,840 - 00:47:34,500] but this tells us that the
+- [00:47:34,500 - 00:47:36,160] inner product of A and A
+- [00:47:36,160 - 00:47:37,800] is its own complex conjugate.
+- [00:47:38,160 - 00:47:39,840] Being its own complex conjugate,
+- [00:47:39,840 - 00:47:40,480] it's real.
+- [00:47:43,300 - 00:47:44,520] It's also positive,
+- [00:47:44,520 - 00:47:45,920] that's easy to prove.
+- [00:47:47,440 - 00:47:48,980] And it can be thought of as
+- [00:47:48,980 - 00:47:50,520] the square of the length of a vector.
+- [00:47:51,580 - 00:47:52,960] It's analogous to,
+- [00:47:53,080 - 00:47:54,900] closely analogous to,
+- [00:47:55,299 - 00:47:58,180] the dot product of a three vector with itself.
+- [00:47:58,980 - 00:48:01,020] If A and B were three vectors,
+- [00:48:01,220 - 00:48:03,580] then we wouldn't distinguish the bra and the ket,
+- [00:48:04,300 - 00:48:06,620] but we would write that
+- [00:48:07,500 - 00:48:11,020] A dot B is the dot product between two vectors,
+- [00:48:11,140 - 00:48:12,040] analogous to this.
+- [00:48:12,480 - 00:48:14,980] And we would also write that A dot A
+- [00:48:15,920 - 00:48:18,780] was the square of the length of A.
+- [00:48:19,540 - 00:48:20,020] Okay?
+- [00:48:20,580 - 00:48:21,060] So,
+- [00:48:21,060 - 00:48:22,700] the inner product of a vector with itself
+- [00:48:22,700 - 00:48:23,880] can be thought of as the
+- [00:48:23,880 - 00:48:25,060] square of the length of the vector.
+- [00:48:26,160 - 00:48:27,120] And finally,
+- [00:48:27,120 - 00:48:29,000] there is the notion of orthogonality.
+- [00:48:29,580 - 00:48:31,320] Two vectors are orthogonal
+- [00:48:31,320 - 00:48:33,380] when their inner product is zero.
+- [00:48:45,260 - 00:48:45,740] Orthogonal.
+- [00:48:49,500 - 00:48:52,040] Same definition as for dot product.
+- [00:48:52,320 - 00:48:55,000] When the dot product between two vectors is zero,
+- [00:48:55,220 - 00:48:56,540] those vectors are orthogonal.
+- [00:48:58,340 - 00:49:00,020] Those are the definitions that
+- [00:49:00,020 - 00:49:01,700] we need for a vector space.
+- [00:49:02,960 - 00:49:05,260] The other definition is the
+- [00:49:05,780 - 00:49:08,460] definition of the dimensionality of the vector space.
+- [00:49:08,820 - 00:49:11,200] How many dimensions does a vector space have?
+- [00:49:11,800 - 00:49:13,480] And the way to decide that
+- [00:49:13,480 - 00:49:17,700] is by asking what's the maximum number of orthogonal vectors
+- [00:49:17,700 - 00:49:19,640] that you can find in the vector space.
+- [00:49:20,620 - 00:49:23,400] For ordinary vectors,
+- [00:49:23,600 - 00:49:24,560] let's say in two,
+- [00:49:24,560 - 00:49:24,900] three,
+- [00:49:24,900 - 00:49:25,760] four dimensions,
+- [00:49:26,680 - 00:49:27,640] this is obvious.
+- [00:49:28,220 - 00:49:29,320] In two dimensions,
+- [00:49:29,320 - 00:49:31,120] I can pick a vector.
+- [00:49:32,080 - 00:49:33,140] Just pick any vector.
+- [00:49:33,700 - 00:49:36,460] Make it a unit vector just by shrinking its length
+- [00:49:36,460 - 00:49:37,580] until it's of unit length.
+- [00:49:38,000 - 00:49:39,060] And then I look around and
+- [00:49:39,060 - 00:49:40,120] I see if I can find
+- [00:49:40,120 - 00:49:41,920] another orthogonal vector to it.
+- [00:49:42,460 - 00:49:42,900] Yeah,
+- [00:49:42,900 - 00:49:43,900] in fact I can find two.
+- [00:49:44,020 - 00:49:45,560] One point's this way and one point's that way,
+- [00:49:45,680 - 00:49:47,680] but that's not an important distinction.
+- [00:49:47,700 - 00:49:50,660] We find one other direction,
+- [00:49:51,259 - 00:49:52,600] or one other vector,
+- [00:49:52,720 - 00:49:55,620] apart from a numerical multiple.
+- [00:49:56,300 - 00:49:57,860] Apart from a numerical multiple,
+- [00:49:58,020 - 00:50:00,360] there is one other vector which is orthogonal to it.
+- [00:50:00,600 - 00:50:02,400] And so there are two mutually,
+- [00:50:03,220 - 00:50:05,800] the maximum number of mutually orthogonal vectors
+- [00:50:05,800 - 00:50:06,820] that you can find is two.
+- [00:50:07,360 - 00:50:08,700] If you go to three directions,
+- [00:50:08,820 - 00:50:09,780] you can find a third one,
+- [00:50:09,780 - 00:50:10,620] but no more.
+- [00:50:11,040 - 00:50:12,380] Try to find a fourth one,
+- [00:50:12,460 - 00:50:13,440] and you run out of directions.
+- [00:50:14,180 - 00:50:14,660] So,
+- [00:50:14,660 - 00:50:16,440] three dimensional space has three
+- [00:50:16,440 - 00:50:17,780] mutually orthogonal vectors.
+- [00:50:18,480 - 00:50:20,360] Four dimensional space has four,
+- [00:50:20,360 - 00:50:21,060] and so forth.
+- [00:50:21,580 - 00:50:24,180] And the same thing is true of complex vector spaces.
+- [00:50:25,620 - 00:50:28,700] We described a version of complex vector spaces
+- [00:50:29,340 - 00:50:31,020] which were just column vectors.
+- [00:50:32,180 - 00:50:33,100] Alpha one,
+- [00:50:33,100 - 00:50:33,880] alpha two,
+- [00:50:33,880 - 00:50:34,660] alpha three,
+- [00:50:34,660 - 00:50:35,380] dot dot dot.
+- [00:50:36,200 - 00:50:37,740] And they're duals,
+- [00:50:37,740 - 00:50:39,000] which were row vectors,
+- [00:50:39,880 - 00:50:43,180] which were made up out of the complex conjugate variables.
+- [00:50:46,440 - 00:50:48,280] And so once we have a vector,
+- [00:50:48,380 - 00:50:51,620] we can start looking for orthogonal vectors to it.
+- [00:50:52,200 - 00:50:54,500] Vectors which are perpendicular in this sense.
+- [00:50:58,540 - 00:50:59,600] Find another one,
+- [00:50:59,600 - 00:51:00,600] then look for a third one,
+- [00:51:00,680 - 00:51:01,580] look for a fourth one.
+- [00:51:03,620 - 00:51:05,020] However many you find,
+- [00:51:05,240 - 00:51:07,060] you'll eventually run out of directions.
+- [00:51:07,200 - 00:51:08,980] That's the dimensionality of the space.
+- [00:51:09,440 - 00:51:10,720] For the special case
+- [00:51:10,720 - 00:51:13,600] in which there are only two entries here,
+- [00:51:15,420 - 00:51:17,080] it's a two dimensional vector space.
+- [00:51:17,320 - 00:51:20,260] You can only find two mutually orthogonal vectors.
+- [00:51:21,600 - 00:51:24,760] You can find many pairs of mutually orthogonal vectors.
+- [00:51:25,160 - 00:51:26,360] Now just in real space,
+- [00:51:26,360 - 00:51:27,020] there's these,
+- [00:51:27,200 - 00:51:27,660] there's these,
+- [00:51:27,660 - 00:51:28,300] there's these,
+- [00:51:28,960 - 00:51:30,280] point them in any direction,
+- [00:51:30,580 - 00:51:32,200] but once you find two of them,
+- [00:51:32,280 - 00:51:33,120] there won't be another one.
+- [00:51:35,040 - 00:51:35,520] Okay,
+- [00:51:35,520 - 00:51:37,900] so we have the idea of mutually orthogonal vectors.
+- [00:51:39,260 - 00:51:41,500] And now we have to state what is the connection
+- [00:51:41,500 - 00:51:43,580] between a vector space and the space of a vector.
+- [00:51:43,600 - 00:51:47,020] The space of possible states of a quantum system.
+- [00:51:50,340 - 00:51:52,540] The quantum system that we're going to deal with
+- [00:51:52,540 - 00:51:55,940] is still this very primitive and simple single spin.
+- [00:51:56,180 - 00:51:57,620] Until we get the handle on that,
+- [00:51:57,740 - 00:51:59,660] we won't want to move to more complicated things.
+- [00:52:01,560 - 00:52:06,720] Is there any description that the orthogonal vectors
+- [00:52:06,720 - 00:52:09,040] have to be perpendicular to each other?
+- [00:52:09,540 - 00:52:10,820] That's what orthogonal means.
+- [00:52:11,360 - 00:52:11,960] Well,
+- [00:52:11,960 - 00:52:13,580] suppose you have a cube,
+- [00:52:13,600 - 00:52:16,320] and then you sort of tilt it like a parallelogram.
+- [00:52:16,520 - 00:52:18,060] It's still three dimensional,
+- [00:52:18,340 - 00:52:20,500] but the coordinate systems are not perpendicular.
+- [00:52:20,880 - 00:52:21,480] One of them is not.
+- [00:52:21,700 - 00:52:25,400] Perpendicular and orthogonal are synonymous terms.
+- [00:52:25,720 - 00:52:26,400] It is the long term,
+- [00:52:26,400 - 00:52:27,440] but it has a wide angle.
+- [00:52:27,620 - 00:52:27,960] You know what I'm saying?
+- [00:52:29,000 - 00:52:30,820] Perpendicular and orthogonal both mean right angle.
+- [00:52:34,160 - 00:52:35,400] You're confused by something,
+- [00:52:35,520 - 00:52:36,460] and I don't know what it is.
+- [00:52:36,640 - 00:52:37,660] I'm confused by the one.
+- [00:52:40,700 - 00:52:41,080] Yeah,
+- [00:52:41,080 - 00:52:41,460] yeah,
+- [00:52:41,460 - 00:52:42,760] I know you are.
+- [00:52:44,360 - 00:52:44,920] But...
+- [00:52:48,780 - 00:52:49,340] Perpendicular,
+- [00:52:49,340 - 00:52:49,900] orthogonal,
+- [00:52:49,900 - 00:52:51,420] right angles,
+- [00:52:51,740 - 00:52:53,260] they mean all the same things.
+- [00:52:53,860 - 00:52:56,220] I think you think about linearly independent
+- [00:52:56,220 - 00:52:57,660] versus being fully orthogonal.
+- [00:52:58,060 - 00:53:00,220] But if you have a set of linearly independent vectors,
+- [00:53:00,320 - 00:53:02,100] you can extract an orthogonal set out of them.
+- [00:53:02,420 - 00:53:03,060] This is true.
+- [00:53:03,960 - 00:53:05,360] He's not confused.
+- [00:53:07,020 - 00:53:07,840] This is right.
+- [00:53:09,280 - 00:53:11,800] Linearly independent is different than orthogonal.
+- [00:53:11,800 - 00:53:14,280] Orthogonal is linearly independent,
+- [00:53:14,660 - 00:53:17,500] but linearly independent is less strong than orthogonal.
+- [00:53:18,300 - 00:53:20,100] These two vectors like that,
+- [00:53:20,280 - 00:53:21,420] they're linearly independent,
+- [00:53:21,800 - 00:53:22,680] but they're not orthogonal.
+- [00:53:22,980 - 00:53:23,720] Those are orthogonal.
+- [00:53:25,800 - 00:53:26,400] Okay,
+- [00:53:26,400 - 00:53:27,000] let's...
+- [00:53:27,000 - 00:53:27,840] We'll come back.
+- [00:53:29,840 - 00:53:30,600] All right.
+- [00:53:30,620 - 00:53:32,060] The states of a quantum system,
+- [00:53:32,300 - 00:53:33,520] this is a postulate,
+- [00:53:34,340 - 00:53:35,780] form a vector space,
+- [00:53:36,720 - 00:53:38,440] form a complex vector space.
+- [00:53:38,860 - 00:53:39,840] In fact,
+- [00:53:39,840 - 00:53:41,660] the space of the simple system,
+- [00:53:41,660 - 00:53:42,580] we've been discussing,
+- [00:53:42,740 - 00:53:44,940] form a two-dimensional vector space.
+- [00:53:48,080 - 00:53:49,460] Let's write down some vectors.
+- [00:53:49,560 - 00:53:50,320] We know some states.
+- [00:53:50,880 - 00:53:51,660] We know,
+- [00:53:51,660 - 00:53:52,100] for example,
+- [00:53:52,100 - 00:53:53,120] that there is a state
+- [00:53:53,120 - 00:53:55,600] that can be prepared in which
+- [00:53:55,600 - 00:53:59,480] the spin is pointing upward along the z-axis.
+- [00:54:01,600 - 00:54:04,260] We characterize the state by the experiment
+- [00:54:04,260 - 00:54:06,760] that we did to get it in that state.
+- [00:54:09,040 - 00:54:10,160] That experiment...
+- [00:54:12,100 - 00:54:14,820] had the apparatus vertically upward,
+- [00:54:15,620 - 00:54:17,940] and it created a state of the system
+- [00:54:18,380 - 00:54:20,340] which either could have been down or up,
+- [00:54:20,420 - 00:54:21,940] but let's say it's up.
+- [00:54:23,260 - 00:54:25,520] We can label that state in a number of ways.
+- [00:54:25,620 - 00:54:26,360] We can call it up.
+- [00:54:26,420 - 00:54:27,220] We can call it down.
+- [00:54:27,380 - 00:54:28,060] We can call it plus.
+- [00:54:28,280 - 00:54:28,880] We can call it...
+- [00:54:28,880 - 00:54:29,360] Well,
+- [00:54:29,360 - 00:54:32,100] up and down are the same as plus and minus.
+- [00:54:32,200 - 00:54:34,860] We could draw them with little arrows up and down.
+- [00:54:35,180 - 00:54:36,720] What other ways could we...
+- [00:54:36,720 - 00:54:40,320] We could write it as sigma z equals plus one,
+- [00:54:40,320 - 00:54:42,400] and sigma z equals minus one.
+- [00:54:42,520 - 00:54:43,520] They all mean the same thing.
+- [00:54:44,380 - 00:54:44,900] Up,
+- [00:54:44,900 - 00:54:45,300] down,
+- [00:54:45,300 - 00:54:47,100] plus,
+- [00:54:47,100 - 00:54:47,580] minus,
+- [00:54:47,780 - 00:54:49,480] sigma z equals plus one,
+- [00:54:49,540 - 00:54:50,740] sigma z equals minus one,
+- [00:54:50,780 - 00:54:51,920] all the same thing.
+- [00:54:52,480 - 00:54:53,180] All right?
+- [00:54:53,300 - 00:54:55,620] So there are two states that we know about
+- [00:54:55,620 - 00:54:59,120] that we can access by putting the...
+- [00:54:59,120 - 00:55:02,820] or we can prepare by turning our apparatus upward
+- [00:55:02,820 - 00:55:04,380] along the z-axis.
+- [00:55:05,020 - 00:55:06,100] Let's give them names.
+- [00:55:06,960 - 00:55:09,140] These states are vectors in a vector space
+- [00:55:09,140 - 00:55:10,300] according to hypotheses.
+- [00:55:10,320 - 00:55:13,200] And they can be called,
+- [00:55:13,200 - 00:55:13,860] let's say,
+- [00:55:13,860 - 00:55:14,920] up and down.
+- [00:55:22,120 - 00:55:23,770] If it is true that
+- [00:55:23,770 - 00:55:25,420] the vector space is as simple
+- [00:55:25,420 - 00:55:27,480] as just a two-dimensional vector space,
+- [00:55:28,380 - 00:55:31,260] then that means that any vector in that space
+- [00:55:31,260 - 00:55:34,480] can be written as some linear combination
+- [00:55:34,480 - 00:55:35,960] of up and down.
+- [00:55:36,840 - 00:55:37,900] In other words,
+- [00:55:37,900 - 00:55:38,600] every vector
+- [00:55:38,840 - 00:55:40,300] in a two-dimensional space
+- [00:55:40,320 - 00:55:44,740] can be written in terms of two basis vectors,
+- [00:55:45,000 - 00:55:45,800] up and down.
+- [00:55:47,140 - 00:55:49,700] So that's enough to write any state whatever.
+- [00:55:50,340 - 00:55:50,980] Up,
+- [00:55:50,980 - 00:55:51,500] down.
+- [00:55:53,620 - 00:55:54,420] All right,
+- [00:55:54,420 - 00:55:54,800] what about,
+- [00:55:54,800 - 00:55:55,180] though,
+- [00:55:55,200 - 00:55:57,060] the state which is made
+- [00:55:57,060 - 00:56:01,620] by tilting our apparatus along the x-axis?
+- [00:56:03,360 - 00:56:04,780] We get something different.
+- [00:56:04,960 - 00:56:06,000] It's not the same thing.
+- [00:56:06,220 - 00:56:07,440] It's not up,
+- [00:56:07,440 - 00:56:10,240] because up means up along the z-axis.
+- [00:56:11,060 - 00:56:12,080] It's not down,
+- [00:56:12,140 - 00:56:14,060] because down means down along the z-axis.
+- [00:56:14,720 - 00:56:16,240] And we know they're different
+- [00:56:16,240 - 00:56:18,480] because we know the results of experiments
+- [00:56:18,960 - 00:56:20,840] on these two different kinds of states
+- [00:56:20,840 - 00:56:21,960] will in general be different.
+- [00:56:24,100 - 00:56:24,620] So,
+- [00:56:24,620 - 00:56:26,540] we can call those states...
+- [00:56:26,540 - 00:56:28,420] I tend to call them left and right.
+- [00:56:29,100 - 00:56:30,700] There's up and down.
+- [00:56:30,800 - 00:56:32,320] There's right and left.
+- [00:56:33,700 - 00:56:35,000] Those are two other states.
+- [00:56:35,240 - 00:56:37,040] We could draw them this way if we liked.
+- [00:56:37,940 - 00:56:41,400] They also correspond to sigma x equals one
+- [00:56:41,400 - 00:56:43,720] and sigma x equals minus one.
+- [00:56:45,240 - 00:56:47,420] And we could label them if we liked.
+- [00:56:48,700 - 00:56:52,260] Let's label them right and left.
+- [00:56:54,280 - 00:56:54,960] Finally,
+- [00:56:54,960 - 00:56:57,520] we know that if we were to turn our apparatus
+- [00:56:57,520 - 00:57:03,260] so that the apparatus was pointing along the y-axis,
+- [00:57:03,620 - 00:57:06,440] we could access two more states.
+- [00:57:06,440 - 00:57:09,820] I think we call those in and out,
+- [00:57:09,860 - 00:57:12,120] into the blackboard and out of the blackboard.
+- [00:57:12,460 - 00:57:13,300] And so,
+- [00:57:13,300 - 00:57:15,420] there's in and out.
+- [00:57:18,700 - 00:57:20,740] Into the blackboard and out of the blackboard.
+- [00:57:20,900 - 00:57:22,910] And they correspond to sigma
+- [00:57:22,910 - 00:57:24,920] y equals plus or minus one.
+- [00:57:26,040 - 00:57:30,440] We could label them in and out.
+- [00:57:32,860 - 00:57:36,340] All of the logic that I've described to you
+- [00:57:36,340 - 00:57:38,260] and all of the experimental results,
+- [00:57:39,880 - 00:57:41,120] as we will see,
+- [00:57:41,120 - 00:57:42,560] we will not see it immediately,
+- [00:57:42,900 - 00:57:45,460] it took some time to understand all of this,
+- [00:57:46,140 - 00:57:50,420] it is all summarized by a few statements,
+- [00:57:51,140 - 00:57:53,190] but the first of which is
+- [00:57:53,190 - 00:57:55,240] that the space of all states
+- [00:57:55,240 - 00:57:57,340] of that simple system is two-dimensional,
+- [00:57:58,320 - 00:58:00,680] has only two independent states,
+- [00:58:00,840 - 00:58:05,680] which means that these other things can be written
+- [00:58:05,680 - 00:58:06,940] in terms of up and down.
+- [00:58:08,100 - 00:58:08,660] Okay,
+- [00:58:08,660 - 00:58:12,580] so let's go to general linear combinations
+- [00:58:12,580 - 00:58:14,860] of up and down and ask what they mean.
+- [00:58:15,800 - 00:58:17,680] Let's take a vector,
+- [00:58:17,680 - 00:58:20,120] I guess we can call it A,
+- [00:58:21,200 - 00:58:24,180] which is of the form a coefficient,
+- [00:58:24,420 - 00:58:28,720] a complex coefficient alpha one times up,
+- [00:58:29,280 - 00:58:30,700] plus another complex,
+- [00:58:30,700 - 00:58:31,640] another,
+- [00:58:31,640 - 00:58:33,800] I suppose we should call this alpha up.
+- [00:58:33,860 - 00:58:34,660] Alpha up.
+- [00:58:35,680 - 00:58:37,700] Alpha down times down.
+- [00:58:38,360 - 00:58:40,700] The alphas are complex numbers.
+- [00:58:41,940 - 00:58:43,580] In complex vector spaces,
+- [00:58:43,580 - 00:58:44,560] you multiply,
+- [00:58:44,840 - 00:58:45,800] they could be real numbers,
+- [00:58:46,580 - 00:58:47,380] but in general,
+- [00:58:47,380 - 00:58:48,860] they will be complex numbers.
+- [00:58:52,260 - 00:58:54,400] Let us suppose we knew what that meant,
+- [00:58:54,600 - 00:58:56,360] what kind of state this was,
+- [00:58:56,360 - 00:58:57,480] where it came from.
+- [00:58:58,160 - 00:58:59,280] It's a new beast,
+- [00:58:59,280 - 00:59:00,320] it's not up,
+- [00:59:00,320 - 00:59:01,200] it's not down,
+- [00:59:01,340 - 00:59:02,440] somewhere in between.
+- [00:59:05,020 - 00:59:06,060] Next postulate.
+- [00:59:06,220 - 00:59:08,210] The next postulate is that if
+- [00:59:08,210 - 00:59:10,200] we were to measure up and down,
+- [00:59:10,260 - 00:59:12,600] if somebody prepared us an electron
+- [00:59:12,600 - 00:59:14,940] or a spin in this state
+- [00:59:14,940 - 00:59:16,260] and we measured up and down,
+- [00:59:16,520 - 00:59:19,300] we would find probabilities for up and down,
+- [00:59:19,500 - 00:59:21,940] and those probabilities would be
+- [00:59:22,960 - 00:59:24,240] probability for up
+- [00:59:29,740 - 00:59:32,420] is the square of the magnitude of the force.
+- [00:59:32,420 - 00:59:33,440] So if we were to measure up and down,
+- [00:59:33,440 - 00:59:34,820] we would have the magnitude of this coefficient
+- [00:59:34,820 - 00:59:37,320] and probability for down
+- [00:59:38,020 - 00:59:40,120] is equal to alpha star down,
+- [00:59:40,120 - 00:59:41,120] alpha down.
+- [00:59:41,940 - 00:59:43,160] In other words,
+- [00:59:43,160 - 00:59:45,680] it's basically the square of the coefficient
+- [00:59:45,680 - 00:59:47,440] or the square of the component
+- [00:59:49,420 - 00:59:53,360] of A in the directions up and down.
+- [00:59:53,740 - 00:59:54,940] These alphas,
+- [00:59:54,940 - 00:59:56,560] they're essentially the components
+- [00:59:56,560 - 00:59:59,820] of a general vector along the two axes,
+- [00:59:59,820 - 01:00:01,540] up and down.
+- [01:00:06,160 - 01:00:08,140] There's something that I failed to tell you.
+- [01:00:08,260 - 01:00:09,360] It's also a postulate.
+- [01:00:09,460 - 01:00:09,760] There are many,
+- [01:00:09,760 - 01:00:10,440] many postulates,
+- [01:00:10,520 - 01:00:12,600] but you'll see they fit together in a neat package.
+- [01:00:13,420 - 01:00:17,080] There are probably fewer postulates than I'm saying.
+- [01:00:18,720 - 01:00:21,680] I'll bet we can reduce it down to four postulates,
+- [01:00:22,740 - 01:00:23,700] four axioms.
+- [01:00:24,160 - 01:00:26,960] But rather than try to axiomatize it,
+- [01:00:27,080 - 01:00:27,780] we'll just...
+- [01:00:30,280 - 01:00:32,280] do it a little more informally.
+- [01:00:33,380 - 01:00:35,400] What's the relation between up and down?
+- [01:00:38,620 - 01:00:41,660] Are they the negative of each other?
+- [01:00:42,800 - 01:00:43,400] No,
+- [01:00:43,400 - 01:00:43,980] they're orthogonal.
+- [01:00:44,780 - 01:00:45,380] Now,
+- [01:00:45,380 - 01:00:45,980] that's a postulate.
+- [01:00:46,380 - 01:00:48,960] The basic postulate is when things
+- [01:00:49,720 - 01:00:51,260] are measurably different.
+- [01:00:52,080 - 01:00:55,780] When two states are such that you can cleanly
+- [01:00:55,780 - 01:00:58,100] tell the difference between them by an experiment,
+- [01:00:58,600 - 01:00:59,700] they are orthogonal.
+- [01:01:01,620 - 01:01:04,120] Orthogonality literally means they are
+- [01:01:05,920 - 01:01:08,320] sufficiently different that you can,
+- [01:01:08,460 - 01:01:09,940] with a single experiment,
+- [01:01:10,120 - 01:01:12,000] or maybe a few experiments,
+- [01:01:12,080 - 01:01:13,940] tell the difference between them uniquely.
+- [01:01:15,320 - 01:01:16,410] I'll tell you what it
+- [01:01:16,410 - 01:01:17,500] corresponds to in terms of sets.
+- [01:01:21,900 - 01:01:23,980] You might say that two sets are orthogonal
+- [01:01:23,980 - 01:01:25,940] if they don't share any elements.
+- [01:01:26,140 - 01:01:27,440] This is not a standard terminology.
+- [01:01:28,060 - 01:01:29,320] But you might say it anyway.
+- [01:01:29,320 - 01:01:31,280] They're orthogonal if they don't share any elements.
+- [01:01:32,600 - 01:01:34,440] That means they're distinctly different.
+- [01:01:34,960 - 01:01:36,920] There's no chance that an experiment
+- [01:01:36,920 - 01:01:38,220] will confuse the two of them.
+- [01:01:38,940 - 01:01:40,300] An experiment will...
+- [01:01:40,300 - 01:01:43,200] a nice experiment to distinguish them
+- [01:01:43,200 - 01:01:45,000] will not lead to any ambiguity.
+- [01:01:45,560 - 01:01:47,300] The same is true of up and down.
+- [01:01:47,400 - 01:01:48,860] Up is distinctly different than down.
+- [01:01:48,940 - 01:01:49,580] If you measure up,
+- [01:01:49,580 - 01:01:51,060] you'll measure up again and again and again.
+- [01:01:51,800 - 01:01:54,660] And the version of that in quantum mechanics,
+- [01:01:56,120 - 01:01:59,140] or the implication of that in quantum mechanics,
+- [01:01:59,140 - 01:02:00,740] for the vectors,
+- [01:02:01,020 - 01:02:03,660] is that things that correspond to physically
+- [01:02:04,480 - 01:02:06,800] unambiguous different situations
+- [01:02:06,800 - 01:02:08,500] are orthogonal to each other.
+- [01:02:08,760 - 01:02:11,900] So up and down are orthogonal to each other.
+- [01:02:13,940 - 01:02:16,540] What if we have a combination of up and down
+- [01:02:16,540 - 01:02:17,600] with some coefficients?
+- [01:02:18,400 - 01:02:20,540] Then there's a probability to be up
+- [01:02:20,540 - 01:02:22,100] and a probability to be down.
+- [01:02:22,360 - 01:02:25,180] And the probabilities are given by
+- [01:02:26,120 - 01:02:27,140] alpha star alpha,
+- [01:02:29,140 - 01:02:31,180] and alpha star alpha down.
+- [01:02:32,420 - 01:02:32,980] Again,
+- [01:02:32,980 - 01:02:34,000] that's a postulate,
+- [01:02:34,040 - 01:02:36,260] but we'll see in a moment what that corresponds to.
+- [01:02:39,060 - 01:02:39,620] Well,
+- [01:02:39,620 - 01:02:41,000] what's the relation between
+- [01:02:41,000 - 01:02:43,220] the probability for up and the probability for down?
+- [01:02:43,540 - 01:02:45,600] The answer is that if we add them,
+- [01:02:45,720 - 01:02:46,420] we get one.
+- [01:02:47,820 - 01:02:48,780] And therefore,
+- [01:02:49,420 - 01:02:51,920] alpha star alpha plus beta star beta
+- [01:02:51,920 - 01:02:53,260] is equal to one.
+- [01:02:54,760 - 01:02:56,780] Any reasonable state of the system
+- [01:02:56,780 - 01:02:58,560] which has total probability one
+- [01:02:59,140 - 01:03:00,720] over all the different things that can happen
+- [01:03:01,520 - 01:03:04,140] should satisfy that the sum of the probabilities,
+- [01:03:04,380 - 01:03:05,720] of the distinct probabilities,
+- [01:03:05,860 - 01:03:06,900] should add up to one.
+- [01:03:07,540 - 01:03:09,400] And so that says that
+- [01:03:09,879 - 01:03:10,800] alpha star alpha
+- [01:03:14,660 - 01:03:15,780] plus beta star,
+- [01:03:15,780 - 01:03:16,320] not beta,
+- [01:03:16,440 - 01:03:18,220] alpha up up plus
+- [01:03:18,840 - 01:03:21,220] alpha down star alpha down,
+- [01:03:21,939 - 01:03:23,040] did I use beta before?
+- [01:03:23,340 - 01:03:23,500] No,
+- [01:03:23,500 - 01:03:24,040] okay.
+- [01:03:24,520 - 01:03:25,560] Should equal one.
+- [01:03:25,560 - 01:03:28,860] But that's equivalent
+- [01:03:28,860 - 01:03:31,230] to the statement that the
+- [01:03:31,230 - 01:03:33,600] inner product of A with itself
+- [01:03:34,799 - 01:03:36,300] is equal to one.
+- [01:03:38,600 - 01:03:40,380] When we think about...
+- [01:03:44,060 - 01:03:45,000] Prove this.
+- [01:03:50,900 - 01:03:53,200] Prove that alpha star alpha
+- [01:03:53,200 - 01:03:54,860] summed over
+- [01:03:54,860 - 01:03:55,940] up and down
+- [01:03:55,940 - 01:03:58,780] is equal to the inner product of A with itself.
+- [01:03:58,980 - 01:04:00,720] It does follow from the postulates.
+- [01:04:01,740 - 01:04:03,660] It does follow from the postulates
+- [01:04:03,660 - 01:04:04,600] and the assumption
+- [01:04:04,600 - 01:04:08,480] that U and D are perpendicular unit vectors.
+- [01:04:09,660 - 01:04:12,820] U and D are perpendicular unit vectors.
+- [01:04:12,980 - 01:04:13,880] Make that assumption.
+- [01:04:14,160 - 01:04:15,420] They're orthogonal to each other.
+- [01:04:15,600 - 01:04:16,720] They're unit vectors.
+- [01:04:16,960 - 01:04:18,120] If they're not unit vectors,
+- [01:04:18,200 - 01:04:20,220] you can change them until they are unit vectors.
+- [01:04:20,960 - 01:04:22,220] And then you can prove
+- [01:04:22,860 - 01:04:24,840] that the inner product of A with itself,
+- [01:04:24,860 - 01:04:25,720] of a vector with itself,
+- [01:04:25,900 - 01:04:28,000] is just the sums of the squares
+- [01:04:28,860 - 01:04:30,440] or the conjugates times itself.
+- [01:04:31,280 - 01:04:31,880] Okay.
+- [01:04:32,000 - 01:04:33,880] So that's a little thing to prove.
+- [01:04:34,660 - 01:04:35,740] But what does that say?
+- [01:04:36,600 - 01:04:38,540] That says that a physical state
+- [01:04:38,540 - 01:04:40,600] corresponds to a vector in
+- [01:04:40,600 - 01:04:42,660] the vector space of unit length.
+- [01:04:42,900 - 01:04:44,220] A unit vector.
+- [01:04:45,060 - 01:04:47,060] The unit standing for the fact
+- [01:04:47,060 - 01:04:49,060] that the total probability is one.
+- [01:04:49,960 - 01:04:50,600] All right,
+- [01:04:50,600 - 01:04:51,680] so states...
+- [01:04:54,860 - 01:04:57,720] Not only equal vectors in a vector space,
+- [01:04:58,060 - 01:04:59,700] but they're unit vectors.
+- [01:05:01,980 - 01:05:05,640] The other term for unit vectors is normalized vectors.
+- [01:05:09,660 - 01:05:11,020] Normalized vectors.
+- [01:05:13,540 - 01:05:15,280] Normalized is another word for unit.
+- [01:05:17,400 - 01:05:19,120] So all physical states,
+- [01:05:19,340 - 01:05:22,760] all states are what you can do to that...
+- [01:05:22,760 - 01:05:23,900] Electrons,
+- [01:05:23,900 - 01:05:24,120] spin,
+- [01:05:24,120 - 01:05:24,840] or anything else,
+- [01:05:24,840 - 01:05:27,940] correspond to unit vectors.
+- [01:05:33,600 - 01:05:35,740] And given any such unit vector,
+- [01:05:38,400 - 01:05:40,960] the probabilities associated with it
+- [01:05:40,960 - 01:05:42,660] are alpha star alpha up
+- [01:05:42,660 - 01:05:44,180] and alpha star alpha down.
+- [01:05:44,720 - 01:05:48,140] So that is a bit of information.
+- [01:05:53,780 - 01:05:54,820] But wait a minute.
+- [01:05:54,840 - 01:05:57,180] What happened to these other vectors,
+- [01:05:57,360 - 01:05:58,240] right and left?
+- [01:05:59,260 - 01:06:00,820] What happened to right and left?
+- [01:06:02,640 - 01:06:04,860] Right and left seem like different states.
+- [01:06:05,780 - 01:06:07,920] But according to the postulate,
+- [01:06:09,460 - 01:06:12,320] right and left must be linear combinations
+- [01:06:12,320 - 01:06:13,520] of up and down.
+- [01:06:14,320 - 01:06:15,800] That's not too surprising,
+- [01:06:16,500 - 01:06:18,780] because if you prepare right or left
+- [01:06:18,780 - 01:06:20,500] and then measure up or down,
+- [01:06:20,840 - 01:06:22,620] you get plus one or minus one.
+- [01:06:23,240 - 01:06:24,240] That's all there is.
+- [01:06:24,240 - 01:06:25,420] Plus one or minus one.
+- [01:06:25,660 - 01:06:27,250] So it's not too surprising
+- [01:06:27,250 - 01:06:28,840] that whatever right or left is,
+- [01:06:29,080 - 01:06:32,160] it's somehow a combination of up and down.
+- [01:06:33,820 - 01:06:37,680] And that statement is buried
+- [01:06:40,000 - 01:06:42,180] in the properties of vectors.
+- [01:06:43,120 - 01:06:45,000] So let's look at the state left.
+- [01:06:45,940 - 01:06:46,500] No,
+- [01:06:46,500 - 01:06:47,240] let's look at the state right.
+- [01:06:48,100 - 01:06:49,520] What do we know about it?
+- [01:06:49,940 - 01:06:50,500] Well,
+- [01:06:50,500 - 01:06:52,520] we know that it must be a combination,
+- [01:06:53,340 - 01:06:54,440] alpha up,
+- [01:06:54,440 - 01:06:55,580] up,
+- [01:06:55,580 - 01:06:57,220] plus alpha down,
+- [01:06:57,220 - 01:06:58,500] down.
+- [01:06:59,280 - 01:07:00,770] We can also write that in
+- [01:07:00,770 - 01:07:02,260] the form of a column vector,
+- [01:07:02,520 - 01:07:04,940] alpha up and alpha down.
+- [01:07:07,220 - 01:07:07,980] Number one.
+- [01:07:08,780 - 01:07:09,600] Number two,
+- [01:07:09,600 - 01:07:12,340] supposing an electron is created
+- [01:07:12,340 - 01:07:14,940] pointing along the right direction,
+- [01:07:15,700 - 01:07:16,920] the x-axis.
+- [01:07:17,480 - 01:07:18,700] What are the probabilities for
+- [01:07:18,700 - 01:07:19,920] it to be up and down?
+- [01:07:20,000 - 01:07:20,260] You remember?
+- [01:07:22,820 - 01:07:23,340] Half.
+- [01:07:23,760 - 01:07:24,280] Half.
+- [01:07:24,840 - 01:07:28,360] That means that alpha up star alpha up
+- [01:07:29,320 - 01:07:30,560] must equal a half,
+- [01:07:30,800 - 01:07:33,700] and alpha star down alpha down
+- [01:07:34,880 - 01:07:36,120] must equal a half.
+- [01:07:37,400 - 01:07:37,920] Okay.
+- [01:07:38,000 - 01:07:39,020] Let's make a guess.
+- [01:07:39,620 - 01:07:40,660] Let's make a guess.
+- [01:07:40,780 - 01:07:42,800] The simplest guess would be to put
+- [01:07:46,880 - 01:07:48,480] one over square root of two
+- [01:07:48,480 - 01:07:50,180] and one over square root of two here.
+- [01:07:53,100 - 01:07:54,960] Alpha up is one over square root of two.
+- [01:07:55,040 - 01:07:56,480] If alpha up is one over square root of two,
+- [01:07:56,540 - 01:07:57,360] what's alpha star alpha?
+- [01:07:59,560 - 01:08:00,200] One half.
+- [01:08:01,020 - 01:08:01,420] Okay.
+- [01:08:01,860 - 01:08:03,140] This one's also one half.
+- [01:08:03,420 - 01:08:06,260] Now we could put some other things.
+- [01:08:06,380 - 01:08:07,440] What ambiguity is there?
+- [01:08:08,040 - 01:08:09,680] We could put a minus sign here,
+- [01:08:11,080 - 01:08:12,640] or we could put a
+- [01:08:12,640 - 01:08:14,200] complex coefficient in front of here
+- [01:08:15,020 - 01:08:16,859] without changing the magnitude of it.
+- [01:08:17,479 - 01:08:18,520] We'll come back to that.
+- [01:08:18,620 - 01:08:19,840] We'll come back to what that means.
+- [01:08:21,000 - 01:08:23,160] We'll come back to what that ambiguity means.
+- [01:08:24,520 - 01:08:27,540] But let's take this as a working hypothesis
+- [01:08:27,540 - 01:08:30,060] for what the state right is.
+- [01:08:30,580 - 01:08:32,460] That leaves us with the state left.
+- [01:08:37,600 - 01:08:39,040] What do we know about left?
+- [01:08:39,319 - 01:08:39,640] Well,
+- [01:08:39,640 - 01:08:43,779] right and left are physically distinguishable
+- [01:08:43,779 - 01:08:45,420] by a single experiment.
+- [01:08:46,439 - 01:08:49,660] You can orient your apparatus
+- [01:08:49,840 - 01:08:51,040] along the x direction,
+- [01:08:52,159 - 01:08:53,700] measure sigma x,
+- [01:08:53,960 - 01:08:56,080] and determine unambiguously
+- [01:08:56,080 - 01:08:58,200] whether it corresponds to right or left.
+- [01:08:59,220 - 01:09:02,120] What does that mean about the vectors right and left?
+- [01:09:02,359 - 01:09:03,880] It means they're orthogonal.
+- [01:09:05,420 - 01:09:08,160] Orthogonal and physically measurably distinct
+- [01:09:08,160 - 01:09:09,200] are the same things.
+- [01:09:09,560 - 01:09:11,560] So that tells us that left,
+- [01:09:11,560 - 01:09:12,240] right
+- [01:09:13,219 - 01:09:14,640] should be equal to zero.
+- [01:09:14,939 - 01:09:15,500] Incidentally,
+- [01:09:15,500 - 01:09:18,319] we have assumed that
+- [01:09:18,939 - 01:09:19,500] up,
+- [01:09:19,500 - 01:09:19,819] right,
+- [01:09:19,819 - 01:09:19,819] left,
+- [01:09:19,819 - 01:09:19,819] and left are the same.
+- [01:09:19,840 - 01:09:22,240] Down is equal to zero.
+- [01:09:23,380 - 01:09:23,899] Up,
+- [01:09:23,899 - 01:09:24,260] down,
+- [01:09:24,260 - 01:09:25,340] orthogonal.
+- [01:09:26,399 - 01:09:27,399] By symmetry,
+- [01:09:27,399 - 01:09:28,020] basically.
+- [01:09:28,300 - 01:09:30,080] There's nothing different about the x-axis
+- [01:09:30,080 - 01:09:31,040] than the z-axis.
+- [01:09:31,600 - 01:09:34,040] So if the two vectors up and down are orthogonal,
+- [01:09:34,200 - 01:09:35,800] it stands to reason that the two vectors
+- [01:09:35,800 - 01:09:37,100] left and right must be orthogonal.
+- [01:09:37,960 - 01:09:38,760] Here's right.
+- [01:09:39,540 - 01:09:41,819] Is there a vector that's orthogonal to it?
+- [01:09:42,080 - 01:09:42,580] Yeah.
+- [01:09:44,120 - 01:09:46,640] There is a vector which is orthogonal to it.
+- [01:09:46,920 - 01:09:47,779] What is it?
+- [01:09:49,840 - 01:09:52,040] One over square root of two up
+- [01:09:53,039 - 01:09:55,500] minus one over square root of two down.
+- [01:09:56,700 - 01:09:58,600] Now it's ambiguous whether you put
+- [01:09:58,600 - 01:10:00,500] the minus sign here or here.
+- [01:10:01,020 - 01:10:02,380] Either way will work.
+- [01:10:02,800 - 01:10:05,480] And we'll find out that there's no physical difference
+- [01:10:05,480 - 01:10:07,520] between those two possibilities.
+- [01:10:08,620 - 01:10:10,720] We'll find out later that there's no physics
+- [01:10:10,720 - 01:10:15,560] in the overall sign of a vector.
+- [01:10:16,640 - 01:10:18,480] So here's one which is orthogonal.
+- [01:10:18,480 - 01:10:20,840] How do we check that this is orthogonal to that?
+- [01:10:22,640 - 01:10:23,120] Well,
+- [01:10:23,120 - 01:10:25,920] let's write the row,
+- [01:10:26,060 - 01:10:26,740] let's write the,
+- [01:10:26,740 - 01:10:27,920] here's the column vector
+- [01:10:28,320 - 01:10:29,120] describing right.
+- [01:10:30,340 - 01:10:32,420] Let's write down the row vector,
+- [01:10:32,640 - 01:10:33,100] no,
+- [01:10:33,100 - 01:10:34,100] that's not the column vector.
+- [01:10:34,240 - 01:10:35,060] Here's the column vector.
+- [01:10:35,540 - 01:10:37,820] The column vector describing right is
+- [01:10:37,820 - 01:10:39,240] one over square root of two,
+- [01:10:39,400 - 01:10:40,720] one over square root of two.
+- [01:10:41,840 - 01:10:42,700] That's these two.
+- [01:10:43,140 - 01:10:45,700] What is the row vector describing left?
+- [01:10:45,900 - 01:10:47,520] If we want to take the inner product,
+- [01:10:47,520 - 01:10:49,220] we want to combine the
+- [01:10:49,220 - 01:10:50,920] row vector with the column vector.
+- [01:10:51,620 - 01:10:54,600] So the row vector describing this guy over here
+- [01:10:55,240 - 01:10:57,020] is one over square root of two
+- [01:10:58,060 - 01:10:59,900] minus one over square root of two.
+- [01:11:04,640 - 01:11:06,900] And to take the inner product between them,
+- [01:11:07,080 - 01:11:09,480] you take the product of the first coefficient
+- [01:11:09,480 - 01:11:10,720] times the first coefficient
+- [01:11:10,720 - 01:11:12,520] plus the product of the second one
+- [01:11:12,520 - 01:11:13,540] times the second one.
+- [01:11:13,880 - 01:11:16,720] Standard rule for taking the inner product
+- [01:11:16,720 - 01:11:18,620] between a column vector and a row vector,
+- [01:11:18,840 - 01:11:21,660] you match the first component with the first component,
+- [01:11:21,800 - 01:11:22,520] multiply them.
+- [01:11:22,800 - 01:11:24,700] Second component with the second component,
+- [01:11:24,820 - 01:11:25,540] multiply them.
+- [01:11:25,720 - 01:11:28,840] And go right down through all the components
+- [01:11:28,840 - 01:11:29,680] and add them up.
+- [01:11:31,100 - 01:11:31,540] Okay,
+- [01:11:31,540 - 01:11:32,280] so what's the answer?
+- [01:11:32,760 - 01:11:33,300] One half,
+- [01:11:33,300 - 01:11:34,980] sorry,
+- [01:11:35,100 - 01:11:35,980] one over square root of two
+- [01:11:35,980 - 01:11:37,060] times one over square root of two,
+- [01:11:37,080 - 01:11:37,540] that's a half,
+- [01:11:38,600 - 01:11:40,220] minus one over square root of two
+- [01:11:40,220 - 01:11:41,340] times one over square root of two.
+- [01:11:41,480 - 01:11:42,820] This inner product is zero.
+- [01:11:43,340 - 01:11:45,540] So we found a second vector
+- [01:11:45,540 - 01:11:48,040] which corresponds to right and left,
+- [01:11:48,200 - 01:11:48,880] a candidate,
+- [01:11:48,880 - 01:11:49,480] if you like,
+- [01:11:49,480 - 01:11:50,300] for right and left.
+- [01:11:51,280 - 01:11:52,400] And what's more,
+- [01:11:52,600 - 01:11:55,860] you'll notice that this vector also has the property
+- [01:11:55,860 - 01:11:59,860] that the probability for it to be up and down
+- [01:11:59,860 - 01:12:01,240] is equal to a half
+- [01:12:01,240 - 01:12:02,660] for each one.
+- [01:12:03,500 - 01:12:04,000] Why?
+- [01:12:04,820 - 01:12:07,500] Because the square of this is one half
+- [01:12:07,500 - 01:12:09,360] and the square of the magnitude
+- [01:12:09,360 - 01:12:11,220] of this one is one half.
+- [01:12:11,780 - 01:12:13,980] So we have a nice symmetrical relationship
+- [01:12:13,980 - 01:12:15,520] between left-right and left-left.
+- [01:12:15,540 - 01:12:15,720] So we have a nice symmetrical relationship
+- [01:12:15,720 - 01:12:16,540] between right-right and up-and-down.
+- [01:12:17,920 - 01:12:18,320] Incidentally,
+- [01:12:18,320 - 01:12:19,200] it's kind of interesting,
+- [01:12:20,740 - 01:12:21,140] supposing,
+- [01:12:21,140 - 01:12:21,380] um,
+- [01:12:21,380 - 01:12:22,360] where's my eraser?
+- [01:12:24,140 - 01:12:24,960] Under your paper.
+- [01:12:25,420 - 01:12:25,660] Yeah.
+- [01:12:30,340 - 01:12:31,280] It's kind of interesting.
+- [01:12:31,620 - 01:12:32,810] I've written right and left
+- [01:12:32,810 - 01:12:34,000] in terms of up and down.
+- [01:12:34,240 - 01:12:34,760] I could,
+- [01:12:34,760 - 01:12:35,080] of course,
+- [01:12:35,080 - 01:12:37,100] write up and down
+- [01:12:37,100 - 01:12:38,220] in terms of right and left.
+- [01:12:38,360 - 01:12:39,120] Let's see what we get.
+- [01:12:39,660 - 01:12:41,520] If we add these two equations,
+- [01:12:42,720 - 01:12:44,120] the downs will cancel,
+- [01:12:44,120 - 01:12:45,780] and we'll just get up.
+- [01:12:46,560 - 01:12:48,260] We'll get 2 over square root.
+- [01:12:48,300 - 01:12:49,320] We'll get square root of 2.
+- [01:12:49,400 - 01:12:51,500] That's 2 over the square root of 2 times up
+- [01:12:52,700 - 01:12:55,100] equals right plus left,
+- [01:12:55,220 - 01:12:57,260] and then divide by square root of 2.
+- [01:12:59,680 - 01:13:01,820] And we'll find that down
+- [01:13:03,340 - 01:13:06,080] is equal to right minus left
+- [01:13:06,620 - 01:13:07,920] over square root of 2.
+- [01:13:08,400 - 01:13:10,600] So you see there's a complete reciprocal relationship
+- [01:13:11,020 - 01:13:11,660] between them.
+- [01:13:12,020 - 01:13:12,500] Um,
+- [01:13:12,500 - 01:13:17,200] if we began our experiments
+- [01:13:18,120 - 01:13:20,440] with our apparatus along the x direction,
+- [01:13:20,800 - 01:13:21,840] we might have started,
+- [01:13:23,620 - 01:13:25,660] we might have started with left and right
+- [01:13:25,660 - 01:13:28,220] and come to the conclusion that up and down
+- [01:13:28,220 - 01:13:30,200] are combinations of left and right.
+- [01:13:31,140 - 01:13:31,700] Okay,
+- [01:13:31,700 - 01:13:33,300] that leaves in and out.
+- [01:13:33,560 - 01:13:34,820] What about in and out?
+- [01:13:35,840 - 01:13:40,160] Is there a third pair of vectors,
+- [01:13:40,260 - 01:13:41,060] in and out,
+- [01:13:41,160 - 01:13:42,480] which stand in the middle of the vector,
+- [01:13:42,500 - 01:13:43,980] and in the same relationship
+- [01:13:44,500 - 01:13:45,600] to right and left,
+- [01:13:45,740 - 01:13:46,900] and to left,
+- [01:13:47,000 - 01:13:48,740] to right and left and to up and down
+- [01:13:50,040 - 01:13:51,480] as they stand to each other?
+- [01:13:51,560 - 01:13:52,940] Is there a third combination
+- [01:13:53,540 - 01:13:54,300] which has,
+- [01:13:54,500 - 01:13:54,620] uh,
+- [01:13:55,220 - 01:13:57,860] which is symmetrically defined?
+- [01:13:58,260 - 01:13:58,400] All right,
+- [01:13:58,400 - 01:13:59,320] let's put it up here.
+- [01:14:00,900 - 01:14:03,040] We have up and down,
+- [01:14:05,000 - 01:14:06,800] and they're orthogonal to each other.
+- [01:14:08,560 - 01:14:09,880] We have right and left,
+- [01:14:10,100 - 01:14:10,600] right,
+- [01:14:10,600 - 01:14:12,780] which is equal to one over square root of two.
+- [01:14:13,320 - 01:14:15,900] We can write it as up plus down,
+- [01:14:18,580 - 01:14:19,620] and left,
+- [01:14:21,879 - 01:14:22,760] same thing,
+- [01:14:22,840 - 01:14:23,880] one over square root of two,
+- [01:14:24,580 - 01:14:26,960] times up minus down.
+- [01:14:29,200 - 01:14:33,500] We also have right left equal to zero.
+- [01:14:36,760 - 01:14:37,280] Moreover,
+- [01:14:37,280 - 01:14:39,160] we have something that I'm not going to write,
+- [01:14:40,000 - 01:14:41,320] but I'll say it anyway.
+- [01:14:41,600 - 01:14:42,760] If you start in right,
+- [01:14:43,780 - 01:14:44,500] and you say,
+- [01:14:44,540 - 01:14:46,020] what's the probability for up and down?
+- [01:14:46,280 - 01:14:47,060] It's one half.
+- [01:14:47,920 - 01:14:49,140] If you start with left,
+- [01:14:49,160 - 01:14:51,020] then ask what's the probability for up and down.
+- [01:14:51,160 - 01:14:51,880] It's one half.
+- [01:14:52,500 - 01:14:54,740] What happens if you start with up and down?
+- [01:14:54,900 - 01:14:56,460] What's the probability for right and left?
+- [01:15:01,900 - 01:15:02,300] Well,
+- [01:15:02,300 - 01:15:03,100] it's also one half.
+- [01:15:03,340 - 01:15:04,450] We know that's one half
+- [01:15:04,450 - 01:15:05,560] from the physics of the situation,
+- [01:15:06,220 - 01:15:07,680] but it's also true that
+- [01:15:07,680 - 01:15:09,140] when I rewrite up and down,
+- [01:15:09,140 - 01:15:10,660] in terms of right and left,
+- [01:15:10,920 - 01:15:14,000] the coefficients are also one over square root of two.
+- [01:15:14,840 - 01:15:17,520] So they're nice and symmetrically related to each other.
+- [01:15:18,260 - 01:15:18,940] All right,
+- [01:15:18,940 - 01:15:21,200] so that leaves us with the last possibility,
+- [01:15:21,320 - 01:15:23,780] or the last perpendicular direction,
+- [01:15:24,100 - 01:15:25,180] in and out.
+- [01:15:31,960 - 01:15:32,460] Okay,
+- [01:15:32,460 - 01:15:33,900] so let's try to guess.
+- [01:15:35,000 - 01:15:36,160] It's going to have an up,
+- [01:15:36,860 - 01:15:38,040] and it's going to have
+- [01:15:40,700 - 01:15:41,180] a down,
+- [01:15:41,180 - 01:15:42,660] plus a down.
+- [01:15:43,780 - 01:15:45,900] But there's going to be some coefficients here.
+- [01:15:46,020 - 01:15:47,820] We don't know what those coefficients are yet.
+- [01:15:49,580 - 01:15:51,060] What do we know about the coefficients?
+- [01:15:53,060 - 01:15:54,380] They're complex in general.
+- [01:15:54,660 - 01:15:55,440] In general,
+- [01:15:55,440 - 01:15:56,060] they're complex.
+- [01:15:57,800 - 01:15:58,760] Their modules,
+- [01:15:58,760 - 01:15:59,300] well,
+- [01:15:59,300 - 01:16:00,480] square has to be one half.
+- [01:16:00,700 - 01:16:01,820] The square has to,
+- [01:16:01,820 - 01:16:04,260] the magnitude of this square has to be one half.
+- [01:16:06,640 - 01:16:08,980] We also know that the coefficients here
+- [01:16:09,140 - 01:16:11,420] have to be such that in and out
+- [01:16:11,420 - 01:16:12,900] are perpendicular to each other.
+- [01:16:16,140 - 01:16:19,240] And we also should find that
+- [01:16:19,240 - 01:16:21,880] if we rewrite in and out
+- [01:16:23,259 - 01:16:24,960] in terms of left and right,
+- [01:16:25,280 - 01:16:29,040] the coefficients should also have modulus one half,
+- [01:16:29,300 - 01:16:30,660] just by symmetry.
+- [01:16:31,840 - 01:16:33,940] Turns out that's enough to determine them completely.
+- [01:16:34,520 - 01:16:35,640] I'm not going to prove it.
+- [01:16:35,700 - 01:16:36,640] That's a homework assignment.
+- [01:16:36,800 - 01:16:38,020] It's a nice homework assignment.
+- [01:16:38,020 - 01:16:40,280] Let's see what the requirements are.
+- [01:16:40,440 - 01:16:44,320] The requirements are that in out equals zero,
+- [01:16:46,120 - 01:16:48,600] that both in or out,
+- [01:16:48,660 - 01:16:51,640] when written in terms of up or down,
+- [01:16:53,900 - 01:16:55,460] should have coefficients
+- [01:16:57,799 - 01:16:59,540] whose magnitude is a half,
+- [01:17:02,559 - 01:17:04,440] squared magnitude is a half,
+- [01:17:04,660 - 01:17:08,000] and also when written in terms of left and right,
+- [01:17:11,820 - 01:17:14,520] the same corresponding coefficients here
+- [01:17:14,520 - 01:17:17,580] should have magnitude plus or minus a half.
+- [01:17:18,769 - 01:17:21,020] That is enough to determine
+- [01:17:21,020 - 01:17:24,180] the coefficients in terms of up and down
+- [01:17:24,180 - 01:17:27,640] with a small ambiguity which is not interesting.
+- [01:17:27,940 - 01:17:29,840] I'll tell you later what that ambiguity is.
+- [01:17:30,000 - 01:17:31,380] It has no physics in it.
+- [01:17:32,380 - 01:17:33,260] First of all,
+- [01:17:33,260 - 01:17:34,900] it's the overall sign of the vectors.
+- [01:17:34,960 - 01:17:36,300] That has no physics in it,
+- [01:17:36,300 - 01:17:36,740] as we'll see.
+- [01:17:36,740 - 01:17:37,400] We'll find out.
+- [01:17:38,240 - 01:17:39,320] What is the solution?
+- [01:17:39,640 - 01:17:43,860] The solution is one here and i here
+- [01:17:45,120 - 01:17:46,300] with a square root of two.
+- [01:17:46,380 - 01:17:47,160] We have to put a
+- [01:17:47,160 - 01:17:47,940] one over square root of two
+- [01:17:48,620 - 01:17:50,280] and a one over square root of two.
+- [01:17:54,060 - 01:17:56,120] Out is the same thing
+- [01:18:00,860 - 01:18:04,060] minus i over square root of two down.
+- [01:18:06,740 - 01:18:08,820] Let's write it in terms of column and row vectors.
+- [01:18:09,160 - 01:18:10,920] Should that be an i over square root of two
+- [01:18:10,920 - 01:18:12,900] on the n vector?
+- [01:18:14,020 - 01:18:15,220] Let's say a one at least.
+- [01:18:15,440 - 01:18:15,800] Well,
+- [01:18:15,800 - 01:18:16,940] I have i there.
+- [01:18:19,720 - 01:18:20,660] Is that what you're asking?
+- [01:18:21,020 - 01:18:23,540] I actually had it right.
+- [01:18:23,600 - 01:18:24,560] It was one times i.
+- [01:18:28,280 - 01:18:28,680] Good.
+- [01:18:30,800 - 01:18:33,040] We can write these in terms of column vectors.
+- [01:18:33,300 - 01:18:34,960] Let's write the various column vectors.
+- [01:18:34,960 - 01:18:35,680] Up.
+- [01:18:37,080 - 01:18:38,360] What would you write for up?
+- [01:18:42,360 - 01:18:42,920] Well,
+- [01:18:42,920 - 01:18:44,040] we could write one zero.
+- [01:18:46,580 - 01:18:49,820] Up is just up with no down component.
+- [01:18:52,679 - 01:18:54,620] Down is just zero one.
+- [01:18:55,780 - 01:18:57,350] A one in the down place
+- [01:18:57,350 - 01:18:58,920] and a zero in the up place.
+- [01:18:59,720 - 01:19:02,400] What about right?
+- [01:19:03,780 - 01:19:06,380] That's equal to 1 over square of two
+- [01:19:06,380 - 01:19:08,500] 1 over square of two.
+- [01:19:10,480 - 01:19:11,120] Left,
+- [01:19:12,519 - 01:19:13,780] that's equal to
+- [01:19:15,959 - 01:19:18,060] one over square root of two
+- [01:19:18,060 - 01:19:20,460] minus one over square root of two.
+- [01:19:21,980 - 01:19:26,280] And now let's put in,
+- [01:19:27,559 - 01:19:30,060] in is one over square root of two,
+- [01:19:30,839 - 01:19:35,900] i over square root of 2 and write,
+- [01:19:35,900 - 01:19:36,340] sorry,
+- [01:19:36,340 - 01:19:40,060] out is equal to 1 over square root
+- [01:19:40,060 - 01:19:43,780] of 2 minus i over square root of 2.
+- [01:19:46,920 - 01:19:47,940] First question,
+- [01:19:47,940 - 01:19:51,240] is this orthogonal to this?
+- [01:19:53,760 - 01:19:54,860] How do we check?
+- [01:19:56,200 - 01:19:59,220] We take this times the complex conjugate of
+- [01:19:59,220 - 01:20:02,240] this plus this times the complex conjugate of this.
+- [01:20:03,220 - 01:20:05,440] That's the rule for calculating inner products.
+- [01:20:05,840 - 01:20:07,720] We could construct the row vectors,
+- [01:20:07,720 - 01:20:08,600] we don't need to.
+- [01:20:08,900 - 01:20:09,260] Oh,
+- [01:20:09,260 - 01:20:09,620] let's,
+- [01:20:09,620 - 01:20:09,800] let's,
+- [01:20:09,800 - 01:20:10,100] let's,
+- [01:20:10,100 - 01:20:10,420] let's,
+- [01:20:10,420 - 01:20:10,840] no,
+- [01:20:10,840 - 01:20:11,440] we don't need to.
+- [01:20:12,020 - 01:20:14,010] Remember that the row
+- [01:20:14,010 - 01:20:16,000] vectors have complex conjugate entries.
+- [01:20:17,580 - 01:20:18,060] Alright,
+- [01:20:18,060 - 01:20:20,380] but it's easy enough to do just the inner product.
+- [01:20:20,480 - 01:20:23,700] The inner product is the sum of the products.
+- [01:20:24,860 - 01:20:25,460] Of the entries.
+- [01:20:28,200 - 01:20:29,800] Times that complex conjugate.
+- [01:20:31,540 - 01:20:31,980] Alright,
+- [01:20:31,980 - 01:20:34,260] so one of these has to be complex conjugated.
+- [01:20:34,640 - 01:20:36,840] What's the product of this with its complex conjugate?
+- [01:20:40,160 - 01:20:41,300] One half times one,
+- [01:20:41,300 - 01:20:42,180] it's just one half.
+- [01:20:43,740 - 01:20:45,050] So this one times this
+- [01:20:45,050 - 01:20:46,360] one gives you a one half.
+- [01:20:47,560 - 01:20:50,720] And how about this times the complex conjugate of this?
+- [01:20:52,860 - 01:20:53,640] Minus one half.
+- [01:20:54,100 - 01:20:54,840] Minus one half.
+- [01:20:56,000 - 01:20:57,020] Minus i over two,
+- [01:20:57,020 - 01:20:58,170] what's the complex conjugate of
+- [01:20:58,170 - 01:20:59,320] i over square root of two?
+- [01:21:01,400 - 01:21:02,760] Minus i over square root of two.
+- [01:21:02,840 - 01:21:04,980] So we have to multiply minus i over square root
+- [01:21:04,980 - 01:21:07,120] of two times another minus i over square root of two,
+- [01:21:07,160 - 01:21:08,760] which gives us minus a half.
+- [01:21:10,280 - 01:21:11,920] i times i is minus one.
+- [01:21:12,880 - 01:21:14,780] So that gives us minus a half.
+- [01:21:15,580 - 01:21:16,720] And if we add them up,
+- [01:21:16,720 - 01:21:17,160] we get zero.
+- [01:21:18,020 - 01:21:18,660] So yes,
+- [01:21:18,660 - 01:21:20,940] these two are orthogonal to each other.
+- [01:21:23,260 - 01:21:23,700] The,
+- [01:21:23,700 - 01:21:26,780] the magnitude of the coefficients here,
+- [01:21:26,940 - 01:21:28,800] the square of the magnitude of the
+- [01:21:28,800 - 01:21:30,660] coefficients are each equal to a half,
+- [01:21:31,259 - 01:21:33,209] which proves that if you're
+- [01:21:33,209 - 01:21:35,160] in the in-state or the out-state,
+- [01:21:35,440 - 01:21:38,840] the probability of being up or down is one half.
+- [01:21:40,960 - 01:21:44,140] How about the probability of being left or right?
+- [01:21:44,940 - 01:21:46,460] How might you figure that out?
+- [01:21:47,640 - 01:21:50,560] Why isn't i times pi equals i squared?
+- [01:21:50,820 - 01:21:51,320] Say it again.
+- [01:21:51,560 - 01:21:53,300] i times i is equal to i squared.
+- [01:21:55,540 - 01:21:55,980] i times i is equal to i squared.
+- [01:21:55,980 - 01:21:57,330] Definition of i is that it's
+- [01:21:57,330 - 01:21:58,680] the square root of minus one.
+- [01:22:00,640 - 01:22:02,840] So i times i is always minus one.
+- [01:22:04,620 - 01:22:06,040] So i is not in.
+- [01:22:06,980 - 01:22:07,680] i is not,
+- [01:22:07,680 - 01:22:08,120] oh sorry,
+- [01:22:08,120 - 01:22:08,380] this,
+- [01:22:08,620 - 01:22:09,000] uh,
+- [01:22:10,520 - 01:22:11,940] this i is not in,
+- [01:22:11,940 - 01:22:12,260] no.
+- [01:22:14,000 - 01:22:14,440] This,
+- [01:22:14,440 - 01:22:15,000] okay.
+- [01:22:15,340 - 01:22:15,780] i
+- [01:22:17,320 - 01:22:18,200] and out
+- [01:22:20,440 - 01:22:20,880] right
+- [01:22:20,880 - 01:22:22,400] and left.
+- [01:22:26,200 - 01:22:26,640] Up.
+- [01:22:26,640 - 01:22:27,980] Up can stay the way it is,
+- [01:22:27,980 - 01:22:28,440] and down.
+- [01:22:29,600 - 01:22:31,240] And now go back throughout all
+- [01:22:31,240 - 01:22:32,880] of the pages and change it.
+- [01:22:33,740 - 01:22:34,420] Not important.
+- [01:22:36,260 - 01:22:36,700] Actually,
+- [01:22:36,700 - 01:22:38,080] we could have changed it more easily.
+- [01:22:38,220 - 01:22:39,900] Just change this i to capital i,
+- [01:22:39,900 - 01:22:41,580] but that would be a bad,
+- [01:22:41,580 - 01:22:42,580] that would be bad form,
+- [01:22:42,580 - 01:22:43,220] bad form.
+- [01:22:43,800 - 01:22:44,240] Okay.
+- [01:22:45,240 - 01:22:47,640] Is there anything about this coordinate system that,
+- [01:22:47,640 - 01:22:50,860] that could imply a left or right-handed coordinate system,
+- [01:22:50,960 - 01:22:51,160] like,
+- [01:22:51,160 - 01:22:53,280] like a cross y equals a?
+- [01:22:53,880 - 01:22:54,320] Very,
+- [01:22:54,320 - 01:22:55,500] very good question.
+- [01:22:55,600 - 01:22:56,620] The answer is yes,
+- [01:22:56,620 - 01:22:57,780] but we'll come to it.
+- [01:22:58,260 - 01:22:58,700] Yes,
+- [01:22:58,700 - 01:22:59,660] that's a very,
+- [01:22:59,660 - 01:23:00,540] very good question.
+- [01:23:01,160 - 01:23:01,400] Um,
+- [01:23:03,480 - 01:23:05,520] what is it that's in here
+- [01:23:05,520 - 01:23:07,020] that is telling us that
+- [01:23:07,020 - 01:23:08,520] it's a right-handed coordinate system
+- [01:23:08,520 - 01:23:10,620] rather than a left-handed coordinate system?
+- [01:23:11,020 - 01:23:12,820] And I didn't want to go there yet.
+- [01:23:13,040 - 01:23:13,860] We'll come to it.
+- [01:23:14,320 - 01:23:17,320] We'll come to it when we explore the Pauli matrices.
+- [01:23:18,800 - 01:23:19,240] But,
+- [01:23:19,240 - 01:23:19,520] uh,
+- [01:23:19,520 - 01:23:20,080] for the moment,
+- [01:23:20,080 - 01:23:20,620] we're just,
+- [01:23:20,620 - 01:23:20,860] uh,
+- [01:23:20,860 - 01:23:21,440] we're doing,
+- [01:23:22,480 - 01:23:23,280] we're sort of getting there.
+- [01:23:23,280 - 01:23:23,700] We're guessing away,
+- [01:23:23,700 - 01:23:24,440] bumbling through,
+- [01:23:24,600 - 01:23:26,440] trying to find vectors
+- [01:23:27,040 - 01:23:27,920] which describe,
+- [01:23:27,920 - 01:23:28,340] uh,
+- [01:23:29,480 - 01:23:31,360] various states of the system.
+- [01:23:34,220 - 01:23:34,660] Okay.
+- [01:23:34,760 - 01:23:36,240] This is my proposal,
+- [01:23:36,240 - 01:23:36,880] if you like.
+- [01:23:37,220 - 01:23:39,140] My best guess at the moment
+- [01:23:39,140 - 01:23:40,940] for what the states up,
+- [01:23:41,080 - 01:23:41,500] down,
+- [01:23:41,500 - 01:23:42,520] those,
+- [01:23:42,520 - 01:23:43,200] those are
+- [01:23:43,200 - 01:23:43,400] base,
+- [01:23:43,400 - 01:23:43,840] that's the,
+- [01:23:43,840 - 01:23:44,700] you start with those.
+- [01:23:45,000 - 01:23:46,020] In terms of those,
+- [01:23:46,020 - 01:23:47,000] what right and left are
+- [01:23:47,000 - 01:23:48,160] and what in and out are.
+- [01:23:48,920 - 01:23:49,360] Now,
+- [01:23:49,360 - 01:23:50,580] what you could do,
+- [01:23:51,980 - 01:23:54,220] we saw that you could rewrite
+- [01:23:54,220 - 01:23:55,260] up and down
+- [01:23:56,060 - 01:23:57,880] in terms of left and right.
+- [01:23:59,500 - 01:24:00,820] I showed you how to do that.
+- [01:24:01,080 - 01:24:02,780] And that means you could write
+- [01:24:02,780 - 01:24:03,820] i and o
+- [01:24:04,400 - 01:24:05,920] in terms of left and right.
+- [01:24:08,120 - 01:24:11,000] You could check what the coefficients are.
+- [01:24:11,600 - 01:24:13,100] I hesitate to do it
+- [01:24:13,100 - 01:24:14,380] because I'm sure I'll bumble it.
+- [01:24:16,680 - 01:24:17,600] On the other hand,
+- [01:24:17,600 - 01:24:18,700] I'm tempted to do it
+- [01:24:18,700 - 01:24:19,960] because I'm sure I'll get it right.
+- [01:24:22,660 - 01:24:24,100] I'll take one shot at it.
+- [01:24:24,140 - 01:24:24,520] One shot,
+- [01:24:24,520 - 01:24:26,020] and if it doesn't work out...
+- [01:24:31,480 - 01:24:31,880] Okay.
+- [01:24:32,680 - 01:24:34,280] Up is left plus right.
+- [01:24:34,920 - 01:24:36,540] Down is left minus right.
+- [01:24:36,600 - 01:24:37,460] With a square root of two.
+- [01:24:38,400 - 01:24:38,800] So,
+- [01:24:38,800 - 01:24:39,740] let's see if we can
+- [01:24:39,740 - 01:24:40,680] figure out what in is first.
+- [01:24:40,900 - 01:24:41,700] Let's just do in.
+- [01:24:43,140 - 01:24:45,460] In is one over the square root of two
+- [01:24:45,960 - 01:24:46,600] times up.
+- [01:24:46,700 - 01:24:47,440] What did I say up was?
+- [01:24:51,879 - 01:24:54,220] Up I said was left plus...
+- [01:24:55,739 - 01:24:57,020] Up I said was left plus...
+- [01:25:00,940 - 01:25:01,460] is
+- [01:25:03,199 - 01:25:04,900] left plus right
+- [01:25:05,940 - 01:25:07,320] left plus right
+- [01:25:07,320 - 01:25:10,520] left plus right
+- [01:25:10,520 - 01:25:12,660] but with another one over the square root of two.
+- [01:25:12,660 - 01:25:13,920] but with another one over the square root of two.
+- [01:25:14,100 - 01:25:15,760] So that gives me a one half.
+- [01:25:16,920 - 01:25:18,400] That's left over two
+- [01:25:18,400 - 01:25:20,680] plus right over two.
+- [01:25:21,680 - 01:25:22,440] plus right over two.
+- [01:25:25,260 - 01:25:25,820] plus right over two.
+- [01:25:25,820 - 01:25:26,260] That's scary.
+- [01:25:26,660 - 01:25:26,840] That's scary.
+- [01:25:28,680 - 01:25:30,400] And then plus i
+- [01:25:30,400 - 01:25:30,860] And then plus i
+- [01:25:32,040 - 01:25:33,700] over square root of two
+- [01:25:35,159 - 01:25:36,280] times down.
+- [01:25:36,600 - 01:25:37,880] Anybody remember what down was?
+- [01:25:39,099 - 01:25:42,000] Left minus right over the square root of two.
+- [01:25:42,000 - 01:25:42,980] So that gives me another...
+- [01:25:42,980 - 01:25:43,580] That will give me
+- [01:25:45,500 - 01:25:45,800] left
+- [01:25:47,080 - 01:25:47,680] left
+- [01:25:48,639 - 01:25:49,240] right
+- [01:25:53,219 - 01:25:55,340] over another square root of two
+- [01:25:56,119 - 01:25:57,320] minus left
+- [01:25:58,000 - 01:25:59,900] over another square root of two.
+- [01:26:03,360 - 01:26:03,960] Alright.
+- [01:26:03,960 - 01:26:05,700] So the whole thing looks like...
+- [01:26:05,700 - 01:26:06,060] alright.
+- [01:26:06,060 - 01:26:07,180] So the whole thing looks like...
+- [01:26:07,180 - 01:26:08,840] That's the term as two one halfs.
+- [01:26:09,360 - 01:26:12,520] The second term.
+- [01:26:12,580 - 01:26:13,420] The second term.
+- [01:26:13,580 - 01:26:13,680] No,
+- [01:26:13,680 - 01:26:14,540] just go back.
+- [01:26:14,540 - 01:26:15,320] That one right there.
+- [01:26:15,560 - 01:26:17,560] You got half and then you got two.
+- [01:26:17,780 - 01:26:17,980] Yeah.
+- [01:26:19,560 - 01:26:19,960] Yeah.
+- [01:26:22,860 - 01:26:25,560] And this can just be a one half
+- [01:26:27,720 - 01:26:28,940] with a square root of two
+- [01:26:28,940 - 01:26:30,160] and a square root of...
+- [01:26:30,160 - 01:26:31,140] and that's gone away,
+- [01:26:31,140 - 01:26:31,360] right?
+- [01:26:32,100 - 01:26:32,880] Do I have it right?
+- [01:26:34,100 - 01:26:34,500] Good.
+- [01:26:35,660 - 01:26:36,060] Okay,
+- [01:26:36,060 - 01:26:36,900] so what do we get?
+- [01:26:37,060 - 01:26:38,960] We get a coefficient times left.
+- [01:26:39,320 - 01:26:39,680] Alright,
+- [01:26:39,680 - 01:26:40,240] so here we are.
+- [01:26:40,240 - 01:26:45,120] I is equal to one half
+- [01:26:54,700 - 01:26:56,100] minus I...
+- [01:26:56,100 - 01:26:58,180] one minus I over two,
+- [01:26:58,180 - 01:26:58,740] is that right?
+- [01:27:00,460 - 01:27:03,900] One minus I over two times left
+- [01:27:08,120 - 01:27:08,960] plus...
+- [01:27:08,960 - 01:27:14,240] I think it's one plus I over two times right?
+- [01:27:18,040 - 01:27:20,640] You mean like O instead of I there?
+- [01:27:21,200 - 01:27:21,720] Here?
+- [01:27:21,960 - 01:27:23,340] Are we doing I or O?
+- [01:27:23,540 - 01:27:24,860] I think we're doing I.
+- [01:27:26,100 - 01:27:27,220] But I'm not sure.
+- [01:27:27,220 - 01:27:28,020] It doesn't matter.
+- [01:27:32,259 - 01:27:34,180] I think we were doing this one.
+- [01:27:35,300 - 01:27:37,300] Up is left plus right
+- [01:27:37,300 - 01:27:39,800] and down is left minus right
+- [01:27:40,240 - 01:27:41,220] with the same I.
+- [01:27:41,400 - 01:27:43,060] So I think that's right.
+- [01:27:43,920 - 01:27:44,360] Okay.
+- [01:27:45,760 - 01:27:46,200] Now,
+- [01:27:46,200 - 01:27:47,440] what's the magnitude
+- [01:27:47,440 - 01:27:49,560] of the two coefficients here
+- [01:27:50,540 - 01:27:52,940] then times their complex conjugates?
+- [01:27:53,580 - 01:27:54,380] Let's check that.
+- [01:27:54,400 - 01:27:55,300] I don't see any square
+- [01:27:55,300 - 01:27:56,200] roots of two in this thing.
+- [01:27:56,320 - 01:27:57,700] Do you see any square roots of two in here?
+- [01:27:58,660 - 01:28:00,720] You might have expected some square roots of two,
+- [01:28:00,720 - 01:28:00,900] huh?
+- [01:28:03,500 - 01:28:03,940] Nevertheless,
+- [01:28:04,640 - 01:28:05,960] I maintain that if you
+- [01:28:05,960 - 01:28:07,280] take this times its complex conjugates,
+- [01:28:07,280 - 01:28:08,860] I hope to God it's true,
+- [01:28:10,339 - 01:28:12,069] I maintain that if you
+- [01:28:12,069 - 01:28:13,800] take this times its complex conjugate,
+- [01:28:14,060 - 01:28:14,940] you will get one half.
+- [01:28:15,700 - 01:28:16,820] Let's check it.
+- [01:28:17,720 - 01:28:21,740] It's one minus I times one plus I
+- [01:28:23,379 - 01:28:25,720] over two times two is four.
+- [01:28:27,480 - 01:28:30,080] One minus I times one plus I,
+- [01:28:30,200 - 01:28:31,920] oh praise the Lord,
+- [01:28:32,120 - 01:28:33,260] is two.
+- [01:28:34,600 - 01:28:36,000] It's two over four
+- [01:28:36,000 - 01:28:37,520] which is equal to one half.
+- [01:28:39,180 - 01:28:40,160] In other words,
+- [01:28:40,160 - 01:28:41,380] this coefficient here,
+- [01:28:41,540 - 01:28:44,500] although it doesn't contain any explicit square root of two,
+- [01:28:45,400 - 01:28:47,400] it times its complex conjugate
+- [01:28:47,400 - 01:28:48,800] is equal to one over two.
+- [01:28:49,400 - 01:28:50,620] So the magnitude
+- [01:28:50,620 - 01:28:52,820] of this complex number here
+- [01:28:52,820 - 01:28:54,920] is one over the square root of two.
+- [01:28:55,520 - 01:28:56,580] It's written in a form
+- [01:28:56,580 - 01:28:57,730] that you don't see any explicit
+- [01:28:57,730 - 01:28:58,880] one over square roots of two,
+- [01:28:59,540 - 01:29:00,020] but
+- [01:29:00,020 - 01:29:01,460] the magnitude of this is
+- [01:29:01,460 - 01:29:02,900] one over square root of two
+- [01:29:02,900 - 01:29:04,600] and so is the magnitude of this.
+- [01:29:05,120 - 01:29:05,980] The implication of this is that
+- [01:29:06,000 - 01:29:11,180] if you started in the state I
+- [01:29:12,019 - 01:29:13,500] into the blackboard
+- [01:29:14,400 - 01:29:17,200] and instead of measuring up or down
+- [01:29:18,059 - 01:29:19,860] you measured left or right
+- [01:29:19,860 - 01:29:22,040] the probability would be a half.
+- [01:29:23,280 - 01:29:23,920] Alright?
+- [01:29:24,060 - 01:29:25,120] So we found
+- [01:29:26,959 - 01:29:29,380] three mutually related
+- [01:29:29,380 - 01:29:31,520] they're not orthogonal to each other
+- [01:29:31,520 - 01:29:34,520] up and down are not orthogonal to left and right
+- [01:29:34,520 - 01:29:35,520] and that's a half.
+- [01:29:35,520 - 01:29:35,580] So we found
+- [01:29:35,580 - 01:29:35,640] up and down are not orthogonal to left and right
+- [01:29:36,000 - 01:29:37,280] and they're orthogonal to each other
+- [01:29:37,889 - 01:29:40,300] but they're not orthogonal in the vertical direction
+- [01:29:40,300 - 01:29:41,420] but
+- [01:29:42,000 - 01:29:42,900] each one
+- [01:29:44,460 - 01:29:45,860] if expanded
+- [01:29:45,860 - 01:29:47,080] in any of the others
+- [01:29:47,080 - 01:29:49,720] would have coefficients whose magnitude
+- [01:29:49,720 - 01:29:52,420] was one over the square root of two.
+- [01:29:53,920 - 01:29:55,840] So they're symmetrically related
+- [01:29:55,840 - 01:29:56,760] in that sense
+- [01:30:00,100 - 01:30:00,800] and
+- [01:30:02,700 - 01:30:04,000] what this means
+- [01:30:04,000 - 01:30:04,860] in effect
+- [01:30:06,000 - 01:30:07,520] is that if you start with any one of them
+- [01:30:07,520 - 01:30:09,920] and measure the other component
+- [01:30:09,920 - 01:30:11,500] if you start with up or down
+- [01:30:11,500 - 01:30:13,920] and measure sigma x or sigma y
+- [01:30:13,920 - 01:30:14,980] you'll get
+- [01:30:15,759 - 01:30:16,840] probability a half.
+- [01:30:18,280 - 01:30:19,840] No matter what you start with
+- [01:30:19,840 - 01:30:22,100] any one of these three combinations
+- [01:30:22,100 - 01:30:23,620] any one of these six combinations
+- [01:30:25,559 - 01:30:28,100] and measure a perpendicular combination
+- [01:30:28,100 - 01:30:29,920] you'll always get probability
+- [01:30:29,920 - 01:30:31,220] plus or minus a half.
+- [01:30:31,860 - 01:30:33,480] Now I've put in here some
+- [01:30:33,480 - 01:30:35,920] some postulate about
+- [01:30:36,000 - 01:30:38,200] what probabilities are without telling you
+- [01:30:38,200 - 01:30:39,040] but
+- [01:30:39,040 - 01:30:41,980] I think we're coming along pretty well
+- [01:30:41,980 - 01:30:44,140] we have some mathematics here
+- [01:30:44,140 - 01:30:45,020] which is telling us
+- [01:30:45,020 - 01:30:47,100] that these three
+- [01:30:48,000 - 01:30:50,180] collections of pairs of vectors
+- [01:30:50,180 - 01:30:52,080] are nicely symmetrically
+- [01:30:52,080 - 01:30:53,380] related to each other
+- [01:30:56,200 - 01:30:56,920] and
+- [01:30:56,920 - 01:30:57,120] and
+- [01:31:04,540 - 01:31:05,100] that
+- [01:31:08,359 - 01:31:10,980] well that's the most important fact
+- [01:31:11,960 - 01:31:12,520] yes
+- [01:31:14,000 - 01:31:14,720] we have
+- [01:31:14,720 - 01:31:14,880] yeah
+- [01:31:16,059 - 01:31:16,920] yes Kevin
+- [01:31:22,279 - 01:31:23,860] no no we don't have to
+- [01:31:23,860 - 01:31:26,900] this is a thought
+- [01:31:26,920 - 01:31:28,100] I'm sorry
+- [01:31:28,100 - 01:31:29,340] three sets of
+- [01:31:29,340 - 01:31:30,880] three bases
+- [01:31:30,880 - 01:31:31,600] yeah
+- [01:31:31,600 - 01:31:37,320] three bases at angles with respect to each other
+- [01:31:37,320 - 01:31:38,760] and so why three?
+- [01:31:40,700 - 01:31:41,800] that's a good question
+- [01:31:41,800 - 01:31:43,260] the question is could we find
+- [01:31:43,260 - 01:31:44,360] oh excellent question
+- [01:31:44,360 - 01:31:46,380] could we find another
+- [01:31:48,760 - 01:31:49,420] double
+- [01:31:50,520 - 01:31:51,620] let's call it
+- [01:31:51,620 - 01:31:54,620] big and little
+- [01:31:54,620 - 01:31:56,140] no we already used little
+- [01:31:56,920 - 01:31:57,940] fat and skinny
+- [01:31:57,940 - 01:31:58,580] yeah
+- [01:32:01,179 - 01:32:02,320] fat and skinny
+- [01:32:03,000 - 01:32:04,560] can we find another
+- [01:32:04,560 - 01:32:05,080] pair
+- [01:32:06,740 - 01:32:08,760] such that fat is orthogonal
+- [01:32:08,760 - 01:32:09,420] to skinny
+- [01:32:10,759 - 01:32:12,500] and the inner
+- [01:32:12,500 - 01:32:14,060] product that's what it
+- [01:32:14,060 - 01:32:16,680] actually came down to or that the
+- [01:32:16,680 - 01:32:17,860] expansion coefficients
+- [01:32:18,840 - 01:32:19,960] of each one
+- [01:32:20,840 - 01:32:22,680] in terms of the other
+- [01:32:22,680 - 01:32:24,620] kind of bases are always
+- [01:32:24,620 - 01:32:26,640] equal to one over square root of two or always
+- [01:32:26,920 - 01:32:28,300] one half in magnitude
+- [01:32:28,300 - 01:32:29,460] the answer is no
+- [01:32:30,120 - 01:32:31,940] there is no third
+- [01:32:32,900 - 01:32:34,620] or no fourth combination
+- [01:32:34,620 - 01:32:36,600] that's in the same relationship
+- [01:32:36,600 - 01:32:38,120] now that's not obvious
+- [01:32:38,120 - 01:32:38,960] that's not the
+- [01:32:40,540 - 01:32:41,890] it is the fact that we
+- [01:32:41,890 - 01:32:43,240] live in a three dimensional world
+- [01:32:43,980 - 01:32:44,860] it's exactly
+- [01:32:44,860 - 01:32:46,880] the fact that we live in a three dimensional world
+- [01:32:47,680 - 01:32:48,220] right
+- [01:32:49,340 - 01:32:50,720] it's exactly the fact
+- [01:32:50,720 - 01:32:52,920] it's the statement that the three dimensions
+- [01:32:52,920 - 01:32:54,860] of space can be represented
+- [01:32:55,880 - 01:32:56,900] in two dimensions
+- [01:32:57,719 - 01:32:58,980] in two dimensional
+- [01:33:00,559 - 01:33:01,820] vector space terms
+- [01:33:02,639 - 01:33:04,160] alright let me tell you something else
+- [01:33:04,160 - 01:33:04,780] which is true
+- [01:33:07,740 - 01:33:09,500] if I give you a
+- [01:33:09,500 - 01:33:10,540] column vector
+- [01:33:10,540 - 01:33:11,740] let's say a column vector
+- [01:33:13,460 - 01:33:15,000] alpha one alpha two
+- [01:33:15,000 - 01:33:16,820] or just the coefficients
+- [01:33:16,820 - 01:33:17,740] of expansion
+- [01:33:18,740 - 01:33:20,260] alpha up and alpha down
+- [01:33:20,260 - 01:33:20,820] if you like
+- [01:33:24,780 - 01:33:25,900] the question is
+- [01:33:25,900 - 01:33:26,760] how much freedom
+- [01:33:26,760 - 01:33:26,900] is there in the space
+- [01:33:26,920 - 01:33:29,200] is there in the alphas
+- [01:33:29,200 - 01:33:31,340] such that it doesn't change
+- [01:33:31,340 - 01:33:33,900] the physical nature of the state
+- [01:33:33,900 - 01:33:34,880] how much freedom
+- [01:33:34,880 - 01:33:37,140] does every combination of
+- [01:33:37,140 - 01:33:39,500] alpha up and alpha down
+- [01:33:39,500 - 01:33:41,420] correspond to a different state
+- [01:33:41,420 - 01:33:42,080] the answer is no
+- [01:33:42,920 - 01:33:43,800] first of all
+- [01:33:43,800 - 01:33:47,340] the total probability
+- [01:33:47,340 - 01:33:48,580] has to add up to one
+- [01:33:48,580 - 01:33:50,820] so that's one constraint right there
+- [01:33:50,820 - 01:33:52,460] alpha up star alpha up
+- [01:33:52,460 - 01:33:54,620] plus alpha down star
+- [01:33:54,620 - 01:33:55,940] alpha down
+- [01:33:57,639 - 01:33:58,880] is equal to one
+- [01:34:00,120 - 01:34:01,220] there's another fact
+- [01:34:01,220 - 01:34:02,620] that we have not got to yet
+- [01:34:03,259 - 01:34:04,560] but we will find
+- [01:34:04,560 - 01:34:07,340] that every physically observable
+- [01:34:07,340 - 01:34:08,020] quantity
+- [01:34:09,799 - 01:34:11,000] always associated
+- [01:34:11,000 - 01:34:11,840] with a state
+- [01:34:11,840 - 01:34:14,600] always involves an alpha
+- [01:34:14,600 - 01:34:16,840] times a complex conjugate alpha
+- [01:34:16,840 - 01:34:18,520] we will find that
+- [01:34:18,520 - 01:34:20,160] we'll find that it's
+- [01:34:20,160 - 01:34:22,140] we won't put it in
+- [01:34:22,140 - 01:34:23,420] it will emerge as one of the
+- [01:34:23,420 - 01:34:25,320] consequences of the postulates
+- [01:34:26,920 - 01:34:27,900] so what it says
+- [01:34:27,900 - 01:34:30,180] is that if you multiply
+- [01:34:31,640 - 01:34:33,340] both of the alphas here
+- [01:34:33,340 - 01:34:35,120] by the same
+- [01:34:35,120 - 01:34:36,580] phase factor
+- [01:34:36,580 - 01:34:38,360] does everybody know what a phase factor is
+- [01:34:38,920 - 01:34:40,900] a phase factor is
+- [01:34:40,900 - 01:34:42,600] a complex number of the form
+- [01:34:42,600 - 01:34:43,780] e to the i theta
+- [01:34:45,360 - 01:34:47,000] of unit length
+- [01:34:47,000 - 01:34:48,940] it doesn't change the magnitude
+- [01:34:48,940 - 01:34:51,240] of either coefficient here
+- [01:34:51,240 - 01:34:53,260] that if we multiply
+- [01:34:53,260 - 01:34:55,240] every entry
+- [01:34:55,240 - 01:34:56,900] by the same phase factor
+- [01:34:56,920 - 01:34:58,680] it doesn't affect anything
+- [01:34:58,680 - 01:35:00,120] that means
+- [01:35:00,120 - 01:35:01,680] that if I were to just
+- [01:35:01,680 - 01:35:03,240] give you two complex numbers here
+- [01:35:03,240 - 01:35:04,920] there are two redundant
+- [01:35:05,879 - 01:35:07,120] pieces of information
+- [01:35:07,759 - 01:35:10,120] that really don't have anything to do
+- [01:35:10,120 - 01:35:11,680] with the physical character of the state
+- [01:35:11,680 - 01:35:14,300] the first is the overall magnitude
+- [01:35:16,820 - 01:35:18,340] because the overall magnitude
+- [01:35:18,340 - 01:35:19,780] should always be such
+- [01:35:19,780 - 01:35:21,400] that the sums of the squares of these
+- [01:35:21,400 - 01:35:22,100] add up to one
+- [01:35:22,100 - 01:35:23,800] so that means there's one
+- [01:35:24,940 - 01:35:26,760] call it a constraint if you like
+- [01:35:26,760 - 01:35:29,100] and a redundancy
+- [01:35:29,100 - 01:35:30,760] the redundancy is that
+- [01:35:30,760 - 01:35:32,380] if you multiply both entries
+- [01:35:32,380 - 01:35:35,020] by the same phase factor
+- [01:35:35,020 - 01:35:36,820] here it also doesn't
+- [01:35:36,820 - 01:35:37,560] change the state
+- [01:35:38,360 - 01:35:39,860] so then you could ask
+- [01:35:39,860 - 01:35:41,560] how many independent
+- [01:35:42,519 - 01:35:44,320] variables are there
+- [01:35:44,320 - 01:35:46,800] which characterize the state of the system
+- [01:35:46,800 - 01:35:47,840] of this system
+- [01:35:47,840 - 01:35:49,680] how many of them are there
+- [01:35:49,680 - 01:35:51,060] well let's count
+- [01:35:52,500 - 01:35:54,600] there are two independent
+- [01:35:54,600 - 01:35:56,600] variables if we don't worry
+- [01:35:56,760 - 01:35:58,420] about either of these constraints here
+- [01:35:58,420 - 01:36:00,640] how many things does it take to characterize
+- [01:36:00,640 - 01:36:02,680] two complex numbers
+- [01:36:03,940 - 01:36:04,540] four
+- [01:36:05,240 - 01:36:06,400] four real numbers
+- [01:36:06,400 - 01:36:08,780] right but now one of them
+- [01:36:09,440 - 01:36:10,420] doesn't count
+- [01:36:10,420 - 01:36:12,640] because we have to
+- [01:36:12,640 - 01:36:14,540] satisfy the constraint that the total
+- [01:36:14,540 - 01:36:15,980] length of this is equal to one
+- [01:36:17,219 - 01:36:18,720] one of them doesn't count
+- [01:36:18,720 - 01:36:20,860] but also another one doesn't count
+- [01:36:20,860 - 01:36:22,340] because the overall phase
+- [01:36:22,340 - 01:36:24,620] if we were to multiply everything by the
+- [01:36:24,620 - 01:36:26,680] same phase factor here it also doesn't count
+- [01:36:27,820 - 01:36:29,540] doesn't change the nature of the state
+- [01:36:29,540 - 01:36:31,160] so two of those
+- [01:36:31,160 - 01:36:32,960] four parameters
+- [01:36:35,739 - 01:36:36,940] are irrelevant
+- [01:36:36,940 - 01:36:38,960] to the physical character of the state
+- [01:36:38,960 - 01:36:39,840] how many does that leave over
+- [01:36:39,840 - 01:36:40,960] two
+- [01:36:40,960 - 01:36:43,660] two real numbers
+- [01:36:44,480 - 01:36:46,540] how many numbers does it take
+- [01:36:46,540 - 01:36:48,540] to characterize the direction
+- [01:36:48,540 - 01:36:49,760] of a unit vector
+- [01:36:51,900 - 01:36:52,500] two
+- [01:36:54,019 - 01:36:55,120] what are they called
+- [01:36:55,120 - 01:36:56,280] longitude and latitude
+- [01:36:56,280 - 01:36:56,740] or what are they called
+- [01:36:56,760 - 01:36:57,500] or something like that
+- [01:36:57,500 - 01:36:59,000] just the direction of a vector
+- [01:36:59,000 - 01:37:00,500] can be characterized by two angles
+- [01:37:01,480 - 01:37:02,580] these two
+- [01:37:03,559 - 01:37:04,760] pairs of numbers
+- [01:37:04,760 - 01:37:05,320] are the same
+- [01:37:06,700 - 01:37:08,160] the fact that
+- [01:37:08,700 - 01:37:10,580] that it takes two real
+- [01:37:10,580 - 01:37:12,220] parameters to describe
+- [01:37:13,780 - 01:37:14,960] a two component
+- [01:37:14,960 - 01:37:16,120] vector like this
+- [01:37:16,680 - 01:37:18,720] is closely related to the
+- [01:37:18,720 - 01:37:20,840] fact that it takes two real angles
+- [01:37:20,840 - 01:37:22,100] to describe
+- [01:37:22,460 - 01:37:24,560] the direction of a
+- [01:37:24,560 - 01:37:26,680] three vector in ordinary
+- [01:37:26,760 - 01:37:27,840] three dimensional space
+- [01:37:29,440 - 01:37:30,800] if we would have
+- [01:37:30,800 - 01:37:31,080] added
+- [01:37:31,080 - 01:37:34,740] more components here it would have been more
+- [01:37:34,740 - 01:37:35,220] complicated
+- [01:37:35,839 - 01:37:38,660] so yes there is a deep connection between the
+- [01:37:38,660 - 01:37:40,820] fact very deep connection
+- [01:37:40,820 - 01:37:41,980] between the fact
+- [01:37:41,980 - 01:37:44,940] that we only find three independent
+- [01:37:44,940 - 01:37:46,820] combinations like this
+- [01:37:46,820 - 01:37:47,420] where are they
+- [01:37:48,200 - 01:37:50,680] three independent combinations and that fat and
+- [01:37:50,680 - 01:37:51,340] skinny never
+- [01:37:53,219 - 01:37:54,600] we can't find
+- [01:37:54,600 - 01:37:56,420] fat and skinny basically they won't be there
+- [01:37:57,059 - 01:37:58,960] not without increasing the dimensionality
+- [01:37:59,400 - 01:38:00,040] of the vector space
+- [01:38:00,740 - 01:38:03,120] that is in fact very deeply connected
+- [01:38:03,120 - 01:38:04,320] to three dimensions of space
+- [01:38:04,320 - 01:38:04,940] yeah
+- [01:38:06,679 - 01:38:08,800] if space was nine dimensional
+- [01:38:08,800 - 01:38:10,020] or something like that
+- [01:38:10,780 - 01:38:12,980] we would not be able to represent
+- [01:38:12,980 - 01:38:14,460] the directions of a
+- [01:38:14,460 - 01:38:17,020] little arrow in it quantum mechanically
+- [01:38:17,020 - 01:38:18,700] by two components vectors
+- [01:38:20,480 - 01:38:21,900] we would need more components
+- [01:38:22,960 - 01:38:23,560] yeah
+- [01:38:23,560 - 01:38:26,740] it seems like just physically
+- [01:38:26,760 - 01:38:28,500] you would take three
+- [01:38:28,500 - 01:38:30,540] because two to specify the direction
+- [01:38:30,540 - 01:38:32,740] and then you've got to say whether it's plus one
+- [01:38:32,740 - 01:38:33,480] or minus one
+- [01:38:33,480 - 01:38:36,060] no no no the plus one
+- [01:38:36,060 - 01:38:37,780] plus one and minus one are
+- [01:38:38,480 - 01:38:39,760] inherited the basis
+- [01:38:39,760 - 01:38:40,260] yeah
+- [01:38:41,440 - 01:38:43,900] so how does this scale up if you had
+- [01:38:43,900 - 01:38:45,680] three complex
+- [01:38:46,780 - 01:38:48,260] numbers in the vector space
+- [01:38:48,900 - 01:38:50,460] you mean if you wanted to study some higher
+- [01:38:50,460 - 01:38:52,720] dimensional space oh god we have to figure it out
+- [01:38:52,720 - 01:38:54,400] I don't know the question is how many directions
+- [01:38:54,400 - 01:38:56,040] how many parameters are there to
+- [01:38:57,380 - 01:38:59,000] yeah it's more complicated
+- [01:39:00,620 - 01:39:02,360] that one I'm not going to try now
+- [01:39:04,100 - 01:39:04,580] right
+- [01:39:05,280 - 01:39:06,000] I didn't
+- [01:39:07,740 - 01:39:08,980] I got to tell you
+- [01:39:08,980 - 01:39:10,480] I got really scared when I realized
+- [01:39:10,480 - 01:39:11,320] that we weren't going to get any
+- [01:39:11,320 - 01:39:12,800] square roots of two by doing this
+- [01:39:17,000 - 01:39:18,780] the experiments you've described
+- [01:39:19,600 - 01:39:21,000] agree with this math
+- [01:39:21,000 - 01:39:23,620] and this math is based on
+- [01:39:24,960 - 01:39:26,160] or correlates with
+- [01:39:26,160 - 01:39:26,740] there being two different
+- [01:39:26,760 - 01:39:26,860] dimensions
+- [01:39:26,860 - 01:39:27,360] there being three space
+- [01:39:27,360 - 01:39:30,460] it is yes although what you say is true
+- [01:39:30,460 - 01:39:32,920] if you said there's nine dimensions
+- [01:39:32,920 - 01:39:36,920] would this experiment still agree with
+- [01:39:36,920 - 01:39:39,420] there would be a version of it
+- [01:39:39,420 - 01:39:41,440] there would be a version of it
+- [01:39:41,440 - 01:39:42,580] it would be more complicated
+- [01:39:42,580 - 01:39:45,020] and you couldn't describe
+- [01:39:45,020 - 01:39:47,080] the spin of a particle by just a thing
+- [01:39:47,080 - 01:39:49,440] with two components like this
+- [01:39:49,440 - 01:39:50,960] it would take more components
+- [01:39:50,960 - 01:39:53,540] what kind of apparatus would you use
+- [01:39:53,540 - 01:39:54,700] spinner theory
+- [01:39:54,700 - 01:39:55,800] yeah
+- [01:39:57,020 - 01:39:58,200] similar things
+- [01:39:58,200 - 01:39:59,000] similar things
+- [01:40:01,200 - 01:40:02,340] don't try to
+- [01:40:02,340 - 01:40:04,440] look this is enough
+- [01:40:04,440 - 01:40:06,380] for now understanding
+- [01:40:06,380 - 01:40:07,300] this
+- [01:40:08,800 - 01:40:10,660] if we went to four
+- [01:40:10,660 - 01:40:12,300] dimensional space we would need
+- [01:40:12,300 - 01:40:14,140] four component objects but
+- [01:40:14,670 - 01:40:17,040] but it grows
+- [01:40:17,040 - 01:40:18,660] three to four would be
+- [01:40:18,660 - 01:40:20,340] you said the states
+- [01:40:21,400 - 01:40:22,100] correspond
+- [01:40:23,580 - 01:40:25,220] what about the other
+- [01:40:25,220 - 01:40:26,640] what about negative vectors are they
+- [01:40:26,760 - 01:40:27,740] of any interest here at all
+- [01:40:30,859 - 01:40:33,159] well of course if you add two
+- [01:40:33,159 - 01:40:35,460] unit vectors you can get a non-unit vector
+- [01:40:35,460 - 01:40:36,580] you can
+- [01:40:37,379 - 01:40:39,239] but then the rule for the
+- [01:40:39,239 - 01:40:41,100] states of a system are divided through
+- [01:40:41,100 - 01:40:44,280] divided through by an overall factor until it's normalized
+- [01:40:45,099 - 01:40:47,200] they have the same significance
+- [01:40:49,980 - 01:40:51,740] as probability distributions
+- [01:40:52,519 - 01:40:54,120] which don't sum up to one
+- [01:40:55,339 - 01:40:56,660] you can always go back
+- [01:40:56,760 - 01:40:57,660] and say if somehow
+- [01:40:57,660 - 01:40:59,180] somewhere along the line
+- [01:40:59,180 - 01:41:01,390] I got some answers for probabilities that
+- [01:41:01,390 - 01:41:03,600] added up to something greater than one
+- [01:41:03,600 - 01:41:06,080] well I would just divide through by the total probability
+- [01:41:06,080 - 01:41:10,200] to define normalized probability distributions
+- [01:41:11,000 - 01:41:11,560] so
+- [01:41:12,819 - 01:41:15,180] in intermediate steps of calculations
+- [01:41:15,180 - 01:41:16,600] there might well be
+- [01:41:16,600 - 01:41:18,200] the presence of vectors
+- [01:41:18,200 - 01:41:19,360] which are not normalized
+- [01:41:19,360 - 01:41:20,920] but at the end of the day
+- [01:41:20,920 - 01:41:23,040] the states of the system are normalized vectors
+- [01:41:24,239 - 01:41:25,360] normalized vectors
+- [01:41:26,000 - 01:41:26,560] and
+- [01:41:26,560 - 01:41:26,740] and
+- [01:42:29,160 - 01:42:29,760] I've got
+- [01:42:31,059 - 01:42:32,260] vectors describing
+- [01:42:32,260 - 01:42:34,200] different orientations of the spin
+- [01:42:34,760 - 01:42:37,080] but we haven't been very rigorous about it
+- [01:42:37,080 - 01:42:37,880] and there's been no
+- [01:42:37,880 - 01:42:39,380] I have made no pretense
+- [01:42:39,380 - 01:42:41,520] of really a mathematical
+- [01:42:41,520 - 01:42:44,080] clear derivation of these things
+- [01:42:44,760 - 01:42:46,080] sort of seat of the pants
+- [01:42:46,080 - 01:42:47,720] guessing to a large extent
+- [01:42:47,720 - 01:42:50,160] the next time we will make some
+- [01:42:50,160 - 01:42:51,840] rigorous postulates
+- [01:42:52,599 - 01:42:54,860] about what these things really mean
+- [01:42:55,980 - 01:42:56,580] and
+- [01:42:56,760 - 01:42:57,480] their relationship
+- [01:42:59,659 - 01:43:00,940] these things
+- [01:43:00,940 - 01:43:02,440] and these things
+- [01:43:02,440 - 01:43:04,860] and what the relationship between them is
+- [01:43:04,860 - 01:43:06,500] the vectors
+- [01:43:06,500 - 01:43:08,080] and the things that you measure
+- [01:43:08,860 - 01:43:10,160] these are the states
+- [01:43:10,640 - 01:43:12,580] but these are the things you measure about them
+- [01:43:12,580 - 01:43:14,640] and the question is what's the connection
+- [01:43:14,640 - 01:43:15,340] between them
+- [01:43:16,920 - 01:43:18,880] okay any more questions about this
+- [01:43:18,880 - 01:43:20,980] are these lectures
+- [01:43:21,920 - 01:43:23,200] tracking the
+- [01:43:23,200 - 01:43:24,800] content in the sequence
+- [01:43:24,800 - 01:43:26,160] of those in the web
+- [01:43:26,760 - 01:43:28,580] I imagine they are but I don't remember
+- [01:43:28,580 - 01:43:29,670] but there's only one way that
+- [01:43:29,670 - 01:43:30,760] I know how to think about
+- [01:43:30,760 - 01:43:32,420] quantum mechanics so I bet they are
+- [01:43:34,080 - 01:43:34,520] and
+- [01:43:34,520 - 01:43:35,610] you know if you're sitting
+- [01:43:35,610 - 01:43:36,700] through this for the third time
+- [01:43:36,700 - 01:43:37,560] that's your problem
+- [01:43:41,280 - 01:43:42,860] believe me I'm sitting through it
+- [01:43:42,860 - 01:43:43,140] through the
+- [01:43:45,000 - 01:43:45,440] now
+- [01:43:47,560 - 01:43:50,680] is that phase factor that we can ignore
+- [01:43:50,680 - 01:43:51,900] yes the answer is yes
+- [01:43:51,900 - 01:43:55,620] is that phase factor
+- [01:43:56,760 - 01:43:57,560] are you doing anything with that
+- [01:43:57,560 - 01:43:58,700] well
+- [01:44:01,860 - 01:44:02,580] mostly
+- [01:44:02,580 - 01:44:03,880] we'll be saying look
+- [01:44:03,880 - 01:44:05,120] it doesn't matter
+- [01:44:05,120 - 01:44:07,200] alright it doesn't matter
+- [01:44:08,759 - 01:44:10,180] the okay
+- [01:44:10,180 - 01:44:12,700] so let's talk about the mathematics of ignoring
+- [01:44:12,700 - 01:44:13,420] something
+- [01:44:18,379 - 01:44:19,980] yeah that's right
+- [01:44:20,840 - 01:44:21,560] yeah
+- [01:44:22,679 - 01:44:23,820] yeah that's
+- [01:44:24,559 - 01:44:25,520] that's true
+- [01:44:28,320 - 01:44:28,840] but
+- [01:44:28,840 - 01:44:30,740] let's just talk about the mathematics
+- [01:44:30,740 - 01:44:32,640] of ignoring things for a minute
+- [01:44:37,379 - 01:44:38,580] alright a point
+- [01:44:38,580 - 01:44:40,580] is zero dimensional right
+- [01:44:42,799 - 01:44:44,740] a circle is one dimensional
+- [01:44:45,320 - 01:44:46,540] there's one parameter
+- [01:44:46,540 - 01:44:48,640] an angle on it but supposing
+- [01:44:48,640 - 01:44:50,640] I tell you that there's no significance
+- [01:44:50,640 - 01:44:52,400] to where you are on that circle
+- [01:44:53,000 - 01:44:54,700] there's no significance whatever
+- [01:44:55,360 - 01:44:56,740] all points on that circle
+- [01:44:56,760 - 01:44:58,600] are equivalent to every other point
+- [01:44:58,600 - 01:45:00,880] then you might say well for all
+- [01:45:01,500 - 01:45:02,460] interesting questions
+- [01:45:03,400 - 01:45:04,920] the circle is just a point
+- [01:45:05,780 - 01:45:07,060] if you can ignore
+- [01:45:07,060 - 01:45:08,280] where you are on the circle
+- [01:45:09,940 - 01:45:10,420] then
+- [01:45:10,420 - 01:45:12,580] there's only one point on the circle
+- [01:45:13,320 - 01:45:14,580] you're either on the circle
+- [01:45:14,580 - 01:45:16,500] if you're on the circle you're on the circle
+- [01:45:16,500 - 01:45:17,060] there's one point
+- [01:45:17,060 - 01:45:20,280] you can say the same thing
+- [01:45:22,120 - 01:45:22,600] about
+- [01:45:22,600 - 01:45:24,220] let's see another example
+- [01:45:24,220 - 01:45:25,220] what's another example?
+- [01:45:30,200 - 01:45:31,640] well let's take this example
+- [01:45:33,040 - 01:45:34,440] if you have a
+- [01:45:36,360 - 01:45:37,840] well what is a complex number?
+- [01:45:38,000 - 01:45:40,480] a complex number is a point on
+- [01:45:41,020 - 01:45:42,740] the plane but if for some
+- [01:45:42,740 - 01:45:44,760] reason the angle
+- [01:45:44,760 - 01:45:46,740] of where you are on the plane doesn't
+- [01:45:46,740 - 01:45:48,680] matter then the only thing that's interesting
+- [01:45:48,680 - 01:45:49,500] is the distance
+- [01:45:50,680 - 01:45:52,800] but now supposing you have two complex
+- [01:45:52,800 - 01:45:54,860] numbers and all I tell you
+- [01:45:54,860 - 01:45:56,740] is that when you have two complex numbers
+- [01:45:56,760 - 01:45:58,340] the thing which doesn't matter
+- [01:45:59,300 - 01:46:00,700] is the sum of their
+- [01:46:00,700 - 01:46:01,140] phases
+- [01:46:02,640 - 01:46:03,980] the sum of their phases,
+- [01:46:03,980 - 01:46:04,660] the sum of their
+- [01:46:04,660 - 01:46:06,460] angles then
+- [01:46:06,460 - 01:46:08,720] there is still one angle left
+- [01:46:08,720 - 01:46:10,280] over which may be important
+- [01:46:10,940 - 01:46:12,360] the difference of the angles
+- [01:46:12,860 - 01:46:14,680] so if I have two complex numbers
+- [01:46:16,100 - 01:46:16,740] and I
+- [01:46:16,740 - 01:46:18,620] tell you for reasons that I haven't specified
+- [01:46:18,620 - 01:46:20,600] yet that the overall
+- [01:46:20,600 - 01:46:22,620] phase which can just be thought of as the
+- [01:46:22,620 - 01:46:23,860] sum of the phase angles
+- [01:46:24,400 - 01:46:26,620] if the sum of the phase angles for whatever
+- [01:46:26,760 - 01:46:28,680] reason plays no role in the
+- [01:46:28,680 - 01:46:29,640] physics of the situation
+- [01:46:29,640 - 01:46:32,760] there is still the difference of angles there
+- [01:46:33,639 - 01:46:34,600] that's exactly
+- [01:46:34,600 - 01:46:35,440] what the case is,
+- [01:46:35,440 - 01:46:36,820] the sum of the angles
+- [01:46:36,820 - 01:46:38,920] the complex
+- [01:46:38,920 - 01:46:40,660] numbers that go into these
+- [01:46:40,660 - 01:46:42,680] entries here is of no physical significance
+- [01:46:43,440 - 01:46:44,760] we counted up
+- [01:46:44,760 - 01:46:47,020] four real parameters
+- [01:46:47,020 - 01:46:48,540] for two complex
+- [01:46:48,540 - 01:46:49,000] numbers,
+- [01:46:49,000 - 01:46:50,560] the overall
+- [01:46:50,560 - 01:46:52,380] magnitude of it doesn't count
+- [01:46:52,380 - 01:46:53,740] because we divide that out
+- [01:46:54,480 - 01:46:56,100] that removes one of them
+- [01:46:56,760 - 01:46:58,680] and then the sum of the angles doesn't
+- [01:46:58,680 - 01:46:59,940] count for whatever reason
+- [01:46:59,940 - 01:47:01,580] that removes another one,
+- [01:47:01,580 - 01:47:02,580] that leaves
+- [01:47:02,580 - 01:47:04,060] you with two
+- [01:47:04,620 - 01:47:05,420] real numbers
+- [01:47:05,420 - 01:47:08,280] and that's in correspondence
+- [01:47:08,280 - 01:47:09,540] with the two real numbers that
+- [01:47:09,540 - 01:47:10,800] it takes to pick a direction
+- [01:47:10,800 - 01:47:11,180] in space
+- [01:47:13,240 - 01:47:13,920] so
+- [01:47:13,920 - 01:47:16,160] there's a lot of subtlety
+- [01:47:16,440 - 01:47:17,980] but nothing very difficult,
+- [01:47:17,980 - 01:47:18,640] the mathematics
+- [01:47:18,640 - 01:47:19,780] is really easy
+- [01:47:19,780 - 01:47:22,560] mathematics of quantum mechanics is
+- [01:47:22,560 - 01:47:24,360] easier than the mathematics of classical
+- [01:47:24,360 - 01:47:24,960] physics
+- [01:47:26,919 - 01:47:28,240] two by two matrices
+- [01:47:29,699 - 01:47:31,140] is very simple
+- [01:47:31,820 - 01:47:32,800] mathematics is
+- [01:47:32,800 - 01:47:33,200] easier,
+- [01:47:33,200 - 01:47:34,100] it's unfamiliar
+- [01:47:39,379 - 01:47:39,900] yeah
+- [01:47:39,900 - 01:47:42,600] there's something that's always been
+- [01:47:42,600 - 01:47:43,980] vaguely unsettling
+- [01:47:43,980 - 01:47:45,600] which I think is at the heart of all this
+- [01:47:45,600 - 01:47:48,560] the idea that the up and down
+- [01:47:48,560 - 01:47:50,280] are along a single axis
+- [01:47:50,280 - 01:47:52,000] one pointing this way and one pointing that way
+- [01:47:52,000 - 01:47:53,260] but they're orthogonal somehow
+- [01:47:53,260 - 01:47:54,160] well
+- [01:47:56,760 - 01:47:57,780] orthogonal doesn't mean perpendicular
+- [01:47:57,780 - 01:47:58,800] in three dimensional space
+- [01:47:58,800 - 01:48:01,020] it means physically distinguishable
+- [01:48:01,980 - 01:48:04,660] it means unambiguously
+- [01:48:04,660 - 01:48:05,560] distinguishable
+- [01:48:06,379 - 01:48:08,300] left and right are not physically
+- [01:48:08,300 - 01:48:10,760] distinguishable uniquely from up and down
+- [01:48:11,419 - 01:48:11,980] why?
+- [01:48:12,180 - 01:48:14,100] because if you have a thing oriented along
+- [01:48:14,100 - 01:48:14,700] left
+- [01:48:15,759 - 01:48:18,600] and you measure up or down you might get up
+- [01:48:19,480 - 01:48:20,380] so you
+- [01:48:20,380 - 01:48:21,440] think of
+- [01:48:21,440 - 01:48:22,740] I have to think of
+- [01:48:23,679 - 01:48:26,340] two orthogonal axes as being two independent
+- [01:48:26,760 - 01:48:27,800] you could vary independently
+- [01:48:28,560 - 01:48:29,000] yes,
+- [01:48:29,000 - 01:48:29,840] that's right
+- [01:48:29,840 - 01:48:32,320] so here you can vary independently
+- [01:48:33,120 - 01:48:34,620] the probability for up
+- [01:48:34,620 - 01:48:35,100] and down
+- [01:48:35,840 - 01:48:37,660] of course they have to add up to one
+- [01:48:38,680 - 01:48:39,120] right,
+- [01:48:39,120 - 01:48:40,520] they have to add up to one
+- [01:48:40,520 - 01:48:42,560] but ignoring
+- [01:48:42,560 - 01:48:44,560] the question of whether they add up to one
+- [01:48:45,020 - 01:48:46,280] you have the freedom
+- [01:48:46,280 - 01:48:48,240] to independently vary
+- [01:48:48,760 - 01:48:50,700] the coefficient in terms of
+- [01:48:50,700 - 01:48:52,720] u and the coefficient in terms of
+- [01:48:52,720 - 01:48:52,880] d
+- [01:48:55,700 - 01:48:56,740] now the fact that they
+- [01:48:56,760 - 01:48:59,020] have to add up to one is another fact
+- [01:49:00,760 - 01:49:01,640] yeah
+- [01:49:01,640 - 01:49:02,500] don't confuse
+- [01:49:02,500 - 01:49:05,520] orthogonality in the space of states
+- [01:49:05,520 - 01:49:07,260] with orthogonality
+- [01:49:07,260 - 01:49:07,960] in
+- [01:49:08,760 - 01:49:09,320] in
+- [01:49:09,320 - 01:49:12,300] in three dimensional space
+- [01:49:12,300 - 01:49:14,740] the analog idea
+- [01:49:14,740 - 01:49:16,120] in phase space
+- [01:49:16,760 - 01:49:17,760] um
+- [01:49:19,120 - 01:49:20,260] or in
+- [01:49:20,260 - 01:49:22,960] the configuration space of a classical system
+- [01:49:25,640 - 01:49:26,520] orthogonal
+- [01:49:26,520 - 01:49:26,740] space
+- [01:49:26,760 - 01:49:29,200] the orthogonality of two probability distributions
+- [01:49:29,200 - 01:49:30,320] let's think of
+- [01:49:30,320 - 01:49:31,960] let's suppose you have
+- [01:49:32,840 - 01:49:33,880] phase space
+- [01:49:34,360 - 01:49:37,500] or the configuration space of some classical system
+- [01:49:37,500 - 01:49:38,540] here's the phase space
+- [01:49:38,540 - 01:49:39,120] x and p
+- [01:49:39,120 - 01:49:42,080] and I give you a probability distribution
+- [01:49:42,080 - 01:49:45,080] a simple probability distribution might be
+- [01:49:45,080 - 01:49:47,660] zero everywheres except in some patch
+- [01:49:48,559 - 01:49:50,860] where the probability is uniform
+- [01:49:50,860 - 01:49:52,440] okay
+- [01:49:52,440 - 01:49:55,020] the analog of
+- [01:49:55,020 - 01:49:56,660] orthogonality
+- [01:49:56,660 - 01:49:58,980] between of two distinct
+- [01:49:59,919 - 01:50:01,120] probability distributions
+- [01:50:01,120 - 01:50:03,000] is that they don't overlap
+- [01:50:04,799 - 01:50:06,360] that they're non-overlapping
+- [01:50:09,419 - 01:50:11,200] that there's no ambiguity
+- [01:50:13,040 - 01:50:13,640] and
+- [01:50:16,019 - 01:50:18,020] that's the analog of orthogonality
+- [01:50:18,020 - 01:50:19,880] up and down
+- [01:50:19,880 - 01:50:20,920] don't overlap
+- [01:50:20,920 - 01:50:22,340] if you're up you're not down
+- [01:50:22,340 - 01:50:23,920] and if you're down you're not up
+- [01:50:25,299 - 01:50:25,900] right
+- [01:50:25,900 - 01:50:26,640] so
+- [01:50:26,660 - 01:50:28,860] now if you think about
+- [01:50:28,860 - 01:50:30,020] there is a situation
+- [01:50:30,020 - 01:50:32,200] in which orthogonality
+- [01:50:32,200 - 01:50:34,760] is the same in space
+- [01:50:34,760 - 01:50:36,640] and in the space of states
+- [01:50:36,640 - 01:50:38,300] it's the polarization of photons
+- [01:50:39,740 - 01:50:40,780] the polarization
+- [01:50:40,780 - 01:50:42,680] of photons is a little bit different
+- [01:50:42,680 - 01:50:44,920] and I didn't want to get into it
+- [01:50:44,920 - 01:50:45,960] because it's more complicated
+- [01:50:46,580 - 01:50:47,160] um
+- [01:50:48,640 - 01:50:49,220] but
+- [01:50:50,420 - 01:50:51,000] right
+- [01:50:52,720 - 01:50:54,780] it would have been better if there was a different
+- [01:50:54,780 - 01:50:56,640] word for perpendicularity and
+- [01:50:56,660 - 01:50:58,020] space and orthogonality
+- [01:50:58,020 - 01:50:59,580] in the space of states
+- [01:51:00,660 - 01:51:01,760] different concepts
+- [01:51:08,300 - 01:51:10,680] it's very much what's going on here
+- [01:51:10,680 - 01:51:12,580] that being oriented
+- [01:51:12,580 - 01:51:13,580] along right
+- [01:51:15,260 - 01:51:16,060] um
+- [01:51:18,900 - 01:51:19,700] yeah
+- [01:51:22,900 - 01:51:24,620] can I do an experiment
+- [01:51:24,620 - 01:51:26,480] which can distinguish
+- [01:51:27,179 - 01:51:29,640] between a spin pointing up
+- [01:51:29,640 - 01:51:31,140] and a spin pointing down
+- [01:51:32,059 - 01:51:32,700] yes
+- [01:51:32,700 - 01:51:35,300] you can bring your apparatus over to it
+- [01:51:35,300 - 01:51:36,160] detect it
+- [01:51:36,160 - 01:51:38,480] and if it's up it'll point one
+- [01:51:38,480 - 01:51:40,920] if it's down it'll point minus one
+- [01:51:40,920 - 01:51:42,100] or it'll give a minus one
+- [01:51:42,580 - 01:51:44,280] can you use that apparatus
+- [01:51:44,280 - 01:51:46,480] to tell you uniquely the difference
+- [01:51:46,480 - 01:51:50,260] between a spin pointing along the x-axis
+- [01:51:50,260 - 01:51:52,700] and a spin pointing along the z-axis
+- [01:51:52,700 - 01:51:54,240] what would you do
+- [01:51:54,240 - 01:51:55,180] to tell the difference
+- [01:51:55,180 - 01:51:55,640] well
+- [01:51:56,680 - 01:51:57,860] what would you measure
+- [01:51:58,610 - 01:52:00,700] no matter what you measure
+- [01:52:00,700 - 01:52:02,920] it's not going to uniquely tell you the difference
+- [01:52:02,920 - 01:52:04,600] if you measure sigma
+- [01:52:04,600 - 01:52:07,320] z and you get plus one
+- [01:52:07,320 - 01:52:08,860] that doesn't tell you anything
+- [01:52:08,860 - 01:52:09,860] about sigma x
+- [01:52:10,660 - 01:52:11,320] it doesn't
+- [01:52:11,320 - 01:52:14,720] you could have gotten sigma z equals plus one
+- [01:52:14,720 - 01:52:15,580] because
+- [01:52:15,580 - 01:52:18,060] it was pointing along the z-axis
+- [01:52:18,660 - 01:52:20,780] and you got it with certainty one
+- [01:52:21,480 - 01:52:22,060] or
+- [01:52:22,060 - 01:52:24,120] it was pointing along the x-axis
+- [01:52:24,120 - 01:52:26,360] and with probability a half you got it pointing up
+- [01:52:27,019 - 01:52:28,340] there's no way to tell
+- [01:52:28,340 - 01:52:30,840] there's no way to tell by a single
+- [01:52:30,840 - 01:52:32,600] well defined experiment
+- [01:52:33,440 - 01:52:35,120] whether the spin was pointing
+- [01:52:35,120 - 01:52:35,900] let's say up
+- [01:52:36,480 - 01:52:37,440] or r
+- [01:52:38,639 - 01:52:39,989] what if you measure if
+- [01:52:39,989 - 01:52:41,340] a photon comes off or not
+- [01:52:46,019 - 01:52:47,660] with one experiment
+- [01:52:47,660 - 01:52:49,640] either a photon will or won't come off
+- [01:52:49,640 - 01:52:52,520] and from that you cannot tell uniquely
+- [01:52:52,520 - 01:52:53,480] whether it was
+- [01:52:53,480 - 01:52:53,700] a
+- [01:52:57,419 - 01:52:57,980] no
+- [01:52:57,980 - 01:52:59,060] you can't tell from that
+- [01:52:59,060 - 01:53:01,700] it's exactly the same as measuring the spin
+- [01:53:02,480 - 01:53:03,920] if you get up
+- [01:53:03,920 - 01:53:05,180] in your measurement
+- [01:53:05,180 - 01:53:08,840] it does not tell you whether it was initially up
+- [01:53:09,440 - 01:53:11,240] or it was initially sideways
+- [01:53:11,240 - 01:53:13,240] and with probability a half you got up
+- [01:53:14,139 - 01:53:14,700] okay
+- [01:53:14,700 - 01:53:17,280] so there's no unique single experiment
+- [01:53:17,280 - 01:53:18,580] you can do to distinguish
+- [01:53:18,580 - 01:53:19,960] this from this
+- [01:53:20,600 - 01:53:22,580] there is an experiment that you can do
+- [01:53:22,580 - 01:53:23,920] to distinguish this from this
+- [01:53:25,160 - 01:53:26,020] that's what makes
+- [01:53:26,660 - 01:53:28,020] up and down orthogonal
+- [01:53:28,620 - 01:53:30,520] but down and left not orthogonal
+- [01:53:30,520 - 01:53:31,880] they overlap
+- [01:53:32,700 - 01:53:34,440] they overlap and in fact
+- [01:53:34,440 - 01:53:36,240] the probability that
+- [01:53:36,240 - 01:53:38,840] if you are in left that you measure down
+- [01:53:38,840 - 01:53:40,380] when you measure sigma z
+- [01:53:40,380 - 01:53:42,660] that's a measure of the overlap
+- [01:53:42,660 - 01:53:43,560] between them
+- [01:53:45,460 - 01:53:46,140] alright
+- [01:53:46,140 - 01:53:47,280] the overlap which means
+- [01:53:47,280 - 01:53:49,860] in technical language that they are not orthogonal
+- [01:53:50,980 - 01:53:51,660] so
+- [01:53:52,500 - 01:53:54,900] back back to the hierarchy thing
+- [01:53:54,900 - 01:53:56,100] originally you said
+- [01:53:56,660 - 01:53:58,820] we didn't know that it was programmed
+- [01:53:59,380 - 01:54:00,100] up z
+- [01:54:00,620 - 01:54:02,440] but if we measured up z
+- [01:54:02,440 - 01:54:04,680] and got up we didn't have to measure anything else
+- [01:54:05,260 - 01:54:06,160] if the
+- [01:54:06,160 - 01:54:08,120] what we're trying to do is confirm
+- [01:54:08,560 - 01:54:09,340] the proposition
+- [01:54:10,060 - 01:54:11,900] the spin is up or
+- [01:54:12,540 - 01:54:13,160] the x
+- [01:54:13,760 - 01:54:16,260] the z component of spin is up or
+- [01:54:16,260 - 01:54:18,040] the x component of spin is up
+- [01:54:19,540 - 01:54:20,560] we want to confirm
+- [01:54:20,560 - 01:54:22,980] that's a single proposition it's not two propositions
+- [01:54:22,980 - 01:54:23,780] it's a single proposition
+- [01:54:23,780 - 01:54:25,120] the spin is up or
+- [01:54:26,660 - 01:54:28,700] the spin is up along z
+- [01:54:28,700 - 01:54:30,100] or it's up along x
+- [01:54:30,740 - 01:54:32,160] that's a single proposition
+- [01:54:32,900 - 01:54:34,280] if the first detection
+- [01:54:34,280 - 01:54:36,680] measures the spin up along the z axis
+- [01:54:36,680 - 01:54:37,400] we're finished
+- [01:54:38,280 - 01:54:38,880] alright
+- [01:54:44,379 - 01:54:46,320] and since the setup
+- [01:54:46,320 - 01:54:47,360] was setup beforehand
+- [01:54:47,360 - 01:54:50,480] we know that in that case we would get
+- [01:54:51,200 - 01:54:52,560] the right answer
+- [01:54:52,560 - 01:54:53,720] ok
+- [01:54:53,720 - 01:54:54,540] ok
+- [01:54:57,900 - 01:54:59,320] would it be fair to
+- [01:54:59,320 - 01:55:00,740] summarize that point as saying that
+- [01:55:00,740 - 01:55:02,260] propositions are not commutative
+- [01:55:03,599 - 01:55:04,400] uh
+- [01:55:04,400 - 01:55:05,940] yeah
+- [01:55:07,160 - 01:55:07,960] yeah
+- [01:55:07,960 - 01:55:09,360] I mean
+- [01:55:09,360 - 01:55:12,380] actually propositions technically correspond
+- [01:55:12,380 - 01:55:14,460] to projection operators
+- [01:55:14,460 - 01:55:16,880] and projection operators are not commutative
+- [01:55:19,970 - 01:55:20,210] 好
+- [01:55:20,834 - 01:55:22,434] That it would be proper to summarize.
+- [01:55:22,694 - 01:55:24,694] I don't know if that summarizes everything about it,
+- [01:55:24,734 - 01:55:26,874] but that certainly summarizes part of that point.
+- [01:55:28,814 - 01:55:30,114] Depends on which order you,
+- [01:55:30,114 - 01:55:30,634] yeah.
+- [01:55:30,894 - 01:55:33,574] So you've cautioned us about trying to visualize,
+- [01:55:33,574 - 01:55:35,134] okay?
+- [01:55:36,154 - 01:55:38,784] So is the sigma along
+- [01:55:38,784 - 01:55:41,414] the z-axis or along the x-axis,
+- [01:55:41,534 - 01:55:43,594] isn't that a visualization that?
+- [01:55:43,854 - 01:55:44,254] It is,
+- [01:55:44,254 - 01:55:45,614] it is,
+- [01:55:45,614 - 01:55:45,994] it is,
+- [01:55:45,994 - 01:55:46,474] it is,
+- [01:55:46,474 - 01:55:47,014] it is,
+- [01:55:47,014 - 01:55:47,734] it is,
+- [01:55:47,734 - 01:55:48,954] it is,
+- [01:55:48,954 - 01:55:50,154] it is.
+- [01:55:50,154 - 01:55:52,274] That would explain why it doesn't make sense
+- [01:55:52,274 - 01:55:52,974] where you measure it.
+- [01:55:53,034 - 01:55:53,194] Well,
+- [01:55:53,194 - 01:55:53,554] yeah,
+- [01:55:53,554 - 01:55:53,874] yeah.
+- [01:55:53,874 - 01:55:56,414] And then you measure n and it's an extra.
+- [01:55:56,914 - 01:55:57,394] Yeah,
+- [01:55:57,394 - 01:55:57,714] yeah,
+- [01:55:57,714 - 01:55:58,094] no,
+- [01:55:58,094 - 01:55:58,494] it is,
+- [01:55:58,494 - 01:55:59,354] it is a visualization.
+- [01:56:02,854 - 01:56:04,134] Do keep in mind,
+- [01:56:04,134 - 01:56:04,374] though,
+- [01:56:04,374 - 01:56:05,634] this interesting fact
+- [01:56:05,634 - 01:56:07,494] that on the average,
+- [01:56:07,494 - 01:56:09,574] the spins,
+- [01:56:10,274 - 01:56:11,814] if you measure many of them,
+- [01:56:11,814 - 01:56:12,334] many,
+- [01:56:12,334 - 01:56:12,614] many,
+- [01:56:12,614 - 01:56:13,274] many of them,
+- [01:56:13,774 - 01:56:15,974] the average values do behave
+- [01:56:18,574 - 01:56:20,134] like components of a linear system.
+- [01:56:20,154 - 01:56:20,594] So you can't measure them in a single little vector.
+- [01:56:20,934 - 01:56:22,314] In particular,
+- [01:56:22,314 - 01:56:25,814] if you take a large number of these spins
+- [01:56:25,814 - 01:56:29,094] and you make sure that they're all pointing upward,
+- [01:56:29,374 - 01:56:34,414] and then you measure some oblique component of them,
+- [01:56:35,234 - 01:56:37,554] with your apparatus being tilted,
+- [01:56:38,874 - 01:56:44,514] then the average that you get for the oblique component
+- [01:56:44,514 - 01:56:48,714] will just be the projection of the upright vector,
+- [01:56:48,714 - 01:56:50,194] onto the oblique direction,
+- [01:56:50,514 - 01:56:51,784] exactly as if you were
+- [01:56:51,784 - 01:56:53,054] measuring the component of a vector.
+- [01:56:53,734 - 01:56:57,914] So the upshot is,
+- [01:56:57,914 - 01:57:00,194] if you have a large number of them,
+- [01:57:01,474 - 01:57:02,794] in many cases,
+- [01:57:02,794 - 01:57:05,134] you can visualize with classical physics.
+- [01:57:05,194 - 01:57:05,674] After all,
+- [01:57:05,674 - 01:57:07,014] that's what classical physics is.
+- [01:57:07,074 - 01:57:08,274] Classical physics is,
+- [01:57:08,274 - 01:57:09,174] to a large extent,
+- [01:57:10,394 - 01:57:15,114] the approximation of systems which consist of many,
+- [01:57:15,194 - 01:57:15,894] many parts,
+- [01:57:15,894 - 01:57:17,834] which all behave,
+- [01:57:19,334 - 01:57:19,934] simultaneously,
+- [01:57:19,934 - 01:57:20,814] the same way.
+- [01:57:24,014 - 01:57:25,934] I'll try one more question.
+- [01:57:27,094 - 01:57:28,374] Is there any,
+- [01:57:28,374 - 01:57:30,634] looking at the properties
+- [01:57:30,634 - 01:57:32,474] of the model you described,
+- [01:57:32,834 - 01:57:35,234] is there any relation between that
+- [01:57:35,234 - 01:57:36,854] and the notion of gauging variance?
+- [01:57:39,294 - 01:57:40,294] I suppose.
+- [01:57:40,994 - 01:57:42,614] I suppose there is.
+- [01:57:43,614 - 01:57:45,334] You'd have to be more specific than that.
+- [01:57:50,434 - 01:57:52,054] Gauge invariance does have to
+- [01:57:52,054 - 01:57:53,674] do with these phase factors here.
+- [01:57:53,794 - 01:57:54,574] That's why I was referring to them.
+- [01:57:54,614 - 01:57:54,714] Yeah,
+- [01:57:54,714 - 01:57:55,774] it does have to do with them,
+- [01:57:55,774 - 01:57:56,634] but,
+- [01:58:01,014 - 01:58:02,354] it does have to do with them,
+- [01:58:02,434 - 01:58:04,414] but we can't get into that right now.
+- [01:58:06,034 - 01:58:06,354] Actually,
+- [01:58:06,354 - 01:58:09,394] one thing that I find myself getting confused about,
+- [01:58:09,474 - 01:58:10,594] but I think I see it now,
+- [01:58:10,594 - 01:58:10,894] is that,
+- [01:58:11,994 - 01:58:12,914] we're calling it measurement,
+- [01:58:12,914 - 01:58:13,774] and the tendency is
+- [01:58:13,774 - 01:58:15,874] to think of a measurement in the classical sense,
+- [01:58:16,034 - 01:58:16,774] like here comes,
+- [01:58:16,774 - 01:58:17,194] say,
+- [01:58:17,194 - 01:58:17,634] a particle,
+- [01:58:17,634 - 01:58:18,394] and we're going to measure
+- [01:58:18,394 - 01:58:19,014] some property,
+- [01:58:19,014 - 01:58:20,494] but it's not like that,
+- [01:58:20,514 - 01:58:23,334] because we can't really say what the value was
+- [01:58:23,334 - 01:58:24,554] before we did the measurement.
+- [01:58:24,594 - 01:58:25,674] We can only say what it
+- [01:58:25,674 - 01:58:26,754] is after we did the measurement.
+- [01:58:27,354 - 01:58:27,994] But then,
+- [01:58:27,994 - 01:58:29,274] once we measure it,
+- [01:58:30,154 - 01:58:31,474] we can measure it again,
+- [01:58:31,474 - 01:58:33,174] and the same thing again,
+- [01:58:33,314 - 01:58:34,514] and there will be consistency.
+- [01:58:34,894 - 01:58:35,214] I mean,
+- [01:58:35,214 - 01:58:36,714] we put it in a certain state,
+- [01:58:36,794 - 01:58:37,994] and we know what that state is.
+- [01:58:40,334 - 01:58:42,734] And if we do the same exact preparation
+- [01:58:43,174 - 01:58:44,114] over and over and over again,
+- [01:58:44,214 - 01:58:45,134] then we get this distribution.
+- [01:58:45,654 - 01:58:45,974] Yeah,
+- [01:58:45,974 - 01:58:46,034] yeah.
+- [01:58:47,434 - 01:58:47,914] That's right.
+- [01:58:47,914 - 01:58:52,554] You can't always think that a system has a property,
+- [01:58:52,674 - 01:58:53,844] and it's just your job
+- [01:58:53,844 - 01:58:55,014] to find out what it is.
+- [01:58:55,714 - 01:58:56,234] Yeah.
+- [01:58:56,514 - 01:58:56,914] Yeah.
+- [01:58:59,294 - 01:59:00,154] For more,
+- [01:59:00,154 - 01:59:02,594] please visit us at stanford.edu.
