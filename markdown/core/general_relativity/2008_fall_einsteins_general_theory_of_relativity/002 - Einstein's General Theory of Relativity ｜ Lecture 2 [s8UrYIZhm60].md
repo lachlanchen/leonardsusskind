@@ -1,0 +1,2253 @@
+# Transcript
+
+Source: core/general_relativity/2008_fall_einsteins_general_theory_of_relativity/002 - Einstein's General Theory of Relativity ｜ Lecture 2 [s8UrYIZhm60].mp4
+
+- [00:00:00,000 - 00:00:10,100] This program is brought to you by Stanford University.
+- [00:00:10,100 - 00:00:12,960] Please visit us at stanford.edu.
+- [00:00:14,920 - 00:00:22,680] All right, so let me just tell you what the story is with dark energy, big rips,
+- [00:00:22,680 - 00:00:31,340] whether dark energy will have a tendency to tear atoms apart and so forth.
+- [00:00:32,720 - 00:00:39,480] We're not, in past classes we've studied a little bit about dark energy,
+- [00:00:39,720 - 00:00:44,420] so for those who were there, I'll just remind you.
+- [00:00:45,660 - 00:00:50,080] For practical purposes, let's forget the deep story,
+- [00:00:50,880 - 00:00:52,460] but for practical purposes,
+- [00:00:52,680 - 00:01:00,060] dark energy or cosmological constant or whatever you like to call it, vacuum energy,
+- [00:01:01,280 - 00:01:06,640] the observed accelerated expansion of the universe,
+- [00:01:07,300 - 00:01:17,020] that is equivalent to a small repulsive force, a component to gravity.
+- [00:01:17,660 - 00:01:20,160] They say gravity is not repulsive.
+- [00:01:20,460 - 00:01:22,660] Well, suspend judgment about that.
+- [00:01:22,680 - 00:01:25,300] We'll talk about that in a moment, but we'll talk about it in a moment.
+- [00:01:25,300 - 00:01:28,320] So let's just pause until we get to it in this class,
+- [00:01:28,320 - 00:01:33,160] and imagine a small repulsive component to gravity,
+- [00:01:33,160 - 00:01:39,900] which is not proportional to one over r squared, like Newtonian gravity,
+- [00:01:39,900 - 00:01:45,580] but in fact where the force increases with distance.
+- [00:01:45,580 - 00:01:50,180] It increases with distance roughly the same way,
+- [00:01:50,180 - 00:01:52,300] well, how does a, how about a spring?
+- [00:01:52,300 - 00:01:57,980] Supposing you have a particle on a spring connected to the wall,
+- [00:01:57,980 - 00:02:00,860] or two particles connected by springs.
+- [00:02:03,100 - 00:02:05,860] How does the force depend on the separation between them?
+- [00:02:07,860 - 00:02:11,060] The force grows linearly with the separation between them,
+- [00:02:11,060 - 00:02:13,860] of course until you break the spring, but let's not break the spring.
+- [00:02:14,320 - 00:02:20,420] The force grows linearly, and it's proportional to the distance between the,
+- [00:02:20,420 - 00:02:22,420] the particles at the end of the spring.
+- [00:02:22,420 - 00:02:24,420] The force grows linearly.
+- [00:02:24,420 - 00:02:30,420] There's some constant there, usually called the spring constant.
+- [00:02:30,420 - 00:02:32,420] Let's put it in.
+- [00:02:32,420 - 00:02:36,420] And because it's attractive, pulling the two things together,
+- [00:02:36,420 - 00:02:38,420] there's a minus sign there.
+- [00:02:38,420 - 00:02:42,420] Imagine that we have such a spring.
+- [00:02:42,420 - 00:02:46,420] Okay, now what, and with two particles attached to it.
+- [00:02:46,420 - 00:02:48,420] What does the cosmological constant do?
+- [00:02:48,420 - 00:02:50,420] Well, it's a constant.
+- [00:02:50,420 - 00:02:55,420] What the cosmological constant, the repulsive cosmological constant,
+- [00:02:55,420 - 00:02:58,420] what it does, a positive cosmological constant,
+- [00:02:58,420 - 00:03:00,420] or a positive dark energy,
+- [00:03:00,420 - 00:03:08,420] what it does is it adds a little bit of force of just this type,
+- [00:03:08,420 - 00:03:13,420] proportional to distance, but repulsive, not attractive.
+- [00:03:13,420 - 00:03:14,420] This is attractive.
+- [00:03:14,420 - 00:03:16,420] That's the minus sign there.
+- [00:03:16,420 - 00:03:18,420] Repulsive.
+- [00:03:18,420 - 00:03:25,420] So it adds a little bit of repulsive force to the otherwise attractive force
+- [00:03:25,420 - 00:03:28,420] between the two particles on the end of the spring.
+- [00:03:28,420 - 00:03:31,420] Now, I'm not really thinking about two particles on the end of the spring,
+- [00:03:31,420 - 00:03:33,420] but it's a good model for us.
+- [00:03:33,420 - 00:03:37,420] What I'm really thinking of, for example, is an atom.
+- [00:03:37,420 - 00:03:44,420] An atom is a system which is composed of two or more particles held together by forces.
+- [00:03:44,420 - 00:03:47,420] The forces are not entirely different than spring forces,
+- [00:03:47,420 - 00:03:57,420] but what would happen if you added to this a little bit of much smaller than the spring constant?
+- [00:03:57,420 - 00:04:02,420] The spring constant, which holds atoms together, is quite strong.
+- [00:04:02,420 - 00:04:05,420] The dark energy forces are minute.
+- [00:04:05,420 - 00:04:10,420] They're incredibly small until you get very, very far away.
+- [00:04:10,420 - 00:04:13,420] Notice this force grows with distance.
+- [00:04:13,420 - 00:04:14,420] Forget this one.
+- [00:04:14,420 - 00:04:16,420] We're going to add now a little bit of component.
+- [00:04:16,420 - 00:04:23,420] The coefficient in front of it is called the cosmological constant, or the dark energy,
+- [00:04:23,420 - 00:04:26,420] also times r.
+- [00:04:26,420 - 00:04:30,420] What would it do to the spring if there was a tiny, tiny coefficient here?
+- [00:04:30,420 - 00:04:36,420] And that coefficient is truly small for ordinary laboratory experiments.
+- [00:04:36,420 - 00:04:45,420] All it would do would be to change the equilibrium position of the particles at the end of the spring a little bit.
+- [00:04:45,420 - 00:04:51,420] It would effectively change the spring constant here,
+- [00:04:51,420 - 00:04:54,420] make it a little bit smaller.
+- [00:04:54,420 - 00:04:58,420] But what would happen if you made the spring constant a little bit weaker?
+- [00:04:58,420 - 00:05:07,420] All that would happen is that the spring with the particles on it would be a little bit bigger.
+- [00:05:07,420 - 00:05:09,420] That's all.
+- [00:05:09,420 - 00:05:14,420] Atoms would grow by an entirely negligible amount.
+- [00:05:14,420 - 00:05:16,420] They wouldn't be torn apart.
+- [00:05:16,420 - 00:05:18,420] They wouldn't be torn apart.
+- [00:05:18,420 - 00:05:27,420] It would just change the equilibrium position of the electrons in the atom by a tiny, completely insignificant amount.
+- [00:05:27,420 - 00:05:31,420] And that would be the net effect on atoms.
+- [00:05:31,420 - 00:05:38,420] It would be the net effect on almost anything that was otherwise bound together.
+- [00:05:38,420 - 00:05:42,420] The reason is that this lambda here, how small is it?
+- [00:05:42,420 - 00:05:51,420] It's so small that this force doesn't become significant until you get out to the full measure of the entire global universe.
+- [00:05:51,420 - 00:05:54,420] That's where it begins to get big.
+- [00:05:54,420 - 00:05:59,420] But if you ask about it on the scale of the solar system, it's negligible.
+- [00:05:59,420 - 00:06:04,420] It's tiny by comparison with the other forces in the solar system, gravity and other things.
+- [00:06:04,420 - 00:06:10,420] And so what it would do is it would change the equilibrium position of the Earth a little bit.
+- [00:06:10,420 - 00:06:11,420] A tiny, tiny bit.
+- [00:06:11,420 - 00:06:16,420] Or it would change the size of a galaxy a little bit and expand it out a little bit.
+- [00:06:16,420 - 00:06:20,420] But it wouldn't overcome the forces which hold things together.
+- [00:06:20,420 - 00:06:26,420] Now, there's a theory called the Big Rip.
+- [00:06:26,420 - 00:06:29,420] It violates every principle of physics.
+- [00:06:29,420 - 00:06:30,420] It does.
+- [00:06:30,420 - 00:06:33,420] It violates every principle of physics.
+- [00:06:33,420 - 00:06:38,420] Why anybody would take it seriously, I don't know.
+- [00:06:38,420 - 00:06:41,420] But when serious theorists,
+- [00:06:41,420 - 00:06:44,420] work out the equations,
+- [00:06:44,420 - 00:06:47,420] and say there are limits between this and that,
+- [00:06:47,420 - 00:06:50,420] such and such cannot be bigger than this,
+- [00:06:50,420 - 00:06:52,420] or such and such cannot be smaller than that,
+- [00:06:52,420 - 00:06:55,420] for deep fundamental principles,
+- [00:06:55,420 - 00:06:57,420] somebody is going to come along and say,
+- [00:06:57,420 - 00:07:01,420] yeah, but what if those principles are wrong,
+- [00:07:01,420 - 00:07:09,420] and such and such can be a little bit bigger or a little bit smaller than the bound that the theoretical principles tell you.
+- [00:07:09,420 - 00:07:11,420] Somebody will come along and say that.
+- [00:07:11,420 - 00:07:14,420] They'll write a paper about it.
+- [00:07:14,420 - 00:07:17,420] The paper will last for...
+- [00:07:17,420 - 00:07:20,420] till it gets to the New York Times.
+- [00:07:20,420 - 00:07:23,420] And then it will slowly
+- [00:07:23,420 - 00:07:26,420] fall into the junk heap of bad physics ideas.
+- [00:07:26,420 - 00:07:28,420] The Big Rip is one of those ideas.
+- [00:07:28,420 - 00:07:32,420] But I'll tell you, I'm not going to try to tell you right now
+- [00:07:32,420 - 00:07:34,420] what is wrong with it.
+- [00:07:34,420 - 00:07:36,420] We'll eventually come to it.
+- [00:07:36,420 - 00:07:39,420] But it's basically the idea that this constant lambda here
+- [00:07:39,420 - 00:07:41,420] is time dependent.
+- [00:07:41,420 - 00:07:44,420] That it grows with time.
+- [00:07:44,420 - 00:07:47,420] Now there's no reason on earth to believe that.
+- [00:07:47,420 - 00:07:49,420] Not only is there no reason on earth to believe it,
+- [00:07:49,420 - 00:07:53,420] there are very, very strong reasons on earth to disbelieve it.
+- [00:07:53,420 - 00:07:57,420] But you could say, who cares what theorists say?
+- [00:07:57,420 - 00:08:01,420] Let's make a prediction of what would happen if lambda grew with time.
+- [00:08:01,420 - 00:08:05,420] Well, if it grew with time, eventually,
+- [00:08:05,420 - 00:08:10,420] it would become stronger than the forces which bind together other objects.
+- [00:08:10,420 - 00:08:14,420] At first, it would become stronger than the forces which hold galaxies together.
+- [00:08:14,420 - 00:08:16,420] And galaxies would fly apart.
+- [00:08:16,420 - 00:08:20,420] Then it would become stronger than the forces which hold the solar system apart.
+- [00:08:20,420 - 00:08:22,420] The solar system would fly apart.
+- [00:08:22,420 - 00:08:26,420] Then eventually it would become stronger than the forces which hold the spring together.
+- [00:08:26,420 - 00:08:28,420] Spring flies apart.
+- [00:08:28,420 - 00:08:32,420] As I said, that's called the Big Rip.
+- [00:08:32,420 - 00:08:38,420] That this constant lambda, the dark energy, is not a constant at all,
+- [00:08:38,420 - 00:08:40,420] but that it increases with time.
+- [00:08:40,420 - 00:08:43,420] Decreases with time is allowable.
+- [00:08:43,420 - 00:08:47,420] Increases with time violates some strong...
+- [00:08:47,420 - 00:08:51,420] As I interpret what you're saying,
+- [00:08:51,420 - 00:08:54,420] lambda is a function of mass or whatever...
+- [00:08:54,420 - 00:08:57,420] No, lambda is just a numerical constant.
+- [00:08:57,420 - 00:08:58,420] Period.
+- [00:08:58,420 - 00:09:00,420] Well, the point I'm getting at is,
+- [00:09:00,420 - 00:09:02,420] what if there's no mass?
+- [00:09:02,420 - 00:09:05,420] Is that lambda still in effect?
+- [00:09:05,420 - 00:09:07,420] It's a force that would be there
+- [00:09:07,420 - 00:09:09,420] between any pair of particles,
+- [00:09:09,420 - 00:09:11,420] if the particles were there.
+- [00:09:11,420 - 00:09:13,420] If the particles weren't there,
+- [00:09:13,420 - 00:09:16,420] there wouldn't be any particles to have a force on them.
+- [00:09:16,420 - 00:09:19,420] Lambda evolves with time?
+- [00:09:19,420 - 00:09:24,420] No, according to most current thinking,
+- [00:09:24,420 - 00:09:27,420] it's called a cosmological constant for good reasons,
+- [00:09:27,420 - 00:09:32,420] because all of the good theory says it ought to be a constant.
+- [00:09:32,420 - 00:09:35,420] Now, could it not be a constant?
+- [00:09:35,420 - 00:09:37,420] It doesn't violate any...
+- [00:09:37,420 - 00:09:39,420] There are very, very deep principles
+- [00:09:39,420 - 00:09:41,420] for it to decrease with time.
+- [00:09:41,420 - 00:09:45,420] It violates big principles to increase with time.
+- [00:09:45,420 - 00:09:49,420] So, but we'll come to this.
+- [00:09:49,420 - 00:09:51,420] I just wanted to assure you,
+- [00:09:51,420 - 00:09:54,420] to make you feel better about the future.
+- [00:09:54,420 - 00:09:55,420] Yeah?
+- [00:09:55,420 - 00:09:57,420] I'm trying to think that dark energy
+- [00:09:57,420 - 00:09:59,420] is like a huge component,
+- [00:09:59,420 - 00:10:02,420] and you start looking at stuff like a graph,
+- [00:10:02,420 - 00:10:04,420] and you think it's like 20-something percent,
+- [00:10:04,420 - 00:10:05,420] so if it's so small,
+- [00:10:05,420 - 00:10:07,420] how can that be huge?
+- [00:10:07,420 - 00:10:13,420] Well, the dark energy density in this room is tiny.
+- [00:10:13,420 - 00:10:15,420] It's extremely small.
+- [00:10:15,420 - 00:10:17,420] I'll tell you how small it is.
+- [00:10:19,420 - 00:10:21,420] Take a cubic meter,
+- [00:10:21,420 - 00:10:27,420] and how many protons were...
+- [00:10:27,420 - 00:10:29,420] The proton has a certain mass,
+- [00:10:29,420 - 00:10:31,420] E equals mc squared,
+- [00:10:31,420 - 00:10:35,420] so there's a certain amount of energy in every proton.
+- [00:10:35,420 - 00:10:37,420] Roughly,
+- [00:10:37,420 - 00:10:40,420] I think the dark energy in this room,
+- [00:10:40,420 - 00:10:42,420] per cubic meter,
+- [00:10:42,420 - 00:10:44,420] would be...
+- [00:10:44,420 - 00:10:46,420] I would have to work it out,
+- [00:10:46,420 - 00:10:50,420] but it's roughly of order about a thousand protons.
+- [00:10:50,420 - 00:10:53,420] A thousand protons in a cubic meter
+- [00:10:53,420 - 00:10:55,420] is a negligible amount of energy.
+- [00:10:55,420 - 00:10:58,420] Its gravitational effects on things
+- [00:10:58,420 - 00:11:00,420] are really negligible,
+- [00:11:00,420 - 00:11:02,420] but if you had it smeared out
+- [00:11:02,420 - 00:11:05,420] through the entire universe that way,
+- [00:11:05,420 - 00:11:06,420] then,
+- [00:11:06,420 - 00:11:09,420] at sufficiently big distances away,
+- [00:11:09,420 - 00:11:11,420] now imagine now,
+- [00:11:11,420 - 00:11:13,420] imagine now we live in a world
+- [00:11:13,420 - 00:11:17,420] which has an extra bit of energy
+- [00:11:17,420 - 00:11:19,420] that's causing repulsion,
+- [00:11:19,420 - 00:11:22,420] but it's spread out throughout the entire universe
+- [00:11:22,420 - 00:11:24,420] in a smooth distribution,
+- [00:11:24,420 - 00:11:26,420] then eventually,
+- [00:11:26,420 - 00:11:28,420] at sufficiently large distances,
+- [00:11:28,420 - 00:11:30,420] it would make an effect,
+- [00:11:30,420 - 00:11:31,420] a repulsive effect on things,
+- [00:11:31,420 - 00:11:32,420] which would become big.
+- [00:11:32,420 - 00:11:35,420] But those distances are cosmological in size.
+- [00:11:35,420 - 00:11:38,420] So it has an effect on the global universe,
+- [00:11:38,420 - 00:11:40,420] but it doesn't have an effect on,
+- [00:11:40,420 - 00:11:43,420] certainly not on laboratory physics,
+- [00:11:43,420 - 00:11:45,420] it doesn't even have a significant effect
+- [00:11:45,420 - 00:11:47,420] on any kind of astronomical physics.
+- [00:11:47,420 - 00:11:49,420] By astronomical,
+- [00:11:49,420 - 00:11:52,420] I mean things smaller than the entire universe.
+- [00:11:52,420 - 00:11:54,420] In fact, for whatever reason,
+- [00:11:54,420 - 00:11:57,420] this number happens to be such
+- [00:11:57,420 - 00:11:59,420] that it only,
+- [00:11:59,420 - 00:12:02,420] that this force only becomes significant
+- [00:12:02,420 - 00:12:04,420] and comparable to other forces
+- [00:12:04,420 - 00:12:07,420] at something like the radius of the entire universe.
+- [00:12:07,420 - 00:12:10,420] So it only becomes important under those circumstances.
+- [00:12:10,420 - 00:12:14,420] People who want to tap the vacuum energy,
+- [00:12:14,420 - 00:12:16,420] to get vacuum energy to do work,
+- [00:12:16,420 - 00:12:20,420] and as a solution to the energy crisis,
+- [00:12:20,420 - 00:12:22,420] have to deal with the fact
+- [00:12:22,420 - 00:12:25,420] that if they wanted to get a tank full of gasoline,
+- [00:12:25,420 - 00:12:29,420] they would have to extract the energy out of a volume
+- [00:12:29,420 - 00:12:31,420] something like the orbit of the moon,
+- [00:12:31,420 - 00:12:33,420] or something like that.
+- [00:12:33,420 - 00:12:36,420] So there's not a lot of energy there.
+- [00:12:36,420 - 00:12:37,420] Yeah.
+- [00:12:37,420 - 00:12:40,420] And no way to tap it, but...
+- [00:12:40,420 - 00:12:42,420] Would that suggest that dark energy
+- [00:12:42,420 - 00:12:44,420] is really a relative energy?
+- [00:12:44,420 - 00:12:47,420] Relative to what? What does it mean?
+- [00:12:47,420 - 00:12:51,420] Let's, let's, let's, let's,
+- [00:12:51,420 - 00:12:54,420] I'm not sure what you mean by a relative energy.
+- [00:12:54,420 - 00:12:57,420] Do you mean...
+- [00:12:57,420 - 00:12:59,420] Well, it gravitates.
+- [00:12:59,420 - 00:13:00,420] It gravitates.
+- [00:13:00,420 - 00:13:03,420] It has the effect of a distribution,
+- [00:13:03,420 - 00:13:05,420] a distribution of mass in the universe.
+- [00:13:05,420 - 00:13:07,420] So it's...
+- [00:13:09,420 - 00:13:11,420] You mean are only differences of it important?
+- [00:13:11,420 - 00:13:13,420] Is that what you meant?
+- [00:13:13,420 - 00:13:15,420] I'm not sure what relative,
+- [00:13:15,420 - 00:13:17,420] how relative was being used.
+- [00:13:17,420 - 00:13:20,420] I'd have to try to elaborate on that probably.
+- [00:13:20,420 - 00:13:22,420] Yeah, it's probably...
+- [00:13:25,420 - 00:13:27,420] I heard that there's,
+- [00:13:27,420 - 00:13:30,420] someone said there's no particle associated with dark energy.
+- [00:13:30,420 - 00:13:31,420] No, they don't really.
+- [00:13:31,420 - 00:13:33,420] No. No. No.
+- [00:13:33,420 - 00:13:34,420] What's dark energy?
+- [00:13:34,420 - 00:13:37,420] Dark energy does not have the form of
+- [00:13:37,420 - 00:13:40,420] any energy that's associated with particles.
+- [00:13:40,420 - 00:13:43,420] We'll come to it, I hope we'll come to it
+- [00:13:43,420 - 00:13:45,420] in the course of these lectures.
+- [00:13:45,420 - 00:13:47,420] But no, there's no particles.
+- [00:13:47,420 - 00:13:49,420] Now, dark energy is to be contrasted
+- [00:13:49,420 - 00:13:52,420] with what's called dark matter.
+- [00:13:52,420 - 00:13:54,420] Dark matter is an entirely different thing,
+- [00:13:54,420 - 00:13:56,420] a totally different thing,
+- [00:13:56,420 - 00:13:58,420] and it really is made up out of particles,
+- [00:13:58,420 - 00:14:01,420] or at least it's believed to really be made up out of particles.
+- [00:14:01,420 - 00:14:04,420] But this is not where I was going tonight.
+- [00:14:04,420 - 00:14:08,420] I just wanted to,
+- [00:14:08,420 - 00:14:12,420] for those who were involved in these exchanges of email,
+- [00:14:12,420 - 00:14:15,420] I thought I would give you my view of it.
+- [00:14:15,420 - 00:14:20,420] Let's come back to the Newtonian laws of gravity.
+- [00:14:20,420 - 00:14:23,420] We need to spend a little more time with Newton
+- [00:14:23,420 - 00:14:26,420] before we can move on to Einstein.
+- [00:14:26,420 - 00:14:28,420] And when I say Newton, of course,
+- [00:14:28,420 - 00:14:30,420] many of the things I'm going to say,
+- [00:14:30,420 - 00:14:33,420] Newton might not have really recognized,
+- [00:14:33,420 - 00:14:35,420] but they are forms of,
+- [00:14:35,420 - 00:14:38,420] or expressions of Newtonian physics.
+- [00:14:38,420 - 00:14:40,420] First, a little bit of mathematics,
+- [00:14:40,420 - 00:14:42,420] and it's not really mathematics,
+- [00:14:42,420 - 00:14:46,420] it's just formalism,
+- [00:14:46,420 - 00:14:50,420] ways of expressing equations, symbols.
+- [00:14:50,420 - 00:14:52,420] All right, first of all, I told you last time,
+- [00:14:52,420 - 00:14:55,420] we used the symbol del,
+- [00:14:55,420 - 00:14:57,420] last time it's called del,
+- [00:14:57,420 - 00:14:59,420] upside down, delta,
+- [00:14:59,420 - 00:15:02,420] and it's thought of as a kind of vector,
+- [00:15:02,420 - 00:15:04,420] but it's not really a vector
+- [00:15:04,420 - 00:15:09,420] with definite magnitude and definite directions.
+- [00:15:09,420 - 00:15:12,420] It stands, just like every vector,
+- [00:15:12,420 - 00:15:15,420] if I wrote any vector over here, v,
+- [00:15:15,420 - 00:15:17,420] we could say that's the same thing as
+- [00:15:17,420 - 00:15:20,420] giving its components,
+- [00:15:20,420 - 00:15:24,420] the x component, the y component, and the z component.
+- [00:15:26,420 - 00:15:28,420] So one way of viewing a vector is just that
+- [00:15:28,420 - 00:15:31,420] it stands for three numbers,
+- [00:15:31,420 - 00:15:33,420] the x, y, and z components of,
+- [00:15:33,420 - 00:15:36,420] v could be a velocity, for example.
+- [00:15:36,420 - 00:15:37,420] Okay.
+- [00:15:37,420 - 00:15:40,420] The symbol del, with an arrow above it,
+- [00:15:40,420 - 00:15:45,420] stands also for three objects,
+- [00:15:45,420 - 00:15:48,420] but those three objects are really derivatives,
+- [00:15:48,420 - 00:15:50,420] derivative with respect to x,
+- [00:15:50,420 - 00:15:53,420] derivative with respect to y,
+- [00:15:53,420 - 00:15:56,420] and derivative with respect to z.
+- [00:15:58,420 - 00:16:00,420] So whenever you see a del,
+- [00:16:00,420 - 00:16:03,420] it always means you're differentiating something.
+- [00:16:03,420 - 00:16:05,420] You're always doing a derivative of some kind,
+- [00:16:05,420 - 00:16:08,420] a partial derivative, or a set of partial derivatives,
+- [00:16:08,420 - 00:16:12,420] of something.
+- [00:16:12,420 - 00:16:14,420] Now, for example, how do you use it?
+- [00:16:14,420 - 00:16:17,420] It's really called a differential operator.
+- [00:16:17,420 - 00:16:19,420] It's not a set of numbers,
+- [00:16:19,420 - 00:16:21,420] it's a set of operations.
+- [00:16:21,420 - 00:16:24,420] But it also has three components.
+- [00:16:24,420 - 00:16:27,420] So let's say, let me, the first example,
+- [00:16:27,420 - 00:16:32,420] the operation del,
+- [00:16:32,420 - 00:16:35,420] if it acts on a scalar,
+- [00:16:35,420 - 00:16:38,420] now a scalar just means a function of position,
+- [00:16:38,420 - 00:16:41,420] function of x, y, and z,
+- [00:16:41,420 - 00:16:43,420] I'll stop writing x, y, and z soon enough
+- [00:16:43,420 - 00:16:45,420] and just call it x,
+- [00:16:45,420 - 00:16:48,420] but take a function of x, y, and z,
+- [00:16:48,420 - 00:16:52,420] and apply to it the operation del.
+- [00:16:52,420 - 00:16:53,420] What does it make?
+- [00:16:53,420 - 00:16:55,420] It makes a vector.
+- [00:16:55,420 - 00:16:57,420] Phi is not a vector,
+- [00:16:57,420 - 00:17:00,420] but del times phi is a vector,
+- [00:17:00,420 - 00:17:02,420] and what are the components of the vector?
+- [00:17:02,420 - 00:17:05,420] The components of the vector are just
+- [00:17:05,420 - 00:17:09,420] derivative of phi with respect to x,
+- [00:17:09,420 - 00:17:12,420] derivative of phi with respect to y,
+- [00:17:12,420 - 00:17:17,420] and derivative of phi with respect to z.
+- [00:17:17,420 - 00:17:20,420] So it creates a vector from a scalar.
+- [00:17:20,420 - 00:17:24,420] That's one example of the use of del.
+- [00:17:24,420 - 00:17:26,420] Another example,
+- [00:17:26,420 - 00:17:29,420] supposing it acts on a vector field.
+- [00:17:29,420 - 00:17:32,420] It can also act on a vector field.
+- [00:17:32,420 - 00:17:33,420] What does it mean?
+- [00:17:33,420 - 00:17:38,420] Let's take del.a.
+- [00:17:38,420 - 00:17:45,420] Let a be, let's use v.
+- [00:17:45,420 - 00:17:48,420] del.v, that's called the divergence of v.
+- [00:17:48,420 - 00:17:50,420] We talked about it last time,
+- [00:17:50,420 - 00:17:53,420] but just to give you a little more feel
+- [00:17:53,420 - 00:17:55,420] for how the symbols are used,
+- [00:17:56,420 - 00:17:59,420] dot stands for dot product.
+- [00:17:59,420 - 00:18:01,420] If I have two vectors,
+- [00:18:01,420 - 00:18:02,420] let's call one w.
+- [00:18:02,420 - 00:18:04,420] For a moment, let's call one of them w,
+- [00:18:04,420 - 00:18:06,420] and let's call the other one v.
+- [00:18:06,420 - 00:18:11,420] And I take the dot product of the two vectors.
+- [00:18:11,420 - 00:18:15,420] What it stands for,
+- [00:18:15,420 - 00:18:18,420] stands for the x component of w
+- [00:18:18,420 - 00:18:21,420] times the x component of v,
+- [00:18:21,420 - 00:18:23,420] plus the y component of w
+- [00:18:23,420 - 00:18:25,420] times the y component of v.
+- [00:18:25,420 - 00:18:30,420] Plus the third term,
+- [00:18:30,420 - 00:18:32,420] which is similar.
+- [00:18:32,420 - 00:18:34,420] That's the meaning of w.v,
+- [00:18:34,420 - 00:18:36,420] the standard old-fashioned dot product
+- [00:18:36,420 - 00:18:39,420] between vectors, which most of you have seen.
+- [00:18:39,420 - 00:18:44,420] All right, by the same rule,
+- [00:18:44,420 - 00:18:48,420] we simply pretend that the symbol del
+- [00:18:48,420 - 00:18:50,420] stands for a vector.
+- [00:18:50,420 - 00:18:52,420] It's like w,
+- [00:18:52,420 - 00:18:54,420] but it's not a real vector,
+- [00:18:54,420 - 00:18:56,420] it's just a set of operations.
+- [00:18:56,420 - 00:19:00,420] And what this gives is
+- [00:19:00,420 - 00:19:04,420] the derivative of vx with respect to x
+- [00:19:04,420 - 00:19:09,420] plus the derivative of vy with respect to y
+- [00:19:09,420 - 00:19:13,420] plus the derivative of vz with respect to z.
+- [00:19:13,420 - 00:19:16,420] In other words, it has the same form
+- [00:19:16,420 - 00:19:18,420] except replace w
+- [00:19:18,420 - 00:19:22,420] by this set of derivative operators.
+- [00:19:22,420 - 00:19:24,420] All right, so it's a neat notation.
+- [00:19:24,420 - 00:19:26,420] It's a notational device
+- [00:19:26,420 - 00:19:29,420] for doing certain kinds of derivatives,
+- [00:19:29,420 - 00:19:31,420] partial derivatives,
+- [00:19:31,420 - 00:19:33,420] on various kinds of things.
+- [00:19:33,420 - 00:19:37,420] Now, if phi is a scalar,
+- [00:19:37,420 - 00:19:40,420] then del dot phi is a vector.
+- [00:19:40,420 - 00:19:43,420] What if v is a vector?
+- [00:19:43,420 - 00:19:46,420] What is del dot v?
+- [00:19:46,420 - 00:19:48,420] It's a scalar.
+- [00:19:48,420 - 00:19:50,420] In the same way that the dot product
+- [00:19:50,420 - 00:19:52,420] between two vectors is a scalar,
+- [00:19:52,420 - 00:19:56,420] the divergence of a vector is a vector.
+- [00:19:56,420 - 00:19:58,420] These notations are pervasive
+- [00:19:58,420 - 00:20:00,420] throughout all of physics,
+- [00:20:00,420 - 00:20:04,420] electricity, magnetism, gravity,
+- [00:20:04,420 - 00:20:06,420] and without them,
+- [00:20:06,420 - 00:20:12,420] we would not be able to function very well.
+- [00:20:12,420 - 00:20:16,420] Okay, that's just a preliminary warm-up
+- [00:20:16,420 - 00:20:17,420] and definition.
+- [00:20:17,420 - 00:20:19,420] It's really just definition.
+- [00:20:19,420 - 00:20:21,420] There's not any deep mathematics.
+- [00:20:21,420 - 00:20:23,420] The deep mathematics is, of course,
+- [00:20:23,420 - 00:20:24,420] in the notion of a derivative
+- [00:20:24,420 - 00:20:25,420] or a partial derivative,
+- [00:20:25,420 - 00:20:28,420] derivative along a direction.
+- [00:20:28,420 - 00:20:35,420] Now, I mentioned, of course,
+- [00:20:35,420 - 00:20:39,420] that phi here is a function of position.
+- [00:20:39,420 - 00:20:40,420] A function of position like that
+- [00:20:40,420 - 00:20:42,420] is called a scalar field.
+- [00:20:42,420 - 00:20:43,420] It's a scalar,
+- [00:20:43,420 - 00:20:45,420] and it depends on position.
+- [00:20:45,420 - 00:20:47,420] Depending on position like that
+- [00:20:47,420 - 00:20:49,420] makes it a field.
+- [00:20:49,420 - 00:20:50,420] v, the components of v,
+- [00:20:50,420 - 00:20:56,420] may also be functions of position.
+- [00:20:56,420 - 00:20:57,420] And in that case,
+- [00:20:57,420 - 00:21:00,420] v is called a vector field.
+- [00:21:00,420 - 00:21:02,420] All right, so anything which depends on position
+- [00:21:02,420 - 00:21:03,420] is called a field,
+- [00:21:03,420 - 00:21:07,420] and that's our basic notation.
+- [00:21:07,420 - 00:21:09,420] All right, let's come to the field,
+- [00:21:09,420 - 00:21:11,420] to the gravitational field.
+- [00:21:11,420 - 00:21:13,420] The gravitational field is a property
+- [00:21:13,420 - 00:21:14,420] at every point of space,
+- [00:21:14,420 - 00:21:16,420] and let me define it for you.
+- [00:21:16,420 - 00:21:19,420] It, first of all,
+- [00:21:19,420 - 00:21:21,420] let's imagine that it's created
+- [00:21:21,420 - 00:21:23,420] by some masses.
+- [00:21:23,420 - 00:21:25,420] So let's imagine some masses,
+- [00:21:25,420 - 00:21:29,420] some mass points,
+- [00:21:29,420 - 00:21:32,420] and I'll label them as usual,
+- [00:21:32,420 - 00:21:34,420] i, j, k,
+- [00:21:34,420 - 00:21:37,420] where i, j, and k run from one to whatever.
+- [00:21:37,420 - 00:21:38,420] And let's call this over here
+- [00:21:38,420 - 00:21:40,420] the i-th mass.
+- [00:21:40,420 - 00:21:42,420] Now, what we do to define
+- [00:21:42,420 - 00:21:43,420] the gravitational field
+- [00:21:43,420 - 00:21:45,420] is we invent another mass.
+- [00:21:45,420 - 00:21:47,420] We imagine one more mass,
+- [00:21:47,420 - 00:21:49,420] which we'll call the test mass,
+- [00:21:49,420 - 00:21:51,420] and we'll call it the force field.
+- [00:21:51,420 - 00:21:53,420] The test mass is a little tiny mass
+- [00:21:53,420 - 00:21:55,420] that we move around in space,
+- [00:21:55,420 - 00:21:57,420] and we examine the forces on it,
+- [00:21:57,420 - 00:21:59,420] and in terms of the forces on it,
+- [00:21:59,420 - 00:22:01,420] in different places in space,
+- [00:22:01,420 - 00:22:02,420] we define a field.
+- [00:22:02,420 - 00:22:04,420] And that field is a force field,
+- [00:22:04,420 - 00:22:06,420] or strictly speaking,
+- [00:22:06,420 - 00:22:08,420] a field of acceleration.
+- [00:22:08,420 - 00:22:09,420] So here's what we do.
+- [00:22:09,420 - 00:22:11,420] We take our little test mass,
+- [00:22:11,420 - 00:22:13,420] and we hold it, and we let it go,
+- [00:22:13,420 - 00:22:15,420] and we see how much acceleration
+- [00:22:15,420 - 00:22:16,420] it accelerates with,
+- [00:22:16,420 - 00:22:17,420] and in what direction.
+- [00:22:17,420 - 00:22:18,420] Acceleration is a vector.
+- [00:22:18,420 - 00:22:19,420] It has a direction,
+- [00:22:19,420 - 00:22:21,420] it has a magnitude,
+- [00:22:21,420 - 00:22:24,420] and that acceleration,
+- [00:22:24,420 - 00:22:27,420] the acceleration experienced,
+- [00:22:27,420 - 00:22:28,420] let's draw a little test mass.
+- [00:22:28,420 - 00:22:29,420] The test mass,
+- [00:22:29,420 - 00:22:32,420] I'll just draw with a little cross in it there.
+- [00:22:32,420 - 00:22:35,420] It may or may not be real.
+- [00:22:35,420 - 00:22:37,420] It may just be in our imagination,
+- [00:22:37,420 - 00:22:39,420] or it may be a very small little mass
+- [00:22:39,420 - 00:22:40,420] that we move around
+- [00:22:40,420 - 00:22:42,420] and explore the vicinity
+- [00:22:42,420 - 00:22:44,420] of the real masses.
+- [00:22:44,420 - 00:22:47,420] And that acceleration is a vector.
+- [00:22:47,420 - 00:22:49,420] It depends on position,
+- [00:22:49,420 - 00:22:51,420] and I'm not going to write x, y, and z now.
+- [00:22:51,420 - 00:22:52,420] I'll just write x,
+- [00:22:52,420 - 00:22:56,420] x now standing for x, y, and z.
+- [00:22:56,420 - 00:22:58,420] That acceleration,
+- [00:22:58,420 - 00:23:01,420] and let me write it down for you.
+- [00:23:01,420 - 00:23:04,420] Let's call the vector
+- [00:23:04,420 - 00:23:07,420] from the ith mass to the test mass,
+- [00:23:07,420 - 00:23:09,420] the vector pointing from the ith mass
+- [00:23:09,420 - 00:23:11,420] to the test mass,
+- [00:23:11,420 - 00:23:14,420] let's call that r sub i.
+- [00:23:14,420 - 00:23:17,420] Last time, I had defined the vector,
+- [00:23:17,420 - 00:23:22,420] as the vector from the test mass to i.
+- [00:23:22,420 - 00:23:24,420] Now I'm defining it to go from i
+- [00:23:24,420 - 00:23:26,420] to the test mass.
+- [00:23:26,420 - 00:23:27,420] Those two vectors are equal
+- [00:23:27,420 - 00:23:29,420] and opposite to each other,
+- [00:23:29,420 - 00:23:33,420] but by defining the vector r sub i
+- [00:23:33,420 - 00:23:36,420] as the vector from i to the test mass,
+- [00:23:36,420 - 00:23:39,420] I will save myself a minus sign.
+- [00:23:39,420 - 00:23:41,420] Which direction,
+- [00:23:41,420 - 00:23:44,420] ah, sorry.
+- [00:23:47,420 - 00:23:52,420] I think I want it to go the other way.
+- [00:23:52,420 - 00:23:54,420] If I want to save myself the minus sign,
+- [00:23:54,420 - 00:23:56,420] I want to make it go the other way.
+- [00:23:56,420 - 00:23:58,420] Yeah.
+- [00:23:58,420 - 00:23:59,420] r i goes that way,
+- [00:23:59,420 - 00:24:01,420] from the test mass
+- [00:24:01,420 - 00:24:04,420] to the particle which is creating
+- [00:24:04,420 - 00:24:06,420] the gravitational field.
+- [00:24:06,420 - 00:24:08,420] Now which way is the force on this object
+- [00:24:08,420 - 00:24:12,420] due to the ith mass?
+- [00:24:12,420 - 00:24:15,420] It's pointing toward the ith mass, right?
+- [00:24:15,420 - 00:24:16,420] The gravitational force
+- [00:24:16,420 - 00:24:19,420] on the test mass is pulling toward the ith mass,
+- [00:24:19,420 - 00:24:22,420] and so it's along the vector r sub i,
+- [00:24:22,420 - 00:24:24,420] not opposite to it,
+- [00:24:24,420 - 00:24:25,420] and that will save me
+- [00:24:25,420 - 00:24:28,420] having to write a negative sign.
+- [00:24:28,420 - 00:24:30,420] All right, so now,
+- [00:24:30,420 - 00:24:34,420] what do we know about this field of acceleration?
+- [00:24:34,420 - 00:24:36,420] Well, it gets a contribution
+- [00:24:36,420 - 00:24:37,420] from every test,
+- [00:24:37,420 - 00:24:40,420] from every real mass here.
+- [00:24:40,420 - 00:24:42,420] And the contribution in particular
+- [00:24:42,420 - 00:24:43,420] from the ith mass,
+- [00:24:43,420 - 00:24:45,420] it's a sum.
+- [00:24:45,420 - 00:24:50,420] a is a sum over all the masses,
+- [00:24:50,420 - 00:24:54,420] a sum over all the real masses.
+- [00:24:54,420 - 00:24:57,420] It depends on the gravitational coupling constant,
+- [00:24:57,420 - 00:24:59,420] on Newton's constant.
+- [00:24:59,420 - 00:25:01,420] It depends on the distance
+- [00:25:01,420 - 00:25:03,420] from the test mass to r,
+- [00:25:03,420 - 00:25:06,420] that's r sub i
+- [00:25:06,420 - 00:25:12,420] from r sub i squared.
+- [00:25:12,420 - 00:25:14,420] And what else?
+- [00:25:14,420 - 00:25:17,420] And it depends on the mass
+- [00:25:17,420 - 00:25:20,420] of the ith particle.
+- [00:25:20,420 - 00:25:23,420] Each particle has a mass.
+- [00:25:23,420 - 00:25:25,420] The acceleration on this particle
+- [00:25:25,420 - 00:25:26,420] due to the ith particle
+- [00:25:26,420 - 00:25:28,420] is proportional to the mass.
+- [00:25:28,420 - 00:25:30,420] It's proportional to g,
+- [00:25:30,420 - 00:25:32,420] and it's divided by r sub i squared.
+- [00:25:32,420 - 00:25:34,420] But everything that's written here,
+- [00:25:34,420 - 00:25:37,420] none of the things that are written here are vectors.
+- [00:25:37,420 - 00:25:39,420] g is a number, m is a number,
+- [00:25:39,420 - 00:25:42,420] and r, r is the length of a vector.
+- [00:25:42,420 - 00:25:44,420] It's square is just a number.
+- [00:25:44,420 - 00:25:46,420] There's no vectors on the right-hand side,
+- [00:25:46,420 - 00:25:49,420] so there's got to be something wrong with this equation.
+- [00:25:49,420 - 00:25:52,420] What's wrong is I have to remind myself
+- [00:25:52,420 - 00:25:55,420] what direction the acceleration is.
+- [00:25:55,420 - 00:25:59,420] And it's along the direction r sub i.
+- [00:25:59,420 - 00:26:02,420] So, the way to deal with that
+- [00:26:02,420 - 00:26:07,420] is to put another r vector here,
+- [00:26:07,420 - 00:26:10,420] but then we have too many r's in the numerator,
+- [00:26:10,420 - 00:26:13,420] we have to put another one in the denominator.
+- [00:26:14,420 - 00:26:17,420] We have to make this cubed.
+- [00:26:17,420 - 00:26:20,420] Because the length of this is r.
+- [00:26:20,420 - 00:26:22,420] Another way to think about it
+- [00:26:22,420 - 00:26:27,420] is to leave it as r squared
+- [00:26:27,420 - 00:26:30,420] and think of this as a unit vector.
+- [00:26:30,420 - 00:26:32,420] The symbol for a unit vector,
+- [00:26:32,420 - 00:26:34,420] a vector of unit length,
+- [00:26:34,420 - 00:26:37,420] is a vector with a little hat on top of it.
+- [00:26:37,420 - 00:26:40,420] A little hat on top of it means unit vector.
+- [00:26:40,420 - 00:26:42,420] A vector of unit length.
+- [00:26:42,420 - 00:26:44,420] All right, so this vector here,
+- [00:26:44,420 - 00:26:45,420] is a vector.
+- [00:26:45,420 - 00:26:47,420] It tells you the direction of things.
+- [00:26:47,420 - 00:26:50,420] It tells you the direction of the acceleration.
+- [00:26:50,420 - 00:26:53,420] But the magnitude of it all comes from here.
+- [00:26:53,420 - 00:26:55,420] And we add them all up.
+- [00:26:55,420 - 00:26:57,420] The acceleration on the test mass
+- [00:26:57,420 - 00:26:59,420] is the sum of vectors,
+- [00:26:59,420 - 00:27:02,420] all different contributions.
+- [00:27:02,420 - 00:27:05,420] This depends on position.
+- [00:27:05,420 - 00:27:08,420] For example, the further away we take it
+- [00:27:08,420 - 00:27:10,420] from the distribution of mass over here,
+- [00:27:10,420 - 00:27:12,420] the smaller it is.
+- [00:27:12,420 - 00:27:14,420] If we bring our test mass
+- [00:27:14,420 - 00:27:16,420] right up to one of the particles here,
+- [00:27:16,420 - 00:27:19,420] there's a great big force on it.
+- [00:27:19,420 - 00:27:21,420] If we bring it on the other side,
+- [00:27:21,420 - 00:27:23,420] the direction switches.
+- [00:27:23,420 - 00:27:25,420] So this a here is a field.
+- [00:27:25,420 - 00:27:28,420] It depends on position.
+- [00:27:28,420 - 00:27:32,420] And it's called the gravitational field.
+- [00:27:36,420 - 00:27:39,420] All right, there's a way to summarize this,
+- [00:27:39,420 - 00:27:40,420] which is neat.
+- [00:27:40,420 - 00:27:41,420] We talked about it last time.
+- [00:27:41,420 - 00:27:42,420] I'm not telling you anything
+- [00:27:42,420 - 00:27:43,420] I didn't tell you about last time.
+- [00:27:43,420 - 00:27:49,420] But the way to summarize it
+- [00:27:49,420 - 00:27:56,420] is in terms of the divergence of A.
+- [00:27:56,420 - 00:28:03,420] Let's look at the del dot A.
+- [00:28:03,420 - 00:28:05,420] That's the divergence of A.
+- [00:28:05,420 - 00:28:06,420] And let's look at,
+- [00:28:06,420 - 00:28:08,420] let's just take the simple case.
+- [00:28:08,420 - 00:28:10,420] The simple case, let's suppose
+- [00:28:10,420 - 00:28:12,420] there's only one mass point.
+- [00:28:13,420 - 00:28:15,420] If there's one mass point here,
+- [00:28:15,420 - 00:28:19,420] then let's look at the gravitational field
+- [00:28:19,420 - 00:28:21,420] in the neighborhood of that mass point.
+- [00:28:21,420 - 00:28:23,420] Well, it's pointing inward.
+- [00:28:23,420 - 00:28:25,420] If I take my mass,
+- [00:28:25,420 - 00:28:27,420] if I take my test mass
+- [00:28:27,420 - 00:28:29,420] and move it around in the vicinity
+- [00:28:29,420 - 00:28:31,420] of the heavy mass here,
+- [00:28:31,420 - 00:28:33,420] I'll discover a gravitational field
+- [00:28:33,420 - 00:28:35,420] which varies from point to point,
+- [00:28:35,420 - 00:28:38,420] always pointing toward that mass.
+- [00:28:38,420 - 00:28:40,420] So the gravitational field,
+- [00:28:40,420 - 00:28:42,420] the vector field points inward toward that point.
+- [00:28:43,420 - 00:28:46,420] The pointing, the inward pointingness of it
+- [00:28:46,420 - 00:28:49,420] is called the divergence of the field.
+- [00:28:49,420 - 00:28:54,420] The divergence of the acceleration field here
+- [00:28:54,420 - 00:28:57,420] is due to masses
+- [00:28:57,420 - 00:29:00,420] and it's proportional to the mass.
+- [00:29:00,420 - 00:29:02,420] At every point there's a divergence
+- [00:29:02,420 - 00:29:05,420] which is proportional to the amount of mass
+- [00:29:05,420 - 00:29:07,420] at that point.
+- [00:29:07,420 - 00:29:09,420] To express it mathematically,
+- [00:29:09,420 - 00:29:12,420] we have to invent a concept called mass density.
+- [00:29:12,420 - 00:29:14,420] Now we all know what we mean by mass density.
+- [00:29:14,420 - 00:29:16,420] It's not a new concept for most of you.
+- [00:29:16,420 - 00:29:18,420] Mass density simply means
+- [00:29:18,420 - 00:29:21,420] take a volume of space,
+- [00:29:21,420 - 00:29:22,420] ask how much mass.
+- [00:29:22,420 - 00:29:24,420] We're now imagining that
+- [00:29:24,420 - 00:29:28,420] either that the mass is continuously distributed,
+- [00:29:28,420 - 00:29:31,420] not in the form of point particles,
+- [00:29:31,420 - 00:29:33,420] or that there are so many point particles,
+- [00:29:33,420 - 00:29:35,420] tiny, tiny point particles,
+- [00:29:35,420 - 00:29:37,420] that we might as well effectively think of it
+- [00:29:37,420 - 00:29:39,420] as being distributed.
+- [00:29:39,420 - 00:29:42,420] Then the amount of mass in a unit volume,
+- [00:29:42,420 - 00:29:45,420] or the amount of mass per unit volume,
+- [00:29:45,420 - 00:29:48,420] is called rho.
+- [00:29:48,420 - 00:29:54,420] Equals mass per volume.
+- [00:29:54,420 - 00:29:57,420] We take a small volume,
+- [00:29:57,420 - 00:29:59,420] count up all the mass in it,
+- [00:29:59,420 - 00:30:05,420] delta m over delta v is called the mass density,
+- [00:30:05,420 - 00:30:07,420] the mass per unit volume.
+- [00:30:07,420 - 00:30:10,420] And of course it varies in general from place to place.
+- [00:30:10,420 - 00:30:12,420] Here there's no mass,
+- [00:30:12,420 - 00:30:14,420] here there's mass per unit volume.
+- [00:30:14,420 - 00:30:16,420] Here there's mass per unit volume.
+- [00:30:16,420 - 00:30:20,420] So the mass per unit volume is itself a field.
+- [00:30:20,420 - 00:30:23,420] It's the density field.
+- [00:30:23,420 - 00:30:25,420] On the left hand side here,
+- [00:30:25,420 - 00:30:29,420] we have the divergence of A.
+- [00:30:29,420 - 00:30:31,420] The divergence of A,
+- [00:30:31,420 - 00:30:33,420] A is a vector field,
+- [00:30:33,420 - 00:30:35,420] but its divergence is a scalar.
+- [00:30:35,420 - 00:30:40,420] The relationship between masses and gravitational field,
+- [00:30:40,420 - 00:30:44,420] which is basically the relationship that Newton wrote down,
+- [00:30:44,420 - 00:30:45,420] here it is,
+- [00:30:45,420 - 00:30:48,420] can be re-expressed in the form
+- [00:30:48,420 - 00:30:53,420] that delta A is equal to minus
+- [00:30:53,420 - 00:30:55,420] 4 pi, I'll tell you in a moment,
+- [00:30:55,420 - 00:30:58,420] I'll remind you where the 4 pi comes from,
+- [00:30:58,420 - 00:30:59,420] why it's there,
+- [00:30:59,420 - 00:31:01,420] times the mass density,
+- [00:31:01,420 - 00:31:05,420] oops, times Newton's constant.
+- [00:31:05,420 - 00:31:09,420] The strength of gravity is always proportional to Newton's constant,
+- [00:31:09,420 - 00:31:11,420] so the effect of a mass
+- [00:31:11,420 - 00:31:14,420] is always proportional to Newton's constant.
+- [00:31:14,420 - 00:31:16,420] It's proportional to the amount of mass,
+- [00:31:16,420 - 00:31:18,420] that's the row,
+- [00:31:18,420 - 00:31:23,420] and this is the basic equation
+- [00:31:23,420 - 00:31:26,420] that you can think of as a field equation.
+- [00:31:26,420 - 00:31:28,420] It relates two fields,
+- [00:31:28,420 - 00:31:30,420] the field of acceleration
+- [00:31:30,420 - 00:31:32,420] to the field of mass density,
+- [00:31:32,420 - 00:31:36,420] and the constant G is just a constant in the relationship.
+- [00:31:36,420 - 00:31:38,420] This is called Gauss's law.
+- [00:31:38,420 - 00:31:41,420] Why is there a minus sign here, incidentally?
+- [00:31:41,420 - 00:31:45,420] Well, the minus sign simply takes into account
+- [00:31:45,420 - 00:31:47,420] that if you have a mass point there,
+- [00:31:47,420 - 00:31:50,420] the acceleration field is pointing inward,
+- [00:31:50,420 - 00:31:52,420] so you don't really have a divergence,
+- [00:31:52,420 - 00:31:56,420] you have a convergence of the gravitational field,
+- [00:31:56,420 - 00:32:00,420] but a convergence is just a negative divergence.
+- [00:32:00,420 - 00:32:02,420] So that's why the negative sign is there.
+- [00:32:02,420 - 00:32:05,420] This is called Gauss's law.
+- [00:32:08,420 - 00:32:19,420] But there's another thing which is named after Gauss,
+- [00:32:19,420 - 00:32:21,420] and it's Gauss's theorem.
+- [00:32:21,420 - 00:32:23,420] This is a law of nature.
+- [00:32:23,420 - 00:32:26,420] This is equivalent to Newton's relationship
+- [00:32:26,420 - 00:32:29,420] between the acceleration field and the mass densities.
+- [00:32:29,420 - 00:32:31,420] It's something that you get from experiment,
+- [00:32:31,420 - 00:32:34,420] or if not, well, from experiment or observation.
+- [00:32:34,420 - 00:32:36,420] But there's a mathematical theorem,
+- [00:32:36,420 - 00:32:38,420] which is Gauss's theorem,
+- [00:32:38,420 - 00:32:41,420] which also has to do with divergences of vectors.
+- [00:32:41,420 - 00:32:45,420] So let me remind you about Gauss's theorem.
+- [00:32:45,420 - 00:32:49,420] It is so central to everything in,
+- [00:32:49,420 - 00:32:51,420] certainly in gravity theory,
+- [00:32:51,420 - 00:32:54,420] that I feel justified in spending another 15 minutes on it,
+- [00:32:54,420 - 00:32:56,420] or 10 minutes on it.
+- [00:32:56,420 - 00:32:59,420] Gauss's theorem says
+- [00:32:59,420 - 00:33:03,420] that if you have a field
+- [00:33:03,420 - 00:33:06,420] which has a divergence,
+- [00:33:06,420 - 00:33:09,420] that divergence is a scalar,
+- [00:33:09,420 - 00:33:11,420] and you take some region of space,
+- [00:33:11,420 - 00:33:15,420] any region of space that has a boundary,
+- [00:33:15,420 - 00:33:17,420] it could be a sphere,
+- [00:33:17,420 - 00:33:19,420] it doesn't have to be a sphere,
+- [00:33:19,420 - 00:33:22,420] it could be a sphere with two ears sticking out of it,
+- [00:33:22,420 - 00:33:25,420] it should have the topology of a sphere.
+- [00:33:25,420 - 00:33:27,420] In other words, it shouldn't be a doughnut,
+- [00:33:27,420 - 00:33:31,420] but it should not have holes in it or anything like that.
+- [00:33:31,420 - 00:33:32,420] Even then it's okay,
+- [00:33:32,420 - 00:33:35,420] but let's just take it to be a chunk of space like that,
+- [00:33:36,420 - 00:33:38,420] and then we'll get to it.
+- [00:33:38,420 - 00:33:42,420] Then what Gauss's law says is that if you integrate
+- [00:33:42,420 - 00:33:45,420] the divergence over the volume,
+- [00:33:45,420 - 00:33:48,420] the x, d, y, d, z,
+- [00:33:48,420 - 00:33:49,420] inside the region,
+- [00:33:49,420 - 00:33:50,420] and how do you do that?
+- [00:33:50,420 - 00:33:51,420] What does that mean?
+- [00:33:51,420 - 00:33:54,420] That means you break up the region into little cubes,
+- [00:33:54,420 - 00:33:56,420] three-dimensional cubes.
+- [00:33:56,420 - 00:33:59,420] You break it up into tiny three-dimensional cubes.
+- [00:33:59,420 - 00:34:03,420] In each cube, you take the divergence of A,
+- [00:34:03,420 - 00:34:06,420] you multiply it by the volume of the little cube,
+- [00:34:06,420 - 00:34:08,420] and you add them all up.
+- [00:34:08,420 - 00:34:10,420] That's integrating the divergence of A
+- [00:34:10,420 - 00:34:13,420] over the interior region here.
+- [00:34:13,420 - 00:34:17,420] What it says, or what Gauss's theorem says,
+- [00:34:17,420 - 00:34:21,420] is that that integral is equal to a surface integral,
+- [00:34:21,420 - 00:34:23,420] a sum over the surface.
+- [00:34:23,420 - 00:34:24,420] So let's draw the surface here,
+- [00:34:24,420 - 00:34:26,420] let's draw a piece of the surface,
+- [00:34:26,420 - 00:34:29,420] and also now break up the surface,
+- [00:34:29,420 - 00:34:31,420] the bounding surface,
+- [00:34:31,420 - 00:34:35,420] also into little squares, little cells.
+- [00:34:35,420 - 00:34:38,420] And in each cell,
+- [00:34:38,420 - 00:34:42,420] the field A has a component perpendicular to the cell.
+- [00:34:42,420 - 00:34:45,420] It may also have components in the directions
+- [00:34:45,420 - 00:34:47,420] parallel to the surface,
+- [00:34:47,420 - 00:34:52,420] but A has a direction perpendicular to the surface.
+- [00:34:52,420 - 00:34:55,420] Let's call that A perpendicular,
+- [00:34:55,420 - 00:35:00,420] or A sticking, the component of A sticking out of the surface.
+- [00:35:00,420 - 00:35:03,420] It says that, Gauss's theorem says,
+- [00:35:03,420 - 00:35:06,420] that the integral of the divergence of A
+- [00:35:06,420 - 00:35:10,420] over the interior is equal
+- [00:35:10,420 - 00:35:15,420] to the integral over the boundary,
+- [00:35:15,420 - 00:35:17,420] that's usually called d sigma,
+- [00:35:17,420 - 00:35:19,420] sigma stands for little surface area,
+- [00:35:19,420 - 00:35:21,420] stands for little surface here,
+- [00:35:21,420 - 00:35:25,420] the integral d sigma of the component of A
+- [00:35:25,420 - 00:35:27,420] sticking out of the surface.
+- [00:35:27,420 - 00:35:29,420] In other words, it's just adding up all the components
+- [00:35:29,420 - 00:35:32,420] of A sticking out of the surface.
+- [00:35:32,420 - 00:35:37,420] I told you what the significance of this would be
+- [00:35:37,420 - 00:35:39,420] for the flow of water
+- [00:35:39,420 - 00:35:42,420] if the divergence of A stood for the divergence
+- [00:35:42,420 - 00:35:45,420] of the velocity field of water,
+- [00:35:45,420 - 00:35:47,420] then it would just be the amount of water
+- [00:35:47,420 - 00:35:50,420] being pumped into a region here
+- [00:35:50,420 - 00:35:53,420] is equal to the amount going out through the boundary.
+- [00:35:53,420 - 00:35:55,420] But this is Gauss's theorem.
+- [00:35:55,420 - 00:35:57,420] Let's just isolate Gauss's theorem now.
+- [00:35:57,420 - 00:36:00,420] The integral over a volume
+- [00:36:00,420 - 00:36:02,420] of the divergence of A
+- [00:36:02,420 - 00:36:05,420] is equal to the integral over the surface
+- [00:36:05,420 - 00:36:08,420] of the component of A perpendicular.
+- [00:36:08,420 - 00:36:10,420] Now, that's Gauss's theorem.
+- [00:36:17,420 - 00:36:19,420] Now let's put them together.
+- [00:36:19,420 - 00:36:22,420] Let's put them together to see how they work together.
+- [00:36:22,420 - 00:36:27,420] Let's imagine first that we have a distribution of mass
+- [00:36:27,420 - 00:36:29,420] which is spherically symmetric,
+- [00:36:29,420 - 00:36:32,420] that means it doesn't have any dependence
+- [00:36:32,420 - 00:36:34,420] on angle in space,
+- [00:36:34,420 - 00:36:36,420] that the distribution of mass
+- [00:36:36,420 - 00:36:38,420] has the symmetry of a sphere,
+- [00:36:38,420 - 00:36:41,420] symmetry of rotational invariance.
+- [00:36:41,420 - 00:36:44,420] There's another word for having symmetry of a sphere.
+- [00:36:44,420 - 00:36:46,420] Anybody know what it is?
+- [00:36:46,420 - 00:36:48,420] It's isotropic.
+- [00:36:48,420 - 00:36:50,420] Isotropic means the same in every direction
+- [00:36:50,420 - 00:36:53,420] about a central point here.
+- [00:36:53,420 - 00:36:58,420] All right, so it could be a ball of material,
+- [00:36:58,420 - 00:37:01,420] but it doesn't have to be a solid ball of material,
+- [00:37:01,420 - 00:37:04,420] but it should be shaped like a sphere.
+- [00:37:04,420 - 00:37:07,420] So we have some mass in here.
+- [00:37:07,420 - 00:37:10,420] And I want to know what its gravitational field is.
+- [00:37:10,420 - 00:37:13,420] What I do is I surround it
+- [00:37:13,420 - 00:37:16,420] nice and spherically, symmetrically, concentrically
+- [00:37:16,420 - 00:37:20,420] with a sphere.
+- [00:37:20,420 - 00:37:23,420] I apologize for the fact that my drawings are two-dimensional.
+- [00:37:23,420 - 00:37:25,420] If I had some way to make them three-dimensional,
+- [00:37:25,420 - 00:37:27,420] I would, but I can't.
+- [00:37:27,420 - 00:37:30,420] So they're two-dimensional versions
+- [00:37:30,420 - 00:37:34,420] of surrounding a spherically symmetric distribution
+- [00:37:34,420 - 00:37:37,420] of material by a shell,
+- [00:37:37,420 - 00:37:39,420] by an imaginary mathematical shell.
+- [00:37:39,420 - 00:37:42,420] Can the red be seen?
+- [00:37:42,420 - 00:37:44,420] All right, so there's a red shell around here.
+- [00:37:44,420 - 00:37:46,420] Now let's see what this says.
+- [00:37:46,420 - 00:37:50,420] First of all, we integrate up del dot A.
+- [00:37:50,420 - 00:37:52,420] But what is del dot A?
+- [00:37:52,420 - 00:37:54,420] From Gauss's law, not from Gauss's theorem,
+- [00:37:54,420 - 00:37:57,420] but from Gauss's law, we know that del dot A
+- [00:37:57,420 - 00:38:01,420] is four pi, minus four pi,
+- [00:38:01,420 - 00:38:04,420] times the mass density
+- [00:38:04,420 - 00:38:07,420] times G. So let's work that out.
+- [00:38:07,420 - 00:38:11,420] So we're going to get minus four pi.
+- [00:38:11,420 - 00:38:15,420] We're going to get G.
+- [00:38:15,420 - 00:38:20,420] And then we're going to get the integral
+- [00:38:20,420 - 00:38:22,420] of the mass density
+- [00:38:22,420 - 00:38:26,420] over the interior of the sphere.
+- [00:38:26,420 - 00:38:29,420] The minus four pi G can come on the outside
+- [00:38:29,420 - 00:38:32,420] of the integral since it's only a constant,
+- [00:38:32,420 - 00:38:35,420] and the integral itself just gives us this integral,
+- [00:38:35,420 - 00:38:37,420] is just what you see here.
+- [00:38:37,420 - 00:38:41,420] Now what's the integral of rho over volume?
+- [00:38:41,420 - 00:38:43,420] That's the mass.
+- [00:38:43,420 - 00:38:47,420] Integrating up the mass density
+- [00:38:47,420 - 00:38:49,420] just gives you the mass enclosed.
+- [00:38:49,420 - 00:38:52,420] So the mass enclosed within the red sphere.
+- [00:38:52,420 - 00:38:54,420] Okay, so let's rewrite that.
+- [00:38:54,420 - 00:38:58,420] That's minus four pi G
+- [00:38:58,420 - 00:39:02,420] times the mass within the sphere.
+- [00:39:02,420 - 00:39:05,420] If the red sphere is bigger than,
+- [00:39:05,420 - 00:39:06,420] let's call this a planet,
+- [00:39:06,420 - 00:39:08,420] let's call it the planet.
+- [00:39:08,420 - 00:39:10,420] If the red sphere is bigger than the planet,
+- [00:39:10,420 - 00:39:13,420] then it's the entire mass of the planet in there.
+- [00:39:13,420 - 00:39:16,420] Minus four pi M G, or minus four pi G.
+- [00:39:16,420 - 00:39:18,420] M is the left-hand side.
+- [00:39:18,420 - 00:39:21,420] What about the right-hand side of the equation?
+- [00:39:21,420 - 00:39:23,420] The right-hand side of the equation,
+- [00:39:24,420 - 00:39:28,420] says take the perpendicular component
+- [00:39:28,420 - 00:39:31,420] of the acceleration of the gravitational field.
+- [00:39:31,420 - 00:39:34,420] Now, if the mass distribution is isotropic,
+- [00:39:34,420 - 00:39:38,420] the gravitational field will also be isotropic.
+- [00:39:38,420 - 00:39:41,420] In other words, the component,
+- [00:39:41,420 - 00:39:43,420] the perpendicular component of the field
+- [00:39:43,420 - 00:39:46,420] will be the same everywheres.
+- [00:39:46,420 - 00:39:51,420] It'll be pointing out with the same component
+- [00:39:51,420 - 00:39:53,420] everywheres on the sphere.
+- [00:39:53,420 - 00:39:56,420] So that means that the perpendicular component of A
+- [00:39:56,420 - 00:39:59,420] doesn't vary from point to point on the sphere,
+- [00:39:59,420 - 00:40:01,420] and that means that this integral here
+- [00:40:01,420 - 00:40:07,420] is just the perpendicular component,
+- [00:40:07,420 - 00:40:09,420] whatever it happens to be,
+- [00:40:09,420 - 00:40:11,420] times the integral of d sigma.
+- [00:40:11,420 - 00:40:14,420] What does the integral of d sigma mean?
+- [00:40:14,420 - 00:40:16,420] It's just the area of the sphere.
+- [00:40:16,420 - 00:40:19,420] It's just adding up all the little area cells of the sphere,
+- [00:40:19,420 - 00:40:21,420] and that's the area of the sphere
+- [00:40:21,420 - 00:40:23,420] which is four pi G.
+- [00:40:23,420 - 00:40:28,420] Four pi r squared.
+- [00:40:28,420 - 00:40:31,420] r here not being the radius of a planet,
+- [00:40:31,420 - 00:40:34,420] but being the distance from the center of the planet
+- [00:40:34,420 - 00:40:38,420] to the red sphere.
+- [00:40:38,420 - 00:40:41,420] Okay, so now you see why the four pi
+- [00:40:41,420 - 00:40:43,420] was in Gauss's law,
+- [00:40:43,420 - 00:40:45,420] why Gauss put it into his law.
+- [00:40:45,420 - 00:40:50,420] It was in order to be able to cancel that out at this point.
+- [00:40:50,420 - 00:40:51,420] It was arbitrary.
+- [00:40:51,420 - 00:40:53,420] You could have defined things differently.
+- [00:40:53,420 - 00:40:59,420] Now, we solve this for the gravitational field,
+- [00:40:59,420 - 00:41:01,420] and what does it tell us?
+- [00:41:01,420 - 00:41:04,420] It tells us that the gravitational field of a mass
+- [00:41:04,420 - 00:41:09,420] is minus mg over r squared.
+- [00:41:09,420 - 00:41:11,420] Something we already knew,
+- [00:41:11,420 - 00:41:13,420] that's Newton's law,
+- [00:41:13,420 - 00:41:17,420] that the acceleration due to a massive object
+- [00:41:17,420 - 00:41:21,420] is the mass of the object
+- [00:41:21,420 - 00:41:23,420] times G divided by r squared,
+- [00:41:23,420 - 00:41:25,420] but it gives us a nice,
+- [00:41:25,420 - 00:41:26,420] we talked about this last time,
+- [00:41:26,420 - 00:41:27,420] I'm just going back over it,
+- [00:41:27,420 - 00:41:30,420] it also tells us that it doesn't depend
+- [00:41:30,420 - 00:41:33,420] on the mass having all been concentrated at a point.
+- [00:41:33,420 - 00:41:35,420] All it depended on
+- [00:41:35,420 - 00:41:39,420] was the mass was spherically symmetrically distributed.
+- [00:41:39,420 - 00:41:41,420] Okay, so that's,
+- [00:41:41,420 - 00:41:45,420] I did this again to point out to you that
+- [00:41:45,420 - 00:41:49,420] del dot A equals minus four pi rho G
+- [00:41:49,420 - 00:41:51,420] is equivalent
+- [00:41:51,420 - 00:41:54,420] to A being the sum
+- [00:41:54,420 - 00:41:56,420] over all the mass points
+- [00:41:56,420 - 00:42:03,420] of Newton's characteristic expression for gravitational field.
+- [00:42:03,420 - 00:42:05,420] So that's cool, huh?
+- [00:42:05,420 - 00:42:07,420] It's a nice way to express things.
+- [00:42:07,420 - 00:42:11,420] This summarizes the very, very complicated equation
+- [00:42:11,420 - 00:42:12,420] on top of it.
+- [00:42:12,420 - 00:42:14,420] It doesn't look so complicated,
+- [00:42:14,420 - 00:42:17,420] but if you wrote it out for lots of mass points and so forth,
+- [00:42:17,420 - 00:42:19,420] it would become complicated,
+- [00:42:19,420 - 00:42:20,420] whereas here's a way to write it out.
+- [00:42:20,420 - 00:42:23,420] Here's a way to express it where it's rather simple.
+- [00:42:31,420 - 00:42:33,420] Yeah, while we're at it,
+- [00:42:33,420 - 00:42:35,420] somebody asked me last time
+- [00:42:35,420 - 00:42:39,420] about the gravitational field within the Earth.
+- [00:42:39,420 - 00:42:41,420] What is it like within the Earth?
+- [00:42:41,420 - 00:42:44,420] Here we did the gravitational field outside the Earth.
+- [00:42:44,420 - 00:42:47,420] We can now carry out a calculation
+- [00:42:47,420 - 00:42:49,420] of what's going on inside the Earth, if we like.
+- [00:42:50,420 - 00:42:53,420] It's kind of interesting.
+- [00:42:53,420 - 00:42:57,420] All we have to do now
+- [00:42:57,420 - 00:43:01,420] is take our red surface, same calculation,
+- [00:43:01,420 - 00:43:05,420] but now take the red surface inside the Earth.
+- [00:43:05,420 - 00:43:08,420] But now we have to be careful,
+- [00:43:08,420 - 00:43:10,420] because the amount of mass within the red circle,
+- [00:43:10,420 - 00:43:12,420] the red sphere,
+- [00:43:12,420 - 00:43:15,420] is not the total mass of the planet anymore.
+- [00:43:15,420 - 00:43:17,420] It's only the mass within the red sphere.
+- [00:43:17,420 - 00:43:19,420] So let's do the calculation over again.
+- [00:43:20,420 - 00:43:23,420] The right-hand side stays the same.
+- [00:43:23,420 - 00:43:26,420] The right-hand side is still 4 pi.
+- [00:43:26,420 - 00:43:29,420] In other words,
+- [00:43:29,420 - 00:43:32,420] the perpendicular component of the field
+- [00:43:32,420 - 00:43:34,420] times 4 pi times r squared,
+- [00:43:34,420 - 00:43:39,420] where this r is now the radius of the inner sphere here.
+- [00:43:39,420 - 00:43:43,420] What about the mass within the red sphere?
+- [00:43:43,420 - 00:43:46,420] How much mass is there within the red sphere?
+- [00:43:46,420 - 00:43:49,420] Well, for that, we have to make some kind of assumption
+- [00:43:49,420 - 00:43:53,420] about how the mass is distributed throughout the red sphere.
+- [00:43:53,420 - 00:43:55,420] Let's make the assumption,
+- [00:43:55,420 - 00:43:57,420] which is not so bad for the Earth,
+- [00:43:57,420 - 00:43:59,420] it's not a bad approximation for the Earth,
+- [00:43:59,420 - 00:44:03,420] that the mass density within the Earth is uniform.
+- [00:44:03,420 - 00:44:06,420] The mass density is uniform inside the Earth,
+- [00:44:06,420 - 00:44:08,420] and then when you get to the surface of the Earth,
+- [00:44:08,420 - 00:44:10,420] it drops abruptly to zero.
+- [00:44:10,420 - 00:44:12,420] That's not exactly true.
+- [00:44:12,420 - 00:44:15,420] It's denser near the center than near the outside.
+- [00:44:15,420 - 00:44:17,420] But let's take that as a model.
+- [00:44:17,420 - 00:44:19,420] A uniform mass density
+- [00:44:19,420 - 00:44:25,420] is the uniform mass per unit volume within the Earth.
+- [00:44:25,420 - 00:44:30,420] Then how much mass is inside this red region here?
+- [00:44:30,420 - 00:44:33,420] It's not the total mass of the Earth now.
+- [00:44:33,420 - 00:44:34,420] It's different.
+- [00:44:34,420 - 00:44:36,420] So let's calculate it.
+- [00:44:36,420 - 00:44:40,420] It's the volume of the sphere times the mass density.
+- [00:44:40,420 - 00:44:47,420] This is equal to minus the mass within the sphere
+- [00:44:47,420 - 00:44:50,420] and the mass within the sphere
+- [00:44:50,420 - 00:44:52,420] is the volume of the sphere,
+- [00:44:52,420 - 00:44:57,420] four-thirds pi r cubed.
+- [00:44:57,420 - 00:45:01,420] That's the volume of the sphere times rho.
+- [00:45:09,420 - 00:45:12,420] Four-thirds pi r cubed times rho.
+- [00:45:12,420 - 00:45:14,420] I think I got it right.
+- [00:45:14,420 - 00:45:16,420] Oh!
+- [00:45:16,420 - 00:45:18,420] On this side.
+- [00:45:18,420 - 00:45:21,420] G. Good. Thank you.
+- [00:45:21,420 - 00:45:23,420] All right, we can cancel out some things.
+- [00:45:23,420 - 00:45:26,420] We can cancel out the four pi's.
+- [00:45:32,420 - 00:45:35,420] And now we can divide by r squared.
+- [00:45:35,420 - 00:45:37,420] If I divide by r squared,
+- [00:45:37,420 - 00:45:43,420] what I get is a perpendicular is equal to minus one-third rho times g,
+- [00:45:43,420 - 00:45:46,420] one-third rho times g, times r.
+- [00:45:46,420 - 00:45:52,420] What does this say?
+- [00:45:52,420 - 00:45:56,420] This says that the acceleration of a test mass,
+- [00:45:56,420 - 00:46:00,420] of course, we would have to drill a hole through the Earth
+- [00:46:00,420 - 00:46:02,420] if we wanted to drop a particle.
+- [00:46:02,420 - 00:46:05,420] We can't drop particles if they're stuck in the rock.
+- [00:46:05,420 - 00:46:07,420] But if we had some sort of particle,
+- [00:46:07,420 - 00:46:10,420] well, either we drill a hole through the Earth and drop particles down,
+- [00:46:10,420 - 00:46:15,420] or we drop particles which don't interact with the material of the Earth.
+- [00:46:15,420 - 00:46:19,420] Neutrinos don't interact much with the material of the Earth.
+- [00:46:19,420 - 00:46:21,420] We drop a particle, what does it do?
+- [00:46:21,420 - 00:46:24,420] Well, it experiences an acceleration
+- [00:46:24,420 - 00:46:27,420] which is toward the center.
+- [00:46:27,420 - 00:46:29,420] That's the minus sign here.
+- [00:46:29,420 - 00:46:32,420] The perpendicular component of A is negative.
+- [00:46:32,420 - 00:46:34,420] That means it's toward the center.
+- [00:46:34,420 - 00:46:36,420] It's got some constants in it.
+- [00:46:36,420 - 00:46:39,420] Rho, g, and three. Those are just numbers.
+- [00:46:39,420 - 00:46:43,420] But it grows linearly with the distance from the center of the Earth.
+- [00:46:43,420 - 00:46:48,420] So it's an acceleration, which means a force.
+- [00:46:48,420 - 00:46:53,420] If I were to multiply this acceleration by the mass of the test particle on both sides,
+- [00:46:53,420 - 00:46:56,420] then I would have the mass on the test particle.
+- [00:46:56,420 - 00:46:59,420] The mass on the test particle is toward the center,
+- [00:46:59,420 - 00:47:03,420] and it's proportional to the distance away from the center.
+- [00:47:03,420 - 00:47:06,420] There's a name for such a system.
+- [00:47:06,420 - 00:47:09,420] It's a harmonic oscillator.
+- [00:47:09,420 - 00:47:12,420] A force which is proportional to distance.
+- [00:47:12,420 - 00:47:13,420] In other words,
+- [00:47:13,420 - 00:47:16,420] a particle displaced from the center
+- [00:47:16,420 - 00:47:20,420] will be pulled back to the center exactly as if it were on a spring,
+- [00:47:20,420 - 00:47:23,420] with a spring constant
+- [00:47:23,420 - 00:47:25,420] that depends on the mass density,
+- [00:47:25,420 - 00:47:27,420] depends on the gravitational constant,
+- [00:47:27,420 - 00:47:29,420] and it depends on three.
+- [00:47:29,420 - 00:47:31,420] So if we dropped a particle,
+- [00:47:31,420 - 00:47:33,420] if we drilled a hole through the Earth
+- [00:47:33,420 - 00:47:35,420] and dropped a particle,
+- [00:47:35,420 - 00:47:37,420] it would just oscillate up and down, up and down,
+- [00:47:37,420 - 00:47:39,420] like a harmonic oscillator.
+- [00:47:39,420 - 00:47:41,420] I forget the time constant.
+- [00:47:41,420 - 00:47:43,420] I think it takes about ten minutes for it to do that.
+- [00:47:43,420 - 00:47:44,420] I don't know.
+- [00:47:44,420 - 00:47:46,420] I think it takes about ten minutes for it to go through the Earth and come back,
+- [00:47:46,420 - 00:47:49,420] or something of that order of magnitude.
+- [00:47:49,420 - 00:47:54,420] So, and this is not important to the general theory of relativity.
+- [00:47:54,420 - 00:47:59,420] It's just another example of how to use Gauss's law and Gauss's theorem
+- [00:47:59,420 - 00:48:02,420] to solve what would be a very hard problem
+- [00:48:02,420 - 00:48:06,420] if we had to add up the contribution of every particle in the Earth.
+- [00:48:06,420 - 00:48:08,420] I mean, just think about it.
+- [00:48:08,420 - 00:48:10,420] How hard that would be.
+- [00:48:10,420 - 00:48:12,420] Yet this method allows us to solve it.
+- [00:48:13,420 - 00:48:16,420] It allows us to do it easily.
+- [00:48:16,420 - 00:48:17,420] Okay.
+- [00:48:17,420 - 00:48:19,420] Any questions?
+- [00:48:19,420 - 00:48:20,420] Yeah.
+- [00:48:20,420 - 00:48:25,420] Is there some reason why the distribution of the matter
+- [00:48:25,420 - 00:48:28,420] outside of the shell is negligible?
+- [00:48:28,420 - 00:48:30,420] It's not just negligible.
+- [00:48:30,420 - 00:48:31,420] It's zero.
+- [00:48:31,420 - 00:48:32,420] That's a good point.
+- [00:48:32,420 - 00:48:33,420] Okay.
+- [00:48:33,420 - 00:48:34,420] Right.
+- [00:48:34,420 - 00:48:41,420] So let's talk about this.
+- [00:48:41,420 - 00:48:42,420] Yeah.
+- [00:48:42,420 - 00:48:43,420] That's right.
+- [00:48:43,420 - 00:48:46,420] That was one of the consequences, and one of the curious consequences.
+- [00:48:46,420 - 00:48:50,420] I'm sure it gave Newton some pause when he realized it.
+- [00:48:50,420 - 00:48:51,420] But that's right.
+- [00:48:51,420 - 00:48:58,420] It is only the material inside the sphere which contributes to the gravitational field.
+- [00:48:58,420 - 00:49:02,420] The material on the outside all cancels out.
+- [00:49:02,420 - 00:49:05,420] The gravity from here and the gravity from here and the gravity from here,
+- [00:49:05,420 - 00:49:07,420] they all cancel out.
+- [00:49:07,420 - 00:49:11,420] Newton knew it, and he proved it without calculus,
+- [00:49:11,420 - 00:49:13,420] which is quite a...
+- [00:49:13,420 - 00:49:15,420] The reason he proved all these things without calculus
+- [00:49:15,420 - 00:49:20,420] is because none of his audience knew any calculus,
+- [00:49:20,420 - 00:49:23,420] and so he had to do everything geometrically.
+- [00:49:23,420 - 00:49:27,420] But we see it from Gauss's law.
+- [00:49:27,420 - 00:49:29,420] Gauss's law tells us, among other things,
+- [00:49:29,420 - 00:49:33,420] that the gravitational field of a spherically symmetric mass
+- [00:49:33,420 - 00:49:38,420] only depends on the mass within the radius r
+- [00:49:38,420 - 00:49:41,420] and doesn't depend at all on the mass outside the radius r.
+- [00:49:41,420 - 00:49:44,420] A consequence of this, I think we talked about it last time,
+- [00:49:44,420 - 00:49:46,420] but might as well just say it again,
+- [00:49:46,420 - 00:49:51,420] is that if the mass was entirely distributed on a shell,
+- [00:49:51,420 - 00:49:56,420] imagine the mass was on a shell, thin shell,
+- [00:49:56,420 - 00:50:01,420] then inside the thin shell there would be no gravitational field at all.
+- [00:50:01,420 - 00:50:05,420] Particles would move around as if there was no gravity at all.
+- [00:50:05,420 - 00:50:08,420] On the other hand, particles outside the shell
+- [00:50:08,420 - 00:50:11,420] would see the gravitational field of the shell exactly the same way.
+- [00:50:11,420 - 00:50:14,420] The same as if it were a point at the center.
+- [00:50:14,420 - 00:50:16,420] So that's a rather remarkable fact,
+- [00:50:16,420 - 00:50:20,420] and it's special to the one over r squared law.
+- [00:50:20,420 - 00:50:22,420] Notice that it tells you,
+- [00:50:22,420 - 00:50:25,420] assuming Gauss's law and Gauss's theorem,
+- [00:50:25,420 - 00:50:30,420] you get the one over r squared law.
+- [00:50:30,420 - 00:50:36,420] I'm having a hard time equating those two figures at the surface of the Earth.
+- [00:50:36,420 - 00:50:38,420] I got a four that I can't get rid of.
+- [00:50:38,420 - 00:50:39,420] Oh, did I miss... I may have missed a four.
+- [00:50:39,420 - 00:50:40,420] Let's see, where...
+- [00:50:41,420 - 00:50:46,420] Which... where?
+- [00:50:46,420 - 00:50:48,420] Should I go back? I need to go back a step here?
+- [00:50:48,420 - 00:50:52,420] No, the expression there on your right, the lower there,
+- [00:50:52,420 - 00:50:55,420] equating that to the expression on the board to your left
+- [00:50:55,420 - 00:50:57,420] at the surface of the Earth.
+- [00:50:57,420 - 00:51:00,420] Wait, wait, left... this and this?
+- [00:51:00,420 - 00:51:04,420] Well, those two gravitational accelerations should be the same on the surface.
+- [00:51:04,420 - 00:51:06,420] What should be the same as what?
+- [00:51:06,420 - 00:51:09,420] A bar on the right board should be the same as A perpendicular on the left board
+- [00:51:09,420 - 00:51:10,420] at the surface of the Earth.
+- [00:51:11,420 - 00:51:14,420] Oh, at the surface of the... good.
+- [00:51:14,420 - 00:51:17,420] Did I make a mistake? Did I lose a factor of four somewhere?
+- [00:51:17,420 - 00:51:20,420] I may have lost a factor...
+- [00:51:20,420 - 00:51:22,420] Is it a factor of four that's missing?
+- [00:51:22,420 - 00:51:24,420] Four pi.
+- [00:51:24,420 - 00:51:26,420] From which one?
+- [00:51:26,420 - 00:51:29,420] Oh.
+- [00:51:29,420 - 00:51:32,420] It's already cancelled the four pi in there.
+- [00:51:32,420 - 00:51:35,420] You're absolutely right.
+- [00:51:35,420 - 00:51:38,420] They should agree at the surface of the Earth.
+- [00:51:38,420 - 00:51:40,420] So, someplace I lost a four and a pi, but...
+- [00:51:41,420 - 00:51:45,420] This one, of course, is correct.
+- [00:51:45,420 - 00:51:47,420] That's just Newton.
+- [00:51:47,420 - 00:51:48,420] Well, the masses...
+- [00:51:48,420 - 00:51:50,420] Can you cancel them because they're on both sides of the equation?
+- [00:51:50,420 - 00:51:52,420] Because they're on both sides of the equation.
+- [00:51:52,420 - 00:51:54,420] One person, one person.
+- [00:51:54,420 - 00:51:55,420] Does somebody see what I mean?
+- [00:51:55,420 - 00:51:56,420] You said rho with the mass.
+- [00:51:56,420 - 00:52:00,420] Can you cancel the four pi's because they're on both sides of the equation?
+- [00:52:00,420 - 00:52:04,420] Because rho has to be a function of the mass.
+- [00:52:04,420 - 00:52:07,420] One you have rho, one you have mass.
+- [00:52:07,420 - 00:52:09,420] So you have to...
+- [00:52:09,420 - 00:52:11,420] So let me go back and do it.
+- [00:52:11,420 - 00:52:13,420] Okay.
+- [00:52:18,420 - 00:52:20,420] All I hear is a buzz.
+- [00:52:25,420 - 00:52:27,420] Oh, okay. One has rho and one has mass.
+- [00:52:27,420 - 00:52:29,420] Yeah, yeah, yeah.
+- [00:52:29,420 - 00:52:30,420] Oh.
+- [00:52:30,420 - 00:52:32,420] Okay. No, it was right.
+- [00:52:32,420 - 00:52:34,420] It was right.
+- [00:52:34,420 - 00:52:36,420] Yeah, yeah, yeah, yeah, yeah.
+- [00:52:36,420 - 00:52:38,420] That's right.
+- [00:52:38,420 - 00:52:40,420] That's right. No.
+- [00:52:40,420 - 00:52:42,420] All right.
+- [00:52:42,420 - 00:52:44,420] To those who didn't follow the last discussion, forget it.
+- [00:52:44,420 - 00:52:46,420] It was right.
+- [00:52:49,420 - 00:52:50,420] All right.
+- [00:52:50,420 - 00:52:54,420] One more concept which is important before we get on to relativity and the equivalence principle,
+- [00:52:54,420 - 00:52:59,420] or the equivalence principle in particular, is the idea of gravitational potential.
+- [00:52:59,420 - 00:53:02,420] Just one point.
+- [00:53:02,420 - 00:53:05,420] The gravitational field is a field of acceleration.
+- [00:53:05,420 - 00:53:07,420] Yeah.
+- [00:53:07,420 - 00:53:08,420] It's a gravitational...
+- [00:53:08,420 - 00:53:09,420] It's a gravitational...
+- [00:53:09,420 - 00:53:10,420] Yeah.
+- [00:53:10,420 - 00:53:12,420] Is gravitational field continuous?
+- [00:53:12,420 - 00:53:13,420] It seems like...
+- [00:53:13,420 - 00:53:16,420] No, it jumps at the shell.
+- [00:53:16,420 - 00:53:17,420] It jumps from...
+- [00:53:17,420 - 00:53:18,420] It jumps at the shell.
+- [00:53:18,420 - 00:53:21,420] As you go from outside the shell to inside the shell, it jumps.
+- [00:53:21,420 - 00:53:23,420] Does it disconnect?
+- [00:53:23,420 - 00:53:24,420] Doesn't this...
+- [00:53:24,420 - 00:53:25,420] Right.
+- [00:53:25,420 - 00:53:27,420] The derivative is discontinuous, right?
+- [00:53:27,420 - 00:53:29,420] The field itself is discontinuous.
+- [00:53:29,420 - 00:53:31,420] Well, if the shell has a finite thickness...
+- [00:53:31,420 - 00:53:33,420] If the shell has a finite thickness, of course, then it's smooth.
+- [00:53:33,420 - 00:53:38,420] But if the shell was literally an infinitely thin shell, then it jumps.
+- [00:53:38,420 - 00:53:39,420] Right.
+- [00:53:39,420 - 00:53:40,420] The gravitational field jumps.
+- [00:53:40,420 - 00:53:49,420] The equation you had here said that the force or the acceleration varies linearly from the center of the Earth.
+- [00:53:49,420 - 00:53:50,420] Yeah.
+- [00:53:50,420 - 00:53:51,420] And yet...
+- [00:53:51,420 - 00:53:53,420] Until we get to the boundary of the Earth.
+- [00:53:53,420 - 00:54:01,420] You also said that if we consider a series of shells, the force on an object is...
+- [00:54:01,420 - 00:54:04,420] All the shells outside can be neglected and all the shells inside.
+- [00:54:04,420 - 00:54:05,420] Right.
+- [00:54:05,420 - 00:54:06,420] But the mass of...
+- [00:54:06,420 - 00:54:07,420] Right.
+- [00:54:07,420 - 00:54:13,420] The mass of a subsphere, whatever, is not linearly dependent on the...
+- [00:54:13,420 - 00:54:14,420] No.
+- [00:54:14,420 - 00:54:15,420] No.
+- [00:54:15,420 - 00:54:16,420] No.
+- [00:54:16,420 - 00:54:17,420] That's right.
+- [00:54:17,420 - 00:54:18,420] That's right.
+- [00:54:18,420 - 00:54:19,420] We canceled out...
+- [00:54:19,420 - 00:54:20,420] Yeah.
+- [00:54:20,420 - 00:54:21,420] Okay.
+- [00:54:21,420 - 00:54:22,420] So let's go back.
+- [00:54:22,420 - 00:54:23,420] ...the force varies linearly as you go from the center to the...
+- [00:54:23,420 - 00:54:24,420] No.
+- [00:54:24,420 - 00:54:25,420] Let's go back.
+- [00:54:25,420 - 00:54:26,420] Let's go back.
+- [00:54:26,420 - 00:54:27,420] ...squared.
+- [00:54:27,420 - 00:54:28,420] We had on the left-hand side...
+- [00:54:28,420 - 00:54:33,420] We have on the left-hand side of the equation the gravitational field times the area, r squared.
+- [00:54:33,420 - 00:54:35,420] That was one side of the equation.
+- [00:54:35,420 - 00:54:41,420] The other side of the equation had the mass, which you correctly say was proportional to r cubed.
+- [00:54:41,420 - 00:54:42,420] Okay.
+- [00:54:42,420 - 00:54:44,420] Divide by r squared.
+- [00:54:44,420 - 00:54:46,420] And we get a proportional to r.
+- [00:54:46,420 - 00:54:50,420] That's what we did.
+- [00:54:50,420 - 00:54:55,420] The r squared...the area grows as r squared.
+- [00:54:55,420 - 00:54:58,420] The mass grows as r cubed.
+- [00:54:58,420 - 00:55:02,420] And therefore, the gravitational field is like one over r.
+- [00:55:02,420 - 00:55:03,420] Okay.
+- [00:55:03,420 - 00:55:05,420] Can you just derive that equation again?
+- [00:55:05,420 - 00:55:06,420] Which one?
+- [00:55:06,420 - 00:55:10,420] The one that you erased on the board behind you.
+- [00:55:10,420 - 00:55:11,420] This one?
+- [00:55:11,420 - 00:55:12,420] Yes, please.
+- [00:55:12,420 - 00:55:13,420] Okay.
+- [00:55:13,420 - 00:55:16,420] It's Gauss's Law again.
+- [00:55:16,420 - 00:55:22,420] We take a sphere, which is smaller than the size of the Earth.
+- [00:55:22,420 - 00:55:23,420] Okay.
+- [00:55:23,420 - 00:55:29,420] One side of the Gauss's Law gives us the total mass within that sphere.
+- [00:55:29,420 - 00:55:30,420] Is that clear?
+- [00:55:30,420 - 00:55:31,420] Who asked the question?
+- [00:55:31,420 - 00:55:32,420] Yeah.
+- [00:55:32,420 - 00:55:33,420] Is that clear?
+- [00:55:33,420 - 00:55:34,420] All right.
+- [00:55:34,420 - 00:55:37,420] So one side of the equation is the mass within that sphere.
+- [00:55:37,420 - 00:55:38,420] What is that?
+- [00:55:38,420 - 00:55:46,420] That's four-thirds pi r cubed times the density.
+- [00:55:46,420 - 00:55:50,420] Well, we also have to throw in a g.
+- [00:55:50,420 - 00:55:51,420] A g?
+- [00:55:51,420 - 00:55:55,420] Yeah.
+- [00:55:55,420 - 00:56:02,420] Four-thirds pi r cubed times rho is the mass within that sphere, and we multiply it by g.
+- [00:56:02,420 - 00:56:08,420] That's one side of the Gauss's equation here.
+- [00:56:08,420 - 00:56:19,420] The other side of the Gauss's equation is the integral of the component of A sticking out from the surface.
+- [00:56:19,420 - 00:56:29,420] That's equal to the surface area for pi r squared times A perpendicular.
+- [00:56:29,420 - 00:56:30,420] And there's a minus sign there.
+- [00:56:30,420 - 00:56:40,420] So we have on the left side something like r cubed, on the right-hand side r squared.
+- [00:56:40,420 - 00:56:44,420] I can cancel the four pi and then divide by r.
+- [00:56:44,420 - 00:56:58,420] If I cancel the four pi, I get g over 3 r cubed rho is equal to minus r squared A perpendicular.
+- [00:56:58,420 - 00:56:59,420] And now divide by r squared.
+- [00:56:59,420 - 00:57:07,420] Dividing by r squared leaves one power of r there.
+- [00:57:07,420 - 00:57:12,420] So it tells me that the gravitational field is linear just like a spring.
+- [00:57:12,420 - 00:57:20,420] Now, on the surface of the Earth, you can equate that to mg divided by r squared.
+- [00:57:20,420 - 00:57:22,420] Yeah.
+- [00:57:22,420 - 00:57:26,420] Okay, mg is four-thirds, m is four-thirds pi r cubed.
+- [00:57:26,420 - 00:57:27,420] So it's missing a four pi.
+- [00:57:27,420 - 00:57:28,420] Yeah.
+- [00:57:28,420 - 00:57:32,420] This one is missing a four pi?
+- [00:57:32,420 - 00:57:33,420] No.
+- [00:57:33,420 - 00:57:36,420] On the left, you're missing the four pi multiplying g.
+- [00:57:36,420 - 00:57:37,420] No, it's not.
+- [00:57:37,420 - 00:57:38,420] It's canceled on both sides.
+- [00:57:38,420 - 00:57:41,420] All I'm asking you to do is equate them and see if they're equal.
+- [00:57:41,420 - 00:57:53,420] It's got to be the volume times the rho.
+- [00:57:53,420 - 00:57:55,420] Think of rho as the whole Earth.
+- [00:57:55,420 - 00:57:56,420] No, I'm looking at mass.
+- [00:57:56,420 - 00:57:57,420] The mass of the Earth.
+- [00:57:57,420 - 00:58:01,420] The mass of the Earth is four-thirds pi r cubed.
+- [00:58:01,420 - 00:58:03,420] Four-thirds pi r cubed times rho.
+- [00:58:03,420 - 00:58:04,420] Right.
+- [00:58:04,420 - 00:58:09,420] Okay, so on one side, you have four-thirds pi r cubed.
+- [00:58:09,420 - 00:58:12,420] You have a four pi, and on the other side, you don't.
+- [00:58:12,420 - 00:58:13,420] Does that go to bed?
+- [00:58:13,420 - 00:58:14,420] It's bad.
+- [00:58:14,420 - 00:58:15,420] Oh, okay.
+- [00:58:19,420 - 00:58:21,420] I thought I did it carefully, but maybe I made a mistake.
+- [00:58:21,420 - 00:58:22,420] No, you're right.
+- [00:58:22,420 - 00:58:23,420] Yes, I don't think.
+- [00:58:23,420 - 00:58:24,420] Let's take a vote.
+- [00:58:24,420 - 00:58:25,420] How many think I'm right?
+- [00:58:25,420 - 00:58:26,420] You have to go right.
+- [00:58:26,420 - 00:58:27,420] You have to go right.
+- [00:58:27,420 - 00:58:28,420] All right.
+- [00:58:28,420 - 00:58:29,420] Let's do it.
+- [00:58:29,420 - 00:58:34,420] During the break, we'll, during the break, I'll go through it with you.
+- [00:58:34,420 - 00:58:39,420] And it is not entirely possible that I make numerical errors on black and white.
+- [00:58:39,420 - 00:58:42,420] It's how you get to M is by doing the integral.
+- [00:58:42,420 - 00:58:43,420] Yes.
+- [00:58:43,420 - 00:58:45,420] That's where he misses the fourth.
+- [00:58:45,420 - 00:58:46,420] Yeah, yeah.
+- [00:58:46,420 - 00:58:53,420] So when you go, we'll work it out in detail during the break.
+- [00:58:53,420 - 00:58:54,420] Okay.
+- [00:58:54,420 - 00:58:58,420] I was going to talk about gravitational potential, but I think I'll do that next week.
+- [00:58:58,420 - 00:59:04,420] And I want to get on to the equivalence principle, a little bit of some new physics.
+- [00:59:04,420 - 00:59:10,420] This, of course, was all old physics, and it's taken us another hour to go through Newtonian mechanics.
+- [00:59:15,420 - 00:59:18,420] Just a repetition of what we did last time.
+- [00:59:18,420 - 00:59:23,420] But let's move on now to the equivalence principle.
+- [00:59:23,420 - 00:59:34,420] Now, the equivalence principle, of course, is the principle that says that a field of acceleration is in a certain, that acceleration and gravity are the same thing.
+- [00:59:34,420 - 00:59:42,420] But to make it specific, the elevator analogy is a good analogy.
+- [00:59:42,420 - 00:59:51,420] Now, for reasons that are a little strange, I'm going to have my elevator accelerate horizontally.
+- [00:59:51,420 - 00:59:52,420] It's just because I want to do it.
+- [00:59:52,420 - 00:59:53,420] Okay.
+- [00:59:53,420 - 00:59:57,420] I want to use the coordinate and call it x instead of y.
+- [00:59:57,420 - 00:59:58,420] You'll see why.
+- [00:59:58,420 - 00:59:59,420] We'll get to it.
+- [00:59:59,420 - 01:00:00,420] All right.
+- [01:00:00,420 - 01:00:02,420] So we have an elevator.
+- [01:00:02,420 - 01:00:04,420] Somebody stands in the elevator.
+- [01:00:09,420 - 01:00:14,420] I want to emphasize that this has nothing to do with this room.
+- [01:00:14,420 - 01:00:19,420] It could be in any direction that the elevator is accelerating.
+- [01:00:19,420 - 01:00:22,420] It could be accelerating by means of a cable or whatever.
+- [01:00:22,420 - 01:00:23,420] Rockets.
+- [01:00:23,420 - 01:00:24,420] I don't care.
+- [01:00:24,420 - 01:00:25,420] Whatever.
+- [01:00:25,420 - 01:00:26,420] Pulling it.
+- [01:00:26,420 - 01:00:30,420] And it's being pulled with an acceleration.
+- [01:00:30,420 - 01:00:39,420] Let's call that acceleration little g.
+- [01:00:39,420 - 01:00:46,420] What about an object that's dropped by the passenger within the elevator?
+- [01:00:46,420 - 01:00:47,420] All right.
+- [01:00:47,420 - 01:00:50,420] That object, according to Newton's law of gravity, is a little bit more than a single object.
+- [01:00:50,420 - 01:00:51,420] Okay.
+- [01:00:51,420 - 01:00:56,420] So if I'm going to move this object to Newton's laws in a frame of reference outside the elevator,
+- [01:00:56,420 - 01:01:01,420] in an inertial frame of reference watching this, that object stands still.
+- [01:01:01,420 - 01:01:06,420] But what does it do relative to the person in the elevator?
+- [01:01:06,420 - 01:01:11,420] Well, the elevator person gets accelerated that way with an acceleration g, but he doesn't
+- [01:01:11,420 - 01:01:12,420] say he's accelerating.
+- [01:01:12,420 - 01:01:17,420] He just says, I'm standing still, and he sees the little thing that he dropped accelerate
+- [01:01:17,420 - 01:01:20,420] toward the floor, and of course, accelerate toward the floor with exactly the same acceleration.
+- [01:01:20,420 - 01:01:21,420] He says, I'm standing still, and I'm not going to move this object.
+- [01:01:21,420 - 01:01:22,420] I'm going to move this object.
+- [01:01:22,420 - 01:01:23,420] I'm going to move this object.
+- [01:01:23,420 - 01:01:24,420] I'm going to move this object.
+- [01:01:24,420 - 01:01:25,420] And he's going to be able to move it to the floor with exactly the acceleration g, but
+- [01:01:25,420 - 01:01:26,420] not toward the right.
+- [01:01:26,420 - 01:01:27,420] He sees it accelerate toward the left.
+- [01:01:27,420 - 01:01:31,420] So he says there's a field of acceleration inside the elevator.
+- [01:01:31,420 - 01:01:36,420] There's an a field inside the accelerator pointing downward.
+- [01:01:36,420 - 01:01:43,420] Everything he drops gets accelerated downward, exact downward meaning to the left, exactly
+- [01:01:43,420 - 01:01:48,420] as if there was a gravitational field, a, a field of acceleration.
+- [01:01:48,420 - 01:01:49,420] Okay.
+- [01:01:49,420 - 01:01:53,420] So he's got a little g, a field of acceleration pointing, pointing to the left.
+- [01:01:53,420 - 01:01:54,420] How big is it?
+- [01:01:54,420 - 01:01:59,920] Well, it's just exactly equal in magnitude to the acceleration that the elevator is moving
+- [01:01:59,920 - 01:02:02,060] with, little g.
+- [01:02:02,060 - 01:02:07,300] And so he says there's an acceleration field of strength g pointing toward the floor of
+- [01:02:07,300 - 01:02:08,300] the elevator.
+- [01:02:08,300 - 01:02:09,300] Okay.
+- [01:02:09,300 - 01:02:14,020] Looks like gravity, sounds like gravity, smells like gravity.
+- [01:02:14,020 - 01:02:19,420] The conclusion that Einstein came to in this, you might say to yourself, why did it take
+- [01:02:19,420 - 01:02:21,920] Einstein to say this?
+- [01:02:21,920 - 01:02:29,420] Almost any small child who's been in an elevator would have recognized it, that gravity, the
+- [01:02:29,420 - 01:02:34,920] effects of gravity, the effects of gravity on everything that this person does, juggles
+- [01:02:34,920 - 01:02:41,680] balls, does whatever he wants to do, is exactly identical to what he would experience if he
+- [01:02:41,680 - 01:02:44,980] were in an elevator being accelerated.
+- [01:02:44,980 - 01:02:49,060] Gravity and acceleration are the same thing, according to Einstein.
+- [01:02:49,060 - 01:02:55,700] In other words, the physical effects of being in a, in an accelerated elevator are identical
+- [01:02:55,700 - 01:02:57,440] to the effects of gravity.
+- [01:02:57,440 - 01:03:01,180] Now as I said, that seems almost trivial.
+- [01:03:01,180 - 01:03:07,860] I'll tell you what, let's take a break and then come back to some, some discussion of
+- [01:03:07,860 - 01:03:14,560] its non-triviality, why Einstein was called Einstein instead of Joe Palooka.
+- [01:03:14,560 - 01:03:18,560] All right, so let's talk a little bit about how Einstein is.
+- [01:03:18,560 - 01:03:26,940] Einstein used this idea of gravity being the same as acceleration.
+- [01:03:26,940 - 01:03:31,740] He didn't just say that, but he used it.
+- [01:03:31,740 - 01:03:40,900] And let's go through one application of it and then start to discuss some ideas about
+- [01:03:40,900 - 01:03:42,280] the general theory of relativity.
+- [01:03:48,560 - 01:03:56,080] So now let me put, now let me return to, oh, what, oh, oh, oh, before, yeah, before
+- [01:03:56,080 - 01:04:03,880] I do that, before I do that, I re, there was some reason why I put the elevator horizontal.
+- [01:04:03,880 - 01:04:09,040] It had to do with a graph that I want to draw.
+- [01:04:09,040 - 01:04:13,060] Let's talk a little mathematically about what it means to be in an accelerated frame of
+- [01:04:13,060 - 01:04:14,220] reference.
+- [01:04:14,220 - 01:04:17,560] The accelerated frame of reference was the, um, the, um, the, um, the, um, the, um, the,
+- [01:04:17,560 - 01:04:18,560] um, the, um, the, um, the, um, the, um, the, um, the, um, the, um, the, um, the, um, the, um,
+- [01:04:18,560 - 01:04:19,560] the, um, the, um, the, um, the, um, the, um, the, uh, uh, uh.
+- [01:04:19,560 - 01:04:20,560] Now let's go through some modelы How say, uh, like, how could we say, uh,
+- [01:04:20,560 - 01:04:21,560] how could you write that?
+- [01:04:21,560 - 01:04:25,180] Well, the first method, the first method was the frame of reference as seen by the passenger
+- [01:04:25,180 - 01:04:26,400] in the elevator.
+- [01:04:26,400 - 01:04:30,340] His frame, his or her frame of reference.
+- [01:04:30,340 - 01:04:31,640] Okay.
+- [01:04:31,640 - 01:04:32,600] So
+- [01:04:32,600 - 01:04:36,180] x is horizontal.
+- [01:04:36,180 - 01:04:40,480] That's why I had the elevator going horizontally because I wanted to use x and I want the
+- [01:04:40,480 - 01:04:44,160] plot x along the horizontal axis.
+- [01:04:44,160 - 01:04:48,060] And along the vertical axis, I'm going to plot time, t.
+- [01:04:48,060 - 01:04:48,560] Okay.
+- [01:04:48,560 - 01:05:05,300] This is all of space-time. X, well, I haven't plotted the other directions, y and z, but time and x, and that's the world inside and outside.
+- [01:05:06,080 - 01:05:13,340] Now, let's first talk about what it means for a frame of reference to be uniform velocity.
+- [01:05:13,340 - 01:05:19,960] Before we get to acceleration, let's just suppose the elevator were moving with uniform velocity, not accelerated.
+- [01:05:21,040 - 01:05:28,300] Let's call the bottom of the accelerator floor, let's call that x prime equals zero.
+- [01:05:28,440 - 01:05:30,540] In other words, we have two frames of reference.
+- [01:05:30,800 - 01:05:38,440] Me standing on the outside, and I have a coordinate, which I measure by meter sticks,
+- [01:05:39,020 - 01:05:43,220] and I might measure it from right over here, one meter.
+- [01:05:43,340 - 01:05:45,540] Two meters, three meters, four meters, and so forth.
+- [01:05:46,660 - 01:05:51,160] All right, so that's my frame of reference, and I call my coordinate x,
+- [01:05:51,880 - 01:05:54,120] and here are the ends of the meter sticks.
+- [01:05:59,000 - 01:06:09,320] Meter sticks, end of the first meter stick, this is x, this is x equals zero, x equals one, x equals two, and so forth.
+- [01:06:10,060 - 01:06:12,120] All right, now what about an observer?
+- [01:06:12,120 - 01:06:17,120] An observer, somebody in the elevator who's moving with uniform velocity.
+- [01:06:17,740 - 01:06:22,740] He has his coordinates, he stacks up his meter sticks in here.
+- [01:06:23,920 - 01:06:29,920] His meter sticks are not the same as my meter sticks, my meter sticks are standing still in my frame, his are moving in my frame.
+- [01:06:30,720 - 01:06:38,220] And he will call the bottom, the floor of the elevator, he will call that x prime equals zero.
+- [01:06:38,500 - 01:06:41,300] Prime means, in the frame of reference,
+- [01:06:41,300 - 01:06:41,800] of the
+- [01:06:41,800 - 01:06:42,100] of the
+- [01:06:42,120 - 01:06:43,120] passenger.
+- [01:06:43,120 - 01:06:45,120] Prime for passenger.
+- [01:06:45,120 - 01:06:46,120] Okay?
+- [01:06:46,120 - 01:06:48,120] So there's also an x prime coordinate.
+- [01:06:48,120 - 01:06:52,120] Let's take x prime equals zero, that's the floor of the elevator.
+- [01:06:52,120 - 01:06:57,120] The floor of the elevator is moving, and so the floor of the elevator looks like that.
+- [01:06:57,120 - 01:07:02,120] As time goes on, the floor of the elevator moves further and further to the right.
+- [01:07:02,120 - 01:07:10,120] Not only does the floor of the elevator, but x equals one follows along, and x equals two follow along.
+- [01:07:12,120 - 01:07:16,120] Those are intended to be parallel, I'm not sure they are.
+- [01:07:16,120 - 01:07:26,120] So the moving frame of reference measures distances relative to the floor of the elevator over here,
+- [01:07:26,120 - 01:07:32,120] whereas the stationary frame of reference measures distances relative to x equals zero over here.
+- [01:07:32,120 - 01:07:35,120] Now what's the relationship between x and x prime?
+- [01:07:35,120 - 01:07:37,120] Well let's take any old point over here.
+- [01:07:37,120 - 01:07:41,120] This is a point in space and time, it's a point of space at some time.
+- [01:07:41,120 - 01:07:46,120] And let's ask what its x value is.
+- [01:07:46,120 - 01:07:50,120] Its x value is the distance to here.
+- [01:07:50,120 - 01:07:55,120] In other words, it's the coordinate that the stationary observer sees.
+- [01:07:55,120 - 01:07:57,120] Just call it x.
+- [01:07:57,120 - 01:07:59,120] What about x prime?
+- [01:07:59,120 - 01:08:02,120] x prime is the distance to the floor of the elevator.
+- [01:08:02,120 - 01:08:04,120] The elevator is moving.
+- [01:08:04,120 - 01:08:09,120] So x prime is this distance.
+- [01:08:09,120 - 01:08:11,120] What's the difference between them?
+- [01:08:11,120 - 01:08:16,120] The difference between them is just the distance that the elevator has moved.
+- [01:08:16,120 - 01:08:19,120] Velocity of the elevator times time.
+- [01:08:19,120 - 01:08:23,120] That's how far the elevator has moved in an amount of time t.
+- [01:08:23,120 - 01:08:28,120] It's moved with its velocity, it's moving with a uniform velocity, v times t.
+- [01:08:28,120 - 01:08:29,120] So what is x prime?
+- [01:08:29,120 - 01:08:32,120] Here's x prime over here.
+- [01:08:32,120 - 01:08:37,120] x prime is equal to x minus vt.
+- [01:08:37,120 - 01:08:41,120] That's the relationship between the primed coordinate,
+- [01:08:41,120 - 01:08:43,120] and the unprimed coordinate.
+- [01:08:43,120 - 01:08:47,120] And this you better get used to, this idea of relating frames of reference like this.
+- [01:08:47,120 - 01:08:56,120] That's the relationship between the moving frame and the stationary frame.
+- [01:08:56,120 - 01:08:59,120] Now there's one other thing in Newtonian physics.
+- [01:08:59,120 - 01:09:01,120] We're not yet doing relativity.
+- [01:09:01,120 - 01:09:06,120] In Newtonian physics, all observers measure the same time.
+- [01:09:06,120 - 01:09:09,120] Time is the same for everybody.
+- [01:09:09,120 - 01:09:14,120] And so we can write another equation that t prime is the same as t.
+- [01:09:14,120 - 01:09:16,120] This is Newtonian physics.
+- [01:09:16,120 - 01:09:19,120] This is not yet relativity, this is not yet Einstein.
+- [01:09:19,120 - 01:09:21,120] It gets modified in Einstein.
+- [01:09:21,120 - 01:09:28,120] But this is the relationship between the coordinates measured by the moving observer,
+- [01:09:28,120 - 01:09:32,120] and the coordinates measured by the stationary observer.
+- [01:09:32,120 - 01:09:34,120] It's a coordinate transformation.
+- [01:09:34,120 - 01:09:37,120] x prime is x minus vt, t prime is equal to t.
+- [01:09:37,120 - 01:09:49,120] Now, let's suppose now that there was an object which is standing still in the outside frame of reference.
+- [01:09:49,120 - 01:09:51,120] This guy drops his ball here.
+- [01:09:51,120 - 01:09:58,120] The ball stands, let's suppose it stands, let's say it stands still in my frame of reference, just for fun.
+- [01:09:58,120 - 01:10:02,120] How does it move in his frame of reference?
+- [01:10:02,120 - 01:10:07,120] If it's standing still in my frame of reference, what is it doing in his frame of reference?
+- [01:10:07,120 - 01:10:11,120] I'm in particular interested in the velocity.
+- [01:10:11,120 - 01:10:18,120] Alright, so if a ball is standing still in my frame of reference, it means x is equal to a constant.
+- [01:10:18,120 - 01:10:20,120] It's just standing there still.
+- [01:10:20,120 - 01:10:22,120] The elevator is going by.
+- [01:10:22,120 - 01:10:26,120] The person in the elevator is looking at the ball, sees it moving.
+- [01:10:26,120 - 01:10:31,120] Alright, if x is a constant, then x prime is of course just minus vt.
+- [01:10:31,120 - 01:10:34,120] But what I want to do is differentiate this equation with respect to time.
+- [01:10:34,120 - 01:10:36,120] What does it say?
+- [01:10:36,120 - 01:10:41,120] It says that x prime dot, I'm using dot to indicate time derivative.
+- [01:10:41,120 - 01:10:44,120] Standard notation, we've used it before.
+- [01:10:44,120 - 01:10:49,120] A dot indicates a derivative with respect to time.
+- [01:10:49,120 - 01:10:54,120] That's equal to x dot.
+- [01:10:54,120 - 01:11:00,120] But if x is constant, if it's standing still in my frame of reference, that's zero.
+- [01:11:00,120 - 01:11:05,120] What's the derivative of minus vt with respect to t?
+- [01:11:05,120 - 01:11:07,120] Just minus v.
+- [01:11:07,120 - 01:11:19,120] So this was a long-winded way to say that the velocity of the ball in the, as seen from inside the elevator, is minus v.
+- [01:11:19,120 - 01:11:20,120] Of course it is.
+- [01:11:20,120 - 01:11:23,120] The object was standing still in my frame of reference.
+- [01:11:23,120 - 01:11:31,120] The observer is moving past it with velocity v, and of course sees it moving backward relative to him with velocity minus v.
+- [01:11:31,120 - 01:11:33,120] That's all this says.
+- [01:11:33,120 - 01:11:34,120] Okay.
+- [01:11:34,120 - 01:11:40,120] So what does it say about the acceleration as seen in the moving frame of reference?
+- [01:11:40,120 - 01:11:43,120] Let's differentiate it one more time.
+- [01:11:43,120 - 01:11:49,120] Differentiating it one more time, that gives us the acceleration in the prime frame of reference.
+- [01:11:49,120 - 01:11:52,120] What's the derivative of v with respect to t?
+- [01:11:52,120 - 01:11:53,120] If v is constant?
+- [01:11:53,120 - 01:11:55,120] Zero.
+- [01:11:55,120 - 01:12:02,120] So if it's not accelerating in my frame of reference, it's not accelerating in his frame of reference.
+- [01:12:02,120 - 01:12:03,120] Very simple.
+- [01:12:03,120 - 01:12:04,120] Okay?
+- [01:12:04,120 - 01:12:05,120] Trivial, in fact.
+- [01:12:05,120 - 01:12:17,120] But now let's suppose that the elevator is not moving with uniform velocity, but that it's moving with uniform acceleration.
+- [01:12:17,120 - 01:12:22,120] Then the distance that the elevator moves is not vt.
+- [01:12:22,120 - 01:12:24,120] What is it?
+- [01:12:24,120 - 01:12:32,120] Supposing it's moving with uniform acceleration, a-acceleration equals little g.
+- [01:12:32,120 - 01:12:34,120] The acceleration due to gravity.
+- [01:12:34,120 - 01:12:44,120] Then, how does the floor of the elevator move relative to me?
+- [01:12:44,120 - 01:12:47,120] If it's accelerating like that.
+- [01:12:47,120 - 01:12:51,120] Well, it doesn't move on a straight line, it moves on a curved line.
+- [01:12:51,120 - 01:12:54,120] It moves on a parabola.
+- [01:12:54,120 - 01:12:59,120] If it's uniformly accelerated relative to me, it's moving on a parabola.
+- [01:12:59,120 - 01:13:06,120] And that parabola is x equals one half gt squared.
+- [01:13:06,120 - 01:13:07,120] Is this known to everybody?
+- [01:13:07,120 - 01:13:12,120] This is a standard formula for uniform acceleration.
+- [01:13:16,120 - 01:13:18,120] Yell out if you don't know it.
+- [01:13:18,120 - 01:13:25,120] Okay, this is the elementary calculation of a thing moving with uniform acceleration.
+- [01:13:25,120 - 01:13:27,120] So, the moving observers, the floor, is x.
+- [01:13:27,120 - 01:13:38,120] The moving observers, the floor, moves to the right, one half gt squared, along with the floor, all the other meter sticks.
+- [01:13:38,120 - 01:13:40,120] The end of all the meter sticks do the same thing.
+- [01:13:40,120 - 01:13:44,120] They accelerate off on a curved path in spacetime.
+- [01:13:44,120 - 01:13:48,120] An acceleration means a curved path in spacetime.
+- [01:13:48,120 - 01:13:53,120] So, let's see what the relation between x prime and x is.
+- [01:13:53,120 - 01:13:55,120] Again, same thing.
+- [01:13:55,120 - 01:13:56,120] Here's x prime.
+- [01:13:56,120 - 01:13:58,120] Here's x.
+- [01:13:58,120 - 01:14:00,120] What's the difference between them?
+- [01:14:00,120 - 01:14:06,120] The difference between them is x minus one half gt squared.
+- [01:14:06,120 - 01:14:11,120] This distance is one half gt squared.
+- [01:14:11,120 - 01:14:15,120] The distance from here to here.
+- [01:14:15,120 - 01:14:20,120] x prime is x minus gt squared.
+- [01:14:20,120 - 01:14:22,120] This is the neutral equation.
+- [01:14:22,120 - 01:14:24,120] This is the neutral equation.
+- [01:14:24,120 - 01:14:25,120] This is the neutral equation.
+- [01:14:25,120 - 01:14:31,120] This is the new transformation for transforming to an accelerated frame of reference.
+- [01:14:31,120 - 01:14:41,120] Okay, let's say again that the passenger drops a coin, or whatever it is, and that the coin happens to be standing still.
+- [01:14:41,120 - 01:14:46,120] He throws it in just such a way that it's standing still in my frame of reference.
+- [01:14:46,120 - 01:14:49,120] That again means x is a constant.
+- [01:14:49,120 - 01:14:51,120] What does it say about x prime?
+- [01:14:51,120 - 01:14:53,120] It says that x prime...
+- [01:14:53,120 - 01:14:55,120] Well, let's work it out.
+- [01:14:55,120 - 01:14:57,120] Let's work it out.
+- [01:14:57,120 - 01:15:01,120] What does it say about the velocity?
+- [01:15:01,120 - 01:15:10,120] If x is standing still, and we differentiate this, we get the velocity in the prime frame of reference.
+- [01:15:10,120 - 01:15:14,120] Zero from differentiating x, standing still in my frame of reference.
+- [01:15:14,120 - 01:15:20,120] But what happens if we differentiate minus one half gt squared?
+- [01:15:20,120 - 01:15:21,120] Minus gt.
+- [01:15:21,120 - 01:15:30,120] But I'm interested in the acceleration that the observer in here sees, so I differentiate it again.
+- [01:15:30,120 - 01:15:32,120] x prime double dot.
+- [01:15:32,120 - 01:15:36,120] The acceleration seen from inside here.
+- [01:15:36,120 - 01:15:39,120] What do I get when I differentiate it once more?
+- [01:15:39,120 - 01:15:42,120] Just minus g.
+- [01:15:42,120 - 01:15:49,120] This is a mathematical statement of the simple trivial observation
+- [01:15:49,120 - 01:15:53,120] that acceleration works the same way as gravity.
+- [01:15:53,120 - 01:15:58,120] The accelerated elevator gives rise to an acceleration for anything that you drop,
+- [01:15:58,120 - 01:16:00,120] which is just minus g.
+- [01:16:00,120 - 01:16:04,120] Just like in an ordinary gravitational field of the Earth.
+- [01:16:04,120 - 01:16:12,120] So anything which is dropped in this elevator accelerates toward the floor.
+- [01:16:12,120 - 01:16:16,120] Not in the direction of the elevator's acceleration,
+- [01:16:16,120 - 01:16:18,120] but in the backward direction.
+- [01:16:18,120 - 01:16:20,120] That's the minus sign here.
+- [01:16:20,120 - 01:16:25,120] And it accelerates backward with the acceleration minus g.
+- [01:16:25,120 - 01:16:28,120] So that's a mathematical statement.
+- [01:16:28,120 - 01:16:35,120] But what I wanted to bring out is that it really has to do with using a set of curved coordinates.
+- [01:16:35,120 - 01:16:45,120] It has to do, or that acceleration is really the choice of a curvy linear set of coordinates to describe space-time.
+- [01:16:45,120 - 01:16:47,120] That's the real lesson here.
+- [01:16:47,120 - 01:16:49,120] Acceleration.
+- [01:16:49,120 - 01:16:58,120] An accelerated reference frame is described by a coordinate transformation to a set of curved coordinates.
+- [01:16:58,120 - 01:17:00,120] We need to keep that in mind.
+- [01:17:00,120 - 01:17:05,120] The connection between gravity and curvature will be beginning to develop.
+- [01:17:05,120 - 01:17:09,120] But having done that, let's now come back to some simple physics.
+- [01:17:09,120 - 01:17:15,120] One of the things that Einstein became instantly famous for.
+- [01:17:17,120 - 01:17:20,120] We can work it out qualitatively.
+- [01:17:20,120 - 01:17:22,120] It's the bending of light.
+- [01:17:22,120 - 01:17:27,120] Okay, so his first step was to say,
+- [01:17:27,120 - 01:17:31,120] I really mean it when I say that the laws of physics in a gravitational field
+- [01:17:31,120 - 01:17:36,120] are the same as the laws of physics in an accelerated reference frame.
+- [01:17:36,120 - 01:17:41,120] And in particular, not just the laws of Newtonian mechanics, but the laws of everything.
+- [01:17:41,120 - 01:17:46,120] Nobody at that time had the faintest idea how gravity affects electric energy.
+- [01:17:46,120 - 01:17:49,120] How gravity affects electric and magnetic fields.
+- [01:17:49,120 - 01:17:51,120] They didn't know.
+- [01:17:51,120 - 01:17:57,120] In fact, I don't even know that the question was asked at that time in a serious way.
+- [01:17:57,120 - 01:18:03,120] And so it wasn't known, for that reason it wasn't known how gravity affects the motion of light rays.
+- [01:18:03,120 - 01:18:08,120] What Einstein said is, I now know how gravity should affect the motion of light rays.
+- [01:18:08,120 - 01:18:09,120] So here's his elevator.
+- [01:18:09,120 - 01:18:11,120] Now I'm drawing the elevator vertical.
+- [01:18:11,120 - 01:18:14,120] The vertical, the elevator will accelerate upward.
+- [01:18:14,120 - 01:18:16,120] And let's suppose a light beam is moving.
+- [01:18:16,120 - 01:18:20,120] And the light beam is shined from one side to the other.
+- [01:18:20,120 - 01:18:23,120] First, suppose the elevator is not accelerating.
+- [01:18:23,120 - 01:18:27,120] Let's suppose the elevator is standing still.
+- [01:18:27,120 - 01:18:29,120] And you shine a light beam, what does it do?
+- [01:18:29,120 - 01:18:32,120] It goes in a straight line, and it goes right across the elevator.
+- [01:18:32,120 - 01:18:34,120] It hits this point over here.
+- [01:18:34,120 - 01:18:37,120] Now what happens if the elevator is accelerated upward?
+- [01:18:37,120 - 01:18:40,120] Well, let's send the light beam, just arbitrarily,
+- [01:18:40,120 - 01:18:46,120] let's send the light beam at exactly the instant when the elevator begins to accelerate.
+- [01:18:46,120 - 01:18:50,120] It's not yet moving, it's just beginning to accelerate.
+- [01:18:50,120 - 01:18:53,120] So the light beam starts moving off horizontally.
+- [01:18:53,120 - 01:18:55,120] But now the accelerate,
+- [01:18:55,120 - 01:18:56,120] I keep saying accelerate,
+- [01:18:56,120 - 01:18:59,120] the elevator is accelerating upward.
+- [01:18:59,120 - 01:19:03,120] And so where does the light beam hit the other side of the elevator?
+- [01:19:03,120 - 01:19:05,120] Down here somewheres.
+- [01:19:05,120 - 01:19:07,120] And it travels in a curved path.
+- [01:19:07,120 - 01:19:12,120] In fact, that curved path will be a parabola again.
+- [01:19:12,120 - 01:19:15,120] It will travel on a parabolic orbit.
+- [01:19:16,120 - 01:19:20,120] And that parabolic orbit,
+- [01:19:20,120 - 01:19:23,120] you can work out easily,
+- [01:19:23,120 - 01:19:26,120] just from the motion of the elevator.
+- [01:19:26,120 - 01:19:29,120] And what do you find?
+- [01:19:29,120 - 01:19:35,120] You find that the light ray has a downward component of acceleration,
+- [01:19:35,120 - 01:19:37,120] which is equal to g.
+- [01:19:37,120 - 01:19:39,120] The same acceleration.
+- [01:19:39,120 - 01:19:43,120] If the elevator is accelerated upward,
+- [01:19:43,120 - 01:19:45,120] with acceleration g,
+- [01:19:45,120 - 01:19:50,120] then the light ray will have a downward component of acceleration,
+- [01:19:50,120 - 01:19:53,120] which will also be g.
+- [01:19:53,120 - 01:19:56,120] So by that little argument,
+- [01:19:56,120 - 01:19:58,120] nothing more than that,
+- [01:19:58,120 - 01:20:03,120] Einstein deduced the fact that light falls in a gravitational field.
+- [01:20:03,120 - 01:20:06,120] As I said, this was unknown.
+- [01:20:06,120 - 01:20:08,120] Nobody even suspected it,
+- [01:20:08,120 - 01:20:11,120] that the existence of heavy masses,
+- [01:20:11,120 - 01:20:13,120] which create gravitational fields,
+- [01:20:13,120 - 01:20:14,120] would cause
+- [01:20:14,120 - 01:20:18,120] light to do anything other than travel in a straight line.
+- [01:20:18,120 - 01:20:21,120] In fact, light doesn't travel in a straight line
+- [01:20:21,120 - 01:20:24,120] when it passes through the Earth,
+- [01:20:24,120 - 01:20:26,120] passes across the Earth.
+- [01:20:26,120 - 01:20:27,120] Why?
+- [01:20:27,120 - 01:20:30,120] Because the gravitational field of the Earth can be thought of
+- [01:20:30,120 - 01:20:32,120] as an upward acceleration.
+- [01:20:32,120 - 01:20:34,120] And so, light will fall.
+- [01:20:34,120 - 01:20:36,120] Let's go through...
+- [01:20:36,120 - 01:20:37,120] Question?
+- [01:20:37,120 - 01:20:38,120] Yeah.
+- [01:20:38,120 - 01:20:41,120] Suppose you shine the light in the direction of the acceleration.
+- [01:20:41,120 - 01:20:42,120] Yeah.
+- [01:20:42,120 - 01:20:43,120] It's a little more complicated.
+- [01:20:43,120 - 01:20:46,120] It still has an effect,
+- [01:20:46,120 - 01:20:48,120] and it affects the energy of the light ray.
+- [01:20:48,120 - 01:20:50,120] But it won't affect the speed.
+- [01:20:50,120 - 01:20:51,120] No.
+- [01:20:51,120 - 01:20:52,120] Because that depends on...
+- [01:20:52,120 - 01:20:53,120] Right.
+- [01:20:53,120 - 01:20:55,120] The acceleration in the vertical direction
+- [01:20:55,120 - 01:20:58,120] will correspond to change in energy of the...
+- [01:20:58,120 - 01:20:59,120] Yeah.
+- [01:20:59,120 - 01:21:00,120] It won't affect the speed.
+- [01:21:00,120 - 01:21:01,120] That's correct.
+- [01:21:01,120 - 01:21:02,120] One more question.
+- [01:21:02,120 - 01:21:03,120] Yeah.
+- [01:21:03,120 - 01:21:05,120] The Eddington experiment that verified general relativity.
+- [01:21:05,120 - 01:21:06,120] Yeah.
+- [01:21:06,120 - 01:21:08,120] If you take plain old Newtonian mechanics
+- [01:21:08,120 - 01:21:11,120] and assume that a photon is a particle of mass,
+- [01:21:11,120 - 01:21:12,120] E over C squared,
+- [01:21:12,120 - 01:21:15,120] and just use Newton's gravity equation,
+- [01:21:15,120 - 01:21:16,120] will it properly...
+- [01:21:16,120 - 01:21:17,120] Yeah. Let's do it.
+- [01:21:17,120 - 01:21:18,120] Let's do it.
+- [01:21:18,120 - 01:21:19,120] Let's do it.
+- [01:21:19,120 - 01:21:20,120] And that's what it...
+- [01:21:20,120 - 01:21:22,120] That's general relativity predicts exactly the same thing.
+- [01:21:22,120 - 01:21:25,120] By a factor of two.
+- [01:21:25,120 - 01:21:29,120] But let's see if we can roughly work out
+- [01:21:29,120 - 01:21:32,120] the bending of light by the sun.
+- [01:21:32,120 - 01:21:33,120] Okay.
+- [01:21:33,120 - 01:21:34,120] The question is this.
+- [01:21:34,120 - 01:21:39,120] If a light ray passes the sun,
+- [01:21:39,120 - 01:21:40,120] and clearly,
+- [01:21:40,120 - 01:21:42,120] Einstein has already proved that light rays
+- [01:21:42,120 - 01:21:43,120] are not the same as light rays.
+- [01:21:43,120 - 01:21:44,120] So,
+- [01:21:44,120 - 01:21:45,120] if a light ray passes the sun,
+- [01:21:45,120 - 01:21:46,120] and the sun falls in a gravitational field,
+- [01:21:46,120 - 01:21:47,120] so he wanted to estimate...
+- [01:21:47,120 - 01:21:48,120] The first thing he did
+- [01:21:48,120 - 01:21:49,120] before he had the full apparatus
+- [01:21:49,120 - 01:21:50,120] of the general theory of relativity,
+- [01:21:50,120 - 01:21:51,120] he had as much as I've explained up till now,
+- [01:21:51,120 - 01:21:52,120] and he said,
+- [01:21:52,120 - 01:21:53,120] I will try to estimate
+- [01:21:53,120 - 01:21:54,120] how much the light bends.
+- [01:21:54,120 - 01:21:55,120] In other words,
+- [01:21:55,120 - 01:21:56,120] what angle does the light ray get accelerated...
+- [01:21:56,120 - 01:21:57,120] What's the right word?
+- [01:21:57,120 - 01:21:58,120] Deflected.
+- [01:21:58,120 - 01:21:59,120] Yeah.
+- [01:21:59,120 - 01:22:00,120] By what angle does the light ray get deflected?
+- [01:22:00,120 - 01:22:01,120] All right.
+- [01:22:01,120 - 01:22:02,120] We can make an estimate.
+- [01:22:02,120 - 01:22:03,120] Now,
+- [01:22:03,120 - 01:22:04,120] at the end of the day,
+- [01:22:04,120 - 01:22:05,120] we can make an estimate
+- [01:22:05,120 - 01:22:06,120] of the light ray's speed.
+- [01:22:06,120 - 01:22:07,120] So,
+- [01:22:07,120 - 01:22:08,120] if the light ray is...
+- [01:22:08,120 - 01:22:09,120] If the light ray is...
+- [01:22:09,120 - 01:22:10,120] If the light ray is...
+- [01:22:10,120 - 01:22:11,120] All right.
+- [01:22:11,120 - 01:22:12,120] We can make an estimate.
+- [01:22:12,120 - 01:22:13,120] Now,
+- [01:22:13,120 - 01:22:14,120] at this point,
+- [01:22:14,120 - 01:22:15,120] he was reduced to estimates
+- [01:22:15,120 - 01:22:17,120] because he didn't know the details
+- [01:22:17,120 - 01:22:19,120] of how the spherical Earth
+- [01:22:19,120 - 01:22:21,120] with its varying gravitational field
+- [01:22:21,120 - 01:22:22,120] would really affect things.
+- [01:22:22,120 - 01:22:23,120] But, in particular,
+- [01:22:23,120 - 01:22:24,120] he was interested in a light ray
+- [01:22:24,120 - 01:22:27,120] which just skimmed the surface of the sun,
+- [01:22:27,120 - 01:22:29,120] got as close to the sun as...
+- [01:22:29,120 - 01:22:30,120] Why?
+- [01:22:30,120 - 01:22:32,120] Because the effect would be maximal
+- [01:22:32,120 - 01:22:34,120] the closer the light ray got to the sun.
+- [01:22:34,120 - 01:22:35,120] Of course,
+- [01:22:35,120 - 01:22:36,120] he wasn't interested in light rays
+- [01:22:36,120 - 01:22:37,120] that went through the sun.
+- [01:22:37,120 - 01:22:38,120] Light rays don't go through the sun.
+- [01:22:38,120 - 01:22:40,120] A light ray that just skimmed
+- [01:22:40,120 - 01:22:41,120] the sun,
+- [01:22:41,120 - 01:22:43,120] how much it got deflected.
+- [01:22:43,120 - 01:22:44,120] Okay,
+- [01:22:44,120 - 01:22:46,120] let's see if we can figure it out.
+- [01:22:52,120 - 01:22:53,120] First of all,
+- [01:22:53,120 - 01:22:55,120] in passing...
+- [01:22:55,120 - 01:22:58,120] In passing through the...
+- [01:22:58,120 - 01:23:01,120] When it passes close to the sun,
+- [01:23:01,120 - 01:23:03,120] when it passes close to the sun,
+- [01:23:03,120 - 01:23:06,120] it has an acceleration toward the sun,
+- [01:23:06,120 - 01:23:08,120] which is just the acceleration field
+- [01:23:08,120 - 01:23:09,120] of the sun.
+- [01:23:09,120 - 01:23:10,120] So, when it passes
+- [01:23:10,120 - 01:23:11,120] close to the sun,
+- [01:23:11,120 - 01:23:12,120] it's in the vicinity of the sun.
+- [01:23:12,120 - 01:23:13,120] Let's break it up.
+- [01:23:13,120 - 01:23:16,120] When it's out beyond the distance
+- [01:23:16,120 - 01:23:18,120] comparable to the radius of the sun,
+- [01:23:18,120 - 01:23:21,120] it's too far from the sun to feel anything.
+- [01:23:21,120 - 01:23:23,120] When it's within some region
+- [01:23:23,120 - 01:23:26,120] comparable to twice the radius of the sun here,
+- [01:23:26,120 - 01:23:29,120] it feels the gravitational pull of the sun.
+- [01:23:29,120 - 01:23:33,120] What's the acceleration that it feels downward?
+- [01:23:33,120 - 01:23:34,120] Well, for that,
+- [01:23:34,120 - 01:23:35,120] we just have to work out
+- [01:23:35,120 - 01:23:37,120] the acceleration due to gravity.
+- [01:23:37,120 - 01:23:38,120] What we have to work out
+- [01:23:38,120 - 01:23:39,120] is how much acceleration
+- [01:23:39,120 - 01:23:41,120] is there at the surface of the sun.
+- [01:23:41,120 - 01:23:43,120] I think we already had a formula for that, right?
+- [01:23:43,120 - 01:23:47,120] The acceleration due is
+- [01:23:47,120 - 01:23:50,120] m, mass of the sun,
+- [01:23:50,120 - 01:23:53,120] g over r squared.
+- [01:23:55,120 - 01:23:57,120] That's the...
+- [01:23:57,120 - 01:23:59,120] Do I have that right?
+- [01:23:59,120 - 01:24:04,120] mg over r squared downward, right?
+- [01:24:04,120 - 01:24:06,120] Everything gets accelerated downward,
+- [01:24:06,120 - 01:24:08,120] light as well as everything,
+- [01:24:08,120 - 01:24:10,120] and all with the same acceleration.
+- [01:24:10,120 - 01:24:13,120] So mg divided by r squared
+- [01:24:13,120 - 01:24:14,120] is the acceleration,
+- [01:24:14,120 - 01:24:17,120] the vertical component of the acceleration.
+- [01:24:17,120 - 01:24:19,120] All right?
+- [01:24:19,120 - 01:24:22,120] How much velocity does the...
+- [01:24:22,120 - 01:24:25,120] How much vertical component of the velocity...
+- [01:24:25,120 - 01:24:27,120] Now, vertical doesn't mean toward the sun.
+- [01:24:27,120 - 01:24:29,120] It means vertical on the blackboard here.
+- [01:24:29,120 - 01:24:31,120] How much vertical component of velocity
+- [01:24:31,120 - 01:24:35,120] does it have after it passes the sun?
+- [01:24:35,120 - 01:24:38,120] Well, to calculate the change in velocity
+- [01:24:38,120 - 01:24:41,120] you multiply the acceleration by time.
+- [01:24:41,120 - 01:24:43,120] Acceleration times time
+- [01:24:43,120 - 01:24:45,120] is the change in velocity.
+- [01:24:45,120 - 01:24:47,120] So you take this acceleration
+- [01:24:47,120 - 01:24:50,120] and multiply it by the amount of time,
+- [01:24:50,120 - 01:24:54,120] let's call it delta t,
+- [01:24:54,120 - 01:24:58,120] that it takes for the light beam
+- [01:24:58,120 - 01:25:02,120] to cross across the radius of the sun.
+- [01:25:02,120 - 01:25:04,120] Now, we can estimate that
+- [01:25:04,120 - 01:25:06,120] because we know how fast light moves.
+- [01:25:06,120 - 01:25:08,120] It moves with the speed of light.
+- [01:25:08,120 - 01:25:13,120] So how long does it take?
+- [01:25:13,120 - 01:25:15,120] It takes a time, delta t,
+- [01:25:15,120 - 01:25:18,120] which is approximately twice the rate...
+- [01:25:18,120 - 01:25:19,120] this distance here,
+- [01:25:19,120 - 01:25:21,120] divided by the velocity.
+- [01:25:21,120 - 01:25:25,120] That's velocity times time equals distance.
+- [01:25:25,120 - 01:25:28,120] So time is distance that it travels
+- [01:25:28,120 - 01:25:30,120] divided by the velocity.
+- [01:25:30,120 - 01:25:31,120] But what velocity?
+- [01:25:31,120 - 01:25:33,120] The velocity of light.
+- [01:25:33,120 - 01:25:35,120] The velocity of light going across here.
+- [01:25:35,120 - 01:25:38,120] So that's 2r divided by c.
+- [01:25:38,120 - 01:25:43,120] So let's plug that in.
+- [01:25:43,120 - 01:25:45,120] That gives us another 2.
+- [01:25:45,120 - 01:25:52,120] 2 is not important.
+- [01:25:52,120 - 01:25:56,120] r divided by c.
+- [01:25:56,120 - 01:25:58,120] And what is that?
+- [01:25:58,120 - 01:26:03,120] That's twice mg over rc.
+- [01:26:03,120 - 01:26:07,120] That's the downward component
+- [01:26:07,120 - 01:26:09,120] of velocity here.
+- [01:26:09,120 - 01:26:11,120] But that's not the angle.
+- [01:26:11,120 - 01:26:14,120] The angle is basically the ratio of...
+- [01:26:14,120 - 01:26:17,120] If we have a small angle relative to the horizontal...
+- [01:26:17,120 - 01:26:19,120] Here's the horizontal.
+- [01:26:19,120 - 01:26:21,120] Small angle relative to the horizontal.
+- [01:26:21,120 - 01:26:23,120] That's the velocity.
+- [01:26:23,120 - 01:26:25,120] This is the direction of the velocity
+- [01:26:25,120 - 01:26:27,120] after it passes the sun.
+- [01:26:27,120 - 01:26:29,120] Then the downward component here,
+- [01:26:29,120 - 01:26:32,120] the angle is the ratio of the downward component
+- [01:26:32,120 - 01:26:34,120] to the horizontal component.
+- [01:26:34,120 - 01:26:37,120] The downward component divided by the velocity
+- [01:26:37,120 - 01:26:39,120] divided by the horizontal component
+- [01:26:39,120 - 01:26:42,120] is essentially the angle,
+- [01:26:42,120 - 01:26:45,120] at least if the angle is small.
+- [01:26:45,120 - 01:26:47,120] So the angle,
+- [01:26:47,120 - 01:26:49,120] let's call it theta,
+- [01:26:49,120 - 01:26:52,120] is equal to the ratio of the downward component,
+- [01:26:52,120 - 01:26:53,120] here it is,
+- [01:26:53,120 - 01:26:58,120] 2mg over rc.
+- [01:26:58,120 - 01:27:00,120] That's the downward component of the velocity.
+- [01:27:00,120 - 01:27:05,120] Divide that by the horizontal component of the velocity,
+- [01:27:05,120 - 01:27:07,120] and that gives you the angle.
+- [01:27:07,120 - 01:27:10,120] Another horizontal component of the velocity
+- [01:27:10,120 - 01:27:11,120] is 1 over c,
+- [01:27:11,120 - 01:27:13,120] and here's the answer.
+- [01:27:13,120 - 01:27:19,120] 2mg over rc squared.
+- [01:27:19,120 - 01:27:22,120] That's a very small angle typically,
+- [01:27:22,120 - 01:27:25,120] mainly because c is a big number
+- [01:27:25,120 - 01:27:27,120] and g is a small number.
+- [01:27:27,120 - 01:27:29,120] So g is a very small number,
+- [01:27:29,120 - 01:27:31,120] c is a very big number,
+- [01:27:31,120 - 01:27:33,120] c squared is even bigger,
+- [01:27:33,120 - 01:27:36,120] and so that's typically a small angle
+- [01:27:36,120 - 01:27:39,120] when the light ray goes across the sun.
+- [01:27:41,120 - 01:27:44,120] So that was the crude estimate
+- [01:27:44,120 - 01:27:46,120] that Einstein made.
+- [01:27:46,120 - 01:27:50,120] I can't remember what the correct answer is
+- [01:27:50,120 - 01:27:52,120] from the general theory of relativity.
+- [01:27:52,120 - 01:27:54,120] It's within a factor of two of this.
+- [01:27:54,120 - 01:27:56,120] I think maybe it's just exactly
+- [01:27:56,120 - 01:27:57,120] either twice this or half of it,
+- [01:27:57,120 - 01:27:59,120] I can't remember.
+- [01:28:01,120 - 01:28:03,120] And so every light beam
+- [01:28:03,120 - 01:28:07,120] that passes by the edge of the sun
+- [01:28:07,120 - 01:28:09,120] gets deflected by that much.
+- [01:28:09,120 - 01:28:12,120] That was Einstein's prediction.
+- [01:28:12,120 - 01:28:15,120] It was verified by looking at stars
+- [01:28:15,120 - 01:28:18,120] passing across the sun during an eclipse.
+- [01:28:18,120 - 01:28:20,120] We don't need to go through that.
+- [01:28:20,120 - 01:28:22,120] Most of you know the story.
+- [01:28:24,120 - 01:28:26,120] But the main point here
+- [01:28:26,120 - 01:28:30,120] is that Einstein used the idea
+- [01:28:30,120 - 01:28:32,120] that gravity and acceleration are the same.
+- [01:28:32,120 - 01:28:35,120] Something that was known to everybody,
+- [01:28:35,120 - 01:28:37,120] but he used it in a context
+- [01:28:37,120 - 01:28:39,120] which nobody had ever thought of.
+- [01:28:39,120 - 01:28:41,120] Namely, he applied it to the motion of light
+- [01:28:41,120 - 01:28:44,120] and to electromagnetic phenomena in general.
+- [01:28:44,120 - 01:28:47,120] Okay, so that's...
+- [01:28:47,120 - 01:28:50,120] Now...
+- [01:28:50,120 - 01:28:54,120] Yes, gravity is like acceleration,
+- [01:28:54,120 - 01:28:58,120] but that idea is pretty much limited
+- [01:28:58,120 - 01:29:00,120] to a uniform gravitational field,
+- [01:29:00,120 - 01:29:02,120] a uniform vector,
+- [01:29:02,120 - 01:29:04,120] a vertical gravitational field.
+- [01:29:04,120 - 01:29:06,120] It doesn't really make sense
+- [01:29:06,120 - 01:29:08,120] when you try to think about it globally
+- [01:29:08,120 - 01:29:11,120] in terms of the Earth's gravitational field
+- [01:29:11,120 - 01:29:14,120] when you stop thinking of a flat Earth approximation.
+- [01:29:14,120 - 01:29:16,120] So here's the Earth.
+- [01:29:20,120 - 01:29:24,120] The effect of the Earth's gravity
+- [01:29:24,120 - 01:29:27,120] on anything over here, out here,
+- [01:29:27,120 - 01:29:29,120] Einstein said is exactly the same
+- [01:29:29,120 - 01:29:31,120] as if you were in an elevator over here,
+- [01:29:31,120 - 01:29:37,120] accelerating upward with a certain acceleration.
+- [01:29:37,120 - 01:29:40,120] Well, first of all,
+- [01:29:40,120 - 01:29:42,120] you can...
+- [01:29:42,120 - 01:29:44,120] The acceleration has to be different
+- [01:29:44,120 - 01:29:46,120] in different places,
+- [01:29:46,120 - 01:29:48,120] different direction in different places,
+- [01:29:48,120 - 01:29:51,120] different magnitude in different places.
+- [01:29:51,120 - 01:29:54,120] And so there's no overall sense
+- [01:29:54,120 - 01:29:56,120] in which you can take the gravitational field
+- [01:29:56,120 - 01:29:58,120] of the Earth and replace it
+- [01:29:58,120 - 01:30:01,120] by a single accelerated frame of reference.
+- [01:30:01,120 - 01:30:04,120] The acceleration has to be this way over here,
+- [01:30:04,120 - 01:30:06,120] this way over here,
+- [01:30:06,120 - 01:30:07,120] this way over here,
+- [01:30:07,120 - 01:30:08,120] this way over here.
+- [01:30:08,120 - 01:30:10,120] So there's certainly no sense
+- [01:30:10,120 - 01:30:13,120] in which the full gravitational field of the Earth
+- [01:30:13,120 - 01:30:16,120] can be replaced by saying
+- [01:30:16,120 - 01:30:20,120] you're in an accelerated reference frame.
+- [01:30:20,120 - 01:30:25,120] What you can say is for a small amount of time
+- [01:30:25,120 - 01:30:28,120] and over a small amount of distance,
+- [01:30:28,120 - 01:30:30,120] distances which are too small
+- [01:30:30,120 - 01:30:33,120] to detect the fact that the gravitational field
+- [01:30:33,120 - 01:30:36,120] has different directions in different places,
+- [01:30:36,120 - 01:30:38,120] in other words, on a small elevator,
+- [01:30:38,120 - 01:30:42,120] for a small amount of time,
+- [01:30:42,120 - 01:30:45,120] the effect of the Earth's gravitational field
+- [01:30:45,120 - 01:30:48,120] is the same as the effect of an accelerated elevator,
+- [01:30:48,120 - 01:30:50,120] but only for a small amount of time.
+- [01:30:50,120 - 01:30:51,120] Why?
+- [01:30:51,120 - 01:30:54,120] Because, well, unless you allow the acceleration
+- [01:30:54,120 - 01:30:55,120] to change with time,
+- [01:30:55,120 - 01:30:57,120] but for a small amount of time,
+- [01:30:57,120 - 01:30:59,120] you can pretend that a small amount of time
+- [01:30:59,120 - 01:31:01,120] and a small amount of space,
+- [01:31:01,120 - 01:31:03,120] not enough space to feel the change
+- [01:31:03,120 - 01:31:05,120] in the direction of gravity,
+- [01:31:05,120 - 01:31:08,120] you can say that gravity has the same effect
+- [01:31:08,120 - 01:31:10,120] as acceleration.
+- [01:31:10,120 - 01:31:11,120] But if you really think about it,
+- [01:31:11,120 - 01:31:13,120] I mean, you have to think much more deeply
+- [01:31:13,120 - 01:31:16,120] about what the gravitational field
+- [01:31:16,120 - 01:31:18,120] of the whole round Earth is.
+- [01:31:18,120 - 01:31:21,120] Now, this is related to something else.
+- [01:31:21,120 - 01:31:25,120] If you're freely falling near the surface of the Earth,
+- [01:31:25,120 - 01:31:28,120] you don't feel the effect of gravity.
+- [01:31:29,120 - 01:31:31,120] You feel, you can tell the difference
+- [01:31:31,120 - 01:31:33,120] between free fall and not free fall,
+- [01:31:33,120 - 01:31:35,120] but there's no difference between falling
+- [01:31:35,120 - 01:31:37,120] at the surface of the Earth
+- [01:31:37,120 - 01:31:40,120] and being out in the middle of space
+- [01:31:40,120 - 01:31:42,120] with no gravitating objects at all.
+- [01:31:42,120 - 01:31:46,120] What about,
+- [01:31:46,120 - 01:31:50,120] what about somebody falling over here?
+- [01:31:50,120 - 01:31:53,120] Can somebody falling over here,
+- [01:31:53,120 - 01:31:54,120] just in free fall,
+- [01:31:54,120 - 01:31:57,120] can they or can they not tell
+- [01:31:57,120 - 01:31:59,120] the difference between
+- [01:31:59,120 - 01:32:01,120] falling and being in an elevator,
+- [01:32:01,120 - 01:32:02,120] so to speak,
+- [01:32:02,120 - 01:32:04,120] or being uniformly accelerated?
+- [01:32:04,120 - 01:32:07,120] What's the right word?
+- [01:32:07,120 - 01:32:10,120] Can a person over here tell that they're falling
+- [01:32:10,120 - 01:32:12,120] as opposed to being in outer space?
+- [01:32:12,120 - 01:32:14,120] Can they tell the difference between
+- [01:32:14,120 - 01:32:15,120] gravity and acceleration?
+- [01:32:15,120 - 01:32:17,120] And the answer is yes.
+- [01:32:17,120 - 01:32:19,120] They can tell the difference because
+- [01:32:19,120 - 01:32:21,120] the gravitational field of the Earth
+- [01:32:21,120 - 01:32:22,120] is not uniform.
+- [01:32:22,120 - 01:32:24,120] It points in different directions
+- [01:32:24,120 - 01:32:27,120] and it varies with distance.
+- [01:32:27,120 - 01:32:29,120] So that means an observer
+- [01:32:29,120 - 01:32:30,120] is an observer,
+- [01:32:30,120 - 01:32:32,120] a cubic observer.
+- [01:32:32,120 - 01:32:34,120] A cubic observer has a different
+- [01:32:34,120 - 01:32:36,120] gravitational field on them
+- [01:32:36,120 - 01:32:37,120] in different places.
+- [01:32:37,120 - 01:32:39,120] The bottom of his feet is being pulled
+- [01:32:39,120 - 01:32:41,120] harder than the top of his head,
+- [01:32:41,120 - 01:32:43,120] so he's being stretched that way.
+- [01:32:47,120 - 01:32:49,120] The gravitational field is sort of
+- [01:32:49,120 - 01:32:51,120] pinched in toward the center here
+- [01:32:51,120 - 01:32:53,120] and there's some sense of being
+- [01:32:53,120 - 01:32:54,120] squeezed this way.
+- [01:32:54,120 - 01:32:56,120] You know what those are called?
+- [01:32:56,120 - 01:32:57,120] Those are tidal forces.
+- [01:32:57,120 - 01:32:58,120] We talked about tidal forces
+- [01:32:58,120 - 01:33:00,120] last time.
+- [01:33:00,120 - 01:33:02,120] Tidal forces are real.
+- [01:33:02,120 - 01:33:03,120] You can feel them,
+- [01:33:03,120 - 01:33:05,120] but in order to feel them,
+- [01:33:05,120 - 01:33:06,120] you have to be large enough
+- [01:33:06,120 - 01:33:08,120] to sense the variation
+- [01:33:08,120 - 01:33:10,120] in the gravitational field.
+- [01:33:10,120 - 01:33:11,120] So the right statement is
+- [01:33:11,120 - 01:33:13,120] if you're small enough,
+- [01:33:13,120 - 01:33:14,120] if you're small enough
+- [01:33:14,120 - 01:33:17,120] and for a small enough amount of time,
+- [01:33:17,120 - 01:33:20,120] then the gravitational field,
+- [01:33:20,120 - 01:33:22,120] you don't feel it in falling
+- [01:33:22,120 - 01:33:24,120] and it can be completely replaced
+- [01:33:24,120 - 01:33:26,120] by being in an accelerated
+- [01:33:26,120 - 01:33:27,120] frame of reference.
+- [01:33:28,120 - 01:33:30,120] Gravity and acceleration are the same.
+- [01:33:30,120 - 01:33:32,120] But if you're big enough to feel
+- [01:33:32,120 - 01:33:35,120] the curvature of the Earth's surface
+- [01:33:35,120 - 01:33:36,120] and if you're big enough
+- [01:33:36,120 - 01:33:37,120] and you wait long enough,
+- [01:33:37,120 - 01:33:39,120] enough time,
+- [01:33:39,120 - 01:33:41,120] and you can feel the variation
+- [01:33:41,120 - 01:33:42,120] of the radial component
+- [01:33:42,120 - 01:33:43,120] of the gravitational field,
+- [01:33:43,120 - 01:33:44,120] then you can definitely tell
+- [01:33:44,120 - 01:33:46,120] the difference between being
+- [01:33:46,120 - 01:33:50,120] in outer space and being in free fall.
+- [01:33:50,120 - 01:33:52,120] Free fall isn't so free.
+- [01:33:52,120 - 01:33:54,120] You get squished one way,
+- [01:33:54,120 - 01:33:55,120] stretched another way.
+- [01:33:55,120 - 01:33:56,120] These are tidal forces.
+- [01:33:56,120 - 01:33:58,120] The effect of tidal forces
+- [01:33:58,120 - 01:34:00,120] are an obstruction
+- [01:34:00,120 - 01:34:03,120] to eliminating the gravitational field
+- [01:34:03,120 - 01:34:05,120] by replacing it
+- [01:34:05,120 - 01:34:09,120] by an accelerated frame of reference.
+- [01:34:09,120 - 01:34:11,120] You can't really replace
+- [01:34:11,120 - 01:34:13,120] a gravitational field
+- [01:34:13,120 - 01:34:15,120] by an accelerated frame of reference
+- [01:34:15,120 - 01:34:18,120] except locally and over small times.
+- [01:34:18,120 - 01:34:20,120] So the equivalence principle
+- [01:34:20,120 - 01:34:22,120] is a limited idea
+- [01:34:22,120 - 01:34:24,120] that makes sense only
+- [01:34:24,120 - 01:34:27,120] in this limited sense.
+- [01:34:27,120 - 01:34:28,120] There's an obstruction
+- [01:34:28,120 - 01:34:30,120] to getting rid of the gravitational field
+- [01:34:30,120 - 01:34:32,120] and replacing it by free fall,
+- [01:34:32,120 - 01:34:35,120] by a field of acceleration.
+- [01:34:35,120 - 01:34:38,120] And that obstruction is tidal forces.
+- [01:34:38,120 - 01:34:41,120] There's no way that you can construct
+- [01:34:41,120 - 01:34:44,120] an accelerated frame of reference
+- [01:34:44,120 - 01:34:46,120] which will completely get rid
+- [01:34:46,120 - 01:34:48,120] of the gravitation
+- [01:34:48,120 - 01:34:50,120] the way that we would
+- [01:34:50,120 - 01:34:52,120] if the gravitation were uniform.
+- [01:34:52,120 - 01:34:54,120] Gravitation's uniform,
+- [01:34:54,120 - 01:34:56,120] you go to an accelerated frame of reference
+- [01:34:56,120 - 01:34:59,120] falling down with uniform acceleration,
+- [01:34:59,120 - 01:35:00,120] and gravity is gone
+- [01:35:00,120 - 01:35:02,120] in that frame of reference.
+- [01:35:02,120 - 01:35:05,120] No way to do it for the real Earth.
+- [01:35:05,120 - 01:35:07,120] The real Earth is a gravitational field
+- [01:35:07,120 - 01:35:09,120] which is created by mass,
+- [01:35:09,120 - 01:35:11,120] and mass corresponds to divergence
+- [01:35:11,120 - 01:35:13,120] of gravitational field.
+- [01:35:13,120 - 01:35:16,120] It's the divergence of the gravitational field
+- [01:35:16,120 - 01:35:17,120] which gets in the way
+- [01:35:17,120 - 01:35:19,120] of trying to replace it
+- [01:35:19,120 - 01:35:21,120] by a uniform acceleration.
+- [01:35:21,120 - 01:35:25,120] So uniform acceleration is
+- [01:35:25,120 - 01:35:28,120] or how to say it,
+- [01:35:28,120 - 01:35:31,120] eliminating gravity
+- [01:35:31,120 - 01:35:35,120] by replacing it by a accelerated frame of reference.
+- [01:35:35,120 - 01:35:36,120] There's an obstruction,
+- [01:35:36,120 - 01:35:38,120] and the obstruction is
+- [01:35:38,120 - 01:35:39,120] the masses in the universe
+- [01:35:39,120 - 01:35:42,120] create a divergence of the gravitational field.
+- [01:35:48,120 - 01:35:49,120] I'm beginning to get tired,
+- [01:35:49,120 - 01:35:52,120] so I think I should probably quit any minute now.
+- [01:35:55,120 - 01:35:59,120] We need to,
+- [01:35:59,120 - 01:36:00,120] you need to review
+- [01:36:00,120 - 01:36:03,120] some special theory of relativity.
+- [01:36:03,120 - 01:36:06,120] Perhaps I'll take another 10 minutes
+- [01:36:06,120 - 01:36:08,120] and just remind you of the things
+- [01:36:08,120 - 01:36:10,120] we learned about special relativity
+- [01:36:10,120 - 01:36:11,120] in previous courses,
+- [01:36:11,120 - 01:36:13,120] and which I want you to know.
+- [01:36:13,120 - 01:36:16,120] Let's see.
+- [01:36:16,120 - 01:36:18,120] Yeah.
+- [01:36:18,120 - 01:36:20,120] Question.
+- [01:36:20,120 - 01:36:21,120] Inside that elevator,
+- [01:36:21,120 - 01:36:23,120] that's where there's
+- [01:36:23,120 - 01:36:25,120] special relativity holds.
+- [01:36:25,120 - 01:36:26,120] Exactly.
+- [01:36:26,120 - 01:36:27,120] Yeah.
+- [01:36:27,120 - 01:36:28,120] The Lorentz transformation.
+- [01:36:28,120 - 01:36:29,120] Yeah.
+- [01:36:29,120 - 01:36:30,120] We of course are studying it
+- [01:36:30,120 - 01:36:31,120] in the approximation
+- [01:36:31,120 - 01:36:33,120] of the moment of Newtonian physics.
+- [01:36:33,120 - 01:36:35,120] Yeah.
+- [01:36:35,120 - 01:36:36,120] I don't think I want to do
+- [01:36:36,120 - 01:36:37,120] special relativity tonight.
+- [01:36:37,120 - 01:36:38,120] I think I won't do that.
+- [01:36:38,120 - 01:36:39,120] Instead,
+- [01:36:39,120 - 01:36:40,120] I want to talk about
+- [01:36:40,120 - 01:36:42,120] geometry a little bit.
+- [01:36:42,120 - 01:36:46,120] Geometry and curvature.
+- [01:36:46,120 - 01:36:47,120] Curvature is a concept
+- [01:36:47,120 - 01:36:48,120] we're going to need,
+- [01:36:48,120 - 01:36:51,120] and I think we can just
+- [01:36:51,120 - 01:36:53,120] discuss it without discussing
+- [01:36:53,120 - 01:36:54,120] physics for a little,
+- [01:36:54,120 - 01:36:55,120] for a minute.
+- [01:36:55,120 - 01:37:02,120] Just a little bit.
+- [01:37:02,120 - 01:37:04,120] How do I describe
+- [01:37:04,120 - 01:37:06,120] the geometry of this blackboard?
+- [01:37:06,120 - 01:37:07,120] The geometry of this blackboard
+- [01:37:07,120 - 01:37:09,120] is flat space.
+- [01:37:09,120 - 01:37:12,120] Just flat two-dimensional space.
+- [01:37:12,120 - 01:37:14,120] How do I describe its geometry?
+- [01:37:14,120 - 01:37:16,120] The way a mathematician
+- [01:37:16,120 - 01:37:18,120] would describe its geometry
+- [01:37:18,120 - 01:37:20,120] is by specifying the distance
+- [01:37:20,120 - 01:37:23,120] between any pair of neighboring points.
+- [01:37:23,120 - 01:37:24,120] If you know the distance
+- [01:37:24,120 - 01:37:27,120] between any pair of neighboring points,
+- [01:37:27,120 - 01:37:29,120] you can rebuild the entire geometry
+- [01:37:29,120 - 01:37:30,120] from that.
+- [01:37:30,120 - 01:37:32,120] Knowing the distance between any pair
+- [01:37:32,120 - 01:37:33,120] of neighboring points,
+- [01:37:33,120 - 01:37:34,120] nearby points,
+- [01:37:34,120 - 01:37:35,120] is enough to rebuild
+- [01:37:35,120 - 01:37:37,120] the geometry of this blackboard
+- [01:37:37,120 - 01:37:39,120] and to discover that it's flat.
+- [01:37:39,120 - 01:37:42,120] Let's take a pair of points.
+- [01:37:42,120 - 01:37:43,120] Let's characterize them
+- [01:37:43,120 - 01:37:46,120] by coordinates x and y,
+- [01:37:46,120 - 01:37:48,120] or just let's call them x sub i.
+- [01:37:48,120 - 01:37:50,120] i runs from one to two.
+- [01:37:50,120 - 01:37:52,120] And here's another point
+- [01:37:52,120 - 01:37:53,120] at position x plus,
+- [01:37:53,120 - 01:37:59,120] dx and y plus dy.
+- [01:37:59,120 - 01:38:01,120] Two points separated
+- [01:38:01,120 - 01:38:03,120] by a differential distance
+- [01:38:03,120 - 01:38:05,120] dx and dy.
+- [01:38:05,120 - 01:38:06,120] What's the difference,
+- [01:38:06,120 - 01:38:08,120] what's the distance between them?
+- [01:38:08,120 - 01:38:09,120] The distance between them
+- [01:38:09,120 - 01:38:15,120] is just dx squared plus dy squared.
+- [01:38:15,120 - 01:38:16,120] Well, that's the square
+- [01:38:16,120 - 01:38:18,120] of the distance between them.
+- [01:38:18,120 - 01:38:19,120] The square of the distance
+- [01:38:19,120 - 01:38:20,120] between them,
+- [01:38:20,120 - 01:38:22,120] that's called ds squared,
+- [01:38:22,120 - 01:38:24,120] is dx squared plus dy squared.
+- [01:38:24,120 - 01:38:26,120] That's just Pythagoras' theorem.
+- [01:38:26,120 - 01:38:34,120] dx, dy, ds.
+- [01:38:34,120 - 01:38:37,120] ds squared is dx squared plus dy squared.
+- [01:38:37,120 - 01:38:40,120] Now, that is something which is true
+- [01:38:40,120 - 01:38:42,120] if you use for your coordinates
+- [01:38:42,120 - 01:38:50,120] nice rectangular Cartesian coordinates.
+- [01:38:50,120 - 01:38:51,120] What would happen
+- [01:38:51,120 - 01:38:54,120] if I replaced the Cartesian coordinates
+- [01:38:54,120 - 01:38:55,120] on the blackboard
+- [01:38:55,120 - 01:38:57,120] by some crazy set of coordinates,
+- [01:38:57,120 - 01:39:04,120] coordinates for which
+- [01:39:04,120 - 01:39:06,120] the axes were curved
+- [01:39:06,120 - 01:39:09,120] in some highly complicated kind of way.
+- [01:39:09,120 - 01:39:11,120] There are lots of different coordinate systems
+- [01:39:11,120 - 01:39:12,120] that you can use
+- [01:39:12,120 - 01:39:14,120] to describe the blackboard.
+- [01:39:14,120 - 01:39:15,120] They don't have to all be drawn
+- [01:39:15,120 - 01:39:17,120] as a rectangular grid.
+- [01:39:17,120 - 01:39:19,120] We could use polar coordinates.
+- [01:39:19,120 - 01:39:21,120] Polar coordinates look like this.
+- [01:39:21,120 - 01:39:26,120] All kinds of other coordinates.
+- [01:39:26,120 - 01:39:28,120] And in general,
+- [01:39:28,120 - 01:39:31,120] the lines of constant coordinate,
+- [01:39:31,120 - 01:39:32,120] lines of constant x
+- [01:39:32,120 - 01:39:34,120] and lines of constant y
+- [01:39:34,120 - 01:39:36,120] would be curves on the blackboard.
+- [01:39:36,120 - 01:39:38,120] That would be a general description
+- [01:39:38,120 - 01:39:39,120] of the blackboard,
+- [01:39:39,120 - 01:39:44,120] not tied to nice rectangular mesh like this.
+- [01:39:44,120 - 01:39:46,120] All right, so let's suppose now
+- [01:39:46,120 - 01:39:48,120] this could be x equals 1,
+- [01:39:48,120 - 01:39:49,120] x equals 2,
+- [01:39:49,120 - 01:39:50,120] x equals 3,
+- [01:39:50,120 - 01:39:53,120] here's y and here's x equals 0,
+- [01:39:53,120 - 01:39:55,120] here's y equals 1,
+- [01:39:55,120 - 01:39:56,120] y equals 2,
+- [01:39:56,120 - 01:39:58,120] y equals 3.
+- [01:39:58,120 - 01:40:00,120] I have a grid.
+- [01:40:00,120 - 01:40:02,120] If I tell you the value of x and y,
+- [01:40:02,120 - 01:40:04,120] you can tell me exactly
+- [01:40:04,120 - 01:40:06,120] where the point is on the blackboard,
+- [01:40:06,120 - 01:40:08,120] but the grid is no longer a rectangular grid.
+- [01:40:08,120 - 01:40:10,120] The distance between two points
+- [01:40:10,120 - 01:40:13,120] is no longer given by dx squared plus dy squared.
+- [01:40:13,120 - 01:40:15,120] There's a general formula
+- [01:40:15,120 - 01:40:17,120] for any coordinate of x and y.
+- [01:40:17,120 - 01:40:18,120] The distance between two points
+- [01:40:18,120 - 01:40:20,120] is no longer given by dx squared plus dy squared.
+- [01:40:20,120 - 01:40:22,120] There's a kind of curved coordinates like this,
+- [01:40:22,120 - 01:40:24,120] and it looks like this.
+- [01:40:24,120 - 01:40:27,120] It's a ds squared.
+- [01:40:27,120 - 01:40:30,120] It has some coefficients.
+- [01:40:30,120 - 01:40:42,120] It's a ds squared.
+- [01:40:42,120 - 01:40:44,120] It's a ds squared.
+- [01:40:44,120 - 01:40:46,120] It's a ds squared.
+- [01:40:46,120 - 01:40:48,120] It's a ds squared.
+- [01:40:48,120 - 01:40:50,120] Whatever it is,
+- [01:40:50,120 - 01:40:53,120] it will involve these little differential displacements,
+- [01:40:53,120 - 01:40:56,120] and it will involve them quadratically
+- [01:40:56,120 - 01:40:58,120] to the second powers.
+- [01:40:58,120 - 01:40:59,120] We're going to go over this again.
+- [01:40:59,120 - 01:41:01,120] I'm going to lay it out for you now.
+- [01:41:01,120 - 01:41:03,120] We're going to even prove it.
+- [01:41:03,120 - 01:41:05,120] But it's going to be some quadratic form.
+- [01:41:05,120 - 01:41:08,120] This is called a quadratic form.
+- [01:41:08,120 - 01:41:11,120] The x squared, the x times dy,
+- [01:41:11,120 - 01:41:13,120] and dy squared.
+- [01:41:13,120 - 01:41:15,120] It'll have all of these things in it.
+- [01:41:15,120 - 01:41:17,120] And furthermore, these g's
+- [01:41:17,120 - 01:41:19,120] will depend on where you are.
+- [01:41:19,120 - 01:41:20,120] There'll be numbers.
+- [01:41:20,120 - 01:41:21,120] There'll be numbers,
+- [01:41:21,120 - 01:41:23,120] but there'll really be fields.
+- [01:41:23,120 - 01:41:26,120] They'll depend on x and y.
+- [01:41:26,120 - 01:41:28,120] x, x.
+- [01:41:29,120 - 01:41:31,120] I'm really getting tired,
+- [01:41:31,120 - 01:41:35,120] so I should probably quit in the next five minutes.
+- [01:41:37,120 - 01:41:39,120] I don't know how many of you have seen this sort of formula.
+- [01:41:39,120 - 01:41:41,120] How many have not seen it?
+- [01:41:41,120 - 01:41:42,120] How many have not?
+- [01:41:42,120 - 01:41:44,120] All right, so we're going to work it out next time,
+- [01:41:44,120 - 01:41:46,120] and I'll show you why this is true.
+- [01:41:46,120 - 01:41:47,120] But before I do,
+- [01:41:47,120 - 01:41:50,120] let's just go through what some of these things mean.
+- [01:41:51,120 - 01:41:53,120] What does it mean to have a g here?
+- [01:41:53,120 - 01:41:54,120] In the original formula,
+- [01:41:54,120 - 01:41:57,120] you had nothing multiplying dx times dy.
+- [01:41:57,120 - 01:41:58,120] There's dx squared, and then you have a g squared.
+- [01:41:59,120 - 01:42:01,120] There's dx squared, there's dy squared.
+- [01:42:01,120 - 01:42:03,120] I say more generally,
+- [01:42:03,120 - 01:42:05,120] if you think about general sets of coordinates
+- [01:42:05,120 - 01:42:07,120] with curvy linear coordinates,
+- [01:42:07,120 - 01:42:09,120] then there'll be terms with dx times dy.
+- [01:42:09,120 - 01:42:11,120] Do you know what those mean?
+- [01:42:13,120 - 01:42:15,120] When there's a term dx dy,
+- [01:42:15,120 - 01:42:19,120] it means the coordinate axes are not perpendicular.
+- [01:42:21,120 - 01:42:23,120] That's what that means.
+- [01:42:23,120 - 01:42:25,120] What about g and g ?
+- [01:42:25,120 - 01:42:27,120] Those have to do with the relative spread.
+- [01:42:27,120 - 01:42:31,120] If we were to make coordinates like this,
+- [01:42:31,120 - 01:42:37,120] which were much denser in one direction than the other direction,
+- [01:42:37,120 - 01:42:41,120] then the g and g would be different than each other.
+- [01:42:41,120 - 01:42:43,120] If the coordinates curve,
+- [01:42:43,120 - 01:42:46,120] and things change from place to place,
+- [01:42:46,120 - 01:42:49,120] then these g's depend on position.
+- [01:42:49,120 - 01:42:53,120] But the general formula for general curved coordinates
+- [01:42:53,120 - 01:42:55,120] for the distance between two points
+- [01:42:55,120 - 01:42:57,120] looks something like this.
+- [01:42:57,120 - 01:43:01,120] And it contains three functions of position.
+- [01:43:01,120 - 01:43:05,120] g , g , and g .
+- [01:43:05,120 - 01:43:07,120] Those functions are called the metric.
+- [01:43:07,120 - 01:43:09,120] And we're going to go through,
+- [01:43:09,120 - 01:43:11,120] I'm going to show you why that's true.
+- [01:43:11,120 - 01:43:16,120] But we're still just describing the blackboard.
+- [01:43:16,120 - 01:43:18,120] We're describing the blackboard,
+- [01:43:18,120 - 01:43:21,120] and the blackboard could always be described
+- [01:43:21,120 - 01:43:23,120] by these coordinates here.
+- [01:43:23,120 - 01:43:25,120] When it's true
+- [01:43:25,120 - 01:43:27,120] that you can describe a geometry
+- [01:43:27,120 - 01:43:29,120] in a simple way like this,
+- [01:43:29,120 - 01:43:31,120] the geometry is called flat.
+- [01:43:31,120 - 01:43:33,120] Even if you decide to describe it
+- [01:43:33,120 - 01:43:35,120] in a more complicated way,
+- [01:43:35,120 - 01:43:39,120] if you can find new coordinates
+- [01:43:39,120 - 01:43:41,120] that simplify it in this form,
+- [01:43:41,120 - 01:43:43,120] it's called flat.
+- [01:43:43,120 - 01:43:46,120] This is the hallmark of a flat geometry,
+- [01:43:46,120 - 01:43:49,120] Pythagoras' theorem, if you like.
+- [01:43:49,120 - 01:43:52,120] There are geometries which are not flat.
+- [01:43:52,120 - 01:43:54,120] There are geometries that no matter
+- [01:43:54,120 - 01:43:56,120] how you choose the coordinates,
+- [01:43:56,120 - 01:43:59,120] you cannot reduce it to this form.
+- [01:43:59,120 - 01:44:02,120] Those geometries are called curved.
+- [01:44:02,120 - 01:44:05,120] Know an example of curved geometry?
+- [01:44:05,120 - 01:44:08,120] The surface of a sphere.
+- [01:44:08,120 - 01:44:11,120] The surface of a sphere,
+- [01:44:11,120 - 01:44:13,120] you cannot choose coordinates
+- [01:44:13,120 - 01:44:15,120] on the surface of the sphere,
+- [01:44:15,120 - 01:44:17,120] which makes the distance between points
+- [01:44:17,120 - 01:44:19,120] dx squared plus dy squared.
+- [01:44:19,120 - 01:44:21,120] It's always going to be more complicated than that
+- [01:44:21,120 - 01:44:23,120] no matter how you choose the coordinates.
+- [01:44:23,120 - 01:44:25,120] What about the surface of a cylinder?
+- [01:44:26,120 - 01:44:29,120] Is the surface of a cylinder curved?
+- [01:44:33,120 - 01:44:35,120] No, it's not.
+- [01:44:35,120 - 01:44:37,120] It's flat.
+- [01:44:37,120 - 01:44:39,120] Because you can always choose exactly
+- [01:44:39,120 - 01:44:41,120] the same coordinates that you would choose
+- [01:44:41,120 - 01:44:43,120] if you unrolled it.
+- [01:44:43,120 - 01:44:45,120] You can't unroll a sphere
+- [01:44:45,120 - 01:44:47,120] and spread it out flat on a surface,
+- [01:44:47,120 - 01:44:49,120] but you can spread out a cylinder
+- [01:44:49,120 - 01:44:51,120] and make it flat on the surface.
+- [01:44:51,120 - 01:44:53,120] A cylinder is flat, a sphere is not.
+- [01:44:53,120 - 01:44:55,120] How about, let's see,
+- [01:44:55,120 - 01:44:57,120] what other kind of,
+- [01:44:57,120 - 01:44:59,120] a saddle surface.
+- [01:44:59,120 - 01:45:01,120] A saddle surface shaped like a saddle
+- [01:45:01,120 - 01:45:03,120] is also not flat.
+- [01:45:03,120 - 01:45:05,120] It can't be flattened out.
+- [01:45:05,120 - 01:45:07,120] A cone.
+- [01:45:07,120 - 01:45:09,120] What about a cone?
+- [01:45:09,120 - 01:45:16,120] A cone is flat everywhere except at the tip.
+- [01:45:16,120 - 01:45:19,120] A cone is flat everywhere except at the tip
+- [01:45:19,120 - 01:45:22,120] because you can always take a cone,
+- [01:45:25,120 - 01:45:26,120] and it's flat.
+- [01:45:26,120 - 01:45:28,120] It's not going to get flattened out.
+- [01:45:28,120 - 01:45:30,120] It's not going to get flattened out.
+- [01:45:30,120 - 01:45:32,120] It's going to get flattened out.
+- [01:45:32,120 - 01:45:34,120] It's going to get flattened out.
+- [01:45:34,120 - 01:45:36,120] There's a cone, right?
+- [01:45:36,120 - 01:45:38,120] There's a cone.
+- [01:45:38,120 - 01:45:40,120] At the tip,
+- [01:45:40,120 - 01:45:42,120] something funny is going on.
+- [01:45:42,120 - 01:45:44,120] But anywhere else,
+- [01:45:44,120 - 01:45:46,120] you can unwrap it
+- [01:45:46,120 - 01:45:48,120] and spread it out on the table.
+- [01:45:48,120 - 01:45:50,120] So you can use coordinates on a cone
+- [01:45:50,120 - 01:45:52,120] except for the tip,
+- [01:45:52,120 - 01:45:53,120] which look like this.
+- [01:45:53,120 - 01:45:54,120] Cones are not flat,
+- [01:45:54,120 - 01:45:55,120] at the tip.
+- [01:45:55,120 - 01:45:56,120] Cylinders are flat.
+- [01:45:56,120 - 01:45:57,120] Planes are flat.
+- [01:45:57,120 - 01:45:59,120] Spheres are not flat.
+- [01:45:59,120 - 01:46:01,120] How do you tell
+- [01:46:01,120 - 01:46:02,120] what's,
+- [01:46:02,120 - 01:46:03,120] whether a surface,
+- [01:46:03,120 - 01:46:05,120] or a given metric like this,
+- [01:46:05,120 - 01:46:08,120] describes something flat or not?
+- [01:46:08,120 - 01:46:11,120] Well, the answer is curvature,
+- [01:46:11,120 - 01:46:12,120] which I haven't defined.
+- [01:46:12,120 - 01:46:13,120] We're going to define it.
+- [01:46:13,120 - 01:46:15,120] The answer is curvature.
+- [01:46:15,120 - 01:46:18,120] But curvature is the obstruction
+- [01:46:18,120 - 01:46:22,120] to flattening out the coordinates.
+- [01:46:22,120 - 01:46:23,120] Tidal forces
+- [01:46:23,120 - 01:46:24,120] are the obstruction
+- [01:46:24,120 - 01:46:28,120] to getting rid of the gravitational field
+- [01:46:28,120 - 01:46:30,120] by changing coordinates
+- [01:46:30,120 - 01:46:33,120] to accelerated reference frames.
+- [01:46:33,120 - 01:46:35,120] Though that connection
+- [01:46:35,120 - 01:46:37,120] is not accidental.
+- [01:46:37,120 - 01:46:39,120] Curvature is the obstruction
+- [01:46:39,120 - 01:46:41,120] to flattening a surface out
+- [01:46:41,120 - 01:46:44,120] or to thinking of it as flat.
+- [01:46:44,120 - 01:46:47,120] Tidal forces are the obstruction
+- [01:46:47,120 - 01:46:50,120] to removing a gravitational field
+- [01:46:50,120 - 01:46:52,120] by coordinate transformation
+- [01:46:52,120 - 01:46:53,120] to an accelerated frame
+- [01:46:53,120 - 01:46:56,120] of reference.
+- [01:46:56,120 - 01:46:57,120] That's the connection
+- [01:46:57,120 - 01:46:59,120] we want to build up.
+- [01:46:59,120 - 01:47:01,120] The curvature of space and time
+- [01:47:01,120 - 01:47:04,120] is essentially the same thing
+- [01:47:04,120 - 01:47:07,120] as the effect of a real gravitational field.
+- [01:47:07,120 - 01:47:09,120] The real effects of gravitational fields
+- [01:47:09,120 - 01:47:11,120] are tidal forces.
+- [01:47:11,120 - 01:47:12,120] And that's what we're going to find.
+- [01:47:12,120 - 01:47:14,120] The curvature of space-time
+- [01:47:14,120 - 01:47:16,120] is the same as tidal forces.
+- [01:47:16,120 - 01:47:17,120] Okay, let's quit now
+- [01:47:17,120 - 01:47:20,120] before I fall over in exhaustion.
+- [01:47:23,120 - 01:47:30,120] The preceding program
+- [01:47:30,120 - 01:47:32,120] is copyrighted by Stanford University.
+- [01:47:32,120 - 01:47:35,120] Please visit us at stanford.edu.
