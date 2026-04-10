@@ -1,0 +1,3069 @@
+# Transcript
+
+Source: core/cosmology/2009_winter_legacy_cosmology/046 - Cosmology ｜ Lecture 7 [KATSfJjZGVQ].mkv
+
+- [00:00:06,440 - 00:00:09,640] This program is brought to you by Stanford University.
+- [00:00:10,880 - 00:00:15,320] I want to come tonight to the idea of inflation.
+- [00:00:15,320 - 00:00:19,380] Inflation is an important idea in cosmology,
+- [00:00:20,879 - 00:00:24,519] maybe one of the most important and sort
+- [00:00:24,519 - 00:00:28,160] of at the root of much that we know,
+- [00:00:28,160 - 00:00:31,760] much that we suspect about cosmology.
+- [00:00:33,000 - 00:00:34,100] But before I do,
+- [00:00:34,100 - 00:00:38,250] let me remind you about what the presence
+- [00:00:38,250 - 00:00:42,400] of a cosmological constant does in Einstein's equations.
+- [00:00:42,620 - 00:00:43,960] The cosmological constant,
+- [00:00:43,960 - 00:00:44,920] I'll remind you,
+- [00:00:44,920 - 00:00:46,840] is just a term in the energy
+- [00:00:48,239 - 00:00:49,360] which doesn't have a constant.
+- [00:00:49,380 - 00:00:51,680] It doesn't dilute as the universe expands,
+- [00:00:51,680 - 00:00:54,600] an energy density which does not dilute.
+- [00:00:56,220 - 00:01:00,100] So it's just a term in Einstein's equations.
+- [00:01:00,320 - 00:01:03,260] Einstein's equations are the same as the Friedman,
+- [00:01:03,260 - 00:01:03,560] Roberts,
+- [00:01:03,560 - 00:01:04,120] and Walker,
+- [00:01:04,120 - 00:01:05,180] LaMaitre equations.
+- [00:01:05,980 - 00:01:10,940] A dot over A squared
+- [00:01:10,940 - 00:01:15,900] is equal to the energy density.
+- [00:01:17,160 - 00:01:19,260] And I'm going to take the case.
+- [00:01:19,380 - 00:01:20,780] The case of flat space,
+- [00:01:20,780 - 00:01:22,760] although we may want to modify that later,
+- [00:01:22,940 - 00:01:25,080] the case in which space itself is flat,
+- [00:01:25,080 - 00:01:26,620] not space-time,
+- [00:01:26,620 - 00:01:27,200] but space.
+- [00:01:28,100 - 00:01:29,140] And in that case,
+- [00:01:29,140 - 00:01:32,460] what goes here is just 8 pi over
+- [00:01:32,460 - 00:01:35,780] 3 times Newton's constant times the energy density.
+- [00:01:36,440 - 00:01:37,600] And in general,
+- [00:01:37,600 - 00:01:39,740] the energy density may dilute.
+- [00:01:40,300 - 00:01:42,380] The energy density or mass density,
+- [00:01:42,380 - 00:01:44,600] we discussed various cases.
+- [00:01:44,860 - 00:01:47,980] There was the case of matter dominated,
+- [00:01:47,980 - 00:01:51,810] where rho was just the mass energy
+- [00:01:51,810 - 00:01:55,640] of a collection of particles that are expanding.
+- [00:01:55,820 - 00:01:56,900] Because it's expanding,
+- [00:01:56,900 - 00:01:58,620] the energy density decreases.
+- [00:01:59,020 - 00:02:00,220] And in that case,
+- [00:02:00,220 - 00:02:01,740] rho goes like 1 over A cubed.
+- [00:02:02,500 - 00:02:05,620] We studied the case where rho was radiation energy.
+- [00:02:05,800 - 00:02:08,139] That's what dominates in the very early universe.
+- [00:02:08,180 - 00:02:09,840] It was 1 over A to the fourth.
+- [00:02:10,780 - 00:02:13,460] And we also talked about vacuum energy.
+- [00:02:13,700 - 00:02:15,080] And in vacuum energy,
+- [00:02:15,080 - 00:02:17,560] rho is just constant.
+- [00:02:18,460 - 00:02:21,220] So we can just call that rho naught.
+- [00:02:21,660 - 00:02:24,180] Or we can call the whole
+- [00:02:24,180 - 00:02:26,700] thing on the right-hand side lambda,
+- [00:02:27,040 - 00:02:28,660] or something proportional to lambda.
+- [00:02:28,860 - 00:02:30,880] There's some definition of lambda,
+- [00:02:30,880 - 00:02:32,400] the cosmological constant,
+- [00:02:32,960 - 00:02:34,060] which includes,
+- [00:02:34,060 - 00:02:36,300] I forget how many 8s and pis and so forth.
+- [00:02:36,560 - 00:02:40,500] But this whole right-hand side would be a constant then.
+- [00:02:41,580 - 00:02:43,200] Let's suppose this is a constant.
+- [00:02:43,400 - 00:02:44,860] Let's call this constant,
+- [00:02:44,860 - 00:02:46,580] let's just give it a name,
+- [00:02:46,580 - 00:02:48,240] h squared.
+- [00:02:50,060 - 00:02:52,520] And h is a constant.
+- [00:02:52,700 - 00:02:54,940] It does not change with time.
+- [00:02:56,340 - 00:02:58,920] That's the nature of vacuum energy.
+- [00:02:59,160 - 00:03:00,690] The nature of vacuum energy
+- [00:03:00,690 - 00:03:02,220] is the right-hand side doesn't change.
+- [00:03:02,460 - 00:03:03,080] Of course,
+- [00:03:03,080 - 00:03:04,400] the reason I'm calling it
+- [00:03:04,400 - 00:03:05,720] h squared instead of just h
+- [00:03:05,720 - 00:03:07,740] is because the left-hand side is a square.
+- [00:03:08,420 - 00:03:10,390] And this will have nice properties
+- [00:03:10,390 - 00:03:12,360] when I take the square root.
+- [00:03:12,800 - 00:03:14,680] It will say that A dot over
+- [00:03:14,680 - 00:03:16,560] A is just equal to the constant.
+- [00:03:16,580 - 00:03:17,180] So I'm calling this constant h,
+- [00:03:17,460 - 00:03:20,860] where h is the square root of the
+- [00:03:20,860 - 00:03:24,260] vacuum energy times g times 8 pi over 3.
+- [00:03:24,420 - 00:03:29,760] That's square root of 8 pi g
+- [00:03:29,760 - 00:03:35,100] over 3 times the vacuum energy rho naught.
+- [00:03:35,320 - 00:03:36,800] Rho naught just means vacuum energy.
+- [00:03:37,100 - 00:03:38,720] So if you know the vacuum energy,
+- [00:03:38,720 - 00:03:40,100] then you know h.
+- [00:03:40,260 - 00:03:41,360] As I emphasized,
+- [00:03:43,020 - 00:03:44,620] h is a constant.
+- [00:03:46,580 - 00:03:48,100] And then A dot over A
+- [00:03:48,100 - 00:03:49,620] is just equal to that constant.
+- [00:03:49,840 - 00:03:52,050] This is a special cosmology that
+- [00:03:52,050 - 00:03:54,260] has nothing in it but vacuum energy.
+- [00:03:55,140 - 00:03:55,700] Now,
+- [00:03:55,700 - 00:03:57,620] remember also that A dot over
+- [00:03:57,620 - 00:03:59,540] A is also the Hubble constant.
+- [00:04:00,940 - 00:04:03,350] So for this very special case
+- [00:04:03,350 - 00:04:05,760] where there is nothing but vacuum energy,
+- [00:04:05,980 - 00:04:07,680] nothing but vacuum energy,
+- [00:04:08,240 - 00:04:09,740] that is a special case,
+- [00:04:10,780 - 00:04:12,440] when there's nothing but vacuum energy,
+- [00:04:12,640 - 00:04:15,080] the Hubble constant is truly constant.
+- [00:04:15,200 - 00:04:16,380] It doesn't change with time.
+- [00:04:18,019 - 00:04:20,700] If the Hubble constant doesn't change with time,
+- [00:04:21,540 - 00:04:23,240] what does that say about A?
+- [00:04:23,400 - 00:04:23,560] Well,
+- [00:04:23,560 - 00:04:26,000] we can write it as A dot,
+- [00:04:26,000 - 00:04:27,740] which is dA by dt,
+- [00:04:28,300 - 00:04:29,960] is equal to this constant,
+- [00:04:29,960 - 00:04:30,820] Hubble constant,
+- [00:04:30,820 - 00:04:31,620] times A.
+- [00:04:32,300 - 00:04:35,280] And the solution to that equation is an exponential.
+- [00:04:35,480 - 00:04:37,540] The rate of change of the scale
+- [00:04:37,540 - 00:04:39,600] factor is proportional to the scale factor
+- [00:04:39,600 - 00:04:43,040] with a constant of proportionality just equal to h.
+- [00:04:43,600 - 00:04:46,160] And the solution to this is A,
+- [00:04:47,200 - 00:04:49,220] is equal to some constant,
+- [00:04:49,220 - 00:04:49,940] it doesn't matter,
+- [00:04:50,020 - 00:04:51,900] we can just ignore what the constant is,
+- [00:04:52,040 - 00:04:53,980] and write e to the ht.
+- [00:04:55,460 - 00:04:56,640] In other words,
+- [00:04:56,640 - 00:04:57,920] the scale factor,
+- [00:04:58,000 - 00:05:01,520] or the distance between distant galaxies,
+- [00:05:02,180 - 00:05:03,280] unbound galaxies,
+- [00:05:03,280 - 00:05:05,740] galaxies which don't have enough gravity to,
+- [00:05:06,360 - 00:05:07,320] between them,
+- [00:05:07,320 - 00:05:08,760] to keep them from receding,
+- [00:05:08,900 - 00:05:11,500] the distance grows exponentially.
+- [00:05:13,740 - 00:05:14,860] That's space-time.
+- [00:05:14,860 - 00:05:16,640] That space-time which is
+- [00:05:16,640 - 00:05:18,420] exponentially expanding in that manner
+- [00:05:18,420 - 00:05:20,420] is called de Sitter space.
+- [00:05:21,480 - 00:05:24,200] It's just a very simple solution of Einstein's equations
+- [00:05:24,200 - 00:05:27,220] with a positive cosmological constant.
+- [00:05:27,420 - 00:05:27,800] Incidentally,
+- [00:05:27,800 - 00:05:31,120] I've assumed that the vacuum energy here is positive.
+- [00:05:33,499 - 00:05:35,100] Could it be negative?
+- [00:05:35,340 - 00:05:35,540] Yeah,
+- [00:05:35,540 - 00:05:36,220] it could be negative,
+- [00:05:36,220 - 00:05:37,120] but in fact,
+- [00:05:37,280 - 00:05:38,880] let's take the case where it's positive,
+- [00:05:39,080 - 00:05:40,720] the vacuum energy density is positive,
+- [00:05:40,960 - 00:05:44,840] then this is the solution.
+- [00:05:44,840 - 00:05:46,880] And when I say it's the solution,
+- [00:05:47,120 - 00:05:50,020] I mean to say that the geometry,
+- [00:05:50,440 - 00:05:51,520] d tau squared,
+- [00:05:51,520 - 00:05:53,740] is equal to d t squared,
+- [00:05:55,800 - 00:05:57,460] minus A squared,
+- [00:05:57,840 - 00:06:02,180] which is minus e to the 2 ht,
+- [00:06:02,320 - 00:06:03,460] that's A squared,
+- [00:06:04,280 - 00:06:05,840] times dx squared,
+- [00:06:06,120 - 00:06:07,960] and dx squared means dx squared
+- [00:06:07,960 - 00:06:09,800] plus dy squared plus dz squared.
+- [00:06:10,120 - 00:06:11,380] How could it be negative?
+- [00:06:11,480 - 00:06:14,720] You have a positive quantity on the left-hand side.
+- [00:06:14,840 - 00:06:15,380] Yeah,
+- [00:06:15,380 - 00:06:16,000] yes,
+- [00:06:16,000 - 00:06:17,840] you're right.
+- [00:06:18,220 - 00:06:23,500] It can't be negative and space be flat.
+- [00:06:25,580 - 00:06:28,980] It can be negative if space is not flat.
+- [00:06:29,300 - 00:06:30,320] For example,
+- [00:06:30,320 - 00:06:35,780] there is the curvature term here,
+- [00:06:35,880 - 00:06:37,580] plus or minus 1 over A squared,
+- [00:06:38,860 - 00:06:39,780] but you're right,
+- [00:06:39,780 - 00:06:41,440] the whole thing here has to be positive
+- [00:06:41,440 - 00:06:44,040] in order for the left-hand side to be positive.
+- [00:06:44,840 - 00:06:46,640] But this can be negative and this can be positive,
+- [00:06:46,740 - 00:06:48,760] and something else happens.
+- [00:06:50,440 - 00:06:53,300] But let's not belabor that,
+- [00:06:53,420 - 00:06:54,520] because we're going to take it
+- [00:06:54,520 - 00:06:55,620] to be positive in any case,
+- [00:06:55,700 - 00:06:57,080] the vacuum energy to be positive.
+- [00:06:57,460 - 00:07:00,440] Einstein put his cosmological constant in it
+- [00:07:00,440 - 00:07:02,260] to make sure that the universe wasn't expanding.
+- [00:07:02,640 - 00:07:03,900] Is that how he did it?
+- [00:07:03,940 - 00:07:05,100] Is he just...
+- [00:07:07,940 - 00:07:08,380] Well,
+- [00:07:08,380 - 00:07:10,800] what he did was to say,
+- [00:07:10,860 - 00:07:13,440] we know that there's ordinary energy in the universe,
+- [00:07:13,440 - 00:07:15,980] so let's put in plus
+- [00:07:15,980 - 00:07:18,520] some constant M over A cubed.
+- [00:07:25,420 - 00:07:29,260] And then thought about the possibility of cancellation
+- [00:07:29,260 - 00:07:30,680] between this and this.
+- [00:07:30,880 - 00:07:31,020] Oh,
+- [00:07:31,020 - 00:07:32,680] so he put rho naught equal to
+- [00:07:32,680 - 00:07:34,340] minus M over A cubed in there.
+- [00:07:34,400 - 00:07:34,580] Yeah.
+- [00:07:36,420 - 00:07:38,520] It was a misstep.
+- [00:07:38,580 - 00:07:39,700] It didn't make sense.
+- [00:07:40,600 - 00:07:43,260] But that's why he introduced it in the first place.
+- [00:07:44,419 - 00:07:45,140] Okay.
+- [00:07:45,280 - 00:07:46,580] In any case,
+- [00:07:46,620 - 00:07:49,860] in any case,
+- [00:07:49,860 - 00:07:51,400] this geometry,
+- [00:07:51,580 - 00:07:54,360] this geometry which exponentially expands,
+- [00:07:54,720 - 00:07:57,960] the distance between any two points exponentially expands,
+- [00:07:58,320 - 00:08:01,400] it has a constant Hubble parameter.
+- [00:08:02,480 - 00:08:04,280] It's called de Sitter space.
+- [00:08:10,900 - 00:08:13,420] Discovered by the Dutch astronomer Willem van der Leyen,
+- [00:08:13,440 - 00:08:14,120] Willem van der Sitter,
+- [00:08:15,220 - 00:08:19,320] very shortly after Einstein invented his theory,
+- [00:08:20,159 - 00:08:24,160] long before it was known that the universe was expanding.
+- [00:08:29,000 - 00:08:33,640] And it's an important space-time in cosmology.
+- [00:08:33,840 - 00:08:36,900] It's important for two distinct purposes.
+- [00:08:38,240 - 00:08:40,510] One of them is the
+- [00:08:40,510 - 00:08:42,780] explanation of the currently accelerated universe.
+- [00:08:43,299 - 00:08:43,820] Acceleration,
+- [00:08:43,820 - 00:08:45,020] what does acceleration mean?
+- [00:08:45,740 - 00:08:49,010] It just means that the second
+- [00:08:49,010 - 00:08:52,280] time derivative of A is positive.
+- [00:08:52,820 - 00:08:54,720] Let's go back to this simple,
+- [00:08:54,720 - 00:08:56,320] this case over here.
+- [00:08:56,800 - 00:08:57,320] This,
+- [00:08:57,320 - 00:08:57,660] of course,
+- [00:08:57,660 - 00:08:59,380] would be called an unaccelerated universe
+- [00:08:59,380 - 00:09:01,060] because the second time derivative
+- [00:09:01,060 - 00:09:02,740] of A is just plain zero.
+- [00:09:03,740 - 00:09:07,190] This is accelerated because the second
+- [00:09:07,190 - 00:09:10,640] time derivative of A is positive.
+- [00:09:10,640 - 00:09:16,380] And in fact growing with time.
+- [00:09:16,700 - 00:09:17,520] All right,
+- [00:09:17,520 - 00:09:18,780] so that's the accelerated universe.
+- [00:09:18,940 - 00:09:19,820] It's an observed fact.
+- [00:09:22,700 - 00:09:23,380] Today,
+- [00:09:23,380 - 00:09:28,240] this is a correct description of our universe.
+- [00:09:28,300 - 00:09:29,380] Not quite.
+- [00:09:29,660 - 00:09:32,570] And not quite because there is some
+- [00:09:32,570 - 00:09:35,480] additional energy besides just the vacuum energy.
+- [00:09:36,360 - 00:09:38,370] So let me just remind you
+- [00:09:38,370 - 00:09:40,380] quickly what we know from observation.
+- [00:09:40,380 - 00:09:45,840] We know that the scale factor in the
+- [00:09:45,840 - 00:09:51,300] past was this usual t to the two-thirds.
+- [00:09:54,020 - 00:09:56,000] That's the matter-dominated universe.
+- [00:09:56,500 - 00:09:58,760] And then at some time of
+- [00:09:58,760 - 00:10:01,020] order a few billion years ago,
+- [00:10:01,200 - 00:10:03,640] somewhere more or less at the halfway
+- [00:10:03,640 - 00:10:06,080] point between now and the Big Bang,
+- [00:10:08,459 - 00:10:10,360] it began to end.
+- [00:10:10,380 - 00:10:12,590] It began to exponentially increase or
+- [00:10:12,590 - 00:10:14,800] it began to increase more rapidly.
+- [00:10:15,340 - 00:10:15,820] Now,
+- [00:10:15,820 - 00:10:17,520] t to the two-thirds doesn't look like that,
+- [00:10:17,520 - 00:10:17,880] does it?
+- [00:10:18,240 - 00:10:18,720] Yeah,
+- [00:10:18,720 - 00:10:19,540] curvature is wrong.
+- [00:10:20,900 - 00:10:22,660] T to the two-thirds look like that.
+- [00:10:23,520 - 00:10:25,480] Convexity is wrong.
+- [00:10:26,780 - 00:10:27,260] Right.
+- [00:10:27,760 - 00:10:30,250] And then at some point it
+- [00:10:30,250 - 00:10:32,740] did start to look like that.
+- [00:10:33,300 - 00:10:34,840] And we're somewhere over here.
+- [00:10:37,040 - 00:10:38,940] So this is an observation.
+- [00:10:38,940 - 00:10:41,060] This is not something which is speculation.
+- [00:10:43,420 - 00:10:47,280] And there's enough of this curve here that's been measured
+- [00:10:47,859 - 00:10:51,860] that it does fit neatly on to the exponential.
+- [00:10:52,840 - 00:10:53,740] It itself,
+- [00:10:53,740 - 00:10:54,120] of course,
+- [00:10:54,120 - 00:10:55,550] is not quite an exponential
+- [00:10:55,550 - 00:10:56,980] because it's a transitory behavior,
+- [00:10:57,900 - 00:11:03,060] but it appears to all observers tend to agree.
+- [00:11:03,640 - 00:11:07,420] It looks like it's entering into an exponential phase,
+- [00:11:07,420 - 00:11:08,080] right,
+- [00:11:08,080 - 00:11:11,360] which is another way of saying that the
+- [00:11:11,360 - 00:11:14,640] vacuum energy is bigger than the other energies,
+- [00:11:14,740 - 00:11:17,100] roughly by a factor of two today.
+- [00:11:17,480 - 00:11:20,040] But this is getting smaller and smaller with time,
+- [00:11:20,140 - 00:11:22,500] and this is not getting smaller and smaller with time.
+- [00:11:22,600 - 00:11:26,480] So that's our current understanding of the universe today.
+- [00:11:27,040 - 00:11:28,420] It's exponentially growing.
+- [00:11:29,800 - 00:11:30,940] It's the center of space.
+- [00:11:31,880 - 00:11:33,720] And the Hubble constant,
+- [00:11:33,720 - 00:11:35,840] which is not exactly constant today
+- [00:11:35,840 - 00:11:37,560] because it's not exactly exponential,
+- [00:11:38,080 - 00:11:40,660] but is tending to an exponential.
+- [00:11:42,020 - 00:11:42,920] That's today.
+- [00:11:44,840 - 00:11:49,300] It is also worth discussing the idea of a horizon.
+- [00:11:49,580 - 00:11:50,820] I think we've done this before,
+- [00:11:50,820 - 00:11:51,880] but let's do it again.
+- [00:11:52,720 - 00:11:54,120] It's an important idea.
+- [00:12:02,120 - 00:12:05,540] At some relative coordinate spacing,
+- [00:12:05,540 - 00:12:07,700] let's call it delta x,
+- [00:12:08,540 - 00:12:09,140] or at some,
+- [00:12:09,140 - 00:12:10,820] not coordinate spacing,
+- [00:12:11,060 - 00:12:11,940] at some distance,
+- [00:12:12,220 - 00:12:14,520] some actual proper distance,
+- [00:12:15,800 - 00:12:17,220] using Hubble's law,
+- [00:12:17,520 - 00:12:20,040] we can calculate the velocity
+- [00:12:21,439 - 00:12:23,160] as a function of that distance,
+- [00:12:23,400 - 00:12:24,790] and at some distance it becomes
+- [00:12:24,790 - 00:12:26,180] equal to the speed of light.
+- [00:12:26,820 - 00:12:27,460] All right?
+- [00:12:27,460 - 00:12:31,140] Remember that distance times Hubble is equal to velocity,
+- [00:12:31,800 - 00:12:33,600] and so if we want the
+- [00:12:33,600 - 00:12:35,400] velocity to be the speed of light,
+- [00:12:35,400 - 00:12:41,920] then the distance that we have to go out to
+- [00:12:41,920 - 00:12:44,220] is equal to the speed of light
+- [00:12:44,220 - 00:12:46,480] divided by that Hubble constant,
+- [00:12:46,680 - 00:12:48,840] the Hubble constant being the square
+- [00:12:48,840 - 00:12:51,000] root of a vacuum energy density.
+- [00:12:51,340 - 00:12:53,700] The smaller the vacuum energy density,
+- [00:12:54,920 - 00:12:56,340] the smaller h,
+- [00:12:57,440 - 00:13:00,580] the bigger the distance to that place
+- [00:13:00,580 - 00:13:02,240] where things are receding away from
+- [00:13:02,240 - 00:13:03,900] us with the speed of light.
+- [00:13:04,020 - 00:13:04,860] That place,
+- [00:13:04,860 - 00:13:05,240] of course,
+- [00:13:05,240 - 00:13:05,380] is called the speed of light.
+- [00:13:05,400 - 00:13:06,240] It's called the horizon.
+- [00:13:06,980 - 00:13:07,580] And,
+- [00:13:07,580 - 00:13:08,300] if you like,
+- [00:13:08,300 - 00:13:10,140] it's a sphere around us
+- [00:13:11,180 - 00:13:14,000] at a distance given by c over h.
+- [00:13:16,040 - 00:13:16,640] Numerically,
+- [00:13:16,640 - 00:13:20,940] it's about 10 or 12 or 15 billion light years,
+- [00:13:21,220 - 00:13:23,920] which accidentally happens to be
+- [00:13:23,920 - 00:13:26,640] about the same as the age of the universe.
+- [00:13:26,780 - 00:13:26,900] Now,
+- [00:13:26,900 - 00:13:28,520] whether that's an accident or not
+- [00:13:28,520 - 00:13:31,340] is a matter of very intense argument.
+- [00:13:32,040 - 00:13:33,860] But they're two different quantities.
+- [00:13:33,860 - 00:13:35,540] One is the age of the universe.
+- [00:13:36,560 - 00:13:37,540] In other words,
+- [00:13:37,540 - 00:13:38,640] the time...
+- [00:13:38,640 - 00:13:39,180] Where is it?
+- [00:13:39,260 - 00:13:41,180] I threw away my graph,
+- [00:13:41,180 - 00:13:41,660] but...
+- [00:13:42,859 - 00:13:43,700] There it is.
+- [00:13:43,820 - 00:13:45,460] The universe started in this,
+- [00:13:45,680 - 00:13:46,440] and we're over here.
+- [00:13:50,660 - 00:13:51,100] Okay.
+- [00:13:53,719 - 00:13:54,160] So,
+- [00:13:54,160 - 00:13:55,220] as it happens,
+- [00:13:56,180 - 00:13:57,500] this distance scale,
+- [00:13:58,540 - 00:14:00,560] apart from the factor of the speed of light,
+- [00:14:00,760 - 00:14:03,340] is about the same as the age of the universe.
+- [00:14:03,340 - 00:14:05,280] So the distance is about 10
+- [00:14:05,280 - 00:14:07,220] or 12 billion light years away.
+- [00:14:07,440 - 00:14:08,740] And at that distance,
+- [00:14:08,740 - 00:14:09,570] as I said...
+- [00:14:09,860 - 00:14:10,160] Yeah?
+- [00:14:10,420 - 00:14:11,260] I was going to say,
+- [00:14:11,260 - 00:14:12,380] isn't the Hubble...
+- [00:14:12,380 - 00:14:16,180] Isn't the tangent line at any point...
+- [00:14:16,180 - 00:14:17,940] If it happens to intersect the origin,
+- [00:14:18,040 - 00:14:22,040] then those two quantities will coincidentally be the same?
+- [00:14:22,240 - 00:14:23,280] In other words,
+- [00:14:23,280 - 00:14:23,560] distance...
+- [00:14:24,180 - 00:14:25,940] Distance to the horizon and...
+- [00:14:25,940 - 00:14:26,300] Yeah.
+- [00:14:27,020 - 00:14:27,520] That,
+- [00:14:27,520 - 00:14:28,480] of course,
+- [00:14:28,480 - 00:14:30,280] would be exactly true for a of t equals t.
+- [00:14:30,820 - 00:14:31,320] Right.
+- [00:14:31,380 - 00:14:31,740] Right.
+- [00:14:31,740 - 00:14:32,280] Yeah.
+- [00:14:33,600 - 00:14:33,950] Okay.
+- [00:14:34,920 - 00:14:36,100] So at the moment,
+- [00:14:36,100 - 00:14:37,960] it is a bit of a mystery
+- [00:14:38,800 - 00:14:42,440] why the vacuum energy happens to be such,
+- [00:14:43,280 - 00:14:43,980] okay,
+- [00:14:44,060 - 00:14:46,480] that the distance to the horizon
+- [00:14:50,639 - 00:14:52,879] or converted to a time by
+- [00:14:52,879 - 00:14:55,120] means of the speed of light,
+- [00:14:55,240 - 00:14:58,480] why the distance to the horizon is about
+- [00:14:58,480 - 00:15:01,720] the same as the age of the universe.
+- [00:15:13,220 - 00:15:13,720] Well,
+- [00:15:13,720 - 00:15:15,480] it's not remaining the same either,
+- [00:15:15,480 - 00:15:15,840] is it?
+- [00:15:16,060 - 00:15:16,800] Which is it?
+- [00:15:17,240 - 00:15:18,740] The horizon is a change.
+- [00:15:19,000 - 00:15:19,660] The horizon...
+- [00:15:19,660 - 00:15:21,840] The Hubble constant is remaining the same.
+- [00:15:21,940 - 00:15:22,180] Of course,
+- [00:15:22,180 - 00:15:24,260] the age of the universe is not remaining the same.
+- [00:15:24,460 - 00:15:24,740] Right.
+- [00:15:25,220 - 00:15:25,720] Right.
+- [00:15:25,840 - 00:15:26,560] So as far...
+- [00:15:26,560 - 00:15:29,090] So it sounds like it's a coincidence of
+- [00:15:29,090 - 00:15:31,620] just us being here at the time that we're
+- [00:15:31,620 - 00:15:31,720] here.
+- [00:15:31,720 - 00:15:32,760] Right.
+- [00:15:33,680 - 00:15:36,580] Let's take it to be just a coincidence.
+- [00:15:37,040 - 00:15:37,620] Now,
+- [00:15:37,620 - 00:15:38,380] is it a coincidence?
+- [00:15:38,800 - 00:15:41,560] Is it a coincidence that the Darwinian time
+- [00:15:41,560 - 00:15:44,320] scale for evolution happens to be the same
+- [00:15:45,280 - 00:15:52,360] as the time scale as obtained from the vacuum energy?
+- [00:15:52,720 - 00:15:53,400] No,
+- [00:15:53,400 - 00:15:55,740] that's clearly something which we have to explain some day.
+- [00:15:55,940 - 00:15:56,300] Question.
+- [00:15:56,600 - 00:15:58,940] In the Sitter space,
+- [00:15:58,940 - 00:16:00,320] is that assuming that there's
+- [00:16:00,320 - 00:16:01,700] more than one point in space?
+- [00:16:01,700 - 00:16:03,920] no matter and no radiation?
+- [00:16:04,400 - 00:16:04,580] Yeah.
+- [00:16:05,100 - 00:16:05,540] OK.
+- [00:16:06,300 - 00:16:07,540] Absence of this term completely.
+- [00:16:07,940 - 00:16:08,140] Well,
+- [00:16:08,140 - 00:16:09,740] we did the Einstein equations.
+- [00:16:10,680 - 00:16:13,020] We had a situation where the,
+- [00:16:13,020 - 00:16:14,760] so I guess,
+- [00:16:15,240 - 00:16:16,280] there's a form of energy,
+- [00:16:16,280 - 00:16:16,980] this vac,
+- [00:16:17,060 - 00:16:18,760] can you say something about this vac energy?
+- [00:16:18,980 - 00:16:22,660] Because I'm pretty confused about what its source is
+- [00:16:22,660 - 00:16:23,480] or what it is.
+- [00:16:26,680 - 00:16:27,300] I mean,
+- [00:16:27,300 - 00:16:28,220] do you think that if you didn't
+- [00:16:28,220 - 00:16:29,600] have any matter or radiation,
+- [00:16:29,600 - 00:16:31,520] that we'd be getting up?
+- [00:16:31,940 - 00:16:32,820] I mean,
+- [00:16:32,820 - 00:16:33,160] naively.
+- [00:16:33,440 - 00:16:33,660] Right.
+- [00:16:34,460 - 00:16:35,120] So for that,
+- [00:16:35,120 - 00:16:36,060] we have to understand
+- [00:16:36,060 - 00:16:39,160] why quantum mechanics gives energy
+- [00:16:39,880 - 00:16:41,380] to the ground state of systems.
+- [00:16:41,700 - 00:16:44,780] The vacuum is the ground state of,
+- [00:16:44,780 - 00:16:46,040] let's say,
+- [00:16:46,040 - 00:16:47,160] quantum field theory.
+- [00:16:47,280 - 00:16:48,980] Ground state means the state of lowest energy.
+- [00:16:51,180 - 00:16:51,740] Now,
+- [00:16:51,740 - 00:16:54,120] in the vacuum,
+- [00:16:54,120 - 00:16:55,900] it's possible to have
+- [00:16:55,900 - 00:16:58,200] oscillations of electric and magnetic field
+- [00:16:58,200 - 00:16:58,940] and so forth.
+- [00:16:59,300 - 00:17:03,180] The oscillations behave like ordinary oscillations.
+- [00:17:03,400 - 00:17:06,280] And ordinary oscillations have a ground state energy.
+- [00:17:06,780 - 00:17:09,220] The ground state energy is not zero.
+- [00:17:09,400 - 00:17:10,980] And the reason that it's not zero
+- [00:17:10,980 - 00:17:13,480] is because of the Heisenberg uncertainty principle.
+- [00:17:14,740 - 00:17:15,940] We're going off track,
+- [00:17:15,940 - 00:17:17,480] but let's answer the question anyway.
+- [00:17:17,980 - 00:17:19,400] If we have a harmonic oscillator,
+- [00:17:19,740 - 00:17:21,599] that's the potential of a harmonic oscillator,
+- [00:17:22,319 - 00:17:26,800] the energy of it is proportional to the momentum squared,
+- [00:17:26,800 - 00:17:27,220] that's
+- [00:17:27,220 - 00:17:28,020] the kinetic energy.
+- [00:17:28,099 - 00:17:28,180] OK.
+- [00:17:28,200 - 00:17:30,140] I'm not going to put in numerical factors,
+- [00:17:30,760 - 00:17:36,960] plus the distance squared that you stretch the spring,
+- [00:17:37,100 - 00:17:37,640] so to speak.
+- [00:17:38,380 - 00:17:42,520] There's usually a factor of spring constant here
+- [00:17:42,520 - 00:17:44,760] and a factor of 1 over twice the mass here.
+- [00:17:44,900 - 00:17:46,080] But just leave it like this.
+- [00:17:46,120 - 00:17:47,080] This is good enough for us.
+- [00:17:47,340 - 00:17:48,620] P squared plus x squared.
+- [00:17:48,860 - 00:17:49,360] Now,
+- [00:17:49,360 - 00:17:50,660] classically,
+- [00:17:50,660 - 00:17:51,900] the ground state
+- [00:17:51,900 - 00:17:53,720] of the harmonic oscillator simply
+- [00:17:53,720 - 00:17:56,620] means the configuration in which the spring
+- [00:17:57,780 - 00:18:00,020] is at its equilibrium point,
+- [00:18:00,020 - 00:18:01,440] not vibrating,
+- [00:18:01,440 - 00:18:02,400] not stretched,
+- [00:18:02,800 - 00:18:05,000] just sitting at its equilibrium point.
+- [00:18:06,040 - 00:18:07,140] x equals 0.
+- [00:18:07,840 - 00:18:09,370] And because the velocity of
+- [00:18:09,370 - 00:18:10,900] it is also equal to 0
+- [00:18:10,900 - 00:18:12,360] at the equilibrium point,
+- [00:18:12,360 - 00:18:13,540] p is equal to 0.
+- [00:18:13,840 - 00:18:16,100] And the energy is equal to 0.
+- [00:18:16,300 - 00:18:17,620] p squared plus x squared,
+- [00:18:17,620 - 00:18:19,200] both of these terms are equal to 0.
+- [00:18:20,180 - 00:18:23,370] The Heisenberg principle does not allow
+- [00:18:23,370 - 00:18:26,560] there to be a state in which,
+- [00:18:26,560 - 00:18:32,060] both x and p are simultaneously knowable,
+- [00:18:32,940 - 00:18:34,800] in the language of quantum mechanics,
+- [00:18:34,800 - 00:18:36,100] diagonalizable.
+- [00:18:36,620 - 00:18:39,300] And so there's a necessary fluctuation.
+- [00:18:39,820 - 00:18:43,440] If x were literally right at the center here,
+- [00:18:44,300 - 00:18:47,660] then p would have to have an infinite fluctuation.
+- [00:18:48,120 - 00:18:49,940] If p were at the center,
+- [00:18:49,940 - 00:18:52,060] in other words,
+- [00:18:52,060 - 00:18:54,020] if the momentum was exactly equal to 0,
+- [00:18:54,200 - 00:18:56,540] then x would have to have an infinite uncertainty.
+- [00:18:57,740 - 00:19:00,330] And so there is no state of
+- [00:19:00,330 - 00:19:02,920] the system in which both p and x
+- [00:19:02,920 - 00:19:04,660] are exactly known to be equal to 0.
+- [00:19:04,820 - 00:19:05,760] They both fluctuate.
+- [00:19:05,940 - 00:19:08,160] But the sum of p squared plus x squared
+- [00:19:08,160 - 00:19:10,160] doesn't necessarily have to fluctuate,
+- [00:19:10,260 - 00:19:11,820] but it's got to be positive.
+- [00:19:12,440 - 00:19:15,460] Since both p and x cannot simultaneously be 0,
+- [00:19:16,060 - 00:19:18,420] the vacuum or the ground state energy
+- [00:19:18,420 - 00:19:20,380] of a harmonic oscillator is not 0.
+- [00:19:20,480 - 00:19:20,580] Now,
+- [00:19:20,580 - 00:19:20,880] what is it?
+- [00:19:20,900 - 00:19:22,760] What is the ground state energy of a harmonic oscillator?
+- [00:19:24,460 - 00:19:25,280] 1 half.
+- [00:19:26,680 - 00:19:29,060] h bar omega,
+- [00:19:29,060 - 00:19:31,580] where omega is the frequency of the oscillator.
+- [00:19:33,200 - 00:19:33,920] Now,
+- [00:19:33,920 - 00:19:38,300] the universe is full of potential harmonic oscillators.
+- [00:19:38,940 - 00:19:40,660] Full of harmonic oscillators.
+- [00:19:40,740 - 00:19:43,440] They're the oscillations of the electromagnetic field.
+- [00:19:44,160 - 00:19:44,520] There's,
+- [00:19:44,520 - 00:19:44,940] in fact,
+- [00:19:44,940 - 00:19:46,700] an infinite number of them,
+- [00:19:47,180 - 00:19:48,820] of low frequency,
+- [00:19:48,820 - 00:19:50,380] high frequency,
+- [00:19:52,400 - 00:19:55,540] and a large number of such oscillations,
+- [00:19:55,540 - 00:19:56,540] not just the electromagnetic field,
+- [00:19:56,540 - 00:19:57,940] but every field.
+- [00:19:58,120 - 00:20:00,600] And every field has a ground state energy.
+- [00:20:00,840 - 00:20:04,710] It's the energy stored in that
+- [00:20:04,710 - 00:20:08,580] field due to zero point oscillations.
+- [00:20:08,960 - 00:20:11,780] Every field behaves like an oscillator.
+- [00:20:12,100 - 00:20:14,380] Every field has zero point energy.
+- [00:20:14,820 - 00:20:17,160] And it's those zero point energies which
+- [00:20:17,160 - 00:20:23,720] are one explanation of the vacuum energy.
+- [00:20:24,940 - 00:20:26,320] The real puzzle is,
+- [00:20:26,320 - 00:20:26,480] why?
+- [00:20:26,520 - 00:20:27,320] Why it's so small.
+- [00:20:28,540 - 00:20:30,320] It is very small numerically,
+- [00:20:30,320 - 00:20:30,920] very small.
+- [00:20:31,200 - 00:20:34,140] But that is not for tonight.
+- [00:20:34,740 - 00:20:37,260] Let's just recognize that it exists.
+- [00:20:37,900 - 00:20:39,480] As the universe expands,
+- [00:20:39,480 - 00:20:40,940] it doesn't dilute.
+- [00:20:42,220 - 00:20:43,240] It's just a constant.
+- [00:20:44,000 - 00:20:46,180] And experimentally,
+- [00:20:46,180 - 00:20:46,840] it really is,
+- [00:20:46,840 - 00:20:47,900] or observationally,
+- [00:20:47,900 - 00:20:49,770] it really does seem to be
+- [00:20:49,770 - 00:20:51,640] there with a particular numerical constant,
+- [00:20:52,580 - 00:20:54,900] which happens to be extremely small,
+- [00:20:54,900 - 00:20:56,380] measured,
+- [00:20:56,380 - 00:20:57,780] measured in natural units.
+- [00:20:58,760 - 00:20:59,960] I have an idea.
+- [00:21:00,060 - 00:21:04,840] Why isn't that just the last scattering baseline energy?
+- [00:21:05,740 - 00:21:07,000] I don't know what that means.
+- [00:21:07,220 - 00:21:14,360] I just mean that there's always three degree...
+- [00:21:14,360 - 00:21:14,740] No,
+- [00:21:14,740 - 00:21:14,880] no,
+- [00:21:14,880 - 00:21:14,940] no.
+- [00:21:15,040 - 00:21:16,500] It's not the three degree radiation.
+- [00:21:16,720 - 00:21:17,280] That's radiation.
+- [00:21:18,600 - 00:21:22,300] That energy decreases with time because the photons dilute.
+- [00:21:22,680 - 00:21:24,040] And furthermore,
+- [00:21:24,040 - 00:21:26,000] each photon decreases its energy.
+- [00:21:26,000 - 00:21:27,420] It's not the three degree.
+- [00:21:28,140 - 00:21:31,150] It's the oscillations that are there
+- [00:21:31,150 - 00:21:34,160] when you remove all the real photons.
+- [00:21:34,740 - 00:21:40,320] It's the virtual photons or just the zero point oscillation
+- [00:21:40,320 - 00:21:43,720] that is necessarily present.
+- [00:21:44,620 - 00:21:45,420] Of course,
+- [00:21:45,420 - 00:21:46,830] we're not now talking about a
+- [00:21:46,830 - 00:21:48,240] particle on the end of a spring.
+- [00:21:48,680 - 00:21:50,360] We're talking about the
+- [00:21:50,360 - 00:21:52,040] fluctuations of the electromagnetic field.
+- [00:21:53,200 - 00:21:54,300] In fact,
+- [00:21:54,300 - 00:21:55,980] do you know what these two things are?
+- [00:21:55,980 - 00:21:56,760] What these two things would
+- [00:21:56,760 - 00:21:57,540] be for the electromagnetic field,
+- [00:21:57,720 - 00:21:58,180] which are,
+- [00:21:58,180 - 00:21:58,880] which can't,
+- [00:21:58,880 - 00:22:00,380] for which there's an uncertainty principle?
+- [00:22:00,720 - 00:22:00,980] Well,
+- [00:22:00,980 - 00:22:02,300] isn't this like sources?
+- [00:22:02,860 - 00:22:03,380] B and E.
+- [00:22:03,460 - 00:22:04,160] B and E.
+- [00:22:04,440 - 00:22:05,480] B and E.
+- [00:22:05,720 - 00:22:06,460] B and E.
+- [00:22:06,460 - 00:22:06,540] What?
+- [00:22:06,860 - 00:22:08,360] Electric and magnetic fields.
+- [00:22:08,960 - 00:22:10,950] The energy of an electromagnetic field
+- [00:22:10,950 - 00:22:12,940] is E squared plus B squared,
+- [00:22:13,300 - 00:22:20,660] with E being like momentum and B squared.
+- [00:22:21,840 - 00:22:23,670] And there's an uncertainty principle
+- [00:22:23,670 - 00:22:25,500] between electric and magnetic fields,
+- [00:22:25,980 - 00:22:28,390] which is very similar to the uncertainty
+- [00:22:28,390 - 00:22:30,800] relation between velocity or momentum and position.
+- [00:22:31,520 - 00:22:32,180] Okay?
+- [00:22:32,300 - 00:22:35,210] So they can't both simultaneously be zero
+- [00:22:35,210 - 00:22:38,120] because of an uncertainty relation between them.
+- [00:22:38,680 - 00:22:42,630] And the result is that even when you remove as
+- [00:22:42,630 - 00:22:46,580] much energy as is possible to remove from the field,
+- [00:22:46,840 - 00:22:49,280] there's still this residual zero point energy.
+- [00:22:49,680 - 00:22:51,080] That's what constitutes,
+- [00:22:51,080 - 00:22:52,670] or at least that's what's believed
+- [00:22:52,670 - 00:22:54,260] to be the origin of this.
+- [00:22:55,980 - 00:22:56,860] I'm having a tough time understanding,
+- [00:22:56,860 - 00:22:59,200] if you remove matter and you remove radiation,
+- [00:23:00,020 - 00:23:01,760] what causes the electric fields?
+- [00:23:02,140 - 00:23:02,580] Like,
+- [00:23:02,580 - 00:23:04,520] what's the perturbation and what?
+- [00:23:07,200 - 00:23:09,060] I can't answer what causes it.
+- [00:23:10,000 - 00:23:11,980] I can tell you that the
+- [00:23:11,980 - 00:23:13,960] uncertainty principle requires it to be there.
+- [00:23:16,800 - 00:23:19,220] We're making the assumption there is no electric field,
+- [00:23:19,220 - 00:23:20,140] there is no mass.
+- [00:23:20,420 - 00:23:20,460] Oh.
+- [00:23:21,300 - 00:23:22,180] I thought you were...
+- [00:23:22,180 - 00:23:23,420] Did I say there's no electric field?
+- [00:23:23,700 - 00:23:25,960] You said decider space has only the...
+- [00:23:25,960 - 00:23:27,220] The dark energy.
+- [00:23:27,360 - 00:23:27,760] Right.
+- [00:23:27,880 - 00:23:28,360] Okay.
+- [00:23:28,680 - 00:23:30,620] It has no real photons.
+- [00:23:31,180 - 00:23:33,980] It has only the zero point energy.
+- [00:23:34,300 - 00:23:34,600] Okay,
+- [00:23:34,600 - 00:23:36,580] you can have an electric field without real photons.
+- [00:23:36,800 - 00:23:38,080] It just doesn't have any charges.
+- [00:23:38,820 - 00:23:39,900] It's there anyway.
+- [00:23:40,200 - 00:23:41,420] The field fluctuates anyway.
+- [00:23:41,540 - 00:23:42,220] It doesn't need charges.
+- [00:23:42,560 - 00:23:42,780] Right.
+- [00:23:44,580 - 00:23:45,180] Right.
+- [00:23:45,520 - 00:23:46,120] Yeah?
+- [00:23:46,400 - 00:23:49,430] Could you go over that point about the
+- [00:23:49,430 - 00:23:52,460] age of the universe being equal to the...
+- [00:23:53,600 - 00:23:54,800] Inverse Hubble constant?
+- [00:23:54,800 - 00:23:55,660] Yeah.
+- [00:23:55,960 - 00:23:56,420] Okay,
+- [00:23:56,420 - 00:23:56,860] let's take a second.
+- [00:23:56,860 - 00:23:59,160] I know that it's equal to inverse Hubble constant,
+- [00:23:59,160 - 00:24:01,360] but it's also equal to the distance
+- [00:24:01,360 - 00:24:03,340] to the surface of last scattering or something?
+- [00:24:04,000 - 00:24:04,460] Oh,
+- [00:24:04,460 - 00:24:05,540] that's an approximation.
+- [00:24:05,840 - 00:24:07,820] That it's the distance to the surface of last scattering.
+- [00:24:08,180 - 00:24:08,540] But...
+- [00:24:09,220 - 00:24:10,320] What do you say to the ?
+- [00:24:12,420 - 00:24:15,280] Isn't that just a mathematical truism?
+- [00:24:16,080 - 00:24:17,680] Just because of the equations,
+- [00:24:17,680 - 00:24:18,560] it's just...
+- [00:24:18,560 - 00:24:18,740] Yeah.
+- [00:24:19,800 - 00:24:21,940] It's not an experimental fact.
+- [00:24:22,940 - 00:24:23,400] Yeah.
+- [00:24:23,400 - 00:24:23,860] Yeah.
+- [00:24:24,800 - 00:24:25,180] Almost.
+- [00:24:26,080 - 00:24:26,600] Almost.
+- [00:24:26,920 - 00:24:27,160] Yeah.
+- [00:24:27,940 - 00:24:29,820] But not that H is
+- [00:24:29,820 - 00:24:31,700] approximately the age of the universe.
+- [00:24:31,880 - 00:24:32,060] No.
+- [00:24:32,120 - 00:24:32,420] Clearly,
+- [00:24:32,420 - 00:24:33,540] it does not have to be.
+- [00:24:34,820 - 00:24:37,440] And this deciter space is simply not true.
+- [00:24:38,100 - 00:24:39,440] H just never changes.
+- [00:24:39,540 - 00:24:41,300] The age of the universe does change.
+- [00:24:43,800 - 00:24:45,360] But H presumably...
+- [00:24:45,360 - 00:24:46,440] It's exactly true.
+- [00:24:47,540 - 00:24:52,680] It's only exactly true for this scale factor over here.
+- [00:24:52,820 - 00:24:53,660] Let's see why.
+- [00:24:54,840 - 00:24:55,460] All right.
+- [00:24:55,500 - 00:24:57,060] Let's take this case.
+- [00:24:57,400 - 00:24:59,880] A of T grows like T.
+- [00:24:59,880 - 00:25:01,540] Then what is H?
+- [00:25:01,760 - 00:25:03,820] H is equal to A dot over A.
+- [00:25:03,820 - 00:25:05,460] What is A dot?
+- [00:25:05,800 - 00:25:07,680] A dot is 1,
+- [00:25:07,680 - 00:25:10,540] and T and A is T.
+- [00:25:10,540 - 00:25:12,840] So this is just equal to 1 over T.
+- [00:25:12,840 - 00:25:15,080] And it's clear that the
+- [00:25:15,080 - 00:25:16,040] Hubble constant...
+- [00:25:16,040 - 00:25:17,000] It's not constant,
+- [00:25:17,000 - 00:25:19,940] but the Hubble parameter is just 1 over the time.
+- [00:25:20,280 - 00:25:22,260] The time from the Big Bang.
+- [00:25:22,500 - 00:25:23,640] That's true for any T-shape.
+- [00:25:23,640 - 00:25:25,160] Any power law.
+- [00:25:25,260 - 00:25:25,360] Well,
+- [00:25:25,360 - 00:25:26,300] it's not quite true.
+- [00:25:26,640 - 00:25:29,020] Take any power law here.
+- [00:25:29,780 - 00:25:33,300] Then it becomes an A dot is equal to P,
+- [00:25:33,300 - 00:25:35,300] T to the P minus 1.
+- [00:25:36,280 - 00:25:38,100] And then divide that by A.
+- [00:25:38,100 - 00:25:41,340] That means dividing it by T to the P.
+- [00:25:41,340 - 00:25:43,560] And the answer is P over T.
+- [00:25:44,320 - 00:25:44,840] So,
+- [00:25:44,840 - 00:25:45,400] for example,
+- [00:25:45,400 - 00:25:46,420] if P is 2 thirds,
+- [00:25:46,420 - 00:25:49,720] then this would be 2 thirds over T.
+- [00:25:49,720 - 00:25:51,120] And it would not
+- [00:25:51,120 - 00:25:52,370] quite be the case that the
+- [00:25:52,370 - 00:25:53,620] Hubble constant is 1 over T.
+- [00:25:53,640 - 00:25:55,220] The Hubble constant was 1 over time,
+- [00:25:55,220 - 00:25:57,030] but it would be 1 over
+- [00:25:57,030 - 00:25:58,840] time with a factor of 2 thirds
+- [00:25:58,840 - 00:25:59,540] in front of it.
+- [00:25:59,620 - 00:25:59,800] Yeah,
+- [00:25:59,800 - 00:26:01,060] but I'm assuming there's other
+- [00:26:01,060 - 00:26:02,320] constants we're not including anyway.
+- [00:26:02,700 - 00:26:03,020] All right.
+- [00:26:03,060 - 00:26:03,500] That's right.
+- [00:26:03,740 - 00:26:04,540] Excuse me.
+- [00:26:04,540 - 00:26:05,980] 3 halves in front of it.
+- [00:26:06,240 - 00:26:08,460] H would be 3 halves 1 over T.
+- [00:26:09,220 - 00:26:10,700] Did I write the...
+- [00:26:10,700 - 00:26:11,400] Yeah,
+- [00:26:11,400 - 00:26:11,960] 1 over P,
+- [00:26:11,960 - 00:26:12,920] so it's...
+- [00:26:12,920 - 00:26:13,420] No,
+- [00:26:13,420 - 00:26:13,740] that's right.
+- [00:26:13,860 - 00:26:14,780] 2 thirds is right,
+- [00:26:14,780 - 00:26:15,640] but H is...
+- [00:26:16,919 - 00:26:17,900] 2 thirds is right.
+- [00:26:18,080 - 00:26:18,440] Okay.
+- [00:26:19,000 - 00:26:19,440] Yeah,
+- [00:26:19,440 - 00:26:20,220] 2 thirds is right.
+- [00:26:21,260 - 00:26:21,880] That's H.
+- [00:26:21,880 - 00:26:22,900] Left-hand side is H.
+- [00:26:23,900 - 00:26:25,360] For the de Sitter universe,
+- [00:26:25,360 - 00:26:26,100] it's infinite.
+- [00:26:26,380 - 00:26:26,660] Wait,
+- [00:26:26,660 - 00:26:26,940] okay,
+- [00:26:26,940 - 00:26:27,120] wait.
+- [00:26:27,180 - 00:26:31,640] H is equal to 2 over 3 T,
+- [00:26:31,640 - 00:26:33,430] where T is the age of
+- [00:26:33,430 - 00:26:35,220] the universe at any given time.
+- [00:26:35,700 - 00:26:36,180] Okay.
+- [00:26:36,460 - 00:26:36,940] Now,
+- [00:26:36,940 - 00:26:38,260] let's come to the de Sitter case.
+- [00:26:38,740 - 00:26:40,000] The de Sitter case,
+- [00:26:40,000 - 00:26:42,860] it is not T to the P.
+- [00:26:42,860 - 00:26:45,660] It is E.
+- [00:26:45,660 - 00:26:46,520] It's exponential.
+- [00:26:48,240 - 00:26:49,280] E to the HT.
+- [00:26:50,920 - 00:26:52,140] Let's not call it H,
+- [00:26:52,140 - 00:26:52,380] okay?
+- [00:26:52,380 - 00:26:55,460] Let's just call it E to the constant,
+- [00:26:55,460 - 00:26:56,620] gamma T.
+- [00:26:56,620 - 00:26:57,960] All right?
+- [00:26:58,080 - 00:26:59,900] A is E to the gamma T.
+- [00:27:01,560 - 00:27:02,500] What is A dot?
+- [00:27:04,040 - 00:27:04,480] Incidentally,
+- [00:27:04,480 - 00:27:06,080] I could put a constant in front of it.
+- [00:27:06,120 - 00:27:07,020] It wouldn't make any difference.
+- [00:27:07,440 - 00:27:08,960] Let's put the constant in front of it.
+- [00:27:09,020 - 00:27:09,740] What is A dot?
+- [00:27:10,200 - 00:27:14,100] A dot is C gamma E to the gamma T,
+- [00:27:14,100 - 00:27:14,380] right?
+- [00:27:15,179 - 00:27:17,280] Just differentiate it E to the gamma T.
+- [00:27:17,840 - 00:27:19,760] Now divide it by...
+- [00:27:19,760 - 00:27:20,940] That's A dot.
+- [00:27:22,440 - 00:27:23,240] Divided by A,
+- [00:27:23,240 - 00:27:24,500] which is just C.
+- [00:27:24,500 - 00:27:25,480] That cancels C,
+- [00:27:25,480 - 00:27:27,520] and it cancels E to the gamma T.
+- [00:27:27,960 - 00:27:29,990] So we find out that the
+- [00:27:29,990 - 00:27:32,020] Hubble constant now is truly constant,
+- [00:27:32,020 - 00:27:33,560] and it's just as gamma,
+- [00:27:33,560 - 00:27:34,400] which appears here.
+- [00:27:35,760 - 00:27:36,200] Okay?
+- [00:27:36,420 - 00:27:38,260] This is the unique case in
+- [00:27:38,260 - 00:27:40,100] which the Hubble constant is constant.
+- [00:27:41,580 - 00:27:43,200] It's the only case where it's constant.
+- [00:27:47,760 - 00:27:50,500] And once we know...
+- [00:27:50,940 - 00:27:54,980] That the hub...that A dot over A...let's go back.
+- [00:27:55,180 - 00:27:59,840] A dot over A is equal to the square
+- [00:27:59,840 - 00:28:04,500] root of 8 pi G over 3 times rho.
+- [00:28:04,760 - 00:28:07,220] This is the square root of the FRW equation.
+- [00:28:07,980 - 00:28:08,820] All right?
+- [00:28:08,840 - 00:28:13,490] So the Hubble constant is just the square root
+- [00:28:13,490 - 00:28:18,140] of 8 pi G over 3 times the vacuum energy.
+- [00:28:18,300 - 00:28:19,020] That's H.
+- [00:28:19,380 - 00:28:20,020] Okay?
+- [00:28:21,560 - 00:28:22,240] All right.
+- [00:28:22,260 - 00:28:26,170] So there's a definite connection between this vacuum energy
+- [00:28:26,170 - 00:28:30,080] on the one hand and the Hubble rate of expansion.
+- [00:28:30,480 - 00:28:32,080] We call this sometimes the
+- [00:28:32,080 - 00:28:33,680] rate of...the Hubble rate of expansion.
+- [00:28:34,120 - 00:28:35,660] It's the thing that goes in here.
+- [00:28:38,080 - 00:28:39,340] It tells us,
+- [00:28:39,340 - 00:28:41,260] in this case,
+- [00:28:41,260 - 00:28:45,480] 1 over H is not the age of the universe.
+- [00:28:46,160 - 00:28:46,960] What is it?
+- [00:28:48,080 - 00:28:49,180] It's the time constant.
+- [00:28:49,480 - 00:28:50,920] It's the time that it takes the universe to...
+- [00:28:50,920 - 00:28:52,900] Not double in size,
+- [00:28:52,900 - 00:28:54,000] but multiply by E.
+- [00:28:54,240 - 00:28:54,680] Yeah.
+- [00:28:54,960 - 00:28:57,660] The time that it takes for the universe to double...
+- [00:28:57,660 - 00:28:59,440] I said double again.
+- [00:28:59,700 - 00:29:00,800] Let me use double,
+- [00:29:00,800 - 00:29:02,340] but I really mean multiply by E.
+- [00:29:04,580 - 00:29:06,600] It's the time constant for
+- [00:29:06,600 - 00:29:08,620] the universe to double in size.
+- [00:29:09,440 - 00:29:10,940] And what is that?
+- [00:29:11,260 - 00:29:14,840] That is the inverse of this H,
+- [00:29:14,840 - 00:29:17,800] and it's about 10 billion years.
+- [00:29:18,140 - 00:29:18,520] Okay?
+- [00:29:18,520 - 00:29:20,020] So every 10 billion years,
+- [00:29:20,020 - 00:29:23,340] we can expect the universe will double in size,
+- [00:29:23,340 - 00:29:24,500] roughly speaking.
+- [00:29:24,780 - 00:29:25,540] That's an approximation.
+- [00:29:27,340 - 00:29:28,640] Could I ask you a question?
+- [00:29:28,920 - 00:29:29,180] Yeah.
+- [00:29:29,660 - 00:29:32,680] This vacuum energy density is constant,
+- [00:29:32,680 - 00:29:33,280] right?
+- [00:29:33,340 - 00:29:33,520] Yeah,
+- [00:29:33,520 - 00:29:34,000] it's constant.
+- [00:29:34,160 - 00:29:34,360] Well,
+- [00:29:34,360 - 00:29:35,340] yes.
+- [00:29:36,960 - 00:29:37,520] This,
+- [00:29:37,520 - 00:29:38,100] of course,
+- [00:29:38,100 - 00:29:39,639] is an experimental question.
+- [00:29:40,180 - 00:29:40,360] Okay.
+- [00:29:40,420 - 00:29:42,460] So if the universe is expanding,
+- [00:29:42,460 - 00:29:45,860] so that implies to me that the energy,
+- [00:29:45,860 - 00:29:46,980] the total energy,
+- [00:29:46,980 - 00:29:47,980] vacuum energy,
+- [00:29:47,980 - 00:29:48,500] is...
+- [00:29:48,500 - 00:29:48,740] Is increasing.
+- [00:29:50,740 - 00:29:52,080] Where is it coming from?
+- [00:29:55,040 - 00:29:57,020] It's coming from the other side of the equation.
+- [00:29:59,820 - 00:30:01,660] This minus this is equal to zero.
+- [00:30:02,680 - 00:30:04,340] This is one form of energy.
+- [00:30:04,580 - 00:30:06,080] This is another form of energy.
+- [00:30:06,220 - 00:30:08,320] This is a kind of kinetic energy of expansion.
+- [00:30:09,980 - 00:30:11,920] It's a kind of kinetic energy of expansion.
+- [00:30:13,820 - 00:30:16,150] Both terms appear in the expression
+- [00:30:16,150 - 00:30:18,480] for the energy in general relativity.
+- [00:30:21,740 - 00:30:24,040] And it's conserved because it's equal to zero.
+- [00:30:25,120 - 00:30:28,460] So this energy is coming from here.
+- [00:30:28,580 - 00:30:31,060] Does that come from then all these particles originally?
+- [00:30:31,540 - 00:30:32,960] That comes from Einstein's field equations.
+- [00:30:33,360 - 00:30:34,420] If you apply Einstein,
+- [00:30:34,420 - 00:30:36,970] if you apply the ideas of
+- [00:30:36,970 - 00:30:39,520] Hamiltonians and energy to Einstein's field equations...
+- [00:30:39,520 - 00:30:41,080] But we talked about all that kinetic
+- [00:30:41,080 - 00:30:42,640] energy at the beginning of the universe,
+- [00:30:42,640 - 00:30:43,080] right?
+- [00:30:43,140 - 00:30:44,920] So is that basically being transferred?
+- [00:30:46,060 - 00:30:46,540] Yeah,
+- [00:30:46,540 - 00:30:48,460] it's a transfer of kinetic and passive energy.
+- [00:30:48,460 - 00:30:48,960] Potential energy?
+- [00:30:50,520 - 00:30:52,870] When we talk about energy
+- [00:30:52,870 - 00:30:55,220] being conserved or entropy increasing,
+- [00:30:55,220 - 00:30:56,460] are we talking...
+- [00:30:56,460 - 00:30:57,260] Entropy or energy?
+- [00:30:57,620 - 00:30:58,460] Either one.
+- [00:30:58,600 - 00:30:58,820] Okay.
+- [00:30:58,900 - 00:31:00,990] Are we talking about that within
+- [00:31:00,990 - 00:31:03,080] the cosmic horizon or do we mean...
+- [00:31:03,080 - 00:31:03,440] No.
+- [00:31:03,520 - 00:31:03,520] ...
+- [00:31:03,520 - 00:31:05,640] including outside the cosmic horizon also?
+- [00:31:05,800 - 00:31:06,000] Okay.
+- [00:31:06,360 - 00:31:10,220] The cosmic horizon is fixed in size.
+- [00:31:11,100 - 00:31:12,840] It doesn't change with time.
+- [00:31:13,260 - 00:31:14,940] That's the same statement that the
+- [00:31:14,940 - 00:31:16,620] Hubble constant doesn't change with time.
+- [00:31:17,180 - 00:31:17,500] Right?
+- [00:31:18,460 - 00:31:23,060] The energy within the cosmic horizon stays fixed with time.
+- [00:31:24,160 - 00:31:25,900] The vacuum energy.
+- [00:31:26,100 - 00:31:28,880] The vacuum energy is just the volume
+- [00:31:28,880 - 00:31:31,660] of this times the vacuum energy density.
+- [00:31:32,140 - 00:31:33,840] The vacuum energy density,
+- [00:31:33,840 - 00:31:35,240] which is rho naught...
+- [00:31:35,240 - 00:31:36,940] Let's work it out.
+- [00:31:38,080 - 00:31:38,800] Okay,
+- [00:31:38,800 - 00:31:40,200] so that's this diameter here,
+- [00:31:40,200 - 00:31:41,000] which is...
+- [00:31:41,000 - 00:31:41,500] What is it?
+- [00:31:44,560 - 00:31:46,760] C divided by...
+- [00:31:47,500 - 00:31:51,730] Square root of 8 pi g over 3 times
+- [00:31:51,730 - 00:31:55,960] the square root of rho naught in the denominator.
+- [00:31:57,020 - 00:31:58,000] That's the distance.
+- [00:31:58,300 - 00:31:59,220] Now I want to...
+- [00:31:59,220 - 00:32:00,400] What I want to do with it,
+- [00:32:00,400 - 00:32:01,680] I want to cube it
+- [00:32:01,680 - 00:32:02,960] in order to find the volume...
+- [00:32:06,760 - 00:32:07,220] Cubed.
+- [00:32:07,220 - 00:32:08,020] Four-thirds pi.
+- [00:32:08,040 - 00:32:08,300] Yeah,
+- [00:32:08,300 - 00:32:08,940] four-thirds.
+- [00:32:09,140 - 00:32:09,920] Four-thirds pi.
+- [00:32:12,360 - 00:32:12,820] Okay.
+- [00:32:12,940 - 00:32:15,740] And then multiply that by the vacuum energy density.
+- [00:32:15,740 - 00:32:18,600] And the vacuum energy density is rho naught itself.
+- [00:32:19,160 - 00:32:20,820] There's some amount of energy in there,
+- [00:32:20,820 - 00:32:22,080] but it doesn't change with time.
+- [00:32:22,220 - 00:32:23,840] It doesn't change with time
+- [00:32:23,840 - 00:32:25,460] the amount within the cosmic horizon.
+- [00:32:25,940 - 00:32:27,760] So the portion that we can see,
+- [00:32:27,760 - 00:32:30,000] the portion that we can ever see,
+- [00:32:30,000 - 00:32:33,700] that energy doesn't change with time.
+- [00:32:33,900 - 00:32:34,760] If it's the Sitter space.
+- [00:32:34,940 - 00:32:35,840] If it's the Sitter space.
+- [00:32:36,140 - 00:32:36,340] Right.
+- [00:32:36,420 - 00:32:37,220] If it's the Sitter space.
+- [00:32:38,180 - 00:32:38,660] Right.
+- [00:32:38,920 - 00:32:39,400] So,
+- [00:32:39,400 - 00:32:40,280] you know,
+- [00:32:40,280 - 00:32:42,620] standing here from our vantage point and
+- [00:32:42,620 - 00:32:44,960] looking out and looking at all the
+- [00:32:44,960 - 00:32:46,760] vacuum energy that's out there,
+- [00:32:46,760 - 00:32:47,360] no,
+- [00:32:47,360 - 00:32:48,750] it doesn't change with time
+- [00:32:48,750 - 00:32:50,140] the portion that we can see.
+- [00:32:53,100 - 00:32:53,580] Okay.
+- [00:32:54,780 - 00:32:55,260] Good.
+- [00:32:55,440 - 00:32:59,120] So that's the basic idea of a cosmic horizon.
+- [00:33:00,580 - 00:33:02,710] Things can pass through the cosmic horizon in
+- [00:33:02,710 - 00:33:04,840] the same sense that they can pass through
+- [00:33:04,840 - 00:33:05,800] a black hole horizon.
+- [00:33:06,520 - 00:33:08,780] And I won't go into that in any depth now,
+- [00:33:08,780 - 00:33:12,480] but once they do,
+- [00:33:12,480 - 00:33:14,440] they're out of contact with
+- [00:33:14,440 - 00:33:14,940] us in every way.
+- [00:33:14,960 - 00:33:15,760] So that's the basic idea of a cosmic horizon.
+- [00:33:15,760 - 00:33:17,120] Can I just follow up on a question?
+- [00:33:17,440 - 00:33:19,420] So if it's not at the Sitter space,
+- [00:33:19,420 - 00:33:22,470] does that mean that energy
+- [00:33:22,470 - 00:33:25,520] flows out to the energy within
+- [00:33:25,520 - 00:33:26,400] the cosmic horizon?
+- [00:33:26,560 - 00:33:26,780] It might.
+- [00:33:28,300 - 00:33:28,860] Well,
+- [00:33:28,860 - 00:33:31,080] energy is a loaded term.
+- [00:33:31,240 - 00:33:32,510] Exactly what do you mean
+- [00:33:32,510 - 00:33:33,780] by the energy in general relativity?
+- [00:33:34,080 - 00:33:34,900] In general relativity,
+- [00:33:34,900 - 00:33:36,900] the concept of energy is a
+- [00:33:36,900 - 00:33:38,900] little bit curious because it contains
+- [00:33:38,900 - 00:33:42,940] this gravitational component as well as ordinary energy.
+- [00:33:43,700 - 00:33:46,750] This is the gravitational component of the
+- [00:33:46,750 - 00:33:49,800] energy here for this particularly simple kind
+- [00:33:49,800 - 00:33:50,940] of geometry.
+- [00:33:54,620 - 00:33:56,440] In mechanics you had a Lebron gen.
+- [00:33:56,600 - 00:33:57,510] You want to get on
+- [00:33:57,510 - 00:33:58,420] to the rest of the stuff?
+- [00:33:58,620 - 00:33:58,820] Yeah.
+- [00:33:58,920 - 00:34:00,620] Let's move on.
+- [00:34:01,060 - 00:34:01,840] All right.
+- [00:34:01,880 - 00:34:02,060] Now,
+- [00:34:02,060 - 00:34:05,040] the same mechanism appears to
+- [00:34:05,040 - 00:34:08,020] have happened in the remote past,
+- [00:34:08,020 - 00:34:10,699] but instead of the time
+- [00:34:10,699 - 00:34:12,920] constant being about 10 billion years,
+- [00:34:12,920 - 00:34:12,920] it's a little bit different.
+- [00:34:13,880 - 00:34:16,350] It's about 10 to the minus
+- [00:34:16,350 - 00:34:18,820] 32 seconds or perhaps that fast.
+- [00:34:19,320 - 00:34:20,600] Where does this come from?
+- [00:34:20,860 - 00:34:21,280] Well,
+- [00:34:21,280 - 00:34:23,260] the origin of the question,
+- [00:34:23,260 - 00:34:24,400] this is inflation.
+- [00:34:24,679 - 00:34:25,699] This is the idea of inflation.
+- [00:34:26,179 - 00:34:30,380] The universe in the remote past exponentially expanded.
+- [00:34:30,460 - 00:34:30,719] Now,
+- [00:34:30,719 - 00:34:32,080] when I say this happened,
+- [00:34:32,080 - 00:34:32,980] of course,
+- [00:34:32,980 - 00:34:35,040] to some extent this is conjectural,
+- [00:34:35,040 - 00:34:36,159] but the
+- [00:34:36,159 - 00:34:39,760] conjecture has passed a number of observational tests.
+- [00:34:39,900 - 00:34:41,300] So when I say something has happened,
+- [00:34:41,300 - 00:34:42,900] it's not just a conjectural test.
+- [00:34:42,900 - 00:34:43,739] It's a very simple one.
+- [00:34:43,739 - 00:34:45,259] You can feel free to put
+- [00:34:45,259 - 00:34:46,780] a little bit of a question mark.
+- [00:34:47,060 - 00:34:49,580] Did it really happen or am I guessing?
+- [00:34:49,960 - 00:34:50,520] Okay.
+- [00:34:50,600 - 00:34:52,389] So I will tell you what's
+- [00:34:52,389 - 00:34:54,179] known and what the empirical evidence is,
+- [00:34:54,179 - 00:34:55,659] but let me just shorten
+- [00:34:55,659 - 00:34:57,600] my sentences by saying something happened.
+- [00:34:58,620 - 00:35:02,080] It happened that in the remote past,
+- [00:35:02,080 - 00:35:06,100] before anything that we can observe,
+- [00:35:06,100 - 00:35:07,780] in other words,
+- [00:35:07,800 - 00:35:10,290] out beyond the surface of last scattering
+- [00:35:10,290 - 00:35:12,780] or earlier than the time when the universe
+- [00:35:12,900 - 00:35:14,060] became transparent,
+- [00:35:14,060 - 00:35:17,880] the universe was exponentially expanding.
+- [00:35:18,380 - 00:35:18,840] Now,
+- [00:35:18,840 - 00:35:20,570] why did that idea gain any
+- [00:35:20,570 - 00:35:22,300] traction and where did it come from?
+- [00:35:23,040 - 00:35:23,640] Well,
+- [00:35:23,640 - 00:35:25,790] the basic place that it came
+- [00:35:25,790 - 00:35:27,940] from was the flatness of the universe.
+- [00:35:28,160 - 00:35:29,540] To make a long story short,
+- [00:35:29,540 - 00:35:31,460] spatially,
+- [00:35:31,460 - 00:35:36,620] the space slices of the universe are rather flat.
+- [00:35:37,560 - 00:35:40,160] Flat meaning we don't seem to live in
+- [00:35:40,160 - 00:35:42,760] a curved universe which is either positively curved
+- [00:35:42,900 - 00:35:43,760] or negatively curved.
+- [00:35:43,960 - 00:35:46,000] We seem to live in a very flat universe.
+- [00:35:46,240 - 00:35:46,980] In fact,
+- [00:35:46,980 - 00:35:48,120] not only a flat universe,
+- [00:35:48,120 - 00:35:50,320] but a rather homogeneous universe.
+- [00:35:50,740 - 00:35:52,200] On large scales,
+- [00:35:52,200 - 00:35:54,320] bigger than super clusters of galaxies,
+- [00:35:54,320 - 00:35:56,260] in particular on the larger scales,
+- [00:35:56,600 - 00:36:00,180] the universe is very flat and homogeneous and smooth.
+- [00:36:02,200 - 00:36:03,510] How did it get to be that
+- [00:36:03,510 - 00:36:04,820] way and why is it that way?
+- [00:36:05,720 - 00:36:08,800] The early ideas of the Big Bang were
+- [00:36:08,800 - 00:36:11,880] that the universe started just in some random state.
+- [00:36:14,220 - 00:36:18,960] It could have started with some very complex geometry.
+- [00:36:19,460 - 00:36:20,850] It didn't have to be flat
+- [00:36:20,850 - 00:36:22,240] and it didn't have to be homogeneous.
+- [00:36:22,800 - 00:36:24,410] We don't really have a theory
+- [00:36:24,410 - 00:36:26,020] of how it began in the very,
+- [00:36:26,020 - 00:36:26,560] very beginning.
+- [00:36:28,640 - 00:36:33,450] But let's suppose it began like a shriveled up raisin
+- [00:36:33,450 - 00:36:38,260] or prune with all sorts of wiggles and texture to it.
+- [00:36:39,520 - 00:36:40,080] Why?
+- [00:36:40,320 - 00:36:40,780] What is?
+- [00:36:40,780 - 00:36:43,280] Where did all those wiggles and texture go?
+- [00:36:43,460 - 00:36:44,840] Where did it disappear to?
+- [00:36:44,900 - 00:36:45,020] Now,
+- [00:36:45,020 - 00:36:45,580] in fact,
+- [00:36:45,580 - 00:36:46,220] we know,
+- [00:36:46,220 - 00:36:47,220] here's something we know.
+- [00:36:47,460 - 00:36:49,040] We know at the time
+- [00:36:49,040 - 00:36:50,620] of the surface of last scattering,
+- [00:36:50,620 - 00:36:51,700] in other words,
+- [00:36:51,700 - 00:36:54,100] what we ordinarily think of as the Big Bang,
+- [00:36:54,300 - 00:36:55,000] the beginning,
+- [00:36:55,000 - 00:36:57,440] the beginning as far as we can see back,
+- [00:36:57,440 - 00:36:59,520] already at that time the
+- [00:36:59,520 - 00:37:01,600] universe was very flat and smooth.
+- [00:37:02,240 - 00:37:04,870] So it's not that it flattened itself out and
+- [00:37:04,870 - 00:37:07,500] stretched itself out between the Big Bang and now.
+- [00:37:08,020 - 00:37:08,880] Big Bang,
+- [00:37:08,880 - 00:37:09,420] I mean.
+- [00:37:11,000 - 00:37:13,340] Looking back to the surface of last scattering,
+- [00:37:13,340 - 00:37:16,500] the surface of last scattering itself is very smooth,
+- [00:37:16,800 - 00:37:19,510] which indicates that at the time when the universe
+- [00:37:19,510 - 00:37:22,220] was as hot as the surface of the sun,
+- [00:37:22,220 - 00:37:24,640] it was already very smooth.
+- [00:37:25,100 - 00:37:27,020] So something had smoothed it out.
+- [00:37:27,800 - 00:37:28,220] Now,
+- [00:37:28,220 - 00:37:28,660] you might say,
+- [00:37:28,660 - 00:37:30,140] why do you need something to smooth it out?
+- [00:37:30,180 - 00:37:31,880] Just postulate that it started out smooth.
+- [00:37:32,180 - 00:37:32,660] Okay,
+- [00:37:32,660 - 00:37:33,540] you can do that.
+- [00:37:36,640 - 00:37:38,180] But in fact,
+- [00:37:38,180 - 00:37:39,600] it wasn't exactly smooth.
+- [00:37:41,080 - 00:37:44,060] We'll come to the deviations from smoothness.
+- [00:37:44,500 - 00:37:46,440] But the question was asked,
+- [00:37:46,440 - 00:37:50,180] why is it that the universe started so very smooth?
+- [00:37:52,300 - 00:37:55,590] Why is it that the density in one place
+- [00:37:55,590 - 00:37:58,880] is about the same as the density in a very,
+- [00:37:58,880 - 00:37:59,900] very different place?
+- [00:38:00,340 - 00:38:01,720] In particular,
+- [00:38:01,720 - 00:38:04,100] we can imagine places which
+- [00:38:04,100 - 00:38:06,480] are so far apart that light,
+- [00:38:06,480 - 00:38:08,220] we can see them both.
+- [00:38:08,460 - 00:38:08,960] All right?
+- [00:38:08,960 - 00:38:09,620] We can see them both.
+- [00:38:09,660 - 00:38:10,730] We see something way out
+- [00:38:10,730 - 00:38:11,800] there and something way out there.
+- [00:38:12,260 - 00:38:14,430] But we know that light did not have
+- [00:38:14,430 - 00:38:16,600] time to get from one to the other.
+- [00:38:17,680 - 00:38:20,720] So there was no way that a smoothing
+- [00:38:20,720 - 00:38:23,760] process could have happened on such large scales.
+- [00:38:25,000 - 00:38:26,890] And what is it that made the
+- [00:38:26,890 - 00:38:28,780] universe smooth and flat on those scales?
+- [00:38:29,180 - 00:38:29,660] Well,
+- [00:38:29,660 - 00:38:32,090] the hypothesis is that the Big—that
+- [00:38:32,090 - 00:38:34,520] what we ordinarily call the Big Bang,
+- [00:38:34,520 - 00:38:36,160] that there was a prehistory to it.
+- [00:38:36,160 - 00:38:38,300] And during the prehistory of it,
+- [00:38:38,300 - 00:38:43,170] the universe exponentially expanded by an enormous amount and
+- [00:38:43,170 - 00:38:48,040] got itself stretched out to be almost completely flat,
+- [00:38:48,040 - 00:38:49,780] like the inflation of a balloon.
+- [00:38:50,320 - 00:38:52,840] I like to think of it that way.
+- [00:38:53,000 - 00:38:55,340] You start with a completely deflated balloon,
+- [00:38:55,340 - 00:39:00,740] and the completely deflated balloon looks like a—you
+- [00:39:00,740 - 00:39:06,140] know what a completely deflated balloon looks like.
+- [00:39:06,140 - 00:39:10,940] It has all sorts of wrinkles—a wrinkle,
+- [00:39:10,940 - 00:39:11,820] a wrinkly balloon,
+- [00:39:11,820 - 00:39:12,900] a really wrinkly balloon.
+- [00:39:13,980 - 00:39:15,840] And now you start blowing it up.
+- [00:39:15,980 - 00:39:19,260] And after it's expanded a certain number of times,
+- [00:39:19,260 - 00:39:21,420] it gets pretty homogeneous.
+- [00:39:21,600 - 00:39:22,780] It gets pretty smooth.
+- [00:39:23,820 - 00:39:24,420] Okay?
+- [00:39:26,300 - 00:39:30,900] So if there was—and this prehistory would have had to be before the surface
+- [00:39:30,900 - 00:39:35,500] of the last scattering because it's known it was already very smooth at that time.
+- [00:39:36,360 - 00:39:37,280] All right?
+- [00:39:38,780 - 00:39:40,660] What was the hypothesis?
+- [00:39:40,880 - 00:39:43,690] The hypothesis was—called inflation due to
+- [00:39:43,690 - 00:39:46,500] Alan Guth in the early 80s,
+- [00:39:46,500 - 00:39:50,920] around 1980—that the universe underwent at that
+- [00:39:50,920 - 00:39:55,340] very early time a period of exponential inflation,
+- [00:39:55,340 - 00:39:56,960] exponential growth.
+- [00:39:57,200 - 00:39:58,000] In other words,
+- [00:39:58,000 - 00:39:59,760] that for a period,
+- [00:39:59,760 - 00:40:02,120] it behaved like the Sitter space.
+- [00:40:02,540 - 00:40:05,540] Are we assuming equilibrium before inflation?
+- [00:40:05,540 - 00:40:05,740] No.
+- [00:40:07,200 - 00:40:07,800] No.
+- [00:40:09,580 - 00:40:10,180] No.
+- [00:40:10,700 - 00:40:11,040] No.
+- [00:40:11,480 - 00:40:13,080] Whatever inflation does,
+- [00:40:13,080 - 00:40:16,690] it stretches things out so much that you lose memory
+- [00:40:16,690 - 00:40:20,300] of what the structure might have been like before inflation started.
+- [00:40:20,940 - 00:40:24,200] It just takes whatever was there and stretches it out
+- [00:40:24,200 - 00:40:27,460] so much that it just leaves it in this very,
+- [00:40:27,460 - 00:40:29,160] very homogeneous configuration.
+- [00:40:29,380 - 00:40:31,440] There was no previous homogeneity.
+- [00:40:32,260 - 00:40:33,200] We don't know.
+- [00:40:34,040 - 00:40:34,960] We don't know.
+- [00:40:34,960 - 00:40:37,520] The good thing about inflation is
+- [00:40:37,520 - 00:40:40,080] it erases all the initial conditions,
+- [00:40:40,080 - 00:40:44,000] and so you don't have to know what the initial conditions are because you don't
+- [00:40:44,000 - 00:40:47,920] have to know what the balloon looked like in the beginning because it gets stretched out.
+- [00:40:48,020 - 00:40:51,180] The bad thing about inflation is it
+- [00:40:51,180 - 00:40:54,340] erases all the information about how it started.
+- [00:40:54,700 - 00:40:55,200] I don't know.
+- [00:40:55,240 - 00:40:55,420] I mean,
+- [00:40:55,420 - 00:40:56,960] if you have a blotch on
+- [00:40:56,960 - 00:40:58,500] a raisin and you blew it up,
+- [00:40:58,500 - 00:40:59,960] and you would still have a blotch—
+- [00:40:59,960 - 00:41:00,160] No,
+- [00:41:00,160 - 00:41:02,340] you're blowing it up to something very much
+- [00:41:02,340 - 00:41:04,520] bigger than the size of the known universe.
+- [00:41:05,640 - 00:41:09,060] So imagine there was a blotch on the raisin,
+- [00:41:09,060 - 00:41:12,700] and the raisin got to be 10 to the 10 to
+- [00:41:12,700 - 00:41:16,340] the 10 to the 10 times bigger than the observed universe exponentially.
+- [00:41:16,640 - 00:41:16,920] Remember,
+- [00:41:16,920 - 00:41:19,180] the idea was it was exponentially growing,
+- [00:41:19,180 - 00:41:22,030] so it got to be 10 to the 10 to the 10
+- [00:41:22,030 - 00:41:24,880] to the 10 to the 10 times bigger than the observable universe.
+- [00:41:25,120 - 00:41:27,280] So it's just as if the surface
+- [00:41:27,280 - 00:41:29,440] becomes transparent from previously opaque or something.
+- [00:41:29,620 - 00:41:30,180] It's not transparent.
+- [00:41:30,360 - 00:41:32,180] It just gets stretched out.
+- [00:41:32,260 - 00:41:33,620] It just gets stretched out.
+- [00:41:33,620 - 00:41:36,980] So that blot or that blob,
+- [00:41:36,980 - 00:41:41,700] that little bit of inhomogeneity got stretched out.
+- [00:41:42,220 - 00:41:43,120] It's still there,
+- [00:41:43,120 - 00:41:45,040] but it's there on a scale much,
+- [00:41:45,040 - 00:41:46,200] much bigger than we can see.
+- [00:41:48,780 - 00:41:50,260] But you have to assume that it
+- [00:41:50,260 - 00:41:51,740] wasn't sort of a fractal to start,
+- [00:41:51,740 - 00:41:52,080] right?
+- [00:41:52,120 - 00:41:53,520] Because in that case,
+- [00:41:53,520 - 00:41:54,120] you wouldn't even,
+- [00:41:54,120 - 00:41:54,940] you know—
+- [00:41:54,940 - 00:41:55,160] Yeah.
+- [00:41:55,280 - 00:41:58,510] You have to assume that there
+- [00:41:58,510 - 00:42:01,740] was smoothness on some terribly tiny scale.
+- [00:42:02,480 - 00:42:03,600] But if the universe is so big,
+- [00:42:03,600 - 00:42:03,600] it's not.
+- [00:42:03,600 - 00:42:05,260] If the universe expanded enough,
+- [00:42:05,260 - 00:42:06,460] if it inflated enough,
+- [00:42:06,460 - 00:42:10,520] then if you start on any scale with some fluctuation,
+- [00:42:10,520 - 00:42:12,940] it will eventually stretch that fluctuation out.
+- [00:42:14,600 - 00:42:16,480] That's known as inflation.
+- [00:42:17,319 - 00:42:21,060] And the hypothesis is that in the very early universe,
+- [00:42:21,060 - 00:42:24,060] that basically exactly the same kind
+- [00:42:24,060 - 00:42:27,060] of thing happened that is happening today,
+- [00:42:27,060 - 00:42:31,220] except with a Hubble constant at that time,
+- [00:42:31,940 - 00:42:35,780] which was millions and millions of times larger.
+- [00:42:36,320 - 00:42:36,860] Larger,
+- [00:42:36,860 - 00:42:37,120] yes,
+- [00:42:37,120 - 00:42:37,600] larger.
+- [00:42:37,840 - 00:42:38,860] In other words,
+- [00:42:38,860 - 00:42:41,420] with a vacuum energy which was very much
+- [00:42:41,420 - 00:42:43,980] larger than the vacuum energy that we see today.
+- [00:42:45,080 - 00:42:45,620] Okay,
+- [00:42:45,620 - 00:42:46,760] now that's a curious idea.
+- [00:42:46,900 - 00:42:47,560] It's a crazy idea.
+- [00:42:47,680 - 00:42:49,120] Why was the vacuum energy
+- [00:42:49,120 - 00:42:50,560] different then than it is now?
+- [00:42:50,880 - 00:42:55,160] Can we even call it the vacuum energy if it was—if it
+- [00:42:55,160 - 00:42:59,440] had to do with something which is different than the vacuum today?
+- [00:43:00,120 - 00:43:01,200] And what's the answer?
+- [00:43:01,200 - 00:43:02,080] What's the basic idea?
+- [00:43:02,940 - 00:43:05,420] So the basic idea goes something like this.
+- [00:43:05,540 - 00:43:05,620] Now,
+- [00:43:05,620 - 00:43:07,120] we do have to talk—I'm going
+- [00:43:07,120 - 00:43:08,620] to tell you what the idea is,
+- [00:43:08,620 - 00:43:10,480] and then we'll come back at some point,
+- [00:43:10,480 - 00:43:11,000] I hope,
+- [00:43:11,000 - 00:43:14,900] and discuss what the empirical evidence for this idea.
+- [00:43:15,280 - 00:43:16,220] At first,
+- [00:43:16,220 - 00:43:18,080] it was just almost a throwaway idea.
+- [00:43:18,340 - 00:43:19,860] Maybe something like this happened.
+- [00:43:21,480 - 00:43:24,040] And as time went on,
+- [00:43:24,040 - 00:43:27,610] observation got better and better to the
+- [00:43:27,610 - 00:43:31,180] point where this picture is very clear.
+- [00:43:31,200 - 00:43:33,240] And it's been pretty well confirmed by now.
+- [00:43:33,460 - 00:43:35,580] That doesn't mean it's absolutely got to be right.
+- [00:43:36,320 - 00:43:38,400] It means that it's the best
+- [00:43:38,400 - 00:43:40,480] candidate for our understanding of what happened.
+- [00:43:41,200 - 00:43:41,840] All right,
+- [00:43:41,840 - 00:43:42,540] to understand,
+- [00:43:42,540 - 00:43:46,520] you have to have the idea of a scalar field.
+- [00:43:47,100 - 00:43:51,080] A scalar field is a field just like Maxwell's field,
+- [00:43:51,080 - 00:43:52,720] just like electric and magnetic field,
+- [00:43:52,900 - 00:43:54,850] except instead of being a
+- [00:43:54,850 - 00:43:56,800] vector at every point in space,
+- [00:43:56,800 - 00:43:59,020] the electric and magnetic fields are vectors.
+- [00:43:59,120 - 00:44:01,040] They have direction at every point in space.
+- [00:44:01,200 - 00:44:02,060] It's just a scalar.
+- [00:44:02,460 - 00:44:04,340] No sense of directionality.
+- [00:44:06,580 - 00:44:09,140] And let's call that field—let's give it a name.
+- [00:44:09,320 - 00:44:10,220] Let's call it phi.
+- [00:44:12,200 - 00:44:13,930] Is it any of the fields
+- [00:44:13,930 - 00:44:15,660] that we see in nature today?
+- [00:44:16,020 - 00:44:19,350] Is it identified—are its quanta identified
+- [00:44:19,350 - 00:44:22,680] with any of the known particles?
+- [00:44:23,120 - 00:44:24,140] Definitely not.
+- [00:44:24,980 - 00:44:26,060] Definitely not.
+- [00:44:26,220 - 00:44:28,700] It is not identified with any observed
+- [00:44:28,700 - 00:44:31,180] fields that we know about in physics.
+- [00:44:31,200 - 00:44:35,300] And its quanta are not identified with any known particles.
+- [00:44:35,620 - 00:44:38,940] So it's a hypothetical field which exists and fills
+- [00:44:38,940 - 00:44:42,260] space in the same way as any other field.
+- [00:44:43,180 - 00:44:44,820] And it has an energy.
+- [00:44:44,980 - 00:44:46,920] It has an energy associated with it.
+- [00:44:47,200 - 00:44:49,330] The energy that's associated with it
+- [00:44:49,330 - 00:44:51,460] is a kind of potential energy.
+- [00:44:51,760 - 00:44:55,110] And a potential energy that scalar
+- [00:44:55,110 - 00:44:58,460] fields can have—and it's a potential energy,
+- [00:44:58,460 - 00:44:59,360] V,
+- [00:44:59,680 - 00:45:01,180] which the V is the energy.
+- [00:45:01,200 - 00:45:04,360] It has standard terminology for a potential energy.
+- [00:45:04,540 - 00:45:06,200] When I say it's a potential energy,
+- [00:45:06,200 - 00:45:07,820] I mean it doesn't have to
+- [00:45:07,820 - 00:45:09,440] do with the time derivative of phi.
+- [00:45:10,140 - 00:45:13,460] Of course there's energy in a field if it's oscillating,
+- [00:45:13,460 - 00:45:14,600] if it's fluctuating.
+- [00:45:15,340 - 00:45:19,170] But there also can be energy in a field
+- [00:45:19,170 - 00:45:23,000] just because the field is displaced away from zero value.
+- [00:45:24,240 - 00:45:24,840] Now,
+- [00:45:24,840 - 00:45:26,560] for the moment,
+- [00:45:26,560 - 00:45:28,780] let's completely forget about quantum mechanics.
+- [00:45:29,040 - 00:45:30,480] Quantum mechanics is not important.
+- [00:45:31,200 - 00:45:31,620] It's not a function right now.
+- [00:45:32,340 - 00:45:34,840] And it's some potential energy called V of phi.
+- [00:45:38,340 - 00:45:40,740] V of phi is some function of phi.
+- [00:45:45,060 - 00:45:46,920] Let's just draw some picture of it.
+- [00:45:46,980 - 00:45:48,460] Here's some picture of it.
+- [00:45:51,379 - 00:45:52,180] Any function,
+- [00:45:52,180 - 00:45:53,240] whatever function you like,
+- [00:45:53,240 - 00:45:54,060] you can put in here.
+- [00:45:55,480 - 00:45:55,880] And,
+- [00:45:55,880 - 00:45:56,800] of course,
+- [00:45:56,800 - 00:45:58,160] you get a different theory out no
+- [00:45:58,160 - 00:45:59,520] matter what function you put in here.
+- [00:45:59,600 - 00:46:00,940] But imagine some function of phi.
+- [00:46:02,380 - 00:46:03,020] Then,
+- [00:46:03,020 - 00:46:05,620] if phi is one value or another
+- [00:46:05,620 - 00:46:08,220] value or another value or another value,
+- [00:46:08,880 - 00:46:10,300] the field energy,
+- [00:46:10,300 - 00:46:12,040] and it's a kind of vacuum energy,
+- [00:46:12,200 - 00:46:14,010] it's a kind of energy that's
+- [00:46:14,010 - 00:46:15,820] there not really in the vacuum,
+- [00:46:16,020 - 00:46:20,240] but there simply by virtue of having some space in
+- [00:46:20,240 - 00:46:24,460] which there is a field which takes on a particular value.
+- [00:46:25,000 - 00:46:26,880] It's very similar to vacuum energy,
+- [00:46:26,880 - 00:46:28,660] V of phi.
+- [00:46:31,960 - 00:46:33,240] But it can vary.
+- [00:46:33,900 - 00:46:35,720] Can I ask a question about that drawing?
+- [00:46:36,500 - 00:46:38,520] What's the horizontal axis?
+- [00:46:38,900 - 00:46:39,220] Phi.
+- [00:46:39,280 - 00:46:41,060] Phi and the vertical axis is V.
+- [00:46:41,520 - 00:46:42,020] Right.
+- [00:46:44,180 - 00:46:44,680] Now,
+- [00:46:44,680 - 00:46:50,000] you're buying a whole set of ideas here,
+- [00:46:50,000 - 00:46:51,680] none of which are obvious.
+- [00:46:52,380 - 00:46:53,300] First of all,
+- [00:46:53,300 - 00:46:55,440] that there can exist scalar fields in nature.
+- [00:46:55,560 - 00:46:56,420] This is not obvious.
+- [00:46:57,540 - 00:46:59,360] That they have potential energy.
+- [00:46:59,680 - 00:46:59,920] Well,
+- [00:46:59,920 - 00:47:01,180] the mathematics of physics,
+- [00:47:01,200 - 00:47:02,920] the field theory suggests that they
+- [00:47:02,920 - 00:47:04,640] can and do have potential energy.
+- [00:47:05,460 - 00:47:09,280] And the potential energy can vary from point to point.
+- [00:47:09,400 - 00:47:10,670] So different values of the
+- [00:47:10,670 - 00:47:11,940] field can have different energies.
+- [00:47:14,560 - 00:47:16,360] But one also has to
+- [00:47:16,360 - 00:47:18,160] take it as a matter of,
+- [00:47:19,340 - 00:47:21,320] you have to take it as a matter of faith.
+- [00:47:21,480 - 00:47:23,170] I take it as a matter
+- [00:47:23,170 - 00:47:24,860] of known mathematics that V of phi,
+- [00:47:25,240 - 00:47:27,740] if phi is not changing,
+- [00:47:28,000 - 00:47:28,960] for example,
+- [00:47:28,960 - 00:47:30,660] if it just has some value over here,
+- [00:47:31,180 - 00:47:33,360] is a kind of vacuum energy.
+- [00:47:33,800 - 00:47:38,580] It's a kind of vacuum energy which doesn't dilute.
+- [00:47:38,760 - 00:47:40,420] That's the main property of it.
+- [00:47:40,460 - 00:47:41,600] It doesn't dilute.
+- [00:47:42,200 - 00:47:46,160] This part of the energy of a field doesn't dilute.
+- [00:47:46,500 - 00:47:47,000] Yeah.
+- [00:47:48,080 - 00:47:50,140] If you drew a picture of space,
+- [00:47:50,140 - 00:47:50,640] then,
+- [00:47:50,700 - 00:47:52,480] would phi be constant over the space?
+- [00:47:52,600 - 00:47:53,860] It may or may not be constant.
+- [00:47:54,360 - 00:47:56,400] So then it could have different values.
+- [00:47:56,480 - 00:47:56,560] Yeah.
+- [00:47:56,560 - 00:47:58,540] It could have different values in different places.
+- [00:47:59,520 - 00:48:00,080] That's right.
+- [00:48:00,380 - 00:48:01,560] Let's for the moment suppose
+- [00:48:01,560 - 00:48:02,740] that it was the same everywhere.
+- [00:48:05,300 - 00:48:07,080] Let's take that case for the moment.
+- [00:48:07,180 - 00:48:08,500] We take that case for the moment.
+- [00:48:09,660 - 00:48:10,760] And we say,
+- [00:48:10,760 - 00:48:12,440] what would the world be like?
+- [00:48:15,220 - 00:48:15,660] Also,
+- [00:48:15,660 - 00:48:17,760] phi itself is a function of x,
+- [00:48:17,760 - 00:48:17,960] y,
+- [00:48:17,960 - 00:48:18,200] z,
+- [00:48:18,200 - 00:48:18,540] and t.
+- [00:48:18,840 - 00:48:19,640] In principle,
+- [00:48:19,640 - 00:48:20,720] it could be a function of x,
+- [00:48:20,720 - 00:48:20,900] y,
+- [00:48:20,900 - 00:48:21,120] z,
+- [00:48:21,120 - 00:48:21,780] and t.
+- [00:48:22,260 - 00:48:24,400] Let's take the case for the moment
+- [00:48:24,400 - 00:48:26,540] where it's just constant for the moment.
+- [00:48:26,540 - 00:48:27,700] It's just constant for whatever
+- [00:48:27,700 - 00:48:28,860] reason at some value of phi.
+- [00:48:30,240 - 00:48:31,400] Then in effect,
+- [00:48:31,400 - 00:48:33,950] the world has a vacuum energy which
+- [00:48:33,950 - 00:48:36,500] is just v at that value of phi.
+- [00:48:36,960 - 00:48:39,740] That's the way scalar field energies work.
+- [00:48:40,080 - 00:48:43,040] They behave exactly like vacuum energy.
+- [00:48:43,240 - 00:48:43,880] In particular,
+- [00:48:43,880 - 00:48:45,240] they don't dilute.
+- [00:48:46,140 - 00:48:47,060] So then,
+- [00:48:47,060 - 00:48:48,420] if that were the case,
+- [00:48:48,420 - 00:48:50,780] we would simply say that the vacuum energy
+- [00:48:50,780 - 00:48:53,400] is replaced by
+- [00:48:54,640 - 00:48:56,140] v of phi.
+- [00:48:59,680 - 00:49:01,200] Where phi is the value
+- [00:49:01,200 - 00:49:02,720] that the field happens to have.
+- [00:49:02,940 - 00:49:03,760] It might be over here.
+- [00:49:03,900 - 00:49:04,460] It might be over here.
+- [00:49:04,500 - 00:49:06,680] As long as it's not changing with space or time,
+- [00:49:06,680 - 00:49:08,400] it would just be a constant.
+- [00:49:08,920 - 00:49:10,640] Phi being constant in space.
+- [00:49:11,120 - 00:49:13,160] And then we would go back to
+- [00:49:13,160 - 00:49:15,200] all the equations for the decider space,
+- [00:49:15,440 - 00:49:17,960] or all the equations for the expansion of the universe.
+- [00:49:18,400 - 00:49:20,700] And every place we saw rho naught,
+- [00:49:20,700 - 00:49:22,680] we would stick v of phi.
+- [00:49:24,160 - 00:49:25,340] In particular,
+- [00:49:25,340 - 00:49:28,880] the universe would expand with a Hubble constant,
+- [00:49:29,220 - 00:49:31,790] which would be equal to the square
+- [00:49:31,790 - 00:49:34,360] root of 8 pi over 3 g,
+- [00:49:34,640 - 00:49:36,100] and instead of rho naught,
+- [00:49:36,100 - 00:49:38,680] I would write v of phi.
+- [00:49:40,500 - 00:49:43,000] Now what happens if v of phi,
+- [00:49:43,000 - 00:49:45,600] if phi varies from place to place?
+- [00:49:47,000 - 00:49:49,010] Supposing over here it's a different
+- [00:49:49,010 - 00:49:51,020] value than it is over here.
+- [00:49:51,940 - 00:49:53,380] Or different values than it is over here.
+- [00:49:53,400 - 00:49:55,980] Well first,
+- [00:49:55,980 - 00:49:59,600] let's go back to the case where it's not varying.
+- [00:50:00,180 - 00:50:02,080] What's happening where it's not varying?
+- [00:50:02,520 - 00:50:05,110] The region of space over which
+- [00:50:05,110 - 00:50:07,700] it's not varying is expanding exponentially,
+- [00:50:07,820 - 00:50:09,260] like e to the ht.
+- [00:50:11,680 - 00:50:14,420] What happens if it varies from place to place?
+- [00:50:14,660 - 00:50:16,080] Then in different places,
+- [00:50:16,080 - 00:50:17,660] it's expanding,
+- [00:50:17,660 - 00:50:21,040] expanding with different time constants,
+- [00:50:21,960 - 00:50:23,380] but stretching from place to place.
+- [00:50:23,380 - 00:50:25,680] So if it's expanding exponentially by an
+- [00:50:25,680 - 00:50:27,980] amount that depends on v at every place,
+- [00:50:28,160 - 00:50:29,480] so if v is varying,
+- [00:50:29,480 - 00:50:31,740] or phi is varying from place to place,
+- [00:50:31,960 - 00:50:35,660] you would have exponential expansion everywheres,
+- [00:50:35,680 - 00:50:38,520] but a different time constant in each place.
+- [00:50:39,160 - 00:50:41,400] But if the universe expands enough,
+- [00:50:41,400 - 00:50:43,080] if it inflates enough,
+- [00:50:43,080 - 00:50:44,280] if it stretches enough,
+- [00:50:44,580 - 00:50:46,540] and you're inside there someplace,
+- [00:50:46,540 - 00:50:49,740] and you can only see out to your horizon,
+- [00:50:50,760 - 00:50:53,640] eventually the stretching is so
+- [00:50:53,640 - 00:50:56,520] much that your entire environment,
+- [00:50:56,840 - 00:50:59,760] your entire environment has been stretched out to
+- [00:50:59,760 - 00:51:02,680] the point where the field within your region
+- [00:51:02,680 - 00:51:03,900] has become homogeneous,
+- [00:51:03,900 - 00:51:05,240] has become constant.
+- [00:51:05,800 - 00:51:07,740] So it's very much like this balloon.
+- [00:51:08,480 - 00:51:10,890] The balloon could be painted with some
+- [00:51:10,890 - 00:51:13,300] color which varies from place to place.
+- [00:51:15,180 - 00:51:16,280] Red over here,
+- [00:51:16,280 - 00:51:17,200] blue over here,
+- [00:51:17,200 - 00:51:18,160] purple in between.
+- [00:51:18,160 - 00:51:21,140] And then you expand it out,
+- [00:51:21,140 - 00:51:22,940] inflate it out by many,
+- [00:51:22,940 - 00:51:24,200] many orders of magnitude,
+- [00:51:24,880 - 00:51:26,400] and somebody at the center,
+- [00:51:26,400 - 00:51:28,020] or somebody at some point,
+- [00:51:28,020 - 00:51:29,760] who only can see so far,
+- [00:51:30,480 - 00:51:32,860] sees a very homogeneous color.
+- [00:51:34,380 - 00:51:37,660] Same thing with this inflating universe.
+- [00:51:38,980 - 00:51:41,180] v might vary from place to place,
+- [00:51:41,180 - 00:51:43,820] but if it does vary from place to place,
+- [00:51:44,020 - 00:51:46,080] it will get stretched out in
+- [00:51:46,080 - 00:51:48,140] such a way that it will look,
+- [00:51:48,160 - 00:51:49,760] for practical purposes,
+- [00:51:49,760 - 00:51:51,340] as if it were very constant.
+- [00:51:52,680 - 00:51:53,160] Now...
+- [00:51:53,160 - 00:51:54,120] It would worry me,
+- [00:51:54,120 - 00:51:54,360] though,
+- [00:51:54,360 - 00:51:56,100] if phi varied,
+- [00:51:56,100 - 00:51:57,160] let's say,
+- [00:51:59,140 - 00:51:59,820] you know,
+- [00:51:59,820 - 00:52:01,400] very proportional to something.
+- [00:52:01,720 - 00:52:02,120] In other words,
+- [00:52:02,120 - 00:52:03,960] it's not...
+- [00:52:03,960 - 00:52:05,830] What you seem to have drawn is
+- [00:52:05,830 - 00:52:07,700] a situation where phi is constant in patches,
+- [00:52:08,360 - 00:52:10,560] and it seems to me like it could be...
+- [00:52:11,360 - 00:52:12,660] It doesn't have to be constant,
+- [00:52:12,660 - 00:52:13,660] just slowly varying.
+- [00:52:13,920 - 00:52:14,640] Slowly varying.
+- [00:52:14,740 - 00:52:15,420] Slowly varying.
+- [00:52:15,760 - 00:52:17,120] Slowly varying on what phi,
+- [00:52:17,120 - 00:52:17,700] on what scale?
+- [00:52:18,160 - 00:52:18,740] Well,
+- [00:52:18,740 - 00:52:20,240] it doesn't matter much,
+- [00:52:20,240 - 00:52:22,780] because whatever scale it's slowly varying on,
+- [00:52:22,840 - 00:52:24,580] eventually that scale will get stretched out.
+- [00:52:25,140 - 00:52:25,660] Now,
+- [00:52:25,660 - 00:52:27,600] you could imagine maybe it was so bad
+- [00:52:27,600 - 00:52:29,540] to begin with that it would never stretch out.
+- [00:52:30,320 - 00:52:31,580] You could imagine that.
+- [00:52:31,940 - 00:52:34,340] But apparently that's not the way it was.
+- [00:52:36,320 - 00:52:38,300] And that we judge because
+- [00:52:38,300 - 00:52:40,280] the universe is today rather homogeneous.
+- [00:52:40,980 - 00:52:41,640] All right.
+- [00:52:42,000 - 00:52:42,520] So,
+- [00:52:42,520 - 00:52:44,420] let me draw for you then
+- [00:52:45,460 - 00:52:46,240] the way
+- [00:52:47,360 - 00:52:47,880] experiment
+- [00:52:49,600 - 00:52:51,500] various combinations of observations
+- [00:52:52,760 - 00:52:55,280] suggests this V of phi to be...
+- [00:52:55,280 - 00:52:55,280] Oh,
+- [00:52:55,280 - 00:52:55,740] yeah,
+- [00:52:55,740 - 00:52:56,260] all right.
+- [00:52:57,540 - 00:52:58,060] Incidentally,
+- [00:52:58,060 - 00:52:59,730] if you have a potential
+- [00:52:59,730 - 00:53:01,400] energy function which looks like that,
+- [00:53:01,640 - 00:53:03,270] it could be the potential
+- [00:53:03,270 - 00:53:04,900] energy instead of for a field,
+- [00:53:05,020 - 00:53:07,420] it could be for a coordinate of some kind.
+- [00:53:07,880 - 00:53:10,400] What happens if you start the coordinate over here?
+- [00:53:12,400 - 00:53:14,380] What happens if you start a particle
+- [00:53:15,160 - 00:53:17,540] in a potential energy and you start over here?
+- [00:53:19,400 - 00:53:20,280] You roll down.
+- [00:53:22,500 - 00:53:22,940] Now,
+- [00:53:22,940 - 00:53:24,160] let's suppose you start up here.
+- [00:53:24,860 - 00:53:25,780] You roll down,
+- [00:53:25,780 - 00:53:26,980] you roll over the hill,
+- [00:53:26,980 - 00:53:28,080] you roll over the hill,
+- [00:53:28,160 - 00:53:30,460] and you eventually go somewhere else.
+- [00:53:32,080 - 00:53:33,480] If there's a lot of friction,
+- [00:53:34,120 - 00:53:35,360] if there's a lot of friction,
+- [00:53:35,360 - 00:53:37,060] you might roll down the hill here
+- [00:53:37,540 - 00:53:39,340] and just get stuck at the minimum.
+- [00:53:43,060 - 00:53:43,900] The minimum,
+- [00:53:43,900 - 00:53:45,620] really are places,
+- [00:53:45,620 - 00:53:46,440] the minima,
+- [00:53:46,460 - 00:53:50,300] really are places where the field would just be constant.
+- [00:53:52,080 - 00:53:53,920] If you started the field over here,
+- [00:53:54,060 - 00:53:55,600] it really wouldn't be constant.
+- [00:53:55,900 - 00:53:56,500] It would,
+- [00:53:56,500 - 00:53:57,860] it might roll down.
+- [00:53:59,280 - 00:54:00,600] If there was friction,
+- [00:54:00,840 - 00:54:02,840] and there is friction in cosmology,
+- [00:54:03,020 - 00:54:04,260] if there was friction,
+- [00:54:04,500 - 00:54:06,160] then it might just come to
+- [00:54:06,160 - 00:54:07,820] rest at the bottom over here.
+- [00:54:08,080 - 00:54:10,180] If it comes to rest at the bottom,
+- [00:54:10,800 - 00:54:12,380] if the field comes to rest,
+- [00:54:12,380 - 00:54:13,320] then it's constant.
+- [00:54:14,000 - 00:54:16,240] That's the situation in which you can pretend
+- [00:54:16,240 - 00:54:17,620] that the field is very
+- [00:54:17,620 - 00:54:19,000] constant and doesn't change with time
+- [00:54:19,560 - 00:54:23,440] if it's sitting at the minimum of the potential.
+- [00:54:24,560 - 00:54:26,520] It could come to rest in any of these.
+- [00:54:27,420 - 00:54:28,120] All right,
+- [00:54:28,120 - 00:54:29,740] so here is what it is thought,
+- [00:54:31,140 - 00:54:35,580] that the potential energy of some field,
+- [00:54:35,760 - 00:54:36,960] which we have never discovered,
+- [00:54:37,700 - 00:54:38,860] we've never measured it,
+- [00:54:39,020 - 00:54:42,980] it is a conjectural,
+- [00:54:42,980 - 00:54:43,740] speculative,
+- [00:54:45,100 - 00:54:47,180] construction with a field energy,
+- [00:54:47,340 - 00:54:49,960] with a V that looks something like this.
+- [00:54:50,200 - 00:54:50,500] Now,
+- [00:54:50,500 - 00:54:57,220] perhaps it starts with a shape of some unknown kind,
+- [00:54:57,520 - 00:55:00,220] but then it gets very flat.
+- [00:55:02,280 - 00:55:04,020] Not completely flat.
+- [00:55:04,980 - 00:55:05,640] Question?
+- [00:55:07,640 - 00:55:10,960] So the field energy doesn't vary for very much
+- [00:55:10,960 - 00:55:12,800] over some range of phi.
+- [00:55:13,900 - 00:55:15,900] And then all of a sudden,
+- [00:55:15,920 - 00:55:17,540] it comes to the end of a cliff,
+- [00:55:17,720 - 00:55:20,780] comes to a cliff and falls down.
+- [00:55:21,860 - 00:55:23,920] It doesn't quite go to zero.
+- [00:55:26,740 - 00:55:28,240] And then turns back up.
+- [00:55:30,320 - 00:55:30,880] Now,
+- [00:55:30,880 - 00:55:33,520] this is so ridiculous that,
+- [00:55:37,460 - 00:55:38,580] so contrived,
+- [00:55:38,580 - 00:55:39,480] let's put it this way,
+- [00:55:39,520 - 00:55:43,880] it is so contrived that it almost seems,
+- [00:55:43,880 - 00:55:45,300] seems quite ridiculous.
+- [00:55:46,660 - 00:55:46,980] Nevertheless,
+- [00:55:46,980 - 00:55:50,060] this is what observational cosmology
+- [00:55:50,060 - 00:55:50,840] seems to demand.
+- [00:55:51,200 - 00:55:52,040] So here's the picture.
+- [00:55:53,820 - 00:55:59,600] The universe started in some unknown way,
+- [00:55:59,680 - 00:56:00,580] in a way that we don't know,
+- [00:56:00,800 - 00:56:02,180] with a field energy,
+- [00:56:02,180 - 00:56:02,900] V of phi,
+- [00:56:03,200 - 00:56:06,200] that was located on a plateau like this.
+- [00:56:08,500 - 00:56:11,420] Because this was almost a flat plateau,
+- [00:56:13,880 - 00:56:16,360] phi didn't change very much with time.
+- [00:56:16,680 - 00:56:18,140] It changed very slowly,
+- [00:56:18,340 - 00:56:19,600] like being on a very,
+- [00:56:19,600 - 00:56:20,320] very shallow,
+- [00:56:20,520 - 00:56:22,980] like this eraser on the tabletop here.
+- [00:56:24,740 - 00:56:25,980] There's enough friction,
+- [00:56:26,140 - 00:56:27,320] and in fact in cosmology,
+- [00:56:27,420 - 00:56:28,420] there was a lot of friction.
+- [00:56:29,280 - 00:56:31,320] The eraser doesn't move very much.
+- [00:56:31,380 - 00:56:35,800] You could tilt the table quite a bit
+- [00:56:35,800 - 00:56:37,720] before you would start to move off.
+- [00:56:39,920 - 00:56:42,760] The kind of friction is not quite the same
+- [00:56:42,760 - 00:56:44,560] as the kind of friction on this table here.
+- [00:56:44,780 - 00:56:45,880] More like a viscosity?
+- [00:56:46,160 - 00:56:46,280] Yeah,
+- [00:56:46,280 - 00:56:46,920] more like a viscosity.
+- [00:56:47,360 - 00:56:47,840] Yeah,
+- [00:56:47,840 - 00:56:48,900] more like a fluid viscosity.
+- [00:56:49,620 - 00:56:52,160] This is called slipstick friction,
+- [00:56:52,500 - 00:56:55,080] which means it sticks until it slips.
+- [00:56:55,620 - 00:56:56,360] All right.
+- [00:56:56,560 - 00:56:59,820] Motion of an object through a liquid or a gas
+- [00:57:00,740 - 00:57:04,780] is a better analog for what happens for cosmology.
+- [00:57:05,380 - 00:57:05,920] So,
+- [00:57:05,920 - 00:57:07,540] but there is a kind of viscosity.
+- [00:57:08,080 - 00:57:09,580] Viscosity is the right picture.
+- [00:57:09,660 - 00:57:10,640] There is a kind of viscosity
+- [00:57:10,640 - 00:57:12,460] that's particularly associated
+- [00:57:12,760 - 00:57:15,740] with an expanding universe,
+- [00:57:17,420 - 00:57:19,640] and the faster the expansion,
+- [00:57:19,780 - 00:57:20,620] the bigger the viscosity.
+- [00:57:21,300 - 00:57:23,660] And so if this were a particle
+- [00:57:24,460 - 00:57:28,140] moving on a potential energy surface like this,
+- [00:57:28,180 - 00:57:28,620] in other words,
+- [00:57:28,620 - 00:57:30,740] just a potential like this,
+- [00:57:30,880 - 00:57:32,260] it would slowly,
+- [00:57:32,260 - 00:57:32,860] slowly,
+- [00:57:32,860 - 00:57:34,660] slowly move down here
+- [00:57:35,520 - 00:57:37,680] under the combined effect
+- [00:57:37,680 - 00:57:40,100] of the slope of the potential.
+- [00:57:40,280 - 00:57:41,940] That means a little bit of a push
+- [00:57:41,940 - 00:57:42,680] in this direction
+- [00:57:42,760 - 00:57:44,200] and at the same time,
+- [00:57:44,220 - 00:57:46,120] the viscosity would keep it moving slowly.
+- [00:57:46,580 - 00:57:49,060] It would stay at this level
+- [00:57:49,760 - 00:57:51,520] for a long period of time.
+- [00:57:51,940 - 00:57:53,360] During that time,
+- [00:57:53,680 - 00:57:55,820] V didn't change much.
+- [00:57:56,460 - 00:57:59,480] So V was almost constant during that time,
+- [00:57:59,580 - 00:58:01,240] and if V were constant,
+- [00:58:01,600 - 00:58:04,500] then it would just be a constant vacuum energy.
+- [00:58:05,080 - 00:58:06,400] So to the extent
+- [00:58:06,400 - 00:58:10,760] that the universe slid down this hill very slowly
+- [00:58:10,760 - 00:58:12,740] and the vacuum energy was still there,
+- [00:58:12,740 - 00:58:13,840] the energy didn't change much,
+- [00:58:14,320 - 00:58:15,840] then during that period,
+- [00:58:16,000 - 00:58:17,760] the universe inflated.
+- [00:58:17,980 - 00:58:19,020] During that period,
+- [00:58:19,180 - 00:58:21,140] the universe exponentially grew,
+- [00:58:21,420 - 00:58:23,140] and it exponentially grew
+- [00:58:23,140 - 00:58:25,460] with a time constant that looks like this,
+- [00:58:26,020 - 00:58:27,160] where V of phi
+- [00:58:28,520 - 00:58:30,700] was just the value of V along here.
+- [00:58:31,260 - 00:58:32,640] A very big value,
+- [00:58:32,640 - 00:58:32,960] right?
+- [00:58:33,080 - 00:58:33,500] What's that?
+- [00:58:33,660 - 00:58:34,760] A very big value.
+- [00:58:34,960 - 00:58:35,360] Well,
+- [00:58:35,360 - 00:58:36,400] it depends on what units
+- [00:58:36,400 - 00:58:37,040] you're measuring it,
+- [00:58:37,040 - 00:58:37,380] of course.
+- [00:58:37,760 - 00:58:39,020] So if you're measuring it
+- [00:58:39,020 - 00:58:39,660] in ordinary,
+- [00:58:39,660 - 00:58:42,160] everyday units,
+- [00:58:42,740 - 00:58:43,340] it's enormous.
+- [00:58:44,080 - 00:58:45,480] Even if you're measuring it
+- [00:58:45,480 - 00:58:46,900] in elementary particle units,
+- [00:58:47,260 - 00:58:47,980] it's very,
+- [00:58:47,980 - 00:58:48,720] very large.
+- [00:58:48,940 - 00:58:50,740] But if you're measuring it in Planck units,
+- [00:58:50,980 - 00:58:51,540] it must have been,
+- [00:58:51,540 - 00:58:52,520] it was very small.
+- [00:58:53,540 - 00:58:54,880] So it depends on what units
+- [00:58:54,880 - 00:58:55,580] you're talking about,
+- [00:58:55,740 - 00:58:58,860] but in units anything like
+- [00:58:58,860 - 00:59:00,920] the density of energy in this room,
+- [00:59:01,820 - 00:59:03,180] it's humongously big.
+- [00:59:04,060 - 00:59:04,580] Right,
+- [00:59:04,580 - 00:59:05,400] so very,
+- [00:59:05,400 - 00:59:06,800] very large energy here.
+- [00:59:07,760 - 00:59:09,420] What's causing phi to move?
+- [00:59:09,540 - 00:59:09,820] Hm?
+- [00:59:09,960 - 00:59:11,660] What's causing phi to move?
+- [00:59:12,740 - 00:59:14,140] The slope of the potential.
+- [00:59:17,480 - 00:59:18,000] Okay.
+- [00:59:18,240 - 00:59:19,640] The slope of the potential
+- [00:59:19,640 - 00:59:21,680] is causing it to slowly drift
+- [00:59:21,680 - 00:59:22,460] down that hill,
+- [00:59:23,680 - 00:59:24,840] roughly as if,
+- [00:59:27,120 - 00:59:28,700] roughly as if you had
+- [00:59:28,700 - 00:59:30,620] a weak gravitational field.
+- [00:59:32,140 - 00:59:34,060] Forget talking about ordinary gravity.
+- [00:59:34,140 - 00:59:35,500] Imagine this room were filled with liquid,
+- [00:59:35,640 - 00:59:36,680] filled with honey.
+- [00:59:37,340 - 00:59:37,860] Hm.
+- [00:59:38,800 - 00:59:39,320] Okay?
+- [00:59:39,420 - 00:59:40,820] And you put a rock in it.
+- [00:59:41,560 - 00:59:44,260] The gravitational field would correspond
+- [00:59:44,260 - 00:59:47,260] to a tilt in the potential energy,
+- [00:59:47,420 - 00:59:49,320] potential energy higher at one end
+- [00:59:49,320 - 00:59:50,080] than at the other end,
+- [00:59:50,220 - 00:59:51,880] higher up there than it is here.
+- [00:59:53,200 - 00:59:54,880] The viscosity of the honey
+- [00:59:54,880 - 00:59:57,580] would lead to the rock falling,
+- [00:59:57,620 - 00:59:59,420] and it would fall slowly
+- [00:59:59,420 - 01:00:01,320] with a terminal velocity.
+- [01:00:02,500 - 01:00:03,240] All right,
+- [01:00:03,240 - 01:00:05,700] so this slowly slides down here,
+- [01:00:07,280 - 01:00:09,500] assuming the slope is small enough,
+- [01:00:10,240 - 01:00:11,880] until it gets to the edge,
+- [01:00:12,040 - 01:00:13,340] and at the edge here,
+- [01:00:13,540 - 01:00:15,180] it suddenly goes over the edge
+- [01:00:15,180 - 01:00:18,040] and winds up eventually down here.
+- [01:00:18,900 - 01:00:19,380] Okay,
+- [01:00:19,380 - 01:00:20,380] what does eventually mean?
+- [01:00:21,779 - 01:00:23,380] Eventually means today.
+- [01:00:23,760 - 01:00:25,240] Isn't that more like slip-stick?
+- [01:00:25,680 - 01:00:26,160] No.
+- [01:00:27,300 - 01:00:27,780] No,
+- [01:00:27,780 - 01:00:27,900] no,
+- [01:00:27,900 - 01:00:28,180] it doesn't.
+- [01:00:28,220 - 01:00:28,680] It never sticks.
+- [01:00:29,120 - 01:00:29,600] Well,
+- [01:00:29,600 - 01:00:30,180] I mean...
+- [01:00:31,500 - 01:00:32,460] It doesn't stick.
+- [01:00:32,480 - 01:00:33,380] It looks like it's slipping.
+- [01:00:33,640 - 01:00:34,280] It's slipping.
+- [01:00:35,460 - 01:00:36,180] No stick,
+- [01:00:36,180 - 01:00:36,400] though.
+- [01:00:36,740 - 01:00:37,200] Right,
+- [01:00:37,200 - 01:00:37,960] right.
+- [01:00:38,060 - 01:00:38,720] It's not a station.
+- [01:00:38,720 - 01:00:39,440] Right.
+- [01:00:39,700 - 01:00:41,800] I always thought a slip-stick was a thing,
+- [01:00:41,920 - 01:00:43,440] but a slip-stick wasn't a thing.
+- [01:00:43,540 - 01:00:44,780] Slip was slip or stick.
+- [01:00:48,040 - 01:00:48,460] Slider.
+- [01:00:49,400 - 01:00:49,820] Slider.
+- [01:00:50,780 - 01:00:51,200] Slider.
+- [01:00:51,360 - 01:00:51,800] Slider was a slip-stick.
+- [01:00:53,160 - 01:00:54,220] Did they call it that?
+- [01:00:54,460 - 01:00:54,680] Yeah.
+- [01:00:54,840 - 01:00:55,260] Oh,
+- [01:00:55,260 - 01:00:55,420] they do?
+- [01:00:55,500 - 01:00:55,660] Okay.
+- [01:00:57,120 - 01:00:57,540] Okay,
+- [01:00:57,540 - 01:00:57,840] yeah,
+- [01:00:57,840 - 01:01:00,680] I guess from my engineering background,
+- [01:01:00,860 - 01:01:02,460] I thought a slip-stick was a thing,
+- [01:01:02,940 - 01:01:03,600] but no,
+- [01:01:03,600 - 01:01:04,960] it's an adjective.
+- [01:01:05,140 - 01:01:06,320] Slip-stick friction.
+- [01:01:07,300 - 01:01:07,840] All right.
+- [01:01:07,840 - 01:01:08,840] It's not slip-stick.
+- [01:01:08,920 - 01:01:11,340] It's just slip or viscosity.
+- [01:01:12,240 - 01:01:13,820] And then when it gets to the end here,
+- [01:01:13,900 - 01:01:14,660] all of a sudden,
+- [01:01:14,660 - 01:01:17,400] the potential energy changes rapidly.
+- [01:01:18,040 - 01:01:20,440] That means effectively that there's
+- [01:01:20,440 - 01:01:22,840] a large force on the universe
+- [01:01:22,840 - 01:01:24,260] pushing it over the hill here.
+- [01:01:25,260 - 01:01:27,120] And what happens when it gets down here?
+- [01:01:27,860 - 01:01:29,120] When it gets down here,
+- [01:01:29,120 - 01:01:29,740] at the minimum,
+- [01:01:29,740 - 01:01:30,720] it comes to rest.
+- [01:01:30,920 - 01:01:31,680] It comes to rest,
+- [01:01:31,680 - 01:01:32,880] the combination of friction
+- [01:01:33,380 - 01:01:35,000] and minimum potential energy,
+- [01:01:35,000 - 01:01:35,900] it comes to rest.
+- [01:01:36,200 - 01:01:36,480] All right.
+- [01:01:36,480 - 01:01:37,160] Where are we today?
+- [01:01:37,700 - 01:01:39,000] We're down at the bottom.
+- [01:01:40,540 - 01:01:42,810] How do I know what the
+- [01:01:42,810 - 01:01:45,080] height of this potential energy is?
+- [01:01:45,240 - 01:01:49,320] Because I know today what the Hubble constant is.
+- [01:01:49,780 - 01:01:51,790] So the Hubble constant is 8
+- [01:01:51,790 - 01:01:53,800] pi 3 over g via phi.
+- [01:01:54,700 - 01:01:57,460] That's the exponential growth of the universe today.
+- [01:01:59,260 - 01:02:01,060] And that appears to be down here.
+- [01:02:01,740 - 01:02:04,060] The coefficient down here is very,
+- [01:02:04,060 - 01:02:04,680] very small,
+- [01:02:04,760 - 01:02:05,200] much,
+- [01:02:05,200 - 01:02:06,460] much smaller than it was up here.
+- [01:02:06,480 - 01:02:08,540] Why this is true,
+- [01:02:08,540 - 01:02:09,300] we don't know.
+- [01:02:09,440 - 01:02:10,300] We really don't know.
+- [01:02:10,780 - 01:02:12,910] But we do know what the
+- [01:02:12,910 - 01:02:15,040] potential energy is at the bottom here
+- [01:02:15,040 - 01:02:18,320] because we know today what the Hubble constant is.
+- [01:02:18,460 - 01:02:18,840] Today.
+- [01:02:19,180 - 01:02:19,960] All right.
+- [01:02:20,340 - 01:02:21,540] And it's very small.
+- [01:02:22,640 - 01:02:24,340] We also suspect,
+- [01:02:24,340 - 01:02:26,580] and there's some evidence,
+- [01:02:27,410 - 01:02:30,660] that the potential energy up here was very much larger
+- [01:02:31,320 - 01:02:35,660] and that the Hubble constant was very much larger,
+- [01:02:36,480 - 01:02:37,000] in other words,
+- [01:02:37,000 - 01:02:38,760] that the doubling time of the universe
+- [01:02:38,760 - 01:02:42,920] was many orders of magnitude larger than this one doubling
+- [01:02:42,920 - 01:02:44,820] every 10 to the 10th years.
+- [01:02:45,700 - 01:02:46,720] In fact,
+- [01:02:46,720 - 01:02:49,400] with standard cosmological numbers,
+- [01:02:51,200 - 01:02:54,130] this inflation took place with a time
+- [01:02:54,130 - 01:02:57,060] constant of 10 to the minus 32 seconds
+- [01:02:57,060 - 01:02:58,000] or something like that.
+- [01:02:58,260 - 01:02:59,400] So it's kind of crazy.
+- [01:02:59,540 - 01:02:59,740] I mean,
+- [01:02:59,740 - 01:03:01,060] this is a crazy picture.
+- [01:03:01,800 - 01:03:03,120] This is a crazy picture.
+- [01:03:03,180 - 01:03:04,680] The amazing thing is that
+- [01:03:04,680 - 01:03:06,180] it seems to have some validity.
+- [01:03:06,180 - 01:03:07,460] All right.
+- [01:03:07,500 - 01:03:11,940] We gradually drifted down here and came to the edge
+- [01:03:11,940 - 01:03:13,220] and went down to here.
+- [01:03:13,780 - 01:03:16,060] The expansion that took place
+- [01:03:16,060 - 01:03:18,340] up in here is called inflation.
+- [01:03:19,340 - 01:03:20,680] It's called inflation.
+- [01:03:21,840 - 01:03:23,760] Where did the Big Bang happen,
+- [01:03:23,760 - 01:03:24,620] incidentally?
+- [01:03:25,160 - 01:03:27,620] The thing that we normally call the Big Bang.
+- [01:03:27,840 - 01:03:30,400] The Big Bang happened after we
+- [01:03:30,400 - 01:03:32,960] got pretty much down to here.
+- [01:03:34,260 - 01:03:36,100] After we slid over this edge,
+- [01:03:37,100 - 01:03:38,200] the Big Bang,
+- [01:03:38,200 - 01:03:39,080] meaning to say,
+- [01:03:39,140 - 01:03:40,650] what I mean by the Big Bang
+- [01:03:40,650 - 01:03:42,160] now is the surface of the last scattering.
+- [01:03:42,560 - 01:03:44,320] The surface of the last scattering
+- [01:03:44,320 - 01:03:46,080] was very late in this picture.
+- [01:03:46,560 - 01:03:51,440] It happened well after the universe settled down here.
+- [01:03:52,860 - 01:03:55,040] So the Big Bang and everything
+- [01:03:55,040 - 01:03:57,220] we actually can observe about cosmology
+- [01:03:57,220 - 01:03:58,740] was down in here.
+- [01:04:01,580 - 01:04:03,900] But before the Big Bang happened,
+- [01:04:03,900 - 01:04:08,740] this period of exponential inflation took place,
+- [01:04:08,860 - 01:04:09,860] according to theory.
+- [01:04:10,340 - 01:04:11,760] And during that period,
+- [01:04:11,920 - 01:04:14,560] the universe stretched itself out so much
+- [01:04:15,340 - 01:04:17,620] that all of the wrinkles disappeared,
+- [01:04:17,620 - 01:04:18,240] if you like.
+- [01:04:19,360 - 01:04:20,810] So that means that the universe
+- [01:04:20,810 - 01:04:22,260] at the time of the Big Bang
+- [01:04:22,260 - 01:04:24,100] or the time of the surface of the last scattering
+- [01:04:24,100 - 01:04:26,120] was already stretched out by many,
+- [01:04:26,120 - 01:04:27,440] many powers of E.
+- [01:04:28,320 - 01:04:29,660] How many powers of E?
+- [01:04:29,780 - 01:04:30,740] That we don't know for sure.
+- [01:04:31,040 - 01:04:32,060] You were going to ask a question.
+- [01:04:32,800 - 01:04:35,600] The wrinkles are mainly wrinkles in
+- [01:04:35,600 - 01:04:38,400] this primordial scale of the field then.
+- [01:04:38,480 - 01:04:40,920] And also the gravitational field.
+- [01:04:41,120 - 01:04:43,420] Also the gravitational field.
+- [01:04:43,660 - 01:04:44,000] Yeah.
+- [01:04:44,380 - 01:04:45,260] In other words,
+- [01:04:45,260 - 01:04:47,060] the shape of space and its curvature
+- [01:04:47,060 - 01:04:48,420] might have been fluctuating,
+- [01:04:48,420 - 01:04:49,080] but also phi.
+- [01:04:50,440 - 01:04:52,120] What is the x-axis?
+- [01:04:52,120 - 01:04:53,380] Is that T or is it phi?
+- [01:04:53,900 - 01:04:54,420] Phi.
+- [01:04:55,380 - 01:04:55,900] Here,
+- [01:04:55,900 - 01:04:56,200] in this?
+- [01:04:56,540 - 01:04:57,060] Phi.
+- [01:04:57,340 - 01:04:58,340] The field phi.
+- [01:04:58,760 - 01:05:00,330] This is the potential energy as
+- [01:05:00,330 - 01:05:01,900] a function of the field phi.
+- [01:05:02,060 - 01:05:05,120] The field phi can depend on time
+- [01:05:07,400 - 01:05:10,040] as the universe rolls down this hill.
+- [01:05:11,400 - 01:05:11,960] Well,
+- [01:05:11,960 - 01:05:14,600] it sort of acts like a time parameter.
+- [01:05:15,120 - 01:05:15,660] Like a what?
+- [01:05:15,860 - 01:05:17,740] It's acting like a time parameter here
+- [01:05:17,740 - 01:05:20,820] because you've got a monotonic function that's...
+- [01:05:20,820 - 01:05:21,760] It is,
+- [01:05:21,760 - 01:05:22,200] in fact,
+- [01:05:22,200 - 01:05:23,600] acting like a time parameter.
+- [01:05:26,080 - 01:05:27,360] This is true.
+- [01:05:28,620 - 01:05:30,160] Time parameter meaning to say
+- [01:05:30,160 - 01:05:31,700] that it's monotonic function of time.
+- [01:05:32,060 - 01:05:32,560] Yeah.
+- [01:05:32,700 - 01:05:34,860] What's the part of the graph after that minimum?
+- [01:05:34,940 - 01:05:35,700] Say again?
+- [01:05:36,040 - 01:05:38,360] What's the part of the graph after that minimum?
+- [01:05:38,860 - 01:05:39,380] Here?
+- [01:05:39,600 - 01:05:39,920] Yeah.
+- [01:05:40,020 - 01:05:40,480] Who knows?
+- [01:05:41,600 - 01:05:42,640] Who knows?
+- [01:05:42,880 - 01:05:44,800] All we know is that we're living at some place
+- [01:05:44,800 - 01:05:46,720] where the potential energy is not quite zero.
+- [01:05:48,120 - 01:05:48,640] Yeah.
+- [01:05:50,400 - 01:05:53,460] Nothing in our experience tells us very much about here.
+- [01:05:53,900 - 01:05:55,580] Looking back in the past,
+- [01:05:55,840 - 01:06:00,060] we discover something that looks like a motion like this.
+- [01:06:02,580 - 01:06:04,250] We're going to come to what
+- [01:06:04,250 - 01:06:05,920] the observational evidence for this is,
+- [01:06:05,920 - 01:06:06,300] but...
+- [01:06:06,600 - 01:06:07,560] This may be a bad analogy,
+- [01:06:07,800 - 01:06:09,800] but when you're looking
+- [01:06:09,800 - 01:06:11,800] at gravitationally derived potential energy
+- [01:06:11,800 - 01:06:12,860] as a function of position,
+- [01:06:13,799 - 01:06:15,489] but there's only potential energy in
+- [01:06:15,489 - 01:06:17,180] the presence of a gravitational field.
+- [01:06:18,220 - 01:06:18,780] Okay,
+- [01:06:18,780 - 01:06:21,940] a gravitational field simply in this context
+- [01:06:21,940 - 01:06:24,280] means a gradient of a potential energy.
+- [01:06:24,700 - 01:06:25,100] Well,
+- [01:06:25,100 - 01:06:27,150] what is the analog of
+- [01:06:27,150 - 01:06:29,200] a gravitational field in this picture?
+- [01:06:29,600 - 01:06:30,580] There isn't one.
+- [01:06:32,180 - 01:06:32,840] Okay,
+- [01:06:32,840 - 01:06:35,760] let's not get ourselves confused between gravity
+- [01:06:35,760 - 01:06:39,040] as the real thing in this universe
+- [01:06:39,040 - 01:06:42,090] and the model that I was
+- [01:06:42,090 - 01:06:45,140] describing of a rock falling through honey.
+- [01:06:45,680 - 01:06:46,340] Right.
+- [01:06:47,020 - 01:06:47,680] Right.
+- [01:06:48,940 - 01:06:51,160] Some force on a system
+- [01:06:52,560 - 01:06:54,880] which pushes it from one place to another,
+- [01:06:54,880 - 01:06:55,380] basically.
+- [01:06:55,940 - 01:06:59,240] That's the gradient of the potential energy here.
+- [01:06:59,300 - 01:07:01,940] The fact that it's not actually exactly flat.
+- [01:07:05,060 - 01:07:06,860] Just in case it was not clear,
+- [01:07:07,040 - 01:07:09,500] this was not intended to be exactly flat.
+- [01:07:09,640 - 01:07:11,440] It was intended to have a small slope.
+- [01:07:14,540 - 01:07:17,260] It's analogous to the table having a small slope.
+- [01:07:17,700 - 01:07:19,540] If the table has a small slope,
+- [01:07:19,700 - 01:07:22,560] then the potential energy differs from point to point.
+- [01:07:23,240 - 01:07:26,340] And if something is on this table,
+- [01:07:26,460 - 01:07:27,380] if there's no friction,
+- [01:07:27,620 - 01:07:28,980] what happens if there's no friction?
+- [01:07:30,260 - 01:07:32,040] It starts accelerating.
+- [01:07:32,680 - 01:07:33,200] Okay.
+- [01:07:33,740 - 01:07:35,920] What happens if there's some viscosity?
+- [01:07:39,020 - 01:07:40,700] It reaches a terminal velocity.
+- [01:07:40,940 - 01:07:41,920] It starts to accelerate,
+- [01:07:42,080 - 01:07:43,580] but then reaches a terminal velocity
+- [01:07:43,580 - 01:07:45,700] and just moves slowly across the table.
+- [01:07:46,020 - 01:07:48,340] If the table has a small tilt,
+- [01:07:48,600 - 01:07:50,340] it will move slowly.
+- [01:07:51,240 - 01:07:51,760] Okay.
+- [01:07:52,060 - 01:07:53,920] It will move slowly until it
+- [01:07:53,920 - 01:07:55,780] gets to the edge of the table.
+- [01:07:56,640 - 01:07:57,160] Okay.
+- [01:07:57,320 - 01:07:58,660] And then it falls off.
+- [01:07:59,220 - 01:08:01,120] So it doesn't oscillate through there?
+- [01:08:01,120 - 01:08:01,420] Well,
+- [01:08:01,420 - 01:08:03,360] it may oscillate down at the bottom here.
+- [01:08:03,520 - 01:08:04,920] How did we observe that?
+- [01:08:05,760 - 01:08:07,340] That's dark energy,
+- [01:08:07,340 - 01:08:08,160] dark matter.
+- [01:08:09,080 - 01:08:10,600] But where is Big Bang today?
+- [01:08:11,100 - 01:08:11,560] All right.
+- [01:08:11,600 - 01:08:13,520] The Big Bang and everything
+- [01:08:13,520 - 01:08:15,440] we historically know about the universe
+- [01:08:16,120 - 01:08:20,310] all took place after this got down
+- [01:08:20,310 - 01:08:24,500] to very close to the bottom here.
+- [01:08:24,760 - 01:08:25,460] And where is it today?
+- [01:08:25,899 - 01:08:27,300] Also down at the bottom.
+- [01:08:27,540 - 01:08:29,920] It fell down there and just stuck there.
+- [01:08:29,920 - 01:08:32,300] Not stuck because of stick slip,
+- [01:08:32,479 - 01:08:34,460] but stuck because it's the minimum of the energy.
+- [01:08:34,840 - 01:08:36,520] And what is the period of
+- [01:08:36,520 - 01:08:38,200] inflation when this balloon is expanding?
+- [01:08:38,399 - 01:08:40,279] Is that just the cliff or the whole thing?
+- [01:08:40,420 - 01:08:40,560] No,
+- [01:08:40,560 - 01:08:40,680] no,
+- [01:08:40,680 - 01:08:41,500] the whole thing here.
+- [01:08:42,060 - 01:08:43,800] And that's about T to the minus,
+- [01:08:43,800 - 01:08:46,560] like minus 32 seconds.
+- [01:08:47,600 - 01:08:48,080] That?
+- [01:08:48,080 - 01:08:48,560] Right.
+- [01:08:49,100 - 01:08:50,560] 10 to the minus 32 seconds.
+- [01:08:51,460 - 01:08:53,740] Doubling every 10 to the minus 32 seconds.
+- [01:08:54,500 - 01:08:54,979] Now,
+- [01:08:54,979 - 01:08:56,140] that may seem very fast,
+- [01:08:56,760 - 01:08:58,439] but on the scale,
+- [01:08:58,439 - 01:08:59,380] on the Planck scale,
+- [01:08:59,380 - 01:09:00,700] in units of Planck time,
+- [01:09:00,700 - 01:09:01,359] it's very slow,
+- [01:09:01,359 - 01:09:01,859] in fact.
+- [01:09:02,420 - 01:09:04,800] The Planck time is 10 to the minus 42 seconds.
+- [01:09:05,180 - 01:09:06,540] We don't know how long that was either.
+- [01:09:07,160 - 01:09:07,560] Yeah,
+- [01:09:07,560 - 01:09:07,960] right.
+- [01:09:08,080 - 01:09:09,399] We don't know how long this was,
+- [01:09:09,500 - 01:09:10,909] and so we don't know
+- [01:09:10,909 - 01:09:12,319] how long this inflation took place.
+- [01:09:12,899 - 01:09:15,990] So we don't know in that sense whether it
+- [01:09:15,990 - 01:09:19,080] expanded by a factor of 10 to the 10,
+- [01:09:19,880 - 01:09:21,000] 10 to the 10 to the 10,
+- [01:09:21,000 - 01:09:21,880] 10 to the 10 to the
+- [01:09:21,880 - 01:09:22,760] 10 to the 10 to the 10.
+- [01:09:23,460 - 01:09:24,300] We don't know.
+- [01:09:25,060 - 01:09:28,120] All that information got wiped out by this expansion.
+- [01:09:29,380 - 01:09:29,680] Now,
+- [01:09:29,680 - 01:09:30,460] what happened?
+- [01:09:30,520 - 01:09:31,580] What did this expansion do?
+- [01:09:32,500 - 01:09:34,319] It did exactly the same thing
+- [01:09:34,319 - 01:09:36,140] that it would do to a balloon.
+- [01:09:36,399 - 01:09:37,899] It flattens it,
+- [01:09:38,460 - 01:09:41,850] and it leads to a situation where
+- [01:09:41,850 - 01:09:45,240] by the time you get to here,
+- [01:09:45,359 - 01:09:46,040] incidentally,
+- [01:09:46,040 - 01:09:50,520] falling off the edge here is called reheating.
+- [01:09:52,540 - 01:09:54,420] There's nothing re about it.
+- [01:09:54,500 - 01:09:55,740] It should just be called heating,
+- [01:09:56,300 - 01:09:58,020] but it's called reheating.
+- [01:10:00,099 - 01:10:01,740] Why is it called reheating?
+- [01:10:03,040 - 01:10:04,860] This happened rather suddenly.
+- [01:10:05,540 - 01:10:07,740] When a thing like this happens rather suddenly,
+- [01:10:08,999 - 01:10:12,189] the energy that was stored in the field is
+- [01:10:12,189 - 01:10:15,380] rather quickly converted to some other form of energy.
+- [01:10:16,320 - 01:10:18,420] When you fell off the cliff here,
+- [01:10:18,540 - 01:10:21,140] just like that eraser when it hit the floor there,
+- [01:10:21,820 - 01:10:22,560] its energy,
+- [01:10:22,560 - 01:10:24,860] its potential energy was converted to heat.
+- [01:10:26,239 - 01:10:28,840] Then as you roll over the edge here,
+- [01:10:28,840 - 01:10:30,540] and by the time you get down to the bottom,
+- [01:10:30,680 - 01:10:31,940] the universe is hot.
+- [01:10:32,180 - 01:10:33,720] It wasn't hot up here.
+- [01:10:34,620 - 01:10:35,220] In fact,
+- [01:10:35,220 - 01:10:37,140] any heat that might have been there to begin with
+- [01:10:37,140 - 01:10:40,540] was diluted by this enormous exponential,
+- [01:10:40,540 - 01:10:41,220] exponential,
+- [01:10:41,220 - 01:10:42,220] exponential factor.
+- [01:10:42,800 - 01:10:46,500] So if there was some thermal energy to begin with,
+- [01:10:46,820 - 01:10:49,960] the universe simply expanded so much
+- [01:10:50,580 - 01:10:54,260] that it got diluted to the point of almost nothing.
+- [01:10:54,260 - 01:10:58,200] That first curve up there represents an injection of heat.
+- [01:10:58,200 - 01:10:58,740] Well,
+- [01:10:58,740 - 01:11:00,840] or something.
+- [01:11:01,260 - 01:11:01,820] Right,
+- [01:11:01,820 - 01:11:02,400] right.
+- [01:11:02,500 - 01:11:05,000] But we also know nothing about that.
+- [01:11:05,060 - 01:11:05,580] Right.
+- [01:11:06,780 - 01:11:07,720] It's a history.
+- [01:11:08,820 - 01:11:10,950] You're perfectly right that perhaps
+- [01:11:10,950 - 01:11:13,080] in the very early prehistory
+- [01:11:13,080 - 01:11:15,280] something happened over here that
+- [01:11:15,280 - 01:11:17,480] was heating and then reheating,
+- [01:11:18,140 - 01:11:19,900] but we know nothing about this really.
+- [01:11:20,040 - 01:11:21,500] We can't observe this directly.
+- [01:11:23,080 - 01:11:24,300] It's hard to observe.
+- [01:11:24,520 - 01:11:25,900] We don't know if we can observe it.
+- [01:11:25,900 - 01:11:27,080] It's just that we don't think it's lower.
+- [01:11:27,480 - 01:11:28,040] Right.
+- [01:11:28,200 - 01:11:29,040] Right.
+- [01:11:29,160 - 01:11:31,700] So how the universe got up here,
+- [01:11:31,700 - 01:11:33,100] why it started up there,
+- [01:11:33,100 - 01:11:33,760] we don't know.
+- [01:11:34,700 - 01:11:36,970] But we know that if it did start
+- [01:11:36,970 - 01:11:39,240] up here and it stayed up there long enough,
+- [01:11:40,019 - 01:11:44,160] that the initial conditions are sort of wiped out
+- [01:11:44,160 - 01:11:47,350] or they're diluted so much that
+- [01:11:47,350 - 01:11:50,540] we have no fossil memory of them.
+- [01:11:50,680 - 01:11:52,300] Everything started very,
+- [01:11:52,300 - 01:11:53,580] very stretched out,
+- [01:11:53,700 - 01:11:56,560] which means the universe was extremely homogeneous.
+- [01:11:56,560 - 01:11:57,220] Now,
+- [01:11:57,220 - 01:11:58,600] this is going to be qualified.
+- [01:11:58,780 - 01:12:00,420] We're going to qualify the statement.
+- [01:12:01,420 - 01:12:03,120] I'm oversimplifying a little bit,
+- [01:12:03,120 - 01:12:03,800] sort of on purpose.
+- [01:12:06,200 - 01:12:08,500] If the universe expanded by a factor
+- [01:12:08,500 - 01:12:10,800] of 10 to the 10 to the 10th,
+- [01:12:10,940 - 01:12:14,200] then it would look extremely flat
+- [01:12:14,200 - 01:12:17,460] by the time you got to here.
+- [01:12:19,640 - 01:12:23,060] That's the reason we believe that the
+- [01:12:23,060 - 01:12:26,480] right solution of the cosmological equations today,
+- [01:12:26,480 - 01:12:28,540] involves flat space.
+- [01:12:28,860 - 01:12:32,800] Remember I told you earlier on that observationally,
+- [01:12:34,480 - 01:12:36,660] the curvature term,
+- [01:12:36,660 - 01:12:40,220] this factor k,
+- [01:12:40,220 - 01:12:43,380] which can be plus or minus 1 or 0,
+- [01:12:44,400 - 01:12:46,200] is observationally 0,
+- [01:12:46,200 - 01:12:51,040] meaning to say that the universe looks spatially flat
+- [01:12:51,040 - 01:12:54,780] to about 1% or better than 1%.
+- [01:12:54,780 - 01:12:56,460] But it seems to be spatially flat.
+- [01:12:56,480 - 01:12:57,060] It seems to be spatially very,
+- [01:12:57,060 - 01:12:57,820] very flat.
+- [01:12:58,480 - 01:13:01,180] Geometry of space seems to be Euclidean geometry.
+- [01:13:01,720 - 01:13:03,040] Why is this so?
+- [01:13:03,400 - 01:13:04,000] Well,
+- [01:13:04,000 - 01:13:05,280] to the best of our knowledge,
+- [01:13:05,280 - 01:13:07,040] there was a period of expansion
+- [01:13:08,379 - 01:13:10,240] which flattened everything out,
+- [01:13:11,500 - 01:13:14,240] so that we are today looking
+- [01:13:14,240 - 01:13:16,980] at the universe on a scale
+- [01:13:16,980 - 01:13:19,480] which is very much smaller than its curvature.
+- [01:13:20,760 - 01:13:23,680] We might as well use flat space,
+- [01:13:24,360 - 01:13:26,530] because the universe radius of curvature is so
+- [01:13:26,530 - 01:13:28,700] much bigger than the region we can see.
+- [01:13:29,780 - 01:13:30,220] Alright,
+- [01:13:30,220 - 01:13:30,660] now...
+- [01:13:31,500 - 01:13:31,940] Question?
+- [01:13:32,440 - 01:13:32,660] Yeah.
+- [01:13:32,800 - 01:13:34,180] When you say 10 to the 10th,
+- [01:13:34,180 - 01:13:37,180] is that just an arbitrary number,
+- [01:13:37,240 - 01:13:38,500] or do you mean at least that big?
+- [01:13:39,480 - 01:13:41,100] We don't know anything about
+- [01:13:41,100 - 01:13:42,720] how long we remained up here.
+- [01:13:43,040 - 01:13:45,640] We don't know how wide this plateau is,
+- [01:13:45,640 - 01:13:47,580] and we don't know how shallow it is.
+- [01:13:47,980 - 01:13:50,140] The shallower it is and the higher...
+- [01:13:50,700 - 01:13:52,640] We actually don't know how high it is.
+- [01:13:52,640 - 01:13:54,940] We don't know how broad it is,
+- [01:13:54,940 - 01:13:56,360] and we don't know how...
+- [01:13:57,660 - 01:13:58,280] Alright,
+- [01:13:58,280 - 01:13:59,240] we have some bounds.
+- [01:13:59,800 - 01:14:01,200] We have some bounds.
+- [01:14:01,540 - 01:14:04,600] We know something about the combination of these parameters.
+- [01:14:05,140 - 01:14:11,540] And basically what we know is that the universe doubled
+- [01:14:11,540 - 01:14:13,970] or got multiplied by a factor
+- [01:14:13,970 - 01:14:16,400] of E at least about 50 times.
+- [01:14:17,100 - 01:14:18,460] E to the 50th.
+- [01:14:18,520 - 01:14:19,120] E to the 50th,
+- [01:14:19,120 - 01:14:19,340] okay.
+- [01:14:19,480 - 01:14:21,010] Do we have any idea
+- [01:14:21,010 - 01:14:22,540] how much energy got put in
+- [01:14:23,120 - 01:14:24,080] to the system?
+- [01:14:25,240 - 01:14:27,020] We have some bounds on it.
+- [01:14:27,240 - 01:14:28,680] We have some bounds on it.
+- [01:14:29,620 - 01:14:30,730] That's another way of asking
+- [01:14:30,730 - 01:14:31,840] what the height of this is.
+- [01:14:32,080 - 01:14:32,360] Yeah.
+- [01:14:32,540 - 01:14:32,980] Yeah.
+- [01:14:33,200 - 01:14:33,640] Yeah,
+- [01:14:33,640 - 01:14:34,760] we have some bounds on it.
+- [01:14:38,100 - 01:14:40,570] I would say the best bet would be
+- [01:14:40,570 - 01:14:43,040] something like about 10 to the minus 14
+- [01:14:43,040 - 01:14:44,180] in Planck units,
+- [01:14:44,180 - 01:14:47,320] but that's a huge amount of energy in ordinary units.
+- [01:14:48,200 - 01:14:49,050] So you want me to
+- [01:14:49,050 - 01:14:49,900] give it to you in joules?
+- [01:14:49,980 - 01:14:50,200] Well,
+- [01:14:50,200 - 01:14:51,410] I can't give it to you
+- [01:14:51,410 - 01:14:52,620] in joules without sitting down and saying,
+- [01:14:52,620 - 01:14:53,300] I'm doing a calculation,
+- [01:14:53,300 - 01:14:54,600] but it's 10 to a large number,
+- [01:14:54,700 - 01:14:56,080] 10 to the 90th or something.
+- [01:14:56,600 - 01:15:00,020] Why did the universe reheat after the expansion slowed down?
+- [01:15:00,140 - 01:15:00,260] Well,
+- [01:15:00,260 - 01:15:01,570] it reheated because it came
+- [01:15:01,570 - 01:15:02,880] to the edge of this cliff
+- [01:15:02,880 - 01:15:06,500] and that potential energy was
+- [01:15:06,500 - 01:15:10,120] converted at first into kinetic energy
+- [01:15:10,120 - 01:15:11,740] of the motion of the field.
+- [01:15:12,160 - 01:15:13,700] Just as this eraser,
+- [01:15:13,700 - 01:15:18,360] its potential energy got converted to kinetic energy.
+- [01:15:18,860 - 01:15:20,500] And then when it hit the floor,
+- [01:15:20,500 - 01:15:22,520] where did that energy go to?
+- [01:15:22,520 - 01:15:23,180] Well,
+- [01:15:23,180 - 01:15:25,020] it went into thermal energy.
+- [01:15:25,900 - 01:15:27,580] It went into thermal energy,
+- [01:15:27,580 - 01:15:32,920] and that thermal energy is the energy
+- [01:15:32,920 - 01:15:37,140] that the universe had at the Big Bang.
+- [01:15:37,760 - 01:15:38,220] Yeah.
+- [01:15:38,340 - 01:15:40,800] You made some sort of comment about dark matter,
+- [01:15:40,980 - 01:15:42,680] some connection with dark matter.
+- [01:15:47,360 - 01:15:48,860] You could ask,
+- [01:15:48,860 - 01:15:51,200] might this field have oscillated here?
+- [01:15:53,059 - 01:15:57,289] That oscillation energy conceivably could
+- [01:15:57,289 - 01:16:01,520] be the energy of dark matter.
+- [01:16:01,720 - 01:16:03,040] It would get diluted.
+- [01:16:03,180 - 01:16:04,080] The energy of,
+- [01:16:04,080 - 01:16:06,200] let's not get into that.
+- [01:16:06,220 - 01:16:07,540] I did say that,
+- [01:16:07,540 - 01:16:10,960] but this is not the important lesson here.
+- [01:16:11,220 - 01:16:13,050] Can you say anything about the
+- [01:16:13,050 - 01:16:14,880] actual value of phi at the present,
+- [01:16:15,000 - 01:16:16,960] which is to say at v minimum?
+- [01:16:17,020 - 01:16:17,380] Of phi?
+- [01:16:17,500 - 01:16:17,980] Phi,
+- [01:16:17,980 - 01:16:18,620] yeah.
+- [01:16:18,920 - 01:16:19,880] You mean this distance?
+- [01:16:20,320 - 01:16:20,840] No,
+- [01:16:20,840 - 01:16:21,380] the value.
+- [01:16:21,380 - 01:16:23,440] Of v or phi?
+- [01:16:23,720 - 01:16:24,080] V or phi.
+- [01:16:24,260 - 01:16:25,380] V is vertical,
+- [01:16:25,380 - 01:16:26,960] phi is horizontal.
+- [01:16:29,400 - 01:16:30,040] Vertical?
+- [01:16:30,060 - 01:16:34,360] What is the value of phi relative to rho zero?
+- [01:16:35,680 - 01:16:36,320] No.
+- [01:16:36,940 - 01:16:37,580] No,
+- [01:16:37,580 - 01:16:37,880] no,
+- [01:16:37,880 - 01:16:38,020] no,
+- [01:16:38,020 - 01:16:38,300] no.
+- [01:16:39,240 - 01:16:42,360] V has the same units as rho zero.
+- [01:16:43,340 - 01:16:44,040] That's v.
+- [01:16:44,880 - 01:16:46,780] Is that the same as rho zero?
+- [01:16:46,780 - 01:16:47,300] Exactly.
+- [01:16:47,420 - 01:16:48,400] That's rho zero.
+- [01:16:51,380 - 01:16:53,580] Could you plot phi as a function of time?
+- [01:16:53,980 - 01:16:54,420] Yeah.
+- [01:16:54,860 - 01:16:55,860] I could plot it,
+- [01:16:55,860 - 01:16:57,300] but let me just draw it instead.
+- [01:16:57,600 - 01:16:58,180] I mean,
+- [01:16:58,180 - 01:16:59,110] let me just put my
+- [01:16:59,110 - 01:17:00,040] finger on here to follow it.
+- [01:17:00,900 - 01:17:01,780] Maybe it came,
+- [01:17:01,780 - 01:17:03,380] we don't know very much about this,
+- [01:17:03,500 - 01:17:05,800] but it slipped down here and then very,
+- [01:17:05,800 - 01:17:06,500] very,
+- [01:17:06,500 - 01:17:07,420] very slowly
+- [01:17:07,420 - 01:17:08,780] inched along here.
+- [01:17:09,280 - 01:17:11,160] While it was inching along here,
+- [01:17:11,940 - 01:17:14,020] things were exponentially growing.
+- [01:17:17,780 - 01:17:20,320] And eventually it got to here and went .
+- [01:17:20,320 - 01:17:20,740] .
+- [01:17:20,740 - 01:17:21,300] .
+- [01:17:22,140 - 01:17:24,520] Perhaps it oscillated a few times at the bottom,
+- [01:17:25,740 - 01:17:27,030] but there was a good
+- [01:17:27,030 - 01:17:28,320] deal of friction at the bottom
+- [01:17:28,320 - 01:17:30,280] due to the expansion of the universe,
+- [01:17:30,560 - 01:17:31,880] and so eventually it just
+- [01:17:31,880 - 01:17:33,200] came to rest at the bottom.
+- [01:17:33,740 - 01:17:35,140] And then t goes on,
+- [01:17:35,140 - 01:17:36,100] but phi stays still.
+- [01:17:36,420 - 01:17:36,900] Right.
+- [01:17:38,060 - 01:17:38,540] Right.
+- [01:17:39,600 - 01:17:40,080] Right.
+- [01:17:40,880 - 01:17:42,060] In other words,
+- [01:17:42,060 - 01:17:44,540] as when you get down to the bottom here,
+- [01:17:44,740 - 01:17:47,200] you've gotten onto this branch of things
+- [01:17:47,840 - 01:17:51,360] which is today's current deciduous space behavior.
+- [01:17:51,940 - 01:17:52,420] Now,
+- [01:17:52,420 - 01:17:54,120] do we know for sure
+- [01:17:54,120 - 01:17:55,820] that it comes to rest here?
+- [01:17:56,280 - 01:17:56,760] No,
+- [01:17:56,760 - 01:18:01,720] but we know that it's moving slowly.
+- [01:18:04,320 - 01:18:07,700] So this is a model of what we know.
+- [01:18:08,300 - 01:18:09,860] We know fragments of this.
+- [01:18:09,960 - 01:18:15,120] We don't know the whole picture with any great certainty,
+- [01:18:15,260 - 01:18:16,660] but we know some fragments.
+- [01:18:18,460 - 01:18:19,140] We know,
+- [01:18:19,140 - 01:18:19,700] for example,
+- [01:18:19,700 - 01:18:20,700] that this is not zero.
+- [01:18:22,060 - 01:18:25,640] So the universe is exponentially inflating today,
+- [01:18:25,860 - 01:18:27,860] but with this very long time constant.
+- [01:18:28,460 - 01:18:30,960] We know that it was rather high over here,
+- [01:18:31,140 - 01:18:34,100] many orders of magnitude larger than it is today,
+- [01:18:34,380 - 01:18:38,240] and so the universe did apparently .
+- [01:18:38,240 - 01:18:38,260] .
+- [01:18:38,260 - 01:18:38,260] .
+- [01:18:38,260 - 01:18:40,840] I have not talked about the observational evidence yet,
+- [01:18:40,980 - 01:18:45,780] but the observational evidence indicates that along here
+- [01:18:45,780 - 01:18:47,950] the universe grew by at
+- [01:18:47,950 - 01:18:50,120] least a factor of e .
+- [01:18:50,120 - 01:18:50,200] .
+- [01:18:50,200 - 01:18:50,200] .
+- [01:18:50,200 - 01:18:51,340] I said e to the third,
+- [01:18:51,340 - 01:18:51,680] but it's a factor of 50.
+- [01:18:52,160 - 01:18:54,600] Usually it's quoted as e to the 60,
+- [01:18:58,839 - 01:19:02,320] but you can play with the numbers a little bit.
+- [01:19:03,059 - 01:19:05,979] So the universe is e to the
+- [01:19:05,979 - 01:19:08,900] 60 times bigger than it was over here,
+- [01:19:09,519 - 01:19:10,440] at least,
+- [01:19:10,440 - 01:19:10,880] at minimum.
+- [01:19:12,300 - 01:19:12,900] Now,
+- [01:19:12,900 - 01:19:14,200] how many times .
+- [01:19:14,200 - 01:19:14,700] .
+- [01:19:14,700 - 01:19:14,700] .
+- [01:19:14,700 - 01:19:15,100] Incidentally,
+- [01:19:15,100 - 01:19:18,500] the number of times that it got multiplied by e
+- [01:19:18,500 - 01:19:21,580] is called the number of e-foldings.
+- [01:19:21,720 - 01:19:23,220] E-foldings .
+- [01:19:23,220 - 01:19:24,580] .
+- [01:19:24,580 - 01:19:24,580] .
+- [01:19:24,580 - 01:19:27,360] An e-fold simply means multiplication by e.
+- [01:19:28,460 - 01:19:30,660] Each of which took 10 to the minus 32 seconds.
+- [01:19:30,860 - 01:19:35,260] Each of which took 10 to the minus 32 seconds,
+- [01:19:35,360 - 01:19:39,360] but also that number is dependent on the height here,
+- [01:19:39,400 - 01:19:40,780] and the height is not well known.
+- [01:19:42,080 - 01:19:43,560] The height is not well known.
+- [01:19:43,660 - 01:19:46,070] What's known is that there was
+- [01:19:46,070 - 01:19:48,480] at least about e to the 30th.
+- [01:19:48,480 - 01:19:48,620] So,
+- [01:19:48,620 - 01:19:50,240] it's a factor of 50 or more e-foldings.
+- [01:19:50,320 - 01:19:50,620] Sorry,
+- [01:19:50,620 - 01:19:52,360] 50 or more e-foldings.
+- [01:19:53,540 - 01:19:58,520] Is it possible that it was flat on the top
+- [01:19:58,520 - 01:20:00,200] and that there was just
+- [01:20:00,200 - 01:20:01,880] sort of perturbations in the field
+- [01:20:01,880 - 01:20:03,760] which flipped it off the edge?
+- [01:20:04,140 - 01:20:05,880] If it's too flat on the top,
+- [01:20:05,880 - 01:20:07,100] yeah.
+- [01:20:12,480 - 01:20:16,000] It's not consistent that it was completely flat.
+- [01:20:17,060 - 01:20:18,480] It had to have some tilt,
+- [01:20:18,480 - 01:20:20,860] but it could be pretty close to flat.
+- [01:20:20,980 - 01:20:23,820] There's no possibility for some kind of quantum effect
+- [01:20:23,820 - 01:20:25,360] to flip it off the cliff.
+- [01:20:26,980 - 01:20:27,420] Yeah,
+- [01:20:27,420 - 01:20:27,540] yeah,
+- [01:20:27,540 - 01:20:27,700] yeah,
+- [01:20:27,700 - 01:20:27,880] yeah,
+- [01:20:27,880 - 01:20:28,000] yeah.
+- [01:20:28,000 - 01:20:28,280] No,
+- [01:20:28,280 - 01:20:28,420] no,
+- [01:20:28,420 - 01:20:28,540] no,
+- [01:20:28,540 - 01:20:28,800] definitely.
+- [01:20:28,800 - 01:20:29,740] Definitely.
+- [01:20:30,300 - 01:20:32,100] So that you would just have .
+- [01:20:32,100 - 01:20:32,720] .
+- [01:20:32,720 - 01:20:32,720] .
+- [01:20:32,720 - 01:20:34,820] It's sort of in this vast matrix of nothing.
+- [01:20:35,000 - 01:20:37,060] You'd have a universe here and a universe .
+- [01:20:37,060 - 01:20:37,060] .
+- [01:20:37,060 - 01:20:37,060] .
+- [01:20:37,060 - 01:20:38,660] If it were too flat at the top,
+- [01:20:38,700 - 01:20:40,880] if it were too flat at the top,
+- [01:20:41,000 - 01:20:44,640] it would have created too inhomogeneous a universe,
+- [01:20:44,640 - 01:20:47,120] which was what I was about to explain.
+- [01:20:47,360 - 01:20:47,760] Oh,
+- [01:20:47,760 - 01:20:48,160] okay.
+- [01:20:48,160 - 01:20:48,560] Right.
+- [01:20:48,920 - 01:20:49,320] Okay,
+- [01:20:49,320 - 01:20:50,440] so we know that it couldn't
+- [01:20:50,440 - 01:20:51,560] have been too flat on the top.
+- [01:20:51,780 - 01:20:53,080] So let me explain how we know that.
+- [01:20:54,180 - 01:20:55,080] First of all,
+- [01:20:55,080 - 01:20:56,660] I said .
+- [01:20:56,660 - 01:20:59,880] .
+- [01:20:59,880 - 01:20:59,880] .
+- [01:20:59,880 - 01:21:01,640] This is an interesting story with many parts,
+- [01:21:01,840 - 01:21:03,080] and I will not try
+- [01:21:03,080 - 01:21:04,320] to get to them all now.
+- [01:21:06,820 - 01:21:07,620] But .
+- [01:21:07,620 - 01:21:14,620] .
+- [01:21:14,620 - 01:21:14,620] .
+- [01:21:14,620 - 01:21:16,020] What I meant was the universe inflates,
+- [01:21:16,020 - 01:21:19,480] and the process of inflating becomes homogeneous.
+- [01:21:19,880 - 01:21:22,540] Homogeneous on any ordinary scale.
+- [01:21:23,320 - 01:21:24,520] On a scale,
+- [01:21:24,520 - 01:21:25,700] let's say,
+- [01:21:25,700 - 01:21:27,500] as big as the horizon size.
+- [01:21:29,260 - 01:21:30,820] That's not terribly big.
+- [01:21:30,940 - 01:21:33,600] It may have had many more e-foldings than that.
+- [01:21:33,780 - 01:21:35,480] It may have been stretched out by many,
+- [01:21:35,480 - 01:21:36,080] many times.
+- [01:21:36,680 - 01:21:37,500] Bigger than that.
+- [01:21:37,600 - 01:21:39,360] In the same sense that the Earth is much bigger
+- [01:21:39,360 - 01:21:41,400] than the horizon that we can
+- [01:21:41,400 - 01:21:43,440] see from six feet above the Earth.
+- [01:21:43,920 - 01:21:44,360] Incidentally,
+- [01:21:44,360 - 01:21:46,300] what is the horizon from six feet above the Earth?
+- [01:21:47,360 - 01:21:48,320] A couple of miles,
+- [01:21:48,320 - 01:21:48,780] I think.
+- [01:21:48,960 - 01:21:49,400] Yeah.
+- [01:21:49,860 - 01:21:51,300] The Earth is much bigger than that.
+- [01:21:51,420 - 01:21:52,460] In the same sense,
+- [01:21:52,460 - 01:21:53,860] our horizon .
+- [01:21:53,860 - 01:21:54,120] .
+- [01:21:54,120 - 01:21:54,360] .
+- [01:21:54,360 - 01:21:55,260] Not in the same sense,
+- [01:21:55,260 - 01:21:56,460] but in an analogous sense.
+- [01:21:56,600 - 01:21:59,710] Our horizon is rather small on the scale
+- [01:21:59,710 - 01:22:02,820] of the radius of curvature of the universe,
+- [01:22:03,260 - 01:22:06,820] which means it expanded and inflated many times larger
+- [01:22:06,820 - 01:22:09,520] than the region that we can see.
+- [01:22:10,440 - 01:22:10,880] Okay,
+- [01:22:10,880 - 01:22:13,420] so it got to be by this process of inflating,
+- [01:22:13,440 - 01:22:13,980] by this process of stretching,
+- [01:22:14,200 - 01:22:16,160] it got to be very,
+- [01:22:16,160 - 01:22:16,880] very homogeneous,
+- [01:22:17,360 - 01:22:19,020] except for one thing.
+- [01:22:20,070 - 01:22:23,640] One thing prevented it from becoming completely homogeneous.
+- [01:22:24,340 - 01:22:25,520] And that was?
+- [01:22:27,190 - 01:22:28,360] Quantum fluctuations.
+- [01:22:29,360 - 01:22:30,800] Quantum fluctuations.
+- [01:22:31,380 - 01:22:31,980] Now,
+- [01:22:31,980 - 01:22:36,340] we can delve into this a little more deeply,
+- [01:22:36,540 - 01:22:37,880] but not tonight.
+- [01:22:38,280 - 01:22:41,360] Quantum fluctuations created .
+- [01:22:41,360 - 01:22:43,140] .
+- [01:22:43,140 - 01:22:43,420] .
+- [01:22:45,120 - 01:22:49,640] Take what would have become an infinitely stretched out,
+- [01:22:49,680 - 01:22:51,500] completely homogeneous universe,
+- [01:22:52,120 - 01:22:55,240] and leave over quantum fluctuations
+- [01:22:55,240 - 01:22:58,360] of various wavelengths in here,
+- [01:22:59,200 - 01:23:02,110] which are the remnants of the
+- [01:23:02,110 - 01:23:05,020] quantum mechanical processes which took place.
+- [01:23:05,260 - 01:23:07,480] I will not try to explain them tonight,
+- [01:23:07,700 - 01:23:09,540] but let me just say
+- [01:23:09,540 - 01:23:11,380] that after this inflation took place,
+- [01:23:11,380 - 01:23:13,520] no matter how long it takes place,
+- [01:23:14,380 - 01:23:17,140] it never really gets completely
+- [01:23:17,140 - 01:23:19,900] settled down to complete uniformity.
+- [01:23:20,060 - 01:23:20,660] Why?
+- [01:23:20,660 - 01:23:22,000] Quantum mechanics.
+- [01:23:22,400 - 01:23:25,200] Quantum mechanics and quantum field theory
+- [01:23:25,200 - 01:23:28,000] ensure that there is always fluctuations.
+- [01:23:29,600 - 01:23:31,920] It's kind of an uncertainty principle thing,
+- [01:23:31,920 - 01:23:32,380] again,
+- [01:23:33,200 - 01:23:35,920] but the fluctuations were there
+- [01:23:35,920 - 01:23:38,640] even after it may have expanded
+- [01:23:38,640 - 01:23:39,910] by 10 to the 10 to the 10 to
+- [01:23:39,910 - 01:23:41,180] the 10 to the 10 to the 10 .
+- [01:23:41,180 - 01:23:41,180] .
+- [01:23:41,180 - 01:23:41,180] .
+- [01:23:41,380 - 01:23:42,000] factor.
+- [01:23:42,020 - 01:23:43,080] There were fluctuations.
+- [01:23:43,960 - 01:23:45,080] In other words,
+- [01:23:45,080 - 01:23:47,180] the field was not completely homogeneous.
+- [01:23:47,760 - 01:23:51,060] It varied from place to place by
+- [01:23:51,060 - 01:23:54,360] an amount which was controlled by quantum mechanics.
+- [01:23:54,560 - 01:23:55,780] If there was no quantum mechanics,
+- [01:23:55,780 - 01:23:57,400] it would be completely flat.
+- [01:23:58,139 - 01:23:59,220] With quantum mechanics,
+- [01:23:59,220 - 01:24:00,780] it varies from place to place.
+- [01:24:01,200 - 01:24:01,840] Okay.
+- [01:24:02,180 - 01:24:02,860] Now,
+- [01:24:02,860 - 01:24:05,500] let's come to the central picture,
+- [01:24:05,620 - 01:24:07,930] which is really what has
+- [01:24:07,930 - 01:24:10,240] gotten the whole subject very exciting
+- [01:24:10,240 - 01:24:11,560] over the last 10 years.
+- [01:24:12,600 - 01:24:14,240] Let me draw .
+- [01:24:14,240 - 01:24:14,420] .
+- [01:24:14,420 - 01:24:14,420] .
+- [01:24:14,420 - 01:24:14,440] Well,
+- [01:24:14,440 - 01:24:14,920] okay.
+- [01:24:16,080 - 01:24:17,360] Here's the edge of the cliff.
+- [01:24:18,220 - 01:24:20,300] Let's draw that edge of the cliff over here.
+- [01:24:20,400 - 01:24:21,560] Here's the edge of the cliff.
+- [01:24:21,720 - 01:24:26,920] What I'm plotting here vertically is ordinary space,
+- [01:24:27,240 - 01:24:28,860] ordinary space X.
+- [01:24:31,300 - 01:24:33,680] What I'm plotting horizontally .
+- [01:24:33,680 - 01:24:34,060] .
+- [01:24:34,060 - 01:24:34,060] .
+- [01:24:34,060 - 01:24:35,660] What am I plotting horizontally?
+- [01:24:36,660 - 01:24:37,660] Um .
+- [01:24:37,660 - 01:24:37,740] .
+- [01:24:37,740 - 01:24:37,980] .
+- [01:24:39,139 - 01:24:40,680] I guess .
+- [01:24:40,680 - 01:24:40,700] .
+- [01:24:40,700 - 01:24:40,700] .
+- [01:24:40,700 - 01:24:42,100] What am I plotting horizontally?
+- [01:24:43,120 - 01:24:44,120] Uh .
+- [01:24:44,120 - 01:24:44,220] .
+- [01:24:44,220 - 01:24:44,220] .
+- [01:24:46,620 - 01:24:47,560] The field,
+- [01:24:47,560 - 01:24:48,060] phi.
+- [01:24:51,220 - 01:24:53,980] What I want to draw is the contours,
+- [01:24:54,000 - 01:24:56,160] the contours of the field.
+- [01:24:56,520 - 01:25:00,960] The contours mean the surfaces of constant field,
+- [01:25:01,060 - 01:25:01,800] like a contour map.
+- [01:25:02,240 - 01:25:04,100] It's not a contour map of elevation.
+- [01:25:04,560 - 01:25:07,000] It's a contour map of the field phi.
+- [01:25:07,980 - 01:25:08,200] Now,
+- [01:25:08,200 - 01:25:10,500] if phi was completely homogeneous,
+- [01:25:11,760 - 01:25:13,580] it does vary with time.
+- [01:25:14,760 - 01:25:15,840] Here's what you would see.
+- [01:25:15,920 - 01:25:16,780] At one time,
+- [01:25:16,780 - 01:25:19,260] you would see a completely homogeneous field.
+- [01:25:19,480 - 01:25:22,550] That would mean that phi is
+- [01:25:22,550 - 01:25:25,620] the same at every point of space.
+- [01:25:25,940 - 01:25:26,920] Here's space vertically.
+- [01:25:28,280 - 01:25:30,400] Here's the field phi is horizontal.
+- [01:25:30,960 - 01:25:33,080] Phi is the same over here as it is over
+- [01:25:33,080 - 01:25:35,200] here as it is over here as it is over here.
+- [01:25:35,200 - 01:25:38,640] That means that phi has gotten very homogeneous.
+- [01:25:39,120 - 01:25:40,880] What would happen with time?
+- [01:25:41,140 - 01:25:43,020] As time transpired,
+- [01:25:43,980 - 01:25:45,580] as time went on,
+- [01:25:45,660 - 01:25:46,360] it's transpired,
+- [01:25:46,950 - 01:25:48,620] you would roll down the hill,
+- [01:25:48,840 - 01:25:54,000] which would mean that the field would gradually move,
+- [01:25:55,440 - 01:25:56,840] moving to the right,
+- [01:26:00,860 - 01:26:03,440] until it got to the edge over here.
+- [01:26:03,440 - 01:26:05,340] When it got to the edge,
+- [01:26:05,520 - 01:26:09,120] that's the value of phi where reheating occurs.
+- [01:26:09,780 - 01:26:12,080] It would suddenly fall down,
+- [01:26:12,140 - 01:26:15,400] and the sudden change in
+- [01:26:15,400 - 01:26:18,660] phi would fall down to here.
+- [01:26:18,740 - 01:26:19,480] So with time,
+- [01:26:20,200 - 01:26:24,500] if you plotted phi as a function of position,
+- [01:26:24,780 - 01:26:26,200] it would be constant,
+- [01:26:26,800 - 01:26:28,180] constant a little later,
+- [01:26:28,280 - 01:26:29,480] constant a little bit later,
+- [01:26:29,600 - 01:26:31,900] slowly drifting to the right.
+- [01:26:36,240 - 01:26:37,260] And then,
+- [01:26:37,400 - 01:26:40,000] if it were all that homogeneous,
+- [01:26:40,520 - 01:26:41,240] in other words,
+- [01:26:41,240 - 01:26:41,860] all that smooth,
+- [01:26:42,320 - 01:26:44,460] every place in space would go
+- [01:26:44,460 - 01:26:46,600] over the edge at the same time,
+- [01:26:47,360 - 01:26:48,800] if it were completely homogeneous.
+- [01:26:49,260 - 01:26:51,200] But now let's put quantum mechanics in.
+- [01:26:51,420 - 01:26:52,980] What does quantum mechanics do?
+- [01:26:53,140 - 01:26:55,340] It puts some fluctuation into the field,
+- [01:26:56,280 - 01:26:59,180] and so we could expect that the
+- [01:26:59,180 - 01:27:03,420] that the contours will show some fluctuation.
+- [01:27:04,259 - 01:27:07,260] They will not be exactly homogeneous.
+- [01:27:08,360 - 01:27:10,440] And as we roll down the hill,
+- [01:27:15,299 - 01:27:19,340] some points reach the edge before other points.
+- [01:27:20,540 - 01:27:22,080] Here's the way I like to think about it.
+- [01:27:22,120 - 01:27:25,820] Imagine a bunch of soldiers walking in lockstep,
+- [01:27:25,960 - 01:27:27,060] arm in arm,
+- [01:27:27,240 - 01:27:30,460] and they're walking towards the edge of the cliff,
+- [01:27:30,640 - 01:27:31,640] all together.
+- [01:27:32,240 - 01:27:33,420] If they are homogeneous,
+- [01:27:33,440 - 01:27:35,760] if they are really very well lined up,
+- [01:27:36,460 - 01:27:39,300] with no fluctuation in the rank,
+- [01:27:39,340 - 01:27:42,100] in their location,
+- [01:27:42,520 - 01:27:44,500] then they all fall over simultaneously.
+- [01:27:45,480 - 01:27:47,350] But what happens if some
+- [01:27:47,350 - 01:27:49,220] soldiers are slightly behind other soldiers,
+- [01:27:49,500 - 01:27:51,060] some of them a little bit in front,
+- [01:27:51,140 - 01:27:51,900] some of them a little bit,
+- [01:27:51,920 - 01:27:53,120] and they're moving really,
+- [01:27:53,120 - 01:27:53,980] really slowly?
+- [01:27:55,499 - 01:27:58,560] Then there can be a long time delay
+- [01:27:58,560 - 01:28:01,040] between the time one fellow falls over
+- [01:28:01,040 - 01:28:03,360] and the time another fellow falls over.
+- [01:28:03,800 - 01:28:06,540] So there can be large gaps in the time
+- [01:28:06,540 - 01:28:08,610] between the time that the
+- [01:28:08,610 - 01:28:10,680] different pieces fall over the edge.
+- [01:28:11,080 - 01:28:11,640] Now,
+- [01:28:11,640 - 01:28:13,720] when you fall over the edge,
+- [01:28:13,900 - 01:28:17,300] when a piece of space falls over the edge,
+- [01:28:17,440 - 01:28:19,300] let's just take a very simple situation.
+- [01:28:20,260 - 01:28:24,520] Imagine the field is homogeneous except for a little bump.
+- [01:28:25,120 - 01:28:27,000] So the contour looks like that.
+- [01:28:28,119 - 01:28:30,420] It gradually drifts to the right,
+- [01:28:32,179 - 01:28:34,129] and this point over here falls
+- [01:28:34,129 - 01:28:36,080] off the edge before this point.
+- [01:28:36,840 - 01:28:40,150] So a region of space
+- [01:28:40,150 - 01:28:43,460] is created which has been reheated.
+- [01:28:44,360 - 01:28:45,900] It's down at the bottom here,
+- [01:28:46,120 - 01:28:47,820] whereas the rest of space is still
+- [01:28:47,820 - 01:28:49,520] up at the top of the cliff.
+- [01:28:50,080 - 01:28:52,010] All the soldiers except for
+- [01:28:52,010 - 01:28:53,940] one are up on the top.
+- [01:28:54,120 - 01:28:55,800] One guy has fallen over.
+- [01:28:56,140 - 01:28:58,080] Now that one guy has fallen over,
+- [01:28:58,160 - 01:29:00,640] that one region of space here,
+- [01:29:00,640 - 01:29:04,540] is inflating less rapidly than the region up here.
+- [01:29:04,940 - 01:29:07,280] The vacuum energy down here is small.
+- [01:29:07,900 - 01:29:12,260] So it's inflating slowly down here and rapidly up here.
+- [01:29:12,400 - 01:29:13,020] What happens?
+- [01:29:13,740 - 01:29:17,980] What happens is the energy that's in here,
+- [01:29:18,180 - 01:29:20,360] the new energy that's in there,
+- [01:29:20,500 - 01:29:22,380] the new energy that's in there,
+- [01:29:22,500 - 01:29:23,760] the kinetic energy,
+- [01:29:23,760 - 01:29:25,860] the energy of falling off the cliff here,
+- [01:29:28,799 - 01:29:30,080] is expanding.
+- [01:29:30,080 - 01:29:32,420] It's expanding less rapidly in space than
+- [01:29:32,420 - 01:29:34,760] the rest of this region out here.
+- [01:29:35,440 - 01:29:37,540] So a little lump of energy forms.
+- [01:29:37,600 - 01:29:39,000] A little lump of energy forms.
+- [01:29:39,680 - 01:29:40,960] A little bit later,
+- [01:29:41,820 - 01:29:43,120] let's say a little bit later,
+- [01:29:43,240 - 01:29:45,180] another bump goes over the edge.
+- [01:29:46,140 - 01:29:48,700] By the time this bump has gone over the edge,
+- [01:29:48,900 - 01:29:51,240] this one has been over for a while,
+- [01:29:51,440 - 01:29:53,340] and it has expanded somewhat.
+- [01:29:53,840 - 01:29:55,380] It has expanded somewhat.
+- [01:29:55,660 - 01:29:57,620] Then the next one falls over the edge.
+- [01:29:58,200 - 01:29:58,880] All right.
+- [01:30:00,080 - 01:30:00,300] So what does this lead to?
+- [01:30:00,320 - 01:30:02,730] This leads to inhomogeneities in
+- [01:30:02,730 - 01:30:05,140] the energy density over here.
+- [01:30:05,380 - 01:30:08,240] It leads to inhomogeneities in the energy density
+- [01:30:08,240 - 01:30:10,910] because different regions went over
+- [01:30:10,910 - 01:30:13,580] the edge at different times,
+- [01:30:13,800 - 01:30:16,200] and their kinetic energies
+- [01:30:16,200 - 01:30:18,600] were expanded and diluted differently.
+- [01:30:22,360 - 01:30:24,120] There's a particular pattern
+- [01:30:24,870 - 01:30:27,800] to the kind of fluctuations in energy that take place,
+- [01:30:27,980 - 01:30:30,040] but what do these fluctuations of energy be?
+- [01:30:30,080 - 01:30:30,720] What do they become eventually?
+- [01:30:31,600 - 01:30:33,720] These are the seeds of galaxies.
+- [01:30:34,440 - 01:30:36,360] The energy density is not uniform
+- [01:30:36,360 - 01:30:38,280] after you fall off the cliff,
+- [01:30:38,380 - 01:30:38,920] and in fact,
+- [01:30:38,920 - 01:30:40,440] the slower that you're moving,
+- [01:30:41,059 - 01:30:43,880] the bigger will be the inhomogeneities.
+- [01:30:44,380 - 01:30:45,920] If you're moving very,
+- [01:30:45,920 - 01:30:46,520] very slowly,
+- [01:30:46,820 - 01:30:51,920] then the time between this fellow falling over the edge
+- [01:30:51,920 - 01:30:53,100] and this fellow falling over
+- [01:30:53,100 - 01:30:54,280] the edge can be very large.
+- [01:30:54,960 - 01:30:56,500] During that time,
+- [01:30:56,580 - 01:30:57,440] uh,
+- [01:31:00,139 - 01:31:02,340] this region may have grown,
+- [01:31:03,719 - 01:31:05,720] and then when the next one goes over,
+- [01:31:06,500 - 01:31:08,820] this one will have already spread out.
+- [01:31:09,360 - 01:31:15,160] So the energy density will be most variable in space
+- [01:31:15,900 - 01:31:17,640] if the field is moving very slowly.
+- [01:31:18,260 - 01:31:20,560] It would seem it would be the other way
+- [01:31:20,560 - 01:31:22,700] because the expansion slows down,
+- [01:31:22,960 - 01:31:25,220] so you'd go over and you'd expand less.
+- [01:31:26,160 - 01:31:26,720] Oh,
+- [01:31:26,720 - 01:31:27,640] it has kinetic energy.
+- [01:31:27,780 - 01:31:28,020] Yeah,
+- [01:31:28,020 - 01:31:28,780] it expands less.
+- [01:31:28,780 - 01:31:29,360] Yeah.
+- [01:31:30,180 - 01:31:32,140] And so the first...
+- [01:31:32,140 - 01:31:32,760] Yeah,
+- [01:31:32,760 - 01:31:33,080] yeah,
+- [01:31:33,080 - 01:31:33,340] yeah,
+- [01:31:33,340 - 01:31:33,460] yeah,
+- [01:31:33,460 - 01:31:34,320] that's right,
+- [01:31:34,320 - 01:31:34,740] that's right,
+- [01:31:34,740 - 01:31:35,180] that's right.
+- [01:31:35,300 - 01:31:35,720] So,
+- [01:31:35,720 - 01:31:36,040] yeah,
+- [01:31:36,040 - 01:31:36,960] but,
+- [01:31:36,960 - 01:31:37,740] right,
+- [01:31:37,880 - 01:31:39,780] but the point is that it will create,
+- [01:31:40,519 - 01:31:43,780] it will create variations in the energy density
+- [01:31:44,660 - 01:31:46,560] that will first of all come
+- [01:31:46,560 - 01:31:48,460] from the original variations in the field,
+- [01:31:48,580 - 01:31:50,740] but then magnified by this effect
+- [01:31:51,679 - 01:31:52,200] that,
+- [01:31:52,200 - 01:31:52,560] uh,
+- [01:31:52,560 - 01:31:56,420] that one guy goes over before the next guy,
+- [01:31:56,600 - 01:31:58,660] and therefore the effect is,
+- [01:31:58,780 - 01:31:58,860] uh,
+- [01:31:58,860 - 01:32:00,840] different rates of expansion in the two regions,
+- [01:32:01,080 - 01:32:02,780] and that has the effect
+- [01:32:02,780 - 01:32:04,480] of making a variable energy density.
+- [01:32:04,860 - 01:32:08,400] That variable energy density is necessary.
+- [01:32:08,760 - 01:32:10,820] It's necessary because without it,
+- [01:32:10,900 - 01:32:12,280] there would be no galaxies.
+- [01:32:12,720 - 01:32:15,260] So it's a funny combination of inflation,
+- [01:32:15,540 - 01:32:18,400] inflating the universe and making it very smooth,
+- [01:32:18,800 - 01:32:21,120] but leaving over these little fluctuations,
+- [01:32:21,380 - 01:32:23,540] which eventually became the seeds of galaxies.
+- [01:32:23,980 - 01:32:24,340] Now,
+- [01:32:24,340 - 01:32:26,140] this is a highly quantitative story.
+- [01:32:26,140 - 01:32:28,940] I'm describing it descriptively,
+- [01:32:29,040 - 01:32:32,100] but it's something that can be quantitatively computed
+- [01:32:32,100 - 01:32:34,210] from the quantum fluctuations in a
+- [01:32:34,210 - 01:32:36,320] field and in an expanding space,
+- [01:32:36,680 - 01:32:40,440] and you can compare it with the properties of,
+- [01:32:40,440 - 01:32:40,720] uh,
+- [01:32:40,720 - 01:32:42,060] of the fluctuations,
+- [01:32:43,120 - 01:32:45,900] which you can trace back from known galaxies,
+- [01:32:47,000 - 01:32:50,120] from known properties of the distribution of galaxies,
+- [01:32:50,900 - 01:32:53,640] you can trace it back to the earliest times
+- [01:32:53,640 - 01:32:56,060] right after this reheating took place,
+- [01:32:56,980 - 01:32:57,420] and,
+- [01:32:57,420 - 01:32:57,980] uh,
+- [01:32:57,980 - 01:32:59,020] it fits.
+- [01:32:59,160 - 01:32:59,940] It fits well.
+- [01:33:00,080 - 01:33:00,300] Yeah.
+- [01:33:00,980 - 01:33:01,420] Uh,
+- [01:33:01,420 - 01:33:04,120] could you say that it was cooling,
+- [01:33:05,520 - 01:33:07,020] and that after it falls,
+- [01:33:07,040 - 01:33:07,520] it cool,
+- [01:33:07,520 - 01:33:09,080] it doesn't cool as fast?
+- [01:33:11,760 - 01:33:12,200] Um,
+- [01:33:12,200 - 01:33:12,640] no,
+- [01:33:12,640 - 01:33:12,960] not,
+- [01:33:12,960 - 01:33:14,800] that's not really quite right.
+- [01:33:14,900 - 01:33:17,620] It's a question of expansion that,
+- [01:33:17,620 - 01:33:17,880] uh,
+- [01:33:18,040 - 01:33:20,100] that by the time this guy falls over,
+- [01:33:20,200 - 01:33:22,060] this guy is already spread out,
+- [01:33:23,340 - 01:33:23,780] and,
+- [01:33:23,780 - 01:33:24,220] uh,
+- [01:33:24,220 - 01:33:25,200] done some expansion.
+- [01:33:25,400 - 01:33:26,040] Expanding as fast as possible.
+- [01:33:26,040 - 01:33:26,420] So it's not expanding as fast.
+- [01:33:26,420 - 01:33:27,520] It's not spreading out as fast.
+- [01:33:27,540 - 01:33:27,600] No,
+- [01:33:27,600 - 01:33:28,700] it's not expanding as fast.
+- [01:33:28,800 - 01:33:29,240] That's right.
+- [01:33:29,360 - 01:33:30,120] So it's a combination.
+- [01:33:30,440 - 01:33:32,040] There's a competition of things going on.
+- [01:33:32,759 - 01:33:34,000] Expansion in the,
+- [01:33:34,000 - 01:33:35,860] in this piece that fell over the edge
+- [01:33:35,860 - 01:33:39,360] and the inflation of this other fluctuation here,
+- [01:33:39,640 - 01:33:41,720] and it gives rise to a pattern
+- [01:33:41,720 - 01:33:43,760] of fluctuations of energy density.
+- [01:33:44,400 - 01:33:45,400] That was,
+- [01:33:45,400 - 01:33:47,980] for all practical points of,
+- [01:33:48,080 - 01:33:51,240] for all practical purposes,
+- [01:33:52,279 - 01:33:54,880] the observational start of the universe.
+- [01:33:55,759 - 01:33:56,880] Very homogeneous.
+- [01:33:57,360 - 01:33:58,160] Let me ask it this way.
+- [01:33:58,440 - 01:34:00,060] The later fluctuations,
+- [01:34:00,060 - 01:34:05,320] are they hotter or cooler than the earlier ones?
+- [01:34:05,860 - 01:34:06,140] They're cooler.
+- [01:34:06,140 - 01:34:06,280] Well,
+- [01:34:06,280 - 01:34:06,680] they're cooler.
+- [01:34:07,000 - 01:34:11,360] They're cooler because they've been stretched somewhat.
+- [01:34:12,100 - 01:34:13,240] When this one...
+- [01:34:14,400 - 01:34:15,160] The late,
+- [01:34:15,160 - 01:34:18,620] the earlier ones are hotter than the later ones.
+- [01:34:18,900 - 01:34:19,240] No,
+- [01:34:19,240 - 01:34:20,920] the earlier ones have cooled some.
+- [01:34:22,360 - 01:34:24,040] The next one that goes over,
+- [01:34:24,880 - 01:34:25,080] you see,
+- [01:34:25,080 - 01:34:27,480] when you go over the edge,
+- [01:34:27,680 - 01:34:29,960] if a little piece of space goes over the edge,
+- [01:34:30,140 - 01:34:31,760] it gets this much energy.
+- [01:34:32,400 - 01:34:33,000] All right,
+- [01:34:33,000 - 01:34:33,360] that much.
+- [01:34:33,740 - 01:34:37,040] Then that energy is diluted by expansion afterwards.
+- [01:34:38,160 - 01:34:39,640] So if a little piece of space,
+- [01:34:39,760 - 01:34:41,660] let's say that much space goes over the edge,
+- [01:34:42,140 - 01:34:43,500] it picks up...
+- [01:34:43,500 - 01:34:46,380] So it's hotter at the point that it's falling over.
+- [01:34:46,560 - 01:34:47,000] Yeah,
+- [01:34:47,000 - 01:34:47,540] it's always hotter,
+- [01:34:47,540 - 01:34:48,440] right.
+- [01:34:48,840 - 01:34:49,500] All right,
+- [01:34:49,500 - 01:34:51,660] so then this one cools a bit,
+- [01:34:51,780 - 01:34:53,500] and then the next one falls over,
+- [01:34:53,500 - 01:34:54,500] and it's somewhat hotter.
+- [01:34:54,680 - 01:34:55,200] Okay.
+- [01:34:55,340 - 01:34:55,720] Yeah.
+- [01:34:56,120 - 01:34:59,070] So the hottest places are the
+- [01:34:59,070 - 01:35:02,020] last places to go over the edge.
+- [01:35:02,260 - 01:35:02,340] Yeah,
+- [01:35:02,340 - 01:35:02,980] so...
+- [01:35:02,980 - 01:35:04,300] But that's right.
+- [01:35:04,360 - 01:35:07,100] But the main point is that it
+- [01:35:07,100 - 01:35:09,840] leads to inhomogeneities in the energy density.
+- [01:35:11,120 - 01:35:12,900] And those inhomogeneities,
+- [01:35:12,900 - 01:35:13,740] they're small,
+- [01:35:13,740 - 01:35:14,340] in fact.
+- [01:35:14,380 - 01:35:14,720] They were,
+- [01:35:14,720 - 01:35:15,340] I mean,
+- [01:35:15,340 - 01:35:16,800] observationally,
+- [01:35:17,460 - 01:35:19,690] the variations in the energy
+- [01:35:19,690 - 01:35:21,920] density are one part in 100,000.
+- [01:35:21,920 - 01:35:23,340] This is dark energy density,
+- [01:35:23,340 - 01:35:24,040] the variations,
+- [01:35:24,040 - 01:35:24,480] right?
+- [01:35:24,560 - 01:35:24,840] No,
+- [01:35:24,840 - 01:35:27,720] this is primordial density fluctuations.
+- [01:35:29,440 - 01:35:31,160] This is neither dark...
+- [01:35:31,160 - 01:35:33,460] Dark energy is this.
+- [01:35:36,540 - 01:35:37,060] Oh,
+- [01:35:37,060 - 01:35:37,240] okay.
+- [01:35:37,300 - 01:35:38,120] That's the energy today.
+- [01:35:38,840 - 01:35:39,660] But phi,
+- [01:35:39,660 - 01:35:40,380] you're saying,
+- [01:35:40,380 - 01:35:41,900] includes matter and radiation?
+- [01:35:42,380 - 01:35:42,640] Yeah,
+- [01:35:42,640 - 01:35:43,100] that's right.
+- [01:35:43,140 - 01:35:45,300] It turns into all kinds of very hot stuff.
+- [01:35:46,499 - 01:35:47,019] Right,
+- [01:35:47,019 - 01:35:47,540] matter,
+- [01:35:47,540 - 01:35:48,000] radiation,
+- [01:35:48,000 - 01:35:49,780] and that kind of stuff.
+- [01:35:50,160 - 01:35:51,900] And it varies from place to place.
+- [01:35:54,340 - 01:35:54,780] Observationally,
+- [01:35:54,780 - 01:35:56,520] about one part in 10 to the 5.
+- [01:35:57,260 - 01:35:57,700] Now,
+- [01:35:57,700 - 01:35:59,580] that one part in 10 to the 5 is
+- [01:35:59,580 - 01:36:01,460] not a number that we can derive from this picture.
+- [01:36:01,680 - 01:36:05,180] That one part in 10 to the 5
+- [01:36:05,180 - 01:36:08,680] tells us some constraints on the shallowness of this...
+- [01:36:09,280 - 01:36:09,720] The...
+- [01:36:12,258 - 01:36:13,198] ご視聴ありがとうございました
+- [01:36:13,218 - 01:36:14,118] how flat it is,
+- [01:36:14,118 - 01:36:15,058] the flatness of it,
+- [01:36:15,058 - 01:36:16,198] the height of it,
+- [01:36:16,198 - 01:36:18,538] it puts some constraints on the parameters
+- [01:36:19,638 - 01:36:23,168] once those constraints are imposed then it
+- [01:36:23,168 - 01:36:26,698] creates a spectrum of fluctuations at different wavelengths,
+- [01:36:26,698 - 01:36:27,938] different size scales
+- [01:36:28,558 - 01:36:29,958] these guys get spread out,
+- [01:36:29,958 - 01:36:31,118] this guy comes next,
+- [01:36:31,118 - 01:36:34,038] he's smaller in space and so forth
+- [01:36:35,638 - 01:36:38,198] so the effect is that
+- [01:36:38,198 - 01:36:40,758] you have a fluctuation density spectrum
+- [01:36:41,718 - 01:36:43,498] fluctuations on different scales
+- [01:36:44,188 - 01:36:47,073] what happens to a variation in
+- [01:36:47,073 - 01:36:49,958] energy density that you start out with?
+- [01:36:50,378 - 01:36:51,078] well,
+- [01:36:51,078 - 01:36:54,978] if you have a bit of over density over here,
+- [01:36:54,978 - 01:36:56,258] let's say over density
+- [01:36:56,708 - 01:36:58,998] and a bit of under density over here
+- [01:36:59,898 - 01:37:03,268] the over density gravitationally attracts
+- [01:37:03,268 - 01:37:06,638] material from the under dense region
+- [01:37:07,228 - 01:37:10,278] and so the over dense region gets more over dense
+- [01:37:10,278 - 01:37:14,458] the under dense region gets more under dense
+- [01:37:14,458 - 01:37:21,138] and the effect is to magnify the spectrum of fluctuations
+- [01:37:22,118 - 01:37:24,368] so just a very very
+- [01:37:24,368 - 01:37:26,618] small little fluctuation to begin with
+- [01:37:27,137 - 01:37:30,747] will gradually build up depleting the under
+- [01:37:30,747 - 01:37:34,358] dense regions and increasing the over dense regions
+- [01:37:36,518 - 01:37:38,738] and that's the origin of galaxies
+- [01:37:39,538 - 01:37:39,938] so
+- [01:37:40,278 - 01:37:41,618] from the spectrum of galaxies,
+- [01:37:41,618 - 01:37:42,878] from the spectrum of,
+- [01:37:42,878 - 01:37:43,778] not the spectrum,
+- [01:37:43,778 - 01:37:47,378] from the distribution of galaxies in space
+- [01:37:48,108 - 01:37:50,933] one can try to reconstruct the density
+- [01:37:50,933 - 01:37:53,758] fluctuations that were there at the very beginning
+- [01:37:54,028 - 01:37:56,258] now the very beginning means after reheating
+- [01:37:56,848 - 01:37:59,593] and compare them with the
+- [01:37:59,593 - 01:38:02,338] theory that this picture leads to
+- [01:38:02,338 - 01:38:05,698] which is namely quantum fluctuations in the
+- [01:38:05,698 - 01:38:09,058] field being magnified by falling off the edge
+- [01:38:09,058 - 01:38:11,338] and then being processed by gravity
+- [01:38:11,897 - 01:38:13,478] the answer is it fits very well
+- [01:38:13,978 - 01:38:18,518] it fits very well with this picture
+- [01:38:19,658 - 01:38:21,198] and it's the only thing that
+- [01:38:21,198 - 01:38:22,738] fits very well with this picture
+- [01:38:22,738 - 01:38:24,428] you have to assume that it's
+- [01:38:24,428 - 01:38:26,118] a fairly small volume at that point
+- [01:38:26,118 - 01:38:26,758] where?
+- [01:38:27,238 - 01:38:29,858] that the observable universe is a small volume
+- [01:38:30,738 - 01:38:31,818] at which point?
+- [01:38:31,878 - 01:38:33,198] in galaxy formation
+- [01:38:33,198 - 01:38:37,298] at the time of galaxy formation the observable universe was
+- [01:38:37,618 - 01:38:37,778] was...
+- [01:38:37,778 - 01:38:40,638] some pretty good fraction of what it is today
+- [01:38:41,878 - 01:38:43,138] I'm not sure what you're asking
+- [01:38:43,658 - 01:38:46,028] I'm just wondering how fast this movement
+- [01:38:46,028 - 01:38:48,398] from under dense to over dense takes place
+- [01:38:48,398 - 01:38:49,098] oh,
+- [01:38:49,098 - 01:38:51,218] well once it starts it happens fast
+- [01:38:51,538 - 01:38:52,798] is that during reheating?
+- [01:38:53,058 - 01:38:53,658] no,
+- [01:38:53,658 - 01:38:54,598] that's after reheating
+- [01:38:54,598 - 01:38:55,518] no,
+- [01:38:55,518 - 01:38:56,278] that's after,
+- [01:38:56,278 - 01:38:57,458] at the end of reheat
+- [01:38:57,458 - 01:38:59,418] at the time of reheating
+- [01:38:59,418 - 01:39:02,398] that's when these fluctuations were first established
+- [01:39:03,018 - 01:39:04,078] in other words
+- [01:39:04,638 - 01:39:06,418] after going over this edge here
+- [01:39:06,418 - 01:39:09,338] there was some density fluctuations which
+- [01:39:09,338 - 01:39:11,178] were bigger than they were in here
+- [01:39:11,178 - 01:39:13,118] but whatever they were
+- [01:39:13,658 - 01:39:16,018] but still one part in ten to the five
+- [01:39:16,018 - 01:39:16,898] roughly
+- [01:39:17,418 - 01:39:18,858] one part in a hundred thousand
+- [01:39:18,858 - 01:39:20,078] magnifies the quantum fluctuations
+- [01:39:20,078 - 01:39:20,898] yeah,
+- [01:39:20,898 - 01:39:21,758] magnifies
+- [01:39:21,758 - 01:39:24,198] by going over the edge you magnify the quantum fluctuations
+- [01:39:24,858 - 01:39:27,498] but then gravity still hasn't done its work
+- [01:39:28,038 - 01:39:29,498] gravity doing its work
+- [01:39:30,318 - 01:39:31,438] magnifies them more
+- [01:39:31,438 - 01:39:34,478] and eventually magnifies them a great deal
+- [01:39:34,478 - 01:39:36,318] and turns them into galaxies
+- [01:39:36,418 - 01:39:38,258] and stars and planets and so forth
+- [01:39:38,998 - 01:39:40,818] does that violate the second law?
+- [01:39:41,018 - 01:39:41,878] it sounds like it
+- [01:39:41,878 - 01:39:45,578] sounds like entropy is going the wrong way
+- [01:39:47,298 - 01:39:47,918] it's not
+- [01:39:48,858 - 01:39:50,898] gravity sometimes does things like that
+- [01:39:50,898 - 01:39:51,538] it has that effect
+- [01:39:51,538 - 01:39:53,678] it tends to concentrate things
+- [01:39:53,678 - 01:39:54,258] yeah
+- [01:39:54,258 - 01:39:55,318] but it's not,
+- [01:39:55,318 - 01:39:55,518] no,
+- [01:39:55,518 - 01:39:56,898] it's not violating the second law
+- [01:39:56,898 - 01:39:58,198] nothing can violate the second law
+- [01:39:58,198 - 01:39:58,658] but it does,
+- [01:39:58,658 - 01:40:00,338] it looks somewhat counterintuitive
+- [01:40:00,338 - 01:40:01,378] in that
+- [01:40:03,518 - 01:40:04,958] gravity is rather peculiar from
+- [01:40:04,958 - 01:40:06,398] the point of statistical analysis
+- [01:40:06,398 - 01:40:06,518] to statistical mechanics
+- [01:40:06,518 - 01:40:10,678] most things tend to make things flat and evenly distributed
+- [01:40:11,218 - 01:40:12,938] gravity tends to make things clump
+- [01:40:13,678 - 01:40:16,558] and the clumping actually increases the entropy
+- [01:40:17,398 - 01:40:19,838] the ultimate is to clump them into black holes
+- [01:40:19,838 - 01:40:22,558] and black holes really have a huge amount of entropy
+- [01:40:22,558 - 01:40:23,158] yeah
+- [01:40:23,158 - 01:40:23,618] so,
+- [01:40:23,618 - 01:40:24,458] yeah
+- [01:40:24,458 - 01:40:27,658] how is the microwave background reflected in all of this?
+- [01:40:27,678 - 01:40:28,898] the lumps in the microwave background
+- [01:40:30,078 - 01:40:31,938] the lumps in the mic-
+- [01:40:31,938 - 01:40:32,278] these,
+- [01:40:32,278 - 01:40:32,718] yeah,
+- [01:40:32,718 - 01:40:34,918] these are the lumps in the microwave background
+- [01:40:34,918 - 01:40:37,578] so mostly the mass doesn't really count that much
+- [01:40:37,578 - 01:40:39,678] it's the microwave background that predominates here
+- [01:40:39,678 - 01:40:40,118] well,
+- [01:40:40,118 - 01:40:40,578] no,
+- [01:40:40,578 - 01:40:42,298] it's that this stuff gets
+- [01:40:42,298 - 01:40:44,018] imprinted on the microwave background
+- [01:40:45,317 - 01:40:45,937] so,
+- [01:40:45,937 - 01:40:46,558] um
+- [01:40:47,978 - 01:40:49,738] all of this structure
+- [01:40:50,838 - 01:40:52,258] all of this structure
+- [01:40:53,018 - 01:40:54,878] evolved for a period of time
+- [01:40:54,878 - 01:40:56,898] gravity did not become important
+- [01:40:56,898 - 01:40:59,838] until after the surface of last scattering
+- [01:40:59,838 - 01:41:01,738] gravity only became important
+- [01:41:02,978 - 01:41:03,598] after
+- [01:41:04,918 - 01:41:07,308] the universe cooled down to below the
+- [01:41:07,308 - 01:41:09,698] temperature of the surface of the sun
+- [01:41:09,698 - 01:41:12,478] so until that time
+- [01:41:13,318 - 01:41:16,298] the fluctuations were pretty much primordial
+- [01:41:17,178 - 01:41:18,978] just these primordial fluctuations
+- [01:41:18,978 - 01:41:20,928] and they imprinted themselves on
+- [01:41:20,928 - 01:41:22,878] the surface of last scattering
+- [01:41:22,878 - 01:41:25,238] so that what we see in the sky
+- [01:41:25,238 - 01:41:26,718] in the surface of last scattering
+- [01:41:26,718 - 01:41:28,178] is pretty much these primordial
+- [01:41:28,178 - 01:41:29,528] that means that those regions
+- [01:41:29,528 - 01:41:30,878] have to be far enough apart
+- [01:41:30,878 - 01:41:33,718] that the thermal doesn't wash them out
+- [01:41:35,338 - 01:41:36,978] the thermal radiation of the
+- [01:41:36,978 - 01:41:38,778] before the surface of last scattering
+- [01:41:38,778 - 01:41:39,218] yes,
+- [01:41:39,218 - 01:41:39,738] that's right
+- [01:41:39,738 - 01:41:42,298] you said that phi was a scalar field
+- [01:41:42,868 - 01:41:45,038] so that wouldn't be an electromagnetic field
+- [01:41:45,038 - 01:41:45,378] no,
+- [01:41:45,378 - 01:41:45,598] it's not
+- [01:41:45,598 - 01:41:47,378] phi is not an electromagnetic field
+- [01:41:47,918 - 01:41:48,938] so how did all the
+- [01:41:48,938 - 01:41:51,818] so the photons just went with
+- [01:41:51,818 - 01:41:51,918] no,
+- [01:41:51,918 - 01:41:53,818] what happened is all of this energy
+- [01:41:53,818 - 01:41:54,398] look
+- [01:41:55,458 - 01:41:57,108] what happens to that energy when
+- [01:41:57,108 - 01:41:58,758] that thing hits the floor there
+- [01:41:58,758 - 01:42:01,678] some of it gets converted into electromagnetic energy
+- [01:42:01,678 - 01:42:02,538] not very much,
+- [01:42:02,538 - 01:42:03,278] incidentally
+- [01:42:03,278 - 01:42:05,338] most of it just gets converted into heat
+- [01:42:05,338 - 01:42:07,118] but the question is what happened
+- [01:42:07,118 - 01:42:08,898] when this field fell down here
+- [01:42:09,798 - 01:42:10,318] okay
+- [01:42:11,598 - 01:42:12,278] it got,
+- [01:42:12,278 - 01:42:13,658] what could it get turned into
+- [01:42:13,658 - 01:42:16,278] what can that energy get turned into
+- [01:42:16,278 - 01:42:18,378] by the time you settle down at the bottom
+- [01:42:18,378 - 01:42:19,758] what could that energy be
+- [01:42:20,558 - 01:42:22,128] the only thing it could
+- [01:42:22,128 - 01:42:23,698] be is particles of different type
+- [01:42:24,578 - 01:42:25,968] that's the only other thing that
+- [01:42:25,968 - 01:42:27,358] we know that can carry energy
+- [01:42:27,358 - 01:42:28,798] is particles of different type
+- [01:42:28,798 - 01:42:29,618] um
+- [01:42:31,238 - 01:42:31,758] so
+- [01:42:31,758 - 01:42:33,718] so in falling off the edge here
+- [01:42:33,718 - 01:42:35,538] this field energy here
+- [01:42:35,538 - 01:42:39,058] presumably got converted into various kinds of particles
+- [01:42:39,758 - 01:42:42,258] those particles may have been unstable particles
+- [01:42:42,258 - 01:42:43,498] they may have decayed
+- [01:42:43,498 - 01:42:44,518] what did they decay into
+- [01:42:44,518 - 01:42:46,858] they decayed into electrons and positrons
+- [01:42:46,858 - 01:42:48,978] protons and anti-protons
+- [01:42:48,978 - 01:42:50,278] or quarks and anti-quarks
+- [01:42:50,278 - 01:42:51,838] some photons
+- [01:42:52,777 - 01:42:54,737] and when a large amount
+- [01:42:54,737 - 01:42:56,698] of energy is deposited like that
+- [01:42:56,698 - 01:42:57,698] what does it do
+- [01:42:57,698 - 01:42:58,338] it heats,
+- [01:42:58,338 - 01:42:59,098] turns into heat
+- [01:42:59,838 - 01:43:01,678] after a while it just turns into heat
+- [01:43:01,758 - 01:43:02,718] that heat
+- [01:43:02,718 - 01:43:03,698] um
+- [01:43:04,758 - 01:43:06,658] eventually became the
+- [01:43:06,658 - 01:43:07,678] photons,
+- [01:43:07,678 - 01:43:08,418] electrons,
+- [01:43:08,418 - 01:43:09,818] positrons,
+- [01:43:09,818 - 01:43:10,558] protons,
+- [01:43:10,558 - 01:43:12,018] anti-protons
+- [01:43:12,578 - 01:43:13,318] that uh
+- [01:43:14,558 - 01:43:15,798] so the uh
+- [01:43:16,518 - 01:43:17,998] the reheating
+- [01:43:17,998 - 01:43:21,678] is actually where you get the manifestation of the uh
+- [01:43:21,678 - 01:43:22,798] is where you get what
+- [01:43:23,758 - 01:43:24,418] manifestation
+- [01:43:24,418 - 01:43:27,038] of matter inflation
+- [01:43:27,038 - 01:43:29,818] I mean you're getting inflation of the universe
+- [01:43:29,818 - 01:43:30,478] yeah
+- [01:43:30,478 - 01:43:32,348] and but it's at that reheating
+- [01:43:32,348 - 01:43:34,218] point where it manifests as a
+- [01:43:34,218 - 01:43:36,718] inflation in the mass and the particles
+- [01:43:36,718 - 01:43:38,118] well it's where it becomes particles
+- [01:43:39,558 - 01:43:42,778] it's where that energy gets converted into radiation
+- [01:43:43,408 - 01:43:43,718] particles
+- [01:43:44,388 - 01:43:44,698] uh
+- [01:43:45,958 - 01:43:46,578] electrons,
+- [01:43:46,578 - 01:43:47,138] protons
+- [01:43:47,138 - 01:43:50,618] the details of this are not known
+- [01:43:51,228 - 01:43:54,478] the details of how you got from here to electrons,
+- [01:43:54,478 - 01:43:55,758] positrons and so forth
+- [01:43:55,758 - 01:43:57,258] are not in detail known
+- [01:43:57,258 - 01:43:58,678] the only thing you know
+- [01:43:58,678 - 01:44:01,048] is that when you have energy
+- [01:44:01,048 - 01:44:03,418] contained and a slowly expanding incidentally
+- [01:44:03,418 - 01:44:04,978] once you got down here
+- [01:44:04,978 - 01:44:07,938] the universe was much more slowly expanding
+- [01:44:08,998 - 01:44:11,218] on the scale of the
+- [01:44:11,218 - 01:44:13,438] rapid particle reactions that take place
+- [01:44:13,438 - 01:44:15,158] the universe was very slowly expanding
+- [01:44:15,158 - 01:44:16,878] when you got down to here
+- [01:44:17,558 - 01:44:17,878] alright
+- [01:44:18,198 - 01:44:21,138] so what happens if you take a bunch of energy
+- [01:44:21,138 - 01:44:22,958] and put it into a pot
+- [01:44:22,958 - 01:44:24,778] which is very very slowly expanding
+- [01:44:24,778 - 01:44:26,698] well it comes to thermal equilibrium
+- [01:44:26,698 - 01:44:28,618] it somehow eventually equilibrates
+- [01:44:29,818 - 01:44:32,538] and turns into a thermal equilibrium
+- [01:44:32,538 - 01:44:35,798] whatever the temperature happens to be
+- [01:44:35,798 - 01:44:37,488] so the details of what go
+- [01:44:37,488 - 01:44:39,178] on as you go across here
+- [01:44:39,178 - 01:44:40,978] don't really matter much
+- [01:44:40,978 - 01:44:42,498] all you know is a lot
+- [01:44:42,498 - 01:44:44,018] of energy was dumped into a pot
+- [01:44:44,018 - 01:44:46,257] which very very slowly expanded
+- [01:44:46,257 - 01:44:48,418] and that's enough to tell you
+- [01:44:48,418 - 01:44:50,658] that some percentage of it is going to be electrons
+- [01:44:50,658 - 01:44:51,877] some of it's going to be positrons
+- [01:44:52,198 - 01:44:53,718] some of it's going to be whatever it is
+- [01:44:53,718 - 01:44:54,858] let me ask this
+- [01:44:54,858 - 01:44:57,017] how much of physical theory survives
+- [01:44:57,017 - 01:44:58,658] going back behind the clock?
+- [01:44:58,678 - 01:44:59,598] how much gravity does it have?
+- [01:44:59,678 - 01:45:01,398] pretty much gravitation
+- [01:45:01,398 - 01:45:03,578] and quantum field theory
+- [01:45:03,578 - 01:45:06,218] but none of the other physical ingredients exist
+- [01:45:06,218 - 01:45:07,738] you mean up on the top here?
+- [01:45:07,878 - 01:45:08,138] yeah
+- [01:45:08,678 - 01:45:08,978] right
+- [01:45:10,678 - 01:45:11,798] that's pretty much right
+- [01:45:11,798 - 01:45:12,878] no photons,
+- [01:45:12,878 - 01:45:14,638] no particles of mass
+- [01:45:14,638 - 01:45:16,858] and no particles at all right?
+- [01:45:16,998 - 01:45:18,338] because the phi has no
+- [01:45:18,338 - 01:45:19,818] well the only thing that was there
+- [01:45:19,818 - 01:45:20,718] were these fluctuations
+- [01:45:20,718 - 01:45:23,558] these quantum fluctuations in the fields
+- [01:45:23,558 - 01:45:27,158] in particular the quantum fluctuation in this field phi
+- [01:45:28,018 - 01:45:29,218] and uh
+- [01:45:31,797 - 01:45:33,918] it's not worth calling them particles
+- [01:45:36,917 - 01:45:39,298] so the actual act of the reheating
+- [01:45:39,298 - 01:45:42,158] is that the cause of the big bang or
+- [01:45:42,158 - 01:45:42,918] yeah that's
+- [01:45:42,918 - 01:45:45,528] yeah you may if you like think
+- [01:45:45,528 - 01:45:48,138] of the reheating as the big bang
+- [01:45:48,138 - 01:45:49,658] but it's still
+- [01:45:49,658 - 01:45:51,878] it's still expanded many times over
+- [01:45:51,878 - 01:45:54,438] before it became the visible big bang
+- [01:45:55,158 - 01:45:56,618] remember it was so hot
+- [01:45:57,158 - 01:45:58,158] and it went over the edge here
+- [01:45:59,258 - 01:46:01,738] energies here much much higher than
+- [01:46:01,738 - 01:46:04,258] electron positron energies and so forth
+- [01:46:05,077 - 01:46:07,398] much much hotter than the surface of the sun
+- [01:46:07,398 - 01:46:08,318] when it went over here
+- [01:46:08,978 - 01:46:10,598] so the universe was still very opaque
+- [01:46:11,577 - 01:46:12,798] it had to cool down
+- [01:46:14,317 - 01:46:15,698] before it became transparent
+- [01:46:16,358 - 01:46:17,708] so when we look out and
+- [01:46:17,708 - 01:46:19,058] see the surface of the last scattering
+- [01:46:19,058 - 01:46:20,718] that's very late on this scale
+- [01:46:20,718 - 01:46:21,898] where is it on that graph?
+- [01:46:22,318 - 01:46:23,358] it's down at the bottom
+- [01:46:24,197 - 01:46:25,678] that's where the last scattering occurred?
+- [01:46:25,798 - 01:46:26,818] yeah down at the bottom
+- [01:46:26,818 - 01:46:27,858] everything in
+- [01:46:28,778 - 01:46:30,418] everything that we can
+- [01:46:31,198 - 01:46:31,798] measure,
+- [01:46:31,798 - 01:46:32,418] see,
+- [01:46:32,418 - 01:46:33,158] observe
+- [01:46:33,818 - 01:46:34,918] happened at the bottom
+- [01:46:35,978 - 01:46:37,918] so by that stretch then
+- [01:46:37,918 - 01:46:39,338] when you have the quantum fluctuations
+- [01:46:39,338 - 01:46:41,338] then there are really multiple
+- [01:46:41,338 - 01:46:43,358] big big bangs right?
+- [01:46:43,458 - 01:46:45,718] each one as it falls off is causing
+- [01:46:45,718 - 01:46:47,098] well yeah yeah yeah but
+- [01:46:47,098 - 01:46:48,258] well if you like
+- [01:46:48,818 - 01:46:51,898] but on the other hand these fluctuations are on scales
+- [01:46:52,718 - 01:46:55,178] anywhere from very very much bigger
+- [01:46:55,178 - 01:46:56,698] than the horizon
+- [01:46:56,698 - 01:46:59,078] to anywhere as much much smaller
+- [01:46:59,078 - 01:47:01,358] so some of these fluctuations
+- [01:47:02,178 - 01:47:03,938] were small enough in size
+- [01:47:03,938 - 01:47:07,278] that we see them manifested as
+- [01:47:10,278 - 01:47:11,618] galaxies and stars
+- [01:47:12,898 - 01:47:14,058] even planets
+- [01:47:14,058 - 01:47:15,858] that's probably a stretch
+- [01:47:15,858 - 01:47:17,058] galaxies and stars
+- [01:47:17,938 - 01:47:18,658] yeah
+- [01:47:19,178 - 01:47:21,158] wasn't there some discussion of acoustic waves
+- [01:47:21,158 - 01:47:22,838] and all this process doing some
+- [01:47:22,838 - 01:47:24,238] kind of
+- [01:47:25,417 - 01:47:26,858] stuff itself
+- [01:47:26,858 - 01:47:27,578] yeah
+- [01:47:29,297 - 01:47:30,018] right
+- [01:47:31,458 - 01:47:33,518] I guess it has to do with the under density
+- [01:47:33,518 - 01:47:34,098] over density
+- [01:47:34,858 - 01:47:36,478] well this happened
+- [01:47:36,478 - 01:47:38,998] the acoustic waves are a phenomena
+- [01:47:38,998 - 01:47:43,198] that preceded the gravitational things
+- [01:47:43,198 - 01:47:43,998] yeah
+- [01:47:43,998 - 01:47:45,958] we're going to talk about acoustic
+- [01:47:45,958 - 01:47:46,538] I don't know
+- [01:47:46,538 - 01:47:48,818] we have one more class?
+- [01:47:49,338 - 01:47:50,058] alright
+- [01:47:50,058 - 01:47:53,218] the acoustic waves are particularly interesting
+- [01:47:53,218 - 01:47:56,018] because they give us a measuring rod on the sky
+- [01:47:57,118 - 01:47:57,678] alright
+- [01:47:57,958 - 01:47:59,578] they give us the measuring rod
+- [01:48:00,438 - 01:48:01,858] which when we look out
+- [01:48:01,858 - 01:48:03,678] to the surface of the last scattering
+- [01:48:04,278 - 01:48:05,628] I will tell you about
+- [01:48:05,628 - 01:48:06,978] the acoustic waves the next time
+- [01:48:06,978 - 01:48:07,698] ah
+- [01:48:08,438 - 01:48:09,338] you see
+- [01:48:10,098 - 01:48:12,198] lumps of stuff which were
+- [01:48:13,278 - 01:48:14,938] associated with acoustic waves
+- [01:48:14,938 - 01:48:17,178] whose size you know
+- [01:48:17,898 - 01:48:19,178] where do you know them from?
+- [01:48:19,318 - 01:48:20,498] that I'll tell you next time
+- [01:48:21,098 - 01:48:23,198] but because you know their size and because they're not
+- [01:48:23,218 - 01:48:24,238] because you know their distance
+- [01:48:24,238 - 01:48:26,498] you can start looking at triangles
+- [01:48:27,978 - 01:48:29,318] as those acoustic waves
+- [01:48:30,118 - 01:48:30,678] which are
+- [01:48:31,498 - 01:48:32,698] manifestations of
+- [01:48:32,698 - 01:48:36,478] of the processing of these fluctuations
+- [01:48:37,238 - 01:48:38,698] they start to slosh
+- [01:48:38,698 - 01:48:40,338] they basically start to slosh
+- [01:48:40,938 - 01:48:42,938] and they created lumps
+- [01:48:42,938 - 01:48:44,798] and the lumps are of known size
+- [01:48:44,798 - 01:48:46,218] because the laws of
+- [01:48:47,218 - 01:48:48,758] acoustics and so forth are known
+- [01:48:48,758 - 01:48:51,538] we know the size of them we know the distance
+- [01:48:51,538 - 01:48:52,898] and we can measure this angle
+- [01:48:55,278 - 01:48:57,078] that's enough to use some geometry
+- [01:48:57,078 - 01:48:59,458] to tell us that space was either flat
+- [01:48:59,458 - 01:49:01,618] positively curved or negatively curved
+- [01:49:02,378 - 01:49:03,338] and ah
+- [01:49:03,338 - 01:49:05,238] so those acoustic waves are important
+- [01:49:05,238 - 01:49:05,918] and I'll
+- [01:49:07,578 - 01:49:09,378] it's too late for them now
+- [01:49:10,198 - 01:49:10,678] ok
+- [01:49:11,178 - 01:49:12,958] alright do we have another class?
+- [01:49:13,178 - 01:49:13,758] I've lost track
+- [01:49:14,558 - 01:49:15,478] we have one more?
+- [01:49:15,478 - 01:49:15,958] two more?
+- [01:49:16,498 - 01:49:17,118] two more?
+- [01:49:17,118 - 01:49:17,918] two more?
+- [01:49:17,918 - 01:49:19,358] ok good good good
+- [01:49:19,358 - 01:49:19,978] alright
+- [01:49:20,938 - 01:49:22,068] so the next time I
+- [01:49:22,068 - 01:49:23,198] will tell you a little bit
+- [01:49:23,218 - 01:49:24,398] about how
+- [01:49:24,398 - 01:49:27,078] the geometry of space got measured
+- [01:49:27,078 - 01:49:27,858] from all of this
