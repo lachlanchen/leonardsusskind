@@ -1,0 +1,3132 @@
+# Transcript
+
+Source: core/general_relativity/2012_fall_theoretical_minimum/157 - General Relativity Lecture 3 [cyW0LWEACfI].webm
+
+- [00:00:04,700 - 00:00:06,140] Stanford University.
+- [00:00:08,580 - 00:00:10,590] General relativity has a
+- [00:00:10,590 - 00:00:12,600] reputation for being very difficult.
+- [00:00:13,600 - 00:00:16,020] I think the reason is that it's very difficult.
+- [00:00:21,920 - 00:00:25,900] It's kind of calculationally intensive.
+- [00:00:25,900 - 00:00:29,380] Intensive indices and symbols.
+- [00:00:34,600 - 00:00:38,840] There are ways people have invented to
+- [00:00:38,840 - 00:00:43,080] express things in sort of more condensed,
+- [00:00:43,080 - 00:00:43,940] very,
+- [00:00:43,940 - 00:00:44,240] very
+- [00:00:44,240 - 00:00:45,560] neat notations.
+- [00:00:47,900 - 00:00:54,740] But just learning them in itself.
+- [00:00:54,740 - 00:00:58,420] It's a task that would take some time.
+- [00:01:01,640 - 00:01:04,900] Things like fear binds,
+- [00:01:04,900 - 00:01:06,300] forms,
+- [00:01:06,300 - 00:01:12,100] spinners,
+- [00:01:12,100 - 00:01:13,340] and twisters,
+- [00:01:13,340 - 00:01:15,340] and all sorts of different kinds
+- [00:01:15,340 - 00:01:17,240] of mathematical objects.
+- [00:01:17,900 - 00:01:22,580] You could call many of them notation.
+- [00:01:24,000 - 00:01:24,720] Notations.
+- [00:01:24,740 - 00:01:25,360] Notational if you like.
+- [00:01:26,740 - 00:01:28,880] And they do simplify the equations.
+- [00:01:29,880 - 00:01:32,430] So I sometimes feel as if in
+- [00:01:32,430 - 00:01:34,980] presenting these things the way I do,
+- [00:01:34,980 - 00:01:37,320] that it's sort of like
+- [00:01:37,320 - 00:01:42,500] Maxwell who wrote down every single equation of his...
+- [00:01:42,500 - 00:01:44,400] How many Maxwell equations are there?
+- [00:01:46,200 - 00:01:47,220] I think eight.
+- [00:01:48,020 - 00:01:48,700] Eight.
+- [00:01:48,880 - 00:01:49,660] Eight altogether.
+- [00:01:51,280 - 00:01:54,580] We don't usually write all components of the equations.
+- [00:01:54,580 - 00:01:58,500] We put them together into vector notation and so forth.
+- [00:01:59,280 - 00:02:00,840] And if we're smart,
+- [00:02:00,840 - 00:02:04,070] we can even avoid the indices
+- [00:02:04,070 - 00:02:07,300] by inventing symbols like curl and
+- [00:02:07,300 - 00:02:07,860] so forth.
+- [00:02:08,360 - 00:02:10,310] And the same thing can be
+- [00:02:10,310 - 00:02:12,260] done to some extent for general relativity.
+- [00:02:13,220 - 00:02:14,340] But as I said,
+- [00:02:14,340 - 00:02:20,160] the computational methods and techniques are harder.
+- [00:02:21,840 - 00:02:23,520] And I'm not an expert in them.
+- [00:02:23,520 - 00:02:25,200] I'm by no means an expert in them.
+- [00:02:25,220 - 00:02:26,580] I'm not an expert in general relativity.
+- [00:02:26,780 - 00:02:27,780] I know the subject.
+- [00:02:27,920 - 00:02:28,900] I know how to use it.
+- [00:02:29,320 - 00:02:30,780] But quite honestly,
+- [00:02:30,780 - 00:02:33,760] when I go to do something using general relativity,
+- [00:02:33,760 - 00:02:35,840] I go back to the
+- [00:02:35,840 - 00:02:36,280] indices.
+- [00:02:36,680 - 00:02:39,840] I can follow when somebody else uses the fancy methods.
+- [00:02:40,320 - 00:02:42,000] But I can't do them myself.
+- [00:02:42,220 - 00:02:43,480] It's not just that I can't do them myself.
+- [00:02:43,620 - 00:02:44,660] It's not natural to me.
+- [00:02:45,200 - 00:02:47,110] I wind up going back to
+- [00:02:47,110 - 00:02:49,020] the same thing that we're doing here.
+- [00:02:49,420 - 00:02:49,900] Indices.
+- [00:02:52,640 - 00:02:53,120] Derivatives.
+- [00:02:53,120 - 00:02:53,500] And so on.
+- [00:02:53,500 - 00:02:54,160] The whole works.
+- [00:02:56,940 - 00:03:00,180] And my feeling is it's the right
+- [00:03:00,180 - 00:03:03,420] way to see it for the first time.
+- [00:03:04,420 - 00:03:06,000] But it is a nuisance.
+- [00:03:06,940 - 00:03:08,320] Indices all over the place.
+- [00:03:08,600 - 00:03:09,800] Notations all over the place.
+- [00:03:09,860 - 00:03:10,620] Too much of it.
+- [00:03:11,380 - 00:03:12,100] Can't help it.
+- [00:03:13,460 - 00:03:15,020] So some aspect of it,
+- [00:03:15,020 - 00:03:15,960] you have to get over.
+- [00:03:16,140 - 00:03:19,300] You have to get over that hump of tensor notation,
+- [00:03:19,300 - 00:03:20,160] the indices,
+- [00:03:20,160 - 00:03:20,940] and so forth.
+- [00:03:21,060 - 00:03:22,060] And then it goes easier.
+- [00:03:22,200 - 00:03:23,200] Then it goes more smoothly.
+- [00:03:23,500 - 00:03:25,820] Until you come to do a calculation.
+- [00:03:26,160 - 00:03:28,340] And then right back to the mess again.
+- [00:03:28,860 - 00:03:29,420] Now,
+- [00:03:29,420 - 00:03:31,170] if you're really interested in
+- [00:03:31,170 - 00:03:32,920] doing computations in general relativity,
+- [00:03:32,920 - 00:03:34,400] there
+- [00:03:34,400 - 00:03:34,960] are packages.
+- [00:03:35,260 - 00:03:35,920] There are,
+- [00:03:35,920 - 00:03:37,460] you know,
+- [00:03:37,460 - 00:03:40,820] you just put in the
+- [00:03:40,820 - 00:03:44,180] metric as a function of position.
+- [00:03:44,480 - 00:03:45,440] The metric tensor.
+- [00:03:45,880 - 00:03:51,020] And out it will spit various tensors and Riemann tensors.
+- [00:03:51,440 - 00:03:52,700] This kind of tensor.
+- [00:03:52,760 - 00:03:53,480] That kind of tensor.
+- [00:03:53,480 - 00:03:54,740] Einstein tensors.
+- [00:03:55,080 - 00:03:56,320] And then you can say,
+- [00:03:56,320 - 00:03:57,880] without even looking at the result,
+- [00:03:57,880 - 00:03:58,440] you can say,
+- [00:03:58,440 - 00:03:58,660] okay,
+- [00:03:58,660 - 00:03:59,100] please,
+- [00:03:59,160 - 00:03:59,420] Mr.
+- [00:03:59,420 - 00:03:59,780] Computer,
+- [00:03:59,780 - 00:04:01,740] set the Riemann tensors,
+- [00:04:01,740 - 00:04:04,960] set the Einstein tensor equal to the energy momentum
+- [00:04:04,960 - 00:04:06,960] tensor and tell me what comes out.
+- [00:04:08,120 - 00:04:09,120] So yeah,
+- [00:04:09,120 - 00:04:10,620] computers can do a lot better.
+- [00:04:11,040 - 00:04:15,500] But as I said,
+- [00:04:15,500 - 00:04:16,959] general relativity is hard,
+- [00:04:16,959 - 00:04:20,820] and part of the hardness is just the complexity
+- [00:04:21,660 - 00:04:22,940] of the notations.
+- [00:04:22,940 - 00:04:23,700] That are necessary.
+- [00:04:24,200 - 00:04:24,840] Incidentally,
+- [00:04:24,840 - 00:04:26,690] the subject that we're studying
+- [00:04:26,690 - 00:04:28,540] up till now is Riemannian geometry.
+- [00:04:29,040 - 00:04:30,100] Riemannian geometry,
+- [00:04:30,100 - 00:04:31,880] the geometry of curved spaces.
+- [00:04:32,240 - 00:04:33,800] The geometry of smooth,
+- [00:04:33,800 - 00:04:35,640] curved metric spaces,
+- [00:04:35,640 - 00:04:36,400] they're called.
+- [00:04:40,140 - 00:04:42,490] And I suppose we have Riemann to
+- [00:04:42,490 - 00:04:44,840] blame for the complexity of the notation.
+- [00:04:45,560 - 00:04:46,200] Actually,
+- [00:04:46,200 - 00:04:47,240] he simplified it,
+- [00:04:47,240 - 00:04:48,820] and Einstein simplified it further.
+- [00:04:49,220 - 00:04:51,380] But nevertheless.
+- [00:04:51,680 - 00:04:52,700] It is.
+- [00:04:52,700 - 00:04:55,340] It is notationally and computationally intensive.
+- [00:04:56,240 - 00:04:59,620] The basic concepts are really not so hard,
+- [00:04:59,620 - 00:05:04,100] but we have to go through the mess before
+- [00:05:04,100 - 00:05:05,160] we get to the concepts.
+- [00:05:06,280 - 00:05:08,320] Or before we can express those concepts.
+- [00:05:12,800 - 00:05:13,940] If there are no questions,
+- [00:05:13,940 - 00:05:14,560] yeah?
+- [00:05:15,120 - 00:05:17,320] I was wondering if you have a sense of
+- [00:05:17,320 - 00:05:19,520] what are the active areas of research in general
+- [00:05:19,520 - 00:05:19,980] relativity?
+- [00:05:20,220 - 00:05:20,980] I know very well,
+- [00:05:20,980 - 00:05:21,180] yeah.
+- [00:05:21,180 - 00:05:21,940] Well,
+- [00:05:21,940 - 00:05:22,340] yeah,
+- [00:05:22,340 - 00:05:22,940] there are several.
+- [00:05:25,140 - 00:05:27,980] The most active areas of research,
+- [00:05:27,980 - 00:05:34,400] the ones which are really very,
+- [00:05:34,400 - 00:05:35,500] very strongly active
+- [00:05:35,500 - 00:05:37,060] among theoretical physicists,
+- [00:05:37,060 - 00:05:41,740] is the quantization of general relativity.
+- [00:05:42,320 - 00:05:45,020] The quantization of black hole physics,
+- [00:05:45,020 - 00:05:49,360] that's probably the most active area.
+- [00:05:49,540 - 00:05:51,160] There are astrophysics.
+- [00:05:51,180 - 00:05:51,500] There are astrophysical areas,
+- [00:05:51,500 - 00:05:52,780] where again,
+- [00:05:52,780 - 00:05:54,820] black holes are very important.
+- [00:05:56,080 - 00:05:57,890] Astrophysical areas are
+- [00:05:57,890 - 00:05:59,700] entirely classical general relativity.
+- [00:06:00,480 - 00:06:02,280] There's numerical relativity.
+- [00:06:02,600 - 00:06:04,080] Numerical relativity means,
+- [00:06:04,080 - 00:06:06,950] and usually for the
+- [00:06:06,950 - 00:06:09,820] purposes of solving astrophysical problems,
+- [00:06:12,200 - 00:06:15,780] numerically putting in various initial situations a
+- [00:06:15,780 - 00:06:19,360] pair of black holes orbiting around each other.
+- [00:06:19,360 - 00:06:22,140] And simply running the computer to find
+- [00:06:22,140 - 00:06:24,920] out what happens by solving Einstein's equations.
+- [00:06:27,379 - 00:06:29,960] And it's a very subtle business,
+- [00:06:29,960 - 00:06:30,740] incidentally.
+- [00:06:30,760 - 00:06:32,430] It is not that you just
+- [00:06:32,430 - 00:06:34,100] put in the equations and grind.
+- [00:06:34,520 - 00:06:36,260] It's much more subtle than that.
+- [00:06:36,900 - 00:06:40,260] And numerical relativity is also a very hard subject.
+- [00:06:41,280 - 00:06:42,260] The purpose,
+- [00:06:42,260 - 00:06:42,820] for example,
+- [00:06:42,820 - 00:06:45,320] being to find out how much
+- [00:06:45,320 - 00:06:47,820] gravitational radiation and other kinds of things,
+- [00:06:47,960 - 00:06:49,340] there's an entirely different kind of thing.
+- [00:06:49,340 - 00:06:49,800] It's entirely classical.
+- [00:06:49,980 - 00:06:52,260] Gravitational radiation is classical radiation.
+- [00:06:52,500 - 00:06:55,080] When two black holes fall into each other,
+- [00:06:55,080 - 00:06:55,440] bang,
+- [00:06:55,440 - 00:06:58,840] a lot of gravitational radiation is produced.
+- [00:06:59,040 - 00:07:00,000] Gravitational waves.
+- [00:07:00,660 - 00:07:02,200] Why are we interested in them?
+- [00:07:02,480 - 00:07:02,920] Well,
+- [00:07:02,920 - 00:07:04,580] among other reasons,
+- [00:07:04,580 - 00:07:07,140] because we have a chance of detecting them.
+- [00:07:07,540 - 00:07:09,350] Anything you can detect is
+- [00:07:09,350 - 00:07:11,160] a window into phenomena that you,
+- [00:07:11,160 - 00:07:12,740] new phenomena.
+- [00:07:13,220 - 00:07:16,250] So gravitational wave detectors may
+- [00:07:16,250 - 00:07:19,280] be able to detect gravitational waves.
+- [00:07:19,340 - 00:07:20,880] From the collision of two black holes.
+- [00:07:21,100 - 00:07:21,320] There are,
+- [00:07:21,320 - 00:07:24,670] it is estimated that there are a few collisions every
+- [00:07:24,670 - 00:07:28,020] year of black holes that can be seen by gravitational radiation.
+- [00:07:28,580 - 00:07:30,160] So there's a lot of different areas.
+- [00:07:30,280 - 00:07:31,600] It's an extremely active area.
+- [00:07:34,739 - 00:07:36,920] The equations of general relativity,
+- [00:07:36,920 - 00:07:39,140] just the equations of general relativity,
+- [00:07:39,240 - 00:07:41,290] and the equations of black holes
+- [00:07:41,290 - 00:07:43,340] have been found to be useful,
+- [00:07:43,340 - 00:07:44,920] extremely useful,
+- [00:07:44,980 - 00:07:46,120] in condensed matter physics,
+- [00:07:46,120 - 00:07:47,720] in fluid dynamics.
+- [00:07:48,100 - 00:07:49,320] For having nothing to do with the black holes.
+- [00:07:49,320 - 00:07:50,560] Nothing to do with black holes and gravity.
+- [00:07:51,080 - 00:07:51,880] Same equations.
+- [00:07:53,420 - 00:07:58,690] And so there's a heavy amount of activity in the areas
+- [00:07:58,690 - 00:08:03,960] of applying the equations of general relativity to other areas of physics.
+- [00:08:04,320 - 00:08:05,200] It's probably,
+- [00:08:05,200 - 00:08:05,920] I would say,
+- [00:08:05,920 - 00:08:07,060] probably the most active.
+- [00:08:07,200 - 00:08:08,740] It went over the last,
+- [00:08:08,740 - 00:08:11,140] over my career in physics,
+- [00:08:11,140 - 00:08:13,660] from being a real backwater in physics.
+- [00:08:15,319 - 00:08:18,100] Nobody studied general relativity very much.
+- [00:08:20,080 - 00:08:21,460] 1960s when I was a student,
+- [00:08:21,460 - 00:08:24,580] except for the people who were really especially interested,
+- [00:08:24,900 - 00:08:28,920] and were focused on questions of general relativity,
+- [00:08:29,240 - 00:08:32,280] the bulk of theoretical physicists were not interested.
+- [00:08:33,080 - 00:08:36,000] Then it started to become interesting in astrophysics,
+- [00:08:36,240 - 00:08:39,100] and eventually it took over
+- [00:08:39,100 - 00:08:41,960] questions of fundamental theoretical physics.
+- [00:08:42,200 - 00:08:42,500] Why?
+- [00:08:42,919 - 00:08:45,800] Because of a clash of gravity in general relativity.
+- [00:08:46,700 - 00:08:47,340] Anyway,
+- [00:08:47,560 - 00:08:48,100] I don't know.
+- [00:08:49,440 - 00:08:50,860] For whatever reason,
+- [00:08:50,860 - 00:08:55,420] it is probably now more important in the day-to-day
+- [00:08:55,420 - 00:08:59,980] workings of theoretical physicists than almost any other subject.
+- [00:09:00,800 - 00:09:02,580] That and quantum field theory.
+- [00:09:03,980 - 00:09:05,800] And the connection between them.
+- [00:09:06,140 - 00:09:06,700] Okay.
+- [00:09:07,160 - 00:09:07,840] Let's,
+- [00:09:07,840 - 00:09:07,940] um,
+- [00:09:10,860 - 00:09:14,910] today will be the last day in
+- [00:09:14,910 - 00:09:18,960] which we'll be studying Riemannian geometry as such.
+- [00:09:18,960 - 00:09:19,300] Okay.
+- [00:09:19,300 - 00:09:21,740] Without really discussing gravity.
+- [00:09:22,100 - 00:09:23,080] Next time,
+- [00:09:23,080 - 00:09:25,640] we will really get into gravity.
+- [00:09:25,840 - 00:09:27,760] What does all of this have to do with gravity?
+- [00:09:28,500 - 00:09:29,760] I told you a little
+- [00:09:29,760 - 00:09:31,020] bit in the first lecture that,
+- [00:09:31,020 - 00:09:31,340] uh,
+- [00:09:31,340 - 00:09:31,840] that,
+- [00:09:31,840 - 00:09:32,280] uh,
+- [00:09:33,540 - 00:09:35,460] the problem of finding out
+- [00:09:35,460 - 00:09:37,380] if there's a real gravitational field,
+- [00:09:37,580 - 00:09:40,660] as opposed to just some funny coordinates
+- [00:09:40,660 - 00:09:43,740] in which you're expressing space and time,
+- [00:09:43,940 - 00:09:46,160] which leads to curved trajectories,
+- [00:09:46,160 - 00:09:47,760] but not really curved trajectories.
+- [00:09:49,300 - 00:09:50,900] The problem of finding out
+- [00:09:50,900 - 00:09:52,500] there really is a gravitational field,
+- [00:09:53,080 - 00:09:53,600] uh,
+- [00:09:54,160 - 00:09:55,940] is a problem which is mathematically,
+- [00:09:57,080 - 00:09:58,560] I would say very similar,
+- [00:09:58,560 - 00:09:59,620] but I think I would,
+- [00:09:59,620 - 00:09:59,780] uh,
+- [00:09:59,780 - 00:10:01,360] I think I would go further than that.
+- [00:10:01,440 - 00:10:04,390] I would say is identical to the problem
+- [00:10:04,390 - 00:10:07,340] of finding out if a certain metric geometry,
+- [00:10:07,520 - 00:10:09,780] geometry characterized by a metric tensor,
+- [00:10:10,040 - 00:10:11,800] is flat or not.
+- [00:10:12,960 - 00:10:14,840] A geometry which is flat,
+- [00:10:16,020 - 00:10:18,620] let's say a two-dimensional geometry to begin with,
+- [00:10:18,620 - 00:10:20,300] that means a surface of some sort.
+- [00:10:21,260 - 00:10:23,670] A flat geometry is one
+- [00:10:23,670 - 00:10:26,080] for which Euclid's postulates are correct.
+- [00:10:26,260 - 00:10:27,180] There are parallel lines,
+- [00:10:27,180 - 00:10:28,740] all the stuff you learned in,
+- [00:10:28,740 - 00:10:28,980] uh,
+- [00:10:28,980 - 00:10:29,880] Euclidean geometry
+- [00:10:31,699 - 00:10:32,840] is called flat.
+- [00:10:35,360 - 00:10:38,060] And it's characterized in terms of a metric tensor
+- [00:10:38,600 - 00:10:41,340] by the statement not that the
+- [00:10:41,340 - 00:10:44,080] metric has a very special simple form.
+- [00:10:44,700 - 00:10:46,320] That's not the right statement.
+- [00:10:46,500 - 00:10:48,600] The special form being the quantum vector.
+- [00:10:52,660 - 00:10:53,820] The quantum vector is the
+- [00:10:53,820 - 00:10:54,020] the
+- [00:10:54,020 - 00:10:54,540] the
+- [00:10:54,540 - 00:10:54,560] the
+- [00:10:54,560 - 00:10:54,580] the
+- [00:10:56,020 - 00:10:57,420] the've.
+- [00:11:00,040 - 00:11:00,460] All those things exactly,
+- [00:11:04,640 - 00:11:07,460] yeah they change
+- [00:11:07,460 - 00:11:07,920] outcome,3
+- [00:11:16,960 - 00:11:18,560] the question of
+- [00:11:18,560 - 00:11:20,280] finding the
+- [00:11:20,280 - 00:11:22,280] If that space is flat or not,
+- [00:11:22,280 - 00:11:24,460] it's a somewhat difficult problem.
+- [00:11:25,160 - 00:11:29,660] What you have to do is look at,
+- [00:11:29,660 - 00:11:33,980] here's the bad way to do the problem.
+- [00:11:34,280 - 00:11:37,450] The bad way to do the problem
+- [00:11:37,450 - 00:11:40,620] is to search through all possible coordinate systems,
+- [00:11:40,620 - 00:11:43,020] transform
+- [00:11:43,020 - 00:11:45,020] the metric from the given form,
+- [00:11:45,020 - 00:11:45,620] whatever,
+- [00:11:45,620 - 00:11:46,540] however it's given,
+- [00:11:46,540 - 00:11:47,660] the way it's presented
+- [00:11:47,660 - 00:11:48,140] to you,
+- [00:11:48,140 - 00:11:50,810] transform the metric to the new
+- [00:11:50,810 - 00:11:53,480] coordinate system that you have constructed,
+- [00:11:53,480 - 00:11:55,380] calculate
+- [00:11:55,380 - 00:11:56,280] the new metric,
+- [00:11:56,280 - 00:11:59,640] and ask whether it looks like a flat metric.
+- [00:12:00,220 - 00:12:01,540] Now of course,
+- [00:12:01,540 - 00:12:04,880] that will take an infinite amount of time,
+- [00:12:04,880 - 00:12:05,980] you'll never get there,
+- [00:12:05,980 - 00:12:06,960] so
+- [00:12:06,960 - 00:12:07,780] you need a better technique.
+- [00:12:08,980 - 00:12:11,480] And the better technique is
+- [00:12:11,480 - 00:12:13,980] to search for diagnostic quantities.
+- [00:12:15,020 - 00:12:16,180] Quantities which…
+- [00:12:16,880 - 00:12:19,040] …which are built out of the metric,
+- [00:12:19,040 - 00:12:21,660] the metric and its derivatives and so forth,
+- [00:12:21,660 - 00:12:22,500] things
+- [00:12:22,500 - 00:12:23,520] that you can calculate,
+- [00:12:23,520 - 00:12:24,600] which,
+- [00:12:24,600 - 00:12:28,940] if they are zero everywheres throughout the space,
+- [00:12:28,940 - 00:12:29,800] that
+- [00:12:29,800 - 00:12:30,880] says the space is flat.
+- [00:12:32,320 - 00:12:34,480] If they're non-zero anyplace,
+- [00:12:34,480 - 00:12:36,920] it says that the space is curved there.
+- [00:12:37,560 - 00:12:40,170] The diagnostic quantity that does
+- [00:12:40,170 - 00:12:42,780] that is called the curvature tensor.
+- [00:12:43,920 - 00:12:46,140] Today's goal is to get to the…
+- [00:12:46,180 - 00:12:50,480] …the curvature tensor of a Riemannian geometry.
+- [00:12:53,120 - 00:12:54,660] And it's a complicated goal,
+- [00:12:54,660 - 00:12:55,220] I warn you.
+- [00:12:55,860 - 00:12:58,560] You've got to pay attention or else you'll fall asleep.
+- [00:13:00,120 - 00:13:04,700] This is a very soporific subject.
+- [00:13:05,900 - 00:13:07,970] I'll try from time to time to tell
+- [00:13:07,970 - 00:13:10,040] a joke or whatever to keep you awake.
+- [00:13:11,120 - 00:13:12,300] But on the other hand,
+- [00:13:12,300 - 00:13:14,180] if you can follow it,
+- [00:13:14,180 - 00:13:14,880] you've learned a lot.
+- [00:13:14,880 - 00:13:16,440] And it is very interesting.
+- [00:13:16,640 - 00:13:18,120] I think you'll find it very interesting.
+- [00:13:18,220 - 00:13:20,020] I'll try not to make it too boring.
+- [00:13:20,880 - 00:13:21,360] Okay.
+- [00:13:27,800 - 00:13:30,920] I told my friend Barack Obama never to apologize,
+- [00:13:30,920 - 00:13:33,100] and here I am apologizing already for being
+- [00:13:33,100 - 00:13:33,440] boring.
+- [00:13:34,720 - 00:13:35,200] Okay.
+- [00:13:37,060 - 00:13:38,220] What do we start with?
+- [00:13:39,000 - 00:13:41,360] We start with a space.
+- [00:13:41,620 - 00:13:42,620] And a space means,
+- [00:13:42,620 - 00:13:43,540] first of all,
+- [00:13:43,540 - 00:13:44,860] a non-zero.
+- [00:13:44,880 - 00:13:45,640] Number of dimensions.
+- [00:13:46,600 - 00:13:48,620] The number of dimensions in
+- [00:13:48,620 - 00:13:50,640] Riemannian geometry can be anything.
+- [00:13:52,160 - 00:13:54,980] In principle you can even have a zero-dimensional space,
+- [00:13:54,980 - 00:13:56,320] but that's pretty damn boring.
+- [00:13:56,420 - 00:13:57,120] It's just a point.
+- [00:13:57,660 - 00:13:59,720] A one-dimensional space is either an
+- [00:13:59,720 - 00:14:01,780] infinite line or a closed curve.
+- [00:14:03,720 - 00:14:05,280] If it's a closed curve,
+- [00:14:05,280 - 00:14:06,980] what is it characterized by?
+- [00:14:07,060 - 00:14:08,980] It's characterized by only one thing.
+- [00:14:09,160 - 00:14:11,080] The total length of the curve.
+- [00:14:11,560 - 00:14:14,500] Every curve is equivalent to every other curve.
+- [00:14:14,500 - 00:14:14,600] But the total length is not equal
+- [00:14:14,600 - 00:14:14,700] to the total length of the curve.
+- [00:14:14,740 - 00:14:15,460] The total length is equal to
+- [00:14:15,460 - 00:14:16,180] the total length of the curve.
+- [00:14:16,280 - 00:14:19,440] So if you have a piece
+- [00:14:19,440 - 00:14:22,600] of rope that closes on itself,
+- [00:14:22,600 - 00:14:23,760] that has a certain length,
+- [00:14:23,760 - 00:14:24,220] and
+- [00:14:24,220 - 00:14:26,180] wiggle it in any kinds of ways,
+- [00:14:26,180 - 00:14:27,860] or curve it in any kind of way,
+- [00:14:27,860 - 00:14:32,020] it can always be mapped
+- [00:14:32,020 - 00:14:36,240] or put on top of another piece of rope
+- [00:14:36,240 - 00:14:40,460] of exactly the same length in a precise way without
+- [00:14:40,460 - 00:14:41,160] stretching it.
+- [00:14:41,340 - 00:14:41,920] The only thing that's really important is that
+- [00:14:41,920 - 00:14:42,500] you're not going to have to make a single
+- [00:14:42,500 - 00:14:42,740] one-dimensional space.
+- [00:14:42,740 - 00:14:43,800] All the other one-dimensional spaces
+- [00:14:43,800 - 00:14:44,860] are all equivalent to each other,
+- [00:14:44,860 - 00:14:45,440] not quite.
+- [00:14:45,940 - 00:14:48,000] They're characterized only by their length.
+- [00:14:48,060 - 00:14:50,100] They're either infinite or they have a length l,
+- [00:14:50,100 - 00:14:52,880] and every one of them have given length
+- [00:14:52,880 - 00:14:55,280] l as identical to every
+- [00:14:55,280 - 00:14:57,680] other one in its intrinsic properties.
+- [00:14:58,820 - 00:15:02,520] A bug walking along a little piece of
+- [00:15:02,520 - 00:15:06,220] rope cannot distinguish one geometry from the other
+- [00:15:06,220 - 00:15:06,660] geometry.
+- [00:15:06,820 - 00:15:08,590] All it can do is count the number of
+- [00:15:08,590 - 00:15:10,360] steps that it takes them to go around the rope.
+- [00:15:10,440 - 00:15:11,420] It leaves a marker someplace.
+- [00:15:11,900 - 00:15:12,720] It goes around.
+- [00:15:12,740 - 00:15:13,540] It goes around the rope until
+- [00:15:13,540 - 00:15:14,340] it comes back to the marker.
+- [00:15:14,460 - 00:15:15,300] It counts the number of steps,
+- [00:15:15,300 - 00:15:16,980] and that's the only thing about that space.
+- [00:15:17,720 - 00:15:22,000] Two-dimensional spaces begin to become more complicated.
+- [00:15:23,820 - 00:15:24,880] There are flat ones.
+- [00:15:25,120 - 00:15:26,140] There are curved ones.
+- [00:15:26,320 - 00:15:27,240] A flat one is a plane.
+- [00:15:27,640 - 00:15:29,380] A curved one could be a sphere.
+- [00:15:29,600 - 00:15:31,980] It could be just a space with lumps,
+- [00:15:31,980 - 00:15:33,180] the surface of the earth,
+- [00:15:33,180 - 00:15:35,020] including the mountains and
+- [00:15:35,020 - 00:15:36,060] the valleys and so forth.
+- [00:15:36,760 - 00:15:39,260] It can even have weird topology,
+- [00:15:39,260 - 00:15:41,280] the surface of a doughnut,
+- [00:15:41,280 - 00:15:42,480] a torus.
+- [00:15:42,740 - 00:15:45,580] Or you can poke another hole in the torus
+- [00:15:45,580 - 00:15:48,420] and make a torus with two holes and so forth.
+- [00:15:48,920 - 00:15:51,100] So by the time you get to two-dimensional spaces,
+- [00:15:51,100 - 00:15:52,520] they're pretty complicated.
+- [00:15:56,900 - 00:15:57,440] Nevertheless,
+- [00:15:57,440 - 00:16:01,120] they are characterized by the metric tensor.
+- [00:16:02,160 - 00:16:05,680] And the question of whether they're flat is a computation,
+- [00:16:05,680 - 00:16:07,180] or as a first question,
+- [00:16:07,180 - 00:16:07,560] find
+- [00:16:07,560 - 00:16:10,120] something which distinguishes whether they're flat.
+- [00:16:10,260 - 00:16:11,300] Find a quantity.
+- [00:16:11,960 - 00:16:12,720] G-minus.
+- [00:16:12,740 - 00:16:12,900] If g-minu,
+- [00:16:12,900 - 00:16:16,300] g-m-n,
+- [00:16:16,300 - 00:16:17,480] the metric tensor,
+- [00:16:17,480 - 00:16:25,240] if it is not equal to zero,
+- [00:16:25,240 - 00:16:26,940] that does not mean the
+- [00:16:26,940 - 00:16:27,780] space is not flat.
+- [00:16:27,960 - 00:16:29,980] It just means you may be in the wrong coordinates.
+- [00:16:30,540 - 00:16:33,320] So you can't diagnose the space by
+- [00:16:33,320 - 00:16:36,100] asking whether g-m-n is zero or not.
+- [00:16:36,480 - 00:16:38,240] You want to find a quantity.
+- [00:16:38,940 - 00:16:40,520] Let us call it r.
+- [00:16:41,600 - 00:16:42,600] At the moment,
+- [00:16:42,600 - 00:16:43,780] I'm not going to tell
+- [00:16:43,780 - 00:16:44,960] you how many indices it has.
+- [00:16:45,980 - 00:16:47,020] Some quantity.
+- [00:16:47,780 - 00:16:49,500] Best it should be a tensor.
+- [00:16:50,020 - 00:16:53,260] Because if it's a tensor and it's non-zero,
+- [00:16:53,260 - 00:16:55,880] it's non-zero in every frame of reference.
+- [00:16:56,760 - 00:16:59,080] We'd like to find some quantity called r.
+- [00:16:59,200 - 00:17:00,300] R stands for Riemann,
+- [00:17:00,300 - 00:17:01,000] incidentally.
+- [00:17:01,000 - 00:17:02,610] Riemann was the first person who
+- [00:17:02,610 - 00:17:04,220] asked this question and answered it.
+- [00:17:05,119 - 00:17:05,640] Uh...
+- [00:17:07,339 - 00:17:10,420] We want to find a thing called Riemann.
+- [00:17:10,440 - 00:17:10,500] Riemann.
+- [00:17:10,520 - 00:17:10,540] Riemann.
+- [00:17:11,000 - 00:17:11,960] Such that,
+- [00:17:11,960 - 00:17:14,599] if Riemann is equal to zero,
+- [00:17:14,599 - 00:17:26,060] that implies that the space is flat and that there
+- [00:17:26,060 - 00:17:30,440] exist coordinates such that...
+- [00:17:31,000 - 00:17:31,380] Sorry,
+- [00:17:31,380 - 00:17:33,120] did I say g-m-n not equal to zero?
+- [00:17:33,700 - 00:17:37,360] I mean not equal to delta m-n.
+- [00:17:39,520 - 00:17:40,500] g-m-n is equal to zero.
+- [00:17:40,500 - 00:17:42,260] is an interesting space.
+- [00:17:42,260 - 00:17:45,120] It's not very big.
+- [00:17:45,120 - 00:17:47,300] Yeah,
+- [00:17:47,300 - 00:17:49,400] GMN equals delta MN is what I meant.
+- [00:17:53,140 - 00:17:54,580] And that's what we're going to search for.
+- [00:17:54,580 - 00:17:56,780] The curvature tensor.
+- [00:17:56,780 - 00:17:58,240] It is a tensor.
+- [00:17:59,840 - 00:18:02,250] Let me just remind you about a few properties
+- [00:18:02,250 - 00:18:04,660] of the metric tensor and what you do with it.
+- [00:18:05,699 - 00:18:06,880] First of all,
+- [00:18:06,880 - 00:18:09,350] GMN is by definition the thing
+- [00:18:09,350 - 00:18:11,820] that's a function of position in general.
+- [00:18:12,140 - 00:18:14,100] If it were not a function of position,
+- [00:18:14,100 - 00:18:14,980] incidentally,
+- [00:18:14,980 - 00:18:17,260] if it was a constant matrix,
+- [00:18:17,260 - 00:18:19,640] a constant set of coefficients,
+- [00:18:20,100 - 00:18:23,400] then it's very easy to find
+- [00:18:23,400 - 00:18:26,700] coordinates in which GMN is delta MN.
+- [00:18:26,780 - 00:18:28,580] You simply have to straighten out the angles.
+- [00:18:28,580 - 00:18:33,260] So if GMN is not dependent on position,
+- [00:18:33,440 - 00:18:34,040] then it's very easy to find
+- [00:18:34,040 - 00:18:34,640] coordinates in which GMN is delta MN.
+- [00:18:34,660 - 00:18:36,280] If it's just a set of coefficients,
+- [00:18:36,280 - 00:18:37,660] a set of numerical coefficients,
+- [00:18:37,660 - 00:18:39,160] then the space is definitely flat.
+- [00:18:40,400 - 00:18:40,880] Alright,
+- [00:18:40,880 - 00:18:42,870] so GMN is the metric tensor
+- [00:18:42,870 - 00:18:44,860] and what do you do with it?
+- [00:18:45,060 - 00:18:47,100] You take a little differential distance,
+- [00:18:47,100 - 00:18:48,240] dxM,
+- [00:18:48,240 - 00:18:50,080] multiply it by dxN.
+- [00:18:50,280 - 00:18:51,720] Here's your little differential displacement.
+- [00:18:52,740 - 00:18:55,250] It's characterized by a
+- [00:18:55,250 - 00:18:57,760] set of differential coordinate shifts,
+- [00:18:57,760 - 00:18:58,820] dxM,
+- [00:18:58,820 - 00:18:59,760] dxN.
+- [00:19:00,000 - 00:19:01,650] You multiply them together and that
+- [00:19:01,650 - 00:19:03,300] gives you the square of the length
+- [00:19:03,300 - 00:19:06,470] between the tail and the arrow
+- [00:19:06,470 - 00:19:09,640] and the head of the vector.
+- [00:19:09,980 - 00:19:12,520] That's equal to ds squared.
+- [00:19:13,100 - 00:19:15,260] S standing for spatial distance,
+- [00:19:15,260 - 00:19:15,820] I suppose.
+- [00:19:18,050 - 00:19:18,380] Alright,
+- [00:19:18,380 - 00:19:18,660] now,
+- [00:19:18,660 - 00:19:20,840] the metric tensor is a tensor.
+- [00:19:21,140 - 00:19:23,040] I think we proved that last time.
+- [00:19:23,320 - 00:19:25,380] And the way you see that
+- [00:19:25,380 - 00:19:27,440] is just by saying ds squared,
+- [00:19:27,440 - 00:19:30,560] that's an invariant quantity.
+- [00:19:30,740 - 00:19:33,280] All coordinates are invariant.
+- [00:19:33,280 - 00:19:35,580] Let's call them coordinate systems.
+- [00:19:36,160 - 00:19:38,470] All coordinate systems should agree about
+- [00:19:38,470 - 00:19:40,780] the length of a given little vector.
+- [00:19:41,660 - 00:19:44,810] And if we take that same ds squared and
+- [00:19:44,810 - 00:19:47,960] write it in y coordinates instead of x coordinates,
+- [00:19:48,680 - 00:19:50,520] the length has to be the same.
+- [00:19:50,740 - 00:19:53,610] And that's sufficient to prove that GMN really is
+- [00:19:53,610 - 00:19:56,480] a tensor and that it transforms like a tensor.
+- [00:19:58,560 - 00:19:59,160] Okay,
+- [00:19:59,160 - 00:20:01,360] next property of GMN is it has an inverse.
+- [00:20:03,080 - 00:20:04,340] GMN is a matrix.
+- [00:20:04,720 - 00:20:07,520] It's a matrix and it has an inverse.
+- [00:20:08,900 - 00:20:12,140] The inverse satisfies the following equation.
+- [00:20:13,959 - 00:20:14,639] G,
+- [00:20:14,639 - 00:20:17,160] it's written again as a matrix.
+- [00:20:17,280 - 00:20:18,460] When I say it has an inverse,
+- [00:20:18,460 - 00:20:21,440] I mean it has an inverse as a matrix.
+- [00:20:23,959 - 00:20:27,060] GMN is a matrix with entries.
+- [00:20:30,080 - 00:20:30,760] And...
+- [00:20:31,360 - 00:20:32,940] It has an inverse.
+- [00:20:34,220 - 00:20:34,740] GMN,
+- [00:20:34,740 - 00:20:37,760] which is written with upper indices.
+- [00:20:38,020 - 00:20:38,320] They are,
+- [00:20:38,320 - 00:20:38,900] in fact,
+- [00:20:38,900 - 00:20:40,000] contravariant indices.
+- [00:20:40,700 - 00:20:43,740] And the properties of GMN with upper indices
+- [00:20:43,740 - 00:20:46,780] are such that if you multiply it by G,
+- [00:20:46,780 - 00:20:48,340] let's call it nr,
+- [00:20:50,120 - 00:20:51,420] and sum over n,
+- [00:20:51,420 - 00:20:54,820] but I don't have to sum over n because Einstein tells me that
+- [00:20:54,820 - 00:20:58,220] an upper and a lower index like this are automatically to be summed over.
+- [00:20:59,160 - 00:21:00,100] This is the sum.
+- [00:21:00,100 - 00:21:05,340] This actually corresponds to taking the matrix
+- [00:21:05,340 - 00:21:10,580] GMN and multiplying it by the matrix Gnr.
+- [00:21:11,280 - 00:21:14,360] And the resulting matrix is the unit matrix.
+- [00:21:14,740 - 00:21:15,020] Why?
+- [00:21:15,200 - 00:21:17,500] Because I told you that GMN is
+- [00:21:17,500 - 00:21:19,800] the inverse matrix to this one here.
+- [00:21:20,180 - 00:21:23,540] And the product then is the identity matrix.
+- [00:21:23,820 - 00:21:26,740] And the identity matrix is the Kronecker delta.
+- [00:21:27,060 - 00:21:29,720] And the Kronecker delta in general relativity,
+- [00:21:29,720 - 00:21:31,060] or in Riemannian geometry,
+- [00:21:31,720 - 00:21:34,070] is always written as a thing with
+- [00:21:34,070 - 00:21:36,420] one upper index and one lower index.
+- [00:21:39,540 - 00:21:41,960] At least if it's being treated as a tensor.
+- [00:21:42,480 - 00:21:43,660] The Kronecker delta,
+- [00:21:43,660 - 00:21:44,840] this is a thing to prove.
+- [00:21:45,520 - 00:21:47,840] Prove that if you take the Kronecker delta,
+- [00:21:48,560 - 00:21:50,920] and you transform it pretending it's a tensor,
+- [00:21:51,160 - 00:21:53,360] you just get back the Kronecker delta again.
+- [00:21:53,620 - 00:21:54,880] That's a thing that you can prove.
+- [00:21:56,620 - 00:21:57,180] So,
+- [00:21:57,180 - 00:21:58,360] these are tensor equations.
+- [00:21:59,720 - 00:22:02,430] This is the meaning of saying the
+- [00:22:02,430 - 00:22:05,140] GMN is the inverse matrix of Gnr.
+- [00:22:06,880 - 00:22:09,700] And once you have that...
+- [00:22:09,700 - 00:22:10,700] Oh,
+- [00:22:10,700 - 00:22:12,160] there's another thing that is important.
+- [00:22:12,700 - 00:22:14,300] In Riemannian geometry,
+- [00:22:14,300 - 00:22:16,940] as opposed to Einsteinian geometry,
+- [00:22:17,460 - 00:22:18,980] in Riemannian geometry,
+- [00:22:18,980 - 00:22:21,500] all lengths are positive.
+- [00:22:22,720 - 00:22:24,640] All lengths are positive.
+- [00:22:25,400 - 00:22:27,540] Or the squares of all lengths.
+- [00:22:27,600 - 00:22:28,100] More importantly,
+- [00:22:28,100 - 00:22:29,700] the squares of all lengths are positive.
+- [00:22:30,440 - 00:22:32,620] And all lengths are also positive.
+- [00:22:32,900 - 00:22:34,900] But the squares of all lengths are positive.
+- [00:22:35,240 - 00:22:37,020] And that says something about
+- [00:22:37,020 - 00:22:38,800] the properties of the metric tensor.
+- [00:22:39,620 - 00:22:42,570] What it says is that
+- [00:22:42,570 - 00:22:45,520] there are no directions along which,
+- [00:22:45,620 - 00:22:46,740] if you evaluate this,
+- [00:22:46,740 - 00:22:48,360] you get anything which is not positive.
+- [00:22:48,660 - 00:22:51,070] That's equivalent to a statement
+- [00:22:51,070 - 00:22:53,480] about the eigenvalues of GMN.
+- [00:22:53,920 - 00:22:56,920] It says all of the eigenvalues of it are positive.
+- [00:22:58,720 - 00:22:59,460] All right?
+- [00:22:59,720 - 00:23:00,700] But for our purposes now,
+- [00:23:00,700 - 00:23:02,240] all lengths are positive.
+- [00:23:02,460 - 00:23:03,180] It's the same thing.
+- [00:23:04,540 - 00:23:06,840] And it does say something about the metric tensor.
+- [00:23:08,940 - 00:23:11,120] It says it's positive definite.
+- [00:23:11,780 - 00:23:13,350] That's the same thing as saying
+- [00:23:13,350 - 00:23:14,920] all of its eigenvalues are positive.
+- [00:23:16,560 - 00:23:18,210] That will change when we go
+- [00:23:18,210 - 00:23:19,860] to the theory of real gravity.
+- [00:23:19,980 - 00:23:22,300] That will go when we go to Einsteinian geometry.
+- [00:23:23,060 - 00:23:23,760] All right,
+- [00:23:23,760 - 00:23:25,220] the metric allows you to do something.
+- [00:23:25,360 - 00:23:27,820] It allows you to raise and lower indices.
+- [00:23:29,720 - 00:23:34,980] If you have a contravariant vector,
+- [00:23:34,980 - 00:23:36,060] or better yet,
+- [00:23:36,240 - 00:23:40,400] you have a vector which has contravariant components,
+- [00:23:40,400 - 00:23:41,500] Vm,
+- [00:23:43,120 - 00:23:44,300] contravariant means upstairs,
+- [00:23:44,980 - 00:23:48,060] you can put it into correspondence
+- [00:23:48,060 - 00:23:51,140] with another vector with covariant indices.
+- [00:23:51,400 - 00:23:52,940] And it's really the same vector.
+- [00:23:53,440 - 00:23:55,560] We talked about this a little last time.
+- [00:23:55,660 - 00:23:57,330] I told you the difference
+- [00:23:57,330 - 00:23:59,000] between contravariant and covariant indices.
+- [00:23:59,740 - 00:24:05,460] And the way you construct the covariant components,
+- [00:24:05,860 - 00:24:07,300] components are the words I'm looking for,
+- [00:24:07,380 - 00:24:09,740] the covariant components of a
+- [00:24:09,740 - 00:24:12,100] vector given its contravariant components
+- [00:24:12,720 - 00:24:16,740] is just to multiply it by the metric tensor,
+- [00:24:16,740 - 00:24:17,960] GmR,
+- [00:24:20,720 - 00:24:21,280] and,
+- [00:24:21,280 - 00:24:21,840] whoops,
+- [00:24:21,840 - 00:24:22,380] well,
+- [00:24:22,380 - 00:24:24,160] let's call it Gmn,
+- [00:24:25,120 - 00:24:26,540] and sum over m.
+- [00:24:27,480 - 00:24:29,660] This is now G sub n,
+- [00:24:29,660 - 00:24:30,860] or V sub n.
+- [00:24:34,679 - 00:24:35,139] Likewise,
+- [00:24:35,139 - 00:24:36,780] this is something that you need to prove,
+- [00:24:37,820 - 00:24:40,040] given a Vm with upper indices,
+- [00:24:40,700 - 00:24:41,160] this,
+- [00:24:41,160 - 00:24:41,640] if you like,
+- [00:24:41,640 - 00:24:43,220] can be thought of as the definition
+- [00:24:43,980 - 00:24:44,960] of the lower,
+- [00:24:44,960 - 00:24:50,020] of the covariant component of a vector.
+- [00:24:50,680 - 00:24:51,780] How do you go back?
+- [00:24:52,540 - 00:24:53,000] Well,
+- [00:24:53,000 - 00:24:54,640] you have to solve this equation,
+- [00:24:55,220 - 00:24:57,040] but it's very easy to solve,
+- [00:24:57,160 - 00:24:58,420] and I'll tell you what the solution is,
+- [00:24:58,540 - 00:25:02,020] if you know the inverse matrix with upper indices.
+- [00:25:04,980 - 00:25:05,460] Namely,
+- [00:25:05,460 - 00:25:11,920] Vm is equal to Gmn Vn.
+- [00:25:12,640 - 00:25:14,300] So if you know the upper indices,
+- [00:25:14,520 - 00:25:15,620] if you know the covariant,
+- [00:25:15,620 - 00:25:18,300] the contravariant components of a vector,
+- [00:25:18,440 - 00:25:20,960] this is the way you build its covariant components,
+- [00:25:21,320 - 00:25:23,220] and if you know the covariant components,
+- [00:25:23,220 - 00:25:25,540] this is the way you build the contravariant components.
+- [00:25:26,780 - 00:25:28,200] There's a little bit of a
+- [00:25:28,200 - 00:25:29,620] proof here that you have to do,
+- [00:25:32,620 - 00:25:32,980] namely,
+- [00:25:32,980 - 00:25:33,660] there are,
+- [00:25:33,660 - 00:25:34,960] you can see what we have to do,
+- [00:25:36,920 - 00:25:38,210] you'll have to check that these
+- [00:25:38,210 - 00:25:39,500] two are compatible with each other,
+- [00:25:39,580 - 00:25:39,900] but they are.
+- [00:25:41,280 - 00:25:41,640] Okay.
+- [00:25:46,100 - 00:25:52,040] To what extent can you force the metric
+- [00:25:52,040 - 00:25:54,640] to look like a flat metric?
+- [00:25:55,020 - 00:25:56,020] To what extent,
+- [00:25:56,020 - 00:25:58,820] assume the metric is not necessarily a flat metric,
+- [00:25:58,980 - 00:26:00,120] that when I say flat metric,
+- [00:26:00,120 - 00:26:00,940] I will mean,
+- [00:26:01,520 - 00:26:03,140] not only is the space flat,
+- [00:26:03,920 - 00:26:06,260] but that the coordinates are such
+- [00:26:06,260 - 00:26:08,600] that Gmn is equal to delta Mn.
+- [00:26:08,820 - 00:26:10,260] If that's the case,
+- [00:26:10,920 - 00:26:11,880] if that's the case,
+- [00:26:11,880 - 00:26:13,400] the space is definitely flat.
+- [00:26:13,680 - 00:26:14,980] But to what extent,
+- [00:26:14,980 - 00:26:16,140] given any space,
+- [00:26:16,820 - 00:26:19,420] can you find coordinates such that
+- [00:26:19,420 - 00:26:22,020] Gmn is equal to delta Mn?
+- [00:26:22,020 - 00:26:22,760] Gmn might be,
+- [00:26:22,760 - 00:26:23,360] for example,
+- [00:26:23,870 - 00:26:26,520] the Kronecker delta over some limited region,
+- [00:26:26,760 - 00:26:30,600] or approximately over some limited region,
+- [00:26:30,780 - 00:26:32,180] equal to delta Mn.
+- [00:26:32,850 - 00:26:33,200] Alright,
+- [00:26:33,200 - 00:26:33,980] so here's a theorem.
+- [00:26:35,850 - 00:26:37,800] There are coordinates at every point.
+- [00:26:38,160 - 00:26:40,140] These coordinates are
+- [00:26:41,659 - 00:26:43,640] coordinates which are good
+- [00:26:43,640 - 00:26:46,840] in the immediate vicinity of a point.
+- [00:26:48,800 - 00:26:50,640] They're not global coordinates,
+- [00:26:50,640 - 00:26:52,020] they don't cover the whole space.
+- [00:26:53,360 - 00:26:56,760] They're just good within the immediate vicinity of a point,
+- [00:26:56,880 - 00:27:00,360] which means they're good up to some order
+- [00:27:00,360 - 00:27:02,940] in little displacements away from this point,
+- [00:27:03,160 - 00:27:04,620] namely second order.
+- [00:27:05,320 - 00:27:05,660] Alright.
+- [00:27:07,880 - 00:27:10,620] Coordinates called Gaussian normal coordinates.
+- [00:27:17,880 - 00:27:18,920] Here's what you do.
+- [00:27:18,920 - 00:27:21,280] Just first think of,
+- [00:27:21,300 - 00:27:22,480] let's just think of it intuitively.
+- [00:27:22,760 - 00:27:24,100] We have some curved surface.
+- [00:27:24,380 - 00:27:26,360] We go to some specific point,
+- [00:27:26,440 - 00:27:28,960] and we draw coordinate axes.
+- [00:27:29,560 - 00:27:31,120] We draw coordinate axes,
+- [00:27:31,220 - 00:27:32,740] and we keep those coordinate axes
+- [00:27:32,740 - 00:27:34,420] as straight as we possibly can.
+- [00:27:34,660 - 00:27:36,200] Later we'll learn that the term for
+- [00:27:36,200 - 00:27:39,880] straight as possibly can curve is a geodesic.
+- [00:27:40,240 - 00:27:43,160] But you make a straight curve as you can.
+- [00:27:44,000 - 00:27:45,200] You have a little bug.
+- [00:27:45,380 - 00:27:46,940] The little bug moves on this surface,
+- [00:27:47,160 - 00:27:48,020] and
+- [00:27:48,020 - 00:27:50,500] he moves following his nose,
+- [00:27:50,640 - 00:27:52,420] going as straight ahead as he possibly can.
+- [00:27:52,800 - 00:27:54,840] And that defines one coordinate axis,
+- [00:27:55,020 - 00:27:56,360] then he comes back to a point,
+- [00:27:56,500 - 00:27:58,420] and goes off in right angles,
+- [00:27:58,660 - 00:28:00,700] does some surveying to figure out
+- [00:28:00,700 - 00:28:02,520] where right angles to his little line are,
+- [00:28:02,660 - 00:28:04,420] and goes off in another direction,
+- [00:28:04,600 - 00:28:06,260] as straight as he can,
+- [00:28:06,879 - 00:28:09,480] and then builds coordinates based on those.
+- [00:28:12,399 - 00:28:13,720] The theorem says
+- [00:28:15,020 - 00:28:16,420] that first of all,
+- [00:28:16,500 - 00:28:17,420] at every point,
+- [00:28:18,420 - 00:28:21,000] at every point you can choose coordinates,
+- [00:28:21,080 - 00:28:22,300] as I said,
+- [00:28:22,300 - 00:28:23,680] Gaussian normal coordinates,
+- [00:28:23,800 - 00:28:24,420] such that,
+- [00:28:24,580 - 00:28:25,960] first of all,
+- [00:28:25,960 - 00:28:27,040] at that point,
+- [00:28:27,740 - 00:28:31,980] g m n is equal to delta m n.
+- [00:28:32,520 - 00:28:36,360] At x equals x zero.
+- [00:28:38,000 - 00:28:39,380] This point is x zero.
+- [00:28:44,000 - 00:28:45,960] You can do that in more than one way.
+- [00:28:47,500 - 00:28:49,840] If you find coordinates in which it's true,
+- [00:28:50,060 - 00:28:52,020] you can rotate the coordinates.
+- [00:28:52,820 - 00:28:54,520] You can rotate the coordinates,
+- [00:28:54,780 - 00:28:56,700] and if you rotate them,
+- [00:28:56,780 - 00:28:59,000] that just corresponds to rotating the coordinates
+- [00:28:59,000 - 00:29:01,500] in different axes and so forth.
+- [00:29:01,860 - 00:29:03,800] So there's more than one way you can do it.
+- [00:29:04,940 - 00:29:05,480] Next,
+- [00:29:06,700 - 00:29:08,500] you can choose your coordinates,
+- [00:29:08,580 - 00:29:10,340] you can straighten out these lines
+- [00:29:10,890 - 00:29:11,640] to a degree
+- [00:29:12,600 - 00:29:14,820] where the derivative of the metric,
+- [00:29:19,680 - 00:29:21,960] with respect to any direction,
+- [00:29:22,180 - 00:29:22,540] well,
+- [00:29:22,540 - 00:29:24,060] let's put an x r here,
+- [00:29:24,600 - 00:29:25,560] any direction,
+- [00:29:25,640 - 00:29:28,260] the derivative of any component of the metric,
+- [00:29:28,740 - 00:29:31,300] with respect to any direction in space,
+- [00:29:31,820 - 00:29:33,260] can be set equal to zero.
+- [00:29:36,160 - 00:29:38,420] That you do by choosing these curves
+- [00:29:38,420 - 00:29:39,900] to be as straight as possible.
+- [00:29:40,100 - 00:29:41,680] I'll tell you how you prove it in a minute.
+- [00:29:41,780 - 00:29:43,180] It's actually very easy to prove.
+- [00:29:44,080 - 00:29:45,660] It's just a counting problem
+- [00:29:45,660 - 00:29:47,740] of counting how many variables there are
+- [00:29:47,740 - 00:29:49,340] and how many equations there are,
+- [00:29:49,360 - 00:29:50,300] but I'll show you in a minute.
+- [00:29:51,740 - 00:29:52,220] Okay,
+- [00:29:52,220 - 00:29:52,740] finally,
+- [00:29:53,340 - 00:29:53,820] Yeah?
+- [00:29:53,980 - 00:29:56,100] Is that just at x zero or throughout?
+- [00:29:56,500 - 00:29:57,120] Say it again?
+- [00:29:57,340 - 00:29:57,840] Is that...
+- [00:29:57,840 - 00:29:58,580] No,
+- [00:29:58,580 - 00:30:00,520] only at x equals zero.
+- [00:30:01,200 - 00:30:01,680] At...
+- [00:30:01,680 - 00:30:02,120] Sorry,
+- [00:30:02,120 - 00:30:02,980] not at x equals zero.
+- [00:30:03,060 - 00:30:03,980] It could be x equals zero.
+- [00:30:04,220 - 00:30:06,160] At x equals x zero.
+- [00:30:07,880 - 00:30:09,560] If you try to extend
+- [00:30:09,560 - 00:30:11,220] that same coordinates
+- [00:30:11,220 - 00:30:13,160] away from that point,
+- [00:30:13,980 - 00:30:17,240] no matter how you try to extend them,
+- [00:30:17,400 - 00:30:18,300] then in general,
+- [00:30:18,420 - 00:30:19,860] unless the space is flat,
+- [00:30:20,940 - 00:30:23,080] if you try to extend the coordinates
+- [00:30:23,080 - 00:30:24,200] away from that point,
+- [00:30:24,440 - 00:30:26,540] you'll find out that the derivatives,
+- [00:30:26,760 - 00:30:28,500] the higher derivatives of g m n
+- [00:30:28,500 - 00:30:29,440] are not equal to zero,
+- [00:30:29,580 - 00:30:30,260] and in general,
+- [00:30:30,320 - 00:30:32,220] for the general generic situation,
+- [00:30:33,120 - 00:30:34,290] the second derivatives,
+- [00:30:37,060 - 00:30:39,060] let's say with respect to some x r
+- [00:30:39,060 - 00:30:40,460] and some other x s,
+- [00:30:41,040 - 00:30:43,160] those in general cannot be equal to zero.
+- [00:30:43,160 - 00:30:44,500] They cannot all be chosen equal to zero.
+- [00:30:47,180 - 00:30:47,660] Except,
+- [00:30:47,660 - 00:30:48,240] of course,
+- [00:30:48,240 - 00:30:49,100] if the space is flat.
+- [00:30:51,060 - 00:30:51,540] Okay?
+- [00:30:51,780 - 00:30:52,260] So,
+- [00:30:54,660 - 00:30:55,820] at a point,
+- [00:30:56,740 - 00:30:57,740] at a point,
+- [00:30:57,900 - 00:31:00,020] there is no content really
+- [00:31:00,020 - 00:31:02,600] in saying that the metric can be chosen to be
+- [00:31:03,460 - 00:31:04,340] flat-like,
+- [00:31:04,480 - 00:31:05,680] let's call this flat-like,
+- [00:31:05,920 - 00:31:08,560] even up to first derivatives.
+- [00:31:08,760 - 00:31:10,020] That can always be done.
+- [00:31:10,280 - 00:31:11,960] It's in these second derivatives
+- [00:31:11,960 - 00:31:15,380] that somehow the fact that the space is either flat
+- [00:31:15,380 - 00:31:17,100] or not flat starts to show up.
+- [00:31:18,260 - 00:31:18,960] First of all,
+- [00:31:18,960 - 00:31:19,640] how do you prove this?
+- [00:31:19,700 - 00:31:19,820] Well,
+- [00:31:19,820 - 00:31:20,840] this is actually not hard.
+- [00:31:21,220 - 00:31:24,260] Let's take our point of interest to be the origin.
+- [00:31:24,540 - 00:31:25,860] Let's just take it to be the origin.
+- [00:31:26,220 - 00:31:27,380] Let's set it equal to zero.
+- [00:31:30,939 - 00:31:31,379] Now,
+- [00:31:31,379 - 00:31:34,020] supposing we have some general metric
+- [00:31:36,919 - 00:31:39,200] and some coordinates y
+- [00:31:39,800 - 00:31:41,800] in which the metric has some,
+- [00:31:42,379 - 00:31:43,260] some form,
+- [00:31:43,800 - 00:31:45,220] not of this form here.
+- [00:31:46,220 - 00:31:47,660] Let's look for some x's
+- [00:31:49,899 - 00:31:51,080] which we're going to build,
+- [00:31:51,160 - 00:31:52,480] which are going to be functions of the y.
+- [00:31:53,720 - 00:31:55,440] Let's choose it in the following way.
+- [00:31:55,760 - 00:31:57,840] At the place where x is equal to zero,
+- [00:31:57,960 - 00:31:58,560] in other words,
+- [00:31:58,560 - 00:31:59,740] at our origin over here,
+- [00:31:59,800 - 00:32:01,820] let's also assume that y is equal to zero.
+- [00:32:02,220 - 00:32:04,880] So the two sets of coordinates have the same origin.
+- [00:32:05,780 - 00:32:08,000] That means that x will start out,
+- [00:32:08,000 - 00:32:08,700] uh,
+- [00:32:10,700 - 00:32:11,140] uh,
+- [00:32:11,960 - 00:32:12,940] with just equal to y.
+- [00:32:15,520 - 00:32:17,200] xm equal to ym.
+- [00:32:18,820 - 00:32:19,700] And then,
+- [00:32:19,840 - 00:32:21,740] in the next order,
+- [00:32:22,480 - 00:32:24,220] we'll have some set of coefficients.
+- [00:32:24,520 - 00:32:24,980] I'm simply,
+- [00:32:25,040 - 00:32:27,040] I'm simply expanding x
+- [00:32:27,040 - 00:32:29,040] in powers of y.
+- [00:32:29,520 - 00:32:32,740] The next order will be something quadratic in y.
+- [00:32:33,100 - 00:32:35,480] So let's put something quadratic in y here.
+- [00:32:35,580 - 00:32:36,780] We'll call that cm.
+- [00:32:38,600 - 00:32:41,740] And let's put here n and r.
+- [00:32:41,960 - 00:32:43,060] And put xn,
+- [00:32:43,060 - 00:32:43,920] xr.
+- [00:32:44,840 - 00:32:47,820] That's the most general quadratic thing that I can write.
+- [00:32:47,940 - 00:32:48,220] Oops.
+- [00:32:48,720 - 00:32:49,240] Sorry,
+- [00:32:49,240 - 00:32:49,820] y's.
+- [00:32:50,160 - 00:32:50,680] Y's.
+- [00:32:52,300 - 00:32:52,820] yn,
+- [00:32:52,820 - 00:32:53,620] yr.
+- [00:32:56,240 - 00:32:57,080] And then,
+- [00:32:58,020 - 00:33:00,040] things may get more complicated later.
+- [00:33:01,140 - 00:33:01,660] Okay.
+- [00:33:02,260 - 00:33:03,320] How many such,
+- [00:33:03,460 - 00:33:03,740] let's,
+- [00:33:03,740 - 00:33:05,740] let's pick a number of dimensions of space.
+- [00:33:05,940 - 00:33:07,520] Let's pick a number of dimensions of space.
+- [00:33:07,660 - 00:33:09,060] Let's pick four dimensions of space.
+- [00:33:09,740 - 00:33:11,940] How many such coefficients are there?
+- [00:33:13,139 - 00:33:14,020] Well,
+- [00:33:15,659 - 00:33:18,380] how many combinations yn,
+- [00:33:18,380 - 00:33:20,960] yr are there?
+- [00:33:21,740 - 00:33:22,860] The answer is ten.
+- [00:33:23,220 - 00:33:24,620] Try counting them.
+- [00:33:24,880 - 00:33:25,700] There's
+- [00:33:26,860 - 00:33:28,220] y1 squared,
+- [00:33:28,220 - 00:33:29,420] y2 squared,
+- [00:33:29,420 - 00:33:30,740] y3 squared,
+- [00:33:31,000 - 00:33:32,620] y4 squared.
+- [00:33:33,040 - 00:33:33,920] y1,
+- [00:33:33,920 - 00:33:34,560] y2,
+- [00:33:34,560 - 00:33:35,540] y1,
+- [00:33:35,540 - 00:33:36,180] y3,
+- [00:33:36,940 - 00:33:37,620] y1,
+- [00:33:37,620 - 00:33:38,400] y4,
+- [00:33:42,000 - 00:33:42,320] y2,
+- [00:33:42,320 - 00:33:42,640] y3,
+- [00:33:42,640 - 00:33:44,640] y2,
+- [00:33:44,640 - 00:33:45,620] y4,
+- [00:33:45,620 - 00:33:46,820] and y3,
+- [00:33:46,820 - 00:33:47,600] y4.
+- [00:33:48,660 - 00:33:49,680] Did I miss any?
+- [00:33:50,800 - 00:33:54,220] I think I have every possible thing here,
+- [00:33:55,140 - 00:33:56,420] which is quadratic in y.
+- [00:33:56,640 - 00:33:57,020] And there's one,
+- [00:33:57,020 - 00:33:57,260] two,
+- [00:33:57,260 - 00:33:57,460] three,
+- [00:33:57,460 - 00:33:57,620] four,
+- [00:33:57,620 - 00:33:57,820] five,
+- [00:33:57,820 - 00:33:58,000] six,
+- [00:33:58,000 - 00:33:58,180] seven,
+- [00:33:58,200 - 00:33:58,540] ten,
+- [00:33:58,540 - 00:33:59,380] ten of them.
+- [00:33:59,920 - 00:34:01,600] So there are ten possibilities here.
+- [00:34:01,680 - 00:34:03,780] How many components of the metric are there?
+- [00:34:06,179 - 00:34:07,700] There are ten yn,
+- [00:34:07,700 - 00:34:08,420] yr's.
+- [00:34:08,560 - 00:34:10,260] So that means n and r
+- [00:34:11,980 - 00:34:13,679] give you ten possibilities.
+- [00:34:13,980 - 00:34:15,900] But then for each n and r,
+- [00:34:16,179 - 00:34:17,420] you have an m.
+- [00:34:18,000 - 00:34:21,800] That means there are forty independent coefficients here.
+- [00:34:22,420 - 00:34:24,300] Forty independent coefficients.
+- [00:34:25,540 - 00:34:28,120] The most general x that you can build
+- [00:34:28,120 - 00:34:29,500] to quadratic order
+- [00:34:29,500 - 00:34:33,000] has forty independent coefficients here.
+- [00:34:33,000 - 00:34:33,620] Now,
+- [00:34:33,620 - 00:34:37,239] how many independent components of g are there?
+- [00:34:38,260 - 00:34:39,540] The answer is ten.
+- [00:34:40,260 - 00:34:43,100] So how many equations does this correspond to?
+- [00:34:45,260 - 00:34:46,699] Ten components,
+- [00:34:46,960 - 00:34:50,840] and setting all of their derivatives equal to zero,
+- [00:34:51,020 - 00:34:53,480] means that this is forty equations.
+- [00:34:54,199 - 00:34:55,440] Forty equations,
+- [00:34:56,659 - 00:34:57,920] forty unknowns,
+- [00:35:01,060 - 00:35:03,360] and that allows you to be sure
+- [00:35:03,360 - 00:35:05,200] that you can solve these equations
+- [00:35:05,200 - 00:35:06,900] to quadratic order.
+- [00:35:08,120 - 00:35:09,660] Solving them to quadratic order
+- [00:35:09,660 - 00:35:10,940] is saying the same thing
+- [00:35:11,580 - 00:35:14,760] that you can solve these equations,
+- [00:35:15,340 - 00:35:17,500] but you'll fail at the next order.
+- [00:35:17,700 - 00:35:19,260] You'll fail at the next order,
+- [00:35:19,360 - 00:35:20,180] and here's the next order.
+- [00:35:21,020 - 00:35:22,880] So it is always possible
+- [00:35:22,880 - 00:35:25,000] to choose a metric
+- [00:35:25,800 - 00:35:27,720] that has the property that
+- [00:35:27,720 - 00:35:29,700] to quadratic order,
+- [00:35:29,840 - 00:35:30,620] in other words,
+- [00:35:30,620 - 00:35:35,460] the first derivative of the metric
+- [00:35:35,460 - 00:35:36,220] is equal to zero,
+- [00:35:36,320 - 00:35:38,180] and the metric is equal to a flat metric
+- [00:35:38,180 - 00:35:39,060] at a point.
+- [00:35:40,920 - 00:35:41,580] Excuse me,
+- [00:35:41,580 - 00:35:43,380] I'm thinking something crucial here.
+- [00:35:43,860 - 00:35:44,960] At the very beginning,
+- [00:35:45,100 - 00:35:47,640] we have that equation with xn on the left
+- [00:35:47,640 - 00:35:49,520] and y is on the right.
+- [00:35:50,140 - 00:35:54,080] Does that represent an attempted coordinate transformation?
+- [00:35:54,380 - 00:35:54,520] Yeah,
+- [00:35:54,520 - 00:35:55,460] that's a coordinate transformation,
+- [00:35:55,460 - 00:35:55,960] sure.
+- [00:35:56,940 - 00:35:57,420] Yeah,
+- [00:35:57,420 - 00:35:57,700] that's a coordinate transformation.
+- [00:35:57,720 - 00:35:58,960] That's a coordinate transformation.
+- [00:36:00,080 - 00:36:00,560] Yeah,
+- [00:36:00,560 - 00:36:02,180] this is a coordinate transformation
+- [00:36:02,960 - 00:36:05,000] which we're going to try to choose these c's
+- [00:36:05,720 - 00:36:07,410] in such a way as to
+- [00:36:07,410 - 00:36:09,100] make the derivatives of the metric zero.
+- [00:36:09,640 - 00:36:10,720] You can always do it.
+- [00:36:11,700 - 00:36:14,180] So every metric in that sense is flat
+- [00:36:14,180 - 00:36:16,400] over a sufficiently small distance.
+- [00:36:18,640 - 00:36:19,120] Question.
+- [00:36:19,120 - 00:36:20,900] Is that saying it's locally flat?
+- [00:36:21,640 - 00:36:23,080] That's saying it's locally flat.
+- [00:36:23,620 - 00:36:25,680] That's the statement that it's local.
+- [00:36:25,760 - 00:36:27,140] That's what being locally flat means,
+- [00:36:27,140 - 00:36:27,420] yeah.
+- [00:36:28,500 - 00:36:29,060] Yeah.
+- [00:36:30,060 - 00:36:30,620] Intuitively,
+- [00:36:30,620 - 00:36:32,500] it just says that any smooth surface
+- [00:36:32,500 - 00:36:34,840] can be approximated over a small distance
+- [00:36:34,840 - 00:36:39,120] by a plane that's tangent to it.
+- [00:36:39,620 - 00:36:40,180] Right.
+- [00:36:40,180 - 00:36:41,640] That's what that says.
+- [00:36:42,120 - 00:36:42,400] Question.
+- [00:36:42,580 - 00:36:43,280] Mm-hmm.
+- [00:36:43,840 - 00:36:44,340] Okay.
+- [00:36:45,720 - 00:36:49,900] That can be solved because gmn is invertible.
+- [00:36:50,080 - 00:36:50,640] Yeah.
+- [00:36:50,700 - 00:36:54,060] You can't always solve for the equation necessarily.
+- [00:36:54,760 - 00:36:55,520] Say it again.
+- [00:36:55,780 - 00:36:57,640] You can't always solve for the equation.
+- [00:36:57,640 - 00:36:57,860] You can't always solve for the equation.
+- [00:36:59,299 - 00:36:59,660] Yeah,
+- [00:36:59,660 - 00:37:01,080] I think in this case you can.
+- [00:37:01,260 - 00:37:02,480] I think in this case you can.
+- [00:37:03,120 - 00:37:03,480] Yeah.
+- [00:37:05,480 - 00:37:05,840] Yeah.
+- [00:37:07,680 - 00:37:08,040] Yeah,
+- [00:37:08,040 - 00:37:08,940] in this case you can.
+- [00:37:10,120 - 00:37:10,480] There's...
+- [00:37:12,600 - 00:37:13,260] Try it out.
+- [00:37:13,440 - 00:37:15,620] Do it with 2x2 matrices.
+- [00:37:15,820 - 00:37:17,300] Do it in a two-dimensional case.
+- [00:37:18,899 - 00:37:21,020] And there's nothing special about four dimensions.
+- [00:37:21,240 - 00:37:22,060] You'll find you can do it.
+- [00:37:23,380 - 00:37:23,860] All right.
+- [00:37:23,900 - 00:37:24,780] I don't want to try
+- [00:37:24,780 - 00:37:25,660] to do it on a blackboard.
+- [00:37:25,780 - 00:37:26,020] It's...
+- [00:37:27,080 - 00:37:27,740] All right.
+- [00:37:27,820 - 00:37:28,200] In any case,
+- [00:37:28,200 - 00:37:28,620] it's a theorem.
+- [00:37:28,760 - 00:37:30,740] It's a theorem that Gaussian
+- [00:37:30,740 - 00:37:32,720] normal coordinates exist at every point,
+- [00:37:32,780 - 00:37:33,520] at every point,
+- [00:37:33,520 - 00:37:34,920] and they have this property.
+- [00:37:35,720 - 00:37:36,400] All right.
+- [00:37:36,420 - 00:37:36,520] Now,
+- [00:37:36,520 - 00:37:38,160] the reason we introduce that is
+- [00:37:38,160 - 00:37:39,800] because we want to give some meaning
+- [00:37:39,800 - 00:37:41,180] to derivatives of vectors.
+- [00:37:41,560 - 00:37:45,800] We've talked about some of tensors in general,
+- [00:37:45,800 - 00:37:46,880] derivatives of tensors.
+- [00:37:47,640 - 00:37:50,420] We've talked about various procedures,
+- [00:37:50,420 - 00:37:53,160] various operations we can do on tensors
+- [00:37:53,160 - 00:37:54,100] to make new tensors.
+- [00:37:54,460 - 00:37:55,540] We can add them.
+- [00:37:55,600 - 00:37:56,000] We can subtract them.
+- [00:37:56,020 - 00:37:57,680] We can multiply them.
+- [00:37:58,300 - 00:37:59,900] We can do all kinds of things.
+- [00:38:00,400 - 00:38:02,120] Can we differentiate them?
+- [00:38:02,220 - 00:38:02,820] In particular,
+- [00:38:02,820 - 00:38:05,220] if we have a tensor,
+- [00:38:05,220 - 00:38:07,080] which is a function of position,
+- [00:38:07,900 - 00:38:10,800] that means all of its components are functions of position,
+- [00:38:11,840 - 00:38:14,050] can we construct another tensor
+- [00:38:14,050 - 00:38:16,260] which is in some appropriate sense
+- [00:38:16,260 - 00:38:19,550] the derivative with respect to position
+- [00:38:19,550 - 00:38:22,840] of the tensor that we have?
+- [00:38:24,180 - 00:38:25,090] So let me show you why
+- [00:38:25,090 - 00:38:26,000] this is a little bit complicated.
+- [00:38:26,000 - 00:38:26,420] It's a little bit tricky.
+- [00:38:29,460 - 00:38:30,180] You could just say,
+- [00:38:30,180 - 00:38:30,360] well,
+- [00:38:30,360 - 00:38:30,700] okay,
+- [00:38:30,700 - 00:38:33,920] take the components of the tensor,
+- [00:38:34,280 - 00:38:36,280] let's say covariant components,
+- [00:38:36,280 - 00:38:38,140] and differentiate them,
+- [00:38:38,220 - 00:38:39,700] and that gives you a new set of components,
+- [00:38:39,700 - 00:38:41,460] which are the derivatives of the components.
+- [00:38:41,680 - 00:38:43,280] That gives you the derivative of the vector.
+- [00:38:44,100 - 00:38:44,700] It's true.
+- [00:38:44,780 - 00:38:45,380] You can do that,
+- [00:38:45,380 - 00:38:47,960] but what you get will not be a tensor.
+- [00:38:48,680 - 00:38:49,080] Okay.
+- [00:38:50,140 - 00:38:51,560] And let me show you why.
+- [00:38:52,040 - 00:38:53,120] Can I ask one question?
+- [00:38:53,320 - 00:38:53,540] Yeah.
+- [00:38:53,720 - 00:38:53,880] Okay.
+- [00:38:53,880 - 00:38:56,540] I think the way you had it received,
+- [00:38:56,540 - 00:39:01,480] there are no first order terms.
+- [00:39:02,380 - 00:39:03,880] This is first order.
+- [00:39:05,580 - 00:39:06,660] You mean zeroth order.
+- [00:39:07,000 - 00:39:07,220] Yeah.
+- [00:39:07,420 - 00:39:07,860] Yeah.
+- [00:39:08,280 - 00:39:08,800] That's right.
+- [00:39:09,280 - 00:39:11,260] It's not that there are no zeroth order terms.
+- [00:39:11,420 - 00:39:12,280] It's just I said,
+- [00:39:12,280 - 00:39:14,110] let's choose the origins of the two
+- [00:39:14,110 - 00:39:15,940] coordinate systems to be at the same point.
+- [00:39:16,200 - 00:39:18,380] So that says wherever y is equal to zero,
+- [00:39:18,380 - 00:39:19,360] x is equal to zero.
+- [00:39:19,840 - 00:39:21,060] It was arbitrary,
+- [00:39:21,060 - 00:39:22,420] but it doesn't cost anything.
+- [00:39:23,880 - 00:39:24,080] Okay.
+- [00:39:25,620 - 00:39:26,320] All right.
+- [00:39:26,340 - 00:39:28,800] Let's look at a vector field.
+- [00:39:29,080 - 00:39:29,980] A vector field,
+- [00:39:29,980 - 00:39:31,080] a vector at every position.
+- [00:39:31,500 - 00:39:35,030] And let's start with coordinates
+- [00:39:35,030 - 00:39:38,560] which either the space is flat,
+- [00:39:38,680 - 00:39:40,360] in which case I'll just
+- [00:39:40,360 - 00:39:42,040] use flat ordinary Cartesian coordinates,
+- [00:39:42,740 - 00:39:44,060] or the space is curved,
+- [00:39:44,060 - 00:39:45,850] in which case these coordinates
+- [00:39:45,850 - 00:39:47,640] here represent Gaussian normal coordinates,
+- [00:39:47,720 - 00:39:50,500] as straight as possible,
+- [00:39:50,500 - 00:39:51,120] so to speak.
+- [00:39:51,120 - 00:39:53,410] And now let's take another coordinate system
+- [00:39:53,410 - 00:39:55,700] and superimpose it on top of that.
+- [00:39:56,360 - 00:39:58,480] These are not Gaussian normal coordinates.
+- [00:39:58,680 - 00:40:00,520] They may be the coordinates that we started with.
+- [00:40:01,100 - 00:40:02,820] And I'll represent those in green.
+- [00:40:04,820 - 00:40:07,400] And they're curved relative to these coordinates.
+- [00:40:07,920 - 00:40:08,820] For example,
+- [00:40:08,820 - 00:40:11,400] the coordinate lines might look like that.
+- [00:40:11,560 - 00:40:12,980] One of the coordinate lines.
+- [00:40:13,240 - 00:40:15,400] The other one might look like this.
+- [00:40:16,100 - 00:40:16,900] Or whatever.
+- [00:40:19,060 - 00:40:19,800] All right.
+- [00:40:24,340 - 00:40:24,900] Now,
+- [00:40:24,900 - 00:40:28,120] before we ask how we differentiate a vector field,
+- [00:40:28,420 - 00:40:30,760] vector field means a vector in every position here,
+- [00:40:30,920 - 00:40:32,400] let's ask what it means,
+- [00:40:32,400 - 00:40:34,550] what it would mean for the
+- [00:40:34,550 - 00:40:36,700] vector field to be constant in space.
+- [00:40:37,320 - 00:40:40,480] The problem here is because the space is curved,
+- [00:40:40,840 - 00:40:43,030] it becomes hard to compare the
+- [00:40:43,030 - 00:40:45,220] vector at one point and another point.
+- [00:40:45,520 - 00:40:46,640] The coordinates,
+- [00:40:46,640 - 00:40:49,240] if they can't be chosen to be everywhere flat,
+- [00:40:49,800 - 00:40:53,010] then what exactly do you mean by saying a
+- [00:40:53,010 - 00:40:56,220] vector over here is equal to a vector over here?
+- [00:40:56,960 - 00:40:58,780] It doesn't really mean anything,
+- [00:40:58,880 - 00:41:01,830] because to compare a vector over
+- [00:41:01,830 - 00:41:04,780] here with a vector over here,
+- [00:41:04,880 - 00:41:07,240] unless you have nice flat coordinates,
+- [00:41:07,880 - 00:41:10,000] there's no unique way to do that.
+- [00:41:11,840 - 00:41:16,440] So let's look at it for a moment.
+- [00:41:17,660 - 00:41:19,380] If the space is flat,
+- [00:41:20,420 - 00:41:21,300] really flat,
+- [00:41:21,520 - 00:41:24,270] then I think I know what it means
+- [00:41:24,270 - 00:41:27,020] for a vector over here to be the same
+- [00:41:27,020 - 00:41:29,220] or to be equal to a vector over here.
+- [00:41:29,680 - 00:41:31,240] It means it's equal.
+- [00:41:31,440 - 00:41:32,760] It points in the same direction
+- [00:41:33,460 - 00:41:35,140] and has the same length.
+- [00:41:35,520 - 00:41:36,660] On the other hand,
+- [00:41:36,660 - 00:41:38,240] does it say that,
+- [00:41:38,460 - 00:41:40,640] I'm thinking about the green coordinates now,
+- [00:41:40,720 - 00:41:42,100] let's think about the green coordinates.
+- [00:41:42,400 - 00:41:44,020] In the black coordinates,
+- [00:41:45,000 - 00:41:47,290] the components of this black vector and
+- [00:41:47,290 - 00:41:49,580] this black vector are clearly the same.
+- [00:41:49,580 - 00:41:52,200] In the nice Cartesian coordinates.
+- [00:41:52,520 - 00:41:54,860] But what about the coordinates of this vector
+- [00:41:56,460 - 00:41:57,020] here
+- [00:41:57,020 - 00:41:58,960] and this vector over here
+- [00:41:59,700 - 00:42:01,400] along the green axes?
+- [00:42:02,160 - 00:42:02,940] In fact,
+- [00:42:02,940 - 00:42:03,380] let's even,
+- [00:42:03,380 - 00:42:06,500] let's take a special case.
+- [00:42:07,020 - 00:42:10,000] Let's take this vector to be vertically up
+- [00:42:10,580 - 00:42:12,280] so that we know that
+- [00:42:12,280 - 00:42:13,980] it only has a y component
+- [00:42:14,580 - 00:42:15,820] in the flat coordinates.
+- [00:42:16,180 - 00:42:18,480] And let's assume that this vector over here
+- [00:42:18,480 - 00:42:20,500] is equal to this vector at points
+- [00:42:20,500 - 00:42:22,520] in the same direction in flat space.
+- [00:42:24,180 - 00:42:28,320] Are its coordinates along the green axes,
+- [00:42:28,560 - 00:42:30,310] are they the same as
+- [00:42:30,310 - 00:42:32,060] the coordinates along the black axes?
+- [00:42:32,240 - 00:42:32,420] No.
+- [00:42:32,980 - 00:42:35,560] This coordinate along the green axis here
+- [00:42:35,560 - 00:42:38,600] is different than the coordinate along the black axis here.
+- [00:42:39,020 - 00:42:40,060] And in fact,
+- [00:42:40,060 - 00:42:45,480] this vector would have both x and y components
+- [00:42:46,760 - 00:42:48,320] along the green axes.
+- [00:42:49,040 - 00:42:51,340] Whatever the green axes happen to be.
+- [00:42:53,020 - 00:42:54,680] It has both kinds of components.
+- [00:42:55,100 - 00:42:57,370] So it's clear that even
+- [00:42:57,370 - 00:42:59,640] though the vectors are the same,
+- [00:43:00,420 - 00:43:02,280] the components are not the same.
+- [00:43:02,520 - 00:43:05,940] So you cannot judge when you have curvy linear coordinates,
+- [00:43:06,020 - 00:43:06,820] and in general,
+- [00:43:06,820 - 00:43:08,620] you will have curvy linear coordinates,
+- [00:43:08,660 - 00:43:11,140] you can't judge by whether the components,
+- [00:43:11,260 - 00:43:13,180] either covariant or contravariant,
+- [00:43:13,300 - 00:43:16,420] you can't judge whether the vector is constant in space.
+- [00:43:17,360 - 00:43:17,940] Right?
+- [00:43:18,480 - 00:43:20,480] Another way to say the same thing
+- [00:43:20,480 - 00:43:24,440] is that in one coordinate system,
+- [00:43:25,220 - 00:43:26,500] the derivatives,
+- [00:43:27,300 - 00:43:29,180] let's say with respect to
+- [00:43:31,380 - 00:43:33,420] some coordinate xr
+- [00:43:35,000 - 00:43:38,900] of the mth component of a vector,
+- [00:43:39,080 - 00:43:41,720] might be zero in one coordinate system,
+- [00:43:42,450 - 00:43:44,560] and not zero in another coordinate system.
+- [00:43:45,440 - 00:43:47,240] It may even be the case that
+- [00:43:47,240 - 00:43:49,540] all of the derivatives of vm
+- [00:43:49,540 - 00:43:51,420] are zero in one coordinate system,
+- [00:43:51,760 - 00:43:54,120] and not zero in the other coordinate system,
+- [00:43:54,400 - 00:43:56,420] because the coordinates shift,
+- [00:43:56,700 - 00:43:57,940] because the coordinate direction,
+- [00:43:58,180 - 00:43:59,620] not because the vector is changing,
+- [00:43:59,860 - 00:44:01,980] but because the coordinates are changing.
+- [00:44:02,320 - 00:44:03,620] So this statement,
+- [00:44:05,060 - 00:44:08,060] that the derivatives of a vector are equal to zero,
+- [00:44:08,220 - 00:44:10,740] is not an equation
+- [00:44:11,600 - 00:44:13,130] which is likely to be
+- [00:44:13,130 - 00:44:14,660] the same in every reference frame.
+- [00:44:15,080 - 00:44:15,640] Therefore,
+- [00:44:15,640 - 00:44:17,160] it cannot be a tensor equation.
+- [00:44:17,240 - 00:44:18,680] It's not a tensor equation.
+- [00:44:19,180 - 00:44:21,380] And the derivative of a vector,
+- [00:44:21,500 - 00:44:22,920] the components of a vector,
+- [00:44:23,480 - 00:44:24,820] with respect to coordinates,
+- [00:44:25,000 - 00:44:27,360] are not themselves components of a tensor.
+- [00:44:29,160 - 00:44:30,720] They're not components of a tensor,
+- [00:44:31,320 - 00:44:32,480] because they can be zero,
+- [00:44:32,480 - 00:44:33,260] all of them,
+- [00:44:33,360 - 00:44:34,600] in one frame of reference,
+- [00:44:35,160 - 00:44:36,800] and not in another frame of reference.
+- [00:44:37,120 - 00:44:39,080] If they were components of a tensor,
+- [00:44:39,260 - 00:44:41,440] we would think of this as a rank two tensor,
+- [00:44:41,640 - 00:44:43,360] an m-index and an r-index.
+- [00:44:44,060 - 00:44:44,840] We might say,
+- [00:44:44,840 - 00:44:45,040] look,
+- [00:44:45,120 - 00:44:47,220] could this be a tensor tmr?
+- [00:44:47,980 - 00:44:48,540] Well,
+- [00:44:48,540 - 00:44:50,400] if it's a tensor tmr,
+- [00:44:52,200 - 00:44:54,580] then if it's zero in one frame,
+- [00:44:54,620 - 00:44:55,880] or in one coordinate system,
+- [00:44:56,060 - 00:44:57,460] it's zero in every coordinate system.
+- [00:44:57,860 - 00:44:59,200] But that's simply not true
+- [00:44:59,200 - 00:45:04,400] of the derivatives of components of vectors,
+- [00:45:04,560 - 00:45:08,960] not because the vector may change from point to point,
+- [00:45:09,020 - 00:45:10,120] but because the coordinates,
+- [00:45:10,320 - 00:45:12,140] the orientation of the coordinates change.
+- [00:45:13,960 - 00:45:14,520] So,
+- [00:45:14,520 - 00:45:16,560] we need a better definition
+- [00:45:19,040 - 00:45:21,080] of the derivative of a vector
+- [00:45:21,080 - 00:45:23,480] than just differentiating its components.
+- [00:45:24,140 - 00:45:25,980] We need something which,
+- [00:45:26,060 - 00:45:27,380] if it's zero in one frame,
+- [00:45:27,440 - 00:45:28,419] is zero in every frame.
+- [00:45:31,180 - 00:45:31,580] Okay,
+- [00:45:31,580 - 00:45:32,600] so here's what we'll do.
+- [00:45:33,340 - 00:45:35,940] Here's how we'll define the derivative of a vector.
+- [00:45:37,340 - 00:45:38,080] First of all,
+- [00:45:38,080 - 00:45:39,580] to define the derivative at a point,
+- [00:45:39,780 - 00:45:42,100] you only need to look at nearby points,
+- [00:45:42,100 - 00:45:42,420] right?
+- [00:45:42,560 - 00:45:44,160] You only need to look at nearby points.
+- [00:45:44,620 - 00:45:45,020] So,
+- [00:45:45,020 - 00:45:45,920] the first thing you'll do
+- [00:45:45,920 - 00:45:47,220] is to consider the derivative of a vector.
+- [00:45:47,220 - 00:45:47,700] So,
+- [00:45:47,700 - 00:45:47,700] let's say that we construct
+- [00:45:47,700 - 00:45:50,340] Gaussian normal coordinates near that point.
+- [00:45:51,260 - 00:45:52,600] Gaussian normal coordinates.
+- [00:45:52,640 - 00:45:53,820] They're as straight as possible.
+- [00:45:56,880 - 00:45:57,520] Then,
+- [00:45:57,520 - 00:45:59,440] let's put this vector a little bit closer
+- [00:45:59,440 - 00:46:01,200] just to indicate that it's like that.
+- [00:46:01,360 - 00:46:01,920] Then,
+- [00:46:01,920 - 00:46:05,140] pretending that the Gaussian normal coordinates
+- [00:46:05,140 - 00:46:07,160] are really nice flat coordinates,
+- [00:46:08,940 - 00:46:12,340] shift this vector so that its origin
+- [00:46:12,340 - 00:46:15,240] is the same as the starting vector over here.
+- [00:46:15,240 - 00:46:16,840] In other words,
+- [00:46:16,840 - 00:46:17,940] shift it,
+- [00:46:18,000 - 00:46:20,920] keeping its components fixed and constant
+- [00:46:20,920 - 00:46:23,780] in Gaussian normal coordinates.
+- [00:46:24,500 - 00:46:25,100] Alright,
+- [00:46:25,100 - 00:46:26,660] so in the Gaussian normal coordinates,
+- [00:46:26,860 - 00:46:28,860] I keep the components of this vector fixed,
+- [00:46:29,120 - 00:46:31,560] and I compare it with this vector over here.
+- [00:46:32,280 - 00:46:33,920] Just shift it down to here.
+- [00:46:34,480 - 00:46:36,640] And the difference between these two
+- [00:46:37,240 - 00:46:38,560] is the thing that I
+- [00:46:38,560 - 00:46:39,880] will use to define the derivative.
+- [00:46:40,180 - 00:46:44,200] The derivative will be the difference
+- [00:46:44,200 - 00:46:45,220] between these two,
+- [00:46:45,240 - 00:46:48,800] divided by the little separation along this axis here.
+- [00:46:49,020 - 00:46:50,320] In other words,
+- [00:46:50,320 - 00:46:53,100] to differentiate a vector,
+- [00:46:53,300 - 00:46:56,840] differentiate it in Gaussian normal coordinates.
+- [00:46:57,220 - 00:47:00,100] They are the ones which are closest of all
+- [00:47:00,100 - 00:47:01,480] to Cartesian coordinates.
+- [00:47:01,920 - 00:47:06,140] The derivatives in the Gaussian normal coordinates
+- [00:47:07,700 - 00:47:10,280] define the derivative.
+- [00:47:10,880 - 00:47:11,680] Okay,
+- [00:47:11,680 - 00:47:12,020] now,
+- [00:47:12,020 - 00:47:13,800] when you differentiate a vector
+- [00:47:13,800 - 00:47:14,980] in general coordinates,
+- [00:47:15,240 - 00:47:16,560] you'll get two terms.
+- [00:47:16,800 - 00:47:18,920] The two terms come,
+- [00:47:19,560 - 00:47:22,800] one term comes because the vector may be changing,
+- [00:47:22,980 - 00:47:24,800] and the other term comes
+- [00:47:24,800 - 00:47:26,620] because the coordinates are changing.
+- [00:47:27,300 - 00:47:29,220] Coordinates are rotating out from under you,
+- [00:47:29,320 - 00:47:31,400] even if the vector doesn't change,
+- [00:47:32,220 - 00:47:32,860] and so forth.
+- [00:47:34,060 - 00:47:36,040] If you work out this prescription,
+- [00:47:37,420 - 00:47:38,540] take the derivative,
+- [00:47:38,820 - 00:47:41,380] just the ordinary derivative in Gaussian normal coordinates,
+- [00:47:41,660 - 00:47:44,580] and then re-express it in arbitrary coordinates.
+- [00:47:44,580 - 00:47:46,020] Here's what you will find.
+- [00:47:46,280 - 00:47:48,860] You will find that
+- [00:47:54,200 - 00:47:55,680] the derivative,
+- [00:47:55,680 - 00:47:57,780] which will now be called capital D,
+- [00:47:58,570 - 00:48:00,060] along the r-axis
+- [00:48:00,060 - 00:48:04,380] of the components of a vector vm
+- [00:48:05,260 - 00:48:07,280] in arbitrary coordinates
+- [00:48:08,460 - 00:48:12,940] are not just the derivative with respect to r
+- [00:48:12,940 - 00:48:14,340] of vm,
+- [00:48:14,820 - 00:48:16,100] but there's another term.
+- [00:48:16,280 - 00:48:17,810] And the other term has to
+- [00:48:17,810 - 00:48:19,340] do with the way the coordinates themselves
+- [00:48:19,780 - 00:48:21,920] are changing from point to point.
+- [00:48:22,340 - 00:48:24,200] And what it looks like is something,
+- [00:48:24,340 - 00:48:25,760] it's proportional to v.
+- [00:48:27,080 - 00:48:28,980] If you double the size of v,
+- [00:48:29,180 - 00:48:30,920] you'll double this term here,
+- [00:48:30,920 - 00:48:31,480] obviously.
+- [00:48:33,840 - 00:48:35,680] So it's proportional to v.
+- [00:48:35,820 - 00:48:36,880] It will have a v in it.
+- [00:48:38,080 - 00:48:39,640] It does not have a derivative,
+- [00:48:39,780 - 00:48:41,290] because this term doesn't come
+- [00:48:41,290 - 00:48:42,800] from the fact that the vector
+- [00:48:42,940 - 00:48:43,520] is changing,
+- [00:48:43,520 - 00:48:45,780] it's coming from the fact that the coordinates are changing.
+- [00:48:48,080 - 00:48:49,860] Let's put some indices and try to
+- [00:48:49,860 - 00:48:51,640] see what kind of thing it could be.
+- [00:48:52,920 - 00:48:56,300] Might have the t component here.
+- [00:48:57,860 - 00:48:59,360] On the left-hand side,
+- [00:48:59,360 - 00:49:02,060] we have indices r and m.
+- [00:49:02,380 - 00:49:03,800] That means we have to have
+- [00:49:03,800 - 00:49:05,220] some kind of object over here
+- [00:49:05,780 - 00:49:08,060] that has index r and m.
+- [00:49:09,720 - 00:49:12,080] Just to match the indices on the left-hand side.
+- [00:49:12,940 - 00:49:13,560] On the other hand,
+- [00:49:13,560 - 00:49:15,540] it's going to be proportional
+- [00:49:16,460 - 00:49:18,800] to the components themselves of v,
+- [00:49:19,040 - 00:49:20,740] so it's going to have some vt here.
+- [00:49:21,080 - 00:49:23,260] This equation doesn't quite make sense.
+- [00:49:23,680 - 00:49:25,820] There are two directions here,
+- [00:49:26,000 - 00:49:26,960] there are three here.
+- [00:49:27,340 - 00:49:28,700] You've got to soak them up,
+- [00:49:28,700 - 00:49:29,420] you have to put another
+- [00:49:31,540 - 00:49:33,500] index into this object here.
+- [00:49:36,720 - 00:49:37,740] And in fact,
+- [00:49:38,980 - 00:49:41,940] the standard convention is to put a minus sign there.
+- [00:49:43,100 - 00:49:43,780] Okay?
+- [00:49:45,260 - 00:49:47,300] This in fact is what you will get
+- [00:49:47,759 - 00:49:51,180] if you take a vector,
+- [00:49:51,280 - 00:49:53,960] differentiate it in Gaussian normal coordinates,
+- [00:49:54,020 - 00:49:57,700] and then transform it to other coordinates.
+- [00:49:58,100 - 00:50:00,260] In any other coordinate system,
+- [00:50:01,180 - 00:50:02,360] what you will get
+- [00:50:03,180 - 00:50:07,020] is the derivative minus a thing,
+- [00:50:07,260 - 00:50:09,060] let's just call it thing for the moment,
+- [00:50:09,240 - 00:50:11,140] times components of v themselves.
+- [00:50:11,540 - 00:50:12,920] This is summed over time,
+- [00:50:12,940 - 00:50:14,880] and you can see that vt
+- [00:50:14,880 - 00:50:17,560] and the index structure on the left-hand side
+- [00:50:17,560 - 00:50:18,660] is just r and m.
+- [00:50:19,320 - 00:50:20,200] Excuse me.
+- [00:50:20,220 - 00:50:20,520] Yeah.
+- [00:50:22,060 - 00:50:24,420] That holds for an arbitrary coordinate system,
+- [00:50:24,420 - 00:50:24,620] right?
+- [00:50:24,800 - 00:50:26,840] That holds now for an arbitrary coordinate system,
+- [00:50:27,020 - 00:50:28,160] but I haven't told you what gammas are,
+- [00:50:28,260 - 00:50:30,300] what these gamma objects are.
+- [00:50:30,500 - 00:50:30,800] Question.
+- [00:50:31,560 - 00:50:32,940] What does that formula become
+- [00:50:32,940 - 00:50:34,820] if it's Gaussian normal?
+- [00:50:35,240 - 00:50:35,760] No,
+- [00:50:35,760 - 00:50:37,120] in Gaussian normal coordinates,
+- [00:50:37,900 - 00:50:38,860] it's just this.
+- [00:50:39,200 - 00:50:39,720] Okay,
+- [00:50:39,720 - 00:50:42,060] so the gammas come in because of...
+- [00:50:42,060 - 00:50:42,160] Yeah,
+- [00:50:42,160 - 00:50:42,760] the gammas,
+- [00:50:42,760 - 00:50:43,040] yeah.
+- [00:50:44,360 - 00:50:44,880] Right.
+- [00:50:45,240 - 00:50:47,180] We're going to find that the gammas
+- [00:50:47,180 - 00:50:49,500] are proportional to derivatives of the metric.
+- [00:50:50,360 - 00:50:51,840] They have to do with the
+- [00:50:51,840 - 00:50:53,320] metric changing from place to place.
+- [00:50:53,760 - 00:50:55,010] They're going to be proportional
+- [00:50:55,010 - 00:50:56,260] to the derivatives of the metric,
+- [00:50:56,360 - 00:50:58,160] in Gaussian normal coordinates,
+- [00:50:58,240 - 00:50:59,800] the derivatives of the metric are zero.
+- [00:51:00,520 - 00:51:01,040] Okay,
+- [00:51:01,040 - 00:51:01,600] that's the trick.
+- [00:51:01,920 - 00:51:04,440] Use Gaussian normal coordinates to differentiate
+- [00:51:05,840 - 00:51:06,360] because,
+- [00:51:06,360 - 00:51:07,460] to first order,
+- [00:51:07,640 - 00:51:09,620] the derivatives of the metric are zero.
+- [00:51:10,420 - 00:51:11,940] Once you've differentiated it,
+- [00:51:11,940 - 00:51:15,080] you can then transform the object
+- [00:51:15,080 - 00:51:16,620] as if it were a
+- [00:51:16,620 - 00:51:18,160] tensor to any frame of reference,
+- [00:51:18,940 - 00:51:21,260] and the form will always be like this.
+- [00:51:21,480 - 00:51:22,980] It will always be like this.
+- [00:51:23,200 - 00:51:24,080] It will contain,
+- [00:51:24,080 - 00:51:24,520] indeed,
+- [00:51:24,520 - 00:51:25,600] a derivative,
+- [00:51:25,820 - 00:51:28,220] but it will also contain another term
+- [00:51:28,220 - 00:51:30,180] which will not be differentiated,
+- [00:51:30,280 - 00:51:31,560] and it has to do with,
+- [00:51:31,560 - 00:51:32,300] as I said,
+- [00:51:32,380 - 00:51:33,190] it has to do with
+- [00:51:33,190 - 00:51:34,000] the fact that not the vector
+- [00:51:34,000 - 00:51:35,360] is changing from point to point,
+- [00:51:35,460 - 00:51:37,380] but the fact that the coordinates
+- [00:51:37,380 - 00:51:38,860] are changing from point to point.
+- [00:51:41,940 - 00:51:43,320] These objects have various names.
+- [00:51:43,420 - 00:51:44,400] This is called a connection.
+- [00:51:45,220 - 00:51:47,380] It connects neighboring points
+- [00:51:47,380 - 00:51:48,820] and tells you how to differentiate
+- [00:51:49,460 - 00:51:51,200] something from one point to another.
+- [00:51:51,380 - 00:51:51,680] It tells you,
+- [00:51:51,680 - 00:51:52,100] basically,
+- [00:51:52,100 - 00:51:53,380] how to compare
+- [00:51:53,700 - 00:51:54,900] vectors at different points.
+- [00:51:55,880 - 00:52:00,660] It tells you how to compare vectors
+- [00:52:00,660 - 00:52:03,160] even though the coordinate system may be changing.
+- [00:52:03,900 - 00:52:05,740] This is called a covariant derivative,
+- [00:52:06,440 - 00:52:08,420] not because its index is downstairs.
+- [00:52:08,680 - 00:52:10,700] It's called a covariant derivative for,
+- [00:52:12,920 - 00:52:15,240] just because it's called a covariant derivative.
+- [00:52:17,040 - 00:52:18,500] It's called a covariant derivative,
+- [00:52:19,820 - 00:52:21,480] and it is a tensor.
+- [00:52:22,160 - 00:52:23,860] It's a tensor in that if
+- [00:52:23,860 - 00:52:25,560] it is zero in any frame,
+- [00:52:25,780 - 00:52:27,680] it's zero in every frame.
+- [00:52:31,300 - 00:52:33,800] So is that a generalization
+- [00:52:33,800 - 00:52:35,060] of the conductive derivative?
+- [00:52:37,660 - 00:52:38,260] You know,
+- [00:52:38,260 - 00:52:38,880] I think it is.
+- [00:52:39,280 - 00:52:40,680] I never thought about it that way.
+- [00:52:40,700 - 00:52:41,440] But I think it is.
+- [00:52:42,060 - 00:52:42,520] Yeah.
+- [00:52:42,660 - 00:52:44,060] Whether it's connected with a
+- [00:52:44,060 - 00:52:44,820] convective derivative,
+- [00:52:47,259 - 00:52:48,560] no doubt it is.
+- [00:52:48,680 - 00:52:49,500] No doubt it is.
+- [00:52:51,780 - 00:52:53,580] I would have to sit down and think about it.
+- [00:52:53,680 - 00:52:55,700] But there certainly are covariant derivatives
+- [00:52:55,700 - 00:52:56,660] in fluid flow.
+- [00:53:00,140 - 00:53:00,600] Right.
+- [00:53:00,600 - 00:53:01,020] Okay.
+- [00:53:01,020 - 00:53:01,440] So,
+- [00:53:03,860 - 00:53:04,320] yeah.
+- [00:53:04,720 - 00:53:06,360] This is called a covariant derivative,
+- [00:53:06,640 - 00:53:09,440] and these symbols here go under two names usually.
+- [00:53:09,440 - 00:53:11,400] They're either called the connection coefficients
+- [00:53:11,400 - 00:53:13,120] or the Christoffel symbols.
+- [00:53:14,720 - 00:53:15,360] Christoffel.
+- [00:53:18,860 - 00:53:19,500] I,
+- [00:53:19,500 - 00:53:20,140] Christ...
+- [00:53:27,300 - 00:53:29,400] They've also been known on occasion
+- [00:53:29,400 - 00:53:30,700] as Christoffel symbols.
+- [00:53:32,180 - 00:53:33,160] They are pretty,
+- [00:53:33,280 - 00:53:33,400] well,
+- [00:53:33,400 - 00:53:34,360] they're not that complicated,
+- [00:53:34,520 - 00:53:36,040] but they're complicated enough.
+- [00:53:37,240 - 00:53:38,780] They're unlikable enough.
+- [00:53:40,560 - 00:53:41,180] Okay.
+- [00:53:41,700 - 00:53:42,320] Now,
+- [00:53:44,000 - 00:53:45,960] one fact about them
+- [00:53:45,960 - 00:53:47,320] that follows,
+- [00:53:47,720 - 00:53:50,820] I'm not going to prove every single thing I say
+- [00:53:50,820 - 00:53:52,440] because they're just too many little pieces,
+- [00:53:52,500 - 00:53:53,860] but they're easy to check.
+- [00:53:54,420 - 00:53:56,520] It follows from the definition,
+- [00:53:56,900 - 00:53:59,660] namely the definition is you differentiate
+- [00:53:59,660 - 00:54:02,480] in Gaussian normal coordinates,
+- [00:54:02,540 - 00:54:05,020] and then you treat the object as a tensor
+- [00:54:05,020 - 00:54:07,320] and transform it as a tensor with two indices.
+- [00:54:07,820 - 00:54:09,420] It follows as a fact that,
+- [00:54:09,440 - 00:54:09,660] and this is a theorem,
+- [00:54:09,940 - 00:54:11,300] it's an easy theorem,
+- [00:54:11,500 - 00:54:12,630] but it's a little too
+- [00:54:12,630 - 00:54:13,760] intricate to do on the blackboard,
+- [00:54:13,960 - 00:54:18,180] that this Christoffel symbol has a symmetry.
+- [00:54:18,720 - 00:54:21,140] The symmetry of the Christoffel symbol
+- [00:54:21,140 - 00:54:23,540] is that gamma t r m
+- [00:54:24,140 - 00:54:27,120] is equal to gamma t m r.
+- [00:54:27,740 - 00:54:31,160] It doesn't matter which order you put m and r,
+- [00:54:31,400 - 00:54:32,640] they're the same.
+- [00:54:33,660 - 00:54:34,900] That follows.
+- [00:54:36,040 - 00:54:39,360] There are generalized remains
+- [00:54:39,440 - 00:54:40,460] of Riemannian geometries.
+- [00:54:40,500 - 00:54:42,640] They're called geometries with torsion.
+- [00:54:43,640 - 00:54:44,940] Geometries with torsion,
+- [00:54:45,720 - 00:54:48,140] the symmetry is not true.
+- [00:54:48,600 - 00:54:51,480] But those geometries are not widely in use
+- [00:54:51,480 - 00:54:53,780] in ordinary gravitational theory.
+- [00:54:54,540 - 00:54:57,240] Ordinary gravitational theory is Riemannian geometry.
+- [00:54:57,680 - 00:54:59,620] It follows from the principles that I laid out.
+- [00:54:59,980 - 00:55:03,280] And gamma r m is equal to gamma m r.
+- [00:55:05,260 - 00:55:06,320] You know...
+- [00:55:06,320 - 00:55:08,600] So it's just the gamma that's the Christoffel symbol,
+- [00:55:08,600 - 00:55:09,040] not the gamma.
+- [00:55:09,240 - 00:55:09,760] The gamma.
+- [00:55:10,000 - 00:55:11,820] You know,
+- [00:55:11,820 - 00:55:13,580] doing the derivative
+- [00:55:15,780 - 00:55:18,780] in these Gaussian normal coordinates,
+- [00:55:18,940 - 00:55:19,900] which are almost flat,
+- [00:55:19,900 - 00:55:20,940] or as flat as can be,
+- [00:55:21,180 - 00:55:22,820] and then treating it as
+- [00:55:22,820 - 00:55:24,460] an object in its own right,
+- [00:55:24,680 - 00:55:25,840] it is very,
+- [00:55:25,840 - 00:55:27,620] very similar to what we do
+- [00:55:27,620 - 00:55:29,300] in gravitational theory
+- [00:55:29,300 - 00:55:33,500] when we evaluate something in a freely falling frame
+- [00:55:34,860 - 00:55:35,800] and then,
+- [00:55:35,800 - 00:55:37,580] for example,
+- [00:55:37,580 - 00:55:39,820] in a freely falling frame,
+- [00:55:40,580 - 00:55:43,360] we calculated how light moved across an elevator.
+- [00:55:45,020 - 00:55:47,560] And then we transformed it
+- [00:55:47,560 - 00:55:49,090] to the frame of reference
+- [00:55:49,090 - 00:55:50,620] in which the elevator was accelerating.
+- [00:55:51,880 - 00:55:52,500] Okay.
+- [00:55:53,940 - 00:55:57,180] That's closely related to the operations we're doing here.
+- [00:55:57,280 - 00:55:59,880] We calculate something because we know how to do it
+- [00:56:00,310 - 00:56:03,260] in coordinates which are as flat as possible.
+- [00:56:03,400 - 00:56:05,780] That would be a freely falling frame in general relativity.
+- [00:56:05,780 - 00:56:10,080] And then we transform it to any coordinates we like,
+- [00:56:10,160 - 00:56:12,200] accelerated coordinates or anything we like.
+- [00:56:12,520 - 00:56:14,140] And we translate the statement
+- [00:56:14,140 - 00:56:15,760] from one coordinate system to another.
+- [00:56:16,060 - 00:56:16,620] Here,
+- [00:56:16,620 - 00:56:18,570] the notion of variation of
+- [00:56:18,570 - 00:56:20,520] a vector from point to point
+- [00:56:20,520 - 00:56:22,720] is done first in Gaussian normal coordinates
+- [00:56:22,720 - 00:56:23,920] and then it's transformed.
+- [00:56:24,280 - 00:56:26,320] And this is the form that
+- [00:56:26,320 - 00:56:28,360] you'll get for the corresponding tensor.
+- [00:56:28,600 - 00:56:28,780] All right.
+- [00:56:28,820 - 00:56:30,000] We're not going very fast tonight,
+- [00:56:30,100 - 00:56:31,660] so I want to move along.
+- [00:56:34,160 - 00:56:34,900] All right.
+- [00:56:35,620 - 00:56:36,160] Now,
+- [00:56:38,680 - 00:56:40,620] for higher derivative tensors,
+- [00:56:40,660 - 00:56:41,500] we'll need this tonight.
+- [00:56:42,120 - 00:56:42,660] Sorry,
+- [00:56:42,660 - 00:56:44,580] for higher rank tensors,
+- [00:56:44,620 - 00:56:46,120] supposing we have a tensor
+- [00:56:46,790 - 00:56:48,320] with more than one index,
+- [00:56:48,640 - 00:56:49,220] m,
+- [00:56:49,220 - 00:56:50,580] let's say,
+- [00:56:50,580 - 00:56:52,160] n,
+- [00:56:53,280 - 00:56:55,520] and we want to differentiate it,
+- [00:56:56,780 - 00:56:58,340] covariantly differentiate it,
+- [00:56:58,380 - 00:56:58,720] again,
+- [00:56:58,720 - 00:56:59,700] in this case,
+- [00:56:59,700 - 00:57:00,980] along the s-axis.
+- [00:57:01,980 - 00:57:04,120] I don't know why I chose s instead of r.
+- [00:57:04,900 - 00:57:05,760] Here I used r,
+- [00:57:05,940 - 00:57:08,480] but I want to differentiate it along the s-axis.
+- [00:57:08,900 - 00:57:11,540] Does everybody know what I mean d sub r here?
+- [00:57:11,660 - 00:57:13,580] That means derivative with respect to xr.
+- [00:57:17,580 - 00:57:19,320] Derivative with respect to xr.
+- [00:57:20,780 - 00:57:21,880] d sub r.
+- [00:57:22,220 - 00:57:23,380] That's a Gaussian normal?
+- [00:57:23,700 - 00:57:24,000] Hm?
+- [00:57:24,000 - 00:57:24,640] Yeah.
+- [00:57:24,740 - 00:57:25,160] No,
+- [00:57:25,160 - 00:57:25,520] no,
+- [00:57:25,520 - 00:57:25,720] no.
+- [00:57:25,760 - 00:57:27,300] That's in any coordinate system.
+- [00:57:27,500 - 00:57:28,480] In any coordinate system,
+- [00:57:29,420 - 00:57:32,460] d sub r will always mean d by dxr.
+- [00:57:32,860 - 00:57:33,340] No,
+- [00:57:33,340 - 00:57:33,960] but I mean,
+- [00:57:33,960 - 00:57:34,600] in this...
+- [00:57:34,900 - 00:57:35,840] The equation you said,
+- [00:57:35,840 - 00:57:36,180] the Gaussian.
+- [00:57:36,560 - 00:57:37,280] Which equation?
+- [00:57:37,720 - 00:57:38,840] The one you...
+- [00:57:38,840 - 00:57:39,980] The one you were talking about.
+- [00:57:39,980 - 00:57:41,300] The one you were talking about.
+- [00:57:42,360 - 00:57:43,240] This one here?
+- [00:57:43,500 - 00:57:43,940] Yeah.
+- [00:57:43,960 - 00:57:44,440] No,
+- [00:57:44,440 - 00:57:45,640] that's in any coordinate system.
+- [00:57:45,860 - 00:57:47,320] In Gaussian normal coordinates,
+- [00:57:47,540 - 00:57:48,480] this term isn't there.
+- [00:57:49,840 - 00:57:51,680] In Gaussian normal coordinates,
+- [00:57:51,740 - 00:57:52,700] you just differentiate.
+- [00:57:55,320 - 00:57:56,920] In Gaussian normal coordinates,
+- [00:57:57,020 - 00:57:58,620] everything is easy and ordinary.
+- [00:57:58,940 - 00:58:01,620] The derivative of a vector is just the derivative.
+- [00:58:03,860 - 00:58:04,380] Okay.
+- [00:58:05,080 - 00:58:06,720] In arbitrary coordinates,
+- [00:58:06,720 - 00:58:07,660] there's another term.
+- [00:58:08,640 - 00:58:09,140] Okay.
+- [00:58:09,720 - 00:58:11,600] You can work that out by transforming,
+- [00:58:11,800 - 00:58:12,760] just by doing transformations.
+- [00:58:13,060 - 00:58:13,180] Yeah?
+- [00:58:13,400 - 00:58:13,880] Two things.
+- [00:58:14,120 - 00:58:15,900] When you say that in normal,
+- [00:58:15,900 - 00:58:16,940] Gaussian normal coordinates,
+- [00:58:17,160 - 00:58:19,660] the full-variant derivative is just the derivative,
+- [00:58:19,920 - 00:58:21,320] that's only at the point.
+- [00:58:21,600 - 00:58:22,100] Yes,
+- [00:58:22,100 - 00:58:22,380] yes,
+- [00:58:22,380 - 00:58:22,600] yes,
+- [00:58:22,600 - 00:58:22,740] yes.
+- [00:58:22,780 - 00:58:23,900] Only at that point.
+- [00:58:23,960 - 00:58:24,240] Right.
+- [00:58:24,460 - 00:58:24,920] And question.
+- [00:58:25,380 - 00:58:26,700] Are the Christoffel symbols,
+- [00:58:26,700 - 00:58:27,520] are those...
+- [00:58:27,520 - 00:58:30,180] Is that a 2-1 tensor or whatever?
+- [00:58:30,460 - 00:58:30,800] No,
+- [00:58:30,800 - 00:58:31,620] it is not a tensor.
+- [00:58:31,880 - 00:58:32,360] Not a tensor.
+- [00:58:33,400 - 00:58:34,180] This is...
+- [00:58:34,180 - 00:58:35,740] This is intended to be a tensor.
+- [00:58:37,000 - 00:58:38,490] We're going to try to choose
+- [00:58:38,490 - 00:58:39,980] gamma so that this is a tensor.
+- [00:58:40,800 - 00:58:42,400] This we know is not a tensor,
+- [00:58:42,640 - 00:58:44,340] and therefore this cannot be a tensor.
+- [00:58:45,360 - 00:58:45,840] Right.
+- [00:58:45,900 - 00:58:46,120] No.
+- [00:58:46,380 - 00:58:47,780] Gammas are not tensors.
+- [00:58:48,000 - 00:58:48,920] In fact,
+- [00:58:48,920 - 00:58:51,620] they're built up out of derivatives of the metric.
+- [00:58:52,720 - 00:58:54,510] In a coordinate system in which
+- [00:58:54,510 - 00:58:56,300] the derivatives of the metric are zero,
+- [00:58:56,580 - 00:58:58,400] the Christoffel symbols are zero.
+- [00:58:59,340 - 00:59:00,280] But a tensor,
+- [00:59:00,280 - 00:59:02,040] if it's zero in one coordinate system,
+- [00:59:02,180 - 00:59:03,660] is zero in every coordinate system.
+- [00:59:04,180 - 00:59:04,180] So,
+- [00:59:04,180 - 00:59:05,420] they can't be tensors.
+- [00:59:06,880 - 00:59:07,700] And they're not.
+- [00:59:09,300 - 00:59:09,820] Okay.
+- [00:59:13,080 - 00:59:13,940] Let's just,
+- [00:59:13,940 - 00:59:16,680] before we go and figure out what the gammas are,
+- [00:59:16,900 - 00:59:17,660] we're going to work them out.
+- [00:59:17,820 - 00:59:19,020] They're not that hard to work out.
+- [00:59:19,540 - 00:59:20,300] There's a trick.
+- [00:59:21,800 - 00:59:23,080] Let's write this down.
+- [00:59:23,760 - 00:59:25,680] It's the analog of this,
+- [00:59:25,680 - 00:59:29,600] except for every index in the tensor,
+- [00:59:30,220 - 00:59:32,000] there is a term like this.
+- [00:59:32,580 - 00:59:34,840] There is a term for every index,
+- [00:59:34,840 - 00:59:36,080] and I'll show you how it works.
+- [00:59:37,560 - 00:59:41,860] There is a Christoffel term for every index.
+- [00:59:42,040 - 00:59:42,220] So,
+- [00:59:42,220 - 00:59:42,840] for example,
+- [00:59:42,840 - 00:59:45,640] we start out by hiding n.
+- [00:59:45,820 - 00:59:47,480] Let's hide n and pretend
+- [00:59:47,480 - 00:59:49,140] that this was just a vector.
+- [00:59:49,420 - 00:59:51,980] Then we would write that this is
+- [00:59:51,980 - 00:59:54,540] the derivative of t with respect to xs.
+- [00:59:54,620 - 00:59:56,020] That's the first term here.
+- [00:59:56,820 - 01:00:00,300] And then we would put a term gamma s,
+- [01:00:01,480 - 01:00:01,980] n,
+- [01:00:01,980 - 01:00:02,280] m,
+- [01:00:03,120 - 01:00:04,460] let's see what I used here,
+- [01:00:04,560 - 01:00:05,420] smt,
+- [01:00:08,520 - 01:00:09,020] tm.
+- [01:00:10,200 - 01:00:12,300] But now I expose the n here,
+- [01:00:13,040 - 01:00:14,780] and I put it in on both sides.
+- [01:00:17,320 - 01:00:18,400] But I'm not finished.
+- [01:00:18,680 - 01:00:20,120] I have to do exactly
+- [01:00:20,120 - 01:00:21,560] the same thing covering up m.
+- [01:00:22,540 - 01:00:23,660] Cover up m.
+- [01:00:24,640 - 01:00:25,940] I won't try to do it.
+- [01:00:26,060 - 01:00:27,540] But I have another term here,
+- [01:00:28,680 - 01:00:30,160] where m is passive,
+- [01:00:30,160 - 01:00:31,620] n is active,
+- [01:00:32,020 - 01:00:34,860] and so we get gamma s,
+- [01:00:37,100 - 01:00:37,620] s,
+- [01:00:37,620 - 01:00:38,260] n,
+- [01:00:38,260 - 01:00:39,080] t,
+- [01:00:41,620 - 01:00:42,140] t,
+- [01:00:42,140 - 01:00:42,660] m,
+- [01:00:42,660 - 01:00:43,300] t.
+- [01:00:43,820 - 01:00:45,440] Look at the form of it for a minute.
+- [01:00:45,600 - 01:00:45,860] Oh,
+- [01:00:45,860 - 01:00:47,360] minus signs.
+- [01:00:47,560 - 01:00:48,520] Minus signs are wrong.
+- [01:00:49,060 - 01:00:49,820] Same as here.
+- [01:00:49,860 - 01:00:51,000] Minus signs as here.
+- [01:00:55,100 - 01:00:58,540] Notice if I covered up the second index,
+- [01:01:00,840 - 01:01:01,400] t,
+- [01:01:01,400 - 01:01:01,960] m,
+- [01:01:01,960 - 01:01:02,240] n.
+- [01:01:03,460 - 01:01:06,100] If I covered up every place the second index,
+- [01:01:06,380 - 01:01:08,040] it would look exactly like
+- [01:01:08,040 - 01:01:09,700] the covariant derivative of a vector.
+- [01:01:10,060 - 01:01:11,920] If I covered up the first index,
+- [01:01:12,200 - 01:01:13,890] it would look exactly like
+- [01:01:13,890 - 01:01:15,580] the covariant derivative of a vector.
+- [01:01:17,320 - 01:01:18,580] Say it again?
+- [01:01:21,000 - 01:01:22,120] You're right,
+- [01:01:22,120 - 01:01:22,880] this should be m,
+- [01:01:22,880 - 01:01:23,620] t.
+- [01:01:26,180 - 01:01:26,940] Thank you.
+- [01:01:30,160 - 01:01:30,300] Yeah.
+- [01:01:31,820 - 01:01:33,380] Paralleling this over here.
+- [01:01:38,580 - 01:01:39,140] Alright,
+- [01:01:39,140 - 01:01:40,720] notice in one of the terms,
+- [01:01:40,860 - 01:01:43,000] t occurs in the first place,
+- [01:01:43,140 - 01:01:44,380] and in the second term
+- [01:01:44,380 - 01:01:45,620] it occurs in the second place.
+- [01:01:45,980 - 01:01:48,720] So that's the form that the
+- [01:01:48,720 - 01:01:51,460] covariant derivative of a tensor would take.
+- [01:01:51,740 - 01:01:53,040] The rule is the same.
+- [01:01:53,160 - 01:01:55,080] You go back to Gaussian normal coordinates,
+- [01:01:55,340 - 01:01:57,380] and you just differentiate the tensor.
+- [01:01:58,180 - 01:01:59,100] Just derivative.
+- [01:01:59,100 - 01:02:00,920] None of this junk.
+- [01:02:01,320 - 01:02:04,300] And then you transform it to arbitrary coordinates,
+- [01:02:04,420 - 01:02:07,440] assuming that the result here is a tensor,
+- [01:02:07,740 - 01:02:08,840] and this is what you get.
+- [01:02:09,700 - 01:02:12,440] So it allows you to differentiate any tensor.
+- [01:02:13,260 - 01:02:14,160] At the moment,
+- [01:02:14,160 - 01:02:16,680] we're just dealing with tensors with covariant indices.
+- [01:02:16,900 - 01:02:18,300] We'll come to tensors with
+- [01:02:18,300 - 01:02:19,700] contravariant indices at some point.
+- [01:02:20,080 - 01:02:20,600] Alright,
+- [01:02:20,600 - 01:02:21,240] in particular,
+- [01:02:21,240 - 01:02:24,200] let's apply this to the metric tensor itself.
+- [01:02:25,020 - 01:02:27,240] But there's something special about the metric tensor.
+- [01:02:27,900 - 01:02:29,080] In Gaussian normal,
+- [01:02:29,080 - 01:02:30,000] in Gaussian normal coordinates,
+- [01:02:30,280 - 01:02:32,440] its derivatives are all zero.
+- [01:02:34,140 - 01:02:34,740] Yeah?
+- [01:02:35,520 - 01:02:36,960] I'm sure you must have said this,
+- [01:02:37,000 - 01:02:38,900] this is like a really fun little thing.
+- [01:02:39,080 - 01:02:41,920] What's the covariant derivative for?
+- [01:02:42,740 - 01:02:44,600] It's for differentiating things.
+- [01:02:45,380 - 01:02:47,540] It's for comparing things at different points.
+- [01:02:47,920 - 01:02:49,320] What are we going to use it for?
+- [01:02:49,380 - 01:02:50,220] Field equations.
+- [01:02:51,360 - 01:02:52,440] Field equations.
+- [01:02:53,320 - 01:02:55,860] Field equations are going to be differential equations,
+- [01:02:56,640 - 01:02:58,420] which represent our fields.
+- [01:02:59,080 - 01:03:00,420] And they're going to change from one place to another,
+- [01:03:00,560 - 01:03:02,280] but we want them to be
+- [01:03:02,280 - 01:03:04,000] the same equations in every reference frame.
+- [01:03:04,960 - 01:03:07,040] We don't want to write down equations
+- [01:03:08,220 - 01:03:10,800] which are special to some peculiar reference frame.
+- [01:03:10,920 - 01:03:13,040] We want to write down equations which are general,
+- [01:03:13,160 - 01:03:14,900] so that if they're true in one frame,
+- [01:03:15,000 - 01:03:16,120] they'll be true in all frames.
+- [01:03:16,340 - 01:03:17,940] That means they have to be tensor equations,
+- [01:03:18,640 - 01:03:20,060] and that means we have
+- [01:03:20,060 - 01:03:21,480] to know how to differentiate tensors
+- [01:03:21,480 - 01:03:22,480] to get other tensors.
+- [01:03:22,980 - 01:03:25,170] So normally you have a derivative if
+- [01:03:25,170 - 01:03:27,360] you multiply it by the corresponding infinitesimal.
+- [01:03:28,240 - 01:03:29,060] You get the two.
+- [01:03:29,060 - 01:03:33,420] So you can't change the partial derivative.
+- [01:03:33,760 - 01:03:35,300] This is the partial derivative.
+- [01:03:36,660 - 01:03:38,490] This is the partial derivative
+- [01:03:38,490 - 01:03:40,320] with respect to the coordinate xs.
+- [01:03:40,620 - 01:03:41,260] But I mean,
+- [01:03:41,260 - 01:03:43,340] I'm trying to ask,
+- [01:03:43,360 - 01:03:45,380] for the covariant derivative,
+- [01:03:45,540 - 01:03:47,100] is there some differential you
+- [01:03:47,100 - 01:03:48,660] would multiply times the covariant?
+- [01:03:48,700 - 01:03:49,220] Yes,
+- [01:03:49,220 - 01:03:49,500] yes,
+- [01:03:49,500 - 01:03:50,060] absolutely,
+- [01:03:50,060 - 01:03:50,680] absolutely.
+- [01:03:51,200 - 01:03:51,980] Then what is that?
+- [01:03:52,300 - 01:03:52,780] dx.
+- [01:03:53,680 - 01:03:55,420] If you wanted to know how a thing
+- [01:03:55,420 - 01:03:57,160] changes from one point to a neighboring point,
+- [01:03:57,440 - 01:03:59,040] you would just multiply it,
+- [01:03:59,060 - 01:04:00,260] multiply this by dxs.
+- [01:04:03,700 - 01:04:06,280] But isn't that what the partial derivative is?
+- [01:04:06,300 - 01:04:06,640] No,
+- [01:04:06,640 - 01:04:07,780] no,
+- [01:04:07,780 - 01:04:08,440] no,
+- [01:04:08,440 - 01:04:08,980] no,
+- [01:04:08,980 - 01:04:09,400] no.
+- [01:04:10,140 - 01:04:11,020] I'll say it again.
+- [01:04:11,140 - 01:04:12,510] The point is that the
+- [01:04:12,510 - 01:04:13,880] components of the vector may change
+- [01:04:13,880 - 01:04:15,420] even if the vector doesn't.
+- [01:04:16,820 - 01:04:17,640] Or that,
+- [01:04:17,640 - 01:04:18,220] right,
+- [01:04:18,220 - 01:04:19,540] we have to keep that in mind.
+- [01:04:19,900 - 01:04:20,760] So this is,
+- [01:04:20,760 - 01:04:21,220] right,
+- [01:04:21,320 - 01:04:24,680] but we'll see some examples about how it works.
+- [01:04:24,700 - 01:04:27,440] Is representing effectively a distortion of the,
+- [01:04:27,440 - 01:04:31,080] an out-of-flat distortion of the coordinates?
+- [01:04:31,400 - 01:04:31,440] Yeah,
+- [01:04:31,440 - 01:04:31,440] yeah.
+- [01:04:31,500 - 01:04:32,640] It's an out-of-flat,
+- [01:04:32,640 - 01:04:33,500] that's right,
+- [01:04:33,600 - 01:04:36,820] it's an out-of-flat distortion of the coordinates.
+- [01:04:36,840 - 01:04:39,150] It's there even in flat
+- [01:04:39,150 - 01:04:41,460] space if you choose funny coordinates.
+- [01:04:42,540 - 01:04:43,700] That's an important point.
+- [01:04:43,780 - 01:04:45,530] It's there even in flat
+- [01:04:45,530 - 01:04:47,280] space if you choose funny coordinates.
+- [01:04:47,400 - 01:04:47,800] In fact,
+- [01:04:47,800 - 01:04:49,120] if you choose any coordinates
+- [01:04:49,120 - 01:04:52,760] in which the derivatives of the GMNs are not zero,
+- [01:04:52,860 - 01:04:54,080] in which the coordinates,
+- [01:04:54,080 - 01:04:54,620] you know,
+- [01:04:54,620 - 01:04:56,920] vary from point to point in funny ways,
+- [01:04:56,920 - 01:04:58,440] this will be there.
+- [01:04:58,620 - 01:05:02,180] This is not really a feature necessarily of curved spaces,
+- [01:05:02,660 - 01:05:04,780] it's a feature of curved coordinates.
+- [01:05:07,999 - 01:05:08,759] Now,
+- [01:05:08,759 - 01:05:09,520] okay.
+- [01:05:11,119 - 01:05:15,340] So because the metric tensor is constant,
+- [01:05:15,480 - 01:05:18,260] or at least has zero
+- [01:05:18,260 - 01:05:21,040] derivative in Gaussian normal coordinates,
+- [01:05:22,939 - 01:05:26,500] and the definition of covariant derivative
+- [01:05:26,920 - 01:05:29,520] is to differentiate first in Gaussian normal coordinates
+- [01:05:29,520 - 01:05:30,390] and then take what you get
+- [01:05:30,390 - 01:05:31,260] and treat it as a tensor,
+- [01:05:31,520 - 01:05:33,740] it must mean that the covariant
+- [01:05:33,740 - 01:05:35,960] derivative of the metric tensor is zero.
+- [01:05:36,800 - 01:05:39,050] That's what's going to allow
+- [01:05:39,050 - 01:05:41,300] us to compute the Christoffel symbols.
+- [01:05:42,180 - 01:05:42,740] Alright,
+- [01:05:42,740 - 01:05:43,980] so let's write down that equation.
+- [01:05:44,220 - 01:05:47,900] Here is the form for the different derivative,
+- [01:05:48,180 - 01:05:50,200] the covariant derivative of any
+- [01:05:50,200 - 01:05:52,220] tensor with two lower indices.
+- [01:05:52,720 - 01:05:55,560] So let's apply it to the metric tensor itself.
+- [01:05:57,280 - 01:06:01,740] ds of GMN is equal,
+- [01:06:01,740 - 01:06:02,980] first term,
+- [01:06:03,200 - 01:06:11,410] dG MN by dXS minus gamma T S M G
+- [01:06:11,410 - 01:06:19,620] T N minus gamma T S N G M T.
+- [01:06:23,640 - 01:06:25,820] All I've done is rewritten this equation,
+- [01:06:26,440 - 01:06:30,180] and now I'm going to add that the covariant derivative
+- [01:06:30,640 - 01:06:32,560] of the metric tensor is equal to zero.
+- [01:06:34,140 - 01:06:34,700] Why?
+- [01:06:34,700 - 01:06:36,480] Because the ordinary derivative
+- [01:06:36,480 - 01:06:38,260] is zero in Gaussian coordinates,
+- [01:06:38,340 - 01:06:39,700] in Gaussian normal coordinates.
+- [01:06:40,680 - 01:06:41,240] Alright,
+- [01:06:41,240 - 01:06:41,540] now,
+- [01:06:41,540 - 01:06:44,800] let's write the same equation,
+- [01:06:45,000 - 01:06:47,420] except permuting the indices,
+- [01:06:48,560 - 01:06:50,820] interchanging S and M and so forth.
+- [01:06:51,120 - 01:06:53,200] This is the equation for differentiating
+- [01:06:53,200 - 01:06:55,280] with respect to S of GMN.
+- [01:06:56,140 - 01:06:56,940] By inspection,
+- [01:06:56,940 - 01:06:59,340] why am I doing this?
+- [01:06:59,920 - 01:07:01,400] I'm doing this because I want
+- [01:07:01,400 - 01:07:02,880] to get as much information out here
+- [01:07:02,880 - 01:07:05,900] about things like this as I can,
+- [01:07:06,180 - 01:07:07,960] and then try to see if there's
+- [01:07:07,960 - 01:07:09,740] any way that I can manipulate the equations
+- [01:07:10,520 - 01:07:13,800] to get to isolate and figure out what gamma is.
+- [01:07:14,400 - 01:07:15,200] So it's,
+- [01:07:15,200 - 01:07:15,860] you know,
+- [01:07:15,860 - 01:07:17,760] people who are experienced at this sort of thing
+- [01:07:17,760 - 01:07:18,880] look at it and say,
+- [01:07:18,880 - 01:07:19,660] I know what to do.
+- [01:07:20,380 - 01:07:21,580] If you don't know what to do,
+- [01:07:21,580 - 01:07:22,960] I'll tell you what to do.
+- [01:07:23,040 - 01:07:23,800] You do it once,
+- [01:07:23,800 - 01:07:25,520] and then when your friend comes and asks you,
+- [01:07:25,520 - 01:07:26,820] how do you find the Christoffel symbols,
+- [01:07:26,820 - 01:07:27,140] you'll say,
+- [01:07:27,140 - 01:07:27,860] I know what to do.
+- [01:07:28,140 - 01:07:28,900] I'm experienced.
+- [01:07:30,700 - 01:07:31,140] Okay,
+- [01:07:31,140 - 01:07:32,300] so you do the same thing,
+- [01:07:32,300 - 01:07:33,540] except now,
+- [01:07:34,400 - 01:07:37,060] I'm going to interchange S and M.
+- [01:07:37,400 - 01:07:38,980] Just permute S and M,
+- [01:07:38,980 - 01:07:40,380] and that means we're going to write down
+- [01:07:41,359 - 01:07:43,300] DM of GSN.
+- [01:07:44,660 - 01:07:45,760] How do I do it?
+- [01:07:45,760 - 01:07:47,220] I just do it by
+- [01:07:48,200 - 01:07:51,560] interchanging or replacing S by M and M by S,
+- [01:07:52,000 - 01:07:54,800] and that gives me derivative of G,
+- [01:07:57,140 - 01:08:00,060] that's SN with respect to XM,
+- [01:08:03,160 - 01:08:03,680] minus,
+- [01:08:03,680 - 01:08:04,200] now,
+- [01:08:04,200 - 01:08:07,960] interchanging S and M here doesn't change anything,
+- [01:08:08,100 - 01:08:09,660] because S and M,
+- [01:08:09,660 - 01:08:10,680] yeah,
+- [01:08:10,680 - 01:08:13,040] from the symmetry here,
+- [01:08:13,180 - 01:08:14,940] so this is the same thing,
+- [01:08:14,940 - 01:08:16,399] gamma SMT,
+- [01:08:16,399 - 01:08:17,920] GT,
+- [01:08:17,920 - 01:08:19,160] let's see,
+- [01:08:19,839 - 01:08:20,359] yeah,
+- [01:08:20,359 - 01:08:21,939] we're just interchanging S and M,
+- [01:08:21,939 - 01:08:22,920] GTN,
+- [01:08:24,920 - 01:08:26,180] and then over here,
+- [01:08:27,359 - 01:08:29,180] so we're interchanging S and M,
+- [01:08:29,180 - 01:08:31,240] so this is gamma MNT,
+- [01:08:31,240 - 01:08:33,000] GST,
+- [01:08:34,060 - 01:08:34,899] and of course,
+- [01:08:34,899 - 01:08:36,340] for exactly the same reason,
+- [01:08:36,439 - 01:08:38,180] this is also equal to zero.
+- [01:08:40,100 - 01:08:40,979] And finally,
+- [01:08:40,979 - 01:08:44,000] there's one last possibility.
+- [01:08:45,279 - 01:08:45,720] Here,
+- [01:08:45,720 - 01:08:47,680] S is the odd man out,
+- [01:08:47,680 - 01:08:48,700] M and N go together.
+- [01:08:48,979 - 01:08:49,420] Here,
+- [01:08:49,420 - 01:08:50,660] M is the odd man out,
+- [01:08:50,660 - 01:08:51,620] S and N go together.
+- [01:08:51,620 - 01:08:57,420] And the last one is DN of GSM,
+- [01:08:58,620 - 01:09:01,240] and let's see,
+- [01:09:01,240 - 01:09:03,439] I think I'll just copy it down,
+- [01:09:04,620 - 01:09:18,720] equals D by DXN of GSM minus gamma SNT,
+- [01:09:18,720 - 01:09:19,620] GTN,
+- [01:09:22,660 - 01:09:23,200] no,
+- [01:09:23,200 - 01:09:23,740] GTM,
+- [01:09:27,660 - 01:09:29,859] minus gamma MNT,
+- [01:09:29,859 - 01:09:31,040] MNT,
+- [01:09:31,040 - 01:09:33,160] GST,
+- [01:09:33,180 - 01:09:34,520] and that's equal to zero.
+- [01:09:36,060 - 01:09:38,060] Now you stare at this for a few minutes.
+- [01:09:39,300 - 01:09:39,960] You ask,
+- [01:09:39,960 - 01:09:41,500] how can I either add these,
+- [01:09:41,500 - 01:09:42,359] subtract these,
+- [01:09:42,420 - 01:09:45,920] or do something clever that will isolate
+- [01:09:45,920 - 01:09:49,420] only one of these terms with the gammas,
+- [01:09:49,420 - 01:09:49,600] and then,
+- [01:09:49,600 - 01:09:49,600] you know,
+- [01:09:49,600 - 01:09:49,600] you can't do anything about it.
+- [01:09:50,439 - 01:09:50,920] So I'll do this.
+- [01:09:50,920 - 01:09:53,220] So that I don't have a horrible bunch of equations,
+- [01:09:53,420 - 01:09:54,700] but basically only one equation.
+- [01:09:54,880 - 01:09:55,800] So I'll tell you what to do.
+- [01:09:56,060 - 01:09:57,640] Call this equation three,
+- [01:09:58,460 - 01:09:59,940] call this equation two,
+- [01:10:00,100 - 01:10:01,480] and call this equation one,
+- [01:10:02,160 - 01:10:05,500] and add equation three to two,
+- [01:10:05,540 - 01:10:06,600] and subtract one.
+- [01:10:07,420 - 01:10:08,660] And we'll see what happens.
+- [01:10:11,260 - 01:10:12,220] We'll see what happens.
+- [01:10:12,520 - 01:10:13,360] First of all,
+- [01:10:13,360 - 01:10:13,740] of course,
+- [01:10:13,740 - 01:10:15,100] we will get these derivatives.
+- [01:10:15,340 - 01:10:16,340] We'll get this derivative,
+- [01:10:16,340 - 01:10:17,440] plus this derivative,
+- [01:10:17,440 - 01:10:18,400] minus this derivative.
+- [01:10:18,400 - 01:10:20,520] So let's put them down.
+- [01:10:22,220 - 01:10:23,760] On one side of the equation,
+- [01:10:24,640 - 01:10:26,490] I'm going to transpose all of
+- [01:10:26,490 - 01:10:28,340] this junk to the other side.
+- [01:10:29,000 - 01:10:29,440] Okay,
+- [01:10:29,440 - 01:10:30,940] so on the left side of the equation,
+- [01:10:30,940 - 01:10:31,700] we will get
+- [01:10:38,540 - 01:10:38,980] DNGSM
+- [01:10:38,980 - 01:10:46,400] plus DNGSM,
+- [01:10:49,880 - 01:10:50,320] no,
+- [01:10:50,320 - 01:10:50,760] DNMG,
+- [01:10:51,219 - 01:10:51,440] ah,
+- [01:10:51,440 - 01:10:52,120] ta-ta-ta-ta-ta.
+- [01:10:55,240 - 01:10:55,680] DGSN
+- [01:11:00,160 - 01:11:00,600] M,
+- [01:11:03,860 - 01:11:04,760] that's this one,
+- [01:11:04,840 - 01:11:08,660] and the last one is minus GMN,
+- [01:11:09,200 - 01:11:09,640] sorry,
+- [01:11:11,840 - 01:11:12,280] derivative,
+- [01:11:17,120 - 01:11:17,560] GMN.
+- [01:11:18,800 - 01:11:22,020] That's this plus this minus this,
+- [01:11:22,100 - 01:11:23,920] or this plus this minus this.
+- [01:11:24,460 - 01:11:24,860] Now,
+- [01:11:24,860 - 01:11:25,840] how about on the other side?
+- [01:11:25,940 - 01:11:26,240] Let's see,
+- [01:11:26,240 - 01:11:27,380] there may be some things which cancel.
+- [01:11:27,660 - 01:11:28,900] Let's hope there's things which cancel.
+- [01:11:30,340 - 01:11:31,840] This comes with a minus sign,
+- [01:11:32,060 - 01:11:33,200] this comes with a plus sign,
+- [01:11:33,320 - 01:11:34,300] this comes with a plus sign.
+- [01:11:35,840 - 01:11:36,240] So,
+- [01:11:36,240 - 01:11:38,080] this and this are the same,
+- [01:11:39,060 - 01:11:41,200] but they cancel because of the opposite sign.
+- [01:11:41,540 - 01:11:41,940] No,
+- [01:11:41,940 - 01:11:42,840] this and this are gone.
+- [01:11:44,780 - 01:11:45,540] They are gone.
+- [01:11:45,700 - 01:11:46,620] What else is gone?
+- [01:11:51,339 - 01:11:51,900] GTSN,
+- [01:11:51,900 - 01:11:52,300] ah,
+- [01:11:52,300 - 01:11:52,860] here it is.
+- [01:11:53,720 - 01:11:56,980] This one and this one come with opposite signs,
+- [01:11:57,300 - 01:11:58,580] so they are gone.
+- [01:11:59,800 - 01:12:01,660] We're left with two terms,
+- [01:12:02,200 - 01:12:03,040] but they're the same.
+- [01:12:04,300 - 01:12:04,860] So,
+- [01:12:04,860 - 01:12:05,580] we're in luck.
+- [01:12:05,940 - 01:12:09,100] We can write that this is equal to
+- [01:12:10,759 - 01:12:11,320] twice,
+- [01:12:11,320 - 01:12:13,240] we need over to the right hand side,
+- [01:12:14,379 - 01:12:16,460] twice gamma MN,
+- [01:12:20,880 - 01:12:21,760] T GST.
+- [01:12:24,480 - 01:12:24,920] Well,
+- [01:12:24,920 - 01:12:25,780] we still have,
+- [01:12:25,780 - 01:12:26,500] we still don't,
+- [01:12:26,540 - 01:12:27,360] we're still not there.
+- [01:12:27,520 - 01:12:29,820] We would like to get gamma MN by itself.
+- [01:12:30,340 - 01:12:31,820] Trying to find out what the gamma,
+- [01:12:31,860 - 01:12:32,960] what the Christoffel symbols are.
+- [01:12:33,080 - 01:12:33,600] That's our goal.
+- [01:12:33,880 - 01:12:35,160] Figure out what they are in
+- [01:12:35,160 - 01:12:36,440] terms of derivatives of the metric.
+- [01:12:36,860 - 01:12:38,140] We're almost there.
+- [01:12:38,580 - 01:12:39,380] First of all,
+- [01:12:39,380 - 01:12:40,750] we can see that if all
+- [01:12:40,750 - 01:12:42,120] the derivatives of the metric are zero,
+- [01:12:42,260 - 01:12:44,040] the Christoffel symbol must be zero.
+- [01:12:44,460 - 01:12:45,530] But how are we going
+- [01:12:45,530 - 01:12:46,600] to get rid of this GST?
+- [01:12:46,600 - 01:12:48,900] And the answer is,
+- [01:12:50,059 - 01:12:51,700] GST has an inverse.
+- [01:12:53,999 - 01:12:54,559] Basically,
+- [01:12:54,559 - 01:12:58,440] you can just take this over to the other side,
+- [01:12:58,640 - 01:13:00,920] but replace it by the inverse matrix.
+- [01:13:01,820 - 01:13:02,380] So,
+- [01:13:02,380 - 01:13:02,980] first of all,
+- [01:13:02,980 - 01:13:03,860] let's put a one half.
+- [01:13:07,580 - 01:13:08,380] And now,
+- [01:13:08,380 - 01:13:10,100] put a bracket around this,
+- [01:13:11,000 - 01:13:14,040] and take this GST over to the other side,
+- [01:13:14,160 - 01:13:16,580] except in its inverse matrix.
+- [01:13:16,600 - 01:13:16,680] So,
+- [01:13:16,680 - 01:13:16,750] you can see that the
+- [01:13:16,750 - 01:13:16,820] GST is in the inverse form.
+- [01:13:18,980 - 01:13:20,560] And this is the correct formula.
+- [01:13:20,740 - 01:13:22,940] This is the formula for the Christoffel symbol.
+- [01:13:24,340 - 01:13:25,720] It looks pretty simple.
+- [01:13:26,560 - 01:13:28,000] We'll look at it for a moment.
+- [01:13:28,920 - 01:13:30,660] The M and N are symmetric.
+- [01:13:31,360 - 01:13:32,220] Look at it.
+- [01:13:32,300 - 01:13:32,600] M,
+- [01:13:32,600 - 01:13:33,240] N,
+- [01:13:33,240 - 01:13:34,780] if you interchange these two,
+- [01:13:34,860 - 01:13:36,360] and here it's symmetric again,
+- [01:13:37,299 - 01:13:38,880] has one negative term,
+- [01:13:40,459 - 01:13:40,980] oops,
+- [01:13:41,740 - 01:13:42,260] yeah,
+- [01:13:42,260 - 01:13:43,420] one negative term,
+- [01:13:43,420 - 01:13:44,640] two positive terms,
+- [01:13:44,640 - 01:13:45,480] not very complicated.
+- [01:13:45,720 - 01:13:48,420] The problem is there's a boatload of them.
+- [01:13:48,580 - 01:13:50,680] When you think about four dimensional space,
+- [01:13:50,940 - 01:13:52,740] and you let S and T and,
+- [01:13:52,920 - 01:13:53,860] sorry,
+- [01:13:53,940 - 01:13:56,290] and let all of these coefficients
+- [01:13:56,290 - 01:13:58,640] range over from one to four,
+- [01:13:58,960 - 01:14:01,400] there's just a lot of Christoffel symbols.
+- [01:14:01,840 - 01:14:04,160] And it's that which makes
+- [01:14:04,160 - 01:14:06,480] doing calculations in general relativity
+- [01:14:06,480 - 01:14:08,060] a very tedious business.
+- [01:14:10,360 - 01:14:11,000] Intrinsically,
+- [01:14:11,000 - 01:14:12,680] there's nothing hard about it.
+- [01:14:12,960 - 01:14:13,600] But,
+- [01:14:13,600 - 01:14:14,260] in fact,
+- [01:14:15,679 - 01:14:17,349] doing a calculation in some
+- [01:14:17,349 - 01:14:19,020] sort of general relativity context
+- [01:14:19,020 - 01:14:20,930] usually fills page after page
+- [01:14:20,930 - 01:14:22,840] after page of nothing more complicated
+- [01:14:23,200 - 01:14:24,510] than just computing these
+- [01:14:24,510 - 01:14:25,820] derivatives and putting them together.
+- [01:14:26,240 - 01:14:27,120] Excuse me.
+- [01:14:27,260 - 01:14:27,620] Yeah.
+- [01:14:27,760 - 01:14:28,500] I'm sorry,
+- [01:14:28,500 - 01:14:30,840] I missed why all these equations are equal to zero.
+- [01:14:31,300 - 01:14:31,780] Okay,
+- [01:14:31,780 - 01:14:32,480] I'll say it again.
+- [01:14:33,599 - 01:14:35,320] G is constant,
+- [01:14:35,960 - 01:14:39,100] has zero derivatives in Gaussian normal coordinates.
+- [01:14:42,520 - 01:14:43,580] I can't get that.
+- [01:14:43,580 - 01:14:44,360] Oh,
+- [01:14:44,360 - 01:14:44,680] yeah,
+- [01:14:44,680 - 01:14:45,380] at that point.
+- [01:14:45,480 - 01:14:47,320] All of this is at that one point.
+- [01:14:47,460 - 01:14:47,540] Yeah.
+- [01:14:48,300 - 01:14:48,780] But,
+- [01:14:51,400 - 01:14:52,920] once it's true at one point,
+- [01:14:53,620 - 01:14:54,840] it's true at every point.
+- [01:14:55,860 - 01:14:57,860] To derive it at any point,
+- [01:14:58,120 - 01:15:01,120] you go to Gaussian normal coordinates at that point.
+- [01:15:01,800 - 01:15:02,480] So you say,
+- [01:15:02,480 - 01:15:05,720] I want a formula appropriate to a particular point.
+- [01:15:05,860 - 01:15:06,840] I go to that point,
+- [01:15:06,840 - 01:15:08,360] use Gaussian normal coordinates,
+- [01:15:08,600 - 01:15:10,760] and find out that this is what gamma is.
+- [01:15:11,020 - 01:15:13,080] But once you know it at any point,
+- [01:15:13,580 - 01:15:14,860] it's true at every point.
+- [01:15:16,100 - 01:15:18,740] So this is the connection between gamma
+- [01:15:18,740 - 01:15:21,380] and the derivatives of G at every point.
+- [01:15:22,540 - 01:15:25,180] The thing is that this is not a tensor.
+- [01:15:26,700 - 01:15:27,740] It's not a tensor,
+- [01:15:27,740 - 01:15:29,220] and so it can be
+- [01:15:29,220 - 01:15:30,700] zero in one frame of reference
+- [01:15:30,700 - 01:15:32,120] and not zero in others.
+- [01:15:32,380 - 01:15:33,240] For example,
+- [01:15:33,240 - 01:15:35,760] in Gaussian normal coordinates at the point,
+- [01:15:35,820 - 01:15:36,660] at that point,
+- [01:15:36,820 - 01:15:38,100] at that point,
+- [01:15:38,100 - 01:15:39,340] this is equal to zero,
+- [01:15:39,460 - 01:15:41,340] but in some other coordinate system,
+- [01:15:41,340 - 01:15:41,840] it's not.
+- [01:15:42,720 - 01:15:43,240] Um,
+- [01:15:44,219 - 01:15:45,620] even more,
+- [01:15:45,820 - 01:15:47,820] take ordinary flat space.
+- [01:15:48,280 - 01:15:49,620] In flat space,
+- [01:15:49,620 - 01:15:51,340] you can find coordinates
+- [01:15:51,340 - 01:15:55,040] in which the G's are constant everywheres.
+- [01:15:55,940 - 01:15:57,180] In flat space.
+- [01:15:57,560 - 01:15:59,350] But you can also find other
+- [01:15:59,350 - 01:16:01,140] coordinates in which they're not constant.
+- [01:16:02,040 - 01:16:03,200] Polar coordinates,
+- [01:16:03,200 - 01:16:04,420] the G's are not constant.
+- [01:16:04,720 - 01:16:06,040] In Cartesian coordinates,
+- [01:16:06,040 - 01:16:06,880] they are constant.
+- [01:16:07,520 - 01:16:09,780] The Christoffel symbols can be non-zero
+- [01:16:09,780 - 01:16:12,040] even if the space is flat.
+- [01:16:12,580 - 01:16:13,240] In fact,
+- [01:16:13,240 - 01:16:13,980] they generally are.
+- [01:16:14,080 - 01:16:17,360] They are in polar coordinates.
+- [01:16:18,780 - 01:16:19,220] Question?
+- [01:16:19,480 - 01:16:19,620] Yeah.
+- [01:16:21,040 - 01:16:22,080] Just to clarify,
+- [01:16:22,260 - 01:16:25,290] do you represent the metric that
+- [01:16:25,290 - 01:16:28,320] G has a 2x2 matrix in this?
+- [01:16:29,000 - 01:16:29,940] Not a 2x2,
+- [01:16:29,940 - 01:16:30,540] an nxn,
+- [01:16:30,540 - 01:16:31,940] or a 4x4,
+- [01:16:31,940 - 01:16:32,600] or whatever it is.
+- [01:16:32,660 - 01:16:33,360] Whatever it is,
+- [01:16:33,360 - 01:16:34,280] but here you're on the,
+- [01:16:35,620 - 01:16:36,060] well,
+- [01:16:36,060 - 01:16:36,860] whatever it is,
+- [01:16:36,860 - 01:16:37,500] it's 4x4,
+- [01:16:37,500 - 01:16:38,220] nxn.
+- [01:16:38,340 - 01:16:38,720] Um,
+- [01:16:38,720 - 01:16:40,020] that's clear,
+- [01:16:40,020 - 01:16:41,800] but what is the Christoffel symbol?
+- [01:16:42,040 - 01:16:43,580] Is the Christoffel symbol also nxn?
+- [01:16:43,980 - 01:16:44,580] No.
+- [01:16:44,780 - 01:16:46,240] It's nxnxn.
+- [01:16:46,740 - 01:16:48,020] It's got three indices.
+- [01:16:48,680 - 01:16:49,280] nxn,
+- [01:16:49,280 - 01:16:51,140] now it's nxnxn,
+- [01:16:52,239 - 01:16:53,920] but there's some symmetry.
+- [01:16:54,040 - 01:16:55,520] So there's 40 components to it.
+- [01:16:55,640 - 01:16:56,620] It has 40 components.
+- [01:16:57,700 - 01:16:59,380] Everything always has 40 components.
+- [01:17:02,400 - 01:17:03,320] m and n,
+- [01:17:03,320 - 01:17:04,060] if you fix t,
+- [01:17:04,060 - 01:17:04,900] fix t,
+- [01:17:05,999 - 01:17:08,760] then gamma mn has 10 components.
+- [01:17:09,200 - 01:17:11,740] Same 10 components for a symmetric tensor.
+- [01:17:12,040 - 01:17:14,720] And then you let t run over all four components,
+- [01:17:15,280 - 01:17:16,580] and that gives you 40.
+- [01:17:16,680 - 01:17:19,540] So there are 40 independent Christoffel symbols.
+- [01:17:20,980 - 01:17:21,640] Excuse me.
+- [01:17:21,760 - 01:17:21,940] Yeah.
+- [01:17:22,000 - 01:17:22,920] I just want to make
+- [01:17:22,920 - 01:17:23,840] sure I understand what you said.
+- [01:17:24,160 - 01:17:25,950] I agree that you proved
+- [01:17:25,950 - 01:17:27,740] that at that one particular point,
+- [01:17:27,860 - 01:17:29,080] and it's true at all points,
+- [01:17:29,120 - 01:17:30,720] but for each point that you do it,
+- [01:17:30,840 - 01:17:32,260] you have to use a different G.
+- [01:17:32,380 - 01:17:34,780] You have to use the G
+- [01:17:34,780 - 01:17:37,180] that's appropriate for the Gaussian normal coordinates.
+- [01:17:37,440 - 01:17:37,880] No.
+- [01:17:37,880 - 01:17:38,680] No.
+- [01:17:38,680 - 01:17:39,400] No.
+- [01:17:39,400 - 01:17:39,900] No.
+- [01:17:39,900 - 01:17:40,420] No.
+- [01:17:40,420 - 01:17:40,840] No.
+- [01:17:40,840 - 01:17:41,200] No.
+- [01:17:42,040 - 01:17:42,240] No.
+- [01:17:43,039 - 01:17:45,300] You have some coordinates,
+- [01:17:45,400 - 01:17:48,040] which are general coordinates all over the place.
+- [01:17:48,880 - 01:17:50,460] And I want to know
+- [01:17:50,460 - 01:17:52,040] how to differentiate at that point.
+- [01:17:52,120 - 01:17:53,320] So at that point,
+- [01:17:53,320 - 01:17:55,260] I go to Gaussian normal coordinates.
+- [01:17:55,600 - 01:17:57,400] I do my differentiating,
+- [01:17:57,460 - 01:17:59,920] and then I relate it back to the coordinates
+- [01:18:01,040 - 01:18:03,600] that are general coordinates which cover the whole space.
+- [01:18:04,080 - 01:18:05,180] At each point,
+- [01:18:05,879 - 01:18:07,140] at each point,
+- [01:18:08,519 - 01:18:09,800] this is what you do.
+- [01:18:15,180 - 01:18:16,080] With this formula.
+- [01:18:18,600 - 01:18:19,000] No.
+- [01:18:21,640 - 01:18:23,180] You take your curved coordinates,
+- [01:18:23,180 - 01:18:23,900] whatever they are,
+- [01:18:24,540 - 01:18:25,340] and then you say,
+- [01:18:25,420 - 01:18:26,900] I want to know how
+- [01:18:26,900 - 01:18:28,380] to compare vectors at neighboring points.
+- [01:18:29,080 - 01:18:33,440] So I go to Gaussian normal coordinates at that point,
+- [01:18:33,460 - 01:18:34,300] and it tells me how
+- [01:18:34,300 - 01:18:35,140] to compare them at that point.
+- [01:18:35,240 - 01:18:36,220] Here's what it tells me to do.
+- [01:18:37,180 - 01:18:39,600] And those Gs are the Gs associated
+- [01:18:39,600 - 01:18:42,020] with the Gaussian coordinates at that point?
+- [01:18:42,020 - 01:18:42,220] No.
+- [01:18:42,540 - 01:18:44,920] They're the Gs that are associated with any coordinates.
+- [01:18:45,420 - 01:18:47,420] With Gaussian normal coordinates,
+- [01:18:47,420 - 01:18:48,360] these are zero.
+- [01:18:48,620 - 01:18:50,240] They're all zero at that point.
+- [01:18:51,000 - 01:18:53,540] The derivatives are all zero at that point.
+- [01:18:54,660 - 01:18:55,380] So no.
+- [01:18:55,500 - 01:18:57,800] These are the coordinates that you began with.
+- [01:18:58,200 - 01:19:00,640] You transformed the Gaussian coordinates,
+- [01:19:00,920 - 01:19:02,520] derived all of this,
+- [01:19:02,700 - 01:19:04,400] but then you're finished with it.
+- [01:19:04,440 - 01:19:06,180] You're finished with the Gaussian normal coordinates.
+- [01:19:06,320 - 01:19:08,140] Now you're finished with the Gaussian normal coordinates,
+- [01:19:08,300 - 01:19:09,760] and you go on.
+- [01:19:10,380 - 01:19:12,100] This was just a trick to...
+- [01:19:13,600 - 01:19:15,880] The Gaussian normal coordinates were just a trick
+- [01:19:17,240 - 01:19:20,020] to eliminate locally at each point
+- [01:19:20,020 - 01:19:22,860] the variation of the metric tensor with position.
+- [01:19:23,480 - 01:19:23,960] Right.
+- [01:19:23,960 - 01:19:24,860] Good.
+- [01:19:27,060 - 01:19:29,250] Is this equation the equation that
+- [01:19:29,250 - 01:19:31,440] tells you that a space is flat?
+- [01:19:31,760 - 01:19:32,520] It tells you what?
+- [01:19:32,680 - 01:19:34,540] That your space is flat?
+- [01:19:35,060 - 01:19:35,540] No.
+- [01:19:35,940 - 01:19:36,420] No,
+- [01:19:36,420 - 01:19:36,540] no,
+- [01:19:36,540 - 01:19:36,700] no,
+- [01:19:36,700 - 01:19:36,860] no,
+- [01:19:36,860 - 01:19:36,980] no.
+- [01:19:37,020 - 01:19:38,600] This does not tell you that the space is flat.
+- [01:19:39,760 - 01:19:40,940] This is just...
+- [01:19:41,720 - 01:19:43,400] This just tells you what gamma is.
+- [01:19:43,660 - 01:19:45,980] If gamma is...
+- [01:19:46,600 - 01:19:47,260] I assure you,
+- [01:19:47,260 - 01:19:48,600] if gamma is zero everywhere,
+- [01:19:48,700 - 01:19:50,880] it not only means the space is flat,
+- [01:19:50,980 - 01:19:53,040] but it also means you've chosen Cartesian coordinates.
+- [01:19:56,280 - 01:19:59,340] Didn't we get here by setting the derivative,
+- [01:19:59,600 - 01:20:02,200] the covariant derivative of the metric tensor equal to zero?
+- [01:20:02,840 - 01:20:04,240] And so that by itself is
+- [01:20:04,240 - 01:20:05,640] not enough to tell you flatness.
+- [01:20:05,760 - 01:20:05,920] No.
+- [01:20:05,980 - 01:20:07,380] The covariant derivative of the
+- [01:20:07,380 - 01:20:08,780] metric tensor is always zero.
+- [01:20:10,339 - 01:20:12,259] That's not the same as saying
+- [01:20:12,259 - 01:20:14,180] the metric is constant over space,
+- [01:20:14,460 - 01:20:15,740] the metric tensor.
+- [01:20:16,879 - 01:20:20,480] The statement that the metric tensor itself is constant
+- [01:20:20,480 - 01:20:23,780] would be that the ordinary derivative is zero.
+- [01:20:28,260 - 01:20:28,820] Right.
+- [01:20:28,900 - 01:20:31,300] But the covariant derivative of the metric is always zero.
+- [01:20:32,800 - 01:20:33,360] Why?
+- [01:20:34,400 - 01:20:36,280] Because in Gaussian coordinates,
+- [01:20:36,280 - 01:20:37,220] it's zero.
+- [01:20:37,880 - 01:20:39,740] And if a tensor is zero in one space,
+- [01:20:39,760 - 01:20:40,540] it's one coordinate frame,
+- [01:20:40,660 - 01:20:42,080] and zero in every coordinate frame.
+- [01:20:42,400 - 01:20:43,760] Add one more thing,
+- [01:20:43,880 - 01:20:47,840] that covariant derivatives are tensors.
+- [01:20:50,580 - 01:20:53,500] So this is conceptually tricky.
+- [01:20:54,640 - 01:20:56,120] But at the end of the day,
+- [01:20:56,340 - 01:21:00,860] the rule is calculate your Christoffel symbols
+- [01:21:01,700 - 01:21:06,280] and replace ordinary derivative.
+- [01:21:06,400 - 01:21:07,380] In many contexts,
+- [01:21:07,600 - 01:21:09,560] replace ordinary derivatives,
+- [01:21:09,560 - 01:21:11,380] with covariant derivatives.
+- [01:21:12,000 - 01:21:15,180] You can write your equations in Gaussian normal coordinates,
+- [01:21:15,460 - 01:21:17,660] then they just involve ordinary derivatives.
+- [01:21:17,960 - 01:21:20,860] But if you want the same equations in general coordinates,
+- [01:21:21,160 - 01:21:23,160] then you replace the
+- [01:21:23,160 - 01:21:25,160] ordinary derivatives by covariant derivatives.
+- [01:21:26,280 - 01:21:27,140] That's the rule.
+- [01:21:27,200 - 01:21:27,760] Think about it.
+- [01:21:27,780 - 01:21:28,160] Look,
+- [01:21:28,160 - 01:21:30,400] this requires sitting down and thinking about it,
+- [01:21:31,339 - 01:21:33,120] and understanding what we're doing.
+- [01:21:36,340 - 01:21:38,200] We have not got the curvature yet,
+- [01:21:38,200 - 01:21:40,360] so let's try to get to curvature.
+- [01:21:40,620 - 01:21:42,400] Here we have the definition of...
+- [01:21:44,120 - 01:21:44,560] Now,
+- [01:21:44,560 - 01:21:46,300] let's talk about what curvature is.
+- [01:21:49,220 - 01:21:52,540] It's easiest to start with two-dimensional curvature.
+- [01:21:54,340 - 01:21:56,060] How do we probe for curvature?
+- [01:21:57,560 - 01:21:58,000] Well,
+- [01:21:58,000 - 01:21:58,780] let's draw...
+- [01:21:58,780 - 01:22:01,200] Let's begin by drawing a space which is curved.
+- [01:22:01,320 - 01:22:02,780] This sphere is obviously curved,
+- [01:22:03,400 - 01:22:05,620] but I don't want to deal with a sphere,
+- [01:22:05,740 - 01:22:06,860] I want to deal with a cone,
+- [01:22:07,060 - 01:22:07,760] but not a cone.
+- [01:22:07,760 - 01:22:11,120] But a cone with a round point at the top.
+- [01:22:11,820 - 01:22:13,260] The top of a mountain,
+- [01:22:13,400 - 01:22:15,280] but with the sides being nice and flat.
+- [01:22:16,280 - 01:22:17,990] So that if you're away from
+- [01:22:17,990 - 01:22:19,700] the top of the volcano up here,
+- [01:22:19,780 - 01:22:20,140] I don't know,
+- [01:22:20,140 - 01:22:21,340] it's not a volcano,
+- [01:22:21,460 - 01:22:25,060] it's just a rounded cone.
+- [01:22:25,640 - 01:22:26,840] On the sides here,
+- [01:22:26,840 - 01:22:28,960] it looks cone-like.
+- [01:22:29,840 - 01:22:30,680] At the top,
+- [01:22:30,680 - 01:22:31,540] it's smoothed off,
+- [01:22:31,580 - 01:22:33,380] it's been shaved off and made round.
+- [01:22:34,440 - 01:22:34,880] Okay.
+- [01:22:35,760 - 01:22:37,120] The first statement is,
+- [01:22:37,120 - 01:22:38,800] such a cone is flat
+- [01:22:40,440 - 01:22:42,820] everywheres except up near the top.
+- [01:22:43,060 - 01:22:43,720] To see that,
+- [01:22:43,720 - 01:22:47,720] just take the same space down here,
+- [01:22:48,900 - 01:22:50,920] but continue it so that it
+- [01:22:50,920 - 01:22:52,940] really does form a genuine cone.
+- [01:22:53,400 - 01:22:53,720] Okay,
+- [01:22:53,720 - 01:22:54,800] so now we have a cone.
+- [01:22:55,760 - 01:22:58,560] It only differs from the space that we're talking about
+- [01:22:58,560 - 01:23:00,280] up in this vicinity up here.
+- [01:23:01,080 - 01:23:01,680] Now,
+- [01:23:01,680 - 01:23:04,000] take the cone and slice it.
+- [01:23:04,140 - 01:23:06,720] Slice it down here.
+- [01:23:07,120 - 01:23:08,560] And open it up.
+- [01:23:08,740 - 01:23:09,260] Alright,
+- [01:23:09,260 - 01:23:10,000] this is...
+- [01:23:17,120 - 01:23:17,920] Here's a cone.
+- [01:23:18,920 - 01:23:19,960] Slice it down here.
+- [01:23:20,340 - 01:23:21,540] And open it up.
+- [01:23:21,580 - 01:23:22,420] It's clearly flat.
+- [01:23:23,840 - 01:23:25,360] It's clearly a flat space.
+- [01:23:27,000 - 01:23:28,620] But it's a kind of...
+- [01:23:29,259 - 01:23:29,780] Question?
+- [01:23:31,340 - 01:23:31,860] Okay.
+- [01:23:32,360 - 01:23:33,380] Open it up,
+- [01:23:33,380 - 01:23:34,500] and what does it look like?
+- [01:23:34,920 - 01:23:36,480] It looks like,
+- [01:23:36,480 - 01:23:38,980] depending on the angle of the cone up here,
+- [01:23:39,420 - 01:23:40,920] it looks like a flat space,
+- [01:23:41,200 - 01:23:42,960] but when you cut it and opened it up,
+- [01:23:43,080 - 01:23:45,180] there was a piece cut out of it.
+- [01:23:48,020 - 01:23:48,420] Missing.
+- [01:23:48,440 - 01:23:49,340] A missing piece.
+- [01:23:54,540 - 01:23:56,560] I don't have a scissor.
+- [01:23:56,660 - 01:23:57,900] I should have brought a scissor.
+- [01:23:58,080 - 01:23:59,360] I didn't bring a scissor.
+- [01:23:59,440 - 01:23:59,700] Alright.
+- [01:24:00,480 - 01:24:01,560] Take a piece of paper,
+- [01:24:01,560 - 01:24:02,320] cut it,
+- [01:24:02,380 - 01:24:04,560] cut out a wedge of a given angle,
+- [01:24:04,680 - 01:24:05,780] and then glue it together,
+- [01:24:05,780 - 01:24:06,820] and you make a cone.
+- [01:24:08,000 - 01:24:10,160] And the cone has a tip up here.
+- [01:24:11,160 - 01:24:13,040] The tip is clearly not flat.
+- [01:24:14,300 - 01:24:16,000] But the rest of the cone is flat.
+- [01:24:16,160 - 01:24:17,440] You cannot flatten this.
+- [01:24:17,740 - 01:24:19,420] It's like a coffee filter.
+- [01:24:19,800 - 01:24:21,800] You can't flatten it down on the table
+- [01:24:23,200 - 01:24:24,360] without tearing it.
+- [01:24:25,080 - 01:24:26,640] But if you cut it anywhere,
+- [01:24:26,760 - 01:24:28,180] if you cut it and open it up,
+- [01:24:28,200 - 01:24:29,800] you can lay it out and make it flat.
+- [01:24:30,120 - 01:24:30,560] Scissors?
+- [01:24:32,900 - 01:24:33,340] Hmm?
+- [01:24:33,480 - 01:24:33,760] Okay.
+- [01:24:35,960 - 01:24:36,240] Scissors?
+- [01:24:36,360 - 01:24:36,640] Scissors.
+- [01:24:37,940 - 01:24:38,220] Oh,
+- [01:24:38,220 - 01:24:38,760] a scissor.
+- [01:24:38,800 - 01:24:39,420] A scissor.
+- [01:24:39,480 - 01:24:39,600] Oh.
+- [01:24:40,660 - 01:24:40,940] Okay.
+- [01:24:41,500 - 01:24:42,780] But now I have to cut my notes.
+- [01:24:43,820 - 01:24:44,940] If you have a piece of paper,
+- [01:24:45,020 - 01:24:45,780] somebody have a piece of paper,
+- [01:24:45,840 - 01:24:46,280] we can do it.
+- [01:25:07,960 - 01:25:08,400] Alright.
+- [01:25:08,480 - 01:25:09,700] I've cut out a certain angle,
+- [01:25:09,820 - 01:25:14,320] and now when I sew them together
+- [01:25:14,320 - 01:25:15,400] or glue them together,
+- [01:25:15,580 - 01:25:18,060] in this case it made a kind of flat cone.
+- [01:25:18,200 - 01:25:19,160] I could wear it as a hat.
+- [01:25:19,920 - 01:25:20,360] Okay?
+- [01:25:20,600 - 01:25:22,520] If I cut out a bigger angle,
+- [01:25:22,660 - 01:25:24,280] I'll make a more acute angle
+- [01:25:24,280 - 01:25:25,480] at the top of the cone.
+- [01:25:26,180 - 01:25:27,040] For example,
+- [01:25:27,040 - 01:25:28,900] I can cut out a large angle.
+- [01:25:33,160 - 01:25:33,740] I can cut out a little bit more.
+- [01:25:33,740 - 01:25:35,220] I can cut out a larger angle.
+- [01:25:35,360 - 01:25:37,580] And now when I sew it together,
+- [01:25:38,320 - 01:25:40,160] it makes a pointy cone.
+- [01:25:40,460 - 01:25:42,580] Except I can't really do it because...
+- [01:25:43,540 - 01:25:44,040] Yeah,
+- [01:25:44,040 - 01:25:45,280] I think you get the idea though,
+- [01:25:45,280 - 01:25:45,460] huh?
+- [01:25:45,920 - 01:25:46,420] Yeah.
+- [01:25:46,580 - 01:25:48,100] It makes a pointier cone.
+- [01:25:49,400 - 01:25:51,840] So the bigger the angle that you...
+- [01:25:51,840 - 01:25:52,040] Thank you.
+- [01:25:52,400 - 01:25:54,400] The bigger the angle that you cut out,
+- [01:25:54,420 - 01:25:55,620] the bigger the deficit angle,
+- [01:25:55,760 - 01:25:56,920] it's called the deficit angle
+- [01:25:56,920 - 01:25:57,900] or the conical deficit.
+- [01:25:58,740 - 01:26:00,400] The bigger the conical deficit,
+- [01:26:00,960 - 01:26:02,380] the pointier the cone.
+- [01:26:02,380 - 01:26:05,700] If the conical deficit is a very small acute angle,
+- [01:26:05,860 - 01:26:08,200] it means the cone is very flat on top.
+- [01:26:08,560 - 01:26:09,020] Okay?
+- [01:26:09,740 - 01:26:10,440] All right.
+- [01:26:10,520 - 01:26:10,820] Now,
+- [01:26:10,820 - 01:26:12,020] let's think about...
+- [01:26:13,700 - 01:26:16,660] Let's think about a vector,
+- [01:26:17,380 - 01:26:20,100] a vector field on the space here,
+- [01:26:20,200 - 01:26:21,100] which is constant.
+- [01:26:21,940 - 01:26:24,100] Let's take a vector field which is constant.
+- [01:26:25,140 - 01:26:26,480] What does it mean to be constant?
+- [01:26:27,020 - 01:26:28,350] It means that it's pointing
+- [01:26:28,350 - 01:26:29,680] in the same direction everywhere.
+- [01:26:29,860 - 01:26:30,500] For simplicity,
+- [01:26:31,160 - 01:26:32,360] let's take it to be positive.
+- [01:26:32,380 - 01:26:33,320] It's pointing in this direction.
+- [01:26:37,800 - 01:26:39,100] Something funny over here.
+- [01:26:39,160 - 01:26:39,500] Over here,
+- [01:26:39,500 - 01:26:40,520] it's along this line.
+- [01:26:40,820 - 01:26:41,560] Over here,
+- [01:26:41,560 - 01:26:43,520] it's practically perpendicular to this line.
+- [01:26:43,780 - 01:26:44,400] But remember,
+- [01:26:44,400 - 01:26:44,980] when this...
+- [01:26:44,980 - 01:26:45,400] When the...
+- [01:26:46,419 - 01:26:49,560] When the cut is identified like this,
+- [01:26:49,640 - 01:26:50,860] the line is the same line.
+- [01:26:51,540 - 01:26:52,280] Let's do it.
+- [01:26:52,360 - 01:26:55,440] Let's take a vector pointing over here,
+- [01:26:55,580 - 01:26:56,360] here,
+- [01:26:56,500 - 01:26:57,240] here,
+- [01:26:57,400 - 01:26:58,220] here,
+- [01:26:59,000 - 01:26:59,800] and here.
+- [01:27:00,740 - 01:27:01,480] And now,
+- [01:27:01,480 - 01:27:02,500] when we sew it together,
+- [01:27:02,620 - 01:27:05,920] we discover that there's a funny jump in its direction.
+- [01:27:06,700 - 01:27:08,660] It's pointing along the cut here,
+- [01:27:08,800 - 01:27:11,540] and it's pointing in some funny direction here,
+- [01:27:11,700 - 01:27:13,040] even though when you open it up,
+- [01:27:13,060 - 01:27:14,140] you see they're all in the same...
+- [01:27:14,140 - 01:27:14,780] Did you see that,
+- [01:27:14,780 - 01:27:15,760] or was I hiding it there?
+- [01:27:20,100 - 01:27:21,160] As you go around,
+- [01:27:21,160 - 01:27:22,300] starting here,
+- [01:27:22,960 - 01:27:24,400] pointing in the same direction
+- [01:27:24,400 - 01:27:25,580] until you get around to
+- [01:27:25,580 - 01:27:26,760] the other side of the cut,
+- [01:27:26,900 - 01:27:28,280] in which case you find that
+- [01:27:28,280 - 01:27:29,660] it's not in the same direction.
+- [01:27:30,860 - 01:27:33,860] As the arrow was over here.
+- [01:27:34,140 - 01:27:34,700] Nevertheless,
+- [01:27:34,700 - 01:27:35,980] when I open it up,
+- [01:27:36,000 - 01:27:36,760] they're all parallel.
+- [01:27:38,520 - 01:27:39,080] So,
+- [01:27:39,080 - 01:27:40,280] the tip of the cone
+- [01:27:41,299 - 01:27:45,440] is such that if you carry a vector around,
+- [01:27:46,919 - 01:27:48,920] when you get around to the other side,
+- [01:27:49,120 - 01:27:50,260] it has been rotated.
+- [01:27:50,820 - 01:27:52,200] It has been rotated
+- [01:27:53,940 - 01:27:56,720] due to the conical deficit at the top.
+- [01:27:57,280 - 01:27:59,020] Exactly the same will be true,
+- [01:28:00,219 - 01:28:02,020] in this geometry over here.
+- [01:28:02,160 - 01:28:04,300] If I take a vector along a given direction,
+- [01:28:04,580 - 01:28:06,740] and I carry it around the mountain
+- [01:28:07,419 - 01:28:09,139] in such a way that it's
+- [01:28:09,139 - 01:28:10,860] always pointing in the same direction
+- [01:28:10,860 - 01:28:11,920] if I opened it up,
+- [01:28:12,100 - 01:28:14,340] by the time I get back to the other side,
+- [01:28:14,460 - 01:28:15,880] it'll be pointing in some other direction.
+- [01:28:17,499 - 01:28:21,180] That is because the top of the cone is curved.
+- [01:28:22,600 - 01:28:24,100] That's the effect of curvature.
+- [01:28:24,400 - 01:28:25,600] The effect of curvature,
+- [01:28:26,500 - 01:28:27,980] a region of curvature,
+- [01:28:29,020 - 01:28:29,580] has the property
+- [01:28:29,580 - 01:28:31,620] that if you take a
+- [01:28:31,620 - 01:28:33,660] vector pointing in the same direction
+- [01:28:33,660 - 01:28:34,820] as much as you can do,
+- [01:28:34,940 - 01:28:36,640] keep it pointing in the same direction
+- [01:28:36,640 - 01:28:39,160] and take it around the region of curvature,
+- [01:28:39,720 - 01:28:41,380] the vector will rotate.
+- [01:28:42,360 - 01:28:44,240] The vector will rotate when it
+- [01:28:44,240 - 01:28:46,120] goes around any region of curvature,
+- [01:28:46,860 - 01:28:49,500] even though you took pains to make sure
+- [01:28:49,500 - 01:28:50,680] that at every point,
+- [01:28:50,840 - 01:28:53,020] you were moving it parallel to itself.
+- [01:28:53,560 - 01:28:54,740] In other words,
+- [01:28:54,880 - 01:28:57,800] you took pains to make sure that the covariant derivative
+- [01:28:57,800 - 01:28:59,060] of that vector was zero,
+- [01:28:59,700 - 01:29:00,280] but nevertheless,
+- [01:29:00,440 - 01:29:02,080] when you came around to the other side,
+- [01:29:02,220 - 01:29:03,120] it had shifted.
+- [01:29:07,039 - 01:29:09,360] There's another way to say this,
+- [01:29:09,480 - 01:29:11,040] which is actually more useful.
+- [01:29:15,300 - 01:29:16,860] Here's the other way to say it.
+- [01:29:16,860 - 01:29:17,280] It's equivalent.
+- [01:29:17,740 - 01:29:18,620] It's equivalent.
+- [01:29:19,900 - 01:29:22,520] If you have a curved space
+- [01:29:22,520 - 01:29:23,900] and there's some curvature here,
+- [01:29:24,080 - 01:29:25,320] there's some curvature here,
+- [01:29:25,520 - 01:29:26,160] okay,
+- [01:29:28,440 - 01:29:31,800] and you take a vector field
+- [01:29:34,619 - 01:29:37,080] and differentiate it along one axis.
+- [01:29:37,900 - 01:29:40,200] We're going to move it and differentiate it
+- [01:29:40,200 - 01:29:40,560] to take,
+- [01:29:40,560 - 01:29:40,840] you know,
+- [01:29:40,860 - 01:29:42,220] differentiate it along one axis
+- [01:29:42,800 - 01:29:46,040] and then differentiate it along a second axis.
+- [01:29:46,840 - 01:29:48,320] We take the vector,
+- [01:29:49,059 - 01:29:50,400] displace it a little bit,
+- [01:29:50,480 - 01:29:53,560] and then displace it along some second axis.
+- [01:29:55,100 - 01:29:56,220] We will...
+- [01:30:00,339 - 01:30:01,820] the vector will change.
+- [01:30:02,120 - 01:30:03,480] And how will the vector change?
+- [01:30:03,960 - 01:30:06,380] It will change typically by
+- [01:30:08,460 - 01:30:10,620] differentiating the vector along these two axes
+- [01:30:11,259 - 01:30:12,400] in sequence.
+- [01:30:12,880 - 01:30:16,040] You first differentiate the vector along one axis
+- [01:30:16,040 - 01:30:18,840] and then differentiate it along the second axis
+- [01:30:18,840 - 01:30:22,400] and there's a small change in the vector
+- [01:30:22,400 - 01:30:24,140] due to these two derivatives.
+- [01:30:24,680 - 01:30:25,940] So I go along here.
+- [01:30:26,020 - 01:30:26,360] In other words,
+- [01:30:26,360 - 01:30:27,780] if I take the difference of the vector,
+- [01:30:27,800 - 01:30:29,480] of the vector over here and over here,
+- [01:30:30,420 - 01:30:32,120] it consists of two changes,
+- [01:30:32,320 - 01:30:33,780] a change to go from here to here
+- [01:30:33,780 - 01:30:35,380] and a change to go from here to here.
+- [01:30:35,980 - 01:30:37,000] And that change,
+- [01:30:37,180 - 01:30:38,700] the total change in that vector
+- [01:30:38,700 - 01:30:40,760] is proportional to a second derivative.
+- [01:30:45,960 - 01:30:48,340] It would be true in any coordinates.
+- [01:30:48,860 - 01:30:50,460] It would be true in any coordinates
+- [01:30:51,240 - 01:30:52,660] that if you carried a vector
+- [01:30:53,700 - 01:30:54,680] from here to here
+- [01:30:54,680 - 01:30:55,760] and then from here to here
+- [01:30:55,760 - 01:30:57,080] and then compared it with a vector
+- [01:30:57,080 - 01:30:58,440] at this point over here,
+- [01:30:59,400 - 01:31:00,940] what you would be calculating
+- [01:31:00,940 - 01:31:03,420] is the second partial derivative
+- [01:31:03,420 - 01:31:04,400] of the vector,
+- [01:31:04,560 - 01:31:06,700] let's say derivative of Vn,
+- [01:31:07,719 - 01:31:08,860] call this the
+- [01:31:10,620 - 01:31:11,780] xs direction
+- [01:31:11,780 - 01:31:13,720] and the xr direction.
+- [01:31:14,080 - 01:31:15,460] And this would be,
+- [01:31:15,500 - 01:31:15,920] let's see,
+- [01:31:15,960 - 01:31:17,140] which derivative would it be?
+- [01:31:17,840 - 01:31:18,580] It would be
+- [01:31:20,040 - 01:31:21,480] derivative with respect,
+- [01:31:21,660 - 01:31:22,340] it would be
+- [01:31:24,059 - 01:31:26,480] covariant derivative with respect to r,
+- [01:31:27,080 - 01:31:29,600] of the covariant derivative with respect to s,
+- [01:31:29,880 - 01:31:31,800] of the vector and let's say
+- [01:31:31,800 - 01:31:33,520] the mth component of the vector.
+- [01:31:34,320 - 01:31:35,780] This operation says
+- [01:31:35,780 - 01:31:37,300] you move the vector a little bit
+- [01:31:37,300 - 01:31:38,800] along the s direction
+- [01:31:38,800 - 01:31:40,600] and this one then says
+- [01:31:40,600 - 01:31:41,840] you take the difference,
+- [01:31:41,960 - 01:31:42,680] the little derivative,
+- [01:31:42,860 - 01:31:44,500] and move it along the r direction
+- [01:31:45,059 - 01:31:46,040] and the net result
+- [01:31:46,040 - 01:31:48,240] is the change in the vector
+- [01:31:48,940 - 01:31:50,300] going from here to here.
+- [01:31:51,599 - 01:31:52,640] Done covariantly,
+- [01:31:52,700 - 01:31:53,700] which means
+- [01:31:53,700 - 01:31:55,820] that you could have done the same thing
+- [01:31:55,820 - 01:31:57,240] in Gaussian normal coordinates
+- [01:31:57,240 - 01:31:58,820] with just ordinary derivatives.
+- [01:31:59,480 - 01:32:01,240] In Gaussian normal coordinates
+- [01:32:01,240 - 01:32:02,860] you would just be doing this derivative here,
+- [01:32:02,980 - 01:32:04,560] or two ordinary derivatives.
+- [01:32:05,960 - 01:32:07,360] You could have also gone
+- [01:32:07,360 - 01:32:08,260] in the other direction.
+- [01:32:09,200 - 01:32:09,920] You could,
+- [01:32:10,020 - 01:32:10,820] that is to say,
+- [01:32:10,880 - 01:32:12,920] you could have gone first in the
+- [01:32:14,900 - 01:32:15,980] r direction
+- [01:32:18,280 - 01:32:20,000] and then in the s direction
+- [01:32:20,680 - 01:32:23,020] and calculated the way the vector changes
+- [01:32:23,020 - 01:32:23,840] from here to here.
+- [01:32:24,200 - 01:32:25,220] That would be,
+- [01:32:25,220 - 01:32:25,800] that would be
+- [01:32:25,820 - 01:32:29,880] the opposite order of differentiation.
+- [01:32:34,060 - 01:32:34,740] Ordinarily,
+- [01:32:34,900 - 01:32:36,700] and in flat space in general,
+- [01:32:38,139 - 01:32:40,260] these two are equal to each other.
+- [01:32:40,480 - 01:32:43,120] This is just the fact that derivatives,
+- [01:32:43,520 - 01:32:46,160] it doesn't matter which order you take them.
+- [01:32:46,520 - 01:32:49,000] But it's not true in curved space.
+- [01:32:49,400 - 01:32:50,820] In curved space,
+- [01:32:52,660 - 01:32:54,020] this net,
+- [01:32:54,100 - 01:32:55,800] the difference between these two,
+- [01:32:55,800 - 01:32:56,560] these two operations,
+- [01:32:57,219 - 01:32:59,260] can be thought of as taking the vector
+- [01:32:59,260 - 01:33:00,620] around the closed loop.
+- [01:33:02,340 - 01:33:04,980] The difference between these two operations,
+- [01:33:05,740 - 01:33:07,360] taking the vector from here to here
+- [01:33:07,360 - 01:33:08,320] and then from here to here,
+- [01:33:08,480 - 01:33:10,640] minus the opposite direction
+- [01:33:10,640 - 01:33:12,520] is essentially taking the vector
+- [01:33:12,520 - 01:33:14,040] around the little closed loop.
+- [01:33:14,540 - 01:33:16,460] Taking it around the little closed loop,
+- [01:33:16,640 - 01:33:18,260] we discovered that when there's curvature
+- [01:33:18,260 - 01:33:19,640] at the tip of the cone here,
+- [01:33:19,840 - 01:33:21,880] you don't get back to what you started with.
+- [01:33:23,640 - 01:33:25,000] In curved space,
+- [01:33:26,179 - 01:33:29,380] covariant derivatives are not interchangeable.
+- [01:33:30,260 - 01:33:31,400] In flat space,
+- [01:33:31,760 - 01:33:33,060] they are interchangeable.
+- [01:33:35,500 - 01:33:37,740] That's the way we test for whether
+- [01:33:38,639 - 01:33:40,120] a space is flat or not.
+- [01:33:41,000 - 01:33:42,300] We test whether
+- [01:33:44,999 - 01:33:46,200] differentiating tensors,
+- [01:33:46,559 - 01:33:47,800] in particular vectors,
+- [01:33:48,000 - 01:33:49,840] in opposite order,
+- [01:33:50,020 - 01:33:50,880] gives zero.
+- [01:33:51,580 - 01:33:52,640] If the answer is yes,
+- [01:33:52,800 - 01:33:54,160] everywhere is in the space,
+- [01:33:54,160 - 01:33:55,540] for any vector,
+- [01:33:56,700 - 01:33:58,080] then the space is flat.
+- [01:33:58,620 - 01:33:59,860] If we discover
+- [01:33:59,860 - 01:34:02,440] that there are places in the space
+- [01:34:02,440 - 01:34:04,600] where the order of differentiation
+- [01:34:05,500 - 01:34:06,940] gives different answers,
+- [01:34:07,240 - 01:34:08,900] then we know the space has
+- [01:34:08,900 - 01:34:10,560] some kind of
+- [01:34:11,559 - 01:34:12,760] defect in it,
+- [01:34:12,860 - 01:34:14,720] or it has curvature.
+- [01:34:15,020 - 01:34:16,000] It has curvature,
+- [01:34:16,839 - 01:34:19,460] analogous to the top of the mountain.
+- [01:34:20,940 - 01:34:21,540] So,
+- [01:34:21,700 - 01:34:23,600] all we have to do,
+- [01:34:25,100 - 01:34:26,720] and it's a little bit complicated,
+- [01:34:27,640 - 01:34:29,060] but it's not that complicated,
+- [01:34:30,100 - 01:34:32,540] is compute the second derivative
+- [01:34:33,280 - 01:34:34,200] of a vector,
+- [01:34:34,340 - 01:34:36,640] the second covariant derivative of a vector,
+- [01:34:38,500 - 01:34:39,740] in opposite order,
+- [01:34:39,860 - 01:34:40,740] and compare them.
+- [01:34:45,100 - 01:34:46,220] I'll tell you what to do.
+- [01:34:46,320 - 01:34:46,920] You're going to do it.
+- [01:34:47,000 - 01:34:48,500] I'm not going to do it on the blackboard.
+- [01:34:48,520 - 01:34:48,960] It's too late.
+- [01:34:49,760 - 01:34:50,320] It's easy.
+- [01:34:50,440 - 01:34:51,480] It's really quite easy.
+- [01:34:51,540 - 01:34:52,180] It's mechanical.
+- [01:34:53,740 - 01:34:54,140] It's a little bit more complicated.
+- [01:34:54,160 - 01:34:55,040] It's a mechanical operation.
+- [01:34:57,240 - 01:34:58,560] I'll tell you what the steps are,
+- [01:34:58,700 - 01:34:59,760] and I'll tell you the answer.
+- [01:35:01,160 - 01:35:02,840] And it's entirely mechanical.
+- [01:35:03,060 - 01:35:04,500] It's just pure plug-in.
+- [01:35:10,980 - 01:35:12,660] It's too late to carry it out,
+- [01:35:12,700 - 01:35:12,920] and,
+- [01:35:12,920 - 01:35:13,420] uh...
+- [01:35:15,760 - 01:35:16,200] Yeah.
+- [01:35:17,380 - 01:35:18,860] What we're interested in is taking
+- [01:35:18,860 - 01:35:19,820] a vector,
+- [01:35:19,820 - 01:35:20,320] Vn,
+- [01:35:21,040 - 01:35:21,840] the components,
+- [01:35:22,060 - 01:35:23,360] covariant components of a vector,
+- [01:35:25,879 - 01:35:27,900] computing the covariant derivative
+- [01:35:27,900 - 01:35:28,920] in the r direction,
+- [01:35:29,120 - 01:35:32,220] and then differentiating it
+- [01:35:32,220 - 01:35:32,840] in the s direction.
+- [01:35:33,440 - 01:35:34,400] Later on,
+- [01:35:34,400 - 01:35:36,140] we will interchange s and r
+- [01:35:36,140 - 01:35:36,560] and subtract.
+- [01:35:37,500 - 01:35:38,320] All right?
+- [01:35:38,700 - 01:35:40,120] But let's just do this.
+- [01:35:40,660 - 01:35:42,260] This is equal to ds.
+- [01:35:43,180 - 01:35:43,740] Now,
+- [01:35:43,740 - 01:35:45,320] this object over here
+- [01:35:46,620 - 01:35:47,820] is a tensor,
+- [01:35:48,799 - 01:35:49,360] Trn.
+- [01:35:50,200 - 01:35:51,120] It's a tensor,
+- [01:35:51,220 - 01:35:52,200] and we have the rule
+- [01:35:52,200 - 01:35:53,480] for calculating
+- [01:35:53,480 - 01:35:54,980] the derivative of a tensor.
+- [01:35:55,680 - 01:35:57,640] We have a contribution from each
+- [01:35:59,760 - 01:36:00,240] index,
+- [01:36:00,640 - 01:36:02,120] and I'm going to write it down.
+- [01:36:04,020 - 01:36:05,340] I'm going to write down the answer.
+- [01:36:05,460 - 01:36:06,100] I'll write down the...
+- [01:36:06,900 - 01:36:07,540] Let's see.
+- [01:36:09,420 - 01:36:12,480] It's ds of dr...
+- [01:36:13,140 - 01:36:17,480] of ds of drv...
+- [01:36:18,040 - 01:36:18,380] No.
+- [01:36:18,380 - 01:36:18,580] Bop,
+- [01:36:18,580 - 01:36:18,700] bop,
+- [01:36:18,700 - 01:36:18,820] bop,
+- [01:36:18,820 - 01:36:18,920] bop,
+- [01:36:18,920 - 01:36:19,040] bop.
+- [01:36:22,980 - 01:36:23,460] ds of drv...
+- [01:36:24,259 - 01:36:24,820] drvn...
+- [01:36:27,419 - 01:36:27,980] minus...
+- [01:36:29,539 - 01:36:30,660] gamma rnt...
+- [01:36:31,679 - 01:36:32,240] vt.
+- [01:36:33,960 - 01:36:35,520] I've just stuck in here
+- [01:36:37,200 - 01:36:39,380] the covariant derivative of vn.
+- [01:36:40,000 - 01:36:41,800] So that's what's in this box here,
+- [01:36:42,200 - 01:36:43,440] just this thing over here.
+- [01:36:43,900 - 01:36:45,880] Now we have to differentiate it again
+- [01:36:48,019 - 01:36:49,480] using this formula.
+- [01:36:49,960 - 01:36:51,620] We have a two-indexed object,
+- [01:36:51,620 - 01:36:53,540] and let's see if I can...
+- [01:36:55,200 - 01:36:56,160] Let's see.
+- [01:36:59,940 - 01:37:01,040] I'm going to leave it to you
+- [01:37:01,040 - 01:37:01,540] to calculate.
+- [01:37:01,920 - 01:37:02,560] Let's see.
+- [01:37:05,940 - 01:37:06,600] All right,
+- [01:37:06,600 - 01:37:07,220] I'll write down...
+- [01:37:07,220 - 01:37:08,560] I'll write down one further equation.
+- [01:37:08,800 - 01:37:13,520] It's ds of drvn...
+- [01:37:15,380 - 01:37:18,100] minus gamma pn...
+- [01:37:19,060 - 01:37:19,540] Oh,
+- [01:37:19,540 - 01:37:19,740] brother.
+- [01:37:20,560 - 01:37:21,040] No,
+- [01:37:21,040 - 01:37:21,780] it's getting too late.
+- [01:37:21,860 - 01:37:23,040] I don't want to try to write it down.
+- [01:37:23,120 - 01:37:24,180] I'm going to leave it for you to do.
+- [01:37:24,260 - 01:37:25,480] Just pure plug-in.
+- [01:37:26,160 - 01:37:27,100] Pure plug-in.
+- [01:37:27,140 - 01:37:28,540] You plug in for tmn
+- [01:37:28,540 - 01:37:30,200] this object over here.
+- [01:37:33,160 - 01:37:34,460] Put it right into there.
+- [01:37:35,080 - 01:37:35,560] Or...
+- [01:37:35,560 - 01:37:36,020] right.
+- [01:37:36,840 - 01:37:38,020] Calculate the second derivative,
+- [01:37:38,600 - 01:37:40,660] and then compute the following.
+- [01:37:42,260 - 01:37:43,220] ds dr...
+- [01:37:44,020 - 01:37:44,980] of vn...
+- [01:37:45,740 - 01:37:46,220] minus...
+- [01:37:47,580 - 01:37:48,540] dr ds...
+- [01:37:48,540 - 01:37:49,540] dvn.
+- [01:37:50,240 - 01:37:52,940] That corresponds to the difference
+- [01:37:52,940 - 01:37:54,260] between the two ways
+- [01:37:54,260 - 01:37:56,480] that you could get from here to here
+- [01:37:56,480 - 01:37:58,720] by going through this direction
+- [01:37:58,720 - 01:37:59,620] or that direction.
+- [01:38:00,920 - 01:38:02,360] And I'll tell you what you get.
+- [01:38:04,860 - 01:38:07,000] You get something called R.
+- [01:38:16,880 - 01:38:17,860] It's a tensor.
+- [01:38:18,620 - 01:38:21,380] With three covariant indexes,
+- [01:38:21,620 - 01:38:23,220] one contravariant index,
+- [01:38:24,240 - 01:38:26,000] and it multiplies vt.
+- [01:38:28,440 - 01:38:29,120] Where...
+- [01:38:29,120 - 01:38:30,460] This is pretty easy.
+- [01:38:30,660 - 01:38:33,580] Except that R is a little bit complicated.
+- [01:38:33,840 - 01:38:34,840] And I'll tell you what R is.
+- [01:38:36,879 - 01:38:38,240] sRn t...
+- [01:38:39,280 - 01:38:39,960] equals...
+- [01:38:44,920 - 01:38:45,600] dr...
+- [01:38:45,600 - 01:38:45,680] r...
+- [01:38:45,680 - 01:38:48,100] gamma s...
+- [01:38:48,100 - 01:38:48,840] n...
+- [01:38:49,160 - 01:38:49,860] t...
+- [01:38:52,240 - 01:38:52,940] minus...
+- [01:38:53,380 - 01:38:54,080] ds...
+- [01:38:54,080 - 01:38:56,160] gamma r...
+- [01:38:56,160 - 01:38:56,940] n...
+- [01:38:57,000 - 01:38:57,700] t...
+- [01:38:59,400 - 01:39:00,100] plus...
+- [01:39:00,100 - 01:39:02,400] gamma s...
+- [01:39:02,400 - 01:39:03,040] n...
+- [01:39:03,040 - 01:39:03,740] p...
+- [01:39:03,740 - 01:39:05,320] gamma...
+- [01:39:05,320 - 01:39:06,120] p...
+- [01:39:06,120 - 01:39:06,840] r...
+- [01:39:06,840 - 01:39:07,440] t...
+- [01:39:07,440 - 01:39:09,240] minus...
+- [01:39:09,240 - 01:39:10,340] one more term...
+- [01:39:11,320 - 01:39:12,800] gamma r...
+- [01:39:13,260 - 01:39:13,960] n...
+- [01:39:14,160 - 01:39:14,860] p...
+- [01:39:15,620 - 01:39:16,260] gamma...
+- [01:39:16,260 - 01:39:17,040] p...
+- [01:39:18,099 - 01:39:18,740] s...
+- [01:39:18,740 - 01:39:19,480] t...
+- [01:39:22,240 - 01:39:24,520] Two terms involving derivatives
+- [01:39:24,520 - 01:39:25,860] of the Christoffel symbols
+- [01:39:26,300 - 01:39:28,860] and two terms involving products
+- [01:39:28,860 - 01:39:30,120] of Christoffel symbols.
+- [01:39:30,440 - 01:39:31,560] There's a sum...
+- [01:39:31,560 - 01:39:32,140] Let's see.
+- [01:39:32,240 - 01:39:33,800] There's a sum over p here
+- [01:39:33,800 - 01:39:35,260] and a sum over p here.
+- [01:39:35,840 - 01:39:36,799] The indices...
+- [01:39:37,140 - 01:39:37,880] Take a look at it.
+- [01:39:37,920 - 01:39:38,640] The indices match.
+- [01:39:40,260 - 01:39:41,900] It's a complicated expression
+- [01:39:42,480 - 01:39:43,960] and it's even more complicated
+- [01:39:43,960 - 01:39:45,540] when you remember what the gammas are.
+- [01:39:45,540 - 01:39:47,320] The gammas themselves
+- [01:39:47,320 - 01:39:49,500] are complicated derivatives of g's
+- [01:39:51,360 - 01:39:53,639] and the curvature tensor...
+- [01:39:54,120 - 01:39:55,560] This is the curvature tensor...
+- [01:39:55,560 - 01:39:57,080] the Riemann curvature tensor...
+- [01:39:57,080 - 01:39:59,060] This Riemann curvature tensor
+- [01:39:59,060 - 01:40:00,700] is itself
+- [01:40:01,480 - 01:40:02,820] another derivative
+- [01:40:02,820 - 01:40:05,600] and also products of Christoffel symbols.
+- [01:40:05,920 - 01:40:07,360] Let's see what it has in it.
+- [01:40:07,760 - 01:40:09,060] When you differentiate...
+- [01:40:09,060 - 01:40:12,160] The Christoffel symbol involves a derivative of g.
+- [01:40:13,120 - 01:40:14,620] Differentiating again gives you
+- [01:40:14,620 - 01:40:16,220] second derivatives of g.
+- [01:40:16,920 - 01:40:17,440] Remember,
+- [01:40:17,440 - 01:40:19,400] the second derivatives of g
+- [01:40:19,400 - 01:40:20,740] are the things that you cannot
+- [01:40:20,740 - 01:40:22,400] generally set equal to zero.
+- [01:40:22,960 - 01:40:24,580] The first derivatives of g
+- [01:40:24,580 - 01:40:26,020] you can find frame of reference
+- [01:40:26,500 - 01:40:27,460] where they're equal to zero.
+- [01:40:27,560 - 01:40:29,360] The second derivatives of g you can't.
+- [01:40:29,600 - 01:40:31,520] So by the time you finish calculating
+- [01:40:31,520 - 01:40:32,580] this thing here,
+- [01:40:33,579 - 01:40:35,960] second derivatives of g have come into it
+- [01:40:38,219 - 01:40:40,460] and it is testing out
+- [01:40:40,460 - 01:40:42,220] and feeling out the geometry
+- [01:40:42,920 - 01:40:44,740] a little more thoroughly
+- [01:40:44,740 - 01:40:47,760] than the first derivatives would feel it out.
+- [01:40:47,860 - 01:40:49,480] It's feeling out the second derivatives,
+- [01:40:49,740 - 01:40:52,140] feeling out the coordinate systems
+- [01:40:52,140 - 01:40:53,160] to quadratic order.
+- [01:40:54,520 - 01:40:56,600] So it has second derivatives
+- [01:40:56,600 - 01:40:57,860] of Christoffel symbols
+- [01:40:57,860 - 01:41:00,620] and it has squares or quadratic things
+- [01:41:00,620 - 01:41:02,320] involving first derivatives.
+- [01:41:02,700 - 01:41:04,360] It's a complicated thing
+- [01:41:04,360 - 01:41:07,200] and if I were to actually write it
+- [01:41:07,200 - 01:41:08,700] in terms of the Christoffel symbols
+- [01:41:08,700 - 01:41:11,180] or I were to try to calculate it
+- [01:41:11,180 - 01:41:12,020] for a given metric,
+- [01:41:12,220 - 01:41:13,600] it can fill up pages
+- [01:41:13,600 - 01:41:15,100] and it will fill up pages.
+- [01:41:16,119 - 01:41:17,240] But conceptually,
+- [01:41:17,980 - 01:41:20,280] what it's doing is just
+- [01:41:21,620 - 01:41:23,840] calculating the difference in a vector
+- [01:41:25,160 - 01:41:27,360] if you transport it around here,
+- [01:41:27,440 - 01:41:28,960] keeping it parallel to itself
+- [01:41:28,960 - 01:41:30,820] until it comes around
+- [01:41:32,639 - 01:41:34,220] all the ways around.
+- [01:41:34,580 - 01:41:36,080] A little change in the vector
+- [01:41:36,080 - 01:41:37,220] and going in a loop.
+- [01:41:39,340 - 01:41:41,420] And this is the curvature tensor.
+- [01:41:42,220 - 01:41:43,100] The curvature tensor,
+- [01:41:43,100 - 01:41:44,260] as I said,
+- [01:41:44,320 - 01:41:45,400] it's complicated to calculate.
+- [01:41:45,880 - 01:41:47,640] But you can calculate it.
+- [01:41:47,640 - 01:41:48,680] You can put it into a computer
+- [01:41:49,100 - 01:41:50,400] and you can ask the computer,
+- [01:41:50,520 - 01:41:50,940] is it zero?
+- [01:41:51,360 - 01:41:52,160] In fact,
+- [01:41:52,160 - 01:41:53,920] if the computer...
+- [01:41:56,760 - 01:41:59,060] It's good if you have a computer
+- [01:41:59,060 - 01:42:00,140] that can do algebra.
+- [01:42:01,080 - 01:42:02,600] And if you have the metric
+- [01:42:02,600 - 01:42:03,900] in some algebraic form
+- [01:42:03,900 - 01:42:04,740] or you have the metric
+- [01:42:04,740 - 01:42:07,340] in some mathematical form,
+- [01:42:07,580 - 01:42:09,240] you can do these operations
+- [01:42:09,240 - 01:42:11,820] and then test out whether this
+- [01:42:11,820 - 01:42:14,720] curvature tensor is zero everywheres.
+- [01:42:14,900 - 01:42:17,840] If the curvature tensor is zero everywheres,
+- [01:42:17,900 - 01:42:19,680] all components of it,
+- [01:42:19,760 - 01:42:20,980] the space is flat.
+- [01:42:22,720 - 01:42:23,300] Now,
+- [01:42:23,300 - 01:42:26,220] we'll study the curvature tensor
+- [01:42:26,220 - 01:42:26,900] a little more.
+- [01:42:27,980 - 01:42:29,360] But as I said,
+- [01:42:29,360 - 01:42:30,500] it's a complicated thing.
+- [01:42:30,700 - 01:42:32,500] But the main thing about it
+- [01:42:32,500 - 01:42:35,480] is that it tells you whether the space is flat
+- [01:42:35,480 - 01:42:36,340] and if not,
+- [01:42:36,340 - 01:42:38,300] how unflat it is.
+- [01:42:40,580 - 01:42:44,260] It is closely related to a quantity
+- [01:42:44,260 - 01:42:45,640] in gravitational physics.
+- [01:42:45,820 - 01:42:46,880] Can you guess what it is?
+- [01:42:48,380 - 01:42:50,840] It's a local quantity which tells you
+- [01:42:50,840 - 01:42:52,440] that the space is not flat.
+- [01:42:54,320 - 01:42:57,220] So it must be something telling you
+- [01:42:57,220 - 01:42:59,340] whether there's really a gravitational field
+- [01:42:59,340 - 01:43:00,320] present or not.
+- [01:43:04,660 - 01:43:05,680] Tidal forces.
+- [01:43:07,220 - 01:43:08,200] Tidal forces.
+- [01:43:09,960 - 01:43:12,580] It's exactly related to tidal forces.
+- [01:43:12,820 - 01:43:15,180] Those things which in a gravitational field
+- [01:43:15,180 - 01:43:16,440] squeeze one way,
+- [01:43:16,440 - 01:43:17,600] stretch the other way.
+- [01:43:18,300 - 01:43:19,720] That's what these things are.
+- [01:43:19,980 - 01:43:21,160] And in fact,
+- [01:43:21,160 - 01:43:23,180] they really are the tidal forces.
+- [01:43:24,020 - 01:43:25,960] Tidal forces are represented
+- [01:43:25,960 - 01:43:27,500] by the curvature tensor.
+- [01:43:30,640 - 01:43:31,280] Now,
+- [01:43:31,280 - 01:43:33,180] you can sort of see something like that
+- [01:43:33,180 - 01:43:35,020] if you were to imagine...
+- [01:43:35,020 - 01:43:35,580] Yeah.
+- [01:43:37,000 - 01:43:37,640] Imagine...
+- [01:43:38,200 - 01:43:38,640] Imagine you have,
+- [01:43:38,640 - 01:43:39,260] again,
+- [01:43:39,380 - 01:43:41,320] this kind of conical geometry.
+- [01:43:41,640 - 01:43:43,380] It doesn't have to be conical geometry,
+- [01:43:43,680 - 01:43:45,740] but something which is flat far away.
+- [01:43:47,000 - 01:43:47,520] Yeah,
+- [01:43:47,520 - 01:43:49,140] let's say it's flat far away.
+- [01:43:52,520 - 01:43:54,040] Nice and flat far away.
+- [01:43:54,360 - 01:43:55,760] And somewhere in the center,
+- [01:43:55,960 - 01:43:57,560] it has a bulge so that it's curved.
+- [01:43:58,480 - 01:44:00,600] Now you take some object out here.
+- [01:44:00,840 - 01:44:02,460] It's a thing living in flat land.
+- [01:44:02,660 - 01:44:03,380] It's two-dimensional.
+- [01:44:03,680 - 01:44:05,820] You take some object that might be composed
+- [01:44:05,820 - 01:44:06,900] of a bunch of links.
+- [01:44:07,900 - 01:44:09,920] It might be a bunch of triangles
+- [01:44:09,920 - 01:44:11,060] connected together,
+- [01:44:11,060 - 01:44:11,540] links.
+- [01:44:12,540 - 01:44:14,160] And then you start moving it.
+- [01:44:14,860 - 01:44:16,680] As you move it in the flat region,
+- [01:44:16,940 - 01:44:18,120] nothing happens to it.
+- [01:44:18,240 - 01:44:19,220] It's perfectly happy.
+- [01:44:19,420 - 01:44:20,360] It doesn't get stretched.
+- [01:44:20,440 - 01:44:21,340] It doesn't get distorted.
+- [01:44:21,640 - 01:44:22,500] It doesn't get deformed.
+- [01:44:22,720 - 01:44:24,020] It doesn't get squeezed one way
+- [01:44:24,020 - 01:44:24,960] and stretched the other way.
+- [01:44:25,180 - 01:44:27,020] But now what happens when you try to move it
+- [01:44:27,020 - 01:44:27,960] into the curved region?
+- [01:44:28,320 - 01:44:30,640] When you try to move it into the curved region,
+- [01:44:32,120 - 01:44:34,100] it simply can't follow the curvature
+- [01:44:34,100 - 01:44:35,800] without having to stretch its length.
+- [01:44:37,780 - 01:44:41,260] It has to follow the metric properties
+- [01:44:41,260 - 01:44:42,460] of the curved space.
+- [01:44:43,560 - 01:44:44,720] And in particular,
+- [01:44:44,720 - 01:44:46,660] if you go around
+- [01:44:46,660 - 01:44:50,380] a little closed loop in this space of links here,
+- [01:44:52,280 - 01:44:54,920] what you're doing is sampling
+- [01:44:56,379 - 01:44:58,920] this double covariant derivative here.
+- [01:44:59,120 - 01:45:00,740] And what you're going to find out is that
+- [01:45:00,740 - 01:45:02,280] when you go around a little closed loop,
+- [01:45:02,340 - 01:45:04,600] some angle shifts from what it would have been
+- [01:45:04,600 - 01:45:05,800] in the previous space.
+- [01:45:05,820 - 01:45:06,240] So this is the flat space.
+- [01:45:06,600 - 01:45:07,760] The angle shifts,
+- [01:45:07,760 - 01:45:08,660] the length shifts
+- [01:45:08,660 - 01:45:10,420] when you try to push this up into here.
+- [01:45:10,620 - 01:45:11,620] It gets stressed.
+- [01:45:12,180 - 01:45:13,360] It gets deformed,
+- [01:45:13,360 - 01:45:14,140] it gets stressed,
+- [01:45:14,160 - 01:45:15,460] it gets stretched and so forth.
+- [01:45:17,700 - 01:45:22,600] And the measure of how much it gets stressed locally
+- [01:45:22,600 - 01:45:24,720] is exactly this curvature tensor.
+- [01:45:24,960 - 01:45:26,540] This curvature tensor is telling you
+- [01:45:27,480 - 01:45:29,580] how the system gets deformed
+- [01:45:29,580 - 01:45:32,360] as it moves up into the region of curvature.
+- [01:45:32,780 - 01:45:35,560] That's why it's connected with tidal forces.
+- [01:45:35,560 - 01:45:38,120] So it really is an important property.
+- [01:45:38,280 - 01:45:40,000] If you're in a region where there's curvature,
+- [01:45:40,440 - 01:45:41,420] you feel it.
+- [01:45:41,700 - 01:45:43,220] You feel it as a distortion.
+- [01:45:44,380 - 01:45:47,180] If you're in a region of a gravitational field,
+- [01:45:47,320 - 01:45:49,480] let's say a uniform gravitational field,
+- [01:45:50,080 - 01:45:54,380] uniform gravitational fields don't have curvature.
+- [01:45:55,220 - 01:45:57,240] And that's why in free fall,
+- [01:45:57,400 - 01:45:59,600] in a perfectly uniform gravitational field,
+- [01:45:59,740 - 01:46:00,640] you simply feel nothing.
+- [01:46:00,980 - 01:46:01,440] Okay,
+- [01:46:01,440 - 01:46:04,240] so the next time we will
+- [01:46:04,240 - 01:46:06,120] enter into gravity land,
+- [01:46:06,460 - 01:46:07,860] we will talk about
+- [01:46:09,980 - 01:46:12,380] what you have to do to change
+- [01:46:12,380 - 01:46:15,380] from Riemannian geometry to Einstein geometry.
+- [01:46:16,020 - 01:46:18,460] And then we will study a particular example.
+- [01:46:18,720 - 01:46:21,000] The particular example is the Schwarzschild geometry.
+- [01:46:21,420 - 01:46:23,880] The Schwarzschild geometry is the geometry
+- [01:46:23,880 - 01:46:25,780] of a black hole or
+- [01:46:25,780 - 01:46:27,680] a star or any gravitating mass.
+- [01:46:28,520 - 01:46:29,880] And see what we learn.
+- [01:46:30,660 - 01:46:33,400] We've left out one subject that was in my notes
+- [01:46:33,400 - 01:46:34,280] for tonight.
+- [01:46:34,960 - 01:46:36,820] And it has to do with geodesics.
+- [01:46:37,000 - 01:46:38,740] But I guess we'll have to do that.
+- [01:46:38,840 - 01:46:41,760] But we'll do that after we start thinking about gravity,
+- [01:46:41,860 - 01:46:42,780] real gravity a little bit.
+- [01:46:43,920 - 01:46:44,320] Okay,
+- [01:46:44,320 - 01:46:46,260] I wish I had a way to make this
+- [01:46:51,320 - 01:46:52,120] fewer indices,
+- [01:46:52,120 - 01:46:53,160] but I don't.
+- [01:46:54,420 - 01:46:54,820] Yeah?
+- [01:46:56,500 - 01:46:57,620] In the first question,
+- [01:46:57,620 - 01:47:00,140] she says that one of the differences between
+- [01:47:01,440 - 01:47:02,700] an accelerating object
+- [01:47:03,400 - 01:47:04,980] and a gravitational field is that
+- [01:47:04,980 - 01:47:08,020] the gravity is privately in the form of a dot.
+- [01:47:08,160 - 01:47:08,360] Yeah.
+- [01:47:08,720 - 01:47:11,160] Do you apply that when you're,
+- [01:47:12,180 - 01:47:12,740] you know,
+- [01:47:12,740 - 01:47:14,220] trying to analyze a
+- [01:47:14,220 - 01:47:17,880] so an object is not in a curved space
+- [01:47:17,880 - 01:47:18,680] but a flat space?
+- [01:47:18,960 - 01:47:20,380] And that's the fundamental difference
+- [01:47:20,380 - 01:47:21,820] between accelerating objects
+- [01:47:21,820 - 01:47:23,720] and not your gravitational field?
+- [01:47:24,160 - 01:47:24,720] Please.
+- [01:47:27,460 - 01:47:29,940] The difference between looking at an object
+- [01:47:31,160 - 01:47:33,180] in free fall from
+- [01:47:33,400 - 01:47:35,960] an accelerated coordinate system
+- [01:47:35,960 - 01:47:40,000] or an accelerated frame of reference
+- [01:47:40,000 - 01:47:42,380] and a non-accelerated frame of reference.
+- [01:47:43,579 - 01:47:45,520] Or looking at a system
+- [01:47:45,520 - 01:47:48,060] which has a genuine gravitational field on it.
+- [01:47:48,880 - 01:47:49,540] In other words,
+- [01:47:49,540 - 01:47:50,180] you can simulate
+- [01:47:50,180 - 01:47:52,000] what looks like a gravitational field
+- [01:47:52,000 - 01:47:53,460] for many purposes
+- [01:47:53,460 - 01:47:55,560] by just an accelerated frame of reference.
+- [01:47:56,440 - 01:47:58,540] But it won't cause tidal forces.
+- [01:47:58,980 - 01:48:00,920] If you have a real gravitational field
+- [01:48:00,920 - 01:48:02,620] made by real matter out there,
+- [01:48:04,639 - 01:48:06,720] then it produces tidal forces.
+- [01:48:07,120 - 01:48:08,720] And if there are tidal forces,
+- [01:48:08,840 - 01:48:12,040] it means that there's something real going on.
+- [01:48:12,140 - 01:48:14,080] It's not just a coordinate transformation.
+- [01:48:14,560 - 01:48:15,900] So you can't tell the difference
+- [01:48:15,900 - 01:48:19,280] between an accelerated reference frame
+- [01:48:19,280 - 01:48:22,620] and a gravitational field?
+- [01:48:23,920 - 01:48:24,560] Yeah.
+- [01:48:25,420 - 01:48:27,280] Except for the uniform field.
+- [01:48:28,839 - 01:48:29,480] Well,
+- [01:48:29,480 - 01:48:30,620] there are no really,
+- [01:48:30,700 - 01:48:32,840] there are no uniform gravitational fields.
+- [01:48:34,299 - 01:48:36,560] The real gravitational field of the Earth
+- [01:48:36,560 - 01:48:37,320] looks like this.
+- [01:48:38,400 - 01:48:39,540] It's not uniform.
+- [01:48:39,760 - 01:48:41,340] It produces tidal forces.
+- [01:48:41,620 - 01:48:43,520] It varies from place to place.
+- [01:48:43,960 - 01:48:45,800] There's no such thing as a
+- [01:48:45,800 - 01:48:48,180] real uniform gravitational field.
+- [01:48:49,400 - 01:48:50,600] There's an approximation.
+- [01:48:51,020 - 01:48:52,720] An approximation near the surface
+- [01:48:52,720 - 01:48:53,880] of a very big planet
+- [01:48:53,880 - 01:48:57,360] over a relatively small solid angle.
+- [01:48:57,600 - 01:49:00,420] The gravitational field looks approximately uniform.
+- [01:49:01,100 - 01:49:01,780] Now,
+- [01:49:01,780 - 01:49:03,900] there's another thing to say about it.
+- [01:49:04,600 - 01:49:06,960] Tidal forces have much less effect
+- [01:49:06,960 - 01:49:09,220] on small objects than on large objects.
+- [01:49:09,620 - 01:49:12,280] You can see that also is true of curvature.
+- [01:49:12,640 - 01:49:13,860] If I have a very,
+- [01:49:13,860 - 01:49:15,420] very small object here,
+- [01:49:16,400 - 01:49:17,820] and I move it around,
+- [01:49:18,679 - 01:49:20,460] if it's much,
+- [01:49:20,460 - 01:49:21,440] much smaller
+- [01:49:21,440 - 01:49:24,280] than the scale on which things vary,
+- [01:49:25,139 - 01:49:27,820] then it won't experience any great deformation.
+- [01:49:28,640 - 01:49:30,340] If you have a large object
+- [01:49:30,340 - 01:49:32,120] and you move it around,
+- [01:49:34,380 - 01:49:36,200] it will experience deformation
+- [01:49:36,200 - 01:49:37,820] because different parts of it
+- [01:49:37,820 - 01:49:38,680] get stressed differently.
+- [01:49:39,220 - 01:49:40,440] It's the same thing.
+- [01:49:41,140 - 01:49:44,660] Tidal forces have very small effects
+- [01:49:44,660 - 01:49:45,940] on very small objects.
+- [01:49:46,620 - 01:49:52,900] A bacteria falling onto the surface of the Earth
+- [01:49:52,900 - 01:49:54,680] would experience essentially no,
+- [01:49:54,760 - 01:49:55,380] well,
+- [01:49:55,380 - 01:49:56,540] free-falling,
+- [01:49:56,620 - 01:50:00,140] would experience no tidal force
+- [01:50:00,140 - 01:50:01,160] worth speaking about,
+- [01:50:01,380 - 01:50:03,280] whereas the 2,000 mile man
+- [01:50:03,280 - 01:50:05,900] would be crushed by the tidal force
+- [01:50:05,900 - 01:50:07,060] as he falls toward the Earth.
+- [01:50:07,640 - 01:50:08,140] So,
+- [01:50:11,340 - 01:50:12,900] when you speak about
+- [01:50:12,900 - 01:50:14,860] the strength of tidal forces,
+- [01:50:15,000 - 01:50:17,180] you have to discuss how big an object
+- [01:50:17,180 - 01:50:17,880] you're talking about.
+- [01:50:18,000 - 01:50:18,960] And the same thing is true here.
+- [01:50:19,100 - 01:50:21,320] When you speak about the effect of curvature
+- [01:50:22,010 - 01:50:24,160] on an object moving around in this space,
+- [01:50:24,420 - 01:50:25,020] again,
+- [01:50:25,020 - 01:50:27,320] it depends on the size of the object
+- [01:50:27,320 - 01:50:28,200] that you're talking about.
+- [01:50:30,500 - 01:50:33,040] And this correspondence is not accidental.
+- [01:50:33,260 - 01:50:35,140] It's literally the same thing.
+- [01:50:37,920 - 01:50:40,360] You have to calculate the curvature temperature
+- [01:50:40,360 - 01:50:41,800] at every point.
+- [01:50:41,920 - 01:50:43,720] Is it technically still an infinite problem?
+- [01:50:44,320 - 01:50:44,860] Yeah,
+- [01:50:44,860 - 01:50:45,120] it is.
+- [01:50:45,220 - 01:50:45,280] But,
+- [01:50:45,280 - 01:50:45,540] you know,
+- [01:50:45,540 - 01:50:46,020] very often,
+- [01:50:46,060 - 01:50:47,500] very often you'll be presented
+- [01:50:47,500 - 01:50:50,560] with the metric tensor in some analytic form.
+- [01:50:50,880 - 01:50:52,520] There'd be even a formula for it.
+- [01:50:52,660 - 01:50:53,500] And with a formula,
+- [01:50:53,600 - 01:50:55,860] you can differentiate the formula
+- [01:50:55,860 - 01:50:57,740] and everything becomes,
+- [01:50:57,940 - 01:50:58,740] you know,
+- [01:50:58,740 - 01:51:01,060] some analytic function
+- [01:51:01,060 - 01:51:02,280] that you can calculate
+- [01:51:02,280 - 01:51:04,000] when you look at it.
+- [01:51:04,420 - 01:51:05,220] If it's zero,
+- [01:51:05,220 - 01:51:05,680] it's zero.
+- [01:51:06,420 - 01:51:06,980] You're right.
+- [01:51:07,060 - 01:51:08,460] If you were just given numerically
+- [01:51:09,000 - 01:51:09,960] the metric tensor,
+- [01:51:10,140 - 01:51:11,420] you were just given a bunch of numbers
+- [01:51:11,420 - 01:51:12,320] at every point,
+- [01:51:12,360 - 01:51:12,520] you know,
+- [01:51:12,520 - 01:51:13,140] a huge,
+- [01:51:13,140 - 01:51:13,380] big
+- [01:51:16,400 - 01:51:16,800] spreadsheet
+- [01:51:17,380 - 01:51:19,640] filled with loads and loads of numbers,
+- [01:51:20,720 - 01:51:22,740] you would have to check the curvature tensor
+- [01:51:22,740 - 01:51:23,600] at every point.
+- [01:51:23,680 - 01:51:24,520] And that is,
+- [01:51:24,520 - 01:51:25,200] you know,
+- [01:51:25,240 - 01:51:26,660] as complicated as anything else.
+- [01:51:27,080 - 01:51:27,480] So,
+- [01:51:27,480 - 01:51:28,380] where this is useful,
+- [01:51:28,740 - 01:51:30,600] there's situations where you know the metric
+- [01:51:30,600 - 01:51:31,740] in some analytic sense,
+- [01:51:32,040 - 01:51:34,140] in which you can calculate the derivatives,
+- [01:51:34,620 - 01:51:35,420] subtract them,
+- [01:51:35,520 - 01:51:36,720] do all the things you have to do,
+- [01:51:36,880 - 01:51:38,520] and then look at the analytic answer
+- [01:51:38,520 - 01:51:40,140] and see if the analytic answer is zero.
+- [01:51:41,160 - 01:51:41,560] Yeah.
+- [01:51:42,920 - 01:51:43,320] Right.
+- [01:51:45,900 - 01:51:46,300] So,
+- [01:51:46,300 - 01:51:47,200] in that sense,
+- [01:51:47,680 - 01:51:48,080] it's,
+- [01:51:48,080 - 01:51:48,340] it's,
+- [01:51:48,340 - 01:51:50,000] the problem is,
+- [01:51:51,280 - 01:51:53,180] it's not as bad as having to look
+- [01:51:53,180 - 01:51:54,360] at every possible metric
+- [01:51:54,360 - 01:51:56,460] and see whether you can make it,
+- [01:51:56,580 - 01:51:58,300] you have to look at every possible metric
+- [01:51:58,300 - 01:51:59,440] at every possible point.
+- [01:52:00,640 - 01:52:01,160] That's,
+- [01:52:01,160 - 01:52:01,580] this is,
+- [01:52:01,580 - 01:52:02,040] this is,
+- [01:52:02,040 - 01:52:02,640] this is better.
+- [01:52:02,820 - 01:52:05,520] This is not as hard as every possible metric.
+- [01:52:05,880 - 01:52:06,400] Right.
+- [01:52:07,060 - 01:52:09,380] Every possible coordinate system is what I meant.
+- [01:52:09,480 - 01:52:10,880] Every possible coordinate system
+- [01:52:10,880 - 01:52:11,940] at every possible point,
+- [01:52:12,060 - 01:52:15,060] until you find one which expresses the metric
+- [01:52:15,060 - 01:52:16,420] as being flat,
+- [01:52:17,900 - 01:52:19,140] this is easier.
+- [01:52:19,360 - 01:52:20,720] You calculate this one thing,
+- [01:52:20,860 - 01:52:22,640] and you compare it from point to point.
+- [01:52:25,780 - 01:52:26,300] Okay.
+- [01:52:28,580 - 01:52:30,140] For more,
+- [01:52:30,140 - 01:52:32,620] please visit us at stanford.edu.
