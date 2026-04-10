@@ -1,0 +1,3080 @@
+# Transcript
+
+Source: core/quantum_mechanics/2012_winter_modern_physics_stanford/032 - Lecture 3 ｜ Modern Physics： Quantum Mechanics (Stanford) [epzh76hNl8I].mp4
+
+- [00:00:06,320 - 00:00:09,800] This program is brought to you by Stanford University.
+- [00:00:10,220 - 00:00:12,740] Please visit us at stanford.edu.
+- [00:00:15,280 - 00:00:16,340] All right,
+- [00:00:16,340 - 00:00:20,660] we were developing the mathematics of linear operators.
+- [00:00:25,440 - 00:00:27,220] As I've emphasized,
+- [00:00:27,220 - 00:00:30,400] the mathematics of quantum mechanics is linear algebra.
+- [00:00:32,740 - 00:00:35,390] Linear algebra consists of a set
+- [00:00:35,390 - 00:00:38,040] of concepts beginning with a vector space.
+- [00:00:38,640 - 00:00:40,890] The vectors represent the states of a
+- [00:00:40,890 - 00:00:43,140] system in ways that will become clear.
+- [00:00:43,360 - 00:00:44,820] If that doesn't ring a bell
+- [00:00:44,820 - 00:00:46,280] and doesn't make sense to you now,
+- [00:00:46,280 - 00:00:46,760] that's okay,
+- [00:00:47,440 - 00:00:50,040] just as long as you understand the mathematical,
+- [00:00:50,660 - 00:00:52,720] rules of vector spaces at this point.
+- [00:00:54,640 - 00:00:56,760] The states of a system are,
+- [00:00:56,760 - 00:00:57,000] of course,
+- [00:00:57,000 - 00:00:57,860] not what you measure.
+- [00:00:57,920 - 00:01:00,920] What you measure is observable quantities,
+- [00:01:00,920 - 00:01:02,640] things like momentum,
+- [00:01:02,920 - 00:01:06,470] things like other quantities that are available
+- [00:01:06,470 - 00:01:10,020] to detect and to record and to measure.
+- [00:01:10,480 - 00:01:12,780] And the measurable quantities are represented
+- [00:01:12,780 - 00:01:15,080] not by vectors in the vector space,
+- [00:01:15,620 - 00:01:17,460] but by linear operators,
+- [00:01:17,460 - 00:01:19,600] Hermitian linear operators.
+- [00:01:19,740 - 00:01:20,190] So we know that the
+- [00:01:20,190 - 00:01:20,640] vector space is a vector space,
+- [00:01:20,640 - 00:01:21,780] and we need to develop that concept.
+- [00:01:22,100 - 00:01:22,560] We started,
+- [00:01:22,560 - 00:01:25,040] I don't know how many times we've started,
+- [00:01:25,180 - 00:01:27,020] but let's just review very,
+- [00:01:27,020 - 00:01:27,640] very quickly.
+- [00:01:28,140 - 00:01:29,460] A linear operator,
+- [00:01:29,460 - 00:01:32,900] I won't explain to you again what linear means,
+- [00:01:33,220 - 00:01:34,800] but a linear operator,
+- [00:01:34,800 - 00:01:40,320] let me find a piece of chalk.
+- [00:01:40,580 - 00:01:41,240] This is not chalk.
+- [00:01:43,040 - 00:01:43,560] Yeah.
+- [00:01:44,300 - 00:01:47,740] A linear operator I will represent by a capitalized letter,
+- [00:01:47,880 - 00:01:49,960] and I'm going to put a little hat over it,
+- [00:01:49,960 - 00:01:52,700] just to indicate that it's a linear operator.
+- [00:01:54,380 - 00:01:55,500] It acts,
+- [00:01:55,500 - 00:01:56,780] it operates,
+- [00:01:56,780 - 00:01:58,640] it does something to vectors.
+- [00:01:59,740 - 00:02:00,440] In particular,
+- [00:02:00,440 - 00:02:02,060] it does something to ket vectors,
+- [00:02:02,560 - 00:02:04,080] and gives you new ket vectors.
+- [00:02:04,200 - 00:02:05,140] I'm going to call this one C.
+- [00:02:06,320 - 00:02:07,000] All right.
+- [00:02:08,000 - 00:02:08,560] Now,
+- [00:02:08,560 - 00:02:09,900] that allows us,
+- [00:02:09,900 - 00:02:13,700] that together with the idea of the dual vector space
+- [00:02:14,420 - 00:02:17,080] and the notion of inner product allows
+- [00:02:17,080 - 00:02:19,740] us to define what are called matrix elements,
+- [00:02:19,760 - 00:02:19,940] of course.
+- [00:02:19,960 - 00:02:20,360] So,
+- [00:02:20,360 - 00:02:20,360] let's say we have a matrix of operators.
+- [00:02:21,180 - 00:02:23,980] Matrix elements of operators kind of are numbers.
+- [00:02:24,300 - 00:02:25,060] They're all numbers.
+- [00:02:25,620 - 00:02:27,100] They're a collection of numbers,
+- [00:02:27,940 - 00:02:29,760] a number for each pair of
+- [00:02:29,760 - 00:02:31,580] states that you can write down,
+- [00:02:31,700 - 00:02:32,780] each pair of states,
+- [00:02:32,780 - 00:02:33,760] let's say A and B.
+- [00:02:35,020 - 00:02:35,700] All right.
+- [00:02:35,700 - 00:02:36,520] And they're simply defined,
+- [00:02:36,520 - 00:02:41,520] let the operator act on A.
+- [00:02:41,920 - 00:02:43,160] It gives you a state.
+- [00:02:43,400 - 00:02:44,860] It gives you another vector.
+- [00:02:45,780 - 00:02:48,260] Let me put a bracket around it to indicate,
+- [00:02:49,579 - 00:02:51,979] that K has acted on A to give
+- [00:02:51,979 - 00:02:54,380] a new state that I could call C,
+- [00:02:54,520 - 00:02:55,700] but let me just leave it this way.
+- [00:02:55,940 - 00:02:56,800] And now,
+- [00:02:56,800 - 00:03:00,920] take the inner product of that with another vector B.
+- [00:03:02,580 - 00:03:04,840] That is usually simplified,
+- [00:03:04,840 - 00:03:06,560] the notation for it,
+- [00:03:06,560 - 00:03:09,080] is usually simplified just to B,
+- [00:03:09,080 - 00:03:10,460] K,
+- [00:03:10,460 - 00:03:11,680] A.
+- [00:03:12,160 - 00:03:14,400] But the way that you read it is
+- [00:03:14,400 - 00:03:16,640] K acts on A to give a new vector,
+- [00:03:16,640 - 00:03:18,180] K times A.
+- [00:03:18,260 - 00:03:21,120] And then you take the inner product with B.
+- [00:03:21,820 - 00:03:25,980] And the result is called the matrix element of K.
+- [00:03:26,040 - 00:03:27,500] I should put some hats over this,
+- [00:03:27,500 - 00:03:27,960] shouldn't I?
+- [00:03:28,600 - 00:03:30,260] To indicate that it's an operator.
+- [00:03:32,640 - 00:03:37,680] This is sometimes just more briefly called KBA.
+- [00:03:41,399 - 00:03:44,099] It's called the matrix element of
+- [00:03:44,099 - 00:03:46,800] K between vector B and vector A.
+- [00:03:48,260 - 00:03:50,950] And it's a notation that's
+- [00:03:50,950 - 00:03:53,640] very closely related to matrix notation.
+- [00:03:57,620 - 00:03:58,260] Now,
+- [00:03:58,260 - 00:04:00,940] remember the idea of a basis of vectors.
+- [00:04:01,260 - 00:04:04,140] A basis of vectors is a collection of vectors,
+- [00:04:04,140 - 00:04:06,200] which I can label N.
+- [00:04:07,300 - 00:04:09,290] If the dimensionality of the
+- [00:04:09,290 - 00:04:11,280] vector space is whatever it is,
+- [00:04:11,280 - 00:04:12,100] D for dimension,
+- [00:04:12,460 - 00:04:16,380] then a basis has D independent vectors.
+- [00:04:17,019 - 00:04:18,240] All of them are thought to be independent vectors.
+- [00:04:18,240 - 00:04:19,260] They're orthogonal to each other,
+- [00:04:19,260 - 00:04:21,200] and all of them have unit length.
+- [00:04:21,779 - 00:04:23,320] So just pictorially,
+- [00:04:23,320 - 00:04:24,960] a basis,
+- [00:04:24,960 - 00:04:30,220] it's hard to draw vectors in a complex vector space.
+- [00:04:30,460 - 00:04:31,570] The best I can do is to
+- [00:04:31,570 - 00:04:32,680] draw them in a real vector space.
+- [00:04:33,540 - 00:04:34,020] But,
+- [00:04:34,020 - 00:04:34,540] for example,
+- [00:04:34,540 - 00:04:36,290] these would be a basis of
+- [00:04:36,290 - 00:04:38,040] vectors in ordinary real three-dimensional space.
+- [00:04:38,560 - 00:04:39,780] There are other bases.
+- [00:04:40,500 - 00:04:41,400] Another basis,
+- [00:04:41,400 - 00:04:42,060] for example,
+- [00:04:42,060 - 00:04:42,720] would be,
+- [00:04:42,720 - 00:04:44,860] let's see if we have another color of chalk.
+- [00:04:48,240 - 00:04:52,580] Another basis might be tilted relative to this basis.
+- [00:04:55,200 - 00:04:58,580] These are intended to be all mutually orthogonal vectors,
+- [00:04:58,580 - 00:05:00,140] all of unit length,
+- [00:05:00,140 - 00:05:02,800] the blue vectors in three dimensions.
+- [00:05:03,260 - 00:05:04,540] And these are two different bases,
+- [00:05:04,540 - 00:05:06,820] the blue basis and the black bases.
+- [00:05:07,540 - 00:05:09,540] Let's pick a basis of vectors.
+- [00:05:10,120 - 00:05:13,530] So let's erase the blue basis
+- [00:05:13,530 - 00:05:16,940] and simply enumerate the basis vectors,
+- [00:05:16,940 - 00:05:17,660] 1,
+- [00:05:17,660 - 00:05:18,220] 2,
+- [00:05:18,220 - 00:05:18,220] 3.
+- [00:05:18,240 - 00:05:24,080] And that's the collection of ket vectors n.
+- [00:05:24,380 - 00:05:26,860] Can we represent red states in blue bases?
+- [00:05:29,520 - 00:05:30,120] Boy,
+- [00:05:30,120 - 00:05:30,980] Michael,
+- [00:05:30,980 - 00:05:31,580] you're on tonight.
+- [00:05:33,760 - 00:05:36,080] We could be all home listening to the
+- [00:05:36,080 - 00:05:38,400] president give the last state of the union address.
+- [00:05:41,780 - 00:05:43,730] Has everybody decided who they're going
+- [00:05:43,730 - 00:05:45,680] to vote for in the primaries?
+- [00:05:46,380 - 00:05:47,380] You haven't.
+- [00:05:47,620 - 00:05:48,220] You haven't.
+- [00:05:48,900 - 00:05:49,880] I bet I know which
+- [00:05:49,880 - 00:05:50,860] party you're going to vote for.
+- [00:05:55,260 - 00:05:57,320] Anybody who has voted for the other party,
+- [00:05:57,320 - 00:05:58,000] out of here now.
+- [00:06:06,560 - 00:06:07,020] Yeah.
+- [00:06:10,800 - 00:06:12,700] So given a basis of vectors,
+- [00:06:12,700 - 00:06:18,220] we can tabulate or record all of the vectors.
+- [00:06:18,220 - 00:06:21,320] So we can have a matrix of the
+- [00:06:21,320 - 00:06:24,420] matrix elements of k between vectors n and m.
+- [00:06:24,560 - 00:06:25,620] And that's a table.
+- [00:06:25,720 - 00:06:26,440] It's a kind of table,
+- [00:06:26,440 - 00:06:28,380] a square table of elements,
+- [00:06:28,380 - 00:06:30,740] n by n matrix.
+- [00:06:31,180 - 00:06:32,640] An n by n matrix,
+- [00:06:32,640 - 00:06:34,080] k 1 1,
+- [00:06:34,080 - 00:06:35,140] k 1 2,
+- [00:06:35,140 - 00:06:35,880] and so forth.
+- [00:06:36,760 - 00:06:38,620] Let's put k 2 1 down here.
+- [00:06:39,800 - 00:06:41,520] And we tabulate them.
+- [00:06:41,660 - 00:06:42,500] Write them all down.
+- [00:06:42,620 - 00:06:43,180] It makes a matrix.
+- [00:06:43,580 - 00:06:44,880] An n cap...
+- [00:06:44,880 - 00:06:46,720] A square matrix.
+- [00:06:46,720 - 00:06:49,390] A square matrix whose size is
+- [00:06:49,390 - 00:06:52,060] equal to the dimension of the space.
+- [00:06:53,079 - 00:06:55,460] So those are the matrix elements of k.
+- [00:06:55,960 - 00:07:00,460] And they really do describe the entire operator k.
+- [00:07:00,620 - 00:07:02,540] They describe it in some detail.
+- [00:07:03,120 - 00:07:05,060] They uniquely describe it.
+- [00:07:05,100 - 00:07:05,180] Yes?
+- [00:07:05,260 - 00:07:07,020] So you mean m to create another base?
+- [00:07:08,940 - 00:07:11,120] I mean n and m to be
+- [00:07:11,120 - 00:07:13,300] basis vectors drawn from the same basis.
+- [00:07:14,280 - 00:07:14,880] Right.
+- [00:07:14,880 - 00:07:16,850] n and m are basis
+- [00:07:16,850 - 00:07:18,820] vectors drawn from the same basis.
+- [00:07:19,700 - 00:07:20,340] All right?
+- [00:07:20,360 - 00:07:22,540] So this could be n equals 3,
+- [00:07:22,540 - 00:07:23,440] m equals 2,
+- [00:07:23,440 - 00:07:24,220] and so forth.
+- [00:07:25,320 - 00:07:27,480] So since there are how many basis vectors?
+- [00:07:27,680 - 00:07:28,200] There are d,
+- [00:07:28,200 - 00:07:30,180] where d is the dimension of the space,
+- [00:07:30,180 - 00:07:31,880] d basis vectors,
+- [00:07:31,880 - 00:07:34,860] and therefore d squared matrix elements.
+- [00:07:35,280 - 00:07:36,860] n can run from 1 to d.
+- [00:07:36,960 - 00:07:38,480] m can run from 1 to d.
+- [00:07:39,580 - 00:07:40,060] OK.
+- [00:07:40,160 - 00:07:41,700] Now let me remind you about something else.
+- [00:07:41,780 - 00:07:42,560] I'll write it over here.
+- [00:07:42,660 - 00:07:43,460] About a basis.
+- [00:07:44,219 - 00:07:47,149] A basis has the property that
+- [00:07:47,149 - 00:07:50,080] you can expand any vector in it.
+- [00:07:50,420 - 00:07:51,780] That you can take any vector,
+- [00:07:51,780 - 00:07:52,060] whatever,
+- [00:07:52,060 - 00:07:53,320] let's call it a,
+- [00:07:53,320 - 00:07:56,750] and write it as a sum
+- [00:07:56,750 - 00:08:00,180] over n of a set of coefficients,
+- [00:08:00,540 - 00:08:01,700] let's call them a sub n,
+- [00:08:01,700 - 00:08:04,880] times the basis vector n.
+- [00:08:05,960 - 00:08:07,700] We sum over the basis vectors.
+- [00:08:08,740 - 00:08:10,680] I'll include the summation signs.
+- [00:08:10,680 - 00:08:12,470] So that any vector can
+- [00:08:12,470 - 00:08:14,260] be represented in terms of them.
+- [00:08:14,360 - 00:08:15,440] That's just a statement,
+- [00:08:15,440 - 00:08:18,470] the analog of the statement that in three dimensions any
+- [00:08:18,470 - 00:08:21,500] vector can be represented in terms of three basis vectors.
+- [00:08:22,080 - 00:08:22,640] OK.
+- [00:08:24,460 - 00:08:25,020] Again,
+- [00:08:25,020 - 00:08:30,960] the set of coefficients a sub n is nothing but
+- [00:08:30,960 - 00:08:36,900] the inner products of the nth basis vector with a.
+- [00:08:39,120 - 00:08:40,659] Is equal to a sub n.
+- [00:08:40,659 - 00:08:41,799] Let me call it m.
+- [00:08:42,020 - 00:08:42,740] Let me call,
+- [00:08:42,740 - 00:08:46,100] this is supposed to be an m.
+- [00:08:53,560 - 00:08:56,690] So the particular coefficient a is just given
+- [00:08:56,690 - 00:08:59,820] by the inner product of a with m.
+- [00:08:59,960 - 00:09:03,560] That allows us to rewrite any vector
+- [00:09:03,560 - 00:09:07,160] in the interesting form sum over n.
+- [00:09:08,580 - 00:09:09,100] Now,
+- [00:09:09,100 - 00:09:10,640] let me write down the vector a sub n.
+- [00:09:10,640 - 00:09:11,380] I'll write n first.
+- [00:09:12,380 - 00:09:13,420] Write n first.
+- [00:09:13,720 - 00:09:15,560] And then after having written n,
+- [00:09:15,560 - 00:09:19,460] let me plug in the coefficient n a.
+- [00:09:22,860 - 00:09:27,540] This is a kind of expression that will occur over and over where
+- [00:09:27,540 - 00:09:32,220] you see an n standing next to an n like that summed over.
+- [00:09:33,020 - 00:09:34,380] Whenever you see that,
+- [00:09:34,380 - 00:09:36,140] it's just a way of,
+- [00:09:36,140 - 00:09:37,420] oops.
+- [00:09:37,420 - 00:09:39,920] This should be closed like that.
+- [00:09:40,220 - 00:09:41,320] A is a vector.
+- [00:09:43,200 - 00:09:48,330] Whenever you see an expression like n standing next to
+- [00:09:48,330 - 00:09:53,460] n with their noses pointed toward each other summed over n,
+- [00:09:53,460 - 00:09:58,620] you can always say all
+- [00:09:58,620 - 00:10:03,780] of this sort of does nothing.
+- [00:10:03,940 - 00:10:05,120] It just gives you back a.
+- [00:10:06,280 - 00:10:07,400] So keep that in mind.
+- [00:10:07,400 - 00:10:08,720] Whenever you see a sum
+- [00:10:08,720 - 00:10:10,040] like this with n with n,
+- [00:10:10,040 - 00:10:11,200] you can,
+- [00:10:11,200 - 00:10:12,020] it's there.
+- [00:10:12,280 - 00:10:13,480] It's a real thing.
+- [00:10:13,940 - 00:10:17,600] But it sort of just can be thought of as,
+- [00:10:17,600 - 00:10:19,860] what is it?
+- [00:10:19,960 - 00:10:21,120] It can be thought of as the unit operator.
+- [00:10:21,460 - 00:10:23,960] The unit operator on a gives you back a.
+- [00:10:24,300 - 00:10:25,700] But if you didn't understand that,
+- [00:10:25,700 - 00:10:26,400] that's not important.
+- [00:10:27,340 - 00:10:28,920] This is a correct expression.
+- [00:10:29,440 - 00:10:30,160] So now,
+- [00:10:30,160 - 00:10:33,620] let's go back.
+- [00:10:43,840 - 00:10:47,420] To the action of the linear
+- [00:10:47,420 - 00:10:51,000] operator k on an arbitrary vector.
+- [00:10:51,180 - 00:10:55,820] Let's take k and apply it to a.
+- [00:10:58,120 - 00:10:58,760] Okay.
+- [00:10:59,820 - 00:11:02,780] What I want to do is I want to calculate.
+- [00:11:03,100 - 00:11:03,220] Oh,
+- [00:11:03,220 - 00:11:04,860] let's come back over here.
+- [00:11:05,880 - 00:11:09,460] One way of describing the vectors is just
+- [00:11:09,460 - 00:11:13,040] to describe them symbolically or abstractly as vectors.
+- [00:11:13,320 - 00:11:15,580] But another way is just to
+- [00:11:15,580 - 00:11:17,840] give the coefficients a sub m.
+- [00:11:18,000 - 00:11:20,540] If I know all the coefficients a sub m,
+- [00:11:20,540 - 00:11:22,060] I know the vector a.
+- [00:11:22,480 - 00:11:23,520] In particular,
+- [00:11:23,520 - 00:11:25,600] if I have a specific basis picked out,
+- [00:11:25,600 - 00:11:28,900] the set of coefficients is a representation of the vector.
+- [00:11:29,040 - 00:11:30,500] It's a way of describing the vector.
+- [00:11:31,200 - 00:11:34,660] And so there's an abstract notation for vectors.
+- [00:11:34,660 - 00:11:36,460] And there's a more concrete way of
+- [00:11:36,460 - 00:11:38,260] describing them as a collection of components.
+- [00:11:38,660 - 00:11:40,160] These are the components of the vector.
+- [00:11:40,560 - 00:11:41,040] Now,
+- [00:11:41,040 - 00:11:43,680] here is an abstract operator
+- [00:11:43,680 - 00:11:46,320] being applied to an abstract vector.
+- [00:11:47,220 - 00:11:49,090] I'm interested in working this out in
+- [00:11:49,090 - 00:11:50,960] terms of the components of the vector.
+- [00:11:51,000 - 00:11:53,160] The actual numerical components of the vector.
+- [00:11:53,440 - 00:11:55,180] So the first thing I might like to know,
+- [00:11:55,180 - 00:11:56,780] k times a is a vector.
+- [00:11:57,020 - 00:11:58,760] I would like to know its components.
+- [00:11:59,520 - 00:12:02,080] Its components are just gotten by
+- [00:12:02,080 - 00:12:04,640] taking the e to the n.
+- [00:12:04,640 - 00:12:06,540] And the inner product with the basis vectors.
+- [00:12:06,880 - 00:12:09,040] So this is the nth component
+- [00:12:09,040 - 00:12:11,200] of the vector k times a.
+- [00:12:11,420 - 00:12:12,920] Or k acting on a.
+- [00:12:14,420 - 00:12:16,970] Let's work this out by
+- [00:12:16,970 - 00:12:19,520] writing a in terms of components.
+- [00:12:20,220 - 00:12:22,620] Here's a written in terms of components.
+- [00:12:22,920 - 00:12:23,680] Or like this.
+- [00:12:24,380 - 00:12:26,940] So let's plug in for a.
+- [00:12:34,840 - 00:12:39,660] k times m a summed over m.
+- [00:12:43,440 - 00:12:45,700] That's the same expression that's written here.
+- [00:12:46,160 - 00:12:48,440] The only difference is here I've used
+- [00:12:48,440 - 00:12:50,720] the index n for the summation variable.
+- [00:12:51,080 - 00:12:54,640] Here I've used the index m for the summation variable.
+- [00:12:56,720 - 00:13:02,100] And now we can rewrite this as k n m.
+- [00:13:02,100 - 00:13:06,000] This is the matrix element of k between
+- [00:13:06,000 - 00:13:09,900] the basis vector m and the basis vector n.
+- [00:13:10,560 - 00:13:15,200] Times a sub m summed over m.
+- [00:13:16,960 - 00:13:21,440] So we can reduce the problem of
+- [00:13:21,440 - 00:13:25,920] calculating the components of k times a.
+- [00:13:26,240 - 00:13:28,690] To a set of operations
+- [00:13:28,690 - 00:13:31,140] all on components and matrix elements.
+- [00:13:32,100 - 00:13:35,160] This is another way of writing the
+- [00:13:35,160 - 00:13:38,220] matrix k acting on the column vector a.
+- [00:13:39,440 - 00:13:41,220] I assume that everybody here has
+- [00:13:41,220 - 00:13:43,000] done a little bit of homework.
+- [00:13:43,220 - 00:13:44,920] And learned a little bit of linear algebra.
+- [00:13:45,220 - 00:13:48,900] This is simply another way of writing
+- [00:13:48,900 - 00:13:52,580] the matrix k times the column vector a.
+- [00:13:52,820 - 00:13:54,620] To get another column vector.
+- [00:13:55,920 - 00:13:58,200] This is a column vector
+- [00:13:58,200 - 00:14:00,480] because it's a vector whose components.
+- [00:14:02,100 - 00:14:03,460] Are labeled by n.
+- [00:14:04,020 - 00:14:07,660] So here's an example of the
+- [00:14:07,660 - 00:14:11,300] application of matrix notation or matrix construction.
+- [00:14:11,720 - 00:14:14,570] To the idea of a
+- [00:14:14,570 - 00:14:17,420] linear operator acting on a vector.
+- [00:14:18,319 - 00:14:21,620] Now we can multiply linear operators together.
+- [00:14:21,940 - 00:14:24,220] What does it mean to multiply two linear operators?
+- [00:14:25,300 - 00:14:26,920] Multiplying two linear operators.
+- [00:14:27,820 - 00:14:29,280] Let's call one of them,
+- [00:14:29,280 - 00:14:30,220] what have I called it?
+- [00:14:30,220 - 00:14:30,460] L.
+- [00:14:32,740 - 00:14:33,280] Let's,
+- [00:14:33,280 - 00:14:34,800] k times l.
+- [00:14:35,420 - 00:14:36,740] k times l,
+- [00:14:36,740 - 00:14:38,600] if k and l are operators.
+- [00:14:39,880 - 00:14:41,730] Is another operator which means that
+- [00:14:41,730 - 00:14:43,580] it can operate on a vector a.
+- [00:14:47,000 - 00:14:50,190] What it means is you first act with l
+- [00:14:50,190 - 00:14:53,380] on a to get a new vector l times a.
+- [00:14:54,600 - 00:14:56,020] Let's say we can write it this way.
+- [00:14:56,100 - 00:15:01,060] It's k acting or operating on.
+- [00:15:01,060 - 00:15:02,560] The vector l.
+- [00:15:05,000 - 00:15:05,780] Multiplied by a.
+- [00:15:06,720 - 00:15:09,140] So l times a gives you a new vector.
+- [00:15:09,280 - 00:15:10,620] And then you hit it,
+- [00:15:10,620 - 00:15:11,900] you hit the whole thing with k.
+- [00:15:12,620 - 00:15:14,060] So whatever l on a does.
+- [00:15:14,240 - 00:15:15,080] Then hit it with k.
+- [00:15:15,660 - 00:15:18,340] That defines the operation k times l.
+- [00:15:19,180 - 00:15:21,300] But now there's an interesting question we can ask.
+- [00:15:21,600 - 00:15:24,560] If operators are characterized by matrix elements.
+- [00:15:25,160 - 00:15:26,950] What are the matrix elements of
+- [00:15:26,950 - 00:15:28,740] a product like k times l?
+- [00:15:28,780 - 00:15:30,400] Incidentally as most of you probably know.
+- [00:15:31,200 - 00:15:33,350] K times l is not necessarily
+- [00:15:33,350 - 00:15:35,500] the same thing as l times k.
+- [00:15:37,020 - 00:15:38,100] These are operators,
+- [00:15:38,100 - 00:15:38,940] they're not numbers.
+- [00:15:39,100 - 00:15:40,900] One has to check whether you
+- [00:15:40,900 - 00:15:42,700] can change the order of them.
+- [00:15:42,740 - 00:15:43,900] And in general you can't.
+- [00:15:47,820 - 00:15:50,840] Linear operators are not commutative.
+- [00:15:51,080 - 00:15:55,160] You can't change the order necessarily in which they act.
+- [00:15:55,660 - 00:15:56,220] Alright,
+- [00:15:56,220 - 00:15:58,980] so let's consider the matrix elements of.
+- [00:15:59,840 - 00:16:01,320] K times l.
+- [00:16:02,140 - 00:16:03,200] What does that mean?
+- [00:16:04,160 - 00:16:05,180] That means.
+- [00:16:09,000 - 00:16:09,600] Yeah,
+- [00:16:09,600 - 00:16:10,200] that means.
+- [00:16:15,620 - 00:16:17,850] Sandwich the operator k times l
+- [00:16:17,850 - 00:16:20,080] between the basis vectors n and m.
+- [00:16:20,680 - 00:16:21,280] Alright,
+- [00:16:21,280 - 00:16:21,480] now.
+- [00:16:21,620 - 00:16:23,780] Here is l times m.
+- [00:16:25,620 - 00:16:27,480] Let's write that in another way.
+- [00:16:27,480 - 00:16:31,080] Let's write that by writing l times m.
+- [00:16:32,240 - 00:16:34,780] Is the sum over yet another index.
+- [00:16:35,500 - 00:16:37,380] I need a summation index now.
+- [00:16:37,560 - 00:16:39,160] So let's call that summation index r.
+- [00:16:40,120 - 00:16:40,720] Alright.
+- [00:16:40,840 - 00:16:42,860] We take l times m.
+- [00:16:44,540 - 00:16:46,620] We take its inner product with r.
+- [00:16:46,900 - 00:16:48,960] And then we multiply it by the vector r.
+- [00:16:49,680 - 00:16:50,280] Again,
+- [00:16:50,280 - 00:16:52,390] this construction where you see r's
+- [00:16:52,390 - 00:16:54,500] and r's nose to nose like that.
+- [00:16:54,980 - 00:16:56,260] It simply means.
+- [00:16:58,920 - 00:16:59,440] Well.
+- [00:17:00,360 - 00:17:02,900] It simply gives you back the left hand side.
+- [00:17:03,120 - 00:17:03,380] Oops.
+- [00:17:03,480 - 00:17:05,160] There's a missing bar in here.
+- [00:17:05,280 - 00:17:08,180] There's a missing vertical line in there.
+- [00:17:09,300 - 00:17:09,819] Okay,
+- [00:17:09,819 - 00:17:10,619] so that's l.
+- [00:17:10,660 - 00:17:12,400] That's l times m.
+- [00:17:12,560 - 00:17:13,680] Let's plug it into here.
+- [00:17:13,960 - 00:17:15,720] And then we can write
+- [00:17:15,720 - 00:17:17,480] that this is equal to n.
+- [00:17:19,260 - 00:17:21,359] K with a little hat on top of it.
+- [00:17:21,560 - 00:17:24,660] And then let's substitute this in for l times m.
+- [00:17:25,500 - 00:17:26,359] It's r.
+- [00:17:26,940 - 00:17:27,460] And then we can write.
+- [00:17:27,460 - 00:17:35,740] R summed over r.
+- [00:17:38,540 - 00:17:39,040] Okay,
+- [00:17:39,040 - 00:17:40,340] now we have a nice construction.
+- [00:17:40,680 - 00:17:42,980] We have everything written in terms of components.
+- [00:17:43,180 - 00:17:43,940] Let's get rid of this.
+- [00:17:46,340 - 00:17:48,630] And we can now write that
+- [00:17:48,630 - 00:17:50,920] the components or the matrix elements in.
+- [00:17:53,280 - 00:17:55,300] Let's call it k times l.
+- [00:17:57,580 - 00:18:00,940] The nth matrix element of it.
+- [00:18:01,000 - 00:18:05,380] This is the nth matrix element of k times l.
+- [00:18:05,540 - 00:18:06,860] What is that given by?
+- [00:18:07,020 - 00:18:09,600] It's given by nkr.
+- [00:18:11,379 - 00:18:12,740] That's knr.
+- [00:18:14,979 - 00:18:16,340] Times lrm.
+- [00:18:18,200 - 00:18:19,380] Summed over r.
+- [00:18:21,380 - 00:18:22,060] Alright,
+- [00:18:22,060 - 00:18:22,340] again.
+- [00:18:22,500 - 00:18:24,460] This is simply matrix multiplication.
+- [00:18:24,460 - 00:18:26,640] Written out in longhand.
+- [00:18:27,290 - 00:18:29,820] The matrix representing kl.
+- [00:18:31,189 - 00:18:32,854] Is simply the product of
+- [00:18:32,854 - 00:18:34,520] the matrices of k and l.
+- [00:18:34,600 - 00:18:35,280] That's what this reads.
+- [00:18:35,520 - 00:18:37,420] This is longhand notation.
+- [00:18:38,090 - 00:18:40,240] For the matrix product.
+- [00:18:40,640 - 00:18:42,820] Of the matrix k and l.
+- [00:18:44,209 - 00:18:46,100] So multiplying linear operators.
+- [00:18:47,200 - 00:18:49,140] Is an abstract idea.
+- [00:18:49,560 - 00:18:51,280] You simply follow the action
+- [00:18:51,280 - 00:18:53,000] of one operator by another operator.
+- [00:18:53,000 - 00:18:54,960] Or it's a concrete idea.
+- [00:18:55,080 - 00:19:00,120] That you can represent by matrix multiplication.
+- [00:19:00,680 - 00:19:03,940] Now I'm not going to go very heavily into this.
+- [00:19:04,060 - 00:19:06,060] Because I'm going to assume that everybody knows it.
+- [00:19:07,440 - 00:19:08,720] Among other things.
+- [00:19:09,480 - 00:19:12,300] It was discussed elaborately in
+- [00:19:12,300 - 00:19:15,120] the last class on quantum mechanics.
+- [00:19:15,360 - 00:19:19,860] Which I gave on quantum information and entanglement.
+- [00:19:21,120 - 00:19:22,980] So I will assume everybody knows it.
+- [00:19:22,980 - 00:19:26,540] How to relate this to matrix multiplication.
+- [00:19:35,740 - 00:19:36,960] Next idea.
+- [00:19:37,220 - 00:19:39,160] The idea of a Hermitian operator.
+- [00:19:39,520 - 00:19:42,000] Hermitian operators are special classes of operators.
+- [00:19:42,640 - 00:19:44,340] They play the role.
+- [00:19:44,520 - 00:19:48,780] In operator theory of things which are real.
+- [00:19:49,000 - 00:19:51,800] Real in the sense of real versus imaginary.
+- [00:19:51,800 - 00:19:53,480] Or real versus complex.
+- [00:19:57,260 - 00:19:59,780] Let's define Hermitian operators.
+- [00:19:59,840 - 00:20:01,560] First of all let's spell Hermitian operators.
+- [00:20:19,680 - 00:20:20,700] That's not right.
+- [00:20:27,600 - 00:20:28,300] What's that?
+- [00:20:29,660 - 00:20:30,340] Where?
+- [00:20:31,700 - 00:20:32,380] Hermite.
+- [00:20:33,220 - 00:20:33,900] Yes.
+- [00:20:35,040 - 00:20:35,700] Hermitian.
+- [00:20:36,140 - 00:20:36,820] Yeah.
+- [00:20:36,940 - 00:20:37,540] Hermite.
+- [00:20:37,560 - 00:20:42,020] Hermite is not a bug.
+- [00:20:42,220 - 00:20:43,840] It's the name of a mathematician.
+- [00:20:44,800 - 00:20:46,040] And her mission.
+- [00:20:48,259 - 00:20:50,440] Hermite is a proper noun.
+- [00:20:50,440 - 00:20:52,080] Hermitian is an adjective.
+- [00:20:54,180 - 00:20:55,260] Hermitian operators.
+- [00:20:55,860 - 00:20:57,360] What is a Hermitian operator?
+- [00:20:57,900 - 00:21:00,650] Well it stands for something which in
+- [00:21:00,650 - 00:21:03,400] classical mechanics would be a real quantity.
+- [00:21:03,460 - 00:21:05,040] A real thing that you can measure.
+- [00:21:05,420 - 00:21:08,020] Such as location of a particle.
+- [00:21:08,120 - 00:21:09,480] The x coordinate of a particle.
+- [00:21:09,620 - 00:21:10,840] The momentum of a particle.
+- [00:21:10,980 - 00:21:11,780] The angular momentum.
+- [00:21:12,000 - 00:21:13,380] All of those are real quantities.
+- [00:21:13,480 - 00:21:15,440] Real as opposed to imaginary.
+- [00:21:19,700 - 00:21:20,300] Alright.
+- [00:21:20,340 - 00:21:20,420] So what is a Hermitian operator?
+- [00:21:20,420 - 00:21:21,240] So a Hermitian operator.
+- [00:21:21,560 - 00:21:23,100] And I'm going to call a
+- [00:21:23,100 - 00:21:24,640] Hermitian operator by the generic term H.
+- [00:21:25,020 - 00:21:28,720] Now later on H is going to stand for Hamiltonian.
+- [00:21:28,740 - 00:21:30,560] For now it just stands for Hermitian.
+- [00:21:30,940 - 00:21:33,880] So let's not worry about Hamiltonians yet.
+- [00:21:34,440 - 00:21:36,000] It just stands for Hermitian.
+- [00:21:36,640 - 00:21:37,760] Hermitian operators,
+- [00:21:37,760 - 00:21:38,700] as all operators,
+- [00:21:38,700 - 00:21:40,340] have little hats on top of them.
+- [00:21:41,220 - 00:21:43,860] Hermitian operators are defined in the following way.
+- [00:21:44,400 - 00:21:45,780] They're matrix elements.
+- [00:21:53,560 - 00:21:58,960] Mikolaj Ch bezoglu,
+- [00:21:58,960 - 00:21:59,880] M veggies,
+- [00:21:59,880 - 00:21:59,880] H girls.
+- [00:22:00,880 - 00:22:02,800] H's plus H's are a top part of a unit.
+- [00:22:10,640 - 00:22:11,480] Henzel and M.
+- [00:22:11,480 - 00:22:20,380] H as N dobrechmus.
+- [00:22:20,420 - 00:22:21,440] you the bra vector B,
+- [00:22:21,440 - 00:22:23,870] then in order to get a
+- [00:22:23,870 - 00:22:26,300] complex conjugate of the left-hand side
+- [00:22:26,300 - 00:22:27,240] on the right-hand side,
+- [00:22:27,240 - 00:22:29,940] you should also have to complex conjugate H somehow.
+- [00:22:29,940 - 00:22:31,520] But H,
+- [00:22:31,520 - 00:22:32,760] the
+- [00:22:32,760 - 00:22:33,420] Hermitian operators,
+- [00:22:33,420 - 00:22:35,660] are exactly the ones that you don't
+- [00:22:35,660 - 00:22:37,900] have to do anything to in order
+- [00:22:37,900 - 00:22:39,140] to get this work to work out.
+- [00:22:39,140 - 00:22:40,100] Let me give you another example.
+- [00:22:40,100 - 00:22:41,940] Supposing we sandwich
+- [00:22:41,940 - 00:22:45,680] a Hermitian operator not between two different vectors,
+- [00:22:45,680 - 00:22:47,320] but between the same vector.
+- [00:22:47,320 - 00:22:48,380] In other
+- [00:22:48,380 - 00:22:48,520] words,
+- [00:22:48,520 - 00:22:49,380] take A,
+- [00:22:49,380 - 00:22:49,960] H,
+- [00:22:49,960 - 00:22:51,420] A,
+- [00:22:51,420 - 00:22:54,220] where A could be any vector whatever.
+- [00:22:54,220 - 00:22:55,800] Well,
+- [00:22:55,800 - 00:22:57,020] according to this
+- [00:22:57,020 - 00:22:57,420] equation,
+- [00:22:57,420 - 00:22:59,820] it's equal to A,
+- [00:22:59,820 - 00:23:01,220] H,
+- [00:23:01,220 - 00:23:02,720] A,
+- [00:23:02,720 - 00:23:04,960] complex conjugate.
+- [00:23:04,960 - 00:23:09,060] Interchanging the bra vector and the ket vector
+- [00:23:09,060 - 00:23:10,680] will do nothing if the bra vector
+- [00:23:10,680 - 00:23:12,300] and the ket vector are the same,
+- [00:23:12,300 - 00:23:13,700] but then this equation
+- [00:23:13,700 - 00:23:15,980] just says that the left-hand side is the
+- [00:23:15,980 - 00:23:18,260] same as the complex conjugate of the right-hand
+- [00:23:18,260 - 00:23:18,360] side.
+- [00:23:18,380 - 00:23:19,840] Other things that you have to do in
+- [00:23:19,840 - 00:23:21,300] order to compute the equation for H and function
+- [00:23:21,300 - 00:23:22,800] characters is if you do A götter,
+- [00:23:22,800 - 00:23:24,520] A hat which is actually the number of hertz,
+- [00:23:24,520 - 00:23:24,520] since
+- [00:23:24,520 - 00:23:24,520] A is the number of hertz,
+- [00:23:24,520 - 00:23:24,520] a senhor,
+- [00:23:24,520 - 00:23:25,900] a 했는데,
+- [00:23:25,900 - 00:23:26,040] a
+- [00:23:26,040 - 00:23:26,200] and��.
+- [00:23:26,920 - 00:23:28,180] Now I'll explain this in
+- [00:23:28,180 - 00:23:29,440] more detail when I come back.
+- [00:23:29,460 - 00:23:47,560] Prozent litre Valids.
+- [00:23:47,800 - 00:23:47,920] Perfect,
+- [00:23:47,920 - 00:23:48,320] nice.
+- [00:23:48,320 - 00:23:50,910] any matrix or any operator which when
+- [00:23:50,910 - 00:23:53,500] you sandwich it between the same state
+- [00:23:53,500 - 00:23:54,770] or the same vector on
+- [00:23:54,770 - 00:23:56,040] both sides gives you something real
+- [00:23:57,300 - 00:23:59,920] it follows from that that if you
+- [00:23:59,920 - 00:24:02,540] interchange the bra and the ket in a
+- [00:24:02,540 - 00:24:04,700] matrix element of H that you get
+- [00:24:04,700 - 00:24:06,860] complex conjugate another way to write it
+- [00:24:07,920 - 00:24:13,500] H is the complex conjugate of H
+- [00:24:13,500 - 00:24:19,080] in particular it's also true the same
+- [00:24:19,080 - 00:24:23,270] thing is true for basis vectors so H
+- [00:24:23,270 - 00:24:27,460] if M and N stand for basis vectors is
+- [00:24:27,460 - 00:24:31,600] equal to H complex conjugate in M where
+- [00:24:31,600 - 00:24:35,740] I've interchanged N and M that is the
+- [00:24:35,740 - 00:24:36,290] those are the two things that I've
+- [00:24:36,290 - 00:24:36,840] been talking about in the last lecture
+- [00:24:36,860 - 00:24:39,000] those are called Hermitian operators
+- [00:24:44,260 - 00:24:45,280] say it again
+- [00:24:50,280 - 00:24:51,900] say it again
+- [00:24:55,879 - 00:24:59,529] B Hermitian A no it's a complex
+- [00:24:59,529 - 00:25:03,180] conjugate of A Hermitian B A Hermitian A
+- [00:25:03,180 - 00:25:06,640] so it's just A Hermitian A is always real
+- [00:25:08,379 - 00:25:11,379] but the top equation well they
+- [00:25:11,379 - 00:25:14,380] either obviously the second equation follows
+- [00:25:14,380 - 00:25:16,750] from the first just by setting B equal
+- [00:25:16,750 - 00:25:19,120] to A but it's interesting that the first
+- [00:25:19,120 - 00:25:21,680] equation also follows from the second I will
+- [00:25:21,680 - 00:25:24,240] leave it to you to try to prove
+- [00:25:24,240 - 00:25:27,860] that it's a it's a couple of lines of
+- [00:25:27,860 - 00:25:31,480] proof and if if nobody can prove it I'll
+- [00:25:31,480 - 00:25:34,160] do it another time all right so those are the
+- [00:25:34,160 - 00:25:36,840] two equations that I've been talking about in the last lecture
+- [00:25:36,840 - 00:25:39,520] those those are the definitions of Hermitian
+- [00:25:39,520 - 00:25:42,200] operators in order to understand the significance of
+- [00:25:42,200 - 00:25:44,970] Hermitian operators obviously they have a
+- [00:25:44,970 - 00:25:47,740] kind of reality property reality again I
+- [00:25:47,740 - 00:25:50,110] emphasize reality in the sense of complex
+- [00:25:50,110 - 00:25:52,480] numbers they have a kind of reality property
+- [00:25:55,879 - 00:25:58,639] but in order to really appreciate their the
+- [00:25:58,639 - 00:26:01,400] significance of them we have to go to another
+- [00:26:01,400 - 00:26:04,110] concept the concept of eigenvalues so let's
+- [00:26:04,110 - 00:26:06,820] review very quickly I'm regarding this as a
+- [00:26:06,820 - 00:26:10,510] quick review a concept of eigenvalues
+- [00:26:10,510 - 00:26:14,200] and eigenvectors of operators now in
+- [00:26:14,200 - 00:26:17,410] general when an operator acts on a
+- [00:26:17,410 - 00:26:20,620] vector here's a vector an operator acts
+- [00:26:20,620 - 00:26:23,040] on it it will do something to
+- [00:26:23,040 - 00:26:25,460] that vector one kind of operator might rotate
+- [00:26:25,460 - 00:26:27,640] the vector another might reflect it about
+- [00:26:27,640 - 00:26:29,820] some axis there are all kinds of
+- [00:26:29,820 - 00:26:32,500] linear operators but in general it will
+- [00:26:32,500 - 00:26:35,180] change the direction of the operator it
+- [00:26:35,180 - 00:26:36,800] will take you from here for example to
+- [00:26:36,800 - 00:26:36,940] here.
+- [00:26:36,940 - 00:26:40,720] There may be special directions,
+- [00:26:40,720 - 00:26:42,760] particular directions,
+- [00:26:42,760 - 00:26:46,700] which when you apply the operator,
+- [00:26:46,840 - 00:26:47,640] for each operator,
+- [00:26:47,640 - 00:26:48,620] given an operator,
+- [00:26:48,620 - 00:26:51,220] there may be specific directions,
+- [00:26:51,220 - 00:26:51,820] and there will
+- [00:26:51,820 - 00:26:52,940] be for Hermitian operators.
+- [00:26:52,940 - 00:26:54,980] If you have a Hermitian operator,
+- [00:26:54,980 - 00:26:57,140] there will be directions
+- [00:26:57,780 - 00:27:01,100] that if you apply H to vectors in those directions,
+- [00:27:01,100 - 00:27:02,900] it doesn't change their direction.
+- [00:27:04,340 - 00:27:05,780] For example,
+- [00:27:05,780 - 00:27:09,160] a simple operator that you can think
+- [00:27:09,160 - 00:27:12,540] about would be an operator which takes
+- [00:27:12,540 - 00:27:17,750] every vector in any direction
+- [00:27:17,750 - 00:27:22,960] and stretches it along an axis.
+- [00:27:22,960 - 00:27:25,420] Stretches it out along one
+- [00:27:25,420 - 00:27:25,740] axis,
+- [00:27:25,740 - 00:27:28,520] doubling its length in one direction,
+- [00:27:28,520 - 00:27:30,820] keeping its length in the other direction
+- [00:27:30,820 - 00:27:31,240] fixed.
+- [00:27:32,000 - 00:27:32,720] Okay?
+- [00:27:33,639 - 00:27:36,989] So we might have an operator which takes
+- [00:27:36,989 - 00:27:40,340] any vector and doubles the x component of
+- [00:27:40,340 - 00:27:40,680] the vector,
+- [00:27:40,680 - 00:27:41,260] for example,
+- [00:27:41,260 - 00:27:42,880] leaving the y component fixed.
+- [00:27:42,880 - 00:27:46,000] Then if I take an arbitrary vector,
+- [00:27:46,260 - 00:27:48,100] its direction will change,
+- [00:27:48,100 - 00:27:49,520] exactly as you see here.
+- [00:27:49,520 - 00:27:52,040] But if I take a vector along the
+- [00:27:52,040 - 00:27:52,660] x axis,
+- [00:27:52,660 - 00:27:55,980] then its direction doesn't change.
+- [00:27:55,980 - 00:27:58,840] The direction stays the same.
+- [00:27:58,840 - 00:28:01,420] Those vectors
+- [00:28:01,920 - 00:28:02,880] whose direction stays the same,
+- [00:28:02,880 - 00:28:02,880] if I take an arbitrary vector,
+- [00:28:02,880 - 00:28:02,880] it's direction will change.
+- [00:28:02,880 - 00:28:05,440] So the direction does not change when you
+- [00:28:05,440 - 00:28:08,000] apply a certain operator are called the eigenvectors
+- [00:28:08,000 - 00:28:08,860] of that operator.
+- [00:28:08,860 - 00:28:11,920] Eigen is the German word for proper.
+- [00:28:11,920 - 00:28:13,800] I think proper.
+- [00:28:17,220 - 00:28:18,840] Is that what eigen means?
+- [00:28:18,840 - 00:28:19,300] Doesn't change?
+- [00:28:20,660 - 00:28:22,860] I was once told it meant proper.
+- [00:28:23,940 - 00:28:24,500] Yeah.
+- [00:28:24,500 - 00:28:25,840] Very,
+- [00:28:25,840 - 00:28:26,520] very little.
+- [00:28:27,400 - 00:28:27,960] Own.
+- [00:28:27,960 - 00:28:30,380] Okay.
+- [00:28:30,380 - 00:28:30,940] Own.
+- [00:28:30,940 - 00:28:30,940] Own.
+- [00:28:30,940 - 00:28:32,720] Okay.
+- [00:28:33,580 - 00:28:34,100] Good.
+- [00:28:35,320 - 00:28:35,840] Alright,
+- [00:28:35,840 - 00:28:38,060] so the eigenvectors of an operator
+- [00:28:38,060 - 00:28:40,280] are the vectors whose direction don't change.
+- [00:28:40,380 - 00:28:41,660] But what does happen to them then?
+- [00:28:41,660 - 00:28:47,500] Let's suppose we have an operator.
+- [00:28:47,500 - 00:28:49,520] I'm taking it to be a
+- [00:28:49,520 - 00:28:50,600] Hermitian operator now.
+- [00:28:50,600 - 00:28:52,660] And I find some eigenvector.
+- [00:28:52,660 - 00:28:54,240] Let me call the eigenvector lambda.
+- [00:28:54,240 - 00:28:56,820] What can
+- [00:28:56,820 - 00:28:57,740] happen to it?
+- [00:28:57,740 - 00:28:59,500] If its direction doesn't change,
+- [00:28:59,500 - 00:29:01,050] the only thing that can happen
+- [00:29:01,050 - 00:29:02,600] to it is it gets multiplied
+- [00:29:02,600 - 00:29:02,860] by the x.
+- [00:29:02,860 - 00:29:04,160] So the eigenvector lambda is multiplied by a number.
+- [00:29:04,160 - 00:29:06,400] Let's call that number lambda.
+- [00:29:07,160 - 00:29:07,760] Now,
+- [00:29:07,760 - 00:29:09,940] the first lambda here is just
+- [00:29:09,940 - 00:29:12,120] a notation for indicating a particular vector.
+- [00:29:13,540 - 00:29:15,990] If we find a vector
+- [00:29:15,990 - 00:29:18,440] that when h applies to it,
+- [00:29:18,440 - 00:29:19,400] when h attacks it,
+- [00:29:19,400 - 00:29:22,700] just multiplies it by the number lambda,
+- [00:29:23,020 - 00:29:26,030] we call that vector the
+- [00:29:26,030 - 00:29:29,040] eigenvector of h with eigenvalue lambda.
+- [00:29:30,240 - 00:29:30,840] Eigenvectors,
+- [00:29:30,840 - 00:29:32,139] I'll call them e vectors.
+- [00:29:32,140 - 00:29:32,220] Eigenvectors,
+- [00:29:32,220 - 00:29:35,860] I'll call them e vectors and e values.
+- [00:29:38,920 - 00:29:44,860] The eigenvector lambda corresponds to the eigenvector lambda if h
+- [00:29:44,860 - 00:29:50,800] hitting that eigenvector simply multiplies it by the number lambda.
+- [00:29:51,880 - 00:29:52,680] That's the,
+- [00:29:52,680 - 00:29:53,100] yes?
+- [00:29:53,840 - 00:29:58,000] That means then we're trying to follow this curve.
+- [00:29:58,240 - 00:29:58,740] Well.
+- [00:29:58,840 - 00:30:01,760] It doesn't seem like all operations would have eigenvectors.
+- [00:30:01,760 - 00:30:02,120] It doesn't seem like all operations would have eigenvectors.
+- [00:30:02,120 - 00:30:02,460] Say it again.
+- [00:30:02,620 - 00:30:05,900] It doesn't seem like all operations would have eigenvectors.
+- [00:30:06,060 - 00:30:06,820] All operators.
+- [00:30:07,200 - 00:30:07,660] Yeah,
+- [00:30:07,660 - 00:30:07,880] yeah.
+- [00:30:07,920 - 00:30:08,800] All linear operators.
+- [00:30:09,140 - 00:30:09,400] Yes.
+- [00:30:09,960 - 00:30:10,980] That is,
+- [00:30:10,980 - 00:30:12,400] that is true.
+- [00:30:13,080 - 00:30:16,800] Not all operators have eigenvectors.
+- [00:30:16,960 - 00:30:18,840] All Hermitian operators do.
+- [00:30:19,720 - 00:30:21,100] All Hermitian operators,
+- [00:30:21,100 - 00:30:22,560] and we're going to state a theorem now.
+- [00:30:22,940 - 00:30:23,460] Now,
+- [00:30:23,460 - 00:30:24,460] I'm not going to prove the theorem.
+- [00:30:24,540 - 00:30:28,320] The theorem can be found on the internet version of
+- [00:30:28,320 - 00:30:32,100] my last quantum mechanics class on entanglement in the universe.
+- [00:30:32,100 - 00:30:32,700] And that sort of thing.
+- [00:30:32,880 - 00:30:34,540] The theorem is an elementary theorem.
+- [00:30:35,500 - 00:30:37,080] It has various pieces.
+- [00:30:39,000 - 00:30:40,200] Theorem number one.
+- [00:30:43,320 - 00:30:48,560] All of the eigenvalues of a Hermitian operator are what?
+- [00:30:49,480 - 00:30:50,120] Real.
+- [00:30:51,860 - 00:30:52,180] Okay.
+- [00:30:52,420 - 00:30:52,960] They are.
+- [00:30:53,200 - 00:30:55,840] These are all easy to prove statements.
+- [00:30:56,000 - 00:30:57,640] Very easy from the definition.
+- [00:30:58,700 - 00:30:59,340] Basically,
+- [00:30:59,340 - 00:31:00,500] this alone.
+- [00:31:00,500 - 00:31:03,910] That the matrix element of a Hermitian operator
+- [00:31:03,910 - 00:31:07,320] sandwiched between the same state is always real.
+- [00:31:07,480 - 00:31:08,900] That's sufficient to prove it.
+- [00:31:09,120 - 00:31:10,640] I'll let you figure it out.
+- [00:31:10,820 - 00:31:11,660] So number one.
+- [00:31:13,500 - 00:31:19,420] E values of Hermitian operators,
+- [00:31:19,420 - 00:31:20,160] H,
+- [00:31:20,160 - 00:31:21,080] are real.
+- [00:31:24,900 - 00:31:25,820] Real numbers.
+- [00:31:26,860 - 00:31:27,480] Okay.
+- [00:31:32,960 - 00:31:34,540] Second part of the theorem,
+- [00:31:34,540 - 00:31:35,360] or second theorem.
+- [00:31:36,520 - 00:31:37,000] Two.
+- [00:31:37,600 - 00:31:38,660] Very easy to prove,
+- [00:31:38,660 - 00:31:39,120] as I said.
+- [00:31:39,460 - 00:31:44,360] The eigenvectors of Hermitian
+- [00:31:44,360 - 00:31:49,260] operators for different eigenvalues.
+- [00:31:49,440 - 00:31:51,320] If I find more than one eigenvalue,
+- [00:31:51,320 - 00:31:54,280] if there is more than one eigenvalue,
+- [00:31:54,280 - 00:31:56,280] let's call it lambda one and lambda two,
+- [00:31:56,400 - 00:31:58,240] and they're not equal to each other,
+- [00:31:58,240 - 00:31:59,500] different eigenvalues,
+- [00:31:59,500 - 00:32:01,820] the eigenvectors are what?
+- [00:32:04,260 - 00:32:04,980] Orthogonal.
+- [00:32:05,120 - 00:32:05,320] Orthogonal.
+- [00:32:10,980 - 00:32:15,980] For lambda one not equal to lambda two.
+- [00:32:16,560 - 00:32:17,740] In other words,
+- [00:32:17,740 - 00:32:19,440] for two different eigenvalues,
+- [00:32:19,440 - 00:32:21,760] the eigenvectors are orthogonal.
+- [00:32:21,960 - 00:32:25,360] This is not true of general operators.
+- [00:32:25,660 - 00:32:27,240] It's true of the Hermitian operators.
+- [00:32:29,199 - 00:32:30,480] Number three.
+- [00:32:32,920 - 00:32:35,450] Basically number three says there are
+- [00:32:35,450 - 00:32:37,980] a lot of eigenvectors of Hermitian operators.
+- [00:32:38,960 - 00:32:40,820] How many is the maximum there can be?
+- [00:32:41,760 - 00:32:42,400] Well,
+- [00:32:42,400 - 00:32:44,540] they're all mutually perpendicular,
+- [00:32:44,540 - 00:32:46,060] for different eigenvalues,
+- [00:32:46,060 - 00:32:48,260] they're all mutually perpendicular to each other.
+- [00:32:49,020 - 00:32:51,380] How many mutually perpendicular vectors can
+- [00:32:51,380 - 00:32:53,740] you find in a d-dimensional vector space?
+- [00:32:54,200 - 00:32:54,780] Well,
+- [00:32:54,780 - 00:32:55,540] maximum is d.
+- [00:32:55,540 - 00:33:01,540] The theorem says that there are always d,
+- [00:33:01,540 - 00:33:08,500] there exist d mutually orthogonal.
+- [00:33:14,440 - 00:33:15,280] No,
+- [00:33:15,280 - 00:33:16,100] for Hermitians,
+- [00:33:16,100 - 00:33:18,700] not only at most but also at least.
+- [00:33:19,760 - 00:33:20,600] Hermitian.
+- [00:33:20,600 - 00:33:33,220] Hermitian matrices have d mutually orthogonal eigenvectors.
+- [00:33:37,139 - 00:33:40,209] If two of the eigenvalues for two
+- [00:33:40,209 - 00:33:43,280] different eigenvectors happen to be the same number,
+- [00:33:44,120 - 00:33:46,090] still you can find
+- [00:33:46,090 - 00:33:48,060] orthogonal eigenvectors associated with them.
+- [00:33:48,200 - 00:33:49,280] In that case,
+- [00:33:49,280 - 00:33:50,140] the two eigenvalues,
+- [00:33:50,600 - 00:33:51,800] they happen to be the same number,
+- [00:33:51,960 - 00:33:53,340] are called degenerate.
+- [00:33:54,200 - 00:33:56,170] But let's ignore the possibility
+- [00:33:56,170 - 00:33:58,140] of degenerate eigenvalues for the moment.
+- [00:33:59,560 - 00:34:00,620] What does this mean?
+- [00:34:00,780 - 00:34:03,240] This means that the eigenvectors
+- [00:34:03,240 - 00:34:05,700] of Hermitian operators form bases.
+- [00:34:06,360 - 00:34:07,140] In other words,
+- [00:34:07,140 - 00:34:07,780] there's enough of them,
+- [00:34:07,780 - 00:34:09,659] they're all perpendicular to each other,
+- [00:34:10,139 - 00:34:12,600] you can always choose them to be unit vectors.
+- [00:34:12,800 - 00:34:13,889] Why is it that you can
+- [00:34:13,889 - 00:34:14,980] always choose them to be unit vectors?
+- [00:34:15,540 - 00:34:17,940] How do I know that I can always
+- [00:34:17,940 - 00:34:20,340] take an eigenvector to be of unit length?
+- [00:34:20,600 - 00:34:21,460] Unit norm,
+- [00:34:21,460 - 00:34:23,500] unit in a product with itself?
+- [00:34:23,880 - 00:34:24,480] Well,
+- [00:34:24,480 - 00:34:25,560] if I have an eigenvector,
+- [00:34:25,560 - 00:34:27,880] and I multiply it by any number,
+- [00:34:28,080 - 00:34:31,060] it's still an eigenvector with the same eigenvalue.
+- [00:34:31,639 - 00:34:32,580] In other words,
+- [00:34:32,580 - 00:34:34,360] if I take twice lambda here,
+- [00:34:34,520 - 00:34:36,620] that too just goes straight through,
+- [00:34:37,500 - 00:34:41,380] h on twice lambda is lambda times twice lambda.
+- [00:34:41,639 - 00:34:44,880] So if I multiply an eigenvector by any number,
+- [00:34:47,179 - 00:34:50,460] any just ordinary complex number,
+- [00:34:50,600 - 00:34:51,239] it could be complex,
+- [00:34:52,299 - 00:34:53,440] any complex number,
+- [00:34:53,440 - 00:34:56,699] it still stays an eigenvector with the same eigenvalue.
+- [00:34:56,980 - 00:34:58,930] So I can always multiply
+- [00:34:58,930 - 00:35:00,880] the eigenvectors by numerical numbers
+- [00:35:00,880 - 00:35:02,860] until I get them to be of unit length.
+- [00:35:03,380 - 00:35:05,180] Once I have them of unit length,
+- [00:35:05,400 - 00:35:06,780] and they're all mutually orthogonal,
+- [00:35:07,280 - 00:35:08,560] they form a basis.
+- [00:35:09,240 - 00:35:10,800] This is the basic fact,
+- [00:35:10,800 - 00:35:12,080] two basic facts,
+- [00:35:12,080 - 00:35:12,520] about
+- [00:35:13,840 - 00:35:14,800] Hermitian operators.
+- [00:35:15,380 - 00:35:17,260] Their eigenvectors form a basis,
+- [00:35:17,500 - 00:35:19,780] and their eigenvalues are all real.
+- [00:35:28,300 - 00:35:29,940] Any questions up until now?
+- [00:35:33,140 - 00:35:33,820] Okay.
+- [00:35:35,400 - 00:35:36,080] Yes?
+- [00:35:36,240 - 00:35:39,900] I'm still confused about whether they exist or not.
+- [00:35:40,540 - 00:35:41,780] Whether they exist.
+- [00:35:42,120 - 00:35:44,460] So the rotating axis isn't Hermitian?
+- [00:35:44,600 - 00:35:45,040] Say it again?
+- [00:35:45,620 - 00:35:46,300] Rotating?
+- [00:35:46,460 - 00:35:47,140] No,
+- [00:35:47,140 - 00:35:49,700] rotating axis is not Hermitian.
+- [00:35:50,220 - 00:35:50,620] Right.
+- [00:35:57,060 - 00:35:57,460] Actually,
+- [00:35:57,460 - 00:35:58,240] I'll tell you,
+- [00:35:59,520 - 00:36:00,860] it's anti-Hermitian.
+- [00:36:01,880 - 00:36:03,920] We'll come to the definition of that in a minute.
+- [00:36:05,820 - 00:36:07,820] Which means if you multiply it by i,
+- [00:36:08,020 - 00:36:09,240] it becomes Hermitian.
+- [00:36:09,700 - 00:36:10,100] Now,
+- [00:36:10,100 - 00:36:10,960] you can ask,
+- [00:36:10,960 - 00:36:11,380] well,
+- [00:36:11,480 - 00:36:14,220] if you multiply it by i and it becomes Hermitian,
+- [00:36:14,280 - 00:36:16,840] that must mean it has a bunch of imaginary eigenvalues.
+- [00:36:16,840 - 00:36:17,880] Yes,
+- [00:36:17,880 - 00:36:21,600] rotation operators do have imaginary eigenvalues.
+- [00:36:21,900 - 00:36:22,160] Remember,
+- [00:36:22,160 - 00:36:24,880] we're dealing with vector spaces over the complex numbers.
+- [00:36:25,620 - 00:36:27,450] Just an ordinary rotation happens
+- [00:36:27,450 - 00:36:29,280] to have a complex eigenvalue.
+- [00:36:29,580 - 00:36:31,940] But if I were thinking about real vector spaces,
+- [00:36:32,320 - 00:36:33,640] in real vector spaces,
+- [00:36:33,860 - 00:36:35,720] rotation of axes does not have,
+- [00:36:35,860 - 00:36:36,980] is not Hermitian.
+- [00:36:37,120 - 00:36:38,400] So that's exactly right.
+- [00:36:38,840 - 00:36:40,460] What does Hermitian become?
+- [00:36:40,740 - 00:36:42,120] What's the concept of Hermitian?
+- [00:36:42,340 - 00:36:43,240] Do we have it here?
+- [00:36:43,480 - 00:36:44,040] Yeah.
+- [00:36:44,040 - 00:36:45,240] What's the comp-
+- [00:36:45,240 - 00:36:47,800] Supposing we're talking about a real vector space,
+- [00:36:48,040 - 00:36:49,060] where all the numbers,
+- [00:36:49,060 - 00:36:49,940] matrix elements,
+- [00:36:50,120 - 00:36:52,560] everything else are real numbers.
+- [00:36:53,040 - 00:36:54,300] What is the mean-
+- [00:36:54,300 - 00:36:55,940] What is the analog of Hermitian?
+- [00:36:56,440 - 00:36:58,060] The analog of Hermitian,
+- [00:36:58,180 - 00:37:00,340] we just ignore complex conjugation.
+- [00:37:00,360 - 00:37:02,060] No such operation is complex con-
+- [00:37:02,060 - 00:37:04,560] or everything is its own complex conjugate.
+- [00:37:05,000 - 00:37:06,160] It's symmetric.
+- [00:37:07,160 - 00:37:09,100] HAB is equal to HBA.
+- [00:37:09,360 - 00:37:11,840] Or HMN is equal to HNM.
+- [00:37:12,820 - 00:37:13,380] So,
+- [00:37:13,380 - 00:37:15,310] a special case of Hermitian
+- [00:37:15,310 - 00:37:17,240] operators would be symmetric real.
+- [00:37:18,260 - 00:37:20,220] Things which are symmetric and real.
+- [00:37:21,220 - 00:37:21,820] Okay?
+- [00:37:21,960 - 00:37:25,180] A rotation of coordinates is anti-symmetric.
+- [00:37:25,420 - 00:37:26,960] It's an anti-symmetric matrix.
+- [00:37:27,200 - 00:37:28,180] So in that sense,
+- [00:37:28,300 - 00:37:28,920] it's not,
+- [00:37:28,960 - 00:37:29,940] it is not Hermitian.
+- [00:37:31,120 - 00:37:31,420] Sorry,
+- [00:37:31,420 - 00:37:31,580] you?
+- [00:37:32,640 - 00:37:36,360] You said that the eigenvectors form a-
+- [00:37:36,360 - 00:37:37,380] A basis.
+- [00:37:37,620 - 00:37:39,420] A basis of the Hermitian.
+- [00:37:39,620 - 00:37:40,460] In which,
+- [00:37:40,460 - 00:37:41,260] I mean,
+- [00:37:41,260 - 00:37:42,940] is there a relation to it?
+- [00:37:43,380 - 00:37:44,080] What space?
+- [00:37:44,800 - 00:37:46,100] The vector space.
+- [00:37:46,340 - 00:37:47,260] The complex vector space.
+- [00:37:49,660 - 00:37:52,800] Is there a relationship between that and H or something?
+- [00:37:54,260 - 00:37:55,400] Given an H.
+- [00:37:55,820 - 00:37:58,640] It would be more than one B-dimensional vector space.
+- [00:37:58,980 - 00:37:59,300] Yes,
+- [00:37:59,300 - 00:38:01,360] but let's focus on a particular vector space.
+- [00:38:02,820 - 00:38:03,620] And now,
+- [00:38:03,740 - 00:38:05,660] take a certain particular Hermitian
+- [00:38:05,660 - 00:38:07,580] operator in that vector space.
+- [00:38:10,180 - 00:38:10,740] Okay?
+- [00:38:11,160 - 00:38:12,500] It's a collection of vectors.
+- [00:38:13,660 - 00:38:16,080] Hermitian operators act on that vector space,
+- [00:38:16,380 - 00:38:17,300] give new vectors,
+- [00:38:17,540 - 00:38:18,380] take that.
+- [00:38:18,920 - 00:38:19,520] Now,
+- [00:38:19,520 - 00:38:22,300] if you want a concrete representation of it,
+- [00:38:22,360 - 00:38:25,220] then the concrete representation is in terms of matrices.
+- [00:38:26,820 - 00:38:27,420] Basically,
+- [00:38:27,420 - 00:38:29,520] this says that every Hermitian matrix
+- [00:38:30,220 - 00:38:33,520] has a complete orthonormal family of eigenvectors.
+- [00:38:34,420 - 00:38:35,020] Well,
+- [00:38:35,020 - 00:38:36,780] plus the form of H
+- [00:38:36,780 - 00:38:38,540] in that basis is very simple.
+- [00:38:38,940 - 00:38:40,280] And it's also simple.
+- [00:38:40,380 - 00:38:40,620] Well,
+- [00:38:43,799 - 00:38:44,240] Yeah.
+- [00:38:45,540 - 00:38:46,560] In that basis,
+- [00:38:46,560 - 00:38:46,880] yes.
+- [00:38:46,940 - 00:38:47,680] In that basis,
+- [00:38:47,680 - 00:38:49,640] the form of H is very simple.
+- [00:38:50,359 - 00:38:52,109] But it may be a difficult job
+- [00:38:52,109 - 00:38:53,860] to figure out what that basis is.
+- [00:38:54,760 - 00:38:57,920] So I didn't want to belabor that point right now.
+- [00:38:58,080 - 00:38:58,840] But you're right.
+- [00:39:01,280 - 00:39:01,840] All right,
+- [00:39:01,840 - 00:39:03,800] so if you like thinking concretely,
+- [00:39:03,800 - 00:39:05,900] really concretely and not abstractly,
+- [00:39:05,920 - 00:39:06,700] as I do,
+- [00:39:08,299 - 00:39:10,600] then it's easy to think of,
+- [00:39:10,600 - 00:39:11,040] you know,
+- [00:39:11,040 - 00:39:12,060] let's say that you have operators simply as matrices.
+- [00:39:12,960 - 00:39:13,480] Matrices,
+- [00:39:14,960 - 00:39:15,480] H11,
+- [00:39:16,320 - 00:39:16,840] H12,
+- [00:39:17,220 - 00:39:17,800] blah,
+- [00:39:17,800 - 00:39:18,000] blah,
+- [00:39:18,000 - 00:39:18,120] blah,
+- [00:39:18,120 - 00:39:18,260] blah,
+- [00:39:18,260 - 00:39:18,380] blah,
+- [00:39:19,160 - 00:39:19,680] H21,
+- [00:39:20,020 - 00:39:20,660] dot,
+- [00:39:20,660 - 00:39:20,820] dot,
+- [00:39:20,820 - 00:39:21,040] dot.
+- [00:39:21,800 - 00:39:23,520] Vectors as column vectors,
+- [00:39:23,700 - 00:39:24,060] A1,
+- [00:39:24,060 - 00:39:24,900] A2,
+- [00:39:24,900 - 00:39:25,780] A3.
+- [00:39:26,680 - 00:39:29,240] And then acting with a matrix on a column vector,
+- [00:39:29,380 - 00:39:30,760] I will assume you know how to do that,
+- [00:39:30,880 - 00:39:31,920] gives you a new vector.
+- [00:39:33,160 - 00:39:35,640] If A is an eigenvector,
+- [00:39:35,640 - 00:39:38,360] that means that the matrix,
+- [00:39:38,660 - 00:39:39,880] when it acts on A,
+- [00:39:40,420 - 00:39:42,220] just gives you a number lambda
+- [00:39:42,800 - 00:39:46,640] times the same vector.
+- [00:39:47,700 - 00:39:49,240] If it is an eigenvector.
+- [00:39:49,900 - 00:39:52,300] Not all vectors will be eigenvectors.
+- [00:39:52,560 - 00:39:53,420] Most won't.
+- [00:39:54,940 - 00:39:56,760] Most vectors won't be eigenvectors,
+- [00:39:56,880 - 00:39:59,000] but there will be a complete basis of them.
+- [00:40:00,259 - 00:40:01,660] If H is her mission.
+- [00:40:02,800 - 00:40:04,520] So if you like thinking concretely,
+- [00:40:04,540 - 00:40:05,560] just think in terms of matrices,
+- [00:40:05,560 - 00:40:05,940] matrix elements.
+- [00:40:10,640 - 00:40:12,250] Now we're ready to state
+- [00:40:12,250 - 00:40:13,860] the postulates of quantum mechanics.
+- [00:40:18,920 - 00:40:21,420] The first postulate we've already stated.
+- [00:40:21,660 - 00:40:24,260] The first postulate is that the states of a system,
+- [00:40:24,420 - 00:40:25,080] the configurations,
+- [00:40:25,460 - 00:40:28,150] the conditions describing a system
+- [00:40:28,150 - 00:40:30,840] at a given instant of time
+- [00:40:31,410 - 00:40:35,460] are described by vectors in the vector space,
+- [00:40:37,840 - 00:40:39,040] so states
+- [00:40:43,780 - 00:40:47,360] equal the collection of ket vectors.
+- [00:40:48,780 - 00:40:50,320] You could use the bra vectors,
+- [00:40:50,620 - 00:40:51,900] they're in one-to-one correspondence,
+- [00:40:52,240 - 00:40:54,060] but let's focus on the ket vectors.
+- [00:40:54,500 - 00:40:55,920] That's the first postulate.
+- [00:40:56,180 - 00:40:58,520] For every state of a quantum mechanical system,
+- [00:40:58,840 - 00:41:02,440] there exists a vector in a vector space.
+- [00:41:02,780 - 00:41:05,000] How many dimensions does the vector space have?
+- [00:41:05,000 - 00:41:06,980] That depends on the particular system.
+- [00:41:07,380 - 00:41:08,840] If the system is a coin,
+- [00:41:08,960 - 00:41:09,820] and that's all,
+- [00:41:09,940 - 00:41:10,960] and it can be heads or tails,
+- [00:41:11,180 - 00:41:13,120] then it's a two-dimensional vector space.
+- [00:41:13,340 - 00:41:14,980] There are only two orthogonal states,
+- [00:41:15,220 - 00:41:16,700] two mutually orthogonal states.
+- [00:41:17,300 - 00:41:19,720] If it's a die with six independent states,
+- [00:41:19,960 - 00:41:21,920] then the dimensionality of the space is six.
+- [00:41:23,240 - 00:41:26,640] Real systems typically have a lot more states than that.
+- [00:41:26,800 - 00:41:27,820] And for example,
+- [00:41:27,860 - 00:41:31,500] a particle moving in space could be located,
+- [00:41:31,640 - 00:41:32,500] if we look for it,
+- [00:41:32,520 - 00:41:33,300] at any position.
+- [00:41:33,740 - 00:41:34,980] So it would have an infinite space.
+- [00:41:35,000 - 00:41:35,720] It's a very infinite number of states.
+- [00:41:36,460 - 00:41:37,640] But for each state,
+- [00:41:37,840 - 00:41:42,440] there is a ket vector.
+- [00:41:42,720 - 00:41:45,100] So that can be taken to be postulate number one.
+- [00:41:45,360 - 00:41:47,480] Now the number of postulates I'm going to write down
+- [00:41:47,480 - 00:41:49,500] is a little bit more than is absolutely needed
+- [00:41:49,500 - 00:41:52,680] to minimally axiomatize quantum mechanics.
+- [00:41:53,480 - 00:41:56,480] But it's nice to write them all down
+- [00:41:56,480 - 00:41:59,400] in a way which exposes the ideas,
+- [00:41:59,620 - 00:42:01,140] and not try to be absolutely minimal.
+- [00:42:02,680 - 00:42:03,120] Okay.
+- [00:42:05,000 - 00:42:05,680] Yes?
+- [00:42:05,980 - 00:42:09,480] If that's the observable state...
+- [00:42:09,480 - 00:42:10,260] Say it again.
+- [00:42:10,420 - 00:42:13,360] If that's the observable state...
+- [00:42:13,360 - 00:42:15,520] You don't observe the states of systems.
+- [00:42:15,740 - 00:42:17,580] You observe the observables.
+- [00:42:17,740 - 00:42:20,700] The observables correspond to the Hermitian operators,
+- [00:42:21,040 - 00:42:21,800] but we'll come to that.
+- [00:42:22,100 - 00:42:23,020] You don't...
+- [00:42:23,020 - 00:42:26,740] Nobody has ever directly observed the state of a system.
+- [00:42:27,600 - 00:42:30,580] You observe the things which can be observed,
+- [00:42:30,940 - 00:42:32,360] which are things like position,
+- [00:42:32,700 - 00:42:33,400] momentum,
+- [00:42:34,520 - 00:42:35,560] electric field,
+- [00:42:35,800 - 00:42:36,680] magnetic field,
+- [00:42:36,940 - 00:42:40,640] things which record measurements on an apparatus,
+- [00:42:41,280 - 00:42:42,380] and they never,
+- [00:42:42,380 - 00:42:42,760] never,
+- [00:42:42,760 - 00:42:44,180] never give you enough information
+- [00:42:44,180 - 00:42:45,560] to be able to record
+- [00:42:45,560 - 00:42:46,940] the whole state of a system.
+- [00:42:47,280 - 00:42:49,760] So you would never call the
+- [00:42:49,760 - 00:42:52,240] state of a system an observable.
+- [00:42:53,040 - 00:42:53,560] Okay.
+- [00:42:55,960 - 00:42:57,760] We'll talk about later,
+- [00:42:57,760 - 00:42:58,700] at some point,
+- [00:42:58,800 - 00:43:00,960] we'll talk about how you prepare...
+- [00:43:00,960 - 00:43:01,840] I don't know if we will.
+- [00:43:01,940 - 00:43:02,880] That was talked about...
+- [00:43:02,880 - 00:43:04,160] a previous quarter.
+- [00:43:05,260 - 00:43:06,180] For the moment,
+- [00:43:06,180 - 00:43:08,240] states of systems are described by vectors.
+- [00:43:09,440 - 00:43:11,000] That's postulate number one.
+- [00:43:11,580 - 00:43:14,220] Postulate number two is the things which you observe.
+- [00:43:14,600 - 00:43:14,720] Now,
+- [00:43:14,720 - 00:43:17,240] observe means you make measurements of them.
+- [00:43:17,440 - 00:43:18,900] You could call them observables.
+- [00:43:18,900 - 00:43:20,280] You could call them measurables.
+- [00:43:20,620 - 00:43:22,470] You could call them the things
+- [00:43:22,470 - 00:43:24,320] that you measure in an experiment.
+- [00:43:24,800 - 00:43:26,800] The things that you measure in an experiment,
+- [00:43:26,820 - 00:43:27,980] we'll call them observables.
+- [00:43:29,720 - 00:43:31,280] That's the usual term for them.
+- [00:43:31,280 - 00:43:33,340] The observables correspond...
+- [00:43:34,280 - 00:43:35,540] We should really write this not equals,
+- [00:43:35,600 - 00:43:36,820] but corresponds to...
+- [00:43:36,820 - 00:43:40,600] corresponds to the collection of Hermitian operators.
+- [00:43:42,040 - 00:43:43,960] The collection of Hermitian operators.
+- [00:43:44,420 - 00:43:46,240] Every Hermitian operator corresponds to
+- [00:43:46,240 - 00:43:48,060] something that you can measure,
+- [00:43:48,200 - 00:43:49,420] in principle.
+- [00:43:53,000 - 00:43:54,560] Not any old operators,
+- [00:43:54,860 - 00:43:56,500] but the collection of Hermitian operators.
+- [00:43:57,640 - 00:43:58,620] Number three.
+- [00:44:00,660 - 00:44:01,740] Third postulate.
+- [00:44:03,260 - 00:44:04,340] The values...
+- [00:44:06,640 - 00:44:08,320] You're going to do an experiment now,
+- [00:44:08,540 - 00:44:11,500] and you're going to observe a particular observable
+- [00:44:11,500 - 00:44:14,280] that corresponds to a Hermitian operator,
+- [00:44:14,280 - 00:44:14,780] H.
+- [00:44:15,140 - 00:44:16,790] What are the possible results that
+- [00:44:16,790 - 00:44:18,440] you can get of the measurement?
+- [00:44:19,140 - 00:44:20,980] You make a measurement of...
+- [00:44:22,000 - 00:44:22,540] H,
+- [00:44:22,540 - 00:44:23,560] whatever H is,
+- [00:44:24,300 - 00:44:25,460] and you get a value.
+- [00:44:25,840 - 00:44:27,920] The possible values that you can get,
+- [00:44:27,920 - 00:44:29,960] the collection of values that you could get,
+- [00:44:30,100 - 00:44:34,440] the values of the observable H
+- [00:44:40,180 - 00:44:42,320] are the eigenvalues
+- [00:44:48,060 - 00:44:48,740] of...
+- [00:44:48,740 - 00:44:49,360] Oops.
+- [00:44:49,800 - 00:44:51,380] of H.
+- [00:44:52,780 - 00:44:54,660] That's the meaning and the
+- [00:44:54,660 - 00:44:56,540] significance for us of eigenvalues.
+- [00:44:56,540 - 00:44:59,120] The values of the quantity that
+- [00:44:59,120 - 00:45:01,700] you can get when you measure it.
+- [00:45:01,860 - 00:45:02,720] So they have...
+- [00:45:03,259 - 00:45:03,860] In other words,
+- [00:45:03,860 - 00:45:04,500] they're important,
+- [00:45:04,500 - 00:45:05,240] is the point.
+- [00:45:06,120 - 00:45:07,240] Not only are they important,
+- [00:45:07,500 - 00:45:08,240] as I said,
+- [00:45:08,240 - 00:45:09,960] they are the things that you get in an experiment.
+- [00:45:11,940 - 00:45:12,540] What else?
+- [00:45:15,000 - 00:45:15,380] Oh,
+- [00:45:15,380 - 00:45:15,860] and remember,
+- [00:45:16,380 - 00:45:18,640] any time you do an experiment of a quantity,
+- [00:45:18,760 - 00:45:19,580] you get a number,
+- [00:45:19,580 - 00:45:20,800] and it's always a real number.
+- [00:45:21,420 - 00:45:23,220] If I measure the position of something,
+- [00:45:23,340 - 00:45:24,440] I don't get a complex number,
+- [00:45:24,440 - 00:45:25,180] I get a real number.
+- [00:45:25,260 - 00:45:26,420] If I measure the X coordinate,
+- [00:45:26,420 - 00:45:28,160] or if I measure the angular momentum,
+- [00:45:28,320 - 00:45:29,080] or I measure,
+- [00:45:29,080 - 00:45:29,600] you know,
+- [00:45:29,600 - 00:45:29,820] whatever,
+- [00:45:29,820 - 00:45:30,620] an electric field,
+- [00:45:30,860 - 00:45:32,060] I get a real number.
+- [00:45:32,420 - 00:45:33,860] So it's important...
+- [00:45:33,860 - 00:45:34,300] Error bars.
+- [00:45:34,680 - 00:45:35,160] Hmm?
+- [00:45:35,320 - 00:45:36,240] With error bars.
+- [00:45:37,140 - 00:45:37,620] No,
+- [00:45:37,620 - 00:45:39,060] they're usually...
+- [00:45:39,060 - 00:45:40,980] If you measure the angular momentum,
+- [00:45:41,100 - 00:45:43,380] there's no error bar in the imaginary direction.
+- [00:45:43,540 - 00:45:45,220] You may have error bars in the real directions.
+- [00:45:45,560 - 00:45:46,500] It's a real number.
+- [00:45:47,220 - 00:45:47,700] Okay.
+- [00:45:47,980 - 00:45:48,460] Therefore,
+- [00:45:48,460 - 00:45:50,920] it's important that Hermitian operators
+- [00:45:50,920 - 00:45:52,960] have real eigenvalues.
+- [00:45:54,480 - 00:45:55,260] After all,
+- [00:45:55,260 - 00:45:56,320] those are the things you can measure.
+- [00:46:01,979 - 00:46:02,839] Furthermore,
+- [00:46:02,839 - 00:46:06,440] the states for...
+- [00:46:09,500 - 00:46:14,340] The states which,
+- [00:46:14,380 - 00:46:16,740] if you find a system in that state
+- [00:46:16,740 - 00:46:19,360] or create a system with a particular state,
+- [00:46:19,620 - 00:46:22,220] the states for which
+- [00:46:24,920 - 00:46:27,840] the observable H
+- [00:46:28,900 - 00:46:31,420] has a definite predictable value,
+- [00:46:32,140 - 00:46:33,420] a certain value,
+- [00:46:33,620 - 00:46:37,240] a value which is not subject to statistical fluctuations,
+- [00:46:38,220 - 00:46:42,060] those states for which the observable H is,
+- [00:46:42,140 - 00:46:42,700] let's say,
+- [00:46:42,700 - 00:46:43,440] is definite,
+- [00:46:44,940 - 00:46:47,300] or certain as opposed to uncertain,
+- [00:46:50,520 - 00:46:52,200] are the eigenvalues.
+- [00:46:52,200 - 00:46:52,500] So,
+- [00:46:52,500 - 00:46:52,680] the eigenvalues of H.
+- [00:47:01,120 - 00:47:02,200] The eigenvectors of H.
+- [00:47:02,200 - 00:47:02,760] The eigenvectors of H.
+- [00:47:03,060 - 00:47:04,140] In other words,
+- [00:47:04,180 - 00:47:06,120] if by one means or another
+- [00:47:06,120 - 00:47:08,200] you created an electron
+- [00:47:08,200 - 00:47:11,620] in an eigenstate of some observable
+- [00:47:11,620 - 00:47:12,800] such as its position,
+- [00:47:12,960 - 00:47:14,760] and then you measure the position,
+- [00:47:15,120 - 00:47:17,920] the measurement will always yield
+- [00:47:17,920 - 00:47:20,160] every time the eigenvalue
+- [00:47:20,160 - 00:47:22,100] of the appropriate operator.
+- [00:47:22,140 - 00:47:22,180] So,
+- [00:47:22,180 - 00:47:22,180] if you measure the position,
+- [00:47:22,800 - 00:47:24,280] you can measure the position of the eigenvector.
+- [00:47:24,480 - 00:47:25,000] So,
+- [00:47:25,000 - 00:47:27,200] the eigenvectors are the states
+- [00:47:27,200 - 00:47:30,160] in which the observable has a definite value
+- [00:47:30,160 - 00:47:31,920] and the value that it has
+- [00:47:31,920 - 00:47:33,660] is the corresponding eigenvalue.
+- [00:47:37,320 - 00:47:38,180] Any questions?
+- [00:47:40,960 - 00:47:41,480] Yes?
+- [00:47:41,740 - 00:47:45,020] Would it be wrong to say that you observe eigenvectors?
+- [00:47:45,260 - 00:47:45,820] Say it again?
+- [00:47:46,060 - 00:47:48,780] Would it be wrong to say that you observe eigenvectors?
+- [00:47:48,940 - 00:47:49,420] Well,
+- [00:47:50,240 - 00:47:50,760] um,
+- [00:47:50,760 - 00:47:52,980] I think it's more proper to say
+- [00:47:52,980 - 00:47:54,400] that you observe the observable
+- [00:47:54,400 - 00:47:56,300] and get a number
+- [00:47:56,300 - 00:47:58,840] and the number corresponds to the eigenvalue.
+- [00:47:59,180 - 00:48:01,480] I would say that's more proper terminology
+- [00:48:01,480 - 00:48:02,960] and a more proper way to think.
+- [00:48:03,180 - 00:48:03,940] Of course,
+- [00:48:03,940 - 00:48:04,800] once you do that,
+- [00:48:04,960 - 00:48:06,460] then you know that the system
+- [00:48:06,460 - 00:48:09,420] was prepared in a particular state
+- [00:48:09,420 - 00:48:11,380] and in that sense you could say you observe it.
+- [00:48:11,600 - 00:48:12,100] But,
+- [00:48:12,100 - 00:48:12,440] um,
+- [00:48:13,880 - 00:48:16,800] I think it's a sort of linguistic misuse
+- [00:48:16,800 - 00:48:18,760] to say that you observe eigenvectors.
+- [00:48:19,180 - 00:48:20,740] It's better to say you observe it
+- [00:48:20,760 - 00:48:21,580] than to say you observe the observable
+- [00:48:21,580 - 00:48:23,240] and the result that you get
+- [00:48:23,240 - 00:48:25,900] is one of the eigenvalues of the observable.
+- [00:48:26,640 - 00:48:28,960] And I think that's a more precise language.
+- [00:48:30,260 - 00:48:31,780] So by point three and four,
+- [00:48:32,140 - 00:48:34,100] Point three and four,
+- [00:48:34,140 - 00:48:35,980] what do you mean by H is observable,
+- [00:48:35,980 - 00:48:36,680] H is definite?
+- [00:48:37,240 - 00:48:37,740] Okay.
+- [00:48:38,260 - 00:48:39,160] All right,
+- [00:48:39,160 - 00:48:40,140] so let me give you an example.
+- [00:48:40,620 - 00:48:40,920] Uh,
+- [00:48:44,760 - 00:48:46,450] let's take an example such
+- [00:48:46,450 - 00:48:48,140] as the spin of an electron.
+- [00:48:49,320 - 00:48:50,700] Some particular component
+- [00:48:50,760 - 00:48:51,920] of the spin of an electron.
+- [00:48:52,640 - 00:48:53,560] If you measure,
+- [00:48:53,560 - 00:48:55,160] if you prepare an electron
+- [00:48:55,160 - 00:48:56,620] in an arbitrary state,
+- [00:48:56,780 - 00:48:57,420] how do you do that?
+- [00:48:57,520 - 00:48:59,280] You put the electron in a magnetic field.
+- [00:48:59,540 - 00:49:01,780] Go back to course on quantum mechanics number one
+- [00:49:01,780 - 00:49:04,260] and read about how you prepare an electron
+- [00:49:04,260 - 00:49:06,980] with its spin along a particular axis.
+- [00:49:07,700 - 00:49:08,720] Supposing you did that.
+- [00:49:09,000 - 00:49:11,780] And then you measure the spin
+- [00:49:11,780 - 00:49:13,600] along some other axis.
+- [00:49:15,100 - 00:49:17,300] Then you may get plus or minus.
+- [00:49:17,440 - 00:49:18,020] You may get,
+- [00:49:18,020 - 00:49:19,620] with a certain statistical probability,
+- [00:49:19,620 - 00:49:21,040] you will get different answers.
+- [00:49:21,600 - 00:49:24,420] But if you measure the spin along the axis
+- [00:49:24,420 - 00:49:25,760] that you prepared it along,
+- [00:49:26,040 - 00:49:27,700] then you will get a definite answer.
+- [00:49:27,900 - 00:49:30,620] You'll get a definite answer corresponding to the spin
+- [00:49:30,620 - 00:49:31,120] that you,
+- [00:49:31,120 - 00:49:32,140] the way that you prepared it.
+- [00:49:32,320 - 00:49:33,840] So there are certain states which,
+- [00:49:33,900 - 00:49:35,120] if you measure certain quantities,
+- [00:49:35,460 - 00:49:37,800] you will always get the same answer.
+- [00:49:38,200 - 00:49:40,740] You do a certain experiment on this,
+- [00:49:40,780 - 00:49:40,900] uh,
+- [00:49:40,900 - 00:49:42,060] an experiment,
+- [00:49:42,060 - 00:49:42,580] I mean,
+- [00:49:42,580 - 00:49:43,640] you place it in a field,
+- [00:49:43,640 - 00:49:44,880] you do something to it,
+- [00:49:44,920 - 00:49:46,460] and at the end of doing something to it,
+- [00:49:46,480 - 00:49:47,240] you measure something.
+- [00:49:49,400 - 00:49:51,540] Sometimes the measurements will give you
+- [00:49:51,540 - 00:49:53,320] statistically ambiguous answers
+- [00:49:53,320 - 00:49:54,720] with a probability distribution,
+- [00:49:55,060 - 00:49:56,580] depending on what you measure,
+- [00:49:56,950 - 00:49:58,940] and depending on what state it's been put in.
+- [00:49:59,680 - 00:50:00,820] Other times,
+- [00:50:00,820 - 00:50:02,900] if the thing you're measuring
+- [00:50:02,900 - 00:50:05,320] corresponds correctly to the state
+- [00:50:05,320 - 00:50:07,000] that you've created the system with,
+- [00:50:07,260 - 00:50:09,380] then you may get definite answers.
+- [00:50:09,720 - 00:50:11,220] We'll see some examples.
+- [00:50:11,820 - 00:50:12,440] Uh,
+- [00:50:12,440 - 00:50:15,240] definite means there's no statistical uncertainty
+- [00:50:15,760 - 00:50:17,220] in the value that you get.
+- [00:50:17,240 - 00:50:19,940] So there are certain states,
+- [00:50:21,780 - 00:50:23,580] for each observable,
+- [00:50:23,720 - 00:50:24,860] there are certain states
+- [00:50:24,860 - 00:50:26,420] where you will definitely get
+- [00:50:26,420 - 00:50:27,960] a particular answer,
+- [00:50:28,200 - 00:50:29,960] and you'll always get the same answer.
+- [00:50:31,660 - 00:50:32,300] Namely,
+- [00:50:32,300 - 00:50:34,140] if the system has been prepared
+- [00:50:34,140 - 00:50:36,660] in an eigenvector of a particular variable,
+- [00:50:36,880 - 00:50:38,280] and you measure that variable,
+- [00:50:38,600 - 00:50:40,940] you'll always just get the eigenvalue.
+- [00:50:42,860 - 00:50:43,500] Alright,
+- [00:50:43,500 - 00:50:44,580] so that's another,
+- [00:50:45,500 - 00:50:47,060] that's the fourth postulate.
+- [00:50:47,080 - 00:50:47,220] And,
+- [00:50:47,220 - 00:50:47,220] uh,
+- [00:50:48,180 - 00:50:48,740] the fifth postulate,
+- [00:50:48,740 - 00:50:49,800] and the fifth postulate,
+- [00:50:49,980 - 00:50:52,660] is what happens if you start with a state
+- [00:50:52,660 - 00:50:55,700] which is not an eigenvector
+- [00:50:55,700 - 00:50:58,140] of the quantity of interest.
+- [00:50:59,020 - 00:51:00,180] So in other words,
+- [00:51:00,240 - 00:51:03,120] supposing instead of preparing a system
+- [00:51:06,160 - 00:51:07,180] with a state
+- [00:51:08,260 - 00:51:11,180] which happens to be an eigenvector of H,
+- [00:51:11,460 - 00:51:13,720] you prepare some other state somehow,
+- [00:51:13,880 - 00:51:14,700] and I'll give you examples,
+- [00:51:14,860 - 00:51:15,540] we'll come to it,
+- [00:51:15,660 - 00:51:17,220] but let's state the postulate.
+- [00:51:17,240 - 00:51:18,080] Four,
+- [00:51:18,080 - 00:51:18,700] number five.
+- [00:51:18,880 - 00:51:20,800] Take an arbitrary state of a system,
+- [00:51:21,800 - 00:51:23,400] made God knows how,
+- [00:51:23,540 - 00:51:24,440] however it was,
+- [00:51:24,480 - 00:51:26,860] however the system was originally created,
+- [00:51:28,980 - 00:51:31,240] an electron may be created
+- [00:51:31,240 - 00:51:33,380] by shooting it out of an accelerator
+- [00:51:33,380 - 00:51:35,240] or something in some particular way,
+- [00:51:35,440 - 00:51:37,720] we make the electron in some particular state,
+- [00:51:38,020 - 00:51:39,480] and we now measure
+- [00:51:39,480 - 00:51:41,020] something or other about the electron.
+- [00:51:41,400 - 00:51:41,900] Okay?
+- [00:51:41,900 - 00:51:43,560] We measure the H-ness
+- [00:51:43,560 - 00:51:44,340] of the electron.
+- [00:51:45,480 - 00:51:46,860] What can we get?
+- [00:51:47,240 - 00:51:49,060] We can get answers which are the
+- [00:51:49,060 - 00:51:50,360] various eigenvalues,
+- [00:51:50,680 - 00:51:52,120] let's call them lambda one,
+- [00:51:52,120 - 00:51:53,000] dot dot dot,
+- [00:51:53,220 - 00:51:54,160] lambda n,
+- [00:51:54,420 - 00:51:57,300] these are all the possible answers we could get,
+- [00:51:57,580 - 00:51:59,240] the various eigenvalues
+- [00:52:01,260 - 00:52:02,380] of lambda.
+- [00:52:02,800 - 00:52:04,600] For each of these eigenvalues,
+- [00:52:04,840 - 00:52:06,020] there is an eigenvector.
+- [00:52:06,460 - 00:52:07,720] We can call it,
+- [00:52:07,720 - 00:52:08,060] I don't know,
+- [00:52:08,060 - 00:52:08,620] let's just call it
+- [00:52:08,620 - 00:52:09,280] lambda n.
+- [00:52:10,780 - 00:52:12,600] That's the eigenvector that corresponds
+- [00:52:12,980 - 00:52:14,780] to a definite value
+- [00:52:14,780 - 00:52:16,340] of H.
+- [00:52:17,240 - 00:52:18,080] A particular eigenvalue.
+- [00:52:18,540 - 00:52:19,140] Then,
+- [00:52:19,140 - 00:52:20,840] the fifth postulate
+- [00:52:20,840 - 00:52:22,100] is about the probability
+- [00:52:22,100 - 00:52:24,620] of getting different answers
+- [00:52:25,040 - 00:52:26,520] lambda one through lambda n.
+- [00:52:28,440 - 00:52:29,580] The answer is,
+- [00:52:29,580 - 00:52:31,540] or the postulate is,
+- [00:52:31,680 - 00:52:33,260] that if you calculate
+- [00:52:34,520 - 00:52:35,720] the component
+- [00:52:36,460 - 00:52:38,880] of the vector A along the
+- [00:52:38,880 - 00:52:40,100] axis lambda n,
+- [00:52:41,240 - 00:52:41,840] okay,
+- [00:52:41,840 - 00:52:43,380] think of these lambda n's
+- [00:52:43,380 - 00:52:44,380] as a basis set,
+- [00:52:45,000 - 00:52:47,080] they're a basis set which goes
+- [00:52:47,240 - 00:52:49,660] together with the particular observable,
+- [00:52:50,660 - 00:52:52,680] made up out of the eigenvectors
+- [00:52:52,680 - 00:52:53,620] of that observable,
+- [00:52:54,340 - 00:52:55,740] take the component
+- [00:52:55,740 - 00:52:57,080] of the vector A
+- [00:52:58,320 - 00:52:58,960] along
+- [00:52:58,960 - 00:53:01,420] the direction lambda n,
+- [00:53:02,720 - 00:53:03,740] that's a complex
+- [00:53:03,740 - 00:53:04,680] number in general.
+- [00:53:05,200 - 00:53:06,200] In general,
+- [00:53:06,200 - 00:53:07,200] this is a complex number,
+- [00:53:07,320 - 00:53:08,800] could not possibly be a probability,
+- [00:53:09,240 - 00:53:11,280] but multiply it by its complex
+- [00:53:11,280 - 00:53:11,820] conjugate.
+- [00:53:12,460 - 00:53:15,080] So multiply this by its complex conjugate,
+- [00:53:15,220 - 00:53:17,220] one way of writing it is take the absolute value,
+- [00:53:17,240 - 00:53:18,340] and square it.
+- [00:53:18,800 - 00:53:20,360] Another way of writing it
+- [00:53:21,360 - 00:53:23,120] is to just multiply it
+- [00:53:23,120 - 00:53:24,360] by its complex conjugate,
+- [00:53:24,980 - 00:53:25,280] sorry,
+- [00:53:25,280 - 00:53:25,920] lambda n,
+- [00:53:28,400 - 00:53:29,300] multiply it
+- [00:53:29,300 - 00:53:30,420] by its complex conjugate.
+- [00:53:30,560 - 00:53:33,000] Its complex conjugate is lambda n times A.
+- [00:53:33,460 - 00:53:34,260] You just
+- [00:53:35,400 - 00:53:37,200] invert bra and ket,
+- [00:53:37,400 - 00:53:39,340] and that gives you the complex conjugate.
+- [00:53:39,640 - 00:53:40,700] So take A,
+- [00:53:40,880 - 00:53:42,040] no summation here,
+- [00:53:42,240 - 00:53:42,640] A,
+- [00:53:42,640 - 00:53:45,040] project it onto lambda n,
+- [00:53:45,660 - 00:53:46,260] squared,
+- [00:53:46,260 - 00:53:47,220] or complex conjugate,
+- [00:53:47,240 - 00:53:49,240] that gives you
+- [00:53:49,240 - 00:53:49,920] the probability,
+- [00:53:51,400 - 00:53:52,580] that's the probability
+- [00:53:54,060 - 00:53:55,160] that you measure
+- [00:53:55,160 - 00:53:55,860] lambda n,
+- [00:53:56,520 - 00:53:59,320] if the system has been prepared in the state A.
+- [00:54:00,700 - 00:54:01,320] So,
+- [00:54:01,400 - 00:54:03,160] whatever went in
+- [00:54:03,160 - 00:54:04,300] to constructing
+- [00:54:04,950 - 00:54:07,160] a particular configuration of an electron,
+- [00:54:07,540 - 00:54:09,400] the particular way that it came out
+- [00:54:09,400 - 00:54:09,800] of the excel,
+- [00:54:09,800 - 00:54:10,380] the particular
+- [00:54:14,200 - 00:54:15,440] magnetic field,
+- [00:54:15,660 - 00:54:16,660] electric field,
+- [00:54:16,740 - 00:54:17,220] the particular way
+- [00:54:17,240 - 00:54:18,480] various conditions
+- [00:54:19,020 - 00:54:20,860] under which the electron was created
+- [00:54:20,860 - 00:54:22,640] define the state A.
+- [00:54:23,160 - 00:54:24,160] Having defined,
+- [00:54:24,160 - 00:54:25,260] having created
+- [00:54:25,260 - 00:54:25,900] the electron,
+- [00:54:25,900 - 00:54:27,560] or whatever the system is,
+- [00:54:27,780 - 00:54:28,880] you can then ask,
+- [00:54:28,920 - 00:54:31,180] what's the probability that if I measure
+- [00:54:31,180 - 00:54:32,800] a particular observable,
+- [00:54:32,900 - 00:54:34,060] H,
+- [00:54:34,060 - 00:54:35,060] that I get
+- [00:54:35,060 - 00:54:36,960] any one of its possible eigenvalues?
+- [00:54:37,660 - 00:54:39,000] The answer is,
+- [00:54:39,020 - 00:54:40,620] the component of A
+- [00:54:41,360 - 00:54:43,360] along the eigenvector
+- [00:54:43,360 - 00:54:44,080] lambda n
+- [00:54:45,000 - 00:54:46,780] times its complex conjugate.
+- [00:54:47,540 - 00:54:49,320] This is always a real
+- [00:54:49,320 - 00:54:50,420] positive number.
+- [00:54:52,540 - 00:54:54,480] It's always a real positive number,
+- [00:54:55,380 - 00:54:57,200] and so it can be a probability.
+- [00:54:57,700 - 00:54:59,140] Those are the
+- [00:54:59,140 - 00:55:00,860] five postulates of quantum mechanics.
+- [00:55:02,040 - 00:55:03,200] There are ways of
+- [00:55:03,200 - 00:55:04,840] diminishing the number of independent
+- [00:55:04,840 - 00:55:05,600] postulates,
+- [00:55:05,600 - 00:55:06,960] but I think it's better to expose
+- [00:55:06,960 - 00:55:07,460] them all,
+- [00:55:07,460 - 00:55:08,660] and
+- [00:55:09,340 - 00:55:10,520] to say them all.
+- [00:55:11,960 - 00:55:12,480] And,
+- [00:55:14,700 - 00:55:15,220] not
+- [00:55:15,220 - 00:55:16,320] try to be clever
+- [00:55:19,920 - 00:55:22,340] and reduce the number of independent postulates.
+- [00:55:23,780 - 00:55:24,260] Okay,
+- [00:55:24,260 - 00:55:25,160] well now I will give you some
+- [00:55:25,160 - 00:55:26,060] examples soon enough.
+- [00:55:28,520 - 00:55:29,840] I was going to talk about
+- [00:55:29,840 - 00:55:31,520] incompatible observables,
+- [00:55:31,540 - 00:55:32,760] but let's not at this point.
+- [00:55:32,940 - 00:55:33,900] Let's do some
+- [00:55:34,860 - 00:55:35,340] examples.
+- [00:55:38,040 - 00:55:39,520] The simplest examples
+- [00:55:39,520 - 00:55:40,980] correspond to systems
+- [00:55:40,980 - 00:55:42,160] with finite number of states,
+- [00:55:42,380 - 00:55:43,860] like the coin toss,
+- [00:55:45,140 - 00:55:46,500] or the dice,
+- [00:55:46,660 - 00:55:47,220] or so forth.
+- [00:55:47,240 - 00:55:48,400] But I don't want to begin with that.
+- [00:55:48,560 - 00:55:49,580] We've done that,
+- [00:55:49,580 - 00:55:51,260] we did that repeatedly
+- [00:55:51,260 - 00:55:53,200] in the previous class
+- [00:55:53,200 - 00:55:54,060] in quantum mechanics,
+- [00:55:54,240 - 00:55:56,160] and quantum entanglement,
+- [00:55:56,160 - 00:55:56,760] and so forth,
+- [00:55:56,860 - 00:55:59,080] which is basically about these simple systems
+- [00:55:59,080 - 00:56:00,340] with finite numbers of states.
+- [00:56:01,000 - 00:56:02,540] Let's jump right now
+- [00:56:03,000 - 00:56:04,340] to the motion of a particle
+- [00:56:04,340 - 00:56:05,440] on a line.
+- [00:56:05,440 - 00:56:06,920] Supposing we have
+- [00:56:06,920 - 00:56:08,740] our system consists of a particle
+- [00:56:08,740 - 00:56:09,640] in one dimension.
+- [00:56:09,640 - 00:56:10,320] The particle
+- [00:56:10,320 - 00:56:12,620] can be anywhere on a line.
+- [00:56:14,060 - 00:56:15,460] It can move on a line.
+- [00:56:16,620 - 00:56:17,140] Classically,
+- [00:56:17,240 - 00:56:18,800] we would just describe this
+- [00:56:18,800 - 00:56:21,040] by a particle with a
+- [00:56:21,040 - 00:56:21,940] coordinate x,
+- [00:56:21,940 - 00:56:23,160] which could
+- [00:56:23,160 - 00:56:24,080] depend on time.
+- [00:56:24,080 - 00:56:25,060] Quantum
+- [00:56:25,060 - 00:56:25,640] mechanically,
+- [00:56:25,640 - 00:56:27,200] we describe it completely differently,
+- [00:56:27,380 - 00:56:27,920] very differently.
+- [00:56:28,640 - 00:56:31,140] We describe the states of a particle by a vector
+- [00:56:31,140 - 00:56:31,380] space.
+- [00:56:31,380 - 00:56:33,180] What vector space?
+- [00:56:33,500 - 00:56:33,720] Well,
+- [00:56:33,720 - 00:56:35,060] I'll tell you right now what vector space.
+- [00:56:35,360 - 00:56:36,800] The space of
+- [00:56:37,560 - 00:56:39,100] functions of x.
+- [00:56:40,040 - 00:56:41,100] Remember when we
+- [00:56:41,100 - 00:56:43,140] started and I gave you some examples of vector
+- [00:56:43,140 - 00:56:43,480] spaces,
+- [00:56:43,480 - 00:56:45,180] one of the examples
+- [00:56:45,180 - 00:56:47,120] of vector spaces was functions
+- [00:56:47,240 - 00:56:48,160] of a coordinate,
+- [00:56:48,160 - 00:56:49,320] complex functions
+- [00:56:49,320 - 00:56:50,100] of a coordinate.
+- [00:56:51,220 - 00:56:52,320] Psi of x.
+- [00:56:53,280 - 00:56:54,700] Psi of x corresponds
+- [00:56:55,040 - 00:56:57,140] to a vector in the vector
+- [00:56:57,140 - 00:56:58,720] space of complex functions.
+- [00:57:00,420 - 00:57:01,320] We can think
+- [00:57:01,320 - 00:57:03,120] of it as a vector in a vector space because
+- [00:57:03,120 - 00:57:05,080] we can add functions and we can multiply
+- [00:57:05,080 - 00:57:06,000] them by numbers.
+- [00:57:07,580 - 00:57:09,020] We can take
+- [00:57:09,020 - 00:57:09,800] inner products
+- [00:57:11,160 - 00:57:12,720] of these vectors.
+- [00:57:12,720 - 00:57:13,340] Let me remind
+- [00:57:13,340 - 00:57:13,960] you of the rule.
+- [00:57:13,960 - 00:57:15,180] If I
+- [00:57:15,180 - 00:57:16,300] have two functions,
+- [00:57:16,300 - 00:57:17,220] phi of x,
+- [00:57:17,240 - 00:57:19,980] and psi of x,
+- [00:57:23,000 - 00:57:23,940] then the inner
+- [00:57:23,940 - 00:57:25,080] product between them
+- [00:57:25,080 - 00:57:26,640] is just the integral
+- [00:57:26,640 - 00:57:27,740] over the line,
+- [00:57:27,740 - 00:57:28,500] the x,
+- [00:57:30,380 - 00:57:32,520] of phi star of x,
+- [00:57:33,980 - 00:57:35,040] psi of x.
+- [00:57:36,780 - 00:57:38,380] Why phi star of x?
+- [00:57:38,500 - 00:57:39,340] Because phi is the
+- [00:57:39,340 - 00:57:39,860] bra vector,
+- [00:57:40,200 - 00:57:41,740] psi is the ket vector,
+- [00:57:41,980 - 00:57:43,700] so whenever you have a bra vector,
+- [00:57:43,840 - 00:57:45,500] it always corresponds to some complex
+- [00:57:45,500 - 00:57:46,280] conjugation.
+- [00:57:46,660 - 00:57:47,220] So,
+- [00:57:47,220 - 00:57:47,220] we have a
+- [00:57:47,720 - 00:57:48,200] vector space.
+- [00:57:48,200 - 00:57:50,280] That's the definition of a vector space.
+- [00:57:51,060 - 00:57:52,860] For a particle on a line,
+- [00:57:53,100 - 00:57:54,980] the vector space can be thought of
+- [00:57:54,980 - 00:57:57,060] as functions on
+- [00:57:57,060 - 00:57:57,740] the axis.
+- [00:57:57,740 - 00:57:58,780] Well,
+- [00:57:58,780 - 00:57:59,020] actually
+- [00:57:59,020 - 00:58:00,740] it can be a little more abstract than that.
+- [00:58:01,240 - 00:58:03,060] We can think of these functions differently.
+- [00:58:03,880 - 00:58:04,100] We can,
+- [00:58:04,100 - 00:58:05,060] well,
+- [00:58:05,180 - 00:58:06,660] let's not be more abstract.
+- [00:58:06,880 - 00:58:08,460] We can come back and be more abstract later.
+- [00:58:09,540 - 00:58:10,020] Alright.
+- [00:58:12,080 - 00:58:13,320] Let's think about operators
+- [00:58:13,320 - 00:58:13,700] now.
+- [00:58:13,700 - 00:58:13,960] Yes?
+- [00:58:17,240 - 00:58:17,640] Which?
+- [00:58:20,380 - 00:58:20,900] No,
+- [00:58:20,900 - 00:58:21,520] no,
+- [00:58:21,520 - 00:58:22,660] inner products are not real
+- [00:58:22,660 - 00:58:23,980] in general.
+- [00:58:23,980 - 00:58:24,860] What are
+- [00:58:24,860 - 00:58:26,640] real is the inner product
+- [00:58:27,240 - 00:58:28,360] of a vector with itself.
+- [00:58:28,980 - 00:58:29,500] Alright?
+- [00:58:29,500 - 00:58:30,640] So if I were to put
+- [00:58:31,000 - 00:58:31,260] psi,
+- [00:58:31,260 - 00:58:31,720] psi,
+- [00:58:31,720 - 00:58:33,100] that would be the
+- [00:58:33,100 - 00:58:34,620] inner product of psi star with psi.
+- [00:58:34,900 - 00:58:35,880] That would be real.
+- [00:58:37,080 - 00:58:37,600] Okay?
+- [00:58:38,360 - 00:58:38,880] Alright.
+- [00:58:38,880 - 00:58:40,780] Good question.
+- [00:58:42,200 - 00:58:43,160] Keep the questions
+- [00:58:43,160 - 00:58:44,280] coming because...
+- [00:58:47,240 - 00:58:47,560] What's that?
+- [00:58:50,240 - 00:58:51,060] Say it again.
+- [00:58:52,780 - 00:58:53,260] Here,
+- [00:58:53,260 - 00:58:53,720] here and here.
+- [00:58:53,720 - 00:58:54,180] Yeah,
+- [00:58:54,180 - 00:58:54,640] absolutely.
+- [00:58:54,820 - 00:58:58,220] Just common garden variety complex
+- [00:58:58,220 - 00:58:59,040] multiplication.
+- [00:59:00,160 - 00:59:00,640] Right.
+- [00:59:01,660 - 00:59:02,880] So that's the inner product.
+- [00:59:03,980 - 00:59:06,320] Now let me give you an example of some operators.
+- [00:59:06,660 - 00:59:08,300] We can check that they are really operators.
+- [00:59:10,180 - 00:59:11,040] Check that they're
+- [00:59:11,040 - 00:59:11,480] Hermitian.
+- [00:59:12,880 - 00:59:14,160] Find their eigenvalues.
+- [00:59:15,980 - 00:59:16,920] Interpret them as
+- [00:59:17,240 - 00:59:19,140] observables and see what
+- [00:59:19,140 - 00:59:20,760] their probabilities correspond to.
+- [00:59:22,440 - 00:59:23,420] The first
+- [00:59:23,420 - 00:59:24,740] operator is
+- [00:59:24,740 - 00:59:26,940] the observable that corresponds to the
+- [00:59:26,940 - 00:59:29,000] location of the particle along the axis.
+- [00:59:29,800 - 00:59:30,440] Right?
+- [00:59:30,960 - 00:59:32,760] And I'm going to tell you what that operator is
+- [00:59:32,760 - 00:59:34,320] and how it acts on
+- [00:59:35,060 - 00:59:35,880] psi of x.
+- [00:59:37,140 - 00:59:38,560] We'll call that operator
+- [00:59:38,560 - 00:59:39,460] just x,
+- [00:59:39,460 - 00:59:40,720] x with a hat on it.
+- [00:59:41,560 - 00:59:43,220] And it operates
+- [00:59:43,220 - 00:59:44,120] on a vector,
+- [00:59:44,120 - 00:59:44,660] psi.
+- [00:59:44,980 - 00:59:45,360] .
+- [00:59:45,360 - 00:59:47,140] In terms
+- [00:59:47,240 - 00:59:47,840] of functions,
+- [00:59:47,840 - 00:59:49,200] what it
+- [00:59:49,200 - 00:59:51,300] does is it takes
+- [00:59:51,300 - 00:59:52,240] a function of x,
+- [00:59:53,500 - 00:59:54,660] psi of x,
+- [00:59:54,820 - 00:59:56,440] and does something to it.
+- [00:59:57,120 - 00:59:59,340] It does the simplest possible thing.
+- [00:59:59,380 - 01:00:01,040] It multiplies it by x.
+- [01:00:02,020 - 01:00:03,220] That's its definition.
+- [01:00:04,500 - 01:00:05,560] The operator
+- [01:00:05,560 - 01:00:06,640] x hat
+- [01:00:07,580 - 01:00:08,840] acts on the
+- [01:00:08,840 - 01:00:10,080] ket vector psi,
+- [01:00:11,360 - 01:00:13,320] I should say corresponds to,
+- [01:00:13,440 - 01:00:14,160] not equals,
+- [01:00:14,780 - 01:00:17,060] in such a way that the new vector
+- [01:00:17,900 - 01:00:19,360] if the old vector
+- [01:00:19,360 - 01:00:21,380] was represented by psi of x,
+- [01:00:21,600 - 01:00:22,780] the new vector,
+- [01:00:22,780 - 01:00:23,280] the result
+- [01:00:23,280 - 01:00:25,040] of multiplying it by the operator
+- [01:00:25,040 - 01:00:25,800] x hat,
+- [01:00:25,800 - 01:00:27,300] is just to multiply
+- [01:00:27,300 - 01:00:28,680] the function by x.
+- [01:00:28,840 - 01:00:29,680] Very simple.
+- [01:00:32,760 - 01:00:33,320] Well,
+- [01:00:33,320 - 01:00:35,180] what would it mean to have an
+- [01:00:35,180 - 01:00:37,120] eigenvector of the
+- [01:00:37,120 - 01:00:38,200] operator x hat?
+- [01:00:38,440 - 01:00:40,140] In terms of ordinary functions,
+- [01:00:40,140 - 01:00:41,160] it would mean
+- [01:00:41,160 - 01:00:41,680] that,
+- [01:00:41,680 - 01:00:43,220] or what does it mean first of all
+- [01:00:43,220 - 01:00:45,360] in terms of the abstract notation?
+- [01:00:45,600 - 01:00:46,560] The abstract notation
+- [01:00:47,240 - 01:00:49,380] is x hat on psi of x.
+- [01:01:21,680 - 01:01:22,200] .
+- [01:01:22,200 - 01:01:22,720] .
+- [01:01:22,720 - 01:01:23,640] .
+- [01:01:23,640 - 01:01:27,500] x hat
+- [01:01:27,500 - 01:01:29,130] x hat on psi of x
+- [01:01:29,130 - 01:01:30,760] is just equal to some number.
+- [01:01:32,460 - 01:01:33,500] Before that,
+- [01:01:33,500 - 01:01:34,760] let's check that it's hermition.
+- [01:01:35,020 - 01:01:36,300] Let's check that it's hermition.
+- [01:01:36,800 - 01:01:38,300] What does it mean that it's hermition?
+- [01:01:41,360 - 01:01:44,840] A necessary and sufficient condition is that
+- [01:01:44,840 - 01:01:45,660] a
+- [01:01:46,620 - 01:01:47,140] hermition
+- [01:01:47,140 - 01:01:47,220] a
+- [01:01:47,220 - 01:01:49,840] a is real for all a.
+- [01:01:49,840 - 01:01:53,460] That's necessary and sufficient for a Hermitian operator,
+- [01:01:53,460 - 01:01:54,140] for any
+- [01:01:55,020 - 01:01:55,760] vector a.
+- [01:01:55,760 - 01:01:57,240] Okay,
+- [01:01:57,240 - 01:01:58,100] let's just check that.
+- [01:01:58,100 - 01:02:02,300] All that means is that psi of x,
+- [01:02:02,300 - 01:02:04,100] x hat,
+- [01:02:04,100 - 01:02:05,880] psi of
+- [01:02:05,880 - 01:02:08,300] x is real,
+- [01:02:08,300 - 01:02:10,140] but what is that?
+- [01:02:10,140 - 01:02:13,660] x times psi of x,
+- [01:02:13,660 - 01:02:16,720] just corresponds to the vector x psi of
+- [01:02:16,720 - 01:02:18,000] x — just corresponds to
+- [01:02:18,000 - 01:02:19,280] the function x soli of x.
+- [01:02:19,280 - 01:02:22,980] Taking its inner product with the bra
+- [01:02:22,980 - 01:02:25,970] vector psi of x means multiplying it
+- [01:02:25,970 - 01:02:28,960] by psi star of x and integrating.
+- [01:02:28,960 - 01:02:33,000] This is surely
+- [01:02:33,000 - 01:02:33,420] real.
+- [01:02:33,840 - 01:02:35,860] Soli of x times psi of x is real,
+- [01:02:35,860 - 01:02:35,860] but what does that mean?children X problems 25
+- [01:02:35,860 - 01:02:36,500] x is real,
+- [01:02:36,500 - 01:02:38,340] x is real,
+- [01:02:38,340 - 01:02:39,720] dx is real,
+- [01:02:39,720 - 01:02:41,420] this is a real number.
+- [01:02:41,420 - 01:02:44,100] Whatever psi is,
+- [01:02:44,100 - 01:02:44,520] this is
+- [01:02:44,520 - 01:02:45,260] always real.
+- [01:02:45,260 - 01:02:50,780] So it follows that the matrix element of x
+- [01:02:50,780 - 01:02:53,060] between equal vectors is always real.
+- [01:02:53,060 - 01:02:55,980] That's necessary and sufficient for x to
+- [01:02:55,980 - 01:02:56,860] be a Hermitian operator.
+- [01:02:56,860 - 01:02:58,180] So x is Hermitian.
+- [01:02:58,180 - 01:03:00,560] That must mean it has a lot of
+- [01:03:00,560 - 01:03:01,120] eigenvectors.
+- [01:03:01,120 - 01:03:03,400] So let's see if we can find the eigenvectors.
+- [01:03:03,400 - 01:03:05,540] The eigenvectors
+- [01:03:07,320 - 01:03:14,160] abstractly are defined by x hat x on Psi equals
+- [01:03:15,100 - 01:03:17,200] a number times Psi.
+- [01:03:17,200 - 01:03:21,660] If we can find functions which satisfy that,
+- [01:03:21,660 - 01:03:22,100] those are
+- [01:03:22,100 - 01:03:26,840] the eigenvectors or the eigenvectors of x hat.
+- [01:03:27,260 - 01:03:29,620] What does it mean in terms of ordinary functions?
+- [01:03:29,620 - 01:03:31,440] All it means,
+- [01:03:31,440 - 01:03:32,380] let me erase this,
+- [01:03:32,600 - 01:03:33,360] all it means
+- [01:03:34,240 - 01:03:34,840] is,
+- [01:03:34,840 - 01:03:37,230] is find a function psi of x
+- [01:03:37,230 - 01:03:39,620] so that when you multiply it by x,
+- [01:03:40,500 - 01:03:45,280] you get a multiple lambda of the original function.
+- [01:03:47,680 - 01:03:49,420] Now that looks a little absurd,
+- [01:03:49,420 - 01:03:50,120] doesn't it?
+- [01:03:50,240 - 01:03:53,800] A function such that when you multiply it by x,
+- [01:03:54,980 - 01:03:58,880] just gives you a number times the original function.
+- [01:03:59,460 - 01:04:01,000] If you think about it for a minute,
+- [01:04:01,160 - 01:04:02,180] that's quite impossible.
+- [01:04:02,180 - 01:04:02,760] Well,
+- [01:04:02,760 - 01:04:04,700] it is impossible,
+- [01:04:04,700 - 01:04:05,920] strictly speaking,
+- [01:04:06,160 - 01:04:08,320] but you can get very close to this.
+- [01:04:08,520 - 01:04:10,060] So let me show you what's involved.
+- [01:04:12,940 - 01:04:16,160] Let's write this as x minus lambda
+- [01:04:19,420 - 01:04:21,640] times psi of x equals zero.
+- [01:04:23,200 - 01:04:24,910] All I've done is transpose the
+- [01:04:24,910 - 01:04:26,620] right-hand side over to the left.
+- [01:04:27,900 - 01:04:29,950] x minus the number lambda on
+- [01:04:29,950 - 01:04:32,000] psi of x is equal to zero.
+- [01:04:32,180 - 01:04:34,220] This should be thought of
+- [01:04:34,220 - 01:04:36,260] as an equation for a function,
+- [01:04:36,480 - 01:04:37,120] psi of x,
+- [01:04:37,120 - 01:04:39,160] and it must be true for all x.
+- [01:04:39,620 - 01:04:41,180] When you write a thing like this,
+- [01:04:41,320 - 01:04:43,740] you mean that it should be true for all x.
+- [01:04:44,640 - 01:04:45,120] Well,
+- [01:04:45,120 - 01:04:46,720] here's a product of two
+- [01:04:46,720 - 01:04:48,320] things which has to be zero,
+- [01:04:48,420 - 01:04:49,480] according to the equation.
+- [01:04:50,640 - 01:04:51,680] What do I know if
+- [01:04:51,680 - 01:04:52,720] a product is equal to zero?
+- [01:04:55,180 - 01:04:57,570] I know that at least one of
+- [01:04:57,570 - 01:04:59,960] the factors has to be equal to zero.
+- [01:05:00,200 - 01:05:02,160] Did you assume somewhere that the...
+- [01:05:03,880 - 01:05:04,360] Yes,
+- [01:05:04,360 - 01:05:05,560] we will assume that.
+- [01:05:06,280 - 01:05:08,630] We will assume that the integral
+- [01:05:08,630 - 01:05:10,980] of psi star psi always converges.
+- [01:05:11,680 - 01:05:13,580] We'll find out why in a little while.
+- [01:05:14,720 - 01:05:15,200] Converges.
+- [01:05:16,560 - 01:05:17,520] In particular,
+- [01:05:17,520 - 01:05:20,480] that means psi goes to zero at large distances.
+- [01:05:21,640 - 01:05:22,880] Whatever psi is,
+- [01:05:22,880 - 01:05:25,380] it should go to zero far away,
+- [01:05:25,520 - 01:05:26,820] do whatever it wants in here,
+- [01:05:26,820 - 01:05:28,420] and then go to zero nearby.
+- [01:05:29,100 - 01:05:30,440] The interpretation of that will
+- [01:05:30,440 - 01:05:31,780] become clear in a little while.
+- [01:05:32,420 - 01:05:34,460] So it doesn't leak off to very,
+- [01:05:34,460 - 01:05:35,380] very large distances
+- [01:05:35,380 - 01:05:36,380] and get bigger and bigger.
+- [01:05:36,540 - 01:05:37,520] It goes to zero.
+- [01:05:38,240 - 01:05:38,760] Assumption.
+- [01:05:40,280 - 01:05:42,520] Fast enough to make this integral converge.
+- [01:05:44,140 - 01:05:44,660] Okay,
+- [01:05:44,660 - 01:05:46,300] so let's take x minus lambda
+- [01:05:46,300 - 01:05:47,940] psi of x equal to zero.
+- [01:05:48,620 - 01:05:50,460] What does this equation tell us?
+- [01:05:50,520 - 01:05:52,510] It tells us that anywhere where
+- [01:05:52,510 - 01:05:54,500] x is not equal to lambda,
+- [01:05:55,260 - 01:05:56,080] here's lambda,
+- [01:05:56,080 - 01:05:56,760] right over here,
+- [01:05:56,800 - 01:05:58,500] x equals lambda right over here,
+- [01:05:59,440 - 01:06:02,000] any place where x is not equal to lambda,
+- [01:06:02,180 - 01:06:04,020] psi has to be equal to zero.
+- [01:06:04,480 - 01:06:07,200] That means the only place where psi is not zero
+- [01:06:07,920 - 01:06:10,080] must be where x is equal to lambda.
+- [01:06:11,780 - 01:06:13,480] At x equal to lambda,
+- [01:06:13,480 - 01:06:15,720] you can have psi not equal to zero
+- [01:06:15,720 - 01:06:16,820] because at that point,
+- [01:06:16,820 - 01:06:18,420] x minus lambda is equal to zero.
+- [01:06:18,900 - 01:06:19,580] Anywhere else,
+- [01:06:19,580 - 01:06:21,980] if this equation is to be true,
+- [01:06:22,500 - 01:06:23,840] psi has to be zero.
+- [01:06:24,800 - 01:06:28,420] So let's plot what psi has to look like.
+- [01:06:34,340 - 01:06:35,540] Let's plot it.
+- [01:06:38,899 - 01:06:41,640] Psi is a function which is zero everywhere
+- [01:06:41,919 - 01:06:43,620] except at x equals lambda.
+- [01:06:43,860 - 01:06:45,620] There's x equals lambda right there.
+- [01:06:45,900 - 01:06:49,740] So it's zero everywhere except at this one point
+- [01:06:49,740 - 01:06:50,980] where it can be non-zero.
+- [01:06:52,939 - 01:06:53,240] Now,
+- [01:06:53,240 - 01:06:56,000] a function like this is not a nice,
+- [01:06:56,000 - 01:06:56,560] continuous,
+- [01:06:56,560 - 01:06:57,840] sensible function.
+- [01:06:58,060 - 01:06:59,000] In particular,
+- [01:06:59,000 - 01:07:01,680] you can't square it and integrate it.
+- [01:07:02,180 - 01:07:03,350] It's a function which is
+- [01:07:03,350 - 01:07:04,520] only non-zero at a single point.
+- [01:07:05,200 - 01:07:08,540] And so what Dirac did was to invent
+- [01:07:09,180 - 01:07:11,380] a kind of idealized,
+- [01:07:13,600 - 01:07:14,120] well,
+- [01:07:14,120 - 01:07:16,180] a generalization of a function.
+- [01:07:16,680 - 01:07:18,500] The generalization of a function is
+- [01:07:18,500 - 01:07:20,320] probably well known to most of you,
+- [01:07:20,360 - 01:07:22,000] and it's called the Dirac delta function.
+- [01:07:22,440 - 01:07:23,300] At the moment,
+- [01:07:23,300 - 01:07:25,380] I don't want to get deeply into the mathematics.
+- [01:07:25,660 - 01:07:27,700] I'm more interested now in illustrating some
+- [01:07:27,700 - 01:07:29,740] of the concepts that we've gone through.
+- [01:07:29,740 - 01:07:33,660] So let's imagine that what this really means
+- [01:07:33,660 - 01:07:35,990] is that it's a function
+- [01:07:35,990 - 01:07:38,320] which is non-zero over a tiny,
+- [01:07:38,320 - 01:07:39,120] tiny interval.
+- [01:07:40,880 - 01:07:42,440] And the end will allow
+- [01:07:42,440 - 01:07:44,000] that interval to shrink to zero.
+- [01:07:44,440 - 01:07:46,860] Let's call the size of that interval epsilon.
+- [01:07:47,680 - 01:07:49,220] Epsilon for small number.
+- [01:07:49,840 - 01:07:50,400] Epsilon.
+- [01:07:51,040 - 01:07:52,700] And the height of the function
+- [01:07:56,620 - 01:07:58,640] will take to be one over epsilon.
+- [01:07:59,980 - 01:08:02,160] That's not in itself very important
+- [01:08:02,740 - 01:08:03,780] at the moment.
+- [01:08:04,420 - 01:08:07,280] But just to put some area under that function,
+- [01:08:07,540 - 01:08:10,620] let's make the function as high as it is narrow.
+- [01:08:11,420 - 01:08:14,240] That's a function which is zero everywheres
+- [01:08:14,240 - 01:08:17,600] except in this tiny interval near x equals lambda.
+- [01:08:18,760 - 01:08:20,300] Near x equals lambda.
+- [01:08:24,080 - 01:08:25,240] It's a high,
+- [01:08:25,240 - 01:08:26,000] narrow function
+- [01:08:26,680 - 01:08:28,340] which is zero everywheres else,
+- [01:08:28,340 - 01:08:30,479] except in that tiny interval.
+- [01:08:31,319 - 01:08:34,840] That function is what Dirac called the delta function.
+- [01:08:35,120 - 01:08:37,060] Delta of x minus lambda.
+- [01:08:38,740 - 01:08:41,939] It's zero except when the argument is equal to zero.
+- [01:08:42,140 - 01:08:44,600] Except when x minus lambda is equal to zero,
+- [01:08:45,340 - 01:08:47,140] then the delta function is a high,
+- [01:08:47,140 - 01:08:47,939] narrow spike.
+- [01:08:48,620 - 01:08:50,700] But when x is not equal to zero,
+- [01:08:50,899 - 01:08:53,439] or when x minus lambda is not equal to zero,
+- [01:08:53,620 - 01:08:54,819] the function is zero.
+- [01:08:55,340 - 01:08:57,540] That's called the Dirac delta function.
+- [01:08:57,540 - 01:08:58,100] Now,
+- [01:08:58,100 - 01:09:00,380] to give a precise mathematical definition,
+- [01:09:00,700 - 01:09:03,220] you get uncomfortable with functions
+- [01:09:03,220 - 01:09:06,580] which are as loosely defined as this,
+- [01:09:06,800 - 01:09:07,819] and you should.
+- [01:09:08,020 - 01:09:10,779] There is a precise definition of the delta function.
+- [01:09:11,220 - 01:09:12,140] We may or may not...
+- [01:09:12,140 - 01:09:12,200] Yeah?
+- [01:09:13,340 - 01:09:15,460] I thought this was the orthonormal.
+- [01:09:18,259 - 01:09:19,540] That is...
+- [01:09:19,540 - 01:09:19,939] Yeah.
+- [01:09:20,560 - 01:09:21,200] When...
+- [01:09:21,200 - 01:09:22,380] Yes?
+- [01:09:23,100 - 01:09:24,460] Maybe that's a approximation.
+- [01:09:26,140 - 01:09:27,460] It's not orthonormal.
+- [01:09:27,460 - 01:09:28,319] It's ortho,
+- [01:09:28,319 - 01:09:29,000] but not normal.
+- [01:09:30,399 - 01:09:31,880] The reason it's ortho...
+- [01:09:31,880 - 01:09:33,319] Let's see if it's ortho,
+- [01:09:33,319 - 01:09:34,020] first of all.
+- [01:09:34,439 - 01:09:35,620] Ortho means...
+- [01:09:35,620 - 01:09:35,800] Well,
+- [01:09:35,800 - 01:09:36,359] first of all,
+- [01:09:36,359 - 01:09:38,359] let's prove that this is an eigen...
+- [01:09:38,359 - 01:09:38,720] Well,
+- [01:09:38,720 - 01:09:40,880] of course it's an eigenvector of x.
+- [01:09:41,300 - 01:09:42,779] It satisfies this equation.
+- [01:09:43,319 - 01:09:45,760] x minus lambda times psi of x is zero,
+- [01:09:46,020 - 01:09:48,240] either because psi is zero
+- [01:09:48,240 - 01:09:50,000] or because x is equal to lambda.
+- [01:09:50,200 - 01:09:50,380] So,
+- [01:09:50,380 - 01:09:50,600] yes,
+- [01:09:50,600 - 01:09:51,560] it is an eigenvector.
+- [01:09:51,819 - 01:09:54,020] It's an eigenvector with eigenvalue lambda.
+- [01:09:54,440 - 01:09:56,680] But let's first ask about ortho
+- [01:09:56,680 - 01:09:57,500] before normal.
+- [01:09:57,980 - 01:10:01,100] Ortho means that if I have two different eigenvectors
+- [01:10:01,680 - 01:10:03,760] with two different values of lambda,
+- [01:10:04,540 - 01:10:06,360] that they must be orthogonal to each other.
+- [01:10:06,440 - 01:10:09,560] So let's draw another eigenvector
+- [01:10:09,560 - 01:10:12,140] corresponding to x equals lambda prime.
+- [01:10:12,720 - 01:10:14,580] That's a function which looks like this.
+- [01:10:15,320 - 01:10:15,880] Now,
+- [01:10:15,880 - 01:10:16,320] as I said,
+- [01:10:16,320 - 01:10:17,940] we will have to imagine in the end
+- [01:10:17,940 - 01:10:21,520] that this epsilon shrinks to a smaller and smaller size.
+- [01:10:22,880 - 01:10:25,680] But these two functions are orthogonal to each other.
+- [01:10:26,839 - 01:10:29,460] Because when you multiply them together
+- [01:10:31,160 - 01:10:32,720] it's called phi and psi,
+- [01:10:32,820 - 01:10:34,220] when you multiply them together,
+- [01:10:35,839 - 01:10:39,160] one or the other is zero everywheres.
+- [01:10:39,520 - 01:10:41,800] When you multiply this by this,
+- [01:10:42,040 - 01:10:45,840] one or the other or both are zero everywheres.
+- [01:10:45,920 - 01:10:47,120] Wherever this one is nonzero,
+- [01:10:47,260 - 01:10:48,000] this one is zero.
+- [01:10:48,120 - 01:10:49,340] Wherever this one is nonzero,
+- [01:10:49,440 - 01:10:50,160] this one is zero.
+- [01:10:50,500 - 01:10:52,260] So when you multiply them together,
+- [01:10:52,260 - 01:10:53,640] you'll always get zero,
+- [01:10:53,640 - 01:11:00,140] and therefore the inner product of them is certainly zero.
+- [01:11:00,580 - 01:11:01,780] On the other hand,
+- [01:11:01,780 - 01:11:06,140] if you take the eigenvector and take its inner product
+- [01:11:06,140 - 01:11:06,640] with itself,
+- [01:11:06,640 - 01:11:09,560] you'll be squaring this high narrow function,
+- [01:11:09,560 - 01:11:11,800] and the answer won't be zero.
+- [01:11:13,060 - 01:11:15,560] So they're orthogonal to one another,
+- [01:11:15,560 - 01:11:17,500] normalized,
+- [01:11:17,500 - 01:11:19,240] we'll worry about another day.
+- [01:11:19,240 - 01:11:22,020] They're not of unit norm.
+- [01:11:23,920 - 01:11:31,020] This is an example of an orthogonal family of functions,
+- [01:11:31,220 - 01:11:34,340] which are the eigenvectors of the operator x,
+- [01:11:34,340 - 01:11:39,040] one eigenvector for each value of lambda,
+- [01:11:39,180 - 01:11:42,860] for each possible position along the x-axis.
+- [01:11:44,320 - 01:11:45,120] Now,
+- [01:11:49,240 - 01:11:49,640] in fact,
+- [01:11:49,640 - 01:11:51,820] we've even found out what the eigenvalues are.
+- [01:11:52,080 - 01:11:54,470] The eigenvalues are simply all the possible
+- [01:11:54,470 - 01:11:56,860] values of x along the real axis.
+- [01:11:57,280 - 01:12:00,540] We could erect one of these delta functions anywheres.
+- [01:12:02,060 - 01:12:03,560] Any place we erect it,
+- [01:12:03,560 - 01:12:05,200] it will be an eigenvalue,
+- [01:12:05,200 - 01:12:05,760] or sorry,
+- [01:12:05,760 - 01:12:06,400] an eigen,
+- [01:12:06,980 - 01:12:08,920] sometimes I use the word eigenfunction.
+- [01:12:09,240 - 01:12:11,480] Eigenfunction is another word for eigenvector.
+- [01:12:11,940 - 01:12:13,980] It's an eigenvector of the
+- [01:12:13,980 - 01:12:16,020] operator x with eigenvalue lambda,
+- [01:12:16,260 - 01:12:18,640] and lambda can be anything on the real axis.
+- [01:12:19,599 - 01:12:30,320] So that's our first example of a permission operator,
+- [01:12:31,200 - 01:12:33,640] a spectrum of eigenvalues,
+- [01:12:33,800 - 01:12:36,140] spectrum just means the collection of eigenvalues,
+- [01:12:37,440 - 01:12:39,640] orthogonality of the different eigenvectors,
+- [01:12:41,019 - 01:12:45,120] and now let's discuss what a wavefunction really means.
+- [01:12:45,220 - 01:12:46,760] Psi of x is called a wavefunction,
+- [01:12:47,060 - 01:12:49,160] but let's,
+- [01:12:53,299 - 01:12:55,060] let's discuss the following.
+- [01:12:55,320 - 01:12:56,320] For simplicity,
+- [01:12:56,320 - 01:12:58,540] I'm going to take the height of this function
+- [01:12:58,540 - 01:13:01,740] to be one over the thickness of it,
+- [01:13:01,880 - 01:13:04,300] and that means the area under it is one.
+- [01:13:04,780 - 01:13:07,560] The area under a delta function is one.
+- [01:13:09,000 - 01:13:10,920] That's the definition of a delta function.
+- [01:13:12,119 - 01:13:12,719] Well,
+- [01:13:12,719 - 01:13:14,740] let's take psi of x,
+- [01:13:17,920 - 01:13:19,220] and take its point,
+- [01:13:19,220 - 01:13:29,920] and read it and times the delta function,
+- [01:13:30,020 - 01:13:31,640] separately for each part of it.
+- [01:13:31,640 - 01:13:33,410] So our typical position L is
+- [01:13:33,410 - 01:13:35,180] also along the Jonathan sausage line,
+- [01:13:35,180 - 01:13:35,640] and we have an optical vector,
+- [01:13:38,620 - 01:13:39,540] which is grades,
+- [01:13:43,900 - 01:13:48,480] which is equal to the visual volume,
+- [01:13:48,480 - 01:13:52,960] product gotten by taking psi of x and
+- [01:13:52,960 - 01:13:57,440] integrating it with the wave function corresponding to
+- [01:13:57,440 - 01:13:57,720] lambda.
+- [01:13:57,720 - 01:13:59,820] But what is the wave function corresponding to lambda?
+- [01:13:59,820 - 01:14:03,220] It's delta of x minus lambda,
+- [01:14:03,220 - 01:14:04,960] dx.
+- [01:14:06,240 - 01:14:08,010] This is the inner product
+- [01:14:08,010 - 01:14:09,780] of psi with the eigenvalue lambda,
+- [01:14:09,780 - 01:14:11,400] with the eigenvector lambda.
+- [01:14:11,400 - 01:14:14,800] Psi of x integrated with the eigenvector.
+- [01:14:14,800 - 01:14:18,220] This function is equal to something special.
+- [01:14:18,360 - 01:14:19,560] It's equal to something very simple.
+- [01:14:19,560 - 01:14:23,480] Remember that psi of x is zero everywhere except at
+- [01:14:23,480 - 01:14:24,180] x equals lambda.
+- [01:14:24,180 - 01:14:27,440] If it's zero everywhere except x equals lambda,
+- [01:14:27,440 - 01:14:30,560] it's only sensitive to the
+- [01:14:30,560 - 01:14:33,580] value of psi at x equals lambda.
+- [01:14:33,580 - 01:14:35,360] In other words,
+- [01:14:35,360 - 01:14:36,640] over this whole tiny,
+- [01:14:36,640 - 01:14:37,920] tiny range here,
+- [01:14:38,640 - 01:14:40,010] the only values of psi which are important
+- [01:14:40,010 - 01:14:41,380] to the wave function are the values of psi
+- [01:14:41,400 - 01:14:44,800] at x equals lambda.
+- [01:14:44,800 - 01:14:48,800] Since the height of the function,
+- [01:14:48,800 - 01:14:50,760] since the area under the function
+- [01:14:50,760 - 01:14:51,440] is one,
+- [01:14:51,440 - 01:14:54,220] it's easy to prove,
+- [01:14:54,220 - 01:14:54,520] okay,
+- [01:14:54,520 - 01:14:55,340] here's the argument.
+- [01:14:55,340 - 01:14:59,160] Between this point and this point,
+- [01:14:59,520 - 01:15:01,720] psi doesn't vary very much.
+- [01:15:01,720 - 01:15:03,800] Assuming that psi is nice and continuous,
+- [01:15:03,800 - 01:15:05,240] and if we take
+- [01:15:05,240 - 01:15:06,860] this interval sufficiently small,
+- [01:15:06,860 - 01:15:11,380] psi will not vary very much across the delta function.
+- [01:15:11,980 - 01:15:12,740] All right.
+- [01:15:12,740 - 01:15:14,720] What is it right at the delta function?
+- [01:15:14,720 - 01:15:16,540] It's just equal to psi of lambda.
+- [01:15:17,300 - 01:15:19,020] So to a good approximation
+- [01:15:19,020 - 01:15:20,740] and a better and better approximation,
+- [01:15:20,740 - 01:15:22,140] as I shrink this interval
+- [01:15:22,140 - 01:15:22,480] here,
+- [01:15:22,480 - 01:15:25,400] I can simply replace psi of x
+- [01:15:25,400 - 01:15:28,320] here by psi at that one point,
+- [01:15:28,320 - 01:15:30,240] psi of lambda times
+- [01:15:30,240 - 01:15:31,920] delta of x minus lambda,
+- [01:15:31,920 - 01:15:33,100] integral.
+- [01:15:34,240 - 01:15:37,580] Psi of lambda now can be brought outside the integral.
+- [01:15:37,580 - 01:15:40,120] This doesn't depend on x anymore.
+- [01:15:40,500 - 01:15:41,360] So we bring the integral.
+- [01:15:41,360 - 01:15:41,360] This integral is the integral of the integral.
+- [01:15:41,360 - 01:15:41,360] So we bring
+- [01:15:41,360 - 01:15:42,280] it outside the integral,
+- [01:15:42,280 - 01:15:43,670] and we just have to
+- [01:15:43,670 - 01:15:45,060] integrate delta of x minus lambda.
+- [01:15:45,060 - 01:15:45,980] The
+- [01:15:45,980 - 01:15:48,580] integral of delta of x minus lambda is one,
+- [01:15:48,580 - 01:15:52,720] because I've defined the area under the function
+- [01:15:52,720 - 01:15:53,360] to be one.
+- [01:15:53,360 - 01:15:55,570] So we just read off from this then
+- [01:15:55,570 - 01:15:57,780] that this is just equal to psi of lambda.
+- [01:16:02,260 - 01:16:04,400] This is equal to psi of lambda.
+- [01:16:04,400 - 01:16:06,700] In other words,
+- [01:16:06,700 - 01:16:08,680] the wave function itself,
+- [01:16:08,680 - 01:16:11,000] psi of lambda,
+- [01:16:11,000 - 01:16:11,260] or
+- [01:16:11,260 - 01:16:12,640] we could call it psi of x.
+- [01:16:12,640 - 01:16:16,260] We could replace x by x here.
+- [01:16:16,260 - 01:16:18,720] We can read this as saying the
+- [01:16:18,720 - 01:16:23,300] inner product of psi with a state which is
+- [01:16:23,300 - 01:16:27,880] localized at position x is just the wave function
+- [01:16:27,880 - 01:16:28,720] psi of x.
+- [01:16:28,720 - 01:16:29,880] That's what psi of x is.
+- [01:16:29,880 - 01:16:31,600] It's just this inner product.
+- [01:16:31,600 - 01:16:33,120] With this inner product
+- [01:16:33,120 - 01:16:34,720] now where I've changed notation,
+- [01:16:34,720 - 01:16:37,180] instead of calling the eigenvalues lambda,
+- [01:16:37,180 - 01:16:37,740] I've called
+- [01:16:37,740 - 01:16:38,940] them x themselves now.
+- [01:16:38,940 - 01:16:41,240] This corresponds to a wave function.
+- [01:16:41,240 - 01:16:41,240] So I've got a state of x.
+- [01:16:41,240 - 01:16:44,320] This is a wave function localized right at x.
+- [01:16:44,320 - 01:16:46,020] Okay,
+- [01:16:46,020 - 01:16:47,040] so where are we now?
+- [01:16:47,040 - 01:16:53,340] We now know
+- [01:16:53,340 - 01:16:57,220] mathematically that psi of x is sort of just
+- [01:16:57,220 - 01:17:01,100] a component of the vector psi along the basis
+- [01:17:01,100 - 01:17:02,560] vectors x.
+- [01:17:02,560 - 01:17:07,360] But now let's use the postulate.
+- [01:17:07,360 - 01:17:07,960] What have we done?
+- [01:17:07,960 - 01:17:09,420] We've erased all the postulates.
+- [01:17:09,500 - 01:17:10,000] Oh my goodness.
+- [01:17:10,120 - 01:17:10,920] We've erased all the postulates.
+- [01:17:10,920 - 01:17:11,200] Oh my goodness.
+- [01:17:11,240 - 01:17:11,420] We've erased all the postulates.
+- [01:17:11,420 - 01:17:12,420] What was the fifth postulate?
+- [01:17:12,420 - 01:17:15,200] Not Euclid's fifth postulate,
+- [01:17:15,200 - 01:17:16,480] but the quantum fifth postulate?
+- [01:17:17,379 - 01:17:19,300] It was about probabilities.
+- [01:17:19,300 - 01:17:23,480] It said that the probability for getting a particular lambda
+- [01:17:24,680 - 01:17:27,610] is the square of the
+- [01:17:27,610 - 01:17:30,540] vector projected onto the eigenvector lambda.
+- [01:17:30,540 - 01:17:32,500] In this context,
+- [01:17:32,500 - 01:17:33,080] it
+- [01:17:33,080 - 01:17:33,480] says the,
+- [01:17:33,480 - 01:17:34,100] oh sorry,
+- [01:17:34,100 - 01:17:34,500] squared.
+- [01:17:34,500 - 01:17:37,840] In this context,
+- [01:17:37,840 - 01:17:41,220] it says the probability for detecting a particle,
+- [01:17:41,220 - 01:17:43,200] at position x,
+- [01:17:43,200 - 01:17:46,350] the probability to detect a particle
+- [01:17:46,350 - 01:17:49,500] at position x is just equal to
+- [01:17:50,000 - 01:17:54,520] psi x quantity squared,
+- [01:17:54,520 - 01:17:56,660] or absolute value squared.
+- [01:17:56,660 - 01:17:59,980] But what is this psi x?
+- [01:17:59,980 - 01:18:01,180] It's just
+- [01:18:01,180 - 01:18:07,080] psi of x times psi star of x.
+- [01:18:08,160 - 01:18:08,519] Okay.
+- [01:18:10,480 - 01:18:11,200] Okay.
+- [01:18:11,220 - 01:18:11,760] In other words,
+- [01:18:11,760 - 01:18:13,860] we've now found out what the
+- [01:18:13,860 - 01:18:15,960] meaning of psi of x is,
+- [01:18:15,960 - 01:18:17,240] that it's the
+- [01:18:17,240 - 01:18:18,060] thing that you,
+- [01:18:18,060 - 01:18:18,400] well,
+- [01:18:18,400 - 01:18:20,260] it's not the full meaning of it,
+- [01:18:20,260 - 01:18:22,060] but a partial meaning of it,
+- [01:18:22,060 - 01:18:22,740] is it's
+- [01:18:22,740 - 01:18:25,540] the thing whose absolute value squared is
+- [01:18:25,540 - 01:18:28,340] the probability to detect a particle at x.
+- [01:18:30,640 - 01:18:32,560] So we've used the postulates
+- [01:18:32,560 - 01:18:34,480] of quantum mechanics to determine,
+- [01:18:34,480 - 01:18:35,760] in terms of the wave function,
+- [01:18:36,380 - 01:18:40,380] what the probability to locate a particle at x is.
+- [01:18:43,160 - 01:18:43,680] Yeah?
+- [01:18:43,820 - 01:18:46,610] So we've gone from psi being an
+- [01:18:46,610 - 01:18:49,400] any-old function to psi being some specific?
+- [01:18:49,980 - 01:18:50,500] No,
+- [01:18:50,500 - 01:18:50,780] I mean,
+- [01:18:50,780 - 01:18:51,960] psi could be any-old function,
+- [01:18:51,960 - 01:18:53,080] but for any-old function,
+- [01:18:53,080 - 01:18:53,820] there will be a
+- [01:18:53,820 - 01:18:54,760] probability distribution.
+- [01:18:54,760 - 01:18:57,120] Whatever psi is,
+- [01:18:57,120 - 01:18:58,580] whatever psi is,
+- [01:18:58,580 - 01:19:01,600] and psi can be complex.
+- [01:19:01,940 - 01:19:03,300] Psi need not be real.
+- [01:19:03,300 - 01:19:05,360] It can be negative in places.
+- [01:19:05,360 - 01:19:07,840] So psi is some complicated,
+- [01:19:07,840 - 01:19:08,340] complex
+- [01:19:08,340 - 01:19:08,940] function.
+- [01:19:08,940 - 01:19:09,760] So if you take a function that can be negative,
+- [01:19:09,760 - 01:19:10,240] positive,
+- [01:19:10,240 - 01:19:10,960] and imaginary,
+- [01:19:10,960 - 01:19:11,940] and all those things,
+- [01:19:12,100 - 01:19:13,980] if you take it and
+- [01:19:13,980 - 01:19:15,860] multiply it by its complex conjugate,
+- [01:19:15,860 - 01:19:17,760] you'll get something real and positive.
+- [01:19:18,140 - 01:19:21,070] That real positive thing is the probability
+- [01:19:21,070 - 01:19:24,000] to find the particle at different locations
+- [01:19:24,000 - 01:19:24,900] on the x-axis.
+- [01:19:25,640 - 01:19:27,150] That's the implication of
+- [01:19:27,150 - 01:19:28,660] the postulates of quantum mechanics.
+- [01:19:29,680 - 01:19:30,640] In particular,
+- [01:19:30,640 - 01:19:32,580] it says that probabilities are given
+- [01:19:32,580 - 01:19:34,520] by the squares of certain complex
+- [01:19:34,520 - 01:19:35,040] functions.
+- [01:19:36,200 - 01:19:36,720] Now.
+- [01:19:36,880 - 01:19:37,900] If all you get out of it
+- [01:19:37,900 - 01:19:38,920] was the probability of a particle at x,
+- [01:19:38,920 - 01:19:38,920] you'd be able to find the
+- [01:19:38,940 - 01:19:41,940] probability for finding particles in different places.
+- [01:19:42,280 - 01:19:43,120] You might say,
+- [01:19:43,120 - 01:19:44,710] why the hell don't I just define
+- [01:19:44,710 - 01:19:46,300] the probability as a function of x?
+- [01:19:46,400 - 01:19:49,280] Why do I go through this complicated operation
+- [01:19:49,280 - 01:19:52,160] of defining a complex function psi and then
+- [01:19:52,160 - 01:19:52,860] squaring it?
+- [01:19:53,460 - 01:19:55,570] The reason is because there are other
+- [01:19:55,570 - 01:19:57,680] things that you could measure besides the position
+- [01:19:57,680 - 01:19:58,460] of the particle.
+- [01:19:59,320 - 01:20:01,840] There are other Hermitian operators
+- [01:20:01,840 - 01:20:04,360] which correspond to other observables.
+- [01:20:05,180 - 01:20:06,220] In particular,
+- [01:20:06,220 - 01:20:08,920] let's think about other possibilities.
+- [01:20:11,139 - 01:20:12,260] This is the first one.
+- [01:20:12,260 - 01:20:14,040] I'm just going to give you another simple one.
+- [01:20:14,160 - 01:20:15,820] The simple one corresponds to a
+- [01:20:15,820 - 01:20:17,480] very basic thing in quantum mechanics.
+- [01:20:18,300 - 01:20:21,780] I'll name it as we go along.
+- [01:20:22,840 - 01:20:24,220] But before I name it,
+- [01:20:24,220 - 01:20:27,660] let's just define it in an abstract operator sense.
+- [01:20:28,160 - 01:20:29,080] Not abstract,
+- [01:20:29,080 - 01:20:30,320] a concrete operator sense.
+- [01:20:30,540 - 01:20:30,780] Again,
+- [01:20:30,780 - 01:20:33,060] we're still doing the particle on the line.
+- [01:20:33,719 - 01:20:37,760] Its states are described by functions psi of x.
+- [01:20:37,840 - 01:20:38,400] In other words,
+- [01:20:38,400 - 01:20:38,900] it's the function psi of x.
+- [01:20:38,900 - 01:20:42,240] The vector space is again the functions of x.
+- [01:20:42,520 - 01:20:44,280] Same exact setup as before.
+- [01:20:44,740 - 01:20:47,940] But now I'm going to think about a different observable.
+- [01:20:48,100 - 01:20:50,570] A different observable which is
+- [01:20:50,570 - 01:20:53,040] characterized by a different operator.
+- [01:20:54,500 - 01:20:57,640] The operator now is not multiplication by x.
+- [01:20:59,060 - 01:21:02,340] Multiplication by x is what we did over here.
+- [01:21:02,720 - 01:21:04,360] Now a different operation.
+- [01:21:05,700 - 01:21:06,360] Differentiation.
+- [01:21:07,420 - 01:21:08,560] Just differentiation.
+- [01:21:08,900 - 01:21:09,800] I can differentiate psi of x.
+- [01:21:11,740 - 01:21:12,820] That's an operation.
+- [01:21:13,440 - 01:21:15,220] In fact it's a linear operator.
+- [01:21:16,780 - 01:21:18,200] If I differentiate,
+- [01:21:18,200 - 01:21:21,360] I can differentiate the sum of two functions.
+- [01:21:21,660 - 01:21:23,980] I can multiply the function by a number.
+- [01:21:24,160 - 01:21:26,260] If I multiply the function by a number,
+- [01:21:26,260 - 01:21:29,400] its derivative is just a numerical number times
+- [01:21:29,400 - 01:21:31,300] the derivative of the original function.
+- [01:21:31,960 - 01:21:34,560] I can add functions and differentiate them.
+- [01:21:34,860 - 01:21:37,720] D by dx is a linear operator.
+- [01:21:37,720 - 01:21:39,450] It's a linear operator acting on
+- [01:21:39,450 - 01:21:41,180] the space of function psi of x.
+- [01:21:41,600 - 01:21:43,020] So this is another operator.
+- [01:21:44,500 - 01:21:46,540] Does it correspond to an observable?
+- [01:21:46,760 - 01:21:47,620] Not quite.
+- [01:21:48,500 - 01:21:50,480] Not quite because it's not Hermitian.
+- [01:21:51,120 - 01:21:53,140] It's what's called anti-Hermitian.
+- [01:21:54,320 - 01:21:56,970] Anti-Hermitian means all you have to do is
+- [01:21:56,970 - 01:21:59,620] multiply it by i to get something Hermitian.
+- [01:21:59,880 - 01:22:02,760] But let's first prove that it's not Hermitian.
+- [01:22:04,860 - 01:22:05,760] In fact,
+- [01:22:05,760 - 01:22:07,700] I'll prove that it's anti-Hermitian.
+- [01:22:07,700 - 01:22:09,320] Let me tell you what anti-Hermitian means.
+- [01:22:09,640 - 01:22:11,220] I'll just define it right now.
+- [01:22:18,780 - 01:22:20,760] It's a class of operators
+- [01:22:20,760 - 01:22:22,740] that were discovered by Hermite's aunt.
+- [01:22:25,980 - 01:22:26,720] Anti-Hermitian.
+- [01:22:26,960 - 01:22:27,560] No,
+- [01:22:27,560 - 01:22:28,220] that's not it.
+- [01:22:33,200 - 01:22:33,920] All right,
+- [01:22:33,920 - 01:22:34,680] anti-Hermitian.
+- [01:22:34,720 - 01:22:35,600] Remember what Hermitian means.
+- [01:22:36,140 - 01:22:37,240] Hermitian means?
+- [01:22:37,240 - 01:22:41,730] It means that A psi B is
+- [01:22:41,730 - 01:22:46,220] equal to the complex conjugate of B...
+- [01:22:46,220 - 01:22:46,700] Oh,
+- [01:22:46,700 - 01:22:47,080] what am I saying?
+- [01:22:47,180 - 01:22:47,300] Psi.
+- [01:22:47,420 - 01:22:47,620] H.
+- [01:22:47,620 - 01:22:48,300] Excuse me.
+- [01:22:48,340 - 01:22:48,680] H.
+- [01:22:48,680 - 01:22:49,700] H,
+- [01:22:49,700 - 01:22:50,880] A.
+- [01:22:50,880 - 01:22:53,340] Complex conjugated.
+- [01:22:53,620 - 01:22:55,100] That's the meaning of Hermitian.
+- [01:22:55,140 - 01:22:55,600] In particular,
+- [01:22:55,600 - 01:22:57,360] it says that A...
+- [01:22:58,139 - 01:23:00,480] You basically want to write that star down.
+- [01:23:03,739 - 01:23:04,940] I don't?
+- [01:23:05,320 - 01:23:06,000] Why not?
+- [01:23:06,040 - 01:23:06,980] Why not?
+- [01:23:08,980 - 01:23:09,600] Don't I?
+- [01:23:09,680 - 01:23:10,140] I think I do.
+- [01:23:10,320 - 01:23:10,780] Yeah.
+- [01:23:11,320 - 01:23:11,920] All right.
+- [01:23:13,800 - 01:23:17,880] Anti-Hermitian says that A H B
+- [01:23:17,880 - 01:23:21,960] is equal to minus B H A.
+- [01:23:23,360 - 01:23:24,860] That's called anti-Hermitian.
+- [01:23:25,620 - 01:23:27,140] If you spend five minutes,
+- [01:23:27,140 - 01:23:29,520] you'll realize that for every...
+- [01:23:29,520 - 01:23:29,760] Oh,
+- [01:23:29,760 - 01:23:30,860] this is anti-Hermitian.
+- [01:23:30,900 - 01:23:32,480] Let's call it H...
+- [01:23:32,480 - 01:23:34,800] Because I have to go to A
+- [01:23:34,800 - 01:23:37,120] to A and B to B to A.
+- [01:23:37,120 - 01:23:37,220] Let's call it H,
+- [01:23:37,220 - 01:23:37,220] B,
+- [01:23:37,220 - 01:23:37,220] A.
+- [01:24:05,860 - 01:24:07,180] Thank you.
+- [01:24:37,120 - 01:24:37,180] Thank you.
+- [01:24:38,040 - 01:24:39,480] I don't know where to do it.
+- [01:24:39,540 - 01:24:40,600] I don't know what to call it.
+- [01:24:40,660 - 01:24:47,300] Let's just call it anti-Hermitian.
+- [01:24:49,920 - 01:24:50,360] Yeah,
+- [01:24:50,360 - 01:24:50,600] yeah,
+- [01:24:50,600 - 01:24:50,720] yeah,
+- [01:24:50,720 - 01:24:51,000] sorry,
+- [01:24:51,000 - 01:24:51,660] star.
+- [01:24:52,480 - 01:24:54,120] It's exactly the same as Hermitian,
+- [01:24:54,120 - 01:24:55,240] but with an extra minus sign.
+- [01:24:56,200 - 01:24:57,760] It's very easy to prove that
+- [01:24:57,760 - 01:24:59,320] if you have an anti-Hermitian operator,
+- [01:24:59,500 - 01:25:00,880] if you multiply it by i,
+- [01:25:00,880 - 01:25:02,340] it becomes Hermitian.
+- [01:25:02,620 - 01:25:04,620] And the reason is because the
+- [01:25:04,620 - 01:25:06,620] complex conjugate of i is minus i.
+- [01:25:07,220 - 01:25:08,600] It rotates the h on its side.
+- [01:25:10,619 - 01:25:13,380] If you have an anti-Hermitian operator,
+- [01:25:14,639 - 01:25:17,320] and you multiply it by plus or minus i,
+- [01:25:17,320 - 01:25:18,440] let's say minus i.
+- [01:25:18,800 - 01:25:19,600] Oh boy,
+- [01:25:19,600 - 01:25:20,360] this looks like i,
+- [01:25:20,360 - 01:25:20,940] doesn't it?
+- [01:25:25,200 - 01:25:25,720] Okay.
+- [01:25:29,499 - 01:25:30,540] Anti-Hermitian.
+- [01:25:32,439 - 01:25:33,480] Anti-Hermitian.
+- [01:25:34,540 - 01:25:36,160] It's not a times h.
+- [01:25:36,680 - 01:25:37,200] It's a minus i.
+- [01:25:37,220 - 01:25:38,040] It's anti-Hermitian.
+- [01:25:38,280 - 01:25:40,470] If I take an anti-Hermitian
+- [01:25:40,470 - 01:25:42,660] operator and multiply it by i,
+- [01:25:43,320 - 01:25:44,940] I get a Hermitian operator.
+- [01:25:45,920 - 01:25:47,560] That's a little theorem to prove.
+- [01:25:47,820 - 01:25:48,440] Do it yourselves.
+- [01:25:48,880 - 01:25:51,160] But it just follows from the fact that
+- [01:25:51,160 - 01:25:53,440] the complex conjugate of i is minus i.
+- [01:25:54,060 - 01:25:54,460] So,
+- [01:25:54,460 - 01:25:56,740] no h-bar,
+- [01:25:56,740 - 01:25:57,000] please.
+- [01:25:57,080 - 01:25:57,480] Not now.
+- [01:25:57,700 - 01:25:58,800] You're confusing me.
+- [01:25:59,340 - 01:25:59,780] Okay.
+- [01:25:59,900 - 01:26:00,320] But,
+- [01:26:00,320 - 01:26:01,440] in fact,
+- [01:26:01,440 - 01:26:03,460] d by dx is anti-Hermitian.
+- [01:26:03,620 - 01:26:06,440] But let's just see why it is that,
+- [01:26:11,300 - 01:26:13,680] that d by dx is not Hermitian,
+- [01:26:13,800 - 01:26:16,320] and why you discover an extra minus sign there.
+- [01:26:18,300 - 01:26:19,100] I'll tell you what.
+- [01:26:19,240 - 01:26:20,440] Let me cut it short.
+- [01:26:20,540 - 01:26:22,160] Let me cut it short by simplifying.
+- [01:26:22,900 - 01:26:24,070] I'll tell you right now
+- [01:26:24,070 - 01:26:25,240] that the thing which is Hermitian
+- [01:26:25,240 - 01:26:27,620] is i times d by dx.
+- [01:26:28,420 - 01:26:29,420] In other words,
+- [01:26:29,420 - 01:26:30,920] or minus i.
+- [01:26:31,140 - 01:26:31,740] It doesn't matter.
+- [01:26:31,840 - 01:26:32,760] i or minus i.
+- [01:26:33,640 - 01:26:36,900] Minus i d by dx on psi of x.
+- [01:26:37,220 - 01:26:37,720] Is a Hermitian.
+- [01:26:37,720 - 01:26:40,040] Or minus i d by dx is an operation.
+- [01:26:40,900 - 01:26:43,620] It's a linear operator on the space of functions.
+- [01:26:44,140 - 01:26:47,900] And it's a Hermitian linear operation.
+- [01:26:48,700 - 01:26:50,200] Let's see if we can prove that.
+- [01:26:50,360 - 01:26:51,980] Let's see if we can prove that it's Hermitian.
+- [01:26:52,080 - 01:26:54,130] And the simplest way to
+- [01:26:54,130 - 01:26:56,180] prove it is to prove that...
+- [01:27:03,760 - 01:27:04,320] Let's call,
+- [01:27:04,320 - 01:27:05,120] let's give it a name.
+- [01:27:05,700 - 01:27:06,800] I'm going to give it the name,
+- [01:27:07,220 - 01:27:07,980] k-hat.
+- [01:27:08,880 - 01:27:10,200] I'm not going to call it h.
+- [01:27:10,400 - 01:27:11,220] I'm going to call it k.
+- [01:27:11,460 - 01:27:12,340] But it's Hermitian.
+- [01:27:12,460 - 01:27:13,900] k-hat on psi of x.
+- [01:27:14,740 - 01:27:16,840] The simplest way to prove it
+- [01:27:16,840 - 01:27:18,940] is to prove that for any psi,
+- [01:27:20,520 - 01:27:24,580] psi k psi is real.
+- [01:27:25,460 - 01:27:26,980] Now that sounds a little odd,
+- [01:27:27,200 - 01:27:29,020] because k has an i in it.
+- [01:27:29,060 - 01:27:31,640] It looks awfully much like it's going to be imaginary.
+- [01:27:32,180 - 01:27:32,960] But it's not.
+- [01:27:33,820 - 01:27:34,640] Let's check it.
+- [01:27:34,940 - 01:27:36,400] We have to calculate...
+- [01:27:37,220 - 01:27:37,540] star.
+- [01:27:39,660 - 01:27:40,360] That's the left,
+- [01:27:40,360 - 01:27:41,220] that's the bra vector.
+- [01:27:41,700 - 01:27:45,000] k-hat is minus i d by dx
+- [01:27:47,999 - 01:27:49,280] times psi.
+- [01:27:50,580 - 01:27:52,940] Or just the psi dx.
+- [01:28:01,780 - 01:28:03,400] Now it doesn't look real,
+- [01:28:03,400 - 01:28:04,640] but it is real.
+- [01:28:05,759 - 01:28:07,300] To prove that it's real,
+- [01:28:07,300 - 01:28:10,240] we want to prove that it's its own complex conjugate.
+- [01:28:10,920 - 01:28:12,740] So let's prove that this
+- [01:28:12,740 - 01:28:14,560] thing is its own complex conjugate.
+- [01:28:14,820 - 01:28:16,410] And the way we prove
+- [01:28:16,410 - 01:28:18,000] it is by integrating by parts.
+- [01:28:18,800 - 01:28:21,120] Does everybody know how to integrate by parts?
+- [01:28:22,200 - 01:28:24,240] Integrate by parts is a very simple thing.
+- [01:28:24,540 - 01:28:27,060] If you have the product of two functions,
+- [01:28:27,060 - 01:28:28,040] f of g,
+- [01:28:29,119 - 01:28:32,000] f times dg by dx.
+- [01:28:32,360 - 01:28:33,360] And you integrate
+- [01:28:33,360 - 01:28:35,450] the product of a function
+- [01:28:35,450 - 01:28:37,540] with the derivative of another function,
+- [01:28:37,540 - 01:28:38,740] the
+- [01:28:38,740 - 01:28:47,320] answer is minus g times the derivative of f.
+- [01:28:47,320 - 01:28:53,300] You simply interchange which of
+- [01:28:53,300 - 01:28:54,600] them is differentiated.
+- [01:28:54,600 - 01:28:56,800] Instead of differentiating g,
+- [01:28:56,800 - 01:28:58,200] we differentiate f and
+- [01:28:58,200 - 01:28:59,860] you throw in an extra minus sign.
+- [01:28:59,860 - 01:29:02,360] That's called integrating by parts.
+- [01:29:02,360 - 01:29:03,080] It's a
+- [01:29:03,080 - 01:29:06,760] standard elementary calculus theorem.
+- [01:29:06,760 - 01:29:10,740] What am I missing out of this?
+- [01:29:10,740 - 01:29:12,620] The end
+- [01:29:12,620 - 01:29:13,560] points of the integration,
+- [01:29:13,560 - 01:29:17,060] but the argument for the end points is that I've
+- [01:29:17,060 - 01:29:20,100] chosen function psi which go to zero far away.
+- [01:29:20,100 - 01:29:22,080] If they go to zero far away,
+- [01:29:22,080 - 01:29:22,780] I don't
+- [01:29:22,780 - 01:29:24,660] have to worry about the end points of the integration.
+- [01:29:24,660 - 01:29:27,640] So let's integrate this
+- [01:29:27,640 - 01:29:28,340] by parts.
+- [01:29:28,340 - 01:29:30,400] To integrate it by parts,
+- [01:29:30,400 - 01:29:32,880] I simply throw in another minus sign
+- [01:29:32,880 - 01:29:35,280] this must be equal to plus,
+- [01:29:35,280 - 01:29:36,460] we have to change the sign,
+- [01:29:36,460 - 01:29:39,880] plus i times the
+- [01:29:39,880 - 01:29:42,040] integral and now I interchange
+- [01:29:42,040 - 01:29:44,200] which of the things gets the
+- [01:29:45,879 - 01:29:46,480] derivative.
+- [01:29:46,480 - 01:29:52,980] It becomes d psi star by dx times psi.
+- [01:29:58,200 - 01:29:59,060] That's this.
+- [01:30:08,219 - 01:30:08,820] Alright,
+- [01:30:08,820 - 01:30:11,220] so I have this is equal to this.
+- [01:30:11,220 - 01:30:13,980] Integral psi star times minus i d
+- [01:30:13,980 - 01:30:16,740] psi by dx is plus i times
+- [01:30:16,740 - 01:30:18,560] integral d psi star by dx.
+- [01:30:18,560 - 01:30:21,420] Now I assert that this,
+- [01:30:21,420 - 01:30:22,940] the second term,
+- [01:30:22,940 - 01:30:23,820] the second
+- [01:30:23,820 - 01:30:24,260] expression,
+- [01:30:24,260 - 01:30:25,280] the right-hand side,
+- [01:30:25,280 - 01:30:28,020] is simply the complex conjugate of the top.
+- [01:30:28,020 - 01:30:29,600] Let's
+- [01:30:29,600 - 01:30:29,980] check that.
+- [01:30:29,980 - 01:30:31,420] Let's take the complex conjugate
+- [01:30:31,420 - 01:30:32,860] of the right-hand side of the
+- [01:30:32,880 - 01:30:33,060] equation.
+- [01:30:33,060 - 01:30:36,100] The complex conjugate of the right-hand side,
+- [01:30:36,100 - 01:30:37,680] first of all,
+- [01:30:37,680 - 01:30:37,920] has the
+- [01:30:37,920 - 01:30:39,080] complex conjugate of i.
+- [01:30:39,080 - 01:30:40,820] So let's,
+- [01:30:40,820 - 01:30:42,380] well I'm going to rewrite the complex,
+- [01:30:42,380 - 01:30:42,800] I'm
+- [01:30:42,800 - 01:30:44,420] going to re- I'm going to
+- [01:30:44,420 - 01:30:46,040] write the complex conjugate of this.
+- [01:30:46,040 - 01:30:48,220] I'm not going to write
+- [01:30:48,220 - 01:30:48,500] equals,
+- [01:30:48,500 - 01:30:49,620] just complex conjugate.
+- [01:30:49,620 - 01:30:50,260] Here it is,
+- [01:30:50,260 - 01:30:50,700] Cc,
+- [01:30:50,700 - 01:30:51,860] complex conjugate.
+- [01:30:51,860 - 01:30:53,900] What's the complex
+- [01:30:53,900 - 01:30:54,680] conjugate of i?
+- [01:30:54,680 - 01:30:57,000] Minus i.
+- [01:30:57,000 - 01:31:00,740] What's the complex conjugate of psi?
+- [01:31:03,419 - 01:31:04,200] Psi star,
+- [01:31:04,200 - 01:31:04,580] right?
+- [01:31:04,580 - 01:31:08,660] What's the complex conjugate of d psi star by dx?
+- [01:31:08,660 - 01:31:11,120] d psi dx.
+- [01:31:15,660 - 01:31:16,440] But look,
+- [01:31:16,440 - 01:31:18,430] the complex conjugate of the
+- [01:31:18,430 - 01:31:20,420] right-hand side is just the left-hand
+- [01:31:20,420 - 01:31:20,720] side.
+- [01:31:20,720 - 01:31:23,320] Minus i,
+- [01:31:23,320 - 01:31:24,900] psi star,
+- [01:31:24,900 - 01:31:26,580] d psi by dx.
+- [01:31:26,580 - 01:31:28,380] So what have I proved?
+- [01:31:28,380 - 01:31:30,600] I've proved that this
+- [01:31:30,600 - 01:31:32,440] is its own complex conjugate.
+- [01:31:33,179 - 01:31:34,980] By integration by parts,
+- [01:31:34,980 - 01:31:37,010] I prove that the left side
+- [01:31:37,010 - 01:31:39,040] of the equation is equal to the
+- [01:31:39,040 - 01:31:39,580] right side,
+- [01:31:39,580 - 01:31:42,940] but then I prove that the right
+- [01:31:42,940 - 01:31:46,300] side here is just the complex conjugate of
+- [01:31:46,300 - 01:31:47,040] the left side.
+- [01:31:47,040 - 01:31:48,380] No.
+- [01:31:48,380 - 01:31:49,760] Yeah.
+- [01:31:49,760 - 01:31:53,660] So I prove that this is its own complex conjugate.
+- [01:31:53,660 - 01:31:55,900] If it's its
+- [01:31:55,900 - 01:31:56,880] own complex conjugate,
+- [01:31:56,880 - 01:31:58,140] it means that it's real,
+- [01:31:58,140 - 01:32:02,360] and it means that minus i d by dx,
+- [01:32:02,880 - 01:32:04,280] is a Hermitian operator.
+- [01:32:04,280 - 01:32:07,740] The extra sign,
+- [01:32:07,740 - 01:32:08,800] or this,
+- [01:32:08,800 - 01:32:10,520] it's a little surprising.
+- [01:32:10,520 - 01:32:11,560] You might
+- [01:32:11,560 - 01:32:13,840] have thought that just d by dx was Hermitian,
+- [01:32:13,840 - 01:32:14,380] but it's not.
+- [01:32:14,380 - 01:32:16,840] Okay.
+- [01:32:16,840 - 01:32:19,680] So minus i k,
+- [01:32:19,680 - 01:32:20,460] which is
+- [01:32:22,860 - 01:32:24,940] just minus i d by dx,
+- [01:32:24,940 - 01:32:27,720] is a Hermitian operator.
+- [01:32:27,720 - 01:32:31,860] Let's find out what its eigenvectors are,
+- [01:32:31,980 - 01:32:32,860] if it's a Hermitian operator.
+- [01:32:32,860 - 01:32:32,860] Let's find out what its eigenvectors are,
+- [01:32:32,860 - 01:32:32,860] if it's a Hermitian
+- [01:32:32,860 - 01:32:33,120] operator,
+- [01:32:33,120 - 01:32:35,680] it must have a lot of eigenvectors.
+- [01:32:35,680 - 01:32:38,300] Let's see if we can find out what the eigenvectors
+- [01:32:38,300 - 01:32:38,640] are,
+- [01:32:38,640 - 01:32:41,080] and then see if we can
+- [01:32:41,080 - 01:32:43,520] interpret them and figure out what observable,
+- [01:32:43,520 - 01:32:45,140] what quantity
+- [01:32:45,140 - 01:32:48,540] that you can measure this operator k corresponds to.
+- [01:33:02,860 - 01:33:02,900] Okay.
+- [01:33:02,900 - 01:33:03,620] So,
+- [01:33:03,620 - 01:33:06,220] here's the eigenvalue equation.
+- [01:33:06,220 - 01:33:07,900] Let's write the eigenvalue equation.
+- [01:33:07,900 - 01:33:09,240] Minus
+- [01:33:09,240 - 01:33:12,740] i d psi by dx should equal,
+- [01:33:12,740 - 01:33:16,280] this is the action of k on psi.
+- [01:33:16,280 - 01:33:18,020] This is k on psi.
+- [01:33:18,020 - 01:33:19,580] k is minus
+- [01:33:19,580 - 01:33:20,400] i d by dx.
+- [01:33:20,400 - 01:33:22,040] If it's to be,
+- [01:33:22,040 - 01:33:24,280] if psi is to be an eigenvector,
+- [01:33:24,280 - 01:33:25,660] what does the right hand,
+- [01:33:25,740 - 01:33:27,280] what does the right side have to be?
+- [01:33:27,280 - 01:33:30,620] Lambda times psi,
+- [01:33:30,620 - 01:33:32,540] where lambda is the eigenvalue.
+- [01:33:33,540 - 01:33:35,580] Let's call the eigenvalue k.
+- [01:33:35,580 - 01:33:39,520] Just to call it by its traditional name,
+- [01:33:39,520 - 01:33:40,880] let's call it
+- [01:33:40,880 - 01:33:41,360] little k.
+- [01:33:41,360 - 01:33:43,920] This corresponds to an eigenvalue,
+- [01:33:43,920 - 01:33:45,500] times psi of x.
+- [01:33:45,500 - 01:33:49,560] So we're looking for functions,
+- [01:33:50,599 - 01:33:54,140] the eigenvector functions are those whose derivatives,
+- [01:33:54,140 - 01:33:55,400] or minus i derivatives,
+- [01:33:55,400 - 01:33:56,800] are equal
+- [01:33:56,800 - 01:33:58,720] to k times psi of x itself.
+- [01:33:58,720 - 01:34:02,700] Everybody know how to solve an equation like
+- [01:34:02,700 - 01:34:02,840] this?
+- [01:34:03,940 - 01:34:06,560] Anybody know how to solve an equation like this?
+- [01:34:09,580 - 01:34:10,140] Exponentials.
+- [01:34:10,140 - 01:34:11,860] Exponentials.
+- [01:34:11,860 - 01:34:14,120] The solution of this equation is
+- [01:34:14,120 - 01:34:16,380] that psi of x is proportional
+- [01:34:16,380 - 01:34:19,280] to e to the i k x.
+- [01:34:19,280 - 01:34:21,340] Okay.
+- [01:34:21,340 - 01:34:22,620] Let's check that.
+- [01:34:22,620 - 01:34:24,760] Rather than solve it,
+- [01:34:24,760 - 01:34:25,640] let's just check that
+- [01:34:25,640 - 01:34:27,360] this is the solution of the equations.
+- [01:34:27,360 - 01:34:29,360] e to the i k x,
+- [01:34:29,360 - 01:34:29,760] of course,
+- [01:34:29,760 - 01:34:31,440] means cosine k x
+- [01:34:31,440 - 01:34:32,040] times psi of x.
+- [01:34:32,560 - 01:34:32,840] Okay.
+- [01:34:32,860 - 01:34:34,600] Plus i sine k x.
+- [01:34:34,600 - 01:34:37,740] Let's check that.
+- [01:34:37,740 - 01:34:40,280] Let's check that minus i d by the,
+- [01:34:40,280 - 01:34:42,940] d psi by the x is k times psi.
+- [01:34:43,320 - 01:34:43,880] So,
+- [01:34:43,880 - 01:34:45,440] to differentiate this,
+- [01:34:45,440 - 01:34:47,000] every time you differentiate it,
+- [01:34:47,000 - 01:34:50,120] it pulls down the coefficient i k.
+- [01:34:50,400 - 01:34:54,340] So d psi by the x is equal to
+- [01:34:54,340 - 01:34:58,280] i k times e to the i k x,
+- [01:34:58,280 - 01:35:00,260] which is just i k times psi.
+- [01:35:03,379 - 01:35:06,440] Now I want minus i times this,
+- [01:35:06,440 - 01:35:08,300] so let's multiply by minus i.
+- [01:35:08,300 - 01:35:11,860] What's minus i times plus i?
+- [01:35:12,960 - 01:35:13,820] Just 1.
+- [01:35:14,940 - 01:35:18,810] So we find out that this function here is an
+- [01:35:18,810 - 01:35:22,680] eigenvector of the operator minus i d by the x.
+- [01:35:24,320 - 01:35:24,920] So,
+- [01:35:24,920 - 01:35:25,620] in fact,
+- [01:35:25,620 - 01:35:28,520] we have found the eigenvectors of the
+- [01:35:28,520 - 01:35:31,420] operator minus i d by the x,
+- [01:35:31,420 - 01:35:32,840] and they are simply the same.
+- [01:35:32,840 - 01:35:34,350] So we can see the functions
+- [01:35:34,350 - 01:35:35,860] cosine x plus i sine x.
+- [01:35:37,280 - 01:35:39,320] Let's think about those functions for a minute.
+- [01:35:39,880 - 01:35:41,600] Those functions are very,
+- [01:35:41,600 - 01:35:45,000] very different than the eigenvectors of x.
+- [01:35:45,280 - 01:35:47,300] The eigenvectors of x are
+- [01:35:47,300 - 01:35:49,320] these highly peaked delta functions.
+- [01:35:50,100 - 01:35:53,720] These functions here are spread all over the map.
+- [01:35:54,060 - 01:35:55,720] The map meaning x.
+- [01:35:56,040 - 01:35:57,620] They're spread all over the map.
+- [01:35:57,820 - 01:36:00,800] They're oscillations which endlessly go on and on.
+- [01:36:00,900 - 01:36:01,220] Okay.
+- [01:36:06,860 - 01:36:07,320] So we have this cosine,
+- [01:36:07,320 - 01:36:09,420] cosine looks like this,
+- [01:36:09,420 - 01:36:12,280] sine looks like,
+- [01:36:12,280 - 01:36:13,880] well,
+- [01:36:13,880 - 01:36:16,060] let me draw a sine in blue.
+- [01:36:16,620 - 01:36:17,080] Oh,
+- [01:36:17,080 - 01:36:18,200] but it's i sine x.
+- [01:36:18,400 - 01:36:18,860] Yeah,
+- [01:36:18,860 - 01:36:20,280] I can't draw i sine,
+- [01:36:20,280 - 01:36:20,540] no.
+- [01:36:21,580 - 01:36:22,840] But I can draw a sine.
+- [01:36:23,820 - 01:36:24,540] I'm not saying,
+- [01:36:24,540 - 01:36:26,460] don't add the blue to the black.
+- [01:36:27,500 - 01:36:29,680] Multiply the blue by i before you,
+- [01:36:32,840 - 01:36:33,120] and then you can add the black.
+- [01:36:34,680 - 01:36:35,840] But I can't draw that.
+- [01:36:36,060 - 01:36:36,420] Let's see.
+- [01:36:36,940 - 01:36:38,000] It starts here,
+- [01:36:38,000 - 01:36:44,320] and it has the same wavelength,
+- [01:36:44,320 - 01:36:44,920] I don't know,
+- [01:36:44,920 - 01:36:45,680] it has the same wavelength,
+- [01:36:45,880 - 01:36:47,480] but it's 90 degrees out of phase.
+- [01:36:47,640 - 01:36:49,160] We know what sine and cosine look like.
+- [01:36:49,220 - 01:36:50,220] I'm not going to try to draw them.
+- [01:36:51,100 - 01:36:52,960] This is the eigenfunctions,
+- [01:36:52,960 - 01:36:54,880] and it's got a plus i
+- [01:36:54,880 - 01:36:56,800] cosine kx plus i sine kx.
+- [01:36:57,920 - 01:36:59,240] What is the magnitude?
+- [01:36:59,460 - 01:37:01,020] Supposing I multiply psi of
+- [01:37:01,020 - 01:37:02,580] x by its own complex conjugate.
+- [01:37:02,720 - 01:37:02,820] Okay.
+- [01:37:03,900 - 01:37:04,840] What do I get?
+- [01:37:06,840 - 01:37:07,400] One.
+- [01:37:07,520 - 01:37:07,860] One,
+- [01:37:07,860 - 01:37:08,540] the number one.
+- [01:37:08,860 - 01:37:11,920] Psi times psi star is just one.
+- [01:37:12,780 - 01:37:14,410] E to the i kx times
+- [01:37:14,410 - 01:37:16,040] e to the minus i kx,
+- [01:37:16,040 - 01:37:19,120] e to the minus i kx is the complex conjugate
+- [01:37:19,120 - 01:37:19,500] of psi.
+- [01:37:20,320 - 01:37:22,160] Psi times psi star is one.
+- [01:37:23,200 - 01:37:23,760] Remember...
+- [01:37:25,700 - 01:37:26,260] Yes,
+- [01:37:26,260 - 01:37:28,100] there's an ambiguous constant in here.
+- [01:37:28,400 - 01:37:28,980] All right.
+- [01:37:29,040 - 01:37:29,540] Well,
+- [01:37:29,540 - 01:37:30,660] whatever that constant is.
+- [01:37:30,980 - 01:37:32,820] Psi star psi is constant.
+- [01:37:32,820 - 01:37:35,910] That means that the probability to find
+- [01:37:35,910 - 01:37:39,000] the particle anywhere in space is uniform.
+- [01:37:39,740 - 01:37:42,780] Complete uniform probability distribution.
+- [01:37:43,960 - 01:37:47,540] There's no information in this where the particle is,
+- [01:37:47,540 - 01:37:52,200] but the function oscillates,
+- [01:37:52,200 - 01:37:52,420] and those
+- [01:37:52,420 - 01:37:54,240] oscillations must mean something.
+- [01:37:55,240 - 01:37:55,560] Okay.
+- [01:37:56,440 - 01:37:57,940] Let's see if we can figure
+- [01:37:57,940 - 01:37:59,440] out what they mean by using...
+- [01:37:59,440 - 01:38:00,620] First of all,
+- [01:38:00,620 - 01:38:01,640] let me say this.
+- [01:38:01,720 - 01:38:02,100] First of all.
+- [01:38:02,120 - 01:38:02,800] I'm going to do this.
+- [01:38:02,800 - 01:38:04,560] According to the postulates,
+- [01:38:04,560 - 01:38:08,360] k corresponds to some kind of observable.
+- [01:38:08,820 - 01:38:12,140] Its eigenvalues are little k here,
+- [01:38:12,140 - 01:38:12,900] just numbers.
+- [01:38:13,060 - 01:38:15,940] Any number from minus infinity to plus infinity will do,
+- [01:38:15,940 - 01:38:17,060] will be an eigenvalue.
+- [01:38:18,420 - 01:38:20,800] What are we to call this operator?
+- [01:38:21,480 - 01:38:22,080] Well,
+- [01:38:22,080 - 01:38:23,560] we've got to give it a name.
+- [01:38:23,900 - 01:38:25,260] To give it a name,
+- [01:38:25,260 - 01:38:27,580] I'm going to relate this
+- [01:38:27,580 - 01:38:29,900] to some very primitive observations about
+- [01:38:29,900 - 01:38:30,980] quantum theory.
+- [01:38:30,980 - 01:38:32,580] This is the theory before
+- [01:38:32,580 - 01:38:34,180] real quantum mechanics was discovered.
+- [01:38:34,460 - 01:38:36,580] Going back to Einstein and de Broglie.
+- [01:38:36,880 - 01:38:39,080] This is for the purpose of giving it a name.
+- [01:38:39,740 - 01:38:40,300] Question?
+- [01:38:40,720 - 01:38:40,880] Yeah.
+- [01:38:41,640 - 01:38:43,280] In the derivation so far,
+- [01:38:43,280 - 01:38:45,740] you're assuming that psi is equal to zero at infinity?
+- [01:38:45,960 - 01:38:46,460] Yes,
+- [01:38:46,460 - 01:38:46,640] yes,
+- [01:38:46,640 - 01:38:47,060] yes.
+- [01:38:47,140 - 01:38:48,020] You're entirely right.
+- [01:38:48,580 - 01:38:50,760] And in fact,
+- [01:38:50,760 - 01:38:53,800] there are no true eigenvectors of psi
+- [01:38:53,800 - 01:38:56,840] of x which go to zero at infinity.
+- [01:38:57,280 - 01:38:58,680] But you can find...
+- [01:39:00,400 - 01:39:00,960] You can find...
+- [01:39:00,980 - 01:39:04,260] You can find functions which are arbitrarily close to this,
+- [01:39:04,260 - 01:39:06,040] arbitrarily close to solving
+- [01:39:06,040 - 01:39:06,360] this,
+- [01:39:06,360 - 01:39:09,570] by taking functions which oscillate and
+- [01:39:09,570 - 01:39:12,780] then far away gradually diminishing in
+- [01:39:12,780 - 01:39:13,280] magnitude.
+- [01:39:14,040 - 01:39:14,720] You are right.
+- [01:39:14,860 - 01:39:16,300] I don't want to get into that now,
+- [01:39:16,300 - 01:39:18,300] the normalization of the functions,
+- [01:39:18,300 - 01:39:19,160] but you are right.
+- [01:39:19,360 - 01:39:21,770] And one has to do a little bit of
+- [01:39:21,770 - 01:39:24,180] explanation here about why I'm allowed to get away with
+- [01:39:24,180 - 01:39:26,720] functions which don't go to zero at infinity.
+- [01:39:27,080 - 01:39:28,240] I didn't want to do that now.
+- [01:39:28,380 - 01:39:28,560] I want...
+- [01:39:28,560 - 01:39:31,680] Mostly I wanted to illustrate the principles
+- [01:39:31,680 - 01:39:34,800] by working out some examples of eigenvectors,
+- [01:39:34,920 - 01:39:35,500] eigenvalues,
+- [01:39:35,500 - 01:39:36,240] and so forth.
+- [01:39:36,520 - 01:39:39,140] So allow me the freedom to ignore that issue
+- [01:39:39,140 - 01:39:41,760] of whether the functions go to zero for the
+- [01:39:41,760 - 01:39:42,060] moment.
+- [01:39:42,460 - 01:39:43,920] At least they don't blow up.
+- [01:39:44,000 - 01:39:44,940] At least they don't get big.
+- [01:39:45,920 - 01:39:47,020] And that is important.
+- [01:39:49,480 - 01:39:50,260] For the moment,
+- [01:39:50,260 - 01:39:51,280] I want to find out,
+- [01:39:51,280 - 01:39:53,460] I want to name this observable.
+- [01:39:53,620 - 01:39:54,560] If I name it,
+- [01:39:54,560 - 01:39:56,550] I mean I want some intuitive
+- [01:39:56,550 - 01:39:58,540] connection with something that I already know.
+- [01:39:58,560 - 01:39:59,900] All right.
+- [01:39:59,960 - 01:40:01,900] So the eigenfunctions,
+- [01:40:01,900 - 01:40:04,120] the eigenfunctions after all are
+- [01:40:04,120 - 01:40:06,340] the wave functions which correspond
+- [01:40:06,340 - 01:40:09,920] to a definite value of this observable.
+- [01:40:12,100 - 01:40:13,960] What shall I call that observable?
+- [01:40:14,240 - 01:40:15,780] Well first of all,
+- [01:40:15,780 - 01:40:19,120] let's think about the wavelength of these oscillations.
+- [01:40:19,460 - 01:40:20,360] These are waves.
+- [01:40:21,100 - 01:40:24,720] The wavelength is this distance.
+- [01:40:25,160 - 01:40:28,540] The wavelength is the distance that you have to move.
+- [01:40:28,540 - 01:40:30,340] The wavelength is the distance that you have
+- [01:40:30,340 - 01:40:32,140] to move before cosine kx comes back to itself.
+- [01:40:32,980 - 01:40:35,900] Cosine zero starts at one.
+- [01:40:36,140 - 01:40:38,350] How far do you have to
+- [01:40:38,350 - 01:40:40,560] move before cosine comes back to one?
+- [01:40:42,200 - 01:40:43,780] Well the answer is two pi.
+- [01:40:44,360 - 01:40:46,600] But it's not x equals two pi,
+- [01:40:46,600 - 01:40:48,620] it's kx equals two pi.
+- [01:40:49,620 - 01:40:53,620] So the wavelength corresponds to k times
+- [01:40:53,620 - 01:40:57,620] the wavelength l is equal to two pi.
+- [01:40:58,540 - 01:41:00,680] Or the wavelength here,
+- [01:41:00,680 - 01:41:01,120] l,
+- [01:41:01,120 - 01:41:07,120] is equal to two pi divided by k.
+- [01:41:09,980 - 01:41:12,660] So we could either characterize these waves
+- [01:41:12,660 - 01:41:15,340] as having a certain value of k,
+- [01:41:15,340 - 01:41:16,340] a certain
+- [01:41:16,340 - 01:41:16,920] eigenvalue,
+- [01:41:16,920 - 01:41:19,240] or we could equivalently
+- [01:41:19,240 - 01:41:21,560] characterize them by their wavelength,
+- [01:41:21,560 - 01:41:22,340] and their wavelength
+- [01:41:22,340 - 01:41:22,860] is l.
+- [01:41:23,380 - 01:41:24,120] All right.
+- [01:41:26,159 - 01:41:26,759] Now,
+- [01:41:26,759 - 01:41:27,360] next.
+- [01:41:27,800 - 01:41:28,520] We move on.
+- [01:41:28,540 - 01:41:30,700] We make use of an intuition
+- [01:41:30,700 - 01:41:32,860] which goes back to de Broglie,
+- [01:41:32,860 - 01:41:34,540] and also to Einstein,
+- [01:41:34,540 - 01:41:36,800] that
+- [01:41:37,360 - 01:41:40,040] if we have particles corresponding
+- [01:41:40,040 - 01:41:42,720] to waves of a given wavelength,
+- [01:41:42,720 - 01:41:44,940] those particles have
+- [01:41:44,940 - 01:41:46,180] a certain momentum.
+- [01:41:47,840 - 01:41:50,940] Now we're only using this to name a certain thing.
+- [01:41:51,520 - 01:41:54,270] I cannot legitimately claim at this point to
+- [01:41:54,270 - 01:41:57,020] explain to you why we're going to call
+- [01:41:57,020 - 01:41:57,760] something momentum.
+- [01:41:58,540 - 01:41:58,980] We'll talk about that later.
+- [01:41:59,380 - 01:42:00,900] In order to see that
+- [01:42:00,900 - 01:42:02,420] something is really behaving like momentum,
+- [01:42:02,420 - 01:42:03,720] we have to do a lot more.
+- [01:42:04,020 - 01:42:04,840] But for the moment,
+- [01:42:04,840 - 01:42:06,440] I just want to put sort of a,
+- [01:42:06,440 - 01:42:10,260] what shall we call it,
+- [01:42:10,260 - 01:42:14,980] just throwing
+- [01:42:14,980 - 01:42:17,340] a bunch of stuff together that we've seen
+- [01:42:17,340 - 01:42:19,700] earlier in order to give this thing a name,
+- [01:42:19,820 - 01:42:20,660] a familiar name.
+- [01:42:21,100 - 01:42:21,600] All right.
+- [01:42:21,620 - 01:42:24,200] What de Broglie said is that if we
+- [01:42:24,200 - 01:42:26,780] have a beam of particles corresponding to a wave
+- [01:42:26,780 - 01:42:27,980] of wavelength l.
+- [01:42:27,980 - 01:42:31,060] That those particles have a momentum.
+- [01:42:31,520 - 01:42:32,740] And the momentum,
+- [01:42:32,740 - 01:42:34,360] let's call the momentum p.
+- [01:42:34,680 - 01:42:37,620] It's the same term that we used in classical physics.
+- [01:42:38,300 - 01:42:40,780] Anybody remember what de Broglie said?
+- [01:42:42,200 - 01:42:48,020] P is equal to h over l.
+- [01:42:50,520 - 01:42:53,100] This is also the thing that Heisenberg used.
+- [01:42:53,440 - 01:42:54,940] The shorter the wavelength,
+- [01:42:54,940 - 01:42:57,960] the higher the momentum of the correspondence.
+- [01:42:57,960 - 01:42:58,800] corresponding particles,
+- [01:42:58,800 - 01:43:02,240] and it's Planck's constant h which goes in there.
+- [01:43:02,680 - 01:43:05,680] So if you have a set of photons,
+- [01:43:05,680 - 01:43:06,460] for example,
+- [01:43:06,460 - 01:43:09,980] a set of photons which are described by a
+- [01:43:09,980 - 01:43:12,100] classical wave of wavelength L,
+- [01:43:12,100 - 01:43:14,260] then what Einstein knew,
+- [01:43:14,260 - 01:43:15,440] which he didn't say,
+- [01:43:15,440 - 01:43:16,260] but what
+- [01:43:16,260 - 01:43:18,790] de Broglie reinterpreted and
+- [01:43:18,790 - 01:43:21,320] generalized to any old particles,
+- [01:43:21,320 - 01:43:22,200] not just photons,
+- [01:43:22,200 - 01:43:23,460] is that
+- [01:43:23,460 - 01:43:27,330] the momentum of those particles described by a
+- [01:43:27,330 - 01:43:31,200] given wave is given by h divided by L.
+- [01:43:31,900 - 01:43:32,420] Well,
+- [01:43:32,420 - 01:43:34,040] L is 2 pi over k,
+- [01:43:34,040 - 01:43:35,400] so let's plug that in.
+- [01:43:35,800 - 01:43:37,560] That says that this is h,
+- [01:43:37,560 - 01:43:41,260] and then we have to turn L over,
+- [01:43:41,260 - 01:43:44,960] so that's k divided by 2 pi.
+- [01:43:47,000 - 01:43:49,240] h over 2 pi has another name,
+- [01:43:49,240 - 01:43:50,520] it's called h bar.
+- [01:43:51,660 - 01:43:53,200] So this is h bar.
+- [01:43:53,200 - 01:43:55,840] Planck's other constant times k.
+- [01:43:58,180 - 01:44:01,340] Momentum is h bar times k.
+- [01:44:02,940 - 01:44:04,960] So we now have an interpretation.
+- [01:44:05,200 - 01:44:07,860] It's an interpretation that we're going to
+- [01:44:07,860 - 01:44:10,520] have to check later when we understand the
+- [01:44:10,520 - 01:44:12,160] connection between quantum
+- [01:44:12,160 - 01:44:13,800] mechanics and classical mechanics.
+- [01:44:15,320 - 01:44:16,760] Momentum is a classical concept.
+- [01:44:17,140 - 01:44:19,700] We're now using sort of seat of the pants,
+- [01:44:19,700 - 01:44:21,640] old style quantum mechanics.
+- [01:44:21,880 - 01:44:23,040] The intuitive.
+- [01:44:23,040 - 01:44:24,960] Confused ideas of,
+- [01:44:24,960 - 01:44:27,820] that were before Heisenberg and Schrodinger.
+- [01:44:28,320 - 01:44:31,220] But let's use them and justify them later.
+- [01:44:31,620 - 01:44:35,400] That wavelength and momentum are connected in a certain way.
+- [01:44:35,540 - 01:44:36,100] Where is it?
+- [01:44:36,160 - 01:44:38,340] Wavelength and momentum are connected in a certain way.
+- [01:44:38,580 - 01:44:39,900] And if I then plug in,
+- [01:44:39,900 - 01:44:43,220] I find that momentum is connected to k.
+- [01:44:44,799 - 01:44:47,260] Momentum is h bar times k.
+- [01:44:47,420 - 01:44:48,160] Do I have that right?
+- [01:44:50,680 - 01:44:51,200] Yes.
+- [01:44:51,820 - 01:44:52,340] Yes.
+- [01:44:52,340 - 01:44:52,500] Yes.
+- [01:44:54,330 - 01:44:55,800] Momentum is h bar times k.
+- [01:44:57,980 - 01:44:58,520] Okay.
+- [01:45:01,700 - 01:45:02,240] Well,
+- [01:45:02,240 - 01:45:05,350] that now interprets for us what the
+- [01:45:05,350 - 01:45:08,460] physical meaning of the observable k is.
+- [01:45:08,880 - 01:45:10,640] It's just the momentum of a
+- [01:45:10,640 - 01:45:12,400] particle except in units of h bar.
+- [01:45:13,500 - 01:45:15,190] K is just the momentum of
+- [01:45:15,190 - 01:45:16,880] a particle in units of h bar.
+- [01:45:17,340 - 01:45:17,880] Okay.
+- [01:45:18,980 - 01:45:19,520] Okay.
+- [01:45:20,440 - 01:45:20,980] Okay.
+- [01:45:22,340 - 01:45:22,540] So if you want to call it momentum,
+- [01:45:22,540 - 01:45:23,420] don't call it momentum.
+- [01:45:23,640 - 01:45:25,160] Just call it the observable k.
+- [01:45:26,200 - 01:45:26,900] All right?
+- [01:45:27,460 - 01:45:29,440] You can just call it the observable k.
+- [01:45:29,740 - 01:45:33,180] And you see that its eigenvalues and
+- [01:45:33,180 - 01:45:36,620] its eigenfunctions are just the numbers k and
+- [01:45:36,620 - 01:45:38,580] the wave functions e to the ikx.
+- [01:45:39,200 - 01:45:42,200] The interesting point here is that whatever k is,
+- [01:45:42,200 - 01:45:44,140] it is of course the momentum.
+- [01:45:44,540 - 01:45:45,920] But whatever k is,
+- [01:45:45,920 - 01:45:48,480] the eigenvectors of it are
+- [01:45:48,480 - 01:45:51,040] completely different than the eigenvectors
+- [01:45:51,040 - 01:45:52,020] of the position.
+- [01:45:52,020 - 01:45:56,340] The eigenvectors of the position x are these high,
+- [01:45:56,340 - 01:46:00,200] narrow functions which are also slightly
+- [01:46:00,200 - 01:46:00,960] ill-defined.
+- [01:46:01,340 - 01:46:04,130] And the eigenfunctions of momentum are these
+- [01:46:04,130 - 01:46:06,920] functions which oscillate on and on forever
+- [01:46:06,920 - 01:46:08,550] and ever and have
+- [01:46:08,550 - 01:46:10,180] a completely uniform probability distribution.
+- [01:46:11,780 - 01:46:13,060] In each case,
+- [01:46:13,060 - 01:46:14,980] there's something mathematically a little wrong.
+- [01:46:15,200 - 01:46:16,600] In one case,
+- [01:46:16,600 - 01:46:18,670] this is clearly a thing
+- [01:46:18,670 - 01:46:20,740] which needs a better mathematical definition.
+- [01:46:20,740 - 01:46:22,540] And in the other case,
+- [01:46:22,540 - 01:46:24,560] we are allowing functions now which
+- [01:46:24,560 - 01:46:26,580] don't go to zero and infinity.
+- [01:46:26,800 - 01:46:27,700] These two things are related.
+- [01:46:28,020 - 01:46:31,240] But without being too precise
+- [01:46:31,240 - 01:46:34,460] and without being too mathematically rigorous,
+- [01:46:34,460 - 01:46:36,020] we now
+- [01:46:36,020 - 01:46:39,300] see that whatever these objects are,
+- [01:46:39,300 - 01:46:40,700] whatever these wave functions are,
+- [01:46:40,700 - 01:46:41,900] they're completely
+- [01:46:41,900 - 01:46:44,060] different for position and momentum.
+- [01:46:44,280 - 01:46:45,340] In particular,
+- [01:46:45,340 - 01:46:50,720] no eigenfunction of position is also an eigenvector.
+- [01:46:50,720 - 01:46:51,620] So what is the eigenfunction of momentum?
+- [01:46:53,240 - 01:46:53,800] Well,
+- [01:46:53,800 - 01:46:54,500] that sounds familiar.
+- [01:46:55,160 - 01:46:57,520] It sounds something like the uncertainty principle.
+- [01:46:57,800 - 01:47:00,330] If the eigenfunctions of position are the
+- [01:47:00,330 - 01:47:02,860] states in which if you measured the position,
+- [01:47:03,040 - 01:47:04,580] you would know exactly what it was.
+- [01:47:04,880 - 01:47:08,170] And if the eigenfunctions of momentum are
+- [01:47:08,170 - 01:47:11,460] the wave functions which correspond to a definite
+- [01:47:11,460 - 01:47:12,260] value of momentum,
+- [01:47:12,260 - 01:47:14,250] it's quite clear that they
+- [01:47:14,250 - 01:47:16,240] sort of clash with each other.
+- [01:47:16,680 - 01:47:19,600] If you know the position of a particle,
+- [01:47:19,600 - 01:47:20,700] that's equivalent to the value of momentum.
+- [01:47:20,700 - 01:47:22,400] That's equivalent to saying that you know
+- [01:47:22,400 - 01:47:24,100] that its wave function is peaked like that.
+- [01:47:24,620 - 01:47:26,420] If you know the momentum of a particle,
+- [01:47:26,420 - 01:47:28,660] it means that the wave function is spread out
+- [01:47:28,660 - 01:47:29,760] all over the place.
+- [01:47:30,220 - 01:47:31,380] It can't be both.
+- [01:47:31,680 - 01:47:32,180] And that,
+- [01:47:32,180 - 01:47:32,500] of course,
+- [01:47:32,500 - 01:47:34,080] is the source of the uncertainty principle,
+- [01:47:34,080 - 01:47:34,820] which we don't have
+- [01:47:34,820 - 01:47:35,880] — we're not going to do tonight,
+- [01:47:35,880 - 01:47:37,840] but it's the source of it.
+- [01:47:38,820 - 01:47:42,420] And it's an example of incompatible quantities,
+- [01:47:42,420 - 01:47:45,380] quantities which correspond — another way
+- [01:47:45,380 - 01:47:48,030] to say it is if you
+- [01:47:48,030 - 01:47:50,680] think of the eigenfunction of momentum.
+- [01:47:50,680 - 01:47:53,330] If you think of the eigenfunctions of position as
+- [01:47:53,330 - 01:47:55,980] forming a basis of vectors in a very high-dimensional
+- [01:47:55,980 - 01:47:58,270] vector space — but I'm going to draw
+- [01:47:58,270 - 01:48:00,560] it as just three-dimensional — then the eigenfunctions
+- [01:48:00,560 - 01:48:04,890] of momentum are simply different eigenvectors
+- [01:48:04,890 - 01:48:09,220] pointing in different directions so that no
+- [01:48:09,220 - 01:48:10,990] eigenfunction of position is
+- [01:48:10,990 - 01:48:12,760] also an eigenfunction of momentum,
+- [01:48:12,760 - 01:48:14,780] and no eigenfunction of momentum
+- [01:48:15,160 - 01:48:16,600] is an eigenfunction of position.
+- [01:48:16,920 - 01:48:18,790] They correspond to different basis sets which
+- [01:48:18,790 - 01:48:20,660] are at angles relative to the position.
+- [01:48:20,680 - 01:48:21,460] They're not relative to each other.
+- [01:48:24,460 - 01:48:27,500] We've now kind of gone
+- [01:48:27,500 - 01:48:30,540] through one example of a space,
+- [01:48:30,540 - 01:48:31,980] of a vector space,
+- [01:48:31,980 - 01:48:32,940] the space of
+- [01:48:32,940 - 01:48:33,800] functions of x,
+- [01:48:33,800 - 01:48:36,440] and the interpretation of a
+- [01:48:36,440 - 01:48:39,080] couple of different linear operators,
+- [01:48:39,080 - 01:48:40,560] the
+- [01:48:40,560 - 01:48:42,540] linear operator corresponding to position and
+- [01:48:42,540 - 01:48:44,520] the linear operator corresponding to momentum.
+- [01:48:45,080 - 01:48:47,360] What would we really have to do
+- [01:48:47,360 - 01:48:49,640] to see that it's more or less clear?
+- [01:48:50,060 - 01:48:50,660] Intuitive.
+- [01:48:50,660 - 01:48:50,960] Intuitively,
+- [01:48:50,960 - 01:48:53,050] that a wave function which is
+- [01:48:53,050 - 01:48:55,140] peaked at a location in space corresponds
+- [01:48:55,140 - 01:48:57,160] to a particle at that location in space.
+- [01:48:57,540 - 01:49:01,160] What would we really want to do in
+- [01:49:01,160 - 01:49:04,780] order to see that this other observable really does
+- [01:49:04,780 - 01:49:06,900] correspond to the momentum of a particle?
+- [01:49:07,440 - 01:49:07,780] Well,
+- [01:49:07,780 - 01:49:09,640] momentum is a classical concept,
+- [01:49:09,640 - 01:49:12,640] and in order to understand in what sense this
+- [01:49:12,640 - 01:49:13,740] thing corresponds to momentum,
+- [01:49:13,740 - 01:49:15,590] we have to be able
+- [01:49:15,590 - 01:49:17,440] to understand the limit of quantum
+- [01:49:17,440 - 01:49:20,640] mechanics in which it behaves like classical mechanics.
+- [01:49:21,879 - 01:49:24,420] It's quite obvious that there must be such a limit.
+- [01:49:24,720 - 01:49:26,720] If quantum mechanics governs everything,
+- [01:49:26,720 - 01:49:27,700] it governs electrons,
+- [01:49:27,700 - 01:49:28,920] it also governs bowling
+- [01:49:28,920 - 01:49:29,360] balls,
+- [01:49:29,360 - 01:49:32,720] but bowling balls are very heavy,
+- [01:49:32,720 - 01:49:35,220] and they correspond to a limit of quantum
+- [01:49:35,220 - 01:49:35,780] mechanics,
+- [01:49:35,780 - 01:49:38,580] a limit of quantum mechanics of heavy objects.
+- [01:49:39,100 - 01:49:41,540] What we would have to do in order to
+- [01:49:41,540 - 01:49:43,980] see that this object that I've called momentum really
+- [01:49:43,980 - 01:49:45,850] behaves like classical momentum is
+- [01:49:45,850 - 01:49:47,720] to understand that limit better.
+- [01:49:48,440 - 01:49:49,300] And we will.
+- [01:49:49,360 - 01:49:50,460] We will come back to that limit.
+- [01:49:50,520 - 01:49:50,620] But we'll have to do it.
+- [01:49:51,380 - 01:49:52,360] For the moment,
+- [01:49:52,360 - 01:49:55,360] calling k momentum or calling h-bar
+- [01:49:55,360 - 01:49:58,360] times k momentum is just a name.
+- [01:49:58,800 - 01:50:00,480] It's just a name for an object,
+- [01:50:00,480 - 01:50:01,740] a name for an observable.
+- [01:50:02,220 - 01:50:02,660] Okay,
+- [01:50:02,660 - 01:50:03,200] any questions?
+- [01:50:03,300 - 01:50:03,480] Yes?
+- [01:50:04,000 - 01:50:05,700] I have a comment.
+- [01:50:06,120 - 01:50:06,620] Yeah.
+- [01:50:06,880 - 01:50:11,850] The psi of x equals e to the ikx can
+- [01:50:11,850 - 01:50:16,820] be thought of as a function twisting around the x-axis.
+- [01:50:16,980 - 01:50:19,080] I think that helps visualize those.
+- [01:50:19,140 - 01:50:19,520] I agree.
+- [01:50:20,080 - 01:50:20,580] So,
+- [01:50:20,580 - 01:50:20,600] I'm going to go back to the question.
+- [01:50:20,600 - 01:50:20,720] So,
+- [01:50:20,720 - 01:50:21,580] let me say,
+- [01:50:21,580 - 01:50:23,780] good.
+- [01:50:24,560 - 01:50:24,760] So,
+- [01:50:24,760 - 01:50:31,620] let me just restate what you just said more completely.
+- [01:50:33,380 - 01:50:37,030] The complex number e to the ikx
+- [01:50:37,030 - 01:50:40,680] is a number whose magnitude is one.
+- [01:50:40,860 - 01:50:42,360] e to the ikx times e
+- [01:50:42,360 - 01:50:43,860] to the minus ikx is one,
+- [01:50:43,860 - 01:50:46,560] which means that it's a number in the complex
+- [01:50:46,560 - 01:50:48,940] plane which lies on the unit circle.
+- [01:50:49,720 - 01:50:50,280] Okay?
+- [01:50:50,600 - 01:50:51,240] And,
+- [01:50:51,240 - 01:50:51,680] of course,
+- [01:50:51,680 - 01:50:55,500] it's equal to cosine of something,
+- [01:50:55,500 - 01:50:58,080] cosine kx plus isine kx.
+- [01:50:58,680 - 01:50:59,200] Now,
+- [01:50:59,200 - 01:51:04,840] if I imagine the complex plane being oriented this way,
+- [01:51:04,840 - 01:51:06,820] and the x-axis,
+- [01:51:06,820 - 01:51:07,080] oh,
+- [01:51:07,080 - 01:51:07,220] this
+- [01:51:07,220 - 01:51:07,860] is different x.
+- [01:51:08,340 - 01:51:08,860] Sorry.
+- [01:51:08,980 - 01:51:10,280] This is psi.
+- [01:51:12,400 - 01:51:13,000] This is psi.
+- [01:51:13,860 - 01:51:16,100] Psi is a point on the complex plane,
+- [01:51:16,100 - 01:51:18,000] and if it has,
+- [01:51:18,000 - 01:51:19,860] if it's of the form e to the ikx,
+- [01:51:19,860 - 01:51:21,680] that means it's on the unit circle here.
+- [01:51:22,100 - 01:51:23,500] Psi is on the unit circle.
+- [01:51:24,440 - 01:51:26,320] This would be the real part of psi,
+- [01:51:26,320 - 01:51:33,200] real part of psi in this direction,
+- [01:51:33,200 - 01:51:34,180] and the imaginary
+- [01:51:34,180 - 01:51:35,960] part of psi in that direction.
+- [01:51:36,440 - 01:51:37,930] Let's not confuse x and y
+- [01:51:37,930 - 01:51:39,420] with the position of a particle.
+- [01:51:40,060 - 01:51:40,580] Now,
+- [01:51:40,580 - 01:51:42,920] supposing I draw the complex plane this way,
+- [01:51:42,920 - 01:51:44,900] remember,
+- [01:51:44,900 - 01:51:46,420] the wave function is a complex
+- [01:51:46,420 - 01:51:46,940] function.
+- [01:51:47,180 - 01:51:47,400] Okay?
+- [01:51:47,400 - 01:51:49,480] And the x-axis,
+- [01:51:49,480 - 01:51:51,600] the position of the particle that way,
+- [01:51:51,600 - 01:51:53,800] that means that at every point of
+- [01:51:53,800 - 01:51:54,040] space,
+- [01:51:54,040 - 01:51:58,750] I could draw the complex plane and plot
+- [01:51:58,750 - 01:52:03,460] psi as a point on the complex plane at
+- [01:52:03,460 - 01:52:04,080] every x.
+- [01:52:05,360 - 01:52:05,920] Okay?
+- [01:52:06,000 - 01:52:06,500] So,
+- [01:52:06,500 - 01:52:07,160] at every x,
+- [01:52:07,160 - 01:52:10,660] psi is a point on the complex plane,
+- [01:52:10,660 - 01:52:11,600] and in fact,
+- [01:52:11,600 - 01:52:12,620] for this kind of function,
+- [01:52:12,900 - 01:52:15,220] it's a point on the unit circle.
+- [01:52:17,599 - 01:52:18,200] So,
+- [01:52:18,200 - 01:52:19,260] as was pointed out,
+- [01:52:19,260 - 01:52:21,980] what it corresponds to is a point which,
+- [01:52:21,980 - 01:52:22,960] as you move along,
+- [01:52:22,960 - 01:52:24,120] winds
+- [01:52:24,120 - 01:52:25,720] around like a helix,
+- [01:52:25,720 - 01:52:29,740] winds around on the unit circle like a helix.
+- [01:52:30,920 - 01:52:32,620] That may help some people.
+- [01:52:32,720 - 01:52:33,380] It helps me.
+- [01:52:34,880 - 01:52:37,600] Small k means very long wavelength,
+- [01:52:37,600 - 01:52:39,400] means it winds slowly.
+- [01:52:42,180 - 01:52:45,040] Small k means large wavelength.
+- [01:52:45,220 - 01:52:45,980] Right.
+- [01:52:47,120 - 01:52:49,380] Large k is small wavelength.
+- [01:52:49,760 - 01:52:53,020] So large k means that it varies very quickly.
+- [01:52:53,800 - 01:52:54,420] Right.
+- [01:52:54,560 - 01:52:56,360] So large k means it winds
+- [01:52:56,360 - 01:52:58,160] very quickly as we move along.
+- [01:52:58,560 - 01:53:00,340] Small k means that it winds
+- [01:53:00,340 - 01:53:02,120] very slowly as we move along.
+- [01:53:02,600 - 01:53:03,220] Right.
+- [01:53:04,140 - 01:53:04,760] Yeah,
+- [01:53:04,760 - 01:53:05,880] that's a good point.
+- [01:53:07,260 - 01:53:09,060] Any other questions or comments?
+- [01:53:09,140 - 01:53:10,400] Some of the comments are helpful,
+- [01:53:10,400 - 01:53:10,880] so.
+- [01:53:15,420 - 01:53:16,640] On your postulates,
+- [01:53:16,640 - 01:53:17,620] you didn't say anything about,
+- [01:53:17,620 - 01:53:17,840] like,
+- [01:53:17,840 - 01:53:18,580] quantum collapse.
+- [01:53:19,220 - 01:53:19,680] No,
+- [01:53:19,680 - 01:53:20,380] at this point,
+- [01:53:20,380 - 01:53:20,760] not yet.
+- [01:53:21,400 - 01:53:22,020] Not yet.
+- [01:53:22,420 - 01:53:22,940] Not yet.
+- [01:53:23,320 - 01:53:24,240] One other point,
+- [01:53:24,240 - 01:53:28,100] one other point that we haven't talked about,
+- [01:53:28,100 - 01:53:29,000] which we'll talk about next
+- [01:53:29,000 - 01:53:29,240] time,
+- [01:53:29,240 - 01:53:30,990] we have not talked about
+- [01:53:30,990 - 01:53:32,740] the probability for different momentums.
+- [01:53:33,000 - 01:53:35,480] We talked about the probability for different positions.
+- [01:53:35,920 - 01:53:38,360] It was just psi star of x psi of x.
+- [01:53:39,880 - 01:53:41,650] We have not talked about
+- [01:53:41,650 - 01:53:43,420] the probability for different momenta.
+- [01:53:44,480 - 01:53:45,020] All right.
+- [01:53:45,020 - 01:53:45,140] So,
+- [01:53:45,140 - 01:53:45,200] we're done.
+- [01:53:45,220 - 01:53:46,700] We'll talk about that next time a little bit.
+- [01:53:47,800 - 01:53:48,760] And right,
+- [01:53:48,760 - 01:53:50,260] we have not talked about,
+- [01:53:50,260 - 01:53:52,860] basically have not talked about the measurement process
+- [01:53:52,860 - 01:53:53,460] itself,
+- [01:53:53,460 - 01:53:56,100] and what it does to the system,
+- [01:53:56,100 - 01:53:57,340] the actual act of measurement.
+- [01:53:57,600 - 01:53:59,810] We only said the probability for a
+- [01:53:59,810 - 01:54:02,020] given measurement is given by this or that.
+- [01:54:03,120 - 01:54:03,600] Yeah.
+- [01:54:03,720 - 01:54:05,300] This is the k and
+- [01:54:05,300 - 01:54:06,880] r are the first two conversions,
+- [01:54:06,880 - 01:54:09,060] so big k is small.
+- [01:54:10,060 - 01:54:11,620] Big k is small l,
+- [01:54:11,620 - 01:54:13,260] and big l and vice versa.
+- [01:54:13,780 - 01:54:14,760] That's what we just said.
+- [01:54:15,220 - 01:54:15,560] Well,
+- [01:54:15,560 - 01:54:16,340] we said the opposite.
+- [01:54:16,540 - 01:54:16,800] No,
+- [01:54:16,800 - 01:54:17,100] we didn't.
+- [01:54:18,040 - 01:54:22,380] We said small k corresponds to slow variation,
+- [01:54:22,380 - 01:54:23,440] which means big L.
+- [01:54:25,180 - 01:54:28,120] Large k corresponds to rapid oscillation,
+- [01:54:28,120 - 01:54:29,140] which means small l.
+- [01:54:29,520 - 01:54:30,040] Yes.
+- [01:54:31,440 - 01:54:31,960] Intuitively,
+- [01:54:31,960 - 01:54:33,530] it seems that momentum is
+- [01:54:33,530 - 01:54:35,100] differentiated from the effective time,
+- [01:54:35,100 - 01:54:35,800] not the effective
+- [01:54:35,800 - 01:54:36,180] position.
+- [01:54:36,840 - 01:54:37,360] Right.
+- [01:54:39,700 - 01:54:40,220] Well,
+- [01:54:40,220 - 01:54:40,580] okay.
+- [01:54:42,799 - 01:54:43,320] Momentum,
+- [01:54:43,320 - 01:54:44,260] we usually think of as
+- [01:54:44,260 - 01:54:45,200] having the momentum of the time.
+- [01:54:45,200 - 01:54:46,340] It's not something to do with dx by dt.
+- [01:54:46,940 - 01:54:47,520] Right.
+- [01:54:48,900 - 01:54:49,740] What we do,
+- [01:54:49,740 - 01:54:50,080] all right,
+- [01:54:50,080 - 01:54:51,740] so let me state it for you then.
+- [01:54:52,060 - 01:54:54,480] There's an approximation to quantum mechanics,
+- [01:54:54,480 - 01:54:56,860] which is good for heavy particles and heavy
+- [01:54:56,860 - 01:54:57,320] objects,
+- [01:54:57,320 - 01:54:59,100] and in that approximation,
+- [01:54:59,100 - 01:55:02,740] the wave function moves around,
+- [01:55:02,740 - 01:55:05,360] tends to form a lump,
+- [01:55:06,080 - 01:55:07,680] and this lump moves around.
+- [01:55:08,120 - 01:55:10,720] What we're going to want to prove is that
+- [01:55:10,720 - 01:55:13,320] this lump moves around in more or less the,
+- [01:55:13,320 - 01:55:15,920] in accord with the classical equations of motion,
+- [01:55:15,920 - 01:55:19,280] and we're going to want to prove that the
+- [01:55:19,280 - 01:55:21,900] velocity that it moves around with is related
+- [01:55:21,900 - 01:55:24,520] to how fast the wave function is varying.
+- [01:55:26,280 - 01:55:28,200] So if we have a wave
+- [01:55:28,200 - 01:55:30,120] function which varies quickly like that,
+- [01:55:30,120 - 01:55:32,000] so that it corresponds
+- [01:55:32,000 - 01:55:33,120] to a large k,
+- [01:55:33,120 - 01:55:35,160] we're going to want to discover
+- [01:55:35,160 - 01:55:37,200] that it moves across the blackboard faster
+- [01:55:37,200 - 01:55:39,140] as if it was a high momentum particle.
+- [01:55:39,620 - 01:55:40,740] But to do that,
+- [01:55:40,740 - 01:55:43,020] we have to understand how things change with time.
+- [01:55:43,320 - 01:55:45,460] We haven't even brought time into it yet.
+- [01:55:46,720 - 01:55:49,710] So the correspondence between momentum and
+- [01:55:49,710 - 01:55:52,700] what we normally call classical momentum is
+- [01:55:52,700 - 01:55:55,960] through the question of how wave packets move around.
+- [01:55:56,960 - 01:55:59,380] We're going to want to see that wave
+- [01:55:59,380 - 01:56:01,800] packets move around in accord with pretty much the
+- [01:56:01,800 - 01:56:03,060] classical equations of motion.
+- [01:56:05,040 - 01:56:05,640] Good.
+- [01:56:06,480 - 01:56:07,640] Any other questions?
+- [01:56:07,880 - 01:56:10,840] Got one more minute before I collapse.
+- [01:56:12,060 - 01:56:13,960] Before my wave function collapses.
+- [01:56:15,020 - 01:56:16,960] You know how many hours I've been teaching today?
+- [01:56:18,000 - 01:56:18,480] Four.
+- [01:56:21,700 - 01:56:22,180] Four.
+- [01:56:22,220 - 01:56:24,020] My father used to work 18 hours a day.
+- [01:56:30,620 - 01:56:32,940] You're supposed to feel sorry for me now.
+- [01:56:41,660 - 01:56:43,340] We just needed one hour of
+- [01:56:43,340 - 01:56:45,020] time with just one course sometimes!
+- [01:56:45,140 - 01:56:47,820] I look forward to it!
