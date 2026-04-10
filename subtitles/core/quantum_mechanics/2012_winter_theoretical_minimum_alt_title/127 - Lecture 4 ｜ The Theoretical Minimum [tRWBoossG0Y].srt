@@ -1,0 +1,12396 @@
+1
+00:00:04,999 --> 00:00:06,200
+Stanford University
+
+2
+00:00:08,519 --> 00:00:09,120
+Okay,
+
+3
+00:00:09,120 --> 00:00:10,860
+let's go on.
+
+4
+00:00:13,080 --> 00:00:13,960
+In fact,
+
+5
+00:00:13,960 --> 00:00:18,700
+let's forget for the moment the spin system.
+
+6
+00:00:18,920 --> 00:00:20,180
+We'll come back to it for sure.
+
+7
+00:00:22,160 --> 00:00:23,180
+Probably tonight,
+
+8
+00:00:23,180 --> 00:00:24,360
+in fact definitely tonight.
+
+9
+00:00:24,360 --> 00:00:27,880
+But let's remind ourselves of,
+
+10
+00:00:27,880 --> 00:00:29,820
+I think I wrote down four
+
+11
+00:00:29,820 --> 00:00:31,760
+principles of quantum mechanics last time.
+
+12
+00:00:32,140 --> 00:00:35,570
+And I want to write them down again
+
+13
+00:00:35,570 --> 00:00:39,000
+and then move on to a fifth principle.
+
+14
+00:00:44,080 --> 00:00:44,980
+In fact,
+
+15
+00:00:44,980 --> 00:00:46,080
+they're not all independent.
+
+16
+00:00:47,440 --> 00:00:50,890
+It's easier for me to explain them one at a
+
+17
+00:00:50,890 --> 00:00:54,340
+time than to try to derive from the minimal absolute.
+
+18
+00:00:54,360 --> 00:00:55,640
+Minimal number of them.
+
+19
+00:00:55,760 --> 00:00:57,120
+And I don't think there's
+
+20
+00:00:57,120 --> 00:00:58,480
+any particular advantage in doing that.
+
+21
+00:00:58,600 --> 00:01:00,960
+So we'll just write down all
+
+22
+00:01:00,960 --> 00:01:03,320
+the principles that I wrote down.
+
+23
+00:01:03,580 --> 00:01:06,380
+The first one is that observables,
+
+24
+00:01:06,380 --> 00:01:08,140
+observables are the things that you measure.
+
+25
+00:01:08,680 --> 00:01:10,240
+They could be called measurables.
+
+26
+00:01:10,460 --> 00:01:11,560
+And if I had,
+
+27
+00:01:11,560 --> 00:01:12,340
+if it was up to me,
+
+28
+00:01:12,340 --> 00:01:13,640
+I would have called them measurables.
+
+29
+00:01:14,720 --> 00:01:16,740
+But they were called observables.
+
+30
+00:01:20,220 --> 00:01:21,460
+Observables are represented.
+
+31
+00:01:21,900 --> 00:01:24,340
+And I'll just use the equal sign to indicate.
+
+32
+00:01:25,380 --> 00:01:28,240
+Observables are represented by Hermitian operators.
+
+33
+00:01:29,040 --> 00:01:30,740
+I'll use the symbol L
+
+34
+00:01:30,740 --> 00:01:32,440
+for the moment for Hermitian operator.
+
+35
+00:01:33,020 --> 00:01:34,260
+Not all operators,
+
+36
+00:01:34,260 --> 00:01:36,260
+not all linear operators are Hermitian.
+
+37
+00:01:36,500 --> 00:01:38,930
+And it will not always be the case that
+
+38
+00:01:38,930 --> 00:01:41,360
+the symbol L will stand for a Hermitian operator.
+
+39
+00:01:42,140 --> 00:01:43,120
+But right now,
+
+40
+00:01:43,120 --> 00:01:45,780
+L stands for a Hermitian operator,
+
+41
+00:01:45,780 --> 00:01:46,860
+any Hermitian operator.
+
+42
+00:01:47,480 --> 00:01:50,580
+Every observable is identified with a Hermitian operator.
+
+43
+00:01:50,920 --> 00:01:52,620
+Now the question of whether every
+
+44
+00:01:52,620 --> 00:01:54,320
+Hermitian operator is a Hermitian operator,
+
+45
+00:01:54,360 --> 00:01:55,860
+is a thing which can be measured,
+
+46
+00:01:55,860 --> 00:01:58,220
+is a generally hard question.
+
+47
+00:01:58,500 --> 00:01:58,840
+You have to,
+
+48
+00:01:58,840 --> 00:01:59,840
+you know,
+
+49
+00:01:59,840 --> 00:02:02,460
+what can and can't be measured depends
+
+50
+00:02:02,460 --> 00:02:05,080
+on what kind of materials you have available,
+
+51
+00:02:05,200 --> 00:02:06,680
+all kinds of things.
+
+52
+00:02:08,440 --> 00:02:09,039
+Generally,
+
+53
+00:02:09,039 --> 00:02:13,320
+the abstract rule that,
+
+54
+00:02:13,320 --> 00:02:16,000
+or the folk rule,
+
+55
+00:02:16,000 --> 00:02:16,840
+let's call it,
+
+56
+00:02:16,920 --> 00:02:19,330
+is that any Hermitian operator
+
+57
+00:02:19,330 --> 00:02:21,740
+is identified with an observable,
+
+58
+00:02:21,740 --> 00:02:24,440
+and someday somebody will figure out how to measure it.
+
+59
+00:02:24,820 --> 00:02:25,420
+Okay.
+
+60
+00:02:25,600 --> 00:02:28,170
+But the other way that any
+
+61
+00:02:28,170 --> 00:02:30,740
+observable is identified with a Hermitian operator,
+
+62
+00:02:30,740 --> 00:02:31,600
+that's for sure,
+
+63
+00:02:33,060 --> 00:02:35,420
+the eigenvalues of a Hermitian operator,
+
+64
+00:02:35,420 --> 00:02:36,640
+let's call them lambdas.
+
+65
+00:02:37,660 --> 00:02:39,960
+Lambda is the eigenvalue of L.
+
+66
+00:02:40,080 --> 00:02:44,700
+The eigenvalues represent the possible numerical values
+
+67
+00:02:44,700 --> 00:02:49,320
+that L can exhibit when it's measured.
+
+68
+00:02:49,840 --> 00:02:50,440
+Okay.
+
+69
+00:02:50,440 --> 00:02:51,800
+So eigenvalues,
+
+70
+00:02:51,800 --> 00:02:58,800
+eigenvalues of L,
+
+71
+00:02:58,800 --> 00:03:01,980
+which equal lambda,
+
+72
+00:03:05,320 --> 00:03:06,280
+no,
+
+73
+00:03:06,280 --> 00:03:13,380
+they represent the possible observed,
+
+74
+00:03:13,380 --> 00:03:15,720
+or the possible outcome of experiment,
+
+75
+00:03:16,000 --> 00:03:17,580
+possible outcome,
+
+76
+00:03:20,440 --> 00:03:22,320
+of an experiment to measure L,
+
+77
+00:03:24,760 --> 00:03:26,820
+of L measurement.
+
+78
+00:03:31,600 --> 00:03:32,260
+Okay,
+
+79
+00:03:32,260 --> 00:03:33,680
+I think we had a
+
+80
+00:03:33,680 --> 00:03:35,100
+third one along the line here.
+
+81
+00:03:35,280 --> 00:03:35,380
+Yeah.
+
+82
+00:03:37,100 --> 00:03:38,840
+Physically distinguishable states.
+
+83
+00:03:39,220 --> 00:03:41,040
+Now let's just see
+
+84
+00:03:41,040 --> 00:03:42,860
+what physically distinguishable states mean.
+
+85
+00:03:45,760 --> 00:03:46,420
+Certainly,
+
+86
+00:03:46,420 --> 00:03:49,840
+up and down are physically distinguishable.
+
+87
+00:03:51,400 --> 00:03:54,920
+And the meaning of saying two states are
+
+88
+00:03:54,920 --> 00:03:58,440
+physically distinguishable is that there exists a measurement
+
+89
+00:03:58,440 --> 00:04:01,950
+of some kind that you can do that can tell
+
+90
+00:04:01,950 --> 00:04:05,460
+you the difference between an up state and a down state.
+
+91
+00:04:05,640 --> 00:04:06,180
+In other words,
+
+92
+00:04:06,180 --> 00:04:10,900
+somebody hands you a spin from out of their pocket,
+
+93
+00:04:10,900 --> 00:04:12,180
+and they say,
+
+94
+00:04:12,300 --> 00:04:14,580
+I created this spin,
+
+95
+00:04:14,580 --> 00:04:17,140
+I prepared it in a state
+
+96
+00:04:17,140 --> 00:04:19,700
+which is either up or down.
+
+97
+00:04:19,700 --> 00:04:22,540
+Can you do an experiment to
+
+98
+00:04:22,540 --> 00:04:25,380
+unambiguously tell me which one it is?
+
+99
+00:04:26,240 --> 00:04:26,760
+Yes.
+
+100
+00:04:26,840 --> 00:04:28,630
+You tilt your apparatus until
+
+101
+00:04:28,630 --> 00:04:30,420
+it's pointing along the z-axis,
+
+102
+00:04:30,420 --> 00:04:31,740
+and you make the measurement.
+
+103
+00:04:32,060 --> 00:04:33,960
+If the state was up,
+
+104
+00:04:33,960 --> 00:04:35,100
+you will get plus one.
+
+105
+00:04:35,180 --> 00:04:36,120
+If the state is down,
+
+106
+00:04:36,120 --> 00:04:37,200
+you will get minus one.
+
+107
+00:04:37,480 --> 00:04:38,420
+No ambiguity.
+
+108
+00:04:39,640 --> 00:04:42,360
+The same is true for left and right.
+
+109
+00:04:42,680 --> 00:04:43,740
+Different measurement,
+
+110
+00:04:43,740 --> 00:04:45,320
+different thing that you would measure.
+
+111
+00:04:45,760 --> 00:04:48,020
+You would measure the x component,
+
+112
+00:04:48,020 --> 00:04:49,680
+and you would tilt your apparatus,
+
+113
+00:04:49,700 --> 00:04:51,020
+along the x-axis,
+
+114
+00:04:51,020 --> 00:04:54,180
+but same deal.
+
+115
+00:04:54,820 --> 00:04:55,840
+On the other hand,
+
+116
+00:04:55,840 --> 00:04:56,820
+supposing somebody,
+
+117
+00:04:56,820 --> 00:04:57,720
+that same person,
+
+118
+00:04:57,720 --> 00:04:58,820
+came along and said,
+
+119
+00:04:58,860 --> 00:04:58,980
+Here,
+
+120
+00:04:58,980 --> 00:05:00,620
+I'm going to give you a spin.
+
+121
+00:05:01,180 --> 00:05:01,920
+Here it is.
+
+122
+00:05:02,300 --> 00:05:03,280
+And that spin,
+
+123
+00:05:03,280 --> 00:05:09,860
+I either prepared up or I prepared it right.
+
+124
+00:05:10,960 --> 00:05:12,230
+I am not going to tell
+
+125
+00:05:12,230 --> 00:05:13,500
+you which way I prepared it.
+
+126
+00:05:13,560 --> 00:05:16,480
+I'm not going to tell you which way
+
+127
+00:05:16,480 --> 00:05:19,400
+I tilted my apparatus when I did the preparation.
+
+128
+00:05:20,099 --> 00:05:21,440
+I'm just going to tell you,
+
+129
+00:05:21,440 --> 00:05:22,640
+it's either left,
+
+130
+00:05:22,640 --> 00:05:23,560
+sorry,
+
+131
+00:05:23,560 --> 00:05:26,400
+it's either up or right.
+
+132
+00:05:26,980 --> 00:05:29,440
+Can you do an experiment which
+
+133
+00:05:29,440 --> 00:05:31,900
+will uniquely tell you the difference?
+
+134
+00:05:32,400 --> 00:05:33,520
+The answer is no.
+
+135
+00:05:34,540 --> 00:05:35,400
+For example,
+
+136
+00:05:35,400 --> 00:05:38,300
+supposing you decide to measure the spin along the z-axis.
+
+137
+00:05:38,840 --> 00:05:39,320
+Well,
+
+138
+00:05:39,320 --> 00:05:39,740
+if it's up,
+
+139
+00:05:39,740 --> 00:05:40,480
+you'll get plus one.
+
+140
+00:05:41,420 --> 00:05:42,360
+If it's right,
+
+141
+00:05:42,360 --> 00:05:43,860
+with 50% probability,
+
+142
+00:05:43,860 --> 00:05:44,980
+you'll get plus one.
+
+143
+00:05:45,200 --> 00:05:47,940
+So you can't be sure whether you,
+
+144
+00:05:47,940 --> 00:05:48,160
+uh,
+
+145
+00:05:48,160 --> 00:05:48,780
+whether you,
+
+146
+00:05:48,780 --> 00:05:49,200
+uh,
+
+147
+00:05:50,380 --> 00:05:51,800
+whether you were up or right.
+
+148
+00:05:53,800 --> 00:05:58,220
+What if you were oriented at 45 degrees?
+
+149
+00:05:58,540 --> 00:05:58,860
+Still,
+
+150
+00:05:58,860 --> 00:06:01,060
+you would have a probability for,
+
+151
+00:06:01,060 --> 00:06:02,380
+yeah,
+
+152
+00:06:02,380 --> 00:06:02,660
+yeah,
+
+153
+00:06:02,660 --> 00:06:03,540
+yeah.
+
+154
+00:06:05,020 --> 00:06:05,500
+Yeah,
+
+155
+00:06:05,500 --> 00:06:07,160
+it would not be unambiguous.
+
+156
+00:06:07,440 --> 00:06:07,920
+Right,
+
+157
+00:06:07,920 --> 00:06:08,520
+okay.
+
+158
+00:06:08,940 --> 00:06:09,420
+So,
+
+159
+00:06:09,420 --> 00:06:10,520
+the next postulate.
+
+160
+00:06:10,780 --> 00:06:11,440
+Excuse me.
+
+161
+00:06:11,740 --> 00:06:13,000
+In your last statement,
+
+162
+00:06:13,000 --> 00:06:16,680
+that's assuming it was prepared along the z-axis.
+
+163
+00:06:17,120 --> 00:06:19,180
+If it had been prepared along the x-axis,
+
+164
+00:06:20,460 --> 00:06:25,120
+then if you measured the x-axis first,
+
+165
+00:06:25,120 --> 00:06:26,580
+you'd get this.
+
+166
+00:06:27,620 --> 00:06:29,820
+If you measure the x-axis first,
+
+167
+00:06:29,820 --> 00:06:31,280
+you'll find something out,
+
+168
+00:06:32,340 --> 00:06:32,940
+but,
+
+169
+00:06:32,940 --> 00:06:33,440
+uh,
+
+170
+00:06:33,440 --> 00:06:35,780
+you could have found out exactly the
+
+171
+00:06:35,780 --> 00:06:38,120
+same answer if it was along the z-axis.
+
+172
+00:06:38,200 --> 00:06:38,920
+In either case,
+
+173
+00:06:38,920 --> 00:06:43,850
+there is some probability of getting the
+
+174
+00:06:43,850 --> 00:06:48,780
+same answer whether it was up or right.
+
+175
+00:06:48,780 --> 00:06:52,380
+There's no experiment you can do which unambiguously will,
+
+176
+00:06:52,380 --> 00:06:52,900
+uh,
+
+177
+00:06:52,900 --> 00:06:56,180
+will determine which it was.
+
+178
+00:06:56,600 --> 00:06:57,160
+Alright,
+
+179
+00:06:57,160 --> 00:06:58,400
+so that leads to the notion,
+
+180
+00:06:58,400 --> 00:07:00,670
+I'm not going to try to
+
+181
+00:07:00,670 --> 00:07:02,940
+give a more precise definition of it,
+
+182
+00:07:03,020 --> 00:07:05,100
+that leads to the
+
+183
+00:07:05,100 --> 00:07:07,180
+notion of physically distinguishable states
+
+184
+00:07:07,820 --> 00:07:10,560
+by which is meant that there exists
+
+185
+00:07:10,560 --> 00:07:13,300
+an experiment or a set of experiments
+
+186
+00:07:13,300 --> 00:07:16,030
+that can unambiguously determine which of
+
+187
+00:07:16,030 --> 00:07:18,760
+the two states you're talking about.
+
+188
+00:07:18,780 --> 00:07:21,860
+The next postulate is that
+
+189
+00:07:21,860 --> 00:07:24,940
+physically distinct or physically distinguishable states
+
+190
+00:07:24,940 --> 00:07:28,120
+are represented by orthogonal vectors.
+
+191
+00:07:28,940 --> 00:07:29,940
+Okay,
+
+192
+00:07:29,940 --> 00:07:31,420
+so physically distinct...
+
+193
+00:07:37,620 --> 00:07:38,620
+Distinct,
+
+194
+00:07:38,620 --> 00:07:39,260
+distinguishable,
+
+195
+00:07:39,260 --> 00:07:39,740
+same thing.
+
+196
+00:07:39,940 --> 00:07:41,740
+A little easier to write distinct.
+
+197
+00:07:42,100 --> 00:07:44,160
+Physically distinct states
+
+198
+00:07:49,880 --> 00:07:51,160
+imply orthogonality.
+
+199
+00:07:59,060 --> 00:07:59,700
+Alright,
+
+200
+00:07:59,700 --> 00:08:02,320
+I said that observables are Hermitian operators.
+
+201
+00:08:03,220 --> 00:08:05,640
+I could have just said linear operators.
+
+202
+00:08:05,920 --> 00:08:07,860
+Let's leave it at linear operators for the moment.
+
+203
+00:08:08,940 --> 00:08:11,200
+But let's add a postulate
+
+204
+00:08:11,200 --> 00:08:13,460
+that the result of every experiment,
+
+205
+00:08:13,460 --> 00:08:15,500
+every simple primitive experiment,
+
+206
+00:08:15,500 --> 00:08:16,760
+is a real number.
+
+207
+00:08:17,860 --> 00:08:19,440
+If it's a real number,
+
+208
+00:08:19,440 --> 00:08:20,920
+if it's a complex number,
+
+209
+00:08:21,180 --> 00:08:23,400
+it really means that two things,
+
+210
+00:08:23,400 --> 00:08:24,420
+two independent things,
+
+211
+00:08:24,420 --> 00:08:24,960
+were measured.
+
+212
+00:08:25,120 --> 00:08:27,220
+The actual results that come out of your apparatus,
+
+213
+00:08:27,380 --> 00:08:28,040
+that come out of your,
+
+214
+00:08:28,040 --> 00:08:28,320
+um,
+
+215
+00:08:28,320 --> 00:08:29,380
+uh,
+
+216
+00:08:29,380 --> 00:08:30,420
+you know,
+
+217
+00:08:30,420 --> 00:08:30,660
+well,
+
+218
+00:08:31,219 --> 00:08:33,159
+the needles on your apparatus,
+
+219
+00:08:33,159 --> 00:08:33,919
+they're real numbers.
+
+220
+00:08:34,539 --> 00:08:35,020
+So,
+
+221
+00:08:35,020 --> 00:08:36,480
+I'll add that as a postulate,
+
+222
+00:08:36,559 --> 00:08:38,799
+the results of experiments are always real numbers,
+
+223
+00:08:38,980 --> 00:08:40,020
+and therefore,
+
+224
+00:08:40,020 --> 00:08:42,640
+the eigenvalues of observables,
+
+225
+00:08:42,640 --> 00:08:44,320
+are real numbers.
+
+226
+00:08:44,420 --> 00:08:44,580
+Now,
+
+227
+00:08:44,580 --> 00:08:47,060
+that does not prove that the operators are Hermitian.
+
+228
+00:08:47,120 --> 00:08:47,600
+Not enough.
+
+229
+00:08:47,600 --> 00:08:48,400
+Not enough.
+
+230
+00:08:48,660 --> 00:08:52,860
+The other added thing is that the various eigenvectors
+
+231
+00:08:52,860 --> 00:08:54,260
+with different eigenvalues,
+
+232
+00:08:54,260 --> 00:08:56,360
+physically distinguishable states,
+
+233
+00:08:56,720 --> 00:08:57,800
+are orthogonal.
+
+234
+00:08:58,220 --> 00:08:58,860
+Okay,
+
+235
+00:08:58,860 --> 00:08:59,900
+that's this third postulate.
+
+236
+00:09:00,080 --> 00:09:04,760
+And that tells you that observables are Hermitian operators.
+
+237
+00:09:06,640 --> 00:09:08,420
+It's the Hermitian operators
+
+238
+00:09:11,260 --> 00:09:12,620
+whose eigenvalues are real numbers,
+
+239
+00:09:12,640 --> 00:09:13,660
+whose eigenvalues are always real,
+
+240
+00:09:13,880 --> 00:09:17,460
+and whose eigenvectors are orthogonal.
+
+241
+00:09:17,800 --> 00:09:19,320
+That's necessary and sufficient.
+
+242
+00:09:19,780 --> 00:09:20,380
+Uh,
+
+243
+00:09:20,380 --> 00:09:21,020
+so,
+
+244
+00:09:21,020 --> 00:09:23,260
+this one,
+
+245
+00:09:23,260 --> 00:09:23,860
+as I said,
+
+246
+00:09:23,920 --> 00:09:24,860
+they're not all completely,
+
+247
+00:09:24,860 --> 00:09:25,400
+uh,
+
+248
+00:09:25,400 --> 00:09:26,840
+independent of each other.
+
+249
+00:09:28,380 --> 00:09:28,980
+One,
+
+250
+00:09:28,980 --> 00:09:29,700
+let's,
+
+251
+00:09:29,700 --> 00:09:30,420
+one,
+
+252
+00:09:30,420 --> 00:09:31,380
+two,
+
+253
+00:09:31,380 --> 00:09:32,520
+three,
+
+254
+00:09:32,640 --> 00:09:34,220
+and let's write number four now.
+
+255
+00:09:36,600 --> 00:09:38,080
+I forgot what four is.
+
+256
+00:09:38,680 --> 00:09:39,280
+Oh.
+
+257
+00:09:44,800 --> 00:09:45,440
+Um,
+
+258
+00:09:45,440 --> 00:09:48,080
+yeah,
+
+259
+00:09:48,080 --> 00:09:48,600
+what was four?
+
+260
+00:09:50,460 --> 00:09:51,100
+Yeah.
+
+261
+00:09:53,800 --> 00:09:54,440
+Ah,
+
+262
+00:09:54,440 --> 00:09:55,120
+the probability,
+
+263
+00:09:55,120 --> 00:09:56,660
+the probability principle.
+
+264
+00:09:57,220 --> 00:09:57,860
+Okay.
+
+265
+00:09:58,180 --> 00:09:59,780
+The probability principle,
+
+266
+00:09:59,780 --> 00:10:01,900
+it's also called Born's Rule.
+
+267
+00:10:03,359 --> 00:10:04,180
+Max Born.
+
+268
+00:10:04,800 --> 00:10:05,600
+Born's Rule,
+
+269
+00:10:05,600 --> 00:10:06,720
+let's just call it Born Rule.
+
+270
+00:10:07,780 --> 00:10:08,900
+But it's a rule
+
+271
+00:10:11,699 --> 00:10:12,840
+for probabilities.
+
+272
+00:10:13,100 --> 00:10:13,880
+So far,
+
+273
+00:10:13,880 --> 00:10:15,460
+none of this has much content.
+
+274
+00:10:15,820 --> 00:10:17,200
+The added content,
+
+275
+00:10:17,200 --> 00:10:17,660
+well,
+
+276
+00:10:17,660 --> 00:10:17,940
+no,
+
+277
+00:10:17,940 --> 00:10:18,660
+it has content,
+
+278
+00:10:18,800 --> 00:10:21,300
+but the real bite here is,
+
+279
+00:10:21,300 --> 00:10:22,280
+uh,
+
+280
+00:10:22,800 --> 00:10:24,680
+for the prediction of probabilities
+
+281
+00:10:25,880 --> 00:10:27,680
+for various experiments.
+
+282
+00:10:28,220 --> 00:10:29,940
+And the Born Rule is the
+
+283
+00:10:29,940 --> 00:10:31,660
+rule for how to calculate probabilities.
+
+284
+00:10:33,800 --> 00:10:35,300
+The Born Rule says,
+
+285
+00:10:35,300 --> 00:10:36,700
+if you,
+
+286
+00:10:36,700 --> 00:10:40,860
+if your system has been prepared in state A,
+
+287
+00:10:41,700 --> 00:10:42,740
+all right,
+
+288
+00:10:42,740 --> 00:10:47,900
+system in A,
+
+289
+00:10:48,700 --> 00:10:52,100
+and you measure L,
+
+290
+00:10:57,740 --> 00:10:59,580
+the observable L,
+
+291
+00:10:59,720 --> 00:11:01,740
+now I'm using interchangeably
+
+292
+00:11:02,640 --> 00:11:05,060
+the physical idea of the observable
+
+293
+00:11:05,060 --> 00:11:06,160
+with the operator,
+
+294
+00:11:06,160 --> 00:11:06,680
+which right now is L.
+
+295
+00:11:06,680 --> 00:11:07,360
+It represents it.
+
+296
+00:11:07,360 --> 00:11:09,440
+I'm not going to make a special language
+
+297
+00:11:09,440 --> 00:11:14,100
+where the operator will always be called the operator
+
+298
+00:11:14,100 --> 00:11:16,460
+and the observable with L same,
+
+299
+00:11:16,540 --> 00:11:18,180
+they come in pairs.
+
+300
+00:11:18,720 --> 00:11:19,440
+All right,
+
+301
+00:11:19,440 --> 00:11:20,020
+so if you,
+
+302
+00:11:20,680 --> 00:11:23,140
+if the system has been prepared in state A,
+
+303
+00:11:23,260 --> 00:11:25,160
+and you measure L,
+
+304
+00:11:25,440 --> 00:11:26,360
+you measure L,
+
+305
+00:11:26,560 --> 00:11:29,560
+the outcome is going to be one of the eigenvalues.
+
+306
+00:11:30,020 --> 00:11:31,980
+So the only question you can ask is,
+
+307
+00:11:32,040 --> 00:11:33,060
+what is the probability
+
+308
+00:11:33,760 --> 00:11:35,920
+that you get the answer,
+
+309
+00:11:35,920 --> 00:11:36,840
+lambda?
+
+310
+00:11:38,120 --> 00:11:38,840
+Okay,
+
+311
+00:11:38,840 --> 00:11:40,620
+one of the specific eigenvalues.
+
+312
+00:11:40,900 --> 00:11:42,120
+The answer is,
+
+313
+00:11:43,100 --> 00:11:44,240
+the probability,
+
+314
+00:11:47,579 --> 00:11:51,220
+the probability that you get result lambda,
+
+315
+00:11:52,220 --> 00:11:54,160
+that's the probability that you get
+
+316
+00:11:54,160 --> 00:11:57,220
+out of the various eigenvalues that you get lambda,
+
+317
+00:11:57,440 --> 00:12:02,440
+is equal to the square of the inner product
+
+318
+00:12:02,440 --> 00:12:07,660
+of the state vector that the system was in,
+
+319
+00:12:08,260 --> 00:12:10,870
+with the eigenvector
+
+320
+00:12:10,870 --> 00:12:13,480
+corresponding to normalized eigenvector,
+
+321
+00:12:13,560 --> 00:12:15,160
+all vectors are normalized now,
+
+322
+00:12:16,960 --> 00:12:22,020
+the inner product of A with lambda squared.
+
+323
+00:12:24,940 --> 00:12:26,480
+A with lambda,
+
+324
+00:12:26,480 --> 00:12:27,420
+the inner product,
+
+325
+00:12:27,500 --> 00:12:29,010
+sometimes incidentally the inner
+
+326
+00:12:29,010 --> 00:12:30,520
+product is called the overlap,
+
+327
+00:12:30,920 --> 00:12:31,960
+it's a measure,
+
+328
+00:12:32,440 --> 00:12:35,310
+if we said that
+
+329
+00:12:35,310 --> 00:12:38,180
+orthogonality is complete distinguishability,
+
+330
+00:12:38,320 --> 00:12:41,700
+unique and complete distinguishability,
+
+331
+00:12:42,460 --> 00:12:46,940
+then a lack of orthogonality represents to some extent
+
+332
+00:12:46,940 --> 00:12:49,600
+the inability to make the
+
+333
+00:12:49,600 --> 00:12:52,260
+clear distinction between two states.
+
+334
+00:12:52,920 --> 00:12:53,540
+Yeah,
+
+335
+00:12:53,540 --> 00:12:54,040
+all right,
+
+336
+00:12:54,040 --> 00:12:54,600
+so this is,
+
+337
+00:12:54,620 --> 00:12:55,040
+this is,
+
+338
+00:12:55,040 --> 00:12:55,260
+yeah,
+
+339
+00:12:55,260 --> 00:12:55,700
+question.
+
+340
+00:12:55,880 --> 00:12:56,360
+Well,
+
+341
+00:12:56,360 --> 00:13:00,840
+I'm surprised to see lambda represented as a vector
+
+342
+00:13:00,840 --> 00:13:02,000
+because it's a value.
+
+343
+00:13:02,440 --> 00:13:02,520
+No,
+
+344
+00:13:02,520 --> 00:13:02,620
+no,
+
+345
+00:13:02,620 --> 00:13:04,060
+all right,
+
+346
+00:13:04,060 --> 00:13:05,120
+the notation is,
+
+347
+00:13:06,200 --> 00:13:10,160
+every eigenvalue is associated with an eigenvector.
+
+348
+00:13:13,080 --> 00:13:14,380
+I'll just write E vector.
+
+349
+00:13:15,170 --> 00:13:19,280
+And the notation is that the vector labeled by lambda
+
+350
+00:13:19,280 --> 00:13:23,700
+is the eigenvector associated with the eigenvalue lambda.
+
+351
+00:13:23,820 --> 00:13:24,400
+That's a good point,
+
+352
+00:13:24,400 --> 00:13:24,720
+I mean,
+
+353
+00:13:24,720 --> 00:13:25,280
+you know,
+
+354
+00:13:29,250 --> 00:13:32,420
+the problem with trying to be a purist about this,
+
+355
+00:13:32,440 --> 00:13:33,160
+about notations,
+
+356
+00:13:33,320 --> 00:13:35,680
+is that notations get very complicated.
+
+357
+00:13:36,040 --> 00:13:38,560
+And they get so complicated that they're difficult to read,
+
+358
+00:13:38,800 --> 00:13:40,120
+there are too many indices,
+
+359
+00:13:40,640 --> 00:13:42,360
+there's too many different letters you have to use.
+
+360
+00:13:42,760 --> 00:13:43,200
+So,
+
+361
+00:13:43,200 --> 00:13:44,040
+yeah,
+
+362
+00:13:44,040 --> 00:13:46,080
+sometimes we use a slightly,
+
+363
+00:13:46,320 --> 00:13:47,380
+excuse the word,
+
+364
+00:13:47,380 --> 00:13:48,580
+bastardized notation,
+
+365
+00:13:50,220 --> 00:13:55,040
+where we conflate a symbol for a vector
+
+366
+00:13:55,040 --> 00:13:57,280
+with a symbol in this case for an eigenvalue.
+
+367
+00:13:59,680 --> 00:14:00,200
+Good.
+
+368
+00:14:00,200 --> 00:14:00,360
+Okay,
+
+369
+00:14:00,360 --> 00:14:02,600
+yes,
+
+370
+00:14:02,600 --> 00:14:04,820
+that's the probability principle,
+
+371
+00:14:04,960 --> 00:14:05,880
+or Born's Rule.
+
+372
+00:14:08,420 --> 00:14:10,220
+And let's just look at it for a minute.
+
+373
+00:14:10,540 --> 00:14:11,180
+You might say,
+
+374
+00:14:11,180 --> 00:14:12,260
+why the square?
+
+375
+00:14:12,480 --> 00:14:14,380
+Why the square of the absolute value?
+
+376
+00:14:14,560 --> 00:14:14,660
+Well,
+
+377
+00:14:14,660 --> 00:14:15,320
+in general,
+
+378
+00:14:15,320 --> 00:14:17,840
+these overlaps are neither positive,
+
+379
+00:14:17,900 --> 00:14:19,480
+not even real in general.
+
+380
+00:14:20,560 --> 00:14:23,420
+Overlaps between two vectors are not necessarily real.
+
+381
+00:14:23,560 --> 00:14:23,920
+In fact,
+
+382
+00:14:23,920 --> 00:14:24,400
+in general,
+
+383
+00:14:24,400 --> 00:14:24,820
+they're not.
+
+384
+00:14:25,120 --> 00:14:27,640
+We're talking about a complex vector space,
+
+385
+00:14:27,640 --> 00:14:31,540
+and if the components of the vectors are complex,
+
+386
+00:14:31,760 --> 00:14:32,160
+in general,
+
+387
+00:14:32,160 --> 00:14:33,760
+the inner product will not even be real,
+
+388
+00:14:34,500 --> 00:14:36,600
+let alone positive.
+
+389
+00:14:37,820 --> 00:14:39,140
+On the other hand,
+
+390
+00:14:39,140 --> 00:14:41,080
+the square of the,
+
+391
+00:14:41,180 --> 00:14:43,780
+or the absolute value of the square,
+
+392
+00:14:43,840 --> 00:14:46,080
+the square of the absolute value of the inner product,
+
+393
+00:14:46,780 --> 00:14:47,900
+that is real.
+
+394
+00:14:48,340 --> 00:14:49,400
+It's not only real,
+
+395
+00:14:49,400 --> 00:14:50,260
+it's also positive.
+
+396
+00:14:51,080 --> 00:14:52,640
+So this has a chance
+
+397
+00:14:52,640 --> 00:14:54,200
+to be a candidate for probability,
+
+398
+00:14:54,400 --> 00:14:56,500
+whereas the inner product itself doesn't.
+
+399
+00:14:57,640 --> 00:15:00,220
+The inner product itself is called a probability amplitude.
+
+400
+00:15:00,620 --> 00:15:03,240
+So a probability amplitude is a thing that you square
+
+401
+00:15:03,240 --> 00:15:07,200
+in the sense of absolute value to compute a probability.
+
+402
+00:15:08,580 --> 00:15:09,460
+Needless to say,
+
+403
+00:15:09,460 --> 00:15:13,380
+the justification for these principles,
+
+404
+00:15:13,460 --> 00:15:14,040
+in the end,
+
+405
+00:15:14,040 --> 00:15:14,440
+is experiment.
+
+406
+00:15:15,220 --> 00:15:16,220
+On the other hand,
+
+407
+00:15:16,220 --> 00:15:16,800
+you could ask,
+
+408
+00:15:16,900 --> 00:15:18,310
+how much can I bend
+
+409
+00:15:18,310 --> 00:15:19,720
+them and still make physical sense
+
+410
+00:15:19,720 --> 00:15:20,780
+out of the predictions?
+
+411
+00:15:20,960 --> 00:15:23,160
+The answer is nobody has ever found a way
+
+412
+00:15:23,160 --> 00:15:25,840
+to change the rules of quantum mechanics
+
+413
+00:15:25,840 --> 00:15:26,680
+and still preserve,
+
+414
+00:15:27,640 --> 00:15:28,380
+a reasonable,
+
+415
+00:15:28,380 --> 00:15:30,160
+reasonably logical structure.
+
+416
+00:15:30,680 --> 00:15:33,960
+So you'll eventually get familiar with these principles.
+
+417
+00:15:34,240 --> 00:15:34,360
+Yeah?
+
+418
+00:15:34,700 --> 00:15:37,040
+Which of these principles took
+
+419
+00:15:37,040 --> 00:15:39,380
+you from several possible outcomes
+
+420
+00:15:39,380 --> 00:15:40,920
+to one actual outcome?
+
+421
+00:15:41,360 --> 00:15:41,860
+Well,
+
+422
+00:15:41,860 --> 00:15:42,160
+okay.
+
+423
+00:15:42,700 --> 00:15:47,380
+If A is an eigenvector of L,
+
+424
+00:15:49,020 --> 00:15:50,000
+if it is,
+
+425
+00:15:50,000 --> 00:15:53,440
+if the starting state of the system happens to be
+
+426
+00:15:53,440 --> 00:15:55,480
+an eigenvector of L,
+
+427
+00:15:55,680 --> 00:15:57,620
+then it will only have an infinite number
+
+428
+00:15:57,640 --> 00:15:57,960
+of eigenvectors.
+
+429
+00:15:57,960 --> 00:15:58,690
+So it's not going to
+
+430
+00:15:58,690 --> 00:15:59,420
+be a product of one eigenvector.
+
+431
+00:16:00,020 --> 00:16:00,600
+Right.
+
+432
+00:16:00,740 --> 00:16:01,420
+So that's,
+
+433
+00:16:01,420 --> 00:16:02,020
+again,
+
+434
+00:16:02,020 --> 00:16:03,140
+these are good questions.
+
+435
+00:16:03,400 --> 00:16:08,220
+If you say L ket lambda equals lambda ket lambda,
+
+436
+00:16:08,340 --> 00:16:09,740
+it kind of shows you.
+
+437
+00:16:09,760 --> 00:16:10,040
+Yeah.
+
+438
+00:16:10,040 --> 00:16:10,560
+Yeah.
+
+439
+00:16:11,740 --> 00:16:12,480
+That's right.
+
+440
+00:16:12,680 --> 00:16:13,340
+Excuse me.
+
+441
+00:16:13,500 --> 00:16:13,940
+Is it,
+
+442
+00:16:13,940 --> 00:16:17,460
+what if lambda is an eigenvalue
+
+443
+00:16:17,460 --> 00:16:20,620
+for multiple eigenvectors all at once?
+
+444
+00:16:20,960 --> 00:16:21,440
+Yeah.
+
+445
+00:16:21,500 --> 00:16:21,860
+Still,
+
+446
+00:16:21,860 --> 00:16:23,820
+the rule is the same.
+
+447
+00:16:26,240 --> 00:16:27,620
+But what you have to do,
+
+448
+00:16:27,620 --> 00:16:27,700
+you have to do is,
+
+449
+00:16:28,000 --> 00:16:28,440
+Right.
+
+450
+00:16:29,180 --> 00:16:29,620
+Okay.
+
+451
+00:16:29,740 --> 00:16:30,940
+I'll give you two answers.
+
+452
+00:16:31,160 --> 00:16:32,320
+The first answer is,
+
+453
+00:16:33,540 --> 00:16:35,380
+don't worry about the case where
+
+454
+00:16:35,380 --> 00:16:37,220
+the eigenvalues may be the same,
+
+455
+00:16:37,320 --> 00:16:38,400
+because it's very special.
+
+456
+00:16:38,580 --> 00:16:39,580
+But that's not good enough.
+
+457
+00:16:39,680 --> 00:16:39,940
+Let me,
+
+458
+00:16:39,940 --> 00:16:40,300
+let me,
+
+459
+00:16:40,300 --> 00:16:41,900
+let me say what the right answer is.
+
+460
+00:16:42,220 --> 00:16:44,980
+The right answer is if you want the probability
+
+461
+00:16:45,520 --> 00:16:46,880
+for a given value of lambda,
+
+462
+00:16:46,980 --> 00:16:48,850
+and there's more than one eigenvector
+
+463
+00:16:48,850 --> 00:16:50,720
+with the same value of lambda,
+
+464
+00:16:50,940 --> 00:16:52,180
+then you add them.
+
+465
+00:16:52,380 --> 00:16:54,860
+You simply add the sums of the squares of the,
+
+466
+00:16:55,779 --> 00:16:57,160
+just probability addition.
+
+467
+00:16:59,200 --> 00:17:02,000
+So the questions tonight are really good.
+
+468
+00:17:03,760 --> 00:17:04,160
+Yeah.
+
+469
+00:17:04,319 --> 00:17:06,239
+And what about the case where
+
+470
+00:17:06,239 --> 00:17:08,159
+A has overlap with several different eigenvectors?
+
+471
+00:17:08,780 --> 00:17:09,099
+Yeah,
+
+472
+00:17:09,099 --> 00:17:09,220
+yeah.
+
+473
+00:17:09,319 --> 00:17:09,660
+Then you,
+
+474
+00:17:09,660 --> 00:17:10,119
+then you,
+
+475
+00:17:10,119 --> 00:17:12,579
+then you take the sums of the squares of them.
+
+476
+00:17:14,359 --> 00:17:15,720
+You take the sums of the squares.
+
+477
+00:17:15,819 --> 00:17:17,619
+If there are several different eigenvectors,
+
+478
+00:17:17,680 --> 00:17:18,819
+all with the same eigenvalue,
+
+479
+00:17:19,280 --> 00:17:20,000
+first of all,
+
+480
+00:17:20,000 --> 00:17:21,560
+you make them perpendicular to each other.
+
+481
+00:17:21,640 --> 00:17:23,400
+You can always make them perpendicular to each other.
+
+482
+00:17:23,579 --> 00:17:24,339
+Different eigenvalues.
+
+483
+00:17:24,579 --> 00:17:24,880
+No,
+
+484
+00:17:24,880 --> 00:17:25,000
+no.
+
+485
+00:17:25,000 --> 00:17:26,780
+Even if they were the same eigenvalue,
+
+486
+00:17:28,700 --> 00:17:29,300
+there's a,
+
+487
+00:17:29,300 --> 00:17:29,860
+the theorem,
+
+488
+00:17:29,860 --> 00:17:30,060
+okay,
+
+489
+00:17:30,060 --> 00:17:30,980
+let's go back to the theorem.
+
+490
+00:17:31,120 --> 00:17:33,830
+The theorem says that the
+
+491
+00:17:33,830 --> 00:17:36,540
+eigenvectors with different eigenvalues are orthogonal.
+
+492
+00:17:37,180 --> 00:17:40,040
+It doesn't tell you anything about
+
+493
+00:17:40,040 --> 00:17:42,900
+the eigenvectors for the same eigenvalue.
+
+494
+00:17:43,220 --> 00:17:43,700
+All right,
+
+495
+00:17:43,700 --> 00:17:45,310
+so supposing you have two
+
+496
+00:17:45,310 --> 00:17:46,920
+eigenvectors with the same eigenvalue,
+
+497
+00:17:47,840 --> 00:17:50,230
+then it's also true that any
+
+498
+00:17:50,230 --> 00:17:52,620
+linear combination of those two eigenvectors
+
+499
+00:17:52,620 --> 00:17:55,120
+is also an eigenvector with the same eigenvalue.
+
+500
+00:17:55,320 --> 00:17:55,820
+For example,
+
+501
+00:17:55,820 --> 00:17:58,780
+let's suppose lambda,
+
+502
+00:17:58,780 --> 00:18:01,800
+lambda one and lambda two,
+
+503
+00:18:01,860 --> 00:18:04,520
+now these are not two different values of lambda.
+
+504
+00:18:04,920 --> 00:18:06,540
+These are the same value
+
+505
+00:18:06,540 --> 00:18:08,160
+of lambda but two different eigenvectors.
+
+506
+00:18:08,260 --> 00:18:09,540
+Maybe we should write it like this.
+
+507
+00:18:10,300 --> 00:18:12,060
+Lambda one and lambda two.
+
+508
+00:18:12,140 --> 00:18:13,580
+Two different eigenvectors,
+
+509
+00:18:13,580 --> 00:18:16,480
+both exhibiting the same eigenvalue.
+
+510
+00:18:17,540 --> 00:18:19,260
+Then you can take any,
+
+511
+00:18:19,260 --> 00:18:21,640
+what that means is that
+
+512
+00:18:21,640 --> 00:18:26,200
+L on lambda one equals lambda times lambda one.
+
+513
+00:18:28,200 --> 00:18:32,580
+L on lambda two equals lambda,
+
+514
+00:18:32,580 --> 00:18:34,160
+lambda two.
+
+515
+00:18:35,340 --> 00:18:38,320
+Multiply this by any complex number alpha.
+
+516
+00:18:41,780 --> 00:18:44,480
+This one by any complex number beta.
+
+517
+00:18:45,220 --> 00:18:47,180
+And add the two equations.
+
+518
+00:18:47,560 --> 00:18:51,580
+What you find is that L on the linear combination
+
+519
+00:18:51,640 --> 00:18:57,100
+the linear sum alpha lambda one plus beta lambda two
+
+520
+00:18:59,379 --> 00:19:00,500
+is equal,
+
+521
+00:19:00,500 --> 00:19:03,280
+on this side now you have lambda,
+
+522
+00:19:03,460 --> 00:19:06,320
+times the same thing as in the bracket here.
+
+523
+00:19:06,760 --> 00:19:07,980
+In other words,
+
+524
+00:19:07,980 --> 00:19:10,200
+if you have two eigenvectors with the same eigenvalue,
+
+525
+00:19:10,360 --> 00:19:12,260
+you can add them with arbitrary coefficients,
+
+526
+00:19:12,740 --> 00:19:14,800
+and they remain eigenvectors.
+
+527
+00:19:15,340 --> 00:19:17,380
+Now given two distinct vectors,
+
+528
+00:19:18,639 --> 00:19:20,340
+given two distinct vectors,
+
+529
+00:19:20,340 --> 00:19:23,560
+and all the possible linear combinations of them,
+
+530
+00:19:23,680 --> 00:19:26,620
+you can always find perpendicular combinations.
+
+531
+00:19:26,940 --> 00:19:27,520
+You got this one,
+
+532
+00:19:27,520 --> 00:19:28,160
+you got this one.
+
+533
+00:19:28,420 --> 00:19:30,780
+Now we can always add them or subtract them
+
+534
+00:19:30,780 --> 00:19:32,740
+with coefficients to make them perpendicular.
+
+535
+00:19:33,560 --> 00:19:35,520
+So the rest of the theorem is
+
+536
+00:19:36,819 --> 00:19:39,980
+that if the two eigenvalues are the same,
+
+537
+00:19:40,120 --> 00:19:42,900
+you have the freedom to
+
+538
+00:19:42,900 --> 00:19:45,680
+choose two eigenvectors which are perpendicular.
+
+539
+00:19:46,600 --> 00:19:47,720
+Which are orthogonal.
+
+540
+00:19:48,420 --> 00:19:49,060
+Alright,
+
+541
+00:19:49,060 --> 00:19:50,000
+and the end of the day,
+
+542
+00:19:50,340 --> 00:19:51,880
+to summarize the theorem,
+
+543
+00:19:52,120 --> 00:19:56,120
+is that given a Hermitian operator,
+
+544
+00:19:56,740 --> 00:19:59,260
+its eigenvectors can be chosen
+
+545
+00:19:59,260 --> 00:20:02,820
+so that they form a basis.
+
+546
+00:20:03,080 --> 00:20:04,860
+So that they're orthonormal,
+
+547
+00:20:05,040 --> 00:20:06,880
+perpendicular to each other,
+
+548
+00:20:06,880 --> 00:20:07,480
+and normalized.
+
+549
+00:20:08,540 --> 00:20:09,140
+Okay,
+
+550
+00:20:09,140 --> 00:20:09,920
+so where were we?
+
+551
+00:20:11,500 --> 00:20:12,980
+That was an interruption,
+
+552
+00:20:13,140 --> 00:20:14,960
+but I don't remember where I was.
+
+553
+00:20:15,060 --> 00:20:16,720
+That's the problem with interruptions.
+
+554
+00:20:19,060 --> 00:20:20,580
+We just finished Born's Rule.
+
+555
+00:20:20,920 --> 00:20:22,580
+You were just talking about Born's Rule.
+
+556
+00:20:23,200 --> 00:20:23,680
+Yes,
+
+557
+00:20:23,680 --> 00:20:24,800
+I was talking about Born's Rule.
+
+558
+00:20:25,020 --> 00:20:25,440
+Right,
+
+559
+00:20:25,440 --> 00:20:25,640
+oh,
+
+560
+00:20:25,640 --> 00:20:25,920
+good,
+
+561
+00:20:25,920 --> 00:20:26,300
+okay.
+
+562
+00:20:26,460 --> 00:20:27,180
+So now,
+
+563
+00:20:27,180 --> 00:20:29,660
+if you happen to have several eigenvectors,
+
+564
+00:20:29,780 --> 00:20:31,660
+let's say lambda one and lambda two,
+
+565
+00:20:32,280 --> 00:20:33,720
+both with the same eigenvalue,
+
+566
+00:20:34,300 --> 00:20:36,400
+then you construct the overlap
+
+567
+00:20:36,400 --> 00:20:39,320
+of the state vector with lambda one,
+
+568
+00:20:39,480 --> 00:20:41,720
+you construct the overlap
+
+569
+00:20:42,720 --> 00:20:45,200
+of the state vector with lambda two,
+
+570
+00:20:45,200 --> 00:20:47,440
+you square this one,
+
+571
+00:20:47,560 --> 00:20:48,920
+you square this one,
+
+572
+00:20:49,060 --> 00:20:50,220
+and you add them.
+
+573
+00:20:50,380 --> 00:20:51,100
+In other words,
+
+574
+00:20:51,180 --> 00:20:53,380
+you simply add the probabilities
+
+575
+00:20:55,180 --> 00:20:57,380
+for the two possible ways
+
+576
+00:20:57,380 --> 00:20:59,720
+that you could get the same lambda.
+
+577
+00:21:00,420 --> 00:21:01,640
+Just a sum of probabilities.
+
+578
+00:21:01,800 --> 00:21:02,120
+Thank you,
+
+579
+00:21:02,120 --> 00:21:02,400
+Sanjay.
+
+580
+00:21:03,600 --> 00:21:04,620
+You're already too late.
+
+581
+00:21:04,700 --> 00:21:05,660
+I already got Oreos.
+
+582
+00:21:08,480 --> 00:21:10,500
+But my wife would say,
+
+583
+00:21:11,600 --> 00:21:14,420
+this is probably healthier than Oreos.
+
+584
+00:21:14,420 --> 00:21:14,880
+Yeah,
+
+585
+00:21:14,880 --> 00:21:15,240
+it is.
+
+586
+00:21:20,760 --> 00:21:21,800
+Go ahead.
+
+587
+00:21:22,080 --> 00:21:22,480
+What?
+
+588
+00:21:24,120 --> 00:21:25,360
+You're going to eat the Oreos?
+
+589
+00:21:25,560 --> 00:21:26,580
+You're going to hurt their feelings.
+
+590
+00:21:30,580 --> 00:21:31,620
+Excuse me.
+
+591
+00:21:39,560 --> 00:21:40,080
+Okay.
+
+592
+00:21:40,800 --> 00:21:41,800
+I have a question.
+
+593
+00:21:42,020 --> 00:21:42,280
+Yeah.
+
+594
+00:21:43,520 --> 00:21:44,160
+Go ahead.
+
+595
+00:21:45,100 --> 00:21:46,120
+Loud and clear.
+
+596
+00:21:46,740 --> 00:21:49,580
+Could we say also that
+
+597
+00:21:49,580 --> 00:21:51,480
+the reason why those things are squared,
+
+598
+00:21:52,020 --> 00:21:54,620
+regardless of whether they're complex or not,
+
+599
+00:21:54,820 --> 00:21:57,400
+is so that the total probability adds to one,
+
+600
+00:21:57,400 --> 00:21:57,700
+right?
+
+601
+00:21:57,980 --> 00:21:58,360
+Yes.
+
+602
+00:21:58,900 --> 00:21:59,620
+Mm-hmm.
+
+603
+00:22:01,220 --> 00:22:01,740
+Right.
+
+604
+00:22:02,260 --> 00:22:04,320
+We know it's the sums of the squares
+
+605
+00:22:04,320 --> 00:22:06,040
+of these things which add up to one
+
+606
+00:22:06,040 --> 00:22:07,780
+for normalized states,
+
+607
+00:22:08,040 --> 00:22:09,120
+for normalized vectors.
+
+608
+00:22:09,320 --> 00:22:09,840
+That's right.
+
+609
+00:22:10,740 --> 00:22:14,400
+I'm not sure which one implies the sum,
+
+610
+00:22:14,400 --> 00:22:14,700
+but I'm not sure which one implies which,
+
+611
+00:22:14,960 --> 00:22:17,440
+but clearly they fit together very nicely.
+
+612
+00:22:17,640 --> 00:22:18,240
+Good.
+
+613
+00:22:19,200 --> 00:22:19,800
+Okay.
+
+614
+00:22:25,600 --> 00:22:28,540
+Is it possible to get an unambiguous result
+
+615
+00:22:29,420 --> 00:22:31,720
+from an unprepared experiment?
+
+616
+00:22:33,440 --> 00:22:36,340
+I'm not sure what an unprepared experiment means,
+
+617
+00:22:36,520 --> 00:22:39,680
+but I think what you're asking is,
+
+618
+00:22:40,480 --> 00:22:42,400
+supposing somebody gives you a spin,
+
+619
+00:22:42,400 --> 00:22:44,560
+and they don't tell you anything
+
+620
+00:22:44,560 --> 00:22:46,060
+about how they prepared it.
+
+621
+00:22:46,100 --> 00:22:46,600
+They just said,
+
+622
+00:22:46,720 --> 00:22:47,940
+here it is.
+
+623
+00:22:48,060 --> 00:22:49,040
+I give it to you.
+
+624
+00:22:49,060 --> 00:22:49,780
+I tell you nothing.
+
+625
+00:22:51,680 --> 00:22:53,400
+Then it is not possible
+
+626
+00:22:53,400 --> 00:22:55,560
+to find an experiment
+
+627
+00:22:55,560 --> 00:22:57,120
+which has an unambiguous answer.
+
+628
+00:22:58,000 --> 00:22:58,640
+All right.
+
+629
+00:23:05,540 --> 00:23:06,580
+Another good point.
+
+630
+00:23:08,720 --> 00:23:09,200
+Okay.
+
+631
+00:23:09,560 --> 00:23:10,040
+Now,
+
+632
+00:23:11,280 --> 00:23:12,380
+now we need to,
+
+633
+00:23:12,400 --> 00:23:13,300
+we need to come
+
+634
+00:23:15,100 --> 00:23:17,140
+to a new idea and a new question.
+
+635
+00:23:18,600 --> 00:23:20,200
+In classical mechanics,
+
+636
+00:23:21,360 --> 00:23:22,320
+all of this,
+
+637
+00:23:22,320 --> 00:23:23,680
+this whole story here
+
+638
+00:23:24,340 --> 00:23:25,460
+was summarized
+
+639
+00:23:26,280 --> 00:23:28,740
+when I showed you a heads and a tails,
+
+640
+00:23:28,840 --> 00:23:30,520
+and I said those are the two possible states
+
+641
+00:23:30,520 --> 00:23:31,540
+of a simple system.
+
+642
+00:23:32,160 --> 00:23:32,960
+I didn't,
+
+643
+00:23:32,960 --> 00:23:34,440
+we didn't talk about measuring it.
+
+644
+00:23:34,480 --> 00:23:35,080
+You know,
+
+645
+00:23:35,100 --> 00:23:36,300
+it was all sort of obvious,
+
+646
+00:23:36,360 --> 00:23:37,300
+and we didn't have to,
+
+647
+00:23:39,300 --> 00:23:42,040
+because we know that measuring is,
+
+648
+00:23:42,400 --> 00:23:43,960
+it doesn't do very much to a system.
+
+649
+00:23:44,040 --> 00:23:44,480
+You measure,
+
+650
+00:23:44,600 --> 00:23:44,880
+but you,
+
+651
+00:23:45,020 --> 00:23:47,080
+that doesn't change the system in any way.
+
+652
+00:23:47,720 --> 00:23:50,780
+Here we come to a much more complicated story,
+
+653
+00:23:50,940 --> 00:23:52,480
+but the story up till now
+
+654
+00:23:52,480 --> 00:23:54,960
+is really the quantum mechanical analog
+
+655
+00:23:54,960 --> 00:23:56,180
+of just specifying
+
+656
+00:23:56,180 --> 00:23:57,760
+that you have a collection of states.
+
+657
+00:23:58,800 --> 00:24:00,640
+The next question we asked
+
+658
+00:24:00,640 --> 00:24:03,380
+was how do states change with time?
+
+659
+00:24:04,720 --> 00:24:07,220
+That we called in the classical case
+
+660
+00:24:07,220 --> 00:24:09,360
+dynamical laws of motion,
+
+661
+00:24:09,560 --> 00:24:12,140
+or dynamical laws of nature
+
+662
+00:24:12,400 --> 00:24:12,640
+or whatever,
+
+663
+00:24:12,840 --> 00:24:14,860
+the rule for how a state changes.
+
+664
+00:24:16,160 --> 00:24:16,960
+If you remember,
+
+665
+00:24:17,080 --> 00:24:17,780
+there were some examples.
+
+666
+00:24:18,720 --> 00:24:19,600
+The coin,
+
+667
+00:24:19,780 --> 00:24:21,480
+a simple example would be,
+
+668
+00:24:21,560 --> 00:24:22,720
+put the coin down,
+
+669
+00:24:22,880 --> 00:24:24,420
+and the rule is nothing happens.
+
+670
+00:24:24,520 --> 00:24:25,580
+It just stays the same way.
+
+671
+00:24:25,620 --> 00:24:25,760
+Well,
+
+672
+00:24:25,760 --> 00:24:26,580
+that's pretty trivial.
+
+673
+00:24:27,520 --> 00:24:29,080
+Another possible law is
+
+674
+00:24:29,080 --> 00:24:31,120
+in each interval of time,
+
+675
+00:24:31,300 --> 00:24:35,580
+and we have a stroboscopic time
+
+676
+00:24:35,580 --> 00:24:36,440
+that we can imagine,
+
+677
+00:24:36,620 --> 00:24:38,160
+and in each interval of time,
+
+678
+00:24:38,320 --> 00:24:38,980
+it flips.
+
+679
+00:24:39,580 --> 00:24:40,060
+Heads,
+
+680
+00:24:40,060 --> 00:24:40,300
+tails,
+
+681
+00:24:40,300 --> 00:24:40,620
+heads,
+
+682
+00:24:40,620 --> 00:24:40,980
+tails,
+
+683
+00:24:40,980 --> 00:24:41,180
+heads,
+
+684
+00:24:41,180 --> 00:24:41,500
+tails.
+
+685
+00:24:41,500 --> 00:24:43,260
+That's a perfectly good law.
+
+686
+00:24:45,280 --> 00:24:47,360
+We talked about the concept,
+
+687
+00:24:47,540 --> 00:24:49,940
+the same concept in the context of a die
+
+688
+00:24:49,940 --> 00:24:50,880
+with six faces,
+
+689
+00:24:51,000 --> 00:24:53,120
+or any number of faces,
+
+690
+00:24:53,220 --> 00:24:55,020
+including continuous infinity.
+
+691
+00:24:55,420 --> 00:24:57,000
+Same basic idea.
+
+692
+00:24:57,300 --> 00:24:59,060
+The laws of physics are updating
+
+693
+00:24:59,060 --> 00:25:00,900
+from instant to instant
+
+694
+00:25:01,360 --> 00:25:02,420
+of a configuration.
+
+695
+00:25:02,800 --> 00:25:04,700
+And they tell you how the configuration changes.
+
+696
+00:25:05,080 --> 00:25:06,540
+And if you have good laws
+
+697
+00:25:06,540 --> 00:25:07,960
+in classical physics,
+
+698
+00:25:08,060 --> 00:25:08,920
+they're deterministic.
+
+699
+00:25:09,480 --> 00:25:11,340
+They tell you how the state changes.
+
+700
+00:25:11,500 --> 00:25:13,320
+But also another rule,
+
+701
+00:25:13,480 --> 00:25:15,520
+and the other rule we called reversibility.
+
+702
+00:25:17,060 --> 00:25:20,260
+Reversibility was basically just the idea
+
+703
+00:25:20,260 --> 00:25:22,700
+that states don't run into each other.
+
+704
+00:25:22,760 --> 00:25:24,660
+That states which are distinguishable,
+
+705
+00:25:24,720 --> 00:25:26,120
+namely different,
+
+706
+00:25:26,380 --> 00:25:28,720
+heads and tails are distinguishable,
+
+707
+00:25:29,500 --> 00:25:32,380
+are two states which are different,
+
+708
+00:25:32,600 --> 00:25:35,340
+will evolve mathematically
+
+709
+00:25:35,340 --> 00:25:37,700
+and stay different.
+
+710
+00:25:38,420 --> 00:25:39,300
+All right?
+
+711
+00:25:39,320 --> 00:25:41,480
+That was the idea of reversibility.
+
+712
+00:25:42,560 --> 00:25:44,300
+And what it comes down to
+
+713
+00:25:44,300 --> 00:25:46,020
+is exactly that,
+
+714
+00:25:46,480 --> 00:25:48,420
+that if you know the state at any instant,
+
+715
+00:25:48,540 --> 00:25:50,260
+you not only will know what comes next,
+
+716
+00:25:50,480 --> 00:25:52,420
+but you will also know what came before,
+
+717
+00:25:52,700 --> 00:25:54,600
+because there's no chance
+
+718
+00:25:54,600 --> 00:25:56,000
+that states run together,
+
+719
+00:25:58,020 --> 00:25:59,640
+and two different states
+
+720
+00:25:59,640 --> 00:26:00,880
+giving you the same outcome,
+
+721
+00:26:01,960 --> 00:26:03,320
+then you wouldn't be able to tell
+
+722
+00:26:03,320 --> 00:26:04,020
+where you came from.
+
+723
+00:26:04,800 --> 00:26:06,720
+So reversibility is the idea.
+
+724
+00:26:06,840 --> 00:26:08,820
+We also called it information conservation.
+
+725
+00:26:09,660 --> 00:26:11,460
+And I suspect I referred to it
+
+726
+00:26:11,480 --> 00:26:13,060
+as the minus first law.
+
+727
+00:26:13,860 --> 00:26:16,780
+Minus first because it comes before everything else.
+
+728
+00:26:17,980 --> 00:26:21,080
+Quantum mechanics also has a rule of
+
+729
+00:26:21,080 --> 00:26:23,760
+both reversibility and information conservation.
+
+730
+00:26:24,640 --> 00:26:26,660
+You can call it the minus first law.
+
+731
+00:26:28,700 --> 00:26:30,740
+But it comes down to the same thing.
+
+732
+00:26:31,700 --> 00:26:33,680
+States which are distinguishable,
+
+733
+00:26:33,740 --> 00:26:34,940
+in the sense that I said,
+
+734
+00:26:35,000 --> 00:26:36,340
+that there exists an experiment
+
+735
+00:26:36,340 --> 00:26:37,900
+that uniquely distinguishes them,
+
+736
+00:26:38,020 --> 00:26:38,720
+stay.
+
+737
+00:26:42,420 --> 00:26:42,900
+Distinguishable.
+
+738
+00:26:43,960 --> 00:26:44,440
+Alright,
+
+739
+00:26:44,440 --> 00:26:45,700
+so now we want to talk about
+
+740
+00:26:45,700 --> 00:26:48,440
+how states evolve with time.
+
+741
+00:26:50,840 --> 00:26:51,960
+We're going to come back
+
+742
+00:26:53,500 --> 00:26:56,060
+and discuss this in the context of the spin.
+
+743
+00:26:56,220 --> 00:26:58,140
+It's the simplest system of quantum mechanics,
+
+744
+00:26:58,200 --> 00:26:59,090
+and it's a good idea to
+
+745
+00:26:59,090 --> 00:26:59,980
+get it all down for that.
+
+746
+00:27:00,140 --> 00:27:02,320
+But let's talk about it more generally.
+
+747
+00:27:03,900 --> 00:27:04,380
+Okay.
+
+748
+00:27:05,220 --> 00:27:06,280
+Here's the postulate.
+
+749
+00:27:07,379 --> 00:27:08,640
+The postulate is
+
+750
+00:27:08,640 --> 00:27:10,860
+that if you have a system
+
+751
+00:27:10,860 --> 00:27:11,980
+at time,
+
+752
+00:27:11,980 --> 00:27:13,480
+at some specific time,
+
+753
+00:27:13,660 --> 00:27:15,480
+let's call it a time zero.
+
+754
+00:27:16,300 --> 00:27:18,280
+And I'm going to start changing
+
+755
+00:27:18,280 --> 00:27:19,860
+my notation for states.
+
+756
+00:27:20,000 --> 00:27:21,480
+Instead of calling them A and B,
+
+757
+00:27:21,780 --> 00:27:24,700
+I'm going to start using a notation
+
+758
+00:27:24,700 --> 00:27:27,300
+which is more or less a standard notation
+
+759
+00:27:27,300 --> 00:27:28,280
+in quantum mechanics.
+
+760
+00:27:28,880 --> 00:27:30,180
+Call them psi.
+
+761
+00:27:34,000 --> 00:27:35,360
+Psi is a Greek letter.
+
+762
+00:27:36,140 --> 00:27:38,460
+And psi is a commonly used letter
+
+763
+00:27:38,460 --> 00:27:40,020
+to represent the state of a system.
+
+764
+00:27:40,020 --> 00:27:42,020
+Now the states of systems
+
+765
+00:27:42,020 --> 00:27:44,200
+do change with time.
+
+766
+00:27:44,420 --> 00:27:46,000
+So you have to think of these,
+
+767
+00:27:46,140 --> 00:27:46,880
+these vectors,
+
+768
+00:27:47,180 --> 00:27:49,060
+as being functions of time.
+
+769
+00:27:49,180 --> 00:27:49,620
+They evolve.
+
+770
+00:27:50,380 --> 00:27:52,340
+So let's put that in here
+
+771
+00:27:52,340 --> 00:27:53,380
+in the following way.
+
+772
+00:27:53,540 --> 00:27:55,020
+Psi of t,
+
+773
+00:27:55,920 --> 00:27:57,080
+this simply represents
+
+774
+00:27:57,080 --> 00:28:00,060
+a state which changes with time.
+
+775
+00:28:00,900 --> 00:28:01,800
+Which state?
+
+776
+00:28:01,940 --> 00:28:02,720
+Could be any state.
+
+777
+00:28:03,800 --> 00:28:06,040
+It's not the same after a certain time
+
+778
+00:28:06,040 --> 00:28:07,120
+as it was to begin with,
+
+779
+00:28:07,260 --> 00:28:09,560
+but we're following one specific state
+
+780
+00:28:09,560 --> 00:28:11,000
+of a system that's been prepared
+
+781
+00:28:11,450 --> 00:28:13,020
+and then allowed to evolve
+
+782
+00:28:13,310 --> 00:28:15,880
+by whatever means things evolve.
+
+783
+00:28:16,640 --> 00:28:17,380
+Alright,
+
+784
+00:28:17,380 --> 00:28:19,820
+the postulate is
+
+785
+00:28:20,560 --> 00:28:21,580
+that psi of t
+
+786
+00:28:22,540 --> 00:28:24,020
+can be obtained
+
+787
+00:28:25,520 --> 00:28:28,040
+from psi of zero,
+
+788
+00:28:29,480 --> 00:28:31,160
+this means time zero,
+
+789
+00:28:32,230 --> 00:28:35,240
+by an operation on psi of zero.
+
+790
+00:28:35,420 --> 00:28:36,420
+A unique,
+
+791
+00:28:36,420 --> 00:28:37,760
+definite operation
+
+792
+00:28:37,760 --> 00:28:40,960
+which is governed by the laws,
+
+793
+00:28:41,100 --> 00:28:42,720
+by the quantum mechanical laws
+
+794
+00:28:42,720 --> 00:28:43,740
+for that system.
+
+795
+00:28:45,400 --> 00:28:47,600
+So we have to do something to the vector.
+
+796
+00:28:48,200 --> 00:28:50,100
+It doesn't stay the same.
+
+797
+00:28:50,360 --> 00:28:53,100
+So let's represent what we do
+
+798
+00:28:53,680 --> 00:28:58,880
+by the operation of some kind of operator.
+
+799
+00:29:00,180 --> 00:29:01,380
+Now incidentally,
+
+800
+00:29:01,380 --> 00:29:04,180
+we didn't have to start with time zero.
+
+801
+00:29:04,300 --> 00:29:05,560
+We could have started with time
+
+802
+00:29:05,560 --> 00:29:06,900
+something else.
+
+803
+00:29:08,959 --> 00:29:09,620
+So,
+
+804
+00:29:09,620 --> 00:29:11,420
+we can say that
+
+805
+00:29:11,420 --> 00:29:11,440
+psi of t
+
+806
+00:29:11,440 --> 00:29:13,680
+is the time of evolution
+
+807
+00:29:13,680 --> 00:29:15,320
+from the initial state
+
+808
+00:29:15,320 --> 00:29:17,020
+to the final state.
+
+809
+00:29:17,570 --> 00:29:18,820
+Not necessarily final,
+
+810
+00:29:18,920 --> 00:29:20,360
+but the state at some time.
+
+811
+00:29:21,700 --> 00:29:23,260
+The basic postulate,
+
+812
+00:29:23,320 --> 00:29:24,480
+two basic postulates.
+
+813
+00:29:24,640 --> 00:29:27,780
+The first is that U is a linear operator.
+
+814
+00:29:28,120 --> 00:29:29,940
+That U is a linear operator
+
+815
+00:29:29,940 --> 00:29:31,740
+and the same U
+
+816
+00:29:32,679 --> 00:29:33,980
+for any state.
+
+817
+00:29:34,180 --> 00:29:35,820
+Whatever the initial state is,
+
+818
+00:29:36,740 --> 00:29:38,080
+you put that here
+
+819
+00:29:38,080 --> 00:29:40,360
+and you hit it with the same U,
+
+820
+00:29:40,580 --> 00:29:41,640
+the same operator.
+
+821
+00:29:41,840 --> 00:29:42,220
+In other words,
+
+822
+00:29:42,220 --> 00:29:42,960
+there is a,
+
+823
+00:29:43,120 --> 00:29:45,240
+this is called the time development operator.
+
+824
+00:29:45,980 --> 00:29:47,320
+It's a linear operator
+
+825
+00:29:49,740 --> 00:29:51,820
+and it evolves the state
+
+826
+00:29:51,820 --> 00:29:53,640
+from one instant to another.
+
+827
+00:29:54,560 --> 00:29:56,040
+You could try to ask
+
+828
+00:29:56,040 --> 00:29:57,900
+what would happen if you made a more
+
+829
+00:29:59,460 --> 00:30:00,580
+general hypothesis.
+
+830
+00:30:01,240 --> 00:30:02,180
+For example,
+
+831
+00:30:02,180 --> 00:30:03,320
+you might have the hypothesis
+
+832
+00:30:03,320 --> 00:30:05,420
+that U depends on the initial state.
+
+833
+00:30:05,420 --> 00:30:07,760
+Or you might have the hypothesis
+
+834
+00:30:07,760 --> 00:30:09,080
+that U is an operation
+
+835
+00:30:09,080 --> 00:30:10,520
+but not a linear operator,
+
+836
+00:30:10,880 --> 00:30:12,280
+some other kind of operation.
+
+837
+00:30:12,760 --> 00:30:13,920
+You can try it.
+
+838
+00:30:14,000 --> 00:30:16,100
+You'll very shortly run into big troubles
+
+839
+00:30:16,100 --> 00:30:17,380
+with all kinds of things.
+
+840
+00:30:17,860 --> 00:30:18,880
+It's been tried,
+
+841
+00:30:18,880 --> 00:30:19,700
+I guarantee you.
+
+842
+00:30:19,780 --> 00:30:21,340
+It's been tried and repeatedly,
+
+843
+00:30:21,440 --> 00:30:22,480
+every so often,
+
+844
+00:30:22,600 --> 00:30:25,980
+some physicist will try to invent something
+
+845
+00:30:25,980 --> 00:30:27,760
+and then some other person will come along
+
+846
+00:30:27,760 --> 00:30:28,180
+and say,
+
+847
+00:30:28,180 --> 00:30:28,440
+look,
+
+848
+00:30:28,560 --> 00:30:31,720
+that has troubles with locality
+
+849
+00:30:31,720 --> 00:30:33,560
+or it has troubles with causality
+
+850
+00:30:33,560 --> 00:30:35,400
+or it has troubles with probability analysis.
+
+851
+00:30:35,420 --> 00:30:35,940
+It's a very complex interpretation.
+
+852
+00:30:37,120 --> 00:30:38,920
+And you're free to try.
+
+853
+00:30:39,120 --> 00:30:40,220
+I've given up trying.
+
+854
+00:30:41,500 --> 00:30:43,180
+I actually never tried.
+
+855
+00:30:48,180 --> 00:30:48,480
+Right,
+
+856
+00:30:48,480 --> 00:30:48,820
+okay.
+
+857
+00:30:49,000 --> 00:30:50,220
+So U is a linear operator
+
+858
+00:30:51,140 --> 00:30:53,320
+with all the rules for linear operators.
+
+859
+00:30:53,760 --> 00:30:56,320
+But one other thing,
+
+860
+00:30:56,480 --> 00:30:58,880
+and that's this idea of
+
+861
+00:30:59,420 --> 00:31:00,820
+conservation of information
+
+862
+00:31:01,420 --> 00:31:04,080
+or conservation of distinguishability.
+
+863
+00:31:05,420 --> 00:31:06,880
+That if you have two states,
+
+864
+00:31:07,020 --> 00:31:09,400
+two different states of the same system
+
+865
+00:31:09,400 --> 00:31:10,660
+and you evolve them,
+
+866
+00:31:10,760 --> 00:31:11,820
+let's call phi of t,
+
+867
+00:31:14,700 --> 00:31:15,840
+capital phi,
+
+868
+00:31:17,020 --> 00:31:19,320
+that's given by the same U of t,
+
+869
+00:31:19,420 --> 00:31:20,220
+the same operator,
+
+870
+00:31:21,170 --> 00:31:23,020
+times phi at time zero.
+
+871
+00:31:26,520 --> 00:31:27,140
+Then,
+
+872
+00:31:27,140 --> 00:31:28,620
+if phi,
+
+873
+00:31:29,620 --> 00:31:30,820
+to begin with,
+
+874
+00:31:30,960 --> 00:31:32,840
+is orthogonal to psi,
+
+875
+00:31:35,820 --> 00:31:36,740
+in other words,
+
+876
+00:31:36,780 --> 00:31:38,180
+if they're physically distinguishable
+
+877
+00:31:38,180 --> 00:31:38,900
+to begin with,
+
+878
+00:31:39,440 --> 00:31:41,340
+then they will remain orthogonal
+
+879
+00:31:41,340 --> 00:31:42,660
+for all time.
+
+880
+00:31:44,000 --> 00:31:44,440
+Yes.
+
+881
+00:31:44,520 --> 00:31:45,360
+Is there anything to the fact
+
+882
+00:31:45,360 --> 00:31:46,860
+that you used uppercase letters
+
+883
+00:31:46,860 --> 00:31:48,100
+on the left and lowercase?
+
+884
+00:31:48,300 --> 00:31:48,480
+Say it again.
+
+885
+00:31:48,720 --> 00:31:50,280
+The Greek letters are uppercase
+
+886
+00:31:50,280 --> 00:31:51,160
+on the left and lowercase
+
+887
+00:31:51,160 --> 00:31:51,580
+on the right.
+
+888
+00:31:51,620 --> 00:31:52,540
+Is that just a...
+
+889
+00:31:52,540 --> 00:31:53,960
+I guess I'm sloppy.
+
+890
+00:31:55,780 --> 00:31:56,220
+No.
+
+891
+00:31:57,620 --> 00:31:58,060
+Right.
+
+892
+00:31:58,640 --> 00:31:59,260
+All right,
+
+893
+00:31:59,260 --> 00:31:59,380
+so
+
+894
+00:31:59,840 --> 00:32:02,000
+orthogonality breeds orthogonality.
+
+895
+00:32:04,220 --> 00:32:06,020
+Physically distinct states evolve
+
+896
+00:32:06,020 --> 00:32:07,600
+to physically distinct states.
+
+897
+00:32:10,620 --> 00:32:12,420
+Distinguishability remains intact.
+
+898
+00:32:12,740 --> 00:32:14,360
+It's the immediate analog
+
+899
+00:32:14,360 --> 00:32:16,420
+of the minus first law
+
+900
+00:32:16,420 --> 00:32:17,480
+of classical mechanics.
+
+901
+00:32:18,980 --> 00:32:20,900
+So let's see if we can find out
+
+902
+00:32:20,900 --> 00:32:21,280
+what it says.
+
+903
+00:32:21,380 --> 00:32:21,520
+Oh,
+
+904
+00:32:21,520 --> 00:32:22,500
+incidentally,
+
+905
+00:32:22,500 --> 00:32:25,980
+it's very easy to prove from that,
+
+906
+00:32:26,020 --> 00:32:26,420
+well,
+
+907
+00:32:26,420 --> 00:32:27,120
+what does it say?
+
+908
+00:32:27,260 --> 00:32:30,000
+It says that if psi and phi
+
+909
+00:32:30,000 --> 00:32:31,080
+were initially orthogonal,
+
+910
+00:32:31,380 --> 00:32:31,980
+then they would be
+
+911
+00:32:32,780 --> 00:32:33,280
+orthogonal.
+
+912
+00:32:33,280 --> 00:32:33,540
+I'm...
+
+913
+00:32:34,140 --> 00:32:34,820
+All right.
+
+914
+00:32:38,060 --> 00:32:38,560
+No.
+
+915
+00:32:42,680 --> 00:32:44,200
+If they were initially orthogonal,
+
+916
+00:32:44,540 --> 00:32:44,760
+if,
+
+917
+00:32:44,760 --> 00:32:47,300
+then...
+
+918
+00:32:52,960 --> 00:32:54,720
+Don't ask me to make capital letters.
+
+919
+00:32:54,900 --> 00:32:56,140
+It's much quicker to make
+
+920
+00:32:56,140 --> 00:32:57,220
+the lowercase ones,
+
+921
+00:32:57,380 --> 00:33:01,300
+but I mean capital here.
+
+922
+00:33:01,360 --> 00:33:01,960
+I mean uppercase.
+
+923
+00:33:01,980 --> 00:33:04,320
+Then this is true,
+
+924
+00:33:04,480 --> 00:33:05,920
+and it remains true for all time.
+
+925
+00:33:06,340 --> 00:33:08,300
+It's an easy exercise.
+
+926
+00:33:08,640 --> 00:33:09,680
+I will leave it to you
+
+927
+00:33:09,680 --> 00:33:12,400
+to prove that if orthogonality
+
+928
+00:33:12,400 --> 00:33:13,180
+is preserved,
+
+929
+00:33:13,680 --> 00:33:15,380
+that you can say a stronger thing.
+
+930
+00:33:15,700 --> 00:33:17,020
+It's implied by this.
+
+931
+00:33:17,280 --> 00:33:18,480
+You can say if you take
+
+932
+00:33:18,480 --> 00:33:19,420
+any two vectors,
+
+933
+00:33:19,500 --> 00:33:21,380
+which may or may not be orthogonal,
+
+934
+00:33:21,980 --> 00:33:24,220
+the inner product between them
+
+935
+00:33:24,220 --> 00:33:25,960
+stays constant with time.
+
+936
+00:33:26,860 --> 00:33:28,100
+There's a nice little trick.
+
+937
+00:33:28,280 --> 00:33:29,400
+You take any two vectors,
+
+938
+00:33:29,560 --> 00:33:31,240
+you expand them in basis vectors,
+
+939
+00:33:31,240 --> 00:33:33,860
+and then you assume that the basis vectors
+
+940
+00:33:33,860 --> 00:33:35,800
+remain orthogonal with time.
+
+941
+00:33:36,340 --> 00:33:39,140
+Then you can prove that the inner products
+
+942
+00:33:39,140 --> 00:33:40,440
+of any two vectors
+
+943
+00:33:40,440 --> 00:33:42,120
+is time independent.
+
+944
+00:33:43,440 --> 00:33:47,020
+So it follows from the orthogonality,
+
+945
+00:33:48,679 --> 00:33:51,240
+the evolution of orthogonality,
+
+946
+00:33:51,380 --> 00:33:54,560
+that the inner product between two states
+
+947
+00:33:54,560 --> 00:33:55,320
+remains the same.
+
+948
+00:33:55,340 --> 00:33:57,500
+The overlap between them remains the same.
+
+949
+00:33:57,900 --> 00:33:59,520
+There's a sense in which the overlap
+
+950
+00:33:59,520 --> 00:34:00,500
+between two states
+
+951
+00:34:00,500 --> 00:34:02,640
+is of course a measure of their similarity,
+
+952
+00:34:03,280 --> 00:34:05,940
+and what it says is the degree of similarity
+
+953
+00:34:06,300 --> 00:34:07,040
+remains the same.
+
+954
+00:34:08,239 --> 00:34:08,719
+Okay,
+
+955
+00:34:08,719 --> 00:34:10,940
+let's see if we can figure out
+
+956
+00:34:10,940 --> 00:34:12,739
+what that means for u.
+
+957
+00:34:14,239 --> 00:34:15,120
+What it says,
+
+958
+00:34:15,120 --> 00:34:16,920
+let's rewrite this
+
+959
+00:34:18,139 --> 00:34:19,779
+by plugging in for phi
+
+960
+00:34:19,779 --> 00:34:21,420
+of t and psi of t
+
+961
+00:34:21,940 --> 00:34:25,420
+the product u times phi and u times psi.
+
+962
+00:34:25,679 --> 00:34:26,860
+But before we do,
+
+963
+00:34:26,860 --> 00:34:27,940
+we have to remember
+
+964
+00:34:28,420 --> 00:34:30,300
+that we have to flip this equation,
+
+965
+00:34:30,500 --> 00:34:30,659
+oops,
+
+966
+00:34:30,659 --> 00:34:33,139
+chocolate pie.
+
+967
+00:34:36,020 --> 00:34:37,219
+Is this chocolate?
+
+968
+00:34:37,340 --> 00:34:37,460
+Yeah,
+
+969
+00:34:37,460 --> 00:34:37,780
+it is chocolate.
+
+970
+00:34:41,500 --> 00:34:43,440
+We have to flip it from a ket vector
+
+971
+00:34:43,440 --> 00:34:44,719
+to a bra vector equation.
+
+972
+00:34:45,960 --> 00:34:46,440
+Okay,
+
+973
+00:34:46,440 --> 00:34:47,620
+so let's do so.
+
+974
+00:34:49,020 --> 00:34:58,160
+This is psi of t equals psi of zero.
+
+975
+00:35:00,940 --> 00:35:02,340
+Not times u,
+
+976
+00:35:02,340 --> 00:35:03,600
+but times what?
+
+977
+00:35:05,020 --> 00:35:05,940
+u dagger,
+
+978
+00:35:05,940 --> 00:35:08,380
+the Hermitian conjugate.
+
+979
+00:35:14,540 --> 00:35:15,540
+Not the complex,
+
+980
+00:35:15,540 --> 00:35:18,180
+it's related to the complex conjugate,
+
+981
+00:35:18,420 --> 00:35:19,860
+but the Hermitian conjugate.
+
+982
+00:35:20,200 --> 00:35:20,680
+All right,
+
+983
+00:35:20,680 --> 00:35:22,700
+so now we plug this into this equation here,
+
+984
+00:35:23,400 --> 00:35:24,520
+and what it says,
+
+985
+00:35:24,520 --> 00:35:25,800
+let's write it out,
+
+986
+00:35:27,540 --> 00:35:28,900
+do a little bit of erasure.
+
+987
+00:35:36,460 --> 00:35:37,500
+For arbitrage,
+
+988
+00:35:37,500 --> 00:35:38,480
+they don't have to be orthogonal.
+
+989
+00:35:39,420 --> 00:35:40,440
+Whatever they are,
+
+990
+00:35:40,440 --> 00:35:41,740
+they have some inner product.
+
+991
+00:35:42,220 --> 00:35:44,540
+That's equal to psi of zero,
+
+992
+00:35:47,640 --> 00:35:49,000
+u dagger of t,
+
+993
+00:35:50,220 --> 00:35:51,260
+u of t,
+
+994
+00:35:53,920 --> 00:35:54,960
+phi of zero.
+
+995
+00:35:57,200 --> 00:35:58,760
+All I've done is plug in.
+
+996
+00:35:59,520 --> 00:36:00,300
+For phi,
+
+997
+00:36:00,300 --> 00:36:01,760
+u of t.
+
+998
+00:36:01,880 --> 00:36:02,420
+For psi,
+
+999
+00:36:02,420 --> 00:36:04,380
+u dagger of t.
+
+1000
+00:36:05,260 --> 00:36:05,780
+Now,
+
+1001
+00:36:05,780 --> 00:36:08,600
+the product u dagger times u
+
+1002
+00:36:08,600 --> 00:36:10,500
+is another operator.
+
+1003
+00:36:10,740 --> 00:36:12,040
+What is the product of two operators?
+
+1004
+00:36:12,320 --> 00:36:13,460
+We didn't talk about this,
+
+1005
+00:36:13,580 --> 00:36:15,170
+but the product of two
+
+1006
+00:36:15,170 --> 00:36:16,760
+operators is a very simple concept.
+
+1007
+00:36:18,140 --> 00:36:19,860
+You take a linear operator,
+
+1008
+00:36:20,140 --> 00:36:21,460
+and you apply it to a vector,
+
+1009
+00:36:21,600 --> 00:36:22,920
+and then you take the result,
+
+1010
+00:36:23,140 --> 00:36:25,380
+and you apply another operator to it.
+
+1011
+00:36:25,660 --> 00:36:28,740
+The process of repeatedly applying two operators
+
+1012
+00:36:28,760 --> 00:36:31,400
+gives you an operation,
+
+1013
+00:36:31,640 --> 00:36:33,920
+which is called the product of the two operators.
+
+1014
+00:36:34,080 --> 00:36:34,780
+So that's what this is.
+
+1015
+00:36:35,300 --> 00:36:37,320
+First you hit phi with u,
+
+1016
+00:36:37,460 --> 00:36:39,920
+and then you hit the result with u dagger.
+
+1017
+00:36:41,860 --> 00:36:43,480
+And what this says is
+
+1018
+00:36:43,480 --> 00:36:45,100
+that for any phi and psi,
+
+1019
+00:36:45,320 --> 00:36:46,900
+any phi and psi at all,
+
+1020
+00:36:48,200 --> 00:36:51,340
+that when you plug in here,
+
+1021
+00:36:51,620 --> 00:36:53,000
+u dagger and u,
+
+1022
+00:36:53,200 --> 00:36:54,600
+the product of u dagger and u,
+
+1023
+00:36:54,800 --> 00:36:56,040
+you get something,
+
+1024
+00:36:57,520 --> 00:37:00,560
+which is exactly the same as had you not
+
+1025
+00:37:03,400 --> 00:37:04,500
+evolved the state.
+
+1026
+00:37:10,220 --> 00:37:12,980
+The inner product stays the same.
+
+1027
+00:37:13,160 --> 00:37:13,400
+Whoops,
+
+1028
+00:37:13,400 --> 00:37:14,620
+I think I made a mistake.
+
+1029
+00:37:14,780 --> 00:37:15,660
+One of these should be phi,
+
+1030
+00:37:15,660 --> 00:37:15,920
+right?
+
+1031
+00:37:17,180 --> 00:37:17,660
+Alright,
+
+1032
+00:37:17,660 --> 00:37:19,300
+so that's the principle of
+
+1033
+00:37:20,759 --> 00:37:22,400
+conservation of overlap,
+
+1034
+00:37:22,400 --> 00:37:23,120
+if you like.
+
+1035
+00:37:25,500 --> 00:37:26,020
+What is the principle of conservation of overlap?
+
+1036
+00:37:26,020 --> 00:37:26,020
+Well,
+
+1037
+00:37:26,020 --> 00:37:26,980
+here's a theorem.
+
+1038
+00:37:27,320 --> 00:37:28,500
+We don't need to...
+
+1039
+00:37:28,500 --> 00:37:29,060
+This is,
+
+1040
+00:37:29,060 --> 00:37:29,740
+again,
+
+1041
+00:37:29,740 --> 00:37:30,100
+very,
+
+1042
+00:37:30,100 --> 00:37:31,060
+very easily proved
+
+1043
+00:37:31,060 --> 00:37:32,240
+by going to a basis.
+
+1044
+00:37:32,620 --> 00:37:33,840
+Very easily proved.
+
+1045
+00:37:34,360 --> 00:37:36,920
+That if the matrix elements,
+
+1046
+00:37:37,120 --> 00:37:38,460
+this is called the matrix elements,
+
+1047
+00:37:38,480 --> 00:37:39,760
+or the product,
+
+1048
+00:37:39,760 --> 00:37:40,420
+like this.
+
+1049
+00:37:41,100 --> 00:37:41,640
+If...
+
+1050
+00:37:45,280 --> 00:37:47,160
+this equation is true
+
+1051
+00:37:47,160 --> 00:37:49,300
+for any pair of vectors,
+
+1052
+00:37:49,660 --> 00:37:50,440
+in other words,
+
+1053
+00:37:50,440 --> 00:37:52,360
+I'll write the theorem in general.
+
+1054
+00:37:52,760 --> 00:37:54,220
+If you have an operator,
+
+1055
+00:37:54,220 --> 00:37:55,240
+let's call it k,
+
+1056
+00:37:56,020 --> 00:37:56,680
+or u dagger u,
+
+1057
+00:37:56,880 --> 00:38:00,100
+and for any pair of vectors,
+
+1058
+00:38:00,990 --> 00:38:01,300
+psi...
+
+1059
+00:38:03,480 --> 00:38:05,680
+psi k phi
+
+1060
+00:38:06,800 --> 00:38:08,720
+is equal to psi phi,
+
+1061
+00:38:09,080 --> 00:38:11,140
+for any pair of vectors,
+
+1062
+00:38:11,140 --> 00:38:11,460
+whatever,
+
+1063
+00:38:11,760 --> 00:38:15,100
+it follows that k is the unit operator.
+
+1064
+00:38:15,740 --> 00:38:17,800
+The unit operator is the operator
+
+1065
+00:38:17,800 --> 00:38:18,820
+which does nothing,
+
+1066
+00:38:18,820 --> 00:38:19,800
+just gives you back
+
+1067
+00:38:19,800 --> 00:38:20,800
+the same vector.
+
+1068
+00:38:23,400 --> 00:38:24,540
+So it follows,
+
+1069
+00:38:24,540 --> 00:38:24,960
+then,
+
+1070
+00:38:26,020 --> 00:38:28,900
+that u dagger times u must be the unit operator.
+
+1071
+00:38:29,360 --> 00:38:34,040
+That's the content of conservation of overlap.
+
+1072
+00:38:35,100 --> 00:38:38,300
+u dagger of t,
+
+1073
+00:38:38,300 --> 00:38:39,180
+for any t,
+
+1074
+00:38:39,840 --> 00:38:41,040
+times u of t
+
+1075
+00:38:42,660 --> 00:38:44,920
+is equal to the unit operator,
+
+1076
+00:38:45,880 --> 00:38:48,240
+meaning the operator which does nothing.
+
+1077
+00:38:48,960 --> 00:38:50,760
+Just gives you back the same vector.
+
+1078
+00:38:52,420 --> 00:38:53,020
+Question?
+
+1079
+00:38:53,360 --> 00:38:54,680
+Can you then say that one
+
+1080
+00:38:54,680 --> 00:38:56,000
+is the inverse of the other?
+
+1081
+00:38:56,020 --> 00:38:57,300
+In matrix algebra?
+
+1082
+00:38:57,580 --> 00:38:57,720
+Yes,
+
+1083
+00:38:57,720 --> 00:38:58,040
+you can.
+
+1084
+00:38:59,660 --> 00:39:00,220
+Indeed.
+
+1085
+00:39:01,920 --> 00:39:02,480
+Alright.
+
+1086
+00:39:06,940 --> 00:39:08,660
+Let's examine this a little bit now.
+
+1087
+00:39:08,860 --> 00:39:09,820
+In particular,
+
+1088
+00:39:09,820 --> 00:39:10,800
+let's examine it
+
+1089
+00:39:10,800 --> 00:39:11,420
+for very,
+
+1090
+00:39:11,420 --> 00:39:12,520
+very small time.
+
+1091
+00:39:13,460 --> 00:39:14,980
+For very small time,
+
+1092
+00:39:16,240 --> 00:39:17,200
+in other words,
+
+1093
+00:39:17,200 --> 00:39:18,620
+where you only evolve the system
+
+1094
+00:39:19,320 --> 00:39:21,660
+by a tiny little incremental time,
+
+1095
+00:39:22,380 --> 00:39:24,540
+let's call the incremental time epsilon.
+
+1096
+00:39:24,540 --> 00:39:25,600
+Alright?
+
+1097
+00:39:27,060 --> 00:39:30,000
+Let's write that u of epsilon,
+
+1098
+00:39:30,440 --> 00:39:31,460
+now first of all,
+
+1099
+00:39:31,460 --> 00:39:32,260
+what is u of zero?
+
+1100
+00:39:33,180 --> 00:39:35,000
+No time evolution at all.
+
+1101
+00:39:37,520 --> 00:39:38,360
+Just one.
+
+1102
+00:39:38,540 --> 00:39:39,480
+Just the unit operator.
+
+1103
+00:39:40,140 --> 00:39:42,100
+So for very small epsilon,
+
+1104
+00:39:42,520 --> 00:39:46,000
+u must be itself close to the unit operator.
+
+1105
+00:39:48,560 --> 00:39:50,140
+Plus a small deviation,
+
+1106
+00:39:50,880 --> 00:39:52,700
+presumably of order epsilon,
+
+1107
+00:39:53,020 --> 00:39:53,780
+and that will be right.
+
+1108
+00:39:53,780 --> 00:39:54,760
+It will be of order epsilon,
+
+1109
+00:39:55,360 --> 00:39:57,620
+so there will be something of order epsilon
+
+1110
+00:39:58,240 --> 00:39:59,880
+times another operator here.
+
+1111
+00:40:02,340 --> 00:40:04,100
+I'm going to make use of freedom
+
+1112
+00:40:05,080 --> 00:40:05,480
+and,
+
+1113
+00:40:06,779 --> 00:40:07,780
+that I have,
+
+1114
+00:40:07,940 --> 00:40:09,040
+and I'm going to
+
+1115
+00:40:10,279 --> 00:40:12,060
+put a minus sign here.
+
+1116
+00:40:12,360 --> 00:40:13,940
+We're going to put an operator over here.
+
+1117
+00:40:14,020 --> 00:40:15,920
+This minus sign has no content yet,
+
+1118
+00:40:16,000 --> 00:40:18,080
+unless I know what the operator is over here.
+
+1119
+00:40:18,140 --> 00:40:18,840
+The minus sign,
+
+1120
+00:40:19,000 --> 00:40:21,180
+it just absorbs into the definition.
+
+1121
+00:40:21,580 --> 00:40:23,400
+And I'm also going to put an i here.
+
+1122
+00:40:25,680 --> 00:40:26,280
+Again,
+
+1123
+00:40:26,280 --> 00:40:27,720
+there's no content yet,
+
+1124
+00:40:28,760 --> 00:40:31,840
+because I haven't told you anything about h.
+
+1125
+00:40:32,580 --> 00:40:34,360
+h is some operator.
+
+1126
+00:40:36,140 --> 00:40:38,360
+Epsilon times h is just an operator,
+
+1127
+00:40:38,560 --> 00:40:40,600
+and i epsilon h is just an operator.
+
+1128
+00:40:40,900 --> 00:40:43,740
+So I have not really said anything other than,
+
+1129
+00:40:43,920 --> 00:40:45,460
+for small epsilon,
+
+1130
+00:40:46,120 --> 00:40:49,260
+the operator u is close to the identity.
+
+1131
+00:40:49,560 --> 00:40:50,060
+How close?
+
+1132
+00:40:50,060 --> 00:40:50,920
+Of order epsilon.
+
+1133
+00:40:51,440 --> 00:40:53,580
+And then there may be additional things,
+
+1134
+00:40:53,780 --> 00:40:54,740
+of order epsilon squared,
+
+1135
+00:40:54,740 --> 00:40:55,680
+epsilon cubed,
+
+1136
+00:40:55,800 --> 00:40:57,100
+but we're going to drop them
+
+1137
+00:40:57,580 --> 00:41:00,000
+and study this equation.
+
+1138
+00:41:00,380 --> 00:41:00,900
+Oh,
+
+1139
+00:41:00,900 --> 00:41:01,160
+I should,
+
+1140
+00:41:01,160 --> 00:41:01,880
+we should name,
+
+1141
+00:41:02,020 --> 00:41:04,020
+we should give a name to this equation here.
+
+1142
+00:41:04,960 --> 00:41:06,000
+More specifically,
+
+1143
+00:41:06,000 --> 00:41:07,980
+we should give a name to operators
+
+1144
+00:41:07,980 --> 00:41:09,660
+which satisfy this rule.
+
+1145
+00:41:11,100 --> 00:41:13,540
+u dagger times u is equal to one,
+
+1146
+00:41:13,700 --> 00:41:14,420
+or,
+
+1147
+00:41:14,420 --> 00:41:15,480
+as was said,
+
+1148
+00:41:15,540 --> 00:41:17,040
+that u dagger,
+
+1149
+00:41:17,040 --> 00:41:18,500
+the Hermitian conjugate of u,
+
+1150
+00:41:18,640 --> 00:41:19,860
+is the inverse of u.
+
+1151
+00:41:21,200 --> 00:41:23,660
+Such operators are called unitary.
+
+1152
+00:41:29,400 --> 00:41:31,240
+u is a unitary operator.
+
+1153
+00:41:31,600 --> 00:41:32,420
+So this is,
+
+1154
+00:41:32,420 --> 00:41:33,000
+again,
+
+1155
+00:41:33,000 --> 00:41:34,220
+this is a restatement
+
+1156
+00:41:34,220 --> 00:41:37,940
+of the principle of conservation of overlap.
+
+1157
+00:41:39,920 --> 00:41:43,740
+Let's now apply this equation,
+
+1158
+00:41:43,940 --> 00:41:44,540
+this condition,
+
+1159
+00:41:44,540 --> 00:41:45,960
+to u of epsilon,
+
+1160
+00:41:46,080 --> 00:41:47,760
+and see what we find out about h.
+
+1161
+00:41:49,260 --> 00:41:49,740
+Okay,
+
+1162
+00:41:49,740 --> 00:41:51,240
+so let's bring it over to this blackboard.
+
+1163
+00:41:52,200 --> 00:41:53,240
+u of epsilon,
+
+1164
+00:41:53,780 --> 00:41:56,460
+is equal to one minus i epsilon h.
+
+1165
+00:41:56,560 --> 00:41:57,360
+Now let's do it over here.
+
+1166
+00:41:57,800 --> 00:41:58,120
+Alright,
+
+1167
+00:41:58,120 --> 00:41:59,280
+what about u dagger?
+
+1168
+00:41:59,540 --> 00:42:01,600
+u dagger is the Hermitian conjugate.
+
+1169
+00:42:02,980 --> 00:42:05,460
+The Hermitian conjugate of one is just one,
+
+1170
+00:42:06,140 --> 00:42:08,360
+but then we have the complex conjugate,
+
+1171
+00:42:08,480 --> 00:42:10,200
+plus i epsilon,
+
+1172
+00:42:10,880 --> 00:42:14,000
+and then we have to Hermitian conjugate h.
+
+1173
+00:42:16,780 --> 00:42:17,340
+Okay?
+
+1174
+00:42:19,160 --> 00:42:19,720
+Alright,
+
+1175
+00:42:19,720 --> 00:42:21,380
+so here is u dagger,
+
+1176
+00:42:21,380 --> 00:42:22,180
+and here is u.
+
+1177
+00:42:22,180 --> 00:42:24,360
+And now let's multiply them together,
+
+1178
+00:42:24,480 --> 00:42:26,020
+and set the result equal to one,
+
+1179
+00:42:26,200 --> 00:42:27,300
+to order epsilon.
+
+1180
+00:42:27,700 --> 00:42:29,020
+To order epsilon.
+
+1181
+00:42:29,980 --> 00:42:30,660
+Okay?
+
+1182
+00:42:30,760 --> 00:42:31,240
+So,
+
+1183
+00:42:31,240 --> 00:42:32,040
+what do we have?
+
+1184
+00:42:32,200 --> 00:42:35,880
+We have u dagger is one
+
+1185
+00:42:35,880 --> 00:42:39,560
+plus i epsilon times h dagger,
+
+1186
+00:42:40,600 --> 00:42:44,520
+times one minus i epsilon h.
+
+1187
+00:42:45,400 --> 00:42:47,280
+That has to equal one.
+
+1188
+00:42:48,520 --> 00:42:50,360
+And now just expand it out,
+
+1189
+00:42:50,420 --> 00:42:51,620
+to order epsilon,
+
+1190
+00:42:51,620 --> 00:42:59,540
+one plus i epsilon h dagger minus h,
+
+1191
+00:43:01,940 --> 00:43:03,180
+equals one.
+
+1192
+00:43:04,339 --> 00:43:05,120
+As I said,
+
+1193
+00:43:05,160 --> 00:43:06,860
+that's just to the approximation
+
+1194
+00:43:07,900 --> 00:43:09,840
+that epsilon is so small
+
+1195
+00:43:09,840 --> 00:43:12,100
+that its square can be completely ignored,
+
+1196
+00:43:12,260 --> 00:43:13,580
+compared to order epsilon.
+
+1197
+00:43:14,860 --> 00:43:15,580
+Alright?
+
+1198
+00:43:15,800 --> 00:43:16,520
+So,
+
+1199
+00:43:16,520 --> 00:43:18,020
+the ones cancel.
+
+1200
+00:43:22,400 --> 00:43:24,240
+And basically what we find,
+
+1201
+00:43:24,420 --> 00:43:26,960
+is that h dagger minus h,
+
+1202
+00:43:27,260 --> 00:43:28,140
+has to be zero.
+
+1203
+00:43:29,260 --> 00:43:31,060
+We cancelled out the ones,
+
+1204
+00:43:31,280 --> 00:43:33,160
+we get zero on the right hand side.
+
+1205
+00:43:33,580 --> 00:43:35,220
+And so to order epsilon,
+
+1206
+00:43:36,660 --> 00:43:38,500
+h has to equal h dagger.
+
+1207
+00:43:41,800 --> 00:43:43,060
+This is the condition,
+
+1208
+00:43:44,320 --> 00:43:46,080
+that h be Hermitian.
+
+1209
+00:43:48,040 --> 00:43:50,080
+Now I didn't call it h for Hermitian.
+
+1210
+00:43:50,080 --> 00:43:52,060
+I called it h for something else.
+
+1211
+00:43:52,080 --> 00:43:53,480
+I called it h for Hamiltonian.
+
+1212
+00:43:54,220 --> 00:43:54,680
+Okay?
+
+1213
+00:43:55,300 --> 00:43:56,770
+What it has to do
+
+1214
+00:43:56,770 --> 00:43:58,240
+with the Hamiltonian of classical mechanics,
+
+1215
+00:43:59,080 --> 00:44:00,800
+will eventually become clear.
+
+1216
+00:44:01,880 --> 00:44:03,760
+The Hamiltonian for classical mechanics,
+
+1217
+00:44:03,900 --> 00:44:05,420
+also enters in,
+
+1218
+00:44:05,920 --> 00:44:08,800
+to the equations for how systems evolve
+
+1219
+00:44:08,800 --> 00:44:10,280
+from one instant to the next.
+
+1220
+00:44:12,140 --> 00:44:12,600
+But,
+
+1221
+00:44:12,600 --> 00:44:13,120
+of course,
+
+1222
+00:44:13,140 --> 00:44:14,530
+that's not a good enough
+
+1223
+00:44:14,530 --> 00:44:15,920
+reason to call this the Hamiltonian.
+
+1224
+00:44:16,000 --> 00:44:17,880
+We want to see that it enters the equations,
+
+1225
+00:44:17,880 --> 00:44:19,400
+in a way very,
+
+1226
+00:44:19,400 --> 00:44:20,620
+very similar to the way,
+
+1227
+00:44:20,680 --> 00:44:23,240
+the Hamiltonian enters into classical mechanics.
+
+1228
+00:44:23,380 --> 00:44:23,780
+And it does.
+
+1229
+00:44:25,320 --> 00:44:27,280
+It is also the thing which,
+
+1230
+00:44:29,140 --> 00:44:30,000
+it's Hermitian,
+
+1231
+00:44:30,000 --> 00:44:30,240
+right?
+
+1232
+00:44:31,560 --> 00:44:32,460
+That means,
+
+1233
+00:44:33,820 --> 00:44:35,100
+that it's an observable,
+
+1234
+00:44:35,160 --> 00:44:36,460
+or it could be an observable.
+
+1235
+00:44:37,540 --> 00:44:38,720
+It's a Hermitian operator.
+
+1236
+00:44:40,280 --> 00:44:41,820
+It could be an observable.
+
+1237
+00:44:41,860 --> 00:44:43,040
+And it is an observable.
+
+1238
+00:44:43,500 --> 00:44:44,740
+It's the Hamiltonian.
+
+1239
+00:44:45,060 --> 00:44:45,960
+It's the energy.
+
+1240
+00:44:46,760 --> 00:44:47,860
+Hamiltonian and energy of the Hamiltonian.
+
+1241
+00:44:47,880 --> 00:44:48,120
+They're the same.
+
+1242
+00:44:48,280 --> 00:44:50,680
+This is what the energy of a system is.
+
+1243
+00:44:51,200 --> 00:44:52,940
+It's the Hamiltonian,
+
+1244
+00:44:52,980 --> 00:44:56,400
+which generates the evolution of state vectors,
+
+1245
+00:44:57,080 --> 00:44:58,460
+according to this rule here.
+
+1246
+00:44:59,120 --> 00:44:59,600
+Yeah?
+
+1247
+00:45:00,260 --> 00:45:02,100
+That could be any Hermitian operator.
+
+1248
+00:45:02,400 --> 00:45:04,620
+It could be any Hermitian operator at the moment.
+
+1249
+00:45:05,200 --> 00:45:05,680
+Now,
+
+1250
+00:45:06,580 --> 00:45:09,540
+what determines what Hermitian operator you put there?
+
+1251
+00:45:10,500 --> 00:45:10,980
+Well,
+
+1252
+00:45:10,980 --> 00:45:11,420
+it can't be,
+
+1253
+00:45:11,460 --> 00:45:12,000
+yes,
+
+1254
+00:45:12,000 --> 00:45:13,240
+it could be any Hermitian operator,
+
+1255
+00:45:13,800 --> 00:45:15,380
+associated with the system you're studying.
+
+1256
+00:45:16,300 --> 00:45:16,780
+Right,
+
+1257
+00:45:16,780 --> 00:45:17,060
+right.
+
+1258
+00:45:17,060 --> 00:45:19,040
+If we're studying a system of one spin,
+
+1259
+00:45:19,280 --> 00:45:21,840
+we want to make it up out of operators
+
+1260
+00:45:21,840 --> 00:45:23,300
+that are associated with the spin.
+
+1261
+00:45:24,280 --> 00:45:24,840
+So,
+
+1262
+00:45:24,840 --> 00:45:25,400
+yes,
+
+1263
+00:45:25,400 --> 00:45:26,300
+it can be any operator,
+
+1264
+00:45:27,400 --> 00:45:30,300
+but it's either experiment or some,
+
+1265
+00:45:30,460 --> 00:45:32,340
+it's the same things which govern
+
+1266
+00:45:32,340 --> 00:45:34,840
+why you choose one Hamiltonian or Lagrangian
+
+1267
+00:45:35,620 --> 00:45:37,100
+in classical mechanics.
+
+1268
+00:45:37,440 --> 00:45:38,700
+Either experiment,
+
+1269
+00:45:38,980 --> 00:45:41,500
+some prejudice about the way things work,
+
+1270
+00:45:41,660 --> 00:45:42,880
+some symmetry principle,
+
+1271
+00:45:44,520 --> 00:45:46,320
+whatever you have
+
+1272
+00:45:46,320 --> 00:45:47,580
+that might give you a
+
+1273
+00:45:47,580 --> 00:45:48,840
+clue as to what H is.
+
+1274
+00:45:49,260 --> 00:45:50,420
+At the end of the day,
+
+1275
+00:45:50,480 --> 00:45:52,940
+you may have to resort to experiment to find out,
+
+1276
+00:45:53,040 --> 00:45:55,260
+but whatever it is.
+
+1277
+00:45:56,920 --> 00:45:57,360
+Okay,
+
+1278
+00:45:57,360 --> 00:45:57,920
+so,
+
+1279
+00:45:59,960 --> 00:46:00,400
+that's,
+
+1280
+00:46:01,520 --> 00:46:01,960
+right,
+
+1281
+00:46:01,960 --> 00:46:04,880
+so now let's rewrite our equation.
+
+1282
+00:46:05,340 --> 00:46:05,900
+Let's rewrite,
+
+1283
+00:46:06,140 --> 00:46:06,680
+question?
+
+1284
+00:46:06,680 --> 00:46:07,020
+Yeah?
+
+1285
+00:46:07,140 --> 00:46:07,320
+So,
+
+1286
+00:46:07,320 --> 00:46:09,040
+when you do the expansion like that,
+
+1287
+00:46:09,060 --> 00:46:12,700
+normally then H is a constant,
+
+1288
+00:46:12,700 --> 00:46:13,060
+right?
+
+1289
+00:46:13,120 --> 00:46:13,440
+That's what,
+
+1290
+00:46:13,580 --> 00:46:14,650
+you know what I mean when
+
+1291
+00:46:14,650 --> 00:46:15,720
+you do that first order expansion?
+
+1292
+00:46:16,320 --> 00:46:16,920
+So it'd be,
+
+1293
+00:46:16,980 --> 00:46:17,860
+it's H of 0?
+
+1294
+00:46:17,860 --> 00:46:17,960
+Well,
+
+1295
+00:46:17,960 --> 00:46:18,620
+H is an operator.
+
+1296
+00:46:19,340 --> 00:46:20,040
+I mean,
+
+1297
+00:46:20,040 --> 00:46:21,720
+it's not a function of time
+
+1298
+00:46:21,720 --> 00:46:22,960
+in that case,
+
+1299
+00:46:22,960 --> 00:46:23,160
+right?
+
+1300
+00:46:23,340 --> 00:46:23,840
+Okay.
+
+1301
+00:46:24,520 --> 00:46:26,020
+Or not a function of epsilon.
+
+1302
+00:46:26,980 --> 00:46:28,400
+The situation with
+
+1303
+00:46:28,400 --> 00:46:32,000
+a possible explicit time dependence of H
+
+1304
+00:46:32,000 --> 00:46:34,500
+is the same as in classical physics.
+
+1305
+00:46:35,740 --> 00:46:37,080
+In classical physics,
+
+1306
+00:46:37,400 --> 00:46:39,460
+H can depend on time.
+
+1307
+00:46:39,840 --> 00:46:40,800
+For example,
+
+1308
+00:46:40,960 --> 00:46:43,240
+if you have a particle moving in a magnetic field,
+
+1309
+00:46:43,440 --> 00:46:45,520
+and the strength of the magnets
+
+1310
+00:46:45,520 --> 00:46:48,560
+is being varied with time by changing the current
+
+1311
+00:46:48,560 --> 00:46:49,740
+through the electromagnet,
+
+1312
+00:46:50,460 --> 00:46:52,270
+then the Hamiltonian for the
+
+1313
+00:46:52,270 --> 00:46:54,080
+particle moving in a magnetic field
+
+1314
+00:46:54,080 --> 00:46:54,720
+is time dependent.
+
+1315
+00:46:55,380 --> 00:46:55,820
+Okay?
+
+1316
+00:46:56,380 --> 00:46:56,820
+Otherwise,
+
+1317
+00:46:56,820 --> 00:46:57,840
+if you have the,
+
+1318
+00:46:57,860 --> 00:46:59,280
+if the parameters of the
+
+1319
+00:46:59,280 --> 00:47:00,700
+problem are not varying with time,
+
+1320
+00:47:01,200 --> 00:47:03,380
+then you say the Hamiltonian is not time dependent.
+
+1321
+00:47:03,440 --> 00:47:04,580
+It's exactly the same.
+
+1322
+00:47:05,300 --> 00:47:05,740
+Exactly.
+
+1323
+00:47:05,960 --> 00:47:07,360
+You know when you do an expansion like that,
+
+1324
+00:47:08,060 --> 00:47:08,900
+you'd be using,
+
+1325
+00:47:08,900 --> 00:47:09,100
+say,
+
+1326
+00:47:09,100 --> 00:47:09,760
+H of 0.
+
+1327
+00:47:10,220 --> 00:47:10,660
+Yeah,
+
+1328
+00:47:10,660 --> 00:47:10,920
+yeah,
+
+1329
+00:47:10,920 --> 00:47:11,140
+no,
+
+1330
+00:47:11,140 --> 00:47:11,800
+that's right.
+
+1331
+00:47:11,920 --> 00:47:12,620
+That's right.
+
+1332
+00:47:13,620 --> 00:47:14,420
+In principle,
+
+1333
+00:47:14,420 --> 00:47:16,040
+H could be a function of time.
+
+1334
+00:47:17,080 --> 00:47:18,560
+Let's take the case where it's not,
+
+1335
+00:47:18,720 --> 00:47:20,120
+and what that corresponds to
+
+1336
+00:47:21,560 --> 00:47:25,320
+is the situation where the parameters of the problem
+
+1337
+00:47:25,320 --> 00:47:27,020
+are not time dependent.
+
+1338
+00:47:28,520 --> 00:47:30,480
+Where in classical physics,
+
+1339
+00:47:30,620 --> 00:47:32,900
+we called it time translation invariance.
+
+1340
+00:47:33,500 --> 00:47:34,940
+Remember in classical physics,
+
+1341
+00:47:35,960 --> 00:47:37,660
+time translation invariance,
+
+1342
+00:47:37,700 --> 00:47:38,830
+which means like every time is
+
+1343
+00:47:38,830 --> 00:47:39,960
+the same as every other time.
+
+1344
+00:47:40,400 --> 00:47:40,880
+Okay?
+
+1345
+00:47:41,080 --> 00:47:42,200
+You do the experiment,
+
+1346
+00:47:42,400 --> 00:47:44,120
+the same experiment at a later time,
+
+1347
+00:47:44,420 --> 00:47:47,100
+will have the same output
+
+1348
+00:47:47,100 --> 00:47:52,660
+as the identical experiment at an earlier time.
+
+1349
+00:47:53,060 --> 00:47:58,300
+The statement of that principle,
+
+1350
+00:47:58,600 --> 00:48:00,340
+time translation invariance,
+
+1351
+00:48:00,440 --> 00:48:03,880
+is that H does not have explicit dependence on time.
+
+1352
+00:48:03,980 --> 00:48:06,160
+It's just an operator which doesn't depend on time.
+
+1353
+00:48:06,500 --> 00:48:07,560
+As I said,
+
+1354
+00:48:07,600 --> 00:48:09,090
+you can imagine situations where
+
+1355
+00:48:09,090 --> 00:48:10,580
+you're ramping up the current
+
+1356
+00:48:10,580 --> 00:48:12,420
+in an electromagnet,
+
+1357
+00:48:12,940 --> 00:48:14,340
+or the universe is expanding,
+
+1358
+00:48:14,420 --> 00:48:15,620
+or God knows what,
+
+1359
+00:48:15,760 --> 00:48:17,360
+there's some explicit time dependence,
+
+1360
+00:48:17,700 --> 00:48:20,100
+then H can be time dependent.
+
+1361
+00:48:20,540 --> 00:48:21,060
+Now,
+
+1362
+00:48:21,060 --> 00:48:22,780
+do you remember what happens to energy conservation
+
+1363
+00:48:22,780 --> 00:48:25,260
+if the Hamiltonian is time dependent?
+
+1364
+00:48:27,800 --> 00:48:29,060
+Down the drain.
+
+1365
+00:48:29,260 --> 00:48:29,820
+Right.
+
+1366
+00:48:29,960 --> 00:48:30,860
+Same thing here.
+
+1367
+00:48:31,140 --> 00:48:33,040
+If the Hamiltonian is time dependent,
+
+1368
+00:48:33,220 --> 00:48:34,960
+and we haven't yet seen why
+
+1369
+00:48:34,960 --> 00:48:36,700
+there might be a conservation of energy,
+
+1370
+00:48:36,920 --> 00:48:37,920
+we'll come to that,
+
+1371
+00:48:38,140 --> 00:48:38,800
+but,
+
+1372
+00:48:38,800 --> 00:48:41,040
+alright.
+
+1373
+00:48:41,600 --> 00:48:42,160
+Okay,
+
+1374
+00:48:42,160 --> 00:48:44,360
+so let's come back then to this equation,
+
+1375
+00:48:44,360 --> 00:48:45,040
+over here.
+
+1376
+00:48:46,260 --> 00:48:47,880
+What happens at the long times?
+
+1377
+00:48:48,000 --> 00:48:48,780
+What happens to what?
+
+1378
+00:48:48,800 --> 00:48:49,420
+This is all for the small,
+
+1379
+00:48:49,600 --> 00:48:50,260
+epsilon time.
+
+1380
+00:48:50,560 --> 00:48:50,960
+Sorry,
+
+1381
+00:48:50,960 --> 00:48:51,180
+what?
+
+1382
+00:48:51,260 --> 00:48:51,700
+Say it again?
+
+1383
+00:48:51,800 --> 00:48:53,020
+This is for the small,
+
+1384
+00:48:54,340 --> 00:48:55,060
+infinitesimal small.
+
+1385
+00:48:55,240 --> 00:48:55,560
+Yes.
+
+1386
+00:48:56,020 --> 00:48:56,460
+Yeah,
+
+1387
+00:48:56,460 --> 00:48:57,040
+we'll come to that.
+
+1388
+00:48:57,740 --> 00:48:58,180
+Basically,
+
+1389
+00:48:58,180 --> 00:48:59,580
+you just multiply them together.
+
+1390
+00:49:00,960 --> 00:49:01,400
+Right,
+
+1391
+00:49:01,400 --> 00:49:02,520
+we'll come to that.
+
+1392
+00:49:02,800 --> 00:49:03,240
+Okay.
+
+1393
+00:49:04,300 --> 00:49:06,400
+Or you can think of it another way.
+
+1394
+00:49:06,800 --> 00:49:09,680
+After you've updated by a small amount of time,
+
+1395
+00:49:09,760 --> 00:49:10,500
+you just do it again,
+
+1396
+00:49:10,640 --> 00:49:11,140
+and again,
+
+1397
+00:49:11,240 --> 00:49:11,640
+and again.
+
+1398
+00:49:12,540 --> 00:49:12,980
+Alright?
+
+1399
+00:49:13,940 --> 00:49:15,480
+You just do it repeatedly,
+
+1400
+00:49:16,200 --> 00:49:20,400
+but we can use this to derive a differential equation
+
+1401
+00:49:20,400 --> 00:49:22,740
+for the way the state changes with time.
+
+1402
+00:49:22,900 --> 00:49:23,560
+Let's do that.
+
+1403
+00:49:26,620 --> 00:49:27,460
+Let's do that.
+
+1404
+00:49:31,860 --> 00:49:32,340
+Okay,
+
+1405
+00:49:32,340 --> 00:49:34,520
+so let's look at the state of the system
+
+1406
+00:49:35,340 --> 00:49:36,740
+at a time epsilon,
+
+1407
+00:49:38,800 --> 00:49:40,390
+and this time epsilon could be
+
+1408
+00:49:40,390 --> 00:49:41,980
+thought of as a time epsilon right,
+
+1409
+00:49:41,980 --> 00:49:44,880
+right after some arbitrary time,
+
+1410
+00:49:45,060 --> 00:49:46,700
+which I'm going to call zero,
+
+1411
+00:49:46,840 --> 00:49:47,620
+but it doesn't matter.
+
+1412
+00:49:48,060 --> 00:49:51,070
+Psi of epsilon is equal
+
+1413
+00:49:51,070 --> 00:49:54,080
+to one minus i h epsilon,
+
+1414
+00:49:58,900 --> 00:50:03,320
+minus i h epsilon times psi,
+
+1415
+00:50:03,500 --> 00:50:04,200
+let's say,
+
+1416
+00:50:04,200 --> 00:50:04,800
+at time zero.
+
+1417
+00:50:05,980 --> 00:50:07,720
+Or another way to say
+
+1418
+00:50:07,720 --> 00:50:09,460
+it is that psi of epsilon,
+
+1419
+00:50:11,100 --> 00:50:12,940
+minus psi of zero,
+
+1420
+00:50:13,120 --> 00:50:16,880
+this is the small incremental change in the state vector,
+
+1421
+00:50:17,960 --> 00:50:22,130
+that's equal to minus i
+
+1422
+00:50:22,130 --> 00:50:26,300
+epsilon operation by h on psi.
+
+1423
+00:50:28,900 --> 00:50:30,120
+Now as I said,
+
+1424
+00:50:30,180 --> 00:50:33,300
+this zero here doesn't have to be zero.
+
+1425
+00:50:33,400 --> 00:50:36,300
+It could be any time as long as
+
+1426
+00:50:36,300 --> 00:50:39,200
+epsilon is epsilon units after the starting time.
+
+1427
+00:50:39,200 --> 00:50:40,020
+Okay,
+
+1428
+00:50:40,020 --> 00:50:41,940
+let's divide this equation by epsilon.
+
+1429
+00:50:43,820 --> 00:50:46,100
+You're allowed to do this because
+
+1430
+00:50:46,100 --> 00:50:48,380
+you can multiply vectors by numbers,
+
+1431
+00:50:48,560 --> 00:50:51,380
+so we're just multiplying both sides by one over epsilon,
+
+1432
+00:50:52,280 --> 00:50:56,140
+one over epsilon times this whole thing.
+
+1433
+00:50:57,100 --> 00:50:57,740
+Okay,
+
+1434
+00:50:57,740 --> 00:50:59,200
+what's this thing on the left hand side?
+
+1435
+00:51:00,040 --> 00:51:03,300
+One over epsilon times the difference of two things,
+
+1436
+00:51:04,640 --> 00:51:05,940
+which are by,
+
+1437
+00:51:05,940 --> 00:51:06,400
+which,
+
+1438
+00:51:06,540 --> 00:51:09,180
+at two slightly different times.
+
+1439
+00:51:09,920 --> 00:51:13,400
+That's just the time derivative of this vector.
+
+1440
+00:51:14,580 --> 00:51:16,630
+We haven't talked very much
+
+1441
+00:51:16,630 --> 00:51:18,680
+about taking derivatives of vectors,
+
+1442
+00:51:18,860 --> 00:51:20,920
+but it's clear you can do that.
+
+1443
+00:51:21,160 --> 00:51:23,760
+You can take the difference between two vectors,
+
+1444
+00:51:23,900 --> 00:51:25,060
+that's perfectly well defined.
+
+1445
+00:51:26,140 --> 00:51:27,590
+They will be close to
+
+1446
+00:51:27,590 --> 00:51:29,040
+each other if epsilon is small.
+
+1447
+00:51:29,260 --> 00:51:30,900
+If you divide by the small epsilon,
+
+1448
+00:51:31,220 --> 00:51:32,800
+you'll get something which on
+
+1449
+00:51:32,800 --> 00:51:34,380
+the right hand side is just
+
+1450
+00:51:35,300 --> 00:51:36,800
+the time derivative
+
+1451
+00:51:38,600 --> 00:51:39,760
+of psi.
+
+1452
+00:51:41,700 --> 00:51:49,840
+The time derivative of psi equals minus i h psi.
+
+1453
+00:51:50,120 --> 00:51:51,580
+At any given time,
+
+1454
+00:51:51,580 --> 00:51:52,060
+it doesn't,
+
+1455
+00:51:52,060 --> 00:51:52,540
+as I said,
+
+1456
+00:51:52,560 --> 00:51:54,020
+it doesn't have to be at time zero.
+
+1457
+00:51:54,550 --> 00:51:55,880
+At any given time,
+
+1458
+00:51:55,880 --> 00:51:58,200
+if you want to find out
+
+1459
+00:51:58,730 --> 00:52:01,075
+how the state of the system
+
+1460
+00:52:01,075 --> 00:52:03,420
+changes over an incremental time interval,
+
+1461
+00:52:03,640 --> 00:52:04,940
+this is your,
+
+1462
+00:52:06,800 --> 00:52:07,900
+this is your equation.
+
+1463
+00:52:09,140 --> 00:52:10,990
+Completely analogous to the
+
+1464
+00:52:10,990 --> 00:52:12,840
+way you update classical systems,
+
+1465
+00:52:13,740 --> 00:52:15,260
+but because,
+
+1466
+00:52:16,600 --> 00:52:18,860
+because knowing the state vector is
+
+1467
+00:52:18,860 --> 00:52:21,120
+not the same as knowing the values
+
+1468
+00:52:21,120 --> 00:52:25,900
+of the experimental outputs of experiments,
+
+1469
+00:52:26,120 --> 00:52:28,440
+you can know the state and
+
+1470
+00:52:28,440 --> 00:52:30,760
+still there can be ambiguity or uncertainty
+
+1471
+00:52:30,760 --> 00:52:32,080
+in the value of an experiment.
+
+1472
+00:52:32,620 --> 00:52:34,600
+This tells you how states change,
+
+1473
+00:52:34,600 --> 00:52:36,180
+but it doesn't tell you
+
+1474
+00:52:36,180 --> 00:52:37,760
+how the results of experiments change.
+
+1475
+00:52:38,060 --> 00:52:38,820
+The experiments,
+
+1476
+00:52:38,860 --> 00:52:41,060
+the results of experiments are still statistical,
+
+1477
+00:52:41,280 --> 00:52:43,960
+but with a continuously updated state vector.
+
+1478
+00:52:45,000 --> 00:52:45,600
+Okay,
+
+1479
+00:52:45,600 --> 00:52:46,020
+this is,
+
+1480
+00:52:46,180 --> 00:52:47,860
+this equation has a name.
+
+1481
+00:52:49,320 --> 00:52:52,310
+The name of this equation is
+
+1482
+00:52:52,310 --> 00:52:55,300
+the generalized time dependent Schrödinger equation.
+
+1483
+00:52:56,000 --> 00:52:58,060
+This is the general form,
+
+1484
+00:52:58,260 --> 00:52:59,720
+this is the Schrödinger equation.
+
+1485
+00:53:00,600 --> 00:53:01,700
+Specific versions,
+
+1486
+00:53:01,780 --> 00:53:04,580
+what Schrödinger wrote down was a very specific version,
+
+1487
+00:53:04,600 --> 00:53:05,200
+and this is the general version of this.
+
+1488
+00:53:05,800 --> 00:53:08,140
+We're going to come to that later in the course,
+
+1489
+00:53:09,080 --> 00:53:11,020
+but this is the general idea.
+
+1490
+00:53:13,420 --> 00:53:14,280
+The rate of,
+
+1491
+00:53:14,320 --> 00:53:14,800
+all right,
+
+1492
+00:53:14,800 --> 00:53:16,000
+I don't need to say it again.
+
+1493
+00:53:16,580 --> 00:53:17,600
+This is what it is,
+
+1494
+00:53:17,660 --> 00:53:18,940
+but of course in order to use it,
+
+1495
+00:53:18,960 --> 00:53:20,620
+you have to know what h is.
+
+1496
+00:53:23,160 --> 00:53:23,560
+Question?
+
+1497
+00:53:23,900 --> 00:53:24,180
+Yeah.
+
+1498
+00:53:24,240 --> 00:53:25,760
+So all of this is dependent
+
+1499
+00:53:25,760 --> 00:53:27,280
+on the reversibility of the system,
+
+1500
+00:53:27,460 --> 00:53:27,940
+is that right?
+
+1501
+00:53:28,240 --> 00:53:28,640
+Yes.
+
+1502
+00:53:28,980 --> 00:53:29,380
+So,
+
+1503
+00:53:29,380 --> 00:53:30,740
+I guess,
+
+1504
+00:53:30,760 --> 00:53:32,160
+Or the conservation of,
+
+1505
+00:53:32,160 --> 00:53:33,220
+of inner products,
+
+1506
+00:53:33,220 --> 00:53:33,420
+yeah.
+
+1507
+00:53:33,780 --> 00:53:34,180
+Right,
+
+1508
+00:53:34,600 --> 00:53:35,260
+so I guess stepping back,
+
+1509
+00:53:35,340 --> 00:53:37,170
+how does that match the fact that if
+
+1510
+00:53:37,170 --> 00:53:39,000
+you take an up vector and a down vector,
+
+1511
+00:53:39,600 --> 00:53:42,440
+and you measure them along the horizontal axis,
+
+1512
+00:53:42,760 --> 00:53:45,280
+they can sort of both end up,
+
+1513
+00:53:45,300 --> 00:53:45,580
+you know,
+
+1514
+00:53:45,580 --> 00:53:46,390
+in sort of what I
+
+1515
+00:53:46,390 --> 00:53:47,200
+just don't want to be in,
+
+1516
+00:53:47,260 --> 00:53:48,100
+in multiple states.
+
+1517
+00:53:48,200 --> 00:53:48,300
+Okay,
+
+1518
+00:53:48,300 --> 00:53:48,900
+that's a good question.
+
+1519
+00:53:53,080 --> 00:53:54,840
+You have to remember when you do that,
+
+1520
+00:53:55,640 --> 00:53:57,100
+you're intervening with an apparatus.
+
+1521
+00:54:00,800 --> 00:54:02,480
+In order to follow the system,
+
+1522
+00:54:02,480 --> 00:54:04,360
+under those circumstances,
+
+1523
+00:54:04,600 --> 00:54:06,150
+you have to include the
+
+1524
+00:54:06,150 --> 00:54:07,700
+apparatus as part of the system.
+
+1525
+00:54:09,500 --> 00:54:12,400
+You cannot interact with the system
+
+1526
+00:54:12,400 --> 00:54:14,800
+and not include the things which
+
+1527
+00:54:14,800 --> 00:54:17,200
+are interacting with it in the system.
+
+1528
+00:54:17,680 --> 00:54:18,260
+Classically,
+
+1529
+00:54:18,260 --> 00:54:19,860
+it's not such a bad sin,
+
+1530
+00:54:20,020 --> 00:54:21,580
+but quantum mechanically,
+
+1531
+00:54:21,660 --> 00:54:24,740
+if something interacts with the system strongly enough to,
+
+1532
+00:54:24,760 --> 00:54:25,660
+to affect it,
+
+1533
+00:54:25,720 --> 00:54:26,200
+well,
+
+1534
+00:54:26,200 --> 00:54:27,840
+strongly enough to measure it,
+
+1535
+00:54:28,460 --> 00:54:30,860
+you have to include it as part of the system.
+
+1536
+00:54:30,860 --> 00:54:31,620
+Now,
+
+1537
+00:54:31,620 --> 00:54:33,720
+this is the way a system evolves
+
+1538
+00:54:33,720 --> 00:54:36,080
+if it's isolated and completely
+
+1539
+00:54:36,080 --> 00:54:38,440
+not in contact with anything else.
+
+1540
+00:54:40,680 --> 00:54:42,260
+We will have to come
+
+1541
+00:54:42,260 --> 00:54:43,840
+back to ask how it evolves,
+
+1542
+00:54:44,200 --> 00:54:46,040
+what happens when you put it
+
+1543
+00:54:46,040 --> 00:54:47,880
+in contact with a measuring apparatus.
+
+1544
+00:54:48,360 --> 00:54:50,160
+We'll have to have a
+
+1545
+00:54:50,160 --> 00:54:51,960
+model for how measurements take place.
+
+1546
+00:54:52,400 --> 00:54:54,400
+But this is the way the system behaves
+
+1547
+00:54:54,400 --> 00:54:58,460
+if nobody disturbs it during the course of the evolution
+
+1548
+00:54:58,460 --> 00:55:00,240
+from time zero to time t.
+
+1549
+00:55:01,620 --> 00:55:02,220
+Okay.
+
+1550
+00:55:02,320 --> 00:55:03,780
+We'll have to come back to that.
+
+1551
+00:55:03,940 --> 00:55:05,180
+It's an important question.
+
+1552
+00:55:10,000 --> 00:55:11,200
+Oh boy.
+
+1553
+00:55:12,640 --> 00:55:12,940
+Yeah.
+
+1554
+00:55:13,820 --> 00:55:15,160
+Really just two assumptions.
+
+1555
+00:55:15,660 --> 00:55:16,260
+Well,
+
+1556
+00:55:16,260 --> 00:55:16,840
+maybe three.
+
+1557
+00:55:17,260 --> 00:55:19,620
+First is that time evolution takes
+
+1558
+00:55:19,620 --> 00:55:21,980
+place by a linear operator called U.
+
+1559
+00:55:22,820 --> 00:55:24,540
+And that operator is independent of
+
+1560
+00:55:24,540 --> 00:55:26,260
+the state that it's acting on.
+
+1561
+00:55:26,800 --> 00:55:27,400
+Okay?
+
+1562
+00:55:27,540 --> 00:55:28,300
+With me?
+
+1563
+00:55:29,020 --> 00:55:29,620
+Okay.
+
+1564
+00:55:31,640 --> 00:55:32,760
+That's the first statement.
+
+1565
+00:55:32,880 --> 00:55:34,530
+The next statement is that
+
+1566
+00:55:34,530 --> 00:55:36,180
+inner products are conserved with time.
+
+1567
+00:55:36,840 --> 00:55:38,760
+And that tells you that U is unitary.
+
+1568
+00:55:40,280 --> 00:55:40,800
+Okay?
+
+1569
+00:55:42,220 --> 00:55:43,080
+From that,
+
+1570
+00:55:44,860 --> 00:55:46,220
+we went over to here
+
+1571
+00:55:46,860 --> 00:55:51,000
+and discovered that the small little incremental change
+
+1572
+00:55:51,540 --> 00:55:53,840
+is governed by a Hermitian operator.
+
+1573
+00:55:55,080 --> 00:55:55,600
+Okay?
+
+1574
+00:55:57,160 --> 00:55:57,680
+So,
+
+1575
+00:55:57,680 --> 00:55:59,620
+we get to the idea of a Hamiltonian.
+
+1576
+00:56:01,700 --> 00:56:05,280
+And then we just rewrote that and said,
+
+1577
+00:56:05,320 --> 00:56:05,500
+look,
+
+1578
+00:56:05,500 --> 00:56:09,020
+the small little incremental change could be thought of as
+
+1579
+00:56:09,020 --> 00:56:10,500
+1 over epsilon times the
+
+1580
+00:56:10,500 --> 00:56:11,980
+time derivative of the state vector.
+
+1581
+00:56:12,300 --> 00:56:12,800
+Okay?
+
+1582
+00:56:12,880 --> 00:56:13,140
+So,
+
+1583
+00:56:13,140 --> 00:56:16,860
+this is the Schrodinger equation.
+
+1584
+00:56:23,180 --> 00:56:24,980
+How do you solve the problem
+
+1585
+00:56:24,980 --> 00:56:26,780
+if there's a long time interval,
+
+1586
+00:56:26,780 --> 00:56:27,880
+not a short time interval?
+
+1587
+00:56:28,300 --> 00:56:30,120
+You basically solve this equation.
+
+1588
+00:56:30,880 --> 00:56:32,840
+And we'll talk about how you solve this equation.
+
+1589
+00:56:33,040 --> 00:56:35,420
+We'll do so for lots of examples.
+
+1590
+00:56:36,260 --> 00:56:36,700
+But,
+
+1591
+00:56:36,700 --> 00:56:37,020
+um,
+
+1592
+00:56:37,020 --> 00:56:39,980
+okay.
+
+1593
+00:56:43,020 --> 00:56:43,600
+All right.
+
+1594
+00:56:43,640 --> 00:56:46,990
+To go on and explain what
+
+1595
+00:56:46,990 --> 00:56:50,340
+this has to do with classical mechanics,
+
+1596
+00:56:50,940 --> 00:56:53,030
+or what it has to do
+
+1597
+00:56:53,030 --> 00:56:55,120
+with the corresponding concepts in classical mechanics,
+
+1598
+00:56:55,120 --> 00:56:59,380
+we need a couple of ideas about how
+
+1599
+00:56:59,380 --> 00:57:03,640
+you relate classical ideas to quantum mechanical ideas.
+
+1600
+00:57:03,960 --> 00:57:06,770
+We need the idea of what is
+
+1601
+00:57:06,770 --> 00:57:09,580
+called the expectation value of an observable.
+
+1602
+00:57:11,240 --> 00:57:12,460
+It's a bad name.
+
+1603
+00:57:14,580 --> 00:57:18,320
+It's a bad name because the expectation value as defined
+
+1604
+00:57:19,020 --> 00:57:21,160
+may have very little to do with
+
+1605
+00:57:21,160 --> 00:57:23,300
+what you expect the experiment to give.
+
+1606
+00:57:25,299 --> 00:57:27,420
+This doesn't have much to do with quantum mechanics.
+
+1607
+00:57:27,600 --> 00:57:29,240
+It's just an issue of probability theory.
+
+1608
+00:57:29,660 --> 00:57:31,260
+I think we've talked about this before,
+
+1609
+00:57:31,260 --> 00:57:32,280
+but I'll just remind you.
+
+1610
+00:57:32,520 --> 00:57:34,070
+If you have a probability
+
+1611
+00:57:34,070 --> 00:57:35,620
+distribution which looks like this,
+
+1612
+00:57:38,160 --> 00:57:40,000
+then the least likely answer that you
+
+1613
+00:57:40,000 --> 00:57:41,840
+could possibly get is right over here.
+
+1614
+00:57:42,320 --> 00:57:44,020
+It's also the expectation value.
+
+1615
+00:57:44,680 --> 00:57:47,700
+So it's a poorly chosen terminology.
+
+1616
+00:57:48,620 --> 00:57:50,960
+The right terminology should sometimes,
+
+1617
+00:57:51,340 --> 00:57:51,780
+some,
+
+1618
+00:57:51,780 --> 00:57:52,440
+some,
+
+1619
+00:57:54,400 --> 00:57:55,440
+fancy people.
+
+1620
+00:57:55,600 --> 00:57:58,600
+I won't name Murray Gell-Mann,
+
+1621
+00:57:59,300 --> 00:58:01,920
+but some fancy people like
+
+1622
+00:58:01,920 --> 00:58:04,540
+to call it the expected value.
+
+1623
+00:58:04,860 --> 00:58:05,260
+Well,
+
+1624
+00:58:05,260 --> 00:58:06,910
+it's even less the expected value
+
+1625
+00:58:06,910 --> 00:58:08,560
+than it is the expectation value.
+
+1626
+00:58:09,400 --> 00:58:10,800
+It's the average value.
+
+1627
+00:58:11,280 --> 00:58:12,640
+It's the average value,
+
+1628
+00:58:12,640 --> 00:58:15,600
+and the average value of something can be a value
+
+1629
+00:58:16,160 --> 00:58:18,060
+which the thing can't even take on,
+
+1630
+00:58:18,160 --> 00:58:20,060
+a possible value that it couldn't even have,
+
+1631
+00:58:20,060 --> 00:58:21,260
+the average value.
+
+1632
+00:58:21,360 --> 00:58:21,840
+For example,
+
+1633
+00:58:21,840 --> 00:58:26,540
+if you assign heads plus one and tails minus one,
+
+1634
+00:58:26,680 --> 00:58:28,000
+and you flip the coin,
+
+1635
+00:58:28,000 --> 00:58:28,960
+what's the average?
+
+1636
+00:58:29,260 --> 00:58:29,560
+Zero.
+
+1637
+00:58:29,620 --> 00:58:30,080
+Zero,
+
+1638
+00:58:30,080 --> 00:58:31,200
+but you can't get zero.
+
+1639
+00:58:31,360 --> 00:58:32,780
+So it's got nothing to do
+
+1640
+00:58:32,780 --> 00:58:34,200
+with the expected value of an experiment.
+
+1641
+00:58:35,660 --> 00:58:36,620
+But nevertheless,
+
+1642
+00:58:36,620 --> 00:58:38,460
+it's called the expectation value,
+
+1643
+00:58:38,620 --> 00:58:41,220
+and we will call it the expectation value.
+
+1644
+00:58:41,540 --> 00:58:42,820
+But it's the average value.
+
+1645
+00:58:43,520 --> 00:58:48,200
+Let's talk about the average value of an observable
+
+1646
+00:58:49,500 --> 00:58:51,380
+given a particular state.
+
+1647
+00:58:52,980 --> 00:58:53,580
+All right,
+
+1648
+00:58:53,580 --> 00:58:55,380
+so our state is A.
+
+1649
+00:58:57,240 --> 00:58:59,000
+I said I was going to change the psi,
+
+1650
+00:58:59,180 --> 00:59:00,160
+but sometimes I will,
+
+1651
+00:59:00,160 --> 00:59:00,980
+sometimes I won't.
+
+1652
+00:59:01,760 --> 00:59:03,050
+Could we go back to
+
+1653
+00:59:03,050 --> 00:59:04,340
+the expectation value for a second?
+
+1654
+00:59:04,460 --> 00:59:04,840
+Yeah.
+
+1655
+00:59:05,900 --> 00:59:07,760
+I think I just have
+
+1656
+00:59:07,760 --> 00:59:09,620
+to clear my head of statistics,
+
+1657
+00:59:09,920 --> 00:59:12,140
+but when I look at that picture you draw,
+
+1658
+00:59:12,320 --> 00:59:14,280
+I see it's a frequency distribution.
+
+1659
+00:59:14,880 --> 00:59:15,280
+Yeah.
+
+1660
+00:59:15,380 --> 00:59:16,340
+So to me,
+
+1661
+00:59:16,340 --> 00:59:18,000
+the middle is not the average.
+
+1662
+00:59:18,040 --> 00:59:19,720
+It really is the expected value.
+
+1663
+00:59:19,820 --> 00:59:21,660
+It's the value that's going to occur,
+
+1664
+00:59:21,840 --> 00:59:22,360
+and it's going to occur most frequently.
+
+1665
+00:59:22,520 --> 00:59:22,860
+No,
+
+1666
+00:59:22,860 --> 00:59:23,440
+no,
+
+1667
+00:59:23,440 --> 00:59:24,320
+definitely not.
+
+1668
+00:59:24,420 --> 00:59:24,900
+This one here,
+
+1669
+00:59:24,900 --> 00:59:25,980
+it never occurs.
+
+1670
+00:59:26,800 --> 00:59:27,260
+Never,
+
+1671
+00:59:27,260 --> 00:59:27,620
+ever,
+
+1672
+00:59:27,620 --> 00:59:27,860
+ever.
+
+1673
+00:59:29,180 --> 00:59:30,480
+Let's even make it worse.
+
+1674
+00:59:30,840 --> 00:59:31,160
+Okay,
+
+1675
+00:59:31,160 --> 00:59:32,440
+what are the x and y values,
+
+1676
+00:59:32,620 --> 00:59:34,140
+what are the x and y axes represented?
+
+1677
+00:59:34,640 --> 00:59:36,720
+P is the probability,
+
+1678
+00:59:36,720 --> 00:59:38,460
+x is some variable,
+
+1679
+00:59:39,320 --> 00:59:40,380
+something that you measure.
+
+1680
+00:59:41,520 --> 00:59:44,460
+This could be the probability for finding a particle
+
+1681
+00:59:44,460 --> 00:59:45,520
+at different locations,
+
+1682
+00:59:45,520 --> 00:59:45,920
+okay?
+
+1683
+00:59:47,060 --> 00:59:47,660
+All right.
+
+1684
+00:59:48,680 --> 00:59:50,900
+It could be that for some particular,
+
+1685
+00:59:52,080 --> 00:59:52,680
+state,
+
+1686
+00:59:52,680 --> 00:59:53,720
+the probability,
+
+1687
+00:59:54,100 --> 00:59:56,900
+let's make it symmetric about the origin just to,
+
+1688
+00:59:59,900 --> 01:00:01,570
+it could be that the
+
+1689
+01:00:01,570 --> 01:00:03,240
+probability distribution looks like this.
+
+1690
+01:00:05,460 --> 01:00:08,120
+I meant to make this symmetric,
+
+1691
+01:00:08,440 --> 01:00:10,180
+and it's really very,
+
+1692
+01:00:10,180 --> 01:00:10,960
+very zero
+
+1693
+01:00:10,960 --> 01:00:12,620
+in a neighborhood of the origin here.
+
+1694
+01:00:16,060 --> 01:00:19,540
+There's no sense in which x equals zero
+
+1695
+01:00:20,480 --> 01:00:21,520
+is expected.
+
+1696
+01:00:21,740 --> 01:00:24,400
+You can do the experiment forever and ever and ever,
+
+1697
+01:00:24,480 --> 01:00:26,520
+and you will never get x equals zero.
+
+1698
+01:00:27,620 --> 01:00:30,200
+You'll either get an x somewhere in here or here.
+
+1699
+01:00:30,680 --> 01:00:34,560
+So to call it the expected or the expectation value
+
+1700
+01:00:34,560 --> 01:00:36,160
+is sort of a misnomer.
+
+1701
+01:00:37,140 --> 01:00:40,800
+It is the average value defining averages
+
+1702
+01:00:40,800 --> 01:00:42,200
+in a very particular way.
+
+1703
+01:00:44,200 --> 01:00:44,720
+Now,
+
+1704
+01:00:44,720 --> 01:00:45,620
+for many,
+
+1705
+01:00:45,620 --> 01:00:48,280
+many smooth probability distributions,
+
+1706
+01:00:48,779 --> 01:00:49,620
+in particular,
+
+1707
+01:00:49,620 --> 01:00:50,880
+probability distributions
+
+1708
+01:00:50,880 --> 01:00:52,560
+that don't have big holes in them,
+
+1709
+01:00:52,640 --> 01:00:53,340
+something like this,
+
+1710
+01:00:53,340 --> 01:00:53,800
+let's say,
+
+1711
+01:00:53,920 --> 01:00:56,120
+it can very often be the case,
+
+1712
+01:00:56,160 --> 01:00:57,260
+it very often is the case,
+
+1713
+01:00:57,960 --> 01:00:59,620
+that the probability,
+
+1714
+01:00:59,800 --> 01:01:02,400
+that the average value
+
+1715
+01:01:03,060 --> 01:01:05,000
+is the most likely value to get.
+
+1716
+01:01:05,480 --> 01:01:06,420
+So it's just,
+
+1717
+01:01:06,420 --> 01:01:07,540
+they call it the mode,
+
+1718
+01:01:07,640 --> 01:01:08,760
+the most likely value.
+
+1719
+01:01:09,360 --> 01:01:10,220
+What's the peak?
+
+1720
+01:01:10,620 --> 01:01:12,740
+The peak there is the most likely value.
+
+1721
+01:01:14,480 --> 01:01:14,920
+Yes,
+
+1722
+01:01:14,920 --> 01:01:15,620
+by definition,
+
+1723
+01:01:15,620 --> 01:01:16,720
+the top of the peak is.
+
+1724
+01:01:16,720 --> 01:01:17,780
+And in many,
+
+1725
+01:01:17,780 --> 01:01:18,500
+many cases,
+
+1726
+01:01:18,640 --> 01:01:20,160
+if you have nice,
+
+1727
+01:01:20,160 --> 01:01:21,400
+simple probability,
+
+1728
+01:01:21,580 --> 01:01:22,620
+Gaussian probability,
+
+1729
+01:01:22,620 --> 01:01:23,120
+you know,
+
+1730
+01:01:23,140 --> 01:01:24,780
+bell-shaped curves and so forth,
+
+1731
+01:01:25,860 --> 01:01:29,540
+then the expectation value or the average value
+
+1732
+01:01:29,540 --> 01:01:33,180
+is usually quite close to the average
+
+1733
+01:01:33,660 --> 01:01:36,140
+and peak value and so forth.
+
+1734
+01:01:36,180 --> 01:01:37,840
+They're all usually close to each other.
+
+1735
+01:01:38,420 --> 01:01:41,240
+But certainly there can be violent exceptions.
+
+1736
+01:01:41,920 --> 01:01:43,900
+The coin or the spin,
+
+1737
+01:01:44,000 --> 01:01:45,880
+which can only be plus one and minus one
+
+1738
+01:01:45,880 --> 01:01:46,500
+and never zero,
+
+1739
+01:01:47,700 --> 01:01:50,140
+the expectation value and the average value
+
+1740
+01:01:50,140 --> 01:01:50,840
+are quite different.
+
+1741
+01:01:51,140 --> 01:01:51,660
+Okay,
+
+1742
+01:01:51,660 --> 01:01:53,600
+but that's just a little sermon
+
+1743
+01:01:53,600 --> 01:01:54,930
+and gave me a chance
+
+1744
+01:01:54,930 --> 01:01:56,260
+to badmouth my friend Murray Gell-Mann.
+
+1745
+01:01:57,340 --> 01:01:57,860
+Question.
+
+1746
+01:01:58,120 --> 01:01:58,460
+Yeah.
+
+1747
+01:01:58,460 --> 01:02:01,720
+If you take a spin where the apparatus
+
+1748
+01:02:02,260 --> 01:02:04,940
+is perpendicular to the spin,
+
+1749
+01:02:05,020 --> 01:02:07,800
+probably 50% of you make it very unlucky
+
+1750
+01:02:07,800 --> 01:02:10,060
+you hit a million ups in a row.
+
+1751
+01:02:10,260 --> 01:02:10,560
+Yeah.
+
+1752
+01:02:10,560 --> 01:02:12,660
+The average would be up,
+
+1753
+01:02:12,800 --> 01:02:14,680
+but that's not accurate.
+
+1754
+01:02:15,000 --> 01:02:15,340
+Yeah,
+
+1755
+01:02:15,340 --> 01:02:15,720
+well,
+
+1756
+01:02:17,880 --> 01:02:18,360
+okay,
+
+1757
+01:02:18,360 --> 01:02:20,600
+it depends on what you mean by average.
+
+1758
+01:02:20,780 --> 01:02:23,240
+There's a notion of average which is strictly mathematical,
+
+1759
+01:02:23,440 --> 01:02:24,680
+and we're going to write it down in a minute.
+
+1760
+01:02:27,500 --> 01:02:32,780
+There is an unwritten law,
+
+1761
+01:02:33,060 --> 01:02:35,980
+which I think it's safe to say nobody really understands,
+
+1762
+01:02:37,040 --> 01:02:39,160
+but it's the law of large numbers,
+
+1763
+01:02:40,940 --> 01:02:42,840
+that if you do a thing enough times,
+
+1764
+01:02:43,780 --> 01:02:44,820
+how many times?
+
+1765
+01:02:45,400 --> 01:02:46,480
+I don't know.
+
+1766
+01:02:46,760 --> 01:02:48,340
+If you do a thing enough times,
+
+1767
+01:02:48,380 --> 01:02:49,980
+you do an experiment enough times,
+
+1768
+01:02:52,140 --> 01:02:54,280
+the average gotten by averaging
+
+1769
+01:02:54,280 --> 01:02:56,420
+the results of your experiment
+
+1770
+01:02:56,420 --> 01:03:00,620
+will be equal to the average defined mathematically
+
+1771
+01:03:00,620 --> 01:03:01,660
+to within what?
+
+1772
+01:03:02,440 --> 01:03:04,220
+To within the margin of error.
+
+1773
+01:03:04,740 --> 01:03:06,140
+What is the margin of error?
+
+1774
+01:03:07,360 --> 01:03:08,660
+There's a specific number.
+
+1775
+01:03:08,740 --> 01:03:11,160
+Does it really mean that every time you do it,
+
+1776
+01:03:11,180 --> 01:03:13,060
+the answer will come out within the margin of error?
+
+1777
+01:03:13,060 --> 01:03:14,060
+No.
+
+1778
+01:03:14,840 --> 01:03:15,700
+All right.
+
+1779
+01:03:15,720 --> 01:03:19,720
+So we're assuming standard probability theory
+
+1780
+01:03:19,720 --> 01:03:21,870
+that if you do a
+
+1781
+01:03:21,870 --> 01:03:24,020
+thing plus this extra little ingredient,
+
+1782
+01:03:24,140 --> 01:03:26,820
+this extra physical assumption,
+
+1783
+01:03:27,060 --> 01:03:28,580
+I don't even know what to call it,
+
+1784
+01:03:28,660 --> 01:03:31,600
+that if you repeat an experiment enough times,
+
+1785
+01:03:31,720 --> 01:03:36,220
+the average of your data will be the mathematical average.
+
+1786
+01:03:36,480 --> 01:03:37,940
+Can anybody prove that?
+
+1787
+01:03:38,140 --> 01:03:38,420
+No.
+
+1788
+01:03:39,580 --> 01:03:43,040
+That's a law of large numbers.
+
+1789
+01:03:45,799 --> 01:03:46,200
+No,
+
+1790
+01:03:46,200 --> 01:03:46,600
+no,
+
+1791
+01:03:46,600 --> 01:03:46,880
+no.
+
+1792
+01:03:46,980 --> 01:03:48,260
+There's nothing you can do to prove it.
+
+1793
+01:03:48,860 --> 01:03:50,490
+The reason you can't prove
+
+1794
+01:03:50,490 --> 01:03:52,120
+it is because sooner or later,
+
+1795
+01:03:52,220 --> 01:03:53,880
+somewhere in the multiverse,
+
+1796
+01:03:54,020 --> 01:03:56,280
+somewhere there's going to be an exception to it.
+
+1797
+01:03:56,940 --> 01:03:58,100
+No matter how many times,
+
+1798
+01:03:58,180 --> 01:03:59,220
+if you do it a zillion times,
+
+1799
+01:03:59,440 --> 01:04:00,260
+a zillion is a number,
+
+1800
+01:04:00,260 --> 01:04:00,820
+incidentally.
+
+1801
+01:04:01,380 --> 01:04:02,500
+It's not infinity.
+
+1802
+01:04:03,140 --> 01:04:04,980
+A zillion is one with a
+
+1803
+01:04:04,980 --> 01:04:06,820
+logarithm of a zillion zeros after it
+
+1804
+01:04:06,820 --> 01:04:07,500
+or something like that.
+
+1805
+01:04:09,100 --> 01:04:09,500
+Right.
+
+1806
+01:04:11,260 --> 01:04:12,360
+If you do an experiment,
+
+1807
+01:04:12,360 --> 01:04:16,680
+and there's enough repetitions of it,
+
+1808
+01:04:16,820 --> 01:04:18,120
+eventually somewhere,
+
+1809
+01:04:18,120 --> 01:04:18,500
+someplace,
+
+1810
+01:04:18,820 --> 01:04:20,140
+there's going to be a violation of it.
+
+1811
+01:04:20,580 --> 01:04:22,680
+This is closely connected to
+
+1812
+01:04:22,680 --> 01:04:24,780
+the second law of thermodynamics.
+
+1813
+01:04:25,420 --> 01:04:26,020
+You know,
+
+1814
+01:04:26,020 --> 01:04:27,180
+there was a principle.
+
+1815
+01:04:27,320 --> 01:04:29,530
+The second law of thermodynamics
+
+1816
+01:04:29,530 --> 01:04:31,740
+says that an entropy never decreases.
+
+1817
+01:04:33,100 --> 01:04:35,300
+Boltzmann was never able to prove that,
+
+1818
+01:04:35,320 --> 01:04:37,760
+and he finally realized that the right law is
+
+1819
+01:04:38,259 --> 01:04:40,500
+the entropy probably never decreases,
+
+1820
+01:04:40,620 --> 01:04:41,720
+except when it does.
+
+1821
+01:04:42,580 --> 01:04:43,520
+Which is rarely,
+
+1822
+01:04:43,520 --> 01:04:45,100
+except when it does.
+
+1823
+01:04:46,320 --> 01:04:47,840
+So I'm not going to
+
+1824
+01:04:47,840 --> 01:04:49,360
+try to give you an explanation
+
+1825
+01:04:49,360 --> 01:04:51,120
+of why probability theory works.
+
+1826
+01:04:51,300 --> 01:04:51,780
+This is,
+
+1827
+01:04:51,780 --> 01:04:52,460
+to me,
+
+1828
+01:04:52,460 --> 01:04:53,140
+very puzzling,
+
+1829
+01:04:53,240 --> 01:04:56,060
+but we will assume probability theory works.
+
+1830
+01:04:56,320 --> 01:04:57,840
+The statement that it works
+
+1831
+01:04:57,840 --> 01:04:59,360
+is the same as the statement
+
+1832
+01:04:59,360 --> 01:05:02,740
+that the average of your data will be,
+
+1833
+01:05:02,780 --> 01:05:04,140
+for a big enough experiment,
+
+1834
+01:05:04,420 --> 01:05:06,000
+will be the mathematical average.
+
+1835
+01:05:06,520 --> 01:05:07,160
+All right,
+
+1836
+01:05:07,160 --> 01:05:07,800
+so let's talk,
+
+1837
+01:05:07,880 --> 01:05:07,980
+well,
+
+1838
+01:05:07,980 --> 01:05:09,010
+let's come over to this
+
+1839
+01:05:09,010 --> 01:05:10,040
+side here first and just say,
+
+1840
+01:05:10,080 --> 01:05:11,560
+supposing we have a collection of,
+
+1841
+01:05:12,840 --> 01:05:15,780
+we have a probability distribution for some variable,
+
+1842
+01:05:15,920 --> 01:05:16,740
+let's say for lambda,
+
+1843
+01:05:17,380 --> 01:05:17,820
+lambda,
+
+1844
+01:05:17,820 --> 01:05:18,680
+one of the eigenvalues,
+
+1845
+01:05:18,720 --> 01:05:20,000
+we're going to measure an eigenvalue of L.
+
+1846
+01:05:20,660 --> 01:05:22,820
+Supposing we have a probability for lambda,
+
+1847
+01:05:23,080 --> 01:05:24,300
+there it is right there,
+
+1848
+01:05:24,320 --> 01:05:26,240
+the thing I called prob of lambda,
+
+1849
+01:05:30,120 --> 01:05:31,320
+probability for lambda,
+
+1850
+01:05:33,500 --> 01:05:35,090
+and lambda can take on
+
+1851
+01:05:35,090 --> 01:05:36,680
+a whole bunch of different values,
+
+1852
+01:05:36,940 --> 01:05:38,000
+lambda sub i,
+
+1853
+01:05:38,000 --> 01:05:38,660
+let's call them.
+
+1854
+01:05:38,960 --> 01:05:41,700
+So this becomes the probability for lambda sub i,
+
+1855
+01:05:41,720 --> 01:05:43,760
+then the average,
+
+1856
+01:05:43,980 --> 01:05:45,520
+the definition of the average,
+
+1857
+01:05:45,840 --> 01:05:47,960
+is the sum over i
+
+1858
+01:05:49,600 --> 01:05:54,320
+of lambda i times the probability for lambda i.
+
+1859
+01:05:55,240 --> 01:05:57,180
+That's the definition of the average,
+
+1860
+01:05:57,480 --> 01:06:00,800
+and we'll represent the average by the symbol,
+
+1861
+01:06:03,840 --> 01:06:05,220
+the bracket symbol.
+
+1862
+01:06:06,040 --> 01:06:09,200
+Why it's labeled by the bracket symbol we'll come to.
+
+1863
+01:06:10,040 --> 01:06:10,720
+Okay.
+
+1864
+01:06:10,720 --> 01:06:12,240
+But that's the definition,
+
+1865
+01:06:12,440 --> 01:06:14,460
+standard probability theory definition
+
+1866
+01:06:14,460 --> 01:06:16,700
+of the average of a quantity.
+
+1867
+01:06:17,180 --> 01:06:19,620
+The quantity times the probability that
+
+1868
+01:06:19,620 --> 01:06:22,060
+the quantity takes on that particular value,
+
+1869
+01:06:22,260 --> 01:06:23,380
+summed over i,
+
+1870
+01:06:23,620 --> 01:06:24,480
+and as I said,
+
+1871
+01:06:24,560 --> 01:06:26,340
+that's standard definition of average.
+
+1872
+01:06:27,820 --> 01:06:28,540
+Okay.
+
+1873
+01:06:29,260 --> 01:06:31,340
+What is the average
+
+1874
+01:06:31,340 --> 01:06:33,320
+in a state A
+
+1875
+01:06:33,320 --> 01:06:35,860
+of the observable lambda?
+
+1876
+01:06:36,300 --> 01:06:38,100
+So let's say that A
+
+1877
+01:06:38,720 --> 01:06:40,220
+is expanded
+
+1878
+01:06:41,460 --> 01:06:42,640
+in a basis.
+
+1879
+01:06:42,720 --> 01:06:43,660
+Which basis?
+
+1880
+01:06:44,520 --> 01:06:46,960
+The basis of eigenvectors of L.
+
+1881
+01:06:49,300 --> 01:06:49,980
+Alright?
+
+1882
+01:06:50,060 --> 01:06:50,740
+Remember,
+
+1883
+01:06:50,740 --> 01:06:52,200
+L is a Hermitian operator,
+
+1884
+01:06:52,580 --> 01:06:55,060
+it's eigenvectors form a basis,
+
+1885
+01:06:55,320 --> 01:06:58,880
+you can expand vectors in an orthonormal basis.
+
+1886
+01:06:59,320 --> 01:07:01,260
+So let's write this in the form
+
+1887
+01:07:02,060 --> 01:07:03,360
+alpha sub i,
+
+1888
+01:07:03,660 --> 01:07:04,880
+sum over i,
+
+1889
+01:07:05,620 --> 01:07:06,840
+lambda sub i.
+
+1890
+01:07:07,300 --> 01:07:10,360
+Remember that the lambdas are an orthonormal basis.
+
+1891
+01:07:11,820 --> 01:07:13,780
+What is the probability
+
+1892
+01:07:15,140 --> 01:07:15,780
+lambda
+
+1893
+01:07:16,460 --> 01:07:17,820
+in the state i?
+
+1894
+01:07:20,640 --> 01:07:21,280
+Probability
+
+1895
+01:07:21,280 --> 01:07:23,920
+for lambda i
+
+1896
+01:07:23,920 --> 01:07:26,540
+is equal to alpha star i,
+
+1897
+01:07:26,760 --> 01:07:27,700
+alpha i.
+
+1898
+01:07:29,060 --> 01:07:29,700
+Alright?
+
+1899
+01:07:31,060 --> 01:07:32,160
+I maintain,
+
+1900
+01:07:32,540 --> 01:07:33,400
+oh this is the probability,
+
+1901
+01:07:34,339 --> 01:07:35,380
+and the average
+
+1902
+01:07:35,380 --> 01:07:37,240
+of lambda,
+
+1903
+01:07:37,500 --> 01:07:38,980
+let's call it the average of lambda,
+
+1904
+01:07:38,980 --> 01:07:41,040
+is the sum over i,
+
+1905
+01:07:41,860 --> 01:07:43,180
+lambda sub i,
+
+1906
+01:07:43,900 --> 01:07:46,620
+alpha i star alpha i.
+
+1907
+01:07:48,660 --> 01:07:50,340
+All I've done is plug in.
+
+1908
+01:07:51,880 --> 01:07:53,060
+Let me prove
+
+1909
+01:07:53,060 --> 01:07:54,860
+that this is the same thing
+
+1910
+01:07:54,860 --> 01:07:58,440
+as taking the vector a,
+
+1911
+01:07:59,120 --> 01:08:00,680
+the bra vector a,
+
+1912
+01:08:00,940 --> 01:08:04,120
+and sandwiching between the bra vector a
+
+1913
+01:08:04,120 --> 01:08:05,440
+and the ket vector a,
+
+1914
+01:08:05,580 --> 01:08:07,100
+the operator L.
+
+1915
+01:08:07,380 --> 01:08:08,960
+The operator L is the operator L,
+
+1916
+01:08:08,980 --> 01:08:11,400
+is the operator whose eigenvalues are lambda.
+
+1917
+01:08:12,840 --> 01:08:14,180
+Let's see if we can prove that.
+
+1918
+01:08:14,760 --> 01:08:16,180
+It's actually quite easy.
+
+1919
+01:08:16,720 --> 01:08:18,740
+All we do is say,
+
+1920
+01:08:18,840 --> 01:08:20,180
+let's just plug in,
+
+1921
+01:08:20,260 --> 01:08:21,760
+let's come to another blackboard,
+
+1922
+01:08:21,880 --> 01:08:22,399
+plug in,
+
+1923
+01:08:22,600 --> 01:08:23,460
+and
+
+1924
+01:08:25,300 --> 01:08:26,740
+let's see if we can prove that.
+
+1925
+01:08:30,620 --> 01:08:31,200
+Alright,
+
+1926
+01:08:31,200 --> 01:08:32,740
+so let's calculate this
+
+1927
+01:08:34,420 --> 01:08:35,660
+creature over here.
+
+1928
+01:08:36,300 --> 01:08:36,880
+A,
+
+1929
+01:08:36,880 --> 01:08:39,100
+is this summation,
+
+1930
+01:08:39,380 --> 01:08:41,979
+and let's use also that the bra vector a
+
+1931
+01:08:42,540 --> 01:08:44,279
+is the summation over i
+
+1932
+01:08:45,219 --> 01:08:47,020
+of lambda sub i,
+
+1933
+01:08:47,660 --> 01:08:49,160
+alpha star i.
+
+1934
+01:08:50,740 --> 01:08:51,300
+Alright,
+
+1935
+01:08:51,300 --> 01:08:52,160
+so we make a sandwich.
+
+1936
+01:08:52,640 --> 01:08:55,520
+The sandwich is the sum over i and j.
+
+1937
+01:08:55,800 --> 01:08:56,359
+Why?
+
+1938
+01:08:56,359 --> 01:08:57,140
+There are two sums,
+
+1939
+01:08:57,420 --> 01:09:00,920
+one for the bra and one for the ket.
+
+1940
+01:09:03,260 --> 01:09:04,399
+Lambda sub j
+
+1941
+01:09:06,740 --> 01:09:08,080
+alpha star j.
+
+1942
+01:09:10,020 --> 01:09:11,620
+This is the bra vector a,
+
+1943
+01:09:11,819 --> 01:09:13,640
+and then we put L there,
+
+1944
+01:09:14,240 --> 01:09:15,859
+and then we put the ket vector,
+
+1945
+01:09:15,939 --> 01:09:17,120
+alpha i,
+
+1946
+01:09:18,139 --> 01:09:19,060
+lambda i.
+
+1947
+01:09:21,380 --> 01:09:23,300
+It's pure plug-in-ology.
+
+1948
+01:09:25,220 --> 01:09:25,779
+Now,
+
+1949
+01:09:26,359 --> 01:09:29,220
+what is L when it acts on lambda sub i?
+
+1950
+01:09:33,560 --> 01:09:34,380
+Lambda sub i is the function of L,
+
+1951
+01:09:34,380 --> 01:09:36,359
+and the lambda sub i's are the eigenvectors of L.
+
+1952
+01:09:37,620 --> 01:09:38,100
+So,
+
+1953
+01:09:38,100 --> 01:09:39,939
+when L acts on lambda sub i,
+
+1954
+01:09:40,479 --> 01:09:42,500
+we still have sum i j,
+
+1955
+01:09:43,580 --> 01:09:44,359
+lambda j,
+
+1956
+01:09:45,640 --> 01:09:46,740
+alpha star j,
+
+1957
+01:09:47,020 --> 01:09:47,899
+alpha i,
+
+1958
+01:09:48,580 --> 01:09:50,560
+and now L hits lambda i,
+
+1959
+01:09:50,800 --> 01:09:52,260
+and it gives us lambda sub i
+
+1960
+01:09:53,760 --> 01:09:55,140
+times lambda i.
+
+1961
+01:09:56,160 --> 01:09:57,780
+Now all this junk in here
+
+1962
+01:09:58,380 --> 01:09:59,320
+is just a number,
+
+1963
+01:09:59,420 --> 01:10:00,560
+for each i and j.
+
+1964
+01:10:00,780 --> 01:10:01,880
+For each i and j,
+
+1965
+01:10:01,880 --> 01:10:02,760
+this is just a number.
+
+1966
+01:10:03,880 --> 01:10:04,420
+So,
+
+1967
+01:10:04,420 --> 01:10:06,400
+that means we are called upon
+
+1968
+01:10:06,400 --> 01:10:08,180
+to take the inner product of
+
+1969
+01:10:08,180 --> 01:10:09,500
+lambda i with lambda j.
+
+1970
+01:10:09,700 --> 01:10:10,500
+What is that?
+
+1971
+01:10:12,720 --> 01:10:13,260
+Right,
+
+1972
+01:10:13,260 --> 01:10:14,900
+it's one or zero,
+
+1973
+01:10:14,960 --> 01:10:17,140
+depending on whether i equals j or not.
+
+1974
+01:10:18,040 --> 01:10:18,960
+Given that,
+
+1975
+01:10:20,220 --> 01:10:21,080
+this sum,
+
+1976
+01:10:21,080 --> 01:10:22,500
+the double sum,
+
+1977
+01:10:22,660 --> 01:10:24,220
+collapses to a single sum,
+
+1978
+01:10:24,420 --> 01:10:27,040
+in which lambda i and lambda j are identified,
+
+1979
+01:10:27,509 --> 01:10:29,620
+and this just becomes sum on i,
+
+1980
+01:10:31,840 --> 01:10:32,740
+lambda i,
+
+1981
+01:10:32,760 --> 01:10:33,480
+well,
+
+1982
+01:10:33,480 --> 01:10:34,180
+okay,
+
+1983
+01:10:36,480 --> 01:10:39,900
+let's cut through some of the steps.
+
+1984
+01:10:42,279 --> 01:10:44,460
+If j is not equal to i,
+
+1985
+01:10:44,680 --> 01:10:45,320
+you get nothing.
+
+1986
+01:10:45,560 --> 01:10:47,340
+If j is equal to i,
+
+1987
+01:10:47,580 --> 01:10:49,080
+the inner product is just one.
+
+1988
+01:10:49,720 --> 01:10:50,280
+So,
+
+1989
+01:10:50,280 --> 01:10:51,300
+this just becomes
+
+1990
+01:10:51,300 --> 01:10:52,520
+the sum over i,
+
+1991
+01:10:53,280 --> 01:10:54,560
+alpha star i,
+
+1992
+01:10:54,800 --> 01:10:55,600
+alpha i,
+
+1993
+01:10:55,900 --> 01:10:57,020
+lambda i,
+
+1994
+01:10:58,480 --> 01:10:59,600
+which is exactly
+
+1995
+01:10:59,600 --> 01:11:02,740
+what we have over here,
+
+1996
+01:11:02,740 --> 01:11:03,000
+over here.
+
+1997
+01:11:04,640 --> 01:11:05,240
+So,
+
+1998
+01:11:05,240 --> 01:11:06,760
+we've proved this relationship here,
+
+1999
+01:11:06,840 --> 01:11:08,240
+that the average
+
+2000
+01:11:09,000 --> 01:11:10,820
+of any observable
+
+2001
+01:11:11,460 --> 01:11:12,860
+is just the sandwich,
+
+2002
+01:11:13,120 --> 01:11:14,100
+the braquette,
+
+2003
+01:11:14,140 --> 01:11:14,880
+the braquette,
+
+2004
+01:11:15,000 --> 01:11:16,000
+the braquette,
+
+2005
+01:11:16,100 --> 01:11:17,180
+the braquette.
+
+2006
+01:11:18,018 --> 01:11:18,598
+بركة
+
+2007
+01:11:19,202 --> 01:11:22,322
+made out of sandwiching L,
+
+2008
+01:11:22,322 --> 01:11:23,702
+the observable,
+
+2009
+01:11:23,702 --> 01:11:25,042
+between a bracket,
+
+2010
+01:11:25,042 --> 01:11:26,422
+between a bra and a ket
+
+2011
+01:11:27,861 --> 01:11:29,682
+That's the same bra and ket,
+
+2012
+01:11:29,682 --> 01:11:31,362
+the bra and ket associated
+
+2013
+01:11:31,362 --> 01:11:33,042
+with the state of the system
+
+2014
+01:11:35,522 --> 01:11:39,942
+That's where this notation of bracket comes from
+
+2015
+01:11:40,902 --> 01:11:41,342
+Okay,
+
+2016
+01:11:41,342 --> 01:11:42,202
+that's a good thing to know,
+
+2017
+01:11:42,202 --> 01:11:44,542
+that if you want the average of a quantity
+
+2018
+01:11:44,542 --> 01:11:48,362
+just sandwich it between the bracket,
+
+2019
+01:11:48,362 --> 01:11:50,702
+the bra ket representing the state
+
+2020
+01:11:56,901 --> 01:11:58,402
+Any questions about that?
+
+2021
+01:12:00,922 --> 01:12:01,442
+Okay,
+
+2022
+01:12:01,442 --> 01:12:02,052
+now I'm going to tell
+
+2023
+01:12:02,052 --> 01:12:02,662
+you what we're going to do
+
+2024
+01:12:02,662 --> 01:12:04,442
+What we're going to do is
+
+2025
+01:12:04,442 --> 01:12:06,222
+we're going to try to find equations
+
+2026
+01:12:08,301 --> 01:12:12,542
+governing the time evolution of these average values
+
+2027
+01:12:12,542 --> 01:12:16,942
+The idea is that under suitable,
+
+2028
+01:12:16,942 --> 01:12:18,562
+reasonable circumstances
+
+2029
+01:12:18,562 --> 01:12:22,042
+if the probability distributions are nicely shaped,
+
+2030
+01:12:22,042 --> 01:12:24,441
+if they have a sort of nice bell-shaped curve
+
+2031
+01:12:24,441 --> 01:12:31,202
+that by calculating the time evolution of averages
+
+2032
+01:12:31,742 --> 01:12:35,082
+you're doing something pretty close to what
+
+2033
+01:12:35,082 --> 01:12:38,422
+classical physics would instruct you to do
+
+2034
+01:12:38,422 --> 01:12:41,182
+about calculating the equations of motion
+
+2035
+01:12:41,182 --> 01:12:42,302
+uh...
+
+2036
+01:12:42,542 --> 01:12:43,662
+of the classical system
+
+2037
+01:12:44,252 --> 01:12:46,982
+the way averages tend to evolve in time
+
+2038
+01:12:47,412 --> 01:12:48,102
+as I said,
+
+2039
+01:12:48,102 --> 01:12:49,362
+under suitable circumstances
+
+2040
+01:12:50,092 --> 01:12:53,147
+follows equations which look very very
+
+2041
+01:12:53,147 --> 01:12:56,202
+much like the corresponding classical equations
+
+2042
+01:12:57,102 --> 01:12:57,502
+Alright,
+
+2043
+01:12:57,502 --> 01:13:00,962
+so our next goal is
+
+2044
+01:13:00,962 --> 01:13:04,422
+to try to find the rules
+
+2045
+01:13:05,631 --> 01:13:09,102
+for the time evolution of these average values,
+
+2046
+01:13:09,102 --> 01:13:10,782
+expectation values
+
+2047
+01:13:11,112 --> 01:13:12,202
+and that's not so hard
+
+2048
+01:13:12,202 --> 01:13:14,702
+We have all the equipment we need to do that
+
+2049
+01:13:15,862 --> 01:13:17,482
+and let's see if we can do it
+
+2050
+01:13:22,942 --> 01:13:23,462
+Alright,
+
+2051
+01:13:23,462 --> 01:13:24,862
+so at any given time
+
+2052
+01:13:24,862 --> 01:13:26,202
+at any given time
+
+2053
+01:13:26,702 --> 01:13:29,942
+the average of lambda is given by
+
+2054
+01:13:30,702 --> 01:13:31,582
+psi of t,
+
+2055
+01:13:31,582 --> 01:13:33,362
+that's the state vector at time t
+
+2056
+01:13:35,321 --> 01:13:38,262
+the operator l representing the observable
+
+2057
+01:13:38,842 --> 01:13:40,322
+times psi of t
+
+2058
+01:13:40,322 --> 01:13:42,442
+In other words,
+
+2059
+01:13:42,442 --> 01:13:44,182
+I just plugged in for a
+
+2060
+01:13:45,281 --> 01:13:48,382
+the actual time dependent state of the system
+
+2061
+01:13:48,922 --> 01:13:50,782
+this is the average of
+
+2062
+01:13:50,782 --> 01:13:52,642
+l as a function of time
+
+2063
+01:13:52,642 --> 01:13:54,082
+I don't know,
+
+2064
+01:13:54,082 --> 01:13:54,882
+what should we call it?
+
+2065
+01:13:54,942 --> 01:13:56,142
+Let's call it uh...
+
+2066
+01:13:57,582 --> 01:13:58,102
+okay,
+
+2067
+01:13:58,102 --> 01:14:02,482
+it's the average of l as a function of time
+
+2068
+01:14:02,482 --> 01:14:02,882
+again,
+
+2069
+01:14:02,882 --> 01:14:05,742
+this is a kind of a wrong notation
+
+2070
+01:14:06,182 --> 01:14:07,782
+it's not the average of l of t
+
+2071
+01:14:08,322 --> 01:14:10,302
+it's the average of l as a function of time
+
+2072
+01:14:10,302 --> 01:14:11,422
+as a function of time
+
+2073
+01:14:11,422 --> 01:14:13,862
+Can you put the t outside the bracket?
+
+2074
+01:14:13,942 --> 01:14:14,662
+We could
+
+2075
+01:14:16,421 --> 01:14:18,942
+We could put the t outside the bracket
+
+2076
+01:14:22,422 --> 01:14:23,882
+That's non-standard
+
+2077
+01:14:23,882 --> 01:14:24,542
+Sub t
+
+2078
+01:14:26,061 --> 01:14:28,582
+But why don't we just go with standard notation
+
+2079
+01:14:28,582 --> 01:14:30,482
+Standard notation and remember
+
+2080
+01:14:33,781 --> 01:14:34,302
+Well,
+
+2081
+01:14:34,302 --> 01:14:34,962
+okay,
+
+2082
+01:14:34,962 --> 01:14:36,302
+I'm not going to do it
+
+2083
+01:14:36,302 --> 01:14:37,862
+I'm going to just call it average of l
+
+2084
+01:14:38,582 --> 01:14:40,042
+as a function of time
+
+2085
+01:14:40,302 --> 01:14:40,602
+Okay,
+
+2086
+01:14:40,602 --> 01:14:41,742
+as a function of time
+
+2087
+01:14:42,302 --> 01:14:43,842
+It is a function of time
+
+2088
+01:14:43,842 --> 01:14:44,742
+That's the main thing,
+
+2089
+01:14:44,742 --> 01:14:45,622
+it's a function of time
+
+2090
+01:14:45,622 --> 01:14:46,762
+We could do something else
+
+2091
+01:14:46,762 --> 01:14:48,502
+We could call it l bar
+
+2092
+01:14:48,502 --> 01:14:50,182
+Another notation for average is to
+
+2093
+01:14:50,182 --> 01:14:51,862
+put a bar on top of something
+
+2094
+01:14:52,542 --> 01:14:54,442
+That's another notation for average
+
+2095
+01:14:54,442 --> 01:14:55,302
+Standard notation
+
+2096
+01:14:55,302 --> 01:14:57,282
+And we could just call it l bar of t
+
+2097
+01:14:57,962 --> 01:15:00,642
+It means the average as a function of time
+
+2098
+01:15:01,061 --> 01:15:02,182
+Let's do it that way
+
+2099
+01:15:03,061 --> 01:15:04,342
+What we would like to do with this
+
+2100
+01:15:04,342 --> 01:15:06,722
+We'd like to find equations of motion for it
+
+2101
+01:15:06,722 --> 01:15:07,402
+In other words,
+
+2102
+01:15:07,402 --> 01:15:08,182
+we'd like to find out
+
+2103
+01:15:08,182 --> 01:15:09,442
+how it changes with time
+
+2104
+01:15:10,302 --> 01:15:11,782
+Differentiating it with respect to time
+
+2105
+01:15:11,782 --> 01:15:14,242
+I want to take this quantity
+
+2106
+01:15:14,242 --> 01:15:16,422
+and differentiate it with respect to time
+
+2107
+01:15:16,422 --> 01:15:17,402
+So
+
+2108
+01:15:18,462 --> 01:15:19,942
+Let's call it l dot
+
+2109
+01:15:19,942 --> 01:15:22,682
+Now we have bars with dots on top of them
+
+2110
+01:15:23,942 --> 01:15:25,162
+l dot of t
+
+2111
+01:15:25,162 --> 01:15:27,342
+is the time derivative of this
+
+2112
+01:15:27,342 --> 01:15:28,882
+Now l of t,
+
+2113
+01:15:28,882 --> 01:15:30,502
+that's just some fixed operator
+
+2114
+01:15:30,502 --> 01:15:32,722
+It's some fixed definite operator
+
+2115
+01:15:32,722 --> 01:15:34,262
+All of the time dependence
+
+2116
+01:15:34,882 --> 01:15:36,322
+is in the state vectors
+
+2117
+01:15:36,322 --> 01:15:39,041
+The state vectors change with time
+
+2118
+01:15:39,041 --> 01:15:40,281
+The operator changes with time
+
+2119
+01:15:40,302 --> 01:15:40,622
+The operators,
+
+2120
+01:15:40,622 --> 01:15:42,142
+those are fixed
+
+2121
+01:15:42,142 --> 01:15:43,522
+Those are definite operators
+
+2122
+01:15:44,402 --> 01:15:45,642
+So let's see if we can
+
+2123
+01:15:46,182 --> 01:15:47,282
+take the time derivative
+
+2124
+01:15:47,282 --> 01:15:49,142
+of this here thing
+
+2125
+01:15:50,462 --> 01:15:51,742
+The time derivatives
+
+2126
+01:15:52,322 --> 01:15:54,202
+act on the psi of t's
+
+2127
+01:15:54,202 --> 01:15:56,122
+When you take the time derivative
+
+2128
+01:15:56,122 --> 01:15:57,002
+of a product,
+
+2129
+01:15:57,002 --> 01:15:58,242
+and this can be a product of
+
+2130
+01:15:58,242 --> 01:15:58,662
+vectors,
+
+2131
+01:15:58,662 --> 01:16:00,122
+it can be a product of numbers
+
+2132
+01:16:00,122 --> 01:16:01,622
+it can be a product of functions
+
+2133
+01:16:01,622 --> 01:16:01,982
+well,
+
+2134
+01:16:01,982 --> 01:16:02,382
+functions
+
+2135
+01:16:03,421 --> 01:16:05,222
+The rule is always the same
+
+2136
+01:16:05,861 --> 01:16:07,902
+It's the time derivative of one
+
+2137
+01:16:07,902 --> 01:16:08,842
+times the other,
+
+2138
+01:16:08,842 --> 01:16:10,262
+plus the time derivative
+
+2139
+01:16:10,302 --> 01:16:11,502
+of the other times the one
+
+2140
+01:16:12,622 --> 01:16:13,862
+That's very general
+
+2141
+01:16:13,862 --> 01:16:14,622
+So,
+
+2142
+01:16:14,622 --> 01:16:16,222
+this is going to equal then
+
+2143
+01:16:16,222 --> 01:16:18,822
+d psi by dt
+
+2144
+01:16:18,822 --> 01:16:20,302
+the bra vector
+
+2145
+01:16:21,322 --> 01:16:21,962
+l
+
+2146
+01:16:22,822 --> 01:16:23,462
+psi
+
+2147
+01:16:24,362 --> 01:16:25,002
+plus
+
+2148
+01:16:27,962 --> 01:16:29,242
+psi l
+
+2149
+01:16:30,622 --> 01:16:31,862
+d psi dt
+
+2150
+01:16:36,002 --> 01:16:36,642
+Oops,
+
+2151
+01:16:36,642 --> 01:16:38,322
+I erased a very important
+
+2152
+01:16:38,322 --> 01:16:40,202
+equation or else I buried it
+
+2153
+01:16:40,302 --> 01:16:40,822
+under the
+
+2154
+01:16:40,822 --> 01:16:42,182
+under the
+
+2155
+01:16:44,422 --> 01:16:44,942
+blackboard,
+
+2156
+01:16:44,942 --> 01:16:46,162
+let me write it over here
+
+2157
+01:16:47,202 --> 01:16:48,042
+d psi
+
+2158
+01:16:49,022 --> 01:16:49,542
+dt
+
+2159
+01:16:51,222 --> 01:16:52,162
+is equal to
+
+2160
+01:16:52,162 --> 01:16:53,522
+minus i h
+
+2161
+01:16:54,442 --> 01:16:54,962
+psi
+
+2162
+01:16:57,422 --> 01:16:58,362
+That's what we're going to
+
+2163
+01:16:58,362 --> 01:16:59,182
+stick in over here
+
+2164
+01:16:59,722 --> 01:17:02,122
+So we begin to see that the
+
+2165
+01:17:02,122 --> 01:17:03,822
+Hamiltonian is going to tell us something
+
+2166
+01:17:03,822 --> 01:17:06,222
+about how average values change with
+
+2167
+01:17:06,222 --> 01:17:06,502
+time
+
+2168
+01:17:07,442 --> 01:17:09,482
+The Hamiltonian of classical physics
+
+2169
+01:17:10,302 --> 01:17:11,302
+tells us how the corresponding
+
+2170
+01:17:11,302 --> 01:17:12,782
+quantities change with time
+
+2171
+01:17:12,782 --> 01:17:15,262
+The Hamiltonian of quantum mechanics
+
+2172
+01:17:15,262 --> 01:17:17,282
+will tell us how the averages change with time
+
+2173
+01:17:18,142 --> 01:17:19,722
+We're going to also need
+
+2174
+01:17:19,722 --> 01:17:21,402
+the bra version of this
+
+2175
+01:17:21,402 --> 01:17:24,022
+So let's write the bra version of this
+
+2176
+01:17:24,022 --> 01:17:26,262
+The bra version of it is
+
+2177
+01:17:26,262 --> 01:17:28,202
+d by dt
+
+2178
+01:17:28,202 --> 01:17:30,282
+of the bra vector
+
+2179
+01:17:30,282 --> 01:17:31,142
+psi of t
+
+2180
+01:17:33,022 --> 01:17:34,082
+is equal
+
+2181
+01:17:34,942 --> 01:17:36,062
+plus i
+
+2182
+01:17:38,142 --> 01:17:39,222
+plus i
+
+2183
+01:17:40,702 --> 01:17:41,502
+psi h
+
+2184
+01:17:43,882 --> 01:17:44,942
+h is her mission
+
+2185
+01:17:45,442 --> 01:17:47,262
+and so we don't have to her mission
+
+2186
+01:17:47,262 --> 01:17:48,322
+conjugate it
+
+2187
+01:17:48,322 --> 01:17:50,102
+it is her mission
+
+2188
+01:17:50,102 --> 01:17:52,542
+but we do have to change the sign of i
+
+2189
+01:17:52,542 --> 01:17:54,502
+when we go from bra to kets
+
+2190
+01:17:55,662 --> 01:17:56,062
+Okay,
+
+2191
+01:17:56,062 --> 01:17:57,482
+so now we're just going to plug in
+
+2192
+01:17:57,482 --> 01:17:58,682
+Let's just plug in
+
+2193
+01:17:59,302 --> 01:18:00,722
+and we'll get l dot
+
+2194
+01:18:05,242 --> 01:18:05,642
+Yeah
+
+2195
+01:18:07,702 --> 01:18:08,502
+l dot
+
+2196
+01:18:09,222 --> 01:18:09,342
+Okay,
+
+2197
+01:18:09,342 --> 01:18:10,782
+let's do this one first over here
+
+2198
+01:18:11,342 --> 01:18:12,862
+This one is going to be plus
+
+2199
+01:18:13,581 --> 01:18:15,442
+psi and there's a minus sign
+
+2200
+01:18:15,442 --> 01:18:16,962
+minus sign from here
+
+2201
+01:18:17,462 --> 01:18:18,322
+minus i
+
+2202
+01:18:19,741 --> 01:18:20,222
+psi
+
+2203
+01:18:23,861 --> 01:18:24,342
+l
+
+2204
+01:18:25,702 --> 01:18:26,182
+h
+
+2205
+01:18:27,962 --> 01:18:28,442
+psi
+
+2206
+01:18:31,602 --> 01:18:32,902
+That's what we get from here
+
+2207
+01:18:32,902 --> 01:18:34,402
+How about the other one?
+
+2208
+01:18:34,502 --> 01:18:36,842
+The other one is plus i
+
+2209
+01:18:39,782 --> 01:18:40,762
+psi
+
+2210
+01:18:40,762 --> 01:18:41,252
+h
+
+2211
+01:18:42,642 --> 01:18:43,132
+l
+
+2212
+01:18:44,402 --> 01:18:44,892
+psi
+
+2213
+01:18:50,121 --> 01:18:51,102
+Or
+
+2214
+01:18:51,102 --> 01:18:52,942
+i
+
+2215
+01:18:56,641 --> 01:18:59,962
+times the expectation value
+
+2216
+01:18:59,962 --> 01:19:01,042
+We have psi here,
+
+2217
+01:19:01,042 --> 01:19:01,682
+psi here
+
+2218
+01:19:01,682 --> 01:19:02,582
+We have psi here,
+
+2219
+01:19:02,582 --> 01:19:03,202
+psi here
+
+2220
+01:19:03,202 --> 01:19:04,362
+i
+
+2221
+01:19:04,362 --> 01:19:06,282
+times h
+
+2222
+01:19:06,282 --> 01:19:06,822
+l
+
+2223
+01:19:06,822 --> 01:19:08,342
+minus l
+
+2224
+01:19:08,342 --> 01:19:08,862
+h
+
+2225
+01:19:11,741 --> 01:19:12,402
+psi
+
+2226
+01:19:20,532 --> 01:19:22,722
+How about h l minus l h
+
+2227
+01:19:23,402 --> 01:19:24,402
+Is it zero?
+
+2228
+01:19:25,862 --> 01:19:26,682
+Why not?
+
+2229
+01:19:26,842 --> 01:19:27,682
+h l
+
+2230
+01:19:27,682 --> 01:19:29,862
+Who cares which way we order from?
+
+2231
+01:19:31,241 --> 01:19:31,902
+Well,
+
+2232
+01:19:31,902 --> 01:19:32,562
+operators
+
+2233
+01:19:32,562 --> 01:19:34,582
+don't necessarily commute
+
+2234
+01:19:34,582 --> 01:19:36,362
+Commute means
+
+2235
+01:19:36,822 --> 01:19:37,822
+that you can
+
+2236
+01:19:39,102 --> 01:19:41,142
+freely interchange the order of them
+
+2237
+01:19:41,142 --> 01:19:42,242
+In general,
+
+2238
+01:19:42,242 --> 01:19:43,502
+this is true of matrices
+
+2239
+01:19:44,082 --> 01:19:45,342
+Products of matrices
+
+2240
+01:19:45,342 --> 01:19:47,042
+don't necessarily commute
+
+2241
+01:19:47,842 --> 01:19:49,082
+Sometimes they do
+
+2242
+01:19:49,082 --> 01:19:50,662
+And in particular
+
+2243
+01:19:50,662 --> 01:19:52,962
+an operator commutes with itself
+
+2244
+01:19:54,422 --> 01:19:56,621
+l times l minus l times l
+
+2245
+01:19:56,621 --> 01:19:58,082
+That's okay
+
+2246
+01:19:58,082 --> 01:19:58,962
+You can do it there
+
+2247
+01:19:59,702 --> 01:20:01,902
+l times l minus l times l is zero
+
+2248
+01:20:01,902 --> 01:20:02,501
+Okay?
+
+2249
+01:20:02,602 --> 01:20:04,802
+So is h times h minus h times h
+
+2250
+01:20:04,802 --> 01:20:06,682
+But in general
+
+2251
+01:20:08,822 --> 01:20:11,742
+l times h is not equal to h times l
+
+2252
+01:20:11,742 --> 01:20:12,262
+It may be
+
+2253
+01:20:12,262 --> 01:20:14,082
+But typically not
+
+2254
+01:20:16,982 --> 01:20:18,562
+What is this animal called?
+
+2255
+01:20:18,682 --> 01:20:20,542
+h times l minus l times h
+
+2256
+01:20:21,862 --> 01:20:23,602
+It's called the commutator
+
+2257
+01:20:23,602 --> 01:20:24,262
+of the two
+
+2258
+01:20:24,782 --> 01:20:25,302
+Okay,
+
+2259
+01:20:25,302 --> 01:20:26,922
+so this is the definition
+
+2260
+01:20:26,922 --> 01:20:28,602
+Given to operators
+
+2261
+01:20:28,602 --> 01:20:29,402
+Well,
+
+2262
+01:20:29,402 --> 01:20:31,882
+they could be just h and l
+
+2263
+01:20:32,402 --> 01:20:33,402
+The combination
+
+2264
+01:20:34,262 --> 01:20:36,802
+h l minus l l
+
+2265
+01:20:36,822 --> 01:20:38,702
+h is written
+
+2266
+01:20:39,482 --> 01:20:40,982
+with a square bracket
+
+2267
+01:20:42,722 --> 01:20:44,242
+h comma l
+
+2268
+01:20:45,042 --> 01:20:46,502
+And it's called
+
+2269
+01:20:46,502 --> 01:20:47,082
+the commutator
+
+2270
+01:20:53,561 --> 01:20:55,162
+Commuting has something to do with
+
+2271
+01:20:55,162 --> 01:20:57,202
+passing freely between each other
+
+2272
+01:20:57,202 --> 01:20:58,442
+Exactly what it has to do with
+
+2273
+01:20:58,442 --> 01:20:59,742
+taking the subway in New York
+
+2274
+01:20:59,742 --> 01:21:00,182
+I don't know
+
+2275
+01:21:00,182 --> 01:21:05,022
+But it's called
+
+2276
+01:21:05,022 --> 01:21:05,982
+the commutator
+
+2277
+01:21:07,002 --> 01:21:08,742
+And so what we have here
+
+2278
+01:21:08,742 --> 01:21:10,842
+is the equation
+
+2279
+01:21:10,842 --> 01:21:11,922
+that the average
+
+2280
+01:21:14,672 --> 01:21:15,902
+of l
+
+2281
+01:21:16,672 --> 01:21:18,022
+at any given time
+
+2282
+01:21:18,962 --> 01:21:19,782
+Sorry,
+
+2283
+01:21:19,782 --> 01:21:21,102
+the average of the time
+
+2284
+01:21:21,102 --> 01:21:23,242
+The time derivative
+
+2285
+01:21:23,242 --> 01:21:24,222
+of the average
+
+2286
+01:21:24,822 --> 01:21:25,762
+is equal
+
+2287
+01:21:27,322 --> 01:21:28,462
+to psi
+
+2288
+01:21:29,801 --> 01:21:31,282
+commutator h l
+
+2289
+01:21:33,781 --> 01:21:34,602
+psi
+
+2290
+01:21:34,602 --> 01:21:36,742
+But this object over here
+
+2291
+01:21:36,822 --> 01:21:39,182
+is just the expectation value
+
+2292
+01:21:39,182 --> 01:21:42,082
+of commutator of h with l
+
+2293
+01:21:42,082 --> 01:21:44,502
+So we can think of this
+
+2294
+01:21:44,502 --> 01:21:45,282
+as an equation
+
+2295
+01:21:45,282 --> 01:21:47,802
+relating the time derivative
+
+2296
+01:21:47,802 --> 01:21:48,942
+of a certain average
+
+2297
+01:21:48,942 --> 01:21:51,302
+to the average of another quantity
+
+2298
+01:21:53,061 --> 01:21:54,222
+I did
+
+2299
+01:21:54,222 --> 01:21:55,042
+I did
+
+2300
+01:21:55,042 --> 01:21:55,842
+Is it plus i?
+
+2301
+01:21:55,882 --> 01:21:56,422
+It's plus i
+
+2302
+01:21:56,422 --> 01:21:57,662
+I did
+
+2303
+01:22:05,321 --> 01:22:06,802
+Or we can write it like this
+
+2304
+01:22:06,822 --> 01:22:07,042
+We can write
+
+2305
+01:22:07,042 --> 01:22:10,082
+l dot of t is equal to i
+
+2306
+01:22:11,762 --> 01:22:12,402
+Well,
+
+2307
+01:22:12,402 --> 01:22:12,762
+average
+
+2308
+01:22:13,842 --> 01:22:14,482
+times
+
+2309
+01:22:14,482 --> 01:22:16,762
+average of the commutator
+
+2310
+01:22:16,762 --> 01:22:17,422
+h l
+
+2311
+01:22:17,422 --> 01:22:18,822
+And I'll indicate that by
+
+2312
+01:22:18,822 --> 01:22:20,222
+a bar on top of it
+
+2313
+01:22:20,922 --> 01:22:21,862
+So we have
+
+2314
+01:22:21,862 --> 01:22:23,562
+equations of motion now
+
+2315
+01:22:23,562 --> 01:22:26,302
+for averages in terms of averages
+
+2316
+01:22:28,982 --> 01:22:30,582
+If the probability
+
+2317
+01:22:30,582 --> 01:22:32,322
+distributions for everything
+
+2318
+01:22:32,322 --> 01:22:33,662
+are nice and peaked
+
+2319
+01:22:34,561 --> 01:22:36,442
+Then we really can just say
+
+2320
+01:22:36,822 --> 01:22:37,422
+that the averages are approximately
+
+2321
+01:22:37,422 --> 01:22:38,202
+nice and peaked
+
+2322
+01:22:38,202 --> 01:22:39,942
+so that the averages are close
+
+2323
+01:22:39,942 --> 01:22:43,902
+to the highest point on the curve
+
+2324
+01:22:43,902 --> 01:22:45,542
+and the curve is reasonably narrow
+
+2325
+01:22:45,542 --> 01:22:48,182
+so there isn't an enormous amount of uncertainty
+
+2326
+01:22:48,822 --> 01:22:51,102
+Then this basically says
+
+2327
+01:22:51,102 --> 01:22:53,082
+that the time derivative
+
+2328
+01:22:53,082 --> 01:22:54,322
+of
+
+2329
+01:22:55,482 --> 01:22:56,662
+the classical
+
+2330
+01:22:56,662 --> 01:22:57,962
+or the time derivative
+
+2331
+01:22:57,962 --> 01:23:00,222
+of the approximate l of t
+
+2332
+01:23:00,712 --> 01:23:02,222
+is equal to the approximate
+
+2333
+01:23:02,672 --> 01:23:05,262
+average of commutator of h with l
+
+2334
+01:23:05,262 --> 01:23:06,662
+And so one writes
+
+2335
+01:23:07,382 --> 01:23:09,402
+this of course is not quite right
+
+2336
+01:23:09,402 --> 01:23:10,462
+but right anyway
+
+2337
+01:23:10,462 --> 01:23:11,622
+l dot
+
+2338
+01:23:11,622 --> 01:23:15,602
+is equal to i times commutator h l
+
+2339
+01:23:15,602 --> 01:23:16,852
+Now this has to be taken
+
+2340
+01:23:16,852 --> 01:23:18,102
+with a little grain of salt
+
+2341
+01:23:19,322 --> 01:23:20,862
+What it means
+
+2342
+01:23:20,862 --> 01:23:23,202
+is an equation among averages
+
+2343
+01:23:23,202 --> 01:23:25,502
+It means an equation among averages
+
+2344
+01:23:25,502 --> 01:23:27,822
+but it's often just written in this form
+
+2345
+01:23:27,822 --> 01:23:30,062
+l dot is equal to h times l
+
+2346
+01:23:34,322 --> 01:23:34,922
+Okay
+
+2347
+01:23:34,922 --> 01:23:36,802
+Now before we do this
+
+2348
+01:23:36,822 --> 01:23:37,462
+before we finish
+
+2349
+01:23:37,462 --> 01:23:40,322
+I want to remind you
+
+2350
+01:23:40,322 --> 01:23:42,282
+of a classical mechanics
+
+2351
+01:23:42,662 --> 01:23:43,722
+equation of motion
+
+2352
+01:23:44,702 --> 01:23:46,502
+It's the equations of motion
+
+2353
+01:23:46,502 --> 01:23:48,482
+represented in terms of
+
+2354
+01:23:48,482 --> 01:23:49,322
+Poisson brackets
+
+2355
+01:23:49,322 --> 01:23:50,702
+Do you remember Poisson brackets?
+
+2356
+01:23:50,942 --> 01:23:52,942
+Fish brackets?
+
+2357
+01:23:55,862 --> 01:23:58,422
+What were the Poisson equations
+
+2358
+01:23:58,422 --> 01:23:59,062
+of motion?
+
+2359
+01:24:00,942 --> 01:24:02,062
+Anybody remember?
+
+2360
+01:24:11,422 --> 01:24:12,502
+And if you
+
+2361
+01:24:15,322 --> 01:24:16,002
+Right
+
+2362
+01:24:18,842 --> 01:24:20,302
+d by d t
+
+2363
+01:24:20,302 --> 01:24:20,582
+exactly,
+
+2364
+01:24:20,582 --> 01:24:21,682
+d by d t
+
+2365
+01:24:21,682 --> 01:24:24,122
+of a classical function
+
+2366
+01:24:24,661 --> 01:24:26,382
+and this could be a classical function
+
+2367
+01:24:26,382 --> 01:24:27,682
+of q's and p's
+
+2368
+01:24:27,682 --> 01:24:30,642
+In classical mechanics we have q's and p's
+
+2369
+01:24:33,222 --> 01:24:34,582
+l incidentally
+
+2370
+01:24:34,582 --> 01:24:36,442
+is a standard notation for angular momentum
+
+2371
+01:24:36,822 --> 01:24:38,062
+This could be the angular momentum
+
+2372
+01:24:38,062 --> 01:24:40,622
+but right now I'm just using it
+
+2373
+01:24:40,622 --> 01:24:41,942
+to represent any observable
+
+2374
+01:24:43,582 --> 01:24:44,922
+d by d t
+
+2375
+01:24:44,922 --> 01:24:46,762
+of l is equal to
+
+2376
+01:24:47,722 --> 01:24:49,762
+a certain Poisson bracket
+
+2377
+01:24:50,442 --> 01:24:51,942
+and the Poisson bracket
+
+2378
+01:24:52,642 --> 01:24:54,082
+is the Poisson bracket
+
+2379
+01:24:55,762 --> 01:24:56,822
+of l
+
+2380
+01:24:57,862 --> 01:24:59,442
+with the Hamiltonian
+
+2381
+01:25:00,942 --> 01:25:01,902
+Remember that?
+
+2382
+01:25:03,002 --> 01:25:04,642
+Probably some of you don't
+
+2383
+01:25:04,642 --> 01:25:06,582
+but I'll advise you to go
+
+2384
+01:25:06,582 --> 01:25:06,802
+and look at the Hamiltonian
+
+2385
+01:25:06,822 --> 01:25:07,482
+and look it up
+
+2386
+01:25:07,482 --> 01:25:08,042
+It's in the
+
+2387
+01:25:10,622 --> 01:25:12,262
+next to last
+
+2388
+01:25:13,762 --> 01:25:14,762
+lecture of the
+
+2389
+01:25:14,762 --> 01:25:15,702
+classical mechanics
+
+2390
+01:25:15,702 --> 01:25:17,262
+on Poisson brackets
+
+2391
+01:25:18,602 --> 01:25:19,202
+and
+
+2392
+01:25:19,882 --> 01:25:22,142
+I will not go through it here
+
+2393
+01:25:22,142 --> 01:25:23,782
+I just wanted to remind you of it
+
+2394
+01:25:23,782 --> 01:25:26,522
+and I want you to notice the similarity
+
+2395
+01:25:26,522 --> 01:25:27,462
+Where is it?
+
+2396
+01:25:27,582 --> 01:25:28,922
+Did we erase it?
+
+2397
+01:25:28,922 --> 01:25:29,802
+I think I erased it
+
+2398
+01:25:29,802 --> 01:25:32,302
+The similarity of this with
+
+2399
+01:25:32,822 --> 01:25:34,642
+d l by d t
+
+2400
+01:25:37,282 --> 01:25:39,042
+the average value
+
+2401
+01:25:39,042 --> 01:25:40,422
+is i
+
+2402
+01:25:40,422 --> 01:25:41,922
+minus i or plus i?
+
+2403
+01:25:41,922 --> 01:25:42,522
+I lost track
+
+2404
+01:25:42,522 --> 01:25:43,842
+plus i?
+
+2405
+01:25:43,942 --> 01:25:46,462
+i times
+
+2406
+01:25:46,462 --> 01:25:47,922
+the commutator
+
+2407
+01:25:48,722 --> 01:25:50,382
+of h with l
+
+2408
+01:25:50,382 --> 01:25:51,562
+Now incidentally,
+
+2409
+01:25:51,562 --> 01:25:52,082
+okay
+
+2410
+01:25:52,082 --> 01:25:53,922
+let's just point out one thing
+
+2411
+01:25:55,682 --> 01:25:56,802
+Poisson brackets
+
+2412
+01:25:56,802 --> 01:25:58,102
+have the property
+
+2413
+01:25:58,542 --> 01:25:59,802
+that if you interchange
+
+2414
+01:25:59,802 --> 01:26:01,542
+the two expressions
+
+2415
+01:26:01,542 --> 01:26:03,662
+what happens to the Poisson bracket?
+
+2416
+01:26:04,742 --> 01:26:06,362
+It just changes sign
+
+2417
+01:26:07,202 --> 01:26:08,922
+So do commutators
+
+2418
+01:26:08,922 --> 01:26:10,782
+h l minus l h
+
+2419
+01:26:10,782 --> 01:26:12,802
+if you interchange the order
+
+2420
+01:26:12,802 --> 01:26:13,842
+of them change sign
+
+2421
+01:26:14,661 --> 01:26:16,402
+So we can also write this as
+
+2422
+01:26:16,402 --> 01:26:17,762
+minus
+
+2423
+01:26:19,322 --> 01:26:20,502
+l with h
+
+2424
+01:26:20,502 --> 01:26:22,562
+commutator of l with h
+
+2425
+01:26:23,762 --> 01:26:24,822
+It's a remarkable
+
+2426
+01:26:24,822 --> 01:26:26,722
+similarity and it suggests
+
+2427
+01:26:26,722 --> 01:26:27,942
+that
+
+2428
+01:26:28,642 --> 01:26:29,322
+we
+
+2429
+01:26:30,962 --> 01:26:32,662
+identify the Poisson
+
+2430
+01:26:32,662 --> 01:26:33,042
+bracket
+
+2431
+01:26:34,562 --> 01:26:34,902
+with
+
+2432
+01:26:36,822 --> 01:26:38,242
+minus i times the commutator
+
+2433
+01:26:40,222 --> 01:26:41,462
+Now I've left out
+
+2434
+01:26:41,462 --> 01:26:42,782
+a discussion of something
+
+2435
+01:26:42,782 --> 01:26:44,142
+I just realized it just now
+
+2436
+01:26:44,142 --> 01:26:46,282
+and I've completely forgotten about it
+
+2437
+01:26:46,822 --> 01:26:48,422
+What happened to h bar?
+
+2438
+01:26:49,882 --> 01:26:51,502
+What happened to h bar?
+
+2439
+01:26:52,682 --> 01:26:53,742
+We've been working
+
+2440
+01:26:53,742 --> 01:26:55,102
+in units in which
+
+2441
+01:26:55,102 --> 01:26:56,342
+h bar is one
+
+2442
+01:26:57,702 --> 01:26:59,122
+I've been working in units
+
+2443
+01:26:59,122 --> 01:26:59,902
+in which h bar,
+
+2444
+01:26:59,902 --> 01:27:00,642
+Planck's constant
+
+2445
+01:27:00,642 --> 01:27:01,262
+is one.
+
+2446
+01:27:01,262 --> 01:27:02,702
+The question is
+
+2447
+01:27:02,702 --> 01:27:04,982
+if we were to reinstate Planck's constant
+
+2448
+01:27:04,982 --> 01:27:06,702
+and make it not equal to one
+
+2449
+01:27:06,822 --> 01:27:08,462
+where would it go in these equations?
+
+2450
+01:27:09,302 --> 01:27:09,862
+and
+
+2451
+01:27:10,922 --> 01:27:11,542
+what's that?
+
+2452
+01:27:12,782 --> 01:27:13,342
+Yes,
+
+2453
+01:27:13,342 --> 01:27:14,662
+it goes in Schrodinger's equation
+
+2454
+01:27:14,662 --> 01:27:15,442
+that's correct,
+
+2455
+01:27:15,442 --> 01:27:16,422
+but how
+
+2456
+01:27:16,422 --> 01:27:18,022
+do we trace it?
+
+2457
+01:27:18,022 --> 01:27:18,362
+Let's see
+
+2458
+01:27:18,362 --> 01:27:19,282
+how do we trace it?
+
+2459
+01:27:19,282 --> 01:27:20,362
+Here's the equation here
+
+2460
+01:27:20,362 --> 01:27:22,662
+I told you that h
+
+2461
+01:27:22,662 --> 01:27:24,942
+has the significance of the Hamiltonian
+
+2462
+01:27:24,942 --> 01:27:26,702
+and therefore it has units of energy
+
+2463
+01:27:28,362 --> 01:27:29,942
+So let's look at this equation
+
+2464
+01:27:31,402 --> 01:27:32,522
+The psi
+
+2465
+01:27:32,522 --> 01:27:34,822
+cancels out on both sides as far as
+
+2466
+01:27:34,822 --> 01:27:35,422
+units go.
+
+2467
+01:27:35,422 --> 01:27:36,802
+The units of
+
+2468
+01:27:36,822 --> 01:27:37,772
+this psi are the same
+
+2469
+01:27:37,772 --> 01:27:38,722
+as the units of this psi
+
+2470
+01:27:39,382 --> 01:27:40,222
+and so
+
+2471
+01:27:40,222 --> 01:27:42,222
+the right hand side of the equation
+
+2472
+01:27:42,222 --> 01:27:44,442
+apart from the psi's has units of an energy
+
+2473
+01:27:44,442 --> 01:27:46,802
+The left hand side of the equation
+
+2474
+01:27:46,802 --> 01:27:48,382
+has units of inverse time
+
+2475
+01:27:49,682 --> 01:27:50,622
+Inverse time
+
+2476
+01:27:50,622 --> 01:27:52,562
+and energy don't have
+
+2477
+01:27:52,562 --> 01:27:53,422
+the same units
+
+2478
+01:27:54,622 --> 01:27:56,602
+Inverse time is inverse seconds
+
+2479
+01:27:56,602 --> 01:27:58,482
+and energy is joules
+
+2480
+01:27:58,482 --> 01:27:59,002
+or whatever
+
+2481
+01:27:59,702 --> 01:28:02,542
+So we have an equation here which doesn't make
+
+2482
+01:28:02,542 --> 01:28:04,802
+good dimensional sense
+
+2483
+01:28:04,802 --> 01:28:06,702
+We need
+
+2484
+01:28:06,702 --> 01:28:08,562
+a constant in here
+
+2485
+01:28:09,502 --> 01:28:10,662
+and the constant
+
+2486
+01:28:10,662 --> 01:28:12,222
+we have to put a constant in here
+
+2487
+01:28:12,722 --> 01:28:13,042
+Let's see,
+
+2488
+01:28:13,042 --> 01:28:13,982
+where does the constant go?
+
+2489
+01:28:13,982 --> 01:28:14,742
+Does it go on the right hand
+
+2490
+01:28:14,742 --> 01:28:15,942
+side or the left hand side?
+
+2491
+01:28:18,022 --> 01:28:18,682
+Where does
+
+2492
+01:28:18,682 --> 01:28:19,762
+Planck's constant go?
+
+2493
+01:28:19,762 --> 01:28:20,662
+Right hand side
+
+2494
+01:28:20,662 --> 01:28:21,662
+or left hand side?
+
+2495
+01:28:23,162 --> 01:28:23,602
+What?
+
+2496
+01:28:25,441 --> 01:28:26,742
+If it goes in one
+
+2497
+01:28:26,742 --> 01:28:27,662
+place in one thing,
+
+2498
+01:28:27,662 --> 01:28:28,561
+then it goes in the inverse
+
+2499
+01:28:28,561 --> 01:28:29,202
+in the other place.
+
+2500
+01:28:29,202 --> 01:28:29,541
+Okay
+
+2501
+01:28:29,541 --> 01:28:32,382
+So here's
+
+2502
+01:28:32,382 --> 01:28:34,422
+all you have to know is that Planck's
+
+2503
+01:28:34,801 --> 01:28:36,821
+constant has units of energy times time
+
+2504
+01:28:37,462 --> 01:28:38,422
+Planck's constant
+
+2505
+01:28:38,422 --> 01:28:40,402
+has units of energy times time
+
+2506
+01:28:41,281 --> 01:28:42,662
+So let's see
+
+2507
+01:28:42,662 --> 01:28:43,762
+So energy times time,
+
+2508
+01:28:43,762 --> 01:28:44,762
+so we want to put Planck's
+
+2509
+01:28:44,762 --> 01:28:45,541
+constant here
+
+2510
+01:28:46,482 --> 01:28:48,722
+Energy times time over time is equal
+
+2511
+01:28:48,722 --> 01:28:49,162
+to energy.
+
+2512
+01:28:49,162 --> 01:28:50,542
+That's where
+
+2513
+01:28:50,542 --> 01:28:52,742
+Planck's constant goes into these equations
+
+2514
+01:28:54,161 --> 01:28:56,782
+And I apologize for having completely
+
+2515
+01:28:56,782 --> 01:28:58,082
+forgotten about it
+
+2516
+01:28:59,702 --> 01:29:01,022
+But that's where it goes
+
+2517
+01:29:03,262 --> 01:29:03,902
+And
+
+2518
+01:29:05,422 --> 01:29:06,822
+if we follow it
+
+2519
+01:29:06,822 --> 01:29:07,742
+through the equations,
+
+2520
+01:29:07,742 --> 01:29:08,602
+no doubt
+
+2521
+01:29:08,602 --> 01:29:10,002
+it appears over here
+
+2522
+01:29:10,742 --> 01:29:11,002
+Uh
+
+2523
+01:29:13,662 --> 01:29:14,702
+I think
+
+2524
+01:29:14,702 --> 01:29:16,482
+it appears in the
+
+2525
+01:29:16,482 --> 01:29:17,502
+denominator here
+
+2526
+01:29:19,342 --> 01:29:19,862
+Yeah
+
+2527
+01:29:19,862 --> 01:29:20,882
+You see,
+
+2528
+01:29:20,882 --> 01:29:22,622
+I got everything right
+
+2529
+01:29:22,622 --> 01:29:24,122
+except where I have h,
+
+2530
+01:29:24,122 --> 01:29:24,702
+I should have
+
+2531
+01:29:24,702 --> 01:29:25,662
+h over h bar
+
+2532
+01:29:26,922 --> 01:29:27,442
+Right
+
+2533
+01:29:28,042 --> 01:29:29,642
+We can rewrite this this way,
+
+2534
+01:29:29,642 --> 01:29:30,582
+h over h bar
+
+2535
+01:29:31,482 --> 01:29:32,622
+So in all of my
+
+2536
+01:29:32,622 --> 01:29:33,122
+equations,
+
+2537
+01:29:33,122 --> 01:29:34,422
+wherever we wrote
+
+2538
+01:29:34,802 --> 01:29:35,142
+h,
+
+2539
+01:29:35,142 --> 01:29:36,642
+the Hamiltonian
+
+2540
+01:29:36,642 --> 01:29:38,122
+we really should have,
+
+2541
+01:29:38,122 --> 01:29:38,702
+if we want
+
+2542
+01:29:38,702 --> 01:29:39,822
+to keep the units straight,
+
+2543
+01:29:39,822 --> 01:29:40,582
+h
+
+2544
+01:29:40,582 --> 01:29:41,702
+over Planck's constant,
+
+2545
+01:29:41,702 --> 01:29:42,722
+and that goes straight
+
+2546
+01:29:42,722 --> 01:29:43,282
+through to here.
+
+2547
+01:29:43,282 --> 01:29:44,742
+So really
+
+2548
+01:29:44,742 --> 01:29:45,742
+the right equation
+
+2549
+01:29:46,522 --> 01:29:47,742
+including the constants
+
+2550
+01:29:48,662 --> 01:29:50,602
+is the L D T
+
+2551
+01:29:50,602 --> 01:29:52,582
+is one
+
+2552
+01:29:52,582 --> 01:29:54,702
+is one over
+
+2553
+01:29:54,702 --> 01:29:55,602
+h bar here
+
+2554
+01:29:57,141 --> 01:29:58,662
+One over Planck's
+
+2555
+01:29:58,662 --> 01:29:59,082
+constant
+
+2556
+01:30:02,161 --> 01:30:04,182
+Planck's constant is a small number
+
+2557
+01:30:05,922 --> 01:30:06,722
+So this
+
+2558
+01:30:06,722 --> 01:30:07,822
+looks like it's very big
+
+2559
+01:30:08,682 --> 01:30:09,782
+But on the other hand,
+
+2560
+01:30:09,782 --> 01:30:10,562
+this is L times
+
+2561
+01:30:10,562 --> 01:30:11,882
+h minus h times L
+
+2562
+01:30:12,842 --> 01:30:14,142
+In classical physics,
+
+2563
+01:30:14,142 --> 01:30:14,722
+that would be
+
+2564
+01:30:14,722 --> 01:30:14,942
+zero
+
+2565
+01:30:15,902 --> 01:30:17,682
+So whatever this is
+
+2566
+01:30:19,242 --> 01:30:20,262
+classically it's zero
+
+2567
+01:30:20,562 --> 01:30:22,662
+and quantum mechanically it must
+
+2568
+01:30:22,662 --> 01:30:24,522
+be a small correction to the classical
+
+2569
+01:30:24,522 --> 01:30:25,042
+physics,
+
+2570
+01:30:25,042 --> 01:30:26,722
+to the extent that quantum
+
+2571
+01:30:26,722 --> 01:30:28,442
+mechanics is a small correction to classical
+
+2572
+01:30:28,442 --> 01:30:28,982
+physics,
+
+2573
+01:30:28,982 --> 01:30:30,602
+and so the
+
+2574
+01:30:30,602 --> 01:30:32,602
+commutator is itself something
+
+2575
+01:30:32,602 --> 01:30:34,782
+which is typically small and of order n
+
+2576
+01:30:34,802 --> 01:30:35,162
+h bar,
+
+2577
+01:30:35,162 --> 01:30:36,382
+so that allows us then
+
+2578
+01:30:36,382 --> 01:30:38,262
+to guess
+
+2579
+01:30:38,802 --> 01:30:40,582
+to guess an identification
+
+2580
+01:30:41,322 --> 01:30:41,962
+between
+
+2581
+01:30:42,822 --> 01:30:44,642
+commutators and Poisson
+
+2582
+01:30:44,642 --> 01:30:44,982
+brackets.
+
+2583
+01:30:44,982 --> 01:30:45,502
+Now
+
+2584
+01:30:46,841 --> 01:30:47,482
+I'm
+
+2585
+01:30:48,462 --> 01:30:50,642
+this is non-intuitive
+
+2586
+01:30:50,642 --> 01:30:51,462
+at the moment,
+
+2587
+01:30:51,462 --> 01:30:52,362
+it's just a
+
+2588
+01:30:52,362 --> 01:30:53,942
+just looking at two equations
+
+2589
+01:30:54,522 --> 01:30:55,342
+and saying look,
+
+2590
+01:30:55,342 --> 01:30:56,602
+if there's going to be any connection
+
+2591
+01:30:56,602 --> 01:30:58,742
+between quantum mechanics and classical mechanics
+
+2592
+01:30:59,641 --> 01:31:00,282
+then
+
+2593
+01:31:01,121 --> 01:31:02,582
+there must be a connection
+
+2594
+01:31:02,582 --> 01:31:04,002
+between the Poisson bracket
+
+2595
+01:31:04,802 --> 01:31:06,902
+and between the Poisson
+
+2596
+01:31:06,902 --> 01:31:08,402
+bracket and the commutator
+
+2597
+01:31:08,402 --> 01:31:09,222
+namely,
+
+2598
+01:31:09,222 --> 01:31:10,622
+Poisson bracket
+
+2599
+01:31:10,622 --> 01:31:12,542
+must be equal
+
+2600
+01:31:12,542 --> 01:31:14,442
+to minus i over
+
+2601
+01:31:15,262 --> 01:31:16,302
+h bar
+
+2602
+01:31:17,622 --> 01:31:19,142
+times commutator
+
+2603
+01:31:19,142 --> 01:31:20,622
+or
+
+2604
+01:31:20,622 --> 01:31:22,042
+it's usually written the other way
+
+2605
+01:31:22,802 --> 01:31:24,302
+commutator is
+
+2606
+01:31:24,302 --> 01:31:25,622
+i h bar
+
+2607
+01:31:26,822 --> 01:31:28,402
+times Poisson bracket
+
+2608
+01:31:31,462 --> 01:31:32,742
+Commutator is a small
+
+2609
+01:31:32,742 --> 01:31:33,082
+thing,
+
+2610
+01:31:33,082 --> 01:31:34,782
+because there's an h bar
+
+2611
+01:31:34,802 --> 01:31:35,042
+there.
+
+2612
+01:31:35,042 --> 01:31:36,642
+Poisson
+
+2613
+01:31:36,642 --> 01:31:38,822
+bracket in classical physics is not a
+
+2614
+01:31:38,822 --> 01:31:39,282
+small thing,
+
+2615
+01:31:39,282 --> 01:31:40,062
+it's some number,
+
+2616
+01:31:40,062 --> 01:31:40,642
+I mean it's some
+
+2617
+01:31:40,642 --> 01:31:42,562
+characteristic quantity which is not
+
+2618
+01:31:42,562 --> 01:31:43,622
+neither small nor big
+
+2619
+01:31:44,622 --> 01:31:46,062
+and in the same units,
+
+2620
+01:31:46,062 --> 01:31:46,542
+the units
+
+2621
+01:31:46,542 --> 01:31:48,062
+that you do classical physics,
+
+2622
+01:31:48,062 --> 01:31:48,642
+the standard
+
+2623
+01:31:48,642 --> 01:31:49,062
+units,
+
+2624
+01:31:49,062 --> 01:31:50,182
+meters,
+
+2625
+01:31:50,182 --> 01:31:50,862
+seconds
+
+2626
+01:31:50,862 --> 01:31:51,642
+whatever
+
+2627
+01:31:53,081 --> 01:31:54,442
+commutators are very small
+
+2628
+01:31:55,182 --> 01:31:56,782
+that's because they're almost zero
+
+2629
+01:31:56,782 --> 01:31:58,642
+a times b minus b times a
+
+2630
+01:31:58,642 --> 01:31:59,342
+is almost zero.
+
+2631
+01:31:59,342 --> 01:32:00,562
+Okay
+
+2632
+01:32:01,422 --> 01:32:01,902
+No,
+
+2633
+01:32:01,902 --> 01:32:02,642
+I don't think so
+
+2634
+01:32:02,642 --> 01:32:03,202
+I think i
+
+2635
+01:32:04,802 --> 01:32:06,582
+we had a minus i on this side
+
+2636
+01:32:06,582 --> 01:32:08,042
+minus i over h bar
+
+2637
+01:32:08,682 --> 01:32:10,302
+multiply by h bar
+
+2638
+01:32:12,302 --> 01:32:14,742
+and now multiply both sides by
+
+2639
+01:32:14,742 --> 01:32:16,542
+i and use that minus i
+
+2640
+01:32:16,542 --> 01:32:17,862
+times plus i is one
+
+2641
+01:32:19,302 --> 01:32:19,902
+yeah
+
+2642
+01:32:23,122 --> 01:32:23,722
+right,
+
+2643
+01:32:23,722 --> 01:32:24,622
+it was Dirac who
+
+2644
+01:32:24,622 --> 01:32:25,942
+recognized this connection
+
+2645
+01:32:26,802 --> 01:32:28,542
+and built his quantum mechanics
+
+2646
+01:32:28,542 --> 01:32:29,342
+out of it,
+
+2647
+01:32:29,342 --> 01:32:30,422
+he built his quantum mechanics
+
+2648
+01:32:30,422 --> 01:32:32,662
+out of making an identification
+
+2649
+01:32:32,662 --> 01:32:34,582
+of Poisson brackets
+
+2650
+01:32:34,802 --> 01:32:37,242
+with commutators
+
+2651
+01:32:37,242 --> 01:32:38,922
+but of course the foundations
+
+2652
+01:32:38,922 --> 01:32:39,922
+of the subject
+
+2653
+01:32:41,062 --> 01:32:42,382
+quantum mechanics
+
+2654
+01:32:42,382 --> 01:32:43,622
+is a
+
+2655
+01:32:44,621 --> 01:32:46,722
+consistent subject without having
+
+2656
+01:32:46,722 --> 01:32:48,642
+to make any reference to classical physics
+
+2657
+01:32:48,642 --> 01:32:50,222
+the right way to think about things
+
+2658
+01:32:50,772 --> 01:32:52,482
+is that quantum mechanics comes before
+
+2659
+01:32:52,482 --> 01:32:53,382
+classical mechanics,
+
+2660
+01:32:53,382 --> 01:32:54,782
+commutators
+
+2661
+01:32:54,782 --> 01:32:55,982
+before Poisson brackets
+
+2662
+01:32:56,592 --> 01:32:58,562
+you have to derive classical physics
+
+2663
+01:32:58,562 --> 01:33:00,342
+as an approximation to
+
+2664
+01:33:00,342 --> 01:33:02,182
+quantum mechanics
+
+2665
+01:33:02,772 --> 01:33:04,622
+so here we see some formal similarities
+
+2666
+01:33:04,802 --> 01:33:05,682
+at this point here
+
+2667
+01:33:05,682 --> 01:33:08,482
+we have no idea why this
+
+2668
+01:33:08,482 --> 01:33:10,582
+commutator should have
+
+2669
+01:33:10,582 --> 01:33:12,882
+features in common with the Poisson bracket
+
+2670
+01:33:13,722 --> 01:33:14,862
+before we go
+
+2671
+01:33:14,862 --> 01:33:15,742
+let me just say,
+
+2672
+01:33:15,742 --> 01:33:16,862
+let me write down
+
+2673
+01:33:16,862 --> 01:33:18,802
+some of the features of commutators
+
+2674
+01:33:18,802 --> 01:33:21,142
+and Poisson brackets to remind you
+
+2675
+01:33:22,902 --> 01:33:23,502
+are
+
+2676
+01:33:33,582 --> 01:33:34,622
+and again
+
+2677
+01:33:34,802 --> 01:33:36,202
+all of this should be at this stage
+
+2678
+01:33:36,202 --> 01:33:37,242
+should be a little mysterious
+
+2679
+01:33:37,242 --> 01:33:40,262
+what is this funny connection between Poisson brackets
+
+2680
+01:33:41,042 --> 01:33:41,442
+but
+
+2681
+01:33:42,861 --> 01:33:44,082
+let's pursue it anyway
+
+2682
+01:33:44,962 --> 01:33:45,362
+okay
+
+2683
+01:33:45,901 --> 01:33:47,302
+let me remind you about
+
+2684
+01:33:49,182 --> 01:33:49,902
+Poisson brackets
+
+2685
+01:33:50,502 --> 01:33:52,262
+first of all if I have two
+
+2686
+01:33:52,841 --> 01:33:53,242
+quantities
+
+2687
+01:33:54,161 --> 01:33:55,542
+I'll call them A and B now
+
+2688
+01:33:55,542 --> 01:33:57,442
+or maybe A and B I use for
+
+2689
+01:33:58,621 --> 01:33:59,802
+let's just call them L and H
+
+2690
+01:33:59,802 --> 01:34:01,662
+they don't have to be the Hamiltonian
+
+2691
+01:34:01,662 --> 01:34:03,822
+and anything special they're just L and H
+
+2692
+01:34:03,822 --> 01:34:05,682
+alright the first thing is
+
+2693
+01:34:05,682 --> 01:34:07,602
+the Poisson bracket
+
+2694
+01:34:07,602 --> 01:34:09,042
+of L with H
+
+2695
+01:34:09,921 --> 01:34:11,402
+is equal to minus
+
+2696
+01:34:11,402 --> 01:34:13,502
+the Poisson bracket of H with L
+
+2697
+01:34:16,161 --> 01:34:16,802
+okay
+
+2698
+01:34:16,802 --> 01:34:19,562
+the commutator of L
+
+2699
+01:34:19,562 --> 01:34:20,262
+with H
+
+2700
+01:34:21,462 --> 01:34:23,882
+is minus the commutator
+
+2701
+01:34:23,882 --> 01:34:25,402
+of H with L
+
+2702
+01:34:26,722 --> 01:34:27,662
+so that's
+
+2703
+01:34:27,662 --> 01:34:29,382
+a parallelism that we can begin with
+
+2704
+01:34:29,382 --> 01:34:31,542
+now let's take some other
+
+2705
+01:34:31,662 --> 01:34:33,562
+let's take some other properties of
+
+2706
+01:34:33,562 --> 01:34:34,242
+Poisson brackets
+
+2707
+01:34:36,622 --> 01:34:37,962
+there's a lot of properties
+
+2708
+01:34:37,962 --> 01:34:39,702
+of Poisson brackets but let me just
+
+2709
+01:34:39,702 --> 01:34:41,362
+write one or two more
+
+2710
+01:34:42,601 --> 01:34:43,882
+if I have
+
+2711
+01:34:44,642 --> 01:34:46,022
+two operators
+
+2712
+01:34:46,022 --> 01:34:47,342
+or two not operators
+
+2713
+01:34:47,342 --> 01:34:48,882
+but two quantities
+
+2714
+01:34:49,462 --> 01:34:51,142
+let's call them L and M
+
+2715
+01:34:51,662 --> 01:34:52,482
+okay
+
+2716
+01:34:52,482 --> 01:34:55,442
+L times M
+
+2717
+01:34:55,442 --> 01:34:57,682
+is itself a classical
+
+2718
+01:34:57,682 --> 01:34:59,802
+quantity and I can compute
+
+2719
+01:34:59,802 --> 01:35:01,642
+its Poisson bracket
+
+2720
+01:35:01,662 --> 01:35:02,262
+with H
+
+2721
+01:35:02,902 --> 01:35:04,782
+does anybody remember the answer
+
+2722
+01:35:08,302 --> 01:35:09,422
+I'll remind you
+
+2723
+01:35:09,422 --> 01:35:09,922
+I'll tell you
+
+2724
+01:35:09,922 --> 01:35:10,722
+go look it up
+
+2725
+01:35:10,722 --> 01:35:12,442
+this is important
+
+2726
+01:35:13,722 --> 01:35:14,922
+it's L
+
+2727
+01:35:14,922 --> 01:35:17,602
+it's the Poisson bracket of L with H
+
+2728
+01:35:19,062 --> 01:35:20,042
+times M
+
+2729
+01:35:22,282 --> 01:35:22,882
+plus
+
+2730
+01:35:23,802 --> 01:35:24,402
+L
+
+2731
+01:35:25,282 --> 01:35:26,782
+times the Poisson bracket
+
+2732
+01:35:26,782 --> 01:35:28,042
+of M with H
+
+2733
+01:35:30,882 --> 01:35:31,482
+and
+
+2734
+01:35:31,482 --> 01:35:31,642
+I'm going to
+
+2735
+01:35:31,662 --> 01:35:33,062
+now in classical physics
+
+2736
+01:35:33,062 --> 01:35:34,722
+the order of multiplication
+
+2737
+01:35:34,722 --> 01:35:35,982
+doesn't matter
+
+2738
+01:35:37,222 --> 01:35:38,962
+so you can bring the M
+
+2739
+01:35:38,962 --> 01:35:41,202
+on the left or the right it doesn't matter
+
+2740
+01:35:41,202 --> 01:35:42,422
+you can bring the L on
+
+2741
+01:35:42,422 --> 01:35:43,642
+the left or right it doesn't matter
+
+2742
+01:35:43,642 --> 01:35:44,982
+but this is
+
+2743
+01:35:44,982 --> 01:35:45,982
+the relationship
+
+2744
+01:35:47,081 --> 01:35:49,082
+for the product of two variables
+
+2745
+01:35:49,782 --> 01:35:50,822
+the Poisson bracket
+
+2746
+01:35:50,822 --> 01:35:53,702
+go back to the next to the last lecture
+
+2747
+01:35:54,422 --> 01:35:54,902
+and
+
+2748
+01:35:54,902 --> 01:35:57,502
+check this out this was one of the defining
+
+2749
+01:35:57,502 --> 01:35:58,582
+not one of the defining
+
+2750
+01:35:58,582 --> 01:36:01,002
+one of the properties of Poisson brackets
+
+2751
+01:36:01,662 --> 01:36:02,922
+you can do the same
+
+2752
+01:36:02,922 --> 01:36:04,582
+you can ask the same question over here
+
+2753
+01:36:04,582 --> 01:36:05,702
+supposing you have
+
+2754
+01:36:06,482 --> 01:36:07,682
+L M
+
+2755
+01:36:07,682 --> 01:36:11,582
+and you take its commutator with H
+
+2756
+01:36:12,542 --> 01:36:13,802
+what do you get
+
+2757
+01:36:15,062 --> 01:36:16,822
+this is an exercise
+
+2758
+01:36:16,822 --> 01:36:18,062
+this is an exercise
+
+2759
+01:36:18,062 --> 01:36:19,402
+all you do is you write
+
+2760
+01:36:20,142 --> 01:36:21,602
+that this is equal to
+
+2761
+01:36:21,602 --> 01:36:22,682
+L M H
+
+2762
+01:36:23,322 --> 01:36:25,462
+minus H L M
+
+2763
+01:36:26,842 --> 01:36:27,822
+and now
+
+2764
+01:36:27,822 --> 01:36:28,922
+you start just juggling
+
+2765
+01:36:28,922 --> 01:36:30,842
+and adding some terms
+
+2766
+01:36:31,662 --> 01:36:31,962
+and adding some terms
+
+2767
+01:36:31,962 --> 01:36:35,162
+and eventually you'll discover that this is
+
+2768
+01:36:35,162 --> 01:36:36,922
+the same as this
+
+2769
+01:36:37,582 --> 01:36:38,702
+same relationship
+
+2770
+01:36:38,702 --> 01:36:40,062
+that this is equal to
+
+2771
+01:36:41,022 --> 01:36:43,942
+L times the commutator of M with H
+
+2772
+01:36:45,442 --> 01:36:46,002
+plus
+
+2773
+01:36:46,702 --> 01:36:47,262
+L
+
+2774
+01:36:50,842 --> 01:36:52,362
+commutator of L with H
+
+2775
+01:36:53,122 --> 01:36:53,702
+commutator of L with H
+
+2776
+01:36:53,702 --> 01:36:54,162
+times M
+
+2777
+01:36:55,782 --> 01:36:57,322
+the way to do this
+
+2778
+01:36:57,322 --> 01:36:57,842
+is just write
+
+2779
+01:36:57,842 --> 01:37:00,382
+L M H minus H L M
+
+2780
+01:37:00,382 --> 01:37:01,642
+and then write it down
+
+2781
+01:37:01,662 --> 01:37:02,622
+you'll find out these guys here
+
+2782
+01:37:02,622 --> 01:37:05,322
+this is L M H
+
+2783
+01:37:05,322 --> 01:37:07,862
+minus L H M
+
+2784
+01:37:07,862 --> 01:37:10,602
+plus L H M
+
+2785
+01:37:10,602 --> 01:37:12,822
+minus H L M
+
+2786
+01:37:14,182 --> 01:37:15,702
+four terms here
+
+2787
+01:37:16,462 --> 01:37:18,202
+two will cancel in pairs
+
+2788
+01:37:18,202 --> 01:37:19,622
+and you'll just get this back
+
+2789
+01:37:19,622 --> 01:37:21,782
+it's a one step thing
+
+2790
+01:37:21,782 --> 01:37:22,702
+it's a really easy thing
+
+2791
+01:37:23,462 --> 01:37:23,802
+ok,
+
+2792
+01:37:23,802 --> 01:37:25,362
+so you begin to see
+
+2793
+01:37:25,362 --> 01:37:26,142
+some pattern
+
+2794
+01:37:26,142 --> 01:37:28,682
+that Poisson brackets
+
+2795
+01:37:28,682 --> 01:37:29,582
+and
+
+2796
+01:37:31,702 --> 01:37:33,482
+commutators must somehow be closely
+
+2797
+01:37:33,482 --> 01:37:34,022
+related
+
+2798
+01:37:34,962 --> 01:37:36,002
+the last
+
+2799
+01:37:37,782 --> 01:37:39,542
+thing I'm going to show you tonight
+
+2800
+01:37:40,222 --> 01:37:41,442
+is about energy
+
+2801
+01:37:41,442 --> 01:37:42,022
+conservation
+
+2802
+01:37:43,402 --> 01:37:44,002
+now,
+
+2803
+01:37:44,002 --> 01:37:45,262
+we're not going to
+
+2804
+01:37:46,202 --> 01:37:47,562
+consider the most
+
+2805
+01:37:47,562 --> 01:37:49,642
+general concept of energy conservation
+
+2806
+01:37:49,642 --> 01:37:51,602
+we're simply going to
+
+2807
+01:37:51,602 --> 01:37:53,422
+ask is the average
+
+2808
+01:37:53,422 --> 01:37:55,542
+of the energy conserved with
+
+2809
+01:37:55,542 --> 01:37:55,862
+time
+
+2810
+01:37:56,802 --> 01:37:58,242
+we have not even really
+
+2811
+01:37:58,242 --> 01:37:59,682
+gotten to what it would mean
+
+2812
+01:37:59,682 --> 01:38:01,382
+for energy itself to be
+
+2813
+01:38:01,662 --> 01:38:02,922
+conserved in any deeper way
+
+2814
+01:38:02,922 --> 01:38:04,402
+but we can ask
+
+2815
+01:38:04,402 --> 01:38:06,342
+we have all the ingredients now
+
+2816
+01:38:06,342 --> 01:38:08,202
+which will allow us
+
+2817
+01:38:08,202 --> 01:38:10,902
+to ask how the average
+
+2818
+01:38:13,242 --> 01:38:13,902
+of
+
+2819
+01:38:16,381 --> 01:38:17,662
+here's how the average
+
+2820
+01:38:17,662 --> 01:38:19,822
+of any quantity changes with time
+
+2821
+01:38:19,822 --> 01:38:20,922
+no
+
+2822
+01:38:20,922 --> 01:38:22,142
+here it is over here
+
+2823
+01:38:22,142 --> 01:38:24,602
+we can now specifically ask
+
+2824
+01:38:24,602 --> 01:38:27,102
+how the average of the energy changes with time
+
+2825
+01:38:27,102 --> 01:38:27,782
+let's do it
+
+2826
+01:38:32,442 --> 01:38:33,542
+the energy
+
+2827
+01:38:33,542 --> 01:38:35,962
+I claim is the Hamiltonian
+
+2828
+01:38:35,962 --> 01:38:36,642
+ok,
+
+2829
+01:38:36,642 --> 01:38:37,722
+or it's definition
+
+2830
+01:38:37,722 --> 01:38:38,362
+if you like,
+
+2831
+01:38:38,362 --> 01:38:38,962
+what is energy?
+
+2832
+01:38:39,142 --> 01:38:40,182
+it's Hamiltonian,
+
+2833
+01:38:40,182 --> 01:38:41,502
+so let's check
+
+2834
+01:38:41,502 --> 01:38:43,442
+and ask whether energy is conserved
+
+2835
+01:38:43,442 --> 01:38:45,002
+if energy is the Hamiltonian
+
+2836
+01:38:45,332 --> 01:38:46,702
+this equation would read
+
+2837
+01:38:48,782 --> 01:38:51,602
+the time derivative of the average
+
+2838
+01:38:51,602 --> 01:38:53,042
+of the Hamiltonian
+
+2839
+01:38:53,592 --> 01:38:54,762
+is equal to
+
+2840
+01:38:55,372 --> 01:38:56,982
+minus i over h bar
+
+2841
+01:38:57,682 --> 01:38:58,382
+times
+
+2842
+01:38:59,581 --> 01:39:01,642
+the commutator of the Hamiltonian
+
+2843
+01:39:01,662 --> 01:39:02,702
+with itself
+
+2844
+01:39:03,902 --> 01:39:05,482
+the Hamiltonian with itself
+
+2845
+01:39:05,482 --> 01:39:08,342
+it's h times h minus h times h
+
+2846
+01:39:08,342 --> 01:39:11,602
+h times h is the same as h times h
+
+2847
+01:39:12,422 --> 01:39:13,342
+h times h is the same as h times h
+
+2848
+01:39:13,342 --> 01:39:14,362
+quantum mechanics is not that weird
+
+2849
+01:39:14,362 --> 01:39:15,142
+you know,
+
+2850
+01:39:15,142 --> 01:39:15,482
+it's weird
+
+2851
+01:39:15,482 --> 01:39:16,782
+but h times h is
+
+2852
+01:39:16,782 --> 01:39:18,082
+the same as h times h
+
+2853
+01:39:18,782 --> 01:39:19,902
+so this is zero
+
+2854
+01:39:23,602 --> 01:39:25,442
+whatever the Hamiltonian is
+
+2855
+01:39:25,442 --> 01:39:27,082
+its average
+
+2856
+01:39:27,662 --> 01:39:28,622
+its average,
+
+2857
+01:39:28,622 --> 01:39:30,022
+its expectation value
+
+2858
+01:39:30,022 --> 01:39:31,642
+with time is always 0
+
+2859
+01:39:31,662 --> 01:39:35,962
+and so it's conserved in that sense
+
+2860
+01:39:35,962 --> 01:39:38,062
+at minimum in that sense
+
+2861
+01:39:38,062 --> 01:39:40,702
+there's a stronger sense in which it's conserved
+
+2862
+01:39:40,702 --> 01:39:41,582
+and we'll come to it
+
+2863
+01:39:42,622 --> 01:39:43,182
+but
+
+2864
+01:39:44,702 --> 01:39:47,062
+even this weaker sense is kind of interesting
+
+2865
+01:39:47,062 --> 01:39:48,982
+and it tells us we're
+
+2866
+01:39:48,982 --> 01:39:50,902
+on some kind of right track
+
+2867
+01:39:50,902 --> 01:39:53,482
+to be able to compare quantum mechanics
+
+2868
+01:39:53,482 --> 01:39:54,882
+and classical mechanics
+
+2869
+01:39:56,302 --> 01:39:56,862
+ok,
+
+2870
+01:39:56,862 --> 01:39:58,042
+I'm going to stop now
+
+2871
+01:39:58,042 --> 01:39:59,022
+and take a few questions
+
+2872
+01:39:59,022 --> 01:39:59,822
+and yeah
+
+2873
+01:39:59,822 --> 01:40:01,642
+I'm going to stop now
+
+2874
+01:40:02,642 --> 01:40:03,422
+ok
+
+2875
+01:40:03,422 --> 01:40:07,942
+and the fact that you've given the bar notation
+
+2876
+01:40:07,942 --> 01:40:09,082
+and the probability
+
+2877
+01:40:09,082 --> 01:40:09,662
+here?
+
+2878
+01:40:10,102 --> 01:40:12,462
+x bar is the sample mean
+
+2879
+01:40:12,462 --> 01:40:13,622
+and you use the probability
+
+2880
+01:40:13,622 --> 01:40:15,142
+probably,
+
+2881
+01:40:15,142 --> 01:40:17,462
+I just mean the average
+
+2882
+01:40:17,462 --> 01:40:18,842
+I mean the average defined
+
+2883
+01:40:19,662 --> 01:40:20,322
+ah
+
+2884
+01:40:23,242 --> 01:40:25,522
+defined as summation of
+
+2885
+01:40:25,522 --> 01:40:27,562
+probability of lambda times lambda
+
+2886
+01:40:28,682 --> 01:40:29,462
+ok
+
+2887
+01:40:29,462 --> 01:40:30,542
+so
+
+2888
+01:40:32,341 --> 01:40:33,282
+I don't know
+
+2889
+01:40:33,282 --> 01:40:35,162
+what's the standard symbol in statistics
+
+2890
+01:40:35,162 --> 01:40:36,962
+for an average in this sense?
+
+2891
+01:40:38,962 --> 01:40:39,902
+a bar
+
+2892
+01:40:39,902 --> 01:40:41,942
+sometimes they write
+
+2893
+01:40:44,121 --> 01:40:45,902
+they do what?
+
+2894
+01:40:45,982 --> 01:40:47,102
+the first moment of the distribution
+
+2895
+01:40:47,102 --> 01:40:48,642
+you knew they would use it sometimes
+
+2896
+01:40:48,642 --> 01:40:50,982
+the first moment of the distribution
+
+2897
+01:40:52,121 --> 01:40:52,762
+yeah
+
+2898
+01:40:52,762 --> 01:40:53,382
+ok
+
+2899
+01:40:54,081 --> 01:40:54,722
+lambda
+
+2900
+01:40:54,722 --> 01:40:55,402
+yeah,
+
+2901
+01:40:55,402 --> 01:40:57,362
+ok
+
+2902
+01:40:57,362 --> 01:40:58,562
+um
+
+2903
+01:41:00,502 --> 01:41:01,582
+I'm used to just
+
+2904
+01:41:01,662 --> 01:41:02,242
+calling it
+
+2905
+01:41:03,042 --> 01:41:03,602
+lambda
+
+2906
+01:41:05,582 --> 01:41:06,142
+hmm
+
+2907
+01:41:06,142 --> 01:41:09,202
+e brackets of lambda
+
+2908
+01:41:09,202 --> 01:41:10,942
+e bracket of lambda
+
+2909
+01:41:10,942 --> 01:41:12,302
+and that stands for what?
+
+2910
+01:41:12,422 --> 01:41:15,082
+the average expected value
+
+2911
+01:41:15,082 --> 01:41:17,822
+expected value even though it's not the expected value
+
+2912
+01:41:17,822 --> 01:41:19,922
+you don't expect to get it
+
+2913
+01:41:19,922 --> 01:41:20,202
+yeah,
+
+2914
+01:41:20,202 --> 01:41:20,802
+yeah,
+
+2915
+01:41:20,802 --> 01:41:21,122
+ok
+
+2916
+01:41:21,642 --> 01:41:21,922
+um
+
+2917
+01:41:22,942 --> 01:41:24,602
+you've never seen the expected
+
+2918
+01:41:24,602 --> 01:41:26,782
+the average value of the bar on top of it?
+
+2919
+01:41:26,862 --> 01:41:26,922
+yeah,
+
+2920
+01:41:26,922 --> 01:41:29,082
+I mean it's normal
+
+2921
+01:41:29,082 --> 01:41:31,542
+conditions that it means the sample mean like the average
+
+2922
+01:41:31,662 --> 01:41:32,502
+ok
+
+2923
+01:41:33,422 --> 01:41:33,862
+yeah
+
+2924
+01:41:33,862 --> 01:41:36,642
+when I use the term average I will mean this
+
+2925
+01:41:37,242 --> 01:41:39,262
+it's also called the expectation value
+
+2926
+01:41:39,262 --> 01:41:42,142
+and I will freely interchange
+
+2927
+01:41:42,142 --> 01:41:44,462
+the Dirac notation
+
+2928
+01:41:44,462 --> 01:41:45,842
+for the average
+
+2929
+01:41:45,842 --> 01:41:46,862
+with
+
+2930
+01:41:48,282 --> 01:41:49,922
+the bar notation
+
+2931
+01:41:49,922 --> 01:41:51,042
+ok
+
+2932
+01:41:52,542 --> 01:41:54,262
+and if that's not
+
+2933
+01:41:54,262 --> 01:41:56,042
+if that's not
+
+2934
+01:41:56,042 --> 01:41:57,842
+standard according to
+
+2935
+01:41:57,842 --> 01:41:59,482
+statistics books
+
+2936
+01:41:59,482 --> 01:42:00,702
+too bad
+
+2937
+01:42:02,962 --> 01:42:05,562
+so over here you wrote down the Schrodinger equation
+
+2938
+01:42:05,562 --> 01:42:06,722
+yes
+
+2939
+01:42:06,722 --> 01:42:07,902
+and then you wrote down
+
+2940
+01:42:08,822 --> 01:42:09,422
+the
+
+2941
+01:42:10,442 --> 01:42:13,102
+how did you go from the left hand equation
+
+2942
+01:42:13,102 --> 01:42:14,122
+to the right hand equation
+
+2943
+01:42:14,122 --> 01:42:15,552
+was that complex conjugation
+
+2944
+01:42:15,552 --> 01:42:16,982
+or was that Hermitian conjugation
+
+2945
+01:42:16,982 --> 01:42:18,242
+Hermitian conjugation
+
+2946
+01:42:18,842 --> 01:42:19,442
+but
+
+2947
+01:42:21,062 --> 01:42:22,782
+remember that H is Hermitian
+
+2948
+01:42:22,782 --> 01:42:23,542
+we proved that
+
+2949
+01:42:24,142 --> 01:42:25,142
+that was
+
+2950
+01:42:26,042 --> 01:42:29,202
+that was the condition of unitarity
+
+2951
+01:42:29,202 --> 01:42:30,522
+that H is Hermitian
+
+2952
+01:42:31,662 --> 01:42:33,522
+how can you interchange the
+
+2953
+01:42:33,522 --> 01:42:35,742
+order of psi and H but not d dt
+
+2954
+01:42:35,742 --> 01:42:36,262
+and psi
+
+2955
+01:42:36,262 --> 01:42:36,702
+where where where
+
+2956
+01:42:36,702 --> 01:42:40,642
+on the left side equation
+
+2957
+01:42:40,642 --> 01:42:42,722
+you got d dt and psi
+
+2958
+01:42:44,022 --> 01:42:45,502
+d dt is the operator
+
+2959
+01:42:45,502 --> 01:42:46,342
+this one here?
+
+2960
+01:42:46,522 --> 01:42:46,902
+yeah
+
+2961
+01:42:46,902 --> 01:42:49,382
+yeah the time derivative of a
+
+2962
+01:42:49,382 --> 01:42:51,862
+bra vector is a bra vector
+
+2963
+01:42:51,862 --> 01:42:53,242
+the time derivative of a ket
+
+2964
+01:42:53,242 --> 01:42:55,702
+look the time derivative is just another way
+
+2965
+01:42:55,702 --> 01:42:56,742
+of talking about differences
+
+2966
+01:42:56,742 --> 01:42:59,122
+the difference of two bra vectors is a bra vector
+
+2967
+01:42:59,122 --> 01:43:01,202
+the difference of two ket vectors
+
+2968
+01:43:01,202 --> 01:43:02,042
+is a ket vector
+
+2969
+01:43:02,882 --> 01:43:04,302
+in the limit
+
+2970
+01:43:04,302 --> 01:43:06,642
+the difference becomes the time derivative
+
+2971
+01:43:06,642 --> 01:43:07,322
+or the derivative
+
+2972
+01:43:08,082 --> 01:43:09,652
+so the derivative of a
+
+2973
+01:43:09,652 --> 01:43:11,222
+bra vector is a bra vector
+
+2974
+01:43:12,102 --> 01:43:13,622
+the derivative of a ket vector
+
+2975
+01:43:13,622 --> 01:43:14,442
+is a ket vector
+
+2976
+01:43:15,002 --> 01:43:16,462
+if you want to take this
+
+2977
+01:43:16,462 --> 01:43:17,262
+ket equation
+
+2978
+01:43:17,262 --> 01:43:20,202
+what is the bra that goes with this ket
+
+2979
+01:43:20,742 --> 01:43:22,862
+the bra that's dual to this ket
+
+2980
+01:43:22,862 --> 01:43:25,302
+is the time derivative of the corresponding
+
+2981
+01:43:25,302 --> 01:43:26,022
+bra vector
+
+2982
+01:43:26,022 --> 01:43:27,212
+since time is not an
+
+2983
+01:43:27,212 --> 01:43:28,402
+operator you don't have to worry
+
+2984
+01:43:29,122 --> 01:43:29,242
+about time
+
+2985
+01:43:29,242 --> 01:43:31,102
+just think of this as
+
+2986
+01:43:31,102 --> 01:43:32,962
+taking the difference of two vectors
+
+2987
+01:43:32,962 --> 01:43:34,082
+yeah
+
+2988
+01:43:34,082 --> 01:43:35,882
+it's just the difference of two vectors
+
+2989
+01:43:38,062 --> 01:43:38,702
+right
+
+2990
+01:43:39,762 --> 01:43:40,402
+exactly
+
+2991
+01:43:41,742 --> 01:43:42,382
+and
+
+2992
+01:43:43,942 --> 01:43:44,582
+again
+
+2993
+01:43:45,581 --> 01:43:47,202
+quantum mechanics is weird
+
+2994
+01:43:47,202 --> 01:43:47,742
+but
+
+2995
+01:43:48,702 --> 01:43:50,622
+taking the difference of two vectors
+
+2996
+01:43:50,622 --> 01:43:52,242
+and replacing it by a derivative
+
+2997
+01:43:52,242 --> 01:43:53,762
+when the difference is small
+
+2998
+01:43:54,881 --> 01:43:56,882
+that's perfectly legitimate
+
+2999
+01:43:59,122 --> 01:44:01,222
+you said that the form of Hamiltonian
+
+3000
+01:44:01,222 --> 01:44:03,582
+we will choose depending on symmetry considerations
+
+3001
+01:44:04,502 --> 01:44:05,482
+well yeah
+
+3002
+01:44:05,482 --> 01:44:07,522
+in the derivation here
+
+3003
+01:44:07,522 --> 01:44:10,222
+we did not put any symmetry considerations so far
+
+3004
+01:44:10,222 --> 01:44:10,682
+no
+
+3005
+01:44:11,422 --> 01:44:13,122
+so why is it that
+
+3006
+01:44:13,122 --> 01:44:15,162
+we are getting energy conservation out
+
+3007
+01:44:15,162 --> 01:44:16,402
+how come we're getting what
+
+3008
+01:44:16,402 --> 01:44:17,822
+energy conservation out
+
+3009
+01:44:17,822 --> 01:44:19,502
+how do we know that this is corresponding to energy
+
+3010
+01:44:20,142 --> 01:44:22,582
+well we don't know that it's corresponding to energy
+
+3011
+01:44:22,582 --> 01:44:23,842
+until we do a lot more
+
+3012
+01:44:23,842 --> 01:44:25,102
+we don't know that we
+
+3013
+01:44:25,102 --> 01:44:26,362
+can define it to be energy
+
+3014
+01:44:26,362 --> 01:44:28,562
+the Hamiltonian but that's not satisfying
+
+3015
+01:44:29,122 --> 01:44:31,122
+we want to see in cases where
+
+3016
+01:44:31,122 --> 01:44:33,142
+we understand the classical physics
+
+3017
+01:44:34,242 --> 01:44:35,382
+and we understand
+
+3018
+01:44:35,382 --> 01:44:36,322
+what energy is
+
+3019
+01:44:36,322 --> 01:44:38,442
+we're going to want to see that the
+
+3020
+01:44:39,122 --> 01:44:41,082
+quantum mechanics of the same system
+
+3021
+01:44:41,082 --> 01:44:43,142
+the classical system is an approximation
+
+3022
+01:44:43,142 --> 01:44:44,722
+to the quantum mechanical system
+
+3023
+01:44:44,722 --> 01:44:46,302
+physics is really quantum mechanical
+
+3024
+01:44:47,002 --> 01:44:48,782
+under certain conditions such as
+
+3025
+01:44:48,782 --> 01:44:49,822
+a system is heavy
+
+3026
+01:44:50,902 --> 01:44:51,942
+basically that,
+
+3027
+01:44:51,942 --> 01:44:52,542
+that it's heavy
+
+3028
+01:44:52,542 --> 01:44:53,122
+that it's big
+
+3029
+01:44:53,122 --> 01:44:56,102
+that it's large masses
+
+3030
+01:44:56,742 --> 01:44:57,342
+then
+
+3031
+01:44:59,122 --> 01:45:01,002
+the system behaves approximately classically
+
+3032
+01:45:01,002 --> 01:45:02,662
+which means that the average values
+
+3033
+01:45:03,502 --> 01:45:04,702
+move in ways
+
+3034
+01:45:04,702 --> 01:45:07,262
+which are consistent with the classical equations of motion
+
+3035
+01:45:07,262 --> 01:45:08,962
+we're going to want to see that
+
+3036
+01:45:08,962 --> 01:45:11,762
+when we study such big heavy systems
+
+3037
+01:45:12,322 --> 01:45:12,842
+that
+
+3038
+01:45:12,842 --> 01:45:14,862
+the thing that we call
+
+3039
+01:45:15,662 --> 01:45:17,122
+the quantum mechanical Hamiltonian
+
+3040
+01:45:18,962 --> 01:45:19,482
+is
+
+3041
+01:45:20,502 --> 01:45:21,022
+essentially
+
+3042
+01:45:21,022 --> 01:45:23,282
+closely connected with the thing that we call
+
+3043
+01:45:23,282 --> 01:45:24,622
+the classical Hamiltonian
+
+3044
+01:45:24,622 --> 01:45:25,522
+but we'll come to that
+
+3045
+01:45:25,522 --> 01:45:27,142
+we can't do everything all in one night
+
+3046
+01:45:29,122 --> 01:45:30,901
+I'm just showing you similarities
+
+3047
+01:45:30,901 --> 01:45:33,642
+and we're going to want to do better than that
+
+3048
+01:45:33,642 --> 01:45:36,341
+whether we'll actually get to do better than that
+
+3049
+01:45:36,341 --> 01:45:37,042
+I don't know
+
+3050
+01:45:37,042 --> 01:45:37,962
+we can't do everything
+
+3051
+01:45:37,962 --> 01:45:39,022
+but
+
+3052
+01:45:41,262 --> 01:45:42,222
+that's the logic
+
+3053
+01:45:42,222 --> 01:45:42,602
+yeah
+
+3054
+01:45:44,902 --> 01:45:45,462
+yes
+
+3055
+01:45:45,462 --> 01:45:48,262
+way back to the electron spin
+
+3056
+01:45:48,262 --> 01:45:50,401
+I think when we left off the last lecture
+
+3057
+01:45:50,401 --> 01:45:53,022
+you were going to show
+
+3058
+01:45:53,022 --> 01:45:54,142
+what the probability is
+
+3059
+01:45:54,142 --> 01:45:55,022
+yeah
+
+3060
+01:45:56,262 --> 01:45:59,062
+right I had saved some time to do that
+
+3061
+01:45:59,122 --> 01:46:01,702
+but I think I've done enough for tonight
+
+3062
+01:46:02,702 --> 01:46:05,182
+who was it who sent in the solution to it
+
+3063
+01:46:06,022 --> 01:46:06,542
+yeah
+
+3064
+01:46:08,422 --> 01:46:09,462
+well done
+
+3065
+01:46:10,542 --> 01:46:11,062
+right
+
+3066
+01:46:11,062 --> 01:46:11,522
+so
+
+3067
+01:46:12,341 --> 01:46:13,502
+but we'll do it
+
+3068
+01:46:13,502 --> 01:46:14,421
+I just
+
+3069
+01:46:15,401 --> 01:46:16,582
+I've run out of steam
+
+3070
+01:46:19,162 --> 01:46:19,682
+right
+
+3071
+01:46:19,682 --> 01:46:20,582
+we'll come back to that
+
+3072
+01:46:20,582 --> 01:46:21,742
+we're going to come back to that
+
+3073
+01:46:22,982 --> 01:46:24,632
+so how can your postulates
+
+3074
+01:46:24,632 --> 01:46:26,282
+work without a collapsed postulate
+
+3075
+01:46:26,282 --> 01:46:26,742
+what's that
+
+3076
+01:46:26,742 --> 01:46:29,102
+how can your postulates work without a collapsed postulate
+
+3077
+01:46:29,122 --> 01:46:30,942
+well we really want
+
+3078
+01:46:30,942 --> 01:46:34,042
+we really want to derive the collapsed postulate
+
+3079
+01:46:34,042 --> 01:46:36,462
+but the derivation is deeply connected with
+
+3080
+01:46:36,462 --> 01:46:38,882
+something else that we haven't come to yet
+
+3081
+01:46:38,882 --> 01:46:39,682
+and I think we're going
+
+3082
+01:46:39,682 --> 01:46:40,482
+to come to it next time
+
+3083
+01:46:41,122 --> 01:46:41,562
+entanglement
+
+3084
+01:46:44,822 --> 01:46:48,832
+the measurement process is really a process of
+
+3085
+01:46:48,832 --> 01:46:52,842
+establishing entanglement between a system and an apparatus
+
+3086
+01:46:53,622 --> 01:46:55,562
+and until we've talked about
+
+3087
+01:46:56,942 --> 01:46:58,822
+the entanglement process
+
+3088
+01:46:58,822 --> 01:46:59,102
+we're not going to be able to do that
+
+3089
+01:46:59,122 --> 01:47:00,282
+I think
+
+3090
+01:47:00,282 --> 01:47:02,422
+until we do
+
+3091
+01:47:02,422 --> 01:47:04,222
+we simply have to
+
+3092
+01:47:05,822 --> 01:47:08,062
+adopt the language of collapse
+
+3093
+01:47:08,062 --> 01:47:08,442
+but
+
+3094
+01:47:08,722 --> 01:47:09,762
+next time
+
+3095
+01:47:09,762 --> 01:47:11,682
+remind me about collapse
+
+3096
+01:47:11,682 --> 01:47:12,882
+I'm close to collapse
+
+3097
+01:47:14,902 --> 01:47:15,822
+ok
+
+3098
+01:47:17,202 --> 01:47:19,042
+for more
+
+3099
+01:47:19,042 --> 01:47:21,462
+please visit us at stanford.edu
+
