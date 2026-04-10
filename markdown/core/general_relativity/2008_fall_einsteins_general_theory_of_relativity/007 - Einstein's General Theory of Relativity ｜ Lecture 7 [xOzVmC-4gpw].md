@@ -1,0 +1,2958 @@
+# Transcript
+
+Source: core/general_relativity/2008_fall_einsteins_general_theory_of_relativity/007 - Einstein's General Theory of Relativity ｜ Lecture 7 [xOzVmC-4gpw].mp4
+
+- [00:00:06,679 - 00:00:09,740] This program is brought to you by Stanford University.
+- [00:00:10,200 - 00:00:12,720] Please visit us at stanford.edu.
+- [00:00:15,469 - 00:00:16,780] Tonight we want to start,
+- [00:00:16,780 - 00:00:17,720] not start,
+- [00:00:17,720 - 00:00:17,980] but
+- [00:00:17,980 - 00:00:20,340] we want to continue with the concept of curvature.
+- [00:00:22,449 - 00:00:26,020] I explained to you the idea of curvature for surfaces.
+- [00:00:26,020 - 00:00:29,020] Surfaces mean two-dimensional surfaces.
+- [00:00:30,520 - 00:00:34,580] Let me just review the basic concept.
+- [00:00:35,560 - 00:00:37,200] If you have a curved surface,
+- [00:00:37,200 - 00:00:41,160] you still have a concept of parallel transport.
+- [00:00:42,020 - 00:00:45,880] You have a concept of going as straight as possible,
+- [00:00:46,060 - 00:00:47,800] not deviating to the left,
+- [00:00:47,800 - 00:00:49,040] not deviating to the right.
+- [00:00:49,780 - 00:00:50,960] But nevertheless,
+- [00:00:50,960 - 00:00:55,040] the effect of the curvature will have an effect on
+- [00:00:55,040 - 00:00:56,000] the direction of that curvature.
+- [00:00:58,140 - 00:01:03,400] What does curvity meaning?
+- [00:01:04,739 - 00:01:05,920] Curvity means when the surfaces are left and right.
+- [00:01:06,040 - 00:01:06,290] This is just an example
+- [00:01:06,290 - 00:01:06,540] of the Yeah think about here.
+- [00:01:06,540 - 00:01:07,600] So yeah,
+- [00:01:07,600 - 00:01:08,680] yeah.
+- [00:01:09,340 - 00:01:09,740] In that here.
+- [00:01:09,740 - 00:01:10,480] The curvature moment is bike-shape.
+- [00:01:10,480 - 00:01:10,980] This is the curvature when the surfaces separate off.
+- [00:01:10,980 - 00:01:11,820] Time is number two,
+- [00:01:11,820 - 00:01:11,820] eye- Google that.
+- [00:01:11,820 - 00:01:18,310] How about the curve of the
+- [00:01:18,310 - 00:01:24,800] surface and the curvature of the surface?
+- [00:01:26,000 - 00:01:27,040] the curvature of a curve.
+- [00:01:27,040 - 00:01:28,880] Incidentally,
+- [00:01:28,880 - 00:01:31,080] a straight line is a special case of a curve.
+- [00:01:31,320 - 00:01:33,700] It's a curve which is uncurved.
+- [00:01:33,700 - 00:01:36,720] Yes,
+- [00:01:36,720 - 00:01:38,480] if you go around in a little closed path,
+- [00:01:39,339 - 00:01:41,000] and you take a vector,
+- [00:01:41,000 - 00:01:44,200] start it somewhere on that closed path.
+- [00:01:44,200 - 00:01:44,600] Now,
+- [00:01:44,600 - 00:01:46,060] a vector means a vector
+- [00:01:46,060 - 00:01:49,680] that points in the direction in the surface.
+- [00:01:49,680 - 00:01:51,680] Roughly speaking,
+- [00:01:51,680 - 00:01:53,100] you can think of it as pointing
+- [00:01:53,100 - 00:01:56,340] in the direction of the tangent plane of the surface.
+- [00:01:56,340 - 00:01:59,540] So it points in the direction of the
+- [00:01:59,540 - 00:01:59,900] surface.
+- [00:01:59,900 - 00:02:01,850] That unfortunately looks like it's
+- [00:02:01,850 - 00:02:03,800] pointing out of the surface,
+- [00:02:03,800 - 00:02:04,580] but I can't figure
+- [00:02:04,580 - 00:02:06,150] out any way to draw a vector that it
+- [00:02:06,150 - 00:02:07,720] won't look like it's pointing out of the surface.
+- [00:02:08,120 - 00:02:10,360] So you keep in mind it's in the surface.
+- [00:02:10,360 - 00:02:15,860] And then we transport it parallelly to itself around
+- [00:02:15,860 - 00:02:17,120] the closed curve.
+- [00:02:17,120 - 00:02:20,740] If the region inside the closed curve is flat,
+- [00:02:21,680 - 00:02:22,380] then the vector is in the direction
+- [00:02:22,380 - 00:02:23,080] of the tangent plane of the surface.
+- [00:02:23,100 - 00:02:24,000] The vector will come back to itself.
+- [00:02:24,000 - 00:02:26,340] If there's some curvature in there,
+- [00:02:26,480 - 00:02:30,920] then typically it will undergo some rotation by some angle.
+- [00:02:32,540 - 00:02:33,420] That angle,
+- [00:02:33,420 - 00:02:34,840] let's call it theta.
+- [00:02:34,840 - 00:02:36,680] Now,
+- [00:02:36,680 - 00:02:38,670] there are two senses of angle here
+- [00:02:38,670 - 00:02:40,660] that we have to keep track of.
+- [00:02:41,380 - 00:02:41,820] Question?
+- [00:02:42,420 - 00:02:44,100] When you're talking about these curves,
+- [00:02:44,100 - 00:02:45,720] do you mean they have to be small curves?
+- [00:02:46,000 - 00:02:46,960] When you're talking about these curves,
+- [00:02:46,960 - 00:02:48,220] do you mean they have to be small?
+- [00:02:48,740 - 00:02:50,760] I have in mind small curves,
+- [00:02:50,760 - 00:02:51,580] but...
+- [00:02:52,280 - 00:02:53,080] If they're low curves...
+- [00:02:59,120 - 00:02:59,760] Yeah,
+- [00:02:59,760 - 00:03:02,760] I'm speaking about small curves.
+- [00:03:02,760 - 00:03:04,080] We're going to be taking
+- [00:03:04,080 - 00:03:05,400] the limit of very small curves,
+- [00:03:05,520 - 00:03:06,980] infinitesimal curves,
+- [00:03:06,980 - 00:03:11,020] curves which contain infinitesimally small area.
+- [00:03:11,020 - 00:03:13,100] So we can concentrate
+- [00:03:13,100 - 00:03:15,620] on curves which are small by comparison
+- [00:03:15,620 - 00:03:18,140] with the radius of the whole thing.
+- [00:03:18,140 - 00:03:19,560] Okay,
+- [00:03:19,560 - 00:03:20,680] and that's the
+- [00:03:20,680 - 00:03:21,980] situation we're interested in.
+- [00:03:23,100 - 00:03:24,340] Curvature is a local thing.
+- [00:03:24,340 - 00:03:25,700] In other words,
+- [00:03:25,700 - 00:03:29,550] you can monitor the curvature by looking in some
+- [00:03:29,550 - 00:03:33,400] small little region and not going around whole big...
+- [00:03:33,400 - 00:03:37,290] You don't have to walk around the entire circumference
+- [00:03:37,290 - 00:03:41,180] of the Earth to discover that the Earth is curved.
+- [00:03:41,640 - 00:03:43,980] If you had sufficient accuracy,
+- [00:03:43,980 - 00:03:47,800] you could walk around a small little area and
+- [00:03:47,800 - 00:03:51,620] discover that the surface of the Earth is curved.
+- [00:03:51,620 - 00:03:51,980] Yeah.
+- [00:03:53,100 - 00:03:53,880] In this example,
+- [00:03:53,880 - 00:03:55,990] you have a surface that's a space
+- [00:03:55,990 - 00:03:58,100] that's embedded in a higher dimensional space.
+- [00:03:58,220 - 00:03:58,380] Yes,
+- [00:03:58,380 - 00:03:59,600] but I want you to forget that.
+- [00:03:59,600 - 00:04:01,100] I want you not to think about that.
+- [00:04:01,380 - 00:04:02,140] I want you...
+- [00:04:02,140 - 00:04:02,760] Yeah,
+- [00:04:02,760 - 00:04:03,800] there's no...
+- [00:04:04,460 - 00:04:05,420] The problem...
+- [00:04:05,420 - 00:04:07,920] This is a problem of the architecture of our brains.
+- [00:04:07,920 - 00:04:11,740] We simply don't have the architecture to be able
+- [00:04:11,740 - 00:04:15,560] to envision surfaces and spaces out of three dimensions.
+- [00:04:16,640 - 00:04:18,700] So there's no way I can draw them.
+- [00:04:19,040 - 00:04:19,240] Well,
+- [00:04:19,240 - 00:04:20,940] what connection do you have with
+- [00:04:20,940 - 00:04:22,640] one dimension on top of two dimensions?
+- [00:04:23,540 - 00:04:25,220] So that's what he was saying,
+- [00:04:25,220 - 00:04:25,500] right?
+- [00:04:25,820 - 00:04:26,520] I don't know.
+- [00:04:26,720 - 00:04:26,900] Well,
+- [00:04:26,900 - 00:04:28,060] this one is two dimensional,
+- [00:04:28,060 - 00:04:28,940] and the other one is three dimensional.
+- [00:04:29,100 - 00:04:29,560] Mm-hmm.
+- [00:04:29,560 - 00:04:30,820] The curvature is actually curved.
+- [00:04:31,060 - 00:04:31,520] No,
+- [00:04:31,520 - 00:04:31,920] no,
+- [00:04:31,920 - 00:04:32,600] no.
+- [00:04:32,920 - 00:04:33,740] The thing is,
+- [00:04:33,740 - 00:04:34,380] we want to...
+- [00:04:34,380 - 00:04:36,780] That's exactly what we don't want to analyze.
+- [00:04:37,340 - 00:04:40,510] We don't want to analyze the curvature that's due to the
+- [00:04:40,510 - 00:04:43,680] fact that it's embedded in a curved way in the space.
+- [00:04:43,860 - 00:04:45,320] We want to ask the question,
+- [00:04:45,320 - 00:04:48,460] supposing a little bug lived on the surface.
+- [00:04:49,860 - 00:04:53,000] That bug can only receive light...
+- [00:04:53,100 - 00:04:54,480] Light from inside the surface,
+- [00:04:54,480 - 00:04:56,900] can only see inside the surface,
+- [00:04:56,900 - 00:04:59,880] has no capacity to probe in the direction perpendicular,
+- [00:04:59,880 - 00:05:03,230] and can do all sorts
+- [00:05:03,230 - 00:05:06,580] of geometrical experiments involving little rulers,
+- [00:05:06,580 - 00:05:10,540] but rulers which are attached to the surface,
+- [00:05:10,540 - 00:05:11,740] parallel to the surface,
+- [00:05:11,740 - 00:05:15,600] little protractors which also lie in the surface,
+- [00:05:15,600 - 00:05:19,340] and can do geometry on the surface without ever
+- [00:05:19,340 - 00:05:23,080] pointing their ruler or their protractor out of the surface.
+- [00:05:24,460 - 00:05:29,400] That's the term that comes up is intrinsic.
+- [00:05:29,920 - 00:05:30,820] In other words,
+- [00:05:30,820 - 00:05:33,320] properties which are intrinsic to the surface.
+- [00:05:33,840 - 00:05:36,300] The opposite are things that has to do
+- [00:05:36,300 - 00:05:38,760] with the way that it's embedded in space,
+- [00:05:38,760 - 00:05:40,740] and those are called extrinsic.
+- [00:05:42,000 - 00:05:43,380] Intrinsic and extrinsic.
+- [00:05:43,420 - 00:05:46,820] We are now interested only in
+- [00:05:46,820 - 00:05:50,220] the intrinsic properties that this very,
+- [00:05:50,220 - 00:05:52,340] very small bug would discover.
+- [00:05:52,440 - 00:05:53,080] Right.
+- [00:05:53,100 - 00:05:57,800] By doing experimental geometry on the surface with
+- [00:05:57,800 - 00:06:02,500] tools that can only lie in the surface.
+- [00:06:03,380 - 00:06:03,580] Okay.
+- [00:06:03,740 - 00:06:04,580] All right.
+- [00:06:04,620 - 00:06:07,050] So we're talking about the
+- [00:06:07,050 - 00:06:09,480] intrinsic curvature of the surface,
+- [00:06:09,480 - 00:06:14,280] and the idea of parallel transport is an intrinsic idea.
+- [00:06:14,660 - 00:06:16,820] If that little bug had wheels,
+- [00:06:16,820 - 00:06:20,780] think of a little bug with little wheels.
+- [00:06:23,400 - 00:06:25,120] Little dumbbell shaped affair.
+- [00:06:26,380 - 00:06:31,160] Two wheels that could roll on the surface.
+- [00:06:31,500 - 00:06:34,160] If the wheels had exactly the same size,
+- [00:06:34,160 - 00:06:35,840] and they couldn't,
+- [00:06:35,840 - 00:06:37,790] and of course I'm assuming that
+- [00:06:37,790 - 00:06:39,740] they cannot rotate relative to each other,
+- [00:06:39,960 - 00:06:42,360] then if I rolled it along the tabletop here,
+- [00:06:42,360 - 00:06:44,100] it would describe a straight arc,
+- [00:06:44,100 - 00:06:44,500] right?
+- [00:06:45,020 - 00:06:45,580] Okay.
+- [00:06:46,640 - 00:06:50,380] If I rolled it across the surface of a sphere,
+- [00:06:50,380 - 00:06:53,080] it would move as straight as possible along the surface.
+- [00:06:53,080 - 00:06:55,300] Along the surface of a geodesic,
+- [00:06:55,300 - 00:06:57,400] in that case a great circle.
+- [00:06:57,960 - 00:06:59,900] So this is an experiment.
+- [00:07:00,640 - 00:07:01,160] Well,
+- [00:07:01,160 - 00:07:02,600] I suppose you'd say the wheels stick
+- [00:07:02,600 - 00:07:04,040] out of the surface a little bit,
+- [00:07:04,080 - 00:07:08,130] but we could make the whole thing smaller and
+- [00:07:08,130 - 00:07:12,180] smaller until the dumbbell bug here was infinitely small,
+- [00:07:13,200 - 00:07:15,170] and allow him to sweep
+- [00:07:15,170 - 00:07:17,140] out geodesics across the surface here.
+- [00:07:20,420 - 00:07:22,320] So the idea of a geodesic,
+- [00:07:22,320 - 00:07:24,120] and not only the idea of a geodesic,
+- [00:07:24,220 - 00:07:26,940] but the idea of parallel transport
+- [00:07:26,940 - 00:07:29,660] and the idea of covariant derivative,
+- [00:07:30,060 - 00:07:31,920] are ideas which are intrinsic.
+- [00:07:33,520 - 00:07:34,160] Intrinsic,
+- [00:07:34,160 - 00:07:36,660] that bug could move around.
+- [00:07:37,380 - 00:07:38,380] Of course,
+- [00:07:38,380 - 00:07:40,040] we're really thinking about ourselves
+- [00:07:40,040 - 00:07:41,700] as bugs in three dimensions,
+- [00:07:41,980 - 00:07:44,460] and we're trying to disconnect
+- [00:07:44,460 - 00:07:46,940] the intrinsic properties of three-dimensional space
+- [00:07:46,940 - 00:07:49,340] from the possibility that it might
+- [00:07:49,340 - 00:07:51,740] perhaps be embedded in some fourth dimension,
+- [00:07:51,740 - 00:07:52,820] or something like that.
+- [00:07:53,080 - 00:07:53,680] Well,
+- [00:07:53,680 - 00:07:56,340] we wouldn't want to use rollers,
+- [00:07:56,620 - 00:07:58,360] but we could use gyroscopes.
+- [00:07:58,360 - 00:08:00,610] And gyroscopes are things which only
+- [00:08:00,610 - 00:08:02,860] point in our own three-dimensional space.
+- [00:08:03,460 - 00:08:06,600] They don't point out into any hypothetical fourth dimension.
+- [00:08:07,680 - 00:08:11,400] And so exploring space with gyroscopes,
+- [00:08:11,400 - 00:08:13,160] and rulers,
+- [00:08:13,160 - 00:08:14,480] and so forth,
+- [00:08:14,600 - 00:08:16,570] would be exploring the
+- [00:08:16,570 - 00:08:18,540] intrinsic geometry of three-dimensional space.
+- [00:08:19,040 - 00:08:20,020] In any case,
+- [00:08:20,020 - 00:08:21,620] one of the things we can do,
+- [00:08:21,740 - 00:08:23,100] with gyroscopes,
+- [00:08:23,100 - 00:08:25,380] is we can define parallel transport.
+- [00:08:25,900 - 00:08:28,240] A gyroscope will naturally move in
+- [00:08:28,240 - 00:08:30,580] a way which moves parallel to itself,
+- [00:08:30,740 - 00:08:32,539] and it does define parallel transport,
+- [00:08:32,539 - 00:08:33,380] physically.
+- [00:08:34,280 - 00:08:36,640] It has the same properties as
+- [00:08:36,640 - 00:08:39,000] the parallel transport that we describe mathematically.
+- [00:08:40,500 - 00:08:41,380] In any case,
+- [00:08:41,380 - 00:08:44,720] we can proceed to parallelly transport that vector
+- [00:08:44,720 - 00:08:46,020] from one point to another,
+- [00:08:47,540 - 00:08:47,880] and,
+- [00:08:47,880 - 00:08:48,720] in fact,
+- [00:08:48,720 - 00:08:49,940] around in a closed curve.
+- [00:08:50,520 - 00:08:52,280] When it goes around in a closed curve,
+- [00:08:52,500 - 00:08:55,540] it will not necessarily come back to the same configuration.
+- [00:08:56,140 - 00:08:59,180] What'll happen to it is it will rotate in general.
+- [00:09:00,000 - 00:09:04,040] Parallel transport does not change the length of vectors.
+- [00:09:05,180 - 00:09:08,260] It changes only their orientation.
+- [00:09:08,820 - 00:09:11,720] It does not change their length.
+- [00:09:12,540 - 00:09:13,280] And so,
+- [00:09:13,280 - 00:09:14,240] at most,
+- [00:09:14,240 - 00:09:15,420] what can happen to a vector
+- [00:09:15,420 - 00:09:16,420] is when it comes around,
+- [00:09:16,420 - 00:09:18,380] it gets rotated by some angle.
+- [00:09:21,000 - 00:09:21,440] Okay.
+- [00:09:23,760 - 00:09:24,200] Now,
+- [00:09:24,200 - 00:09:26,160] there are two senses of rotation
+- [00:09:26,160 - 00:09:28,120] that we have to keep track of.
+- [00:09:28,200 - 00:09:28,580] Senses,
+- [00:09:28,580 - 00:09:30,640] I mean now senses in the sense of sign,
+- [00:09:30,640 - 00:09:31,520] S-I-G-N.
+- [00:09:32,760 - 00:09:33,720] First of all,
+- [00:09:33,720 - 00:09:36,500] there's the direction that we go around the loop.
+- [00:09:37,780 - 00:09:40,540] We can go around one way or the other way.
+- [00:09:41,540 - 00:09:43,420] Depending on which way we go around,
+- [00:09:44,139 - 00:09:45,969] the vector will either shift in
+- [00:09:45,969 - 00:09:47,800] one direction or in the other direction.
+- [00:09:48,540 - 00:09:50,230] That's one sense of angle that
+- [00:09:50,230 - 00:09:51,920] we have to keep track of,
+- [00:09:52,060 - 00:09:54,720] which direction we circumnavigated around.
+- [00:09:54,860 - 00:09:56,900] We took our vector and we went around,
+- [00:09:56,900 - 00:09:57,640] let's say,
+- [00:09:57,660 - 00:09:58,980] let's say counterclockwise.
+- [00:09:59,820 - 00:10:02,260] The other angle that we need to keep track of
+- [00:10:02,700 - 00:10:05,960] is the amount that the angle deviates.
+- [00:10:06,960 - 00:10:07,520] So,
+- [00:10:07,520 - 00:10:08,100] for example,
+- [00:10:08,100 - 00:10:11,660] if we go around counterclockwise
+- [00:10:13,020 - 00:10:14,660] and the vector,
+- [00:10:14,660 - 00:10:17,440] as it's transported around the curve,
+- [00:10:17,800 - 00:10:20,740] gets deflected in the counterclockwise direction,
+- [00:10:23,180 - 00:10:26,070] counterclockwise excursion
+- [00:10:26,070 - 00:10:28,960] produces counterclockwise rotation,
+- [00:10:29,360 - 00:10:31,820] then we say that the curvature is positive.
+- [00:10:32,610 - 00:10:35,665] If counterclockwise excursion produces
+- [00:10:35,665 - 00:10:38,720] clockwise rotation of the vector,
+- [00:10:38,880 - 00:10:40,920] we say the curvature is negative.
+- [00:10:42,460 - 00:10:44,260] Whatever the curvature is,
+- [00:10:44,500 - 00:10:47,000] it's a single function
+- [00:10:47,800 - 00:10:48,940] on the space,
+- [00:10:49,220 - 00:10:50,910] and it's simply defined by
+- [00:10:50,910 - 00:10:52,600] going around with your little probe,
+- [00:10:55,260 - 00:10:55,860] measuring,
+- [00:10:55,860 - 00:10:59,160] let's by definition say we go around counterclockwise,
+- [00:10:59,300 - 00:11:01,100] we measure the angle.
+- [00:11:01,540 - 00:11:02,360] For small,
+- [00:11:02,360 - 00:11:03,140] for very,
+- [00:11:03,140 - 00:11:06,140] very small curves here,
+- [00:11:06,360 - 00:11:08,040] the angle will be small.
+- [00:11:08,280 - 00:11:10,460] So let's just call it d theta,
+- [00:11:10,900 - 00:11:12,900] the small change in the angle
+- [00:11:12,900 - 00:11:14,900] when we go around the closed loop.
+- [00:11:15,700 - 00:11:17,320] And if we divide that,
+- [00:11:18,800 - 00:11:23,260] by the small area contained in that closed loop,
+- [00:11:23,500 - 00:11:25,500] then we get the curvature.
+- [00:11:25,760 - 00:11:32,180] The curvature is the limit of the deflection angle,
+- [00:11:32,300 - 00:11:33,620] let's call it the deflection angle,
+- [00:11:34,500 - 00:11:37,960] divided by the area as the area goes to zero.
+- [00:11:38,300 - 00:11:40,040] Because as the area goes to zero,
+- [00:11:40,040 - 00:11:41,620] the deflection also goes to zero.
+- [00:11:41,740 - 00:11:44,200] That's called the curvature scalar,
+- [00:11:44,200 - 00:11:44,840] the curvature.
+- [00:11:44,840 - 00:11:47,820] And there's a curvature at every point on the surface.
+- [00:11:48,520 - 00:11:49,840] It can be positive,
+- [00:11:49,840 - 00:11:50,720] it can be negative.
+- [00:11:51,780 - 00:11:57,140] It's positive on surfaces that are spherical-like,
+- [00:11:57,320 - 00:11:58,280] sphere-like.
+- [00:11:58,640 - 00:12:04,300] It is negative on surfaces that are saddle-like,
+- [00:12:04,560 - 00:12:05,700] saddle-shaped-like.
+- [00:12:06,520 - 00:12:08,620] Now the situation is clearly
+- [00:12:08,620 - 00:12:10,720] more complicated in higher dimensions.
+- [00:12:11,300 - 00:12:13,380] Let's first take three dimensions.
+- [00:12:13,380 - 00:12:15,280] In three dimensions,
+- [00:12:16,980 - 00:12:20,880] we can proceed around small closed loops,
+- [00:12:21,840 - 00:12:26,640] but we have to orient the surface somehow.
+- [00:12:27,460 - 00:12:28,300] For example,
+- [00:12:28,300 - 00:12:29,180] in three dimensions,
+- [00:12:29,500 - 00:12:31,860] I can go around a little closed curve here,
+- [00:12:31,940 - 00:12:33,640] I can go around a little closed curve here,
+- [00:12:33,780 - 00:12:34,940] I can go around in this direction.
+- [00:12:35,200 - 00:12:36,920] I need to describe an axis.
+- [00:12:37,900 - 00:12:39,470] The axis is not the
+- [00:12:39,470 - 00:12:41,040] axis of rotation of the vector,
+- [00:12:41,120 - 00:12:43,360] the axis is the axis around the vector.
+- [00:12:43,380 - 00:12:44,810] The axis is the axis
+- [00:12:44,810 - 00:12:46,240] around which my little bug travels
+- [00:12:47,120 - 00:12:48,140] doing his experiment.
+- [00:12:49,200 - 00:12:51,380] So there's one axis in the problem,
+- [00:12:51,520 - 00:12:54,140] which we can just say is the axis
+- [00:12:57,400 - 00:13:00,780] around which the excursion takes place.
+- [00:13:04,020 - 00:13:05,340] So our little bug,
+- [00:13:05,340 - 00:13:08,760] or our little gyroscopic setup,
+- [00:13:08,980 - 00:13:10,580] in this case,
+- [00:13:10,580 - 00:13:13,600] is transported around an axis.
+- [00:13:14,040 - 00:13:14,680] Now,
+- [00:13:14,680 - 00:13:16,000] in three dimensions,
+- [00:13:16,160 - 00:13:18,520] you can use the concept of an axis
+- [00:13:18,520 - 00:13:22,380] to describe a plane.
+- [00:13:22,740 - 00:13:25,200] It's just the axis perpendicular to the plane.
+- [00:13:25,820 - 00:13:27,360] In higher dimensions,
+- [00:13:27,360 - 00:13:28,660] or in lower dimensions,
+- [00:13:28,880 - 00:13:33,720] it's not useful to think of a little closed curve
+- [00:13:33,720 - 00:13:37,340] or a surface as having to do with an axis.
+- [00:13:40,580 - 00:13:43,260] It always has to do with two directions of space.
+- [00:13:44,200 - 00:13:47,800] You describe a plane by picking two directions of space.
+- [00:13:48,060 - 00:13:49,160] A direction over here,
+- [00:13:49,160 - 00:13:49,840] a direction over here,
+- [00:13:49,860 - 00:13:51,540] two perpendicular directions of space.
+- [00:13:52,240 - 00:13:53,160] Define a plane.
+- [00:13:54,540 - 00:13:56,880] It doesn't matter if you're in five dimensions,
+- [00:13:57,080 - 00:13:57,620] ten dimensions,
+- [00:13:57,620 - 00:13:58,440] twenty dimensions.
+- [00:13:58,780 - 00:14:01,420] Two directions define a plane,
+- [00:14:01,660 - 00:14:04,320] and then you can go around in that plane.
+- [00:14:05,320 - 00:14:10,400] So you characterize the excursion that you go around
+- [00:14:10,580 - 00:14:11,920] by giving two axes.
+- [00:14:12,320 - 00:14:13,200] As I said,
+- [00:14:13,200 - 00:14:14,060] in three dimensions,
+- [00:14:14,160 - 00:14:17,820] you can replace the two axes by a third axis,
+- [00:14:17,900 - 00:14:19,280] which is perpendicular to it.
+- [00:14:19,420 - 00:14:20,940] But that's special to three dimensions.
+- [00:14:23,100 - 00:14:23,780] All right,
+- [00:14:23,780 - 00:14:25,960] so that's one orientation
+- [00:14:25,960 - 00:14:27,600] that you have to keep track of.
+- [00:14:28,620 - 00:14:30,020] The other orientation,
+- [00:14:30,320 - 00:14:32,160] the other thing you have to keep track of,
+- [00:14:32,280 - 00:14:35,400] is a vector taken around here
+- [00:14:35,400 - 00:14:36,980] will typically rotate.
+- [00:14:37,440 - 00:14:39,360] But it won't necessarily rotate
+- [00:14:39,360 - 00:14:40,560] about the same axis.
+- [00:14:40,580 - 00:14:45,660] If I take my apparatus,
+- [00:14:46,080 - 00:14:47,380] the gyroscope,
+- [00:14:47,380 - 00:14:48,520] my gyroscopic...
+- [00:14:48,520 - 00:14:51,760] I can take three gyroscopes all hooked together
+- [00:14:51,760 - 00:14:53,460] to define a coordinate system.
+- [00:14:53,880 - 00:14:54,160] There.
+- [00:14:54,360 - 00:14:55,680] And I move them around,
+- [00:14:55,840 - 00:14:56,980] and I see how they move,
+- [00:14:57,640 - 00:14:59,140] how they parallelly transport,
+- [00:14:59,540 - 00:15:01,960] and I take them around an axis,
+- [00:15:02,260 - 00:15:05,060] around the axis of my arm.
+- [00:15:06,200 - 00:15:09,440] If this curvature in the region of my arm,
+- [00:15:09,440 - 00:15:11,660] when I go around to the other side,
+- [00:15:11,860 - 00:15:14,580] the axes will have rotated.
+- [00:15:15,280 - 00:15:17,800] What axis will these rotate about?
+- [00:15:18,060 - 00:15:19,880] Not necessarily the axis
+- [00:15:19,880 - 00:15:21,280] that you transported them about.
+- [00:15:21,560 - 00:15:22,460] For example,
+- [00:15:22,460 - 00:15:24,100] this might be the z-axis.
+- [00:15:24,480 - 00:15:27,020] I might take my little device here
+- [00:15:27,020 - 00:15:28,920] around the z-axis
+- [00:15:29,260 - 00:15:31,240] and discover that it rotated
+- [00:15:31,240 - 00:15:32,620] around the x-axis.
+- [00:15:34,640 - 00:15:37,940] So in diagnosing what's going on in space,
+- [00:15:38,040 - 00:15:39,420] an understanding of the z-axis
+- [00:15:39,440 - 00:15:40,500] and understanding the curvature,
+- [00:15:41,280 - 00:15:43,720] there are two and three dimensions.
+- [00:15:43,960 - 00:15:45,740] There are two axes to keep track of.
+- [00:15:47,360 - 00:15:48,400] In general,
+- [00:15:48,400 - 00:15:51,220] there are two planes to keep track of.
+- [00:15:51,860 - 00:15:54,080] The two planes to keep track of are...
+- [00:15:54,080 - 00:15:55,760] One of them is the little plane
+- [00:15:55,760 - 00:15:56,840] that you move around in.
+- [00:15:57,000 - 00:15:59,620] The other one is the plane
+- [00:15:59,620 - 00:16:01,340] in which the vectors rotate.
+- [00:16:02,680 - 00:16:03,920] Rotation within a plane.
+- [00:16:05,260 - 00:16:05,960] All right,
+- [00:16:05,960 - 00:16:07,000] so I'm going to write down now
+- [00:16:07,000 - 00:16:08,760] the general formula
+- [00:16:10,520 - 00:16:11,120] for...
+- [00:16:13,199 - 00:16:13,800] Yeah?
+- [00:16:15,820 - 00:16:17,980] When we take this vector
+- [00:16:17,980 - 00:16:21,640] and we track around the surface
+- [00:16:22,300 - 00:16:24,580] and we come up with an angle of stiffness,
+- [00:16:26,160 - 00:16:29,620] that means that the concept of parallelism,
+- [00:16:29,660 - 00:16:32,260] which goes along with the flag,
+- [00:16:32,920 - 00:16:34,560] is deviated from the change
+- [00:16:34,560 - 00:16:35,440] that it's going to play.
+- [00:16:36,580 - 00:16:37,180] Right.
+- [00:16:37,200 - 00:16:39,260] You discover that when you try to...
+- [00:16:39,260 - 00:16:40,480] So we run into the same problem
+- [00:16:40,480 - 00:16:42,600] with the concept of perpendicularity.
+- [00:16:42,800 - 00:16:43,520] No.
+- [00:16:44,100 - 00:16:44,860] In principle,
+- [00:16:44,860 - 00:16:45,680] you could imagine
+- [00:16:46,560 - 00:16:48,660] that that does happen.
+- [00:16:48,840 - 00:16:51,280] That does not happen in Riemannian geometry.
+- [00:16:51,760 - 00:16:52,720] In Riemannian geometry,
+- [00:16:53,160 - 00:16:56,280] you can imagine more generalized kinds of geometries,
+- [00:16:56,360 - 00:16:57,480] affine geometries,
+- [00:16:57,480 - 00:16:58,740] other kinds of geometries.
+- [00:17:00,640 - 00:17:03,840] The notion of perpendicularity
+- [00:17:03,840 - 00:17:05,720] is an invariant notion
+- [00:17:06,200 - 00:17:07,480] in a Riemannian geometry.
+- [00:17:07,480 - 00:17:10,540] Things which are perpendicular stay perpendicular.
+- [00:17:11,060 - 00:17:11,900] All right,
+- [00:17:11,900 - 00:17:12,880] that's an important point.
+- [00:17:13,099 - 00:17:15,839] That parallel transport in Riemannian geometry
+- [00:17:15,839 - 00:17:17,819] and in general relativity
+- [00:17:17,819 - 00:17:19,300] is defined in a way
+- [00:17:19,300 - 00:17:20,540] that vectors,
+- [00:17:20,540 - 00:17:21,760] when you transport them,
+- [00:17:21,839 - 00:17:25,020] if they are perpendicular to begin with,
+- [00:17:25,099 - 00:17:25,940] they stay perpendicular.
+- [00:17:27,560 - 00:17:30,380] So perpendicularity is an invariant concept.
+- [00:17:33,780 - 00:17:34,500] Okay,
+- [00:17:34,500 - 00:17:36,920] so let's write down the general formula.
+- [00:17:44,680 - 00:17:45,160] Supposing...
+- [00:17:46,060 - 00:17:46,540] Now,
+- [00:17:46,540 - 00:17:47,660] I'm not even going to tell you
+- [00:17:47,660 - 00:17:48,860] how many dimensions we're in
+- [00:17:48,860 - 00:17:49,720] because it doesn't matter.
+- [00:17:50,400 - 00:17:51,440] It could be 2,
+- [00:17:51,440 - 00:17:51,760] 3,
+- [00:17:51,760 - 00:17:52,120] 4,
+- [00:17:52,120 - 00:17:52,980] 100,000.
+- [00:17:53,020 - 00:17:53,700] It doesn't matter.
+- [00:17:54,659 - 00:17:56,360] Pick two axes.
+- [00:17:57,080 - 00:17:58,720] Let's see what I called them.
+- [00:17:59,940 - 00:18:01,460] I called one of them
+- [00:18:02,760 - 00:18:03,540] x nu
+- [00:18:03,540 - 00:18:06,560] and the other one x mu.
+- [00:18:08,080 - 00:18:10,380] And now what we're going to do...
+- [00:18:11,040 - 00:18:12,400] And they're two different axes.
+- [00:18:12,500 - 00:18:14,340] Mu and nu are intended to be different here.
+- [00:18:15,000 - 00:18:16,100] It could be x and y.
+- [00:18:16,260 - 00:18:17,200] It could be x and t.
+- [00:18:17,340 - 00:18:18,400] It could be whatever you like.
+- [00:18:18,960 - 00:18:23,920] We're going to go around in a small rectangle
+- [00:18:25,779 - 00:18:28,380] or as close to a rectangle as we can build.
+- [00:18:30,640 - 00:18:31,600] In other words,
+- [00:18:31,600 - 00:18:36,660] we're going to have a small dx mu,
+- [00:18:37,480 - 00:18:39,680] and a small dx nu.
+- [00:18:41,180 - 00:18:41,620] Okay?
+- [00:18:43,840 - 00:18:46,680] That characterizes the excursion
+- [00:18:47,879 - 00:18:48,900] in the x mu,
+- [00:18:48,900 - 00:18:49,720] x nu plane.
+- [00:18:49,880 - 00:18:51,880] We go a little bit along x mu,
+- [00:18:52,040 - 00:18:54,140] and we go a little bit along x nu,
+- [00:18:54,280 - 00:18:55,900] then we come back along x mu,
+- [00:18:56,040 - 00:18:57,320] and then we come back by
+- [00:18:57,320 - 00:18:58,600] the same amount along x nu.
+- [00:18:59,639 - 00:19:01,700] That creates a little bit of area,
+- [00:19:02,200 - 00:19:04,380] and that area will be proportional
+- [00:19:05,580 - 00:19:06,540] to the product
+- [00:19:07,480 - 00:19:09,020] of dx mu times dx nu.
+- [00:19:10,820 - 00:19:13,820] It won't be exactly dx mu times dx nu,
+- [00:19:13,900 - 00:19:15,640] because I haven't particularly said
+- [00:19:15,640 - 00:19:17,740] that these two directions are perpendicular,
+- [00:19:18,160 - 00:19:20,260] and I haven't told you what the metric is.
+- [00:19:20,640 - 00:19:22,500] But whatever the metric is,
+- [00:19:23,180 - 00:19:26,220] the area in here will be proportional
+- [00:19:26,220 - 00:19:27,760] to dx times dx,
+- [00:19:28,120 - 00:19:29,660] dx mu times dx nu.
+- [00:19:29,760 - 00:19:31,680] The area will be proportional to that.
+- [00:19:32,200 - 00:19:33,980] And so to begin with then,
+- [00:19:34,080 - 00:19:34,920] we have two axes
+- [00:19:34,920 - 00:19:36,760] and a little bit of area in there.
+- [00:19:37,480 - 00:19:38,740] We carry a vector,
+- [00:19:38,780 - 00:19:40,340] we start a vector at one end,
+- [00:19:41,160 - 00:19:42,440] and we bring it around,
+- [00:19:42,700 - 00:19:44,060] and we look at it,
+- [00:19:44,100 - 00:19:44,560] what it's done.
+- [00:19:44,700 - 00:19:44,780] Now,
+- [00:19:44,780 - 00:19:45,400] what are the rules?
+- [00:19:45,720 - 00:19:48,560] The rules are we do it by parallel transport,
+- [00:19:48,700 - 00:19:50,040] which we've already defined.
+- [00:19:51,040 - 00:19:52,640] We'll come back to that definition,
+- [00:19:52,960 - 00:19:54,840] but it's the definition involving
+- [00:19:54,840 - 00:19:56,340] the Christoffel symbols.
+- [00:19:57,060 - 00:19:59,340] So we parallel transport that vector
+- [00:19:59,340 - 00:20:00,460] around the curve,
+- [00:20:00,460 - 00:20:02,040] okay?
+- [00:20:02,620 - 00:20:04,000] Bringing it back to itself.
+- [00:20:04,400 - 00:20:06,480] Parallel transporting it means that,
+- [00:20:06,480 - 00:20:10,340] that the derivative along,
+- [00:20:10,420 - 00:20:12,980] that the covariant derivative along the curve is zero.
+- [00:20:13,200 - 00:20:14,980] So you would think it must come back to itself
+- [00:20:14,980 - 00:20:16,560] if the covariant derivative is zero.
+- [00:20:16,780 - 00:20:17,680] But the thing is,
+- [00:20:17,720 - 00:20:18,520] the covariant derivative
+- [00:20:18,520 - 00:20:19,880] is not the ordinary derivative.
+- [00:20:20,800 - 00:20:23,120] And so if we start with a vector v,
+- [00:20:26,540 - 00:20:29,280] and we transport it around the closed curve,
+- [00:20:29,840 - 00:20:31,380] there will be a change.
+- [00:20:34,020 - 00:20:35,080] And that change,
+- [00:20:35,160 - 00:20:36,460] let's write down a very general one,
+- [00:20:36,480 - 00:20:37,040] a general formula.
+- [00:20:38,000 - 00:20:43,140] It will be proportional to dx mu and dx nu.
+- [00:20:44,920 - 00:20:45,400] Why?
+- [00:20:45,640 - 00:20:47,240] Because we expect it to be proportional
+- [00:20:47,240 - 00:20:48,740] to the area that we've enclosed.
+- [00:20:49,900 - 00:20:51,360] So it will be proportional
+- [00:20:51,360 - 00:20:52,820] to dx mu and dx nu.
+- [00:20:57,660 - 00:21:00,940] You want to use mu on the superscript for v?
+- [00:21:01,200 - 00:21:02,360] You already used mu.
+- [00:21:02,480 - 00:21:02,680] Oh,
+- [00:21:02,680 - 00:21:03,280] you're right.
+- [00:21:03,420 - 00:21:03,960] We shouldn't.
+- [00:21:04,420 - 00:21:05,220] dx nu,
+- [00:21:05,220 - 00:21:05,620] dx,
+- [00:21:05,620 - 00:21:06,360] same amount.
+- [00:21:06,480 - 00:21:06,940] Good point.
+- [00:21:10,980 - 00:21:11,880] We shouldn't.
+- [00:21:14,120 - 00:21:17,240] So it's going to have dx nu and dx sigma,
+- [00:21:17,360 - 00:21:18,160] the x nu and,
+- [00:21:18,160 - 00:21:18,460] alright.
+- [00:21:18,800 - 00:21:21,750] It is going to also involve
+- [00:21:21,750 - 00:21:24,700] the vector that we started with.
+- [00:21:25,820 - 00:21:28,200] It's basically going to be a rotation of the vector.
+- [00:21:28,620 - 00:21:31,140] The change in the vector will be proportional
+- [00:21:31,140 - 00:21:32,740] to the vector that you start with.
+- [00:21:32,980 - 00:21:34,900] If you start with a vector which is zero,
+- [00:21:34,900 - 00:21:35,980] it will stay zero.
+- [00:21:36,600 - 00:21:38,840] If you start with a vector which is very long,
+- [00:21:39,000 - 00:21:41,460] it will stay very long because its length is preserved.
+- [00:21:41,880 - 00:21:44,340] And so we expect that the change in the vector
+- [00:21:44,340 - 00:21:46,080] when it goes around the closed curve
+- [00:21:46,840 - 00:21:48,600] will involve the vector itself.
+- [00:21:49,960 - 00:21:51,800] Let's give it an index v tau.
+- [00:21:53,480 - 00:21:56,040] And the rest has to be some object
+- [00:21:56,040 - 00:21:57,540] which defines the curvature.
+- [00:21:58,020 - 00:21:59,540] It's the curvature tensor.
+- [00:22:00,100 - 00:22:02,380] So let's see if we can build a formula.
+- [00:22:02,380 - 00:22:05,800] We have three indices upstairs,
+- [00:22:07,840 - 00:22:10,600] one index on the right-hand side,
+- [00:22:10,900 - 00:22:15,260] one index upstairs on the left-hand side here.
+- [00:22:15,440 - 00:22:18,700] The only thing we can have here is some tensor
+- [00:22:19,620 - 00:22:21,810] which has an upper index
+- [00:22:21,810 - 00:22:24,000] mu to match this index here,
+- [00:22:26,419 - 00:22:31,560] a nu and a sigma and a tau.
+- [00:22:32,380 - 00:22:35,660] So it's a very simple formula.
+- [00:22:35,660 - 00:22:35,840] All right,
+- [00:22:35,840 - 00:22:37,600] now you can work this formula,
+- [00:22:37,740 - 00:22:39,200] you can work this out yourself.
+- [00:22:39,500 - 00:22:44,360] All you have to do is use the formula
+- [00:22:44,360 - 00:22:47,480] for covariant differentiation,
+- [00:22:48,600 - 00:22:51,040] say that along the first curve...
+- [00:22:51,680 - 00:22:53,500] Let me write it down.
+- [00:22:53,840 - 00:22:55,060] Do you remember what the formula
+- [00:22:55,060 - 00:22:58,120] for covariant differentiation along a curve is?
+- [00:23:02,380 - 00:23:03,280] Let's just write it down.
+- [00:23:10,520 - 00:23:15,300] It's something like dv mu by ds,
+- [00:23:15,580 - 00:23:17,940] s is length along the curve,
+- [00:23:18,080 - 00:23:21,500] plus gamma mu,
+- [00:23:24,280 - 00:23:25,900] I don't know,
+- [00:23:25,900 - 00:23:27,020] alpha beta
+- [00:23:28,960 - 00:23:30,320] times the...
+- [00:23:32,880 - 00:23:36,400] v alpha times the tangent vector,
+- [00:23:36,680 - 00:23:40,280] dx beta by ds.
+- [00:23:41,580 - 00:23:44,300] That was the covariant derivative of the vector v
+- [00:23:44,300 - 00:23:47,220] along the curve parameterized by s.
+- [00:23:48,480 - 00:23:50,820] If I want to set that equal to zero,
+- [00:23:52,220 - 00:23:53,980] then I have an immediate formula
+- [00:23:53,980 - 00:23:56,800] for how v should change along s,
+- [00:23:56,920 - 00:23:59,260] how the components of v should change along s.
+- [00:23:59,320 - 00:24:00,280] I don't need the ds here.
+- [00:24:00,500 - 00:24:02,300] The ds is not playing any role.
+- [00:24:03,180 - 00:24:04,700] Just divide through by it.
+- [00:24:05,420 - 00:24:06,920] What it says is that
+- [00:24:06,920 - 00:24:08,420] the change in the vector v
+- [00:24:08,420 - 00:24:10,040] going from here to here
+- [00:24:10,720 - 00:24:14,940] is equal to minus gamma alpha beta mu
+- [00:24:14,940 - 00:24:18,800] v alpha dx beta.
+- [00:24:20,280 - 00:24:22,680] That's the formula for the change of the vector
+- [00:24:22,680 - 00:24:23,940] in going from here to here.
+- [00:24:25,080 - 00:24:26,130] Now what do you think the
+- [00:24:26,130 - 00:24:27,180] change in the vector would be
+- [00:24:27,180 - 00:24:29,340] if I parallelly transported it to here
+- [00:24:29,340 - 00:24:31,120] and then parallelly transported it right back?
+- [00:24:33,960 - 00:24:35,620] The answer would be zero,
+- [00:24:35,620 - 00:24:36,200] no change.
+- [00:24:37,220 - 00:24:39,260] Parallel transport is not so weird
+- [00:24:39,260 - 00:24:41,020] that when you transport a thing
+- [00:24:41,020 - 00:24:42,880] and then transport it back...
+- [00:24:42,880 - 00:24:43,520] Yeah,
+- [00:24:43,520 - 00:24:44,520] it doesn't do anything.
+- [00:24:44,660 - 00:24:46,300] You need some area enclosed
+- [00:24:47,220 - 00:24:48,880] in order to get an answer.
+- [00:24:49,860 - 00:24:50,580] All right,
+- [00:24:50,580 - 00:24:53,960] so if you transport from here to here,
+- [00:24:54,140 - 00:24:55,180] you get that.
+- [00:24:55,800 - 00:24:57,540] When you transport back,
+- [00:24:58,120 - 00:25:00,720] you're going to get something entirely similar
+- [00:25:00,720 - 00:25:03,880] except along a neighboring curve.
+- [00:25:05,620 - 00:25:08,060] It's not going to be exactly the same.
+- [00:25:08,240 - 00:25:09,100] Why not?
+- [00:25:09,160 - 00:25:12,160] Because the Christoffel symbol over here
+- [00:25:12,160 - 00:25:14,900] and over here are not exactly the same.
+- [00:25:16,620 - 00:25:18,220] They vary a little bit.
+- [00:25:18,800 - 00:25:19,440] Also,
+- [00:25:19,440 - 00:25:21,320] when you go from here to here,
+- [00:25:22,279 - 00:25:26,960] the change in v does not cancel the change
+- [00:25:26,960 - 00:25:30,100] when you come back along this arc of the...
+- [00:25:30,720 - 00:25:31,760] of the rectangle.
+- [00:25:32,220 - 00:25:32,780] Why?
+- [00:25:33,280 - 00:25:36,660] Because the Christoffel symbol varies from here to here.
+- [00:25:37,860 - 00:25:38,420] Okay?
+- [00:25:39,620 - 00:25:42,480] So because the Christoffel symbol varies
+- [00:25:42,480 - 00:25:43,820] as you move around,
+- [00:25:45,340 - 00:25:47,160] by the time you get back,
+- [00:25:47,340 - 00:25:49,340] the changes,
+- [00:25:49,340 - 00:25:51,360] which is this v mu,
+- [00:25:51,480 - 00:25:53,900] the change in v mu is not equal to zero.
+- [00:25:55,560 - 00:25:56,520] In fact,
+- [00:25:56,520 - 00:25:58,900] it's clear that what's going to come into it
+- [00:25:58,900 - 00:26:00,380] are derivatives,
+- [00:26:00,720 - 00:26:01,180] derivatives of gamma.
+- [00:26:02,880 - 00:26:04,480] It's the derivatives of gamma,
+- [00:26:04,580 - 00:26:07,180] the fact that gammas vary from place to place,
+- [00:26:07,360 - 00:26:11,080] that means that you don't cancel out
+- [00:26:12,060 - 00:26:13,600] deviations along one arc
+- [00:26:13,600 - 00:26:16,740] by deviations along the arc coming back.
+- [00:26:18,260 - 00:26:18,300] Okay?
+- [00:26:20,680 - 00:26:21,700] Here's the formula.
+- [00:26:23,040 - 00:26:25,100] I haven't told you what r is yet.
+- [00:26:25,900 - 00:26:27,800] I haven't told you what r is yet,
+- [00:26:27,880 - 00:26:29,400] but you can see that,
+- [00:26:29,400 - 00:26:30,980] in order to get something,
+- [00:26:31,340 - 00:26:34,360] you'll have to have a shift along one axis
+- [00:26:34,360 - 00:26:36,520] and a shift along the other axis.
+- [00:26:37,340 - 00:26:40,240] So it has to have a dx times another dx.
+- [00:26:41,540 - 00:26:42,320] That's clear.
+- [00:26:42,620 - 00:26:44,440] You have to enclose a little area.
+- [00:26:45,500 - 00:26:47,400] The change in v will
+- [00:26:47,400 - 00:26:49,300] always be proportional to v itself.
+- [00:26:49,960 - 00:26:52,260] So even when you go around the closed loop,
+- [00:26:52,440 - 00:26:54,280] it's going to be proportional to v itself.
+- [00:26:54,680 - 00:26:56,010] And what would you expect
+- [00:26:56,010 - 00:26:57,340] r to be made out of?
+- [00:26:59,660 - 00:27:01,160] From what I just told you.
+- [00:27:02,340 - 00:27:04,740] The derivatives of the Christoffel symbol.
+- [00:27:05,400 - 00:27:07,540] The derivatives of the Christoffel symbol
+- [00:27:07,540 - 00:27:09,340] are going to enter into r.
+- [00:27:10,840 - 00:27:12,400] This is a tensor equation.
+- [00:27:13,100 - 00:27:13,560] dx,
+- [00:27:13,560 - 00:27:14,420] v,
+- [00:27:14,420 - 00:27:18,320] delta v on this side here are,
+- [00:27:19,340 - 00:27:20,460] these are all,
+- [00:27:20,560 - 00:27:22,100] this is the difference of
+- [00:27:22,100 - 00:27:23,640] two vectors at the same point.
+- [00:27:24,100 - 00:27:24,720] Those,
+- [00:27:24,720 - 00:27:25,600] delta v,
+- [00:27:25,600 - 00:27:26,800] difference of two vectors,
+- [00:27:26,960 - 00:27:28,800] vector and a slightly shifted vector,
+- [00:27:29,400 - 00:27:30,420] this is a tensor equation,
+- [00:27:30,860 - 00:27:33,180] and this is the curvature tensor.
+- [00:27:33,480 - 00:27:35,260] It's the Riemann curvature tensor.
+- [00:27:36,000 - 00:27:37,440] And what it tells you,
+- [00:27:37,440 - 00:27:38,240] as I said,
+- [00:27:39,080 - 00:27:41,100] is per unit area,
+- [00:27:42,320 - 00:27:45,080] it tells you how a vector changes
+- [00:27:45,080 - 00:27:47,020] when it goes around in a closed loop.
+- [00:27:48,080 - 00:27:49,160] In fact,
+- [00:27:49,160 - 00:27:49,860] it rotates.
+- [00:27:49,980 - 00:27:50,940] The vector rotates.
+- [00:27:51,660 - 00:27:54,580] But even if it did something more complicated than rotating,
+- [00:27:54,900 - 00:27:57,820] this would be the formula that you would use.
+- [00:27:57,820 - 00:28:01,120] And that's what the curvature tensor is all about.
+- [00:28:01,520 - 00:28:04,500] It tells you how vectors fail
+- [00:28:04,500 - 00:28:08,500] to return to their original direction
+- [00:28:09,620 - 00:28:12,960] when you parallelly transport them around a closed curve.
+- [00:28:13,640 - 00:28:15,900] Indication that this curvature somewhere is inside.
+- [00:28:17,380 - 00:28:18,020] Okay,
+- [00:28:18,020 - 00:28:18,360] now,
+- [00:28:18,360 - 00:28:21,540] notice that two of these indices here,
+- [00:28:21,900 - 00:28:22,620] nu and sigma,
+- [00:28:22,820 - 00:28:24,980] have to do with the
+- [00:28:24,980 - 00:28:27,140] plane that you moved around in.
+- [00:28:27,140 - 00:28:29,320] The x mu and the x sigma.
+- [00:28:29,500 - 00:28:31,100] The other two indices,
+- [00:28:31,100 - 00:28:32,340] tau and mu,
+- [00:28:33,840 - 00:28:34,860] have to do,
+- [00:28:34,860 - 00:28:35,600] they contract,
+- [00:28:36,220 - 00:28:37,470] or they have to do
+- [00:28:37,470 - 00:28:38,720] with the indices of v itself.
+- [00:28:40,060 - 00:28:42,320] Tau over here goes with tau over here,
+- [00:28:42,460 - 00:28:44,700] mu over here goes with mu over here.
+- [00:28:44,960 - 00:28:46,660] So two of the indices have
+- [00:28:46,660 - 00:28:48,360] to do with the directions in space
+- [00:28:48,360 - 00:28:49,240] that you go around,
+- [00:28:50,020 - 00:28:51,320] and the other two indices
+- [00:28:52,040 - 00:28:53,840] have to do with the vector themselves
+- [00:28:53,840 - 00:28:55,320] and tell you how it changes.
+- [00:28:56,200 - 00:28:56,720] Alright?
+- [00:28:57,280 - 00:28:58,760] So that's the pattern.
+- [00:28:58,920 - 00:29:00,600] That's the structure of
+- [00:29:03,420 - 00:29:04,860] the curvature tensor.
+- [00:29:05,660 - 00:29:06,920] Not the structure of it,
+- [00:29:06,980 - 00:29:08,480] but that's what a curvature tensor is.
+- [00:29:10,440 - 00:29:12,900] It's the general definition of the curvature tensor.
+- [00:29:15,040 - 00:29:16,080] And as I said,
+- [00:29:16,080 - 00:29:17,320] it always has four indices.
+- [00:29:19,620 - 00:29:21,750] Two of them telling you about
+- [00:29:21,750 - 00:29:23,880] the plane that you're moving around in,
+- [00:29:23,920 - 00:29:24,610] and two of them telling you about
+- [00:29:24,610 - 00:29:25,300] the plane that you're moving around in,
+- [00:29:25,300 - 00:29:26,420] and two of them telling you about
+- [00:29:26,420 - 00:29:27,540] the plane of rotation of the vector.
+- [00:29:28,320 - 00:29:29,700] That's why it has four indices.
+- [00:29:30,180 - 00:29:32,390] Two to tell you what
+- [00:29:32,390 - 00:29:34,600] the directions you're moving around in,
+- [00:29:35,110 - 00:29:38,200] and two to tell you the plane of rotation,
+- [00:29:38,200 - 00:29:38,960] if you like,
+- [00:29:39,180 - 00:29:41,460] that the vector undergoes.
+- [00:29:42,760 - 00:29:45,420] Those are the four indices of the Riemann tensor.
+- [00:29:46,020 - 00:29:47,480] This is the Riemann tensor,
+- [00:29:47,660 - 00:29:49,780] and I'm now going to write down,
+- [00:29:51,320 - 00:29:53,440] it's too tedious to derive this,
+- [00:29:53,620 - 00:29:55,120] I've given you the principle,
+- [00:29:55,300 - 00:29:57,330] you know how to parallelly transport
+- [00:29:57,330 - 00:29:59,360] a vector around a closed curve.
+- [00:30:01,660 - 00:30:04,520] You could make your closed curve be a little rectangle,
+- [00:30:05,120 - 00:30:06,960] you could carry out the process,
+- [00:30:07,500 - 00:30:08,780] and find R.
+- [00:30:09,380 - 00:30:10,600] And I advise it,
+- [00:30:10,600 - 00:30:11,420] it's a nice exercise,
+- [00:30:11,780 - 00:30:12,780] it's not too hard to do.
+- [00:30:13,000 - 00:30:14,580] I'm just going to write the answer down,
+- [00:30:14,680 - 00:30:15,580] because it's more than,
+- [00:30:16,860 - 00:30:19,260] it's more than is appropriate to
+- [00:30:19,260 - 00:30:21,660] do on a blackboard in ten minutes.
+- [00:30:22,760 - 00:30:24,260] But the answer is not hard.
+- [00:30:26,159 - 00:30:28,400] I memorized it years ago,
+- [00:30:31,620 - 00:30:32,260] and,
+- [00:30:32,260 - 00:30:32,900] no,
+- [00:30:32,900 - 00:30:34,920] I could write this in my sleep,
+- [00:30:35,080 - 00:30:35,200] this,
+- [00:30:35,200 - 00:30:37,280] okay,
+- [00:30:37,280 - 00:30:40,500] so let me write down the answer for you.
+- [00:30:41,620 - 00:30:46,100] The Riemann tensor with index rho upstairs,
+- [00:30:46,240 - 00:30:49,480] notice that the way I've defined it,
+- [00:30:50,360 - 00:30:53,760] it has one index upstairs and three indices downstairs.
+- [00:30:53,880 - 00:30:54,240] Of course,
+- [00:30:54,240 - 00:30:54,240] I'm going to write it down,
+- [00:30:54,260 - 00:30:55,000] and of course you can change that.
+- [00:30:55,360 - 00:30:58,880] You can lower an index of a tensor
+- [00:30:58,880 - 00:31:00,760] by contracting it with a metric.
+- [00:31:01,200 - 00:31:03,540] But the way that it's been defined here,
+- [00:31:03,640 - 00:31:04,880] from the definition here,
+- [00:31:05,500 - 00:31:09,420] it has one index upstairs and three indices downstairs,
+- [00:31:09,680 - 00:31:13,180] and for some reason I have used different letters,
+- [00:31:13,440 - 00:31:15,240] but it doesn't matter.
+- [00:31:15,960 - 00:31:16,560] Sigma,
+- [00:31:16,560 - 00:31:17,200] mu,
+- [00:31:17,200 - 00:31:17,940] nu.
+- [00:31:18,380 - 00:31:19,560] Same tensor,
+- [00:31:19,560 - 00:31:23,260] except I've rearranged the indices,
+- [00:31:23,260 - 00:31:24,780] and I'm going to write down what they are.
+- [00:31:24,980 - 00:31:28,660] They're in terms of derivatives of the Christoffel symbols
+- [00:31:29,940 - 00:31:32,460] and also products of the Christoffel symbols.
+- [00:31:37,000 - 00:31:37,540] D mu.
+- [00:31:53,260 - 00:31:56,520] Then there are two terms which are just products
+- [00:31:56,520 - 00:31:58,100] of the mu,
+- [00:31:58,100 - 00:31:59,300] lambda,
+- [00:31:59,300 - 00:31:59,980] rho,
+- [00:31:59,980 - 00:32:01,480] gamma,
+- [00:32:01,480 - 00:32:02,060] nu,
+- [00:32:02,060 - 00:32:03,260] sigma,
+- [00:32:03,260 - 00:32:04,080] lambda,
+- [00:32:07,020 - 00:32:08,060] minus gamma,
+- [00:32:08,060 - 00:32:08,420] nu,
+- [00:32:08,420 - 00:32:09,180] lambda,
+- [00:32:09,180 - 00:32:09,620] rho,
+- [00:32:09,620 - 00:32:11,220] gamma,
+- [00:32:11,220 - 00:32:11,840] mu,
+- [00:32:11,840 - 00:32:13,540] sigma,
+- [00:32:13,540 - 00:32:14,360] lambda.
+- [00:32:17,640 - 00:32:18,160] Okay.
+- [00:32:19,680 - 00:32:20,940] That's the Riemann tensor,
+- [00:32:20,940 - 00:32:21,980] and as I said,
+- [00:32:21,980 - 00:32:25,660] it involves derivatives of the Christoffel symbols,
+- [00:32:28,080 - 00:32:30,020] and it's not hard to work out.
+- [00:32:33,240 - 00:32:33,800] That's it.
+- [00:32:39,400 - 00:32:40,760] Any questions up until now?
+- [00:32:41,180 - 00:32:41,180] And,
+- [00:32:41,180 - 00:32:41,840] um,
+- [00:32:41,840 - 00:32:42,780] hmm?
+- [00:32:42,980 - 00:32:43,920] How do you know it's a tensor?
+- [00:32:46,420 - 00:32:47,760] You know it's a tensor,
+- [00:32:47,820 - 00:32:50,180] you actually know it's a tensor from its definition.
+- [00:32:50,960 - 00:32:51,420] Um,
+- [00:32:52,560 - 00:32:52,960] so,
+- [00:32:52,960 - 00:32:55,000] uh,
+- [00:32:56,620 - 00:32:57,480] you know it,
+- [00:32:57,480 - 00:32:57,880] well,
+- [00:32:57,880 - 00:32:58,980] how do you know it's a tensor?
+- [00:33:00,280 - 00:33:00,680] Um,
+- [00:33:07,040 - 00:33:08,280] the left-hand side,
+- [00:33:08,520 - 00:33:09,300] first of all,
+- [00:33:09,300 - 00:33:09,620] how do you,
+- [00:33:09,620 - 00:33:10,620] how do I know that
+- [00:33:10,620 - 00:33:11,620] the left-hand side is a vector?
+- [00:33:12,440 - 00:33:14,040] It's a difference of two vectors,
+- [00:33:14,899 - 00:33:17,400] and it's kind of like a derivative of a vector,
+- [00:33:17,400 - 00:33:17,920] isn't it?
+- [00:33:18,200 - 00:33:20,880] But a derivative of a vector is not a tensor.
+- [00:33:20,880 - 00:33:22,760] The covariant derivative is a tensor.
+- [00:33:23,020 - 00:33:25,680] But that's because the coordinates
+- [00:33:25,680 - 00:33:28,340] may vary from place to place.
+- [00:33:28,580 - 00:33:31,840] If we're comparing two vectors at the same place,
+- [00:33:32,060 - 00:33:33,320] at the same origin,
+- [00:33:33,700 - 00:33:36,120] then the difference of vectors is a vector.
+- [00:33:36,940 - 00:33:38,670] It's only when we're trying
+- [00:33:38,670 - 00:33:40,400] to compare vectors at different places
+- [00:33:40,400 - 00:33:42,980] that the difference between two vectors,
+- [00:33:43,080 - 00:33:45,180] or the derivative of a vector with respect to position,
+- [00:33:45,560 - 00:33:47,700] may not be a true vector itself.
+- [00:33:48,040 - 00:33:50,860] When we're comparing vectors at the same point,
+- [00:33:50,860 - 00:33:52,520] in other words,
+- [00:33:52,520 - 00:33:54,220] subtracting two vectors,
+- [00:33:54,340 - 00:33:55,740] each of which refers to
+- [00:33:55,740 - 00:33:57,140] exactly the same point in space,
+- [00:33:57,500 - 00:33:59,000] that is a vector.
+- [00:33:59,620 - 00:34:00,220] Okay?
+- [00:34:00,320 - 00:34:02,700] So the left-hand side is a vector,
+- [00:34:02,700 - 00:34:04,100] transforms as a vector.
+- [00:34:04,620 - 00:34:05,860] dx sigma,
+- [00:34:05,860 - 00:34:07,560] dx nu are vectors.
+- [00:34:07,800 - 00:34:09,239] V by definition,
+- [00:34:09,239 - 00:34:10,239] by assumption,
+- [00:34:10,239 - 00:34:11,440] V is a vector.
+- [00:34:13,020 - 00:34:15,500] And if an equation like
+- [00:34:15,500 - 00:34:17,980] this is true for any vector,
+- [00:34:18,239 - 00:34:20,000] the assumption here is
+- [00:34:20,000 - 00:34:21,839] that this equation is true for
+- [00:34:21,839 - 00:34:23,679] any vector that you start with,
+- [00:34:23,880 - 00:34:25,840] that when you take it around the closed curve,
+- [00:34:26,360 - 00:34:27,520] that this is what you get.
+- [00:34:28,100 - 00:34:30,560] If you have a vector equation such as this,
+- [00:34:30,620 - 00:34:31,239] this is a theorem.
+- [00:34:31,300 - 00:34:32,780] If you have a vector equation like this,
+- [00:34:32,820 - 00:34:34,389] which is true for every possible
+- [00:34:34,389 - 00:34:35,960] vector that you can start with,
+- [00:34:37,239 - 00:34:38,880] then R must be a tensor.
+- [00:34:39,420 - 00:34:40,699] So there's a theorem involved
+- [00:34:40,699 - 00:34:41,980] here that R is a tensor.
+- [00:34:42,739 - 00:34:44,139] It's not obvious from here.
+- [00:34:44,400 - 00:34:45,469] Is the second half of
+- [00:34:45,469 - 00:34:46,540] that some kind of a commutator?
+- [00:34:46,820 - 00:34:47,120] Yes.
+- [00:34:48,460 - 00:34:49,360] Indeed it is.
+- [00:34:51,320 - 00:34:51,840] Yes.
+- [00:34:53,100 - 00:34:54,560] If you think of,
+- [00:34:54,560 - 00:34:54,980] alright.
+- [00:34:56,040 - 00:34:56,560] Alright,
+- [00:34:56,560 - 00:34:57,760] so let me tell you what it is.
+- [00:34:57,880 - 00:34:59,400] It is some kind of commutator.
+- [00:35:04,400 - 00:35:09,460] Think of these indices as being matrix indices
+- [00:35:10,220 - 00:35:13,040] with a parameter nu over here.
+- [00:35:15,740 - 00:35:16,260] Alright.
+- [00:35:18,100 - 00:35:18,620] So,
+- [00:35:19,980 - 00:35:20,240] I'm going to write this.
+- [00:35:20,240 - 00:35:20,240] Alright,
+- [00:35:20,240 - 00:35:23,400] then you could,
+- [00:35:23,940 - 00:35:24,860] here's a matrix,
+- [00:35:25,820 - 00:35:26,740] here's another matrix.
+- [00:35:27,040 - 00:35:27,380] Let's see,
+- [00:35:27,380 - 00:35:28,100] do I have this right?
+- [00:35:28,540 - 00:35:29,020] Nu,
+- [00:35:29,020 - 00:35:29,680] wait a minute,
+- [00:35:29,680 - 00:35:30,500] did I write this correct?
+- [00:35:33,700 - 00:35:34,180] Rho,
+- [00:35:34,180 - 00:35:34,660] yeah,
+- [00:35:34,660 - 00:35:35,680] yeah.
+- [00:35:36,060 - 00:35:39,120] You can see here that there's a product of matrices.
+- [00:35:39,500 - 00:35:41,820] The index that's summed over is lambda here.
+- [00:35:42,780 - 00:35:43,260] Alright.
+- [00:35:43,480 - 00:35:45,580] And so you could think of
+- [00:35:45,580 - 00:35:47,680] this as the product of two matrices,
+- [00:35:47,860 - 00:35:49,480] one that you could call gamma mu,
+- [00:35:49,980 - 00:35:51,960] and the other that you could call gamma nu.
+- [00:35:52,720 - 00:35:53,930] There's hidden indices in here
+- [00:35:53,930 - 00:35:55,140] because each one is a matrix.
+- [00:35:56,820 - 00:35:58,620] This one is exactly the same,
+- [00:35:58,720 - 00:36:02,540] except it's minus gamma nu times gamma mu.
+- [00:36:06,160 - 00:36:09,560] So this is in fact a commutator of two matrices.
+- [00:36:12,380 - 00:36:12,940] Alright.
+- [00:36:15,480 - 00:36:16,040] Uh,
+- [00:36:21,140 - 00:36:22,280] and in fact,
+- [00:36:22,340 - 00:36:24,980] the whole thing is also a commutator,
+- [00:36:25,000 - 00:36:26,760] but that's a little more complicated.
+- [00:36:28,940 - 00:36:31,120] It's a commutator of two covariant derivatives.
+- [00:36:31,880 - 00:36:34,220] Is it obvious that this does
+- [00:36:34,220 - 00:36:36,560] not depend on the directions you took
+- [00:36:36,560 - 00:36:38,890] when you started with the x
+- [00:36:38,890 - 00:36:41,220] and the x nu and x mu?
+- [00:36:43,420 - 00:36:43,940] Well,
+- [00:36:43,940 - 00:36:44,500] it does depend,
+- [00:36:44,640 - 00:36:46,190] but it only depends through the
+- [00:36:46,190 - 00:36:47,740] product the x times the x.
+- [00:36:48,000 - 00:36:49,960] We're imagining two different vectors here.
+- [00:36:49,980 - 00:36:51,840] We shouldn't call this dx.
+- [00:36:52,120 - 00:36:53,540] We should be more careful here.
+- [00:36:53,800 - 00:36:54,240] Um,
+- [00:36:56,220 - 00:36:58,620] these are just two different displacements.
+- [00:36:58,760 - 00:37:00,400] dx with an index nu
+- [00:37:00,400 - 00:37:02,040] and dx with an index mu.
+- [00:37:03,340 - 00:37:05,180] Two different displacements.
+- [00:37:05,220 - 00:37:06,080] One over here,
+- [00:37:06,080 - 00:37:06,940] one over here.
+- [00:37:07,940 - 00:37:08,380] Um,
+- [00:37:08,980 - 00:37:10,840] we might have called one of them delta.
+- [00:37:12,720 - 00:37:13,760] We might have called,
+- [00:37:13,760 - 00:37:14,140] in fact,
+- [00:37:14,140 - 00:37:15,100] we might have done it this way.
+- [00:37:15,200 - 00:37:17,940] We might have defined the displacement over here,
+- [00:37:18,420 - 00:37:19,720] which is delta x,
+- [00:37:19,720 - 00:37:21,940] and another displacement over here,
+- [00:37:21,940 - 00:37:22,620] which is dx.
+- [00:37:23,820 - 00:37:25,070] Then we would have put
+- [00:37:25,070 - 00:37:26,320] one delta x and one dx.
+- [00:37:26,580 - 00:37:27,560] I'm not sure if that helped.
+- [00:37:28,160 - 00:37:28,660] Uh,
+- [00:37:28,660 - 00:37:30,450] but it's proportional to the
+- [00:37:30,450 - 00:37:32,240] product of the two displacements.
+- [00:37:32,440 - 00:37:33,540] Aren't those both summed over?
+- [00:37:33,740 - 00:37:34,140] Hm?
+- [00:37:34,260 - 00:37:36,020] Those are both summed over.
+- [00:37:36,200 - 00:37:36,700] Yeah.
+- [00:37:36,860 - 00:37:38,460] So they'll take on all values.
+- [00:37:38,960 - 00:37:39,460] Yeah.
+- [00:37:40,620 - 00:37:41,680] They're both summed over.
+- [00:37:49,720 - 00:37:50,160] Question?
+- [00:37:50,440 - 00:37:50,680] Yeah.
+- [00:37:51,240 - 00:37:53,800] Can you illustrate what it means to keep a vector
+- [00:37:53,800 - 00:37:56,160] parallel to itself when you move in a curved surface,
+- [00:37:56,200 - 00:37:57,740] like on the surface of the Earth,
+- [00:37:57,880 - 00:38:00,420] I have a vector that's parallel to the surface.
+- [00:38:00,560 - 00:38:01,710] How do I know that
+- [00:38:01,710 - 00:38:02,860] I'm keeping it parallel to itself
+- [00:38:02,860 - 00:38:04,740] as I move along the surface of the Earth?
+- [00:38:07,780 - 00:38:08,220] Well,
+- [00:38:10,160 - 00:38:11,180] as I said,
+- [00:38:13,100 - 00:38:13,540] you,
+- [00:38:17,900 - 00:38:19,520] along the surface of the Earth,
+- [00:38:20,140 - 00:38:20,980] it's easy.
+- [00:38:21,200 - 00:38:23,040] You just drive straight ahead.
+- [00:38:24,120 - 00:38:26,540] You aim your steering wheel straight ahead.
+- [00:38:27,080 - 00:38:28,380] You don't care,
+- [00:38:28,520 - 00:38:31,200] and you don't allow yourself to turn it.
+- [00:38:31,320 - 00:38:33,160] You don't care whether there are
+- [00:38:33,160 - 00:38:35,000] bumps or curves in the surface.
+- [00:38:35,160 - 00:38:37,000] You don't care whether you're going over mountains,
+- [00:38:37,060 - 00:38:38,240] through mountain passes.
+- [00:38:38,440 - 00:38:41,900] You keep that steering wheel dead straight ahead.
+- [00:38:41,900 - 00:38:46,760] And that is the definition of a geodesic.
+- [00:38:49,360 - 00:38:50,920] In other words,
+- [00:38:50,940 - 00:38:51,620] locally,
+- [00:38:52,960 - 00:38:54,800] in small little patches,
+- [00:38:55,060 - 00:38:57,260] you go perfectly straight ahead.
+- [00:38:57,580 - 00:38:58,220] Now,
+- [00:38:59,480 - 00:39:04,040] the technical definition is you find coordinates locally
+- [00:39:04,040 - 00:39:06,120] which are as flat as possible,
+- [00:39:06,340 - 00:39:09,420] which means that all of the first and second derivatives
+- [00:39:09,420 - 00:39:10,960] of the metric are equal to zero,
+- [00:39:11,100 - 00:39:11,880] and then you can go straight ahead.
+- [00:39:11,900 - 00:39:12,740] And in those coordinates,
+- [00:39:13,040 - 00:39:14,400] the vector is constant.
+- [00:39:14,640 - 00:39:16,900] The derivative of the vector is equal to zero.
+- [00:39:17,680 - 00:39:20,320] So the technical definition is in terms of coordinates
+- [00:39:21,060 - 00:39:24,840] which are chosen to be as close as possible
+- [00:39:24,840 - 00:39:25,980] to Cartesian coordinates,
+- [00:39:26,220 - 00:39:27,600] first and second derivatives of
+- [00:39:27,600 - 00:39:28,980] the metric all equal to zero.
+- [00:39:29,920 - 00:39:30,960] In that case,
+- [00:39:31,040 - 00:39:32,520] the only variation of the vector
+- [00:39:32,520 - 00:39:34,960] will come from the variation of the vector
+- [00:39:34,960 - 00:39:37,300] and not the variation of the coordinate frame
+- [00:39:38,140 - 00:39:39,900] if the first and second derivatives
+- [00:39:39,900 - 00:39:40,920] are all equal to zero.
+- [00:39:42,420 - 00:39:42,940] Okay,
+- [00:39:42,940 - 00:39:43,200] look.
+- [00:39:43,220 - 00:39:46,540] So if I move along a geodesic
+- [00:39:46,540 - 00:39:51,300] and the vector moves with the curvature of the geodesic,
+- [00:39:51,320 - 00:39:52,500] that's parallel?
+- [00:39:53,320 - 00:39:55,440] If you have a geodesic
+- [00:39:55,440 - 00:39:57,480] and you have a vector
+- [00:39:57,480 - 00:39:59,520] which is pointing along the geodesic,
+- [00:39:59,540 - 00:40:01,940] it will stay pointing along the geodesic.
+- [00:40:02,140 - 00:40:03,910] If you have a vector
+- [00:40:03,910 - 00:40:05,680] which is perpendicular to the geodesic,
+- [00:40:05,680 - 00:40:07,080] it will stay perpendicular to it.
+- [00:40:07,840 - 00:40:08,500] All right?
+- [00:40:08,500 - 00:40:09,000] Now,
+- [00:40:09,000 - 00:40:10,040] that's not enough.
+- [00:40:10,280 - 00:40:11,480] In two dimensions,
+- [00:40:11,480 - 00:40:12,180] that's enough
+- [00:40:12,180 - 00:40:15,240] to tell you exactly what covariant differentiation means.
+- [00:40:15,720 - 00:40:16,880] In three dimensions,
+- [00:40:16,880 - 00:40:17,460] it's not,
+- [00:40:17,580 - 00:40:19,240] in particular along the geodesic.
+- [00:40:19,340 - 00:40:21,240] The problem in three direct dimensions
+- [00:40:21,240 - 00:40:22,860] is you might have a geodesic.
+- [00:40:22,960 - 00:40:25,080] Anything which is along the geodesic
+- [00:40:26,300 - 00:40:28,460] will stay along the geodesic.
+- [00:40:28,520 - 00:40:30,860] But something which is perpendicular to it,
+- [00:40:31,479 - 00:40:33,099] it's not enough to know that
+- [00:40:33,099 - 00:40:34,720] it stays perpendicular to the geodesic
+- [00:40:34,720 - 00:40:36,120] because it could spiral around it.
+- [00:40:36,200 - 00:40:37,600] So it's a little more complicated.
+- [00:40:38,500 - 00:40:38,500] So,
+- [00:40:38,500 - 00:40:38,500] uh,
+- [00:40:38,500 - 00:40:40,140] to,
+- [00:40:40,140 - 00:40:41,880] uh,
+- [00:40:41,880 - 00:40:42,400] um...
+- [00:40:46,140 - 00:40:49,200] What you can do in higher dimensions
+- [00:40:49,200 - 00:40:50,900] is you can do the following trick.
+- [00:40:52,040 - 00:40:54,460] You can take two neighboring geodesics,
+- [00:40:54,520 - 00:40:55,220] take a point,
+- [00:40:56,200 - 00:40:58,000] and draw a geodesic through it.
+- [00:41:00,680 - 00:41:01,200] Ah,
+- [00:41:01,200 - 00:41:03,640] let's first think about it in flat space.
+- [00:41:05,380 - 00:41:07,000] If I have a geodesic
+- [00:41:07,000 - 00:41:09,220] pointing through my shoulder here,
+- [00:41:09,900 - 00:41:11,250] there's another geodesic that
+- [00:41:11,250 - 00:41:12,600] also points through my shoulder.
+- [00:41:12,620 - 00:41:13,220] There's many of them,
+- [00:41:13,220 - 00:41:13,620] of course.
+- [00:41:13,940 - 00:41:16,150] But take another one which is
+- [00:41:16,150 - 00:41:18,360] almost parallel to the starting one,
+- [00:41:18,560 - 00:41:21,080] just slightly shifted at a different angle.
+- [00:41:21,440 - 00:41:21,980] All right?
+- [00:41:22,020 - 00:41:23,760] Those two define a plane.
+- [00:41:25,880 - 00:41:26,440] Now,
+- [00:41:26,440 - 00:41:30,280] if I transport a vector along the geodesic,
+- [00:41:30,320 - 00:41:32,220] not only will it stay perpendicular,
+- [00:41:33,040 - 00:41:34,850] not only will it stay at
+- [00:41:34,850 - 00:41:36,660] the same angle to the geodesic,
+- [00:41:37,000 - 00:41:38,150] but it will stay at
+- [00:41:38,150 - 00:41:39,300] the same angle to that plane
+- [00:41:39,300 - 00:41:42,040] which is defined by two neighboring geodesics.
+- [00:41:43,520 - 00:41:45,040] Is that clear in flat space?
+- [00:41:45,820 - 00:41:46,420] Yeah.
+- [00:41:46,560 - 00:41:47,160] Okay,
+- [00:41:47,160 - 00:41:48,650] that almost becomes a
+- [00:41:48,650 - 00:41:50,140] definition in higher dimensional space.
+- [00:41:50,760 - 00:41:51,680] You take...
+- [00:41:51,680 - 00:41:53,600] It could be used as a definition.
+- [00:41:54,040 - 00:41:56,540] You take another neighboring geodesic.
+- [00:41:56,580 - 00:41:56,740] Now,
+- [00:41:56,740 - 00:42:00,040] neighboring means infinitesimal angle relative to it.
+- [00:42:00,380 - 00:42:02,500] They define a plane in here.
+- [00:42:04,880 - 00:42:05,480] And...
+- [00:42:05,480 - 00:42:09,460] As you transport along one of the geodesics,
+- [00:42:09,600 - 00:42:11,780] the angle relative to that plane,
+- [00:42:11,840 - 00:42:13,580] something which is perpendicular to that plane
+- [00:42:13,580 - 00:42:15,220] stays perpendicular to the plane.
+- [00:42:15,580 - 00:42:18,700] So you can do better in higher dimensions
+- [00:42:18,700 - 00:42:20,620] with a family of geodesics,
+- [00:42:20,680 - 00:42:22,390] a family of geodesics which
+- [00:42:22,390 - 00:42:24,100] all pass through the same point.
+- [00:42:24,300 - 00:42:24,720] But,
+- [00:42:24,720 - 00:42:24,980] of course,
+- [00:42:24,980 - 00:42:27,020] you don't want to take geodesics at wild angles.
+- [00:42:27,060 - 00:42:28,480] You want to take almost parallel.
+- [00:42:28,860 - 00:42:30,320] That gives you a good definition.
+- [00:42:30,400 - 00:42:33,480] That gives you another definition of parallel transport.
+- [00:42:34,760 - 00:42:35,220] Okay.
+- [00:42:35,220 - 00:42:37,080] But it does come down to the same thing.
+- [00:42:37,420 - 00:42:39,430] In a frame of reference which
+- [00:42:39,430 - 00:42:41,440] is locally as flat as possible,
+- [00:42:42,160 - 00:42:44,780] it means that the vector has no derivatives
+- [00:42:44,780 - 00:42:47,540] in that frame at that point.
+- [00:42:48,480 - 00:42:49,020] All right.
+- [00:42:49,040 - 00:42:49,140] Now,
+- [00:42:49,140 - 00:42:49,400] this is,
+- [00:42:49,400 - 00:42:49,940] as I said,
+- [00:42:50,000 - 00:42:50,840] this is the definition,
+- [00:42:51,000 - 00:42:52,920] the geometric definition of curvature.
+- [00:42:53,820 - 00:42:55,520] It's a complicated definition.
+- [00:42:56,040 - 00:42:58,620] The concept may not be so complicated,
+- [00:42:58,800 - 00:43:04,320] but the actual mathematical formula for it is,
+- [00:43:04,320 - 00:43:04,920] as you can see,
+- [00:43:04,920 - 00:43:05,600] rather complicated.
+- [00:43:07,180 - 00:43:10,320] How many components does the curvature tensor have?
+- [00:43:12,780 - 00:43:14,600] Let's say in four-dimensional space,
+- [00:43:14,600 - 00:43:16,180] space-time.
+- [00:43:17,660 - 00:43:18,160] Well,
+- [00:43:18,160 - 00:43:18,840] yeah,
+- [00:43:18,840 - 00:43:20,860] four times four times four times four.
+- [00:43:20,900 - 00:43:21,520] It's not that bad.
+- [00:43:22,340 - 00:43:24,680] It's not that bad because there's a lot of symmetry.
+- [00:43:25,060 - 00:43:26,500] There are a lot of
+- [00:43:26,500 - 00:43:27,940] redundancies and a lot of symmetry
+- [00:43:28,560 - 00:43:31,280] that you can read off this formula.
+- [00:43:31,900 - 00:43:33,640] You can read them off this formula.
+- [00:43:34,320 - 00:43:35,760] To see the symmetries best,
+- [00:43:36,060 - 00:43:38,440] it's best to lower this index.
+- [00:43:39,020 - 00:43:42,540] I can lower this index the usual way.
+- [00:43:43,700 - 00:43:48,440] Supposing I want to define r lambda sigma mu nu,
+- [00:43:49,060 - 00:43:52,320] I just multiply by g lambda rho
+- [00:43:53,040 - 00:43:56,980] times r rho sigma mu nu.
+- [00:43:58,180 - 00:43:59,000] All right.
+- [00:43:59,020 - 00:44:01,380] You can lower and raise indices using the metric,
+- [00:44:01,600 - 00:44:03,040] and so there's nothing special
+- [00:44:03,040 - 00:44:05,000] about one index being raised here.
+- [00:44:05,200 - 00:44:06,720] I can lower them back down
+- [00:44:06,720 - 00:44:08,700] so that they're all lower indices.
+- [00:44:10,040 - 00:44:11,920] It's still called the Riemann tensor.
+- [00:44:12,620 - 00:44:16,680] It's the Riemann tensor with all covariant indices.
+- [00:44:17,220 - 00:44:22,060] It's in this form that the symmetries are simplest,
+- [00:44:22,340 - 00:44:23,960] the symmetries of this object.
+- [00:44:24,580 - 00:44:25,340] All right.
+- [00:44:25,360 - 00:44:28,240] So if you work them out using the definitions
+- [00:44:28,240 - 00:44:29,460] of the Christoffel symbol,
+- [00:44:31,000 - 00:44:32,460] and it's not hard,
+- [00:44:32,460 - 00:44:33,100] but it's tedious.
+- [00:44:33,300 - 00:44:34,040] It's a little bit tedious.
+- [00:44:34,620 - 00:44:37,480] There are simple ways to do it,
+- [00:44:37,520 - 00:44:44,080] but they all involve a degree of sophisticated notation,
+- [00:44:44,240 - 00:44:45,810] which would take us beyond what
+- [00:44:45,810 - 00:44:47,380] I want to do in this quarter.
+- [00:44:49,000 - 00:44:51,200] Forms and other fancy tricks.
+- [00:44:51,980 - 00:44:52,580] Question.
+- [00:44:52,820 - 00:44:53,000] Yeah.
+- [00:44:53,680 - 00:44:56,380] For the d theta dA equals r,
+- [00:44:57,400 - 00:45:01,140] is theta dependent on the direction
+- [00:45:01,140 - 00:45:02,940] of the clock?
+- [00:45:03,100 - 00:45:03,520] Yeah.
+- [00:45:03,520 - 00:45:05,260] Theta is dependent on the direction you go around.
+- [00:45:05,400 - 00:45:06,240] If you go around one direction,
+- [00:45:06,380 - 00:45:07,280] you get theta being plus.
+- [00:45:07,380 - 00:45:08,360] If you go around the other direction,
+- [00:45:08,440 - 00:45:09,360] you get theta being minus.
+- [00:45:10,260 - 00:45:10,680] Yeah.
+- [00:45:10,820 - 00:45:11,440] The sine switch.
+- [00:45:13,280 - 00:45:15,560] And it's the relationship between the signs
+- [00:45:15,560 - 00:45:18,060] of going around and angle rotating
+- [00:45:18,060 - 00:45:19,360] which tells you whether the curvature
+- [00:45:19,360 - 00:45:20,460] is positive or negative.
+- [00:45:21,560 - 00:45:22,020] All right.
+- [00:45:22,200 - 00:45:25,460] And all the components of this curvature tensor
+- [00:45:25,460 - 00:45:27,060] can be either positive or negative.
+- [00:45:27,260 - 00:45:28,080] Some of them can be zero.
+- [00:45:28,300 - 00:45:30,440] Some can be zero and others not be zero.
+- [00:45:30,440 - 00:45:33,060] That's quite possible.
+- [00:45:34,920 - 00:45:35,440] OK.
+- [00:45:35,560 - 00:45:37,680] So let me tell you what the symmetries are.
+- [00:45:40,440 - 00:45:41,040] Let's see.
+- [00:45:41,120 - 00:45:41,640] First of all,
+- [00:45:41,640 - 00:45:44,620] let's remember it's the two,
+- [00:45:44,660 - 00:45:45,220] let's see,
+- [00:45:45,220 - 00:45:47,380] the two middle indices here,
+- [00:45:49,040 - 00:45:50,880] which have to do with the
+- [00:45:50,880 - 00:45:52,720] plane that you go around in.
+- [00:45:53,580 - 00:45:57,460] The two middle indices parameterize the plane
+- [00:45:57,460 - 00:45:58,620] that you move around in,
+- [00:45:58,620 - 00:45:59,820] the new sigma plane.
+- [00:45:59,820 - 00:46:02,180] The mu and tau indices,
+- [00:46:02,180 - 00:46:03,740] if I'm not mistaken,
+- [00:46:03,800 - 00:46:04,120] let's see,
+- [00:46:04,120 - 00:46:04,820] do I have this right?
+- [00:46:05,260 - 00:46:06,440] Let me just check it.
+- [00:46:09,660 - 00:46:10,140] Yeah.
+- [00:46:10,220 - 00:46:13,660] The two middle indices have to do with the plane
+- [00:46:13,660 - 00:46:14,660] that you go around in,
+- [00:46:14,660 - 00:46:16,380] and the two outer indices
+- [00:46:16,380 - 00:46:21,060] have to do with the directions of the vector itself,
+- [00:46:21,340 - 00:46:22,220] how it rotates.
+- [00:46:23,320 - 00:46:23,800] OK.
+- [00:46:23,920 - 00:46:25,040] So same is true here.
+- [00:46:25,180 - 00:46:28,840] These two indices have to do with the plane
+- [00:46:28,840 - 00:46:29,800] that you move around in.
+- [00:46:29,820 - 00:46:30,700] The two inner indices.
+- [00:46:32,380 - 00:46:32,980] All right.
+- [00:46:44,800 - 00:46:46,220] I'm going to write down the symmetries.
+- [00:46:46,420 - 00:46:47,900] I hope I have them right.
+- [00:47:04,360 - 00:47:04,880] OK.
+- [00:47:05,160 - 00:47:06,700] First of all,
+- [00:47:06,700 - 00:47:08,780] it's anti-symmetric with
+- [00:47:08,780 - 00:47:11,500] respect to interchange of alpha and beta.
+- [00:47:13,300 - 00:47:14,020] All right.
+- [00:47:14,080 - 00:47:16,240] That just says if you interchange alpha and beta,
+- [00:47:16,320 - 00:47:17,140] it's anti-symmetric.
+- [00:47:17,460 - 00:47:21,000] It's also anti-symmetric if you interchange gamma and delta.
+- [00:47:21,920 - 00:47:27,160] So it's also equal to minus r alpha beta,
+- [00:47:27,160 - 00:47:28,600] the original alpha beta,
+- [00:47:28,600 - 00:47:30,080] delta gamma.
+- [00:47:33,080 - 00:47:35,340] Anti-symmetric with respect to these two
+- [00:47:35,340 - 00:47:37,360] and anti-symmetric with respect to those two.
+- [00:47:37,700 - 00:47:38,700] That's one thing.
+- [00:47:39,900 - 00:47:45,100] And the only other important thing is that it's symmetric.
+- [00:47:46,160 - 00:47:46,760] Yeah.
+- [00:47:47,020 - 00:47:50,600] It's symmetric with respect to taking these indices
+- [00:47:50,600 - 00:47:52,700] and these indices and changing them,
+- [00:47:52,760 - 00:47:53,900] interchanging them like so.
+- [00:47:54,180 - 00:47:55,100] In other words,
+- [00:47:55,100 - 00:47:56,240] this is equal to r,
+- [00:47:56,240 - 00:47:57,680] gamma delta,
+- [00:47:57,680 - 00:47:59,300] beta alpha.
+- [00:47:59,580 - 00:48:00,040] No,
+- [00:48:00,040 - 00:48:01,580] gamma delta alpha beta.
+- [00:48:05,640 - 00:48:06,990] Now these are not going to play
+- [00:48:06,990 - 00:48:08,340] any big role in what we do.
+- [00:48:08,420 - 00:48:10,760] I'm just putting them down for completeness.
+- [00:48:11,080 - 00:48:13,700] The point is that there are a lot of relationships
+- [00:48:14,120 - 00:48:15,420] between the components.
+- [00:48:15,840 - 00:48:17,800] There aren't as many as it looks.
+- [00:48:18,340 - 00:48:20,440] There's a lot of symmetries between them,
+- [00:48:20,500 - 00:48:22,980] just following from the definition in terms of the
+- [00:48:22,980 - 00:48:25,980] Christoffel symbols and in terms of the symmetries
+- [00:48:25,980 - 00:48:26,220] of the vector.
+- [00:48:26,240 - 00:48:27,040] The Christoffel symbols,
+- [00:48:27,040 - 00:48:30,060] I believe there are 24 independent ones.
+- [00:48:30,360 - 00:48:30,900] That's a lot.
+- [00:48:31,240 - 00:48:34,020] So when you start doing calculations in general relativity,
+- [00:48:34,340 - 00:48:34,920] it's awful.
+- [00:48:35,900 - 00:48:36,420] No,
+- [00:48:36,420 - 00:48:36,680] no,
+- [00:48:36,680 - 00:48:37,680] they are unpleasant.
+- [00:48:38,480 - 00:48:40,820] Is it the sign of the permutation in S4?
+- [00:48:41,400 - 00:48:41,980] What's that?
+- [00:48:42,240 - 00:48:44,480] Is the sign the same as whatever the permutation is
+- [00:48:44,480 - 00:48:45,720] in the symmetric group?
+- [00:48:47,920 - 00:48:48,440] No,
+- [00:48:48,440 - 00:48:48,980] I don't think so.
+- [00:48:50,700 - 00:48:53,140] So if you interchange beta and gamma,
+- [00:48:53,300 - 00:48:54,600] it doesn't become negative?
+- [00:48:55,820 - 00:48:56,260] Well,
+- [00:48:56,260 - 00:48:56,780] let's see.
+- [00:48:56,900 - 00:48:58,660] I've given you all of the symmetries.
+- [00:48:58,760 - 00:48:59,760] Now we would have to,
+- [00:48:59,760 - 00:49:03,920] if you interchange gamma and beta,
+- [00:49:03,940 - 00:49:04,640] I don't think so.
+- [00:49:05,140 - 00:49:06,920] I don't think there's any special symmetry.
+- [00:49:08,240 - 00:49:08,680] Let's see.
+- [00:49:08,760 - 00:49:10,250] I'll tell you how many
+- [00:49:10,250 - 00:49:11,740] components there are in two dimensions.
+- [00:49:11,880 - 00:49:12,660] Let's make a table,
+- [00:49:12,660 - 00:49:13,460] and then you can tell me
+- [00:49:13,460 - 00:49:14,480] whether it's anything special.
+- [00:49:15,500 - 00:49:16,260] Dimension two,
+- [00:49:16,260 - 00:49:19,040] dimension three,
+- [00:49:19,040 - 00:49:21,300] and dimension four.
+- [00:49:22,800 - 00:49:24,580] I have no idea what the answer is.
+- [00:49:24,580 - 00:49:25,380] In dimension five,
+- [00:49:25,380 - 00:49:26,680] I would have to work it out.
+- [00:49:26,740 - 00:49:27,540] I can work it out.
+- [00:49:27,700 - 00:49:28,860] But in dimension two,
+- [00:49:28,860 - 00:49:30,080] there is one component.
+- [00:49:31,260 - 00:49:32,520] In dimension three,
+- [00:49:32,520 - 00:49:35,280] there are three components.
+- [00:49:36,340 - 00:49:37,640] And in dimension four,
+- [00:49:37,640 - 00:49:38,840] there are 24 components.
+- [00:49:41,340 - 00:49:42,900] Does that strike any bell?
+- [00:49:47,260 - 00:49:48,720] They are equal to factorial.
+- [00:49:49,120 - 00:49:49,420] No,
+- [00:49:49,420 - 00:49:49,780] they're not.
+- [00:49:50,120 - 00:49:51,300] Three is not factorial.
+- [00:49:53,060 - 00:49:53,580] No,
+- [00:49:53,580 - 00:49:54,220] no.
+- [00:49:54,220 - 00:49:57,140] When you switch the rotation around the loop,
+- [00:49:57,200 - 00:49:58,300] you don't get a minus sign,
+- [00:49:58,300 - 00:49:58,680] don't you?
+- [00:50:00,220 - 00:50:00,940] When you do what?
+- [00:50:01,320 - 00:50:02,580] When you go around the loop,
+- [00:50:02,600 - 00:50:04,580] the loop in the opposite direction from the wave.
+- [00:50:05,180 - 00:50:05,920] We get a minus sign.
+- [00:50:05,920 - 00:50:07,380] That's the same as interchanging gamma.
+- [00:50:07,780 - 00:50:08,140] Yeah.
+- [00:50:08,800 - 00:50:09,160] Yeah.
+- [00:50:09,240 - 00:50:09,440] Well,
+- [00:50:09,440 - 00:50:10,360] those are the middle two,
+- [00:50:10,360 - 00:50:10,640] right?
+- [00:50:11,620 - 00:50:11,980] Oh,
+- [00:50:11,980 - 00:50:12,180] God.
+- [00:50:12,260 - 00:50:13,180] I hope I don't have babies.
+- [00:50:13,380 - 00:50:16,980] You know what?
+- [00:50:17,440 - 00:50:18,400] I think I do.
+- [00:50:22,700 - 00:50:24,500] Those are the middle two.
+- [00:50:30,460 - 00:50:33,000] Let me just look at it for a minute.
+- [00:50:35,200 - 00:50:36,540] Row is up here.
+- [00:50:39,380 - 00:50:40,060] No,
+- [00:50:40,060 - 00:50:42,460] I definitely have something inconsistent here.
+- [00:50:44,780 - 00:50:45,460] It's...
+- [00:50:45,460 - 00:50:46,600] Yeah.
+- [00:50:46,700 - 00:50:47,720] I think it's a partial.
+- [00:50:47,900 - 00:50:48,380] Yeah.
+- [00:50:48,380 - 00:50:49,850] And those have to do with
+- [00:50:49,850 - 00:50:51,320] the two directions that you move in.
+- [00:50:52,100 - 00:50:52,960] Mu and nu,
+- [00:50:52,960 - 00:50:53,760] all right.
+- [00:50:54,020 - 00:50:57,690] These two terms here have to do with the fact
+- [00:50:57,690 - 00:51:01,360] that the Christoffel symbols vary along the mu and nu direction.
+- [00:51:02,240 - 00:51:03,620] So these two,
+- [00:51:03,620 - 00:51:04,660] mu and nu,
+- [00:51:04,660 - 00:51:06,910] those are the two that have
+- [00:51:06,910 - 00:51:09,160] to do with the directions here.
+- [00:51:09,200 - 00:51:10,460] I think I made a mistake.
+- [00:51:11,820 - 00:51:13,620] This does not look right to me.
+- [00:51:13,700 - 00:51:15,020] Let me correct it.
+- [00:51:18,380 - 00:51:18,920] Yeah.
+- [00:51:20,140 - 00:51:27,820] I think this should be r
+- [00:51:27,820 - 00:51:35,500] sigma nu mu tau v tau.
+- [00:51:35,680 - 00:51:40,160] I think I have a misprint typo in my
+- [00:51:40,160 - 00:51:44,640] notes because you are right that this is clear.
+- [00:51:44,720 - 00:51:44,920] Yeah.
+- [00:51:45,000 - 00:51:45,700] It's quite clear.
+- [00:51:45,700 - 00:51:50,880] This is antisymmetric under interchange of mu and nu.
+- [00:51:51,240 - 00:51:53,160] If I interchange mu and nu here,
+- [00:51:53,160 - 00:51:55,120] these two will be the
+- [00:51:55,120 - 00:51:57,080] same except for a minus sign.
+- [00:51:57,660 - 00:52:00,200] So it's antisymmetric under mu nu interchange.
+- [00:52:00,540 - 00:52:01,460] Is that what I said?
+- [00:52:04,780 - 00:52:05,340] Yeah.
+- [00:52:05,440 - 00:52:07,640] This is antisymmetric under mu nu interchange.
+- [00:52:08,900 - 00:52:09,460] Antisymmetric.
+- [00:52:10,740 - 00:52:14,760] It's also antisymmetric under lambda sigma interchange.
+- [00:52:14,760 - 00:52:16,520] That I know for a fact.
+- [00:52:18,000 - 00:52:21,150] And it's symmetric with respect to
+- [00:52:21,150 - 00:52:24,300] interchanging lambda sigma and mu nu.
+- [00:52:24,480 - 00:52:25,680] So do I have it right?
+- [00:52:25,740 - 00:52:26,900] I think that's what I wrote here.
+- [00:52:30,320 - 00:52:32,260] I think that's consistent with this,
+- [00:52:32,260 - 00:52:32,660] isn't it?
+- [00:52:33,540 - 00:52:34,160] Let's see.
+- [00:52:35,080 - 00:52:37,060] Antisymmetric with respect to these two,
+- [00:52:37,060 - 00:52:37,600] yes.
+- [00:52:38,780 - 00:52:40,520] Antisymmetric with respect to these two,
+- [00:52:40,520 - 00:52:41,200] yes.
+- [00:52:41,600 - 00:52:44,520] And symmetric with respect to moving them in pairs.
+- [00:52:45,300 - 00:52:46,080] That's correct.
+- [00:52:46,280 - 00:52:52,580] And somehow what I wrote down here originally was incorrect.
+- [00:52:52,760 - 00:52:53,800] So let me correct it.
+- [00:52:57,340 - 00:52:59,340] It should be R with a mu.
+- [00:53:01,860 - 00:53:02,920] Let's call it sigma.
+- [00:53:04,940 - 00:53:05,460] Yeah.
+- [00:53:10,800 - 00:53:11,320] R.
+- [00:53:14,500 - 00:53:15,240] Yeah.
+- [00:53:29,070 - 00:53:35,020] I think I have it right now because delta x,
+- [00:53:35,020 - 00:53:36,360] delta x tau.
+- [00:53:39,070 - 00:53:39,440] Yeah.
+- [00:53:53,420 - 00:53:54,420] No.
+- [00:53:58,000 - 00:54:00,820] This is too distant.
+- [00:54:03,320 - 00:54:05,400] Overall at all.
+- [00:54:05,400 - 00:54:06,440] It's totally equivalent to sophisticated in inertia.
+- [00:54:07,240 - 00:54:09,780] Does that make sense to you?
+- [00:54:09,780 - 00:54:09,860] Yeah.
+- [00:54:09,940 - 00:54:10,000] Yeah.
+- [00:54:10,000 - 00:54:10,040] But I don't think we'll do it.
+- [00:54:10,040 - 00:54:10,340] Direct melanon?
+- [00:54:10,340 - 00:54:10,600] Exactly.
+- [00:54:10,640 - 00:54:11,220] Parallel.
+- [00:54:12,339 - 00:54:14,440] So there's one number,
+- [00:54:14,440 - 00:54:16,400] is that the radius of the Earth?
+- [00:54:16,880 - 00:54:17,320] Yep.
+- [00:54:17,320 - 00:54:20,790] The numerical curvature is the inverse
+- [00:54:20,790 - 00:54:24,260] square of the radius of the Earth.
+- [00:54:25,360 - 00:54:26,920] The smaller the Earth is,
+- [00:54:26,920 - 00:54:28,100] the larger the curvature.
+- [00:54:29,140 - 00:54:30,550] You don't have to know where
+- [00:54:30,550 - 00:54:31,960] the center of the Earth is.
+- [00:54:32,040 - 00:54:33,000] In the case of a sphere,
+- [00:54:33,000 - 00:54:34,100] you don't have to know where.
+- [00:54:35,480 - 00:54:37,000] In the case of a sphere,
+- [00:54:37,000 - 00:54:37,840] you don't have to know where,
+- [00:54:37,840 - 00:54:38,720] and for a sphere,
+- [00:54:38,720 - 00:54:42,040] the curvature is just equal to one divided
+- [00:54:42,040 - 00:54:45,360] by the square of the radius of the sphere.
+- [00:54:46,780 - 00:54:48,120] The smaller the sphere,
+- [00:54:48,120 - 00:54:49,280] the bigger the sphere is,
+- [00:54:49,280 - 00:54:51,440] the closer it is locally to being flat.
+- [00:54:52,640 - 00:54:53,920] So the bigger the sphere,
+- [00:54:53,920 - 00:54:54,960] the smaller the curvature.
+- [00:54:55,340 - 00:54:56,580] The smaller the sphere,
+- [00:54:56,580 - 00:54:57,380] the bigger the curvature.
+- [00:54:59,040 - 00:54:59,500] Yeah?
+- [00:55:01,620 - 00:55:02,850] How do you know that
+- [00:55:02,850 - 00:55:04,080] the loop actually does not move?
+- [00:55:04,100 - 00:55:05,060] Does it just close upon itself?
+- [00:55:05,060 - 00:55:07,580] Is it just that the transform works out,
+- [00:55:07,580 - 00:55:08,900] or is there some other way to check?
+- [00:55:11,460 - 00:55:15,760] When you take your little loop that encloses the area,
+- [00:55:15,760 - 00:55:17,680] how do you enforce the fact that
+- [00:55:17,680 - 00:55:19,600] you do in fact close the loop?
+- [00:55:21,220 - 00:55:21,740] Well,
+- [00:55:21,740 - 00:55:24,080] you describe a little curve that comes back to itself.
+- [00:55:24,280 - 00:55:25,400] I'm not sure how you...
+- [00:55:25,400 - 00:55:29,600] You invent an x of sigma,
+- [00:55:30,620 - 00:55:32,350] such that x of sigma
+- [00:55:32,350 - 00:55:34,080] is equal to x of sigma.
+- [00:55:34,100 - 00:55:36,560] x of sigma plus a little bit.
+- [00:55:38,080 - 00:55:39,550] So you invent the function
+- [00:55:39,550 - 00:55:41,020] for each one of the components.
+- [00:55:41,920 - 00:55:44,960] You invent functions which come back
+- [00:55:44,960 - 00:55:48,000] to themselves after a small excursion.
+- [00:55:48,180 - 00:55:48,340] Well,
+- [00:55:48,340 - 00:55:52,160] it just looked like when you picked those two directions,
+- [00:55:52,160 - 00:55:53,420] a coordinates,
+- [00:55:53,860 - 00:55:55,820] you could imagine that if you went,
+- [00:55:55,820 - 00:55:56,120] you know,
+- [00:55:56,120 - 00:55:57,000] followed the coordinates,
+- [00:55:57,000 - 00:55:58,560] you wouldn't get back to where you started.
+- [00:55:59,840 - 00:56:01,060] That's in fact true.
+- [00:56:02,260 - 00:56:04,080] But what you're saying is...
+- [00:56:04,100 - 00:56:05,160] All right,
+- [00:56:05,160 - 00:56:06,100] so what you're saying is,
+- [00:56:06,100 - 00:56:09,100] if I took a vector over here,
+- [00:56:09,220 - 00:56:11,320] and then took another vector over here,
+- [00:56:11,320 - 00:56:13,520] then parallelly transported this one...
+- [00:56:13,520 - 00:56:14,160] Sorry,
+- [00:56:14,160 - 00:56:16,340] parallelly transported this one up to here,
+- [00:56:17,000 - 00:56:18,560] then it wouldn't quite close.
+- [00:56:18,960 - 00:56:19,980] And that's true.
+- [00:56:20,180 - 00:56:23,420] But the failure to close would be a second-order thing,
+- [00:56:23,420 - 00:56:26,200] which would be quadratic in the dx's themselves.
+- [00:56:27,680 - 00:56:33,300] And so the failure to close would be...
+- [00:56:37,140 - 00:56:38,970] You would have to correct this
+- [00:56:38,970 - 00:56:40,800] a little bit to make it close.
+- [00:56:41,260 - 00:56:43,150] But the amount that you have to
+- [00:56:43,150 - 00:56:45,040] correct it by wouldn't affect any of this.
+- [00:56:45,220 - 00:56:46,870] It would be a small correction that
+- [00:56:46,870 - 00:56:48,520] would also be proportional to the area.
+- [00:56:50,560 - 00:56:51,300] Not there,
+- [00:56:51,300 - 00:56:51,960] but it can.
+- [00:56:53,200 - 00:56:53,640] Three.
+- [00:56:55,618 - 00:56:56,058] 其實會
+- [00:56:57,794 - 00:57:01,544] What we're doing here is proving that some of the
+- [00:57:01,544 - 00:57:05,294] internal angles do not fit into the periods of its curve.
+- [00:57:05,514 - 00:57:05,694] Yeah.
+- [00:57:06,794 - 00:57:08,914] Because it was 1990,
+- [00:57:08,914 - 00:57:09,534] 1990,
+- [00:57:09,534 - 00:57:10,914] and it was for black.
+- [00:57:13,613 - 00:57:15,134] It occurs to me,
+- [00:57:15,134 - 00:57:17,524] the fact that this doesn't quite
+- [00:57:17,524 - 00:57:19,914] close is connected with these terms.
+- [00:57:21,514 - 00:57:23,014] It's connected with those terms.
+- [00:57:25,613 - 00:57:27,054] Why are those terms there?
+- [00:57:27,754 - 00:57:29,854] They're there just because the rectus...
+- [00:57:30,954 - 00:57:32,174] Can you look at it,
+- [00:57:32,174 - 00:57:32,694] therefore,
+- [00:57:32,694 - 00:57:35,574] as a good part of transforming like a tensor,
+- [00:57:35,694 - 00:57:38,454] and whatever that departure is basically tells you?
+- [00:57:38,774 - 00:57:38,974] Yeah,
+- [00:57:38,974 - 00:57:39,794] yeah,
+- [00:57:39,794 - 00:57:40,934] you can think of it that way.
+- [00:57:43,594 - 00:57:44,394] There is another,
+- [00:57:44,394 - 00:57:46,254] for those who are mathematically minded,
+- [00:57:46,334 - 00:57:47,474] I will give you a very,
+- [00:57:47,474 - 00:57:49,454] very simple definition of the,
+- [00:57:51,794 - 00:57:52,994] if you're a little bit...
+- [00:57:53,014 - 00:57:53,954] mathematically minded,
+- [00:57:56,153 - 00:57:57,974] then there's a...
+- [00:57:57,974 - 00:58:02,934] the covariant derivative with respect to X mu
+- [00:58:02,934 - 00:58:05,194] is defined how?
+- [00:58:05,314 - 00:58:07,074] It's derivative with respect to X mu
+- [00:58:10,934 - 00:58:14,734] plus gamma mu dot dot whatever.
+- [00:58:16,634 - 00:58:19,334] And it acts as an operator,
+- [00:58:19,334 - 00:58:22,094] as a differential operator on vectors.
+- [00:58:23,014 - 00:58:24,734] It's a thing which acts on vectors.
+- [00:58:24,954 - 00:58:26,334] It's a differential operator.
+- [00:58:26,714 - 00:58:27,934] It contains derivatives,
+- [00:58:27,934 - 00:58:30,254] and it contains multiplication by gammas,
+- [00:58:30,274 - 00:58:34,474] which are also matrices and act as matrices.
+- [00:58:35,314 - 00:58:39,474] The curvature is defined in terms of commutators
+- [00:58:39,474 - 00:58:42,334] of covariant derivatives in different directions.
+- [00:58:43,134 - 00:58:44,884] Covariant derivatives in different directions
+- [00:58:44,884 - 00:58:46,634] don't commute with each other,
+- [00:58:47,654 - 00:58:50,814] and the curvature is defined in terms of that.
+- [00:58:51,014 - 00:58:51,354] Now,
+- [00:58:51,354 - 00:58:52,034] that's too abstract.
+- [00:58:52,034 - 00:58:54,154] Let's try to abstract a definition for our class.
+- [00:58:54,294 - 00:58:54,934] For our class,
+- [00:58:54,934 - 00:58:58,314] it's just geometrically the small change in a vector
+- [00:58:58,314 - 00:59:00,014] when you go around a closed loop.
+- [00:59:00,674 - 00:59:03,454] It contains the derivatives of the Christoffel symbols,
+- [00:59:03,714 - 00:59:06,394] and it contains quadratic things in the Christoffel symbols.
+- [00:59:06,594 - 00:59:09,094] And the reason that it contains Christoffel symbols
+- [00:59:09,094 - 00:59:11,524] is because it's Christoffel symbols
+- [00:59:11,524 - 00:59:13,954] that determine how parallel transport works.
+- [00:59:14,634 - 00:59:16,284] How a thing gets parallelly
+- [00:59:16,284 - 00:59:17,934] transported from one point to another
+- [00:59:17,934 - 00:59:19,894] depends only on the Christoffel symbols.
+- [00:59:20,154 - 00:59:21,794] So that's the only thing that it could,
+- [00:59:21,794 - 00:59:22,214] could involve.
+- [00:59:23,854 - 00:59:25,334] And derivatives of them.
+- [00:59:26,294 - 00:59:26,894] Okay,
+- [00:59:26,894 - 00:59:30,434] so that's a definition that's worth committing to memory
+- [00:59:30,434 - 00:59:32,534] if you're interested in the subject.
+- [00:59:35,314 - 00:59:37,664] And I honestly don't really know any
+- [00:59:37,664 - 00:59:40,014] way to make it simpler than that.
+- [00:59:44,994 - 00:59:46,874] I simply memorized it,
+- [00:59:46,874 - 00:59:48,834] worked it out a few times for a sphere,
+- [00:59:49,054 - 00:59:50,874] for a cone,
+- [00:59:51,794 - 00:59:52,634] for a couple of geometries,
+- [00:59:52,634 - 00:59:54,034] for a three-dimensional geometry,
+- [00:59:54,594 - 00:59:56,874] and after a while you get familiar with it.
+- [00:59:57,194 - 00:59:58,134] And it's a,
+- [00:59:58,134 - 01:00:00,634] it's not as remote an idea.
+- [01:00:01,074 - 01:00:01,574] But again,
+- [01:00:01,574 - 01:00:03,514] what it has to do with
+- [01:00:03,514 - 01:00:05,454] is intrinsic properties of the geometry
+- [01:00:06,214 - 01:00:08,534] that are obstructions to its flatness,
+- [01:00:09,074 - 01:00:10,594] and to diagnose it,
+- [01:00:10,594 - 01:00:12,754] you go around in little closed paths,
+- [01:00:12,874 - 01:00:15,114] and you see how things change under
+- [01:00:15,114 - 01:00:17,354] a circumnavigation around a little closed path.
+- [01:00:18,494 - 01:00:19,234] All right,
+- [01:00:19,234 - 01:00:20,174] more definitions.
+- [01:00:21,794 - 01:00:24,474] They give you these definitions now because they
+- [01:00:24,474 - 01:00:27,154] come into general relativity in an important way.
+- [01:00:27,894 - 01:00:30,474] The geometry of them is obscure.
+- [01:00:30,994 - 01:00:33,334] They're not particularly easy
+- [01:00:33,334 - 01:00:35,674] to understand the geometric quantities.
+- [01:00:36,734 - 01:00:36,994] Uh,
+- [01:00:39,994 - 01:00:43,034] There's something called the Ricci tensor.
+- [01:00:43,414 - 01:00:46,514] The Ricci tensor doesn't have four components,
+- [01:00:46,514 - 01:00:47,614] it has two components.
+- [01:00:52,373 - 01:00:55,934] In that sense it's easier than the Riemann tensor,
+- [01:00:56,254 - 01:00:58,584] but the only way to get the Riemann
+- [01:00:58,584 - 01:01:00,914] tensor is to know the Ricci tensor first,
+- [01:01:01,154 - 01:01:04,704] and it's gotten from the Ricci
+- [01:01:04,704 - 01:01:08,254] tensor by taking the upper index here,
+- [01:01:09,873 - 01:01:11,034] mu alpha,
+- [01:01:11,034 - 01:01:12,034] nu,
+- [01:01:12,034 - 01:01:14,014] and contracting it,
+- [01:01:15,914 - 01:01:17,174] what we're doing now,
+- [01:01:17,174 - 01:01:18,073] let me remind you,
+- [01:01:20,374 - 01:01:21,774] two of these indices are in the same area,
+- [01:01:21,774 - 01:01:21,774] and they're not in the same place.
+- [01:01:21,794 - 01:01:23,404] The other two indices have to do with
+- [01:01:23,404 - 01:01:25,014] the two directions that you go around in.
+- [01:01:25,194 - 01:01:27,034] The other two indices have
+- [01:01:27,034 - 01:01:28,874] to do with the rotation plane.
+- [01:01:29,614 - 01:01:31,814] If you take one index
+- [01:01:31,814 - 01:01:34,014] having to do with the circumnavigation,
+- [01:01:34,314 - 01:01:36,074] and one index that has to
+- [01:01:36,074 - 01:01:37,834] do with how the vector rotates,
+- [01:01:38,154 - 01:01:39,574] and you contract them,
+- [01:01:39,574 - 01:01:41,874] you get what's called the Ricci tensor.
+- [01:01:43,114 - 01:01:47,294] To try to fathom it geometrically is very hard.
+- [01:01:47,614 - 01:01:50,174] There's nothing easy to picture about it.
+- [01:01:50,174 - 01:01:51,274] If you like,
+- [01:01:51,274 - 01:01:55,114] it is simply a tensor that you make by contracting,
+- [01:01:55,274 - 01:01:56,894] you can write it another way,
+- [01:01:56,894 - 01:01:58,904] you can write it in terms of
+- [01:01:58,904 - 01:02:00,914] the tensor with all of its indices,
+- [01:02:01,014 - 01:02:02,914] let's write it with all of its indices downstairs,
+- [01:02:02,914 - 01:02:04,474] alpha,
+- [01:02:04,474 - 01:02:04,854] beta,
+- [01:02:04,854 - 01:02:05,294] gamma,
+- [01:02:05,294 - 01:02:05,674] delta.
+- [01:02:06,774 - 01:02:10,444] Then you contract index alpha
+- [01:02:10,444 - 01:02:14,114] with index gamma by the metric,
+- [01:02:14,114 - 01:02:17,314] G alpha gamma.
+- [01:02:18,514 - 01:02:19,834] Alpha with gamma,
+- [01:02:19,834 - 01:02:21,354] you contract them together,
+- [01:02:21,354 - 01:02:23,174] sum them,
+- [01:02:23,374 - 01:02:24,844] and you have a thing which
+- [01:02:24,844 - 01:02:26,314] only depends on beta and delta.
+- [01:02:27,714 - 01:02:33,794] It has no simple geometric picture that I know of.
+- [01:02:35,734 - 01:02:37,574] It's made out of the Riemann tensor,
+- [01:02:37,574 - 01:02:40,054] but it has only two independent components,
+- [01:02:40,294 - 01:02:41,674] it has only two components,
+- [01:02:41,674 - 01:02:43,014] not two components,
+- [01:02:43,014 - 01:02:43,874] two indices,
+- [01:02:43,874 - 01:02:45,914] and it's symmetric.
+- [01:02:47,314 - 01:02:49,774] The symmetries of the Riemann
+- [01:02:49,774 - 01:02:52,234] tensor assure that this is symmetric.
+- [01:02:52,474 - 01:02:56,414] So this is also equal to R delta beta.
+- [01:02:58,634 - 01:02:59,894] That's the Ricci tensor,
+- [01:02:59,894 - 01:03:01,734] and it plays a very,
+- [01:03:01,734 - 01:03:04,074] very big role in the dynamics of gravity,
+- [01:03:04,274 - 01:03:06,374] even though it is not,
+- [01:03:06,374 - 01:03:08,684] I suspect the reason it took Einstein
+- [01:03:08,684 - 01:03:10,994] ten years to work out general relativity
+- [01:03:12,214 - 01:03:16,034] was in finding the Ricci tensor,
+- [01:03:16,034 - 01:03:20,294] because it doesn't have any simple pictorial significance.
+- [01:03:21,554 - 01:03:22,714] In any case,
+- [01:03:22,714 - 01:03:23,654] it is what it is,
+- [01:03:23,654 - 01:03:29,514] and it will play an important role in what comes.
+- [01:03:31,754 - 01:03:32,314] Ricci?
+- [01:03:32,314 - 01:03:33,954] R-I-C-C-I.
+- [01:03:33,954 - 01:03:35,454] How else would you spell it?
+- [01:03:37,594 - 01:03:39,194] Depends on what language it is.
+- [01:03:41,034 - 01:03:43,154] What was Ricci's problem that
+- [01:03:43,154 - 01:03:45,274] he had to come up with?
+- [01:03:45,274 - 01:03:45,414] You know,
+- [01:03:45,414 - 01:03:46,054] I don't know.
+- [01:03:48,654 - 01:03:50,494] I've looked that up several times
+- [01:03:50,494 - 01:03:52,334] and I could never find out.
+- [01:03:52,414 - 01:03:53,194] I don't know.
+- [01:03:53,194 - 01:03:53,834] Oh,
+- [01:03:53,834 - 01:03:54,294] oh,
+- [01:03:54,294 - 01:03:54,574] oh,
+- [01:03:54,574 - 01:03:54,914] okay.
+- [01:03:55,894 - 01:03:56,494] No,
+- [01:03:56,494 - 01:03:57,454] I'll tell you.
+- [01:03:58,993 - 01:04:00,694] In three dimensions,
+- [01:04:00,694 - 01:04:03,074] Ricci was interested in three-dimensional space.
+- [01:04:03,794 - 01:04:05,294] In three dimensions,
+- [01:04:05,294 - 01:04:07,904] the Ricci tensor and the Riemann
+- [01:04:07,904 - 01:04:10,514] tensor are completely equivalent to each other,
+- [01:04:10,574 - 01:04:11,334] and I'll tell you why.
+- [01:04:11,334 - 01:04:13,494] It's very simple.
+- [01:04:15,274 - 01:04:15,374] In three dimensions,
+- [01:04:15,374 - 01:04:18,814] a plane is in one-to-one correspondence with an axis.
+- [01:04:19,874 - 01:04:21,394] So if I have a thing
+- [01:04:21,394 - 01:04:22,914] which depends on a pair of planes,
+- [01:04:23,534 - 01:04:25,154] that's four indices altogether,
+- [01:04:25,154 - 01:04:26,194] that's four indices,
+- [01:04:26,194 - 01:04:27,694] two for each plane,
+- [01:04:28,554 - 01:04:30,294] because a plane is the same
+- [01:04:30,294 - 01:04:32,034] as an axis perpendicular to it,
+- [01:04:32,234 - 01:04:34,004] it can also be thought of as
+- [01:04:34,004 - 01:04:35,774] a thing which depends on only two vectors.
+- [01:04:36,374 - 01:04:38,684] So a thing which depends
+- [01:04:38,684 - 01:04:40,994] on two planes in three dimensions
+- [01:04:40,994 - 01:04:42,774] can be thought of as a thing
+- [01:04:42,774 - 01:04:44,554] which depends only on two vector directions.
+- [01:04:45,294 - 01:04:47,224] The Ricci tensor is the
+- [01:04:47,224 - 01:04:49,154] way of describing the Riemann tensor
+- [01:04:49,154 - 01:04:51,234] when you describe it in
+- [01:04:51,234 - 01:04:53,314] terms of axes instead of planes.
+- [01:04:53,794 - 01:04:56,314] It takes two directions to define a plane,
+- [01:04:57,374 - 01:05:00,614] and so four directions to define a pair of planes,
+- [01:05:01,654 - 01:05:04,434] but in three dimensions it's simpler.
+- [01:05:04,574 - 01:05:06,854] It really only takes two axes.
+- [01:05:07,294 - 01:05:11,914] So I believe that Ricci discovered this form of it
+- [01:05:13,194 - 01:05:13,874] by...
+- [01:05:15,634 - 01:05:17,534] when he was working in three dimensions.
+- [01:05:17,774 - 01:05:19,354] Why it turns up to be
+- [01:05:19,354 - 01:05:20,934] so important in the theory of gravity
+- [01:05:20,934 - 01:05:22,154] will come to that,
+- [01:05:22,154 - 01:05:24,474] but it's not because it
+- [01:05:24,474 - 01:05:26,794] has any easy-to-picture geometry to it.
+- [01:05:27,894 - 01:05:28,434] Okay,
+- [01:05:28,434 - 01:05:32,544] we've covered the idea of curvature as much
+- [01:05:32,544 - 01:05:36,654] as I can cover it in one hour.
+- [01:05:40,374 - 01:05:44,834] Geometry is half of the theory of gravity.
+- [01:05:45,274 - 01:05:47,954] The other half of the theory of gravity is matter.
+- [01:05:49,894 - 01:05:50,414] Mass.
+- [01:05:52,454 - 01:05:54,274] Mass affects geometry.
+- [01:05:55,774 - 01:05:57,294] Mass curves geometry.
+- [01:05:59,654 - 01:06:01,614] John Wheeler used to like to say,
+- [01:06:01,614 - 01:06:02,334] he had a phrase,
+- [01:06:02,334 - 01:06:03,434] a slogan,
+- [01:06:05,134 - 01:06:06,854] Mass curves geometry,
+- [01:06:06,854 - 01:06:10,434] and geometry tells particles how to move,
+- [01:06:10,454 - 01:06:11,354] or something like that.
+- [01:06:11,354 - 01:06:11,994] I don't remember.
+- [01:06:12,154 - 01:06:13,814] It was more elegant than that,
+- [01:06:13,814 - 01:06:14,274] but...
+- [01:06:15,274 - 01:06:20,354] The idea being that the presence of mass affects geometry.
+- [01:06:21,694 - 01:06:23,824] That's another way of saying the
+- [01:06:23,824 - 01:06:25,954] presence of mass creates gravitational field,
+- [01:06:26,134 - 01:06:30,514] and gravitational field affects the motion of particles.
+- [01:06:31,094 - 01:06:32,914] So they affect each other.
+- [01:06:33,154 - 01:06:33,874] Particles,
+- [01:06:33,874 - 01:06:36,354] masses affect the gravitational field.
+- [01:06:36,554 - 01:06:38,014] That means that they affect geometry,
+- [01:06:38,254 - 01:06:41,334] and geometry affects the way particles move.
+- [01:06:43,534 - 01:06:44,254] The...
+- [01:06:44,254 - 01:06:45,454] The curvature,
+- [01:06:45,454 - 01:06:46,714] incidentally,
+- [01:06:49,814 - 01:06:50,574] is the,
+- [01:06:50,574 - 01:06:51,234] as we'll see,
+- [01:06:51,394 - 01:06:54,394] is the analog in general relativity
+- [01:06:54,394 - 01:06:57,394] of tidal forces in Newtonian gravity.
+- [01:06:57,674 - 01:06:59,574] It's the thing that you can't remove,
+- [01:07:00,074 - 01:07:02,084] it's the obstruction that you
+- [01:07:02,084 - 01:07:04,094] can't remove by a coordinate transformation.
+- [01:07:05,053 - 01:07:05,633] So,
+- [01:07:05,633 - 01:07:06,854] think of it that way,
+- [01:07:08,474 - 01:07:10,264] and we'll see more clearly how
+- [01:07:10,264 - 01:07:12,054] it works as we go along.
+- [01:07:12,434 - 01:07:13,134] All right.
+- [01:07:13,134 - 01:07:17,014] I want to define some notions which are important,
+- [01:07:21,253 - 01:07:23,234] not only in general relativity,
+- [01:07:23,234 - 01:07:24,794] but in field theory in general.
+- [01:07:25,214 - 01:07:27,854] We've talked about them in earlier classes.
+- [01:07:29,214 - 01:07:31,194] Let's begin with electric charge.
+- [01:07:31,734 - 01:07:34,774] Electric charge is a typical thing which can flow,
+- [01:07:35,034 - 01:07:36,594] which has a density,
+- [01:07:36,594 - 01:07:37,614] which has a flux.
+- [01:07:37,974 - 01:07:39,854] A flux means a current of it,
+- [01:07:39,954 - 01:07:43,114] and which is a material quantity.
+- [01:07:43,134 - 01:07:46,184] A flux is a quantity that
+- [01:07:46,184 - 01:07:49,234] has a sense of being a substance,
+- [01:07:49,234 - 01:07:49,854] if you like.
+- [01:07:50,074 - 01:07:50,814] All right.
+- [01:07:51,414 - 01:07:52,414] First of all,
+- [01:07:52,414 - 01:07:57,074] let's take a box of space,
+- [01:07:57,394 - 01:07:59,874] a small box of ordinary space now.
+- [01:07:59,994 - 01:08:01,334] This is not space-time.
+- [01:08:01,854 - 01:08:03,134] Not space-time.
+- [01:08:03,334 - 01:08:04,634] I'll tell you when it is space-time.
+- [01:08:04,754 - 01:08:06,354] Not space-time.
+- [01:08:06,654 - 01:08:07,774] Just ordinary space.
+- [01:08:08,894 - 01:08:10,624] And now let's imagine the
+- [01:08:10,624 - 01:08:12,354] world is full of charged particles,
+- [01:08:12,354 - 01:08:12,674] tiny,
+- [01:08:12,674 - 01:08:13,934] tiny charged particles,
+- [01:08:15,154 - 01:08:16,113] smoothly distributed,
+- [01:08:17,073 - 01:08:18,134] and I can ask,
+- [01:08:18,134 - 01:08:20,413] what is the total charge in the box?
+- [01:08:20,874 - 01:08:22,794] The total charge in the box,
+- [01:08:22,794 - 01:08:24,334] total electric charge in the box,
+- [01:08:24,474 - 01:08:25,254] let me call it,
+- [01:08:25,254 - 01:08:26,474] since the box is going to be
+- [01:08:26,474 - 01:08:27,694] taken to be small in the end,
+- [01:08:28,214 - 01:08:29,453] I'll call charge,
+- [01:08:29,453 - 01:08:30,613] q is charge.
+- [01:08:33,814 - 01:08:36,374] The amount of charge in the box we'll call dq,
+- [01:08:36,634 - 01:08:37,934] because the box is small.
+- [01:08:38,714 - 01:08:40,254] And of course it will be
+- [01:08:40,254 - 01:08:41,794] proportional to the volume of the box.
+- [01:08:43,434 - 01:08:44,714] But if I divide,
+- [01:08:44,714 - 01:08:46,974] let's call the volume of the box,
+- [01:08:46,974 - 01:08:48,014] let's call it dv,
+- [01:08:48,694 - 01:08:49,874] a small box,
+- [01:08:49,874 - 01:08:51,214] infinite small box,
+- [01:08:52,014 - 01:08:54,374] divide the charge by the volume,
+- [01:08:54,594 - 01:08:56,594] and I get the density.
+- [01:08:56,754 - 01:08:57,674] Let's call it rho.
+- [01:08:58,073 - 01:09:00,234] Now this is the density not of mass,
+- [01:09:00,234 - 01:09:01,634] but the density of charge.
+- [01:09:02,373 - 01:09:04,463] So I'll just put a little q down there
+- [01:09:04,463 - 01:09:06,554] to remind you that it's the density of charge,
+- [01:09:06,613 - 01:09:07,874] not the density of mass.
+- [01:09:09,514 - 01:09:09,993] That's,
+- [01:09:09,993 - 01:09:10,374] if you like,
+- [01:09:10,374 - 01:09:12,234] the definition of charge.
+- [01:09:12,234 - 01:09:12,474] So what's the charge density?
+- [01:09:13,554 - 01:09:14,174] It's,
+- [01:09:14,174 - 01:09:16,134] go to a particular point,
+- [01:09:16,134 - 01:09:17,254] take a small box,
+- [01:09:17,953 - 01:09:19,993] take the total amount of charge in it,
+- [01:09:20,944 - 01:09:22,134] divide it by the volume,
+- [01:09:22,993 - 01:09:24,594] shrink everything to zero,
+- [01:09:24,814 - 01:09:27,274] and the limit is the density.
+- [01:09:28,254 - 01:09:29,314] It follows,
+- [01:09:29,314 - 01:09:29,894] of course,
+- [01:09:29,894 - 01:09:32,234] that the total charge in a finite box
+- [01:09:33,004 - 01:09:35,953] is the integral of the density over the box.
+- [01:09:38,334 - 01:09:40,214] So that's charge density.
+- [01:09:40,214 - 01:09:42,613] Let me picture it another way.
+- [01:09:42,774 - 01:09:44,874] I want to now picture it in four-dimensional,
+- [01:09:45,094 - 01:09:46,493] a four-dimensional picture.
+- [01:09:47,254 - 01:09:47,854] Unfortunately,
+- [01:09:47,854 - 01:09:50,974] I can't draw four-dimensional boxes very well.
+- [01:09:51,214 - 01:09:53,424] So what I'm going to do
+- [01:09:53,424 - 01:09:55,634] is think of the three-dimensional box
+- [01:09:55,634 - 01:09:57,394] as being two-dimensional.
+- [01:09:57,994 - 01:09:59,134] Here we're going to,
+- [01:09:59,134 - 01:10:01,114] now we are going to draw space-time.
+- [01:10:01,554 - 01:10:02,494] Here's time,
+- [01:10:02,494 - 01:10:04,074] here's space,
+- [01:10:04,074 - 01:10:05,154] x and y.
+- [01:10:06,774 - 01:10:07,774] And unfortunately,
+- [01:10:07,774 - 01:10:09,274] I cannot draw,
+- [01:10:09,274 - 01:10:10,734] I can draw another axis,
+- [01:10:10,854 - 01:10:13,034] but it would only make things a little more complicated
+- [01:10:13,034 - 01:10:13,894] than they need to be.
+- [01:10:14,174 - 01:10:17,894] So let's imagine another axis but not draw it.
+- [01:10:18,174 - 01:10:19,854] What does this box look like?
+- [01:10:20,474 - 01:10:21,354] It gets,
+- [01:10:21,354 - 01:10:22,934] it just becomes a little square.
+- [01:10:23,354 - 01:10:24,874] A little square in space,
+- [01:10:24,874 - 01:10:25,594] a little square.
+- [01:10:26,614 - 01:10:27,854] It's not really a square,
+- [01:10:27,854 - 01:10:28,754] it has three dimensions,
+- [01:10:29,874 - 01:10:32,104] but due to the limitations
+- [01:10:32,104 - 01:10:34,334] of the blackboard and our brains,
+- [01:10:35,054 - 01:10:37,274] I will simply draw it as a little square
+- [01:10:37,274 - 01:10:38,854] with two directions,
+- [01:10:38,854 - 01:10:40,254] x and y,
+- [01:10:40,454 - 01:10:42,454] and implicitly a third direction.
+- [01:10:43,034 - 01:10:43,394] Now,
+- [01:10:43,394 - 01:10:44,634] there are charged particles.
+- [01:10:44,894 - 01:10:45,994] Charges don't disappear.
+- [01:10:46,934 - 01:10:48,514] Charges are conserved.
+- [01:10:48,854 - 01:10:51,574] A charge moving around in the space-time
+- [01:10:52,054 - 01:10:53,994] is just a world line
+- [01:10:53,994 - 01:10:55,934] that never begins and never ends
+- [01:10:55,934 - 01:10:58,274] because charges don't come and go.
+- [01:10:58,594 - 01:11:01,894] And now we can imagine asking how many charged lines,
+- [01:11:02,014 - 01:11:04,374] how much charge passes through
+- [01:11:10,414 - 01:11:11,314] this box.
+- [01:11:14,014 - 01:11:14,614] This box.
+- [01:11:14,614 - 01:11:16,114] That's just another way of asking,
+- [01:11:16,274 - 01:11:18,314] at a given instant of time,
+- [01:11:18,534 - 01:11:20,714] how much charge is in the box.
+- [01:11:21,694 - 01:11:24,474] How much charge is passing through the box
+- [01:11:25,294 - 01:11:26,994] in a space-time sense
+- [01:11:26,994 - 01:11:29,214] is equivalent to the question,
+- [01:11:29,294 - 01:11:30,934] how much charge is in the box
+- [01:11:30,934 - 01:11:33,194] at a given instant of time.
+- [01:11:33,854 - 01:11:35,434] We could follow the box,
+- [01:11:35,434 - 01:11:36,034] of course,
+- [01:11:36,034 - 01:11:37,594] we could follow the box in time.
+- [01:11:39,494 - 01:11:40,334] Here's the box,
+- [01:11:40,334 - 01:11:40,934] same box,
+- [01:11:40,934 - 01:11:41,774] a little bit later.
+- [01:11:42,794 - 01:11:45,514] Is the charge in that box necessarily the same?
+- [01:11:46,574 - 01:11:47,094] No,
+- [01:11:47,094 - 01:11:49,914] because charge can enter the box over here
+- [01:11:49,914 - 01:11:51,074] but then go out here
+- [01:11:52,334 - 01:11:54,854] and not pass through the upper box.
+- [01:11:55,534 - 01:11:56,974] That's just another way of saying
+- [01:11:56,974 - 01:11:58,954] that a charge can move out of the box.
+- [01:12:01,074 - 01:12:01,594] So,
+- [01:12:01,594 - 01:12:02,914] charge is conserved,
+- [01:12:02,914 - 01:12:04,224] but that doesn't mean the
+- [01:12:04,224 - 01:12:05,534] amount of charge in the box
+- [01:12:06,034 - 01:12:07,754] in a particular box stays the same.
+- [01:12:08,754 - 01:12:08,974] Alright,
+- [01:12:08,974 - 01:12:10,114] so that's the notion of
+- [01:12:10,774 - 01:12:11,954] charge in a box,
+- [01:12:11,954 - 01:12:13,214] charge density,
+- [01:12:13,854 - 01:12:15,734] and here I've drawn the charge density
+- [01:12:15,734 - 01:12:18,694] in a way that makes it seem as though
+- [01:12:18,694 - 01:12:20,164] it has something to do
+- [01:12:20,164 - 01:12:21,634] with charges going through a box.
+- [01:12:22,774 - 01:12:23,374] Alright,
+- [01:12:23,374 - 01:12:24,154] so that's rho.
+- [01:12:24,814 - 01:12:27,154] Now let's talk about the current,
+- [01:12:27,334 - 01:12:28,394] the electric current.
+- [01:12:28,694 - 01:12:32,334] The electric current is a similar kind of idea.
+- [01:12:32,774 - 01:12:33,854] Now you take,
+- [01:12:33,854 - 01:12:35,234] now we're going back
+- [01:12:35,234 - 01:12:36,114] to space,
+- [01:12:36,114 - 01:12:37,694] let's go back to space,
+- [01:12:38,413 - 01:12:40,414] and forget space-time for a moment,
+- [01:12:41,134 - 01:12:45,454] and let's draw a square.
+- [01:12:45,614 - 01:12:47,854] Now I don't mean a three-dimensional box,
+- [01:12:48,174 - 01:12:50,354] I mean a two-dimensional box,
+- [01:12:50,934 - 01:12:51,934] a window,
+- [01:12:51,934 - 01:12:53,414] think of it as a window,
+- [01:12:54,174 - 01:12:55,974] there's no windows on the wall here,
+- [01:12:56,094 - 01:12:57,394] but think of it as a window,
+- [01:12:58,074 - 01:13:01,274] and think of the actual motion of charges
+- [01:13:01,913 - 01:13:03,134] as they move
+- [01:13:03,993 - 01:13:05,874] and pass through the window.
+- [01:13:06,234 - 01:13:08,254] Some charges will pass through the window,
+- [01:13:08,374 - 01:13:10,314] some charges will not pass through the window.
+- [01:13:11,914 - 01:13:14,274] Take the charges which pass through the window,
+- [01:13:16,074 - 01:13:18,154] how much charge will pass through the window?
+- [01:13:18,374 - 01:13:18,774] Well,
+- [01:13:18,774 - 01:13:20,474] it's going to be proportional to the area
+- [01:13:20,474 - 01:13:21,854] of the window,
+- [01:13:21,854 - 01:13:22,594] but what else?
+- [01:13:22,674 - 01:13:24,214] What else might it be proportional to
+- [01:13:24,214 - 01:13:25,574] besides the area of the window?
+- [01:13:26,474 - 01:13:27,314] The time,
+- [01:13:27,314 - 01:13:28,994] the amount of time.
+- [01:13:29,614 - 01:13:30,094] Alright,
+- [01:13:30,094 - 01:13:31,874] so there's a flux of charge,
+- [01:13:31,874 - 01:13:34,254] and the amount of charge through the window
+- [01:13:35,514 - 01:13:39,414] per unit time is related to what's called the current.
+- [01:13:39,574 - 01:13:40,634] So let's write that.
+- [01:13:41,414 - 01:13:46,994] The amount of charge that goes through the window,
+- [01:13:47,094 - 01:13:48,244] and I'm going to call
+- [01:13:48,244 - 01:13:49,394] the window now a small window,
+- [01:13:49,514 - 01:13:52,334] with a differential area dA,
+- [01:13:53,734 - 01:13:55,274] per unit time,
+- [01:13:58,734 - 01:13:59,934] what do I call that?
+- [01:13:59,934 - 01:14:02,113] I'm going to call that the current.
+- [01:14:03,373 - 01:14:06,653] But this area has an orientation.
+- [01:14:07,214 - 01:14:12,373] The area has a normal vector to it,
+- [01:14:12,494 - 01:14:14,934] so I'm really talking about the charge,
+- [01:14:14,934 - 01:14:15,494] for example,
+- [01:14:15,494 - 01:14:17,034] flowing in a given direction
+- [01:14:17,933 - 01:14:20,694] through a window perpendicular to that direction.
+- [01:14:21,454 - 01:14:23,934] It's got a vector index attached to it.
+- [01:14:24,893 - 01:14:26,113] So for example,
+- [01:14:26,113 - 01:14:28,734] if this is the x window,
+- [01:14:28,734 - 01:14:31,834] the x window means a window in the yz plane,
+- [01:14:32,074 - 01:14:33,954] if this is the x window,
+- [01:14:34,214 - 01:14:37,294] the charge going through the x window per unit time
+- [01:14:37,294 - 01:14:41,134] is called jx.
+- [01:14:43,014 - 01:14:44,414] It's called jx.
+- [01:14:46,214 - 01:14:47,834] J is the symbol for char,
+- [01:14:47,834 - 01:14:50,094] for current.
+- [01:14:50,394 - 01:14:51,274] It's called the current.
+- [01:14:51,554 - 01:14:53,414] You can call it the flux of charge,
+- [01:14:53,494 - 01:14:54,514] the current of charge,
+- [01:14:54,514 - 01:14:56,154] the flow of charge,
+- [01:14:56,294 - 01:14:56,914] whatever you like,
+- [01:14:56,914 - 01:14:58,534] but it's the charge,
+- [01:14:58,534 - 01:15:01,014] through a window perpendicular to x,
+- [01:15:02,114 - 01:15:04,014] in per unit time.
+- [01:15:04,454 - 01:15:07,454] And likewise for jy and jz.
+- [01:15:08,334 - 01:15:11,094] If you want to know what jy is,
+- [01:15:11,294 - 01:15:15,274] you take your window-oriented perpendicular to the y-axis,
+- [01:15:15,514 - 01:15:17,634] and you ask how much charge is going
+- [01:15:18,494 - 01:15:20,634] from the negative side of the y-axis
+- [01:15:20,634 - 01:15:22,454] to the positive side of the y-axis,
+- [01:15:22,634 - 01:15:23,434] per unit time,
+- [01:15:23,434 - 01:15:25,314] and that becomes jy.
+- [01:15:26,634 - 01:15:27,614] Now notice,
+- [01:15:27,614 - 01:15:33,734] both rho and j are charges per unit,
+- [01:15:35,834 - 01:15:37,134] how do we say this,
+- [01:15:37,334 - 01:15:41,114] how many powers of a length does a volume have?
+- [01:15:42,054 - 01:15:42,634] Three.
+- [01:15:43,254 - 01:15:45,804] Now remember that time and length
+- [01:15:46,314 - 01:15:47,614] are measured in the same units.
+- [01:15:47,794 - 01:15:49,094] We are going to set throughout
+- [01:15:49,754 - 01:15:51,594] the speed of light equal to one.
+- [01:15:52,074 - 01:15:53,694] Time has units of length.
+- [01:15:53,914 - 01:15:56,214] So how many units of length
+- [01:15:56,214 - 01:15:57,594] are in the denominator here?
+- [01:15:59,034 - 01:16:00,394] Also three.
+- [01:16:00,554 - 01:16:02,714] The only real difference between these
+- [01:16:02,714 - 01:16:07,274] is here I have charge per unit
+- [01:16:07,274 - 01:16:09,974] three-dimensional space-like directions.
+- [01:16:10,434 - 01:16:14,394] Here I have charge per two-space-like,
+- [01:16:14,394 - 01:16:15,654] one-time-like direction.
+- [01:16:16,654 - 01:16:20,394] So these are clearly closely similar kinds of things.
+- [01:16:20,494 - 01:16:23,914] Charge per unit length cubed,
+- [01:16:23,914 - 01:16:24,614] if you like.
+- [01:16:25,594 - 01:16:27,434] You can think of the window
+- [01:16:27,434 - 01:16:27,594] as a window of time.
+- [01:16:27,594 - 01:16:27,734] So,
+- [01:16:27,734 - 01:16:31,594] as being the window persisting
+- [01:16:32,194 - 01:16:33,434] for a length of time t,
+- [01:16:34,414 - 01:16:38,194] that has an area delta x times delta y,
+- [01:16:38,474 - 01:16:40,654] but a duration of time delta t,
+- [01:16:40,874 - 01:16:43,514] you can think of it as being like a volume,
+- [01:16:43,714 - 01:16:45,194] a three-dimensional volume,
+- [01:16:45,614 - 01:16:47,514] but a three-dimensional volume
+- [01:16:47,514 - 01:16:49,894] with one of the directions being time.
+- [01:16:50,474 - 01:16:52,474] So both the flow of charge
+- [01:16:52,474 - 01:16:56,494] and the density of charge
+- [01:16:56,494 - 01:16:59,114] are components of a single thing.
+- [01:16:59,614 - 01:17:02,454] A single thing of a flow of charge
+- [01:17:02,454 - 01:17:04,274] through various kinds of windows.
+- [01:17:05,034 - 01:17:08,474] This window is a space-space-space window.
+- [01:17:08,854 - 01:17:11,914] This window is a space-space-time window.
+- [01:17:12,394 - 01:17:15,474] There are no windows which are time-time-space
+- [01:17:15,474 - 01:17:17,514] because there's only one direction of time.
+- [01:17:17,994 - 01:17:20,514] So this is all the kinds of windows there are.
+- [01:17:20,994 - 01:17:24,214] And these objects form together
+- [01:17:24,214 - 01:17:25,874] to form a four vector.
+- [01:17:26,734 - 01:17:29,134] It's natural to group them together
+- [01:17:29,134 - 01:17:30,294] into a four vector.
+- [01:17:30,754 - 01:17:33,474] And that four vector is called
+- [01:17:35,433 - 01:17:36,514] the current,
+- [01:17:37,374 - 01:17:39,814] the four-dimensional charge current.
+- [01:17:40,074 - 01:17:42,494] You group together rho,
+- [01:17:44,693 - 01:17:45,414] Jx,
+- [01:17:45,414 - 01:17:46,134] Jy,
+- [01:17:46,134 - 01:17:47,774] and Jz.
+- [01:17:49,554 - 01:17:52,154] And those you just call Jmu.
+- [01:17:53,254 - 01:17:54,494] In other words,
+- [01:17:54,494 - 01:17:55,774] the charge density
+- [01:17:57,414 - 01:17:59,514] becomes the time component
+- [01:17:59,514 - 01:18:00,694] of a four vector.
+- [01:18:02,454 - 01:18:04,154] The other three components
+- [01:18:05,394 - 01:18:07,754] are characterized by the direction
+- [01:18:07,754 - 01:18:08,874] of the flow of charge.
+- [01:18:09,434 - 01:18:11,594] And if charges are just sitting still,
+- [01:18:11,834 - 01:18:14,334] it's as though they're moving in time,
+- [01:18:14,394 - 01:18:14,934] if you like.
+- [01:18:15,194 - 01:18:16,374] You can think of it that way.
+- [01:18:16,674 - 01:18:18,194] A thing which is sitting still
+- [01:18:18,194 - 01:18:20,374] is still moving through space-time,
+- [01:18:20,634 - 01:18:23,014] and it's passing through these windows
+- [01:18:23,014 - 01:18:23,954] in space-time.
+- [01:18:24,254 - 01:18:26,414] And so rho together with J,
+- [01:18:26,414 - 01:18:29,554] form a four vector of current.
+- [01:18:34,234 - 01:18:36,254] Now I'm going through this rapidly
+- [01:18:36,254 - 01:18:37,934] because we did it last quarter,
+- [01:18:40,074 - 01:18:42,694] the idea of the four vector of charge.
+- [01:18:43,394 - 01:18:45,534] How do we express the notion
+- [01:18:45,534 - 01:18:46,754] of charge conservation?
+- [01:18:49,154 - 01:18:50,674] The continuity equation.
+- [01:18:51,074 - 01:18:52,694] Everybody remember the continuity equation?
+- [01:18:53,054 - 01:18:54,314] I'll remind you what it is.
+- [01:18:55,114 - 01:18:57,954] The continuity equation is the basic equation.
+- [01:18:58,154 - 01:18:59,334] I don't want to erase this.
+- [01:18:59,454 - 01:19:00,134] I want this there.
+- [01:19:00,714 - 01:19:02,154] It's the basic equation
+- [01:19:06,754 - 01:19:09,194] which tells us a little more
+- [01:19:09,194 - 01:19:11,514] than just the charges conserved.
+- [01:19:13,154 - 01:19:15,714] If charge is conserved in the whole universe,
+- [01:19:15,794 - 01:19:17,234] it just says the amount of charge
+- [01:19:17,234 - 01:19:19,194] in the whole universe doesn't change.
+- [01:19:19,934 - 01:19:21,214] But there's a little more
+- [01:19:21,214 - 01:19:23,154] to charge conservation than that.
+- [01:19:24,594 - 01:19:26,574] I've explained this to you more than once.
+- [01:19:26,634 - 01:19:27,374] We'll do it once again,
+- [01:19:27,374 - 01:19:27,634] though.
+- [01:19:28,154 - 01:19:29,974] If a charge disappeared over here
+- [01:19:29,974 - 01:19:31,494] and reappeared on the moon,
+- [01:19:31,953 - 01:19:32,754] then instantly,
+- [01:19:34,074 - 01:19:35,894] we would say charge was conserved.
+- [01:19:36,594 - 01:19:39,334] But an experiment taking place in this room
+- [01:19:40,074 - 01:19:42,234] would be clearly deceived
+- [01:19:42,234 - 01:19:44,934] into the idea that charge is not conserved.
+- [01:19:45,834 - 01:19:47,494] It doesn't really work that way.
+- [01:19:47,534 - 01:19:49,614] We don't get deceived into the idea
+- [01:19:49,614 - 01:19:51,714] that charge is not conserved for some reason.
+- [01:19:52,174 - 01:19:53,654] And if you don't like the Earth-Moon,
+- [01:19:53,654 - 01:19:53,994] you say,
+- [01:19:53,994 - 01:19:54,134] well,
+- [01:19:54,134 - 01:19:55,354] we could always do experiments
+- [01:19:55,354 - 01:19:56,694] involving the Earth and the Moon,
+- [01:19:56,894 - 01:19:59,054] make it the Earth in Alpha Centauri
+- [01:19:59,054 - 01:20:00,954] or the Earth in the next galaxy over,
+- [01:20:01,154 - 01:20:01,894] whatever you like.
+- [01:20:02,094 - 01:20:05,594] It's quite clear that charge conservation
+- [01:20:06,454 - 01:20:10,374] by itself really doesn't have any real implication
+- [01:20:10,374 - 01:20:12,594] for experiments done in finite volume.
+- [01:20:13,914 - 01:20:15,974] The real notion of charge conservation
+- [01:20:15,974 - 01:20:18,494] is what's called local charge conservation.
+- [01:20:18,754 - 01:20:20,774] It doesn't mean that the amount of charge
+- [01:20:20,774 - 01:20:22,114] in the room doesn't change.
+- [01:20:22,114 - 01:20:24,434] It means that any change
+- [01:20:24,434 - 01:20:26,754] in the charge in the room
+- [01:20:26,754 - 01:20:31,714] is due to observable flows of charge through the walls.
+- [01:20:32,034 - 01:20:34,594] The only way the charge can change in the room
+- [01:20:35,084 - 01:20:37,954] is if it flows through the walls.
+- [01:20:38,314 - 01:20:40,174] So an increase in charge
+- [01:20:40,174 - 01:20:42,634] would correspond to a flow of charge in.
+- [01:20:42,774 - 01:20:45,134] A decrease of charge in the room
+- [01:20:45,134 - 01:20:47,094] would correspond to a flow of charge out.
+- [01:20:47,354 - 01:20:50,014] What mathematical object is there
+- [01:20:50,014 - 01:20:52,094] that could represent the flow
+- [01:20:52,114 - 01:20:55,794] of charge radially outward from a point?
+- [01:20:56,814 - 01:20:57,814] The divergence.
+- [01:20:58,714 - 01:21:01,694] The divergence is the mathematical quantity
+- [01:21:01,694 - 01:21:04,854] which expresses the idea of a flow outward.
+- [01:21:07,614 - 01:21:10,494] So if you take a small region of space
+- [01:21:14,874 - 01:21:17,914] and you ask how much charge is in it,
+- [01:21:17,954 - 01:21:19,554] or not so much how much charge is in it,
+- [01:21:19,614 - 01:21:21,774] but how does the charge change with time,
+- [01:21:22,554 - 01:21:22,994] Well,
+- [01:21:22,994 - 01:21:24,814] the charge that's in that small region
+- [01:21:25,394 - 01:21:27,434] is the volume of the small region.
+- [01:21:27,774 - 01:21:30,114] Let's take the volume to be fixed
+- [01:21:30,114 - 01:21:32,454] and let's set it equal to one for simplicity.
+- [01:21:32,934 - 01:21:36,874] Then the charge in that small unit volume is rho.
+- [01:21:38,094 - 01:21:39,854] I could multiply it by the volume,
+- [01:21:39,974 - 01:21:41,554] but I'm setting the volume equal to one.
+- [01:21:41,614 - 01:21:42,154] In any case,
+- [01:21:42,154 - 01:21:43,054] I'm going to hold it fixed.
+- [01:21:43,834 - 01:21:44,434] All right,
+- [01:21:44,434 - 01:21:45,774] now how does that charge change?
+- [01:21:46,214 - 01:21:46,654] Well,
+- [01:21:46,654 - 01:21:47,994] it changes by charges going
+- [01:21:47,994 - 01:21:49,334] into and out of the room,
+- [01:21:49,334 - 01:21:51,234] but let's take the time derivative of it.
+- [01:21:54,134 - 01:21:56,514] If there's a time derivative to the charge density,
+- [01:21:56,774 - 01:21:58,744] it must mean that there
+- [01:21:58,744 - 01:22:00,714] is a current at the boundary.
+- [01:22:01,914 - 01:22:03,114] But that current,
+- [01:22:03,114 - 01:22:03,894] for example,
+- [01:22:03,894 - 01:22:06,274] a uniform current flowing straight through
+- [01:22:06,274 - 01:22:07,974] in the x direction,
+- [01:22:08,274 - 01:22:10,314] that would do nothing because there would be
+- [01:22:10,314 - 01:22:12,054] as much current coming in from one side
+- [01:22:12,054 - 01:22:13,094] as going out the other.
+- [01:22:14,094 - 01:22:16,454] It's the divergence of the current
+- [01:22:17,294 - 01:22:18,614] which tells you the charge,
+- [01:22:19,334 - 01:22:20,354] the charge is passing out.
+- [01:22:21,033 - 01:22:27,194] So if the charge is increasing,
+- [01:22:28,894 - 01:22:31,834] then that must mean charge is coming in.
+- [01:22:31,934 - 01:22:33,894] It must mean the divergence is negative.
+- [01:22:34,274 - 01:22:37,134] The right equation is that
+- [01:22:38,454 - 01:22:42,554] the change per unit time of the charge density
+- [01:22:43,334 - 01:22:46,254] plus the divergence of the current,
+- [01:22:47,114 - 01:22:49,074] now this is the three-dimensional current,
+- [01:22:49,334 - 01:22:50,074] Jx,
+- [01:22:50,074 - 01:22:50,514] Jy,
+- [01:22:50,514 - 01:22:50,974] Jz,
+- [01:22:51,014 - 01:22:52,974] must be equal to zero.
+- [01:22:53,874 - 01:22:56,994] What it expresses is that the rate of change
+- [01:22:56,994 - 01:22:58,554] of charge in the box
+- [01:23:00,334 - 01:23:02,114] is equal to the negative
+- [01:23:02,114 - 01:23:03,854] of the amount of charge
+- [01:23:03,854 - 01:23:05,594] that's flowing out of the box.
+- [01:23:06,134 - 01:23:08,474] If the charge is flowing out of the box,
+- [01:23:08,674 - 01:23:10,754] the amount of charge must be decreasing.
+- [01:23:11,294 - 01:23:13,294] We can write this explicitly.
+- [01:23:13,834 - 01:23:15,174] It says that,
+- [01:23:16,074 - 01:23:18,394] let's say partial of rho with respect to t,
+- [01:23:18,394 - 01:23:21,254] the partial of rho with respect to t,
+- [01:23:21,794 - 01:23:24,094] and then what is the divergence of the current?
+- [01:23:24,934 - 01:23:27,354] Anybody remember the form for the divergence of a vector?
+- [01:23:30,714 - 01:23:31,234] Right.
+- [01:23:31,374 - 01:23:33,474] It's the derivative with respect to x
+- [01:23:34,194 - 01:23:35,494] of the x component
+- [01:23:35,494 - 01:23:37,634] plus the derivative with respect to y
+- [01:23:38,214 - 01:23:39,554] of the y component,
+- [01:23:41,714 - 01:23:42,234] Jy,
+- [01:23:42,234 - 01:23:42,754] Jy,
+- [01:23:43,394 - 01:23:45,294] plus the derivative with respect to z
+- [01:23:46,394 - 01:23:47,434] of Jz,
+- [01:23:47,434 - 01:23:49,074] and that's equal to zero.
+- [01:23:50,234 - 01:23:52,274] But if I now call rho
+- [01:23:53,213 - 01:23:55,954] the time component of J,
+- [01:23:56,154 - 01:23:58,714] we can just write this as J0,
+- [01:23:59,634 - 01:24:00,874] the time component.
+- [01:24:01,394 - 01:24:02,914] And we can call t
+- [01:24:03,773 - 01:24:07,534] the time component of the four-vector of position.
+- [01:24:08,374 - 01:24:10,974] This becomes x1,
+- [01:24:20,074 - 01:24:21,614] In other words,
+- [01:24:22,223 - 01:24:23,754] the continuity equation
+- [01:24:24,183 - 01:24:26,034] just becomes the very simple,
+- [01:24:26,154 - 01:24:27,814] nice looking equation
+- [01:24:28,203 - 01:24:30,894] that the derivative of Jmu
+- [01:24:32,284 - 01:24:33,974] with respect to xmu
+- [01:24:33,974 - 01:24:36,034] is equal to zero.
+- [01:24:40,614 - 01:24:41,794] Summed over mu.
+- [01:24:48,953 - 01:24:51,374] To basic kinds of definitions,
+- [01:24:51,514 - 01:24:54,034] definition of current and density
+- [01:24:54,753 - 01:24:56,954] and the continuity equation,
+- [01:24:57,654 - 01:24:59,374] that's the basic ingredient
+- [01:24:59,374 - 01:25:02,194] that goes into the conservation of electric charge
+- [01:25:02,194 - 01:25:04,754] or any other kind of charge that's conserved.
+- [01:25:05,534 - 01:25:06,174] Okay.
+- [01:25:06,374 - 01:25:07,014] Now,
+- [01:25:07,014 - 01:25:08,814] one thing about charge
+- [01:25:09,434 - 01:25:10,894] is that charge itself,
+- [01:25:11,134 - 01:25:13,694] the components of the current of charge
+- [01:25:13,694 - 01:25:14,594] are a four-vector,
+- [01:25:14,674 - 01:25:15,674] but the charge itself,
+- [01:25:15,954 - 01:25:17,214] how about the charge itself?
+- [01:25:17,874 - 01:25:18,774] Supposing I have,
+- [01:25:19,534 - 01:25:20,014] well,
+- [01:25:20,014 - 01:25:21,334] what are the units of charge anyway?
+- [01:25:21,534 - 01:25:21,994] Coulombs,
+- [01:25:21,994 - 01:25:22,134] huh?
+- [01:25:22,934 - 01:25:23,414] Yeah.
+- [01:25:23,634 - 01:25:26,174] Coulomb is a huge amount of electric charge.
+- [01:25:29,714 - 01:25:32,314] If you could somehow assemble a Coulomb of charge
+- [01:25:32,314 - 01:25:33,074] on this table,
+- [01:25:33,194 - 01:25:34,454] you would want to get
+- [01:25:34,454 - 01:25:35,714] far out of the room because...
+- [01:25:37,814 - 01:25:38,294] Okay.
+- [01:25:38,754 - 01:25:40,934] Supposing I say there's a Coulomb of charge
+- [01:25:40,934 - 01:25:41,974] on the table over here.
+- [01:25:42,874 - 01:25:46,034] And supposing you're moving by on a railroad train,
+- [01:25:46,034 - 01:25:48,494] how much charge would you say is there?
+- [01:25:50,114 - 01:25:50,654] Coulomb.
+- [01:25:51,294 - 01:25:51,834] Coulomb.
+- [01:25:53,534 - 01:25:54,994] Charge is an invariant.
+- [01:25:55,034 - 01:25:55,614] It's a scalar,
+- [01:25:55,614 - 01:25:56,154] if you like.
+- [01:25:56,394 - 01:25:57,454] Charge is a scalar.
+- [01:25:57,934 - 01:25:59,934] The charge current is not.
+- [01:26:00,194 - 01:26:03,154] The charge current and density are not scalars,
+- [01:26:03,174 - 01:26:04,774] but the charge itself,
+- [01:26:04,854 - 01:26:08,134] the total amount of charge that's there is a scalar.
+- [01:26:11,814 - 01:26:12,974] And so you should...
+- [01:26:12,974 - 01:26:14,134] Are you afraid of a Coulomb of charge?
+- [01:26:14,394 - 01:26:14,774] What's that?
+- [01:26:14,774 - 01:26:17,014] Why are you afraid of a Coulomb?
+- [01:26:18,574 - 01:26:19,014] Well,
+- [01:26:19,014 - 01:26:21,774] that's so much charge that the repulsive force...
+- [01:26:25,173 - 01:26:25,974] Here's what I mean.
+- [01:26:26,174 - 01:26:27,234] Coulomb charge is what?
+- [01:26:27,254 - 01:26:28,574] About 10 to the 19th...
+- [01:26:28,574 - 01:26:30,514] I think it's 10 to the 19th electrons,
+- [01:26:30,614 - 01:26:31,294] if I remember.
+- [01:26:32,354 - 01:26:32,794] Okay.
+- [01:26:32,934 - 01:26:33,534] So you say,
+- [01:26:33,534 - 01:26:33,914] okay,
+- [01:26:33,974 - 01:26:35,534] you have 10 to the 19th atoms.
+- [01:26:35,834 - 01:26:38,514] 10 to the 19th atoms has 10 to the 19th...
+- [01:26:38,514 - 01:26:40,914] Hydrogen atoms has 10 to the 19th electrons.
+- [01:26:41,334 - 01:26:44,754] Who's afraid of 10 to the 19th atoms of hydrogen?
+- [01:26:44,754 - 01:26:46,364] But now take those 10
+- [01:26:46,364 - 01:26:47,974] to the 19th atoms of hydrogen
+- [01:26:47,974 - 01:26:49,234] and remove the protons.
+- [01:26:50,754 - 01:26:52,954] Then you have 10 to the 19th electrons,
+- [01:26:53,274 - 01:26:56,594] and that is a highly explosive situation.
+- [01:26:57,234 - 01:26:59,694] With all the electrons repelling each other,
+- [01:27:00,274 - 01:27:01,734] they would repel each other
+- [01:27:01,734 - 01:27:03,194] and just make a huge explosion.
+- [01:27:03,654 - 01:27:05,694] I have no trouble putting that amount of charge
+- [01:27:05,694 - 01:27:07,514] in one ferret capacitor on your desk.
+- [01:27:09,894 - 01:27:11,234] A whole Coulomb?
+- [01:27:11,514 - 01:27:11,934] Yeah.
+- [01:27:11,974 - 01:27:12,674] They're opposites.
+- [01:27:13,914 - 01:27:14,734] They're close to each other.
+- [01:27:14,734 - 01:27:14,974] They're close together.
+- [01:27:15,654 - 01:27:16,934] I have no trouble putting
+- [01:27:16,934 - 01:27:18,214] it in a one ferret capacitor
+- [01:27:18,214 - 01:27:18,874] on your desk,
+- [01:27:18,874 - 01:27:20,214] and I can go to Fry's and buy it.
+- [01:27:22,933 - 01:27:23,334] No,
+- [01:27:23,334 - 01:27:25,094] no,
+- [01:27:25,094 - 01:27:25,394] no,
+- [01:27:25,394 - 01:27:25,614] no,
+- [01:27:25,614 - 01:27:25,814] no,
+- [01:27:25,814 - 01:27:26,034] no.
+- [01:27:26,274 - 01:27:27,894] It might go cool on the plates,
+- [01:27:27,954 - 01:27:29,294] both positive and negative,
+- [01:27:29,294 - 01:27:30,154] very close together.
+- [01:27:30,294 - 01:27:30,334] Yeah,
+- [01:27:30,334 - 01:27:30,794] that's right.
+- [01:27:31,554 - 01:27:33,154] You'll have a positive and negative charge
+- [01:27:33,154 - 01:27:34,054] right next to each other.
+- [01:27:34,154 - 01:27:36,094] I can charge up the capacitor to one volt.
+- [01:27:36,154 - 01:27:37,274] It has one Coulomb in it.
+- [01:27:37,394 - 01:27:38,194] It'll go boom.
+- [01:27:38,694 - 01:27:39,854] It doesn't go boom.
+- [01:27:45,134 - 01:27:47,814] 10 to the 19th electron is a lot of electrons.
+- [01:27:50,714 - 01:27:53,494] That's only 10 to the 19th electron volts.
+- [01:27:53,634 - 01:27:56,294] 10 to the 19th electrons would be...
+- [01:27:57,354 - 01:27:58,214] That's only...
+- [01:27:59,394 - 01:28:01,374] That's 10 to the 19 EVs.
+- [01:28:01,434 - 01:28:03,234] That's 10 to the minus...
+- [01:28:03,954 - 01:28:05,254] That's a lot of energy.
+- [01:28:06,094 - 01:28:07,134] It's a nice bang,
+- [01:28:07,134 - 01:28:08,174] but it's not like...
+- [01:28:08,174 - 01:28:08,494] Yeah,
+- [01:28:08,494 - 01:28:08,854] it's a bang.
+- [01:28:11,254 - 01:28:13,534] I know we would explode the world.
+- [01:28:13,534 - 01:28:13,934] I mean,
+- [01:28:13,934 - 01:28:16,414] we'd make a nice little explosion in the world.
+- [01:28:16,594 - 01:28:17,254] Nice little bang.
+- [01:28:17,254 - 01:28:18,374] You've got to do something with it.
+- [01:28:18,434 - 01:28:18,914] As I say,
+- [01:28:18,914 - 01:28:20,114] you go to Fry's and for a buck,
+- [01:28:20,154 - 01:28:21,654] you buy one pair of capacitors
+- [01:28:21,654 - 01:28:22,914] and you charge it up to a volt.
+- [01:28:23,194 - 01:28:24,354] And you've got a Coulomb
+- [01:28:24,354 - 01:28:25,514] sitting right there on your desk.
+- [01:28:25,694 - 01:28:26,634] You've got two Coulombs.
+- [01:28:26,734 - 01:28:27,234] You've got two Coulombs.
+- [01:28:27,234 - 01:28:27,554] No,
+- [01:28:27,554 - 01:28:28,734] you've got no Coulombs.
+- [01:28:29,214 - 01:28:31,154] You've got one Coulomb of positive charge,
+- [01:28:31,294 - 01:28:33,494] one Coulomb of negative charge next to each other.
+- [01:28:33,534 - 01:28:34,914] Are you saying there's no energy in the capacitor?
+- [01:28:35,454 - 01:28:35,814] No,
+- [01:28:35,814 - 01:28:35,914] no,
+- [01:28:35,914 - 01:28:36,954] there's energy in the capacitor.
+- [01:28:37,834 - 01:28:40,314] But the energy in the capacitor depends on the distance
+- [01:28:40,314 - 01:28:41,614] between the capacitor plates.
+- [01:28:41,774 - 01:28:42,054] Cool.
+- [01:28:42,054 - 01:28:42,674] It's a plate for you.
+- [01:28:43,534 - 01:28:45,674] If you were to take the capacitor plates far away,
+- [01:28:45,814 - 01:28:46,754] you would make a big energy.
+- [01:28:47,954 - 01:28:48,394] Yes.
+- [01:28:48,634 - 01:28:49,894] I was objecting to your
+- [01:28:49,894 - 01:28:51,154] saying that a Coulomb of charge
+- [01:28:51,154 - 01:28:52,774] in your desk is something to be afraid of.
+- [01:28:52,914 - 01:28:54,974] A Coulomb of charge uncompensated
+- [01:28:54,974 - 01:28:58,454] by a Coulomb of opposite charge would be,
+- [01:28:58,494 - 01:29:00,814] I think that would be fairly dangerous.
+- [01:29:03,394 - 01:29:03,834] Yeah,
+- [01:29:03,834 - 01:29:04,194] move on.
+- [01:29:05,434 - 01:29:06,114] Who cares?
+- [01:29:10,234 - 01:29:11,534] Capacitor has two plates,
+- [01:29:11,534 - 01:29:13,234] positive and negative.
+- [01:29:13,314 - 01:29:13,514] They can't be both.
+- [01:29:13,534 - 01:29:14,194] They cancel each other.
+- [01:29:20,854 - 01:29:21,814] Let's put it this way.
+- [01:29:21,934 - 01:29:25,574] If you were to take a cubic centimeter of water,
+- [01:29:26,654 - 01:29:28,694] a Coulomb of charge is,
+- [01:29:28,694 - 01:29:31,094] I think it's about 10 to the 19th electrons.
+- [01:29:31,534 - 01:29:33,294] That would mean something like about
+- [01:29:33,294 - 01:29:35,054] one part in 10 to the 4th
+- [01:29:35,054 - 01:29:36,854] of the atoms had been ionized.
+- [01:29:38,154 - 01:29:39,634] That would be 10,
+- [01:29:39,634 - 01:29:40,014] okay,
+- [01:29:40,014 - 01:29:41,164] so one part in 10
+- [01:29:41,164 - 01:29:42,314] to the 4th of the atoms,
+- [01:29:42,314 - 01:29:43,434] 10 to the 23rd atoms,
+- [01:29:43,434 - 01:29:45,974] 10 to the 19th electrons.
+- [01:29:46,034 - 01:29:47,674] That would mean one part in 10 to the,
+- [01:29:47,814 - 01:29:52,234] so that would be 10 to the 19th electrons.
+- [01:29:52,514 - 01:29:55,874] That would be 10 to the 19th electron,
+- [01:29:57,834 - 01:30:00,614] 10 to the 20th electron volts about.
+- [01:30:01,254 - 01:30:04,414] Ionizing one hydrogen atom takes about 10 electron volts.
+- [01:30:05,374 - 01:30:06,904] So that would be about
+- [01:30:06,904 - 01:30:08,434] 10 to the 20th electron volts.
+- [01:30:09,114 - 01:30:11,774] How bad is 10 to the 20th electron volts?
+- [01:30:11,774 - 01:30:12,654] Well,
+- [01:30:12,654 - 01:30:14,314] it's actually not that bad,
+- [01:30:14,314 - 01:30:20,554] but it's a noticeable perturbation.
+- [01:30:21,294 - 01:30:23,034] It's a noticeable perturbation.
+- [01:30:23,134 - 01:30:25,774] 10 to the 20th electron volts
+- [01:30:25,774 - 01:30:28,414] is like the highest cosmic ray energy
+- [01:30:28,414 - 01:30:29,274] that can hit you.
+- [01:30:29,414 - 01:30:31,574] It's 100 million TeV.
+- [01:30:32,294 - 01:30:34,034] 100 million TeV,
+- [01:30:34,034 - 01:30:34,274] right.
+- [01:30:35,094 - 01:30:36,394] But only one particle.
+- [01:30:36,454 - 01:30:38,194] It's not like an accelerator beam hitting you.
+- [01:30:38,334 - 01:30:41,074] So it's one particle with 100 million TeV.
+- [01:30:42,154 - 01:30:44,854] That's about the highest energy cosmic ray.
+- [01:30:45,194 - 01:30:46,994] So if you get hit by a high,
+- [01:30:46,994 - 01:30:47,214] high,
+- [01:30:47,214 - 01:30:47,494] high,
+- [01:30:47,494 - 01:30:48,834] high energy cosmic ray,
+- [01:30:48,914 - 01:30:49,894] it can do some damage.
+- [01:30:50,994 - 01:30:51,694] You're right,
+- [01:30:51,694 - 01:30:53,134] it's not a big explosion.
+- [01:30:54,374 - 01:30:56,154] I think it's an unpleasant
+- [01:30:56,154 - 01:30:57,934] event taking place in your body.
+- [01:31:01,734 - 01:31:02,234] Anyway,
+- [01:31:02,234 - 01:31:02,954] let's go on.
+- [01:31:04,734 - 01:31:05,414] All right,
+- [01:31:05,414 - 01:31:06,414] now let's come to energy.
+- [01:31:06,594 - 01:31:07,914] Energy and momentum.
+- [01:31:08,694 - 01:31:11,054] Energy and momentum are also conserved quantities.
+- [01:31:11,074 - 01:31:12,933] They're like charge in that respect.
+- [01:31:13,114 - 01:31:14,013] They're conserved.
+- [01:31:14,714 - 01:31:17,993] But energy and separately momentum themselves,
+- [01:31:19,174 - 01:31:21,244] not their currents and not
+- [01:31:21,244 - 01:31:23,314] their flows or not their densities,
+- [01:31:23,414 - 01:31:24,844] but the total energy and
+- [01:31:24,844 - 01:31:26,274] the total momentum of a system
+- [01:31:26,274 - 01:31:28,334] are not scalars,
+- [01:31:28,334 - 01:31:29,654] are not invariants.
+- [01:31:29,933 - 01:31:31,674] This is more or less obvious.
+- [01:31:32,234 - 01:31:34,574] If I have an object here standing at
+- [01:31:34,574 - 01:31:36,914] rest and I tell you that it's energy,
+- [01:31:37,114 - 01:31:37,654] and remember,
+- [01:31:37,654 - 01:31:39,794] keep in mind E equals mc squared,
+- [01:31:39,874 - 01:31:41,054] so m and mc squared.
+- [01:31:41,054 - 01:31:43,834] m and e are similar things.
+- [01:31:44,134 - 01:31:46,493] This object has a certain amount of energy,
+- [01:31:47,254 - 01:31:49,354] namely its mass times c squared.
+- [01:31:49,634 - 01:31:51,664] And now somebody's going on a
+- [01:31:51,664 - 01:31:53,694] really fast railroad train going past it,
+- [01:31:53,834 - 01:31:56,404] they will see the mc squared
+- [01:31:56,404 - 01:31:58,974] plus the kinetic energy of the eraser.
+- [01:31:59,474 - 01:32:01,424] So energy is not something
+- [01:32:01,424 - 01:32:03,374] that all observers will agree about.
+- [01:32:05,174 - 01:32:08,174] Total energy is not an invariant.
+- [01:32:08,194 - 01:32:09,074] It's not a scalar.
+- [01:32:09,074 - 01:32:11,114] Neither is total momentum.
+- [01:32:11,734 - 01:32:14,034] I say the momentum of this is zero.
+- [01:32:14,234 - 01:32:16,014] You going by in the railroad train
+- [01:32:16,014 - 01:32:17,794] will say the momentum is not zero.
+- [01:32:18,134 - 01:32:20,774] So energy and momentum are not,
+- [01:32:20,774 - 01:32:22,034] they are conserved,
+- [01:32:22,154 - 01:32:25,054] but they are not invariants.
+- [01:32:26,174 - 01:32:27,114] And together,
+- [01:32:27,114 - 01:32:29,654] the energy and the momentum of
+- [01:32:29,654 - 01:32:32,194] a system also form a four vector.
+- [01:32:33,414 - 01:32:34,994] We've gone through this when
+- [01:32:34,994 - 01:32:36,574] we studied relativity more than once.
+- [01:32:39,074 - 01:32:40,514] The energy of a system,
+- [01:32:40,514 - 01:32:41,874] again,
+- [01:32:41,874 - 01:32:43,674] speed of light equals one.
+- [01:32:45,934 - 01:32:49,254] The energy of a system and the momentum,
+- [01:32:49,514 - 01:32:51,494] the momentum is a three vector.
+- [01:32:52,674 - 01:32:54,234] It has three components.
+- [01:32:56,294 - 01:32:58,364] The energy and the momentum of
+- [01:32:58,364 - 01:33:00,434] a system together form a four vector.
+- [01:33:00,974 - 01:33:04,294] The energy being the time component,
+- [01:33:05,194 - 01:33:07,794] and the momentum being the space components.
+- [01:33:07,794 - 01:33:09,094] So you can,
+- [01:33:09,094 - 01:33:09,574] if you like,
+- [01:33:09,574 - 01:33:12,454] think of the energy as the time component,
+- [01:33:13,354 - 01:33:14,494] and the momentum,
+- [01:33:17,014 - 01:33:17,534] x,
+- [01:33:17,534 - 01:33:17,894] y,
+- [01:33:17,894 - 01:33:18,294] and z,
+- [01:33:19,114 - 01:33:22,854] as the space components of another four vector.
+- [01:33:24,354 - 01:33:25,354] But this time,
+- [01:33:25,354 - 01:33:29,234] it's not the four vector of density and flow.
+- [01:33:29,674 - 01:33:31,814] The total quantity of momentum,
+- [01:33:32,034 - 01:33:34,574] or the total quantity of energy of a system,
+- [01:33:35,434 - 01:33:37,374] together form a four vector.
+- [01:33:39,434 - 01:33:41,274] The four vector is conserved.
+- [01:33:41,414 - 01:33:43,154] Each component of it is conserved.
+- [01:33:47,106 - 01:33:48,066] 一番怖いのは
+- [01:33:49,098 - 01:33:49,798] Yes,
+- [01:33:49,798 - 01:33:52,218] the X component of momentum is conserved,
+- [01:33:52,218 - 01:33:54,778] the Y component of momentum is conserved,
+- [01:33:54,918 - 01:33:56,198] the energy is conserved.
+- [01:33:56,338 - 01:33:59,498] So there are four separate conservation laws.
+- [01:34:01,178 - 01:34:01,878] Now,
+- [01:34:01,878 - 01:34:03,138] again,
+- [01:34:03,138 - 01:34:06,368] energy conservation and momentum
+- [01:34:06,368 - 01:34:09,598] conservation would be operationally useless
+- [01:34:09,598 - 01:34:13,038] if it was just that energy could
+- [01:34:13,038 - 01:34:16,478] disappear at one place and reappear on Mars.
+- [01:34:17,278 - 01:34:20,438] It would be operationally useless in this laboratory.
+- [01:34:21,678 - 01:34:22,578] So again,
+- [01:34:22,578 - 01:34:25,098] there is a notion of a flow of energy.
+- [01:34:25,618 - 01:34:26,738] Same thing,
+- [01:34:26,738 - 01:34:28,278] a flow of momentum.
+- [01:34:28,898 - 01:34:30,918] And it's the same kind of thing.
+- [01:34:31,438 - 01:34:33,398] Changes in the energy of a system,
+- [01:34:33,398 - 01:34:34,818] of a closed system like this,
+- [01:34:34,818 - 01:34:36,918] can only happen if there is
+- [01:34:36,918 - 01:34:39,018] a flow of energy or momentum
+- [01:34:39,018 - 01:34:39,578] or whatever.
+- [01:34:39,578 - 01:34:42,138] Whatever it is through the walls of a system.
+- [01:34:43,958 - 01:34:47,508] And so there must also be a notion of
+- [01:34:47,508 - 01:34:51,058] a density of energy and a flow of energy.
+- [01:34:51,238 - 01:34:52,617] That's likewise for momentum.
+- [01:34:53,178 - 01:34:55,798] Let's give them some names and then let's see
+- [01:34:55,798 - 01:34:58,418] if we can make a guess as to what kind
+- [01:34:58,418 - 01:35:00,918] of quantity the density and
+- [01:35:00,918 - 01:35:03,418] flow of energy and momentum is.
+- [01:35:05,918 - 01:35:07,638] I warn you now that I am
+- [01:35:07,638 - 01:35:09,358] setting the speed of light equal to one.
+- [01:35:09,578 - 01:35:12,488] So some of the formulas may differ from elementary
+- [01:35:12,488 - 01:35:15,398] textbooks in which there are speeds of light floating around.
+- [01:35:15,658 - 01:35:18,288] You can always restore the dimensions
+- [01:35:18,288 - 01:35:20,918] by making the dimensional analysis consistent.
+- [01:35:21,198 - 01:35:21,518] But all right.
+- [01:35:22,438 - 01:35:22,998] Energy.
+- [01:35:23,418 - 01:35:24,988] First of all is a
+- [01:35:24,988 - 01:35:26,558] notion of the density of energy.
+- [01:35:27,078 - 01:35:29,878] Energy in a volume divided by the volume,
+- [01:35:29,878 - 01:35:31,278] take the volume small,
+- [01:35:31,278 - 01:35:36,718] defines a quantity which is the density of energy.
+- [01:35:37,338 - 01:35:38,598] Let's give that a name.
+- [01:35:38,598 - 01:35:42,118] Energy is the time component of something.
+- [01:35:42,498 - 01:35:43,138] Remember,
+- [01:35:43,138 - 01:35:46,778] energy and momentum form the four vector P naught,
+- [01:35:46,778 - 01:35:47,438] P1,
+- [01:35:47,438 - 01:35:48,218] P2,
+- [01:35:48,218 - 01:35:48,778] P3.
+- [01:35:49,958 - 01:35:51,418] So first of all,
+- [01:35:51,418 - 01:35:53,458] it's a density of something.
+- [01:35:53,918 - 01:35:58,738] And let's label this quantity by
+- [01:35:58,738 - 01:36:03,558] who it is we're talking about.
+- [01:36:03,818 - 01:36:05,238] We're talking about energy.
+- [01:36:05,438 - 01:36:06,378] And energy,
+- [01:36:06,378 - 01:36:08,418] I'll simply use a shorthand.
+- [01:36:08,418 - 01:36:08,618] I'll use a shorthand notation.
+- [01:36:09,418 - 01:36:13,278] The time component of the four vector.
+- [01:36:13,478 - 01:36:15,858] So energy is a time component of something.
+- [01:36:16,258 - 01:36:18,478] This T is going to
+- [01:36:18,478 - 01:36:20,698] be the analog of a density.
+- [01:36:20,838 - 01:36:21,458] It is a density.
+- [01:36:21,698 - 01:36:23,398] It's the density of energy.
+- [01:36:24,518 - 01:36:26,418] But let's go back over here.
+- [01:36:26,638 - 01:36:27,438] Where is it?
+- [01:36:29,018 - 01:36:29,578] Yes,
+- [01:36:29,578 - 01:36:30,118] up here.
+- [01:36:31,098 - 01:36:33,118] Notice that the density itself,
+- [01:36:33,118 - 01:36:35,538] quite apart from whatever it's the density of,
+- [01:36:35,538 - 01:36:39,398] the density is also the fourth component of something.
+- [01:36:40,378 - 01:36:43,598] So this is the density of energy
+- [01:36:43,598 - 01:36:46,818] is the density of the fourth component.
+- [01:36:46,958 - 01:36:47,578] In other words,
+- [01:36:47,578 - 01:36:49,498] it's the fourth component of a fourth component.
+- [01:36:50,618 - 01:36:53,198] It's the fourth component because it has to do with
+- [01:36:53,198 - 01:36:55,778] energy and it's the fourth component because it's a density.
+- [01:36:56,878 - 01:36:57,658] All right.
+- [01:36:57,698 - 01:37:00,318] It's a fourth component because it's a density,
+- [01:37:00,318 - 01:37:04,658] and density is like the time component of a flow.
+- [01:37:04,658 - 01:37:04,878] flow.
+- [01:37:04,878 - 01:37:07,438] So we'll give it two zeros.
+- [01:37:07,438 - 01:37:12,218] Two zeros because it's the fourth component of a fourth
+- [01:37:12,218 - 01:37:12,698] component.
+- [01:37:12,698 - 01:37:13,718] Now,
+- [01:37:13,718 - 01:37:15,898] what about the flow of momentum?
+- [01:37:15,898 - 01:37:18,218] If we were talking about charge,
+- [01:37:18,218 - 01:37:19,678] the flow
+- [01:37:19,678 - 01:37:23,338] of momentum in the x direction would be called J1.
+- [01:37:23,338 - 01:37:30,018] We're now talking about the flow of something
+- [01:37:30,018 - 01:37:31,598] whose name is naught.
+- [01:37:31,598 - 01:37:35,878] Just to label the fact that we're talking about energy,
+- [01:37:35,878 - 01:37:36,798] we put a naught there,
+- [01:37:37,598 - 01:37:41,758] but it's a flow of energy in the one direction.
+- [01:37:41,758 - 01:37:44,338] So we need to put a one there.
+- [01:37:45,978 - 01:37:50,128] T naught one is the flow of the
+- [01:37:50,128 - 01:37:54,278] zero component of the energy momentum four vector,
+- [01:37:54,278 - 01:37:54,858] in other words,
+- [01:37:54,858 - 01:37:55,298] the energy,
+- [01:37:55,298 - 01:37:57,818] along the x-axis.
+- [01:37:59,298 - 01:37:59,958] How about...
+- [01:38:00,018 - 01:38:02,158] What would T naught two mean?
+- [01:38:04,578 - 01:38:07,377] That would be the flow of energy along the two-axis,
+- [01:38:07,377 - 01:38:09,318] and so forth.
+- [01:38:13,698 - 01:38:14,218] Okay,
+- [01:38:14,218 - 01:38:16,078] that takes care of energy and its flow.
+- [01:38:17,978 - 01:38:20,738] What about the x component of momentum?
+- [01:38:20,738 - 01:38:24,998] The x component of momentum is just another quantity
+- [01:38:24,998 - 01:38:26,218] which is conserved.
+- [01:38:26,218 - 01:38:28,958] We ought to give its density a name.
+- [01:38:28,958 - 01:38:32,158] How much x component of momentum is in this volume?
+- [01:38:32,158 - 01:38:33,418] Well,
+- [01:38:33,418 - 01:38:35,318] I don't know how much is.
+- [01:38:35,318 - 01:38:37,378] It depends on the microscopic particles.
+- [01:38:37,598 - 01:38:38,898] But if there was a
+- [01:38:38,898 - 01:38:40,198] flow of particles through the volume,
+- [01:38:40,198 - 01:38:43,138] there might be an x component to the...
+- [01:38:44,558 - 01:38:45,258] All right,
+- [01:38:45,258 - 01:38:49,458] so let's talk about the x component of momentum.
+- [01:38:49,458 - 01:38:51,978] What should I call its density?
+- [01:38:53,098 - 01:38:53,758] All right.
+- [01:38:55,538 - 01:38:57,458] This indicated it was a density.
+- [01:38:57,458 - 01:38:59,958] This indicated it was the energy.
+- [01:39:00,638 - 01:39:01,418] All right,
+- [01:39:01,418 - 01:39:02,998] so now let's write a T,
+- [01:39:02,998 - 01:39:05,838] which this index is now one,
+- [01:39:05,838 - 01:39:08,538] because we're talking about the x component of momentum,
+- [01:39:09,218 - 01:39:11,558] but we're still talking about its density.
+- [01:39:12,898 - 01:39:16,098] So the first index tells us who we're talking about.
+- [01:39:16,278 - 01:39:18,128] The second index tells us
+- [01:39:18,128 - 01:39:19,978] what direction the flow is in.
+- [01:39:20,498 - 01:39:22,318] The flow is in the time direction.
+- [01:39:22,318 - 01:39:23,418] It's a density.
+- [01:39:23,418 - 01:39:27,238] So this is the density of x component of momentum.
+- [01:39:27,838 - 01:39:30,398] The amount of x component of momentum in a volume.
+- [01:39:30,918 - 01:39:34,238] How about the flow of x component of momentum?
+- [01:39:34,438 - 01:39:36,658] Can you imagine a flow of x component of momentum?
+- [01:39:37,738 - 01:39:38,258] Yeah,
+- [01:39:38,258 - 01:39:38,978] that's easy.
+- [01:39:38,978 - 01:39:39,358] I mean,
+- [01:39:39,358 - 01:39:41,758] you just have some particles going along.
+- [01:39:41,938 - 01:39:44,658] They have x component of momentum,
+- [01:39:44,658 - 01:39:45,898] and moreover,
+- [01:39:45,898 - 01:39:47,618] the x component of momentum is flowing.
+- [01:39:48,498 - 01:39:49,018] So,
+- [01:39:49,018 - 01:39:50,338] along the x axis.
+- [01:39:50,838 - 01:39:52,738] This becomes T1,
+- [01:39:52,738 - 01:39:53,398] because we're talking about the x component of momentum.
+- [01:39:53,398 - 01:39:55,568] But now we're talking about
+- [01:39:55,568 - 01:39:57,738] the flow along the one direction.
+- [01:39:58,778 - 01:40:01,018] How about a flow of
+- [01:40:01,018 - 01:40:03,258] x momentum along the y direction?
+- [01:40:03,498 - 01:40:04,158] Does that make sense?
+- [01:40:08,798 - 01:40:09,358] Well,
+- [01:40:09,358 - 01:40:10,518] supposing I had...
+- [01:40:10,518 - 01:40:11,598] There's my x axis.
+- [01:40:11,598 - 01:40:13,058] There's my y axis.
+- [01:40:13,438 - 01:40:15,098] Supposing I have a bunch of
+- [01:40:15,098 - 01:40:16,758] particles moving off in an oblique direction.
+- [01:40:17,278 - 01:40:19,978] They are carrying x momentum from one
+- [01:40:19,978 - 01:40:22,678] value of y to another value of y.
+- [01:40:22,678 - 01:40:26,478] A bunch of particles going off that way are taking...
+- [01:40:26,478 - 01:40:27,918] They also have some y momentum.
+- [01:40:28,298 - 01:40:29,338] But in particular,
+- [01:40:29,338 - 01:40:30,338] they have some x momentum,
+- [01:40:30,338 - 01:40:32,088] but that x momentum is
+- [01:40:32,088 - 01:40:33,838] being transported along the y axis.
+- [01:40:34,258 - 01:40:34,998] So yes,
+- [01:40:34,998 - 01:40:37,338] it does make sense to talk about the transport,
+- [01:40:37,338 - 01:40:39,938] or the flux,
+- [01:40:39,938 - 01:40:40,578] or the flow,
+- [01:40:40,578 - 01:40:43,738] of x momentum along the y axis.
+- [01:40:44,538 - 01:40:45,878] And along the z axis.
+- [01:40:49,018 - 01:40:49,518] Okay,
+- [01:40:49,518 - 01:40:50,318] what comes next?
+- [01:40:50,318 - 01:40:50,678] Well,
+- [01:40:50,678 - 01:40:52,078] the next thing that comes
+- [01:40:52,078 - 01:40:53,478] is the y component of momentum.
+- [01:40:54,098 - 01:40:56,398] The density of the y
+- [01:40:56,398 - 01:40:58,698] component of the momentum is T20.
+- [01:40:59,498 - 01:41:01,958] And then the flow along the one axis.
+- [01:41:05,277 - 01:41:05,878] T21,
+- [01:41:05,878 - 01:41:06,478] T22,
+- [01:41:06,478 - 01:41:08,678] T23.
+- [01:41:10,257 - 01:41:11,458] And finally,
+- [01:41:11,458 - 01:41:12,758] T30,
+- [01:41:12,758 - 01:41:15,338] T31,
+- [01:41:15,338 - 01:41:16,998] T32,
+- [01:41:16,998 - 01:41:17,318] T33.
+- [01:41:19,698 - 01:41:20,298] And finally,
+- [01:41:20,298 - 01:41:20,298] T30,
+- [01:41:20,298 - 01:41:20,298] T31,
+- [01:41:20,298 - 01:41:20,298] T32,
+- [01:41:20,298 - 01:41:20,298] T33.
+- [01:41:20,318 - 01:41:24,238] And finally,
+- [01:41:24,238 - 01:41:24,238] T30,
+- [01:41:24,238 - 01:41:24,238] T34,
+- [01:41:24,238 - 01:41:24,238] T35,
+- [01:41:24,238 - 01:41:24,238] T36.
+- [01:41:24,238 - 01:41:26,418] These are the four sets of objects.
+- [01:41:27,058 - 01:41:27,338] One,
+- [01:41:27,338 - 01:41:27,838] two,
+- [01:41:27,838 - 01:41:28,318] three,
+- [01:41:28,318 - 01:41:28,578] four.
+- [01:41:28,978 - 01:41:31,958] Each composed of four pieces itself.
+- [01:41:32,518 - 01:41:34,978] Which represent the flows and the densities
+- [01:41:34,978 - 01:41:37,438] of the components of energy and momentum.
+- [01:41:38,058 - 01:41:43,458] This whole object is a tensor.
+- [01:41:44,938 - 01:41:45,498] Now,
+- [01:41:45,498 - 01:41:47,058] is it obvious that it's a tensor?
+- [01:41:47,218 - 01:41:47,478] No,
+- [01:41:47,478 - 01:41:49,078] it's not obvious that it's a tensor.
+- [01:41:52,798 - 01:41:54,938] We will have to do some more work to
+- [01:41:54,938 - 01:41:57,078] convince ourselves that it ought to be a tensor.
+- [01:41:57,718 - 01:42:00,278] But it's called the energy-momentum tensor.
+- [01:42:09,898 - 01:42:11,858] And we can write it in
+- [01:42:11,858 - 01:42:13,818] the condensed notation T mu nu.
+- [01:42:23,637 - 01:42:25,417] Isn't it obvious that it's a
+- [01:42:25,417 - 01:42:27,198] tensor because it's a physical thing?
+- [01:42:27,598 - 01:42:27,777] Yeah.
+- [01:42:31,897 - 01:42:32,378] Yeah,
+- [01:42:32,378 - 01:42:34,338] I would say that that's...
+- [01:42:35,158 - 01:42:37,228] I guess the right way to say it is it
+- [01:42:37,228 - 01:42:39,298] better be a tensor or else it's not a physical thing.
+- [01:42:42,138 - 01:42:42,618] So...
+- [01:42:42,618 - 01:42:45,558] And you write it this way because
+- [01:42:45,558 - 01:42:48,498] each component is considered unlike the charge equation.
+- [01:42:48,858 - 01:42:49,038] Yeah,
+- [01:42:49,038 - 01:42:49,478] each...
+- [01:42:49,478 - 01:42:49,538] Well,
+- [01:42:49,538 - 01:42:50,078] first of all,
+- [01:42:50,078 - 01:42:52,678] this in itself doesn't say that each component is conserved.
+- [01:42:52,738 - 01:42:53,518] It just says that each...
+- [01:42:53,518 - 01:42:54,218] That they exist.
+- [01:42:54,838 - 01:42:56,758] Now we can ask what does
+- [01:42:56,758 - 01:42:58,678] it say to say that they're conserved?
+- [01:42:59,078 - 01:42:59,518] Okay.
+- [01:42:59,918 - 01:43:02,768] So let's make our best guess as to
+- [01:43:02,768 - 01:43:05,618] what it would say that they are conserved.
+- [01:43:06,618 - 01:43:08,298] Let's look at the...
+- [01:43:13,117 - 01:43:14,378] At the energy.
+- [01:43:16,018 - 01:43:17,428] What I want to do is
+- [01:43:17,428 - 01:43:18,838] write down for the energy itself,
+- [01:43:18,838 - 01:43:20,638] which is just the first row here,
+- [01:43:20,838 - 01:43:23,518] I want to write the analog of the continuity equation.
+- [01:43:23,938 - 01:43:24,438] In fact,
+- [01:43:24,438 - 01:43:25,778] I'm going to write the continuity equation.
+- [01:43:26,598 - 01:43:28,358] The first index here,
+- [01:43:28,358 - 01:43:30,018] that's completely passive.
+- [01:43:30,118 - 01:43:31,538] It just says that I'm talking about energy.
+- [01:43:33,398 - 01:43:36,398] The second index tells me whether I'm talking about
+- [01:43:36,398 - 01:43:39,398] density or X or Y or Z component of flow.
+- [01:43:40,538 - 01:43:41,018] Okay,
+- [01:43:41,018 - 01:43:42,508] so if I just mimic or
+- [01:43:42,508 - 01:43:43,998] just parrot the top equation there,
+- [01:43:44,018 - 01:43:47,158] mimic the top equation for energy,
+- [01:43:47,158 - 01:43:48,958] what will it say?
+- [01:43:49,098 - 01:43:53,778] It will say that the derivative with respect to T...
+- [01:43:53,778 - 01:43:56,078] Why don't you tarot the bottom one?
+- [01:43:56,478 - 01:43:56,958] I will.
+- [01:43:57,498 - 01:43:58,578] I'll do all of them.
+- [01:43:59,238 - 01:44:00,018] All right.
+- [01:44:00,138 - 01:44:03,148] But it says the derivative of T of
+- [01:44:03,148 - 01:44:06,158] the energy density plus the derivative of X
+- [01:44:06,158 - 01:44:10,278] with respect to the flow along the X axis
+- [01:44:11,758 - 01:44:13,878] plus the derivative with respect
+- [01:44:13,878 - 01:44:15,998] to Y of T naught Y.
+- [01:44:16,118 - 01:44:17,138] I'm getting tired of this.
+- [01:44:17,158 - 01:44:17,658] I'm getting tired of writing them,
+- [01:44:17,698 - 01:44:18,518] but you see the pattern.
+- [01:44:22,658 - 01:44:24,018] I guess we could call these one,
+- [01:44:24,018 - 01:44:24,278] two,
+- [01:44:24,278 - 01:44:24,718] and three.
+- [01:44:31,278 - 01:44:31,898] Equals zero.
+- [01:44:33,838 - 01:44:34,458] All right,
+- [01:44:34,458 - 01:44:35,658] now I could do the
+- [01:44:35,658 - 01:44:36,858] same thing for the next line.
+- [01:44:37,098 - 01:44:38,878] The next line is also...
+- [01:44:38,878 - 01:44:40,918] It refers to a conserved quantity.
+- [01:44:41,238 - 01:44:43,538] It refers to the X component of momentum.
+- [01:44:44,518 - 01:44:47,138] The only way the X component of momentum can change
+- [01:44:47,158 - 01:44:50,218] in the room is if X component of momentum flows
+- [01:44:50,218 - 01:44:51,558] through the walls of the room.
+- [01:44:51,818 - 01:44:52,658] Same deal.
+- [01:44:54,438 - 01:44:56,578] So we will write the same
+- [01:44:56,578 - 01:44:58,718] equation except wherever I see naught...
+- [01:44:58,718 - 01:44:59,698] In the first entry,
+- [01:44:59,698 - 01:45:03,258] I will write one,
+- [01:45:03,258 - 01:45:04,698] then naught,
+- [01:45:05,438 - 01:45:06,978] and so forth and so on.
+- [01:45:07,058 - 01:45:08,378] I'm getting a little tired of writing it.
+- [01:45:08,498 - 01:45:09,338] D by DX,
+- [01:45:09,338 - 01:45:13,138] T11 plus D by DY,
+- [01:45:13,138 - 01:45:16,158] T12 plus...
+- [01:45:16,158 - 01:45:17,998] plus D by DZ,
+- [01:45:17,998 - 01:45:21,058] T13...
+- [01:45:21,058 - 01:45:21,538] No,
+- [01:45:21,538 - 01:45:22,058] T...
+- [01:45:22,918 - 01:45:23,298] Yeah,
+- [01:45:23,298 - 01:45:26,078] T13 equals zero.
+- [01:45:26,398 - 01:45:28,898] And likewise for the third...
+- [01:45:28,898 - 01:45:29,358] How many...
+- [01:45:29,358 - 01:45:31,578] There are two more equations like this.
+- [01:45:31,818 - 01:45:34,358] Each one of these rows has
+- [01:45:34,358 - 01:45:36,898] a continuity equation associated with it.
+- [01:45:37,138 - 01:45:37,858] Now,
+- [01:45:37,858 - 01:45:40,048] I can also write this in
+- [01:45:40,048 - 01:45:42,238] a single common notation like this.
+- [01:45:42,378 - 01:45:44,098] And it is just...
+- [01:45:44,098 - 01:45:46,558] I have exactly this form,
+- [01:45:46,558 - 01:45:55,938] D by DX mu of T nu mu equals zero.
+- [01:45:57,818 - 01:46:00,028] Nu here is the index which
+- [01:46:00,028 - 01:46:02,238] tells us what we're talking about.
+- [01:46:03,998 - 01:46:05,898] Energy or first component of
+- [01:46:05,898 - 01:46:07,798] momentum or second component of momentum
+- [01:46:07,798 - 01:46:08,718] or third component.
+- [01:46:09,038 - 01:46:09,738] In other words,
+- [01:46:09,738 - 01:46:11,938] it just names the quantity we're talking about.
+- [01:46:11,938 - 01:46:14,548] It's the mu index here which
+- [01:46:14,548 - 01:46:17,158] tells us which direction we're talking about
+- [01:46:17,158 - 01:46:19,258] and gets combined with the derivative here.
+- [01:46:20,578 - 01:46:24,158] That's the conservation of energy equation,
+- [01:46:25,778 - 01:46:30,118] local conservation of energy in special relativity.
+- [01:46:31,358 - 01:46:32,298] You say,
+- [01:46:32,298 - 01:46:34,838] why special relativity and why not general relativity?
+- [01:46:35,218 - 01:46:37,638] The answer we'll come to next time.
+- [01:46:37,798 - 01:46:41,118] The equation is slightly modified in general relativity.
+- [01:46:41,118 - 01:46:43,118] The way that it's modified
+- [01:46:43,118 - 01:46:45,118] is the derivative becomes covariant derivative.
+- [01:46:46,858 - 01:46:47,598] You say,
+- [01:46:47,598 - 01:46:49,198] why not covariant derivative over here?
+- [01:46:50,538 - 01:46:51,518] We'll come to that.
+- [01:46:52,278 - 01:46:53,258] We'll come to it.
+- [01:46:53,358 - 01:46:54,438] It is covariant derivative.
+- [01:46:54,678 - 01:46:56,078] Some slippery trickery happens
+- [01:46:56,078 - 01:46:57,478] here that doesn't happen here.
+- [01:46:58,998 - 01:47:02,558] But this is the basic idea of energy momentum conservation.
+- [01:47:04,038 - 01:47:04,578] Okay,
+- [01:47:04,578 - 01:47:06,628] so now we have the
+- [01:47:06,628 - 01:47:08,678] basic ingredients for the general relativity.
+- [01:47:08,678 - 01:47:12,858] We have geometry which represents gravitational field.
+- [01:47:13,058 - 01:47:16,038] And we have energy and momentum which
+- [01:47:16,038 - 01:47:19,018] represent the source of the gravitational field.
+- [01:47:19,518 - 01:47:21,688] Normally we think of the source
+- [01:47:21,688 - 01:47:23,858] of the gravitational field as mass.
+- [01:47:25,098 - 01:47:27,578] But E equals MC squared.
+- [01:47:27,878 - 01:47:30,318] So if C is equal to 1,
+- [01:47:30,318 - 01:47:35,398] energy and mass are the same thing.
+- [01:47:35,658 - 01:47:38,658] So it's natural to think of mass as mass.
+- [01:47:38,658 - 01:47:40,798] It's the source of the gravitational field.
+- [01:47:41,078 - 01:47:42,218] But on the other hand,
+- [01:47:42,218 - 01:47:44,398] energy or mass comes together
+- [01:47:44,398 - 01:47:46,578] with these other things called momentum.
+- [01:47:47,318 - 01:47:49,328] If energy is the source
+- [01:47:49,328 - 01:47:51,338] of something about the gravitational field,
+- [01:47:51,658 - 01:47:54,268] then in some other frame of reference
+- [01:47:54,268 - 01:47:56,878] where energy gets mixed up with momentum,
+- [01:47:57,238 - 01:47:59,488] momentum will become the source of
+- [01:47:59,488 - 01:48:01,738] some piece of the gravitational field.
+- [01:48:01,998 - 01:48:04,538] So Einstein's job was to figure
+- [01:48:04,538 - 01:48:07,078] out how to write tensor equations
+- [01:48:07,078 - 01:48:12,118] which expressed the sense in which the
+- [01:48:12,118 - 01:48:17,158] gravitational field was sourced by energy and momentum.
+- [01:48:17,438 - 01:48:19,208] And to write them in a way that
+- [01:48:19,208 - 01:48:20,978] made good sense in any frame of reference.
+- [01:48:26,098 - 01:48:26,938] I'm going to,
+- [01:48:26,938 - 01:48:28,158] we're not going to do that today.
+- [01:48:28,578 - 01:48:30,818] That's a little beyond what I wanted to do today.
+- [01:48:30,878 - 01:48:32,758] I did want to do one more thing today.
+- [01:48:34,018 - 01:48:34,698] I don't know,
+- [01:48:34,698 - 01:48:35,718] are we really shot?
+- [01:48:35,718 - 01:48:37,318] Or is there time for...
+- [01:48:38,238 - 01:48:38,798] Alright,
+- [01:48:38,798 - 01:48:40,058] one more thing we'll do.
+- [01:48:41,638 - 01:48:43,138] Now we're coming...
+- [01:48:45,078 - 01:48:48,508] I've set up the basic ingredients
+- [01:48:48,508 - 01:48:51,938] for thinking about energy and momentum
+- [01:48:52,918 - 01:48:55,138] as the source of the gravitational field.
+- [01:48:55,258 - 01:48:58,158] All it will take is an equation which has
+- [01:48:58,158 - 01:49:01,058] on one side something to do with the geometry.
+- [01:49:01,418 - 01:49:02,418] What's it going to be?
+- [01:49:02,518 - 01:49:03,758] It's going to be the curvature tensor.
+- [01:49:03,758 - 01:49:06,078] The curvature tensor on one side and
+- [01:49:06,078 - 01:49:08,398] on the other side of the equation
+- [01:49:08,398 - 01:49:11,218] it will be the energy and momentum.
+- [01:49:12,558 - 01:49:14,578] Curvature caused by energy and momentum.
+- [01:49:14,978 - 01:49:16,718] That's half of the story.
+- [01:49:17,238 - 01:49:21,058] That tells us how energy and momentum curves space.
+- [01:49:21,838 - 01:49:24,578] The other half of the story is
+- [01:49:24,578 - 01:49:27,318] what geometry does to the motion of particles.
+- [01:49:27,978 - 01:49:29,208] I want to spend a
+- [01:49:29,208 - 01:49:30,438] little bit of time on that.
+- [01:49:30,498 - 01:49:31,628] And because I don't want to
+- [01:49:31,628 - 01:49:32,758] have to do it next time,
+- [01:49:32,758 - 01:49:34,098] although we'll probably wind up
+- [01:49:34,098 - 01:49:35,438] going through it the next time.
+- [01:49:36,278 - 01:49:39,658] The basic rule that Einstein settled on
+- [01:49:41,037 - 01:49:44,598] for the motion of particles through a gravitational field
+- [01:49:44,598 - 01:49:46,658] is that they move on geodesics.
+- [01:49:46,838 - 01:49:48,638] They move in the simplest possible way.
+- [01:49:49,458 - 01:49:51,338] Particles have little steering wheels,
+- [01:49:51,598 - 01:49:53,438] but the steering wheels are
+- [01:49:53,438 - 01:49:55,278] locked in the straight ahead direction.
+- [01:49:55,758 - 01:49:57,318] But not just in space,
+- [01:49:57,318 - 01:49:58,698] but through space-time.
+- [01:49:59,138 - 01:50:00,998] Space-time has a geometry.
+- [01:50:02,758 - 01:50:04,518] It's described exactly the way
+- [01:50:04,518 - 01:50:06,278] we've described it up till now,
+- [01:50:06,478 - 01:50:07,618] with a metric tensor,
+- [01:50:07,618 - 01:50:08,838] a curvature tensor.
+- [01:50:09,457 - 01:50:10,978] The whole story goes through.
+- [01:50:12,318 - 01:50:14,808] And particles move through
+- [01:50:14,808 - 01:50:17,298] space-time on space-time geodesics.
+- [01:50:17,538 - 01:50:18,578] That was the principle,
+- [01:50:18,578 - 01:50:19,358] a very,
+- [01:50:19,358 - 01:50:20,178] very simple principle.
+- [01:50:20,238 - 01:50:22,298] What would it say in flat space-time?
+- [01:50:22,838 - 01:50:25,218] In flat space-time it would say that
+- [01:50:25,218 - 01:50:27,598] particles move through space-time on straight lines.
+- [01:50:28,798 - 01:50:31,518] That has two pieces to it.
+- [01:50:31,518 - 01:50:33,668] It first of all means that
+- [01:50:33,668 - 01:50:35,818] they move along trajectories in space,
+- [01:50:35,978 - 01:50:36,718] which are straight.
+- [01:50:37,798 - 01:50:39,458] But it also says that
+- [01:50:39,458 - 01:50:41,118] they move with a constant velocity.
+- [01:50:41,558 - 01:50:44,578] A straight line in space-time is
+- [01:50:44,578 - 01:50:47,598] something which moves in a fixed direction,
+- [01:50:47,818 - 01:50:49,358] but with a fixed speed.
+- [01:50:49,838 - 01:50:51,897] So the principle that a particle
+- [01:50:51,897 - 01:50:53,957] moves on a geodesic in flat space-time
+- [01:50:53,957 - 01:50:57,238] would just say that an object moves with no acceleration.
+- [01:50:58,838 - 01:51:00,168] Now of course that's ignoring
+- [01:51:00,168 - 01:51:01,498] all the other kinds of forces,
+- [01:51:01,518 - 01:51:03,477] but if all we had was
+- [01:51:03,477 - 01:51:05,437] gravitational forces that would be correct.
+- [01:51:06,658 - 01:51:09,578] What's the analog of that more generally?
+- [01:51:10,838 - 01:51:12,798] More generally the statement is
+- [01:51:12,798 - 01:51:14,758] that particles move on geodesics.
+- [01:51:14,898 - 01:51:16,738] The straightest possible paths.
+- [01:51:17,438 - 01:51:18,878] Let me remind you what
+- [01:51:18,878 - 01:51:20,318] the equation for a geodesic is.
+- [01:51:20,538 - 01:51:23,138] It's just the equation of zero
+- [01:51:23,138 - 01:51:25,738] covariant derivative of the tangent vector.
+- [01:51:26,118 - 01:51:29,498] The tangent vector is the x mu by d tau.
+- [01:51:30,218 - 01:51:33,438] Tau being proper time along the trajectory.
+- [01:51:33,698 - 01:51:34,598] That's the tangent vector.
+- [01:51:36,438 - 01:51:39,198] And to differentiate it with respect to tau,
+- [01:51:39,458 - 01:51:43,118] now we have a tangent vector along the curve,
+- [01:51:43,298 - 01:51:45,338] the tangent vector is doing whatever it's doing.
+- [01:51:45,738 - 01:51:48,048] And now we're asking how the tangent vector
+- [01:51:48,048 - 01:51:50,358] changes as we move from point to point.
+- [01:51:50,818 - 01:51:51,378] Well,
+- [01:51:51,378 - 01:51:54,078] that's another derivative with respect to tau.
+- [01:51:54,978 - 01:51:56,658] But that's not the covariant
+- [01:51:56,658 - 01:51:58,338] derivative of the tangent vector.
+- [01:51:58,338 - 01:52:00,768] The covariant derivative of the
+- [01:52:00,768 - 01:52:03,198] tangent vector involves the Christoffel symbol.
+- [01:52:04,278 - 01:52:10,198] And it's plus gamma mu nu sigma,
+- [01:52:11,038 - 01:52:14,038] tangent vector dx nu by d tau,
+- [01:52:15,078 - 01:52:17,638] tangent vector dx sigma by d tau.
+- [01:52:20,078 - 01:52:22,898] This tells us what the orbit
+- [01:52:22,898 - 01:52:25,718] of a particle is in space-time.
+- [01:52:25,718 - 01:52:29,098] It's a differential equation telling us,
+- [01:52:29,098 - 01:52:30,978] in terms of the Christoffel symbol,
+- [01:52:33,098 - 01:52:34,358] what the motion is.
+- [01:52:35,698 - 01:52:37,078] Now I want to restrict myself.
+- [01:52:37,258 - 01:52:38,138] We have five more minutes.
+- [01:52:38,198 - 01:52:39,218] I'm going to go through this again,
+- [01:52:39,218 - 01:52:40,298] but I want to do it now
+- [01:52:40,298 - 01:52:41,378] to give you some food for thought.
+- [01:52:42,878 - 01:52:45,288] Supposing we're in the limit
+- [01:52:45,288 - 01:52:47,698] where Newton is almost exactly right.
+- [01:52:48,158 - 01:52:49,078] What does that mean?
+- [01:52:49,218 - 01:52:52,258] It means that the gravitational fields are not too strong,
+- [01:52:52,418 - 01:52:55,058] and it also means that things are moving slowly.
+- [01:52:56,338 - 01:52:56,958] All right?
+- [01:52:57,158 - 01:52:59,918] It means that everything is moving slowly.
+- [01:53:02,158 - 01:53:02,898] In fact,
+- [01:53:02,898 - 01:53:04,198] I'm beginning to move slowly.
+- [01:53:13,277 - 01:53:14,407] I think we're going to
+- [01:53:14,407 - 01:53:15,538] come back to it next time.
+- [01:53:16,178 - 01:53:17,658] I think we're too close to the...
+- [01:53:17,658 - 01:53:18,278] Yeah.
+- [01:53:19,398 - 01:53:19,978] All right.
+- [01:53:20,278 - 01:53:23,658] If you want to play with this a little bit,
+- [01:53:23,658 - 01:53:25,498] see if you can say,
+- [01:53:25,498 - 01:53:26,838] see what this says.
+- [01:53:27,038 - 01:53:28,178] Here's the goal.
+- [01:53:29,438 - 01:53:30,928] Put in the fact that
+- [01:53:30,928 - 01:53:32,418] all the particles are moving slowly.
+- [01:53:33,398 - 01:53:33,918] Okay?
+- [01:53:34,238 - 01:53:36,078] That means that dx by dt,
+- [01:53:36,078 - 01:53:36,958] not d tau,
+- [01:53:36,958 - 01:53:38,538] but dx by dt is small.
+- [01:53:38,878 - 01:53:41,298] The ordinary velocities of particles are small.
+- [01:53:42,118 - 01:53:43,798] Are there any components of dx
+- [01:53:43,798 - 01:53:45,478] by d tau which are not small?
+- [01:53:48,378 - 01:53:48,898] Yeah,
+- [01:53:48,898 - 01:53:49,658] the time component,
+- [01:53:49,658 - 01:53:51,958] because the time component is almost exactly equal to one.
+- [01:53:51,958 - 01:53:53,558] It's essentially dt by d tau,
+- [01:53:53,558 - 01:53:54,938] almost equal to one.
+- [01:53:55,158 - 01:53:56,978] So when particles move slowly,
+- [01:53:56,978 - 01:53:59,268] only the time components of
+- [01:53:59,268 - 01:54:01,558] these tangent vectors are appreciable.
+- [01:54:01,998 - 01:54:03,458] All right?
+- [01:54:03,778 - 01:54:04,378] Now,
+- [01:54:04,378 - 01:54:07,518] tau and t are almost
+- [01:54:07,518 - 01:54:10,658] the same if particles move slowly.
+- [01:54:10,918 - 01:54:13,678] So this is almost the ordinary acceleration.
+- [01:54:14,458 - 01:54:16,938] This is almost the ordinary acceleration.
+- [01:54:18,698 - 01:54:20,578] On the right-hand side here,
+- [01:54:20,578 - 01:54:22,658] these things are either very
+- [01:54:22,658 - 01:54:24,738] small or they're close to one.
+- [01:54:25,458 - 01:54:26,798] So what does it say?
+- [01:54:26,918 - 01:54:32,498] It says the acceleration is equal to the Christoffel symbol,
+- [01:54:32,738 - 01:54:34,478] to a certain Christoffel symbol.
+- [01:54:34,918 - 01:54:37,458] The Christoffel symbols evidently
+- [01:54:37,458 - 01:54:39,998] are the gravitational field,
+- [01:54:40,238 - 01:54:41,978] the gravitational acceleration.
+- [01:54:42,618 - 01:54:45,518] They're like the things we called in the beginning A,
+- [01:54:45,738 - 01:54:46,918] the field of acceleration.
+- [01:54:47,878 - 01:54:49,378] So this is the connection.
+- [01:54:49,378 - 01:54:51,648] Here's how we're going to
+- [01:54:51,648 - 01:54:53,918] make the connection between Newton's equations,
+- [01:54:54,218 - 01:54:56,618] Newton's second law of motion,
+- [01:54:57,258 - 01:55:00,758] and Einstein's principle that things move on geodesics.
+- [01:55:01,258 - 01:55:02,958] These are negligibly,
+- [01:55:02,958 - 01:55:05,838] they're essentially one when this is time components.
+- [01:55:06,918 - 01:55:10,178] And the gamma becomes,
+- [01:55:10,178 - 01:55:12,098] which gamma is important here?
+- [01:55:14,038 - 01:55:16,018] What are the relevant indices here?
+- [01:55:17,998 - 01:55:20,858] Remember that the x by the tau
+- [01:55:20,858 - 01:55:23,718] is only appreciable if it's a time component.
+- [01:55:24,118 - 01:55:28,678] So that means that the gravitational force
+- [01:55:28,678 - 01:55:33,238] is basically just gamma mu zero zero.
+- [01:55:34,198 - 01:55:37,638] The gravitational force along a given direction,
+- [01:55:37,858 - 01:55:39,798] let's say the y direction,
+- [01:55:40,178 - 01:55:43,818] is the Christoffel symbol gamma y zero zero.
+- [01:55:44,438 - 01:55:48,108] That's going to be the link
+- [01:55:48,108 - 01:55:51,778] to guide us to the motion of,
+- [01:55:51,958 - 01:55:52,478] well,
+- [01:55:52,478 - 01:55:57,898] to the connection between various gravitational things
+- [01:55:57,898 - 01:56:00,978] and other things in Newton's equations.
+- [01:56:03,658 - 01:56:05,398] We might as well write it down right now.
+- [01:56:05,458 - 01:56:07,008] The field of acceleration is
+- [01:56:07,008 - 01:56:08,558] equal to the Christoffel symbol.
+- [01:56:09,258 - 01:56:10,438] We'll come back to that,
+- [01:56:10,578 - 01:56:12,838] and then we'll try to put the whole thing together,
+- [01:56:12,838 - 01:56:15,678] and find equations which express
+- [01:56:16,737 - 01:56:18,857] the connection between the gravitational field
+- [01:56:18,857 - 01:56:20,978] and the masses on the one hand,
+- [01:56:21,078 - 01:56:25,858] and the gravitational forces on particles on the other hand.
+- [01:56:34,718 - 01:56:38,258] The preceding program is copyrighted by Stanford University.
+- [01:56:38,738 - 01:56:41,458] Please visit us at stanford.edu.
+- [01:56:42,838 - 01:56:43,158] Thank you.
