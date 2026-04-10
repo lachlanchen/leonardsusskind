@@ -1,0 +1,2986 @@
+# Transcript
+
+Source: core/general_relativity/2008_fall_einsteins_general_theory_of_relativity/005 - Einstein's General Theory of Relativity ｜ Lecture 5 [WtPtxz3ef8U].mp4
+
+- [00:00:06,899 - 00:00:09,740] This program is brought to you by Stanford University.
+- [00:00:10,220 - 00:00:12,720] Please visit us at stanford.edu.
+- [00:00:14,840 - 00:00:15,620] All right,
+- [00:00:15,620 - 00:00:16,040] let's,
+- [00:00:16,040 - 00:00:17,740] we want to,
+- [00:00:17,740 - 00:00:20,740] we want to move on to a slippery and
+- [00:00:20,740 - 00:00:22,770] somewhat abstract and frankly
+- [00:00:22,770 - 00:00:24,800] a little bit difficult subject.
+- [00:00:25,499 - 00:00:26,660] The notion,
+- [00:00:26,660 - 00:00:27,160] well,
+- [00:00:27,160 - 00:00:28,100] first of all,
+- [00:00:28,100 - 00:00:29,940] the subject is tensor calculus.
+- [00:00:30,640 - 00:00:32,920] We've done about everything that you
+- [00:00:32,920 - 00:00:35,200] can do with tensor algebra and
+- [00:00:35,200 - 00:00:35,960] tensor arithmetic,
+- [00:00:35,960 - 00:00:37,040] adding,
+- [00:00:37,040 - 00:00:37,860] subtracting.
+- [00:00:37,880 - 00:00:40,380] We haven't talked about adding and subtracting tensors,
+- [00:00:40,380 - 00:00:40,980] but
+- [00:00:40,980 - 00:00:42,520] you can add and subtract tensors.
+- [00:00:42,560 - 00:00:44,180] Just make sure the things
+- [00:00:44,180 - 00:00:45,800] that you're adding have matching indices.
+- [00:00:46,500 - 00:00:50,140] Don't try to add something
+- [00:00:50,140 - 00:00:53,780] like Vn to W sub m.
+- [00:00:54,000 - 00:00:54,780] That will not work.
+- [00:00:54,780 - 00:00:55,700] That will not be a good operation.
+- [00:00:56,000 - 00:00:58,440] If you want to add V and W,
+- [00:00:58,440 - 00:01:02,180] add contravariant components or
+- [00:01:02,180 - 00:01:03,200] covariant components.
+- [00:01:03,860 - 00:01:06,380] Don't try to add a tensor with
+- [00:01:06,380 - 00:01:08,900] two indices to a tensor with three indices.
+- [00:01:09,380 - 00:01:10,620] That won't make sense.
+- [00:01:10,800 - 00:01:11,820] What we have at the end,
+- [00:01:11,820 - 00:01:13,260] a scramble of garbage.
+- [00:01:15,780 - 00:01:18,760] But as long as you're adding things which are compatible,
+- [00:01:18,960 - 00:01:20,860] that they have their indices in the same place,
+- [00:01:20,860 - 00:01:21,800] same type of indices,
+- [00:01:22,120 - 00:01:23,900] then tensors add.
+- [00:01:23,900 - 00:01:26,990] That simply means that the sums
+- [00:01:26,990 - 00:01:30,080] and differences of tensors are again tensors,
+- [00:01:30,080 - 00:01:32,210] meaning to say that they transform
+- [00:01:32,210 - 00:01:34,340] the same way as the originals.
+- [00:01:38,220 - 00:01:38,560] Now,
+- [00:01:38,560 - 00:01:39,780] why do we introduce,
+- [00:01:39,780 - 00:01:40,380] first of all,
+- [00:01:40,380 - 00:01:41,900] why do we introduce tensors?
+- [00:01:41,980 - 00:01:45,790] Let's go back a step
+- [00:01:45,790 - 00:01:49,600] and talk about why they're important.
+- [00:02:01,580 - 00:02:06,249] Are there any differences of color
+- [00:02:06,249 - 00:02:10,919] between a point of the emperor's sinkасс
+- [00:02:10,919 - 00:02:13,100] and a point of the meanderer's sinkass?
+- [00:02:14,280 - 00:02:14,980] Let's start with barbering out
+- [00:02:14,980 - 00:02:15,680] a point that glacier exists in,
+- [00:02:15,680 - 00:02:19,770] and what we can draw from
+- [00:02:19,770 - 00:02:23,860] a point of view of that state
+- [00:02:23,860 - 00:02:25,660] properties of the earth
+- [00:02:25,660 - 00:02:27,460] without actually introducing coordinates,
+- [00:02:27,460 - 00:02:29,660] most likely we
+- [00:02:29,660 - 00:02:32,960] could express all of physics without coordinates,
+- [00:02:32,960 - 00:02:35,400] without introducing
+- [00:02:35,400 - 00:02:36,040] coordinates,
+- [00:02:36,040 - 00:02:38,180] but it would be difficult when
+- [00:02:38,180 - 00:02:40,320] we actually come to compute things.
+- [00:02:41,020 - 00:02:44,080] It's very convenient to be able
+- [00:02:44,080 - 00:02:47,140] to discuss the components of vectors,
+- [00:02:47,440 - 00:02:47,880] tensors,
+- [00:02:47,880 - 00:02:48,520] and so forth.
+- [00:02:48,520 - 00:02:50,240] After all,
+- [00:02:50,240 - 00:02:50,560] I mean,
+- [00:02:50,560 - 00:02:52,240] computation is about numbers,
+- [00:02:52,240 - 00:02:53,500] not
+- [00:02:53,500 - 00:02:54,380] abstract symbols,
+- [00:02:54,380 - 00:02:56,000] and when you come to actually compute,
+- [00:02:56,000 - 00:02:56,880] to throw it onto a
+- [00:02:56,880 - 00:02:57,720] computer or something,
+- [00:02:57,720 - 00:03:00,220] you want to put in numerical values for things,
+- [00:03:00,220 - 00:03:01,700] and the
+- [00:03:01,700 - 00:03:03,630] components of vectors and tensors and so
+- [00:03:03,630 - 00:03:05,560] forth are the way that you describe them
+- [00:03:05,560 - 00:03:06,320] in practice.
+- [00:03:06,320 - 00:03:07,720] Now,
+- [00:03:07,720 - 00:03:12,580] tensors have the very important property—oh,
+- [00:03:12,580 - 00:03:12,840] wow,
+- [00:03:12,840 - 00:03:13,200] all right,
+- [00:03:13,220 - 00:03:14,140] let's start.
+- [00:03:14,140 - 00:03:18,400] The relationships that we're actually interested in are
+- [00:03:18,400 - 00:03:20,120] relationships which,
+- [00:03:20,120 - 00:03:20,740] in a sense,
+- [00:03:20,740 - 00:03:22,780] are independent of the coordinates,
+- [00:03:23,060 - 00:03:23,480] that's the way I see it.
+- [00:03:23,480 - 00:03:24,690] The relationships that we're interested in are the
+- [00:03:24,690 - 00:03:25,900] ones that don't depend on your choice of coordinates.
+- [00:03:27,060 - 00:03:29,220] The fact that the earth is a
+- [00:03:29,220 - 00:03:31,380] sphere doesn't depend on what coordinates you use.
+- [00:03:31,540 - 00:03:34,280] The fact that its curvature is everywhere is the same,
+- [00:03:34,280 - 00:03:34,500] well,
+- [00:03:34,500 - 00:03:34,820] of course,
+- [00:03:34,820 - 00:03:35,580] it's not quite true.
+- [00:03:36,340 - 00:03:37,340] So let's say,
+- [00:03:37,340 - 00:03:37,480] well,
+- [00:03:37,480 - 00:03:37,740] it's true.
+- [00:03:37,740 - 00:03:41,160] The fact that the earth is almost a sphere,
+- [00:03:41,160 - 00:03:42,820] which is slightly flattened,
+- [00:03:42,820 - 00:03:45,260] you don't need coordinates to express that.
+- [00:03:45,260 - 00:03:47,990] The fact that Mount Everest is a
+- [00:03:47,990 - 00:03:50,720] lump on the surface of the earth,
+- [00:03:50,940 - 00:03:51,400] again,
+- [00:03:51,400 - 00:03:53,460] you don't need coordinates to describe that.
+- [00:03:53,460 - 00:03:57,360] Those things are things which are coordinate independent.
+- [00:04:03,840 - 00:04:05,640] But what we want to do
+- [00:04:05,640 - 00:04:07,440] is express those same kinds of facts,
+- [00:04:07,440 - 00:04:08,740] geometric facts,
+- [00:04:08,740 - 00:04:10,560] in terms of coordinates.
+- [00:04:10,940 - 00:04:16,479] That means we want to write equations which perhaps the numerical
+- [00:04:16,479 - 00:04:22,019] left side and the numerical right side do depend on the coordinates,
+- [00:04:22,019 - 00:04:24,829] but the fact that the left side equals
+- [00:04:24,829 - 00:04:27,640] the right side should not depend on coordinates.
+- [00:04:29,999 - 00:04:32,609] So it's important to isolate
+- [00:04:32,609 - 00:04:35,220] quantities that have the following property,
+- [00:04:35,900 - 00:04:39,860] that if their components are equal,
+- [00:04:39,860 - 00:04:43,080] if there's a rule or if there's a fact,
+- [00:04:43,320 - 00:04:46,540] that the components of one tensor,
+- [00:04:46,540 - 00:04:47,200] for example,
+- [00:04:47,200 - 00:04:48,000] or one object,
+- [00:04:48,000 - 00:04:50,060] and this object happens to have indices,
+- [00:04:51,140 - 00:04:53,060] may or may not be a tensor,
+- [00:04:53,060 - 00:04:55,220] may or may not transform the right way,
+- [00:04:55,220 - 00:04:56,980] it has some indices,
+- [00:04:57,859 - 00:04:58,980] in other words,
+- [00:04:58,980 - 00:05:01,720] there are whatever number of such objects there are,
+- [00:05:01,720 - 00:05:04,220] you lay them out in a matrix if you like,
+- [00:05:04,930 - 00:05:07,460] if we know that in one coordinate system,
+- [00:05:07,460 - 00:05:09,440] let's say the x coordinate system,
+- [00:05:10,159 - 00:05:17,920] if we know that two matrices or two,
+- [00:05:17,920 - 00:05:18,440] sorry,
+- [00:05:18,440 - 00:05:20,000] two tensors,
+- [00:05:21,500 - 00:05:27,340] are equal in the x coordinate system,
+- [00:05:27,340 - 00:05:30,320] then it must follow,
+- [00:05:31,860 - 00:05:34,020] or looking for definitions,
+- [00:05:34,020 - 00:05:38,280] so that the equality in one coordinate system
+- [00:05:38,280 - 00:05:42,540] will imply the equality in all other coordinate systems.
+- [00:05:42,820 - 00:05:44,020] In that sense,
+- [00:05:44,020 - 00:05:46,750] if we can write our equations and
+- [00:05:46,750 - 00:05:49,480] our laws of physics in terms of objects,
+- [00:05:50,320 - 00:05:50,920] which,
+- [00:05:50,920 - 00:05:53,220] if they are equal in one coordinate system,
+- [00:05:53,220 - 00:05:57,120] then they are necessarily equal in all coordinate systems,
+- [00:05:57,380 - 00:06:00,140] then effectively we've expressed the laws in
+- [00:06:00,140 - 00:06:02,900] a way which don't depend on the coordinates.
+- [00:06:03,320 - 00:06:05,120] They don't depend on the coordinates,
+- [00:06:05,120 - 00:06:07,480] maybe perhaps the numerical value of the
+- [00:06:07,480 - 00:06:09,840] left hand side and the right hand side
+- [00:06:09,840 - 00:06:11,240] depend on the coordinates,
+- [00:06:11,240 - 00:06:13,040] but the fact that they're equal doesn't.
+- [00:06:13,980 - 00:06:14,580] Alright,
+- [00:06:14,580 - 00:06:16,200] we can write that another way,
+- [00:06:16,200 - 00:06:18,540] we can always take any such equation,
+- [00:06:20,060 - 00:06:22,520] subtract this and write that it's equal to zero.
+- [00:06:24,000 - 00:06:25,120] It's an interesting fact,
+- [00:06:25,120 - 00:06:28,820] the equality sign is completely unnecessary in mathematics.
+- [00:06:29,760 - 00:06:31,140] You could make it a rule,
+- [00:06:31,140 - 00:06:33,680] put everything over on one side,
+- [00:06:33,880 - 00:06:35,480] and whenever you see an expression,
+- [00:06:35,480 - 00:06:36,420] assume that it's zero,
+- [00:06:36,960 - 00:06:38,760] and then you never need the zero sign,
+- [00:06:38,760 - 00:06:40,720] you never need the equality.
+- [00:06:41,280 - 00:06:42,120] This is zero,
+- [00:06:42,120 - 00:06:43,140] because that's our definition,
+- [00:06:43,140 - 00:06:43,960] but we don't do that.
+- [00:06:44,960 - 00:06:48,780] We allow ourselves to use equals at zero.
+- [00:06:50,060 - 00:06:53,020] And so the same statement is,
+- [00:06:53,020 - 00:06:55,740] the same statement that I just made,
+- [00:06:55,880 - 00:06:58,410] is that we would like to express
+- [00:06:58,410 - 00:07:00,940] our equations of physics in a form,
+- [00:07:01,020 - 00:07:03,500] something is equal to zero,
+- [00:07:03,500 - 00:07:05,850] and if that something is equal
+- [00:07:05,850 - 00:07:08,200] to zero in one coordinate system,
+- [00:07:08,860 - 00:07:11,420] then it's zero in every coordinate system.
+- [00:07:11,720 - 00:07:14,740] We would like to find objects which have that property.
+- [00:07:15,640 - 00:07:17,240] Those objects are tensors.
+- [00:07:18,420 - 00:07:19,660] How do I know that?
+- [00:07:20,060 - 00:07:20,460] Well,
+- [00:07:20,460 - 00:07:22,740] let's just remind ourselves how tensors transform.
+- [00:07:23,780 - 00:07:24,800] A tensor,
+- [00:07:24,800 - 00:07:25,520] for example,
+- [00:07:25,520 - 00:07:26,100] a vector,
+- [00:07:26,100 - 00:07:28,320] let's just take the simplest case,
+- [00:07:28,320 - 00:07:28,780] a vector,
+- [00:07:30,520 - 00:07:32,100] vn of y,
+- [00:07:32,100 - 00:07:33,260] in other words,
+- [00:07:33,260 - 00:07:36,840] the components of a vector in the y coordinate system,
+- [00:07:37,060 - 00:07:40,600] are equal to the components of y,
+- [00:07:40,600 - 00:07:42,300] sorry,
+- [00:07:42,300 - 00:07:43,400] of v,
+- [00:07:43,400 - 00:07:46,760] the same vector in the x coordinate system,
+- [00:07:46,760 - 00:07:48,820] we can put an r here,
+- [00:07:48,820 - 00:07:51,200] and then there is a,
+- [00:07:51,200 - 00:07:52,040] let's see,
+- [00:07:52,040 - 00:07:53,040] which way does it go?
+- [00:07:53,460 - 00:07:54,640] n is downstairs,
+- [00:07:54,640 - 00:07:59,520] so there's a dyn dxr.
+- [00:08:00,560 - 00:08:01,000] Whoops,
+- [00:08:01,000 - 00:08:01,620] put the,
+- [00:08:01,620 - 00:08:04,280] nr.
+- [00:08:07,220 - 00:08:07,660] Alright,
+- [00:08:07,660 - 00:08:08,760] so now it's quite easy.
+- [00:08:10,340 - 00:08:12,080] If all of the components,
+- [00:08:12,080 - 00:08:13,400] not just one of the components,
+- [00:08:13,400 - 00:08:15,380] but if all of the components
+- [00:08:15,380 - 00:08:17,360] of vx are equal to zero,
+- [00:08:18,000 - 00:08:19,460] then all of the components
+- [00:08:19,460 - 00:08:20,920] of vy are equal to zero,
+- [00:08:20,920 - 00:08:21,620] obviously,
+- [00:08:22,360 - 00:08:24,420] just from this equation here.
+- [00:08:24,800 - 00:08:26,030] If all of the components
+- [00:08:26,030 - 00:08:27,260] of v are equal to zero,
+- [00:08:27,400 - 00:08:27,820] in other words,
+- [00:08:27,820 - 00:08:30,340] if v is a vector which is equal to zero,
+- [00:08:30,860 - 00:08:32,620] then its components are zero,
+- [00:08:32,620 - 00:08:35,640] either in the y coordinates or the x coordinates.
+- [00:08:36,120 - 00:08:38,880] So with transformation properties like this,
+- [00:08:40,260 - 00:08:43,380] or more complicated ones involving several inputs,
+- [00:08:43,400 - 00:08:43,740] we can put some indices,
+- [00:08:43,740 - 00:08:44,380] for example,
+- [00:08:44,380 - 00:08:45,860] if we have some tensor,
+- [00:08:47,720 - 00:08:49,440] let's put one index upstairs,
+- [00:08:49,440 - 00:08:51,040] another index downstairs,
+- [00:08:52,000 - 00:08:53,620] in the y coordinates,
+- [00:08:53,620 - 00:08:55,640] that would be equal to
+- [00:08:58,360 - 00:09:01,340] dym by dxr,
+- [00:09:07,280 - 00:09:09,640] dxs by dyn,
+- [00:09:09,640 - 00:09:14,380] times trs.
+- [00:09:15,680 - 00:09:16,240] Alright,
+- [00:09:16,240 - 00:09:16,600] again,
+- [00:09:16,600 - 00:09:17,700] if all of,
+- [00:09:17,700 - 00:09:19,040] in the x coordinates,
+- [00:09:20,280 - 00:09:22,370] if all of the components of
+- [00:09:22,370 - 00:09:24,460] t are zero in the x coordinates,
+- [00:09:24,560 - 00:09:27,800] then all of them are zero in the y coordinates.
+- [00:09:28,680 - 00:09:30,780] That's the importance of tensors,
+- [00:09:31,800 - 00:09:33,990] that if you have an equation which
+- [00:09:33,990 - 00:09:36,180] is true in one set of coordinates,
+- [00:09:36,480 - 00:09:39,240] and you know that the objects are tensors,
+- [00:09:39,240 - 00:09:41,420] you don't have to check them in other coordinate systems.
+- [00:09:42,060 - 00:09:43,270] Now we're going to discover
+- [00:09:43,270 - 00:09:44,480] that not everything is a tensor.
+- [00:09:44,780 - 00:09:45,820] In particular,
+- [00:09:45,820 - 00:09:52,120] ordinary derivatives of tensors are not tensors.
+- [00:09:52,240 - 00:09:55,200] Not everything that you can write down is a tensor.
+- [00:09:58,860 - 00:09:59,980] But still,
+- [00:09:59,980 - 00:10:02,760] we want to define some sort of notion
+- [00:10:02,760 - 00:10:06,220] of the way a tensor varies from place to place.
+- [00:10:06,880 - 00:10:08,950] It's going to be important to have an
+- [00:10:08,950 - 00:10:11,020] idea of how things vary from place to place,
+- [00:10:11,240 - 00:10:13,730] so we have to have some concept of
+- [00:10:13,730 - 00:10:16,220] the notion of a derivative of a tensor.
+- [00:10:16,920 - 00:10:21,800] Let's go through why it's problematic.
+- [00:10:23,060 - 00:10:23,620] Okay?
+- [00:10:25,980 - 00:10:27,100] Let's start with scalars.
+- [00:10:37,340 - 00:10:37,980] Incidentally,
+- [00:10:37,980 - 00:10:40,400] the transformation property of a scalar is trivial.
+- [00:10:41,120 - 00:10:44,600] If the scalar is phi,
+- [00:10:45,900 - 00:10:47,840] we call it the typical scalar phi,
+- [00:10:50,040 - 00:10:52,840] if its value at a certain point
+- [00:10:52,840 - 00:10:55,640] in space is phi in the x coordinates,
+- [00:10:55,940 - 00:10:59,360] then it's also phi in the y coordinates.
+- [00:11:00,080 - 00:11:02,680] If the points x and y correspond
+- [00:11:02,680 - 00:11:05,280] to the same actual material point here,
+- [00:11:05,280 - 00:11:06,200] on the blackboard,
+- [00:11:06,380 - 00:11:11,180] just different coordinate representations of the same point.
+- [00:11:11,900 - 00:11:14,900] So phi transforms in a trivial way.
+- [00:11:15,080 - 00:11:16,280] It doesn't transform at all.
+- [00:11:17,979 - 00:11:18,560] Obviously,
+- [00:11:18,560 - 00:11:20,600] if you know that phi is
+- [00:11:20,600 - 00:11:22,640] equal to zero in one reference frame,
+- [00:11:22,900 - 00:11:25,420] you know that it's zero in all reference frames,
+- [00:11:26,130 - 00:11:29,500] simply because it's the same in all reference frames.
+- [00:11:29,860 - 00:11:32,880] Now let's come to the derivative of phi.
+- [00:11:35,280 - 00:11:36,820] With respect to x.
+- [00:11:37,600 - 00:11:41,560] The derivative of phi with respect to xm,
+- [00:11:41,560 - 00:11:42,220] let's say.
+- [00:11:44,600 - 00:11:47,220] That is in fact a vector.
+- [00:11:47,360 - 00:11:50,540] It's a vector with a covariant index here.
+- [00:11:52,040 - 00:11:52,980] But let's just see,
+- [00:11:52,980 - 00:11:54,000] why is it true,
+- [00:11:56,120 - 00:11:57,920] mathematically it's straightforward,
+- [00:12:00,380 - 00:12:02,400] the fact that if d phi
+- [00:12:02,400 - 00:12:04,420] by dx is equal to zero,
+- [00:12:04,620 - 00:12:05,260] then d phi by dx is equal to zero,
+- [00:12:07,460 - 00:12:09,700] mathematically it's just that d phi by dy,
+- [00:12:11,040 - 00:12:12,480] let's call it yn,
+- [00:12:14,280 - 00:12:19,420] is equal to dxm by d yn,
+- [00:12:20,380 - 00:12:21,460] times phi,
+- [00:12:23,160 - 00:12:25,820] times the derivative of phi with respect to xm.
+- [00:12:29,580 - 00:12:31,820] So if phi is constant,
+- [00:12:31,940 - 00:12:34,400] and has no derivatives with respect to x,
+- [00:12:34,400 - 00:12:37,720] clearly its derivatives with respect to y are also zero.
+- [00:12:38,040 - 00:12:39,770] But let's just think about it
+- [00:12:39,770 - 00:12:41,500] from an intuitive point of view.
+- [00:12:41,820 - 00:12:44,340] To say that phi has no derivatives,
+- [00:12:44,640 - 00:12:45,660] in particular,
+- [00:12:45,660 - 00:12:47,780] let's imagine it has no derivatives anywheres,
+- [00:12:48,400 - 00:12:49,200] what does that mean?
+- [00:12:49,460 - 00:12:50,660] That means it's constant,
+- [00:12:50,660 - 00:12:52,780] and it doesn't vary from place to place.
+- [00:12:53,420 - 00:12:54,340] It's a scalar,
+- [00:12:54,340 - 00:12:55,560] you could go and measure
+- [00:12:55,560 - 00:12:56,780] it in every point in space,
+- [00:12:57,760 - 00:12:58,860] and it's constant.
+- [00:12:59,040 - 00:13:00,450] Like the temperature being the
+- [00:13:00,450 - 00:13:01,860] same everywhere in the room here.
+- [00:13:03,680 - 00:13:06,220] If a thing is constant,
+- [00:13:06,920 - 00:13:08,600] it's going to be constant
+- [00:13:08,600 - 00:13:10,280] no matter what the coordinates are.
+- [00:13:10,580 - 00:13:12,760] I don't care whether I use polar coordinates,
+- [00:13:12,920 - 00:13:14,120] I use elliptical,
+- [00:13:14,120 - 00:13:14,820] hyperbolic,
+- [00:13:14,820 - 00:13:15,860] Shmulevitz coordinates,
+- [00:13:16,200 - 00:13:16,700] it doesn't matter.
+- [00:13:17,060 - 00:13:18,580] Whatever coordinates I use,
+- [00:13:18,660 - 00:13:20,880] if the temperature is constant in this room,
+- [00:13:21,020 - 00:13:23,280] it's going to be constant in every set of coordinates.
+- [00:13:24,660 - 00:13:25,180] So,
+- [00:13:25,180 - 00:13:27,680] it stands to reason that if the
+- [00:13:27,680 - 00:13:30,180] derivative of phi is equal to zero,
+- [00:13:30,860 - 00:13:32,260] everywheres in space,
+- [00:13:33,120 - 00:13:34,320] with respect to x,
+- [00:13:34,600 - 00:13:35,770] then it's also going to
+- [00:13:35,770 - 00:13:36,940] be zero with respect to y.
+- [00:13:37,700 - 00:13:38,180] So,
+- [00:13:38,180 - 00:13:42,250] a perfectly good description of the
+- [00:13:42,250 - 00:13:46,320] air in this room in thermal equilibrium
+- [00:13:47,040 - 00:13:48,780] is that the temperature with respect,
+- [00:13:48,920 - 00:13:50,900] the derivative of the temperature with respect
+- [00:13:50,900 - 00:13:52,880] to the x coordinates is equal to zero,
+- [00:13:53,060 - 00:13:54,660] and you don't have to ask,
+- [00:13:54,660 - 00:13:56,720] will it also be zero in the y coordinates,
+- [00:13:57,939 - 00:13:59,580] for the reasons I've just explained.
+- [00:14:00,180 - 00:14:01,700] Now let's come to vectors.
+- [00:14:01,920 - 00:14:03,800] We're going to see that the problem is more complicated.
+- [00:14:05,840 - 00:14:08,760] Let's begin with a vector,
+- [00:14:09,740 - 00:14:12,400] which is constant on the blackboard in space.
+- [00:14:12,940 - 00:14:13,740] Flat space,
+- [00:14:13,740 - 00:14:15,600] good old Cartesian coordinates.
+- [00:14:18,640 - 00:14:21,100] Let's not get fancy with curved space or anything,
+- [00:14:21,280 - 00:14:22,560] just ordinary flat space.
+- [00:14:24,180 - 00:14:25,340] Could be two dimensional,
+- [00:14:25,340 - 00:14:26,380] could be three dimensional,
+- [00:14:26,620 - 00:14:28,200] but let's take the blackboard,
+- [00:14:28,200 - 00:14:29,020] which is two dimensional.
+- [00:14:31,360 - 00:14:33,740] Let's put some Cartesian coordinates,
+- [00:14:35,500 - 00:14:38,480] and let's also imagine a vector field,
+- [00:14:39,960 - 00:14:41,560] which is constant in space.
+- [00:14:42,100 - 00:14:44,020] Now what that means is it
+- [00:14:44,020 - 00:14:45,940] points in the same direction everywheres,
+- [00:14:45,960 - 00:14:47,860] and it has the same length everywheres.
+- [00:14:49,500 - 00:14:53,460] Just the obvious meaning of saying a vector is constant.
+- [00:14:53,820 - 00:14:55,180] So every place in space,
+- [00:14:55,180 - 00:14:57,040] that vector is exactly the same.
+- [00:15:06,320 - 00:15:06,960] Now,
+- [00:15:06,960 - 00:15:10,960] what can you say about the components of this vector
+- [00:15:10,960 - 00:15:13,060] as you move from point to point?
+- [00:15:13,880 - 00:15:15,400] In the same coordinates,
+- [00:15:15,400 - 00:15:16,840] in these same coordinates,
+- [00:15:17,020 - 00:15:19,740] x1 and x2.
+- [00:15:21,220 - 00:15:22,320] For example,
+- [00:15:22,320 - 00:15:25,280] let's take the covariant components.
+- [00:15:26,200 - 00:15:29,180] Covariant components being the projections onto the axes.
+- [00:15:30,180 - 00:15:34,840] It's pretty obvious that the components are also constant.
+- [00:15:35,380 - 00:15:37,580] So to say that a vector is constant,
+- [00:15:37,780 - 00:15:41,420] it looks like what it says
+- [00:15:41,420 - 00:15:45,060] is that the components of the vector,
+- [00:15:47,440 - 00:15:48,400] what did I say,
+- [00:15:48,400 - 00:15:50,260] a covariant vector or a contra,
+- [00:15:50,360 - 00:15:52,000] let's say a contravariant,
+- [00:15:52,000 - 00:15:53,660] covariant components.
+- [00:16:00,200 - 00:16:02,460] And vary it in any direction.
+- [00:16:02,720 - 00:16:04,440] If the vector is constant,
+- [00:16:04,740 - 00:16:07,300] it looks like it says that the components are constant.
+- [00:16:07,600 - 00:16:08,440] But now,
+- [00:16:08,440 - 00:16:13,040] let's come and introduce some curved coordinates into space.
+- [00:16:13,940 - 00:16:15,640] Same physical fact,
+- [00:16:15,980 - 00:16:19,020] the vector points in the same direction everywheres,
+- [00:16:19,140 - 00:16:20,460] but now let's,
+- [00:16:20,460 - 00:16:21,440] let me redraw it,
+- [00:16:21,460 - 00:16:24,180] I think I'll redraw it with some curvy linear coordinates,
+- [00:16:24,240 - 00:16:25,900] exactly the same situation.
+- [00:16:26,939 - 00:16:28,500] So the situation now is,
+- [00:16:28,600 - 00:16:30,080] we have some curvy linear coordinates,
+- [00:16:37,540 - 00:16:40,360] and we have a constant vector,
+- [00:16:41,060 - 00:16:42,970] that means physically the vector
+- [00:16:42,970 - 00:16:44,880] points in the same direction everywheres.
+- [00:16:47,540 - 00:16:51,020] What about the covariant components of the vector
+- [00:16:51,020 - 00:16:53,040] as I move from place to place?
+- [00:16:53,840 - 00:16:55,080] You think they're constant?
+- [00:16:57,840 - 00:17:00,180] Remember what the covariant components are.
+- [00:17:00,500 - 00:17:05,119] They're the projection onto the axes,
+- [00:17:06,300 - 00:17:10,500] but the axes are bending and moving around on you.
+- [00:17:11,720 - 00:17:13,200] In one place,
+- [00:17:13,200 - 00:17:16,180] the axes might look like that,
+- [00:17:16,240 - 00:17:18,040] someplace else they might look like this.
+- [00:17:19,079 - 00:17:24,579] The same vector will have the same vector,
+- [00:17:24,599 - 00:17:24,619] and the same vector will have the same vector,
+- [00:17:24,619 - 00:17:25,060] and the same vector will have the same vector,
+- [00:17:25,060 - 00:17:27,780] this might be your x1 component,
+- [00:17:28,040 - 00:17:29,680] this might be your x2 component,
+- [00:17:30,200 - 00:17:32,540] now this might be your x1 component,
+- [00:17:32,580 - 00:17:34,460] and this might be your x2 component,
+- [00:17:35,000 - 00:17:37,200] pointing in entirely different directions,
+- [00:17:38,200 - 00:17:39,520] the same vector,
+- [00:17:40,520 - 00:17:41,760] exactly the same vector,
+- [00:17:41,800 - 00:17:43,420] pointing in exactly the same direction,
+- [00:17:43,580 - 00:17:45,380] I don't think I made that look the same direction,
+- [00:17:45,380 - 00:17:45,700] did I?
+- [00:17:52,879 - 00:17:54,780] The components will be different,
+- [00:17:54,780 - 00:17:58,080] the lesson is that just
+- [00:17:58,080 - 00:18:01,380] because a vector is physically constant
+- [00:18:01,380 - 00:18:02,840] from point to point in space,
+- [00:18:03,480 - 00:18:05,800] it does not mean that
+- [00:18:05,800 - 00:18:08,120] its components are constant in space.
+- [00:18:08,440 - 00:18:08,960] Why not?
+- [00:18:09,980 - 00:18:12,820] The components of a vector depend on two things,
+- [00:18:13,140 - 00:18:16,660] they depend on the direction and magnitude of the vector,
+- [00:18:16,840 - 00:18:19,180] and also the orientation of the axes.
+- [00:18:19,600 - 00:18:21,550] Even if the vector doesn't change
+- [00:18:21,550 - 00:18:23,500] when you move from place to place,
+- [00:18:23,500 - 00:18:26,640] the axes do.
+- [00:18:27,959 - 00:18:28,639] So,
+- [00:18:28,639 - 00:18:29,320] yeah?
+- [00:18:30,240 - 00:18:35,160] To say the vector is pointing in the same direction,
+- [00:18:35,320 - 00:18:37,080] and has the same magnitude,
+- [00:18:37,260 - 00:18:45,100] implies a third coordinate system that is transposable,
+- [00:18:45,200 - 00:18:46,460] it applies to both of them,
+- [00:18:46,460 - 00:18:46,580] right?
+- [00:18:47,180 - 00:18:48,300] I don't know what that means.
+- [00:18:49,180 - 00:18:50,440] Two coordinate systems,
+- [00:18:50,740 - 00:18:52,420] in this particular case,
+- [00:18:52,420 - 00:18:53,960] one of them is good
+- [00:18:53,960 - 00:18:55,500] old Cartesian coordinates on the blackboard,
+- [00:18:56,960 - 00:18:58,020] and we imagine,
+- [00:18:58,020 - 00:18:58,520] you know,
+- [00:18:58,520 - 00:19:02,180] there's just good old intuitive Cartesian coordinates,
+- [00:19:02,220 - 00:19:04,180] and the vector is constant,
+- [00:19:04,300 - 00:19:06,080] which means in Cartesian coordinates,
+- [00:19:06,200 - 00:19:07,820] it means the components are constant.
+- [00:19:08,360 - 00:19:13,040] The same situation when we lay some curvy linear coordinates
+- [00:19:14,340 - 00:19:15,460] on the blackboard,
+- [00:19:15,560 - 00:19:16,300] or incidentally,
+- [00:19:16,300 - 00:19:18,260] we could change from one
+- [00:19:18,260 - 00:19:20,220] Cartesian coordinate system to another.
+- [00:19:20,220 - 00:19:23,740] We could rotate or translate the Cartesian components,
+- [00:19:24,160 - 00:19:27,260] as long as the coordinates are Cartesian,
+- [00:19:27,520 - 00:19:29,620] then the components of the
+- [00:19:29,620 - 00:19:31,720] vector will be the same everywhere.
+- [00:19:31,980 - 00:19:34,580] But now we lay on top
+- [00:19:34,580 - 00:19:37,180] of it a curved coordinate system,
+- [00:19:37,540 - 00:19:40,800] where the direction and spacing,
+- [00:19:40,800 - 00:19:41,580] for example,
+- [00:19:41,660 - 00:19:44,120] between the coordinates varies from place to place,
+- [00:19:44,340 - 00:19:47,020] and now the components will not be constant.
+- [00:19:47,380 - 00:19:48,480] As I said,
+- [00:19:48,480 - 00:19:51,420] it's because the components depend both on the vector
+- [00:19:51,420 - 00:19:53,960] and the orientation of the coordinates.
+- [00:19:54,240 - 00:19:57,200] If the coordinates are flopping around as you move around,
+- [00:19:57,560 - 00:19:59,620] the components will also be.
+- [00:20:00,660 - 00:20:01,380] So,
+- [00:20:03,620 - 00:20:06,340] dv by dx equals zero
+- [00:20:06,340 - 00:20:08,240] does not imply,
+- [00:20:10,500 - 00:20:12,460] does not imply
+- [00:20:13,220 - 00:20:14,100] that dv
+- [00:20:15,200 - 00:20:16,760] in the x coordinate system,
+- [00:20:16,760 - 00:20:17,660] the coordinate,
+- [00:20:17,780 - 00:20:20,120] the components in the x coordinate system,
+- [00:20:20,740 - 00:20:23,520] relative to the x axes,
+- [00:20:25,760 - 00:20:27,220] them being constant,
+- [00:20:27,360 - 00:20:29,560] which is the same as saying the derivatives are zero,
+- [00:20:29,820 - 00:20:31,900] does not say that
+- [00:20:32,620 - 00:20:35,720] dv m in the y coordinates,
+- [00:20:36,860 - 00:20:38,740] this means the components,
+- [00:20:38,760 - 00:20:40,200] not only are they functions of y,
+- [00:20:40,320 - 00:20:42,860] but they're the components in the y,
+- [00:20:43,000 - 00:20:44,520] along the y axes,
+- [00:20:44,680 - 00:20:46,500] it does not say
+- [00:20:49,360 - 00:20:50,620] that these are zero.
+- [00:20:52,200 - 00:20:53,500] No such implication.
+- [00:20:55,720 - 00:20:56,980] What does that tell us?
+- [00:20:58,900 - 00:21:00,340] That tells us
+- [00:21:00,940 - 00:21:03,160] that the derivatives of v
+- [00:21:03,160 - 00:21:04,720] with respect to x,
+- [00:21:04,920 - 00:21:06,000] or with respect to y,
+- [00:21:06,780 - 00:21:08,540] don't transform as a tensor.
+- [00:21:09,100 - 00:21:10,120] If they did,
+- [00:21:11,080 - 00:21:14,160] then if they were zero in one frame,
+- [00:21:14,380 - 00:21:16,740] it would imply they were zero in the other frame.
+- [00:21:16,760 - 00:21:19,000] Frame means a set of coordinates here.
+- [00:21:19,260 - 00:21:21,220] So derivatives of tensors,
+- [00:21:21,360 - 00:21:23,180] derivatives of scalars
+- [00:21:23,180 - 00:21:24,560] are perfectly good vectors,
+- [00:21:24,840 - 00:21:26,360] but derivatives of vectors,
+- [00:21:26,680 - 00:21:27,700] meaning to say,
+- [00:21:27,840 - 00:21:30,280] the derivative of the components,
+- [00:21:30,620 - 00:21:32,320] they don't transform
+- [00:21:32,320 - 00:21:34,140] as the components of tensors.
+- [00:21:34,820 - 00:21:36,140] That's a general rule,
+- [00:21:37,800 - 00:21:39,580] and you have to do something,
+- [00:21:41,159 - 00:21:43,060] you have to do something a little trickier,
+- [00:21:43,120 - 00:21:44,320] and a little more complicated,
+- [00:21:44,580 - 00:21:46,740] to define derivatives of tensors.
+- [00:21:46,760 - 00:21:48,440] To make them tensors.
+- [00:21:48,720 - 00:21:51,880] The process is called covariant differentiation.
+- [00:21:52,600 - 00:21:54,420] Now the covariant is not because
+- [00:21:54,420 - 00:21:56,340] it has to do with a lower index here,
+- [00:21:56,380 - 00:21:58,260] it's another completely different use
+- [00:21:58,260 - 00:21:59,540] of the term covariant.
+- [00:22:03,820 - 00:22:04,740] What it means,
+- [00:22:04,900 - 00:22:05,500] what it implies,
+- [00:22:06,040 - 00:22:08,300] is it's a form of differentiation,
+- [00:22:09,140 - 00:22:10,980] which you can apply to tensors,
+- [00:22:10,980 - 00:22:12,480] which gives you back tensors.
+- [00:22:12,680 - 00:22:13,640] In particular,
+- [00:22:13,640 - 00:22:14,800] you can apply it to vectors
+- [00:22:14,800 - 00:22:15,840] and get back vectors.
+- [00:22:16,760 - 00:22:19,340] So let's see if we can figure out
+- [00:22:19,900 - 00:22:21,260] what kind of thing
+- [00:22:21,260 - 00:22:23,360] the covariant derivative might be.
+- [00:22:23,640 - 00:22:25,280] Let's start with a thing
+- [00:22:25,280 - 00:22:26,740] which is not actually a tensor,
+- [00:22:27,000 - 00:22:29,260] but let's check whether it's a tensor or not.
+- [00:22:29,420 - 00:22:29,700] In other words,
+- [00:22:29,700 - 00:22:31,220] let's sort of assume it's a tensor
+- [00:22:31,220 - 00:22:32,720] and then prove that it's not.
+- [00:22:33,480 - 00:22:33,960] Alright,
+- [00:22:33,960 - 00:22:34,880] exactly this object.
+- [00:22:35,580 - 00:22:37,360] Let's write Tmn.
+- [00:22:39,300 - 00:22:40,120] In fact,
+- [00:22:40,120 - 00:22:40,840] I'll tell you what,
+- [00:22:41,440 - 00:22:43,740] this is intended to be a tensor,
+- [00:22:43,920 - 00:22:45,860] but this is intended to be a tensor
+- [00:22:45,860 - 00:22:47,900] in the x coordinate frame.
+- [00:22:48,720 - 00:22:50,900] Supposing there exists some tensor
+- [00:22:51,560 - 00:22:53,200] whose x components,
+- [00:22:53,639 - 00:22:55,400] components in the x coordinates,
+- [00:22:55,600 - 00:22:57,080] and x coordinates I now mean,
+- [00:22:57,860 - 00:22:58,720] again,
+- [00:22:58,720 - 00:23:01,680] rectangular Cartesian coordinates.
+- [00:23:02,580 - 00:23:04,760] Let's suppose that there is some tensor,
+- [00:23:05,540 - 00:23:07,680] Tmn of x,
+- [00:23:08,540 - 00:23:12,300] which is equal to the derivative
+- [00:23:12,300 - 00:23:13,420] of some vector
+- [00:23:13,420 - 00:23:15,740] with respect to x
+- [00:23:17,740 - 00:23:19,780] in the x coordinate system.
+- [00:23:20,160 - 00:23:21,460] Then the question is,
+- [00:23:21,540 - 00:23:22,980] what must it be
+- [00:23:22,980 - 00:23:25,280] in the y coordinate system?
+- [00:23:25,600 - 00:23:26,720] And in particular,
+- [00:23:26,780 - 00:23:28,720] when you transform it as a tensor,
+- [00:23:28,980 - 00:23:31,460] does it or does it not become
+- [00:23:33,540 - 00:23:34,660] the derivative,
+- [00:23:34,780 - 00:23:35,940] this is in the x coordinate,
+- [00:23:36,560 - 00:23:38,680] does it or does it not become
+- [00:23:39,320 - 00:23:39,600] the,
+- [00:23:39,600 - 00:23:41,600] let's call it,
+- [00:23:41,600 - 00:23:41,800] um,
+- [00:23:45,459 - 00:23:45,860] well,
+- [00:23:46,479 - 00:23:47,920] derivative of v with,
+- [00:23:48,000 - 00:23:50,200] of y with respect to yn.
+- [00:23:51,620 - 00:23:52,020] Question.
+- [00:23:53,700 - 00:23:54,460] And the answer,
+- [00:23:54,460 - 00:23:55,180] as you might guess,
+- [00:23:55,220 - 00:23:56,020] is the answer is no.
+- [00:23:56,580 - 00:23:56,980] The,
+- [00:23:56,980 - 00:23:59,420] if I try to transform this object,
+- [00:23:59,520 - 00:24:00,780] pretending it was a tensor,
+- [00:24:01,320 - 00:24:03,860] I will not get the set of components
+- [00:24:03,860 - 00:24:04,620] that look like that.
+- [00:24:04,740 - 00:24:05,560] So let's go through it.
+- [00:24:06,120 - 00:24:06,520] It,
+- [00:24:06,520 - 00:24:06,720] uh,
+- [00:24:06,720 - 00:24:08,480] it's worth our while to do it.
+- [00:24:08,820 - 00:24:10,660] I could just tell you what the answer is,
+- [00:24:10,740 - 00:24:11,440] but let's not do it.
+- [00:24:11,500 - 00:24:11,960] Let's do it,
+- [00:24:11,960 - 00:24:12,100] uh,
+- [00:24:12,100 - 00:24:13,060] with some care.
+- [00:24:14,480 - 00:24:15,120] Okay.
+- [00:24:17,100 - 00:24:19,040] We have an object which
+- [00:24:19,840 - 00:24:21,760] I tell you is a tensor,
+- [00:24:21,920 - 00:24:25,520] and it happens that in the x coordinate system,
+- [00:24:26,419 - 00:24:29,600] its components are the derivative of x,
+- [00:24:29,600 - 00:24:31,800] of v with respect to xn.
+- [00:24:32,000 - 00:24:32,660] It happens.
+- [00:24:33,160 - 00:24:34,000] Let's ask,
+- [00:24:34,000 - 00:24:35,540] what must its components be
+- [00:24:38,659 - 00:24:41,040] in the y coordinate system?
+- [00:24:41,040 - 00:24:42,100] Well,
+- [00:24:42,100 - 00:24:43,860] if it really is a tensor,
+- [00:24:44,700 - 00:24:47,460] then its components must be
+- [00:24:49,740 - 00:24:51,680] dxr by dym.
+- [00:24:52,760 - 00:24:54,550] This is under the assumption that
+- [00:24:54,550 - 00:24:56,340] it really does transform as a tensor.
+- [00:24:57,400 - 00:24:58,880] In the y coordinates,
+- [00:24:58,880 - 00:24:59,860] it must be,
+- [00:25:09,380 - 00:25:10,500] that's the assumption,
+- [00:25:10,500 - 00:25:13,020] that tmn is a tensor.
+- [00:25:13,460 - 00:25:15,300] And if you know it in the x coordinates,
+- [00:25:15,540 - 00:25:16,750] then you can write it
+- [00:25:16,750 - 00:25:17,960] down immediately in the y coordinates.
+- [00:25:18,520 - 00:25:20,270] But now we can substitute what
+- [00:25:20,270 - 00:25:22,020] it is in the x coordinates here,
+- [00:25:22,220 - 00:25:23,660] and that would just give us
+- [00:25:24,260 - 00:25:27,760] the derivative of xr with respect to ym,
+- [00:25:29,480 - 00:25:32,700] derivative of xs with respect to yn,
+- [00:25:33,740 - 00:25:35,460] and now I'm just going to plug in
+- [00:25:36,280 - 00:25:39,480] the assumed value of tmn of x,
+- [00:25:39,480 - 00:25:45,180] and that's dvm of x
+- [00:25:45,180 - 00:25:47,440] with respect to,
+- [00:25:48,480 - 00:25:49,300] oh,
+- [00:25:49,300 - 00:25:50,100] I want trs,
+- [00:25:50,100 - 00:25:50,700] excuse me,
+- [00:25:50,720 - 00:25:51,720] I want trs,
+- [00:25:52,000 - 00:26:02,220] so that's dvr by dxs.
+- [00:26:05,340 - 00:26:07,400] And my question is,
+- [00:26:07,620 - 00:26:08,580] is this,
+- [00:26:08,580 - 00:26:10,540] or is this not equal to,
+- [00:26:10,660 - 00:26:11,780] question mark,
+- [00:26:11,880 - 00:26:14,060] is this or is this not equal to
+- [00:26:17,560 - 00:26:18,880] the derivative
+- [00:26:19,939 - 00:26:20,600] of
+- [00:26:24,120 - 00:26:24,780] dvm,
+- [00:26:24,780 - 00:26:25,660] I think,
+- [00:26:25,820 - 00:26:26,600] let's see,
+- [00:26:26,600 - 00:26:28,560] dvm of y
+- [00:26:29,360 - 00:26:31,160] with respect to yn.
+- [00:26:33,440 - 00:26:36,080] The symbol equals with a question mark
+- [00:26:36,080 - 00:26:37,160] doesn't mean it's equals,
+- [00:26:37,160 - 00:26:37,780] it means,
+- [00:26:37,780 - 00:26:38,860] is it equal?
+- [00:26:39,540 - 00:26:40,600] Not it is equal,
+- [00:26:40,600 - 00:26:41,660] but is it equal?
+- [00:26:42,380 - 00:26:43,760] Is this true?
+- [00:26:44,360 - 00:26:46,780] This is how we might have thought,
+- [00:26:47,640 - 00:26:51,600] just like derivatives of scalars transform as vectors,
+- [00:26:51,940 - 00:26:53,780] we might have thought the
+- [00:26:53,780 - 00:26:55,620] derivatives of components of vectors
+- [00:26:55,620 - 00:26:57,540] transform as tensors.
+- [00:26:57,920 - 00:26:59,160] So we're checking out,
+- [00:26:59,200 - 00:27:02,700] is this object over here equal to this?
+- [00:27:03,580 - 00:27:04,260] Okay,
+- [00:27:04,260 - 00:27:06,440] so let's see if we can work it out.
+- [00:27:08,300 - 00:27:08,780] Not,
+- [00:27:08,780 - 00:27:11,540] it's not terribly hard.
+- [00:27:14,520 - 00:27:15,000] Okay,
+- [00:27:15,000 - 00:27:15,680] let's see.
+- [00:27:18,460 - 00:27:19,840] What can we do with this?
+- [00:27:20,700 - 00:27:24,580] dvr of x by dxs times dxs by dyn,
+- [00:27:24,580 - 00:27:25,600] does that ring a bell?
+- [00:27:30,820 - 00:27:32,640] Focus on this piece right over here.
+- [00:27:40,879 - 00:27:41,640] That's chain rule.
+- [00:27:41,800 - 00:27:42,000] Yeah,
+- [00:27:42,000 - 00:27:42,880] that's the chain rule.
+- [00:27:43,220 - 00:27:44,920] So what's in the red box there,
+- [00:27:44,980 - 00:27:46,800] let's put what's in the red box over here,
+- [00:27:47,480 - 00:27:48,400] it's first of all,
+- [00:27:48,400 - 00:27:49,540] well not just what's in the red box,
+- [00:27:49,680 - 00:27:50,320] but the whole thing,
+- [00:27:51,159 - 00:27:51,960] it's dxr
+- [00:27:56,600 - 00:27:57,400] by dym,
+- [00:28:00,139 - 00:28:01,860] and now if I use a chain rule,
+- [00:28:01,860 - 00:28:02,900] I simplify this,
+- [00:28:03,320 - 00:28:06,080] and I just find it's the derivative of vr
+- [00:28:09,900 - 00:28:10,920] of x,
+- [00:28:12,280 - 00:28:14,200] but not with respect to x,
+- [00:28:14,400 - 00:28:15,640] but with respect to y,
+- [00:28:16,940 - 00:28:18,300] with respect to yn.
+- [00:28:22,660 - 00:28:23,700] And we're asking,
+- [00:28:23,700 - 00:28:25,560] is this the same as this?
+- [00:28:27,100 - 00:28:27,620] No,
+- [00:28:27,620 - 00:28:27,780] no,
+- [00:28:27,780 - 00:28:27,980] no,
+- [00:28:27,980 - 00:28:28,200] no,
+- [00:28:28,200 - 00:28:28,360] no.
+- [00:28:28,780 - 00:28:29,900] Is that what I'm asking?
+- [00:28:37,500 - 00:28:38,320] I guess that's what I'm asking.
+- [00:28:44,200 - 00:28:45,660] dvm by dyn,
+- [00:28:45,660 - 00:28:46,680] yes.
+- [00:28:46,920 - 00:28:47,440] Okay.
+- [00:28:48,360 - 00:28:48,880] Ah,
+- [00:28:48,880 - 00:28:49,240] yes.
+- [00:28:50,040 - 00:28:52,080] Now notice on the right side,
+- [00:28:52,220 - 00:28:53,700] we're checking is this equal to this?
+- [00:28:56,500 - 00:28:57,480] Over here,
+- [00:28:57,480 - 00:28:59,720] I have something involving y,
+- [00:28:59,720 - 00:29:01,620] vy.
+- [00:29:02,220 - 00:29:02,980] Over here,
+- [00:29:02,980 - 00:29:04,460] I have something involving vx.
+- [00:29:04,460 - 00:29:08,180] So let's change everything on the right hand side,
+- [00:29:08,480 - 00:29:12,100] so that it's related to components with respect to x.
+- [00:29:12,560 - 00:29:13,780] That's easy to do.
+- [00:29:14,640 - 00:29:17,360] We just write that vm of y,
+- [00:29:17,660 - 00:29:19,800] this is derivative with respect to yn,
+- [00:29:21,940 - 00:29:22,800] and now,
+- [00:29:22,800 - 00:29:24,820] how do I write vm of y
+- [00:29:25,460 - 00:29:27,120] in terms of x components?
+- [00:29:28,240 - 00:29:28,540] Well,
+- [00:29:28,540 - 00:29:32,180] I just write that vmy,
+- [00:29:32,180 - 00:29:38,680] is the derivative of xr
+- [00:29:38,680 - 00:29:45,500] with respect to ym of vr of x.
+- [00:29:45,780 - 00:29:48,440] All I've done here was use the transformation
+- [00:29:49,180 - 00:29:51,800] from y components to x components
+- [00:29:51,800 - 00:29:54,340] to rewrite what's over here,
+- [00:29:54,340 - 00:29:56,100] over here.
+- [00:29:56,280 - 00:29:57,720] Just pure substitution.
+- [00:29:58,200 - 00:30:00,460] So now we have the question,
+- [00:30:00,460 - 00:30:03,240] is this equal to or is it not?
+- [00:30:04,060 - 00:30:05,220] Let's write it out again.
+- [00:30:06,000 - 00:30:07,480] Derivative with respect to yn.
+- [00:30:11,140 - 00:30:12,910] I realize that this is
+- [00:30:12,910 - 00:30:14,680] a bit tedious and a nuisance,
+- [00:30:14,900 - 00:30:15,840] but I wanted to do it,
+- [00:30:15,840 - 00:30:17,900] the whole thing.
+- [00:30:18,400 - 00:30:19,120] What is it?
+- [00:30:19,300 - 00:30:19,800] dxr,
+- [00:30:19,800 - 00:30:23,900] dxr by what?
+- [00:30:24,040 - 00:30:24,940] Can somebody read it to me?
+- [00:30:25,260 - 00:30:27,820] dy sub m.
+- [00:30:29,020 - 00:30:29,880] And then?
+- [00:30:29,880 - 00:30:32,060] In vm of x,
+- [00:30:32,060 - 00:30:32,380] right?
+- [00:30:33,440 - 00:30:34,440] vr of x?
+- [00:30:35,340 - 00:30:36,540] The r of x.
+- [00:30:42,820 - 00:30:43,300] Okay,
+- [00:30:43,300 - 00:30:43,820] well,
+- [00:30:43,820 - 00:30:44,900] let's look at it.
+- [00:30:44,980 - 00:30:48,100] We have here the derivative of a product.
+- [00:30:49,020 - 00:30:50,540] The derivative of a product
+- [00:30:50,540 - 00:30:52,060] is the sum of two terms.
+- [00:30:52,140 - 00:30:54,680] Just the usual rule for the derivative of a product.
+- [00:30:55,460 - 00:30:56,960] Derivative of a times b is
+- [00:30:56,960 - 00:30:58,460] a times the derivative of b
+- [00:30:58,460 - 00:30:59,860] plus b times the derivative of b.
+- [00:30:59,860 - 00:31:02,160] And so first of all,
+- [00:31:02,200 - 00:31:04,020] this derivative can hit v.
+- [00:31:05,220 - 00:31:06,600] That will give me a
+- [00:31:06,600 - 00:31:07,980] term which looks exactly like this.
+- [00:31:09,280 - 00:31:13,680] It'll give me the term dxr by dym
+- [00:31:19,680 - 00:31:24,220] times dvr of x with respect to yn.
+- [00:31:25,280 - 00:31:26,840] That's exactly what I have here.
+- [00:31:27,840 - 00:31:28,680] Looks good.
+- [00:31:29,240 - 00:31:30,710] But it's not good because
+- [00:31:30,710 - 00:31:32,180] it's only one of the terms
+- [00:31:32,180 - 00:31:34,000] when I take the derivative here.
+- [00:31:34,180 - 00:31:35,160] There's another term.
+- [00:31:38,380 - 00:31:38,960] What's that?
+- [00:31:42,180 - 00:31:43,180] I did.
+- [00:31:44,700 - 00:31:45,380] I did?
+- [00:31:45,520 - 00:31:45,740] No,
+- [00:31:45,740 - 00:31:46,100] I didn't.
+- [00:31:46,780 - 00:31:47,280] Where?
+- [00:31:48,760 - 00:31:51,980] The derivative of this is equal to this.
+- [00:31:56,700 - 00:31:57,200] Sorry,
+- [00:31:57,200 - 00:31:58,200] what did I do?
+- [00:31:59,080 - 00:31:59,560] No,
+- [00:31:59,560 - 00:31:59,740] no,
+- [00:31:59,740 - 00:31:59,880] no,
+- [00:31:59,880 - 00:32:00,060] no,
+- [00:32:00,060 - 00:32:00,200] no,
+- [00:32:00,200 - 00:32:00,340] no,
+- [00:32:00,340 - 00:32:00,500] no.
+- [00:32:01,380 - 00:32:01,860] No,
+- [00:32:01,860 - 00:32:02,000] no,
+- [00:32:02,000 - 00:32:03,000] these are not the same.
+- [00:32:03,920 - 00:32:04,400] Here.
+- [00:32:05,120 - 00:32:08,020] Here the derivative is outside the product.
+- [00:32:08,700 - 00:32:11,400] Here the derivative only acts on the v.
+- [00:32:12,560 - 00:32:13,380] Look at the difference.
+- [00:32:13,740 - 00:32:15,440] Here we have derivative with
+- [00:32:15,440 - 00:32:17,140] respect to y of a product.
+- [00:32:17,800 - 00:32:20,260] Here we have a product of two derivatives.
+- [00:32:20,820 - 00:32:21,940] Not the same thing.
+- [00:32:23,860 - 00:32:24,940] Who asked the question?
+- [00:32:26,260 - 00:32:26,900] I did.
+- [00:32:26,900 - 00:32:27,280] Yeah,
+- [00:32:27,280 - 00:32:28,040] are you happy?
+- [00:32:28,260 - 00:32:28,500] Yes.
+- [00:32:28,680 - 00:32:29,020] Okay.
+- [00:32:29,960 - 00:32:30,480] Good.
+- [00:32:30,660 - 00:32:31,380] All right,
+- [00:32:31,380 - 00:32:32,520] so now we work this out.
+- [00:32:32,780 - 00:32:35,740] The first term is gotten by allowing the
+- [00:32:35,740 - 00:32:38,700] derivative with respect to y to hit v.
+- [00:32:39,280 - 00:32:41,480] That does look exactly like this.
+- [00:32:42,220 - 00:32:43,400] So far so good.
+- [00:32:43,880 - 00:32:46,000] But there's something else in there.
+- [00:32:46,940 - 00:32:48,740] And let's see what that other thing is.
+- [00:32:49,320 - 00:32:51,580] It's derivative with respect to yn
+- [00:32:53,320 - 00:32:55,980] of the derivative of xr
+- [00:32:56,900 - 00:32:58,460] with respect to ym.
+- [00:32:59,840 - 00:33:00,900] That's a thing.
+- [00:33:02,140 - 00:33:03,380] Times vr.
+- [00:33:06,860 - 00:33:09,720] So the answer is it is not equal
+- [00:33:09,720 - 00:33:13,880] to the right hand side.
+- [00:33:14,080 - 00:33:15,500] Let's just call it the right hand side.
+- [00:33:17,820 - 00:33:19,080] In other words,
+- [00:33:21,760 - 00:33:24,220] this thing which I called a tensor
+- [00:33:24,220 - 00:33:26,700] has not transformed as a tensor.
+- [00:33:28,220 - 00:33:30,180] If I insist that this is
+- [00:33:30,180 - 00:33:32,140] the x components of the tensor,
+- [00:33:32,980 - 00:33:34,720] then it is not true that
+- [00:33:34,720 - 00:33:36,460] the y components of the tensor
+- [00:33:36,460 - 00:33:38,720] are just derivatives of v with respect to y.
+- [00:33:39,900 - 00:33:40,760] Not true.
+- [00:33:41,240 - 00:33:41,800] Okay.
+- [00:33:44,780 - 00:33:45,340] Okay.
+- [00:33:51,380 - 00:33:52,760] Let's see what we can say.
+- [00:33:55,100 - 00:33:55,780] Yeah.
+- [00:33:57,020 - 00:33:58,220] At this point,
+- [00:33:58,280 - 00:34:03,460] can you give a clinical example of an electric field?
+- [00:34:07,560 - 00:34:11,940] Just an electric field which varies from place to place,
+- [00:34:12,699 - 00:34:15,120] but not in Cartesian coordinates,
+- [00:34:15,400 - 00:34:17,239] in some other coordinates.
+- [00:34:18,980 - 00:34:20,940] And this is what happens.
+- [00:34:21,040 - 00:34:21,840] What happens is,
+- [00:34:21,840 - 00:34:25,679] just because the components of a vector may be constant,
+- [00:34:25,900 - 00:34:28,580] doesn't mean it's constant in all frames of reference.
+- [00:34:28,860 - 00:34:30,719] This extra term gets picked up here.
+- [00:34:31,500 - 00:34:34,580] This is the term that's due to the fact
+- [00:34:34,580 - 00:34:37,780] that the coordinates are varying from place to place.
+- [00:34:38,340 - 00:34:38,900] Okay.
+- [00:34:39,500 - 00:34:40,460] After all,
+- [00:34:40,480 - 00:34:42,659] all the directions of the coordinates
+- [00:34:42,659 - 00:34:44,060] are varying from place to place.
+- [00:34:44,580 - 00:34:45,840] If we had,
+- [00:34:46,880 - 00:34:50,060] if the x coordinates were linear functions
+- [00:34:50,060 - 00:34:51,380] of the y coordinates,
+- [00:34:54,000 - 00:34:56,739] then these derivatives here would just be numbers.
+- [00:34:57,280 - 00:34:59,180] And derivatives of numbers are zero.
+- [00:34:59,580 - 00:35:02,120] It's because the coordinates are curved
+- [00:35:02,840 - 00:35:05,080] that this is not zero in general.
+- [00:35:05,700 - 00:35:06,700] And as I said,
+- [00:35:06,760 - 00:35:07,720] it has to do with the fact
+- [00:35:07,720 - 00:35:10,580] that the relationship between the coordinates
+- [00:35:10,580 - 00:35:12,900] is varying from place to place.
+- [00:35:13,020 - 00:35:14,060] That's the way to think about it.
+- [00:35:14,420 - 00:35:15,740] The xr by dym,
+- [00:35:15,740 - 00:35:18,740] that's the relationship between the x coordinates
+- [00:35:18,740 - 00:35:19,780] and the y coordinates.
+- [00:35:19,780 - 00:35:21,140] And now,
+- [00:35:21,280 - 00:35:23,640] if it varies from place to place,
+- [00:35:23,860 - 00:35:25,240] then there's an extra term.
+- [00:35:25,300 - 00:35:26,840] And the extra term is proportional to v
+- [00:35:26,840 - 00:35:28,520] with no derivative.
+- [00:35:30,000 - 00:35:30,560] Alright?
+- [00:35:30,860 - 00:35:31,220] So,
+- [00:35:32,420 - 00:35:32,980] uh,
+- [00:35:34,140 - 00:35:34,700] yeah.
+- [00:35:37,360 - 00:35:37,920] Yeah,
+- [00:35:37,920 - 00:35:39,720] exactly like the picture right above.
+- [00:35:40,000 - 00:35:43,920] Except the red vectors could also be varying
+- [00:35:43,920 - 00:35:44,900] from place to place.
+- [00:35:45,540 - 00:35:48,680] And we see that there's an extra contribution.
+- [00:35:49,980 - 00:35:51,260] Look at the form of this.
+- [00:35:51,540 - 00:35:52,720] Let me write this in some,
+- [00:35:52,920 - 00:35:52,940] um,
+- [00:35:53,120 - 00:35:53,780] let's see.
+- [00:35:57,120 - 00:35:57,600] Let's see.
+- [00:35:57,660 - 00:35:58,200] What was the,
+- [00:36:00,779 - 00:36:02,300] the left hand side,
+- [00:36:02,940 - 00:36:04,540] that's I guess this over here,
+- [00:36:05,680 - 00:36:07,840] that's what you would get if v,
+- [00:36:08,000 - 00:36:10,480] if t really did transform as a tensor.
+- [00:36:11,820 - 00:36:12,260] Alright?
+- [00:36:12,340 - 00:36:14,640] So if t really does transform as a tensor,
+- [00:36:14,860 - 00:36:16,660] this has to be the right answer.
+- [00:36:17,080 - 00:36:18,960] It differs from,
+- [00:36:20,920 - 00:36:22,080] this over here.
+- [00:36:22,600 - 00:36:25,280] It differs from what you might have expected,
+- [00:36:26,060 - 00:36:26,660] namely,
+- [00:36:27,900 - 00:36:28,500] uh,
+- [00:36:28,660 - 00:36:29,760] this over here,
+- [00:36:29,840 - 00:36:31,120] by this extra term.
+- [00:36:31,540 - 00:36:33,430] That suggests that we have to
+- [00:36:33,430 - 00:36:35,320] do something a little bit different
+- [00:36:35,320 - 00:36:37,440] to differentiate a tensor
+- [00:36:37,440 - 00:36:39,200] and to get another tensor.
+- [00:36:40,340 - 00:36:40,940] Okay.
+- [00:36:41,000 - 00:36:41,860] And the difference
+- [00:36:42,720 - 00:36:44,880] involves an extra term
+- [00:36:45,580 - 00:36:48,620] which has not got derivatives of the vectors in it,
+- [00:36:48,680 - 00:36:49,420] but's got,
+- [00:36:49,780 - 00:36:51,260] but has funny derivatives
+- [00:36:51,940 - 00:36:54,400] associated with the relation between coordinates.
+- [00:36:55,580 - 00:36:55,620] Um,
+- [00:36:56,780 - 00:36:57,360] let's see.
+- [00:36:57,560 - 00:37:00,020] The right hand side is by definition
+- [00:37:02,500 - 00:37:03,380] tmn of y.
+- [00:37:05,180 - 00:37:06,500] I just read it off here.
+- [00:37:07,180 - 00:37:08,880] Assuming this is tmn of x,
+- [00:37:09,080 - 00:37:10,700] then this must be tmn of y
+- [00:37:10,700 - 00:37:13,060] because it transforms in the right way.
+- [00:37:13,220 - 00:37:15,120] I forced it to transform in the right way.
+- [00:37:15,460 - 00:37:16,660] And what we see
+- [00:37:16,660 - 00:37:17,700] is that,
+- [00:37:17,840 - 00:37:18,260] um,
+- [00:37:20,120 - 00:37:20,600] it,
+- [00:37:20,780 - 00:37:20,980] uh,
+- [00:37:21,200 - 00:37:21,620] well,
+- [00:37:21,720 - 00:37:23,480] that it has this extra term over here.
+- [00:37:23,660 - 00:37:24,580] It's not just,
+- [00:37:25,900 - 00:37:26,700] where is it?
+- [00:37:35,320 - 00:37:37,120] It's not just what you might have
+- [00:37:37,900 - 00:37:38,760] thought it was.
+- [00:37:39,300 - 00:37:39,780] Okay.
+- [00:37:39,860 - 00:37:41,360] Let's try to guess then
+- [00:37:42,240 - 00:37:43,460] what the right way
+- [00:37:43,460 - 00:37:45,380] to differentiate tensors is.
+- [00:37:47,540 - 00:37:49,760] The right way must have an extra term
+- [00:37:49,780 - 00:37:51,760] that'll cancel this out.
+- [00:37:52,140 - 00:37:53,880] Let's just write this in another form.
+- [00:37:54,260 - 00:37:54,620] Uh,
+- [00:37:54,980 - 00:37:57,340] let me call this object over here.
+- [00:37:57,480 - 00:37:58,800] Let me give it a name.
+- [00:37:58,960 - 00:37:59,800] Capital gamma.
+- [00:38:00,580 - 00:38:02,420] How many indices does it have?
+- [00:38:02,700 - 00:38:04,420] It has an index n,
+- [00:38:05,260 - 00:38:05,860] m,
+- [00:38:06,020 - 00:38:07,000] and r.
+- [00:38:07,420 - 00:38:08,680] One index upstairs,
+- [00:38:09,000 - 00:38:10,140] two indices downstairs.
+- [00:38:10,840 - 00:38:13,140] And it multiplies vr.
+- [00:38:15,380 - 00:38:15,980] Okay.
+- [00:38:17,460 - 00:38:18,060] Let's,
+- [00:38:18,060 - 00:38:19,140] that's what we'll call this.
+- [00:38:21,460 - 00:38:22,980] Here's more or less what we discovered,
+- [00:38:23,600 - 00:38:25,000] in another way of saying it,
+- [00:38:25,500 - 00:38:27,280] that if we want to differentiate
+- [00:38:28,439 - 00:38:29,240] a tensor,
+- [00:38:30,319 - 00:38:31,120] its components,
+- [00:38:31,580 - 00:38:32,420] we have to do,
+- [00:38:32,440 - 00:38:33,540] and get another tensor back,
+- [00:38:33,680 - 00:38:35,260] we have to do something a little bit trickier
+- [00:38:35,260 - 00:38:36,740] than just differentiate its components.
+- [00:38:37,740 - 00:38:38,140] Namely,
+- [00:38:38,140 - 00:38:39,040] what we have to do
+- [00:38:39,040 - 00:38:40,280] is take the derivative
+- [00:38:41,259 - 00:38:42,060] of v
+- [00:38:42,060 - 00:38:43,640] with respect to y,
+- [00:38:44,220 - 00:38:44,960] or x,
+- [00:38:45,020 - 00:38:45,340] doesn't matter,
+- [00:38:45,460 - 00:38:45,780] x,
+- [00:38:46,779 - 00:38:47,180] the,
+- [00:38:47,240 - 00:38:47,640] um,
+- [00:38:48,160 - 00:38:48,860] let's call it,
+- [00:38:48,960 - 00:38:49,120] the,
+- [00:38:50,060 - 00:38:50,580] m,
+- [00:38:51,120 - 00:38:51,640] n,
+- [00:38:52,540 - 00:38:54,580] and then add something to it.
+- [00:38:54,700 - 00:38:56,500] And the thing we have to add to it
+- [00:38:56,500 - 00:38:57,540] is just this gamma,
+- [00:38:58,840 - 00:38:59,360] n,
+- [00:39:01,340 - 00:39:02,040] let's say,
+- [00:39:02,960 - 00:39:03,480] uh,
+- [00:39:05,060 - 00:39:05,580] m,
+- [00:39:07,700 - 00:39:08,220] r,
+- [00:39:10,360 - 00:39:10,880] vr.
+- [00:39:12,900 - 00:39:14,300] What this represents,
+- [00:39:14,580 - 00:39:16,120] what this term over here represents,
+- [00:39:16,960 - 00:39:18,380] is the fact that,
+- [00:39:18,380 - 00:39:20,740] when you differentiate a tensor,
+- [00:39:20,980 - 00:39:22,500] you have to take into account
+- [00:39:22,500 - 00:39:24,660] the fact that the coordinates
+- [00:39:24,660 - 00:39:26,760] are varying from point to point.
+- [00:39:27,080 - 00:39:29,400] And so the components have some variation
+- [00:39:29,400 - 00:39:30,940] that's just due to the fact
+- [00:39:30,940 - 00:39:33,340] that the coordinates themselves
+- [00:39:33,340 - 00:39:34,500] are flopping around,
+- [00:39:34,700 - 00:39:35,220] so to speak.
+- [00:39:35,900 - 00:39:36,940] There's something here
+- [00:39:36,940 - 00:39:37,740] that has to go there.
+- [00:39:38,140 - 00:39:39,580] I haven't told you yet,
+- [00:39:39,720 - 00:39:40,160] well,
+- [00:39:40,160 - 00:39:41,940] I've told you in this language over here
+- [00:39:41,940 - 00:39:42,860] what this gamma is,
+- [00:39:44,120 - 00:39:45,740] but let's suppose
+- [00:39:45,740 - 00:39:46,560] that,
+- [00:39:48,380 - 00:39:49,220] now we're making a guess,
+- [00:39:49,300 - 00:39:50,500] we're making a guess
+- [00:39:50,500 - 00:39:53,600] that if we could find the right object gamma,
+- [00:39:54,600 - 00:39:58,200] we could construct a new kind of derivative,
+- [00:39:58,600 - 00:40:00,940] a new kind of derivative of a vector,
+- [00:40:01,140 - 00:40:03,020] which contains an extra term,
+- [00:40:03,180 - 00:40:04,100] not just a derivative,
+- [00:40:04,280 - 00:40:05,060] but an extra term,
+- [00:40:05,160 - 00:40:07,320] which will make this into a tensor,
+- [00:40:07,540 - 00:40:09,240] which will make it into a tensor,
+- [00:40:09,460 - 00:40:10,940] which we can call,
+- [00:40:13,440 - 00:40:13,960] t,
+- [00:40:15,600 - 00:40:16,120] m,
+- [00:40:16,260 - 00:40:16,780] n.
+- [00:40:23,280 - 00:40:25,740] This process of differentiating
+- [00:40:25,740 - 00:40:27,860] is called covariant derivative.
+- [00:40:28,500 - 00:40:29,720] It's usually written
+- [00:40:29,720 - 00:40:31,520] as an upside down triangle
+- [00:40:31,520 - 00:40:32,780] with an n downstairs.
+- [00:40:33,240 - 00:40:34,960] That means covariant derivative
+- [00:40:34,960 - 00:40:36,520] with respect to xn
+- [00:40:37,800 - 00:40:38,920] of vm.
+- [00:40:40,000 - 00:40:41,300] And it's by definition
+- [00:40:41,300 - 00:40:42,700] equal to this thing over here,
+- [00:40:42,840 - 00:40:45,000] if we can figure out what gamma is.
+- [00:40:46,400 - 00:40:47,720] If we can figure out
+- [00:40:47,720 - 00:40:48,480] what gamma is,
+- [00:40:48,560 - 00:40:49,480] another way to ask it
+- [00:40:49,480 - 00:40:52,100] is can we find a thing called gamma,
+- [00:40:53,160 - 00:40:55,180] and I'll tell you what gamma's going to depend on.
+- [00:40:55,220 - 00:40:56,720] It's going to depend on the metric tensor.
+- [00:40:57,660 - 00:40:58,680] It's going to depend
+- [00:40:58,680 - 00:41:00,120] not only on the metric tensor,
+- [00:41:00,320 - 00:41:02,360] but the derivatives of the metric tensor.
+- [00:41:03,400 - 00:41:05,400] If the metric tensor has derivatives,
+- [00:41:05,740 - 00:41:07,320] that means in some way
+- [00:41:07,320 - 00:41:09,020] the coordinates are flopping around.
+- [00:41:09,480 - 00:41:11,500] If the metric tensor is not constant,
+- [00:41:11,720 - 00:41:13,720] it means the coordinates are flopping around.
+- [00:41:14,060 - 00:41:15,800] We're going to discover that this thing
+- [00:41:15,800 - 00:41:16,840] depends on
+- [00:41:16,840 - 00:41:19,040] the derivatives of the metric.
+- [00:41:19,380 - 00:41:20,700] Is there an object
+- [00:41:20,700 - 00:41:22,400] which has the property
+- [00:41:22,400 - 00:41:25,080] that when we construct
+- [00:41:25,839 - 00:41:27,200] the covariant derivative,
+- [00:41:27,480 - 00:41:30,560] what occurs is actually a tensor,
+- [00:41:30,760 - 00:41:31,740] really is a tensor
+- [00:41:31,740 - 00:41:33,000] and transforms as a tensor.
+- [00:41:33,600 - 00:41:34,920] That'll be a brilliant achievement
+- [00:41:35,600 - 00:41:38,500] because then we'll be able to write equations
+- [00:41:38,500 - 00:41:41,920] such as the covariant derivative
+- [00:41:41,920 - 00:41:44,580] of a vector might be equal
+- [00:41:44,580 - 00:41:45,620] to some other tensor,
+- [00:41:45,620 - 00:41:47,140] maybe a completely different object.
+- [00:41:47,440 - 00:41:49,720] The left-hand side could be the derivative
+- [00:41:49,720 - 00:41:51,000] of some electric field.
+- [00:41:51,260 - 00:41:54,120] The right-hand side could be some other tensor
+- [00:41:54,120 - 00:41:56,920] of a particular physical character,
+- [00:41:57,160 - 00:41:59,360] and we might have a situation,
+- [00:41:59,620 - 00:42:00,700] an equation,
+- [00:42:00,940 - 00:42:03,240] which says that the covariant derivative
+- [00:42:04,000 - 00:42:07,920] of the electric field
+- [00:42:07,920 - 00:42:09,320] is equal to some tensor.
+- [00:42:09,560 - 00:42:11,780] Will it be true in all reference frames?
+- [00:42:12,280 - 00:42:12,880] Yes,
+- [00:42:12,880 - 00:42:14,940] if the left-hand side is a tensor
+- [00:42:14,940 - 00:42:16,280] and transforms as a tensor,
+- [00:42:16,420 - 00:42:17,880] and also the right-hand side.
+- [00:42:18,380 - 00:42:19,480] So the question is,
+- [00:42:19,520 - 00:42:21,060] can we find this gamma,
+- [00:42:22,360 - 00:42:23,320] and that,
+- [00:42:25,259 - 00:42:26,560] whose nature it is
+- [00:42:26,560 - 00:42:30,020] to make derivatives equal to the tensors.
+- [00:42:30,200 - 00:42:30,300] Well,
+- [00:42:30,300 - 00:42:31,400] you wrote a gamma there.
+- [00:42:31,900 - 00:42:32,380] Yeah,
+- [00:42:32,380 - 00:42:32,580] yeah,
+- [00:42:32,580 - 00:42:33,680] that's one gamma,
+- [00:42:33,780 - 00:42:35,260] but remember this was a special case
+- [00:42:35,260 - 00:42:38,160] where the x's were Cartesian coordinates.
+- [00:42:38,700 - 00:42:41,060] Now it can happen that we have a geometry
+- [00:42:41,060 - 00:42:42,620] that cannot be described
+- [00:42:42,620 - 00:42:44,920] in terms of Cartesian coordinates.
+- [00:42:44,940 - 00:42:46,620] But still,
+- [00:42:47,620 - 00:42:49,640] we'll discover that we can find a gamma
+- [00:42:49,640 - 00:42:51,240] which has the right property.
+- [00:42:52,080 - 00:42:52,560] Alright?
+- [00:42:53,620 - 00:42:56,040] So the main purpose of this
+- [00:42:56,040 - 00:42:57,020] was just to show you
+- [00:42:57,020 - 00:42:58,520] that derivatives of tensors
+- [00:42:58,520 - 00:43:00,440] are not themselves tensors.
+- [00:43:00,560 - 00:43:01,800] You have to do something else.
+- [00:43:03,100 - 00:43:04,500] I'll give you the general rule.
+- [00:43:04,740 - 00:43:06,040] I'll tell you what the general rule is,
+- [00:43:06,180 - 00:43:08,160] in particular for tensors with lower...
+- [00:43:08,160 - 00:43:09,760] I'll give you the general rule right now.
+- [00:43:12,460 - 00:43:14,300] For things with lower components,
+- [00:43:15,320 - 00:43:17,100] for things with lower components,
+- [00:43:19,360 - 00:43:19,880] it's...
+- [00:43:19,880 - 00:43:20,760] this is...
+- [00:43:20,760 - 00:43:21,420] yeah.
+- [00:43:23,100 - 00:43:24,700] Because the coordinates vary
+- [00:43:24,700 - 00:43:25,800] from place to place,
+- [00:43:26,960 - 00:43:28,280] there are contributions
+- [00:43:28,280 - 00:43:29,780] of this type
+- [00:43:31,180 - 00:43:33,340] for each one of the components.
+- [00:43:33,520 - 00:43:34,580] I'll show you how it works,
+- [00:43:34,720 - 00:43:36,660] and then we'll see if we can find out
+- [00:43:36,660 - 00:43:37,680] any piece of information
+- [00:43:38,300 - 00:43:39,700] about what this gamma is.
+- [00:43:41,020 - 00:43:42,040] At some point,
+- [00:43:42,080 - 00:43:43,040] I'm going to leave for you
+- [00:43:44,300 - 00:43:44,920] to work out.
+- [00:43:45,260 - 00:43:47,240] But I'll show you what the rules are,
+- [00:43:47,420 - 00:43:48,760] and then you can go home
+- [00:43:48,760 - 00:43:50,540] and check yourself
+- [00:43:51,240 - 00:43:53,580] that I have the right object.
+- [00:43:54,180 - 00:43:54,660] Okay,
+- [00:43:54,660 - 00:43:55,460] so...
+- [00:43:56,940 - 00:43:57,500] Let's...
+- [00:43:57,500 - 00:43:59,100] Here was the way you write
+- [00:43:59,100 - 00:44:01,380] a covariant derivative of a vector.
+- [00:44:01,820 - 00:44:03,740] What would happen if I wanted to make
+- [00:44:03,740 - 00:44:05,720] a covariant derivative of a tensor?
+- [00:44:06,160 - 00:44:06,720] Oh,
+- [00:44:06,720 - 00:44:07,260] incidentally,
+- [00:44:07,260 - 00:44:09,040] what's the covariant derivative of a scalar?
+- [00:44:11,460 - 00:44:12,240] That's easy.
+- [00:44:13,280 - 00:44:14,280] It's just the ordinary
+- [00:44:14,300 - 00:44:14,620] derivative.
+- [00:44:16,220 - 00:44:18,240] Ordinary derivative is a tensor.
+- [00:44:19,080 - 00:44:19,720] Okay?
+- [00:44:20,040 - 00:44:21,500] But for a tensor,
+- [00:44:21,720 - 00:44:24,240] we have to do a more complicated operation.
+- [00:44:25,280 - 00:44:26,680] Let's take some tensor,
+- [00:44:26,800 - 00:44:28,700] not necessarily this tensor over here,
+- [00:44:28,800 - 00:44:29,420] any tensor,
+- [00:44:30,780 - 00:44:31,960] with two indices,
+- [00:44:32,080 - 00:44:32,700] for example,
+- [00:44:35,100 - 00:44:35,920] Tm in,
+- [00:44:36,060 - 00:44:37,820] and supposing we want to
+- [00:44:37,820 - 00:44:40,040] find its covariant derivative,
+- [00:44:40,800 - 00:44:41,440] again,
+- [00:44:42,620 - 00:44:44,120] with respect to
+- [00:44:44,300 - 00:44:44,620] again,
+- [00:44:44,620 - 00:44:45,500] with respect to y,
+- [00:44:48,060 - 00:44:48,680] covariant derivative,
+- [00:44:51,420 - 00:44:52,180] let's give it,
+- [00:44:52,180 - 00:44:52,520] let's...
+- [00:44:53,040 - 00:44:53,840] I'll tell you what.
+- [00:44:54,340 - 00:44:56,140] I want to change notation here
+- [00:44:56,140 - 00:44:56,640] a little bit.
+- [00:44:56,640 - 00:44:57,580] I want to call this p.
+- [00:44:58,420 - 00:44:59,500] If I call that p,
+- [00:44:59,500 - 00:45:00,640] I have to call this p.
+- [00:45:04,160 - 00:45:05,120] So let's see.
+- [00:45:05,120 - 00:45:06,640] I have Tm in,
+- [00:45:07,360 - 00:45:08,460] and I want to take
+- [00:45:08,460 - 00:45:09,660] its covariant derivative
+- [00:45:10,360 - 00:45:11,760] with respect to p,
+- [00:45:11,940 - 00:45:13,500] with respect to yp.
+- [00:45:15,040 - 00:45:16,300] What does it have in it?
+- [00:45:17,100 - 00:45:17,660] Again,
+- [00:45:17,660 - 00:45:18,620] it starts out
+- [00:45:18,620 - 00:45:20,480] with the ordinary derivative.
+- [00:45:21,080 - 00:45:22,780] Derivative of Tm in
+- [00:45:23,440 - 00:45:25,340] with respect to yp.
+- [00:45:28,360 - 00:45:31,060] It starts out with just the ordinary derivative.
+- [00:45:31,880 - 00:45:32,640] It starts out with just the ordinary derivative.
+- [00:45:32,640 - 00:45:34,940] That's all that would be there in Cartesian coordinates.
+- [00:45:35,400 - 00:45:36,220] But now,
+- [00:45:36,240 - 00:45:37,980] because the coordinates may be varying
+- [00:45:37,980 - 00:45:39,060] from place to place,
+- [00:45:39,640 - 00:45:40,500] and remember,
+- [00:45:40,500 - 00:45:41,800] we have two components here,
+- [00:45:41,940 - 00:45:43,280] each component
+- [00:45:44,640 - 00:45:45,260] can...
+- [00:45:45,260 - 00:45:47,040] each index here
+- [00:45:47,840 - 00:45:49,500] is like a vector index.
+- [00:45:50,040 - 00:45:51,180] And here's the rule.
+- [00:45:51,620 - 00:45:53,960] Just make a blind eye
+- [00:45:53,960 - 00:45:54,800] to n.
+- [00:45:55,420 - 00:45:57,580] Let's make a blind eye by
+- [00:45:57,580 - 00:45:58,740] circling it in red.
+- [00:46:02,640 - 00:46:03,260] Oh.
+- [00:46:11,060 - 00:46:12,820] I wanted a p over here.
+- [00:46:12,900 - 00:46:13,640] Let's see.
+- [00:46:14,300 - 00:46:14,640] I don't want p.
+- [00:46:14,640 - 00:46:15,340] Thank you.
+- [00:46:17,080 - 00:46:17,600] Yeah.
+- [00:46:18,360 - 00:46:19,260] P over here?
+- [00:46:20,900 - 00:46:21,420] Yeah,
+- [00:46:21,420 - 00:46:22,120] and also over here.
+- [00:46:24,460 - 00:46:24,980] Right.
+- [00:46:26,640 - 00:46:27,160] Okay.
+- [00:46:27,260 - 00:46:27,520] So,
+- [00:46:29,840 - 00:46:31,540] we're doing a similar thing now
+- [00:46:31,540 - 00:46:32,280] to Tmn.
+- [00:46:32,940 - 00:46:33,920] First of all,
+- [00:46:33,960 - 00:46:35,700] let's turn a blind eye completely
+- [00:46:36,259 - 00:46:36,800] to n.
+- [00:46:38,040 - 00:46:38,560] Whoops.
+- [00:46:42,980 - 00:46:43,860] Really blind.
+- [00:46:43,980 - 00:46:44,280] Okay.
+- [00:46:49,200 - 00:46:51,100] And we'll do that by circling it
+- [00:46:51,740 - 00:46:52,960] and ignoring it
+- [00:46:53,780 - 00:46:55,400] on both sides of the equation.
+- [00:46:56,440 - 00:46:57,880] If there was no n here,
+- [00:46:57,980 - 00:46:58,980] this would just be a vector.
+- [00:46:59,580 - 00:47:01,160] Let's write down what we would do
+- [00:47:01,160 - 00:47:02,880] to write the covariant derivative
+- [00:47:02,880 - 00:47:03,640] of T.
+- [00:47:04,440 - 00:47:05,580] The answer would be
+- [00:47:07,740 - 00:47:08,220] derivative,
+- [00:47:08,220 - 00:47:08,600] sorry,
+- [00:47:10,140 - 00:47:11,100] derivative of
+- [00:47:12,200 - 00:47:14,140] Tm with respect to yp
+- [00:47:14,140 - 00:47:14,280] is equal to
+- [00:47:14,300 - 00:47:16,080] I'm going to just never say n.
+- [00:47:16,540 - 00:47:17,720] Derivative of
+- [00:47:18,980 - 00:47:21,280] Tm with respect to yp
+- [00:47:21,280 - 00:47:22,440] plus
+- [00:47:22,440 - 00:47:24,490] gamma m
+- [00:47:27,819 - 00:47:29,220] gamma pm
+- [00:47:31,440 - 00:47:32,980] gamma pm
+- [00:47:32,980 - 00:47:33,380] gamma pm
+- [00:47:33,380 - 00:47:33,680] gamma pm
+- [00:47:35,540 - 00:47:36,440] times
+- [00:47:36,440 - 00:47:38,140] gamma pm
+- [00:47:38,178 - 00:47:38,658] 七
+- [00:47:40,642 - 00:47:42,642] r in.
+- [00:47:44,402 - 00:47:45,162] Look what I've done.
+- [00:47:45,282 - 00:47:47,462] I've done exactly what I did over here,
+- [00:47:48,501 - 00:47:51,202] except with an extra index here,
+- [00:47:51,202 - 00:47:52,242] just riding along,
+- [00:47:52,462 - 00:47:54,322] just traveling along for the ride,
+- [00:47:54,322 - 00:47:59,122] doing nothing.
+- [00:47:59,882 - 00:48:01,542] But that's not the whole story.
+- [00:48:02,282 - 00:48:04,532] The rest of the story is
+- [00:48:04,532 - 00:48:06,782] to add another term in which you
+- [00:48:06,782 - 00:48:09,822] turn a blind eye to the index m.
+- [00:48:11,182 - 00:48:13,301] So now let's be blind to m,
+- [00:48:13,301 - 00:48:17,922] ignore it,
+- [00:48:18,882 - 00:48:20,562] and write another term,
+- [00:48:20,562 - 00:48:24,762] which will be gamma pn.
+- [00:48:25,342 - 00:48:27,642] Now the index of interest is n,
+- [00:48:27,642 - 00:48:29,102] again r,
+- [00:48:29,102 - 00:48:32,442] and tmr.
+- [00:48:40,982 - 00:48:41,502] Let's see,
+- [00:48:41,502 - 00:48:42,162] this time we,
+- [00:48:42,162 - 00:48:44,702] which one did we,
+- [00:48:44,702 - 00:48:45,002] yeah,
+- [00:48:48,462 - 00:48:49,662] that was okay,
+- [00:48:49,662 - 00:48:50,902] that stays like that.
+- [00:48:51,142 - 00:48:52,942] You turned the blind eye to m now.
+- [00:48:53,122 - 00:48:54,702] Now we turn the blind eye to m.
+- [00:48:54,862 - 00:48:56,702] So m just went along for the
+- [00:48:56,702 - 00:48:58,542] ride over here in the second term.
+- [00:49:01,002 - 00:49:02,522] For each index,
+- [00:49:02,522 - 00:49:05,102] let's concentrate on covariant
+- [00:49:05,102 - 00:49:05,422] indices.
+- [00:49:05,422 - 00:49:06,702] For each index,
+- [00:49:06,702 - 00:49:06,762] let's concentrate on covariant indices.
+- [00:49:06,762 - 00:49:07,072] So we have a term
+- [00:49:07,072 - 00:49:07,382] called the index and a tensor.
+- [00:49:10,622 - 00:49:12,322] No matter how many of them are,
+- [00:49:12,322 - 00:49:13,222] there are,
+- [00:49:13,342 - 00:49:15,742] when you covariantly differentiate it,
+- [00:49:15,802 - 00:49:17,782] you get another term with
+- [00:49:17,782 - 00:49:19,762] a gamma times the tensor itself.
+- [00:49:21,582 - 00:49:22,682] And then other terms,
+- [00:49:22,682 - 00:49:25,022] the terms are simply one by one,
+- [00:49:26,382 - 00:49:28,802] you go through the various indices,
+- [00:49:29,142 - 00:49:31,722] turning a blind eye to all the other indices.
+- [00:49:32,462 - 00:49:33,322] That's the rule.
+- [00:49:47,722 - 00:49:48,702] Yeah,
+- [00:49:48,702 - 00:49:52,102] once that 따라 asta bATA always
+- [00:49:52,102 - 00:49:52,282] does it'saza sempre jvRA Iya anyways,
+- [00:49:52,462 - 00:49:52,702] wants to ask us.
+- [00:49:54,482 - 00:49:56,322] cNhEwwN keen lamn.
+- [00:49:59,882 - 00:50:00,862] Yeah.
+- [00:50:00,862 - 00:50:01,202] In other words,
+- [00:50:01,202 - 00:50:06,582] let's just erase n over here from it.
+- [00:50:06,662 - 00:50:07,222] First of all,
+- [00:50:07,222 - 00:50:07,942] let's get rid of this.
+- [00:50:08,022 - 00:50:09,942] I don't want to erase it because I
+- [00:50:09,942 - 00:50:11,222] don't want to have to write it again,
+- [00:50:11,222 - 00:50:12,102] but just forget it.
+- [00:50:12,522 - 00:50:14,062] And let's erase n.
+- [00:50:16,302 - 00:50:18,312] Then this would just be
+- [00:50:18,312 - 00:50:20,322] exactly the way a vector transformed.
+- [00:50:21,522 - 00:50:23,822] But let's put back the blind index now,
+- [00:50:23,822 - 00:50:24,322] n.
+- [00:50:27,622 - 00:50:39,882] Now let's turn our blind eye to the other index.
+- [00:50:40,002 - 00:50:41,282] Which one is the other one now?
+- [00:50:42,442 - 00:50:43,442] I lost track.
+- [00:50:49,562 - 00:50:51,362] In the second term,
+- [00:50:51,362 - 00:50:54,022] the blind eye is turned to the m index.
+- [00:50:54,322 - 00:50:56,962] So let's erase it on both sides.
+- [00:50:58,902 - 00:50:59,842] And notice,
+- [00:50:59,842 - 00:51:00,222] again,
+- [00:51:00,222 - 00:51:02,682] this is transforming exactly the same
+- [00:51:02,682 - 00:51:06,642] way that a vector would transform with an index n.
+- [00:51:08,282 - 00:51:09,522] You put them together,
+- [00:51:09,522 - 00:51:13,902] and you have the full transformation
+- [00:51:13,902 - 00:51:14,422] property,
+- [00:51:14,422 - 00:51:16,162] or not the full transformation,
+- [00:51:16,462 - 00:51:18,622] the full covariant derivative of a tensor.
+- [00:51:19,242 - 00:51:20,322] If there were more indices,
+- [00:51:20,322 - 00:51:21,662] you would simply
+- [00:51:21,662 - 00:51:24,222] have more terms exactly the same form
+- [00:51:24,322 - 00:51:24,442] of the term,
+- [00:51:24,442 - 00:51:26,282] gammas times t's.
+- [00:51:26,462 - 00:51:27,982] But index by index,
+- [00:51:27,982 - 00:51:29,702] you would pretend it was a vector
+- [00:51:29,702 - 00:51:32,622] and transform it or do the same thing.
+- [00:51:33,182 - 00:51:34,662] That's the covariant derivative.
+- [00:51:35,322 - 00:51:39,042] The t is always the first term.
+- [00:51:40,342 - 00:51:42,802] The derivative of t occurs in the first term.
+- [00:51:43,142 - 00:51:43,662] Yeah.
+- [00:51:43,882 - 00:51:47,322] And it's always the first lower subscript in the gamma.
+- [00:51:49,902 - 00:51:50,422] Yeah.
+- [00:51:50,862 - 00:51:51,382] Yeah.
+- [00:51:52,182 - 00:51:52,702] Yeah.
+- [00:51:52,762 - 00:51:53,942] And the rest in the other.
+- [00:51:53,962 - 00:51:54,022] Yeah.
+- [00:51:54,902 - 00:51:55,462] Yeah.
+- [00:51:55,502 - 00:51:55,782] That's right.
+- [00:51:56,962 - 00:51:57,902] So in particular,
+- [00:51:57,902 - 00:51:59,221] here's an interesting fact.
+- [00:51:59,661 - 00:52:04,062] You could have a tensor with completely constant components
+- [00:52:04,942 - 00:52:06,002] from point to point.
+- [00:52:07,142 - 00:52:09,122] Then there would be no derivatives,
+- [00:52:09,922 - 00:52:12,302] but still the covariant derivative of a tensor
+- [00:52:12,302 - 00:52:13,442] would be not 0.
+- [00:52:14,822 - 00:52:15,382] Somehow,
+- [00:52:15,382 - 00:52:18,182] this tensor has a covariant derivative,
+- [00:52:18,542 - 00:52:19,282] whatever that means.
+- [00:52:19,482 - 00:52:20,902] I'm going to show you an example in a moment.
+- [00:52:21,482 - 00:52:24,302] Even though the components of the tensor
+- [00:52:24,302 - 00:52:25,822] are absolutely constant.
+- [00:52:26,202 - 00:52:26,402] Now,
+- [00:52:26,402 - 00:52:28,382] let me give you an example of such a situation.
+- [00:52:30,282 - 00:52:32,682] Is g and n equal to Tnm?
+- [00:52:33,822 - 00:52:34,262] T,
+- [00:52:34,262 - 00:52:34,682] no.
+- [00:52:35,782 - 00:52:36,642] Not in general.
+- [00:52:36,922 - 00:52:38,642] So the n's went back into the wrong place.
+- [00:52:39,162 - 00:52:40,642] Did I get them in the wrong place?
+- [00:52:41,402 - 00:52:42,342] You are right.
+- [00:52:42,442 - 00:52:43,902] I did get them in the wrong place.
+- [00:52:45,742 - 00:52:46,182] Tmr,
+- [00:52:46,182 - 00:52:46,622] I think,
+- [00:52:46,622 - 00:52:46,842] right?
+- [00:52:47,882 - 00:52:48,322] Nmn.
+- [00:52:49,862 - 00:52:50,382] Let's see.
+- [00:52:50,542 - 00:52:52,342] n is on the right side here.
+- [00:52:53,422 - 00:52:54,282] And m is on the left side.
+- [00:52:54,302 - 00:52:56,062] m should be on the left side here.
+- [00:52:56,282 - 00:52:57,302] So that should be like that.
+- [00:53:00,122 - 00:53:00,562] Right.
+- [00:53:00,782 - 00:53:02,442] In the first term,
+- [00:53:02,442 - 00:53:04,502] it should be nn.
+- [00:53:04,662 - 00:53:05,102] Here?
+- [00:53:07,062 - 00:53:07,502] Yes,
+- [00:53:07,502 - 00:53:08,122] you're right.
+- [00:53:12,182 - 00:53:12,622] Good.
+- [00:53:13,302 - 00:53:13,882] Thank you.
+- [00:53:17,722 - 00:53:19,652] But the basic rule is the
+- [00:53:19,652 - 00:53:21,582] same as the rule for vectors,
+- [00:53:21,802 - 00:53:24,042] except you go through it one by one.
+- [00:53:24,302 - 00:53:25,982] And then you run curves over them.
+- [00:53:25,982 - 00:53:29,082] And we eat out of получается in solidarity matters.
+- [00:53:32,521 - 00:53:33,482] Got it.
+- [00:53:34,822 - 00:53:35,162] So it's all right to do.
+- [00:53:35,162 - 00:53:35,162] Now,
+- [00:53:35,162 - 00:53:37,162] I also took this colleague from El favour差's
+- [00:53:37,702 - 00:53:38,162] And I told him there's going to be
+- [00:53:38,162 - 00:53:38,582] some sort of a capture of this kind of training.
+- [00:53:38,582 - 00:53:38,782] And then you get into therapeutics.
+- [00:53:38,842 - 00:53:39,362] And?幂
+- [00:53:53,501 - 00:53:54,062] werd wait.
+- [00:53:55,082 - 00:53:55,582] Yeah?
+- [00:53:55,702 - 00:53:59,272] I assume that you can swap
+- [00:53:59,272 - 00:54:02,842] an index with a repeated index.
+- [00:54:04,122 - 00:54:04,622] Yeah.
+- [00:54:04,762 - 00:54:05,882] In the middle term there,
+- [00:54:05,882 - 00:54:09,282] you could have also written T
+- [00:54:09,282 - 00:54:12,682] sub nR if you wanted to.
+- [00:54:12,682 - 00:54:12,922] No,
+- [00:54:12,922 - 00:54:14,042] you can't put an R here.
+- [00:54:14,322 - 00:54:14,502] No,
+- [00:54:14,502 - 00:54:14,582] no.
+- [00:54:14,682 - 00:54:15,182] Here.
+- [00:54:15,362 - 00:54:18,462] T sub nR would have been okay.
+- [00:54:19,022 - 00:54:19,522] nR.
+- [00:54:19,682 - 00:54:20,502] It is nR.
+- [00:54:21,262 - 00:54:22,442] You want R?
+- [00:54:22,542 - 00:54:22,722] No,
+- [00:54:22,722 - 00:54:22,862] no,
+- [00:54:22,862 - 00:54:23,062] no,
+- [00:54:23,062 - 00:54:23,282] no,
+- [00:54:23,282 - 00:54:23,422] no,
+- [00:54:23,422 - 00:54:23,562] no,
+- [00:54:23,562 - 00:54:23,662] no.
+- [00:54:23,662 - 00:54:24,042] Not okay,
+- [00:54:24,042 - 00:54:24,682] not okay,
+- [00:54:24,682 - 00:54:25,242] not okay.
+- [00:54:26,522 - 00:54:29,062] You can't interchange in general.
+- [00:54:29,402 - 00:54:29,602] No,
+- [00:54:29,602 - 00:54:29,822] no,
+- [00:54:29,822 - 00:54:30,902] that's a repeated index.
+- [00:54:31,362 - 00:54:32,962] n is not a repeated index.
+- [00:54:33,862 - 00:54:34,302] Well,
+- [00:54:34,302 - 00:54:35,142] that means you can change
+- [00:54:35,142 - 00:54:35,982] it to S if you like,
+- [00:54:35,982 - 00:54:38,302] but you can't interchange it with n.
+- [00:54:39,442 - 00:54:41,042] You can give it a different name.
+- [00:54:41,462 - 00:54:42,102] That's fine.
+- [00:54:43,362 - 00:54:43,802] Okay.
+- [00:54:44,022 - 00:54:46,702] But you can't substitute one index for another.
+- [00:54:47,602 - 00:54:48,042] Okay.
+- [00:54:48,722 - 00:54:50,372] Unless it happens to be
+- [00:54:50,372 - 00:54:52,022] a symmetric tensor of some sort,
+- [00:54:52,642 - 00:54:53,642] in which case T is the same.
+- [00:54:53,662 - 00:54:54,922] T is the same as T .
+- [00:54:55,642 - 00:54:56,362] Okay.
+- [00:54:58,202 - 00:55:01,212] Let me give you an example of a
+- [00:55:01,212 - 00:55:04,222] tensor or a vector which is clearly not constant,
+- [00:55:04,602 - 00:55:08,522] even though the derivatives of its components are zero.
+- [00:55:16,882 - 00:55:18,582] Go to polar coordinates.
+- [00:55:18,902 - 00:55:20,182] In polar coordinates,
+- [00:55:20,182 - 00:55:22,862] here's our polar coordinates.
+- [00:55:25,102 - 00:55:29,022] And let's consider a vector with the following property.
+- [00:55:29,202 - 00:55:29,322] Yeah.
+- [00:55:31,602 - 00:55:32,622] Ignore the origin.
+- [00:55:32,742 - 00:55:33,202] The origin,
+- [00:55:33,202 - 00:55:33,902] as I said,
+- [00:55:33,902 - 00:55:34,742] is a nasty point,
+- [00:55:34,742 - 00:55:35,822] so we'll forget the origin.
+- [00:55:35,942 - 00:55:36,382] It's not important.
+- [00:55:36,622 - 00:55:42,342] But this vector has zero for its theta component.
+- [00:55:42,782 - 00:55:44,522] What would a theta component mean?
+- [00:55:44,762 - 00:55:46,802] A theta component of a vector,
+- [00:55:46,802 - 00:55:48,982] the radial component of a vector,
+- [00:55:48,982 - 00:55:52,682] means the component along the radial axis.
+- [00:55:52,682 - 00:55:55,392] The theta component of a vector
+- [00:55:55,392 - 00:55:58,102] means a component along the tangential direction.
+- [00:55:59,022 - 00:55:59,722] All right.
+- [00:55:59,742 - 00:56:02,902] So now I have a vector where the theta component,
+- [00:56:02,902 - 00:56:04,542] let's call it V theta,
+- [00:56:04,542 - 00:56:07,122] is identically equal to zero.
+- [00:56:08,582 - 00:56:09,322] All right.
+- [00:56:09,322 - 00:56:10,562] But the radial component,
+- [00:56:10,562 - 00:56:12,062] let's say,
+- [00:56:12,062 - 00:56:13,522] is equal to one.
+- [00:56:14,802 - 00:56:16,482] What does that vector look like?
+- [00:56:18,622 - 00:56:19,762] It has a radial.
+- [00:56:19,842 - 00:56:21,962] It has no theta component anywheres.
+- [00:56:29,481 - 00:56:30,202] Anywheres.
+- [00:56:30,202 - 00:56:30,902] Everywhere is on the plane.
+- [00:56:31,962 - 00:56:34,322] Its radial component is the same,
+- [00:56:34,322 - 00:56:35,342] equal to one.
+- [00:56:36,622 - 00:56:39,082] But it points outward from the origin.
+- [00:56:41,862 - 00:56:45,152] That's a vector which has radial component equal
+- [00:56:45,152 - 00:56:48,442] to one and theta component equal to zero.
+- [00:56:48,682 - 00:56:49,922] Quite obviously,
+- [00:56:49,922 - 00:56:51,942] the components are constant.
+- [00:56:51,962 - 00:56:54,502] The components are constant,
+- [00:56:54,502 - 00:56:55,422] one and zero.
+- [00:56:55,942 - 00:56:57,872] But nobody would look at that and
+- [00:56:57,872 - 00:56:59,802] say that the vector field is constant.
+- [00:57:00,262 - 00:57:02,342] It's varying from place to place.
+- [00:57:03,342 - 00:57:03,962] Obviously,
+- [00:57:03,962 - 00:57:05,052] the vector over here is
+- [00:57:05,052 - 00:57:06,142] different than it is over here.
+- [00:57:06,402 - 00:57:11,192] So here's an example of a vector field whose
+- [00:57:11,192 - 00:57:15,982] components are constant in a particular set of coordinates.
+- [00:57:16,482 - 00:57:18,152] Their components would not
+- [00:57:18,152 - 00:57:19,822] be constant in Cartesian coordinates.
+- [00:57:19,862 - 00:57:21,182] In Cartesian coordinates,
+- [00:57:21,182 - 00:57:21,942] here's a vector.
+- [00:57:21,942 - 00:57:22,862] Here it has an x component.
+- [00:57:23,082 - 00:57:24,542] Here it doesn't have an x component.
+- [00:57:24,962 - 00:57:27,322] But in polar coordinates,
+- [00:57:27,322 - 00:57:29,802] the components are completely constant,
+- [00:57:29,802 - 00:57:31,442] and yet the vector is not constant.
+- [00:57:32,322 - 00:57:32,502] All right.
+- [00:57:33,582 - 00:57:35,952] What would happen if we calculated
+- [00:57:35,952 - 00:57:38,322] the covariant derivative of this vector?
+- [00:57:38,642 - 00:57:40,442] We would find that it's not zero.
+- [00:57:41,662 - 00:57:43,282] We would find that it's not zero.
+- [00:57:43,402 - 00:57:46,712] And so it's the covariant derivative which picks up the
+- [00:57:46,712 - 00:57:50,022] real geometric fact that the vector varies from place to place.
+- [00:57:50,022 - 00:57:50,962] Now,
+- [00:57:50,962 - 00:57:53,302] I haven't told you what gamma is.
+- [00:57:53,982 - 00:57:58,392] Gamma is an object which can be
+- [00:57:58,392 - 00:58:02,802] constructed from the components of the metric tensor.
+- [00:58:03,262 - 00:58:05,772] So let's see if we can make a little
+- [00:58:05,772 - 00:58:08,282] bit of progress in finding out what gamma is.
+- [00:58:16,222 - 00:58:16,822] Okay.
+- [00:58:16,822 - 00:58:18,882] What about the covariant derivative
+- [00:58:18,882 - 00:58:20,942] of the metric tensor itself?
+- [00:58:23,942 - 00:58:26,522] Let's go to Cartesian coordinates first.
+- [00:58:27,022 - 00:58:28,762] In Cartesian coordinates,
+- [00:58:28,762 - 00:58:31,002] the metric tensor is what?
+- [00:58:31,042 - 00:58:32,922] What is the metric tensor in Cartesian coordinates?
+- [00:58:34,642 - 00:58:36,122] It's just delta mn.
+- [00:58:37,482 - 00:58:39,942] It really is constant from place to place.
+- [00:58:41,582 - 00:58:43,002] In Cartesian coordinates,
+- [00:58:43,002 - 00:58:44,322] it's absolutely constant.
+- [00:58:45,342 - 00:58:46,722] And incidentally,
+- [00:58:46,722 - 00:58:46,802] you can do this.
+- [00:58:46,802 - 00:58:51,242] If an object is constant in Cartesian coordinates
+- [00:58:51,242 - 00:58:55,682] where the coordinates don't flop around and change direction,
+- [00:58:56,002 - 00:58:58,102] if an object is constant in
+- [00:58:58,102 - 00:59:00,202] Cartesian coordinates from place to place,
+- [00:59:00,202 - 00:59:01,242] then it's really constant.
+- [00:59:01,762 - 00:59:05,032] You pointed out before that you could
+- [00:59:05,032 - 00:59:08,302] have a non-flat space with Cartesian coordinates.
+- [00:59:09,682 - 00:59:10,442] No,
+- [00:59:10,442 - 00:59:10,482] no.
+- [00:59:10,562 - 00:59:12,772] Cartesian coordinates means coordinates in which
+- [00:59:12,772 - 00:59:14,982] the metric tensor is delta mn.
+- [00:59:16,302 - 00:59:17,822] It's not just that you've drawn,
+- [00:59:17,822 - 00:59:20,302] it's not just that they've laid out coordinates like this.
+- [00:59:20,502 - 00:59:22,172] It means that the metric
+- [00:59:22,172 - 00:59:23,842] tensor is equal to delta mn.
+- [00:59:25,502 - 00:59:26,362] That's what I mean.
+- [00:59:26,502 - 00:59:27,942] It means the space is flat,
+- [00:59:27,942 - 00:59:31,362] and it means that the...
+- [00:59:32,302 - 00:59:34,662] Do you mean linear or Cartesian?
+- [00:59:36,182 - 00:59:36,802] I mean,
+- [00:59:36,802 - 00:59:38,562] when I speak about Cartesian coordinates,
+- [00:59:38,562 - 00:59:41,502] I'm now speaking about the flat blackboard.
+- [00:59:42,322 - 00:59:45,012] I'm speaking about a flat
+- [00:59:45,012 - 00:59:47,702] space with rectangular Cartesian coordinates.
+- [00:59:48,042 - 00:59:48,922] That's what I mean.
+- [00:59:49,262 - 00:59:50,882] So the metric tensor...
+- [00:59:50,882 - 00:59:52,142] If I took some other space,
+- [00:59:52,142 - 00:59:52,742] for example,
+- [00:59:52,742 - 00:59:56,802] I take the surface of a sphere and I
+- [00:59:56,802 - 01:00:00,862] lay it out on a plane by Mercator projection,
+- [01:00:02,262 - 01:00:04,272] then you draw the Mercator projection and
+- [01:00:04,272 - 01:00:06,282] it looks like it has Cartesian coordinates,
+- [01:00:06,742 - 01:00:08,332] but the metric tensor is
+- [01:00:08,332 - 01:00:09,922] not constant from place to place.
+- [01:00:10,522 - 01:00:17,902] That's why Greenland looks bigger than South America,
+- [01:00:17,902 - 01:00:20,662] because the metric is not uniform from place to place.
+- [01:00:21,462 - 01:00:22,022] Okay.
+- [01:00:22,202 - 01:00:24,202] What I mean by Cartesian coordinates,
+- [01:00:24,202 - 01:00:26,362] I mean Cartesian coordinates in flat space,
+- [01:00:26,362 - 01:00:28,662] the metric is just delta mn.
+- [01:00:29,682 - 01:00:31,242] This is clearly constant,
+- [01:00:31,242 - 01:00:38,542] and if the space is identical at all places,
+- [01:00:38,542 - 01:00:40,782] the coordinates don't flop around.
+- [01:00:42,062 - 01:00:43,972] Not only is the derivative of
+- [01:00:43,972 - 01:00:45,882] the metric tensor equal to zero,
+- [01:00:46,102 - 01:00:48,682] it makes good sense to say that...
+- [01:00:48,682 - 01:00:53,362] to expect that the real physics...
+- [01:00:53,362 - 01:00:58,502] the covariant derivative of the metric tensor is also zero.
+- [01:01:02,362 - 01:01:03,862] What would it be if not zero,
+- [01:01:03,862 - 01:01:06,642] if everything is exactly the same from point to point?
+- [01:01:07,221 - 01:01:09,082] And the space is completely flat.
+- [01:01:09,362 - 01:01:13,422] So it's natural to expect that
+- [01:01:13,422 - 01:01:17,482] the covariant derivative of the metric tensor,
+- [01:01:17,682 - 01:01:22,282] let's write a dr of gmn
+- [01:01:22,282 - 01:01:26,882] of y is equal to zero.
+- [01:01:27,682 - 01:01:28,982] Now why do I write that?
+- [01:01:29,162 - 01:01:32,512] I expect that the covariant derivative is
+- [01:01:32,512 - 01:01:35,862] going to be zero in the x coordinates,
+- [01:01:36,902 - 01:01:39,762] but the covariant derivative is supposed to be a tensor,
+- [01:01:40,002 - 01:01:41,442] and if a tensor is
+- [01:01:41,442 - 01:01:42,882] zero in one set of coordinates,
+- [01:01:42,882 - 01:01:44,862] it will be zero in all coordinates.
+- [01:01:45,342 - 01:01:47,182] So it better be that if
+- [01:01:47,182 - 01:01:49,022] I've defined the covariant derivative correctly,
+- [01:01:50,522 - 01:01:52,582] then in flat space like this,
+- [01:01:52,582 - 01:01:55,392] it had better be that the covariant
+- [01:01:55,392 - 01:01:58,202] derivative of gmn is also equal to zero.
+- [01:01:59,002 - 01:02:01,222] That's a property of the metric tensor
+- [01:02:01,222 - 01:02:03,442] that its covariant derivative is equal to zero,
+- [01:02:04,502 - 01:02:06,382] which is another way of saying physically,
+- [01:02:06,382 - 01:02:08,842] it doesn't vary from place to place,
+- [01:02:09,042 - 01:02:09,862] and in particular,
+- [01:02:09,862 - 01:02:12,262] in Cartesian coordinates in flat space,
+- [01:02:12,262 - 01:02:13,362] it doesn't vary at all.
+- [01:02:14,302 - 01:02:14,742] Okay,
+- [01:02:14,742 - 01:02:15,682] let's assume that's true.
+- [01:02:16,722 - 01:02:17,942] Let's take that as given,
+- [01:02:17,942 - 01:02:19,552] that the covariant derivative of
+- [01:02:19,552 - 01:02:21,162] the metric is equal to zero,
+- [01:02:21,302 - 01:02:22,662] and let's see what it says.
+- [01:02:22,882 - 01:02:23,782] And we'll do it by,
+- [01:02:23,782 - 01:02:24,442] well,
+- [01:02:24,442 - 01:02:25,682] just by substitution here.
+- [01:02:28,442 - 01:02:28,882] gmn.
+- [01:02:36,622 - 01:02:37,082] gmn,
+- [01:02:40,162 - 01:02:40,622] gns,
+- [01:02:45,121 - 01:02:46,042] and gmr,
+- [01:02:46,042 - 01:02:46,422] I think.
+- [01:02:51,942 - 01:02:53,462] And this should be equal to zero,
+- [01:02:54,662 - 01:02:55,972] if the covariant derivative of
+- [01:02:55,972 - 01:02:57,282] the metric is equal to zero.
+- [01:02:58,482 - 01:03:00,762] This is an identity which,
+- [01:03:00,762 - 01:03:02,642] if you struggle with it a little bit,
+- [01:03:02,902 - 01:03:05,722] you can actually solve it for gammas.
+- [01:03:06,382 - 01:03:07,642] In terms of derivatives of g.
+- [01:03:12,342 - 01:03:13,982] I'm not going to work it out on the blackboard.
+- [01:03:14,082 - 01:03:14,842] It's a little bit tedious.
+- [01:03:15,442 - 01:03:16,962] You can either look it up in a book,
+- [01:03:16,962 - 01:03:18,522] or you can try working it out yourself.
+- [01:03:19,642 - 01:03:22,022] A few tricks you need to write down.
+- [01:03:22,142 - 01:03:23,482] You need to write down a few,
+- [01:03:24,102 - 01:03:24,992] I'll tell you what to
+- [01:03:24,992 - 01:03:25,882] do when we get to it.
+- [01:03:26,142 - 01:03:28,582] I'll tell you what the solution of this equation is.
+- [01:03:29,122 - 01:03:29,382] This,
+- [01:03:29,382 - 01:03:32,522] regard this as an equation for the gammas.
+- [01:03:33,322 - 01:03:36,062] It's an equation for gammas in terms of g's,
+- [01:03:36,382 - 01:03:38,382] and in terms of derivatives of g's.
+- [01:03:38,782 - 01:03:39,802] That's what it is.
+- [01:03:41,242 - 01:03:46,082] Since g with lower indices multiplies gamma here,
+- [01:03:46,222 - 01:03:47,662] supposing I wanted to get
+- [01:03:47,662 - 01:03:49,102] rid of g with lower index.
+- [01:03:49,462 - 01:03:51,542] I have something which,
+- [01:03:52,222 - 01:03:56,602] let's first of all write
+- [01:03:58,382 - 01:04:01,162] that this thing here is equal to minus
+- [01:04:03,102 - 01:04:04,562] derivative of g,
+- [01:04:04,562 - 01:04:05,662] what was it?
+- [01:04:05,662 - 01:04:06,242] Oh yeah,
+- [01:04:06,242 - 01:04:06,362] yeah,
+- [01:04:06,362 - 01:04:06,482] yeah.
+- [01:04:06,502 - 01:04:14,402] I lost the derivative with respect to yp of gmn.
+- [01:04:14,662 - 01:04:15,062] Yeah.
+- [01:04:17,062 - 01:04:17,782] Approximately that.
+- [01:04:18,042 - 01:04:18,562] Okay.
+- [01:04:19,082 - 01:04:20,582] So here I have an equation.
+- [01:04:20,822 - 01:04:23,302] If it didn't have two terms like this,
+- [01:04:23,342 - 01:04:24,822] it would be very easy to solve.
+- [01:04:25,362 - 01:04:28,302] I would just multiply by the inverse of g.
+- [01:04:28,842 - 01:04:32,742] I have a gamma times a g,
+- [01:04:33,422 - 01:04:35,462] and g is an invertible matrix.
+- [01:04:36,662 - 01:04:39,142] So all I would have to do is
+- [01:04:39,702 - 01:04:41,742] run through the invertible matrix,
+- [01:04:42,262 - 01:04:44,942] and I would wind up with a g inverse.
+- [01:04:45,102 - 01:04:46,442] I would wind up with a gamma,
+- [01:04:47,481 - 01:04:49,162] something like pms,
+- [01:04:49,842 - 01:04:52,082] with a derivative of g on this side,
+- [01:04:52,221 - 01:04:53,741] and a g inverse,
+- [01:04:53,981 - 01:04:55,582] lower components here,
+- [01:04:55,862 - 01:04:58,162] and a g with upper components here.
+- [01:04:59,221 - 01:05:00,822] Just by inverting g,
+- [01:05:01,042 - 01:05:02,761] and bringing it over to the other side.
+- [01:05:03,102 - 01:05:04,372] It would bring an inverse
+- [01:05:04,372 - 01:05:05,642] of g to the other side.
+- [01:05:05,642 - 01:05:06,062] Is that clear?
+- [01:05:07,741 - 01:05:08,142] Well,
+- [01:05:08,142 - 01:05:08,582] we're doing it.
+- [01:05:08,942 - 01:05:11,262] But because there are two terms here,
+- [01:05:11,422 - 01:05:12,462] it's more complicated.
+- [01:05:13,122 - 01:05:14,202] It's more complicated.
+- [01:05:14,202 - 01:05:15,542] I'm going to write down the answer,
+- [01:05:15,722 - 01:05:17,842] and then what you do is you go home
+- [01:05:17,842 - 01:05:20,482] and you check that the answer that I write down
+- [01:05:21,541 - 01:05:22,862] satisfies this relationship.
+- [01:05:24,282 - 01:05:25,882] I'm going to write down what gamma is,
+- [01:05:26,341 - 01:05:28,582] and it's your job to go home and check
+- [01:05:29,061 - 01:05:30,582] that if you plug in for gamma,
+- [01:05:30,762 - 01:05:33,102] it really does satisfy this condition.
+- [01:05:33,442 - 01:05:34,762] So I'm going to write down what it is.
+- [01:05:34,762 - 01:05:36,142] Does anybody know what these things are called?
+- [01:05:36,262 - 01:05:37,102] The gammas?
+- [01:05:37,122 - 01:05:38,042] I forgot to tell you.
+- [01:05:39,782 - 01:05:41,242] They're called Christoffel symbols.
+- [01:05:43,402 - 01:05:44,302] They're called connections.
+- [01:05:46,842 - 01:05:47,802] Affine connection.
+- [01:05:49,602 - 01:05:50,322] Christoffel symbols.
+- [01:05:50,582 - 01:05:51,422] Whatever you like.
+- [01:05:53,262 - 01:05:54,042] Christoffel symbols,
+- [01:05:54,042 - 01:05:54,922] not Christoffel.
+- [01:05:56,542 - 01:05:57,922] They're not called gammas?
+- [01:05:58,162 - 01:05:59,142] They're called gammas,
+- [01:05:59,142 - 01:05:59,342] too.
+- [01:06:00,722 - 01:06:01,202] Yeah.
+- [01:06:01,742 - 01:06:03,302] There's a lot of things called gammas.
+- [01:06:03,302 - 01:06:03,802] What's that?
+- [01:06:04,022 - 01:06:05,542] There's a lot of things called gammas.
+- [01:06:05,822 - 01:06:06,262] Yeah,
+- [01:06:06,262 - 01:06:07,362] but not too many of them
+- [01:06:07,362 - 01:06:08,622] with three indices like that.
+- [01:06:08,722 - 01:06:10,862] So if you want to give them the right name,
+- [01:06:10,962 - 01:06:13,262] their right name is Christoffel symbol.
+- [01:06:13,742 - 01:06:14,982] There are all kinds of things
+- [01:06:14,982 - 01:06:15,922] which are called connections.
+- [01:06:16,202 - 01:06:17,182] They're all similar,
+- [01:06:17,182 - 01:06:18,682] and they're all related.
+- [01:06:19,362 - 01:06:22,362] They all are doing the same kind of job
+- [01:06:22,362 - 01:06:23,482] in various contexts,
+- [01:06:24,262 - 01:06:25,622] but in geometry,
+- [01:06:25,982 - 01:06:28,302] in this metric geometry like this,
+- [01:06:28,422 - 01:06:30,322] these objects are called Christoffel symbols.
+- [01:06:31,022 - 01:06:33,162] Is there a Christoffel symbol of two kinds?
+- [01:06:33,302 - 01:06:33,842] Yeah.
+- [01:06:34,162 - 01:06:36,922] But they're just related by raising and lowering indices.
+- [01:06:37,542 - 01:06:38,142] Yeah.
+- [01:06:38,262 - 01:06:39,602] I just noticed,
+- [01:06:39,602 - 01:06:40,942] it looks like you can lower indices
+- [01:06:40,942 - 01:06:42,122] on those terms,
+- [01:06:42,122 - 01:06:42,502] can't you?
+- [01:06:42,762 - 01:06:43,722] Which two terms?
+- [01:06:43,942 - 01:06:45,362] The right-hand side.
+- [01:06:46,122 - 01:06:46,722] Yeah.
+- [01:06:47,082 - 01:06:47,682] Yeah,
+- [01:06:47,682 - 01:06:47,982] you could.
+- [01:06:48,402 - 01:06:49,002] Indeed.
+- [01:06:49,162 - 01:06:50,382] You could pull,
+- [01:06:50,382 - 01:06:52,242] this could be written,
+- [01:06:52,862 - 01:06:58,362] this could be written as gamma P M
+- [01:06:59,682 - 01:07:01,982] with another index N downstairs.
+- [01:07:03,702 - 01:07:04,182] Right.
+- [01:07:04,342 - 01:07:05,702] And how about this one over here?
+- [01:07:06,202 - 01:07:18,942] This one could be written as gamma P N M.
+- [01:07:21,022 - 01:07:23,482] They're identical except one of them has M N,
+- [01:07:23,622 - 01:07:24,802] the other one has N M.
+- [01:07:25,822 - 01:07:26,302] Okay.
+- [01:07:28,022 - 01:07:29,222] So they're not the same.
+- [01:07:29,482 - 01:07:30,262] In general,
+- [01:07:30,262 - 01:07:30,982] they're not the same.
+- [01:07:31,182 - 01:07:31,742] You can't,
+- [01:07:31,742 - 01:07:33,282] you can't obviously equate them,
+- [01:07:33,302 - 01:07:34,422] they're not the same.
+- [01:07:34,942 - 01:07:36,402] And for that reason,
+- [01:07:36,402 - 01:07:38,562] you can't just solve this equation
+- [01:07:39,102 - 01:07:41,772] by saying that this thing
+- [01:07:41,772 - 01:07:44,442] is basically half of this thing.
+- [01:07:44,682 - 01:07:45,322] Not so.
+- [01:07:45,442 - 01:07:46,182] It's more complicated.
+- [01:07:46,582 - 01:07:48,342] But I'll write down what the answer is
+- [01:07:48,342 - 01:07:50,082] and you can check that.
+- [01:07:51,702 - 01:07:52,402] In fact,
+- [01:07:52,402 - 01:07:56,022] yeah,
+- [01:07:56,022 - 01:07:56,962] let's write down the answer.
+- [01:08:03,802 - 01:08:04,502] All right.
+- [01:08:07,602 - 01:08:09,302] I'm going to use other letters now
+- [01:08:09,302 - 01:08:11,702] so that we don't confuse them with the letters here.
+- [01:08:11,942 - 01:08:12,842] I'll use A,
+- [01:08:12,842 - 01:08:13,062] B,
+- [01:08:13,062 - 01:08:13,422] and C.
+- [01:08:16,062 - 01:08:17,022] Gamma A,
+- [01:08:17,022 - 01:08:17,542] B,
+- [01:08:17,542 - 01:08:25,862] C is equal to one-half G A D.
+- [01:08:26,082 - 01:08:27,881] I need another letter of the alphabet.
+- [01:08:28,082 - 01:08:29,662] That's going to be a summation index.
+- [01:08:29,662 - 01:08:33,502] And then it's the sum of three terms.
+- [01:08:34,162 - 01:08:35,261] Three terms.
+- [01:08:35,362 - 01:08:37,381] Each one has a derivative.
+- [01:08:37,962 - 01:08:42,322] Each term has a G with a superindex here,
+- [01:08:42,402 - 01:08:43,162] upstairs index,
+- [01:08:43,502 - 01:08:46,341] and then derivatives of G with lower indices.
+- [01:08:47,022 - 01:08:49,002] It's just the indices are a little bit intricate.
+- [01:08:49,801 - 01:08:53,102] G A D times the
+- [01:08:53,102 - 01:08:56,402] partial of the derivative of G,
+- [01:08:56,562 - 01:08:57,482] let's see,
+- [01:08:57,482 - 01:08:58,102] what is it?
+- [01:08:59,482 - 01:09:06,862] D C with respect to X B.
+- [01:09:08,881 - 01:09:12,022] D C with respect to X
+- [01:09:12,022 - 01:09:15,162] B plus the partial of G,
+- [01:09:16,261 - 01:09:17,702] now let's see,
+- [01:09:17,702 - 01:09:18,702] wherever I see B,
+- [01:09:18,881 - 01:09:23,761] see G D B with respect to X C
+- [01:09:24,962 - 01:09:28,082] minus the derivative of G A.
+- [01:09:28,102 - 01:09:32,221] B C with respect to X D.
+- [01:09:39,261 - 01:09:39,942] Um,
+- [01:09:39,942 - 01:09:41,261] the question is,
+- [01:09:41,261 - 01:09:41,442] sir,
+- [01:09:42,942 - 01:09:45,522] when you're over on the southern coordinate,
+- [01:09:45,881 - 01:09:47,742] do you think you're doing a derivative
+- [01:09:47,742 - 01:09:50,261] with respect to the Y coordinate?
+- [01:09:50,502 - 01:09:50,721] Oh,
+- [01:09:50,721 - 01:09:51,162] sorry.
+- [01:09:51,902 - 01:09:52,822] Depending on whether,
+- [01:09:52,822 - 01:09:54,622] in any coordinate system,
+- [01:09:54,802 - 01:09:55,522] it has this form.
+- [01:09:56,002 - 01:09:56,682] Right.
+- [01:09:56,682 - 01:09:58,822] So if I was working in the Y coordinates,
+- [01:09:59,102 - 01:10:00,202] I would put Y there.
+- [01:10:00,902 - 01:10:01,342] Right.
+- [01:10:01,662 - 01:10:02,282] But then,
+- [01:10:02,282 - 01:10:02,622] of course,
+- [01:10:02,622 - 01:10:05,502] I would use the metric
+- [01:10:07,942 - 01:10:09,422] in Y coordinates.
+- [01:10:10,482 - 01:10:11,722] Metric in Y coordinates,
+- [01:10:11,722 - 01:10:12,642] if I wanted these,
+- [01:10:12,782 - 01:10:14,742] and this would be the Christoffel symbol
+- [01:10:14,742 - 01:10:15,742] and Y coordinates.
+- [01:10:16,482 - 01:10:18,942] Now the Christoffel symbol itself is not a tensor.
+- [01:10:20,022 - 01:10:20,962] It's not a tensor.
+- [01:10:23,121 - 01:10:24,002] For example,
+- [01:10:24,002 - 01:10:25,762] one way to see that it's not a tensor
+- [01:10:25,762 - 01:10:28,762] is if we were in conventional Cartesian coordinates
+- [01:10:28,762 - 01:10:29,862] in flat space,
+- [01:10:29,862 - 01:10:31,502] the derivatives,
+- [01:10:31,682 - 01:10:33,822] and with X coordinates,
+- [01:10:34,802 - 01:10:37,022] the derivatives of G are all zero.
+- [01:10:37,482 - 01:10:39,382] So this whole thing would be zero
+- [01:10:40,082 - 01:10:41,382] in X coordinates.
+- [01:10:41,742 - 01:10:42,882] On the other hand,
+- [01:10:42,882 - 01:10:44,022] if we changed coordinates
+- [01:10:44,582 - 01:10:46,802] to some other kind of curvilinear coordinates,
+- [01:10:47,522 - 01:10:49,602] the G's would not be constant anymore,
+- [01:10:49,782 - 01:10:52,642] and the Christoffel symbol would not be zero.
+- [01:10:52,642 - 01:10:55,382] So the Christoffel symbol is not a tensor,
+- [01:10:55,582 - 01:10:59,702] but it's to be used in conjunction with tensors
+- [01:10:59,702 - 01:11:01,622] to construct covariant derivatives.
+- [01:11:02,002 - 01:11:04,082] That's its whole goal in life,
+- [01:11:04,262 - 01:11:06,002] is to be used together
+- [01:11:06,002 - 01:11:07,742] with the rules that I outlined
+- [01:11:07,742 - 01:11:10,722] for constructing derivatives of tensors.
+- [01:11:10,962 - 01:11:12,642] It's the extra term,
+- [01:11:12,702 - 01:11:14,212] or it's a piece of
+- [01:11:14,212 - 01:11:15,722] the extra term which is there
+- [01:11:15,722 - 01:11:18,202] because the coordinates wiggle from place to place.
+- [01:11:19,922 - 01:11:20,682] All right,
+- [01:11:20,682 - 01:11:22,622] so your job then is to test
+- [01:11:22,642 - 01:11:23,462] how you can take this expression,
+- [01:11:24,282 - 01:11:25,642] feed it into here,
+- [01:11:26,682 - 01:11:29,362] and check that what you get on the left-hand side
+- [01:11:29,362 - 01:11:31,002] is just dG by dy.
+- [01:11:32,762 - 01:11:33,802] That's the...
+- [01:11:37,182 - 01:11:38,522] I don't remember.
+- [01:11:44,222 - 01:11:44,742] Forgot,
+- [01:11:44,742 - 01:11:45,142] I don't remember.
+- [01:11:50,602 - 01:11:51,362] It's a...
+- [01:11:51,362 - 01:11:52,002] I don't know.
+- [01:11:52,002 - 01:11:52,202] I don't know.
+- [01:11:53,202 - 01:11:54,102] I'm not sure why.
+- [01:11:55,282 - 01:11:57,382] If we plug it in,
+- [01:11:57,382 - 01:11:57,882] it ought to work.
+- [01:11:59,122 - 01:11:59,942] I don't remember.
+- [01:12:05,042 - 01:12:05,482] Oh,
+- [01:12:05,482 - 01:12:05,722] yeah.
+- [01:12:06,522 - 01:12:08,102] And the important thing is,
+- [01:12:08,102 - 01:12:09,062] look at the structure of it.
+- [01:12:13,102 - 01:12:13,902] The two...
+- [01:12:13,902 - 01:12:14,842] the BC components,
+- [01:12:15,821 - 01:12:17,882] in one term you have B downstairs,
+- [01:12:18,762 - 01:12:20,642] in the other term you have C downstairs.
+- [01:12:20,642 - 01:12:22,562] Those come in with plus sign,
+- [01:12:22,802 - 01:12:26,602] and then the last component has D downstairs.
+- [01:12:30,062 - 01:12:30,582] Okay,
+- [01:12:30,582 - 01:12:32,802] you can play with it and work it out.
+- [01:12:33,022 - 01:12:34,782] But the important thing about it,
+- [01:12:34,822 - 01:12:37,762] it's not so important exactly what it is.
+- [01:12:38,522 - 01:12:39,902] You can memorize it if
+- [01:12:39,902 - 01:12:41,282] you like or don't memorize it,
+- [01:12:41,342 - 01:12:43,802] but the important thing is it is the connection,
+- [01:12:44,062 - 01:12:45,082] it is the object,
+- [01:12:45,262 - 01:12:48,382] which allows you to differentiate tensors.
+- [01:12:48,382 - 01:12:48,382] So,
+- [01:12:48,382 - 01:12:51,502] you can use the derivative of V...
+- [01:12:51,502 - 01:12:54,622] M with respect to X,
+- [01:12:54,742 - 01:12:57,682] N plus gamma N...
+- [01:13:00,742 - 01:13:04,262] M R V R.
+- [01:13:06,942 - 01:13:08,602] Covariant derivative.
+- [01:13:11,922 - 01:13:13,322] Okay.
+- [01:13:17,662 - 01:13:17,662] Well,
+- [01:13:17,662 - 01:13:18,022] that's a funny,
+- [01:13:18,022 - 01:13:19,062] strange question.
+- [01:13:19,442 - 01:13:22,262] Is there some kind of convention
+- [01:13:22,262 - 01:13:26,742] where you have downstairs indices
+- [01:13:26,742 - 01:13:28,462] that are underneath the log
+- [01:13:29,522 - 01:13:31,562] and then you have downstairs indices
+- [01:13:31,562 - 01:13:33,082] above the log,
+- [01:13:33,122 - 01:13:34,342] over here on the right hand side,
+- [01:13:34,342 - 01:13:35,742] right?
+- [01:13:36,898 - 01:13:37,158] はい
+- [01:13:37,538 - 01:13:39,378] y sub v is a downstairs index.
+- [01:13:40,498 - 01:13:41,718] It's a downstairs index.
+- [01:13:41,758 - 01:13:42,678] It's upstairs in y,
+- [01:13:42,678 - 01:13:44,118] but because it's below the line,
+- [01:13:44,118 - 01:13:45,398] it's downstairs.
+- [01:13:45,518 - 01:13:45,698] Right.
+- [01:13:45,798 - 01:13:46,998] You have three downstairs indices,
+- [01:13:46,998 - 01:13:51,388] but it isn't obvious to me what the order of those
+- [01:13:51,388 - 01:13:55,778] indices should be written as if you wrote them all as downstairs.
+- [01:13:58,618 - 01:13:59,918] You mean this one too?
+- [01:14:00,398 - 01:14:00,818] No.
+- [01:14:02,437 - 01:14:04,118] Just the part inside brackets.
+- [01:14:04,778 - 01:14:05,218] Basically,
+- [01:14:05,218 - 01:14:06,858] we have three downstairs indices,
+- [01:14:06,858 - 01:14:08,758] but should I call that v,
+- [01:14:08,758 - 01:14:08,918] d,
+- [01:14:08,918 - 01:14:09,138] c,
+- [01:14:09,138 - 01:14:09,678] or d,
+- [01:14:09,678 - 01:14:09,858] c,
+- [01:14:09,858 - 01:14:10,058] b,
+- [01:14:10,058 - 01:14:13,328] if I was thinking of it as
+- [01:14:13,328 - 01:14:16,598] one of the identity with three downstairs indices?
+- [01:14:17,938 - 01:14:19,878] It's not symmetric with respect to them.
+- [01:14:19,978 - 01:14:21,898] It is symmetric with respect to b and c.
+- [01:14:23,818 - 01:14:25,618] It's symmetric with respect to b and c,
+- [01:14:25,618 - 01:14:26,858] but not with respect to d.
+- [01:14:27,138 - 01:14:28,678] And that you can see because there's
+- [01:14:28,678 - 01:14:30,218] a minus sign here among other things.
+- [01:14:30,558 - 01:14:32,798] It has three downstairs indices.
+- [01:14:32,998 - 01:14:33,358] Yeah.
+- [01:14:34,118 - 01:14:34,818] It does.
+- [01:14:36,198 - 01:14:36,498] Yeah.
+- [01:14:36,978 - 01:14:40,378] So we could call it gamma b,
+- [01:14:40,378 - 01:14:41,118] c,
+- [01:14:41,118 - 01:14:42,798] d.
+- [01:14:48,797 - 01:14:49,398] No,
+- [01:14:49,398 - 01:14:54,038] it's got two downstairs indices plus a third one.
+- [01:14:54,258 - 01:14:54,858] Okay.
+- [01:14:57,338 - 01:15:00,038] You just have to remember which one goes where.
+- [01:15:02,298 - 01:15:02,898] Okay.
+- [01:15:05,938 - 01:15:06,838] And it happens,
+- [01:15:06,838 - 01:15:08,178] if you look at it carefully,
+- [01:15:08,178 - 01:15:09,908] you'll see that it's interchange symmetric
+- [01:15:09,908 - 01:15:11,638] with respect to b and c,
+- [01:15:11,638 - 01:15:13,338] but not with respect to d.
+- [01:15:13,518 - 01:15:13,858] Okay.
+- [01:15:17,758 - 01:15:19,658] I thought the d disappeared.
+- [01:15:19,958 - 01:15:21,078] I just made it.
+- [01:15:22,598 - 01:15:23,038] Yeah,
+- [01:15:23,038 - 01:15:23,158] yeah,
+- [01:15:23,158 - 01:15:23,738] but nevertheless,
+- [01:15:23,738 - 01:15:25,558] we have to give this thing a name in here.
+- [01:15:25,818 - 01:15:27,598] That gets multiplied by g,
+- [01:15:27,598 - 01:15:28,198] a,
+- [01:15:28,198 - 01:15:28,418] d.
+- [01:15:31,338 - 01:15:32,898] And then the d disappears.
+- [01:15:33,138 - 01:15:33,578] Okay.
+- [01:15:33,658 - 01:15:34,098] Okay.
+- [01:15:34,118 - 01:15:35,138] And before we disappear it,
+- [01:15:35,138 - 01:15:36,598] we give it a name.
+- [01:15:38,018 - 01:15:38,698] Okay.
+- [01:15:38,978 - 01:15:44,878] Using g to write lower indices,
+- [01:15:44,878 - 01:15:46,938] that works with non-tensors?
+- [01:15:47,077 - 01:15:48,658] It happens in this case,
+- [01:15:48,658 - 01:15:48,978] it does.
+- [01:15:49,178 - 01:15:49,398] Yeah.
+- [01:15:49,718 - 01:15:51,258] It happens in this case.
+- [01:15:51,398 - 01:15:52,238] And furthermore,
+- [01:15:52,238 - 01:15:54,018] furthermore,
+- [01:15:54,018 - 01:15:57,658] you can use gamma
+- [01:15:57,658 - 01:16:01,298] to differentiate contravariant tensors also.
+- [01:16:02,218 - 01:16:03,278] For example,
+- [01:16:03,278 - 01:16:04,098] I'll show you.
+- [01:16:04,118 - 01:16:04,538] I'll show you the rule.
+- [01:16:04,958 - 01:16:06,138] The same object,
+- [01:16:06,138 - 01:16:08,378] as it happens,
+- [01:16:08,378 - 01:16:12,338] enters into the derivative of contravariant tensors,
+- [01:16:12,338 - 01:16:17,998] contravariant components of tensors.
+- [01:16:18,218 - 01:16:19,098] For example,
+- [01:16:19,098 - 01:16:22,658] if you have a vector with an index n,
+- [01:16:22,658 - 01:16:25,018] now it has an upper index n,
+- [01:16:25,018 - 01:16:25,838] again,
+- [01:16:25,838 - 01:16:26,958] y components,
+- [01:16:26,958 - 01:16:33,098] and you want to differentiate it with respect to ym.
+- [01:16:33,258 - 01:16:33,798] Okay.
+- [01:16:34,118 - 01:16:34,538] So,
+- [01:16:34,538 - 01:16:34,538] you have a vector with an index n,
+- [01:16:34,538 - 01:16:34,538] again,
+- [01:16:34,538 - 01:16:34,538] y components,
+- [01:16:34,538 - 01:16:34,538] and you want to differentiate it with respect to ym.
+- [01:16:34,538 - 01:16:35,778] That itself is not a tensor.
+- [01:16:35,918 - 01:16:37,198] For the same reasons,
+- [01:16:37,198 - 01:16:39,508] the contravariant components also depend
+- [01:16:39,508 - 01:16:41,818] on the direction of the axes.
+- [01:16:42,298 - 01:16:42,778] So,
+- [01:16:42,778 - 01:16:44,038] as the axes move around,
+- [01:16:44,038 - 01:16:45,398] you've got to keep track of that.
+- [01:16:45,778 - 01:16:48,508] And the derivative of the
+- [01:16:48,508 - 01:16:51,238] contravariant components are not themselves tensors.
+- [01:16:51,678 - 01:16:52,278] All right.
+- [01:16:52,358 - 01:16:54,628] This would be a tensor with
+- [01:16:54,628 - 01:16:56,898] one upper index and one lower index,
+- [01:16:56,898 - 01:16:57,718] but it's not.
+- [01:16:57,858 - 01:16:59,258] You have to add something to it.
+- [01:16:59,578 - 01:17:00,928] And the thing you have
+- [01:17:00,928 - 01:17:02,278] to add to it has gamma.
+- [01:17:02,918 - 01:17:03,438] Now,
+- [01:17:03,438 - 01:17:04,898] it has a lower index m,
+- [01:17:04,898 - 01:17:08,238] an upper index n.
+- [01:17:09,278 - 01:17:11,058] We're going to have to put in another index.
+- [01:17:11,098 - 01:17:11,898] Let's call it r.
+- [01:17:12,418 - 01:17:14,078] That's going to be a summation index.
+- [01:17:14,618 - 01:17:18,558] And then a vr of y.
+- [01:17:22,818 - 01:17:23,338] So,
+- [01:17:23,338 - 01:17:27,348] the same set of objects is
+- [01:17:27,348 - 01:17:31,358] useful in differentiating things with upper indices.
+- [01:17:33,278 - 01:17:35,978] Once you construct this family of objects,
+- [01:17:35,978 - 01:17:36,958] and there's a lot of them.
+- [01:17:37,278 - 01:17:39,658] How many of them are there in three-dimensional space?
+- [01:17:39,898 - 01:17:41,058] Three times three times three,
+- [01:17:41,058 - 01:17:41,978] 27 of them.
+- [01:17:42,038 - 01:17:43,058] In four-dimensional space,
+- [01:17:43,058 - 01:17:43,838] it's 64.
+- [01:17:44,638 - 01:17:45,218] Of course,
+- [01:17:45,218 - 01:17:45,998] they're not all independent.
+- [01:17:47,038 - 01:17:48,858] They do have some symmetries.
+- [01:17:49,438 - 01:17:50,898] But there's a lot of components.
+- [01:17:51,138 - 01:17:51,358] And so,
+- [01:17:51,358 - 01:17:52,738] if you're actually doing some computation,
+- [01:17:52,738 - 01:17:54,458] you might want to write
+- [01:17:54,458 - 01:17:56,178] them all down in your notebook,
+- [01:17:56,377 - 01:17:57,578] make a list of them,
+- [01:17:57,578 - 01:17:58,158] what they are,
+- [01:17:58,158 - 01:17:59,198] what their values are,
+- [01:17:59,198 - 01:18:00,858] and then start playing with them.
+- [01:18:00,998 - 01:18:01,438] So,
+- [01:18:01,438 - 01:18:02,078] it's...
+- [01:18:02,278 - 01:18:05,478] It's a tedious business working out these things.
+- [01:18:05,898 - 01:18:06,938] But the logic...
+- [01:18:06,938 - 01:18:09,388] It's the logic that I want
+- [01:18:09,388 - 01:18:11,838] you to understand that differentiating tensors
+- [01:18:11,838 - 01:18:13,368] and doing it in a
+- [01:18:13,368 - 01:18:14,898] way that gives you back tensors
+- [01:18:14,898 - 01:18:18,298] is a slightly complicated process that involves a new thing,
+- [01:18:18,998 - 01:18:22,078] namely the so-called connection or Christoffel symbol.
+- [01:18:23,658 - 01:18:24,938] That's the basic lesson.
+- [01:18:25,298 - 01:18:25,878] Okay,
+- [01:18:25,878 - 01:18:26,138] yeah.
+- [01:18:26,498 - 01:18:27,098] So,
+- [01:18:27,098 - 01:18:32,258] the reason that the metric has a zero...
+- [01:18:32,898 - 01:18:36,098] covariance derivative is because it's zero in Cartesian,
+- [01:18:36,098 - 01:18:38,578] and it also must be zero in the other.
+- [01:18:38,758 - 01:18:38,978] Yeah.
+- [01:18:39,318 - 01:18:41,488] It makes a lot of sense to say
+- [01:18:41,488 - 01:18:43,658] that in the Cartesian coordinates in flat space,
+- [01:18:44,758 - 01:18:46,738] flat space is the same everywhere.
+- [01:18:46,938 - 01:18:49,958] It makes a lot of sense to say the basic
+- [01:18:49,958 - 01:18:52,978] object in that space is constant from position to position.
+- [01:18:53,358 - 01:18:55,658] You don't have to define it that way.
+- [01:18:55,778 - 01:18:57,998] You could have defined some crazy definition,
+- [01:18:57,998 - 01:18:59,618] but in flat,
+- [01:18:59,618 - 01:19:00,738] homogeneous space,
+- [01:19:00,958 - 01:19:02,258] the blackboard going on...
+- [01:19:02,278 - 01:19:02,938] going on and on forever,
+- [01:19:02,938 - 01:19:06,758] perfectly flat and perfectly homogeneous.
+- [01:19:07,258 - 01:19:09,458] Homogeneous means the same everywheres.
+- [01:19:10,058 - 01:19:12,788] It makes good sense to say that the
+- [01:19:12,788 - 01:19:15,518] metric has no variation from place to place.
+- [01:19:17,218 - 01:19:17,858] So,
+- [01:19:17,858 - 01:19:19,458] in the flat coordinates,
+- [01:19:19,458 - 01:19:22,898] the tensor that you would make
+- [01:19:22,898 - 01:19:26,338] by differentiating the metric would be zero.
+- [01:19:28,318 - 01:19:30,798] Once it's zero in one coordinate system,
+- [01:19:30,798 - 01:19:31,978] if it's a tensor,
+- [01:19:32,278 - 01:19:34,418] then it has to be zero in all coordinate systems.
+- [01:19:34,898 - 01:19:35,558] And so,
+- [01:19:35,558 - 01:19:38,428] one comes to the conclusion that the
+- [01:19:38,428 - 01:19:41,298] covariance derivative of the metric should be zero.
+- [01:19:41,698 - 01:19:47,258] That's what we use to find a basic relationship which,
+- [01:19:47,258 - 01:19:47,898] when solved,
+- [01:19:47,898 - 01:19:49,058] gives us this formula.
+- [01:19:50,318 - 01:19:50,878] Yeah.
+- [01:19:51,558 - 01:19:57,438] Do you have a way of looking at the derivative,
+- [01:19:57,438 - 01:19:59,768] the covariance derivative of a
+- [01:19:59,768 - 01:20:02,098] vector that doesn't involve the coordinates?
+- [01:20:02,278 - 01:20:02,658] In other words,
+- [01:20:02,658 - 01:20:06,278] you're taking the nearby things and doing something to them.
+- [01:20:06,498 - 01:20:08,478] And what precisely is it?
+- [01:20:09,978 - 01:20:10,758] I mean,
+- [01:20:10,758 - 01:20:13,298] here we've gotten a lot of information.
+- [01:20:13,558 - 01:20:13,718] Well,
+- [01:20:13,718 - 01:20:14,338] okay.
+- [01:20:14,858 - 01:20:15,458] Yeah.
+- [01:20:16,078 - 01:20:18,738] It's very hard to describe
+- [01:20:18,738 - 01:20:21,398] what you're doing without introducing coordinates.
+- [01:20:22,098 - 01:20:24,278] But maybe it helps a little bit,
+- [01:20:24,278 - 01:20:25,418] the following idea.
+- [01:20:26,378 - 01:20:27,318] Any space,
+- [01:20:27,318 - 01:20:31,658] any Riemannian space like this,
+- [01:20:32,278 - 01:20:34,878] with metrics like this called Riemannian spaces,
+- [01:20:35,598 - 01:20:36,838] any Riemannian space,
+- [01:20:36,838 - 01:20:41,198] curved or not curved,
+- [01:20:42,238 - 01:20:42,838] locally,
+- [01:20:42,838 - 01:20:44,238] that means if you look at
+- [01:20:44,238 - 01:20:45,638] a very small patch of it,
+- [01:20:45,758 - 01:20:47,398] looks like flat space.
+- [01:20:48,237 - 01:20:49,967] It's indistinguishable from flat space
+- [01:20:49,967 - 01:20:51,698] for a small enough region.
+- [01:20:52,078 - 01:20:54,278] That means on a small region there,
+- [01:20:54,278 - 01:20:56,298] you can introduce Cartesian coordinates.
+- [01:20:57,398 - 01:20:59,898] You can introduce perpendicular,
+- [01:20:59,898 - 01:21:02,818] perpendicular coordinates.
+- [01:21:03,878 - 01:21:07,758] And you can even do it so that the derivative,
+- [01:21:08,078 - 01:21:09,578] first of all,
+- [01:21:09,578 - 01:21:10,978] so that the metric at
+- [01:21:10,978 - 01:21:12,378] that point is delta m n,
+- [01:21:14,738 - 01:21:15,798] by introducing,
+- [01:21:15,798 - 01:21:16,398] you know,
+- [01:21:16,398 - 01:21:17,198] on the surface of the Earth.
+- [01:21:17,278 - 01:21:18,358] The Earth is not flat,
+- [01:21:20,278 - 01:21:24,498] but just drawing two perpendicular great circles,
+- [01:21:24,498 - 01:21:25,078] basically.
+- [01:21:26,378 - 01:21:28,838] Wouldn't even realize they were great circles if we're,
+- [01:21:29,898 - 01:21:31,198] looking at some small region.
+- [01:21:31,338 - 01:21:32,818] We just think they're straight lines.
+- [01:21:33,158 - 01:21:34,318] And introduce locally,
+- [01:21:35,638 - 01:21:36,998] in the vicinity of a point,
+- [01:21:37,738 - 01:21:38,858] Cartesian coordinates.
+- [01:21:39,578 - 01:21:42,058] Then the metric at that point,
+- [01:21:43,018 - 01:21:44,178] at that point,
+- [01:21:44,178 - 01:21:45,978] the metric will just be delta m n.
+- [01:21:48,258 - 01:21:51,058] But it's possible to do even a little better than just
+- [01:21:51,058 - 01:21:53,858] saying that the metric is delta m n at a point.
+- [01:21:54,238 - 01:21:56,648] It's also possible to keep the
+- [01:21:56,648 - 01:21:59,058] coordinates straight enough and perpendicular enough,
+- [01:21:59,898 - 01:22:02,658] so that the derivatives of the metric at that point,
+- [01:22:02,738 - 01:22:03,718] at a single point,
+- [01:22:03,718 - 01:22:04,218] are zero.
+- [01:22:04,898 - 01:22:06,978] So that up to first derivatives,
+- [01:22:07,198 - 01:22:08,518] the metric is constant,
+- [01:22:09,277 - 01:22:09,717] and,
+- [01:22:09,717 - 01:22:10,038] uh,
+- [01:22:11,558 - 01:22:13,518] and just of the form delta m n,
+- [01:22:14,357 - 01:22:16,278] at a particular point of space.
+- [01:22:17,577 - 01:22:18,678] With a given set of,
+- [01:22:18,758 - 01:22:19,178] well,
+- [01:22:19,178 - 01:22:20,118] with a given space,
+- [01:22:20,498 - 01:22:22,738] you can't make the metric constant everywhere,
+- [01:22:22,918 - 01:22:24,758] unless the space happens to be flat.
+- [01:22:25,578 - 01:22:26,778] If the space is flat,
+- [01:22:26,778 - 01:22:27,818] you can make the metric,
+- [01:22:28,318 - 01:22:28,958] like this,
+- [01:22:28,958 - 01:22:29,298] everywhere.
+- [01:22:29,298 - 01:22:30,358] But if it's not flat,
+- [01:22:30,858 - 01:22:32,898] you can go to a particular point and do that.
+- [01:22:32,978 - 01:22:34,318] Now there was a reason why I raised that,
+- [01:22:34,378 - 01:22:35,418] but I forgot what the question was,
+- [01:22:35,418 - 01:22:35,658] though.
+- [01:22:35,798 - 01:22:36,698] You were talking about the derivative.
+- [01:22:39,158 - 01:22:40,178] The covariant derivative.
+- [01:22:40,678 - 01:22:40,838] Yeah.
+- [01:22:43,178 - 01:22:44,598] The covariant derivative of what?
+- [01:22:45,438 - 01:22:46,218] The vector.
+- [01:22:46,838 - 01:22:47,418] The vector.
+- [01:22:48,178 - 01:22:50,018] You can see from the form of that,
+- [01:22:50,078 - 01:22:51,888] the covariant derivative is symbolized
+- [01:22:51,888 - 01:22:53,698] as having zero in that coordinate.
+- [01:22:53,738 - 01:22:53,798] Yeah.
+- [01:22:53,798 - 01:22:53,918] Okay.
+- [01:22:54,018 - 01:22:55,038] So what it means,
+- [01:22:55,678 - 01:22:56,778] at such a point,
+- [01:22:56,778 - 01:22:59,378] if you go to these locally Cartesian coordinates,
+- [01:22:59,778 - 01:23:02,798] then the locally Cartesian coordinates like this,
+- [01:23:02,978 - 01:23:04,748] the derivatives of g at that
+- [01:23:04,748 - 01:23:06,518] point are all equal to zero,
+- [01:23:06,718 - 01:23:09,418] and at that point,
+- [01:23:09,578 - 01:23:11,738] focusing on that particular point,
+- [01:23:12,058 - 01:23:15,278] the covariant derivative is just the ordinary derivative.
+- [01:23:16,778 - 01:23:18,138] In those coordinates.
+- [01:23:18,518 - 01:23:19,458] In other words,
+- [01:23:19,458 - 01:23:21,738] you erect as close as you can get
+- [01:23:21,738 - 01:23:23,398] the flat space,
+- [01:23:23,398 - 01:23:24,718] the flat coordinates,
+- [01:23:24,738 - 01:23:26,098] the Cartesian coordinates,
+- [01:23:27,218 - 01:23:30,058] you can't do that everywhere simultaneously,
+- [01:23:30,698 - 01:23:33,598] but you can do it in a tiny little region,
+- [01:23:34,198 - 01:23:36,448] and then the covariant derivative
+- [01:23:36,448 - 01:23:38,698] is just the ordinary derivative
+- [01:23:38,698 - 01:23:40,058] in those kind of coordinates.
+- [01:23:40,278 - 01:23:43,718] So it's telling you how the vector varies
+- [01:23:43,718 - 01:23:46,278] in coordinates which are as flattened
+- [01:23:46,278 - 01:23:48,838] out as is possible to make.
+- [01:23:49,078 - 01:23:50,558] How the vector is turning
+- [01:23:50,558 - 01:23:52,038] and growing at the same time.
+- [01:23:52,178 - 01:23:52,338] Yeah,
+- [01:23:52,338 - 01:23:52,758] turning and growing.
+- [01:23:52,758 - 01:23:53,738] In each direction.
+- [01:23:54,118 - 01:23:54,318] Right.
+- [01:23:54,318 - 01:23:55,598] That's right.
+- [01:23:55,598 - 01:23:56,418] Yeah.
+- [01:23:56,618 - 01:23:58,378] So if gamma is zero,
+- [01:23:58,538 - 01:24:00,698] is that a definition for flat space?
+- [01:24:02,838 - 01:24:03,358] No,
+- [01:24:03,358 - 01:24:03,698] no,
+- [01:24:03,698 - 01:24:03,858] no,
+- [01:24:03,858 - 01:24:04,498] that's not quite right.
+- [01:24:05,518 - 01:24:07,748] If you take flat space
+- [01:24:07,748 - 01:24:09,978] and you use curvy linear coordinates,
+- [01:24:10,358 - 01:24:12,578] then gamma is not equal to zero.
+- [01:24:13,598 - 01:24:14,118] Remember,
+- [01:24:14,118 - 01:24:15,058] gamma is not a tensor.
+- [01:24:16,558 - 01:24:19,118] It depends both on the nature of the space
+- [01:24:19,118 - 01:24:20,878] and the coordinates that you use.
+- [01:24:22,218 - 01:24:23,378] In flat space,
+- [01:24:23,378 - 01:24:24,278] what is true
+- [01:24:24,278 - 01:24:27,078] is that it's possible to find coordinates
+- [01:24:27,078 - 01:24:29,018] in which gamma is equal to zero.
+- [01:24:29,498 - 01:24:31,778] But it's also possible to make coordinates
+- [01:24:31,778 - 01:24:33,018] in which it's not equal to zero.
+- [01:24:35,598 - 01:24:36,658] Here's an exercise.
+- [01:24:37,198 - 01:24:40,298] Work out the gammas for polar coordinates.
+- [01:24:41,118 - 01:24:43,138] There are gammas for polar coordinates.
+- [01:24:43,158 - 01:24:43,918] Why is that?
+- [01:24:44,198 - 01:24:46,078] It's because at least one
+- [01:24:46,078 - 01:24:47,958] of the components of the metric,
+- [01:24:49,938 - 01:24:50,538] GRR,
+- [01:24:50,538 - 01:24:52,358] is equal to R squared.
+- [01:24:52,358 - 01:24:55,478] That means the derivative of GRR
+- [01:24:55,478 - 01:24:58,278] with respect to R is not equal to zero.
+- [01:25:00,618 - 01:25:02,678] That begins to give you the possibility
+- [01:25:03,148 - 01:25:06,278] of having a Christoffel symbol in polar coordinates.
+- [01:25:06,398 - 01:25:08,738] And there is a Christoffel symbol in polar coordinates.
+- [01:25:08,998 - 01:25:11,058] That just means in polar coordinates,
+- [01:25:11,098 - 01:25:12,598] when you differentiate a vector,
+- [01:25:12,878 - 01:25:14,898] you have to include...
+- [01:25:14,898 - 01:25:18,438] Remember what happened with the vector
+- [01:25:18,438 - 01:25:21,738] which had constant components in polar coordinates.
+- [01:25:21,738 - 01:25:23,818] It wasn't really constant.
+- [01:25:25,118 - 01:25:27,398] So in polar coordinates in flat space,
+- [01:25:28,318 - 01:25:30,678] covariant derivatives are not entirely trivial.
+- [01:25:35,398 - 01:25:38,118] And that means that there are Christoffel symbols
+- [01:25:38,118 - 01:25:39,078] for polar coordinates.
+- [01:25:39,338 - 01:25:41,178] What is true for flat space
+- [01:25:41,678 - 01:25:43,638] is that you can find coordinates,
+- [01:25:43,858 - 01:25:44,578] namely,
+- [01:25:44,578 - 01:25:47,918] just your good old rectangular Cartesian coordinates
+- [01:25:48,738 - 01:25:51,338] in which the metric is just delta mn
+- [01:25:51,738 - 01:25:53,458] in which all the Christoffel symbols are zero.
+- [01:25:53,918 - 01:25:55,638] In a general curved space,
+- [01:25:55,638 - 01:25:56,798] you cannot do that.
+- [01:25:56,918 - 01:25:58,138] In a general curved space,
+- [01:25:58,138 - 01:25:59,078] in general,
+- [01:25:59,098 - 01:26:00,718] the Christoffel symbols will not be zero.
+- [01:26:00,938 - 01:26:01,138] Yeah?
+- [01:26:02,298 - 01:26:06,498] Is the term external derivative the same as the derivative?
+- [01:26:06,778 - 01:26:07,398] Say it again?
+- [01:26:08,098 - 01:26:09,058] External derivative?
+- [01:26:09,598 - 01:26:11,278] I see that here in the index.
+- [01:26:11,418 - 01:26:11,838] External.
+- [01:26:11,838 - 01:26:12,738] You mean exterior derivative?
+- [01:26:13,138 - 01:26:13,378] Exterior,
+- [01:26:13,378 - 01:26:13,698] yeah.
+- [01:26:14,218 - 01:26:15,258] Completely different thing.
+- [01:26:17,038 - 01:26:18,798] It is a kind of derivative for sure,
+- [01:26:18,798 - 01:26:19,438] but...
+- [01:26:25,818 - 01:26:29,998] The exterior derivative is a tensor.
+- [01:26:32,238 - 01:26:34,638] You know what the exterior derivative of a vector is?
+- [01:26:35,838 - 01:26:36,898] In three dimensions?
+- [01:26:38,738 - 01:26:40,338] It's the curl of the vector.
+- [01:26:42,038 - 01:26:43,538] It's called an exterior derivative.
+- [01:26:44,398 - 01:26:46,198] So we won't get into that now.
+- [01:26:49,998 - 01:26:50,558] Yeah?
+- [01:26:51,158 - 01:26:51,718] Yeah?
+- [01:26:51,718 - 01:26:53,338] The exterior derivative is a tensor,
+- [01:26:53,578 - 01:26:58,018] but if we ever need it,
+- [01:26:58,018 - 01:26:58,598] we'll come to it.
+- [01:27:01,938 - 01:27:02,338] Let's...
+- [01:27:16,478 - 01:27:17,878] I don't want to stop tonight.
+- [01:27:17,958 - 01:27:18,798] I want to continue tonight
+- [01:27:18,798 - 01:27:20,318] because I want to get finished with this.
+- [01:27:21,778 - 01:27:22,698] With the mathematics,
+- [01:27:22,898 - 01:27:24,618] so that we can start thinking about physics.
+- [01:27:25,458 - 01:27:26,118] All right,
+- [01:27:26,118 - 01:27:26,638] let's...
+- [01:27:29,658 - 01:27:30,118] Take...
+- [01:27:30,118 - 01:27:30,818] Let's see,
+- [01:27:30,818 - 01:27:31,638] what do we need to do here?
+- [01:27:40,038 - 01:27:40,498] Yeah.
+- [01:27:44,958 - 01:27:46,198] Supposing I have some curve.
+- [01:27:47,398 - 01:27:47,858] Now,
+- [01:27:47,858 - 01:27:49,758] let's start with ordinary flat space,
+- [01:27:49,978 - 01:27:51,558] ordinary conventional flat space.
+- [01:27:51,558 - 01:27:53,438] I have some vector field
+- [01:27:53,438 - 01:27:55,318] which varies from place to place.
+- [01:27:55,578 - 01:27:56,578] In particular,
+- [01:27:56,578 - 01:27:59,198] I can evaluate that field along the curve.
+- [01:27:59,958 - 01:28:02,678] And I want to know how the
+- [01:28:02,678 - 01:28:05,398] vector field varies just along the curve.
+- [01:28:06,878 - 01:28:08,038] Ordinary flat space.
+- [01:28:08,418 - 01:28:09,378] What do I do?
+- [01:28:09,418 - 01:28:11,398] I want to know how the components
+- [01:28:11,398 - 01:28:13,378] of the vector vary along the curve.
+- [01:28:14,398 - 01:28:15,318] This is easy.
+- [01:28:15,398 - 01:28:16,378] We just write the field,
+- [01:28:16,378 - 01:28:17,778] v,
+- [01:28:18,617 - 01:28:20,698] let's say the nth component of it,
+- [01:28:22,238 - 01:28:22,758] again,
+- [01:28:22,758 - 01:28:24,198] as a function of y.
+- [01:28:25,478 - 01:28:27,518] And I want to know how it varies...
+- [01:28:27,518 - 01:28:28,278] First of all,
+- [01:28:28,278 - 01:28:30,418] I want to invent a parameter
+- [01:28:30,418 - 01:28:32,338] that varies along the curve.
+- [01:28:33,178 - 01:28:35,618] What's a good parameter that varies along the curve?
+- [01:28:36,378 - 01:28:37,198] Arc length.
+- [01:28:37,578 - 01:28:38,838] Length along the curve.
+- [01:28:39,238 - 01:28:40,918] We can start here and call it zero,
+- [01:28:41,078 - 01:28:43,698] and then measure in some units,
+- [01:28:43,738 - 01:28:44,698] whatever units we like,
+- [01:28:44,698 - 01:28:45,978] distance along the curve.
+- [01:28:46,258 - 01:28:46,938] And of course,
+- [01:28:46,938 - 01:28:47,618] we call that s.
+- [01:28:48,518 - 01:28:51,478] In the same sense that we call ds squared.
+- [01:28:51,478 - 01:28:53,658] The square of a little interval.
+- [01:28:53,878 - 01:28:57,258] We can invent a variable along the curve,
+- [01:28:57,458 - 01:28:59,298] which is just arc length along the curve.
+- [01:29:01,438 - 01:29:04,038] I would like along the curve
+- [01:29:04,038 - 01:29:06,638] to ask how v is varying.
+- [01:29:07,078 - 01:29:08,218] How do I do that?
+- [01:29:08,678 - 01:29:08,938] Well,
+- [01:29:08,938 - 01:29:10,498] I differentiate it.
+- [01:29:10,798 - 01:29:12,298] Let's take first a scalar.
+- [01:29:12,838 - 01:29:13,778] Take a scalar.
+- [01:29:13,978 - 01:29:16,098] How does a scalar vary along the curve?
+- [01:29:16,398 - 01:29:18,038] Its derivative along the curve.
+- [01:29:18,318 - 01:29:19,078] In particular,
+- [01:29:19,078 - 01:29:21,298] its derivative with respect to the parameter.
+- [01:29:21,478 - 01:29:21,758] S.
+- [01:29:24,438 - 01:29:26,518] We evaluate it on the curve,
+- [01:29:26,638 - 01:29:28,878] and I want to differentiate it with respect to s.
+- [01:29:29,438 - 01:29:31,858] So I'd like to find along the curve
+- [01:29:32,358 - 01:29:34,978] the derivative of phi with respect to s.
+- [01:29:35,218 - 01:29:35,518] Whoops.
+- [01:29:38,498 - 01:29:40,578] Just telling me how phi varies.
+- [01:29:41,198 - 01:29:41,498] Well,
+- [01:29:41,498 - 01:29:45,358] if I know how phi varies throughout the geometry,
+- [01:29:45,738 - 01:29:48,218] I just write d phi by ds,
+- [01:29:48,258 - 01:29:49,278] the dx,
+- [01:29:49,338 - 01:29:49,738] dx,
+- [01:29:52,338 - 01:29:53,178] m,
+- [01:29:53,178 - 01:29:53,678] let's say.
+- [01:29:55,358 - 01:29:56,798] That's the partial derivative.
+- [01:29:57,158 - 01:29:59,348] And then what do I do to
+- [01:29:59,348 - 01:30:01,538] make it into the derivative along the curve?
+- [01:30:03,098 - 01:30:09,238] We multiply it by dxm by ds.
+- [01:30:10,498 - 01:30:13,078] So everywhere along the curve,
+- [01:30:14,997 - 01:30:18,778] there's an object dxm by ds.
+- [01:30:20,038 - 01:30:20,518] That,
+- [01:30:20,518 - 01:30:21,058] of course,
+- [01:30:21,058 - 01:30:21,938] is a vector.
+- [01:30:23,278 - 01:30:24,918] dxm is a little vector,
+- [01:30:25,078 - 01:30:26,598] and when I divide it by ds,
+- [01:30:26,738 - 01:30:28,218] s is a scalar,
+- [01:30:28,838 - 01:30:30,578] just the distance along the curve.
+- [01:30:31,598 - 01:30:33,318] dxm by ds is a vector.
+- [01:30:33,518 - 01:30:34,638] You know what that vector is called?
+- [01:30:35,138 - 01:30:35,618] Slope?
+- [01:30:38,578 - 01:30:41,118] The slope would be dy by dx.
+- [01:30:41,478 - 01:30:41,918] I mean,
+- [01:30:41,918 - 01:30:43,318] dx1 by dx2.
+- [01:30:43,478 - 01:30:44,718] So it's connected with the slope,
+- [01:30:44,857 - 01:30:45,758] but it's not quite the slope.
+- [01:30:46,397 - 01:30:47,238] It's a vector.
+- [01:30:47,238 - 01:30:47,938] First of all,
+- [01:30:47,938 - 01:30:48,377] it's not a number.
+- [01:30:48,418 - 01:30:48,838] It's a vector.
+- [01:30:48,918 - 01:30:49,758] It has two components,
+- [01:30:51,297 - 01:30:53,718] dx1 by ds and dx2 by ds.
+- [01:30:59,238 - 01:30:59,637] Okay,
+- [01:30:59,637 - 01:31:00,838] let's look at it a little more closely.
+- [01:31:02,678 - 01:31:04,137] Here we are along the curve.
+- [01:31:04,877 - 01:31:08,878] We take a little interval of size ds,
+- [01:31:09,278 - 01:31:10,478] and we look at dx.
+- [01:31:10,778 - 01:31:11,358] Here's dx.
+- [01:31:11,638 - 01:31:13,458] It's the vector dx along here.
+- [01:31:14,698 - 01:31:15,358] First of all,
+- [01:31:15,358 - 01:31:16,478] what direction is it in?
+- [01:31:19,318 - 01:31:20,278] Tangent to the vector.
+- [01:31:20,478 - 01:31:20,598] Tangent to the vector.
+- [01:31:20,738 - 01:31:21,678] Tangent to the curve.
+- [01:31:22,158 - 01:31:23,618] And how long is it?
+- [01:31:24,298 - 01:31:26,858] What's the length of dx by ds?
+- [01:31:30,398 - 01:31:30,958] One.
+- [01:31:30,958 - 01:31:30,958] Yeah,
+- [01:31:30,958 - 01:31:31,578] one.
+- [01:31:32,058 - 01:31:32,618] One.
+- [01:31:33,418 - 01:31:34,298] Why is that?
+- [01:31:35,638 - 01:31:36,198] Well,
+- [01:31:36,198 - 01:31:36,638] it's one.
+- [01:31:36,838 - 01:31:39,518] It's a unit vector along the curve.
+- [01:31:39,878 - 01:31:41,738] It's called the tangent vector.
+- [01:31:42,458 - 01:31:44,778] It is a tangent vector along the curve,
+- [01:31:44,998 - 01:31:46,998] a unit vector along the curve,
+- [01:31:47,238 - 01:31:48,118] called the tangent vector.
+- [01:31:48,998 - 01:31:49,278] Okay?
+- [01:31:50,218 - 01:31:50,958] All right,
+- [01:31:50,958 - 01:31:52,058] so that's why here's what you do.
+- [01:31:52,158 - 01:31:56,838] If you want to differentiate phi along x,
+- [01:31:57,598 - 01:31:58,158] sorry,
+- [01:31:58,158 - 01:31:58,878] along s,
+- [01:31:59,058 - 01:32:01,858] you differentiate it with respect to the coordinates.
+- [01:32:02,978 - 01:32:05,918] That gives you a covariant vector,
+- [01:32:06,658 - 01:32:10,538] and you multiply it by the contravariant vector,
+- [01:32:10,678 - 01:32:12,618] the x by the s.
+- [01:32:13,038 - 01:32:15,398] And that gives you the derivative of phi
+- [01:32:15,398 - 01:32:16,578] with respect to s.
+- [01:32:17,698 - 01:32:18,818] Very simple.
+- [01:32:21,458 - 01:32:22,018] Now,
+- [01:32:22,018 - 01:32:24,558] supposing we want to differentiate a vector,
+- [01:32:24,718 - 01:32:25,958] or a vector,
+- [01:32:25,958 - 01:32:26,658] not a tensor,
+- [01:32:26,658 - 01:32:28,118] not a scalar,
+- [01:32:28,978 - 01:32:31,538] but a tensor,
+- [01:32:31,538 - 01:32:32,878] in particular a vector,
+- [01:32:33,978 - 01:32:35,178] along a curve.
+- [01:32:36,418 - 01:32:36,978] Well,
+- [01:32:36,978 - 01:32:38,678] you might think that the right thing to do
+- [01:32:38,678 - 01:32:40,378] is basically the same thing.
+- [01:32:40,798 - 01:32:42,918] Take the vector v,
+- [01:32:42,918 - 01:32:44,338] let's take a,
+- [01:32:45,518 - 01:32:46,558] let's take a,
+- [01:32:48,717 - 01:32:49,778] a contravariant vector.
+- [01:32:51,598 - 01:32:53,998] It depends on x,
+- [01:32:53,998 - 01:32:54,338] I guess,
+- [01:32:54,378 - 01:32:54,538] well,
+- [01:32:54,538 - 01:32:56,198] x and y are the same thing here,
+- [01:32:57,358 - 01:32:57,758] x.
+- [01:33:00,218 - 01:33:00,798] All right.
+- [01:33:00,878 - 01:33:02,198] And now what do I do with it?
+- [01:33:02,398 - 01:33:02,798] Well,
+- [01:33:02,798 - 01:33:05,898] differentiate it with respect to position.
+- [01:33:08,158 - 01:33:08,558] x,
+- [01:33:08,558 - 01:33:09,698] what do we call it,
+- [01:33:09,718 - 01:33:10,378] x,
+- [01:33:10,378 - 01:33:11,938] let's call it n,
+- [01:33:13,898 - 01:33:16,258] m times dxm.
+- [01:33:16,258 - 01:33:18,138] m by ds.
+- [01:33:19,298 - 01:33:21,278] This actually gives us the
+- [01:33:21,278 - 01:33:23,258] derivative of the component of v
+- [01:33:24,098 - 01:33:25,358] with respect to s.
+- [01:33:25,598 - 01:33:27,378] Would you guess that this is a tensor?
+- [01:33:30,598 - 01:33:32,278] It's not likely to be a tensor,
+- [01:33:32,418 - 01:33:33,118] because,
+- [01:33:33,118 - 01:33:35,618] the whole thing is not likely to be a tensor,
+- [01:33:35,798 - 01:33:38,938] because the vn by dxm is not a tensor.
+- [01:33:40,818 - 01:33:41,298] Remember,
+- [01:33:41,298 - 01:33:42,558] the ordinary derivative
+- [01:33:43,038 - 01:33:46,178] of components of tensors is not itself a tensor.
+- [01:33:47,978 - 01:33:49,778] So this object is not a tensor.
+- [01:33:50,458 - 01:33:51,878] It doesn't represent,
+- [01:33:53,298 - 01:33:54,598] let's see why.
+- [01:33:54,798 - 01:33:55,318] Well,
+- [01:33:55,318 - 01:33:56,278] it's the usual reason.
+- [01:33:57,878 - 01:34:01,578] Even if v were completely constant along the curve,
+- [01:34:02,538 - 01:34:03,578] what would that mean?
+- [01:34:03,658 - 01:34:05,358] That would mean it's completely constant,
+- [01:34:05,558 - 01:34:07,008] pointing in the same direction
+- [01:34:07,008 - 01:34:08,458] everywhere as along the curve,
+- [01:34:09,198 - 01:34:11,178] because the coordinates flop,
+- [01:34:11,318 - 01:34:12,858] not because the curve is floppy,
+- [01:34:12,858 - 01:34:13,498] incidentally,
+- [01:34:13,518 - 01:34:15,838] but because the coordinates are floppy,
+- [01:34:16,578 - 01:34:18,618] the v by dx won't be zero,
+- [01:34:18,858 - 01:34:22,238] and so even for a vector which was absolutely constant
+- [01:34:23,358 - 01:34:25,058] in space like this,
+- [01:34:25,178 - 01:34:26,058] this wouldn't be zero.
+- [01:34:26,478 - 01:34:28,078] You're not assuming that's coordinates,
+- [01:34:28,278 - 01:34:29,678] those are Cartesian coordinates.
+- [01:34:29,778 - 01:34:29,918] No,
+- [01:34:29,918 - 01:34:31,378] I'm not assuming they're Cartesian coordinates.
+- [01:34:31,498 - 01:34:31,818] Right,
+- [01:34:31,818 - 01:34:32,138] no,
+- [01:34:32,138 - 01:34:33,018] particularly not.
+- [01:34:34,258 - 01:34:34,798] No,
+- [01:34:34,798 - 01:34:37,178] I guess I should have stuck with my convention,
+- [01:34:38,598 - 01:34:40,258] x being Cartesian,
+- [01:34:40,338 - 01:34:41,818] so then we should use y here.
+- [01:34:48,298 - 01:34:48,978] All right,
+- [01:34:48,978 - 01:34:49,698] so let's use y.
+- [01:35:02,798 - 01:35:03,278] Well,
+- [01:35:03,278 - 01:35:04,768] what can I do to
+- [01:35:04,768 - 01:35:06,258] make a vector out of this,
+- [01:35:06,358 - 01:35:07,378] a tensor out of it,
+- [01:35:07,498 - 01:35:11,298] a tensor that varies along the curve?
+- [01:35:11,738 - 01:35:12,218] Well,
+- [01:35:12,218 - 01:35:13,218] we just replace this
+- [01:35:14,018 - 01:35:15,518] by the covariant derivative.
+- [01:35:15,838 - 01:35:17,818] Wherever you see ordinary derivative,
+- [01:35:17,998 - 01:35:19,558] replace it by covariant derivative.
+- [01:35:19,878 - 01:35:21,638] At least the covariant derivative
+- [01:35:21,638 - 01:35:23,158] has the property
+- [01:35:23,718 - 01:35:25,518] that if the vector isn't really varying,
+- [01:35:25,758 - 01:35:27,858] the covariant derivative is zero.
+- [01:35:28,618 - 01:35:29,278] All right,
+- [01:35:29,278 - 01:35:30,138] so if we replace this
+- [01:35:30,138 - 01:35:31,238] by the covariant derivative,
+- [01:35:31,458 - 01:35:32,758] that's just
+- [01:35:34,198 - 01:35:35,038] covariant derivative
+- [01:35:35,658 - 01:35:36,778] with respect to m
+- [01:35:39,778 - 01:35:43,498] of v n of y
+- [01:35:44,218 - 01:35:45,758] times the tangent vector,
+- [01:35:49,598 - 01:35:51,858] that we can think of as
+- [01:35:51,858 - 01:35:53,898] the covariant derivative,
+- [01:35:54,098 - 01:35:55,418] the notation for it is
+- [01:35:55,418 - 01:35:56,798] it's the covariant derivative
+- [01:35:57,558 - 01:35:59,858] with respect to the parameter s
+- [01:35:59,858 - 01:36:02,398] of v n.
+- [01:36:05,438 - 01:36:06,518] In other words,
+- [01:36:06,518 - 01:36:07,078] we've defined
+- [01:36:07,078 - 01:36:09,778] a covariant derivative of a vector
+- [01:36:09,778 - 01:36:11,698] along a curve.
+- [01:36:12,218 - 01:36:13,018] How?
+- [01:36:13,018 - 01:36:13,218] Now,
+- [01:36:13,218 - 01:36:14,498] you just take the ordinary
+- [01:36:14,858 - 01:36:15,438] covariant derivative
+- [01:36:15,438 - 01:36:17,738] and you multiply it by
+- [01:36:17,738 - 01:36:19,218] the tangent vector.
+- [01:36:19,718 - 01:36:21,398] Tangent vector just tells you what
+- [01:36:21,398 - 01:36:23,458] direction you're differentiating in.
+- [01:36:23,858 - 01:36:25,578] You take the covariant derivative
+- [01:36:25,578 - 01:36:28,498] and that defines the covariant
+- [01:36:28,498 - 01:36:30,698] path derivative along the curve.
+- [01:36:31,178 - 01:36:32,358] Important concept.
+- [01:36:33,678 - 01:36:34,398] Okay.
+- [01:36:35,218 - 01:36:36,158] In particular,
+- [01:36:36,298 - 01:36:39,158] it has the property that in Cartesian space,
+- [01:36:39,298 - 01:36:41,318] in flat space with Cartesian coordinates,
+- [01:36:41,318 - 01:36:43,358] if the components are constant,
+- [01:36:43,718 - 01:36:47,478] then the vector doesn't vary along the curve.
+- [01:36:48,038 - 01:36:48,818] Okay.
+- [01:36:49,598 - 01:36:52,538] That's the notion of
+- [01:36:53,458 - 01:36:55,198] the covariant derivative
+- [01:36:55,198 - 01:36:57,718] of a vector along a curve.
+- [01:36:58,318 - 01:36:58,998] Just...
+- [01:36:58,998 - 01:37:00,278] Good.
+- [01:37:05,518 - 01:37:07,058] Let's write out,
+- [01:37:07,158 - 01:37:08,938] let's write it out in detail.
+- [01:37:09,638 - 01:37:11,298] Let's write it out in detail
+- [01:37:11,318 - 01:37:11,378] in detail.
+- [01:37:14,438 - 01:37:15,238] What is it?
+- [01:37:15,298 - 01:37:17,538] It's the derivative of v n
+- [01:37:18,538 - 01:37:20,438] with respect to y m
+- [01:37:20,438 - 01:37:23,238] with respect to y m
+- [01:37:23,238 - 01:37:23,618] times...
+- [01:37:23,618 - 01:37:24,138] Well,
+- [01:37:24,138 - 01:37:25,378] let's add the other term.
+- [01:37:25,898 - 01:37:27,058] What's the other term?
+- [01:37:27,558 - 01:37:27,858] All right.
+- [01:37:27,858 - 01:37:28,858] Tell me where to put the gamma,
+- [01:37:28,878 - 01:37:30,058] the indices of the gammas.
+- [01:37:32,338 - 01:37:33,818] Where does the n index go?
+- [01:37:36,118 - 01:37:36,858] It's upstairs.
+- [01:37:37,058 - 01:37:37,298] It's upstairs.
+- [01:37:37,298 - 01:37:38,318] It better go upstairs in the gamma.
+- [01:37:39,038 - 01:37:40,898] The m index has to go downstairs
+- [01:37:41,318 - 01:37:43,518] and then we need another index
+- [01:37:43,518 - 01:37:44,898] and write v r.
+- [01:37:45,858 - 01:37:47,458] That's the covariant derivative
+- [01:37:47,458 - 01:37:48,278] of v.
+- [01:37:49,518 - 01:37:51,498] Then we have to multiply it
+- [01:37:51,498 - 01:37:53,418] by the tangent vector.
+- [01:37:54,078 - 01:37:55,778] So let's multiply it here
+- [01:37:55,778 - 01:37:57,158] by the tangent vector plus
+- [01:37:58,317 - 01:37:59,598] dy m
+- [01:38:00,778 - 01:38:02,218] by d s
+- [01:38:03,158 - 01:38:04,438] dy m
+- [01:38:05,878 - 01:38:07,138] by d s.
+- [01:38:09,398 - 01:38:10,998] What is this thing over here?
+- [01:38:11,318 - 01:38:13,158] The derivative of the component,
+- [01:38:13,398 - 01:38:15,378] the nth component with respect to y
+- [01:38:15,378 - 01:38:17,578] times dy by d s.
+- [01:38:21,338 - 01:38:22,338] Chain rule,
+- [01:38:22,338 - 01:38:22,598] right?
+- [01:38:23,918 - 01:38:25,558] This object over here
+- [01:38:25,558 - 01:38:27,018] is just the derivative,
+- [01:38:27,378 - 01:38:28,818] the ordinary derivative,
+- [01:38:29,218 - 01:38:30,438] the ordinary derivative
+- [01:38:31,208 - 01:38:32,658] with respect to s
+- [01:38:33,437 - 01:38:35,058] of v n.
+- [01:38:36,058 - 01:38:37,498] So along the curve
+- [01:38:37,498 - 01:38:39,198] we differentiate the first term
+- [01:38:39,198 - 01:38:40,898] but then there's another term
+- [01:38:41,318 - 01:38:42,218] and the other term is
+- [01:38:43,358 - 01:38:46,218] gamma n m r
+- [01:38:49,008 - 01:38:50,978] the vector that we're differentiating
+- [01:38:50,978 - 01:38:52,838] times the tangent vector.
+- [01:39:02,078 - 01:39:03,718] So if I have a vector
+- [01:39:03,718 - 01:39:05,978] which is defined along a curve
+- [01:39:05,978 - 01:39:08,418] and I want to differentiate it
+- [01:39:08,418 - 01:39:09,318] along the curve
+- [01:39:09,318 - 01:39:10,958] in a way that makes it a tensor
+- [01:39:10,958 - 01:39:13,438] I just differentiate its components
+- [01:39:13,438 - 01:39:15,758] and then I hit it with a gamma
+- [01:39:15,758 - 01:39:16,938] along the curve
+- [01:39:16,938 - 01:39:18,698] the gamma is defined along the curve
+- [01:39:19,318 - 01:39:21,518] times v r and also multiplied
+- [01:39:21,518 - 01:39:22,658] by the tangent vector.
+- [01:39:22,898 - 01:39:23,818] See the pattern?
+- [01:39:26,118 - 01:39:26,718] Okay,
+- [01:39:26,718 - 01:39:27,218] now let's go
+- [01:39:27,218 - 01:39:27,798] another step.
+- [01:39:29,358 - 01:39:30,758] Let's ask how
+- [01:39:30,758 - 01:39:32,798] the tangent vector varies
+- [01:39:32,798 - 01:39:33,858] along the curve.
+- [01:39:34,518 - 01:39:35,398] For v,
+- [01:39:35,398 - 01:39:36,878] let's just put in
+- [01:39:36,878 - 01:39:38,298] the tangent vector itself.
+- [01:39:39,318 - 01:39:40,598] And then I would be asking
+- [01:39:40,598 - 01:39:41,998] how the tangent vector
+- [01:39:43,278 - 01:39:45,058] varies along a curve.
+- [01:39:46,378 - 01:39:47,678] Here's the tangent vector.
+- [01:39:53,038 - 01:39:54,698] And obviously in general
+- [01:39:54,698 - 01:39:56,058] the tangent vector varies
+- [01:39:56,058 - 01:39:57,258] from place to place.
+- [01:39:57,618 - 01:39:59,658] In particular if the curve is a curve
+- [01:40:00,518 - 01:40:02,558] on the flat blackboard
+- [01:40:02,558 - 01:40:03,898] the curve is really a curve
+- [01:40:03,898 - 01:40:05,818] then the tangent vector varies.
+- [01:40:06,178 - 01:40:08,898] We can work out the covariant derivative
+- [01:40:09,318 - 01:40:10,158] of the tangent vector.
+- [01:40:10,498 - 01:40:11,378] Let's do it.
+- [01:40:11,718 - 01:40:14,338] What's the component of the tangent vector?
+- [01:40:16,818 - 01:40:18,038] For v n
+- [01:40:19,038 - 01:40:20,578] we're going to substitute
+- [01:40:21,338 - 01:40:23,278] d y n
+- [01:40:23,278 - 01:40:24,338] by d s.
+- [01:40:24,578 - 01:40:26,498] That's the component of the tangent vector.
+- [01:40:26,958 - 01:40:28,378] And I'm now computing
+- [01:40:29,058 - 01:40:31,078] the covariant derivative
+- [01:40:31,078 - 01:40:33,158] of the tangent vector itself.
+- [01:40:34,218 - 01:40:35,738] The covariant derivative
+- [01:40:35,738 - 01:40:36,958] along the curve
+- [01:40:36,958 - 01:40:38,778] so let's just plug it in.
+- [01:40:39,798 - 01:40:40,858] First of all,
+- [01:40:40,878 - 01:40:42,178] what do I get for
+- [01:40:42,178 - 01:40:43,478] d v n by d s?
+- [01:40:44,238 - 01:40:45,198] That becomes
+- [01:40:45,198 - 01:40:46,678] the second derivative
+- [01:40:47,218 - 01:40:48,358] of y n
+- [01:40:48,978 - 01:40:50,338] with respect to s.
+- [01:40:52,898 - 01:40:54,098] It's just the derivative
+- [01:40:54,098 - 01:40:55,158] with respect to s
+- [01:40:55,798 - 01:40:57,218] of the derivative
+- [01:40:57,218 - 01:40:58,718] of y with respect to s.
+- [01:40:58,778 - 01:40:59,738] So that's a second derivative.
+- [01:41:01,258 - 01:41:03,138] A certain second derivative of y
+- [01:41:03,138 - 01:41:04,738] along a path length.
+- [01:41:05,298 - 01:41:06,938] And then what's the other term?
+- [01:41:08,538 - 01:41:09,058] Gamma
+- [01:41:10,358 - 01:41:12,138] m r n
+- [01:41:13,338 - 01:41:14,498] Let's write down
+- [01:41:14,498 - 01:41:16,218] d y m
+- [01:41:17,798 - 01:41:18,878] by d s
+- [01:41:18,878 - 01:41:20,738] and then v
+- [01:41:21,358 - 01:41:22,618] is just d y
+- [01:41:23,298 - 01:41:24,758] r by d s.
+- [01:41:27,638 - 01:41:29,018] So the first term
+- [01:41:29,938 - 01:41:31,038] is just
+- [01:41:31,038 - 01:41:32,098] the second derivative
+- [01:41:32,098 - 01:41:34,198] of y with respect to s.
+- [01:41:35,438 - 01:41:36,738] And the second term
+- [01:41:36,738 - 01:41:37,278] look at it
+- [01:41:37,278 - 01:41:38,838] that has an m and an r
+- [01:41:38,838 - 01:41:39,298] down square.
+- [01:41:39,318 - 01:41:41,678] It has a d y by d s
+- [01:41:41,678 - 01:41:42,538] a tangent vector
+- [01:41:42,538 - 01:41:43,918] the mth component
+- [01:41:43,918 - 01:41:45,118] and a tangent vector
+- [01:41:45,118 - 01:41:45,978] the rth component.
+- [01:41:46,598 - 01:41:49,038] Nice and symmetric with respect to these two.
+- [01:41:49,318 - 01:41:51,018] And it has an extra index
+- [01:41:51,018 - 01:41:55,758] representing the uncontracted index here.
+- [01:41:56,338 - 01:41:57,338] This is
+- [01:41:57,338 - 01:41:58,858] the covariant derivative
+- [01:41:58,858 - 01:42:00,278] of a tangent vector.
+- [01:42:01,998 - 01:42:03,918] And the covariant derivative
+- [01:42:03,918 - 01:42:04,718] of a tangent vector
+- [01:42:04,718 - 01:42:06,398] is a tensor.
+- [01:42:07,058 - 01:42:08,518] That means if it's zero
+- [01:42:09,318 - 01:42:09,978] in every reference frame
+- [01:42:09,978 - 01:42:12,318] it's zero in every reference frame.
+- [01:42:12,898 - 01:42:14,878] What do you expect the covariant derivative
+- [01:42:14,878 - 01:42:17,398] of the tangent vector of a straight line to be?
+- [01:42:18,158 - 01:42:18,758] Zero.
+- [01:42:19,858 - 01:42:21,278] If I have a straight line
+- [01:42:21,278 - 01:42:22,378] in flat space
+- [01:42:23,198 - 01:42:24,718] the tangent vector is
+- [01:42:24,718 - 01:42:25,858] the same everywhere.
+- [01:42:27,418 - 01:42:28,018] So
+- [01:42:28,698 - 01:42:30,378] if I am in flat space
+- [01:42:30,378 - 01:42:32,238] and I have some funny coordinates
+- [01:42:32,238 - 01:42:34,798] I have some funny coordinates
+- [01:42:34,798 - 01:42:36,258] which aren't ordinary flat
+- [01:42:36,258 - 01:42:37,018] you know,
+- [01:42:37,018 - 01:42:38,378] ordinary Cartesian coordinates
+- [01:42:39,318 - 01:42:41,018] but I give you the tangent vector
+- [01:42:41,018 - 01:42:43,318] I give you the components of the tangent vector
+- [01:42:43,318 - 01:42:45,518] and the Christoffel symbols and so forth
+- [01:42:45,518 - 01:42:46,178] that's what you know
+- [01:42:46,178 - 01:42:48,718] how do you test if it's a straight line?
+- [01:42:49,318 - 01:42:51,258] Its components are not constant
+- [01:42:51,258 - 01:42:53,558] because the coordinates aren't constant
+- [01:42:53,558 - 01:42:54,298] they flop around.
+- [01:42:54,698 - 01:42:56,418] How do I test whether
+- [01:42:57,878 - 01:42:59,518] whether my vector
+- [01:43:02,178 - 01:43:02,758] sorry,
+- [01:43:02,758 - 01:43:04,878] whether my tangent
+- [01:43:04,878 - 01:43:06,158] whether my tangent vector
+- [01:43:06,158 - 01:43:08,558] whether the curve is a straight line?
+- [01:43:09,318 - 01:43:09,838] Well,
+- [01:43:09,838 - 01:43:11,378] I compute
+- [01:43:11,378 - 01:43:13,738] the covariant derivative of the tangent vector
+- [01:43:13,738 - 01:43:15,558] and if it's zero
+- [01:43:15,558 - 01:43:17,178] all along the line
+- [01:43:17,178 - 01:43:18,678] all along the curve
+- [01:43:18,678 - 01:43:20,318] then that curve is a straight line.
+- [01:43:20,658 - 01:43:23,498] It's just telling me that the tangent vector
+- [01:43:23,498 - 01:43:25,998] is unchanging as I go along the line.
+- [01:43:26,318 - 01:43:27,538] You could do this
+- [01:43:27,538 - 01:43:29,258] with funny coordinates
+- [01:43:29,258 - 01:43:30,658] even if those coordinates
+- [01:43:30,658 - 01:43:32,138] aren't flat coordinates.
+- [01:43:33,138 - 01:43:33,478] Now,
+- [01:43:33,478 - 01:43:34,918] can it be
+- [01:43:34,918 - 01:43:36,438] that in curved space
+- [01:43:37,318 - 01:43:38,698] really curved space
+- [01:43:39,318 - 01:43:42,078] which cannot be brought to the flat form
+- [01:43:42,878 - 01:43:44,378] because there's some obstruction
+- [01:43:44,378 - 01:43:45,318] called curvature
+- [01:43:45,318 - 01:43:46,938] which doesn't look like we'll get to tonight
+- [01:43:46,938 - 01:43:47,998] but
+- [01:43:49,068 - 01:43:51,438] can it be that the covariant derivative
+- [01:43:51,438 - 01:43:52,998] of a tangent vector
+- [01:43:52,998 - 01:43:54,338] can be zero anyway
+- [01:43:54,338 - 01:43:56,458] even though the space is not flat?
+- [01:43:56,758 - 01:43:57,518] What would you guess?
+- [01:43:59,738 - 01:44:00,438] Yes.
+- [01:44:01,838 - 01:44:03,618] What are curves
+- [01:44:03,618 - 01:44:05,518] whose tangent vectors
+- [01:44:05,518 - 01:44:07,818] are covariantly constant
+- [01:44:07,818 - 01:44:09,118] covariantly constant
+- [01:44:09,318 - 01:44:10,198] is another way of saying
+- [01:44:10,198 - 01:44:12,018] the covariant derivative
+- [01:44:12,018 - 01:44:13,898] of the tangent vector is zero.
+- [01:44:14,158 - 01:44:14,878] Here it is.
+- [01:44:15,578 - 01:44:16,378] Where is it?
+- [01:44:16,458 - 01:44:16,938] Here it is.
+- [01:44:18,478 - 01:44:19,758] Supposing I have a curve
+- [01:44:20,578 - 01:44:23,058] a curve means some y
+- [01:44:23,058 - 01:44:24,318] a curve means a curve
+- [01:44:24,318 - 01:44:25,798] y is,
+- [01:44:25,798 - 01:44:26,898] and along the curve
+- [01:44:26,898 - 01:44:29,298] the curve has a set of coordinates y
+- [01:44:29,298 - 01:44:32,378] that depend on how far along the curve you are.
+- [01:44:32,698 - 01:44:34,078] Everywhere along the curve
+- [01:44:34,838 - 01:44:35,938] y is given.
+- [01:44:36,718 - 01:44:37,238] Here's
+- [01:44:39,318 - 01:44:39,818] the tangent vector.
+- [01:44:43,358 - 01:44:44,298] Can it be
+- [01:44:44,298 - 01:44:46,698] that the covariant derivative
+- [01:44:46,698 - 01:44:48,598] of the tangent vector is zero?
+- [01:44:49,138 - 01:44:51,198] It certainly won't be true for every
+- [01:44:51,198 - 01:44:51,618] curve.
+- [01:44:51,618 - 01:44:52,958] In flat space
+- [01:44:52,958 - 01:44:55,238] it's only true for straight lines.
+- [01:44:56,898 - 01:44:59,118] Can it be true in a general curved space
+- [01:44:59,118 - 01:45:00,518] that you can find curves
+- [01:45:00,518 - 01:45:03,458] special curves which have the property
+- [01:45:03,458 - 01:45:04,578] that the covariant derivative
+- [01:45:04,578 - 01:45:05,858] along them is zero.
+- [01:45:05,958 - 01:45:08,798] The answer is yes.
+- [01:45:10,398 - 01:45:10,998] And
+- [01:45:10,998 - 01:45:12,118] those curves have a name.
+- [01:45:13,878 - 01:45:14,478] Geodesics.
+- [01:45:15,738 - 01:45:17,158] Geodesics are if you like
+- [01:45:17,158 - 01:45:18,838] the straightest possible
+- [01:45:18,838 - 01:45:20,258] curves in the space.
+- [01:45:20,698 - 01:45:22,778] They have the property that the
+- [01:45:23,318 - 01:45:25,098] covariant derivative of the
+- [01:45:25,098 - 01:45:26,398] tangent vector is zero.
+- [01:45:27,078 - 01:45:28,658] In particular that means
+- [01:45:28,658 - 01:45:30,778] if you take coordinates locally
+- [01:45:31,078 - 01:45:32,698] which are as flat as possible
+- [01:45:33,318 - 01:45:34,718] then along then
+- [01:45:35,118 - 01:45:37,138] the components of the vector are constant
+- [01:45:37,138 - 01:45:38,318] for a little ways.
+- [01:45:39,318 - 01:45:42,138] Until the coordinates start to bend.
+- [01:45:42,898 - 01:45:44,818] But a geodesic
+- [01:45:44,818 - 01:45:46,958] that's the general definition of a geodesic
+- [01:45:46,958 - 01:45:48,698] a geodesic is one
+- [01:45:48,698 - 01:45:49,638] is a curve
+- [01:45:49,638 - 01:45:51,798] whose tangent vector is
+- [01:45:51,798 - 01:45:53,278] covariantly constant.
+- [01:45:54,158 - 01:45:55,818] Covariantly constant means
+- [01:45:55,818 - 01:45:56,918] that it's
+- [01:45:56,918 - 01:45:59,098] that the covariant derivative
+- [01:45:59,098 - 01:46:01,318] of the tangent vector is equal to zero.
+- [01:46:06,358 - 01:46:07,998] And that's it.
+- [01:46:08,078 - 01:46:08,498] That's the
+- [01:46:09,698 - 01:46:11,498] definition of a geodesic.
+- [01:46:12,358 - 01:46:13,638] In a certain sense
+- [01:46:13,638 - 01:46:15,078] it's the straightest possible
+- [01:46:15,078 - 01:46:16,478] curve in the space.
+- [01:46:17,018 - 01:46:18,838] Or it's a family of curves.
+- [01:46:18,958 - 01:46:19,038] Yeah?
+- [01:46:19,398 - 01:46:20,278] Quick question.
+- [01:46:20,278 - 01:46:23,698] You defined this all in terms of a covariant derivative.
+- [01:46:24,138 - 01:46:24,498] Yes.
+- [01:46:24,498 - 01:46:26,118] Could you just as arbitrarily
+- [01:46:27,298 - 01:46:29,438] use a contravariant derivative
+- [01:46:29,438 - 01:46:30,878] and get to the same point?
+- [01:46:31,218 - 01:46:31,718] Yes.
+- [01:46:31,718 - 01:46:32,378] You could have used
+- [01:46:32,378 - 01:46:34,638] yeah we could have used
+- [01:46:35,158 - 01:46:35,418] sure,
+- [01:46:35,418 - 01:46:36,098] sure,
+- [01:46:36,098 - 01:46:36,518] definitely.
+- [01:46:36,838 - 01:46:37,758] We could have used
+- [01:46:39,598 - 01:46:40,838] used the
+- [01:46:41,518 - 01:46:42,758] contravariant defen...
+- [01:46:43,318 - 01:46:44,038] covari...wait sorry
+- [01:46:44,038 - 01:46:45,878] just a moment just a second.
+- [01:46:46,018 - 01:46:48,998] The term covariant derivative does not mean
+- [01:46:48,998 - 01:46:51,058] that the object is a covariant vector.
+- [01:46:51,638 - 01:46:53,118] Completely different use
+- [01:46:53,118 - 01:46:53,738] of the word.
+- [01:46:53,738 - 01:46:54,898] It's unfortunate.
+- [01:46:56,178 - 01:46:57,138] This is the
+- [01:46:57,138 - 01:46:59,278] covariant derivative of a contravariant
+- [01:46:59,278 - 01:46:59,618] component.
+- [01:47:01,048 - 01:47:01,578] Too bad.
+- [01:47:01,578 - 01:47:02,378] That's the way it is.
+- [01:47:03,538 - 01:47:05,038] But like the key
+- [01:47:05,038 - 01:47:07,598] point is the inclusion of this gamma thing.
+- [01:47:08,338 - 01:47:08,958] Yeah.
+- [01:47:09,318 - 01:47:10,018] That's right.
+- [01:47:10,838 - 01:47:11,558] That's right.
+- [01:47:13,518 - 01:47:14,078] Now,
+- [01:47:14,078 - 01:47:14,778] just to
+- [01:47:15,298 - 01:47:16,758] tell you where this is going
+- [01:47:16,758 - 01:47:18,218] let me tell you where this is going.
+- [01:47:19,218 - 01:47:19,478] Um
+- [01:47:26,918 - 01:47:28,998] Straight lines in space time
+- [01:47:30,078 - 01:47:31,018] in special
+- [01:47:31,018 - 01:47:31,578] relativity,
+- [01:47:31,578 - 01:47:32,878] special relativity
+- [01:47:32,878 - 01:47:34,058] space time is flat.
+- [01:47:35,058 - 01:47:37,098] Straight lines in space time are the
+- [01:47:37,098 - 01:47:39,218] orbits of particles that have no force
+- [01:47:39,318 - 01:47:39,798] on them.
+- [01:47:41,197 - 01:47:41,878] Okay.
+- [01:47:41,878 - 01:47:43,178] The orbits of
+- [01:47:43,178 - 01:47:45,018] particles that have gravitational
+- [01:47:45,018 - 01:47:46,237] forces on them
+- [01:47:47,138 - 01:47:47,478] are
+- [01:47:49,998 - 01:47:50,677] geodesics
+- [01:47:50,677 - 01:47:51,717] in space time.
+- [01:47:51,717 - 01:47:53,158] That means
+- [01:47:53,158 - 01:47:55,277] they satisfy equations like this.
+- [01:47:56,217 - 01:47:57,078] Now if you look at this
+- [01:47:57,078 - 01:47:59,217] equation and you think of
+- [01:47:59,217 - 01:48:00,898] path length along
+- [01:48:00,898 - 01:48:03,138] a world line
+- [01:48:04,238 - 01:48:05,197] as being
+- [01:48:05,197 - 01:48:05,958] like time,
+- [01:48:05,958 - 01:48:07,217] ticking off time
+- [01:48:07,217 - 01:48:08,398] along the world line.
+- [01:48:09,318 - 01:48:10,458] And this is almost like acceleration.
+- [01:48:11,018 - 01:48:11,598] It is.
+- [01:48:11,598 - 01:48:13,338] It basically is acceleration.
+- [01:48:14,197 - 01:48:14,717] The
+- [01:48:16,217 - 01:48:16,737] uh
+- [01:48:17,158 - 01:48:18,558] we don't want to prove this now.
+- [01:48:18,558 - 01:48:19,298] We just want to tell you
+- [01:48:19,298 - 01:48:19,757] where it's going.
+- [01:48:20,538 - 01:48:23,018] This looks like the second derivative of a
+- [01:48:23,018 - 01:48:24,938] coordinate with respect to a parameter.
+- [01:48:25,398 - 01:48:27,158] And that parameter could
+- [01:48:27,158 - 01:48:28,098] be proper time.
+- [01:48:28,478 - 01:48:30,018] It would be proper time.
+- [01:48:30,018 - 01:48:30,898] So it's
+- [01:48:30,898 - 01:48:32,938] essentially a relativistic
+- [01:48:32,938 - 01:48:33,938] version of acceleration.
+- [01:48:35,078 - 01:48:36,218] What does this say?
+- [01:48:36,218 - 01:48:37,018] It says that
+- [01:48:37,018 - 01:48:38,758] acceleration is
+- [01:48:38,758 - 01:48:41,018] equal to something on the right hand side.
+- [01:48:41,418 - 01:48:42,998] What would you call that thing on the
+- [01:48:42,998 - 01:48:43,698] right hand side?
+- [01:48:44,658 - 01:48:45,238] Force.
+- [01:48:46,398 - 01:48:46,978] Right.
+- [01:48:46,978 - 01:48:49,018] So where we're going
+- [01:48:49,018 - 01:48:50,858] eventually is that
+- [01:48:50,858 - 01:48:52,938] this is the equation which determines
+- [01:48:52,938 - 01:48:54,938] the orbits of particles in a
+- [01:48:54,938 - 01:48:55,958] gravitational field.
+- [01:48:57,138 - 01:48:58,918] The force is proportional
+- [01:49:00,858 - 01:49:02,998] first of all to the Christoffel symbol.
+- [01:49:03,218 - 01:49:05,178] That's the most important thing about it.
+- [01:49:05,638 - 01:49:06,218] Uh
+- [01:49:07,018 - 01:49:08,638] forget these things for a moment.
+- [01:49:09,758 - 01:49:10,658] They're there.
+- [01:49:10,718 - 01:49:11,338] They're important.
+- [01:49:11,338 - 01:49:12,618] But uh
+- [01:49:13,578 - 01:49:14,878] here's the important thing.
+- [01:49:15,158 - 01:49:16,398] What does this contain?
+- [01:49:16,738 - 01:49:18,998] It contains derivatives of the metric
+- [01:49:18,998 - 01:49:20,438] with respect to position.
+- [01:49:21,778 - 01:49:22,978] How about Newton's
+- [01:49:22,978 - 01:49:23,238] equations?
+- [01:49:23,238 - 01:49:24,778] What's Newton's equations
+- [01:49:24,778 - 01:49:26,738] for the motion of a particle in a gravitational
+- [01:49:26,738 - 01:49:27,338] field?
+- [01:49:29,578 - 01:49:30,758] It's F equals M A,
+- [01:49:30,758 - 01:49:31,038] right?
+- [01:49:31,538 - 01:49:32,138] Alright.
+- [01:49:32,338 - 01:49:32,938] Uh,
+- [01:49:32,938 - 01:49:35,078] F equals F.
+- [01:49:35,278 - 01:49:36,898] M A is mass
+- [01:49:37,018 - 01:49:38,838] times the second derivative of
+- [01:49:38,838 - 01:49:39,278] position,
+- [01:49:39,278 - 01:49:40,818] let's call it
+- [01:49:40,818 - 01:49:41,358] position Y,
+- [01:49:41,358 - 01:49:43,118] with respect to time.
+- [01:49:44,038 - 01:49:44,998] It looks
+- [01:49:44,998 - 01:49:45,718] sort of like this.
+- [01:49:45,718 - 01:49:46,918] And then
+- [01:49:46,918 - 01:49:48,058] what's on the right hand side?
+- [01:49:49,138 - 01:49:50,798] The gravitational force.
+- [01:49:51,038 - 01:49:52,878] But what is the gravitational force proportional
+- [01:49:52,878 - 01:49:53,398] to?
+- [01:49:54,318 - 01:49:54,998] Well,
+- [01:49:54,998 - 01:49:56,338] in general,
+- [01:49:56,518 - 01:49:58,418] in a general gravitational field,
+- [01:49:58,638 - 01:50:00,558] it's proportional to the mass
+- [01:50:00,558 - 01:50:02,458] times the derivative
+- [01:50:02,857 - 01:50:03,198] of
+- [01:50:04,778 - 01:50:05,558] the potential,
+- [01:50:05,558 - 01:50:06,938] the gravitational potential
+- [01:50:08,218 - 01:50:09,298] Let's call it,
+- [01:50:09,318 - 01:50:10,138] let's give it a name.
+- [01:50:10,138 - 01:50:11,238] Phi or V?
+- [01:50:11,418 - 01:50:11,878] I don't know.
+- [01:50:11,878 - 01:50:12,538] V U
+- [01:50:12,538 - 01:50:12,998] V.
+- [01:50:12,998 - 01:50:14,798] With respect
+- [01:50:14,798 - 01:50:15,798] to Y.
+- [01:50:17,058 - 01:50:18,438] Masses cancel out.
+- [01:50:19,578 - 01:50:20,818] You can see
+- [01:50:20,818 - 01:50:22,118] there's some similarity.
+- [01:50:22,198 - 01:50:24,438] An acceleration type term
+- [01:50:25,018 - 01:50:26,738] being related to
+- [01:50:26,738 - 01:50:27,938] derivatives of something
+- [01:50:27,938 - 01:50:29,698] with respect to position.
+- [01:50:30,158 - 01:50:31,978] What are the Christoffel symbols?
+- [01:50:32,688 - 01:50:34,578] They're composed out of derivatives
+- [01:50:34,578 - 01:50:36,838] of the metric with respect to
+- [01:50:37,018 - 01:50:37,298] position.
+- [01:50:37,298 - 01:50:38,958] So somehow we're
+- [01:50:38,958 - 01:50:40,618] going to find that the derivatives
+- [01:50:40,618 - 01:50:42,738] of the metric with respect to position
+- [01:50:43,798 - 01:50:45,438] are the analogs
+- [01:50:45,438 - 01:50:46,558] of the
+- [01:50:47,478 - 01:50:48,278] Newtonian gravitational
+- [01:50:48,917 - 01:50:49,178] force.
+- [01:50:49,178 - 01:50:50,038] That's where we're going.
+- [01:50:50,618 - 01:50:51,798] So I thought I would
+- [01:50:51,798 - 01:50:52,978] tell you rather than just blindly
+- [01:50:52,978 - 01:50:54,738] write formulas on the blackboard.
+- [01:50:56,298 - 01:50:57,038] Particles move
+- [01:50:57,038 - 01:50:57,938] on geodesics,
+- [01:50:57,938 - 01:50:58,938] which means
+- [01:50:58,938 - 01:51:00,618] the straightest possible paths
+- [01:51:00,618 - 01:51:01,538] in space-time.
+- [01:51:02,758 - 01:51:04,818] But of course you can't have a completely
+- [01:51:04,818 - 01:51:06,998] straight path in a curve
+- [01:51:07,018 - 01:51:07,358] space.
+- [01:51:08,998 - 01:51:10,798] And deviation from
+- [01:51:10,798 - 01:51:12,738] what you might think of as
+- [01:51:12,738 - 01:51:13,778] straight
+- [01:51:13,778 - 01:51:16,838] is proportional to these gammas.
+- [01:51:17,038 - 01:51:18,978] So the gammas are very
+- [01:51:18,978 - 01:51:20,958] very closely related to gravitational
+- [01:51:20,958 - 01:51:21,598] force.
+- [01:51:21,598 - 01:51:23,138] They are the gravitational force.
+- [01:51:23,958 - 01:51:24,898] What else
+- [01:51:24,898 - 01:51:26,098] can we say at this point?
+- [01:51:26,658 - 01:51:27,238] Yeah,
+- [01:51:27,238 - 01:51:28,978] we haven't gotten around to curvature yet.
+- [01:51:29,338 - 01:51:31,198] But we have all the apparatus
+- [01:51:31,198 - 01:51:32,018] that we need.
+- [01:51:32,018 - 01:51:33,338] We need one more concept.
+- [01:51:33,978 - 01:51:35,258] Namely the concept
+- [01:51:35,258 - 01:51:36,418] of parallel transport.
+- [01:51:36,418 - 01:51:36,978] But I
+- [01:51:37,018 - 01:51:38,298] will tell you what that is next time.
+- [01:51:39,918 - 01:51:40,738] Parallel transport.
+- [01:51:41,158 - 01:51:42,758] And then we will get to the idea of curvature.
+- [01:51:43,238 - 01:51:44,918] We have some ideas that are going to be
+- [01:51:44,918 - 01:51:46,518] useful for how particles move.
+- [01:51:47,358 - 01:51:48,838] Next we need to understand
+- [01:51:48,838 - 01:51:50,758] more deeply the
+- [01:51:50,758 - 01:51:52,798] obstruction to spaces
+- [01:51:52,798 - 01:51:53,818] being flat,
+- [01:51:53,818 - 01:51:54,918] to flattening them out.
+- [01:51:55,018 - 01:51:55,658] And that's curvature.
+- [01:51:56,898 - 01:51:57,378] Okay,
+- [01:51:57,378 - 01:51:58,058] we're done.
+- [01:52:07,578 - 01:52:10,978] The preceding program is copyrighted by Stanford University.
+- [01:52:11,438 - 01:52:12,898] Please visit us at
+- [01:52:12,898 - 01:52:14,138] stanford.edu.
