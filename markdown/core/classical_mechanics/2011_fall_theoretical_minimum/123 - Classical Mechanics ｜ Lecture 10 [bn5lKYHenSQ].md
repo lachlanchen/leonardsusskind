@@ -1,0 +1,2216 @@
+# Transcript
+
+Source: core/classical_mechanics/2011_fall_theoretical_minimum/123 - Classical Mechanics ｜ Lecture 10 [bn5lKYHenSQ].mkv
+
+- [00:00:00,000 - 00:00:06,400] Stanford University.
+- [00:00:08,400 - 00:00:12,800] We're going to finish talking about particles and magnetic fields.
+- [00:00:12,800 - 00:00:14,680] Maybe even a little bit about electric fields too.
+- [00:00:14,680 - 00:00:15,800] Electric fields are much easier.
+- [00:00:15,800 - 00:00:19,160] I want to finish that today.
+- [00:00:19,160 - 00:00:23,960] And then for my money, we're sort of finished.
+- [00:00:23,960 - 00:00:28,100] But we will meet next time and I'll think of something to talk about.
+- [00:00:28,100 - 00:00:32,200] But what's that?
+- [00:00:32,200 - 00:00:33,300] Today's the 10th lecture, right?
+- [00:00:33,300 - 00:00:34,600] Oh, today's the 10th lecture?
+- [00:00:34,600 - 00:00:36,200] Oh, okay.
+- [00:00:36,200 - 00:00:38,300] Well, then we won't meet next week.
+- [00:00:38,300 - 00:00:41,600] Unless I don't finish today.
+- [00:00:41,600 - 00:00:45,600] Which I think I will because it doesn't seem too hard to do.
+- [00:00:45,600 - 00:00:51,100] Let me just quickly review.
+- [00:00:51,100 - 00:00:53,200] There are electric and magnetic fields.
+- [00:00:53,200 - 00:00:57,500] They're vector fields.
+- [00:00:57,500 - 00:01:01,900] They depend on position and they also have components.
+- [00:01:01,900 - 00:01:08,300] They have direction, they have magnitude, and they depend on where you are.
+- [00:01:08,300 - 00:01:09,600] Electric field is one example.
+- [00:01:09,600 - 00:01:12,600] Magnetic field is the one that we're really dealing with now.
+- [00:01:12,600 - 00:01:16,800] And so we call it B.
+- [00:01:16,800 - 00:01:19,900] We put a little arrow on top to indicate that it's a vector.
+- [00:01:19,900 - 00:01:22,200] And we say it's a function of position.
+- [00:01:22,200 - 00:01:25,300] We can also write it in terms of its components.
+- [00:01:25,300 - 00:01:26,800] Bi of x.
+- [00:01:27,500 - 00:01:33,800] Or we can write that bi of x means bx, by, and bz.
+- [00:01:33,800 - 00:01:35,800] All the same things.
+- [00:01:35,800 - 00:01:37,800] All right, that's the magnetic field.
+- [00:01:37,800 - 00:01:40,400] They all depend on position.
+- [00:01:40,400 - 00:01:42,000] There's a rule about magnetic fields.
+- [00:01:42,000 - 00:01:48,000] Where this rule comes from is not apparent at the moment.
+- [00:01:48,000 - 00:01:52,800] It's a rule about magnetic fields that's partly an experimental rule,
+- [00:01:52,800 - 00:01:55,900] partly also very consistent with our general theory.
+- [00:01:55,900 - 00:01:56,900] So, it's a rule about magnetic fields.
+- [00:01:56,900 - 00:02:00,100] Or generally theory of electromagnetism.
+- [00:02:00,100 - 00:02:03,200] It is a rule which may break down in the future.
+- [00:02:03,200 - 00:02:06,900] It's the rule that there are no sources of the magnetic field.
+- [00:02:06,900 - 00:02:11,200] No analogs of charged particles for magnetic fields.
+- [00:02:11,200 - 00:02:14,100] No magnetic monopoles.
+- [00:02:14,100 - 00:02:18,400] As I said, in the future, this may prove to be wrong.
+- [00:02:18,400 - 00:02:24,300] But at least experimentally, and within the current framework of theory,
+- [00:02:24,300 - 00:02:25,500] it's true.
+- [00:02:25,500 - 00:02:26,800] That the sources of magnetic fields are not magnetic fields.
+- [00:02:26,800 - 00:02:29,000] The sources of the magnetic field are zero.
+- [00:02:29,000 - 00:02:34,000] And that's the condition that del dot b is equal to zero.
+- [00:02:34,000 - 00:02:39,400] If b was a flow of a fluid, it would be saying there are no sources of the fluid,
+- [00:02:39,400 - 00:02:45,400] no pipe ends sticking out in space where water is flowing away in every direction.
+- [00:02:45,400 - 00:02:48,500] All right, so del dot b equals zero.
+- [00:02:48,500 - 00:02:51,500] We can call that a constraint on a magnetic field.
+- [00:02:51,500 - 00:02:54,600] Not any magnetic field is allowed.
+- [00:02:54,600 - 00:02:56,000] Only some magnetic fields are allowed.
+- [00:02:56,800 - 00:02:59,600] Those which satisfy del dot b equals zero.
+- [00:02:59,600 - 00:03:02,700] Incidentally, one other thing for tonight in any case.
+- [00:03:02,700 - 00:03:05,500] This does not have to be the case in general.
+- [00:03:05,500 - 00:03:10,600] But for our purposes tonight, let's assume that the magnetic field and electric field,
+- [00:03:10,600 - 00:03:13,400] if it exists, are not dependent on time.
+- [00:03:13,400 - 00:03:15,600] They don't vary.
+- [00:03:15,600 - 00:03:17,400] Nothing big or different happens.
+- [00:03:17,400 - 00:03:24,200] But just to be definite, time independent, static, electric, and magnetic fields.
+- [00:03:24,200 - 00:03:24,800] All right, now.
+- [00:03:26,800 - 00:03:30,900] We want to make sure that when we start thinking about magnetic fields,
+- [00:03:30,900 - 00:03:33,300] that we satisfy this condition here.
+- [00:03:33,300 - 00:03:37,100] It would be nice if we could write it in an automatic way,
+- [00:03:37,100 - 00:03:46,900] where we didn't have to keep checking whether we are correctly implementing this condition.
+- [00:03:46,900 - 00:03:49,700] And one way of doing it, it's the accepted way of doing it,
+- [00:03:49,700 - 00:03:54,200] it's the effective way of doing it that works extremely well,
+- [00:03:54,200 - 00:03:56,600] is to say that the magnetic field,
+- [00:03:56,800 - 00:04:00,100] is the curl of something.
+- [00:04:00,100 - 00:04:04,500] That something is called the vect- oops, the vector potential.
+- [00:04:04,500 - 00:04:10,500] And the reason that we do that is because
+- [00:04:10,500 - 00:04:13,800] for any field A,
+- [00:04:13,800 - 00:04:20,600] the divergence of a curl is always zero.
+- [00:04:20,600 - 00:04:23,600] So, all we can say is, look,
+- [00:04:23,600 - 00:04:26,600] we don't ever have to check or think about
+- [00:04:26,600 - 00:04:29,800] whether the divergence of the magnetic field is zero,
+- [00:04:29,800 - 00:04:37,300] if instead, we replace everywhere's B by del cross A.
+- [00:04:37,300 - 00:04:43,300] And that introduces the notion of a vector potential.
+- [00:04:43,300 - 00:04:45,100] It's automatic.
+- [00:04:45,100 - 00:04:46,800] We don't have to think about it.
+- [00:04:46,800 - 00:04:51,200] However, it does introduce another element into things.
+- [00:04:51,200 - 00:04:55,800] And the other element that it introduces is that the vector potential is not unique.
+- [00:04:55,800 - 00:05:01,000] If we start writing our equations in terms of the vector potential,
+- [00:05:01,000 - 00:05:12,400] then different vector potentials will sometimes correspond to exactly the same physics.
+- [00:05:12,400 - 00:05:14,100] And in fact, what's the condition?
+- [00:05:14,100 - 00:05:18,600] The condition is that two different vector potentials are the same
+- [00:05:18,600 - 00:05:22,900] if they lead to the same magnetic field.
+- [00:05:22,900 - 00:05:25,600] What is the freedom in choosing,
+- [00:05:25,600 - 00:05:27,900] the vector potential?
+- [00:05:27,900 - 00:05:30,900] Well,
+- [00:05:30,900 - 00:05:34,300] now we use another fact about
+- [00:05:34,300 - 00:05:38,300] calculus or about vectors and scalar fields, about fields.
+- [00:05:38,300 - 00:05:39,900] And it's the fact
+- [00:05:39,900 - 00:05:43,100] that the curl
+- [00:05:43,100 - 00:05:45,800] of any gradient,
+- [00:05:45,800 - 00:05:49,600] the curl of any gradient
+- [00:05:49,600 - 00:05:53,300] del S
+- [00:05:53,300 - 00:05:55,400] is always equal to zero.
+- [00:05:55,600 - 00:06:02,000] So, that means
+- [00:06:02,000 - 00:06:06,100] that if we add a gradient to A,
+- [00:06:06,100 - 00:06:11,000] it will not change its curl.
+- [00:06:11,000 - 00:06:13,700] That happens to be the only ambiguity.
+- [00:06:13,700 - 00:06:15,500] It's possible to prove
+- [00:06:15,500 - 00:06:17,900] that there's no other ambiguity
+- [00:06:17,900 - 00:06:19,400] in the vector potential
+- [00:06:19,400 - 00:06:22,400] other than adding to it
+- [00:06:25,600 - 00:06:30,000] the gradient of a scalar.
+- [00:06:30,000 - 00:06:33,000] That's the only ambiguity.
+- [00:06:33,000 - 00:06:36,000] Any two vector potentials
+- [00:06:36,000 - 00:06:41,000] which give rise to the same magnetic field,
+- [00:06:41,000 - 00:06:43,000] the difference between them
+- [00:06:43,000 - 00:06:45,000] will automatically be a gradient.
+- [00:06:45,000 - 00:06:47,000] That's a mathematical theorem.
+- [00:06:47,000 - 00:06:49,000] And so we can say that
+- [00:06:49,000 - 00:06:54,000] the vector potential is ambiguous up to a certain point.
+- [00:06:54,000 - 00:07:00,400] So, the vector potential is ambiguous up to a certain kind of transformation.
+- [00:07:00,400 - 00:07:02,400] It's called a gauge transformation.
+- [00:07:02,400 - 00:07:04,400] This is called a gauge transformation.
+- [00:07:04,400 - 00:07:15,400] As I said, it represents an ambiguity in what the vector potential is.
+- [00:07:15,400 - 00:07:18,400] But what about the magnetic field?
+- [00:07:18,400 - 00:07:22,400] What happens to the magnetic field when you make a gauge transformation?
+- [00:07:22,400 - 00:07:23,400] And of course, the answer is nothing.
+- [00:07:23,400 - 00:07:26,000] That's the whole point.
+- [00:07:26,000 - 00:07:30,800] And so one says that the magnetic field is gauge invariant.
+- [00:07:30,800 - 00:07:36,400] In fact, anything that has real physical measurable significance
+- [00:07:36,400 - 00:07:40,800] is gauge invariant.
+- [00:07:40,800 - 00:07:44,000] We have an idea that the magnetic field,
+- [00:07:44,000 - 00:07:46,100] as well as lots of other things
+- [00:07:46,100 - 00:07:49,000] that we might measure directly in the laboratory,
+- [00:07:49,000 - 00:07:52,000] are gauge invariant.
+- [00:07:53,400 - 00:08:00,400] So, we do something a little bit odd.
+- [00:08:00,400 - 00:08:02,400] We're going to talk about this more.
+- [00:08:02,400 - 00:08:04,400] We do something a little bit odd.
+- [00:08:04,400 - 00:08:13,400] We add into the system a new object, the vector potential,
+- [00:08:13,400 - 00:08:15,400] at the cost of it.
+- [00:08:15,400 - 00:08:18,400] It is effective in taking care of this constraint,
+- [00:08:18,400 - 00:08:21,400] but it leads to ambiguities of its own.
+- [00:08:21,400 - 00:08:23,400] And then we remove those ambiguities,
+- [00:08:23,400 - 00:08:27,400] by saying the only thing that we're allowed to really think of as physical
+- [00:08:27,400 - 00:08:30,400] are those things which are gauge invariant.
+- [00:08:32,400 - 00:08:37,400] In other words, those things which really, really only depend on the magnetic field
+- [00:08:37,400 - 00:08:40,400] and not on the vector potential itself.
+- [00:08:40,400 - 00:08:42,400] That becomes a principle.
+- [00:08:42,400 - 00:08:45,400] The principle of gauge invariance.
+- [00:08:53,400 - 00:09:03,400] I don't think we have to write down the components of the magnetic field
+- [00:09:03,400 - 00:09:05,400] in terms of the derivatives of A.
+- [00:09:05,400 - 00:09:07,400] We've done that before.
+- [00:09:07,400 - 00:09:09,400] If we need it, we'll come back to it.
+- [00:09:09,400 - 00:09:11,400] Okay, let's write down an example.
+- [00:09:11,400 - 00:09:14,400] Let's write down a particular example,
+- [00:09:14,400 - 00:09:17,400] which we'll use later in the evening.
+- [00:09:17,400 - 00:09:20,400] It's the example of a uniform magnetic field.
+- [00:09:20,400 - 00:09:22,400] Uniform magnetic field pointing in the blackboard.
+- [00:09:22,400 - 00:09:24,400] I think I wrote it down last time,
+- [00:09:24,400 - 00:09:26,400] but let's write it down again,
+- [00:09:26,400 - 00:09:29,400] and check out some of the things we've been doing.
+- [00:09:29,400 - 00:09:33,400] Alright, so it's a magnetic field for which Bx is equal to 0,
+- [00:09:33,400 - 00:09:35,400] oh, okay, now I've forgotten.
+- [00:09:35,400 - 00:09:38,400] Bx, no, Bx is equal to B,
+- [00:09:38,400 - 00:09:40,400] By,
+- [00:09:40,400 - 00:09:42,400] sorry, wrong,
+- [00:09:42,400 - 00:09:46,400] Bz is equal to B,
+- [00:09:46,400 - 00:09:48,400] Bx is equal to 0,
+- [00:09:48,400 - 00:09:50,400] By is equal to 0.
+- [00:09:50,400 - 00:09:53,400] It's a magnetic field along the x-axis.
+- [00:09:53,400 - 00:09:55,400] Now of course it doesn't matter what axis it's along,
+- [00:09:55,400 - 00:09:57,400] we can always orient the axis.
+- [00:09:57,400 - 00:09:59,400] It's a magnetic field along the z-axis,
+- [00:09:59,400 - 00:10:02,400] we can always orient the z-axis so that it's along the magnetic field,
+- [00:10:02,400 - 00:10:05,400] and little b is just a constant.
+- [00:10:05,400 - 00:10:09,400] Alright, let's first of all see if we can represent it by a vector potential.
+- [00:10:09,400 - 00:10:12,400] The answer is yes, and I'll write down the answer.
+- [00:10:14,400 - 00:10:16,400] Here is a vector potential immediately.
+- [00:10:16,400 - 00:10:18,400] First of all,
+- [00:10:18,400 - 00:10:20,400] we can, the,
+- [00:10:20,400 - 00:10:22,400] I'll write down the answer.
+- [00:10:22,400 - 00:10:25,400] The answer is that A
+- [00:10:29,400 - 00:10:31,400] x,
+- [00:10:32,400 - 00:10:34,400] check it out, let me get the sign right, it's,
+- [00:10:37,400 - 00:10:39,400] alright, Ax is equal to 0,
+- [00:10:39,400 - 00:10:42,400] Az is equal to 0,
+- [00:10:42,400 - 00:10:46,400] and Ay is equal to Bx.
+- [00:10:47,400 - 00:10:49,400] Let's check that.
+- [00:10:49,400 - 00:10:55,400] The only possible derivative is the derivative of Ay with respect to x.
+- [00:10:55,400 - 00:10:58,400] That's the only derivative that doesn't, that isn't 0.
+- [00:10:58,400 - 00:11:02,400] Derivative of Ay with respect to x,
+- [00:11:02,400 - 00:11:04,400] that's not 0.
+- [00:11:04,400 - 00:11:07,400] I can subtract off that for free,
+- [00:11:07,400 - 00:11:11,400] derivative of Ax with respect to y, since that is 0.
+- [00:11:11,400 - 00:11:13,400] Ax is 0.
+- [00:11:13,400 - 00:11:16,400] And this happens to be the z component of the magnetic field.
+- [00:11:16,400 - 00:11:17,400] Alright.
+- [00:11:17,400 - 00:11:20,400] What is the Ay by x?
+- [00:11:20,400 - 00:11:21,400] It's just B.
+- [00:11:21,400 - 00:11:24,400] So, that is the z component of the magnetic field.
+- [00:11:24,400 - 00:11:26,400] This works.
+- [00:11:26,400 - 00:11:29,400] But, it's not the only thing that can work.
+- [00:11:29,400 - 00:11:34,400] Why is it that I've chosen y and not x, for example?
+- [00:11:34,400 - 00:11:40,400] The field is along the z axis, so it's not surprising that the z component is special.
+- [00:11:40,400 - 00:11:44,400] But x and y, they seem sort of symmetric in this problem.
+- [00:11:44,400 - 00:11:46,400] Magnetic field into the blackboard.
+- [00:11:46,400 - 00:11:48,400] I'm looking at it in the xy plane.
+- [00:11:48,400 - 00:11:51,400] Why did I pick out y instead of x?
+- [00:11:51,400 - 00:11:52,400] Alright.
+- [00:11:52,400 - 00:11:55,400] Here's another solution.
+- [00:11:55,400 - 00:11:57,400] Another solution.
+- [00:11:57,400 - 00:12:01,400] Ax equals minus By.
+- [00:12:01,400 - 00:12:04,400] Ay equals 0.
+- [00:12:04,400 - 00:12:11,400] And Az is equal to 0 again.
+- [00:12:11,400 - 00:12:12,400] How about that?
+- [00:12:12,400 - 00:12:15,400] In this case, the only derivative is,
+- [00:12:15,400 - 00:12:19,400] the derivative of Ax with respect to y.
+- [00:12:19,400 - 00:12:23,400] This time there's no Day with respect to x.
+- [00:12:23,400 - 00:12:27,400] But the derivative of Ax with respect to y is minus B.
+- [00:12:27,400 - 00:12:29,400] Well, that's good.
+- [00:12:29,400 - 00:12:31,400] Because there's a minus sign over here.
+- [00:12:31,400 - 00:12:34,400] So this is again, exactly the same magnetic field.
+- [00:12:34,400 - 00:12:37,400] Bz equals B.
+- [00:12:37,400 - 00:12:38,400] Alright.
+- [00:12:38,400 - 00:12:42,400] So these must be related then, by a gauge transformation.
+- [00:12:42,400 - 00:12:45,400] Let's see if we can find the gauge transformation.
+- [00:12:45,400 - 00:12:48,400] That's necessary to relate them.
+- [00:12:48,400 - 00:12:52,400] The S.
+- [00:12:52,400 - 00:12:54,400] I'm not going to search for it and then find it.
+- [00:12:54,400 - 00:12:56,400] I'm going to just write down what the answer is.
+- [00:12:56,400 - 00:12:58,400] And we'll check it.
+- [00:12:58,400 - 00:13:00,400] Alright.
+- [00:13:00,400 - 00:13:02,400] I have forgotten the answer.
+- [00:13:02,400 - 00:13:04,400] But I know what the answer is proportional to.
+- [00:13:04,400 - 00:13:09,400] The answer is proportional to some constant times xy.
+- [00:13:09,400 - 00:13:11,400] So here's what we're going to do.
+- [00:13:11,400 - 00:13:15,400] We're going to start with this representation.
+- [00:13:15,400 - 00:13:18,400] This is the representation over here.
+- [00:13:18,400 - 00:13:21,400] We're going to gauge transform it.
+- [00:13:21,400 - 00:13:23,400] What are we going to do?
+- [00:13:23,400 - 00:13:28,400] We're going to add to A the gradient of this quantity over here.
+- [00:13:28,400 - 00:13:30,400] And we're going to see what we get.
+- [00:13:30,400 - 00:13:31,400] Alright.
+- [00:13:31,400 - 00:13:33,400] So what's the gradient of this quantity?
+- [00:13:33,400 - 00:13:36,400] The gradient, the component in the x direction,
+- [00:13:36,400 - 00:13:41,400] that's just the derivative of S with respect to the gradient of the S.
+- [00:13:41,400 - 00:13:44,400] The component of the gradient of S in the x direction.
+- [00:13:44,400 - 00:13:47,400] That's just C times y.
+- [00:13:47,400 - 00:13:53,400] And what about the gradient of S in the y direction?
+- [00:13:53,400 - 00:13:55,400] That's C times x.
+- [00:13:55,400 - 00:13:59,400] So what happens now if we add to these,
+- [00:13:59,400 - 00:14:02,400] this pre-existing vector potential.
+- [00:14:02,400 - 00:14:04,400] Let's erase this for a minute.
+- [00:14:04,400 - 00:14:07,400] If we add to this pre-existing vector potential,
+- [00:14:07,400 - 00:14:13,400] exactly what's written here.
+- [00:14:13,400 - 00:14:15,400] So what happens to AX?
+- [00:14:15,400 - 00:14:20,400] AX becomes the original AX, which was 0,
+- [00:14:20,400 - 00:14:23,400] plus the gradient of S.
+- [00:14:23,400 - 00:14:25,400] That's C times y.
+- [00:14:25,400 - 00:14:33,400] Z, nothing happens to AZ because the gradient of S has no Z component at all.
+- [00:14:33,400 - 00:14:37,400] And finally, this stays 0 here.
+- [00:14:37,400 - 00:14:39,400] And what happens to this one?
+- [00:14:39,400 - 00:14:42,400] We add to it BX plus y.
+- [00:14:42,400 - 00:14:45,400] BX plus what?
+- [00:14:45,400 - 00:14:49,400] BX plus CX, right?
+- [00:14:49,400 - 00:14:56,400] BX plus CX.
+- [00:14:56,400 - 00:14:59,400] Okay, now what I'm going to do is choose C.
+- [00:14:59,400 - 00:15:01,400] I haven't told you what C is yet.
+- [00:15:01,400 - 00:15:02,400] C could be anything.
+- [00:15:02,400 - 00:15:06,400] I can do many different gauge transformations with different values of C.
+- [00:15:06,400 - 00:15:08,400] Let's now choose C.
+- [00:15:08,400 - 00:15:11,400] And in particular, I want to choose C to be minus B.
+- [00:15:12,400 - 00:15:14,400] Clever, clever, clever.
+- [00:15:14,400 - 00:15:17,400] Then this becomes 0.
+- [00:15:17,400 - 00:15:19,400] And what happens to this one?
+- [00:15:19,400 - 00:15:28,400] It becomes minus B times y.
+- [00:15:28,400 - 00:15:34,400] So what I've done is succeeded in going from the representation
+- [00:15:34,400 - 00:15:37,400] where the y component is B times x,
+- [00:15:37,400 - 00:15:39,400] all other components are 0,
+- [00:15:39,400 - 00:15:41,400] to another representation where the x component,
+- [00:15:41,400 - 00:15:43,400] is minus B times y,
+- [00:15:43,400 - 00:15:46,400] and the y component is 0.
+- [00:15:46,400 - 00:15:48,400] So they're the same.
+- [00:15:48,400 - 00:15:50,400] They're related by gauge transformation.
+- [00:15:50,400 - 00:15:52,400] There's a zillion other gauge transformations you can do.
+- [00:15:52,400 - 00:15:55,400] Let's see, what else could we do?
+- [00:15:55,400 - 00:16:01,400] We could choose C to be minus 1 half B.
+- [00:16:01,400 - 00:16:02,400] Let's see what happens then.
+- [00:16:02,400 - 00:16:04,400] C is minus 1 half B.
+- [00:16:04,400 - 00:16:07,400] So what happens to this?
+- [00:16:07,400 - 00:16:10,400] This becomes B over 2,
+- [00:16:11,400 - 00:16:14,400] times x.
+- [00:16:14,400 - 00:16:16,400] And what happens to this one?
+- [00:16:16,400 - 00:16:25,400] This one becomes minus
+- [00:16:25,400 - 00:16:30,400] B over 2 times y.
+- [00:16:30,400 - 00:16:32,400] Still, we'll get the same magnetic field.
+- [00:16:32,400 - 00:16:37,400] This is a little exercise to prove that the magnetic field comes out exactly the same.
+- [00:16:37,400 - 00:16:40,400] Alright, so these are called gauge transformations.
+- [00:16:40,400 - 00:16:42,400] And a particular choice,
+- [00:16:42,400 - 00:16:45,400] a particular choice is called a gauge.
+- [00:16:45,400 - 00:16:50,400] We could call this the gauge in which AX and AZ are equal to 0.
+- [00:16:50,400 - 00:16:57,400] Here's a gauge in which both AX and AY both have the same magnitude,
+- [00:16:57,400 - 00:16:59,400] but opposite sign.
+- [00:16:59,400 - 00:17:01,400] There's a third gauge,
+- [00:17:01,400 - 00:17:05,400] which was that AY is 0,
+- [00:17:05,400 - 00:17:09,400] and AX was minus B over 2 times y.
+- [00:17:09,400 - 00:17:14,400] So these go under the name of different gauges.
+- [00:17:14,400 - 00:17:21,400] And the principle that the phenomena,
+- [00:17:21,400 - 00:17:24,400] the actual physical phenomena that take place
+- [00:17:24,400 - 00:17:27,400] should be independent of the particular gauge,
+- [00:17:27,400 - 00:17:30,400] that's called gauge invariance.
+- [00:17:30,400 - 00:17:36,400] This is an absolutely central principle in modern physics.
+- [00:17:36,400 - 00:17:39,400] So important that, um,
+- [00:17:39,400 - 00:17:42,400] it governs everything.
+- [00:17:42,400 - 00:17:46,400] It's...
+- [00:17:46,400 - 00:17:48,400] It's big.
+- [00:17:48,400 - 00:17:50,400] Really big.
+- [00:17:50,400 - 00:17:51,400] Yeah?
+- [00:17:51,400 - 00:17:54,400] Can you make A have the same symmetry as B?
+- [00:17:54,400 - 00:17:57,400] Uh, which is, what symmetry is that?
+- [00:17:57,400 - 00:17:59,400] Rotation about the, no.
+- [00:17:59,400 - 00:18:01,400] No, no, you can't.
+- [00:18:01,400 - 00:18:05,400] It wouldn't represent the same situation.
+- [00:18:05,400 - 00:18:07,400] Right, no, you can't.
+- [00:18:07,400 - 00:18:08,400] No, there are limits.
+- [00:18:08,400 - 00:18:09,400] Obviously you can't do anything you want.
+- [00:18:09,400 - 00:18:11,400] There are limits.
+- [00:18:11,400 - 00:18:13,400] And, uh,
+- [00:18:13,400 - 00:18:15,400] you could do a lot more than this.
+- [00:18:15,400 - 00:18:18,400] This was only one particular c equals c,
+- [00:18:18,400 - 00:18:19,400] s equals cxy,
+- [00:18:19,400 - 00:18:21,400] that was only one particular thing you could do.
+- [00:18:21,400 - 00:18:23,400] There's a lot of other things you could do.
+- [00:18:23,400 - 00:18:25,400] I just did, I just used that as an example
+- [00:18:25,400 - 00:18:29,400] to show you how you can go from one gauge to another.
+- [00:18:29,400 - 00:18:32,400] Sometimes, uh,
+- [00:18:32,400 - 00:18:35,400] you say things like,
+- [00:18:35,400 - 00:18:37,400] alright, I'm going to look for a gauge,
+- [00:18:37,400 - 00:18:39,400] I think I can prove it, I know I can prove it,
+- [00:18:39,400 - 00:18:42,400] that there always does exist a gauge
+- [00:18:42,400 - 00:18:45,400] in which the x component is equal to zero
+- [00:18:45,400 - 00:18:47,400] of the vector potential.
+- [00:18:47,400 - 00:18:48,400] You can prove that.
+- [00:18:48,400 - 00:18:50,400] It's not just for a uniform magnetic field.
+- [00:18:50,400 - 00:18:52,400] And then you would speak about the gauge
+- [00:18:52,400 - 00:18:55,400] in which the x component is equal to zero.
+- [00:18:55,400 - 00:18:58,400] Or the gauge in which the y component is equal to zero.
+- [00:18:58,400 - 00:19:00,400] Alright, so that's the lingo.
+- [00:19:00,400 - 00:19:03,400] That's the, that's the language of gauge, uh,
+- [00:19:03,400 - 00:19:05,400] of gauge theories.
+- [00:19:05,400 - 00:19:06,400] A question.
+- [00:19:06,400 - 00:19:08,400] A gauge transformation always refers to
+- [00:19:08,400 - 00:19:11,400] the addition of a,
+- [00:19:11,400 - 00:19:16,400] of, I guess, a field in which the gradient is,
+- [00:19:16,400 - 00:19:20,400] you arrive at the field by taking the gradient of the scalar.
+- [00:19:20,400 - 00:19:23,400] Yeah.
+- [00:19:23,400 - 00:19:26,400] Well, does it always refer to that?
+- [00:19:26,400 - 00:19:29,400] In electrodynamics and in the theory of charged particles,
+- [00:19:29,400 - 00:19:31,400] it always refers to that.
+- [00:19:31,400 - 00:19:34,400] Uh,
+- [00:19:34,400 - 00:19:36,400] then it's a similar,
+- [00:19:36,400 - 00:19:37,400] more complicated structure,
+- [00:19:37,400 - 00:19:40,400] which we're not going to get into tonight, obviously.
+- [00:19:40,400 - 00:19:43,400] And the choice of coordinates in a, uh,
+- [00:19:43,400 - 00:19:46,400] in a, in a gravitating system,
+- [00:19:46,400 - 00:19:48,400] the choice of coordinate system that you describe
+- [00:19:48,400 - 00:19:52,400] a curved geometry by is also called a gauge.
+- [00:19:52,400 - 00:19:56,400] The, again, it's a choice that you can make,
+- [00:19:56,400 - 00:19:59,400] how you coordinate a curved space,
+- [00:19:59,400 - 00:20:01,400] but the physics had better not depend,
+- [00:20:01,400 - 00:20:04,400] the physical phenomena don't depend on how you,
+- [00:20:04,400 - 00:20:06,400] in your, um,
+- [00:20:06,400 - 00:20:09,400] uh, wisdom has this decided to put coordinates on,
+- [00:20:09,400 - 00:20:11,400] uh, on space.
+- [00:20:11,400 - 00:20:15,400] So, again, that's the notion of gauge invariance,
+- [00:20:15,400 - 00:20:18,400] but we're going to be speaking tonight at least only about
+- [00:20:18,400 - 00:20:22,400] this electromagnetic variety of gauge transformation.
+- [00:20:22,400 - 00:20:24,400] And as I think I mentioned last time,
+- [00:20:24,400 - 00:20:25,400] I honestly don't, uh,
+- [00:20:25,400 - 00:20:26,400] no, I, I was going to say,
+- [00:20:26,400 - 00:20:28,400] I don't know the origin of the term gauge.
+- [00:20:28,400 - 00:20:31,400] I do know the origin of the term gauge.
+- [00:20:31,400 - 00:20:33,400] Uh, it was a historical sort of glitch.
+- [00:20:33,400 - 00:20:36,400] That at one time for a brief period,
+- [00:20:36,400 - 00:20:40,400] people thought it had to do with transforming your units
+- [00:20:40,400 - 00:20:42,400] of measurement at different places.
+- [00:20:42,400 - 00:20:45,400] They thought somehow this had to do with changing your unit
+- [00:20:45,400 - 00:20:47,400] of measurement and there, it didn't.
+- [00:20:47,400 - 00:20:49,400] It was just a wrong start.
+- [00:20:49,400 - 00:20:52,400] Uh, yeah.
+- [00:20:52,400 - 00:20:53,400] Question.
+- [00:20:53,400 - 00:20:57,400] Um, does it turn out that there are either computational
+- [00:20:57,400 - 00:21:00,400] or other kinds of advantages to using one gauge or another?
+- [00:21:00,400 - 00:21:02,400] Very often.
+- [00:21:02,400 - 00:21:03,400] We, we, we,
+- [00:21:03,400 - 00:21:04,400] let's try to get to one.
+- [00:21:04,400 - 00:21:06,400] Uh, yeah.
+- [00:21:06,400 - 00:21:07,400] Oh, yes.
+- [00:21:07,400 - 00:21:11,400] That, that is a very good point.
+- [00:21:11,400 - 00:21:13,400] Sometimes this can be a nuisance,
+- [00:21:13,400 - 00:21:16,400] but sometimes it can be a positive distinct advantage
+- [00:21:16,400 - 00:21:19,400] because it can happen that certain things,
+- [00:21:19,400 - 00:21:20,400] certain things are manifest,
+- [00:21:20,400 - 00:21:21,400] in other words,
+- [00:21:21,400 - 00:21:25,400] obvious in one gauge and very non-obvious in some other gauge.
+- [00:21:25,400 - 00:21:29,400] It might be that this or that property is manifest in one gauge,
+- [00:21:29,400 - 00:21:32,400] but that or this property is manifest in another gauge.
+- [00:21:32,400 - 00:21:36,400] And so you may use one gauge to study energy conservation
+- [00:21:36,400 - 00:21:39,400] and another gauge to study Lorentz invariance.
+- [00:21:39,400 - 00:21:40,400] I'm not making that up.
+- [00:21:40,400 - 00:21:42,400] I mean, that is the way it works.
+- [00:21:42,400 - 00:21:43,400] Uh, yeah.
+- [00:21:43,400 - 00:21:46,400] Sometimes it seems somewhat similar to eigenspaces
+- [00:21:46,400 - 00:21:48,400] and finding eigenvalues.
+- [00:21:48,400 - 00:21:51,400] Is there any relationship there or is that just sort of out in the...
+- [00:21:51,400 - 00:21:53,400] Well, of course, everything is related to everything else,
+- [00:21:53,400 - 00:21:56,400] but not in any obvious way at this point, no.
+- [00:21:56,400 - 00:21:57,400] Um, okay.
+- [00:21:57,400 - 00:21:58,400] Now let's come to the Lagrangian.
+- [00:21:58,400 - 00:22:01,400] We talked about the Lagrangian last time.
+- [00:22:01,400 - 00:22:04,400] There's a Lagrangian now for a point particle.
+- [00:22:04,400 - 00:22:06,400] It is not the Lagrangian for the electromagnetic field
+- [00:22:06,400 - 00:22:09,400] or anything like it.
+- [00:22:09,400 - 00:22:12,400] It's just a Lagrangian for a particle moving
+- [00:22:12,400 - 00:22:15,400] in a static magnetic field.
+- [00:22:15,400 - 00:22:17,400] Uh, electric fields are easy.
+- [00:22:17,400 - 00:22:19,400] We won't even bother with them tonight.
+- [00:22:19,400 - 00:22:23,400] We're just going to do magnetic fields.
+- [00:22:23,400 - 00:22:26,400] The Lagrangian, I, we, we talked about it last time.
+- [00:22:26,400 - 00:22:30,400] We'll just go over quickly again, uh, the idea.
+- [00:22:30,400 - 00:22:33,400] There's, first of all, the Lagrangian for the free particle,
+- [00:22:33,400 - 00:22:35,400] just a kinetic energy,
+- [00:22:35,400 - 00:22:37,400] one half mv squared,
+- [00:22:37,400 - 00:22:42,400] one half, let's just write m, uh, mv squared.
+- [00:22:42,400 - 00:22:45,400] V squared, of course, means the sums of the squares
+- [00:22:45,400 - 00:22:48,400] of the time derivatives of x, y, and z.
+- [00:22:48,400 - 00:22:49,400] Maybe I'll write them out.
+- [00:22:49,400 - 00:22:51,400] Maybe, uh, maybe I'll just write them all out.
+- [00:22:51,400 - 00:22:54,400] Just be really concrete about it.
+- [00:22:54,400 - 00:22:58,400] x dot squared plus y dot squared plus z dot squared.
+- [00:22:58,400 - 00:22:59,400] Okay.
+- [00:23:00,400 - 00:23:03,400] That's the Lagrangian for the free particle.
+- [00:23:03,400 - 00:23:06,400] If that's all there was, the free particle would just be a free particle,
+- [00:23:06,400 - 00:23:07,400] no forces on it.
+- [00:23:07,400 - 00:23:10,400] It would just move in straight lines and be dull.
+- [00:23:10,400 - 00:23:12,400] All right, what do we add to it?
+- [00:23:12,400 - 00:23:14,400] Last time we talked about it,
+- [00:23:14,400 - 00:23:15,400] and I'm going to tell you what we add to it.
+- [00:23:15,400 - 00:23:17,400] We're not going to derive it from anything.
+- [00:23:17,400 - 00:23:21,400] We're going to just write it down.
+- [00:23:21,400 - 00:23:24,400] It has a numerical coefficient which is proportional
+- [00:23:24,400 - 00:23:26,400] to the charge of the particle.
+- [00:23:26,400 - 00:23:28,400] It is the charge of the particle.
+- [00:23:28,400 - 00:23:30,400] Electric charge measured in some units.
+- [00:23:30,400 - 00:23:36,400] The last time I put a speed of light down here,
+- [00:23:36,400 - 00:23:40,400] it's quite obvious that it's only e over c
+- [00:23:40,400 - 00:23:42,400] which comes into things,
+- [00:23:42,400 - 00:23:44,400] and in different choices of units,
+- [00:23:44,400 - 00:23:48,400] e over c is sometimes just called q or whatever.
+- [00:23:48,400 - 00:23:51,400] I've kept the speed of light in some units or other
+- [00:23:51,400 - 00:23:54,400] that I'm familiar with and that I use all the time.
+- [00:23:54,400 - 00:23:56,400] There's a speed of light downstairs.
+- [00:23:56,400 - 00:23:59,400] But you could, of course, just change the definition,
+- [00:23:59,400 - 00:24:01,400] get rid of the speed of light,
+- [00:24:01,400 - 00:24:04,400] and change the definition of what you mean by the electric charge.
+- [00:24:04,400 - 00:24:06,400] It's just multiplying it by a number.
+- [00:24:06,400 - 00:24:08,400] I'll leave the e over c in there.
+- [00:24:08,400 - 00:24:10,400] It just somehow appeals to me aesthetically.
+- [00:24:10,400 - 00:24:13,400] E over c, I like it.
+- [00:24:13,400 - 00:24:15,400] I'm used to it.
+- [00:24:15,400 - 00:24:22,400] Times the vector potential dotted into the velocity.
+- [00:24:22,400 - 00:24:26,400] This is obviously one thing that I could write down.
+- [00:24:26,400 - 00:24:29,400] I could also try writing down things involving the magnetic field.
+- [00:24:29,400 - 00:24:32,400] I advise you to try to do that and play with it
+- [00:24:32,400 - 00:24:35,400] and see if you can find anything interesting.
+- [00:24:35,400 - 00:24:38,400] Find some other way of dealing with things
+- [00:24:38,400 - 00:24:40,400] and see what you get.
+- [00:24:40,400 - 00:24:42,400] But we're not going to do that tonight.
+- [00:24:42,400 - 00:24:45,400] So a dot v means, literally,
+- [00:24:45,400 - 00:24:58,400] ax times x dot plus ay times y dot plus az times z dot.
+- [00:24:58,400 - 00:25:00,400] And what do we want to do with this?
+- [00:25:00,400 - 00:25:02,400] All right, I think I showed you last time
+- [00:25:02,400 - 00:25:07,400] how you prove that the equations of motion are gauge invariant.
+- [00:25:07,400 - 00:25:09,400] Let me just really briefly remind you.
+- [00:25:09,400 - 00:25:11,400] You begin with the action principle.
+- [00:25:11,400 - 00:25:14,400] You take two points in space and time.
+- [00:25:14,400 - 00:25:16,400] And you say, let me find the path
+- [00:25:16,400 - 00:25:20,400] which minimizes or otherwise makes stationary
+- [00:25:20,400 - 00:25:25,400] the action which is the integral of the Lagrangian.
+- [00:25:25,400 - 00:25:27,400] We have something new.
+- [00:25:27,400 - 00:25:29,400] We have something which seems to depend
+- [00:25:29,400 - 00:25:31,400] on the vector potentials here in the Lagrangian.
+- [00:25:31,400 - 00:25:34,400] And so we have to ask, when we make a gauge transformation,
+- [00:25:34,400 - 00:25:36,400] like up on the top there,
+- [00:25:36,400 - 00:25:39,400] does it influence the action?
+- [00:25:39,400 - 00:25:41,400] If so, we might be in trouble.
+- [00:25:41,400 - 00:25:43,400] So we worked out last time
+- [00:25:43,400 - 00:25:45,400] there's a contribution to the action
+- [00:25:45,400 - 00:25:47,400] when you make a gauge transformation.
+- [00:25:47,400 - 00:25:49,400] When we make a gauge transformation,
+- [00:25:49,400 - 00:25:51,400] there will be a contribution to the action
+- [00:25:51,400 - 00:25:56,400] e over c times the change in the vector potential,
+- [00:25:56,400 - 00:26:02,400] and that's, well, let's write it as
+- [00:26:02,400 - 00:26:10,400] the gradient of s times x sub i dot.
+- [00:26:10,400 - 00:26:15,400] This is not the full contribution from a times velocity.
+- [00:26:15,400 - 00:26:17,400] It's the change that we get
+- [00:26:17,400 - 00:26:20,400] when we make a gauge transformation.
+- [00:26:20,400 - 00:26:22,400] This is the change in the action
+- [00:26:22,400 - 00:26:24,400] coming from a gauge transformation.
+- [00:26:24,400 - 00:26:26,400] And the point was that
+- [00:26:26,400 - 00:26:30,400] this is integral of dt, of course.
+- [00:26:30,400 - 00:26:34,400] And if you use a little bit of calculus,
+- [00:26:34,400 - 00:26:37,400] you'll find that this integral
+- [00:26:37,400 - 00:26:41,400] is nothing but e over c
+- [00:26:41,400 - 00:26:46,400] times the value of s at,
+- [00:26:46,400 - 00:26:51,400] let's call this the final point in space and time,
+- [00:26:51,400 - 00:26:54,400] let's call this the initial point in space and time,
+- [00:26:54,400 - 00:26:56,400] s of x final,
+- [00:26:56,400 - 00:27:01,400] minus x initial.
+- [00:27:01,400 - 00:27:04,400] We worked that out last time.
+- [00:27:04,400 - 00:27:06,400] How do we see that?
+- [00:27:06,400 - 00:27:12,400] This is dx dt.
+- [00:27:12,400 - 00:27:16,400] dt over t cancels.
+- [00:27:16,400 - 00:27:19,400] And each little piece here is the change in s
+- [00:27:19,400 - 00:27:21,400] from going from one point to a neighboring point,
+- [00:27:21,400 - 00:27:23,400] and you add them all up,
+- [00:27:23,400 - 00:27:25,400] and finally you get...
+- [00:27:26,400 - 00:27:30,400] the difference in s at the two endpoints.
+- [00:27:30,400 - 00:27:32,400] Now, so, first conclusion.
+- [00:27:32,400 - 00:27:34,400] The action is not gauge invariant.
+- [00:27:34,400 - 00:27:36,400] When you do a gauge transformation,
+- [00:27:36,400 - 00:27:38,400] the action changes.
+- [00:27:38,400 - 00:27:40,400] But does it change in an important way?
+- [00:27:40,400 - 00:27:44,400] Does it change in a way which affects
+- [00:27:44,400 - 00:27:47,400] the finding of the trajectory,
+- [00:27:47,400 - 00:27:50,400] the trajectory which minimizes the action?
+- [00:27:50,400 - 00:27:52,400] Now, remember what we're supposed to do.
+- [00:27:52,400 - 00:27:54,400] We're supposed to keep the endpoints fixed.
+- [00:27:54,400 - 00:27:56,400] We nail them down,
+- [00:27:56,400 - 00:27:58,400] and we explore all trajectories
+- [00:27:58,400 - 00:28:00,400] and look for the ones which minimize...
+- [00:28:00,400 - 00:28:02,400] or look for the one which minimizes the action.
+- [00:28:02,400 - 00:28:05,400] If we keep the endpoints fixed,
+- [00:28:05,400 - 00:28:07,400] then when we vary the trajectory around,
+- [00:28:07,400 - 00:28:09,400] this doesn't change.
+- [00:28:09,400 - 00:28:11,400] And because it doesn't change,
+- [00:28:11,400 - 00:28:14,400] finding the minimum doesn't depend on it.
+- [00:28:14,400 - 00:28:18,400] So the answer is, although the action itself
+- [00:28:18,400 - 00:28:20,400] is not quite gauge invariant,
+- [00:28:20,400 - 00:28:22,400] exploring the trajectories
+- [00:28:22,400 - 00:28:25,400] keeping fixed the endpoints
+- [00:28:25,400 - 00:28:28,400] does give rise to a gauge invariant answer.
+- [00:28:28,400 - 00:28:31,400] The trajectory which minimizes the action
+- [00:28:31,400 - 00:28:33,400] will not depend on a gauge transformation
+- [00:28:33,400 - 00:28:35,400] for this reason.
+- [00:28:35,400 - 00:28:37,400] All right, so we can be quite certain then.
+- [00:28:37,400 - 00:28:38,400] We don't have to check it.
+- [00:28:38,400 - 00:28:40,400] We're going to check it anyway.
+- [00:28:40,400 - 00:28:43,400] But we don't have to check that the equations of motion
+- [00:28:43,400 - 00:28:45,400] that follow from this Lagrangian
+- [00:28:45,400 - 00:28:47,400] will be gauge invariant.
+- [00:28:47,400 - 00:28:49,400] What does it mean to say they're gauge invariant?
+- [00:28:49,400 - 00:28:50,400] Yeah.
+- [00:28:50,400 - 00:28:52,400] What does it mean to say they're gauge invariant?
+- [00:28:52,400 - 00:28:54,400] It means when we work out the equations,
+- [00:28:54,400 - 00:28:56,400] the vector potential is going to disappear,
+- [00:28:56,400 - 00:28:58,400] and what's going to be in its place?
+- [00:28:58,400 - 00:29:00,400] The magnetic field.
+- [00:29:00,400 - 00:29:02,400] In other words, the gauge,
+- [00:29:02,400 - 00:29:05,400] the vector potential is going to come in
+- [00:29:05,400 - 00:29:09,400] in combinations which we'll recognize
+- [00:29:09,400 - 00:29:12,400] as components of the magnetic field.
+- [00:29:12,400 - 00:29:13,400] Okay?
+- [00:29:13,400 - 00:29:15,400] All right, so let's do that.
+- [00:29:15,400 - 00:29:17,400] Here's our Lagrangian.
+- [00:29:22,400 - 00:29:24,400] And I'm going to be really concrete
+- [00:29:24,400 - 00:29:26,400] and pedantic about it.
+- [00:29:26,400 - 00:29:28,400] What's the first thing we do
+- [00:29:28,400 - 00:29:30,400] when we encounter a Lagrangian
+- [00:29:30,400 - 00:29:32,400] and we want to work out the equations of motion?
+- [00:29:32,400 - 00:29:34,400] Remember, the equations of motion,
+- [00:29:34,400 - 00:29:36,400] let's write them down.
+- [00:29:36,400 - 00:29:38,400] They're p dot i,
+- [00:29:38,400 - 00:29:40,400] where p is what?
+- [00:29:40,400 - 00:29:42,400] p is the momentum,
+- [00:29:42,400 - 00:29:46,400] is equal to partial of L
+- [00:29:46,400 - 00:29:49,400] with respect to xi.
+- [00:29:49,400 - 00:29:51,400] Those are the Lagrange equations of motion
+- [00:29:51,400 - 00:29:54,400] where, let me remind you what pi is,
+- [00:29:54,400 - 00:29:59,400] pi is the partial derivative of the Lagrangian
+- [00:29:59,400 - 00:30:03,400] with respect to xi dot.
+- [00:30:03,400 - 00:30:06,400] In other words, pi is the derivative of the Lagrangian
+- [00:30:06,400 - 00:30:09,400] with respect to the velocity.
+- [00:30:09,400 - 00:30:16,400] Now, now I have to
+- [00:30:16,400 - 00:30:20,400] tell you more about the notion of momentum.
+- [00:30:20,400 - 00:30:21,400] There are two numbers.
+- [00:30:21,400 - 00:30:23,400] There are two notions of momentum.
+- [00:30:23,400 - 00:30:26,400] There are two distinct notions of momentum.
+- [00:30:26,400 - 00:30:29,400] One of them is just the old-fashioned momentum,
+- [00:30:29,400 - 00:30:31,400] mass times velocity.
+- [00:30:31,400 - 00:30:32,400] Okay?
+- [00:30:32,400 - 00:30:34,400] Mass times velocity.
+- [00:30:34,400 - 00:30:39,400] It's called the mechanical momentum.
+- [00:30:39,400 - 00:30:40,400] Where should we write it?
+- [00:30:40,400 - 00:30:42,400] Okay, let's put it over here.
+- [00:30:42,400 - 00:30:49,400] mv equals mechanical momentum.
+- [00:30:49,400 - 00:30:50,400] That's also the definition
+- [00:30:50,400 - 00:30:53,400] that we encounter in elementary physics.
+- [00:30:53,400 - 00:30:56,400] Mass times velocity is momentum.
+- [00:30:56,400 - 00:30:58,400] Here's a different definition,
+- [00:30:58,400 - 00:31:01,400] namely, the derivative of the Lagrangian,
+- [00:31:01,400 - 00:31:03,400] sorry, the derivative of the Lagrangian
+- [00:31:03,400 - 00:31:05,400] with respect to the velocity,
+- [00:31:05,400 - 00:31:07,400] different definition,
+- [00:31:07,400 - 00:31:10,400] and it's called the canonical momentum.
+- [00:31:10,400 - 00:31:13,400] It's the momentum that you use
+- [00:31:13,400 - 00:31:15,400] in Hamilton's equations.
+- [00:31:15,400 - 00:31:17,400] It's the momentum that you use
+- [00:31:17,400 - 00:31:20,400] throughout our formal,
+- [00:31:20,400 - 00:31:22,400] construction,
+- [00:31:22,400 - 00:31:25,400] thing that goes into Poisson brackets,
+- [00:31:25,400 - 00:31:28,400] partial of L with respect to the velocity,
+- [00:31:28,400 - 00:31:29,400] derivative with respect to the velocity.
+- [00:31:29,400 - 00:31:30,400] Are they the same?
+- [00:31:30,400 - 00:31:33,400] Well, supposing there's only this term here,
+- [00:31:33,400 - 00:31:36,400] and we differentiate L with respect to x dot,
+- [00:31:36,400 - 00:31:38,400] what do we get?
+- [00:31:38,400 - 00:31:39,400] We get mx dot.
+- [00:31:39,400 - 00:31:41,400] So yes, they're the same.
+- [00:31:41,400 - 00:31:44,400] Supposing this weren't here,
+- [00:31:44,400 - 00:31:46,400] but there was an ordinary potential energy,
+- [00:31:46,400 - 00:31:48,400] v of x, or u of x,
+- [00:31:48,400 - 00:31:49,400] I forgot what we called it.
+- [00:31:49,400 - 00:31:51,400] Maybe we called it u of x.
+- [00:31:51,400 - 00:31:54,400] I'll call it u of x.
+- [00:31:54,400 - 00:31:57,400] A potential energy u of x.
+- [00:31:57,400 - 00:32:00,400] U of x doesn't depend on the velocities,
+- [00:32:00,400 - 00:32:02,400] the velocity components,
+- [00:32:02,400 - 00:32:05,400] so when you differentiate L with respect to x dot,
+- [00:32:05,400 - 00:32:07,400] this doesn't contribute.
+- [00:32:07,400 - 00:32:10,400] And it's still true that the canonical momentum
+- [00:32:10,400 - 00:32:13,400] and the mechanical momentum are the same thing.
+- [00:32:13,400 - 00:32:16,400] But with a magnetic field, or in general,
+- [00:32:16,400 - 00:32:18,400] in general, they're not the same thing.
+- [00:32:19,400 - 00:32:22,400] Let's see what we get.
+- [00:32:22,400 - 00:32:23,400] Here.
+- [00:32:23,400 - 00:32:24,400] What is p sub i?
+- [00:32:24,400 - 00:32:27,400] p sub i is partial of L with respect to,
+- [00:32:27,400 - 00:32:28,400] let's take the x component,
+- [00:32:28,400 - 00:32:31,400] let's not do i, just x, x dot.
+- [00:32:31,400 - 00:32:37,400] That's equal to mx dot,
+- [00:32:37,400 - 00:32:40,400] but there's an extra term from here.
+- [00:32:40,400 - 00:32:46,400] Plus e over c, a sub x.
+- [00:32:46,400 - 00:32:48,400] That's it.
+- [00:32:48,400 - 00:32:50,400] That's the canonical momentum.
+- [00:32:50,400 - 00:32:52,400] It is not equal to the mechanical momentum.
+- [00:32:52,400 - 00:32:55,400] They are two quite different things.
+- [00:32:55,400 - 00:32:57,400] When you're asking whether momentum is conserved
+- [00:32:57,400 - 00:33:00,400] by virtue of a symmetry,
+- [00:33:00,400 - 00:33:03,400] you're talking about this beast,
+- [00:33:03,400 - 00:33:05,400] not this one over here necessarily.
+- [00:33:05,400 - 00:33:08,400] They might be the same, but they might not.
+- [00:33:08,400 - 00:33:10,400] Okay, so there we are.
+- [00:33:10,400 - 00:33:12,400] There's our p sub i.
+- [00:33:12,400 - 00:33:17,400] And we want to work out the Lagrangian equation.
+- [00:33:17,400 - 00:33:18,400] Here it is.
+- [00:33:18,400 - 00:33:25,400] p sub i dot is equal to partial of L with respect to x sub i.
+- [00:33:25,400 - 00:33:28,400] So let's work it out in detail.
+- [00:33:28,400 - 00:33:31,400] Okay, first of all, what is p sub i dot?
+- [00:33:31,400 - 00:33:34,400] It's just the time derivative of this.
+- [00:33:34,400 - 00:33:35,400] And what's that?
+- [00:33:35,400 - 00:33:39,400] That's m times the acceleration.
+- [00:33:39,400 - 00:33:40,400] That's good.
+- [00:33:40,400 - 00:33:42,400] We got the acceleration, and that's where we want to go.
+- [00:33:42,400 - 00:33:44,400] We want to get some F equals m a formula.
+- [00:33:44,400 - 00:33:45,400] m times the acceleration,
+- [00:33:45,400 - 00:33:47,400] but then there's another term.
+- [00:33:47,400 - 00:33:53,400] e over c times the time derivative of a of x.
+- [00:33:53,400 - 00:33:57,400] Now, a of x is, of course, a function of position.
+- [00:33:57,400 - 00:33:59,400] It depends on where the particle is.
+- [00:33:59,400 - 00:34:01,400] The particle is moving around.
+- [00:34:01,400 - 00:34:04,400] The vector potential varies from place to place.
+- [00:34:04,400 - 00:34:07,400] And so at the position of the particle,
+- [00:34:07,400 - 00:34:09,400] the vector potential will vary with time,
+- [00:34:09,400 - 00:34:13,400] even though there may be no explicit dependence.
+- [00:34:13,400 - 00:34:16,400] The field may be completely constant
+- [00:34:16,400 - 00:34:18,400] at any given point,
+- [00:34:18,400 - 00:34:21,400] because the particle moves, a changes.
+- [00:34:21,400 - 00:34:24,400] So what's the change in a per unit time,
+- [00:34:24,400 - 00:34:28,400] the derivative of a x with respect to time?
+- [00:34:28,400 - 00:34:33,400] It's changing because the position is changing.
+- [00:34:33,400 - 00:34:34,400] So what do we get?
+- [00:34:34,400 - 00:34:42,400] We get derivative of a x with respect to x times x dot
+- [00:34:42,400 - 00:34:44,400] plus the derivative of a x with respect to y,
+- [00:34:44,400 - 00:34:49,400] times y dot,
+- [00:34:49,400 - 00:34:54,400] plus the derivative of a x with respect to z,
+- [00:34:54,400 - 00:34:55,400] times z dot.
+- [00:34:55,400 - 00:34:57,400] What did I do?
+- [00:34:57,400 - 00:35:00,400] I just took this a x over here,
+- [00:35:00,400 - 00:35:04,400] and I said it changes because the position of the particle changes.
+- [00:35:04,400 - 00:35:08,400] It's x changes, it's y changes, and it's z change.
+- [00:35:08,400 - 00:35:11,400] This is the change in x and change in a,
+- [00:35:11,400 - 00:35:13,400] change in a x,
+- [00:35:13,400 - 00:35:16,400] because the particle moves.
+- [00:35:16,400 - 00:35:21,400] All right, that is the left-hand side of the equation.
+- [00:35:21,400 - 00:35:23,400] How about the right-hand side of the equation?
+- [00:35:23,400 - 00:35:25,400] We still have the right-hand side of the equation,
+- [00:35:25,400 - 00:35:29,400] so let's go to the right-hand side of the equation.
+- [00:35:29,400 - 00:35:32,400] That is the derivative of L, in this case,
+- [00:35:32,400 - 00:35:35,400] let's say p sub x,
+- [00:35:35,400 - 00:35:40,400] the derivative of the Lagrangian with respect to x.
+- [00:35:40,400 - 00:35:42,400] This term here doesn't depend on x at all.
+- [00:35:42,400 - 00:35:45,400] It only depends on velocities.
+- [00:35:45,400 - 00:35:48,400] How about this term? Does this term depend on x?
+- [00:35:48,400 - 00:35:51,400] Well, sure it does. a depends on x.
+- [00:35:51,400 - 00:35:54,400] So, we get on the right-hand side,
+- [00:35:54,400 - 00:35:57,400] e over c,
+- [00:35:57,400 - 00:36:01,400] times the derivative of a x with respect to x,
+- [00:36:01,400 - 00:36:04,400] times x dot.
+- [00:36:04,400 - 00:36:06,400] Then there's a term from here,
+- [00:36:06,400 - 00:36:09,400] plus partial of a y with respect to x,
+- [00:36:09,400 - 00:36:11,400] times y dot,
+- [00:36:11,400 - 00:36:15,400] plus partial of a z with respect to x,
+- [00:36:15,400 - 00:36:18,400] times z dot.
+- [00:36:18,400 - 00:36:27,400] All I've done was differentiate each one of these with respect to x.
+- [00:36:27,400 - 00:36:30,400] Sorry, I'm in the wrong place, aren't I?
+- [00:36:30,400 - 00:36:36,400] The equals should go here.
+- [00:36:36,400 - 00:36:39,400] It's the right-hand side of this equation.
+- [00:36:39,400 - 00:36:40,400] All right, so let's go to the right-hand side of this equation.
+- [00:36:41,400 - 00:36:43,400] Let's bring it down where it belongs.
+- [00:37:11,400 - 00:37:15,400] The thing in this bracket over here
+- [00:37:15,400 - 00:37:18,400] looks a little bit like the thing in this bracket over here,
+- [00:37:18,400 - 00:37:21,400] but they're actually quite different if you look at them.
+- [00:37:21,400 - 00:37:24,400] The first term is the same.
+- [00:37:24,400 - 00:37:27,400] Derivative of a x with respect to x times x dot.
+- [00:37:27,400 - 00:37:29,400] Same thing over here.
+- [00:37:29,400 - 00:37:31,400] Any questions about this? I don't want to go too fast.
+- [00:37:31,400 - 00:37:32,400] Yeah?
+- [00:37:32,400 - 00:37:38,400] In the Lagrangian, is the second term a kinetic energy or a potential energy?
+- [00:37:41,400 - 00:37:45,400] That's a word.
+- [00:37:45,400 - 00:37:46,400] It's neither.
+- [00:37:46,400 - 00:37:49,400] So how do you know whether to add it or subtract it?
+- [00:37:49,400 - 00:37:52,400] Oh, I'm saying let's try it out.
+- [00:37:52,400 - 00:37:55,400] Let's just try it out.
+- [00:37:55,400 - 00:37:57,400] We could try it out subtracting it, too.
+- [00:37:57,400 - 00:37:59,400] We can try it out both ways.
+- [00:37:59,400 - 00:38:01,400] We can try it out both ways.
+- [00:38:01,400 - 00:38:04,400] We could try all kinds of things.
+- [00:38:04,400 - 00:38:08,400] I'm short-cutting a bit of the work for you
+- [00:38:08,400 - 00:38:10,400] and telling you what the answer is,
+- [00:38:10,400 - 00:38:12,400] and now we're going to check the answer.
+- [00:38:12,400 - 00:38:19,400] But subtracting it would only correspond to changing the sign of a.
+- [00:38:19,400 - 00:38:21,400] So we just go a to minus a.
+- [00:38:21,400 - 00:38:22,400] Replace a by minus a.
+- [00:38:22,400 - 00:38:24,400] The formulas would be the same,
+- [00:38:24,400 - 00:38:26,400] except wherever you would see an a, you would stick a minus a.
+- [00:38:26,400 - 00:38:31,400] So it wouldn't make much difference.
+- [00:38:31,400 - 00:38:36,400] All right, so here we are.
+- [00:38:36,400 - 00:38:39,400] And at this level, we might,
+- [00:38:39,400 - 00:38:40,400] at least,
+- [00:38:40,400 - 00:38:43,400] as well never have heard of a magnetic field.
+- [00:38:43,400 - 00:38:46,400] We've written down some equations of motion.
+- [00:38:46,400 - 00:38:48,400] We never heard of a magnetic field.
+- [00:38:48,400 - 00:38:52,400] Let's just follow our noses with this equation
+- [00:38:52,400 - 00:38:54,400] and see what we get,
+- [00:38:54,400 - 00:38:57,400] pretending we had never heard of the concept of a magnetic field.
+- [00:38:57,400 - 00:38:59,400] That last term should be ax.
+- [00:38:59,400 - 00:39:01,400] Yes, you're right. Thank you.
+- [00:39:01,400 - 00:39:02,400] No, it's az.
+- [00:39:02,400 - 00:39:04,400] Ax, ay, az.
+- [00:39:04,400 - 00:39:06,400] The middle one is y.
+- [00:39:06,400 - 00:39:08,400] Yeah, middle one is y. Good.
+- [00:39:08,400 - 00:39:09,400] Yeah, okay.
+- [00:39:09,400 - 00:39:11,400] So you're at the top.
+- [00:39:11,400 - 00:39:13,400] You're differentiating this with respect to x,
+- [00:39:13,400 - 00:39:14,400] this with respect to x,
+- [00:39:14,400 - 00:39:16,400] and this with respect to x.
+- [00:39:16,400 - 00:39:17,400] Okay?
+- [00:39:17,400 - 00:39:24,400] On the other hand, the term in the left only has ax's.
+- [00:39:24,400 - 00:39:27,400] It only has ax's on the left,
+- [00:39:27,400 - 00:39:34,400] and that's because it comes from calculating the time derivative of ax here.
+- [00:39:34,400 - 00:39:36,400] See, they come from different places.
+- [00:39:36,400 - 00:39:38,400] On the right-hand side,
+- [00:39:38,400 - 00:39:42,400] you're getting something that comes from differentiating with respect to x.
+- [00:39:42,400 - 00:39:44,400] So you get three different terms.
+- [00:39:44,400 - 00:39:46,400] Derivative of ax with respect to x,
+- [00:39:46,400 - 00:39:47,400] derivative of ay with respect to x,
+- [00:39:47,400 - 00:39:50,400] derivative of az with respect to x.
+- [00:39:50,400 - 00:39:53,400] On the other hand, on the other side of the equation,
+- [00:39:53,400 - 00:39:56,400] you're differentiating p sub x with respect to time.
+- [00:39:56,400 - 00:39:58,400] So it's always ax,
+- [00:39:58,400 - 00:40:03,400] but different velocity components there.
+- [00:40:03,400 - 00:40:05,400] Okay, that's the setup,
+- [00:40:05,400 - 00:40:07,400] and now let's see what cancels and what doesn't cancel,
+- [00:40:07,400 - 00:40:08,400] and manipulate it,
+- [00:40:08,400 - 00:40:10,400] and see what kind of things we get.
+- [00:40:10,400 - 00:40:14,400] First of all, the left-hand side contains m,
+- [00:40:14,400 - 00:40:17,400] and just the a component of the acceleration.
+- [00:40:17,400 - 00:40:20,400] Let's call it by a familiar name,
+- [00:40:20,400 - 00:40:24,400] the x component of acceleration.
+- [00:40:24,400 - 00:40:28,400] Next, certain terms cancel.
+- [00:40:28,400 - 00:40:30,400] Let's cancel the ones that cancel.
+- [00:40:30,400 - 00:40:33,400] ax with respect to x times x dot,
+- [00:40:33,400 - 00:40:35,400] same thing over here.
+- [00:40:35,400 - 00:40:36,400] So let's...
+- [00:40:37,400 - 00:40:39,400] I don't want to erase them.
+- [00:40:39,400 - 00:40:44,400] I just want to block them out.
+- [00:40:44,400 - 00:40:47,400] Whoops, I missed something.
+- [00:40:47,400 - 00:40:49,400] I didn't catch x dot here.
+- [00:40:49,400 - 00:40:51,400] There.
+- [00:40:51,400 - 00:40:52,400] Okay.
+- [00:40:52,400 - 00:40:58,400] Now, that's equal to...
+- [00:40:58,400 - 00:41:00,400] We're going to bring everything over here
+- [00:41:00,400 - 00:41:02,400] onto the right-hand side of the equation.
+- [00:41:02,400 - 00:41:04,400] We're going to transpose it,
+- [00:41:04,400 - 00:41:06,400] which means we have to change the sign.
+- [00:41:06,400 - 00:41:09,400] So everything in this bracket is going to go over to the left-hand side.
+- [00:41:09,400 - 00:41:12,400] Obviously, there will be an e over c.
+- [00:41:12,400 - 00:41:17,400] And let's combine the things that first multiply y dot.
+- [00:41:17,400 - 00:41:20,400] Here are two things that multiply y dot.
+- [00:41:20,400 - 00:41:22,400] So let's combine them.
+- [00:41:22,400 - 00:41:28,400] One of them is partial of ax with respect to y.
+- [00:41:28,400 - 00:41:30,400] And what's the other one?
+- [00:41:30,400 - 00:41:33,400] Partial of y with respect to x.
+- [00:41:33,400 - 00:41:34,400] With a minus sign.
+- [00:41:34,400 - 00:41:35,400] Because we...
+- [00:41:35,400 - 00:41:36,400] Let's see.
+- [00:41:36,400 - 00:41:37,400] Did I get it right?
+- [00:41:37,400 - 00:41:38,400] Partial?
+- [00:41:38,400 - 00:41:39,400] Yeah.
+- [00:41:39,400 - 00:41:44,400] Yeah, yeah, yeah.
+- [00:41:44,400 - 00:41:46,400] I think this one comes in with a minus sign.
+- [00:41:46,400 - 00:41:48,400] That one went over to the right-hand side.
+- [00:41:48,400 - 00:41:51,400] And the other one has a plus sign.
+- [00:41:51,400 - 00:41:56,400] d a y with respect to x.
+- [00:41:56,400 - 00:41:58,400] Times, I think it's y dot.
+- [00:41:58,400 - 00:42:00,400] Y dot.
+- [00:42:00,400 - 00:42:02,400] Oh boy.
+- [00:42:02,400 - 00:42:03,400] It's looking good.
+- [00:42:03,400 - 00:42:04,400] We're getting components of x.
+- [00:42:04,400 - 00:42:08,400] We're getting components of the magnetic field, in case that slipped past you.
+- [00:42:08,400 - 00:42:09,400] Okay?
+- [00:42:09,400 - 00:42:11,400] But then there's another term.
+- [00:42:11,400 - 00:42:13,400] Let's put a big bracket around it.
+- [00:42:13,400 - 00:42:17,400] And now let's combine the things which multiply z dot.
+- [00:42:17,400 - 00:42:32,400] That will be plus partial of az, oops, az with respect to x minus partial of ax with respect to z.
+- [00:42:34,400 - 00:42:36,400] Times z dot, huh?
+- [00:42:36,400 - 00:42:46,400] Oops, closed bracket.
+- [00:42:46,400 - 00:42:48,400] And that's it.
+- [00:42:48,400 - 00:42:51,400] But we can make it look a little prettier.
+- [00:42:51,400 - 00:42:53,400] First of all, what is this?
+- [00:42:53,400 - 00:42:58,400] Partial of az with respect to x minus partial of ax with respect to z.
+- [00:42:58,400 - 00:43:01,400] It's clearly a component of the magnetic field.
+- [00:43:01,400 - 00:43:02,400] Which one?
+- [00:43:02,400 - 00:43:03,400] Plus or minus?
+- [00:43:03,400 - 00:43:05,400] Plus or minus?
+- [00:43:05,400 - 00:43:07,400] I'm asking you because I don't know.
+- [00:43:10,400 - 00:43:12,400] z, x, I think it's by, isn't it?
+- [00:43:12,400 - 00:43:13,400] Is it?
+- [00:43:13,400 - 00:43:16,400] I have to look up in my notes.
+- [00:43:16,400 - 00:43:21,400] It's either plus or minus.
+- [00:43:21,400 - 00:43:25,400] And of course my notes can easily be wrong because I haven't checked them.
+- [00:43:25,400 - 00:43:26,400] Let's see.
+- [00:43:26,400 - 00:43:31,400] Let's see if I, m a x equals e over c partial of a y with respect to z.
+- [00:43:31,400 - 00:43:36,400] y with respect to x minus partial of x with respect to y.
+- [00:43:36,400 - 00:43:38,400] Yep, yep, yep.
+- [00:43:38,400 - 00:43:58,400] And I have, if I'm correct, I have m a x equals e over c times b z y dot minus b y z dot.
+- [00:43:58,400 - 00:43:59,400] Okay.
+- [00:43:59,400 - 00:44:06,400] It's either that or minus that, but I think it's that.
+- [00:44:06,400 - 00:44:07,400] Okay.
+- [00:44:07,400 - 00:44:14,400] So first of all, first lesson to learn is it does something.
+- [00:44:14,400 - 00:44:16,400] It creates a force.
+- [00:44:16,400 - 00:44:19,400] The right hand side is not zero.
+- [00:44:19,400 - 00:44:20,400] First thing.
+- [00:44:20,400 - 00:44:23,400] Second thing, that force is gauge invariant.
+- [00:44:23,400 - 00:44:26,400] It does not involve the end of the force.
+- [00:44:26,400 - 00:44:27,400] It's not a force.
+- [00:44:27,400 - 00:44:28,400] It's a force.
+- [00:44:28,400 - 00:44:29,400] It's not a force.
+- [00:44:29,400 - 00:44:33,400] It's a force that involves the ambiguity in a.
+- [00:44:33,400 - 00:44:34,400] Good.
+- [00:44:34,400 - 00:44:35,400] This is also good.
+- [00:44:35,400 - 00:44:42,400] And finally, it's whatever it is, it's something whose x component involves the z component
+- [00:44:42,400 - 00:44:49,400] of magnetic field and the y component of velocity minus the y component of magnetic field times
+- [00:44:49,400 - 00:44:51,400] the z component of velocity.
+- [00:44:51,400 - 00:44:56,400] And it sounds awfully much like either plus or minus b cross v.
+- [00:44:56,400 - 00:44:57,400] All right.
+- [00:44:57,400 - 00:45:02,400] If I've done my homework correctly and I didn't make any mistake, then I think it should be
+- [00:45:02,400 - 00:45:04,400] e over c v cross b.
+- [00:45:04,400 - 00:45:07,400] And I'm not going to give you enough time to check that because I don't want to know
+- [00:45:07,400 - 00:45:08,400] if I'm wrong.
+- [00:45:08,400 - 00:45:11,400] All right.
+- [00:45:11,400 - 00:45:18,400] Or at least it's the x component of that.
+- [00:45:18,400 - 00:45:19,400] Don't tell me if I'm wrong.
+- [00:45:19,400 - 00:45:21,400] If I'm wrong, just keep it to yourself.
+- [00:45:21,400 - 00:45:22,400] I don't want to know.
+- [00:45:22,400 - 00:45:23,400] Okay.
+- [00:45:23,400 - 00:45:25,400] Meaning it's a worse thing than it is.
+- [00:45:25,400 - 00:45:26,400] Okay.
+- [00:45:26,400 - 00:45:33,400] It's a worse design and signs are not for the blackboard.
+- [00:45:33,400 - 00:45:34,400] Okay.
+- [00:45:34,400 - 00:45:40,400] What you can do exactly the same thing with the other components, the y component, the
+- [00:45:40,400 - 00:45:41,400] z component.
+- [00:45:41,400 - 00:45:45,400] And of course what this is, is it's the Lorentz force law.
+- [00:45:45,400 - 00:45:49,400] I call these the Newton-Lorentz equations.
+- [00:45:49,400 - 00:45:54,400] Mass times acceleration is e over c times v cross b.
+- [00:45:54,400 - 00:45:55,400] This side is Newton.
+- [00:45:55,400 - 00:45:56,400] This side is Lorentz.
+- [00:45:56,400 - 00:46:02,400] I call them by the name Newton-Lorentz equations.
+- [00:46:02,400 - 00:46:08,400] And they tell you if you didn't already know it, but you knew more about the vector potential
+- [00:46:08,400 - 00:46:13,400] side of things, you would have discovered by this argument that the force, magnetic
+- [00:46:13,400 - 00:46:19,400] force on a charged particle is e over c times v cross b.
+- [00:46:19,400 - 00:46:23,400] Quite an elegant structure in some ways.
+- [00:46:23,400 - 00:46:30,400] Even though we had to introduce this thing called the vector potential, which was somewhat
+- [00:46:30,400 - 00:46:31,400] ambiguous.
+- [00:46:31,400 - 00:46:37,400] Now, it's actually a theorem, and I won't try to prove it, that you cannot express the
+- [00:46:37,400 - 00:46:43,400] motion of a charged particle in an action form, in the form of a Lagrangian equation
+- [00:46:43,400 - 00:46:46,400] of motion without introducing the vector potential.
+- [00:46:46,400 - 00:46:48,400] You've got to.
+- [00:46:48,400 - 00:46:52,400] You can try just fiddling around with only the magnetic field and you won't get anywhere.
+- [00:46:52,400 - 00:46:59,400] What would happen if instead of the vector potential you substituted in the magnetic
+- [00:46:59,400 - 00:47:00,400] field itself?
+- [00:47:00,400 - 00:47:07,400] Then every place that you saw the, every place you see the a field, you would see a b field,
+- [00:47:07,400 - 00:47:13,400] and you'd wind up with a thing which was the curl of the b field.
+- [00:47:13,400 - 00:47:17,400] That's not the Lorentz force law.
+- [00:47:17,400 - 00:47:20,400] Anyway.
+- [00:47:20,400 - 00:47:21,400] Uh.
+- [00:47:22,400 - 00:47:29,400] Alright, are we, uh, are we ready for more?
+- [00:47:29,400 - 00:47:35,400] Alright, let's go on to the Hamiltonian.
+- [00:47:35,400 - 00:47:39,400] Next is the Hamiltonian.
+- [00:47:39,400 - 00:47:44,400] We're going to plow through this thing and do basically all of charged particle physics
+- [00:47:44,400 - 00:47:47,400] tonight in a magnetic field.
+- [00:47:47,400 - 00:47:49,400] So the next thing is, is there a Hamiltonian?
+- [00:47:49,400 - 00:47:50,400] There is a Hamiltonian.
+- [00:47:50,400 - 00:47:51,400] There is a Hamiltonian.
+- [00:47:51,400 - 00:47:53,400] The next thing is, is there a Hamiltonian form for this?
+- [00:47:53,400 - 00:47:56,400] In other words, is there an expression for energy?
+- [00:47:56,400 - 00:48:04,400] And can we use that expression for energy to, um, to use, uh, as a Hamiltonian?
+- [00:48:04,400 - 00:48:18,400] Let's first write down, we're going to need the, we're going to need the canonical momenta.
+- [00:48:18,400 - 00:48:19,400] So what is it?
+- [00:48:19,400 - 00:48:29,400] So the Hamiltonian is equal to mx dot plus e over c times ax.
+- [00:48:29,400 - 00:48:35,400] Py is equal to my dot plus e over c ay.
+- [00:48:35,400 - 00:48:42,400] Pz is equal to mz dot plus e over c az.
+- [00:48:42,400 - 00:48:44,400] Alright, we'll need those.
+- [00:48:44,400 - 00:48:45,400] Okay, the Hamiltonian.
+- [00:48:45,400 - 00:48:48,400] What's the rules for the Hamiltonian in terms of the Lagrangian?
+- [00:48:48,400 - 00:48:49,400] I'll remind you.
+- [00:48:49,400 - 00:49:02,400] The Hamiltonian is equal to the sum over all the coordinates of the ith component of momentum
+- [00:49:02,400 - 00:49:10,400] times the ith component of velocity minus the Lagrangian.
+- [00:49:10,400 - 00:49:15,400] And the Lagrangian is a function of x and x dot.
+- [00:49:15,400 - 00:49:17,400] Now, the Hamiltonian is supposed to be a constant.
+- [00:49:17,400 - 00:49:23,400] The Hamiltonian is supposed to be a function of x's and p's.
+- [00:49:23,400 - 00:49:30,400] This was really easy in the previous cases because p was essentially just x dot times the mass.
+- [00:49:30,400 - 00:49:35,400] So you could just, wherever you saw an x dot, you could just substitute p over m.
+- [00:49:35,400 - 00:49:37,400] Well, it's not much harder here.
+- [00:49:37,400 - 00:49:38,400] You do the same thing.
+- [00:49:38,400 - 00:49:45,400] You just say, I will solve these equations for x dot, and that's easy.
+- [00:49:45,400 - 00:49:49,400] Let's, yeah, let's rewrite them.
+- [00:49:49,400 - 00:50:00,400] Px minus e over c ax over m divided by m is equal to x dot.
+- [00:50:00,400 - 00:50:08,400] I've just transposed the e over c a to the left and divided by m.
+- [00:50:08,400 - 00:50:10,400] That tells me what x dot is.
+- [00:50:10,400 - 00:50:13,400] It tells me what x dot is in terms of p and functions of x.
+- [00:50:13,400 - 00:50:14,400] Well defined.
+- [00:50:15,400 - 00:50:17,400] It's defined functions of x.
+- [00:50:17,400 - 00:50:19,400] So I know what x dot is now.
+- [00:50:19,400 - 00:50:21,400] Same thing with y dot and z dot.
+- [00:50:21,400 - 00:50:25,400] And I can simply plug it into this Hamiltonian.
+- [00:50:25,400 - 00:50:28,400] It's a little bit of a nuisance.
+- [00:50:28,400 - 00:50:30,400] I'm not going to carry it out.
+- [00:50:30,400 - 00:50:31,400] It's not very hard.
+- [00:50:31,400 - 00:50:33,400] It's extremely easy, as a matter of fact.
+- [00:50:33,400 - 00:50:36,400] It's just keeping track of a few terms, canceling them out.
+- [00:50:36,400 - 00:50:39,400] You've got to keep track of a few terms, canceling them out.
+- [00:50:39,400 - 00:50:40,400] Let's see.
+- [00:50:40,400 - 00:50:41,400] Let's just remember what's here.
+- [00:50:41,400 - 00:50:44,400] In the Lagrangian, all right, let's write it.
+- [00:50:44,400 - 00:50:46,400] Let's write it.
+- [00:50:46,400 - 00:50:47,400] L of x and x dot.
+- [00:50:47,400 - 00:50:49,400] Let's write it in detail.
+- [00:50:49,400 - 00:51:12,400] It's equal to, first of all, p sub x, x dot plus p sub y, y dot plus p sub z, z dot minus m over 2, x dot squared minus m over 2, y dot squared minus m over 2, z dot squared.
+- [00:51:12,400 - 00:51:15,400] And then what have I left out?
+- [00:51:15,400 - 00:51:19,400] I've left out the e over c, a dot v term.
+- [00:51:19,400 - 00:51:39,400] And so that's minus e over c, a over c, a sub x, x dot minus e over c, a sub y, y dot and so forth for z dot.
+- [00:51:39,400 - 00:51:40,400] I don't have room to write it.
+- [00:51:40,400 - 00:51:41,400] So I'm going to write it.
+- [00:51:41,400 - 00:51:42,400] All right.
+- [00:51:42,400 - 00:51:43,400] That's it.
+- [00:51:43,400 - 00:51:44,400] So what do you do with this?
+- [00:51:44,400 - 00:51:52,400] You take it and you substitute in for all the x dots these expressions over here.
+- [00:51:52,400 - 00:51:56,400] It's not very illuminating until you do it.
+- [00:51:56,400 - 00:52:00,400] It's not very illuminating, but it is the right thing to do.
+- [00:52:00,400 - 00:52:02,400] Could you have guessed the answer?
+- [00:52:02,400 - 00:52:06,400] Actually, I don't see how you could easily guess the answer, but the answer is very simple.
+- [00:52:06,400 - 00:52:08,400] I'll tell you what it is.
+- [00:52:08,400 - 00:52:10,400] It is...
+- [00:52:12,400 - 00:52:33,400] p sub x minus e over c, a sub x squared over twice the mass plus p sub y minus e over c, a y squared over twice the mass.
+- [00:52:33,400 - 00:52:36,400] And same thing for z.
+- [00:52:36,400 - 00:52:37,400] Okay.
+- [00:52:37,400 - 00:52:38,400] All right.
+- [00:52:38,400 - 00:52:39,400] All right.
+- [00:52:39,400 - 00:52:40,400] All right.
+- [00:52:40,400 - 00:52:41,400] So you do this.
+- [00:52:41,400 - 00:52:47,400] You take the sum of the squares of these expressions here.
+- [00:52:47,400 - 00:52:58,400] Plus p z minus e over c, a z squared over 2m.
+- [00:52:58,400 - 00:53:07,400] All you do is you take the sums of the squares of these expressions here, well, the ones in the brackets here, and divide by 2m.
+- [00:53:07,400 - 00:53:08,400] So anything else?
+- [00:53:08,400 - 00:53:09,400] Okay.
+- [00:53:09,400 - 00:53:10,400] So you do this.
+- [00:53:10,400 - 00:53:11,400] You take the sum of the squares of these expressions here, and divide by 2m.
+- [00:53:11,400 - 00:53:12,400] Does anybody recognize what this is?
+- [00:53:12,400 - 00:53:13,400] I'm sure you do.
+- [00:53:13,400 - 00:53:16,400] This object up here, if you substitute in x dot for it, what is it?
+- [00:53:16,400 - 00:53:17,400] Can you tell what it is?
+- [00:53:17,400 - 00:53:18,400] Oh, the .
+- [00:53:18,400 - 00:53:19,400] It's just 1 half mv squared.
+- [00:53:19,400 - 00:53:20,400] It is just 1 half mv squared.
+- [00:53:20,400 - 00:53:21,400] p minus e over c divided by m is x dot.
+- [00:53:21,400 - 00:53:22,400] All right.
+- [00:53:22,400 - 00:53:23,400] Because it comes in squared, you wind up with a mass in the numerator.
+- [00:53:23,400 - 00:53:24,400] So you do this.
+- [00:53:24,400 - 00:53:25,400] You take the sum of the squares of these expressions here, and divide by 2m.
+- [00:53:25,400 - 00:53:26,400] All right.
+- [00:53:26,400 - 00:53:27,400] So anything else?
+- [00:53:27,400 - 00:53:28,400] Okay.
+- [00:53:28,400 - 00:53:29,400] All right.
+- [00:53:29,400 - 00:53:30,400] So anything else?
+- [00:53:30,400 - 00:53:31,400] Okay.
+- [00:53:31,400 - 00:53:32,400] So anything else?
+- [00:53:32,400 - 00:53:33,400] Okay.
+- [00:53:33,400 - 00:53:34,400] All right.
+- [00:53:34,400 - 00:53:35,400] So anything else?
+- [00:53:35,400 - 00:53:36,400] Okay.
+- [00:53:36,400 - 00:53:37,400] So anything else?
+- [00:53:37,400 - 00:53:43,060] You wind up with a mass in the numerator, and you get x dot squared plus y dot squared
+- [00:53:43,060 - 00:53:44,300] plus z dot squared.
+- [00:53:44,300 - 00:53:51,560] It's exactly the same thing you would have written down if there was no magnetic field.
+- [00:53:51,560 - 00:53:55,220] But does that mean that the magnetic field has no effect?
+- [00:53:55,220 - 00:53:57,460] No, it doesn't.
+- [00:53:57,460 - 00:53:58,700] It doesn't.
+- [00:53:58,700 - 00:54:06,400] The energy is exactly the same function of the velocities as it was without the magnetic
+- [00:54:06,400 - 00:54:07,400] field.
+- [00:54:07,400 - 00:54:09,340] But that doesn't tell you very much.
+- [00:54:09,340 - 00:54:10,600] That doesn't tell you very much.
+- [00:54:10,600 - 00:54:17,400] The Lagrangian itself is different, and the Hamiltonian, when expressed in terms of the
+- [00:54:17,400 - 00:54:21,540] momentum and not the velocities, is different.
+- [00:54:21,540 - 00:54:26,080] That means when you go to work out the equations of motion, it will be different.
+- [00:54:26,080 - 00:54:27,080] We know it is.
+- [00:54:27,080 - 00:54:30,060] We're going to get to Lorentz force law on the right-hand side.
+- [00:54:30,060 - 00:54:36,180] Nevertheless, the numerical value of the energy is 1 half mv squared.
+- [00:54:36,180 - 00:54:39,460] It's conserved.
+- [00:54:39,460 - 00:54:45,680] And so that tells you that a particle moving in a magnetic field has a constant speed.
+- [00:54:45,680 - 00:54:48,620] The magnetic field does not change the speed.
+- [00:54:48,620 - 00:54:50,140] Does it change the velocity?
+- [00:54:50,140 - 00:54:53,540] Yes, because the velocity can change its direction.
+- [00:54:53,540 - 00:54:54,540] Does it change the speed?
+- [00:54:54,540 - 00:54:56,820] No, it doesn't change the speed.
+- [00:54:56,820 - 00:54:59,580] The kinetic energy, 1 half mv squared, is conserved.
+- [00:54:59,580 - 00:55:00,580] It doesn't change.
+- [00:55:00,580 - 00:55:04,880] Therefore, the velocity, the magnitude of the velocity doesn't change.
+- [00:55:04,880 - 00:55:05,880] But still.
+- [00:55:05,880 - 00:55:08,760] The magnetic field does something.
+- [00:55:08,760 - 00:55:21,700] Do you know why the ordinary, old-fashioned kinetic energy is conserved?
+- [00:55:21,700 - 00:55:25,020] Because the force is perpendicular to the velocity.
+- [00:55:25,020 - 00:55:27,980] When the force is perpendicular to the velocity, it's v cross b.
+- [00:55:27,980 - 00:55:33,160] When the force is perpendicular to the velocity, it doesn't change the magnitude of the velocity.
+- [00:55:33,160 - 00:55:34,160] It's a constant.
+- [00:55:34,160 - 00:55:35,160] It's a constant.
+- [00:55:35,160 - 00:55:36,440] It's a constant.
+- [00:55:36,440 - 00:55:41,280] Any force or any acceleration perpendicular to the direction of velocity doesn't change
+- [00:55:41,280 - 00:55:43,980] the magnitude of the velocity.
+- [00:55:43,980 - 00:55:48,380] And so it's natural and it comes out, comes out of the equations, that the energy, 1 half
+- [00:55:48,380 - 00:55:51,000] mv squared, is conserved.
+- [00:55:51,000 - 00:55:58,280] But it's a different function of the canonical variables, the x's and the p's.
+- [00:55:58,280 - 00:56:02,040] And so when you go to use Hamilton's equations, you get different answers.
+- [00:56:02,040 - 00:56:03,040] Okay.
+- [00:56:03,040 - 00:56:04,040] Let's take a little break.
+- [00:56:04,040 - 00:56:05,040] For a few minutes.
+- [00:56:05,040 - 00:56:06,040] For five minutes.
+- [00:56:06,040 - 00:56:10,500] And think of questions.
+- [00:56:10,500 - 00:56:16,900] What I wanted to go through to show you how it works is the motion of a charged particle
+- [00:56:16,900 - 00:56:20,760] in a uniform magnetic field.
+- [00:56:20,760 - 00:56:21,760] It's simple.
+- [00:56:21,760 - 00:56:22,760] It's elegant.
+- [00:56:22,760 - 00:56:28,940] And it can be solved.
+- [00:56:28,940 - 00:56:32,560] In fact, we'll even do, we'll do a uniform electric and magnetic field.
+- [00:56:32,560 - 00:56:34,160] But first, let's do a uniform magnetic field.
+- [00:56:34,160 - 00:56:34,200] Okay.
+- [00:56:35,040 - 00:56:42,040] First, let's just look at the equation of motion.
+- [00:56:42,040 - 00:56:52,600] Well, okay, let's, of course we're going to look at the equation of motion.
+- [00:56:52,600 - 00:56:57,300] But it's not what I meant to say.
+- [00:56:57,300 - 00:57:00,040] Uniform magnetic field pointing in the z direction.
+- [00:57:00,040 - 00:57:02,040] There were two gauges that we studied, or that we looked at.
+- [00:57:02,040 - 00:57:03,040] One was the magnetic field pointing in the z direction.
+- [00:57:03,040 - 00:57:04,040] And the other one was the magnetic field pointing in the z direction.
+- [00:57:04,040 - 00:57:05,040] Now, I'm going to go through those gauges again.
+- [00:57:05,040 - 00:57:06,040] And I'll show you some examples of that.
+- [00:57:06,040 - 00:57:12,220] One was that a sub x, now, did anybody write it down?
+- [00:57:12,220 - 00:57:18,040] In both cases, a sub z was equal to zero.
+- [00:57:18,040 - 00:57:19,760] Okay.
+- [00:57:19,760 - 00:57:24,040] Yeah.
+- [00:57:24,040 - 00:57:31,040] A z is equal to zero.
+- [00:57:31,040 - 00:57:32,040] A x is equal to zero.
+- [00:57:32,040 - 00:57:33,040] A z is equal to zero.
+- [00:57:33,040 - 00:57:34,040] A x is equal to zero.
+- [00:57:34,040 - 00:57:38,040] And A y is equal to zero.
+- [00:57:38,040 - 00:57:39,040] Okay.
+- [00:57:39,040 - 00:57:44,040] We could do that one.
+- [00:57:44,040 - 00:57:48,360] That's an interesting one.
+- [00:57:48,360 - 00:57:50,540] But it's not very interesting.
+- [00:57:50,540 - 00:57:52,800] Of limited interest, shall we say.
+- [00:57:52,800 - 00:57:53,860] Yeah, okay.
+- [00:57:53,860 - 00:57:55,920] So let's just plug it in.
+- [00:57:55,920 - 00:58:01,360] Let's plug it in and put it in.
+- [00:58:01,360 - 00:58:03,040] Should we put it in the Lagrangian or the Hamiltonian?
+- [00:58:04,040 - 00:58:09,500] Let's see.
+- [00:58:09,500 - 00:58:11,980] Let's put it in the Lagrangian.
+- [00:58:11,980 - 00:58:12,980] Let's put it into the Lagrangian.
+- [00:58:12,980 - 00:58:14,300] So here's the Lagrangian.
+- [00:58:14,300 - 00:58:20,040] Let's erase everything that we don't need.
+- [00:58:20,040 - 00:58:25,040] Oh.
+- [00:58:25,040 - 00:58:29,040] Okay.
+- [00:58:29,040 - 00:58:31,040] So.
+- [00:58:31,040 - 00:58:38,160] Now we're being very, very concrete and studying a very particular problem, no electric field,
+- [00:58:38,680 - 00:58:45,840] and only one component of the vector potential is not zero, and it has a very definite value.
+- [00:58:45,840 - 00:58:47,800] So let's erase everything which is zero.
+- [00:58:49,300 - 00:58:51,540] Ax is zero, that gets rid of this term.
+- [00:58:52,300 - 00:58:54,420] Az is zero, that gets rid of this term.
+- [00:58:54,920 - 00:58:58,520] And what about ay? That is equal to b times x, is that right?
+- [00:58:58,520 - 00:59:02,360] b times x.
+- [00:59:03,960 - 00:59:09,000] So we have a term in Lagrangian which is dependent on x and y dot.
+- [00:59:09,000 - 00:59:12,860] Are there any cyclic coordinates?
+- [00:59:14,940 - 00:59:17,080] Anybody remember what a cyclic coordinate is?
+- [00:59:18,480 - 00:59:20,300] It doesn't appear in the Lagrangian.
+- [00:59:20,760 - 00:59:28,160] Because it doesn't appear in the Lagrangian, it means that the Lagrangian doesn't change if you shift that coordinate.
+- [00:59:28,520 - 00:59:30,520] That's called a symmetry.
+- [00:59:30,520 - 00:59:37,080] So one way of spotting symmetry is fast is just to look for cyclic coordinates.
+- [00:59:37,080 - 00:59:40,520] And do you see any cyclic coordinates? I see two of them.
+- [00:59:40,520 - 00:59:42,520] y and z.
+- [00:59:42,520 - 00:59:44,520] y and z.
+- [00:59:44,520 - 00:59:46,520] x appears in the Lagrangian, but not y and z.
+- [00:59:48,520 - 00:59:54,520] So it's quite clear then that if you shift y or you shift z, the Lagrangian doesn't change.
+- [00:59:54,520 - 00:59:56,520] It involves y dot, but y dot is not y.
+- [00:59:56,520 - 00:59:58,040] y dot is just y.
+- [00:59:58,040 - 01:00:00,040] y dot is just y dot.
+- [01:00:00,040 - 01:00:04,040] Alright, so there are two cyclic coordinates.
+- [01:00:04,040 - 01:00:06,040] Let's look at the first cyclic coordinate.
+- [01:00:06,040 - 01:00:08,040] Oh, alright, here. And also let's come over to here.
+- [01:00:08,040 - 01:00:10,040] Let's come over to here.
+- [01:00:14,040 - 01:00:16,040] a sub x is 0.
+- [01:00:18,040 - 01:00:20,040] a sub z is 0.
+- [01:00:22,040 - 01:00:24,040] And a sub y is b times x.
+- [01:00:24,040 - 01:00:26,040] And a sub y is b times x.
+- [01:00:26,040 - 01:00:28,040] Alright, so there are two cyclic coordinates.
+- [01:00:28,040 - 01:00:30,040] Alright, so which ones did we say were cyclic? I've forgotten.
+- [01:00:30,040 - 01:00:32,040] y and z?
+- [01:00:32,040 - 01:00:34,040] y and z. So what does that mean about y and z?
+- [01:00:36,040 - 01:00:38,040] It means that the corresponding
+- [01:00:38,040 - 01:00:40,040] momenta are conserved.
+- [01:00:40,040 - 01:00:42,040] Right? If you have a cyclic
+- [01:00:42,040 - 01:00:44,040] coordinate, the corresponding
+- [01:00:44,040 - 01:00:46,040] momentum is conserved.
+- [01:00:46,040 - 01:00:48,040] That's an example of Noether's
+- [01:00:48,040 - 01:00:50,040] theorem. That's an example of conservation
+- [01:00:50,040 - 01:00:52,040] as a
+- [01:00:52,040 - 01:00:54,040] consequence of symmetry.
+- [01:00:54,040 - 01:00:56,040] What is the symmetry? The symmetry
+- [01:00:56,040 - 01:00:58,040] is just shifts of the cyclic
+- [01:00:58,040 - 01:01:00,040] coordinates. Since the cyclic coordinate doesn't
+- [01:01:00,040 - 01:01:02,040] enter, it doesn't matter if you shift it.
+- [01:01:02,040 - 01:01:04,040] If you translate it.
+- [01:01:04,040 - 01:01:06,040] Okay, so which ones? That means that
+- [01:01:08,040 - 01:01:10,040] that in particular, let's start with p z.
+- [01:01:10,040 - 01:01:12,040] p z is conserved.
+- [01:01:12,040 - 01:01:14,040] What does that say about
+- [01:01:14,040 - 01:01:16,040] the z motion?
+- [01:01:16,040 - 01:01:18,040] It says that the acceleration
+- [01:01:18,040 - 01:01:20,040] of z is 0.
+- [01:01:20,040 - 01:01:22,040] p z is conserved.
+- [01:01:22,040 - 01:01:24,040] That means that z dot,
+- [01:01:24,040 - 01:01:26,040] the velocity in the z direction
+- [01:01:26,040 - 01:01:28,040] is conserved. That means
+- [01:01:28,040 - 01:01:30,040] the acceleration in the z axis
+- [01:01:30,040 - 01:01:32,040] is 0.
+- [01:01:32,040 - 01:01:34,040] So, first conclusion,
+- [01:01:34,040 - 01:01:36,040] p z
+- [01:01:36,040 - 01:01:38,040] dot is equal
+- [01:01:38,040 - 01:01:40,040] to 0, or
+- [01:01:40,040 - 01:01:42,040] acceleration
+- [01:01:42,040 - 01:01:44,040] in the z direction
+- [01:01:44,040 - 01:01:46,040] is equal to 0.
+- [01:01:46,040 - 01:01:48,040] So as far as the z axis goes,
+- [01:01:48,040 - 01:01:50,040] the particle just moves along with
+- [01:01:50,040 - 01:01:52,040] uniform velocity down that
+- [01:01:52,040 - 01:01:54,040] axis.
+- [01:01:54,040 - 01:01:56,040] Excuse me. I missed what?
+- [01:01:56,040 - 01:01:58,040] p z dot is 0.
+- [01:01:58,040 - 01:02:00,040] Because z doesn't, because
+- [01:02:00,040 - 01:02:02,040] Okay.
+- [01:02:02,040 - 01:02:04,040] Is that a symmetry argument?
+- [01:02:04,040 - 01:02:06,040] Yeah. It's a symmetry argument.
+- [01:02:06,040 - 01:02:08,040] And it says that the Lagrangian is symmetric
+- [01:02:08,040 - 01:02:10,040] and the z goes to z
+- [01:02:10,040 - 01:02:12,040] plus a small shift.
+- [01:02:12,040 - 01:02:14,040] Why is it so?
+- [01:02:14,040 - 01:02:16,040] Because z doesn't appear in it all together.
+- [01:02:16,040 - 01:02:18,040] Good.
+- [01:02:18,040 - 01:02:20,040] Okay, so that's the first thing we see.
+- [01:02:24,040 - 01:02:26,040] That the acceleration
+- [01:02:26,040 - 01:02:28,040] in the z direction is equal to 0.
+- [01:02:28,040 - 01:02:30,040] Now what's the other one which is conserved?
+- [01:02:32,040 - 01:02:34,040] y.
+- [01:02:34,040 - 01:02:36,040] p sub y. p sub y is conserved.
+- [01:02:36,040 - 01:02:38,040] What does that say?
+- [01:02:38,040 - 01:02:40,040] Let's take a look at that.
+- [01:02:42,040 - 01:02:44,040] p sub y,
+- [01:02:44,040 - 01:02:46,040] that says that d by dt
+- [01:02:46,040 - 01:02:48,040] of
+- [01:02:48,040 - 01:02:50,040] m y dot
+- [01:02:50,040 - 01:02:52,040] plus e over c
+- [01:02:52,040 - 01:02:54,040] b x
+- [01:02:54,040 - 01:02:56,040] is equal to 0.
+- [01:02:56,040 - 01:02:58,040] Saying something is conserved
+- [01:02:58,040 - 01:03:00,040] is just another way of saying
+- [01:03:00,040 - 01:03:02,040] its time derivative is equal to 0.
+- [01:03:02,040 - 01:03:04,040] I've plugged in for p sub y
+- [01:03:04,040 - 01:03:06,040] what it is, and here's what I get.
+- [01:03:06,040 - 01:03:08,040] And now let's work that out.
+- [01:03:08,040 - 01:03:10,040] That's the mass times the
+- [01:03:10,040 - 01:03:12,040] y component of acceleration
+- [01:03:12,040 - 01:03:14,040] plus e over c
+- [01:03:14,040 - 01:03:16,040] times
+- [01:03:16,040 - 01:03:18,040] the magnetic field
+- [01:03:18,040 - 01:03:20,040] times the x component of
+- [01:03:20,040 - 01:03:22,040] velocity. Let's write it. v sub x
+- [01:03:22,040 - 01:03:24,040] equals 0.
+- [01:03:24,040 - 01:03:28,040] That's kind of interesting.
+- [01:03:28,040 - 01:03:30,040] It doesn't say
+- [01:03:30,040 - 01:03:32,040] that
+- [01:03:32,040 - 01:03:34,040] the acceleration in the y direction
+- [01:03:34,040 - 01:03:36,040] is 0.
+- [01:03:36,040 - 01:03:38,040] What it says is that the acceleration
+- [01:03:38,040 - 01:03:40,040] in the y direction
+- [01:03:40,040 - 01:03:42,040] is equal to minus
+- [01:03:42,040 - 01:03:44,040] e over c
+- [01:03:44,040 - 01:03:46,040] b over m
+- [01:03:46,040 - 01:03:48,040] times
+- [01:03:48,040 - 01:03:50,040] v x.
+- [01:03:50,040 - 01:03:52,040] This
+- [01:03:52,040 - 01:03:54,040] is nothing but the Lorentz
+- [01:03:54,040 - 01:03:56,040] force law, incidentally.
+- [01:03:56,040 - 01:03:58,040] Mass times acceleration
+- [01:03:58,040 - 01:04:00,040] minus some force
+- [01:04:00,040 - 01:04:02,040] which involves the b field,
+- [01:04:02,040 - 01:04:04,040] the velocity.
+- [01:04:04,040 - 01:04:06,040] This is absolutely nothing but the Lorentz
+- [01:04:06,040 - 01:04:08,040] force law for the special case of
+- [01:04:08,040 - 01:04:10,040] constant magnetic field.
+- [01:04:10,040 - 01:04:12,040] And so it gives rise
+- [01:04:12,040 - 01:04:14,040] to this equation over here.
+- [01:04:14,040 - 01:04:16,040] a sub y
+- [01:04:18,040 - 01:04:20,040] or we can put the m back.
+- [01:04:20,040 - 01:04:22,040] Let's put the m on this side.
+- [01:04:22,040 - 01:04:24,040] Mass times acceleration
+- [01:04:24,040 - 01:04:26,040] in the y direction
+- [01:04:26,040 - 01:04:28,040] is proportional to the magnetic field
+- [01:04:28,040 - 01:04:30,040] times the x component of velocity.
+- [01:04:32,040 - 01:04:34,040] What about the
+- [01:04:34,040 - 01:04:36,040] x component of
+- [01:04:36,040 - 01:04:38,040] acceleration?
+- [01:04:38,040 - 01:04:40,040] There are two ways
+- [01:04:40,040 - 01:04:42,040] we could do it.
+- [01:04:42,040 - 01:04:44,040] There are two ways we could do it.
+- [01:04:44,040 - 01:04:46,040] The first would not
+- [01:04:46,040 - 01:04:48,040] use a conservation law.
+- [01:04:48,040 - 01:04:50,040] We'd just work out
+- [01:04:50,040 - 01:04:52,040] the x equation of motion.
+- [01:04:52,040 - 01:04:54,040] We didn't have to work out the y
+- [01:04:54,040 - 01:04:56,040] equation of motion.
+- [01:04:56,040 - 01:04:58,040] All we had to do was spot a cyclic coordinate.
+- [01:04:58,040 - 01:05:00,040] And what did we get?
+- [01:05:00,040 - 01:05:02,040] We got this equation over here.
+- [01:05:02,040 - 01:05:04,040] This equation, incidentally, is
+- [01:05:04,040 - 01:05:06,040] gauge invariant.
+- [01:05:06,040 - 01:05:08,040] There's no memory of
+- [01:05:08,040 - 01:05:10,040] it has the acceleration,
+- [01:05:10,040 - 01:05:12,040] it has the velocity,
+- [01:05:12,040 - 01:05:14,040] it doesn't have the vector potential in it.
+- [01:05:14,040 - 01:05:16,040] It's a real equation about real things.
+- [01:05:16,040 - 01:05:18,040] Acceleration you can measure,
+- [01:05:18,040 - 01:05:20,040] velocity you can measure.
+- [01:05:20,040 - 01:05:22,040] It's a real objective phenomena
+- [01:05:22,040 - 01:05:24,040] and that's what it says.
+- [01:05:24,040 - 01:05:26,040] Okay, next.
+- [01:05:26,040 - 01:05:28,040] What about the x component of acceleration?
+- [01:05:28,040 - 01:05:30,040] As I said, you can do it in two ways.
+- [01:05:30,040 - 01:05:32,040] The first is just to work out the equation of motion for x.
+- [01:05:32,040 - 01:05:34,040] But the other is to be slick
+- [01:05:34,040 - 01:05:36,040] and change gauges.
+- [01:05:36,040 - 01:05:38,040] We chose a particular
+- [01:05:38,040 - 01:05:40,040] gauge which was very
+- [01:05:40,040 - 01:05:42,040] good for
+- [01:05:42,040 - 01:05:44,040] figuring out what
+- [01:05:44,040 - 01:05:46,040] the y motion was doing.
+- [01:05:46,040 - 01:05:48,040] Why? Because y didn't
+- [01:05:48,040 - 01:05:50,040] appear in the Lagrangian.
+- [01:05:50,040 - 01:05:52,040] y didn't appear in the Lagrangian
+- [01:05:52,040 - 01:05:54,040] and so it was a cyclic coordinate
+- [01:05:54,040 - 01:05:56,040] and from that we were able to use
+- [01:05:56,040 - 01:05:58,040] momentum conservation and it gave
+- [01:05:58,040 - 01:06:00,040] us a simple answer.
+- [01:06:00,040 - 01:06:02,040] What's the trick?
+- [01:06:02,040 - 01:06:04,040] The trick is to say, let's use
+- [01:06:04,040 - 01:06:06,040] the other gauge.
+- [01:06:06,040 - 01:06:08,040] And the other gauge, where is it?
+- [01:06:08,040 - 01:06:10,040] The other
+- [01:06:10,040 - 01:06:12,040] gauge is az is equal to zero,
+- [01:06:12,040 - 01:06:14,040] ax is minus
+- [01:06:14,040 - 01:06:16,040] by,
+- [01:06:16,040 - 01:06:18,040] and ay is equal to zero.
+- [01:06:20,040 - 01:06:22,040] What happens if I do that?
+- [01:06:22,040 - 01:06:24,040] Then this
+- [01:06:24,040 - 01:06:26,040] changes, it becomes minus
+- [01:06:26,040 - 01:06:28,040] and instead
+- [01:06:28,040 - 01:06:30,040] of xy dot
+- [01:06:30,040 - 01:06:32,040] we get x dot y.
+- [01:06:32,040 - 01:06:34,040] It just
+- [01:06:34,040 - 01:06:36,040] interchanges x and y
+- [01:06:36,040 - 01:06:38,040] and puts
+- [01:06:38,040 - 01:06:40,040] in an extra minus sign.
+- [01:06:40,040 - 01:06:42,040] So now which
+- [01:06:42,040 - 01:06:44,040] coordinate is cyclic?
+- [01:06:46,040 - 01:06:48,040] In this form,
+- [01:06:48,040 - 01:06:50,040] this is a different form, a different gauge,
+- [01:06:50,040 - 01:06:52,040] a different coordinate is cyclic.
+- [01:06:52,040 - 01:06:54,040] Now it's the x coordinate
+- [01:06:54,040 - 01:06:56,040] which is cyclic.
+- [01:06:56,040 - 01:06:58,040] And therefore the x component of momentum
+- [01:06:58,040 - 01:07:00,040] is conserved. But the x component of momentum
+- [01:07:00,040 - 01:07:02,040] is no longer just mx dot.
+- [01:07:02,040 - 01:07:04,040] It's mx
+- [01:07:04,040 - 01:07:06,040] dot plus
+- [01:07:06,040 - 01:07:08,040] e over c
+- [01:07:08,040 - 01:07:10,040] minus sign
+- [01:07:10,040 - 01:07:12,040] b times y.
+- [01:07:12,040 - 01:07:14,040] Let's get rid of everything else here.
+- [01:07:14,040 - 01:07:16,040] The x
+- [01:07:16,040 - 01:07:18,040] component of momentum has changed
+- [01:07:18,040 - 01:07:20,040] its definition.
+- [01:07:20,040 - 01:07:22,040] Say it again.
+- [01:07:22,040 - 01:07:24,040] We have to say canonical momentum, not mechanical.
+- [01:07:24,040 - 01:07:26,040] Yeah, we have to take canonical momentum
+- [01:07:26,040 - 01:07:28,040] when looking at conservation laws.
+- [01:07:28,040 - 01:07:30,040] Right.
+- [01:07:30,040 - 01:07:32,040] And now this one is conserved.
+- [01:07:32,040 - 01:07:34,040] Guess what that one's going to say.
+- [01:07:34,040 - 01:07:36,040] That's going to say mx double dot
+- [01:07:36,040 - 01:07:38,040] minus e over c
+- [01:07:38,040 - 01:07:40,040] b times y dot is equal to zero.
+- [01:07:40,040 - 01:07:42,040] In other words, it's going to say m
+- [01:07:42,040 - 01:07:44,040] I think it's going to be m if we do it right.
+- [01:07:44,040 - 01:07:46,040] The x component
+- [01:07:46,040 - 01:07:48,040] I think is going to be equal to plus
+- [01:07:48,040 - 01:07:50,040] e over c b v sub y.
+- [01:07:50,040 - 01:07:52,040] I may have lost
+- [01:07:52,040 - 01:07:54,040] a sign here someplace.
+- [01:07:54,040 - 01:07:56,040] Whenever you go from x to y,
+- [01:07:56,040 - 01:07:58,040] there's always a sign change.
+- [01:07:58,040 - 01:08:00,040] And that's about all.
+- [01:08:00,040 - 01:08:02,040] Alright, what is this?
+- [01:08:02,040 - 01:08:04,040] This is the other Lorentz force law.
+- [01:08:04,040 - 01:08:06,040] Finally,
+- [01:08:06,040 - 01:08:08,040] m a sub z is equal to zero.
+- [01:08:12,040 - 01:08:14,040] That's, those are the
+- [01:08:14,040 - 01:08:16,040] conservation laws, and they
+- [01:08:16,040 - 01:08:18,040] really are nothing but, they
+- [01:08:18,040 - 01:08:20,040] really just express
+- [01:08:20,040 - 01:08:22,040] the Lorentz force law. Nothing more to
+- [01:08:22,040 - 01:08:24,040] them than that. But we didn't have to work
+- [01:08:24,040 - 01:08:26,040] out the equations of motion. We
+- [01:08:26,040 - 01:08:28,040] judiciously chose one gauge
+- [01:08:28,040 - 01:08:30,040] and used one conservation law,
+- [01:08:30,040 - 01:08:32,040] then flipped gauges and said,
+- [01:08:32,040 - 01:08:34,040] oh, in this new gauge, something else
+- [01:08:34,040 - 01:08:36,040] is a cyclic coordinate, and wrote
+- [01:08:36,040 - 01:08:38,040] down the corresponding
+- [01:08:38,040 - 01:08:40,040] conservation law.
+- [01:08:40,040 - 01:08:42,040] Alright, let's do a little bit more.
+- [01:08:42,040 - 01:08:44,040] Yeah?
+- [01:08:44,040 - 01:08:46,040] So the components of momentum,
+- [01:08:46,040 - 01:08:48,040] of canonical momentum,
+- [01:08:48,040 - 01:08:50,040] are not gauges of variance? They are not.
+- [01:08:50,040 - 01:08:52,040] They are not.
+- [01:08:52,040 - 01:08:54,040] The components of mechanical momentum are.
+- [01:08:54,040 - 01:08:56,040] So the canonical momentum
+- [01:08:56,040 - 01:08:58,040] is not a real physical?
+- [01:08:58,040 - 01:09:00,040] It's not something you measure.
+- [01:09:00,040 - 01:09:02,040] Right. It's not something you measure.
+- [01:09:02,040 - 01:09:04,040] On the other hand, it is the thing that goes into
+- [01:09:04,040 - 01:09:06,040] the formal mathematical machinery.
+- [01:09:06,040 - 01:09:08,040] Poisson brackets,
+- [01:09:08,040 - 01:09:10,040] Hamilton's equations,
+- [01:09:10,040 - 01:09:12,040] um,
+- [01:09:12,040 - 01:09:14,040] and, uh,
+- [01:09:14,040 - 01:09:16,040] and so forth.
+- [01:09:16,040 - 01:09:18,040] So, yeah, you pay a price that you've
+- [01:09:18,040 - 01:09:20,040] introduced things, which, I won't say they're
+- [01:09:20,040 - 01:09:22,040] not physical, but they're
+- [01:09:22,040 - 01:09:24,040] not directly measurable. You've introduced
+- [01:09:24,040 - 01:09:26,040] them into the formalism,
+- [01:09:26,040 - 01:09:28,040] uh, and that is
+- [01:09:28,040 - 01:09:30,040] a price, but
+- [01:09:30,040 - 01:09:32,040] uh,
+- [01:09:32,040 - 01:09:34,040] the price is, um,
+- [01:09:34,040 - 01:09:36,040] definitely worth it, since there would be
+- [01:09:36,040 - 01:09:38,040] no way to do all this without
+- [01:09:38,040 - 01:09:40,040] the vector potential.
+- [01:09:40,040 - 01:09:42,040] That might not be a tragedy in classical
+- [01:09:42,040 - 01:09:44,040] physics. In classical physics, you say, oh,
+- [01:09:44,040 - 01:09:46,040] who the hell cares about, um, Hamilton
+- [01:09:46,040 - 01:09:48,040] and Lagrange and all that stuff? Let's just write
+- [01:09:48,040 - 01:09:50,040] down Newton-Lawrence force laws.
+- [01:09:50,040 - 01:09:52,040] And that's true. You could.
+- [01:09:52,040 - 01:09:54,040] Um,
+- [01:09:54,040 - 01:09:56,040] quantum mechanics,
+- [01:09:56,040 - 01:09:58,040] it would be a true disaster.
+- [01:09:58,040 - 01:10:00,040] No way, no way around it.
+- [01:10:00,040 - 01:10:02,040] Okay, let's, uh, let's
+- [01:10:02,040 - 01:10:04,040] study, just for fun now, let's study what
+- [01:10:04,040 - 01:10:06,040] the motion of a system is
+- [01:10:06,040 - 01:10:08,040] in a magnetic field.
+- [01:10:08,040 - 01:10:10,040] We really don't need this anymore.
+- [01:10:10,040 - 01:10:12,040] Now we can just go back to the
+- [01:10:12,040 - 01:10:14,040] Lorentz force law.
+- [01:10:16,040 - 01:10:18,040] The purpose,
+- [01:10:18,040 - 01:10:20,040] we're finished with classical mechanics,
+- [01:10:20,040 - 01:10:22,040] with the formal structure of classical mechanics.
+- [01:10:22,040 - 01:10:24,040] But since we started in on the
+- [01:10:24,040 - 01:10:26,040] motion of particles in a magnetic field,
+- [01:10:26,040 - 01:10:28,040] we might as well finish it.
+- [01:10:28,040 - 01:10:30,040] Uniform magnetic field, what is the motion?
+- [01:10:30,040 - 01:10:32,040] Alright, so let's write it down. Again,
+- [01:10:32,040 - 01:10:34,040] it's mass times acceleration is
+- [01:10:34,040 - 01:10:36,040] equal to, uh, minus, uh,
+- [01:10:36,040 - 01:10:38,040] minus or plus, is equal to, um,
+- [01:10:38,040 - 01:10:40,040] uh,
+- [01:10:40,040 - 01:10:42,040] E over C V cross B.
+- [01:10:48,040 - 01:10:50,040] Alright, now B is into the blackboard, right?
+- [01:10:50,040 - 01:10:52,040] B is into the blackboard,
+- [01:10:52,040 - 01:10:54,040] and let's think about motion,
+- [01:10:54,040 - 01:10:56,040] which, uh, we've already seen
+- [01:10:56,040 - 01:10:58,040] that not much happens along
+- [01:10:58,040 - 01:11:00,040] the z-axis. There's no acceleration
+- [01:11:00,040 - 01:11:02,040] along the z-axis. So in
+- [01:11:02,040 - 01:11:04,040] particular, if the particle is at rest
+- [01:11:04,040 - 01:11:06,040] with respect to z-motion, it'll stay that way.
+- [01:11:06,040 - 01:11:08,040] Let's just leave it that way.
+- [01:11:08,040 - 01:11:10,040] Particles at rest in the z-axis,
+- [01:11:10,040 - 01:11:12,040] if it's only moving in the xy plane,
+- [01:11:12,040 - 01:11:14,040] then these become
+- [01:11:14,040 - 01:11:16,040] equations for x
+- [01:11:16,040 - 01:11:18,040] and equations
+- [01:11:18,040 - 01:11:20,040] for y.
+- [01:11:22,040 - 01:11:26,040] Now B is along the z-axis.
+- [01:11:26,040 - 01:11:28,040] First of all, that means
+- [01:11:28,040 - 01:11:30,040] the acceleration
+- [01:11:30,040 - 01:11:32,040] is perpendicular to both
+- [01:11:32,040 - 01:11:34,040] V and B.
+- [01:11:34,040 - 01:11:36,040] The true acceleration,
+- [01:11:36,040 - 01:11:38,040] in fact, we could write this just,
+- [01:11:38,040 - 01:11:40,040] let's just write it as a vector equation,
+- [01:11:40,040 - 01:11:42,040] equals E over C
+- [01:11:42,040 - 01:11:44,040] V cross B.
+- [01:11:46,040 - 01:11:48,040] Okay,
+- [01:11:48,040 - 01:11:50,040] here's the particle moving in the plane
+- [01:11:50,040 - 01:11:52,040] in the xy plane.
+- [01:11:52,040 - 01:11:54,040] And this tells us that
+- [01:11:54,040 - 01:11:56,040] the acceleration is perpendicular
+- [01:11:56,040 - 01:11:58,040] to both B,
+- [01:11:58,040 - 01:12:00,040] that means it's in the xy plane,
+- [01:12:00,040 - 01:12:02,040] and the velocity.
+- [01:12:02,040 - 01:12:04,040] So it tells us that
+- [01:12:04,040 - 01:12:06,040] the acceleration is perpendicular
+- [01:12:06,040 - 01:12:08,040] to the velocity.
+- [01:12:08,040 - 01:12:10,040] If the velocity is like that,
+- [01:12:10,040 - 01:12:12,040] then the acceleration is perpendicular
+- [01:12:12,040 - 01:12:14,040] to it. Acceleration perpendicular.
+- [01:12:14,040 - 01:12:16,040] What about the magnitude
+- [01:12:16,040 - 01:12:18,040] of the velocity? Does the magnitude
+- [01:12:18,040 - 01:12:20,040] of the velocity change with time?
+- [01:12:22,040 - 01:12:24,040] That's one of the conservation laws,
+- [01:12:24,040 - 01:12:26,040] conservation of energy. And since the energy
+- [01:12:26,040 - 01:12:28,040] came out to be just a good old-fashioned
+- [01:12:28,040 - 01:12:30,040] kinetic energy, the velocity is constant.
+- [01:12:30,040 - 01:12:32,040] So the particle moves along
+- [01:12:32,040 - 01:12:34,040] here with a uniform
+- [01:12:34,040 - 01:12:36,040] velocity.
+- [01:12:36,040 - 01:12:38,040] It has a force perpendicular to it.
+- [01:12:38,040 - 01:12:40,040] And what's the magnitude
+- [01:12:40,040 - 01:12:42,040] of the force perpendicular to it?
+- [01:12:42,040 - 01:12:44,040] Well, the B
+- [01:12:44,040 - 01:12:46,040] field is constant with respect to
+- [01:12:46,040 - 01:12:48,040] everything, it's just pointing in the z-axis.
+- [01:12:48,040 - 01:12:50,040] Okay.
+- [01:12:50,040 - 01:12:52,040] The magnitude of the velocity
+- [01:12:52,040 - 01:12:54,040] is constant.
+- [01:12:54,040 - 01:12:56,040] Therefore,
+- [01:12:56,040 - 01:12:58,040] the magnitude of v cross
+- [01:12:58,040 - 01:13:00,040] B is constant.
+- [01:13:00,040 - 01:13:02,040] It's moving in the xy plane with a constant
+- [01:13:02,040 - 01:13:04,040] speed.
+- [01:13:04,040 - 01:13:06,040] B is in the perpendicular direction.
+- [01:13:06,040 - 01:13:08,040] It means that the magnitude
+- [01:13:08,040 - 01:13:10,040] of the acceleration is constant.
+- [01:13:10,040 - 01:13:12,040] So the magnitude of the acceleration
+- [01:13:12,040 - 01:13:14,040] is constant perpendicular to the velocity.
+- [01:13:14,040 - 01:13:16,040] What's the solution
+- [01:13:16,040 - 01:13:18,040] of a particle
+- [01:13:18,040 - 01:13:20,040] moving so that its acceleration
+- [01:13:20,040 - 01:13:22,040] is always perpendicular to its velocity
+- [01:13:22,040 - 01:13:24,040] and constant?
+- [01:13:24,040 - 01:13:26,040] Circle.
+- [01:13:26,040 - 01:13:28,040] It moves in a circle.
+- [01:13:28,040 - 01:13:30,040] It moves in a circle.
+- [01:13:30,040 - 01:13:32,040] And let's see what we can find out
+- [01:13:32,040 - 01:13:34,040] about that circle.
+- [01:13:34,040 - 01:13:36,040] Um,
+- [01:13:36,040 - 01:13:38,040] if a particle moves
+- [01:13:38,040 - 01:13:40,040] in a circle with velocity
+- [01:13:40,040 - 01:13:42,040] v and radius r,
+- [01:13:42,040 - 01:13:44,040] then its acceleration is
+- [01:13:46,040 - 01:13:48,040] v squared over r.
+- [01:13:48,040 - 01:13:50,040] The magnitude of the acceleration is v squared over r.
+- [01:13:50,040 - 01:13:52,040] The magnitude of the acceleration is v squared over r.
+- [01:13:52,040 - 01:13:54,040] The mass
+- [01:13:54,040 - 01:13:56,040] times v squared over r
+- [01:13:56,040 - 01:13:58,040] is the mass times the
+- [01:13:58,040 - 01:14:00,040] magnitude of the acceleration.
+- [01:14:00,040 - 01:14:02,040] And that's equal
+- [01:14:02,040 - 01:14:04,040] to e,
+- [01:14:04,040 - 01:14:06,040] the magnitude of the velocity
+- [01:14:06,040 - 01:14:08,040] times the magnitude of the
+- [01:14:08,040 - 01:14:10,040] magnetic field.
+- [01:14:10,040 - 01:14:12,040] Just the magnitude of v cross B
+- [01:14:12,040 - 01:14:14,040] is just the magnitude of the velocity
+- [01:14:14,040 - 01:14:16,040] times the magnitude of the field.
+- [01:14:16,040 - 01:14:18,040] So now we can
+- [01:14:18,040 - 01:14:20,040] cancel out one power of velocity
+- [01:14:20,040 - 01:14:22,040] and
+- [01:14:22,040 - 01:14:24,040] what we have
+- [01:14:24,040 - 01:14:26,040] is a relationship between
+- [01:14:26,040 - 01:14:28,040] the radius of the orbit and its velocity.
+- [01:14:28,040 - 01:14:30,040] Whatever the velocity
+- [01:14:30,040 - 01:14:32,040] of the orbit is,
+- [01:14:32,040 - 01:14:34,040] the radius is given by
+- [01:14:34,040 - 01:14:36,040] mv
+- [01:14:36,040 - 01:14:38,040] over eb
+- [01:14:38,040 - 01:14:40,040] is equal to the radius of the orbit.
+- [01:14:44,040 - 01:14:46,040] So now we know everything.
+- [01:14:46,040 - 01:14:48,040] What about the center?
+- [01:14:48,040 - 01:14:50,040] When I say it's moving in a circular orbit,
+- [01:14:50,040 - 01:14:52,040] where's the center of that orbit?
+- [01:14:52,040 - 01:14:54,040] Nothing I said
+- [01:14:54,040 - 01:14:56,040] determined the center of that orbit.
+- [01:14:56,040 - 01:14:58,040] There's an orbit of this type
+- [01:14:58,040 - 01:15:00,040] moving about any center.
+- [01:15:00,040 - 01:15:02,040] Wherever you are,
+- [01:15:02,040 - 01:15:04,040] there's an orbit which circulates
+- [01:15:04,040 - 01:15:06,040] around that point.
+- [01:15:06,040 - 01:15:08,040] So there's an infinite number
+- [01:15:08,040 - 01:15:10,040] of circular orbits
+- [01:15:10,040 - 01:15:12,040] characterized either
+- [01:15:12,040 - 01:15:14,040] well, first of all
+- [01:15:14,040 - 01:15:16,040] by their position,
+- [01:15:16,040 - 01:15:18,040] the position of the center,
+- [01:15:18,040 - 01:15:20,040] and next by
+- [01:15:20,040 - 01:15:22,040] the velocity of the center.
+- [01:15:22,040 - 01:15:24,040] So the center of the orbit
+- [01:15:24,040 - 01:15:26,040] is the
+- [01:15:26,040 - 01:15:28,040] magnitude of the velocity
+- [01:15:28,040 - 01:15:30,040] or the magnitude of the radius.
+- [01:15:30,040 - 01:15:32,040] One or the other.
+- [01:15:32,040 - 01:15:34,040] So every place you can go in a plane
+- [01:15:34,040 - 01:15:36,040] there could be an electron moving in a circle.
+- [01:15:36,040 - 01:15:38,040] Some big circles,
+- [01:15:38,040 - 01:15:40,040] some small circles.
+- [01:15:40,040 - 01:15:42,040] The bigger the circle,
+- [01:15:42,040 - 01:15:44,040] the larger the velocity.
+- [01:15:44,040 - 01:15:46,040] Or the bigger the velocity,
+- [01:15:46,040 - 01:15:48,040] the larger the circle.
+- [01:15:48,040 - 01:15:50,040] And there's a lot of orbits.
+- [01:15:50,040 - 01:15:52,040] A lot of orbits, but they're all circular.
+- [01:15:52,040 - 01:15:54,040] So it's interesting, just for fun.
+- [01:15:54,040 - 01:15:56,040] Let's add an electric field.
+- [01:15:56,040 - 01:15:58,040] Let's add an electric field
+- [01:15:58,040 - 01:16:00,040] and see what we can find out.
+- [01:16:00,040 - 01:16:02,040] Let's write down...
+- [01:16:02,040 - 01:16:04,040] We dropped the c in there.
+- [01:16:04,040 - 01:16:06,040] We put the c back...
+- [01:16:06,040 - 01:16:08,040] Yeah, where does the c go?
+- [01:16:08,040 - 01:16:10,040] You're right.
+- [01:16:10,040 - 01:16:12,040] It's e over c.
+- [01:16:12,040 - 01:16:14,040] So it's c times velocity.
+- [01:16:14,040 - 01:16:16,040] c times velocity.
+- [01:16:16,040 - 01:16:18,040] That's weird, isn't it?
+- [01:16:18,040 - 01:16:20,040] Did I do that right?
+- [01:16:20,040 - 01:16:22,040] Well, it is e over c.
+- [01:16:22,040 - 01:16:24,040] I'm sorry.
+- [01:16:24,040 - 01:16:26,040] The bigger the electric charge...
+- [01:16:26,040 - 01:16:28,040] Let's see.
+- [01:16:28,040 - 01:16:30,040] The bigger the electric charge,
+- [01:16:30,040 - 01:16:32,040] the smaller the orbit.
+- [01:16:32,040 - 01:16:34,040] Large electric charge means tight orbit.
+- [01:16:34,040 - 01:16:36,040] So e does go in the bottom.
+- [01:16:36,040 - 01:16:38,040] And if e goes in the bottom,
+- [01:16:38,040 - 01:16:40,040] then c goes on the top.
+- [01:16:40,040 - 01:16:42,040] Yeah, that's right.
+- [01:16:42,040 - 01:16:44,040] Okay.
+- [01:16:44,040 - 01:16:46,040] So now we know all about charged particles.
+- [01:16:46,040 - 01:16:48,040] Incidentally,
+- [01:16:48,040 - 01:16:50,040] I'm going to write down
+- [01:16:50,040 - 01:16:52,040] the number of particles.
+- [01:16:52,040 - 01:16:54,040] Okay, that's enough.
+- [01:16:54,040 - 01:16:56,040] The b doesn't do any work on it
+- [01:16:56,040 - 01:16:58,040] because the force is always at right angles.
+- [01:16:58,040 - 01:17:00,040] Perpendicular, always at right angles.
+- [01:17:00,040 - 01:17:02,040] Right.
+- [01:17:02,040 - 01:17:04,040] Quick question.
+- [01:17:04,040 - 01:17:06,040] When you first wrote down that Lagrangian,
+- [01:17:06,040 - 01:17:08,040] it went by kind of fast.
+- [01:17:08,040 - 01:17:10,040] That right-hand part
+- [01:17:10,040 - 01:17:12,040] had to do with the magnetic field.
+- [01:17:12,040 - 01:17:14,040] Did you just say,
+- [01:17:14,040 - 01:17:16,040] I happen to know the answer,
+- [01:17:16,040 - 01:17:18,040] I'm going to write it down?
+- [01:17:18,040 - 01:17:20,040] For which part of it?
+- [01:17:20,040 - 01:17:22,040] The vector potential.
+- [01:17:22,040 - 01:17:24,040] The original a dot v.
+- [01:17:24,040 - 01:17:26,040] Yeah.
+- [01:17:26,040 - 01:17:28,040] Yeah.
+- [01:17:28,040 - 01:17:30,040] Well, it depends on where you want to start.
+- [01:17:30,040 - 01:17:32,040] You could start here.
+- [01:17:32,040 - 01:17:34,040] You could start here and say,
+- [01:17:34,040 - 01:17:36,040] here is a thing we could add to a Lagrangian.
+- [01:17:36,040 - 01:17:38,040] Let's investigate what it does.
+- [01:17:38,040 - 01:17:40,040] Let's imagine we did that.
+- [01:17:40,040 - 01:17:42,040] We say, look,
+- [01:17:42,040 - 01:17:44,040] we have these x dot squared terms in a Lagrangian.
+- [01:17:44,040 - 01:17:46,040] Let's see what happens.
+- [01:17:46,040 - 01:17:48,040] Let's explore the possibility
+- [01:17:48,040 - 01:17:50,040] that we add to the Lagrangian
+- [01:17:50,040 - 01:17:52,040] something involving a vector.
+- [01:17:52,040 - 01:17:54,040] Something involving a field,
+- [01:17:54,040 - 01:17:56,040] a of x dot velocity.
+- [01:17:56,040 - 01:17:58,040] Let's explore it.
+- [01:17:58,040 - 01:18:00,040] The first thing we would discover
+- [01:18:00,040 - 01:18:02,040] if we made that argument about
+- [01:18:02,040 - 01:18:04,040] we would quickly discover
+- [01:18:04,040 - 01:18:06,040] I don't know how quickly we would discover it,
+- [01:18:06,040 - 01:18:08,040] but we would discover
+- [01:18:08,040 - 01:18:10,040] that the equations of motion are gauge invariant.
+- [01:18:10,040 - 01:18:12,040] We would discover
+- [01:18:12,040 - 01:18:14,040] that from the argument
+- [01:18:14,040 - 01:18:16,040] that the action
+- [01:18:16,040 - 01:18:18,040] doesn't respond to an addition
+- [01:18:18,040 - 01:18:20,040] of a gradient to a
+- [01:18:20,040 - 01:18:22,040] or it responds,
+- [01:18:22,040 - 01:18:24,040] to a gradient to a gradient
+- [01:18:24,040 - 01:18:26,040] at the end points,
+- [01:18:26,040 - 01:18:28,040] we would discover the interesting fact
+- [01:18:28,040 - 01:18:30,040] that the equations of motion
+- [01:18:30,040 - 01:18:32,040] would be invariant under a gauge transformation.
+- [01:18:32,040 - 01:18:34,040] Interesting fact.
+- [01:18:34,040 - 01:18:36,040] Put it in your hat and we'll come back to it.
+- [01:18:36,040 - 01:18:38,040] But then we would just go through
+- [01:18:38,040 - 01:18:40,040] the analysis of the equations of motion
+- [01:18:40,040 - 01:18:42,040] and come and derive the Lorentz force law.
+- [01:18:42,040 - 01:18:44,040] If we never heard of the Lorentz force law,
+- [01:18:44,040 - 01:18:46,040] we would say, ah, here's a new thing.
+- [01:18:46,040 - 01:18:48,040] Here's a new way that particles could move.
+- [01:18:48,040 - 01:18:50,040] So that would be one starting point.
+- [01:18:50,040 - 01:18:52,040] Just write it down.
+- [01:18:52,040 - 01:18:54,040] Another starting point
+- [01:18:54,040 - 01:18:56,040] might be some conviction that for some
+- [01:18:56,040 - 01:18:58,040] reason
+- [01:19:00,040 - 01:19:02,040] there should be a notion of
+- [01:19:02,040 - 01:19:04,040] gauge invariance and
+- [01:19:04,040 - 01:19:06,040] that the Lagrangian
+- [01:19:06,040 - 01:19:08,040] we should write down should be gauge invariant.
+- [01:19:08,040 - 01:19:10,040] That would be a very modern
+- [01:19:10,040 - 01:19:12,040] point of view, but the reason that point of view came about
+- [01:19:12,040 - 01:19:14,040] is because of so many experiences
+- [01:19:14,040 - 01:19:16,040] having discovered things the long way
+- [01:19:16,040 - 01:19:18,040] and discovering
+- [01:19:18,040 - 01:19:20,040] oh, there's this principle of
+- [01:19:20,040 - 01:19:22,040] gauge invariance, so now when you're
+- [01:19:22,040 - 01:19:24,040] going to write down a Lagrangian, the first thing you do
+- [01:19:24,040 - 01:19:26,040] is you make sure it's gauge invariant.
+- [01:19:26,040 - 01:19:30,040] Um, may not be terribly satisfying to you.
+- [01:19:30,040 - 01:19:32,040] Or you can simply start
+- [01:19:32,040 - 01:19:34,040] with the Lorentz force law and say
+- [01:19:34,040 - 01:19:36,040] let's look for an action principle.
+- [01:19:36,040 - 01:19:38,040] Now, um,
+- [01:19:42,040 - 01:19:44,040] that's, we could have done it that way.
+- [01:19:44,040 - 01:19:46,040] It would,
+- [01:19:46,040 - 01:19:48,040] why didn't I,
+- [01:19:48,040 - 01:19:50,040] uh,
+- [01:19:50,040 - 01:19:52,040] it's a little harder, that's all.
+- [01:19:52,040 - 01:19:54,040] It's just a little harder to make, prove the
+- [01:19:54,040 - 01:19:56,040] theorem that you have to introduce
+- [01:19:56,040 - 01:19:58,040] the vector potential, but, uh,
+- [01:19:58,040 - 01:20:00,040] I just wanted to make sure I remember where the vector potential is.
+- [01:20:00,040 - 01:20:02,040] Yeah, well we started, we started
+- [01:20:02,040 - 01:20:04,040] by saying, let's just
+- [01:20:04,040 - 01:20:06,040] try this out. Let's see what it does.
+- [01:20:06,040 - 01:20:08,040] And let's, you know,
+- [01:20:08,040 - 01:20:10,040] the whole thing could have been reversed because
+- [01:20:10,040 - 01:20:12,040] let's try this out.
+- [01:20:12,040 - 01:20:14,040] We would have discovered the equation of motion
+- [01:20:14,040 - 01:20:16,040] involved this funny thing called
+- [01:20:16,040 - 01:20:18,040] dA by dx minus dA
+- [01:20:18,040 - 01:20:20,040] by dx
+- [01:20:20,040 - 01:20:22,040] times x dots.
+- [01:20:22,040 - 01:20:24,040] We would have discovered that.
+- [01:20:24,040 - 01:20:26,040] We might have said,
+- [01:20:26,040 - 01:20:28,040] let's give this thing a name, let's call it b.
+- [01:20:28,040 - 01:20:30,040] Since it's the only
+- [01:20:30,040 - 01:20:32,040] thing that really does come into the force law.
+- [01:20:32,040 - 01:20:34,040] And we would have discovered the magnetic
+- [01:20:34,040 - 01:20:36,040] field. That's one
+- [01:20:36,040 - 01:20:38,040] line of logic. Historically, of course,
+- [01:20:38,040 - 01:20:40,040] it didn't happen that way.
+- [01:20:40,040 - 01:20:42,040] But it could have happened that somebody
+- [01:20:42,040 - 01:20:44,040] just sat down and said, let's explore this
+- [01:20:44,040 - 01:20:46,040] kind of term in the action.
+- [01:20:46,040 - 01:20:48,040] Uh,
+- [01:20:48,040 - 01:20:50,040] Do we need to do something to
+- [01:20:50,040 - 01:20:52,040] show that what we're considering as a
+- [01:20:52,040 - 01:20:54,040] possible Lagrangian is legitimate?
+- [01:20:54,040 - 01:20:56,040] That it obeys whatever constraints?
+- [01:20:56,040 - 01:20:58,040] Well, that
+- [01:20:58,040 - 01:21:00,040] raises the question of what are the constraints
+- [01:21:00,040 - 01:21:02,040] on a Lagrangian that it is.
+- [01:21:02,040 - 01:21:04,040] Um, and
+- [01:21:04,040 - 01:21:06,040] the usual answer is everything is okay
+- [01:21:06,040 - 01:21:08,040] as long as you
+- [01:21:08,040 - 01:21:10,040] can derive a Hamiltonian,
+- [01:21:10,040 - 01:21:12,040] a unique Hamiltonian.
+- [01:21:12,040 - 01:21:14,040] Now that always involves solving
+- [01:21:14,040 - 01:21:16,040] for the velocities in terms of the
+- [01:21:16,040 - 01:21:18,040] momenta.
+- [01:21:18,040 - 01:21:20,040] Remember, we have to solve for the x dots
+- [01:21:20,040 - 01:21:22,040] in terms of the momenta.
+- [01:21:22,040 - 01:21:24,040] Sometimes you get equations that don't have
+- [01:21:24,040 - 01:21:26,040] unique solutions.
+- [01:21:26,040 - 01:21:28,040] Then you're in hot water.
+- [01:21:28,040 - 01:21:30,040] Uh, but, um,
+- [01:21:32,040 - 01:21:34,040] Yeah, it's a legitimate
+- [01:21:34,040 - 01:21:36,040] question. What are the legitimate
+- [01:21:36,040 - 01:21:38,040] Lagrangians? And they're basically
+- [01:21:38,040 - 01:21:40,040] those that lead to a sensible Hamiltonian.
+- [01:21:40,040 - 01:21:42,040] And they don't lead to ambiguities
+- [01:21:42,040 - 01:21:44,040] in the equations.
+- [01:21:44,040 - 01:21:46,040] Yeah?
+- [01:21:46,040 - 01:21:48,040] Should this be v squared in this equation?
+- [01:21:48,040 - 01:21:50,040] Uh,
+- [01:21:50,040 - 01:21:52,040] I don't remember.
+- [01:21:52,040 - 01:21:54,040] We canceled out of v.
+- [01:21:54,040 - 01:21:56,040] Oh, we canceled out of v.
+- [01:21:56,040 - 01:21:58,040] We had a v squared on this side, and we had a v on this side.
+- [01:21:58,040 - 01:22:00,040] Yeah?
+- [01:22:00,040 - 01:22:02,040] Does the symmetry under, uh,
+- [01:22:02,040 - 01:22:04,040] gauge transformation give us a conserved quantity?
+- [01:22:04,040 - 01:22:08,040] Not at this point.
+- [01:22:08,040 - 01:22:10,040] Eventually, yes.
+- [01:22:10,040 - 01:22:12,040] In classical
+- [01:22:12,040 - 01:22:14,040] In classical electrodynamics.
+- [01:22:14,040 - 01:22:16,040] Yeah.
+- [01:22:16,040 - 01:22:18,040] But it's a conserved
+- [01:22:18,040 - 01:22:20,040] It's a sort of
+- [01:22:20,040 - 01:22:22,040] It's a conserved quantity that we knew anyway, but
+- [01:22:22,040 - 01:22:24,040] let's not try to go for that now.
+- [01:22:24,040 - 01:22:26,040] It gives us
+- [01:22:26,040 - 01:22:28,040] It gives a conserved quantity,
+- [01:22:28,040 - 01:22:30,040] but only
+- [01:22:30,040 - 01:22:32,040] when you include into the dynamics
+- [01:22:32,040 - 01:22:34,040] the equations of motion
+- [01:22:34,040 - 01:22:36,040] of the vector potential itself.
+- [01:22:36,040 - 01:22:38,040] And that's already, um,
+- [01:22:38,040 - 01:22:40,040] beyond us for now.
+- [01:22:40,040 - 01:22:42,040] Maxwell's equation?
+- [01:22:42,040 - 01:22:44,040] Yeah, I was just going to ask, how does all of this relate to Maxwell?
+- [01:22:44,040 - 01:22:46,040] Well, it doesn't.
+- [01:22:46,040 - 01:22:48,040] In order to make it relate to Maxwell's equations,
+- [01:22:48,040 - 01:22:50,040] we have to add to the action
+- [01:22:50,040 - 01:22:52,040] the things which generate Maxwell's equations.
+- [01:22:52,040 - 01:22:54,040] This has just got to do
+- [01:22:54,040 - 01:22:56,040] with a fixed
+- [01:22:56,040 - 01:22:58,040] given electric and magnetic field
+- [01:22:58,040 - 01:23:00,040] how do particles move?
+- [01:23:00,040 - 01:23:02,040] Now we can ask,
+- [01:23:02,040 - 01:23:04,040] alright, but now let's ask how
+- [01:23:04,040 - 01:23:06,040] the electromagnetic field itself changes
+- [01:23:06,040 - 01:23:08,040] with time. And that involves
+- [01:23:08,040 - 01:23:10,040] adding additional things to the Lagrangian
+- [01:23:10,040 - 01:23:12,040] that have to do with the dynamics
+- [01:23:12,040 - 01:23:14,040] of the electromagnetic field.
+- [01:23:14,040 - 01:23:16,040] That I was going to teach next quarter,
+- [01:23:16,040 - 01:23:18,040] but it looks like we're putting it off for a quarter.
+- [01:23:18,040 - 01:23:20,040] At least a quarter.
+- [01:23:20,040 - 01:23:22,040] Um,
+- [01:23:22,040 - 01:23:24,040] there is an action
+- [01:23:24,040 - 01:23:26,040] for the electromagnetic field
+- [01:23:26,040 - 01:23:28,040] and, uh, it satisfies
+- [01:23:28,040 - 01:23:30,040] the principle of least action.
+- [01:23:30,040 - 01:23:32,040] This is one of the
+- [01:23:32,040 - 01:23:34,040] terms in it,
+- [01:23:34,040 - 01:23:36,040] A times dx, but it has
+- [01:23:36,040 - 01:23:38,040] more.
+- [01:23:38,040 - 01:23:40,040] The more doesn't involve the
+- [01:23:40,040 - 01:23:42,040] coordinates or the velocities of the particles.
+- [01:23:42,040 - 01:23:44,040] So when you're studying
+- [01:23:44,040 - 01:23:46,040] the motion of the particles
+- [01:23:46,040 - 01:23:48,040] and their equations of motion, the rest of it doesn't matter.
+- [01:23:52,040 - 01:23:54,040] Uh, if delta B is not zero,
+- [01:23:54,040 - 01:23:56,040] how would it change these equations?
+- [01:23:56,040 - 01:23:58,040] Well, you couldn't write
+- [01:23:58,040 - 01:24:00,040] them down.
+- [01:24:00,040 - 01:24:02,040] If delta B were not equal
+- [01:24:02,040 - 01:24:04,040] to zero, then you
+- [01:24:04,040 - 01:24:06,040] couldn't express B in terms
+- [01:24:06,040 - 01:24:08,040] of a vector potential, and if you
+- [01:24:08,040 - 01:24:10,040] couldn't express B in terms of a vector potential,
+- [01:24:10,040 - 01:24:12,040] you couldn't have written any of this down.
+- [01:24:12,040 - 01:24:14,040] But, you could have
+- [01:24:14,040 - 01:24:16,040] said, I don't care,
+- [01:24:16,040 - 01:24:18,040] I'm just going to write down the Lorentz
+- [01:24:18,040 - 01:24:20,040] forces. And that's okay, you
+- [01:24:20,040 - 01:24:22,040] can do that. You can say, I don't care
+- [01:24:22,040 - 01:24:24,040] whether the whole thing
+- [01:24:24,040 - 01:24:26,040] comes from a Lagrangian or not.
+- [01:24:28,040 - 01:24:30,040] I'm just going to write down
+- [01:24:30,040 - 01:24:32,040] that M A is
+- [01:24:32,040 - 01:24:34,040] equal to E over C V cross
+- [01:24:34,040 - 01:24:36,040] B.
+- [01:24:36,040 - 01:24:38,040] And hell or high water, that's
+- [01:24:38,040 - 01:24:40,040] my rule, and it's a perfectly good rule.
+- [01:24:40,040 - 01:24:42,040] It's a perfectly
+- [01:24:42,040 - 01:24:44,040] good equation of motion.
+- [01:24:44,040 - 01:24:46,040] It does not follow from a
+- [01:24:46,040 - 01:24:48,040] Lagrangian unless
+- [01:24:48,040 - 01:24:50,040] B is
+- [01:24:50,040 - 01:24:52,040] um,
+- [01:24:52,040 - 01:24:54,040] comes from a vector potential,
+- [01:24:54,040 - 01:24:56,040] but who cares?
+- [01:24:58,040 - 01:25:00,040] Um, the answer
+- [01:25:00,040 - 01:25:02,040] is you would have a lot of trouble with quantum mechanics,
+- [01:25:02,040 - 01:25:04,040] but that's for another time. Yeah?
+- [01:25:04,040 - 01:25:06,040] This might be for another time
+- [01:25:06,040 - 01:25:08,040] as well, but since you said magnetic
+- [01:25:08,040 - 01:25:10,040] monopoles are likely to
+- [01:25:10,040 - 01:25:12,040] actually exist, or maybe expected.
+- [01:25:12,040 - 01:25:14,040] What's that? Say it again?
+- [01:25:14,040 - 01:25:16,040] You said that the non-existence of
+- [01:25:16,040 - 01:25:18,040] magnetic monopoles is
+- [01:25:18,040 - 01:25:20,040] thought to probably be wrong.
+- [01:25:20,040 - 01:25:22,040] Can we rescue this?
+- [01:25:22,040 - 01:25:24,040] You know, in the presence of
+- [01:25:24,040 - 01:25:26,040] monopoles? Yeah. Yeah.
+- [01:25:26,040 - 01:25:28,040] Yes, you can.
+- [01:25:28,040 - 01:25:30,040] Um,
+- [01:25:38,040 - 01:25:40,040] Yeah.
+- [01:25:42,040 - 01:25:44,040] Magnetic
+- [01:25:44,040 - 01:25:46,040] monopole is the north end of a magnet,
+- [01:25:46,040 - 01:25:48,040] or the south end of a magnet.
+- [01:25:48,040 - 01:25:50,040] There's always another end there.
+- [01:25:50,040 - 01:25:52,040] There was
+- [01:25:52,040 - 01:25:54,040] a magnet called the
+- [01:25:54,040 - 01:25:56,040] D'Aquino-D'Ansel.
+- [01:25:56,040 - 01:25:58,040] But if you had a very, very long magnet,
+- [01:25:58,040 - 01:26:00,040] and you took the south pole end of it and stuck it off
+- [01:26:00,040 - 01:26:02,040] on Alpha Centauri somewhere, and just waved
+- [01:26:02,040 - 01:26:04,040] around the north pole of it,
+- [01:26:04,040 - 01:26:06,040] and if the magnet, the bar magnet,
+- [01:26:06,040 - 01:26:08,040] or the whatever it was, was sufficiently
+- [01:26:08,040 - 01:26:10,040] skinny and thin
+- [01:26:10,040 - 01:26:12,040] so that you couldn't see it,
+- [01:26:12,040 - 01:26:14,040] maybe it was so thin that it would pass
+- [01:26:14,040 - 01:26:16,040] right between the molecules in your body,
+- [01:26:16,040 - 01:26:18,040] uh,
+- [01:26:18,040 - 01:26:20,040] without harming them,
+- [01:26:20,040 - 01:26:22,040] without a magnetic monopole.
+- [01:26:22,040 - 01:26:24,040] So, that's a kind of
+- [01:26:24,040 - 01:26:26,040] existence proof, in a sense.
+- [01:26:26,040 - 01:26:28,040] There's nothing wrong with that
+- [01:26:28,040 - 01:26:30,040] from the point of view of fundamental principles
+- [01:26:30,040 - 01:26:32,040] that you have an extremely
+- [01:26:32,040 - 01:26:34,040] skinny, uh,
+- [01:26:34,040 - 01:26:36,040] bar magnet, so skinny
+- [01:26:36,040 - 01:26:38,040] that nobody can see it, and so skinny that
+- [01:26:38,040 - 01:26:40,040] it can pass between
+- [01:26:40,040 - 01:26:42,040] the atoms of your body.
+- [01:26:42,040 - 01:26:44,040] It doesn't violate anything in classical physics
+- [01:26:44,040 - 01:26:46,040] anyway. So, you take
+- [01:26:46,040 - 01:26:48,040] a very long bar magnet.
+- [01:26:48,040 - 01:26:50,040] Now, that bar magnet
+- [01:26:50,040 - 01:26:52,040] really does have, or it could be a solenoid,
+- [01:26:52,040 - 01:26:54,040] it could be a solenoid. A solenoid
+- [01:26:54,040 - 01:26:56,040] is a, uh,
+- [01:26:56,040 - 01:26:58,040] you know, wires going around with current
+- [01:26:58,040 - 01:27:00,040] flowing in them, and
+- [01:27:00,040 - 01:27:02,040] the magnetic field comes out
+- [01:27:02,040 - 01:27:04,040] just as if this were a magnetic monopole.
+- [01:27:10,040 - 01:27:12,040] But, if you look really carefully,
+- [01:27:12,040 - 01:27:14,040] you would discover there was also a magnetic
+- [01:27:14,040 - 01:27:16,040] field in here.
+- [01:27:16,040 - 01:27:18,040] So it goes in here
+- [01:27:18,040 - 01:27:20,040] and out here.
+- [01:27:20,040 - 01:27:22,040] Well, if this
+- [01:27:22,040 - 01:27:24,040] solenoid is really,
+- [01:27:24,040 - 01:27:26,040] really thin,
+- [01:27:26,040 - 01:27:28,040] uh, perhaps it doesn't affect
+- [01:27:28,040 - 01:27:30,040] the motion of particles and so forth,
+- [01:27:30,040 - 01:27:32,040] unless a particle by accident just happens
+- [01:27:32,040 - 01:27:34,040] to pass through the solenoid,
+- [01:27:34,040 - 01:27:36,040] which may be an extremely improbable thing
+- [01:27:36,040 - 01:27:38,040] if the solenoid is thin enough,
+- [01:27:38,040 - 01:27:40,040] then you've manufactured yourself
+- [01:27:40,040 - 01:27:42,040] a monopole.
+- [01:27:42,040 - 01:27:44,040] Question?
+- [01:27:44,040 - 01:27:46,040] The magnetic flux density in the solenoid
+- [01:27:46,040 - 01:27:48,040] or the bar magnet is, of course, infinite.
+- [01:27:48,040 - 01:27:50,040] Yeah. No, no, no. That's kind of a...
+- [01:27:50,040 - 01:27:52,040] No, actually.
+- [01:27:52,040 - 01:27:54,040] Yeah. No.
+- [01:27:54,040 - 01:27:56,040] Um...
+- [01:27:58,040 - 01:28:00,040] That, of course, is the objection, but so what?
+- [01:28:00,040 - 01:28:02,040] So there's an infinite magnetic field in there.
+- [01:28:02,040 - 01:28:04,040] What's the next statement?
+- [01:28:04,040 - 01:28:06,040] The next statement is that there's an infinite
+- [01:28:06,040 - 01:28:08,040] energy flux density in there. Good. Right.
+- [01:28:08,040 - 01:28:10,040] Right. Right. So supposing I were to
+- [01:28:10,040 - 01:28:12,040] tell you that the wires of the
+- [01:28:12,040 - 01:28:14,040] solenoid have negative
+- [01:28:14,040 - 01:28:16,040] energy, just enough to cancel that out.
+- [01:28:16,040 - 01:28:20,040] Oh, but besides,
+- [01:28:20,040 - 01:28:22,040] what do you care if it has infinite energy?
+- [01:28:22,040 - 01:28:24,040] It's just an invisible thing with
+- [01:28:24,040 - 01:28:26,040] infinite energy, so it's got an infinite energy.
+- [01:28:26,040 - 01:28:28,040] So what?
+- [01:28:28,040 - 01:28:30,040] You say it's hard to move then, right?
+- [01:28:30,040 - 01:28:32,040] Well, you just need somebody very strong.
+- [01:28:34,040 - 01:28:36,040] No, it...
+- [01:28:36,040 - 01:28:38,040] It, uh...
+- [01:28:38,040 - 01:28:40,040] You're asking
+- [01:28:40,040 - 01:28:42,040] a serious question. The answer
+- [01:28:42,040 - 01:28:44,040] really turns out to be much more interesting.
+- [01:28:44,040 - 01:28:46,040] The answer is, in quantum mechanics, that the energy
+- [01:28:46,040 - 01:28:48,040] is actually a periodic function of a magnetic
+- [01:28:48,040 - 01:28:50,040] field, and
+- [01:28:50,040 - 01:28:52,040] if you put in the right
+- [01:28:52,040 - 01:28:54,040] quantum of magnetic
+- [01:28:54,040 - 01:28:56,040] field through here, then it's truly invisible
+- [01:28:56,040 - 01:28:58,040] and it doesn't cost any energy.
+- [01:29:00,040 - 01:29:02,040] Point particles do have a magnetic moment.
+- [01:29:02,040 - 01:29:04,040] Hm? Point particles
+- [01:29:04,040 - 01:29:06,040] do have a magnetic moment.
+- [01:29:06,040 - 01:29:08,040] Magnetic moments, but not magnetic
+- [01:29:08,040 - 01:29:10,040] monopoles.
+- [01:29:10,040 - 01:29:12,040] Point particles have magnetic moments, but
+- [01:29:12,040 - 01:29:14,040] bar...magnetic dipoles, but...
+- [01:29:14,040 - 01:29:16,040] so do bar magnets.
+- [01:29:18,040 - 01:29:20,040] A dipole
+- [01:29:20,040 - 01:29:22,040] is not a monopole.
+- [01:29:22,040 - 01:29:24,040] A monopole means one pole.
+- [01:29:24,040 - 01:29:26,040] A dipole means an equal and opposite pair
+- [01:29:26,040 - 01:29:28,040] of poles.
+- [01:29:32,040 - 01:29:34,040] Right, it's very difficult to distinguish
+- [01:29:34,040 - 01:29:36,040] having
+- [01:29:36,040 - 01:29:38,040] a north pole
+- [01:29:38,040 - 01:29:40,040] and a south pole
+- [01:29:42,040 - 01:29:44,040] with nothing in between.
+- [01:29:44,040 - 01:29:46,040] And having a north pole
+- [01:29:46,040 - 01:29:48,040] and a south pole with a very skinny
+- [01:29:48,040 - 01:29:50,040] bar magnet between them.
+- [01:29:50,040 - 01:29:52,040] Um...
+- [01:29:52,040 - 01:29:54,040] ...
+- [01:29:54,040 - 01:29:56,040] ...
+- [01:29:56,040 - 01:29:58,040] So...
+- [01:29:58,040 - 01:30:00,040] But it's kind of interesting. Supposing
+- [01:30:00,040 - 01:30:02,040] you tried to separate the north pole from the
+- [01:30:02,040 - 01:30:04,040] south pole.
+- [01:30:04,040 - 01:30:06,040] So you, uh, take a
+- [01:30:06,040 - 01:30:08,040] scissor and cut the
+- [01:30:08,040 - 01:30:10,040] solenoid connecting them.
+- [01:30:10,040 - 01:30:12,040] North pole, south pole, and then move
+- [01:30:12,040 - 01:30:14,040] the north pole far away and the south pole
+- [01:30:14,040 - 01:30:16,040] far away.
+- [01:30:18,040 - 01:30:20,040] Unfortunately, the place
+- [01:30:20,040 - 01:30:22,040] where you cut it develops a north pole
+- [01:30:22,040 - 01:30:24,040] and the place where you cut it over here...
+- [01:30:24,040 - 01:30:26,040] North pole.
+- [01:30:26,040 - 01:30:28,040] North pole. South pole.
+- [01:30:28,040 - 01:30:30,040] So you just make a pair of magnets. You don't make
+- [01:30:30,040 - 01:30:32,040] a magnetic monopole.
+- [01:30:32,040 - 01:30:34,040] So can you have a tape to stretch
+- [01:30:34,040 - 01:30:36,040] the dipoles
+- [01:30:36,040 - 01:30:38,040] farther apart?
+- [01:30:38,040 - 01:30:40,040] Without breaking it, you mean? Yes.
+- [01:30:40,040 - 01:30:42,040] Yeah.
+- [01:30:42,040 - 01:30:44,040] But, you know, I mean, I say I don't need
+- [01:30:44,040 - 01:30:46,040] to stretch it to infinity to fool you into
+- [01:30:46,040 - 01:30:48,040] thinking there's a magnetic monopole over here.
+- [01:30:48,040 - 01:30:50,040] I just take this thing, I put
+- [01:30:50,040 - 01:30:52,040] the rest of it in my back pocket, and I say
+- [01:30:52,040 - 01:30:54,040] look, here's a magnetic monopole, guys. Look, I got
+- [01:30:54,040 - 01:30:56,040] one.
+- [01:30:56,040 - 01:31:06,040] At the risk of violating what you said earlier on, the analogy would be the same as quarks and anti-quarks, right?
+- [01:31:06,040 - 01:31:08,040] Quarks and anti-quarks confined by, uh...
+- [01:31:08,040 - 01:31:10,040] Yeah.
+- [01:31:10,040 - 01:31:12,040] Yeah. Uh...
+- [01:31:12,040 - 01:31:14,040] Right.
+- [01:31:14,040 - 01:31:16,040] Right.
+- [01:31:16,040 - 01:31:18,040] You can't isolate a quark.
+- [01:31:18,040 - 01:31:20,040] Exactly. Same phenomenon.
+- [01:31:20,040 - 01:31:22,040] Right.
+- [01:31:22,040 - 01:31:24,040] Same phenomenon. Or a very similar phenomenon.
+- [01:31:24,040 - 01:31:26,040] Right.
+- [01:31:26,040 - 01:31:28,040] So I didn't want to get into magnetic
+- [01:31:28,040 - 01:31:30,040] monopoles. I thought, make the story
+- [01:31:30,040 - 01:31:32,040] simple. In classical
+- [01:31:32,040 - 01:31:34,040] electrodynamics, without
+- [01:31:34,040 - 01:31:36,040] worrying about the subtleties of monopoles
+- [01:31:36,040 - 01:31:38,040] and so forth, one
+- [01:31:38,040 - 01:31:40,040] of Maxwell's equations, this is one of
+- [01:31:40,040 - 01:31:42,040] Maxwell's equations, del dot p equals zero.
+- [01:31:42,040 - 01:31:44,040] If you start mucking around with this,
+- [01:31:44,040 - 01:31:46,040] it's possible to
+- [01:31:46,040 - 01:31:48,040] rescue the situation,
+- [01:31:48,040 - 01:31:50,040] but new physics has to
+- [01:31:50,040 - 01:31:52,040] go into it, such as
+- [01:31:52,040 - 01:31:54,040] such as
+- [01:31:54,040 - 01:31:56,040] solenoids
+- [01:31:56,040 - 01:31:58,040] with negative energy to cancel out
+- [01:31:58,040 - 01:32:00,040] your infinite energy.
+- [01:32:00,040 - 01:32:02,040] So some new physics has to come in,
+- [01:32:02,040 - 01:32:04,040] and that new physics
+- [01:32:04,040 - 01:32:06,040] is not built into ordinary
+- [01:32:06,040 - 01:32:08,040] electrodynamics.
+- [01:32:08,040 - 01:32:10,040] See, in ordinary electrodynamics, there
+- [01:32:10,040 - 01:32:12,040] you're perfectly right that there's a
+- [01:32:12,040 - 01:32:14,040] magnetic field in there, a certain
+- [01:32:14,040 - 01:32:16,040] magnetic flux. You've squeezed
+- [01:32:16,040 - 01:32:18,040] it down to a very, very
+- [01:32:18,040 - 01:32:20,040] thin solenoid
+- [01:32:20,040 - 01:32:22,040] that increases the magnetic field,
+- [01:32:22,040 - 01:32:24,040] and in fact, it increases
+- [01:32:24,040 - 01:32:26,040] the field energy in there.
+- [01:32:26,040 - 01:32:28,040] E equals mc squared, so among
+- [01:32:28,040 - 01:32:30,040] other things, you've increased the mass
+- [01:32:30,040 - 01:32:32,040] of that solenoid,
+- [01:32:32,040 - 01:32:34,040] and you really
+- [01:32:34,040 - 01:32:36,040] can't
+- [01:32:36,040 - 01:32:38,040] get away with that,
+- [01:32:38,040 - 01:32:40,040] but new physics comes into
+- [01:32:40,040 - 01:32:42,040] play when this thing shrinks down
+- [01:32:42,040 - 01:32:44,040] to sufficiently small size.
+- [01:32:44,040 - 01:32:46,040] That new physics could involve
+- [01:32:46,040 - 01:32:48,040] all sorts of new things about
+- [01:32:48,040 - 01:32:50,040] elementary particle physics, and it does,
+- [01:32:50,040 - 01:32:52,040] and those new things
+- [01:32:52,040 - 01:32:54,040] change the picture, and in
+- [01:32:54,040 - 01:32:56,040] fact, make the
+- [01:32:56,040 - 01:32:58,040] energy to be a periodic function
+- [01:32:58,040 - 01:33:00,040] of the magnetic field, so that if you
+- [01:33:00,040 - 01:33:02,040] make the magnetic field, or
+- [01:33:02,040 - 01:33:04,040] magnetic flux, so if you make
+- [01:33:04,040 - 01:33:06,040] the magnetic flux through there big enough,
+- [01:33:06,040 - 01:33:08,040] all of a sudden, the energy
+- [01:33:08,040 - 01:33:10,040] returns to zero. But that's, as I said,
+- [01:33:10,040 - 01:33:12,040] lots of new physics goes in there.
+- [01:33:12,040 - 01:33:14,040] Things like superconductivity?
+- [01:33:14,040 - 01:33:16,040] Um,
+- [01:33:16,040 - 01:33:18,040] no.
+- [01:33:18,040 - 01:33:20,040] Why, no, no, no, no, no,
+- [01:33:20,040 - 01:33:22,040] I mean, this is,
+- [01:33:22,040 - 01:33:24,040] this is, um,
+- [01:33:24,040 - 01:33:26,040] way beyond,
+- [01:33:26,040 - 01:33:28,040] this is
+- [01:33:28,040 - 01:33:30,040] particle physics of a very high energy
+- [01:33:30,040 - 01:33:32,040] kind that would take to do that.
+- [01:33:34,040 - 01:33:36,040] Magnetic monopoles,
+- [01:33:36,040 - 01:33:38,040] if they exist, are expected
+- [01:33:38,040 - 01:33:40,040] to be associated with physics
+- [01:33:40,040 - 01:33:42,040] at enormously high energy scales,
+- [01:33:42,040 - 01:33:44,040] and not, uh,
+- [01:33:44,040 - 01:33:46,040] something we're likely to see in the
+- [01:33:46,040 - 01:33:48,040] foreseeable future. On the other hand,
+- [01:33:48,040 - 01:33:50,040] every
+- [01:33:50,040 - 01:33:52,040] good theory that I know of,
+- [01:33:52,040 - 01:33:54,040] of elementary particles, has
+- [01:33:54,040 - 01:33:56,040] magnetic monopoles in it.
+- [01:33:56,040 - 01:33:58,040] So, they're probably part
+- [01:33:58,040 - 01:34:00,040] of the story, but they're
+- [01:34:00,040 - 01:34:02,040] not part of classical
+- [01:34:02,040 - 01:34:04,040] electrodynamics.
+- [01:34:04,040 - 01:34:06,040] One more
+- [01:34:06,040 - 01:34:08,040] question, yeah.
+- [01:34:08,040 - 01:34:10,040] Yeah, I've read that Hamilton
+- [01:34:10,040 - 01:34:12,040] spent a lot of his years
+- [01:34:12,040 - 01:34:14,040] working with
+- [01:34:14,040 - 01:34:16,040] some strange numbers called
+- [01:34:16,040 - 01:34:18,040] quaternions, and there's the
+- [01:34:18,040 - 01:34:20,040] quaternions,
+- [01:34:20,040 - 01:34:22,040] that sort of thing. How did they
+- [01:34:22,040 - 01:34:24,040] fit into this whole theory?
+- [01:34:24,040 - 01:34:26,040] Um,
+- [01:34:26,040 - 01:34:28,040] no, they were a separate issue, really.
+- [01:34:28,040 - 01:34:30,040] I'll tell you what this
+- [01:34:30,040 - 01:34:32,040] idea was. I think I've
+- [01:34:32,040 - 01:34:34,040] showed you many times how powerful complex
+- [01:34:34,040 - 01:34:36,040] numbers are in keeping track of
+- [01:34:36,040 - 01:34:38,040] rotations and things like that
+- [01:34:38,040 - 01:34:40,040] of a plane, and they're
+- [01:34:40,040 - 01:34:42,040] almost completely useless for keeping
+- [01:34:42,040 - 01:34:44,040] track of rotations and things in
+- [01:34:44,040 - 01:34:46,040] three dimensions.
+- [01:34:46,040 - 01:34:48,040] Hamilton wanted to invent a
+- [01:34:48,040 - 01:34:50,040] formalism where
+- [01:34:50,040 - 01:34:52,040] there was similar,
+- [01:34:52,040 - 01:34:54,040] a similar
+- [01:34:54,040 - 01:34:56,040] structure for three-dimensional space.
+- [01:34:56,040 - 01:34:58,040] So,
+- [01:34:58,040 - 01:35:00,040] he said, instead of having one
+- [01:35:00,040 - 01:35:02,040] imaginary number, and in fact,
+- [01:35:02,040 - 01:35:04,040] what he wound up with,
+- [01:35:04,040 - 01:35:06,040] maybe not so happily, I don't know,
+- [01:35:06,040 - 01:35:08,040] was a theory of four-dimensional space.
+- [01:35:08,040 - 01:35:10,040] But,
+- [01:35:10,040 - 01:35:12,040] he said, let's
+- [01:35:12,040 - 01:35:14,040] add, instead of
+- [01:35:14,040 - 01:35:16,040] having only one imaginary number,
+- [01:35:16,040 - 01:35:18,040] where i squared is equal to minus one,
+- [01:35:18,040 - 01:35:20,040] he introduced three of them,
+- [01:35:20,040 - 01:35:22,040] i, j, and k, one for each axis
+- [01:35:22,040 - 01:35:24,040] of space.
+- [01:35:24,040 - 01:35:26,040] This is sort of like
+- [01:35:26,040 - 01:35:28,040] thinking of
+- [01:35:28,040 - 01:35:30,040] the imaginary numbers associated with
+- [01:35:30,040 - 01:35:32,040] the vertical axis. And then there was
+- [01:35:32,040 - 01:35:34,040] a fourth axis, the fourth axis was
+- [01:35:34,040 - 01:35:36,040] for the real numbers, one.
+- [01:35:36,040 - 01:35:38,040] And then
+- [01:35:38,040 - 01:35:40,040] you just start writing numbers,
+- [01:35:40,040 - 01:35:42,040] constant times i plus another constant
+- [01:35:42,040 - 01:35:44,040] times j plus another constant times k.
+- [01:35:44,040 - 01:35:46,040] You have some rules about
+- [01:35:46,040 - 01:35:48,040] multiplication. i times
+- [01:35:48,040 - 01:35:50,040] j equals k.
+- [01:35:50,040 - 01:35:52,040] And cyclic
+- [01:35:52,040 - 01:35:54,040] permutations of it.
+- [01:35:54,040 - 01:35:56,040] And it
+- [01:35:56,040 - 01:35:58,040] works very well.
+- [01:35:58,040 - 01:36:00,040] It's got another name now.
+- [01:36:00,040 - 01:36:02,040] It's called
+- [01:36:02,040 - 01:36:04,040] Pauli matrices.
+- [01:36:04,040 - 01:36:06,040] The Pauli matrices
+- [01:36:06,040 - 01:36:08,040] of quantum mechanics are the
+- [01:36:08,040 - 01:36:10,040] quaternions.
+- [01:36:10,040 - 01:36:12,040] But,
+- [01:36:12,040 - 01:36:14,040] it really didn't have much to do with,
+- [01:36:14,040 - 01:36:16,040] there's other
+- [01:36:16,040 - 01:36:18,040] work on mechanics.
+- [01:36:18,040 - 01:36:20,040] It was a separate issue.
+- [01:36:20,040 - 01:36:22,040] The big long bar magnet
+- [01:36:22,040 - 01:36:24,040] you discussed to North Pole
+- [01:36:24,040 - 01:36:26,040] and the South Pole would behave the same way.
+- [01:36:26,040 - 01:36:28,040] Say it again?
+- [01:36:28,040 - 01:36:30,040] You have a big long
+- [01:36:30,040 - 01:36:32,040] skinny magnet that stretches out to
+- [01:36:32,040 - 01:36:34,040] the south of the century to simulate a monopole.
+- [01:36:34,040 - 01:36:36,040] And you
+- [01:36:36,040 - 01:36:38,040] discussed the North Pole having monopole properties.
+- [01:36:38,040 - 01:36:40,040] Did the South Pole
+- [01:36:40,040 - 01:36:42,040] behave the same way?
+- [01:36:42,040 - 01:36:44,040] Except it has the opposite magnetic charge.
+- [01:36:44,040 - 01:36:46,040] It's like a plus charge and a minus charge
+- [01:36:46,040 - 01:36:48,040] except magnetic instead of electric.
+- [01:36:48,040 - 01:36:50,040] Yeah.
+- [01:36:50,040 - 01:36:52,040] Right.
+- [01:36:52,040 - 01:36:54,040] And if you bring them together,
+- [01:36:54,040 - 01:36:56,040] touch them together,
+- [01:36:56,040 - 01:36:58,040] they just disappear.
+- [01:36:58,040 - 01:37:00,040] It's like taking the North Pole of a magnet and the South Pole
+- [01:37:00,040 - 01:37:02,040] and bringing them together.
+- [01:37:02,040 - 01:37:04,040] There's no poles left anymore.
+- [01:37:04,040 - 01:37:06,040] Not there, anywhere.
+- [01:37:08,040 - 01:37:10,040] Okay.
+- [01:37:10,040 - 01:37:12,040] You know at some point you
+- [01:37:12,040 - 01:37:14,040] might go into chaos, at least
+- [01:37:14,040 - 01:37:16,040] with respect to phase-base.
+- [01:37:16,040 - 01:37:18,040] Yeah, well, I guess we ran out of time, didn't we?
+- [01:37:18,040 - 01:37:20,040] Yeah.
+- [01:37:20,040 - 01:37:22,040] So I guess
+- [01:37:22,040 - 01:37:24,040] uh
+- [01:37:24,040 - 01:37:26,040] yeah, it's the one thing
+- [01:37:26,040 - 01:37:28,040] I would have done had we had another week
+- [01:37:28,040 - 01:37:30,040] or so.
+- [01:37:30,040 - 01:37:32,040] That's alright.
+- [01:37:32,040 - 01:37:34,040] You've got the material now. You can go and
+- [01:37:34,040 - 01:37:36,040] um
+- [01:37:36,040 - 01:37:38,040] It's all orbits
+- [01:37:38,040 - 01:37:40,040] in phase-space. Orbits in phase-space.
+- [01:37:40,040 - 01:37:42,040] Okay.
+- [01:37:42,040 - 01:37:44,040] Let's uh
+- [01:37:44,040 - 01:37:46,040] Let's quit.
+- [01:37:46,040 - 01:37:48,040] For more,
+- [01:37:48,040 - 01:37:50,040] please visit us at stanford.edu.
