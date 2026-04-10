@@ -1,0 +1,2962 @@
+# Transcript
+
+Source: core/general_relativity/2012_fall_theoretical_minimum/156 - General Relativity Lecture 2 [5VKyRVLMMQ4].webm
+
+- [00:00:04,899 - 00:00:06,180] Stanford University.
+- [00:00:07,400 - 00:00:08,039] Okay,
+- [00:00:08,039 - 00:00:09,140] shall we begin?
+- [00:00:11,120 - 00:00:12,720] Any questions before I begin?
+- [00:00:13,260 - 00:00:14,120] Quick ones.
+- [00:00:20,000 - 00:00:21,300] As I was saying,
+- [00:00:21,300 - 00:00:25,680] a good notation will carry you a long way.
+- [00:00:27,200 - 00:00:28,780] When a notation is good,
+- [00:00:28,780 - 00:00:31,470] it just sort of automatically
+- [00:00:31,470 - 00:00:34,160] tells you what to do next.
+- [00:00:36,540 - 00:00:38,140] It means you can do
+- [00:00:38,140 - 00:00:39,740] physics in a completely mindless way.
+- [00:00:42,240 - 00:00:44,960] Just you know,
+- [00:00:44,960 - 00:00:46,140] it's like having tinker toys.
+- [00:00:46,260 - 00:00:48,320] It's pretty clear which end
+- [00:00:48,320 - 00:00:50,380] the stick has to go into.
+- [00:00:51,160 - 00:00:53,820] It has to go into the thing with the hole.
+- [00:00:53,960 - 00:00:55,660] You can't try putting a hole into it.
+- [00:00:55,660 - 00:00:57,110] You can't try putting a stick into a
+- [00:00:57,110 - 00:00:58,560] hole or forcing a stick into a stick.
+- [00:00:58,700 - 00:00:59,840] There's only one thing you can do.
+- [00:00:59,880 - 00:01:01,300] You can put the stick into the hole,
+- [00:01:01,300 - 00:01:03,480] and then the other end of
+- [00:01:03,480 - 00:01:05,660] the stick can go in another
+- [00:01:05,660 - 00:01:07,020] hole that gives you some more
+- [00:01:07,020 - 00:01:08,380] holes that you can put sticks into.
+- [00:01:11,540 - 00:01:14,920] And the notation of general relativity is much like that.
+- [00:01:18,920 - 00:01:20,360] If you follow the rules,
+- [00:01:20,360 - 00:01:23,820] you almost can't make mistakes.
+- [00:01:24,380 - 00:01:24,820] Okay.
+- [00:01:25,200 - 00:01:25,640] Okay.
+- [00:01:25,940 - 00:01:26,700] Okay.
+- [00:01:26,900 - 00:01:27,660] Okay.
+- [00:01:27,660 - 00:01:28,260] Okay.
+- [00:01:28,260 - 00:01:29,860] But you have to learn the rules.
+- [00:01:30,880 - 00:01:33,520] The rules are the rules of tensor analysis,
+- [00:01:33,520 - 00:01:36,680] or tensor algebra,
+- [00:01:36,680 - 00:01:37,680] tensor analysis.
+- [00:01:40,080 - 00:01:45,180] And the question which we're aiming at
+- [00:01:45,180 - 00:01:50,280] now is to understand enough about tensor analysis,
+- [00:01:50,560 - 00:01:51,000] metrics,
+- [00:01:51,000 - 00:01:55,640] to be able to distinguish a fluid.
+- [00:01:55,640 - 00:01:55,960] And to see that the fluid is really flat.
+- [00:01:55,960 - 00:01:55,960] So we'll take the first example,
+- [00:01:55,960 - 00:01:56,020] let's say it's a flat geometry.
+- [00:01:56,660 - 00:01:56,960] Let's look at the geometry.
+- [00:01:56,960 - 00:01:58,260] This is a flat geometry from a non-flat geometry.
+- [00:01:58,580 - 00:01:59,140] Now,
+- [00:01:59,140 - 00:02:00,560] that seems awfully simple.
+- [00:02:00,720 - 00:02:02,540] Flat means like the plane.
+- [00:02:03,300 - 00:02:06,280] Non-flat means with bumps and lumps in it.
+- [00:02:06,740 - 00:02:08,109] And you would think we
+- [00:02:08,109 - 00:02:09,479] could tell the difference very easily.
+- [00:02:10,520 - 00:02:12,440] Sometimes it's not so easy.
+- [00:02:13,300 - 00:02:14,240] For example,
+- [00:02:14,240 - 00:02:15,540] as I mentioned last time,
+- [00:02:15,540 - 00:02:16,740] if I take this page.
+- [00:02:16,740 - 00:02:18,880] that page is flat.
+- [00:02:18,880 - 00:02:22,100] If I roll the page like this,
+- [00:02:22,100 - 00:02:23,940] it looks curved,
+- [00:02:23,940 - 00:02:24,660] but it's not
+- [00:02:24,660 - 00:02:25,100] curved.
+- [00:02:25,100 - 00:02:27,500] It's exactly the same page.
+- [00:02:27,500 - 00:02:30,300] The relationship between the parts of the
+- [00:02:30,300 - 00:02:30,740] page,
+- [00:02:30,740 - 00:02:33,870] the distances between the letters
+- [00:02:33,870 - 00:02:37,000] on my page and so forth,
+- [00:02:37,000 - 00:02:38,040] they don't
+- [00:02:38,040 - 00:02:38,540] change,
+- [00:02:38,540 - 00:02:40,970] at least not the distances
+- [00:02:40,970 - 00:02:43,400] between the letters measured along the
+- [00:02:43,400 - 00:02:43,560] page.
+- [00:02:43,560 - 00:02:45,820] They don't change when I
+- [00:02:45,820 - 00:02:48,080] do various things with the page.
+- [00:02:48,080 - 00:02:52,380] So a folded page or
+- [00:02:52,380 - 00:02:52,520] a,
+- [00:02:52,520 - 00:02:54,350] I don't want to call it curved
+- [00:02:54,350 - 00:02:56,180] because curved would be the wrong thing,
+- [00:02:56,180 - 00:02:57,440] but a,
+- [00:02:57,480 - 00:02:58,940] what's the right word for,
+- [00:02:58,940 - 00:02:59,920] what's that?
+- [00:02:59,920 - 00:03:00,640] Deformed?
+- [00:03:00,640 - 00:03:02,020] Well,
+- [00:03:02,020 - 00:03:03,240] it's not really,
+- [00:03:03,240 - 00:03:04,440] no,
+- [00:03:04,440 - 00:03:05,540] I don't want to use the word
+- [00:03:05,540 - 00:03:06,180] deformed either.
+- [00:03:06,180 - 00:03:08,000] Just a curl.
+- [00:03:08,000 - 00:03:09,140] Let's call it curls,
+- [00:03:09,140 - 00:03:10,560] where you don't stretch it and
+- [00:03:11,300 - 00:03:12,340] you don't deform it.
+- [00:03:13,400 - 00:03:16,780] That is not introducing curvature into a space.
+- [00:03:16,780 - 00:03:17,000] Now,
+- [00:03:17,000 - 00:03:19,280] technically it introduces
+- [00:03:19,280 - 00:03:21,200] what's called extrinsic curvature.
+- [00:03:21,200 - 00:03:24,620] Extrinsic curvature has to do with the
+- [00:03:24,620 - 00:03:25,640] way a space,
+- [00:03:25,640 - 00:03:27,380] in this case the page,
+- [00:03:27,380 - 00:03:31,220] is embedded in a higher dimensional space,
+- [00:03:31,520 - 00:03:33,100] three-dimensional space of this room.
+- [00:03:33,100 - 00:03:34,860] Here's the page.
+- [00:03:34,860 - 00:03:36,480] When the page is laid
+- [00:03:36,480 - 00:03:37,500] out flat like that,
+- [00:03:37,500 - 00:03:40,840] it's embedded in the embedding space in one way.
+- [00:03:40,840 - 00:03:41,960] When it's
+- [00:03:41,960 - 00:03:42,800] curled like this,
+- [00:03:42,800 - 00:03:45,900] it's embedded in the same space in another way.
+- [00:03:45,900 - 00:03:50,360] And one says that there is extrinsic
+- [00:03:50,360 - 00:03:50,760] curvature.
+- [00:03:50,760 - 00:03:53,420] The extrinsic has to do with the
+- [00:03:53,420 - 00:03:56,080] fact that it's in an external space,
+- [00:03:56,080 - 00:03:56,720] and it
+- [00:03:56,720 - 00:03:57,840] has to do with how the space,
+- [00:03:57,840 - 00:04:00,340] how this page is embedded in space.
+- [00:04:00,340 - 00:04:02,700] But it has nothing to
+- [00:04:02,700 - 00:04:04,240] do with the intrinsic geometry.
+- [00:04:04,240 - 00:04:05,680] If you like,
+- [00:04:05,680 - 00:04:08,480] you can think of the intrinsic geometry as
+- [00:04:08,480 - 00:04:10,560] the geometry of a tiny little
+- [00:04:10,560 - 00:04:12,640] bug that moves along the surface.
+- [00:04:13,540 - 00:04:15,300] Cannot look out of the surface.
+- [00:04:15,300 - 00:04:18,980] Only looks along the surface,
+- [00:04:18,980 - 00:04:20,300] crawls along the surface.
+- [00:04:20,500 - 00:04:23,420] He may have surveying instruments by
+- [00:04:23,420 - 00:04:26,340] which he can measure distances along the
+- [00:04:26,340 - 00:04:26,720] surface.
+- [00:04:26,720 - 00:04:28,620] Can draw triangles.
+- [00:04:28,620 - 00:04:31,500] Measure the angles of the triangles within the
+- [00:04:31,500 - 00:04:31,900] surface,
+- [00:04:31,900 - 00:04:35,540] and do all kinds of interesting geometric studies,
+- [00:04:35,540 - 00:04:37,480] but never looks out
+- [00:04:37,480 - 00:04:38,140] of the surface,
+- [00:04:38,140 - 00:04:40,330] and therefore never detects or notices
+- [00:04:40,330 - 00:04:42,520] the fact that it might be
+- [00:04:42,800 - 00:04:46,600] embedded in the higher dimensional space in different ways
+- [00:04:47,520 - 00:04:49,900] just learns about the intrinsic geometry
+- [00:04:50,620 - 00:04:53,680] the intrinsic geometry meaning the geometry
+- [00:04:54,859 - 00:04:59,100] that is independent of the way the surface is embedded
+- [00:05:01,080 - 00:05:02,860] general relativity is about
+- [00:05:04,500 - 00:05:05,780] and Riemannian geometry,
+- [00:05:05,780 - 00:05:07,220] a lot of geometry,
+- [00:05:07,220 - 00:05:10,840] is all about the intrinsic properties of the geometry
+- [00:05:10,840 - 00:05:13,340] it doesn't have to be two-dimensional,
+- [00:05:13,340 - 00:05:14,960] it can be any number of dimensions
+- [00:05:16,099 - 00:05:18,719] and the basic thing which defines the
+- [00:05:18,719 - 00:05:21,340] geometry and distinguishes it from other geometries
+- [00:05:22,440 - 00:05:25,540] is to imagine sprinkling a bunch of points
+- [00:05:25,540 - 00:05:26,980] I don't want to ruin my page here,
+- [00:05:26,980 - 00:05:28,100] let's do it on the back of the page
+- [00:05:28,620 - 00:05:29,920] sprinkle a bunch of points,
+- [00:05:29,920 - 00:05:32,080] draw lines between them,
+- [00:05:32,080 - 00:05:33,700] sort of triangulate the space
+- [00:05:34,359 - 00:05:36,689] and then state what the distance
+- [00:05:36,689 - 00:05:39,020] between every pair of neighboring points is
+- [00:05:40,159 - 00:05:40,820] specify the distance between the two points
+- [00:05:40,840 - 00:05:43,240] specifying those distances specifies the geometry
+- [00:05:45,140 - 00:05:48,830] sometimes that geometry can be flattened out on the page
+- [00:05:48,830 - 00:05:52,520] without changing the lengths of any of these little links
+- [00:05:52,520 - 00:05:53,480] let me give you an example
+- [00:05:55,560 - 00:05:59,060] if I draw a bunch of triangles
+- [00:06:01,340 - 00:06:03,680] which are representing lengths
+- [00:06:08,160 - 00:06:08,680] oops,
+- [00:06:08,680 - 00:06:09,980] I'm not doing it very well
+- [00:06:12,760 - 00:06:14,380] a triangular lattice
+- [00:06:15,880 - 00:06:17,180] that's a triangular lattice,
+- [00:06:17,180 - 00:06:18,360] it's built up out of triangles
+- [00:06:19,280 - 00:06:26,220] and if every triangle is an equilateral triangle
+- [00:06:26,820 - 00:06:27,080] this,
+- [00:06:27,080 - 00:06:27,520] this,
+- [00:06:27,520 - 00:06:28,440] this are all equal
+- [00:06:28,440 - 00:06:28,940] this,
+- [00:06:28,940 - 00:06:29,220] this,
+- [00:06:29,220 - 00:06:30,320] this are all equal
+- [00:06:30,840 - 00:06:31,720] then in fact,
+- [00:06:31,720 - 00:06:34,020] imagine that at the nodes here
+- [00:06:34,020 - 00:06:35,020] we can,
+- [00:06:35,020 - 00:06:36,220] you know,
+- [00:06:36,220 - 00:06:38,400] what's the right word?
+- [00:06:41,300 - 00:06:42,300] they're like hinges,
+- [00:06:42,300 - 00:06:43,300] they're hinged
+- [00:06:44,120 - 00:06:45,910] the hinging would allow us
+- [00:06:45,910 - 00:06:47,700] to sort of fold this thing
+- [00:06:48,560 - 00:06:51,420] but as long as we keep these lengths the same
+- [00:06:52,080 - 00:06:53,440] and don't change them,
+- [00:06:53,440 - 00:06:55,400] make them all equilateral triangles
+- [00:06:55,400 - 00:06:57,290] this can always be laid
+- [00:06:57,290 - 00:06:59,180] out on the desk as flat
+- [00:07:00,240 - 00:07:01,460] on the other hand,
+- [00:07:01,460 - 00:07:03,680] if we were to,
+- [00:07:03,680 - 00:07:04,480] let's say
+- [00:07:05,620 - 00:07:07,480] take several of these lengths,
+- [00:07:07,480 - 00:07:10,180] all the ones coming into some point over here
+- [00:07:10,840 - 00:07:11,080] this one,
+- [00:07:11,080 - 00:07:11,420] this one,
+- [00:07:11,420 - 00:07:11,820] this one,
+- [00:07:11,820 - 00:07:12,200] this one,
+- [00:07:12,200 - 00:07:12,980] this one and this one
+- [00:07:13,500 - 00:07:14,380] six of them
+- [00:07:16,440 - 00:07:18,800] and we were to double the size of them
+- [00:07:19,500 - 00:07:21,350] then this point would have no choice
+- [00:07:21,350 - 00:07:23,200] but to come up out of the blackboard
+- [00:07:24,080 - 00:07:25,440] or into the blackboard
+- [00:07:26,240 - 00:07:28,120] there would be a bulge at that point
+- [00:07:28,640 - 00:07:30,490] and you can't push that bulge back
+- [00:07:30,490 - 00:07:32,340] into the blackboard and flatten it out
+- [00:07:32,340 - 00:07:34,680] without changing the lengths of the links
+- [00:07:36,740 - 00:07:40,820] a curved space is basically one which cannot be folded
+- [00:07:40,820 - 00:07:41,440] or flattened out
+- [00:07:43,200 - 00:07:44,520] without distorting it
+- [00:07:44,520 - 00:07:45,140] in fact,
+- [00:07:45,140 - 00:07:46,220] without distorting it
+- [00:07:49,360 - 00:07:51,380] and it's intrinsic property of the space,
+- [00:07:51,380 - 00:07:52,620] not extrinsic
+- [00:07:55,580 - 00:07:56,160] okay,
+- [00:07:56,160 - 00:07:58,440] so our goal
+- [00:07:59,460 - 00:08:00,040] which,
+- [00:08:00,040 - 00:08:01,200] as I said last time,
+- [00:08:01,200 - 00:08:03,100] matches closely the question
+- [00:08:03,669 - 00:08:06,860] of whether there is a real gravitational field present
+- [00:08:06,860 - 00:08:10,060] or whether the parent gravitational field
+- [00:08:10,060 - 00:08:13,260] is just due to an artifact of funny coordinates
+- [00:08:13,260 - 00:08:14,700] funny space-time coordinates
+- [00:08:15,780 - 00:08:18,760] the question of whether a space is really flat
+- [00:08:18,760 - 00:08:20,400] or whether
+- [00:08:21,020 - 00:08:23,720] or whether it's really flat or really curved
+- [00:08:23,720 - 00:08:26,900] or whether it's just we've presented that space
+- [00:08:26,900 - 00:08:29,060] with curved coordinates
+- [00:08:30,659 - 00:08:32,760] those two mathematical problems
+- [00:08:32,760 - 00:08:35,080] is there really a gravitational field there
+- [00:08:35,080 - 00:08:38,220] or is it just an artifact of curved space-time coordinates
+- [00:08:39,600 - 00:08:41,379] or is the space of the
+- [00:08:41,379 - 00:08:43,159] top of this table top really flat
+- [00:08:44,520 - 00:08:47,600] even though it may look curved
+- [00:08:47,600 - 00:08:48,480] because I introduced,
+- [00:08:48,480 - 00:08:49,680] I won't draw on the table
+- [00:08:49,680 - 00:08:52,220] but curved coordinates of various kinds
+- [00:08:53,320 - 00:08:54,930] so the question is how do you
+- [00:08:54,930 - 00:08:56,540] tell really if a space is flat
+- [00:08:58,400 - 00:08:59,440] what are you given?
+- [00:09:00,060 - 00:09:01,900] typically you're given the metric tensor
+- [00:09:01,900 - 00:09:05,400] but before we go into that question
+- [00:09:05,400 - 00:09:06,820] and it's a hard question
+- [00:09:06,820 - 00:09:07,860] it's going to take us,
+- [00:09:07,860 - 00:09:11,520] it probably won't get completely to the point of
+- [00:09:11,520 - 00:09:14,000] of answering the question tonight
+- [00:09:14,599 - 00:09:15,720] I have a question?
+- [00:09:15,980 - 00:09:16,060] yeah
+- [00:09:16,060 - 00:09:18,300] and I don't mean this facetiously
+- [00:09:18,300 - 00:09:19,600] I really mean this sincerely
+- [00:09:20,219 - 00:09:21,160] what is flat?
+- [00:09:21,360 - 00:09:22,300] how do we define it?
+- [00:09:23,840 - 00:09:24,740] that you care,
+- [00:09:24,740 - 00:09:26,460] we're going to define it
+- [00:09:26,460 - 00:09:29,520] we have not defined it yet in any mathematical sense
+- [00:09:29,520 - 00:09:31,220] I tried to give you an intuition
+- [00:09:31,220 - 00:09:32,940] it means you can flatten out on the table
+- [00:09:32,940 - 00:09:34,040] but of course that's not good enough
+- [00:09:34,819 - 00:09:36,480] I will tell you exactly what it means
+- [00:09:36,820 - 00:09:38,200] I told you last time but I'll tell you again
+- [00:09:39,740 - 00:09:41,780] alright what it means is the metric tensor
+- [00:09:41,780 - 00:09:44,740] can be chosen to be just the Kronecker delta symbol
+- [00:09:44,740 - 00:09:45,660] but we'll come to it
+- [00:09:47,060 - 00:09:48,540] alright before we come to it
+- [00:09:48,540 - 00:09:50,500] we need to understand a little bit about tensors
+- [00:09:51,220 - 00:09:52,720] we've talked about them a little bit
+- [00:09:52,720 - 00:09:54,760] but I want to formalize it tonight a little bit
+- [00:09:58,340 - 00:09:58,740] tensors,
+- [00:09:58,740 - 00:09:59,900] scalars and vectors
+- [00:10:01,820 - 00:10:04,420] scalars and vectors are special cases of tensors
+- [00:10:04,420 - 00:10:10,000] and tensors are the general category of objects
+- [00:10:11,060 - 00:10:12,460] they have indices
+- [00:10:13,240 - 00:10:14,820] and they transform
+- [00:10:14,820 - 00:10:16,500] the most important thing is
+- [00:10:16,500 - 00:10:18,450] that they transform when you go
+- [00:10:18,450 - 00:10:20,400] from one coordinate system to another
+- [00:10:22,100 - 00:10:25,520] in particular we're going to be interested in spaces
+- [00:10:26,420 - 00:10:28,580] with quantities fields on them
+- [00:10:28,580 - 00:10:30,360] so that every point in space
+- [00:10:30,360 - 00:10:32,900] there may be some quantities associated with it
+- [00:10:32,900 - 00:10:33,640] with that point
+- [00:10:34,420 - 00:10:37,200] and those quantities will be tensors
+- [00:10:37,760 - 00:10:38,840] there will be tensors
+- [00:10:38,840 - 00:10:40,170] there are other kinds of quantities
+- [00:10:40,170 - 00:10:41,500] also that will not be tensors
+- [00:10:41,500 - 00:10:44,240] but in particular we'll be interested in tensors fields
+- [00:10:44,240 - 00:10:46,290] a field is a thing which
+- [00:10:46,290 - 00:10:48,340] can vary from point to point
+- [00:10:48,340 - 00:10:51,560] and the simplest kind of tensor is a scalar
+- [00:10:51,560 - 00:10:53,080] a scalar,
+- [00:10:53,080 - 00:10:54,700] S of X
+- [00:10:56,180 - 00:10:58,300] is a quantity at each point of space
+- [00:10:58,300 - 00:11:02,500] where everybody in all coordinates agrees about its value
+- [00:11:04,500 - 00:11:06,920] so the transformation properties
+- [00:11:07,500 - 00:11:10,010] and going let's say from the Y from
+- [00:11:10,010 - 00:11:12,520] the X coordinate to the Y X coordinates
+- [00:11:14,200 - 00:11:16,620] XM to YM
+- [00:11:17,500 - 00:11:18,820] in changing coordinates
+- [00:11:19,580 - 00:11:22,140] the value of a scalar field
+- [00:11:22,140 - 00:11:24,420] at a actual point of space
+- [00:11:24,420 - 00:11:26,740] so space time but we will get to space time
+- [00:11:27,219 - 00:11:29,940] the value of that scalar field does not change
+- [00:11:29,940 - 00:11:31,820] so we can write that as
+- [00:11:32,500 - 00:11:37,740] S prime of Y equals S of X
+- [00:11:38,400 - 00:11:41,320] the prime here simply denotes the fact
+- [00:11:41,320 - 00:11:42,880] that I'm talking about a quantity
+- [00:11:43,800 - 00:11:46,800] in the coordinate system Y
+- [00:11:48,240 - 00:11:50,080] without a prime it will
+- [00:11:50,080 - 00:11:51,920] refer to the coordinate system X
+- [00:11:51,920 - 00:11:53,520] there are two coordinate systems
+- [00:11:57,760 - 00:11:59,660] here's the X coordinate system
+- [00:11:59,660 - 00:12:01,660] these are the lines of constant X
+- [00:12:01,660 - 00:12:03,360] so the surfaces of constant X
+- [00:12:03,360 - 00:12:05,800] and then there's an every point
+- [00:12:06,540 - 00:12:09,420] is labeled by a collection of X's
+- [00:12:10,680 - 00:12:12,420] how many X's and Y's
+- [00:12:13,280 - 00:12:15,220] well that depends on the dimension of the space
+- [00:12:15,220 - 00:12:17,520] if the space is one dimensional
+- [00:12:17,520 - 00:12:20,380] then one X just one coordinate
+- [00:12:20,380 - 00:12:22,460] will label where you are in that coordinate
+- [00:12:23,200 - 00:12:25,420] if it's two dimensional two coordinates
+- [00:12:25,420 - 00:12:26,820] X1 and X2
+- [00:12:27,510 - 00:12:28,880] or Y1 and Y2
+- [00:12:28,880 - 00:12:31,640] if it's three dimensional three coordinates
+- [00:12:32,500 - 00:12:33,100] X1,
+- [00:12:33,100 - 00:12:33,480] X2,
+- [00:12:33,480 - 00:12:33,960] and X3
+- [00:12:33,960 - 00:12:35,140] or Y1,
+- [00:12:35,140 - 00:12:35,580] Y2,
+- [00:12:35,580 - 00:12:36,180] and Y3
+- [00:12:36,180 - 00:12:38,600] and whatever the X coordinates are
+- [00:12:38,600 - 00:12:40,040] the Y coordinates are different
+- [00:12:46,199 - 00:12:48,600] but we assume there's a correspondence
+- [00:12:48,600 - 00:12:52,960] that if you know the value of the X's
+- [00:12:52,960 - 00:12:54,320] for a particular point
+- [00:12:54,320 - 00:12:56,140] then the Y's
+- [00:12:56,140 - 00:12:58,000] so let's write that Ym
+- [00:12:58,560 - 00:13:01,040] where M runs from one to however many
+- [00:13:01,660 - 00:13:03,860] is a known function
+- [00:13:03,860 - 00:13:05,640] assumed to be a known function
+- [00:13:05,640 - 00:13:07,020] of the X's
+- [00:13:09,719 - 00:13:11,740] this stands for now
+- [00:13:11,740 - 00:13:13,360] the whole set of X's
+- [00:13:13,360 - 00:13:13,880] X1,
+- [00:13:13,880 - 00:13:14,280] X2,
+- [00:13:14,280 - 00:13:14,740] X3,
+- [00:13:14,740 - 00:13:15,120] X4,
+- [00:13:15,120 - 00:13:15,740] however many
+- [00:13:15,740 - 00:13:19,100] and that we can invert the relationship
+- [00:13:19,660 - 00:13:23,020] so that if we know the value of Y
+- [00:13:23,020 - 00:13:24,060] of a point
+- [00:13:29,120 - 00:13:31,320] we can also know what its X is
+- [00:13:32,240 - 00:13:34,920] so that's a coordinate transformation of some kind
+- [00:13:34,920 - 00:13:37,400] and that coordinate transformation can be
+- [00:13:37,800 - 00:13:38,260] you know,
+- [00:13:38,260 - 00:13:39,020] pretty complicated
+- [00:13:39,020 - 00:13:40,860] we'll assume it's continuous
+- [00:13:40,860 - 00:13:42,700] we'll assume we can differentiate
+- [00:13:42,700 - 00:13:43,840] when we need to differentiate
+- [00:13:44,720 - 00:13:45,360] but
+- [00:13:47,380 - 00:13:49,600] nothing more special than that
+- [00:13:51,040 - 00:13:51,680] okay,
+- [00:13:51,680 - 00:13:54,040] so scalars transform trusses
+- [00:13:54,060 - 00:13:54,400] trivially
+- [00:13:55,300 - 00:13:57,860] if you know the value of S at a point
+- [00:13:58,400 - 00:14:01,520] you know it no matter what coordinate system you use
+- [00:14:02,380 - 00:14:02,860] next,
+- [00:14:02,860 - 00:14:03,780] there are vectors
+- [00:14:05,300 - 00:14:05,780] vectors,
+- [00:14:05,780 - 00:14:07,620] and there are two kinds of vectors
+- [00:14:07,620 - 00:14:08,960] we spoke about them last time
+- [00:14:08,960 - 00:14:09,990] I'm going to tell you
+- [00:14:09,990 - 00:14:11,020] now a little about the geometry
+- [00:14:11,020 - 00:14:11,800] what it means
+- [00:14:12,520 - 00:14:13,340] there are
+- [00:14:15,040 - 00:14:17,360] contravariant vectors which have an index upstairs
+- [00:14:17,360 - 00:14:19,200] and there are covariant vectors
+- [00:14:20,199 - 00:14:22,200] I shouldn't really use the same symbol
+- [00:14:22,200 - 00:14:23,860] because they're not the same thing at the moment
+- [00:14:24,060 - 00:14:25,200] but let's just use the same symbol
+- [00:14:25,200 - 00:14:25,420] V,
+- [00:14:25,420 - 00:14:26,280] V for vector
+- [00:14:26,900 - 00:14:28,260] with an index downstairs
+- [00:14:30,219 - 00:14:31,180] the rules,
+- [00:14:31,180 - 00:14:34,160] we'll write down rules for transformation in a moment
+- [00:14:34,160 - 00:14:36,730] but let me first tell you a little
+- [00:14:36,730 - 00:14:39,300] bit about the difference between covariant and contravariant
+- [00:14:40,020 - 00:14:40,500] intuitively,
+- [00:14:40,500 - 00:14:41,640] what it means
+- [00:14:43,300 - 00:14:45,340] so let's suppose for a moment we're
+- [00:14:45,340 - 00:14:47,380] located right at this point over here
+- [00:14:48,300 - 00:14:50,220] we have some coordinates
+- [00:14:51,020 - 00:14:52,660] these could be the X coordinates
+- [00:14:52,660 - 00:14:54,040] and I'm going to draw them as straight lines
+- [00:14:54,060 - 00:14:56,120] for the moment
+- [00:14:56,120 - 00:15:00,320] because at the moment I'm not interested in the fact that
+- [00:15:00,320 - 00:15:04,520] the coordinates curve and vary the directions from place to place
+- [00:15:05,740 - 00:15:08,800] I'm mostly interested in the fact that
+- [00:15:08,800 - 00:15:11,860] the coordinate axes may not be perpendicular
+- [00:15:12,860 - 00:15:14,280] they may not be perpendicular
+- [00:15:15,680 - 00:15:18,840] and what the implication of
+- [00:15:18,840 - 00:15:22,000] non-perpendicularity is for these coordinates
+- [00:15:22,000 - 00:15:22,680] furthermore
+- [00:15:22,680 - 00:15:24,100] the distance,
+- [00:15:24,100 - 00:15:25,000] let's call this,
+- [00:15:25,000 - 00:15:26,440] we can call this X1
+- [00:15:27,350 - 00:15:29,240] we can call this X2
+- [00:15:30,480 - 00:15:33,020] they're not perpendicular relative to each other
+- [00:15:33,020 - 00:15:35,220] they could be perpendicular relative to each other
+- [00:15:35,220 - 00:15:36,680] but not necessarily
+- [00:15:36,680 - 00:15:39,220] and the actual physical distance,
+- [00:15:39,220 - 00:15:40,840] let's say measured in meters
+- [00:15:41,680 - 00:15:44,240] from X equals,
+- [00:15:44,240 - 00:15:46,880] here's X1 equals 0
+- [00:15:46,880 - 00:15:49,160] here's X1 equals 1
+- [00:15:49,680 - 00:15:52,660] here's X1 X2 equals 1
+- [00:15:52,680 - 00:15:54,380] X1 equals 2
+- [00:15:54,380 - 00:15:56,500] here's X1 equals 3
+- [00:15:56,500 - 00:15:57,380] and so forth
+- [00:15:57,380 - 00:16:00,940] here's X2 equals 1
+- [00:16:01,680 - 00:16:03,840] the actual physical distance,
+- [00:16:03,840 - 00:16:05,400] let's say measured in meters
+- [00:16:05,400 - 00:16:06,960] or centimeters or whatever units are
+- [00:16:07,500 - 00:16:09,780] between X equals 0 and X equals 1
+- [00:16:09,780 - 00:16:12,020] is not necessarily one unit
+- [00:16:12,939 - 00:16:15,380] they're neither perpendicular to each other
+- [00:16:15,380 - 00:16:18,560] nor do these labels represent
+- [00:16:18,560 - 00:16:21,740] actual physical distance along the axes
+- [00:16:21,740 - 00:16:23,360] they're just names of points
+- [00:16:24,200 - 00:16:25,830] here's the point X equals 0
+- [00:16:25,830 - 00:16:27,460] and so forth and so on
+- [00:16:27,460 - 00:16:28,700] okay,
+- [00:16:28,700 - 00:16:31,200] now let's introduce some vectors
+- [00:16:32,140 - 00:16:33,340] two vectors
+- [00:16:34,840 - 00:16:36,420] not necessarily two
+- [00:16:36,420 - 00:16:38,240] here I've drawn a two-dimensional space
+- [00:16:38,240 - 00:16:39,440] there could be more axes
+- [00:16:39,440 - 00:16:42,320] for each axis I will introduce a vector
+- [00:16:43,260 - 00:16:45,840] which is basically a vector extending
+- [00:16:47,240 - 00:16:49,780] one unit of coordinate space
+- [00:16:49,780 - 00:16:52,340] along the particular axis
+- [00:16:52,340 - 00:16:54,540] I'm going to give this vector a name
+- [00:16:54,540 - 00:16:57,580] it extends from this point to this point
+- [00:16:58,180 - 00:17:00,060] X equals 0 to X equals 1
+- [00:17:00,060 - 00:17:02,520] and I'm going to call it E1
+- [00:17:04,680 - 00:17:07,359] the 1 here stands for this 1
+- [00:17:08,260 - 00:17:10,160] X1 and not X2 and not X3
+- [00:17:10,160 - 00:17:12,520] in other words it's along the X1 axis
+- [00:17:13,260 - 00:17:16,319] and there's another vector along the X2 axis
+- [00:17:18,660 - 00:17:19,760] which I'll call E1
+- [00:17:19,780 - 00:17:19,940] and this is E2
+- [00:17:19,940 - 00:17:21,079] and these are vectors
+- [00:17:21,079 - 00:17:22,099] these are vectors
+- [00:17:24,419 - 00:17:26,720] and think of them as physical little arrows
+- [00:17:28,940 - 00:17:31,100] and of course if there's a third coordinate
+- [00:17:31,100 - 00:17:32,740] you point out of the blackboard
+- [00:17:32,740 - 00:17:33,820] there's an E for that
+- [00:17:33,820 - 00:17:34,900] and so forth and so on
+- [00:17:34,900 - 00:17:39,540] in fact we can label these E sub I
+- [00:17:42,860 - 00:17:43,940] E sub I,
+- [00:17:43,940 - 00:17:44,720] they're little vectors
+- [00:17:44,720 - 00:17:46,730] and as I goes from 1 to 3
+- [00:17:46,730 - 00:17:48,740] or 1 to 4 or whatever it is
+- [00:17:48,740 - 00:17:51,020] these go over the various directions
+- [00:17:51,500 - 00:17:51,960] alright
+- [00:17:52,740 - 00:17:53,400] now
+- [00:17:54,720 - 00:17:55,900] next issue,
+- [00:17:55,900 - 00:17:57,500] take an arbitrary vector
+- [00:17:57,500 - 00:18:00,060] take an arbitrary vector,
+- [00:18:00,060 - 00:18:00,860] let's call it V
+- [00:18:01,740 - 00:18:03,560] an arbitrary vector
+- [00:18:03,560 - 00:18:04,780] for example,
+- [00:18:04,780 - 00:18:05,900] one over here
+- [00:18:07,100 - 00:18:08,020] V
+- [00:18:10,100 - 00:18:11,740] can be expanded
+- [00:18:11,740 - 00:18:16,900] as a sum of coefficients times E1
+- [00:18:16,900 - 00:18:18,720] plus other coefficients times E2
+- [00:18:18,740 - 00:18:21,620] plus more coefficients times E3
+- [00:18:21,620 - 00:18:22,960] in other words,
+- [00:18:22,960 - 00:18:24,000] they can be expanded
+- [00:18:24,740 - 00:18:26,020] as a sum of terms
+- [00:18:26,740 - 00:18:28,540] the first one having E1
+- [00:18:28,540 - 00:18:30,780] and the coefficient of E1
+- [00:18:30,780 - 00:18:33,480] we'll call V1
+- [00:18:33,480 - 00:18:35,740] plus V2
+- [00:18:35,740 - 00:18:37,100] E2
+- [00:18:37,740 - 00:18:39,280] plus V3
+- [00:18:40,860 - 00:18:41,660] E3
+- [00:18:42,960 - 00:18:43,760] now,
+- [00:18:43,760 - 00:18:45,920] the things which are vectors in this formula
+- [00:18:45,920 - 00:18:46,980] are the E's
+- [00:18:48,020 - 00:18:50,380] the V's are actually numbers
+- [00:18:50,820 - 00:18:52,000] but they are components
+- [00:18:52,919 - 00:18:54,500] of the vector
+- [00:18:54,500 - 00:18:56,900] they're components of V
+- [00:18:56,900 - 00:18:59,100] and they tell you how much of
+- [00:18:59,100 - 00:19:01,300] each kind of one of these vectors
+- [00:19:01,300 - 00:19:03,260] are present in the sum
+- [00:19:03,980 - 00:19:05,810] V1 E1 plus V2 E2
+- [00:19:05,810 - 00:19:07,640] plus V3 E3 and so forth
+- [00:19:08,420 - 00:19:09,880] these coefficients
+- [00:19:10,780 - 00:19:13,280] these coefficients are called
+- [00:19:13,739 - 00:19:15,300] the contravariant
+- [00:19:17,379 - 00:19:17,860] and they're the components
+- [00:19:17,860 - 00:19:19,260] of the vector V
+- [00:19:20,680 - 00:19:21,600] it's just a name
+- [00:19:21,600 - 00:19:21,880] now,
+- [00:19:21,880 - 00:19:23,540] there's nothing in what I did
+- [00:19:24,340 - 00:19:27,400] that required me to put the one here downstairs
+- [00:19:27,400 - 00:19:29,180] and not upstairs in this one downstairs
+- [00:19:29,840 - 00:19:30,440] it's a convention
+- [00:19:30,440 - 00:19:32,140] to write it in this form here
+- [00:19:34,000 - 00:19:34,480] alright,
+- [00:19:34,480 - 00:19:35,120] so first of all
+- [00:19:35,120 - 00:19:37,160] you see what the contravariant components are
+- [00:19:37,160 - 00:19:39,380] they're the expansion coefficients
+- [00:19:40,420 - 00:19:41,940] the numbers that you have to
+- [00:19:41,940 - 00:19:43,460] put in front of these three vectors
+- [00:19:43,460 - 00:19:45,060] to expand a given vector
+- [00:19:46,980 - 00:19:47,700] next thing
+- [00:19:50,620 - 00:19:51,840] let's define
+- [00:19:53,280 - 00:19:54,520] the projection
+- [00:19:54,520 - 00:19:56,200] of a given vector
+- [00:19:56,980 - 00:19:57,600] onto
+- [00:19:58,710 - 00:20:00,760] the x-axis and the y-axis
+- [00:20:00,760 - 00:20:02,380] how do we do that?
+- [00:20:02,920 - 00:20:04,080] its definition
+- [00:20:04,810 - 00:20:07,200] is the dot product of the vector V
+- [00:20:07,980 - 00:20:09,980] with the vectors E1 or E2
+- [00:20:11,020 - 00:20:11,640] alright
+- [00:20:11,640 - 00:20:13,460] let's think about the next thing
+- [00:20:13,460 - 00:20:14,760] would be the dot product
+- [00:20:14,760 - 00:20:16,620] of the vectors
+- [00:20:16,620 - 00:20:18,000] of the vector V
+- [00:20:18,800 - 00:20:21,320] with just the ordinary dot product
+- [00:20:21,320 - 00:20:22,620] with let's say E1
+- [00:20:22,620 - 00:20:23,900] let's start with E1
+- [00:20:24,760 - 00:20:25,400] now,
+- [00:20:25,400 - 00:20:29,360] if we were just using conventional Cartesian coordinates
+- [00:20:30,220 - 00:20:31,960] perpendicular to each other
+- [00:20:31,960 - 00:20:34,700] and if these really were unit vectors
+- [00:20:34,700 - 00:20:39,760] if the distance representing each coordinate separation here
+- [00:20:39,760 - 00:20:42,740] was one unit of whatever the units we're dealing with
+- [00:20:42,740 - 00:20:44,220] then
+- [00:20:45,300 - 00:20:47,240] these coefficients here
+- [00:20:47,240 - 00:20:49,540] would be the same as these dot products
+- [00:20:50,220 - 00:20:53,380] the dot products and the coefficients would be the same
+- [00:20:53,380 - 00:20:54,440] however
+- [00:20:54,959 - 00:20:58,000] when we have a peculiar coordinate system with angles
+- [00:20:58,000 - 00:21:01,850] and with non-unit separations between
+- [00:21:01,850 - 00:21:05,700] the successive coordinate lines here
+- [00:21:06,220 - 00:21:07,600] this is not true
+- [00:21:07,919 - 00:21:09,139] so let's see if we can
+- [00:21:09,139 - 00:21:10,360] work out what V dot E1
+- [00:21:10,360 - 00:21:11,180] incidentally
+- [00:21:11,180 - 00:21:13,040] V dot E1
+- [00:21:14,220 - 00:21:15,000] is called
+- [00:21:15,000 - 00:21:16,460] V sub 1
+- [00:21:16,460 - 00:21:18,460] with a covariant index
+- [00:21:19,980 - 00:21:20,600] alright
+- [00:21:21,010 - 00:21:22,340] notice how things fit together
+- [00:21:22,340 - 00:21:23,960] we can also write this here as
+- [00:21:23,960 - 00:21:26,720] V M E M
+- [00:21:26,720 - 00:21:28,140] summation convention
+- [00:21:28,140 - 00:21:29,720] Einstein's summation convention
+- [00:21:30,480 - 00:21:33,940] this means V1 E1 plus V2 E2 plus V3 E3
+- [00:21:33,940 - 00:21:36,560] notice I've concocted things
+- [00:21:37,220 - 00:21:39,150] so that an upper index
+- [00:21:39,150 - 00:21:41,080] always goes with a lower index
+- [00:21:41,080 - 00:21:42,300] we're going to come back to that
+- [00:21:42,300 - 00:21:43,660] it's called contraction of indices
+- [00:21:43,660 - 00:21:45,000] but just notice that I've
+- [00:21:45,000 - 00:21:46,340] done it in such a way
+- [00:21:47,140 - 00:21:49,430] that the summation always involves an
+- [00:21:49,430 - 00:21:51,720] upper index with a lower index
+- [00:21:53,740 - 00:21:55,200] and by definition
+- [00:21:55,200 - 00:21:58,720] this is the contravariant components of the vector V
+- [00:21:59,920 - 00:22:01,260] the covariant components
+- [00:22:01,260 - 00:22:03,720] are the dot products of the vector
+- [00:22:04,640 - 00:22:05,600] with the
+- [00:22:05,600 - 00:22:07,200] call these the basis vectors
+- [00:22:07,200 - 00:22:08,600] we might as well call them by their name
+- [00:22:08,600 - 00:22:10,040] these are called the basis vectors
+- [00:22:10,840 - 00:22:11,340] and
+- [00:22:11,340 - 00:22:14,900] the covariant components are the dot products of these
+- [00:22:14,900 - 00:22:15,780] so let's see what we get
+- [00:22:15,780 - 00:22:16,940] let's see if we can figure it out
+- [00:22:17,460 - 00:22:18,800] let's plug in for V
+- [00:22:19,340 - 00:22:20,460] its expansion here
+- [00:22:20,460 - 00:22:22,500] and then take its dot product
+- [00:22:22,500 - 00:22:23,520] with E
+- [00:22:24,899 - 00:22:26,480] so what is this equal to?
+- [00:22:26,800 - 00:22:27,940] this is equal to
+- [00:22:27,940 - 00:22:30,780] V M E M
+- [00:22:31,560 - 00:22:32,300] from here
+- [00:22:33,200 - 00:22:34,720] and now we're going to dot it
+- [00:22:36,379 - 00:22:37,260] into E1
+- [00:22:38,280 - 00:22:39,580] but why fix E1?
+- [00:22:39,720 - 00:22:41,240] let's just go over it
+- [00:22:41,240 - 00:22:42,640] let's go for it right now
+- [00:22:43,060 - 00:22:43,420] general
+- [00:22:44,360 - 00:22:45,840] the general case
+- [00:22:45,840 - 00:22:47,880] the dot product of V
+- [00:22:47,880 - 00:22:49,780] with the nth basis vector
+- [00:22:49,780 - 00:22:53,220] and this will be E sub n
+- [00:22:59,900 - 00:23:01,680] E M dot E n
+- [00:23:01,920 - 00:23:03,360] is something new
+- [00:23:04,600 - 00:23:05,800] it's something new
+- [00:23:05,800 - 00:23:07,080] let's isolate it
+- [00:23:07,080 - 00:23:08,600] it has two lower indices
+- [00:23:12,280 - 00:23:13,860] and it's the metric tensor
+- [00:23:13,860 - 00:23:16,320] it is the metric tensor
+- [00:23:17,620 - 00:23:18,220] let's
+- [00:23:19,220 - 00:23:21,520] let's go a little bit further to see
+- [00:23:21,520 - 00:23:23,780] what its connection with the metric tensor is
+- [00:23:23,780 - 00:23:26,100] the length of a vector is the
+- [00:23:26,100 - 00:23:28,420] dot product of the vector with itself
+- [00:23:29,380 - 00:23:31,660] let's calculate the length of V
+- [00:23:32,240 - 00:23:34,560] and we'll see various ways we can write it
+- [00:23:35,760 - 00:23:37,000] it's V dot V
+- [00:23:39,540 - 00:23:40,140] now
+- [00:23:40,140 - 00:23:41,380] V dot V
+- [00:23:41,380 - 00:23:42,780] let's calculate V dot V
+- [00:23:44,500 - 00:23:45,480] from here
+- [00:23:45,480 - 00:23:47,300] we can write that the first V
+- [00:23:48,140 - 00:23:50,860] is V M E M
+- [00:23:50,860 - 00:23:52,380] alright that's the first V
+- [00:23:53,040 - 00:23:54,370] but then let's take its
+- [00:23:54,370 - 00:23:55,700] dot product of the second V
+- [00:23:56,300 - 00:23:57,420] the second V
+- [00:23:57,860 - 00:24:00,680] is V n E n
+- [00:24:00,680 - 00:24:02,970] I have to use a different index
+- [00:24:02,970 - 00:24:05,260] for this summation than for this summation
+- [00:24:05,260 - 00:24:07,100] I mustn't mix up the summation indices
+- [00:24:07,740 - 00:24:09,060] this is V M E M
+- [00:24:09,060 - 00:24:10,620] this means V 1 E 1 plus V
+- [00:24:10,620 - 00:24:12,180] 2 E 2 plus V 3 E 3
+- [00:24:12,180 - 00:24:13,550] times V 1 E 1
+- [00:24:13,550 - 00:24:14,920] plus V 2 and so forth
+- [00:24:14,920 - 00:24:17,620] but now I can write this in the form
+- [00:24:19,840 - 00:24:22,460] V M V n
+- [00:24:23,300 - 00:24:24,680] times the quantity
+- [00:24:25,520 - 00:24:28,340] E M dot E n
+- [00:24:34,000 - 00:24:36,740] let's call this quantity E M dot E n
+- [00:24:36,740 - 00:24:38,480] let's call it G M n
+- [00:24:40,280 - 00:24:41,840] and now we have a formula
+- [00:24:41,840 - 00:24:43,700] V M V n
+- [00:24:44,520 - 00:24:45,940] G M n
+- [00:24:47,820 - 00:24:50,540] this is the character of the metric tensor
+- [00:24:50,540 - 00:24:52,300] the metric tensor tells you how
+- [00:24:52,300 - 00:24:54,060] to compute the length of a vector
+- [00:24:54,060 - 00:24:55,940] the vector could be just D x
+- [00:24:56,740 - 00:24:58,840] D x m and D x n
+- [00:24:58,840 - 00:25:01,340] and then we would just be computing the
+- [00:25:01,340 - 00:25:03,840] length of a little interval between two neighboring points
+- [00:25:05,500 - 00:25:06,540] G M n
+- [00:25:11,480 - 00:25:11,770] and then we would just be computing the
+- [00:25:11,770 - 00:25:12,060] length of a little interval between two neighboring points
+- [00:25:12,060 - 00:25:13,480] okay so I just put
+- [00:25:13,480 - 00:25:14,900] this all on the blackboard here
+- [00:25:14,900 - 00:25:17,070] to give you a little picture of
+- [00:25:17,070 - 00:25:19,240] the difference between covariant and contravariant indices
+- [00:25:20,940 - 00:25:23,280] contravariant indices are the things that you use
+- [00:25:23,280 - 00:25:26,240] to construct a vector out of the basis vectors
+- [00:25:27,340 - 00:25:30,380] covariant indices are the dot
+- [00:25:30,380 - 00:25:33,420] products with the basis vectors
+- [00:25:33,910 - 00:25:35,380] they're different geometric things
+- [00:25:36,060 - 00:25:37,440] but they would be the same
+- [00:25:37,440 - 00:25:40,780] if we were talking about ordinary Cartesian coordinates
+- [00:25:42,300 - 00:25:43,540] okay so that's
+- [00:25:44,200 - 00:25:46,700] I just inserted that discussion in order
+- [00:25:46,700 - 00:25:49,200] to give you some kind of geometric idea
+- [00:25:49,200 - 00:25:52,660] of what covariant and contravariant means
+- [00:25:52,660 - 00:25:55,360] and also what the metric tensor is
+- [00:25:55,360 - 00:25:57,370] the metric tensor is constructed out of
+- [00:25:57,370 - 00:25:59,380] these basis vectors by taking their dot products
+- [00:26:01,780 - 00:26:03,220] but we'll come back to these things
+- [00:26:03,220 - 00:26:03,440] yeah,
+- [00:26:03,440 - 00:26:03,820] alright
+- [00:26:03,820 - 00:26:06,320] this was just for you,
+- [00:26:06,320 - 00:26:06,620] you know
+- [00:26:07,440 - 00:26:08,280] you asked me to do it
+- [00:26:08,280 - 00:26:13,420] I assume this is what you asked me to do
+- [00:26:13,420 - 00:26:15,400] it is totally what I asked you to do
+- [00:26:15,400 - 00:26:15,560] okay
+- [00:26:16,360 - 00:26:16,840] the
+- [00:26:19,740 - 00:26:22,380] so in orthogonal coordinates
+- [00:26:22,380 - 00:26:23,670] the two sets of components
+- [00:26:23,670 - 00:26:24,960] turn out to be the same
+- [00:26:24,960 - 00:26:28,400] orthogonal and unit are separations between them
+- [00:26:28,400 - 00:26:30,080] the two sets of coordinates are the same,
+- [00:26:30,080 - 00:26:30,240] yeah
+- [00:26:30,240 - 00:26:33,180] and that's also true in curvilinear coordinates
+- [00:26:33,180 - 00:26:35,440] where the unit vectors are always orthogonal?
+- [00:26:36,740 - 00:26:37,340] no
+- [00:26:38,340 - 00:26:39,980] in curvilinear coordinates
+- [00:26:43,060 - 00:26:44,360] typically in general
+- [00:26:44,360 - 00:26:47,880] the coordinate directions are not orthogonal to each other
+- [00:26:47,880 - 00:26:49,060] the coordinate directions,
+- [00:26:49,060 - 00:26:49,360] you know
+- [00:26:49,360 - 00:26:51,910] the direction along which one of the
+- [00:26:51,910 - 00:26:54,460] coordinates increases keeping the other ones fixed
+- [00:26:54,460 - 00:26:55,640] that's what we're talking about
+- [00:26:55,640 - 00:26:58,640] those are typically not orthogonal to each other
+- [00:26:59,440 - 00:27:02,260] but for some curvilinear coordinates they are
+- [00:27:02,260 - 00:27:02,720] oh yeah
+- [00:27:02,720 - 00:27:04,190] and so in that case the
+- [00:27:04,190 - 00:27:05,660] components would also be the same
+- [00:27:06,340 - 00:27:07,140] is that true?
+- [00:27:07,400 - 00:27:08,040] not quite
+- [00:27:08,590 - 00:27:11,255] not quite because there's also the question
+- [00:27:11,255 - 00:27:13,920] of the length between neighboring coordinate lines
+- [00:27:14,980 - 00:27:17,060] Cartesian coordinates not only mean that they're orthogonal
+- [00:27:17,060 - 00:27:19,780] but also means that the separations are the same
+- [00:27:19,780 - 00:27:20,560] here,
+- [00:27:20,560 - 00:27:20,860] here,
+- [00:27:20,860 - 00:27:21,100] here
+- [00:27:21,100 - 00:27:22,600] this is the same as this and this
+- [00:27:22,600 - 00:27:23,500] so let me give you an example
+- [00:27:24,440 - 00:27:27,560] where the coordinate axes are orthogonal to each other
+- [00:27:28,780 - 00:27:30,800] but where the separations are not the same
+- [00:27:30,800 - 00:27:32,200] polar coordinates
+- [00:27:32,200 - 00:27:33,760] ordinary polar coordinates
+- [00:27:42,160 - 00:27:46,480] the lines along which the radial coordinate increases
+- [00:27:46,480 - 00:27:48,820] are just the radial lines
+- [00:27:48,820 - 00:27:52,000] and the lines associated with the angular coordinates
+- [00:27:52,000 - 00:27:52,860] are just circles
+- [00:27:52,860 - 00:27:55,300] and clearly at every point
+- [00:27:55,300 - 00:27:57,870] a circle is perpendicular to the
+- [00:27:57,870 - 00:28:00,440] line passing through the same point
+- [00:28:00,440 - 00:28:01,980] so these coordinates are
+- [00:28:02,200 - 00:28:04,800] I didn't draw them very well
+- [00:28:04,800 - 00:28:08,240] but these coordinates are orthogonal to each other
+- [00:28:09,260 - 00:28:09,920] okay
+- [00:28:09,920 - 00:28:13,720] but the separation distance between
+- [00:28:13,720 - 00:28:16,760] let's call this theta equals 0 over here
+- [00:28:16,760 - 00:28:18,640] and let's call this theta equals
+- [00:28:19,200 - 00:28:20,700] theta 1 over here
+- [00:28:20,700 - 00:28:24,140] the separation between these two points is not the same
+- [00:28:24,140 - 00:28:25,960] as the separation between these two points
+- [00:28:25,960 - 00:28:27,210] is not the same as
+- [00:28:27,210 - 00:28:28,460] the separation between these two points
+- [00:28:29,200 - 00:28:31,100] so these are not Cartesian coordinates
+- [00:28:31,100 - 00:28:35,290] coordinates and according to the rough
+- [00:28:35,290 - 00:28:39,480] definition I gave of these E's,
+- [00:28:39,480 - 00:28:41,400] the E's
+- [00:28:41,400 - 00:28:44,360] along the theta direction would be
+- [00:28:44,360 - 00:28:47,320] increasing their length as you went up
+- [00:28:47,320 - 00:28:47,520] here.
+- [00:28:47,520 - 00:28:51,880] So it's more than just perpendicularity.
+- [00:28:51,880 - 00:28:53,980] Perpendicularity and
+- [00:28:53,980 - 00:28:56,380] equality of the distance unit along,
+- [00:28:56,380 - 00:28:59,820] as you go,
+- [00:28:59,820 - 00:29:02,140] a fixed separation in X.
+- [00:29:02,140 - 00:29:02,780] There's
+- [00:29:02,780 - 00:29:05,080] more than that in defining Cartesian coordinates.
+- [00:29:05,080 - 00:29:07,400] Okay,
+- [00:29:07,400 - 00:29:08,980] so now let's come to
+- [00:29:08,980 - 00:29:10,020] tensor analysis.
+- [00:29:10,020 - 00:29:11,040] Yes?
+- [00:29:11,040 - 00:29:14,020] You used two different phrases.
+- [00:29:14,020 - 00:29:17,540] One is you talked about covariant and contrarian vectors,
+- [00:29:17,540 - 00:29:18,600] or tensors.
+- [00:29:18,740 - 00:29:22,660] You talked about covariant and contrarian components.
+- [00:29:23,040 - 00:29:23,680] Oh.
+- [00:29:23,800 - 00:29:23,960] Yeah.
+- [00:29:23,960 - 00:29:24,180] Yeah.
+- [00:29:24,180 - 00:29:28,660] Before the metric tensor is introduced,
+- [00:29:28,660 - 00:29:30,820] when we just have abstract
+- [00:29:30,820 - 00:29:32,240] coordinates and vectors,
+- [00:29:32,240 - 00:29:37,860] there are covariant vectors and contrarian vectors.
+- [00:29:38,280 - 00:29:39,660] And they're different things.
+- [00:29:39,660 - 00:29:42,300] dx would be a contrarian
+- [00:29:42,300 - 00:29:44,940] vector and d phi by dx,
+- [00:29:45,220 - 00:29:46,580] where phi would be some scalar,
+- [00:29:46,580 - 00:29:48,080] that would be a covariant vector.
+- [00:29:48,080 - 00:29:48,360] Different
+- [00:29:48,360 - 00:29:49,160] kinds of things.
+- [00:29:49,160 - 00:29:51,060] As we'll see,
+- [00:29:51,060 - 00:29:53,800] once the metric tensor is introduced,
+- [00:29:53,800 - 00:29:56,340] and I've introduced it here
+- [00:29:56,340 - 00:29:58,880] by introducing these unit vectors here,
+- [00:29:58,880 - 00:29:59,620] or these vectors here.
+- [00:29:59,980 - 00:30:04,640] Once the metric tensor is introduced,
+- [00:30:04,640 - 00:30:06,820] it's possible to make a correspondence
+- [00:30:06,820 - 00:30:09,000] between the covariant vectors and the contrarian.
+- [00:30:09,020 - 00:30:12,180] Such a way as to say every vector can
+- [00:30:12,180 - 00:30:15,340] be either represented as covariant or by all contrarian.
+- [00:30:15,480 - 00:30:16,220] But we'll come to that.
+- [00:30:16,220 - 00:30:16,900] We'll come to it.
+- [00:30:16,900 - 00:30:18,900] At the moment,
+- [00:30:18,900 - 00:30:23,220] I should be only talking about covariant and contrarian.
+- [00:30:23,220 - 00:30:51,340] Now,ретurning to foenman's fishery case.υχ
+- [00:30:53,860 - 00:30:54,340] Okay,
+- [00:30:54,340 - 00:30:54,820] now,
+- [00:30:54,820 - 00:31:00,340] tensors are objects which are characterized,
+- [00:31:00,340 - 00:31:02,210] the thing which characterizes a
+- [00:31:02,210 - 00:31:04,080] tensor and makes it a tensor,
+- [00:31:04,260 - 00:31:06,360] is the way that
+- [00:31:06,360 - 00:31:08,460] it transforms under coordinate transformations.
+- [00:31:08,760 - 00:31:10,140] We talked about this a little bit,
+- [00:31:10,140 - 00:31:10,960] and let's go back,
+- [00:31:10,960 - 00:31:11,820] I want to do it again.
+- [00:31:13,679 - 00:31:15,440] V is some vector,
+- [00:31:15,440 - 00:31:19,000] it has contravariant components,
+- [00:31:19,000 - 00:31:22,010] and it has contravariant components in the
+- [00:31:22,010 - 00:31:25,020] y coordinates and in the x coordinates.
+- [00:31:27,140 - 00:31:29,560] If I change coordinates on here,
+- [00:31:29,560 - 00:31:32,320] keeping the vector fixed,
+- [00:31:32,320 - 00:31:33,980] not going to change the vector,
+- [00:31:33,980 - 00:31:35,600] but change the coordinates,
+- [00:31:35,600 - 00:31:37,160] I will change its components,
+- [00:31:37,160 - 00:31:37,860] clearly.
+- [00:31:39,179 - 00:31:39,860] So,
+- [00:31:39,860 - 00:31:41,800] how do the covariants work?
+- [00:31:41,820 - 00:31:45,080] Contravariant components change when I change coordinates.
+- [00:31:45,440 - 00:31:46,560] Here's the rule.
+- [00:31:47,500 - 00:31:52,340] This is the mth component of v prime,
+- [00:31:52,340 - 00:31:55,160] where v prime means the components
+- [00:31:55,160 - 00:31:57,980] of v in the y coordinates.
+- [00:31:58,280 - 00:31:59,760] Prime means y.
+- [00:32:03,740 - 00:32:05,400] Unprimed means x.
+- [00:32:09,360 - 00:32:10,180] Alright.
+- [00:32:10,300 - 00:32:11,800] V in the prime is x.
+- [00:32:11,820 - 00:32:11,820] So,
+- [00:32:11,820 - 00:32:12,580] the unprimed coordinates,
+- [00:32:12,580 - 00:32:18,840] I'm basically reviewing what we said last time,
+- [00:32:18,840 - 00:32:22,280] is given in terms of the
+- [00:32:22,280 - 00:32:25,720] unprimed coordinates by dym by dxn,
+- [00:32:25,720 - 00:32:28,840] vn.
+- [00:32:29,660 - 00:32:32,280] This is the object in the unprimed coordinates,
+- [00:32:32,280 - 00:32:33,060] in other words,
+- [00:32:33,060 - 00:32:33,860] the x coordinates,
+- [00:32:33,860 - 00:32:37,410] and it's gotten by multiplying
+- [00:32:37,410 - 00:32:40,960] by dy by dx times v.
+- [00:32:40,960 - 00:32:45,620] An example is d prime,
+- [00:32:45,620 - 00:32:48,180] just dy,
+- [00:32:48,180 - 00:32:50,640] dym.
+- [00:32:51,560 - 00:32:57,830] That would be the primed version of a little
+- [00:32:57,830 - 00:33:04,100] interval is obviously equal to dym by dxn times dxn.
+- [00:33:04,940 - 00:33:05,460] So,
+- [00:33:05,460 - 00:33:09,840] this is sort of the archetype of a contravariant.
+- [00:33:10,960 - 00:33:11,480] So,
+- [00:33:11,480 - 00:33:12,080] this is the unprimed vector component,
+- [00:33:12,080 - 00:33:14,800] and you can see that it
+- [00:33:14,800 - 00:33:17,520] in fact transforms in exactly this way.
+- [00:33:19,800 - 00:33:21,600] The covariant components,
+- [00:33:21,600 - 00:33:24,800] a covariant component of a vector would be,
+- [00:33:24,800 - 00:33:25,280] for example,
+- [00:33:25,280 - 00:33:26,200] if you have a scalar,
+- [00:33:26,200 - 00:33:27,060] s,
+- [00:33:27,060 - 00:33:32,140] and you differentiate it with respect to y or x,
+- [00:33:32,140 - 00:33:33,440] let's say y,
+- [00:33:33,440 - 00:33:34,820] m.
+- [00:33:36,500 - 00:33:40,940] This becomes the primed component of a vector.
+- [00:33:40,940 - 00:33:41,340] So,
+- [00:33:41,340 - 00:33:42,440] I would have the primed
+- [00:33:42,440 - 00:33:43,540] covariant component of a covariant vector,
+- [00:33:43,540 - 00:33:48,120] or the primed covariant component of the gradient vector.
+- [00:33:48,340 - 00:33:49,740] This is the gradient of s,
+- [00:33:49,740 - 00:33:53,060] and I've differentiated with respect to y,
+- [00:33:53,060 - 00:33:53,880] not x.
+- [00:33:54,120 - 00:33:54,660] So,
+- [00:33:54,660 - 00:33:55,940] this is a primed component,
+- [00:33:55,940 - 00:33:58,980] and this is equal to ds,
+- [00:33:58,980 - 00:34:00,540] well,
+- [00:34:00,540 - 00:34:01,380] let's write it this way,
+- [00:34:01,380 - 00:34:03,920] ds by dxn,
+- [00:34:03,920 - 00:34:04,940] dxn.
+- [00:34:10,940 - 00:34:12,639] And this is equal to dxn by dy,
+- [00:34:12,639 - 00:34:13,980] m.
+- [00:34:16,300 - 00:34:17,500] Notice the difference.
+- [00:34:19,199 - 00:34:22,420] Notice how the notation carries you along.
+- [00:34:22,960 - 00:34:24,520] On the left-hand side,
+- [00:34:24,520 - 00:34:28,260] I have a y with a superindex,
+- [00:34:28,260 - 00:34:29,739] upstairs index m.
+- [00:34:30,699 - 00:34:31,880] On the right-hand side,
+- [00:34:31,880 - 00:34:35,280] I also have a y with a superindex m.
+- [00:34:37,000 - 00:34:38,360] But on the right-hand side,
+- [00:34:38,360 - 00:34:39,639] I'm going to have a dxn.
+- [00:34:39,639 - 00:34:40,000] Of course,
+- [00:34:40,000 - 00:34:40,920] I'm going to have a dxn.
+- [00:34:40,940 - 00:34:43,510] A dxn upstairs has to
+- [00:34:43,510 - 00:34:46,080] be balanced by a dxn downstairs.
+- [00:34:49,719 - 00:34:51,420] And you'll get familiar with this.
+- [00:34:51,880 - 00:34:54,060] You're allowed to contract indices,
+- [00:34:54,060 - 00:34:55,900] one upstairs and one downstairs.
+- [00:34:56,900 - 00:34:58,320] And you can see the pattern.
+- [00:34:58,520 - 00:35:00,720] You can see the symmetry of this relationship here.
+- [00:35:01,340 - 00:35:02,260] Likewise here.
+- [00:35:02,360 - 00:35:05,480] Here we have a lower index corresponding to y,
+- [00:35:05,480 - 00:35:07,220] the index m.
+- [00:35:07,760 - 00:35:09,100] On the right-hand side,
+- [00:35:09,100 - 00:35:10,920] I have something below the fraction bar.
+- [00:35:10,940 - 00:35:11,260] Also,
+- [00:35:11,260 - 00:35:12,080] dym.
+- [00:35:12,500 - 00:35:14,320] And then above the fraction bar,
+- [00:35:14,320 - 00:35:15,400] I have dxn.
+- [00:35:15,680 - 00:35:19,480] But that's compensated for by another dxn downstairs here.
+- [00:35:19,620 - 00:35:20,040] And again,
+- [00:35:20,040 - 00:35:20,520] the ds.
+- [00:35:21,060 - 00:35:24,740] So the notation pretty much carries you along.
+- [00:35:26,040 - 00:35:28,360] This is the standard form for
+- [00:35:28,360 - 00:35:30,680] the transformation property of contravariant components.
+- [00:35:30,860 - 00:35:33,580] This is the standard form
+- [00:35:33,580 - 00:35:36,300] for transformation properties of covariant.
+- [00:35:36,840 - 00:35:39,720] And here's an example of contravariant.
+- [00:35:41,080 - 00:35:42,660] From these two examples,
+- [00:35:42,660 - 00:35:45,260] it looks like if we were
+- [00:35:45,260 - 00:35:47,860] to just consider dimensionally what the y,
+- [00:35:47,860 - 00:35:50,640] the covariant or the contravariant represent,
+- [00:35:50,940 - 00:35:53,750] it would seem like the contravariant vector
+- [00:35:53,750 - 00:35:56,560] is one where the units are of distance,
+- [00:35:56,560 - 00:35:59,440] while the covariant are one over distance.
+- [00:35:59,760 - 00:36:00,740] Is this true in general?
+- [00:36:02,640 - 00:36:04,060] Not in general,
+- [00:36:04,060 - 00:36:06,100] but I take your point.
+- [00:36:06,180 - 00:36:06,600] And I think,
+- [00:36:06,600 - 00:36:08,000] no,
+- [00:36:08,000 - 00:36:09,320] it's not true in general.
+- [00:36:11,319 - 00:36:12,060] V could,
+- [00:36:12,060 - 00:36:12,640] for example,
+- [00:36:12,640 - 00:36:13,460] be a velocity,
+- [00:36:13,460 - 00:36:14,600] in which case it would
+- [00:36:14,600 - 00:36:15,740] be a length per unit time.
+- [00:36:16,780 - 00:36:18,160] Or it could be a force,
+- [00:36:18,160 - 00:36:20,080] components of a force,
+- [00:36:20,080 - 00:36:22,900] in which case it wouldn't be those kind of...
+- [00:36:29,080 - 00:36:30,620] But units have to match.
+- [00:36:31,400 - 00:36:32,520] So in here we have,
+- [00:36:32,520 - 00:36:33,060] for example,
+- [00:36:33,060 - 00:36:34,960] this could be a force on the right,
+- [00:36:34,960 - 00:36:36,080] a force on the left,
+- [00:36:36,839 - 00:36:38,840] and a y and a dy by dx,
+- [00:36:38,840 - 00:36:40,120] which is dimensionless.
+- [00:36:40,520 - 00:36:40,920] So this is the equation.
+- [00:36:40,920 - 00:36:41,820] Perhaps they're both measured,
+- [00:36:41,820 - 00:36:42,240] let's say,
+- [00:36:42,240 - 00:36:44,240] in meters.
+- [00:36:45,820 - 00:36:47,880] Should those all be partial differentials?
+- [00:36:48,020 - 00:36:48,920] Should they all be what?
+- [00:36:49,240 - 00:36:50,260] Partial differentials.
+- [00:36:50,280 - 00:36:51,500] They're all partial differentials.
+- [00:36:52,620 - 00:36:53,660] Why are they partial?
+- [00:36:54,500 - 00:36:57,600] They're partial because there are several coordinates here.
+- [00:36:57,680 - 00:36:58,140] There's x1,
+- [00:36:58,140 - 00:36:58,500] x2,
+- [00:36:58,500 - 00:36:58,840] x3,
+- [00:36:58,840 - 00:36:59,320] and x4,
+- [00:36:59,320 - 00:37:02,280] and this is the derivative of one of the y's
+- [00:37:02,280 - 00:37:05,240] with respect to the x's keeping all the other x's fixed.
+- [00:37:05,920 - 00:37:06,400] Correct?
+- [00:37:09,500 - 00:37:10,180] All right.
+- [00:37:10,920 - 00:37:14,190] So these are the transformation
+- [00:37:14,190 - 00:37:17,460] properties of a covariant object,
+- [00:37:17,860 - 00:37:20,960] and the corresponding thing for contravariant
+- [00:37:20,960 - 00:37:24,060] would be the analog of this,
+- [00:37:24,060 - 00:37:28,200] w prime m.
+- [00:37:29,860 - 00:37:30,600] Oh,
+- [00:37:30,600 - 00:37:31,040] sorry,
+- [00:37:31,040 - 00:37:31,380] yeah,
+- [00:37:31,380 - 00:37:32,560] w prime m.
+- [00:37:38,000 - 00:37:40,000] I'm just using w and v to,
+- [00:37:40,000 - 00:37:43,140] just to give different letters for things.
+- [00:37:43,680 - 00:37:52,540] This is equal to dxn by dym vn,
+- [00:37:52,540 - 00:37:53,800] sub-w,
+- [00:37:53,800 - 00:37:54,340] wn.
+- [00:37:57,520 - 00:37:59,100] Same pattern as over here.
+- [00:38:00,180 - 00:38:00,700] Again.
+- [00:38:00,700 - 00:38:02,780] The x by the y,
+- [00:38:02,780 - 00:38:03,540] and so forth.
+- [00:38:04,260 - 00:38:04,840] All right.
+- [00:38:05,500 - 00:38:05,900] Yeah.
+- [00:38:07,480 - 00:38:08,460] When you look at this,
+- [00:38:08,460 - 00:38:09,200] you look at this and you say,
+- [00:38:09,200 - 00:38:09,360] ooh,
+- [00:38:09,360 - 00:38:12,420] there's a lower index here of type y.
+- [00:38:14,220 - 00:38:14,620] Why?
+- [00:38:14,780 - 00:38:15,060] Why?
+- [00:38:15,600 - 00:38:17,040] Because prime means y.
+- [00:38:19,080 - 00:38:19,660] All right.
+- [00:38:19,740 - 00:38:21,960] So prime is associated with y.
+- [00:38:22,280 - 00:38:23,980] There's a lower index here,
+- [00:38:23,980 - 00:38:24,380] m,
+- [00:38:24,380 - 00:38:26,260] which is of the y type,
+- [00:38:26,260 - 00:38:28,470] and so there's got to be a lower
+- [00:38:28,470 - 00:38:30,680] index below the fraction bar of the y.
+- [00:38:30,680 - 00:38:31,200] So you have a lower index,
+- [00:38:31,200 - 00:38:31,200] a lower index of the professor частrakye's 1918
+- [00:38:31,200 - 00:38:31,530] and then you have a major vector here
+- [00:38:31,530 - 00:38:31,860] which has two выс on the right of
+- [00:38:31,860 - 00:38:47,900] And quite simple,
+- [00:38:47,900 - 00:38:54,460] right?
+- [00:39:00,680 - 00:39:03,140] So let's take an object
+- [00:39:12,700 - 00:39:13,220] W
+- [00:39:17,840 - 00:39:19,240] not this W now,
+- [00:39:19,240 - 00:39:20,280] let's see,
+- [00:39:20,280 - 00:39:21,660] yeah let's take
+- [00:39:22,180 - 00:39:23,140] a tensor W,
+- [00:39:23,140 - 00:39:24,200] maybe I should call it T,
+- [00:39:24,200 - 00:39:24,860] let's call it W
+- [00:39:25,479 - 00:39:26,600] W prime
+- [00:39:26,600 - 00:39:29,800] in other words in the y-coordinates
+- [00:39:29,800 - 00:39:33,180] it has two indices m and n
+- [00:39:33,180 - 00:39:35,280] and I'm going to take one of
+- [00:39:35,280 - 00:39:37,380] those indices to be an upstairs index and
+- [00:39:37,380 - 00:39:38,940] another to be a downstairs index
+- [00:39:39,720 - 00:39:41,800] contravariant and covariant
+- [00:39:43,640 - 00:39:45,580] a tensor like this
+- [00:39:45,580 - 00:39:48,740] could just be the product of
+- [00:39:49,360 - 00:39:50,680] two vectors,
+- [00:39:50,680 - 00:39:53,280] one with a contravariant index,
+- [00:39:53,280 - 00:39:54,860] one with a covariant index
+- [00:39:54,860 - 00:39:56,580] I won't bother writing everything
+- [00:39:56,600 - 00:40:01,200] out but what makes this thing a tensor
+- [00:40:01,680 - 00:40:03,380] is its transformation properties so let
+- [00:40:03,380 - 00:40:05,080] me show you what the transformation
+- [00:40:05,080 - 00:40:06,100] properties are
+- [00:40:06,100 - 00:40:09,900] in the prime components again for each
+- [00:40:09,900 - 00:40:12,260] index for each index
+- [00:40:13,160 - 00:40:14,850] there's the same kind of
+- [00:40:14,850 - 00:40:16,540] pattern this is a prime component
+- [00:40:17,759 - 00:40:19,849] this is the index m
+- [00:40:19,849 - 00:40:21,940] so there must be a dy
+- [00:40:21,940 - 00:40:24,360] m upstairs
+- [00:40:25,520 - 00:40:29,120] alright there's going to be a d x p downstairs
+- [00:40:31,500 - 00:40:33,930] now what about this index here this
+- [00:40:33,930 - 00:40:36,360] is a y index because it's primed
+- [00:40:36,360 - 00:40:42,240] downstairs so there must be a dy downstairs
+- [00:40:43,160 - 00:40:45,540] and therefore there's got to be a
+- [00:40:45,540 - 00:40:47,920] d x and let's call it q upstairs
+- [00:40:49,860 - 00:40:52,100] now when we multiply that we multiply that
+- [00:40:52,100 - 00:40:54,340] by double the y and the y prime
+- [00:40:54,340 - 00:40:54,620] and so on and so forth
+- [00:40:55,480 - 00:40:57,740] the tensor in the unprimed frame
+- [00:40:58,720 - 00:41:00,540] there's a p downstairs there's got
+- [00:41:00,540 - 00:41:02,360] to be a p upstairs here
+- [00:41:02,360 - 00:41:03,880] there's a q upstairs there's
+- [00:41:03,880 - 00:41:05,400] got to be a q downstairs
+- [00:41:06,160 - 00:41:09,400] so this tells me how a tensor of rank 2
+- [00:41:09,400 - 00:41:13,920] with one contravariant and one covariant index transforms
+- [00:41:14,540 - 00:41:18,720] for each index there's a dy by dx or dx
+- [00:41:18,720 - 00:41:22,900] by dy and you simply track where the indexes go
+- [00:41:22,900 - 00:41:23,550] so we're going to use your vector
+- [00:41:23,550 - 00:41:24,200] here to find out where the indices go
+- [00:41:24,340 - 00:41:25,180] M upstairs,
+- [00:41:25,180 - 00:41:26,140] M upstairs,
+- [00:41:26,140 - 00:41:27,160] N downstairs,
+- [00:41:27,160 - 00:41:28,140] N downstairs
+- [00:41:29,200 - 00:41:30,740] We're going to have a W here,
+- [00:41:30,740 - 00:41:32,320] unprimed W
+- [00:41:32,900 - 00:41:34,280] It's going to have some components,
+- [00:41:34,280 - 00:41:35,760] let's call them P and Q
+- [00:41:36,300 - 00:41:39,040] and the P's and Q's have to balance
+- [00:41:40,240 - 00:41:40,720] Alright,
+- [00:41:40,720 - 00:41:41,620] this is very general
+- [00:41:42,140 - 00:41:44,260] If I take a tensor with any number of indices,
+- [00:41:44,260 - 00:41:45,160] oh incidentally,
+- [00:41:45,160 - 00:41:46,160] let me do one other example
+- [00:41:47,120 - 00:41:51,920] Supposing we have a tensor with two contravariant indices
+- [00:41:51,920 - 00:41:52,960] Oh,
+- [00:41:52,960 - 00:41:54,660] let's make it two covariant indices,
+- [00:41:54,660 - 00:41:56,160] MN
+- [00:41:56,840 - 00:41:58,780] Just as another example,
+- [00:41:58,780 - 00:42:02,140] a tensor with two covariant indices
+- [00:42:02,820 - 00:42:04,080] How does it transform?
+- [00:42:07,640 - 00:42:08,320] Again,
+- [00:42:08,320 - 00:42:12,740] there are downstairs Y's,
+- [00:42:12,740 - 00:42:13,820] YM,
+- [00:42:13,820 - 00:42:17,720] another downstairs YN
+- [00:42:18,800 - 00:42:19,480] Again,
+- [00:42:19,480 - 00:42:20,900] M and N go with Y
+- [00:42:21,920 - 00:42:22,740] What do I put upstairs?
+- [00:42:22,740 - 00:42:23,280] Well,
+- [00:42:23,280 - 00:42:24,680] the only thing I put upstairs is X
+- [00:42:26,020 - 00:42:26,960] Call this one P,
+- [00:42:26,960 - 00:42:27,960] call this one Q,
+- [00:42:27,960 - 00:42:30,820] and now this is WPQ
+- [00:42:33,380 - 00:42:33,820] Alright,
+- [00:42:33,820 - 00:42:35,530] so this is the transformation property
+- [00:42:35,530 - 00:42:37,240] of a thing with two indices
+- [00:42:39,080 - 00:42:40,200] purely covariant now
+- [00:42:40,720 - 00:42:42,560] And the general pattern is the same
+- [00:42:42,560 - 00:42:43,780] For every index,
+- [00:42:43,780 - 00:42:44,840] you do the same thing,
+- [00:42:44,840 - 00:42:48,500] either a dy by dx or a dx by dy
+- [00:42:50,160 - 00:42:52,720] And you sum over repeated index,
+- [00:42:52,720 - 00:42:53,400] indices
+- [00:42:54,940 - 00:42:56,760] M and M are not repeated indices
+- [00:42:57,780 - 00:42:58,820] They're on this side,
+- [00:42:58,820 - 00:43:00,460] and they also appear on this side
+- [00:43:00,460 - 00:43:02,780] But P and P are repeated,
+- [00:43:02,780 - 00:43:04,480] and Q and Q are repeated
+- [00:43:04,480 - 00:43:06,460] So this is a double sum
+- [00:43:07,080 - 00:43:09,500] This is a double sum over P and Q,
+- [00:43:09,500 - 00:43:11,160] because P and Q are repeated
+- [00:43:12,580 - 00:43:13,060] Alright,
+- [00:43:13,060 - 00:43:17,340] this is the basic notational device
+- [00:43:21,640 - 00:43:22,980] Who invented it?
+- [00:43:23,020 - 00:43:25,680] Einstein was the one who dropped the summation symbol to,
+- [00:43:25,680 - 00:43:27,600] because he realized he didn't need it
+- [00:43:29,500 - 00:43:30,700] I don't know,
+- [00:43:30,700 - 00:43:31,200] Riemann,
+- [00:43:31,200 - 00:43:34,700] Gauss was in there
+- [00:43:34,700 - 00:43:36,780] I don't know who invented all of this notation
+- [00:43:37,720 - 00:43:39,820] But it's very systematic
+- [00:43:41,180 - 00:43:41,720] Alright,
+- [00:43:41,720 - 00:43:44,050] so a tensor is an object
+- [00:43:44,050 - 00:43:46,380] which is characterized by its transformation properties
+- [00:43:47,320 - 00:43:48,000] Now,
+- [00:43:48,000 - 00:43:50,540] notice something about tensors
+- [00:43:52,120 - 00:43:54,680] If they are zero in one frame
+- [00:43:56,260 - 00:43:57,720] Let's start with a scalar
+- [00:43:58,060 - 00:44:00,340] If a scalar is zero in one frame,
+- [00:44:00,340 - 00:44:02,440] it's zero in every frame
+- [00:44:02,440 - 00:44:04,780] They're equal
+- [00:44:05,480 - 00:44:06,160] Now,
+- [00:44:06,160 - 00:44:10,580] supposing a vector is zero in some frame
+- [00:44:10,580 - 00:44:12,760] Let's say the x frame
+- [00:44:13,860 - 00:44:15,680] For a vector to be zero
+- [00:44:15,680 - 00:44:18,680] It doesn't mean some component is equal to zero
+- [00:44:18,680 - 00:44:21,140] It means all of its components are equal to zero
+- [00:44:21,140 - 00:44:23,090] A vector is only zero if
+- [00:44:23,090 - 00:44:25,040] all of its components are zero
+- [00:44:25,680 - 00:44:28,580] If all of the components of
+- [00:44:28,580 - 00:44:31,480] the contravariant vector vn are zero
+- [00:44:31,480 - 00:44:35,180] Then obviously the transformation property is such that
+- [00:44:35,180 - 00:44:38,880] all the components of the prime vector are zero
+- [00:44:40,180 - 00:44:42,080] Likewise with any tensor
+- [00:44:42,900 - 00:44:43,780] Where's the...
+- [00:44:44,500 - 00:44:45,660] With any tensor,
+- [00:44:45,660 - 00:44:49,780] if all of its components are zero in one frame
+- [00:44:49,780 - 00:44:51,700] In one coordinate system
+- [00:44:51,700 - 00:44:53,700] Then all of its coordinates,
+- [00:44:53,700 - 00:44:56,420] its components are zero in every frame
+- [00:44:56,420 - 00:44:58,760] That means that once you've written
+- [00:44:58,760 - 00:45:01,100] down an equation in tensor form
+- [00:45:02,380 - 00:45:03,520] You can always,
+- [00:45:03,520 - 00:45:04,080] of course,
+- [00:45:04,080 - 00:45:05,860] transfer everything to the left side of
+- [00:45:05,860 - 00:45:07,640] the equation and set it equal to zero
+- [00:45:10,460 - 00:45:12,200] If an equation of that
+- [00:45:12,200 - 00:45:13,940] type is true in some frame,
+- [00:45:13,940 - 00:45:15,260] it's true in every frame
+- [00:45:15,260 - 00:45:17,440] And that's the basic value of tensors
+- [00:45:17,440 - 00:45:22,480] They allow you to express equations of various kinds
+- [00:45:22,480 - 00:45:23,600] Equations of motion,
+- [00:45:23,600 - 00:45:25,620] equations of whatever it happens to be
+- [00:45:25,620 - 00:45:29,310] In a form where the same exact
+- [00:45:29,310 - 00:45:33,000] equation will be true in any coordinate system
+- [00:45:35,980 - 00:45:37,260] And that's,
+- [00:45:37,260 - 00:45:37,540] of course,
+- [00:45:37,540 - 00:45:37,620] the same thing
+- [00:45:37,620 - 00:45:40,420] And that's a deep advantage to thinking about tensors
+- [00:45:40,420 - 00:45:43,020] There are other objects which are not...
+- [00:45:43,620 - 00:45:44,830] We're going to come across some
+- [00:45:44,830 - 00:45:46,040] of them which are not tensors
+- [00:45:46,800 - 00:45:49,040] Which have the property that they may be zero
+- [00:45:49,040 - 00:45:51,280] in some frames and not zero in other frames
+- [00:45:51,280 - 00:45:52,320] All right,
+- [00:45:52,320 - 00:45:54,220] frame means coordinate system now
+- [00:45:55,260 - 00:45:58,080] So tensors have a certain invariance to them
+- [00:45:58,439 - 00:46:00,120] Their components are not invariant
+- [00:46:00,120 - 00:46:02,220] Their components change from one frame to another
+- [00:46:02,220 - 00:46:03,600] But the statement that one...
+- [00:46:03,600 - 00:46:05,960] that a tensor is equal to another tensor...
+- [00:46:09,900 - 00:46:11,940] Wpq is equal to,
+- [00:46:11,940 - 00:46:12,260] let's say,
+- [00:46:12,260 - 00:46:13,340] tpq
+- [00:46:15,020 - 00:46:15,540] Oh,
+- [00:46:15,540 - 00:46:16,060] incidentally,
+- [00:46:16,060 - 00:46:18,680] when you write a tensor equation
+- [00:46:19,980 - 00:46:21,800] The components have to balance
+- [00:46:21,800 - 00:46:26,360] It doesn't make sense to write
+- [00:46:26,360 - 00:46:30,920] an equation like Wpq equals tpq
+- [00:46:31,760 - 00:46:32,280] Oh,
+- [00:46:32,280 - 00:46:33,000] you can write it
+- [00:46:33,000 - 00:46:34,260] You can write it all you want
+- [00:46:35,300 - 00:46:35,820] But...
+- [00:46:35,820 - 00:46:38,290] Since this left side transforms
+- [00:46:38,290 - 00:46:40,760] differently than the right side
+- [00:46:40,760 - 00:46:44,760] Then even if this were true in one coordinate system
+- [00:46:44,760 - 00:46:47,820] It would not be true in another coordinate system
+- [00:46:47,820 - 00:46:51,280] The transformation properties of the two sides are different
+- [00:46:52,020 - 00:46:52,860] All right,
+- [00:46:52,860 - 00:46:55,260] so normally we wouldn't write equations like this
+- [00:46:56,120 - 00:47:00,020] We might say in some particular coordinate system
+- [00:47:00,020 - 00:47:03,100] Coordinate system of the blah blah blah kind
+- [00:47:04,300 - 00:47:05,720] This might be true
+- [00:47:05,820 - 00:47:07,840] But then if you change coordinates,
+- [00:47:07,840 - 00:47:08,640] it won't be true
+- [00:47:09,340 - 00:47:12,080] The kinds of equations which are true in every frame
+- [00:47:12,080 - 00:47:14,720] Are ones in which the indices balance
+- [00:47:15,880 - 00:47:17,800] They transform the same way
+- [00:47:18,540 - 00:47:19,840] So it's true in one co...
+- [00:47:19,840 - 00:47:19,940] yeah
+- [00:47:19,940 - 00:47:21,760] What is it that's invariant?
+- [00:47:22,340 - 00:47:23,520] The truth of the equation
+- [00:47:25,460 - 00:47:27,820] If this is true in one equation,
+- [00:47:27,820 - 00:47:29,700] in one coordinate system
+- [00:47:30,200 - 00:47:32,820] Then it will be true in every coordinate system
+- [00:47:32,820 - 00:47:33,740] Except for a vector,
+- [00:47:33,740 - 00:47:34,900] at least the contrarian
+- [00:47:34,900 - 00:47:36,900] Its magnitude will be the same
+- [00:47:36,900 - 00:47:37,720] Oh,
+- [00:47:37,720 - 00:47:39,060] its magnitude will be the same,
+- [00:47:39,060 - 00:47:39,980] but if it's...
+- [00:47:39,980 - 00:47:40,620] But it's...
+- [00:47:44,600 - 00:47:48,200] The individual components in different coordinate systems
+- [00:47:48,900 - 00:47:49,280] Look,
+- [00:47:49,280 - 00:47:51,920] we can always write this as w minus t
+- [00:47:51,920 - 00:47:53,880] w minus t equals zero,
+- [00:47:53,880 - 00:47:54,200] right?
+- [00:47:57,020 - 00:47:59,400] If every component of this
+- [00:47:59,400 - 00:48:01,780] w minus t object is zero
+- [00:48:02,380 - 00:48:04,480] Then it's true in every reference frame
+- [00:48:04,480 - 00:48:06,090] So is there anything that analogies
+- [00:48:06,090 - 00:48:07,700] to the magnitude of the vector?
+- [00:48:08,020 - 00:48:08,500] No,
+- [00:48:08,500 - 00:48:10,340] it's not the magnitude of the vector
+- [00:48:10,340 - 00:48:11,520] It is the vector itself
+- [00:48:12,140 - 00:48:13,260] It's one thing...
+- [00:48:13,260 - 00:48:14,550] it's true that if the
+- [00:48:14,550 - 00:48:15,840] magnitude of a vector is zero
+- [00:48:16,360 - 00:48:18,180] In ordinary geometry,
+- [00:48:18,180 - 00:48:19,760] the vector itself is zero
+- [00:48:19,760 - 00:48:22,960] That will not be true in relativity
+- [00:48:23,840 - 00:48:25,410] Does not follow from the
+- [00:48:25,410 - 00:48:26,980] magnitude of a vector being zero
+- [00:48:26,980 - 00:48:28,340] That the vector is equal to zero
+- [00:48:29,120 - 00:48:30,440] The magnitude of a vector
+- [00:48:30,440 - 00:48:31,760] and the vector itself are two
+- [00:48:31,780 - 00:48:33,180] Two different quantities
+- [00:48:33,180 - 00:48:34,980] The magnitude of a vector is a scalar
+- [00:48:36,940 - 00:48:38,950] The vector itself is a complex
+- [00:48:38,950 - 00:48:40,960] thing that points in a direction
+- [00:48:41,860 - 00:48:43,950] To say that two vectors are equal
+- [00:48:43,950 - 00:48:46,040] means that the directions are the same
+- [00:48:46,040 - 00:48:47,560] And their magnitudes are the same
+- [00:48:47,560 - 00:48:49,530] And a tensor of higher
+- [00:48:49,530 - 00:48:51,500] rank is a more complicated object
+- [00:48:51,500 - 00:48:53,320] Which points in several directions
+- [00:48:54,060 - 00:48:55,870] It's got some aspect to it
+- [00:48:55,870 - 00:48:57,680] that points in one direction and another
+- [00:48:57,680 - 00:48:59,430] We're going to come to what
+- [00:48:59,430 - 00:49:01,180] their geometry is like soon enough
+- [00:49:02,240 - 00:49:03,340] But for the moment,
+- [00:49:03,340 - 00:49:05,400] they're defined by the transformation properties
+- [00:49:07,980 - 00:49:08,460] Okay
+- [00:49:09,560 - 00:49:10,440] As I said,
+- [00:49:10,440 - 00:49:12,450] the importance of tensors is that when
+- [00:49:12,450 - 00:49:14,460] a tensor equation is true in one frame
+- [00:49:14,460 - 00:49:15,440] It's true in every frame
+- [00:49:16,900 - 00:49:17,380] Next
+- [00:49:18,540 - 00:49:20,080] Operations on tensors
+- [00:49:21,360 - 00:49:24,680] Things you can do to tensors that make new tensors
+- [00:49:25,740 - 00:49:27,910] We're not at this point interested in
+- [00:49:27,910 - 00:49:30,080] things that you can do to tensors
+- [00:49:30,080 - 00:49:31,760] Which make other kinds of tensors
+- [00:49:31,780 - 00:49:32,570] But we're interested in other kinds
+- [00:49:32,570 - 00:49:33,360] of objects which are not tensors
+- [00:49:33,840 - 00:49:35,690] We're interested in the things
+- [00:49:35,690 - 00:49:37,540] we can do to a tensor
+- [00:49:37,540 - 00:49:39,320] Operations we can do to them
+- [00:49:39,900 - 00:49:42,540] Which will make new tensors
+- [00:49:43,980 - 00:49:46,120] And in that way we can make a collection
+- [00:49:46,120 - 00:49:48,260] of things out of which we can build equations
+- [00:49:48,840 - 00:49:51,460] The equations being the same in every reference frame
+- [00:49:52,140 - 00:49:52,620] Okay,
+- [00:49:52,620 - 00:49:54,220] so let's write down
+- [00:49:56,560 - 00:49:58,760] Some set of operations and then
+- [00:49:58,760 - 00:50:00,960] I'll go through what they are
+- [00:50:00,960 - 00:50:01,960] And how you do them
+- [00:50:03,900 - 00:50:04,760] They're very simple
+- [00:50:06,000 - 00:50:06,380] Well,
+- [00:50:06,380 - 00:50:07,260] most of them are simple
+- [00:50:08,460 - 00:50:09,880] The last one is not simple
+- [00:50:26,000 - 00:50:26,380] Well,
+- [00:50:26,380 - 00:50:27,630] first of all you can
+- [00:50:27,630 - 00:50:28,880] multiply a tensor by a number
+- [00:50:28,880 - 00:50:30,240] I didn't even write this down
+- [00:50:30,240 - 00:50:32,430] You can take any tensor and
+- [00:50:32,430 - 00:50:34,620] multiply it by a numerical number
+- [00:50:35,600 - 00:50:36,780] It's still a tensor
+- [00:50:36,780 - 00:50:39,000] I'm not even going to bother with that one
+- [00:50:40,060 - 00:50:40,640] Okay
+- [00:50:42,220 - 00:50:42,800] One
+- [00:50:44,000 - 00:50:45,200] Addition of tensors
+- [00:50:47,280 - 00:50:49,380] That's the first operation we'll talk about
+- [00:50:49,380 - 00:50:50,220] Two
+- [00:50:51,000 - 00:50:54,160] An addition of course includes also subtraction
+- [00:50:54,160 - 00:50:56,150] If you multiply a tensor by
+- [00:50:56,150 - 00:50:58,140] a negative number and then add it
+- [00:50:58,140 - 00:50:59,300] It's subtraction
+- [00:51:01,140 - 00:51:02,680] Multiplication of tensors
+- [00:51:07,460 - 00:51:08,740] Makes tensors
+- [00:51:08,740 - 00:51:09,720] Three
+- [00:51:10,740 - 00:51:11,380] Contraction
+- [00:51:14,580 - 00:51:16,620] And I'll tell you what that means
+- [00:51:17,240 - 00:51:18,490] You may or may not
+- [00:51:18,490 - 00:51:19,740] know the word at this point
+- [00:51:19,740 - 00:51:21,440] But we will know the word soon
+- [00:51:22,140 - 00:51:23,220] Contraction and four
+- [00:51:25,920 - 00:51:27,720] Differentiation of tensors
+- [00:51:27,720 - 00:51:29,500] But not ordinary differentiation
+- [00:51:31,280 - 00:51:32,080] Covariant differentiation
+- [00:51:32,080 - 00:51:34,440] And we will define that I think tonight
+- [00:51:39,760 - 00:51:41,780] Covariant differentiation of tensors
+- [00:51:42,460 - 00:51:45,880] I think those are the four basic processes
+- [00:51:45,880 - 00:51:47,270] That you can do on
+- [00:51:47,270 - 00:51:48,660] a tensor to make new tensors
+- [00:51:49,440 - 00:51:51,260] Differentiation with respect to what?
+- [00:51:51,760 - 00:51:52,340] Well,
+- [00:51:52,340 - 00:51:54,820] differentiation with respect to position
+- [00:51:54,820 - 00:51:56,690] These tensors might be things
+- [00:51:56,690 - 00:51:58,560] which vary from place to place
+- [00:51:58,560 - 00:51:59,480] And then they're called tensors
+- [00:52:01,200 - 00:52:02,440] They live at a point
+- [00:52:02,440 - 00:52:03,640] They have a value at a point
+- [00:52:03,640 - 00:52:05,380] At the next point they have a different value
+- [00:52:05,380 - 00:52:07,040] At the next point they have a different value
+- [00:52:08,340 - 00:52:13,430] And learning to differentiate them is
+- [00:52:13,430 - 00:52:18,520] going to be fun and hard
+- [00:52:19,520 - 00:52:20,560] Not very hard,
+- [00:52:20,560 - 00:52:21,320] a little hard
+- [00:52:22,900 - 00:52:23,340] Okay,
+- [00:52:23,340 - 00:52:24,300] adding tensors
+- [00:52:24,300 - 00:52:26,880] You only add tensors if their indices
+- [00:52:26,880 - 00:52:29,460] match and are of the same type
+- [00:52:29,460 - 00:52:31,240] For example,
+- [00:52:31,240 - 00:52:32,920] if you have a tensor T
+- [00:52:34,980 - 00:52:38,780] M with a bunch of more upstairs indices
+- [00:52:40,060 - 00:52:42,370] Contravariant indices and maybe
+- [00:52:42,370 - 00:52:44,680] a collection of downstairs indices
+- [00:52:45,440 - 00:52:47,920] And you have another tensor of the same kind
+- [00:52:48,800 - 00:52:49,960] Plus S,
+- [00:52:49,960 - 00:52:51,320] M
+- [00:52:51,320 - 00:52:53,720] S does not stand for scalar here
+- [00:52:54,350 - 00:52:55,000] Dot dot dot
+- [00:52:55,000 - 00:52:56,760] Dot dot dot dot p
+- [00:52:56,760 - 00:52:58,540] In other words,
+- [00:52:58,540 - 00:52:59,440] they're equal to the same kind
+- [00:52:59,460 - 00:53:01,520] Their indices are of exactly the same kind
+- [00:53:01,520 - 00:53:02,860] This might be M,
+- [00:53:02,860 - 00:53:04,060] N,
+- [00:53:04,060 - 00:53:05,420] R and so forth
+- [00:53:05,420 - 00:53:06,160] This could be P,
+- [00:53:06,160 - 00:53:06,560] Q,
+- [00:53:06,560 - 00:53:07,160] whatever
+- [00:53:07,160 - 00:53:09,480] If the indices match,
+- [00:53:09,480 - 00:53:11,440] then you are permitted to add them
+- [00:53:11,440 - 00:53:13,380] And construct a new tensor
+- [00:53:13,920 - 00:53:16,100] Which I'll just call T plus S
+- [00:53:18,320 - 00:53:21,220] M dot dot dot dot dot dot p
+- [00:53:23,540 - 00:53:24,840] In other words,
+- [00:53:24,840 - 00:53:25,420] the tensor,
+- [00:53:25,420 - 00:53:28,220] the thing which is just the sum of the indices
+- [00:53:28,840 - 00:53:29,440] Defines a new tensor
+- [00:53:29,460 - 00:53:31,960] Which is the sum of the two tensors
+- [00:53:31,960 - 00:53:35,060] It's obvious that this transforms the right way
+- [00:53:35,960 - 00:53:38,760] If T transforms by multiplying it by a
+- [00:53:38,760 - 00:53:41,560] bunch of dx by dy's and dy by x's
+- [00:53:41,560 - 00:53:43,960] And S transforms the same way
+- [00:53:43,960 - 00:53:47,500] Then if you just factor out the,
+- [00:53:47,500 - 00:53:48,760] you know,
+- [00:53:48,760 - 00:53:50,060] the transformation coefficients
+- [00:53:50,060 - 00:53:50,780] The dx,
+- [00:53:50,780 - 00:53:51,700] dy's and the dy,
+- [00:53:51,700 - 00:53:52,340] dx's
+- [00:53:52,340 - 00:53:54,650] Then you can see easily that
+- [00:53:54,650 - 00:53:56,960] the sum is also a tensor
+- [00:53:56,960 - 00:53:58,400] Transforms as a tensor
+- [00:54:01,780 - 00:54:03,540] You can do the same thing with minus,
+- [00:54:03,540 - 00:54:04,300] incidentally
+- [00:54:04,300 - 00:54:05,040] No difference
+- [00:54:05,040 - 00:54:05,480] Also,
+- [00:54:05,480 - 00:54:09,120] T minus S is a tensor
+- [00:54:09,900 - 00:54:12,430] And this is the basis for saying that
+- [00:54:12,430 - 00:54:14,960] tensor equations are the same in every reference frame
+- [00:54:14,960 - 00:54:18,820] T minus S equals zero is a tensor equation
+- [00:54:20,040 - 00:54:21,640] It's the equation that the tensor
+- [00:54:21,640 - 00:54:23,240] T minus S is equal to zero
+- [00:54:24,560 - 00:54:25,120] Okay,
+- [00:54:25,120 - 00:54:25,420] next,
+- [00:54:25,420 - 00:54:27,240] multiplication of tensors
+- [00:54:27,240 - 00:54:28,020] Now,
+- [00:54:28,020 - 00:54:29,940] unlike addition,
+- [00:54:29,940 - 00:54:32,740] multiplication of tensors can be
+- [00:54:32,740 - 00:54:35,540] done with tensors of any rank
+- [00:54:36,840 - 00:54:38,640] Rank means the number of indices
+- [00:54:39,520 - 00:54:41,360] And independently of whether those
+- [00:54:41,360 - 00:54:43,200] indices are upstairs or downstairs
+- [00:54:43,200 - 00:54:44,480] And here's the way it works
+- [00:54:45,280 - 00:54:47,060] Let me start with an example
+- [00:54:49,200 - 00:54:50,420] Multiplying two vectors
+- [00:54:53,980 - 00:54:57,220] Supposing we have a vector with a cov-
+- [00:54:57,220 - 00:54:57,480] Covariant index
+- [00:54:57,480 - 00:55:02,900] And we multiply it by some other vector
+- [00:55:02,900 - 00:55:05,420] To make it a life a little more complicated
+- [00:55:05,420 - 00:55:09,880] Let's multiply it by a vector with a covariant index
+- [00:55:13,080 - 00:55:15,300] This is a tensor
+- [00:55:15,300 - 00:55:16,300] It's a tensor
+- [00:55:18,940 - 00:55:20,940] With one upstairs index,
+- [00:55:20,940 - 00:55:21,680] M
+- [00:55:22,020 - 00:55:23,820] And one downstairs index,
+- [00:55:23,820 - 00:55:24,340] N
+- [00:55:24,340 - 00:55:26,040] You have to remember which one is which
+- [00:55:26,040 - 00:55:28,520] Do not cross
+- [00:55:28,520 - 00:55:29,680] If this is M,
+- [00:55:29,680 - 00:55:30,540] this one is M
+- [00:55:30,540 - 00:55:31,300] If this one is N,
+- [00:55:31,300 - 00:55:32,060] that one is N,
+- [00:55:32,060 - 00:55:32,520] and so forth
+- [00:55:33,060 - 00:55:37,540] This is a tensor with one covariant
+- [00:55:37,540 - 00:55:37,780] Sorry,
+- [00:55:37,780 - 00:55:39,140] one covariant index
+- [00:55:39,140 - 00:55:40,920] And one contravariant index
+- [00:55:41,660 - 00:55:42,920] The set of values
+- [00:55:42,920 - 00:55:43,880] The set of values,
+- [00:55:43,880 - 00:55:45,600] one value of this thing for each
+- [00:55:45,600 - 00:55:47,000] M and N
+- [00:55:47,000 - 00:55:49,920] Define the components of a tensor with two indices
+- [00:55:51,759 - 00:55:54,640] You could have done the same thing with some
+- [00:55:56,760 - 00:55:58,000] Other vector
+- [00:55:58,640 - 00:56:00,320] Let's continue to call it W
+- [00:56:00,320 - 00:56:03,340] But one with another upstairs index
+- [00:56:03,340 - 00:56:05,840] And this would have been some other tensor
+- [00:56:06,480 - 00:56:09,540] With one upstairs and another upstairs index
+- [00:56:10,620 - 00:56:12,690] I use upstairs and downstairs because
+- [00:56:12,690 - 00:56:14,760] I constantly have to remind myself
+- [00:56:14,760 - 00:56:17,480] Which one is covariant and which one is contravariant
+- [00:56:17,480 - 00:56:20,400] And upstairs and downstairs are easier to
+- [00:56:21,740 - 00:56:23,080] To think of,
+- [00:56:23,080 - 00:56:23,840] but they're the same thing
+- [00:56:23,840 - 00:56:24,420] And you usually
+- [00:56:26,920 - 00:56:28,620] You can put a product
+- [00:56:28,620 - 00:56:30,320] sign in here if you like
+- [00:56:30,320 - 00:56:32,520] Just to keep track of the fact that you're multiplying
+- [00:56:36,120 - 00:56:36,720] What's that?
+- [00:56:37,160 - 00:56:38,720] You said multiply vectors
+- [00:56:38,720 - 00:56:40,900] Are you plotting the vectors?
+- [00:56:41,140 - 00:56:41,400] No,
+- [00:56:41,400 - 00:56:42,780] this is not plotting the vectors
+- [00:56:43,420 - 00:56:44,340] This is making
+- [00:56:44,340 - 00:56:45,980] We're going to talk about that in a moment
+- [00:56:46,520 - 00:56:49,420] This is making a tensor of different rank
+- [00:56:49,420 - 00:56:52,200] Higher rank just by juxtaposing these together
+- [00:56:52,200 - 00:56:53,880] How many indices,
+- [00:56:53,880 - 00:56:56,340] how many components does this object have?
+- [00:56:56,960 - 00:56:57,460] Well,
+- [00:56:57,460 - 00:56:59,040] let's work in four
+- [00:56:59,040 - 00:57:00,980] We're going to be interested in four dimensions
+- [00:57:00,980 - 00:57:01,940] Or the space times
+- [00:57:02,520 - 00:57:04,840] Let's say the number of indices is four
+- [00:57:05,960 - 00:57:06,760] M runs,
+- [00:57:06,760 - 00:57:08,430] the number of values that
+- [00:57:08,430 - 00:57:10,100] M can take on is four
+- [00:57:10,100 - 00:57:12,220] In three dimensions it would be three
+- [00:57:12,220 - 00:57:14,110] But in four dimensions this
+- [00:57:14,110 - 00:57:16,000] would have 16 independent components
+- [00:57:17,100 - 00:57:18,640] 16 independent components
+- [00:57:18,640 - 00:57:20,480] Four for this and four for that
+- [00:57:20,480 - 00:57:21,520] This would be a 16
+- [00:57:21,520 - 00:57:23,080] Component object
+- [00:57:23,960 - 00:57:25,760] It is not the dot product
+- [00:57:25,760 - 00:57:27,520] The dot product only has one component
+- [00:57:27,520 - 00:57:28,220] It's a number
+- [00:57:30,160 - 00:57:31,860] Sometimes it's called the outer product
+- [00:57:31,860 - 00:57:33,860] But it's just a tensor product
+- [00:57:33,860 - 00:57:36,200] Just a tensor product of two tensors
+- [00:57:37,020 - 00:57:38,580] And it makes another tensor
+- [00:57:39,160 - 00:57:41,840] Typically a tensor of different rank
+- [00:57:42,540 - 00:57:43,960] Than either one of them
+- [00:57:43,960 - 00:57:45,310] The only way you can make
+- [00:57:45,310 - 00:57:46,660] a tensor of the same rank
+- [00:57:46,660 - 00:57:49,440] Is for one of the factors to be a scalar
+- [00:57:50,340 - 00:57:51,500] A scalar is a tensor of a number
+- [00:57:51,520 - 00:57:52,020] And a tensor is a tensor
+- [00:57:52,020 - 00:57:56,320] And you can always multiply a tensor by a scalar
+- [00:57:56,320 - 00:57:57,620] Take any scalar
+- [00:57:58,380 - 00:58:00,080] Multiply it by Vm
+- [00:58:01,960 - 00:58:04,900] And it's a tensor with one index upstairs
+- [00:58:04,900 - 00:58:05,840] In other words,
+- [00:58:05,840 - 00:58:08,980] multiplying any tensor by a scalar
+- [00:58:09,520 - 00:58:11,380] Gives back a tensor of the same kind
+- [00:58:11,380 - 00:58:12,980] Not the same tensor
+- [00:58:12,980 - 00:58:15,020] It's multiplied by S
+- [00:58:15,020 - 00:58:16,480] But of the same type
+- [00:58:16,480 - 00:58:18,060] Of the same generic type
+- [00:58:18,060 - 00:58:19,980] Same number of indices in the same place
+- [00:58:21,520 - 00:58:22,620] That's the only situation
+- [00:58:23,120 - 00:58:26,540] Where when you multiply a tensor by some other tensor
+- [00:58:26,540 - 00:58:28,800] You get back a tensor of the same type
+- [00:58:29,900 - 00:58:32,760] Generally you get back a tensor of higher rank
+- [00:58:32,760 - 00:58:33,760] With more indices,
+- [00:58:33,760 - 00:58:34,620] obviously
+- [00:58:38,000 - 00:58:39,740] Where these tensors will come in
+- [00:58:39,740 - 00:58:41,640] We'll find out where they come in soon enough
+- [00:58:41,640 - 00:58:44,220] But so far this is just a notational device
+- [00:58:45,040 - 00:58:47,180] So far think of it as a notational device
+- [00:58:48,280 - 00:58:48,780] Okay,
+- [00:58:48,780 - 00:58:50,160] everybody happy with it?
+- [00:58:50,200 - 00:58:50,840] It's really easy
+- [00:58:51,520 - 00:58:52,640] It's very hard to make mistakes
+- [00:58:52,640 - 00:58:53,960] Are there any rules?
+- [00:58:54,200 - 00:58:54,880] Like,
+- [00:58:54,880 - 00:58:55,640] you know,
+- [00:58:55,640 - 00:58:57,380] switching sides
+- [00:58:57,380 - 00:59:00,240] And Vw is equal to Wv?
+- [00:59:00,580 - 00:59:01,140] Yeah,
+- [00:59:01,140 - 00:59:02,460] well okay,
+- [00:59:02,460 - 00:59:03,180] let's be careful
+- [00:59:03,180 - 00:59:04,480] Yeah,
+- [00:59:04,480 - 00:59:07,680] let's take this one with two upstairs
+- [00:59:10,860 - 00:59:18,200] Vm Wn is equal to Wn Vm
+- [00:59:19,279 - 00:59:21,240] But it is not equal to
+- [00:59:23,460 - 00:59:24,580] Vn Wm
+- [00:59:29,000 - 00:59:33,240] Vm times Wn is the same as Vm times Wm
+- [00:59:33,240 - 00:59:34,180] It doesn't matter which is,
+- [00:59:34,180 - 00:59:34,500] you know
+- [00:59:34,500 - 00:59:36,020] 7 times 3 is 3 times 7
+- [00:59:37,240 - 00:59:38,760] We're not doing quantum mechanics
+- [00:59:38,760 - 00:59:40,880] Every multiplication of numbers
+- [00:59:40,880 - 00:59:42,760] And components are numbers
+- [00:59:44,040 - 00:59:45,660] Components are numerical values
+- [00:59:47,080 - 00:59:49,540] So on the other hand
+- [00:59:49,540 - 00:59:51,340] When you write this as a tensor
+- [00:59:51,520 - 00:59:53,160] You must remember
+- [00:59:53,160 - 00:59:58,440] That the first index refers to the V
+- [00:59:58,440 - 01:00:01,700] And the second index refers to the N
+- [01:00:03,120 - 01:00:05,460] You must remember your convention
+- [01:00:05,460 - 01:00:09,120] That the first index here was associated with V
+- [01:00:09,120 - 01:00:12,240] And the second index here was associated with W
+- [01:00:13,359 - 01:00:15,880] But the transformation properties
+- [01:00:15,880 - 01:00:17,520] Are just the transformation properties
+- [01:00:17,520 - 01:00:20,960] Of a thing with two contravariant indices
+- [01:00:21,760 - 01:00:22,360] Okay
+- [01:00:25,560 - 01:00:26,160] Yeah,
+- [01:00:26,160 - 01:00:27,560] there's nothing abnormal
+- [01:00:27,560 - 01:00:29,920] About multiplying components of vectors
+- [01:00:29,920 - 01:00:31,200] They are just numbers
+- [01:00:31,839 - 01:00:33,560] And when you multiply two numbers
+- [01:00:33,560 - 01:00:35,620] You can multiply them in any order you like
+- [01:00:35,620 - 01:00:37,500] Same with adding them
+- [01:00:40,220 - 01:00:40,820] Okay,
+- [01:00:40,820 - 01:00:41,420] good
+- [01:00:46,380 - 01:00:46,980] Incidentally,
+- [01:00:46,980 - 01:00:48,000] how do we prove
+- [01:00:48,000 - 01:00:50,140] That a thing like this is a tensor?
+- [01:00:50,140 - 01:00:50,780] Well,
+- [01:00:50,780 - 01:00:52,160] we just write down
+- [01:00:52,780 - 01:00:54,960] The transformation property of V
+- [01:00:54,960 - 01:00:56,820] And the transformation property of W
+- [01:00:57,440 - 01:00:59,820] And that tells us what the transformation property
+- [01:00:59,820 - 01:01:01,200] Of V times W is
+- [01:01:01,200 - 01:01:03,040] And it's more or less manifest
+- [01:01:03,040 - 01:01:05,380] I already gave some examples of it
+- [01:01:06,900 - 01:01:09,780] That products like this
+- [01:01:09,780 - 01:01:11,320] Continue to be tensors
+- [01:01:11,320 - 01:01:13,660] Tensors with the appropriate index structure
+- [01:01:14,380 - 01:01:15,440] So that's good
+- [01:01:15,440 - 01:01:16,360] We have addition
+- [01:01:16,360 - 01:01:17,380] We have multiplication
+- [01:01:19,260 - 01:01:20,120] And now we're going to look at this
+- [01:01:20,120 - 01:01:21,020] And then we have contraction
+- [01:01:22,200 - 01:01:22,960] Okay,
+- [01:01:22,960 - 01:01:24,860] contraction is also very easy
+- [01:01:24,860 - 01:01:26,340] An easy algebraic process
+- [01:01:26,340 - 01:01:30,740] But in order to prove that contraction leads to tensors
+- [01:01:30,740 - 01:01:31,980] We need a little
+- [01:01:33,759 - 01:01:35,940] Tiny little minor theorem
+- [01:01:37,218 - 01:01:37,338] 嗯
+- [01:01:41,814 - 01:01:44,174] No mathematician would call this a theorem,
+- [01:01:44,174 - 01:01:45,094] they would call it a,
+- [01:01:45,094 - 01:01:48,034] maybe at most a lemma.
+- [01:01:50,394 - 01:01:50,914] Okay,
+- [01:01:50,914 - 01:01:52,134] here's what the theorem says,
+- [01:01:52,134 - 01:01:53,294] or the lemma.
+- [01:01:55,174 - 01:01:56,914] Consider the object,
+- [01:01:56,914 - 01:01:59,994] the x,
+- [01:01:59,994 - 01:02:00,334] b,
+- [01:02:00,334 - 01:02:02,194] I've mostly used m and n's
+- [01:02:02,194 - 01:02:04,054] and p's and q's for the indices.
+- [01:02:04,054 - 01:02:06,934] I'm going to start using a's and b's,
+- [01:02:06,934 - 01:02:08,634] there just aren't enough letters in the alphabet
+- [01:02:08,634 - 01:02:10,004] to take them all from
+- [01:02:10,004 - 01:02:11,374] the same range in the alphabet.
+- [01:02:11,814 - 01:02:12,914] Take the x,
+- [01:02:12,914 - 01:02:15,034] b by d,
+- [01:02:15,034 - 01:02:15,474] y,
+- [01:02:15,474 - 01:02:15,954] m,
+- [01:02:15,954 - 01:02:19,514] multiply that by d,
+- [01:02:19,514 - 01:02:19,894] y,
+- [01:02:19,894 - 01:02:21,934] m by d,
+- [01:02:21,934 - 01:02:22,434] x,
+- [01:02:22,434 - 01:02:22,714] a,
+- [01:02:22,714 - 01:02:26,094] and implicit in this formula
+- [01:02:26,514 - 01:02:28,614] is a sum over y,
+- [01:02:28,614 - 01:02:31,034] a sum over m.
+- [01:02:32,594 - 01:02:33,234] Implicitly,
+- [01:02:33,234 - 01:02:34,034] this means m.
+- [01:02:34,054 - 01:02:34,874] Sum over m.
+- [01:02:36,514 - 01:02:37,454] What is this object?
+- [01:02:37,634 - 01:02:38,774] Anybody know what this object is?
+- [01:02:42,214 - 01:02:43,814] This is the change in x,
+- [01:02:43,814 - 01:02:44,934] b when you change y,
+- [01:02:44,934 - 01:02:45,874] m a little bit,
+- [01:02:45,874 - 01:02:47,294] times the change in y,
+- [01:02:47,394 - 01:02:48,414] m when you change x,
+- [01:02:48,414 - 01:02:49,274] a a little bit,
+- [01:02:49,274 - 01:02:50,534] summed over m.
+- [01:02:51,274 - 01:02:52,394] You change y,
+- [01:02:52,394 - 01:02:53,374] 1 a little bit,
+- [01:02:53,374 - 01:02:54,254] then you change y,
+- [01:02:54,254 - 01:02:55,054] 2 a little bit,
+- [01:02:55,054 - 01:02:55,494] then you change,
+- [01:02:55,494 - 01:02:55,794] what does
+- [01:02:55,794 - 01:02:56,554] that do to echo,
+- [01:02:56,554 - 01:02:57,534] what is this thing?
+- [01:02:58,794 - 01:02:59,154] I didn't hear you.
+- [01:03:04,054 - 01:03:04,454] I didn't hear what you said,
+- [01:03:04,454 - 01:03:05,574] but it's probably right.
+- [01:03:06,534 - 01:03:09,234] Let me write down a slightly more general formula.
+- [01:03:09,654 - 01:03:12,914] Let's take df of x,
+- [01:03:12,914 - 01:03:14,794] or df,
+- [01:03:14,794 - 01:03:15,594] df,
+- [01:03:15,594 - 01:03:18,794] f is both a function of x and y,
+- [01:03:18,794 - 01:03:19,994] I mean it's a function
+- [01:03:19,994 - 01:03:20,534] of x,
+- [01:03:20,534 - 01:03:22,194] but because x depends on y,
+- [01:03:22,194 - 01:03:23,494] it's also a function of y.
+- [01:03:24,034 - 01:03:24,874] df by d,
+- [01:03:24,874 - 01:03:25,174] y,
+- [01:03:25,174 - 01:03:25,534] m,
+- [01:03:25,534 - 01:03:26,754] d,
+- [01:03:26,754 - 01:03:27,094] y,
+- [01:03:27,094 - 01:03:29,714] m by d,
+- [01:03:29,714 - 01:03:30,054] x,
+- [01:03:30,054 - 01:03:30,314] a.
+- [01:03:30,814 - 01:03:31,814] You know what this is?
+- [01:03:31,994 - 01:03:32,234] Yeah.
+- [01:03:33,114 - 01:03:34,544] The change in f when
+- [01:03:34,544 - 01:03:35,974] you change y a little bit,
+- [01:03:35,974 - 01:03:38,254] times the change in y when you change
+- [01:03:38,254 - 01:03:39,054] x a little bit,
+- [01:03:39,054 - 01:03:39,714] what does that give you?
+- [01:03:42,694 - 01:03:44,114] It gives you df,
+- [01:03:44,114 - 01:03:45,714] dx with an index.
+- [01:03:46,053 - 01:03:49,414] It gives you df by d,
+- [01:03:49,414 - 01:03:49,894] x,
+- [01:03:49,894 - 01:03:50,074] a.
+- [01:03:51,714 - 01:03:54,014] This is the change in f when you change x,
+- [01:03:54,014 - 01:03:54,654] a a little bit,
+- [01:03:54,654 - 01:03:55,754] and it's been calculated
+- [01:03:56,674 - 01:03:59,154] by a sum of steps where first you change y,
+- [01:03:59,154 - 01:04:00,094] 1 a little bit,
+- [01:04:00,094 - 01:04:01,414] then you change y,
+- [01:04:01,414 - 01:04:02,214] 1 in response.
+- [01:04:03,494 - 01:04:04,854] Then you change y,
+- [01:04:04,854 - 01:04:05,774] 2 a little bit,
+- [01:04:05,774 - 01:04:08,554] in response to a change in x,
+- [01:04:08,554 - 01:04:08,734] a,
+- [01:04:08,734 - 01:04:10,094] and that gives you df,
+- [01:04:10,154 - 01:04:10,294] x,
+- [01:04:10,294 - 01:04:10,454] a.
+- [01:04:10,474 - 01:04:10,694] Now,
+- [01:04:10,694 - 01:04:15,994] what if f happens to be x,
+- [01:04:15,994 - 01:04:16,194] b?
+- [01:04:19,694 - 01:04:21,394] Then carrying out the formula,
+- [01:04:21,394 - 01:04:23,814] it tells me that it's the derivative of x,
+- [01:04:23,814 - 01:04:25,974] b with respect
+- [01:04:25,974 - 01:04:26,474] to x,
+- [01:04:26,474 - 01:04:26,794] a.
+- [01:04:27,874 - 01:04:29,494] That looks like a stupid thing.
+- [01:04:29,634 - 01:04:30,334] What does that mean?
+- [01:04:31,134 - 01:04:31,574] Yeah.
+- [01:04:32,394 - 01:04:33,834] What's the derivative of x,
+- [01:04:33,834 - 01:04:35,174] b with respect to x,
+- [01:04:35,174 - 01:04:35,434] a?
+- [01:04:36,334 - 01:04:37,054] Chronic of delta.
+- [01:04:38,834 - 01:04:39,234] Yeah.
+- [01:04:39,394 - 01:04:40,774] What's the derivative of x,
+- [01:04:40,774 - 01:04:41,794] 1 with respect to x,
+- [01:04:41,794 - 01:04:42,114] 1?
+- [01:04:43,334 - 01:04:43,534] No.
+- [01:04:43,594 - 01:04:44,194] The derivative of x,
+- [01:04:44,194 - 01:04:45,034] 1 with respect to x,
+- [01:04:45,034 - 01:04:45,214] 1?
+- [01:04:47,234 - 01:04:48,294] What's the derivative of x,
+- [01:04:48,294 - 01:04:49,054] 1 with respect to x,
+- [01:04:49,054 - 01:04:49,314] 2?
+- [01:04:51,114 - 01:04:54,134] So this thing here is just the chronic of delta,
+- [01:04:54,134 - 01:04:56,334] delta b,
+- [01:04:56,334 - 01:04:56,794] a.
+- [01:04:58,214 - 01:05:00,134] So only true for a private book?
+- [01:05:00,814 - 01:05:01,214] No.
+- [01:05:02,534 - 01:05:03,014] No.
+- [01:05:03,774 - 01:05:06,254] It's true for any set of coordinates.
+- [01:05:10,354 - 01:05:10,834] Nope.
+- [01:05:11,034 - 01:05:12,374] True for any coordinates.
+- [01:05:15,894 - 01:05:16,374] Okay.
+- [01:05:17,214 - 01:05:20,394] Notice it has one index upstairs and one index downstairs.
+- [01:05:21,054 - 01:05:21,814] Delta b,
+- [01:05:21,814 - 01:05:21,974] a.
+- [01:05:21,994 - 01:05:23,674] We're going to find out that delta b,
+- [01:05:23,674 - 01:05:26,014] a by itself happens to also be a tensor.
+- [01:05:26,814 - 01:05:28,014] That sounds a little weird.
+- [01:05:28,134 - 01:05:29,114] It's just a set of numbers,
+- [01:05:29,114 - 01:05:30,364] but it is a tensor with
+- [01:05:30,364 - 01:05:31,614] one upper and one lower index.
+- [01:05:31,834 - 01:05:32,214] So it's true for any set of coordinates.
+- [01:05:32,734 - 01:05:34,594] We'll probably come around to it eventually.
+- [01:05:35,854 - 01:05:36,374] Okay.
+- [01:05:36,454 - 01:05:38,964] That's the little lemma that we
+- [01:05:38,964 - 01:05:41,474] need in order to understand index contraction.
+- [01:05:42,134 - 01:05:44,544] So let's do an example of index
+- [01:05:44,544 - 01:05:46,954] contraction and then define it more generally.
+- [01:05:52,194 - 01:05:52,834] Darn it.
+- [01:05:52,894 - 01:05:55,294] I have my lemma on the blackboard that I need.
+- [01:05:56,614 - 01:05:57,133] Okay.
+- [01:05:57,234 - 01:05:58,674] Let's do it over here.
+- [01:06:00,074 - 01:06:00,754] All right.
+- [01:06:00,754 - 01:06:01,114] Let's,
+- [01:06:01,114 - 01:06:02,374] as an example,
+- [01:06:02,374 - 01:06:05,644] let's take a tensor which is
+- [01:06:05,644 - 01:06:08,914] composed out of v and w.
+- [01:06:11,574 - 01:06:14,474] v has a contravariant index
+- [01:06:14,474 - 01:06:17,374] and w has a covariant index.
+- [01:06:17,394 - 01:06:18,094] Excuse me,
+- [01:06:18,094 - 01:06:18,414] n,
+- [01:06:18,414 - 01:06:18,834] n.
+- [01:06:20,314 - 01:06:22,094] This is the tensor T,
+- [01:06:22,094 - 01:06:22,594] m,
+- [01:06:22,594 - 01:06:22,934] n.
+- [01:06:24,654 - 01:06:26,924] And now what contraction means is
+- [01:06:26,924 - 01:06:29,194] it means take any upper index
+- [01:06:29,194 - 01:06:31,214] and any lower index,
+- [01:06:31,214 - 01:06:32,814] combine them together,
+- [01:06:32,814 - 01:06:34,174] identify them,
+- [01:06:34,274 - 01:06:38,694] and set their numbers equal to each other.
+- [01:06:38,774 - 01:06:39,374] In other words,
+- [01:06:39,374 - 01:06:39,954] take v,
+- [01:06:39,954 - 01:06:40,734] m,
+- [01:06:40,734 - 01:06:42,234] w,
+- [01:06:42,234 - 01:06:42,854] m.
+- [01:06:44,114 - 01:06:45,654] This means v1,
+- [01:06:45,654 - 01:06:47,234] w1 plus v2,
+- [01:06:47,234 - 01:06:48,694] w2 plus v3,
+- [01:06:48,694 - 01:06:50,434] w3 and so forth.
+- [01:06:50,714 - 01:06:55,274] You've identified an upper index with a lower index.
+- [01:06:55,894 - 01:06:58,734] You're not allowed to do this with two upper indices.
+- [01:06:58,734 - 01:07:00,754] You're not allowed to do it with two lower indices.
+- [01:07:01,504 - 01:07:02,789] But you can take an
+- [01:07:02,789 - 01:07:04,074] upper index and a lower index.
+- [01:07:04,374 - 01:07:06,254] And let's ask how it transforms.
+- [01:07:07,094 - 01:07:07,854] All right.
+- [01:07:07,894 - 01:07:10,294] So first let's write down the transformation properties
+- [01:07:10,294 - 01:07:13,554] before we set the indices equal to each other.
+- [01:07:16,194 - 01:07:16,774] v,
+- [01:07:16,774 - 01:07:17,354] v,
+- [01:07:17,354 - 01:07:18,394] w,
+- [01:07:18,394 - 01:07:18,854] v,
+- [01:07:18,854 - 01:07:19,394] m,
+- [01:07:19,394 - 01:07:19,974] w,
+- [01:07:19,974 - 01:07:23,514] n prime.
+- [01:07:24,574 - 01:07:26,824] The primed version of it is,
+- [01:07:27,924 - 01:07:28,684] dy,
+- [01:07:28,684 - 01:07:33,444] m by dx,
+- [01:07:33,444 - 01:07:34,064] a,
+- [01:07:34,064 - 01:07:36,104] dx,
+- [01:07:36,104 - 01:07:38,704] b by dy,
+- [01:07:38,704 - 01:07:44,444] n times v,
+- [01:07:44,444 - 01:07:45,844] now let's see,
+- [01:07:45,844 - 01:07:46,204] a,
+- [01:07:46,204 - 01:07:48,324] w,
+- [01:07:48,324 - 01:07:49,124] b.
+- [01:07:49,724 - 01:07:53,344] Let's check and see if this equation makes sense.
+- [01:07:53,344 - 01:07:56,524] The transformation properties as always have
+- [01:07:56,524 - 01:07:59,704] for each index in the tensor
+- [01:07:59,704 - 01:08:02,904] one of these dy by dx's or dx by dy's.
+- [01:08:03,284 - 01:08:05,844] On the left hand side we have y's.
+- [01:08:05,924 - 01:08:07,564] This is the y components of something.
+- [01:08:07,704 - 01:08:09,464] And here we have an upstairs index m.
+- [01:08:10,084 - 01:08:11,304] So we have a dy,
+- [01:08:11,304 - 01:08:13,324] m by dx,
+- [01:08:13,324 - 01:08:13,604] a.
+- [01:08:14,084 - 01:08:17,323] Here the y index is a lower index.
+- [01:08:17,624 - 01:08:18,684] So this one is lower.
+- [01:08:19,823 - 01:08:20,304] dx,
+- [01:08:20,304 - 01:08:21,363] b by dy,
+- [01:08:21,363 - 01:08:21,783] n.
+- [01:08:21,924 - 01:08:23,323] And then we multiply that by y.
+- [01:08:23,344 - 01:08:25,613] And we multiply by the same tensor
+- [01:08:25,613 - 01:08:27,884] except the tensor in the unprimed components.
+- [01:08:28,584 - 01:08:29,283] a,
+- [01:08:29,283 - 01:08:29,524] b,
+- [01:08:29,524 - 01:08:30,064] the a,
+- [01:08:30,064 - 01:08:30,564] b components.
+- [01:08:31,264 - 01:08:37,844] This is the transformation property of the rank two tensor
+- [01:08:37,844 - 01:08:41,144] with one index upstairs and one index downstairs.
+- [01:08:41,524 - 01:08:42,834] The primed version of it
+- [01:08:42,834 - 01:08:44,144] and the unprimed version of it.
+- [01:08:44,424 - 01:08:46,674] Now let's set m equal
+- [01:08:46,674 - 01:08:48,924] to n and contract the indices.
+- [01:08:49,323 - 01:08:52,984] Contract means identify an upper and lower index
+- [01:08:52,984 - 01:08:54,104] and sum over them.
+- [01:08:55,044 - 01:08:56,844] So we now have v,
+- [01:08:56,844 - 01:08:57,344] m,
+- [01:08:57,344 - 01:08:58,363] w,
+- [01:08:58,363 - 01:08:58,924] m.
+- [01:09:00,243 - 01:09:02,384] How many indices does this object have?
+- [01:09:02,564 - 01:09:03,743] What kind of object is this?
+- [01:09:09,344 - 01:09:10,203] It's a scalar.
+- [01:09:11,024 - 01:09:11,804] It's a scalar.
+- [01:09:11,804 - 01:09:12,703] It has no indices.
+- [01:09:13,644 - 01:09:14,644] There's no indices.
+- [01:09:14,844 - 01:09:15,804] Well what about these indices?
+- [01:09:16,004 - 01:09:16,144] No,
+- [01:09:16,144 - 01:09:16,264] no,
+- [01:09:16,264 - 01:09:17,904] these indices are summed over.
+- [01:09:18,203 - 01:09:19,524] These are summed over.
+- [01:09:19,524 - 01:09:21,564] This is not the one component
+- [01:09:21,564 - 01:09:23,604] of something or the two component.
+- [01:09:24,064 - 01:09:25,604] It's like a dot product.
+- [01:09:26,004 - 01:09:27,464] The one component,
+- [01:09:27,464 - 01:09:28,684] the two component,
+- [01:09:28,684 - 01:09:30,743] the three component all added together.
+- [01:09:31,024 - 01:09:32,743] The result has no components.
+- [01:09:33,283 - 01:09:34,243] They're summed over.
+- [01:09:34,844 - 01:09:35,504] All right,
+- [01:09:35,504 - 01:09:36,283] let's see what it is.
+- [01:09:36,424 - 01:09:37,243] All we have to do,
+- [01:09:37,243 - 01:09:40,024] the primed component of it is equal.
+- [01:09:40,283 - 01:09:41,674] Now all we have to
+- [01:09:41,674 - 01:09:43,064] do is identify m and n.
+- [01:09:43,764 - 01:09:44,283] dy,
+- [01:09:44,283 - 01:09:46,004] m by dx,
+- [01:09:46,004 - 01:09:46,564] a.
+- [01:09:47,703 - 01:09:48,224] dx,
+- [01:09:48,224 - 01:09:49,504] b by n.
+- [01:09:49,504 - 01:09:50,024] dy,
+- [01:09:50,024 - 01:09:50,884] m.
+- [01:09:53,604 - 01:09:55,344] m and n have been identified.
+- [01:09:55,684 - 01:09:56,164] v,
+- [01:09:56,164 - 01:09:56,504] a,
+- [01:09:56,504 - 01:09:56,784] w,
+- [01:09:56,784 - 01:09:57,084] b.
+- [01:09:59,224 - 01:10:01,884] And now here's where our little lemma comes in handy.
+- [01:10:03,744 - 01:10:04,224] dx,
+- [01:10:04,224 - 01:10:05,164] b by dy,
+- [01:10:05,164 - 01:10:05,744] m.
+- [01:10:05,864 - 01:10:06,824] That's the thing over here.
+- [01:10:07,204 - 01:10:09,064] I've written them down in opposite order.
+- [01:10:10,024 - 01:10:10,984] Here is dx,
+- [01:10:10,984 - 01:10:11,804] b by dy,
+- [01:10:11,804 - 01:10:12,284] m.
+- [01:10:12,404 - 01:10:12,944] Here's dx,
+- [01:10:12,944 - 01:10:13,723] b by dy,
+- [01:10:13,723 - 01:10:14,203] m.
+- [01:10:15,343 - 01:10:16,024] Here's dy,
+- [01:10:16,024 - 01:10:17,064] m by dx,
+- [01:10:17,064 - 01:10:17,364] a.
+- [01:10:17,504 - 01:10:18,044] Here's dy,
+- [01:10:18,044 - 01:10:18,904] m by dx,
+- [01:10:18,904 - 01:10:19,304] a.
+- [01:10:19,504 - 01:10:22,524] And so I have exactly this combination appearing.
+- [01:10:22,824 - 01:10:24,404] And that's just delta ab.
+- [01:10:25,804 - 01:10:30,964] So this monstrosity over here is just delta ab.
+- [01:10:31,644 - 01:10:33,964] And delta ab is simply the
+- [01:10:33,964 - 01:10:36,284] instruction to set a equal to b.
+- [01:10:37,444 - 01:10:38,264] That's what it is,
+- [01:10:38,264 - 01:10:40,344] a little machine which says set a equal to b.
+- [01:10:40,704 - 01:10:42,844] And the result is that
+- [01:10:42,844 - 01:10:44,984] this thing is equal to v,
+- [01:10:44,984 - 01:10:45,464] a,
+- [01:10:45,464 - 01:10:46,184] w,
+- [01:10:46,184 - 01:10:46,664] a.
+- [01:10:48,764 - 01:10:50,704] This says set a equal to b.
+- [01:10:50,984 - 01:10:51,384] Okay,
+- [01:10:51,384 - 01:10:52,484] I set a equal to b
+- [01:10:52,484 - 01:10:53,584] or set b equal to a.
+- [01:10:53,644 - 01:10:53,904] Sorry,
+- [01:10:53,904 - 01:10:54,764] v,
+- [01:10:54,764 - 01:10:55,024] a,
+- [01:10:55,024 - 01:10:55,264] w,
+- [01:10:55,264 - 01:10:56,004] a.
+- [01:10:57,164 - 01:10:58,884] Set b equal to a.
+- [01:11:01,004 - 01:11:02,444] And look what I have on the left.
+- [01:11:02,684 - 01:11:05,204] On the left I have the contraction
+- [01:11:05,204 - 01:11:07,724] of an upper index with a lower index.
+- [01:11:07,884 - 01:11:09,164] It doesn't matter that I call it a.
+- [01:11:09,304 - 01:11:10,024] That's not important.
+- [01:11:10,504 - 01:11:13,124] I have the contraction of the upper index
+- [01:11:13,124 - 01:11:15,744] with the lower index in the unprimed frame.
+- [01:11:15,984 - 01:11:16,644] And that's what I have.
+- [01:11:16,644 - 01:11:18,364] That's equal to the corresponding
+- [01:11:18,364 - 01:11:20,084] quantity in the primed frame.
+- [01:11:20,884 - 01:11:22,764] I could call this m if I like.
+- [01:11:23,144 - 01:11:24,364] It's a summation index.
+- [01:11:24,604 - 01:11:25,804] It doesn't care what I call it.
+- [01:11:26,824 - 01:11:27,264] Okay.
+- [01:11:27,704 - 01:11:28,704] What does this say?
+- [01:11:29,164 - 01:11:33,644] This says that the object that I've made has no
+- [01:11:33,644 - 01:11:38,124] components and it has the same value in every frame.
+- [01:11:38,324 - 01:11:39,144] What would you call it?
+- [01:11:39,784 - 01:11:40,824] You'd call it a tensor.
+- [01:11:41,084 - 01:11:41,264] Ah,
+- [01:11:41,264 - 01:11:42,044] you'd call it a scalar.
+- [01:11:42,264 - 01:11:42,744] Excuse me.
+- [01:11:42,824 - 01:11:43,504] You'd call it a scalar.
+- [01:11:44,124 - 01:11:46,464] So by contracting two indices.
+- [01:11:46,644 - 01:11:47,904] I make another tensor,
+- [01:11:47,904 - 01:11:50,544] in this case a scalar.
+- [01:11:52,544 - 01:11:53,884] It's easy to prove,
+- [01:11:53,884 - 01:11:54,884] and you can do this yourself,
+- [01:11:54,884 - 01:11:56,404] that if you take any
+- [01:11:56,404 - 01:11:57,924] tensor with a bunch of indices.
+- [01:11:58,184 - 01:11:58,584] m,
+- [01:11:58,584 - 01:11:59,484] n,
+- [01:11:59,484 - 01:12:01,204] n,
+- [01:12:01,204 - 01:12:01,544] m,
+- [01:12:01,544 - 01:12:01,984] r,
+- [01:12:01,984 - 01:12:03,564] p,
+- [01:12:03,564 - 01:12:04,364] q,
+- [01:12:04,364 - 01:12:05,244] s,
+- [01:12:05,244 - 01:12:06,244] like that.
+- [01:12:06,784 - 01:12:08,004] Any number of them.
+- [01:12:08,104 - 01:12:13,564] Take one index from the upper indices.
+- [01:12:13,564 - 01:12:16,404] And an index from the lower indices.
+- [01:12:16,804 - 01:12:18,484] Set them equal to each other.
+- [01:12:20,224 - 01:12:21,604] Then I would have t,
+- [01:12:21,604 - 01:12:23,244] n,
+- [01:12:23,244 - 01:12:23,944] m,
+- [01:12:23,944 - 01:12:24,844] r,
+- [01:12:24,844 - 01:12:26,484] p,
+- [01:12:26,484 - 01:12:27,924] r,
+- [01:12:27,924 - 01:12:28,884] s.
+- [01:12:30,324 - 01:12:33,364] How many indices does this object have over here?
+- [01:12:37,164 - 01:12:37,684] One,
+- [01:12:37,684 - 01:12:38,104] two,
+- [01:12:38,104 - 01:12:38,464] three,
+- [01:12:38,464 - 01:12:38,764] four,
+- [01:12:38,764 - 01:12:39,084] five,
+- [01:12:39,084 - 01:12:39,304] six.
+- [01:12:39,504 - 01:12:40,824] Is it really a six indexed object?
+- [01:12:41,084 - 01:12:41,344] No.
+- [01:12:41,704 - 01:12:43,004] Because I've summed.
+- [01:12:43,004 - 01:12:43,544] This is the number of indexes.
+- [01:12:43,564 - 01:12:45,584] The r is not really an index anymore.
+- [01:12:46,044 - 01:12:47,184] It's been summed over.
+- [01:12:48,104 - 01:12:49,904] So this is a four index object.
+- [01:12:50,664 - 01:12:52,644] I've taken a six indexed object.
+- [01:12:52,784 - 01:12:53,284] In other words,
+- [01:12:53,284 - 01:12:54,444] a tensor of rank six.
+- [01:12:55,224 - 01:12:58,204] And by contracting an upper with a lower index,
+- [01:12:58,204 - 01:13:02,284] I have lowered the rank of the tensor by two.
+- [01:13:02,804 - 01:13:03,244] Yeah?
+- [01:13:03,504 - 01:13:04,494] Why does it have to
+- [01:13:04,494 - 01:13:05,484] be an upper and a lower?
+- [01:13:05,564 - 01:13:07,344] Why can't it just be an upper and a lower?
+- [01:13:07,544 - 01:13:07,944] Okay,
+- [01:13:07,944 - 01:13:08,844] what you would find.
+- [01:13:09,384 - 01:13:09,824] Good.
+- [01:13:10,384 - 01:13:11,444] So let's do that.
+- [01:13:14,344 - 01:13:17,024] Let's start with this expression over here.
+- [01:13:28,584 - 01:13:29,264] Now,
+- [01:13:29,264 - 01:13:31,024] these both have upper indices.
+- [01:13:31,444 - 01:13:35,404] So this has to be d
+- [01:13:35,404 - 01:13:39,364] y n by d x b.
+- [01:13:40,624 - 01:13:42,184] And then we would have.
+- [01:13:42,904 - 01:13:43,664] All right.
+- [01:13:43,664 - 01:13:44,404] Do you recognize that?
+- [01:13:47,424 - 01:13:49,024] This has two upper indices.
+- [01:13:49,224 - 01:13:50,524] This has two upper indices.
+- [01:13:50,984 - 01:13:52,284] Here's the prime component.
+- [01:13:52,584 - 01:13:53,864] And in both cases,
+- [01:13:53,864 - 01:13:55,184] we have d y by d x,
+- [01:13:55,184 - 01:13:56,124] d y by d x.
+- [01:13:56,204 - 01:13:56,384] Okay?
+- [01:13:57,564 - 01:14:00,944] Now supposing I set m equal to n in sum.
+- [01:14:01,844 - 01:14:04,364] This is an illegitimate notation,
+- [01:14:04,364 - 01:14:05,504] but let's do it anyway.
+- [01:14:08,643 - 01:14:12,624] This object is not this object.
+- [01:14:12,924 - 01:14:13,844] This has a d x,
+- [01:14:13,844 - 01:14:14,244] d y,
+- [01:14:14,244 - 01:14:15,204] d y by d x.
+- [01:14:16,944 - 01:14:18,544] That's the thing which is delta a b.
+- [01:14:19,464 - 01:14:21,204] This has a d y by d x,
+- [01:14:21,204 - 01:14:21,984] d y by d x.
+- [01:14:22,024 - 01:14:23,524] This is nothing in particular.
+- [01:14:24,064 - 01:14:26,484] It's certainly not just chronic delta a b.
+- [01:14:27,444 - 01:14:30,204] So since this is not chronic delta a b,
+- [01:14:30,204 - 01:14:33,144] this does not become v a w a.
+- [01:14:34,204 - 01:14:35,484] So the transformation of the function.
+- [01:14:35,484 - 01:14:38,894] The transformation property of this thing over here with two upper
+- [01:14:38,894 - 01:14:42,304] indices contracted like that is just some bastardized thing with no particular.
+- [01:14:43,424 - 01:14:44,844] Is it the inner product?
+- [01:14:45,144 - 01:14:45,624] No.
+- [01:14:45,864 - 01:14:46,384] No.
+- [01:14:47,044 - 01:14:47,564] No.
+- [01:14:47,644 - 01:14:49,204] The inner product of two vectors
+- [01:14:49,204 - 01:14:50,764] is one upper and one lower.
+- [01:14:52,404 - 01:14:52,924] Right.
+- [01:14:53,164 - 01:14:54,634] This is really kind of
+- [01:14:54,634 - 01:14:56,104] a generalization of the inner product.
+- [01:14:56,444 - 01:14:57,424] The contraction.
+- [01:14:57,684 - 01:14:57,864] Yeah.
+- [01:14:57,864 - 01:14:59,444] The contraction is the generalization of
+- [01:14:59,444 - 01:15:01,024] the inner product of two vectors.
+- [01:15:01,944 - 01:15:02,464] Yes.
+- [01:15:02,504 - 01:15:03,644] That's exactly right.
+- [01:15:04,004 - 01:15:04,524] Okay.
+- [01:15:05,484 - 01:15:06,944] So what's the contravariance of one and two?
+- [01:15:07,264 - 01:15:08,404] What must be contravariant?
+- [01:15:08,884 - 01:15:10,064] We're going to be doing in a moment.
+- [01:15:10,144 - 01:15:11,504] As soon as we introduce the metric pencil,
+- [01:15:11,504 - 01:15:13,144] we'll talk about inner product of vectors.
+- [01:15:13,944 - 01:15:16,004] And this also relies on each
+- [01:15:16,004 - 01:15:18,064] index having the same range of values.
+- [01:15:18,204 - 01:15:18,464] Otherwise,
+- [01:15:18,464 - 01:15:18,924] it's .
+- [01:15:18,924 - 01:15:19,344] Yeah.
+- [01:15:19,404 - 01:15:19,444] Yeah.
+- [01:15:19,464 - 01:15:19,624] Sure.
+- [01:15:19,764 - 01:15:20,024] Yeah.
+- [01:15:20,084 - 01:15:22,484] We're in some space of a given dimensionality.
+- [01:15:22,944 - 01:15:25,294] So the range of values of the
+- [01:15:25,294 - 01:15:27,644] index runs over the dimensionality of the space.
+- [01:15:31,044 - 01:15:32,604] Can I ask a question about
+- [01:15:32,604 - 01:15:34,164] something that came a while ago?
+- [01:15:34,664 - 01:15:35,044] Yeah.
+- [01:15:35,084 - 01:15:35,464] Yeah.
+- [01:15:35,484 - 01:15:37,664] So when you mentioned that if you,
+- [01:15:37,664 - 01:15:41,514] what you said about making the components all zero
+- [01:15:41,514 - 01:15:45,364] and pushing everything to one side of the equation,
+- [01:15:45,364 - 01:15:47,964] having that be,
+- [01:15:47,964 - 01:15:50,024] when you could do that,
+- [01:15:50,024 - 01:15:52,324] therefore you could write the same equation in any frame.
+- [01:15:53,164 - 01:15:54,984] Zero is the same as zero in any frame.
+- [01:15:55,164 - 01:15:55,304] Yeah.
+- [01:15:55,444 - 01:15:56,984] So it seems to me,
+- [01:15:56,984 - 01:15:58,464] and I want to know if this is right,
+- [01:15:58,464 - 01:16:01,964] that what that really seems to depend on
+- [01:16:01,964 - 01:16:05,464] is that these transformations are not the same.
+- [01:16:05,464 - 01:16:05,724] They're linear.
+- [01:16:06,784 - 01:16:07,584] It does.
+- [01:16:09,004 - 01:16:09,584] Absolutely.
+- [01:16:10,684 - 01:16:11,264] Yeah.
+- [01:16:11,544 - 01:16:12,524] In other words,
+- [01:16:12,524 - 01:16:13,004] by linear,
+- [01:16:13,004 - 01:16:19,024] you mean that,
+- [01:16:19,024 - 01:16:20,684] yes,
+- [01:16:20,684 - 01:16:23,804] it depends on that they're linear.
+- [01:16:24,584 - 01:16:25,164] Yeah.
+- [01:16:26,184 - 01:16:26,764] Yes.
+- [01:16:27,824 - 01:16:28,404] Yeah.
+- [01:16:28,524 - 01:16:29,104] Yeah.
+- [01:16:29,104 - 01:16:29,444] Yeah.
+- [01:16:29,474 - 01:16:29,794] 也順利
+- [01:16:30,690 - 01:16:31,030] That's correct.
+- [01:16:31,030 - 01:16:33,030] Okay,
+- [01:16:33,030 - 01:16:33,710] we've defined.
+- [01:16:33,710 - 01:16:40,010] Now let's come to the metric tensor.
+- [01:16:40,010 - 01:16:43,330] The metric tensor plays a big role.
+- [01:16:43,909 - 01:16:48,230] Here I've illustrated it by a particular construction,
+- [01:16:48,230 - 01:16:51,790] the way that this em en is the metric tensor.
+- [01:16:55,050 - 01:16:57,670] But let's define it on its own terms,
+- [01:16:57,670 - 01:17:00,250] abstractly.
+- [01:17:00,250 - 01:17:03,410] Again,
+- [01:17:03,410 - 01:17:04,450] things we've done before,
+- [01:17:04,450 - 01:17:05,590] but let's do them again.
+- [01:17:13,050 - 01:17:13,610] Okay,
+- [01:17:13,610 - 01:17:16,650] the definition of the metric tensor
+- [01:17:16,650 - 01:17:19,690] is if we have a differential
+- [01:17:19,690 - 01:17:20,430] limit,
+- [01:17:21,209 - 01:17:21,770] let's say,
+- [01:17:21,770 - 01:17:23,370] length element dxm,
+- [01:17:24,929 - 01:17:27,799] which just represents the
+- [01:17:27,799 - 01:17:30,670] components of a displacement vector.
+- [01:17:30,670 - 01:17:32,310] Let's call it a displacement vector.
+- [01:17:32,750 - 01:17:35,509] Go to a point in the space called x,
+- [01:17:35,509 - 01:17:36,990] x1 to xn,
+- [01:17:37,230 - 01:17:41,830] and now displace it and call that little vector dx.
+- [01:17:43,230 - 01:17:44,370] It has components,
+- [01:17:45,729 - 01:17:46,610] contravariant
+- [01:17:46,950 - 01:17:48,970] components dxm,
+- [01:17:49,090 - 01:17:51,170] the contravariant components
+- [01:17:51,730 - 01:17:52,230] of a little displacement vector.
+- [01:17:52,230 - 01:17:54,330] if you want to remember what they mean geometrically,
+- [01:17:54,470 - 01:17:56,480] what they mean is these expansion
+- [01:17:56,480 - 01:17:58,490] coefficients in terms of some basis vectors.
+- [01:17:59,030 - 01:18:01,130] But it's easier once you get the hang of it,
+- [01:18:01,190 - 01:18:04,570] just to proceed with the notation.
+- [01:18:06,250 - 01:18:08,680] dxm is the contravariant components
+- [01:18:08,680 - 01:18:11,110] of a little displacement vector.
+- [01:18:13,070 - 01:18:14,130] Now we ask,
+- [01:18:14,250 - 01:18:16,010] what is the length of that vector?
+- [01:18:17,990 - 01:18:18,490] Well,
+- [01:18:19,120 - 01:18:20,135] I haven't told you enough to
+- [01:18:20,135 - 01:18:21,150] tell you what the length is.
+- [01:18:21,150 - 01:18:21,730] The length of the vector.
+- [01:18:21,790 - 01:18:23,530] This could be some arbitrarily shaped,
+- [01:18:23,610 - 01:18:24,770] complicated space.
+- [01:18:26,949 - 01:18:29,170] And specifying what the space is,
+- [01:18:29,310 - 01:18:31,160] is in effect specifying what all
+- [01:18:31,160 - 01:18:33,010] the lengths of the little elements are.
+- [01:18:34,090 - 01:18:34,850] All right,
+- [01:18:34,870 - 01:18:36,750] so we take the dxm,
+- [01:18:36,890 - 01:18:38,510] and let's take the squared length.
+- [01:18:38,729 - 01:18:41,169] It's always easier to start with a squared length,
+- [01:18:41,350 - 01:18:41,870] Pythagoras'
+- [01:18:42,030 - 01:18:42,310] theorem,
+- [01:18:42,590 - 01:18:43,810] but Pythagoras'
+- [01:18:43,930 - 01:18:45,290] theorem becomes the more,
+- [01:18:45,410 - 01:18:48,230] in coordinates which are not orthogonal,
+- [01:18:50,050 - 01:18:50,590] Pythagoras'
+- [01:18:50,730 - 01:18:51,130] theorem,
+- [01:18:51,130 - 01:18:52,550] takes a more complicated form.
+- [01:18:53,910 - 01:18:56,690] It's still quadratic in the dx's,
+- [01:18:57,930 - 01:19:00,050] but it involves a dxm,
+- [01:19:00,909 - 01:19:02,510] and a dxn,
+- [01:19:04,089 - 01:19:08,270] and a quantity gmn,
+- [01:19:08,570 - 01:19:09,650] gmn.
+- [01:19:15,750 - 01:19:19,230] In general this gmn will depend on where you are.
+- [01:19:20,010 - 01:19:21,430] So it depends on x.
+- [01:19:22,050 - 01:19:24,230] In particular if you have a
+- [01:19:24,230 - 01:19:26,410] complicated curved space of some sort,
+- [01:19:26,530 - 01:19:27,710] with curved coordinates,
+- [01:19:28,709 - 01:19:31,090] and you pick some little dx over here,
+- [01:19:31,769 - 01:19:33,269] then the length of it will
+- [01:19:33,269 - 01:19:34,770] not only depend on the dx's,
+- [01:19:34,870 - 01:19:36,000] but it will also depend on
+- [01:19:36,000 - 01:19:37,130] where you are in the space.
+- [01:19:37,750 - 01:19:39,270] And so this is basically the
+- [01:19:39,270 - 01:19:40,790] most general thing you can write down,
+- [01:19:40,850 - 01:19:41,470] which is quadratic.
+- [01:19:42,950 - 01:19:43,410] Let's,
+- [01:19:43,410 - 01:19:45,590] I'm going to stick with a case of four dimensions,
+- [01:19:45,790 - 01:19:48,150] just because I have it firmly planted in my head,
+- [01:19:48,170 - 01:19:48,870] four dimensions,
+- [01:19:49,230 - 01:19:49,890] and we'll keep with that.
+- [01:19:50,250 - 01:19:52,340] But how many independent components
+- [01:19:52,340 - 01:19:54,430] are there of this gmn thing?
+- [01:19:57,150 - 01:19:58,010] You know?
+- [01:20:00,510 - 01:20:01,150] Six.
+- [01:20:05,110 - 01:20:05,430] Ten.
+- [01:20:06,750 - 01:20:07,390] Ten.
+- [01:20:09,350 - 01:20:10,230] See why.
+- [01:20:12,850 - 01:20:13,490] Well,
+- [01:20:14,750 - 01:20:16,410] to begin with there are sixteen.
+- [01:20:18,070 - 01:20:19,090] There are four,
+- [01:20:19,230 - 01:20:19,530] there are four x's.
+- [01:20:20,810 - 01:20:23,030] You can multiply any one by any other one.
+- [01:20:23,490 - 01:20:24,990] And so you start with sixteen.
+- [01:20:25,310 - 01:20:25,770] Alright?
+- [01:20:26,170 - 01:20:26,650] But,
+- [01:20:28,730 - 01:20:30,770] dx1 times dx2 is exactly
+- [01:20:30,770 - 01:20:32,810] the same as dx2 times dx1.
+- [01:20:33,490 - 01:20:35,530] So there's no point in having
+- [01:20:35,530 - 01:20:37,570] a separate g12 and a g21.
+- [01:20:38,370 - 01:20:39,830] Set them equal to each other.
+- [01:20:41,370 - 01:20:42,050] And then,
+- [01:20:42,750 - 01:20:43,690] if you count,
+- [01:20:43,870 - 01:20:46,030] you'll count that there are ten independent ones.
+- [01:20:46,470 - 01:20:47,830] I was going to say it's three for three spaces.
+- [01:20:48,070 - 01:20:48,370] Oh,
+- [01:20:48,370 - 01:20:49,209] for three spaces it's six.
+- [01:20:49,230 - 01:20:49,730] Yeah,
+- [01:20:49,730 - 01:20:51,050] for three space,
+- [01:20:51,269 - 01:20:52,690] for three dimensional space it's six.
+- [01:20:53,610 - 01:20:54,090] Right.
+- [01:20:57,609 - 01:20:58,090] Well,
+- [01:20:58,090 - 01:20:58,990] here's what you count.
+- [01:20:59,989 - 01:21:00,470] x1,
+- [01:21:00,470 - 01:21:00,990] x2,
+- [01:21:00,990 - 01:21:01,830] x3,
+- [01:21:01,830 - 01:21:03,210] x4.
+- [01:21:05,069 - 01:21:05,549] x1,
+- [01:21:05,549 - 01:21:06,030] x2,
+- [01:21:06,030 - 01:21:07,410] x3,
+- [01:21:07,410 - 01:21:08,630] x4.
+- [01:21:09,250 - 01:21:09,890] You know,
+- [01:21:09,890 - 01:21:10,750] make a sort of matrix.
+- [01:21:19,430 - 01:21:20,090] Sixteen entries.
+- [01:21:26,910 - 01:21:27,270] Okay.
+- [01:21:28,010 - 01:21:28,370] But,
+- [01:21:28,810 - 01:21:29,450] the one,
+- [01:21:30,090 - 01:21:30,450] here's,
+- [01:21:30,890 - 01:21:31,330] let's see,
+- [01:21:31,330 - 01:21:31,770] where are we?
+- [01:21:31,790 - 01:21:32,230] Here's the 1,
+- [01:21:32,230 - 01:21:32,750] 1 element,
+- [01:21:33,010 - 01:21:33,430] 1,
+- [01:21:33,430 - 01:21:33,890] 2 element,
+- [01:21:33,890 - 01:21:34,610] and so forth.
+- [01:21:35,590 - 01:21:37,150] You might as well take the 1,
+- [01:21:37,150 - 01:21:38,130] 2 element and the 2,
+- [01:21:38,130 - 01:21:39,230] 1 element to be the same.
+- [01:21:39,390 - 01:21:43,190] They both multiply dx1 times dx2.
+- [01:21:44,050 - 01:21:44,410] Alright?
+- [01:21:45,050 - 01:21:45,410] So,
+- [01:21:45,410 - 01:21:46,870] we have an element for here,
+- [01:21:46,970 - 01:21:48,290] and let's just cross it.
+- [01:21:48,290 - 01:21:48,850] An element here,
+- [01:21:48,990 - 01:21:49,610] an element here,
+- [01:21:49,730 - 01:21:50,330] an element here,
+- [01:21:50,370 - 01:21:51,030] and an element here.
+- [01:21:51,810 - 01:21:53,010] That's dx1 squared,
+- [01:21:53,210 - 01:21:54,230] here's dx2 squared,
+- [01:21:54,390 - 01:21:55,370] here's dx3 squared,
+- [01:21:55,510 - 01:21:56,330] dx4 squared.
+- [01:21:56,850 - 01:21:57,670] We have the 1,
+- [01:21:57,670 - 01:21:58,250] 2 element,
+- [01:21:58,530 - 01:21:58,890] the 1,
+- [01:21:58,890 - 01:21:59,190] 3,
+- [01:21:59,190 - 01:21:59,570] and the 1,
+- [01:21:59,570 - 01:21:59,850] 4,
+- [01:22:00,510 - 01:22:01,110] the 2,
+- [01:22:01,110 - 01:22:01,390] 3,
+- [01:22:01,390 - 01:22:01,850] the 2,
+- [01:22:01,850 - 01:22:02,130] 4,
+- [01:22:02,130 - 01:22:02,970] and the 3,
+- [01:22:02,970 - 01:22:03,170] 4.
+- [01:22:04,430 - 01:22:04,830] But,
+- [01:22:04,830 - 01:22:07,710] we don't need to count separately the 1,
+- [01:22:07,710 - 01:22:08,450] 2 and the 2,
+- [01:22:08,450 - 01:22:08,650] 1,
+- [01:22:09,050 - 01:22:10,590] so we don't have to put anything,
+- [01:22:10,590 - 01:22:12,010] any new ones down here.
+- [01:22:13,310 - 01:22:14,210] How many are there?
+- [01:22:20,330 - 01:22:23,550] 10 independent components of Gmn.
+- [01:22:24,630 - 01:22:25,430] As you say,
+- [01:22:25,430 - 01:22:27,970] in 3 dimensions it would be 6.
+- [01:22:28,230 - 01:22:29,150] How about in 2 dimensions?
+- [01:22:33,050 - 01:22:35,950] The 2 diagonal elements and 1 off-diagonal,
+- [01:22:35,990 - 01:22:37,360] which you can take to be
+- [01:22:37,360 - 01:22:38,730] the same as the other off-diagonal.
+- [01:22:40,390 - 01:22:40,870] Okay,
+- [01:22:40,870 - 01:22:41,190] so,
+- [01:22:41,190 - 01:22:43,290] 10 independent elements
+- [01:22:43,290 - 01:22:44,450] to the metric tensor.
+- [01:22:44,950 - 01:22:45,810] So far,
+- [01:22:45,810 - 01:22:47,030] we haven't proved it's a tensor.
+- [01:22:48,370 - 01:22:50,690] I call it the metric tensor,
+- [01:22:50,930 - 01:22:54,590] but let's now prove that it's a tensor.
+- [01:22:58,790 - 01:22:59,390] Gmn.
+- [01:23:01,090 - 01:23:01,690] Now,
+- [01:23:01,690 - 01:23:03,510] the basic guiding principle
+- [01:23:04,229 - 01:23:06,410] is that the length of the vector is a scalar.
+- [01:23:07,050 - 01:23:08,430] We have a little vector somewhere,
+- [01:23:09,769 - 01:23:12,130] everybody agrees on the length of it,
+- [01:23:12,130 - 01:23:14,310] although they don't agree on its components.
+- [01:23:15,190 - 01:23:17,950] That's the underlying principle about a metric space,
+- [01:23:18,750 - 01:23:21,550] that the length of a vector is a scalar,
+- [01:23:21,670 - 01:23:23,950] that everybody agrees about the length of the vector.
+- [01:23:25,430 - 01:23:25,870] Okay?
+- [01:23:27,750 - 01:23:28,190] So,
+- [01:23:28,190 - 01:23:30,150] let's go from x coordinates,
+- [01:23:30,290 - 01:23:31,030] what happened to our,
+- [01:23:31,030 - 01:23:31,390] I thought I,
+- [01:23:31,450 - 01:23:32,290] didn't I move this?
+- [01:23:33,250 - 01:23:33,690] Oh,
+- [01:23:33,690 - 01:23:34,030] well,
+- [01:23:34,030 - 01:23:34,350] no,
+- [01:23:34,350 - 01:23:35,810] I did move it,
+- [01:23:35,810 - 01:23:35,970] but,
+- [01:23:38,550 - 01:23:40,050] seems to me I've seen that before.
+- [01:23:54,810 - 01:23:55,210] Alright,
+- [01:23:55,210 - 01:23:57,270] so the length of the little dx vector,
+- [01:23:58,950 - 01:23:59,650] here it is,
+- [01:23:59,650 - 01:24:00,270] I'll write it again,
+- [01:24:00,410 - 01:24:01,130] the squared length,
+- [01:24:01,130 - 01:24:01,990] the squared length,
+- [01:24:03,030 - 01:24:08,950] is gmn of x dxm dxn.
+- [01:24:10,110 - 01:24:12,050] But now let's go to the y coordinate,
+- [01:24:12,050 - 01:24:13,190] the y coordinates,
+- [01:24:13,190 - 01:24:14,370] the primed coordinates.
+- [01:24:14,930 - 01:24:17,830] This must be equal to gm,
+- [01:24:18,750 - 01:24:19,710] let's call it,
+- [01:24:19,710 - 01:24:20,510] oh,
+- [01:24:20,510 - 01:24:22,370] let's call it g,
+- [01:24:23,970 - 01:24:24,730] I don't know,
+- [01:24:24,730 - 01:24:25,730] call it gpq,
+- [01:24:25,830 - 01:24:27,070] I don't want to use the same index,
+- [01:24:27,270 - 01:24:29,250] gpq dy,
+- [01:24:35,450 - 01:24:36,410] dyp dyq.
+- [01:24:36,790 - 01:24:37,130] Now,
+- [01:24:37,130 - 01:24:37,830] there's something wrong,
+- [01:24:37,830 - 01:24:38,930] this isn't quite right.
+- [01:24:40,489 - 01:24:42,599] That's because this should be
+- [01:24:42,599 - 01:24:44,710] the primed components of the tensor.
+- [01:24:46,010 - 01:24:49,030] The tensor in the primed coordinates,
+- [01:24:49,050 - 01:24:50,650] in the y coordinates,
+- [01:24:50,650 - 01:24:51,110] y.
+- [01:24:58,770 - 01:24:59,490] Okay,
+- [01:24:59,490 - 01:25:01,070] let's rewrite this
+- [01:25:01,870 - 01:25:04,330] by writing that dxm
+- [01:25:04,330 - 01:25:08,790] is equal to partial of xm,
+- [01:25:08,930 - 01:25:14,190] with respect to yp dyp.
+- [01:25:14,729 - 01:25:16,670] The little differential element
+- [01:25:16,670 - 01:25:20,190] of x separation
+- [01:25:20,930 - 01:25:23,450] is the derivative of x with respect to y,
+- [01:25:23,710 - 01:25:25,190] times the little change in y.
+- [01:25:26,650 - 01:25:29,370] And let's do the same thing for dxn.
+- [01:25:31,250 - 01:25:34,490] dxn is equal to partial of xn,
+- [01:25:34,730 - 01:25:36,230] with respect to yq,
+- [01:25:38,810 - 01:25:39,450] dyq.
+- [01:25:44,510 - 01:25:47,750] And now plug these two expressions into here.
+- [01:25:49,170 - 01:25:49,810] Okay,
+- [01:25:49,810 - 01:25:50,990] so what will we get?
+- [01:25:51,050 - 01:25:52,410] We'll get that this is equal to
+- [01:25:53,910 - 01:25:55,670] gmn of x,
+- [01:25:55,990 - 01:25:56,830] and now,
+- [01:25:57,530 - 01:26:01,030] partial of xm with respect to yp,
+- [01:26:02,850 - 01:26:06,210] partial of xn with respect to yq,
+- [01:26:07,610 - 01:26:08,730] dyp dyq.
+- [01:26:15,350 - 01:26:15,910] So,
+- [01:26:15,910 - 01:26:17,470] look at this side over here,
+- [01:26:18,030 - 01:26:19,470] and look at this side over here.
+- [01:26:20,230 - 01:26:21,590] This has dyp,
+- [01:26:21,590 - 01:26:22,310] dyq,
+- [01:26:22,490 - 01:26:23,590] this has dyp,
+- [01:26:23,590 - 01:26:24,410] dyq.
+- [01:26:24,810 - 01:26:26,390] This object over here
+- [01:26:27,650 - 01:26:29,470] must be g prime.
+- [01:26:32,030 - 01:26:33,390] They play the same role.
+- [01:26:33,390 - 01:26:35,170] This is the set of objects,
+- [01:26:35,430 - 01:26:36,310] the pq objects,
+- [01:26:37,170 - 01:26:39,870] which you multiply by dyp dyq,
+- [01:26:40,010 - 01:26:41,530] to find the length of the vector.
+- [01:26:41,710 - 01:26:44,030] And so we found the transformation property.
+- [01:26:45,150 - 01:26:47,490] The metric tensor in the primed frame
+- [01:26:47,490 - 01:26:51,510] is given by the metric tensor in the unprimed frame,
+- [01:26:51,730 - 01:26:53,270] times our good old friends,
+- [01:26:53,470 - 01:26:54,570] dx by dy,
+- [01:26:54,570 - 01:26:56,010] times dx by dy.
+- [01:26:56,390 - 01:26:59,090] This is just exactly the transformation property
+- [01:26:59,790 - 01:27:01,690] of a tensor,
+- [01:27:01,690 - 01:27:04,030] a tensor with two covariant indices.
+- [01:27:05,490 - 01:27:06,130] So,
+- [01:27:06,130 - 01:27:08,030] we discover that the metric tensor
+- [01:27:08,030 - 01:27:10,390] is indeed really a tensor.
+- [01:27:12,430 - 01:27:15,170] That's the first fact about the metric tensor.
+- [01:27:15,410 - 01:27:16,670] It really is a tensor.
+- [01:27:18,690 - 01:27:20,550] It transforms as a tensor.
+- [01:27:28,250 - 01:27:29,410] And it has,
+- [01:27:29,410 - 01:27:29,590] uh,
+- [01:27:32,250 - 01:27:33,290] many applications.
+- [01:27:35,270 - 01:27:36,850] Any questions about the metric?
+- [01:27:36,930 - 01:27:38,450] We're going to say more about it in a minute,
+- [01:27:38,450 - 01:27:38,690] but,
+- [01:27:38,690 - 01:27:39,090] uh...
+- [01:27:42,590 - 01:27:43,110] Okay,
+- [01:27:43,110 - 01:27:44,230] let me go on.
+- [01:27:44,670 - 01:27:45,890] We're getting a little bit late.
+- [01:27:47,730 - 01:27:50,730] The metric tensor has two lower indices,
+- [01:27:50,950 - 01:27:53,550] and that's because it multiplies
+- [01:27:53,550 - 01:27:55,850] these differential displacements,
+- [01:27:55,850 - 01:27:56,930] which have upper indices.
+- [01:27:57,390 - 01:27:57,870] Okay?
+- [01:27:58,450 - 01:27:58,970] Now,
+- [01:27:58,970 - 01:28:00,170] the metric tensor,
+- [01:28:01,710 - 01:28:03,570] is also just a matrix.
+- [01:28:03,910 - 01:28:05,170] It's a matrix with,
+- [01:28:05,170 - 01:28:05,470] uh,
+- [01:28:05,770 - 01:28:07,230] m-n indices.
+- [01:28:07,790 - 01:28:09,170] This is just a matrix,
+- [01:28:09,170 - 01:28:10,110] g-m-n.
+- [01:28:12,630 - 01:28:13,850] g-1-1,
+- [01:28:13,850 - 01:28:14,590] g-1-...
+- [01:28:14,590 - 01:28:15,130] I'll write it in,
+- [01:28:15,130 - 01:28:15,450] uh,
+- [01:28:15,450 - 01:28:16,550] for three-dimensional space,
+- [01:28:16,770 - 01:28:17,470] g-3-3,
+- [01:28:17,470 - 01:28:19,170] g-1-2,
+- [01:28:19,430 - 01:28:20,730] g-1-2,
+- [01:28:21,690 - 01:28:22,910] g-1-3,
+- [01:28:23,130 - 01:28:24,030] g-3,
+- [01:28:24,030 - 01:28:24,330] uh,
+- [01:28:24,330 - 01:28:25,510] 2-3.
+- [01:28:26,330 - 01:28:27,070] And it's...
+- [01:28:27,070 - 01:28:27,710] and furthermore,
+- [01:28:27,730 - 01:28:28,890] it's a symmetric matrix.
+- [01:28:29,510 - 01:28:31,370] g-1-2 and g-1-2,
+- [01:28:31,690 - 01:28:33,110] g-1-3 and g-1-3,
+- [01:28:35,130 - 01:28:36,690] g-2-3 over here.
+- [01:28:38,230 - 01:28:38,630] Yeah,
+- [01:28:38,630 - 01:28:39,790] you can call this g-3-1,
+- [01:28:39,910 - 01:28:40,930] but it might as well be
+- [01:28:40,930 - 01:28:41,950] taken to be equal to g-1-3,
+- [01:28:42,890 - 01:28:43,290] because...
+- [01:28:43,990 - 01:28:47,370] dx-1 times dx-3 is the same as dx-3 times dx-1.
+- [01:28:48,450 - 01:28:49,850] So you can just take the...
+- [01:28:49,850 - 01:28:51,310] you can take it to be a symmetric matrix.
+- [01:28:52,290 - 01:28:52,690] Now,
+- [01:28:52,690 - 01:28:54,430] what do we know about symmetric matrices?
+- [01:28:54,490 - 01:28:56,210] There's one more fact about this matrix.
+- [01:28:57,310 - 01:28:58,870] Thought of as a matrix,
+- [01:28:59,310 - 01:29:00,630] it has eigenvalues.
+- [01:29:01,890 - 01:29:04,390] The eigenvalues are never zero.
+- [01:29:04,830 - 01:29:07,390] And the reason that eigenvalues are never zero
+- [01:29:07,390 - 01:29:09,130] is because a zero eigenvalue
+- [01:29:09,130 - 01:29:12,890] would correspond to a little vector of zero length.
+- [01:29:14,050 - 01:29:16,930] And there are no vectors of zero length in a,
+- [01:29:16,930 - 01:29:17,210] uh,
+- [01:29:17,370 - 01:29:17,590] you know,
+- [01:29:17,590 - 01:29:18,050] all of...
+- [01:29:18,050 - 01:29:20,530] every direction has a length associated with it.
+- [01:29:21,710 - 01:29:24,450] What do you know about matrices which are symmetric
+- [01:29:24,450 - 01:29:26,390] and don't have zero eigenvalues?
+- [01:29:26,530 - 01:29:26,970] Do you know anything?
+- [01:29:28,530 - 01:29:29,090] One,
+- [01:29:29,090 - 01:29:30,290] they are Hermitian.
+- [01:29:31,690 - 01:29:32,610] But they're also invertible.
+- [01:29:32,770 - 01:29:33,670] In other words,
+- [01:29:33,670 - 01:29:34,690] they have inverses.
+- [01:29:35,750 - 01:29:38,050] The metric tensor has an inverse.
+- [01:29:39,250 - 01:29:41,910] That means that there's a matrix
+- [01:29:43,130 - 01:29:45,970] which when you multiply by the metric tensor,
+- [01:29:46,190 - 01:29:47,210] by the metric matrix,
+- [01:29:47,490 - 01:29:48,910] gives you the unit matrix.
+- [01:29:49,290 - 01:29:50,670] I'm going to write the equation down,
+- [01:29:51,450 - 01:29:52,610] and then we'll see what,
+- [01:29:52,610 - 01:29:52,770] uh,
+- [01:29:53,570 - 01:29:54,270] what it means.
+- [01:29:54,790 - 01:29:56,530] The inverse matrix,
+- [01:29:56,910 - 01:30:00,070] the inverse matrix to the metric tensor,
+- [01:30:00,070 - 01:30:02,650] is also called G,
+- [01:30:05,130 - 01:30:07,310] but you put the indices upstairs.
+- [01:30:08,310 - 01:30:08,990] G,
+- [01:30:08,990 - 01:30:09,530] M,
+- [01:30:09,530 - 01:30:10,270] N upstairs.
+- [01:30:12,610 - 01:30:13,290] G,
+- [01:30:13,290 - 01:30:13,710] M,
+- [01:30:13,710 - 01:30:15,130] N with indices upstairs
+- [01:30:15,130 - 01:30:16,650] is also a tensor,
+- [01:30:18,190 - 01:30:20,650] and it's defined by the property,
+- [01:30:20,730 - 01:30:21,830] by the defining property
+- [01:30:22,610 - 01:30:24,110] that as a matrix,
+- [01:30:24,470 - 01:30:27,510] it's the inverse of the matrix with two lower components.
+- [01:30:28,490 - 01:30:30,050] Now how do you write that?
+- [01:30:30,070 - 01:30:31,550] This is the last thing we're going to do tonight.
+- [01:30:32,190 - 01:30:33,410] How do you write the fact?
+- [01:30:33,490 - 01:30:34,590] If we have two matrices,
+- [01:30:34,770 - 01:30:36,210] let's just take two matrices,
+- [01:30:36,210 - 01:30:36,870] A and B.
+- [01:30:37,490 - 01:30:38,690] One is called A,
+- [01:30:38,690 - 01:30:39,090] M,
+- [01:30:39,090 - 01:30:39,430] N,
+- [01:30:40,029 - 01:30:41,610] and the other is called,
+- [01:30:41,610 - 01:30:41,930] uh,
+- [01:30:44,769 - 01:30:45,230] uh,
+- [01:30:45,230 - 01:30:45,690] B,
+- [01:30:45,690 - 01:30:47,590] uh,
+- [01:30:47,590 - 01:30:49,730] P,
+- [01:30:49,730 - 01:30:50,010] Q.
+- [01:30:50,770 - 01:30:53,010] How do we multiply two matrices together?
+- [01:30:53,310 - 01:30:55,470] We multiply two matrices together
+- [01:30:56,870 - 01:30:58,670] by identifying an index
+- [01:31:01,609 - 01:31:03,190] and summing over the index.
+- [01:31:04,190 - 01:31:06,350] And that gives us the product of the matrix,
+- [01:31:06,470 - 01:31:07,830] the MQth product.
+- [01:31:08,370 - 01:31:09,430] I'm going to write the equation,
+- [01:31:09,630 - 01:31:12,430] and I think you'll recognize it,
+- [01:31:12,510 - 01:31:12,930] but if not,
+- [01:31:12,930 - 01:31:13,910] we're going to come back to it.
+- [01:31:16,129 - 01:31:16,570] G,
+- [01:31:16,570 - 01:31:17,010] M,
+- [01:31:17,010 - 01:31:17,650] N
+- [01:31:18,849 - 01:31:19,730] times G,
+- [01:31:19,730 - 01:31:20,850] N,
+- [01:31:20,850 - 01:31:22,070] let's call it P,
+- [01:31:22,710 - 01:31:23,710] summed over N,
+- [01:31:23,710 - 01:31:24,350] contracted.
+- [01:31:25,090 - 01:31:27,010] This is a legitimate expression here
+- [01:31:27,010 - 01:31:27,810] if G,
+- [01:31:27,810 - 01:31:28,310] N,
+- [01:31:28,310 - 01:31:29,530] P is truly a tensor.
+- [01:31:30,470 - 01:31:31,170] If G,
+- [01:31:31,170 - 01:31:31,430] N,
+- [01:31:31,430 - 01:31:33,410] P is truly a tensor with the upstairs index,
+- [01:31:34,009 - 01:31:36,990] then this is a legitimate product of two tensors
+- [01:31:36,990 - 01:31:39,050] with the index N contracted.
+- [01:31:42,130 - 01:31:44,530] Can you guess what the answer is for this product?
+- [01:31:46,270 - 01:31:46,750] Equals...
+- [01:31:49,629 - 01:31:50,590] Delta M,
+- [01:31:50,590 - 01:31:51,550] P.
+- [01:31:52,070 - 01:31:53,230] What is Delta M,
+- [01:31:53,230 - 01:31:53,510] P?
+- [01:31:53,870 - 01:31:54,690] That's a matrix,
+- [01:31:54,690 - 01:31:55,590] thought of as a matrix.
+- [01:31:57,590 - 01:31:58,790] It's the unit matrix,
+- [01:31:58,790 - 01:31:59,790] the identity matrix.
+- [01:31:59,790 - 01:32:00,050] It's the unit matrix,
+- [01:32:00,050 - 01:32:00,050] the identity matrix.
+- [01:32:00,070 - 01:32:01,530] It's the identity matrix.
+- [01:32:01,890 - 01:32:03,610] What this equation says
+- [01:32:03,610 - 01:32:06,090] is the product of the matrix G,
+- [01:32:06,090 - 01:32:06,390] M,
+- [01:32:06,390 - 01:32:06,590] N
+- [01:32:06,590 - 01:32:08,030] with the matrix G,
+- [01:32:08,030 - 01:32:08,430] N,
+- [01:32:08,430 - 01:32:09,490] P with upper indices
+- [01:32:09,490 - 01:32:10,810] is the unit matrix.
+- [01:32:11,050 - 01:32:13,990] It identifies this object over here
+- [01:32:14,650 - 01:32:16,990] as the inverse matrix to this.
+- [01:32:19,210 - 01:32:21,810] This is called the metric tensor
+- [01:32:21,810 - 01:32:23,870] with contravariant indices,
+- [01:32:24,070 - 01:32:25,290] two contravariant indices.
+- [01:32:25,850 - 01:32:28,830] This is the metric tensor with two covariant indices.
+- [01:32:30,070 - 01:32:32,250] This is the metric tensor with one contravariant
+- [01:32:32,750 - 01:32:33,890] and one covariant index.
+- [01:32:35,310 - 01:32:37,230] But in any case,
+- [01:32:37,230 - 01:32:40,350] the definition of this matrix over here
+- [01:32:40,350 - 01:32:41,350] is just the inverse.
+- [01:32:43,330 - 01:32:47,330] And the inverse is such that when you multiply it
+- [01:32:47,330 - 01:32:48,230] with the original matrix,
+- [01:32:48,230 - 01:32:49,990] you get the identity matrix back.
+- [01:32:50,330 - 01:32:52,310] This will play an important role,
+- [01:32:52,470 - 01:32:55,710] the fact that there is a metric tensor
+- [01:32:55,710 - 01:32:58,210] with upstairs indices and downstairs indices.
+- [01:32:58,450 - 01:32:59,190] And we'll come to it.
+- [01:32:59,190 - 01:33:00,370] I think we'll quit for tonight.
+- [01:33:00,510 - 01:33:01,910] I think we've done enough for tonight.
+- [01:33:03,570 - 01:33:05,330] We'll talk just a little bit more
+- [01:33:05,330 - 01:33:07,190] about the metric tensor next time.
+- [01:33:07,550 - 01:33:10,810] And then we'll go on to the subject of curvature.
+- [01:33:12,170 - 01:33:14,470] The subject of parallel transport,
+- [01:33:14,470 - 01:33:15,370] curvature,
+- [01:33:15,710 - 01:33:17,550] differentiation of tensors.
+- [01:33:18,290 - 01:33:19,210] So far,
+- [01:33:19,210 - 01:33:21,010] everything I've told you is easy.
+- [01:33:21,150 - 01:33:22,410] It's just getting the notation
+- [01:33:22,410 - 01:33:24,290] and following the notation.
+- [01:33:25,530 - 01:33:28,170] The idea of a covariant derivative
+- [01:33:28,170 - 01:33:29,510] is a little more complicated,
+- [01:33:29,510 - 01:33:30,330] not much.
+- [01:33:31,310 - 01:33:31,790] And,
+- [01:33:31,790 - 01:33:32,430] um,
+- [01:33:32,430 - 01:33:34,090] but it's essential.
+- [01:33:34,530 - 01:33:36,019] We have to know how
+- [01:33:36,019 - 01:33:37,509] to differentiate things in a space
+- [01:33:37,509 - 01:33:38,930] if we're going to do anything useful.
+- [01:33:39,750 - 01:33:40,670] In particular,
+- [01:33:40,670 - 01:33:42,549] if we're going to study whether the space is flat,
+- [01:33:43,069 - 01:33:44,679] we have to know how
+- [01:33:44,679 - 01:33:46,289] things vary from point to point.
+- [01:33:47,029 - 01:33:49,470] The question of whether a space is flat or not
+- [01:33:49,470 - 01:33:50,690] has to do,
+- [01:33:50,690 - 01:33:52,170] fundamentally has to do,
+- [01:33:52,269 - 01:33:54,509] with derivatives of the metric tensor.
+- [01:33:54,750 - 01:33:57,509] And the character and nature of the derivatives
+- [01:33:57,509 - 01:33:58,529] of the metric tensor.
+- [01:33:59,870 - 01:34:01,190] So the next time,
+- [01:34:01,190 - 01:34:02,470] we'll talk a little bit about
+- [01:34:02,470 - 01:34:04,030] tensor calculus,
+- [01:34:04,030 - 01:34:06,990] differentiation of tensors,
+- [01:34:07,150 - 01:34:08,130] and,
+- [01:34:08,130 - 01:34:08,610] um,
+- [01:34:08,610 - 01:34:12,430] and especially the notion of curvature.
+- [01:34:12,710 - 01:34:13,810] I hope we get to curvature.
+- [01:34:14,430 - 01:34:15,030] Yeah?
+- [01:34:15,430 - 01:34:17,710] I'm a little confused about what space
+- [01:34:18,510 - 01:34:19,590] these things are.
+- [01:34:20,550 - 01:34:24,570] You've got the space you drew on the board originally.
+- [01:34:24,990 - 01:34:25,190] Yeah.
+- [01:34:25,830 - 01:34:26,430] And...
+- [01:34:27,510 - 01:34:30,070] You've got the space coordinates
+- [01:34:30,070 - 01:34:32,510] that we've been transforming about.
+- [01:34:33,390 - 01:34:35,570] And at each point there...
+- [01:34:35,570 - 01:34:35,910] Mm-hmm.
+- [01:34:36,470 - 01:34:39,490] ...there can be a value,
+- [01:34:39,490 - 01:34:40,170] a scalar,
+- [01:34:40,170 - 01:34:40,810] a vector,
+- [01:34:40,990 - 01:34:42,790] a three-dimensional vector,
+- [01:34:42,790 - 01:34:43,250] something.
+- [01:34:43,370 - 01:34:48,170] But those things don't live in that space,
+- [01:34:48,170 - 01:34:48,790] do they?
+- [01:34:48,930 - 01:34:49,230] Well,
+- [01:34:49,230 - 01:34:51,070] they're functions of position in the space.
+- [01:34:51,190 - 01:34:51,410] That's right.
+- [01:34:51,530 - 01:34:54,410] But then they have to live in their own space,
+- [01:34:54,410 - 01:34:54,710] it seems.
+- [01:34:54,730 - 01:34:55,230] But they have...
+- [01:34:55,230 - 01:34:55,470] Yeah,
+- [01:34:55,470 - 01:34:57,070] but remember that they have the space
+- [01:34:57,510 - 01:34:59,190] that they live in has the same dimensionality
+- [01:35:00,649 - 01:35:03,090] as the number of indices.
+- [01:35:03,770 - 01:35:04,170] One,
+- [01:35:04,170 - 01:35:04,370] two,
+- [01:35:04,370 - 01:35:06,110] three is the dimensionality of the space,
+- [01:35:06,110 - 01:35:07,550] and it's the same as the number of coordinates.
+- [01:35:07,850 - 01:35:08,950] That's just my theory.
+- [01:35:09,650 - 01:35:10,910] It's got to be like that,
+- [01:35:10,910 - 01:35:11,450] or...
+- [01:35:11,450 - 01:35:12,090] I mean,
+- [01:35:12,090 - 01:35:13,550] I think you could instruct...
+- [01:35:13,550 - 01:35:14,030] Yeah,
+- [01:35:14,030 - 01:35:14,170] yeah.
+- [01:35:14,230 - 01:35:18,550] ...a math from the points of the three-dimensional space
+- [01:35:18,550 - 01:35:20,790] to a two-dimensional space.
+- [01:35:20,790 - 01:35:21,110] You could,
+- [01:35:21,110 - 01:35:21,890] you could,
+- [01:35:21,890 - 01:35:22,490] you could,
+- [01:35:22,490 - 01:35:22,970] but these...
+- [01:35:22,970 - 01:35:23,310] All right,
+- [01:35:23,310 - 01:35:23,590] all right,
+- [01:35:23,590 - 01:35:24,010] so what...
+- [01:35:24,010 - 01:35:24,210] All right,
+- [01:35:24,210 - 01:35:26,070] so let me give you another answer
+- [01:35:26,070 - 01:35:28,810] to tell you what space these things live in.
+- [01:35:30,770 - 01:35:35,130] Here is the curved or uncurved space that...
+- [01:35:35,829 - 01:35:36,470] Well,
+- [01:35:36,470 - 01:35:36,790] maybe,
+- [01:35:36,790 - 01:35:39,750] that everything is a function of.
+- [01:35:40,410 - 01:35:40,650] All right?
+- [01:35:40,650 - 01:35:42,990] At every point on that space,
+- [01:35:43,849 - 01:35:45,870] there is what's called a tangent space.
+- [01:35:46,810 - 01:35:50,250] The tangent space has exactly the same dimensionality
+- [01:35:50,810 - 01:35:52,110] as the space itself,
+- [01:35:52,390 - 01:35:53,750] but roughly speaking,
+- [01:35:53,750 - 01:35:55,370] you can think of it as...
+- [01:35:56,070 - 01:35:58,230] a space of flat planes,
+- [01:35:59,010 - 01:36:01,010] which are connected to every point.
+- [01:36:05,050 - 01:36:06,210] At every point,
+- [01:36:06,210 - 01:36:07,350] there is a tangent space.
+- [01:36:08,310 - 01:36:11,350] The tangent space has the same dimensionality
+- [01:36:11,350 - 01:36:12,330] as the space itself,
+- [01:36:12,650 - 01:36:15,330] and a mathematician would say that these tensors
+- [01:36:15,330 - 01:36:16,510] live in the tangent space.
+- [01:36:18,050 - 01:36:20,030] I don't know if that helps you or not.
+- [01:36:20,430 - 01:36:20,750] It does help.
+- [01:36:20,870 - 01:36:21,490] It does help,
+- [01:36:21,490 - 01:36:21,790] okay.
+- [01:36:22,010 - 01:36:24,230] The tensors,
+- [01:36:24,230 - 01:36:24,590] vectors,
+- [01:36:24,590 - 01:36:25,350] and so forth,
+- [01:36:25,350 - 01:36:26,850] live in the tangent space.
+- [01:36:27,090 - 01:36:30,030] They have components in the tangent space,
+- [01:36:34,090 - 01:36:37,250] and that's the mathematical way
+- [01:36:37,250 - 01:36:38,970] to describe the space that they live in.
+- [01:36:39,590 - 01:36:40,130] Question?
+- [01:36:40,530 - 01:36:40,710] Yeah.
+- [01:36:44,530 - 01:36:45,610] The delta...
+- [01:36:47,430 - 01:36:47,970] Laura,
+- [01:36:47,970 - 01:36:48,810] can't hear you.
+- [01:36:49,290 - 01:36:49,750] I'm sorry.
+- [01:36:49,990 - 01:36:50,170] Yeah.
+- [01:36:50,270 - 01:36:51,510] The equation,
+- [01:36:51,510 - 01:36:53,230] last equation you have there,
+- [01:36:53,230 - 01:36:55,590] can only be the identity matrix
+- [01:36:56,150 - 01:36:57,130] if M equals P.
+- [01:36:57,970 - 01:36:59,490] Does it still make sense if
+- [01:36:59,490 - 01:37:01,010] M is not equal to P?
+- [01:37:01,310 - 01:37:01,550] No,
+- [01:37:01,550 - 01:37:01,650] no,
+- [01:37:01,650 - 01:37:01,770] no,
+- [01:37:01,770 - 01:37:01,870] no.
+- [01:37:02,070 - 01:37:04,560] This is a symbol which is
+- [01:37:04,560 - 01:37:07,050] 0 if M does not equal P,
+- [01:37:07,770 - 01:37:09,610] and 1 if M does equal P.
+- [01:37:10,150 - 01:37:12,610] The equation makes sense for every M and P.
+- [01:37:12,930 - 01:37:14,190] For example,
+- [01:37:14,190 - 01:37:16,710] it says that G1n,
+- [01:37:16,710 - 01:37:20,850] Gn2 is equal to 0.
+- [01:37:21,430 - 01:37:24,010] It says that G1n,
+- [01:37:24,010 - 01:37:25,950] Gn1,
+- [01:37:25,950 - 01:37:26,850] whoops,
+- [01:37:26,850 - 01:37:28,750] 1 equals 1.
+- [01:37:30,270 - 01:37:33,150] So there's an equation for each M and P.
+- [01:37:34,430 - 01:37:37,230] Some of them say that the right-hand side is 0,
+- [01:37:37,370 - 01:37:38,440] and some of them say
+- [01:37:38,440 - 01:37:39,510] that the right-hand side is 1.
+- [01:37:39,750 - 01:37:40,870] I understand that.
+- [01:37:41,430 - 01:37:42,330] I'm asking,
+- [01:37:42,330 - 01:37:46,230] you also said that it was the identity matrix,
+- [01:37:46,470 - 01:37:48,870] and that's only true for that one case.
+- [01:37:50,250 - 01:37:50,770] The...
+- [01:37:50,770 - 01:37:53,670] M not equal to P also makes sense.
+- [01:37:53,730 - 01:37:55,250] It's just not an identity matrix.
+- [01:37:55,510 - 01:37:55,690] No,
+- [01:37:55,690 - 01:37:55,830] no,
+- [01:37:55,830 - 01:37:56,010] no,
+- [01:37:56,010 - 01:37:56,230] no,
+- [01:37:56,230 - 01:37:56,430] no,
+- [01:37:56,430 - 01:37:56,690] no,
+- [01:37:56,690 - 01:37:56,970] no,
+- [01:37:56,970 - 01:37:57,370] no,
+- [01:37:57,370 - 01:37:58,010] no,
+- [01:37:58,010 - 01:37:58,050] no,
+- [01:37:58,050 - 01:37:58,230] no,
+- [01:37:58,230 - 01:37:58,510] no,
+- [01:37:58,510 - 01:37:58,590] no,
+- [01:37:58,590 - 01:37:58,670] no.
+- [01:37:58,670 - 01:37:59,050] You're missing...
+- [01:37:59,050 - 01:37:59,150] no,
+- [01:37:59,150 - 01:37:59,510] no,
+- [01:37:59,510 - 01:37:59,830] no,
+- [01:37:59,830 - 01:38:00,130] no.
+- [01:38:00,490 - 01:38:03,090] This whole thing is the identity matrix.
+- [01:38:04,190 - 01:38:05,770] It's not a particular component
+- [01:38:05,770 - 01:38:07,350] of it is the identity matrix.
+- [01:38:07,430 - 01:38:09,150] This whole thing is the matrix...
+- [01:38:09,150 - 01:38:09,350] All right,
+- [01:38:09,350 - 01:38:10,190] so let's write it out.
+- [01:38:10,510 - 01:38:12,250] Let's write it out for 2 by 2.
+- [01:38:12,770 - 01:38:13,530] 2 by 2.
+- [01:38:14,410 - 01:38:15,510] Two-dimensional space.
+- [01:38:16,090 - 01:38:19,070] This would be G...
+- [01:38:19,070 - 01:38:19,650] Let's...
+- [01:38:21,190 - 01:38:21,650] Well...
+- [01:38:23,550 - 01:38:26,710] The right-hand side is the matrix 1,
+- [01:38:26,710 - 01:38:27,170] 0,
+- [01:38:27,170 - 01:38:27,570] 0,
+- [01:38:27,570 - 01:38:28,250] 1.
+- [01:38:29,090 - 01:38:29,550] Okay?
+- [01:38:29,950 - 01:38:31,050] Let's actually do it.
+- [01:38:31,630 - 01:38:32,090] Okay.
+- [01:38:33,190 - 01:38:33,970] Let's do it.
+- [01:38:33,990 - 01:38:34,410] This is...
+- [01:38:35,190 - 01:38:36,590] It's going to be a pain in the neck,
+- [01:38:36,590 - 01:38:37,470] but let's write it out.
+- [01:38:38,950 - 01:38:42,050] We start with a matrix which is G11,
+- [01:38:42,050 - 01:38:43,390] with lower indices,
+- [01:38:46,150 - 01:38:46,610] G12,
+- [01:38:46,610 - 01:38:47,070] G...
+- [01:38:47,070 - 01:38:48,150] I'll call it 2,
+- [01:38:48,150 - 01:38:48,370] 1,
+- [01:38:48,370 - 01:38:50,570] but G21 is the same as G12,
+- [01:38:51,290 - 01:38:52,130] and G22.
+- [01:38:55,110 - 01:38:55,930] That's this matrix.
+- [01:38:56,270 - 01:38:58,220] Now we multiply it by
+- [01:38:58,220 - 01:39:00,170] another matrix whose indices are upstairs,
+- [01:39:01,090 - 01:39:03,330] and this is G11,
+- [01:39:03,330 - 01:39:05,170] G12,
+- [01:39:05,170 - 01:39:08,230] G21,
+- [01:39:08,230 - 01:39:09,990] G22.
+- [01:39:12,110 - 01:39:13,490] Let's multiply it.
+- [01:39:13,890 - 01:39:15,410] You don't need to do that.
+- [01:39:15,410 - 01:39:15,650] What you have...
+- [01:39:15,650 - 01:39:17,110] My point is that,
+- [01:39:17,110 - 01:39:18,210] in that case,
+- [01:39:18,210 - 01:39:19,550] m equals P.
+- [01:39:21,010 - 01:39:22,590] In what case m equals P?
+- [01:39:22,850 - 01:39:24,510] Why don't you thread down here your example,
+- [01:39:24,510 - 01:39:25,810] m equals P.
+- [01:39:26,030 - 01:39:26,550] And—
+- [01:39:27,390 - 01:39:27,950] Here.
+- [01:39:28,310 - 01:39:28,610] OK.
+- [01:39:28,610 - 01:39:29,730] m is not equal to p.
+- [01:39:30,190 - 01:39:30,630] Sorry.
+- [01:39:30,770 - 01:39:31,490] In your example.
+- [01:39:32,329 - 01:39:33,210] Which example?
+- [01:39:34,510 - 01:39:34,950] Your,
+- [01:39:34,950 - 01:39:35,390] like,
+- [01:39:35,390 - 01:39:36,190] your two matrices.
+- [01:39:36,870 - 01:39:37,430] These two?
+- [01:39:38,670 - 01:39:39,110] Up,
+- [01:39:39,110 - 01:39:39,510] down,
+- [01:39:39,510 - 01:39:39,830] left,
+- [01:39:39,830 - 01:39:40,130] right.
+- [01:39:41,970 - 01:39:42,410] Here.
+- [01:39:43,210 - 01:39:43,650] Okay.
+- [01:39:44,730 - 01:39:45,690] m equals p.
+- [01:39:47,070 - 01:39:48,470] Not the couple of angles.
+- [01:39:49,050 - 01:39:51,670] I think the point is m and p
+- [01:39:51,670 - 01:39:54,290] are all in three space or four space.
+- [01:39:54,370 - 01:39:55,090] They're in the same space.
+- [01:39:55,930 - 01:39:57,990] And that's why the matrix is going to be symmetric.
+- [01:40:00,089 - 01:40:01,450] I'm not sure what you're worried about.
+- [01:40:02,890 - 01:40:03,650] I'm going to write,
+- [01:40:03,650 - 01:40:05,090] I'm going to now write
+- [01:40:05,090 - 01:40:06,530] this equation in its full-blown glory.
+- [01:40:11,890 - 01:40:12,350] Okay.
+- [01:40:12,470 - 01:40:12,730] No,
+- [01:40:12,730 - 01:40:12,910] no,
+- [01:40:12,910 - 01:40:13,190] no,
+- [01:40:13,190 - 01:40:13,510] no,
+- [01:40:13,510 - 01:40:13,670] no.
+- [01:40:13,950 - 01:40:14,410] No,
+- [01:40:14,410 - 01:40:14,650] no,
+- [01:40:14,650 - 01:40:14,810] no.
+- [01:40:15,370 - 01:40:15,830] Right.
+- [01:40:15,950 - 01:40:16,810] So what does it say?
+- [01:40:16,910 - 01:40:18,070] It says that g11,
+- [01:40:18,070 - 01:40:19,730] g11,
+- [01:40:19,730 - 01:40:24,970] g11 plus g12,
+- [01:40:24,970 - 01:40:27,150] g21.
+- [01:40:27,750 - 01:40:28,510] This time.
+- [01:40:28,610 - 01:40:30,650] This plus this times this is equal to 1.
+- [01:40:31,890 - 01:40:32,610] It says,
+- [01:40:32,610 - 01:40:34,010] I'm not going to write all of them.
+- [01:40:34,330 - 01:40:37,240] It says g11 times g12 plus
+- [01:40:37,240 - 01:40:40,150] g12 times g22 is equal to 0.
+- [01:40:40,430 - 01:40:41,950] There's four equations here.
+- [01:40:42,450 - 01:40:43,630] One for each entry.
+- [01:40:44,389 - 01:40:45,270] Four equations.
+- [01:40:45,690 - 01:40:48,690] The product of this times this is equal to 1.
+- [01:40:49,290 - 01:40:53,410] The product of this times this is equal to 0.
+- [01:40:53,910 - 01:40:54,610] And so forth.
+- [01:40:54,690 - 01:40:55,310] I'm not sure what else.
+- [01:40:55,490 - 01:40:56,390] I'm not sure what you're,
+- [01:40:56,390 - 01:40:57,310] what you're.
+- [01:40:57,430 - 01:40:57,790] What's the minus?
+- [01:41:07,369 - 01:41:11,050] It's a sub・・・
+- [01:41:11,050 - 01:41:11,150] No,
+- [01:41:11,150 - 01:41:11,150] 0.
+- [01:41:11,470 - 01:41:11,670] No.
+- [01:41:11,670 - 01:41:12,560] 0 if you're not doing
+- [01:41:12,560 - 01:41:13,450] this solution at the right place.
+- [01:41:13,470 - 01:41:13,990] So 1 minus 0 times g,
+- [01:41:13,990 - 01:41:14,570] 1 minus,
+- [01:41:14,570 - 01:41:14,570] no,
+- [01:41:14,570 - 01:41:14,570] 2.
+- [01:41:14,570 - 01:41:15,130] Right ?
+- [01:41:15,130 - 01:41:15,130] Yeah,
+- [01:41:15,130 - 01:41:15,270] right.
+- [01:41:15,290 - 01:41:17,270] These guys are over 1,
+- [01:41:17,270 - 01:41:17,630] 2,
+- [01:41:17,630 - 01:41:17,850] 3,
+- [01:41:17,850 - 01:41:18,070] 4.
+- [01:41:19,030 - 01:41:28,590] And so it must written 3 by 2 or 3.
+- [01:41:28,590 - 01:41:29,430] or go by 4,
+- [01:41:29,430 - 01:41:30,730] they have to be the same?
+- [01:41:31,150 - 01:41:31,590] Yeah.
+- [01:41:31,850 - 01:41:33,390] They have to be because it's the same space.
+- [01:41:34,849 - 01:41:36,590] Those are indices that go
+- [01:41:36,590 - 01:41:38,830] between the same values.
+- [01:41:38,970 - 01:41:39,290] Yes.
+- [01:41:39,290 - 01:41:41,330] They go from 1 to 3.
+- [01:41:41,670 - 01:41:44,630] Every single one of them runs from
+- [01:41:44,630 - 01:41:47,090] in this case from 1 to 2.
+- [01:41:47,850 - 01:41:49,270] In a three-dimensional case
+- [01:41:49,270 - 01:41:50,710] they would run from 1 to 3.
+- [01:41:51,350 - 01:41:52,490] Each of these would be
+- [01:41:52,490 - 01:41:53,470] square matrices.
+- [01:41:56,050 - 01:41:56,910] N by N
+- [01:41:56,910 - 01:41:57,710] square matrices,
+- [01:41:57,710 - 01:41:58,150] yes.
+- [01:41:58,590 - 01:41:59,510] Is that what you're saying?
+- [01:41:59,890 - 01:42:00,410] Okay,
+- [01:42:00,410 - 01:42:00,770] yeah,
+- [01:42:00,770 - 01:42:01,270] that's true.
+- [01:42:01,270 - 01:42:02,610] They're all square matrices.
+- [01:42:02,650 - 01:42:03,950] All N by N matrices,
+- [01:42:03,950 - 01:42:04,410] right.
+- [01:42:05,150 - 01:42:06,530] But they correspond to
+- [01:42:06,530 - 01:42:07,810] four distinct equations,
+- [01:42:07,810 - 01:42:08,110] well
+- [01:42:09,190 - 01:42:10,490] some number of
+- [01:42:10,490 - 01:42:11,170] distinct equations.
+- [01:42:11,770 - 01:42:13,370] Some number of distinct equations,
+- [01:42:14,090 - 01:42:15,310] each independent component.
+- [01:42:16,130 - 01:42:16,430] Yeah.
+- [01:42:18,570 - 01:42:20,270] Are they positive definite?
+- [01:42:20,390 - 01:42:21,590] Do they have to be positive definite?
+- [01:42:22,190 - 01:42:23,890] Do they have to be positive definite?
+- [01:42:24,550 - 01:42:24,770] Yeah.
+- [01:42:27,050 - 01:42:27,990] Now what do you mean
+- [01:42:27,990 - 01:42:28,410] by positive?
+- [01:42:28,590 - 01:42:28,770] Positive definite.
+- [01:42:29,570 - 01:42:31,390] The eigenvalues for,
+- [01:42:31,390 - 01:42:31,750] okay,
+- [01:42:31,750 - 01:42:31,970] good.
+- [01:42:32,570 - 01:42:35,190] For a conventional space
+- [01:42:36,310 - 01:42:38,330] with a positive metric
+- [01:42:38,330 - 01:42:40,930] where all distances are positive,
+- [01:42:42,610 - 01:42:44,390] the answer is that it has to be
+- [01:42:44,390 - 01:42:45,030] positive definite.
+- [01:42:46,250 - 01:42:48,950] In the context that we will be coming to,
+- [01:42:49,090 - 01:42:49,690] relativity,
+- [01:42:50,550 - 01:42:52,350] they will not be positive definite.
+- [01:42:53,010 - 01:42:54,090] And why is that?
+- [01:42:54,390 - 01:42:56,410] Because if you remember from special
+- [01:42:56,410 - 01:42:56,970] relativity,
+- [01:42:56,970 - 01:42:57,870] the distance,
+- [01:42:57,870 - 01:42:58,570] the space line,
+- [01:42:58,570 - 01:43:00,270] the distance between two points
+- [01:43:00,270 - 01:43:04,810] is t squared minus x squared minus y squared
+- [01:43:04,810 - 01:43:05,710] minus z squared.
+- [01:43:06,450 - 01:43:07,130] Or,
+- [01:43:07,130 - 01:43:08,790] depending on convention,
+- [01:43:09,190 - 01:43:11,710] x squared plus y squared plus z squared
+- [01:43:11,710 - 01:43:13,110] minus t squared.
+- [01:43:14,490 - 01:43:16,830] So the answer in relativity,
+- [01:43:16,830 - 01:43:17,810] in general relativity,
+- [01:43:18,190 - 01:43:20,330] is that it's not positive definite.
+- [01:43:20,810 - 01:43:21,750] But if we were talking,
+- [01:43:21,750 - 01:43:22,590] if we were Riemann,
+- [01:43:22,710 - 01:43:24,770] talking about a conventional geometry
+- [01:43:24,770 - 01:43:26,610] in which all distances are positive,
+- [01:43:26,870 - 01:43:28,550] then the maximum distance between two points,
+- [01:43:28,550 - 01:43:29,750] the metric would be positive definite.
+- [01:43:31,270 - 01:43:32,370] Is that what you're asking?
+- [01:43:32,710 - 01:43:33,190] Yeah,
+- [01:43:33,190 - 01:43:33,590] okay.
+- [01:43:33,730 - 01:43:34,070] But we,
+- [01:43:34,070 - 01:43:34,930] at the moment,
+- [01:43:34,930 - 01:43:35,570] we're just doing
+- [01:43:35,570 - 01:43:36,550] ordinary geometry,
+- [01:43:36,550 - 01:43:37,950] and we will come
+- [01:43:37,950 - 01:43:39,990] to Lorentz geometry.
+- [01:43:41,650 - 01:43:43,910] Lorentz geometry is nothing but throwing in
+- [01:43:43,910 - 01:43:44,550] an extra sign,
+- [01:43:44,550 - 01:43:45,610] the signs.
+- [01:43:45,830 - 01:43:46,470] But we'll come to that.
+- [01:43:47,350 - 01:43:51,610] It's worth learning first about differential geometry
+- [01:43:51,610 - 01:43:56,370] and tensor analysis in the more conventional situation.
+- [01:43:56,870 - 01:43:58,530] I don't quite understand why that can't be.
+- [01:43:58,550 - 01:44:00,610] Why that can't be zero?
+- [01:44:01,070 - 01:44:02,150] Why which can't be zero?
+- [01:44:02,150 - 01:44:04,690] Zero eigenvalue in that context.
+- [01:44:07,090 - 01:44:07,350] Why?
+- [01:44:08,710 - 01:44:11,190] Why would the eigenvalue be zero?
+- [01:44:11,870 - 01:44:13,490] None of the eigenvalues are zero.
+- [01:44:13,950 - 01:44:15,570] None of the eigenvalues are zero.
+- [01:44:16,610 - 01:44:18,710] That's what allows you to invert the matrix.
+- [01:44:19,410 - 01:44:19,550] Mm-hmm.
+- [01:44:22,950 - 01:44:24,970] Is it under the other one
+- [01:44:24,970 - 01:44:26,990] that's stuck on the wall there,
+- [01:44:27,630 - 01:44:28,210] that's hidden?
+- [01:44:29,290 - 01:44:30,250] Underneath that one.
+- [01:44:31,630 - 01:44:32,190] Underneath?
+- [01:44:32,490 - 01:44:32,670] Yeah.
+- [01:44:32,790 - 01:44:35,290] So we took four-dimensional space.
+- [01:44:35,550 - 01:44:35,910] Yeah.
+- [01:44:35,910 - 01:44:39,170] And then we got a 10-order matrix.
+- [01:44:39,910 - 01:44:41,370] 10 independent components.
+- [01:44:41,890 - 01:44:42,450] Right.
+- [01:44:42,510 - 01:44:48,390] So is that some way to inspire string theory
+- [01:44:48,390 - 01:44:48,670] saying,
+- [01:44:48,670 - 01:44:49,110] well,
+- [01:44:49,110 - 01:44:50,130] we live in a 10-order matrix?
+- [01:44:52,550 - 01:44:53,710] Absolutely no connection.
+- [01:44:54,970 - 01:44:55,530] Well,
+- [01:44:55,530 - 01:44:56,490] 10 is 10,
+- [01:44:56,490 - 01:44:57,630] but they're not.
+- [01:45:00,290 - 01:45:01,250] No connection,
+- [01:45:01,250 - 01:45:01,590] whatever.
+- [01:45:02,930 - 01:45:05,350] Coming back to the question of invertibility,
+- [01:45:06,350 - 01:45:09,570] is the metric tensor being invertible a property
+- [01:45:09,570 - 01:45:12,470] of the Monnian geometry but not Lorentzian?
+- [01:45:13,870 - 01:45:15,950] Because for the Lorentzian geometry,
+- [01:45:16,070 - 01:45:17,810] it seemed like a vector on a light bulb.
+- [01:45:17,890 - 01:45:18,890] That has a metric of zero.
+- [01:45:19,510 - 01:45:20,890] But it's not an eigenvector.
+- [01:45:22,110 - 01:45:23,310] It's not an eigenvector.
+- [01:45:23,590 - 01:45:24,510] It's not an eigenvector.
+- [01:45:25,122 - 01:45:25,412] سلام
+- [01:45:25,412 - 01:45:25,702] عليكم
+- [01:45:26,242 - 01:45:27,582] an eigenvector of the metric.
+- [01:45:27,722 - 01:45:29,902] The metric tensor,
+- [01:45:29,902 - 01:45:31,622] for example,
+- [01:45:31,622 - 01:45:32,782] in just two-dimensional space
+- [01:45:32,782 - 01:45:34,822] would be 1 minus 1.
+- [01:45:35,802 - 01:45:38,342] And that has eigenvalues 1 and minus 1,
+- [01:45:38,342 - 01:45:39,542] no eigenvalues 0.
+- [01:45:42,162 - 01:45:42,822] For more,
+- [01:45:42,822 - 01:45:45,242] please visit us at stanford.edu.
