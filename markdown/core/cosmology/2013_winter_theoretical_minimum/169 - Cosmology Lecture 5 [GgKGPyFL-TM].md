@@ -1,0 +1,1778 @@
+# Transcript
+
+Source: core/cosmology/2013_winter_theoretical_minimum/169 - Cosmology Lecture 5 [GgKGPyFL-TM].mkv
+
+- [00:00:00,000 - 00:00:06,400] Stanford University.
+- [00:00:09,440 - 00:00:15,280] Okay, let's, I want to review a little bit and
+- [00:00:15,280 - 00:00:20,520] then discuss the equation of state, two equations of state.
+- [00:00:21,960 - 00:00:27,560] Well, three equations of state and where we get our information about them,
+- [00:00:27,560 - 00:00:33,800] where our knowledge, not cosmological knowledge, but
+- [00:00:33,800 - 00:00:38,740] our knowledge based on basic theory, basic physics,
+- [00:00:38,740 - 00:00:41,500] where that knowledge about the equation of state comes from.
+- [00:00:41,500 - 00:00:47,380] But before I do, I just want to very, very quickly remind you where we are,
+- [00:00:47,380 - 00:00:48,880] where we're going.
+- [00:00:48,880 - 00:00:55,320] The basic question that we want to answer in cosmology is,
+- [00:00:55,320 - 00:00:57,560] what is the history of the universe?
+- [00:00:57,560 - 00:01:03,600] And to the extent that the universe can be thought of as homogeneous and isotropic,
+- [00:01:03,600 - 00:01:08,600] it really boils down to what is the time history of the scale factor.
+- [00:01:08,600 - 00:01:11,300] If we know the time history of the scale factor,
+- [00:01:11,300 - 00:01:15,740] we know an awful lot about the history of the universe.
+- [00:01:15,740 - 00:01:17,240] We can test it.
+- [00:01:18,720 - 00:01:23,320] And we can observe it in various ways.
+- [00:01:23,320 - 00:01:25,480] And so that's the question.
+- [00:01:25,480 - 00:01:26,780] That's a...
+- [00:01:26,780 - 00:01:27,500] One over the other.
+- [00:01:27,560 - 00:01:31,860] It's not the only question, but it is one overriding question that,
+- [00:01:31,860 - 00:01:35,760] if you want to do cosmology, you better have under your control.
+- [00:01:35,760 - 00:01:38,400] What is A of t as a function of time?
+- [00:01:38,400 - 00:01:39,780] How does it evolve?
+- [00:01:39,780 - 00:01:43,340] I'll just remind you quickly, we studied some models.
+- [00:01:43,340 - 00:01:46,440] There was the matter-dominated model.
+- [00:01:46,440 - 00:01:54,420] And in the matter-dominated model, A of t expanded like t to the two-thirds.
+- [00:01:54,420 - 00:02:04,800] In the radiation-dominated universe, A of t expands like t to the one-half.
+- [00:02:04,800 - 00:02:07,540] Both of these are models.
+- [00:02:07,540 - 00:02:09,840] Neither one of them is exactly correct.
+- [00:02:09,840 - 00:02:16,680] Today, at late times, this is almost exactly correct.
+- [00:02:16,680 - 00:02:23,540] At very early times, we believe that this was more correct.
+- [00:02:23,540 - 00:02:24,420] And there was a change in the way that the universe evolved.
+- [00:02:24,420 - 00:02:25,960] There was a transition between them.
+- [00:02:25,960 - 00:02:28,420] We talked about it at length.
+- [00:02:28,420 - 00:02:36,640] When we get to observational cosmology, we're going to talk a great deal about how we know
+- [00:02:36,640 - 00:02:41,100] anything about this, how we know anything about this, and what the various meanings
+- [00:02:41,100 - 00:02:45,020] of them are.
+- [00:02:45,020 - 00:02:48,740] But not yet tonight.
+- [00:02:48,740 - 00:02:49,880] Okay.
+- [00:02:49,880 - 00:02:53,640] We talked about also the importance of the equation.
+- [00:02:53,640 - 00:02:54,140] Okay.
+- [00:02:54,420 - 00:03:01,020] The equation of state, that the radiation and the matter-dominated universe are two
+- [00:03:01,020 - 00:03:08,980] examples of universes which evolve under different conditions which can be characterized by an
+- [00:03:08,980 - 00:03:11,320] equation of state.
+- [00:03:11,320 - 00:03:18,980] The equation of state, incidentally, is what tells us how the energy density, which is
+- [00:03:18,980 - 00:03:23,640] on the right-hand side of the Friedman equations, of the cosmological equations.
+- [00:03:23,640 - 00:03:34,080] It tells us how the energy density changes with changes in the scale factor.
+- [00:03:34,080 - 00:03:43,040] For example, it tells us in the matter-dominated case, matter-dominated, it tells us that rho
+- [00:03:43,040 - 00:03:50,180] is equal to some constant, let's call it rho-naught, divided by a cubed.
+- [00:03:50,180 - 00:03:53,480] And the a cubed is just the volume of a piece of space.
+- [00:03:53,480 - 00:03:53,520] Okay.
+- [00:03:53,520 - 00:03:58,160] In the matter-dominated case, as it expands, the density is the amount of energy in it,
+- [00:03:58,160 - 00:04:02,340] divided by the volume.
+- [00:04:02,340 - 00:04:05,760] And that's just something over a cubed.
+- [00:04:05,760 - 00:04:10,060] In the radiation-dominated case, which we're going to talk about extensively today, where
+- [00:04:10,060 - 00:04:20,000] the equation of state comes from, rho goes like rho-naught, divided by a to the fourth.
+- [00:04:20,000 - 00:04:23,360] This is radiation-dominated.
+- [00:04:23,360 - 00:04:31,540] Now, the difference between these two originates in the difference between the relationship
+- [00:04:31,540 - 00:04:32,700] between pressure...
+- [00:04:32,700 - 00:04:37,060] I'm going to review these things quickly now.
+- [00:04:37,060 - 00:04:43,600] In the relationship between pressure and energy density, there are many, many...
+- [00:04:43,600 - 00:04:51,280] The relation between pressure and energy density is called the equation of state in cosmology.
+- [00:04:51,280 - 00:04:53,200] It's also part of the equation of state.
+- [00:04:53,200 - 00:04:56,880] It's the state of a statistical mechanical system, which usually involves other variables
+- [00:04:56,880 - 00:04:58,400] like temperature.
+- [00:04:58,400 - 00:05:07,120] But in cosmology, we make a simplifying assumption that the energy density and the pressure are
+- [00:05:07,120 - 00:05:09,000] simply related.
+- [00:05:09,000 - 00:05:16,060] And for simplicity, and because it covers a lot of interesting cases, we take the equation
+- [00:05:16,060 - 00:05:20,700] of state to be pressure is equal to some number called w.
+- [00:05:20,700 - 00:05:23,040] And w is a number.
+- [00:05:23,040 - 00:05:33,040] It characterizes the fluid, whatever it happens to be, times the energy density rho.
+- [00:05:33,040 - 00:05:39,240] Let me just go back again and show you how the equation of state tells you these two
+- [00:05:39,240 - 00:05:42,540] different types of things.
+- [00:05:42,540 - 00:05:46,500] The equation of state for matter-dominated, let's start with that one first.
+- [00:05:46,500 - 00:05:49,200] The equation of state for matter-dominated.
+- [00:05:49,200 - 00:05:52,040] Matter-dominated just means particles or galaxies.
+- [00:05:52,040 - 00:05:53,040] None relativistic.
+- [00:05:53,040 - 00:05:54,360] None relativistic matter.
+- [00:05:54,360 - 00:05:59,200] And stuff which is in its own local frame moving slowly.
+- [00:05:59,200 - 00:06:00,560] Okay.
+- [00:06:00,560 - 00:06:02,000] What is the energy density?
+- [00:06:02,000 - 00:06:11,440] The energy density basically comes from just, let's call it the E equals mc squared energy
+- [00:06:11,440 - 00:06:13,420] of a particle at rest.
+- [00:06:13,420 - 00:06:15,440] The rest energy of the particle.
+- [00:06:15,440 - 00:06:22,480] Since we tend to set c equal to 1 in this class, it's just energy is equal to the mass
+- [00:06:22,480 - 00:06:24,260] of a particle.
+- [00:06:24,260 - 00:06:27,100] That's the energy of a particle at rest.
+- [00:06:27,100 - 00:06:31,820] But if we're thinking about particles which are all moving slowly, let's put back the
+- [00:06:31,820 - 00:06:32,820] c squared.
+- [00:06:32,820 - 00:06:35,380] Let me put back the c squared for a minute.
+- [00:06:35,380 - 00:06:42,300] The energy density is the number of particles per unit volume times the energy of a particle.
+- [00:06:42,300 - 00:06:46,200] And it has this big fat c squared in front of it.
+- [00:06:46,200 - 00:06:47,200] It's relative.
+- [00:06:47,200 - 00:06:49,660] The c squared is the speed of light.
+- [00:06:49,660 - 00:06:51,800] And it gives a huge magnitude.
+- [00:06:51,800 - 00:06:55,900] To the energy of even a very light particle.
+- [00:06:55,900 - 00:07:01,620] A dust grain, because of its mass, a tiny dust grain, has enough energy in it to cause
+- [00:07:01,620 - 00:07:02,620] a big explosion.
+- [00:07:02,620 - 00:07:03,620] Okay.
+- [00:07:03,620 - 00:07:05,540] If it were annihilated.
+- [00:07:05,540 - 00:07:09,200] So the energy density due to the particles is large.
+- [00:07:09,200 - 00:07:12,080] On the other hand, the particles are moving slowly.
+- [00:07:12,080 - 00:07:13,300] Where does pressure come from?
+- [00:07:13,300 - 00:07:17,940] Now first of all, the particles are moving very slowly by comparison with the speed of
+- [00:07:17,940 - 00:07:18,940] light.
+- [00:07:18,940 - 00:07:20,920] Their motion is non-relativistic.
+- [00:07:20,920 - 00:07:21,680] What does pressure come from?
+- [00:07:21,680 - 00:07:24,500] Well, pressure comes from particles hitting the walls of a system.
+- [00:07:24,500 - 00:07:31,180] If we were just to think about a simple ordinary gas in a volume of space, pressure comes just
+- [00:07:31,180 - 00:07:34,760] by particles hitting the wall.
+- [00:07:34,760 - 00:07:38,460] It's proportional or related to the velocity of the particles that hit the wall.
+- [00:07:38,460 - 00:07:39,880] It contains the mass.
+- [00:07:39,880 - 00:07:40,880] Mass is important.
+- [00:07:40,880 - 00:07:45,260] If a bowling ball hits the wall, it creates a bigger force on the wall than if a ping
+- [00:07:45,260 - 00:07:47,080] pong ball does.
+- [00:07:47,080 - 00:07:50,580] But whatever is hitting the wall, it's hitting the wall slowly.
+- [00:07:50,580 - 00:07:51,580] Because all the energy is going to the wall.
+- [00:07:51,580 - 00:07:56,480] So all of these particles are moving slowly, which means the pressure does not contain
+- [00:07:56,480 - 00:07:59,260] the speed of light in the formula for it.
+- [00:07:59,260 - 00:08:00,260] What does it contain?
+- [00:08:00,260 - 00:08:03,820] It contains the velocities of particles instead.
+- [00:08:03,820 - 00:08:10,180] And because it doesn't contain the speed of light, typically the pressure is much, much
+- [00:08:10,180 - 00:08:14,080] smaller for ordinary non-relativistic particles.
+- [00:08:14,080 - 00:08:18,600] Much much smaller than the energy density.
+- [00:08:18,600 - 00:08:20,260] That's the approximation that...
+- [00:08:20,260 - 00:08:21,260] Okay.
+- [00:08:21,580 - 00:08:29,460] So the pressure is approximately zero compared to the energy density, and that corresponds
+- [00:08:29,460 - 00:08:32,540] to w equals zero.
+- [00:08:32,540 - 00:08:39,540] So for non-relativistic matter density, w is equal to zero.
+- [00:08:39,540 - 00:08:46,180] For radiation, w is equal to a third, and we'll prove that in a little while.
+- [00:08:46,180 - 00:08:51,460] But let me just again go back and quickly remind you how we use that.
+- [00:08:51,580 - 00:09:00,800] One of the things that you need to know in order to work out the equations of cosmology
+- [00:09:00,800 - 00:09:06,820] is how the energy density depends on A. This is the equation that tells us...
+- [00:09:06,820 - 00:09:12,440] So let me just go back very briefly and remind you how that worked.
+- [00:09:12,440 - 00:09:13,740] We began with a box of gas.
+- [00:09:13,740 - 00:09:19,580] Now the equation of state can be analyzed by laboratory methods.
+- [00:09:19,580 - 00:09:20,580] If we have...
+- [00:09:20,580 - 00:09:21,580] Oh, of course.
+- [00:09:21,580 - 00:09:27,320] If the gas that makes up the universe is made up out of galaxies, it's not so easy
+- [00:09:27,320 - 00:09:30,660] to put a bunch of galaxies in a box.
+- [00:09:30,660 - 00:09:32,520] But galaxies are just particles.
+- [00:09:32,520 - 00:09:34,680] They're just particles from our point of view.
+- [00:09:34,680 - 00:09:39,020] You can put particles in a box, and in the box you can investigate the relationship between
+- [00:09:39,020 - 00:09:41,200] the energy and the pressure.
+- [00:09:41,200 - 00:09:44,420] And that's what we are interested in.
+- [00:09:44,420 - 00:09:48,580] So let's take a box with a certain pressure.
+- [00:09:48,580 - 00:09:49,580] The pressure...
+- [00:09:49,580 - 00:09:50,580] The pressure...
+- [00:09:50,580 - 00:09:56,460] On the walls of the box, let's take the pressure on this wall of the box here, it's equal to
+- [00:09:56,460 - 00:10:00,680] the force on that wall divided by the area.
+- [00:10:00,680 - 00:10:05,280] Force per unit area is the thing that's called pressure, or force is equal to pressure times
+- [00:10:05,280 - 00:10:07,680] area.
+- [00:10:07,680 - 00:10:09,540] Force is equal to pressure times area.
+- [00:10:09,540 - 00:10:13,040] Now let's suppose we expand the box a little bit.
+- [00:10:13,040 - 00:10:17,200] We expand the box a little bit, increase its volume a little bit.
+- [00:10:17,200 - 00:10:19,580] Let's say we increase its volume by increasing...
+- [00:10:19,580 - 00:10:26,380] Increasing this side by amount dx, keeping everything else the same.
+- [00:10:26,380 - 00:10:31,580] What happens to the energy inside the box?
+- [00:10:31,580 - 00:10:39,000] Well, if the box is exerting pressure on the walls and we move the walls, then the gas
+- [00:10:39,000 - 00:10:42,260] inside the box does some work on the walls.
+- [00:10:42,260 - 00:10:47,380] Work is equal to force times distance, and so there's a little bit of work that's done.
+- [00:10:47,380 - 00:10:48,680] And what's the work that's done?
+- [00:10:48,680 - 00:10:54,180] The work is equal to the force on the wall, this is the work of the force, times the distance
+- [00:10:54,180 - 00:11:07,400] that it's displaced, and that's equal to the pressure times the area times little dx.
+- [00:11:07,400 - 00:11:13,720] The area times dx, this is the area of, let's say, this side of the box over here.
+- [00:11:13,720 - 00:11:16,680] This is the area of this side of the box over here.
+- [00:11:18,680 - 00:11:20,600] The box expands.
+- [00:11:20,600 - 00:11:26,160] The area times dx, that's the change in volume of the box.
+- [00:11:26,160 - 00:11:27,260] Alright?
+- [00:11:27,260 - 00:11:34,140] So the work done is the pressure times the change in the volume of the box.
+- [00:11:34,140 - 00:11:37,860] A times dx is the change in the volume of the box.
+- [00:11:37,860 - 00:11:42,100] That's of course a famous equation, I just want to write it down because I like it.
+- [00:11:42,100 - 00:11:45,680] Alright, what happens to the energy in the box?
+- [00:11:45,680 - 00:11:46,680] The ene...
+- [00:11:46,680 - 00:11:47,680] The...
+- [00:11:47,680 - 00:11:49,640] The gas has done some work.
+- [00:11:49,640 - 00:11:55,220] If the gas does work, then the energy in the box must decrease.
+- [00:11:55,220 - 00:11:59,540] If something does work, then its energy must decrease.
+- [00:11:59,540 - 00:12:08,520] So that means that the change in energy in the box, dE, must be minus the pressure times
+- [00:12:08,520 - 00:12:12,100] dV.
+- [00:12:12,100 - 00:12:14,660] That's our equation.
+- [00:12:14,660 - 00:12:16,260] So let's go through it very quickly.
+- [00:12:16,260 - 00:12:17,260] To remind ourselves.
+- [00:12:17,260 - 00:12:24,940] To remind ourselves how this tells you anything about how energy density scales with scale
+- [00:12:24,940 - 00:12:26,740] factor.
+- [00:12:26,740 - 00:12:34,020] We start with dE equals minus pdV, and then we remember that the energy inside the box,
+- [00:12:34,020 - 00:12:38,980] E, is equal to the energy density times the volume.
+- [00:12:38,980 - 00:12:44,760] Energy density times the volume is the energy inside the box, and so let's consider the
+- [00:12:44,760 - 00:12:46,100] left hand side.
+- [00:12:46,100 - 00:12:53,780] The change in the energy of the box is equal to two terms, just ordinary calculus.
+- [00:12:53,780 - 00:13:03,740] The energy density times the change in volume plus the volume times the change in the energy
+- [00:13:03,740 - 00:13:05,860] density.
+- [00:13:05,860 - 00:13:08,140] Both things change in general.
+- [00:13:08,140 - 00:13:10,580] Both things change when you expand the box a little bit.
+- [00:13:10,580 - 00:13:14,980] The energy density changes, certainly, and the volume changes.
+- [00:13:14,980 - 00:13:15,980] The net change in the energy density changes.
+- [00:13:15,980 - 00:13:25,940] The energy is the sum of two of them, and that has to be equal to minus the pressure
+- [00:13:25,940 - 00:13:27,460] times dV.
+- [00:13:27,460 - 00:13:34,260] Okay, but now let's plug in the hypothetical equation of state, something we haven't really
+- [00:13:34,260 - 00:13:35,740] justified yet.
+- [00:13:35,740 - 00:13:40,140] But let's plug in our guess for an equation of state that pressure is equal to W times
+- [00:13:40,140 - 00:13:40,860] energy density.
+- [00:13:40,860 - 00:13:41,860] And that just changes p to minus p.
+- [00:13:41,860 - 00:13:42,860] So we have to plug in the equation of state.
+- [00:13:42,860 - 00:13:43,860] And that just changes p to minus p.
+- [00:13:43,860 - 00:13:44,860] So we have to plug in the equation of state.
+- [00:13:44,860 - 00:13:45,860] And that just changes p to minus p.
+- [00:13:45,860 - 00:13:50,300] So now we have a total of 4 minus the number W times the energy density.
+- [00:13:50,300 - 00:13:52,720] So we have a total of 4 and we're going to plug in the equation of state.
+- [00:13:52,720 - 00:13:58,860] Now take all the terms with dV and put them on one side of the equation, and all the
+- [00:13:58,860 - 00:14:01,220] terms with dRho and put them on the other side.
+- [00:14:01,220 - 00:14:03,420] There's only one term with dRho.
+- [00:14:03,420 - 00:14:04,420] It's vdRho.
+- [00:14:04,420 - 00:14:06,880] That's this term over here.
+- [00:14:06,880 - 00:14:10,760] And that's equal to, on the right hand side, minus the temperature.
+- [00:14:10,760 - 00:14:12,140] We have both cases.
+- [00:14:12,140 - 00:14:13,820] We have rho dV.
+- [00:14:13,820 - 00:14:14,820] Okay.
+- [00:14:14,820 - 00:14:15,860] From here.
+- [00:14:15,860 - 00:14:21,640] From here we get a 1, and from here we get a w.
+- [00:14:21,640 - 00:14:23,660] So this is a famous equation.
+- [00:14:23,660 - 00:14:24,660] Well not yet.
+- [00:14:24,660 - 00:14:35,780] It's the preliminary to a famous equation.
+- [00:14:35,780 - 00:14:40,580] Let's get all the stuff with rho on one side and all the stuff with 1 plus w.
+- [00:14:40,580 - 00:14:42,300] That's just a number.
+- [00:14:42,300 - 00:14:45,160] Remember that 1 plus w is just a number.
+- [00:14:45,160 - 00:14:46,520] Whatever it is, it's a number.
+- [00:14:46,520 - 00:14:51,380] Let's get all the stuff with rho on one side and all the stuff with v on the other side.
+- [00:14:51,380 - 00:14:56,120] So that means divide by rho.
+- [00:14:56,120 - 00:15:02,580] Divide by rho to remove the rho from here and to put it in the denominator over here.
+- [00:15:02,580 - 00:15:03,940] And do the same with v.
+- [00:15:03,940 - 00:15:13,320] Divide by v to get rid of the v over here and put it over here.
+- [00:15:13,320 - 00:15:15,160] Equation is getting more famous, but it's not quite there.
+- [00:15:15,160 - 00:15:17,040] Not famous yet.
+- [00:15:17,040 - 00:15:19,920] Okay.
+- [00:15:19,920 - 00:15:25,400] D rho over rho, that's the differential of the logarithm of rho.
+- [00:15:25,400 - 00:15:30,200] D v over v, that's the differential of the logarithm of v.
+- [00:15:30,200 - 00:15:36,200] So this equation says that the logarithm of the density, of the energy density, is equal
+- [00:15:36,200 - 00:15:42,160] to minus 1 plus w times the logarithm of the volume.
+- [00:15:45,160 - 00:15:57,000] Or that the energy density is 1 divided by the volume to the 1 plus w power.
+- [00:15:57,000 - 00:16:00,520] We're allowed to put a constant here.
+- [00:16:00,520 - 00:16:03,280] Now it's a famous equation.
+- [00:16:03,280 - 00:16:11,620] The energy density, you may not recognize it, but it is famous.
+- [00:16:11,620 - 00:16:15,120] The energy density is proportional to...
+- [00:16:15,120 - 00:16:21,800] With a constant of proportionality to the volume of the box to the power 1 plus w.
+- [00:16:21,800 - 00:16:24,300] All right?
+- [00:16:24,300 - 00:16:28,580] But the volume of the box is proportional to the cube.
+- [00:16:28,580 - 00:16:35,000] If we imagine, I did this problem by expanding the box along one axis.
+- [00:16:35,000 - 00:16:41,520] But you could expand the box uniformly along all the axes and you get exactly the same thing.
+- [00:16:41,520 - 00:16:45,000] It was not important that the volume increased by only increasing
+- [00:16:45,000 - 00:16:46,600] one dimension here.
+- [00:16:46,600 - 00:16:50,040] We could have increased it isotropically.
+- [00:16:50,040 - 00:16:51,040] Same equation here.
+- [00:16:51,040 - 00:16:57,580] And if we increase the box isotropically, we can think of it that the volume of the
+- [00:16:57,580 - 00:17:02,700] box is proportional to the cube of the scale factor.
+- [00:17:02,700 - 00:17:07,980] The volume of a box of space is proportional to the cube of the scale factor.
+- [00:17:07,980 - 00:17:13,380] And so that is equal to some constant, which we can call rho-naught, but I'll just call
+- [00:17:13,380 - 00:17:14,380] it constant.
+- [00:17:15,000 - 00:17:21,980] divided by the scale factor, cubed, to the 1 plus w.
+- [00:17:21,980 - 00:17:22,980] Why cubed?
+- [00:17:22,980 - 00:17:26,060] Because the volume is the scale factor cubed.
+- [00:17:26,060 - 00:17:35,800] If you're one of these crazy people who likes to do cosmology in different numbers of dimensions,
+- [00:17:35,800 - 00:17:41,000] then this cubed could become the fourth power, it could become the second power and so forth.
+- [00:17:41,000 - 00:17:43,520] But otherwise it would be the same.
+- [00:17:43,520 - 00:17:44,720] Uh...
+- [00:17:44,720 - 00:17:51,880] But if you're a sensible three-dimensional person, this is the formula, and this formula
+- [00:17:51,880 - 00:17:53,480] now is famous.
+- [00:17:53,480 - 00:18:03,080] Okay, let's just remind ourselves again, for matter dominated, where the pressure is almost
+- [00:18:03,080 - 00:18:08,780] zero, because things are moving slowly, where the pressure is almost zero, that corresponds
+- [00:18:08,780 - 00:18:12,340] to w equals zero.
+- [00:18:12,340 - 00:18:15,680] Pressure is equal to zero times the energy density.
+- [00:18:15,680 - 00:18:23,320] In that case, we just get rho goes like one over a cubed, and that's this formula over
+- [00:18:23,320 - 00:18:25,740] here.
+- [00:18:25,740 - 00:18:32,320] For radiation, which I simply told you the answer for, but we'll work it out tonight,
+- [00:18:32,320 - 00:18:36,940] for radiation, w is equal to a third.
+- [00:18:36,940 - 00:18:42,280] If w is equal to a third, then one plus w is four thirds.
+- [00:18:42,280 - 00:18:47,460] And this becomes a constant over a to the fourth.
+- [00:18:47,460 - 00:18:53,420] One plus w is four thirds, times three is just four, four thirds times three is four,
+- [00:18:53,420 - 00:18:58,580] and we get one over a to the fourth.
+- [00:18:58,580 - 00:19:02,640] So okay, that was review.
+- [00:19:02,640 - 00:19:11,580] Now let's come to the question of why w is equal to a third for radiation.
+- [00:19:11,580 - 00:19:14,480] Radiation is massless particles.
+- [00:19:14,480 - 00:19:16,540] Radiation means photons.
+- [00:19:16,540 - 00:19:20,300] We could think of it also as electromagnetic waves.
+- [00:19:20,300 - 00:19:23,180] We would get the same answer, incidentally.
+- [00:19:23,180 - 00:19:25,700] But let's think of it as photons.
+- [00:19:25,700 - 00:19:33,920] The characteristic feature of photons that makes it different than the non-relativistic
+- [00:19:33,920 - 00:19:38,140] matter is that the photons are moving fast, and in fact, they're moving with the speed
+- [00:19:38,140 - 00:19:39,060] of light.
+- [00:19:39,060 - 00:19:40,060] Okay.
+- [00:19:40,060 - 00:19:40,900] So let's work.
+- [00:19:40,900 - 00:19:41,400] Okay.
+- [00:19:41,580 - 00:19:43,400] Let's work out the equation of state.
+- [00:19:43,400 - 00:19:44,400] Let's work it out.
+- [00:19:44,400 - 00:19:47,120] We're going to work it out in detail.
+- [00:19:47,120 - 00:19:52,120] The equation of state for a box filled with photons.
+- [00:19:52,120 - 00:19:54,500] Here's our box.
+- [00:19:54,500 - 00:19:57,700] It's three-dimensional, but I'm not good at drawing three-dimensional boxes, so we'll
+- [00:19:57,700 - 00:20:00,220] just draw a two-dimensional box.
+- [00:20:00,220 - 00:20:04,880] And it's filled uniformly with lots of photons.
+- [00:20:04,880 - 00:20:10,500] And of course, this is an instantaneous picture of it, but the photons are whizzing around
+- [00:20:10,500 - 00:20:11,500] with the speed of light.
+- [00:20:11,580 - 00:20:16,700] So what's more, they're bouncing off the walls.
+- [00:20:16,700 - 00:20:18,820] They're bouncing off the walls.
+- [00:20:18,820 - 00:20:27,480] We'll assume that when they bounce off the walls, they bounce off and lose no energy
+- [00:20:27,480 - 00:20:31,000] and exert pressure on the walls.
+- [00:20:31,000 - 00:20:35,640] We need to know a couple of things, all of which I think we've talked about in the past.
+- [00:20:35,640 - 00:20:36,240] Uh...
+- [00:20:36,240 - 00:20:36,740] Uh...
+- [00:20:36,740 - 00:20:37,240] Uh...
+- [00:20:37,240 - 00:20:37,740] Uh...
+- [00:20:37,740 - 00:20:38,240] Uh...
+- [00:20:38,240 - 00:20:38,740] Uh...
+- [00:20:38,740 - 00:20:39,240] Uh...
+- [00:20:39,240 - 00:20:39,740] Uh...
+- [00:20:39,740 - 00:20:40,240] Uh...
+- [00:20:40,240 - 00:20:40,740] Uh...
+- [00:20:40,740 - 00:20:41,240] Uh...
+- [00:20:41,240 - 00:20:41,540] Uh...
+- [00:20:41,540 - 00:20:41,580] Uh...
+- [00:20:41,580 - 00:20:42,080] Uh...
+- [00:20:42,080 - 00:20:42,580] Uh...
+- [00:20:42,580 - 00:20:44,900] First of all, photons have energy.
+- [00:20:44,900 - 00:20:45,420] Let's call...
+- [00:20:45,420 - 00:20:47,700] What I'm going to do is pretend.
+- [00:20:47,700 - 00:20:50,340] But then I'll tell you why it didn't matter.
+- [00:20:50,340 - 00:20:54,820] I'm going to pretend all of the photons have the same energy.
+- [00:20:54,820 - 00:21:00,680] Now, for a box of photons in thermal equilibrium, it's approximately true as a matter of fact
+- [00:21:00,680 - 00:21:03,300] that they all have roughly the same energy.
+- [00:21:03,300 - 00:21:07,160] But nothing I'm doing really depends on that, and we'll see why.
+- [00:21:07,160 - 00:21:11,380] But for the moment, let's just pretend they all have the same energy.
+- [00:21:11,380 - 00:21:18,380] Let's call the energy per photon or per particle, let's call it epsilon.
+- [00:21:18,380 - 00:21:21,620] I'm not calling it epsilon with any deep motive.
+- [00:21:21,620 - 00:21:24,380] Often epsilon is used for a small number.
+- [00:21:24,380 - 00:21:28,240] Well, the energy of a photon is a small number, but that's not why I used it.
+- [00:21:28,240 - 00:21:33,080] I used it because it looks like E, but I want to save E for the total energy.
+- [00:21:33,080 - 00:21:38,340] So epsilon is the energy per particle or energy per photon.
+- [00:21:38,340 - 00:21:40,180] Uh...
+- [00:21:40,180 - 00:21:41,340] Energy...
+- [00:21:41,340 - 00:21:46,460] Per photon.
+- [00:21:46,460 - 00:21:49,020] On the average.
+- [00:21:49,020 - 00:21:50,980] What about the momentum of a proton?
+- [00:21:50,980 - 00:21:51,980] We're going to need the momentum.
+- [00:21:51,980 - 00:21:54,080] Why do we need the momentum?
+- [00:21:54,080 - 00:21:59,820] Because forces, what forces are, is their response to the change of momentum.
+- [00:21:59,820 - 00:22:06,460] If I throw a tennis ball at the wall, the tennis ball has some momentum.
+- [00:22:06,460 - 00:22:09,340] When it reflects back, it has the opposite momentum.
+- [00:22:09,340 - 00:22:10,900] There's been a change of momentum.
+- [00:22:10,900 - 00:22:16,020] There's also been a transfer of momentum to the wall.
+- [00:22:16,020 - 00:22:20,940] That transfer of momentum per unit time...
+- [00:22:20,940 - 00:22:24,820] Transfer of momentum per unit time is the force on the wall.
+- [00:22:24,820 - 00:22:30,960] So we need to know something about the momenta of photons.
+- [00:22:30,960 - 00:22:35,140] The momentum of a photon I normally would call P.
+- [00:22:35,140 - 00:22:39,960] The problem with P is I'm already using P for pressure.
+- [00:22:39,960 - 00:22:40,900] So we're running into the...
+- [00:22:40,900 - 00:22:48,020] This problem that the number of letters of the alphabet is bounded by 26.
+- [00:22:48,020 - 00:22:51,900] Therefore I use Greek letters.
+- [00:22:51,900 - 00:22:54,460] The momentum of a photon I'm going to call pi.
+- [00:22:54,460 - 00:22:58,320] It is not 3.14159.
+- [00:22:58,320 - 00:23:02,740] It's just the momentum of a particle and it's a little vector.
+- [00:23:02,740 - 00:23:03,740] It's a vector.
+- [00:23:03,740 - 00:23:05,960] It has three components.
+- [00:23:05,960 - 00:23:09,900] That's the momentum of a characteristic particle in there.
+- [00:23:09,900 - 00:23:10,900] Uh...
+- [00:23:10,900 - 00:23:14,280] Of course the momentum could be in any direction.
+- [00:23:14,280 - 00:23:19,220] And one of the assumptions is if I look in any little volume of the box,
+- [00:23:19,220 - 00:23:23,820] on the average the momentum could be in any direction.
+- [00:23:23,820 - 00:23:27,480] That if I look at the velocity or momentum distribution,
+- [00:23:27,480 - 00:23:30,040] anywhere's in the box it's isotropic.
+- [00:23:30,040 - 00:23:33,280] As many particles going in every direction as in every other direction.
+- [00:23:33,280 - 00:23:34,940] And that's a good assumption.
+- [00:23:34,940 - 00:23:39,900] That's a fair assumption that can be justified using statistical mechanics.
+- [00:23:40,900 - 00:23:42,180] Alright, so pi...
+- [00:23:42,180 - 00:23:44,480] The vector pi is the momentum.
+- [00:23:44,480 - 00:23:52,000] The magnitude of the momentum we can just call pi or put some bars around it.
+- [00:23:52,000 - 00:23:55,820] The magnitude of it or the absolute value of it is just called pi.
+- [00:23:55,820 - 00:23:59,980] It's the magnitude of the vector pi.
+- [00:23:59,980 - 00:24:05,080] And the relationship between the energy of a particle and its momentum,
+- [00:24:05,080 - 00:24:09,900] if I keep around the speed of light, then the energy of a massless particle, a photon,
+- [00:24:09,900 - 00:24:10,900] will be the energy.
+- [00:24:10,900 - 00:24:17,900] The energy of a massless particle, a photon, is equal to the speed of light times the magnitude of the momentum.
+- [00:24:17,900 - 00:24:19,900] Whoops, not p.
+- [00:24:19,900 - 00:24:21,900] Not p.
+- [00:24:21,900 - 00:24:23,900] Pi.
+- [00:24:23,900 - 00:24:30,900] Instead of writing the bars, I'm not going to write the bars, I'm just going to write pi.
+- [00:24:30,900 - 00:24:35,900] But when I mean the vector pi, I'll put a little vector symbol on top.
+- [00:24:35,900 - 00:24:39,900] So pi is the magnitude of the momentum.
+- [00:24:39,900 - 00:24:42,900] Equals momentum of a particle.
+- [00:24:42,900 - 00:24:46,900] Times c.
+- [00:24:46,900 - 00:24:49,900] Energy is pi times c.
+- [00:24:49,900 - 00:24:54,900] That's the relationship between the energy of a massless particle and its momentum.
+- [00:24:54,900 - 00:24:58,900] And since we set c equal to one,
+- [00:24:58,900 - 00:25:03,900] the energy is just the magnitude of the momentum.
+- [00:25:03,900 - 00:25:08,900] Next, what about the number of particles,
+- [00:25:08,900 - 00:25:11,900] the number of photons in the box?
+- [00:25:11,900 - 00:25:14,900] And better yet, the number density.
+- [00:25:14,900 - 00:25:18,900] Let's let nu, nu for number,
+- [00:25:18,900 - 00:25:26,900] let nu be the number of particles, number of photons,
+- [00:25:26,900 - 00:25:29,900] per unit volume.
+- [00:25:29,900 - 00:25:32,900] The density of photons.
+- [00:25:32,900 - 00:25:33,900] It's not the density of energy.
+- [00:25:33,900 - 00:25:36,900] What is the density of energy in this language?
+- [00:25:38,900 - 00:25:43,900] The energy per particle times the number of particles.
+- [00:25:43,900 - 00:25:46,900] So epsilon times nu would be rho.
+- [00:25:46,900 - 00:25:47,900] We'll come back to that.
+- [00:25:47,900 - 00:25:49,900] Epsilon times nu would be rho.
+- [00:25:52,900 - 00:25:55,900] Let's calculate the pressure now.
+- [00:25:55,900 - 00:26:01,900] To calculate the pressure, we have to have a proper theory of what pressure is.
+- [00:26:01,900 - 00:26:09,900] So here's the walls of a hypothetical box.
+- [00:26:09,900 - 00:26:11,900] That's a wall.
+- [00:26:11,900 - 00:26:13,900] The boundary of a box.
+- [00:26:13,900 - 00:26:15,900] The gas is on the left side of the box,
+- [00:26:15,900 - 00:26:17,900] the gas of photons.
+- [00:26:17,900 - 00:26:21,900] And let's take a little volume here.
+- [00:26:21,900 - 00:26:23,900] I'll tell you what this is in a minute.
+- [00:26:23,900 - 00:26:26,900] Let's consider a little time interval, delta t.
+- [00:26:26,900 - 00:26:29,900] Take a little time interval, delta t.
+- [00:26:29,900 - 00:26:36,900] What I'm going to be interested in is how many particles hit the boundary of the box
+- [00:26:36,900 - 00:26:41,900] and transfer momentum to it in the time interval delta t.
+- [00:26:41,900 - 00:26:49,900] Now, the answer is a particle will hit the boundary in time delta t if it's close enough.
+- [00:26:49,900 - 00:26:53,900] Oh, incidentally, what's the velocity of these particles?
+- [00:26:53,900 - 00:26:54,900] One.
+- [00:26:54,900 - 00:26:55,900] One.
+- [00:26:55,900 - 00:26:56,900] C.
+- [00:26:56,900 - 00:26:57,900] Yeah, C.
+- [00:26:57,900 - 00:26:59,900] But we'll take it to be one.
+- [00:26:59,900 - 00:27:00,900] All right.
+- [00:27:00,900 - 00:27:04,900] If the particle is moving horizontally to the left,
+- [00:27:04,900 - 00:27:10,900] where does it have to be in here in order that it will hit the boundary within time delta t?
+- [00:27:10,900 - 00:27:12,900] And the answer is quite clear.
+- [00:27:12,900 - 00:27:23,900] If delta x is less than or if delta x is equal to delta t,
+- [00:27:23,900 - 00:27:26,900] and I make this little interval here, delta x,
+- [00:27:26,900 - 00:27:29,900] then any particle moving to the right,
+- [00:27:29,900 - 00:27:35,900] with horizontal velocity, will hit the wall in time delta t.
+- [00:27:35,900 - 00:27:38,900] But what if it's not quite moving to the right?
+- [00:27:38,900 - 00:27:41,900] What if it's moving at an angle theta?
+- [00:27:41,900 - 00:27:46,900] So let's take a particle moving at an angle theta.
+- [00:27:46,900 - 00:27:50,900] Then it will hit the wall of the box.
+- [00:27:50,900 - 00:27:56,900] Let me get the equation straight.
+- [00:27:56,900 - 00:28:03,900] If delta x is equal to delta t times cosine of the angle theta.
+- [00:28:03,900 - 00:28:06,900] If the cosine of the angle of theta is one,
+- [00:28:06,900 - 00:28:08,900] that means it's horizontal,
+- [00:28:08,900 - 00:28:11,900] then the particle will hit the corner of the wall of the box
+- [00:28:11,900 - 00:28:15,900] if it's within delta x equals delta t.
+- [00:28:15,900 - 00:28:18,900] On the other hand, supposing cosine theta,
+- [00:28:18,900 - 00:28:21,900] supposing theta is perpendicular, is vertical,
+- [00:28:21,900 - 00:28:24,900] supposing theta is 90 degrees,
+- [00:28:24,900 - 00:28:26,900] what's the cosine of 90 degrees?
+- [00:28:26,900 - 00:28:27,900] Zero.
+- [00:28:27,900 - 00:28:28,900] Zero.
+- [00:28:28,900 - 00:28:32,900] And that's of course correct if the particles are moving almost vertically,
+- [00:28:32,900 - 00:28:37,900] they will only hit the box if delta x is very small.
+- [00:28:37,900 - 00:28:42,900] They'll have to be very close to hit the box in time delta t.
+- [00:28:42,900 - 00:28:44,900] So this is the condition.
+- [00:28:44,900 - 00:28:49,900] All particles within a distance delta x will hit the wall of the box
+- [00:28:49,900 - 00:28:54,900] if delta x is equal to delta t times cosine theta.
+- [00:28:54,900 - 00:28:59,900] Now let's take particles moving at angle delta theta.
+- [00:29:05,900 - 00:29:08,900] Supposing one particle hits the wall of the box.
+- [00:29:08,900 - 00:29:12,900] How much momentum does it transfer,
+- [00:29:12,900 - 00:29:17,900] how much horizontal momentum does it transfer to the wall of the box?
+- [00:29:17,900 - 00:29:23,900] Well, the magnitude of the momentum is epsilon.
+- [00:29:23,900 - 00:29:29,900] Let's call this, yeah, let's say delta pi.
+- [00:29:29,900 - 00:29:32,900] The change in the x component, what we're thinking about now,
+- [00:29:32,900 - 00:29:36,900] is a particle which hits the wall and bounces off.
+- [00:29:36,900 - 00:29:40,900] And it transfers some x momentum to the wall.
+- [00:29:40,900 - 00:29:41,900] How much?
+- [00:29:41,900 - 00:29:47,900] Well, the magnitude of the momentum that it started with was epsilon.
+- [00:29:47,900 - 00:29:49,900] That's the magnitude of the momentum.
+- [00:29:49,900 - 00:29:52,900] Its component along the x-axis is epsilon cosine t.
+- [00:29:52,900 - 00:29:59,900] So that's the component of the momentum.
+- [00:29:59,900 - 00:30:03,900] And how much momentum is transferred?
+- [00:30:03,900 - 00:30:04,900] Twice that much.
+- [00:30:04,900 - 00:30:07,900] Why is it twice that much?
+- [00:30:07,900 - 00:30:10,900] Because it starts moving with a certain momentum,
+- [00:30:10,900 - 00:30:12,900] it bounces back,
+- [00:30:12,900 - 00:30:16,900] and the amount of change of momentum is twice its momentum.
+- [00:30:16,900 - 00:30:21,900] So the change in the momentum of that particle along the x-axis
+- [00:30:21,900 - 00:30:26,900] is twice epsilon cosine of theta.
+- [00:30:26,900 - 00:30:28,900] Now let's divide that by delta t.
+- [00:30:28,900 - 00:30:33,900] I'll tell you in a moment why we're dividing it by delta t.
+- [00:30:33,900 - 00:30:35,900] Oh, yeah, that's right.
+- [00:30:35,900 - 00:30:40,900] Twice epsilon cosine theta, let's divide it by delta t.
+- [00:30:40,900 - 00:30:43,900] Why am I dividing it by delta t?
+- [00:30:43,900 - 00:30:49,900] Because the force on the wall is the change of momentum per unit time,
+- [00:30:49,900 - 00:30:52,900] is the transfer of momentum per unit time.
+- [00:30:52,900 - 00:30:54,900] That's Newton's equations.
+- [00:30:54,900 - 00:30:59,900] The change, the force on an object is the time rate of change of its momentum.
+- [00:30:59,900 - 00:31:05,900] And so this is the force exerted for each particle that hits the wall.
+- [00:31:05,900 - 00:31:10,900] Twice epsilon cosine theta over delta t.
+- [00:31:10,900 - 00:31:15,900] Uh, good.
+- [00:31:15,900 - 00:31:18,900] Now, how do we find the full force?
+- [00:31:18,900 - 00:31:21,900] We have to calculate how many particles hit the wall.
+- [00:31:21,900 - 00:31:24,900] This is what we get per particle hitting the wall.
+- [00:31:24,900 - 00:31:26,900] How many particles hit the wall?
+- [00:31:26,900 - 00:31:33,900] How many particles moving at angle cosine theta hit the wall in a time delta t?
+- [00:31:33,900 - 00:31:41,900] Well, a particle will hit the wall if it's within delta x.
+- [00:31:41,900 - 00:31:45,900] How many of them are there within delta x?
+- [00:31:45,900 - 00:31:48,900] The answer is the number of particles,
+- [00:31:48,900 - 00:31:52,900] but the number of particles that will hit the wall in that time
+- [00:31:52,900 - 00:31:55,900] is going to be delta x
+- [00:31:58,900 - 00:32:02,900] times the area of the wall, times the area,
+- [00:32:02,900 - 00:32:05,900] that's the volume of this little region,
+- [00:32:05,900 - 00:32:11,900] times the number of particles per unit volume.
+- [00:32:11,900 - 00:32:16,900] n delta x, n equals
+- [00:32:16,900 - 00:32:22,900] delta x area times the number of particles.
+- [00:32:22,900 - 00:32:26,900] And, um, let's see, have I left anything out of this?
+- [00:32:26,900 - 00:32:30,900] Nothing.
+- [00:32:30,900 - 00:32:31,900] Okay.
+- [00:32:31,900 - 00:32:34,900] So we should multiply this by the number of particles
+- [00:32:34,900 - 00:32:37,900] that hit the wall in time delta t.
+- [00:32:37,900 - 00:32:44,900] And that's pressure will equal twice epsilon cosine theta
+- [00:32:44,900 - 00:32:50,900] divided by delta t times the number,
+- [00:32:50,900 - 00:32:58,900] which is delta x area number of particles per unit volume.
+- [00:32:58,900 - 00:33:06,900] But delta x is delta t cosine theta.
+- [00:33:06,900 - 00:33:12,900] So delta x over delta t is cosine theta.
+- [00:33:12,900 - 00:33:14,900] So we get a formula.
+- [00:33:14,900 - 00:33:18,900] The pressure due to particles moving at angle theta
+- [00:33:18,900 - 00:33:23,900] is twice epsilon cosine theta.
+- [00:33:23,900 - 00:33:28,900] Delta x over delta t is another factor of cosine theta,
+- [00:33:28,900 - 00:33:32,900] cosine squared theta times nu.
+- [00:33:38,900 - 00:33:40,900] There's one mistake in this formula,
+- [00:33:40,900 - 00:33:42,900] the factor of two.
+- [00:33:42,900 - 00:33:45,900] Why is there a mistake in the factor of two?
+- [00:33:45,900 - 00:33:47,900] And the answer is simple.
+- [00:33:47,900 - 00:33:51,900] A particle, if it's in here,
+- [00:33:51,900 - 00:33:53,900] and moving toward the right,
+- [00:33:53,900 - 00:33:55,900] will hit the wall.
+- [00:33:55,900 - 00:33:57,900] But one moving toward the left won't.
+- [00:33:57,900 - 00:34:01,900] So half the particles per unit volume
+- [00:34:01,900 - 00:34:04,900] are unavailable to hit the wall.
+- [00:34:04,900 - 00:34:07,900] Really, we should only count those particles
+- [00:34:07,900 - 00:34:09,900] whose x component of velocity
+- [00:34:09,900 - 00:34:11,900] is toward the wall.
+- [00:34:11,900 - 00:34:14,900] The other particles moving in the opposite direction
+- [00:34:14,900 - 00:34:16,900] are not going to hit the wall.
+- [00:34:16,900 - 00:34:19,900] So we've really overestimated by a factor of two,
+- [00:34:19,900 - 00:34:21,900] and that's correct, that is correct.
+- [00:34:21,900 - 00:34:24,900] We've overestimated by a factor of two
+- [00:34:24,900 - 00:34:27,900] because in putting in here the full
+- [00:34:27,900 - 00:34:31,900] number of particles per unit volume,
+- [00:34:31,900 - 00:34:33,900] I've put too many in.
+- [00:34:33,900 - 00:34:35,900] So we just wipe out the two here,
+- [00:34:35,900 - 00:34:37,900] and now we have a correct formula.
+- [00:34:39,900 - 00:34:43,900] Epsilon times nu, what is that?
+- [00:34:46,900 - 00:34:49,900] The energy per unit volume, or rho.
+- [00:34:49,900 - 00:34:51,900] We're getting there.
+- [00:34:51,900 - 00:34:54,900] The pressure is equal to the energy per unit volume,
+- [00:34:54,900 - 00:34:57,900] that's rho, times this cosine squared theta.
+- [00:34:57,900 - 00:34:59,900] Now wait a minute, what the hell did we do?
+- [00:34:59,900 - 00:35:01,900] We're getting an answer that depends on the angle.
+- [00:35:01,900 - 00:35:05,900] But of course, this is the pressure
+- [00:35:05,900 - 00:35:08,900] due to particles moving at a particular angle.
+- [00:35:08,900 - 00:35:12,900] What we need to do is integrate up the effect
+- [00:35:12,900 - 00:35:14,900] of all the different angles
+- [00:35:14,900 - 00:35:16,900] that the particle could be moving at.
+- [00:35:16,900 - 00:35:21,900] Or better yet, we can ask its equivalent,
+- [00:35:21,900 - 00:35:26,900] what is the average of the square of the cosine of theta
+- [00:35:26,900 - 00:35:30,900] for the particles?
+- [00:35:30,900 - 00:35:33,900] If we average over all particles,
+- [00:35:33,900 - 00:35:37,900] what is the average value of the value of cosine theta?
+- [00:35:38,900 - 00:35:40,900] Cosine squared of theta.
+- [00:35:40,900 - 00:35:42,900] There are particles moving at theta near zero,
+- [00:35:42,900 - 00:35:44,900] there are particles moving at theta near pi,
+- [00:35:44,900 - 00:35:46,900] there are other ones here,
+- [00:35:46,900 - 00:35:48,900] there are other ones here.
+- [00:35:48,900 - 00:35:51,900] What is the average value of cosine squared?
+- [00:35:51,900 - 00:35:53,900] If I asked you what the average value of cosine would,
+- [00:35:53,900 - 00:35:55,900] you'd say zero.
+- [00:35:55,900 - 00:35:57,900] But it's cosine squared.
+- [00:35:57,900 - 00:35:59,900] So we have to ask, what is the average value,
+- [00:35:59,900 - 00:36:01,900] and here's the problem.
+- [00:36:01,900 - 00:36:05,900] The x-axis here is the one perpendicular to the wall.
+- [00:36:05,900 - 00:36:07,900] There are particles flying about at every angle,
+- [00:36:07,900 - 00:36:10,900] in the room,
+- [00:36:10,900 - 00:36:12,900] all possible directions.
+- [00:36:12,900 - 00:36:15,900] We want to know, on the average,
+- [00:36:15,900 - 00:36:19,900] what is the square of the cosine of the angle.
+- [00:36:19,900 - 00:36:21,900] It's an easy problem.
+- [00:36:21,900 - 00:36:23,900] It's an easy mathematical problem.
+- [00:36:23,900 - 00:36:26,900] It has a very simple solution.
+- [00:36:26,900 - 00:36:29,900] Let's leave that there.
+- [00:36:29,900 - 00:36:32,900] It's less than one, isn't it?
+- [00:36:32,900 - 00:36:34,900] Why is it less than one?
+- [00:36:34,900 - 00:36:37,900] Because the cosine never gets bigger than one.
+- [00:36:37,900 - 00:36:39,900] Okay, so it's surely less than one.
+- [00:36:39,900 - 00:36:45,900] But we can calculate it rigorously.
+- [00:36:45,900 - 00:36:46,900] We suppose every particle,
+- [00:36:46,900 - 00:36:48,900] the direction of every particle,
+- [00:36:48,900 - 00:36:52,900] is characterized by a little unit vector in three dimensions.
+- [00:36:52,900 - 00:36:56,900] The unit vector, let's call it n,
+- [00:36:56,900 - 00:37:01,900] and it has three components, nx, ny, and nz.
+- [00:37:01,900 - 00:37:03,900] And it represents the little unit vector
+- [00:37:03,900 - 00:37:06,900] along the direction of motion of the particle.
+- [00:37:06,900 - 00:37:09,900] Three components.
+- [00:37:09,900 - 00:37:13,900] Here's the x-axis.
+- [00:37:13,900 - 00:37:22,900] And I maintain that nx is just cosine theta.
+- [00:37:22,900 - 00:37:27,900] I think that's obvious that the x component of the unit vector
+- [00:37:27,900 - 00:37:30,900] is just cosine theta.
+- [00:37:30,900 - 00:37:33,900] Now, here's something which is true.
+- [00:37:33,900 - 00:37:35,900] nx squared plus nx squared,
+- [00:37:35,900 - 00:37:37,900] plus ny squared,
+- [00:37:37,900 - 00:37:40,900] plus nz squared,
+- [00:37:40,900 - 00:37:45,900] equals one.
+- [00:37:45,900 - 00:37:49,900] That's just the fact that this is a unit vector.
+- [00:37:49,900 - 00:37:50,900] Now let's average.
+- [00:37:50,900 - 00:37:54,900] Let's average this equation over all possible directions.
+- [00:37:54,900 - 00:37:56,900] What will that give us?
+- [00:37:56,900 - 00:37:59,900] That will give us the average of nx squared
+- [00:37:59,900 - 00:38:01,900] plus the average of ny squared
+- [00:38:01,900 - 00:38:03,900] plus the average of nz squared.
+- [00:38:03,900 - 00:38:04,900] But nx squared and ny squared,
+- [00:38:04,900 - 00:38:05,900] and nz squared,
+- [00:38:05,900 - 00:38:07,900] they're all equivalent.
+- [00:38:07,900 - 00:38:10,900] They're just related by rotation.
+- [00:38:10,900 - 00:38:12,900] If the gas is isotropic,
+- [00:38:12,900 - 00:38:13,900] locally isotropic,
+- [00:38:13,900 - 00:38:18,900] so that the velocity distribution is the same in every direction,
+- [00:38:18,900 - 00:38:20,900] then the average of nx squared,
+- [00:38:20,900 - 00:38:23,900] let's average it,
+- [00:38:23,900 - 00:38:26,900] bracket just means average,
+- [00:38:26,900 - 00:38:29,900] of nx squared plus ny squared plus nz squared
+- [00:38:29,900 - 00:38:31,900] is just one.
+- [00:38:31,900 - 00:38:32,900] And if they're all equal,
+- [00:38:32,900 - 00:38:34,900] that tells me that the average of nx squared
+- [00:38:34,900 - 00:38:36,900] is just one third.
+- [00:38:36,900 - 00:38:37,900] Huh?
+- [00:38:37,900 - 00:38:39,900] If there were four directions of space,
+- [00:38:39,900 - 00:38:40,900] it would be one fourth.
+- [00:38:40,900 - 00:38:42,900] If there were two directions of space,
+- [00:38:42,900 - 00:38:43,900] it would be one half.
+- [00:38:43,900 - 00:38:45,900] If there was only one direction of space,
+- [00:38:45,900 - 00:38:46,900] it would be one.
+- [00:38:46,900 - 00:38:48,900] So what have we found?
+- [00:38:48,900 - 00:38:52,900] We found that the average of the cosine squared of theta
+- [00:38:52,900 - 00:38:55,900] is equal to one third.
+- [00:38:55,900 - 00:39:01,900] Pressure equals one third rho.
+- [00:39:01,900 - 00:39:02,900] Let's look at this.
+- [00:39:02,900 - 00:39:08,900] That's the derivation of the equation of state for radiation.
+- [00:39:08,900 - 00:39:11,900] Oh, did I really make any mistake
+- [00:39:11,900 - 00:39:16,900] when I said all the particles have the same energy?
+- [00:39:16,900 - 00:39:17,900] No.
+- [00:39:17,900 - 00:39:20,900] This could be thought of as the contribution
+- [00:39:20,900 - 00:39:22,900] from particles of a given energy,
+- [00:39:22,900 - 00:39:24,900] but for every energy,
+- [00:39:24,900 - 00:39:28,900] each contribution is such that the pressure from that contribution
+- [00:39:28,900 - 00:39:31,900] is equal to the energy density from that contribution.
+- [00:39:31,900 - 00:39:34,900] If you add them all up, it doesn't matter.
+- [00:39:34,900 - 00:39:36,900] You get the same answer.
+- [00:39:36,900 - 00:39:37,900] So, yeah?
+- [00:39:37,900 - 00:39:41,900] This sounds like it's for a box that has perfect mirror walls.
+- [00:39:41,900 - 00:39:42,900] Yeah.
+- [00:39:42,900 - 00:39:45,900] If it has a black wall that absorbs and then re-emits the photons,
+- [00:39:45,900 - 00:39:47,900] is the same answer?
+- [00:39:47,900 - 00:39:49,900] If it has a black wall, yes, the answer would be the same
+- [00:39:49,900 - 00:39:52,900] for a black wall which re-emits the photons,
+- [00:39:52,900 - 00:39:55,900] but you might ask, what wall are we talking about?
+- [00:39:55,900 - 00:39:57,900] What wall are we talking about?
+- [00:39:57,900 - 00:40:00,900] There's no wall out there in space,
+- [00:40:00,900 - 00:40:02,900] so there's no...
+- [00:40:04,900 - 00:40:09,900] These photons are not reflecting off a wall,
+- [00:40:09,900 - 00:40:11,900] nor are they being absorbed by the wall.
+- [00:40:11,900 - 00:40:13,900] What are they really doing?
+- [00:40:13,900 - 00:40:15,900] They're going right through.
+- [00:40:15,900 - 00:40:17,900] They go right through the wall.
+- [00:40:17,900 - 00:40:19,900] But on the other hand,
+- [00:40:19,900 - 00:40:21,900] for everyone that goes through,
+- [00:40:21,900 - 00:40:24,900] on the average, there's one coming from the opposite direction.
+- [00:40:24,900 - 00:40:27,900] So on the average,
+- [00:40:27,900 - 00:40:29,900] the wall of the box really does behave
+- [00:40:29,900 - 00:40:34,900] as though the particles that go out,
+- [00:40:34,900 - 00:40:36,900] you lose their momentum.
+- [00:40:36,900 - 00:40:38,900] The particles that come in, you get their momentum,
+- [00:40:38,900 - 00:40:40,900] and it really does behave the same way.
+- [00:40:40,900 - 00:40:45,900] So, it really doesn't matter what your model
+- [00:40:45,900 - 00:40:49,900] for the relation, for the origin of pressure is.
+- [00:40:49,900 - 00:40:51,900] It's always the same.
+- [00:40:51,900 - 00:40:54,900] Radiation pressure is a third the energy density.
+- [00:40:54,900 - 00:40:58,900] This is just a little example in a box with reflecting walls.
+- [00:40:59,900 - 00:41:02,900] In a box with absorbing walls, it re-radiates.
+- [00:41:02,900 - 00:41:04,900] If you're in thermal equilibrium,
+- [00:41:04,900 - 00:41:06,900] then it's the same.
+- [00:41:06,900 - 00:41:11,900] The radiation in the universe is mostly,
+- [00:41:11,900 - 00:41:14,900] almost all, the microwave background,
+- [00:41:14,900 - 00:41:17,900] and it is in thermal equilibrium.
+- [00:41:17,900 - 00:41:19,900] So...
+- [00:41:19,900 - 00:41:24,900] Okay, that then ties up a bunch of little ends.
+- [00:41:24,900 - 00:41:27,900] It...
+- [00:41:27,900 - 00:41:29,900] ties all of this together.
+- [00:41:29,900 - 00:41:31,900] We now understand this, we understand that,
+- [00:41:31,900 - 00:41:33,900] we understand that, we understand that.
+- [00:41:33,900 - 00:41:35,900] Uh...
+- [00:41:37,900 - 00:41:39,900] This...yeah.
+- [00:41:42,900 - 00:41:44,900] And we're ready to move on
+- [00:41:44,900 - 00:41:47,900] to new kinds of equations of state.
+- [00:41:49,900 - 00:41:51,900] Yes?
+- [00:41:51,900 - 00:41:52,900] Question.
+- [00:41:52,900 - 00:41:54,900] Did the results, any of the results change
+- [00:41:54,900 - 00:41:56,900] if we use quantum statistics?
+- [00:41:56,900 - 00:41:58,900] No, no, no.
+- [00:41:58,900 - 00:41:59,900] No.
+- [00:41:59,900 - 00:42:00,900] Not at all.
+- [00:42:00,900 - 00:42:01,900] Right.
+- [00:42:01,900 - 00:42:02,900] Yeah.
+- [00:42:02,900 - 00:42:03,900] Was that going to...
+- [00:42:03,900 - 00:42:05,900] Photon hit each other?
+- [00:42:05,900 - 00:42:06,900] Uh...
+- [00:42:06,900 - 00:42:08,900] The cross-sectional for photons hitting each other
+- [00:42:08,900 - 00:42:11,900] is really, really small.
+- [00:42:11,900 - 00:42:13,900] It, uh...
+- [00:42:13,900 - 00:42:14,900] It does...
+- [00:42:14,900 - 00:42:16,900] It does make a tiny, tiny change
+- [00:42:16,900 - 00:42:19,900] in the equation of state.
+- [00:42:19,900 - 00:42:20,900] It does.
+- [00:42:20,900 - 00:42:22,900] But it's really, really tiny.
+- [00:42:22,900 - 00:42:23,900] It actually depends...
+- [00:42:23,900 - 00:42:26,900] It actually depends on the, um...
+- [00:42:26,900 - 00:42:28,900] on the temperature and density.
+- [00:42:28,900 - 00:42:31,900] If the temperature and density are high enough
+- [00:42:31,900 - 00:42:34,900] so that, uh, when the particles,
+- [00:42:34,900 - 00:42:36,900] when the photons collide,
+- [00:42:36,900 - 00:42:38,900] they can produce electron-positron pairs,
+- [00:42:38,900 - 00:42:41,900] then the equation of state will change.
+- [00:42:41,900 - 00:42:44,900] And, uh, that's the main effect.
+- [00:42:44,900 - 00:42:46,900] That's the main effect.
+- [00:42:46,900 - 00:42:49,900] But that's exceedingly high temperatures.
+- [00:42:49,900 - 00:42:50,900] Exceedingly.
+- [00:42:50,900 - 00:42:51,900] Way, way, way beyond.
+- [00:42:51,900 - 00:42:53,900] And the temperatures that we're talking about
+- [00:42:53,900 - 00:42:54,900] are very low, uh...
+- [00:42:54,900 - 00:42:55,900] Well, they...
+- [00:42:55,900 - 00:42:57,900] By comparison with that,
+- [00:42:57,900 - 00:42:59,900] they're very, very low.
+- [00:42:59,900 - 00:43:01,900] So the cross-section for two photons
+- [00:43:01,900 - 00:43:03,900] to interact and to scatter off each other
+- [00:43:03,900 - 00:43:05,900] is negligible.
+- [00:43:05,900 - 00:43:08,900] But it, in principle, would affect things.
+- [00:43:08,900 - 00:43:09,900] Yeah.
+- [00:43:09,900 - 00:43:11,900] Yeah.
+- [00:43:11,900 - 00:43:14,900] What happened to the area?
+- [00:43:14,900 - 00:43:15,900] Oh.
+- [00:43:15,900 - 00:43:16,900] Uh...
+- [00:43:16,900 - 00:43:17,900] What happened to the area
+- [00:43:17,900 - 00:43:19,900] is when I calculated the pressure,
+- [00:43:19,900 - 00:43:21,900] it's the force per unit area.
+- [00:43:21,900 - 00:43:22,900] Did I leave it out?
+- [00:43:22,900 - 00:43:23,900] Did I throw it away somewhere else?
+- [00:43:23,900 - 00:43:24,900] Oh, yes.
+- [00:43:24,900 - 00:43:25,900] Um...
+- [00:43:25,900 - 00:43:26,900] Oh, over here.
+- [00:43:26,900 - 00:43:27,900] Pressure, pressure, pressure.
+- [00:43:27,900 - 00:43:29,900] This should have been force.
+- [00:43:30,900 - 00:43:31,900] Good.
+- [00:43:31,900 - 00:43:33,900] This should have been force.
+- [00:43:33,900 - 00:43:38,900] Total force was the force due to one particle
+- [00:43:38,900 - 00:43:42,900] times the number of particles that hit it.
+- [00:43:42,900 - 00:43:48,900] And then force divided by area is pressure.
+- [00:43:48,900 - 00:43:50,900] So let's divide out the area.
+- [00:43:50,900 - 00:43:53,900] Does that answer your question?
+- [00:43:53,900 - 00:43:55,900] Did that answer the question?
+- [00:43:55,900 - 00:43:56,900] Yeah.
+- [00:43:56,900 - 00:43:57,900] Oh, yeah.
+- [00:43:57,900 - 00:43:58,900] Okay.
+- [00:43:58,900 - 00:43:59,900] My, uh...
+- [00:43:59,900 - 00:44:00,900] My omission.
+- [00:44:00,900 - 00:44:01,900] Good.
+- [00:44:01,900 - 00:44:02,900] Any questions?
+- [00:44:02,900 - 00:44:03,900] Do you find that hard or easy?
+- [00:44:03,900 - 00:44:04,900] Not too bad.
+- [00:44:04,900 - 00:44:05,900] Okay.
+- [00:44:05,900 - 00:44:06,900] Now, as you know,
+- [00:44:06,900 - 00:44:11,660] the
+- [00:44:11,660 - 00:44:12,660] uh...
+- [00:44:12,660 - 00:44:14,900] I've been trying to do a lot of
+- [00:44:14,900 - 00:44:16,900] things with the
+- [00:44:16,900 - 00:44:17,900] uh...
+- [00:44:17,900 - 00:44:18,900] Uh,
+- [00:44:18,900 - 00:44:19,900] uh...
+- [00:44:19,900 - 00:44:20,900] You know,
+- [00:44:20,900 - 00:44:23,900] I'm the
+- [00:44:23,900 - 00:44:24,900] founder of the
+- [00:44:24,900 - 00:44:25,900] Uh,
+- [00:44:25,900 - 00:44:30,900] Now, can energy density ever be negative?
+- [00:44:30,900 - 00:44:36,300] Yeah, under certain circumstances it can, but not under any circumstances we will ever
+- [00:44:36,300 - 00:44:40,280] be interested in, or at least not for the moment.
+- [00:44:40,280 - 00:44:42,900] Energy density, well I take that back.
+- [00:44:42,900 - 00:44:44,720] Yes, energy density can be negative.
+- [00:44:44,720 - 00:44:46,520] No, I take it back.
+- [00:44:46,520 - 00:44:47,520] It can be negative.
+- [00:44:47,520 - 00:44:52,000] And we'll even talk about negative energy densities.
+- [00:44:52,000 - 00:44:59,000] But more familiar, pressure can be negative.
+- [00:44:59,000 - 00:45:04,100] So let's discuss under what circumstances pressure can be negative.
+- [00:45:04,100 - 00:45:09,920] Are there any situations where pressure is negative?
+- [00:45:09,920 - 00:45:12,740] Yes is yes.
+- [00:45:12,740 - 00:45:16,340] Negative pressure has another name.
+- [00:45:16,340 - 00:45:19,060] It's called tension.
+- [00:45:19,060 - 00:45:21,960] Or in particular, in one dimension.
+- [00:45:21,960 - 00:45:23,360] Think about a one dimensional world.
+- [00:45:23,360 - 00:45:25,480] Here's the one dimensional world.
+- [00:45:25,480 - 00:45:27,640] We make a box in the one dimensional world.
+- [00:45:27,640 - 00:45:30,180] A box is just a little line interval.
+- [00:45:30,180 - 00:45:34,040] And we can imagine particles flying around in it.
+- [00:45:34,040 - 00:45:39,080] Particles flying around in it will exert, flying around and bouncing off it, will exert
+- [00:45:39,080 - 00:45:42,600] forces on the wall.
+- [00:45:42,600 - 00:45:47,220] And when they bounce off, they will push, obviously push the wall out and correspond
+- [00:45:47,220 - 00:45:48,720] to positive pressure.
+- [00:45:48,720 - 00:45:51,960] Does it make any sense to think about negative pressure?
+- [00:45:51,960 - 00:45:52,960] Sure it does.
+- [00:45:52,960 - 00:45:55,840] Here's an example of negative pressure.
+- [00:45:55,840 - 00:46:02,600] Instead of particles flying around, imagine that the two ends here were connected by a
+- [00:46:02,600 - 00:46:09,280] string or a spring.
+- [00:46:09,280 - 00:46:16,080] Just imagine there was a spring in space that connected the two ends of the box.
+- [00:46:16,080 - 00:46:19,740] When you pull them apart, the spring pulls back.
+- [00:46:19,740 - 00:46:21,960] It doesn't push the walls of the box out.
+- [00:46:21,960 - 00:46:25,140] It pulls the walls of the box in.
+- [00:46:25,140 - 00:46:26,560] That's tension.
+- [00:46:26,560 - 00:46:31,680] The tension of the spring is effectively a negative pressure.
+- [00:46:31,680 - 00:46:39,400] When you, for positive pressure, when you increase the size of the box, you do some
+- [00:46:39,400 - 00:46:47,360] work on the wall of the box, and the energy decreases on the inside.
+- [00:46:47,360 - 00:46:51,840] For tension, when you pull against it, you increase the energy on the inside.
+- [00:46:51,960 - 00:47:01,780] So if for some reason you had negative pressure, but let's say positive energy, then W would
+- [00:47:01,780 - 00:47:04,000] be negative.
+- [00:47:04,000 - 00:47:05,000] That's a possibility.
+- [00:47:05,000 - 00:47:08,100] We should think about it.
+- [00:47:08,100 - 00:47:11,960] If it wasn't absolutely central to cosmology, I wouldn't even be telling you about it.
+- [00:47:11,960 - 00:47:13,440] So it is central.
+- [00:47:13,440 - 00:47:16,580] That pressure can be negative.
+- [00:47:16,580 - 00:47:20,280] Even if energy density is positive.
+- [00:47:20,280 - 00:47:21,240] Pressure tends to be...
+- [00:47:21,240 - 00:47:26,560] Pressure will be positive if you have a bunch of particles moving around which don't interact
+- [00:47:26,560 - 00:47:30,680] with each other very much, and mainly just bounce off the wall.
+- [00:47:30,680 - 00:47:35,460] If the particles are attracting each other, they're pulling themselves together, and if
+- [00:47:35,460 - 00:47:40,680] they also attract the wall, they will pull the wall in.
+- [00:47:40,680 - 00:47:45,640] So there are certainly circumstances where pressure can be negative.
+- [00:47:45,640 - 00:47:49,280] And as I said, it corresponds to tension.
+- [00:47:49,280 - 00:47:51,040] We're going to talk about an example.
+- [00:47:51,040 - 00:47:55,040] It's called vacuum energy, where pressure can be negative.
+- [00:47:55,040 - 00:47:57,800] Where pressure typically is negative.
+- [00:47:57,800 - 00:48:05,580] Okay, so let's talk about a special kind of energy density that's called vacuum energy.
+- [00:48:05,580 - 00:48:11,180] It is a consequence of quantum field theory.
+- [00:48:11,180 - 00:48:17,840] But we don't need to know where it comes from to describe it.
+- [00:48:17,840 - 00:48:19,040] Vacuum energy is just an energy that we assign to the energy density.
+- [00:48:19,040 - 00:48:20,040] It's called vacuum energy.
+- [00:48:20,040 - 00:48:21,040] It's called vacuum energy.
+- [00:48:21,040 - 00:48:22,780] Vacuum energy is just an energy that we assign to empty space.
+- [00:48:22,780 - 00:48:31,800] We don't need to know where it comes from just to say, I can, in my bookkeeping, not
+- [00:48:31,800 - 00:48:39,380] in my bookkeeping, I can conjecture that just empty space with nothing in it has energy.
+- [00:48:39,380 - 00:48:41,900] Now we know where that energy comes from in quantum mechanics.
+- [00:48:41,900 - 00:48:45,260] It comes from zero point energy of fluctuation.
+- [00:48:45,260 - 00:48:51,040] It comes from zero point energy of harmonic oscillators, which represent the quanta of
+- [00:48:51,040 - 00:48:52,700] field.
+- [00:48:52,700 - 00:48:55,520] We know where it comes from.
+- [00:48:55,520 - 00:49:02,680] But whatever it is, it's energy that's simply there in empty space.
+- [00:49:02,680 - 00:49:09,120] It's as if this blackboard had a uniform energy density on it, and nothing I would do, well
+- [00:49:09,120 - 00:49:13,700] I could put some extra particles in, but nothing I could do short of putting in more material
+- [00:49:13,700 - 00:49:16,800] and so forth will change the energy of that blackboard.
+- [00:49:16,800 - 00:49:17,780] It's just a fixed thing that's there.
+- [00:49:17,780 - 00:49:18,780] Right?
+- [00:49:18,780 - 00:49:19,780] So, let's talk about the energy density.
+- [00:49:19,780 - 00:49:20,780] Okay.
+- [00:49:21,040 - 00:49:27,800] Now I take a box.
+- [00:49:27,800 - 00:49:32,460] It could be a box with fictitious walls, or it could be a box with real walls.
+- [00:49:32,460 - 00:49:36,940] How much energy, vacuum energy in this case now, is there in the box?
+- [00:49:36,940 - 00:49:43,480] The answer is whatever the vacuum energy density is times the volume of the box.
+- [00:49:43,480 - 00:49:48,700] And vacuum energy has the special property that the vacuum energy density is universal
+- [00:49:48,700 - 00:49:49,700] constant.
+- [00:49:49,700 - 00:49:55,320] It does not change when you change the size of the box, the density.
+- [00:49:55,320 - 00:49:59,920] It's just a characteristic of empty space, and as long as the box only has empty space
+- [00:49:59,920 - 00:50:05,460] in it, the vacuum energy density is fixed.
+- [00:50:05,460 - 00:50:06,460] Yes?
+- [00:50:06,460 - 00:50:12,460] So when you make the box, you limit the number of modes that can be inside and outside.
+- [00:50:12,460 - 00:50:13,460] You do.
+- [00:50:13,460 - 00:50:16,460] So it would seem like the density would be less inside than outside.
+- [00:50:16,460 - 00:50:17,460] You limit the number.
+- [00:50:17,460 - 00:50:18,460] That's why I'm saying that.
+- [00:50:18,460 - 00:50:19,460] You limit the number.
+- [00:50:19,460 - 00:50:24,020] No, that's why the energy is less than the energy in all of space.
+- [00:50:24,020 - 00:50:25,020] Okay.
+- [00:50:25,020 - 00:50:29,820] If I didn't limit the number of modes, I would just be talking about the energy in all of
+- [00:50:29,820 - 00:50:33,960] space, and surely the energy in the box is less than the energy in all of space.
+- [00:50:33,960 - 00:50:37,460] I meant energy density.
+- [00:50:37,460 - 00:50:40,160] No, the energy density doesn't change.
+- [00:50:40,160 - 00:50:44,140] It's the total energy which changes because of what you said.
+- [00:50:44,140 - 00:50:45,140] And it's
+- [00:50:45,140 - 00:50:46,460] There is a Casimir force.
+- [00:50:46,460 - 00:50:47,460] There is a Casimir force.
+- [00:50:47,460 - 00:50:48,460] But that, that, that's not the point.
+- [00:50:48,460 - 00:50:49,460] I think it's the energy density.
+- [00:50:49,460 - 00:50:56,140] That is only important when the walls of the box are really, really close together.
+- [00:50:56,140 - 00:51:02,880] Other than the Casimir force, that, and that's not important unless the distance between
+- [00:51:02,880 - 00:51:10,020] the walls of the box is comparable or smaller than the wavelength of the radiation.
+- [00:51:10,020 - 00:51:13,020] Or, really, really close.
+- [00:51:13,020 - 00:51:14,120] Really, really close.
+- [00:51:14,120 - 00:51:16,020] It's not important for our purposes.
+- [00:51:16,020 - 00:51:19,020] For our purposes now, we're just talking about an energy density which is there.
+- [00:51:19,020 - 00:51:21,360] It's always there no matter what we do.
+- [00:51:21,360 - 00:51:25,700] And the box, the box doesn't affect the energy density.
+- [00:51:25,700 - 00:51:28,900] Okay, let's give it a name.
+- [00:51:28,900 - 00:51:33,960] Let's see.
+- [00:51:33,960 - 00:51:36,540] Let's call it rho naught.
+- [00:51:36,540 - 00:51:38,560] Nought stands for the vacuum.
+- [00:51:38,560 - 00:51:41,660] The vacuum energy density.
+- [00:51:41,660 - 00:51:46,020] And I'm going to also call it...
+- [00:51:46,020 - 00:51:47,020] I'm going to also call it...
+- [00:51:47,020 - 00:51:48,020] I'm going to also call it...
+- [00:51:48,020 - 00:51:49,020] I'm going to also call it...
+- [00:51:49,020 - 00:51:51,020] I'm going to write lambda, rho naught.
+- [00:51:51,020 - 00:51:52,020] Let me get it straight.
+- [00:51:52,020 - 00:51:57,020] Rho naught is equal to another constant.
+- [00:51:57,020 - 00:51:59,020] It's just another name for it.
+- [00:51:59,020 - 00:52:00,020] Lambda.
+- [00:52:02,020 - 00:52:04,020] But I'm going to put a factor in.
+- [00:52:04,020 - 00:52:07,020] And the factor is...
+- [00:52:10,020 - 00:52:15,020] 3 over 8 pi g.
+- [00:52:19,020 - 00:52:25,020] Energy density is energy density.
+- [00:52:25,020 - 00:52:29,020] We know what we mean by it.
+- [00:52:29,020 - 00:52:32,020] 3 and 8 pi g are numerical constants.
+- [00:52:32,020 - 00:52:34,020] This defines lambda.
+- [00:52:34,020 - 00:52:37,020] It is the definition of lambda.
+- [00:52:37,020 - 00:52:39,020] There's a name for lambda.
+- [00:52:39,020 - 00:52:42,020] It's called the cosmological constant.
+- [00:52:42,020 - 00:52:43,020] All right.
+- [00:52:43,020 - 00:52:48,020] The relation between the left side and the right side is trivial.
+- [00:52:48,020 - 00:52:49,020] It's just a definition.
+- [00:52:49,020 - 00:52:56,020] You'll see why it's useful to define lambda.
+- [00:52:56,020 - 00:52:57,020] You know what?
+- [00:52:57,020 - 00:52:58,020] It's useful.
+- [00:52:58,020 - 00:52:59,020] Why is it useful?
+- [00:52:59,020 - 00:53:02,020] I'll remind you why it might be useful.
+- [00:53:02,020 - 00:53:06,020] Let me just remind you about the Friedman equation.
+- [00:53:06,020 - 00:53:17,020] The Friedman equation says that a dot over a squared is equal to 8 pi g over 3 times rho
+- [00:53:17,020 - 00:53:20,020] plus maybe 1 over a squared or something.
+- [00:53:20,020 - 00:53:24,020] But it always comes in 8 pi g over 3.
+- [00:53:24,020 - 00:53:28,020] Well, 8 pi g over 3 times rho.
+- [00:53:28,020 - 00:53:33,020] 8 pi g over 3 times rho naught is equal to lambda.
+- [00:53:33,020 - 00:53:36,020] That's why the 8 pi 3 over g is there.
+- [00:53:36,020 - 00:53:39,020] Lambda appears nicely in the equation.
+- [00:53:39,020 - 00:53:41,020] Rho appears less nicely.
+- [00:53:41,020 - 00:53:45,020] But nevertheless, let's just think of rho as energy density.
+- [00:53:45,020 - 00:53:46,020] Okay.
+- [00:53:46,020 - 00:53:54,020] Let's, uh, incidentally, for vacuum energy, we know immediately what the relation between
+- [00:53:54,020 - 00:53:58,020] the vacuum energy density is and the scale factor.
+- [00:53:58,020 - 00:54:00,020] There is no relation.
+- [00:54:00,020 - 00:54:05,020] No matter how big or small you make the box, the vacuum energy is always the same.
+- [00:54:05,020 - 00:54:10,020] It's a universal energy density in the vacuum, and it doesn't change when you change the
+- [00:54:10,020 - 00:54:13,020] size of the universe, the density of it.
+- [00:54:13,020 - 00:54:16,020] So we already know the answer to how it varies.
+- [00:54:16,020 - 00:54:20,020] But let's ask, let's just ask for fun about its equation of state.
+- [00:54:20,020 - 00:54:23,020] What kind of equation of state does it correspond to?
+- [00:54:23,020 - 00:54:26,020] And it does correspond to an equation of state.
+- [00:54:26,020 - 00:54:29,020] Let's go, let's work this backward.
+- [00:54:29,020 - 00:54:33,020] We'll work this backward now.
+- [00:54:33,020 - 00:54:39,020] And let's work it backward for the special case of a vacuum energy density.
+- [00:54:39,020 - 00:54:45,020] So the energy is equal to rho naught times v, and rho naught does not change.
+- [00:54:45,020 - 00:54:55,020] So d rho is zero.
+- [00:54:55,020 - 00:55:03,020] And that's equal to minus w rho naught dv.
+- [00:55:03,020 - 00:55:11,020] Can you read off what w is?
+- [00:55:11,020 - 00:55:13,020] Not very hard.
+- [00:55:15,020 - 00:55:22,020] Rho naught dv is minus w rho naught dv.
+- [00:55:22,020 - 00:55:29,020] With a little bit of calculation, maybe a half an hour's thought, w is equal to minus
+- [00:55:29,020 - 00:55:32,020] 1.
+- [00:55:32,020 - 00:55:37,020] w is equal to minus 1 for vacuum energy.
+- [00:55:37,020 - 00:55:43,020] When you read in various places that astronomers are measuring vacuum energy, you're going to
+- [00:55:43,020 - 00:55:47,020] see that astronomers are measuring w.
+- [00:55:47,020 - 00:55:51,020] And they're discovering that w is close to minus 1.
+- [00:55:51,020 - 00:55:53,020] This is what they're talking about.
+- [00:55:53,020 - 00:55:55,020] They're talking about vacuum energy.
+- [00:55:55,020 - 00:56:04,020] The closer the experimental evidence is to w equals minus 1, what they're really talking
+- [00:56:04,020 - 00:56:10,020] about is that saying that the energy density of the universe is like vacuum energy.
+- [00:56:10,020 - 00:56:12,020] It doesn't dilute.
+- [00:56:12,020 - 00:56:16,020] It doesn't dilute when you expand space.
+- [00:56:16,020 - 00:56:19,020] It doesn't dilute because it's a property of empty space to begin with.
+- [00:56:19,020 - 00:56:22,020] All right, that's vacuum energy.
+- [00:56:22,020 - 00:56:25,020] It can be positive or negative.
+- [00:56:25,020 - 00:56:32,020] In either case, the pressure and the energy density have opposite sign.
+- [00:56:32,020 - 00:56:35,020] That's the meaning of w equals minus 1.
+- [00:56:35,020 - 00:56:39,020] So if the energy density of the vacuum is positive, the pressure is negative.
+- [00:56:39,020 - 00:56:42,020] If the energy density is negative, the pressure is positive.
+- [00:56:42,020 - 00:56:45,020] That's a characteristic of vacuum energy.
+- [00:56:45,020 - 00:56:52,020] It's not into, you know, after a while when you think about it, it becomes familiar and
+- [00:56:52,020 - 00:56:56,020] it's something that's not all that crazy.
+- [00:56:56,020 - 00:57:02,020] But when you think, when you try to think about it in terms of particles and in terms
+- [00:57:02,020 - 00:57:08,020] of, you know, the usual things that you're used to thinking about causing pressure, first
+- [00:57:08,020 - 00:57:11,020] of all, negative pressure may seem a little odd.
+- [00:57:11,020 - 00:57:16,020] But especially odd is this fact that the energy density and the pressure have opposite
+- [00:57:16,020 - 00:57:17,020] sign.
+- [00:57:17,020 - 00:57:23,020] But what it comes down to is that there's just this little derivation here.
+- [00:57:23,020 - 00:57:27,020] Negative pressure, positive energy density, or the opposite.
+- [00:57:27,020 - 00:57:30,020] So that would be the equation of state for an empty universe?
+- [00:57:30,020 - 00:57:34,020] That's the equation of state for an empty universe if there is a energy density.
+- [00:57:34,020 - 00:57:40,020] Now, what the value of rho nore- yeah, this is the equation of state for an empty universe,
+- [00:57:40,020 - 00:57:44,020] assuming, yeah, that it's governed by vacuum energy.
+- [00:57:44,020 - 00:57:50,020] Now, what the value of rho nore- is, that's something we don't know how to compute.
+- [00:57:50,020 - 00:58:00,020] Um, it, uh, there are too many contributions to it.
+- [00:58:00,020 - 00:58:06,020] They come from all sorts of quantum fields that we may not have discovered yet.
+- [00:58:06,020 - 00:58:07,020] They come from high energies.
+- [00:58:07,020 - 00:58:08,020] They come from low energies.
+- [00:58:08,020 - 00:58:09,020] Uh, yeah.
+- [00:58:10,020 - 00:58:16,020] So, one would have to have a pretty exact theory of all of the quantum fields in nature
+- [00:58:16,020 - 00:58:19,020] to be able to compute what rho nore- is.
+- [00:58:19,020 - 00:58:25,020] And we haven't got the vaguest idea of why it is what it is, the numerical value of it.
+- [00:58:25,020 - 00:58:29,020] Um, we'll talk about the numerical value of it.
+- [00:58:29,020 - 00:58:38,020] What I will tell you, it's extremely small, but, uh, what are the implications of it?
+- [00:58:38,020 - 00:58:39,020] What are the implications of it?
+- [00:58:39,020 - 00:58:42,020] What are the implications of it?
+- [00:58:42,020 - 00:58:47,020] It's a form of energy density in the vacuum, and it competes with the other energy densities.
+- [00:58:47,020 - 00:58:54,020] But, let's study the special case where the only energy density in the universe is vacuum energy.
+- [00:58:54,020 - 00:58:58,020] Just like we studied the pure matter dominated case, and then we studied the pure radiation
+- [00:58:58,020 - 00:59:05,020] dominated case, and then we mixed the two of them, and we said radiation dominates early,
+- [00:59:05,020 - 00:59:07,020] matter dominates late.
+- [00:59:07,020 - 00:59:14,020] Let's isolate out just what pure vacuum energy density would do.
+- [00:59:14,020 - 00:59:15,020] Alright?
+- [00:59:15,020 - 00:59:21,020] So, let's go back to the equations governing the expansion of the universe and see how
+- [00:59:21,020 - 00:59:25,020] vacuum energy would influence things.
+- [00:59:25,020 - 00:59:30,020] There are two cases- well, there are actually six cases.
+- [00:59:30,020 - 00:59:35,020] The six cases are lambda, which is proportional to the energy density, is equal to the energy density,
+- [00:59:35,020 - 00:59:36,020] and then lambda is the energy density.
+- [00:59:36,020 - 00:59:40,020] So, the energy density is equal to positive or negative, plus or minus.
+- [00:59:40,020 - 00:59:42,020] Of course, there's an infinite number of cases.
+- [00:59:42,020 - 00:59:46,020] When I say plus or minus, it could be any number, any value.
+- [00:59:46,020 - 00:59:55,020] But, uh, let's distinguish positive and negative energy density, and positive and- and the three
+- [00:59:55,020 - 00:59:58,020] possible values of k.
+- [00:59:58,020 - 01:00:00,020] Remember what k is?
+- [01:00:00,020 - 01:00:02,020] k is the curvature of space.
+- [01:00:02,020 - 01:00:05,020] It's either positive- it's either plus one, minus one, or zero.
+- [01:00:05,020 - 01:00:13,020] Plus one for spherical space, zero for flat space, minus one for hyperbola- for hyperbolic space.
+- [01:00:13,020 - 01:00:18,020] So, we have k equals minus one, plus one, or zero.
+- [01:00:18,020 - 01:00:21,020] That makes six cases altogether.
+- [01:00:21,020 - 01:00:23,020] And what are the equations?
+- [01:00:23,020 - 01:00:25,020] The equations are the good old Friedman equations.
+- [01:00:25,020 - 01:00:27,020] Let's write them down.
+- [01:00:27,020 - 01:00:34,020] A dot over a squared, which is also, I'll remind you, the square of the Hubble constant.
+- [01:00:34,020 - 01:00:36,020] Instantaneously.
+- [01:00:36,020 - 01:00:50,020] A dot over a squared is equal, first of all, eight pi over three g times the energy density.
+- [01:00:50,020 - 01:00:56,020] But now the energy density is just the constant energy density of the empty vacuum.
+- [01:00:56,020 - 01:01:03,020] And then, minus k, plus or minus one or zero,
+- [01:01:03,020 - 01:01:06,020] divided by a squared.
+- [01:01:06,020 - 01:01:10,020] That's our equation, and that's the equation we'd like to solve.
+- [01:01:10,020 - 01:01:18,020] Before I do so, let's just take advantage now of our definition that eight pi g over three is called lambda.
+- [01:01:18,020 - 01:01:22,020] That's why- that's why lambda was introduced.
+- [01:01:22,020 - 01:01:30,020] It was introduced to get rid of this nasty eight pi three over g, eight pi g over three, and just call it lambda.
+- [01:01:30,020 - 01:01:32,020] It's called the cosmological constant.
+- [01:01:32,020 - 01:01:38,020] It was introduced by Einstein, who later rejected it.
+- [01:01:40,020 - 01:01:47,020] And then, famously- oh, it's also called dark energy.
+- [01:01:47,020 - 01:01:51,020] It's also the thing which the newspapers call dark energy.
+- [01:01:54,020 - 01:01:57,020] Dark because it doesn't glow.
+- [01:01:57,020 - 01:01:59,020] Yeah.
+- [01:01:59,020 - 01:02:01,020] So, um...
+- [01:02:02,020 - 01:02:09,020] As I said, we can have lambda equals plus, minus, or- and we can- and also lambda can also equal zero, incidentally.
+- [01:02:09,020 - 01:02:11,020] Plus, minus, or zero.
+- [01:02:11,020 - 01:02:13,020] But, uh, we can take the various cases.
+- [01:02:13,020 - 01:02:15,020] If it's zero, we've already done the various things.
+- [01:02:15,020 - 01:02:20,020] Now, let's start with lambda equals positive.
+- [01:02:20,020 - 01:02:27,020] Let's take the case lambda equals positive, and also k equals positive.
+- [01:02:27,020 - 01:02:32,020] We'll- there are fewer cases that may- that are relevant.
+- [01:02:32,020 - 01:02:35,020] I'll show you some cases which don't make any sense, first of all.
+- [01:02:35,020 - 01:02:40,020] Supposing lambda is negative, and supposing k is positive.
+- [01:02:40,020 - 01:02:45,020] Then both sides of this equation are negative.
+- [01:02:45,020 - 01:02:49,020] But this side is positive, and so it can't make sense.
+- [01:02:49,020 - 01:02:50,020] Alright.
+- [01:02:50,020 - 01:02:55,020] So the case- the case lambda negative and k positive, that doesn't make any sense.
+- [01:02:55,020 - 01:03:00,020] There's a number of other cases that don't make any sense, or at least that don't have any solutions.
+- [01:03:00,020 - 01:03:03,020] So let's take one which does have a solution.
+- [01:03:03,020 - 01:03:07,020] Uh, the simplest case- this is by far the simplest case.
+- [01:03:07,020 - 01:03:09,020] Let's take k equals zero.
+- [01:03:09,020 - 01:03:10,020] We'll come back to the other cases.
+- [01:03:10,020 - 01:03:12,020] Let's take k equals zero.
+- [01:03:12,020 - 01:03:14,020] That's the flat universe.
+- [01:03:14,020 - 01:03:22,020] Space is flat, and, uh, the scale factor satisfies this equation here.
+- [01:03:22,020 - 01:03:24,020] And let's solve it.
+- [01:03:24,020 - 01:03:26,020] To solve it, we take the square root.
+- [01:03:26,020 - 01:03:28,020] A dot
+- [01:03:28,020 - 01:03:30,020] is equal to the square root of k.
+- [01:03:30,020 - 01:03:34,020] Square root of lambda times a.
+- [01:03:34,020 - 01:03:36,020] Alright, so what's the solution?
+- [01:03:36,020 - 01:03:38,020] A dot means dA dt.
+- [01:03:38,020 - 01:03:39,020] Let's write it out.
+- [01:03:39,020 - 01:03:41,020] dA dt.
+- [01:03:43,020 - 01:03:52,020] And this is the equation who's- such that the time rate of change of something is proportional to that something.
+- [01:03:52,020 - 01:03:55,020] What's the solution of such an equation?
+- [01:03:55,020 - 01:03:58,020] Exponential growth.
+- [01:03:58,020 - 01:03:59,020] Okay.
+- [01:03:59,020 - 01:04:04,020] Now notice that if lambda were negative, we would be having a problem here immediately.
+- [01:04:04,020 - 01:04:06,020] Would make no sense.
+- [01:04:06,020 - 01:04:11,020] So, lambda being negative, and k equals zero, no good.
+- [01:04:11,020 - 01:04:12,020] Doesn't make sense.
+- [01:04:12,020 - 01:04:13,020] No solution.
+- [01:04:13,020 - 01:04:16,020] But lambda equals positive, and, uh, k equals zero.
+- [01:04:16,020 - 01:04:19,020] There is a solution, and what is the solution?
+- [01:04:19,020 - 01:04:24,020] The solution is that A grows exponentially with time.
+- [01:04:24,020 - 01:04:26,020] A is equal to some constant.
+- [01:04:26,020 - 01:04:28,020] Doesn't matter what constant you choose.
+- [01:04:29,020 - 01:04:31,020] It actually doesn't matter.
+- [01:04:31,020 - 01:04:32,020] They all give the same answer.
+- [01:04:32,020 - 01:04:34,020] Uh, for the, for the geometry.
+- [01:04:34,020 - 01:04:42,020] Times e to the t, but what's the coefficient in front of t?
+- [01:04:44,020 - 01:04:46,020] Square root of lambda, right?
+- [01:04:54,020 - 01:04:55,020] That's an interesting case.
+- [01:04:55,020 - 01:04:58,020] The universe exponentially expands.
+- [01:04:58,020 - 01:05:05,020] So that's a consequence of vacuum energy, positive vacuum energy, and no cur- let's
+- [01:05:05,020 - 01:05:08,020] say, we're doing the case with no curvature.
+- [01:05:08,020 - 01:05:10,020] k equals zero.
+- [01:05:10,020 - 01:05:15,020] In that case, the universe exponentially expands.
+- [01:05:15,020 - 01:05:18,020] Let's calculate the Hubble constant.
+- [01:05:18,020 - 01:05:19,020] Remember what the Hubble constant is?
+- [01:05:19,020 - 01:05:22,020] The Hubble const- oh, I don't have to calculate the Hubble constant.
+- [01:05:22,020 - 01:05:27,020] A dot over A, square- A dot over A is the Hubble constant.
+- [01:05:27,020 - 01:05:35,020] Hubble.
+- [01:05:35,020 - 01:05:41,020] And must be the square root of lambda.
+- [01:05:41,020 - 01:05:46,020] So the Hubble constant in this case, not generally, but in this case, the Hubble constant is just
+- [01:05:46,020 - 01:05:48,020] the square root of lambda.
+- [01:05:48,020 - 01:05:54,020] And we can also write that the scale factor exponentially increases some constant, doesn't
+- [01:05:54,020 - 01:05:56,020] matter what constant, c.
+- [01:05:56,020 - 01:06:04,020] E to the Hubble constant times time.
+- [01:06:04,020 - 01:06:09,020] This is a space-time which exponentially expands and is called de Sitter space.
+- [01:06:09,020 - 01:06:11,020] De Sitter space.
+- [01:06:18,020 - 01:06:22,020] De Sitter was a Dutch physicist-astronomer.
+- [01:06:22,020 - 01:06:24,020] And he discovered this solution.
+- [01:06:24,020 - 01:06:32,020] This solution of Einstein's equations with a cosmological constant, and it's named after
+- [01:06:32,020 - 01:06:33,020] him, we still call it.
+- [01:06:33,020 - 01:06:40,020] He discovered it sometime, I think it was about 1917, I'm not sure, very, very shortly after
+- [01:06:40,020 - 01:06:41,020] Einstein.
+- [01:06:41,020 - 01:06:42,020] Right.
+- [01:06:42,020 - 01:06:52,020] And this is one version of the Sitter space, exponential expansion.
+- [01:06:52,020 - 01:06:53,020] Right.
+- [01:06:53,020 - 01:06:54,020] So, um-
+- [01:06:54,020 - 01:06:55,020] Question.
+- [01:06:55,020 - 01:06:56,020] Yeah.
+- [01:06:56,020 - 01:07:05,020] So in this case, the Hubble constant is actually a constant, but-
+- [01:07:05,020 - 01:07:06,020] Right.
+- [01:07:06,020 - 01:07:07,020] That's right.
+- [01:07:07,020 - 01:07:15,020] This is the unique geometry with a Hubble constant which is constant.
+- [01:07:15,020 - 01:07:19,020] There is also no big bang, this has to go minus infinity to go to zero.
+- [01:07:19,020 - 01:07:20,020] A to the zero.
+- [01:07:20,020 - 01:07:21,020] That's a little bit-
+- [01:07:21,020 - 01:07:33,020] This is a little bit ambiguous, and I will try to explain to you why it's ambiguous.
+- [01:07:33,020 - 01:07:35,020] Let's hold off on that.
+- [01:07:35,020 - 01:07:36,020] This geom-
+- [01:07:36,020 - 01:07:37,020] All right.
+- [01:07:37,020 - 01:07:46,020] If you want a technical set of words, this geometry is not geodesically complete.
+- [01:07:46,020 - 01:07:47,020] Um.
+- [01:07:47,020 - 01:07:52,260] There are trajectories back into the past which go to the infinite past in a finite
+- [01:07:52,260 - 01:07:53,260] proper time.
+- [01:07:53,260 - 01:07:57,740] That means some of the geometry is missing, but we'll take that up separately.
+- [01:07:57,740 - 01:08:00,520] We'll take it up when we get to it.
+- [01:08:00,520 - 01:08:06,100] And it's a problematic question of whether there's a big bang in this kind of space or
+- [01:08:06,100 - 01:08:07,100] not.
+- [01:08:07,100 - 01:08:12,400] However, this kind of space doesn't exist by itself.
+- [01:08:12,400 - 01:08:16,020] There's no reason why we shouldn't put back other kinds of matter into it.
+- [01:08:16,020 - 01:08:21,260] And when we do put other kinds of matter into it, things change.
+- [01:08:21,260 - 01:08:24,440] In particular, they change at early time.
+- [01:08:24,440 - 01:08:25,440] Let's see.
+- [01:08:25,440 - 01:08:26,440] Um.
+- [01:08:26,440 - 01:08:30,540] Let's imagine- Let's see what goes on here.
+- [01:08:30,540 - 01:08:36,780] Let's put in rho naught, which is just lambda, but let's also put in some other kinds of
+- [01:08:36,780 - 01:08:38,080] matter.
+- [01:08:38,080 - 01:08:42,020] Other kinds of matter might be some radiation.
+- [01:08:42,020 - 01:08:44,260] That would be some constant over a to the fourth.
+- [01:08:44,260 - 01:08:45,260] So, let's put in some constant over a to the fourth.
+- [01:08:45,260 - 01:08:45,460] Okay.
+- [01:08:45,460 - 01:08:45,580] Okay.
+- [01:08:45,580 - 01:08:45,680] Okay.
+- [01:08:45,680 - 01:08:45,780] Okay.
+- [01:08:45,780 - 01:08:46,020] Okay.
+- [01:08:46,020 - 01:08:47,020] Okay.
+- [01:08:47,020 - 01:08:47,900] Okay.
+- [01:08:47,900 - 01:08:52,620] So we would be adding to the cosmological constant some matter.
+- [01:08:52,620 - 01:08:57,620] Now, the very early universe is the time when the universe was small.
+- [01:08:57,620 - 01:09:00,180] The late universe is the time when it's big.
+- [01:09:00,180 - 01:09:07,440] When A is very large, when it's big enough, this will become smaller than lambda.
+- [01:09:07,440 - 01:09:12,320] And eventually, when the universe gets big enough, lambda will dominate and the universe
+- [01:09:12,320 - 01:09:15,000] will exponentially expand.
+- [01:09:15,000 - 01:09:15,780] On the other hand...
+- [01:09:15,780 - 01:09:19,260] And very early times is when A is small.
+- [01:09:19,260 - 01:09:23,460] When A is small, it will be more important than lambda.
+- [01:09:23,460 - 01:09:29,220] So very early times, the vacuum energy is not important.
+- [01:09:29,220 - 01:09:33,060] Very late times, it dominates everything.
+- [01:09:33,060 - 01:09:43,040] That's why when we make our observations, we're in the process, meaning to say the universe
+- [01:09:43,040 - 01:09:51,420] is in the process now, of making a transition from being matter-dominated, let's put A cubed
+- [01:09:51,420 - 01:09:57,160] here, it's in the transition region where these two are more or less competing with
+- [01:09:57,160 - 01:10:00,320] each other.
+- [01:10:00,320 - 01:10:05,040] So we're not yet seeing genuine exponential expansion.
+- [01:10:05,040 - 01:10:07,420] It's too early.
+- [01:10:07,420 - 01:10:12,380] There's still competition from this term over here, even though this one is bigger.
+- [01:10:12,380 - 01:10:12,880] Well, no.
+- [01:10:12,880 - 01:10:15,780] They're more, this one is a little bigger.
+- [01:10:15,780 - 01:10:16,940] This one's bigger.
+- [01:10:16,940 - 01:10:17,940] But they're competing.
+- [01:10:17,940 - 01:10:29,580] But we're beginning to see a transition from this behavior here to this behavior over here.
+- [01:10:29,580 - 01:10:34,860] That's what these curves that I've drawn repeatedly look like.
+- [01:10:34,860 - 01:10:42,220] They show something which looks very much, at early times, like matter-dominated.
+- [01:10:42,220 - 01:10:49,820] But over the last one or two or three billion years, we begin to see a deviation from it,
+- [01:10:49,820 - 01:10:52,720] and the deviation is pointing in this direction.
+- [01:11:01,840 - 01:11:04,360] Why is it called accelerating?
+- [01:11:04,360 - 01:11:10,560] It's called accelerating for the simple reason that if A increases exponentially and we calculate
+- [01:11:10,560 - 01:11:12,120] the acceleration, that just means the same thing.
+- [01:11:12,120 - 01:11:16,680] If A is the second time derivative, it's also increasing exponentially.
+- [01:11:16,680 - 01:11:20,060] The derivative of an exponential is just another exponential.
+- [01:11:20,060 - 01:11:22,900] The second derivative is just another exponential.
+- [01:11:22,900 - 01:11:30,400] And so the universe is not only expanding, but it's expanding in an exponential way,
+- [01:11:30,400 - 01:11:33,580] but in an accelerated way.
+- [01:11:33,580 - 01:11:37,800] It could be accelerated without being exponential, incidentally.
+- [01:11:37,800 - 01:11:40,340] But okay, so what's the truth?
+- [01:11:40,340 - 01:11:41,740] The truth is that observation...
+- [01:11:41,740 - 01:11:47,600] The truth is that observation at the present time confirms acceleration.
+- [01:11:47,600 - 01:11:49,300] More precision...
+- [01:11:49,300 - 01:11:57,260] The more precision we get, the more it looks like it's beginning to exponentially accelerate.
+- [01:11:57,260 - 01:11:59,260] Okay, any questions?
+- [01:11:59,260 - 01:12:00,260] Yes?
+- [01:12:00,260 - 01:12:09,360] So you seem to say that the positive vacuum energy could be associated with the ground
+- [01:12:09,360 - 01:12:10,360] state of quantum fields.
+- [01:12:10,360 - 01:12:11,360] Mm-hmm.
+- [01:12:11,360 - 01:12:15,300] So then how do you explain negative vacuum energy?
+- [01:12:15,300 - 01:12:16,300] Oh!
+- [01:12:16,300 - 01:12:23,440] No, um, if you calculate the vacuum energy of a quantum field, it will be positive for
+- [01:12:23,440 - 01:12:27,380] bosons and negative for fermions.
+- [01:12:27,380 - 01:12:37,520] So it's just a fact of mathematics that the vacuum energy for bosons is a half h-bar omega
+- [01:12:37,520 - 01:12:39,240] for each fluctuating mode.
+- [01:12:39,240 - 01:12:40,360] And it's minus a half h-bar omega.
+- [01:12:40,360 - 01:12:41,360] Okay.
+- [01:12:41,360 - 01:12:45,300] So it's minus a half h-bar omega for each fermionic mode.
+- [01:12:45,300 - 01:12:49,700] But we're not going to try to answer the question where the vacuum energy comes from and what
+- [01:12:49,700 - 01:12:53,380] it's due to.
+- [01:12:53,380 - 01:12:59,640] What is much weirder than having vacuum energy is having no vacuum energy.
+- [01:12:59,640 - 01:13:07,900] There is no known theory, no known theory that's in any way consistent with the world
+- [01:13:07,900 - 01:13:10,300] as we know it, which would predict zero vacuum energy.
+- [01:13:10,300 - 01:13:11,300] Okay.
+- [01:13:11,360 - 01:13:21,960] So when people talk about the mysterious dark energy, what they should be saying is
+- [01:13:21,960 - 01:13:26,840] it's very mysterious that there's so little of it.
+- [01:13:26,840 - 01:13:32,020] We can discuss in what sense it's numerically very small, but it must be numerically very
+- [01:13:32,020 - 01:13:35,300] small in some sense if it took so long to discover it.
+- [01:13:35,300 - 01:13:36,300] Really.
+- [01:13:36,300 - 01:13:37,800] No, no, I mean that.
+- [01:13:37,800 - 01:13:38,800] I mean that.
+- [01:13:38,800 - 01:13:39,800] Okay.
+- [01:13:39,800 - 01:13:40,800] Okay.
+- [01:13:40,800 - 01:13:46,700] So if it took so long to cause an exponential expansion that we could see in this room,
+- [01:13:46,700 - 01:13:52,660] of course it would blow everything apart, it would be a disaster for us, but if it had
+- [01:13:52,660 - 01:13:57,080] any appreciable size, then we would have discovered it.
+- [01:13:57,080 - 01:14:04,280] We did discover it, but it was very hard to discover, and it took enormous, enormously
+- [01:14:04,280 - 01:14:08,720] big telescopes seeing to the end of the universe in effect.
+- [01:14:08,720 - 01:14:09,720] And that's an indication.
+- [01:14:09,720 - 01:14:10,720] And some people say, well, it's a big telescope.
+- [01:14:10,720 - 01:14:12,580] Well, in some sense it's a very small number, and it is.
+- [01:14:12,580 - 01:14:13,580] Yeah?
+- [01:14:13,580 - 01:14:18,580] You say that it's problematic to extrapolate that back in time to the Big Bang.
+- [01:14:18,580 - 01:14:24,380] What about extrapolating forward to a big rip or something like that?
+- [01:14:24,380 - 01:14:29,740] Well, this big rip, I never followed very much about the big rip.
+- [01:14:29,740 - 01:14:34,700] It seemed to me one of these ideas which the press liked more than any physicist I knew.
+- [01:14:34,700 - 01:14:39,620] But the big rip, as I understand it, is the big bang.
+- [01:14:39,620 - 01:14:40,620] Okay.
+- [01:14:40,620 - 01:14:46,580] And the big rip is what would happen if w was even more negative than minus 1.
+- [01:14:46,580 - 01:14:52,120] And there's no known sensible theory where w was more negative than minus 1.
+- [01:14:52,120 - 01:14:56,660] Nevertheless, we could talk about it, but I'm not sure what you had in mind when you
+- [01:14:56,660 - 01:14:57,660] asked me the question.
+- [01:14:57,660 - 01:15:05,620] Just if it was consistent with the big rip with w equal to negative 1 as it is.
+- [01:15:05,620 - 01:15:08,380] I think the rip is not.
+- [01:15:08,380 - 01:15:09,380] W less than minus 1 is minus 2 or something.
+- [01:15:09,380 - 01:15:10,380] Yeah.
+- [01:15:10,380 - 01:15:11,380] I think it's less than minus 2 or something like that.
+- [01:15:11,380 - 01:15:13,540] At least if I'm getting my terminology right.
+- [01:15:13,540 - 01:15:15,940] I never paid too much attention to it.
+- [01:15:15,940 - 01:15:17,880] Maybe it's worth paying attention to.
+- [01:15:17,880 - 01:15:24,600] Incidentally, experiment is focusing in more and more on w equals minus 1.
+- [01:15:24,600 - 01:15:33,420] It's within, you know, it's somewhere between minus 1.1 and minus .9 and with diminishing
+- [01:15:33,420 - 01:15:35,840] error bars.
+- [01:15:35,840 - 01:15:37,380] But I think...
+- [01:15:37,380 - 01:15:38,380] Yeah.
+- [01:15:38,380 - 01:15:39,380] Yeah.
+- [01:15:39,380 - 01:15:46,740] It will never be a high precision number.
+- [01:15:46,740 - 01:15:48,380] But I think they can do it.
+- [01:15:48,380 - 01:15:50,380] They can narrow it down more.
+- [01:15:50,380 - 01:15:51,380] Yeah.
+- [01:15:51,380 - 01:15:58,380] If you had exact supersymmetry, then omega would be zero.
+- [01:15:58,380 - 01:15:59,380] It could.
+- [01:15:59,380 - 01:16:00,380] It could.
+- [01:16:00,380 - 01:16:01,380] It could.
+- [01:16:01,380 - 01:16:02,380] That's correct.
+- [01:16:02,380 - 01:16:03,380] And the reason?
+- [01:16:03,380 - 01:16:07,380] Because every fermion comes along with a boson, so they cancel each other exactly.
+- [01:16:07,380 - 01:16:08,380] When I said...
+- [01:16:08,380 - 01:16:12,200] When I chose my words, I was thinking about exactly that.
+- [01:16:12,200 - 01:16:15,380] I said no theory that agrees with everything we know about nature.
+- [01:16:15,380 - 01:16:20,380] And what we know about nature is that fermions and bosons are not exactly matched.
+- [01:16:20,380 - 01:16:21,380] So, yeah.
+- [01:16:21,380 - 01:16:28,380] What's the story with this factor of 10 to the 21 discrepancy between the calculated
+- [01:16:28,380 - 01:16:34,380] zero point energy and the measured expansion rate?
+- [01:16:34,380 - 01:16:35,380] 10 to the 121.
+- [01:16:35,380 - 01:16:36,380] Sorry.
+- [01:16:36,380 - 01:16:37,380] I was off.
+- [01:16:37,380 - 01:16:38,380] A lot.
+- [01:16:38,380 - 01:16:39,380] Yeah.
+- [01:16:39,380 - 01:16:50,280] Well, there's only one...
+- [01:16:50,280 - 01:16:54,520] Most of the constants of nature that we usually call constants of nature are not terribly
+- [01:16:54,520 - 01:16:56,680] fundamental.
+- [01:16:56,680 - 01:17:01,580] The mass of the electrons is thought to be just a sort of consequence of more complicated
+- [01:17:01,580 - 01:17:02,640] crap.
+- [01:17:02,640 - 01:17:04,340] There are...
+- [01:17:04,340 - 01:17:07,200] The really fundamental constants of nature are...
+- [01:17:07,200 - 01:17:14,480] C, the speed of light, Planck's constant, and the gravitational constant.
+- [01:17:14,480 - 01:17:16,040] Why do I say they're fundamental?
+- [01:17:16,040 - 01:17:19,500] Because there's a sense in which they're about universal things.
+- [01:17:19,500 - 01:17:27,000] Yeah, let me slow down and discuss this a little bit.
+- [01:17:27,000 - 01:17:30,500] What is universal about C?
+- [01:17:30,500 - 01:17:32,460] Nothing.
+- [01:17:32,460 - 01:17:35,600] Nothing in the world can move faster than C.
+- [01:17:35,600 - 01:17:36,500] No signal can...
+- [01:17:36,500 - 01:17:39,580] Go faster than the speed of light.
+- [01:17:39,580 - 01:17:43,160] So it really does have a universality to it.
+- [01:17:43,160 - 01:17:52,620] It's not conditional on saying, well, we're going to be using oatmeal to send messages.
+- [01:17:52,620 - 01:17:53,620] It's fundamental.
+- [01:17:53,620 - 01:17:54,620] You can't get past it.
+- [01:17:54,620 - 01:17:55,620] It's...
+- [01:17:55,620 - 01:17:56,620] All right.
+- [01:17:56,620 - 01:17:57,620] What about Planck's constant?
+- [01:17:57,620 - 01:18:00,100] Planck's constant is also universal.
+- [01:18:00,100 - 01:18:02,320] It has to do with the uncertainty principle.
+- [01:18:02,320 - 01:18:04,440] No matter what object you're talking about.
+- [01:18:04,440 - 01:18:05,840] It doesn't matter if it's a bowling ball or an...
+- [01:18:05,840 - 01:18:09,320] A bowling ball or an electron.
+- [01:18:09,320 - 01:18:14,300] Uncertainty in position times uncertainty in momentum is always greater than or equal
+- [01:18:14,300 - 01:18:16,100] to Planck's constant.
+- [01:18:16,100 - 01:18:17,100] Period.
+- [01:18:17,100 - 01:18:23,140] So it has a certain universal aspect to it.
+- [01:18:23,140 - 01:18:29,220] The Newton constant is also very universal.
+- [01:18:29,220 - 01:18:32,220] Again, think of the law of gravity.
+- [01:18:32,220 - 01:18:33,720] All objects.
+- [01:18:33,720 - 01:18:34,720] All.
+- [01:18:34,720 - 01:18:35,720] Exert.
+- [01:18:35,720 - 01:18:36,600] Forces.
+- [01:18:36,600 - 01:18:37,600] Between them.
+- [01:18:37,600 - 01:18:38,600] Gravitational.
+- [01:18:38,600 - 01:18:40,960] Which are equal to the product of their masses.
+- [01:18:40,960 - 01:18:42,900] The distance between them squared.
+- [01:18:42,900 - 01:18:44,480] And Newton's constant.
+- [01:18:44,480 - 01:18:50,360] So it's the use of the word all in all of those three cases, which says that there's
+- [01:18:50,360 - 01:18:53,140] something deep and fundamental there.
+- [01:18:53,140 - 01:18:56,260] There are other constants that we sometimes talk about.
+- [01:18:56,260 - 01:18:59,780] Let's say the ratio of the electron...
+- [01:18:59,780 - 01:19:04,180] Well the electron mass to the proton mass.
+- [01:19:04,180 - 01:19:05,180] Um...
+- [01:19:05,180 - 01:19:09,060] It is probably true that all protons and electrons have the same ratio to mass.
+- [01:19:09,060 - 01:19:11,300] But there's zillions of particles.
+- [01:19:11,300 - 01:19:12,300] Lots of different particles.
+- [01:19:12,300 - 01:19:16,380] The ratios of masses are not in any special way universal.
+- [01:19:16,380 - 01:19:22,020] So we tend to think of G, H-bar, and C as very fundamental.
+- [01:19:22,020 - 01:19:30,400] Now out of G, H-bar, and C, out of those constants, you can make an energy density.
+- [01:19:30,400 - 01:19:31,740] You can make an energy...
+- [01:19:31,740 - 01:19:34,060] First of all, you can make a unit of energy.
+- [01:19:34,060 - 01:19:36,440] It's called the Planck energy.
+- [01:19:36,440 - 01:19:44,820] The Planck energy corresponds to the energy of a mass of about 10 to the minus 5 grams.
+- [01:19:44,820 - 01:19:46,820] In other words, a macroscopic mass.
+- [01:19:46,820 - 01:19:49,880] Well, a microscopic macroscopic mass.
+- [01:19:49,880 - 01:19:54,780] Not like an elementary particle, but like a little bit of dust.
+- [01:19:54,780 - 01:20:01,180] A little bit of dust if it were to annihilate the energy that would be released as the Planck
+- [01:20:01,180 - 01:20:02,940] energy or the Planck mass.
+- [01:20:02,940 - 01:20:05,800] And it's about a tank of gasoline or something like that.
+- [01:20:05,800 - 01:20:07,940] It's a lot of energy.
+- [01:20:07,940 - 01:20:09,300] There's a Planck length.
+- [01:20:09,300 - 01:20:13,580] The Planck length is a very small length.
+- [01:20:13,580 - 01:20:15,280] And there's a Planck time.
+- [01:20:15,280 - 01:20:27,100] There are the units of length, time, and mass that you can make out of G, H-bar, and C.
+- [01:20:27,100 - 01:20:32,360] Or another way of saying it is that the units of length, mass, and time that correspond to setting G, H-bar, and C are the same.
+- [01:20:32,940 - 01:20:35,760] H-bar and C equal to 1.
+- [01:20:35,760 - 01:20:43,600] Now if you can make a unit of length, the Planck length, and it's 10 to the minus 33 centimeters,
+- [01:20:43,600 - 01:20:46,140] you can also make a unit of volume.
+- [01:20:46,140 - 01:20:51,080] The unit of volume is 10 to the minus 99 centimeters.
+- [01:20:51,080 - 01:20:53,540] If you have a unit of mass, you have a unit of energy.
+- [01:20:53,540 - 01:20:55,320] It's one Planck energy.
+- [01:20:55,320 - 01:20:58,380] And then you have a unit of energy density.
+- [01:20:58,380 - 01:21:02,860] One Planck mass per cubic Planck length.
+- [01:21:02,860 - 01:21:12,100] That's the natural unit, the universal unit, or the unit that, and incidentally, how big is that?
+- [01:21:12,100 - 01:21:13,100] Let's see.
+- [01:21:13,100 - 01:21:16,760] The Planck volume is tiny.
+- [01:21:16,760 - 01:21:19,400] The Planck mass is pretty big.
+- [01:21:19,400 - 01:21:22,040] That's a huge energy density.
+- [01:21:22,040 - 01:21:29,740] Vastly, vastly bigger than anything that we ever experience in the ordinary world.
+- [01:21:29,740 - 01:21:32,720] But on the other hand, when I say it's huge, I mean it's huge.
+- [01:21:32,720 - 01:21:36,220] It's huge by comparison, you know, with us ordinary creatures.
+- [01:21:36,220 - 01:21:38,900] It's the unit of energy density.
+- [01:21:38,900 - 01:21:44,960] It's the only unit of energy density that occurs in very, very basic physics.
+- [01:21:44,960 - 01:21:48,900] How big is the vacuum energy density?
+- [01:21:48,900 - 01:21:55,020] The vacuum energy density is nowhere near as big as that, and it's about 123 orders
+- [01:21:55,020 - 01:21:56,960] of magnitude smaller.
+- [01:21:56,960 - 01:21:58,600] Okay?
+- [01:21:58,600 - 01:22:02,160] So somewheres, from somewheres unknown to us.
+- [01:22:02,160 - 01:22:12,400] There is a tiny, tiny energy density of the vacuum, which is 123 orders of magnitude smaller
+- [01:22:12,400 - 01:22:14,720] than what we might guess.
+- [01:22:14,720 - 01:22:16,920] Nobody knows how to calculate it.
+- [01:22:16,920 - 01:22:25,780] But what we might guess offhand is that it would be approximately one in natural units.
+- [01:22:25,780 - 01:22:29,380] Well, we would never have guessed that because we never would have been here to guess it
+- [01:22:29,380 - 01:22:31,440] if it were true.
+- [01:22:31,440 - 01:22:32,040] But...
+- [01:22:32,160 - 01:22:36,400] But...
+- [01:22:36,400 - 01:22:42,860] If you were to take your random guess about what a set of laws of nature would produce,
+- [01:22:42,860 - 01:22:48,760] it would be 123 orders of magnitude bigger than what we see.
+- [01:22:48,760 - 01:22:49,760] So we...
+- [01:22:49,760 - 01:22:50,760] For this course, we will not...
+- [01:22:50,760 - 01:22:54,120] Well, maybe we will ask the question, but at least at the present time, we won't ask
+- [01:22:54,120 - 01:22:57,500] the question where this vacuum energy comes from.
+- [01:22:57,500 - 01:23:01,160] But we should take note of what is mysterious about it.
+- [01:23:01,160 - 01:23:02,160] Okay?
+- [01:23:02,160 - 01:23:06,400] What is mysterious about it is not that it's there, it's that it's almost not there.
+- [01:23:06,400 - 01:23:12,480] That it's the lack of it, which is the mysterious fact.
+- [01:23:12,480 - 01:23:13,480] Okay.
+- [01:23:13,480 - 01:23:14,480] Yeah.
+- [01:23:14,480 - 01:23:19,480] I want to do another example, but another case.
+- [01:23:19,480 - 01:23:26,400] You were saying it's, you know, what's surprising about it is that how little there is of it,
+- [01:23:26,400 - 01:23:27,400] or whatever.
+- [01:23:27,400 - 01:23:28,400] But that...
+- [01:23:28,400 - 01:23:29,320] But when they discovered it, they were sort of surprised it was even there.
+- [01:23:29,320 - 01:23:30,320] Yeah.
+- [01:23:30,320 - 01:23:31,320] Yeah.
+- [01:23:31,320 - 01:23:33,880] They weren't surprised it was even there at all.
+- [01:23:33,880 - 01:23:37,800] That was more psychological than anything else.
+- [01:23:37,800 - 01:23:47,820] You know, at some time in the history of astronomy, it was possible to try to detect it, let's
+- [01:23:47,820 - 01:23:51,080] say at the level of 10 to the minus 100.
+- [01:23:51,080 - 01:23:55,080] 10 to the minus 100 is rather big, incidentally.
+- [01:23:55,080 - 01:23:57,800] I think it's probably much too big.
+- [01:23:57,800 - 01:24:00,640] But at some time in the history of astronomy...
+- [01:24:00,640 - 01:24:05,600] 10 to the minus 100 could be discovered, but not 10 to the minus 101.
+- [01:24:05,600 - 01:24:07,760] It was too small.
+- [01:24:07,760 - 01:24:09,040] All right?
+- [01:24:09,040 - 01:24:12,080] Astronomers did not discover it at the level of 10 to the minus 100.
+- [01:24:12,080 - 01:24:14,660] It seemed to be zero at that level.
+- [01:24:14,660 - 01:24:20,520] So they pushed ahead, and they looked for it at the level of 10 to the minus 101.
+- [01:24:20,520 - 01:24:21,520] Still zero.
+- [01:24:21,520 - 01:24:23,380] 10 to the minus 102.
+- [01:24:23,380 - 01:24:24,380] Still zero.
+- [01:24:24,380 - 01:24:25,380] 10 to the minus 103.
+- [01:24:25,380 - 01:24:28,080] 10 to the minus 120.
+- [01:24:28,080 - 01:24:29,080] Still zero.
+- [01:24:29,080 - 01:24:30,520] 10 to the minus 121.
+- [01:24:30,520 - 01:24:31,900] Still zero.
+- [01:24:31,900 - 01:24:39,320] You got the feeling that maybe this thing really is zero for reasons that we don't know.
+- [01:24:39,320 - 01:24:46,740] This was an attitude that had affected almost everybody in both the physics, astronomy,
+- [01:24:46,740 - 01:24:48,380] astrophysics community.
+- [01:24:48,380 - 01:24:53,360] Einstein himself didn't...well, he didn't think...he thought of it in different ways.
+- [01:24:53,360 - 01:24:59,160] But it was just...the fact that it was so small.
+- [01:24:59,160 - 01:25:00,160] And each time...
+- [01:25:00,160 - 01:25:06,720] Each time another decimal was added to the knowledge of it, it was still zero.
+- [01:25:06,720 - 01:25:10,120] It just got people convinced that it might be...that it was zero.
+- [01:25:10,120 - 01:25:11,120] There must be some reason.
+- [01:25:11,120 - 01:25:17,460] You know, the logic was a crazy logic.
+- [01:25:17,460 - 01:25:20,860] The cosmological constant seems to be exactly zero.
+- [01:25:20,860 - 01:25:24,420] It must be a consequence of the right theory of nature.
+- [01:25:24,420 - 01:25:27,360] If we had the right theory of nature, and of course everybody knows the right theory
+- [01:25:27,360 - 01:25:29,160] of nature is string theory.
+- [01:25:29,160 - 01:25:30,160] And therefore...
+- [01:25:30,160 - 01:25:33,620] It must be a consequence of string theory.
+- [01:25:33,620 - 01:25:34,700] Ha!
+- [01:25:34,700 - 01:25:36,660] We just explained it.
+- [01:25:36,660 - 01:25:37,820] Okay?
+- [01:25:37,820 - 01:25:41,540] That mental thing was really there.
+- [01:25:41,540 - 01:25:43,560] It really was there.
+- [01:25:43,560 - 01:25:48,820] That since we now have a theory of gravity and quantum mechanics, and we know that the
+- [01:25:48,820 - 01:25:53,020] cosmological constant is zero, then it must predict it.
+- [01:25:53,020 - 01:25:55,160] And if it predicts it, we win.
+- [01:25:55,160 - 01:25:57,160] We're successful.
+- [01:25:57,160 - 01:25:58,160] Um...
+- [01:25:58,160 - 01:25:59,160] The best laid plans are both.
+- [01:25:59,160 - 01:26:03,700] The best laid plans of mice and men, you know, and uh...
+- [01:26:03,700 - 01:26:05,700] And it didn't turn out that way.
+- [01:26:05,700 - 01:26:06,700] Right.
+- [01:26:06,700 - 01:26:16,200] Are cosmologists trying to determine if that vacuum energy value could change over time?
+- [01:26:16,200 - 01:26:17,200] That's measuring W.
+- [01:26:17,200 - 01:26:20,660] Now, you can't...
+- [01:26:20,660 - 01:26:28,700] Obviously you can't discover whether it will make some sudden or semi-sudden change after
+- [01:26:28,700 - 01:26:30,420] a trillion years.
+- [01:26:30,420 - 01:26:32,140] No way to do that.
+- [01:26:32,140 - 01:26:39,560] But you can try to discover whether over the last billion or two billion years it might
+- [01:26:39,560 - 01:26:42,580] have changed by a small amount.
+- [01:26:42,580 - 01:26:47,580] And that's equivalent to measuring W more precisely.
+- [01:26:47,580 - 01:26:55,240] So W is measured to about 10% now, and it's minus one to within 10%.
+- [01:26:55,240 - 01:26:57,240] That's evidence that...
+- [01:26:57,240 - 01:26:58,240] At least over the relative...
+- [01:26:58,240 - 01:27:04,420] Over the relatively short term, a few billion years, it hasn't changed much.
+- [01:27:04,420 - 01:27:08,080] Hasn't changed by more than a few percent.
+- [01:27:08,080 - 01:27:09,080] Um...
+- [01:27:09,080 - 01:27:16,120] I think we'll never be able to nail it completely.
+- [01:27:16,120 - 01:27:23,620] Does the dimension that the observer is in make a difference in the value of W?
+- [01:27:23,620 - 01:27:28,220] And since we're inherently in the third dimension at the present, does that explain why we're
+- [01:27:28,220 - 01:27:29,220] in the fourth dimension?
+- [01:27:29,220 - 01:27:30,220] Or is it just a matter of how we have that disparity?
+- [01:27:30,220 - 01:27:34,220] Like if we were in the fourth or say 11th dimension, would we see these things differently?
+- [01:27:34,220 - 01:27:35,220] Or...
+- [01:27:35,220 - 01:27:36,220] No, not really.
+- [01:27:36,220 - 01:27:37,220] They're pretty similar.
+- [01:27:37,220 - 01:27:38,220] It doesn't depend much on dimension.
+- [01:27:38,220 - 01:27:39,220] So the shift that we see in the expansion universe wouldn't be any different if we
+- [01:27:39,220 - 01:27:40,220] were in the 11th dimension right now instead of the third?
+- [01:27:40,220 - 01:27:41,220] It would be pretty similar.
+- [01:27:41,220 - 01:27:42,220] Yeah.
+- [01:27:42,220 - 01:27:43,220] Details would be different.
+- [01:27:43,220 - 01:27:44,220] General pattern would be the same.
+- [01:27:44,220 - 01:27:45,220] All right.
+- [01:27:45,220 - 01:27:46,220] Let's go to the next slide.
+- [01:27:46,220 - 01:27:47,220] So, we're in the fourth dimension.
+- [01:27:47,220 - 01:27:48,220] We're in the 11th dimension.
+- [01:27:48,220 - 01:27:49,220] And we're in the 11th dimension.
+- [01:27:49,220 - 01:27:50,220] So, we're in the 11th dimension.
+- [01:27:50,220 - 01:27:51,220] And we're in the 11th dimension.
+- [01:27:51,220 - 01:27:52,220] And we're in the 11th dimension.
+- [01:27:52,220 - 01:27:55,080] So, details would be different.
+- [01:27:55,080 - 01:27:57,080] General pattern would be the same.
+- [01:27:57,080 - 01:27:58,400] All right.
+- [01:27:58,400 - 01:28:03,480] Let's do another case just for fun.
+- [01:28:03,480 - 01:28:06,220] Let's do lambda positive.
+- [01:28:06,220 - 01:28:10,220] I'm not sure where my equation is.
+- [01:28:10,220 - 01:28:12,220] I lost...
+- [01:28:12,220 - 01:28:16,220] Ah, empty board.
+- [01:28:16,220 - 01:28:19,920] Okay.
+- [01:28:19,920 - 01:28:22,200] Let's do the case.
+- [01:28:22,200 - 01:28:31,840] Lambda positive, but instead of k equals 0, let's do k equal to plus 1.
+- [01:28:31,840 - 01:28:39,360] So this is the spherical universe, the positively curved universe, but with a positive cosmological
+- [01:28:39,360 - 01:28:40,360] constant.
+- [01:28:40,360 - 01:28:41,360] Let's try that one.
+- [01:28:41,360 - 01:28:42,860] That's an interesting case.
+- [01:28:42,860 - 01:28:43,860] All right.
+- [01:28:43,860 - 01:28:47,000] Here's how we work it out.
+- [01:28:47,000 - 01:28:52,200] Here's how we can intuit the rough properties of it.
+- [01:28:52,200 - 01:28:55,140] And then I'll give you the exact solution.
+- [01:28:55,140 - 01:29:02,980] a dot over a squared is equal to the energy density, rho.
+- [01:29:02,980 - 01:29:11,360] And then if k is equal to plus 1, we get minus k over a squared.
+- [01:29:11,360 - 01:29:14,440] That's our equation with k equal to plus 1.
+- [01:29:14,440 - 01:29:17,140] Oops, this is not right.
+- [01:29:17,140 - 01:29:19,320] I don't mean rho here, do I?
+- [01:29:19,320 - 01:29:22,120] I mean a pi g over 3 times rho.
+- [01:29:22,120 - 01:29:26,200] But that's the same as lambda.
+- [01:29:26,200 - 01:29:29,520] So here's our equation.
+- [01:29:29,520 - 01:29:32,720] And let's see if we can make some sense out of it.
+- [01:29:32,720 - 01:29:39,160] One way to make sense out of it is to try to see if it has the same structure as an
+- [01:29:39,160 - 01:29:44,060] equation where we may already have a great deal of familiarity with.
+- [01:29:44,060 - 01:29:45,300] Yes, this does.
+- [01:29:45,300 - 01:29:49,040] And I'm going to show you what the...
+- [01:29:49,040 - 01:29:51,540] First multiply it by a squared.
+- [01:29:51,540 - 01:29:53,360] Multiply everything by a squared.
+- [01:29:53,360 - 01:29:59,740] And we get a dot squared is equal to...
+- [01:29:59,740 - 01:30:06,260] And let's write minus lambda a squared.
+- [01:30:06,260 - 01:30:09,780] I've transposed this to the left side.
+- [01:30:09,780 - 01:30:14,180] Equals minus 1.
+- [01:30:14,180 - 01:30:15,180] You got that?
+- [01:30:15,180 - 01:30:17,700] Did I do it right?
+- [01:30:17,700 - 01:30:19,660] Yeah.
+- [01:30:19,660 - 01:30:20,660] Yeah.
+- [01:30:20,660 - 01:30:21,540] Okay.
+- [01:30:21,540 - 01:30:25,980] Now think of a as the coordinate of a particle.
+- [01:30:25,980 - 01:30:26,980] All right.
+- [01:30:26,980 - 01:30:29,360] It has to be positive.
+- [01:30:29,360 - 01:30:31,340] A is always positive.
+- [01:30:31,340 - 01:30:35,220] But let's ignore that for a moment and just think of it as the coordinate of a particle
+- [01:30:35,220 - 01:30:37,440] on a line.
+- [01:30:37,440 - 01:30:41,860] We usually call it x, but let's just call it a.
+- [01:30:41,860 - 01:30:48,560] This would then be proportional to the kinetic energy of the particle, a dot squared.
+- [01:30:48,560 - 01:30:51,360] On the other hand, there's minus lambda a squared.
+- [01:30:51,360 - 01:30:56,800] A dot squared could be like a potential energy.
+- [01:30:56,800 - 01:30:59,320] Potential energy, what would the potential energy be?
+- [01:30:59,320 - 01:31:03,520] It would be minus the constant lambda times a squared.
+- [01:31:03,520 - 01:31:09,900] That would be a potential energy of a slightly unusual kind.
+- [01:31:09,900 - 01:31:15,460] It would be negative because of the minus sign, and it would increase with a squared.
+- [01:31:15,460 - 01:31:18,860] So it would be an upside down parabola.
+- [01:31:18,860 - 01:31:19,800] A dot squared minus lambda a squared.
+- [01:31:19,800 - 01:31:20,800] A dot squared minus lambda a squared.
+- [01:31:20,800 - 01:31:24,160] A dot squared minus lambda a squared equals minus one.
+- [01:31:24,160 - 01:31:25,340] What does that say?
+- [01:31:25,340 - 01:31:32,040] That says the total energy kinetic of this fictitious particle, the total energy kinetic
+- [01:31:32,040 - 01:31:36,360] plus potential is just equal to minus one.
+- [01:31:36,360 - 01:31:39,580] So the vertical axis here is energy.
+- [01:31:39,580 - 01:31:41,160] Why is the vertical axis energy?
+- [01:31:41,160 - 01:31:44,520] Because it's potential energy.
+- [01:31:44,520 - 01:31:48,760] Imagine that you had a particle now moving in this kind of potential, which had a total
+- [01:31:48,760 - 01:31:50,320] energy equal to minus one.
+- [01:31:50,800 - 01:31:52,140] That's over here.
+- [01:31:52,140 - 01:31:54,020] How would that particle move?
+- [01:31:54,020 - 01:31:59,380] Well, there's pretty much only one kind of motion it can have.
+- [01:31:59,380 - 01:32:04,560] You can throw it in from far away.
+- [01:32:04,560 - 01:32:08,760] It'll hit the wall over here and bounce back.
+- [01:32:08,760 - 01:32:13,960] Think of this as a high hill.
+- [01:32:13,960 - 01:32:16,340] You can throw something up the hill.
+- [01:32:16,340 - 01:32:18,800] It will get so far, and then it will go back down the hill.
+- [01:32:18,800 - 01:32:19,800] Or you can start a new particle.
+- [01:32:19,800 - 01:32:20,800] It's a vertical particle.
+- [01:32:20,800 - 01:32:21,800] It will go back down.
+- [01:32:21,800 - 01:32:22,800] Let's go back down.
+- [01:32:22,800 - 01:32:23,800] And so you can start it.
+- [01:32:23,800 - 01:32:26,700] Another way to think about it is start it with total energy equal to minus one.
+- [01:32:26,700 - 01:32:27,700] That's over here.
+- [01:32:27,700 - 01:32:28,700] And let it go.
+- [01:32:28,700 - 01:32:31,040] It'll just fall back down.
+- [01:32:31,040 - 01:32:38,880] But then you can say let's take the falling down, reverse it, and think of a kind of bounce,
+- [01:32:38,880 - 01:32:45,340] where you go up, come to a rest, and go back down.
+- [01:32:45,340 - 01:32:50,540] A gets bigger and bigger, or your a starts big, shrinks, comes to rest, and then goes
+- [01:32:50,540 - 01:32:57,340] back down. That's what this equation is describing. If we solve this equation,
+- [01:32:57,340 - 01:33:01,580] basically it is the equation for a motion of a particle that comes up a
+- [01:33:01,580 - 01:33:08,840] hill and back down a hill. What does A look like as a function of time?
+- [01:33:08,840 - 01:33:22,520] If I plot time this way and A this way, then it starts out big in the past at
+- [01:33:22,520 - 01:33:30,180] negative time, it shrinks and goes back up. In other words, it's some kind of new
+- [01:33:30,180 - 01:33:35,580] kind of cosmology where the universe shrinks, reaches some size, bounces and
+- [01:33:35,580 - 01:33:38,180] comes back out.
+- [01:33:38,840 - 01:33:44,600] Can we solve it exactly? Yes, it's not hard to solve exactly. I'm going to tell
+- [01:33:44,600 - 01:33:47,680] you what the solution is. You can work it out yourself and check that this is the
+- [01:33:47,680 - 01:33:50,140] solution.
+- [01:34:08,840 - 01:34:27,740] 1 over square root of lambda times the hyperbolic cosine of square root of
+- [01:34:27,740 - 01:34:33,780] lambda t. That's the exact solution, but let me just remind you what hyperbolic
+- [01:34:33,780 - 01:34:38,380] cosine... This is a... this figure here.
+- [01:34:38,840 - 01:34:43,940] That is the graph for hyperbolic cosine. Hyperbolic cosine
+- [01:34:43,940 - 01:34:54,000] is the same as... this is the same as 1 over 2 square root of lambda times e to
+- [01:34:54,000 - 01:35:00,880] the square root of lambda t, plus e to the minus square root of lambda t.
+- [01:35:03,400 - 01:35:08,600] That's what the hyperbolic cosine is. It's a symmetric function of time
+- [01:35:08,840 - 01:35:12,460] The same for negative time and for positive time, symmetric.
+- [01:35:13,800 - 01:35:17,700] At late times, this piece of it is not important.
+- [01:35:17,940 - 01:35:20,420] e to the minus square root of lambda t, that goes to zero.
+- [01:35:20,980 - 01:35:23,500] But this piece exponentially increases.
+- [01:35:24,600 - 01:35:27,000] So it exponentially increases on this side,
+- [01:35:27,380 - 01:35:32,340] and on the opposite side, it exponentially increases into the past.
+- [01:35:33,280 - 01:35:37,460] If you wanted to draw this universe, if you wanted to make a picture of this universe,
+- [01:35:37,460 - 01:35:40,520] most people would be inclined to draw it the following way.
+- [01:35:40,700 - 01:35:42,240] Let's put time upward now.
+- [01:35:43,080 - 01:35:44,700] Here's time going upward.
+- [01:35:46,300 - 01:35:51,300] At time equals zero, the scale factor is as small as it will ever get.
+- [01:35:52,480 - 01:35:57,400] So at time equals zero, the universe is a small sphere.
+- [01:35:58,620 - 01:36:01,760] Remember, k being positive says a spherical geometry.
+- [01:36:01,760 - 01:36:04,960] Let's draw that as a small circle over here.
+- [01:36:07,460 - 01:36:14,020] As time goes forward, the scale factor increases, and it increases exponentially.
+- [01:36:14,020 - 01:36:19,220] So the universe increases, increases like that.
+- [01:36:20,900 - 01:36:29,780] But as time goes into the past, this solution is simply reflected and looks like this.
+- [01:36:31,580 - 01:36:36,220] So this is a strange kind of universe which exponentially increases in the future.
+- [01:36:36,220 - 01:36:37,200] Remember that the flat surface is a small sphere.
+- [01:36:37,200 - 01:36:40,880] The flat case also exponentially increased in the future.
+- [01:36:41,880 - 01:36:46,600] The flat case had only e to the square root of lambda t.
+- [01:36:46,600 - 01:36:48,600] It did not have this term here.
+- [01:36:49,720 - 01:36:56,560] So at very, very late times, basically at late times, they both just look exponentially expanding,
+- [01:36:56,560 - 01:36:58,560] and they look very similar to each other.
+- [01:36:58,560 - 01:37:05,360] But the whole geometry from negative infinite past to positive infinite past is usually described as a bounce.
+- [01:37:05,360 - 01:37:07,360] A bounce.
+- [01:37:07,360 - 01:37:11,360] Now we don't believe that the lower half of this means anything.
+- [01:37:11,360 - 01:37:21,360] But nevertheless, this is the mathematical structure that if we only had vacuum energy, positive vacuum energy,
+- [01:37:21,360 - 01:37:29,360] and we had k equals plus one, the universe would be a bounce.
+- [01:37:29,360 - 01:37:34,040] Wouldn't just, wouldn't expand, wouldn't contract, or it would contract, bounce, and expand.
+- [01:37:34,040 - 01:37:35,040] Wouldn't just, wouldn't expand, wouldn't contract, or it would contract, bounce, and expand.
+- [01:37:35,040 - 01:37:36,040] Wouldn't just, wouldn't contract, bounce, and expand.
+- [01:37:36,040 - 01:37:38,040] This is called also the Sitter space.
+- [01:37:38,040 - 01:37:42,040] Now strangely, the flat case and this case are really secretly the same geometry.
+- [01:37:42,040 - 01:37:48,040] I'll try to explain to you that when we get to it.
+- [01:37:48,040 - 01:37:54,040] They're really not different, but that will take some time to explore.
+- [01:37:54,040 - 01:37:56,040] They look very different, but they're not.
+- [01:37:56,040 - 01:38:04,040] Is there any case, other case that's, yeah, let's do one other case.
+- [01:38:04,040 - 01:38:05,040] Let me think.
+- [01:38:05,040 - 01:38:16,040] Negative cosmological constant.
+- [01:38:16,040 - 01:38:21,040] Let's try a case with negative cosmological constant and see what we can learn.
+- [01:38:21,040 - 01:38:23,040] Alright.
+- [01:38:23,040 - 01:38:27,040] Lambda is now negative.
+- [01:38:27,040 - 01:38:32,040] Let's describe that by putting a minus sign in front of it over here.
+- [01:38:34,040 - 01:38:46,040] In fact, for simplicity, let's be really simple and just set lambda or the absolute value of lambda equal to one.
+- [01:38:46,040 - 01:38:49,040] Just to be really simple, there are just too many symbols here.
+- [01:38:49,040 - 01:38:52,040] Let's call it minus one.
+- [01:38:52,040 - 01:38:56,040] Cosmological constant that happens to be minus one in some units or another.
+- [01:38:56,040 - 01:39:00,040] Minus one over a squared, but it's really minus k over a squared.
+- [01:39:00,040 - 01:39:02,040] Minus k over a squared.
+- [01:39:02,040 - 01:39:03,040] Now if k is one in this case, then it's minus one over a squared.
+- [01:39:03,040 - 01:39:06,040] So k is one in this case.
+- [01:39:06,040 - 01:39:11,040] In other words, if space is positively curved, this equation is nonsense.
+- [01:39:11,040 - 01:39:13,040] On the left hand side, a positive thing.
+- [01:39:13,040 - 01:39:16,040] On the right hand side, a negative thing.
+- [01:39:16,040 - 01:39:18,040] If k is positive.
+- [01:39:18,040 - 01:39:32,040] So the answer is there is no solution with a negative cosmological constant for the positively curved case.
+- [01:39:32,040 - 01:39:36,040] But for the negatively curved case, there is.
+- [01:39:36,040 - 01:39:39,040] Let's see if we can figure out what it looks like.
+- [01:39:39,040 - 01:39:45,040] Let's take k to be minus one, in which case this becomes plus one over a squared.
+- [01:39:48,040 - 01:39:53,040] And let's do the same job on it that we did.
+- [01:39:53,040 - 01:39:55,040] Here's our equation.
+- [01:39:55,040 - 01:39:59,040] Let's convert it to a simple mechanical system.
+- [01:39:59,040 - 01:40:01,040] Let's see what mechanical system.
+- [01:40:01,040 - 01:40:05,040] This corresponds to.
+- [01:40:05,040 - 01:40:14,040] With positive cosmological constant, it corresponded to a potential energy which just, you know, went off into the basement.
+- [01:40:14,040 - 01:40:17,040] Let's see what happens now.
+- [01:40:17,040 - 01:40:19,040] Let's multiply by a squared.
+- [01:40:19,040 - 01:40:22,040] So that we get a dot squared.
+- [01:40:22,040 - 01:40:25,040] No a squared in the denominator.
+- [01:40:25,040 - 01:40:28,040] Equals minus a squared.
+- [01:40:31,040 - 01:40:33,040] Plus one.
+- [01:40:33,040 - 01:40:35,040] Got that?
+- [01:40:35,040 - 01:40:37,040] Multiply by a squared.
+- [01:40:37,040 - 01:40:40,040] Let's transpose the a squared to the other side.
+- [01:40:40,040 - 01:40:45,040] It becomes a dot squared plus a squared.
+- [01:40:45,040 - 01:40:48,040] If I had kept lambda around, it would multiply this.
+- [01:40:48,040 - 01:40:49,040] But let's not.
+- [01:40:49,040 - 01:40:51,040] Let's just keep it plus a squared.
+- [01:40:51,040 - 01:40:53,040] Equals one.
+- [01:40:53,040 - 01:40:55,040] Now, what kind of system are we talking about?
+- [01:40:55,040 - 01:40:59,040] If this is kinetic energy, and this is potential energy.
+- [01:40:59,040 - 01:41:02,040] The potential energy is plus a squared.
+- [01:41:02,040 - 01:41:08,040] What kind of system has a potential energy which increases quadratically with displacement?
+- [01:41:08,040 - 01:41:10,040] Harmonic oscillator.
+- [01:41:10,040 - 01:41:11,040] Who?
+- [01:41:11,040 - 01:41:12,040] Harmonic oscillator.
+- [01:41:12,040 - 01:41:13,040] Harmonic oscillator.
+- [01:41:13,040 - 01:41:14,040] Right.
+- [01:41:14,040 - 01:41:27,040] So this equation here is actually the energy conservation equation for energy equal to plus one for a harmonic oscillator with, in this case, a unit spring constant.
+- [01:41:27,040 - 01:41:29,040] The energy is a constant.
+- [01:41:29,040 - 01:41:30,040] This is the potential energy.
+- [01:41:30,040 - 01:41:32,040] The total energy is equal to plus one.
+- [01:41:32,040 - 01:41:36,040] What kind of motion do you get?
+- [01:41:36,040 - 01:41:41,040] In particular, what kind of motion do you get if you start at a equals zero?
+- [01:41:41,040 - 01:41:45,040] A has to always be positive, so half of this really doesn't mean anything.
+- [01:41:45,040 - 01:41:47,040] A is by definition positive.
+- [01:41:47,040 - 01:41:57,040] But you start at a equals zero, at the big bang, and you shoot the marble up the hill, and what does it do?
+- [01:41:57,040 - 01:41:59,040] It comes back down.
+- [01:41:59,040 - 01:42:03,040] The universe expands and crashes.
+- [01:42:03,040 - 01:42:06,040] This is with k equals minus one.
+- [01:42:06,040 - 01:42:10,040] This is with the open universe.
+- [01:42:10,040 - 01:42:11,040] Okay?
+- [01:42:11,040 - 01:42:14,040] This is the opposite of what we might have expected.
+- [01:42:14,040 - 01:42:20,040] The open universe, but with negative cosmological constant.
+- [01:42:22,040 - 01:42:29,040] Negative cosmological constant causes it, instead of expanding exponentially,
+- [01:42:29,040 - 01:42:32,040] it just expands and comes back and collapses.
+- [01:42:32,040 - 01:42:34,040] A big crunch.
+- [01:42:34,040 - 01:42:40,040] Even though it's open and infinite, it still comes back and crunches.
+- [01:42:40,040 - 01:42:47,040] So, be thankful that we don't live in a universe with too large a negative cosmological constant.
+- [01:42:47,040 - 01:42:52,040] In fact, be thankful that we don't live in a universe with too large a positive cosmological constant.
+- [01:42:52,040 - 01:42:54,040] Either case would be deadly.
+- [01:42:54,040 - 01:42:59,040] In one case, the flow would be so large outward,
+- [01:42:59,040 - 01:43:04,040] that it would just grab everything and, you know, you would hold onto your wife's hand or your husband's hand.
+- [01:43:04,040 - 01:43:11,040] You wouldn't be able to overcome the outward flow if lambda was too big and positive.
+- [01:43:11,040 - 01:43:15,040] If it was negative and too big, you would just have a crunch.
+- [01:43:17,040 - 01:43:18,040] Okay.
+- [01:43:18,040 - 01:43:25,040] That's the theory of vacuum energy in a nutshell.
+- [01:43:25,040 - 01:43:27,040] Um...
+- [01:43:27,040 - 01:43:28,040] Um...
+- [01:43:28,040 - 01:43:30,040] There are more cases.
+- [01:43:30,040 - 01:43:32,040] You're free to look through them.
+- [01:43:32,040 - 01:43:35,040] Some of them make sense, some of them don't make sense.
+- [01:43:35,040 - 01:43:36,040] Uh...
+- [01:43:36,040 - 01:43:40,040] But they all have their own characteristic behavior and they're interesting.
+- [01:43:40,040 - 01:43:47,040] And you can always analyze them by translating them into some sort of mechanical system
+- [01:43:47,040 - 01:43:50,040] and thinking about the conservation of energy for that system.
+- [01:43:50,040 - 01:43:52,040] Good. Okay.
+- [01:43:52,040 - 01:43:56,040] So, just, can you do a little bit about where the Einstein equations are?
+- [01:43:56,040 - 01:43:57,040] These are Einstein's equations.
+- [01:43:57,040 - 01:43:58,040] They are Einstein's equations.
+- [01:43:58,040 - 01:43:59,040] Basically, they are Einstein's.
+- [01:43:59,040 - 01:44:00,040] They are Einstein's equations.
+- [01:44:00,040 - 01:44:05,040] These are Einstein's equations applied to, uh...
+- [01:44:05,040 - 01:44:06,040] Yeah?
+- [01:44:06,040 - 01:44:08,040] Could any other be complex?
+- [01:44:08,040 - 01:44:11,040] I'm not sure what that would mean.
+- [01:44:11,040 - 01:44:14,040] A sphere with complex radius, I mean...
+- [01:44:14,040 - 01:44:15,040] Not that I know of.
+- [01:44:15,040 - 01:44:21,040] I don't know of any application of these ideas to complex A.
+- [01:44:21,040 - 01:44:26,040] Is there any reason to think that pressure is a linear function?
+- [01:44:27,040 - 01:44:32,040] Of the density, other than the easiest equation to work with?
+- [01:44:32,040 - 01:44:33,040] No.
+- [01:44:33,040 - 01:44:34,040] Um...
+- [01:44:34,040 - 01:44:35,040] For...
+- [01:44:35,040 - 01:44:42,040] More or less accidentally, all of the interesting cases are like that.
+- [01:44:42,040 - 01:44:43,040] Um...
+- [01:44:43,040 - 01:44:49,040] But, keep in mind, if you add two different fluids together, it won't be true anymore.
+- [01:44:49,040 - 01:44:52,040] And, we do add two different fluids.
+- [01:44:52,040 - 01:44:56,040] And we just say one range behaves this way, other range behaves this way.
+- [01:44:56,040 - 01:44:57,040] But...
+- [01:44:57,040 - 01:44:58,040] Um...
+- [01:44:58,040 - 01:45:04,040] No, a general fluid will not have that property.
+- [01:45:04,040 - 01:45:05,040] Uh...
+- [01:45:05,040 - 01:45:10,040] I'll tell you what it means.
+- [01:45:10,040 - 01:45:11,040] Uh...
+- [01:45:11,040 - 01:45:12,040] The...
+- [01:45:12,040 - 01:45:19,040] It means that the speed of sound in the material is constant.
+- [01:45:19,040 - 01:45:20,040] And doesn't...
+- [01:45:20,040 - 01:45:23,040] And doesn't depend on density.
+- [01:45:23,040 - 01:45:25,040] But, why that should be true?
+- [01:45:25,040 - 01:45:26,040] It's certainly not true for all possible reasons.
+- [01:45:26,040 - 01:45:33,040] It's certainly not true for all possible things.
+- [01:45:33,040 - 01:45:34,040] Okay.
+- [01:45:34,040 - 01:45:40,040] For more, please visit us at stanford.edu.
