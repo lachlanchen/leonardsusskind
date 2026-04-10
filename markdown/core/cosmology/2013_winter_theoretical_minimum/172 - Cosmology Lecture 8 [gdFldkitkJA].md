@@ -1,0 +1,3159 @@
+# Transcript
+
+Source: core/cosmology/2013_winter_theoretical_minimum/172 - Cosmology Lecture 8 [gdFldkitkJA].mkv
+
+- [00:00:04,919 - 00:00:06,200] Stanford University
+- [00:00:08,320 - 00:00:10,260] We're going to begin inflation tonight,
+- [00:00:10,260 - 00:00:10,560] too.
+- [00:00:10,560 - 00:00:13,580] Hopefully we'll get through baryogenesis.
+- [00:00:15,440 - 00:00:17,660] We will get through it because so little is known.
+- [00:00:17,660 - 00:00:19,400] No,
+- [00:00:19,400 - 00:00:20,480] I'm serious.
+- [00:00:20,480 - 00:00:23,520] The basic theoretical
+- [00:00:23,520 - 00:00:24,000] framework,
+- [00:00:24,000 - 00:00:30,420] modern physics for baryogenesis means the creation of the,
+- [00:00:30,420 - 00:00:32,040] I'll explain the
+- [00:00:32,040 - 00:00:32,780] words in a moment,
+- [00:00:32,780 - 00:00:35,720] but it does mean the excess of matter over antimatter.
+- [00:00:35,720 - 00:00:37,500] The modern theory,
+- [00:00:40,940 - 00:00:42,460] I will tell you what I
+- [00:00:42,460 - 00:00:43,980] know about the history of it.
+- [00:00:43,980 - 00:00:46,600] I was engaged in the history of it.
+- [00:00:47,460 - 00:00:48,580] In 1980,
+- [00:00:48,580 - 00:00:52,680] Savastamopoulos and I were asked by Bob Wagner,
+- [00:00:53,580 - 00:00:57,600] why is there so much entropy in the world?
+- [00:00:57,600 - 00:00:59,980] Bob Wagner is a cosmologist at Stanford.
+- [00:01:00,240 - 00:01:03,100] Why is the number of photons,
+- [00:01:03,100 - 00:01:05,280] which is counting the entropy in the world,
+- [00:01:05,280 - 00:01:06,600] why is it so much
+- [00:01:06,600 - 00:01:09,700] larger than the number of protons and electrons?
+- [00:01:09,700 - 00:01:10,040] Remember,
+- [00:01:10,040 - 00:01:11,700] it's about 10 to the 80th times
+- [00:01:11,700 - 00:01:12,120] larger.
+- [00:01:12,120 - 00:01:12,680] No,
+- [00:01:12,680 - 00:01:15,640] 10 to the 10th times larger,
+- [00:01:15,640 - 00:01:16,960] 10 to the 8th times larger,
+- [00:01:16,960 - 00:01:18,220] 10 to the 8th times
+- [00:01:18,220 - 00:01:18,560] larger,
+- [00:01:18,560 - 00:01:19,240] approximately,
+- [00:01:19,240 - 00:01:21,200] 10 to the 8th,
+- [00:01:21,200 - 00:01:21,900] 10 to the 9th,
+- [00:01:21,900 - 00:01:22,560] something like that.
+- [00:01:22,560 - 00:01:23,500] So,
+- [00:01:23,500 - 00:01:23,500] we're going to get to that.
+- [00:01:23,520 - 00:01:24,160] Why is that?
+- [00:01:24,160 - 00:01:27,440] What created all these photons for every proton?
+- [00:01:27,440 - 00:01:30,000] We thought about it a little
+- [00:01:30,000 - 00:01:33,860] bit and then realized that the question was upside down.
+- [00:01:33,860 - 00:01:36,280] The question was not why there
+- [00:01:36,280 - 00:01:37,080] are so many photons,
+- [00:01:37,080 - 00:01:43,260] but why there are so few protons and electrons.
+- [00:01:43,260 - 00:01:44,760] And we basically
+- [00:01:44,760 - 00:01:46,700] worked out what the modern theory is.
+- [00:01:46,700 - 00:01:49,240] I'm going to tell you what it is tonight.
+- [00:01:49,240 - 00:01:52,280] And for a brief period of time,
+- [00:01:52,280 - 00:01:52,780] the
+- [00:01:54,000 - 00:01:57,340] conditions to explain the imbalance of
+- [00:01:57,340 - 00:02:00,680] particles and antiparticles were called the
+- [00:02:01,360 - 00:02:02,800] Demopolis-Suskind conditions.
+- [00:02:02,800 - 00:02:05,800] Somewhere during that time,
+- [00:02:05,800 - 00:02:06,580] a little bit later,
+- [00:02:06,580 - 00:02:09,120] two young Russian
+- [00:02:09,639 - 00:02:11,739] mathematicians came to me and they
+- [00:02:11,739 - 00:02:13,840] said they were writing a book about,
+- [00:02:13,840 - 00:02:14,080] well,
+- [00:02:14,080 - 00:02:14,540] not writing
+- [00:02:14,540 - 00:02:14,780] a book,
+- [00:02:14,780 - 00:02:14,940] yeah,
+- [00:02:14,940 - 00:02:15,340] no,
+- [00:02:15,340 - 00:02:16,740] they weren't writing a book.
+- [00:02:16,740 - 00:02:22,020] They were looking for contributions to a book celebrating
+- [00:02:22,020 - 00:02:23,980] Andrei Sakharov's career.
+- [00:02:23,980 - 00:02:26,970] And they brought me a
+- [00:02:26,970 - 00:02:29,960] list of papers about this thick.
+- [00:02:29,960 - 00:02:30,920] And
+- [00:02:30,920 - 00:02:32,760] when I looked through them and see
+- [00:02:32,760 - 00:02:34,600] what was interesting and write about it,
+- [00:02:34,600 - 00:02:35,760] so I started
+- [00:02:35,760 - 00:02:37,820] to look through them and sure enough,
+- [00:02:37,820 - 00:02:41,420] I discovered exactly the same paper.
+- [00:02:41,420 - 00:02:43,140] It was remarkably
+- [00:02:43,859 - 00:02:47,240] the same as what Savas and I had done,
+- [00:02:47,240 - 00:02:49,780] with the exception that it was done in 1967,
+- [00:02:49,780 - 00:02:51,220] 13 years earlier.
+- [00:02:52,020 - 00:02:52,360] So I was lost,
+- [00:02:52,360 - 00:02:52,940] completely,
+- [00:02:52,940 - 00:02:55,920] to the Western world.
+- [00:02:55,920 - 00:02:57,840] The Russians knew about it,
+- [00:02:57,840 - 00:02:58,400] but at
+- [00:02:58,400 - 00:02:59,740] that time,
+- [00:02:59,740 - 00:03:01,960] there wasn't a lot of communication between the Russians.
+- [00:03:01,960 - 00:03:05,740] So I did indeed write
+- [00:03:06,900 - 00:03:13,140] a little historical paper about Sakharov's contribution,
+- [00:03:13,140 - 00:03:15,640] and made the mistake of calling
+- [00:03:15,640 - 00:03:16,980] them the Sakharov conditions.
+- [00:03:16,980 - 00:03:18,820] They are now known as the Sakharov conditions,
+- [00:03:18,820 - 00:03:20,200] justly so,
+- [00:03:20,200 - 00:03:20,740] of course.
+- [00:03:22,020 - 00:03:22,020] Well,
+- [00:03:22,020 - 00:03:27,920] these are the first Looking Mody,
+- [00:03:27,920 - 00:03:33,980] and I'm going to talk about how salteduk are
+- [00:03:35,200 - 00:03:35,680] considered in the academic world.
+- [00:03:35,680 - 00:03:36,100] And I'm able to discuss a long history with these
+- [00:03:36,100 - 00:03:36,100] conversations.
+- [00:03:36,100 - 00:03:36,560] We need J Courain to explain
+- [00:03:36,560 - 00:03:37,020] precisely these four kind of matters.
+- [00:03:37,020 - 00:03:37,040] So he talked,
+- [00:03:37,040 - 00:03:37,260] what we call,
+- [00:03:37,260 - 00:03:38,680] in the educational world,
+- [00:03:38,680 - 00:03:38,680] by saying that women drive
+- [00:03:38,680 - 00:03:38,760] and are able to transport an engine at a
+- [00:03:38,760 - 00:03:38,840] rate of three Go households or B though they may
+- [00:03:40,240 - 00:03:41,240] Sons with levels like not all make him barrier.
+- [00:03:41,240 - 00:03:42,300] There is,
+- [00:03:42,300 - 00:03:48,600] of course,
+- [00:03:48,600 - 00:03:48,600] the Association of Women
+- [00:03:48,600 - 00:03:48,600] Members for Actual & City Transportation,
+- [00:03:48,600 - 00:03:49,140] Oh خ Ав signal that we need
+- [00:03:49,140 - 00:03:49,680] women and men in right of while traveling.
+- [00:03:49,680 - 00:03:49,800] Who can do whatever we want her to help?
+- [00:03:49,800 - 00:03:51,700] She said this taxi driver,
+- [00:03:51,700 - 00:03:52,000] they sent people towards
+- [00:03:52,000 - 00:03:54,520] really a legitimate question.
+- [00:03:54,520 - 00:03:56,000] Okay,
+- [00:03:56,000 - 00:03:58,640] maybe the world just started with more
+- [00:03:58,640 - 00:04:01,020] particles and antiparticles,
+- [00:04:01,020 - 00:04:03,600] and end of story.
+- [00:04:03,600 - 00:04:06,460] But it focuses your attention a
+- [00:04:06,460 - 00:04:08,780] lot when you have a number.
+- [00:04:08,780 - 00:04:11,020] When you have a number,
+- [00:04:11,020 - 00:04:12,620] a specific number,
+- [00:04:12,620 - 00:04:13,120] and in this
+- [00:04:13,120 - 00:04:15,000] case it was the 10
+- [00:04:15,000 - 00:04:16,880] to the 8th photons per proton,
+- [00:04:16,880 - 00:04:19,380] numbers focuses your
+- [00:04:19,380 - 00:04:22,000] attention and says this number needs an explanation.
+- [00:04:22,000 - 00:04:31,000] So the excess in itself was
+- [00:04:31,000 - 00:04:32,240] just a fact that you could have said,
+- [00:04:32,240 - 00:04:33,360] well maybe it's just that way,
+- [00:04:33,360 - 00:04:35,020] but once
+- [00:04:35,020 - 00:04:35,600] there's a number,
+- [00:04:35,600 - 00:04:37,000] and in particular if the
+- [00:04:37,000 - 00:04:38,400] number is some oddball number like
+- [00:04:38,400 - 00:04:39,740] 10 to the minus 8th,
+- [00:04:39,740 - 00:04:42,820] you start to think maybe this thing needs an explanation.
+- [00:04:42,820 - 00:04:44,860] So
+- [00:04:44,860 - 00:04:49,360] the explanation of the
+- [00:04:49,380 - 00:04:49,700] yeah.
+- [00:04:49,700 - 00:04:51,960] How does it relate to entropy?
+- [00:04:51,960 - 00:04:53,240] Oh,
+- [00:04:53,240 - 00:04:53,560] oh,
+- [00:04:53,560 - 00:04:53,840] oh.
+- [00:04:53,840 - 00:04:58,180] Roughly speaking for a black body thermal
+- [00:04:58,180 - 00:04:58,940] spectrum,
+- [00:04:58,940 - 00:05:03,060] the entropy is simply the number of photons.
+- [00:05:03,060 - 00:05:04,880] It's just the number
+- [00:05:04,880 - 00:05:05,340] of photons.
+- [00:05:05,340 - 00:05:07,140] And a black body,
+- [00:05:07,140 - 00:05:11,120] black body radiation carries entropy.
+- [00:05:11,120 - 00:05:12,260] It's thermal.
+- [00:05:13,020 - 00:05:17,620] And to within some factor of order one,
+- [00:05:17,620 - 00:05:18,080] I forget,
+- [00:05:18,080 - 00:05:19,120] there's some pies in it,
+- [00:05:19,120 - 00:05:19,280] and
+- [00:05:19,280 - 00:05:20,400] simple factors,
+- [00:05:20,400 - 00:05:25,020] the entropy of black body radiation is just the
+- [00:05:25,020 - 00:05:28,340] average number of photons in the gas.
+- [00:05:28,340 - 00:05:31,120] So when people speak about the
+- [00:05:31,120 - 00:05:32,420] entropy of the universe,
+- [00:05:32,420 - 00:05:35,500] in many contexts what they're often
+- [00:05:35,500 - 00:05:39,080] talking about is just the number of cosmic
+- [00:05:39,080 - 00:05:40,960] microwave background photons.
+- [00:05:40,960 - 00:05:42,640] That's what they mean by it,
+- [00:05:42,640 - 00:05:43,780] and so when I say,
+- [00:05:43,900 - 00:05:46,680] when Bob Wagner came to me and said,
+- [00:05:46,680 - 00:05:49,260] why is the entropy of the world so large,
+- [00:05:49,280 - 00:05:52,340] he was asking me why the number
+- [00:05:52,340 - 00:05:55,400] of photons per proton is so large.
+- [00:05:56,220 - 00:05:56,820] You know,
+- [00:05:56,820 - 00:05:57,380] you might have asked,
+- [00:05:57,380 - 00:05:59,350] how did that small number of protons
+- [00:05:59,350 - 00:06:01,320] make such a large number of photons?
+- [00:06:01,940 - 00:06:03,010] But that is not the
+- [00:06:03,010 - 00:06:04,080] right way to think about it.
+- [00:06:04,980 - 00:06:06,800] As I pointed out to you last time,
+- [00:06:06,800 - 00:06:07,540] or the time before,
+- [00:06:08,419 - 00:06:11,299] in the very early universe there were huge
+- [00:06:11,299 - 00:06:14,180] numbers of protons and huge numbers of antiprotons.
+- [00:06:14,180 - 00:06:18,180] And they were basically equal to each other,
+- [00:06:18,280 - 00:06:21,080] with the number of protons and the
+- [00:06:21,080 - 00:06:23,880] number of antiprotons being approximately the same,
+- [00:06:23,920 - 00:06:25,520] or the number of quarks and anti-quarks,
+- [00:06:25,520 - 00:06:28,200] same true for electrons and positrons,
+- [00:06:28,500 - 00:06:31,220] being approximately the same as the number of photons.
+- [00:06:31,680 - 00:06:33,860] Thermal equilibrium at some very high temperature.
+- [00:06:37,940 - 00:06:39,180] And then it cooled.
+- [00:06:39,760 - 00:06:41,000] When it cooled,
+- [00:06:41,000 - 00:06:43,060] the photons were left over.
+- [00:06:43,260 - 00:06:44,160] They were left over.
+- [00:06:44,180 - 00:06:45,680] They were left over because they decoupled.
+- [00:06:45,780 - 00:06:47,350] The universe became transparent and
+- [00:06:47,350 - 00:06:48,920] the photons just hung around,
+- [00:06:48,920 - 00:06:50,380] and we see them today.
+- [00:06:51,240 - 00:06:55,100] The protons and antiprotons annihilated each other.
+- [00:06:55,320 - 00:06:57,520] The universe expanded fairly slowly,
+- [00:06:57,740 - 00:07:00,300] and there was plenty of time for them to
+- [00:07:00,300 - 00:07:02,860] find each other by and large and annihilate each other.
+- [00:07:03,020 - 00:07:08,680] And all that was left over was the slight excess.
+- [00:07:09,460 - 00:07:11,400] So the question became not
+- [00:07:11,400 - 00:07:13,340] why there are so many photons,
+- [00:07:13,340 - 00:07:15,790] but why was there this tiny
+- [00:07:15,790 - 00:07:18,240] excess of 10 to the minus 8.
+- [00:07:18,720 - 00:07:19,900] In other words,
+- [00:07:19,900 - 00:07:25,040] the number of protons minus the number of antiprotons.
+- [00:07:26,420 - 00:07:27,300] Where is it?
+- [00:07:27,340 - 00:07:28,180] This number over here.
+- [00:07:31,320 - 00:07:32,960] Divided by the number of photons.
+- [00:07:38,080 - 00:07:40,230] But the number of photons and
+- [00:07:40,230 - 00:07:42,380] the early history of the universe,
+- [00:07:42,380 - 00:07:45,040] was approximately the same as
+- [00:07:45,040 - 00:07:47,700] the number of protons plus antiprotons.
+- [00:07:48,640 - 00:07:50,380] Number of protons plus.
+- [00:07:51,060 - 00:07:52,360] In p bar.
+- [00:07:55,560 - 00:07:57,830] And that's a number which is
+- [00:07:57,830 - 00:08:00,100] about 10 to the minus 8.
+- [00:08:00,940 - 00:08:01,460] Okay,
+- [00:08:01,460 - 00:08:02,900] so there's a number to compute.
+- [00:08:03,040 - 00:08:04,940] Why does this small number appear?
+- [00:08:05,120 - 00:08:05,260] Now,
+- [00:08:05,260 - 00:08:06,660] we don't know what the number
+- [00:08:06,660 - 00:08:08,060] or the reason for the number.
+- [00:08:09,240 - 00:08:11,380] That's because we don't have a complete theory.
+- [00:08:11,380 - 00:08:15,020] But almost any theory that we write down,
+- [00:08:15,020 - 00:08:15,940] which explains it,
+- [00:08:15,940 - 00:08:17,280] always gives a small number.
+- [00:08:17,880 - 00:08:20,030] So we'll talk about a little
+- [00:08:20,030 - 00:08:22,180] bit what kinds of conditions are necessary.
+- [00:08:23,100 - 00:08:26,230] Necessary and it turns out sufficient to
+- [00:08:26,230 - 00:08:29,360] make an imbalance of matter over antimatter.
+- [00:08:29,660 - 00:08:30,140] Now,
+- [00:08:30,140 - 00:08:31,480] is it matter over antimatter?
+- [00:08:31,540 - 00:08:33,500] How come it didn't come out antimatter over matter?
+- [00:08:33,659 - 00:08:33,720] Well,
+- [00:08:33,720 - 00:08:34,659] that's largely a definition.
+- [00:08:35,220 - 00:08:36,539] That's largely a definition.
+- [00:08:37,000 - 00:08:37,640] Which one?
+- [00:08:38,200 - 00:08:39,559] The thing we call matter is
+- [00:08:39,559 - 00:08:40,919] the thing that we're made out of.
+- [00:08:42,960 - 00:08:44,420] So that's definition.
+- [00:08:55,100 - 00:08:55,620] Alright,
+- [00:08:55,620 - 00:08:58,170] let's begin with a hypothesis which
+- [00:08:58,170 - 00:09:00,720] is really believed to be wrong,
+- [00:09:00,720 - 00:09:01,820] but we'll come to it.
+- [00:09:03,440 - 00:09:03,960] Namely,
+- [00:09:03,960 - 00:09:05,340] the baryon number.
+- [00:09:05,520 - 00:09:06,580] What does baryon number mean?
+- [00:09:07,120 - 00:09:09,380] If there are only protons...
+- [00:09:09,380 - 00:09:09,380] Now,
+- [00:09:09,380 - 00:09:12,240] baryon number can be interpreted in terms of quarks.
+- [00:09:13,020 - 00:09:17,690] It's basically the number of quarks minus
+- [00:09:17,690 - 00:09:22,360] the number of anti-quarks in the world.
+- [00:09:23,120 - 00:09:25,840] I think it's three times that to be exact.
+- [00:09:26,160 - 00:09:29,860] And the reason it's three times that is because it
+- [00:09:29,860 - 00:09:33,560] was originally defined in terms of protons and neutrons being baryons.
+- [00:09:33,900 - 00:09:35,380] And a proton and a
+- [00:09:35,380 - 00:09:36,860] neutron has three quarks in it.
+- [00:09:36,860 - 00:09:38,480] So that's called b,
+- [00:09:38,480 - 00:09:40,140] the baryon number of the world.
+- [00:09:42,200 - 00:09:44,400] Number of quarks minus the
+- [00:09:44,400 - 00:09:46,600] number of anti-quarks times three.
+- [00:09:47,300 - 00:09:49,080] If all that exists...
+- [00:09:49,080 - 00:09:49,320] What would it be?
+- [00:09:50,079 - 00:09:51,100] Say it again?
+- [00:09:51,400 - 00:09:51,660] What?
+- [00:09:52,520 - 00:09:53,260] Divided by three.
+- [00:09:54,780 - 00:09:55,220] Yeah.
+- [00:09:56,180 - 00:09:56,920] Divided by three.
+- [00:09:56,920 - 00:09:57,340] Thank you.
+- [00:09:58,640 - 00:09:59,400] Divided by three.
+- [00:10:06,860 - 00:10:08,740] Or three times the baryon number is...
+- [00:10:08,740 - 00:10:09,180] Yes.
+- [00:10:09,180 - 00:10:10,500] You caught me.
+- [00:10:10,860 - 00:10:11,840] Divided by three.
+- [00:10:12,020 - 00:10:14,700] The baryon number of a proton is one,
+- [00:10:14,700 - 00:10:16,680] and it has three quarks in it.
+- [00:10:16,860 - 00:10:17,260] Good.
+- [00:10:18,020 - 00:10:18,620] Okay,
+- [00:10:18,620 - 00:10:20,300] so that's called baryon number.
+- [00:10:22,859 - 00:10:25,899] And there are other kinds of objects
+- [00:10:25,899 - 00:10:28,940] that carry baryon number besides protons and neutrons.
+- [00:10:30,480 - 00:10:31,760] But they're all unstable.
+- [00:10:32,160 - 00:10:33,560] Even the neutron is unstable.
+- [00:10:33,560 - 00:10:34,240] Nevertheless,
+- [00:10:34,240 - 00:10:36,480] there are other kinds of objects.
+- [00:10:37,080 - 00:10:39,110] We can mostly focus by thinking
+- [00:10:39,110 - 00:10:41,140] about quarks themselves if we like.
+- [00:10:41,480 - 00:10:45,310] And the statement that there's a baryon excess is the statement
+- [00:10:45,310 - 00:10:49,140] that there were in the early universe more quarks than anti-quarks.
+- [00:10:49,360 - 00:10:51,150] The number of quarks and anti-quarks separately were
+- [00:10:51,150 - 00:10:52,940] about the same as the number of photons.
+- [00:10:54,440 - 00:10:58,420] And so the question is how it got that way.
+- [00:10:58,860 - 00:10:59,420] Okay,
+- [00:10:59,420 - 00:11:03,540] let's suppose for the moment that baryon number is one.
+- [00:11:03,540 - 00:11:03,780] The number of quarks in the universe is one.
+- [00:11:03,780 - 00:11:03,830] What's the difference between
+- [00:11:03,830 - 00:11:03,880] baryon number and electron number?
+- [00:11:03,880 - 00:11:04,780] The difference between baryon number and electron number
+- [00:11:04,780 - 00:11:05,680] is that baryon number is like electric charge.
+- [00:11:06,340 - 00:11:08,370] One of the things about
+- [00:11:08,370 - 00:11:10,400] electric charge is that it's conserved.
+- [00:11:10,600 - 00:11:12,200] It doesn't change with time.
+- [00:11:12,580 - 00:11:13,400] Now,
+- [00:11:13,400 - 00:11:16,800] baryon number is not like electric charge.
+- [00:11:17,120 - 00:11:22,500] Electric charge is the source of coulomb forces,
+- [00:11:22,500 - 00:11:24,940] long range electric fields,
+- [00:11:24,940 - 00:11:29,360] which create long range electrostatic forces.
+- [00:11:30,300 - 00:11:33,520] Baryon number itself is not like electric charge.
+- [00:11:33,520 - 00:11:35,600] It's not a source of
+- [00:11:35,600 - 00:11:37,680] some kind of coulomb type force.
+- [00:11:37,820 - 00:11:38,260] Of course,
+- [00:11:38,260 - 00:11:40,940] the protons are electrically charged.
+- [00:11:41,540 - 00:11:42,140] Therefore,
+- [00:11:42,140 - 00:11:46,820] they make conventional coulomb forces between each other.
+- [00:11:46,900 - 00:11:47,920] They make electric fields.
+- [00:11:48,580 - 00:11:51,140] The neutrons are not electrically charged.
+- [00:11:51,420 - 00:11:52,700] They don't make electric fields.
+- [00:11:53,360 - 00:11:55,540] So what we would say is
+- [00:11:55,540 - 00:11:57,720] it's the charge of the proton,
+- [00:11:57,720 - 00:11:59,620] not the baryon number of it,
+- [00:11:59,620 - 00:12:01,860] which is creating any kind of long range field.
+- [00:12:03,520 - 00:12:07,480] And baryon number itself may be conserved.
+- [00:12:07,540 - 00:12:08,700] It may truly be conserved,
+- [00:12:08,700 - 00:12:11,080] but it is not exactly like electric charge.
+- [00:12:11,320 - 00:12:14,840] It doesn't exhibit this tendency to make long range forces.
+- [00:12:15,940 - 00:12:16,660] All right.
+- [00:12:16,680 - 00:12:18,040] But suppose it's conserved.
+- [00:12:18,200 - 00:12:19,540] Suppose it's conserved.
+- [00:12:19,840 - 00:12:26,060] Then if there is ever an excess in the beginning,
+- [00:12:26,060 - 00:12:26,520] let's say,
+- [00:12:26,520 - 00:12:27,000] of the universe,
+- [00:12:27,000 - 00:12:27,820] whatever that means,
+- [00:12:27,820 - 00:12:30,520] then there will always be an excess.
+- [00:12:30,520 - 00:12:34,080] And that excess will be sort of frozen in.
+- [00:12:35,300 - 00:12:37,400] If you change the number of quarks,
+- [00:12:37,400 - 00:12:40,380] you must change the number of anti-quarks by
+- [00:12:40,380 - 00:12:43,360] the same amount if baryon number is conserved.
+- [00:12:44,120 - 00:12:45,160] And what's more,
+- [00:12:45,160 - 00:12:46,840] experimentally,
+- [00:12:46,840 - 00:12:49,800] baryon number appears to be highly conserved.
+- [00:12:50,180 - 00:12:52,440] Nobody has ever seen a proton disappear.
+- [00:12:54,020 - 00:12:56,900] We can talk more about experiments which search
+- [00:12:56,900 - 00:12:59,780] for the decay of protons and so forth.
+- [00:12:59,780 - 00:13:02,620] But the first approximation in our world,
+- [00:13:02,620 - 00:13:06,280] protons are extremely stable.
+- [00:13:06,460 - 00:13:07,520] What could they decay to?
+- [00:13:07,620 - 00:13:08,260] Let's ask a question.
+- [00:13:08,440 - 00:13:09,060] What could they...
+- [00:13:09,060 - 00:13:10,880] Suppose a proton was to decay.
+- [00:13:11,040 - 00:13:12,000] What could it decay to?
+- [00:13:12,520 - 00:13:16,480] It must decay to things which are lighter than itself.
+- [00:13:18,060 - 00:13:18,580] Okay.
+- [00:13:19,660 - 00:13:21,460] It must decay to something
+- [00:13:21,460 - 00:13:23,260] which has a positive electric charge.
+- [00:13:24,500 - 00:13:26,320] So if a proton were to decay...
+- [00:13:26,320 - 00:13:28,040] And if we want to
+- [00:13:28,040 - 00:13:29,760] assume that whatever it decays to...
+- [00:13:29,780 - 00:13:30,620] is stable,
+- [00:13:30,620 - 00:13:33,880] there's really only one thing that it could decay to.
+- [00:13:34,120 - 00:13:36,330] It could decay to a
+- [00:13:36,330 - 00:13:38,540] positron and something electrically neutral.
+- [00:13:40,800 - 00:13:43,000] A proton could decay.
+- [00:13:43,160 - 00:13:46,620] A proton could disappear and become a positron.
+- [00:13:46,840 - 00:13:48,500] That conserves electric charge.
+- [00:13:48,580 - 00:13:49,540] It doesn't conserve energy.
+- [00:13:50,080 - 00:13:51,500] A positron is much,
+- [00:13:51,500 - 00:13:52,580] much lighter than a proton.
+- [00:13:52,920 - 00:13:56,100] But it would compensate by giving off a neutral particle.
+- [00:13:56,440 - 00:13:58,320] What kind of neutral particle is around?
+- [00:13:58,320 - 00:13:59,580] Photons.
+- [00:14:00,340 - 00:14:01,980] Photons are a prime candidate.
+- [00:14:02,440 - 00:14:09,400] So a decay possibility for the proton would be...
+- [00:14:09,400 - 00:14:09,980] Proton,
+- [00:14:09,980 - 00:14:11,560] I'll draw it as a kind of Feynman diagram.
+- [00:14:11,840 - 00:14:15,200] A proton moving along would decay to a photon,
+- [00:14:15,200 - 00:14:16,420] which we'll call gamma.
+- [00:14:16,640 - 00:14:18,300] Photons are typically called gamma.
+- [00:14:18,900 - 00:14:21,760] And an electron antiparticle,
+- [00:14:21,760 - 00:14:22,360] E+.
+- [00:14:22,360 - 00:14:24,980] That's a possible thing that could happen.
+- [00:14:25,200 - 00:14:28,300] And we don't really know any data.
+- [00:14:28,320 - 00:14:30,320] There's a deep fundamental reason why it can't happen.
+- [00:14:31,580 - 00:14:32,820] And maybe it does happen.
+- [00:14:32,980 - 00:14:34,360] We're going to talk about whether it does happen.
+- [00:14:34,520 - 00:14:34,820] In fact,
+- [00:14:34,820 - 00:14:35,600] we think it does happen.
+- [00:14:37,120 - 00:14:39,180] But for whatever reason...
+- [00:14:39,180 - 00:14:40,820] What about a neutrino?
+- [00:14:41,580 - 00:14:42,060] No,
+- [00:14:42,060 - 00:14:43,320] it can't decay to a...
+- [00:14:43,320 - 00:14:44,800] You mean a positron neutrino?
+- [00:14:44,980 - 00:14:45,380] No,
+- [00:14:45,380 - 00:14:45,740] no good.
+- [00:14:45,860 - 00:14:46,440] No good.
+- [00:14:46,660 - 00:14:46,900] Okay.
+- [00:14:47,660 - 00:14:50,060] A neutrino is a fermion.
+- [00:14:51,300 - 00:14:53,550] Two fermions make a boson
+- [00:14:53,550 - 00:14:55,800] and a proton is a fermion.
+- [00:14:55,800 - 00:14:58,720] So whatever the proton decays to,
+- [00:14:58,720 - 00:15:00,590] it must decay to something
+- [00:15:00,590 - 00:15:02,460] with an odd number of fermions.
+- [00:15:03,240 - 00:15:06,960] So it can't decay into a positron and a neutrino.
+- [00:15:07,380 - 00:15:07,980] Right.
+- [00:15:08,080 - 00:15:08,520] Yeah.
+- [00:15:08,800 - 00:15:11,800] If a baryon number really was conserved,
+- [00:15:11,800 - 00:15:14,380] it would correspond to a symmetry of some sort.
+- [00:15:14,620 - 00:15:14,760] Yes.
+- [00:15:14,900 - 00:15:16,780] Was there a candidate for that
+- [00:15:16,780 - 00:15:18,660] or has no one ever found one?
+- [00:15:18,900 - 00:15:19,820] You can always...
+- [00:15:19,820 - 00:15:22,060] Given any conserved quantity,
+- [00:15:22,060 - 00:15:24,460] you can always make up a symmetry
+- [00:15:25,640 - 00:15:26,040] that...
+- [00:15:26,840 - 00:15:27,960] But then you can say,
+- [00:15:27,960 - 00:15:28,180] well,
+- [00:15:28,180 - 00:15:29,460] all right.
+- [00:15:30,820 - 00:15:32,400] Is it really a symmetry?
+- [00:15:32,620 - 00:15:34,280] And the way to test it is always
+- [00:15:34,280 - 00:15:35,940] to ask whether the baryon number is conserved.
+- [00:15:36,100 - 00:15:37,760] So it's a little bit circular.
+- [00:15:38,780 - 00:15:39,380] But yes,
+- [00:15:39,380 - 00:15:39,780] you're right.
+- [00:15:39,860 - 00:15:41,860] If the baryon number was conserved,
+- [00:15:41,860 - 00:15:43,160] it would correspond to a symmetry.
+- [00:15:43,440 - 00:15:44,400] And if it's not conserved,
+- [00:15:44,400 - 00:15:46,180] it doesn't correspond to a symmetry.
+- [00:15:46,960 - 00:15:47,360] Okay.
+- [00:15:47,460 - 00:15:47,760] Yeah.
+- [00:15:48,800 - 00:15:49,600] Is there...
+- [00:15:50,500 - 00:15:52,470] Do you think about part was
+- [00:15:52,470 - 00:15:54,440] decaying and part was not decaying?
+- [00:15:54,440 - 00:15:57,970] Part was annihilating with each other sort
+- [00:15:57,970 - 00:16:01,500] of different things like a proton can annihilate
+- [00:16:01,500 - 00:16:06,420] with a positive...with a negative proton.
+- [00:16:06,700 - 00:16:06,900] Yes.
+- [00:16:07,000 - 00:16:09,330] So that...is that...can you think of
+- [00:16:09,330 - 00:16:11,660] that as a decay or not?
+- [00:16:11,920 - 00:16:12,180] No,
+- [00:16:12,180 - 00:16:13,020] that's not a decay.
+- [00:16:13,920 - 00:16:15,520] It's not a decay of the proton.
+- [00:16:15,820 - 00:16:17,680] It's just called annihilation of a proton.
+- [00:16:17,860 - 00:16:20,240] But the important point here is
+- [00:16:20,240 - 00:16:22,620] that the baryon number doesn't change.
+- [00:16:22,620 - 00:16:26,040] Three quarks and three anti-quarks came together.
+- [00:16:26,160 - 00:16:30,500] The sum total...the baryon number is zero.
+- [00:16:31,400 - 00:16:32,440] And afterwards,
+- [00:16:32,440 - 00:16:33,910] it's just a bunch of photons
+- [00:16:33,910 - 00:16:35,380] and the baryon number is still zero.
+- [00:16:35,760 - 00:16:36,320] So,
+- [00:16:36,320 - 00:16:36,780] right.
+- [00:16:36,960 - 00:16:39,140] So that's a fair question,
+- [00:16:39,140 - 00:16:41,110] but it does...and you could call
+- [00:16:41,110 - 00:16:43,080] it a decay if you wanted to,
+- [00:16:43,280 - 00:16:47,060] but it wouldn't correspond to a...right.
+- [00:16:47,680 - 00:16:48,240] Okay.
+- [00:16:48,420 - 00:16:52,580] So for whatever reason...and we don't know the reason.
+- [00:16:52,580 - 00:16:53,920] We don't know the reason really fully.
+- [00:16:55,370 - 00:16:59,240] The standard model does not permit this decay incidentally.
+- [00:16:59,320 - 00:17:01,420] It doesn't happen in the standard model.
+- [00:17:02,230 - 00:17:04,724] But there are versions or extensions of
+- [00:17:04,724 - 00:17:07,220] the standard model which are perfectly viable
+- [00:17:08,099 - 00:17:11,119] in which this process could happen.
+- [00:17:12,099 - 00:17:12,839] Now,
+- [00:17:12,839 - 00:17:14,980] one thing we know about it immediately,
+- [00:17:14,980 - 00:17:19,319] the decay rate of the proton cannot be very large.
+- [00:17:19,540 - 00:17:21,880] Our protons have been around for...
+- [00:17:22,579 - 00:17:24,339] 15 billion years or whatever it is,
+- [00:17:24,339 - 00:17:25,920] 13.7 billion years,
+- [00:17:25,920 - 00:17:27,460] and they haven't disappeared on us.
+- [00:17:27,800 - 00:17:30,570] So if the decay time of the
+- [00:17:30,570 - 00:17:33,340] proton were a microsecond or even faster,
+- [00:17:33,540 - 00:17:35,620] which particle physics might permit,
+- [00:17:35,620 - 00:17:38,640] the protons just wouldn't be here anymore.
+- [00:17:38,840 - 00:17:42,180] So the lifetime of the proton is at least very,
+- [00:17:42,180 - 00:17:42,540] very,
+- [00:17:42,540 - 00:17:43,080] very long.
+- [00:17:43,700 - 00:17:44,920] But in fact,
+- [00:17:44,920 - 00:17:45,800] it's much,
+- [00:17:45,800 - 00:17:48,070] much longer than is necessary for
+- [00:17:48,070 - 00:17:50,340] the protons to still be here.
+- [00:17:50,980 - 00:17:53,100] The mean lifetime of a proton is
+- [00:17:53,100 - 00:17:55,220] more than 10 to the 32 years,
+- [00:17:55,220 - 00:17:56,020] so it's very long.
+- [00:17:56,820 - 00:17:58,780] And we don't completely understand why.
+- [00:17:58,940 - 00:17:59,180] In fact,
+- [00:17:59,180 - 00:18:00,380] we don't understand why at all.
+- [00:18:00,500 - 00:18:01,600] But we take it as a fact.
+- [00:18:02,280 - 00:18:03,040] A fact,
+- [00:18:03,040 - 00:18:04,600] at least a temporary fact.
+- [00:18:06,480 - 00:18:08,300] Let's assume it for the moment.
+- [00:18:08,580 - 00:18:11,250] That would mean that the
+- [00:18:11,250 - 00:18:13,920] total baryon number in the universe,
+- [00:18:13,920 - 00:18:16,280] but let's just say in a box,
+- [00:18:17,040 - 00:18:18,020] in a box,
+- [00:18:18,020 - 00:18:19,560] doesn't change.
+- [00:18:20,340 - 00:18:23,630] And so the only theory of this excess that we could
+- [00:18:23,630 - 00:18:26,920] have is that it was built in from the very beginning
+- [00:18:26,920 - 00:18:28,580] and it still survives today.
+- [00:18:29,280 - 00:18:32,360] That would be a consequence of baryon conservation,
+- [00:18:32,360 - 00:18:34,480] baryon number conservation.
+- [00:18:34,920 - 00:18:36,100] I'm not saying that's true.
+- [00:18:36,300 - 00:18:39,520] I'm saying that's a consequence of baryon conservation,
+- [00:18:39,920 - 00:18:41,850] that this is the same today
+- [00:18:41,850 - 00:18:43,780] as it was at the very beginning.
+- [00:18:45,080 - 00:18:45,420] Now,
+- [00:18:45,420 - 00:18:48,100] there's another symmetry of nature.
+- [00:18:50,340 - 00:18:50,900] Which again,
+- [00:18:50,900 - 00:18:52,980] is not really a symmetry of nature.
+- [00:18:53,200 - 00:18:54,820] But you might have thought about
+- [00:18:54,820 - 00:18:56,440] it as a symmetry of nature.
+- [00:18:56,840 - 00:18:59,940] At the time that Sakharov put out his theory,
+- [00:19:00,300 - 00:19:02,530] it was only a couple of years after
+- [00:19:02,530 - 00:19:04,760] it was discovered that it wasn't a symmetry.
+- [00:19:05,260 - 00:19:06,420] We'll talk about it.
+- [00:19:06,820 - 00:19:11,000] But it's particle-antiparticle reflection symmetry.
+- [00:19:11,440 - 00:19:13,320] The statement that particles,
+- [00:19:13,320 - 00:19:15,960] if interchanged with antiparticles,
+- [00:19:16,220 - 00:19:18,420] that you can't tell the difference.
+- [00:19:18,939 - 00:19:19,820] Of course,
+- [00:19:19,820 - 00:19:21,100] you can tell the difference
+- [00:19:21,100 - 00:19:22,380] between a proton and an antiproton,
+- [00:19:22,520 - 00:19:24,400] because we're made out of protons.
+- [00:19:25,100 - 00:19:29,880] But if we changed all of our protons to antiprotons,
+- [00:19:30,860 - 00:19:33,620] if you were made out of antiprotons,
+- [00:19:33,620 - 00:19:34,660] and I was made out of protons,
+- [00:19:34,860 - 00:19:35,760] don't get too close to me,
+- [00:19:37,760 - 00:19:39,780] and somebody showed me a proton,
+- [00:19:40,260 - 00:19:41,100] I would say,
+- [00:19:41,100 - 00:19:41,400] yes,
+- [00:19:41,400 - 00:19:41,960] that's a proton.
+- [00:19:42,160 - 00:19:43,720] Somebody showed you an antiproton,
+- [00:19:43,720 - 00:19:45,240] you would have exactly the same response.
+- [00:19:45,460 - 00:19:45,720] I mean,
+- [00:19:45,720 - 00:19:48,400] you would see the same thing.
+- [00:19:48,400 - 00:19:49,360] You would see the same thing that I saw.
+- [00:19:50,140 - 00:19:53,620] That's called particle-antiparticle symmetry,
+- [00:19:53,900 - 00:19:54,380] or reflection,
+- [00:19:54,380 - 00:19:56,380] charge-reflection symmetry.
+- [00:19:58,220 - 00:20:04,000] And for technical reasons,
+- [00:20:04,000 - 00:20:04,940] well,
+- [00:20:04,940 - 00:20:07,020] alright,
+- [00:20:07,020 - 00:20:07,960] that's a symmetry.
+- [00:20:08,400 - 00:20:09,620] It's not a symmetry.
+- [00:20:10,280 - 00:20:13,460] But up until around 1964 or 65,
+- [00:20:13,460 - 00:20:14,700] I forget exactly when,
+- [00:20:14,900 - 00:20:18,380] it was thought that charge conjugation,
+- [00:20:18,400 - 00:20:23,880] this is called C equals charge conjugation symmetry,
+- [00:20:27,540 - 00:20:29,980] it was believed that it was a symmetry.
+- [00:20:30,800 - 00:20:32,740] Particles go to antiparticles.
+- [00:20:33,400 - 00:20:35,270] Two other things which were
+- [00:20:35,270 - 00:20:37,140] thought to be symmetries of nature,
+- [00:20:37,320 - 00:20:38,740] which went along with this,
+- [00:20:39,240 - 00:20:40,120] were called P,
+- [00:20:40,120 - 00:20:43,180] which is P is for parity,
+- [00:20:46,440 - 00:20:48,260] but it has nothing to do with,
+- [00:20:48,400 - 00:20:51,100] it's not a symmetry of nature economics or fairness.
+- [00:20:52,320 - 00:20:54,460] It's left-right symmetry,
+- [00:20:54,460 - 00:20:56,900] mirror-reflection symmetry,
+- [00:20:59,179 - 00:21:02,809] that if there's a kind
+- [00:21:02,809 - 00:21:06,440] of particle which exhibits a handedness,
+- [00:21:06,680 - 00:21:07,560] for example,
+- [00:21:07,560 - 00:21:10,640] it rotates to the right when it moves forward,
+- [00:21:10,880 - 00:21:13,220] spins to the right when it moves forward,
+- [00:21:13,420 - 00:21:16,540] then it had been assumed that there would be
+- [00:21:18,400 - 00:21:19,960] a vertical which also moves forward,
+- [00:21:20,160 - 00:21:21,680] left-right symmetry,
+- [00:21:21,680 - 00:21:24,560] and that was called parity.
+- [00:21:26,180 - 00:21:29,960] And the final interesting symmetry for us tonight
+- [00:21:29,960 - 00:21:31,600] is called T,
+- [00:21:31,600 - 00:21:34,420] and T is time reversal.
+- [00:21:41,170 - 00:21:43,335] What this means is that any
+- [00:21:43,335 - 00:21:45,500] process that can happen in nature,
+- [00:21:45,700 - 00:21:46,880] just an ordinary lab,
+- [00:21:46,880 - 00:21:49,080] let's restrict ourselves to laboratory processes,
+- [00:21:49,260 - 00:21:50,780] let's not worry about the whole universe,
+- [00:21:51,620 - 00:21:53,740] any process that can happen in nature,
+- [00:21:53,940 - 00:21:55,720] we could take a movie of it,
+- [00:21:55,840 - 00:21:57,240] if we run it backwards,
+- [00:21:57,480 - 00:22:03,920] it is still a possible thing that can happen.
+- [00:22:04,380 - 00:22:05,660] Anything that can happen,
+- [00:22:05,660 - 00:22:06,860] the opposite can happen.
+- [00:22:07,200 - 00:22:07,720] Now,
+- [00:22:07,720 - 00:22:09,280] it doesn't seem that way when
+- [00:22:09,280 - 00:22:10,840] you think about the real world,
+- [00:22:10,840 - 00:22:11,300] of course.
+- [00:22:11,660 - 00:22:15,160] The second law of thermodynamics says things get worse,
+- [00:22:15,160 - 00:22:17,360] but at the microscopic level,
+- [00:22:17,420 - 00:22:19,200] at the true microscopic level,
+- [00:22:19,400 - 00:22:21,480] we don't average over things,
+- [00:22:21,600 - 00:22:24,200] and we don't do statistical averaging and so forth,
+- [00:22:24,360 - 00:22:26,820] any process that happens in nature
+- [00:22:26,820 - 00:22:32,480] was thought that its time reversal
+- [00:22:33,040 - 00:22:38,360] was another possible thing that could happen.
+- [00:22:38,600 - 00:22:40,580] That's called time reversal symmetry.
+- [00:22:41,520 - 00:22:42,240] Now,
+- [00:22:42,240 - 00:22:44,399] what is actually known mathematically,
+- [00:22:44,400 - 00:22:48,820] this is a mathematical statement about quantum field theory,
+- [00:22:48,940 - 00:22:50,760] which I am not going to try to prove tonight,
+- [00:22:51,520 - 00:22:53,160] it's a hard theorem,
+- [00:22:53,420 - 00:22:55,690] but it follows from the
+- [00:22:55,690 - 00:22:57,960] basic structure of quantum mechanics,
+- [00:22:58,220 - 00:22:59,840] relativistic field theory,
+- [00:23:00,100 - 00:23:04,800] is not that charge symmetry is a symmetry,
+- [00:23:04,940 - 00:23:06,260] particle-antiparticle,
+- [00:23:06,360 - 00:23:10,480] not that parity reflection symmetry is a symmetry,
+- [00:23:10,640 - 00:23:13,880] or that time reversal is a symmetry,
+- [00:23:13,880 - 00:23:16,320] but the product of all three of them,
+- [00:23:17,639 - 00:23:18,080] CPT,
+- [00:23:18,080 - 00:23:19,480] and I'll tell you what that means in a minute,
+- [00:23:21,100 - 00:23:22,380] CPT is a symmetry.
+- [00:23:23,760 - 00:23:24,420] And this,
+- [00:23:24,420 - 00:23:26,720] for mathematical reasons,
+- [00:23:26,840 - 00:23:28,460] fundamental mathematical reasons,
+- [00:23:28,600 - 00:23:30,000] which you'll have to accept for now,
+- [00:23:32,620 - 00:23:35,180] is not consistent to ruin,
+- [00:23:35,180 - 00:23:36,880] to not have this symmetry.
+- [00:23:37,020 - 00:23:37,120] Now,
+- [00:23:37,120 - 00:23:37,920] what does a symmetry mean?
+- [00:23:38,240 - 00:23:39,800] It means if you take any process,
+- [00:23:40,419 - 00:23:42,920] replace every particle by its antiparticle,
+- [00:23:43,880 - 00:23:44,880] reflect it in a mirror,
+- [00:23:44,980 - 00:23:46,380] and run it backward,
+- [00:23:46,640 - 00:23:49,220] it is still a possible process in nature.
+- [00:23:49,840 - 00:23:50,320] Okay?
+- [00:23:50,540 - 00:23:53,070] You have to do all three in
+- [00:23:53,070 - 00:23:55,600] order to be sure that it's a symmetry.
+- [00:23:55,740 - 00:23:56,940] Up until the 60s,
+- [00:23:56,940 - 00:23:57,180] yeah.
+- [00:23:58,240 - 00:23:58,720] So,
+- [00:23:58,720 - 00:23:59,900] for a wave function,
+- [00:24:00,100 - 00:24:02,200] you can't just change the sine of t?
+- [00:24:02,640 - 00:24:03,120] No,
+- [00:24:03,120 - 00:24:04,620] you have to complex conjugate it,
+- [00:24:04,620 - 00:24:04,760] too.
+- [00:24:07,100 - 00:24:07,580] So,
+- [00:24:07,580 - 00:24:10,220] does time reversal always mean
+- [00:24:10,220 - 00:24:11,490] take the complex conjugate as well
+- [00:24:11,490 - 00:24:12,760] as change the sine of t?
+- [00:24:12,760 - 00:24:13,440] Mm-hmm.
+- [00:24:13,440 - 00:24:14,040] Mm-hmm.
+- [00:24:14,040 - 00:24:15,180] Mm-hmm.
+- [00:24:15,800 - 00:24:16,240] Right.
+- [00:24:17,360 - 00:24:17,800] Yeah.
+- [00:24:18,200 - 00:24:19,960] You can see that from the Schrodinger equation.
+- [00:24:21,060 - 00:24:23,020] The Schrodinger equation is something like
+- [00:24:23,020 - 00:24:25,880] i d psi by dt equals,
+- [00:24:25,880 - 00:24:27,300] I don't know,
+- [00:24:27,740 - 00:24:30,100] d second psi by dx squared,
+- [00:24:30,100 - 00:24:31,020] or something like that.
+- [00:24:31,080 - 00:24:32,040] That's not quite right.
+- [00:24:33,040 - 00:24:34,880] But supposing you change the sine of t,
+- [00:24:35,080 - 00:24:36,880] that changes the sine of the left-hand side,
+- [00:24:37,419 - 00:24:39,540] but it doesn't change the sine of the right-hand side.
+- [00:24:39,900 - 00:24:40,340] So,
+- [00:24:40,340 - 00:24:41,480] changing the sine of t
+- [00:24:42,100 - 00:24:42,820] doesn't work.
+- [00:24:43,060 - 00:24:45,940] But if at the same time you complex conjugate
+- [00:24:49,040 - 00:24:50,720] and change the sine of t,
+- [00:24:51,020 - 00:24:53,760] which also requires you to change the sine of i
+- [00:24:54,800 - 00:24:56,520] for complex conjugation,
+- [00:24:56,660 - 00:24:57,620] then it does work.
+- [00:24:58,180 - 00:24:59,940] But this is something
+- [00:25:00,980 - 00:25:02,560] we don't need to get into right now.
+- [00:25:03,600 - 00:25:04,740] Cpt is a symmetry.
+- [00:25:12,400 - 00:25:14,780] But let's suppose for a moment,
+- [00:25:15,040 - 00:25:16,649] let's go back to Sakharov,
+- [00:25:17,560 - 00:25:18,740] or even before Sakharov,
+- [00:25:18,780 - 00:25:20,580] before the facts were actually known,
+- [00:25:21,200 - 00:25:23,530] let's suppose that either charge conjugation
+- [00:25:24,060 - 00:25:26,280] or c times p,
+- [00:25:26,520 - 00:25:28,840] which is the usual one that people focus on,
+- [00:25:29,220 - 00:25:30,840] that that was a good symmetry.
+- [00:25:31,160 - 00:25:33,420] C times p means change every particle
+- [00:25:33,420 - 00:25:35,300] to its antiparticle and change your left hand
+- [00:25:35,300 - 00:25:36,060] with your right hand.
+- [00:25:36,500 - 00:25:38,040] That was actually thought to
+- [00:25:38,040 - 00:25:39,580] be a good symmetry of nature.
+- [00:25:40,560 - 00:25:41,460] That would end up being a good symmetry of nature.
+- [00:25:41,480 - 00:25:43,480] But you don't entail that there's some kind of symmetry
+- [00:25:43,480 - 00:25:45,960] which allows you to change the sine of every particle
+- [00:25:46,860 - 00:25:48,140] to its antiparticle.
+- [00:25:48,320 - 00:25:49,960] You'd also have to change left to right,
+- [00:25:50,060 - 00:25:51,400] but that goes along for the ride.
+- [00:25:52,260 - 00:25:53,300] If you believe that,
+- [00:25:53,300 - 00:25:54,800] then you might ask,
+- [00:25:54,980 - 00:25:55,660] well,
+- [00:25:55,660 - 00:25:56,340] gee whiz,
+- [00:25:57,600 - 00:25:59,360] if there is a complete symmetry
+- [00:25:59,360 - 00:26:01,340] between particles and antiparticles,
+- [00:26:01,480 - 00:26:03,600] why should it be that at the very beginning
+- [00:26:03,600 - 00:26:06,240] there was an imbalance of one versus the other?
+- [00:26:06,580 - 00:26:07,020] Now,
+- [00:26:07,020 - 00:26:09,240] nobody can tell you that there isn't an imbalance.
+- [00:26:09,540 - 00:26:11,460] It just dates back to the very beginning.
+- [00:26:11,480 - 00:26:13,540] But you might also wonder,
+- [00:26:13,620 - 00:26:13,820] you know,
+- [00:26:13,820 - 00:26:15,060] what's going on here?
+- [00:26:15,320 - 00:26:18,860] The laws of physics seem to be completely symmetric
+- [00:26:18,860 - 00:26:20,560] between the two kinds of things,
+- [00:26:20,700 - 00:26:22,100] particles and antiparticles,
+- [00:26:22,260 - 00:26:23,080] and yet,
+- [00:26:23,080 - 00:26:23,960] for some reason,
+- [00:26:24,120 - 00:26:27,080] there was this small imbalance
+- [00:26:27,080 - 00:26:28,840] of size 10 to the minus 8.
+- [00:26:28,960 - 00:26:31,740] It doesn't sound right.
+- [00:26:32,340 - 00:26:32,820] Okay?
+- [00:26:34,260 - 00:26:35,040] All right.
+- [00:26:35,500 - 00:26:39,240] The modern theory of baryogenesis
+- [00:26:39,240 - 00:26:40,740] begins with the idea
+- [00:26:41,900 - 00:26:43,920] that there was a balance,
+- [00:26:44,560 - 00:26:47,240] that particle and antiparticle were balanced,
+- [00:26:47,480 - 00:26:47,880] again,
+- [00:26:47,880 - 00:26:49,800] not for any good reasons,
+- [00:26:50,040 - 00:26:54,780] but just for whatever initial condition you started with,
+- [00:26:54,880 - 00:26:57,480] there was no bias toward particle or antiparticle.
+- [00:26:57,560 - 00:26:58,740] That's an assumption.
+- [00:26:58,960 - 00:27:01,560] It can be justified in some frameworks,
+- [00:27:01,960 - 00:27:02,640] but it's...
+- [00:27:03,420 - 00:27:05,500] So then how is it possible,
+- [00:27:05,500 - 00:27:05,920] then,
+- [00:27:06,600 - 00:27:08,660] that it got imbalanced?
+- [00:27:09,020 - 00:27:10,800] The only way that it's possible
+- [00:27:10,800 - 00:27:12,440] for it to get imbalanced...
+- [00:27:17,639 - 00:27:20,780] The only way it's possible for it to get imbalanced
+- [00:27:20,780 - 00:27:23,700] is if the conservation of baryon number
+- [00:27:23,700 - 00:27:24,560] is not correct.
+- [00:27:25,460 - 00:27:26,380] In other words,
+- [00:27:26,540 - 00:27:28,320] if processes can happen,
+- [00:27:28,380 - 00:27:29,500] and here's one,
+- [00:27:29,680 - 00:27:32,360] if processes can happen in nature
+- [00:27:32,360 - 00:27:36,040] in which a proton becomes a positron,
+- [00:27:36,300 - 00:27:40,180] that is a violation of baryon conservation,
+- [00:27:40,180 - 00:27:43,500] which allows the baryon number of the universe to change.
+- [00:27:44,580 - 00:27:46,310] That would be the first requirement
+- [00:27:46,700 - 00:27:48,270] for a theory of baryogenesis
+- [00:27:48,820 - 00:27:50,600] that was based on the assumption
+- [00:27:50,600 - 00:27:51,520] that the initial...
+- [00:27:51,520 - 00:27:53,980] the starting point was balanced between the two,
+- [00:27:54,200 - 00:27:56,700] that if you're going to wind up with an excess
+- [00:27:56,700 - 00:27:59,040] of quarks over anti-quarks,
+- [00:27:59,140 - 00:28:00,940] or baryons over anti-baryons,
+- [00:28:00,940 - 00:28:02,580] baryons meaning protons and neutrons,
+- [00:28:02,800 - 00:28:06,320] you must have a mechanism
+- [00:28:06,320 - 00:28:08,400] which violates the conservation.
+- [00:28:09,040 - 00:28:10,100] So that was...
+- [00:28:10,180 - 00:28:12,100] Sakharov's first condition.
+- [00:28:18,140 - 00:28:19,400] Condition number one,
+- [00:28:19,460 - 00:28:20,360] Sakharov conditions.
+- [00:28:29,500 - 00:28:32,020] Sakharov conditions started with number one,
+- [00:28:33,940 - 00:28:35,380] baryon number...
+- [00:28:39,180 - 00:28:40,000] violation.
+- [00:28:40,480 - 00:28:43,840] Violation means violation of the conservation law.
+- [00:28:47,700 - 00:28:49,480] And as an example,
+- [00:28:50,189 - 00:28:53,500] the process of a proton becoming a positron
+- [00:28:53,500 - 00:28:55,480] and a photon is an example.
+- [00:28:56,540 - 00:28:58,260] If it happens in nature.
+- [00:29:00,180 - 00:29:02,020] That was condition number one.
+- [00:29:03,740 - 00:29:05,280] Let's just...
+- [00:29:05,280 - 00:29:06,220] talk about that for a minute.
+- [00:29:08,560 - 00:29:10,500] If baryon number conservation
+- [00:29:11,100 - 00:29:14,080] is not a good conservation law of physics,
+- [00:29:14,800 - 00:29:16,920] then it must be a very,
+- [00:29:16,920 - 00:29:18,320] very weakly,
+- [00:29:18,320 - 00:29:19,380] weakly broken one.
+- [00:29:19,560 - 00:29:20,280] As I said,
+- [00:29:20,280 - 00:29:22,400] protons are very old.
+- [00:29:22,860 - 00:29:24,060] They didn't disappear.
+- [00:29:24,700 - 00:29:26,280] So it must be very old.
+- [00:29:26,360 - 00:29:27,240] It must be very old.
+- [00:29:27,300 - 00:29:28,120] The protons are old.
+- [00:29:28,280 - 00:29:30,200] And whatever mechanism,
+- [00:29:31,000 - 00:29:32,800] such as this kind of decay,
+- [00:29:33,060 - 00:29:34,480] it must have a very,
+- [00:29:34,480 - 00:29:34,820] very,
+- [00:29:34,820 - 00:29:35,060] very,
+- [00:29:35,060 - 00:29:37,060] very small probability per unit time.
+- [00:29:38,280 - 00:29:40,380] One can ask in current theories,
+- [00:29:40,600 - 00:29:42,100] current unified theories,
+- [00:29:42,400 - 00:29:42,900] which do,
+- [00:29:42,900 - 00:29:43,720] some of which,
+- [00:29:43,820 - 00:29:44,800] most of whom,
+- [00:29:44,800 - 00:29:45,180] in fact,
+- [00:29:45,180 - 00:29:45,620] everyone,
+- [00:29:45,800 - 00:29:46,020] no,
+- [00:29:46,020 - 00:29:46,740] I take that back,
+- [00:29:46,880 - 00:29:50,560] every known unified theory,
+- [00:29:50,780 - 00:29:52,500] and even when they're not unified,
+- [00:29:52,680 - 00:29:53,820] if they're coupled to gravity,
+- [00:29:53,980 - 00:29:56,440] every known fundamental theory
+- [00:29:58,159 - 00:30:01,160] violates baryon conservation like this.
+- [00:30:01,500 - 00:30:03,660] You can ask in the known theories,
+- [00:30:03,660 - 00:30:06,140] why is the proton so stable?
+- [00:30:06,780 - 00:30:11,040] And the answer tends to be something like this,
+- [00:30:11,180 - 00:30:14,560] that the theory has Feynman diagrams,
+- [00:30:14,740 - 00:30:18,460] has processes in which the proton comes in
+- [00:30:18,460 - 00:30:19,300] from the left,
+- [00:30:19,300 - 00:30:20,180] meaning from early,
+- [00:30:20,380 - 00:30:21,960] out goes an electron,
+- [00:30:21,960 - 00:30:23,840] out goes a photon,
+- [00:30:24,240 - 00:30:26,260] but somewhere in the guts of this
+- [00:30:26,260 - 00:30:27,160] Feynman diagram,
+- [00:30:27,160 - 00:30:29,200] there are all kinds of particles,
+- [00:30:29,360 - 00:30:32,100] let's not specify exactly which ones are in there,
+- [00:30:32,960 - 00:30:33,640] but there are all kinds of particles,
+- [00:30:33,640 - 00:30:34,760] but among them,
+- [00:30:34,760 - 00:30:38,360] assume that there's at least
+- [00:30:38,360 - 00:30:40,920] one or more particles which are very,
+- [00:30:40,920 - 00:30:41,620] very heavy.
+- [00:30:42,200 - 00:30:43,260] In other words,
+- [00:30:43,260 - 00:30:45,120] that it requires a particle type
+- [00:30:45,120 - 00:30:46,200] which is very,
+- [00:30:46,200 - 00:30:47,220] very heavy in there,
+- [00:30:47,340 - 00:30:49,420] particles which have not been discovered yet.
+- [00:30:50,440 - 00:30:50,820] Now,
+- [00:30:50,820 - 00:30:52,300] one of the reasons to believe this
+- [00:30:52,300 - 00:30:54,940] is that the standard model by itself,
+- [00:30:55,680 - 00:30:57,600] with its ordinary known particles,
+- [00:30:57,780 - 00:30:59,240] does not permit this to happen,
+- [00:30:59,420 - 00:31:01,540] and so in order to make it happen,
+- [00:31:01,600 - 00:31:02,360] you would have to have
+- [00:31:02,360 - 00:31:03,820] new additional particles
+- [00:31:04,500 - 00:31:06,460] that were not part of the standard model,
+- [00:31:06,660 - 00:31:09,100] and that certainly means that they're heavier
+- [00:31:09,100 - 00:31:10,560] because they haven't been discovered yet,
+- [00:31:11,240 - 00:31:13,560] but imagine making them very heavy.
+- [00:31:14,300 - 00:31:15,280] How heavy?
+- [00:31:15,440 - 00:31:15,800] Oh,
+- [00:31:15,800 - 00:31:17,980] 10 to the 16th GeV,
+- [00:31:18,180 - 00:31:20,320] or 10 to the 16th times heavier than a proton,
+- [00:31:20,600 - 00:31:22,440] which is not an unnatural number
+- [00:31:22,440 - 00:31:23,520] for heavy particles.
+- [00:31:24,960 - 00:31:25,560] Then,
+- [00:31:25,560 - 00:31:26,480] what's true
+- [00:31:28,020 - 00:31:30,800] is that this kind of process
+- [00:31:30,800 - 00:31:32,340] is extremely un-natural.
+- [00:31:33,420 - 00:31:34,940] Extremely unlikely means that
+- [00:31:34,940 - 00:31:37,360] the quantum mechanical amplitude for it
+- [00:31:37,360 - 00:31:40,840] is suppressed by inverse powers
+- [00:31:40,840 - 00:31:42,960] of this heavy mass.
+- [00:31:43,660 - 00:31:44,260] Typically,
+- [00:31:44,260 - 00:31:45,020] for example,
+- [00:31:45,020 - 00:31:46,040] it might be,
+- [00:31:46,140 - 00:31:47,760] let's call this the heavy mass M,
+- [00:31:47,940 - 00:31:50,580] the Feynman diagram will contain
+- [00:31:50,580 - 00:31:51,960] a 1 over M squared,
+- [00:31:52,180 - 00:31:54,080] just because it's so hard
+- [00:31:54,080 - 00:31:55,440] to make a heavy particle.
+- [00:31:56,540 - 00:31:58,260] Just because it's so unlikely,
+- [00:31:58,500 - 00:32:00,780] that heavy particle doesn't last very long,
+- [00:32:00,920 - 00:32:01,360] it has to,
+- [00:32:01,360 - 00:32:02,040] it has to,
+- [00:32:03,220 - 00:32:05,160] melt into the rest of the Feynman diagram,
+- [00:32:06,320 - 00:32:08,780] but if the particle is heavy enough in there,
+- [00:32:08,980 - 00:32:11,900] then this will be a very,
+- [00:32:11,900 - 00:32:12,640] very small
+- [00:32:13,399 - 00:32:14,280] probability process.
+- [00:32:15,160 - 00:32:15,920] That's what drives,
+- [00:32:15,920 - 00:32:16,560] that's what,
+- [00:32:16,580 - 00:32:18,980] that's the kind of thing which keeps the proton stable
+- [00:32:19,739 - 00:32:21,660] in modern unified theories.
+- [00:32:21,840 - 00:32:22,520] I don't know if it's right,
+- [00:32:22,620 - 00:32:23,440] I'm not saying it's right,
+- [00:32:23,520 - 00:32:24,580] but this is a mechanism
+- [00:32:25,340 - 00:32:27,600] that the extra particles that are there
+- [00:32:27,600 - 00:32:29,140] are all heavy enough
+- [00:32:29,140 - 00:32:31,420] that they suppress this enormously.
+- [00:32:32,360 - 00:32:34,480] Now I will tell you something else,
+- [00:32:37,100 - 00:32:39,820] that this 1 over M squared,
+- [00:32:40,800 - 00:32:42,540] if for some reason,
+- [00:32:42,640 - 00:32:46,720] the proton is given a lot of energy somehow,
+- [00:32:47,600 - 00:32:50,080] then this isn't really 1 over M squared,
+- [00:32:50,500 - 00:32:52,340] but it's really some energy,
+- [00:32:53,879 - 00:32:56,920] M minus some energy squared.
+- [00:32:58,320 - 00:33:00,940] If the proton has excess energy
+- [00:33:00,940 - 00:33:02,220] from some other place,
+- [00:33:02,360 - 00:33:07,620] this can well be a much smaller suppression,
+- [00:33:07,880 - 00:33:09,300] and I'll tell you where that extra energy
+- [00:33:09,300 - 00:33:10,320] comes from in a minute,
+- [00:33:10,400 - 00:33:11,400] where it can come from.
+- [00:33:11,700 - 00:33:13,140] But in the ordinary world,
+- [00:33:13,380 - 00:33:15,500] a proton sitting around,
+- [00:33:16,060 - 00:33:17,680] there's nothing to give it
+- [00:33:17,680 - 00:33:19,480] an enormously heavy kick,
+- [00:33:19,600 - 00:33:20,940] an enormously high kick.
+- [00:33:21,600 - 00:33:23,980] It doesn't have a huge amount of energy.
+- [00:33:24,680 - 00:33:25,200] Protons,
+- [00:33:25,200 - 00:33:26,620] when they collide or anything else,
+- [00:33:26,620 - 00:33:27,940] don't have huge amounts of energy.
+- [00:33:28,320 - 00:33:29,880] So this is where you begin.
+- [00:33:30,280 - 00:33:30,800] And,
+- [00:33:32,360 - 00:33:33,360] theories of this type
+- [00:33:33,360 - 00:33:36,180] can explain why the protons are stable.
+- [00:33:37,460 - 00:33:38,280] Of course,
+- [00:33:38,280 - 00:33:39,040] you could say,
+- [00:33:39,080 - 00:33:40,840] they don't explain anything.
+- [00:33:41,140 - 00:33:43,320] They just tell you that for some reason
+- [00:33:43,320 - 00:33:45,900] that the particles which could cause,
+- [00:33:45,980 - 00:33:47,980] which are necessary for the proton decay,
+- [00:33:48,100 - 00:33:48,820] must be very heavy,
+- [00:33:48,820 - 00:33:49,340] and that's true.
+- [00:33:50,900 - 00:33:52,020] Is extra energy,
+- [00:33:52,020 - 00:33:54,980] is that not included in M squared?
+- [00:33:55,680 - 00:33:56,200] Yeah,
+- [00:33:56,200 - 00:33:57,540] any energy that's not included
+- [00:33:57,540 - 00:33:58,840] in its rest mass squared,
+- [00:33:59,180 - 00:34:00,680] nevertheless we go in here,
+- [00:34:00,740 - 00:34:01,600] and I'll tell you where such energy
+- [00:34:01,600 - 00:34:02,660] can come from in a moment.
+- [00:34:04,220 - 00:34:04,920] But,
+- [00:34:06,620 - 00:34:07,780] as I said,
+- [00:34:07,780 - 00:34:09,000] all theories,
+- [00:34:09,320 - 00:34:11,040] all known theories,
+- [00:34:11,239 - 00:34:13,880] and I would venture to say any theory
+- [00:34:13,880 - 00:34:14,940] that ever will exist,
+- [00:34:16,580 - 00:34:18,540] will have the possibility
+- [00:34:19,400 - 00:34:21,060] of baryon violation.
+- [00:34:22,560 - 00:34:23,260] Okay,
+- [00:34:23,260 - 00:34:25,560] so let's agree,
+- [00:34:26,739 - 00:34:27,440] tentatively,
+- [00:34:27,719 - 00:34:29,699] that baryon violation
+- [00:34:29,699 - 00:34:33,239] is not taboo,
+- [00:34:33,260 - 00:34:36,719] that processes such as this can happen,
+- [00:34:36,860 - 00:34:39,360] they're not forbidden by any fundamental law of physics,
+- [00:34:40,020 - 00:34:42,600] it's just an accident of the particle spectrum
+- [00:34:42,600 - 00:34:44,880] that the proton is as stable as it is.
+- [00:34:45,260 - 00:34:46,020] Let's take that,
+- [00:34:46,060 - 00:34:47,719] let's take that as an assumption,
+- [00:34:47,860 - 00:34:48,520] a working assumption.
+- [00:34:50,820 - 00:34:52,760] Baryon violation by itself
+- [00:34:53,600 - 00:34:55,480] is not sufficient to,
+- [00:34:55,560 - 00:34:59,100] to give you an average excess
+- [00:34:59,100 - 00:35:01,540] of protons over antiprotons.
+- [00:35:01,620 - 00:35:02,060] Why not?
+- [00:35:02,640 - 00:35:04,800] Because for every event,
+- [00:35:05,480 - 00:35:06,080] let's,
+- [00:35:06,080 - 00:35:06,740] where is it?
+- [00:35:06,820 - 00:35:08,860] Every event like this which can happen,
+- [00:35:10,520 - 00:35:11,940] which can cause you to
+- [00:35:13,400 - 00:35:15,140] lose proton number,
+- [00:35:15,360 - 00:35:18,460] this is a source of decreasing baryon number,
+- [00:35:18,640 - 00:35:20,180] you started with one unit here
+- [00:35:20,180 - 00:35:21,520] and you have no units over here,
+- [00:35:21,740 - 00:35:23,880] for every process like this,
+- [00:35:24,020 - 00:35:27,200] there is the charge conjugate process,
+- [00:35:27,200 - 00:35:31,000] in which an antiproton comes in,
+- [00:35:33,220 - 00:35:34,540] a electron,
+- [00:35:34,540 - 00:35:36,280] a true electron goes off,
+- [00:35:36,460 - 00:35:39,380] and the antiparticle of the photon is the photon,
+- [00:35:39,600 - 00:35:41,340] the antiparticle of a photon is itself.
+- [00:35:43,440 - 00:35:44,100] So,
+- [00:35:44,100 - 00:35:48,060] if we believe in particle-antiparticle symmetry,
+- [00:35:48,940 - 00:35:51,100] then for every process like this,
+- [00:35:51,340 - 00:35:53,300] a process like that happens,
+- [00:35:53,500 - 00:35:55,340] and on the average,
+- [00:35:56,040 - 00:35:57,580] on the average,
+- [00:35:57,920 - 00:36:01,300] there will be as many of these kinds of decays
+- [00:36:01,300 - 00:36:02,500] as these kinds of decays.
+- [00:36:02,600 - 00:36:03,620] So if we started out,
+- [00:36:06,640 - 00:36:10,020] if we started out with an equal population
+- [00:36:10,020 - 00:36:12,440] of quarks and anti-quarks,
+- [00:36:12,540 - 00:36:14,180] of baryons and anti-baryons,
+- [00:36:14,260 - 00:36:17,140] and we tried to rely only on
+- [00:36:17,140 - 00:36:19,900] the violation of baryon number,
+- [00:36:20,160 - 00:36:22,520] it would not be a very efficient way
+- [00:36:22,520 - 00:36:24,320] to create an excess.
+- [00:36:24,320 - 00:36:26,020] What do I mean by that?
+- [00:36:26,400 - 00:36:27,260] I mean,
+- [00:36:27,260 - 00:36:29,560] think about it for a minute,
+- [00:36:30,440 - 00:36:33,580] supposing there was a randomness that,
+- [00:36:33,740 - 00:36:35,300] let's see how to say this,
+- [00:36:37,480 - 00:36:38,000] oh,
+- [00:36:38,000 - 00:36:39,420] I might add something else,
+- [00:36:39,420 - 00:36:40,180] incidentally,
+- [00:36:40,180 - 00:36:42,080] that in the very early universe,
+- [00:36:43,020 - 00:36:45,400] there were lots of electrons,
+- [00:36:45,400 - 00:36:46,240] positrons,
+- [00:36:46,280 - 00:36:47,220] and photons around,
+- [00:36:47,840 - 00:36:49,260] and it's perfectly possible
+- [00:36:49,260 - 00:36:50,660] for the opposite to go.
+- [00:36:51,340 - 00:36:52,300] An electron,
+- [00:36:52,300 - 00:36:53,720] a positron and a photon
+- [00:36:53,720 - 00:36:55,400] can come together and make a proton.
+- [00:36:55,680 - 00:36:58,560] An electron and a photon can come together
+- [00:36:58,560 - 00:36:59,440] and make an anti-proton.
+- [00:36:59,760 - 00:37:02,660] So there's a statistical balance
+- [00:37:02,660 - 00:37:03,700] of things going on.
+- [00:37:04,500 - 00:37:05,900] It's only statistical
+- [00:37:06,780 - 00:37:09,160] that there would be as many protons
+- [00:37:09,160 - 00:37:10,340] as anti-protons,
+- [00:37:10,420 - 00:37:12,400] because these processes are statistical processes,
+- [00:37:14,100 - 00:37:20,660] but the imbalance of protons over anti-protons
+- [00:37:20,660 - 00:37:22,640] is not a statistical effect.
+- [00:37:23,720 - 00:37:24,100] Yeah?
+- [00:37:24,200 - 00:37:24,980] Quick question.
+- [00:37:25,120 - 00:37:26,740] On that lower diagram,
+- [00:37:27,040 - 00:37:28,540] on the left-hand side,
+- [00:37:28,660 - 00:37:30,860] is the baryon number equal to negative one there?
+- [00:37:31,460 - 00:37:31,940] Here,
+- [00:37:31,940 - 00:37:32,220] yes.
+- [00:37:32,480 - 00:37:34,100] Negative one goes to zero.
+- [00:37:34,800 - 00:37:35,280] Yeah.
+- [00:37:36,120 - 00:37:36,600] Right.
+- [00:37:37,120 - 00:37:38,400] Negative one goes to zero.
+- [00:37:38,460 - 00:37:38,660] Here,
+- [00:37:38,660 - 00:37:39,520] one goes to zero.
+- [00:37:40,180 - 00:37:45,520] And the reason that it can't be a statistical effect
+- [00:37:45,520 - 00:37:47,860] is that it is quite true
+- [00:37:47,860 - 00:37:50,960] that the baryon excess is a small number,
+- [00:37:51,080 - 00:37:52,140] 10 to the minus eighth.
+- [00:37:52,140 - 00:37:52,860] Okay?
+- [00:37:53,380 - 00:37:54,220] But you ask,
+- [00:37:54,300 - 00:37:59,440] how many protons are there in the entire universe,
+- [00:37:59,640 - 00:38:00,280] known universe,
+- [00:38:00,280 - 00:38:01,380] observable universe?
+- [00:38:01,740 - 00:38:03,940] And the answer is about 10 to the 80th.
+- [00:38:04,500 - 00:38:06,560] How big would you expect the excess
+- [00:38:06,560 - 00:38:08,760] of protons over anti-protons to be
+- [00:38:08,760 - 00:38:11,200] if it were simply a pure statistical effect?
+- [00:38:16,240 - 00:38:17,200] Square root of n.
+- [00:38:19,360 - 00:38:19,860] Right?
+- [00:38:20,400 - 00:38:22,120] You know that the statistical effect
+- [00:38:22,140 - 00:38:24,060] of a particle fluctuation in a variable
+- [00:38:24,720 - 00:38:26,560] just due to random statistics
+- [00:38:27,340 - 00:38:30,420] is of order the square root of the number.
+- [00:38:30,520 - 00:38:36,140] If you have a random heads-tails flips
+- [00:38:37,040 - 00:38:38,280] and you collect,
+- [00:38:38,280 - 00:38:39,440] let's say,
+- [00:38:39,440 - 00:38:40,660] a thousand flips,
+- [00:38:42,100 - 00:38:44,340] the number of heads will be 500,
+- [00:38:44,620 - 00:38:47,380] but that's up to the margin of error.
+- [00:38:47,560 - 00:38:48,660] And what is the margin of error?
+- [00:38:48,860 - 00:38:50,880] The margin of error is the square root
+- [00:38:50,880 - 00:38:51,820] of the number of flips.
+- [00:38:52,360 - 00:38:55,080] And so you expect that the number of flips,
+- [00:38:55,260 - 00:38:56,720] the number of flips will be,
+- [00:38:56,740 - 00:39:00,140] the number of heads will be 500 plus or minus,
+- [00:39:00,300 - 00:39:01,220] what's the square root of 500?
+- [00:39:03,120 - 00:39:04,480] The margin of error will be about 25.
+- [00:39:05,140 - 00:39:05,620] Okay,
+- [00:39:05,620 - 00:39:07,260] now let's come to the world
+- [00:39:07,260 - 00:39:09,680] which has 10 to the 80th protons in it.
+- [00:39:10,580 - 00:39:13,100] What is the margin of error
+- [00:39:13,100 - 00:39:15,860] or the statistical fluctuation,
+- [00:39:17,620 - 00:39:19,820] the average expected statistical,
+- [00:39:19,820 - 00:39:21,940] the statistical excess of protons?
+- [00:39:22,200 - 00:39:23,320] It would be square root,
+- [00:39:23,400 - 00:39:24,700] which would be 10 to the 40th,
+- [00:39:24,700 - 00:39:24,920] right?
+- [00:39:25,380 - 00:39:26,440] 10 to the 40th.
+- [00:39:26,440 - 00:39:28,620] 10 to the 40th over 10 to the 80th
+- [00:39:28,620 - 00:39:30,300] is 10 to the minus 40th.
+- [00:39:30,620 - 00:39:33,500] So if the excess was 10 to the minus 40th,
+- [00:39:33,580 - 00:39:35,580] we could say it could be statistical,
+- [00:39:35,880 - 00:39:36,540] but it's not.
+- [00:39:36,620 - 00:39:36,940] It's much,
+- [00:39:36,940 - 00:39:37,700] much bigger than that.
+- [00:39:37,840 - 00:39:37,920] Yeah?
+- [00:39:38,240 - 00:39:38,640] Well,
+- [00:39:38,640 - 00:39:40,900] it depends on the number of protons
+- [00:39:40,900 - 00:39:43,180] and anti-protons in the very early universe
+- [00:39:43,180 - 00:39:44,540] that became our observable universe.
+- [00:39:44,540 - 00:39:46,620] I'm assuming that they started out balanced.
+- [00:39:46,900 - 00:39:47,280] Right,
+- [00:39:47,280 - 00:39:48,400] they started out balanced.
+- [00:39:48,400 - 00:39:51,720] And if there were 10 to the 160th protons
+- [00:39:52,220 - 00:39:54,100] and anti-protons in that early universe,
+- [00:39:54,700 - 00:39:56,640] then that could be 10 to the 80th.
+- [00:39:56,840 - 00:39:58,100] It could be.
+- [00:39:58,200 - 00:39:58,860] It could be.
+- [00:39:58,940 - 00:40:01,260] The other thing that would be very hard to justify,
+- [00:40:01,740 - 00:40:03,060] extremely hard to justify,
+- [00:40:03,540 - 00:40:05,620] is if it was statistical fluctuation,
+- [00:40:05,800 - 00:40:08,080] why it would be the same everywheres.
+- [00:40:08,640 - 00:40:09,080] Okay,
+- [00:40:09,080 - 00:40:09,920] that would be very,
+- [00:40:09,920 - 00:40:10,380] very hard.
+- [00:40:10,520 - 00:40:10,860] Right.
+- [00:40:11,600 - 00:40:13,860] You'd expect a patch over here with protons,
+- [00:40:14,060 - 00:40:15,800] a patch over there with anti-protons,
+- [00:40:16,299 - 00:40:18,380] and so you can ask,
+- [00:40:18,380 - 00:40:20,360] what is the experimental evidence
+- [00:40:20,360 - 00:40:24,280] that the neighboring or even very distant galaxies
+- [00:40:24,280 - 00:40:26,620] are not anti-galaxies?
+- [00:40:27,320 - 00:40:28,900] And as I understand it,
+- [00:40:30,760 - 00:40:32,320] there's very good evidence.
+- [00:40:33,280 - 00:40:36,820] The good evidence is if the population of galaxies
+- [00:40:36,820 - 00:40:41,140] was sort of symmetric between galaxies and anti-galaxies,
+- [00:40:41,300 - 00:40:43,300] then you would expect cosmic rays,
+- [00:40:43,600 - 00:40:45,560] especially very high energy cosmic rays,
+- [00:40:45,700 - 00:40:47,280] which are thought to be cosmic in origin,
+- [00:40:47,280 - 00:40:50,960] to have as many nuclei as anti-nuclei
+- [00:40:50,960 - 00:40:54,240] or as many anti-nuclei as nuclei.
+- [00:40:54,820 - 00:40:55,860] We do see,
+- [00:40:55,860 - 00:40:56,520] for example,
+- [00:40:56,520 - 00:40:59,740] helium nuclei in cosmic rays.
+- [00:41:00,760 - 00:41:01,400] Okay.
+- [00:41:01,720 - 00:41:03,020] As I understand it,
+- [00:41:03,020 - 00:41:04,660] nobody has ever seen
+- [00:41:04,660 - 00:41:07,580] an anti-nucleus in cosmic rays.
+- [00:41:07,860 - 00:41:09,380] You do see anti-protons,
+- [00:41:09,440 - 00:41:11,780] but that's fairly easy to explain.
+- [00:41:12,240 - 00:41:15,520] Even if we didn't have any cosmic rays
+- [00:41:15,520 - 00:41:17,140] or anti-particles coming in,
+- [00:41:17,280 - 00:41:20,040] when a high energy particle would hit the atmosphere,
+- [00:41:20,240 - 00:41:21,580] it would make anti-protons.
+- [00:41:21,720 - 00:41:26,100] But it's extremely difficult to make an anti-nucleus.
+- [00:41:26,120 - 00:41:28,040] That would take an incredible piece of luck
+- [00:41:28,040 - 00:41:30,640] of a very high energy collision with the atmosphere
+- [00:41:31,280 - 00:41:33,240] creating an anti-nucleus.
+- [00:41:33,260 - 00:41:33,860] Not likely.
+- [00:41:34,320 - 00:41:38,240] So the complete absence of anti-nuclei
+- [00:41:39,020 - 00:41:41,300] strongly suggests that the universe
+- [00:41:41,300 - 00:41:44,920] is not equally populated with galaxies and anti-galaxies.
+- [00:41:45,520 - 00:41:46,200] So,
+- [00:41:46,200 - 00:41:47,880] there's something to explain.
+- [00:41:48,220 - 00:41:49,780] It's not statistical,
+- [00:41:50,020 - 00:41:52,380] and we need to explain it.
+- [00:41:53,060 - 00:41:56,260] Do you see helium nuclei
+- [00:41:56,260 - 00:41:57,960] or do you just see any of these
+- [00:41:57,960 - 00:41:59,980] that look like they trace back to the...
+- [00:41:59,980 - 00:42:02,580] I believe you see helium nuclei
+- [00:42:02,580 - 00:42:04,340] in cosmic rays directly,
+- [00:42:04,340 - 00:42:04,620] yeah.
+- [00:42:05,240 - 00:42:05,840] Yeah.
+- [00:42:09,180 - 00:42:09,780] And,
+- [00:42:12,520 - 00:42:13,620] you know,
+- [00:42:13,620 - 00:42:15,180] detailed statistics of it,
+- [00:42:15,180 - 00:42:15,680] I don't know.
+- [00:42:15,680 - 00:42:16,860] It's not my field of physics,
+- [00:42:17,040 - 00:42:20,580] but that's where the argument lies,
+- [00:42:20,760 - 00:42:22,000] at least one of them.
+- [00:42:22,380 - 00:42:22,900] Okay.
+- [00:42:25,620 - 00:42:26,940] We also don't...
+- [00:42:26,940 - 00:42:28,040] There's another thing we don't see.
+- [00:42:28,140 - 00:42:30,660] If our galaxy,
+- [00:42:30,660 - 00:42:31,360] for example,
+- [00:42:31,360 - 00:42:33,060] was particles,
+- [00:42:34,160 - 00:42:37,320] and the Andromeda was anti-particles,
+- [00:42:39,320 - 00:42:41,600] then in the region in between,
+- [00:42:42,780 - 00:42:44,760] you would expect there to be
+- [00:42:44,760 - 00:42:46,440] both particles and...
+- [00:42:46,440 - 00:42:46,700] I mean,
+- [00:42:46,700 - 00:42:48,180] there's plenty of electrons around,
+- [00:42:48,340 - 00:42:48,700] for example,
+- [00:42:48,700 - 00:42:49,760] circulating around
+- [00:42:49,760 - 00:42:51,160] in the region between galaxies.
+- [00:42:52,660 - 00:42:54,460] You would expect there to also be
+- [00:42:54,460 - 00:42:55,520] plenty of positrons,
+- [00:42:55,640 - 00:42:57,780] and then you would expect there to be
+- [00:42:57,780 - 00:43:00,740] lots of positron-electron annihilations,
+- [00:43:01,440 - 00:43:05,320] and positron-electron annihilations
+- [00:43:05,320 - 00:43:07,120] are very easy to detect.
+- [00:43:07,460 - 00:43:09,200] They produce pairs of photons
+- [00:43:09,200 - 00:43:10,520] of very definite energy,
+- [00:43:10,720 - 00:43:13,920] and those pairs of photons could be observed,
+- [00:43:13,920 - 00:43:16,360] and it's not that we don't see
+- [00:43:16,920 - 00:43:18,740] electron-positron annihilation,
+- [00:43:18,860 - 00:43:20,580] but we don't see nearly enough of it
+- [00:43:20,580 - 00:43:22,060] to account for the possibility
+- [00:43:22,060 - 00:43:24,940] that neighboring galaxies would be anti-galaxies.
+- [00:43:25,640 - 00:43:28,920] So that's almost certainly ruled out
+- [00:43:28,920 - 00:43:31,060] that there are anti-galaxies out there,
+- [00:43:31,180 - 00:43:32,520] and certainly ruled out
+- [00:43:32,520 - 00:43:34,320] that there's an equal population of them.
+- [00:43:35,680 - 00:43:36,360] Okay.
+- [00:43:38,040 - 00:43:38,720] So,
+- [00:43:38,720 - 00:43:41,000] particle-anti-particle symmetry
+- [00:43:42,780 - 00:43:43,900] tends to...
+- [00:43:43,920 - 00:43:45,780] tends to suggest rather strongly
+- [00:43:46,830 - 00:43:50,780] that the universe was created symmetrically,
+- [00:43:50,920 - 00:43:52,280] although it doesn't prove it.
+- [00:43:55,099 - 00:43:55,879] So,
+- [00:43:55,879 - 00:44:00,960] the next element of the argument
+- [00:44:01,870 - 00:44:03,960] is that in order to account for the fact
+- [00:44:03,960 - 00:44:06,220] that there are more protons than anti-protons,
+- [00:44:06,460 - 00:44:10,460] this charge-conjugation symmetry must fail.
+- [00:44:10,920 - 00:44:13,900] The idea that particles and antiparticles
+- [00:44:13,920 - 00:44:16,940] are symmetric in the laws of physics.
+- [00:44:19,760 - 00:44:23,100] And that the charge-conjugation times parity,
+- [00:44:23,300 - 00:44:25,380] it's enough that it would be bad enough,
+- [00:44:25,580 - 00:44:28,120] charge-conjugation or charge-conjugation
+- [00:44:28,460 - 00:44:29,660] together with anything else,
+- [00:44:30,500 - 00:44:32,360] any symmetry that involved
+- [00:44:32,360 - 00:44:34,700] interchanging particles and antiparticles,
+- [00:44:34,980 - 00:44:36,720] if you had that symmetry,
+- [00:44:36,920 - 00:44:38,740] you would have a very hard time explaining.
+- [00:44:39,520 - 00:44:43,020] Another way to say it is if we allow...
+- [00:44:43,020 - 00:44:43,600] Yeah,
+- [00:44:43,600 - 00:44:45,560] if we allow baryon violation,
+- [00:44:47,180 - 00:44:48,300] that's not enough.
+- [00:44:48,520 - 00:44:50,720] That will just give you the statistical effect.
+- [00:44:51,040 - 00:44:53,280] You need something to push it in one direction.
+- [00:44:53,580 - 00:44:56,240] You need something to bias it toward
+- [00:44:57,160 - 00:44:59,300] particles rather than antiparticles.
+- [00:44:59,380 - 00:45:01,060] You need something in the laws of physics
+- [00:45:01,779 - 00:45:05,540] that will cause this baryon violation to be biased
+- [00:45:05,540 - 00:45:07,420] so that one kind of
+- [00:45:07,420 - 00:45:09,300] thing happens more than the other.
+- [00:45:10,680 - 00:45:12,460] The implications of that are
+- [00:45:13,020 - 00:45:16,480] that you need violations of particle-antiparticle symmetry.
+- [00:45:17,660 - 00:45:18,900] In particular,
+- [00:45:18,900 - 00:45:20,680] the so-called CP symmetry.
+- [00:45:21,060 - 00:45:23,620] But it's basically just particle-antiparticle symmetry.
+- [00:45:24,660 - 00:45:25,380] Again,
+- [00:45:25,380 - 00:45:29,420] is there particle-antiparticle asymmetry in the world?
+- [00:45:29,740 - 00:45:30,460] Yes,
+- [00:45:30,460 - 00:45:30,920] there is.
+- [00:45:31,300 - 00:45:33,580] We know with absolute certainty,
+- [00:45:33,580 - 00:45:34,780] experimentally,
+- [00:45:34,860 - 00:45:38,440] that particles and antiparticles don't behave the same way.
+- [00:45:40,720 - 00:45:43,120] A particular example...
+- [00:45:43,120 - 00:45:43,980] Rather,
+- [00:45:43,980 - 00:45:46,380] the examples are hard to come by,
+- [00:45:46,600 - 00:45:48,220] but once you have one,
+- [00:45:48,220 - 00:45:50,080] or two,
+- [00:45:50,080 - 00:45:50,540] or three,
+- [00:45:50,680 - 00:45:53,220] you know that the laws of physics are not symmetric
+- [00:45:53,220 - 00:45:54,980] between particles and antiparticles.
+- [00:45:55,180 - 00:45:59,000] The simplest example to explain is
+- [00:45:59,980 - 00:46:01,780] the so-called B meson.
+- [00:46:02,140 - 00:46:07,600] A B meson is a particular kind of particle
+- [00:46:07,600 - 00:46:09,380] made of a quark and an anti-quark.
+- [00:46:09,540 - 00:46:10,160] It's made of a...
+- [00:46:11,320 - 00:46:11,980] Let's see,
+- [00:46:11,980 - 00:46:13,080] it's made of a...
+- [00:46:14,300 - 00:46:16,380] of a bottom quark
+- [00:46:17,520 - 00:46:18,640] and a...
+- [00:46:20,740 - 00:46:22,500] an anti-down quark.
+- [00:46:22,660 - 00:46:25,220] A bottom quark and an anti-down quark.
+- [00:46:25,740 - 00:46:27,280] Bottom quark and an anti-b...
+- [00:46:27,960 - 00:46:29,200] form a meson.
+- [00:46:29,780 - 00:46:31,200] They form a meson.
+- [00:46:31,280 - 00:46:32,600] The meson is bound,
+- [00:46:32,600 - 00:46:34,480] and it's called the B particle.
+- [00:46:35,580 - 00:46:36,140] Now,
+- [00:46:36,140 - 00:46:37,180] it has an antiparticle.
+- [00:46:37,600 - 00:46:41,760] You just interchange the bottom quark
+- [00:46:41,760 - 00:46:43,360] for the anti-bottom quark
+- [00:46:43,360 - 00:46:44,820] and the down...
+- [00:46:44,820 - 00:46:47,320] and the anti-down quark for a down quark,
+- [00:46:47,440 - 00:46:49,740] and you get the anti-B meson.
+- [00:46:50,379 - 00:46:52,640] Both the B meson and the anti-B meson
+- [00:46:52,640 - 00:46:54,020] are electrically neutral,
+- [00:46:54,280 - 00:46:56,640] but they are not their own antiparticles.
+- [00:46:56,980 - 00:47:00,700] This one is made of B quark
+- [00:47:01,439 - 00:47:03,500] and anti-down quark.
+- [00:47:03,580 - 00:47:05,380] This one is made of anti-B quark,
+- [00:47:06,160 - 00:47:06,760] and...
+- [00:47:06,760 - 00:47:06,880] and...
+- [00:47:07,800 - 00:47:08,820] down quark,
+- [00:47:08,820 - 00:47:09,840] or whatever the opposite was.
+- [00:47:10,080 - 00:47:10,600] Right.
+- [00:47:10,720 - 00:47:11,940] These particles decay,
+- [00:47:12,240 - 00:47:14,260] and they decay...
+- [00:47:16,080 - 00:47:18,320] into pi mesons...
+- [00:47:19,920 - 00:47:20,640] Let's see,
+- [00:47:20,640 - 00:47:21,260] this one...
+- [00:47:21,260 - 00:47:22,300] here we forget.
+- [00:47:22,700 - 00:47:23,300] Takes...
+- [00:47:28,840 - 00:47:30,000] I'll just write it down.
+- [00:47:30,020 - 00:47:32,020] I'll just write down one possibility at the...
+- [00:47:40,580 - 00:47:41,160] Oh boy,
+- [00:47:41,160 - 00:47:42,860] I've forgotten what a B meson decays in.
+- [00:47:42,940 - 00:47:44,280] They decay into lots of things,
+- [00:47:45,040 - 00:47:45,440] but...
+- [00:47:46,939 - 00:47:47,740] a charged...
+- [00:47:48,220 - 00:47:48,620] Oh,
+- [00:47:48,620 - 00:47:48,980] I know!
+- [00:47:49,100 - 00:47:51,880] They decay into a k meson and a pi meson.
+- [00:47:54,020 - 00:47:56,240] And I think the B meson becomes...
+- [00:47:56,240 - 00:47:58,260] I think it's a k plus and a pi minus.
+- [00:48:00,000 - 00:48:01,000] This is not important.
+- [00:48:01,300 - 00:48:03,340] The fact is that there's a very definite decay
+- [00:48:03,920 - 00:48:06,220] into a k meson and a pi meson.
+- [00:48:06,220 - 00:48:07,900] The B meson is electrically neutral,
+- [00:48:08,220 - 00:48:10,540] so the decay products are electrically neutral.
+- [00:48:11,240 - 00:48:11,840] That...
+- [00:48:11,840 - 00:48:14,240] It follows that the anti-B meson
+- [00:48:14,240 - 00:48:17,080] can decay into the anti-particles,
+- [00:48:17,120 - 00:48:19,680] which is a negatively charged k meson
+- [00:48:20,180 - 00:48:22,000] and a positively charged pi-on.
+- [00:48:23,240 - 00:48:25,840] The only important thing is that it's a process
+- [00:48:25,840 - 00:48:28,740] in which a particle can decay into other particles
+- [00:48:28,740 - 00:48:31,680] versus a process in which the anti-particle
+- [00:48:31,680 - 00:48:33,740] can also decay into its anti-particles.
+- [00:48:34,340 - 00:48:34,940] Now,
+- [00:48:34,940 - 00:48:35,540] these are...
+- [00:48:35,540 - 00:48:38,560] The rates for these things to happen are measurable.
+- [00:48:39,700 - 00:48:40,880] They are measured,
+- [00:48:40,880 - 00:48:42,180] and they are different.
+- [00:48:42,960 - 00:48:43,960] They are different.
+- [00:48:44,200 - 00:48:44,720] One of these,
+- [00:48:44,720 - 00:48:45,820] I can't remember which one,
+- [00:48:45,920 - 00:48:49,360] is about two-thirds more important than the other.
+- [00:48:50,940 - 00:48:52,000] And so it's...
+- [00:48:52,000 - 00:48:53,000] In this case,
+- [00:48:53,000 - 00:48:55,920] it's a fairly gross violation
+- [00:48:56,459 - 00:48:58,800] of particle-anti-particle interchange.
+- [00:48:59,280 - 00:49:00,880] It's definitely a real effect.
+- [00:49:01,040 - 00:49:02,520] There are lots of indirect...
+- [00:49:05,660 - 00:49:07,940] measurements that have been known for a long time
+- [00:49:08,540 - 00:49:10,480] that particle-anti-particle symmetry
+- [00:49:10,480 - 00:49:12,020] is not a good symmetry,
+- [00:49:12,020 - 00:49:13,020] is not a symmetry.
+- [00:49:14,320 - 00:49:15,280] One is fair.
+- [00:49:15,380 - 00:49:15,460] Now,
+- [00:49:15,460 - 00:49:16,660] once this can happen,
+- [00:49:17,500 - 00:49:18,680] once this can happen,
+- [00:49:19,439 - 00:49:20,460] we can...
+- [00:49:21,940 - 00:49:24,560] Meaning to say that there are fundamental processes
+- [00:49:24,560 - 00:49:27,380] in nature buried deep inside Feynman diagrams
+- [00:49:27,380 - 00:49:30,340] somewheres that are imbalanced
+- [00:49:30,340 - 00:49:32,280] between particles and anti-particles.
+- [00:49:32,660 - 00:49:35,520] It's no longer the case that this decay
+- [00:49:35,540 - 00:49:38,020] and that decay have to have equal probability.
+- [00:49:39,440 - 00:49:40,980] There is a rule...
+- [00:49:40,980 - 00:49:44,240] There is a rule that the total decay rates,
+- [00:49:44,480 - 00:49:45,920] the total half-life
+- [00:49:46,580 - 00:49:49,140] of the proton and the anti-proton
+- [00:49:49,140 - 00:49:50,760] have to be exactly the same.
+- [00:49:51,500 - 00:49:52,260] That's a...
+- [00:49:52,260 - 00:49:53,300] that's a theorem
+- [00:49:53,300 - 00:49:55,120] for relativistic field theory.
+- [00:49:55,380 - 00:49:57,020] But the way that these two
+- [00:49:57,020 - 00:49:58,660] can be different from each other
+- [00:49:58,660 - 00:50:00,200] is there's more than one
+- [00:50:00,200 - 00:50:01,740] way that a proton can decay.
+- [00:50:01,920 - 00:50:03,380] A proton can also decay,
+- [00:50:03,380 - 00:50:04,340] for example,
+- [00:50:05,640 - 00:50:09,360] into a mu plus in a photon,
+- [00:50:10,200 - 00:50:13,420] and an anti-proton can decay
+- [00:50:13,420 - 00:50:15,940] into a mu minus in a photon.
+- [00:50:16,640 - 00:50:18,300] And what the theorem says
+- [00:50:18,300 - 00:50:21,600] is that if you calculate all of our possible ways
+- [00:50:21,600 - 00:50:22,860] that the proton can decay,
+- [00:50:23,540 - 00:50:25,480] and you consider the half-life
+- [00:50:25,480 - 00:50:26,780] or the total rate,
+- [00:50:26,840 - 00:50:30,060] the total rate of decay of the proton,
+- [00:50:30,240 - 00:50:32,500] it must be exactly the same
+- [00:50:32,500 - 00:50:35,300] as the total rate of decay of the anti-proton.
+- [00:50:35,540 - 00:50:37,260] But what it does not say
+- [00:50:37,260 - 00:50:39,640] is that the decay rate of the proton
+- [00:50:40,399 - 00:50:43,300] to electrons or to positrons and photons
+- [00:50:43,300 - 00:50:46,000] must be the same as...
+- [00:50:46,540 - 00:50:47,540] You know what I mean.
+- [00:50:47,740 - 00:50:50,360] It doesn't say that any particular decay
+- [00:50:51,160 - 00:50:53,720] has to have a symmetry.
+- [00:50:55,520 - 00:50:56,760] In particular,
+- [00:50:57,040 - 00:50:58,860] if at some fundamental level
+- [00:50:58,860 - 00:51:01,040] this charge-conjugation symmetry
+- [00:51:01,040 - 00:51:03,600] is violated by something in the theory,
+- [00:51:03,600 - 00:51:09,300] then it will allow this to not equal...
+- [00:51:09,300 - 00:51:10,800] Let's say this here...
+- [00:51:11,399 - 00:51:12,940] Not equal to...
+- [00:51:12,940 - 00:51:14,920] That's a special symbol I just invented.
+- [00:51:15,800 - 00:51:17,160] Not equal to...
+- [00:51:17,160 - 00:51:17,980] It allows that.
+- [00:51:18,140 - 00:51:19,160] And not only allows it,
+- [00:51:19,180 - 00:51:21,880] it basically insists that these two not be the same.
+- [00:51:22,020 - 00:51:23,340] Once that's true,
+- [00:51:23,600 - 00:51:25,180] it says there's a bias.
+- [00:51:25,400 - 00:51:27,060] Somewhere in the laws of physics,
+- [00:51:27,160 - 00:51:31,760] there is a bias toward either protons or anti-protons,
+- [00:51:31,780 - 00:51:33,580] or matter versus energy.
+- [00:51:33,600 - 00:51:34,140] Anti-matter.
+- [00:51:34,200 - 00:51:35,240] Some kind of bias.
+- [00:51:36,299 - 00:51:38,840] And that's something which is absolutely necessary
+- [00:51:39,379 - 00:51:41,860] to add to baryon number violation.
+- [00:51:42,140 - 00:51:43,860] To give it a directionality.
+- [00:51:44,020 - 00:51:46,390] To give it a push in
+- [00:51:46,390 - 00:51:48,760] one direction rather than the other.
+- [00:51:49,400 - 00:51:51,700] So Sakharov's second condition...
+- [00:51:52,780 - 00:51:53,420] Incidentally,
+- [00:51:53,420 - 00:51:55,140] I think Sakharov's paper was a...
+- [00:51:55,140 - 00:51:58,720] I've forgotten when CP violation was first discovered.
+- [00:51:59,260 - 00:52:02,940] But Sakharov's paper was very quickly after that.
+- [00:52:03,600 - 00:52:04,700] When the CP violation,
+- [00:52:04,980 - 00:52:07,820] the particle-anti-particle symmetry
+- [00:52:07,820 - 00:52:10,020] was discovered to not be correct,
+- [00:52:11,379 - 00:52:13,420] within a year or so,
+- [00:52:13,520 - 00:52:14,460] I don't remember exactly,
+- [00:52:15,080 - 00:52:17,760] Sakharov wrote down his basic conditions.
+- [00:52:17,940 - 00:52:19,120] So that's number two.
+- [00:52:20,840 - 00:52:22,700] C and CP,
+- [00:52:22,700 - 00:52:26,600] or particle-anti-particle asymmetry
+- [00:52:26,600 - 00:52:28,140] in the laws of physics.
+- [00:52:37,460 - 00:52:40,620] This is expected in any theory that we know.
+- [00:52:40,780 - 00:52:44,080] Any theory that we've studied for particle physics
+- [00:52:45,260 - 00:52:46,460] always has...
+- [00:52:46,460 - 00:52:48,640] Including just the standard model.
+- [00:52:48,920 - 00:52:49,240] In fact,
+- [00:52:49,240 - 00:52:50,060] I said something wrong.
+- [00:52:50,180 - 00:52:52,340] The standard model does allow baryon violation.
+- [00:52:52,700 - 00:52:53,000] In fact,
+- [00:52:53,000 - 00:52:54,120] it not only allows it,
+- [00:52:54,160 - 00:52:58,580] it insists on it at some level.
+- [00:52:59,060 - 00:53:01,820] So every theory that we know about,
+- [00:53:01,940 - 00:53:03,360] but as a theoretical statement,
+- [00:53:03,600 - 00:53:06,740] insists that baryon number violation happens.
+- [00:53:07,700 - 00:53:08,480] Experimentally,
+- [00:53:09,680 - 00:53:12,280] we know that CP is violated
+- [00:53:12,280 - 00:53:14,500] and particle inversion,
+- [00:53:14,900 - 00:53:17,040] particle-anti-particle symmetry.
+- [00:53:18,440 - 00:53:19,220] Now,
+- [00:53:19,220 - 00:53:21,520] there's one remaining...
+- [00:53:21,520 - 00:53:22,380] Yeah?
+- [00:53:22,600 - 00:53:26,760] So if the total decay rates are the same,
+- [00:53:27,600 - 00:53:30,700] then why don't we have equal numbers?
+- [00:53:31,200 - 00:53:32,100] Because the...
+- [00:53:35,260 - 00:53:38,300] Because the mu particle is heavier than the electron.
+- [00:53:38,700 - 00:53:42,140] So we could be in a situation where...
+- [00:53:48,880 - 00:53:50,640] We could be in a situation,
+- [00:53:50,640 - 00:53:51,180] for example,
+- [00:53:51,180 - 00:53:53,040] where it's hot enough...
+- [00:53:54,140 - 00:53:55,220] Hot enough to...
+- [00:53:55,940 - 00:53:57,820] What I need to explain to you
+- [00:53:58,620 - 00:54:01,500] is first why this can happen rapidly,
+- [00:54:01,500 - 00:54:04,280] even though I said that the proton is very stable.
+- [00:54:04,940 - 00:54:06,420] It has to do with the environment.
+- [00:54:08,400 - 00:54:09,980] Let me come back to it.
+- [00:54:10,120 - 00:54:10,800] It's a good question.
+- [00:54:11,120 - 00:54:11,580] All right.
+- [00:54:12,680 - 00:54:17,380] How do we overcome the fact
+- [00:54:17,380 - 00:54:19,920] that the proton is so incredibly stable?
+- [00:54:20,120 - 00:54:20,820] Remember what I said.
+- [00:54:20,900 - 00:54:23,980] The proton lifetime is something like
+- [00:54:23,980 - 00:54:25,160] about 10 to the 33,
+- [00:54:25,160 - 00:54:27,160] 10 to the 34 years or longer.
+- [00:54:27,840 - 00:54:29,580] The universe has only been around
+- [00:54:29,580 - 00:54:31,300] for 10 to the 10th years.
+- [00:54:32,300 - 00:54:34,060] So on that scale,
+- [00:54:34,320 - 00:54:36,100] the proton is very stable,
+- [00:54:36,280 - 00:54:37,740] and why don't we get
+- [00:54:37,740 - 00:54:39,200] to ignore this kind of thing?
+- [00:54:39,800 - 00:54:41,820] And the reason has to do with the fact
+- [00:54:41,820 - 00:54:44,000] that the universe in its very early stages
+- [00:54:44,000 - 00:54:44,740] was very,
+- [00:54:44,740 - 00:54:45,420] very hot.
+- [00:54:46,420 - 00:54:48,180] Because it was very hot,
+- [00:54:48,900 - 00:54:49,900] the protons,
+- [00:54:49,900 - 00:54:51,360] or the quarks in particular,
+- [00:54:51,520 - 00:54:52,860] we can substitute quarks here,
+- [00:54:52,860 - 00:54:53,460] it doesn't matter,
+- [00:54:53,600 - 00:54:55,460] because it was very hot,
+- [00:54:55,600 - 00:54:57,240] they were constantly engaged
+- [00:54:57,240 - 00:54:58,040] in very,
+- [00:54:58,040 - 00:54:59,280] very high energy collisions.
+- [00:55:00,460 - 00:55:01,480] The high energy collisions
+- [00:55:01,500 - 00:55:05,200] meant that the protons moving in this plasma,
+- [00:55:05,360 - 00:55:06,500] in this very hot gas,
+- [00:55:06,860 - 00:55:08,640] had lots of energy.
+- [00:55:09,420 - 00:55:10,640] How much energy?
+- [00:55:10,820 - 00:55:12,140] It depends on the temperature.
+- [00:55:13,320 - 00:55:14,840] But at some temperature,
+- [00:55:15,080 - 00:55:17,400] you get to a high enough point
+- [00:55:19,620 - 00:55:21,740] where the average kinetic energy,
+- [00:55:21,860 - 00:55:24,820] the average extra excitation on energy of the proton,
+- [00:55:25,100 - 00:55:26,480] is high enough
+- [00:55:26,480 - 00:55:29,600] so that even these heavy particles here
+- [00:55:29,600 - 00:55:31,260] do not suppress
+- [00:55:31,500 - 00:55:32,860] the proton decay,
+- [00:55:33,060 - 00:55:34,200] or the baryon violation.
+- [00:55:34,740 - 00:55:35,880] In other words,
+- [00:55:35,880 - 00:55:36,600] to put it short,
+- [00:55:37,360 - 00:55:40,280] a proton at rest,
+- [00:55:42,440 - 00:55:43,620] forget at rest,
+- [00:55:52,740 - 00:55:55,420] a proton in an environment
+- [00:55:56,500 - 00:55:59,340] where it isn't constantly being knocked around
+- [00:55:59,340 - 00:56:01,160] and having an enormously,
+- [00:56:01,500 - 00:56:02,880] largely large excess energy
+- [00:56:02,880 - 00:56:03,980] of some kind or another,
+- [00:56:04,140 - 00:56:05,660] is very stable.
+- [00:56:06,240 - 00:56:08,240] But when it's heated up to a high temperature,
+- [00:56:08,520 - 00:56:10,260] a high enough temperature,
+- [00:56:10,800 - 00:56:12,620] this excess mass here
+- [00:56:12,620 - 00:56:14,660] is not an important factor,
+- [00:56:14,780 - 00:56:16,760] and the proton decay would happen quickly.
+- [00:56:18,160 - 00:56:20,960] So if we go back to the very early universe,
+- [00:56:21,060 - 00:56:22,720] when the temperature was very hot,
+- [00:56:25,640 - 00:56:30,620] then these kind of processes can happen.
+- [00:56:30,620 - 00:56:31,180] Now,
+- [00:56:31,180 - 00:56:34,880] this statement that the total decay rate
+- [00:56:35,620 - 00:56:38,820] is the same for protons and antiprotons
+- [00:56:38,820 - 00:56:41,180] is a statement about zero temperature.
+- [00:56:41,500 - 00:56:45,040] It's a statement about a proton at rest
+- [00:56:45,040 - 00:56:47,680] in an environment where it has no excess energy.
+- [00:56:48,280 - 00:56:49,900] When it's being kicked around,
+- [00:56:50,200 - 00:56:52,420] and when it has extra energy,
+- [00:56:52,700 - 00:56:55,900] then that is not necessarily the case.
+- [00:56:56,200 - 00:56:57,040] In fact,
+- [00:56:57,040 - 00:56:58,140] it's generally not the case.
+- [00:56:58,360 - 00:57:00,600] In an environment which has some energy,
+- [00:57:00,620 - 00:57:02,740] which is kicking the protons around,
+- [00:57:03,000 - 00:57:05,620] the decay rates don't have to be the same.
+- [00:57:06,040 - 00:57:06,460] So...
+- [00:57:12,280 - 00:57:14,220] So that is not a problem.
+- [00:57:14,600 - 00:57:17,760] The problem has to do with the CPT symmetry.
+- [00:57:19,660 - 00:57:23,420] I said that there was no particle inversion symmetry,
+- [00:57:23,640 - 00:57:25,260] but there is a symmetry,
+- [00:57:26,540 - 00:57:29,420] at least in all known quantum field theories,
+- [00:57:31,500 - 00:57:32,700] string theories,
+- [00:57:32,700 - 00:57:34,280] any theory we know how to write down,
+- [00:57:34,480 - 00:57:38,060] which has relativity and quantum mechanics built into it.
+- [00:57:38,500 - 00:57:42,440] Charge conjugation times reflection times time reversal.
+- [00:57:42,920 - 00:57:43,520] Again,
+- [00:57:43,520 - 00:57:46,640] what that means is you exchange every particle
+- [00:57:46,640 - 00:57:47,620] for its antiparticle,
+- [00:57:47,620 - 00:57:49,020] you reflect in a mirror,
+- [00:57:49,140 - 00:57:50,720] and you run the film backward.
+- [00:57:51,640 - 00:57:54,820] That is a symmetry of all theories.
+- [00:57:55,520 - 00:57:56,260] All right.
+- [00:57:56,700 - 00:57:57,300] So...
+- [00:57:58,620 - 00:57:59,400] What is the answer to this?
+- [00:57:59,400 - 00:57:59,740] What does that mean?
+- [00:57:59,860 - 00:58:00,460] That means,
+- [00:58:00,460 - 00:58:01,640] among other things,
+- [00:58:02,400 - 00:58:04,920] that in thermal equilibrium,
+- [00:58:05,640 - 00:58:08,200] if the universe was just static,
+- [00:58:08,440 - 00:58:09,720] if it wasn't changing,
+- [00:58:09,720 - 00:58:10,640] but it was hot,
+- [00:58:11,339 - 00:58:12,620] in thermal equilibrium,
+- [00:58:13,520 - 00:58:15,180] in thermal equilibrium,
+- [00:58:16,340 - 00:58:18,980] forward time is the same as backward time.
+- [00:58:19,160 - 00:58:20,160] In thermal equilibrium,
+- [00:58:21,340 - 00:58:24,700] backward and forward and time are the same thing.
+- [00:58:25,000 - 00:58:28,420] There is no asymmetry of time reversal.
+- [00:58:29,400 - 00:58:30,880] So in thermal equilibrium,
+- [00:58:31,080 - 00:58:32,680] where the universe is not changing,
+- [00:58:32,880 - 00:58:34,140] an imaginary universe,
+- [00:58:34,140 - 00:58:35,260] which is just a pot,
+- [00:58:35,340 - 00:58:36,020] which is there,
+- [00:58:36,020 - 00:58:36,480] hot,
+- [00:58:36,480 - 00:58:37,920] a hot pot,
+- [00:58:39,580 - 00:58:42,060] it would have time reversal symmetry.
+- [00:58:42,620 - 00:58:44,720] If it has time reversal symmetry,
+- [00:58:44,980 - 00:58:48,260] and it has C times P times T,
+- [00:58:49,120 - 00:58:52,800] then it must have C-P symmetry.
+- [00:58:53,980 - 00:58:54,760] All right.
+- [00:58:55,140 - 00:58:58,100] C-P just means particle change to antiparticle
+- [00:58:58,100 - 00:58:58,880] for our purposes.
+- [00:58:58,880 - 00:59:01,340] If particle goes to antiparticle
+- [00:59:01,340 - 00:59:02,520] and time goes to...
+- [00:59:02,520 - 00:59:04,300] I was going to say anti-time,
+- [00:59:04,400 - 00:59:05,880] and time goes to minus time,
+- [00:59:06,000 - 00:59:06,880] if that's a good symmetry,
+- [00:59:07,140 - 00:59:09,180] but the world has no
+- [00:59:09,180 - 00:59:11,220] bias toward one time or another,
+- [00:59:11,600 - 00:59:13,760] then you're stuck again.
+- [00:59:13,920 - 00:59:19,300] You're back to having a particle-antiparticle symmetry,
+- [00:59:19,540 - 00:59:25,560] and you cannot have a proton-antiproton excess
+- [00:59:25,560 - 00:59:27,540] in thermal equilibrium.
+- [00:59:27,540 - 00:59:28,340] That's a theorem.
+- [00:59:28,800 - 00:59:31,380] That's a theorem that's been known for a long time,
+- [00:59:31,560 - 00:59:34,180] that in thermal equilibrium,
+- [00:59:35,160 - 00:59:38,480] that the thermal equilibrium will come to a configuration
+- [00:59:38,480 - 00:59:39,980] with equal numbers of protons.
+- [00:59:40,120 - 00:59:42,080] But the universe was not in thermal equilibrium
+- [00:59:42,080 - 00:59:42,960] at early times.
+- [00:59:43,060 - 00:59:43,860] It was expanding,
+- [00:59:44,460 - 00:59:47,940] and it was expanding fast at early times.
+- [00:59:48,180 - 00:59:50,360] It was expanding fast enough
+- [00:59:51,140 - 00:59:53,680] that it could not be considered an equilibrium.
+- [00:59:54,620 - 00:59:56,180] If it's not an equilibrium,
+- [00:59:56,180 - 00:59:58,300] that means that forward time
+- [00:59:58,300 - 01:00:00,420] and backward time are different.
+- [01:00:00,660 - 01:00:01,760] That's the reason.
+- [01:00:01,940 - 01:00:02,940] If the universe is expanding,
+- [01:00:03,080 - 01:00:07,000] forward time and backward time are not the same.
+- [01:00:07,320 - 01:00:12,220] So in a rapidly expanding phase of the universe,
+- [01:00:12,540 - 01:00:15,160] we don't have to worry about time symmetry.
+- [01:00:15,400 - 01:00:17,020] It is definitely not symmetric.
+- [01:00:18,020 - 01:00:19,900] If time symmetry is broken
+- [01:00:19,900 - 01:00:22,140] just by the expansion of the universe,
+- [01:00:22,420 - 01:00:23,520] then we're in business.
+- [01:00:23,920 - 01:00:25,680] Then we have...
+- [01:00:26,180 - 01:00:29,480] enough asymmetry of all possible kinds
+- [01:00:30,180 - 01:00:35,140] that the baryon violation allows a change
+- [01:00:35,140 - 01:00:36,940] in the baryon number.
+- [01:00:37,120 - 01:00:41,680] The CP violation allows a directionality for it,
+- [01:00:41,740 - 01:00:43,540] and the...
+- [01:00:48,060 - 01:00:49,360] out of equilibrium.
+- [01:00:49,760 - 01:00:51,020] Out of equilibrium.
+- [01:00:53,080 - 01:00:54,120] Yeah.
+- [01:00:56,180 - 01:00:57,860] This means things are changing rapidly
+- [01:00:58,980 - 01:01:00,800] in a particular direction of time.
+- [01:01:01,300 - 01:01:04,600] It means the universe is expanding fast enough...
+- [01:01:05,000 - 01:01:05,820] That's all it means.
+- [01:01:06,340 - 01:01:09,020] So that running the thing backwards
+- [01:01:09,020 - 01:01:11,240] does not look like the original thing.
+- [01:01:11,780 - 01:01:13,720] In a world where the
+- [01:01:13,720 - 01:01:15,660] universe is running in one way,
+- [01:01:15,740 - 01:01:16,900] namely expanding,
+- [01:01:18,580 - 01:01:20,460] it is out of equilibrium.
+- [01:01:22,420 - 01:01:23,760] Being out of equ...
+- [01:01:23,760 - 01:01:25,980] It has to be enough out of equilibrium.
+- [01:01:26,320 - 01:01:28,100] It's not enough for it to be very,
+- [01:01:28,100 - 01:01:29,560] very slowly expanding.
+- [01:01:29,860 - 01:01:32,600] It has to be expanding rapidly enough
+- [01:01:32,600 - 01:01:35,040] that these microscopic processes
+- [01:01:35,040 - 01:01:37,600] don't have a time to adjust themselves
+- [01:01:38,660 - 01:01:41,140] to the equilibrium configuration.
+- [01:01:41,700 - 01:01:43,620] But whatever it means,
+- [01:01:43,700 - 01:01:47,340] it means that backward and forward times are different.
+- [01:01:47,880 - 01:01:50,660] That a picture of the universe...
+- [01:01:50,660 - 01:01:52,800] that a movie of the universe
+- [01:01:53,760 - 01:01:56,780] allows you to tell which way is forward in time
+- [01:01:56,780 - 01:01:58,420] and which way is backward in time.
+- [01:01:58,620 - 01:02:00,440] Just by the expansion.
+- [01:02:01,500 - 01:02:02,980] And the fact that it's cooling.
+- [01:02:03,140 - 01:02:06,040] The fact that early times it suddenly cooled...
+- [01:02:07,140 - 01:02:11,020] It suddenly cooled rather rapidly in the beginning.
+- [01:02:11,380 - 01:02:14,480] That's enough to completely ruin
+- [01:02:14,480 - 01:02:16,600] the time reversal symmetry.
+- [01:02:17,720 - 01:02:20,480] And if the time reversal symmetry is ruined,
+- [01:02:20,740 - 01:02:23,480] the CP symmetry is also going to be ruined.
+- [01:02:26,140 - 01:02:26,700] So,
+- [01:02:26,700 - 01:02:29,580] those were the three conditions of Sakharov.
+- [01:02:30,120 - 01:02:31,950] All three are believed to be
+- [01:02:31,950 - 01:02:33,780] really satisfied in the real world.
+- [01:02:34,660 - 01:02:36,960] And it's also believed that they are enough
+- [01:02:37,480 - 01:02:39,540] that if all three of these are true,
+- [01:02:39,800 - 01:02:41,560] that there's really just no way
+- [01:02:41,560 - 01:02:43,400] it would be a complete accident
+- [01:02:43,400 - 01:02:45,700] with no rationale to it
+- [01:02:45,700 - 01:02:47,540] if there wasn't some...
+- [01:02:48,640 - 01:02:50,540] some excess created.
+- [01:02:52,840 - 01:02:53,460] The problem is that
+- [01:02:53,460 - 01:02:58,160] nobody knows enough about the physics of the early universe
+- [01:02:58,160 - 01:03:00,840] and the physics of very high energy collisions,
+- [01:03:01,240 - 01:03:02,760] the physics of very,
+- [01:03:02,760 - 01:03:03,720] very hot temperature,
+- [01:03:04,040 - 01:03:06,800] the nature of the particles that are in here,
+- [01:03:07,040 - 01:03:09,480] the details of what drives
+- [01:03:09,480 - 01:03:11,920] the CP violation and so forth.
+- [01:03:12,280 - 01:03:14,320] Nobody knows enough about it
+- [01:03:14,320 - 01:03:16,440] to be able to make a calculation
+- [01:03:16,440 - 01:03:19,400] of what the imbalance is
+- [01:03:19,400 - 01:03:22,120] of protons to antiprotons.
+- [01:03:22,220 - 01:03:23,440] That simply we don't know.
+- [01:03:23,440 - 01:03:23,800] We don't know enough.
+- [01:03:23,940 - 01:03:25,100] So what we know
+- [01:03:25,100 - 01:03:28,520] is all three ingredients that are both necessary
+- [01:03:28,520 - 01:03:29,640] and probably sufficient
+- [01:03:29,640 - 01:03:32,180] to explain an imbalance,
+- [01:03:32,600 - 01:03:33,460] those are there,
+- [01:03:33,660 - 01:03:36,680] but the ingredients needed to make a computation
+- [01:03:37,360 - 01:03:38,280] to show
+- [01:03:39,760 - 01:03:41,020] that this number
+- [01:03:41,020 - 01:03:43,560] is 10 to the minus eighth
+- [01:03:45,020 - 01:03:47,420] times NQ plus NQ bar.
+- [01:03:47,720 - 01:03:48,080] Oops.
+- [01:03:49,460 - 01:03:50,580] That's out of range.
+- [01:03:50,880 - 01:03:52,040] We don't know how to do that.
+- [01:03:52,040 - 01:03:55,300] That's the status of this particular problem.
+- [01:03:55,740 - 01:03:56,640] As I said,
+- [01:03:56,640 - 01:03:57,660] it's called baryogenesis.
+- [01:04:01,500 - 01:04:04,840] And it will await
+- [01:04:04,840 - 01:04:08,920] a much more detailed theory
+- [01:04:08,920 - 01:04:10,980] of both early cosmology
+- [01:04:10,980 - 01:04:15,420] and particle physics at very high energy.
+- [01:04:15,640 - 01:04:16,700] Any questions about that?
+- [01:04:17,140 - 01:04:19,260] We are now finished with baryogenesis.
+- [01:04:20,160 - 01:04:21,980] But the fact that we know
+- [01:04:21,980 - 01:04:23,540] that we have a measurement
+- [01:04:23,540 - 01:04:25,100] of 10 to the minus eighth,
+- [01:04:25,900 - 01:04:27,720] I imagine that puts some constraints
+- [01:04:27,720 - 01:04:29,160] on what these theories could look like.
+- [01:04:29,280 - 01:04:29,580] It does.
+- [01:04:29,960 - 01:04:30,600] It does.
+- [01:04:31,020 - 01:04:31,680] It does.
+- [01:04:32,980 - 01:04:33,780] Another question.
+- [01:04:34,900 - 01:04:35,780] It does,
+- [01:04:35,780 - 01:04:36,900] but they're hard to use.
+- [01:04:37,900 - 01:04:38,580] You're right,
+- [01:04:38,580 - 01:04:40,720] but to my knowledge,
+- [01:04:40,760 - 01:04:42,600] nobody's used it in a really effective way
+- [01:04:42,600 - 01:04:43,660] to constrain things.
+- [01:04:43,920 - 01:04:44,940] Just too many variables,
+- [01:04:44,940 - 01:04:45,920] too many things to...
+- [01:04:45,920 - 01:04:47,520] To map out a neat-looking subspace.
+- [01:04:47,720 - 01:04:48,020] Yeah,
+- [01:04:48,020 - 01:04:49,360] right.
+- [01:04:49,840 - 01:04:51,160] Of hundreds of parameters,
+- [01:04:51,160 - 01:04:52,580] we just don't know enough.
+- [01:04:52,720 - 01:04:52,920] Yeah.
+- [01:04:53,440 - 01:04:54,120] Now,
+- [01:04:54,120 - 01:04:55,100] the connection between that
+- [01:04:55,100 - 01:04:59,320] and the positron-electron numbers
+- [01:04:59,320 - 01:05:00,860] that you've got previously,
+- [01:05:01,200 - 01:05:03,220] is that this asymmetry here
+- [01:05:03,220 - 01:05:04,560] which allows that to be connected?
+- [01:05:05,040 - 01:05:07,380] I don't understand how the matterness
+- [01:05:07,380 - 01:05:09,960] of the forks and the matterness
+- [01:05:09,960 - 01:05:11,760] of the electrons are connected.
+- [01:05:12,400 - 01:05:15,160] Every time a proton disappears,
+- [01:05:17,700 - 01:05:19,360] a positron appears.
+- [01:05:19,880 - 01:05:21,060] That's an anti-matter.
+- [01:05:21,160 - 01:05:21,420] That's an anti-matter particle.
+- [01:05:21,580 - 01:05:22,600] That's an anti-matter particle.
+- [01:05:22,840 - 01:05:24,440] So the loss of baryon number
+- [01:05:24,440 - 01:05:28,320] must be made up for by an increase in...
+- [01:05:29,100 - 01:05:29,700] Right.
+- [01:05:30,060 - 01:05:31,600] Or the increase...
+- [01:05:31,600 - 01:05:35,460] Anything that increases p will decrease...
+- [01:05:36,820 - 01:05:38,980] So as long as all of the processes
+- [01:05:39,960 - 01:05:41,360] that you're thinking about
+- [01:05:42,000 - 01:05:46,180] conserve electric charge,
+- [01:05:46,320 - 01:05:50,000] there's no alternative to the statement that,
+- [01:05:50,000 - 01:05:53,220] if the baryon number shifts one way,
+- [01:05:53,400 - 01:05:56,540] the electron excess must shift the other way.
+- [01:05:58,020 - 01:05:58,460] Right.
+- [01:05:58,680 - 01:05:59,020] Right.
+- [01:05:59,900 - 01:06:00,340] Question?
+- [01:06:00,640 - 01:06:00,820] Yeah.
+- [01:06:01,780 - 01:06:04,480] I've heard claims that in the standard model,
+- [01:06:04,660 - 01:06:06,740] the CP violation that we see in the standard model
+- [01:06:06,740 - 01:06:09,840] is not big enough to explain the baryon excess.
+- [01:06:10,420 - 01:06:11,720] I have heard claims like that,
+- [01:06:11,720 - 01:06:11,960] too.
+- [01:06:12,340 - 01:06:12,780] Oh,
+- [01:06:12,780 - 01:06:13,820] you don't believe them?
+- [01:06:13,960 - 01:06:14,320] No,
+- [01:06:14,320 - 01:06:14,480] no,
+- [01:06:14,480 - 01:06:15,420] I do believe them.
+- [01:06:15,500 - 01:06:16,680] I have no reason not to believe them.
+- [01:06:22,380 - 01:06:24,620] I just am a little bit skeptical
+- [01:06:24,620 - 01:06:27,080] that anybody really knows how to do the calculation.
+- [01:06:29,800 - 01:06:31,420] I thought that was one of the big reasons
+- [01:06:31,420 - 01:06:33,180] why we needed a beyond-the-standards model.
+- [01:06:35,560 - 01:06:37,120] I'm a little bit skeptical.
+- [01:06:37,320 - 01:06:37,520] You know,
+- [01:06:37,520 - 01:06:39,260] my involvement in this
+- [01:06:40,560 - 01:06:43,160] ended with stating these three conditions,
+- [01:06:43,260 - 01:06:44,900] and then thousands of people,
+- [01:06:44,960 - 01:06:45,540] not thousands,
+- [01:06:45,540 - 01:06:46,600] maybe tens of people,
+- [01:06:46,680 - 01:06:48,900] started to try to make computations
+- [01:06:48,900 - 01:06:51,660] based on standard models.
+- [01:06:52,540 - 01:06:54,320] Stephen Wolfram was one of them,
+- [01:06:54,380 - 01:06:56,800] and he invented Mathematica,
+- [01:06:56,800 - 01:06:57,140] I think,
+- [01:06:57,160 - 01:06:58,120] to do the calculations.
+- [01:06:58,380 - 01:06:58,500] Well,
+- [01:06:58,500 - 01:07:00,060] you know,
+- [01:07:00,060 - 01:07:02,200] I looked at it and I said,
+- [01:07:02,240 - 01:07:02,340] look,
+- [01:07:02,340 - 01:07:03,680] there's no way that they're going
+- [01:07:03,680 - 01:07:05,020] to be able to do this
+- [01:07:05,020 - 01:07:07,140] because there are just too many unknowns
+- [01:07:07,140 - 01:07:09,020] about the early universe and so forth.
+- [01:07:09,380 - 01:07:12,800] So it may be correct,
+- [01:07:12,800 - 01:07:13,660] and I don't know.
+- [01:07:13,720 - 01:07:16,320] I haven't followed this story for a long time.
+- [01:07:16,780 - 01:07:18,800] It may be that...
+- [01:07:18,900 - 01:07:22,580] that we know that CP violation
+- [01:07:22,580 - 01:07:28,420] in the standard model is too weak to drive...
+- [01:07:30,000 - 01:07:32,520] But once you admit CP violation
+- [01:07:33,160 - 01:07:35,080] into the physics altogether,
+- [01:07:35,840 - 01:07:38,840] there's no reason to expect that at high energy
+- [01:07:38,840 - 01:07:39,920] it might not be,
+- [01:07:39,920 - 01:07:41,000] you know,
+- [01:07:41,020 - 01:07:42,960] tens and hundreds of times larger.
+- [01:07:43,420 - 01:07:45,480] Once you've opened the door to it
+- [01:07:45,480 - 01:07:46,840] so that it's no longer a principle,
+- [01:07:46,840 - 01:07:50,760] then you don't have really much control.
+- [01:07:51,300 - 01:07:52,460] From these two,
+- [01:07:52,460 - 01:07:53,960] if you had equal numbers
+- [01:07:53,960 - 01:07:57,120] of protons and antiprotons in the initial universe,
+- [01:07:57,420 - 01:07:59,800] all the electrons that we see today in our universe
+- [01:07:59,800 - 01:08:01,000] came from the antiprotons.
+- [01:08:02,980 - 01:08:03,460] Well,
+- [01:08:03,460 - 01:08:04,660] I'm not sure that's right.
+- [01:08:06,920 - 01:08:08,100] I'm not sure that's right.
+- [01:08:08,260 - 01:08:09,620] There could have been a population
+- [01:08:09,620 - 01:08:13,720] in the very beginning which was balanced between...
+- [01:08:13,720 - 01:08:14,380] Oh,
+- [01:08:14,380 - 01:08:15,180] I see what you're saying.
+- [01:08:15,180 - 01:08:15,640] Well,
+- [01:08:15,640 - 01:08:16,880] in that sense,
+- [01:08:16,880 - 01:08:17,300] yes.
+- [01:08:17,740 - 01:08:18,920] I'm not sure...
+- [01:08:20,639 - 01:08:23,000] You could have done the whole analysis
+- [01:08:23,000 - 01:08:25,020] in the opposite way by thinking about
+- [01:08:25,020 - 01:08:28,660] the electrons instead of the protons and...
+- [01:08:29,839 - 01:08:31,380] Leptogenesis or baryogenesis,
+- [01:08:31,420 - 01:08:32,260] and then they balance out.
+- [01:08:32,540 - 01:08:32,800] Right,
+- [01:08:32,800 - 01:08:33,660] exactly.
+- [01:08:34,979 - 01:08:36,040] The word...
+- [01:08:36,040 - 01:08:40,740] The lingo baryogenesis is a sort of historical relic.
+- [01:08:42,299 - 01:08:42,859] But,
+- [01:08:42,859 - 01:08:43,520] yeah.
+- [01:08:43,520 - 01:08:44,080] Yeah.
+- [01:08:45,020 - 01:08:46,580] Because we observe...
+- [01:08:47,160 - 01:08:48,060] Deep in deep space,
+- [01:08:48,060 - 01:08:49,660] we observe atomic spectra.
+- [01:08:51,399 - 01:08:51,939] Wait a minute.
+- [01:08:51,939 - 01:08:52,120] Wait,
+- [01:08:52,120 - 01:08:52,300] wait,
+- [01:08:52,300 - 01:08:52,479] wait.
+- [01:08:52,819 - 01:08:53,180] Well,
+- [01:08:53,180 - 01:08:54,319] so those are baryons.
+- [01:08:54,740 - 01:08:55,939] We're counting baryons.
+- [01:08:56,180 - 01:08:57,359] That's why...
+- [01:09:02,260 - 01:09:04,869] It has to do with
+- [01:09:04,869 - 01:09:07,479] the fact that we don't know
+- [01:09:07,479 - 01:09:09,009] how many neutrinos are out there
+- [01:09:09,009 - 01:09:10,540] that people focused on the baryons,
+- [01:09:10,560 - 01:09:12,660] but don't worry about it.
+- [01:09:12,779 - 01:09:13,840] Have we had...
+- [01:09:13,840 - 01:09:16,319] Was the 10 to the minus 8 is today's number
+- [01:09:16,319 - 01:09:17,319] and has always been the number?
+- [01:09:17,960 - 01:09:19,380] Because what I'm getting at is...
+- [01:09:19,380 - 01:09:21,420] The 10 to the minus 8 is today's number
+- [01:09:21,420 - 01:09:27,460] for the ratio of baryon number of protons to photons.
+- [01:09:29,240 - 01:09:29,720] Right.
+- [01:09:30,040 - 01:09:31,380] But has there been a period
+- [01:09:31,380 - 01:09:32,720] where there was a lot of annihilation
+- [01:09:32,720 - 01:09:34,359] of protons and antiprotons?
+- [01:09:34,640 - 01:09:35,550] There was a period when
+- [01:09:35,550 - 01:09:36,460] there was a lot of annihilation
+- [01:09:36,460 - 01:09:38,640] between protons and antiprotons.
+- [01:09:38,720 - 01:09:42,640] It basically removed almost all the protons and antiprotons
+- [01:09:42,660 - 01:09:46,029] but that was the point at
+- [01:09:46,029 - 01:09:49,399] which the temperature fell low enough
+- [01:09:50,460 - 01:09:56,440] that processes that would create protons and antiprotons...
+- [01:09:56,440 - 01:09:58,620] At very high temperatures,
+- [01:09:58,620 - 01:10:00,520] there's very high energy photons.
+- [01:10:02,300 - 01:10:06,700] Two photons come together and they create,
+- [01:10:06,760 - 01:10:07,780] in one way or another,
+- [01:10:07,780 - 01:10:10,280] a proton and an antiproton.
+- [01:10:11,080 - 01:10:12,640] Those photons...
+- [01:10:12,640 - 01:10:13,960] have to have enough energy
+- [01:10:13,960 - 01:10:15,280] to create a pair of protons.
+- [01:10:15,500 - 01:10:16,940] That means they have to be
+- [01:10:16,940 - 01:10:18,380] at least 2 GeV worth of energy.
+- [01:10:19,260 - 01:10:21,440] As long as the temperature is high enough,
+- [01:10:21,680 - 01:10:23,460] these things are going on
+- [01:10:23,460 - 01:10:25,240] backward and forward in equilibrium.
+- [01:10:26,660 - 01:10:30,540] As long as there are enough high energy photons around
+- [01:10:30,540 - 01:10:34,380] to be able to cause the proton-antiprotons to appear,
+- [01:10:34,620 - 01:10:36,280] and it goes the other way.
+- [01:10:36,520 - 01:10:39,130] But then when the temperature
+- [01:10:39,130 - 01:10:41,740] falls below a certain threshold,
+- [01:10:42,640 - 01:10:45,520] there simply aren't enough high energy photons around
+- [01:10:45,520 - 01:10:47,820] to create protons and antiprotons.
+- [01:10:47,940 - 01:10:50,880] But protons and antiprotons can create photons.
+- [01:10:51,280 - 01:10:52,360] Photons are massless.
+- [01:10:52,980 - 01:10:55,260] Protons and antiprotons have lots of energy.
+- [01:10:55,660 - 01:10:56,800] It can go this way,
+- [01:10:56,800 - 01:10:58,920] but it has a hard time going this way.
+- [01:10:59,220 - 01:11:01,780] So once the temperature falls below that threshold,
+- [01:11:02,220 - 01:11:05,620] the protons start annihilating each other,
+- [01:11:05,740 - 01:11:08,640] but there's not enough energy to...
+- [01:11:09,540 - 01:11:10,340] Of course,
+- [01:11:10,340 - 01:11:12,020] when a proton and an antiproton...
+- [01:11:12,759 - 01:11:14,600] collide and make photons,
+- [01:11:14,920 - 01:11:16,460] those photons have a lot of energy.
+- [01:11:16,880 - 01:11:18,920] But then they just go out into the soup
+- [01:11:18,920 - 01:11:21,420] and their energy gets lowered by coming to equilibrium
+- [01:11:21,420 - 01:11:23,700] with the lower temperature background stuff.
+- [01:11:24,680 - 01:11:26,920] So as the temperature goes down,
+- [01:11:27,580 - 01:11:30,760] the number of available high energy photons decreases,
+- [01:11:31,000 - 01:11:33,780] and you can't make the proton-antiproton,
+- [01:11:33,840 - 01:11:35,160] but you can go the other way.
+- [01:11:35,780 - 01:11:37,060] So at that point,
+- [01:11:37,060 - 01:11:38,600] that's when the annihilation starts,
+- [01:11:39,639 - 01:11:42,620] and eventually all the proton-antiprotons
+- [01:11:42,620 - 01:11:44,580] get eaten up.
+- [01:11:45,460 - 01:11:47,460] When did this process stop?
+- [01:11:49,740 - 01:11:52,480] When there were no antiprotons.
+- [01:11:52,640 - 01:11:54,960] And that was approximately...
+- [01:11:54,960 - 01:11:55,340] Oh,
+- [01:11:55,340 - 01:11:56,200] that was pretty early.
+- [01:11:56,540 - 01:11:57,020] Yeah,
+- [01:11:57,020 - 01:11:58,320] that was quite early.
+- [01:11:58,680 - 01:12:00,540] That was before nucleosynthesis,
+- [01:12:01,780 - 01:12:04,160] temperatures in the G or GEV range.
+- [01:12:04,260 - 01:12:05,520] I'm not sure exactly when it stopped.
+- [01:12:05,900 - 01:12:07,940] Before that 300,000-year thing when it...
+- [01:12:07,940 - 01:12:08,320] Oh,
+- [01:12:08,320 - 01:12:08,420] yeah,
+- [01:12:08,420 - 01:12:08,600] yeah,
+- [01:12:08,600 - 01:12:10,120] before the first three minutes for sure.
+- [01:12:10,900 - 01:12:12,100] Some seconds maybe.
+- [01:12:12,100 - 01:12:12,640] I'm not sure.
+- [01:12:14,840 - 01:12:16,880] In an earlier lecture,
+- [01:12:17,140 - 01:12:21,720] we were counting up the energy
+- [01:12:21,720 - 01:12:24,520] and there were four different types.
+- [01:12:24,700 - 01:12:26,200] There was photons and there was matter
+- [01:12:26,200 - 01:12:27,880] and dark matter.
+- [01:12:29,599 - 01:12:31,780] The contribution from photons,
+- [01:12:32,080 - 01:12:33,000] if I remember correctly,
+- [01:12:33,000 - 01:12:33,840] was negligible.
+- [01:12:34,200 - 01:12:34,820] Today?
+- [01:12:35,140 - 01:12:35,680] Yes.
+- [01:12:35,900 - 01:12:36,240] Today?
+- [01:12:36,600 - 01:12:37,280] Right.
+- [01:12:37,400 - 01:12:40,220] So after all of this annihilation went on
+- [01:12:40,220 - 01:12:42,080] and this earlier thing,
+- [01:12:42,100 - 01:12:43,820] all of the matter was turned into photons,
+- [01:12:44,220 - 01:12:45,840] where did all those photons go
+- [01:12:45,840 - 01:12:47,040] if they're no longer around now?
+- [01:12:47,140 - 01:12:47,800] They're all around.
+- [01:12:48,840 - 01:12:49,120] Okay.
+- [01:12:50,020 - 01:12:50,840] They're in the microwave,
+- [01:12:51,100 - 01:12:52,320] the cosmic microwave background.
+- [01:12:52,640 - 01:12:54,420] There's 10 to the 8th of them for every proton.
+- [01:12:54,980 - 01:12:56,960] But how is it that it can account
+- [01:12:56,960 - 01:12:59,840] for such a negligible portion of the total energy?
+- [01:13:00,540 - 01:13:03,640] Because remember that radiation energy density
+- [01:13:05,319 - 01:13:08,080] decreases like one over the scale factor
+- [01:13:08,080 - 01:13:09,140] to the fourth power
+- [01:13:10,219 - 01:13:12,080] and matter energy density
+- [01:13:12,100 - 01:13:15,380] decreases like one over a cubed.
+- [01:13:18,800 - 01:13:19,360] Right.
+- [01:13:20,679 - 01:13:24,000] So if we need this very massive particle
+- [01:13:24,000 - 01:13:25,520] to make this work,
+- [01:13:25,600 - 01:13:26,920] does that mean the standard model is incomplete?
+- [01:13:29,139 - 01:13:29,700] Yes,
+- [01:13:29,700 - 01:13:30,440] it does.
+- [01:13:31,320 - 01:13:31,880] Yeah.
+- [01:13:33,100 - 01:13:33,660] Right.
+- [01:13:33,960 - 01:13:34,740] If you,
+- [01:13:34,740 - 01:13:36,680] your top two diagrams there
+- [01:13:36,680 - 01:13:38,100] where you have the unequal sign,
+- [01:13:38,300 - 01:13:39,160] Yes.
+- [01:13:39,460 - 01:13:40,640] that's very unequal
+- [01:13:40,640 - 01:13:42,780] and you started with all the p's and
+- [01:13:42,780 - 01:13:43,880] Say it again,
+- [01:13:43,880 - 01:13:44,360] say it again.
+- [01:13:44,740 - 01:13:46,800] If it's very unequal
+- [01:13:46,800 - 01:13:50,420] and you started initially with p's and p bars,
+- [01:13:50,720 - 01:13:52,960] then the p bars would decay
+- [01:13:53,400 - 01:13:56,300] because it's very unequal into the e minuses
+- [01:13:56,300 - 01:14:01,500] then you'd end up with the e minus p equivalents
+- [01:14:01,500 - 01:14:02,840] for equality.
+- [01:14:05,720 - 01:14:08,720] So you started with just all p's and p bars.
+- [01:14:08,960 - 01:14:09,180] Yeah.
+- [01:14:09,840 - 01:14:10,980] And no e's.
+- [01:14:11,100 - 01:14:11,440] Uh-huh.
+- [01:14:11,600 - 01:14:14,640] Because the p bars go through that second process
+- [01:14:14,640 - 01:14:18,660] and you would get e is equal to p's.
+- [01:14:20,880 - 01:14:21,360] Oh,
+- [01:14:21,360 - 01:14:22,040] I see what you mean.
+- [01:14:22,680 - 01:14:23,160] Yeah.
+- [01:14:24,740 - 01:14:25,220] Yeah,
+- [01:14:25,220 - 01:14:25,700] it's,
+- [01:14:25,700 - 01:14:26,720] yeah.
+- [01:14:28,620 - 01:14:29,100] Yes.
+- [01:14:30,160 - 01:14:31,760] You can try to make a theory that way.
+- [01:14:32,120 - 01:14:36,020] I think you'd quickly flounder on the fact
+- [01:14:36,020 - 01:14:38,400] that at some point the universe was very hot,
+- [01:14:38,400 - 01:14:42,400] and at that point there were these loads and loads
+- [01:14:42,400 - 01:14:43,500] of p's and p bars.
+- [01:14:43,760 - 01:14:47,040] At least if you wanted to follow standard thinking about,
+- [01:14:47,560 - 01:14:48,060] about,
+- [01:14:48,060 - 01:14:48,480] um,
+- [01:14:48,480 - 01:14:50,600] uh...
+- [01:14:50,600 - 01:14:52,940] I want to explain why it's very unequal.
+- [01:14:53,240 - 01:14:53,780] What's that?
+- [01:14:53,920 - 01:14:55,070] It's very hard to explain
+- [01:14:55,070 - 01:14:56,220] why it would be that unequal,
+- [01:14:56,320 - 01:15:00,900] particularly since cp violation is a small,
+- [01:15:01,160 - 01:15:02,140] very small thing.
+- [01:15:02,240 - 01:15:03,300] So it would be very hard to understand
+- [01:15:03,300 - 01:15:04,780] why it would be grossly unequal.
+- [01:15:05,640 - 01:15:07,760] And keep in mind that these decay rates,
+- [01:15:07,760 - 01:15:08,180] yeah,
+- [01:15:08,180 - 01:15:09,160] are very small,
+- [01:15:09,160 - 01:15:09,600] but...
+- [01:15:10,220 - 01:15:10,680] Okay,
+- [01:15:10,680 - 01:15:11,560] I want to move on.
+- [01:15:13,240 - 01:15:17,640] That's what's known about matter-antimatter imbalance
+- [01:15:17,640 - 01:15:18,540] in the universe.
+- [01:15:20,160 - 01:15:20,620] And,
+- [01:15:20,620 - 01:15:21,000] um,
+- [01:15:21,000 - 01:15:21,820] as I said,
+- [01:15:21,820 - 01:15:23,760] I don't think it's going to be too soon
+- [01:15:23,760 - 01:15:24,860] that we know a lot more.
+- [01:15:28,060 - 01:15:28,720] All right,
+- [01:15:28,720 - 01:15:28,920] now,
+- [01:15:28,920 - 01:15:31,340] the next thing we want to move on to
+- [01:15:32,519 - 01:15:32,980] is,
+- [01:15:32,980 - 01:15:33,440] um,
+- [01:15:33,440 - 01:15:34,140] inflation,
+- [01:15:34,140 - 01:15:35,900] inflationary universe.
+- [01:15:37,180 - 01:15:43,500] The inflationary universe idea was put forward to explain
+- [01:15:43,500 - 01:15:47,540] another one of these things which is not entirely clear
+- [01:15:47,540 - 01:15:49,520] needs to be explained.
+- [01:15:50,940 - 01:15:54,200] Or wasn't entirely clear that it needed to be explained
+- [01:15:54,200 - 01:15:54,900] at the time.
+- [01:15:55,780 - 01:15:55,980] Um,
+- [01:15:55,980 - 01:16:01,460] and the question was,
+- [01:16:01,680 - 01:16:05,880] why is the universe so terribly homogeneous and isotropic?
+- [01:16:05,900 - 01:16:08,400] This became a rather critical issue
+- [01:16:08,400 - 01:16:10,980] when the cosmic microwave background was discovered.
+- [01:16:11,380 - 01:16:13,680] And the cosmic microwave background
+- [01:16:13,680 - 01:16:16,720] quickly became a rather high-precision thing.
+- [01:16:16,960 - 01:16:20,380] The high-precision thing being that in short order,
+- [01:16:20,540 - 01:16:21,120] um,
+- [01:16:21,120 - 01:16:22,500] the,
+- [01:16:22,500 - 01:16:23,040] uh,
+- [01:16:23,040 - 01:16:27,200] the black body curve had been measured.
+- [01:16:27,580 - 01:16:31,020] The temperature of the cosmic microwave background
+- [01:16:31,020 - 01:16:32,740] had been measured carefully.
+- [01:16:33,080 - 01:16:35,880] It was known to be about 2.7 degrees.
+- [01:16:35,900 - 01:16:37,720] And with some precision,
+- [01:16:37,720 - 01:16:38,260] with some,
+- [01:16:38,260 - 01:16:38,460] uh,
+- [01:16:38,500 - 01:16:40,440] the error bars were fairly small.
+- [01:16:40,600 - 01:16:40,800] Today,
+- [01:16:40,800 - 01:16:41,580] they're microscopic.
+- [01:16:41,920 - 01:16:42,160] Today,
+- [01:16:42,160 - 01:16:42,400] the,
+- [01:16:42,400 - 01:16:45,220] today the error bars are just,
+- [01:16:45,220 - 01:16:45,420] uh,
+- [01:16:45,680 - 01:16:47,300] they can't be seen on the...
+- [01:16:48,200 - 01:16:48,680] Okay.
+- [01:16:49,460 - 01:16:49,940] So,
+- [01:16:49,940 - 01:16:52,760] the temperature was very well defined.
+- [01:16:53,500 - 01:16:55,300] Looked like a Planck distribution,
+- [01:16:55,680 - 01:16:56,920] like a black body distribution.
+- [01:16:57,780 - 01:16:58,740] Almost exactly,
+- [01:16:58,740 - 01:17:00,580] or exactly as far as you could tell.
+- [01:17:01,040 - 01:17:01,520] But,
+- [01:17:01,520 - 01:17:02,280] moreover,
+- [01:17:02,280 - 01:17:04,520] it was the same in every direction.
+- [01:17:06,440 - 01:17:06,980] So,
+- [01:17:06,980 - 01:17:07,520] suddenly,
+- [01:17:07,520 - 01:17:09,360] this rough idea
+- [01:17:09,920 - 01:17:11,900] that the universe is isotropic
+- [01:17:12,520 - 01:17:14,700] became a high-precision idea.
+- [01:17:14,880 - 01:17:14,980] Now,
+- [01:17:14,980 - 01:17:15,580] this took years.
+- [01:17:15,720 - 01:17:15,960] I'm,
+- [01:17:15,960 - 01:17:17,880] I'm condensing history into a,
+- [01:17:17,900 - 01:17:19,240] into something smaller.
+- [01:17:19,440 - 01:17:20,740] But at least by today,
+- [01:17:20,740 - 01:17:21,700] in any case,
+- [01:17:21,760 - 01:17:22,540] um,
+- [01:17:22,540 - 01:17:25,260] the idea that the universe is isotropic
+- [01:17:25,260 - 01:17:26,040] is a very,
+- [01:17:26,040 - 01:17:27,200] very high-precision thing.
+- [01:17:28,420 - 01:17:28,960] So,
+- [01:17:28,960 - 01:17:29,800] you can ask,
+- [01:17:29,920 - 01:17:32,320] why is the universe so isotropic?
+- [01:17:32,620 - 01:17:33,160] Uh,
+- [01:17:33,160 - 01:17:33,840] today,
+- [01:17:33,840 - 01:17:34,500] it's isotropic.
+- [01:17:35,599 - 01:17:38,760] Must have been isotropic very early.
+- [01:17:38,920 - 01:17:40,900] No particular reason why,
+- [01:17:40,900 - 01:17:41,120] uh,
+- [01:17:41,300 - 01:17:45,840] why an anisotropy lumpiness
+- [01:17:45,840 - 01:17:48,660] in the distribution would de,
+- [01:17:48,780 - 01:17:50,280] would decrease with time.
+- [01:17:50,580 - 01:17:51,660] In fact,
+- [01:17:51,660 - 01:17:52,680] quite the opposite.
+- [01:17:52,880 - 01:17:55,740] Lumpiness tends to increase with time
+- [01:17:55,740 - 01:17:57,380] because of gravity.
+- [01:17:57,940 - 01:17:59,100] Gravity tends,
+- [01:17:59,100 - 01:18:00,280] tends to take lumps
+- [01:18:00,280 - 01:18:01,180] and,
+- [01:18:01,180 - 01:18:01,540] uh,
+- [01:18:01,540 - 01:18:03,640] and magnify the size,
+- [01:18:03,640 - 01:18:04,500] the magnitude of the mass.
+- [01:18:04,520 - 01:18:05,080] The magnitude of the lumps.
+- [01:18:07,139 - 01:18:07,740] So,
+- [01:18:07,740 - 01:18:08,340] uh,
+- [01:18:08,340 - 01:18:10,260] it means the universe
+- [01:18:10,260 - 01:18:12,080] must have started very early
+- [01:18:12,080 - 01:18:15,520] being extremely homogeneous and isotropic.
+- [01:18:16,060 - 01:18:17,600] When I say very early,
+- [01:18:17,600 - 01:18:18,620] I mean at the time
+- [01:18:18,620 - 01:18:19,740] before there were galaxies,
+- [01:18:19,840 - 01:18:20,820] before there were,
+- [01:18:20,820 - 01:18:21,180] um,
+- [01:18:21,180 - 01:18:22,060] planets,
+- [01:18:22,340 - 01:18:26,100] at a time that the black body
+- [01:18:27,619 - 01:18:28,820] photons originated.
+- [01:18:29,280 - 01:18:29,800] In other words,
+- [01:18:29,800 - 01:18:30,940] at the decoupling time,
+- [01:18:31,100 - 01:18:33,540] the universe was extremely isotropic.
+- [01:18:33,540 - 01:18:34,060] Now,
+- [01:18:34,060 - 01:18:35,780] it was of course known
+- [01:18:35,780 - 01:18:38,260] that it couldn't be completely isotropic
+- [01:18:38,260 - 01:18:39,780] or homogeneous,
+- [01:18:39,780 - 01:18:40,500] let's say.
+- [01:18:40,620 - 01:18:42,540] If it was exactly homogeneous,
+- [01:18:42,840 - 01:18:44,140] it would stay homogeneous.
+- [01:18:45,360 - 01:18:47,500] Anything which is exactly uniform
+- [01:18:47,500 - 01:18:48,820] and allowed to evolve,
+- [01:18:48,820 - 01:18:49,880] uh,
+- [01:18:50,360 - 01:18:52,520] will stay uniform.
+- [01:18:52,760 - 01:18:53,800] And the universe is not uniform.
+- [01:18:53,980 - 01:18:54,700] It's full of galaxies,
+- [01:18:54,820 - 01:18:56,220] and it's full of clusters of galaxies.
+- [01:18:56,660 - 01:18:58,920] It has a lumpiness that's there.
+- [01:18:59,640 - 01:19:01,380] The lumpiness that's there
+- [01:19:01,380 - 01:19:03,520] clearly was much smaller
+- [01:19:03,540 - 01:19:04,520] to begin with,
+- [01:19:04,520 - 01:19:05,500] smaller in magnitude,
+- [01:19:06,180 - 01:19:08,940] for the simple reason that lumpiness
+- [01:19:08,940 - 01:19:10,440] tends to increase with time.
+- [01:19:10,540 - 01:19:11,920] Let me just explain what I mean by that.
+- [01:19:12,320 - 01:19:14,100] If you start with a world
+- [01:19:14,100 - 01:19:15,800] which is completely uniform,
+- [01:19:16,600 - 01:19:17,960] of course it stays that way,
+- [01:19:18,120 - 01:19:19,820] but let's suppose there was a little bit
+- [01:19:19,820 - 01:19:21,220] of overdensity here.
+- [01:19:21,600 - 01:19:23,220] A little bit of overdensity.
+- [01:19:23,260 - 01:19:23,540] Now,
+- [01:19:23,540 - 01:19:24,000] that's,
+- [01:19:24,000 - 01:19:24,180] uh,
+- [01:19:24,180 - 01:19:25,160] that's a little rea-
+- [01:19:25,160 - 01:19:25,920] a big region,
+- [01:19:25,920 - 01:19:27,040] a fairly big region
+- [01:19:27,040 - 01:19:30,600] where the density is a little bigger
+- [01:19:30,600 - 01:19:32,440] than the neighboring region.
+- [01:19:32,440 - 01:19:33,200] What happens?
+- [01:19:34,779 - 01:19:36,740] What happens in grav-
+- [01:19:36,740 - 01:19:38,040] in a gravitational theory
+- [01:19:38,040 - 01:19:40,040] is the opposite of what happens
+- [01:19:40,040 - 01:19:41,300] in other kinds of theories.
+- [01:19:41,520 - 01:19:42,800] In other kinds of theories,
+- [01:19:42,920 - 01:19:44,760] what tends to happen is this.
+- [01:19:44,820 - 01:19:46,380] If there's an overdensity here,
+- [01:19:46,500 - 01:19:50,480] it will diffuse out and be eliminated.
+- [01:19:50,960 - 01:19:51,960] For example,
+- [01:19:51,960 - 01:19:54,140] you have an overdensity
+- [01:19:54,140 - 01:19:56,300] of ink dropped into water.
+- [01:19:56,560 - 01:19:58,040] You have a spot of ink.
+- [01:19:58,380 - 01:19:59,800] What happens over time?
+- [01:19:59,980 - 01:20:01,200] It diffuses out and,
+- [01:20:01,200 - 01:20:01,420] uh,
+- [01:20:01,420 - 01:20:02,100] and,
+- [01:20:02,100 - 01:20:02,360] uh,
+- [01:20:02,440 - 01:20:04,240] and disappears and becomes homogeneous.
+- [01:20:06,119 - 01:20:07,480] In gravity,
+- [01:20:07,480 - 01:20:08,640] the opposite happens.
+- [01:20:08,800 - 01:20:09,920] And the argument is very simple.
+- [01:20:10,160 - 01:20:12,700] If you have an overdensity here,
+- [01:20:13,940 - 01:20:15,720] because gravity is attractive,
+- [01:20:16,140 - 01:20:17,080] universally attractive,
+- [01:20:17,560 - 01:20:20,420] it will tend to attract the stuff around it,
+- [01:20:20,500 - 01:20:21,480] pull it in,
+- [01:20:22,980 - 01:20:24,280] decreasing the,
+- [01:20:24,280 - 01:20:24,980] um,
+- [01:20:24,980 - 01:20:26,860] the density outside
+- [01:20:27,180 - 01:20:28,460] and increasing it inside.
+- [01:20:29,040 - 01:20:29,780] In other words,
+- [01:20:29,780 - 01:20:31,260] it's kind of a runaway situation.
+- [01:20:31,260 - 01:20:34,040] It's a runaway situation where
+- [01:20:34,040 - 01:20:37,700] a little bit of inhomogeneity
+- [01:20:38,140 - 01:20:39,960] will tend to reinforce itself.
+- [01:20:40,340 - 01:20:42,380] So if you have overdensity,
+- [01:20:42,560 - 01:20:43,680] underdensity,
+- [01:20:43,680 - 01:20:45,100] overdensity,
+- [01:20:45,260 - 01:20:46,420] underdensity,
+- [01:20:46,420 - 01:20:47,340] and so forth,
+- [01:20:47,440 - 01:20:48,340] in some pattern,
+- [01:20:49,220 - 01:20:51,900] the tendency of gravity will be to suck stuff
+- [01:20:51,900 - 01:20:53,540] out of the underdense regions
+- [01:20:53,540 - 01:20:55,740] and put it into the overdense regions
+- [01:20:56,140 - 01:20:58,680] and thereby magnifying
+- [01:20:59,260 - 01:20:59,760] the,
+- [01:20:59,760 - 01:21:00,240] uh,
+- [01:21:00,240 - 01:21:01,240] degree of,
+- [01:21:01,240 - 01:21:01,240] uh,
+- [01:21:01,260 - 01:21:03,100] of inhomogeneity.
+- [01:21:04,540 - 01:21:05,180] So,
+- [01:21:05,180 - 01:21:07,920] the fact that we see inhomogeneity today
+- [01:21:08,960 - 01:21:11,720] does not mean that the universe very early
+- [01:21:11,720 - 01:21:14,580] was as inhomogene- ingenious as it is today.
+- [01:21:14,860 - 01:21:16,900] It must have been much less inhomogeneous
+- [01:21:16,900 - 01:21:19,480] just by running the argument backward.
+- [01:21:19,960 - 01:21:20,840] In fact,
+- [01:21:20,840 - 01:21:22,780] cosmologists rather early
+- [01:21:22,780 - 01:21:25,260] were able to estimate
+- [01:21:26,699 - 01:21:29,200] by running the theory backward,
+- [01:21:29,420 - 01:21:31,240] they were able to estimate
+- [01:21:31,260 - 01:21:33,600] at the time of decoupling
+- [01:21:34,020 - 01:21:37,280] just how much inhomogeneity was there
+- [01:21:37,280 - 01:21:42,500] in order that the galaxies could nucleate
+- [01:21:42,860 - 01:21:44,540] out of that inhomogeneity.
+- [01:21:45,060 - 01:21:46,080] In other words,
+- [01:21:46,080 - 01:21:46,740] the picture is
+- [01:21:47,000 - 01:21:48,540] the universe was very homogeneous,
+- [01:21:48,940 - 01:21:51,400] but little bits of inhomogeneity,
+- [01:21:51,420 - 01:21:52,300] little bits of ripples,
+- [01:21:52,300 - 01:21:53,180] little bits of,
+- [01:21:53,180 - 01:21:53,540] um,
+- [01:21:54,020 - 01:21:55,400] excess depletion,
+- [01:21:55,400 - 01:21:56,520] excess depletion,
+- [01:21:56,520 - 01:21:57,300] uh,
+- [01:21:57,300 - 01:21:58,600] of some kind.
+- [01:21:59,960 - 01:22:02,500] And those overdense regions
+- [01:22:02,500 - 01:22:05,880] eventually collapsed by this mechanism,
+- [01:22:06,020 - 01:22:08,160] formed galaxies and clusters of galaxies,
+- [01:22:08,600 - 01:22:11,560] and the underdense regions formed voids,
+- [01:22:11,560 - 01:22:12,500] and that's what we see today.
+- [01:22:12,980 - 01:22:13,640] So,
+- [01:22:13,640 - 01:22:15,100] you can estimate,
+- [01:22:15,400 - 01:22:17,500] and it was estimated by people like
+- [01:22:17,500 - 01:22:19,640] Jim Peebles and other people,
+- [01:22:19,720 - 01:22:21,480] early cosmologists in the 60s,
+- [01:22:21,480 - 01:22:22,560] and I'm not sure exactly when,
+- [01:22:22,680 - 01:22:28,280] how much inhomogeneity was necessary
+- [01:22:28,280 - 01:22:29,900] at the time of decoupling.
+- [01:22:31,120 - 01:22:32,680] And the answer was,
+- [01:22:33,519 - 01:22:35,620] here's the way you quantify it.
+- [01:22:35,920 - 01:22:37,460] You look at the lumpiness,
+- [01:22:37,700 - 01:22:40,920] and you characterize it by a delta rho,
+- [01:22:41,120 - 01:22:43,720] where delta rho is roughly
+- [01:22:43,940 - 01:22:46,960] the mean excess density in a lump
+- [01:22:46,960 - 01:22:48,960] relative to the background,
+- [01:22:49,080 - 01:22:51,160] and you divide it by the density itself.
+- [01:22:51,300 - 01:22:54,380] That's the fractional overdensity
+- [01:22:54,380 - 01:22:57,360] in a typical overdense region.
+- [01:22:59,179 - 01:22:59,780] Divide,
+- [01:22:59,780 - 01:23:02,080] compared with the density itself.
+- [01:23:03,580 - 01:23:05,680] That's the dimensionless measure
+- [01:23:06,980 - 01:23:08,560] of how much,
+- [01:23:08,560 - 01:23:08,680] uh,
+- [01:23:10,019 - 01:23:11,020] how much,
+- [01:23:11,020 - 01:23:11,300] um,
+- [01:23:11,300 - 01:23:12,960] inhomogeneity there was.
+- [01:23:13,580 - 01:23:15,780] And it was pretty early recognized
+- [01:23:15,780 - 01:23:17,560] that this was a number that had to be
+- [01:23:17,560 - 01:23:19,360] about 10 to the minus 5.
+- [01:23:20,580 - 01:23:22,580] Somewhere between 10 to the minus 4,
+- [01:23:22,660 - 01:23:23,660] 10 to the minus 5.
+- [01:23:24,540 - 01:23:25,140] Alright,
+- [01:23:25,140 - 01:23:26,880] so here we were again,
+- [01:23:27,040 - 01:23:28,260] with the same curve,
+- [01:23:28,260 - 01:23:29,120] and we were given this kind of situation,
+- [01:23:29,360 - 01:23:30,200] a question,
+- [01:23:30,340 - 01:23:31,680] why is the universe homogeneous?
+- [01:23:32,060 - 01:23:32,200] Well,
+- [01:23:32,200 - 01:23:33,560] does that really require an answer?
+- [01:23:33,720 - 01:23:34,680] It just started that way.
+- [01:23:34,900 - 01:23:36,300] But now there was a number.
+- [01:23:36,660 - 01:23:37,680] There was a number.
+- [01:23:37,740 - 01:23:38,820] In addition to just saying
+- [01:23:38,820 - 01:23:40,060] the universe was homogeneous,
+- [01:23:40,919 - 01:23:43,200] it is also clear that it wasn't homogeneous.
+- [01:23:44,460 - 01:23:45,700] It wasn't homogeneous
+- [01:23:45,700 - 01:23:49,460] with a specific numerical magnitude to it.
+- [01:23:49,920 - 01:23:52,560] And once you have a specific numerical magnitude,
+- [01:23:52,880 - 01:23:55,140] you want to know why that's the magnitude.
+- [01:23:55,560 - 01:23:56,080] Now,
+- [01:23:56,700 - 01:23:59,180] it's not that we learned why this is the magnitude.
+- [01:23:59,560 - 01:24:00,160] We did not.
+- [01:24:00,300 - 01:24:02,080] We do not really understand
+- [01:24:02,080 - 01:24:03,300] why this is the right number.
+- [01:24:03,600 - 01:24:04,160] Um,
+- [01:24:04,160 - 01:24:07,320] but the existence of this number
+- [01:24:07,320 - 01:24:09,900] focused attention on the question.
+- [01:24:10,860 - 01:24:12,620] And the first question was,
+- [01:24:12,780 - 01:24:14,740] why is the universe so homogeneous?
+- [01:24:15,180 - 01:24:17,440] Later we'll worry about why it's inhomogeneous.
+- [01:24:18,560 - 01:24:20,220] The first order fact
+- [01:24:21,379 - 01:24:22,640] was that it's very,
+- [01:24:22,640 - 01:24:23,340] very homogeneous.
+- [01:24:26,419 - 01:24:28,860] The explanation of that today,
+- [01:24:29,760 - 01:24:30,640] that is,
+- [01:24:30,660 - 01:24:33,300] which seemed rather far-fetched
+- [01:24:33,300 - 01:24:36,040] when it was put forward by Alan Guth in 1980,
+- [01:24:37,099 - 01:24:40,360] was the universe simply expanded
+- [01:24:40,360 - 01:24:41,860] by many orders of magnitude.
+- [01:24:42,820 - 01:24:43,840] And of course,
+- [01:24:43,840 - 01:24:44,800] when something expands,
+- [01:24:44,800 - 01:24:45,420] it stretches.
+- [01:24:46,780 - 01:24:48,700] And if you stretch out,
+- [01:24:48,740 - 01:24:51,560] if you have an inhomogeneous universe
+- [01:24:51,560 - 01:24:53,160] with lumpiness in it,
+- [01:24:53,200 - 01:24:53,320] it's not homogeneous.
+- [01:24:53,320 - 01:24:54,900] And you stretch it out enough,
+- [01:24:55,060 - 01:24:56,860] you'll make it homogeneous
+- [01:24:56,860 - 01:24:59,940] at least on the scales that are relevant.
+- [01:25:00,940 - 01:25:01,580] So,
+- [01:25:01,580 - 01:25:04,120] the idea was the universe inflated,
+- [01:25:04,240 - 01:25:06,500] which means expanded,
+- [01:25:07,100 - 01:25:09,260] and in particular exponentially expanded
+- [01:25:09,260 - 01:25:10,660] for some period of time,
+- [01:25:10,860 - 01:25:13,220] and stretched itself out so much
+- [01:25:14,759 - 01:25:17,820] that it flattened itself to,
+- [01:25:18,000 - 01:25:18,500] you know,
+- [01:25:18,500 - 01:25:19,100] it's like blowing,
+- [01:25:19,180 - 01:25:20,780] literally like blowing up a balloon.
+- [01:25:21,060 - 01:25:22,480] The balloons are crinkled,
+- [01:25:24,799 - 01:25:26,420] rough-shaped thing.
+- [01:25:26,540 - 01:25:27,600] When it's collapsed,
+- [01:25:27,660 - 01:25:28,380] you blow it up,
+- [01:25:28,420 - 01:25:30,700] and it stretches out
+- [01:25:30,700 - 01:25:31,960] and then flattens out.
+- [01:25:32,900 - 01:25:34,160] That's an analogy
+- [01:25:34,160 - 01:25:35,560] which you shouldn't take too far.
+- [01:25:36,320 - 01:25:36,920] Yeah?
+- [01:25:37,100 - 01:25:38,420] How do you explain
+- [01:25:40,440 - 01:25:42,280] that it's isotropic?
+- [01:25:42,500 - 01:25:44,420] Wouldn't you expect more lumpiness
+- [01:25:45,379 - 01:25:47,720] with greater masses
+- [01:25:47,720 - 01:25:49,280] in different directions?
+- [01:25:49,640 - 01:25:51,100] Why is it isotropic?
+- [01:25:53,900 - 01:25:55,320] It's not exactly,
+- [01:25:55,440 - 01:25:56,340] if we look,
+- [01:25:56,440 - 01:25:58,500] I look around this room,
+- [01:25:58,600 - 01:25:59,820] it doesn't look isotropic to me.
+- [01:26:01,240 - 01:26:02,260] I look out.
+- [01:26:02,400 - 01:26:04,720] A very high level of isotropic.
+- [01:26:05,820 - 01:26:08,440] On an average over large distances.
+- [01:26:09,040 - 01:26:09,280] Yeah.
+- [01:26:09,460 - 01:26:09,840] You know,
+- [01:26:09,840 - 01:26:10,960] it's like the surface of the Earth.
+- [01:26:11,040 - 01:26:12,700] It's full of hills and mountains and valleys
+- [01:26:12,700 - 01:26:13,320] and so forth.
+- [01:26:13,440 - 01:26:14,400] You've got to explain those.
+- [01:26:14,600 - 01:26:16,360] You explain them by geological phenomena
+- [01:26:16,360 - 01:26:17,180] and so forth.
+- [01:26:17,520 - 01:26:18,560] But on the whole,
+- [01:26:18,620 - 01:26:19,540] the Earth is very smooth.
+- [01:26:21,420 - 01:26:22,460] And the universe is smooth.
+- [01:26:22,480 - 01:26:22,900] The universe is the same.
+- [01:26:26,639 - 01:26:27,980] If it's homogeneous,
+- [01:26:29,639 - 01:26:32,660] or if it's homogeneous,
+- [01:26:34,059 - 01:26:35,840] I was going to say if it's homogeneous,
+- [01:26:36,480 - 01:26:37,820] it's going to be isotropic.
+- [01:26:38,000 - 01:26:38,200] No,
+- [01:26:38,200 - 01:26:38,780] that's not true.
+- [01:26:38,820 - 01:26:39,820] What I'm getting at is
+- [01:26:39,820 - 01:26:43,240] wouldn't you expect certain directions
+- [01:26:43,240 - 01:26:47,220] to exhibit much greater masses?
+- [01:26:47,700 - 01:26:47,820] Why?
+- [01:26:48,739 - 01:26:50,360] Because you start out
+- [01:26:50,360 - 01:26:51,440] with a small amount
+- [01:26:51,440 - 01:26:53,720] of inhomogeneity,
+- [01:26:54,859 - 01:26:56,960] but it's a random process
+- [01:26:57,900 - 01:26:59,360] that you would expect that
+- [01:26:59,360 - 01:27:00,420] in some directions
+- [01:27:00,420 - 01:27:02,800] you would see a great deal more...
+- [01:27:02,800 - 01:27:02,940] No.
+- [01:27:03,160 - 01:27:03,720] No,
+- [01:27:03,720 - 01:27:04,780] it's not a random.
+- [01:27:04,900 - 01:27:05,620] It's not random.
+- [01:27:05,820 - 01:27:06,840] It's not random.
+- [01:27:07,820 - 01:27:09,160] I see what you're getting at.
+- [01:27:09,280 - 01:27:10,900] You're saying if it were random,
+- [01:27:11,500 - 01:27:14,360] you might expect that somewhere out there
+- [01:27:14,360 - 01:27:16,880] there would be large overdensities
+- [01:27:16,880 - 01:27:17,940] if it were random.
+- [01:27:18,040 - 01:27:19,380] With some statistical probability
+- [01:27:19,380 - 01:27:21,020] you might find a large,
+- [01:27:21,020 - 01:27:21,680] large lumpiness.
+- [01:27:21,840 - 01:27:22,500] It's not random.
+- [01:27:25,120 - 01:27:26,340] And we're going to talk about
+- [01:27:26,340 - 01:27:27,220] the pattern of it.
+- [01:27:28,040 - 01:27:29,300] Basically it's a...
+- [01:27:29,300 - 01:27:30,060] you know,
+- [01:27:30,060 - 01:27:31,260] it looks like a...
+- [01:27:35,620 - 01:27:37,100] Now squeeze this down
+- [01:27:37,100 - 01:27:38,900] until it's of size 10 to the minus 5
+- [01:27:38,900 - 01:27:40,340] relative to the background.
+- [01:27:40,780 - 01:27:41,640] On the whole,
+- [01:27:41,640 - 01:27:42,700] it's very smooth.
+- [01:27:45,280 - 01:27:46,160] But nevertheless,
+- [01:27:46,460 - 01:27:47,580] there are wiggles in it,
+- [01:27:47,600 - 01:27:48,540] and the size of the wiggles
+- [01:27:48,540 - 01:27:49,180] are very small.
+- [01:27:49,180 - 01:27:51,280] What the implication is,
+- [01:27:51,380 - 01:27:53,440] and they're uniformly distributed
+- [01:27:53,440 - 01:27:54,200] through space.
+- [01:27:54,440 - 01:27:55,680] They are homogeneous,
+- [01:27:56,080 - 01:27:57,400] isotropically distributed.
+- [01:27:57,900 - 01:28:00,280] There are no large,
+- [01:28:01,440 - 01:28:03,620] tremendously large lumps out there.
+- [01:28:03,780 - 01:28:04,980] They're all very small,
+- [01:28:05,100 - 01:28:06,340] small in magnitude.
+- [01:28:06,580 - 01:28:07,840] Not small in size,
+- [01:28:07,960 - 01:28:08,960] but small in magnitude.
+- [01:28:09,640 - 01:28:16,220] And it's more or less
+- [01:28:16,220 - 01:28:17,680] like a very,
+- [01:28:17,680 - 01:28:18,680] very smooth Earth
+- [01:28:18,680 - 01:28:21,340] with ripples on it that...
+- [01:28:23,059 - 01:28:23,660] Well...
+- [01:28:25,279 - 01:28:25,879] Again,
+- [01:28:25,879 - 01:28:26,580] there's an
+- [01:28:26,580 - 01:28:28,060] inward relationship between
+- [01:28:28,680 - 01:28:30,240] early time and high temperature
+- [01:28:30,240 - 01:28:30,660] relationship.
+- [01:28:31,100 - 01:28:33,480] So there was a particular time
+- [01:28:33,480 - 01:28:35,240] when inflation started and stopped,
+- [01:28:35,520 - 01:28:36,900] and that relates to
+- [01:28:36,900 - 01:28:38,180] particular temperatures.
+- [01:28:38,260 - 01:28:39,580] Is there any connection,
+- [01:28:39,720 - 01:28:40,920] or is it just random?
+- [01:28:41,220 - 01:28:41,460] I mean,
+- [01:28:41,460 - 01:28:42,660] is it the temperature
+- [01:28:42,660 - 01:28:43,940] causal of the effect,
+- [01:28:43,940 - 01:28:44,720] or is it...?
+- [01:28:45,540 - 01:28:47,460] During the inflationary period,
+- [01:28:47,460 - 01:28:49,700] temperature was not an important
+- [01:28:49,700 - 01:28:50,700] aspect of things.
+- [01:28:51,220 - 01:28:53,140] During the inflationary period,
+- [01:28:53,440 - 01:28:55,380] temperature was not a terribly
+- [01:28:55,380 - 01:28:56,320] relevant factor.
+- [01:28:58,120 - 01:29:01,240] It was the exponential expansion,
+- [01:29:01,480 - 01:29:02,600] which was the single most
+- [01:29:02,600 - 01:29:03,380] important thing.
+- [01:29:04,379 - 01:29:07,540] And I'm going to begin...
+- [01:29:07,540 - 01:29:07,980] Let's see,
+- [01:29:07,980 - 01:29:08,600] where are we?
+- [01:29:08,640 - 01:29:10,240] We still have a little bit of time
+- [01:29:11,360 - 01:29:14,220] to talk about some preliminaries.
+- [01:29:18,879 - 01:29:21,040] It looks like next week will be
+- [01:29:21,040 - 01:29:22,280] our real week for inflation.
+- [01:29:22,700 - 01:29:23,740] And the equations,
+- [01:29:23,740 - 01:29:24,300] I'm going to
+- [01:29:24,300 - 01:29:25,220] take you through the basic
+- [01:29:25,220 - 01:29:26,320] equations of inflation,
+- [01:29:27,040 - 01:29:28,440] show you how it works
+- [01:29:29,080 - 01:29:30,200] in some detail.
+- [01:29:30,820 - 01:29:32,940] But I think what I'll do for the
+- [01:29:32,940 - 01:29:34,820] rest of the evening...
+- [01:29:37,200 - 01:29:37,720] Um...
+- [01:29:39,799 - 01:29:40,900] Let's talk about friction.
+- [01:29:41,560 - 01:29:43,000] What does friction have to do
+- [01:29:43,000 - 01:29:43,360] with anything?
+- [01:29:45,359 - 01:29:47,340] It has everything to do with
+- [01:29:47,460 - 01:29:47,700] everything,
+- [01:29:47,700 - 01:29:49,780] but tonight I'm just
+- [01:29:49,780 - 01:29:50,840] going to tell you about friction.
+- [01:29:56,480 - 01:29:58,480] The equations of friction.
+- [01:30:02,360 - 01:30:03,240] Write it down,
+- [01:30:03,240 - 01:30:03,900] because I'm going
+- [01:30:03,900 - 01:30:04,400] to use it.
+- [01:30:05,220 - 01:30:06,380] And it's very simple.
+- [01:30:06,560 - 01:30:07,620] When I speak of friction,
+- [01:30:07,620 - 01:30:07,900] I'm
+- [01:30:07,900 - 01:30:08,740] speaking of viscosity.
+- [01:30:09,180 - 01:30:11,660] I'm thinking about something like
+- [01:30:11,660 - 01:30:13,660] a stone falling through
+- [01:30:13,660 - 01:30:15,060] viscous fluid.
+- [01:30:19,219 - 01:30:20,700] Why am I doing that?
+- [01:30:20,800 - 01:30:22,520] I'm doing that because it will
+- [01:30:22,520 - 01:30:22,980] come up.
+- [01:30:23,340 - 01:30:23,980] Okay.
+- [01:30:27,440 - 01:30:29,080] Take a stone falling through
+- [01:30:29,080 - 01:30:29,420] water.
+- [01:30:30,040 - 01:30:31,000] Or honey.
+- [01:30:33,540 - 01:30:35,320] And I'm just reminding you of
+- [01:30:35,320 - 01:30:36,300] the equations for it.
+- [01:30:36,760 - 01:30:41,080] It's falling due to a force,
+- [01:30:41,300 - 01:30:42,960] which is a gradient of potential
+- [01:30:42,960 - 01:30:43,500] energy.
+- [01:30:44,040 - 01:30:46,940] Let's call the height here,
+- [01:30:49,400 - 01:30:50,640] what shall I call it?
+- [01:30:53,060 - 01:30:54,320] I'm going to call it phi,
+- [01:30:54,320 - 01:30:55,420] which
+- [01:30:55,420 - 01:30:56,840] is a stupid name for the height.
+- [01:30:58,220 - 01:30:59,960] But it's not a stupid name for a
+- [01:30:59,960 - 01:31:00,340] field,
+- [01:31:00,340 - 01:31:01,520] and as you might expect,
+- [01:31:01,680 - 01:31:02,440] what we're going to be talking
+- [01:31:02,440 - 01:31:03,220] about is fields.
+- [01:31:03,760 - 01:31:04,440] But nevertheless,
+- [01:31:04,440 - 01:31:05,640] the analogy is
+- [01:31:05,640 - 01:31:07,440] phi is the height of the stone.
+- [01:31:09,700 - 01:31:11,440] And there's a force on the stone.
+- [01:31:11,760 - 01:31:13,180] There's a force on the stone
+- [01:31:13,180 - 01:31:15,160] which is related to its potential
+- [01:31:15,160 - 01:31:15,660] energy,
+- [01:31:15,660 - 01:31:16,820] in this case,
+- [01:31:16,820 - 01:31:16,920] the force
+- [01:31:16,920 - 01:31:16,920] gravity,
+- [01:31:16,920 - 01:31:16,920] and in this case,
+- [01:31:16,920 - 01:31:17,080] it could
+- [01:31:17,080 - 01:31:18,740] just be the potential energy of
+- [01:31:18,740 - 01:31:19,880] gravitation in,
+- [01:31:19,880 - 01:31:21,840] but let's just call
+- [01:31:21,840 - 01:31:23,020] it a potential energy,
+- [01:31:23,020 - 01:31:24,580] V of phi.
+- [01:31:28,570 - 01:31:30,440] Let's assume the force is downward,
+- [01:31:30,640 - 01:31:33,960] which means V of phi increases in
+- [01:31:33,960 - 01:31:34,900] the upward direction,
+- [01:31:34,900 - 01:31:37,240] and what is
+- [01:31:37,240 - 01:31:37,720] the force?
+- [01:31:38,590 - 01:31:41,480] The force is the derivative of the
+- [01:31:41,480 - 01:31:43,000] potential energy,
+- [01:31:43,000 - 01:31:44,300] but minus it,
+- [01:31:44,920 - 01:31:46,900] minus the derivative of the
+- [01:31:46,920 - 01:31:47,000] potential energy,
+- [01:31:47,000 - 01:31:47,840] V with respect,
+- [01:31:47,940 - 01:31:48,800] just a derivative,
+- [01:31:48,800 - 01:31:49,200] ordinary
+- [01:31:49,200 - 01:31:49,740] derivative,
+- [01:31:49,740 - 01:31:50,720] dV d phi.
+- [01:31:59,280 - 01:32:00,040] All right,
+- [01:32:00,040 - 01:32:00,800] let's write Newton's
+- [01:32:00,800 - 01:32:01,560] equations now.
+- [01:32:02,180 - 01:32:03,800] Newton's equations for the stone,
+- [01:32:04,040 - 01:32:05,960] for simplicity,
+- [01:32:05,960 - 01:32:06,940] let's just take
+- [01:32:06,940 - 01:32:08,860] the stone to have unit mass.
+- [01:32:09,880 - 01:32:10,480] Okay.
+- [01:32:11,880 - 01:32:13,420] What's the equation of motion?
+- [01:32:14,300 - 01:32:15,600] F equals mA.
+- [01:32:15,860 - 01:32:16,820] The force,
+- [01:32:16,920 - 01:32:18,220] on the right-hand side,
+- [01:32:18,220 - 01:32:18,880] is minus
+- [01:32:18,880 - 01:32:19,720] dV d phi,
+- [01:32:19,720 - 01:32:25,180] and that's equal to the
+- [01:32:25,180 - 01:32:25,520] mass,
+- [01:32:25,520 - 01:32:26,540] which I'm setting equal to
+- [01:32:26,540 - 01:32:26,780] one,
+- [01:32:26,780 - 01:32:28,340] times the acceleration,
+- [01:32:28,340 - 01:32:28,920] which
+- [01:32:29,460 - 01:32:31,000] is phi double dot,
+- [01:32:31,000 - 01:32:31,880] the second time
+- [01:32:31,880 - 01:32:32,740] derivative of phi.
+- [01:32:33,560 - 01:32:34,040] Okay,
+- [01:32:34,040 - 01:32:35,280] this is F equals mA,
+- [01:32:35,280 - 01:32:35,620] and
+- [01:32:35,620 - 01:32:36,620] there's nothing special there.
+- [01:32:37,320 - 01:32:41,640] In a uniform force field,
+- [01:32:41,640 - 01:32:42,360] which
+- [01:32:42,360 - 01:32:44,240] would just mean dV d phi is just
+- [01:32:44,240 - 01:32:44,860] a constant,
+- [01:32:44,860 - 01:32:46,540] the stone would form
+- [01:32:46,540 - 01:32:47,840] a uniform acceleration,
+- [01:32:47,840 - 01:32:49,040] and it would
+- [01:32:49,040 - 01:32:54,680] just very quickly pick up a lot of
+- [01:32:54,680 - 01:32:58,200] speed and continue to accelerate.
+- [01:32:58,520 - 01:32:59,240] All right,
+- [01:32:59,240 - 01:33:01,600] that has ignored the
+- [01:33:01,600 - 01:33:03,780] viscosity of the fluid that it's
+- [01:33:03,780 - 01:33:04,220] moving in,
+- [01:33:04,220 - 01:33:04,880] which,
+- [01:33:04,880 - 01:33:05,360] let's say,
+- [01:33:05,360 - 01:33:05,460] is
+- [01:33:05,460 - 01:33:06,080] something like honey.
+- [01:33:06,760 - 01:33:07,440] All right,
+- [01:33:07,440 - 01:33:07,600] now,
+- [01:33:07,600 - 01:33:09,700] that means that
+- [01:33:09,700 - 01:33:11,280] there's another force on the right-hand
+- [01:33:11,280 - 01:33:11,980] side here.
+- [01:33:13,020 - 01:33:16,520] That other force is zero if the force
+- [01:33:16,520 - 01:33:17,580] is at rest.
+- [01:33:17,900 - 01:33:20,960] The viscosity has exerts no force on
+- [01:33:20,960 - 01:33:21,800] an object at rest.
+- [01:33:22,000 - 01:33:23,380] It's moving through the fluid,
+- [01:33:23,380 - 01:33:23,620] which
+- [01:33:23,620 - 01:33:24,719] creates the force.
+- [01:33:25,780 - 01:33:26,600] And so,
+- [01:33:26,600 - 01:33:27,840] the force on the right-hand
+- [01:33:27,840 - 01:33:30,180] side is going to depend on the velocity.
+- [01:33:30,540 - 01:33:32,120] The larger the velocity,
+- [01:33:32,120 - 01:33:32,860] the more the
+- [01:33:32,860 - 01:33:33,200] viscosity.
+- [01:33:34,280 - 01:33:35,800] And for simple fluids,
+- [01:33:35,800 - 01:33:36,880] the viscosity is
+- [01:33:36,880 - 01:33:38,660] actually proportional to the velocity
+- [01:33:38,660 - 01:33:39,140] itself.
+- [01:33:40,920 - 01:33:41,480] So,
+- [01:33:41,480 - 01:33:42,880] there's a force on the right-hand
+- [01:33:42,880 - 01:33:43,200] side,
+- [01:33:43,200 - 01:33:44,460] which is proportional to the
+- [01:33:44,460 - 01:33:44,820] velocity.
+- [01:33:45,280 - 01:33:46,500] Which direction is it going to go?
+- [01:33:46,500 - 01:33:46,840] Which direction is it in?
+- [01:33:49,700 - 01:33:52,320] It's obviously opposing the velocity.
+- [01:33:53,140 - 01:33:53,580] So,
+- [01:33:53,580 - 01:33:55,360] it's got a minus sign in front of
+- [01:33:55,360 - 01:33:55,660] it here.
+- [01:33:58,880 - 01:34:01,200] And there's some coefficient in front
+- [01:34:01,200 - 01:34:03,960] of it that's called the coefficient of
+- [01:34:03,960 - 01:34:04,440] the...
+- [01:34:06,780 - 01:34:07,940] The Susskind number.
+- [01:34:08,080 - 01:34:08,880] I forget what it's called.
+- [01:34:09,060 - 01:34:09,800] I don't know what it's...
+- [01:34:09,800 - 01:34:10,740] The drag!
+- [01:34:12,600 - 01:34:13,480] All right.
+- [01:34:13,600 - 01:34:13,860] Well,
+- [01:34:13,860 - 01:34:14,780] what's the letter for it?
+- [01:34:16,500 - 01:34:16,620] Who?
+- [01:34:16,760 - 01:34:17,260] Anybody know?
+- [01:34:19,480 - 01:34:20,000] Who?
+- [01:34:20,920 - 01:34:21,360] B?
+- [01:34:22,260 - 01:34:22,780] D?
+- [01:34:26,720 - 01:34:27,240] Gamma.
+- [01:34:29,160 - 01:34:30,140] Whatever it is.
+- [01:34:30,420 - 01:34:32,920] It can't be the same for both forces.
+- [01:34:34,280 - 01:34:34,800] Yeah.
+- [01:34:36,680 - 01:34:37,440] Why not?
+- [01:34:38,440 - 01:34:38,960] Huh?
+- [01:34:39,520 - 01:34:41,740] You want one force to pull it down,
+- [01:34:41,740 - 01:34:41,920] and
+- [01:34:41,920 - 01:34:44,240] then the other force to slow it down.
+- [01:34:45,159 - 01:34:46,200] The VD5...
+- [01:34:46,200 - 01:34:46,820] The VD5 pushes down,
+- [01:34:46,820 - 01:34:47,200] right?
+- [01:34:48,880 - 01:34:49,500] All right.
+- [01:34:49,700 - 01:34:51,620] It's moving with a downward vertical
+- [01:34:51,620 - 01:34:52,200] velocity,
+- [01:34:52,200 - 01:34:52,600] right?
+- [01:34:53,600 - 01:34:55,460] If it's moving with a downward vertical
+- [01:34:55,460 - 01:34:55,900] velocity,
+- [01:34:55,900 - 01:34:57,260] that means phi dot is negative,
+- [01:34:57,460 - 01:34:57,620] right?
+- [01:34:58,440 - 01:34:59,700] Minus phi dot is positive.
+- [01:35:00,620 - 01:35:01,600] This force is up.
+- [01:35:02,700 - 01:35:04,060] As long as it's moving down.
+- [01:35:04,700 - 01:35:05,900] As long as it's moving down.
+- [01:35:06,120 - 01:35:06,400] Okay.
+- [01:35:07,400 - 01:35:07,900] What's that?
+- [01:35:08,700 - 01:35:10,840] The derivative of the potential is the
+- [01:35:10,840 - 01:35:11,980] negative of the force.
+- [01:35:12,680 - 01:35:14,080] So that's why...
+- [01:35:14,080 - 01:35:15,520] The VD5 is down.
+- [01:35:15,520 - 01:35:16,300] It's negative.
+- [01:35:16,480 - 01:35:17,600] The VD5 is down.
+- [01:35:17,600 - 01:35:17,980] It's negative.
+- [01:35:19,360 - 01:35:20,760] But this one is positive.
+- [01:35:21,740 - 01:35:23,840] It's positive because phi dot is negative.
+- [01:35:24,860 - 01:35:25,560] All right?
+- [01:35:25,600 - 01:35:26,140] It's falling down.
+- [01:35:26,600 - 01:35:27,300] All right.
+- [01:35:27,840 - 01:35:28,400] So,
+- [01:35:28,400 - 01:35:31,880] in the beginning,
+- [01:35:31,880 - 01:35:33,020] when the stone starts
+- [01:35:33,020 - 01:35:33,600] to fall,
+- [01:35:33,600 - 01:35:35,240] phi dot is zero,
+- [01:35:35,240 - 01:35:36,620] and basically it
+- [01:35:36,620 - 01:35:39,000] starts out accelerating exactly as it would
+- [01:35:39,000 - 01:35:39,660] without this.
+- [01:35:40,040 - 01:35:41,540] But very quickly,
+- [01:35:41,540 - 01:35:43,380] phi dot will increase,
+- [01:35:43,460 - 01:35:44,540] and unless,
+- [01:35:44,540 - 01:35:45,500] as you move down,
+- [01:35:45,500 - 01:35:45,500] you move
+- [01:35:45,500 - 01:35:45,740] down,
+- [01:35:45,740 - 01:35:47,980] the force gets bigger and bigger rapidly.
+- [01:35:49,240 - 01:35:52,120] This is going to increase because phi dot is increasing
+- [01:35:52,120 - 01:35:54,380] until it balances VD5.
+- [01:35:54,840 - 01:35:55,900] At that point,
+- [01:35:55,900 - 01:35:56,700] the forces cancel,
+- [01:35:56,700 - 01:35:57,860] and that's called the
+- [01:35:57,860 - 01:35:58,660] terminal velocity.
+- [01:35:59,020 - 01:35:59,800] In particular,
+- [01:35:59,800 - 01:36:02,900] if the force is uniform,
+- [01:36:02,900 - 01:36:04,120] if the downward force,
+- [01:36:04,380 - 01:36:04,760] for example,
+- [01:36:04,760 - 01:36:05,740] like the force of gravity,
+- [01:36:05,740 - 01:36:06,820] is uniform near the
+- [01:36:06,820 - 01:36:07,680] surface of the Earth,
+- [01:36:07,680 - 01:36:09,000] then this is just,
+- [01:36:09,000 - 01:36:09,780] let's just call it F,
+- [01:36:10,280 - 01:36:10,920] minus F,
+- [01:36:10,920 - 01:36:12,860] minus phi dot,
+- [01:36:12,860 - 01:36:13,580] gamma.
+- [01:36:15,160 - 01:36:16,420] That's the total force.
+- [01:36:16,620 - 01:36:17,980] And at some point,
+- [01:36:17,980 - 01:36:20,440] it stops accelerating because these two
+- [01:36:20,440 - 01:36:21,420] balance each other,
+- [01:36:21,420 - 01:36:21,940] and of course,
+- [01:36:21,940 - 01:36:24,580] that happens when phi
+- [01:36:25,540 - 01:36:27,480] dot reaches the terminal velocity,
+- [01:36:27,480 - 01:36:28,840] and the terminal
+- [01:36:28,840 - 01:36:33,000] velocity phi dot is equal,
+- [01:36:33,000 - 01:36:33,620] let's see,
+- [01:36:33,620 - 01:36:34,920] now I am getting my
+- [01:36:34,920 - 01:36:35,580] signs confused.
+- [01:36:35,920 - 01:36:37,380] The force is negative,
+- [01:36:37,380 - 01:36:37,840] right?
+- [01:36:37,980 - 01:36:39,940] The force is negative because it's down,
+- [01:36:39,940 - 01:36:41,560] but the terminal
+- [01:36:41,560 - 01:36:42,660] velocity happens.
+- [01:36:42,960 - 01:36:43,560] It's equal.
+- [01:36:43,560 - 01:36:44,260] When F,
+- [01:36:44,260 - 01:36:46,880] when phi dot is F over gamma.
+- [01:36:48,280 - 01:36:49,840] Now my signs are confused.
+- [01:36:50,020 - 01:36:51,220] Do I have a problem here?
+- [01:36:54,860 - 01:36:55,340] Oh,
+- [01:36:55,340 - 01:36:55,820] no,
+- [01:36:55,820 - 01:36:56,340] it's okay.
+- [01:36:57,240 - 01:36:58,240] F is negative,
+- [01:36:58,240 - 01:37:00,400] so the terminal velocity is negative.
+- [01:37:01,640 - 01:37:03,420] Terminal velocity is negative because it's falling.
+- [01:37:03,680 - 01:37:04,060] All right.
+- [01:37:05,500 - 01:37:07,680] That's the basic theory of friction.
+- [01:37:10,340 - 01:37:11,460] And what does it do?
+- [01:37:11,580 - 01:37:13,360] It slows things down.
+- [01:37:13,560 - 01:37:13,640] It slows things down.
+- [01:37:13,640 - 01:37:14,780] In particular,
+- [01:37:14,780 - 01:37:20,820] if V of phi has a shallow slope.
+- [01:37:21,720 - 01:37:22,820] If V of phi,
+- [01:37:22,820 - 01:37:24,000] let's plot V of phi.
+- [01:37:24,900 - 01:37:26,900] Let's plot phi this way.
+- [01:37:27,400 - 01:37:28,660] Let's plot phi,
+- [01:37:28,660 - 01:37:31,200] plot it horizontally even though phi is
+- [01:37:31,200 - 01:37:32,040] the vertical direction.
+- [01:37:32,480 - 01:37:33,760] Let's plot it horizontally,
+- [01:37:33,760 - 01:37:36,260] and let's suppose that V of phi is
+- [01:37:36,260 - 01:37:38,000] a rather shallow hill.
+- [01:37:39,000 - 01:37:39,560] Okay?
+- [01:37:39,560 - 01:37:41,600] If it's a rather shallow hill,
+- [01:37:41,600 - 01:37:43,760] and the viscosity coefficient
+- [01:37:43,760 - 01:37:45,140] here is large,
+- [01:37:45,140 - 01:37:52,760] the stone falling along this potential energy
+- [01:37:52,760 - 01:37:55,680] here will simply take a long,
+- [01:37:55,680 - 01:37:58,120] long time to roll down the hill.
+- [01:37:59,000 - 01:38:01,560] That's the situation we will want to be in,
+- [01:38:01,560 - 01:38:03,220] and phi will not
+- [01:38:03,220 - 01:38:03,980] be a stone.
+- [01:38:04,180 - 01:38:05,940] It will not be the position of a stone.
+- [01:38:06,180 - 01:38:07,680] It will be the value of a field.
+- [01:38:08,920 - 01:38:11,980] But we will want to be in
+- [01:38:11,980 - 01:38:15,040] a situation where a field evolves very slowly
+- [01:38:15,040 - 01:38:17,060] because of a lot of friction.
+- [01:38:18,320 - 01:38:20,440] And that will drive inflation,
+- [01:38:20,440 - 01:38:23,220] and we will come to it,
+- [01:38:23,220 - 01:38:23,780] I think,
+- [01:38:23,800 - 01:38:24,240] well,
+- [01:38:24,240 - 01:38:24,540] I don't know.
+- [01:38:24,580 - 01:38:25,460] Should we go on a little bit?
+- [01:38:26,020 - 01:38:29,100] I'm a little afraid to overdo it tonight.
+- [01:38:30,740 - 01:38:31,140] Okay.
+- [01:38:31,760 - 01:38:33,560] Let's go on for a little bit.
+- [01:38:35,080 - 01:38:36,360] Let's go on for a little bit.
+- [01:38:38,060 - 01:38:38,600] Good.
+- [01:38:38,780 - 01:38:39,800] Let's go on for a little bit.
+- [01:38:47,560 - 01:38:54,100] Now what we're going to consider is classical field theory.
+- [01:38:55,240 - 01:38:57,600] The universe is filled with some field.
+- [01:38:58,020 - 01:39:00,420] This field is going to be a scalar field.
+- [01:39:00,900 - 01:39:01,440] Now,
+- [01:39:01,440 - 01:39:02,520] where does this come from?
+- [01:39:02,620 - 01:39:03,540] What scalar field?
+- [01:39:03,780 - 01:39:05,180] It was made up.
+- [01:39:05,180 - 01:39:08,620] It was simply made up in order
+- [01:39:08,620 - 01:39:12,060] to be able to explain the isotropy
+- [01:39:12,060 - 01:39:13,580] and the homogeneity of the universe.
+- [01:39:13,920 - 01:39:15,880] At the time this was created,
+- [01:39:15,880 - 01:39:17,260] it was a long shot,
+- [01:39:17,260 - 01:39:18,800] a rather crazy idea,
+- [01:39:19,100 - 01:39:20,960] but it seems to be right.
+- [01:39:21,400 - 01:39:21,840] Okay.
+- [01:39:21,940 - 01:39:23,480] So here's the idea.
+- [01:39:23,580 - 01:39:24,560] The world contains,
+- [01:39:24,560 - 01:39:27,900] in addition to the electromagnetic field,
+- [01:39:28,000 - 01:39:29,060] the gravitational field,
+- [01:39:29,060 - 01:39:30,400] and all the usual fields,
+- [01:39:30,400 - 01:39:32,140] there's one more field.
+- [01:39:32,400 - 01:39:33,760] It's a scalar field.
+- [01:39:33,760 - 01:39:36,020] And it's called the inflaton,
+- [01:39:36,020 - 01:39:36,800] phi.
+- [01:39:39,120 - 01:39:39,740] Why?
+- [01:39:39,900 - 01:39:41,100] Because it has to do with inflation.
+- [01:39:44,080 - 01:39:44,700] Now,
+- [01:39:44,700 - 01:39:47,510] we're going to assume that phi
+- [01:39:47,510 - 01:39:50,320] is pretty much uniform in space.
+- [01:39:50,780 - 01:39:53,220] We could assume it's not uniform in space,
+- [01:39:53,220 - 01:39:55,200] but as the space expands,
+- [01:39:55,600 - 01:39:58,900] it will tend to stretch out the variations in phi.
+- [01:39:59,080 - 01:40:01,370] So let's just assume for simplicity
+- [01:40:01,370 - 01:40:03,660] that phi is uniform in space,
+- [01:40:03,660 - 01:40:14,200] and think about the energy stored in a field,
+- [01:40:14,200 - 01:40:15,780] in a scalar field of this type.
+- [01:40:18,080 - 01:40:23,590] Does everybody remember what the energy
+- [01:40:23,590 - 01:40:29,100] density of a scalar field is?
+- [01:40:29,140 - 01:40:31,820] It contains a kinetic term with time derivatives.
+- [01:40:32,680 - 01:40:34,140] This is the energy density.
+- [01:40:35,780 - 01:40:36,940] It contains...
+- [01:40:41,140 - 01:40:42,920] This is the energy density,
+- [01:40:42,920 - 01:40:48,040] let's just call it the energy of a scalar field.
+- [01:40:48,440 - 01:40:50,140] It contains one term,
+- [01:40:50,140 - 01:40:51,500] which is phi dot squared.
+- [01:40:51,880 - 01:40:54,360] This is just the kinetic energy of the field,
+- [01:40:54,540 - 01:40:56,130] not the kinetic energy in
+- [01:40:56,130 - 01:40:57,720] the sense of movement in space,
+- [01:40:58,020 - 01:41:00,520] but the sense due to time dependence.
+- [01:41:02,420 - 01:41:02,900] Then,
+- [01:41:02,900 - 01:41:03,380] typically,
+- [01:41:03,380 - 01:41:05,380] there is another term which has
+- [01:41:05,380 - 01:41:07,380] to do with gradients in space.
+- [01:41:08,240 - 01:41:09,120] So this case,
+- [01:41:09,120 - 01:41:11,240] the dot is a partial derivative of the...
+- [01:41:11,240 - 01:41:12,160] With respect to time.
+- [01:41:12,360 - 01:41:13,060] It is,
+- [01:41:13,060 - 01:41:13,560] right.
+- [01:41:13,680 - 01:41:14,820] d phi by dt squared.
+- [01:41:16,200 - 01:41:18,210] There's also terms in the energy which
+- [01:41:18,210 - 01:41:20,220] have to do with gradients in space.
+- [01:41:20,780 - 01:41:22,740] Gradients in space also store energy.
+- [01:41:22,980 - 01:41:25,920] But since we've assumed that the field is homogeneous,
+- [01:41:26,860 - 01:41:28,900] and is not varying in space,
+- [01:41:29,840 - 01:41:31,040] which we can justify,
+- [01:41:31,040 - 01:41:31,800] but we can do that later,
+- [01:41:31,820 - 01:41:34,980] there are no gradients in space.
+- [01:41:35,360 - 01:41:36,650] And so this is the
+- [01:41:36,650 - 01:41:37,940] only term in the energy density
+- [01:41:37,940 - 01:41:39,760] that has derivatives in it.
+- [01:41:39,900 - 01:41:42,040] Then the other thing that can be there
+- [01:41:42,040 - 01:41:43,880] is a potential energy.
+- [01:41:44,300 - 01:41:48,400] A potential energy which is plus V of phi.
+- [01:41:51,820 - 01:41:53,660] It's just a thing that's made up.
+- [01:41:54,140 - 01:41:57,820] That different values of the field have different energy.
+- [01:41:58,060 - 01:41:59,560] Doesn't have to do with derivatives.
+- [01:41:59,860 - 01:42:01,800] Just in having a field of...
+- [01:42:01,800 - 01:42:02,720] of a given magnitude,
+- [01:42:03,000 - 01:42:05,680] there's an energy density associated with it.
+- [01:42:08,120 - 01:42:10,380] That's called the field potential energy.
+- [01:42:11,460 - 01:42:13,340] And it's not by accident that
+- [01:42:13,340 - 01:42:15,220] I'm giving these the same notation.
+- [01:42:15,640 - 01:42:17,040] Phi is a field.
+- [01:42:17,180 - 01:42:18,780] Up here it was the coordinate of a stone.
+- [01:42:19,100 - 01:42:20,420] But it's not by accident.
+- [01:42:20,720 - 01:42:20,860] Okay.
+- [01:42:21,040 - 01:42:21,600] Now,
+- [01:42:21,600 - 01:42:22,460] this...
+- [01:42:23,540 - 01:42:25,320] Let's follow the field,
+- [01:42:25,420 - 01:42:27,480] and let's follow it in a box.
+- [01:42:28,000 - 01:42:29,700] In an expanding box.
+- [01:42:29,700 - 01:42:30,880] As always,
+- [01:42:30,880 - 01:42:32,680] the box that we focus on
+- [01:42:32,680 - 01:42:34,080] is expanding with the universe.
+- [01:42:34,340 - 01:42:36,640] And how big is it at any given time?
+- [01:42:36,740 - 01:42:37,680] How big is that box?
+- [01:42:38,200 - 01:42:40,980] That box is of size a cubed.
+- [01:42:41,540 - 01:42:43,060] The scale factor cubed.
+- [01:42:43,260 - 01:42:45,500] Let's say it's a unit box in coordinate space.
+- [01:42:46,540 - 01:42:48,800] The size of the box is a cubed.
+- [01:42:49,640 - 01:42:50,200] Alright.
+- [01:42:50,340 - 01:42:52,040] This is the energy density.
+- [01:42:52,700 - 01:42:54,260] This is the energy density.
+- [01:42:56,539 - 01:42:57,099] So,
+- [01:42:57,099 - 01:42:58,360] to get the energy,
+- [01:42:58,360 - 01:42:59,880] I wrote energy here,
+- [01:43:00,020 - 01:43:01,720] but this is really energy per unit volume.
+- [01:43:02,060 - 01:43:03,670] If I want to write the
+- [01:43:03,670 - 01:43:05,280] energy of the field in the box,
+- [01:43:05,540 - 01:43:08,100] I have to multiply it by a cubed.
+- [01:43:13,900 - 01:43:16,220] But a is time dependent.
+- [01:43:16,560 - 01:43:17,900] It depends on time.
+- [01:43:22,360 - 01:43:22,920] So,
+- [01:43:22,920 - 01:43:27,720] we have a time dependent energy expression.
+- [01:43:27,720 - 01:43:29,120] a cubed of t.
+- [01:43:32,320 - 01:43:34,620] Kinetic energy plus potential energy.
+- [01:43:35,240 - 01:43:36,780] You can think of this,
+- [01:43:36,780 - 01:43:37,280] if you like,
+- [01:43:37,500 - 01:43:38,500] as formally,
+- [01:43:38,500 - 01:43:39,400] mathematically,
+- [01:43:39,860 - 01:43:45,380] being the same as the energy of a particle,
+- [01:43:45,600 - 01:43:47,520] kinetic energy plus potential energy,
+- [01:43:47,820 - 01:43:50,640] except with a coefficient out here,
+- [01:43:50,720 - 01:43:51,640] which depends on time.
+- [01:43:51,740 - 01:43:53,520] Something you wouldn't ordinarily write down.
+- [01:43:54,220 - 01:43:56,680] You might have a funny situation,
+- [01:43:56,680 - 01:44:01,620] where the mass of a particle might depend on time.
+- [01:44:01,780 - 01:44:02,460] And then,
+- [01:44:02,460 - 01:44:05,100] this might depend on...
+- [01:44:05,100 - 01:44:05,740] But ordinarily,
+- [01:44:05,740 - 01:44:06,740] you wouldn't write that down.
+- [01:44:07,120 - 01:44:07,600] Nevertheless,
+- [01:44:07,600 - 01:44:08,720] that's what we have.
+- [01:44:09,040 - 01:44:10,060] We have an energy,
+- [01:44:10,060 - 01:44:11,880] kinetic plus potential.
+- [01:44:12,320 - 01:44:14,260] Is any dependence on spatial coordinates?
+- [01:44:14,540 - 01:44:15,540] Let's assume...
+- [01:44:15,540 - 01:44:15,840] Oh,
+- [01:44:15,840 - 01:44:16,160] on a?
+- [01:44:16,520 - 01:44:17,000] No,
+- [01:44:17,000 - 01:44:17,960] a is just a scale factor.
+- [01:44:18,200 - 01:44:18,220] Right,
+- [01:44:18,220 - 01:44:18,320] right.
+- [01:44:18,360 - 01:44:18,820] Let's assume on a,
+- [01:44:18,820 - 01:44:19,860] time.
+- [01:44:21,180 - 01:44:22,240] If there was...
+- [01:44:22,240 - 01:44:22,400] Okay.
+- [01:44:22,480 - 01:44:24,600] If there was spatial dependence,
+- [01:44:24,800 - 01:44:26,480] we would have to add in here a term,
+- [01:44:26,480 - 01:44:28,200] for spatial gradients.
+- [01:44:28,620 - 01:44:29,420] Let's assume,
+- [01:44:29,420 - 01:44:30,320] for the moment,
+- [01:44:30,400 - 01:44:31,880] that the field is uniform in space.
+- [01:44:32,560 - 01:44:33,500] If it's not,
+- [01:44:33,500 - 01:44:35,320] eventually it will be,
+- [01:44:35,480 - 01:44:37,940] because the expansion will stretch it out,
+- [01:44:37,980 - 01:44:39,200] and get rid of the gradients,
+- [01:44:39,200 - 01:44:40,800] and stretch it out.
+- [01:44:41,200 - 01:44:41,700] So,
+- [01:44:41,700 - 01:44:43,860] it's reasonable to assume,
+- [01:44:44,060 - 01:44:45,320] that after a period of time,
+- [01:44:46,120 - 01:44:47,780] there are no gradients.
+- [01:44:48,040 - 01:44:49,840] No gradients of the field in space.
+- [01:44:50,160 - 01:44:50,480] But I mean,
+- [01:44:50,480 - 01:44:51,580] just on a conceptual level,
+- [01:44:51,600 - 01:44:53,880] we're thinking of associating this field value
+- [01:44:53,880 - 01:44:54,960] with a point in space.
+- [01:44:55,280 - 01:44:55,500] Yes,
+- [01:44:55,500 - 01:44:55,900] yes,
+- [01:44:55,900 - 01:44:56,280] yes.
+- [01:44:56,280 - 01:44:59,240] But if we assume that it's uniform,
+- [01:44:59,660 - 01:45:01,180] then all we need to
+- [01:45:01,180 - 01:45:02,700] do to find the total energy
+- [01:45:02,700 - 01:45:04,720] is to multiply by the volume of the box,
+- [01:45:04,900 - 01:45:05,900] which is time dependent.
+- [01:45:07,140 - 01:45:08,900] Is there a question?
+- [01:45:09,440 - 01:45:12,580] Is there any physical thing we can think of
+- [01:45:12,580 - 01:45:13,580] for the feed off?
+- [01:45:13,780 - 01:45:14,540] In other words,
+- [01:45:14,540 - 01:45:15,300] that kinetic,
+- [01:45:15,460 - 01:45:15,940] as you say,
+- [01:45:15,940 - 01:45:16,620] is not moving,
+- [01:45:16,720 - 01:45:17,580] it's a time interval,
+- [01:45:17,880 - 01:45:18,440] but what...
+- [01:45:18,440 - 01:45:18,620] Yeah.
+- [01:45:18,740 - 01:45:19,220] Is there any,
+- [01:45:19,220 - 01:45:20,800] any simple way
+- [01:45:20,800 - 01:45:21,460] to think of that?
+- [01:45:21,980 - 01:45:22,620] I mean,
+- [01:45:22,620 - 01:45:23,040] physical?
+- [01:45:24,360 - 01:45:24,840] It's...
+- [01:45:24,840 - 01:45:25,320] Well,
+- [01:45:25,320 - 01:45:25,880] I'll just...
+- [01:45:25,880 - 01:45:28,620] I'm so used to it that I think of it
+- [01:45:28,620 - 01:45:29,660] as sort of obvious,
+- [01:45:29,660 - 01:45:30,060] but...
+- [01:45:30,060 - 01:45:31,280] What's the field doing?
+- [01:45:31,340 - 01:45:33,980] Is it getting stronger or weaker?
+- [01:45:34,440 - 01:45:35,360] We're going to find out.
+- [01:45:35,500 - 01:45:37,040] We have to solve the equations of motion.
+- [01:45:37,360 - 01:45:37,600] Okay.
+- [01:45:39,100 - 01:45:40,700] That's like asking...
+- [01:45:40,700 - 01:45:42,560] That's like asking what's happened to this particle.
+- [01:45:42,760 - 01:45:43,920] Is it moving up or moving down?
+- [01:45:44,540 - 01:45:47,440] That will depend on the initial conditions,
+- [01:45:47,560 - 01:45:49,260] it will depend on how long we wait,
+- [01:45:49,360 - 01:45:50,580] and it will especially depend
+- [01:45:50,580 - 01:45:52,980] on the sign of dv d phi,
+- [01:45:53,260 - 01:45:54,700] namely the sign of the force.
+- [01:45:55,880 - 01:45:56,320] Well,
+- [01:45:56,320 - 01:45:57,220] whatever's doing it,
+- [01:45:57,240 - 01:45:58,200] it's doing it everywhere.
+- [01:45:58,560 - 01:46:00,340] It's doing it everywhere simultaneously.
+- [01:46:01,160 - 01:46:01,820] All right?
+- [01:46:02,060 - 01:46:02,540] Right.
+- [01:46:02,640 - 01:46:02,820] Now,
+- [01:46:02,820 - 01:46:04,080] we can back off that
+- [01:46:04,080 - 01:46:05,420] and study what happens when it's not,
+- [01:46:05,440 - 01:46:07,380] but this is the easy problem to study.
+- [01:46:08,200 - 01:46:08,680] Okay.
+- [01:46:10,260 - 01:46:10,740] Now,
+- [01:46:10,740 - 01:46:13,400] how do we find the equation of motion
+- [01:46:14,080 - 01:46:15,940] when we know the kinetic energy
+- [01:46:15,940 - 01:46:17,420] and we know the potential energy?
+- [01:46:18,920 - 01:46:20,740] There's various ways we could do it,
+- [01:46:20,800 - 01:46:22,400] but the most efficient way
+- [01:46:22,400 - 01:46:24,680] is through Lagrange's equations.
+- [01:46:25,380 - 01:46:25,860] Lagrange's equations are the following.
+- [01:46:25,860 - 01:46:26,500] Lagrangian,
+- [01:46:26,500 - 01:46:28,380] let's write the Lagrangian now.
+- [01:46:28,620 - 01:46:31,080] The Lagrangian is the difference
+- [01:46:31,080 - 01:46:33,500] of kinetic energy and potential energy.
+- [01:46:33,960 - 01:46:34,420] So,
+- [01:46:34,420 - 01:46:37,080] you pick up your copy of the theoretical minimum
+- [01:46:37,400 - 01:46:39,820] and you look up Lagrange's equations
+- [01:46:42,259 - 01:46:43,300] with this.
+- [01:46:44,240 - 01:46:46,100] Phi is like the coordinate,
+- [01:46:46,420 - 01:46:47,680] phi is like the coordinate,
+- [01:46:47,980 - 01:46:49,780] and here is the Lagrangian.
+- [01:46:50,320 - 01:46:53,380] The only new thing that wouldn't be there
+- [01:46:53,380 - 01:46:54,940] for an ordinary particle
+- [01:46:56,000 - 01:46:57,460] is this A of t.
+- [01:46:58,580 - 01:46:59,400] All right,
+- [01:46:59,400 - 01:47:01,060] so let's work out Lagrange's equations.
+- [01:47:01,880 - 01:47:04,840] The first term is d by dt,
+- [01:47:05,900 - 01:47:07,900] or I suppose we can make it...
+- [01:47:09,380 - 01:47:13,420] d by dt of partial of L
+- [01:47:13,420 - 01:47:16,280] with respect to phi dot.
+- [01:47:16,440 - 01:47:17,260] Everybody remember that?
+- [01:47:19,440 - 01:47:21,240] And what's on the right-hand side?
+- [01:47:24,120 - 01:47:24,760] Right.
+- [01:47:27,180 - 01:47:28,420] That's Lagrange's equations.
+- [01:47:29,060 - 01:47:29,540] So,
+- [01:47:29,540 - 01:47:32,020] partial of L with respect to phi dot...
+- [01:47:33,440 - 01:47:35,480] This is the equation that we get out of it.
+- [01:47:35,540 - 01:47:37,180] Partial of L with respect to phi dot
+- [01:47:37,180 - 01:47:38,040] is just phi dot,
+- [01:47:39,680 - 01:47:41,500] times A cubed of t.
+- [01:47:44,620 - 01:47:48,160] This is partial of L with respect to phi dot.
+- [01:47:48,200 - 01:47:49,760] This isn't here.
+- [01:47:50,400 - 01:47:51,740] dL by d phi dot
+- [01:47:51,740 - 01:47:54,500] is phi dot times A cubed of t.
+- [01:47:54,560 - 01:47:55,020] Is that obvious?
+- [01:47:55,860 - 01:47:56,460] Good.
+- [01:47:56,720 - 01:47:59,420] Now we have to take its time derivative,
+- [01:47:59,680 - 01:48:00,620] d by dt.
+- [01:48:03,980 - 01:48:06,220] And that we have to set equal
+- [01:48:06,860 - 01:48:08,060] to A cubed
+- [01:48:13,239 - 01:48:15,240] times minus A cubed
+- [01:48:15,240 - 01:48:16,660] times dv d phi.
+- [01:48:19,140 - 01:48:20,800] Or just ordinary derivative,
+- [01:48:21,100 - 01:48:22,180] dv d phi.
+- [01:48:26,520 - 01:48:28,120] We could call dv d phi,
+- [01:48:28,300 - 01:48:29,280] we could call it the force.
+- [01:48:29,380 - 01:48:30,360] So minus dv d phi,
+- [01:48:30,480 - 01:48:31,440] we could call it the force.
+- [01:48:32,460 - 01:48:33,640] But notice that there's
+- [01:48:33,640 - 01:48:37,440] this extra explicit time dependent thing there.
+- [01:48:38,380 - 01:48:40,420] This doesn't quite look like Newton's equations.
+- [01:48:41,460 - 01:48:44,180] It would be Newton's equations if A was constant.
+- [01:48:44,980 - 01:48:45,420] Okay?
+- [01:48:45,540 - 01:48:46,800] But A is not constant.
+- [01:48:46,960 - 01:48:48,560] So let's work it out and see what it is.
+- [01:48:49,060 - 01:48:49,940] First of all,
+- [01:48:49,940 - 01:48:50,700] the d by dt,
+- [01:48:51,820 - 01:48:53,040] there are two terms.
+- [01:48:53,300 - 01:48:55,120] One comes from hitting phi dot.
+- [01:48:55,120 - 01:48:56,840] The other comes from hitting A cubed.
+- [01:48:57,140 - 01:48:59,040] So let's first do the first one.
+- [01:48:59,120 - 01:49:01,300] The first one is A cubed
+- [01:49:01,980 - 01:49:03,180] times phi double dot.
+- [01:49:04,580 - 01:49:06,900] That's d by dt of phi dot
+- [01:49:06,900 - 01:49:08,340] times A cubed.
+- [01:49:08,680 - 01:49:09,760] And what's the second term?
+- [01:49:11,360 - 01:49:12,500] It's phi dot
+- [01:49:14,799 - 01:49:17,300] times the time derivative of A cubed.
+- [01:49:18,080 - 01:49:18,680] Okay?
+- [01:49:18,760 - 01:49:20,720] The time derivative of A cubed
+- [01:49:20,720 - 01:49:21,740] is
+- [01:49:21,740 - 01:49:22,920] three
+- [01:49:22,920 - 01:49:24,680] A squared
+- [01:49:25,580 - 01:49:27,120] times A dot.
+- [01:49:28,660 - 01:49:29,780] Do I have that right?
+- [01:49:30,660 - 01:49:30,960] Yeah.
+- [01:49:31,240 - 01:49:33,600] That's in a parenthesis over here.
+- [01:49:34,480 - 01:49:35,740] And that's equal,
+- [01:49:35,960 - 01:49:37,640] let's just call it,
+- [01:49:37,680 - 01:49:40,160] to A cubed times the force.
+- [01:49:41,520 - 01:49:43,260] The force on phi.
+- [01:49:46,560 - 01:49:47,160] Okay.
+- [01:49:48,240 - 01:49:49,400] It's very tempting,
+- [01:49:49,400 - 01:49:50,360] and I will do it,
+- [01:49:50,400 - 01:49:52,300] to divide out the A cubed,
+- [01:49:52,920 - 01:49:54,080] because it appears both here and here.
+- [01:49:55,060 - 01:49:56,840] Let's divide out the A cubed.
+- [01:49:59,580 - 01:50:01,640] But I better divide over here also,
+- [01:50:01,640 - 01:50:01,880] huh?
+- [01:50:03,780 - 01:50:04,420] Okay.
+- [01:50:08,180 - 01:50:10,200] So let's clean it up.
+- [01:50:10,820 - 01:50:12,460] It's phi double dot
+- [01:50:13,579 - 01:50:14,860] plus three
+- [01:50:16,120 - 01:50:18,040] A dot over A,
+- [01:50:20,919 - 01:50:24,180] A squared divided by A cubed is one over A,
+- [01:50:24,420 - 01:50:25,920] so it's A dot over A
+- [01:50:26,779 - 01:50:28,200] times phi dot
+- [01:50:29,360 - 01:50:30,660] is equal to F.
+- [01:50:32,700 - 01:50:35,160] What is A dot over A called in cosmology?
+- [01:50:36,700 - 01:50:37,880] The Hubble constant,
+- [01:50:38,060 - 01:50:39,600] which is not generally a constant,
+- [01:50:39,820 - 01:50:41,020] but it's H.
+- [01:50:41,960 - 01:50:43,320] It's of course...
+- [01:50:43,320 - 01:50:45,480] It's supposed to be like the same everywhere,
+- [01:50:45,480 - 01:50:45,860] though?
+- [01:50:46,380 - 01:50:47,260] Everywhere's in space,
+- [01:50:47,260 - 01:50:49,080] but not necessarily in time.
+- [01:50:49,680 - 01:50:51,040] Maybe the same in time,
+- [01:50:51,100 - 01:50:51,860] but it may not be.
+- [01:50:52,760 - 01:50:53,340] All right.
+- [01:50:53,360 - 01:50:55,340] So we'll come back to what it is in time,
+- [01:50:55,380 - 01:50:56,160] but keep in mind,
+- [01:50:56,200 - 01:50:57,360] it could be time dependent.
+- [01:50:59,120 - 01:51:00,000] A double...
+- [01:51:00,000 - 01:51:00,360] Sorry,
+- [01:51:00,360 - 01:51:01,340] not A double dot,
+- [01:51:01,420 - 01:51:02,100] phi double dot.
+- [01:51:03,700 - 01:51:05,720] Phi double dot from here
+- [01:51:06,440 - 01:51:10,280] plus three H times phi dot equals F.
+- [01:51:16,000 - 01:51:17,240] Let's write this one this way.
+- [01:51:17,240 - 01:51:18,040] Plus...
+- [01:51:20,120 - 01:51:21,720] equals F.
+- [01:51:23,400 - 01:51:25,900] This is exactly the same equation
+- [01:51:25,900 - 01:51:27,920] as the falling stone
+- [01:51:29,960 - 01:51:32,480] with a viscosity coefficient three H
+- [01:51:33,240 - 01:51:36,060] and a force which is just a gradient of V.
+- [01:51:37,820 - 01:51:42,080] So our model for the way this field evolves
+- [01:51:43,000 - 01:51:44,920] can be envisioned
+- [01:51:47,240 - 01:51:48,600] by just supposing
+- [01:51:49,440 - 01:51:51,860] that phi was the position
+- [01:51:51,860 - 01:51:54,280] of a particle on a hill
+- [01:51:55,120 - 01:51:57,320] where the height of the hill was V,
+- [01:51:58,880 - 01:52:02,360] where the gradient of the altitude of the hill
+- [01:52:02,360 - 01:52:03,260] was the force,
+- [01:52:04,200 - 01:52:04,980] dV d phi,
+- [01:52:06,900 - 01:52:09,140] a ball rolling down the hill,
+- [01:52:10,299 - 01:52:14,040] except that there's a viscous drag force
+- [01:52:14,940 - 01:52:17,120] proportional to the Hubble expansion rate,
+- [01:52:18,040 - 01:52:18,720] which is the force of the hill.
+- [01:52:18,720 - 01:52:20,080] So the Hubble expansion rate
+- [01:52:20,960 - 01:52:23,140] behaves as a kind of friction.
+- [01:52:24,460 - 01:52:27,720] That is why we went through this exercise over here.
+- [01:52:28,300 - 01:52:33,640] If the Hubble friction is strong,
+- [01:52:33,980 - 01:52:35,760] if H is big,
+- [01:52:35,860 - 01:52:37,800] and the force here,
+- [01:52:37,940 - 01:52:41,100] and if the hill is reasonably flat,
+- [01:52:41,200 - 01:52:42,560] not terribly flat,
+- [01:52:42,740 - 01:52:44,040] but somewhat flat,
+- [01:52:45,700 - 01:52:46,380] then...
+- [01:52:46,380 - 01:52:49,720] this could be like a ball moving through
+- [01:52:52,259 - 01:52:55,620] motor oil in Wisconsin on a cold day.
+- [01:52:56,320 - 01:52:56,620] Okay?
+- [01:52:58,419 - 01:53:00,660] It's just left to its own devices
+- [01:53:00,660 - 01:53:02,000] without the friction term.
+- [01:53:02,180 - 01:53:05,360] It might roll down the hill in a few seconds.
+- [01:53:05,680 - 01:53:06,020] All right?
+- [01:53:06,240 - 01:53:07,620] With a large friction,
+- [01:53:07,840 - 01:53:09,800] it could take years to roll down the hill,
+- [01:53:09,860 - 01:53:11,480] depending on the magnitude of the friction.
+- [01:53:12,279 - 01:53:15,300] So this is called the cosmic friction term.
+- [01:53:15,300 - 01:53:19,120] In the equation of motion of a scalar field.
+- [01:53:19,680 - 01:53:21,200] And it has the effect,
+- [01:53:21,260 - 01:53:23,800] it has the simple effect of slowing down
+- [01:53:23,800 - 01:53:25,460] the evolution of the system
+- [01:53:25,460 - 01:53:30,400] and keeping the ball from rolling down the hill.
+- [01:53:30,840 - 01:53:31,920] The next time,
+- [01:53:31,940 - 01:53:33,400] we're going to use this
+- [01:53:33,400 - 01:53:37,220] to study the cosmology of a universe
+- [01:53:37,220 - 01:53:39,520] which contains a field like this.
+- [01:53:39,620 - 01:53:40,000] In other words,
+- [01:53:40,000 - 01:53:41,260] we're going to look at the FRW,
+- [01:53:41,340 - 01:53:41,680] sorry,
+- [01:53:41,900 - 01:53:43,240] the Friedman equation,
+- [01:53:44,660 - 01:53:45,280] which is the,
+- [01:53:45,280 - 01:53:46,460] with an energy density
+- [01:53:47,320 - 01:53:49,220] which is given by this.
+- [01:53:50,260 - 01:53:51,040] All right?
+- [01:53:51,080 - 01:53:51,860] So we're going to study,
+- [01:53:51,940 - 01:53:53,600] we're going to study how the universe
+- [01:53:54,019 - 01:53:55,000] expands and evolves
+- [01:53:55,780 - 01:53:58,660] under the influence of an energy density
+- [01:53:59,240 - 01:54:00,760] which is slowly,
+- [01:54:00,760 - 01:54:01,240] slowly,
+- [01:54:01,240 - 01:54:01,540] slowly
+- [01:54:01,540 - 01:54:02,880] rolling down the hill here.
+- [01:54:03,280 - 01:54:05,120] That's the phenomenon of inflation.
+- [01:54:05,980 - 01:54:07,940] That the way the universe responds
+- [01:54:07,940 - 01:54:10,100] to this very slowly moving field.
+- [01:54:10,620 - 01:54:11,220] Okay.
+- [01:54:11,300 - 01:54:11,900] Next time.
+- [01:54:16,480 - 01:54:17,480] For more,
+- [01:54:17,480 - 01:54:19,900] please visit us at stanford.edu.
