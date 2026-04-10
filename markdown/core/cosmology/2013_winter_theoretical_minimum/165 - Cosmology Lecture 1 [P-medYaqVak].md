@@ -1,0 +1,2714 @@
+# Transcript
+
+Source: core/cosmology/2013_winter_theoretical_minimum/165 - Cosmology Lecture 1 [P-medYaqVak].webm
+
+- [00:00:04,900 - 00:00:06,180] Stanford University.
+- [00:00:08,940 - 00:00:09,580] Okay,
+- [00:00:09,580 - 00:00:10,740] let's start.
+- [00:00:10,740 - 00:00:16,020] This quarter's subject is cosmology.
+- [00:00:16,020 - 00:00:18,540] Cosmology is,
+- [00:00:18,540 - 00:00:18,880] of course,
+- [00:00:18,880 - 00:00:19,580] a very old
+- [00:00:19,580 - 00:00:20,080] subject.
+- [00:00:20,080 - 00:00:26,960] It goes back thousands of years,
+- [00:00:26,960 - 00:00:28,150] but I'm not going to tell
+- [00:00:28,150 - 00:00:29,340] you about thousands of years of
+- [00:00:29,340 - 00:00:29,920] cosmology,
+- [00:00:29,920 - 00:00:31,280] but I say thousands of years.
+- [00:00:31,280 - 00:00:32,420] I'm talking about the Greeks,
+- [00:00:32,420 - 00:00:32,900] of course,
+- [00:00:32,900 - 00:00:34,840] but we're
+- [00:00:34,840 - 00:00:37,400] not going to go here back thousands of years.
+- [00:00:37,400 - 00:00:40,780] We're going to go back at
+- [00:00:40,780 - 00:00:44,160] most to some time in the
+- [00:00:45,599 - 00:00:49,060] second quarter of the 20th century,
+- [00:00:49,060 - 00:00:53,820] when Hubble discovered that the universe is expanding.
+- [00:00:55,760 - 00:00:57,400] But let's just say a few
+- [00:00:57,400 - 00:00:59,040] words about the science of cosmology.
+- [00:00:59,100 - 00:00:59,320] The science of cosmology is the science of cosmology.
+- [00:00:59,320 - 00:00:59,320] The science of cosmology is the science of cosmology.
+- [00:00:59,340 - 00:01:01,740] The science of cosmology is new,
+- [00:01:01,740 - 00:01:04,180] or at least what we know about it.
+- [00:01:04,180 - 00:01:05,160] A minute ago,
+- [00:01:05,160 - 00:01:06,160] I said it was very old.
+- [00:01:06,320 - 00:01:06,820] Yes,
+- [00:01:06,820 - 00:01:07,440] in a sense,
+- [00:01:07,440 - 00:01:11,540] but the modern subject of cosmology is very new.
+- [00:01:11,540 - 00:01:16,320] It really dates to well after Hubble.
+- [00:01:17,000 - 00:01:22,060] It dates to the discovery of the Big Bang,
+- [00:01:22,060 - 00:01:25,140] the three degree microwave radiation that was discovered
+- [00:01:25,140 - 00:01:27,940] as the remnant of the Big Bang.
+- [00:01:27,940 - 00:01:33,560] And that happened sometime in the 60s.
+- [00:01:33,560 - 00:01:35,320] So I was a student.
+- [00:01:35,320 - 00:01:36,280] I was a young student.
+- [00:01:36,280 - 00:01:37,920] And before that,
+- [00:01:39,500 - 00:01:42,560] cosmology was in a certain sense
+- [00:01:42,560 - 00:01:45,620] less like physics and more like
+- [00:01:47,440 - 00:01:48,480] natural science,
+- [00:01:48,480 - 00:01:49,980] like what a naturalist does.
+- [00:01:49,980 - 00:01:52,140] Studies this kind of thing,
+- [00:01:52,140 - 00:01:53,000] studies that kind
+- [00:01:53,000 - 00:01:53,400] of thing.
+- [00:01:53,400 - 00:01:55,340] You find a funny star over there.
+- [00:01:55,340 - 00:01:57,860] You find a galaxy over there that looks a little
+- [00:01:57,860 - 00:01:58,100] weird.
+- [00:01:58,100 - 00:02:01,360] To classify you name things.
+- [00:02:01,360 - 00:02:03,720] You measure things to be sure.
+- [00:02:04,140 - 00:02:07,059] But the accuracy with which things were known
+- [00:02:07,059 - 00:02:09,979] was so poor that it was extremely difficult
+- [00:02:09,979 - 00:02:11,560] to be precise about it.
+- [00:02:11,560 - 00:02:15,190] And it's only fairly recently
+- [00:02:15,190 - 00:02:18,820] that physicists – physicists are always
+- [00:02:18,820 - 00:02:19,360] involved,
+- [00:02:19,360 - 00:02:21,230] but they were involved because many
+- [00:02:21,230 - 00:02:23,100] of the things that you see,
+- [00:02:23,100 - 00:02:24,000] many of these strange
+- [00:02:24,000 - 00:02:24,500] creatures,
+- [00:02:24,500 - 00:02:25,460] funny stars,
+- [00:02:25,460 - 00:02:27,140] galaxies and so forth.
+- [00:02:27,140 - 00:02:27,460] Many of these strange creatures,
+- [00:02:27,460 - 00:02:27,460] funny stars,
+- [00:02:27,460 - 00:02:27,460] galaxies and so forth.
+- [00:02:27,460 - 00:02:27,840] And of course,
+- [00:02:27,840 - 00:02:27,840] for the first time in the history of physics,
+- [00:02:27,840 - 00:02:27,840] we're going to
+- [00:02:27,840 - 00:02:28,740] are physical systems,
+- [00:02:28,740 - 00:02:31,020] and to describe them properly,
+- [00:02:31,020 - 00:02:32,500] they have angular momentum,
+- [00:02:32,500 - 00:02:32,860] they
+- [00:02:32,860 - 00:02:34,700] have all the things that physical systems have,
+- [00:02:34,700 - 00:02:37,640] there's chemicals out there,
+- [00:02:37,640 - 00:02:38,200] and so
+- [00:02:38,890 - 00:02:40,700] physical chemists were involved.
+- [00:02:40,700 - 00:02:44,840] But thinking of the universe as a physical system,
+- [00:02:44,840 - 00:02:45,840] as a
+- [00:02:45,840 - 00:02:48,120] system to study mathematically,
+- [00:02:48,120 - 00:02:51,350] and with a set of physical
+- [00:02:51,350 - 00:02:54,580] principles and a set of equations
+- [00:02:54,580 - 00:02:58,040] of course there were always sets of equations way back,
+- [00:02:58,040 - 00:02:59,240] but wrong equations,
+- [00:02:59,240 - 00:03:01,440] right equations,
+- [00:03:02,920 - 00:03:04,460] and accurate equations,
+- [00:03:04,460 - 00:03:07,320] things which agreed with observation,
+- [00:03:07,320 - 00:03:09,220] that's relatively new.
+- [00:03:11,560 - 00:03:13,520] More or less over the
+- [00:03:13,520 - 00:03:15,480] history of my career in physics,
+- [00:03:15,480 - 00:03:17,840] which is 50 years,
+- [00:03:17,840 - 00:03:18,680] something like that.
+- [00:03:19,800 - 00:03:21,140] And that's what we're going to study.
+- [00:03:21,140 - 00:03:23,580] We're going to study the universe as a system.
+- [00:03:24,580 - 00:03:25,620] In other words,
+- [00:03:25,620 - 00:03:28,860] a universe as a system
+- [00:03:28,860 - 00:03:32,100] that we can study with equations.
+- [00:03:32,500 - 00:03:34,240] So if you don't like equations,
+- [00:03:34,240 - 00:03:35,860] you're in the wrong place.
+- [00:03:37,580 - 00:03:38,380] Alright,
+- [00:03:38,380 - 00:03:39,960] so where do you start?
+- [00:03:39,960 - 00:03:42,440] You start with some observations.
+- [00:03:42,980 - 00:03:43,460] Now,
+- [00:03:43,460 - 00:03:45,120] the first observation,
+- [00:03:45,120 - 00:03:52,340] which may not really turn out to be absolutely true,
+- [00:03:52,340 - 00:03:52,980] for reasons
+- [00:03:53,580 - 00:03:54,020] that...
+- [00:03:55,000 - 00:03:56,460] It's not absolutely true,
+- [00:03:56,460 - 00:03:58,660] but it looks like it's approximately true,
+- [00:03:58,660 - 00:04:00,700] is that the universe
+- [00:04:00,700 - 00:04:02,800] is what is called isotropic.
+- [00:04:04,060 - 00:04:06,680] Isotropic means that when you look in that direction,
+- [00:04:06,680 - 00:04:07,380] or that direction,
+- [00:04:07,380 - 00:04:08,160] or that direction,
+- [00:04:08,240 - 00:04:09,220] or that direction...
+- [00:04:09,220 - 00:04:09,760] Now,
+- [00:04:09,760 - 00:04:09,960] of course,
+- [00:04:09,960 - 00:04:11,120] if you look right at a star,
+- [00:04:11,120 - 00:04:13,020] it looks a little different than if you look
+- [00:04:13,020 - 00:04:14,500] away from the star.
+- [00:04:15,100 - 00:04:16,540] But on the whole,
+- [00:04:16,540 - 00:04:19,459] averaging over patches in the sky,
+- [00:04:19,459 - 00:04:22,040] and looking out far enough so that
+- [00:04:22,040 - 00:04:24,360] you get away from the immediate foreground.
+- [00:04:24,360 - 00:04:25,720] The foreground of our own galaxy,
+- [00:04:25,720 - 00:04:29,940] the universe looks pretty much the same in every direction.
+- [00:04:32,540 - 00:04:34,080] That's called isotropic.
+- [00:04:34,500 - 00:04:35,920] Same in every direction.
+- [00:04:36,620 - 00:04:37,220] Now,
+- [00:04:37,220 - 00:04:39,280] if the universe is isotropic,
+- [00:04:39,280 - 00:04:42,600] with one exception that I'll describe in a moment,
+- [00:04:42,860 - 00:04:45,380] if it's isotropic around us,
+- [00:04:45,380 - 00:04:47,770] then you can bet with
+- [00:04:47,770 - 00:04:50,160] a high degree of confidence that
+- [00:04:50,160 - 00:04:52,780] it's also pretty close to being homogeneous.
+- [00:04:53,740 - 00:04:54,340] Homogeneous.
+- [00:04:54,360 - 00:04:56,540] Homogeneous doesn't mean it's the same in every direction.
+- [00:04:56,820 - 00:04:58,760] It means it's the same in every place.
+- [00:04:59,180 - 00:05:02,800] If you went out over there and
+- [00:05:02,800 - 00:05:06,420] you looked around from 16 galaxies over,
+- [00:05:06,420 - 00:05:06,960] and you looked
+- [00:05:06,960 - 00:05:07,840] around what you would see,
+- [00:05:07,840 - 00:05:09,980] you would see about the same thing you saw here.
+- [00:05:10,140 - 00:05:10,720] So first of all,
+- [00:05:10,720 - 00:05:11,780] what's the argument for that?
+- [00:05:12,120 - 00:05:14,040] Why does being isotropic,
+- [00:05:14,040 - 00:05:16,300] which means the same in every direction,
+- [00:05:16,300 - 00:05:17,560] tell you anything
+- [00:05:17,560 - 00:05:19,800] about why it would be the same if
+- [00:05:19,800 - 00:05:22,040] you moved away to a very distant place?
+- [00:05:22,420 - 00:05:23,720] And the argument is very simple.
+- [00:05:25,059 - 00:05:31,040] Imagine that there's some distribution of galaxies.
+- [00:05:33,520 - 00:05:34,240] You know,
+- [00:05:34,240 - 00:05:34,940] incidentally,
+- [00:05:34,940 - 00:05:39,700] at least in the first part of this study here,
+- [00:05:39,700 - 00:05:41,380] it's not going to
+- [00:05:41,380 - 00:05:43,600] matter very much whether what we're talking about,
+- [00:05:43,600 - 00:05:48,080] whether we call them galaxies or whether
+- [00:05:48,080 - 00:05:49,220] we just call them particles.
+- [00:05:50,080 - 00:05:52,340] They're just effectively mass points.
+- [00:05:52,940 - 00:05:53,700] Distributed things.
+- [00:05:53,700 - 00:05:55,040] They're just going to be visible throughout space.
+- [00:05:55,500 - 00:05:56,140] For the moment,
+- [00:05:56,140 - 00:05:58,040] I might even lapse into calling
+- [00:05:58,040 - 00:05:59,940] them particles from time to time.
+- [00:06:00,020 - 00:06:00,140] Now,
+- [00:06:00,140 - 00:06:00,580] you must remember,
+- [00:06:00,580 - 00:06:01,540] when I say particles,
+- [00:06:01,540 - 00:06:04,380] I mean literal galaxies,
+- [00:06:04,380 - 00:06:06,840] but unless I otherwise
+- [00:06:07,280 - 00:06:07,560] specify.
+- [00:06:08,160 - 00:06:08,720] Okay,
+- [00:06:08,720 - 00:06:11,160] so the universe has a lot of them.
+- [00:06:13,620 - 00:06:18,800] Anybody know how many galaxies are within the visible...
+- [00:06:21,060 - 00:06:22,720] About 100 billion.
+- [00:06:22,840 - 00:06:23,600] About 100 billion.
+- [00:06:23,680 - 00:06:24,680] 10 to the 11th.
+- [00:06:24,960 - 00:06:27,320] Just there's some nice numbers to keep track of,
+- [00:06:27,320 - 00:06:27,900] incidentally.
+- [00:06:27,920 - 00:06:28,870] It's a good idea to
+- [00:06:28,870 - 00:06:29,820] keep track of a few numbers.
+- [00:06:30,300 - 00:06:32,080] Within what we can see,
+- [00:06:32,080 - 00:06:34,820] within what we can see with telescopes,
+- [00:06:34,820 - 00:06:39,500] out to as far as astronomy
+- [00:06:39,500 - 00:06:40,240] takes us,
+- [00:06:40,240 - 00:06:42,280] about 10 to the 11th galaxies.
+- [00:06:42,600 - 00:06:46,220] Each galaxy about 10 to the 11th stars.
+- [00:06:47,340 - 00:06:49,220] Altogether 10 to the 22 stars.
+- [00:06:49,220 - 00:06:53,280] If each star has roughly 10 planets,
+- [00:06:53,280 - 00:06:57,120] that's 10 to the 23 Avogadro's number of planets
+- [00:06:57,120 - 00:06:57,840] out there.
+- [00:06:59,340 - 00:07:00,180] A mole,
+- [00:07:00,180 - 00:07:00,780] right.
+- [00:07:01,380 - 00:07:03,800] A planetary mole.
+- [00:07:04,700 - 00:07:05,340] Right.
+- [00:07:05,500 - 00:07:06,020] All right.
+- [00:07:06,060 - 00:07:06,240] Now,
+- [00:07:06,240 - 00:07:11,840] imagine that we're over here,
+- [00:07:11,840 - 00:07:14,020] and every direction that you look in,
+- [00:07:14,020 - 00:07:15,060] it looks pretty
+- [00:07:15,060 - 00:07:15,780] much the same.
+- [00:07:16,100 - 00:07:16,600] Well,
+- [00:07:16,600 - 00:07:17,900] then I maintain that not
+- [00:07:17,900 - 00:07:19,200] only my galaxy is the same.
+- [00:07:19,200 - 00:07:20,620] It must be the same in every direction,
+- [00:07:20,620 - 00:07:23,120] but it must be the same from place to place.
+- [00:07:23,260 - 00:07:24,470] What would it mean for it not
+- [00:07:24,470 - 00:07:25,680] to be the same from place to place?
+- [00:07:26,420 - 00:07:26,860] Well,
+- [00:07:26,860 - 00:07:28,560] if it's isotropic,
+- [00:07:28,560 - 00:07:31,620] the only way it could not
+- [00:07:31,620 - 00:07:34,680] be homogeneous is if it somehow formed
+- [00:07:34,680 - 00:07:36,140] rings of some sort.
+- [00:07:36,980 - 00:07:38,570] It's got to be such that
+- [00:07:38,570 - 00:07:40,160] it looks the same in every direction,
+- [00:07:40,160 - 00:07:41,860] but it's not the...
+- [00:07:41,860 - 00:07:42,060] Yeah,
+- [00:07:42,060 - 00:07:42,360] shells.
+- [00:07:42,600 - 00:07:43,620] I think somebody said shells.
+- [00:07:44,180 - 00:07:44,700] You know,
+- [00:07:44,700 - 00:07:46,010] it would have the geometry
+- [00:07:46,010 - 00:07:47,320] of some sort of shell-like structure.
+- [00:07:48,440 - 00:07:48,880] Why?
+- [00:07:48,880 - 00:07:51,120] It doesn't literally mean shells,
+- [00:07:51,120 - 00:07:52,780] it just means...
+- [00:07:54,160 - 00:07:54,720] Yeah.
+- [00:07:57,620 - 00:07:58,180] So,
+- [00:07:58,180 - 00:08:00,000] if that were the case,
+- [00:08:00,000 - 00:08:02,220] if that were the case and
+- [00:08:02,220 - 00:08:04,440] you went someplace else and you looked
+- [00:08:04,440 - 00:08:04,680] around,
+- [00:08:04,680 - 00:08:07,760] clearly it wouldn't look isotropic anymore.
+- [00:08:08,260 - 00:08:10,400] So for it to look isotropic,
+- [00:08:10,400 - 00:08:13,310] unless by accident we just happen
+- [00:08:13,310 - 00:08:16,220] to be at the center of the
+- [00:08:16,220 - 00:08:16,620] universe.
+- [00:08:17,239 - 00:08:19,799] If we happen to be at the very
+- [00:08:19,799 - 00:08:22,360] center where everything just accidentally or not accidentally,
+- [00:08:22,560 - 00:08:23,300] maybe by design,
+- [00:08:23,300 - 00:08:26,760] happens to be nice and rotationally symmetric about us,
+- [00:08:26,760 - 00:08:28,480] if we don't want to believe
+- [00:08:28,480 - 00:08:28,740] that,
+- [00:08:28,740 - 00:08:30,769] then we have to believe it's pretty
+- [00:08:30,769 - 00:08:32,799] much the same everywheres and that it's homogeneous.
+- [00:08:33,620 - 00:08:38,820] So homogeneous means that as far as we can see,
+- [00:08:38,820 - 00:08:45,300] space is uniformly filled on the average.
+- [00:08:45,320 - 00:08:45,840] Yeah.
+- [00:08:46,840 - 00:08:47,440] So,
+- [00:08:47,440 - 00:08:47,740] the universe is filled with particles.
+- [00:08:53,260 - 00:08:54,120] Uniformly filled.
+- [00:08:54,580 - 00:08:55,180] Okay.
+- [00:08:56,660 - 00:08:58,960] That's called the cosmological principle.
+- [00:08:59,260 - 00:08:59,740] Now,
+- [00:08:59,740 - 00:09:01,280] you can't...
+- [00:09:01,280 - 00:09:02,420] Why is it true?
+- [00:09:02,620 - 00:09:02,920] Well,
+- [00:09:02,920 - 00:09:03,680] how can it not be true?
+- [00:09:03,740 - 00:09:04,980] It's the cosmological principle.
+- [00:09:05,660 - 00:09:06,260] Right?
+- [00:09:06,360 - 00:09:09,320] And sometimes people argue like that.
+- [00:09:10,140 - 00:09:13,220] It's true because it's been observed to
+- [00:09:13,220 - 00:09:16,300] be true to some degree of approximation.
+- [00:09:16,300 - 00:09:17,060] Now,
+- [00:09:17,060 - 00:09:18,100] as was mentioned,
+- [00:09:18,100 - 00:09:21,740] in some media that I don't know how to evaluate,
+- [00:09:21,740 - 00:09:23,620] some astronomers
+- [00:09:24,460 - 00:09:26,320] apparently claim to see structures
+- [00:09:26,320 - 00:09:28,180] out there which are so big,
+- [00:09:28,180 - 00:09:29,500] if the blackboard here was
+- [00:09:29,500 - 00:09:30,820] the whole visible universe,
+- [00:09:30,820 - 00:09:34,000] they would stretch across great big patches of it.
+- [00:09:34,220 - 00:09:37,380] And that seems to be a little
+- [00:09:37,380 - 00:09:40,540] bit counter to this idea of complete uniformity.
+- [00:09:40,680 - 00:09:41,540] And of course,
+- [00:09:41,540 - 00:09:44,940] certainly the idea of complete uniformity is not exact.
+- [00:09:44,940 - 00:09:47,290] Just the fact that there are galaxies means
+- [00:09:47,290 - 00:09:49,640] it's not the same over here and over here.
+- [00:09:49,840 - 00:09:50,600] And in fact,
+- [00:09:50,600 - 00:09:52,420] there are clusters of
+- [00:09:52,420 - 00:09:54,240] galaxies and superclusters of galaxies.
+- [00:09:54,520 - 00:09:57,040] So it appears it's not really homogeneous,
+- [00:09:57,040 - 00:10:01,000] but it tends to come in sort of clusters which
+- [00:10:01,000 - 00:10:03,500] on some big enough scale,
+- [00:10:03,500 - 00:10:08,080] like a billion light years roughly,
+- [00:10:08,080 - 00:10:09,880] maybe a little bit less,
+- [00:10:09,880 - 00:10:11,140] if
+- [00:10:11,140 - 00:10:12,680] you average over that much,
+- [00:10:12,680 - 00:10:14,040] it looks homogeneous.
+- [00:10:15,580 - 00:10:16,100] Okay,
+- [00:10:16,100 - 00:10:18,540] so that's the basic fact
+- [00:10:18,540 - 00:10:20,980] that we're going to begin with.
+- [00:10:22,340 - 00:10:22,860] Now,
+- [00:10:22,860 - 00:10:25,900] what's the first step in formulating a physics problem?
+- [00:10:32,700 - 00:10:33,220] Yep,
+- [00:10:33,220 - 00:10:34,740] know your variables.
+- [00:10:35,980 - 00:10:37,720] Usually the answer is sharpen your pencil.
+- [00:10:40,500 - 00:10:41,020] Okay.
+- [00:10:41,140 - 00:10:42,640] After you've sharpened your pencil,
+- [00:10:42,640 - 00:10:44,020] you're the next person to do it.
+- [00:10:44,020 - 00:10:44,240] There's no,
+- [00:10:44,240 - 00:10:45,480] there's no your variables.
+- [00:10:45,860 - 00:10:48,700] But a good step,
+- [00:10:48,700 - 00:10:49,700] I'm not sure whether it
+- [00:10:49,700 - 00:10:50,700] comes after that or before that,
+- [00:10:50,700 - 00:10:52,260] is...
+- [00:10:53,260 - 00:10:53,740] Professor,
+- [00:10:53,740 - 00:10:57,370] could the uniformity of the cosmic
+- [00:10:57,370 - 00:11:01,000] microwave background radiation be an argument for...
+- [00:11:01,000 - 00:11:01,240] Oh,
+- [00:11:01,240 - 00:11:01,660] you bet.
+- [00:11:01,880 - 00:11:02,620] You bet,
+- [00:11:02,620 - 00:11:02,960] you bet.
+- [00:11:03,060 - 00:11:03,820] But we're going back,
+- [00:11:03,820 - 00:11:06,730] I'm purposefully going back a few
+- [00:11:06,730 - 00:11:09,640] decades to some time around the
+- [00:11:12,060 - 00:11:13,380] 60s or something like that.
+- [00:11:14,139 - 00:11:14,579] 50s,
+- [00:11:14,579 - 00:11:15,020] 60s,
+- [00:11:15,020 - 00:11:15,660] 40s.
+- [00:11:17,940 - 00:11:20,490] The idea of the cosmological principle was
+- [00:11:20,490 - 00:11:23,040] put forward before people had any real right
+- [00:11:23,040 - 00:11:24,500] to put it forward.
+- [00:11:24,680 - 00:11:25,120] They just said,
+- [00:11:25,120 - 00:11:25,320] oh,
+- [00:11:25,320 - 00:11:25,620] well,
+- [00:11:25,620 - 00:11:27,000] let's just say it's homogeneous.
+- [00:11:27,320 - 00:11:28,840] We'll call it the cosmological principle,
+- [00:11:28,840 - 00:11:30,740] and if people ask us why it's true,
+- [00:11:30,740 - 00:11:31,220] it's because
+- [00:11:31,220 - 00:11:31,800] it's a principle.
+- [00:11:32,740 - 00:11:33,180] All right.
+- [00:11:33,240 - 00:11:33,900] But then,
+- [00:11:33,900 - 00:11:35,040] you know,
+- [00:11:35,040 - 00:11:37,240] with more and more astronomical investigation,
+- [00:11:37,240 - 00:11:38,200] and then finally,
+- [00:11:38,200 - 00:11:39,080] the cosmic
+- [00:11:39,080 - 00:11:41,300] microwave background really nailed it.
+- [00:11:41,300 - 00:11:43,020] And in some sense,
+- [00:11:43,020 - 00:11:47,320] the primordial distribution of matter was extremely smooth,
+- [00:11:47,320 - 00:11:48,040] extremely
+- [00:11:48,040 - 00:11:48,460] smooth.
+- [00:11:48,540 - 00:11:49,120] But we'll get to that.
+- [00:11:49,520 - 00:11:50,300] All right.
+- [00:11:50,360 - 00:11:53,620] So here we have a uniform gas,
+- [00:11:53,620 - 00:11:54,500] if you like.
+- [00:11:54,640 - 00:11:55,620] It's a uniform gas,
+- [00:11:55,620 - 00:12:00,460] and that gas is interacting,
+- [00:12:00,460 - 00:12:01,960] it's a gas of particles,
+- [00:12:01,960 - 00:12:03,480] it's interacting,
+- [00:12:03,900 - 00:12:06,440] each particle is interacting with the other particles.
+- [00:12:06,880 - 00:12:07,520] Now,
+- [00:12:07,520 - 00:12:10,600] galaxies on the whole are not electrically charged.
+- [00:12:10,600 - 00:12:11,900] They're electrically neutral.
+- [00:12:12,760 - 00:12:14,680] But they're not gravitationally neutral.
+- [00:12:15,500 - 00:12:18,400] They interact through Newtonian gravity.
+- [00:12:18,760 - 00:12:22,580] And that's the only important force on big enough scales.
+- [00:12:22,880 - 00:12:24,770] On big enough scales where
+- [00:12:24,770 - 00:12:26,660] matter tends to be electrically neutral,
+- [00:12:26,660 - 00:12:30,440] the only really important
+- [00:12:30,440 - 00:12:31,600] force is gravity.
+- [00:12:32,780 - 00:12:36,060] So gravity is pulling all this stuff together,
+- [00:12:36,060 - 00:12:37,440] or it's doing something to it,
+- [00:12:37,440 - 00:12:38,660] but it's a
+- [00:12:38,660 - 00:12:39,680] little bit confusing.
+- [00:12:40,600 - 00:12:40,620] Now,
+- [00:12:40,620 - 00:12:46,980] what happens to this point over here?
+- [00:12:47,760 - 00:12:50,260] Does it accelerate toward the center,
+- [00:12:50,260 - 00:12:52,880] because at the center there's a whole bunch of matter
+- [00:12:52,880 - 00:12:53,160] there?
+- [00:12:53,300 - 00:12:54,980] Or does it accelerate out to here?
+- [00:12:55,480 - 00:12:56,480] Because after all,
+- [00:12:56,480 - 00:12:58,290] there's as much matter out there
+- [00:12:58,290 - 00:13:00,100] as there is on this side.
+- [00:13:00,400 - 00:13:01,100] In fact,
+- [00:13:01,100 - 00:13:03,340] it sort of looks like it oughtn't to move anywhere.
+- [00:13:04,600 - 00:13:05,860] It ought to just stay there,
+- [00:13:05,860 - 00:13:07,000] because there's as much on one
+- [00:13:07,000 - 00:13:08,140] side as on the other side,
+- [00:13:08,340 - 00:13:08,460] right?
+- [00:13:08,620 - 00:13:09,740] So it'll just stay there.
+- [00:13:09,740 - 00:13:10,580] Well,
+- [00:13:10,580 - 00:13:12,060] what about this one over here?
+- [00:13:13,040 - 00:13:13,980] Same thing,
+- [00:13:13,980 - 00:13:16,400] because every place is the same as every other place.
+- [00:13:16,760 - 00:13:19,210] So the natural thing to guess is
+- [00:13:19,210 - 00:13:21,660] that the universe must be just static.
+- [00:13:21,960 - 00:13:23,040] It must just sit there,
+- [00:13:23,040 - 00:13:28,120] because nothing has any net force on it,
+- [00:13:28,120 - 00:13:29,080] and so there's nothing
+- [00:13:29,080 - 00:13:30,260] pulling it one way or another.
+- [00:13:30,400 - 00:13:30,880] That's wrong.
+- [00:13:31,340 - 00:13:34,400] We're going to work out tonight
+- [00:13:34,400 - 00:13:37,460] the actual Newtonian equations of cosmology.
+- [00:13:38,740 - 00:13:39,160] Okay.
+- [00:13:39,720 - 00:13:40,280] So,
+- [00:13:40,280 - 00:13:44,120] you may have heard that the
+- [00:13:44,120 - 00:13:47,960] expanding universe somehow fit together especially well
+- [00:13:47,960 - 00:13:51,000] and wasn't really understood until general relativity,
+- [00:13:51,000 - 00:13:51,960] until Einstein.
+- [00:13:52,360 - 00:13:53,860] That is simply false.
+- [00:13:54,500 - 00:13:56,480] It may be so historically.
+- [00:13:56,840 - 00:13:57,260] I mean,
+- [00:13:57,260 - 00:13:58,880] in terms of years,
+- [00:13:58,880 - 00:13:59,520] yes.
+- [00:13:59,760 - 00:14:03,210] It is true that the expanding universe
+- [00:14:03,210 - 00:14:06,660] was not understood until after Einstein had created
+- [00:14:06,660 - 00:14:07,940] the general theory of relativity.
+- [00:14:08,380 - 00:14:09,100] Okay.
+- [00:14:09,100 - 00:14:11,340] So that is a fact about dates.
+- [00:14:11,660 - 00:14:13,800] It's not a fact at all about logic.
+- [00:14:14,780 - 00:14:17,960] Newton could have done the expanding universe.
+- [00:14:18,480 - 00:14:20,180] Since Newton didn't do it,
+- [00:14:20,180 - 00:14:21,760] we are going to do it
+- [00:14:21,760 - 00:14:23,340] here the way Newton should have done
+- [00:14:23,340 - 00:14:25,340] it if only Newton was a little bit smarter.
+- [00:14:27,000 - 00:14:27,560] Okay?
+- [00:14:28,020 - 00:14:28,820] All right.
+- [00:14:29,200 - 00:14:30,940] So the first thing,
+- [00:14:30,940 - 00:14:33,840] know your variables for sure,
+- [00:14:33,840 - 00:14:37,820] but the first step is usually to introduce
+- [00:14:37,820 - 00:14:38,880] a set of coordinates.
+- [00:14:39,100 - 00:14:41,900] Introduce a set of coordinates into a problem.
+- [00:14:43,180 - 00:14:46,620] And that means exactly what it always means.
+- [00:14:46,900 - 00:14:51,680] Take space and rule it into coordinates.
+- [00:14:52,320 - 00:14:54,240] Three dimensions for sure,
+- [00:14:54,240 - 00:14:55,500] but I'm only going to draw two.
+- [00:14:56,180 - 00:14:57,300] In other words,
+- [00:14:57,300 - 00:15:01,520] introduce a fictitious grid of coordinates.
+- [00:15:02,680 - 00:15:03,440] Now,
+- [00:15:03,440 - 00:15:05,550] what shall we take for
+- [00:15:05,550 - 00:15:07,660] the distance between neighboring lines?
+- [00:15:08,320 - 00:15:09,080] Okay.
+- [00:15:09,100 - 00:15:09,260] So let's say we have a grid of coordinates.
+- [00:15:09,260 - 00:15:09,260] So we can take the distance between the points,
+- [00:15:09,260 - 00:15:10,240] the points that are the lattice points on
+- [00:15:10,240 - 00:15:10,940] this grid.
+- [00:15:11,580 - 00:15:12,920] We can take it to be one meter.
+- [00:15:13,020 - 00:15:14,220] We can take it to be 10 meters.
+- [00:15:14,360 - 00:15:15,760] We can take it to be a million meters.
+- [00:15:15,860 - 00:15:17,200] We can take it whatever we like.
+- [00:15:18,279 - 00:15:20,809] But there's a smarter thing to do than
+- [00:15:20,809 - 00:15:23,340] to just fix the distance between the points.
+- [00:15:23,800 - 00:15:29,130] The smarter thing to do is to imagine these
+- [00:15:29,130 - 00:15:34,460] points have been chosen so that the grid points
+- [00:15:35,359 - 00:15:37,520] always pass through the same galaxies.
+- [00:15:37,520 - 00:15:38,060] In other words,
+- [00:15:38,060 - 00:15:43,480] that the galaxies here provide a grid.
+- [00:15:43,660 - 00:15:45,900] All right.
+- [00:15:46,460 - 00:15:49,040] Provide a grid in such a
+- [00:15:49,040 - 00:15:51,620] way that no matter what happens,
+- [00:15:51,620 - 00:15:53,920] since the galaxies are nice
+- [00:15:53,920 - 00:15:54,620] and uniform,
+- [00:15:54,620 - 00:15:56,660] no matter what happens,
+- [00:15:56,660 - 00:16:01,240] this galaxy over here will always be at that point
+- [00:16:01,240 - 00:16:01,800] on the grid.
+- [00:16:02,520 - 00:16:04,340] That galaxy over here will always
+- [00:16:04,340 - 00:16:06,160] be at that point on the grid.
+- [00:16:07,520 - 00:16:09,910] And that means that if the
+- [00:16:09,910 - 00:16:12,300] universe indeed either expands or contracts,
+- [00:16:12,300 - 00:16:14,920] the grid has to expand or,
+- [00:16:14,920 - 00:16:16,440] let me say it differently,
+- [00:16:16,720 - 00:16:20,040] if the galaxies are moving relative to each other,
+- [00:16:20,040 - 00:16:22,380] perhaps away from each other or closer to each other,
+- [00:16:22,380 - 00:16:24,580] then the grid moves with them.
+- [00:16:24,780 - 00:16:27,200] Let's choose coordinates so that the galaxies
+- [00:16:27,200 - 00:16:29,620] are sort of frozen in the grid.
+- [00:16:31,440 - 00:16:31,960] Now,
+- [00:16:31,960 - 00:16:34,020] it's not obvious you can do that.
+- [00:16:34,480 - 00:16:36,200] It's not obvious you can do that.
+- [00:16:36,200 - 00:16:37,930] If the galaxies were such that
+- [00:16:37,930 - 00:16:39,660] some were moving this way over here,
+- [00:16:39,660 - 00:16:41,440] some were moving that way over here,
+- [00:16:41,440 - 00:16:43,260] some were moving that way over here,
+- [00:16:43,360 - 00:16:45,600] a sort of random kind of motion,
+- [00:16:47,260 - 00:16:51,570] then there would be no way to fix
+- [00:16:51,570 - 00:16:55,880] the coordinates by attaching them to the galaxies,
+- [00:16:56,640 - 00:16:58,060] because even at a point,
+- [00:16:58,060 - 00:17:00,180] the different ones would be moving in different ways.
+- [00:17:00,540 - 00:17:03,000] But that's not what you see
+- [00:17:03,000 - 00:17:05,460] when you look out at the heavens.
+- [00:17:06,200 - 00:17:09,680] What you see is that they're moving very coherently,
+- [00:17:09,680 - 00:17:14,880] exactly as if they were embedded in a grid,
+- [00:17:16,250 - 00:17:18,460] with the grid perhaps expanding,
+- [00:17:18,460 - 00:17:19,740] perhaps contracting,
+- [00:17:19,740 - 00:17:20,960] we'll come to that,
+- [00:17:21,430 - 00:17:24,200] but the whole grid being sort of frozen.
+- [00:17:25,810 - 00:17:29,635] Any motion that takes place is because the grid
+- [00:17:29,635 - 00:17:33,460] is either expanding in size or contracting in size.
+- [00:17:34,690 - 00:17:35,680] That's an observation.
+- [00:17:35,680 - 00:17:36,060] So,
+- [00:17:36,060 - 00:17:37,980] what we're going to do is we're going to take a
+- [00:17:37,980 - 00:17:39,900] little bit of observation about the relative motion of nearby galaxies.
+- [00:17:40,780 - 00:17:42,220] Galaxies over here and over here,
+- [00:17:42,220 - 00:17:43,420] which are relatively nearby,
+- [00:17:43,420 - 00:17:45,730] are not moving with tremendous
+- [00:17:45,730 - 00:17:48,040] velocity relative to each other.
+- [00:17:48,100 - 00:17:49,980] They're moving in a nice coherent way,
+- [00:17:49,980 - 00:17:51,460] as I said.
+- [00:17:51,580 - 00:17:51,960] So that,
+- [00:17:51,960 - 00:17:52,620] uh...
+- [00:17:52,620 - 00:17:53,500] So,
+- [00:17:53,500 - 00:17:55,320] we can choose coordinates,
+- [00:17:55,320 - 00:17:56,200] we'll call them x,
+- [00:17:56,200 - 00:17:56,360] y,
+- [00:17:56,360 - 00:17:56,740] and z,
+- [00:17:56,740 - 00:17:58,220] standard names for coordinates,
+- [00:17:58,220 - 00:17:58,620] x,
+- [00:17:58,620 - 00:17:58,900] y,
+- [00:17:58,900 - 00:17:59,240] and z.
+- [00:18:00,340 - 00:18:01,020] But x,
+- [00:18:01,020 - 00:18:01,300] y,
+- [00:18:01,300 - 00:18:03,580] and z are not measured in length.
+- [00:18:04,660 - 00:18:05,660] They're not measured in length.
+- [00:18:05,680 - 00:18:07,360] Because the length of a
+- [00:18:07,360 - 00:18:09,040] grid cell may change with time.
+- [00:18:10,920 - 00:18:11,420] Okay,
+- [00:18:11,420 - 00:18:13,730] so we've labeled the galaxies by
+- [00:18:13,730 - 00:18:16,040] where they are in a grid,
+- [00:18:16,260 - 00:18:18,180] and now we can ask the question,
+- [00:18:18,180 - 00:18:19,020] let's,
+- [00:18:19,020 - 00:18:19,520] uh...
+- [00:18:20,520 - 00:18:21,680] Let's say the distance,
+- [00:18:21,680 - 00:18:23,480] let's say two points,
+- [00:18:23,480 - 00:18:26,060] let's start with two points separated
+- [00:18:26,060 - 00:18:28,640] by an x distance over here.
+- [00:18:28,900 - 00:18:31,020] Let's call that x distance delta x.
+- [00:18:32,160 - 00:18:33,920] How far apart are they?
+- [00:18:34,080 - 00:18:34,400] Well,
+- [00:18:34,400 - 00:18:35,660] I don't know how far apart they are.
+- [00:18:35,680 - 00:18:37,940] But I'm now going to
+- [00:18:37,940 - 00:18:40,200] postulate that the distance between them,
+- [00:18:40,200 - 00:18:43,240] the actual distance in meters,
+- [00:18:43,800 - 00:18:45,860] or in some physical unit
+- [00:18:45,860 - 00:18:47,920] that you measure with a ruler,
+- [00:18:48,080 - 00:18:50,020] could be a light year on a side,
+- [00:18:50,020 - 00:18:51,680] it could be a million light years on a side,
+- [00:18:51,800 - 00:18:52,660] but a ruler,
+- [00:18:52,660 - 00:18:58,600] that the actual distance is proportional to delta x.
+- [00:18:59,140 - 00:19:01,320] The distance between these two people over
+- [00:19:01,320 - 00:19:03,500] here is half the distance between these two,
+- [00:19:03,540 - 00:19:05,320] is a third the distance between these two.
+- [00:19:05,680 - 00:19:09,860] So it's proportional to delta x times
+- [00:19:09,860 - 00:19:14,040] a parameter that's called the scale parameter.
+- [00:19:15,470 - 00:19:17,595] The scale parameter may or
+- [00:19:17,595 - 00:19:19,720] may not be just a constant.
+- [00:19:20,440 - 00:19:22,140] It may just be a constant.
+- [00:19:22,420 - 00:19:23,820] If it were just constant,
+- [00:19:23,820 - 00:19:27,000] then the distance between galaxies fixed in
+- [00:19:27,000 - 00:19:30,180] the grid would stay constant with time.
+- [00:19:30,720 - 00:19:33,300] But it may also be time dependent,
+- [00:19:33,300 - 00:19:34,500] so let's allow that.
+- [00:19:36,300 - 00:19:39,000] That would say the distance between two galaxies,
+- [00:19:39,000 - 00:19:40,440] let's say this is galaxy A,
+- [00:19:40,440 - 00:19:41,720] this is galaxy B,
+- [00:19:41,900 - 00:19:44,530] the distance from A to B is
+- [00:19:44,530 - 00:19:47,160] A of t times delta x AB,
+- [00:19:47,440 - 00:19:49,680] where delta x is the x distance,
+- [00:19:49,680 - 00:19:51,740] is the coordinate distance between them.
+- [00:19:52,800 - 00:19:54,360] Let me write it more generally.
+- [00:20:00,020 - 00:20:02,160] If we have two galaxies,
+- [00:20:02,160 - 00:20:04,420] arbitrary positions on the grid,
+- [00:20:06,400 - 00:20:08,760] then the distance between them,
+- [00:20:08,760 - 00:20:11,440] d AB,
+- [00:20:11,440 - 00:20:14,360] is equal to A of t,
+- [00:20:14,360 - 00:20:15,460] the same A of t,
+- [00:20:15,740 - 00:20:18,640] and then the square root of Pythagoras'
+- [00:20:18,760 - 00:20:19,060] theorem,
+- [00:20:19,060 - 00:20:21,320] delta x squared plus delta
+- [00:20:21,320 - 00:20:23,580] y squared plus delta z squared.
+- [00:20:25,040 - 00:20:25,920] In other words,
+- [00:20:25,920 - 00:20:29,160] you measure the distance along the grid in grid units,
+- [00:20:29,400 - 00:20:32,460] and then multiply it by A of t to
+- [00:20:32,460 - 00:20:35,520] find the actual physical distance between the two points.
+- [00:20:37,040 - 00:20:37,940] As I said,
+- [00:20:37,940 - 00:20:39,620] A of t may or
+- [00:20:39,620 - 00:20:41,300] may not be constant in time.
+- [00:20:41,680 - 00:20:42,160] Well,
+- [00:20:42,160 - 00:20:43,080] of course it's not.
+- [00:20:43,580 - 00:20:45,080] If it was constant in time,
+- [00:20:45,080 - 00:20:46,870] that would mean literally the galaxies were
+- [00:20:46,870 - 00:20:48,660] just frozen in space and they didn't move.
+- [00:20:49,100 - 00:20:50,420] And that's not what we see.
+- [00:20:50,420 - 00:20:52,080] We see them moving apart from each other.
+- [00:20:53,460 - 00:20:53,940] Okay,
+- [00:20:53,940 - 00:20:59,130] so let's calculate now the velocity
+- [00:20:59,130 - 00:21:04,320] between galaxy A and galaxy B.
+- [00:21:04,320 - 00:21:06,960] Here's the distance between galaxy A,
+- [00:21:06,960 - 00:21:09,280] and this of course should be delta AB.
+- [00:21:09,640 - 00:21:10,460] The distance,
+- [00:21:10,460 - 00:21:12,620] the coordinate grid distance.
+- [00:21:13,180 - 00:21:15,320] Let's just use the simpler formula up here.
+- [00:21:15,500 - 00:21:17,430] Let's forget Pythagoras and just take
+- [00:21:17,430 - 00:21:19,360] them to be along the x-axis.
+- [00:21:20,440 - 00:21:21,700] It doesn't really matter.
+- [00:21:24,180 - 00:21:24,700] Okay,
+- [00:21:24,700 - 00:21:25,500] here's d AB.
+- [00:21:27,020 - 00:21:28,600] What's the velocity between,
+- [00:21:28,600 - 00:21:31,220] what's the relative velocity of the AB galaxies?
+- [00:21:31,880 - 00:21:33,820] It's just the time derivative of this,
+- [00:21:33,820 - 00:21:34,060] right?
+- [00:21:34,620 - 00:21:37,040] Just the time derivative of the distance is the velocity.
+- [00:21:37,440 - 00:21:39,670] So the velocity between A and B
+- [00:21:39,670 - 00:21:41,900] is just equal to the time derivative.
+- [00:21:42,280 - 00:21:45,340] And the only thing that's changing for A and B,
+- [00:21:46,980 - 00:21:48,920] A and B are fixed in the grid,
+- [00:21:48,920 - 00:21:51,260] so delta x is not changing.
+- [00:21:51,420 - 00:21:52,240] That's fixed.
+- [00:21:52,460 - 00:21:53,800] The only thing that's changing,
+- [00:21:53,800 - 00:21:54,220] perhaps,
+- [00:21:54,220 - 00:21:54,860] is A.
+- [00:21:55,300 - 00:21:59,260] So the velocity is just the time derivative of A.
+- [00:21:59,460 - 00:22:03,540] A dot means the time derivative of A.
+- [00:22:06,660 - 00:22:08,680] A dot times delta x.
+- [00:22:10,240 - 00:22:12,180] All I've done is differentiate
+- [00:22:12,180 - 00:22:14,120] this formula with respect to time.
+- [00:22:14,880 - 00:22:17,040] Now I can write that the
+- [00:22:17,040 - 00:22:19,200] ratio of the velocity to the distance,
+- [00:22:19,820 - 00:22:21,120] I'll leave out the A,
+- [00:22:21,120 - 00:22:22,200] well let's put them in,
+- [00:22:22,200 - 00:22:22,620] AB.
+- [00:22:23,260 - 00:22:27,050] The ratio of the velocity to the distance
+- [00:22:27,050 - 00:22:30,840] is just the ratio of A dot to A.
+- [00:22:35,160 - 00:22:38,100] Notice that delta x cancelled out.
+- [00:22:38,460 - 00:22:39,800] Well that's interesting.
+- [00:22:40,100 - 00:22:41,750] It means that the ratio
+- [00:22:41,750 - 00:22:43,400] of the velocity to the distance
+- [00:22:43,400 - 00:22:45,130] doesn't depend on which pair
+- [00:22:45,130 - 00:22:46,860] of galaxies we're talking about.
+- [00:22:46,960 - 00:22:48,220] Every pair of galaxies,
+- [00:22:48,220 - 00:22:50,900] no matter how far apart,
+- [00:22:50,900 - 00:22:51,960] no matter how close,
+- [00:22:52,220 - 00:22:54,120] no matter what angle they're oriented in,
+- [00:22:54,220 - 00:22:57,160] the relative velocity between the two of them,
+- [00:22:59,140 - 00:23:03,460] relative either separation or the opposite of separation,
+- [00:23:03,460 - 00:23:06,660] the ratio of the velocity to
+- [00:23:06,660 - 00:23:09,860] the distance is A dot over A.
+- [00:23:13,120 - 00:23:14,440] What's the name for this thing?
+- [00:23:14,440 - 00:23:14,960] Anybody know?
+- [00:23:16,200 - 00:23:17,280] The Hubble constant.
+- [00:23:17,580 - 00:23:19,180] It's called the Hubble constant.
+- [00:23:20,180 - 00:23:21,220] Let's call it H.
+- [00:23:22,940 - 00:23:23,420] Now,
+- [00:23:23,420 - 00:23:25,800] is there any reason why it should be a constant?
+- [00:23:26,060 - 00:23:27,780] What do we mean when we say it's a constant?
+- [00:23:30,000 - 00:23:31,570] There's no reason for it
+- [00:23:31,570 - 00:23:33,140] to be independent of the time.
+- [00:23:33,460 - 00:23:34,220] In fact,
+- [00:23:34,220 - 00:23:34,660] it's not.
+- [00:23:36,240 - 00:23:40,400] What we find here is that it's independent of x.
+- [00:23:41,000 - 00:23:43,080] It doesn't matter where you are,
+- [00:23:43,080 - 00:23:45,680] it doesn't matter which two galaxies you're talking about,
+- [00:23:46,460 - 00:23:50,460] the same Hubble constant at a given time.
+- [00:23:50,680 - 00:23:53,640] So the Hubble constant is a kind of misnomer.
+- [00:23:55,620 - 00:23:58,880] The Hubble parameter,
+- [00:23:58,880 - 00:24:03,160] the Hubble function,
+- [00:24:04,440 - 00:24:07,260] is independent of position but depends on time.
+- [00:24:07,360 - 00:24:09,180] And now we just write this in the standard form
+- [00:24:09,180 - 00:24:14,480] that the velocity between any two galaxies in the universe
+- [00:24:18,320 - 00:24:21,460] is equal to the same Hubble
+- [00:24:21,460 - 00:24:24,600] parameter times the distance between them.
+- [00:24:25,500 - 00:24:27,500] And that's the derivation of the Hubble law.
+- [00:24:27,880 - 00:24:28,580] Excuse me,
+- [00:24:28,580 - 00:24:28,860] question.
+- [00:24:30,260 - 00:24:32,420] Don't you sort of start out almost,
+- [00:24:32,420 - 00:24:35,940] assuming what you're trying to show by saying that
+- [00:24:35,940 - 00:24:39,460] dAV equals one function A of t that's independent?
+- [00:24:39,740 - 00:24:39,960] Yes,
+- [00:24:39,960 - 00:24:40,180] yes,
+- [00:24:40,180 - 00:24:40,380] yes,
+- [00:24:40,380 - 00:24:40,600] indeed.
+- [00:24:40,600 - 00:24:41,440] Absolutely.
+- [00:24:42,220 - 00:24:42,700] Yeah,
+- [00:24:42,700 - 00:24:43,360] I mean,
+- [00:24:43,360 - 00:24:46,520] you never would have written this
+- [00:24:46,520 - 00:24:51,560] if Hubble hadn't discovered that the Hubble law was right.
+- [00:24:51,740 - 00:24:52,680] But on the other hand,
+- [00:24:52,680 - 00:24:54,210] the Hubble law is in
+- [00:24:54,210 - 00:24:55,740] some sense not all that surprising.
+- [00:24:56,320 - 00:24:57,280] All it's,
+- [00:24:57,280 - 00:24:57,740] you know,
+- [00:24:57,740 - 00:25:00,040] as some witty person said,
+- [00:25:00,220 - 00:25:02,400] you shouldn't be surprised that the Hubble law
+- [00:25:02,420 - 00:25:04,180] is the fastest horse goes the furthest.
+- [00:25:05,100 - 00:25:05,660] Okay?
+- [00:25:05,660 - 00:25:06,320] Right.
+- [00:25:07,440 - 00:25:08,820] The faster you move,
+- [00:25:08,820 - 00:25:09,220] the far,
+- [00:25:09,220 - 00:25:09,400] far,
+- [00:25:09,400 - 00:25:10,100] farther you go.
+- [00:25:10,440 - 00:25:13,780] So that's all this thing says.
+- [00:25:14,040 - 00:25:14,540] However,
+- [00:25:14,540 - 00:25:16,800] it's interesting,
+- [00:25:17,480 - 00:25:20,580] the connection between this formula and the Hubble formula
+- [00:25:20,580 - 00:25:21,260] is,
+- [00:25:21,260 - 00:25:22,060] as you point out,
+- [00:25:22,060 - 00:25:22,740] a close one.
+- [00:25:23,380 - 00:25:25,380] But what it says is
+- [00:25:25,380 - 00:25:27,380] everything is moving on a grid,
+- [00:25:28,200 - 00:25:30,260] and it's the grid itself
+- [00:25:30,260 - 00:25:32,670] whose size scale may or
+- [00:25:32,670 - 00:25:35,080] may not be changing with time,
+- [00:25:35,180 - 00:25:36,480] but of course it is changing with time.
+- [00:25:37,440 - 00:25:40,950] And the Hubble constant is just the ratio
+- [00:25:40,950 - 00:25:44,460] of the time derivative of A to A itself.
+- [00:25:46,240 - 00:25:46,840] Okay,
+- [00:25:46,840 - 00:25:48,420] that's the facts.
+- [00:25:48,720 - 00:25:49,920] Those are the facts.
+- [00:25:50,220 - 00:25:52,440] Those are the facts as Hubble discovered them,
+- [00:25:52,580 - 00:25:54,550] and as theoretical cosmologists then
+- [00:25:54,550 - 00:25:56,520] had something to work with.
+- [00:25:57,900 - 00:25:58,620] All right,
+- [00:25:58,620 - 00:25:58,880] let's,
+- [00:25:58,880 - 00:25:59,520] let's...
+- [00:26:00,260 - 00:26:01,740] say a few more things about this.
+- [00:26:06,900 - 00:26:10,560] What about the mass within a region,
+- [00:26:11,160 - 00:26:13,480] let's take a region of size delta x,
+- [00:26:13,480 - 00:26:14,060] delta y,
+- [00:26:14,060 - 00:26:14,920] delta z.
+- [00:26:17,140 - 00:26:19,720] And now I mean a region which is big enough
+- [00:26:20,280 - 00:26:21,060] so that,
+- [00:26:21,060 - 00:26:22,920] I don't know what happened to my universe,
+- [00:26:23,080 - 00:26:24,100] I have my universe here,
+- [00:26:24,100 - 00:26:24,560] but...
+- [00:26:26,840 - 00:26:28,580] big enough so that we can average
+- [00:26:28,580 - 00:26:32,740] over the small scale structure.
+- [00:26:33,380 - 00:26:35,820] How much mass is in there?
+- [00:26:36,560 - 00:26:37,080] Okay.
+- [00:26:39,460 - 00:26:39,980] Well,
+- [00:26:39,980 - 00:26:40,500] that,
+- [00:26:40,500 - 00:26:42,940] the amount of mass that's in there
+- [00:26:43,580 - 00:26:45,820] is going to be proportional to delta x,
+- [00:26:45,820 - 00:26:46,400] delta y,
+- [00:26:46,400 - 00:26:46,980] delta z.
+- [00:26:47,180 - 00:26:49,180] The bigger the region that you take,
+- [00:26:49,180 - 00:26:49,980] the more mass.
+- [00:26:50,560 - 00:26:51,260] And so,
+- [00:26:51,260 - 00:26:53,040] let's just say the amount of mass,
+- [00:26:53,040 - 00:26:53,980] we'll call it nu.
+- [00:26:54,260 - 00:26:58,560] Nu is nothing but the amount of mass per unit,
+- [00:26:58,560 - 00:27:00,960] volume of the grid,
+- [00:27:01,240 - 00:27:04,680] but volume not being measured in meters,
+- [00:27:04,780 - 00:27:06,120] but being measured in x.
+- [00:27:07,040 - 00:27:07,760] All right,
+- [00:27:07,760 - 00:27:08,900] so let's say that's the mass
+- [00:27:10,600 - 00:27:14,320] in a given region of coordinate volume
+- [00:27:14,320 - 00:27:15,680] delta x,
+- [00:27:15,680 - 00:27:16,260] delta y,
+- [00:27:16,260 - 00:27:16,800] delta z.
+- [00:27:17,520 - 00:27:18,740] On the other hand,
+- [00:27:18,740 - 00:27:21,120] what's the actual volume of that region?
+- [00:27:21,400 - 00:27:23,940] Let's take this volume of the same region.
+- [00:27:24,460 - 00:27:26,460] The volume of the same region
+- [00:27:26,460 - 00:27:28,080] is not delta x,
+- [00:27:28,080 - 00:27:28,640] delta y,
+- [00:27:28,640 - 00:27:29,240] delta z.
+- [00:27:29,900 - 00:27:30,540] Why?
+- [00:27:31,280 - 00:27:33,710] Because the distance along the x-axis
+- [00:27:33,710 - 00:27:36,140] and the y-axis and the z-axis
+- [00:27:36,140 - 00:27:37,980] is not delta x,
+- [00:27:37,980 - 00:27:39,840] it's a times delta x.
+- [00:27:41,779 - 00:27:42,419] So,
+- [00:27:42,419 - 00:27:45,260] that means the volume of that same cell,
+- [00:27:45,420 - 00:27:46,420] that same cell,
+- [00:27:46,420 - 00:27:48,340] is a cubed
+- [00:27:49,240 - 00:27:50,600] times delta x,
+- [00:27:50,600 - 00:27:51,160] delta y,
+- [00:27:51,160 - 00:27:51,720] delta z,
+- [00:27:51,720 - 00:27:51,980] right?
+- [00:27:56,460 - 00:27:57,940] That's because the length along the
+- [00:27:57,940 - 00:27:59,420] x-axis is a times delta x,
+- [00:27:59,700 - 00:28:00,920] a times delta y,
+- [00:28:00,920 - 00:28:01,960] a times delta z.
+- [00:28:02,500 - 00:28:04,420] And so now let's write a
+- [00:28:04,420 - 00:28:06,340] formula for the density of mass.
+- [00:28:06,560 - 00:28:07,080] The density,
+- [00:28:07,080 - 00:28:09,220] I mean the physical density of mass now,
+- [00:28:09,320 - 00:28:11,610] how much mass is there per
+- [00:28:11,610 - 00:28:13,900] cubic kilometer or cubic light year
+- [00:28:13,900 - 00:28:14,840] or whatever units,
+- [00:28:14,840 - 00:28:16,800] we haven't specified units yet.
+- [00:28:17,180 - 00:28:18,760] Later on we'll specify units.
+- [00:28:21,520 - 00:28:22,500] Meters are fine.
+- [00:28:22,580 - 00:28:22,820] Meters,
+- [00:28:22,820 - 00:28:23,200] seconds,
+- [00:28:23,200 - 00:28:24,420] and kilograms are fine.
+- [00:28:25,040 - 00:28:26,900] Mass measured in kilograms,
+- [00:28:26,900 - 00:28:29,080] volume measured in cubic meters.
+- [00:28:29,840 - 00:28:31,040] What's the density?
+- [00:28:31,300 - 00:28:32,000] So let's write,
+- [00:28:32,000 - 00:28:32,920] let's call the density,
+- [00:28:33,120 - 00:28:35,620] the standard terminology for density is rho.
+- [00:28:35,840 - 00:28:37,280] I don't know where it came from.
+- [00:28:37,780 - 00:28:39,360] Rho stands for density.
+- [00:28:39,580 - 00:28:40,760] Let's write it over here,
+- [00:28:40,760 - 00:28:41,100] density.
+- [00:28:42,640 - 00:28:47,740] And density means the number of kilograms per cubic meter,
+- [00:28:47,740 - 00:28:48,300] if you like.
+- [00:28:48,500 - 00:28:51,060] It's the ratio of the mass to the volume.
+- [00:28:52,760 - 00:28:54,700] It's the ratio of the mass to the volume,
+- [00:28:54,860 - 00:28:56,100] and it's just as nu here,
+- [00:28:56,100 - 00:28:58,020] divided by a cubed.
+- [00:29:01,900 - 00:29:04,800] That's a formula that we have.
+- [00:29:04,980 - 00:29:06,440] Nu divided by a cubed.
+- [00:29:07,720 - 00:29:08,200] Now,
+- [00:29:08,200 - 00:29:11,360] the amount of mass in
+- [00:29:11,360 - 00:29:14,520] each cell in here stays fixed.
+- [00:29:14,760 - 00:29:15,740] Why does it stay fixed?
+- [00:29:15,940 - 00:29:18,280] Because the galaxies move with the grid.
+- [00:29:18,840 - 00:29:21,040] So the amount of mass in a given region,
+- [00:29:21,040 - 00:29:21,700] in the grid,
+- [00:29:21,700 - 00:29:22,780] stays the same.
+- [00:29:24,740 - 00:29:26,760] That's just something I've called nu,
+- [00:29:27,020 - 00:29:27,880] the Greek letter nu.
+- [00:29:28,100 - 00:29:29,510] And I divided it by
+- [00:29:29,510 - 00:29:30,920] the volume to get the density.
+- [00:29:31,240 - 00:29:33,720] And of course if A changes with time,
+- [00:29:33,940 - 00:29:35,660] the density changes with time.
+- [00:29:36,780 - 00:29:37,360] That's obvious.
+- [00:29:37,680 - 00:29:38,860] If the universe grows,
+- [00:29:38,860 - 00:29:40,580] the density decreases.
+- [00:29:40,840 - 00:29:42,140] If the universe collapses,
+- [00:29:42,140 - 00:29:43,280] the density increases.
+- [00:29:43,940 - 00:29:46,110] And so this is a formula that
+- [00:29:46,110 - 00:29:48,280] we will use from time to time.
+- [00:29:56,320 - 00:29:56,880] So let's go back to Newton.
+- [00:29:56,880 - 00:29:57,080] All right,
+- [00:29:57,080 - 00:29:57,480] so far,
+- [00:29:57,480 - 00:30:02,120] we've done nothing that Euclid himself couldn't have done.
+- [00:30:02,380 - 00:30:03,080] All right,
+- [00:30:03,080 - 00:30:04,300] we didn't even need Newton yet.
+- [00:30:05,120 - 00:30:06,540] Now enters Newton.
+- [00:30:07,600 - 00:30:08,720] And Newton says,
+- [00:30:08,720 - 00:30:09,180] look,
+- [00:30:09,180 - 00:30:11,540] let's not play games.
+- [00:30:11,860 - 00:30:13,340] Let's forget all this.
+- [00:30:13,540 - 00:30:15,350] We'll take into account that the
+- [00:30:15,350 - 00:30:17,160] universe is homogeneous and all that stuff.
+- [00:30:17,640 - 00:30:19,640] But Newton was a very,
+- [00:30:19,640 - 00:30:21,020] very self-centered person.
+- [00:30:21,040 - 00:30:22,720] He always believed that he was
+- [00:30:22,720 - 00:30:24,400] at the center of the universe.
+- [00:30:25,020 - 00:30:26,880] And so it was very natural
+- [00:30:26,880 - 00:30:28,740] for him to take the perspective
+- [00:30:28,740 - 00:30:30,100] that I,
+- [00:30:30,100 - 00:30:31,200] Sir Isaac Newton,
+- [00:30:33,400 - 00:30:34,960] am at the origin.
+- [00:30:35,720 - 00:30:37,160] Now of course we know,
+- [00:30:37,160 - 00:30:38,580] and Newton also would have known,
+- [00:30:38,860 - 00:30:40,360] that if he's clever,
+- [00:30:40,360 - 00:30:42,820] he'll get the same equations,
+- [00:30:43,040 - 00:30:45,000] no matter where he places himself.
+- [00:30:45,300 - 00:30:49,400] But there's nothing wrong with choosing the grid
+- [00:30:49,400 - 00:30:52,310] such that Newton and we are
+- [00:30:52,310 - 00:30:55,220] at the center of the grid.
+- [00:30:56,300 - 00:30:58,080] Then surrounding Newton,
+- [00:31:00,120 - 00:31:01,240] and moreover,
+- [00:31:06,040 - 00:31:07,500] Newton will also say,
+- [00:31:07,500 - 00:31:08,240] I'm not moving.
+- [00:31:10,600 - 00:31:11,460] Not moving?
+- [00:31:11,460 - 00:31:11,860] Well,
+- [00:31:11,860 - 00:31:13,300] I'm standing still.
+- [00:31:14,060 - 00:31:15,700] So Newton is at rest
+- [00:31:15,700 - 00:31:17,340] at the center of the universe
+- [00:31:17,340 - 00:31:21,160] as far as for mathematical purposes.
+- [00:31:21,600 - 00:31:23,000] And now he wants to,
+- [00:31:23,000 - 00:31:25,860] and of course we're talking about
+- [00:31:25,860 - 00:31:27,740] on a scale so that
+- [00:31:27,740 - 00:31:29,620] everything is nice and uniformly distributed.
+- [00:31:30,620 - 00:31:33,040] Now he looks out to a distant galaxy.
+- [00:31:35,340 - 00:31:38,880] He looks out to the galaxy over here.
+- [00:31:41,660 - 00:31:44,400] And he wants to know how that galaxy moves.
+- [00:31:44,400 - 00:31:45,660] Well,
+- [00:31:45,660 - 00:31:47,880] that galaxy moves under
+- [00:31:47,880 - 00:31:50,100] the assumption of Newton's equations.
+- [00:31:53,120 - 00:31:55,060] Newton's equations say that
+- [00:31:55,060 - 00:31:57,000] everything gravitates with everything else.
+- [00:31:57,820 - 00:32:00,520] But there's something special about Newton's,
+- [00:32:00,520 - 00:32:01,240] there's a theorem.
+- [00:32:01,640 - 00:32:02,900] Newton knew this theorem.
+- [00:32:02,900 - 00:32:03,400] In fact,
+- [00:32:03,400 - 00:32:04,340] it's called Newton's theorem.
+- [00:32:05,380 - 00:32:07,120] What Newton's theorem says
+- [00:32:08,140 - 00:32:09,850] is that if you want
+- [00:32:09,850 - 00:32:11,560] to know what the gravitational force
+- [00:32:12,320 - 00:32:13,540] on a system is,
+- [00:32:14,400 - 00:32:16,080] given that everything is isotropic,
+- [00:32:16,120 - 00:32:18,060] it doesn't even have to be homogeneous for this,
+- [00:32:18,160 - 00:32:20,300] given that everything is isotropic,
+- [00:32:20,520 - 00:32:23,160] you want to know the gravitational force
+- [00:32:23,160 - 00:32:26,460] in a frame of reference like I've drawn here,
+- [00:32:26,700 - 00:32:30,880] you want to know the gravitational force on that particle,
+- [00:32:31,560 - 00:32:33,560] then draw a sphere
+- [00:32:38,060 - 00:32:41,120] with that particle on the sphere
+- [00:32:42,420 - 00:32:43,880] centered at the origin,
+- [00:32:44,960 - 00:32:48,240] and then take all of the mass within that sphere
+- [00:32:49,120 - 00:32:52,240] and pretend that it's just sitting at the origin.
+- [00:32:52,960 - 00:32:53,900] Just pretend.
+- [00:32:53,900 - 00:32:55,560] We're not literally moving it.
+- [00:32:55,680 - 00:32:57,640] Just pretend that the only mass
+- [00:32:57,640 - 00:32:59,600] in the universe within this sphere
+- [00:32:59,600 - 00:33:01,060] is at the origin.
+- [00:33:01,800 - 00:33:03,260] And what about the outside?
+- [00:33:04,180 - 00:33:05,360] The mass is on the outside.
+- [00:33:07,000 - 00:33:07,780] Ignore it.
+- [00:33:08,560 - 00:33:09,780] Newton's theorem says
+- [00:33:10,240 - 00:33:11,880] that the force on a particle
+- [00:33:11,880 - 00:33:15,680] in an isotropic world like this
+- [00:33:15,680 - 00:33:19,780] all comes from the sphere inside
+- [00:33:21,019 - 00:33:23,140] the radius of the particle
+- [00:33:23,140 - 00:33:25,360] and nothing from the outside.
+- [00:33:28,780 - 00:33:31,560] I think we may have proved that in previous classes
+- [00:33:31,560 - 00:33:32,640] in classical mechanics.
+- [00:33:32,860 - 00:33:33,420] I don't remember,
+- [00:33:33,420 - 00:33:35,340] but it's a true theorem.
+- [00:33:36,180 - 00:33:37,340] It's a true theorem,
+- [00:33:37,340 - 00:33:38,180] and it's the reason
+- [00:33:38,880 - 00:33:40,680] that we here,
+- [00:33:40,680 - 00:33:43,600] in evaluating the gravitational field
+- [00:33:43,600 - 00:33:45,320] on this pen here,
+- [00:33:45,760 - 00:33:47,200] why we can pretend
+- [00:33:47,200 - 00:33:49,200] that all of the mass of the Earth
+- [00:33:49,200 - 00:33:50,500] is at the center of the Earth.
+- [00:33:51,920 - 00:33:54,440] When I evaluate the gravitational field here,
+- [00:33:56,620 - 00:33:58,720] keeping in mind that the Earth is a sphere,
+- [00:33:58,920 - 00:34:01,280] keeping in mind that it's pretty uniform,
+- [00:34:01,580 - 00:34:02,160] and so forth,
+- [00:34:02,300 - 00:34:04,820] I can just pretend that all of the mass
+- [00:34:04,820 - 00:34:05,920] was at the center of the Earth.
+- [00:34:05,980 - 00:34:06,360] Until,
+- [00:34:06,360 - 00:34:06,840] of course,
+- [00:34:06,840 - 00:34:08,060] the pen hits the floor.
+- [00:34:08,340 - 00:34:09,040] Then it'll say,
+- [00:34:09,040 - 00:34:09,179] no,
+- [00:34:09,179 - 00:34:10,120] the mass wasn't the...
+- [00:34:10,679 - 00:34:11,659] Until it hits the floor,
+- [00:34:12,400 - 00:34:14,560] pretend that all the mass was concentrated
+- [00:34:14,560 - 00:34:15,219] at the center,
+- [00:34:15,219 - 00:34:16,580] and furthermore,
+- [00:34:16,620 - 00:34:18,120] the masses outside,
+- [00:34:18,120 - 00:34:21,780] beyond this,
+- [00:34:21,960 - 00:34:23,719] even though there's a lot more out there,
+- [00:34:23,719 - 00:34:24,420] incidentally,
+- [00:34:24,420 - 00:34:26,020] there's a lot of mass out there.
+- [00:34:26,179 - 00:34:27,980] I'm not talking about the ceiling of the building.
+- [00:34:28,080 - 00:34:29,820] I'm talking about all the galaxies out there.
+- [00:34:30,159 - 00:34:31,000] There's a lot more,
+- [00:34:31,000 - 00:34:32,659] but the pen doesn't feel them.
+- [00:34:32,820 - 00:34:33,999] It only feels the things
+- [00:34:33,999 - 00:34:35,179] on the inside of the sphere.
+- [00:34:35,600 - 00:34:36,040] So,
+- [00:34:36,040 - 00:34:36,860] Newton says,
+- [00:34:36,860 - 00:34:37,900] all I'm going to do
+- [00:34:39,100 - 00:34:40,540] is I'm going to take
+- [00:34:40,679 - 00:34:41,300] this galaxy,
+- [00:34:41,300 - 00:34:43,199] which is
+- [00:34:44,580 - 00:34:46,460] at a certain distance away.
+- [00:34:47,460 - 00:34:48,880] What's its distance here?
+- [00:34:48,960 - 00:34:50,000] Its distance is d.
+- [00:34:51,419 - 00:34:53,580] Its distance is
+- [00:34:53,580 - 00:34:56,900] the square root of
+- [00:34:56,900 - 00:34:59,380] x squared plus y squared plus z squared.
+- [00:35:00,480 - 00:35:02,340] x squared and y squared and z squared,
+- [00:35:02,580 - 00:35:04,620] that's the coordinates of this point over here,
+- [00:35:05,460 - 00:35:06,180] times a.
+- [00:35:10,980 - 00:35:12,560] The distance from the center.
+- [00:35:12,800 - 00:35:13,580] Can you read the...
+- [00:35:13,580 - 00:35:14,960] Is it easy to read the red?
+- [00:35:15,040 - 00:35:16,100] I don't know why I started with the red.
+- [00:35:16,180 - 00:35:16,500] I just...
+- [00:35:17,640 - 00:35:18,100] elapsed.
+- [00:35:18,240 - 00:35:19,300] Is the red readable?
+- [00:35:20,160 - 00:35:20,620] Okay.
+- [00:35:21,040 - 00:35:21,640] All right.
+- [00:35:22,080 - 00:35:23,150] Square root of x squared
+- [00:35:23,150 - 00:35:24,220] plus y squared plus z squared,
+- [00:35:24,380 - 00:35:25,180] that's Pythagoras,
+- [00:35:25,400 - 00:35:28,640] and you multiply by a to find the actual distance.
+- [00:35:29,320 - 00:35:30,540] I can call that...
+- [00:35:30,540 - 00:35:33,740] Let's call that d equals a of t,
+- [00:35:34,000 - 00:35:36,280] and let's just call this thing here r,
+- [00:35:36,460 - 00:35:37,340] capital R.
+- [00:35:38,300 - 00:35:39,980] R is not measured in meters.
+- [00:35:39,980 - 00:35:41,950] It's just square root of x
+- [00:35:41,950 - 00:35:43,920] squared plus y squared plus z squared.
+- [00:35:44,460 - 00:35:47,480] That's the distance from the center
+- [00:35:47,480 - 00:35:49,680] to the galaxy in question.
+- [00:35:50,180 - 00:35:50,780] Now,
+- [00:35:50,780 - 00:35:53,940] Newton's equations are about forces
+- [00:35:53,940 - 00:35:56,020] and accelerations.
+- [00:35:56,540 - 00:35:59,460] So the first thing is let's calculate the acceleration
+- [00:36:00,080 - 00:36:01,060] of x,
+- [00:36:01,060 - 00:36:02,660] of the point x of
+- [00:36:02,660 - 00:36:04,260] the galaxy at the point x,
+- [00:36:04,920 - 00:36:06,300] relative to the origin.
+- [00:36:07,980 - 00:36:08,580] Well,
+- [00:36:08,580 - 00:36:09,340] first the velocity.
+- [00:36:09,980 - 00:36:13,330] The velocity is v is equal
+- [00:36:13,330 - 00:36:16,680] to a dot of t times r.
+- [00:36:17,680 - 00:36:19,240] And what about the acceleration?
+- [00:36:19,680 - 00:36:21,960] The acceleration is just differentiate again.
+- [00:36:26,240 - 00:36:28,730] Acceleration is equal to a
+- [00:36:28,730 - 00:36:31,220] double dot of t times r.
+- [00:36:31,540 - 00:36:32,930] Do we have to worry about
+- [00:36:32,930 - 00:36:34,320] whether r is changing with time?
+- [00:36:35,779 - 00:36:36,100] No.
+- [00:36:36,120 - 00:36:36,760] No,
+- [00:36:36,760 - 00:36:39,140] because the galaxy is at a fixed...
+- [00:36:40,520 - 00:36:42,680] point in this expanding lattice.
+- [00:36:43,320 - 00:36:45,220] r is fixed for that galaxy.
+- [00:36:45,580 - 00:36:47,100] And so this is the acceleration.
+- [00:36:48,940 - 00:36:51,500] We could multiply it by the mass of the galaxy
+- [00:36:51,500 - 00:36:53,060] if we wanted to,
+- [00:36:53,060 - 00:36:54,500] but I don't need to.
+- [00:36:54,620 - 00:36:55,560] It's just the acceleration.
+- [00:36:56,040 - 00:36:57,740] And what are we going to set that equal to?
+- [00:36:58,580 - 00:37:01,720] We're going to set that equal to the acceleration
+- [00:37:01,720 - 00:37:04,100] that we would get from
+- [00:37:04,100 - 00:37:06,480] all the gravitating material inside here.
+- [00:37:07,460 - 00:37:07,940] Okay,
+- [00:37:07,940 - 00:37:08,500] so let's see.
+- [00:37:08,560 - 00:37:09,140] How much...
+- [00:37:10,160 - 00:37:12,440] First question is how much mass is in there.
+- [00:37:12,640 - 00:37:12,940] Well,
+- [00:37:12,940 - 00:37:13,840] let's just call it the mass.
+- [00:37:13,920 - 00:37:17,660] This is the mass that's inside this sphere.
+- [00:37:19,680 - 00:37:22,660] The formula that we're going to compare this with
+- [00:37:22,660 - 00:37:25,380] is Newton's gravitational formula.
+- [00:37:26,260 - 00:37:30,000] Force is equal to mass times mass.
+- [00:37:30,840 - 00:37:32,580] Which mass is this little one here?
+- [00:37:34,640 - 00:37:35,480] That's the galaxy.
+- [00:37:35,720 - 00:37:36,960] The mass of the big one?
+- [00:37:37,040 - 00:37:37,680] Which one is that?
+- [00:37:39,000 - 00:37:40,720] That's all the mass on the inside.
+- [00:37:43,720 - 00:37:46,300] And the distance between...
+- [00:37:47,060 - 00:37:47,500] Well,
+- [00:37:47,500 - 00:37:48,900] the distance squared.
+- [00:37:49,680 - 00:37:51,540] And I'm missing a couple of things.
+- [00:37:51,620 - 00:37:52,360] Two things I'm missing.
+- [00:37:55,960 - 00:37:57,440] Newton's gravitational constant,
+- [00:37:57,600 - 00:38:00,300] 6.7 times 10 to the minus 11th in some units.
+- [00:38:01,180 - 00:38:02,620] I'm missing one more thing.
+- [00:38:02,840 - 00:38:03,580] Anybody know what it is?
+- [00:38:03,960 - 00:38:04,960] Not a minus sign.
+- [00:38:05,480 - 00:38:06,700] The minus sign...
+- [00:38:06,700 - 00:38:09,380] indicates that the force is attractive,
+- [00:38:09,380 - 00:38:10,460] pulling in.
+- [00:38:11,040 - 00:38:11,680] Alright?
+- [00:38:11,800 - 00:38:12,840] That's the convention.
+- [00:38:13,400 - 00:38:18,220] Force pulling in is counted as negative.
+- [00:38:18,320 - 00:38:20,660] Force pushing out is counted as positive.
+- [00:38:21,300 - 00:38:21,940] Alright,
+- [00:38:21,940 - 00:38:23,880] this is the force of gravity
+- [00:38:24,700 - 00:38:26,400] on a particle of mass m.
+- [00:38:26,600 - 00:38:28,220] What is the acceleration of gravity?
+- [00:38:28,480 - 00:38:31,000] The acceleration of gravity is...
+- [00:38:31,000 - 00:38:32,580] just drop the mass.
+- [00:38:32,760 - 00:38:33,820] Just drop this out.
+- [00:38:35,400 - 00:38:36,560] Forget the mass.
+- [00:38:38,080 - 00:38:41,000] The acceleration is the force per unit mass.
+- [00:38:41,280 - 00:38:43,000] And write that this is the acceleration.
+- [00:38:44,200 - 00:38:47,380] m minus mg divided by c squared.
+- [00:38:47,700 - 00:38:50,160] That's the acceleration of that galaxy.
+- [00:38:51,000 - 00:38:51,620] What's that?
+- [00:38:51,920 - 00:38:52,880] Which one are you using?
+- [00:38:52,880 - 00:38:53,400] The small one?
+- [00:38:53,960 - 00:38:54,500] No.
+- [00:38:54,920 - 00:38:55,520] No.
+- [00:38:56,040 - 00:38:56,640] No.
+- [00:38:57,020 - 00:38:59,920] I divided out the small m.
+- [00:39:00,880 - 00:39:01,480] Okay?
+- [00:39:01,720 - 00:39:02,320] Good.
+- [00:39:02,520 - 00:39:03,840] So that's the acceleration.
+- [00:39:03,840 - 00:39:05,680] Due to the presence of all
+- [00:39:05,680 - 00:39:07,520] this mass in the interior here.
+- [00:39:07,840 - 00:39:09,940] And that had better be equal
+- [00:39:11,700 - 00:39:16,400] to a double dot of t times r.
+- [00:39:19,420 - 00:39:21,180] God knows where this is going,
+- [00:39:21,360 - 00:39:22,820] but we're just following our nose,
+- [00:39:23,680 - 00:39:24,800] writing equations.
+- [00:39:25,860 - 00:39:26,620] And you know,
+- [00:39:26,620 - 00:39:27,720] that's always the way you do it.
+- [00:39:27,780 - 00:39:29,940] You start out with some physical principles.
+- [00:39:31,060 - 00:39:32,700] You write down the equations.
+- [00:39:32,700 - 00:39:36,080] And then you blindly follow them for a way
+- [00:39:36,080 - 00:39:38,100] until you need to think again.
+- [00:39:38,580 - 00:39:41,540] So we're on autopilot now.
+- [00:39:41,680 - 00:39:43,000] We're just doing equations.
+- [00:39:43,480 - 00:39:45,420] Let me rewrite it down here.
+- [00:39:46,080 - 00:39:49,840] A double dot r is equal
+- [00:39:49,840 - 00:39:53,600] to minus mg over d squared.
+- [00:39:54,060 - 00:39:54,420] Okay,
+- [00:39:54,420 - 00:39:58,300] let's plug in this guy over here.
+- [00:39:58,380 - 00:40:00,700] The distance is a times r.
+- [00:40:00,700 - 00:40:02,420] So maybe we can,
+- [00:40:02,420 - 00:40:02,760] maybe,
+- [00:40:02,760 - 00:40:03,400] who knows,
+- [00:40:03,460 - 00:40:05,400] at some point we might have actually discovered something
+- [00:40:05,400 - 00:40:06,460] that looks interesting.
+- [00:40:06,860 - 00:40:07,780] At the moment,
+- [00:40:07,780 - 00:40:12,060] it's just a blind aft squared,
+- [00:40:12,440 - 00:40:13,600] or just a squared.
+- [00:40:13,800 - 00:40:14,780] Let's just call it a squared.
+- [00:40:18,880 - 00:40:21,980] A squared times d squared?
+- [00:40:22,480 - 00:40:23,000] No,
+- [00:40:23,000 - 00:40:24,820] a squared times r squared,
+- [00:40:24,820 - 00:40:25,120] right?
+- [00:40:25,360 - 00:40:25,500] Yeah.
+- [00:40:29,500 - 00:40:30,020] Okay.
+- [00:40:33,299 - 00:40:33,700] Now,
+- [00:40:33,700 - 00:40:34,440] excuse me,
+- [00:40:34,440 - 00:40:36,900] but I'm just going to divide by r here.
+- [00:40:37,060 - 00:40:37,220] See,
+- [00:40:37,220 - 00:40:38,820] I secretly know where I'm going.
+- [00:40:39,720 - 00:40:40,120] Right.
+- [00:40:41,140 - 00:40:42,080] Maybe you do too,
+- [00:40:42,080 - 00:40:42,800] but that's all right.
+- [00:40:45,180 - 00:40:45,980] r cubed,
+- [00:40:45,980 - 00:40:46,780] I divide it.
+- [00:40:46,880 - 00:40:48,240] And I'm going to divide by another a.
+- [00:40:50,760 - 00:40:51,820] Makes this a cubed.
+- [00:40:54,360 - 00:40:54,760] Okay.
+- [00:40:58,399 - 00:40:58,799] Now,
+- [00:40:58,799 - 00:40:59,500] this is good.
+- [00:41:00,020 - 00:41:00,460] This will do.
+- [00:41:00,780 - 00:41:01,340] But,
+- [00:41:01,340 - 00:41:02,560] next question,
+- [00:41:02,560 - 00:41:04,180] what's the volume of the sphere?
+- [00:41:04,520 - 00:41:06,100] Let's write the volume of the sphere.
+- [00:41:06,220 - 00:41:07,600] This is Newton's equations.
+- [00:41:09,940 - 00:41:10,500] Now,
+- [00:41:10,500 - 00:41:11,500] volume of the sphere.
+- [00:41:11,660 - 00:41:12,160] What's the volume?
+- [00:41:15,900 - 00:41:16,920] Four thirds.
+- [00:41:19,080 - 00:41:21,180] Four thirds pi.
+- [00:41:21,400 - 00:41:21,860] Now,
+- [00:41:21,860 - 00:41:22,540] is it r cubed?
+- [00:41:22,860 - 00:41:23,340] No.
+- [00:41:23,500 - 00:41:24,520] d cubed.
+- [00:41:25,380 - 00:41:27,900] Which means a cubed times r cubed.
+- [00:41:28,720 - 00:41:29,280] Right?
+- [00:41:31,720 - 00:41:33,920] Because distance is really a times r.
+- [00:41:34,760 - 00:41:36,540] That's the actual physical volume.
+- [00:41:36,680 - 00:41:37,440] When I say the volume,
+- [00:41:37,440 - 00:41:39,720] I mean the volume is measured
+- [00:41:39,720 - 00:41:42,000] in some standard unit like meters.
+- [00:41:42,700 - 00:41:43,660] That's the volume.
+- [00:41:44,120 - 00:41:44,680] Now,
+- [00:41:44,680 - 00:41:45,020] look here.
+- [00:41:45,100 - 00:41:47,120] We have a cubed times r cubed here.
+- [00:41:48,560 - 00:41:52,790] Let me write that as volume three over four
+- [00:41:52,790 - 00:41:57,020] pi volume is equal to a cubed r cubed.
+- [00:41:57,960 - 00:41:58,480] Oh,
+- [00:41:58,480 - 00:41:59,240] maybe I'm being dumb.
+- [00:41:59,320 - 00:41:59,880] Maybe I shouldn't.
+- [00:42:00,760 - 00:42:01,280] Yeah,
+- [00:42:01,280 - 00:42:02,060] that's dumb.
+- [00:42:02,260 - 00:42:02,940] Let's not do that.
+- [00:42:05,600 - 00:42:07,180] Let's just look at this formula here.
+- [00:42:07,360 - 00:42:09,580] Notice that we have a cubed r cubed downstairs.
+- [00:42:11,000 - 00:42:14,740] Let's multiply by four over three pi.
+- [00:42:15,700 - 00:42:17,720] Or divide by four over three pi.
+- [00:42:18,040 - 00:42:20,600] And multiply by four over three pi.
+- [00:42:22,640 - 00:42:24,320] Four thirds pi.
+- [00:42:24,320 - 00:42:27,560] What I did here,
+- [00:42:27,560 - 00:42:28,780] I undid here.
+- [00:42:29,840 - 00:42:30,920] But now,
+- [00:42:30,920 - 00:42:35,760] I have m over the volume.
+- [00:42:36,020 - 00:42:37,080] What's m over the volume?
+- [00:42:37,580 - 00:42:38,660] The density.
+- [00:42:39,020 - 00:42:39,220] Ooh.
+- [00:42:39,860 - 00:42:41,860] Something nice may be happening.
+- [00:42:42,640 - 00:42:48,360] A double dot over a is equal to
+- [00:42:48,360 - 00:42:54,080] minus four thirds pi Newton's constant times the ratio
+- [00:42:54,080 - 00:42:54,300] of r cubed to r cubed.
+- [00:42:54,300 - 00:42:54,380] So,
+- [00:42:54,380 - 00:42:56,150] the ratio of the mass in that
+- [00:42:56,150 - 00:42:57,920] sphere to the volume in that sphere.
+- [00:42:58,180 - 00:43:00,040] And that is the density.
+- [00:43:11,200 - 00:43:11,740] Now,
+- [00:43:11,740 - 00:43:12,740] that's a nice equation.
+- [00:43:14,600 - 00:43:17,640] Notice that it really doesn't depend on r anymore.
+- [00:43:17,940 - 00:43:20,480] If we know what the density of the universe is,
+- [00:43:21,210 - 00:43:22,715] and the density of the universe
+- [00:43:22,715 - 00:43:24,220] does not depend on where you are,
+- [00:43:25,220 - 00:43:28,040] the density of the universe does not depend on r.
+- [00:43:28,900 - 00:43:30,440] The left hand side,
+- [00:43:30,440 - 00:43:32,000] r has dropped out.
+- [00:43:32,740 - 00:43:34,160] The right hand side,
+- [00:43:34,160 - 00:43:36,140] no memory of r.
+- [00:43:36,900 - 00:43:41,220] It means this equation is true for every galaxy,
+- [00:43:41,220 - 00:43:42,680] no matter how far away.
+- [00:43:43,740 - 00:43:44,700] Same equation.
+- [00:43:44,900 - 00:43:46,260] Had we done a different galaxy,
+- [00:43:46,260 - 00:43:48,200] we would have gotten the same equation.
+- [00:43:48,560 - 00:43:51,280] The only way that this equation had any
+- [00:43:51,280 - 00:43:54,000] memory of which galaxy we were talking about,
+- [00:43:54,000 - 00:43:55,600] was because of r.
+- [00:43:55,860 - 00:43:57,580] But r dropped out of the equation.
+- [00:43:57,920 - 00:43:59,300] That's of course a good thing,
+- [00:43:59,540 - 00:44:02,040] because if we want to think of a
+- [00:44:02,040 - 00:44:04,540] as something which doesn't depend on where you are,
+- [00:44:05,860 - 00:44:09,400] then it had better be that it drops out.
+- [00:44:09,660 - 00:44:10,240] So,
+- [00:44:10,240 - 00:44:14,260] Newton confirms what he might have expected,
+- [00:44:14,580 - 00:44:17,690] that the equation for a is
+- [00:44:17,690 - 00:44:20,800] a universal equation for all galaxies.
+- [00:44:21,180 - 00:44:21,480] Yeah.
+- [00:44:21,640 - 00:44:23,500] It seems like something seems,
+- [00:44:24,000 - 00:44:24,400] a little off,
+- [00:44:24,520 - 00:44:29,020] because we picked the origin,
+- [00:44:29,120 - 00:44:29,660] and it was arbitrary,
+- [00:44:29,860 - 00:44:30,120] supposedly.
+- [00:44:30,340 - 00:44:30,600] It was.
+- [00:44:31,759 - 00:44:32,160] Again,
+- [00:44:32,160 - 00:44:34,140] we would have gotten exactly the same thing,
+- [00:44:34,140 - 00:44:35,620] no matter what origin we picked.
+- [00:44:35,840 - 00:44:36,060] But I mean,
+- [00:44:36,060 - 00:44:36,380] it says,
+- [00:44:37,000 - 00:44:38,380] whichever origin we picked,
+- [00:44:38,840 - 00:44:40,700] then we get the force going toward that origin,
+- [00:44:40,700 - 00:44:41,180] right?
+- [00:44:41,660 - 00:44:42,220] That's right.
+- [00:44:42,560 - 00:44:42,960] So,
+- [00:44:42,960 - 00:44:45,560] something doesn't add up there.
+- [00:44:45,680 - 00:44:45,780] Well,
+- [00:44:45,780 - 00:44:46,680] it has added up,
+- [00:44:46,720 - 00:44:48,040] but the answer doesn't depend on which,
+- [00:44:49,160 - 00:44:49,560] no,
+- [00:44:49,560 - 00:44:50,180] you have to,
+- [00:44:50,200 - 00:44:50,380] no,
+- [00:44:50,380 - 00:44:50,460] no,
+- [00:44:50,460 - 00:44:50,560] no,
+- [00:44:50,560 - 00:44:53,680] the point is you have to do the transformation carefully.
+- [00:44:54,000 - 00:44:56,340] You have to do the transformation carefully.
+- [00:44:56,600 - 00:44:58,180] You go to another origin,
+- [00:44:58,840 - 00:45:00,120] and in your frame,
+- [00:45:00,280 - 00:45:01,460] Newton could have said,
+- [00:45:01,620 - 00:45:04,800] let me work this out from my frame of reference,
+- [00:45:05,060 - 00:45:06,800] which I will put myself at the origin,
+- [00:45:07,060 - 00:45:09,100] but let me study now
+- [00:45:09,100 - 00:45:11,140] the relative motion of some galaxies,
+- [00:45:11,160 - 00:45:12,860] relative to some moving,
+- [00:45:12,920 - 00:45:14,160] some galaxy which is moving.
+- [00:45:15,180 - 00:45:17,540] He would have found exactly the same equations,
+- [00:45:17,820 - 00:45:20,440] but he would have had to do the transformation carefully.
+- [00:45:21,400 - 00:45:21,920] So,
+- [00:45:21,920 - 00:45:23,860] we finessed that,
+- [00:45:23,860 - 00:45:24,840] and got away from it,
+- [00:45:24,880 - 00:45:26,660] by just putting ourselves at the center,
+- [00:45:26,860 - 00:45:28,040] but as you can see,
+- [00:45:28,120 - 00:45:30,620] the final formula doesn't care where you are.
+- [00:45:31,120 - 00:45:34,940] It confirms the fact that nothing really depended
+- [00:45:34,940 - 00:45:38,720] on which galaxy we thought of as our home.
+- [00:45:39,680 - 00:45:41,780] But the direction of the force,
+- [00:45:41,880 - 00:45:43,680] if we really look at
+- [00:45:43,680 - 00:45:45,480] the direction of the gravitational force,
+- [00:45:45,740 - 00:45:47,380] that's always toward the origin,
+- [00:45:47,380 - 00:45:47,740] right?
+- [00:45:48,120 - 00:45:49,340] There's a relative force,
+- [00:45:49,640 - 00:45:51,030] the right way to think about
+- [00:45:51,030 - 00:45:52,420] it is really a relative force.
+- [00:45:53,200 - 00:45:53,640] No,
+- [00:45:53,640 - 00:45:54,080] yeah,
+- [00:45:54,080 - 00:45:54,440] yeah,
+- [00:45:54,440 - 00:45:54,780] yeah,
+- [00:45:54,780 - 00:45:55,060] yeah,
+- [00:45:55,060 - 00:45:55,380] yeah,
+- [00:45:55,380 - 00:45:56,020] yeah,
+- [00:45:56,020 - 00:45:56,300] yeah,
+- [00:45:56,300 - 00:45:57,080] yeah,
+- [00:45:57,080 - 00:45:57,280] yeah,
+- [00:45:57,280 - 00:45:57,980] yeah,
+- [00:45:57,980 - 00:45:58,060] yeah,
+- [00:45:58,060 - 00:45:58,140] yeah.
+- [00:45:58,140 - 00:46:00,320] In this way of thinking about it,
+- [00:46:00,400 - 00:46:02,400] the force is always toward the origin,
+- [00:46:02,400 - 00:46:03,200] right?
+- [00:46:03,860 - 00:46:06,560] But had we stationed ourselves on some other galaxy
+- [00:46:06,560 - 00:46:07,360] that was moving,
+- [00:46:07,480 - 00:46:09,320] and did all the transformations,
+- [00:46:10,500 - 00:46:10,940] remember,
+- [00:46:10,940 - 00:46:13,360] when you go to a moving frame,
+- [00:46:13,940 - 00:46:15,760] there are fake forces,
+- [00:46:16,600 - 00:46:17,420] inertial forces,
+- [00:46:17,540 - 00:46:19,400] fake forces that you have to add in.
+- [00:46:19,900 - 00:46:20,340] So,
+- [00:46:20,340 - 00:46:21,940] from the point of view of this guy over here,
+- [00:46:23,500 - 00:46:25,120] this galaxy over here
+- [00:46:25,900 - 00:46:27,650] has a force which could be
+- [00:46:27,650 - 00:46:29,400] thought of as being toward here,
+- [00:46:30,000 - 00:46:31,600] plus a fake force,
+- [00:46:31,820 - 00:46:33,480] the fake force being an
+- [00:46:33,480 - 00:46:35,140] inertial force due to his acceleration.
+- [00:46:36,260 - 00:46:38,200] But we got around that by just saying,
+- [00:46:38,300 - 00:46:40,660] let's position ourselves at the center,
+- [00:46:40,860 - 00:46:41,560] no acceleration,
+- [00:46:41,560 - 00:46:42,380] no velocity,
+- [00:46:42,560 - 00:46:43,380] we just sit at the center.
+- [00:46:45,540 - 00:46:46,020] So,
+- [00:46:46,020 - 00:46:47,840] the only test question,
+- [00:46:47,960 - 00:46:49,260] the only question is,
+- [00:46:49,340 - 00:46:50,500] do we get an answer which
+- [00:46:50,500 - 00:46:51,660] doesn't depend on who we are
+- [00:46:51,660 - 00:46:52,960] and which galaxy we're on?
+- [00:46:53,440 - 00:46:53,920] Right.
+- [00:46:54,640 - 00:46:55,120] Okay,
+- [00:46:55,120 - 00:46:57,800] so that's part of the main message of this.
+- [00:46:57,900 - 00:47:00,140] The answer doesn't depend on which galaxy you're on,
+- [00:47:00,280 - 00:47:03,360] and so it really didn't depend on Newton's assumption
+- [00:47:03,360 - 00:47:04,380] that he was at the center.
+- [00:47:05,140 - 00:47:07,440] Can we go back to the equation for mass?
+- [00:47:07,740 - 00:47:09,900] Would anything have changed if we had assumed
+- [00:47:10,500 - 00:47:12,080] that nu was not a constant?
+- [00:47:12,880 - 00:47:13,360] Oh,
+- [00:47:13,360 - 00:47:13,660] yes.
+- [00:47:16,100 - 00:47:16,580] Yes,
+- [00:47:16,580 - 00:47:16,920] yes,
+- [00:47:16,920 - 00:47:17,180] nu,
+- [00:47:17,180 - 00:47:18,040] things would have changed
+- [00:47:18,040 - 00:47:19,040] if nu was not a constant.
+- [00:47:19,280 - 00:47:20,620] Could we say we've kind of...
+- [00:47:21,660 - 00:47:23,560] Made it happen by making that assumption?
+- [00:47:23,880 - 00:47:24,680] Made what happen?
+- [00:47:24,900 - 00:47:25,960] The end result.
+- [00:47:26,200 - 00:47:27,460] A constant in space?
+- [00:47:27,980 - 00:47:28,380] Yes.
+- [00:47:28,620 - 00:47:29,220] Yes,
+- [00:47:29,220 - 00:47:31,480] to say that it's a constant in space
+- [00:47:31,480 - 00:47:34,640] is the principle that the universe is homogeneous.
+- [00:47:35,000 - 00:47:36,140] So everything hinges on that assumption.
+- [00:47:36,240 - 00:47:36,800] Absolutely.
+- [00:47:37,000 - 00:47:39,360] Everything hinges on the homogeneity of the universe.
+- [00:47:39,940 - 00:47:40,540] Right.
+- [00:47:40,740 - 00:47:41,560] And that the...
+- [00:47:41,560 - 00:47:42,040] Right,
+- [00:47:42,040 - 00:47:44,120] that the number of...
+- [00:47:44,520 - 00:47:48,040] The mass per unit of volume is the same everywhere,
+- [00:47:48,280 - 00:47:49,420] in space.
+- [00:47:50,260 - 00:47:50,860] Okay.
+- [00:47:50,860 - 00:47:51,480] Yes,
+- [00:47:51,480 - 00:47:53,260] everything hinges on that.
+- [00:47:54,600 - 00:47:55,160] And...
+- [00:47:56,540 - 00:47:57,100] Okay,
+- [00:47:57,100 - 00:47:59,020] so here's one equation.
+- [00:47:59,180 - 00:48:01,780] It's a central fundamental equation of cosmology.
+- [00:48:02,600 - 00:48:04,320] And it's a differential equation.
+- [00:48:04,600 - 00:48:07,040] It's an equation for how A changes with time.
+- [00:48:07,160 - 00:48:07,280] Now,
+- [00:48:07,280 - 00:48:08,340] there's a number of things to look at,
+- [00:48:08,440 - 00:48:10,500] but the first interesting thing to look at
+- [00:48:11,460 - 00:48:14,080] is it's impossible to have a universe
+- [00:48:14,700 - 00:48:15,920] which is static.
+- [00:48:16,580 - 00:48:19,100] Static means that A doesn't change with time
+- [00:48:19,820 - 00:48:20,840] unless it's empty.
+- [00:48:20,840 - 00:48:23,280] Empty means rho equals zero.
+- [00:48:24,340 - 00:48:26,020] Only if it is empty,
+- [00:48:26,140 - 00:48:27,440] so that this side is zero,
+- [00:48:28,080 - 00:48:30,360] can the time derivative of A,
+- [00:48:30,500 - 00:48:32,520] or the second time derivative in this case,
+- [00:48:32,540 - 00:48:33,060] be zero.
+- [00:48:36,000 - 00:48:36,600] So,
+- [00:48:36,600 - 00:48:40,100] we derive the fact that the universe is not static.
+- [00:48:42,320 - 00:48:43,080] All right,
+- [00:48:43,080 - 00:48:44,380] one more thing we could do
+- [00:48:44,380 - 00:48:47,740] to make this an equation that we could solve
+- [00:48:49,380 - 00:48:50,820] is to replace...
+- [00:48:50,820 - 00:48:51,260] replace rho
+- [00:48:52,380 - 00:48:54,320] by the constant nu
+- [00:48:54,320 - 00:48:56,320] divided by A cubed.
+- [00:48:56,580 - 00:48:56,720] Now,
+- [00:48:56,720 - 00:48:58,240] nu is literally a constant.
+- [00:48:58,460 - 00:49:01,240] It's the number of galaxies
+- [00:49:01,240 - 00:49:02,880] times the mass of a galaxy
+- [00:49:03,700 - 00:49:06,400] in a unit coordinate volume.
+- [00:49:06,920 - 00:49:08,420] It doesn't change with time
+- [00:49:08,420 - 00:49:10,940] because the galaxies are frozen in the grid.
+- [00:49:11,720 - 00:49:12,600] And so,
+- [00:49:12,600 - 00:49:14,160] we could write this equation
+- [00:49:14,160 - 00:49:15,340] one more step.
+- [00:49:19,080 - 00:49:20,520] A double dot...
+- [00:49:22,180 - 00:49:24,340] Not surprising that there's an A double dot.
+- [00:49:24,600 - 00:49:25,880] Why is there an A double dot?
+- [00:49:26,160 - 00:49:28,260] Because Newton's equations are about acceleration.
+- [00:49:29,480 - 00:49:32,880] And not surprising that there's an A double dot.
+- [00:49:34,720 - 00:49:37,340] Equals minus four over three
+- [00:49:38,100 - 00:49:39,520] pi times g
+- [00:49:41,020 - 00:49:42,600] times the density,
+- [00:49:42,880 - 00:49:44,360] but the point is now
+- [00:49:44,360 - 00:49:46,520] the density is not a constant.
+- [00:49:46,840 - 00:49:47,760] Nu is a constant,
+- [00:49:48,000 - 00:49:49,680] but nu over A cubed is not
+- [00:49:49,680 - 00:49:51,320] because A is changing with time.
+- [00:49:51,600 - 00:49:52,320] And so,
+- [00:49:52,320 - 00:49:53,320] we better put that in here.
+- [00:49:53,620 - 00:49:55,720] Nu divided by A cubed.
+- [00:49:57,960 - 00:49:58,480] Okay,
+- [00:49:58,480 - 00:50:00,100] so there's a lot of constants here.
+- [00:50:00,740 - 00:50:01,260] Minus...
+- [00:50:01,260 - 00:50:02,720] The minus sign is a constant.
+- [00:50:02,980 - 00:50:04,360] Four pi over three.
+- [00:50:04,600 - 00:50:06,140] g Newton is a constant.
+- [00:50:06,540 - 00:50:09,560] And we can pick nu also to be a constant.
+- [00:50:09,800 - 00:50:09,940] So,
+- [00:50:09,940 - 00:50:11,740] everything out here is constant.
+- [00:50:12,500 - 00:50:13,960] A is not constant.
+- [00:50:13,960 - 00:50:16,200] But we have a kind of differential equation.
+- [00:50:16,700 - 00:50:17,980] It is a differential equation.
+- [00:50:18,100 - 00:50:19,460] A kind of equation of motion.
+- [00:50:19,940 - 00:50:22,100] In terms of one constant,
+- [00:50:22,420 - 00:50:24,200] four pi g nu over three,
+- [00:50:24,380 - 00:50:26,800] we have an equation of motion
+- [00:50:26,800 - 00:50:28,460] for the scale factor.
+- [00:50:28,580 - 00:50:29,560] For the scale factor,
+- [00:50:29,640 - 00:50:30,960] A is a function of time.
+- [00:50:33,320 - 00:50:35,940] Who was the first to discover this equation?
+- [00:50:36,820 - 00:50:38,900] It was actually discovered
+- [00:50:38,900 - 00:50:41,660] in the context of the general theory of relativity.
+- [00:50:42,860 - 00:50:43,400] It was discovered in the context
+- [00:50:43,400 - 00:50:43,940] of the general theory of relativity.
+- [00:50:43,940 - 00:50:44,180] It was discovered,
+- [00:50:44,180 - 00:50:45,320] I think,
+- [00:50:45,320 - 00:50:45,740] Friedman,
+- [00:50:47,000 - 00:50:48,000] Alexander Friedman,
+- [00:50:51,380 - 00:50:53,820] before he got himself killed in World War I,
+- [00:50:53,820 - 00:50:54,220] I think.
+- [00:50:55,580 - 00:50:57,740] Using the general theory of relativity.
+- [00:50:58,140 - 00:51:01,800] It was consistent with what Einstein should have done.
+- [00:51:03,180 - 00:51:03,680] But,
+- [00:51:03,680 - 00:51:06,080] it's perfectly possible there's nothing in it
+- [00:51:06,080 - 00:51:08,400] that wasn't just good old Newtonian mechanics.
+- [00:51:09,740 - 00:51:10,240] Okay.
+- [00:51:11,080 - 00:51:11,580] Yeah.
+- [00:51:11,720 - 00:51:13,560] Do you need to keep the A and the denominator
+- [00:51:13,560 - 00:51:14,460] on the left-hand side?
+- [00:51:15,860 - 00:51:16,300] Well,
+- [00:51:16,300 - 00:51:18,020] I can multiply it if I like.
+- [00:51:18,320 - 00:51:19,460] Just A double dot A?
+- [00:51:20,220 - 00:51:22,480] A double dot A is a constant over A squared?
+- [00:51:23,020 - 00:51:23,460] Sure.
+- [00:51:23,460 - 00:51:24,120] You can do that.
+- [00:51:24,280 - 00:51:24,740] It's just,
+- [00:51:24,740 - 00:51:26,540] it's traditional to write it this way.
+- [00:51:26,700 - 00:51:27,720] It's just a tradition.
+- [00:51:28,460 - 00:51:28,900] Yeah.
+- [00:51:29,000 - 00:51:29,160] So,
+- [00:51:29,160 - 00:51:30,820] does that negative sign
+- [00:51:31,420 - 00:51:33,060] not tell us anything about whether
+- [00:51:33,060 - 00:51:34,420] we're expanding or contracting?
+- [00:51:35,100 - 00:51:37,700] It doesn't tell us whether we're expanding or contracting.
+- [00:51:37,900 - 00:51:38,080] Okay.
+- [00:51:38,080 - 00:51:38,260] So,
+- [00:51:38,260 - 00:51:39,020] let me explain why.
+- [00:51:39,700 - 00:51:40,560] Let me write,
+- [00:51:41,880 - 00:51:42,700] forget that now.
+- [00:51:42,700 - 00:51:44,020] Now we just have the Earth.
+- [00:51:45,960 - 00:51:47,620] Let's compare this with something else.
+- [00:51:48,840 - 00:51:49,860] We have the Earth,
+- [00:51:49,940 - 00:51:52,820] and we have a particle over here.
+- [00:51:53,580 - 00:51:55,400] Let's put it on the x-axis.
+- [00:51:55,540 - 00:51:56,420] On the x-axis.
+- [00:51:57,260 - 00:51:57,700] Alright,
+- [00:51:57,700 - 00:51:59,080] there's an equation for that particle.
+- [00:51:59,200 - 00:51:59,900] It's the same equation.
+- [00:52:00,560 - 00:52:01,640] Let's call it now,
+- [00:52:02,279 - 00:52:03,220] let's call it x,
+- [00:52:03,320 - 00:52:05,300] but x doesn't stand for these coordinates now.
+- [00:52:05,400 - 00:52:08,120] It just stands for the standard position coordinate,
+- [00:52:09,080 - 00:52:10,880] or the height above the Earth.
+- [00:52:10,880 - 00:52:12,620] That satisfies some equation,
+- [00:52:12,840 - 00:52:15,020] x double dot is equal to
+- [00:52:15,020 - 00:52:16,940] the gravitational force,
+- [00:52:17,020 - 00:52:18,680] whatever the gravitational force is,
+- [00:52:19,780 - 00:52:23,040] mg over x squared minus,
+- [00:52:26,040 - 00:52:26,780] that's it,
+- [00:52:26,780 - 00:52:27,440] something like that.
+- [00:52:27,940 - 00:52:28,320] Okay.
+- [00:52:28,860 - 00:52:30,580] Does this equation,
+- [00:52:30,820 - 00:52:32,320] what this equation tells us
+- [00:52:32,690 - 00:52:36,920] is that the particle is accelerating toward the Earth.
+- [00:52:37,080 - 00:52:39,220] The minus sign tells us that the acceleration
+- [00:52:39,220 - 00:52:40,440] is toward the Earth.
+- [00:52:41,380 - 00:52:44,180] But whether it's moving away from the Earth
+- [00:52:44,180 - 00:52:45,180] or toward the Earth
+- [00:52:45,180 - 00:52:47,420] is a question of velocity,
+- [00:52:47,720 - 00:52:48,700] not acceleration.
+- [00:52:49,300 - 00:52:50,960] Is the velocity that way,
+- [00:52:51,060 - 00:52:52,200] or is it that way?
+- [00:52:52,840 - 00:52:53,360] Well,
+- [00:52:53,360 - 00:52:55,580] you can imagine somebody over here
+- [00:52:55,580 - 00:52:57,240] taking this particle
+- [00:52:57,240 - 00:52:59,160] and ejecting it that way.
+- [00:53:00,080 - 00:53:01,820] It will have a positive velocity,
+- [00:53:02,000 - 00:53:03,400] it will be moving away from the Earth.
+- [00:53:03,980 - 00:53:06,160] You could also imagine the same person
+- [00:53:06,160 - 00:53:07,720] pushing it that way.
+- [00:53:07,880 - 00:53:09,160] It will be moving toward the Earth.
+- [00:53:09,160 - 00:53:10,420] X is decreasing.
+- [00:53:11,140 - 00:53:13,420] But the acceleration will be the same.
+- [00:53:13,620 - 00:53:14,900] In either case,
+- [00:53:15,140 - 00:53:18,680] the velocity will have a negative acceleration,
+- [00:53:19,020 - 00:53:20,320] which means if it's going this way,
+- [00:53:20,460 - 00:53:21,560] it'll turn around,
+- [00:53:21,740 - 00:53:23,040] or may turn around.
+- [00:53:23,260 - 00:53:24,360] If it's going this way,
+- [00:53:24,460 - 00:53:26,860] it'll increase the inward velocity.
+- [00:53:28,100 - 00:53:31,260] Whether it turns around or not depends on what?
+- [00:53:31,980 - 00:53:32,820] Initial conditions.
+- [00:53:33,180 - 00:53:34,640] And the initial conditions,
+- [00:53:34,720 - 00:53:37,560] or whether it's above or below the escape velocity.
+- [00:53:37,560 - 00:53:39,640] But in either case,
+- [00:53:39,660 - 00:53:42,220] the acceleration is toward the Earth.
+- [00:53:43,100 - 00:53:45,760] So knowing that the acceleration is toward the Earth,
+- [00:53:45,960 - 00:53:47,100] as it is for this pen,
+- [00:53:47,640 - 00:53:49,040] does not tell me whether
+- [00:53:49,040 - 00:53:50,440] it's moving up or moving down.
+- [00:53:51,700 - 00:53:53,640] It can move up and then move down.
+- [00:53:53,820 - 00:53:56,100] And you get the point.
+- [00:53:56,340 - 00:53:56,580] Okay.
+- [00:53:57,160 - 00:53:57,680] So,
+- [00:53:57,680 - 00:53:58,040] no,
+- [00:53:58,040 - 00:53:59,380] this equation doesn't tell us
+- [00:53:59,380 - 00:54:01,620] whether the universe is expanding or contracting,
+- [00:54:01,940 - 00:54:05,080] but it tells us that the second derivative is negative.
+- [00:54:05,600 - 00:54:07,540] So it means that even if it's moving up,
+- [00:54:07,560 - 00:54:08,100] it's expanding,
+- [00:54:08,320 - 00:54:10,180] it's tending to slow down.
+- [00:54:10,380 - 00:54:11,060] If it's expanding,
+- [00:54:11,060 - 00:54:12,300] it's tending to slow down.
+- [00:54:12,800 - 00:54:14,060] If it's contracting,
+- [00:54:14,240 - 00:54:16,300] it's tending to speed up its contraction.
+- [00:54:18,240 - 00:54:19,880] There is an analog here
+- [00:54:20,560 - 00:54:24,140] of whether you are above or below the escape velocity,
+- [00:54:24,260 - 00:54:25,040] and we'll come to it.
+- [00:54:25,840 - 00:54:26,500] All right.
+- [00:54:26,540 - 00:54:28,380] So I was asked a question which
+- [00:54:28,380 - 00:54:32,660] I will just point out.
+- [00:54:33,480 - 00:54:34,000] Art,
+- [00:54:34,000 - 00:54:34,880] sorry Art,
+- [00:54:34,940 - 00:54:36,080] but I'm going to use your name.
+- [00:54:36,799 - 00:54:37,700] Art asked me,
+- [00:54:37,700 - 00:54:37,880] well,
+- [00:54:38,380 - 00:54:39,700] he looked at this and said,
+- [00:54:39,760 - 00:54:40,360] this is negative.
+- [00:54:42,839 - 00:54:44,540] And he looked at,
+- [00:54:44,600 - 00:54:45,180] what is this?
+- [00:54:45,240 - 00:54:47,760] He looked at this and said,
+- [00:54:47,900 - 00:54:49,200] this is positive.
+- [00:54:49,280 - 00:54:50,600] If the universe is expanding,
+- [00:54:50,940 - 00:54:51,820] H is positive.
+- [00:54:52,180 - 00:54:53,560] How come this one's negative?
+- [00:54:53,920 - 00:54:55,640] But that's because he didn't read carefully.
+- [00:54:55,780 - 00:54:57,680] There's two dots here and only one dot here.
+- [00:54:58,440 - 00:54:59,560] This is velocity.
+- [00:55:00,640 - 00:55:01,740] This is acceleration.
+- [00:55:02,540 - 00:55:05,000] Not hard for acceleration to be negative.
+- [00:55:05,000 - 00:55:05,280] You know,
+- [00:55:05,280 - 00:55:07,200] you're in your Ferrari
+- [00:55:07,200 - 00:55:08,700] and you're going down the
+- [00:55:10,240 - 00:55:11,440] down the
+- [00:55:12,720 - 00:55:13,920] Autobahn or whatever.
+- [00:55:15,660 - 00:55:19,480] And you press down on the brake.
+- [00:55:20,580 - 00:55:22,380] Your acceleration is negative,
+- [00:55:22,480 - 00:55:24,080] but your velocity is positive.
+- [00:55:24,700 - 00:55:25,300] Right.
+- [00:55:26,320 - 00:55:27,540] You're slowing down,
+- [00:55:27,700 - 00:55:28,580] but you're still going ahead.
+- [00:55:32,800 - 00:55:33,480] Now,
+- [00:55:33,480 - 00:55:34,540] in fact,
+- [00:55:34,560 - 00:55:36,520] the universe is not slowing down.
+- [00:55:37,020 - 00:55:37,640] This,
+- [00:55:37,640 - 00:55:40,780] we're really doing what Newton would have done
+- [00:55:40,780 - 00:55:42,840] and what all cosmologists thought
+- [00:55:42,840 - 00:55:44,900] the right thing to do was
+- [00:55:45,580 - 00:55:47,960] until about 15 years ago.
+- [00:55:49,600 - 00:55:50,000] Okay.
+- [00:55:51,400 - 00:55:52,760] So 15,
+- [00:55:54,980 - 00:55:58,560] this is Newton's model of the universe.
+- [00:56:01,620 - 00:56:04,560] And it is the model that would have been
+- [00:56:05,580 - 00:56:07,600] called the standard model,
+- [00:56:08,280 - 00:56:09,500] or close to it,
+- [00:56:09,560 - 00:56:11,280] the standard model of the universe
+- [00:56:11,900 - 00:56:12,380] until,
+- [00:56:13,960 - 00:56:16,680] until the accelerated universe was discovered.
+- [00:56:17,000 - 00:56:18,900] This is the decelerated universe,
+- [00:56:18,900 - 00:56:19,420] you see.
+- [00:56:20,580 - 00:56:22,640] But the universe accelerates.
+- [00:56:22,720 - 00:56:24,700] So there's got to be something else in this equation.
+- [00:56:24,880 - 00:56:25,020] Well,
+- [00:56:25,020 - 00:56:25,280] there is.
+- [00:56:25,280 - 00:56:26,820] There are several other things in that equation,
+- [00:56:26,920 - 00:56:27,680] but we'll come to them.
+- [00:56:28,900 - 00:56:32,920] Some parts do have to do with Einstein.
+- [00:56:34,280 - 00:56:35,340] Okay.
+- [00:56:44,400 - 00:56:47,160] Let's talk about,
+- [00:56:49,240 - 00:56:50,520] not cosmology,
+- [00:56:50,700 - 00:56:53,020] but just particles,
+- [00:56:53,300 - 00:56:54,720] rocks,
+- [00:56:54,720 - 00:56:55,480] stones,
+- [00:56:55,780 - 00:56:58,540] thrown upward from the universe,
+- [00:56:58,560 - 00:56:59,480] from the surface of the earth.
+- [00:57:11,420 - 00:57:12,680] Equations are very similar.
+- [00:57:18,000 - 00:57:19,840] Let's just examine them for a minute
+- [00:57:19,840 - 00:57:22,260] and take home a couple of lessons about it.
+- [00:57:27,200 - 00:57:28,040] Here's the earth,
+- [00:57:28,160 - 00:57:28,350] and we might have to do
+- [00:57:28,350 - 00:57:28,540] a little bit more of that.
+- [00:57:28,540 - 00:57:29,920] We might as well think of it as a point,
+- [00:57:30,020 - 00:57:33,560] because Newton proved the theorem that said
+- [00:57:33,560 - 00:57:35,000] we can think of it as a point.
+- [00:57:35,280 - 00:57:36,080] We're outside,
+- [00:57:36,320 - 00:57:37,900] we're above the surface of the earth.
+- [00:57:38,660 - 00:57:41,480] So here's the earth.
+- [00:57:42,220 - 00:57:43,800] Here's our particle over here.
+- [00:57:44,060 - 00:57:45,580] Where should I put it?
+- [00:57:45,680 - 00:57:46,520] Put it over here.
+- [00:57:47,980 - 00:57:48,460] No.
+- [00:57:49,120 - 00:57:50,000] Put it over here,
+- [00:57:50,060 - 00:57:50,580] x-axis.
+- [00:57:50,760 - 00:57:51,700] Put it on the x-axis.
+- [00:57:53,720 - 00:57:55,720] And what are its equations?
+- [00:57:55,840 - 00:57:57,280] The equations are Newton's equations,
+- [00:57:57,280 - 00:58:00,080] but there's actually a more useful version
+- [00:58:00,080 - 00:58:00,960] of Newton's equations,
+- [00:58:01,140 - 00:58:02,540] which is just energy conservation.
+- [00:58:03,380 - 00:58:04,680] Just energy conservation.
+- [00:58:05,280 - 00:58:07,480] Let's write down the energy
+- [00:58:08,140 - 00:58:11,720] of this particle over here,
+- [00:58:12,460 - 00:58:14,380] and write down that it's conserved.
+- [00:58:14,640 - 00:58:15,440] In fact,
+- [00:58:15,440 - 00:58:19,180] it's a more useful equation
+- [00:58:19,180 - 00:58:20,580] than this one over here,
+- [00:58:20,700 - 00:58:21,080] the energy,
+- [00:58:21,940 - 00:58:24,320] or more useful than F equals m-8.
+- [00:58:24,660 - 00:58:26,760] What is the energy of this particle here?
+- [00:58:27,280 - 00:58:28,300] It's moving outward.
+- [00:58:28,420 - 00:58:29,320] It has some velocity.
+- [00:58:29,520 - 00:58:30,800] The velocity could be negative.
+- [00:58:30,900 - 00:58:31,860] It could be moving inward.
+- [00:58:32,260 - 00:58:34,740] But what is the total energy of this particle?
+- [00:58:35,060 - 00:58:37,620] The total energy of it is its kinetic energy
+- [00:58:37,620 - 00:58:38,960] plus its potential energy.
+- [00:58:39,560 - 00:58:40,440] Kinetic energy,
+- [00:58:41,220 - 00:58:44,120] one half the mass of the particle,
+- [00:58:44,200 - 00:58:45,500] not the mass of the earth,
+- [00:58:46,340 - 00:58:47,820] the mass of the particle,
+- [00:58:47,880 - 00:58:49,460] times its velocity squared,
+- [00:58:51,060 - 00:58:53,800] which we could call x-dot squared if we wanted.
+- [00:58:53,860 - 00:58:54,300] Well,
+- [00:58:54,300 - 00:58:56,240] let's just leave it as velocity squared for a moment.
+- [00:58:56,240 - 00:58:58,480] But what about the potential energy?
+- [00:58:58,640 - 00:59:00,000] Remember the potential energy?
+- [00:59:01,380 - 00:59:03,240] Potential energy is minus
+- [00:59:04,780 - 00:59:05,700] little m,
+- [00:59:05,700 - 00:59:07,120] big M,
+- [00:59:07,960 - 00:59:08,960] Newton's constant,
+- [00:59:09,060 - 00:59:10,560] divided by what?
+- [00:59:11,080 - 00:59:11,640] R.
+- [00:59:11,820 - 00:59:12,680] Not R squared,
+- [00:59:12,680 - 00:59:13,420] just R.
+- [00:59:19,620 - 00:59:20,400] Say it again.
+- [00:59:21,480 - 00:59:22,040] X,
+- [00:59:22,040 - 00:59:22,520] x,
+- [00:59:22,520 - 00:59:22,980] x.
+- [00:59:23,140 - 00:59:23,460] Yeah,
+- [00:59:23,460 - 00:59:23,800] x.
+- [00:59:26,240 - 00:59:26,400] Okay.
+- [00:59:29,000 - 00:59:29,520] Now,
+- [00:59:29,520 - 00:59:31,500] this could be positive or negative,
+- [00:59:31,640 - 00:59:32,280] believe it or not.
+- [00:59:32,380 - 00:59:35,640] The energy does not have to be positive.
+- [00:59:35,980 - 00:59:36,880] For example,
+- [00:59:36,880 - 00:59:41,060] supposing this particle over here is at rest.
+- [00:59:41,600 - 00:59:42,940] I don't know how it got there.
+- [00:59:43,020 - 00:59:43,520] It got there,
+- [00:59:43,520 - 00:59:44,740] it's an initial condition.
+- [00:59:45,000 - 00:59:47,780] It got here at some time t.
+- [00:59:48,060 - 00:59:49,320] It's at rest.
+- [00:59:50,360 - 00:59:52,700] But at a positive value of x.
+- [00:59:53,860 - 00:59:55,440] x is really always positive.
+- [00:59:55,440 - 00:59:58,020] It really stands for the distance from the Earth,
+- [00:59:58,240 - 01:00:00,880] not the x coordinate.
+- [01:00:01,240 - 01:00:02,760] So x is always positive.
+- [01:00:03,240 - 01:00:04,780] This is always negative.
+- [01:00:05,840 - 01:00:09,680] This can be zero if the particle is at rest.
+- [01:00:09,880 - 01:00:13,120] And so the energy is negative in that case.
+- [01:00:13,940 - 01:00:15,880] The energy can also be positive.
+- [01:00:17,060 - 01:00:18,740] Supposing we now take the
+- [01:00:18,740 - 01:00:20,420] same particle at the same position,
+- [01:00:20,600 - 01:00:22,800] but give it a velocity.
+- [01:00:22,800 - 01:00:25,480] If the velocity is big enough,
+- [01:00:26,940 - 01:00:28,480] then this can outweigh that.
+- [01:00:29,620 - 01:00:31,920] This can outweigh that simply when,
+- [01:00:31,940 - 01:00:33,080] if I write the equation down,
+- [01:00:33,160 - 01:00:34,080] I'll write it down in a minute,
+- [01:00:34,220 - 01:00:36,260] when this is bigger than this,
+- [01:00:36,380 - 01:00:38,920] when the kinetic energy is bigger than the potential energy,
+- [01:00:39,140 - 01:00:44,820] then the total energy is positive.
+- [01:00:45,580 - 01:00:46,100] Now,
+- [01:00:46,100 - 01:00:47,580] if the total energy is positive,
+- [01:00:48,440 - 01:00:50,940] this thing cannot turn around.
+- [01:00:51,380 - 01:00:52,780] It cannot turn.
+- [01:00:52,800 - 01:00:53,780] You might say,
+- [01:00:54,040 - 01:00:54,660] well,
+- [01:00:54,660 - 01:00:55,400] let's see,
+- [01:00:55,460 - 01:00:58,740] this particle could go out and turn around.
+- [01:01:00,320 - 01:01:02,380] Why can't it turn around
+- [01:01:02,380 - 01:01:04,440] if the total energy is positive?
+- [01:01:04,760 - 01:01:05,280] Incidentally,
+- [01:01:05,280 - 01:01:05,660] energy,
+- [01:01:05,660 - 01:01:06,060] of course,
+- [01:01:06,060 - 01:01:06,700] is conserved.
+- [01:01:07,040 - 01:01:09,440] So whatever the energy is at one instant,
+- [01:01:09,540 - 01:01:11,460] it's the energy at every instant.
+- [01:01:11,800 - 01:01:12,980] Energy is conserved.
+- [01:01:13,800 - 01:01:15,940] Let's suppose it turned around at that point.
+- [01:01:16,940 - 01:01:18,880] What would its velocity be at that point?
+- [01:01:19,660 - 01:01:20,180] Zero.
+- [01:01:20,180 - 01:01:20,340] Zero.
+- [01:01:21,060 - 01:01:22,520] So what would its energy be?
+- [01:01:23,380 - 01:01:23,900] Negative.
+- [01:01:24,300 - 01:01:24,820] Negative.
+- [01:01:25,000 - 01:01:25,520] Right?
+- [01:01:26,060 - 01:01:26,980] So therefore,
+- [01:01:27,820 - 01:01:29,140] if it turns around,
+- [01:01:29,940 - 01:01:30,700] it's negative.
+- [01:01:30,860 - 01:01:31,660] The energy is negative.
+- [01:01:32,300 - 01:01:33,760] If it doesn't turn around,
+- [01:01:33,900 - 01:01:34,960] the energy is positive.
+- [01:01:35,600 - 01:01:38,240] Energy equals zero is a
+- [01:01:38,240 - 01:01:40,880] sort of edge of parameter space.
+- [01:01:42,440 - 01:01:43,960] If the energy is positive,
+- [01:01:44,040 - 01:01:45,980] the particle just keeps going and going and going.
+- [01:01:46,060 - 01:01:46,500] It escapes.
+- [01:01:47,760 - 01:01:49,240] If the energy is zero,
+- [01:01:49,240 - 01:01:50,960] that's exactly the escape velocity.
+- [01:01:51,760 - 01:01:54,040] We'll ask later whether it escapes or not
+- [01:01:54,040 - 01:01:55,320] if it's exactly at zero.
+- [01:01:57,100 - 01:01:58,460] What is the escape velocity?
+- [01:01:58,780 - 01:02:01,300] The escape velocity is the solution of the equation
+- [01:02:01,300 - 01:02:03,060] that this is equal to zero.
+- [01:02:03,260 - 01:02:04,240] So let's write it out.
+- [01:02:04,580 - 01:02:06,480] One half v squared.
+- [01:02:06,680 - 01:02:09,720] I'm dropping the m because it cancels from both sides.
+- [01:02:11,740 - 01:02:12,700] The little m.
+- [01:02:13,640 - 01:02:16,140] One half v squared is equal to big M,
+- [01:02:17,640 - 01:02:18,500] big G,
+- [01:02:19,240 - 01:02:20,620] divided by x.
+- [01:02:20,780 - 01:02:22,580] And now we can just multiply by two.
+- [01:02:24,580 - 01:02:27,520] And that gives us a formula for the escape velocity.
+- [01:02:28,000 - 01:02:30,000] That's the formula for the escape velocity
+- [01:02:30,000 - 01:02:33,120] when the energy is exactly equal to zero.
+- [01:02:34,260 - 01:02:36,400] In exactly the same manner,
+- [01:02:37,940 - 01:02:42,660] the universe can be above the escape velocity,
+- [01:02:42,880 - 01:02:44,320] below the escape velocity,
+- [01:02:44,560 - 01:02:46,300] or at the escape velocity.
+- [01:02:48,100 - 01:02:48,740] We'll...
+- [01:02:48,740 - 01:02:49,960] We're going to work that out in a minute.
+- [01:02:51,380 - 01:02:53,240] But all it means is
+- [01:02:53,240 - 01:02:55,220] if it's above the escape velocity,
+- [01:02:55,600 - 01:02:57,860] it means that initially,
+- [01:02:57,860 - 01:02:58,880] at some point,
+- [01:02:59,020 - 01:03:02,900] the outward expansion was large enough
+- [01:03:03,740 - 01:03:05,060] that it doesn't turn around.
+- [01:03:05,640 - 01:03:07,460] If it's below the escape velocity,
+- [01:03:07,740 - 01:03:10,180] then the universe turns around and recontracts.
+- [01:03:10,780 - 01:03:11,280] Okay.
+- [01:03:12,080 - 01:03:14,840] So that's the main reason for showing you this.
+- [01:03:14,980 - 01:03:17,320] And the escape velocity is kind of the edge.
+- [01:03:17,320 - 01:03:20,260] The escape velocity is also the velocity
+- [01:03:20,260 - 01:03:22,920] at which the energy is equal to zero.
+- [01:03:23,160 - 01:03:24,120] Keep that in mind.
+- [01:03:24,200 - 01:03:24,740] Escape velocity,
+- [01:03:24,740 - 01:03:27,120] same thing as energy equal to zero.
+- [01:03:29,320 - 01:03:30,140] All right.
+- [01:03:30,160 - 01:03:35,340] Now let's concentrate on this particle over here.
+- [01:03:35,880 - 01:03:36,560] Now,
+- [01:03:36,560 - 01:03:38,280] for all practical purposes,
+- [01:03:38,500 - 01:03:40,560] this particle over here,
+- [01:03:40,740 - 01:03:43,180] all it knows is that
+- [01:03:43,180 - 01:03:45,620] it's moving in the gravitational field
+- [01:03:45,620 - 01:03:47,680] of a point mass at the center
+- [01:03:47,680 - 01:03:50,280] where the point mass is capital M.
+- [01:03:52,320 - 01:03:54,580] So for all practical purposes,
+- [01:03:54,780 - 01:03:57,440] we can replace this problem over here
+- [01:04:00,480 - 01:04:02,460] by this one over here.
+- [01:04:03,700 - 01:04:04,540] In fact,
+- [01:04:04,540 - 01:04:06,000] it's exactly the same problem.
+- [01:04:07,680 - 01:04:11,540] So let's work out the energetics,
+- [01:04:11,540 - 01:04:13,320] the kinetic,
+- [01:04:13,320 - 01:04:15,340] the potential energy of this particle,
+- [01:04:16,920 - 01:04:20,020] and keep in mind that it's constant.
+- [01:04:20,320 - 01:04:23,200] It's constant because for all practical purposes,
+- [01:04:23,520 - 01:04:27,060] this particle is moving exactly as it would be
+- [01:04:27,540 - 01:04:30,040] if all there was was a mass at the center,
+- [01:04:30,220 - 01:04:31,100] and in that case,
+- [01:04:31,100 - 01:04:32,120] energy would be constant.
+- [01:04:32,740 - 01:04:33,970] So we can just lift
+- [01:04:33,970 - 01:04:35,200] the things that I wrote before,
+- [01:04:35,460 - 01:04:37,460] but let's work them out.
+- [01:04:37,680 - 01:04:38,580] Can I ask a quick question?
+- [01:04:38,860 - 01:04:38,960] Yeah.
+- [01:04:39,080 - 01:04:41,160] Isn't capital M in this case changing
+- [01:04:41,160 - 01:04:43,800] as you move farther and farther outside
+- [01:04:43,800 - 01:04:45,500] this continuous density?
+- [01:04:45,500 - 01:04:46,260] No.
+- [01:04:46,480 - 01:04:46,780] No.
+- [01:04:48,120 - 01:04:48,680] No.
+- [01:04:48,680 - 01:04:50,360] The whole thing is growing,
+- [01:04:50,640 - 01:04:51,700] but remember,
+- [01:04:51,700 - 01:04:52,520] the grid,
+- [01:04:52,760 - 01:04:54,160] everything moves with the grid.
+- [01:04:54,600 - 01:04:55,980] Everything moves with the grid.
+- [01:04:56,980 - 01:04:58,680] The only thing that's changing is A.
+- [01:04:59,520 - 01:05:02,560] The amount of mass in this sphere stays fixed.
+- [01:05:03,080 - 01:05:04,200] In other words,
+- [01:05:04,280 - 01:05:07,720] the number of galaxies that this fellow over here sees
+- [01:05:07,720 - 01:05:09,620] within this sphere stays fixed.
+- [01:05:10,260 - 01:05:10,820] Right.
+- [01:05:11,000 - 01:05:11,560] Good.
+- [01:05:12,240 - 01:05:12,800] Okay.
+- [01:05:12,860 - 01:05:13,320] So,
+- [01:05:13,320 - 01:05:13,600] no.
+- [01:05:14,420 - 01:05:15,480] So we don't have to worry about that.
+- [01:05:15,480 - 01:05:16,320] We don't have to worry about the mass changing.
+- [01:05:16,980 - 01:05:17,600] All right.
+- [01:05:17,600 - 01:05:19,900] Let's work out now the energy,
+- [01:05:20,520 - 01:05:21,400] the kinetic,
+- [01:05:21,480 - 01:05:21,740] well,
+- [01:05:21,740 - 01:05:23,140] the kinetic plus potential energy
+- [01:05:23,140 - 01:05:25,100] in Newton's frame.
+- [01:05:25,440 - 01:05:26,640] In Newton's frame,
+- [01:05:26,640 - 01:05:27,580] we'll work out the kinetic.
+- [01:05:27,700 - 01:05:27,840] All right.
+- [01:05:27,840 - 01:05:28,280] So what is it?
+- [01:05:28,320 - 01:05:29,620] It's one-half MV squared again.
+- [01:05:30,140 - 01:05:33,960] One-half the mass of this galaxy
+- [01:05:34,459 - 01:05:35,740] times the velocity squared,
+- [01:05:36,000 - 01:05:39,820] but that's A dot squared R squared.
+- [01:05:40,140 - 01:05:40,480] All right.
+- [01:05:40,500 - 01:05:41,080] Same R.
+- [01:05:41,480 - 01:05:42,260] Where is it?
+- [01:05:43,580 - 01:05:44,500] Same R.
+- [01:05:44,500 - 01:05:45,240] Same,
+- [01:05:45,240 - 01:05:45,760] yeah,
+- [01:05:45,760 - 01:05:46,380] same R.
+- [01:05:46,680 - 01:05:49,020] D is equal to A times R.
+- [01:05:50,220 - 01:05:52,100] Distance is A times R.
+- [01:05:53,680 - 01:05:55,840] Velocity is A dot times R.
+- [01:05:55,920 - 01:05:57,860] This is one-half MV squared.
+- [01:05:58,680 - 01:06:01,800] And then minus little m,
+- [01:06:01,800 - 01:06:03,600] big M,
+- [01:06:03,600 - 01:06:04,700] G
+- [01:06:06,600 - 01:06:09,580] divided by distance.
+- [01:06:09,920 - 01:06:10,380] All right.
+- [01:06:10,440 - 01:06:11,540] Just divided by distance.
+- [01:06:12,100 - 01:06:13,760] That's the potential energy.
+- [01:06:13,760 - 01:06:14,020] M,
+- [01:06:14,020 - 01:06:14,420] M,
+- [01:06:14,420 - 01:06:14,560] M,
+- [01:06:14,560 - 01:06:14,760] G.
+- [01:06:14,920 - 01:06:15,740] And what is the distance?
+- [01:06:15,880 - 01:06:20,020] The distance is A times R,
+- [01:06:20,020 - 01:06:20,320] right?
+- [01:06:22,800 - 01:06:23,600] Let's do the,
+- [01:06:23,620 - 01:06:27,740] and that's equal to the energy of this guy here.
+- [01:06:27,920 - 01:06:28,700] That's its energy.
+- [01:06:29,980 - 01:06:30,460] Now,
+- [01:06:30,460 - 01:06:31,200] for simplicity,
+- [01:06:31,440 - 01:06:32,440] and because it's,
+- [01:06:32,440 - 01:06:33,760] because of simplicity
+- [01:06:34,280 - 01:06:35,920] and also because I'm getting a little tired,
+- [01:06:36,160 - 01:06:38,160] I think I will just do tonight
+- [01:06:38,760 - 01:06:41,460] the case where the energy is exactly equal to zero.
+- [01:06:41,600 - 01:06:42,860] What does that correspond to?
+- [01:06:44,340 - 01:06:46,060] Exactly the critical escape velocity.
+- [01:06:46,820 - 01:06:47,700] That case,
+- [01:06:47,700 - 01:06:49,640] the other case is just as easy,
+- [01:06:49,740 - 01:06:52,200] but let's do that case.
+- [01:06:52,720 - 01:06:53,320] All right.
+- [01:06:53,340 - 01:06:57,190] So that's the case where the universe
+- [01:06:57,190 - 01:07:01,040] is sort of just on the edge.
+- [01:07:02,120 - 01:07:03,580] Not clear whether it's going
+- [01:07:03,580 - 01:07:05,040] to turn around and fall back
+- [01:07:05,040 - 01:07:06,360] or whether it's going to keep going.
+- [01:07:07,660 - 01:07:09,450] And it's on the edge of the
+- [01:07:09,450 - 01:07:11,240] cusp of doing one or the other.
+- [01:07:11,540 - 01:07:12,200] All right.
+- [01:07:12,200 - 01:07:13,460] So we're going to set this equal to zero.
+- [01:07:16,380 - 01:07:17,840] Let's work out that equation.
+- [01:07:18,100 - 01:07:19,560] Let's work out that equation
+- [01:07:19,560 - 01:07:21,020] using the various things we know.
+- [01:07:22,980 - 01:07:23,420] Okay.
+- [01:07:23,520 - 01:07:25,550] First thing to do is to
+- [01:07:25,550 - 01:07:27,580] get rid of the little m here.
+- [01:07:27,780 - 01:07:29,360] Why should we get rid of the little m?
+- [01:07:29,540 - 01:07:31,260] Because it appears in both terms here,
+- [01:07:31,360 - 01:07:33,040] and the whole thing is equal to zero,
+- [01:07:33,100 - 01:07:34,160] so I divide it out.
+- [01:07:36,680 - 01:07:38,380] I'll also multiply by two.
+- [01:07:49,380 - 01:07:49,780] So I get two.
+- [01:07:49,780 - 01:07:51,520] Next I'm going to divide by r squared.
+- [01:07:51,900 - 01:07:52,440] You know,
+- [01:07:52,440 - 01:07:54,140] why am I dividing by r squared?
+- [01:07:54,300 - 01:07:55,880] I want to get r cubed down here,
+- [01:07:55,960 - 01:07:57,990] because I know that r cubed
+- [01:07:57,990 - 01:08:00,020] has to do with the volume,
+- [01:08:00,180 - 01:08:00,860] and the volume,
+- [01:08:00,860 - 01:08:01,740] I'm going to get density.
+- [01:08:02,060 - 01:08:04,980] I'm trying to get this thing in terms of density.
+- [01:08:05,740 - 01:08:06,320] All right.
+- [01:08:06,340 - 01:08:08,000] So I divide by r squared,
+- [01:08:10,140 - 01:08:12,520] and that gives me an r cubed downstairs.
+- [01:08:12,820 - 01:08:13,540] That's nice,
+- [01:08:13,540 - 01:08:16,260] because there's a mass here
+- [01:08:16,260 - 01:08:18,100] and an r cubed downstairs.
+- [01:08:18,340 - 01:08:20,080] It looks like I'm getting the density,
+- [01:08:20,160 - 01:08:20,779] but not quite,
+- [01:08:20,939 - 01:08:23,119] because the volume of the sphere
+- [01:08:23,119 - 01:08:25,300] is a cubed times r cubed,
+- [01:08:25,479 - 01:08:26,899] not a times r cubed.
+- [01:08:27,120 - 01:08:27,899] So what do I do?
+- [01:08:28,020 - 01:08:30,800] I just divide the equation by another a squared.
+- [01:08:33,260 - 01:08:34,200] a cubed.
+- [01:08:36,920 - 01:08:37,439] Okay.
+- [01:08:38,160 - 01:08:38,840] That's...
+- [01:08:40,660 - 01:08:41,340] Good.
+- [01:08:45,580 - 01:08:46,260] Ah.
+- [01:08:51,460 - 01:08:53,300] a cubed times r cubed.
+- [01:08:54,359 - 01:08:56,220] a cubed times r cubed.
+- [01:08:57,240 - 01:08:58,399] What do I do next?
+- [01:08:58,680 - 01:08:59,000] Well,
+- [01:08:59,000 - 01:08:59,680] if I'm smart,
+- [01:08:59,680 - 01:09:03,700] I will multiply this by four over three times pi.
+- [01:09:03,700 - 01:09:06,640] That will literally make this the volume,
+- [01:09:07,599 - 01:09:09,449] but I'm doing something illegal
+- [01:09:09,449 - 01:09:11,300] unless I multiply it here also.
+- [01:09:11,580 - 01:09:14,319] Four over three times pi.
+- [01:09:18,120 - 01:09:18,859] Equals zero,
+- [01:09:18,859 - 01:09:19,200] right?
+- [01:09:19,260 - 01:09:19,800] Equals zero.
+- [01:09:23,100 - 01:09:23,800] All right.
+- [01:09:23,800 - 01:09:24,380] We're almost there.
+- [01:09:25,620 - 01:09:26,899] Let me rewrite it.
+- [01:09:27,600 - 01:09:30,979] a dot over a squared.
+- [01:09:32,140 - 01:09:33,680] Remember what a dot over a is?
+- [01:09:34,679 - 01:09:35,800] It's the Hubble constant.
+- [01:09:36,260 - 01:09:38,300] So this is the square of the...
+- [01:09:38,300 - 01:09:39,600] I take it back.
+- [01:09:39,819 - 01:09:40,979] It's not a constant.
+- [01:09:41,240 - 01:09:42,479] The Hubble thingy.
+- [01:09:44,279 - 01:09:46,220] a dot over a squared.
+- [01:09:46,319 - 01:09:47,620] That's the Hubble thingy squared.
+- [01:09:48,660 - 01:09:50,500] And that's equal to...
+- [01:09:50,500 - 01:09:53,260] I'm just transposing this to the right-hand side.
+- [01:09:53,859 - 01:09:55,700] There's an eight pi over three.
+- [01:09:55,780 - 01:09:56,800] Famous eight...
+- [01:09:57,519 - 01:09:58,880] Two times four is eight.
+- [01:09:59,340 - 01:10:01,080] Eight pi over three.
+- [01:10:03,240 - 01:10:04,120] There's a g.
+- [01:10:05,900 - 01:10:08,280] And now there's an m divided
+- [01:10:08,280 - 01:10:10,660] by the volume of the sphere.
+- [01:10:12,020 - 01:10:15,000] That's why I went to this effort here
+- [01:10:15,000 - 01:10:17,470] to put another couple of
+- [01:10:17,470 - 01:10:19,940] factors of a and r downstairs
+- [01:10:19,940 - 01:10:22,170] so that I would get a
+- [01:10:22,170 - 01:10:24,400] divided by the volume of the sphere,
+- [01:10:24,560 - 01:10:25,260] and that's rho.
+- [01:10:26,240 - 01:10:28,420] That's the mass density rho.
+- [01:10:28,580 - 01:10:30,160] The actual mass density.
+- [01:10:31,400 - 01:10:34,010] a dot over a squared equals
+- [01:10:34,010 - 01:10:36,620] eight pi over three g times rho.
+- [01:10:38,940 - 01:10:40,660] That is the Friedmann equation.
+- [01:10:41,840 - 01:10:43,460] That's the Friedmann equation
+- [01:10:43,460 - 01:10:49,760] the way that it's usually written.
+- [01:10:50,100 - 01:10:52,980] It's equivalent to this equation.
+- [01:10:53,700 - 01:10:56,420] This one over here is energy conservation.
+- [01:10:56,640 - 01:10:58,480] Also set the energy equal to zero.
+- [01:10:58,740 - 01:11:00,660] This one over here is Newton's equations.
+- [01:11:00,660 - 01:11:02,120] But the same physics.
+- [01:11:02,440 - 01:11:03,240] The same physics,
+- [01:11:03,240 - 01:11:04,600] the Newton version of it,
+- [01:11:04,680 - 01:11:07,180] the conservation of energy version of it.
+- [01:11:08,600 - 01:11:10,040] This one is more useful.
+- [01:11:12,380 - 01:11:13,220] As I said,
+- [01:11:13,220 - 01:11:14,240] it's called the Friedmann equation.
+- [01:11:17,660 - 01:11:19,630] It's not completely general because we
+- [01:11:19,630 - 01:11:21,600] did set the energy to zero.
+- [01:11:21,720 - 01:11:23,850] We did set it to
+- [01:11:23,850 - 01:11:25,980] just exactly the critical escape velocity.
+- [01:11:27,260 - 01:11:29,980] So this universe is not going to re-collapse.
+- [01:11:30,940 - 01:11:32,860] But it's going to...
+- [01:11:33,839 - 01:11:36,399] What does happen if you shoot
+- [01:11:36,399 - 01:11:38,960] something out at exactly the escape velocity?
+- [01:11:40,620 - 01:11:43,760] What happens to its motion as time goes on?
+- [01:11:44,000 - 01:11:46,040] Doesn't it slow to zero at infinity?
+- [01:11:46,340 - 01:11:46,620] Yeah.
+- [01:11:46,760 - 01:11:50,640] It just asymptotically gets slower and slower and slower,
+- [01:11:50,800 - 01:11:51,980] but it never turns around.
+- [01:11:52,300 - 01:11:54,890] This universe will asymptotically get slower
+- [01:11:54,890 - 01:11:57,480] and slower and slower in its expansion,
+- [01:11:57,680 - 01:12:00,040] but never turn around for the same reasons.
+- [01:12:01,020 - 01:12:01,460] Okay.
+- [01:12:01,560 - 01:12:04,000] So that's our Friedmann equation.
+- [01:12:06,380 - 01:12:07,540] I'd like to solve it,
+- [01:12:07,540 - 01:12:08,620] but I don't know enough yet.
+- [01:12:08,880 - 01:12:10,490] The reason I don't know enough
+- [01:12:10,490 - 01:12:12,100] is because there's rho over here,
+- [01:12:12,200 - 01:12:13,340] and I don't know what to do with rho,
+- [01:12:13,800 - 01:12:15,780] except we do know what to do with rho.
+- [01:12:16,220 - 01:12:18,680] Remember the equation that rho
+- [01:12:18,680 - 01:12:21,140] is equal to the constant nu.
+- [01:12:22,740 - 01:12:23,180] Incidentally,
+- [01:12:23,180 - 01:12:24,450] the constant nu can be
+- [01:12:24,450 - 01:12:25,720] set to be anything you want.
+- [01:12:25,820 - 01:12:26,800] It doesn't...
+- [01:12:26,800 - 01:12:27,500] It's not...
+- [01:12:27,500 - 01:12:27,960] It's...
+- [01:12:28,460 - 01:12:28,680] Yeah,
+- [01:12:28,680 - 01:12:28,940] okay.
+- [01:12:28,940 - 01:12:33,120] It's the mass per unit coordinate volume.
+- [01:12:33,520 - 01:12:35,580] By changing your coordinates,
+- [01:12:35,680 - 01:12:37,410] you can change the amount of
+- [01:12:37,410 - 01:12:39,140] mass that's in a coordinate volume.
+- [01:12:39,660 - 01:12:40,600] So actually,
+- [01:12:40,600 - 01:12:43,520] nu never really comes into anything important.
+- [01:12:43,960 - 01:12:47,400] But rho is equal to nu divided by a cubed.
+- [01:12:47,760 - 01:12:48,340] Remember that?
+- [01:12:50,000 - 01:12:50,720] Okay.
+- [01:12:50,780 - 01:12:53,200] So we can now write an
+- [01:12:53,200 - 01:12:55,620] even more useful version of this,
+- [01:12:55,760 - 01:12:58,460] a dot over a squared.
+- [01:12:59,819 - 01:13:06,700] Is equal to 8 pi over 3 g nu.
+- [01:13:08,120 - 01:13:09,620] And nu is a constant.
+- [01:13:09,940 - 01:13:11,780] Nu does not change with time.
+- [01:13:12,460 - 01:13:13,680] Divided by a cubed.
+- [01:13:18,620 - 01:13:19,940] I think we have it right.
+- [01:13:21,220 - 01:13:23,640] All of this junk here is just a constant.
+- [01:13:23,900 - 01:13:25,490] 8 pi nu over 3
+- [01:13:25,490 - 01:13:27,080] times g is just a constant.
+- [01:13:27,080 - 01:13:28,640] In fact,
+- [01:13:28,640 - 01:13:29,040] I could,
+- [01:13:29,040 - 01:13:29,720] if I like,
+- [01:13:29,720 - 01:13:30,820] have chosen nu
+- [01:13:30,820 - 01:13:33,120] so that 8 pi g nu
+- [01:13:33,120 - 01:13:35,420] over 3 is just the number 1.
+- [01:13:35,980 - 01:13:38,100] There's nothing interesting in it.
+- [01:13:38,340 - 01:13:41,220] The basic equation...
+- [01:13:41,980 - 01:13:43,580] The basic equation...
+- [01:13:43,580 - 01:13:45,600] The basic form of the equation...
+- [01:13:47,680 - 01:13:52,180] Is just that a dot over a squared
+- [01:13:53,009 - 01:13:54,980] is equal to some constant.
+- [01:13:54,980 - 01:13:57,100] But let's just choose that constant to be 1,
+- [01:13:57,280 - 01:13:58,100] just for simplicity.
+- [01:13:58,500 - 01:13:59,900] It's 1 over a cubed.
+- [01:14:00,420 - 01:14:02,180] If we can solve this equation,
+- [01:14:02,320 - 01:14:02,640] we can...
+- [01:14:02,640 - 01:14:03,900] If we can solve this equation,
+- [01:14:04,120 - 01:14:05,100] we can solve this one.
+- [01:14:05,940 - 01:14:09,740] It's not hard to go from one to the other.
+- [01:14:10,840 - 01:14:14,160] So we'd like to see how to solve this equation.
+- [01:14:15,740 - 01:14:16,220] Now,
+- [01:14:16,220 - 01:14:16,640] notice,
+- [01:14:16,640 - 01:14:17,820] first of all,
+- [01:14:18,400 - 01:14:21,520] that the right-hand side is always positive.
+- [01:14:23,420 - 01:14:24,320] In fact,
+- [01:14:24,320 - 01:14:26,400] it never quite goes to 0.
+- [01:14:26,520 - 01:14:28,240] No matter how big a gets,
+- [01:14:28,340 - 01:14:29,500] it's always positive.
+- [01:14:31,340 - 01:14:33,080] As a gets really,
+- [01:14:33,080 - 01:14:33,860] really big,
+- [01:14:33,980 - 01:14:35,100] it gets smaller and smaller.
+- [01:14:36,460 - 01:14:37,900] So that tells us
+- [01:14:39,320 - 01:14:41,040] that a dot over a
+- [01:14:41,040 - 01:14:42,980] never becomes equal to 0.
+- [01:14:43,680 - 01:14:47,380] a dot equals 0 would be the universe turning around.
+- [01:14:47,940 - 01:14:50,220] That would be the place where the universe turned around
+- [01:14:50,220 - 01:14:53,200] when the expansion rate went to 0.
+- [01:14:53,960 - 01:14:55,610] So this tells us the
+- [01:14:55,610 - 01:14:57,260] expansion rate never goes to 0.
+- [01:14:57,620 - 01:15:00,160] Hubble constant never changes sign,
+- [01:15:00,380 - 01:15:02,120] or at least the square of the Hubble constant
+- [01:15:02,120 - 01:15:02,900] never goes to 0.
+- [01:15:03,640 - 01:15:04,960] So if it doesn't go to 0,
+- [01:15:05,060 - 01:15:05,880] it can't change sign.
+- [01:15:07,040 - 01:15:07,600] And...
+- [01:15:07,600 - 01:15:09,540] But it does slow down.
+- [01:15:10,440 - 01:15:12,860] The Hubble constant gets smaller and smaller
+- [01:15:12,860 - 01:15:14,040] and smaller with time.
+- [01:15:14,600 - 01:15:16,270] So it's as if the
+- [01:15:16,270 - 01:15:17,940] universe just gets tired of expanding.
+- [01:15:18,879 - 01:15:23,020] But it never gets tired enough to stop.
+- [01:15:23,959 - 01:15:24,480] OK,
+- [01:15:24,480 - 01:15:25,740] we can try to solve this.
+- [01:15:28,339 - 01:15:30,780] I think I will just take the...
+- [01:15:30,780 - 01:15:31,640] It's getting late,
+- [01:15:31,740 - 01:15:33,080] and I get tired about this time.
+- [01:15:33,820 - 01:15:37,160] So I will take the easy way of solving it,
+- [01:15:37,240 - 01:15:39,380] but we will come back to these kind of equations.
+- [01:15:40,020 - 01:15:41,500] We'll come back to these kind of...
+- [01:15:41,500 - 01:15:43,400] This type of equation,
+- [01:15:43,660 - 01:15:45,380] this is absolutely...
+- [01:15:45,380 - 01:15:47,960] When I say not this type of equation,
+- [01:15:48,260 - 01:15:51,780] this type of equation is absolutely central
+- [01:15:51,780 - 01:15:53,180] to all of cosmology.
+- [01:15:54,279 - 01:15:55,880] And we can solve them.
+- [01:15:56,040 - 01:15:57,600] We can solve them quite easily.
+- [01:15:58,200 - 01:16:01,300] Let's just look for a solution of a particular type,
+- [01:16:01,300 - 01:16:01,760] OK?
+- [01:16:02,040 - 01:16:03,780] I'll look for a solution
+- [01:16:03,780 - 01:16:05,520] rather than to solve the equations.
+- [01:16:05,980 - 01:16:08,020] Let's look to see if we can find a solution
+- [01:16:08,020 - 01:16:10,660] where A is some constant
+- [01:16:10,660 - 01:16:13,340] times time to some power.
+- [01:16:14,959 - 01:16:17,060] We don't know that that's a...
+- [01:16:17,060 - 01:16:18,840] that we can solve it this way,
+- [01:16:18,920 - 01:16:19,580] but we can try.
+- [01:16:20,040 - 01:16:21,640] We can take a trial solution.
+- [01:16:22,400 - 01:16:23,180] A is...
+- [01:16:23,180 - 01:16:23,660] A equals...
+- [01:16:23,660 - 01:16:26,380] A proportional to T would just...
+- [01:16:26,380 - 01:16:27,900] What would A proportional to T mean?
+- [01:16:27,980 - 01:16:30,960] That would just mean A grows in proportion to time
+- [01:16:30,960 - 01:16:32,200] in a very simple way.
+- [01:16:32,640 - 01:16:34,300] We don't expect that to be right.
+- [01:16:34,620 - 01:16:35,200] It's not,
+- [01:16:35,200 - 01:16:36,340] because the thing slows down.
+- [01:16:36,900 - 01:16:38,960] But we can look for a solution of this type.
+- [01:16:39,160 - 01:16:40,080] So let's try it out.
+- [01:16:40,160 - 01:16:40,940] Let's see if we can...
+- [01:16:42,420 - 01:16:45,280] if we can use the equation to see what...
+- [01:16:45,280 - 01:16:47,860] whether we can solve for C and P.
+- [01:16:48,860 - 01:16:49,340] OK,
+- [01:16:49,340 - 01:16:50,320] so what's A dot?
+- [01:16:53,180 - 01:16:55,180] A dot is C,
+- [01:16:55,180 - 01:16:56,380] P,
+- [01:16:56,380 - 01:16:58,360] T to the P minus 1,
+- [01:16:58,360 - 01:16:58,660] right?
+- [01:16:59,180 - 01:17:00,400] That's just differentiation.
+- [01:17:01,160 - 01:17:01,760] Now,
+- [01:17:01,760 - 01:17:03,800] A dot over A...
+- [01:17:03,800 - 01:17:04,820] That's easy.
+- [01:17:05,120 - 01:17:07,260] We just have to divide by A,
+- [01:17:07,340 - 01:17:09,200] so we have to divide this by C,
+- [01:17:09,200 - 01:17:10,440] T to the P.
+- [01:17:13,320 - 01:17:14,240] C's cancel.
+- [01:17:14,780 - 01:17:15,380] Neat.
+- [01:17:15,420 - 01:17:17,000] The constant here cancels.
+- [01:17:20,100 - 01:17:22,320] And what's T to the P minus 1
+- [01:17:22,320 - 01:17:23,080] over T to the P?
+- [01:17:26,020 - 01:17:27,080] P over T,
+- [01:17:27,080 - 01:17:27,360] right?
+- [01:17:31,300 - 01:17:33,000] That's the left-hand side.
+- [01:17:33,320 - 01:17:34,560] P over T...
+- [01:17:34,560 - 01:17:34,640] Oh,
+- [01:17:34,640 - 01:17:35,000] sorry,
+- [01:17:35,000 - 01:17:35,920] we have to square it.
+- [01:17:40,320 - 01:17:40,840] This...
+- [01:17:43,160 - 01:17:45,140] P squared over T squared.
+- [01:17:46,100 - 01:17:47,180] That's the left side.
+- [01:17:47,580 - 01:17:48,820] P squared...
+- [01:17:50,160 - 01:17:50,680] Sorry,
+- [01:17:50,680 - 01:17:52,080] P squared over T squared.
+- [01:17:57,360 - 01:17:57,880] Now,
+- [01:17:57,880 - 01:17:59,120] what about 1 over A cubed?
+- [01:17:59,240 - 01:18:00,220] Let's see what that is.
+- [01:18:01,960 - 01:18:03,680] 1 over A cubed...
+- [01:18:03,680 - 01:18:04,780] That's 1...
+- [01:18:06,000 - 01:18:08,400] divided by C cubed...
+- [01:18:11,339 - 01:18:12,960] T to the 3P.
+- [01:18:15,180 - 01:18:16,260] Do I have that right?
+- [01:18:18,820 - 01:18:19,340] I did.
+- [01:18:19,340 - 01:18:19,500] I did.
+- [01:18:21,640 - 01:18:22,300] I did.
+- [01:18:22,300 - 01:18:22,300] Now,
+- [01:18:22,300 - 01:18:22,480] what we can do...
+- [01:18:23,260 - 01:18:24,060] All right?
+- [01:18:24,540 - 01:18:25,950] Now we can read off
+- [01:18:25,950 - 01:18:27,360] how to match the two sides.
+- [01:18:27,540 - 01:18:28,720] Let's get rid of this over here.
+- [01:18:28,980 - 01:18:30,620] And let's match the two sides.
+- [01:18:32,520 - 01:18:33,500] In the denominator,
+- [01:18:33,500 - 01:18:34,500] we have a power.
+- [01:18:34,720 - 01:18:36,360] We also have a power over here.
+- [01:18:36,920 - 01:18:38,320] This is 1 over T squared.
+- [01:18:38,740 - 01:18:40,500] This is 1 over T to the 3P,
+- [01:18:40,680 - 01:18:42,240] but I haven't told you what P is yet.
+- [01:18:43,280 - 01:18:44,640] So if we want to match,
+- [01:18:44,640 - 01:18:45,500] I've just said...
+- [01:18:45,500 - 01:18:47,640] Let's look for a solution of the form...
+- [01:18:47,640 - 01:18:50,210] ct to the p and see if we can
+- [01:18:50,210 - 01:18:52,780] figure out what c and p have to be.
+- [01:18:52,780 - 01:18:54,020] Well the first
+- [01:18:54,020 - 01:18:57,000] thing we learn is that 3p had better equal 2,
+- [01:18:57,000 - 01:18:58,760] otherwise these things can't
+- [01:18:58,760 - 01:18:59,080] match.
+- [01:18:59,080 - 01:19:00,760] There's no way that t to the
+- [01:19:00,760 - 01:19:02,440] fourth here can match with t squared here.
+- [01:19:02,980 - 01:19:06,240] So the first thing we learn
+- [01:19:06,240 - 01:19:09,500] is that 3p has to equal 2.
+- [01:19:09,500 - 01:19:11,700] We'll come back to it in
+- [01:19:11,700 - 01:19:11,960] a minute.
+- [01:19:11,960 - 01:19:14,440] Alright,
+- [01:19:14,440 - 01:19:16,240] that will guarantee that the
+- [01:19:16,240 - 01:19:18,040] t squared and the t squared
+- [01:19:18,040 - 01:19:19,360] agree on this side.
+- [01:19:19,360 - 01:19:20,860] On the other hand,
+- [01:19:20,860 - 01:19:23,620] we also have to match the constant and the
+- [01:19:23,620 - 01:19:26,810] constant tells us that p
+- [01:19:26,810 - 01:19:30,000] squared equals 1 over c cubed.
+- [01:19:36,360 - 01:19:38,500] So that tells us there was really only
+- [01:19:38,500 - 01:19:40,640] one constant that we had to worry about,
+- [01:19:40,780 - 01:19:41,680] either p or t.
+- [01:19:41,680 - 01:19:41,840] Or c.
+- [01:19:41,840 - 01:19:44,280] Once we know p,
+- [01:19:44,280 - 01:19:45,820] and we do know p,
+- [01:19:45,820 - 01:19:49,260] we know p from here and therefore we know the
+- [01:19:49,260 - 01:19:49,640] constant.
+- [01:19:49,640 - 01:19:52,380] The constant is not so interesting.
+- [01:19:52,380 - 01:19:53,440] What's interesting is p
+- [01:19:53,440 - 01:19:54,700] because what does p say?
+- [01:19:54,700 - 01:20:04,820] It says that a expands like t to the two-thirds.
+- [01:20:04,820 - 01:20:07,500] p is
+- [01:20:07,500 - 01:20:08,540] equal to two-thirds.
+- [01:20:10,539 - 01:20:11,660] Some constant
+- [01:20:12,339 - 01:20:14,780] times t to the two-thirds power.
+- [01:20:14,780 - 01:20:20,620] That's the way a Newtonian universe would expand
+- [01:20:20,620 - 01:20:21,720] if it had,
+- [01:20:21,720 - 01:20:25,280] if it was right at the critical escape velocity.
+- [01:20:25,280 - 01:20:27,280] It would expand with a
+- [01:20:27,280 - 01:20:28,600] scale factor and everything,
+- [01:20:28,600 - 01:20:34,880] all galaxies separating as time to the two-thirds
+- [01:20:34,880 - 01:20:35,120] power.
+- [01:20:35,120 - 01:20:38,180] That's quite a remarkable derivation,
+- [01:20:38,180 - 01:20:38,640] I think.
+- [01:20:38,640 - 01:20:39,120] I think,
+- [01:20:39,120 - 01:20:39,700] you know,
+- [01:20:39,720 - 01:20:40,020] Newton,
+- [01:20:40,020 - 01:20:43,320] I don't know why he didn't do it.
+- [01:20:43,320 - 01:20:43,720] It really,
+- [01:20:43,720 - 01:20:47,440] it annoys me that he didn't do it.
+- [01:20:47,440 - 01:20:49,120] He should have done it.
+- [01:20:49,680 - 01:20:52,950] And I think he went to
+- [01:20:52,950 - 01:20:56,220] the mint at this point or something.
+- [01:20:56,220 - 01:20:57,740] I'm not sure what happened to him.
+- [01:20:59,120 - 01:20:59,520] Oh,
+- [01:20:59,520 - 01:21:00,420] that was,
+- [01:21:00,420 - 01:21:01,960] this must have been the year that the,
+- [01:21:01,960 - 01:21:02,620] the,
+- [01:21:02,620 - 01:21:05,900] the year of the plague?
+- [01:21:05,900 - 01:21:06,240] No,
+- [01:21:06,240 - 01:21:07,860] it was the year of the tulips
+- [01:21:07,860 - 01:21:09,480] when he lost his shirt on tulips.
+- [01:21:09,480 - 01:21:09,800] Yeah.
+- [01:21:12,519 - 01:21:14,340] He did lose his shirt on tulips,
+- [01:21:14,340 - 01:21:14,560] you know.
+- [01:21:15,700 - 01:21:16,080] Yeah,
+- [01:21:16,080 - 01:21:16,280] yeah.
+- [01:21:16,280 - 01:21:18,960] He was one of the,
+- [01:21:18,960 - 01:21:21,120] one of the suckers who got the suckered by the,
+- [01:21:21,120 - 01:21:21,980] the tulip bubble.
+- [01:21:26,700 - 01:21:27,420] It's true,
+- [01:21:27,420 - 01:21:27,760] I,
+- [01:21:27,760 - 01:21:30,160] so,
+- [01:21:30,160 - 01:21:30,560] you know,
+- [01:21:30,560 - 01:21:30,900] smart.
+- [01:21:31,980 - 01:21:32,360] Hm?
+- [01:21:34,220 - 01:21:34,600] Yeah,
+- [01:21:34,600 - 01:21:35,520] but I think he got,
+- [01:21:35,520 - 01:21:36,480] I think he got stung.
+- [01:21:37,800 - 01:21:38,180] Did,
+- [01:21:38,180 - 01:21:39,900] did like Newton know there was a,
+- [01:21:39,900 - 01:21:40,000] a tulip bubble?
+- [01:21:40,020 - 01:21:40,520] universe?
+- [01:21:40,520 - 01:21:41,560] I mean,
+- [01:21:41,560 - 01:21:43,020] that wasn't known back then.
+- [01:21:45,160 - 01:21:45,720] No,
+- [01:21:45,720 - 01:21:47,700] but he should have predicted that there's a universe.
+- [01:21:49,879 - 01:21:51,700] Oh yes he did,
+- [01:21:51,700 - 01:21:55,140] and he worried about the fact that a homogeneous universe,
+- [01:21:55,140 - 01:21:56,040] oh yes,
+- [01:21:56,260 - 01:21:59,990] he most certainly had speculated enough that he
+- [01:21:59,990 - 01:22:03,720] was right on the threshold of doing this.
+- [01:22:03,760 - 01:22:05,620] He had asked all the questions about
+- [01:22:05,620 - 01:22:07,480] it and didn't quite carry it out.
+- [01:22:11,360 - 01:22:12,000] So,
+- [01:22:12,000 - 01:22:12,640] yeah.
+- [01:22:12,940 - 01:22:15,460] Does this have any assumption
+- [01:22:15,460 - 01:22:17,980] on the universe being infinite?
+- [01:22:19,220 - 01:22:19,860] Yes,
+- [01:22:19,860 - 01:22:20,860] this is,
+- [01:22:20,860 - 01:22:22,640] actually not,
+- [01:22:22,640 - 01:22:25,520] but yes,
+- [01:22:25,520 - 01:22:26,580] that's a good question.
+- [01:22:26,660 - 01:22:28,660] We've done a completely Newtonian theory.
+- [01:22:28,960 - 01:22:30,400] In Newtonian theory,
+- [01:22:30,400 - 01:22:31,580] space is flat.
+- [01:22:32,520 - 01:22:33,640] If space is flat,
+- [01:22:33,640 - 01:22:35,260] it just goes on and on forever.
+- [01:22:36,040 - 01:22:36,680] So yes.
+- [01:22:37,060 - 01:22:37,460] The Newtonian theory is flat.
+- [01:22:37,480 - 01:22:39,340] The Newtonian universe would have been infinite.
+- [01:22:39,840 - 01:22:42,320] It would have been spatially flat.
+- [01:22:43,100 - 01:22:44,990] It wouldn't have had an
+- [01:22:44,990 - 01:22:46,880] interesting Einsteinian geometry of any kind,
+- [01:22:46,880 - 01:22:48,040] although it would have
+- [01:22:48,040 - 01:22:49,780] been expanding or contracting.
+- [01:22:52,930 - 01:22:55,680] And it would have been entirely Newtonian.
+- [01:22:55,960 - 01:22:56,500] All right,
+- [01:22:56,500 - 01:22:58,770] so I did this just
+- [01:22:58,770 - 01:23:01,040] first of all because it's easy,
+- [01:23:01,040 - 01:23:03,900] second of all because it
+- [01:23:04,419 - 01:23:07,280] contains a lot of the physics.
+- [01:23:07,280 - 01:23:09,400] It's a lot of the physics that we're
+- [01:23:09,400 - 01:23:11,520] going to be dealing with in a simple form.
+- [01:23:16,420 - 01:23:18,820] And it gives us a model universe.
+- [01:23:19,100 - 01:23:22,290] It gives us a model universe with a
+- [01:23:22,290 - 01:23:25,480] scale factor that increases like a two-thirds power
+- [01:23:25,920 - 01:23:26,560] of a time.
+- [01:23:31,060 - 01:23:31,780] Excuse me.
+- [01:23:31,860 - 01:23:32,100] Yeah.
+- [01:23:32,120 - 01:23:34,690] Is everything that you've said here still true
+- [01:23:34,690 - 01:23:37,260] in the case where we don't have a model
+- [01:23:37,260 - 01:23:38,360] Is there a state velocity zero?
+- [01:23:39,740 - 01:23:40,640] Not quite.
+- [01:23:40,780 - 01:23:41,020] No.
+- [01:23:41,220 - 01:23:41,700] No.
+- [01:23:41,700 - 01:23:44,060] Then there's another term in this equation.
+- [01:23:45,300 - 01:23:47,100] There's another term in this equation.
+- [01:23:49,420 - 01:23:51,980] And we will come to that other term.
+- [01:23:52,220 - 01:23:52,500] OK.
+- [01:23:52,520 - 01:23:54,440] So the formula involves a lot of…
+- [01:23:55,320 - 01:23:55,800] No.
+- [01:23:55,880 - 01:23:58,760] It can't be because if you had negative energy,
+- [01:23:58,760 - 01:23:59,660] it would re-collapse.
+- [01:23:59,920 - 01:24:00,380] Right.
+- [01:24:00,780 - 01:24:02,120] So there's another term.
+- [01:24:02,480 - 01:24:03,660] And the next time,
+- [01:24:03,660 - 01:24:05,400] we'll take up that other term
+- [01:24:05,400 - 01:24:07,140] and we'll talk about the three possible
+- [01:24:07,260 - 01:24:07,560] possibilities.
+- [01:24:08,240 - 01:24:09,440] Less than zero,
+- [01:24:09,440 - 01:24:11,180] in other words,
+- [01:24:11,180 - 01:24:11,820] re-collapse.
+- [01:24:12,100 - 01:24:13,160] Greater than zero,
+- [01:24:13,160 - 01:24:15,000] that means the universe just
+- [01:24:15,000 - 01:24:16,840] expands without even thinking about it.
+- [01:24:17,220 - 01:24:18,260] And this,
+- [01:24:18,260 - 01:24:21,190] which is the critical point where
+- [01:24:21,190 - 01:24:24,120] it slows down in a certain way.
+- [01:24:25,419 - 01:24:28,149] Another diagram that people always draw for
+- [01:24:28,149 - 01:24:30,880] this kind of thing looks something like this.
+- [01:24:30,940 - 01:24:32,780] You've probably seen diagrams like this.
+- [01:24:34,780 - 01:24:35,380] Plot.
+- [01:24:36,799 - 01:24:38,380] On the vertical axis,
+- [01:24:38,380 - 01:24:41,240] you plot A,
+- [01:24:41,240 - 01:24:42,660] the scale factor.
+- [01:24:47,180 - 01:24:48,880] And on the horizontal axis,
+- [01:24:48,880 - 01:24:49,820] you plot time.
+- [01:24:52,480 - 01:24:53,040] OK.
+- [01:24:53,260 - 01:24:53,820] Now,
+- [01:24:53,820 - 01:24:55,100] A equals T.
+- [01:24:55,100 - 01:24:58,880] There's no sensible cosmology that does that,
+- [01:24:58,880 - 01:24:59,880] but let's just draw it in.
+- [01:25:00,040 - 01:25:01,380] Here's A equals T.
+- [01:25:04,780 - 01:25:05,360] And then you have time.
+- [01:25:05,380 - 01:25:05,820] Now,
+- [01:25:05,820 - 01:25:08,440] what does it mean that A decelerates,
+- [01:25:08,440 - 01:25:10,720] that the acceleration is negative?
+- [01:25:11,060 - 01:25:15,240] That it decelerates is a statement that the curve
+- [01:25:15,240 - 01:25:19,420] is bent over this way as opposed to this way.
+- [01:25:19,480 - 01:25:21,520] The second derivative is negative.
+- [01:25:22,160 - 01:25:23,320] The curve goes this way.
+- [01:25:23,660 - 01:25:28,500] A to the 2 thirds looks approximately like this.
+- [01:25:34,460 - 01:25:35,740] And of course,
+- [01:25:35,740 - 01:25:37,160] it keeps growing.
+- [01:25:40,500 - 01:25:43,860] What about a recontracting universe?
+- [01:25:44,060 - 01:25:46,400] What if the universe recollapsed?
+- [01:25:46,420 - 01:25:51,220] A collapsing universe would look like...
+- [01:25:55,220 - 01:25:55,640] Crash.
+- [01:25:58,239 - 01:25:59,440] And a...
+- [01:25:59,440 - 01:26:03,180] This does not approach a straight line,
+- [01:26:03,180 - 01:26:03,900] incidentally.
+- [01:26:04,680 - 01:26:05,280] OK.
+- [01:26:05,340 - 01:26:06,520] It does not approach a straight line.
+- [01:26:06,760 - 01:26:09,200] It just keeps bending over slightly more and more.
+- [01:26:09,480 - 01:26:13,860] And the universe of positive energy would look pretty much
+- [01:26:13,860 - 01:26:18,240] the same and then go off on a straight line.
+- [01:26:19,920 - 01:26:21,120] On a straight line.
+- [01:26:22,400 - 01:26:26,040] Those are the three cases that we'll describe.
+- [01:26:28,519 - 01:26:30,040] Did I get that right?
+- [01:26:30,980 - 01:26:31,500] No,
+- [01:26:31,500 - 01:26:32,640] I take this back.
+- [01:26:32,700 - 01:26:33,560] This is not quite right.
+- [01:26:34,160 - 01:26:35,220] I take that back.
+- [01:26:37,720 - 01:26:38,240] No,
+- [01:26:38,240 - 01:26:38,520] no,
+- [01:26:38,520 - 01:26:38,640] no.
+- [01:26:38,700 - 01:26:39,280] That's incorrect.
+- [01:26:39,940 - 01:26:42,160] We'll do the case of positive energy.
+- [01:26:43,620 - 01:26:45,080] But in any case,
+- [01:26:45,080 - 01:26:46,300] in all of these cases,
+- [01:26:46,300 - 01:26:48,460] the tendency is to curve
+- [01:26:48,460 - 01:26:50,620] over because the acceleration is negative.
+- [01:26:50,940 - 01:26:53,220] The real universe does not look like that.
+- [01:26:53,380 - 01:26:56,020] The real universe starts out looking like that.
+- [01:26:56,020 - 01:26:59,760] And then starts to curve upward.
+- [01:27:02,300 - 01:27:03,120] It's accelerating.
+- [01:27:03,540 - 01:27:05,180] The real universe is accelerating.
+- [01:27:07,420 - 01:27:07,860] Yeah?
+- [01:27:08,580 - 01:27:10,870] So we got this Ct to the 2
+- [01:27:10,870 - 01:27:13,160] thirds because we tried solutions in a certain form.
+- [01:27:13,160 - 01:27:13,500] Because what?
+- [01:27:13,800 - 01:27:15,920] Because we tried solutions in a certain form.
+- [01:27:16,220 - 01:27:16,340] Yeah.
+- [01:27:16,920 - 01:27:18,590] If we were to just sit
+- [01:27:18,590 - 01:27:20,260] down and experiment with other solutions,
+- [01:27:20,260 - 01:27:22,200] would there be others that gave us a different result?
+- [01:27:22,400 - 01:27:24,000] We'll solve the equation in detail,
+- [01:27:24,000 - 01:27:24,240] though.
+- [01:27:24,280 - 01:27:24,740] This is it.
+- [01:27:24,740 - 01:27:25,280] This is it.
+- [01:27:25,320 - 01:27:26,780] This is the solution.
+- [01:27:29,100 - 01:27:29,580] Yeah,
+- [01:27:29,580 - 01:27:29,840] we'll,
+- [01:27:29,840 - 01:27:31,060] yeah.
+- [01:27:32,040 - 01:27:32,520] No,
+- [01:27:32,520 - 01:27:33,580] this is the only solution.
+- [01:27:35,180 - 01:27:37,080] But we can change the energy.
+- [01:27:37,240 - 01:27:39,160] We can change the energy away from zero.
+- [01:27:39,380 - 01:27:40,280] And if we do,
+- [01:27:40,280 - 01:27:45,520] we can generate other kinds of solutions.
+- [01:27:46,320 - 01:27:46,920] All right.
+- [01:27:47,820 - 01:27:48,300] Okay.
+- [01:27:48,460 - 01:27:49,300] Any questions?
+- [01:27:50,900 - 01:27:52,300] I'm kind of tired.
+- [01:27:52,420 - 01:27:52,620] But,
+- [01:27:52,620 - 01:27:52,860] yeah.
+- [01:27:53,680 - 01:27:54,020] Here it is.
+- [01:27:54,020 - 01:27:56,240] Is the critical density universe,
+- [01:27:56,240 - 01:27:59,040] does it bend over until it's horizontal?
+- [01:27:59,480 - 01:27:59,760] No,
+- [01:27:59,760 - 01:28:00,100] no,
+- [01:28:00,100 - 01:28:00,540] no,
+- [01:28:00,540 - 01:28:00,920] no.
+- [01:28:01,040 - 01:28:01,480] Well,
+- [01:28:01,480 - 01:28:02,100] sorry.
+- [01:28:02,860 - 01:28:03,300] Yeah.
+- [01:28:04,200 - 01:28:06,180] The derivative gets smaller and smaller.
+- [01:28:06,340 - 01:28:07,040] A to the 2 thirds.
+- [01:28:07,140 - 01:28:07,380] All right.
+- [01:28:07,400 - 01:28:07,980] So let's see.
+- [01:28:08,020 - 01:28:08,500] What do we know?
+- [01:28:08,860 - 01:28:10,060] A to the minus 2 thirds.
+- [01:28:10,280 - 01:28:10,720] Yeah.
+- [01:28:11,260 - 01:28:11,700] No,
+- [01:28:11,700 - 01:28:12,600] we've already done it.
+- [01:28:12,700 - 01:28:13,040] Yeah.
+- [01:28:14,160 - 01:28:14,600] Let's.
+- [01:28:17,220 - 01:28:18,460] C to the 2 thirds.
+- [01:28:18,640 - 01:28:19,620] T to the 2 thirds.
+- [01:28:19,720 - 01:28:19,940] Right?
+- [01:28:20,540 - 01:28:23,480] T to the 2 thirds is A.
+- [01:28:23,620 - 01:28:24,000] Right.
+- [01:28:25,920 - 01:28:28,980] And A dot is equal to 2 thirds,
+- [01:28:28,980 - 01:28:31,900] 1 over T to the 1 third.
+- [01:28:32,020 - 01:28:32,200] Right?
+- [01:28:32,960 - 01:28:35,060] So the slope goes to zero.
+- [01:28:35,200 - 01:28:37,220] The slope goes to zero as T gets larger.
+- [01:28:37,440 - 01:28:37,880] Right.
+- [01:28:37,940 - 01:28:39,060] But it's always positive.
+- [01:28:39,600 - 01:28:40,080] Okay.
+- [01:28:40,120 - 01:28:41,600] So this is the sense in which it's getting tired.
+- [01:28:41,780 - 01:28:42,520] The slope is,
+- [01:28:42,520 - 01:28:44,660] yeah.
+- [01:28:46,180 - 01:28:46,780] All right.
+- [01:28:48,660 - 01:28:51,160] And you can see now why Einstein failed
+- [01:28:51,160 - 01:28:53,660] to be able to describe a static universe.
+- [01:28:53,660 - 01:28:54,040] Well,
+- [01:28:54,040 - 01:28:56,100] we'll come to it.
+- [01:28:56,220 - 01:28:57,500] I'm getting ahead of myself.
+- [01:28:57,800 - 01:28:57,940] Yeah.
+- [01:28:58,020 - 01:28:58,940] I don't want to get ahead of myself.
+- [01:28:59,280 - 01:28:59,760] Good.
+- [01:29:00,460 - 01:29:00,940] Okay.
+- [01:29:00,960 - 01:29:01,120] Good.
+- [01:29:01,240 - 01:29:01,560] Let's.
+- [01:29:02,360 - 01:29:02,840] Hmm?
+- [01:29:04,060 - 01:29:07,820] If it was very old in its region case.
+- [01:29:08,700 - 01:29:09,620] If it was what?
+- [01:29:09,880 - 01:29:10,560] Very old.
+- [01:29:10,660 - 01:29:10,940] Yeah.
+- [01:29:10,980 - 01:29:12,900] It does get sort of slanted.
+- [01:29:16,220 - 01:29:18,600] I think that Newton was prejud.
+- [01:29:18,820 - 01:29:19,200] Yeah.
+- [01:29:21,400 - 01:29:22,000] Let's see.
+- [01:29:22,140 - 01:29:23,300] Uh-huh.
+- [01:29:24,900 - 01:29:25,340] Yeah,
+- [01:29:25,340 - 01:29:25,560] see,
+- [01:29:25,560 - 01:29:27,560] Newton had this idea that
+- [01:29:27,560 - 01:29:29,560] the universe was 6,000 years old,
+- [01:29:29,560 - 01:29:30,520] and this wasn't fitting
+- [01:29:30,520 - 01:29:31,520] together with this.
+- [01:29:32,280 - 01:29:32,720] Yeah,
+- [01:29:32,720 - 01:29:32,840] yeah,
+- [01:29:32,840 - 01:29:32,980] yeah,
+- [01:29:32,980 - 01:29:34,320] Newton was a believer.
+- [01:29:35,100 - 01:29:36,340] So I think he had some,
+- [01:29:36,340 - 01:29:38,100] I think the reason he probably
+- [01:29:38,100 - 01:29:39,860] didn't do it is because he couldn't
+- [01:29:39,860 - 01:29:41,690] make it fit with his prejudice
+- [01:29:41,690 - 01:29:43,520] about the age of the universe.
+- [01:29:45,060 - 01:29:45,720] It's true.
+- [01:29:45,720 - 01:29:49,850] Did he write papers about his
+- [01:29:49,850 - 01:29:53,980] thinking and philosophy and stuff like that,
+- [01:29:53,980 - 01:29:54,380] or did he
+- [01:29:54,380 - 01:29:55,200] just do the...
+- [01:29:55,200 - 01:29:55,380] No,
+- [01:29:55,380 - 01:29:56,360] unfortunately he did.
+- [01:29:56,640 - 01:29:56,980] Yeah,
+- [01:29:56,980 - 01:29:57,740] sure he did.
+- [01:29:59,500 - 01:30:02,360] He wrote more about religion than he did about,
+- [01:30:02,360 - 01:30:02,860] yeah,
+- [01:30:02,860 - 01:30:03,920] he wrote more about,
+- [01:30:03,920 - 01:30:04,180] yeah,
+- [01:30:04,180 - 01:30:05,060] more about
+- [01:30:06,540 - 01:30:10,300] religion I think and alchemy than he did about physics.
+- [01:30:13,020 - 01:30:13,800] So yeah,
+- [01:30:13,800 - 01:30:14,720] he was a prolific writer.
+- [01:30:15,680 - 01:30:18,360] You started with Einstein's field equations.
+- [01:30:18,760 - 01:30:20,560] I see that A pi G there.
+- [01:30:20,760 - 01:30:20,960] Yep.
+- [01:30:21,000 - 01:30:21,300] Is that,
+- [01:30:21,300 - 01:30:22,680] I know that...
+- [01:30:22,680 - 01:30:23,660] Same A pi G.
+- [01:30:25,860 - 01:30:27,560] The time-time component?
+- [01:30:27,900 - 01:30:28,280] What's that?
+- [01:30:28,420 - 01:30:28,540] Yeah.
+- [01:30:28,680 - 01:30:28,920] Energy,
+- [01:30:28,920 - 01:30:30,700] is that how you get that?
+- [01:30:30,900 - 01:30:31,260] Mm-hmm,
+- [01:30:31,260 - 01:30:31,640] mm-hmm,
+- [01:30:31,640 - 01:30:31,960] mm-hmm,
+- [01:30:31,960 - 01:30:32,320] yep,
+- [01:30:32,320 - 01:30:33,660] yep,
+- [01:30:33,660 - 01:30:34,700] yep.
+- [01:30:34,900 - 01:30:37,060] Not surprising since this is about energy.
+- [01:30:37,680 - 01:30:38,160] Yep,
+- [01:30:38,160 - 01:30:38,660] yep,
+- [01:30:38,660 - 01:30:39,020] absolutely.
+- [01:30:39,560 - 01:30:41,620] Is this kind of study synonymous with
+- [01:30:41,620 - 01:30:43,680] what you might call a cosmological constant,
+- [01:30:43,680 - 01:30:44,280] something
+- [01:30:44,280 - 01:30:44,640] like that?
+- [01:30:44,720 - 01:30:45,240] No,
+- [01:30:45,240 - 01:30:48,140] this is the theory without a cosmological constant.
+- [01:30:48,860 - 01:30:51,430] The cosmological constant is what
+- [01:30:51,430 - 01:30:54,000] has to do with the acceleration.
+- [01:30:54,460 - 01:30:56,880] This is the theory without the cosmological constant.
+- [01:30:57,220 - 01:30:57,840] In fact,
+- [01:30:57,840 - 01:30:59,960] this is called a matter-dominated universe,
+- [01:30:59,960 - 01:31:03,520] a matter-dominated universe for
+- [01:31:03,520 - 01:31:06,960] reasons that I will explain when we come to it.
+- [01:31:07,560 - 01:31:08,180] Yes?
+- [01:31:09,080 - 01:31:09,700] So,
+- [01:31:09,700 - 01:31:10,000] well,
+- [01:31:10,000 - 01:31:12,300] we know that the universe is expanding overall,
+- [01:31:12,300 - 01:31:13,640] like the entire universe.
+- [01:31:13,900 - 01:31:14,700] Are there any other things that are expanding?
+- [01:31:14,700 - 01:31:16,170] Are there some galaxies in
+- [01:31:16,170 - 01:31:17,640] between that could be contracting?
+- [01:31:17,880 - 01:31:18,240] Well,
+- [01:31:18,240 - 01:31:18,980] certainly,
+- [01:31:18,980 - 01:31:20,420] yes.
+- [01:31:20,780 - 01:31:21,420] Yes,
+- [01:31:21,420 - 01:31:22,740] yes,
+- [01:31:22,740 - 01:31:23,000] yes.
+- [01:31:23,160 - 01:31:23,960] On the average,
+- [01:31:23,960 - 01:31:27,340] out to the largest observable distances,
+- [01:31:27,340 - 01:31:28,540] it is expanding,
+- [01:31:28,540 - 01:31:29,820] but individual
+- [01:31:29,820 - 01:31:30,680] little portions,
+- [01:31:30,680 - 01:31:31,300] there are places.
+- [01:31:31,500 - 01:31:32,140] For example,
+- [01:31:32,140 - 01:31:35,580] our galaxy is contracting together with Andromeda.
+- [01:31:36,480 - 01:31:38,700] Andromeda is not receding away from us.
+- [01:31:40,799 - 01:31:42,080] But that's...
+- [01:31:42,080 - 01:31:44,460] On large enough scales,
+- [01:31:44,460 - 01:31:47,250] the Hubble law is not
+- [01:31:47,250 - 01:31:50,040] exactly true for all possible distances.
+- [01:31:50,240 - 01:31:53,380] It becomes accurate as distances get larger.
+- [01:31:55,460 - 01:31:59,150] It's certainly not accurate for
+- [01:31:59,150 - 01:32:02,840] things which are bound together.
+- [01:32:03,360 - 01:32:06,000] Things which are close enough together that
+- [01:32:06,000 - 01:32:08,640] they're really bound together by gravity or
+- [01:32:08,640 - 01:32:09,460] any other force,
+- [01:32:09,460 - 01:32:11,660] maybe being pulled together.
+- [01:32:11,660 - 01:32:14,320] So as it happens,
+- [01:32:14,320 - 01:32:16,000] it's not unique.
+- [01:32:16,880 - 01:32:18,240] But on the average,
+- [01:32:18,240 - 01:32:20,240] everything is moving away from everything else.
+- [01:32:20,320 - 01:32:21,020] But here and there,
+- [01:32:21,020 - 01:32:23,500] you can find galaxies which have peculiar motion.
+- [01:32:23,860 - 01:32:26,580] The term peculiar motion is a technical term.
+- [01:32:27,020 - 01:32:27,760] It is.
+- [01:32:27,920 - 01:32:29,000] It's a technical term,
+- [01:32:29,000 - 01:32:30,740] and it means what it says,
+- [01:32:30,740 - 01:32:33,240] sort of away from the average.
+- [01:32:33,620 - 01:32:35,240] So in an overall calculation,
+- [01:32:35,240 - 01:32:37,010] we should avoid those little
+- [01:32:37,010 - 01:32:38,780] galaxies and just try and look
+- [01:32:38,780 - 01:32:41,460] straight past them.
+- [01:32:41,580 - 01:32:41,640] Well,
+- [01:32:41,640 - 01:32:41,640] that's a good question.
+- [01:32:41,640 - 01:32:45,280] We should average over large enough
+- [01:32:45,280 - 01:32:48,920] volumes that these little fluctuations don't matter.
+- [01:32:49,560 - 01:32:50,080] Right.
+- [01:32:51,840 - 01:32:52,080] Right.
+- [01:32:54,360 - 01:32:55,580] It's the same kind of thing.
+- [01:32:55,680 - 01:32:59,360] You say the air in the room is uniform.
+- [01:32:59,960 - 01:33:00,480] Well,
+- [01:33:00,480 - 01:33:01,420] that's not really true.
+- [01:33:01,620 - 01:33:03,440] There are places where there's a fluctuation
+- [01:33:03,440 - 01:33:05,260] where it's more dense and a fluctuation where
+- [01:33:05,260 - 01:33:05,900] it's less dense.
+- [01:33:06,080 - 01:33:08,760] But when averaged over a sizable region,
+- [01:33:08,760 - 01:33:11,540] bigger than...
+- [01:33:11,540 - 01:33:11,620] It's not a big deal.
+- [01:33:17,879 - 01:33:20,100] But when it's packed inside a small...
+- [01:33:20,100 - 01:33:20,220] Private place,
+- [01:33:20,220 - 01:33:20,640] but it's...
+- [01:33:20,640 - 01:33:21,500] Or smaller and smaller...
+- [01:33:21,500 - 01:33:22,120] It's a bigger question.
+- [01:33:22,120 - 01:33:22,120] Right,
+- [01:33:22,120 - 01:33:22,860] it's called want gehen.
+- [01:33:23,020 - 01:33:23,020] ...selected,
+- [01:33:23,020 - 01:33:27,660] but then given 올라vie,
+- [01:33:27,660 - 01:33:29,760] I swimming on something that holds more,
+- [01:33:29,760 - 01:33:32,200] uh,
+- [01:33:33,299 - 01:33:33,909] in this section here at 50 times the same
+- [01:33:33,909 - 01:33:34,520] you often consider that it is not the same,
+- [01:33:34,520 - 01:33:34,520] fucked up student,
+- [01:33:34,520 - 01:33:35,060] but in rather close chemistry.
+- [01:33:35,420 - 01:33:37,270] So you can't read everything from
+- [01:33:37,270 - 01:33:39,120] the top of the upper level.
+- [01:33:39,120 - 01:33:39,360] Right.
+- [01:33:39,360 - 01:33:40,540] This is not...
+- [01:33:40,540 - 01:33:41,600] If I was a researchers of science,
+- [01:33:41,600 - 01:33:41,600] I don't understand this.
+- [01:33:41,600 - 01:33:44,280] However it was formed,
+- [01:33:44,280 - 01:33:46,900] it was formed in a pocket
+- [01:33:46,900 - 01:33:49,520] which was dense enough that just slightly
+- [01:33:49,960 - 01:33:50,780] out of the ordinary,
+- [01:33:50,780 - 01:33:53,300] it was dense enough that these
+- [01:33:53,300 - 01:33:55,820] two galaxies had enough mass to overcome
+- [01:33:57,740 - 01:33:59,060] the effect of the expansion.
+- [01:33:59,860 - 01:34:00,080] Yeah.
+- [01:34:01,040 - 01:34:01,640] Right.
+- [01:34:01,760 - 01:34:04,520] So it's a fluctuation away from the norm.
+- [01:34:04,520 - 01:34:05,480] Yeah,
+- [01:34:05,480 - 01:34:06,780] there's the,
+- [01:34:06,780 - 01:34:11,280] I think people describe space itself expanding,
+- [01:34:11,280 - 01:34:12,060] carrying things with
+- [01:34:12,060 - 01:34:12,200] it.
+- [01:34:12,360 - 01:34:14,890] Is there an empirical way of determining whether
+- [01:34:14,890 - 01:34:17,420] it's really that or it's just the velocity?
+- [01:34:17,820 - 01:34:18,020] No,
+- [01:34:18,020 - 01:34:18,160] no,
+- [01:34:18,160 - 01:34:18,960] they're identical.
+- [01:34:19,400 - 01:34:20,060] They mean the same.
+- [01:34:20,140 - 01:34:21,240] You asked me that the last time,
+- [01:34:21,240 - 01:34:21,600] I remember,
+- [01:34:21,600 - 01:34:21,940] too.
+- [01:34:22,040 - 01:34:23,380] Was it seven years ago?
+- [01:34:23,460 - 01:34:25,000] I think you asked me the same question.
+- [01:34:27,080 - 01:34:27,560] No,
+- [01:34:27,560 - 01:34:32,140] there's no difference.
+- [01:34:32,420 - 01:34:32,760] You see,
+- [01:34:32,760 - 01:34:34,400] you either take the position.
+- [01:34:34,520 - 01:34:38,370] That the galaxies are moving away from each
+- [01:34:38,370 - 01:34:42,220] other or you take the position that they're
+- [01:34:42,220 - 01:34:45,840] embedded in this grid and the grid is expanding.
+- [01:34:46,240 - 01:34:47,100] It's a mathematical artifact.
+- [01:34:47,320 - 01:34:49,320] It's a mathematical artifact,
+- [01:34:49,320 - 01:34:49,820] yeah.
+- [01:34:51,640 - 01:34:54,760] Perhaps in Einstein's way of thinking about it,
+- [01:34:54,760 - 01:34:56,980] it's a little more natural to think of
+- [01:34:56,980 - 01:34:57,940] it as space expanding,
+- [01:34:57,940 - 01:34:59,340] but they are equivalent.
+- [01:34:59,900 - 01:35:00,480] Yeah,
+- [01:35:00,480 - 01:35:02,500] one more question.
+- [01:35:03,540 - 01:35:04,020] Is there any way of
+- [01:35:04,020 - 01:35:04,500] determining the mass of the galaxy?
+- [01:35:04,520 - 01:35:06,660] Is there any corroborating evidence other than
+- [01:35:06,660 - 01:35:08,800] the brightness of the distant type one
+- [01:35:08,800 - 01:35:11,960] a supernova for the accelerating universe?
+- [01:35:13,459 - 01:35:14,219] Oh,
+- [01:35:14,219 - 01:35:14,980] yeah,
+- [01:35:14,980 - 01:35:15,620] there's,
+- [01:35:15,620 - 01:35:16,000] yes,
+- [01:35:16,000 - 01:35:19,480] there is from a cosmic microwave background.
+- [01:35:20,060 - 01:35:20,820] Yeah,
+- [01:35:20,820 - 01:35:21,720] there is.
+- [01:35:22,420 - 01:35:24,680] And we will come to it.
+- [01:35:26,120 - 01:35:32,460] It's a sort of network of different observations.
+- [01:35:32,460 - 01:35:33,600] The supernova,
+- [01:35:33,600 - 01:35:36,250] mostly supernova and cosmic microwave
+- [01:35:36,250 - 01:35:38,900] background fit together just precisely.
+- [01:35:41,240 - 01:35:42,460] For more,
+- [01:35:42,460 - 01:35:44,860] please visit us at stanford.edu.
