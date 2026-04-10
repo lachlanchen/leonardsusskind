@@ -1,0 +1,10424 @@
+1
+00:00:06,840 --> 00:00:09,760
+This program is brought to you by Stanford University.
+
+2
+00:00:10,180 --> 00:00:12,700
+Please visit us at stanford.edu.
+
+3
+00:00:15,200 --> 00:00:17,710
+I just want to do one thing actually
+
+4
+00:00:17,710 --> 00:00:20,220
+before we start the material of the class.
+
+5
+00:00:21,280 --> 00:00:22,760
+A whole bunch of people,
+
+6
+00:00:22,760 --> 00:00:23,340
+a lot of people,
+
+7
+00:00:23,340 --> 00:00:24,860
+particularly people from Europe who
+
+8
+00:00:24,860 --> 00:00:27,050
+actually follow these things on
+
+9
+00:00:27,050 --> 00:00:29,240
+the Internet seem very puzzled.
+
+10
+00:00:29,240 --> 00:00:30,040
+They send me email,
+
+11
+00:00:30,040 --> 00:00:31,760
+even some of my friends
+
+12
+00:00:31,760 --> 00:00:33,480
+in Europe who are physicists who
+
+13
+00:00:33,480 --> 00:00:35,470
+are following it are very
+
+14
+00:00:35,470 --> 00:00:37,460
+curious about what's going on here.
+
+15
+00:00:37,520 --> 00:00:38,460
+They don't see you people,
+
+16
+00:00:38,460 --> 00:00:39,320
+they only see me.
+
+17
+00:00:39,720 --> 00:00:43,500
+And they know that I'm teaching a
+
+18
+00:00:43,500 --> 00:00:47,280
+class in this or that special topic in
+
+19
+00:00:47,280 --> 00:00:48,940
+classical mechanics or whatever.
+
+20
+00:00:49,400 --> 00:00:51,290
+And they can sense that there's
+
+21
+00:00:51,290 --> 00:00:53,180
+something a little bit different about it.
+
+22
+00:00:53,320 --> 00:00:58,720
+They can sense that it's not a standard undergraduate or
+
+23
+00:00:58,720 --> 00:00:59,080
+graduate.
+
+24
+00:00:59,240 --> 00:01:01,140
+Graduate course in these subjects.
+
+25
+00:01:01,360 --> 00:01:02,040
+And they ask me,
+
+26
+00:01:02,040 --> 00:01:02,580
+what is this?
+
+27
+00:01:02,620 --> 00:01:03,260
+What is this about?
+
+28
+00:01:03,720 --> 00:01:05,780
+Or who are these people you're teaching to?
+
+29
+00:01:05,960 --> 00:01:06,640
+They can tell it.
+
+30
+00:01:07,820 --> 00:01:11,940
+And most of them don't know what continuing education means.
+
+31
+00:01:12,220 --> 00:01:13,480
+They didn't know what it meant.
+
+32
+00:01:14,100 --> 00:01:15,320
+And so they ask me.
+
+33
+00:01:16,120 --> 00:01:19,490
+I thought I would tell them
+
+34
+00:01:19,490 --> 00:01:22,860
+over the internet what this class is.
+
+35
+00:01:23,280 --> 00:01:24,400
+Continuing education,
+
+36
+00:01:24,400 --> 00:01:28,020
+which means education for people not from Stanford,
+
+37
+00:01:28,720 --> 00:01:29,760
+people not,
+
+38
+00:01:29,760 --> 00:01:30,260
+oh,
+
+39
+00:01:30,260 --> 00:01:31,340
+they can be from Stanford.
+
+40
+00:01:31,580 --> 00:01:35,620
+Some of the people probably are either employed by Stanford,
+
+41
+00:01:36,399 --> 00:01:38,120
+maybe were students at Stanford.
+
+42
+00:01:38,620 --> 00:01:41,690
+But almost everybody in this class is a
+
+43
+00:01:41,690 --> 00:01:44,760
+little bit too old to be an undergraduate
+
+44
+00:01:44,760 --> 00:01:45,320
+student,
+
+45
+00:01:45,320 --> 00:01:47,640
+even a little bit too
+
+46
+00:01:47,640 --> 00:01:49,960
+old to be a graduate student.
+
+47
+00:01:50,100 --> 00:01:51,540
+They're people from the community,
+
+48
+00:01:51,540 --> 00:01:52,840
+from Palo Alto,
+
+49
+00:01:52,840 --> 00:01:53,860
+from Mountain View,
+
+50
+00:01:54,040 --> 00:01:54,300
+from,
+
+51
+00:01:54,300 --> 00:01:57,400
+who lives further than Mountain View?
+
+52
+00:01:58,139 --> 00:01:58,660
+Okay,
+
+53
+00:01:58,660 --> 00:02:00,360
+what's the furthest you're coming from this?
+
+54
+00:02:02,120 --> 00:02:02,640
+Where?
+
+55
+00:02:02,940 --> 00:02:03,780
+Boston City.
+
+56
+00:02:03,820 --> 00:02:04,540
+Boston City,
+
+57
+00:02:04,540 --> 00:02:04,860
+okay,
+
+58
+00:02:04,860 --> 00:02:05,860
+so that's 20 miles away.
+
+59
+00:02:06,040 --> 00:02:09,100
+So people from within a certain radius,
+
+60
+00:02:09,100 --> 00:02:09,699
+I don't know,
+
+61
+00:02:09,699 --> 00:02:10,820
+whatever the radius is,
+
+62
+00:02:10,940 --> 00:02:13,680
+are allowed to come and take courses at Stanford.
+
+63
+00:02:13,860 --> 00:02:15,160
+They pay a bit of money for it.
+
+64
+00:02:15,420 --> 00:02:17,440
+And a professor teaches them.
+
+65
+00:02:17,620 --> 00:02:19,060
+Now this is not,
+
+66
+00:02:19,060 --> 00:02:23,420
+it is most definitely not your standard freshman physics.
+
+67
+00:02:24,080 --> 00:02:25,670
+There's another guy on the
+
+68
+00:02:25,670 --> 00:02:27,260
+internet who teaches freshman physics.
+
+69
+00:02:27,260 --> 00:02:29,140
+He totally does it very well.
+
+70
+00:02:29,460 --> 00:02:30,960
+That's not what this is.
+
+71
+00:02:31,460 --> 00:02:32,880
+This is the real McCoy,
+
+72
+00:02:32,880 --> 00:02:37,160
+theoretical physics at the full-scale level.
+
+73
+00:02:38,000 --> 00:02:39,280
+We use equations.
+
+74
+00:02:39,920 --> 00:02:41,420
+We not only use equations,
+
+75
+00:02:41,420 --> 00:02:43,340
+we sometimes use hard equations,
+
+76
+00:02:43,340 --> 00:02:45,580
+but we tend to try to use
+
+77
+00:02:45,580 --> 00:02:49,180
+the simplest equations that will do the job.
+
+78
+00:02:52,500 --> 00:02:54,340
+Basically we try to keep it minimal.
+
+79
+00:02:55,960 --> 00:02:56,440
+Uh.
+
+80
+00:02:56,440 --> 00:02:57,940
+Just out of curiosity,
+
+81
+00:02:57,940 --> 00:03:00,080
+I more or less know the answer,
+
+82
+00:03:00,080 --> 00:03:00,880
+just by looking,
+
+83
+00:03:00,880 --> 00:03:02,100
+but what the
+
+84
+00:03:02,100 --> 00:03:04,920
+age distribution of people here is by comparing.
+
+85
+00:03:05,660 --> 00:03:07,820
+Is there anybody here under 40?
+
+86
+00:03:09,180 --> 00:03:09,720
+Yeah,
+
+87
+00:03:09,720 --> 00:03:14,620
+there's maybe one handful of people under 40.
+
+88
+00:03:15,380 --> 00:03:17,600
+Incidentally for those who can't see the audience,
+
+89
+00:03:17,600 --> 00:03:19,240
+there's probably about 100 people in the room,
+
+90
+00:03:19,300 --> 00:03:19,680
+I'm not sure.
+
+91
+00:03:19,840 --> 00:03:24,160
+It's a small theater with a lot of seats.
+
+92
+00:03:24,800 --> 00:03:25,520
+It's a.
+
+93
+00:03:25,520 --> 00:03:27,000
+It's a lecture theater,
+
+94
+00:03:27,000 --> 00:03:28,720
+more or less filled up.
+
+95
+00:03:31,680 --> 00:03:34,030
+And maybe four or five or
+
+96
+00:03:34,030 --> 00:03:36,380
+three or four people were under 40.
+
+97
+00:03:37,500 --> 00:03:38,080
+Let's see.
+
+98
+00:03:38,140 --> 00:03:39,120
+Let's go to the other end.
+
+99
+00:03:39,300 --> 00:03:40,660
+How many people here are over 70?
+
+100
+00:03:42,460 --> 00:03:43,400
+A good deal more.
+
+101
+00:03:43,780 --> 00:03:45,120
+Maybe 10 or 12.
+
+102
+00:03:45,440 --> 00:03:46,360
+Anybody over 80?
+
+103
+00:03:47,200 --> 00:03:49,180
+We got a couple of people over 80.
+
+104
+00:03:49,660 --> 00:03:51,200
+Anybody over 90 this time?
+
+105
+00:03:51,960 --> 00:03:52,400
+Oh,
+
+106
+00:03:52,400 --> 00:03:53,740
+there have been people over 90.
+
+107
+00:03:54,240 --> 00:03:55,500
+There have been people over 90.
+
+108
+00:03:55,520 --> 00:03:56,300
+There have been people over 90 in this class.
+
+109
+00:03:56,420 --> 00:04:00,390
+So you see the age distribution is such
+
+110
+00:04:00,390 --> 00:04:04,360
+that basically people want to get to the basic
+
+111
+00:04:04,360 --> 00:04:05,460
+ideas fast.
+
+112
+00:04:05,900 --> 00:04:08,260
+They don't have a hell of a lot of time.
+
+113
+00:04:11,420 --> 00:04:12,840
+They want to get there fast.
+
+114
+00:04:15,239 --> 00:04:18,469
+So I try to tell them in some minimal
+
+115
+00:04:18,469 --> 00:04:21,700
+way what the basic things you really have to know
+
+116
+00:04:22,079 --> 00:04:23,920
+in order to get on to the next thing.
+
+117
+00:04:25,220 --> 00:04:26,890
+Sometimes the basic things that you need
+
+118
+00:04:26,890 --> 00:04:28,560
+to know are a little more difficult,
+
+119
+00:04:28,560 --> 00:04:29,020
+a little
+
+120
+00:04:29,020 --> 00:04:29,660
+more elaborate.
+
+121
+00:04:29,920 --> 00:04:30,880
+We do them anyway.
+
+122
+00:04:31,060 --> 00:04:34,390
+We do them as efficiently and as straightforwardly
+
+123
+00:04:34,390 --> 00:04:37,720
+and with the minimal amount of stuff to get
+
+124
+00:04:37,720 --> 00:04:38,160
+them right,
+
+125
+00:04:38,160 --> 00:04:39,120
+to get them really right.
+
+126
+00:04:39,260 --> 00:04:40,080
+Not metaphor,
+
+127
+00:04:40,080 --> 00:04:41,120
+not the.
+
+128
+00:04:41,960 --> 00:04:42,900
+Not the analogy,
+
+129
+00:04:42,900 --> 00:04:44,640
+but equations when necessary.
+
+130
+00:04:47,440 --> 00:04:49,400
+What else can I say about this class?
+
+131
+00:04:52,480 --> 00:04:53,740
+I guess it has various.
+
+132
+00:04:53,760 --> 00:04:53,900
+Okay.
+
+133
+00:04:53,900 --> 00:04:54,260
+names,
+
+134
+00:04:54,260 --> 00:04:55,920
+quantum mechanics,
+
+135
+00:04:55,920 --> 00:04:57,260
+physics 25,
+
+136
+00:04:57,260 --> 00:05:00,180
+I'm inclined to call it quantum mechanics for old people,
+
+137
+00:05:03,120 --> 00:05:03,960
+including myself.
+
+138
+00:05:11,160 --> 00:05:11,720
+Anyway,
+
+139
+00:05:11,720 --> 00:05:13,500
+the first course in the series,
+
+140
+00:05:13,500 --> 00:05:17,880
+let me just say what the outline of the whole
+
+141
+00:05:17,880 --> 00:05:19,720
+course of courses is,
+
+142
+00:05:19,720 --> 00:05:23,400
+these series of courses will
+
+143
+00:05:23,400 --> 00:05:27,080
+consist of about six ten-lecture series.
+
+144
+00:05:27,680 --> 00:05:30,940
+The first of which was in classical mechanics.
+
+145
+00:05:30,940 --> 00:05:35,380
+The classical mechanics is the basis of all
+
+146
+00:05:35,380 --> 00:05:36,320
+classical physics.
+
+147
+00:05:36,320 --> 00:05:39,380
+Classical means before quantum mechanics.
+
+148
+00:05:39,380 --> 00:05:41,900
+Anything that doesn't involve
+
+149
+00:05:41,900 --> 00:05:43,040
+quantum mechanics,
+
+150
+00:05:43,040 --> 00:05:45,480
+or which ignores quantum mechanics,
+
+151
+00:05:45,480 --> 00:05:47,860
+or where there's no quantum mechanics,
+
+152
+00:05:47,880 --> 00:05:51,870
+which is in a range of parameters where
+
+153
+00:05:51,870 --> 00:05:55,860
+quantum mechanics can be replaced by basic classical
+
+154
+00:05:57,219 --> 00:05:57,940
+logic,
+
+155
+00:05:57,940 --> 00:05:59,680
+that's called classical physics.
+
+156
+00:05:59,680 --> 00:06:02,280
+So the first class was classical mechanics,
+
+157
+00:06:02,280 --> 00:06:03,520
+which
+
+158
+00:06:03,520 --> 00:06:06,620
+is in some sense the basis for all of physics,
+
+159
+00:06:06,620 --> 00:06:08,540
+the motion of objects,
+
+160
+00:06:08,540 --> 00:06:10,520
+the energy of objects,
+
+161
+00:06:10,720 --> 00:06:11,820
+the momentum of objects,
+
+162
+00:06:11,820 --> 00:06:17,680
+what the characteristic behavior of systems is,
+
+163
+00:06:17,680 --> 00:06:17,860
+and the way that they
+
+164
+00:06:17,880 --> 00:06:17,880
+work,
+
+165
+00:06:17,880 --> 00:06:18,940
+as they evolve with time,
+
+166
+00:06:18,940 --> 00:06:20,260
+and so forth.
+
+167
+00:06:20,260 --> 00:06:21,840
+We discussed that last quarter,
+
+168
+00:06:21,840 --> 00:06:23,240
+and anybody
+
+169
+00:06:23,240 --> 00:06:25,320
+who is thinking of following
+
+170
+00:06:25,320 --> 00:06:27,400
+these classes should begin with that.
+
+171
+00:06:27,400 --> 00:06:29,780
+The next class,
+
+172
+00:06:29,780 --> 00:06:30,500
+which
+
+173
+00:06:31,160 --> 00:06:32,660
+is already on the internet,
+
+174
+00:06:32,660 --> 00:06:33,940
+was called,
+
+175
+00:06:33,940 --> 00:06:34,380
+I believe,
+
+176
+00:06:34,380 --> 00:06:35,760
+quantum entanglement.
+
+177
+00:06:35,760 --> 00:06:37,420
+Now,
+
+178
+00:06:37,420 --> 00:06:38,320
+this is
+
+179
+00:06:38,320 --> 00:06:40,260
+also a class on quantum mechanics,
+
+180
+00:06:40,260 --> 00:06:41,740
+and it will be self-contained,
+
+181
+00:06:41,740 --> 00:06:43,860
+but I would strongly
+
+182
+00:06:43,860 --> 00:06:47,400
+advise anybody who's following to go to the next class,
+
+183
+00:06:47,400 --> 00:06:47,420
+which is called quantum mechanics,
+
+184
+00:06:47,420 --> 00:06:47,500
+class,
+
+185
+00:06:47,500 --> 00:06:47,500
+and it's a very interesting class,
+
+186
+00:06:47,500 --> 00:06:47,520
+and it's a very interesting class,
+
+187
+00:06:47,520 --> 00:06:47,520
+and it's a very
+
+188
+00:06:47,880 --> 00:06:48,100
+interesting course.
+
+189
+00:06:48,100 --> 00:06:48,100
+And,
+
+190
+00:06:48,100 --> 00:06:48,100
+of course,
+
+191
+00:06:48,100 --> 00:06:48,860
+number two,
+
+192
+00:06:48,860 --> 00:06:50,860
+was it called quantum entanglement?
+
+193
+00:06:50,860 --> 00:06:51,080
+Does
+
+194
+00:06:51,080 --> 00:06:51,720
+anybody remember?
+
+195
+00:06:51,720 --> 00:06:53,940
+I think it was called quantum entanglement.
+
+196
+00:06:53,940 --> 00:06:55,220
+It was also on the internet.
+
+197
+00:06:55,520 --> 00:06:57,560
+It was the first one that was on the internet,
+
+198
+00:06:57,560 --> 00:07:01,700
+and to get that under your belt first,
+
+199
+00:07:01,700 --> 00:07:03,020
+before
+
+200
+00:07:03,520 --> 00:07:05,430
+attempting to do the full-scale quantum
+
+201
+00:07:05,430 --> 00:07:07,340
+mechanics that we're going to do here,
+
+202
+00:07:07,340 --> 00:07:08,460
+although what
+
+203
+00:07:08,460 --> 00:07:10,360
+I'm going to do is pretty self-contained.
+
+204
+00:07:10,360 --> 00:07:15,540
+I'm going to start this evening with some
+
+205
+00:07:16,499 --> 00:07:17,460
+basic thoughts.
+
+206
+00:07:17,460 --> 00:07:21,040
+Let's start with the basic thoughts about
+
+207
+00:07:21,040 --> 00:07:24,620
+the deep differences in the logic of classical
+
+208
+00:07:24,620 --> 00:07:26,440
+mechanics and quantum mechanics,
+
+209
+00:07:26,440 --> 00:07:29,460
+or classical,
+
+210
+00:07:29,460 --> 00:07:33,020
+maybe even mechanics is too strong a word,
+
+211
+00:07:33,700 --> 00:07:36,860
+classical physics and quantum physics.
+
+212
+00:07:36,860 --> 00:07:41,520
+There are some very queer phenomena in quantum physics
+
+213
+00:07:41,520 --> 00:07:44,000
+that don't exist in classical physics.
+
+214
+00:07:44,000 --> 00:07:45,040
+Now,
+
+215
+00:07:45,040 --> 00:07:47,440
+one of them is the fact that quantum mechanics,
+
+216
+00:07:47,440 --> 00:07:47,520
+or classical,
+
+217
+00:07:47,520 --> 00:07:47,520
+mechanics is less than or equal
+
+218
+00:07:47,520 --> 00:07:47,520
+to the natural laws of quantum mechanics.
+
+219
+00:07:47,520 --> 00:07:49,350
+The first is that quantum
+
+220
+00:07:49,350 --> 00:07:51,180
+mechanics is based on statistical thinking,
+
+221
+00:07:51,180 --> 00:07:52,960
+randomness,
+
+222
+00:07:52,960 --> 00:07:54,020
+a certain
+
+223
+00:07:54,020 --> 00:07:55,160
+degree of,
+
+224
+00:07:55,160 --> 00:07:57,180
+not imprecision,
+
+225
+00:07:57,180 --> 00:07:58,220
+that's not the right word,
+
+226
+00:07:58,220 --> 00:08:02,860
+a certain degree of non-deterministic
+
+227
+00:08:02,860 --> 00:08:04,520
+or indeterministic behavior,
+
+228
+00:08:04,520 --> 00:08:06,380
+unpredictability,
+
+229
+00:08:06,380 --> 00:08:07,540
+that's the word I'm looking for,
+
+230
+00:08:07,540 --> 00:08:08,580
+unpredictability,
+
+231
+00:08:08,780 --> 00:08:11,800
+but it's a special kind of unpredictability.
+
+232
+00:08:11,800 --> 00:08:15,160
+Einstein famously said,
+
+233
+00:08:15,160 --> 00:08:16,960
+God does not play dice,
+
+234
+00:08:18,100 --> 00:08:19,640
+Niels Bohr told him,
+
+235
+00:08:19,640 --> 00:08:20,280
+Einstein,
+
+236
+00:08:20,280 --> 00:08:21,840
+don't tell God what to do.
+
+237
+00:08:23,660 --> 00:08:24,620
+But in fact,
+
+238
+00:08:24,620 --> 00:08:25,280
+in a sense,
+
+239
+00:08:25,280 --> 00:08:25,600
+God,
+
+240
+00:08:25,600 --> 00:08:27,200
+I don't know if there's a God,
+
+241
+00:08:27,200 --> 00:08:29,180
+I use the word God in the
+
+242
+00:08:29,180 --> 00:08:31,720
+same sense that physicists always use it,
+
+243
+00:08:31,720 --> 00:08:35,039
+meaning the laws of physics or something like
+
+244
+00:08:35,039 --> 00:08:35,299
+that.
+
+245
+00:08:35,780 --> 00:08:37,700
+The laws of physics don't play dice,
+
+246
+00:08:37,700 --> 00:08:39,760
+at least not in the standard sense.
+
+247
+00:08:39,760 --> 00:08:41,929
+Let me imagine for you a theory
+
+248
+00:08:41,929 --> 00:08:44,100
+that's based on a bit of statistics,
+
+249
+00:08:44,100 --> 00:08:46,860
+which is not the way
+
+250
+00:08:46,860 --> 00:08:48,360
+quantum mechanics works,
+
+251
+00:08:48,360 --> 00:08:50,070
+and then I'll illustrate it for you
+
+252
+00:08:50,070 --> 00:08:51,780
+by showing you some of the differences.
+
+253
+00:08:53,819 --> 00:08:56,999
+Imagine that there was an
+
+254
+00:08:56,999 --> 00:09:00,180
+element of randomness in Newton's law.
+
+255
+00:09:00,980 --> 00:09:02,220
+Which law?
+
+256
+00:09:02,420 --> 00:09:06,700
+F equals ma together with the law of gravity.
+
+257
+00:09:07,380 --> 00:09:09,740
+So F equals ma together with the law of gravity.
+
+258
+00:09:09,740 --> 00:09:13,140
+The law of gravity tells us how objects move,
+
+259
+00:09:13,140 --> 00:09:14,300
+let us say,
+
+260
+00:09:14,300 --> 00:09:16,120
+how the moon moves around the
+
+261
+00:09:16,120 --> 00:09:16,360
+earth,
+
+262
+00:09:16,360 --> 00:09:19,360
+and it predicts with infinite precision,
+
+263
+00:09:19,360 --> 00:09:21,480
+if you could work out the equations with infinite
+
+264
+00:09:21,480 --> 00:09:21,960
+precision,
+
+265
+00:09:21,960 --> 00:09:25,530
+and if you could account for every detail
+
+266
+00:09:25,530 --> 00:09:29,100
+of the earth and the moon and all the
+
+267
+00:09:29,100 --> 00:09:31,100
+material that's in between and so forth,
+
+268
+00:09:31,100 --> 00:09:35,260
+it would predict with enormous detail,
+
+269
+00:09:35,260 --> 00:09:37,780
+deterministically,
+
+270
+00:09:38,040 --> 00:09:39,420
+the motion of the moon.
+
+271
+00:09:39,560 --> 00:09:39,720
+So,
+
+272
+00:09:39,720 --> 00:09:39,720
+what if I just want
+
+273
+00:09:39,720 --> 00:09:39,720
+to do a real quick analysis?
+
+274
+00:09:39,740 --> 00:09:41,620
+Which means if you know where the moon starts,
+
+275
+00:09:41,620 --> 00:09:42,730
+and you know how the
+
+276
+00:09:42,730 --> 00:09:43,840
+moon is moving in the beginning,
+
+277
+00:09:44,100 --> 00:09:46,100
+then you can predict forever after exactly
+
+278
+00:09:46,100 --> 00:09:48,100
+how the moon moves around the Earth.
+
+279
+00:09:48,560 --> 00:09:50,960
+That's the deterministic classical mechanics.
+
+280
+00:09:51,520 --> 00:09:53,580
+Now let me imagine a modification.
+
+281
+00:09:54,200 --> 00:09:57,580
+And the modification involves a little bit of randomness.
+
+282
+00:09:58,340 --> 00:09:59,320
+For example,
+
+283
+00:10:00,220 --> 00:10:00,740
+okay,
+
+284
+00:10:00,740 --> 00:10:03,300
+so let's imagine God sitting on his throne,
+
+285
+00:10:03,300 --> 00:10:04,520
+throwing dice.
+
+286
+00:10:04,520 --> 00:10:07,220
+Every tenth of a second,
+
+287
+00:10:07,220 --> 00:10:09,180
+God throws the die,
+
+288
+00:10:09,420 --> 00:10:11,480
+and if he gets snake eyes,
+
+289
+00:10:11,480 --> 00:10:13,990
+what he does is he gives the
+
+290
+00:10:13,990 --> 00:10:16,500
+moon a little extra push in one direction.
+
+291
+00:10:17,040 --> 00:10:18,700
+If he gets a seven,
+
+292
+00:10:18,700 --> 00:10:20,610
+he pushes the moon a
+
+293
+00:10:20,610 --> 00:10:22,520
+little bit in the other direction.
+
+294
+00:10:22,880 --> 00:10:25,080
+A degree of randomness,
+
+295
+00:10:25,080 --> 00:10:28,460
+based on the random throwing of dice,
+
+296
+00:10:28,520 --> 00:10:29,500
+and really random,
+
+297
+00:10:29,500 --> 00:10:31,400
+a really random number generator,
+
+298
+00:10:32,300 --> 00:10:34,500
+being used to put on the dice.
+
+299
+00:10:34,520 --> 00:10:34,520
+So,
+
+300
+00:10:34,520 --> 00:10:35,900
+a little bit of fluctuation
+
+301
+00:10:35,900 --> 00:10:37,280
+into the motion of the moon.
+
+302
+00:10:38,880 --> 00:10:43,040
+That sounds like it introduces the kind of uncertainty,
+
+303
+00:10:43,360 --> 00:10:45,260
+the kind of thing that
+
+304
+00:10:45,260 --> 00:10:47,160
+one talks about in quantum mechanics.
+
+305
+00:10:47,780 --> 00:10:48,380
+Uncertainty,
+
+306
+00:10:51,660 --> 00:10:52,860
+non-predictability,
+
+307
+00:10:52,860 --> 00:10:54,060
+unpredictability,
+
+308
+00:10:55,160 --> 00:10:57,740
+but it is not anything like
+
+309
+00:10:57,740 --> 00:11:00,320
+the randomness and unpredictability of quantum mechanics.
+
+310
+00:11:00,660 --> 00:11:03,540
+The randomness and unpredictability of quantum mechanics
+
+311
+00:11:03,540 --> 00:11:04,500
+is exceedingly rare.
+
+312
+00:11:04,520 --> 00:11:04,820
+It is exceedingly special.
+
+313
+00:11:06,000 --> 00:11:08,160
+Exceedingly special and quite different.
+
+314
+00:11:08,640 --> 00:11:09,730
+And it's that that we
+
+315
+00:11:09,730 --> 00:11:10,820
+want to get our head around
+
+316
+00:11:10,820 --> 00:11:13,900
+and learn and understand the difference between these things
+
+317
+00:11:15,500 --> 00:11:17,940
+by the time this class is finished.
+
+318
+00:11:18,180 --> 00:11:19,790
+But also we want to learn how
+
+319
+00:11:19,790 --> 00:11:21,400
+to use quantum mechanics a little bit
+
+320
+00:11:21,400 --> 00:11:22,500
+to calculate some things.
+
+321
+00:11:24,380 --> 00:11:28,180
+Let's notice one thing about this law,
+
+322
+00:11:28,720 --> 00:11:30,880
+which includes a little bit of randomness.
+
+323
+00:11:30,960 --> 00:11:32,900
+The throwing of dice in order to
+
+324
+00:11:32,900 --> 00:11:35,020
+either kick the moon a little bit
+
+325
+00:11:35,020 --> 00:11:36,620
+or inhibit the moon's motion a little bit.
+
+326
+00:11:37,680 --> 00:11:39,360
+One of the things that would do
+
+327
+00:11:40,739 --> 00:11:43,660
+is to add a little bit of energy
+
+328
+00:11:43,660 --> 00:11:45,400
+or subtract a little bit of energy
+
+329
+00:11:45,400 --> 00:11:47,080
+from the motion of the moon randomly.
+
+330
+00:11:47,880 --> 00:11:50,340
+If you randomly give the moon a knock this way
+
+331
+00:11:50,340 --> 00:11:51,400
+and then a kick that way
+
+332
+00:11:51,400 --> 00:11:52,600
+and a bonk that way
+
+333
+00:11:53,140 --> 00:11:55,340
+and keep doing it over and over again,
+
+334
+00:11:55,800 --> 00:11:57,200
+each time you do it,
+
+335
+00:11:57,220 --> 00:11:58,920
+on the average,
+
+336
+00:11:58,920 --> 00:12:00,760
+it may not change the energy,
+
+337
+00:12:00,960 --> 00:12:02,740
+but each little increment,
+
+338
+00:12:02,900 --> 00:12:05,800
+is randomly going to either increase the energy
+
+339
+00:12:05,800 --> 00:12:07,640
+or decrease the energy of the moon.
+
+340
+00:12:08,660 --> 00:12:10,380
+And if you do that randomly,
+
+341
+00:12:11,080 --> 00:12:12,880
+eventually that will build up
+
+342
+00:12:12,880 --> 00:12:15,420
+to a statistical randomness in the energy.
+
+343
+00:12:15,920 --> 00:12:17,000
+In other words,
+
+344
+00:12:17,000 --> 00:12:19,640
+energy would not be exactly conserved
+
+345
+00:12:19,640 --> 00:12:23,200
+in a world in which the laws of motion
+
+346
+00:12:23,200 --> 00:12:27,540
+included a little bit of classical randomness.
+
+347
+00:12:27,940 --> 00:12:30,080
+I call it classical randomness
+
+348
+00:12:30,760 --> 00:12:32,220
+to distinguish it
+
+349
+00:12:32,220 --> 00:12:33,660
+from quantum randomness.
+
+350
+00:12:34,520 --> 00:12:35,700
+In quantum mechanics,
+
+351
+00:12:37,240 --> 00:12:38,720
+you prepare a system
+
+352
+00:12:38,720 --> 00:12:41,300
+the same way that you might prepare the moon
+
+353
+00:12:41,300 --> 00:12:43,160
+in an initial situation.
+
+354
+00:12:43,780 --> 00:12:45,340
+You let it go for a while
+
+355
+00:12:45,340 --> 00:12:46,360
+and then you look at it,
+
+356
+00:12:46,460 --> 00:12:47,980
+and indeed you discover
+
+357
+00:12:48,760 --> 00:12:50,220
+at the end of it
+
+358
+00:12:50,220 --> 00:12:52,540
+that what you measure
+
+359
+00:12:52,540 --> 00:12:53,880
+is a little bit unpredictable.
+
+360
+00:12:55,420 --> 00:12:57,820
+But you also find that energy
+
+361
+00:12:57,820 --> 00:12:59,940
+is exactly conserved.
+
+362
+00:13:01,020 --> 00:13:02,140
+No hint
+
+363
+00:13:02,220 --> 00:13:03,740
+no remnant at all
+
+364
+00:13:03,740 --> 00:13:07,360
+of energy being knocked this way
+
+365
+00:13:07,360 --> 00:13:08,200
+and knocked that way.
+
+366
+00:13:08,520 --> 00:13:10,400
+If you start it with a given energy,
+
+367
+00:13:10,540 --> 00:13:11,920
+with a given precise energy,
+
+368
+00:13:12,120 --> 00:13:14,520
+and you let it evolve for a while,
+
+369
+00:13:14,660 --> 00:13:16,120
+and you measure the energy later,
+
+370
+00:13:16,260 --> 00:13:19,080
+the energy is exactly the same as you started with.
+
+371
+00:13:19,920 --> 00:13:22,220
+So there's something funny about this randomness.
+
+372
+00:13:22,400 --> 00:13:24,040
+It seems to affect some things
+
+373
+00:13:24,040 --> 00:13:25,120
+and not other things,
+
+374
+00:13:25,400 --> 00:13:27,640
+and doesn't work the way you might expect
+
+375
+00:13:28,600 --> 00:13:30,440
+randomness in classical physics to work.
+
+376
+00:13:30,960 --> 00:13:32,060
+Let me give you two,
+
+377
+00:13:32,160 --> 00:13:32,420
+oh,
+
+378
+00:13:32,420 --> 00:13:35,020
+I think three other examples
+
+379
+00:13:35,020 --> 00:13:37,360
+of the oddness of this randomness.
+
+380
+00:13:39,420 --> 00:13:41,340
+The first comes from an experiment
+
+381
+00:13:41,940 --> 00:13:43,160
+which to my mind
+
+382
+00:13:44,099 --> 00:13:46,140
+shows the weirdness of quantum mechanics
+
+383
+00:13:46,140 --> 00:13:48,340
+in the easiest and most straightforward,
+
+384
+00:13:49,079 --> 00:13:50,280
+least difficult way.
+
+385
+00:13:50,740 --> 00:13:52,220
+Much easier for my money
+
+386
+00:13:52,220 --> 00:13:53,160
+than Bell's inequalities
+
+387
+00:13:53,160 --> 00:13:54,680
+and all that sort of stuff.
+
+388
+00:13:54,840 --> 00:13:56,100
+It's called the two-slit experiment.
+
+389
+00:13:56,400 --> 00:13:57,320
+All of you know about it,
+
+390
+00:13:57,340 --> 00:13:58,360
+or most of you know about it.
+
+391
+00:13:58,380 --> 00:13:58,640
+If not,
+
+392
+00:13:58,640 --> 00:13:59,740
+you'll learn about it right now.
+
+393
+00:14:00,440 --> 00:14:02,140
+But it is extremely odd
+
+394
+00:14:02,140 --> 00:14:05,920
+when compared with classical randomness.
+
+395
+00:14:06,220 --> 00:14:06,920
+All right?
+
+396
+00:14:06,980 --> 00:14:10,300
+So classical randomness just being this idea
+
+397
+00:14:10,300 --> 00:14:11,440
+that every now and then
+
+398
+00:14:11,440 --> 00:14:12,580
+you give the system a little knock.
+
+399
+00:14:12,880 --> 00:14:14,320
+The two-slit experiment
+
+400
+00:14:14,320 --> 00:14:16,180
+involves a source of particles.
+
+401
+00:14:16,620 --> 00:14:18,440
+Those particles could be photons,
+
+402
+00:14:18,740 --> 00:14:19,600
+they could be electrons,
+
+403
+00:14:20,060 --> 00:14:21,400
+they could be neutrons,
+
+404
+00:14:21,760 --> 00:14:23,560
+they could be bowling balls,
+
+405
+00:14:23,780 --> 00:14:25,640
+except the effect for bowling balls
+
+406
+00:14:25,640 --> 00:14:26,440
+is so minute
+
+407
+00:14:27,180 --> 00:14:28,840
+that you'd never be able to measure it.
+
+408
+00:14:28,840 --> 00:14:30,860
+So when we speak about particles,
+
+409
+00:14:31,080 --> 00:14:32,820
+we think about things which are very light,
+
+410
+00:14:33,020 --> 00:14:34,520
+and because they're light,
+
+411
+00:14:34,780 --> 00:14:37,400
+the quantum effects associated with them
+
+412
+00:14:37,400 --> 00:14:38,780
+are significant and measurable.
+
+413
+00:14:39,460 --> 00:14:40,080
+All right,
+
+414
+00:14:40,080 --> 00:14:41,460
+so we have a source of some kind.
+
+415
+00:14:41,620 --> 00:14:43,880
+It could be a laser shooting out photons,
+
+416
+00:14:44,420 --> 00:14:46,580
+but imagine the photons are coming through
+
+417
+00:14:46,580 --> 00:14:47,840
+one at a time,
+
+418
+00:14:47,940 --> 00:14:49,900
+very small number of them,
+
+419
+00:14:51,360 --> 00:14:52,260
+quanta of light,
+
+420
+00:14:52,500 --> 00:14:54,240
+one at a time,
+
+421
+00:14:54,500 --> 00:14:56,440
+one every five minutes if you like,
+
+422
+00:14:56,560 --> 00:14:56,900
+I don't know,
+
+423
+00:14:56,920 --> 00:14:58,640
+just to go to some extreme situation.
+
+424
+00:14:58,840 --> 00:15:01,860
+These are the photons coming out of a photon gun,
+
+425
+00:15:02,740 --> 00:15:05,200
+and the photons pass through
+
+426
+00:15:05,200 --> 00:15:09,380
+an obstacle with a little hole in it.
+
+427
+00:15:09,860 --> 00:15:10,240
+All right,
+
+428
+00:15:10,240 --> 00:15:11,820
+this is a two-dimensional diagram
+
+429
+00:15:11,820 --> 00:15:13,400
+of a three-dimensional situation.
+
+430
+00:15:14,320 --> 00:15:16,680
+This blue object over here
+
+431
+00:15:16,680 --> 00:15:20,140
+is intended to be a disk
+
+432
+00:15:20,840 --> 00:15:22,340
+with a tiny hole in it.
+
+433
+00:15:22,900 --> 00:15:25,280
+So the photons can go through,
+
+434
+00:15:26,220 --> 00:15:28,080
+and they come out.
+
+435
+00:15:28,080 --> 00:15:29,240
+They come out the other side of the hole,
+
+436
+00:15:29,460 --> 00:15:30,450
+and when they come out
+
+437
+00:15:30,450 --> 00:15:31,440
+the other side of the hole,
+
+438
+00:15:31,540 --> 00:15:33,380
+they eventually get to a screen over here.
+
+439
+00:15:33,680 --> 00:15:38,480
+That screen records the photon by a flash,
+
+440
+00:15:38,720 --> 00:15:40,960
+a flash of light at the screen,
+
+441
+00:15:41,120 --> 00:15:43,800
+not the flash of the original photons,
+
+442
+00:15:44,140 --> 00:15:46,640
+but another flash of energy appears
+
+443
+00:15:46,640 --> 00:15:48,980
+at a point on the screen and records,
+
+444
+00:15:49,240 --> 00:15:51,900
+or it could be just the blackening
+
+445
+00:15:51,900 --> 00:15:54,180
+of a photographic plate,
+
+446
+00:15:55,040 --> 00:15:56,940
+something that records the position
+
+447
+00:15:56,940 --> 00:15:59,140
+of the photon when it goes through here.
+
+448
+00:16:00,000 --> 00:16:02,380
+Now first let's think classically.
+
+449
+00:16:04,240 --> 00:16:07,300
+But classically with a bit of randomness.
+
+450
+00:16:07,720 --> 00:16:10,100
+The bit of randomness that we can imagine
+
+451
+00:16:10,700 --> 00:16:12,600
+is that when the photon goes through here,
+
+452
+00:16:14,200 --> 00:16:16,100
+a little random kick
+
+453
+00:16:16,940 --> 00:16:18,640
+might influence the photon
+
+454
+00:16:18,640 --> 00:16:21,220
+and either kick it upwards or downwards,
+
+455
+00:16:22,060 --> 00:16:23,860
+in fact by a random amount.
+
+456
+00:16:24,440 --> 00:16:26,040
+What would we expect then?
+
+457
+00:16:26,940 --> 00:16:27,020
+Well,
+
+458
+00:16:27,020 --> 00:16:28,520
+if there was no randomness,
+
+459
+00:16:28,580 --> 00:16:30,220
+then the photons would go straight through
+
+460
+00:16:30,220 --> 00:16:31,920
+and illuminate a single point.
+
+461
+00:16:32,420 --> 00:16:34,180
+To be completely deterministic,
+
+462
+00:16:34,420 --> 00:16:36,240
+the photons would always arrive
+
+463
+00:16:36,240 --> 00:16:37,600
+at exactly the same point,
+
+464
+00:16:37,700 --> 00:16:39,300
+if the hole was small enough,
+
+465
+00:16:39,500 --> 00:16:42,380
+and if the beam of photons was narrow enough.
+
+466
+00:16:44,020 --> 00:16:46,120
+But now we can imagine a random kick.
+
+467
+00:16:46,420 --> 00:16:47,540
+What does the random kick do?
+
+468
+00:16:47,980 --> 00:16:48,460
+Well,
+
+469
+00:16:48,460 --> 00:16:50,400
+it changes the direction of the photon,
+
+470
+00:16:51,240 --> 00:16:52,800
+not the whole photon beam,
+
+471
+00:16:53,000 --> 00:16:54,320
+but one photon at a time.
+
+472
+00:16:54,660 --> 00:16:56,520
+It might kick the first photon up
+
+473
+00:16:56,940 --> 00:16:57,020
+a little bit,
+
+474
+00:16:57,020 --> 00:16:58,000
+the second photon down,
+
+475
+00:16:58,840 --> 00:17:00,560
+and so forth and so on.
+
+476
+00:17:01,660 --> 00:17:03,440
+Eventually what you will see
+
+477
+00:17:04,579 --> 00:17:08,700
+is a blob of illumination
+
+478
+00:17:08,700 --> 00:17:10,160
+on the screen over here.
+
+479
+00:17:11,040 --> 00:17:12,240
+On the average,
+
+480
+00:17:12,240 --> 00:17:13,800
+the photon might go straight ahead,
+
+481
+00:17:14,060 --> 00:17:15,920
+so the blob might be most intense
+
+482
+00:17:16,680 --> 00:17:18,060
+at the center.
+
+483
+00:17:18,760 --> 00:17:21,220
+It might be highly improbable
+
+484
+00:17:21,220 --> 00:17:25,680
+to knock the photon through 60 or 70 degrees,
+
+485
+00:17:25,680 --> 00:17:28,099
+so the signal would fade
+
+486
+00:17:28,099 --> 00:17:29,760
+as you moved away from the center.
+
+487
+00:17:30,540 --> 00:17:31,700
+You would see a blob
+
+488
+00:17:31,700 --> 00:17:34,380
+with a maximum intensity near the center
+
+489
+00:17:34,380 --> 00:17:37,120
+and thinning out as you moved far away.
+
+490
+00:17:38,520 --> 00:17:40,100
+And you might describe it
+
+491
+00:17:40,100 --> 00:17:41,880
+by a probability function.
+
+492
+00:17:42,120 --> 00:17:43,780
+The probability function being
+
+493
+00:17:43,780 --> 00:17:45,600
+the probability that the photon arrives
+
+494
+00:17:45,600 --> 00:17:46,600
+in different places.
+
+495
+00:17:48,540 --> 00:17:50,080
+Now we go...
+
+496
+00:17:50,080 --> 00:17:50,220
+Oh,
+
+497
+00:17:50,220 --> 00:17:51,900
+now we do the same thing
+
+498
+00:17:51,900 --> 00:17:53,700
+in real quantum mechanics,
+
+499
+00:17:53,920 --> 00:17:54,460
+in other words,
+
+500
+00:17:54,460 --> 00:17:55,240
+in the real world.
+
+501
+00:17:55,680 --> 00:17:57,740
+We see essentially the same thing.
+
+502
+00:17:58,000 --> 00:17:59,680
+The photons go through the hole
+
+503
+00:18:01,780 --> 00:18:04,980
+with no ability to control the situation.
+
+504
+00:18:05,440 --> 00:18:08,000
+We find out that the photons again
+
+505
+00:18:08,000 --> 00:18:09,800
+create a blob like this.
+
+506
+00:18:10,440 --> 00:18:11,600
+But now we're going to do something
+
+507
+00:18:11,600 --> 00:18:12,460
+a little different.
+
+508
+00:18:12,680 --> 00:18:14,240
+And I think everybody here,
+
+509
+00:18:14,420 --> 00:18:16,460
+more or less everybody,
+
+510
+00:18:16,780 --> 00:18:17,640
+knows what I'm going to do.
+
+511
+00:18:17,980 --> 00:18:19,620
+I'm going to open a second hole.
+
+512
+00:18:22,520 --> 00:18:23,060
+Okay,
+
+513
+00:18:23,060 --> 00:18:23,880
+but let's think about
+
+514
+00:18:23,880 --> 00:18:25,660
+what classical randomness would do.
+
+515
+00:18:26,940 --> 00:18:29,120
+Classical randomness would simply mean
+
+516
+00:18:29,120 --> 00:18:30,240
+that...
+
+517
+00:18:30,240 --> 00:18:31,780
+And we'll also imagine
+
+518
+00:18:32,420 --> 00:18:34,360
+that this beam of photons
+
+519
+00:18:36,320 --> 00:18:38,300
+is at its origin
+
+520
+00:18:38,300 --> 00:18:40,860
+a little bit uncertain and a little bit random.
+
+521
+00:18:41,120 --> 00:18:43,380
+So that some photons begin
+
+522
+00:18:43,380 --> 00:18:44,500
+a little bit upward,
+
+523
+00:18:44,700 --> 00:18:46,460
+some photons a little bit downward,
+
+524
+00:18:46,800 --> 00:18:49,100
+some photons go through the upper hole,
+
+525
+00:18:49,320 --> 00:18:51,340
+some photons go through the lower hole.
+
+526
+00:18:53,520 --> 00:18:55,660
+If a photon goes through the upper hole,
+
+527
+00:18:55,660 --> 00:18:58,340
+it may or may not get a random kick
+
+528
+00:18:58,340 --> 00:19:00,180
+and get knocked off course
+
+529
+00:19:00,180 --> 00:19:01,760
+if it goes through the lower hole.
+
+530
+00:19:02,240 --> 00:19:04,040
+It also gets a random kick.
+
+531
+00:19:04,360 --> 00:19:05,920
+Now we're imagining the photons
+
+532
+00:19:05,920 --> 00:19:07,560
+come through one at a time.
+
+533
+00:19:08,020 --> 00:19:09,800
+We could even imagine a...
+
+534
+00:19:12,720 --> 00:19:13,320
+It's okay.
+
+535
+00:19:14,880 --> 00:19:16,320
+I do that all the time.
+
+536
+00:19:20,500 --> 00:19:21,340
+Where was I?
+
+537
+00:19:21,480 --> 00:19:21,960
+Yes,
+
+538
+00:19:21,960 --> 00:19:23,940
+the photons get a kick.
+
+539
+00:19:24,120 --> 00:19:25,640
+We're imagining that the photons
+
+540
+00:19:25,660 --> 00:19:27,520
+come through one at a time
+
+541
+00:19:27,520 --> 00:19:28,580
+very sparsely.
+
+542
+00:19:29,400 --> 00:19:32,020
+And so what one photon does
+
+543
+00:19:32,660 --> 00:19:34,480
+doesn't influence a later photon
+
+544
+00:19:35,300 --> 00:19:37,420
+because the later photon comes through
+
+545
+00:19:37,420 --> 00:19:39,700
+so much later that whatever gave
+
+546
+00:19:39,700 --> 00:19:41,000
+the first photon a kick
+
+547
+00:19:41,000 --> 00:19:42,560
+is already finished happening
+
+548
+00:19:42,560 --> 00:19:45,260
+and it's waiting for the next throw of the dice.
+
+549
+00:19:45,540 --> 00:19:46,440
+In fact,
+
+550
+00:19:46,440 --> 00:19:47,940
+the next photon may come through
+
+551
+00:19:47,940 --> 00:19:49,700
+a hundred throws of the dice later.
+
+552
+00:19:50,260 --> 00:19:52,120
+And so we expect the next photon
+
+553
+00:19:53,040 --> 00:19:54,960
+to be random.
+
+554
+00:19:54,960 --> 00:19:57,660
+Statistically independent of the first photon.
+
+555
+00:19:58,740 --> 00:20:00,200
+Under those circumstances,
+
+556
+00:20:00,920 --> 00:20:02,580
+what we would expect...
+
+557
+00:20:02,580 --> 00:20:02,900
+Well,
+
+558
+00:20:02,900 --> 00:20:05,300
+let's decide what we would expect.
+
+559
+00:20:05,480 --> 00:20:06,920
+Supposing only one hole is open.
+
+560
+00:20:07,200 --> 00:20:09,200
+If only one hole was open,
+
+561
+00:20:09,460 --> 00:20:12,580
+then we would see a blob of illumination like that.
+
+562
+00:20:12,780 --> 00:20:15,140
+With a profile that might look something like that.
+
+563
+00:20:15,920 --> 00:20:18,440
+Supposing we closed up the first blob,
+
+564
+00:20:18,560 --> 00:20:19,240
+the first hole,
+
+565
+00:20:20,160 --> 00:20:22,440
+and opened the second hole.
+
+566
+00:20:23,100 --> 00:20:24,300
+Closed the first one,
+
+567
+00:20:24,960 --> 00:20:25,840
+opened the second one.
+
+568
+00:20:26,380 --> 00:20:28,480
+First we begin with just one hole.
+
+569
+00:20:29,040 --> 00:20:31,320
+Then we close the first hole
+
+570
+00:20:31,320 --> 00:20:32,520
+and open the second hole.
+
+571
+00:20:32,860 --> 00:20:34,420
+What would you expect to see?
+
+572
+00:20:34,720 --> 00:20:37,180
+What you would expect to see under those circumstances
+
+573
+00:20:37,180 --> 00:20:38,800
+is a different blob
+
+574
+00:20:38,800 --> 00:20:41,140
+slightly displaced from the first one.
+
+575
+00:20:42,200 --> 00:20:44,280
+The blue blob wouldn't be there
+
+576
+00:20:44,280 --> 00:20:46,640
+because we closed the first hole.
+
+577
+00:20:46,880 --> 00:20:48,580
+The green blob would be there
+
+578
+00:20:48,580 --> 00:20:50,340
+because we opened the second hole.
+
+579
+00:20:51,820 --> 00:20:52,380
+Now,
+
+580
+00:20:52,380 --> 00:20:54,420
+what happens if we open both holes?
+
+581
+00:20:54,420 --> 00:20:57,080
+What happens if you open both holes
+
+582
+00:20:57,080 --> 00:20:58,500
+in classical mechanics
+
+583
+00:20:58,500 --> 00:21:00,560
+is the probability
+
+584
+00:21:00,560 --> 00:21:03,120
+for a photon to get to the screen
+
+585
+00:21:03,120 --> 00:21:04,220
+at any given point
+
+586
+00:21:04,220 --> 00:21:07,100
+is the sum of the probabilities
+
+587
+00:21:07,100 --> 00:21:09,220
+for it to get there by either route.
+
+588
+00:21:09,840 --> 00:21:12,860
+The photon can either go through the upper route
+
+589
+00:21:13,420 --> 00:21:15,320
+or it can go through the lower route
+
+590
+00:21:16,180 --> 00:21:17,760
+if both holes are open.
+
+591
+00:21:18,060 --> 00:21:21,700
+The probability to get to this point over here,
+
+592
+00:21:21,760 --> 00:21:23,540
+let's call it the green point over here,
+
+593
+00:21:23,580 --> 00:21:24,400
+the probability to get to this point over here
+
+594
+00:21:24,420 --> 00:21:24,800
+or the probability to get over there
+
+595
+00:21:24,800 --> 00:21:27,640
+is the probability to go through the upper hole
+
+596
+00:21:27,640 --> 00:21:29,720
+and arrive at the green point
+
+597
+00:21:30,420 --> 00:21:33,180
+plus the probability to go through the lower hole
+
+598
+00:21:33,180 --> 00:21:35,100
+and arrive at the green point.
+
+599
+00:21:35,560 --> 00:21:36,960
+So the result is,
+
+600
+00:21:36,960 --> 00:21:38,360
+in classical physics,
+
+601
+00:21:39,120 --> 00:21:43,200
+you would always see the signal over here,
+
+602
+00:21:43,320 --> 00:21:44,820
+the profile over here,
+
+603
+00:21:44,860 --> 00:21:48,380
+just being the sum of the two probability distributions.
+
+604
+00:21:48,960 --> 00:21:50,020
+And it would look...
+
+605
+00:21:50,020 --> 00:21:51,020
+I wish I had another color.
+
+606
+00:21:51,240 --> 00:21:52,540
+They never leave me enough colors.
+
+607
+00:21:53,000 --> 00:21:53,700
+All right.
+
+608
+00:21:54,420 --> 00:21:56,960
+We would see something which would look like
+
+609
+00:21:58,340 --> 00:21:59,680
+just a higher...
+
+610
+00:22:00,380 --> 00:22:00,660
+No,
+
+611
+00:22:00,660 --> 00:22:00,900
+no,
+
+612
+00:22:00,900 --> 00:22:02,320
+it would be much bigger than that.
+
+613
+00:22:07,000 --> 00:22:08,220
+It would look like that.
+
+614
+00:22:08,480 --> 00:22:09,540
+And in particular,
+
+615
+00:22:09,540 --> 00:22:11,720
+if there was any point over here
+
+616
+00:22:12,340 --> 00:22:14,300
+such that the photon could arrive
+
+617
+00:22:14,300 --> 00:22:16,640
+either from one hole
+
+618
+00:22:17,320 --> 00:22:19,240
+or from the other hole or both,
+
+619
+00:22:19,980 --> 00:22:23,480
+then we would find illumination at that point for sure
+
+620
+00:22:23,480 --> 00:22:25,080
+by opening both holes.
+
+621
+00:22:25,820 --> 00:22:26,420
+Okay?
+
+622
+00:22:26,740 --> 00:22:28,920
+That's what classical logic...
+
+623
+00:22:28,920 --> 00:22:30,500
+Let's call it by its right name,
+
+624
+00:22:30,500 --> 00:22:31,480
+classical logic.
+
+625
+00:22:31,800 --> 00:22:33,420
+That's what classical logic,
+
+626
+00:22:33,420 --> 00:22:34,540
+classical statistics,
+
+627
+00:22:34,860 --> 00:22:36,860
+classical probability would dictate
+
+628
+00:22:37,480 --> 00:22:41,300
+for a series of particles coming through here,
+
+629
+00:22:41,360 --> 00:22:42,120
+one at a time.
+
+630
+00:22:42,580 --> 00:22:43,300
+All right?
+
+631
+00:22:43,340 --> 00:22:44,600
+When they come through one at a time,
+
+632
+00:22:44,680 --> 00:22:45,260
+they make blip,
+
+633
+00:22:45,260 --> 00:22:45,640
+blip,
+
+634
+00:22:45,640 --> 00:22:46,060
+blip,
+
+635
+00:22:46,060 --> 00:22:46,440
+blip,
+
+636
+00:22:46,460 --> 00:22:49,700
+but the average probability of the distribution of blips
+
+637
+00:22:49,700 --> 00:22:53,080
+would be a distribution which would be the sum
+
+638
+00:22:53,080 --> 00:22:54,420
+of the two distributions.
+
+639
+00:22:55,620 --> 00:22:57,620
+What happens if you really do this experiment?
+
+640
+00:22:58,640 --> 00:23:01,340
+You find what's called an interference pattern.
+
+641
+00:23:03,740 --> 00:23:08,040
+The interference pattern looks like this.
+
+642
+00:23:09,980 --> 00:23:10,620
+Well,
+
+643
+00:23:10,620 --> 00:23:12,000
+let's see if we get it right.
+
+644
+00:23:19,140 --> 00:23:20,320
+In particular,
+
+645
+00:23:22,400 --> 00:23:22,960
+well,
+
+646
+00:23:22,960 --> 00:23:23,460
+first of all,
+
+647
+00:23:23,460 --> 00:23:24,060
+what is this figure?
+
+648
+00:23:24,300 --> 00:23:26,400
+This figure is a probability distribution,
+
+649
+00:23:27,300 --> 00:23:28,560
+and it tells you,
+
+650
+00:23:28,560 --> 00:23:30,260
+the horizontal axis here,
+
+651
+00:23:30,460 --> 00:23:32,840
+tells you what the probability of a photon
+
+652
+00:23:32,840 --> 00:23:34,380
+getting to a particular point
+
+653
+00:23:34,380 --> 00:23:35,760
+at a particular height here,
+
+654
+00:23:36,340 --> 00:23:37,460
+but in particular,
+
+655
+00:23:37,460 --> 00:23:40,220
+it says that there are no photons
+
+656
+00:23:40,220 --> 00:23:41,600
+which arrive at that point.
+
+657
+00:23:41,940 --> 00:23:44,540
+There are no photons which arrive at that point.
+
+658
+00:23:44,680 --> 00:23:46,840
+There are no photons which arrive at that point.
+
+659
+00:23:47,280 --> 00:23:48,440
+This is odd.
+
+660
+00:23:48,720 --> 00:23:50,300
+If you opened only one hole,
+
+661
+00:23:50,300 --> 00:23:54,320
+then you would find a probability distribution
+
+662
+00:23:54,320 --> 00:23:55,540
+which wasn't zero.
+
+663
+00:23:55,740 --> 00:23:56,220
+In other words,
+
+664
+00:23:56,220 --> 00:23:58,640
+you would find illumination at that point.
+
+665
+00:23:59,100 --> 00:24:00,640
+You open the other hole,
+
+666
+00:24:00,940 --> 00:24:03,640
+you still find illumination at that point.
+
+667
+00:24:03,920 --> 00:24:05,480
+You open both holes,
+
+668
+00:24:06,060 --> 00:24:07,560
+and all of a sudden,
+
+669
+00:24:07,660 --> 00:24:10,000
+no photon gets to that point,
+
+670
+00:24:10,140 --> 00:24:12,400
+even though they're coming in,
+
+671
+00:24:12,480 --> 00:24:15,480
+coming through once every 20 minutes
+
+672
+00:24:15,480 --> 00:24:17,580
+or once every 20 years,
+
+673
+00:24:18,240 --> 00:24:19,060
+and therefore,
+
+674
+00:24:19,060 --> 00:24:20,280
+how can they know about each other?
+
+675
+00:24:20,280 --> 00:24:20,960
+Nevertheless,
+
+676
+00:24:20,960 --> 00:24:23,320
+if you open both holes,
+
+677
+00:24:24,920 --> 00:24:28,000
+there will be places where no photons can get to,
+
+678
+00:24:28,100 --> 00:24:30,900
+despite the fact that photons arrived at those points
+
+679
+00:24:30,900 --> 00:24:32,940
+when only one hole was open.
+
+680
+00:24:34,146 --> 00:24:34,546
+وات
+
+681
+00:24:35,362 --> 00:24:35,462
+is,
+
+682
+00:24:35,462 --> 00:24:41,022
+you might be able to sit down and work up
+
+683
+00:24:41,022 --> 00:24:46,582
+some interesting but rather elaborate mechanism to make this happen.
+
+684
+00:24:47,262 --> 00:24:48,982
+You could imagine elaborate,
+
+685
+00:24:48,982 --> 00:24:57,722
+complicated mechanisms where somehow this screen here,
+
+686
+00:24:57,722 --> 00:24:58,522
+some degrees
+
+687
+00:24:58,522 --> 00:24:59,882
+of freedom inside the screen,
+
+688
+00:24:59,882 --> 00:25:01,962
+remember how many photons went through,
+
+689
+00:25:01,962 --> 00:25:03,202
+and they remember
+
+690
+00:25:03,202 --> 00:25:04,582
+what they're supposed to do,
+
+691
+00:25:04,582 --> 00:25:07,032
+but it would be a
+
+692
+00:25:07,032 --> 00:25:09,482
+rather elaborate mechanism just for this
+
+693
+00:25:09,482 --> 00:25:10,162
+one purpose.
+
+694
+00:25:10,602 --> 00:25:12,962
+This phenomenon of interference,
+
+695
+00:25:12,962 --> 00:25:14,422
+of destructive interference,
+
+696
+00:25:14,422 --> 00:25:16,262
+this is called destructive interference,
+
+697
+00:25:17,181 --> 00:25:19,441
+that the probabilities cancel instead
+
+698
+00:25:19,441 --> 00:25:21,702
+of adding at certain points,
+
+699
+00:25:21,702 --> 00:25:24,582
+that's a very generic property
+
+700
+00:25:25,372 --> 00:25:26,922
+in quantum mechanics.
+
+701
+00:25:27,662 --> 00:25:30,422
+And so it requires a kind
+
+702
+00:25:30,422 --> 00:25:33,182
+of explanation which is not some detail.
+
+703
+00:25:33,202 --> 00:25:33,602
+A detailed,
+
+704
+00:25:33,602 --> 00:25:34,102
+mechanical,
+
+705
+00:25:34,102 --> 00:25:36,022
+complicated explanation,
+
+706
+00:25:36,022 --> 00:25:43,142
+it requires a broad new idea about how statistics
+
+707
+00:25:43,142 --> 00:25:49,022
+works and about how the logic of quantum mechanics works.
+
+708
+00:25:49,302 --> 00:25:51,392
+So that's the first really weird
+
+709
+00:25:51,392 --> 00:25:53,482
+thing that happens in quantum mechanics.
+
+710
+00:25:54,002 --> 00:25:55,782
+Now let me give you another example.
+
+711
+00:25:56,802 --> 00:25:57,702
+If you remember,
+
+712
+00:25:57,702 --> 00:25:58,922
+in the last course,
+
+713
+00:25:58,922 --> 00:26:01,222
+we talked a little bit about reversibility,
+
+714
+00:26:01,222 --> 00:26:01,802
+we talked
+
+715
+00:26:01,802 --> 00:26:03,122
+about the laws of physics.
+
+716
+00:26:03,162 --> 00:26:03,182
+We talked about the laws of physics.
+
+717
+00:26:03,202 --> 00:26:03,822
+In particular,
+
+718
+00:26:03,822 --> 00:26:07,282
+we talked about the laws of physics for discrete systems.
+
+719
+00:26:07,642 --> 00:26:08,602
+For example,
+
+720
+00:26:08,602 --> 00:26:11,622
+we discussed the possible laws of physics,
+
+721
+00:26:11,622 --> 00:26:14,002
+deterministic laws of physics,
+
+722
+00:26:14,222 --> 00:26:17,822
+for a coin which can either be heads or tails.
+
+723
+00:26:18,722 --> 00:26:19,362
+Now,
+
+724
+00:26:19,362 --> 00:26:19,622
+of course,
+
+725
+00:26:19,622 --> 00:26:21,002
+flipping the coin,
+
+726
+00:26:21,002 --> 00:26:24,582
+that introduces a level of uncertainty,
+
+727
+00:26:24,582 --> 00:26:29,322
+a level of statistics,
+
+728
+00:26:29,622 --> 00:26:30,902
+probability into things.
+
+729
+00:26:31,082 --> 00:26:33,182
+I want to think about the deterministic laws of physics.
+
+730
+00:26:33,182 --> 00:26:36,612
+The truly deterministic laws are the
+
+731
+00:26:36,612 --> 00:26:40,042
+ones that whatever the coin is doing,
+
+732
+00:26:40,042 --> 00:26:41,342
+it will tell
+
+733
+00:26:41,342 --> 00:26:42,982
+you what the coin is doing next.
+
+734
+00:26:43,422 --> 00:26:46,001
+So when we discussed this last quarter,
+
+735
+00:26:46,001 --> 00:26:48,662
+we talked about two possible laws of physics.
+
+736
+00:26:49,002 --> 00:26:51,642
+The first was that if you find heads,
+
+737
+00:26:51,642 --> 00:26:54,162
+in the next instant when you look at it,
+
+738
+00:26:54,162 --> 00:26:55,162
+after an
+
+739
+00:26:55,162 --> 00:26:55,782
+instant of time,
+
+740
+00:26:55,782 --> 00:26:56,722
+you'll find heads again.
+
+741
+00:26:57,382 --> 00:26:58,342
+If tails,
+
+742
+00:26:58,342 --> 00:26:59,822
+then you find tails again.
+
+743
+00:27:00,242 --> 00:27:01,702
+Then your laws of physics just
+
+744
+00:27:01,702 --> 00:27:03,162
+permit two possible laws of physics.
+
+745
+00:27:05,142 --> 00:27:05,862
+So you can see heads,
+
+746
+00:27:05,862 --> 00:27:06,162
+heads,
+
+747
+00:27:06,162 --> 00:27:06,402
+heads,
+
+748
+00:27:06,402 --> 00:27:06,722
+heads,
+
+749
+00:27:06,722 --> 00:27:06,942
+heads,
+
+750
+00:27:06,942 --> 00:27:07,162
+heads,
+
+751
+00:27:07,162 --> 00:27:07,342
+heads,
+
+752
+00:27:07,342 --> 00:27:07,482
+heads,
+
+753
+00:27:07,482 --> 00:27:07,782
+or tails,
+
+754
+00:27:07,782 --> 00:27:08,082
+tails,
+
+755
+00:27:08,122 --> 00:27:08,262
+tails,
+
+756
+00:27:08,262 --> 00:27:08,522
+tails,
+
+757
+00:27:08,522 --> 00:27:08,762
+tails.
+
+758
+00:27:09,382 --> 00:27:11,202
+And the other possible laws of physics,
+
+759
+00:27:11,202 --> 00:27:12,082
+or law of physics,
+
+760
+00:27:12,082 --> 00:27:13,942
+was that when you see a head,
+
+761
+00:27:13,962 --> 00:27:15,562
+in the next instant,
+
+762
+00:27:15,562 --> 00:27:17,062
+microsecond,
+
+763
+00:27:17,062 --> 00:27:18,402
+or whatever your unit of time is,
+
+764
+00:27:18,402 --> 00:27:20,142
+you will see the opposite,
+
+765
+00:27:20,362 --> 00:27:20,742
+tails.
+
+766
+00:27:21,562 --> 00:27:24,022
+Then the two possible laws of physics are,
+
+767
+00:27:24,022 --> 00:27:24,942
+or the two possible,
+
+768
+00:27:24,942 --> 00:27:25,962
+not laws of physics,
+
+769
+00:27:26,122 --> 00:27:27,502
+the two possible evolutions,
+
+770
+00:27:27,502 --> 00:27:29,682
+one of them begins with heads,
+
+771
+00:27:29,682 --> 00:27:30,362
+it goes heads,
+
+772
+00:27:30,362 --> 00:27:30,602
+tails,
+
+773
+00:27:30,602 --> 00:27:30,902
+heads,
+
+774
+00:27:30,902 --> 00:27:31,202
+tails,
+
+775
+00:27:31,262 --> 00:27:31,422
+heads,
+
+776
+00:27:31,422 --> 00:27:31,702
+tails.
+
+777
+00:27:31,702 --> 00:27:33,402
+And the other one begins with tails,
+
+778
+00:27:33,402 --> 00:27:33,982
+and goes tails,
+
+779
+00:27:33,982 --> 00:27:34,202
+heads,
+
+780
+00:27:34,202 --> 00:27:34,522
+tails,
+
+781
+00:27:34,522 --> 00:27:34,782
+heads,
+
+782
+00:27:34,782 --> 00:27:34,982
+tails,
+
+783
+00:27:34,982 --> 00:27:35,262
+heads.
+
+784
+00:27:35,622 --> 00:27:36,642
+Whether you know it or not,
+
+785
+00:27:36,642 --> 00:27:37,862
+those two different things were different.
+
+786
+00:27:38,062 --> 00:27:38,482
+They began,
+
+787
+00:27:38,482 --> 00:27:39,342
+one with heads,
+
+788
+00:27:39,342 --> 00:27:40,042
+one with tails.
+
+789
+00:27:41,302 --> 00:27:43,872
+That was the basic idea
+
+790
+00:27:43,872 --> 00:27:46,442
+of a deterministic law of physics.
+
+791
+00:27:47,402 --> 00:27:47,802
+Now,
+
+792
+00:27:47,802 --> 00:27:48,782
+you can have,
+
+793
+00:27:48,782 --> 00:27:49,282
+of course,
+
+794
+00:27:49,282 --> 00:27:52,202
+more complicated systems than just two state systems.
+
+795
+00:27:53,042 --> 00:27:53,702
+We imagine,
+
+796
+00:27:53,702 --> 00:27:54,462
+for example,
+
+797
+00:27:54,462 --> 00:27:55,662
+a six state system.
+
+798
+00:27:55,942 --> 00:27:57,322
+A six state system was a die.
+
+799
+00:27:57,742 --> 00:27:58,862
+A die that could be one,
+
+800
+00:27:58,862 --> 00:27:59,042
+two,
+
+801
+00:27:59,042 --> 00:27:59,202
+three,
+
+802
+00:27:59,202 --> 00:27:59,362
+four,
+
+803
+00:27:59,362 --> 00:27:59,602
+five,
+
+804
+00:27:59,602 --> 00:27:59,842
+six.
+
+805
+00:27:59,842 --> 00:28:01,962
+But let's just take a simpler thing.
+
+806
+00:28:02,442 --> 00:28:04,862
+Let's take a coin with three sides.
+
+807
+00:28:05,242 --> 00:28:07,602
+If you can't imagine a coin with three sides,
+
+808
+00:28:07,602 --> 00:28:09,202
+then you'll have to do this using abstract
+
+809
+00:28:09,202 --> 00:28:09,782
+mathematics.
+
+810
+00:28:10,682 --> 00:28:11,162
+Okay?
+
+811
+00:28:11,242 --> 00:28:13,742
+A coin with three sides has heads,
+
+812
+00:28:13,742 --> 00:28:14,342
+tails,
+
+813
+00:28:14,342 --> 00:28:15,022
+and what else?
+
+814
+00:28:15,722 --> 00:28:16,202
+Feet.
+
+815
+00:28:16,342 --> 00:28:16,682
+Heads,
+
+816
+00:28:16,682 --> 00:28:16,902
+tails,
+
+817
+00:28:16,902 --> 00:28:17,262
+and feet.
+
+818
+00:28:20,682 --> 00:28:21,162
+Heads,
+
+819
+00:28:21,162 --> 00:28:21,642
+tails,
+
+820
+00:28:21,642 --> 00:28:23,262
+and feet.
+
+821
+00:28:25,002 --> 00:28:25,622
+All right.
+
+822
+00:28:25,662 --> 00:28:26,642
+And there are two,
+
+823
+00:28:26,642 --> 00:28:27,242
+well,
+
+824
+00:28:27,242 --> 00:28:29,702
+let's consider a simple law of physics.
+
+825
+00:28:29,842 --> 00:28:31,792
+A simple law of physics could
+
+826
+00:28:31,792 --> 00:28:33,742
+tell you that whenever you have heads,
+
+827
+00:28:33,742 --> 00:28:34,542
+it goes to tails.
+
+828
+00:28:34,922 --> 00:28:36,042
+Whenever you have tails,
+
+829
+00:28:36,042 --> 00:28:36,822
+it goes to feet.
+
+830
+00:28:36,922 --> 00:28:37,682
+Whenever you have feet,
+
+831
+00:28:37,682 --> 00:28:38,602
+it goes to heads again.
+
+832
+00:28:39,422 --> 00:28:40,122
+And then,
+
+833
+00:28:40,122 --> 00:28:41,002
+wherever you start,
+
+834
+00:28:41,002 --> 00:28:42,662
+you just cycle around endlessly,
+
+835
+00:28:42,662 --> 00:28:43,762
+forever and ever.
+
+836
+00:28:44,602 --> 00:28:45,082
+Now,
+
+837
+00:28:45,082 --> 00:28:47,002
+there's a certain sense in which this is,
+
+838
+00:28:47,002 --> 00:28:48,702
+in which this is,
+
+839
+00:28:48,702 --> 00:28:49,502
+what does it mean to
+
+840
+00:28:49,502 --> 00:28:50,482
+say it's deterministic?
+
+841
+00:28:51,222 --> 00:28:53,581
+What does it mean to say
+
+842
+00:28:53,581 --> 00:28:55,941
+information is not lost in this process?
+
+843
+00:28:56,381 --> 00:28:58,742
+What it means is that...
+
+844
+00:28:59,341 --> 00:28:59,822
+Okay.
+
+845
+00:28:59,842 --> 00:29:02,542
+No matter how long the system evolves,
+
+846
+00:29:02,542 --> 00:29:06,362
+let's suppose you started with heads,
+
+847
+00:29:06,362 --> 00:29:07,642
+and you let
+
+848
+00:29:07,642 --> 00:29:10,022
+it go a million units of time,
+
+849
+00:29:10,022 --> 00:29:13,142
+it will just go around and around and cycle.
+
+850
+00:29:13,602 --> 00:29:15,542
+If at the end of that,
+
+851
+00:29:15,542 --> 00:29:18,342
+you reverse the law of physics,
+
+852
+00:29:18,342 --> 00:29:20,442
+now reversing the law of physics
+
+853
+00:29:21,062 --> 00:29:23,662
+just means having it go in the opposite direction.
+
+854
+00:29:24,382 --> 00:29:27,102
+If you could somehow press
+
+855
+00:29:27,102 --> 00:29:29,822
+a button or turn a knob...
+
+856
+00:29:29,842 --> 00:29:33,542
+Which had the effect of reversing the law of physics.
+
+857
+00:29:34,382 --> 00:29:35,382
+In other words,
+
+858
+00:29:35,382 --> 00:29:37,422
+changing the direction of every arrow.
+
+859
+00:29:38,382 --> 00:29:39,422
+And think about,
+
+860
+00:29:39,422 --> 00:29:40,782
+actually,
+
+861
+00:29:40,782 --> 00:29:43,322
+if you could really do this by pressing a button,
+
+862
+00:29:43,322 --> 00:29:44,262
+change the law
+
+863
+00:29:44,262 --> 00:29:44,662
+of physics,
+
+864
+00:29:44,662 --> 00:29:47,792
+then if you allowed the system
+
+865
+00:29:47,792 --> 00:29:50,922
+to evolve for any length of time,
+
+866
+00:29:50,922 --> 00:29:52,402
+at the end
+
+867
+00:29:52,402 --> 00:29:53,082
+of that time,
+
+868
+00:29:53,082 --> 00:29:54,402
+reverse it,
+
+869
+00:29:54,402 --> 00:29:56,202
+and let it evolve for
+
+870
+00:29:56,202 --> 00:29:58,002
+the same length of time again,
+
+871
+00:29:58,002 --> 00:29:59,362
+guess what?
+
+872
+00:29:59,362 --> 00:30:03,182
+It magically comes back to the same original configuration.
+
+873
+00:30:05,522 --> 00:30:08,542
+That's what it means to say that physics is reversible.
+
+874
+00:30:08,942 --> 00:30:10,852
+Or that's what it means to say
+
+875
+00:30:10,852 --> 00:30:12,762
+that information is never lost in physics.
+
+876
+00:30:13,742 --> 00:30:16,402
+That no matter how long you keep going,
+
+877
+00:30:16,402 --> 00:30:18,622
+if you reverse...
+
+878
+00:30:18,622 --> 00:30:21,572
+If you could find a way to reverse the
+
+879
+00:30:21,572 --> 00:30:24,522
+laws of physics and run them backward for the same
+
+880
+00:30:24,522 --> 00:30:26,042
+exact length of time,
+
+881
+00:30:26,042 --> 00:30:28,662
+you'll come back to the starting configuration.
+
+882
+00:30:28,762 --> 00:30:29,342
+Okay.
+
+883
+00:30:29,362 --> 00:30:29,622
+Now,
+
+884
+00:30:29,622 --> 00:30:30,542
+to do that,
+
+885
+00:30:30,542 --> 00:30:31,792
+you might not even need
+
+886
+00:30:31,792 --> 00:30:33,042
+to know the laws of physics.
+
+887
+00:30:33,522 --> 00:30:35,542
+You might need to know very little.
+
+888
+00:30:35,622 --> 00:30:37,312
+The only thing you would need to
+
+889
+00:30:37,312 --> 00:30:39,002
+know is how to reverse the law.
+
+890
+00:30:39,442 --> 00:30:42,002
+You needn't even know what the law is.
+
+891
+00:30:43,042 --> 00:30:44,322
+Whatever the law is,
+
+892
+00:30:44,322 --> 00:30:46,102
+if you can find a
+
+893
+00:30:46,102 --> 00:30:47,882
+button to push that reverses it,
+
+894
+00:30:47,882 --> 00:30:49,382
+then you can test
+
+895
+00:30:49,382 --> 00:30:53,502
+the determinism of physics by simply starting someplace,
+
+896
+00:30:53,502 --> 00:30:56,242
+letting it evolve for a long period
+
+897
+00:30:56,242 --> 00:30:56,742
+of time,
+
+898
+00:30:56,742 --> 00:30:59,022
+and then letting it evolve with the reverse
+
+899
+00:30:59,022 --> 00:30:59,342
+law of physics.
+
+900
+00:30:59,342 --> 00:31:02,582
+If you come back to the same place every time,
+
+901
+00:31:02,582 --> 00:31:04,742
+then your law of physics is deterministic.
+
+902
+00:31:05,662 --> 00:31:08,542
+Now what about a little bit of classical probability?
+
+903
+00:31:09,042 --> 00:31:11,382
+A little bit of deity playing dice?
+
+904
+00:31:12,442 --> 00:31:15,362
+So let's suppose with some very,
+
+905
+00:31:15,362 --> 00:31:17,022
+very small probability,
+
+906
+00:31:17,022 --> 00:31:21,622
+the deity does something different
+
+907
+00:31:22,102 --> 00:31:24,202
+that's not prescribed by the laws of physics.
+
+908
+00:31:24,502 --> 00:31:25,642
+For example,
+
+909
+00:31:25,642 --> 00:31:27,602
+in some random way,
+
+910
+00:31:27,602 --> 00:31:29,302
+with a probability...
+
+911
+00:31:29,302 --> 00:31:29,822
+Let's say that you have a
+
+912
+00:31:29,822 --> 00:31:30,342
+probability of one in a million,
+
+913
+00:31:30,342 --> 00:31:32,362
+the law might say,
+
+914
+00:31:32,362 --> 00:31:33,122
+don't
+
+915
+00:31:33,122 --> 00:31:33,422
+move.
+
+916
+00:31:33,702 --> 00:31:36,002
+Instead of moving the way the diagram says,
+
+917
+00:31:36,002 --> 00:31:36,842
+stay still.
+
+918
+00:31:38,942 --> 00:31:41,292
+If you allow the system to
+
+919
+00:31:41,292 --> 00:31:43,642
+evolve for a short period of time,
+
+920
+00:31:43,642 --> 00:31:48,462
+and then run it backward,
+
+921
+00:31:49,542 --> 00:31:51,462
+it will go back to the same point.
+
+922
+00:31:51,662 --> 00:31:54,202
+But if you allow it to run
+
+923
+00:31:54,202 --> 00:31:56,742
+long enough that there's a significant statistical probability
+
+924
+00:31:56,742 --> 00:31:58,442
+for a fluctuation...
+
+925
+00:31:58,442 --> 00:32:02,222
+For something to happen which is not deterministic.
+
+926
+00:32:02,822 --> 00:32:03,842
+In other words,
+
+927
+00:32:03,842 --> 00:32:05,302
+if it was one in
+
+928
+00:32:05,302 --> 00:32:06,762
+a million that you stand still,
+
+929
+00:32:06,762 --> 00:32:08,462
+but you let the system
+
+930
+00:32:08,462 --> 00:32:10,562
+run for 10 million units of time,
+
+931
+00:32:10,562 --> 00:32:12,422
+then guess what?
+
+932
+00:32:12,902 --> 00:32:14,062
+No chance...
+
+933
+00:32:14,062 --> 00:32:14,182
+Well,
+
+934
+00:32:14,182 --> 00:32:14,782
+not no chance.
+
+935
+00:32:14,882 --> 00:32:15,912
+You have a chance that you'll
+
+936
+00:32:15,912 --> 00:32:16,942
+come back to the same point,
+
+937
+00:32:16,942 --> 00:32:18,742
+but you also have an equal
+
+938
+00:32:18,742 --> 00:32:19,882
+chance that you'll come back
+
+939
+00:32:19,882 --> 00:32:21,022
+to any of the other points.
+
+940
+00:32:21,322 --> 00:32:22,322
+In other words,
+
+941
+00:32:22,322 --> 00:32:23,602
+this test will fail.
+
+942
+00:32:24,222 --> 00:32:25,042
+It'll fail.
+
+943
+00:32:27,302 --> 00:32:28,952
+One third of the time you
+
+944
+00:32:28,952 --> 00:32:30,602
+will come back to the same point,
+
+945
+00:32:30,602 --> 00:32:31,702
+two thirds of the time
+
+946
+00:32:31,702 --> 00:32:33,382
+you will come back to two different points.
+
+947
+00:32:33,982 --> 00:32:42,282
+So a little bit of classical randomness destroys the...
+
+948
+00:32:45,401 --> 00:32:48,862
+What I called last quarter the conservation of probability.
+
+949
+00:32:49,782 --> 00:32:50,382
+No,
+
+950
+00:32:50,382 --> 00:32:51,602
+the conservation of information.
+
+951
+00:32:52,942 --> 00:32:54,382
+Information gets lost.
+
+952
+00:32:55,042 --> 00:32:56,882
+What about quantum mechanics?
+
+953
+00:32:57,742 --> 00:32:59,242
+Is information lost?
+
+954
+00:32:59,482 --> 00:32:59,642
+Well,
+
+955
+00:32:59,642 --> 00:33:01,542
+there is an element of
+
+956
+00:33:01,542 --> 00:33:03,442
+statistical things in quantum mechanics.
+
+957
+00:33:03,682 --> 00:33:07,541
+When an electron goes through a hole like this,
+
+958
+00:33:07,541 --> 00:33:10,982
+it has a probability for getting kicked
+
+959
+00:33:10,982 --> 00:33:11,322
+up.
+
+960
+00:33:11,541 --> 00:33:12,842
+Let's just take the case,
+
+961
+00:33:12,842 --> 00:33:13,742
+let's simplify now.
+
+962
+00:33:13,901 --> 00:33:15,242
+This is the one-slit experiment.
+
+963
+00:33:16,002 --> 00:33:17,982
+We don't even need the two-slit experiment.
+
+964
+00:33:18,161 --> 00:33:19,582
+Let's start with the one-slit experiment.
+
+965
+00:33:21,082 --> 00:33:22,822
+The electron goes through the slit.
+
+966
+00:33:24,482 --> 00:33:25,022
+It's a two-slit experiment.
+
+967
+00:33:25,042 --> 00:33:25,942
+It's aimed toward the slit.
+
+968
+00:33:27,602 --> 00:33:29,722
+Sometimes it more or less goes straight through.
+
+969
+00:33:30,222 --> 00:33:32,222
+Sometimes it gets kicked up a little bit.
+
+970
+00:33:32,382 --> 00:33:34,522
+Sometimes it gets kicked down a little bit.
+
+971
+00:33:35,282 --> 00:33:36,662
+And you might think that this
+
+972
+00:33:36,662 --> 00:33:38,042
+is more or less like throwing dice.
+
+973
+00:33:39,102 --> 00:33:39,782
+In fact,
+
+974
+00:33:39,782 --> 00:33:41,642
+if you look for the electron afterwards,
+
+975
+00:33:41,642 --> 00:33:43,482
+if you look for the electron out here,
+
+976
+00:33:43,482 --> 00:33:45,122
+after
+
+977
+00:33:45,122 --> 00:33:47,602
+you've given it time to pass through,
+
+978
+00:33:47,602 --> 00:33:50,682
+at the moment now let's just send one electron through.
+
+979
+00:33:51,321 --> 00:33:52,242
+One electron.
+
+980
+00:33:52,942 --> 00:33:54,882
+If we send one electron through...
+
+981
+00:33:56,581 --> 00:33:58,062
+It may get kicked up,
+
+982
+00:33:58,062 --> 00:33:59,462
+it may go straight through,
+
+983
+00:33:59,462 --> 00:34:01,022
+or it may get kicked down.
+
+984
+00:34:02,222 --> 00:34:04,442
+If we do the same experiment repeatedly,
+
+985
+00:34:04,442 --> 00:34:06,622
+which of course is the same thing as sending many
+
+986
+00:34:06,622 --> 00:34:07,422
+electrons through,
+
+987
+00:34:07,422 --> 00:34:09,242
+but if we do the same experiment repeatedly,
+
+988
+00:34:09,242 --> 00:34:11,482
+we'll find some go up,
+
+989
+00:34:11,482 --> 00:34:11,762
+some go
+
+990
+00:34:11,762 --> 00:34:12,062
+down,
+
+991
+00:34:12,062 --> 00:34:13,101
+some...
+
+992
+00:34:14,542 --> 00:34:16,702
+But now let's ask the following question.
+
+993
+00:34:16,942 --> 00:34:19,192
+Supposing after a period of
+
+994
+00:34:19,192 --> 00:34:21,442
+time we send an electron through.
+
+995
+00:34:21,661 --> 00:34:22,621
+One electron.
+
+996
+00:34:24,362 --> 00:34:24,802
+After.
+
+997
+00:34:24,802 --> 00:34:26,181
+After a certain period of time,
+
+998
+00:34:26,181 --> 00:34:27,922
+having given it enough time
+
+999
+00:34:27,922 --> 00:34:29,661
+to get to the other side,
+
+1000
+00:34:29,661 --> 00:34:30,482
+but
+
+1001
+00:34:30,482 --> 00:34:31,002
+not...
+
+1002
+00:34:31,002 --> 00:34:32,762
+Let's remove the screen over here.
+
+1003
+00:34:32,902 --> 00:34:34,042
+Let's remove the screen,
+
+1004
+00:34:34,042 --> 00:34:35,982
+send the electron through,
+
+1005
+00:34:35,982 --> 00:34:36,822
+it goes through,
+
+1006
+00:34:36,822 --> 00:34:38,641
+comes out someplace
+
+1007
+00:34:38,641 --> 00:34:39,161
+else,
+
+1008
+00:34:39,161 --> 00:34:42,101
+but we don't look at it.
+
+1009
+00:34:42,762 --> 00:34:46,502
+We don't bother detecting where the electron is.
+
+1010
+00:34:47,601 --> 00:34:48,161
+Instead,
+
+1011
+00:34:48,161 --> 00:34:51,202
+we just reverse the law of physics.
+
+1012
+00:34:51,462 --> 00:34:53,282
+We do what we did over here.
+
+1013
+00:34:54,222 --> 00:34:54,782
+Reverse.
+
+1014
+00:34:54,802 --> 00:34:56,121
+Reverse the direction of time,
+
+1015
+00:34:56,121 --> 00:34:56,742
+if you like.
+
+1016
+00:34:57,562 --> 00:34:58,882
+Can you really do this?
+
+1017
+00:34:59,062 --> 00:34:59,482
+Can you really...
+
+1018
+00:34:59,482 --> 00:35:01,742
+Is there really a button that you can push?
+
+1019
+00:35:02,102 --> 00:35:04,682
+Is there really something that you can do
+
+1020
+00:35:04,682 --> 00:35:07,262
+to a system that will reverse the motion?
+
+1021
+00:35:07,982 --> 00:35:08,502
+Yes,
+
+1022
+00:35:08,502 --> 00:35:10,382
+in many systems there is.
+
+1023
+00:35:10,622 --> 00:35:12,432
+In many systems we actually
+
+1024
+00:35:12,432 --> 00:35:14,242
+know how to manipulate the system,
+
+1025
+00:35:14,242 --> 00:35:16,602
+how to change magnetic fields,
+
+1026
+00:35:16,862 --> 00:35:18,772
+how to do things to a system
+
+1027
+00:35:18,772 --> 00:35:20,682
+of electrons so as to run it backward,
+
+1028
+00:35:20,682 --> 00:35:22,482
+so let's take it
+
+1029
+00:35:22,482 --> 00:35:23,722
+as a given.
+
+1030
+00:35:24,262 --> 00:35:24,782
+That's a given.
+
+1031
+00:35:24,782 --> 00:35:26,022
+But after a certain amount of time,
+
+1032
+00:35:26,022 --> 00:35:29,542
+somebody can press the button that reverses the law
+
+1033
+00:35:29,542 --> 00:35:30,182
+of physics,
+
+1034
+00:35:30,182 --> 00:35:33,082
+that reverses the direction of time,
+
+1035
+00:35:33,082 --> 00:35:33,782
+so to speak,
+
+1036
+00:35:33,782 --> 00:35:36,282
+and runs the system backward
+
+1037
+00:35:36,282 --> 00:35:38,522
+for the same length of time.
+
+1038
+00:35:39,062 --> 00:35:40,322
+What happens?
+
+1039
+00:35:41,182 --> 00:35:43,362
+Does that electron...
+
+1040
+00:35:44,422 --> 00:35:45,642
+We're not going to look at it,
+
+1041
+00:35:45,642 --> 00:35:47,862
+but do we later,
+
+1042
+00:35:47,862 --> 00:35:50,702
+after the end of the experiment,
+
+1043
+00:35:50,702 --> 00:35:52,442
+we allow
+
+1044
+00:35:52,442 --> 00:35:54,082
+it to evolve for a time t?
+
+1045
+00:35:54,242 --> 00:35:54,762
+Yes.
+
+1046
+00:35:54,782 --> 00:35:56,312
+And then we allow it to
+
+1047
+00:35:56,312 --> 00:35:57,842
+evolve backward for another time t?
+
+1048
+00:35:58,562 --> 00:35:59,742
+2t altogether.
+
+1049
+00:36:00,222 --> 00:36:02,412
+Do we find the electron
+
+1050
+00:36:02,412 --> 00:36:04,602
+moving backward along the original trajectory?
+
+1051
+00:36:05,422 --> 00:36:09,112
+Or do we find the probability the fluctuation's
+
+1052
+00:36:09,112 --> 00:36:12,802
+compounding and that after we turn it around,
+
+1053
+00:36:13,222 --> 00:36:15,522
+there's even worse fluctuation?
+
+1054
+00:36:17,562 --> 00:36:18,782
+Particle comes through,
+
+1055
+00:36:18,782 --> 00:36:19,962
+gets knocked up.
+
+1056
+00:36:20,242 --> 00:36:21,542
+We run it backward,
+
+1057
+00:36:21,542 --> 00:36:23,762
+it either gets knocked down or knocked up.
+
+1058
+00:36:24,082 --> 00:36:24,762
+Yes.
+
+1059
+00:36:24,782 --> 00:36:25,762
+Which is it?
+
+1060
+00:36:25,882 --> 00:36:29,302
+Does it reverse precisely along
+
+1061
+00:36:29,302 --> 00:36:32,722
+the original trajectory every single time,
+
+1062
+00:36:32,722 --> 00:36:34,342
+or does the
+
+1063
+00:36:34,342 --> 00:36:36,062
+statistical fluctuation,
+
+1064
+00:36:36,062 --> 00:36:39,522
+the imprecision,
+
+1065
+00:36:39,522 --> 00:36:43,122
+the unpredictability in one direction add
+
+1066
+00:36:43,122 --> 00:36:47,122
+to the unpredictability in going backward
+
+1067
+00:36:47,122 --> 00:36:51,122
+and make it even more unpredictable afterwards
+
+1068
+00:36:51,342 --> 00:36:52,622
+than it was to begin with?
+
+1069
+00:36:53,102 --> 00:36:53,902
+Okay.
+
+1070
+00:36:53,902 --> 00:36:56,002
+The answer is very curious.
+
+1071
+00:36:58,582 --> 00:37:01,722
+The answer is that if we don't look
+
+1072
+00:37:01,722 --> 00:37:04,862
+at the system in the intermediate stage after it's
+
+1073
+00:37:04,862 --> 00:37:06,102
+gone through the hole over here,
+
+1074
+00:37:06,102 --> 00:37:09,902
+don't look at it means don't interfere with the electron
+
+1075
+00:37:09,902 --> 00:37:10,742
+in any way.
+
+1076
+00:37:12,182 --> 00:37:15,092
+Take that screen away that might have converted
+
+1077
+00:37:15,092 --> 00:37:18,002
+that electron into a little pulse of light.
+
+1078
+00:37:18,702 --> 00:37:21,882
+Just remove any influence on the electron over here.
+
+1079
+00:37:22,642 --> 00:37:23,202
+Completely.
+
+1080
+00:37:23,902 --> 00:37:24,782
+Do not look at it.
+
+1081
+00:37:24,822 --> 00:37:25,962
+Do not interfere with it.
+
+1082
+00:37:26,022 --> 00:37:28,202
+Do not do anything to disturb it.
+
+1083
+00:37:28,442 --> 00:37:30,442
+But just run the law of physics backward.
+
+1084
+00:37:31,602 --> 00:37:35,482
+Then we will exactly every single time
+
+1085
+00:37:35,482 --> 00:37:39,362
+detect the electron running back along the reverse
+
+1086
+00:37:39,362 --> 00:37:41,902
+trajectory on the other side over here.
+
+1087
+00:37:42,342 --> 00:37:43,262
+In particular,
+
+1088
+00:37:43,262 --> 00:37:44,452
+we'll find the electron just
+
+1089
+00:37:44,452 --> 00:37:45,642
+going right back into the gun.
+
+1090
+00:37:47,982 --> 00:37:50,322
+What if somebody does look at the electron
+
+1091
+00:37:50,322 --> 00:37:52,662
+when it goes through to the side over here?
+
+1092
+00:37:53,502 --> 00:37:54,462
+For example,
+
+1093
+00:37:54,462 --> 00:37:56,362
+supposing somebody sets up an
+
+1094
+00:37:56,362 --> 00:37:58,262
+electron detector which detects where the
+
+1095
+00:37:58,262 --> 00:38:01,022
+electron is and then lets it go,
+
+1096
+00:38:01,022 --> 00:38:03,882
+having reversed the law of physics.
+
+1097
+00:38:04,522 --> 00:38:05,882
+We look at it and
+
+1098
+00:38:05,882 --> 00:38:07,242
+then reverse the law of physics.
+
+1099
+00:38:07,422 --> 00:38:07,602
+Now,
+
+1100
+00:38:07,602 --> 00:38:09,422
+in this case over here,
+
+1101
+00:38:09,422 --> 00:38:12,202
+the case where we're talking about classical coins,
+
+1102
+00:38:12,202 --> 00:38:14,042
+looking
+
+1103
+00:38:14,042 --> 00:38:16,822
+at a thing doesn't disturb it very much.
+
+1104
+00:38:17,142 --> 00:38:18,502
+If I have a coin,
+
+1105
+00:38:18,502 --> 00:38:21,462
+where's my coin?
+
+1106
+00:38:21,462 --> 00:38:22,442
+I've lost my coin.
+
+1107
+00:38:25,742 --> 00:38:26,362
+It's okay.
+
+1108
+00:38:26,462 --> 00:38:27,682
+It's only a Chilean peso.
+
+1109
+00:38:30,362 --> 00:38:31,842
+I've lost my Chilean peso.
+
+1110
+00:38:33,262 --> 00:38:35,462
+I think it was actually 100 pesos.
+
+1111
+00:38:36,802 --> 00:38:37,242
+Okay.
+
+1112
+00:38:37,322 --> 00:38:37,642
+Now,
+
+1113
+00:38:37,642 --> 00:38:38,942
+here's my Chilean peso.
+
+1114
+00:38:39,802 --> 00:38:42,042
+I put it down and I put it down heads.
+
+1115
+00:38:42,442 --> 00:38:43,342
+Don't look at it.
+
+1116
+00:38:44,182 --> 00:38:44,622
+Now,
+
+1117
+00:38:44,622 --> 00:38:45,202
+I look at it.
+
+1118
+00:38:45,602 --> 00:38:48,002
+It would be rather amazing if just the process
+
+1119
+00:38:48,002 --> 00:38:50,402
+of looking at it was capable of flipping it
+
+1120
+00:38:50,402 --> 00:38:51,322
+from heads to tails.
+
+1121
+00:38:51,462 --> 00:38:52,262
+Now,
+
+1122
+00:38:52,262 --> 00:38:52,522
+of course,
+
+1123
+00:38:52,522 --> 00:38:55,022
+if I look at it with
+
+1124
+00:38:55,022 --> 00:38:57,522
+an intense enough high frequency light beam,
+
+1125
+00:38:57,522 --> 00:38:58,842
+a beam of
+
+1126
+00:38:58,842 --> 00:38:59,222
+very,
+
+1127
+00:38:59,222 --> 00:39:00,422
+very energetic photons,
+
+1128
+00:39:00,422 --> 00:39:01,282
+sure enough,
+
+1129
+00:39:01,282 --> 00:39:05,322
+an energetic photon could hit the coin,
+
+1130
+00:39:05,322 --> 00:39:05,702
+knock
+
+1131
+00:39:05,702 --> 00:39:06,382
+it into the air,
+
+1132
+00:39:06,382 --> 00:39:07,042
+and spin it over.
+
+1133
+00:39:07,162 --> 00:39:07,662
+That's true.
+
+1134
+00:39:08,342 --> 00:39:09,922
+But in classical physics,
+
+1135
+00:39:09,922 --> 00:39:13,722
+you can look at an object and determine its state,
+
+1136
+00:39:13,722 --> 00:39:14,082
+determine
+
+1137
+00:39:14,082 --> 00:39:16,502
+the heads or tailsness of
+
+1138
+00:39:16,502 --> 00:39:18,922
+it with an arbitrarily gentle interaction.
+
+1139
+00:39:19,662 --> 00:39:20,542
+And so,
+
+1140
+00:39:20,542 --> 00:39:23,072
+by looking at a system in classical
+
+1141
+00:39:23,072 --> 00:39:25,602
+mechanics and looking at it with a very,
+
+1142
+00:39:25,602 --> 00:39:25,922
+very
+
+1143
+00:39:25,922 --> 00:39:27,762
+gentle apparatus or a very
+
+1144
+00:39:27,762 --> 00:39:29,602
+gentle photon or whatever you like,
+
+1145
+00:39:29,602 --> 00:39:32,422
+it does not entail disturbing
+
+1146
+00:39:32,422 --> 00:39:33,002
+the system.
+
+1147
+00:39:33,342 --> 00:39:36,302
+So if you look at it after you allowed
+
+1148
+00:39:36,302 --> 00:39:39,262
+it to go a million times and then reverse the
+
+1149
+00:39:39,262 --> 00:39:39,502
+law,
+
+1150
+00:39:39,502 --> 00:39:41,362
+it will have no effect,
+
+1151
+00:39:41,362 --> 00:39:45,782
+no detrimental effect on the experiment and you will come
+
+1152
+00:39:45,782 --> 00:39:48,902
+back to the same point that you started.
+
+1153
+00:39:48,902 --> 00:39:51,842
+So just looking at the
+
+1154
+00:39:51,842 --> 00:39:54,782
+system in between has no effect,
+
+1155
+00:39:54,782 --> 00:39:56,962
+does not necessarily have an
+
+1156
+00:39:56,962 --> 00:39:57,642
+effect on it,
+
+1157
+00:39:57,642 --> 00:40:01,422
+even though whoever looks at it
+
+1158
+00:40:01,422 --> 00:40:05,202
+can determine after a million units of
+
+1159
+00:40:05,202 --> 00:40:07,442
+time where the system is here,
+
+1160
+00:40:07,442 --> 00:40:09,492
+looking at it has no
+
+1161
+00:40:09,492 --> 00:40:11,542
+effect on what happens after you
+
+1162
+00:40:11,542 --> 00:40:12,102
+run it backward.
+
+1163
+00:40:13,102 --> 00:40:15,142
+Exactly the opposite in quantum mechanics.
+
+1164
+00:40:15,522 --> 00:40:17,102
+If you detect the object,
+
+1165
+00:40:17,102 --> 00:40:18,882
+if you do anything to detect the object,
+
+1166
+00:40:18,882 --> 00:40:18,882
+you will get the same
+
+1167
+00:40:18,882 --> 00:40:19,122
+result.
+
+1168
+00:40:19,122 --> 00:40:19,502
+If you detect the object,
+
+1169
+00:40:19,502 --> 00:40:22,262
+electron in this case,
+
+1170
+00:40:22,262 --> 00:40:24,542
+and then run the law of physics backward,
+
+1171
+00:40:25,402 --> 00:40:29,032
+what you'll find out is that
+
+1172
+00:40:29,032 --> 00:40:32,662
+the probabilistic character of it gets compounded.
+
+1173
+00:40:34,321 --> 00:40:34,762
+So,
+
+1174
+00:40:34,762 --> 00:40:37,242
+the fluctuation that sent it up here,
+
+1175
+00:40:37,242 --> 00:40:39,662
+when you run it backward and you now know
+
+1176
+00:40:39,662 --> 00:40:40,822
+that it came out up here,
+
+1177
+00:40:40,822 --> 00:40:42,162
+and you run it backward,
+
+1178
+00:40:42,162 --> 00:40:45,242
+it's likely to come out down here or up here
+
+1179
+00:40:45,242 --> 00:40:47,052
+and it will disturb the system in such a
+
+1180
+00:40:47,052 --> 00:40:48,862
+way that it will not be able to move.
+
+1181
+00:40:48,882 --> 00:40:51,622
+That the test of reversibility will fail.
+
+1182
+00:40:52,702 --> 00:40:54,022
+So this is curious,
+
+1183
+00:40:54,022 --> 00:40:57,602
+that whatever quantum logic is,
+
+1184
+00:40:57,602 --> 00:41:02,082
+the questions of the kind we're
+
+1185
+00:41:02,082 --> 00:41:07,062
+asking are deeply dependent on a ridiculous question.
+
+1186
+00:41:07,302 --> 00:41:09,122
+Did somebody look at the system
+
+1187
+00:41:09,122 --> 00:41:10,942
+during the course of its evolution?
+
+1188
+00:41:11,942 --> 00:41:13,322
+And as I said,
+
+1189
+00:41:13,322 --> 00:41:13,582
+of course,
+
+1190
+00:41:13,582 --> 00:41:15,402
+looking at a system can disturb it,
+
+1191
+00:41:15,402 --> 00:41:17,662
+but in classical physics we
+
+1192
+00:41:17,662 --> 00:41:18,722
+can look at a system...
+
+1193
+00:41:18,882 --> 00:41:20,362
+...without disturbing it.
+
+1194
+00:41:20,482 --> 00:41:21,622
+We can look at a system,
+
+1195
+00:41:21,622 --> 00:41:22,502
+detect the system,
+
+1196
+00:41:22,502 --> 00:41:25,722
+measure the system as gently as we like,
+
+1197
+00:41:25,722 --> 00:41:26,962
+arbitrarily
+
+1198
+00:41:26,962 --> 00:41:29,722
+gently and have arbitrarily small effect on it,
+
+1199
+00:41:29,722 --> 00:41:31,922
+so that running it backwards will be exactly
+
+1200
+00:41:31,922 --> 00:41:33,242
+as if we didn't look at it.
+
+1201
+00:41:33,402 --> 00:41:34,762
+Not so in quantum mechanics.
+
+1202
+00:41:35,662 --> 00:41:38,272
+Determining the state of a system is never
+
+1203
+00:41:38,272 --> 00:41:40,882
+a small thing to do to the system.
+
+1204
+00:41:41,402 --> 00:41:43,912
+And this is an example
+
+1205
+00:41:43,912 --> 00:41:46,422
+that completely destroys the experiment.
+
+1206
+00:41:47,222 --> 00:41:48,762
+The two-slit experiment...
+
+1207
+00:41:48,762 --> 00:41:57,002
+...has also a similar story that goes with it.
+
+1208
+00:42:01,822 --> 00:42:04,932
+The story that I told you a moment
+
+1209
+00:42:04,932 --> 00:42:08,042
+ago about the interference pattern and the destructive
+
+1210
+00:42:08,042 --> 00:42:11,712
+interference is only true if nobody
+
+1211
+00:42:11,712 --> 00:42:15,382
+records which way the electron went through.
+
+1212
+00:42:15,462 --> 00:42:16,342
+Now when I say nobody,
+
+1213
+00:42:16,342 --> 00:42:18,642
+I don't mean a human being necessarily.
+
+1214
+00:42:18,762 --> 00:42:22,652
+I mean that nothing in the environment
+
+1215
+00:42:22,652 --> 00:42:26,542
+of the experiment records and remembers which
+
+1216
+00:42:26,542 --> 00:42:27,842
+way the electron went through.
+
+1217
+00:42:28,042 --> 00:42:29,162
+In other words,
+
+1218
+00:42:29,162 --> 00:42:30,262
+after the experiment,
+
+1219
+00:42:30,262 --> 00:42:32,682
+there is nothing in the environment of this experiment
+
+1220
+00:42:33,322 --> 00:42:36,482
+which has recorded which way the electron went through,
+
+1221
+00:42:36,482 --> 00:42:37,462
+nothing in here,
+
+1222
+00:42:37,462 --> 00:42:38,682
+only...
+
+1223
+00:42:38,962 --> 00:42:39,282
+No,
+
+1224
+00:42:39,282 --> 00:42:42,122
+this also hasn't recorded where the electron went through.
+
+1225
+00:42:42,262 --> 00:42:45,042
+If nothing records where the electron goes through,
+
+1226
+00:42:45,042 --> 00:42:47,342
+then there's an interference pattern.
+
+1227
+00:42:48,042 --> 00:42:48,682
+But...
+
+1228
+00:42:48,762 --> 00:42:52,202
+...if you were to put a little demon over there,
+
+1229
+00:42:52,202 --> 00:42:53,282
+a real physical demon,
+
+1230
+00:42:53,282 --> 00:42:54,062
+now a real physical
+
+1231
+00:42:54,062 --> 00:42:55,722
+demon could be another electron,
+
+1232
+00:42:55,722 --> 00:42:59,862
+it could be some gas in the apparatus,
+
+1233
+00:42:59,862 --> 00:43:00,902
+some gas molecules
+
+1234
+00:43:00,902 --> 00:43:01,842
+in the apparatus,
+
+1235
+00:43:01,842 --> 00:43:04,322
+whatever it is,
+
+1236
+00:43:04,322 --> 00:43:10,082
+in such a way that something records which way the
+
+1237
+00:43:10,082 --> 00:43:11,082
+electron went through.
+
+1238
+00:43:12,241 --> 00:43:14,262
+Something remembers it afterwards.
+
+1239
+00:43:14,762 --> 00:43:18,742
+Perhaps a molecule over here gets disturbed.
+
+1240
+00:43:19,382 --> 00:43:23,022
+Gets excited if the electron goes through the upper hole.
+
+1241
+00:43:23,922 --> 00:43:28,122
+Gets excited and changes the character of that molecule.
+
+1242
+00:43:28,442 --> 00:43:30,022
+If it goes through the lower hole,
+
+1243
+00:43:30,022 --> 00:43:32,222
+it changes the character of a different molecule.
+
+1244
+00:43:32,662 --> 00:43:34,142
+So looking afterwards,
+
+1245
+00:43:34,142 --> 00:43:35,762
+after the electron went through,
+
+1246
+00:43:35,762 --> 00:43:36,982
+you can tell which hole the
+
+1247
+00:43:36,982 --> 00:43:37,842
+electron went through,
+
+1248
+00:43:37,842 --> 00:43:40,542
+then the interference pattern is
+
+1249
+00:43:40,542 --> 00:43:43,242
+destroyed and the answer is exactly
+
+1250
+00:43:43,242 --> 00:43:47,182
+the same as the classical answer.
+
+1251
+00:43:48,122 --> 00:43:48,722
+Namely,
+
+1252
+00:43:48,722 --> 00:43:48,722
+what?
+
+1253
+00:43:48,742 --> 00:43:48,862
+Namely,
+
+1254
+00:43:48,862 --> 00:43:50,102
+the probabilities add.
+
+1255
+00:43:50,782 --> 00:43:53,122
+Just exactly as in classical physics.
+
+1256
+00:43:54,342 --> 00:43:55,422
+So again,
+
+1257
+00:43:55,422 --> 00:43:58,592
+there's no way to record whether the
+
+1258
+00:43:58,592 --> 00:44:01,762
+electron went through the upper hole or
+
+1259
+00:44:01,762 --> 00:44:05,882
+the lower hole without seriously disturbing the experiment.
+
+1260
+00:44:06,302 --> 00:44:09,102
+Without so seriously disturbing the experiment
+
+1261
+00:44:09,102 --> 00:44:11,902
+that you drastically change the conclusion.
+
+1262
+00:44:13,122 --> 00:44:14,662
+That's a quantum...
+
+1263
+00:44:15,741 --> 00:44:16,122
+That's...
+
+1264
+00:44:16,122 --> 00:44:18,112
+That's roughly speaking the
+
+1265
+00:44:18,112 --> 00:44:20,102
+general character of quantum mechanics.
+
+1266
+00:44:20,402 --> 00:44:24,432
+You cannot do measurements on systems without
+
+1267
+00:44:24,432 --> 00:44:28,462
+disturbing them and disturbing them can change
+
+1268
+00:44:28,462 --> 00:44:30,242
+completely the character of a...
+
+1269
+00:44:30,242 --> 00:44:30,362
+Yeah,
+
+1270
+00:44:30,362 --> 00:44:30,642
+question.
+
+1271
+00:44:31,562 --> 00:44:34,682
+If a particle goes through the hole,
+
+1272
+00:44:34,682 --> 00:44:36,022
+let's say down,
+
+1273
+00:44:36,022 --> 00:44:38,682
+does that mean that there's some
+
+1274
+00:44:38,682 --> 00:44:40,442
+momentum to the plate up?
+
+1275
+00:44:40,742 --> 00:44:41,442
+Yeah,
+
+1276
+00:44:41,442 --> 00:44:44,762
+that's a very,
+
+1277
+00:44:44,762 --> 00:44:45,582
+very good question.
+
+1278
+00:44:45,722 --> 00:44:46,102
+That's a very,
+
+1279
+00:44:46,102 --> 00:44:46,102
+very good question.
+
+1280
+00:44:46,102 --> 00:44:46,322
+Excellent,
+
+1281
+00:44:46,322 --> 00:44:47,522
+outstanding question.
+
+1282
+00:44:50,102 --> 00:44:51,162
+Wish I knew the answer.
+
+1283
+00:44:51,262 --> 00:44:51,362
+No,
+
+1284
+00:44:51,362 --> 00:44:51,902
+I know the answer.
+
+1285
+00:44:52,462 --> 00:44:53,342
+Should I do it?
+
+1286
+00:44:53,542 --> 00:44:54,042
+Yeah,
+
+1287
+00:44:54,042 --> 00:44:55,442
+I will.
+
+1288
+00:44:56,202 --> 00:44:59,212
+The answer has to do with the
+
+1289
+00:44:59,212 --> 00:45:02,222
+probability distribution for the position of the...
+
+1290
+00:45:04,562 --> 00:45:06,102
+Let's call this the detector.
+
+1291
+00:45:06,782 --> 00:45:08,122
+Let's call this the detector.
+
+1292
+00:45:08,402 --> 00:45:08,662
+Okay.
+
+1293
+00:45:08,902 --> 00:45:09,402
+Now,
+
+1294
+00:45:09,402 --> 00:45:13,622
+if the detector is very well localized in space,
+
+1295
+00:45:13,622 --> 00:45:15,582
+as it would be if it were a heavy,
+
+1296
+00:45:15,582 --> 00:45:17,342
+massive classical detector,
+
+1297
+00:45:17,342 --> 00:45:20,622
+then by the uncertainty principle,
+
+1298
+00:45:20,622 --> 00:45:22,382
+which we haven't talked about yet,
+
+1299
+00:45:22,382 --> 00:45:23,642
+if...
+
+1300
+00:45:24,462 --> 00:45:25,342
+We're going to...
+
+1301
+00:45:25,342 --> 00:45:27,222
+Let me skip ahead and imagine that
+
+1302
+00:45:27,222 --> 00:45:29,102
+we have talked about the uncertainty principle.
+
+1303
+00:45:29,782 --> 00:45:31,322
+That's a sophisticated question,
+
+1304
+00:45:31,322 --> 00:45:34,282
+so I suspect you've thought about it a little bit.
+
+1305
+00:45:34,442 --> 00:45:37,222
+If the position of this detector,
+
+1306
+00:45:37,222 --> 00:45:38,842
+the up-down position of this detector,
+
+1307
+00:45:38,842 --> 00:45:39,642
+delta x,
+
+1308
+00:45:39,642 --> 00:45:41,142
+is very,
+
+1309
+00:45:41,182 --> 00:45:41,742
+very small,
+
+1310
+00:45:41,742 --> 00:45:45,562
+that means that the uncertainty in the detector is very,
+
+1311
+00:45:45,562 --> 00:45:45,562
+very small.
+
+1312
+00:45:45,562 --> 00:45:47,362
+And the momentum of the detector is large.
+
+1313
+00:45:48,022 --> 00:45:48,682
+Okay?
+
+1314
+00:45:49,462 --> 00:45:52,262
+That means if I were to plot the
+
+1315
+00:45:52,262 --> 00:45:55,062
+probability distribution of the momentum of the detector,
+
+1316
+00:45:56,232 --> 00:45:58,047
+let's plot the probability distribution
+
+1317
+00:45:58,047 --> 00:45:59,862
+of the momentum of the detector,
+
+1318
+00:45:59,862 --> 00:46:01,282
+it's rather
+
+1319
+00:46:01,282 --> 00:46:05,622
+broad because for a heavy detector,
+
+1320
+00:46:05,622 --> 00:46:08,362
+its location is so well defined.
+
+1321
+00:46:09,232 --> 00:46:09,722
+All right?
+
+1322
+00:46:09,762 --> 00:46:13,722
+Now the electron comes through and kicks the plate...
+
+1323
+00:46:13,722 --> 00:46:15,022
+Kicks this thing a little bit.
+
+1324
+00:46:15,022 --> 00:46:16,742
+It gives it a small kick.
+
+1325
+00:46:17,082 --> 00:46:18,182
+And what does it do?
+
+1326
+00:46:18,602 --> 00:46:22,082
+It shifts this probability distribution a small amount.
+
+1327
+00:46:24,042 --> 00:46:27,292
+But unless the probability distribution has
+
+1328
+00:46:27,292 --> 00:46:30,542
+been shifted by something approximately equal
+
+1329
+00:46:30,542 --> 00:46:31,222
+to its width,
+
+1330
+00:46:31,222 --> 00:46:33,152
+then you can't tell afterwards whether
+
+1331
+00:46:33,152 --> 00:46:35,082
+it got a kick or not.
+
+1332
+00:46:36,002 --> 00:46:37,202
+You have to be...
+
+1333
+00:46:37,902 --> 00:46:38,962
+In order to be able to
+
+1334
+00:46:38,962 --> 00:46:40,022
+be certain that it got a kick,
+
+1335
+00:46:40,022 --> 00:46:41,882
+you have to kick it by an amount
+
+1336
+00:46:41,882 --> 00:46:44,022
+large by comparison with the uncertainty.
+
+1337
+00:46:45,022 --> 00:46:45,242
+All right?
+
+1338
+00:46:45,262 --> 00:46:47,012
+So it's the uncertainty principle
+
+1339
+00:46:47,012 --> 00:46:48,762
+that comes in and rescues you,
+
+1340
+00:46:48,762 --> 00:46:51,882
+or rescues me,
+
+1341
+00:46:51,882 --> 00:46:52,902
+and makes
+
+1342
+00:46:52,902 --> 00:46:55,142
+sure that the interference pattern is not destroyed.
+
+1343
+00:46:56,142 --> 00:46:56,742
+Okay?
+
+1344
+00:46:56,882 --> 00:46:58,102
+It's the uncertainty principle itself.
+
+1345
+00:46:58,522 --> 00:47:00,332
+So let's go to the
+
+1346
+00:47:00,332 --> 00:47:02,142
+uncertainty principle since it's been raised,
+
+1347
+00:47:02,142 --> 00:47:03,342
+since I raised it.
+
+1348
+00:47:06,922 --> 00:47:10,962
+The uncertainty principle is another factor
+
+1349
+00:47:10,962 --> 00:47:15,002
+in quantum mechanics which is extremely important.
+
+1350
+00:47:15,022 --> 00:47:18,982
+It's extremely different than classical physics,
+
+1351
+00:47:18,982 --> 00:47:20,302
+conceptually very different.
+
+1352
+00:47:20,422 --> 00:47:21,812
+I know we haven't talked about
+
+1353
+00:47:21,812 --> 00:47:23,202
+what the uncertainty principle is yet,
+
+1354
+00:47:23,202 --> 00:47:25,902
+but let's discuss it anyway.
+
+1355
+00:47:26,942 --> 00:47:28,002
+Let's jump ahead.
+
+1356
+00:47:29,822 --> 00:47:35,562
+My main motivation now is to explain the strangeness of...
+
+1357
+00:47:35,562 --> 00:47:37,822
+Not to explain the strangeness of quantum mechanics,
+
+1358
+00:47:37,822 --> 00:47:39,282
+but to point some fingers at the
+
+1359
+00:47:39,282 --> 00:47:40,542
+strangeness of quantum mechanics.
+
+1360
+00:47:41,622 --> 00:47:44,702
+So that you see that it really is...
+
+1361
+00:47:45,022 --> 00:47:47,922
+Fundamentally logically different than classical mechanics.
+
+1362
+00:47:48,662 --> 00:47:49,342
+Logically different.
+
+1363
+00:47:49,622 --> 00:47:52,142
+The whole logic of quantum mechanics is different.
+
+1364
+00:47:52,702 --> 00:47:53,302
+Okay.
+
+1365
+00:47:54,002 --> 00:47:56,732
+It's easy to imagine a
+
+1366
+00:47:56,732 --> 00:47:59,462
+bit of uncertainty in classical physics.
+
+1367
+00:47:59,482 --> 00:48:00,202
+As I said,
+
+1368
+00:48:00,202 --> 00:48:03,092
+the coin throwing or the dice
+
+1369
+00:48:03,092 --> 00:48:05,982
+throwing deity who sticks his finger into
+
+1370
+00:48:05,982 --> 00:48:07,542
+the system and gives it a push this way,
+
+1371
+00:48:07,542 --> 00:48:08,142
+a push that way,
+
+1372
+00:48:08,142 --> 00:48:08,642
+and so forth.
+
+1373
+00:48:09,122 --> 00:48:09,822
+And that way,
+
+1374
+00:48:09,822 --> 00:48:13,562
+things after a short period of time become uncertain.
+
+1375
+00:48:15,322 --> 00:48:18,292
+And it's easy to imagine that that
+
+1376
+00:48:18,292 --> 00:48:21,262
+uncertainty can affect both position and momentum.
+
+1377
+00:48:22,242 --> 00:48:23,722
+And if you wait a little while,
+
+1378
+00:48:23,722 --> 00:48:26,622
+both the position and the momentum may be uncertain.
+
+1379
+00:48:27,662 --> 00:48:28,182
+In fact,
+
+1380
+00:48:28,182 --> 00:48:30,372
+if you wait a little bit more than
+
+1381
+00:48:30,372 --> 00:48:32,562
+a tiny fraction of a second for a particle,
+
+1382
+00:48:32,982 --> 00:48:36,142
+you might discover that inevitably both the
+
+1383
+00:48:36,142 --> 00:48:39,302
+position and the momentum get jostled about,
+
+1384
+00:48:39,542 --> 00:48:42,272
+and so that there's a good deal or a
+
+1385
+00:48:42,272 --> 00:48:45,002
+certain amount of uncertainty in position and uncertainty in momentum.
+
+1386
+00:48:47,102 --> 00:48:50,442
+But you would be unlikely to say
+
+1387
+00:48:50,442 --> 00:48:53,782
+that that uncertainty in position and momentum is...
+
+1388
+00:48:55,122 --> 00:48:56,562
+What's the word I'm looking for?
+
+1389
+00:48:58,802 --> 00:48:59,282
+Well,
+
+1390
+00:48:59,282 --> 00:48:59,922
+first of all,
+
+1391
+00:48:59,922 --> 00:49:01,922
+that's fundamental in any sense.
+
+1392
+00:49:02,062 --> 00:49:03,302
+You would say it was a
+
+1393
+00:49:03,302 --> 00:49:04,542
+result of hitting the system randomly.
+
+1394
+00:49:05,162 --> 00:49:06,692
+But I think most of us
+
+1395
+00:49:06,692 --> 00:49:08,222
+would agree that under those circumstances,
+
+1396
+00:49:08,222 --> 00:49:10,922
+it was a bit of laziness
+
+1397
+00:49:10,922 --> 00:49:14,562
+that didn't allow us to watch the particle carefully enough.
+
+1398
+00:49:15,022 --> 00:49:16,622
+To see what exactly the
+
+1399
+00:49:16,622 --> 00:49:18,222
+momentum was and the position was.
+
+1400
+00:49:18,362 --> 00:49:19,682
+We always imagine,
+
+1401
+00:49:19,682 --> 00:49:22,042
+in that kind of classical context,
+
+1402
+00:49:22,382 --> 00:49:25,332
+an example of that classical context would be
+
+1403
+00:49:25,332 --> 00:49:28,282
+the random walk of a Brownian moving particle.
+
+1404
+00:49:29,822 --> 00:49:30,402
+So,
+
+1405
+00:49:30,402 --> 00:49:33,082
+if we watch a whole bunch of particles,
+
+1406
+00:49:33,082 --> 00:49:35,822
+a whole bunch of particles might form a cloud,
+
+1407
+00:49:36,102 --> 00:49:37,682
+and that cloud might spread,
+
+1408
+00:49:37,682 --> 00:49:40,182
+and perhaps even the velocity of the cloud,
+
+1409
+00:49:40,362 --> 00:49:44,522
+or the cloud describing the velocities might also spread.
+
+1410
+00:49:45,022 --> 00:49:47,242
+But every one of those particles,
+
+1411
+00:49:47,242 --> 00:49:49,162
+if we cared to,
+
+1412
+00:49:49,422 --> 00:49:52,102
+we could look at with better precision,
+
+1413
+00:49:52,102 --> 00:49:53,462
+better and better precision,
+
+1414
+00:49:53,742 --> 00:49:55,982
+we could look at it gently,
+
+1415
+00:49:55,982 --> 00:49:58,742
+as gently as we liked in classical physics,
+
+1416
+00:49:59,022 --> 00:50:01,302
+and determine both its
+
+1417
+00:50:01,302 --> 00:50:03,582
+velocity and its position simultaneously.
+
+1418
+00:50:05,282 --> 00:50:07,332
+Certainly that would be true
+
+1419
+00:50:07,332 --> 00:50:09,382
+of a classical Brownian motion particle
+
+1420
+00:50:10,022 --> 00:50:14,522
+that was being knocked around by ordinary collisions,
+
+1421
+00:50:15,022 --> 00:50:17,642
+with some gas or something like that.
+
+1422
+00:50:18,122 --> 00:50:18,782
+In principle,
+
+1423
+00:50:18,782 --> 00:50:20,562
+we could just get ourselves a better microscope,
+
+1424
+00:50:22,402 --> 00:50:23,322
+better accuracy,
+
+1425
+00:50:23,322 --> 00:50:25,222
+better precision,
+
+1426
+00:50:25,222 --> 00:50:26,462
+better resolving power,
+
+1427
+00:50:27,842 --> 00:50:29,602
+and do it very gently,
+
+1428
+00:50:29,602 --> 00:50:31,922
+so as not to disturb the system.
+
+1429
+00:50:32,102 --> 00:50:33,182
+When we measure the position,
+
+1430
+00:50:33,182 --> 00:50:35,042
+we don't want to jostle the momentum.
+
+1431
+00:50:35,242 --> 00:50:36,222
+When we measure the momentum,
+
+1432
+00:50:36,222 --> 00:50:38,342
+we don't want to do something funny to the position,
+
+1433
+00:50:38,542 --> 00:50:40,742
+and we just measure it gently enough,
+
+1434
+00:50:40,742 --> 00:50:43,582
+so that we measure both the position and the momentum.
+
+1435
+00:50:45,022 --> 00:50:46,342
+This would be expected to
+
+1436
+00:50:46,342 --> 00:50:47,662
+be true for a Brownian particle.
+
+1437
+00:50:48,242 --> 00:50:50,252
+So the uncertainty in position
+
+1438
+00:50:50,252 --> 00:50:52,262
+and momentum is something which,
+
+1439
+00:50:52,262 --> 00:50:52,922
+in a certain sense,
+
+1440
+00:50:53,062 --> 00:50:54,442
+is due to our own
+
+1441
+00:50:54,442 --> 00:50:55,822
+laziness and not spending enough money
+
+1442
+00:50:55,822 --> 00:50:58,082
+and buying a good enough detector and so forth
+
+1443
+00:50:58,842 --> 00:51:01,172
+to be able to detect both the
+
+1444
+00:51:01,172 --> 00:51:03,502
+position and the velocity at the same time.
+
+1445
+00:51:05,982 --> 00:51:07,122
+On the other hand,
+
+1446
+00:51:07,122 --> 00:51:08,102
+in quantum mechanics,
+
+1447
+00:51:08,102 --> 00:51:12,082
+there's a really fundamental obstruction,
+
+1448
+00:51:12,682 --> 00:51:14,202
+a logical obstruction,
+
+1449
+00:51:15,022 --> 00:51:15,982
+a deep obstruction,
+
+1450
+00:51:16,382 --> 00:51:17,342
+to knowing,
+
+1451
+00:51:17,342 --> 00:51:19,812
+to ever being able to measure both
+
+1452
+00:51:19,812 --> 00:51:22,282
+the position and the velocity of a particle.
+
+1453
+00:51:23,622 --> 00:51:25,302
+I'm going to work it out for
+
+1454
+00:51:25,302 --> 00:51:26,982
+you and show you how it works.
+
+1455
+00:51:27,042 --> 00:51:28,242
+I'm going to show you
+
+1456
+00:51:28,242 --> 00:51:29,442
+how Heisenberg first thought about it.
+
+1457
+00:51:33,302 --> 00:51:33,862
+Well,
+
+1458
+00:51:33,862 --> 00:51:35,292
+he first thought about
+
+1459
+00:51:35,292 --> 00:51:36,722
+it entirely through abstract mathematics.
+
+1460
+00:51:37,362 --> 00:51:38,222
+For us,
+
+1461
+00:51:38,222 --> 00:51:39,122
+that's going to come later.
+
+1462
+00:51:39,722 --> 00:51:40,562
+But then,
+
+1463
+00:51:40,562 --> 00:51:42,202
+when questioned by Bohr,
+
+1464
+00:51:42,922 --> 00:51:44,102
+what are you talking about,
+
+1465
+00:51:44,102 --> 00:51:45,582
+that you can't measure the
+
+1466
+00:51:45,582 --> 00:51:47,062
+position and the velocity simultaneously?
+
+1467
+00:51:47,722 --> 00:51:50,562
+Your mathematics is a crock of baloney.
+
+1468
+00:51:50,682 --> 00:51:53,152
+Don't tell me that x times p
+
+1469
+00:51:53,152 --> 00:51:55,622
+is not equal to p times x.
+
+1470
+00:51:55,762 --> 00:51:56,002
+Come on,
+
+1471
+00:51:56,002 --> 00:51:57,142
+it's like saying 3 times
+
+1472
+00:51:57,142 --> 00:51:58,282
+5 is not 5 times 3.
+
+1473
+00:51:58,442 --> 00:51:59,122
+Did I write it right?
+
+1474
+00:51:59,122 --> 00:51:59,422
+Yeah.
+
+1475
+00:51:59,742 --> 00:52:00,662
+Not equal to.
+
+1476
+00:52:01,842 --> 00:52:03,422
+Don't tell me such nonsense stories.
+
+1477
+00:52:03,702 --> 00:52:04,462
+Give me some physics.
+
+1478
+00:52:05,282 --> 00:52:08,762
+And so Heisenberg cooked up his experiment to show,
+
+1479
+00:52:09,922 --> 00:52:11,522
+to illustrate the fact,
+
+1480
+00:52:11,682 --> 00:52:12,342
+not show,
+
+1481
+00:52:12,342 --> 00:52:13,502
+but illustrate the fact,
+
+1482
+00:52:14,102 --> 00:52:14,442
+that there was a good,
+
+1483
+00:52:14,442 --> 00:52:15,002
+deep,
+
+1484
+00:52:15,002 --> 00:52:16,982
+consistent reason
+
+1485
+00:52:16,982 --> 00:52:19,782
+why it's impossible to ever,
+
+1486
+00:52:19,782 --> 00:52:20,282
+ever,
+
+1487
+00:52:20,282 --> 00:52:21,442
+under any circumstances,
+
+1488
+00:52:22,301 --> 00:52:24,201
+simultaneously determine the position and
+
+1489
+00:52:24,201 --> 00:52:26,102
+the momentum of an object.
+
+1490
+00:52:26,462 --> 00:52:28,122
+So let's go through that a little bit.
+
+1491
+00:52:28,382 --> 00:52:30,172
+It has a similar character to some
+
+1492
+00:52:30,172 --> 00:52:31,962
+of the other illustrations that I've given here.
+
+1493
+00:52:38,782 --> 00:52:41,352
+What Heisenberg and Bohr and
+
+1494
+00:52:41,352 --> 00:52:43,922
+Einstein and all those people knew,
+
+1495
+00:52:45,102 --> 00:52:46,062
+around 1926,
+
+1496
+00:52:46,882 --> 00:52:48,422
+was the property of photons.
+
+1497
+00:52:48,862 --> 00:52:49,482
+In fact,
+
+1498
+00:52:49,482 --> 00:52:51,112
+whenever they thought about measuring
+
+1499
+00:52:51,112 --> 00:52:52,742
+the properties of a particle,
+
+1500
+00:52:53,002 --> 00:52:54,262
+they were always thinking,
+
+1501
+00:52:54,262 --> 00:52:54,922
+roughly speaking,
+
+1502
+00:52:54,922 --> 00:52:56,642
+of looking at it under a microscope,
+
+1503
+00:52:57,302 --> 00:52:59,542
+detecting it by bombarding it with photons.
+
+1504
+00:52:59,782 --> 00:52:59,882
+Now,
+
+1505
+00:52:59,882 --> 00:53:01,682
+it doesn't matter whether they were photons or not,
+
+1506
+00:53:01,742 --> 00:53:03,822
+it's just that they were thinking about microscopes,
+
+1507
+00:53:03,822 --> 00:53:06,052
+and they were thinking in a
+
+1508
+00:53:06,052 --> 00:53:08,282
+language where you optically look at things.
+
+1509
+00:53:08,562 --> 00:53:09,882
+It doesn't have to be optical,
+
+1510
+00:53:09,882 --> 00:53:11,302
+but this is what they were thinking.
+
+1511
+00:53:11,682 --> 00:53:13,582
+So Heisenberg imagined putting,
+
+1512
+00:53:14,102 --> 00:53:15,502
+his particle under a microscope,
+
+1513
+00:53:15,782 --> 00:53:18,822
+and detecting its position and its velocity,
+
+1514
+00:53:19,042 --> 00:53:20,822
+and seeing what he could learn.
+
+1515
+00:53:22,362 --> 00:53:22,922
+Okay.
+
+1516
+00:53:23,162 --> 00:53:26,622
+The measurement involved interacting with
+
+1517
+00:53:26,622 --> 00:53:30,082
+a particle with a photon.
+
+1518
+00:53:30,322 --> 00:53:32,642
+A photon would be the thing which would
+
+1519
+00:53:32,642 --> 00:53:34,962
+be used to determine the position of momentum.
+
+1520
+00:53:35,602 --> 00:53:36,462
+In other words,
+
+1521
+00:53:36,462 --> 00:53:40,142
+looking at it really meant hitting it with some light,
+
+1522
+00:53:40,342 --> 00:53:42,042
+letting the light scatter off,
+
+1523
+00:53:42,202 --> 00:53:43,862
+and then focusing the light wave.
+
+1524
+00:53:44,102 --> 00:53:46,112
+Focusing the light waves in order
+
+1525
+00:53:46,112 --> 00:53:48,122
+to see exactly where the particle was.
+
+1526
+00:53:48,382 --> 00:53:49,992
+Just as you would do it for
+
+1527
+00:53:49,992 --> 00:53:51,602
+a billiard ball or for anything else.
+
+1528
+00:53:52,082 --> 00:53:53,722
+Focus the light on your retina,
+
+1529
+00:53:53,822 --> 00:53:55,162
+focus the light on some screen,
+
+1530
+00:53:55,382 --> 00:53:57,922
+and reconstruct the position of the particle.
+
+1531
+00:53:59,442 --> 00:54:01,682
+That was what they were thinking about.
+
+1532
+00:54:02,142 --> 00:54:02,602
+Okay.
+
+1533
+00:54:02,662 --> 00:54:03,002
+Now,
+
+1534
+00:54:03,002 --> 00:54:05,572
+here's what Einstein and de Broglie
+
+1535
+00:54:05,572 --> 00:54:08,142
+and others had taught them about photons.
+
+1536
+00:54:09,522 --> 00:54:10,522
+First of all,
+
+1537
+00:54:10,522 --> 00:54:13,822
+Einstein had told them that the energy of a photon,
+
+1538
+00:54:14,102 --> 00:54:16,962
+is equal to Planck's constant,
+
+1539
+00:54:18,302 --> 00:54:20,402
+times the frequency of the light,
+
+1540
+00:54:21,002 --> 00:54:22,142
+describing the photon.
+
+1541
+00:54:24,002 --> 00:54:28,982
+This is equivalent to Planck's other constant,
+
+1542
+00:54:28,982 --> 00:54:29,962
+h-bar,
+
+1543
+00:54:30,822 --> 00:54:33,162
+times the angular frequency where,
+
+1544
+00:54:33,282 --> 00:54:35,882
+f stands for the frequency of a wave,
+
+1545
+00:54:35,942 --> 00:54:37,262
+number of cycles per second,
+
+1546
+00:54:37,262 --> 00:54:38,662
+measured in hertz.
+
+1547
+00:54:39,582 --> 00:54:40,182
+Okay.
+
+1548
+00:54:40,282 --> 00:54:41,662
+Usually a frequency of a light
+
+1549
+00:54:41,662 --> 00:54:43,042
+wave is a lot of hertz.
+
+1550
+00:54:43,042 --> 00:54:43,682
+How many hertz?
+
+1551
+00:54:46,102 --> 00:54:46,782
+How many?
+
+1552
+00:54:47,742 --> 00:54:49,662
+10 to the 15th for ordinary light.
+
+1553
+00:54:49,782 --> 00:54:50,422
+But it's just a number,
+
+1554
+00:54:50,422 --> 00:54:51,462
+10 to the 15th hertz.
+
+1555
+00:54:52,042 --> 00:54:53,762
+Omega is the same as the
+
+1556
+00:54:53,762 --> 00:54:55,482
+frequency except multiplied by 2 pi.
+
+1557
+00:55:00,182 --> 00:55:03,232
+It's the angular frequency instead of
+
+1558
+00:55:03,232 --> 00:55:06,282
+the number of cycles per second.
+
+1559
+00:55:07,022 --> 00:55:07,542
+Alright?
+
+1560
+00:55:07,682 --> 00:55:11,002
+And h-bar is just h divided by 2 pi.
+
+1561
+00:55:11,262 --> 00:55:12,702
+So these are the same expressions.
+
+1562
+00:55:13,202 --> 00:55:15,002
+I'll use this one over here for the moment.
+
+1563
+00:55:15,382 --> 00:55:17,142
+Energy is equal to h times frequency.
+
+1564
+00:55:18,442 --> 00:55:21,402
+That's something that was known by Einstein.
+
+1565
+00:55:23,681 --> 00:55:24,081
+Now,
+
+1566
+00:55:24,081 --> 00:55:26,702
+here's another fact about a beam of light.
+
+1567
+00:55:27,662 --> 00:55:29,502
+Beams of light have not only energy,
+
+1568
+00:55:29,502 --> 00:55:30,502
+but they also have momentum.
+
+1569
+00:55:31,442 --> 00:55:33,212
+You can take a beam of light and
+
+1570
+00:55:33,212 --> 00:55:34,982
+shine it on something and it will warm it.
+
+1571
+00:55:35,042 --> 00:55:35,662
+It will heat it.
+
+1572
+00:55:35,842 --> 00:55:37,222
+That tells you it has energy.
+
+1573
+00:55:37,662 --> 00:55:39,582
+But you can also take a beam of light,
+
+1574
+00:55:40,102 --> 00:55:42,122
+and you can shine it at that door,
+
+1575
+00:55:42,122 --> 00:55:44,762
+and if the beam of light has sufficient intensity,
+
+1576
+00:55:45,082 --> 00:55:46,642
+it'll just push the door open.
+
+1577
+00:55:46,902 --> 00:55:47,762
+In other words,
+
+1578
+00:55:47,762 --> 00:55:49,122
+the beam of light has momentum.
+
+1579
+00:55:50,542 --> 00:55:53,482
+So that when the door absorbs the beam of light,
+
+1580
+00:55:53,582 --> 00:55:54,462
+the door gets a kick.
+
+1581
+00:55:55,722 --> 00:55:59,422
+Just as if you threw a ball at the door,
+
+1582
+00:55:59,562 --> 00:56:02,122
+and the door collided with the wall.
+
+1583
+00:56:03,102 --> 00:56:03,982
+It has momentum.
+
+1584
+00:56:04,982 --> 00:56:05,422
+Okay,
+
+1585
+00:56:05,422 --> 00:56:07,522
+now what is the relationship between the energy
+
+1586
+00:56:07,522 --> 00:56:09,622
+of a beam of light and its momentum?
+
+1587
+00:56:10,482 --> 00:56:11,842
+I'll just tell you what it is.
+
+1588
+00:56:12,122 --> 00:56:15,942
+This is classical Maxwell theory of light.
+
+1589
+00:56:16,922 --> 00:56:18,282
+If a beam of light,
+
+1590
+00:56:18,462 --> 00:56:20,482
+moving in a particular direction,
+
+1591
+00:56:20,662 --> 00:56:22,302
+assume it's moving in a particular direction,
+
+1592
+00:56:23,422 --> 00:56:25,042
+has energy E,
+
+1593
+00:56:26,502 --> 00:56:28,822
+then it also has momentum,
+
+1594
+00:56:30,842 --> 00:56:33,472
+and the relationship is that the energy
+
+1595
+00:56:33,472 --> 00:56:36,102
+is the speed of light times the momentum.
+
+1596
+00:56:38,562 --> 00:56:39,122
+Incidentally,
+
+1597
+00:56:39,122 --> 00:56:40,522
+let's just check the units
+
+1598
+00:56:40,522 --> 00:56:41,922
+of that equation in another way.
+
+1599
+00:56:42,802 --> 00:56:46,472
+Let's compare that with Newton's
+
+1600
+00:56:46,472 --> 00:56:50,142
+theory of momentum and energy.
+
+1601
+00:56:50,502 --> 00:56:52,122
+For an ordinary particle,
+
+1602
+00:56:52,561 --> 00:56:56,122
+the energy is p squared over 2m.
+
+1603
+00:56:57,382 --> 00:56:59,182
+That's non-relativistic.
+
+1604
+00:57:00,002 --> 00:57:01,322
+The momentum,
+
+1605
+00:57:01,322 --> 00:57:03,222
+p squared over 2m,
+
+1606
+00:57:03,242 --> 00:57:03,382
+yeah,
+
+1607
+00:57:03,382 --> 00:57:04,982
+that's good,
+
+1608
+00:57:06,822 --> 00:57:10,082
+which is equal to p
+
+1609
+00:57:10,082 --> 00:57:12,522
+times p over m
+
+1610
+00:57:13,082 --> 00:57:14,562
+and an extra 1 over 2.
+
+1611
+00:57:15,902 --> 00:57:20,182
+One half momentum times momentum divided by velocity.
+
+1612
+00:57:20,462 --> 00:57:21,882
+Now what's momentum divided by velocity?
+
+1613
+00:57:22,742 --> 00:57:23,342
+Sorry,
+
+1614
+00:57:23,342 --> 00:57:24,522
+momentum divided by mass.
+
+1615
+00:57:26,042 --> 00:57:26,642
+Velocity.
+
+1616
+00:57:26,942 --> 00:57:31,642
+So this is equal to one half momentum times velocity.
+
+1617
+00:57:33,942 --> 00:57:34,542
+Well,
+
+1618
+00:57:34,542 --> 00:57:36,062
+it's almost the same for a photon.
+
+1619
+00:57:38,342 --> 00:57:40,152
+It's not the same because we have to
+
+1620
+00:57:40,152 --> 00:57:41,962
+use the theory of relativity for a photon,
+
+1621
+00:57:42,682 --> 00:57:44,802
+but the correction from the theory
+
+1622
+00:57:44,802 --> 00:57:46,922
+of relativity is not so enormous.
+
+1623
+00:57:47,662 --> 00:57:49,472
+This is one half the velocity
+
+1624
+00:57:49,472 --> 00:57:51,282
+of the particle times its momentum.
+
+1625
+00:57:51,842 --> 00:57:53,502
+This is just equal to the
+
+1626
+00:57:53,502 --> 00:57:55,162
+velocity of the particle times the momentum.
+
+1627
+00:57:56,122 --> 00:57:58,402
+So for highly relativistic particles,
+
+1628
+00:57:58,622 --> 00:58:01,842
+the formula is very similar except a half goes away.
+
+1629
+00:58:02,522 --> 00:58:03,702
+Among other things,
+
+1630
+00:58:03,702 --> 00:58:06,122
+this argument tells you that the units are right.
+
+1631
+00:58:06,462 --> 00:58:08,662
+Energy is velocity times momentum.
+
+1632
+00:58:10,682 --> 00:58:12,022
+Let me just solve that.
+
+1633
+00:58:14,402 --> 00:58:17,782
+Momentum is energy divided by the speed of light.
+
+1634
+00:58:19,142 --> 00:58:20,952
+We can now plug in and
+
+1635
+00:58:20,952 --> 00:58:22,762
+find that the momentum of a photon,
+
+1636
+00:58:23,042 --> 00:58:24,842
+or momentum of any little piece of light,
+
+1637
+00:58:24,882 --> 00:58:26,402
+let's do a single photon now.
+
+1638
+00:58:26,682 --> 00:58:29,282
+The energy of the photon is h times f.
+
+1639
+00:58:31,122 --> 00:58:33,682
+And so the momentum is h times f.
+
+1640
+00:58:33,702 --> 00:58:35,022
+So h times the frequency
+
+1641
+00:58:35,022 --> 00:58:36,342
+divided by the speed of light.
+
+1642
+00:58:37,942 --> 00:58:39,532
+Now if you have a wave
+
+1643
+00:58:39,532 --> 00:58:41,122
+that's moving with the speed of light,
+
+1644
+00:58:43,501 --> 00:58:45,722
+you have a wave moving with the speed of light.
+
+1645
+00:58:46,422 --> 00:58:48,452
+It's moving down and it has
+
+1646
+00:58:48,452 --> 00:58:50,482
+a certain frequency and a velocity.
+
+1647
+00:58:50,942 --> 00:58:55,011
+There's a connection between
+
+1648
+00:58:55,011 --> 00:58:59,081
+the frequency and the wavelength.
+
+1649
+00:59:00,782 --> 00:59:02,462
+Think about it for a moment.
+
+1650
+00:59:03,722 --> 00:59:04,702
+Here's a wavelength.
+
+1651
+00:59:05,802 --> 00:59:07,782
+Let's call the wavelength lambda.
+
+1652
+00:59:08,021 --> 00:59:12,382
+Lambda is the standard notation for the wavelength of light,
+
+1653
+00:59:12,622 --> 00:59:13,942
+the wavelength of anything.
+
+1654
+00:59:17,622 --> 00:59:21,402
+How far does the wave move in one cycle?
+
+1655
+00:59:23,722 --> 00:59:25,442
+The answer is lambda.
+
+1656
+00:59:25,581 --> 00:59:26,521
+That's what lambda is.
+
+1657
+00:59:26,962 --> 00:59:30,342
+It's the distance that the wave moves in one cycle.
+
+1658
+00:59:30,561 --> 00:59:33,622
+If you stand there with your nose watching that light
+
+1659
+00:59:33,702 --> 00:59:35,082
+ray and it's moving past you,
+
+1660
+00:59:35,242 --> 00:59:40,482
+it moves past you one wavelength per cycle.
+
+1661
+00:59:41,982 --> 00:59:44,502
+One wavelength per cycle.
+
+1662
+00:59:46,442 --> 00:59:48,102
+How long does a cycle take?
+
+1663
+00:59:48,502 --> 00:59:50,562
+How long does one cycle take?
+
+1664
+00:59:50,742 --> 00:59:52,662
+What's the period that goes with one cycle?
+
+1665
+00:59:53,882 --> 00:59:56,722
+The inverse of the frequency.
+
+1666
+00:59:57,282 --> 01:00:02,042
+So the time that it takes to move distance lambda
+
+1667
+01:00:02,042 --> 01:00:04,822
+is one over the frequency.
+
+1668
+01:00:05,982 --> 01:00:07,222
+Let's just write that down.
+
+1669
+01:00:07,442 --> 01:00:09,442
+Time to go one cycle is
+
+1670
+01:00:09,442 --> 01:00:11,442
+equal to one over the frequency.
+
+1671
+01:00:11,942 --> 01:00:13,772
+The distance that it goes in
+
+1672
+01:00:13,772 --> 01:00:15,602
+that same time is just lambda.
+
+1673
+01:00:15,962 --> 01:00:17,862
+So what's the velocity of the wave?
+
+1674
+01:00:18,282 --> 01:00:19,852
+The velocity of the wave
+
+1675
+01:00:19,852 --> 01:00:21,422
+is the distance that it goes
+
+1676
+01:00:21,422 --> 01:00:23,282
+divided by the time that it travels.
+
+1677
+01:00:24,742 --> 01:00:26,402
+Distance over time is velocity.
+
+1678
+01:00:27,102 --> 01:00:31,682
+C is equal to lambda divided by T,
+
+1679
+01:00:31,682 --> 01:00:33,462
+which means lambda times the frequency.
+
+1680
+01:00:34,562 --> 01:00:38,682
+So this is a general formula relating velocity,
+
+1681
+01:00:39,002 --> 01:00:39,502
+lambda,
+
+1682
+01:00:39,502 --> 01:00:40,142
+and frequency.
+
+1683
+01:00:41,322 --> 01:00:42,422
+And let's see.
+
+1684
+01:00:42,442 --> 01:00:43,902
+Let's plug it into here now.
+
+1685
+01:00:45,182 --> 01:00:47,482
+Let's get rid of the frequency.
+
+1686
+01:00:47,742 --> 01:00:50,542
+The frequency is C divided by lambda.
+
+1687
+01:00:52,362 --> 01:01:00,942
+So frequency is C divided by lambda.
+
+1688
+01:01:01,682 --> 01:01:03,702
+And then there's another C down here.
+
+1689
+01:01:04,762 --> 01:01:07,282
+And we get de Broglie's equation
+
+1690
+01:01:07,282 --> 01:01:10,682
+that the momentum is Planck's constant
+
+1691
+01:01:10,682 --> 01:01:12,942
+divided by the wavelength.
+
+1692
+01:01:13,522 --> 01:01:15,202
+The smaller the wavelength,
+
+1693
+01:01:15,202 --> 01:01:17,002
+the larger the momentum.
+
+1694
+01:01:18,382 --> 01:01:19,892
+If you want a beam
+
+1695
+01:01:19,892 --> 01:01:21,402
+of particles with very high momentum,
+
+1696
+01:01:21,842 --> 01:01:23,342
+give it a small wavelength.
+
+1697
+01:01:24,802 --> 01:01:25,402
+Or,
+
+1698
+01:01:25,402 --> 01:01:26,862
+say it the opposite way,
+
+1699
+01:01:26,982 --> 01:01:28,942
+if you want a very short wavelength particle,
+
+1700
+01:01:29,582 --> 01:01:31,302
+it's at the cost of having
+
+1701
+01:01:31,302 --> 01:01:33,022
+that particle have a large momentum.
+
+1702
+01:01:34,582 --> 01:01:37,922
+Momentum and wavelength are inverse to each other.
+
+1703
+01:01:38,862 --> 01:01:43,102
+So now let's go back to...
+
+1704
+01:01:43,102 --> 01:01:43,842
+He wants to measure,
+
+1705
+01:01:43,842 --> 01:01:44,902
+or wants to get a...
+
+1706
+01:01:44,902 --> 01:01:46,362
+Roughly speaking,
+
+1707
+01:01:46,362 --> 01:01:49,522
+he wants to get a photograph of the electron
+
+1708
+01:01:49,522 --> 01:01:52,622
+where the electron is not fuzzy
+
+1709
+01:01:52,622 --> 01:01:55,722
+on scales larger than delta x.
+
+1710
+01:01:56,722 --> 01:01:58,342
+He just wants to take a photograph
+
+1711
+01:01:58,342 --> 01:01:58,922
+of the electron,
+
+1712
+01:01:58,942 --> 01:02:01,342
+or it doesn't have to be an electron.
+
+1713
+01:02:01,642 --> 01:02:04,242
+It could be a golf ball.
+
+1714
+01:02:04,402 --> 01:02:05,362
+It doesn't matter what it is.
+
+1715
+01:02:05,582 --> 01:02:07,442
+He wants to get a photograph of it,
+
+1716
+01:02:07,522 --> 01:02:09,522
+and wants the photograph to be non-fuzzy
+
+1717
+01:02:09,522 --> 01:02:11,642
+on a certain scale delta x.
+
+1718
+01:02:11,822 --> 01:02:12,042
+Well,
+
+1719
+01:02:12,042 --> 01:02:15,042
+every photographer knows that,
+
+1720
+01:02:15,602 --> 01:02:18,562
+or anybody who understands anything about waves
+
+1721
+01:02:18,562 --> 01:02:19,822
+and images and so forth,
+
+1722
+01:02:19,982 --> 01:02:23,362
+knows that to form an image which is precise
+
+1723
+01:02:24,282 --> 01:02:27,342
+or non-fuzzy to size delta x,
+
+1724
+01:02:27,482 --> 01:02:28,922
+you have to use wavelength.
+
+1725
+01:02:28,922 --> 01:02:29,112
+So you can't just make
+
+1726
+01:02:29,112 --> 01:02:29,302
+an image of a golf ball
+
+1727
+01:02:29,302 --> 01:02:30,862
+with a wavelength that is shorter than delta x.
+
+1728
+01:02:31,342 --> 01:02:33,112
+If you try to make
+
+1729
+01:02:33,112 --> 01:02:34,882
+an image of a golf ball
+
+1730
+01:02:34,882 --> 01:02:36,902
+with a radio wave,
+
+1731
+01:02:36,962 --> 01:02:39,162
+a radio wave of let's say 10 meters,
+
+1732
+01:02:39,522 --> 01:02:41,092
+the golf ball will look fuzzy
+
+1733
+01:02:41,092 --> 01:02:42,662
+on the scale of 10 meters.
+
+1734
+01:02:43,182 --> 01:02:45,442
+If you try to do it with a wavelength
+
+1735
+01:02:45,442 --> 01:02:48,562
+of a tenth of a golf ball,
+
+1736
+01:02:49,262 --> 01:02:50,442
+a tenth of a centimeter,
+
+1737
+01:02:50,862 --> 01:02:52,642
+the golf ball will look pretty good.
+
+1738
+01:02:53,542 --> 01:02:57,522
+So the rule is that lambda,
+
+1739
+01:02:57,642 --> 01:02:59,242
+the wavelength of the light,
+
+1740
+01:03:00,722 --> 01:03:02,702
+must be less than delta x
+
+1741
+01:03:02,702 --> 01:03:04,362
+if you want to get
+
+1742
+01:03:04,362 --> 01:03:06,022
+an image with precision delta x.
+
+1743
+01:03:06,162 --> 01:03:07,282
+Now I erased an equation.
+
+1744
+01:03:07,702 --> 01:03:10,862
+The equation that I erased is that the momentum
+
+1745
+01:03:10,862 --> 01:03:14,882
+is equal to Planck's constant divided by lambda.
+
+1746
+01:03:17,042 --> 01:03:19,442
+So now Heisenberg was caught in a bind.
+
+1747
+01:03:20,522 --> 01:03:22,122
+If he wants to measure,
+
+1748
+01:03:22,122 --> 01:03:25,822
+the position to a high accuracy delta x,
+
+1749
+01:03:26,142 --> 01:03:33,022
+he's got to use a high momentum electron.
+
+1750
+01:03:33,142 --> 01:03:34,862
+He's got to use a short wavelength electron.
+
+1751
+01:03:35,462 --> 01:03:36,922
+If he wants delta x
+
+1752
+01:03:36,922 --> 01:03:38,382
+to be smaller than a centimeter,
+
+1753
+01:03:38,722 --> 01:03:41,262
+then he's got to be using a wavelength
+
+1754
+01:03:41,262 --> 01:03:42,702
+smaller than a centimeter.
+
+1755
+01:03:43,022 --> 01:03:45,882
+But if he's using a wavelength smaller than a centimeter,
+
+1756
+01:03:46,142 --> 01:03:48,362
+that means the momentum of the photon
+
+1757
+01:03:48,362 --> 01:03:52,042
+has to be larger than h over one centimeter.
+
+1758
+01:03:52,122 --> 01:03:56,062
+So the smaller delta x,
+
+1759
+01:03:57,522 --> 01:04:00,562
+the larger the momentum of the photon
+
+1760
+01:04:00,562 --> 01:04:02,462
+that he has to use to make the image.
+
+1761
+01:04:02,662 --> 01:04:04,602
+The shorter the wavelength of the photon
+
+1762
+01:04:04,602 --> 01:04:06,002
+that he has to use to make the image.
+
+1763
+01:04:06,262 --> 01:04:07,982
+If lambda is small,
+
+1764
+01:04:08,062 --> 01:04:09,782
+then t is going to be large.
+
+1765
+01:04:10,062 --> 01:04:10,762
+Well now,
+
+1766
+01:04:10,762 --> 01:04:11,802
+what does that mean?
+
+1767
+01:04:12,062 --> 01:04:14,742
+That means that we're going to wind up bombarding
+
+1768
+01:04:15,682 --> 01:04:16,762
+this object
+
+1769
+01:04:17,882 --> 01:04:20,822
+with a high momentum photon.
+
+1770
+01:04:20,822 --> 01:04:24,662
+The high momentum photon may make a very good image
+
+1771
+01:04:24,662 --> 01:04:25,282
+of the position,
+
+1772
+01:04:25,582 --> 01:04:27,822
+but then it's going to collide with this
+
+1773
+01:04:27,822 --> 01:04:29,602
+and knock it off in some random direction.
+
+1774
+01:04:30,322 --> 01:04:32,122
+Knock it off in a random direction
+
+1775
+01:04:32,122 --> 01:04:33,902
+with a momentum,
+
+1776
+01:04:35,582 --> 01:04:36,782
+uncertain amount,
+
+1777
+01:04:37,082 --> 01:04:39,362
+uncertain momentum of order of magnitude
+
+1778
+01:04:39,362 --> 01:04:40,602
+of this momentum here.
+
+1779
+01:04:41,822 --> 01:04:43,702
+This particle will come in,
+
+1780
+01:04:43,782 --> 01:04:46,642
+and just like the photon hitting the slit,
+
+1781
+01:04:46,922 --> 01:04:49,442
+it will get knocked in some random direction,
+
+1782
+01:04:49,442 --> 01:04:52,622
+and so the conclusion will be that
+
+1783
+01:04:52,622 --> 01:04:55,462
+immediately after you try to measure the position,
+
+1784
+01:04:56,282 --> 01:04:57,642
+immediately afterwards,
+
+1785
+01:04:58,382 --> 01:05:01,742
+the momentum has become very uncertain.
+
+1786
+01:05:02,062 --> 01:05:03,202
+It has been kicked hard.
+
+1787
+01:05:03,922 --> 01:05:05,482
+Having been kicked hard,
+
+1788
+01:05:05,622 --> 01:05:08,082
+if you measure its momentum afterwards,
+
+1789
+01:05:08,542 --> 01:05:11,722
+it will have nothing to do with the momentum beforehand.
+
+1790
+01:05:13,482 --> 01:05:15,522
+So you cannot determine
+
+1791
+01:05:15,522 --> 01:05:18,642
+both the position and the momentum at the same time.
+
+1792
+01:05:19,681 --> 01:05:21,582
+Measuring the position
+
+1793
+01:05:21,582 --> 01:05:24,902
+necessarily imparts a random momentum,
+
+1794
+01:05:25,102 --> 01:05:25,562
+a kick,
+
+1795
+01:05:25,562 --> 01:05:26,762
+a random momentum kick
+
+1796
+01:05:26,762 --> 01:05:28,102
+to the particle.
+
+1797
+01:05:28,922 --> 01:05:30,322
+The result is
+
+1798
+01:05:30,322 --> 01:05:33,182
+whatever the momentum was beforehand,
+
+1799
+01:05:33,382 --> 01:05:35,082
+it won't be that afterwards.
+
+1800
+01:05:37,042 --> 01:05:38,942
+And that's another example
+
+1801
+01:05:39,641 --> 01:05:41,282
+of the fact that
+
+1802
+01:05:41,282 --> 01:05:43,162
+there's no such thing
+
+1803
+01:05:43,162 --> 01:05:46,202
+as a gentle determination
+
+1804
+01:05:46,202 --> 01:05:48,622
+in quantum mechanics.
+
+1805
+01:05:49,602 --> 01:05:50,322
+Well,
+
+1806
+01:05:50,322 --> 01:05:52,062
+you can do a gentle determination,
+
+1807
+01:05:52,442 --> 01:05:54,802
+but it will be a very imprecise determination.
+
+1808
+01:05:55,862 --> 01:05:57,522
+In classical physics,
+
+1809
+01:05:57,522 --> 01:05:58,262
+incidentally,
+
+1810
+01:05:58,262 --> 01:05:58,502
+oh,
+
+1811
+01:05:58,502 --> 01:05:59,422
+keep in mind,
+
+1812
+01:05:59,502 --> 01:06:01,402
+what about classical physics?
+
+1813
+01:06:01,822 --> 01:06:03,882
+Why is it different in classical physics?
+
+1814
+01:06:04,322 --> 01:06:05,762
+The reason is
+
+1815
+01:06:06,502 --> 01:06:09,242
+because light doesn't come in discrete packets
+
+1816
+01:06:09,242 --> 01:06:10,502
+in classical physics.
+
+1817
+01:06:10,922 --> 01:06:12,502
+We've used the fact
+
+1818
+01:06:13,342 --> 01:06:16,542
+that light comes in discrete,
+
+1819
+01:06:16,542 --> 01:06:18,422
+indivisible quantum,
+
+1820
+01:06:18,662 --> 01:06:19,282
+discrete,
+
+1821
+01:06:19,282 --> 01:06:20,542
+indivisible photons.
+
+1822
+01:06:21,782 --> 01:06:24,642
+And if we have a wavelength,
+
+1823
+01:06:25,502 --> 01:06:28,142
+then there's a minimum amount of energy
+
+1824
+01:06:28,142 --> 01:06:30,162
+that can go with that,
+
+1825
+01:06:30,222 --> 01:06:31,302
+minimum amount of momentum
+
+1826
+01:06:31,302 --> 01:06:33,002
+that can go with that wavelength,
+
+1827
+01:06:33,842 --> 01:06:35,362
+namely one photon.
+
+1828
+01:06:35,742 --> 01:06:37,882
+You can't have less than a single photon.
+
+1829
+01:06:38,322 --> 01:06:39,662
+In classical physics,
+
+1830
+01:06:40,392 --> 01:06:42,682
+energy does not come in discrete multiples
+
+1831
+01:06:42,682 --> 01:06:44,042
+of some basic unit,
+
+1832
+01:06:44,042 --> 01:06:46,482
+and so you can do the same experiment
+
+1833
+01:06:47,042 --> 01:06:50,982
+with as small an energy
+
+1834
+01:06:50,982 --> 01:06:52,222
+as you like.
+
+1835
+01:06:53,342 --> 01:06:55,342
+It's as though in classical physics
+
+1836
+01:06:55,342 --> 01:06:57,102
+you could subdivide that photon
+
+1837
+01:06:58,002 --> 01:07:00,502
+into arbitrarily small units of energy,
+
+1838
+01:07:00,762 --> 01:07:02,122
+take just one of them
+
+1839
+01:07:03,222 --> 01:07:04,522
+with the same wavelength
+
+1840
+01:07:05,042 --> 01:07:06,782
+and form an image with it.
+
+1841
+01:07:06,902 --> 01:07:08,082
+In quantum mechanics,
+
+1842
+01:07:08,322 --> 01:07:09,382
+you're always stuck
+
+1843
+01:07:10,342 --> 01:07:13,142
+by the fact that the energy of a light wave
+
+1844
+01:07:13,142 --> 01:07:15,302
+comes in these discrete packets.
+
+1845
+01:07:15,762 --> 01:07:17,322
+And that discrete packet,
+
+1846
+01:07:17,862 --> 01:07:19,282
+if it has wavelength lambda,
+
+1847
+01:07:20,082 --> 01:07:21,182
+will have a momentum,
+
+1848
+01:07:21,442 --> 01:07:22,522
+h over lambda,
+
+1849
+01:07:22,842 --> 01:07:25,442
+and therefore give this an inevitable kick
+
+1850
+01:07:25,442 --> 01:07:27,282
+of amount h over lambda.
+
+1851
+01:07:27,922 --> 01:07:28,602
+Now,
+
+1852
+01:07:28,602 --> 01:07:29,202
+that's...
+
+1853
+01:07:30,982 --> 01:07:34,342
+This is several examples
+
+1854
+01:07:35,142 --> 01:07:37,222
+of the same kind of thing
+
+1855
+01:07:37,222 --> 01:07:40,322
+that doing experiments in quantum mechanics
+
+1856
+01:07:40,322 --> 01:07:41,842
+is different than doing experiments
+
+1857
+01:07:41,842 --> 01:07:42,922
+in classical mechanics.
+
+1858
+01:07:43,102 --> 01:07:45,162
+You can always imagine classical mechanics
+
+1859
+01:07:45,162 --> 01:07:46,662
+doing a very gentle experiment
+
+1860
+01:07:46,662 --> 01:07:48,002
+that doesn't disturb a system,
+
+1861
+01:07:48,182 --> 01:07:49,922
+and then just go on from there
+
+1862
+01:07:49,922 --> 01:07:51,342
+and do a later experiment,
+
+1863
+01:07:53,282 --> 01:07:54,982
+and do a later experiment,
+
+1864
+01:07:55,002 --> 01:07:56,202
+the earlier experiments,
+
+1865
+01:07:56,242 --> 01:07:57,622
+not having influenced
+
+1866
+01:07:57,622 --> 01:07:59,782
+the outcome of the later experiments.
+
+1867
+01:08:00,802 --> 01:08:01,322
+So,
+
+1868
+01:08:01,322 --> 01:08:02,142
+for example,
+
+1869
+01:08:02,661 --> 01:08:03,942
+you could measure the position,
+
+1870
+01:08:04,162 --> 01:08:07,182
+and that not affect the outcome
+
+1871
+01:08:07,182 --> 01:08:09,422
+of a later detection of the velocity,
+
+1872
+01:08:09,722 --> 01:08:11,542
+which is not true in quantum mechanics.
+
+1873
+01:08:17,301 --> 01:08:19,042
+These are a lot of examples,
+
+1874
+01:08:19,221 --> 01:08:22,122
+but the examples add up to a...
+
+1875
+01:08:24,181 --> 01:08:25,542
+to a...
+
+1876
+01:08:25,542 --> 01:08:26,122
+if you like,
+
+1877
+01:08:26,122 --> 01:08:26,421
+a notion
+
+1878
+01:08:26,421 --> 01:08:28,421
+that the basic logic
+
+1879
+01:08:28,421 --> 01:08:30,442
+of classical mechanics is incorrect.
+
+1880
+01:08:30,862 --> 01:08:33,002
+The basic underlying logic
+
+1881
+01:08:33,002 --> 01:08:35,761
+is not sufficient to understand
+
+1882
+01:08:35,761 --> 01:08:38,022
+the measurement process in quantum mechanics.
+
+1883
+01:08:39,682 --> 01:08:41,721
+The whole setup is wrong.
+
+1884
+01:08:41,721 --> 01:08:42,742
+The whole setup,
+
+1885
+01:08:42,902 --> 01:08:44,482
+not just the thinking,
+
+1886
+01:08:44,602 --> 01:08:46,102
+not just each experiment.
+
+1887
+01:08:46,182 --> 01:08:47,582
+You can go and analyze it
+
+1888
+01:08:47,582 --> 01:08:49,182
+and try to figure out what's wrong with it
+
+1889
+01:08:49,182 --> 01:08:50,402
+and try to correct for it.
+
+1890
+01:08:50,542 --> 01:08:50,881
+No,
+
+1891
+01:08:50,881 --> 01:08:52,902
+the whole underlying structure
+
+1892
+01:08:52,902 --> 01:08:55,282
+of classical physics is inadequate
+
+1893
+01:08:55,282 --> 01:08:57,322
+to discuss quantum mechanical phenomena.
+
+1894
+01:08:58,421 --> 01:09:00,062
+Let's take a break for five minutes
+
+1895
+01:09:00,062 --> 01:09:01,822
+and then start.
+
+1896
+01:09:04,225 --> 01:09:04,845
+on the korra
+
+1897
+01:09:07,202 --> 01:09:07,322
+Okay,
+
+1898
+01:09:07,322 --> 01:09:09,392
+somebody asked me about how do
+
+1899
+01:09:09,392 --> 01:09:11,462
+you measure the velocity of a particle.
+
+1900
+01:09:14,481 --> 01:09:15,841
+The answer is gently,
+
+1901
+01:09:15,841 --> 01:09:16,761
+first of all.
+
+1902
+01:09:20,402 --> 01:09:23,462
+Here's a simple conceptual way to do it.
+
+1903
+01:09:24,022 --> 01:09:24,902
+Velocity or momentum.
+
+1904
+01:09:25,522 --> 01:09:27,582
+Let's suppose we know the mass of the particle,
+
+1905
+01:09:27,582 --> 01:09:32,322
+so that by measuring its velocity we also
+
+1906
+01:09:32,322 --> 01:09:33,062
+measure its momentum.
+
+1907
+01:09:34,861 --> 01:09:38,111
+A simple conceptual way to measure velocity
+
+1908
+01:09:38,111 --> 01:09:41,362
+is to measure location at two different times,
+
+1909
+01:09:41,982 --> 01:09:44,202
+and then take the difference of location,
+
+1910
+01:09:44,202 --> 01:09:45,742
+that's how far it travels,
+
+1911
+01:09:45,742 --> 01:09:47,242
+and divide by the
+
+1912
+01:09:47,242 --> 01:09:48,502
+time between measurements,
+
+1913
+01:09:48,502 --> 01:09:49,742
+and that's the velocity.
+
+1914
+01:09:50,002 --> 01:09:51,221
+That's the way you would measure velocity.
+
+1915
+01:09:51,721 --> 01:09:52,322
+Now,
+
+1916
+01:09:52,322 --> 01:09:52,982
+you have to be careful.
+
+1917
+01:09:53,221 --> 01:09:56,942
+You want to measure the position twice in succession,
+
+1918
+01:09:56,942 --> 01:09:59,162
+but you don't want to measure
+
+1919
+01:09:59,162 --> 01:10:03,042
+the position with such good momentum.
+
+1920
+01:10:03,042 --> 01:10:04,992
+That's such a good determination that it
+
+1921
+01:10:04,992 --> 01:10:06,942
+gives a random kick to the velocity,
+
+1922
+01:10:06,942 --> 01:10:07,442
+which
+
+1923
+01:10:07,442 --> 01:10:08,522
+is what you're trying to measure.
+
+1924
+01:10:08,902 --> 01:10:11,562
+You wouldn't want to measure the velocity
+
+1925
+01:10:11,562 --> 01:10:14,222
+by beginning the experiment with a random
+
+1926
+01:10:14,222 --> 01:10:14,622
+kick,
+
+1927
+01:10:14,622 --> 01:10:17,402
+which randomizes the velocity and sends it
+
+1928
+01:10:17,402 --> 01:10:20,182
+off in some direction very different than
+
+1929
+01:10:20,182 --> 01:10:21,442
+it was moving with to begin with,
+
+1930
+01:10:21,442 --> 01:10:22,262
+direction and velocity.
+
+1931
+01:10:22,722 --> 01:10:25,122
+So your two measurements of velocity,
+
+1932
+01:10:25,122 --> 01:10:25,962
+sorry,
+
+1933
+01:10:25,962 --> 01:10:26,622
+of position,
+
+1934
+01:10:26,622 --> 01:10:29,522
+should be very gentle measurements
+
+1935
+01:10:30,142 --> 01:10:32,442
+that don't change the velocity very much.
+
+1936
+01:10:32,442 --> 01:10:32,642
+Right.
+
+1937
+01:10:32,642 --> 01:10:34,322
+But that don't change the momentum very much.
+
+1938
+01:10:34,542 --> 01:10:37,582
+That means that they must be
+
+1939
+01:10:37,582 --> 01:10:40,622
+done with photons of very long wavelength.
+
+1940
+01:10:41,262 --> 01:10:45,652
+If you don't want your first initial detection
+
+1941
+01:10:45,652 --> 01:10:50,042
+of the location of this particle to give it
+
+1942
+01:10:50,042 --> 01:10:50,502
+a good whack,
+
+1943
+01:10:50,502 --> 01:10:52,342
+then you want to do it
+
+1944
+01:10:52,342 --> 01:10:54,182
+with a very long wavelength photon.
+
+1945
+01:10:54,622 --> 01:10:58,542
+A long wavelength photon will then tell you
+
+1946
+01:10:58,542 --> 01:11:02,462
+only that the electron is in some region of
+
+1947
+01:11:02,462 --> 01:11:03,042
+size lambda.
+
+1948
+01:11:05,442 --> 01:11:05,982
+Okay.
+
+1949
+01:11:06,082 --> 01:11:08,032
+So what you know then is
+
+1950
+01:11:08,032 --> 01:11:09,982
+the position of the electron x,
+
+1951
+01:11:09,982 --> 01:11:11,022
+let's say,
+
+1952
+01:11:11,022 --> 01:11:12,242
+plus or minus lambda,
+
+1953
+01:11:13,322 --> 01:11:14,812
+meaning to say that there's
+
+1954
+01:11:14,812 --> 01:11:16,302
+an uncertainty of magnitude lambda.
+
+1955
+01:11:16,621 --> 01:11:18,202
+Then you wait a really,
+
+1956
+01:11:18,202 --> 01:11:22,382
+really long time until the electron has moved a long,
+
+1957
+01:11:22,382 --> 01:11:23,262
+long ways.
+
+1958
+01:11:24,222 --> 01:11:25,582
+It has some velocity.
+
+1959
+01:11:25,802 --> 01:11:26,942
+It started out with some velocity.
+
+1960
+01:11:27,102 --> 01:11:30,622
+You've changed the velocity only by a very small amount.
+
+1961
+01:11:30,722 --> 01:11:31,122
+Okay.
+
+1962
+01:11:31,122 --> 01:11:32,412
+And you can't change the velocity
+
+1963
+01:11:32,412 --> 01:11:33,702
+by using a very long wavelength photon.
+
+1964
+01:11:34,162 --> 01:11:36,762
+So we take the wavelength of the photon
+
+1965
+01:11:36,762 --> 01:11:39,362
+to be so long that there's been an unappreciable
+
+1966
+01:11:39,362 --> 01:11:40,422
+change in the momentum.
+
+1967
+01:11:40,942 --> 01:11:42,762
+And then at a much later time,
+
+1968
+01:11:42,762 --> 01:11:45,532
+we discover that the particle is
+
+1969
+01:11:45,532 --> 01:11:48,302
+at x plus or minus lambda,
+
+1970
+01:11:48,642 --> 01:11:50,322
+maybe even plus or minus 2 lambda,
+
+1971
+01:11:50,322 --> 01:11:53,522
+plus vt,
+
+1972
+01:11:53,522 --> 01:11:58,562
+its velocity times the time between the two
+
+1973
+01:11:58,562 --> 01:11:59,022
+measurements.
+
+1974
+01:12:01,122 --> 01:12:02,402
+So true.
+
+1975
+01:12:02,582 --> 01:12:04,332
+There's a little bit of sloppiness
+
+1976
+01:12:04,332 --> 01:12:06,082
+in the measurement of the positions,
+
+1977
+01:12:06,082 --> 01:12:07,202
+a large sloppiness,
+
+1978
+01:12:07,302 --> 01:12:07,862
+excuse me,
+
+1979
+01:12:07,862 --> 01:12:08,942
+in the measurements of the positions.
+
+1980
+01:12:09,322 --> 01:12:12,322
+And that's going to lead to a
+
+1981
+01:12:12,322 --> 01:12:15,322
+sloppiness in the distance that the particle moves.
+
+1982
+01:12:15,682 --> 01:12:16,882
+What's the sloppiness?
+
+1983
+01:12:17,182 --> 01:12:18,202
+The sloppiness,
+
+1984
+01:12:18,202 --> 01:12:23,142
+the distance that the particle will move
+
+1985
+01:12:23,142 --> 01:12:28,082
+will be vt plus a sloppiness of
+
+1986
+01:12:28,082 --> 01:12:28,842
+order lambda.
+
+1987
+01:12:29,182 --> 01:12:29,482
+Okay.
+
+1988
+01:12:29,482 --> 01:12:33,152
+And we take lambda to be very big
+
+1989
+01:12:33,152 --> 01:12:36,822
+so that we don't disturb the velocity very much.
+
+1990
+01:12:37,082 --> 01:12:39,222
+Then how do you find this
+
+1991
+01:12:39,222 --> 01:12:41,362
+is how far the particle moves?
+
+1992
+01:12:41,682 --> 01:12:42,602
+Let's call it d,
+
+1993
+01:12:42,602 --> 01:12:44,782
+distance that it moves.
+
+1994
+01:12:45,502 --> 01:12:47,302
+In order to find the velocity,
+
+1995
+01:12:47,302 --> 01:12:49,122
+we have to divide the distance
+
+1996
+01:12:49,122 --> 01:12:50,942
+that it moves by the time.
+
+1997
+01:12:51,162 --> 01:12:53,062
+So let's divide it by the time.
+
+1998
+01:13:01,802 --> 01:13:03,822
+This is now a measurement
+
+1999
+01:13:03,822 --> 01:13:05,842
+in the sloppiness of the velocity.
+
+2000
+01:13:06,162 --> 01:13:08,512
+The sloppiness of the velocity
+
+2001
+01:13:08,512 --> 01:13:10,862
+measurement is lambda divided by t.
+
+2002
+01:13:11,622 --> 01:13:13,462
+No matter how big lambda is,
+
+2003
+01:13:13,462 --> 01:13:15,022
+if we wait long enough,
+
+2004
+01:13:15,022 --> 01:13:16,922
+if we let t be very,
+
+2005
+01:13:16,922 --> 01:13:17,622
+very large,
+
+2006
+01:13:17,622 --> 01:13:18,822
+then
+
+2007
+01:13:18,822 --> 01:13:21,302
+the sloppiness in the velocity can be made small.
+
+2008
+01:13:21,862 --> 01:13:23,712
+So the way we measure the velocity is
+
+2009
+01:13:23,712 --> 01:13:25,562
+by taking a long time to do it,
+
+2010
+01:13:25,562 --> 01:13:26,661
+do very,
+
+2011
+01:13:26,661 --> 01:13:27,322
+very gentle
+
+2012
+01:13:27,322 --> 01:13:28,481
+measurements of the position.
+
+2013
+01:13:28,682 --> 01:13:29,022
+Okay.
+
+2014
+01:13:29,482 --> 01:13:31,562
+So we can measure the velocity with great precision.
+
+2015
+01:13:31,562 --> 01:13:34,562
+We can measure the velocity with great precision.
+
+2016
+01:13:34,782 --> 01:13:35,422
+However,
+
+2017
+01:13:35,422 --> 01:13:37,602
+it's been at the cost
+
+2018
+01:13:37,602 --> 01:13:39,782
+of knowing where the particle is.
+
+2019
+01:13:41,302 --> 01:13:43,672
+The particle has not been determined
+
+2020
+01:13:43,672 --> 01:13:46,042
+to a precision better than lambda.
+
+2021
+01:13:46,542 --> 01:13:48,892
+The velocity has been determined to a
+
+2022
+01:13:48,892 --> 01:13:51,242
+precision of something like lambda over t.
+
+2023
+01:13:52,462 --> 01:13:53,942
+So whatever you do,
+
+2024
+01:13:53,942 --> 01:13:56,592
+you'll never be able to determine
+
+2025
+01:13:56,592 --> 01:13:59,242
+both the position and the velocity
+
+2026
+01:13:59,242 --> 01:14:00,982
+in the same experiment.
+
+2027
+01:14:01,362 --> 01:14:03,382
+You do one and not the other.
+
+2028
+01:14:03,462 --> 01:14:04,522
+One or the other.
+
+2029
+01:14:07,302 --> 01:14:09,362
+Kind of quantum mechanics...
+
+2030
+01:14:09,982 --> 01:14:10,562
+Yeah?
+
+2031
+01:14:14,142 --> 01:14:14,722
+Yes.
+
+2032
+01:14:20,342 --> 01:14:20,922
+Well,
+
+2033
+01:14:20,922 --> 01:14:21,502
+um...
+
+2034
+01:14:22,922 --> 01:14:23,782
+Say it again.
+
+2035
+01:14:24,502 --> 01:14:25,082
+Yeah.
+
+2036
+01:14:28,722 --> 01:14:28,842
+Yes.
+
+2037
+01:30:29,242 --> 01:30:29,242
+Yeah,
+
+2038
+01:30:29,242 --> 01:30:29,402
+yeah.
+
+2039
+01:30:29,582 --> 01:30:29,902
+Both,
+
+2040
+01:30:29,902 --> 01:30:29,902
+uh,
+
+2041
+01:30:29,902 --> 01:30:29,902
+as oh,
+
+2042
+01:30:29,902 --> 01:30:29,902
+either слово means something in French,
+
+2043
+01:30:29,902 --> 01:30:29,902
+Pas de cooperate
+
+2044
+01:30:32,702 --> 01:30:37,052
+Then you have no problem when
+
+2045
+01:30:37,052 --> 01:30:41,402
+you see that compensating som bek.
+
+2046
+01:30:46,342 --> 01:30:46,722
+Yeah.
+
+2047
+01:30:49,202 --> 01:30:50,162
+For example,
+
+2048
+01:30:50,162 --> 01:30:51,142
+when I say duvec is
+
+2049
+01:30:51,142 --> 01:30:52,122
+reach Jefferson taking care of clones,
+
+2050
+01:30:52,122 --> 01:30:52,122
+I'm I Goku
+
+2051
+01:30:52,122 --> 01:30:52,122
+meetings.
+
+2052
+01:30:52,122 --> 01:30:52,182
+I don't believe
+
+2053
+01:30:52,262 --> 01:30:53,022
+.
+
+2054
+01:30:53,022 --> 01:30:53,022
+Yes.
+
+2055
+01:30:53,022 --> 01:30:54,042
+And
+
+2056
+01:30:54,042 --> 01:30:55,022
+else there.
+
+2057
+01:30:55,022 --> 01:30:55,022
+What?
+
+2058
+01:30:55,022 --> 01:30:55,022
+That reveal
+
+2059
+01:30:55,022 --> 01:30:55,722
+something very
+
+2060
+01:30:55,722 --> 01:30:56,542
+safe about you.
+
+2061
+01:30:56,542 --> 01:30:56,602
+So the other thing
+
+2062
+01:30:56,602 --> 01:30:56,602
+you should keep in mind is,
+
+2063
+01:30:56,602 --> 01:30:56,722
+ultimately,
+
+2064
+01:30:56,722 --> 01:30:56,722
+that translation will not be done by your
+
+2065
+01:30:56,722 --> 01:30:57,382
+student.
+
+2066
+01:30:57,382 --> 01:30:57,942
+Yes.
+
+2067
+01:30:59,242 --> 01:31:01,232
+really new when you go
+
+2068
+01:31:01,232 --> 01:31:03,222
+from classical mechanics to quantum mechanics.
+
+2069
+01:31:03,222 --> 01:31:04,202
+In
+
+2070
+01:31:04,202 --> 01:31:07,242
+classical mechanics the notion of a state
+
+2071
+01:31:07,242 --> 01:31:10,282
+is a point in a space of points,
+
+2072
+01:31:10,302 --> 01:31:11,282
+in other words in a set.
+
+2073
+01:31:11,282 --> 01:31:15,802
+It doesn't make any sense to
+
+2074
+01:31:15,802 --> 01:31:20,322
+multiply points in a set by
+
+2075
+01:31:20,322 --> 01:31:20,722
+a number.
+
+2076
+01:31:20,722 --> 01:31:21,322
+For example,
+
+2077
+01:31:21,322 --> 01:31:22,282
+let's take heads and tails.
+
+2078
+01:31:22,282 --> 01:31:23,882
+What does it mean to multiply
+
+2079
+01:31:23,882 --> 01:31:27,182
+heads by three or heads by a complex number?
+
+2080
+01:31:27,182 --> 01:31:27,982
+It doesn't mean anything.
+
+2081
+01:31:27,982 --> 01:31:28,962
+You just have
+
+2082
+01:31:28,962 --> 01:31:29,562
+two points,
+
+2083
+01:31:29,562 --> 01:31:30,782
+heads and tails,
+
+2084
+01:31:30,782 --> 01:31:32,922
+and that's all you have.
+
+2085
+01:31:32,922 --> 01:31:36,322
+You don't have a thing that
+
+2086
+01:31:36,322 --> 01:31:38,872
+you would call three times heads or
+
+2087
+01:31:38,872 --> 01:31:41,422
+minus three times heads or two plus four
+
+2088
+01:31:41,422 --> 01:31:42,762
+times i times heads.
+
+2089
+01:31:42,762 --> 01:31:45,782
+So in saying that state vector,
+
+2090
+01:31:45,782 --> 01:31:48,282
+that states of a system are
+
+2091
+01:31:48,922 --> 01:31:49,642
+a vector space,
+
+2092
+01:31:49,642 --> 01:31:51,722
+this is something new and radical and weird.
+
+2093
+01:31:51,722 --> 01:31:52,602
+You should not
+
+2094
+01:31:52,602 --> 01:31:53,942
+understand this at this point unless
+
+2095
+01:31:53,942 --> 01:31:55,282
+of course you've done quantum mechanics
+
+2096
+01:31:55,282 --> 01:31:55,702
+before.
+
+2097
+01:31:55,702 --> 01:31:57,902
+This should not make any sense at all,
+
+2098
+01:31:57,902 --> 01:31:58,862
+but for the
+
+2099
+01:31:58,862 --> 01:32:00,542
+moment we're doing some abstract
+
+2100
+01:32:00,542 --> 01:32:02,222
+mathematics to get some definitions and
+
+2101
+01:32:02,222 --> 01:32:04,822
+then I'll show you how those definitions apply.
+
+2102
+01:32:04,822 --> 01:32:08,362
+So first of all you can multiply a
+
+2103
+01:32:08,362 --> 01:32:08,802
+vector,
+
+2104
+01:32:08,802 --> 01:32:10,842
+an abstract vector,
+
+2105
+01:32:10,842 --> 01:32:13,662
+by any complex number and you get a new vector.
+
+2106
+01:32:13,942 --> 01:32:16,172
+That's an operation that you can do and
+
+2107
+01:32:16,172 --> 01:32:18,402
+the next operation is that you can add
+
+2108
+01:32:18,402 --> 01:32:19,142
+any two vectors.
+
+2109
+01:32:19,142 --> 01:32:20,832
+Now of course if you can add
+
+2110
+01:32:20,832 --> 01:32:22,522
+any two vectors and you can also
+
+2111
+01:32:22,522 --> 01:32:25,682
+multiply them by complex numbers then you
+
+2112
+01:32:25,682 --> 01:32:28,842
+can also then you can also multiply
+
+2113
+01:32:28,862 --> 01:32:31,422
+the first vector by a complex number,
+
+2114
+01:32:31,422 --> 01:32:33,922
+the second vector by a complex number,
+
+2115
+01:32:34,542 --> 01:32:36,142
+and that gives you some new,
+
+2116
+01:32:36,142 --> 01:32:37,842
+I won't call it c,
+
+2117
+01:32:37,842 --> 01:32:38,942
+I'll call it c prime.
+
+2118
+01:32:38,942 --> 01:32:43,502
+So what you can
+
+2119
+01:32:43,502 --> 01:32:44,812
+do with a vector space is
+
+2120
+01:32:44,812 --> 01:32:46,122
+you can take any pair of vectors,
+
+2121
+01:32:46,122 --> 01:32:48,382
+multiply both of
+
+2122
+01:32:48,382 --> 01:32:50,502
+them by arbitrary complex numbers,
+
+2123
+01:32:50,502 --> 01:32:51,862
+add them,
+
+2124
+01:32:51,862 --> 01:32:53,162
+and you get a new vector.
+
+2125
+01:32:53,162 --> 01:32:53,502
+So the
+
+2126
+01:32:53,502 --> 01:32:55,842
+notion of addition is well defined.
+
+2127
+01:32:55,842 --> 01:32:58,662
+Of course for ordinary pointers,
+
+2128
+01:32:58,862 --> 01:33:01,342
+the notion of addition is also
+
+2129
+01:33:01,342 --> 01:33:03,822
+defined and it's defined by the
+
+2130
+01:33:03,822 --> 01:33:08,802
+operation of drawing the parallelogram.
+
+2131
+01:33:13,422 --> 01:33:16,652
+Ordinary vectors satisfy both of these rules
+
+2132
+01:33:16,652 --> 01:33:19,882
+that you can multiply a vector by
+
+2133
+01:33:19,882 --> 01:33:21,102
+any real number,
+
+2134
+01:33:21,102 --> 01:33:22,842
+I'm sorry not complex numbers.
+
+2135
+01:33:22,842 --> 01:33:24,602
+Ordinary pointers,
+
+2136
+01:33:24,602 --> 01:33:26,002
+as I said,
+
+2137
+01:33:26,002 --> 01:33:26,102
+are
+
+2138
+01:33:26,102 --> 01:33:28,742
+vector spaces over the real numbers and that
+
+2139
+01:33:28,742 --> 01:33:31,992
+means that you can multiply any of them
+
+2140
+01:33:31,992 --> 01:33:35,242
+by a real number and you can add any
+
+2141
+01:33:35,242 --> 01:33:36,682
+pair of any pair of
+
+2142
+01:33:36,682 --> 01:33:38,122
+pointers to get a new pointer.
+
+2143
+01:33:38,122 --> 01:33:40,382
+So ordinary pointers in
+
+2144
+01:33:40,382 --> 01:33:42,182
+space are a special case of
+
+2145
+01:33:42,182 --> 01:33:43,982
+a vector space over the real numbers.
+
+2146
+01:33:43,982 --> 01:33:46,222
+Let me give
+
+2147
+01:33:46,222 --> 01:33:48,482
+you a couple of other examples,
+
+2148
+01:33:48,482 --> 01:33:51,742
+in particular vector spaces over the
+
+2149
+01:33:51,742 --> 01:33:52,542
+complex numbers.
+
+2150
+01:33:52,542 --> 01:33:58,142
+This was the reason Hilbert originally invented the notion
+
+2151
+01:33:58,142 --> 01:34:00,782
+of Hilbert space to describe functions.
+
+2152
+01:34:00,782 --> 01:34:02,822
+Functions of x,
+
+2153
+01:34:02,822 --> 01:34:03,302
+let's say,
+
+2154
+01:34:03,302 --> 01:34:04,062
+functions of one
+
+2155
+01:34:04,062 --> 01:34:04,542
+variable,
+
+2156
+01:34:04,542 --> 01:34:06,622
+for simplicity,
+
+2157
+01:34:06,622 --> 01:34:07,862
+that's the simplest example.
+
+2158
+01:34:16,502 --> 01:34:19,542
+Take the class of functions of one variable,
+
+2159
+01:34:19,542 --> 01:34:20,582
+x,
+
+2160
+01:34:20,582 --> 01:34:21,842
+let's take x to be the
+
+2161
+01:34:21,842 --> 01:34:22,102
+variable,
+
+2162
+01:34:22,102 --> 01:34:24,662
+but complex functions of one variable,
+
+2163
+01:34:24,662 --> 01:34:27,162
+functions psi of x,
+
+2164
+01:34:27,162 --> 01:34:28,122
+x to the
+
+2165
+01:34:33,942 --> 01:34:34,602
+inside,
+
+2166
+01:34:34,602 --> 01:34:37,142
+sum and part of 1,
+
+2167
+01:34:37,142 --> 01:34:37,722
+x to the outside.
+
+2168
+01:34:37,802 --> 01:34:38,822
+Let's take a look at the trainees' head.
+
+2169
+01:34:38,822 --> 01:34:38,822
+So,
+
+2170
+01:34:38,822 --> 01:34:38,822
+in 25,
+
+2171
+01:34:38,822 --> 01:34:39,442
+the hill's ohm's transform alternating
+
+2172
+01:34:39,442 --> 01:34:40,922
+karş 있으니 beこ.
+
+2173
+01:34:43,382 --> 01:34:43,542
+Let's come to each of the twoOkay,
+
+2174
+01:34:43,542 --> 01:34:46,922
+let's take a look at the
+
+2175
+01:34:46,922 --> 01:34:49,682
+Let's start with the 놀� 얼� wrought at the end
+
+2176
+01:34:49,682 --> 01:34:49,982
+Let's start with the whack runБ
+
+2177
+01:34:50,862 --> 01:34:52,872
+Every complex number is the sum of
+
+2178
+01:34:52,872 --> 01:34:54,882
+a real part plus an imaginary part,
+
+2179
+01:34:54,882 --> 01:34:56,322
+and
+
+2180
+01:34:56,322 --> 01:34:57,822
+every complex function,
+
+2181
+01:34:57,822 --> 01:35:00,222
+now this is a function of only one variable,
+
+2182
+01:35:00,222 --> 01:35:01,302
+it's not a
+
+2183
+01:35:01,302 --> 01:35:02,862
+function of a complex variable,
+
+2184
+01:35:02,862 --> 01:35:04,582
+it's a function of an ordinary variable,
+
+2185
+01:35:04,582 --> 01:35:05,642
+but the
+
+2186
+01:35:05,642 --> 01:35:07,802
+function itself can be complex.
+
+2187
+01:35:07,802 --> 01:35:10,752
+So this means that for
+
+2188
+01:35:10,752 --> 01:35:13,702
+every point x there is a
+
+2189
+01:35:13,702 --> 01:35:15,502
+complex number psi of x,
+
+2190
+01:35:15,502 --> 01:35:20,302
+or equivalently two real functions.
+
+2191
+01:35:20,302 --> 01:35:22,682
+Now let's take any
+
+2192
+01:35:22,682 --> 01:35:23,902
+complex function,
+
+2193
+01:35:23,902 --> 01:35:28,082
+let's take any complex function like this,
+
+2194
+01:35:28,082 --> 01:35:28,922
+we can
+
+2195
+01:35:28,922 --> 01:35:30,662
+multiply it by a complex number.
+
+2196
+01:35:30,662 --> 01:35:37,842
+Any complex number defines a new function.
+
+2197
+01:35:40,322 --> 01:35:43,682
+You can multiply the complex number psi plus
+
+2198
+01:35:43,682 --> 01:35:47,922
+psi real plus psi imaginary by a complex number alpha.
+
+2199
+01:35:47,922 --> 01:35:48,842
+In other words,
+
+2200
+01:35:48,862 --> 01:35:50,972
+complex numbers can be multiplied and
+
+2201
+01:35:50,972 --> 01:35:53,082
+therefore you can take any complex
+
+2202
+01:35:53,082 --> 01:35:55,922
+number and multiply it by any function.
+
+2203
+01:35:55,922 --> 01:35:58,622
+So first of all,
+
+2204
+01:35:58,622 --> 01:36:01,522
+functions of x satisfy
+
+2205
+01:36:01,522 --> 01:36:02,982
+the first rule.
+
+2206
+01:36:02,982 --> 01:36:05,822
+The collection of functions,
+
+2207
+01:36:05,822 --> 01:36:07,642
+the collection of functions of
+
+2208
+01:36:07,642 --> 01:36:07,882
+x,
+
+2209
+01:36:07,882 --> 01:36:09,672
+a collection of complex functions
+
+2210
+01:36:09,672 --> 01:36:11,462
+of x form a vector space.
+
+2211
+01:36:11,462 --> 01:36:13,302
+That's the
+
+2212
+01:36:13,302 --> 01:36:13,662
+that's the first rule.
+
+2213
+01:36:13,682 --> 01:36:14,202
+That's the assertion.
+
+2214
+01:36:14,202 --> 01:36:15,602
+We're going to check that.
+
+2215
+01:36:15,602 --> 01:36:16,902
+First of all,
+
+2216
+01:36:16,902 --> 01:36:18,062
+you can multiply any
+
+2217
+01:36:18,062 --> 01:36:19,152
+function by a complex number
+
+2218
+01:36:19,152 --> 01:36:20,242
+and you get a new function.
+
+2219
+01:36:20,242 --> 01:36:20,982
+Alright,
+
+2220
+01:36:20,982 --> 01:36:21,622
+so it satisfies
+
+2221
+01:36:21,622 --> 01:36:22,462
+rule number one.
+
+2222
+01:36:22,462 --> 01:36:24,822
+What about rule number two?
+
+2223
+01:36:24,822 --> 01:36:27,522
+You can take any pair of functions
+
+2224
+01:36:28,302 --> 01:36:30,962
+and add them together and you get a new function.
+
+2225
+01:36:30,962 --> 01:36:32,702
+So if you have two functions,
+
+2226
+01:36:33,202 --> 01:36:34,102
+psi and phi,
+
+2227
+01:36:34,102 --> 01:36:34,842
+let's call them.
+
+2228
+01:36:43,002 --> 01:36:43,602
+That's another
+
+2229
+01:36:43,602 --> 01:36:43,862
+function,
+
+2230
+01:36:43,862 --> 01:36:45,102
+a perfectly good one.
+
+2231
+01:36:45,102 --> 01:36:50,322
+So if psi and phi are complex functions,
+
+2232
+01:36:50,322 --> 01:36:51,442
+their sum is a complex
+
+2233
+01:36:51,442 --> 01:36:51,802
+function.
+
+2234
+01:36:51,802 --> 01:36:54,652
+That's enough to tell you that complex
+
+2235
+01:36:54,652 --> 01:36:57,502
+functions are a vector space over the complex
+
+2236
+01:36:57,502 --> 01:36:57,962
+numbers.
+
+2237
+01:36:57,962 --> 01:37:03,742
+Real functions are a vector space over the real numbers,
+
+2238
+01:37:03,742 --> 01:37:06,162
+but they're not a vector space
+
+2239
+01:37:06,162 --> 01:37:07,322
+over the complex numbers.
+
+2240
+01:37:07,322 --> 01:37:07,942
+Why not?
+
+2241
+01:37:07,942 --> 01:37:10,122
+Because you can't multiply a
+
+2242
+01:37:10,122 --> 01:37:12,302
+real function by a complex number
+
+2243
+01:37:12,302 --> 01:37:13,522
+and get back a real function.
+
+2244
+01:37:13,522 --> 01:37:15,862
+You'll get back a complex function.
+
+2245
+01:37:15,862 --> 01:37:17,362
+You won't get back a real function.
+
+2246
+01:37:18,882 --> 01:37:21,432
+So complex functions form a
+
+2247
+01:37:21,432 --> 01:37:23,982
+complex vector space and that's the,
+
+2248
+01:37:23,982 --> 01:37:26,362
+that actually is the vector space
+
+2249
+01:37:26,362 --> 01:37:29,142
+that Hilbert was first interested in.
+
+2250
+01:37:29,142 --> 01:37:33,322
+That's an example of a Hilbert space.
+
+2251
+01:37:33,322 --> 01:37:34,022
+It's an important
+
+2252
+01:37:34,022 --> 01:37:35,322
+example in quantum mechanics,
+
+2253
+01:37:35,322 --> 01:37:36,742
+maybe the most important example,
+
+2254
+01:37:36,742 --> 01:37:41,442
+but for now I'm just illustrating the,
+
+2255
+01:37:41,442 --> 01:37:41,902
+the
+
+2256
+01:37:41,902 --> 01:37:43,622
+abstract mathematical definitions.
+
+2257
+01:37:43,622 --> 01:37:47,352
+Complex functions of x form a
+
+2258
+01:37:47,352 --> 01:37:51,082
+vector space over the complex numbers.
+
+2259
+01:37:52,282 --> 01:37:53,542
+Let me give you another one.
+
+2260
+01:37:53,542 --> 01:37:58,682
+It's very similar.
+
+2261
+01:37:58,682 --> 01:38:02,122
+Let's,
+
+2262
+01:38:02,122 --> 01:38:03,782
+let's,
+
+2263
+01:38:06,341 --> 01:38:07,302
+let's,
+
+2264
+01:38:07,622 --> 01:38:08,102
+let's,
+
+2265
+01:38:10,601 --> 01:38:11,562
+let's,
+
+2266
+01:38:14,942 --> 01:38:15,462
+let's,
+
+2267
+01:38:15,482 --> 01:38:15,582
+let's,
+
+2268
+01:38:15,582 --> 01:38:17,422
+Let's invent a thing called a column vector.
+
+2269
+01:38:17,422 --> 01:38:19,892
+A column vector is just
+
+2270
+01:38:19,892 --> 01:38:22,362
+a collection of numbers which have,
+
+2271
+01:38:22,362 --> 01:38:24,182
+and we can decide how many.
+
+2272
+01:38:24,182 --> 01:38:25,842
+We've fixed the number of numbers.
+
+2273
+01:38:27,022 --> 01:38:27,542
+One,
+
+2274
+01:38:27,542 --> 01:38:28,022
+two,
+
+2275
+01:38:28,022 --> 01:38:28,382
+three,
+
+2276
+01:38:28,382 --> 01:38:29,222
+any number we like.
+
+2277
+01:38:29,222 --> 01:38:30,682
+But let's fix it.
+
+2278
+01:38:30,682 --> 01:38:33,382
+And we simply arrange them in a column.
+
+2279
+01:38:33,382 --> 01:38:35,402
+Let's call those numbers,
+
+2280
+01:38:35,402 --> 01:38:36,602
+let's give them,
+
+2281
+01:38:36,602 --> 01:38:37,602
+let's call them,
+
+2282
+01:38:37,602 --> 01:38:39,262
+a one,
+
+2283
+01:38:39,262 --> 01:38:40,482
+a two,
+
+2284
+01:38:40,482 --> 01:38:41,642
+a three,
+
+2285
+01:38:41,642 --> 01:38:42,622
+and A4.
+
+2286
+01:38:42,622 --> 01:38:47,542
+This would be a vector space of dimension 4.
+
+2287
+01:38:47,542 --> 01:38:50,542
+We could also think of
+
+2288
+01:38:50,542 --> 01:38:52,262
+vector spaces of dimension 2,
+
+2289
+01:38:52,262 --> 01:38:54,382
+A1 and A2.
+
+2290
+01:38:54,382 --> 01:38:56,622
+There's pairs of numbers,
+
+2291
+01:38:56,622 --> 01:38:58,302
+pairs of complex
+
+2292
+01:38:58,302 --> 01:38:58,762
+numbers.
+
+2293
+01:38:58,762 --> 01:39:02,462
+Here's quadruples of complex numbers.
+
+2294
+01:39:02,462 --> 01:39:04,822
+We could make quintuples of
+
+2295
+01:39:04,822 --> 01:39:05,762
+complex numbers,
+
+2296
+01:39:05,762 --> 01:39:07,582
+sextuples of complex numbers,
+
+2297
+01:39:07,582 --> 01:39:09,322
+and we could even imagine
+
+2298
+01:39:09,322 --> 01:39:13,082
+infinite columns of complex numbers,
+
+2299
+01:39:13,082 --> 01:39:16,182
+or just one complex number,
+
+2300
+01:39:16,182 --> 01:39:17,962
+just one complex
+
+2301
+01:39:17,962 --> 01:39:18,342
+number,
+
+2302
+01:39:18,342 --> 01:39:19,282
+one unit long,
+
+2303
+01:39:19,282 --> 01:39:20,162
+A1 of X.
+
+2304
+01:39:20,162 --> 01:39:20,922
+All of these,
+
+2305
+01:39:20,922 --> 01:39:22,062
+each one separately,
+
+2306
+01:39:22,062 --> 01:39:23,242
+not all
+
+2307
+01:39:23,242 --> 01:39:23,502
+together,
+
+2308
+01:39:23,502 --> 01:39:24,482
+but each one separately,
+
+2309
+01:39:24,482 --> 01:39:26,842
+four dimensions or two dimensions or three
+
+2310
+01:39:26,842 --> 01:39:27,262
+dimensions,
+
+2311
+01:39:27,262 --> 01:39:29,322
+each of these form,
+
+2312
+01:39:29,322 --> 01:39:31,522
+the collection of such objects,
+
+2313
+01:39:31,522 --> 01:39:33,762
+form a
+
+2314
+01:39:34,442 --> 01:39:35,742
+complex vector space,
+
+2315
+01:39:37,742 --> 01:39:39,302
+vector space over the complex number.
+
+2316
+01:39:39,322 --> 01:39:43,822
+So let's take this particular complex vector space here.
+
+2317
+01:39:43,822 --> 01:39:44,722
+A1,
+
+2318
+01:39:44,722 --> 01:39:45,262
+A2,
+
+2319
+01:39:45,262 --> 01:39:45,762
+A3,
+
+2320
+01:39:45,762 --> 01:39:46,202
+A4,
+
+2321
+01:39:46,202 --> 01:39:47,522
+where the A's are
+
+2322
+01:39:47,522 --> 01:39:49,262
+arbitrary complex numbers.
+
+2323
+01:39:49,262 --> 01:39:54,522
+If these are arbitrary complex numbers and we display
+
+2324
+01:39:54,522 --> 01:39:56,022
+them in a column like this,
+
+2325
+01:39:56,022 --> 01:40:00,642
+then I assert that there are rules which will allow
+
+2326
+01:40:00,642 --> 01:40:01,722
+this to be a vector space.
+
+2327
+01:40:01,722 --> 01:40:02,682
+So what are the rules?
+
+2328
+01:40:02,682 --> 01:40:05,402
+I'm going to invent now a rule
+
+2329
+01:40:05,402 --> 01:40:06,202
+of addition.
+
+2330
+01:40:06,682 --> 01:40:09,062
+Notice so far there has been no rule of
+
+2331
+01:40:09,062 --> 01:40:09,302
+multiplication.
+
+2332
+01:40:09,302 --> 01:40:10,522
+There's no multiplication of vectors,
+
+2333
+01:40:10,522 --> 01:40:12,802
+only addition of vectors.
+
+2334
+01:40:12,802 --> 01:40:15,422
+So the rule for adding two vectors,
+
+2335
+01:40:15,602 --> 01:40:16,382
+here's two vectors.
+
+2336
+01:40:16,382 --> 01:40:17,662
+One I'll call A,
+
+2337
+01:40:17,662 --> 01:40:18,982
+the other one I'll call B.
+
+2338
+01:40:18,982 --> 01:40:19,662
+B1,
+
+2339
+01:40:19,662 --> 01:40:20,382
+B2,
+
+2340
+01:40:20,382 --> 01:40:21,462
+B3,
+
+2341
+01:40:21,462 --> 01:40:22,142
+B4.
+
+2342
+01:40:24,792 --> 01:40:26,162
+Just add the entries.
+
+2343
+01:40:26,162 --> 01:40:31,542
+This is the definition of adding of column vectors.
+
+2344
+01:40:31,542 --> 01:40:33,882
+A1 plus B1,
+
+2345
+01:40:33,882 --> 01:40:36,062
+A2 plus B2,
+
+2346
+01:40:36,062 --> 01:40:38,402
+A3 plus B3,
+
+2347
+01:40:38,402 --> 01:40:40,542
+A4 plus B4.
+
+2348
+01:40:40,542 --> 01:40:43,482
+Obviously with this definition,
+
+2349
+01:40:43,482 --> 01:40:47,722
+if you take any two vectors and you add them,
+
+2350
+01:40:47,722 --> 01:40:49,162
+you get another vector.
+
+2351
+01:40:50,462 --> 01:40:53,622
+The A's and B's are arbitrary complex numbers.
+
+2352
+01:40:53,622 --> 01:40:56,732
+But each specification of four
+
+2353
+01:40:56,732 --> 01:40:59,842
+complex numbers defines a vector.
+
+2354
+01:41:00,842 --> 01:41:02,062
+Here are two vectors,
+
+2355
+01:41:02,062 --> 01:41:03,282
+one labeled A,
+
+2356
+01:41:03,282 --> 01:41:04,142
+one labeled B.
+
+2357
+01:41:04,142 --> 01:41:05,292
+Here's a third one that
+
+2358
+01:41:05,292 --> 01:41:06,442
+you can make out of it.
+
+2359
+01:41:07,662 --> 01:41:08,382
+All right.
+
+2360
+01:41:08,382 --> 01:41:09,282
+So I started,
+
+2361
+01:41:09,282 --> 01:41:10,262
+for some reason,
+
+2362
+01:41:10,262 --> 01:41:12,322
+I started with the addition rule here.
+
+2363
+01:41:12,322 --> 01:41:15,352
+But it's also true that we can invent
+
+2364
+01:41:15,352 --> 01:41:18,382
+the idea of multiplication by a complex number.
+
+2365
+01:41:18,782 --> 01:41:20,482
+If we want to take a vector,
+
+2366
+01:41:20,482 --> 01:41:21,422
+let's call it A1,
+
+2367
+01:41:21,422 --> 01:41:21,982
+A2,
+
+2368
+01:41:21,982 --> 01:41:22,562
+A3,
+
+2369
+01:41:22,562 --> 01:41:23,062
+and A4,
+
+2370
+01:41:23,062 --> 01:41:27,542
+and multiply it by the complex number alpha,
+
+2371
+01:41:27,542 --> 01:41:31,402
+we just do that by multiplying every entry by alpha.
+
+2372
+01:41:32,202 --> 01:41:33,262
+Alpha A1,
+
+2373
+01:41:33,262 --> 01:41:34,862
+Alpha A2,
+
+2374
+01:41:34,862 --> 01:41:36,602
+Alpha A3,
+
+2375
+01:41:36,602 --> 01:41:37,422
+and Alpha A4.
+
+2376
+01:41:37,982 --> 01:41:38,362
+All right.
+
+2377
+01:41:41,121 --> 01:41:44,662
+So we multiply every entry by the same number.
+
+2378
+01:41:44,662 --> 01:41:49,162
+That defines multiplication by a complex number.
+
+2379
+01:41:49,602 --> 01:41:52,442
+And all I've done is multiply complex numbers here.
+
+2380
+01:41:54,182 --> 01:41:54,862
+Obviously,
+
+2381
+01:41:54,862 --> 01:41:57,322
+given any vector and any complex number,
+
+2382
+01:41:57,322 --> 01:41:59,862
+I can make another vector by multiplication.
+
+2383
+01:42:00,422 --> 01:42:02,222
+Not multiplication of vectors,
+
+2384
+01:42:02,222 --> 01:42:05,082
+but multiplication of numbers by vectors.
+
+2385
+01:42:05,682 --> 01:42:07,682
+And given any two vectors,
+
+2386
+01:42:07,682 --> 01:42:08,342
+you can add them.
+
+2387
+01:42:08,342 --> 01:42:12,662
+So the collection of objects arranged in a
+
+2388
+01:42:12,662 --> 01:42:16,982
+column this way also form a vector space.
+
+2389
+01:42:17,362 --> 01:42:17,862
+Now,
+
+2390
+01:42:17,862 --> 01:42:20,622
+if I were to take the collection
+
+2391
+01:42:20,622 --> 01:42:23,382
+that consists of vectors of length 2,
+
+2392
+01:42:23,382 --> 01:42:24,182
+length 3,
+
+2393
+01:42:24,182 --> 01:42:24,982
+length 4,
+
+2394
+01:42:24,982 --> 01:42:26,242
+and combine them all together,
+
+2395
+01:42:26,242 --> 01:42:28,982
+that's not a vector space.
+
+2396
+01:42:29,342 --> 01:42:32,842
+Because I haven't given you any rule for adding a
+
+2397
+01:42:32,842 --> 01:42:36,342
+vector with length 2 to a vector of length 3.
+
+2398
+01:42:36,342 --> 01:42:38,542
+I haven't told you how to do that.
+
+2399
+01:42:39,302 --> 01:42:41,642
+And I don't see any obvious rule for that.
+
+2400
+01:42:42,002 --> 01:42:43,082
+So it's,
+
+2401
+01:42:43,082 --> 01:42:44,602
+with this set of rules,
+
+2402
+01:42:44,602 --> 01:42:48,662
+the collection of two-dimensional vectors,
+
+2403
+01:42:48,662 --> 01:42:49,122
+3,
+
+2404
+01:42:49,122 --> 01:42:49,522
+4,
+
+2405
+01:42:49,522 --> 01:42:50,582
+the whole shebang,
+
+2406
+01:42:50,582 --> 01:42:52,182
+does not form a vector space.
+
+2407
+01:42:53,162 --> 01:42:54,862
+But for a given length,
+
+2408
+01:42:54,862 --> 01:42:55,982
+fix the length,
+
+2409
+01:42:55,982 --> 01:42:57,182
+it forms a vector space.
+
+2410
+01:42:57,602 --> 01:43:00,302
+And the terminology is that it forms a vector space,
+
+2411
+01:43:00,302 --> 01:43:01,142
+in this case,
+
+2412
+01:43:01,142 --> 01:43:02,102
+of dimension 4.
+
+2413
+01:43:03,942 --> 01:43:04,462
+Now,
+
+2414
+01:43:04,462 --> 01:43:04,862
+of course,
+
+2415
+01:43:04,862 --> 01:43:06,322
+this is a very complex problem.
+
+2416
+01:43:06,322 --> 01:43:09,322
+This has an analog for ordinary pointers.
+
+2417
+01:43:09,842 --> 01:43:11,142
+For pointers,
+
+2418
+01:43:11,142 --> 01:43:14,302
+we can just think of these as the
+
+2419
+01:43:14,302 --> 01:43:17,462
+components of the pointer along the different axes.
+
+2420
+01:43:18,082 --> 01:43:19,222
+Pick some axes,
+
+2421
+01:43:19,222 --> 01:43:19,921
+x,
+
+2422
+01:43:19,921 --> 01:43:20,361
+y,
+
+2423
+01:43:20,361 --> 01:43:20,921
+and z,
+
+2424
+01:43:20,921 --> 01:43:22,962
+and pointers have components.
+
+2425
+01:43:23,502 --> 01:43:26,602
+So we can also specify an ordinary
+
+2426
+01:43:26,602 --> 01:43:29,702
+pointer by specifying a collection of components,
+
+2427
+01:43:30,561 --> 01:43:34,322
+a collection of components along different axes.
+
+2428
+01:43:34,322 --> 01:43:39,542
+And that also defines a pointer.
+
+2429
+01:43:40,222 --> 01:43:43,202
+So it's natural to call these
+
+2430
+01:43:43,202 --> 01:43:46,182
+numbers the components of a vector.
+
+2431
+01:43:47,062 --> 01:43:50,622
+And we'll come back to the uniqueness of components.
+
+2432
+01:43:52,982 --> 01:43:54,042
+You can,
+
+2433
+01:43:54,042 --> 01:43:54,642
+if you like,
+
+2434
+01:43:54,642 --> 01:43:58,592
+think of such a column as
+
+2435
+01:43:58,592 --> 01:44:02,542
+a function of the index variable here.
+
+2436
+01:44:02,722 --> 01:44:03,182
+Well,
+
+2437
+01:44:03,182 --> 01:44:04,302
+let's start with that.
+
+2438
+01:44:04,302 --> 01:44:05,342
+That's too abstract.
+
+2439
+01:44:05,602 --> 01:44:07,042
+Let's drop that for the moment.
+
+2440
+01:44:07,122 --> 01:44:07,922
+We'll come back to it.
+
+2441
+01:44:08,082 --> 01:44:09,442
+It can be thought of as a function,
+
+2442
+01:44:09,442 --> 01:44:11,522
+but we don't need to.
+
+2443
+01:44:18,582 --> 01:44:18,982
+Now,
+
+2444
+01:44:18,982 --> 01:44:19,322
+of course,
+
+2445
+01:44:19,322 --> 01:44:22,962
+I've told you nothing about in what possible sense,
+
+2446
+01:44:23,122 --> 01:44:25,512
+what possible sense can it make
+
+2447
+01:44:25,512 --> 01:44:27,902
+to identify vectors with states of systems.
+
+2448
+01:44:28,062 --> 01:44:29,122
+We're not going to do that tonight.
+
+2449
+01:44:29,722 --> 01:44:30,122
+Tonight,
+
+2450
+01:44:30,122 --> 01:44:32,012
+we're just going to talk about
+
+2451
+01:44:32,012 --> 01:44:33,902
+the abstract notion of a vector.
+
+2452
+01:44:34,302 --> 01:44:34,842
+Tonight,
+
+2453
+01:44:34,842 --> 01:44:35,842
+and a bit of next week,
+
+2454
+01:44:35,842 --> 01:44:37,982
+we'll talk about the abstract notion of a vector.
+
+2455
+01:44:38,142 --> 01:44:40,912
+And then we'll talk about how vector
+
+2456
+01:44:40,912 --> 01:44:43,682
+spaces define the states of a system.
+
+2457
+01:44:43,922 --> 01:44:47,582
+And then go on and work out some examples
+
+2458
+01:44:47,582 --> 01:44:51,242
+of quantum mechanical systems described by such vector spaces.
+
+2459
+01:44:51,822 --> 01:44:52,702
+At the moment,
+
+2460
+01:44:52,702 --> 01:44:55,682
+this should be sort of mumbo jumbo,
+
+2461
+01:44:55,682 --> 01:44:56,082
+right?
+
+2462
+01:44:56,542 --> 01:44:57,142
+Success.
+
+2463
+01:44:57,482 --> 01:44:57,902
+Hmm?
+
+2464
+01:44:58,162 --> 01:44:58,762
+Success.
+
+2465
+01:44:59,082 --> 01:44:59,802
+What success?
+
+2466
+01:45:00,502 --> 01:45:01,442
+You've succeeded.
+
+2467
+01:45:01,722 --> 01:45:03,562
+In making mumbo jumbo.
+
+2468
+01:45:03,562 --> 01:45:04,042
+No.
+
+2469
+01:45:04,242 --> 01:45:06,562
+I think I've given you rather accurate definitions
+
+2470
+01:45:06,562 --> 01:45:08,882
+that you can understand of what vectors are.
+
+2471
+01:45:10,082 --> 01:45:12,022
+And how to manipulate them.
+
+2472
+01:45:12,622 --> 01:45:14,902
+How to manipulate them,
+
+2473
+01:45:14,902 --> 01:45:17,162
+how to do the abstract operations with them.
+
+2474
+01:45:17,342 --> 01:45:21,662
+These abstract operations are in many ways analogous to
+
+2475
+01:45:21,662 --> 01:45:25,982
+the abstract operations that you do with set theoretic logic,
+
+2476
+01:45:25,982 --> 01:45:27,122
+with Boolean logic.
+
+2477
+01:45:28,722 --> 01:45:29,842
+These abstract,
+
+2478
+01:45:29,842 --> 01:45:33,542
+these abstractions for how you manipulate vectors,
+
+2479
+01:45:33,562 --> 01:45:33,742
+these vector spaces,
+
+2480
+01:45:33,742 --> 01:45:37,902
+are the generalizations,
+
+2481
+01:45:37,902 --> 01:45:38,422
+if you like,
+
+2482
+01:45:38,422 --> 01:45:43,402
+of how Boolean set theory allows you to ask,
+
+2483
+01:45:43,402 --> 01:45:46,402
+allows you to combine concepts together.
+
+2484
+01:45:46,662 --> 01:45:46,902
+And,
+
+2485
+01:45:46,902 --> 01:45:47,362
+or,
+
+2486
+01:45:47,362 --> 01:45:51,362
+all these ideas have some meaning in set theory.
+
+2487
+01:45:51,582 --> 01:45:52,182
+What is and?
+
+2488
+01:45:52,702 --> 01:45:54,242
+And is you take two sets and you
+
+2489
+01:45:54,242 --> 01:45:55,782
+combine them and make the union of them.
+
+2490
+01:45:55,882 --> 01:45:57,502
+Or you take the intersection.
+
+2491
+01:45:57,742 --> 01:45:58,282
+Or is it the other way?
+
+2492
+01:45:58,382 --> 01:45:58,842
+It's the other way,
+
+2493
+01:45:58,842 --> 01:45:59,162
+isn't it?
+
+2494
+01:45:59,262 --> 01:45:59,782
+It's the other way,
+
+2495
+01:45:59,782 --> 01:46:00,102
+sorry.
+
+2496
+01:46:00,642 --> 01:46:01,842
+And is the intersection.
+
+2497
+01:46:02,002 --> 01:46:02,902
+Or is the,
+
+2498
+01:46:02,902 --> 01:46:03,542
+is the intersection.
+
+2499
+01:46:03,542 --> 01:46:04,542
+Or is the union of two sets.
+
+2500
+01:46:05,742 --> 01:46:08,142
+The analogous logic in quantum
+
+2501
+01:46:08,142 --> 01:46:10,542
+mechanics doesn't operate on sets.
+
+2502
+01:46:10,842 --> 01:46:12,162
+It acts on vector spaces.
+
+2503
+01:46:12,602 --> 01:46:14,382
+So it's best that we get rid,
+
+2504
+01:46:14,382 --> 01:46:16,962
+that we go through vector spaces once and for all.
+
+2505
+01:46:17,582 --> 01:46:19,522
+It's the basic underlying mathematics.
+
+2506
+01:46:20,022 --> 01:46:21,422
+And once we get familiar with it,
+
+2507
+01:46:21,422 --> 01:46:24,002
+it won't seem so much mumbo jumbo.
+
+2508
+01:46:24,122 --> 01:46:24,642
+But at the moment,
+
+2509
+01:46:24,642 --> 01:46:25,842
+we're doing abstract mathematics.
+
+2510
+01:46:26,262 --> 01:46:26,842
+Any other questions?
+
+2511
+01:46:28,502 --> 01:46:29,062
+Okay,
+
+2512
+01:46:29,062 --> 01:46:31,182
+so let's continue with the abstractions.
+
+2513
+01:46:39,422 --> 01:46:40,062
+Now,
+
+2514
+01:46:40,062 --> 01:46:42,482
+there's a notion of every,
+
+2515
+01:46:42,482 --> 01:46:44,542
+for every such vector space,
+
+2516
+01:46:44,542 --> 01:46:46,302
+well let's leave this here.
+
+2517
+01:46:46,961 --> 01:46:49,522
+There's a notion of a dual vector space.
+
+2518
+01:46:50,942 --> 01:46:53,452
+The dual vector space is in one
+
+2519
+01:46:53,452 --> 01:46:55,962
+to one correspondence with the original vector space.
+
+2520
+01:46:56,082 --> 01:46:56,202
+Well,
+
+2521
+01:46:56,202 --> 01:46:57,002
+let's go back a step.
+
+2522
+01:46:57,382 --> 01:46:59,342
+Let's just talk about complex numbers.
+
+2523
+01:46:59,342 --> 01:47:01,762
+For complex numbers,
+
+2524
+01:47:01,762 --> 01:47:06,842
+incidentally,
+
+2525
+01:47:06,842 --> 01:47:09,782
+complex numbers are themselves a vector space.
+
+2526
+01:47:10,182 --> 01:47:13,402
+You can multiply complex numbers by a complex number.
+
+2527
+01:47:13,722 --> 01:47:15,662
+You can add complex numbers.
+
+2528
+01:47:16,202 --> 01:47:18,042
+They're just the case of one dimension.
+
+2529
+01:47:18,522 --> 01:47:21,412
+One dimensional vector spaces over the
+
+2530
+01:47:21,412 --> 01:47:24,302
+complex numbers are just the complex numbers.
+
+2531
+01:47:25,382 --> 01:47:26,122
+Now,
+
+2532
+01:47:26,122 --> 01:47:29,242
+there's an operation that you can do on complex numbers.
+
+2533
+01:47:29,242 --> 01:47:31,842
+Which is called complex conjugation.
+
+2534
+01:47:32,462 --> 01:47:34,322
+It's a very important operation.
+
+2535
+01:47:36,022 --> 01:47:37,722
+And all it is,
+
+2536
+01:47:37,722 --> 01:47:40,722
+if you think about the Cartesian plane,
+
+2537
+01:47:40,722 --> 01:47:42,142
+if you think about the complex plane,
+
+2538
+01:47:43,902 --> 01:47:45,892
+the real part of a
+
+2539
+01:47:45,892 --> 01:47:47,882
+number being on the horizontal axis,
+
+2540
+01:47:49,082 --> 01:47:51,982
+and the imaginary part being on the vertical axis,
+
+2541
+01:47:55,402 --> 01:47:56,002
+then,
+
+2542
+01:47:56,002 --> 01:47:58,102
+the number then is described,
+
+2543
+01:47:59,762 --> 01:48:01,142
+by a real part,
+
+2544
+01:48:01,142 --> 01:48:04,162
+the real part is the horizontal component,
+
+2545
+01:48:04,942 --> 01:48:08,622
+and the imaginary part is the vertical component.
+
+2546
+01:48:09,042 --> 01:48:10,722
+And we would just write that this number,
+
+2547
+01:48:10,722 --> 01:48:11,662
+usually called z,
+
+2548
+01:48:11,662 --> 01:48:13,822
+is equal to x plus iy.
+
+2549
+01:48:17,522 --> 01:48:21,382
+The complex conjugate number is just
+
+2550
+01:48:21,382 --> 01:48:25,242
+a number reflected about the horizontal.
+
+2551
+01:48:26,122 --> 01:48:28,062
+If this is a number called z,
+
+2552
+01:48:29,242 --> 01:48:30,142
+x plus iy,
+
+2553
+01:48:30,981 --> 01:48:34,442
+then x minus iy is called z star.
+
+2554
+01:48:38,582 --> 01:48:40,692
+x minus iy is the
+
+2555
+01:48:40,692 --> 01:48:42,802
+complex conjugate of x plus iy,
+
+2556
+01:48:42,882 --> 01:48:46,282
+or z star is the complex conjugate of z.
+
+2557
+01:48:47,962 --> 01:48:49,902
+Let's manipulate something.
+
+2558
+01:48:50,102 --> 01:48:53,162
+Let's consider the product of z times z star.
+
+2559
+01:48:54,322 --> 01:48:55,922
+z times z star,
+
+2560
+01:48:55,922 --> 01:48:56,422
+what is it?
+
+2561
+01:48:59,862 --> 01:49:04,542
+It's equal to x plus iy times x minus iy.
+
+2562
+01:49:06,382 --> 01:49:07,682
+That's x squared.
+
+2563
+01:49:10,102 --> 01:49:12,872
+Now we get ixy and then we
+
+2564
+01:49:12,872 --> 01:49:15,642
+get minus ixy from the cross terms.
+
+2565
+01:49:15,862 --> 01:49:16,562
+They cancel.
+
+2566
+01:49:16,822 --> 01:49:19,102
+And then plus y squared.
+
+2567
+01:49:19,262 --> 01:49:20,622
+Why did I write plus y squared?
+
+2568
+01:49:21,142 --> 01:49:23,842
+Because i times minus i is plus 1.
+
+2569
+01:49:24,482 --> 01:49:26,442
+i times i is minus 1.
+
+2570
+01:49:26,442 --> 01:49:29,162
+So i times minus i is plus 1.
+
+2571
+01:49:30,182 --> 01:49:33,602
+z star z is x squared plus y squared.
+
+2572
+01:49:34,082 --> 01:49:36,182
+What is x squared plus y squared?
+
+2573
+01:49:36,602 --> 01:49:38,802
+x squared plus y squared is the
+
+2574
+01:49:38,802 --> 01:49:41,002
+square of the length of this hypotenuse here.
+
+2575
+01:49:43,342 --> 01:49:47,122
+So z star z is the square of the length,
+
+2576
+01:49:47,262 --> 01:49:50,542
+or the square of the magnitude of the number,
+
+2577
+01:49:50,542 --> 01:49:52,182
+or its distance from the origin.
+
+2578
+01:49:53,402 --> 01:49:56,222
+So complex conjugation is a convenient,
+
+2579
+01:49:56,442 --> 01:49:58,022
+convenient operation.
+
+2580
+01:49:58,522 --> 01:49:59,902
+Among other things,
+
+2581
+01:50:00,042 --> 01:50:03,352
+the complex conjugate times a number is
+
+2582
+01:50:03,352 --> 01:50:06,662
+the square of the magnitude of the number.
+
+2583
+01:50:12,682 --> 01:50:15,942
+And if you're not,
+
+2584
+01:50:16,062 --> 01:50:17,902
+most of you of course
+
+2585
+01:50:17,902 --> 01:50:19,742
+are quite familiar with complex conjugation.
+
+2586
+01:50:19,782 --> 01:50:21,092
+I want you to think of
+
+2587
+01:50:21,092 --> 01:50:22,402
+it as a very basic operation.
+
+2588
+01:50:23,042 --> 01:50:24,482
+But more than that,
+
+2589
+01:50:24,482 --> 01:50:26,722
+I want you to think of it as
+
+2590
+01:50:26,722 --> 01:50:28,962
+a mapping of the numbers back into the numbers.
+
+2591
+01:50:29,242 --> 01:50:30,522
+Given any number,
+
+2592
+01:50:30,522 --> 01:50:31,542
+any complex number,
+
+2593
+01:50:31,842 --> 01:50:34,102
+you can map it to its complex conjugate.
+
+2594
+01:50:36,462 --> 01:50:37,742
+What about vector spaces?
+
+2595
+01:50:38,182 --> 01:50:39,582
+I think we should probably quit now.
+
+2596
+01:50:39,722 --> 01:50:40,802
+I think it's time to quit now.
+
+2597
+01:50:41,002 --> 01:50:42,342
+Next time we'll go through
+
+2598
+01:50:42,342 --> 01:50:43,682
+a little more about vector spaces.
+
+2599
+01:50:43,962 --> 01:50:44,742
+Vector spaces,
+
+2600
+01:50:44,742 --> 01:50:45,442
+operators,
+
+2601
+01:50:47,202 --> 01:50:47,982
+Hermitian operators,
+
+2602
+01:50:47,982 --> 01:50:49,262
+and eigenvalues.
+
+2603
+01:50:50,462 --> 01:50:52,132
+And then we'll begin applying
+
+2604
+01:50:52,132 --> 01:50:53,802
+it to quantum mechanical problems.
+
+2605
+01:51:02,242 --> 01:51:05,322
+The preceding program is copyrighted by Stanford University.
+
+2606
+01:51:05,782 --> 01:51:08,482
+Please visit us at stanford.edu.
+
