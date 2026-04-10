@@ -1,0 +1,2272 @@
+# Transcript
+
+Source: core/general_relativity/2012_fall_theoretical_minimum/162 - General Relativity Lecture 8 [q6j180O9H84].mkv
+
+- [00:00:05,139 - 00:00:06,260] Stanford University.
+- [00:00:13,100 - 00:00:13,660] Okay,
+- [00:00:13,660 - 00:00:15,920] the last time I explained to
+- [00:00:15,920 - 00:00:18,180] you Kruskal coordinates for a black hole.
+- [00:00:19,020 - 00:00:19,900] Let's go over it.
+- [00:00:20,140 - 00:00:20,780] And tonight,
+- [00:00:20,780 - 00:00:23,170] I want to show you how
+- [00:00:23,170 - 00:00:25,560] you can think about the formation
+- [00:00:25,560 - 00:00:26,580] of a black hole,
+- [00:00:26,580 - 00:00:27,740] a real black hole,
+- [00:00:27,740 - 00:00:31,220] and how much of this Kruskal story,
+- [00:00:31,500 - 00:00:34,520] the diagram we drew on the blackboard last time,
+- [00:00:34,520 - 00:00:38,180] really is physically meaningful.
+- [00:00:38,750 - 00:00:39,820] Not all of it is.
+- [00:00:41,760 - 00:00:42,340] Okay,
+- [00:00:42,340 - 00:00:46,000] so the last time I showed you that the geometry,
+- [00:00:46,000 - 00:00:47,900] the metric of a black hole,
+- [00:00:49,330 - 00:00:50,700] of a Schwarzschild black hole,
+- [00:00:50,700 - 00:00:54,340] has the property that very near the horizon,
+- [00:00:54,640 - 00:00:55,440] that's the horizon.
+- [00:00:55,560 - 00:00:55,960] Over there,
+- [00:00:55,960 - 00:00:57,380] it looks like flat space.
+- [00:00:59,040 - 00:01:02,080] The horizon is a kind of polar coordinate,
+- [00:01:02,080 - 00:01:05,200] a hyperbolic polar coordinate point,
+- [00:01:06,479 - 00:01:10,760] similar to the behavior of accelerated coordinate frames.
+- [00:01:12,980 - 00:01:14,460] Somebody's standing outside,
+- [00:01:14,460 - 00:01:16,060] and this wedge over here,
+- [00:01:16,060 - 00:01:17,600] this quadrant over here,
+- [00:01:17,600 - 00:01:18,840] is outside.
+- [00:01:19,240 - 00:01:20,160] The rule is,
+- [00:01:20,160 - 00:01:20,940] first of all,
+- [00:01:20,940 - 00:01:24,720] that 45-degree angles represent the motion
+- [00:01:24,720 - 00:01:25,480] of light rays.
+- [00:01:25,560 - 00:01:29,280] Either going in that direction or going in this direction.
+- [00:01:30,680 - 00:01:33,660] Somebody outside the black hole means out here,
+- [00:01:33,660 - 00:01:34,360] in this quadrant,
+- [00:01:34,360 - 00:01:35,040] then quadrant,
+- [00:01:35,180 - 00:01:35,940] let's label them,
+- [00:01:35,940 - 00:01:37,220] quadrant one,
+- [00:01:37,220 - 00:01:38,640] quadrant two,
+- [00:01:38,640 - 00:01:40,600] quadrant three,
+- [00:01:40,600 - 00:01:42,920] and quadrant four.
+- [00:01:44,080 - 00:01:45,380] And as you're going to see,
+- [00:01:45,380 - 00:01:47,860] quadrant three and quadrant four
+- [00:01:47,860 - 00:01:50,340] really don't have any physical
+- [00:01:50,340 - 00:01:52,260] significance for a real black hole.
+- [00:01:52,520 - 00:01:54,030] It's quadrant one and quadrant two
+- [00:01:54,030 - 00:01:55,540] which are the two black holes.
+- [00:01:55,540 - 00:01:56,580] Which have real significance.
+- [00:01:58,320 - 00:01:59,680] Outside the black hole,
+- [00:01:59,680 - 00:02:02,880] somebody at rest,
+- [00:02:02,880 - 00:02:04,320] outside the black hole,
+- [00:02:04,320 - 00:02:05,620] somebody at rest,
+- [00:02:05,640 - 00:02:05,980] of course,
+- [00:02:05,980 - 00:02:08,100] is experiencing a sense of acceleration.
+- [00:02:08,639 - 00:02:13,280] Just as I'm experiencing a sense of acceleration right here.
+- [00:02:13,400 - 00:02:14,240] I've gotten used to it,
+- [00:02:14,240 - 00:02:15,240] so I don't notice it,
+- [00:02:15,240 - 00:02:17,040] the fact that I'm being accelerated.
+- [00:02:17,700 - 00:02:19,400] But if somebody who had
+- [00:02:19,400 - 00:02:21,100] been in outer space too long,
+- [00:02:21,100 - 00:02:23,000] in free fall too long,
+- [00:02:23,000 - 00:02:23,800] lost the
+- [00:02:23,800 - 00:02:25,520] sense of what a gravitational field is,
+- [00:02:25,520 - 00:02:25,520] then I'm not going to be able to see it.
+- [00:02:25,520 - 00:02:25,810] I'm going to be able to
+- [00:02:25,810 - 00:02:26,100] see what a gravitational field is like.
+- [00:02:26,320 - 00:02:28,420] And you plunk them on the surface of the earth,
+- [00:02:28,420 - 00:02:30,800] they would be experiencing a sense of upward
+- [00:02:30,800 - 00:02:31,320] acceleration.
+- [00:02:32,060 - 00:02:33,020] And in fact,
+- [00:02:33,020 - 00:02:33,980] in this diagram,
+- [00:02:33,980 - 00:02:38,960] somebody at rest does appear to be accelerating away
+- [00:02:38,960 - 00:02:39,680] from the horizon.
+- [00:02:40,100 - 00:02:41,480] Come in and go out,
+- [00:02:41,480 - 00:02:46,030] and it's that acceleration which
+- [00:02:46,030 - 00:02:50,580] is what we experience as gravitational
+- [00:02:50,580 - 00:02:52,760] acceleration near the surface of the earth.
+- [00:02:52,940 - 00:02:53,800] But in this case,
+- [00:02:53,800 - 00:02:55,500] near the horizon of the black hole.
+- [00:02:55,520 - 00:02:58,460] So this is a family of observers,
+- [00:02:58,460 - 00:03:01,140] further and further out,
+- [00:03:01,140 - 00:03:03,920] very far from the black hole,
+- [00:03:04,040 - 00:03:04,840] way out here,
+- [00:03:04,840 - 00:03:08,220] in close to the horizon,
+- [00:03:08,220 - 00:03:11,180] here.
+- [00:03:11,680 - 00:03:13,620] The closer you get to the horizon,
+- [00:03:13,620 - 00:03:15,600] the more you have to accelerate.
+- [00:03:16,200 - 00:03:18,700] That's the curvature of these lines here.
+- [00:03:18,740 - 00:03:20,050] The more you have to accelerate
+- [00:03:20,050 - 00:03:21,360] to keep out of the black hole,
+- [00:03:21,360 - 00:03:22,940] and in any case,
+- [00:03:22,940 - 00:03:23,440] this is
+- [00:03:23,440 - 00:03:24,020] the exterior.
+- [00:03:24,980 - 00:03:25,500] Okay.
+- [00:03:45,880 - 00:03:50,000] So this is the
+- [00:03:50,160 - 00:03:50,900] This is the interior.
+- [00:03:50,920 - 00:03:55,380] This is the outside.
+- [00:03:55,380 - 00:03:55,400] This is the inside.
+- [00:03:55,420 - 00:03:55,480] This is the outside.
+- [00:04:00,080 - 00:04:03,480] This is the ground.
+- [00:04:03,780 - 00:04:04,400] This is the floor.
+- [00:04:04,400 - 00:04:05,400] The floating part,
+- [00:04:05,400 - 00:04:05,620] with thisps in the right.
+- [00:04:05,720 - 00:04:06,600] This is the boundary of the earth,
+- [00:04:06,600 - 00:04:06,600] the top's in the upper boundary,
+- [00:04:06,600 - 00:04:06,780] and this graduates
+- [00:04:08,860 - 00:04:09,400] down to the variation.
+- [00:04:09,400 - 00:04:15,600] And this flattest face is very pressing.
+- [00:04:15,600 - 00:04:16,160] And this is another earlier example.
+- [00:04:16,160 - 00:04:16,160] So basically,
+- [00:04:16,160 - 00:04:18,950] it takes us from here to
+- [00:04:18,950 - 00:04:21,740] the outside into this theええ coefficient or
+- [00:04:21,740 - 00:04:24,400] we say point E of shadow.
+- [00:04:24,400 - 00:04:24,620] So now you have the flat aspect.
+- [00:04:24,620 - 00:04:25,460] But now comes the black surface.
+- [00:04:25,460 - 00:04:28,230] looks like because I've never seen one but
+- [00:04:28,230 - 00:04:31,000] it's a bad place with lots and lots
+- [00:04:31,000 - 00:04:34,740] of tidal force and the problem with it
+- [00:04:34,740 - 00:04:38,480] is once you find yourself in quadrant 2
+- [00:04:38,480 - 00:04:42,260] there's no way out the only way to get
+- [00:04:42,260 - 00:04:46,040] out even let's even if the left even if
+- [00:04:46,040 - 00:04:48,390] quadrant 3 was meaningful which it is
+- [00:04:48,390 - 00:04:50,740] not but even if it were meaningful you
+- [00:04:50,740 - 00:04:53,670] can't escape from here to out here or
+- [00:04:53,670 - 00:04:56,600] to out here without exceeding the speed of
+- [00:04:56,600 - 00:05:00,290] light your trajectory somewheres has to
+- [00:05:00,290 - 00:05:03,980] have an direction which is shallower
+- [00:05:03,980 - 00:05:06,420] than 45 degrees and that means exceeding the
+- [00:05:06,420 - 00:05:08,860] speed of light so that means if you
+- [00:05:08,860 - 00:05:10,730] don't exceed the speed of light the only
+- [00:05:10,730 - 00:05:12,600] place you can wind up and somewhere is
+- [00:05:12,600 - 00:05:18,700] on the singularity so you're doomed if you're outside
+- [00:05:21,300 - 00:05:24,370] and you make a bad mistake you could
+- [00:05:24,370 - 00:05:27,440] fall in but if you don't make a mistake
+- [00:05:27,440 - 00:05:30,280] you can jump back out and get out
+- [00:05:30,280 - 00:05:33,120] so people on the outside or light sources
+- [00:05:33,120 - 00:05:37,470] on the outside flashlights whatever you
+- [00:05:37,470 - 00:05:41,820] like they can produce signals which go
+- [00:05:41,820 - 00:05:43,820] in or they can produce signals which go
+- [00:05:43,820 - 00:05:45,820] out and that's the character of a black
+- [00:05:45,820 - 00:05:48,040] hole okay so that's that's
+- [00:05:48,040 - 00:05:50,260] all there is to black holes
+- [00:05:50,740 - 00:05:53,490] the geometry is somewhat warped it's not
+- [00:05:53,490 - 00:05:56,240] just flat space it's somewhat warped and
+- [00:05:56,240 - 00:05:58,520] curved but this is basically it
+- [00:05:58,520 - 00:06:02,460] could you say what the axes of that diagram are?
+- [00:06:02,760 - 00:06:06,090] time and space time and space
+- [00:06:06,090 - 00:06:09,420] as seen by an infalling observer
+- [00:06:09,840 - 00:06:12,700] and so the lines of constant position
+- [00:06:12,700 - 00:06:15,560] that you drew are for what stationary observer
+- [00:06:15,560 - 00:06:17,970] outside yeah that's correct so
+- [00:06:17,970 - 00:06:20,380] for somebody falling in who doesn't
+- [00:06:20,740 - 00:06:21,480] have a flat space in the sky and
+- [00:06:21,480 - 00:06:22,220] they're not going to be able to accelerate the
+- [00:06:23,100 - 00:06:25,270] coordinates that they see which are
+- [00:06:25,270 - 00:06:27,440] not too different from ordinary flat space
+- [00:06:27,440 - 00:06:30,710] and freefall at least until they get
+- [00:06:30,710 - 00:06:33,980] near the singularity time and X those are
+- [00:06:33,980 - 00:06:36,680] the coordinates that such a person will use
+- [00:06:36,680 - 00:06:39,380] okay right so to them the space looks
+- [00:06:39,380 - 00:06:42,230] flat pretty much pretty much especially near
+- [00:06:42,230 - 00:06:45,080] the horizon over here to somebody on
+- [00:06:45,080 - 00:06:47,420] the outside they experience this acceleration
+- [00:06:53,080 - 00:06:55,500] which you can't quite capture off
+- [00:06:55,500 - 00:06:57,920] camera she looks flat okay except for
+- [00:07:01,460 - 00:07:03,840] Productors over here this one over here
+- [00:07:03,840 - 00:07:06,220] it's not in space here it's in the午
+- [00:07:19,760 - 00:07:20,720] now since they have combat operations
+- [00:07:20,720 - 00:07:22,420] these light-like directions,
+- [00:07:22,420 - 00:07:23,580] they are also infinite.
+- [00:07:24,040 - 00:07:26,630] And so I can't draw
+- [00:07:26,630 - 00:07:29,220] the entire spacetime on the blackboard.
+- [00:07:29,400 - 00:07:30,880] For many purposes,
+- [00:07:30,880 - 00:07:33,080] it is useful,
+- [00:07:33,080 - 00:07:33,860] convenient,
+- [00:07:34,260 - 00:07:36,600] provides some visual tools,
+- [00:07:36,600 - 00:07:38,320] provides some intuition
+- [00:07:38,320 - 00:07:41,900] to be able to draw the entire spacetime
+- [00:07:41,900 - 00:07:44,340] on a finite piece of the blackboard.
+- [00:07:47,200 - 00:07:47,960] Well,
+- [00:07:47,960 - 00:07:48,780] you can imagine why.
+- [00:07:48,780 - 00:07:50,720] You want to see everything that's going on,
+- [00:07:50,800 - 00:07:53,640] you want to get a complete overview of spacetime,
+- [00:07:53,860 - 00:07:55,550] you'd like to draw it on
+- [00:07:55,550 - 00:07:57,240] the blackboard in some finite region.
+- [00:07:58,800 - 00:08:00,120] Let's start doing that,
+- [00:08:00,120 - 00:08:01,740] but let's start with flat space.
+- [00:08:03,200 - 00:08:06,060] Let's start with good old ordinary flat space
+- [00:08:06,060 - 00:08:08,340] and take all the flat spacetime.
+- [00:08:08,580 - 00:08:09,520] When I say flat space,
+- [00:08:09,520 - 00:08:10,800] I mean flat spacetime.
+- [00:08:13,020 - 00:08:16,060] And let's redraw it,
+- [00:08:16,060 - 00:08:17,640] or re-coordinatize it,
+- [00:08:17,720 - 00:08:18,760] so that we do a coordinate.
+- [00:08:18,780 - 00:08:21,380] So a coordinate transformation which pulls the whole thing
+- [00:08:21,380 - 00:08:23,560] into some finite region on the blackboard.
+- [00:08:23,680 - 00:08:24,560] I'll show you how to do that.
+- [00:08:26,220 - 00:08:27,400] This is useful,
+- [00:08:27,400 - 00:08:28,220] incidentally,
+- [00:08:28,220 - 00:08:30,700] for geometries,
+- [00:08:30,700 - 00:08:32,020] spacetimes,
+- [00:08:32,080 - 00:08:33,679] which have rotational symmetry.
+- [00:08:34,539 - 00:08:36,000] Rotational symmetry means they're
+- [00:08:36,000 - 00:08:37,460] the same in every direction.
+- [00:08:37,960 - 00:08:39,299] They mean the same thing,
+- [00:08:39,299 - 00:08:40,240] rotational symmetry,
+- [00:08:40,860 - 00:08:42,970] as when we say a
+- [00:08:42,970 - 00:08:45,080] gravitational source has rotational symmetry.
+- [00:08:45,440 - 00:08:46,780] It means the same in every direction.
+- [00:08:46,780 - 00:08:50,200] And when a system is the same in every direction
+- [00:08:50,200 - 00:08:51,360] and has rotational symmetry,
+- [00:08:51,960 - 00:08:54,820] it's usually useful to describe it,
+- [00:08:54,880 - 00:08:57,200] now I'm talking about ordinary polar coordinates.
+- [00:08:58,560 - 00:09:01,140] When a system has rotation symmetry,
+- [00:09:01,500 - 00:09:02,820] it's the same in every direction,
+- [00:09:03,060 - 00:09:05,320] we don't care so much about the angle.
+- [00:09:05,500 - 00:09:07,480] Everything is the same independent of angle.
+- [00:09:07,700 - 00:09:09,740] What we care about is how things vary
+- [00:09:09,740 - 00:09:11,360] as we move away from the center,
+- [00:09:11,360 - 00:09:12,980] the radial direction.
+- [00:09:14,340 - 00:09:15,460] And so...
+- [00:09:16,780 - 00:09:17,840] for many,
+- [00:09:17,840 - 00:09:18,460] many purposes,
+- [00:09:18,800 - 00:09:20,660] we don't need to think
+- [00:09:20,660 - 00:09:22,520] too much about the angular direction,
+- [00:09:22,740 - 00:09:25,340] and we just think of spacetime,
+- [00:09:25,340 - 00:09:26,480] flat spacetime,
+- [00:09:26,600 - 00:09:27,780] ordinary flat spacetime,
+- [00:09:27,980 - 00:09:29,480] as having a time axis.
+- [00:09:32,540 - 00:09:33,820] That's the time axis.
+- [00:09:34,120 - 00:09:36,600] It goes from minus infinity to plus infinity,
+- [00:09:36,880 - 00:09:38,780] and it has a radial direction.
+- [00:09:38,980 - 00:09:41,360] The radial direction is like that.
+- [00:09:43,140 - 00:09:45,520] The radial direction never gets negative.
+- [00:09:45,820 - 00:09:46,760] R is never negative.
+- [00:09:46,780 - 00:09:49,080] In polar coordinates,
+- [00:09:49,080 - 00:09:50,520] R is always positive.
+- [00:09:51,060 - 00:09:53,620] And so the entire spacetime
+- [00:09:54,900 - 00:09:58,380] is to the right of the time axis here.
+- [00:09:59,800 - 00:10:03,680] Only because being to the left of the time axis
+- [00:10:03,680 - 00:10:05,340] would mean negative R,
+- [00:10:05,660 - 00:10:07,580] and R is always positive.
+- [00:10:07,740 - 00:10:09,780] It's the distance from the origin.
+- [00:10:10,060 - 00:10:10,880] So here's everything,
+- [00:10:10,880 - 00:10:13,160] the entire spacetime.
+- [00:10:13,820 - 00:10:16,660] And let's put some markers on it
+- [00:10:16,780 - 00:10:21,540] to be able to visualize some landmarks.
+- [00:10:21,780 - 00:10:22,760] First of all,
+- [00:10:22,760 - 00:10:23,860] this horizontal axis
+- [00:10:24,720 - 00:10:26,560] is T equals zero.
+- [00:10:27,080 - 00:10:28,800] That is T equals zero,
+- [00:10:28,800 - 00:10:29,640] right over there.
+- [00:10:30,520 - 00:10:31,980] Let's put in T equals one.
+- [00:10:32,240 - 00:10:33,620] T equals one looks like this.
+- [00:10:35,140 - 00:10:36,880] T equals two looks like this.
+- [00:10:37,260 - 00:10:39,300] T equals minus one is like this.
+- [00:10:39,400 - 00:10:40,920] T equals minus two is like this.
+- [00:10:41,700 - 00:10:43,680] And if I wanted to draw
+- [00:10:43,680 - 00:10:45,660] the entire set of possible times,
+- [00:10:45,660 - 00:10:48,780] it would take me up to heaven,
+- [00:10:49,060 - 00:10:49,960] and down to hell.
+- [00:10:50,360 - 00:10:50,920] Okay,
+- [00:10:50,920 - 00:10:52,880] so this is all possible times.
+- [00:10:53,240 - 00:10:56,940] And we could also plot all possible radial distances.
+- [00:10:57,300 - 00:10:59,720] And the radial distances would just look like this.
+- [00:10:59,840 - 00:11:01,200] This would be R equals one,
+- [00:11:02,960 - 00:11:04,000] R equals two,
+- [00:11:04,200 - 00:11:05,460] R equals three.
+- [00:11:06,280 - 00:11:08,080] And in all cases,
+- [00:11:08,080 - 00:11:09,760] I will imagine using units
+- [00:11:10,580 - 00:11:12,580] so that the speed of light is one.
+- [00:11:12,580 - 00:11:14,240] C equals one.
+- [00:11:15,560 - 00:11:17,720] That simply means that I work in,
+- [00:11:17,800 - 00:11:19,940] if I'm going to use seconds for time,
+- [00:11:20,040 - 00:11:21,660] I use light seconds for distance.
+- [00:11:22,280 - 00:11:24,440] And then light rays.
+- [00:11:24,620 - 00:11:27,480] Light rays will move at 45 degree angle.
+- [00:11:27,600 - 00:11:27,740] Well,
+- [00:11:27,740 - 00:11:29,440] that's not quite right.
+- [00:11:30,180 - 00:11:32,180] Let's think about the motion of light rays.
+- [00:11:32,840 - 00:11:34,320] If a light ray,
+- [00:11:35,000 - 00:11:36,680] let's draw another picture over here.
+- [00:11:36,740 - 00:11:37,760] Here's R equals zero.
+- [00:11:38,060 - 00:11:39,500] This is polar coordinates.
+- [00:11:42,680 - 00:11:44,140] This is the radius here.
+- [00:11:45,580 - 00:11:47,660] It's just one instant of time
+- [00:11:47,660 - 00:11:50,320] looking and including the angle now.
+- [00:11:50,740 - 00:11:52,780] If a light ray comes in
+- [00:11:54,040 - 00:11:55,720] radially toward the origin,
+- [00:11:56,380 - 00:11:57,760] it hits the origin,
+- [00:11:58,020 - 00:11:59,200] and then what does it do?
+- [00:11:59,220 - 00:12:00,080] It goes back out.
+- [00:12:01,180 - 00:12:03,220] I meant to draw it straight.
+- [00:12:03,640 - 00:12:05,500] But this is just saying that a light ray
+- [00:12:05,500 - 00:12:08,300] in polar coordinates that happens to be aimed
+- [00:12:09,220 - 00:12:11,820] directly at the origin from far away,
+- [00:12:11,820 - 00:12:14,180] imagine it's coming in from very far away,
+- [00:12:14,320 - 00:12:16,920] if it happens to be aimed right to the origin,
+- [00:12:17,120 - 00:12:18,170] it will go to the
+- [00:12:18,170 - 00:12:19,220] origin and then go back out.
+- [00:12:20,479 - 00:12:21,820] On this diagram,
+- [00:12:22,060 - 00:12:24,000] it will appear to bounce,
+- [00:12:24,520 - 00:12:26,260] to reflect off the origin.
+- [00:12:26,460 - 00:12:27,320] Here's R equals zero.
+- [00:12:27,720 - 00:12:29,420] This is R equals zero over here.
+- [00:12:31,020 - 00:12:32,510] And so a light ray coming
+- [00:12:32,510 - 00:12:34,000] in from long in the past
+- [00:12:34,000 - 00:12:35,240] would look like,
+- [00:12:35,300 - 00:12:36,340] I think I'll use another color,
+- [00:12:37,359 - 00:12:39,600] a light ray coming in from the past
+- [00:12:40,119 - 00:12:41,320] will look like this.
+- [00:12:43,120 - 00:12:44,940] Moving at 45 degree angle,
+- [00:12:45,060 - 00:12:47,500] it will get to the origin at some time,
+- [00:12:47,700 - 00:12:49,320] and when it gets to the origin,
+- [00:12:49,480 - 00:12:50,920] it will simply start back out.
+- [00:12:52,140 - 00:12:54,140] It hasn't really reflected off anything,
+- [00:12:54,140 - 00:12:54,740] of course.
+- [00:12:55,000 - 00:12:56,600] It has just gone through the origin,
+- [00:12:56,780 - 00:12:58,120] came in and went back out.
+- [00:12:58,420 - 00:12:59,980] So a light ray
+- [00:13:01,600 - 00:13:04,260] starts out in the very remote past,
+- [00:13:04,960 - 00:13:07,480] coming in at 45 degree angle from
+- [00:13:07,480 - 00:13:11,180] a place that we call light like infinity,
+- [00:13:11,180 - 00:13:12,740] past light like infinity.
+- [00:13:13,060 - 00:13:13,740] But all it means
+- [00:13:13,740 - 00:13:16,860] is the place where all light rays come from
+- [00:13:16,860 - 00:13:17,980] in the infinite past.
+- [00:13:18,540 - 00:13:20,920] And they go out to the infinite future.
+- [00:13:22,340 - 00:13:23,160] Of course,
+- [00:13:23,160 - 00:13:24,260] there are other light rays
+- [00:13:24,260 - 00:13:25,500] that do the same thing.
+- [00:13:25,720 - 00:13:27,420] This one comes in a little bit earlier
+- [00:13:28,120 - 00:13:29,580] and goes out a little bit earlier.
+- [00:13:30,600 - 00:13:31,660] Another one up here.
+- [00:13:32,060 - 00:13:34,060] But they all look pretty much the same.
+- [00:13:34,280 - 00:13:35,280] They come in at 45,
+- [00:13:36,240 - 00:13:37,740] they bounce off the origin,
+- [00:13:37,920 - 00:13:39,340] and they go out at 45 degrees.
+- [00:13:40,380 - 00:13:40,880] Now,
+- [00:13:40,880 - 00:13:41,480] just for fun,
+- [00:13:41,540 - 00:13:42,780] let's think about a light ray
+- [00:13:42,780 - 00:13:44,560] which doesn't pass through the origin.
+- [00:13:45,240 - 00:13:47,660] A light ray which doesn't pass through the origin
+- [00:13:53,560 - 00:13:55,060] will miss the origin.
+- [00:13:57,580 - 00:13:59,760] It comes in and it misses the origin.
+- [00:14:01,380 - 00:14:02,380] When it's very,
+- [00:14:02,380 - 00:14:03,280] very far away,
+- [00:14:05,360 - 00:14:07,440] you can't really tell that it isn't,
+- [00:14:07,440 - 00:14:08,880] unless you have very good precision,
+- [00:14:08,880 - 00:14:09,840] angular precision,
+- [00:14:10,540 - 00:14:12,300] extremely fine angular precision.
+- [00:14:12,980 - 00:14:14,560] Watching that light ray way,
+- [00:14:14,560 - 00:14:15,380] way back there,
+- [00:14:16,120 - 00:14:17,360] it's hard to tell whether it's
+- [00:14:17,360 - 00:14:18,600] going to hit the origin or not.
+- [00:14:18,880 - 00:14:20,480] So it starts out coming
+- [00:14:20,480 - 00:14:22,080] in pretty much the same way.
+- [00:14:24,020 - 00:14:26,100] But it never gets to the origin.
+- [00:14:26,560 - 00:14:27,380] In fact,
+- [00:14:27,380 - 00:14:31,100] it almost appears to be repelled away from the origin
+- [00:14:31,720 - 00:14:32,900] and then goes back out.
+- [00:14:33,180 - 00:14:36,340] That repulsion is not a real repulsion,
+- [00:14:36,500 - 00:14:37,980] but it is what we call
+- [00:14:37,980 - 00:14:39,160] centrifugal force.
+- [00:14:39,420 - 00:14:41,360] It really is centrifugal force
+- [00:14:42,720 - 00:14:45,560] that keeps the light ray from hitting the origin.
+- [00:14:45,680 - 00:14:47,680] Or you can just say it doesn't hit the origin
+- [00:14:47,680 - 00:14:49,280] because it wasn't aimed at the origin.
+- [00:14:49,780 - 00:14:50,560] Same thing.
+- [00:14:50,760 - 00:14:51,920] But what does it look like?
+- [00:14:52,760 - 00:14:55,680] It comes in pretty much the same way at first.
+- [00:14:56,380 - 00:14:58,560] And instead of going through the origin,
+- [00:14:58,760 - 00:15:01,320] it gets a point of closest approach.
+- [00:15:01,940 - 00:15:03,900] The closest approach is over here.
+- [00:15:05,180 - 00:15:06,400] And at that point,
+- [00:15:07,020 - 00:15:08,780] it starts going back out.
+- [00:15:11,780 - 00:15:15,120] So a light ray which is perfectly radially tuned
+- [00:15:15,120 - 00:15:16,080] to hit the origin
+- [00:15:16,080 - 00:15:18,120] looks like a 45 degree
+- [00:15:20,480 - 00:15:22,160] ingoing and outgoing line.
+- [00:15:22,500 - 00:15:24,520] But a light ray which misses the origin
+- [00:15:25,200 - 00:15:25,980] looks like,
+- [00:15:25,980 - 00:15:26,400] in fact,
+- [00:15:26,540 - 00:15:27,320] sort of like,
+- [00:15:27,320 - 00:15:28,820] it looks like a hyperbola.
+- [00:15:30,300 - 00:15:31,740] But whatever it looks like,
+- [00:15:32,900 - 00:15:33,460] that's it.
+- [00:15:34,440 - 00:15:36,280] I'm just telling you these things here,
+- [00:15:36,280 - 00:15:37,920] to give you some landmarks
+- [00:15:37,920 - 00:15:38,940] and to give you some perspective
+- [00:15:38,940 - 00:15:40,100] on what we're going to do next.
+- [00:15:40,400 - 00:15:41,200] Next thing,
+- [00:15:41,200 - 00:15:43,360] we're going to take this diagram
+- [00:15:44,080 - 00:15:46,520] and we're going to squeeze it
+- [00:15:46,520 - 00:15:48,280] and stretch it in various ways
+- [00:15:48,280 - 00:15:50,060] to get the whole thing on the blackboard.
+- [00:15:50,340 - 00:15:51,620] That's going to deform it.
+- [00:15:52,480 - 00:15:53,800] It's not going to look the same.
+- [00:15:54,520 - 00:15:58,860] But we're going to keep one thing fixed.
+- [00:15:59,400 - 00:16:01,900] The one thing fixed is that light rays
+- [00:16:01,900 - 00:16:05,200] will always be assumed to move on 45 degrees.
+- [00:16:05,200 - 00:16:05,900] In other words,
+- [00:16:05,900 - 00:16:07,960] any squeezing and squashing
+- [00:16:07,960 - 00:16:09,080] and stretching that we do
+- [00:16:09,820 - 00:16:12,600] should preserve the fact that light rays
+- [00:16:12,600 - 00:16:14,360] move in 45 degree angles.
+- [00:16:14,740 - 00:16:16,080] That's a useful thing to do
+- [00:16:16,080 - 00:16:17,800] because then we can see how light rays move.
+- [00:16:18,040 - 00:16:19,330] And we can see what going
+- [00:16:19,330 - 00:16:20,620] faster than the speed of light,
+- [00:16:20,700 - 00:16:22,780] what going slower than the speed of light looks like.
+- [00:16:23,120 - 00:16:24,540] So I'm going to show you how to do that,
+- [00:16:24,620 - 00:16:25,120] mathematically.
+- [00:16:26,280 - 00:16:26,880] Excuse me.
+- [00:16:27,020 - 00:16:27,180] Yeah.
+- [00:16:27,920 - 00:16:29,500] There's nothing special about the origin.
+- [00:16:29,700 - 00:16:30,980] There's not a black hole there or anything?
+- [00:16:31,060 - 00:16:31,220] No,
+- [00:16:31,220 - 00:16:31,380] no,
+- [00:16:31,380 - 00:16:31,500] no.
+- [00:16:31,560 - 00:16:32,640] At the moment there's nothing special.
+- [00:16:32,760 - 00:16:34,960] It's just a particular point that we may want
+- [00:16:35,200 - 00:16:35,740] to focus on.
+- [00:16:35,960 - 00:16:37,160] There may be something there,
+- [00:16:37,200 - 00:16:38,520] but no need for it.
+- [00:16:38,560 - 00:16:38,720] Okay.
+- [00:16:38,820 - 00:16:41,340] So the light rays in this diagram are bent
+- [00:16:41,340 - 00:16:44,380] just because of the particular way that we chose?
+- [00:16:44,600 - 00:16:44,700] Yeah,
+- [00:16:44,700 - 00:16:45,020] that's right.
+- [00:16:45,140 - 00:16:46,860] It's just a choice of coordinates at the moment.
+- [00:16:47,160 - 00:16:47,640] Now,
+- [00:16:47,640 - 00:16:49,120] there may be good physical reasons
+- [00:16:49,120 - 00:16:51,700] to want to use a particular choice of coordinates.
+- [00:16:56,040 - 00:16:56,720] You know,
+- [00:16:56,720 - 00:16:57,620] in studying the sun,
+- [00:16:57,760 - 00:16:58,920] there is no black hole,
+- [00:16:59,620 - 00:17:02,680] but the symmetry of the problem makes it convenient
+- [00:17:02,680 - 00:17:04,760] to think about the sun as being the center
+- [00:17:05,200 - 00:17:05,480] of the whole.
+- [00:17:05,480 - 00:17:05,619] That's a good thing.
+- [00:17:05,619 - 00:17:05,619] And,
+- [00:17:05,619 - 00:17:05,900] uh,
+- [00:17:05,900 - 00:17:06,380] right.
+- [00:17:07,040 - 00:17:08,079] So that's all we're doing.
+- [00:17:08,480 - 00:17:09,000] All right.
+- [00:17:09,020 - 00:17:09,660] Next step.
+- [00:17:12,400 - 00:17:13,839] Let's assign some coordinates.
+- [00:17:14,040 - 00:17:15,020] I'm not going to call this T.
+- [00:17:15,300 - 00:17:16,839] I'm going to give it another name.
+- [00:17:17,579 - 00:17:19,880] I'm going to call the vertical axis capital T.
+- [00:17:20,160 - 00:17:23,880] Capital T and the horizontal axis capital R.
+- [00:17:24,240 - 00:17:26,279] I don't want to confuse
+- [00:17:26,279 - 00:17:28,319] them with other T's and R's
+- [00:17:28,319 - 00:17:29,199] that we're going to use
+- [00:17:29,199 - 00:17:30,080] and that we have been using.
+- [00:17:30,200 - 00:17:31,240] So we're going to call
+- [00:17:31,240 - 00:17:32,280] it capital T and capital R.
+- [00:17:32,900 - 00:17:35,180] But there is another way to calculate
+- [00:17:35,200 - 00:17:36,260] the coordinates of this.
+- [00:17:36,520 - 00:17:40,060] And that's to use coordinates at 45 degrees angle.
+- [00:17:40,420 - 00:17:41,440] In other words,
+- [00:17:41,440 - 00:17:42,580] to introduce axes
+- [00:17:44,500 - 00:17:47,740] along 45 degree angles here and here.
+- [00:17:51,020 - 00:17:51,920] Of course,
+- [00:17:51,920 - 00:17:53,540] I don't mean to imply
+- [00:17:53,540 - 00:17:55,760] that there's anything behind R equals zero.
+- [00:17:56,180 - 00:17:56,800] Uh,
+- [00:17:56,800 - 00:17:59,800] we're only interested in this region here.
+- [00:18:00,080 - 00:18:02,140] But we're going to introduce new coordinates.
+- [00:18:02,140 - 00:18:04,520] And this coordinate over here,
+- [00:18:05,340 - 00:18:07,180] that's not going to be T or R.
+- [00:18:07,280 - 00:18:09,080] It's going to be T plus R.
+- [00:18:10,180 - 00:18:12,800] T plus R varies as you
+- [00:18:12,800 - 00:18:15,420] go from here to here to here.
+- [00:18:16,560 - 00:18:19,580] And if I were to plot constant T plus R,
+- [00:18:20,120 - 00:18:22,500] constant T plus R would be these lines.
+- [00:18:22,820 - 00:18:23,080] Whoops,
+- [00:18:23,080 - 00:18:23,940] I didn't draw it well.
+- [00:18:25,400 - 00:18:26,960] Let's draw another picture over here.
+- [00:18:32,140 - 00:18:32,140] R,
+- [00:18:32,140 - 00:18:32,980] T.
+- [00:18:33,640 - 00:18:35,720] Constant T plus R
+- [00:18:37,020 - 00:18:38,860] will look like this.
+- [00:18:39,080 - 00:18:42,280] These will be the lines of constant T plus R.
+- [00:18:45,040 - 00:18:45,720] Okay,
+- [00:18:45,720 - 00:18:46,760] so there's T plus R
+- [00:18:46,760 - 00:18:49,720] and of course there's also T minus R.
+- [00:18:50,240 - 00:18:53,600] T minus R lines look this way.
+- [00:18:54,440 - 00:18:57,020] But really we're only interested in this half over here.
+- [00:18:57,320 - 00:19:00,540] So the lines of T minus R
+- [00:19:02,140 - 00:19:04,140] and constant T minus R look like that.
+- [00:19:04,260 - 00:19:05,940] These are useful coordinates,
+- [00:19:05,940 - 00:19:06,540] as we'll see.
+- [00:19:07,120 - 00:19:08,340] T plus R,
+- [00:19:08,340 - 00:19:09,900] that's called T plus.
+- [00:19:11,760 - 00:19:13,040] T minus R
+- [00:19:15,340 - 00:19:17,100] is called T minus.
+- [00:19:17,800 - 00:19:19,120] Just as you might expect.
+- [00:19:20,060 - 00:19:20,640] Okay,
+- [00:19:20,640 - 00:19:22,500] so we have a different way
+- [00:19:22,500 - 00:19:25,240] of describing the same spacetime,
+- [00:19:25,420 - 00:19:26,140] the same flat,
+- [00:19:26,140 - 00:19:27,680] good old flat spacetime.
+- [00:19:27,960 - 00:19:30,380] Instead of T plus R and T minus R,
+- [00:19:30,380 - 00:19:32,440] we have T plus and T minus.
+- [00:19:32,740 - 00:19:33,340] Now,
+- [00:19:33,340 - 00:19:37,320] what about this line here?
+- [00:19:38,040 - 00:19:38,500] This,
+- [00:19:38,500 - 00:19:39,440] what was this line?
+- [00:19:39,540 - 00:19:41,960] This line was just plain R equals zero.
+- [00:19:43,240 - 00:19:44,620] R equals zero.
+- [00:19:45,180 - 00:19:45,780] Okay,
+- [00:19:45,780 - 00:19:50,760] so what is that?
+- [00:19:51,240 - 00:19:52,980] What is R equals zero?
+- [00:19:53,080 - 00:19:55,880] That's T plus equals T minus.
+- [00:19:56,500 - 00:19:58,820] So let's write T plus equals T minus.
+- [00:19:58,920 - 00:20:00,220] T plus equals T minus.
+- [00:20:02,600 - 00:20:05,140] That's the same thing as T
+- [00:20:05,140 - 00:20:07,680] plus R equals T minus R,
+- [00:20:07,940 - 00:20:10,520] or R equals minus R.
+- [00:20:10,880 - 00:20:12,650] The only solution to R equals
+- [00:20:12,650 - 00:20:14,420] minus R is R equals zero.
+- [00:20:15,020 - 00:20:16,520] So this line over here,
+- [00:20:16,520 - 00:20:17,580] which was R equals zero,
+- [00:20:17,740 - 00:20:21,340] is also just T plus equals T minus.
+- [00:20:21,800 - 00:20:23,200] That's a way to describe it.
+- [00:20:25,840 - 00:20:26,400] Okay,
+- [00:20:26,400 - 00:20:27,920] now we're going to change coordinates.
+- [00:20:27,920 - 00:20:30,320] And the way we're going to change coordinates
+- [00:20:30,320 - 00:20:33,000] is to introduce two new coordinates.
+- [00:20:33,100 - 00:20:34,920] These are called light-like coordinates.
+- [00:20:35,560 - 00:20:38,140] T plus and T minus are called light-like coordinates.
+- [00:20:38,540 - 00:20:41,280] We're going to change light-like coordinates.
+- [00:20:41,460 - 00:20:45,180] We're going to introduce two new light-like coordinates.
+- [00:20:45,380 - 00:20:47,020] One of them is called U plus,
+- [00:20:48,100 - 00:20:49,900] and one of them is called U minus.
+- [00:20:51,340 - 00:20:54,700] And U plus is a function of T plus.
+- [00:20:57,920 - 00:21:00,750] So we're going to write U
+- [00:21:00,750 - 00:21:03,580] plus is some function of T plus.
+- [00:21:04,520 - 00:21:07,060] It's not going to involve T minus at all.
+- [00:21:07,260 - 00:21:09,260] And U minus is going to be,
+- [00:21:09,260 - 00:21:09,740] in fact,
+- [00:21:09,740 - 00:21:12,960] I think the same function of T minus.
+- [00:21:14,560 - 00:21:15,280] All right,
+- [00:21:15,280 - 00:21:18,500] but this function is just a coordinate transformation
+- [00:21:19,220 - 00:21:22,160] in which U plus and U minus independently,
+- [00:21:22,740 - 00:21:23,080] sorry,
+- [00:21:23,080 - 00:21:25,640] T plus and T minus just independently transform
+- [00:21:25,640 - 00:21:26,900] to some new coordinate.
+- [00:21:27,780 - 00:21:28,300] Okay?
+- [00:21:28,300 - 00:21:29,700] Good.
+- [00:21:32,240 - 00:21:34,400] What kind of function am I going to use?
+- [00:21:34,880 - 00:21:39,020] I'm going to use a function of T plus.
+- [00:21:40,600 - 00:21:43,620] This is F or U this way.
+- [00:21:43,680 - 00:21:45,100] U equals F of T plus.
+- [00:21:46,580 - 00:21:48,800] And the function is going to look like this.
+- [00:21:55,920 - 00:21:58,020] When you go out to T plus,
+- [00:21:58,100 - 00:22:01,040] it doesn't ever become absolutely flat.
+- [00:22:01,740 - 00:22:04,520] It's always got a slight positive slope.
+- [00:22:05,040 - 00:22:07,800] Also down here it also has a slight slope.
+- [00:22:08,200 - 00:22:09,000] All right?
+- [00:22:11,100 - 00:22:13,520] But it'll go to one over here,
+- [00:22:13,520 - 00:22:14,320] U plus,
+- [00:22:14,320 - 00:22:16,440] U plus.
+- [00:22:17,220 - 00:22:18,460] This is U plus.
+- [00:22:19,640 - 00:22:24,040] U plus of infinity is one and,
+- [00:22:24,040 - 00:22:25,660] or just F.
+- [00:22:25,760 - 00:22:26,400] Let's call it F.
+- [00:22:26,800 - 00:22:28,520] F of infinity is one.
+- [00:22:31,660 - 00:22:34,200] And F of minus infinity is minus one.
+- [00:22:39,000 - 00:22:39,440] Now,
+- [00:22:39,440 - 00:22:41,020] anybody know a function that does that?
+- [00:22:41,140 - 00:22:42,460] There are many functions which do that.
+- [00:22:42,740 - 00:22:43,340] Zeta plus,
+- [00:22:43,340 - 00:22:43,860] I don't know,
+- [00:22:43,860 - 00:22:44,520] but it's a function of T plus.
+- [00:22:44,520 - 00:22:44,760] What's that?
+- [00:22:47,920 - 00:22:48,500] Yeah.
+- [00:22:49,040 - 00:22:52,320] A hyperbolic tangent is the one that's usually used.
+- [00:22:53,200 - 00:22:55,860] Hyperbolic tangent goes to one asymptotically.
+- [00:22:56,060 - 00:22:57,820] It's the usual one that's used,
+- [00:22:58,020 - 00:22:59,560] but there's nothing special about it.
+- [00:23:00,160 - 00:23:01,200] Hyperbolic tangent,
+- [00:23:01,340 - 00:23:07,880] hyperbolic tangent F of T plus is,
+- [00:23:08,100 - 00:23:10,560] and if you don't know what a hyperbolic tangent is,
+- [00:23:10,680 - 00:23:11,640] don't worry about it.
+- [00:23:11,640 - 00:23:14,180] It's just a function which looks like this.
+- [00:23:15,100 - 00:23:17,020] Tanch of T plus.
+- [00:23:19,220 - 00:23:19,740] Okay,
+- [00:23:19,740 - 00:23:21,200] now think about what happens
+- [00:23:21,200 - 00:23:23,740] as we start moving on this graph
+- [00:23:24,520 - 00:23:25,940] further and further outward.
+- [00:23:26,360 - 00:23:29,240] T plus is getting bigger and bigger and bigger.
+- [00:23:30,040 - 00:23:31,340] What is U plus doing?
+- [00:23:33,980 - 00:23:35,840] It's never going to get bigger than one.
+- [00:23:36,960 - 00:23:37,480] Right?
+- [00:23:38,200 - 00:23:39,840] It's never going to get bigger than one.
+- [00:23:39,840 - 00:23:43,360] So let's draw our same spacetime
+- [00:23:44,500 - 00:23:45,960] with these new coordinates.
+- [00:23:46,200 - 00:23:47,000] I think I erased them,
+- [00:23:47,100 - 00:23:47,900] but let's put them back.
+- [00:23:49,960 - 00:23:54,480] U plus equals hyperbolic tangent
+- [00:23:56,220 - 00:23:59,620] of T plus and same thing for minus.
+- [00:24:01,720 - 00:24:03,040] As we move out,
+- [00:24:03,080 - 00:24:04,160] let's redraw our picture.
+- [00:24:09,840 - 00:24:10,800] As we move out,
+- [00:24:11,000 - 00:24:13,620] let's start over here and move out.
+- [00:24:13,980 - 00:24:17,060] How big does U plus ever get?
+- [00:24:17,640 - 00:24:19,960] U plus never gets bigger than one.
+- [00:24:20,580 - 00:24:21,680] So this diagram,
+- [00:24:22,040 - 00:24:23,420] if this is the U plane,
+- [00:24:23,640 - 00:24:24,800] not the T plane,
+- [00:24:25,040 - 00:24:25,780] but the U plane,
+- [00:24:26,000 - 00:24:28,020] U plus never gets bigger than one.
+- [00:24:28,580 - 00:24:29,540] Here it is,
+- [00:24:29,540 - 00:24:30,220] right there.
+- [00:24:30,340 - 00:24:31,800] It never gets bigger than one.
+- [00:24:32,580 - 00:24:34,680] So that means all of the spacetime
+- [00:24:34,680 - 00:24:37,180] has been mapped somehow down into here.
+- [00:24:38,220 - 00:24:38,780] Okay.
+- [00:24:38,780 - 00:24:40,180] What about U minus?
+- [00:24:41,140 - 00:24:46,220] U minus is equal to hyperbolic tangent
+- [00:24:46,780 - 00:24:48,080] of T minus.
+- [00:24:48,700 - 00:24:51,660] What this says is as we move down
+- [00:24:51,660 - 00:24:52,720] in this direction,
+- [00:24:53,140 - 00:24:55,180] T minus never gets bigger
+- [00:24:55,180 - 00:24:57,320] or less negative than minus one.
+- [00:24:58,100 - 00:25:00,120] T minus is getting very,
+- [00:25:00,120 - 00:25:00,740] very big
+- [00:25:00,740 - 00:25:02,440] and negative as you go down here.
+- [00:25:02,560 - 00:25:04,160] T minus is getting bigger and bigger
+- [00:25:04,160 - 00:25:05,760] but negative as you go down here.
+- [00:25:06,100 - 00:25:08,760] But U minus sort of minus
+- [00:25:08,760 - 00:25:10,700] or maxes out again at minus one.
+- [00:25:11,600 - 00:25:14,360] And here's T minus equals minus one.
+- [00:25:16,960 - 00:25:19,840] T minus never gets too far.
+- [00:25:20,000 - 00:25:21,820] T plus never gets too far.
+- [00:25:24,800 - 00:25:25,820] This is...
+- [00:25:25,820 - 00:25:26,500] No,
+- [00:25:26,500 - 00:25:26,920] I'm sorry.
+- [00:25:27,100 - 00:25:28,310] I said T plus and
+- [00:25:28,310 - 00:25:29,520] T minus never get very far.
+- [00:25:29,600 - 00:25:30,800] I meant U plus and U minus.
+- [00:25:31,520 - 00:25:33,340] U plus equals one.
+- [00:25:33,760 - 00:25:36,060] This is U minus equals minus one,
+- [00:25:36,060 - 00:25:36,480] in fact.
+- [00:25:37,379 - 00:25:40,140] And what about this vertical line here?
+- [00:25:40,560 - 00:25:42,960] The original vertical line over here
+- [00:25:43,480 - 00:25:46,040] was T plus equals T minus.
+- [00:25:47,000 - 00:25:47,640] Right?
+- [00:25:47,740 - 00:25:49,740] T plus equals T minus.
+- [00:25:49,780 - 00:25:51,340] That's the same as R equals zero.
+- [00:25:52,120 - 00:25:54,660] If T plus equals T minus,
+- [00:25:54,940 - 00:25:57,720] then that says that U plus equals U minus.
+- [00:25:58,140 - 00:25:58,780] So,
+- [00:25:58,780 - 00:25:59,380] in fact,
+- [00:25:59,380 - 00:26:01,100] this line happens to be
+- [00:26:01,100 - 00:26:02,520] U plus equals U minus
+- [00:26:02,520 - 00:26:04,500] and it looks like a vertical line.
+- [00:26:05,720 - 00:26:06,460] All right.
+- [00:26:06,460 - 00:26:07,280] So all we've done...
+- [00:26:07,280 - 00:26:09,100] If you don't follow the details,
+- [00:26:09,300 - 00:26:12,620] all we've done is squished the geometry this way,
+- [00:26:12,720 - 00:26:14,420] squished the geometry that way,
+- [00:26:14,600 - 00:26:17,420] and squished it onto a finite triangle.
+- [00:26:18,140 - 00:26:19,500] You'll understand this better
+- [00:26:19,500 - 00:26:21,000] when I draw in these coordinates.
+- [00:26:21,480 - 00:26:21,860] Okay?
+- [00:26:23,799 - 00:26:24,439] Now,
+- [00:26:24,439 - 00:26:27,700] what is the trajectory
+- [00:26:28,520 - 00:26:29,700] of a light ray,
+- [00:26:29,700 - 00:26:30,620] an outgoing...
+- [00:26:30,620 - 00:26:33,380] Let's say an outgoing light ray
+- [00:26:34,460 - 00:26:37,780] in terms of the T pluses and the T minuses.
+- [00:26:37,940 - 00:26:38,620] Well,
+- [00:26:38,620 - 00:26:39,880] an outgoing light ray
+- [00:26:40,800 - 00:26:43,680] is at a constant value of which...
+- [00:26:43,680 - 00:26:44,260] T minus,
+- [00:26:44,260 - 00:26:44,740] I guess.
+- [00:26:44,960 - 00:26:49,080] T minus would be constant and fixed on here.
+- [00:26:49,320 - 00:26:51,880] T plus would be constant and fixed
+- [00:26:51,880 - 00:26:53,260] for an ingoing light ray.
+- [00:26:54,500 - 00:26:59,600] But if T plus is constant and fixed
+- [00:26:59,600 - 00:27:00,880] along some trajectory,
+- [00:27:01,180 - 00:27:03,360] it means that U plus is constant.
+- [00:27:03,360 - 00:27:05,120] U plus is constant and fixed along that trajectory.
+- [00:27:06,060 - 00:27:07,880] Likewise for T minus and U minus.
+- [00:27:08,120 - 00:27:10,340] The upshot is that
+- [00:27:10,340 - 00:27:13,140] if you make a coordinate transformation like this,
+- [00:27:13,340 - 00:27:16,680] it is still true that radial light rays
+- [00:27:16,680 - 00:27:19,800] move on straight 45-degree angles.
+- [00:27:20,260 - 00:27:21,060] Here's a...
+- [00:27:21,060 - 00:27:25,160] These are light rays that come in
+- [00:27:25,860 - 00:27:27,840] from the remote past,
+- [00:27:28,200 - 00:27:29,460] bounce off the origin,
+- [00:27:29,680 - 00:27:30,620] and go back out.
+- [00:27:32,000 - 00:27:32,520] Again,
+- [00:27:32,520 - 00:27:33,680] bouncing off the origin
+- [00:27:33,680 - 00:27:34,840] is just a figure of speech.
+- [00:27:35,100 - 00:27:36,400] You just pass through the origin.
+- [00:27:41,080 - 00:27:44,160] So we've succeeded in taking all of spacetime
+- [00:27:44,160 - 00:27:46,620] and mapping it to a triangle
+- [00:27:46,620 - 00:27:48,400] that we can draw the whole thing on the blackboard.
+- [00:27:50,420 - 00:27:52,420] Let's draw in some more coordinates.
+- [00:27:52,500 - 00:27:55,260] Let's draw in more detail.
+- [00:27:56,300 - 00:27:57,320] In particular,
+- [00:27:57,320 - 00:27:59,620] let's take these horizontal slices
+- [00:28:01,040 - 00:28:03,280] which correspond to different times.
+- [00:28:04,260 - 00:28:06,220] Let's imagine starting at the origin.
+- [00:28:06,460 - 00:28:07,600] Where's T equals zero?
+- [00:28:07,780 - 00:28:08,640] Here's T equals zero.
+- [00:28:09,060 - 00:28:10,520] And moving outward,
+- [00:28:10,520 - 00:28:10,920] outward,
+- [00:28:10,920 - 00:28:11,300] outward.
+- [00:28:12,200 - 00:28:14,720] We'll allow ourselves even to exceed the speed of light
+- [00:28:14,720 - 00:28:16,740] and just move outward in our imagination.
+- [00:28:17,320 - 00:28:18,540] What does that look like?
+- [00:28:18,820 - 00:28:19,340] That,
+- [00:28:19,340 - 00:28:19,840] of course,
+- [00:28:19,840 - 00:28:20,920] looks like starting
+- [00:28:20,920 - 00:28:22,400] at a point over here
+- [00:28:25,680 - 00:28:27,040] and just moving outward.
+- [00:28:27,380 - 00:28:29,040] And where do you eventually get to?
+- [00:28:29,120 - 00:28:29,600] You get to this point.
+- [00:28:32,500 - 00:28:33,060] So,
+- [00:28:33,060 - 00:28:37,860] this point must be spatial infinity,
+- [00:28:38,240 - 00:28:39,120] r equals infinity.
+- [00:28:39,560 - 00:28:41,050] It's where you get to if
+- [00:28:41,050 - 00:28:42,540] you just walk along this line
+- [00:28:43,100 - 00:28:44,580] till you get out to infinity.
+- [00:28:45,000 - 00:28:46,820] But what about this line over here?
+- [00:28:47,000 - 00:28:47,760] T equals one.
+- [00:28:48,360 - 00:28:50,560] If you plot that in these coordinates,
+- [00:28:51,200 - 00:28:52,720] it'll start about over here,
+- [00:28:53,340 - 00:28:55,320] but it will go to that same point.
+- [00:28:55,960 - 00:28:56,520] Likewise,
+- [00:28:56,520 - 00:28:57,920] T equals minus one.
+- [00:28:59,600 - 00:28:59,600] So,
+- [00:28:59,600 - 00:29:01,260] what we've done is we've squished
+- [00:29:01,260 - 00:29:03,220] all of spatial infinity.
+- [00:29:04,740 - 00:29:06,400] We've squished it into a point.
+- [00:29:07,420 - 00:29:08,220] Right over here.
+- [00:29:08,480 - 00:29:10,940] And it's called space-like infinity.
+- [00:29:11,380 - 00:29:11,820] Yeah?
+- [00:29:11,940 - 00:29:13,620] Are those lines supposed to be straight?
+- [00:29:13,860 - 00:29:14,300] No,
+- [00:29:14,300 - 00:29:16,120] they're not exactly straight.
+- [00:29:16,960 - 00:29:17,820] It depends,
+- [00:29:17,820 - 00:29:18,180] of course,
+- [00:29:18,180 - 00:29:19,620] on the particular choice of function,
+- [00:29:19,840 - 00:29:21,200] but they won't be straight.
+- [00:29:21,340 - 00:29:21,480] No,
+- [00:29:21,480 - 00:29:22,620] let's draw them more carefully.
+- [00:29:23,020 - 00:29:24,340] One of them will be straight.
+- [00:29:24,440 - 00:29:25,720] The one that will be straight
+- [00:29:25,720 - 00:29:27,000] will be the T equals zero.
+- [00:29:29,600 - 00:29:30,980] This one will be straight.
+- [00:29:31,760 - 00:29:35,000] And then the next one will look like this.
+- [00:29:35,320 - 00:29:36,180] It'll have some curvature.
+- [00:29:40,200 - 00:29:42,140] What about way,
+- [00:29:42,140 - 00:29:42,760] way,
+- [00:29:42,760 - 00:29:43,340] way up there?
+- [00:29:43,420 - 00:29:44,940] T equals 100 billion.
+- [00:29:45,480 - 00:29:47,570] T equals 100 billion is going
+- [00:29:47,570 - 00:29:49,660] to be very close to this edge.
+- [00:29:52,360 - 00:29:52,840] So,
+- [00:29:52,840 - 00:29:54,840] as we keep putting in more of these,
+- [00:29:55,440 - 00:29:56,990] they accumulate and get closer and
+- [00:29:56,990 - 00:29:58,540] closer to this edge up there.
+- [00:29:59,600 - 00:30:00,440] We've got to get an
+- [00:30:00,440 - 00:30:01,280] infinite number of them in there.
+- [00:30:01,480 - 00:30:03,440] Time really does go on and on forever,
+- [00:30:04,040 - 00:30:05,440] at least in flat space.
+- [00:30:06,000 - 00:30:06,580] And so,
+- [00:30:06,580 - 00:30:11,320] this is what the series of timelines would look like.
+- [00:30:11,380 - 00:30:12,160] Different times.
+- [00:30:12,740 - 00:30:13,840] On the other hand,
+- [00:30:13,840 - 00:30:18,460] now let's look at fixed spatial position.
+- [00:30:19,360 - 00:30:20,820] Fixed spatial position,
+- [00:30:24,120 - 00:30:27,580] we can mark off different locations.
+- [00:30:31,000 - 00:30:32,120] Here's r equals 1,
+- [00:30:32,120 - 00:30:33,100] here's r equals 2,
+- [00:30:33,100 - 00:30:33,880] r equals 3,
+- [00:30:33,880 - 00:30:34,660] r equals 4,
+- [00:30:34,660 - 00:30:35,580] r equals 5,
+- [00:30:35,800 - 00:30:36,800] dot dot dot,
+- [00:30:36,800 - 00:30:38,360] and they again get all
+- [00:30:38,360 - 00:30:39,920] squished up near r equals infinity.
+- [00:30:42,040 - 00:30:43,220] Where do they all go?
+- [00:30:43,840 - 00:30:46,180] They all go vertically upward,
+- [00:30:46,760 - 00:30:48,060] and on this diagram,
+- [00:30:48,060 - 00:30:49,640] they all go up right
+- [00:30:49,640 - 00:30:51,220] up to this point up here.
+- [00:30:52,180 - 00:30:54,300] You can check that by doing the transformation,
+- [00:30:54,879 - 00:30:56,160] and that's what you would see.
+- [00:31:01,320 - 00:31:02,920] More and more and more of them.
+- [00:31:04,060 - 00:31:05,220] It's the same diagram,
+- [00:31:05,220 - 00:31:06,840] just in different coordinates.
+- [00:31:07,920 - 00:31:09,140] And this coordinates,
+- [00:31:09,140 - 00:31:09,740] as I said,
+- [00:31:09,860 - 00:31:12,960] everything gets mapped to a finite region of space-time.
+- [00:31:13,520 - 00:31:14,060] Again,
+- [00:31:14,060 - 00:31:16,740] I emphasize light rays move at 45,
+- [00:31:17,760 - 00:31:20,320] radial light rays move at 45 degrees,
+- [00:31:20,500 - 00:31:21,800] they come in and they go out,
+- [00:31:21,800 - 00:31:23,240] and so forth.
+- [00:31:23,980 - 00:31:24,520] Okay,
+- [00:31:24,520 - 00:31:25,660] this is called,
+- [00:31:25,660 - 00:31:28,760] this process of squeezing everything
+- [00:31:28,760 - 00:31:30,900] onto a finite piece of the blackboard
+- [00:31:30,900 - 00:31:33,120] without changing the speed of light.
+- [00:31:33,980 - 00:31:35,880] It's called compactification.
+- [00:31:36,200 - 00:31:38,140] You take everything and you compactify it.
+- [00:31:38,260 - 00:31:40,700] But it's also called making a Penrose diagram.
+- [00:31:41,220 - 00:31:44,080] This is a Penrose diagram of flat space-time.
+- [00:31:44,940 - 00:31:46,080] Roger Penrose.
+- [00:31:48,700 - 00:31:50,960] Sometimes it's called a Carter-Penrose diagram
+- [00:31:50,960 - 00:31:54,220] because a physicist named Carter,
+- [00:31:54,320 - 00:31:54,940] I think,
+- [00:31:54,940 - 00:31:56,220] actually invented it first.
+- [00:31:58,760 - 00:31:58,890] I don't know if you've
+- [00:31:58,890 - 00:31:59,020] ever seen a pen in Carter,
+- [00:31:59,380 - 00:32:01,200] but it's usually called a Penrose diagram.
+- [00:32:04,800 - 00:32:05,320] Good.
+- [00:32:05,660 - 00:32:08,860] So that's flat space-time laid out on the blackboard.
+- [00:32:09,240 - 00:32:09,760] Now,
+- [00:32:09,760 - 00:32:10,420] the question is,
+- [00:32:10,420 - 00:32:12,360] supposing you took the black hole.
+- [00:32:13,180 - 00:32:14,480] Here's the black hole geometry.
+- [00:32:16,140 - 00:32:17,180] It also goes,
+- [00:32:17,180 - 00:32:17,800] oh,
+- [00:32:17,800 - 00:32:18,240] let's put,
+- [00:32:18,240 - 00:32:20,080] there's some names of points.
+- [00:32:20,600 - 00:32:22,380] This is called spatial infinity,
+- [00:32:22,380 - 00:32:23,900] or r equals infinity.
+- [00:32:24,560 - 00:32:25,640] This one up here,
+- [00:32:25,640 - 00:32:26,380] what would you call that?
+- [00:32:28,960 - 00:32:31,020] That's what you get when you just go vertically upward.
+- [00:32:31,720 - 00:32:33,100] That's time equals infinity.
+- [00:32:34,720 - 00:32:35,680] All right,
+- [00:32:35,680 - 00:32:36,420] let's use green.
+- [00:32:36,640 - 00:32:37,420] T equals infinity.
+- [00:32:39,160 - 00:32:40,020] That's this point.
+- [00:32:40,400 - 00:32:41,400] What about this one?
+- [00:32:43,120 - 00:32:44,660] That's t equals minus infinity.
+- [00:32:48,240 - 00:32:48,920] All right,
+- [00:32:48,920 - 00:32:49,240] so this,
+- [00:32:49,240 - 00:32:50,540] I'll give you the name.
+- [00:32:50,620 - 00:32:53,700] This is called future time-like infinity.
+- [00:32:54,100 - 00:32:56,460] This is called past time-like infinity.
+- [00:32:57,120 - 00:32:59,340] This is called spatial infinity,
+- [00:32:59,340 - 00:33:00,640] or space-like infinity.
+- [00:33:02,020 - 00:33:03,820] And what about these lines here,
+- [00:33:03,820 - 00:33:06,040] these 45-degree angles?
+- [00:33:06,400 - 00:33:10,440] These 45-degree angles are where all light rays come from.
+- [00:33:10,760 - 00:33:13,520] Light rays come in and go out.
+- [00:33:14,360 - 00:33:15,620] They don't really go out,
+- [00:33:15,620 - 00:33:16,880] because it takes an infinite amount
+- [00:33:16,880 - 00:33:18,140] of time for them to get out.
+- [00:33:18,340 - 00:33:21,670] But a light ray beginning in the infinite
+- [00:33:21,670 - 00:33:25,000] remote past starts out its life coming in along,
+- [00:33:25,000 - 00:33:29,160] one of these light-like trajectories here,
+- [00:33:29,160 - 00:33:30,820] bounces off and goes back out.
+- [00:33:31,260 - 00:33:35,500] The standard terminology is to call this script I minus,
+- [00:33:35,500 - 00:33:37,300] sometimes called scri-minus,
+- [00:33:37,300 - 00:33:37,900] script I.
+- [00:33:38,260 - 00:33:39,380] Scri-minus,
+- [00:33:39,380 - 00:33:40,120] and I don't know why,
+- [00:33:40,120 - 00:33:41,540] I don't know where the I came from.
+- [00:33:41,880 - 00:33:43,600] I know what the plus and minus means.
+- [00:33:43,720 - 00:33:44,900] This is called I plus,
+- [00:33:44,900 - 00:33:46,340] or script I plus.
+- [00:33:47,340 - 00:33:49,710] And these are called past
+- [00:33:49,710 - 00:33:52,080] light-like infinity and future light-like infinity.
+- [00:33:52,080 - 00:33:55,810] The place where light rays begin
+- [00:33:55,810 - 00:33:59,540] and the place where light rays end.
+- [00:33:59,680 - 00:34:00,620] And that's the terminology.
+- [00:34:04,000 - 00:34:06,940] And that's what flat space looks like when compactified.
+- [00:34:08,060 - 00:34:08,580] Now,
+- [00:34:08,580 - 00:34:10,100] what about the black hole?
+- [00:34:10,600 - 00:34:12,080] The Schwarzschild black hole,
+- [00:34:12,080 - 00:34:13,219] what does that look like?
+- [00:34:15,719 - 00:34:17,880] We can do exactly the same thing.
+- [00:34:18,040 - 00:34:19,880] We can do exactly the same thing.
+- [00:34:19,940 - 00:34:21,199] Take this hole diagram.
+- [00:34:23,239 - 00:34:23,920] Introduce again,
+- [00:34:23,920 - 00:34:25,800] I guess we can call this R,
+- [00:34:25,800 - 00:34:26,860] capital R,
+- [00:34:26,860 - 00:34:32,040] the original Kruskal coordinates.
+- [00:34:32,639 - 00:34:35,600] And we can again introduce light-like coordinates,
+- [00:34:35,600 - 00:34:37,340] T plus R and T minus R,
+- [00:34:37,340 - 00:34:39,000] do exactly the same operation.
+- [00:34:39,900 - 00:34:40,980] And what will we get?
+- [00:34:41,340 - 00:34:42,600] What it will look like,
+- [00:34:42,600 - 00:34:44,179] I'm going to draw it over here,
+- [00:34:44,179 - 00:34:47,060] and then I'll show you how it works.
+- [00:35:07,120 - 00:35:07,600] What it looks like is a diagonal rectangle.
+- [00:35:07,600 - 00:35:12,590] At the previous in the process of圖
+- [00:35:12,590 - 00:35:17,580] and the size of the context of light,
+- [00:35:17,580 - 00:35:18,400] You can see that this is the same Moment.
+- [00:35:19,040 - 00:35:19,970] This is when the value
+- [00:35:19,970 - 00:35:20,900] of the standard weak-and-vstellung area appears.
+- [00:35:20,900 - 00:35:21,480] And the next thing we're going
+- [00:35:21,480 - 00:35:22,060] to do is these galvanized legislatures here,
+- [00:35:22,060 - 00:35:27,500] properly and we can again draw coordinates.
+- [00:35:27,500 - 00:35:30,720] Here's t equals 0,
+- [00:35:30,720 - 00:35:31,880] here's t equals 1,
+- [00:35:31,880 - 00:35:32,360] here's
+- [00:35:32,360 - 00:35:33,060] t equals 2,
+- [00:35:33,060 - 00:35:34,280] here's t equals 3,
+- [00:35:34,280 - 00:35:35,680] t equals 4.
+- [00:35:35,680 - 00:35:40,120] That corresponds to these lines which all
+- [00:35:40,120 - 00:35:41,880] pass through this point over here.
+- [00:35:41,880 - 00:35:44,140] They also pass through this point over here.
+- [00:35:44,140 - 00:35:45,980] The origin
+- [00:35:45,980 - 00:35:46,560] over here,
+- [00:35:46,560 - 00:35:48,060] which is the horizon,
+- [00:35:48,060 - 00:35:50,020] is right over here.
+- [00:35:50,020 - 00:35:51,760] Okay,
+- [00:35:51,760 - 00:35:53,080] what about the vertical lines,
+- [00:35:53,220 - 00:35:54,660] the red vertical lines?
+- [00:35:54,660 - 00:35:57,100] Those are constant position.
+- [00:35:57,100 - 00:36:00,280] Those are observers who are hovering
+- [00:36:00,280 - 00:36:02,920] above the black hole at a constant radius.
+- [00:36:02,920 - 00:36:04,080] They look like this.
+- [00:36:04,080 - 00:36:05,560] Way out,
+- [00:36:05,560 - 00:36:06,880] even further
+- [00:36:06,880 - 00:36:07,280] out,
+- [00:36:07,280 - 00:36:08,360] even further out,
+- [00:36:08,360 - 00:36:09,460] in closer,
+- [00:36:09,460 - 00:36:12,260] here's somebody hovering close to the horizon,
+- [00:36:12,260 - 00:36:12,940] here's somebody
+- [00:36:12,940 - 00:36:14,700] hovering very close to the horizon.
+- [00:36:15,400 - 00:36:15,960] Okay,
+- [00:36:15,960 - 00:36:15,960] so we're going to draw a line here,
+- [00:36:15,960 - 00:36:15,960] and we're going to draw a line here,
+- [00:36:15,960 - 00:36:15,960] and we're
+- [00:36:15,960 - 00:36:16,000] going to draw a line here.
+- [00:36:16,000 - 00:36:16,000] We're going to draw a line here,
+- [00:36:16,000 - 00:36:16,000] and we're going to draw a line
+- [00:36:16,000 - 00:36:16,000] here.
+- [00:36:16,000 - 00:36:17,740] The closer you hover close to the horizon,
+- [00:36:17,740 - 00:36:20,600] the more you have to accelerate to keep out.
+- [00:36:20,920 - 00:36:23,280] So it's not a comfortable thing to be
+- [00:36:23,280 - 00:36:25,640] hovering above the horizon because you're being pulled
+- [00:36:25,640 - 00:36:27,360] or jerked or whatever,
+- [00:36:27,360 - 00:36:28,420] you're being accelerated.
+- [00:36:28,420 - 00:36:31,380] This is the exterior of the black hole.
+- [00:36:31,380 - 00:36:33,700] What
+- [00:36:33,700 - 00:36:36,020] about quadrant 2?
+- [00:36:36,020 - 00:36:37,660] Quadrant 2 is over here.
+- [00:36:37,660 - 00:36:41,180] Quadrant 2 is over here and it is the place
+- [00:36:41,180 - 00:36:41,800] where you're doomed.
+- [00:36:41,800 - 00:36:43,200] Here's the singularity.
+- [00:36:44,980 - 00:36:48,020] Now the singularity is not off at infinity.
+- [00:36:48,020 - 00:36:52,640] It takes a finite amount of proper time to
+- [00:36:52,640 - 00:36:55,220] fall from the horizon to the singularity.
+- [00:36:55,220 - 00:36:57,840] It is a finite excursion from here to here.
+- [00:36:58,260 - 00:37:01,420] The singularity is a finite time away.
+- [00:37:01,420 - 00:37:02,800] Somebody who falls through,
+- [00:37:02,800 - 00:37:04,580] doesn't get to experience
+- [00:37:04,580 - 00:37:05,440] an infinite time.
+- [00:37:05,440 - 00:37:06,720] They will hit the singularity.
+- [00:37:06,720 - 00:37:09,660] This is it.
+- [00:37:09,660 - 00:37:10,200] Here it is.
+- [00:37:10,200 - 00:37:11,280] It's the whole thing.
+- [00:37:11,400 - 00:37:13,040] the whole black hole geometry.
+- [00:37:13,040 - 00:37:13,180] Which is why I call it the singularity.
+- [00:37:13,180 - 00:37:13,180] A singularity is
+- [00:37:13,180 - 00:37:14,760] tree laid out in a Penrose diagram.
+- [00:37:14,760 - 00:37:16,220] If you're over here,
+- [00:37:16,220 - 00:37:17,020] you're doomed.
+- [00:37:17,020 - 00:37:18,600] If you're out here,
+- [00:37:18,740 - 00:37:19,540] you can escape,
+- [00:37:19,540 - 00:37:20,920] or you may go in.
+- [00:37:23,880 - 00:37:25,680] You should ask yourself now,
+- [00:37:25,680 - 00:37:27,360] what is this other half?
+- [00:37:27,360 - 00:37:28,980] If this is the outside of the
+- [00:37:28,980 - 00:37:29,500] black hole,
+- [00:37:29,500 - 00:37:31,960] what is this other half over here,
+- [00:37:31,960 - 00:37:33,080] and what's down here?
+- [00:37:33,080 - 00:37:35,340] What's down here in
+- [00:37:35,340 - 00:37:35,520] particular,
+- [00:37:35,520 - 00:37:37,220] what is this thing I drew down here?
+- [00:37:37,220 - 00:37:42,640] That's quadrant three and quadrant four.
+- [00:37:43,540 - 00:37:47,370] Quadrant three and quadrant four have no
+- [00:37:47,370 - 00:37:51,200] real meaning for a real physical black hole.
+- [00:37:51,200 - 00:37:51,680] As
+- [00:37:51,680 - 00:37:52,140] we're going to see,
+- [00:37:52,140 - 00:37:54,200] we're going to work out a real physical black hole,
+- [00:37:54,200 - 00:37:56,400] but they really
+- [00:37:56,400 - 00:37:57,180] have no meaning.
+- [00:37:57,180 - 00:37:58,670] They're not really on the
+- [00:37:58,670 - 00:38:00,160] diagram of a real black hole.
+- [00:38:00,160 - 00:38:00,620] Nevertheless,
+- [00:38:01,720 - 00:38:02,640] you can ask,
+- [00:38:02,640 - 00:38:04,140] what kind of geometry
+- [00:38:04,140 - 00:38:04,740] is
+- [00:38:04,740 - 00:38:04,760] this?
+- [00:38:04,760 - 00:38:08,160] The diagram is described by this full,
+- [00:38:08,160 - 00:38:12,380] what's called the extended Kruskal diagram.
+- [00:38:12,380 - 00:38:13,640] It seems
+- [00:38:13,640 - 00:38:15,600] to have two exterior regions.
+- [00:38:15,600 - 00:38:18,600] It seems to have two exterior regions,
+- [00:38:18,600 - 00:38:19,620] a second exterior
+- [00:38:19,620 - 00:38:20,620] region over here,
+- [00:38:20,620 - 00:38:24,920] where you can escape outward in this direction,
+- [00:38:24,920 - 00:38:26,280] or you can fall in from
+- [00:38:26,280 - 00:38:26,760] this side.
+- [00:38:26,760 - 00:38:29,620] It seems to have two exterior
+- [00:38:29,620 - 00:38:32,480] regions connected together at the horizon.
+- [00:38:32,480 - 00:38:33,860] That's
+- [00:38:33,860 - 00:38:34,220] the horizon.
+- [00:38:34,220 - 00:38:37,160] That's the place where r is equal to 2mg.
+- [00:38:37,160 - 00:38:39,940] r equals 2mg,
+- [00:38:39,940 - 00:38:41,240] Schwarzschild r.
+- [00:38:41,240 - 00:38:43,280] Remember,
+- [00:38:43,520 - 00:38:46,510] it's the place where 1
+- [00:38:46,510 - 00:38:49,500] minus 2mg over r changed sign,
+- [00:38:49,500 - 00:38:51,400] whereas you came in,
+- [00:38:51,400 - 00:38:52,380] you suddenly changed
+- [00:38:52,380 - 00:38:54,680] sign and went off in a light-like direction.
+- [00:38:54,680 - 00:38:56,280] All right,
+- [00:38:56,280 - 00:38:58,520] so that's what it looks like,
+- [00:38:58,520 - 00:38:59,340] but
+- [00:39:00,580 - 00:39:03,700] supposing now we take a
+- [00:39:03,700 - 00:39:06,540] fixed slice here that looks like this,
+- [00:39:06,540 - 00:39:09,400] go right through from here to here.
+- [00:39:09,400 - 00:39:14,340] What does
+- [00:39:14,340 - 00:39:15,440] that space look like?
+- [00:39:15,440 - 00:39:16,200] It's space now.
+- [00:39:16,200 - 00:39:17,100] It's not space-time,
+- [00:39:17,100 - 00:39:19,300] space on this green slice
+- [00:39:19,300 - 00:39:21,880] or this green sheet surface.
+- [00:39:21,880 - 00:39:23,400] What does it look like?
+- [00:39:23,400 - 00:39:24,240] I'm going to tell you what it looks
+- [00:39:24,240 - 00:39:24,440] like.
+- [00:39:24,440 - 00:39:26,620] You start out way out here,
+- [00:39:26,620 - 00:39:30,840] and space is very big.
+- [00:39:30,840 - 00:39:31,760] Namely,
+- [00:39:31,760 - 00:39:32,940] the celestial sphere
+- [00:39:32,940 - 00:39:33,540] is very,
+- [00:39:33,540 - 00:39:34,120] very big.
+- [00:39:34,120 - 00:39:35,100] Way,
+- [00:39:35,100 - 00:39:36,620] way out here at large r.
+- [00:39:36,620 - 00:39:44,260] So you see a very big region of space.
+- [00:39:44,740 - 00:39:46,620] I'm just drawing it as a plane.
+- [00:39:46,620 - 00:39:49,100] As you come in,
+- [00:39:49,100 - 00:39:52,160] you're moving closer and closer to this
+- [00:39:52,160 - 00:39:52,460] horizon.
+- [00:39:52,460 - 00:39:55,760] What happens to the radius of the sphere?
+- [00:39:55,760 - 00:39:58,180] It shrinks down to r equals 2mg.
+- [00:39:58,180 - 00:39:59,080] So
+- [00:39:59,080 - 00:40:00,680] you could draw that like this.
+- [00:40:07,940 - 00:40:09,500] It's getting smaller and smaller.
+- [00:40:09,500 - 00:40:12,140] That's not very good.
+- [00:40:12,140 - 00:40:12,840] I don't like that.
+- [00:40:12,840 - 00:40:13,420] I don't want
+- [00:40:13,420 - 00:40:13,500] to.
+- [00:40:13,500 - 00:40:14,700] Let's try to do better.
+- [00:40:14,700 - 00:40:18,660] Let's look almost edge-on.
+- [00:40:18,660 - 00:40:26,140] Then as we come in,
+- [00:40:26,140 - 00:40:29,020] it shrinks down
+- [00:40:30,900 - 00:40:31,700] these circles.
+- [00:40:32,940 - 00:40:33,100] Okay,
+- [00:40:33,100 - 00:40:34,080] let's go back a second.
+- [00:40:34,080 - 00:40:39,100] Each point on this diagram represents a two-dimensional
+- [00:40:39,100 - 00:40:39,540] sphere.
+- [00:40:39,540 - 00:40:40,630] Do you understand why
+- [00:40:40,630 - 00:40:41,720] it represents a two-dimensional sphere?
+- [00:40:41,720 - 00:40:45,340] Remember,
+- [00:40:45,340 - 00:40:45,620] we're
+- [00:40:45,620 - 00:40:46,660] using polar coordinates.
+- [00:40:46,660 - 00:40:47,640] Right.
+- [00:40:47,640 - 00:40:50,160] So just as in polar coordinates on a plane,
+- [00:40:50,160 - 00:40:51,540] each radial
+- [00:40:51,540 - 00:40:53,160] distance represents a circle,
+- [00:40:53,160 - 00:40:57,980] each radial distance in three-dimensional polar coordinates
+- [00:40:57,980 - 00:40:59,080] represents a sphere.
+- [00:40:59,520 - 00:41:00,940] At each point here,
+- [00:41:00,940 - 00:41:02,920] there's a sphere that somebody could move around.
+- [00:41:02,920 - 00:41:02,920] So you could draw
+- [00:41:02,940 - 00:41:04,540] a two-dimensional sphere.
+- [00:41:04,540 - 00:41:06,780] And the two-dimensional sphere is
+- [00:41:06,780 - 00:41:09,020] a very big way out here.
+- [00:41:09,020 - 00:41:10,300] As you
+- [00:41:10,300 - 00:41:10,780] come in,
+- [00:41:10,780 - 00:41:12,900] the two-dimensional sphere gets smaller and
+- [00:41:12,900 - 00:41:15,020] smaller until it gets to some minimum
+- [00:41:15,020 - 00:41:16,120] size over here.
+- [00:41:16,120 - 00:41:17,640] And that's the horizon.
+- [00:41:17,640 - 00:41:19,960] That's r equals 2mg.
+- [00:41:19,960 - 00:41:23,760] Now,
+- [00:41:23,760 - 00:41:24,820] what happens if you just
+- [00:41:24,820 - 00:41:25,940] keep going on this diagram,
+- [00:41:25,940 - 00:41:28,060] on this sort of fake diagram,
+- [00:41:28,060 - 00:41:29,820] half of which has no real meaning?
+- [00:41:31,260 - 00:41:32,240] That we'll see.
+- [00:41:32,940 - 00:41:33,040] Well,
+- [00:41:33,040 - 00:41:34,620] it starts expanding out again.
+- [00:41:34,620 - 00:41:41,300] It starts expanding out again until it gets very big.
+- [00:41:47,460 - 00:41:50,430] It looks like you can pass through from one
+- [00:41:50,430 - 00:41:53,400] side to the other by going through what people
+- [00:41:53,400 - 00:41:54,320] call a wormhole.
+- [00:41:55,200 - 00:41:55,840] Okay.
+- [00:41:56,100 - 00:41:58,640] It's also called an Einstein-Rosen bridge.
+- [00:41:58,640 - 00:42:02,920] It connects to what appear to be atoms of
+- [00:42:02,920 - 00:42:04,780] external regions to the black hole
+- [00:42:05,460 - 00:42:06,770] which get bigger and bigger and
+- [00:42:06,770 - 00:42:08,080] bigger as you move away from it
+- [00:42:08,440 - 00:42:09,460] and it looks like
+- [00:42:09,460 - 00:42:13,580] the black hole is connecting two universes,
+- [00:42:13,580 - 00:42:14,260] two
+- [00:42:15,000 - 00:42:15,840] asymptotic regions
+- [00:42:16,700 - 00:42:19,020] you might think well you could pass through
+- [00:42:19,560 - 00:42:20,720] going from here to here
+- [00:42:21,720 - 00:42:22,660] you can't
+- [00:42:23,240 - 00:42:24,980] let's think about somebody who
+- [00:42:24,980 - 00:42:26,720] wants to start on this side
+- [00:42:27,080 - 00:42:28,680] and wants to pass to this side
+- [00:42:29,580 - 00:42:30,880] if they start out here
+- [00:42:31,740 - 00:42:32,940] anywhere on this side
+- [00:42:32,940 - 00:42:35,040] and they want to pass to this side
+- [00:42:35,040 - 00:42:37,740] their trajectory has to exceed the speed of light
+- [00:42:38,740 - 00:42:40,550] there's no way to get
+- [00:42:40,550 - 00:42:42,360] from this quadrant to that quadrant
+- [00:42:43,060 - 00:42:45,880] even if you start very very long in the past
+- [00:42:45,880 - 00:42:48,700] and you're willing to go way up into the future here
+- [00:42:48,700 - 00:42:51,220] you still have to exceed the speed of light
+- [00:42:52,140 - 00:42:54,980] so in fact this diagram is a little bit misleading
+- [00:42:56,480 - 00:42:58,540] it's everything at an instant of time
+- [00:42:58,540 - 00:43:00,860] but there simply isn't really time
+- [00:43:00,860 - 00:43:02,560] to go from one side to the other
+- [00:43:02,560 - 00:43:04,640] you cannot go from one side to the other
+- [00:43:04,640 - 00:43:08,080] and so the Einstein-Rosen bridge is not really a bridge
+- [00:43:09,320 - 00:43:11,000] one way to think about it
+- [00:43:11,000 - 00:43:13,180] is that it opens up and closes
+- [00:43:13,180 - 00:43:15,360] again before anything can pass through it
+- [00:43:15,360 - 00:43:16,570] but the best way to think about
+- [00:43:16,570 - 00:43:17,780] it is just to look at this figure
+- [00:43:18,279 - 00:43:19,659] and say yeah if you
+- [00:43:19,659 - 00:43:21,040] could exceed the speed of light
+- [00:43:21,500 - 00:43:22,620] and move horizontally
+- [00:43:23,279 - 00:43:25,740] yes you would move from here to here
+- [00:43:25,740 - 00:43:28,940] and going through the neck at the center there
+- [00:43:29,460 - 00:43:30,840] but you're not allowed to do that
+- [00:43:30,860 - 00:43:34,900] you can only move on 45 degree angles or less
+- [00:43:35,660 - 00:43:37,420] and so you really can't get
+- [00:43:37,420 - 00:43:39,180] from one side to the other
+- [00:43:39,600 - 00:43:41,400] this has been a source
+- [00:43:41,400 - 00:43:43,200] of all sorts of science fiction
+- [00:43:43,200 - 00:43:45,310] passing from one universe to another
+- [00:43:45,310 - 00:43:47,420] through the center of a black hole
+- [00:43:47,420 - 00:43:49,780] but as you can see it doesn't happen
+- [00:43:50,500 - 00:43:52,320] these kind of wormholes or
+- [00:43:52,320 - 00:43:54,140] whatever you want to call them
+- [00:43:54,140 - 00:43:55,840] which you cannot get through
+- [00:43:56,640 - 00:43:58,740] they're called non-traversable wormholes
+- [00:43:58,740 - 00:44:00,740] meaning to say you can't traverse them
+- [00:44:00,860 - 00:44:02,340] you can't go from one side to the other
+- [00:44:03,620 - 00:44:04,940] I'm sorry to disappoint you but
+- [00:44:04,940 - 00:44:06,260] that is the way it is
+- [00:44:07,740 - 00:44:08,970] but in fact as we're going
+- [00:44:08,970 - 00:44:10,200] to see in a few minutes
+- [00:44:11,620 - 00:44:13,760] the meaning of the left hand side
+- [00:44:14,380 - 00:44:16,740] there's no real meaning to the left hand side anyway
+- [00:44:16,740 - 00:44:17,880] there's no place to go
+- [00:44:17,880 - 00:44:20,060] there is no real left hand side
+- [00:44:20,060 - 00:44:23,180] the left hand side is really absent from here
+- [00:44:24,200 - 00:44:26,940] so let's talk about now creating a black hole
+- [00:44:26,940 - 00:44:28,390] creating a black hole not
+- [00:44:28,390 - 00:44:29,840] in a laboratory that's too hard
+- [00:44:29,840 - 00:44:34,160] but creating a black hole in infinite space
+- [00:44:34,780 - 00:44:37,520] by having some infalling matter
+- [00:44:39,860 - 00:44:42,520] we're going to take very special kind of infalling matter
+- [00:44:42,520 - 00:44:43,570] what we're going to do
+- [00:44:43,570 - 00:44:44,620] is imagine making a black hole
+- [00:44:44,620 - 00:44:45,940] we start with no black hole
+- [00:44:50,242 - 00:44:50,422] 嗯
+- [00:44:51,842 - 00:44:52,502] There's no black hole,
+- [00:44:52,502 - 00:44:54,922] but what we have is a very,
+- [00:44:54,922 - 00:44:57,302] very distant shell
+- [00:44:59,961 - 00:45:02,211] It's not a shell made out
+- [00:45:02,211 - 00:45:04,462] of iron or anything like that
+- [00:45:04,862 - 00:45:06,802] It's a shell of incoming radiation
+- [00:45:07,981 - 00:45:08,942] Somebody way,
+- [00:45:08,942 - 00:45:13,082] way far away created an incoming shell of radiation
+- [00:45:13,082 - 00:45:17,722] A thin shell of radiation
+- [00:45:17,722 - 00:45:19,402] Radiation carries energy,
+- [00:45:19,402 - 00:45:21,382] radiation carries momentum
+- [00:45:22,162 - 00:45:23,862] And the shell is coming in
+- [00:45:24,322 - 00:45:25,862] It's coming in with the speed of light
+- [00:45:28,742 - 00:45:30,122] At some point,
+- [00:45:30,122 - 00:45:30,882] as we will see,
+- [00:45:30,882 - 00:45:34,882] this shell gets close enough together
+- [00:45:34,882 - 00:45:37,472] That there's so much energy in a
+- [00:45:37,472 - 00:45:40,062] small region that a black hole forms
+- [00:45:40,882 - 00:45:41,482] Alright,
+- [00:45:41,482 - 00:45:44,962] so this is the simplest version of black hole formation
+- [00:45:46,502 - 00:45:47,702] A star
+- [00:45:47,702 - 00:45:49,952] A star isn't really made up out of
+- [00:45:49,952 - 00:45:52,202] things which fall in with the speed of light
+- [00:45:52,202 - 00:45:55,422] This is the problem of a black hole being formed by
+- [00:45:55,422 - 00:45:58,642] stuff coming in with the speed of light on a thin shell
+- [00:45:58,642 - 00:46:01,482] It's the simplest of all relativity problems
+- [00:46:02,402 - 00:46:03,462] So let's see if we
+- [00:46:03,462 - 00:46:04,522] can figure out how it works
+- [00:46:04,522 - 00:46:07,622] You need to know really only one important thing,
+- [00:46:07,622 - 00:46:08,682] two important things
+- [00:46:09,202 - 00:46:11,262] The shell moves in with the speed of light
+- [00:46:12,181 - 00:46:16,142] And the other thing is a version of Newton's theorem
+- [00:46:16,681 - 00:46:17,682] Anybody know what Newton's theorem is?
+- [00:46:17,682 - 00:46:19,902] About gravity?
+- [00:46:21,182 - 00:46:23,722] For a spherically symmetric gravitational region
+- [00:46:23,722 - 00:46:25,482] In particular,
+- [00:46:25,482 - 00:46:28,622] for a mass distribution which forms a shell
+- [00:46:30,122 - 00:46:32,542] Supposing you have a mass distribution which forms a shell
+- [00:46:32,542 - 00:46:34,762] It doesn't matter whether it's moving or doing anything
+- [00:46:35,242 - 00:46:38,242] If you have a mass distribution which forms a shell
+- [00:46:38,242 - 00:46:39,942] For which there's nothing on the interior
+- [00:46:40,902 - 00:46:43,462] Then there's no gravitational field on the interior
+- [00:46:43,782 - 00:46:47,342] The interior is completely without gravitational field
+- [00:46:47,682 - 00:46:50,182] So if you have a shell of material
+- [00:46:52,842 - 00:46:53,782] Spherically symmetric
+- [00:46:54,642 - 00:46:56,242] With nothing on the interior
+- [00:46:56,902 - 00:46:59,302] There's a gravitational field on the outside
+- [00:46:59,302 - 00:47:00,522] This is Newtonian
+- [00:47:00,522 - 00:47:02,862] There's a gravitational field on the outside
+- [00:47:02,862 - 00:47:05,152] Which is identical to a gravitational field
+- [00:47:05,152 - 00:47:07,442] of a point mass at the center
+- [00:47:07,442 - 00:47:08,802] Same amount of mass
+- [00:47:09,402 - 00:47:10,962] But on the inside of the shell,
+- [00:47:10,962 - 00:47:11,702] there is nothing
+- [00:47:12,302 - 00:47:13,362] So outside,
+- [00:47:13,362 - 00:47:14,982] it looks like a point mass
+- [00:47:16,022 - 00:47:16,582] Inside,
+- [00:47:16,582 - 00:47:17,122] it looks like there's nothing
+- [00:47:17,122 - 00:47:17,662] on the inside of the material
+- [00:47:17,662 - 00:47:17,802] nothing.
+- [00:47:17,802 - 00:47:20,122] That's Newton's theorem,
+- [00:47:20,122 - 00:47:22,702] or a special case of Newton's theorem,
+- [00:47:22,702 - 00:47:24,322] that on the interior
+- [00:47:24,622 - 00:47:27,222] of a distribution of mass which forms a shell,
+- [00:47:27,222 - 00:47:29,942] you see no gravitational field.
+- [00:47:29,942 - 00:47:31,502] On the outside
+- [00:47:31,502 - 00:47:34,172] you see the gravitational field as it would
+- [00:47:34,172 - 00:47:36,842] be if all of that mass was concentrated at
+- [00:47:36,842 - 00:47:37,142] a point.
+- [00:47:37,142 - 00:47:40,902] That's even true if the shell is moving.
+- [00:47:40,902 - 00:47:43,022] As the shell moves in,
+- [00:47:43,022 - 00:47:45,862] more and more
+- [00:47:45,862 - 00:47:49,262] space will look like the field of the point mass,
+- [00:47:49,262 - 00:47:52,042] and less and less will look like empty
+- [00:47:52,042 - 00:47:52,422] space,
+- [00:47:52,422 - 00:47:54,472] but interior to the shell
+- [00:47:54,472 - 00:47:56,522] it always looks like nothing's there,
+- [00:47:56,522 - 00:47:57,682] exterior to the
+- [00:47:57,682 - 00:47:58,862] shell it looks like a point mass.
+- [00:47:58,862 - 00:48:02,402] This theorem is also true in general relativity.
+- [00:48:02,402 - 00:48:03,822] The statement
+- [00:48:03,822 - 00:48:06,262] of the theorem is if you have a shell
+- [00:48:06,262 - 00:48:08,702] of infalling or a shell of mass of any kind,
+- [00:48:08,702 - 00:48:10,742] then the interior
+- [00:48:10,742 - 00:48:13,342] region is just flat spacetime,
+- [00:48:13,342 - 00:48:15,702] just as if there was no source.
+- [00:48:15,742 - 00:48:15,842] Subtitles by the Amara.org community
+- [00:48:15,862 - 00:48:17,902] The exterior region,
+- [00:48:17,902 - 00:48:20,602] it doesn't look like the Newtonian point source.
+- [00:48:20,602 - 00:48:21,702] What does it look like?
+- [00:48:21,702 - 00:48:23,982] It looks like the Schwarzschild solution.
+- [00:48:23,982 - 00:48:26,062] So if you have,
+- [00:48:26,062 - 00:48:27,042] in general relativity,
+- [00:48:27,042 - 00:48:29,202] on the inside of a shell of mass,
+- [00:48:29,202 - 00:48:31,722] flat spacetime,
+- [00:48:31,722 - 00:48:37,562] on the exterior of it,
+- [00:48:37,562 - 00:48:41,802] it looks like the Schwarzschild black hole.
+- [00:48:41,802 - 00:48:48,242] A C-H black hole.
+- [00:48:48,242 - 00:48:52,862] So if you had a static,
+- [00:48:52,862 - 00:48:54,242] non-moving shell,
+- [00:48:54,242 - 00:48:57,692] what you would do to construct the actual solution
+- [00:48:57,692 - 00:49:01,142] is you would sort of paste together an interior here,
+- [00:49:01,142 - 00:49:01,882] which was flat,
+- [00:49:01,882 - 00:49:03,262] with an exterior,
+- [00:49:03,262 - 00:49:06,162] which is Schwarzschild.
+- [00:49:06,162 - 00:49:08,662] You do the same thing in Newtonian physics.
+- [00:49:08,662 - 00:49:09,402] Paste together,
+- [00:49:09,402 - 00:49:11,782] no gravitational field on the outside,
+- [00:49:11,782 - 00:49:11,782] and no gravitational field on the inside.
+- [00:49:11,801 - 00:49:14,281] So you have a shell on the inside
+- [00:49:14,281 - 00:49:16,762] with standard gravitational point source on the outside,
+- [00:49:16,762 - 00:49:20,502] and that's the way you find solutions of Newtonian physics.
+- [00:49:20,502 - 00:49:23,762] You do exactly the same thing in general relativity.
+- [00:49:24,722 - 00:49:25,162] Okay,
+- [00:49:25,162 - 00:49:26,142] so now we can,
+- [00:49:26,142 - 00:49:28,112] let's redraw the rest of this
+- [00:49:28,112 - 00:49:30,082] black hole here for a minute.
+- [00:49:30,082 - 00:49:32,062] Let's put it back.
+- [00:49:32,062 - 00:49:33,282] I erased part of it,
+- [00:49:33,282 - 00:49:34,222] but I want to put it back.
+- [00:49:40,662 - 00:49:41,102] Okay.
+- [00:49:43,102 - 00:49:43,622] So,
+- [00:49:43,622 - 00:49:44,962] let's go back up to here.
+- [00:49:44,962 - 00:49:46,882] Flat spacetime.
+- [00:49:46,882 - 00:49:48,962] In flat spacetime,
+- [00:49:48,962 - 00:49:49,942] I'm going to redraw it.
+- [00:49:49,942 - 00:49:52,712] I want to get rid of all
+- [00:49:52,712 - 00:49:55,482] these decorations and just put in nothing.
+- [00:49:55,482 - 00:49:58,302] Nothing in spacetime.
+- [00:49:58,622 - 00:50:00,772] But now I want to add the
+- [00:50:00,772 - 00:50:02,922] idea of an incoming shell of radiation.
+- [00:50:02,922 - 00:50:06,302] You can think of the incoming shell of
+- [00:50:06,302 - 00:50:09,682] radiation as a sort of pulse of incoming photons.
+- [00:50:10,642 - 00:50:11,602] A pulse.
+- [00:50:11,602 - 00:50:11,782] A pulse.
+- [00:50:11,802 - 00:50:14,782] Distributed on a nice sphere of incoming photons.
+- [00:50:14,782 - 00:50:17,142] In this picture here,
+- [00:50:17,142 - 00:50:19,582] they come in from light like infinity.
+- [00:50:19,582 - 00:50:21,362] So here's the pulse.
+- [00:50:21,362 - 00:50:22,982] Let's draw the pulse of incoming photons.
+- [00:50:26,302 - 00:50:27,022] Arranged around.
+- [00:50:27,022 - 00:50:28,942] Let's put it a little bit later.
+- [00:50:28,942 - 00:50:31,102] Let's make it a little bit later.
+- [00:50:31,102 - 00:50:33,182] Put it up here.
+- [00:50:34,782 - 00:50:36,442] There's the pulse of incoming radiation.
+- [00:50:36,442 - 00:50:38,842] It forms a shell.
+- [00:50:38,842 - 00:50:41,642] Where is the interior?
+- [00:50:41,802 - 00:50:42,502] On this shell here has the line.
+- [00:50:42,502 - 00:50:42,502] Where is hart the shell?
+- [00:50:42,502 - 00:50:42,522] The shell is called the interior of the shell.
+- [00:50:42,522 - 00:50:42,532] And that has for each
+- [00:50:42,532 - 00:50:42,542] reasons a origin and its root.
+- [00:50:42,542 - 00:50:43,402] At any given instant,
+- [00:50:43,402 - 00:50:44,912] where is the interior and where
+- [00:50:44,912 - 00:50:46,422] is the exterior of the shell.
+- [00:50:46,522 - 00:50:47,082] So that's easy.
+- [00:50:48,622 - 00:50:53,142] Here's a line of constant time,
+- [00:50:53,142 - 00:50:54,682] space.
+- [00:50:55,462 - 00:50:57,252] where is the interior of the shell
+- [00:50:57,252 - 00:50:59,042] and where is the exterior of the shell,
+- [00:50:59,042 - 00:51:00,902] there's the interior region,
+- [00:51:00,902 - 00:51:02,122] interior to the shell,
+- [00:51:02,662 - 00:51:04,682] That's the part of the space-time that's
+- [00:51:04,682 - 00:51:06,702] inside the shell near R equals zero.
+- [00:51:07,562 - 00:51:09,632] The part of the space-time that's
+- [00:51:09,632 - 00:51:11,702] outside the shell is out below,
+- [00:51:11,702 - 00:51:11,782] outside,
+- [00:51:11,782 - 00:51:11,782] where the shell is.
+- [00:51:11,802 - 00:51:13,462] the blue line here and it's out here.
+- [00:51:13,462 - 00:51:17,022] Here's the incoming shell and what does
+- [00:51:17,022 - 00:51:18,422] Newton's theorem or the general
+- [00:51:18,422 - 00:51:19,822] relativity version of it say?
+- [00:51:19,822 - 00:51:20,962] It says
+- [00:51:20,962 - 00:51:23,122] that on the interior of the shell,
+- [00:51:23,122 - 00:51:30,522] that's everything in here,
+- [00:51:30,522 - 00:51:35,202] everything in there
+- [00:51:35,202 - 00:51:36,522] is flat spacetime.
+- [00:51:36,522 - 00:51:38,022] In other words,
+- [00:51:38,022 - 00:51:41,482] it's correctly represented by the spacetime
+- [00:51:41,482 - 00:51:43,102] that we drew here which was
+- [00:51:43,102 - 00:51:44,722] just a representation of flat spacetime.
+- [00:51:45,422 - 00:51:46,442] First of all,
+- [00:51:46,442 - 00:51:47,662] on the interior of the shell,
+- [00:51:47,662 - 00:51:49,242] which is the lower left here,
+- [00:51:49,242 - 00:51:50,122] the
+- [00:51:50,122 - 00:51:52,912] spacetime of just the flat Penrose
+- [00:51:52,912 - 00:51:55,702] diagram is the correct representation of
+- [00:51:55,702 - 00:51:56,662] everything that's going on.
+- [00:51:56,662 - 00:51:59,022] Now what about out here?
+- [00:51:59,022 - 00:52:00,882] Out here we're told that
+- [00:52:00,882 - 00:52:01,962] there's a gravitational field.
+- [00:52:01,962 - 00:52:04,622] The gravitational field does not look like
+- [00:52:04,622 - 00:52:05,462] flat spacetime,
+- [00:52:05,462 - 00:52:08,022] so this region out here is wrong.
+- [00:52:08,022 - 00:52:09,382] This is not the correct
+- [00:52:09,382 - 00:52:10,702] representation of
+- [00:52:11,202 - 00:52:11,462] the
+- [00:52:11,462 - 00:52:14,392] physics or the geometry of this
+- [00:52:14,392 - 00:52:17,322] infalling shell out beyond the shell.
+- [00:52:17,882 - 00:52:20,362] What is the correct representation?
+- [00:52:20,362 - 00:52:23,462] The correct representation is
+- [00:52:23,462 - 00:52:24,662] the Schwarzschild black hole.
+- [00:52:24,662 - 00:52:27,382] So let's redraw the Schwarzschild black hole to
+- [00:52:27,382 - 00:52:29,082] get rid of all the junk on it.
+- [00:52:29,082 - 00:52:31,262] Just redraw it.
+- [00:52:38,642 - 00:52:40,082] I lost my black pen.
+- [00:52:40,082 - 00:52:40,402] Oh,
+- [00:52:40,402 - 00:52:40,822] there it is.
+- [00:52:41,482 - 00:52:42,702] So here it is.
+- [00:52:51,862 - 00:52:55,302] And now somebody on the outside throws in
+- [00:52:55,302 - 00:52:55,682] the shell.
+- [00:52:56,562 - 00:52:57,142] Yes,
+- [00:52:57,142 - 00:53:00,062] it does,
+- [00:53:00,062 - 00:53:00,062] because left is the last아냅 Frico
+- [00:53:00,062 - 00:53:00,062] and vents is the first one.
+- [00:53:00,098 - 00:53:00,378] شكرا
+- [00:53:01,538 - 00:53:02,038] riding in,
+- [00:53:02,038 - 00:53:03,798] and what does it look like?
+- [00:53:03,798 - 00:53:04,758] It looks like this.
+- [00:53:07,478 - 00:53:07,918] Oh,
+- [00:53:07,918 - 00:53:08,858] I used blue before.
+- [00:53:08,858 - 00:53:09,178] Well,
+- [00:53:09,178 - 00:53:09,418] alright,
+- [00:53:09,418 - 00:53:09,978] let's use red.
+- [00:53:10,958 - 00:53:12,198] Here's the incoming shell.
+- [00:53:12,198 - 00:53:13,698] It comes in,
+- [00:53:16,038 - 00:53:18,518] experiences nothing special at this point over here,
+- [00:53:18,658 - 00:53:19,778] and just keeps going,
+- [00:53:19,778 - 00:53:20,858] but eventually,
+- [00:53:20,858 - 00:53:22,138] and it's a light ray,
+- [00:53:22,298 - 00:53:23,098] it's a light ray,
+- [00:53:23,098 - 00:53:24,578] a radially incoming light ray,
+- [00:53:24,578 - 00:53:26,758] it must move on a 45 degree angle,
+- [00:53:26,758 - 00:53:28,078] it moves in,
+- [00:53:28,078 - 00:53:30,958] and just eventually hits the singularity.
+- [00:53:31,458 - 00:53:32,098] Alright,
+- [00:53:32,098 - 00:53:33,938] so that's what the light ray
+- [00:53:33,938 - 00:53:35,778] would look like on the Schwarzschild geometry.
+- [00:53:36,178 - 00:53:36,838] But now,
+- [00:53:36,838 - 00:53:39,228] which part of the diagram is
+- [00:53:39,228 - 00:53:41,618] correctly representing the physics that we're doing?
+- [00:53:43,038 - 00:53:47,618] The interior of the shell is
+- [00:53:47,618 - 00:53:52,198] not correctly represented by the black hole.
+- [00:53:52,558 - 00:53:54,608] The interior of the shell
+- [00:53:54,608 - 00:53:56,658] is correctly represented by flat spacetime.
+- [00:53:56,758 - 00:54:00,398] It's the exterior which is correctly represented.
+- [00:54:00,818 - 00:54:02,718] The exterior is out here.
+- [00:54:05,878 - 00:54:07,398] We can make it a little bigger,
+- [00:54:07,398 - 00:54:07,818] just to,
+- [00:54:07,818 - 00:54:10,338] I didn't mean to slice it so thin.
+- [00:54:10,858 - 00:54:12,318] Let's make it a little bit bigger.
+- [00:54:16,458 - 00:54:19,578] That just means the shell starts in earlier.
+- [00:54:23,618 - 00:54:26,738] The orange part here is the correct description.
+- [00:54:26,758 - 00:54:29,658] Of the spacetime of the infalling shell.
+- [00:54:29,998 - 00:54:32,698] And the interior in here is not correctly represented.
+- [00:54:33,298 - 00:54:35,198] So how do we put these two together?
+- [00:54:35,418 - 00:54:37,118] How do we put these two together
+- [00:54:37,118 - 00:54:38,818] in order to make a single geometry?
+- [00:54:39,218 - 00:54:40,358] And it's pretty easy.
+- [00:54:40,738 - 00:54:42,248] You just take the wrong part
+- [00:54:42,248 - 00:54:43,758] of this and throw it away.
+- [00:54:51,238 - 00:54:52,578] And you take the wrong part
+- [00:54:52,578 - 00:54:53,918] of this and you throw it away.
+- [00:54:59,317 - 00:55:01,357] And you take the two
+- [00:55:01,357 - 00:55:03,398] right parts and sew them together,
+- [00:55:03,398 - 00:55:04,818] or glue them together,
+- [00:55:04,818 - 00:55:08,978] along the joining line where the infalling shell is.
+- [00:55:09,198 - 00:55:10,358] You take this,
+- [00:55:10,358 - 00:55:11,718] you put it up there,
+- [00:55:11,718 - 00:55:13,678] redraw it,
+- [00:55:13,678 - 00:55:14,898] and it looks like this.
+- [00:55:27,618 - 00:55:29,538] Let's see if we can see what's going on.
+- [00:55:30,878 - 00:55:31,378] Alright,
+- [00:55:31,378 - 00:55:33,538] you see I've taken this diagram over here.
+- [00:55:35,778 - 00:55:39,468] And simply placed it on top of the flat
+- [00:55:39,468 - 00:55:43,158] spacetime drawing so that the shell matches across them.
+- [00:55:43,338 - 00:55:44,978] The shell is the thing they have in common.
+- [00:55:45,958 - 00:55:48,258] The infalling shell is the region that
+- [00:55:48,258 - 00:55:50,558] the two of them have in common.
+- [00:55:50,838 - 00:55:55,598] And on one side you plaster the black hole geometry.
+- [00:55:55,598 - 00:55:57,058] On the other side you
+- [00:55:57,058 - 00:55:58,518] put in the flat space geometry.
+- [00:55:58,958 - 00:56:02,678] That is the geometry of a black
+- [00:56:02,678 - 00:56:06,398] hole that is formed by an infalling shell.
+- [00:56:08,258 - 00:56:08,858] Now,
+- [00:56:08,858 - 00:56:11,798] excuse me while I consult with Newton.
+- [00:56:13,154 - 00:56:14,474] ありがとうございました
+- [00:56:18,722 - 00:56:19,642] Any questions about this?
+- [00:56:21,602 - 00:56:23,682] If you have a shell of batter like that collapsing,
+- [00:56:23,682 - 00:56:26,792] is there any kind of discontinuity
+- [00:56:26,792 - 00:56:29,902] when it crosses the sports channel gratings?
+- [00:56:30,582 - 00:56:30,942] No,
+- [00:56:30,942 - 00:56:32,302] no discontinuity.
+- [00:56:32,302 - 00:56:33,682] But we're going to put that
+- [00:56:33,682 - 00:56:35,062] in and see where it is.
+- [00:56:36,194 - 00:56:36,394] 以上です
+- [00:56:38,178 - 00:56:38,278] No,
+- [00:56:38,278 - 00:56:39,658] nothing special happens
+- [00:56:42,538 - 00:56:43,058] Okay,
+- [00:56:43,058 - 00:56:44,118] where is the horizon?
+- [00:56:44,118 - 00:56:46,058] Where is the point of no return?
+- [00:56:47,538 - 00:56:49,678] Where on this diagram is somebody doomed?
+- [00:56:53,938 - 00:56:55,278] What you do is you
+- [00:56:55,278 - 00:56:56,618] start up in that corner there,
+- [00:56:56,618 - 00:56:58,878] that's the corner where the
+- [00:56:58,878 - 00:57:01,138] singularity appears to meet scry plus
+- [00:57:01,818 - 00:57:03,298] That's infinitely far away.
+- [00:57:03,298 - 00:57:04,418] So don't worry about it.
+- [00:57:04,418 - 00:57:05,888] Scry plus is very very
+- [00:57:05,888 - 00:57:07,358] far away very very late time
+- [00:57:08,418 - 00:57:12,038] But now run a 45 degree line from there down
+- [00:57:16,958 - 00:57:18,658] It's not a place where anybody
+- [00:57:18,658 - 00:57:20,358] gets hurt if they fall through it
+- [00:57:20,358 - 00:57:21,758] It's just a place where
+- [00:57:21,758 - 00:57:23,158] if you do fall through it
+- [00:57:23,738 - 00:57:26,138] You cannot escape from the singularity
+- [00:57:27,858 - 00:57:29,558] You will hit the singularity
+- [00:57:30,218 - 00:57:32,218] If you're on the outside of it here,
+- [00:57:32,218 - 00:57:34,268] you can get away you can
+- [00:57:34,268 - 00:57:36,318] escape to scry plus for example
+- [00:57:36,318 - 00:57:39,378] But notice something very very curious
+- [00:57:40,718 - 00:57:42,678] Even over here you're doomed
+- [00:57:43,738 - 00:57:45,538] You're still in flat space time
+- [00:57:46,258 - 00:57:47,918] You're still in flat space time
+- [00:57:47,918 - 00:57:51,858] The shell hasn't even gotten in yet
+- [00:57:52,357 - 00:57:54,507] You can't see the shell if
+- [00:57:54,507 - 00:57:56,658] you look backward on your light cone
+- [00:57:56,658 - 00:57:57,758] You'll not see the shell
+- [00:57:57,758 - 00:57:59,078] The shell is coming in at
+- [00:57:59,078 - 00:58:00,398] you at the speed of light
+- [00:58:00,398 - 00:58:02,618] Light hasn't gotten to you yet
+- [00:58:02,618 - 00:58:03,998] You don't know the shell is coming
+- [00:58:03,998 - 00:58:05,018] And yet,
+- [00:58:05,018 - 00:58:06,298] if you're still in flat space time
+- [00:58:06,298 - 00:58:07,038] You're standing over here
+- [00:58:07,038 - 00:58:09,478] In other words if you were
+- [00:58:09,478 - 00:58:11,918] somebody who was just falling over here
+- [00:58:11,918 - 00:58:13,578] Just in free fall over here
+- [00:58:14,238 - 00:58:15,978] You're already behind the horizon
+- [00:58:16,577 - 00:58:17,598] Even though
+- [00:58:18,298 - 00:58:20,478] The shell hasn't even gotten in
+- [00:58:21,577 - 00:58:22,418] In yet
+- [00:58:22,418 - 00:58:23,958] You're still in flat space time
+- [00:58:24,598 - 00:58:26,758] Not only don't you feel anything drastic
+- [00:58:26,758 - 00:58:28,038] You don't feel anything
+- [00:58:29,038 - 00:58:30,358] Nothing coming at you
+- [00:58:30,358 - 00:58:31,958] But nevertheless you're doomed
+- [00:58:31,958 - 00:58:33,078] You're doomed,
+- [00:58:33,078 - 00:58:34,018] you cannot get out
+- [00:58:35,717 - 00:58:36,278] You're doomed,
+- [00:58:36,278 - 00:58:36,278] you cannot get out
+- [00:58:36,298 - 00:58:38,118] So the horizon
+- [00:58:38,118 - 00:58:40,598] Extends all the way back to here
+- [00:58:42,758 - 00:58:45,078] Does that mean you can't cross the horizon
+- [00:58:45,078 - 00:58:46,678] Or you can't cross the shell
+- [00:58:47,317 - 00:58:48,657] No you can cross the shell
+- [00:58:53,478 - 00:58:55,098] As long as you're outside the horizon
+- [00:58:55,098 - 00:58:55,658] No
+- [00:58:55,658 - 00:58:57,418] This is inside the horizon
+- [00:58:59,118 - 00:59:01,858] What happens when the horizon is inside the shell
+- [00:59:03,518 - 00:59:06,278] You know it hasn't collapsed down to the surface
+- [00:59:06,298 - 00:59:08,318] When the horizon arrives to the source of the radius
+- [00:59:11,197 - 00:59:12,998] When the shell hasn't collapsed
+- [00:59:12,998 - 00:59:14,758] When it hasn't reached the
+- [00:59:15,338 - 00:59:16,118] It's over here
+- [00:59:16,118 - 00:59:22,278] Right over here
+- [00:59:22,278 - 00:59:24,798] Is where the shell crosses the short-shield radius
+- [00:59:26,558 - 00:59:28,338] Okay so let's go back and draw a picture
+- [00:59:31,857 - 00:59:33,098] Here's the incoming shell
+- [00:59:33,098 - 00:59:34,798] It has a certain amount of mass
+- [00:59:36,418 - 00:59:37,578] Associated with that mass
+- [00:59:37,578 - 00:59:38,778] Is the short-shield radius
+- [00:59:41,398 - 00:59:43,198] Alright so there's some massive shell
+- [00:59:43,198 - 00:59:44,638] Mass meaning energy
+- [00:59:45,378 - 00:59:47,378] It's made of light but it still has energy
+- [00:59:47,378 - 00:59:48,278] Therefore mass
+- [00:59:48,898 - 00:59:49,738] And here
+- [00:59:51,378 - 00:59:52,998] Is the short-shield radius
+- [00:59:52,998 - 00:59:55,658] Of a black hole with that mass
+- [00:59:56,558 - 00:59:57,998] If we had a black hole
+- [00:59:57,998 - 00:59:58,838] Of that mass
+- [00:59:58,838 - 01:00:01,038] It would have a short-shield radius that's that big
+- [01:00:02,118 - 01:00:03,078] As long as you're outside the horizon
+- [01:00:03,098 - 01:00:04,218] So if these masses on the outside
+- [01:00:05,718 - 01:00:06,238] Um
+- [01:00:07,898 - 01:00:09,018] Well we can say
+- [01:00:09,018 - 01:00:10,418] That the mass is on the outside
+- [01:00:10,418 - 01:00:11,718] That's all there is to say
+- [01:00:11,718 - 01:00:13,338] But once the mass
+- [01:00:13,338 - 01:00:14,898] Once the light
+- [01:00:16,238 - 01:00:18,318] Crosses past the short-shield radius
+- [01:00:19,158 - 01:00:19,998] It's trapped
+- [01:00:19,998 - 01:00:21,378] It cannot get out
+- [01:00:21,378 - 01:00:23,958] It has formed a black hole for sure
+- [01:00:23,958 - 01:00:25,678] Where does that form on here
+- [01:00:25,678 - 01:00:27,318] Okay right over here
+- [01:00:27,938 - 01:00:29,318] Here's the in-falling shell
+- [01:00:31,158 - 01:00:33,018] It crosses the horizon
+- [01:00:33,098 - 01:00:34,338] Right over here
+- [01:00:34,338 - 01:00:36,358] And then it's on the inside
+- [01:00:36,358 - 01:00:38,518] And there's no way for that shell
+- [01:00:38,518 - 01:00:40,458] To change its mind and get back out
+- [01:00:42,018 - 01:00:42,778] Out here
+- [01:00:42,778 - 01:00:44,218] The shell could change its mind
+- [01:00:44,218 - 01:00:45,518] And accelerate back out
+- [01:00:45,518 - 01:00:48,598] Well I suppose shells or photons don't have minds
+- [01:00:48,598 - 01:00:49,318] But uh
+- [01:00:49,318 - 01:00:51,118] If they had a mind
+- [01:00:51,118 - 01:00:53,638] The photons could turn around over here
+- [01:00:54,197 - 01:00:55,457] Once they get past here
+- [01:00:55,457 - 01:00:56,418] They cannot turn around
+- [01:00:57,657 - 01:00:59,178] They can try to turn around
+- [01:00:59,178 - 01:01:00,798] But they won't get very far
+- [01:01:03,098 - 01:01:03,938] So this is the point
+- [01:01:03,938 - 01:01:06,478] At which the shell crosses its own
+- [01:01:06,478 - 01:01:07,458] Short-shield radius
+- [01:01:07,458 - 01:01:09,958] Is there a meaning of the word horizon
+- [01:01:09,958 - 01:01:11,538] Until it gets past that point
+- [01:01:11,538 - 01:01:13,878] Does it still mean something
+- [01:01:15,778 - 01:01:17,578] The definition of the horizon
+- [01:01:17,578 - 01:01:19,778] Is the place which separates
+- [01:01:19,778 - 01:01:21,998] Those people who can get out
+- [01:01:21,998 - 01:01:23,558] From those people who can't get out
+- [01:01:23,558 - 01:01:24,578] But can't they get out
+- [01:01:24,578 - 01:01:27,198] Before a collapsing shell crosses the distance
+- [01:01:27,798 - 01:01:28,358] No
+- [01:01:28,358 - 01:01:28,818] Look
+- [01:01:29,818 - 01:01:30,718] Look at the picture
+- [01:01:33,178 - 01:01:34,238] If you're over here
+- [01:01:34,238 - 01:01:35,338] The shell hasn't crossed
+- [01:01:35,338 - 01:01:37,038] What do you mean before
+- [01:01:37,038 - 01:01:38,418] Pick a time coordinate
+- [01:01:38,418 - 01:01:40,298] This diagram over here
+- [01:01:40,298 - 01:01:43,018] If I'm inside the horizon
+- [01:01:43,777 - 01:01:44,818] It's flat space
+- [01:01:44,818 - 01:01:46,058] There's no gravitational field
+- [01:01:46,058 - 01:01:47,358] Why can't I just walk across
+- [01:01:47,358 - 01:01:51,338] Because by the time you get to here
+- [01:01:51,958 - 01:01:53,018] The shell will have
+- [01:01:54,938 - 01:01:55,418] Yeah
+- [01:01:55,418 - 01:01:56,948] I think the only answer
+- [01:01:56,948 - 01:01:58,478] is to look at this diagram
+- [01:01:59,638 - 01:02:00,758] You look at this diagram
+- [01:02:00,758 - 01:02:01,778] And you say I'm over here
+- [01:02:03,098 - 01:02:05,858] But by the time you've gotten out
+- [01:02:07,098 - 01:02:07,998] By the time
+- [01:02:07,998 - 01:02:09,358] You can't get out
+- [01:02:09,358 - 01:02:10,658] You simply can't get out
+- [01:02:10,658 - 01:02:12,378] You have to exceed the speed of light
+- [01:02:13,397 - 01:02:15,218] The diagram is the whole story
+- [01:02:15,218 - 01:02:17,538] There's no more story than that
+- [01:02:17,538 - 01:02:18,698] If you're here
+- [01:02:18,698 - 01:02:19,578] You can't get out
+- [01:02:19,578 - 01:02:24,538] So the horizon has materialized
+- [01:02:25,098 - 01:02:26,438] Before the
+- [01:02:26,438 - 01:02:28,838] Before the shell has actually gotten
+- [01:02:28,838 - 01:02:29,458] Into the
+- [01:02:30,318 - 01:02:31,958] Into its own short-shield radius
+- [01:02:33,638 - 01:02:35,858] At least what I think is a paradox
+- [01:02:36,538 - 01:02:37,638] Inside the shell
+- [01:02:37,638 - 01:02:38,838] There's no gravitational field
+- [01:02:38,838 - 01:02:39,878] There's flat space time
+- [01:02:39,878 - 01:02:43,138] Why can't I just walk across the radius
+- [01:02:43,138 - 01:02:44,378] What do you mean walk
+- [01:02:44,378 - 01:02:44,978] Here's walking
+- [01:02:44,978 - 01:02:48,698] You're walking with the speed of light
+- [01:02:48,698 - 01:02:49,918] It's pretty fast walking
+- [01:02:49,918 - 01:02:51,318] I mean the shell is
+- [01:02:51,318 - 01:02:52,718] collapsing with the speed of light
+- [01:02:52,718 - 01:02:55,478] If it's a lot farther away from the horizon
+- [01:02:55,478 - 01:02:56,038] Than you are
+- [01:02:56,038 - 01:02:57,098] You ought to be able to beat it
+- [01:02:58,118 - 01:02:58,938] Here it is
+- [01:03:00,378 - 01:03:01,078] Here it is
+- [01:03:03,098 - 01:03:04,118] What that's saying is
+- [01:03:04,118 - 01:03:06,118] If we're sitting here
+- [01:03:06,118 - 01:03:08,818] And a light shell is a million miles away
+- [01:03:09,278 - 01:03:09,998] We are doomed
+- [01:03:11,338 - 01:03:13,878] If the light shell is a million miles away
+- [01:03:13,878 - 01:03:14,858] We are still doomed
+- [01:03:14,858 - 01:03:16,338] It's coming this way
+- [01:03:16,338 - 01:03:18,558] Because we cannot walk that little distance
+- [01:03:18,558 - 01:03:18,898] That's right,
+- [01:03:18,898 - 01:03:19,918] you can't walk fast enough
+- [01:03:19,918 - 01:03:21,858] To get out of its way
+- [01:03:21,858 - 01:03:24,058] If that light is coming in at you
+- [01:03:25,178 - 01:03:26,158] You may be trapped
+- [01:03:26,158 - 01:03:27,338] Even though you don't know that
+- [01:03:27,338 - 01:03:28,518] there's a light ray coming in
+- [01:03:29,818 - 01:03:30,258] So
+- [01:03:30,258 - 01:03:32,878] The proof is
+- [01:03:33,098 - 01:03:34,218] The diagram
+- [01:03:35,958 - 01:03:38,338] Would this be analogous to
+- [01:03:38,338 - 01:03:40,018] If you look at the
+- [01:03:40,018 - 01:03:41,818] What do you call it
+- [01:03:41,818 - 01:03:43,818] The radiation from the
+- [01:03:44,917 - 01:03:45,838] Big bang
+- [01:03:45,838 - 01:03:46,738] I forget what it's called
+- [01:03:46,738 - 01:03:50,218] But it's radiation coming towards us
+- [01:03:50,218 - 01:03:50,438] Yeah
+- [01:03:50,438 - 01:03:51,778] But we can't get past it
+- [01:03:51,778 - 01:03:52,818] Is that analogous to this
+- [01:03:52,818 - 01:03:55,718] It's analogous but with a different analogy
+- [01:03:55,718 - 01:04:00,958] But that's not a shell coming in
+- [01:04:01,977 - 01:04:03,078] That's not a shell coming in
+- [01:04:03,098 - 01:04:03,678] Right
+- [01:04:05,738 - 01:04:06,118] Um
+- [01:04:08,218 - 01:04:08,598] Okay
+- [01:04:08,598 - 01:04:10,318] So the horizon is a funny thing
+- [01:04:11,738 - 01:04:12,898] It actually forms
+- [01:04:12,898 - 01:04:13,878] Before the material
+- [01:04:14,518 - 01:04:16,098] Gets past the Schwarzschild radius
+- [01:04:17,278 - 01:04:19,358] And its definition is
+- [01:04:19,358 - 01:04:20,678] It's the point of no return
+- [01:04:21,258 - 01:04:22,078] It is the point
+- [01:04:22,078 - 01:04:23,298] Which if you're on this side of it
+- [01:04:23,298 - 01:04:23,938] You can't get out
+- [01:04:23,938 - 01:04:24,818] If you're on that side of it
+- [01:04:24,818 - 01:04:25,378] You can't get out
+- [01:04:25,378 - 01:04:26,498] It's not a point,
+- [01:04:26,498 - 01:04:28,338] it's a sort of cone
+- [01:04:33,098 - 01:04:34,418] Right at the other side of the
+- [01:04:34,938 - 01:04:35,558] Schwarzschild radius
+- [01:04:35,558 - 01:04:36,698] And the light comes in,
+- [01:04:36,698 - 01:04:37,298] hits the mirror
+- [01:04:37,298 - 01:04:38,658] And turns around and bounces back out
+- [01:04:38,658 - 01:04:40,198] What would that diagram look like
+- [01:04:41,638 - 01:04:42,078] Well
+- [01:04:42,078 - 01:04:42,638] Well
+- [01:04:46,738 - 01:04:48,498] Not likely you can really do this
+- [01:04:49,258 - 01:04:49,898] You're saying
+- [01:04:49,898 - 01:04:51,438] Supposing there was a mirror
+- [01:04:51,438 - 01:04:53,338] Right outside here
+- [01:04:56,098 - 01:04:57,078] With no weight
+- [01:04:57,078 - 01:04:57,958] Infinite reflection
+- [01:04:57,958 - 01:04:59,558] Well I think the point is
+- [01:04:59,558 - 01:05:01,238] You can't have a mirror that has no weight
+- [01:05:04,938 - 01:05:05,858] If you could
+- [01:05:06,738 - 01:05:07,218] Now
+- [01:05:07,218 - 01:05:09,098] Surely you can do this to some extent
+- [01:05:09,098 - 01:05:12,158] You can build a mirror around a region like this
+- [01:05:13,377 - 01:05:15,898] And the light ray would reflect off
+- [01:05:15,898 - 01:05:17,918] If you really succeeded in building a mirror
+- [01:05:17,918 - 01:05:19,818] The light ray would reflect off
+- [01:05:19,818 - 01:05:20,717] And it wouldn't
+- [01:05:21,398 - 01:05:22,978] So it would turn 90 degrees
+- [01:05:22,978 - 01:05:23,678] Right there
+- [01:05:23,678 - 01:05:25,058] And hit the time like infinity
+- [01:05:25,058 - 01:05:25,658] Yeah
+- [01:05:27,438 - 01:05:29,618] You wouldn't have a black hole
+- [01:05:29,618 - 01:05:30,578] Yeah
+- [01:05:30,578 - 01:05:31,998] So we can draw it on here
+- [01:05:33,098 - 01:05:33,838] Here's the mirror
+- [01:05:34,497 - 01:05:36,478] The mirror is at a certain distance
+- [01:05:36,478 - 01:05:37,798] Away from the horizon
+- [01:05:37,798 - 01:05:39,318] So away from the center
+- [01:05:39,318 - 01:05:40,598] There's the mirror
+- [01:05:40,598 - 01:05:41,818] The light comes in
+- [01:05:41,818 - 01:05:43,938] And bounces off
+- [01:05:43,938 - 01:05:45,698] And that's all that happens
+- [01:05:46,738 - 01:05:48,218] So it's kind of not
+- [01:05:48,218 - 01:05:49,698] until it actually crosses the horizon
+- [01:05:49,698 - 01:05:51,998] That you're committed to being inside
+- [01:05:51,998 - 01:05:52,598] Yeah
+- [01:05:53,838 - 01:05:54,598] That's right
+- [01:05:55,598 - 01:05:56,198] Question
+- [01:05:57,958 - 01:05:59,758] Just to test my understanding
+- [01:06:00,497 - 01:06:02,758] This light could decide to turn around
+- [01:06:03,098 - 01:06:03,218] At this point
+- [01:06:03,958 - 01:06:06,118] But there's no way that this gentleman over here
+- [01:06:06,118 - 01:06:08,418] Could tell that light to turn around over there
+- [01:06:08,418 - 01:06:10,138] But he could make a mirror really fast
+- [01:06:10,138 - 01:06:10,558] Hm?
+- [01:06:10,738 - 01:06:12,198] But he could make a mirror really fast
+- [01:06:12,198 - 01:06:13,458] Not over here he can't
+- [01:06:13,458 - 01:06:15,318] If he's over here he can't get
+- [01:06:15,318 - 01:06:17,178] the material out for a mirror over here
+- [01:06:18,438 - 01:06:19,298] He could have tried
+- [01:06:19,298 - 01:06:20,918] He could have made a mirror in the past
+- [01:06:22,497 - 01:06:24,298] He could have made a mirror in the past
+- [01:06:24,298 - 01:06:25,378] And protected himself
+- [01:06:25,378 - 01:06:26,078] Well let's see,
+- [01:06:26,078 - 01:06:26,438] can he?
+- [01:06:26,438 - 01:06:26,638] Yeah,
+- [01:06:26,638 - 01:06:27,238] maybe so
+- [01:06:27,238 - 01:06:29,058] If he was over here coming in
+- [01:06:29,058 - 01:06:31,518] He could decide to shoot out a mirror
+- [01:06:33,098 - 01:06:34,458] To reflect off the mirror over there
+- [01:06:34,958 - 01:06:36,778] But once he gets past this point
+- [01:06:36,778 - 01:06:38,178] Once he gets past that point
+- [01:06:38,178 - 01:06:40,978] He cannot shoot out the mirror
+- [01:06:40,978 - 01:06:42,218] Out to this point
+- [01:06:42,218 - 01:06:45,298] He can't get it out there in time
+- [01:06:45,298 - 01:06:47,038] To rescue himself
+- [01:06:49,018 - 01:06:50,878] Of course in practice he wouldn't even know
+- [01:06:50,878 - 01:06:52,598] That that light ray was coming in
+- [01:06:53,538 - 01:06:54,478] Well he might know
+- [01:06:55,078 - 01:06:55,958] He might know
+- [01:06:58,598 - 01:06:59,838] He might have
+- [01:07:02,318 - 01:07:03,338] Bob could be
+- [01:07:03,338 - 01:07:03,878] Let's see,
+- [01:07:03,878 - 01:07:04,378] let me get Alice
+- [01:07:04,378 - 01:07:05,378] Alice is the one who
+- [01:07:05,378 - 01:07:06,378] always goes in the black hole
+- [01:07:09,377 - 01:07:10,678] It's just a convention
+- [01:07:10,678 - 01:07:12,098] I didn't invent it
+- [01:07:14,478 - 01:07:14,918] Alice
+- [01:07:16,157 - 01:07:17,618] Alice goes in the black hole
+- [01:07:17,618 - 01:07:19,158] But up to this point over here
+- [01:07:20,178 - 01:07:21,538] She's together with Bob
+- [01:07:21,538 - 01:07:22,718] And they're having a conversation
+- [01:07:23,277 - 01:07:24,458] And she tells Bob
+- [01:07:24,458 - 01:07:24,758] Look,
+- [01:07:24,758 - 01:07:25,678] I got an idea
+- [01:07:26,257 - 01:07:27,798] I want you to go out there
+- [01:07:28,657 - 01:07:29,818] And then shoot out the mirror
+- [01:07:29,838 - 01:07:30,538] Shoot in a shell
+- [01:07:31,918 - 01:07:33,778] And this is going to be a lot of fun
+- [01:07:33,778 - 01:07:35,578] I'm going to get trapped behind the horizon
+- [01:07:35,578 - 01:07:37,398] And annihilated at the singularity
+- [01:07:38,458 - 01:07:39,398] And in fact
+- [01:07:39,398 - 01:07:41,138] I know that that's going to happen
+- [01:07:41,138 - 01:07:43,158] Even before I can
+- [01:07:43,678 - 01:07:45,898] See this shell coming at me
+- [01:07:46,738 - 01:07:48,218] So isn't that interesting
+- [01:07:48,218 - 01:07:49,558] So she could arrange
+- [01:07:49,558 - 01:07:50,338] With Bob
+- [01:07:51,398 - 01:07:53,758] To contrive to send in that shell
+- [01:07:53,758 - 01:07:55,378] Know that it was going to come in
+- [01:07:55,978 - 01:07:56,938] Be over here
+- [01:07:56,938 - 01:07:58,638] But once she gets over there
+- [01:07:59,838 - 01:08:01,078] She can't start to do anything about it
+- [01:08:01,078 - 01:08:04,278] She can't get a mirror out there
+- [01:08:04,858 - 01:08:06,558] She can get a mirror over to here
+- [01:08:07,098 - 01:08:08,498] But getting it over to here
+- [01:08:08,498 - 01:08:08,978] Is no good
+- [01:08:09,518 - 01:08:11,158] Everything's behind the horizon already
+- [01:08:11,668 - 01:08:13,738] Anything back here will hit the singularity
+- [01:08:13,738 - 01:08:16,037] She's got to get the mirror out to here
+- [01:08:16,037 - 01:08:16,978] She can't do it
+- [01:08:17,898 - 01:08:18,438] So
+- [01:08:19,877 - 01:08:22,058] I'm curious about what happens
+- [01:08:22,058 - 01:08:24,618] If the mirror is inside
+- [01:08:24,618 - 01:08:25,618] The horizon
+- [01:08:26,417 - 01:08:27,698] What are you doing?
+- [01:08:28,118 - 01:08:29,818] The mirror is inside
+- [01:08:29,837 - 01:08:30,837] The mirror seems to
+- [01:08:30,837 - 01:08:32,478] It has to get annihilated
+- [01:08:32,478 - 01:08:34,898] The mirror will just hit the singularity
+- [01:08:35,738 - 01:08:37,778] The mirror is just another thing
+- [01:08:37,778 - 01:08:38,358] Which is doomed
+- [01:08:38,358 - 01:08:41,858] Light will overwhelm any structure
+- [01:08:41,858 - 01:08:43,318] That has been built there
+- [01:08:43,837 - 01:08:45,417] When it was flat space time
+- [01:08:45,997 - 01:08:47,337] You could build a structure
+- [01:08:47,337 - 01:08:48,078] Over here
+- [01:08:48,718 - 01:08:50,438] Well let's say a structure over here
+- [01:08:50,438 - 01:08:53,818] Which reflected light
+- [01:08:53,818 - 01:08:55,858] So that light coming in here
+- [01:08:55,858 - 01:08:57,898] Would hit the structure
+- [01:08:57,898 - 01:08:59,178] Reflect off
+- [01:08:59,837 - 01:09:00,898] And go into the singularity
+- [01:09:00,898 - 01:09:01,518] Mirror,
+- [01:09:01,518 - 01:09:02,917] Alice,
+- [01:09:02,917 - 01:09:04,318] light
+- [01:09:04,318 - 01:09:06,618] All of it winds up on the singularity
+- [01:09:06,618 - 01:09:10,098] So see there's actually a particular time
+- [01:09:10,098 - 01:09:11,798] Or is it like infinitely far away?
+- [01:09:11,997 - 01:09:13,158] No it's not infinitely
+- [01:09:13,797 - 01:09:15,377] It's not infinitely far away
+- [01:09:15,377 - 01:09:17,037] There's a finite amount of proper time
+- [01:09:17,037 - 01:09:18,018] Between here and here
+- [01:09:18,018 - 01:09:21,018] What about the corner there?
+- [01:09:21,218 - 01:09:23,398] The corner there is infinitely far away
+- [01:09:23,398 - 01:09:24,497] But only the corner
+- [01:09:24,497 - 01:09:25,858] Only the corner
+- [01:09:25,858 - 01:09:26,537] Right
+- [01:09:26,537 - 01:09:28,957] But the implication is that somebody
+- [01:09:29,837 - 01:09:30,158] Who's on the horizon
+- [01:09:30,158 - 01:09:33,058] Has a finite amount of time to survive
+- [01:09:34,658 - 01:09:35,258] Well
+- [01:09:35,258 - 01:09:37,497] They could try to accelerate like mad
+- [01:09:37,497 - 01:09:39,438] Once they pass the horizon over here
+- [01:09:39,438 - 01:09:41,638] And try to save themselves by
+- [01:09:42,637 - 01:09:43,238] By
+- [01:09:43,837 - 01:09:45,138] Sticking to that corner
+- [01:09:45,837 - 01:09:47,138] The problem with that is
+- [01:09:47,138 - 01:09:49,438] That it would take an infinite amount of acceleration
+- [01:09:49,438 - 01:09:51,238] And an infinite amount of energy
+- [01:09:51,238 - 01:09:53,537] To make that much of an acceleration
+- [01:09:53,537 - 01:09:55,838] You basically have to accelerate yourself
+- [01:09:55,838 - 01:09:57,098] Up to the speed of light
+- [01:09:58,178 - 01:09:58,778] So
+- [01:09:59,838 - 01:10:01,078] Once you cross there
+- [01:10:01,617 - 01:10:02,098] You're doomed
+- [01:10:02,098 - 01:10:04,178] But you could last a long time
+- [01:10:04,178 - 01:10:06,058] If you could accelerate hard enough
+- [01:10:06,058 - 01:10:08,038] Actually that doesn't work
+- [01:10:08,038 - 01:10:09,458] The more you accelerate
+- [01:10:09,458 - 01:10:10,878] The less time you experience
+- [01:10:11,598 - 01:10:13,378] That's a time dilation
+- [01:10:13,378 - 01:10:13,958] Doesn't work
+- [01:10:13,958 - 01:10:18,378] Your best strategy is to stand still
+- [01:10:18,378 - 01:10:19,798] And just accept your fate
+- [01:10:21,098 - 01:10:21,738] Question?
+- [01:10:22,358 - 01:10:23,698] Just to make sure I understand
+- [01:10:23,698 - 01:10:26,298] So if there's this shell
+- [01:10:26,298 - 01:10:27,758] Let's say it's a
+- [01:10:28,978 - 01:10:30,598] A man light years across
+- [01:10:30,598 - 01:10:33,138] No matter what it's mass is
+- [01:10:33,138 - 01:10:34,518] Or it's energy equivalent to mass
+- [01:10:34,518 - 01:10:35,658] That thing
+- [01:10:35,658 - 01:10:37,278] If it's going inward
+- [01:10:37,278 - 01:10:39,518] It's going to form a black hole at some point
+- [01:10:39,518 - 01:10:40,038] Correct?
+- [01:10:40,278 - 01:10:42,998] And if I'm inside that thing
+- [01:10:42,998 - 01:10:46,018] But I'm far enough away from it's eventual center
+- [01:10:46,517 - 01:10:48,378] Then I can just hang out here
+- [01:10:48,378 - 01:10:49,678] And there's not going to be a problem
+- [01:10:50,268 - 01:10:50,778] Is that right?
+- [01:10:51,338 - 01:10:52,778] Sir you're at the center of it?
+- [01:10:53,138 - 01:10:54,358] No I'm not at the center
+- [01:10:56,298 - 01:10:56,958] Inside the shell
+- [01:10:56,958 - 01:10:59,198] I'm inside the shell far away from the center
+- [01:10:59,198 - 01:11:00,058] The eventual center
+- [01:11:00,058 - 01:11:02,878] Then there's no problem for me
+- [01:11:04,358 - 01:11:05,478] Oh sorry
+- [01:11:05,478 - 01:11:08,938] You're inside the shell before the shell crosses the
+- [01:11:08,938 - 01:11:10,298] Then you
+- [01:11:10,298 - 01:11:11,678] Then I can just hang out
+- [01:11:11,678 - 01:11:12,838] Well yeah
+- [01:11:12,838 - 01:11:13,978] You can just hang out
+- [01:11:13,978 - 01:11:15,118] and let the shell cross you
+- [01:11:15,118 - 01:11:16,258] Yeah absolutely
+- [01:11:16,258 - 01:11:17,358] Yeah
+- [01:11:19,478 - 01:11:21,538] Of course the shell might hit you
+- [01:11:21,538 - 01:11:22,378] And make some damage
+- [01:11:22,378 - 01:11:24,918] But that's a separate issue
+- [01:11:26,298 - 01:11:26,938] So if you're in a plate transforming
+- [01:11:27,638 - 01:11:28,658] Black coordinates
+- [01:11:28,658 - 01:11:30,798] Would this be analogous here
+- [01:11:30,798 - 01:11:33,498] In a particular point in time
+- [01:11:33,498 - 01:11:34,218] Whatever that means
+- [01:11:34,218 - 01:11:34,958] That's a point in time
+- [01:11:34,958 - 01:11:36,118] This is a point of time
+- [01:11:36,118 - 01:11:36,958] This picture
+- [01:11:36,958 - 01:11:38,418] Some point of time
+- [01:11:38,418 - 01:11:42,158] Would it relate that the distance from the shell
+- [01:11:42,158 - 01:11:45,298] To the event horizon is greater than the event horizon
+- [01:11:45,298 - 01:11:47,218] To the person in between
+- [01:11:47,218 - 01:11:52,838] Is that a different way of looking at this picture
+- [01:11:52,838 - 01:11:55,198] So no matter how fast he accelerates
+- [01:11:55,198 - 01:11:56,278] To the event horizon
+- [01:11:56,298 - 01:11:57,898] To the eventual event horizon
+- [01:11:57,898 - 01:11:58,948] He can't get there in
+- [01:11:58,948 - 01:11:59,998] time before the shell comes in
+- [01:11:59,998 - 01:12:00,458] Right
+- [01:12:02,398 - 01:12:04,578] Alright so let's ask about
+- [01:12:04,578 - 01:12:06,938] What the relationship between these pictures are
+- [01:12:07,598 - 01:12:08,158] Is
+- [01:12:08,158 - 01:12:09,258] Or I don't know
+- [01:12:10,218 - 01:12:10,778] Um
+- [01:12:12,438 - 01:12:13,858] Maybe I should draw it bigger
+- [01:12:13,858 - 01:12:14,738] Let's draw it bigger
+- [01:12:16,398 - 01:12:17,998] Uh and um
+- [01:12:19,578 - 01:12:20,138] Understand
+- [01:12:20,138 - 01:12:21,518] No we can do it over here
+- [01:12:21,518 - 01:12:22,198] Right over here
+- [01:12:23,718 - 01:12:25,958] Alright so here's our Penrose diagram
+- [01:12:26,298 - 01:12:28,578] For the formation of the black hole
+- [01:12:31,318 - 01:12:32,518] Here's the horizon
+- [01:12:33,578 - 01:12:34,438] Here's the horizon
+- [01:12:34,438 - 01:12:35,058] Here's the infalling shell
+- [01:12:36,498 - 01:12:38,678] The infalling shell hits right over here
+- [01:12:38,678 - 01:12:40,158] The infalling shell hits right over here
+- [01:12:41,038 - 01:12:41,678] Okay
+- [01:12:42,378 - 01:12:43,018] Now
+- [01:12:43,018 - 01:12:46,378] In order to speak of an instant of time
+- [01:12:46,378 - 01:12:48,178] In order to speak of an instant of time
+- [01:12:48,178 - 01:12:49,378] Which time do we use
+- [01:12:49,378 - 01:12:50,758] Time is just a coordinate
+- [01:12:50,758 - 01:12:52,358] We can make coordinate transformations
+- [01:12:53,238 - 01:12:56,078] An instant of time really means
+- [01:12:56,298 - 01:12:58,418] You pick a surface
+- [01:12:58,418 - 01:13:00,278] You pick a surface
+- [01:13:00,278 - 01:13:02,498] Which is everywhere space like
+- [01:13:02,498 - 01:13:03,958] You pick a surface
+- [01:13:03,958 - 01:13:04,858] Here's a surface
+- [01:13:05,598 - 01:13:06,878] Here's another surface
+- [01:13:06,878 - 01:13:09,378] But you could pick it in various kinds of ways
+- [01:13:09,378 - 01:13:10,638] Here's another surface
+- [01:13:11,298 - 01:13:13,198] And these series of surfaces
+- [01:13:14,137 - 01:13:16,098] Define a time variable
+- [01:13:16,098 - 01:13:18,198] Time is one value on here
+- [01:13:18,198 - 01:13:19,278] Another value on here
+- [01:13:19,278 - 01:13:20,158] Another value on here
+- [01:13:20,158 - 01:13:23,238] If you follow the time
+- [01:13:23,238 - 01:13:25,118] At this time over here
+- [01:13:26,298 - 01:13:26,778] The shell is far away
+- [01:13:26,778 - 01:13:29,118] The shell is far away
+- [01:13:29,118 - 01:13:31,358] No horizon has formed yet
+- [01:13:32,758 - 01:13:35,078] So this point has not been reached yet
+- [01:13:35,078 - 01:13:36,058] So this point has not been reached yet
+- [01:13:36,058 - 01:13:36,798] A little bit later
+- [01:13:37,978 - 01:13:40,958] The shell is still outside the horizon
+- [01:13:41,798 - 01:13:43,158] The shell is still outside the horizon
+- [01:13:43,158 - 01:13:43,678] You're inside
+- [01:13:44,297 - 01:13:45,297] You're in here
+- [01:13:47,698 - 01:13:49,158] This point over here
+- [01:13:49,158 - 01:13:49,438] This point over here
+- [01:13:49,438 - 01:13:51,118] Corresponds to the position of the shell
+- [01:13:51,118 - 01:13:52,277] And
+- [01:13:52,277 - 01:13:55,517] So far nothing has formed
+- [01:13:56,618 - 01:13:58,378] There's a horizon over here
+- [01:13:58,378 - 01:13:59,257] There is a horizon
+- [01:13:59,257 - 01:14:01,738] At this point right over here
+- [01:14:02,878 - 01:14:04,797] At that time right over there
+- [01:14:04,797 - 01:14:05,558] At that time right over there
+- [01:14:05,558 - 01:14:08,218] That's the time at which the shell passes
+- [01:14:08,218 - 01:14:09,538] It's own Schwarzschild radius
+- [01:14:10,218 - 01:14:12,218] It's the time that the shell
+- [01:14:12,978 - 01:14:15,198] Passes into the interior of the horizon
+- [01:14:15,758 - 01:14:16,758] Here's the horizon
+- [01:14:16,758 - 01:14:18,538] Shell passes into the interior
+- [01:14:18,538 - 01:14:20,438] And once that happens it can't get out
+- [01:14:21,578 - 01:14:22,698] And once that happens it can't get out
+- [01:14:22,698 - 01:14:24,858] The Schwarzschild radius goes larger and larger
+- [01:14:24,858 - 01:14:25,598] What's that?
+- [01:14:26,298 - 01:14:27,878] The Schwarzschild radius goes larger and larger
+- [01:14:27,878 - 01:14:29,438] It goes up that way
+- [01:14:29,438 - 01:14:30,358] Oh yeah,
+- [01:14:30,358 - 01:14:31,978] you're talking about this
+- [01:14:31,978 - 01:14:32,598] Yeah
+- [01:14:33,438 - 01:14:34,838] It's not the Schwarzschild radius
+- [01:14:34,838 - 01:14:37,678] Schwarzschild radius is by definition always the same thing
+- [01:14:37,678 - 01:14:39,498] But the size of the horizon
+- [01:14:40,208 - 01:14:41,478] Right at this point here
+- [01:14:42,118 - 01:14:43,578] The horizon starts
+- [01:14:45,878 - 01:14:46,418] Okay
+- [01:14:46,418 - 01:14:49,058] The horizon starts very small
+- [01:14:50,878 - 01:14:52,138] Only if you're in
+- [01:14:52,138 - 01:14:54,038] Right near the center here are you doomed
+- [01:14:54,038 - 01:14:55,638] If you're out here
+- [01:14:56,298 - 01:14:57,238] You'll get a chance to get away
+- [01:14:57,238 - 01:14:59,978] That corresponds to being here or here
+- [01:15:02,498 - 01:15:04,158] The little tiny horizon
+- [01:15:04,158 - 01:15:04,818] Has formed,
+- [01:15:04,818 - 01:15:05,878] the little tiny horizon
+- [01:15:05,878 - 01:15:06,818] Has opened up
+- [01:15:08,118 - 01:15:09,678] If you're in here you're dead
+- [01:15:09,678 - 01:15:11,538] If you're out here you got a chance
+- [01:15:12,238 - 01:15:12,718] Alright,
+- [01:15:12,718 - 01:15:13,578] same thing here
+- [01:15:13,578 - 01:15:15,538] If you're in here you're dead
+- [01:15:15,538 - 01:15:16,798] If you're out here you got a chance
+- [01:15:16,798 - 01:15:20,038] And then without the shell
+- [01:15:20,038 - 01:15:21,838] Having even gotten to you yet
+- [01:15:21,838 - 01:15:23,878] The horizon starts to expand
+- [01:15:25,038 - 01:15:25,518] Until
+- [01:15:26,298 - 01:15:27,518] It gets to this point over here
+- [01:15:28,298 - 01:15:30,898] At that point the shell crosses it
+- [01:15:31,878 - 01:15:33,238] At that point
+- [01:15:33,238 - 01:15:35,098] The incoming shell
+- [01:15:36,038 - 01:15:37,878] Crosses the growing horizon
+- [01:15:44,578 - 01:15:46,158] And past that point
+- [01:15:46,158 - 01:15:48,078] The shell is on the inside
+- [01:15:48,078 - 01:15:49,918] The horizon is on the outside
+- [01:15:50,538 - 01:15:51,578] And uh
+- [01:15:51,578 - 01:15:53,278] Are these properties still growing?
+- [01:15:53,458 - 01:15:53,778] Hmm?
+- [01:15:56,298 - 01:15:57,658] I mean why is it still growing?
+- [01:15:57,858 - 01:15:58,618] Why is what?
+- [01:15:58,738 - 01:16:00,778] It stops growing
+- [01:16:00,778 - 01:16:02,618] It should stop growing right?
+- [01:16:02,758 - 01:16:04,278] It does stop growing
+- [01:16:04,278 - 01:16:06,558] It stops growing right at that point
+- [01:16:06,558 - 01:16:08,218] And above it is
+- [01:16:08,978 - 01:16:09,538] Constant
+- [01:16:10,258 - 01:16:12,638] Above it is a constant radius line
+- [01:16:12,638 - 01:16:14,958] Yeah this is a constant radius line
+- [01:16:14,958 - 01:16:15,518] That's correct
+- [01:16:16,398 - 01:16:17,898] Doesn't look like it but it is
+- [01:16:17,898 - 01:16:21,518] Could you draw an observer who's sitting at
+- [01:16:21,518 - 01:16:23,418] Half of the square shut radius on that diamond
+- [01:16:24,118 - 01:16:24,678] Yeah
+- [01:16:27,598 - 01:16:28,918] Yeah well um
+- [01:16:30,318 - 01:16:30,918] Alright
+- [01:16:34,778 - 01:16:36,838] Yeah at some point
+- [01:16:36,838 - 01:16:38,138] It just crosses the
+- [01:16:38,138 - 01:16:39,178] The horizon
+- [01:16:40,378 - 01:16:42,018] It's half the Schwarzschild radius
+- [01:16:43,038 - 01:16:43,758] And uh
+- [01:16:43,758 - 01:16:44,558] Crosses the horizon
+- [01:16:44,558 - 01:16:46,398] But I thought he wouldn't experience any gravity
+- [01:16:46,398 - 01:16:48,198] Until he passes through the shell
+- [01:16:48,198 - 01:16:49,998] He doesn't experience any gravity
+- [01:16:49,998 - 01:16:51,518] Until he crosses the shell
+- [01:16:51,518 - 01:16:52,978] But nevertheless he's dead
+- [01:16:52,978 - 01:16:55,198] I mean he's not dead yet
+- [01:16:55,198 - 01:16:56,038] He's not dead yet
+- [01:16:56,298 - 01:16:58,278] Nevertheless it's too late for him to escape
+- [01:16:58,278 - 01:17:00,138] There's no gravity until that point
+- [01:17:00,138 - 01:17:01,518] Right crossing the horizon
+- [01:17:02,158 - 01:17:06,458] Does not mean that you sense any
+- [01:17:06,458 - 01:17:08,398] Sudden gravity taking place
+- [01:17:08,398 - 01:17:10,298] That only happens when you cross the shell
+- [01:17:10,298 - 01:17:10,778] Right
+- [01:17:11,318 - 01:17:13,078] But when you cross the horizon
+- [01:17:14,338 - 01:17:15,818] You know what that means
+- [01:17:15,818 - 01:17:17,698] That means you simply don't get away
+- [01:17:17,698 - 01:17:18,538] You can't get away
+- [01:17:18,538 - 01:17:20,198] So in that sense the
+- [01:17:20,198 - 01:17:21,858] horizon is a little bit ghostly
+- [01:17:21,858 - 01:17:24,418] That doesn't have a material significance
+- [01:17:24,418 - 01:17:25,878] In the way the shell does
+- [01:17:27,118 - 01:17:27,718] Uh
+- [01:17:28,778 - 01:17:30,718] Somebody falling through it
+- [01:17:30,718 - 01:17:31,938] Doesn't experience it
+- [01:17:31,938 - 01:17:34,218] In fact down here somebody falling through it
+- [01:17:34,218 - 01:17:36,018] There's nothing there but flat space
+- [01:17:36,018 - 01:17:37,138] Nevertheless
+- [01:17:38,578 - 01:17:39,178] Nevertheless
+- [01:17:40,018 - 01:17:41,578] From that point
+- [01:17:41,578 - 01:17:43,798] Cannot travel fast enough to escape
+- [01:17:43,798 - 01:17:45,618] The fact that that shell is coming in
+- [01:17:46,298 - 01:17:46,618] Yeah
+- [01:17:46,618 - 01:17:49,538] This says then that if you start out early enough
+- [01:17:50,198 - 01:17:50,938] And you move
+- [01:17:50,938 - 01:17:54,898] You move faster than the shell grows
+- [01:17:54,898 - 01:17:56,278] Then the horizon
+- [01:17:56,298 - 01:17:57,458] Then the horizon grows
+- [01:17:57,458 - 01:17:58,638] Then you can escape
+- [01:17:58,638 - 01:17:59,278] That's right
+- [01:18:01,118 - 01:18:03,338] From here you can escape
+- [01:18:03,338 - 01:18:04,758] From here you can't escape
+- [01:18:05,358 - 01:18:06,918] Your velocity has to be greater
+- [01:18:06,918 - 01:18:08,478] than the width of the horizon
+- [01:18:09,278 - 01:18:09,838] Well
+- [01:18:09,838 - 01:18:11,538] Yes yes yes yes
+- [01:18:11,538 - 01:18:12,238] Yes
+- [01:18:12,878 - 01:18:14,238] But that's correct
+- [01:18:14,238 - 01:18:16,858] But you don't see any horizon opening up at you
+- [01:18:17,918 - 01:18:18,478] Yes
+- [01:18:18,478 - 01:18:19,638] That's right
+- [01:18:19,638 - 01:18:20,098] You'll have to
+- [01:18:22,738 - 01:18:23,458] That's right
+- [01:18:26,298 - 01:18:27,918] That's a very good way of kind of envisioning it
+- [01:18:27,918 - 01:18:29,238] You have two shells
+- [01:18:29,238 - 01:18:33,218] If the distance between the observer to the inner shell
+- [01:18:33,218 - 01:18:36,278] Is larger than the inner shell
+- [01:18:36,278 - 01:18:37,478] Which is the horizon shell
+- [01:18:37,478 - 01:18:39,838] To the radiation shell
+- [01:18:39,838 - 01:18:41,598] No matter how fast he goes
+- [01:18:41,598 - 01:18:43,818] He can't get to that point before they cross
+- [01:18:43,818 - 01:18:44,798] So he's
+- [01:18:44,798 - 01:18:45,738] He's doomed
+- [01:18:46,098 - 01:18:49,198] That's a much simpler way of envisioning it
+- [01:18:49,198 - 01:18:50,518] I think
+- [01:18:51,118 - 01:18:52,538] That seems fair to me
+- [01:18:52,538 - 01:18:53,038] This is a
+- [01:18:53,038 - 01:18:54,398] A coordinate
+- [01:18:56,298 - 01:18:59,418] You try to do a calculation with that
+- [01:18:59,418 - 01:19:02,578] And find out where for example a horizon forms
+- [01:19:03,258 - 01:19:04,218] Try to do that
+- [01:19:05,978 - 01:19:06,678] You'll find
+- [01:19:06,678 - 01:19:08,398] You'll find you can't do it
+- [01:19:08,398 - 01:19:09,758] Then you wind up drawing the picture
+- [01:19:09,758 - 01:19:10,698] Taking this line
+- [01:19:10,698 - 01:19:12,018] Going backward to that point
+- [01:19:12,018 - 01:19:13,038] And saying that's where it is
+- [01:19:13,038 - 01:19:14,678] I mean
+- [01:19:19,557 - 01:19:20,818] I assure you
+- [01:19:20,818 - 01:19:23,218] If you want to get a good picture
+- [01:19:23,218 - 01:19:24,278] Of what's going on
+- [01:19:25,138 - 01:19:26,278] The way to do it
+- [01:19:26,298 - 01:19:28,538] Is to become familiar with these diagrams
+- [01:19:28,538 - 01:19:29,578] Um
+- [01:19:30,737 - 01:19:33,238] If you try to reason it out
+- [01:19:33,238 - 01:19:35,138] Without a good picture in front of you
+- [01:19:35,138 - 01:19:36,298] That accurately represents
+- [01:19:37,917 - 01:19:39,198] The relationships
+- [01:19:39,198 - 01:19:41,078] Between the different parts here
+- [01:19:41,078 - 01:19:42,518] And when the relationship
+- [01:19:42,518 - 01:19:44,298] The important relationship incidentally
+- [01:19:44,818 - 01:19:47,198] Is not the relative size of things
+- [01:19:47,198 - 01:19:48,418] Here
+- [01:19:48,418 - 01:19:50,938] There's a huge region of space and time
+- [01:19:50,938 - 01:19:52,078] Up in this corner here
+- [01:19:52,078 - 01:19:52,758] It's huge
+- [01:19:52,758 - 01:19:53,638] Infinite
+- [01:19:56,298 - 01:19:56,418] And this area here
+- [01:19:56,418 - 01:19:57,678] Might be a tiny little region
+- [01:19:57,678 - 01:20:00,118] So these diagrams are not correctly
+- [01:20:00,118 - 01:20:03,438] Or you know faithfully representing size scales
+- [01:20:03,438 - 01:20:04,518] What are they representing?
+- [01:20:05,078 - 01:20:07,258] They're representing the motion of light rays
+- [01:20:07,258 - 01:20:08,658] And in Mertman
+- [01:20:08,658 - 01:20:10,818] In representing light rays
+- [01:20:10,818 - 01:20:13,258] They're representing what things
+- [01:20:13,258 - 01:20:16,458] Are in causal relationship to other things
+- [01:20:17,198 - 01:20:17,798] What
+- [01:20:17,798 - 01:20:19,858] What signals can propagate
+- [01:20:19,858 - 01:20:21,718] Who can send a signal to whom
+- [01:20:22,298 - 01:20:23,538] Can a signal from here
+- [01:20:23,538 - 01:20:24,998] Get from Alice in here
+- [01:20:26,577 - 01:20:27,878] It reflects
+- [01:20:27,878 - 01:20:30,538] The technical language would be
+- [01:20:30,538 - 01:20:32,478] That it reflects the causal structure
+- [01:20:32,478 - 01:20:33,618] Cause and effect
+- [01:20:34,298 - 01:20:35,898] Cause and effect mean
+- [01:20:35,898 - 01:20:37,778] What can influence what
+- [01:20:38,298 - 01:20:39,638] And the rule is
+- [01:20:39,638 - 01:20:41,538] A thing can only influence
+- [01:20:44,198 - 01:20:46,718] The things in front of it
+- [01:20:46,718 - 01:20:49,138] Where light can get to
+- [01:20:49,138 - 01:20:51,618] It cannot influence the things
+- [01:20:51,618 - 01:20:53,118] Outside the light cone
+- [01:20:53,118 - 01:20:54,358] Uh
+- [01:20:54,358 - 01:20:56,158] So these diagrams
+- [01:20:56,298 - 01:20:56,918] Were intended
+- [01:20:56,918 - 01:20:57,738] They were built
+- [01:20:57,738 - 01:21:00,018] First of all to be able to draw everything
+- [01:21:00,018 - 01:21:01,298] On the blackboard
+- [01:21:01,298 - 01:21:04,238] And second of all to reflect faithfully
+- [01:21:04,238 - 01:21:05,398] The causal relations
+- [01:21:06,198 - 01:21:07,738] What causes and effects
+- [01:21:07,738 - 01:21:09,498] Who can send signals to whom
+- [01:21:10,258 - 01:21:12,478] Who is trapped if they're stuck
+- [01:21:12,478 - 01:21:14,298] Having to go slower than the speed of light
+- [01:21:14,298 - 01:21:16,438] Those things are correctly reflected here
+- [01:21:17,478 - 01:21:18,738] And so for that reason
+- [01:21:18,738 - 01:21:20,058] These diagrams are very valuable
+- [01:21:20,058 - 01:21:21,338] I can't think without them
+- [01:21:21,338 - 01:21:23,138] I can't uh if I have to
+- [01:21:23,138 - 01:21:24,938] answer a question of the kind you're asking
+- [01:21:26,298 - 01:21:26,638] I can't draw the diagram
+- [01:21:27,317 - 01:21:29,018] And the diagram uh
+- [01:21:29,018 - 01:21:31,498] Says things much more clearly
+- [01:21:32,238 - 01:21:34,258] Than trying to picture
+- [01:21:34,258 - 01:21:35,958] I can't do it
+- [01:21:35,958 - 01:21:36,958] I simply can't
+- [01:21:36,958 - 01:21:38,598] I can't uh
+- [01:21:38,598 - 01:21:42,098] I can't guess whether my guesses are right
+- [01:21:42,098 - 01:21:43,938] I can't tell whether my guesses are right or wrong
+- [01:21:43,938 - 01:21:45,598] Until I've drawn the diagram
+- [01:21:46,577 - 01:21:47,218] Okay
+- [01:21:49,038 - 01:21:50,658] How long did it take you
+- [01:21:50,658 - 01:21:51,338] To be able to
+- [01:21:51,338 - 01:21:54,198] Be comfortable and intuitive
+- [01:21:54,198 - 01:21:55,298] With these diagrams
+- [01:21:56,378 - 01:21:57,418] Well yeah
+- [01:21:57,418 - 01:21:59,478] Not long
+- [01:21:59,478 - 01:22:02,158] Not long just play with them for a while
+- [01:22:02,858 - 01:22:03,378] Yeah
+- [01:22:04,278 - 01:22:05,658] No not long yeah
+- [01:22:05,658 - 01:22:06,778] So this is sort of
+- [01:22:06,778 - 01:22:07,898] the opposite of what you said
+- [01:22:07,898 - 01:22:08,738] In quantum mechanics
+- [01:22:08,738 - 01:22:10,438] Instead of quantum mechanics
+- [01:22:10,438 - 01:22:13,118] You can't think of it in terms of pictures
+- [01:22:13,118 - 01:22:14,678] You have to go to the mathematics
+- [01:22:14,678 - 01:22:15,838] To understand it
+- [01:22:17,538 - 01:22:19,418] But yeah keep in mind
+- [01:22:19,418 - 01:22:21,738] These are in a certain sense
+- [01:22:21,738 - 01:22:23,438] These are abstract diagrams
+- [01:22:24,118 - 01:22:25,018] But you're right
+- [01:22:26,557 - 01:22:28,098] That's absolutely right
+- [01:22:28,098 - 01:22:29,718] General relativity
+- [01:22:29,718 - 01:22:31,378] Is classical physics
+- [01:22:31,378 - 01:22:32,678] And it can be represented
+- [01:22:32,678 - 01:22:33,798] It can be drawn
+- [01:22:33,798 - 01:22:37,058] It can be even pictured to some extent
+- [01:22:37,058 - 01:22:39,658] Alright it's not so easy to draw
+- [01:22:39,658 - 01:22:42,558] To picture four dimensional curved space time
+- [01:22:42,558 - 01:22:44,458] But that's hard
+- [01:22:44,458 - 01:22:44,978] Yeah
+- [01:22:46,538 - 01:22:47,898] But still
+- [01:22:47,898 - 01:22:49,878] You can go a lot further
+- [01:22:49,878 - 01:22:51,118] In visualizing it
+- [01:22:51,118 - 01:22:52,838] Than you can quantum mechanics
+- [01:22:52,838 - 01:22:55,358] I think that's right I think that's an interesting fact
+- [01:22:56,298 - 01:22:58,218] Quantum mechanics is much more abstract in that sense
+- [01:23:00,018 - 01:23:00,498] Okay
+- [01:23:00,978 - 01:23:02,338] We're going to quit a little early tonight
+- [01:23:04,138 - 01:23:04,978] For more
+- [01:23:04,978 - 01:23:06,218] Please visit us at
+- [01:23:06,218 - 01:23:07,358] Stanford.edu
