@@ -1,0 +1,2636 @@
+# Transcript
+
+Source: core/cosmology/2009_winter_legacy_cosmology/044 - Cosmology ｜ Lecture 5 [H3D5HGZIP4s].mkv
+
+- [00:00:06,479 - 00:00:09,620] This program is brought to you by Stanford University.
+- [00:00:10,700 - 00:00:12,580] Let's do a little bit of mathematics,
+- [00:00:12,580 - 00:00:13,980] some simple mathematics.
+- [00:00:14,380 - 00:00:16,260] Probably most of you know the mathematics,
+- [00:00:16,260 - 00:00:19,000] the mathematics of spheres.
+- [00:00:20,220 - 00:00:23,570] Spheres in any number of
+- [00:00:23,570 - 00:00:26,920] dimensions are the special geometries
+- [00:00:26,920 - 00:00:29,220] which are uniform,
+- [00:00:29,220 - 00:00:33,940] and uniform means that they have constant curvature.
+- [00:00:37,420 - 00:00:43,380] If you have gone through the previous quarter,
+- [00:00:43,380 - 00:00:46,140] you have an idea of what curvature means.
+- [00:00:46,920 - 00:00:49,540] If you haven't been through,
+- [00:00:49,540 - 00:00:52,520] you can more or less imagine what curvature means,
+- [00:00:52,640 - 00:00:54,630] and you can imagine that a
+- [00:00:54,630 - 00:00:56,620] sphere is a very uniform surface.
+- [00:00:57,480 - 00:00:59,900] The curvature at every point is the same.
+- [00:01:00,160 - 00:01:04,680] But let's just discuss spheres a little bit,
+- [00:01:04,680 - 00:01:07,540] which are positively curved surfaces,
+- [00:01:08,360 - 00:01:10,500] and the cosmology,
+- [00:01:10,500 - 00:01:15,200] which is the cosmology of a spherical universe.
+- [00:01:16,040 - 00:01:16,720] Incidentally,
+- [00:01:16,720 - 00:01:17,120] sphere,
+- [00:01:17,120 - 00:01:18,960] when one talks about a spherical universe,
+- [00:01:19,180 - 00:01:21,880] one is talking about the geometry of space,
+- [00:01:21,880 - 00:01:23,120] not space-time.
+- [00:01:24,680 - 00:01:26,900] And then we can talk about the geometry of space.
+- [00:01:26,920 - 00:01:27,620] And then we can talk about the,
+- [00:01:27,620 - 00:01:29,320] is it the opposite?
+- [00:01:29,580 - 00:01:29,800] Well,
+- [00:01:29,800 - 00:01:31,520] the other possibility,
+- [00:01:31,520 - 00:01:34,580] which is the possibility of negative curvature.
+- [00:01:36,280 - 00:01:41,620] There is also a space which is uniformly negatively curved,
+- [00:01:41,940 - 00:01:43,160] harder to visualize,
+- [00:01:43,160 - 00:01:45,440] harder to draw on the blackboard,
+- [00:01:45,560 - 00:01:47,140] but I'll try to give you some feel for it.
+- [00:01:47,300 - 00:01:48,820] And then the cosmology,
+- [00:01:48,820 - 00:01:51,220] which is based on a negatively curved universe.
+- [00:01:52,680 - 00:01:53,720] And finally,
+- [00:01:53,720 - 00:01:55,060] what I would like to do tonight,
+- [00:01:55,060 - 00:01:55,360] well,
+- [00:01:55,360 - 00:01:56,660] we may get to more than that,
+- [00:01:56,760 - 00:01:58,930] but at least I would
+- [00:01:58,930 - 00:02:01,100] like to get to the connection
+- [00:02:01,620 - 00:02:03,700] between the equations that we've
+- [00:02:03,700 - 00:02:05,780] written down so far for cosmology
+- [00:02:05,780 - 00:02:08,460] and the general theory of relativity,
+- [00:02:08,460 - 00:02:09,539] Einstein's equations.
+- [00:02:10,300 - 00:02:11,820] So let's just start,
+- [00:02:11,820 - 00:02:13,740] in order to all be on the same page,
+- [00:02:13,780 - 00:02:14,740] with what a sphere is.
+- [00:02:17,359 - 00:02:19,640] A d-dimensional sphere,
+- [00:02:19,640 - 00:02:21,800] d I use for dimension.
+- [00:02:23,960 - 00:02:24,480] Okay.
+- [00:02:26,520 - 00:02:27,300] I'll give,
+- [00:02:27,300 - 00:02:28,280] I'll do it by example.
+- [00:02:29,500 - 00:02:30,700] A two-sphere,
+- [00:02:30,700 - 00:02:33,300] one speaks of a one-sphere,
+- [00:02:33,300 - 00:02:34,180] a two-sphere.
+- [00:02:34,420 - 00:02:34,800] Well,
+- [00:02:34,800 - 00:02:35,660] let's start with a one-sphere.
+- [00:02:35,920 - 00:02:37,040] A one-sphere,
+- [00:02:37,040 - 00:02:37,800] a two-sphere,
+- [00:02:37,800 - 00:02:38,660] a three-sphere,
+- [00:02:38,660 - 00:02:39,540] a four-sphere.
+- [00:02:40,560 - 00:02:44,000] A one-sphere is a one-dimensional geometry.
+- [00:02:44,540 - 00:02:46,880] One-dimensional geometries just mean curves,
+- [00:02:46,880 - 00:02:48,220] lines,
+- [00:02:48,220 - 00:02:51,000] or curved curves.
+- [00:02:51,400 - 00:02:52,260] They're one-dimensional.
+- [00:02:53,300 - 00:02:56,600] And a one-sphere really just means a circle.
+- [00:02:57,680 - 00:02:58,240] Okay.
+- [00:02:58,460 - 00:03:01,980] A circle is a closed
+- [00:03:01,980 - 00:03:05,500] curve that comes back on itself,
+- [00:03:06,079 - 00:03:08,779] but an easy way to describe it
+- [00:03:08,779 - 00:03:11,480] is to just embed it in two dimensions,
+- [00:03:12,040 - 00:03:13,800] to start with a two-dimensional space,
+- [00:03:13,800 - 00:03:14,520] x and y,
+- [00:03:16,359 - 00:03:18,560] and just write the equation for a circle,
+- [00:03:18,560 - 00:03:20,680] x squared plus y squared.
+- [00:03:22,420 - 00:03:27,700] x squared plus y squared equals r squared in general.
+- [00:03:28,340 - 00:03:30,020] If we're interested in a circle,
+- [00:03:30,020 - 00:03:32,440] or let's call the radius of the circle a,
+- [00:03:33,140 - 00:03:34,860] if the radius of the circle is a,
+- [00:03:34,860 - 00:03:36,440] then on the right-hand side
+- [00:03:36,440 - 00:03:38,020] we would just write a squared.
+- [00:03:39,100 - 00:03:44,920] If we choose x squared plus y squared equals one,
+- [00:03:44,920 - 00:03:47,620] we would call this a unit circle.
+- [00:03:49,000 - 00:03:50,320] That's the unit circle.
+- [00:03:51,280 - 00:03:52,240] That's the unit circle.
+- [00:03:52,240 - 00:03:52,960] So we get one sphere.
+- [00:03:53,760 - 00:03:57,260] This is the one sphere of radius a,
+- [00:03:58,700 - 00:04:00,300] and that's about all we have
+- [00:04:00,300 - 00:04:01,900] to say about the one sphere.
+- [00:04:02,380 - 00:04:07,200] The two-sphere you embed in three dimensions.
+- [00:04:07,500 - 00:04:09,100] So you start with three dimensions,
+- [00:04:09,100 - 00:04:10,600] x,
+- [00:04:10,600 - 00:04:10,860] y,
+- [00:04:10,860 - 00:04:11,180] and z.
+- [00:04:11,300 - 00:04:13,520] These are not to be thought of
+- [00:04:13,520 - 00:04:15,740] as the three dimensions of ordinary space.
+- [00:04:16,620 - 00:04:20,700] Ordinary space now is the surface of the sphere.
+- [00:04:21,079 - 00:04:21,680] Right?
+- [00:04:21,680 - 00:04:25,130] We should learn now to be thinking
+- [00:04:25,130 - 00:04:28,580] that space really means the sphere itself.
+- [00:04:29,420 - 00:04:32,760] So a world which is a world on
+- [00:04:32,760 - 00:04:36,100] a one sphere would be a one-dimensional world
+- [00:04:36,100 - 00:04:38,500] with little bugs moving around on the circle.
+- [00:04:39,640 - 00:04:42,360] The two dimensions is just a crutch.
+- [00:04:42,580 - 00:04:45,190] The two dimensions that you embedded in
+- [00:04:45,190 - 00:04:47,800] is just a crutch for writing an equation
+- [00:04:47,800 - 00:04:50,880] whose solution is a one sphere.
+- [00:04:51,680 - 00:04:54,380] But the one sphere itself is
+- [00:04:54,380 - 00:04:57,080] a geometry or a topology really,
+- [00:04:57,260 - 00:04:59,540] a geometry in which you can imagine
+- [00:04:59,540 - 00:05:01,820] little creatures moving around on that one sphere,
+- [00:05:02,060 - 00:05:03,800] and they live in a one-dimensional world.
+- [00:05:05,600 - 00:05:09,540] They would have no idea of off the sphere,
+- [00:05:09,540 - 00:05:11,580] either outward or inward.
+- [00:05:12,020 - 00:05:16,120] So that would be a world of a one sphere.
+- [00:05:16,240 - 00:05:17,810] The world of a two
+- [00:05:17,810 - 00:05:19,380] sphere begins again with a crutch.
+- [00:05:19,380 - 00:05:23,060] The crutch could be the crutch of three dimensions,
+- [00:05:23,260 - 00:05:25,560] which we could call x,
+- [00:05:25,560 - 00:05:25,800] y,
+- [00:05:25,800 - 00:05:26,120] and z.
+- [00:05:26,380 - 00:05:28,360] They would not correspond to the x,
+- [00:05:28,360 - 00:05:28,580] y,
+- [00:05:28,580 - 00:05:29,960] and z of this room.
+- [00:05:30,220 - 00:05:31,260] They're just a crutch.
+- [00:05:31,520 - 00:05:33,700] And you can guess what we would write.
+- [00:05:33,840 - 00:05:36,910] We would write x squared plus y
+- [00:05:36,910 - 00:05:39,980] squared plus z squared equals a squared.
+- [00:05:40,540 - 00:05:42,240] That would be a two sphere.
+- [00:05:42,400 - 00:05:43,940] We should call this the one sphere,
+- [00:05:43,940 - 00:05:46,040] unit one sphere.
+- [00:05:51,179 - 00:05:53,040] This would be the two sphere.
+- [00:05:53,600 - 00:05:55,640] Notice that it takes three coordinates,
+- [00:05:55,880 - 00:05:59,480] or that you start with the crutch of three coordinates,
+- [00:06:00,239 - 00:06:02,849] and you set the sums of the
+- [00:06:02,849 - 00:06:05,460] squares with them equal to the radius squared.
+- [00:06:06,180 - 00:06:09,030] If you write x squared plus
+- [00:06:09,030 - 00:06:11,880] y squared plus z squared equals one,
+- [00:06:12,080 - 00:06:15,540] that becomes the unit two sphere.
+- [00:06:16,159 - 00:06:18,580] This is the unit two sphere.
+- [00:06:22,439 - 00:06:27,020] The hypothesis that we're going to investigate a little bit,
+- [00:06:27,040 - 00:06:28,100] or talk about a little bit,
+- [00:06:28,240 - 00:06:29,360] is the possibility,
+- [00:06:29,360 - 00:06:31,380] now this of course becomes not a circle,
+- [00:06:32,380 - 00:06:34,570] but like the surface of
+- [00:06:34,570 - 00:06:36,760] the earth is a two sphere.
+- [00:06:38,439 - 00:06:40,489] It's not a reasonable hypothesis to say that
+- [00:06:40,489 - 00:06:42,540] we live on the surface of a two sphere.
+- [00:06:43,080 - 00:06:43,500] Well,
+- [00:06:43,500 - 00:06:44,480] actually we do live on
+- [00:06:44,480 - 00:06:45,460] the surface of a two sphere.
+- [00:06:45,580 - 00:06:46,080] It's called the earth.
+- [00:06:46,480 - 00:06:49,360] But from a classical point of view,
+- [00:06:49,380 - 00:06:50,980] from a cosmological point of view,
+- [00:06:51,040 - 00:06:52,720] it's not reasonable to say that we're,
+- [00:06:52,820 - 00:06:55,460] to think that we might live on a two sphere.
+- [00:06:55,920 - 00:06:57,840] But it is possible that
+- [00:06:57,840 - 00:06:59,760] we live in a three sphere.
+- [00:07:00,540 - 00:07:02,260] To construct a three sphere,
+- [00:07:03,880 - 00:07:04,320] oh,
+- [00:07:04,320 - 00:07:05,080] before I say that,
+- [00:07:05,200 - 00:07:06,320] let me come back to
+- [00:07:06,320 - 00:07:07,440] the two sphere for a moment.
+- [00:07:07,900 - 00:07:08,340] Again,
+- [00:07:08,340 - 00:07:09,920] the same kind of logic is true.
+- [00:07:10,520 - 00:07:14,200] We're only interested in the surface of the two sphere.
+- [00:07:14,660 - 00:07:16,780] We imagine that there's nothing but the surface,
+- [00:07:17,620 - 00:07:18,740] that the rest,
+- [00:07:19,380 - 00:07:20,100] the filling of the sphere,
+- [00:07:20,300 - 00:07:21,840] and the outside of the sphere,
+- [00:07:22,020 - 00:07:24,740] is just part of the crutch that
+- [00:07:24,740 - 00:07:27,460] we use to construct the mathematical geometry,
+- [00:07:28,080 - 00:07:29,650] but the mathematical geometry is
+- [00:07:29,650 - 00:07:31,220] really the surface of the sphere.
+- [00:07:32,380 - 00:07:32,860] Okay,
+- [00:07:32,860 - 00:07:35,760] a three sphere constructed exactly the same way.
+- [00:07:35,940 - 00:07:37,020] I don't think I'll write it.
+- [00:07:37,080 - 00:07:38,300] You just invent another letter.
+- [00:07:38,620 - 00:07:39,900] The letter could be W.
+- [00:07:40,180 - 00:07:40,980] I don't want to use T,
+- [00:07:41,180 - 00:07:42,460] because T gets,
+- [00:07:42,460 - 00:07:43,980] that's too loaded.
+- [00:07:44,100 - 00:07:44,660] It means time.
+- [00:07:45,300 - 00:07:47,060] But we just make another letter,
+- [00:07:47,160 - 00:07:47,360] X,
+- [00:07:47,360 - 00:07:47,740] Y,
+- [00:07:47,740 - 00:07:48,060] Z,
+- [00:07:48,060 - 00:07:48,440] W.
+- [00:07:49,380 - 00:07:50,570] Set the sums of the squares
+- [00:07:50,570 - 00:07:51,760] of them equal to A squared.
+- [00:07:52,080 - 00:07:53,960] That would define a three sphere.
+- [00:07:54,320 - 00:07:57,000] A three sphere is difficult to visualize.
+- [00:07:57,500 - 00:07:59,320] It's easy to picture a two sphere,
+- [00:07:59,500 - 00:08:01,420] because you can think of the
+- [00:08:01,420 - 00:08:03,340] two sphere as embedded in three dimensions,
+- [00:08:04,000 - 00:08:06,360] but the three sphere you would have
+- [00:08:06,360 - 00:08:08,720] to think of as embedded in four dimensions,
+- [00:08:08,860 - 00:08:09,780] a little bit harder.
+- [00:08:10,120 - 00:08:12,120] But the mathematics is not much harder.
+- [00:08:12,300 - 00:08:14,220] You just add another letter to the alphabet,
+- [00:08:14,360 - 00:08:15,870] and you set the sums of
+- [00:08:15,870 - 00:08:17,380] the squares equal to A squared,
+- [00:08:17,440 - 00:08:19,040] and you call that a three sphere.
+- [00:08:19,380 - 00:08:20,020] Again,
+- [00:08:20,020 - 00:08:22,210] the unit three sphere is X
+- [00:08:22,210 - 00:08:24,400] squared plus Y squared plus Z squared,
+- [00:08:24,640 - 00:08:26,620] plus W squared equals one.
+- [00:08:27,160 - 00:08:27,700] Now,
+- [00:08:27,700 - 00:08:30,420] let me name these geometries.
+- [00:08:31,180 - 00:08:32,780] I'm going to call them omega.
+- [00:08:36,720 - 00:08:38,620] This would be omega one,
+- [00:08:38,620 - 00:08:39,740] the one sphere.
+- [00:08:40,100 - 00:08:43,059] That's a standard common terminology.
+- [00:08:43,559 - 00:08:47,260] A sphere is often just referred to as omega,
+- [00:08:47,560 - 00:08:49,300] and this would be omega one.
+- [00:08:49,380 - 00:08:50,160] The one sphere,
+- [00:08:50,160 - 00:08:51,840] the two sphere,
+- [00:08:51,840 - 00:08:53,300] the three sphere,
+- [00:08:53,300 - 00:08:55,020] and so forth.
+- [00:08:55,360 - 00:08:57,160] But we won't have much need
+- [00:08:57,160 - 00:08:58,960] to be thinking above three dimensions,
+- [00:08:59,140 - 00:09:01,300] three dimensions of space in any case.
+- [00:09:01,940 - 00:09:02,580] All right,
+- [00:09:02,580 - 00:09:06,560] that's one way of thinking of spheres.
+- [00:09:07,080 - 00:09:09,600] Another way is to concentrate
+- [00:09:09,600 - 00:09:12,120] directly on the surface itself,
+- [00:09:12,360 - 00:09:15,120] and not to think of it as embedded,
+- [00:09:15,340 - 00:09:18,260] and to describe it in terms of a metric.
+- [00:09:18,260 - 00:09:22,060] To describe the surface in terms of coordinates,
+- [00:09:22,800 - 00:09:25,080] which are purely in the sphere.
+- [00:09:25,580 - 00:09:26,540] For example,
+- [00:09:26,540 - 00:09:28,210] the surface of the Earth
+- [00:09:28,210 - 00:09:29,880] would not be described by X,
+- [00:09:29,880 - 00:09:30,100] Y,
+- [00:09:30,100 - 00:09:30,480] and Z,
+- [00:09:30,620 - 00:09:32,620] but by longitude and latitude,
+- [00:09:32,620 - 00:09:33,420] two angles,
+- [00:09:34,280 - 00:09:36,540] and to represent the sphere by a metric.
+- [00:09:37,820 - 00:09:42,280] So let's in fact begin with the simplest case,
+- [00:09:42,320 - 00:09:43,200] which is the one sphere.
+- [00:09:46,400 - 00:09:48,240] If I take a unit one sphere,
+- [00:09:48,240 - 00:09:52,220] I could describe it just by an angle phi.
+- [00:09:52,560 - 00:09:55,640] I could describe the points along
+- [00:09:55,640 - 00:09:58,720] that one sphere by angles phi.
+- [00:09:59,340 - 00:10:00,980] Now phi goes from zero
+- [00:10:00,980 - 00:10:02,620] to two pi in this case,
+- [00:10:02,660 - 00:10:04,380] zero to two pi.
+- [00:10:06,000 - 00:10:07,720] If it's a unit one sphere,
+- [00:10:08,080 - 00:10:10,400] we would just write the distance,
+- [00:10:11,600 - 00:10:12,940] we could write a metric.
+- [00:10:13,060 - 00:10:14,360] The metric would be very simple.
+- [00:10:14,460 - 00:10:15,680] If it's a unit one sphere,
+- [00:10:15,680 - 00:10:19,880] then metric is just equal to d phi squared.
+- [00:10:22,300 - 00:10:25,380] The distance along the unit one sphere
+- [00:10:25,380 - 00:10:27,660] is just proportional to the angle,
+- [00:10:29,100 - 00:10:31,340] and just to keep everything positive,
+- [00:10:31,420 - 00:10:32,140] I've squared it,
+- [00:10:32,200 - 00:10:33,200] it would just be d phi squared.
+- [00:10:34,260 - 00:10:36,660] That would be the metric of a one sphere.
+- [00:10:37,260 - 00:10:39,140] Now let's go to a two sphere.
+- [00:10:39,340 - 00:10:40,860] Now the way to think about a two sphere
+- [00:10:41,540 - 00:10:45,660] is to imagine a series of ones.
+- [00:10:46,660 - 00:10:47,560] Here's the picture.
+- [00:10:47,680 - 00:10:49,060] I'll draw it first with my hands.
+- [00:10:49,520 - 00:10:50,640] Imagine a two sphere.
+- [00:10:51,599 - 00:10:54,700] And think of it by starting at the north pole,
+- [00:10:54,880 - 00:10:56,600] start at the north pole,
+- [00:10:56,860 - 00:10:58,940] and start with a little circle,
+- [00:10:59,100 - 00:11:01,080] and then expand the circle,
+- [00:11:01,240 - 00:11:03,140] and then contract the circle.
+- [00:11:03,460 - 00:11:06,240] So it's a sequence of one spheres,
+- [00:11:08,400 - 00:11:11,440] where the sequence begins at one pole,
+- [00:11:11,560 - 00:11:12,800] and ends at the other pole.
+- [00:11:12,940 - 00:11:13,740] Now of course it doesn't matter.
+- [00:11:13,820 - 00:11:15,000] You don't have to take the north pole
+- [00:11:15,000 - 00:11:15,660] and the south pole.
+- [00:11:15,760 - 00:11:16,660] You can take the east pole
+- [00:11:16,660 - 00:11:17,380] and the west pole,
+- [00:11:17,580 - 00:11:17,700] but,
+- [00:11:17,700 - 00:11:21,960] or any other,
+- [00:11:22,979 - 00:11:24,740] I guess the east pole and the west pole
+- [00:11:24,740 - 00:11:26,980] is not the right thing,
+- [00:11:27,080 - 00:11:28,700] but any two points.
+- [00:11:28,920 - 00:11:31,120] But think of the two sphere,
+- [00:11:31,220 - 00:11:31,440] sorry,
+- [00:11:31,440 - 00:11:32,400] think of the two sphere
+- [00:11:32,900 - 00:11:35,140] as a series of one spheres,
+- [00:11:35,220 - 00:11:37,160] or one sphere parameter,
+- [00:11:37,480 - 00:11:39,220] a series of one spheres parameterized
+- [00:11:39,220 - 00:11:40,440] by another angle.
+- [00:11:41,439 - 00:11:42,940] Now the new angle,
+- [00:11:43,040 - 00:11:44,240] the angle,
+- [00:11:45,160 - 00:11:46,560] around the one sphere,
+- [00:11:46,720 - 00:11:48,320] still goes from zero to two pi.
+- [00:11:49,640 - 00:11:50,780] But the angle,
+- [00:11:51,000 - 00:11:52,160] the new angle,
+- [00:11:52,300 - 00:11:53,660] that goes from the north pole
+- [00:11:53,660 - 00:11:54,640] to the south pole,
+- [00:11:55,280 - 00:11:57,700] that only goes from zero to pi.
+- [00:11:58,020 - 00:11:58,920] In other words,
+- [00:11:58,920 - 00:12:00,420] from zero to 180 degrees.
+- [00:12:01,160 - 00:12:02,780] North pole would be zero,
+- [00:12:03,040 - 00:12:05,280] south pole would be 180 degrees,
+- [00:12:05,460 - 00:12:06,300] or vice versa.
+- [00:12:07,340 - 00:12:07,860] Alright,
+- [00:12:07,860 - 00:12:09,460] and so here's the way
+- [00:12:09,460 - 00:12:10,620] to write the metric.
+- [00:12:10,960 - 00:12:11,840] First of all,
+- [00:12:11,840 - 00:12:12,560] let's draw a picture.
+- [00:12:16,120 - 00:12:18,580] Here's the two sphere,
+- [00:12:18,860 - 00:12:21,460] and think of it as a kind of series
+- [00:12:21,460 - 00:12:22,620] of one spheres.
+- [00:12:22,800 - 00:12:24,180] I've started at the east pole
+- [00:12:24,180 - 00:12:25,400] instead of the north pole.
+- [00:12:37,060 - 00:12:37,660] Alright,
+- [00:12:37,660 - 00:12:38,940] and so we introduce
+- [00:12:38,940 - 00:12:40,300] another angle.
+- [00:12:40,420 - 00:12:41,040] First of all,
+- [00:12:41,040 - 00:12:41,480] this phi,
+- [00:12:41,480 - 00:12:42,720] which goes around,
+- [00:12:43,699 - 00:12:45,060] but now this theta,
+- [00:12:45,320 - 00:12:46,140] let's call it theta,
+- [00:12:46,780 - 00:12:48,760] which goes from one end of the sphere
+- [00:12:48,760 - 00:12:50,060] to the other end of the sphere,
+- [00:12:50,180 - 00:12:52,020] let's call this end theta equals zero,
+- [00:12:52,600 - 00:12:55,080] and let's call this end theta equals pi.
+- [00:12:59,180 - 00:12:59,660] Alright,
+- [00:12:59,660 - 00:13:00,740] so let's first write,
+- [00:13:01,220 - 00:13:01,700] alright,
+- [00:13:01,700 - 00:13:03,060] let's try to write the metric now.
+- [00:13:03,160 - 00:13:04,460] It's not too hard to write the metric.
+- [00:13:05,040 - 00:13:06,000] First of all,
+- [00:13:06,000 - 00:13:08,000] if we move in the theta direction,
+- [00:13:08,040 - 00:13:09,320] along the theta direction,
+- [00:13:12,779 - 00:13:16,160] then ds squared is just d theta squared.
+- [00:13:18,160 - 00:13:24,880] If you move along the north-south direction,
+- [00:13:25,240 - 00:13:28,240] along the theta axis,
+- [00:13:29,260 - 00:13:29,960] sorry,
+- [00:13:29,960 - 00:13:30,980] along the theta direction
+- [00:13:30,980 - 00:13:32,260] from north to south,
+- [00:13:32,440 - 00:13:34,740] the distance that you move is proportional
+- [00:13:34,740 - 00:13:36,880] to the angle that you move by.
+- [00:13:37,240 - 00:13:38,600] But then,
+- [00:13:38,600 - 00:13:41,460] the other term in the metric,
+- [00:13:41,480 - 00:13:44,520] has to do with moving in the perpendicular direction,
+- [00:13:44,740 - 00:13:48,700] the perpendicular direction being around the phi axis.
+- [00:13:49,060 - 00:13:50,020] This is theta.
+- [00:13:50,700 - 00:13:52,640] Around the phi axis,
+- [00:13:52,800 - 00:13:54,120] which is like the one sphere,
+- [00:13:54,900 - 00:13:56,980] which is like going around the one sphere,
+- [00:13:57,560 - 00:14:01,420] the radius of each one of these one spheres,
+- [00:14:01,520 - 00:14:02,480] each one of these circles,
+- [00:14:02,480 - 00:14:03,280] is different.
+- [00:14:04,400 - 00:14:05,220] It's different.
+- [00:14:05,300 - 00:14:06,990] So each one of these
+- [00:14:06,990 - 00:14:08,680] is not a unit one sphere,
+- [00:14:08,680 - 00:14:11,320] but the radius of the sphere,
+- [00:14:11,500 - 00:14:11,760] sorry,
+- [00:14:11,760 - 00:14:13,120] the radius of the circle,
+- [00:14:14,020 - 00:14:16,280] varies from this end where it's zero,
+- [00:14:17,200 - 00:14:18,960] back to this end where it's zero,
+- [00:14:19,240 - 00:14:20,580] but in between,
+- [00:14:20,580 - 00:14:21,840] what's it given by?
+- [00:14:23,100 - 00:14:24,520] Sine of theta.
+- [00:14:25,480 - 00:14:30,380] Sine of theta varies smoothly from zero back to zero,
+- [00:14:30,640 - 00:14:33,320] going through a maximum at 90 degrees,
+- [00:14:33,440 - 00:14:34,700] and then coming back to zero.
+- [00:14:34,860 - 00:14:37,220] So the radius of the one sphere is,
+- [00:14:38,680 - 00:14:39,540] or the circles,
+- [00:14:41,380 - 00:14:42,720] the radius coming in,
+- [00:14:43,420 - 00:14:46,320] replacing this radius here,
+- [00:14:46,540 - 00:14:50,120] is sine squared of theta,
+- [00:14:50,380 - 00:14:51,920] d phi squared.
+- [00:14:53,920 - 00:14:54,560] Alright,
+- [00:14:54,560 - 00:14:55,460] so that's the familiar,
+- [00:14:55,600 - 00:14:57,500] and many of you are familiar with this metric.
+- [00:14:57,760 - 00:15:01,780] This is the metric of a two-dimensional,
+- [00:15:01,940 - 00:15:03,360] ordinary two-dimensional sphere.
+- [00:15:03,680 - 00:15:06,980] Take any two points close to each other,
+- [00:15:07,060 - 00:15:08,660] separated by a given interval,
+- [00:15:08,680 - 00:15:09,280] an interval in theta,
+- [00:15:09,580 - 00:15:10,160] and an interval,
+- [00:15:10,300 - 00:15:11,900] an infinitesimal interval in theta,
+- [00:15:12,060 - 00:15:13,620] and an infinitesimal interval in phi,
+- [00:15:13,920 - 00:15:16,300] and you want to find the distance between them,
+- [00:15:19,840 - 00:15:23,220] then the square of the distance is d theta squared
+- [00:15:23,220 - 00:15:25,420] plus sine squared theta d phi squared.
+- [00:15:26,540 - 00:15:27,100] Now,
+- [00:15:27,100 - 00:15:28,100] from there,
+- [00:15:28,100 - 00:15:29,800] you go to the three sphere.
+- [00:15:30,480 - 00:15:34,380] The three sphere is just a series of two spheres.
+- [00:15:34,900 - 00:15:37,420] So we imagine we have a two sphere,
+- [00:15:38,420 - 00:15:39,180] imagine we,
+- [00:15:39,180 - 00:15:40,180] now I cannot,
+- [00:15:40,340 - 00:15:42,240] I can't draw it easily,
+- [00:15:42,380 - 00:15:43,680] and I can't even use
+- [00:15:43,680 - 00:15:44,980] my hands properly to do it,
+- [00:15:45,100 - 00:15:48,000] but imagine a series of two spheres,
+- [00:15:48,260 - 00:15:50,060] where you start with a two sphere,
+- [00:15:51,120 - 00:15:52,420] you blow it up,
+- [00:15:52,580 - 00:15:54,660] and then you shrink it back to zero.
+- [00:15:55,140 - 00:15:56,860] That's a three-dimensional geometry.
+- [00:15:57,100 - 00:15:58,840] It takes three angles to describe it.
+- [00:15:59,140 - 00:16:02,380] Two to describe any one of the two spheres,
+- [00:16:02,940 - 00:16:04,480] but then another angle,
+- [00:16:04,620 - 00:16:06,020] and that other angle,
+- [00:16:06,020 - 00:16:07,400] or that other variable,
+- [00:16:07,480 - 00:16:08,820] also starts at zero,
+- [00:16:09,980 - 00:16:10,900] blows up,
+- [00:16:10,960 - 00:16:11,860] not blows up,
+- [00:16:11,960 - 00:16:14,700] but increases until it comes to a maximum,
+- [00:16:14,900 - 00:16:16,840] and then shrinks back down to zero.
+- [00:16:17,420 - 00:16:19,400] That's the idea of the three sphere,
+- [00:16:20,079 - 00:16:21,560] and to make a three sphere,
+- [00:16:21,740 - 00:16:24,820] you just introduce one more angle,
+- [00:16:25,699 - 00:16:27,080] let's call it alpha.
+- [00:16:28,200 - 00:16:29,460] This is the three sphere,
+- [00:16:29,560 - 00:16:30,280] this is the two sphere,
+- [00:16:30,320 - 00:16:30,780] one sphere,
+- [00:16:33,160 - 00:16:34,740] and it's the unit one sphere,
+- [00:16:34,740 - 00:16:35,240] in fact.
+- [00:16:35,240 - 00:16:37,820] This is the unit two sphere.
+- [00:16:38,440 - 00:16:40,400] Why don't I give it its right,
+- [00:16:41,780 - 00:16:43,120] let's just call it
+- [00:16:44,280 - 00:16:47,360] d omega one squared.
+- [00:16:47,560 - 00:16:50,620] That's the notation that one usually writes
+- [00:16:50,620 - 00:16:53,020] for the metric of a unit one sphere.
+- [00:16:53,420 - 00:16:54,880] In the same notation,
+- [00:16:55,180 - 00:16:56,680] this would become the metric
+- [00:16:58,199 - 00:17:01,240] d omega two squared.
+- [00:17:02,860 - 00:17:05,220] That's the definition of this side effect.
+- [00:17:06,020 - 00:17:09,020] Omega two is really a whole sphere,
+- [00:17:09,339 - 00:17:10,940] and this is simply a symbol
+- [00:17:10,940 - 00:17:12,780] that stands for what's here.
+- [00:17:13,460 - 00:17:16,640] But it represents the metric of a unit two sphere.
+- [00:17:18,119 - 00:17:19,619] What about a three sphere?
+- [00:17:20,280 - 00:17:21,480] Introduce another angle,
+- [00:17:21,640 - 00:17:23,960] and now I'm going to call the other angle alpha.
+- [00:17:24,220 - 00:17:26,180] Do exactly the same thing,
+- [00:17:26,359 - 00:17:28,500] alpha varies from zero to two pi,
+- [00:17:28,780 - 00:17:30,500] but at every point of alpha,
+- [00:17:30,980 - 00:17:32,960] we have a two sphere.
+- [00:17:34,400 - 00:17:35,220] What's the angle?
+- [00:17:35,220 - 00:17:35,920] What's the metric?
+- [00:17:36,120 - 00:17:38,100] The metric is d alpha squared.
+- [00:17:39,260 - 00:17:39,940] Now,
+- [00:17:39,940 - 00:17:42,260] the radius of that two sphere
+- [00:17:42,260 - 00:17:43,940] varies again,
+- [00:17:44,060 - 00:17:45,840] increases and then decreases,
+- [00:17:46,980 - 00:17:48,560] and you have to write
+- [00:17:49,220 - 00:17:52,400] sine squared of alpha this time,
+- [00:17:54,419 - 00:17:56,440] not d phi squared,
+- [00:17:56,720 - 00:17:59,400] but d omega two squared.
+- [00:18:03,100 - 00:18:05,200] Let me write this d phi squared
+- [00:18:05,220 - 00:18:07,080] instead of writing it d phi squared.
+- [00:18:07,420 - 00:18:09,660] Let's call it d omega one squared.
+- [00:18:17,880 - 00:18:18,680] So notice,
+- [00:18:19,940 - 00:18:23,080] each time you increase the dimensionality
+- [00:18:23,080 - 00:18:24,380] of the sphere,
+- [00:18:24,920 - 00:18:26,480] you add another angle,
+- [00:18:28,040 - 00:18:31,360] and then you think of it as a series
+- [00:18:31,360 - 00:18:33,440] of lower dimensional spheres
+- [00:18:33,440 - 00:18:35,900] with a radius which varies
+- [00:18:35,900 - 00:18:39,540] from zero to a maximum back to zero,
+- [00:18:39,680 - 00:18:40,740] that's the sine of alpha.
+- [00:18:40,900 - 00:18:42,620] You square it to get the metric,
+- [00:18:43,320 - 00:18:45,480] and then you write the metric
+- [00:18:45,480 - 00:18:51,700] of a unit one dimensional less sphere.
+- [00:18:52,140 - 00:18:54,580] This would be ds squared
+- [00:18:57,120 - 00:18:58,780] for the three sphere.
+- [00:19:00,760 - 00:19:02,720] Let me write it out explicitly,
+- [00:19:02,720 - 00:19:05,340] just to make sure that you understand
+- [00:19:05,340 - 00:19:07,500] exactly explicitly what this means.
+- [00:19:07,920 - 00:19:11,140] It means d alpha squared for the,
+- [00:19:11,600 - 00:19:13,980] the s squared for the three sphere
+- [00:19:14,740 - 00:19:17,160] is equal to d alpha squared,
+- [00:19:17,320 - 00:19:19,600] that's the extra angle we add,
+- [00:19:20,420 - 00:19:22,560] plus sine squared of alpha,
+- [00:19:22,760 - 00:19:25,040] and then open up a box and just write
+- [00:19:26,560 - 00:19:29,020] the previous metric
+- [00:19:29,720 - 00:19:31,600] of the lower dimensional sphere.
+- [00:19:37,900 - 00:19:39,960] And just call this thing here
+- [00:19:39,960 - 00:19:42,120] d omega two squared.
+- [00:19:43,420 - 00:19:44,040] Alright,
+- [00:19:44,040 - 00:19:45,240] you can go on with this,
+- [00:19:45,380 - 00:19:47,360] I'll tell you what the general answer is.
+- [00:19:47,620 - 00:19:49,420] The general answer is,
+- [00:19:50,140 - 00:19:53,080] if you want the d sphere,
+- [00:19:53,480 - 00:19:55,320] for example the four sphere,
+- [00:19:55,720 - 00:19:57,760] we just write the same thing,
+- [00:19:57,880 - 00:20:01,100] d alpha squared plus sine squared alpha,
+- [00:20:01,100 - 00:20:04,780] times the metric of the three sphere,
+- [00:20:05,060 - 00:20:06,300] of the unit three sphere.
+- [00:20:06,800 - 00:20:08,060] And so by induction,
+- [00:20:08,240 - 00:20:11,100] we can go to the metric of any dimensional sphere.
+- [00:20:11,220 - 00:20:13,340] But we'll never need more than the three dimensional sphere,
+- [00:20:14,139 - 00:20:17,180] unless during the course of this lecture series,
+- [00:20:17,700 - 00:20:20,060] an announcement is made in the New York Times
+- [00:20:20,060 - 00:20:21,670] that it was discovered that the world
+- [00:20:21,670 - 00:20:23,280] is four or five or six dimensional.
+- [00:20:23,600 - 00:20:23,860] Well,
+- [00:20:23,860 - 00:20:24,840] they do that all the time,
+- [00:20:24,840 - 00:20:25,220] but,
+- [00:20:28,980 - 00:20:31,020] but not in the sense in which,
+- [00:20:31,020 - 00:20:33,060] which I mean.
+- [00:20:33,780 - 00:20:34,120] Okay,
+- [00:20:34,120 - 00:20:37,300] that is the idea of a higher dimensional sphere.
+- [00:20:38,040 - 00:20:40,240] Once you think of it this way,
+- [00:20:40,600 - 00:20:44,620] you can forget the crutch of how it's embedded
+- [00:20:45,720 - 00:20:48,180] in the higher dimensional space.
+- [00:20:48,800 - 00:20:52,820] Notice that the one sphere is described by one variable,
+- [00:20:52,960 - 00:20:53,840] one coordinate,
+- [00:20:53,840 - 00:20:54,280] phi.
+- [00:20:54,760 - 00:20:56,400] You don't need x and y.
+- [00:20:56,760 - 00:20:59,520] The two sphere is described by two coordinates,
+- [00:20:59,520 - 00:21:00,600] theta and phi.
+- [00:21:00,920 - 00:21:01,220] Well,
+- [00:21:01,220 - 00:21:02,040] okay,
+- [00:21:02,040 - 00:21:03,460] this is d phi squared.
+- [00:21:06,880 - 00:21:09,640] The three sphere by three coordinates,
+- [00:21:10,760 - 00:21:13,600] and we've lost all memory
+- [00:21:15,480 - 00:21:18,820] of whether or not this sphere is embedded
+- [00:21:18,820 - 00:21:20,220] in the higher dimensional space.
+- [00:21:20,460 - 00:21:22,440] And we will consider it not to be.
+- [00:21:22,560 - 00:21:26,180] Just an abstract description of a geometry.
+- [00:21:28,460 - 00:21:29,500] Now this geometry,
+- [00:21:29,500 - 00:21:31,640] has special features as I said.
+- [00:21:32,900 - 00:21:34,540] It's uniformly curved.
+- [00:21:35,020 - 00:21:38,220] It's everywhere is the same as at every other point.
+- [00:21:38,700 - 00:21:39,600] For example,
+- [00:21:39,600 - 00:21:40,900] there are other kinds of geometries
+- [00:21:40,900 - 00:21:41,660] that we could draw,
+- [00:21:42,440 - 00:21:43,340] not draw,
+- [00:21:43,340 - 00:21:44,040] but describe,
+- [00:21:44,220 - 00:21:46,540] which would have different metrics,
+- [00:21:46,800 - 00:21:49,640] perhaps some simple deformations of this metric.
+- [00:21:49,860 - 00:21:51,620] Put some wrong coefficient,
+- [00:21:51,880 - 00:21:52,840] some other coefficient,
+- [00:21:53,000 - 00:21:55,680] or put some other function besides sine squared theta,
+- [00:21:56,500 - 00:21:59,020] which still goes from zero back to zero.
+- [00:21:59,600 - 00:22:02,380] You'll be making some sort of deformed sphere.
+- [00:22:02,860 - 00:22:03,740] For example,
+- [00:22:03,740 - 00:22:05,140] you could make an ellipsoid.
+- [00:22:05,420 - 00:22:07,620] An ellipsoid is a nice,
+- [00:22:07,700 - 00:22:09,060] is a very nice surface,
+- [00:22:09,060 - 00:22:09,520] alright,
+- [00:22:09,680 - 00:22:11,020] but it's not uniform.
+- [00:22:11,180 - 00:22:13,400] It's different at some places than at other places.
+- [00:22:13,820 - 00:22:16,700] It has places where the curvature is larger,
+- [00:22:16,780 - 00:22:18,980] and places where the curvature is smaller.
+- [00:22:19,900 - 00:22:22,640] The sphere is rather special in that it's uniform.
+- [00:22:22,940 - 00:22:24,360] Wherever you are in the sphere is
+- [00:22:24,360 - 00:22:25,780] the same as at every other point.
+- [00:22:25,940 - 00:22:26,800] So it's called homogeneous.
+- [00:22:27,580 - 00:22:29,000] Just like a cosmological system.
+- [00:22:29,020 - 00:22:29,340] Just like a cosmology.
+- [00:22:30,780 - 00:22:31,380] Okay,
+- [00:22:31,380 - 00:22:31,840] now,
+- [00:22:31,840 - 00:22:34,920] these are unit spheres.
+- [00:22:35,280 - 00:22:38,140] Each one of these is a unit,
+- [00:22:39,600 - 00:22:40,580] three sphere,
+- [00:22:40,580 - 00:22:41,440] two sphere,
+- [00:22:41,440 - 00:22:42,220] one sphere.
+- [00:22:43,000 - 00:22:45,230] Supposing we now want to
+- [00:22:45,230 - 00:22:47,460] make a sphere of radius A,
+- [00:22:47,780 - 00:22:49,160] the metric of a radius,
+- [00:22:49,340 - 00:22:50,760] a sphere of radius A,
+- [00:22:50,960 - 00:22:54,260] then all we have to do is
+- [00:22:54,260 - 00:22:57,560] take the metric of the unit sphere,
+- [00:22:57,560 - 00:22:59,390] and multiply it by the square
+- [00:22:59,390 - 00:23:01,220] of the radius of the sphere.
+- [00:23:01,320 - 00:23:02,040] Why the square?
+- [00:23:02,340 - 00:23:03,180] The square,
+- [00:23:03,180 - 00:23:05,690] because the metric here is associated
+- [00:23:05,690 - 00:23:08,200] with the square of the radius,
+- [00:23:09,380 - 00:23:11,120] or the square of a distance.
+- [00:23:11,700 - 00:23:14,060] And so if we actually wanted a,
+- [00:23:14,820 - 00:23:18,520] let's say a three sphere of radius A,
+- [00:23:19,280 - 00:23:21,440] we would take this whole
+- [00:23:21,440 - 00:23:23,600] thing and multiply it by A.
+- [00:23:25,220 - 00:23:25,820] Alright,
+- [00:23:25,820 - 00:23:26,600] so we'll do it right.
+- [00:23:27,560 - 00:23:27,940] Square.
+- [00:23:28,600 - 00:23:29,560] Thank you.
+- [00:23:29,660 - 00:23:30,800] A squared.
+- [00:23:33,180 - 00:23:35,520] So we can write it this way.
+- [00:23:35,600 - 00:23:38,660] We can write that dS squared
+- [00:23:38,660 - 00:23:41,720] for a sphere of radius A
+- [00:23:41,720 - 00:23:48,620] is just equal to A squared times d omega.
+- [00:23:49,600 - 00:23:53,600] And let's now fix ourselves to the three sphere.
+- [00:23:54,340 - 00:23:55,300] But it doesn't matter.
+- [00:23:55,400 - 00:23:57,540] Whatever dimension we want.
+- [00:23:57,560 - 00:23:58,260] We're talking about.
+- [00:23:59,040 - 00:23:59,520] Three,
+- [00:23:59,520 - 00:23:59,900] four,
+- [00:23:59,900 - 00:24:00,200] five,
+- [00:24:00,200 - 00:24:00,560] one,
+- [00:24:00,560 - 00:24:00,820] two.
+- [00:24:01,060 - 00:24:01,540] Incidentally,
+- [00:24:01,540 - 00:24:02,600] what is a zero sphere?
+- [00:24:04,080 - 00:24:04,880] Two points.
+- [00:24:04,920 - 00:24:05,340] Two points.
+- [00:24:05,880 - 00:24:07,120] Why is it two points?
+- [00:24:07,240 - 00:24:08,540] Let's just for fun,
+- [00:24:08,540 - 00:24:10,060] let's ask what a zero sphere is.
+- [00:24:10,320 - 00:24:11,940] It seems like a stupid idea,
+- [00:24:11,940 - 00:24:13,420] a zero sphere.
+- [00:24:13,840 - 00:24:14,480] I mean,
+- [00:24:14,480 - 00:24:17,280] a one sphere almost seems sort of silly.
+- [00:24:17,420 - 00:24:18,100] It's just a circle.
+- [00:24:19,840 - 00:24:23,060] A zero sphere is zero dimensional.
+- [00:24:23,840 - 00:24:24,320] Alright?
+- [00:24:24,320 - 00:24:26,180] But the way to figure out what it is,
+- [00:24:26,200 - 00:24:30,920] is just to extrapolate this formula back one step.
+- [00:24:31,400 - 00:24:33,650] So if a one sphere is x
+- [00:24:33,650 - 00:24:35,900] squared plus y squared equals A squared,
+- [00:24:36,240 - 00:24:38,270] and a two sphere is x squared plus
+- [00:24:38,270 - 00:24:40,300] y squared plus z squared equals A squared,
+- [00:24:40,560 - 00:24:43,450] then a zero sphere must just
+- [00:24:43,450 - 00:24:46,340] be x squared equals A squared.
+- [00:24:46,620 - 00:24:49,140] Or let's take the unit zero sphere.
+- [00:24:49,600 - 00:24:52,520] The unit zero sphere is x squared equals one.
+- [00:24:53,420 - 00:24:56,200] What are the solutions of x squared equals one?
+- [00:24:57,620 - 00:24:58,820] Plus or minus one.
+- [00:24:59,720 - 00:25:00,280] Alright?
+- [00:25:00,420 - 00:25:03,820] So a zero sphere is just two points.
+- [00:25:04,980 - 00:25:05,840] And notice,
+- [00:25:05,840 - 00:25:08,120] it's kind of interesting that the one
+- [00:25:08,120 - 00:25:10,400] sphere can be made from the zero sphere
+- [00:25:10,400 - 00:25:15,420] by taking a sequence of zero spheres.
+- [00:25:15,700 - 00:25:16,840] Here's the first zero sphere.
+- [00:25:17,020 - 00:25:18,100] Here's the next zero sphere.
+- [00:25:18,280 - 00:25:19,340] Here's the next zero sphere.
+- [00:25:19,740 - 00:25:21,960] Here's the one of maximal radius.
+- [00:25:21,960 - 00:25:24,400] And then we come back to the zero sphere,
+- [00:25:24,400 - 00:25:25,440] which is small.
+- [00:25:28,540 - 00:25:28,980] So,
+- [00:25:28,980 - 00:25:32,140] now don't ask me what a minus one sphere is.
+- [00:25:32,200 - 00:25:33,060] That one I can't do.
+- [00:25:33,960 - 00:25:38,340] But I'm sure that mathematicians have a definite,
+- [00:25:38,340 - 00:25:39,480] well I'm not sure.
+- [00:25:41,060 - 00:25:43,020] Actually I've never heard of a minus one sphere.
+- [00:25:46,620 - 00:25:47,980] I've heard of a horn sphere.
+- [00:25:48,740 - 00:25:50,160] Have you heard of a horn sphere?
+- [00:25:50,760 - 00:25:52,540] It's the boundary of the zero sphere.
+- [00:25:53,840 - 00:25:54,500] What is?
+- [00:25:54,680 - 00:25:55,260] A horn sphere?
+- [00:25:55,540 - 00:25:55,620] No.
+- [00:25:55,820 - 00:25:56,680] It's a minus one sphere.
+- [00:25:56,880 - 00:25:57,020] Oh,
+- [00:25:57,020 - 00:25:57,640] a minus one sphere.
+- [00:25:58,300 - 00:25:58,780] Yeah.
+- [00:26:00,000 - 00:26:00,480] Yeah.
+- [00:26:02,020 - 00:26:02,500] Yeah.
+- [00:26:09,080 - 00:26:11,160] Negative dimensions is never interesting.
+- [00:26:11,320 - 00:26:12,940] I don't think it is.
+- [00:26:15,660 - 00:26:17,640] Fractional dimensions are sometimes interesting.
+- [00:26:19,440 - 00:26:19,920] Okay.
+- [00:26:19,920 - 00:26:23,360] Now let's think about cosmology.
+- [00:26:28,560 - 00:26:31,760] And let's think about the cosmology of
+- [00:26:31,760 - 00:26:34,960] a world where space is a three sphere.
+- [00:26:45,700 - 00:26:47,460] We're not interested in space now.
+- [00:26:47,460 - 00:26:48,820] We're interested in space-time.
+- [00:26:50,140 - 00:26:53,780] And what this space-time is describing
+- [00:26:53,780 - 00:26:57,420] is a space of variable radius.
+- [00:26:57,780 - 00:27:00,540] A space whose radius changes with time.
+- [00:27:01,360 - 00:27:03,100] The Big Bang theory,
+- [00:27:03,100 - 00:27:03,700] for example,
+- [00:27:03,700 - 00:27:07,460] could be considered a theory in which the world is
+- [00:27:07,460 - 00:27:10,960] a three sphere which starts out extremely small.
+- [00:27:11,260 - 00:27:12,060] How small?
+- [00:27:12,360 - 00:27:12,780] Well,
+- [00:27:12,780 - 00:27:17,440] let's say the Planck sphere.
+- [00:27:17,440 - 00:27:20,220] It's a very small size or some arbitrarily small size,
+- [00:27:20,220 - 00:27:20,960] even zero.
+- [00:27:21,640 - 00:27:24,040] And expands and expands and expands and expands.
+- [00:27:24,400 - 00:27:25,810] It may or may not
+- [00:27:25,810 - 00:27:27,220] come back and implode on itself.
+- [00:27:27,380 - 00:27:28,300] We're going to talk about that.
+- [00:27:29,820 - 00:27:33,400] But don't get the idea that we're thinking
+- [00:27:33,400 - 00:27:36,980] in any sense about a higher dimensional sphere
+- [00:27:36,980 - 00:27:38,520] when we embed it in time.
+- [00:27:38,660 - 00:27:39,460] Time is different.
+- [00:27:40,060 - 00:27:42,060] Don't try to conflate time
+- [00:27:42,060 - 00:27:44,060] with one of these dimensions here.
+- [00:27:44,160 - 00:27:44,860] Then you get in trouble.
+- [00:27:46,460 - 00:27:46,980] Okay,
+- [00:27:46,980 - 00:27:49,910] so let's talk about the cosmology and
+- [00:27:49,910 - 00:27:52,840] the metric of a geometry of an expanding
+- [00:27:52,840 - 00:27:55,300] or contracting or time variable sphere.
+- [00:27:57,200 - 00:27:57,720] Well,
+- [00:27:57,720 - 00:27:58,680] all we have to do,
+- [00:27:58,680 - 00:27:58,820] well,
+- [00:27:58,820 - 00:28:04,500] we first write down proper time now.
+- [00:28:06,360 - 00:28:08,500] This is the space-time interval.
+- [00:28:08,720 - 00:28:10,920] The space-time interval is the proper time,
+- [00:28:10,920 - 00:28:12,680] just as in special relativity.
+- [00:28:13,140 - 00:28:14,320] And there's always...
+- [00:28:14,900 - 00:28:17,140] It starts out with a positive term,
+- [00:28:17,140 - 00:28:18,340] dt squared,
+- [00:28:18,340 - 00:28:20,340] which we can take to be just dt squared.
+- [00:28:21,320 - 00:28:22,860] You can change variables.
+- [00:28:23,380 - 00:28:24,240] For example,
+- [00:28:24,240 - 00:28:26,850] you can take some other function of the
+- [00:28:26,850 - 00:28:29,460] time so that there would be some coefficient
+- [00:28:29,460 - 00:28:30,280] in front here,
+- [00:28:30,280 - 00:28:32,720] but there's no particular reason to do that.
+- [00:28:32,900 - 00:28:34,680] It starts out with dt squared.
+- [00:28:35,120 - 00:28:39,380] And then that's the metric associated with the clock.
+- [00:28:40,000 - 00:28:42,360] This is the thing which reads off clock time.
+- [00:28:42,360 - 00:28:47,920] And then minus the space metric,
+- [00:28:47,920 - 00:28:53,360] which is a of t squared,
+- [00:28:53,360 - 00:28:55,960] the time-dependent radius
+- [00:28:55,960 - 00:28:58,060] of the spherical universe,
+- [00:28:58,060 - 00:29:03,100] times d omega 3 squared.
+- [00:29:03,420 - 00:29:03,980] Now,
+- [00:29:03,980 - 00:29:06,480] let me say one more thing about these coordinates.
+- [00:29:08,160 - 00:29:09,180] As I said,
+- [00:29:09,180 - 00:29:10,760] there's nothing special about any
+- [00:29:10,760 - 00:29:12,340] particular point on the graph.
+- [00:29:13,200 - 00:29:14,960] Let's draw a two-sphere.
+- [00:29:17,440 - 00:29:18,960] For the two-sphere,
+- [00:29:18,960 - 00:29:21,920] we would write the two-sphere exactly the same way,
+- [00:29:23,240 - 00:29:27,380] except instead of putting d omega 2 here,
+- [00:29:27,380 - 00:29:31,740] we would put d omega 1 squared here.
+- [00:29:33,040 - 00:29:34,100] That's the only difference.
+- [00:29:35,880 - 00:29:36,600] Okay.
+- [00:29:38,060 - 00:29:39,500] It's convenient...
+- [00:29:40,340 - 00:29:40,880] Well,
+- [00:29:40,880 - 00:29:41,240] not...
+- [00:29:41,240 - 00:29:43,040] It's convenient to focus,
+- [00:29:43,040 - 00:29:44,380] as I said,
+- [00:29:44,380 - 00:29:46,890] on one of the poles of
+- [00:29:46,890 - 00:29:49,400] the sphere and think of it
+- [00:29:49,400 - 00:29:50,900] as the place where we are,
+- [00:29:50,900 - 00:29:51,740] us,
+- [00:29:51,740 - 00:29:53,060] where we are.
+- [00:29:53,220 - 00:29:54,740] One of the poles of the sphere.
+- [00:29:54,820 - 00:29:55,140] In other words,
+- [00:29:55,140 - 00:29:57,370] to coordinate the sphere in such a
+- [00:29:57,370 - 00:29:59,600] way that we are at the north pole.
+- [00:30:00,140 - 00:30:00,620] Now,
+- [00:30:00,620 - 00:30:02,380] there's nothing special about that north pole,
+- [00:30:02,380 - 00:30:03,740] and presumably there's nothing special
+- [00:30:03,740 - 00:30:04,880] about our own location.
+- [00:30:05,820 - 00:30:08,160] It's just a definition of where we are.
+- [00:30:08,260 - 00:30:10,400] We are at the north pole of the sphere.
+- [00:30:11,600 - 00:30:13,379] That means we are...
+- [00:30:13,960 - 00:30:16,360] I guess the north pole is over on this side.
+- [00:30:16,880 - 00:30:19,580] I'm sorry for the fact that north isn't vertical,
+- [00:30:19,580 - 00:30:23,400] but that's also an arbitrary tradition that
+- [00:30:24,360 - 00:30:26,140] somebody invented in the past.
+- [00:30:27,400 - 00:30:28,720] That's what they do in Russia.
+- [00:30:32,180 - 00:30:32,740] Well,
+- [00:30:32,740 - 00:30:37,320] the reason I did it this way is because,
+- [00:30:37,320 - 00:30:38,300] yeah,
+- [00:30:38,300 - 00:30:39,920] it's usually the case that we put the
+- [00:30:39,920 - 00:30:41,080] north pole at the top.
+- [00:30:41,080 - 00:30:44,520] But we also usually measure angles from the horizontal.
+- [00:30:45,620 - 00:30:48,400] So I had to compromise somehow,
+- [00:30:48,400 - 00:30:51,380] so I put the north pole over on the right.
+- [00:30:51,760 - 00:30:52,580] North pole,
+- [00:30:52,580 - 00:30:53,640] south pole over here.
+- [00:30:54,180 - 00:30:54,440] Okay.
+- [00:30:54,520 - 00:30:55,400] What was my point?
+- [00:30:55,440 - 00:30:56,340] My point is here is...
+- [00:30:56,340 - 00:30:58,400] So as a convention,
+- [00:30:58,400 - 00:31:05,780] no real invariant significance to this,
+- [00:31:05,780 - 00:31:07,400] but we are over here,
+- [00:31:07,400 - 00:31:07,680] us,
+- [00:31:07,680 - 00:31:09,020] the U.S.,
+- [00:31:09,020 - 00:31:09,760] us.
+- [00:31:11,740 - 00:31:12,380] We're over here.
+- [00:31:12,480 - 00:31:12,980] We're over here.
+- [00:31:13,180 - 00:31:15,000] And that means that alpha,
+- [00:31:15,000 - 00:31:17,240] which measures distance,
+- [00:31:17,240 - 00:31:20,140] which measures angle away from us,
+- [00:31:21,040 - 00:31:24,240] can be sort of thought of as a
+- [00:31:24,240 - 00:31:27,440] radial distance away from us on the unit sphere.
+- [00:31:27,880 - 00:31:29,800] It's not the radial distance measured
+- [00:31:29,800 - 00:31:31,720] in kilometers or any other units,
+- [00:31:31,720 - 00:31:33,320] but it's the measure,
+- [00:31:33,320 - 00:31:34,260] a
+- [00:31:34,260 - 00:31:36,720] dimensionless measure on the unit sphere.
+- [00:31:37,180 - 00:31:38,480] And it can sort of
+- [00:31:38,480 - 00:31:39,780] be thought of as radial distance.
+- [00:31:40,500 - 00:31:45,840] Here's lines of fixed radial distance from us.
+- [00:31:46,360 - 00:31:49,040] So alpha can be thought of,
+- [00:31:49,040 - 00:31:50,620] and it's useful to think of it,
+- [00:31:50,620 - 00:31:53,200] as distance from us,
+- [00:31:53,200 - 00:31:53,820] or a
+- [00:31:53,820 - 00:31:54,780] coordinate,
+- [00:31:54,780 - 00:31:57,780] which represents the radial coordinate
+- [00:31:57,780 - 00:32:00,780] away from us in space.
+- [00:32:02,300 - 00:32:02,900] Okay.
+- [00:32:02,980 - 00:32:03,900] So here we are.
+- [00:32:05,840 - 00:32:06,780] Here's the metric.
+- [00:32:06,780 - 00:32:10,210] We can plug in d omega
+- [00:32:10,210 - 00:32:13,640] 3 times a of t squared.
+- [00:32:14,000 - 00:32:17,820] The only difference now between this and this
+- [00:32:17,820 - 00:32:21,640] is that a is time dependent and represents
+- [00:32:21,640 - 00:32:25,060] the time dependence of the radius of the universe,
+- [00:32:25,060 - 00:32:25,660] if you like,
+- [00:32:25,660 - 00:32:27,400] the spatial radius of the universe.
+- [00:32:31,340 - 00:32:32,460] This geometry,
+- [00:32:32,460 - 00:32:34,200] and it's very simple.
+- [00:32:34,280 - 00:32:34,620] That's all.
+- [00:32:34,660 - 00:32:35,500] That's all there is to it.
+- [00:32:35,620 - 00:32:35,940] I mean,
+- [00:32:35,940 - 00:32:36,760] of course,
+- [00:32:36,760 - 00:32:36,760] it's a geometry.
+- [00:32:36,760 - 00:32:36,840] Of course,
+- [00:32:36,840 - 00:32:40,120] it is more complicated than that in a certain sense.
+- [00:32:40,980 - 00:32:44,980] Just as the Earth is full of little irregularities
+- [00:32:44,980 - 00:32:48,980] and so forth that would make the metric of
+- [00:32:48,980 - 00:32:51,540] the surface of the Earth quite irregular,
+- [00:32:51,540 - 00:32:55,120] so too is the universe irregular because of
+- [00:32:55,120 - 00:32:58,280] the presence of galaxies and stars and other lumpy things.
+- [00:32:59,320 - 00:33:01,760] But apart from those small lumps,
+- [00:33:01,760 - 00:33:04,040] this is all there is
+- [00:33:04,040 - 00:33:06,320] to the metric of a universe,
+- [00:33:06,760 - 00:33:07,740] which is spherical,
+- [00:33:07,740 - 00:33:08,920] spatially spherical.
+- [00:33:09,860 - 00:33:11,180] This is called,
+- [00:33:11,180 - 00:33:12,560] well,
+- [00:33:12,560 - 00:33:13,140] the geometry,
+- [00:33:13,140 - 00:33:16,080] both the geometry and the cosmology based on it,
+- [00:33:16,120 - 00:33:19,440] is called Friedman-Robertson-Walker,
+- [00:33:19,440 - 00:33:21,530] and some people put an
+- [00:33:21,530 - 00:33:23,620] L in there for La Maitre.
+- [00:33:25,840 - 00:33:28,200] I got used to calling it FRW,
+- [00:33:28,200 - 00:33:31,400] and I will not speak the
+- [00:33:31,400 - 00:33:34,600] names of any of those people because
+- [00:33:34,600 - 00:33:35,400] if I leave...
+- [00:33:35,400 - 00:33:36,800] If I speak the names,
+- [00:33:36,800 - 00:33:38,600] I will leave out one important one,
+- [00:33:38,600 - 00:33:39,060] La Maitre.
+- [00:33:39,300 - 00:33:40,060] It's just,
+- [00:33:40,060 - 00:33:41,480] everybody just says FRW.
+- [00:33:41,960 - 00:33:48,220] So it's an FRW universe with spherical spatial shape.
+- [00:33:49,480 - 00:33:51,960] It has positive curvature,
+- [00:33:51,960 - 00:33:54,080] not positive space-time curvature,
+- [00:33:54,080 - 00:33:56,520] positive spatial curvature.
+- [00:33:57,320 - 00:34:00,720] To indicate that it has positive spatial curvature,
+- [00:34:00,720 - 00:34:05,380] we sometimes write that it has k equals r,
+- [00:34:05,380 - 00:34:06,700] equal to plus one.
+- [00:34:07,140 - 00:34:07,740] Now,
+- [00:34:07,740 - 00:34:09,320] what is it that's plus one?
+- [00:34:09,639 - 00:34:10,980] Nothing is plus one.
+- [00:34:11,360 - 00:34:12,139] It's just,
+- [00:34:12,139 - 00:34:14,420] this means curvature positive.
+- [00:34:16,300 - 00:34:16,900] Okay,
+- [00:34:16,900 - 00:34:22,739] that's all there is to the geometry of the sphere.
+- [00:34:23,380 - 00:34:26,040] But I want to describe spheres a little more.
+- [00:34:26,320 - 00:34:29,219] I want to give you a
+- [00:34:29,219 - 00:34:32,120] little further picture of thinking about spheres,
+- [00:34:32,120 - 00:34:32,840] and especially
+- [00:34:32,840 - 00:34:34,940] looking at spheres and looking out.
+- [00:34:35,600 - 00:34:37,320] I want to look at the
+- [00:34:37,320 - 00:34:39,040] world around you from the North Pole,
+- [00:34:39,040 - 00:34:39,679] so to speak.
+- [00:34:42,260 - 00:34:43,880] Maybe I'm looking out at
+- [00:34:43,880 - 00:34:45,500] the world from the South Pole.
+- [00:34:45,659 - 00:34:45,820] Yeah,
+- [00:34:45,820 - 00:34:47,639] I have a feeling in my drawings I'm
+- [00:34:47,639 - 00:34:49,460] going to put us at the South Pole.
+- [00:34:49,600 - 00:34:50,860] Now I'm really going to put
+- [00:34:50,860 - 00:34:52,120] the South Pole at the bottom.
+- [00:34:53,859 - 00:34:55,539] Why is the South Pole at the
+- [00:34:55,539 - 00:34:57,220] bottom and the North Pole at the top?
+- [00:34:59,240 - 00:35:00,400] Because people from the Northern
+- [00:35:00,400 - 00:35:01,560] Hemisphere are drawing the map.
+- [00:35:01,820 - 00:35:02,260] No.
+- [00:35:02,720 - 00:35:04,530] It's because if you take a
+- [00:35:04,530 - 00:35:06,340] map and you turn it upside down,
+- [00:35:06,340 - 00:35:08,360] and you draw it upside down,
+- [00:35:08,420 - 00:35:08,960] just do it,
+- [00:35:08,960 - 00:35:13,740] and you'll notice that South America is sort of unstable.
+- [00:35:19,380 - 00:35:22,100] South America hangs from North America.
+- [00:35:22,220 - 00:35:24,680] North America doesn't hang from South America.
+- [00:35:25,500 - 00:35:27,720] A very bright friend of mine used to
+- [00:35:27,720 - 00:35:29,940] think that all rivers ran north and south,
+- [00:35:30,040 - 00:35:31,300] and he was thinking of the Nile.
+- [00:35:31,360 - 00:35:31,620] Look.
+- [00:35:32,320 - 00:35:34,980] I have a friend who's a rather famous
+- [00:35:34,980 - 00:35:37,640] physicist who had two beliefs in his life.
+- [00:35:38,860 - 00:35:40,490] One of the beliefs is that
+- [00:35:40,490 - 00:35:42,120] no matter what direction he was driving,
+- [00:35:42,120 - 00:35:43,140] it was always north.
+- [00:35:45,860 - 00:35:48,800] The other thing that he believed when he
+- [00:35:48,800 - 00:35:51,740] was young was that cats were female dogs.
+- [00:35:55,160 - 00:35:56,220] I'm going to tell you his name.
+- [00:35:56,300 - 00:35:57,400] His name is Willie Fishler.
+- [00:35:57,520 - 00:35:58,660] He was a good friend of mine.
+- [00:36:00,520 - 00:36:02,960] He's probably not after he sees this.
+- [00:36:08,740 - 00:36:09,420] Yeah.
+- [00:36:09,840 - 00:36:14,340] This is in FRWK equals plus one universe.
+- [00:36:14,940 - 00:36:18,420] It means positively curved and of this special kind.
+- [00:36:19,720 - 00:36:20,400] Now,
+- [00:36:20,400 - 00:36:22,020] let's talk a little bit more about spheres.
+- [00:36:24,960 - 00:36:27,540] When you make a map of the Earth,
+- [00:36:27,540 - 00:36:28,640] you would like to know what the Earth is like.
+- [00:36:28,640 - 00:36:30,710] You'd like to lay the
+- [00:36:30,710 - 00:36:32,780] map out on a flat plane.
+- [00:36:34,760 - 00:36:36,820] And you'd like to do it in a
+- [00:36:36,820 - 00:36:38,880] nice way that preserves shapes and so forth.
+- [00:36:39,140 - 00:36:40,880] There are various ways to do that.
+- [00:36:40,980 - 00:36:45,640] There's Mercator projections and other kinds of
+- [00:36:45,640 - 00:36:50,300] projections that project the sphere onto the plane.
+- [00:36:50,560 - 00:36:52,440] They always distort sizes.
+- [00:36:52,440 - 00:36:55,320] You can't stretch the sphere out
+- [00:36:55,320 - 00:36:58,200] onto a plane without distorting it.
+- [00:36:58,400 - 00:37:01,880] But there's one particular mathematical construction,
+- [00:37:01,880 - 00:37:04,700] which is probably the nicest mathematical construction.
+- [00:37:05,300 - 00:37:07,440] It's not good for cartographers.
+- [00:37:08,500 - 00:37:13,020] And the reason is it requires an infinite plane to
+- [00:37:13,020 - 00:37:17,540] draw the surface of the Earth in a stereographic projection.
+- [00:37:18,060 - 00:37:19,710] So let me show you
+- [00:37:19,710 - 00:37:21,360] what a stereographic projection looks like.
+- [00:37:23,780 - 00:37:27,050] And it is somewhat useful to draw this
+- [00:37:27,050 - 00:37:30,320] because when I get to the negative curved side,
+- [00:37:30,680 - 00:37:34,500] about all I'll be able to tell you about it to
+- [00:37:34,500 - 00:37:38,320] draw it will be to draw the analog of the stereographic projection.
+- [00:37:38,840 - 00:37:39,540] All right.
+- [00:37:39,560 - 00:37:43,480] The stereographic projection is done in the following way.
+- [00:37:43,600 - 00:37:45,060] Here's the mathematical construction.
+- [00:37:45,580 - 00:37:48,040] You can do this with a sphere of any dimension,
+- [00:37:48,040 - 00:37:48,880] incidentally.
+- [00:37:48,960 - 00:37:52,420] But let's take a two-dimensional sphere.
+- [00:37:52,440 - 00:37:52,780] A two-sphere.
+- [00:37:53,120 - 00:37:54,560] So here's a two-sphere.
+- [00:37:55,760 - 00:37:57,040] If it's a two-sphere,
+- [00:37:57,040 - 00:37:58,620] I'm not going to bother
+- [00:37:58,620 - 00:38:00,200] drawing lines of longitude and latitude.
+- [00:38:01,640 - 00:38:03,640] It is a two-sphere.
+- [00:38:03,780 - 00:38:04,540] It's not a one-sphere.
+- [00:38:05,200 - 00:38:09,000] And think of it as resting
+- [00:38:09,000 - 00:38:12,800] on an infinite plane with the,
+- [00:38:12,800 - 00:38:15,100] I guess we'll call it the South Pole,
+- [00:38:15,360 - 00:38:20,180] with the South Pole tangent and just touching the plane.
+- [00:38:20,820 - 00:38:21,540] All right.
+- [00:38:21,560 - 00:38:21,760] Now,
+- [00:38:21,760 - 00:38:24,620] I want to construct a mapping
+- [00:38:24,620 - 00:38:27,480] from the sphere onto the plane,
+- [00:38:27,480 - 00:38:29,680] from the sphere to the plane,
+- [00:38:29,860 - 00:38:32,910] so that every point on the sphere is
+- [00:38:32,910 - 00:38:35,960] represented uniquely by a single point on the plane.
+- [00:38:36,400 - 00:38:38,060] And there's an easy way to do that.
+- [00:38:39,100 - 00:38:40,610] It's going to have a bit
+- [00:38:40,610 - 00:38:42,120] of problems about the North Pole.
+- [00:38:42,500 - 00:38:44,320] But apart from the North Pole,
+- [00:38:44,320 - 00:38:46,960] every point will be located on
+- [00:38:46,960 - 00:38:49,600] the plane in a unique way.
+- [00:38:49,600 - 00:38:51,520] And the way to do it is to,
+- [00:38:51,520 - 00:38:53,580] let me see if I have some colored chalk here.
+- [00:38:58,180 - 00:38:58,660] Go,
+- [00:38:58,660 - 00:38:59,640] pick a point,
+- [00:38:59,640 - 00:39:01,260] any point at all on the sphere.
+- [00:39:01,980 - 00:39:05,480] Go to the North Pole and draw a straight line.
+- [00:39:05,780 - 00:39:06,020] Now,
+- [00:39:06,020 - 00:39:07,580] this is not a straight line,
+- [00:39:07,580 - 00:39:10,760] which means it's not a geodesic in the sphere.
+- [00:39:11,500 - 00:39:14,120] It is really in three dimensions.
+- [00:39:15,300 - 00:39:17,440] Draw a straight line from the
+- [00:39:17,440 - 00:39:19,580] North Pole to the North Pole.
+- [00:39:19,600 - 00:39:20,710] Start at the point and continue
+- [00:39:20,710 - 00:39:21,820] it until it hits the plane.
+- [00:39:24,320 - 00:39:26,770] Identify this point on the sphere
+- [00:39:26,770 - 00:39:29,220] with the corresponding point on the plane.
+- [00:39:29,920 - 00:39:33,980] Every point on the sphere will be
+- [00:39:33,980 - 00:39:38,040] represented by a unique point on the plane.
+- [00:39:38,840 - 00:39:41,340] The South Pole of the sphere will
+- [00:39:41,340 - 00:39:43,840] be right at the origin of the,
+- [00:39:43,840 - 00:39:44,700] of the plane.
+- [00:39:45,100 - 00:39:47,220] It's just the North Pole of the sphere,
+- [00:39:48,080 - 00:39:49,820] which is going to have a bit of problem.
+- [00:39:50,980 - 00:39:52,980] As you go out to the North Pole,
+- [00:39:53,200 - 00:39:55,480] as you get closer and closer to the North Pole,
+- [00:39:55,780 - 00:39:58,880] the image on the plane moves out.
+- [00:40:00,780 - 00:40:04,220] Moves out to further and further and further away.
+- [00:40:05,280 - 00:40:06,400] In fact,
+- [00:40:06,400 - 00:40:09,360] if you approach the North Pole from different directions,
+- [00:40:10,120 - 00:40:14,160] the image on the plane goes way,
+- [00:40:14,160 - 00:40:14,740] way out
+- [00:40:14,740 - 00:40:23,360] to infinite distances in a way that remembers the direction.
+- [00:40:23,660 - 00:40:26,180] This point very close to the North Pole over here
+- [00:40:26,180 - 00:40:28,240] has its image way out over here.
+- [00:40:28,740 - 00:40:30,350] The point over here has
+- [00:40:30,350 - 00:40:31,960] its image way out over here.
+- [00:40:32,200 - 00:40:34,880] So the North Pole has a little bit of difficulty.
+- [00:40:36,820 - 00:40:39,100] And mathematicians have a way of dealing with it.
+- [00:40:39,160 - 00:40:42,260] They simply say infinity is a single point.
+- [00:40:42,860 - 00:40:44,720] They say infinity will just cause...
+- [00:40:44,740 - 00:40:45,840] We call it the point at infinity.
+- [00:40:46,540 - 00:40:47,950] What we really mean is
+- [00:40:47,950 - 00:40:49,360] the North Pole of the sphere.
+- [00:40:50,180 - 00:40:50,740] Okay,
+- [00:40:50,740 - 00:40:52,420] now let's draw some figures.
+- [00:40:52,620 - 00:40:53,160] First of all,
+- [00:40:53,160 - 00:40:54,340] let's draw Antarctica.
+- [00:40:55,900 - 00:40:57,400] Antarctica is down here.
+- [00:40:59,720 - 00:41:01,840] And this is in the
+- [00:41:01,840 - 00:41:03,960] approximation of a perfectly circular Antarctica.
+- [00:41:05,740 - 00:41:06,680] Here's Antarctica.
+- [00:41:07,400 - 00:41:09,180] It will look like a little...
+- [00:41:09,180 - 00:41:14,320] Let's redraw it over here on the plane.
+- [00:41:14,500 - 00:41:14,720] Here's the plane.
+- [00:41:14,740 - 00:41:15,240] Here's the plane.
+- [00:41:15,880 - 00:41:17,800] Looking at the plane head on.
+- [00:41:18,280 - 00:41:19,360] Here's Antarctica.
+- [00:41:19,900 - 00:41:22,400] Antarctica simply looks like a little circle.
+- [00:41:24,820 - 00:41:25,460] Now,
+- [00:41:25,460 - 00:41:25,900] of course,
+- [00:41:25,900 - 00:41:28,640] there's the Arctic Circle up here,
+- [00:41:28,760 - 00:41:31,140] or the North Polar Ice Cap,
+- [00:41:31,420 - 00:41:33,960] which still exists a little bit.
+- [00:41:35,040 - 00:41:39,040] The North Polar Ice Cap looks entirely different.
+- [00:41:39,480 - 00:41:40,440] It's way,
+- [00:41:40,440 - 00:41:41,620] way out far.
+- [00:41:41,980 - 00:41:44,040] I didn't give myself enough room.
+- [00:41:44,040 - 00:41:44,640] It's way,
+- [00:41:44,640 - 00:41:46,120] way out far like that.
+- [00:41:47,480 - 00:41:48,800] And as you get closer
+- [00:41:48,800 - 00:41:50,120] and closer to the North Pole,
+- [00:41:50,300 - 00:41:53,120] as the North Polar Ice Cap shrinks,
+- [00:41:54,400 - 00:41:57,260] this circle will get bigger and bigger.
+- [00:42:02,520 - 00:42:04,600] But imagine that the North Polar
+- [00:42:04,600 - 00:42:06,680] Ice Cap is actually the same size,
+- [00:42:06,680 - 00:42:07,740] really,
+- [00:42:08,720 - 00:42:10,540] meaning on the real Earth,
+- [00:42:10,540 - 00:42:11,920] or on the real sphere,
+- [00:42:12,120 - 00:42:13,260] is the same size as here.
+- [00:42:13,260 - 00:42:15,820] So there's clearly a distortion of sizes.
+- [00:42:16,700 - 00:42:19,040] Let's put another continent over here,
+- [00:42:19,220 - 00:42:21,700] and a continent over here,
+- [00:42:23,120 - 00:42:26,980] which by assumption in this model world here
+- [00:42:26,980 - 00:42:28,380] has the same size.
+- [00:42:28,680 - 00:42:30,480] All continents have the same size.
+- [00:42:31,080 - 00:42:32,840] The same size as Antarctica.
+- [00:42:33,360 - 00:42:33,960] Well,
+- [00:42:33,960 - 00:42:36,860] when we draw them on the plane here,
+- [00:42:39,420 - 00:42:42,740] the Antarctica will look like the smallest one.
+- [00:42:42,740 - 00:42:44,220] As we move away,
+- [00:42:44,220 - 00:42:45,400] they'll look bigger.
+- [00:42:46,940 - 00:42:49,160] As we move to continents which
+- [00:42:49,160 - 00:42:51,380] are close to the North Pole here,
+- [00:42:51,620 - 00:42:52,900] they will look gigantic.
+- [00:42:53,620 - 00:42:55,800] So the further out we go,
+- [00:42:56,880 - 00:43:00,700] the bigger these things will look on this plane.
+- [00:43:03,100 - 00:43:03,740] Now,
+- [00:43:03,740 - 00:43:06,340] straight lines or geodesics that
+- [00:43:06,340 - 00:43:08,940] emanate from the South Pole here,
+- [00:43:09,100 - 00:43:11,020] those are just great circles.
+- [00:43:12,000 - 00:43:13,740] Those are just great circles
+- [00:43:13,740 - 00:43:15,480] and lines of constant longitude.
+- [00:43:15,920 - 00:43:18,140] They look like straight lines here,
+- [00:43:18,140 - 00:43:19,240] in this picture.
+- [00:43:19,860 - 00:43:21,260] They just look like this.
+- [00:43:24,100 - 00:43:29,600] And they're characterized by a angle of longitude.
+- [00:43:30,740 - 00:43:31,260] Now,
+- [00:43:31,260 - 00:43:33,440] the main thing I want you to notice now,
+- [00:43:33,600 - 00:43:35,900] and which is more or less obvious,
+- [00:43:36,200 - 00:43:38,220] is that if you were at the center,
+- [00:43:38,320 - 00:43:40,160] let's put us at the South Pole now,
+- [00:43:40,160 - 00:43:42,280] this time we're at the South Pole,
+- [00:43:42,460 - 00:43:44,720] and we're looking out around the world,
+- [00:43:45,680 - 00:43:48,420] we see angular sizes
+- [00:43:49,700 - 00:43:54,460] which are distorted relative to the size of the object.
+- [00:43:54,760 - 00:43:55,400] In other words,
+- [00:43:55,400 - 00:43:59,900] this object over here looks too big to us.
+- [00:44:00,020 - 00:44:01,100] When we look at it,
+- [00:44:01,100 - 00:44:03,460] it subtends too large an angle,
+- [00:44:03,520 - 00:44:05,420] compared with flat space.
+- [00:44:06,160 - 00:44:07,760] Compared with flat space,
+- [00:44:07,760 - 00:44:12,080] this object will look too big to us.
+- [00:44:14,760 - 00:44:18,400] What's actually happening is that,
+- [00:44:18,400 - 00:44:20,720] well,
+- [00:44:22,900 - 00:44:25,700] what's actually happening is that the sums of squares of,
+- [00:44:25,780 - 00:44:27,500] the sums of the angles of
+- [00:44:27,500 - 00:44:29,220] a triangle is bigger than 180 degrees
+- [00:44:29,760 - 00:44:31,520] on a curved surface like this.
+- [00:44:31,980 - 00:44:34,380] And so if we were to draw triangles here,
+- [00:44:35,500 - 00:44:37,740] the angles would be bigger than they were.
+- [00:44:37,760 - 00:44:37,920] And so we would have a very similar structure
+- [00:44:37,920 - 00:44:38,640] to what we would be in flat space.
+- [00:44:39,100 - 00:44:40,480] But from the point of
+- [00:44:40,480 - 00:44:41,860] view of an astronomer looking out,
+- [00:44:42,000 - 00:44:45,140] let's suppose that that astronomer was looking out
+- [00:44:45,140 - 00:44:46,880] at a structure out there,
+- [00:44:47,000 - 00:44:49,330] which he happened to know was
+- [00:44:49,330 - 00:44:51,660] the same size as our galaxy.
+- [00:44:51,820 - 00:44:52,640] For some reason,
+- [00:44:52,640 - 00:44:54,080] he sees a galaxy out there
+- [00:44:54,080 - 00:44:57,220] which looks very similar to our galaxy,
+- [00:44:58,320 - 00:44:59,980] has the same kind of structure,
+- [00:45:00,220 - 00:45:03,180] has good reason to believe that that galaxy
+- [00:45:03,180 - 00:45:06,100] is very similar to our own.
+- [00:45:06,100 - 00:45:07,940] When he looks at it,
+- [00:45:07,960 - 00:45:11,100] he will see an angle in the sky
+- [00:45:11,100 - 00:45:13,420] which is bigger than he would see
+- [00:45:13,420 - 00:45:16,020] if the space was flat.
+- [00:45:17,760 - 00:45:19,700] That's something to keep in mind,
+- [00:45:20,120 - 00:45:22,700] because that's basically the way we determine
+- [00:45:22,700 - 00:45:24,740] whether space is curved or not.
+- [00:45:25,660 - 00:45:27,500] By looking at angles of things
+- [00:45:27,500 - 00:45:29,340] whose size we think we know.
+- [00:45:29,580 - 00:45:30,100] Now,
+- [00:45:30,100 - 00:45:30,860] it's not galaxies.
+- [00:45:32,880 - 00:45:35,520] Galaxies are not good measuring rods,
+- [00:45:35,520 - 00:45:36,720] first of all,
+- [00:45:36,720 - 00:45:40,860] not for deep cosmic distances.
+- [00:45:41,500 - 00:45:45,620] But there are other objects that we can detect
+- [00:45:46,420 - 00:45:49,020] whose size we have reason to believe we know
+- [00:45:49,020 - 00:45:51,720] and whose angle in the sky we can detect.
+- [00:45:53,720 - 00:45:54,160] Yeah,
+- [00:45:54,160 - 00:45:55,100] and we have to know the distance,
+- [00:45:55,100 - 00:45:55,400] too.
+- [00:45:55,520 - 00:45:55,800] Yeah,
+- [00:45:55,800 - 00:45:56,800] we have to know the distance,
+- [00:45:56,800 - 00:45:57,060] too.
+- [00:45:57,240 - 00:45:57,680] Right,
+- [00:45:57,680 - 00:46:00,520] so knowing the angle in the sky
+- [00:46:00,520 - 00:46:02,520] is not sufficient to tell you anything.
+- [00:46:02,640 - 00:46:03,790] You need to know the angle
+- [00:46:03,790 - 00:46:04,940] and how far away you are.
+- [00:46:04,940 - 00:46:06,040] And another question...
+- [00:46:06,040 - 00:46:06,060] In fact,
+- [00:46:06,060 - 00:46:08,760] how far away they were when they...
+- [00:46:08,760 - 00:46:09,380] Yeah,
+- [00:46:09,380 - 00:46:11,400] that's exactly...
+- [00:46:13,440 - 00:46:15,320] Turns out that cancels out.
+- [00:46:17,240 - 00:46:18,280] Another question.
+- [00:46:18,460 - 00:46:22,780] Do circles on the surface of the sphere
+- [00:46:25,060 - 00:46:26,740] project as circles?
+- [00:46:27,060 - 00:46:27,340] Yeah,
+- [00:46:27,340 - 00:46:27,700] they do.
+- [00:46:28,200 - 00:46:29,280] Circles are not...
+- [00:46:29,919 - 00:46:30,200] No,
+- [00:46:30,200 - 00:46:30,480] no,
+- [00:46:30,480 - 00:46:30,660] circles.
+- [00:46:31,680 - 00:46:32,240] Circles.
+- [00:46:32,340 - 00:46:33,760] It's one of the nice things about...
+- [00:46:33,760 - 00:46:34,260] Okay.
+- [00:46:34,940 - 00:46:35,220] Yeah.
+- [00:46:35,720 - 00:46:37,020] Circles project to circles.
+- [00:46:38,280 - 00:46:40,460] That's a feature of stereographic mappings.
+- [00:46:47,380 - 00:46:47,940] Yep,
+- [00:46:47,940 - 00:46:48,460] all circles.
+- [00:46:48,600 - 00:46:51,300] It's obvious for horizontally oriented circles.
+- [00:46:52,660 - 00:46:54,700] Not so obvious for other circles.
+- [00:46:54,860 - 00:46:55,280] But it's true,
+- [00:46:55,280 - 00:46:55,900] true anyway.
+- [00:46:58,780 - 00:47:02,160] So that means a continent would have the same...
+- [00:47:02,160 - 00:47:03,420] Or would it or would
+- [00:47:03,420 - 00:47:04,680] it not have the same shapes?
+- [00:47:04,680 - 00:47:04,680] I mean,
+- [00:47:04,680 - 00:47:04,860] the only difference
+- [00:47:04,860 - 00:47:05,760] between the two is that it is a non-circle.
+- [00:47:05,840 - 00:47:06,320] Okay.
+- [00:47:06,660 - 00:47:08,660] There's two statements,
+- [00:47:08,660 - 00:47:10,100] both of which are true,
+- [00:47:10,160 - 00:47:11,020] and slightly different.
+- [00:47:11,280 - 00:47:12,340] First of all,
+- [00:47:12,340 - 00:47:15,780] it is true that circles project to circles.
+- [00:47:16,560 - 00:47:17,140] Okay,
+- [00:47:17,140 - 00:47:17,840] that's it.
+- [00:47:18,430 - 00:47:22,380] But if you're talking about arbitrary shapes,
+- [00:47:22,660 - 00:47:24,640] then there's a weaker statement,
+- [00:47:24,840 - 00:47:26,200] but still a true statement.
+- [00:47:26,260 - 00:47:29,280] The weaker statement is small things,
+- [00:47:29,660 - 00:47:32,260] and now you have to think about differentially small things,
+- [00:47:32,440 - 00:47:33,220] but small...
+- [00:47:33,220 - 00:47:37,120] small objects will have the same shape.
+- [00:47:37,120 - 00:47:42,040] Same shape means same ratio of sides and so forth.
+- [00:47:42,320 - 00:47:44,720] So this is a shape-preserving,
+- [00:47:44,720 - 00:47:46,120] at least for small shapes,
+- [00:47:46,120 - 00:47:48,480] it's a shape-preserving mapping.
+- [00:47:49,980 - 00:47:51,180] Angles are preserved.
+- [00:47:51,180 - 00:47:52,560] Angles,
+- [00:47:52,560 - 00:47:52,940] perfect.
+- [00:47:52,940 - 00:47:54,160] Angles are preserved.
+- [00:47:54,160 - 00:47:55,000] Yeah.
+- [00:47:55,000 - 00:47:58,120] There's a word for angle-preserving,
+- [00:47:59,140 - 00:47:59,740] conformal.
+- [00:47:59,740 - 00:48:01,380] This is a conformal mapping.
+- [00:48:01,380 - 00:48:03,920] Not all conformal mappings preserve circles,
+- [00:48:03,920 - 00:48:04,680] incidentally,
+- [00:48:04,680 - 00:48:06,320] but this one does.
+- [00:48:06,320 - 00:48:08,840] It's conformal.
+- [00:48:08,840 - 00:48:13,400] The Mercator projection is also conformal,
+- [00:48:13,400 - 00:48:18,300] and so continents
+- [00:48:18,300 - 00:48:19,980] have the right shape,
+- [00:48:19,980 - 00:48:21,880] as long as they're not too big,
+- [00:48:21,880 - 00:48:22,900] they have the right shape,
+- [00:48:22,900 - 00:48:24,940] but they have the
+- [00:48:24,940 - 00:48:26,140] wrong relative size.
+- [00:48:26,140 - 00:48:27,680] Same thing here.
+- [00:48:29,740 - 00:48:30,260] Okay,
+- [00:48:30,260 - 00:48:34,840] that's about everything we need to know about spheres.
+- [00:48:34,840 - 00:48:40,420] Now let's spend a little
+- [00:48:40,420 - 00:48:41,680] time with the,
+- [00:48:41,680 - 00:48:44,280] I call it the opposite of a sphere,
+- [00:48:44,280 - 00:48:45,700] it's not the opposite of a sphere.
+- [00:48:45,900 - 00:48:49,200] Another geometry which has negative curvature.
+- [00:48:49,200 - 00:48:51,940] And I'm going to tell you how to construct
+- [00:48:51,940 - 00:48:52,220] it.
+- [00:48:52,220 - 00:48:54,000] I'm not going to derive this.
+- [00:48:54,000 - 00:48:58,000] I will tell you what the metric is for a
+- [00:48:58,000 - 00:49:00,860] negatively curved analog of a sphere.
+- [00:49:00,860 - 00:49:04,780] And then I will draw you the analog,
+- [00:49:04,780 - 00:49:05,940] not of,
+- [00:49:05,940 - 00:49:07,060] we can also do
+- [00:49:07,060 - 00:49:08,220] the stereographic projection,
+- [00:49:08,220 - 00:49:11,040] but I'll show you what the stereographic projection,
+- [00:49:11,040 - 00:49:11,840] or the analog
+- [00:49:11,840 - 00:49:13,100] of the stereographic projection,
+- [00:49:13,100 - 00:49:13,920] looks like.
+- [00:49:13,920 - 00:49:16,960] And I will assign it as
+- [00:49:16,960 - 00:49:20,000] a homework task to be turned
+- [00:49:20,000 - 00:49:21,220] in next time when I'm gone,
+- [00:49:21,220 - 00:49:21,940] incidentally.
+- [00:49:21,940 - 00:49:26,180] I better tell you right now.
+- [00:49:28,000 - 00:49:28,960] Back to England.
+- [00:49:32,380 - 00:49:32,900] Next,
+- [00:49:32,900 - 00:49:33,300] no,
+- [00:49:33,300 - 00:49:33,560] just,
+- [00:49:33,560 - 00:49:33,840] yeah,
+- [00:49:33,840 - 00:49:35,100] next week.
+- [00:49:35,100 - 00:49:36,820] Next week,
+- [00:49:36,820 - 00:49:37,520] next week,
+- [00:49:37,520 - 00:49:37,980] next week,
+- [00:49:37,980 - 00:49:38,500] I'll be gone.
+- [00:49:40,180 - 00:49:41,900] But then I'm finished.
+- [00:49:41,900 - 00:49:44,860] I am not going anywhere after that.
+- [00:49:44,860 - 00:49:46,360] Not for a while,
+- [00:49:46,360 - 00:49:46,640] anyway.
+- [00:49:48,220 - 00:49:50,500] This was just very,
+- [00:49:50,500 - 00:49:52,100] very bad timing.
+- [00:49:52,100 - 00:49:54,280] I wasn't watching what I was doing,
+- [00:49:54,280 - 00:49:57,980] and I answered some emails to
+- [00:49:58,000 - 00:49:59,220] quickly and said yes.
+- [00:49:59,220 - 00:50:00,870] And I didn't realize they were
+- [00:50:00,870 - 00:50:02,520] all within weeks of each other.
+- [00:50:02,520 - 00:50:02,880] Italy,
+- [00:50:02,880 - 00:50:03,780] Russia,
+- [00:50:05,900 - 00:50:06,340] England,
+- [00:50:06,340 - 00:50:09,220] and back and forth like a nutcase.
+- [00:50:09,220 - 00:50:09,920] My doctor said,
+- [00:50:09,920 - 00:50:10,360] you're crazy,
+- [00:50:10,360 - 00:50:11,120] you're going to kill yourself.
+- [00:50:14,060 - 00:50:14,940] If I'm dead,
+- [00:50:14,940 - 00:50:15,920] hold a class anyway.
+- [00:50:23,040 - 00:50:23,480] Yes,
+- [00:50:23,480 - 00:50:23,920] all right.
+- [00:50:23,920 - 00:50:24,920] Negative curved space.
+- [00:50:26,420 - 00:50:27,020] All right.
+- [00:50:27,540 - 00:50:27,980] All right.
+- [00:50:29,100 - 00:50:31,320] First thing about negative curved space.
+- [00:50:31,320 - 00:50:33,120] Well,
+- [00:50:33,120 - 00:50:33,580] all right,
+- [00:50:33,580 - 00:50:34,280] let's not go,
+- [00:50:34,280 - 00:50:35,740] let's do the first thing last.
+- [00:50:42,240 - 00:50:42,840] Yeah,
+- [00:50:42,840 - 00:50:45,080] the metric of a negatively curved space.
+- [00:50:45,080 - 00:50:46,800] Uniform negative curvature.
+- [00:50:46,800 - 00:50:48,660] It's pretty unique.
+- [00:50:49,900 - 00:50:51,060] It's pretty unique,
+- [00:50:51,060 - 00:50:52,260] much like the sphere.
+- [00:50:52,260 - 00:50:55,120] Uniform negative curved space.
+- [00:50:55,120 - 00:50:59,850] And it's related to the metric of
+- [00:50:59,850 - 00:51:04,580] the sphere in an extremely simple way.
+- [00:51:04,580 - 00:51:05,980] In every dimension,
+- [00:51:05,980 - 00:51:07,620] whatever dimension,
+- [00:51:07,860 - 00:51:11,340] let's write the general formula for the sphere first.
+- [00:51:15,820 - 00:51:16,700] Uniform negative curvature.
+- [00:51:16,700 - 00:51:18,300] Uniform negative curvature.
+- [00:51:20,859 - 00:51:22,620] Uniform negative curvature.
+- [00:51:23,580 - 00:51:24,620] Uniform negative curvature.
+- [00:51:24,700 - 00:51:27,540] Sin alpha squared times,
+- [00:51:27,540 - 00:51:29,420] let's,
+- [00:51:29,420 - 00:51:34,640] times d omega of one less dimension,
+- [00:51:34,640 - 00:51:38,480] d minus one squared,
+- [00:51:38,480 - 00:51:44,260] that's d omega d squared.
+- [00:51:44,500 - 00:51:45,420] Is this clear what this means?
+- [00:51:45,420 - 00:51:49,140] That you take a sphere of one less dimension,
+- [00:51:49,140 - 00:51:50,300] you know,
+- [00:51:50,300 - 00:51:53,720] capital D is usually reserved for space-time dimension,
+- [00:51:54,500 - 00:51:56,800] but I don't mean the space-time dimension here.
+- [00:51:56,800 - 00:51:58,040] I mean just the space dimension.
+- [00:51:58,500 - 00:51:58,940] You don't like n?
+- [00:51:59,120 - 00:51:59,520] Hm?
+- [00:51:59,720 - 00:52:00,720] You don't like n?
+- [00:52:03,480 - 00:52:03,880] Uh,
+- [00:52:03,880 - 00:52:04,980] I don't mind n.
+- [00:52:04,980 - 00:52:05,940] You want me to write n?
+- [00:52:05,940 - 00:52:06,680] Sure,
+- [00:52:06,680 - 00:52:07,140] n.
+- [00:52:07,140 - 00:52:07,880] I don't care.
+- [00:52:08,180 - 00:52:08,380] No,
+- [00:52:08,380 - 00:52:09,360] do it your way.
+- [00:52:09,480 - 00:52:10,740] It doesn't matter.
+- [00:52:10,740 - 00:52:12,080] It doesn't matter.
+- [00:52:12,080 - 00:52:14,890] It's a correct formula no matter
+- [00:52:14,890 - 00:52:17,700] what we call the thing here.
+- [00:52:17,760 - 00:52:18,080] All right,
+- [00:52:18,080 - 00:52:19,710] so this is the way you
+- [00:52:19,710 - 00:52:21,340] go from one sphere to the next.
+- [00:52:23,839 - 00:52:28,180] The negative curved version is called the hyperbolic plane.
+- [00:52:28,960 - 00:52:30,140] What it has to do
+- [00:52:30,140 - 00:52:31,320] with hyperbola is don't worry about.
+- [00:52:31,420 - 00:52:32,560] Maybe I'll get a chance to tell
+- [00:52:32,560 - 00:52:33,700] you what it has to do with hyperbolas.
+- [00:52:35,419 - 00:52:40,949] But the hyperbolic plane is the
+- [00:52:40,949 - 00:52:46,480] analog of the sphere with negative curvature.
+- [00:52:46,900 - 00:52:48,800] And I'll tell you very simply how to get it.
+- [00:52:48,800 - 00:52:51,840] You replace the sign of alpha.
+- [00:52:52,060 - 00:52:53,320] You don't change this.
+- [00:52:53,600 - 00:52:54,980] You don't change this.
+- [00:52:56,060 - 00:52:56,620] Okay?
+- [00:52:56,740 - 00:52:59,480] But you change the sign of alpha to something else.
+- [00:52:59,980 - 00:53:02,130] What you change the sign of alpha
+- [00:53:02,130 - 00:53:04,280] to is the hyperbolic sign of alpha.
+- [00:53:23,220 - 00:53:24,920] This is not a sphere anymore.
+- [00:53:27,840 - 00:53:28,380] Furthermore,
+- [00:53:28,380 - 00:53:29,440] one other thing.
+- [00:53:30,760 - 00:53:32,540] The sign function,
+- [00:53:32,540 - 00:53:33,240] of course,
+- [00:53:33,240 - 00:53:36,380] really is a function of an angle typically.
+- [00:53:37,140 - 00:53:38,400] Do we still call that d omega?
+- [00:53:38,940 - 00:53:39,480] No.
+- [00:53:39,780 - 00:53:41,040] We will call this,
+- [00:53:41,040 - 00:53:41,960] this is d omega.
+- [00:53:42,960 - 00:53:44,360] I'll tell you why in a moment.
+- [00:53:44,660 - 00:53:48,180] But this is now not called d omega d.
+- [00:53:48,180 - 00:53:54,840] But it's called d script h d squared.
+- [00:53:55,580 - 00:53:58,080] The h stands for hyperbolic.
+- [00:53:58,700 - 00:54:02,420] And it's not as universal a notation as this is.
+- [00:54:03,980 - 00:54:06,400] But it's called the hyperbolic plane.
+- [00:54:07,740 - 00:54:08,460] Now,
+- [00:54:08,460 - 00:54:12,080] one important difference is in this formula,
+- [00:54:12,360 - 00:54:15,260] alpha goes from the north pole to the
+- [00:54:15,260 - 00:54:18,160] south pole and varies between zero and zero.
+- [00:54:18,180 - 00:54:18,420] And pi.
+- [00:54:19,760 - 00:54:21,140] In this formula,
+- [00:54:21,140 - 00:54:24,000] alpha goes from zero to infinity.
+- [00:54:26,260 - 00:54:28,080] Sines are periodic functions.
+- [00:54:28,460 - 00:54:29,740] They come back to themselves,
+- [00:54:29,740 - 00:54:30,960] or at least sine,
+- [00:54:32,020 - 00:54:34,580] sine being zero comes back to
+- [00:54:34,580 - 00:54:37,140] itself after alpha becomes equal to pi.
+- [00:54:37,700 - 00:54:39,000] So you shrink,
+- [00:54:39,000 - 00:54:40,560] you start from zero size and
+- [00:54:40,560 - 00:54:42,120] you go back to zero size.
+- [00:54:42,540 - 00:54:46,020] The hyperbolic sign is not a periodic function.
+- [00:54:48,180 - 00:54:51,300] And alpha just goes from zero to infinity.
+- [00:54:53,980 - 00:54:56,160] It goes from zero to infinity,
+- [00:54:56,160 - 00:54:56,920] number one.
+- [00:54:59,740 - 00:55:02,250] I'm going to write down what the meaning
+- [00:55:02,250 - 00:55:04,760] of hyperbolic sine is for those who don't know.
+- [00:55:04,920 - 00:55:06,220] It's a very simple function.
+- [00:55:07,820 - 00:55:08,700] The sine,
+- [00:55:08,700 - 00:55:14,800] the hyperbolic sine of a variable alpha,
+- [00:55:14,920 - 00:55:16,160] which is not an angle anymore.
+- [00:55:16,340 - 00:55:17,420] It's not an angle anymore.
+- [00:55:18,180 - 00:55:19,380] It's just by definition,
+- [00:55:19,380 - 00:55:22,650] e to the alpha plus e
+- [00:55:22,650 - 00:55:25,920] to the minus alpha divided by two.
+- [00:55:26,020 - 00:55:26,280] What?
+- [00:55:26,540 - 00:55:27,020] Minus.
+- [00:55:27,700 - 00:55:28,300] Minus.
+- [00:55:28,520 - 00:55:29,240] Thank you.
+- [00:55:29,960 - 00:55:31,380] I would have made that mistake.
+- [00:55:31,960 - 00:55:32,260] Minus.
+- [00:55:33,420 - 00:55:38,870] It's the analog of the statement that sine of alpha is e
+- [00:55:38,870 - 00:55:44,320] to the i alpha minus e to the minus i alpha over 2i.
+- [00:55:45,500 - 00:55:46,280] All right.
+- [00:55:46,280 - 00:55:49,140] But we don't particularly need this formula here.
+- [00:55:50,940 - 00:55:51,760] I'm sorry.
+- [00:55:51,880 - 00:55:54,000] In the metric for the data,
+- [00:55:54,080 - 00:55:59,660] that lower dimensional differential d and d.
+- [00:55:59,780 - 00:56:00,920] Where are we?
+- [00:56:01,680 - 00:56:02,280] Sorry.
+- [00:56:02,620 - 00:56:04,840] Which blackboard are you on?
+- [00:56:04,980 - 00:56:08,520] The differential associated with sine of hyperbolic cosine.
+- [00:56:10,000 - 00:56:10,600] Here?
+- [00:56:10,880 - 00:56:11,400] Yeah.
+- [00:56:11,480 - 00:56:12,080] Over there.
+- [00:56:12,100 - 00:56:14,380] The differential that you're familiar to.
+- [00:56:14,740 - 00:56:15,340] Yeah,
+- [00:56:15,340 - 00:56:15,740] right there.
+- [00:56:15,740 - 00:56:16,520] This side?
+- [00:56:16,880 - 00:56:17,800] d minus 1.
+- [00:56:18,020 - 00:56:20,040] d omega minus omega h.
+- [00:56:20,140 - 00:56:20,420] There you are.
+- [00:56:20,480 - 00:56:21,200] This is correct.
+- [00:56:23,220 - 00:56:24,100] That's spherical,
+- [00:56:24,100 - 00:56:24,620] then.
+- [00:56:24,620 - 00:56:25,100] Is that right?
+- [00:56:25,560 - 00:56:26,000] Yeah,
+- [00:56:26,000 - 00:56:26,740] that's a regular sphere.
+- [00:56:27,840 - 00:56:28,320] All right.
+- [00:56:28,340 - 00:56:29,360] I'll tell you what's going on here.
+- [00:56:29,760 - 00:56:31,040] We'll get to what's going on.
+- [00:56:31,120 - 00:56:32,540] I'll explain what's going on in a moment.
+- [00:56:32,760 - 00:56:35,460] But let me just tell you the mathematical facts,
+- [00:56:35,460 - 00:56:37,560] and then we'll think about what they mean.
+- [00:56:39,740 - 00:56:41,760] Alpha goes from zero to infinity.
+- [00:56:42,540 - 00:56:44,860] When alpha is zero,
+- [00:56:46,500 - 00:56:48,760] the hyperbolic sine is zero.
+- [00:56:48,860 - 00:56:50,260] So is the ordinary sine.
+- [00:56:50,580 - 00:56:52,940] These two cancel for alpha equals zero.
+- [00:56:53,260 - 00:56:57,760] So the hyperbolic sine begins very much like the sine,
+- [00:56:58,360 - 00:56:59,960] but then instead of turning
+- [00:56:59,960 - 00:57:01,560] over and coming back to zero,
+- [00:57:02,740 - 00:57:04,760] it exponentially increases.
+- [00:57:05,340 - 00:57:06,880] e to the minus alpha,
+- [00:57:06,880 - 00:57:07,860] when alpha gets large,
+- [00:57:08,100 - 00:57:09,920] e to the minus alpha gets very small.
+- [00:57:10,080 - 00:57:11,320] So this is negligible.
+- [00:57:11,400 - 00:57:14,080] But e to the plus alpha grows.
+- [00:57:15,020 - 00:57:17,200] And so for large alpha,
+- [00:57:17,440 - 00:57:20,740] this is basically just e to the alpha over two,
+- [00:57:20,920 - 00:57:22,120] and it just grows.
+- [00:57:22,860 - 00:57:23,620] All right?
+- [00:57:23,660 - 00:57:25,540] So one of the things that's saying
+- [00:57:26,200 - 00:57:29,520] is that the size of this...
+- [00:57:29,520 - 00:57:31,360] Think about the sphere first.
+- [00:57:31,940 - 00:57:35,460] As the angle alpha increases for the sphere,
+- [00:57:36,220 - 00:57:39,960] the lower dimensional sphere grows and then shrinks.
+- [00:57:40,040 - 00:57:41,280] Grows a little modestly,
+- [00:57:41,280 - 00:57:41,980] stops growing,
+- [00:57:41,980 - 00:57:42,700] and then shrinks.
+- [00:57:44,040 - 00:57:46,300] In the mathematical sense.
+- [00:57:46,700 - 00:57:47,260] Here,
+- [00:57:47,260 - 00:57:49,680] as you move away from the origin,
+- [00:57:49,960 - 00:57:51,360] as you move away from us,
+- [00:57:51,480 - 00:57:51,760] again,
+- [00:57:51,760 - 00:57:53,400] we'll put us at the center,
+- [00:57:53,620 - 00:57:55,700] us at alpha equals zero.
+- [00:57:56,120 - 00:57:57,380] As we move away,
+- [00:57:57,600 - 00:58:00,760] the size of the spheres around us
+- [00:58:00,760 - 00:58:03,920] get bigger and bigger and bigger very rapidly.
+- [00:58:05,060 - 00:58:05,800] All right?
+- [00:58:06,160 - 00:58:08,420] So think of ourselves at the center.
+- [00:58:09,340 - 00:58:10,960] If we want to know the
+- [00:58:10,960 - 00:58:12,580] distance to a point radially out,
+- [00:58:12,700 - 00:58:14,880] that's mainly just the alpha squared.
+- [00:58:15,060 - 00:58:15,580] That's the alpha.
+- [00:58:15,700 - 00:58:16,660] That's this part here.
+- [00:58:17,000 - 00:58:19,040] But if we look around us at the sky,
+- [00:58:20,040 - 00:58:21,040] what do we see?
+- [00:58:21,240 - 00:58:22,700] We see a two sphere.
+- [00:58:22,940 - 00:58:24,540] The sky is a two sphere.
+- [00:58:25,340 - 00:58:27,160] It's described by two angles.
+- [00:58:27,680 - 00:58:30,060] But the size of that two sphere,
+- [00:58:30,840 - 00:58:33,500] in the spherical case,
+- [00:58:33,760 - 00:58:36,180] the size of the two spheres,
+- [00:58:36,220 - 00:58:38,020] we look deeper and deeper into space,
+- [00:58:38,380 - 00:58:40,360] gets bigger and then gets smaller.
+- [00:58:41,060 - 00:58:41,580] Here,
+- [00:58:41,580 - 00:58:44,720] the size of the two spheres grows very rapidly.
+- [00:58:45,280 - 00:58:47,100] So as we look out far away,
+- [00:58:48,700 - 00:58:51,900] the size of the sphere that we see
+- [00:58:51,900 - 00:58:55,260] is exponentially growing in this geometry here.
+- [00:58:57,260 - 00:58:59,740] This is the definition,
+- [00:59:00,040 - 00:59:03,500] or it's not the definition of the hyperbolic plane,
+- [00:59:03,720 - 00:59:05,220] but for our purposes,
+- [00:59:05,260 - 00:59:06,680] this is the definition.
+- [00:59:06,900 - 00:59:08,070] But I'm going to draw you
+- [00:59:08,070 - 00:59:09,240] a picture of what it looks like.
+- [00:59:09,380 - 00:59:09,900] Now,
+- [00:59:09,900 - 00:59:11,860] if you want a much
+- [00:59:11,860 - 00:59:13,820] better picture than I can draw,
+- [00:59:14,080 - 00:59:16,980] the very famous picture of the hyperbolic plane,
+- [00:59:17,140 - 00:59:18,220] it's the one I like best,
+- [00:59:21,500 - 00:59:22,920] it's Escher's drawing.
+- [00:59:25,780 - 00:59:27,000] And just look this up,
+- [00:59:27,060 - 00:59:29,600] just plug this into your Google,
+- [00:59:30,780 - 00:59:31,540] M.C.
+- [00:59:31,540 - 00:59:31,900] Escher,
+- [00:59:32,060 - 00:59:36,560] and the drawing is called Limit Circle Number Four.
+- [00:59:41,540 - 00:59:42,400] I.V.
+- [00:59:45,180 - 00:59:48,800] Studying that picture will tell you more about cosmology
+- [00:59:48,800 - 00:59:50,820] than any of these equations,
+- [00:59:51,080 - 00:59:55,100] or at least the cosmology of negative curved spaces.
+- [00:59:55,680 - 00:59:57,350] But I'm going to do my
+- [00:59:57,350 - 00:59:59,020] best to draw something that looks,
+- [00:59:59,040 - 00:59:59,820] roughly speaking,
+- [00:59:59,960 - 01:00:01,160] like Escher's drawing.
+- [01:00:01,360 - 01:00:03,660] This is sometimes also called Angels and Devils,
+- [01:00:03,660 - 01:00:05,480] but Angels and Devils is a different drawing.
+- [01:00:06,020 - 01:00:06,720] It's a bunch of,
+- [01:00:06,860 - 01:00:08,680] only Escher can do these things,
+- [01:00:08,680 - 01:00:10,800] but what it is,
+- [01:00:11,780 - 01:00:12,680] all right,
+- [01:00:13,350 - 01:00:15,380] you start with a disk.
+- [01:00:17,490 - 01:00:18,080] Now this,
+- [01:00:18,160 - 01:00:18,900] what this is,
+- [01:00:18,920 - 01:00:24,060] is it's actually the analog of the stereographic projection.
+- [01:00:24,560 - 01:00:27,100] The stereographic projection here
+- [01:00:28,260 - 01:00:30,060] goes out to infinity.
+- [01:00:30,660 - 01:00:32,540] The North Pole is,
+- [01:00:32,700 - 01:00:36,040] although the North Pole is really not very far away,
+- [01:00:36,180 - 01:00:38,660] on the stereographic projection,
+- [01:00:38,680 - 01:00:40,500] it looks like it's very far away,
+- [01:00:41,410 - 01:00:45,360] and every continent appears to get bigger and bigger
+- [01:00:45,360 - 01:00:47,300] as you move further and further away.
+- [01:00:48,180 - 01:00:50,100] Exactly the opposite is true
+- [01:00:50,100 - 01:00:52,020] for the negatively curved spaces.
+- [01:00:53,000 - 01:00:55,640] What looks like it's not very far away
+- [01:00:56,940 - 01:00:59,140] is infinitely far away,
+- [01:01:00,340 - 01:01:01,000] okay,
+- [01:01:01,180 - 01:01:02,320] what looks,
+- [01:01:04,200 - 01:01:06,920] and the continents,
+- [01:01:06,920 - 01:01:07,700] which are,
+- [01:01:07,700 - 01:01:09,540] or galaxies or whatever they are,
+- [01:01:09,680 - 01:01:10,920] let's call them continents,
+- [01:01:11,320 - 01:01:14,060] all of which by assumption have the same size,
+- [01:01:14,420 - 01:01:17,880] look smaller and smaller as you go away.
+- [01:01:18,480 - 01:01:19,000] So,
+- [01:01:19,000 - 01:01:20,340] Escher doesn't draw continents,
+- [01:01:20,520 - 01:01:23,920] he draws angels and devils in some devilishly clever way.
+- [01:01:24,940 - 01:01:26,560] The first devil is about,
+- [01:01:27,620 - 01:01:29,900] the one near the center is about that big.
+- [01:01:30,520 - 01:01:32,300] And then you move out a little bit,
+- [01:01:32,380 - 01:01:35,200] and the next set of devils or angels
+- [01:01:35,200 - 01:01:37,320] are about that big.
+- [01:01:40,940 - 01:01:41,660] Now,
+- [01:01:42,400 - 01:01:44,460] they really are the same size
+- [01:01:44,460 - 01:01:46,180] in the same sense
+- [01:01:46,180 - 01:01:51,680] that Antarctica is about as big as what,
+- [01:01:51,800 - 01:01:53,240] Australia maybe?
+- [01:01:53,800 - 01:01:54,820] I don't know.
+- [01:01:56,380 - 01:01:57,540] But of course,
+- [01:01:57,540 - 01:01:59,260] Australia looks much bigger
+- [01:01:59,260 - 01:02:00,980] on this type of projection.
+- [01:02:01,840 - 01:02:02,560] Okay,
+- [01:02:02,560 - 01:02:03,160] here,
+- [01:02:03,160 - 01:02:05,720] Antarctica has a certain size,
+- [01:02:06,480 - 01:02:07,600] but Australia,
+- [01:02:07,600 - 01:02:08,920] which is the same size,
+- [01:02:08,980 - 01:02:11,020] now there are lots of Australias around here,
+- [01:02:11,880 - 01:02:13,000] more Australia,
+- [01:02:13,040 - 01:02:16,260] more potential places for Australias,
+- [01:02:16,320 - 01:02:18,080] here there's a certain number
+- [01:02:18,080 - 01:02:19,840] of possible places for Australia,
+- [01:02:20,660 - 01:02:22,220] here there are more places
+- [01:02:22,220 - 01:02:23,940] because the sphere,
+- [01:02:24,100 - 01:02:26,000] the two sphere is getting bigger and bigger,
+- [01:02:27,360 - 01:02:28,460] exponentially fast.
+- [01:02:28,820 - 01:02:32,280] The next layer of continents,
+- [01:02:32,280 - 01:02:34,480] looks even smaller.
+- [01:02:39,580 - 01:02:41,820] And the next layer looks even smaller.
+- [01:02:49,120 - 01:02:50,520] I'm going to draw half of this
+- [01:02:50,520 - 01:02:51,580] and throw the other half away
+- [01:02:51,580 - 01:02:53,000] because I get tired of drawing it.
+- [01:02:53,580 - 01:02:55,580] And as you get closer and closer
+- [01:02:55,580 - 01:02:56,700] to this boundary,
+- [01:02:56,880 - 01:02:58,100] which is not really a boundary,
+- [01:02:58,420 - 01:03:00,420] they look smaller and smaller and smaller.
+- [01:03:00,640 - 01:03:01,120] Well,
+- [01:03:06,740 - 01:03:09,700] each one of these continents is the same size,
+- [01:03:11,900 - 01:03:12,420] geometrically.
+- [01:03:13,700 - 01:03:14,990] So that means if you want
+- [01:03:14,990 - 01:03:16,280] to know how far it is
+- [01:03:16,280 - 01:03:17,960] from the center to the boundary,
+- [01:03:18,220 - 01:03:19,530] all you have to do
+- [01:03:19,530 - 01:03:20,840] is count the number of continents
+- [01:03:20,840 - 01:03:21,480] that you cross.
+- [01:03:21,860 - 01:03:23,840] But the number of continents that you cross
+- [01:03:23,840 - 01:03:25,000] is infinite,
+- [01:03:25,260 - 01:03:28,060] because they get smaller and smaller and smaller.
+- [01:03:29,700 - 01:03:31,100] So the distance to the center is the same
+- [01:03:31,100 - 01:03:31,400] as the distance to the boundary,
+- [01:03:31,580 - 01:03:33,580] although in this picture
+- [01:03:34,020 - 01:03:37,080] it looks like the distance to the boundary is finite,
+- [01:03:39,260 - 01:03:40,660] whereas in this picture
+- [01:03:40,660 - 01:03:42,560] it looks like the distance to the boundary
+- [01:03:42,560 - 01:03:44,340] or the North Pole is infinite,
+- [01:03:44,560 - 01:03:46,100] it's really quite the opposite.
+- [01:03:46,620 - 01:03:49,300] Really the North Pole is not very far here.
+- [01:03:49,860 - 01:03:50,760] In fact,
+- [01:03:50,760 - 01:03:52,120] if you counted continents,
+- [01:03:52,360 - 01:03:54,080] because they get bigger and bigger,
+- [01:03:54,839 - 01:03:57,480] you would pass a finite number of continents
+- [01:03:57,480 - 01:03:59,100] before you got out to infinity.
+- [01:03:59,100 - 01:04:00,140] Here,
+- [01:04:01,040 - 01:04:03,900] it looks like the end of the world
+- [01:04:03,900 - 01:04:05,260] is not very far away,
+- [01:04:05,900 - 01:04:07,760] but if you count continents,
+- [01:04:08,820 - 01:04:10,440] there will be an infinite number,
+- [01:04:10,720 - 01:04:13,180] and so this is really an infinite geometry.
+- [01:04:13,860 - 01:04:16,020] This is really an infinite space
+- [01:04:17,740 - 01:04:19,400] with an infinite volume.
+- [01:04:20,600 - 01:04:22,480] This space has finite volume.
+- [01:04:25,640 - 01:04:26,240] And,
+- [01:04:26,879 - 01:04:28,640] but one thing which is common
+- [01:04:29,100 - 01:04:29,680] with both of them
+- [01:04:29,680 - 01:04:32,280] is that they are homogeneous.
+- [01:04:34,200 - 01:04:36,000] This doesn't look homogeneous.
+- [01:04:36,400 - 01:04:37,660] It looks like these continents
+- [01:04:37,660 - 01:04:40,100] have different size than this continent over here,
+- [01:04:40,340 - 01:04:42,260] but in fact we know from the fact
+- [01:04:42,260 - 01:04:43,560] that it really is a sphere,
+- [01:04:43,780 - 01:04:45,860] we know that every point is the same
+- [01:04:45,860 - 01:04:46,780] as every other point.
+- [01:04:47,720 - 01:04:48,980] It's not obvious,
+- [01:04:49,100 - 01:04:50,960] but it's also true here.
+- [01:04:51,140 - 01:04:53,320] Every continent is like every other continent.
+- [01:04:53,580 - 01:04:54,200] That means
+- [01:04:55,180 - 01:04:57,240] that there are symmetries of this figure
+- [01:04:57,240 - 01:05:00,920] where you can move this continent to here,
+- [01:05:01,120 - 01:05:03,200] this one will move to here.
+- [01:05:03,700 - 01:05:05,020] There are symmetries
+- [01:05:05,020 - 01:05:06,460] which are the analog
+- [01:05:06,460 - 01:05:08,740] of rotations of the sphere,
+- [01:05:08,740 - 01:05:09,380] for example.
+- [01:05:10,140 - 01:05:11,460] Rotations of the sphere will
+- [01:05:11,460 - 01:05:12,780] move the south pole to here.
+- [01:05:13,220 - 01:05:15,140] Something else will come and take the place
+- [01:05:15,140 - 01:05:16,020] of the south pole.
+- [01:05:17,480 - 01:05:19,580] There are symmetries of this figure
+- [01:05:20,220 - 01:05:22,420] which move the south pole
+- [01:05:23,200 - 01:05:24,860] out to some other place over here,
+- [01:05:25,020 - 01:05:25,940] and meantime,
+- [01:05:25,940 - 01:05:28,140] they move some other place to the south pole,
+- [01:05:28,360 - 01:05:30,200] and the whole figure shifts,
+- [01:05:30,500 - 01:05:32,180] but the geometry,
+- [01:05:32,460 - 01:05:34,820] the intrinsic geometry of it doesn't change.
+- [01:05:35,120 - 01:05:37,840] So this is again a homogeneous space
+- [01:05:37,840 - 01:05:39,820] of uniform curvature,
+- [01:05:40,480 - 01:05:42,980] but if you were to calculate the curvature,
+- [01:05:43,820 - 01:05:45,360] you would find it's negative.
+- [01:05:46,540 - 01:05:49,360] Now a question you might ask is,
+- [01:05:51,200 - 01:05:51,840] incidentally,
+- [01:05:54,140 - 01:05:55,920] I've drawn the curve
+- [01:05:55,940 - 01:05:59,800] in the case of H2,
+- [01:06:01,340 - 01:06:02,320] two dimensions.
+- [01:06:02,740 - 01:06:05,280] I cannot so easily draw H3,
+- [01:06:05,400 - 01:06:06,800] but it's made the same way.
+- [01:06:07,540 - 01:06:10,840] You take a three-dimensional ball,
+- [01:06:11,680 - 01:06:14,820] and you fill it with smaller balls,
+- [01:06:15,020 - 01:06:16,500] first this one this size,
+- [01:06:16,740 - 01:06:19,360] and you just make a three-dimensional version of this.
+- [01:06:20,400 - 01:06:22,800] It's not too hard to figure out what that means.
+- [01:06:23,060 - 01:06:24,640] You make a three-dimensional version,
+- [01:06:24,640 - 01:06:26,240] a ball at the center this big,
+- [01:06:26,740 - 01:06:28,580] balls surrounding it on all sides,
+- [01:06:28,640 - 01:06:29,240] which are smaller,
+- [01:06:29,880 - 01:06:31,460] more balls surrounding it,
+- [01:06:31,520 - 01:06:32,160] which are yet smaller,
+- [01:06:32,320 - 01:06:32,920] and so forth,
+- [01:06:33,100 - 01:06:33,840] same pattern,
+- [01:06:34,580 - 01:06:36,580] and that would make H3 for you.
+- [01:06:37,060 - 01:06:38,460] This is H2.
+- [01:06:38,620 - 01:06:39,410] Now I forgot what I
+- [01:06:39,410 - 01:06:40,200] was going to say about it.
+- [01:06:40,240 - 01:06:41,560] I was going to say something else about it,
+- [01:06:41,600 - 01:06:42,640] but I don't remember what it was.
+- [01:06:42,940 - 01:06:45,560] So an observer in any one of those circles
+- [01:06:45,560 - 01:06:46,760] would see a similar pattern.
+- [01:06:46,960 - 01:06:47,700] Would see what?
+- [01:06:47,840 - 01:06:48,620] A similar pattern.
+- [01:06:48,840 - 01:06:48,960] Yeah,
+- [01:06:48,960 - 01:06:50,400] they see exactly the same thing.
+- [01:06:50,640 - 01:06:51,900] Exactly the same thing.
+- [01:06:52,860 - 01:06:54,020] And it is very,
+- [01:06:54,020 - 01:06:54,620] very instructive.
+- [01:06:54,620 - 01:06:56,520] To take Escher's drawing and just
+- [01:06:56,520 - 01:06:58,420] look at it for a while and...
+- [01:07:01,340 - 01:07:01,940] Yeah?
+- [01:07:03,300 - 01:07:08,180] As you look at the spherical case,
+- [01:07:08,300 - 01:07:10,640] things seem to be bigger than they are.
+- [01:07:10,980 - 01:07:11,180] Right.
+- [01:07:11,540 - 01:07:12,660] Here they're smaller.
+- [01:07:13,680 - 01:07:14,280] Yeah.
+- [01:07:14,420 - 01:07:17,440] This sphere is the same size as that sphere.
+- [01:07:19,380 - 01:07:19,980] Okay?
+- [01:07:20,180 - 01:07:23,320] That means if a telescope was pointed
+- [01:07:23,320 - 01:07:26,680] at the two extremities of this galaxy over here,
+- [01:07:26,820 - 01:07:30,820] I'm going from galaxies to continents to angels and devils,
+- [01:07:30,840 - 01:07:31,660] but all the same stuff,
+- [01:07:32,820 - 01:07:34,820] if you were to point your telescope
+- [01:07:34,820 - 01:07:36,840] and see what the angle subtended,
+- [01:07:37,080 - 01:07:40,140] you would tend to see a smaller angle
+- [01:07:40,140 - 01:07:41,700] than you would in flat space.
+- [01:07:42,180 - 01:07:43,240] So again,
+- [01:07:43,240 - 01:07:45,500] if you knew the size and the distance
+- [01:07:45,500 - 01:07:47,320] of some object out here,
+- [01:07:48,400 - 01:07:50,540] in the positively curved space,
+- [01:07:50,900 - 01:07:52,500] it would look too big,
+- [01:07:52,500 - 01:07:52,700] now,
+- [01:07:52,700 - 01:07:54,940] two means relative to flat space,
+- [01:07:55,600 - 01:07:57,420] and in negative curved geometry,
+- [01:07:57,680 - 01:07:58,680] it would look too small.
+- [01:07:59,340 - 01:08:00,100] All right?
+- [01:08:00,120 - 01:08:02,620] So that's basically the way that we tell
+- [01:08:02,620 - 01:08:06,500] whether space is curved or not
+- [01:08:06,500 - 01:08:07,660] by looking at those angles.
+- [01:08:07,860 - 01:08:07,980] Yeah?
+- [01:08:09,660 - 01:08:12,680] Is the relevance of the stereographic projection
+- [01:08:12,680 - 01:08:16,220] that the astronomer can construct those
+- [01:08:16,220 - 01:08:17,420] from the observations?
+- [01:08:17,740 - 01:08:18,800] Is that the...?
+- [01:08:19,500 - 01:08:19,840] Yeah.
+- [01:08:20,560 - 01:08:21,140] Yeah.
+- [01:08:21,140 - 01:08:21,580] I mean,
+- [01:08:21,580 - 01:08:23,560] the astronomer can construct it
+- [01:08:23,560 - 01:08:24,380] from the observations.
+- [01:08:25,979 - 01:08:28,180] And it turns out that you say,
+- [01:08:28,319 - 01:08:30,359] do you have to fold in the fact
+- [01:08:30,359 - 01:08:31,920] that it changes with time?
+- [01:08:32,720 - 01:08:34,340] Whether you have to fold in the fact
+- [01:08:34,340 - 01:08:35,600] that it changes with time.
+- [01:08:35,800 - 01:08:36,439] In fact,
+- [01:08:36,439 - 01:08:36,680] no,
+- [01:08:36,680 - 01:08:37,520] you really don't,
+- [01:08:37,520 - 01:08:40,620] but that's a separate issue.
+- [01:08:41,760 - 01:08:43,060] Let's forget for the moment
+- [01:08:43,060 - 01:08:44,220] the fact that it's time dependent.
+- [01:08:44,600 - 01:08:45,020] Yeah,
+- [01:08:45,020 - 01:08:46,740] the astronomer does...
+- [01:08:46,740 - 01:08:48,540] The astronomer is a surveyor
+- [01:08:48,540 - 01:08:50,620] who surveys triangles in the sky.
+- [01:08:51,399 - 01:08:53,120] And measures angles.
+- [01:08:53,260 - 01:08:54,120] I mean,
+- [01:08:54,120 - 01:08:56,620] it's not usual for surveyors
+- [01:08:56,620 - 01:08:58,479] to create stereographic projections,
+- [01:08:58,640 - 01:09:00,960] but that seems to be what...
+- [01:09:00,960 - 01:09:06,100] That's because surveyors usually survey
+- [01:09:06,100 - 01:09:08,420] small portions of the surface of the Earth.
+- [01:09:08,920 - 01:09:11,979] And so the overall curvature is not important.
+- [01:09:14,920 - 01:09:17,359] If we were in the business of surveying
+- [01:09:18,939 - 01:09:21,040] large pieces of the Earth,
+- [01:09:21,919 - 01:09:22,439] well,
+- [01:09:22,439 - 01:09:23,479] we have our choice.
+- [01:09:23,600 - 01:09:23,939] Of course,
+- [01:09:23,939 - 01:09:25,580] we could build ourselves a globe,
+- [01:09:25,640 - 01:09:26,910] but if we wanted to
+- [01:09:26,910 - 01:09:28,180] put it on a flat page,
+- [01:09:28,919 - 01:09:31,120] we would have to do some sort of projection.
+- [01:09:39,019 - 01:09:43,240] The Mercator projection is a nice one for maps,
+- [01:09:43,959 - 01:09:47,380] but for those self-centered people
+- [01:09:47,380 - 01:09:49,020] who like to think of themselves
+- [01:09:49,020 - 01:09:50,520] at the center of the universe,
+- [01:09:51,880 - 01:09:53,340] this is better.
+- [01:09:53,680 - 01:09:56,560] In other words,
+- [01:09:56,560 - 01:09:57,140] for astronomers
+- [01:09:57,140 - 01:09:59,980] who literally look out around them,
+- [01:10:00,880 - 01:10:03,580] and they do want to prejudice their drawings
+- [01:10:03,580 - 01:10:05,060] by putting themselves at the center,
+- [01:10:05,320 - 01:10:07,460] then the stereographic projection
+- [01:10:07,460 - 01:10:09,460] is more convenient than the analog
+- [01:10:09,460 - 01:10:10,940] of the Mercator projection.
+- [01:10:13,120 - 01:10:13,800] Okay,
+- [01:10:13,800 - 01:10:14,820] so there's...
+- [01:10:16,320 - 01:10:19,400] That's the mathematics of negative...
+- [01:10:19,400 - 01:10:19,500] Well,
+- [01:10:19,500 - 01:10:20,040] the...
+- [01:10:20,040 - 01:10:23,860] The intuitive mathematics of negative curvature.
+- [01:10:24,160 - 01:10:27,040] Keep in mind that although
+- [01:10:28,040 - 01:10:32,460] the projection of the sphere looks infinite,
+- [01:10:32,700 - 01:10:35,540] it's really describing the finite sphere,
+- [01:10:35,900 - 01:10:39,540] whereas the projection of the hyperbolic plane
+- [01:10:39,540 - 01:10:40,240] looks finite,
+- [01:10:40,630 - 01:10:43,520] it's really describing a space which is infinite.
+- [01:10:44,520 - 01:10:44,940] All right.
+- [01:10:45,600 - 01:10:48,160] Cosmology based on space,
+- [01:10:48,160 - 01:10:50,940] which has negative curvature,
+- [01:10:51,180 - 01:10:56,060] is usually called infinite FRW.
+- [01:10:56,160 - 01:10:59,120] Infinite negative curved FRW.
+- [01:10:59,480 - 01:11:00,360] So,
+- [01:11:00,360 - 01:11:05,960] what does infinite negative curved FRW
+- [01:11:05,960 - 01:11:09,120] look like as a mathematical metric?
+- [01:11:11,840 - 01:11:13,040] Same deal.
+- [01:11:13,560 - 01:11:16,580] d tau squared is equal to dt squared,
+- [01:11:16,580 - 01:11:18,020] minus,
+- [01:11:18,020 - 01:11:19,580] again,
+- [01:11:21,040 - 01:11:23,720] some natural radius of...
+- [01:11:23,720 - 01:11:26,180] some natural size of the thing,
+- [01:11:26,320 - 01:11:28,920] times dh3 squared.
+- [01:11:33,800 - 01:11:36,200] Let me draw one more way
+- [01:11:36,200 - 01:11:39,820] of thinking about the negative curved space.
+- [01:11:40,240 - 01:11:41,880] You can't do...
+- [01:11:41,880 - 01:11:45,440] You cannot take the whole negatively curved space
+- [01:11:45,440 - 01:11:46,560] and embed it in the negative curve space.
+- [01:11:46,560 - 01:11:47,760] You can't do it in three dimension...
+- [01:11:47,760 - 01:11:49,480] Let's take the two dimensional case.
+- [01:11:49,860 - 01:11:51,440] The two dimensional sphere
+- [01:11:51,440 - 01:11:53,500] you can nicely embed
+- [01:11:54,919 - 01:11:57,520] in three dimensions and draw it.
+- [01:11:58,300 - 01:12:00,120] You can't do that for H.
+- [01:12:00,400 - 01:12:02,540] It just doesn't fit together right.
+- [01:12:02,780 - 01:12:05,360] But small patches of it you can draw.
+- [01:12:05,620 - 01:12:07,320] A small patch of it you can draw,
+- [01:12:07,340 - 01:12:08,580] you just can't fit it all together.
+- [01:12:08,900 - 01:12:11,020] And what it looks like is a saddle shape.
+- [01:12:11,440 - 01:12:12,760] It's the saddle surface.
+- [01:12:13,180 - 01:12:15,580] The saddle surface is the...
+- [01:12:23,700 - 01:12:25,760] is the negatively curved space.
+- [01:12:25,760 - 01:12:30,420] So you could take small patches of it and
+- [01:12:30,420 - 01:12:33,580] redraw them as embedded in three-dimensional space,
+- [01:12:33,580 - 01:12:34,880] but you simply
+- [01:12:34,880 - 01:12:36,830] can't fit them together to
+- [01:12:36,830 - 01:12:38,780] form the whole hyperbolic plane nicely.
+- [01:12:38,780 - 01:12:40,860] Okay,
+- [01:12:40,860 - 01:12:42,340] that's the hyperbolic plane.
+- [01:12:42,340 - 01:12:44,260] Here's Friedman,
+- [01:12:44,260 - 01:12:44,600] Roberts,
+- [01:12:44,600 - 01:12:45,200] and Walker,
+- [01:12:45,200 - 01:12:48,080] or FRW,
+- [01:12:48,080 - 01:12:48,360] I
+- [01:12:48,360 - 01:12:49,820] promise not to use the names,
+- [01:12:49,820 - 01:12:52,060] FRW.
+- [01:12:57,280 - 01:12:59,680] But now it's not k equals plus 1,
+- [01:12:59,680 - 01:13:02,920] it is k equals minus 1,
+- [01:13:02,920 - 01:13:04,320] simply meaning
+- [01:13:04,320 - 01:13:06,320] negative curved space.
+- [01:13:09,860 - 01:13:10,780] We will
+- [01:13:10,780 - 01:13:11,900] attach that number,
+- [01:13:11,900 - 01:13:14,420] k equals plus 1 or minus 1,
+- [01:13:14,420 - 01:13:15,980] to these two cases.
+- [01:13:15,980 - 01:13:17,300] Then there's
+- [01:13:17,300 - 01:13:20,560] one more FRW geometry,
+- [01:13:20,560 - 01:13:25,180] which also there's one other kind of homogeneous space.
+- [01:13:25,180 - 01:13:26,940] We
+- [01:13:26,940 - 01:13:28,440] have two kinds of homogeneous space,
+- [01:13:28,440 - 01:13:30,540] positive curve for the sphere,
+- [01:13:30,540 - 01:13:31,600] negative
+- [01:13:31,600 - 01:13:33,780] curve for the hyperbolic plane.
+- [01:13:33,780 - 01:13:39,000] There's one more case which sort of sits just
+- [01:13:39,000 - 01:13:40,200] between them.
+- [01:13:42,200 - 01:13:43,760] The dividing line,
+- [01:13:43,760 - 01:13:46,400] the dividing line between negative curved
+- [01:13:46,400 - 01:13:49,040] and positive curved is flat space.
+- [01:13:49,700 - 01:13:52,440] Flat space can either be thought of
+- [01:13:52,440 - 01:13:55,180] as the limit of an infinitely big,
+- [01:13:55,180 - 01:13:55,540] well,
+- [01:13:55,540 - 01:13:56,100] just
+- [01:13:56,100 - 01:13:57,960] think of it as just flat space,
+- [01:13:57,960 - 01:13:59,480] let's not think of it as any limit,
+- [01:13:59,480 - 01:13:59,900] just flat
+- [01:13:59,900 - 01:14:00,340] space.
+- [01:14:00,340 - 01:14:01,820] For that,
+- [01:14:01,820 - 01:14:05,060] d tau squared is just equal to
+- [01:14:05,060 - 01:14:08,300] dt squared minus a of t squared,
+- [01:14:08,400 - 01:14:10,760] and that's the limit.
+- [01:14:10,760 - 01:14:16,160] Times dx squared plus dy squared plus dz squared.
+- [01:14:16,160 - 01:14:18,200] Good old flat space.
+- [01:14:19,380 - 01:14:21,280] Ordinary flat Euclidean space.
+- [01:14:21,280 - 01:14:22,960] This though,
+- [01:14:22,960 - 01:14:25,380] representing the tendency for,
+- [01:14:28,160 - 01:14:30,260] for things to separate,
+- [01:14:30,260 - 01:14:30,940] so to speak.
+- [01:14:30,940 - 01:14:34,240] This would be the metric of FRW.
+- [01:14:37,440 - 01:14:38,960] And what would you put here?
+- [01:14:39,560 - 01:14:40,740] k equals 0.
+- [01:14:42,320 - 01:14:42,820] Okay,
+- [01:14:42,820 - 01:14:44,020] these are the three...
+- [01:14:44,020 - 01:14:45,920] Of course,
+- [01:14:45,920 - 01:14:48,300] these are not the only possible cosmologies you
+- [01:14:48,300 - 01:14:48,880] could think about.
+- [01:14:48,880 - 01:14:51,940] These are the three homogeneous cosmologies.
+- [01:14:51,940 - 01:14:56,640] And they are sort of the classic,
+- [01:14:57,390 - 01:14:59,760] classic three cases.
+- [01:15:02,480 - 01:15:04,360] Are there any questions about the
+- [01:15:04,360 - 01:15:06,240] geometry of these things up till now?
+- [01:15:07,020 - 01:15:07,520] Yeah?
+- [01:15:07,900 - 01:15:08,400] Yeah.
+- [01:15:08,500 - 01:15:10,120] If you would project...
+- [01:15:10,740 - 01:15:11,060] Like,
+- [01:15:11,060 - 01:15:14,260] do the projection of either one,
+- [01:15:14,260 - 01:15:16,780] either the positive or negative onto a plane,
+- [01:15:16,780 - 01:15:16,980] and
+- [01:15:16,980 - 01:15:19,940] you were tracking like a signal on the continent,
+- [01:15:19,940 - 01:15:21,160] the projection of it,
+- [01:15:21,160 - 01:15:23,960] you watch the light
+- [01:15:23,960 - 01:15:25,540] go from Perth to Sydney,
+- [01:15:25,540 - 01:15:26,440] and you project it.
+- [01:15:26,440 - 01:15:28,140] On the projection,
+- [01:15:28,140 - 01:15:30,560] the velocity of the light
+- [01:15:30,560 - 01:15:33,060] would tend to be transformed as well.
+- [01:15:33,520 - 01:15:33,860] Yeah.
+- [01:15:33,860 - 01:15:34,140] Well,
+- [01:15:34,140 - 01:15:35,560] for example,
+- [01:15:35,560 - 01:15:36,060] yeah,
+- [01:15:36,060 - 01:15:37,980] I think I know what you're saying,
+- [01:15:37,980 - 01:15:39,140] and I think you're absolutely right.
+- [01:15:39,260 - 01:15:40,720] On the projection thing,
+- [01:15:40,720 - 01:15:40,720] if you put it...
+- [01:15:40,720 - 01:15:41,060] for example,
+- [01:15:41,060 - 01:15:43,910] let's first of all completely forget the
+- [01:15:43,910 - 01:15:46,760] fact that the universe expands for a minute.
+- [01:15:47,080 - 01:15:50,880] Just take it as a fixed radius.
+- [01:15:51,660 - 01:15:53,020] Then of course on the sphere,
+- [01:15:53,020 - 01:15:55,760] it takes a finite amount of time for a signal
+- [01:15:55,760 - 01:15:58,500] to go from the North Pole to the South Pole,
+- [01:15:59,140 - 01:16:02,800] which is true in general,
+- [01:16:02,800 - 01:16:04,380] but on the projection,
+- [01:16:05,080 - 01:16:06,000] on the projection,
+- [01:16:06,000 - 01:16:10,940] the North Pole looks like it's an infinite distance away.
+- [01:16:11,100 - 01:16:12,780] It's not really an infinite distance away.
+- [01:16:13,120 - 01:16:19,360] It's just an infinite distance on the image.
+- [01:16:19,760 - 01:16:22,040] So that must mean that light rays,
+- [01:16:22,040 - 01:16:23,760] when they move,
+- [01:16:23,760 - 01:16:26,020] go faster and faster the further out you are.
+- [01:16:26,920 - 01:16:27,400] Okay,
+- [01:16:27,400 - 01:16:27,940] and that's true.
+- [01:16:29,580 - 01:16:32,020] Not that they don't really go faster and faster.
+- [01:16:32,200 - 01:16:34,080] They just go faster and faster on the diagram.
+- [01:16:34,080 - 01:16:37,380] Because a given amount of ordinary distance
+- [01:16:37,380 - 01:16:40,680] corresponds to a larger distance on the projection.
+- [01:16:41,120 - 01:16:41,680] Here,
+- [01:16:41,680 - 01:16:44,280] light rays go slower and slower.
+- [01:16:44,780 - 01:16:45,340] In,
+- [01:16:45,340 - 01:16:46,340] not really,
+- [01:16:46,340 - 01:16:47,380] but in the figure.
+- [01:16:47,940 - 01:16:50,260] Because it has to take an infinite amount of
+- [01:16:50,260 - 01:16:52,580] time for them to escape to an infinite distance.
+- [01:16:53,020 - 01:16:54,500] So the only way that can
+- [01:16:54,500 - 01:16:55,980] be is if on the drawing,
+- [01:16:55,980 - 01:16:57,680] on the projection,
+- [01:16:57,680 - 01:17:00,680] it will look like light rays go slower and slower.
+- [01:17:01,880 - 01:17:03,760] I think that's what you're asking.
+- [01:17:04,080 - 01:17:04,780] Yes,
+- [01:17:04,780 - 01:17:04,900] right.
+- [01:17:05,200 - 01:17:08,540] Have you used the looking at
+- [01:17:08,540 - 01:17:11,880] objects far away to determine the flatness?
+- [01:17:12,380 - 01:17:12,660] Yes.
+- [01:17:14,419 - 01:17:14,980] Well,
+- [01:17:14,980 - 01:17:15,540] the,
+- [01:17:15,540 - 01:17:18,240] it's really angles that,
+- [01:17:18,240 - 01:17:19,020] no,
+- [01:17:19,020 - 01:17:19,480] no,
+- [01:17:19,480 - 01:17:20,480] because you can't get,
+- [01:17:20,480 - 01:17:22,520] it's not easy to find out
+- [01:17:22,520 - 01:17:24,560] how fast light is moving out there.
+- [01:17:26,060 - 01:17:26,620] Look,
+- [01:17:26,620 - 01:17:28,300] measuring distances is
+- [01:17:31,040 - 01:17:31,980] Let's come to it.
+- [01:17:32,080 - 01:17:32,300] That,
+- [01:17:32,300 - 01:17:32,960] this,
+- [01:17:32,960 - 01:17:34,060] this length of the light,
+- [01:17:34,060 - 01:17:34,060] right?
+- [01:17:34,060 - 01:17:35,280] What you said is true,
+- [01:17:35,280 - 01:17:39,210] that the speed of light as measured
+- [01:17:39,210 - 01:17:43,140] on the projections varies from place to place.
+- [01:17:43,600 - 01:17:45,240] Is it particularly useful?
+- [01:17:45,620 - 01:17:46,360] It probably is.
+- [01:17:46,460 - 01:17:49,240] I just can't think of an example right now.
+- [01:17:50,260 - 01:17:51,720] What I wanted to get to,
+- [01:17:51,720 - 01:17:55,520] but I think I would like to
+- [01:17:55,520 - 01:17:59,320] rest for about five or six minutes,
+- [01:17:59,540 - 01:18:01,580] take a little rest for five or six minutes,
+- [01:18:01,580 - 01:18:04,000] and then I want to come back to the connection.
+- [01:18:05,160 - 01:18:09,580] Now we're set up to talk about the connection between
+- [01:18:09,580 - 01:18:14,000] the Newtonian equations of cosmology that we've used over and over.
+- [01:18:14,160 - 01:18:16,220] We've called them the FRW equations,
+- [01:18:16,220 - 01:18:21,020] and the general relativity of these different metrics.
+- [01:18:21,260 - 01:18:24,380] So let's take five minutes and take a break,
+- [01:18:24,380 - 01:18:25,600] and then come back.
+- [01:18:28,260 - 01:18:29,920] I'd like to finish up tonight.
+- [01:18:31,580 - 01:18:36,140] By just discussing the connection between equations
+- [01:18:36,140 - 01:18:40,700] that we've already seen and Einstein's equations,
+- [01:18:41,060 - 01:18:43,180] which I didn't want to do earlier,
+- [01:18:43,180 - 01:18:46,190] because in order to understand
+- [01:18:46,190 - 01:18:49,200] the full impact of general relativity,
+- [01:18:49,540 - 01:18:53,670] it's important to understand these three cases and
+- [01:18:53,670 - 01:18:57,800] to combine them together to see the point.
+- [01:18:59,600 - 01:19:01,400] Before I talk about Einstein,
+- [01:19:01,580 - 01:19:01,580] I'd like to give you,
+- [01:19:01,580 - 01:19:01,960] in Einstein's equations,
+- [01:19:01,960 - 01:19:02,760] a very,
+- [01:19:02,760 - 01:19:09,020] very brief review of the Newtonian version of cosmology.
+- [01:19:09,220 - 01:19:11,860] I'll just remind you of how we thought about it.
+- [01:19:12,060 - 01:19:12,800] We said,
+- [01:19:12,800 - 01:19:13,080] again,
+- [01:19:13,080 - 01:19:15,380] put ourselves at the center,
+- [01:19:17,959 - 01:19:20,860] look at a galaxy moving away from us.
+- [01:19:20,940 - 01:19:23,560] Let's put it on the x-axis just arbitrarily.
+- [01:19:26,240 - 01:19:28,570] Look at a galaxy receding away
+- [01:19:28,570 - 01:19:30,900] from us according to the Hubble law.
+- [01:19:31,580 - 01:19:35,510] And look at the Newtonian equations describing
+- [01:19:35,510 - 01:19:39,440] the motion of that galaxy moving away.
+- [01:19:39,800 - 01:19:41,480] What we said was,
+- [01:19:41,480 - 01:19:45,810] the only mass which contributes to the
+- [01:19:45,810 - 01:19:50,140] gravitational pull on that object toward us,
+- [01:19:50,240 - 01:19:53,920] is the mass contained within a sphere.
+- [01:19:56,340 - 01:19:57,980] That's Newton's theorem.
+- [01:19:58,540 - 01:20:00,730] Newton's theorem says that,
+- [01:20:01,580 - 01:20:04,400] by any spherically symmetric mass distribution,
+- [01:20:05,440 - 01:20:08,380] the only force on an object is
+- [01:20:08,380 - 01:20:11,320] the force of the material inside the sphere
+- [01:20:12,000 - 01:20:15,280] at radius equal to the distance of the object itself.
+- [01:20:15,940 - 01:20:19,040] So we simply said,
+- [01:20:19,040 - 01:20:20,240] all we have to do then,
+- [01:20:20,860 - 01:20:23,050] is imagine all the mass in
+- [01:20:23,050 - 01:20:25,240] the sphere is concentrated at the center,
+- [01:20:25,240 - 01:20:25,640] m,
+- [01:20:27,339 - 01:20:29,020] all the mass within that sphere,
+- [01:20:30,040 - 01:20:30,980] and then,
+- [01:20:31,580 - 01:20:36,240] write Newton's equations for this object moving away.
+- [01:20:36,700 - 01:20:37,260] Obviously,
+- [01:20:37,260 - 01:20:37,740] again,
+- [01:20:37,740 - 01:20:39,340] there are three possibilities.
+- [01:20:39,920 - 01:20:43,070] The first possibility is that it's moving away
+- [01:20:43,070 - 01:20:46,220] with a velocity larger than the escape velocity.
+- [01:20:47,740 - 01:20:49,420] Then it'll just continue to go.
+- [01:20:50,400 - 01:20:52,060] Less than the escape velocity,
+- [01:20:52,060 - 01:20:53,980] in which it will turn around
+- [01:20:53,980 - 01:20:55,900] and fall back toward the center,
+- [01:20:56,659 - 01:20:59,080] and exactly at the escape velocity.
+- [01:20:59,480 - 01:21:00,100] So again,
+- [01:21:00,100 - 01:21:01,040] there are three cases.
+- [01:21:01,580 - 01:21:01,960] Now,
+- [01:21:01,960 - 01:21:07,440] there was also other divisions.
+- [01:21:08,500 - 01:21:12,440] If we simply talked about ordinary non-relativistic matter,
+- [01:21:12,680 - 01:21:13,340] in other words,
+- [01:21:13,340 - 01:21:16,800] galaxies which were flowing with the flow,
+- [01:21:17,580 - 01:21:23,080] then we wrote that the energy density,
+- [01:21:23,160 - 01:21:25,260] we wrote things in terms of the energy density,
+- [01:21:25,260 - 01:21:26,040] or the mass density,
+- [01:21:26,280 - 01:21:28,580] that the mass density rho went
+- [01:21:28,580 - 01:21:30,880] like the mass divided by a cubed,
+- [01:21:31,580 - 01:21:32,940] there were other possibilities.
+- [01:21:33,140 - 01:21:34,640] If it was radiation in here,
+- [01:21:34,640 - 01:21:37,200] then the energy density would be,
+- [01:21:37,300 - 01:21:39,300] would go as one over a to the fourth.
+- [01:21:40,360 - 01:21:42,760] And we also talked about vacuum energy.
+- [01:21:42,920 - 01:21:45,480] Vacuum energy was a component to energy
+- [01:21:45,480 - 01:21:48,040] which didn't change as the sphere changes.
+- [01:21:48,840 - 01:21:51,180] But that was the basic setup.
+- [01:21:51,440 - 01:21:54,420] Newton's equations applied to a galaxy.
+- [01:21:54,620 - 01:21:56,100] And you apply it to any galaxy,
+- [01:21:56,100 - 01:21:56,540] anywhere,
+- [01:21:56,660 - 01:22:00,040] and you get the same equation of motion for a,
+- [01:22:01,940 - 01:22:03,340] but in particular,
+- [01:22:03,340 - 01:22:05,900] the energy conservation equation,
+- [01:22:06,280 - 01:22:09,300] just ordinary energy conservation for this object,
+- [01:22:09,800 - 01:22:11,940] can be written in a very simple form.
+- [01:22:12,820 - 01:22:19,600] The kinetic energy was just proportional to a dot squared.
+- [01:22:21,060 - 01:22:24,100] This distance is proportional to a.
+- [01:22:25,620 - 01:22:27,630] The distance to any given galaxy
+- [01:22:27,630 - 01:22:29,640] is proportional to the scale factor.
+- [01:22:32,059 - 01:22:33,020] So the kinetic,
+- [01:22:33,020 - 01:22:34,180] I won't write the details,
+- [01:22:34,200 - 01:22:35,560] I'm just reminding you now,
+- [01:22:35,560 - 01:22:36,860] there was a term a dot squared,
+- [01:22:37,200 - 01:22:38,880] then there was potential energy,
+- [01:22:39,700 - 01:22:41,220] and the potential energy,
+- [01:22:42,480 - 01:22:44,800] we put on the other side of the equation,
+- [01:22:45,480 - 01:22:46,920] some potential energy,
+- [01:22:47,180 - 01:22:50,000] and I'll just remind you what the equation looked like
+- [01:22:50,000 - 01:22:51,900] by the time we manipulated it a little bit,
+- [01:22:52,400 - 01:22:54,120] we divided it by a squared,
+- [01:22:55,239 - 01:22:57,880] and eventually got on the right hand side,
+- [01:22:58,080 - 01:22:59,200] the energy density,
+- [01:23:01,180 - 01:23:01,620] rho,
+- [01:23:01,620 - 01:23:02,880] or the mass density,
+- [01:23:03,480 - 01:23:05,560] the mass density on the right hand side,
+- [01:23:07,180 - 01:23:08,440] let's put it back,
+- [01:23:08,440 - 01:23:09,260] it goes this way.
+- [01:23:11,140 - 01:23:11,900] But then,
+- [01:23:11,900 - 01:23:14,760] there was another term on the right hand side,
+- [01:23:15,060 - 01:23:16,500] which we set to zero.
+- [01:23:17,040 - 01:23:19,220] It had to do with what
+- [01:23:19,220 - 01:23:21,400] the energy of the outgoing particle was,
+- [01:23:21,580 - 01:23:22,920] what the energy was.
+- [01:23:23,240 - 01:23:24,820] The energy could be greater than zero,
+- [01:23:24,820 - 01:23:25,540] less than zero,
+- [01:23:25,540 - 01:23:26,320] or equal to zero.
+- [01:23:26,440 - 01:23:27,500] The case that we studied
+- [01:23:27,500 - 01:23:33,060] was the case where you're right at the escape velocity.
+- [01:23:33,900 - 01:23:35,820] If you're not right at the escape velocity,
+- [01:23:36,060 - 01:23:37,140] there's another term here,
+- [01:23:38,240 - 01:23:40,500] which is just the total energy,
+- [01:23:40,500 - 01:23:41,320] a constant,
+- [01:23:41,900 - 01:23:44,120] and the way that it came into the equations
+- [01:23:44,120 - 01:23:45,620] was on the right hand side,
+- [01:23:45,840 - 01:23:47,040] some number,
+- [01:23:47,040 - 01:23:49,280] which I don't remember what I called it,
+- [01:23:49,300 - 01:23:50,220] I may have just called it k,
+- [01:23:51,480 - 01:23:52,720] let's call it some number,
+- [01:23:53,440 - 01:23:54,900] divided by a squared.
+- [01:24:00,400 - 01:24:01,620] It looks a little bit funny.
+- [01:24:01,720 - 01:24:02,760] Let's put the...
+- [01:24:05,200 - 01:24:06,340] Shall I go over that,
+- [01:24:06,340 - 01:24:08,300] or does everybody remember it well enough?
+- [01:24:08,920 - 01:24:10,040] Everybody remembers it?
+- [01:24:11,220 - 01:24:11,700] Okay.
+- [01:24:12,220 - 01:24:12,700] Hmm?
+- [01:24:14,400 - 01:24:14,880] Okay.
+- [01:24:15,340 - 01:24:17,520] This was the basic equation of cosmology.
+- [01:24:17,580 - 01:24:18,780] We left this term out.
+- [01:24:20,320 - 01:24:20,800] Well,
+- [01:24:20,800 - 01:24:22,500] there's no good reason to leave that term out,
+- [01:24:23,820 - 01:24:24,780] although empirically,
+- [01:24:24,780 - 01:24:26,820] it is known to be very small.
+- [01:24:27,600 - 01:24:29,860] So as an empirical fact,
+- [01:24:30,280 - 01:24:32,340] it's a good approximation to leave it out,
+- [01:24:32,440 - 01:24:33,760] but as a conceptual thing,
+- [01:24:33,920 - 01:24:35,140] there's no reason to leave it out,
+- [01:24:36,900 - 01:24:39,300] and we should come back to it.
+- [01:24:39,540 - 01:24:41,040] But in order to come back to it,
+- [01:24:41,120 - 01:24:42,580] we really do need to think about
+- [01:24:43,260 - 01:24:44,680] Einstein's general theory of relativity,
+- [01:24:48,400 - 01:24:49,960] which we're not going to do in detail.
+- [01:24:50,160 - 01:24:51,360] We did it in some...
+- [01:24:51,360 - 01:24:53,460] We studied it in some detail last quarter.
+- [01:24:54,040 - 01:24:56,840] I'm just going to tell you the results of calculations,
+- [01:24:56,840 - 01:24:59,920] and you can fill in how you do them.
+- [01:25:00,420 - 01:25:01,140] By now,
+- [01:25:01,140 - 01:25:02,660] you should know enough to be able to do them,
+- [01:25:02,780 - 01:25:05,600] but they'd be a little bit tedious.
+- [01:25:06,700 - 01:25:07,360] Not true.
+- [01:25:09,040 - 01:25:09,520] Okay.
+- [01:25:12,380 - 01:25:21,780] We start with the FRW form for the geometry.
+- [01:25:22,780 - 01:25:25,000] Let's take the case of the sphere first.
+- [01:25:25,220 - 01:25:26,080] Let's take the case,
+- [01:25:26,080 - 01:25:26,760] the top case,
+- [01:25:26,840 - 01:25:27,620] the sphere first.
+- [01:25:27,980 - 01:25:28,460] Okay,
+- [01:25:28,460 - 01:25:30,200] we start with that type of geometry.
+- [01:25:30,560 - 01:25:33,500] The only unknown in it is A of t,
+- [01:25:33,820 - 01:25:35,360] but when I say an unknown,
+- [01:25:35,520 - 01:25:37,640] I mean a time-dependent unknown.
+- [01:25:37,860 - 01:25:38,300] In other words,
+- [01:25:38,300 - 01:25:39,900] there's an unknown function in there.
+- [01:25:40,340 - 01:25:41,880] Maybe it's known or not unknown,
+- [01:25:41,980 - 01:25:44,900] but it is the dynamical degree of freedom.
+- [01:25:45,000 - 01:25:46,020] It's the degree of freedom
+- [01:25:46,020 - 01:25:49,060] which tells us how the universe expands and so forth.
+- [01:25:49,320 - 01:25:50,970] So we take that form with
+- [01:25:50,970 - 01:25:52,620] a general function A of t,
+- [01:25:53,599 - 01:25:55,920] and then we're going to impose
+- [01:25:56,640 - 01:25:57,900] Einstein's field equations
+- [01:25:57,900 - 01:26:01,800] and determine some information about A of t.
+- [01:26:02,120 - 01:26:02,480] Now,
+- [01:26:02,480 - 01:26:03,640] we're not going to actually do it.
+- [01:26:03,680 - 01:26:04,630] I'm going to tell you
+- [01:26:04,630 - 01:26:05,580] what happens when you do it,
+- [01:26:05,580 - 01:26:05,860] though.
+- [01:26:06,540 - 01:26:08,760] So let's start with Einstein's field equations.
+- [01:26:08,980 - 01:26:10,240] I'll just remind you what they are.
+- [01:26:10,780 - 01:26:12,740] They involve the curvature tensor.
+- [01:26:13,480 - 01:26:15,100] They involve the curvature tensor,
+- [01:26:18,500 - 01:26:19,580] and in particular,
+- [01:26:19,580 - 01:26:20,860] they involve
+- [01:26:21,660 - 01:26:23,000] the Ricci tensor,
+- [01:26:23,000 - 01:26:23,200] the Ricci tensor,
+- [01:26:24,740 - 01:26:25,520] r mu nu,
+- [01:26:30,419 - 01:26:32,160] minus g mu nu.
+- [01:26:32,500 - 01:26:33,990] You're not going to need
+- [01:26:33,990 - 01:26:35,480] to know the details of this.
+- [01:26:35,600 - 01:26:38,560] If you haven't studied general relativity,
+- [01:26:39,379 - 01:26:41,000] I'll tell you the facts,
+- [01:26:41,879 - 01:26:45,880] but I'm writing this for those who have followed
+- [01:26:46,719 - 01:26:48,680] the previous quarter.
+- [01:26:49,960 - 01:26:52,020] Anybody remember what this tensor is called?
+- [01:26:53,000 - 01:26:54,720] r mu nu is the Ricci tensor.
+- [01:26:55,000 - 01:26:56,740] It's made up out of the curvature tensor.
+- [01:26:57,080 - 01:26:58,820] g mu nu is the metric,
+- [01:26:59,040 - 01:27:00,540] except the inverse metric,
+- [01:27:00,780 - 01:27:04,820] and r is the Ricci scalar,
+- [01:27:05,060 - 01:27:06,200] is the curvature scalar.
+- [01:27:06,740 - 01:27:08,640] And this is a four-dimensional now.
+- [01:27:08,720 - 01:27:11,030] This is now the
+- [01:27:11,030 - 01:27:13,340] four-dimensional space-time curvature tensors.
+- [01:27:13,520 - 01:27:14,680] Anybody remember what that's called?
+- [01:27:16,480 - 01:27:18,020] It's called the Einstein tensor,
+- [01:27:18,120 - 01:27:19,500] and it's usually written g mu nu.
+- [01:27:19,500 - 01:27:22,540] But the important thing is,
+- [01:27:22,660 - 01:27:25,060] it only involves the geometry.
+- [01:27:25,620 - 01:27:27,660] It's a thing which involves geometry,
+- [01:27:28,700 - 01:27:32,680] and it involves the curvature of the space-time geometry.
+- [01:27:32,880 - 01:27:34,040] Not the spatial geometry,
+- [01:27:34,280 - 01:27:36,120] but the full space-time geometry.
+- [01:27:36,840 - 01:27:39,500] That's the left-hand side of Einstein's equation.
+- [01:27:39,640 - 01:27:40,640] So the left-hand side,
+- [01:27:40,640 - 01:27:42,600] space-time geometry.
+- [01:27:43,280 - 01:27:47,640] Right-hand side is the sources of the gravitational field,
+- [01:27:47,860 - 01:27:49,480] and those were energy sources.
+- [01:27:49,500 - 01:27:49,960] Energy and momentum.
+- [01:27:50,340 - 01:27:53,360] The energy-momentum was summarized
+- [01:27:53,360 - 01:27:55,580] in terms of another tensor
+- [01:27:55,580 - 01:27:57,760] called the energy-momentum tensor.
+- [01:27:58,680 - 01:28:00,240] So on the right-hand side,
+- [01:28:00,560 - 01:28:02,700] we have the energy-momentum tensor,
+- [01:28:02,700 - 01:28:03,420] t mu nu.
+- [01:28:03,920 - 01:28:05,620] And I think there is,
+- [01:28:05,620 - 01:28:06,320] let's see,
+- [01:28:07,060 - 01:28:11,240] I think there's a 4 pi Newton's constant there,
+- [01:28:11,300 - 01:28:11,760] if I remember.
+- [01:28:14,860 - 01:28:16,450] So just a few words
+- [01:28:16,450 - 01:28:18,040] about what's on the right-hand side.
+- [01:28:19,500 - 01:28:19,580] Oh,
+- [01:28:19,580 - 01:28:22,540] and mu and nu go from 0,
+- [01:28:22,780 - 01:28:25,560] or go from over 4 possibilities,
+- [01:28:25,840 - 01:28:26,200] x,
+- [01:28:26,200 - 01:28:26,660] y,
+- [01:28:26,660 - 01:28:27,000] z,
+- [01:28:27,000 - 01:28:27,460] and t.
+- [01:28:27,940 - 01:28:31,140] So this is 4-dimensional space-time geometry.
+- [01:28:32,540 - 01:28:33,960] And there is an equation like
+- [01:28:33,960 - 01:28:35,380] this for each mu and nu.
+- [01:28:35,540 - 01:28:37,540] Those are the Einstein equations.
+- [01:28:37,780 - 01:28:38,660] How many are there altogether?
+- [01:28:40,700 - 01:28:42,600] Mu and nu can go from 1 to 4,
+- [01:28:42,680 - 01:28:43,920] so 4 times 4 is 16,
+- [01:28:44,240 - 01:28:46,980] but the tensor is symmetric,
+- [01:28:47,140 - 01:28:48,340] and it has some symmetries.
+- [01:28:48,340 - 01:28:49,560] How many equations?
+- [01:28:49,860 - 01:28:50,060] 10,
+- [01:28:50,060 - 01:28:51,520] I think there are 10 equations altogether.
+- [01:28:52,380 - 01:28:53,600] 10 equations altogether.
+- [01:28:54,300 - 01:28:55,080] But we only get,
+- [01:28:55,080 - 01:28:56,180] first of all,
+- [01:28:56,220 - 01:28:57,640] we only need to know about one of them.
+- [01:28:58,660 - 01:29:00,100] The right-hand side,
+- [01:29:02,980 - 01:29:03,420] the,
+- [01:29:03,420 - 01:29:05,060] these are the components
+- [01:29:05,060 - 01:29:07,060] of the energy-momentum tensor,
+- [01:29:07,120 - 01:29:08,540] which mean things like
+- [01:29:09,120 - 01:29:11,620] energy density or mass density,
+- [01:29:11,840 - 01:29:13,230] depending on whether we want to
+- [01:29:13,230 - 01:29:14,620] use z equals m c squared
+- [01:29:14,620 - 01:29:15,960] to relate energy to mass,
+- [01:29:16,620 - 01:29:18,100] and no reason why we shouldn't.
+- [01:29:18,340 - 01:29:20,220] When c is equal to 1,
+- [01:29:20,420 - 01:29:23,700] the right-hand side contains things like
+- [01:29:23,700 - 01:29:27,520] energy density and momentum density and so forth.
+- [01:29:28,160 - 01:29:30,360] We're only going to need one of these equations.
+- [01:29:31,499 - 01:29:32,979] The reason we're only going
+- [01:29:32,979 - 01:29:34,460] to need one of these equations
+- [01:29:34,460 - 01:29:36,080] is because we've already assumed
+- [01:29:36,080 - 01:29:38,520] so much about the structure of the geometry,
+- [01:29:38,740 - 01:29:39,900] there's really only one unknown.
+- [01:29:40,560 - 01:29:41,120] Now,
+- [01:29:41,120 - 01:29:41,440] of course,
+- [01:29:41,440 - 01:29:43,000] we've assumed an enormous amount.
+- [01:29:43,220 - 01:29:45,140] We've assumed that the geometry is homogeneous.
+- [01:29:46,980 - 01:29:48,320] We've assumed that the geometry is homogeneous.
+- [01:29:48,340 - 01:29:49,480] The space is a sphere.
+- [01:29:50,239 - 01:29:55,320] And so we've made a lot of restrictions
+- [01:29:55,320 - 01:29:57,080] on the nature of the geometry.
+- [01:29:57,500 - 01:30:00,400] And so we really only need one differential equation,
+- [01:30:00,660 - 01:30:02,720] one equation to tell us how A varies.
+- [01:30:03,320 - 01:30:05,000] What's the natural one to pick?
+- [01:30:05,260 - 01:30:07,320] The natural one to pick is the one with
+- [01:30:08,160 - 01:30:10,960] both mu and nu equal to time components.
+- [01:30:11,480 - 01:30:12,560] So you can do that.
+- [01:30:12,620 - 01:30:17,060] You can write down that r zero zero
+- [01:30:17,060 - 01:30:21,700] minus g zero zero r
+- [01:30:21,700 - 01:30:24,500] is equal to four pi g.
+- [01:30:24,780 - 01:30:25,920] And what's t zero zero?
+- [01:30:28,440 - 01:30:30,120] The energy density.
+- [01:30:30,580 - 01:30:32,080] It's the energy density.
+- [01:30:32,380 - 01:30:33,720] We've already called that.
+- [01:30:33,760 - 01:30:35,140] We've already named that rho.
+- [01:30:35,880 - 01:30:38,480] The right-hand side is energy density.
+- [01:30:39,040 - 01:30:41,100] The left-hand side is geometry.
+- [01:30:42,200 - 01:30:42,840] Okay.
+- [01:30:45,259 - 01:30:45,900] Next,
+- [01:30:45,900 - 01:30:47,040] we want to calculate
+- [01:30:47,060 - 01:30:48,400] we're not going to do this,
+- [01:30:48,560 - 01:30:50,920] but in principle you know how to do this.
+- [01:30:52,759 - 01:30:55,180] You calculate the energy momentum tensor
+- [01:30:55,180 - 01:30:57,620] from the metric by differentiating it
+- [01:30:57,620 - 01:30:58,480] a couple of times,
+- [01:30:58,580 - 01:31:00,160] calculating Christoffel symbols,
+- [01:31:00,420 - 01:31:02,140] doing whatever it is you're supposed to do
+- [01:31:02,140 - 01:31:05,140] to calculate the curvature tensor.
+- [01:31:06,380 - 01:31:07,360] If necessary,
+- [01:31:07,360 - 01:31:08,760] you go look up in a book
+- [01:31:08,760 - 01:31:11,880] what the curvature tensor is for geometry like that.
+- [01:31:12,220 - 01:31:13,440] And here's what you find.
+- [01:31:13,700 - 01:31:16,100] You find there are two kinds of terms.
+- [01:31:16,100 - 01:31:17,560] The first kind of term
+- [01:31:17,560 - 01:31:19,020] has to do with the fact
+- [01:31:19,020 - 01:31:21,380] just that the geometry is time dependent.
+- [01:31:21,740 - 01:31:24,780] It would be there even if space was flat.
+- [01:31:25,380 - 01:31:26,980] If space was flat,
+- [01:31:27,200 - 01:31:29,460] but the scale factor was time dependent,
+- [01:31:30,400 - 01:31:32,340] there would be a space-time curvature.
+- [01:31:32,740 - 01:31:33,700] Not a space curvature,
+- [01:31:33,700 - 01:31:34,860] but a space-time curvature.
+- [01:31:36,379 - 01:31:40,280] And if you work that out,
+- [01:31:40,340 - 01:31:41,980] spend a little bit of time with it,
+- [01:31:42,040 - 01:31:44,160] you find that these two terms
+- [01:31:44,160 - 01:31:45,560] combine together
+- [01:31:46,100 - 01:31:46,820] to give you...
+- [01:31:46,820 - 01:31:51,020] I will figure out the coefficient later.
+- [01:31:51,180 - 01:31:52,360] There's a numerical coefficient.
+- [01:31:52,740 - 01:31:54,580] I'll figure it out later by knowing the answer.
+- [01:31:55,040 - 01:31:56,380] But it's proportional,
+- [01:31:56,380 - 01:31:58,460] guess what,
+- [01:31:58,700 - 01:32:01,960] to a dot over a squared.
+- [01:32:04,720 - 01:32:09,660] So if you work out for the flat space case,
+- [01:32:09,960 - 01:32:13,540] for flat space means flat space space,
+- [01:32:13,700 - 01:32:14,740] not flat space time,
+- [01:32:15,000 - 01:32:15,840] k equals zero,
+- [01:32:16,100 - 01:32:17,000] the k equals zero case,
+- [01:32:17,320 - 01:32:18,960] you take that metric
+- [01:32:18,960 - 01:32:22,540] and plug it into the formulas for curvature,
+- [01:32:22,920 - 01:32:26,380] calculate r-naught-naught minus g-naught-naught r,
+- [01:32:26,680 - 01:32:29,700] and you will get a dot over a squared.
+- [01:32:30,820 - 01:32:32,700] So the first thing you'll find
+- [01:32:32,700 - 01:32:34,180] is for the flat space case,
+- [01:32:34,180 - 01:32:35,180] k equals zero,
+- [01:32:35,560 - 01:32:39,070] a dot over a squared
+- [01:32:39,070 - 01:32:42,580] is just four pi g rho.
+- [01:32:43,820 - 01:32:45,100] And of course,
+- [01:32:45,100 - 01:32:46,320] that's not quite right.
+- [01:32:47,420 - 01:32:51,100] If we actually did the Newtonian calculation,
+- [01:32:52,040 - 01:32:55,780] we would have gotten eight pi over three here
+- [01:32:55,780 - 01:32:57,400] times g rho.
+- [01:32:58,220 - 01:33:00,220] And so that leads me to believe
+- [01:33:00,220 - 01:33:03,740] that when you actually carry out this calculation,
+- [01:33:04,700 - 01:33:06,700] that the Einstein tensor here
+- [01:33:06,700 - 01:33:08,360] is three halves of this.
+- [01:33:12,780 - 01:33:13,920] Many years ago,
+- [01:33:13,920 - 01:33:14,660] I checked this.
+- [01:33:14,660 - 01:33:16,000] I've never checked it since.
+- [01:33:16,200 - 01:33:17,000] I know that it's true
+- [01:33:17,660 - 01:33:19,880] that there's actually a three halves
+- [01:33:19,880 - 01:33:20,680] that comes out here.
+- [01:33:21,040 - 01:33:24,980] So that when you calculate a dot over a squared,
+- [01:33:25,320 - 01:33:28,680] you get two times four is eight,
+- [01:33:28,840 - 01:33:29,760] divide by three,
+- [01:33:29,960 - 01:33:31,760] eight pi over three g rho.
+- [01:33:33,200 - 01:33:34,660] And you can check that.
+- [01:33:35,920 - 01:33:36,420] Oh,
+- [01:33:36,420 - 01:33:37,120] there's a half here.
+- [01:33:37,240 - 01:33:37,640] I'm sorry.
+- [01:33:37,780 - 01:33:38,520] There's one half.
+- [01:33:39,320 - 01:33:40,680] There's always a half here.
+- [01:33:41,600 - 01:33:43,660] And somehow these two combine,
+- [01:33:43,660 - 01:33:44,840] and you get a sine
+- [01:33:44,840 - 01:33:46,020] to give you the three halves.
+- [01:33:46,900 - 01:33:49,540] The sine somehow gives you two,
+- [01:33:49,720 - 01:33:50,600] not somehow,
+- [01:33:50,740 - 01:33:52,620] it does work out in such a way
+- [01:33:52,620 - 01:33:53,930] that you don't get one
+- [01:33:53,930 - 01:33:55,240] half a dot over a squared,
+- [01:33:55,380 - 01:33:56,380] but actually three halves.
+- [01:33:57,280 - 01:33:57,880] Okay,
+- [01:33:57,880 - 01:33:59,760] so that's the flat space case.
+- [01:34:00,500 - 01:34:01,100] Now,
+- [01:34:01,100 - 01:34:02,980] there's another term in the curvature
+- [01:34:04,919 - 01:34:06,660] which would be there
+- [01:34:06,660 - 01:34:12,260] even if the scale factor wasn't changing with time.
+- [01:34:14,599 - 01:34:17,460] But if space was curved,
+- [01:34:18,320 - 01:34:21,040] no time dependence,
+- [01:34:21,220 - 01:34:22,440] but curved space,
+- [01:34:22,860 - 01:34:24,120] then again,
+- [01:34:24,120 - 01:34:26,520] space-time has curvature
+- [01:34:26,520 - 01:34:30,060] just by virtue of the fact that space has curvature.
+- [01:34:30,660 - 01:34:33,300] So when space has curvature,
+- [01:34:33,500 - 01:34:35,280] there's an additional contribution here.
+- [01:34:35,540 - 01:34:36,660] And guess what?
+- [01:34:36,860 - 01:34:38,660] That contribution is...
+- [01:34:43,339 - 01:34:45,180] Apart from numerical factor,
+- [01:34:45,300 - 01:34:46,360] let's say 4 pi...
+- [01:34:48,160 - 01:34:49,120] 4 pi,
+- [01:34:49,120 - 01:34:50,180] what did I have there?
+- [01:34:50,260 - 01:34:52,240] g times rho.
+- [01:34:54,920 - 01:34:56,600] The other factor that's here
+- [01:34:58,039 - 01:35:00,740] is zero when k is equal to zero,
+- [01:35:01,400 - 01:35:03,160] but for the other two cases,
+- [01:35:03,799 - 01:35:07,560] it's plus k divided by a squared.
+- [01:35:09,140 - 01:35:09,700] Now,
+- [01:35:09,700 - 01:35:11,080] this is probably not true.
+- [01:35:11,620 - 01:35:13,040] It's probably three halves of this.
+- [01:35:16,820 - 01:35:18,700] It's probably three halves of this.
+- [01:35:18,960 - 01:35:20,880] Where k is either plus,
+- [01:35:20,880 - 01:35:21,600] minus,
+- [01:35:21,600 - 01:35:22,240] one,
+- [01:35:22,240 - 01:35:23,480] or zero.
+- [01:35:24,460 - 01:35:25,020] So,
+- [01:35:25,020 - 01:35:26,620] the meaning of this equation then,
+- [01:35:26,740 - 01:35:29,080] let's get rid of the three halves by multiplying.
+- [01:35:31,200 - 01:35:33,060] That becomes 8 pi over 3.
+- [01:35:38,139 - 01:35:38,700] Again,
+- [01:35:38,700 - 01:35:40,300] this is the space-time...
+- [01:35:40,960 - 01:35:43,280] or this is the Einstein tensor
+- [01:35:44,019 - 01:35:46,340] when ordinary space is flat,
+- [01:35:46,500 - 01:35:48,800] and it comes from the time dependence
+- [01:35:48,800 - 01:35:50,660] of the scale factor,
+- [01:35:52,099 - 01:35:54,520] oscillation or whatever it is of the scale factor.
+- [01:35:55,400 - 01:35:58,800] This would be there even if the scale factor
+- [01:35:58,800 - 01:35:59,940] was not time dependent,
+- [01:36:00,120 - 01:36:01,800] just from the curvature of space.
+- [01:36:02,900 - 01:36:06,060] It comes in with a positive sign for the sphere
+- [01:36:06,060 - 01:36:09,400] and a negative sign for the hyperbolic plane.
+- [01:36:09,400 - 01:36:11,080] Positive curvature,
+- [01:36:11,080 - 01:36:12,360] it comes with a positive term.
+- [01:36:12,740 - 01:36:14,720] Negative curvature with a negative term.
+- [01:36:15,140 - 01:36:18,500] This is Einstein's equations when you go and plug in
+- [01:36:18,500 - 01:36:23,860] that particular geometry into the Einstein field equations.
+- [01:36:24,220 - 01:36:25,520] And so what do you get?
+- [01:36:25,580 - 01:36:27,320] You get exactly...
+- [01:36:42,980 - 01:36:45,800] minus zero for flat space time...
+- [01:36:45,800 - 01:36:46,480] or sorry,
+- [01:36:46,480 - 01:36:47,200] excuse me,
+- [01:36:47,200 - 01:36:47,820] for flat space,
+- [01:36:48,699 - 01:36:52,760] and otherwise k over a squared period.
+- [01:36:52,960 - 01:36:53,400] That's it.
+- [01:36:53,540 - 01:36:55,800] Don't you get a factor
+- [01:36:55,800 - 01:36:58,060] like r or something like that?
+- [01:36:58,700 - 01:36:59,260] What is r?
+- [01:36:59,520 - 01:37:01,340] The radius of curvature.
+- [01:37:01,840 - 01:37:02,560] That's this.
+- [01:37:02,700 - 01:37:03,820] That's one over a squared here.
+- [01:37:03,960 - 01:37:04,140] That's it.
+- [01:37:04,600 - 01:37:05,100] That's it.
+- [01:37:05,440 - 01:37:06,000] Right.
+- [01:37:06,200 - 01:37:06,760] Okay,
+- [01:37:06,760 - 01:37:07,120] so good.
+- [01:37:07,240 - 01:37:10,300] So for simple geometries,
+- [01:37:11,379 - 01:37:13,409] curvature is usually just one
+- [01:37:13,409 - 01:37:15,440] over the radius of curvature squared.
+- [01:37:17,120 - 01:37:18,580] That's all curvature is.
+- [01:37:18,740 - 01:37:21,640] For a sphere or a uniformly curved surface.
+- [01:37:21,940 - 01:37:23,620] For a uniformly curved surface,
+- [01:37:24,240 - 01:37:25,600] curvature has units,
+- [01:37:25,600 - 01:37:26,360] incidentally,
+- [01:37:26,360 - 01:37:28,040] of inverse length squared.
+- [01:37:29,180 - 01:37:31,160] For a given shape,
+- [01:37:31,500 - 01:37:34,500] the curvature will be inverse to
+- [01:37:34,500 - 01:37:37,500] the radius of the thing squared.
+- [01:37:38,180 - 01:37:39,600] So that's what this is here.
+- [01:37:39,880 - 01:37:41,180] And it's either plus one,
+- [01:37:41,180 - 01:37:41,780] minus one,
+- [01:37:41,780 - 01:37:42,160] or zero,
+- [01:37:42,240 - 01:37:44,620] depending on which of the cases we're talking about.
+- [01:37:44,960 - 01:37:45,440] Okay,
+- [01:37:45,440 - 01:37:47,390] so don't think of k as a
+- [01:37:47,390 - 01:37:49,340] number that can take on any value.
+- [01:37:49,600 - 01:37:50,660] It's either plus one,
+- [01:37:50,660 - 01:37:51,200] minus one,
+- [01:37:51,200 - 01:37:51,540] or zero.
+- [01:37:52,080 - 01:37:53,460] You could have k take
+- [01:37:53,460 - 01:37:54,840] any value if you redefined a.
+- [01:37:54,900 - 01:37:55,240] Say it again.
+- [01:37:55,460 - 01:37:56,760] If you redefined a,
+- [01:37:56,760 - 01:38:00,460] you can get k to be any value.
+- [01:38:00,620 - 01:38:00,840] Okay,
+- [01:38:00,840 - 01:38:01,420] good.
+- [01:38:02,280 - 01:38:04,840] Under what circumstances can you redefine a?
+- [01:38:05,040 - 01:38:07,520] And to what extent have we defined a?
+- [01:38:08,460 - 01:38:08,940] No,
+- [01:38:08,940 - 01:38:09,040] no,
+- [01:38:09,040 - 01:38:10,700] you're asking the right question.
+- [01:38:12,700 - 01:38:14,160] For the flat space case,
+- [01:38:14,760 - 01:38:16,820] there is no unique definition of a.
+- [01:38:17,000 - 01:38:18,260] We can rescale a.
+- [01:38:19,820 - 01:38:22,300] There's no particular thing to compare it with.
+- [01:38:22,580 - 01:38:23,780] But in that case,
+- [01:38:23,780 - 01:38:24,380] k is zero,
+- [01:38:24,500 - 01:38:25,620] so you can't change it.
+- [01:38:25,620 - 01:38:27,600] In the other two cases,
+- [01:38:28,140 - 01:38:30,700] there's a natural scale for a.
+- [01:38:30,920 - 01:38:32,380] In the spherical case,
+- [01:38:32,480 - 01:38:33,470] we can take it to
+- [01:38:33,470 - 01:38:34,460] be the radius of the sphere.
+- [01:38:34,920 - 01:38:35,600] All right?
+- [01:38:35,620 - 01:38:36,950] If we take it to be
+- [01:38:36,950 - 01:38:38,280] the radius of the sphere itself,
+- [01:38:40,420 - 01:38:42,200] then k is plus one.
+- [01:38:43,660 - 01:38:45,900] In the negatively curved case,
+- [01:38:51,440 - 01:38:52,800] in the negatively curved,
+- [01:38:52,800 - 01:38:55,820] there's also a notion of radius of curvature
+- [01:38:55,820 - 01:38:57,840] for a negatively curved space.
+- [01:38:58,140 - 01:39:00,560] I won't describe it in detail.
+- [01:39:02,680 - 01:39:03,500] But again,
+- [01:39:03,500 - 01:39:04,380] in that case,
+- [01:39:04,440 - 01:39:05,340] it's just minus one.
+- [01:39:06,600 - 01:39:08,420] What are the other values of t?
+- [01:39:08,920 - 01:39:09,660] What is the other one?
+- [01:39:09,840 - 01:39:11,400] Are all the other values
+- [01:39:11,400 - 01:39:12,960] of the energy momentum tensor zero?
+- [01:39:14,159 - 01:39:14,719] No,
+- [01:39:14,719 - 01:39:15,800] not in general.
+- [01:39:16,360 - 01:39:17,320] Not in general.
+- [01:39:17,700 - 01:39:18,600] For example,
+- [01:39:18,600 - 01:39:19,760] the space-space components
+- [01:39:19,760 - 01:39:21,780] can be the pressure.
+- [01:39:23,200 - 01:39:23,760] Okay?
+- [01:39:23,840 - 01:39:26,100] So for the matter-dominated universe,
+- [01:39:26,380 - 01:39:27,240] the pressure is zero.
+- [01:39:28,280 - 01:39:30,960] For the radiation-dominated universe,
+- [01:39:31,280 - 01:39:33,560] the pressure is one-third of the energy density.
+- [01:39:33,680 - 01:39:35,080] We did that the last time.
+- [01:39:37,239 - 01:39:38,360] And remember,
+- [01:39:38,360 - 01:39:39,420] we had an equation,
+- [01:39:40,719 - 01:39:42,260] just mostly definition,
+- [01:39:42,560 - 01:39:45,440] that pressure is equal to w,
+- [01:39:45,600 - 01:39:46,540] definition of w,
+- [01:39:46,800 - 01:39:47,440] times,
+- [01:39:47,440 - 01:39:48,820] what do we call energy density?
+- [01:39:48,820 - 01:39:49,120] Density rho,
+- [01:39:49,120 - 01:39:49,600] I guess.
+- [01:39:50,500 - 01:39:52,880] And the three cases of interest
+- [01:39:52,880 - 01:39:54,960] were w equals zero,
+- [01:39:55,660 - 01:39:56,400] zero pressure,
+- [01:39:56,740 - 01:39:58,400] that's called matter-dominated,
+- [01:40:00,799 - 01:40:04,420] w equals one-third,
+- [01:40:05,980 - 01:40:08,220] that's called radiation-dominated,
+- [01:40:09,599 - 01:40:10,280] hmm?
+- [01:40:12,559 - 01:40:13,080] Say it again?
+- [01:40:13,280 - 01:40:13,960] Minus one for,
+- [01:40:13,960 - 01:40:14,300] uh...
+- [01:40:15,019 - 01:40:16,200] Minus one for,
+- [01:40:16,200 - 01:40:16,840] uh...
+- [01:40:16,840 - 01:40:21,040] w equals minus one for vacuum energy.
+- [01:40:24,740 - 01:40:26,260] So if you just had matter,
+- [01:40:26,340 - 01:40:29,220] all the other components of T would be zero?
+- [01:40:30,540 - 01:40:31,060] Yeah.
+- [01:40:31,780 - 01:40:32,300] Yeah.
+- [01:40:32,520 - 01:40:33,040] Yeah.
+- [01:40:33,880 - 01:40:34,400] Yeah.
+- [01:40:35,680 - 01:40:36,200] Um...
+- [01:40:39,059 - 01:40:39,580] Right.
+- [01:40:39,740 - 01:40:40,640] But the main point is,
+- [01:40:40,700 - 01:40:43,540] since there's only one arbitrary function
+- [01:40:43,540 - 01:40:44,260] in this,
+- [01:40:44,260 - 01:40:44,560] uh,
+- [01:40:44,560 - 01:40:45,580] in this setup,
+- [01:40:45,580 - 01:40:46,100] in this,
+- [01:40:46,100 - 01:40:46,960] again,
+- [01:40:46,960 - 01:40:48,200] we've assumed a lot,
+- [01:40:48,400 - 01:40:50,440] but once you make all those assumptions,
+- [01:40:50,560 - 01:40:51,600] there's one arbitrary function,
+- [01:40:51,800 - 01:40:53,280] so you really only need one equation.
+- [01:40:53,780 - 01:40:54,520] And it...
+- [01:40:55,120 - 01:40:55,640] Uh,
+- [01:40:55,640 - 01:40:56,820] you could choose,
+- [01:40:56,900 - 01:40:57,900] you could choose other ones.
+- [01:40:58,000 - 01:40:58,940] This one's the most convenient.
+- [01:41:00,340 - 01:41:02,900] Is k equal to plus one minus one
+- [01:41:02,900 - 01:41:04,780] in that last equation?
+- [01:41:05,260 - 01:41:05,720] Yes,
+- [01:41:05,720 - 01:41:08,320] k is equal to plus one for the sphere,
+- [01:41:08,500 - 01:41:11,260] minus one for the hyperbolic plane,
+- [01:41:11,959 - 01:41:12,480] and,
+- [01:41:12,480 - 01:41:12,940] uh,
+- [01:41:12,940 - 01:41:15,000] and zero for the flat space.
+- [01:41:15,580 - 01:41:16,140] Right.
+- [01:41:17,240 - 01:41:17,800] Yeah.
+- [01:41:20,960 - 01:41:21,520] Okay,
+- [01:41:21,520 - 01:41:23,220] so we see that Newton's,
+- [01:41:23,220 - 01:41:23,300] uh,
+- [01:41:23,480 - 01:41:26,420] Newton's rules don't really lead us astray.
+- [01:41:26,540 - 01:41:27,660] They give us the right answer,
+- [01:41:27,740 - 01:41:32,020] but the Einstein equations adds one new ingredient.
+- [01:41:32,540 - 01:41:33,480] It tell...
+- [01:41:33,480 - 01:41:37,360] We can think of this k in two ways.
+- [01:41:37,960 - 01:41:39,900] From the Newtonian point of view,
+- [01:41:40,000 - 01:41:41,940] it simply has to do with whether...
+- [01:41:41,940 - 01:41:45,220] we're above or below the escape velocity.
+- [01:41:46,220 - 01:41:46,800] Okay?
+- [01:41:47,340 - 01:41:49,240] From the Einstein point of view,
+- [01:41:49,340 - 01:41:50,700] it has to do with whether
+- [01:41:50,700 - 01:41:52,060] we're above or below the escape velocity,
+- [01:41:52,790 - 01:41:55,880] but also what the geometry of space is.
+- [01:41:56,960 - 01:41:57,540] Okay?
+- [01:41:59,940 - 01:42:00,520] Now...
+- [01:42:07,340 - 01:42:10,040] I think we can end there for tonight.
+- [01:42:10,860 - 01:42:12,580] I think I've reached,
+- [01:42:12,580 - 01:42:12,880] uh,
+- [01:42:12,880 - 01:42:14,340] a good point to stop.
+- [01:42:15,559 - 01:42:16,160] Um,
+- [01:42:16,160 - 01:42:18,000] what I should spend a
+- [01:42:18,000 - 01:42:19,840] little bit of time next time
+- [01:42:19,840 - 01:42:22,070] is just discussing the
+- [01:42:22,070 - 01:42:24,300] significance of the cosmological constant
+- [01:42:24,300 - 01:42:26,800] and how it affects the behavior of the solutions,
+- [01:42:27,160 - 01:42:27,920] but,
+- [01:42:27,920 - 01:42:28,440] again,
+- [01:42:28,440 - 01:42:29,700] let me just point out right now,
+- [01:42:29,840 - 01:42:33,020] at least before there was a cosmological constant,
+- [01:42:33,220 - 01:42:34,920] pre-cosmological constant,
+- [01:42:35,380 - 01:42:37,100] there was a tight relationship
+- [01:42:37,100 - 01:42:40,020] between whether you were above or below the escape velocity,
+- [01:42:40,040 - 01:42:44,000] and whether space was positively curved,
+- [01:42:44,120 - 01:42:44,880] negatively curved,
+- [01:42:44,880 - 01:42:45,660] or zero curved.
+- [01:42:46,200 - 01:42:46,960] How so?
+- [01:42:47,280 - 01:42:49,260] If space was positively curved,
+- [01:42:49,480 - 01:42:50,500] k equals plus one,
+- [01:42:50,700 - 01:42:52,780] and that meant you were below the escape velocity,
+- [01:42:53,200 - 01:42:56,280] the implications being the universe would expand
+- [01:42:56,280 - 01:42:57,260] and then recontract.
+- [01:42:57,660 - 01:42:59,460] You can see that in the equations.
+- [01:42:59,620 - 01:43:00,660] We'll study the equations a
+- [01:43:00,660 - 01:43:01,700] little bit further and see that.
+- [01:43:02,120 - 01:43:03,980] I'm a little too tired now to go through it.
+- [01:43:04,500 - 01:43:04,680] Uh,
+- [01:43:04,680 - 01:43:07,280] if k is bigger than one,
+- [01:43:07,280 - 01:43:07,660] is one,
+- [01:43:07,660 - 01:43:08,340] is plus one,
+- [01:43:08,440 - 01:43:09,020] sorry,
+- [01:43:09,020 - 01:43:10,020] if k is minus one,
+- [01:43:10,040 - 01:43:13,240] then you're above the escape velocity
+- [01:43:13,240 - 01:43:15,760] and the universe just continues to expand,
+- [01:43:16,120 - 01:43:18,820] and k equals zero is the marginal case,
+- [01:43:18,980 - 01:43:20,040] the knife edge in between,
+- [01:43:20,360 - 01:43:22,040] where it does continue to expand,
+- [01:43:22,280 - 01:43:23,800] but at an ever-decreasing rate.
+- [01:43:24,300 - 01:43:26,170] So that's the new thing that
+- [01:43:26,170 - 01:43:28,040] general relativity adds into this analysis.
+- [01:43:28,440 - 01:43:29,680] It adds many things,
+- [01:43:29,920 - 01:43:32,380] but that's the central thing that it does,
+- [01:43:32,640 - 01:43:35,120] is it connects the question of
+- [01:43:36,280 - 01:43:38,220] above or below the escape velocity
+- [01:43:38,220 - 01:43:40,020] to the question of geomagnetism.
+- [01:43:40,040 - 01:43:40,460] So it's a kind of geometry
+- [01:43:40,460 - 01:43:43,600] where the geometry is flat,
+- [01:43:45,019 - 01:43:46,340] round like a sphere,
+- [01:43:46,580 - 01:43:49,700] or saddle-shaped like the hyperbolic plane.
+- [01:43:50,100 - 01:43:52,080] So it provides a correlation,
+- [01:43:52,340 - 01:43:53,320] a new kind of correlation.
+- [01:43:55,639 - 01:43:56,200] Uh,
+- [01:43:56,200 - 01:43:59,960] and that brings us to the conclusion for tonight.
+- [01:44:00,180 - 01:44:02,060] And I'm going home and going to sleep,
+- [01:44:02,120 - 01:44:03,720] and I will not see you next week,
+- [01:44:03,800 - 01:44:04,780] unless you're in England.
+- [01:44:10,040 - 01:44:11,620] Thanks for watching!
