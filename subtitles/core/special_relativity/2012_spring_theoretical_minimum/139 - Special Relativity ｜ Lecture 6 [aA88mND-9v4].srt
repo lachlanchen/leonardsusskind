@@ -1,0 +1,11964 @@
+1
+00:00:04,899 --> 00:00:06,140
+Stanford University
+
+2
+00:00:09,760 --> 00:00:10,380
+Well,
+
+3
+00:00:10,380 --> 00:00:12,380
+we're going to talk about electrodynamics tonight.
+
+4
+00:00:12,640 --> 00:00:14,360
+We've talked about scalar theories,
+
+5
+00:00:14,360 --> 00:00:16,000
+scalar fields.
+
+6
+00:00:16,340 --> 00:00:18,940
+We've talked about how particles couple to scalar fields,
+
+7
+00:00:21,140 --> 00:00:25,100
+how scalar fields influence the motion of particles,
+
+8
+00:00:25,100 --> 00:00:28,940
+in particular how the same Lagrangian,
+
+9
+00:00:28,940 --> 00:00:29,920
+the same action,
+
+10
+00:00:30,100 --> 00:00:37,700
+which tells the field how to influence the particle,
+
+11
+00:00:37,940 --> 00:00:41,460
+also tells the particle how to influence the field.
+
+12
+00:00:43,280 --> 00:00:45,300
+We're going to do that
+
+13
+00:00:45,300 --> 00:00:47,320
+again tonight for the electromagnetic field,
+
+14
+00:00:47,440 --> 00:00:48,400
+or at least part of it.
+
+15
+00:00:48,680 --> 00:00:49,900
+But before we do,
+
+16
+00:00:49,900 --> 00:00:53,800
+I really want to nail in place
+
+17
+00:00:53,800 --> 00:00:55,080
+the idea of the electromagnetic field.
+
+18
+00:00:55,100 --> 00:00:56,580
+The notational idea is...
+
+19
+00:00:56,580 --> 00:00:56,800
+Oh boy,
+
+20
+00:00:56,800 --> 00:00:57,200
+what is that?
+
+21
+00:00:58,840 --> 00:01:00,420
+Looks like quantum mechanics to me.
+
+22
+00:01:12,140 --> 00:01:13,630
+We don't want any quantum
+
+23
+00:01:13,630 --> 00:01:15,120
+mechanics on the blackboard tonight.
+
+24
+00:01:26,280 --> 00:01:27,840
+Just once more,
+
+25
+00:01:27,840 --> 00:01:28,380
+briefly,
+
+26
+00:01:28,380 --> 00:01:32,100
+I want to go over the notations of four vectors,
+
+27
+00:01:36,120 --> 00:01:36,920
+indices,
+
+28
+00:01:36,920 --> 00:01:38,400
+how you use them,
+
+29
+00:01:38,400 --> 00:01:39,420
+how you manipulate them.
+
+30
+00:01:39,780 --> 00:01:40,520
+Now,
+
+31
+00:01:40,520 --> 00:01:45,640
+just by way of philosophizing,
+
+32
+00:01:45,880 --> 00:01:50,380
+a good notation can be extraordinarily powerful.
+
+33
+00:01:50,940 --> 00:01:53,180
+Good notations in mathematics,
+
+34
+00:01:53,180 --> 00:01:55,280
+the minus sign,
+
+35
+00:01:55,280 --> 00:01:56,880
+the zero sign,
+
+36
+00:01:56,880 --> 00:01:58,400
+the equal sign,
+
+37
+00:01:58,400 --> 00:01:59,460
+for goodness sakes,
+
+38
+00:01:59,520 --> 00:02:00,760
+extremely powerful.
+
+39
+00:02:01,720 --> 00:02:02,880
+More modern,
+
+40
+00:02:02,880 --> 00:02:04,720
+vector notation,
+
+41
+00:02:04,720 --> 00:02:05,700
+again,
+
+42
+00:02:05,700 --> 00:02:07,220
+extremely powerful.
+
+43
+00:02:10,180 --> 00:02:12,090
+What we're going to be talking about
+
+44
+00:02:12,090 --> 00:02:14,000
+tonight a little bit is tensor notation.
+
+45
+00:02:18,440 --> 00:02:21,940
+The trick that I showed you last time,
+
+46
+00:02:21,940 --> 00:02:25,580
+is the time of upper indices and lower indices.
+
+47
+00:02:25,820 --> 00:02:27,460
+That actually is due to Einstein.
+
+48
+00:02:27,780 --> 00:02:28,940
+It's completely due to Einstein.
+
+49
+00:02:29,280 --> 00:02:31,220
+Upper indices and lower indices,
+
+50
+00:02:31,420 --> 00:02:35,440
+which mean nothing more than just changing the sign
+
+51
+00:02:35,440 --> 00:02:38,560
+of the time component of a vector.
+
+52
+00:02:38,780 --> 00:02:40,220
+A vector with upper indices
+
+53
+00:02:40,220 --> 00:02:41,660
+and a vector with lower indices
+
+54
+00:02:41,660 --> 00:02:43,790
+are really no different except you
+
+55
+00:02:43,790 --> 00:02:45,920
+change the sign of the time component.
+
+56
+00:02:46,280 --> 00:02:46,920
+Of course,
+
+57
+00:02:46,920 --> 00:02:49,040
+that's a special case of something much broader.
+
+58
+00:02:49,040 --> 00:02:52,210
+It's a special case of manipulating
+
+59
+00:02:52,210 --> 00:02:55,380
+vectors together with the metric tensor,
+
+60
+00:02:55,680 --> 00:02:58,000
+but we're not doing the metric tensor yet.
+
+61
+00:02:58,180 --> 00:02:58,400
+So,
+
+62
+00:02:58,400 --> 00:02:59,880
+for our purposes now,
+
+63
+00:03:00,060 --> 00:03:01,640
+those things were just conventional,
+
+64
+00:03:03,960 --> 00:03:06,680
+conventions and notations,
+
+65
+00:03:06,900 --> 00:03:09,740
+but notations which are quite powerful,
+
+66
+00:03:09,740 --> 00:03:10,500
+as you will see.
+
+67
+00:03:11,440 --> 00:03:13,420
+Let's just go over them again quickly,
+
+68
+00:03:13,540 --> 00:03:14,640
+just to remind ourselves
+
+69
+00:03:16,360 --> 00:03:18,940
+what those notations are all about.
+
+70
+00:03:18,940 --> 00:03:19,580
+Oh,
+
+71
+00:03:19,580 --> 00:03:22,160
+the other notation which is truly brilliant,
+
+72
+00:03:22,340 --> 00:03:23,480
+again due to Einstein,
+
+73
+00:03:23,900 --> 00:03:25,220
+is the summation convention.
+
+74
+00:03:26,560 --> 00:03:29,200
+But the summation convention is something that's
+
+75
+00:03:29,200 --> 00:03:31,840
+only to be used in the right way.
+
+76
+00:03:32,580 --> 00:03:35,680
+It's to be used when you
+
+77
+00:03:35,680 --> 00:03:38,780
+have two indices which are the same,
+
+78
+00:03:38,980 --> 00:03:42,420
+one of them upstairs and one of them downstairs.
+
+79
+00:03:42,920 --> 00:03:46,460
+That's the only time you use the summation convention,
+
+80
+00:03:46,760 --> 00:03:48,920
+with an upper index and a lower index,
+
+81
+00:03:48,940 --> 00:03:49,860
+when they're the same,
+
+82
+00:03:50,040 --> 00:03:51,600
+you can set them equal to
+
+83
+00:03:51,600 --> 00:03:53,160
+each other and sum over them.
+
+84
+00:03:54,300 --> 00:03:56,480
+That's the Einstein summation convention.
+
+85
+00:03:56,680 --> 00:03:58,240
+We'll use it all the time,
+
+86
+00:03:59,060 --> 00:04:00,880
+but we'll only use it in the
+
+87
+00:04:00,880 --> 00:04:02,700
+special form in which Einstein invented it.
+
+88
+00:04:04,160 --> 00:04:06,080
+If we have summations to do,
+
+89
+00:04:06,180 --> 00:04:08,740
+and they're not of that special form,
+
+90
+00:04:08,920 --> 00:04:10,040
+I'll write summation.
+
+91
+00:04:11,420 --> 00:04:11,940
+Okay,
+
+92
+00:04:11,940 --> 00:04:12,260
+so,
+
+93
+00:04:13,660 --> 00:04:15,960
+let's begin with four vectors again.
+
+94
+00:04:16,220 --> 00:04:18,000
+Four vectors have four components,
+
+95
+00:04:18,000 --> 00:04:19,899
+three of which are space components,
+
+96
+00:04:20,220 --> 00:04:21,519
+one of which is a time component,
+
+97
+00:04:22,419 --> 00:04:25,720
+and when we're interested in the four-dimensional geometry,
+
+98
+00:04:26,020 --> 00:04:29,980
+we write the components a mu,
+
+99
+00:04:30,659 --> 00:04:33,700
+but we can also remember that they consist of
+
+100
+00:04:33,700 --> 00:04:35,040
+a time component,
+
+101
+00:04:35,740 --> 00:04:37,500
+which is usually called a naught,
+
+102
+00:04:37,640 --> 00:04:40,100
+and three space components,
+
+103
+00:04:41,000 --> 00:04:43,480
+which are usually called a m.
+
+104
+00:04:43,780 --> 00:04:45,400
+m goes from one to three,
+
+105
+00:04:45,400 --> 00:04:47,480
+mu goes from zero to three.
+
+106
+00:04:49,220 --> 00:04:50,020
+All right,
+
+107
+00:04:50,020 --> 00:04:50,180
+now,
+
+108
+00:04:51,960 --> 00:04:57,280
+I've written my vector with upstairs index,
+
+109
+00:04:57,620 --> 00:04:59,640
+I guess it's called a contravariant index.
+
+110
+00:05:00,100 --> 00:05:04,000
+The contravariant index is the sort of thing
+
+111
+00:05:04,000 --> 00:05:07,600
+that you would attach to dx mu.
+
+112
+00:05:07,920 --> 00:05:09,350
+And the fact that you
+
+113
+00:05:09,350 --> 00:05:10,780
+put it upstairs and not downstairs
+
+114
+00:05:10,780 --> 00:05:12,160
+is purely arbitrary,
+
+115
+00:05:12,540 --> 00:05:15,300
+but you have to put the index someplace
+
+116
+00:05:15,400 --> 00:05:19,500
+and Einstein chose to put the index
+
+117
+00:05:20,559 --> 00:05:23,760
+associated with a differential displacement like this
+
+118
+00:05:24,200 --> 00:05:25,360
+in the upstairs slot.
+
+119
+00:05:26,360 --> 00:05:26,500
+Okay?
+
+120
+00:05:27,380 --> 00:05:30,200
+And I guess I don't know who first called that
+
+121
+00:05:30,200 --> 00:05:31,380
+a contravariant index,
+
+122
+00:05:31,560 --> 00:05:33,900
+and I don't know why it's called a contravariant index,
+
+123
+00:05:34,120 --> 00:05:34,620
+but it is.
+
+124
+00:05:35,180 --> 00:05:38,900
+And to go from a contravariant notation
+
+125
+00:05:38,900 --> 00:05:41,360
+to a covariant notation,
+
+126
+00:05:41,460 --> 00:05:43,180
+this is pure definition,
+
+127
+00:05:44,580 --> 00:05:49,060
+a mu is the covariant counterpart of a.
+
+128
+00:05:49,400 --> 00:05:50,640
+It's the same vector.
+
+129
+00:05:50,760 --> 00:05:52,940
+It's just another notation for it
+
+130
+00:05:52,940 --> 00:05:54,200
+or another way of describing it.
+
+131
+00:05:54,460 --> 00:05:59,440
+And that is equal to eta mu nu,
+
+132
+00:06:02,159 --> 00:06:03,360
+a nu.
+
+133
+00:06:04,840 --> 00:06:06,860
+I'll remind you what eta mu nu is.
+
+134
+00:06:07,140 --> 00:06:09,760
+Eta mu nu is a collection of numbers.
+
+135
+00:06:10,100 --> 00:06:11,560
+It forms a matrix,
+
+136
+00:06:11,560 --> 00:06:14,200
+a four by four matrix,
+
+137
+00:06:14,460 --> 00:06:16,460
+because mu and nu go from one to four.
+
+138
+00:06:16,680 --> 00:06:20,080
+And eta is just the matrix,
+
+139
+00:06:20,240 --> 00:06:20,820
+its components.
+
+140
+00:06:21,120 --> 00:06:21,820
+Eta one one,
+
+141
+00:06:21,820 --> 00:06:22,740
+eta zero one,
+
+142
+00:06:22,740 --> 00:06:23,260
+whatever,
+
+143
+00:06:23,540 --> 00:06:25,860
+are just the components minus one,
+
+144
+00:06:26,000 --> 00:06:27,220
+zero zero zero,
+
+145
+00:06:27,520 --> 00:06:29,600
+zero one zero zero,
+
+146
+00:06:29,820 --> 00:06:32,460
+zero zero one zero,
+
+147
+00:06:32,780 --> 00:06:34,680
+zero zero zero one.
+
+148
+00:06:35,000 --> 00:06:36,980
+It's almost a unit matrix,
+
+149
+00:06:37,300 --> 00:06:39,900
+and in a certain sense,
+
+150
+00:06:40,659 --> 00:06:42,540
+with its relativistic geometry,
+
+151
+00:06:42,840 --> 00:06:44,960
+with the funny minus sign in front of times,
+
+152
+00:06:45,220 --> 00:06:45,820
+time,
+
+153
+00:06:45,980 --> 00:06:47,540
+it really does play the role
+
+154
+00:06:47,540 --> 00:06:51,160
+of a kind of identity matrix.
+
+155
+00:06:51,520 --> 00:06:52,700
+But it is what it is.
+
+156
+00:06:52,920 --> 00:06:54,180
+Minus one in one slot,
+
+157
+00:06:54,420 --> 00:06:55,840
+ones in all the other slots,
+
+158
+00:06:55,920 --> 00:06:56,960
+purely diagonal.
+
+159
+00:06:59,559 --> 00:07:01,860
+And what this complicated formula,
+
+160
+00:07:02,160 --> 00:07:02,360
+well,
+
+161
+00:07:02,360 --> 00:07:03,140
+it's kind of neat.
+
+162
+00:07:03,300 --> 00:07:03,860
+It's a nice,
+
+163
+00:07:03,860 --> 00:07:04,220
+neat,
+
+164
+00:07:04,220 --> 00:07:07,060
+simple setup.
+
+165
+00:07:07,140 --> 00:07:09,880
+But really all it says is that,
+
+166
+00:07:09,880 --> 00:07:14,580
+the time component of the covariant vector
+
+167
+00:07:14,580 --> 00:07:17,940
+is just minus the time component
+
+168
+00:07:17,940 --> 00:07:19,460
+of the contravariant vector,
+
+169
+00:07:19,680 --> 00:07:21,640
+that's this minus one over here,
+
+170
+00:07:21,780 --> 00:07:24,180
+and all the other components are the same.
+
+171
+00:07:24,380 --> 00:07:26,560
+All the other components are the same,
+
+172
+00:07:26,640 --> 00:07:27,520
+so we can write then,
+
+173
+00:07:27,720 --> 00:07:31,800
+a sub nought is minus a super nought,
+
+174
+00:07:31,980 --> 00:07:36,200
+a sub m is plus a super m,
+
+175
+00:07:36,320 --> 00:07:38,260
+and that's all this formula means.
+
+176
+00:07:38,260 --> 00:07:43,140
+But it's been written in a kind of neat way.
+
+177
+00:07:44,420 --> 00:07:46,240
+Whether you find it neat or not,
+
+178
+00:07:46,300 --> 00:07:46,860
+at this point,
+
+179
+00:07:46,860 --> 00:07:47,500
+is not relevant.
+
+180
+00:07:47,700 --> 00:07:49,250
+The point is that as
+
+181
+00:07:49,250 --> 00:07:50,800
+you start doing things with it,
+
+182
+00:07:50,840 --> 00:07:53,040
+you will begin to find it very neat.
+
+183
+00:07:54,960 --> 00:07:59,720
+So let's take it for granted
+
+184
+00:07:59,720 --> 00:08:01,160
+that it's a useful thing to do.
+
+185
+00:08:02,320 --> 00:08:03,000
+All right,
+
+186
+00:08:03,000 --> 00:08:03,280
+so,
+
+187
+00:08:03,280 --> 00:08:04,560
+first thing,
+
+188
+00:08:04,700 --> 00:08:07,460
+the formation of scalars from four vectors.
+
+189
+00:08:07,460 --> 00:08:08,920
+We talked about this at least twice.
+
+190
+00:08:09,080 --> 00:08:10,420
+Let me just write it down on the blackboard.
+
+191
+00:08:10,840 --> 00:08:12,860
+If you take two four vectors,
+
+192
+00:08:13,160 --> 00:08:14,680
+they could be the same four vector,
+
+193
+00:08:14,720 --> 00:08:15,920
+or two different four vectors,
+
+194
+00:08:16,620 --> 00:08:19,940
+and you take one of them to be covariant,
+
+195
+00:08:19,940 --> 00:08:22,240
+and the other to be contravariant.
+
+196
+00:08:24,020 --> 00:08:24,460
+Now,
+
+197
+00:08:24,460 --> 00:08:27,180
+this thing that I've written on the blackboard
+
+198
+00:08:29,380 --> 00:08:30,840
+automatically sums over mu.
+
+199
+00:08:31,000 --> 00:08:33,299
+I do not have to write sum over mu here.
+
+200
+00:08:33,520 --> 00:08:34,900
+By Einstein's convention,
+
+201
+00:08:34,900 --> 00:08:38,539
+this means a sub one b super one,
+
+202
+00:08:38,659 --> 00:08:39,059
+you know,
+
+203
+00:08:39,059 --> 00:08:39,720
+sorry,
+
+204
+00:08:39,720 --> 00:08:41,460
+naught one two three,
+
+205
+00:08:41,580 --> 00:08:42,840
+and so forth.
+
+206
+00:08:43,039 --> 00:08:44,620
+This is a scalar.
+
+207
+00:08:45,220 --> 00:08:46,360
+In other words,
+
+208
+00:08:46,360 --> 00:08:47,280
+this is a thing
+
+209
+00:08:47,900 --> 00:08:51,320
+which is a quantity which doesn't change
+
+210
+00:08:51,320 --> 00:08:52,500
+from frame to frame.
+
+211
+00:08:55,120 --> 00:08:56,320
+Another example,
+
+212
+00:08:56,320 --> 00:08:56,980
+incidentally,
+
+213
+00:08:56,980 --> 00:08:57,920
+I'll just give you another example,
+
+214
+00:08:58,060 --> 00:08:59,560
+the derivative sign.
+
+215
+00:08:59,860 --> 00:09:01,420
+Let's just put it over here for a minute.
+
+216
+00:09:01,600 --> 00:09:02,940
+The derivative sign,
+
+217
+00:09:02,940 --> 00:09:04,120
+d by dx mu,
+
+218
+00:09:05,620 --> 00:09:09,800
+now this is a collection of four differential symbols,
+
+219
+00:09:09,960 --> 00:09:10,640
+derivative symbols,
+
+220
+00:09:11,220 --> 00:09:12,940
+derivative with respect to x naught,
+
+221
+00:09:13,060 --> 00:09:14,600
+which means derivative with respect to time,
+
+222
+00:09:14,800 --> 00:09:17,560
+and derivatives with respect to the other coordinates.
+
+223
+00:09:19,740 --> 00:09:23,980
+It is often just written as d sub mu.
+
+224
+00:09:24,280 --> 00:09:24,740
+Okay,
+
+225
+00:09:24,740 --> 00:09:26,100
+another brilliant notation.
+
+226
+00:09:26,580 --> 00:09:27,950
+Get rid of the sub x
+
+227
+00:09:27,950 --> 00:09:29,320
+and just write d sub mu.
+
+228
+00:09:30,480 --> 00:09:31,920
+This symbol by itself,
+
+229
+00:09:31,920 --> 00:09:32,440
+of course,
+
+230
+00:09:32,460 --> 00:09:33,220
+doesn't mean anything.
+
+231
+00:09:33,340 --> 00:09:34,620
+It's got to act on something.
+
+232
+00:09:35,540 --> 00:09:37,380
+But whatever it acts on,
+
+233
+00:09:37,520 --> 00:09:39,080
+it adds another index.
+
+234
+00:09:39,820 --> 00:09:41,200
+If it acts on a scalar,
+
+235
+00:09:41,380 --> 00:09:43,900
+it creates a thing with an index mu.
+
+236
+00:09:44,920 --> 00:09:45,960
+That index,
+
+237
+00:09:45,960 --> 00:09:47,320
+or the d by dx mu,
+
+238
+00:09:47,540 --> 00:09:48,320
+or the d mu,
+
+239
+00:09:48,460 --> 00:09:50,400
+is a covariant index.
+
+240
+00:09:50,980 --> 00:09:52,000
+In other words,
+
+241
+00:09:52,000 --> 00:09:52,620
+for example,
+
+242
+00:09:52,800 --> 00:09:55,280
+if this were to act on a scalar field,
+
+243
+00:09:55,940 --> 00:10:00,780
+it would give you a collection of derivatives
+
+244
+00:10:00,780 --> 00:10:03,360
+which form a covariant vector.
+
+245
+00:10:03,420 --> 00:10:04,320
+I won't give it a name.
+
+246
+00:10:04,320 --> 00:10:07,400
+Its name is d mu phi.
+
+247
+00:10:08,220 --> 00:10:08,900
+All right,
+
+248
+00:10:08,900 --> 00:10:09,860
+so the derivative symbol,
+
+249
+00:10:10,080 --> 00:10:10,220
+yes,
+
+250
+00:10:10,220 --> 00:10:10,400
+sir?
+
+251
+00:10:10,720 --> 00:10:14,160
+So it's dx sub mu,
+
+252
+00:10:14,320 --> 00:10:16,920
+so the mu on the x is a covariant.
+
+253
+00:10:17,120 --> 00:10:18,880
+So why is the derivative a covariant?
+
+254
+00:10:19,000 --> 00:10:19,640
+Because it's down,
+
+255
+00:10:19,700 --> 00:10:21,500
+because it's underneath the fraction bar.
+
+256
+00:10:22,660 --> 00:10:23,140
+Why,
+
+257
+00:10:23,140 --> 00:10:23,700
+indeed.
+
+258
+00:10:23,860 --> 00:10:24,180
+All right,
+
+259
+00:10:24,180 --> 00:10:25,660
+so last time I explained why.
+
+260
+00:10:26,180 --> 00:10:28,740
+And I explained why if you
+
+261
+00:10:28,740 --> 00:10:31,300
+take d phi by dx mu,
+
+262
+00:10:31,300 --> 00:10:35,460
+and you multiply it by dx mu,
+
+263
+00:10:37,180 --> 00:10:38,080
+what is that?
+
+264
+00:10:38,300 --> 00:10:40,640
+That's derivative of phi with respect to time,
+
+265
+00:10:40,720 --> 00:10:41,420
+times d time,
+
+266
+00:10:41,420 --> 00:10:42,620
+and so forth and so on.
+
+267
+00:10:42,760 --> 00:10:44,540
+This is just the change in phi
+
+268
+00:10:44,540 --> 00:10:46,700
+as you go from one point to another
+
+269
+00:10:46,700 --> 00:10:48,840
+by a differential displacement dx.
+
+270
+00:10:50,300 --> 00:10:51,700
+This is nothing but,
+
+271
+00:10:51,760 --> 00:10:53,560
+if we call this point two and point one,
+
+272
+00:10:53,720 --> 00:10:57,480
+this is just phi of two minus phi of one
+
+273
+00:11:00,020 --> 00:11:01,280
+divided by a little bit of x.
+
+274
+00:11:01,280 --> 00:11:02,180
+So it's a little differential separation,
+
+275
+00:11:03,120 --> 00:11:05,900
+but it is just the difference of two scalars,
+
+276
+00:11:05,920 --> 00:11:07,380
+and therefore itself is a scalar.
+
+277
+00:11:08,620 --> 00:11:11,080
+So by a theorem that I didn't prove,
+
+278
+00:11:11,180 --> 00:11:11,960
+but I told you about,
+
+279
+00:11:12,220 --> 00:11:15,760
+if you have a contravariant vector,
+
+280
+00:11:15,980 --> 00:11:19,080
+and you multiply it by a collection of symbols
+
+281
+00:11:19,940 --> 00:11:21,500
+with a script mu,
+
+282
+00:11:22,760 --> 00:11:24,520
+if the result is a scalar,
+
+283
+00:11:25,070 --> 00:11:27,000
+the theorem says that the thing,
+
+284
+00:11:27,140 --> 00:11:28,480
+that the other piece of it here
+
+285
+00:11:29,150 --> 00:11:30,900
+is a covariant vector.
+
+286
+00:11:32,080 --> 00:11:35,360
+So there is a theorem which says that
+
+287
+00:11:35,360 --> 00:11:38,660
+whenever you hit anything with,
+
+288
+00:11:38,740 --> 00:11:40,160
+or in particular a scalar,
+
+289
+00:11:41,160 --> 00:11:43,720
+but I'll give you some more examples in a moment,
+
+290
+00:11:43,900 --> 00:11:46,200
+if you hit a scalar with d by dx mu,
+
+291
+00:11:46,340 --> 00:11:48,520
+it gives you a four vector.
+
+292
+00:11:49,580 --> 00:11:51,680
+Everything I'm saying incidentally
+
+293
+00:11:51,680 --> 00:11:54,340
+would also be true about three vectors.
+
+294
+00:11:54,840 --> 00:11:56,800
+The only thing that you have to remember
+
+295
+00:11:56,800 --> 00:11:59,200
+about three vectors is,
+
+296
+00:11:59,300 --> 00:12:01,260
+if we're thinking in a purely theoretical way,
+
+297
+00:12:01,280 --> 00:12:02,500
+if we're thinking in three-dimensional language,
+
+298
+00:12:03,339 --> 00:12:04,780
+not four-dimensional,
+
+299
+00:12:05,080 --> 00:12:07,940
+everything is the same except wherever you see
+
+300
+00:12:07,940 --> 00:12:10,720
+mus and nus put m's and n's,
+
+301
+00:12:12,319 --> 00:12:16,980
+and the eta matrix is just the unit matrix.
+
+302
+00:12:17,320 --> 00:12:19,420
+It is just the components of eta
+
+303
+00:12:19,420 --> 00:12:21,900
+which sit in the spatial components,
+
+304
+00:12:22,100 --> 00:12:23,540
+and for that reason,
+
+305
+00:12:23,990 --> 00:12:26,240
+because eta is the unit matrix,
+
+306
+00:12:26,540 --> 00:12:29,980
+there's no difference between upper and lower components,
+
+307
+00:12:31,280 --> 00:12:32,460
+so you don't have to say,
+
+308
+00:12:32,560 --> 00:12:34,480
+if you're talking about ordinary three dimensions,
+
+309
+00:12:35,160 --> 00:12:37,600
+it's unnecessary to say whether an index
+
+310
+00:12:37,600 --> 00:12:39,260
+is covariant or contravariant.
+
+311
+00:12:40,560 --> 00:12:41,560
+They're both the same.
+
+312
+00:12:43,540 --> 00:12:44,040
+Okay,
+
+313
+00:12:44,040 --> 00:12:45,720
+another example of forming
+
+314
+00:12:45,720 --> 00:12:47,620
+a scalar out of a vector,
+
+315
+00:12:47,840 --> 00:12:48,540
+well,
+
+316
+00:12:48,540 --> 00:12:50,780
+one example of forming scalars out of vectors
+
+317
+00:12:50,780 --> 00:12:54,900
+is just to take a mu b mu,
+
+318
+00:12:55,040 --> 00:12:57,060
+but another thing you can do is,
+
+319
+00:12:57,100 --> 00:12:59,760
+let's suppose we have a vector quantity,
+
+320
+00:13:01,280 --> 00:13:03,260
+which happens to depend on position,
+
+321
+00:13:03,500 --> 00:13:04,460
+and also time,
+
+322
+00:13:05,200 --> 00:13:05,680
+x mu,
+
+323
+00:13:05,680 --> 00:13:07,520
+let's not write it that way,
+
+324
+00:13:08,040 --> 00:13:10,400
+it's a four-vector field.
+
+325
+00:13:11,020 --> 00:13:12,960
+It depends on space and time,
+
+326
+00:13:13,100 --> 00:13:15,300
+and I'll just indicate that by writing x here.
+
+327
+00:13:16,920 --> 00:13:18,800
+It depends on space-time,
+
+328
+00:13:19,040 --> 00:13:21,000
+and therefore can be differentiated.
+
+329
+00:13:21,320 --> 00:13:22,460
+As it stands,
+
+330
+00:13:22,460 --> 00:13:23,780
+it's a four-vector.
+
+331
+00:13:23,940 --> 00:13:25,880
+It's a four-vector at each point of space,
+
+332
+00:13:26,520 --> 00:13:28,160
+differs from one place to another.
+
+333
+00:13:28,420 --> 00:13:30,780
+You can also differentiate it
+
+334
+00:13:30,780 --> 00:13:32,080
+with respect to x,
+
+335
+00:13:33,900 --> 00:13:35,380
+and for example,
+
+336
+00:13:36,420 --> 00:13:39,260
+you can differentiate it with respect to x
+
+337
+00:13:39,680 --> 00:13:42,060
+and sum over the index mu.
+
+338
+00:13:42,480 --> 00:13:45,060
+This means derivative with respect to time
+
+339
+00:13:45,060 --> 00:13:46,680
+of the time component of b,
+
+340
+00:13:46,900 --> 00:13:48,880
+plus derivative with respect to x
+
+341
+00:13:48,880 --> 00:13:50,580
+of the x component of b,
+
+342
+00:13:50,600 --> 00:13:51,720
+and so forth and so on.
+
+343
+00:13:51,860 --> 00:13:53,620
+This is also a scalar.
+
+344
+00:13:56,840 --> 00:13:57,540
+All right,
+
+345
+00:13:57,540 --> 00:13:58,560
+so that's another example
+
+346
+00:13:58,560 --> 00:14:00,500
+of forming scalars
+
+347
+00:14:00,780 --> 00:14:05,120
+from vectors by what we'll learn
+
+348
+00:14:05,120 --> 00:14:06,520
+to call index contraction.
+
+349
+00:14:07,100 --> 00:14:09,620
+Index contraction is the same
+
+350
+00:14:09,620 --> 00:14:11,640
+as identifying an upper index
+
+351
+00:14:11,640 --> 00:14:13,440
+with a lower index and summing.
+
+352
+00:14:13,840 --> 00:14:15,680
+That's called index contraction.
+
+353
+00:14:16,460 --> 00:14:17,720
+And index contraction,
+
+354
+00:14:17,900 --> 00:14:19,440
+in this kind of situation,
+
+355
+00:14:20,220 --> 00:14:21,660
+takes you from a vector,
+
+356
+00:14:21,880 --> 00:14:22,680
+well,
+
+357
+00:14:22,680 --> 00:14:23,860
+takes you from a quantity
+
+358
+00:14:23,860 --> 00:14:25,320
+which has all sorts of components
+
+359
+00:14:25,320 --> 00:14:27,920
+and leads to a scalar.
+
+360
+00:14:29,360 --> 00:14:30,000
+Okay,
+
+361
+00:14:30,000 --> 00:14:30,540
+now,
+
+362
+00:14:33,400 --> 00:14:35,880
+scalars and four vectors transform.
+
+363
+00:14:36,600 --> 00:14:39,480
+And that's their defining property.
+
+364
+00:14:39,720 --> 00:14:40,600
+Their defining property
+
+365
+00:14:40,600 --> 00:14:42,160
+is the way they transform.
+
+366
+00:14:43,480 --> 00:14:44,180
+Scalars,
+
+367
+00:14:44,180 --> 00:14:44,740
+for example,
+
+368
+00:14:44,860 --> 00:14:47,240
+just transform into themselves,
+
+369
+00:14:48,020 --> 00:14:50,300
+transform under Lorentz transformations.
+
+370
+00:14:50,840 --> 00:14:54,780
+And I'm going to give a broader definition
+
+371
+00:14:54,780 --> 00:14:56,700
+of what I mean by a Lorentz transformation
+
+372
+00:14:56,700 --> 00:14:58,080
+than we've used up till now.
+
+373
+00:14:58,720 --> 00:14:59,880
+Lorentz transformations,
+
+374
+00:14:59,880 --> 00:15:00,900
+we've talked about,
+
+375
+00:15:00,900 --> 00:15:02,160
+were along the x-axis.
+
+376
+00:15:02,580 --> 00:15:03,680
+We could have,
+
+377
+00:15:03,680 --> 00:15:04,060
+of course,
+
+378
+00:15:04,060 --> 00:15:05,300
+talked about a Lorentz transformation
+
+379
+00:15:05,300 --> 00:15:07,400
+along the y-axis or the z-axis
+
+380
+00:15:07,400 --> 00:15:08,180
+and so forth.
+
+381
+00:15:08,560 --> 00:15:09,300
+All right?
+
+382
+00:15:09,540 --> 00:15:11,220
+But there's another class
+
+383
+00:15:11,220 --> 00:15:12,560
+of transformations
+
+384
+00:15:12,560 --> 00:15:14,860
+which are also considered
+
+385
+00:15:14,860 --> 00:15:17,620
+to be part of the collection
+
+386
+00:15:17,620 --> 00:15:18,760
+of Lorentz transformations.
+
+387
+00:15:19,060 --> 00:15:21,040
+And it's just rotations of space.
+
+388
+00:15:22,280 --> 00:15:23,460
+Rotations of space
+
+389
+00:15:23,460 --> 00:15:26,060
+is part of the collection
+
+390
+00:15:26,060 --> 00:15:28,560
+of Lorentz transformations.
+
+391
+00:15:28,560 --> 00:15:29,500
+Now,
+
+392
+00:15:29,500 --> 00:15:30,780
+once you say that,
+
+393
+00:15:30,980 --> 00:15:32,900
+then you can say that
+
+394
+00:15:33,180 --> 00:15:35,780
+a Lorentz transformation along the y-axis
+
+395
+00:15:35,780 --> 00:15:38,900
+is simply a Lorentz,
+
+396
+00:15:39,000 --> 00:15:40,680
+simply a rotation
+
+397
+00:15:40,680 --> 00:15:42,760
+of the Lorentz transformation
+
+398
+00:15:42,760 --> 00:15:44,260
+along the x-axis.
+
+399
+00:15:44,440 --> 00:15:47,200
+You can compound rotations
+
+400
+00:15:47,200 --> 00:15:49,340
+together with Lorentz transformations
+
+401
+00:15:49,340 --> 00:15:51,340
+to make Lorentz transformations
+
+402
+00:15:51,340 --> 00:15:52,520
+in any direction,
+
+403
+00:15:52,720 --> 00:15:54,760
+rotations about any axes,
+
+404
+00:15:54,860 --> 00:15:57,080
+and just the general set
+
+405
+00:15:57,080 --> 00:15:57,920
+of transformations
+
+406
+00:16:00,360 --> 00:16:02,440
+which physics is invariant under.
+
+407
+00:16:02,640 --> 00:16:04,220
+I'm not going to show you how to do that.
+
+408
+00:16:04,260 --> 00:16:05,780
+That's not important to us right now.
+
+409
+00:16:06,000 --> 00:16:08,360
+The important thing is just to keep in mind
+
+410
+00:16:08,360 --> 00:16:10,540
+that physics is to be invariant
+
+411
+00:16:10,540 --> 00:16:13,440
+not only for Lorentz transformations
+
+412
+00:16:13,440 --> 00:16:14,840
+along the x-axis
+
+413
+00:16:14,840 --> 00:16:17,100
+or the y-axis or the z-axis,
+
+414
+00:16:17,280 --> 00:16:19,020
+but more complicated things
+
+415
+00:16:19,020 --> 00:16:20,120
+where you rotate space,
+
+416
+00:16:20,440 --> 00:16:21,660
+then transform,
+
+417
+00:16:22,020 --> 00:16:23,520
+then maybe rotate back again,
+
+418
+00:16:24,860 --> 00:16:25,340
+and,
+
+419
+00:16:25,340 --> 00:16:25,940
+you know,
+
+420
+00:16:25,960 --> 00:16:27,700
+it's compound rotations with...
+
+421
+00:16:27,700 --> 00:16:27,880
+Yeah,
+
+422
+00:16:27,880 --> 00:16:27,900
+I'm sorry.
+
+423
+00:16:27,900 --> 00:16:29,960
+So when you say rotate space,
+
+424
+00:16:30,140 --> 00:16:32,980
+then time is not affected at all.
+
+425
+00:16:33,040 --> 00:16:33,120
+Right.
+
+426
+00:16:33,120 --> 00:16:34,020
+When I say rotation,
+
+427
+00:16:34,320 --> 00:16:37,260
+I mean time not affected at all,
+
+428
+00:16:37,260 --> 00:16:37,560
+exactly.
+
+429
+00:16:38,160 --> 00:16:38,920
+All right?
+
+430
+00:16:39,200 --> 00:16:43,300
+So what's a nice notation
+
+431
+00:16:43,900 --> 00:16:45,180
+for the Lorentz transformations?
+
+432
+00:16:46,500 --> 00:16:47,100
+Well,
+
+433
+00:16:47,100 --> 00:16:49,600
+let's take the transformation
+
+434
+00:16:51,880 --> 00:16:54,860
+of the contravariant vectors.
+
+435
+00:16:55,320 --> 00:16:56,360
+For example,
+
+436
+00:16:56,360 --> 00:16:57,580
+just x mu.
+
+437
+00:16:57,580 --> 00:16:58,600
+How does x mu transform?
+
+438
+00:16:59,020 --> 00:16:59,860
+x mu prime,
+
+439
+00:16:59,860 --> 00:17:02,420
+in particular,
+
+440
+00:17:02,420 --> 00:17:03,480
+x naught prime,
+
+441
+00:17:03,840 --> 00:17:04,980
+that's the time component,
+
+442
+00:17:05,380 --> 00:17:09,260
+that's equal to x naught minus v,
+
+443
+00:17:10,940 --> 00:17:14,140
+x1 divided by square root of 1 minus v squared,
+
+444
+00:17:14,220 --> 00:17:15,339
+and so forth and so on,
+
+445
+00:17:15,480 --> 00:17:17,300
+just the good old Lorentz transformations,
+
+446
+00:17:17,339 --> 00:17:19,480
+except that I've called time x naught,
+
+447
+00:17:19,780 --> 00:17:21,660
+and x I've called x1.
+
+448
+00:17:22,420 --> 00:17:23,160
+All right.
+
+449
+00:17:23,180 --> 00:17:26,480
+We can always write those transformations
+
+450
+00:17:26,480 --> 00:17:27,260
+as...
+
+451
+00:17:27,579 --> 00:17:28,880
+in the form of a matrix
+
+452
+00:17:29,580 --> 00:17:31,760
+acting on the components of the vector.
+
+453
+00:17:31,960 --> 00:17:33,200
+I'll show you what I mean.
+
+454
+00:17:35,280 --> 00:17:38,300
+We write a mu prime,
+
+455
+00:17:39,220 --> 00:17:41,800
+that's the components of a certain four vector,
+
+456
+00:17:42,320 --> 00:17:43,860
+in my frame of reference,
+
+457
+00:17:44,180 --> 00:17:47,480
+in terms of the components in your frame of reference,
+
+458
+00:17:47,580 --> 00:17:49,680
+are given by some kind of matrix.
+
+459
+00:17:50,380 --> 00:17:52,100
+The matrix has entries,
+
+460
+00:17:52,260 --> 00:17:54,240
+which you'll recognize in a minute.
+
+461
+00:17:55,200 --> 00:17:57,040
+There's an upper index here,
+
+462
+00:18:01,080 --> 00:18:01,560
+and there's an upper index here.
+
+463
+00:18:01,560 --> 00:18:03,440
+I'm going to put a lower index down here.
+
+464
+00:18:04,060 --> 00:18:05,440
+It has two indices.
+
+465
+00:18:05,580 --> 00:18:06,560
+That makes it a matrix.
+
+466
+00:18:07,340 --> 00:18:10,140
+It has a value for every mu and every nu.
+
+467
+00:18:10,280 --> 00:18:11,600
+It's a 4 by 4 matrix,
+
+468
+00:18:12,080 --> 00:18:16,080
+and now it multiplies a nu.
+
+469
+00:18:17,680 --> 00:18:20,360
+Is this a properly formed equation over here?
+
+470
+00:18:20,780 --> 00:18:21,260
+Yeah.
+
+471
+00:18:21,340 --> 00:18:23,960
+The left-hand side has an index mu,
+
+472
+00:18:24,120 --> 00:18:26,060
+which can be any one of 1 to 4.
+
+473
+00:18:26,480 --> 00:18:27,560
+The right-hand side has an index mu,
+
+474
+00:18:27,560 --> 00:18:32,200
+but the index nu is summed over.
+
+475
+00:18:32,360 --> 00:18:34,020
+When the index nu is summed over,
+
+476
+00:18:34,160 --> 00:18:38,280
+it's not an explicit variable in the equation.
+
+477
+00:18:38,900 --> 00:18:39,640
+And so,
+
+478
+00:18:39,640 --> 00:18:39,860
+yes,
+
+479
+00:18:39,860 --> 00:18:41,200
+this is a properly formed equation,
+
+480
+00:18:42,180 --> 00:18:43,160
+summation convention.
+
+481
+00:18:45,480 --> 00:18:46,160
+All right,
+
+482
+00:18:46,160 --> 00:18:47,920
+so let me give you an example
+
+483
+00:18:48,560 --> 00:18:50,500
+of the matrix L,
+
+484
+00:18:51,160 --> 00:18:53,260
+just for the simplest Lorentz transformation
+
+485
+00:18:53,260 --> 00:18:54,280
+that we've written down.
+
+486
+00:18:54,360 --> 00:18:55,240
+I'll give you a couple of them.
+
+487
+00:18:56,180 --> 00:18:57,540
+For the matrix L,
+
+488
+00:18:58,060 --> 00:18:59,380
+the Lorentz transformation,
+
+489
+00:18:59,500 --> 00:19:01,540
+let's say along the x-axis.
+
+490
+00:19:02,440 --> 00:19:04,400
+Let's just write down what we would put in here.
+
+491
+00:19:04,440 --> 00:19:05,160
+We would put in here,
+
+492
+00:19:05,620 --> 00:19:08,520
+this is the time x,
+
+493
+00:19:08,520 --> 00:19:09,040
+y,
+
+494
+00:19:09,040 --> 00:19:09,440
+z.
+
+495
+00:19:10,640 --> 00:19:12,680
+Time in the first column in the first row,
+
+496
+00:19:12,680 --> 00:19:13,500
+x,
+
+497
+00:19:13,500 --> 00:19:13,840
+y,
+
+498
+00:19:13,840 --> 00:19:14,080
+z.
+
+499
+00:19:14,460 --> 00:19:15,820
+So there's a 1 over square
+
+500
+00:19:15,820 --> 00:19:17,180
+root of 1 minus v squared here.
+
+501
+00:19:19,440 --> 00:19:20,500
+There's a minus,
+
+502
+00:19:21,020 --> 00:19:22,270
+I think I better make
+
+503
+00:19:22,270 --> 00:19:23,520
+this matrix a little bit bigger.
+
+504
+00:19:27,580 --> 00:19:28,080
+Okay,
+
+505
+00:19:28,080 --> 00:19:29,120
+let's make it bigger.
+
+506
+00:19:31,160 --> 00:19:32,520
+In the upper corner here,
+
+507
+00:19:32,680 --> 00:19:36,660
+we have 1 over root 1 minus v squared,
+
+508
+00:19:37,330 --> 00:19:39,285
+and then we have minus v
+
+509
+00:19:39,285 --> 00:19:41,240
+over root 1 minus v squared.
+
+510
+00:19:41,320 --> 00:19:42,220
+How about the next one?
+
+511
+00:19:42,980 --> 00:19:43,980
+Anybody want to guess?
+
+512
+00:19:46,100 --> 00:19:46,600
+Zero.
+
+513
+00:19:49,180 --> 00:19:49,680
+Zero.
+
+514
+00:19:50,200 --> 00:19:51,320
+What about down here?
+
+515
+00:19:57,560 --> 00:20:00,620
+Minus v over square root of 1 minus v squared.
+
+516
+00:20:03,240 --> 00:20:05,320
+And in the next place here,
+
+517
+00:20:05,520 --> 00:20:08,540
+1 over square root of 1 minus v squared.
+
+518
+00:20:10,680 --> 00:20:11,260
+Zero,
+
+519
+00:20:11,260 --> 00:20:11,500
+zero.
+
+520
+00:20:13,580 --> 00:20:14,160
+Zero,
+
+521
+00:20:14,160 --> 00:20:14,620
+zero.
+
+522
+00:20:15,290 --> 00:20:15,580
+Zero,
+
+523
+00:20:15,580 --> 00:20:15,940
+zero.
+
+524
+00:20:16,140 --> 00:20:17,320
+But what down here?
+
+525
+00:20:18,600 --> 00:20:19,840
+1 and 1.
+
+526
+00:20:25,100 --> 00:20:28,680
+This is a standard Lorentz transformation along the x-axis.
+
+527
+00:20:29,220 --> 00:20:31,040
+And if we write a column vector,
+
+528
+00:20:32,320 --> 00:20:32,760
+T,
+
+529
+00:20:32,760 --> 00:20:33,200
+x,
+
+530
+00:20:33,200 --> 00:20:33,880
+y,
+
+531
+00:20:33,880 --> 00:20:34,560
+z,
+
+532
+00:20:39,040 --> 00:20:40,940
+which I could also write x-naught,
+
+533
+00:20:40,940 --> 00:20:41,380
+x-1,
+
+534
+00:20:41,380 --> 00:20:41,740
+x-2,
+
+535
+00:20:41,740 --> 00:20:42,120
+x-3,
+
+536
+00:20:42,180 --> 00:20:43,220
+but let's write it this way.
+
+537
+00:20:43,540 --> 00:20:43,980
+T,
+
+538
+00:20:43,980 --> 00:20:45,120
+x,
+
+539
+00:20:45,120 --> 00:20:45,980
+y,
+
+540
+00:20:45,980 --> 00:20:47,160
+z.
+
+541
+00:20:48,260 --> 00:20:50,800
+And we write that this is equal to T prime,
+
+542
+00:20:51,100 --> 00:20:52,020
+x prime,
+
+543
+00:20:52,020 --> 00:20:53,120
+y prime,
+
+544
+00:20:53,120 --> 00:20:53,820
+z prime,
+
+545
+00:20:54,540 --> 00:20:56,080
+let's just see that that's correct.
+
+546
+00:20:56,400 --> 00:20:57,880
+This is a column vector here.
+
+547
+00:21:00,520 --> 00:21:01,800
+This is a column vector.
+
+548
+00:21:03,560 --> 00:21:04,560
+What does it say?
+
+549
+00:21:04,600 --> 00:21:07,940
+It says T prime is equal to 1 over blah,
+
+550
+00:21:07,940 --> 00:21:08,100
+blah,
+
+551
+00:21:08,100 --> 00:21:08,240
+blah,
+
+552
+00:21:08,260 --> 00:21:11,220
+times T minus v over blah,
+
+553
+00:21:11,220 --> 00:21:11,440
+blah,
+
+554
+00:21:11,440 --> 00:21:11,580
+blah,
+
+555
+00:21:11,580 --> 00:21:12,640
+times x.
+
+556
+00:21:13,140 --> 00:21:13,660
+Well,
+
+557
+00:21:13,660 --> 00:21:15,620
+that's the right transformation law for T prime.
+
+558
+00:21:16,080 --> 00:21:21,420
+X prime is minus v over square root times T
+
+559
+00:21:22,100 --> 00:21:22,620
+plus,
+
+560
+00:21:23,840 --> 00:21:25,600
+1 over square root times x.
+
+561
+00:21:25,880 --> 00:21:29,080
+That's the standard Lorentz transformation on x.
+
+562
+00:21:29,500 --> 00:21:31,000
+And then y and z,
+
+563
+00:21:31,580 --> 00:21:34,180
+they do not mix with T and x.
+
+564
+00:21:34,620 --> 00:21:35,620
+y and z,
+
+565
+00:21:35,620 --> 00:21:37,580
+the unit matrix down here tells you that
+
+566
+00:21:37,580 --> 00:21:38,940
+y prime is equal to y,
+
+567
+00:21:39,140 --> 00:21:40,700
+and z prime is equal to z.
+
+568
+00:21:40,980 --> 00:21:41,500
+Good.
+
+569
+00:21:42,660 --> 00:21:46,620
+So this is an example of a Lorentz matrix.
+
+570
+00:21:47,500 --> 00:21:49,820
+A Lorentz matrix along the x-axis.
+
+571
+00:21:50,040 --> 00:21:53,680
+If we wanted to transform along the y-axis,
+
+572
+00:21:53,680 --> 00:21:57,100
+we would just shuffle these around a little bit.
+
+573
+00:21:57,160 --> 00:21:58,500
+I'll leave it to you to
+
+574
+00:21:58,500 --> 00:21:59,840
+figure out what our Lorentz transformation
+
+575
+00:21:59,840 --> 00:22:02,800
+along the y-axis looks like in this matrix notation.
+
+576
+00:22:03,780 --> 00:22:08,880
+But let's consider instead a different operation,
+
+577
+00:22:09,160 --> 00:22:12,100
+a rotation in the y-z plane in
+
+578
+00:22:12,100 --> 00:22:15,040
+which T and x are completely left alone.
+
+579
+00:22:15,740 --> 00:22:17,680
+This is one of these rotations which,
+
+580
+00:22:17,680 --> 00:22:18,320
+as somebody said,
+
+581
+00:22:18,520 --> 00:22:20,400
+don't involve T at all.
+
+582
+00:22:21,180 --> 00:22:22,620
+Let's see what that would look like.
+
+583
+00:22:22,620 --> 00:22:24,300
+This is a different object now,
+
+584
+00:22:24,420 --> 00:22:25,360
+a different transformation.
+
+585
+00:22:26,020 --> 00:22:28,140
+We would put ones here.
+
+586
+00:22:31,220 --> 00:22:31,760
+Zero,
+
+587
+00:22:31,760 --> 00:22:32,380
+one.
+
+588
+00:22:32,940 --> 00:22:36,300
+That tells T and x do nothing.
+
+589
+00:22:36,840 --> 00:22:38,500
+But what would you put down here,
+
+590
+00:22:38,600 --> 00:22:40,040
+in this lower block down here?
+
+591
+00:22:40,800 --> 00:22:41,900
+Anybody got a suggestion?
+
+592
+00:22:42,300 --> 00:22:44,150
+I want to rotate by
+
+593
+00:22:44,150 --> 00:22:46,000
+angle theta in the y-z plane.
+
+594
+00:22:46,260 --> 00:22:47,100
+Now you all know the answer.
+
+595
+00:22:48,700 --> 00:22:49,240
+Cosine,
+
+596
+00:22:49,240 --> 00:22:49,440
+theta.
+
+597
+00:22:52,040 --> 00:22:52,600
+So what would you do?
+
+598
+00:22:52,620 --> 00:22:52,920
+Sine,
+
+599
+00:22:52,920 --> 00:22:53,200
+theta.
+
+600
+00:22:55,440 --> 00:22:56,260
+Minus sine,
+
+601
+00:22:56,260 --> 00:22:56,760
+theta.
+
+602
+00:22:58,640 --> 00:22:59,240
+Cosine,
+
+603
+00:22:59,240 --> 00:22:59,440
+theta.
+
+604
+00:23:01,620 --> 00:23:03,040
+And this would just say,
+
+605
+00:23:03,200 --> 00:23:05,350
+y prime is cosine theta times
+
+606
+00:23:05,350 --> 00:23:07,500
+y plus sine theta times z.
+
+607
+00:23:07,820 --> 00:23:10,160
+And z prime is minus sine theta
+
+608
+00:23:10,160 --> 00:23:12,500
+times y plus cosine theta times z.
+
+609
+00:23:13,200 --> 00:23:13,640
+All right,
+
+610
+00:23:13,640 --> 00:23:14,940
+now you can take these matrices
+
+611
+00:23:14,940 --> 00:23:17,460
+and start multiplying them and combining them
+
+612
+00:23:17,460 --> 00:23:20,560
+to make much more complicated transformations,
+
+613
+00:23:21,240 --> 00:23:21,840
+which,
+
+614
+00:23:21,840 --> 00:23:22,480
+for example,
+
+615
+00:23:22,620 --> 00:23:25,260
+are partly rotations along some axis,
+
+616
+00:23:25,420 --> 00:23:29,020
+partly Lorentz transformations along some other axis,
+
+617
+00:23:29,280 --> 00:23:34,980
+but this is the basic building starting point
+
+618
+00:23:37,360 --> 00:23:39,720
+in a formula like this.
+
+619
+00:23:41,120 --> 00:23:42,080
+All right,
+
+620
+00:23:42,080 --> 00:23:43,840
+so this is the transformation property
+
+621
+00:23:45,640 --> 00:23:47,180
+of a four vector
+
+622
+00:23:49,840 --> 00:23:51,840
+with contravariant index.
+
+623
+00:23:53,460 --> 00:23:55,240
+I'm going to leave it to you
+
+624
+00:23:56,460 --> 00:23:59,500
+to compute the transformation property
+
+625
+00:23:59,500 --> 00:24:01,540
+of a four vector with a lower index.
+
+626
+00:24:01,720 --> 00:24:02,700
+I'm going to tell you the answer,
+
+627
+00:24:03,300 --> 00:24:04,660
+and I'll let you work it out.
+
+628
+00:24:05,940 --> 00:24:09,260
+If you have a covariant vector,
+
+629
+00:24:10,879 --> 00:24:12,600
+and you want to know what it looks like
+
+630
+00:24:12,600 --> 00:24:13,960
+in my frame,
+
+631
+00:24:13,960 --> 00:24:15,800
+given what it looks like in your frame,
+
+632
+00:24:16,879 --> 00:24:18,700
+then there is another matrix.
+
+633
+00:24:20,220 --> 00:24:22,600
+This matrix has to have a lower index,
+
+634
+00:24:22,600 --> 00:24:23,200
+a lower index mu,
+
+635
+00:24:23,540 --> 00:24:24,740
+because we have to come
+
+636
+00:24:24,740 --> 00:24:25,940
+out with a lower index here,
+
+637
+00:24:26,180 --> 00:24:27,960
+an upper index nu,
+
+638
+00:24:28,720 --> 00:24:31,140
+and an a sub mu.
+
+639
+00:24:32,660 --> 00:24:34,180
+I'm going to tell you right now
+
+640
+00:24:34,180 --> 00:24:36,700
+what the matrix M...
+
+641
+00:24:36,700 --> 00:24:36,740
+Oh.
+
+642
+00:24:39,420 --> 00:24:40,460
+Thank you.
+
+643
+00:24:40,560 --> 00:24:41,060
+Nu.
+
+644
+00:24:42,360 --> 00:24:44,260
+If the left-hand side has a mu,
+
+645
+00:24:44,400 --> 00:24:46,180
+the right-hand side must also have
+
+646
+00:24:46,180 --> 00:24:49,780
+an unsummed over mu,
+
+647
+00:24:50,360 --> 00:24:51,080
+so that's correct.
+
+648
+00:24:51,080 --> 00:24:52,180
+Okay,
+
+649
+00:24:52,180 --> 00:24:52,580
+now,
+
+650
+00:24:52,580 --> 00:24:53,900
+we're talking about
+
+651
+00:24:53,900 --> 00:24:55,260
+the same Lorentz transformation.
+
+652
+00:24:55,700 --> 00:24:58,320
+L and M represent the same physical transformation
+
+653
+00:24:58,700 --> 00:25:00,060
+between coordinate frames,
+
+654
+00:25:00,380 --> 00:25:03,060
+and so M and L must be connected.
+
+655
+00:25:03,580 --> 00:25:05,900
+There must be a connection between M and L,
+
+656
+00:25:05,940 --> 00:25:07,260
+and it's really very simple.
+
+657
+00:25:10,040 --> 00:25:14,360
+M is just given by eta L eta.
+
+658
+00:25:15,220 --> 00:25:16,680
+I'll let you work that out.
+
+659
+00:25:16,720 --> 00:25:17,540
+I'll let you prove that.
+
+660
+00:25:18,420 --> 00:25:18,980
+Incidentally,
+
+661
+00:25:18,980 --> 00:25:20,640
+eta is its own inverse,
+
+662
+00:25:21,800 --> 00:25:24,580
+just like the unit matrix is its own inverse.
+
+663
+00:25:24,860 --> 00:25:25,280
+Sorry.
+
+664
+00:25:26,040 --> 00:25:28,760
+Eta to the minus 1 is eta.
+
+665
+00:25:29,640 --> 00:25:31,140
+It's its own inverse,
+
+666
+00:25:31,440 --> 00:25:34,440
+and that's because the entries here
+
+667
+00:25:35,160 --> 00:25:37,540
+are such that they are their own inverses.
+
+668
+00:25:37,580 --> 00:25:38,940
+The inverse of 1 is 1.
+
+669
+00:25:38,980 --> 00:25:40,900
+The inverse of minus 1 is minus 1.
+
+670
+00:25:42,140 --> 00:25:42,820
+All right,
+
+671
+00:25:42,820 --> 00:25:43,720
+so you can prove this,
+
+672
+00:25:43,800 --> 00:25:45,880
+that for a given Lorentz transformation,
+
+673
+00:25:46,360 --> 00:25:47,700
+M and L are connected.
+
+674
+00:25:48,460 --> 00:25:50,620
+I'm not going to use this version,
+
+675
+00:25:50,640 --> 00:25:51,000
+but I'm going to use it very much.
+
+676
+00:25:51,280 --> 00:25:54,880
+The main point is that what a four vector is,
+
+677
+00:25:55,660 --> 00:25:57,340
+covariantly or contravariantly,
+
+678
+00:25:57,540 --> 00:26:00,300
+what it stands for is an object
+
+679
+00:26:00,300 --> 00:26:03,040
+which transforms from one frame to another
+
+680
+00:26:03,040 --> 00:26:05,020
+in a particular and special way.
+
+681
+00:26:05,440 --> 00:26:10,380
+And the special way is in parallel
+
+682
+00:26:10,380 --> 00:26:13,580
+with the way the coordinates themselves transform.
+
+683
+00:26:15,820 --> 00:26:16,540
+All right,
+
+684
+00:26:16,540 --> 00:26:17,580
+now let's come to tensors.
+
+685
+00:26:17,580 --> 00:26:19,920
+We're going to make heavy use of tensor notation.
+
+686
+00:26:20,820 --> 00:26:22,080
+What is a tensor?
+
+687
+00:26:22,520 --> 00:26:28,000
+A tensor is simply a thing with more indices.
+
+688
+00:26:28,940 --> 00:26:29,460
+Actually,
+
+689
+00:26:29,460 --> 00:26:32,220
+a scalar and a vector are special cases of tensors.
+
+690
+00:26:32,660 --> 00:26:35,820
+A scalar would be called a tensor of rank 0,
+
+691
+00:26:36,060 --> 00:26:37,560
+which means it has no index.
+
+692
+00:26:38,280 --> 00:26:40,600
+A vector is a tensor of rank 1.
+
+693
+00:26:42,060 --> 00:26:43,830
+And a tensor of rank 2
+
+694
+00:26:43,830 --> 00:26:45,600
+would be a thing with two indices.
+
+695
+00:26:46,060 --> 00:26:47,560
+So let me give you the simple idea.
+
+696
+00:26:47,580 --> 00:26:48,760
+Let's take the simplest example of a tensor.
+
+697
+00:26:49,240 --> 00:26:50,340
+Take two vectors.
+
+698
+00:26:50,460 --> 00:26:50,800
+In fact,
+
+699
+00:26:50,800 --> 00:26:51,980
+it would be enough to have one vector.
+
+700
+00:26:52,100 --> 00:26:53,060
+But let's take two vectors,
+
+701
+00:26:53,060 --> 00:26:56,100
+A and B.
+
+702
+00:26:57,980 --> 00:26:58,440
+Now,
+
+703
+00:26:58,440 --> 00:27:02,800
+we can make a product of A and B by...
+
+704
+00:27:05,340 --> 00:27:06,400
+And that's a scalar.
+
+705
+00:27:07,720 --> 00:27:09,270
+But now I want to consider
+
+706
+00:27:09,270 --> 00:27:10,820
+a more general kind of product.
+
+707
+00:27:11,200 --> 00:27:15,420
+The more general kind of product has two indices,
+
+708
+00:27:15,420 --> 00:27:17,140
+mu and nu.
+
+709
+00:27:19,160 --> 00:27:23,200
+Let's begin with the contravariant version of it.
+
+710
+00:27:25,100 --> 00:27:26,960
+Let's just put it next to each other.
+
+711
+00:27:27,300 --> 00:27:30,740
+A mu and B nu.
+
+712
+00:27:32,520 --> 00:27:33,040
+Now,
+
+713
+00:27:33,040 --> 00:27:33,740
+this is an object.
+
+714
+00:27:33,820 --> 00:27:35,460
+How many components does this thing have?
+
+715
+00:27:40,520 --> 00:27:41,620
+4 times 4.
+
+716
+00:27:43,020 --> 00:27:44,300
+There's A naught,
+
+717
+00:27:44,300 --> 00:27:44,980
+B naught.
+
+718
+00:27:45,120 --> 00:27:45,700
+A naught,
+
+719
+00:27:45,700 --> 00:27:46,160
+B1.
+
+720
+00:27:46,160 --> 00:27:46,840
+A naught,
+
+721
+00:27:46,840 --> 00:27:47,300
+B2.
+
+722
+00:27:47,520 --> 00:27:47,980
+A naught,
+
+723
+00:27:47,980 --> 00:27:48,440
+B3.
+
+724
+00:27:48,600 --> 00:27:49,080
+A1,
+
+725
+00:27:49,080 --> 00:27:49,600
+B naught.
+
+726
+00:27:49,780 --> 00:27:50,780
+And so forth and so on.
+
+727
+00:27:50,860 --> 00:27:51,420
+There are 16.
+
+728
+00:27:52,060 --> 00:27:54,540
+This is a symbol here stands
+
+729
+00:27:54,540 --> 00:27:57,020
+for a complex of 16 different objects.
+
+730
+00:27:57,720 --> 00:27:58,680
+Different numbers.
+
+731
+00:27:59,500 --> 00:27:59,980
+Okay?
+
+732
+00:28:02,260 --> 00:28:05,310
+It's just a set of numbers you get by
+
+733
+00:28:05,310 --> 00:28:08,360
+multiplying any component of A with any component of B.
+
+734
+00:28:09,800 --> 00:28:10,940
+It's got two indices,
+
+735
+00:28:10,940 --> 00:28:12,280
+and it's called a tensor.
+
+736
+00:28:12,460 --> 00:28:13,640
+I'm going to label it...
+
+737
+00:28:15,420 --> 00:28:16,460
+Just generically,
+
+738
+00:28:16,460 --> 00:28:17,860
+I'm going to write T for tensor.
+
+739
+00:28:18,380 --> 00:28:23,260
+And it's a particular tensor T mu nu.
+
+740
+00:28:23,340 --> 00:28:26,400
+Not all tensors are of this form.
+
+741
+00:28:27,040 --> 00:28:28,840
+Not all tensors are simply constructed
+
+742
+00:28:28,840 --> 00:28:30,640
+out of two vectors this way.
+
+743
+00:28:32,260 --> 00:28:35,580
+But two vectors define a tensor in that way.
+
+744
+00:28:37,060 --> 00:28:39,040
+How does such an object transform?
+
+745
+00:28:40,140 --> 00:28:41,780
+How does this object transform?
+
+746
+00:28:41,780 --> 00:28:42,760
+T mu nu.
+
+747
+00:28:43,100 --> 00:28:43,540
+Well,
+
+748
+00:28:43,540 --> 00:28:45,300
+if we know how A transforms,
+
+749
+00:28:45,300 --> 00:28:47,200
+and we know how B transforms,
+
+750
+00:28:47,200 --> 00:28:48,380
+which is the same way,
+
+751
+00:28:48,879 --> 00:28:51,400
+we can immediately figure out what...
+
+752
+00:28:51,400 --> 00:28:54,320
+Let's call it A prime...
+
+753
+00:28:55,379 --> 00:28:56,980
+Put a bracket around here.
+
+754
+00:28:58,820 --> 00:29:02,280
+Mu B prime nu is.
+
+755
+00:29:02,820 --> 00:29:04,750
+All we have to do is
+
+756
+00:29:04,750 --> 00:29:06,680
+transform the A and the B.
+
+757
+00:29:06,760 --> 00:29:08,360
+But we know how the A and the B transform.
+
+758
+00:29:08,920 --> 00:29:09,980
+Let's rewrite this.
+
+759
+00:29:09,980 --> 00:29:12,280
+Using the transformation here.
+
+760
+00:29:12,920 --> 00:29:14,020
+I'll tell you what.
+
+761
+00:29:14,100 --> 00:29:16,820
+I'm going to change the symbol here.
+
+762
+00:29:17,200 --> 00:29:18,680
+Instead of calling this nu,
+
+763
+00:29:18,680 --> 00:29:21,380
+mu nu sigma.
+
+764
+00:29:25,680 --> 00:29:26,280
+Remember,
+
+765
+00:29:26,280 --> 00:29:28,880
+it doesn't matter what you call a
+
+766
+00:29:28,880 --> 00:29:31,480
+summation index as long as you're consistent.
+
+767
+00:29:32,020 --> 00:29:33,580
+You're summing over it,
+
+768
+00:29:33,580 --> 00:29:35,260
+and so it's just a thing
+
+769
+00:29:35,260 --> 00:29:36,940
+that's a sort of dummy index.
+
+770
+00:29:37,940 --> 00:29:38,540
+Okay.
+
+771
+00:29:38,540 --> 00:29:40,780
+And let's do it here also.
+
+772
+00:29:42,000 --> 00:29:42,880
+Mu sigma,
+
+773
+00:29:42,880 --> 00:29:44,160
+sigma.
+
+774
+00:29:46,480 --> 00:29:48,280
+Let's plug in here.
+
+775
+00:29:48,480 --> 00:29:54,060
+This is just equal to L mu sigma.
+
+776
+00:29:55,120 --> 00:29:56,020
+Put it over here.
+
+777
+00:29:56,140 --> 00:29:58,480
+A sigma.
+
+778
+00:30:01,120 --> 00:30:03,080
+But now we also have to put B prime.
+
+779
+00:30:03,520 --> 00:30:06,060
+And B prime is the same sort of thing.
+
+780
+00:30:06,140 --> 00:30:06,820
+L nu.
+
+781
+00:30:06,820 --> 00:30:08,340
+And let's call it tau.
+
+782
+00:30:09,639 --> 00:30:10,920
+A tau.
+
+783
+00:30:14,180 --> 00:30:16,500
+L mu sigma times A sigma.
+
+784
+00:30:17,380 --> 00:30:18,400
+That's A prime.
+
+785
+00:30:19,560 --> 00:30:21,320
+L times this A.
+
+786
+00:30:22,880 --> 00:30:23,520
+Sorry.
+
+787
+00:30:24,020 --> 00:30:24,900
+Excuse me.
+
+788
+00:30:24,940 --> 00:30:25,880
+B sigma.
+
+789
+00:30:27,040 --> 00:30:28,000
+B sigma.
+
+790
+00:30:31,160 --> 00:30:32,140
+B prime.
+
+791
+00:30:36,820 --> 00:30:36,980
+And it's just 1.
+
+792
+00:30:36,980 --> 00:30:37,120
+And now it's 1.
+
+793
+00:30:37,120 --> 00:30:37,380
+And now it's 1.
+
+794
+00:30:37,410 --> 00:30:38,530
+以上です
+
+795
+00:30:41,081 --> 00:30:41,661
+U,
+
+796
+00:30:41,661 --> 00:30:42,242
+sigma,
+
+797
+00:30:42,242 --> 00:30:44,182
+sigma.
+
+798
+00:30:44,182 --> 00:30:45,782
+Right?
+
+799
+00:30:45,782 --> 00:30:47,502
+Good.
+
+800
+00:30:48,981 --> 00:30:49,561
+Tau,
+
+801
+00:30:49,561 --> 00:30:50,142
+tau.
+
+802
+00:30:50,142 --> 00:30:51,082
+Good.
+
+803
+00:30:51,082 --> 00:30:52,062
+Now we're cooking.
+
+804
+00:30:52,602 --> 00:30:53,902
+Sigma goes with A,
+
+805
+00:30:53,902 --> 00:30:55,542
+tau goes with B,
+
+806
+00:30:55,542 --> 00:30:58,122
+and now the equation is consistent.
+
+807
+00:30:59,562 --> 00:31:01,792
+So here we have a new rule about
+
+808
+00:31:01,792 --> 00:31:04,022
+a new kind of object with two indices,
+
+809
+00:31:04,422 --> 00:31:06,682
+which tells us how it transforms.
+
+810
+00:31:06,682 --> 00:31:10,182
+It transforms with the action of the
+
+811
+00:31:10,182 --> 00:31:13,682
+Lorentz matrix on each one of the indices.
+
+812
+00:31:13,922 --> 00:31:15,562
+So now we can abstract
+
+813
+00:31:15,562 --> 00:31:17,202
+from that and say more generally,
+
+814
+00:31:17,772 --> 00:31:19,762
+the way a tensor transforms,
+
+815
+00:31:19,762 --> 00:31:23,482
+let's call it the tensor,
+
+816
+00:31:23,482 --> 00:31:24,702
+the primed tensor,
+
+817
+00:31:26,102 --> 00:31:27,162
+the quantity,
+
+818
+00:31:27,162 --> 00:31:30,022
+the set of quantities that I see
+
+819
+00:31:30,022 --> 00:31:33,002
+are related to the set of quantities that you see
+
+820
+00:31:33,002 --> 00:31:35,102
+by L mu sigma,
+
+821
+00:31:35,102 --> 00:31:36,662
+Ld.
+
+822
+00:31:36,682 --> 00:31:40,582
+New tau times T sigma tau.
+
+823
+00:31:42,982 --> 00:31:44,341
+A times B,
+
+824
+00:31:44,341 --> 00:31:45,682
+that's T sigma tau.
+
+825
+00:31:46,042 --> 00:31:47,482
+So this is the rule,
+
+826
+00:31:47,482 --> 00:31:48,262
+for example,
+
+827
+00:31:48,262 --> 00:31:49,762
+for the transformation property
+
+828
+00:31:49,762 --> 00:31:53,802
+of a simple tensor with two indices.
+
+829
+00:31:54,802 --> 00:31:55,822
+Tensors can have,
+
+830
+00:31:55,822 --> 00:31:55,982
+yeah?
+
+831
+00:31:56,902 --> 00:31:58,702
+Would this be a predicated
+
+832
+00:31:58,702 --> 00:32:00,502
+on the idea that the Ls,
+
+833
+00:32:00,502 --> 00:32:00,782
+the As,
+
+834
+00:32:00,782 --> 00:32:01,862
+and the Bs can commute?
+
+835
+00:32:03,022 --> 00:32:05,142
+Because it would be L...
+
+836
+00:32:06,682 --> 00:32:09,262
+It would be the L and the As go together,
+
+837
+00:32:09,262 --> 00:32:10,982
+and then the El,
+
+838
+00:32:10,982 --> 00:32:12,402
+sigma and the As...
+
+839
+00:32:12,402 --> 00:32:13,622
+We're not doing quantum mechanics,
+
+840
+00:32:13,622 --> 00:32:14,542
+so everything commutes.
+
+841
+00:32:15,382 --> 00:32:15,922
+Okay.
+
+842
+00:32:16,202 --> 00:32:18,482
+And there's only one matrix here,
+
+843
+00:32:18,482 --> 00:32:18,722
+L.
+
+844
+00:32:18,902 --> 00:32:20,582
+Every matrix commutes with itself.
+
+845
+00:32:21,241 --> 00:32:24,702
+So there's no issue of commutation here.
+
+846
+00:32:25,802 --> 00:32:26,342
+Okay.
+
+847
+00:32:26,342 --> 00:32:26,502
+Okay.
+
+848
+00:32:33,222 --> 00:32:36,502
+You can invent more complicated kinds of tensors.
+
+849
+00:32:37,182 --> 00:32:38,862
+Tensors with three indices,
+
+850
+00:32:38,862 --> 00:32:40,042
+mu,
+
+851
+00:32:40,042 --> 00:32:40,842
+nu,
+
+852
+00:32:40,842 --> 00:32:42,662
+I don't know,
+
+853
+00:32:42,662 --> 00:32:43,062
+lambda.
+
+854
+00:32:44,622 --> 00:32:45,962
+How would this transform?
+
+855
+00:32:46,742 --> 00:32:49,522
+And you can think of it by just
+
+856
+00:32:49,522 --> 00:32:52,302
+thinking of it as the product of three vectors
+
+857
+00:32:52,302 --> 00:32:53,462
+with index mu,
+
+858
+00:32:53,462 --> 00:32:53,902
+nu,
+
+859
+00:32:53,902 --> 00:32:54,482
+and lambda.
+
+860
+00:32:54,842 --> 00:32:56,042
+I won't write it down,
+
+861
+00:32:56,042 --> 00:32:56,322
+but I'll write it down.
+
+862
+00:32:56,322 --> 00:32:58,542
+But the way that it transforms is straightforward.
+
+863
+00:32:59,182 --> 00:33:00,402
+For each index,
+
+864
+00:33:00,402 --> 00:33:05,182
+there's a transformer for each index.
+
+865
+00:33:05,602 --> 00:33:06,482
+New tau,
+
+866
+00:33:06,482 --> 00:33:07,782
+and now we need one more,
+
+867
+00:33:07,782 --> 00:33:10,662
+L lambda kappa.
+
+868
+00:33:13,201 --> 00:33:16,002
+T sigma tau kappa.
+
+869
+00:33:18,462 --> 00:33:21,122
+That would be the general transformation property.
+
+870
+00:33:21,282 --> 00:33:21,522
+Of course,
+
+871
+00:33:21,522 --> 00:33:23,022
+you generalize the hell out of this,
+
+872
+00:33:23,022 --> 00:33:24,042
+any number of indices,
+
+873
+00:33:24,042 --> 00:33:28,302
+and that's basically the definition of a tensor.
+
+874
+00:33:28,642 --> 00:33:30,662
+The definition of a tensor is
+
+875
+00:33:30,662 --> 00:33:32,682
+a thing which transforms like this.
+
+876
+00:33:33,322 --> 00:33:33,662
+Now,
+
+877
+00:33:33,662 --> 00:33:34,302
+as I said,
+
+878
+00:33:34,302 --> 00:33:37,002
+not every tensor is formed
+
+879
+00:33:37,002 --> 00:33:39,702
+from the product of two vectors.
+
+880
+00:33:40,322 --> 00:33:41,302
+For example,
+
+881
+00:33:41,302 --> 00:33:44,822
+supposing there were two other vectors.
+
+882
+00:33:45,702 --> 00:33:47,642
+Suppose there were two other vectors,
+
+883
+00:33:47,642 --> 00:33:48,622
+C and D.
+
+884
+00:33:49,762 --> 00:33:51,102
+We could take B mu,
+
+885
+00:33:51,102 --> 00:33:52,282
+A mu,
+
+886
+00:33:52,282 --> 00:33:52,762
+B nu,
+
+887
+00:33:53,422 --> 00:33:54,022
+and A mu would be the product of two vectors.
+
+888
+00:33:54,042 --> 00:33:56,322
+We could add it to C mu,
+
+889
+00:33:56,322 --> 00:33:57,542
+D nu.
+
+890
+00:33:59,702 --> 00:34:02,142
+Adding tensors by assumption now,
+
+891
+00:34:02,142 --> 00:34:06,042
+adding tensors gives other tensors.
+
+892
+00:34:07,862 --> 00:34:10,282
+So if I take the tensor A
+
+893
+00:34:10,282 --> 00:34:12,702
+times B with mu index and nu index,
+
+894
+00:34:12,822 --> 00:34:13,962
+and add to it C times D,
+
+895
+00:34:13,962 --> 00:34:17,862
+that's something which cannot be in general written
+
+896
+00:34:17,862 --> 00:34:19,402
+as the product of two vectors,
+
+897
+00:34:19,402 --> 00:34:20,161
+but it's a tensor.
+
+898
+00:34:21,022 --> 00:34:23,562
+It's defined by its transformation properties,
+
+899
+00:34:23,562 --> 00:34:26,042
+not by the fact that it may or may
+
+900
+00:34:26,042 --> 00:34:28,522
+not be associated with just a pair of vectors.
+
+901
+00:34:28,842 --> 00:34:31,022
+So now we know what a
+
+902
+00:34:31,022 --> 00:34:33,202
+tensor is from its transformation properties.
+
+903
+00:34:35,222 --> 00:34:40,262
+How exactly does multiplying a matrix by a tensor work?
+
+904
+00:34:44,242 --> 00:34:44,882
+Oh,
+
+905
+00:34:44,882 --> 00:34:48,242
+it works exactly this way.
+
+906
+00:34:49,202 --> 00:34:50,382
+This is...
+
+907
+00:34:52,282 --> 00:34:52,922
+Sorry.
+
+908
+00:34:53,042 --> 00:34:53,382
+This way,
+
+909
+00:34:53,382 --> 00:34:53,542
+right?
+
+910
+00:34:53,562 --> 00:34:53,782
+Right here.
+
+911
+00:34:55,562 --> 00:34:56,801
+Here's a matrix L,
+
+912
+00:34:56,801 --> 00:34:59,702
+and an axon T.
+
+913
+00:35:01,122 --> 00:35:04,342
+Write out what this means in detail.
+
+914
+00:35:04,962 --> 00:35:06,362
+There's a lot of components,
+
+915
+00:35:06,362 --> 00:35:07,542
+but I'll give you a hint.
+
+916
+00:35:07,662 --> 00:35:08,262
+For example,
+
+917
+00:35:08,262 --> 00:35:10,982
+T3,
+
+918
+00:35:10,982 --> 00:35:14,562
+1 prime.
+
+919
+00:35:15,762 --> 00:35:16,282
+Okay,
+
+920
+00:35:16,282 --> 00:35:16,742
+what is that?
+
+921
+00:35:16,782 --> 00:35:18,742
+That's equal to L,
+
+922
+00:35:18,742 --> 00:35:20,142
+now this is 3,
+
+923
+00:35:20,142 --> 00:35:21,742
+sigma,
+
+924
+00:35:25,422 --> 00:35:25,942
+L1,
+
+925
+00:35:25,942 --> 00:35:26,462
+tau,
+
+926
+00:35:26,462 --> 00:35:28,122
+T,
+
+927
+00:35:28,122 --> 00:35:29,202
+sigma,
+
+928
+00:35:29,202 --> 00:35:29,582
+tau.
+
+929
+00:35:30,502 --> 00:35:32,342
+And now you start going through it.
+
+930
+00:35:33,862 --> 00:35:34,382
+Yeah.
+
+931
+00:35:34,942 --> 00:35:36,242
+Sigma could be 0,
+
+932
+00:35:36,242 --> 00:35:38,482
+tau could be 0.
+
+933
+00:35:38,562 --> 00:35:39,882
+There's 16 possibilities.
+
+934
+00:35:41,562 --> 00:35:42,082
+0,
+
+935
+00:35:42,082 --> 00:35:42,402
+0,
+
+936
+00:35:42,402 --> 00:35:44,482
+you make that with T0,
+
+937
+00:35:44,482 --> 00:35:44,822
+0.
+
+938
+00:35:44,942 --> 00:35:47,042
+So one term would be L3,
+
+939
+00:35:47,042 --> 00:35:47,582
+0,
+
+940
+00:35:47,582 --> 00:35:48,942
+L1,
+
+941
+00:35:48,942 --> 00:35:49,262
+0,
+
+942
+00:35:49,262 --> 00:35:50,482
+T0,
+
+943
+00:35:50,482 --> 00:35:50,822
+0.
+
+944
+00:35:50,822 --> 00:35:52,982
+Then there would be another term,
+
+945
+00:35:52,982 --> 00:35:53,582
+L3,
+
+946
+00:35:53,582 --> 00:35:54,062
+0,
+
+947
+00:35:54,062 --> 00:35:55,042
+L1,
+
+948
+00:35:55,042 --> 00:35:55,402
+1,
+
+949
+00:35:55,402 --> 00:35:56,362
+T0,
+
+950
+00:35:56,362 --> 00:35:56,702
+1.
+
+951
+00:35:57,262 --> 00:35:58,662
+And so forth and so on.
+
+952
+00:35:58,722 --> 00:36:00,322
+There would be 16 such terms,
+
+953
+00:36:00,322 --> 00:36:03,022
+one for each index here,
+
+954
+00:36:03,022 --> 00:36:04,122
+and one for each index here,
+
+955
+00:36:04,122 --> 00:36:04,602
+and
+
+956
+00:36:04,602 --> 00:36:05,442
+you add them up.
+
+957
+00:36:06,582 --> 00:36:07,162
+All right?
+
+958
+00:36:08,582 --> 00:36:10,242
+So that's the idea of
+
+959
+00:36:10,242 --> 00:36:11,902
+the transformation property of a tensor.
+
+960
+00:36:17,342 --> 00:36:19,202
+And the thing about tensors...
+
+961
+00:36:20,362 --> 00:36:20,802
+Tensors.
+
+962
+00:36:20,802 --> 00:36:21,462
+Vectors,
+
+963
+00:36:21,462 --> 00:36:22,022
+scalars,
+
+964
+00:36:22,022 --> 00:36:22,662
+tensors.
+
+965
+00:36:22,742 --> 00:36:25,152
+The thing about tensors is if
+
+966
+00:36:25,152 --> 00:36:27,562
+they are equal in one frame,
+
+967
+00:36:27,562 --> 00:36:29,762
+they are equal in every frame.
+
+968
+00:36:30,482 --> 00:36:31,902
+That's easy to prove.
+
+969
+00:36:32,582 --> 00:36:36,462
+But to say that they're equal means all components equal.
+
+970
+00:36:37,322 --> 00:36:40,112
+If all components of a tensor are equal
+
+971
+00:36:40,112 --> 00:36:42,902
+to all the components of some other tensor,
+
+972
+00:36:43,561 --> 00:36:43,982
+of course,
+
+973
+00:36:43,982 --> 00:36:44,902
+then they're the same tensor,
+
+974
+00:36:44,902 --> 00:36:45,362
+but...
+
+975
+00:36:46,241 --> 00:36:48,441
+Or another way of saying it is if
+
+976
+00:36:48,441 --> 00:36:50,642
+all the components of a tensor are 0,
+
+977
+00:36:50,642 --> 00:36:52,942
+shift everything to the left side,
+
+978
+00:36:53,122 --> 00:36:55,742
+if all the components of a tensor are 0,
+
+979
+00:36:55,742 --> 00:36:58,602
+they are 0 in every reference frame.
+
+980
+00:36:59,222 --> 00:36:59,722
+Okay?
+
+981
+00:36:59,822 --> 00:37:01,612
+So to say that a tensor
+
+982
+00:37:01,612 --> 00:37:03,402
+is 0 is an invariant statement.
+
+983
+00:37:03,882 --> 00:37:04,682
+As I said,
+
+984
+00:37:04,682 --> 00:37:06,742
+it's not enough to look at some
+
+985
+00:37:06,742 --> 00:37:08,802
+component and say that component is 0,
+
+986
+00:37:09,042 --> 00:37:10,242
+the whole thing is a tensor,
+
+987
+00:37:10,242 --> 00:37:11,802
+so it must be 0 in every frame.
+
+988
+00:37:12,002 --> 00:37:12,442
+No.
+
+989
+00:37:12,642 --> 00:37:14,642
+If all the components are 0,
+
+990
+00:37:14,642 --> 00:37:16,042
+they're 0 in every frame.
+
+991
+00:37:16,202 --> 00:37:18,022
+And that's the power of tensors.
+
+992
+00:37:18,182 --> 00:37:19,902
+It allows you to make statements.
+
+993
+00:37:19,902 --> 00:37:21,742
+It allows you to write down equations,
+
+994
+00:37:22,642 --> 00:37:23,202
+which,
+
+995
+00:37:23,202 --> 00:37:24,602
+if they're true in one frame,
+
+996
+00:37:24,602 --> 00:37:27,102
+will be true in another frame after transformation.
+
+997
+00:37:28,202 --> 00:37:29,782
+That's the basic power of it.
+
+998
+00:37:31,042 --> 00:37:31,842
+All right,
+
+999
+00:37:31,842 --> 00:37:35,162
+now I've told you how to transform
+
+1000
+00:37:35,162 --> 00:37:38,482
+a tensor with all of its indices upstairs.
+
+1001
+00:37:39,802 --> 00:37:42,212
+I could start writing down the
+
+1002
+00:37:42,212 --> 00:37:44,622
+rules for tensors with some indices upstairs,
+
+1003
+00:37:44,802 --> 00:37:45,982
+some indices downstairs,
+
+1004
+00:37:47,142 --> 00:37:48,842
+but I think I won't,
+
+1005
+00:37:48,842 --> 00:37:50,532
+and instead I will just tell you
+
+1006
+00:37:50,532 --> 00:37:52,222
+that once you know how a tensor transforms,
+
+1007
+00:37:53,022 --> 00:37:57,922
+you can immediately deduce how its other variants transform.
+
+1008
+00:37:58,702 --> 00:37:59,902
+The other variants,
+
+1009
+00:37:59,902 --> 00:38:00,542
+for example,
+
+1010
+00:38:00,542 --> 00:38:02,482
+the other versions of the same tensor,
+
+1011
+00:38:02,642 --> 00:38:04,002
+same tensor,
+
+1012
+00:38:04,002 --> 00:38:05,282
+same geometric quantity,
+
+1013
+00:38:05,642 --> 00:38:08,302
+but with some indices upstairs and downstairs.
+
+1014
+00:38:08,482 --> 00:38:09,042
+For example,
+
+1015
+00:38:11,602 --> 00:38:13,802
+a mu b nu.
+
+1016
+00:38:14,422 --> 00:38:16,542
+That would be some tensor with
+
+1017
+00:38:16,542 --> 00:38:18,662
+one index upstairs and one index downstairs.
+
+1018
+00:38:18,842 --> 00:38:21,062
+How does it transform?
+
+1019
+00:38:21,682 --> 00:38:22,542
+Never mind.
+
+1020
+00:38:22,642 --> 00:38:24,362
+You don't need to worry about it,
+
+1021
+00:38:24,402 --> 00:38:27,722
+because I will tell you immediately that this tensor here
+
+1022
+00:38:28,662 --> 00:38:31,202
+is given by T mu sigma,
+
+1023
+00:38:31,342 --> 00:38:34,222
+which you understand and know about how to transform it,
+
+1024
+00:38:35,602 --> 00:38:40,362
+times eta nu sigma.
+
+1025
+00:38:42,062 --> 00:38:43,642
+To lower an index,
+
+1026
+00:38:43,642 --> 00:38:44,722
+to take a tensor,
+
+1027
+00:38:44,942 --> 00:38:48,822
+and to take an index from contravariant to covariant,
+
+1028
+00:38:48,842 --> 00:38:50,262
+you multiply,
+
+1029
+00:38:50,262 --> 00:38:52,282
+you do it exactly the same way
+
+1030
+00:38:52,722 --> 00:38:53,922
+that you do it for a vector.
+
+1031
+00:38:54,682 --> 00:38:56,062
+You take that index,
+
+1032
+00:38:56,962 --> 00:39:00,362
+and you lower it by the operation of eta.
+
+1033
+00:39:02,302 --> 00:39:02,782
+So,
+
+1034
+00:39:02,782 --> 00:39:03,262
+again,
+
+1035
+00:39:03,262 --> 00:39:04,962
+this is a well-formed equation,
+
+1036
+00:39:05,501 --> 00:39:06,942
+a well-formed symbol.
+
+1037
+00:39:07,402 --> 00:39:08,602
+Sigma is summed over,
+
+1038
+00:39:11,681 --> 00:39:14,962
+and this here object is T mu nu.
+
+1039
+00:39:15,762 --> 00:39:16,441
+All right,
+
+1040
+00:39:16,441 --> 00:39:18,042
+but there's another way to think about it,
+
+1041
+00:39:18,042 --> 00:39:19,482
+an easy way to think about it.
+
+1042
+00:39:20,122 --> 00:39:23,081
+Given a tensor with all of its indices upstairs,
+
+1043
+00:39:24,682 --> 00:39:26,242
+what do you do to
+
+1044
+00:39:26,242 --> 00:39:27,802
+pull some of the indices downstairs?
+
+1045
+00:39:28,802 --> 00:39:30,662
+And the answer is very simple.
+
+1046
+00:39:31,222 --> 00:39:34,062
+If the index that you're pulling downstairs
+
+1047
+00:39:34,822 --> 00:39:36,082
+is a time index,
+
+1048
+00:39:36,402 --> 00:39:38,222
+you multiply by minus one.
+
+1049
+00:39:38,422 --> 00:39:39,602
+If it's a space index,
+
+1050
+00:39:39,602 --> 00:39:40,942
+you don't multiply at all.
+
+1051
+00:39:41,022 --> 00:39:41,762
+That's what eta does.
+
+1052
+00:39:42,202 --> 00:39:42,762
+So,
+
+1053
+00:39:42,762 --> 00:39:43,462
+for example,
+
+1054
+00:39:44,782 --> 00:39:46,602
+here's the tensor T,
+
+1055
+00:39:48,862 --> 00:39:51,302
+which is exactly the same as T,
+
+1056
+00:39:51,302 --> 00:39:51,942
+0,
+
+1057
+00:39:51,942 --> 00:39:52,302
+0,
+
+1058
+00:39:53,022 --> 00:39:55,182
+because I've lowered two indices.
+
+1059
+00:39:56,042 --> 00:39:59,062
+Lowering two indices is two minus signs.
+
+1060
+00:39:59,822 --> 00:40:00,382
+Okay?
+
+1061
+00:40:00,741 --> 00:40:03,762
+It's like the relation between A0,
+
+1062
+00:40:03,762 --> 00:40:04,502
+B0,
+
+1063
+00:40:05,162 --> 00:40:06,862
+and A sub 0,
+
+1064
+00:40:06,862 --> 00:40:07,922
+B sub 0.
+
+1065
+00:40:09,302 --> 00:40:11,562
+There are two minus signs in going
+
+1066
+00:40:11,562 --> 00:40:13,822
+from A super 0 to A sub 0,
+
+1067
+00:40:13,962 --> 00:40:17,562
+and going from B super 0 to B sub 0.
+
+1068
+00:40:18,162 --> 00:40:19,822
+Each one has a minus sign.
+
+1069
+00:40:20,022 --> 00:40:21,582
+This is equal to this.
+
+1070
+00:40:21,842 --> 00:40:23,082
+But what about this one?
+
+1071
+00:40:23,342 --> 00:40:23,862
+A0,
+
+1072
+00:40:23,862 --> 00:40:24,682
+B1,
+
+1073
+00:40:24,922 --> 00:40:28,622
+and how does that compare with A0,
+
+1074
+00:40:28,622 --> 00:40:29,942
+B1?
+
+1075
+00:40:31,602 --> 00:40:32,122
+Sorry,
+
+1076
+00:40:32,122 --> 00:40:32,542
+A0,
+
+1077
+00:40:32,542 --> 00:40:32,802
+B,
+
+1078
+00:40:32,802 --> 00:40:33,722
+let's put one down.
+
+1079
+00:40:33,822 --> 00:40:35,042
+Let's put both of them downstairs.
+
+1080
+00:40:36,262 --> 00:40:36,902
+All right.
+
+1081
+00:40:38,202 --> 00:40:41,642
+B super 1 and B sub 1 are the same.
+
+1082
+00:40:42,862 --> 00:40:45,102
+But A super 0 and A
+
+1083
+00:40:45,102 --> 00:40:47,342
+sub 0 differ by a minus sign,
+
+1084
+00:40:48,042 --> 00:40:50,422
+so T0,
+
+1085
+00:40:50,422 --> 00:40:54,742
+1 would be minus T0,
+
+1086
+00:40:54,742 --> 00:40:55,482
+1,
+
+1087
+00:40:55,722 --> 00:40:59,962
+because only one time component was lowered.
+
+1088
+00:41:00,682 --> 00:41:04,042
+Every time you lower or raise a time component,
+
+1089
+00:41:04,662 --> 00:41:05,862
+you get a minus sign.
+
+1090
+00:41:06,142 --> 00:41:07,622
+And that's all there is to it.
+
+1091
+00:41:08,702 --> 00:41:11,662
+But having a neat matrix notation
+
+1092
+00:41:11,662 --> 00:41:16,362
+is a fast summary of that fact,
+
+1093
+00:41:16,362 --> 00:41:21,002
+that the relation between covariant and contravariant
+
+1094
+00:41:21,002 --> 00:41:23,062
+is just every time a time
+
+1095
+00:41:23,062 --> 00:41:25,122
+index goes from upstairs to downstairs,
+
+1096
+00:41:25,222 --> 00:41:26,082
+it's a minus sign.
+
+1097
+00:41:26,522 --> 00:41:27,382
+I've got a question.
+
+1098
+00:41:27,862 --> 00:41:27,962
+Yeah.
+
+1099
+00:41:28,042 --> 00:41:30,402
+Why is it useful to have these two forms,
+
+1100
+00:41:30,462 --> 00:41:31,862
+contravariant and covariant?
+
+1101
+00:41:34,662 --> 00:41:36,582
+Just so you can write things like that.
+
+1102
+00:41:39,142 --> 00:41:42,002
+How else would we write
+
+1103
+00:41:42,002 --> 00:41:43,262
+A0,
+
+1104
+00:41:43,262 --> 00:41:45,502
+B0 minus A1,
+
+1105
+00:41:45,502 --> 00:41:46,222
+B1,
+
+1106
+00:41:46,222 --> 00:41:49,502
+minus A2,
+
+1107
+00:41:49,502 --> 00:41:50,242
+B2?
+
+1108
+00:41:54,902 --> 00:41:55,562
+That's it.
+
+1109
+00:41:56,622 --> 00:41:57,222
+Sorry,
+
+1110
+00:41:57,222 --> 00:41:57,822
+not this one,
+
+1111
+00:41:57,822 --> 00:41:58,262
+but...
+
+1112
+00:42:01,242 --> 00:42:01,842
+Yeah.
+
+1113
+00:42:03,402 --> 00:42:05,002
+This complicated thing,
+
+1114
+00:42:05,002 --> 00:42:06,442
+which requires four terms,
+
+1115
+00:42:07,622 --> 00:42:09,082
+let's put the minus sign here,
+
+1116
+00:42:09,082 --> 00:42:10,042
+plus,
+
+1117
+00:42:10,042 --> 00:42:10,482
+plus.
+
+1118
+00:42:12,302 --> 00:42:13,542
+One minus sign,
+
+1119
+00:42:13,542 --> 00:42:14,722
+three plus signs,
+
+1120
+00:42:14,722 --> 00:42:16,622
+and four terms altogether,
+
+1121
+00:42:19,642 --> 00:42:20,482
+is just...
+
+1122
+00:42:20,482 --> 00:42:21,772
+So you can do products
+
+1123
+00:42:21,772 --> 00:42:23,062
+of the signs working instead of...
+
+1124
+00:42:23,062 --> 00:42:23,142
+Yeah,
+
+1125
+00:42:23,142 --> 00:42:23,822
+that's all.
+
+1126
+00:42:24,402 --> 00:42:25,162
+That's the reason.
+
+1127
+00:42:25,302 --> 00:42:25,862
+There's got to be more to it than that.
+
+1128
+00:42:26,162 --> 00:42:26,582
+Hmm?
+
+1129
+00:42:26,822 --> 00:42:28,662
+There's got to be more to it than that.
+
+1130
+00:42:28,822 --> 00:42:29,242
+There is.
+
+1131
+00:42:30,482 --> 00:42:32,362
+You need it in display arc.
+
+1132
+00:42:34,682 --> 00:42:35,462
+There is more,
+
+1133
+00:42:35,462 --> 00:42:36,302
+but...
+
+1134
+00:42:39,342 --> 00:42:41,702
+The more to it is best described
+
+1135
+00:42:42,302 --> 00:42:43,742
+when we go to general relativity.
+
+1136
+00:42:44,722 --> 00:42:45,642
+For us right now,
+
+1137
+00:42:45,642 --> 00:42:47,042
+it's just a neat tool
+
+1138
+00:42:47,702 --> 00:42:49,642
+for manipulating indices.
+
+1139
+00:42:49,842 --> 00:42:51,922
+It's a neat tool for manipulating indices
+
+1140
+00:42:52,542 --> 00:42:54,762
+and minimizing the number of indices we need.
+
+1141
+00:42:55,122 --> 00:42:58,822
+When you asked earlier how many terms in A,
+
+1142
+00:42:58,822 --> 00:42:59,042
+U,
+
+1143
+00:42:59,042 --> 00:42:59,262
+B,
+
+1144
+00:42:59,262 --> 00:42:59,542
+U,
+
+1145
+00:42:59,622 --> 00:43:00,822
+I said U,
+
+1146
+00:43:00,822 --> 00:43:01,082
+U,
+
+1147
+00:43:01,082 --> 00:43:02,142
+and you said 16.
+
+1148
+00:43:02,582 --> 00:43:03,902
+That's 16 in A,
+
+1149
+00:43:03,902 --> 00:43:04,362
+mu...
+
+1150
+00:43:04,362 --> 00:43:04,622
+Yeah,
+
+1151
+00:43:04,622 --> 00:43:05,202
+in A,
+
+1152
+00:43:05,202 --> 00:43:05,462
+mu,
+
+1153
+00:43:05,462 --> 00:43:05,662
+B,
+
+1154
+00:43:05,662 --> 00:43:05,902
+nu,
+
+1155
+00:43:05,902 --> 00:43:06,842
+there are 16.
+
+1156
+00:43:07,282 --> 00:43:09,042
+So a tensor is always four,
+
+1157
+00:43:09,202 --> 00:43:11,482
+or is it just in the context of relativity?
+
+1158
+00:43:12,362 --> 00:43:12,882
+Right.
+
+1159
+00:43:12,882 --> 00:43:13,722
+That's...
+
+1160
+00:43:13,722 --> 00:43:14,122
+Yeah.
+
+1161
+00:43:14,682 --> 00:43:16,322
+In the context of relativity,
+
+1162
+00:43:16,622 --> 00:43:18,862
+because there are four coordinates,
+
+1163
+00:43:20,502 --> 00:43:22,562
+the indices run over four.
+
+1164
+00:43:23,022 --> 00:43:25,722
+So this would in general work for any indices,
+
+1165
+00:43:25,862 --> 00:43:26,742
+but in our class,
+
+1166
+00:43:26,742 --> 00:43:27,622
+this is four.
+
+1167
+00:43:27,962 --> 00:43:28,522
+Yeah,
+
+1168
+00:43:28,522 --> 00:43:28,742
+yeah,
+
+1169
+00:43:28,742 --> 00:43:29,202
+but I mean,
+
+1170
+00:43:29,202 --> 00:43:29,402
+no,
+
+1171
+00:43:29,462 --> 00:43:32,662
+it's worthwhile keeping in mind that it would work...
+
+1172
+00:43:32,662 --> 00:43:32,782
+Yeah,
+
+1173
+00:43:32,782 --> 00:43:33,382
+that's right.
+
+1174
+00:43:33,482 --> 00:43:33,922
+That's correct.
+
+1175
+00:43:34,702 --> 00:43:35,762
+And in fact,
+
+1176
+00:43:35,762 --> 00:43:38,782
+the analogous version of it
+
+1177
+00:43:38,782 --> 00:43:40,182
+for three-dimensional space
+
+1178
+00:43:41,242 --> 00:43:41,802
+is...
+
+1179
+00:43:41,802 --> 00:43:43,622
+essentially the same,
+
+1180
+00:43:43,622 --> 00:43:44,862
+but slightly simpler
+
+1181
+00:43:44,862 --> 00:43:47,362
+in that you don't ever have to distinguish
+
+1182
+00:43:47,362 --> 00:43:48,722
+upper and lower indices.
+
+1183
+00:43:49,202 --> 00:43:49,922
+That's it.
+
+1184
+00:43:50,322 --> 00:43:50,962
+Okay.
+
+1185
+00:43:51,442 --> 00:43:54,182
+Can you give a more general description
+
+1186
+00:43:54,182 --> 00:43:56,802
+of the covariate and contrarian?
+
+1187
+00:43:57,022 --> 00:43:57,822
+I certainly can,
+
+1188
+00:43:57,822 --> 00:43:59,022
+but not tonight.
+
+1189
+00:44:00,682 --> 00:44:01,002
+Okay.
+
+1190
+00:44:01,582 --> 00:44:02,222
+Okay.
+
+1191
+00:44:02,722 --> 00:44:03,182
+Right.
+
+1192
+00:44:04,262 --> 00:44:04,902
+Right,
+
+1193
+00:44:04,902 --> 00:44:06,482
+it has a geometric significance,
+
+1194
+00:44:07,902 --> 00:44:08,542
+but,
+
+1195
+00:44:08,542 --> 00:44:09,522
+you know,
+
+1196
+00:44:09,522 --> 00:44:10,722
+the geometric significance
+
+1197
+00:44:10,722 --> 00:44:11,522
+is something that's...
+
+1198
+00:44:11,522 --> 00:44:13,342
+something everybody figures out for themselves
+
+1199
+00:44:13,342 --> 00:44:16,462
+and then promptly forgets because you just really...
+
+1200
+00:44:16,462 --> 00:44:18,142
+you never really think about it.
+
+1201
+00:44:18,282 --> 00:44:20,362
+You just learn to manipulate the indices,
+
+1202
+00:44:20,562 --> 00:44:21,902
+and it's so quick and
+
+1203
+00:44:21,902 --> 00:44:23,242
+so efficient and so fast that...
+
+1204
+00:44:24,302 --> 00:44:24,742
+But,
+
+1205
+00:44:24,742 --> 00:44:25,202
+yes,
+
+1206
+00:44:25,202 --> 00:44:27,282
+it does have another...
+
+1207
+00:44:27,861 --> 00:44:29,482
+it does have a geometric meaning.
+
+1208
+00:44:31,361 --> 00:44:33,542
+The geometric meaning is...
+
+1209
+00:44:33,542 --> 00:44:34,382
+Well,
+
+1210
+00:44:34,382 --> 00:44:34,702
+okay,
+
+1211
+00:44:34,702 --> 00:44:36,442
+I don't want to get into it now.
+
+1212
+00:44:36,542 --> 00:44:37,362
+I wanted to...
+
+1213
+00:44:37,841 --> 00:44:39,522
+Tonight's lecture is really about electrodynamics,
+
+1214
+00:44:40,102 --> 00:44:40,922
+and we ain't gonna get there.
+
+1215
+00:44:41,522 --> 00:44:42,322
+All right.
+
+1216
+00:44:43,222 --> 00:44:43,762
+Now,
+
+1217
+00:44:43,762 --> 00:44:46,692
+let's talk about the different kinds of tensors.
+
+1218
+00:44:47,082 --> 00:44:47,242
+Now,
+
+1219
+00:44:47,242 --> 00:44:48,902
+I'm talking about tensors with two indices.
+
+1220
+00:44:49,702 --> 00:44:51,622
+Let's talk about indices with two indices.
+
+1221
+00:44:58,482 --> 00:45:00,482
+Here's a tensor with two indices.
+
+1222
+00:45:00,842 --> 00:45:01,382
+Now,
+
+1223
+00:45:01,382 --> 00:45:04,342
+this is not necessarily the same.
+
+1224
+00:45:04,462 --> 00:45:04,842
+In fact,
+
+1225
+00:45:04,842 --> 00:45:06,842
+it is not the same in general
+
+1226
+00:45:06,842 --> 00:45:08,262
+as T nu mu.
+
+1227
+00:45:08,262 --> 00:45:10,182
+T nu mu.
+
+1228
+00:45:11,602 --> 00:45:14,542
+Changing the order of the indices in general counts.
+
+1229
+00:45:14,642 --> 00:45:15,302
+For example,
+
+1230
+00:45:15,302 --> 00:45:17,862
+A mu B nu
+
+1231
+00:45:18,522 --> 00:45:20,712
+is not the same in
+
+1232
+00:45:20,712 --> 00:45:22,902
+general as A nu B mu.
+
+1233
+00:45:24,222 --> 00:45:27,442
+This could be A naught B1,
+
+1234
+00:45:27,742 --> 00:45:31,282
+and that's not the same as A1 B naught.
+
+1235
+00:45:31,602 --> 00:45:32,762
+Just not the same.
+
+1236
+00:45:33,122 --> 00:45:33,962
+All right.
+
+1237
+00:45:33,962 --> 00:45:34,322
+So,
+
+1238
+00:45:34,322 --> 00:45:34,902
+in general,
+
+1239
+00:45:34,902 --> 00:45:40,182
+tensors are not invariant under changing
+
+1240
+00:45:40,182 --> 00:45:41,122
+from one...
+
+1241
+00:45:41,122 --> 00:45:43,162
+on changing the order of the indices.
+
+1242
+00:45:43,982 --> 00:45:44,342
+Okay?
+
+1243
+00:45:44,442 --> 00:45:48,222
+But there is a special case called symmetric tensors.
+
+1244
+00:45:48,722 --> 00:45:50,662
+Symmetric tensors are ones
+
+1245
+00:45:52,341 --> 00:45:54,482
+which do have this property
+
+1246
+00:45:54,482 --> 00:45:58,082
+that T mu nu is equal to T nu mu.
+
+1247
+00:45:58,322 --> 00:46:00,322
+Let me construct one for you.
+
+1248
+00:46:00,902 --> 00:46:02,622
+A mu B nu
+
+1249
+00:46:02,622 --> 00:46:04,062
+plus
+
+1250
+00:46:05,862 --> 00:46:07,442
+A nu B mu.
+
+1251
+00:46:07,442 --> 00:46:10,722
+If you interchange mu and nu,
+
+1252
+00:46:11,942 --> 00:46:13,282
+this doesn't change.
+
+1253
+00:46:13,962 --> 00:46:15,902
+What happens is this becomes this,
+
+1254
+00:46:15,982 --> 00:46:16,822
+and this becomes this,
+
+1255
+00:46:16,982 --> 00:46:18,502
+and it's the same quantity.
+
+1256
+00:46:18,902 --> 00:46:20,362
+So you can construct,
+
+1257
+00:46:20,362 --> 00:46:21,682
+out of any tensor,
+
+1258
+00:46:21,882 --> 00:46:25,442
+a symmetric tensor by adding together the...
+
+1259
+00:46:27,542 --> 00:46:28,182
+well,
+
+1260
+00:46:28,182 --> 00:46:29,362
+by adding together...
+
+1261
+00:46:29,362 --> 00:46:31,342
+Some tensors are symmetric,
+
+1262
+00:46:31,342 --> 00:46:32,482
+others aren't.
+
+1263
+00:46:32,662 --> 00:46:33,042
+Okay?
+
+1264
+00:46:33,502 --> 00:46:34,942
+Some tensors are symmetric,
+
+1265
+00:46:34,942 --> 00:46:35,742
+others aren't.
+
+1266
+00:46:36,022 --> 00:46:37,422
+A symmetric tensor is a tensor
+
+1267
+00:46:37,442 --> 00:46:40,802
+that has a special place in general relativity.
+
+1268
+00:46:41,302 --> 00:46:45,022
+Not so important in special relativity.
+
+1269
+00:46:45,322 --> 00:46:45,502
+Well,
+
+1270
+00:46:45,502 --> 00:46:46,582
+it'll come up.
+
+1271
+00:46:47,002 --> 00:46:48,702
+But more important for us
+
+1272
+00:46:48,702 --> 00:46:50,402
+tonight is the anti-symmetric tensor.
+
+1273
+00:46:51,222 --> 00:46:52,722
+Let's call it F mu nu.
+
+1274
+00:46:54,062 --> 00:46:55,422
+A tensor which,
+
+1275
+00:46:55,422 --> 00:46:57,162
+when you interchange nu and mu,
+
+1276
+00:46:57,342 --> 00:46:58,162
+changes sign.
+
+1277
+00:46:59,162 --> 00:47:01,102
+We could construct such a tensor
+
+1278
+00:47:01,102 --> 00:47:03,102
+by putting a minus sign here.
+
+1279
+00:47:06,402 --> 00:47:07,762
+Putting a minus sign there
+
+1280
+00:47:08,082 --> 00:47:10,862
+would construct a tensor which would change sign
+
+1281
+00:47:11,221 --> 00:47:12,842
+when you interchange mu and nu.
+
+1282
+00:47:13,162 --> 00:47:15,042
+If you interchange mu and nu,
+
+1283
+00:47:15,182 --> 00:47:16,782
+this gets swapped with this,
+
+1284
+00:47:16,782 --> 00:47:18,222
+but there's a minus sign.
+
+1285
+00:47:18,662 --> 00:47:22,182
+So there are symmetric tensors and anti-symmetric tensors.
+
+1286
+00:47:22,962 --> 00:47:26,522
+Anti-symmetric tensors have fewer components
+
+1287
+00:47:26,522 --> 00:47:28,122
+than symmetric tensors.
+
+1288
+00:47:29,062 --> 00:47:30,542
+And the reason is
+
+1289
+00:47:30,542 --> 00:47:33,542
+their diagonal components vanish.
+
+1290
+00:47:34,062 --> 00:47:35,202
+For example,
+
+1291
+00:47:35,202 --> 00:47:36,782
+one of the things this equation says
+
+1292
+00:47:36,782 --> 00:47:38,922
+is that F naught naught
+
+1293
+00:47:38,922 --> 00:47:42,502
+is equal to minus F naught naught.
+
+1294
+00:47:43,122 --> 00:47:45,202
+Set mu and nu equal to time.
+
+1295
+00:47:46,142 --> 00:47:48,402
+F naught naught is minus F naught naught.
+
+1296
+00:47:48,522 --> 00:47:50,242
+The only solution to that is zero.
+
+1297
+00:47:51,621 --> 00:47:53,662
+So if you think of a tensor
+
+1298
+00:47:54,121 --> 00:47:54,962
+as an array,
+
+1299
+00:47:55,882 --> 00:47:56,802
+a matrix,
+
+1300
+00:47:56,802 --> 00:47:57,522
+if you like,
+
+1301
+00:47:58,022 --> 00:47:59,542
+if you think of it as an array,
+
+1302
+00:48:00,141 --> 00:48:02,861
+then an anti-symmetric tensor,
+
+1303
+00:48:03,121 --> 00:48:04,562
+this is the one we're going to be interested in,
+
+1304
+00:48:05,202 --> 00:48:07,282
+is completely zero on the diagonal.
+
+1305
+00:48:10,982 --> 00:48:12,822
+And the off-diagonal elements,
+
+1306
+00:48:12,922 --> 00:48:14,262
+I'm going to give them names now.
+
+1307
+00:48:14,482 --> 00:48:15,622
+I'm going to give them names.
+
+1308
+00:48:17,942 --> 00:48:19,062
+I'm going to call this one
+
+1309
+00:48:19,822 --> 00:48:21,902
+minus e sub one,
+
+1310
+00:48:22,182 --> 00:48:24,762
+this one minus e sub two,
+
+1311
+00:48:25,022 --> 00:48:27,262
+and this one minus e sub three.
+
+1312
+00:48:28,902 --> 00:48:29,502
+And...
+
+1313
+00:48:32,182 --> 00:48:33,522
+these names are,
+
+1314
+00:48:33,522 --> 00:48:34,062
+of course,
+
+1315
+00:48:36,162 --> 00:48:38,202
+chosen for future purposes,
+
+1316
+00:48:38,382 --> 00:48:40,022
+but I'm just going to write them down now.
+
+1317
+00:48:41,122 --> 00:48:41,722
+Uh...
+
+1318
+00:48:42,322 --> 00:48:44,062
+And they're just labels for now.
+
+1319
+00:48:45,382 --> 00:48:46,522
+Minus b three,
+
+1320
+00:48:48,482 --> 00:48:49,462
+b two,
+
+1321
+00:48:51,282 --> 00:48:53,242
+and minus b one.
+
+1322
+00:48:53,742 --> 00:48:55,282
+Now what do I put down here?
+
+1323
+00:48:56,322 --> 00:48:58,402
+I haven't written all the elements of it.
+
+1324
+00:49:00,742 --> 00:49:04,162
+But I'm assuming that this F tensor
+
+1325
+00:49:04,162 --> 00:49:05,782
+is anti-symmetric.
+
+1326
+00:49:06,222 --> 00:49:07,862
+If it's anti-symmetric,
+
+1327
+00:49:08,122 --> 00:49:11,482
+it means that as a matrix it's anti-symmetric.
+
+1328
+00:49:11,622 --> 00:49:13,722
+It means down here we put plus e one,
+
+1329
+00:49:14,442 --> 00:49:15,662
+plus e two,
+
+1330
+00:49:16,542 --> 00:49:17,842
+plus e three.
+
+1331
+00:49:19,402 --> 00:49:20,122
+Let's see.
+
+1332
+00:49:20,222 --> 00:49:21,542
+There's an element down here,
+
+1333
+00:49:21,682 --> 00:49:23,702
+which must be plus b three,
+
+1334
+00:49:25,222 --> 00:49:26,422
+minus b two,
+
+1335
+00:49:27,142 --> 00:49:28,542
+and plus b one.
+
+1336
+00:49:29,882 --> 00:49:31,122
+It's anti-symmetric,
+
+1337
+00:49:31,262 --> 00:49:32,882
+which means you just flip the sign
+
+1338
+00:49:32,882 --> 00:49:35,222
+when you reflect it around the diagonal.
+
+1339
+00:49:35,442 --> 00:49:38,182
+That's the notion of an anti-symmetric tensor,
+
+1340
+00:49:39,622 --> 00:49:42,282
+and it plays a key role
+
+1341
+00:49:42,882 --> 00:49:44,302
+in electromagnetism
+
+1342
+00:49:44,882 --> 00:49:46,282
+where e's stand,
+
+1343
+00:49:46,282 --> 00:49:46,922
+of course,
+
+1344
+00:49:46,922 --> 00:49:47,922
+for electric field,
+
+1345
+00:49:48,002 --> 00:49:50,002
+and b's stand for magnetic field.
+
+1346
+00:49:50,502 --> 00:49:52,062
+The electric and magnetic field,
+
+1347
+00:49:52,122 --> 00:49:52,682
+as we will see,
+
+1348
+00:49:52,802 --> 00:49:53,622
+we're not there yet,
+
+1349
+00:49:53,802 --> 00:49:54,882
+but as we'll see,
+
+1350
+00:49:54,922 --> 00:49:56,342
+the electric and magnetic field
+
+1351
+00:49:56,342 --> 00:49:57,462
+combine together
+
+1352
+00:49:58,782 --> 00:50:02,182
+to form an anti-symmetric tensor
+
+1353
+00:50:02,182 --> 00:50:02,862
+in the matrix.
+
+1354
+00:50:02,882 --> 00:50:03,342
+In relativity.
+
+1355
+00:50:05,682 --> 00:50:07,522
+The electric and magnetic field
+
+1356
+00:50:08,582 --> 00:50:11,242
+are not two independent things,
+
+1357
+00:50:11,982 --> 00:50:14,002
+and in particular what that means
+
+1358
+00:50:14,002 --> 00:50:16,882
+is that when a Lorentz transformation
+
+1359
+00:50:16,882 --> 00:50:17,962
+is performed,
+
+1360
+00:50:18,702 --> 00:50:21,302
+the electric field can become magnetic field,
+
+1361
+00:50:21,442 --> 00:50:23,182
+just like x can get mixed with t,
+
+1362
+00:50:24,602 --> 00:50:26,422
+e can get mixed with b.
+
+1363
+00:50:27,202 --> 00:50:29,602
+So what you see as a pure electric field,
+
+1364
+00:50:29,682 --> 00:50:32,582
+I might see as having some magnetic component.
+
+1365
+00:50:32,582 --> 00:50:35,562
+But we're not there yet.
+
+1366
+00:50:35,702 --> 00:50:38,022
+That was just by way of notation,
+
+1367
+00:50:38,462 --> 00:50:39,302
+strictly notation.
+
+1368
+00:50:43,562 --> 00:50:47,862
+Let's now begin with the physics part
+
+1369
+00:50:47,862 --> 00:50:48,602
+of tonight's lecture.
+
+1370
+00:50:48,702 --> 00:50:50,422
+This was all notation
+
+1371
+00:50:50,422 --> 00:50:56,522
+and abstract rather dry.
+
+1372
+00:51:00,862 --> 00:51:02,562
+But we'd all go crazy if we didn't.
+
+1373
+00:51:02,562 --> 00:51:03,702
+If I had to write 0,
+
+1374
+00:51:03,702 --> 00:51:04,022
+0,
+
+1375
+00:51:04,022 --> 00:51:04,402
+1,
+
+1376
+00:51:04,402 --> 00:51:04,722
+1,
+
+1377
+00:51:04,722 --> 00:51:05,022
+2,
+
+1378
+00:51:05,022 --> 00:51:05,322
+2,
+
+1379
+00:51:05,322 --> 00:51:05,622
+3,
+
+1380
+00:51:05,622 --> 00:51:05,882
+3
+
+1381
+00:51:05,882 --> 00:51:07,042
+every time I wrote an equation,
+
+1382
+00:51:07,302 --> 00:51:09,982
+and so it's good to have this notation.
+
+1383
+00:51:10,362 --> 00:51:10,622
+Okay.
+
+1384
+00:51:10,902 --> 00:51:11,422
+Now,
+
+1385
+00:51:13,302 --> 00:51:16,102
+we could begin either studying
+
+1386
+00:51:16,682 --> 00:51:19,742
+the dynamics of the electric and magnetic field,
+
+1387
+00:51:21,042 --> 00:51:23,662
+or we could begin by studying
+
+1388
+00:51:23,662 --> 00:51:25,622
+the motion of a particle
+
+1389
+00:51:25,622 --> 00:51:27,982
+in an electric and magnetic field.
+
+1390
+00:51:28,422 --> 00:51:30,742
+The dynamics of the electromagnetic field
+
+1391
+00:51:30,742 --> 00:51:32,542
+would be the equations of the
+
+1392
+00:51:32,562 --> 00:51:34,982
+motion that electromagnetic fields satisfy.
+
+1393
+00:51:35,502 --> 00:51:36,902
+The Maxwell equations,
+
+1394
+00:51:36,902 --> 00:51:38,502
+to put it briefly.
+
+1395
+00:51:39,522 --> 00:51:42,802
+Whereas the equations of a particle
+
+1396
+00:51:42,802 --> 00:51:44,822
+moving in an electromagnetic field
+
+1397
+00:51:45,542 --> 00:51:47,822
+are the Lorentz force law.
+
+1398
+00:51:48,622 --> 00:51:51,282
+Let me remind you what the Lorentz force law is.
+
+1399
+00:51:52,502 --> 00:51:54,742
+And then we're going to derive it from something else.
+
+1400
+00:51:54,842 --> 00:51:56,382
+We're going to derive it from a combination
+
+1401
+00:51:58,182 --> 00:51:59,782
+of relativistic ideas
+
+1402
+00:52:00,882 --> 00:52:02,322
+and the action principle.
+
+1403
+00:52:03,981 --> 00:52:04,822
+All right.
+
+1404
+00:52:04,842 --> 00:52:06,142
+I'll just remind you,
+
+1405
+00:52:07,342 --> 00:52:08,842
+mass times acceleration,
+
+1406
+00:52:09,182 --> 00:52:11,922
+this is a low velocity version of it,
+
+1407
+00:52:12,002 --> 00:52:13,862
+mass times acceleration,
+
+1408
+00:52:14,042 --> 00:52:16,462
+where we don't have to worry about relativity too much,
+
+1409
+00:52:16,602 --> 00:52:19,342
+mass times acceleration is equal.
+
+1410
+00:52:19,542 --> 00:52:19,902
+Now,
+
+1411
+00:52:19,902 --> 00:52:20,762
+on the right-hand side,
+
+1412
+00:52:21,302 --> 00:52:24,082
+you have the electric charge of a charged particle
+
+1413
+00:52:24,862 --> 00:52:26,662
+times the electric field.
+
+1414
+00:52:28,282 --> 00:52:29,942
+Mass times acceleration
+
+1415
+00:52:30,562 --> 00:52:32,162
+is electric field
+
+1416
+00:52:32,162 --> 00:52:33,302
+times electric charge.
+
+1417
+00:52:33,502 --> 00:52:36,202
+And the other term is the magnetic charge,
+
+1418
+00:52:36,402 --> 00:52:36,802
+the magnetic,
+
+1419
+00:52:36,802 --> 00:52:37,242
+sorry,
+
+1420
+00:52:37,242 --> 00:52:38,142
+not the magnetic charge,
+
+1421
+00:52:38,342 --> 00:52:39,722
+the magnetic force,
+
+1422
+00:52:39,962 --> 00:52:44,202
+which also involves an electric charge.
+
+1423
+00:52:45,382 --> 00:52:45,942
+Plus,
+
+1424
+00:52:45,942 --> 00:52:46,682
+I think it is,
+
+1425
+00:52:47,262 --> 00:52:48,802
+velocity of the particle
+
+1426
+00:52:49,402 --> 00:52:51,922
+cross product with the magnetic field.
+
+1427
+00:52:54,782 --> 00:52:55,522
+All right.
+
+1428
+00:52:55,822 --> 00:52:56,842
+Cross product,
+
+1429
+00:52:56,842 --> 00:52:59,482
+I assume you know how to think about cross products.
+
+1430
+00:53:00,241 --> 00:53:01,782
+We'll use them over and over again.
+
+1431
+00:53:03,202 --> 00:53:04,802
+I actually have a little
+
+1432
+00:53:04,802 --> 00:53:06,402
+section in here on cross products,
+
+1433
+00:53:06,462 --> 00:53:07,662
+but I'm not going to do it tonight
+
+1434
+00:53:07,662 --> 00:53:10,782
+because I think we've done it enough times.
+
+1435
+00:53:11,921 --> 00:53:12,322
+That's,
+
+1436
+00:53:12,322 --> 00:53:14,162
+there are some speeds of light in there.
+
+1437
+00:53:14,742 --> 00:53:16,342
+I'm going to set them all equal to one.
+
+1438
+00:53:17,202 --> 00:53:17,602
+Uh,
+
+1439
+00:53:21,161 --> 00:53:23,402
+this is usually taken to be V over C,
+
+1440
+00:53:24,681 --> 00:53:26,002
+V divided by C.
+
+1441
+00:53:26,102 --> 00:53:26,822
+That's the only,
+
+1442
+00:53:27,302 --> 00:53:28,302
+I think that's the only
+
+1443
+00:53:28,302 --> 00:53:29,302
+speed of light in that formula.
+
+1444
+00:53:29,482 --> 00:53:31,882
+The little e is just the electric charge
+
+1445
+00:53:34,562 --> 00:53:36,522
+measured in appropriate units,
+
+1446
+00:53:36,582 --> 00:53:38,442
+measured in the appropriate units.
+
+1447
+00:53:39,762 --> 00:53:40,522
+All right.
+
+1448
+00:53:40,542 --> 00:53:41,062
+That's the,
+
+1449
+00:53:41,062 --> 00:53:43,422
+that's the non-relativistic version
+
+1450
+00:53:43,422 --> 00:53:45,102
+of the Lorentz force law,
+
+1451
+00:53:45,202 --> 00:53:46,592
+of which we're going to
+
+1452
+00:53:46,592 --> 00:53:47,982
+derive the relativistic version tonight
+
+1453
+00:53:49,342 --> 00:53:51,422
+and the full-blown relativity.
+
+1454
+00:53:51,822 --> 00:53:54,142
+And we're going to find that these two terms
+
+1455
+00:53:54,142 --> 00:53:56,842
+are really part of the same term.
+
+1456
+00:53:57,262 --> 00:53:59,462
+They're really part of the same term.
+
+1457
+00:53:59,482 --> 00:53:59,602
+So we're going to write the same thing
+
+1458
+00:54:02,722 --> 00:54:06,302
+written in a way where all reference frames
+
+1459
+00:54:06,302 --> 00:54:08,782
+will get the same answer.
+
+1460
+00:54:09,062 --> 00:54:09,902
+All right.
+
+1461
+00:54:09,942 --> 00:54:11,742
+So to ensure that,
+
+1462
+00:54:11,742 --> 00:54:12,062
+um,
+
+1463
+00:54:12,142 --> 00:54:15,742
+that our answers respect the rule
+
+1464
+00:54:15,742 --> 00:54:19,602
+that the law of motion of a charged particle
+
+1465
+00:54:20,262 --> 00:54:21,962
+is the same in every reference frame,
+
+1466
+00:54:22,162 --> 00:54:24,962
+we want to write an action principle
+
+1467
+00:54:24,962 --> 00:54:27,722
+where the action is invariant
+
+1468
+00:54:27,722 --> 00:54:28,662
+under Lorentz transformation.
+
+1469
+00:54:29,162 --> 00:54:29,822
+That's the key.
+
+1470
+00:54:30,962 --> 00:54:33,022
+Action invariant under Lorentz transformation.
+
+1471
+00:54:33,802 --> 00:54:34,362
+Uh,
+
+1472
+00:54:34,362 --> 00:54:35,622
+for a single particle,
+
+1473
+00:54:35,762 --> 00:54:38,082
+we had a formula.
+
+1474
+00:54:38,282 --> 00:54:39,202
+Let's go back.
+
+1475
+00:54:39,322 --> 00:54:40,642
+I don't need this now.
+
+1476
+00:54:40,822 --> 00:54:41,182
+We'll,
+
+1477
+00:54:41,182 --> 00:54:43,962
+we'll come back to it.
+
+1478
+00:54:45,962 --> 00:54:47,902
+For a particle without any field,
+
+1479
+00:54:48,082 --> 00:54:50,422
+we just wrote down an action,
+
+1480
+00:54:50,462 --> 00:54:52,902
+which was the integral along the trajectory
+
+1481
+00:54:52,902 --> 00:54:54,242
+from one to two,
+
+1482
+00:54:54,442 --> 00:54:56,642
+one and two being the starting point
+
+1483
+00:54:56,642 --> 00:54:57,922
+and the end point of the trajectory,
+
+1484
+00:54:58,602 --> 00:54:59,742
+minus the mass,
+
+1485
+00:55:01,662 --> 00:55:03,922
+times the proper time interval.
+
+1486
+00:55:07,372 --> 00:55:09,422
+The proper time from one point to the next,
+
+1487
+00:55:09,582 --> 00:55:12,102
+minus the mass times the total proper time
+
+1488
+00:55:12,102 --> 00:55:13,382
+from one to two.
+
+1489
+00:55:13,882 --> 00:55:15,362
+And we rewrote that
+
+1490
+00:55:17,322 --> 00:55:18,942
+as the square root
+
+1491
+00:55:21,162 --> 00:55:23,522
+of one minus
+
+1492
+00:55:24,722 --> 00:55:26,822
+x dot squared,
+
+1493
+00:55:27,222 --> 00:55:28,122
+where x dot,
+
+1494
+00:55:28,162 --> 00:55:29,882
+let's remember what x dot squared is,
+
+1495
+00:55:30,042 --> 00:55:32,562
+x dot m
+
+1496
+00:55:33,342 --> 00:55:36,142
+is the mth component of velocity.
+
+1497
+00:55:36,542 --> 00:55:39,562
+Here m is just a three vector symbol.
+
+1498
+00:55:39,982 --> 00:55:42,222
+x m dot and x dot squared
+
+1499
+00:55:42,222 --> 00:55:46,322
+means x one dot squared
+
+1500
+00:55:46,322 --> 00:55:48,522
+plus x two dot squared
+
+1501
+00:55:48,522 --> 00:55:53,502
+plus x three dot squared.
+
+1502
+00:55:53,502 --> 00:55:54,802
+And so forth.
+
+1503
+00:55:55,022 --> 00:55:55,942
+In other words,
+
+1504
+00:55:55,942 --> 00:55:57,182
+the total square of the velocity.
+
+1505
+00:55:57,782 --> 00:55:59,502
+That's what x dot squared means here,
+
+1506
+00:55:59,742 --> 00:56:00,722
+summed over one,
+
+1507
+00:56:00,722 --> 00:56:00,902
+two,
+
+1508
+00:56:00,902 --> 00:56:01,242
+and three.
+
+1509
+00:56:01,922 --> 00:56:02,542
+All right,
+
+1510
+00:56:02,542 --> 00:56:03,142
+so that was,
+
+1511
+00:56:03,142 --> 00:56:05,642
+that was the action integral dt.
+
+1512
+00:56:07,902 --> 00:56:10,522
+And that identifies minus m
+
+1513
+00:56:10,522 --> 00:56:11,682
+times the square root
+
+1514
+00:56:11,682 --> 00:56:13,422
+as the Lagrangian of the particle.
+
+1515
+00:56:13,562 --> 00:56:14,342
+We worked that out.
+
+1516
+00:56:15,302 --> 00:56:16,982
+We found out what the
+
+1517
+00:56:17,982 --> 00:56:18,562
+momenta were,
+
+1518
+00:56:19,082 --> 00:56:20,382
+what the energy was,
+
+1519
+00:56:21,401 --> 00:56:22,762
+and we'll just leave that.
+
+1520
+00:56:22,762 --> 00:56:23,542
+What do we add
+
+1521
+00:56:24,961 --> 00:56:26,902
+in an electromagnetic field?
+
+1522
+00:56:28,482 --> 00:56:29,162
+Well,
+
+1523
+00:56:29,162 --> 00:56:31,802
+I haven't told you much about electromagnetic fields yet,
+
+1524
+00:56:31,962 --> 00:56:33,752
+but the basic structure
+
+1525
+00:56:33,752 --> 00:56:35,542
+which enters an electromagnetic field
+
+1526
+00:56:35,542 --> 00:56:36,662
+is a four vector.
+
+1527
+00:56:37,582 --> 00:56:38,882
+A four vector,
+
+1528
+00:56:39,582 --> 00:56:41,722
+the electric and magnetic fields themselves
+
+1529
+00:56:41,722 --> 00:56:43,362
+are derived quantities.
+
+1530
+00:56:43,802 --> 00:56:45,822
+The basic underlying quantity
+
+1531
+00:56:45,822 --> 00:56:47,322
+is a four vector,
+
+1532
+00:56:47,402 --> 00:56:48,782
+a mu.
+
+1533
+00:56:50,902 --> 00:56:52,742
+And it's a function of position.
+
+1534
+00:56:53,502 --> 00:56:54,062
+It's the,
+
+1535
+00:56:54,062 --> 00:56:54,882
+and time.
+
+1536
+00:56:56,122 --> 00:56:59,322
+It's the field describing electromagnetic waves,
+
+1537
+00:56:59,322 --> 00:56:59,822
+if you like,
+
+1538
+00:56:59,902 --> 00:57:01,702
+or electromagnetic fields in general.
+
+1539
+00:57:01,982 --> 00:57:03,182
+And it's a four vector.
+
+1540
+00:57:05,342 --> 00:57:07,482
+The electric and magnetic fields
+
+1541
+00:57:07,482 --> 00:57:08,662
+are derived things
+
+1542
+00:57:08,662 --> 00:57:10,462
+which we're going to derive.
+
+1543
+00:57:10,522 --> 00:57:11,722
+I think we're going to derive them tonight.
+
+1544
+00:57:11,822 --> 00:57:12,922
+I'm going to try to derive them tonight.
+
+1545
+00:57:13,462 --> 00:57:16,142
+But the basic starting point is a four vector.
+
+1546
+00:57:16,322 --> 00:57:18,522
+The four vector is called the,
+
+1547
+00:57:18,582 --> 00:57:20,042
+the vector potential,
+
+1548
+00:57:20,202 --> 00:57:22,022
+or the four component vector potential.
+
+1549
+00:57:22,222 --> 00:57:22,742
+And it's a four vector.
+
+1550
+00:57:24,102 --> 00:57:27,622
+And we'll learn what it has to do
+
+1551
+00:57:27,622 --> 00:57:29,362
+with electric and magnetic fields in a moment.
+
+1552
+00:57:30,022 --> 00:57:31,202
+But what do you do with it
+
+1553
+00:57:31,542 --> 00:57:33,902
+to construct an action
+
+1554
+00:57:34,642 --> 00:57:36,962
+for the particle in the electromagnetic field?
+
+1555
+00:57:37,062 --> 00:57:38,042
+And the answer is very simple.
+
+1556
+00:57:38,242 --> 00:57:40,862
+It's in many respects simpler than the thing
+
+1557
+00:57:40,862 --> 00:57:42,302
+that we did with the scalar field.
+
+1558
+00:57:43,722 --> 00:57:44,642
+A mu
+
+1559
+00:57:46,582 --> 00:57:48,422
+is a field with a lower index.
+
+1560
+00:57:49,582 --> 00:57:51,982
+The natural thing to do with it,
+
+1561
+00:57:52,882 --> 00:57:54,422
+along a trajectory,
+
+1562
+00:57:55,742 --> 00:57:58,182
+is to take a little segment of the trajectory
+
+1563
+00:57:58,942 --> 00:58:01,062
+described by dx mu,
+
+1564
+00:58:01,622 --> 00:58:04,002
+a little four vector from here to here,
+
+1565
+00:58:05,282 --> 00:58:07,682
+and what can you do with such a four vector
+
+1566
+00:58:07,682 --> 00:58:09,822
+if you have another four vector,
+
+1567
+00:58:09,942 --> 00:58:12,782
+in particular a four vector with covariant indices,
+
+1568
+00:58:13,022 --> 00:58:14,982
+to make a little scalar quantity
+
+1569
+00:58:14,982 --> 00:58:16,962
+associated with that little gap there?
+
+1570
+00:58:18,782 --> 00:58:19,342
+Well,
+
+1571
+00:58:19,342 --> 00:58:20,582
+you take the two vectors
+
+1572
+00:58:20,582 --> 00:58:22,062
+and you multiply them together.
+
+1573
+00:58:22,802 --> 00:58:25,762
+With one upper index and one lower index.
+
+1574
+00:58:27,102 --> 00:58:28,222
+I'll write in here
+
+1575
+00:58:28,802 --> 00:58:30,762
+that a mu is a function of x,
+
+1576
+00:58:30,882 --> 00:58:32,722
+which means x and t.
+
+1577
+00:58:35,082 --> 00:58:36,682
+And then you sum them all up.
+
+1578
+00:58:37,562 --> 00:58:40,402
+You integrate from one end to the other,
+
+1579
+00:58:40,462 --> 00:58:41,382
+from one to two.
+
+1580
+00:58:44,062 --> 00:58:45,822
+And this is just another way of saying
+
+1581
+00:58:45,822 --> 00:58:47,362
+for each little gap there,
+
+1582
+00:58:47,482 --> 00:58:51,542
+take the differential distance along that segment,
+
+1583
+00:58:51,542 --> 00:58:55,802
+and multiply it by a mu to form a scalar.
+
+1584
+00:58:56,722 --> 00:58:59,722
+The x mu times a mu is a scalar.
+
+1585
+00:59:00,022 --> 00:59:01,942
+Everybody agrees about its value
+
+1586
+00:59:02,522 --> 00:59:04,382
+on each one of these little segments.
+
+1587
+00:59:04,742 --> 00:59:06,122
+And we add them together.
+
+1588
+00:59:06,502 --> 00:59:07,562
+You can add them as
+
+1589
+00:59:07,562 --> 00:59:08,622
+well as I can add them.
+
+1590
+00:59:09,342 --> 00:59:11,962
+And we will get the same answer for the action
+
+1591
+00:59:12,542 --> 00:59:15,002
+because what I wrote here was a scalar.
+
+1592
+00:59:15,202 --> 00:59:16,262
+I added them all up.
+
+1593
+00:59:16,482 --> 00:59:19,322
+Adding quantities that we agree about
+
+1594
+00:59:19,322 --> 00:59:21,042
+will continue to agree about them.
+
+1595
+00:59:22,482 --> 00:59:24,422
+What more can I do with this?
+
+1596
+00:59:24,482 --> 00:59:25,282
+Not much.
+
+1597
+00:59:25,702 --> 00:59:26,852
+The only other thing that
+
+1598
+00:59:26,852 --> 00:59:28,002
+I'm going to do to it
+
+1599
+00:59:28,002 --> 00:59:29,922
+is I'm going to multiply it by a constant.
+
+1600
+00:59:30,762 --> 00:59:32,762
+And we're going to call that constant E.
+
+1601
+00:59:34,382 --> 00:59:35,922
+It is the electric charge.
+
+1602
+00:59:37,622 --> 00:59:40,122
+And because of a notation
+
+1603
+00:59:40,122 --> 00:59:43,162
+that was first put in place by Benjamin Franklin,
+
+1604
+00:59:43,982 --> 00:59:45,542
+there's a minus sign here.
+
+1605
+00:59:47,602 --> 00:59:48,522
+That's arbitrary.
+
+1606
+00:59:49,362 --> 00:59:52,102
+It depends on our definition of electric charge.
+
+1607
+00:59:53,402 --> 00:59:55,322
+And had the proton been...
+
+1608
+01:00:04,122 --> 01:00:04,662
+Yeah,
+
+1609
+01:00:04,662 --> 01:00:05,202
+okay,
+
+1610
+01:00:05,202 --> 01:00:06,182
+so there's a minus sign.
+
+1611
+01:00:06,302 --> 01:00:07,482
+So here's the other term
+
+1612
+01:00:07,482 --> 01:00:09,902
+in the action of a particle
+
+1613
+01:00:10,802 --> 01:00:12,942
+moving in an electromagnetic field.
+
+1614
+01:00:14,262 --> 01:00:15,302
+Let's write it up here.
+
+1615
+01:00:15,442 --> 01:00:19,242
+Minus E times an integral from the same point
+
+1616
+01:00:19,322 --> 01:00:20,082
+from 1 to 2
+
+1617
+01:00:23,442 --> 01:00:28,142
+dx mu amu of x.
+
+1618
+01:00:29,262 --> 01:00:30,362
+Now what do we want to do?
+
+1619
+01:00:30,402 --> 01:00:32,382
+We want to write down Lagrange's equations.
+
+1620
+01:00:32,922 --> 01:00:35,062
+We want to write down Lagrange's equations
+
+1621
+01:00:35,062 --> 01:00:36,962
+for the motion of the particle.
+
+1622
+01:00:37,342 --> 01:00:40,322
+And really my goal is to write Lagrange's equations
+
+1623
+01:00:40,322 --> 01:00:43,682
+and show that they're just the Lorentz force law.
+
+1624
+01:00:44,502 --> 01:00:46,142
+But I would like to do it in a way
+
+1625
+01:00:46,142 --> 01:00:48,582
+which is relativistically invariant.
+
+1626
+01:00:49,442 --> 01:00:50,062
+MA,
+
+1627
+01:00:50,062 --> 01:00:51,842
+mass times acceleration,
+
+1628
+01:00:52,242 --> 01:00:55,082
+is a very non-relativistic formula.
+
+1629
+01:00:55,962 --> 01:00:56,582
+What,
+
+1630
+01:00:56,582 --> 01:00:57,502
+for example,
+
+1631
+01:00:57,502 --> 01:01:00,842
+is relativistic acceleration?
+
+1632
+01:01:01,082 --> 01:01:02,782
+What does acceleration mean?
+
+1633
+01:01:02,902 --> 01:01:04,982
+Does it mean the second time derivative
+
+1634
+01:01:04,982 --> 01:01:08,802
+of the position with respect to time?
+
+1635
+01:01:09,162 --> 01:01:11,542
+Or does it mean the second time derivative
+
+1636
+01:01:11,542 --> 01:01:14,242
+of any one of the four coordinates
+
+1637
+01:01:14,242 --> 01:01:16,082
+with respect to time?
+
+1638
+01:01:16,082 --> 01:01:18,922
+Or does it mean the second time derivative
+
+1639
+01:01:18,922 --> 01:01:20,342
+with respect to proper time?
+
+1640
+01:01:21,322 --> 01:01:22,022
+Well,
+
+1641
+01:01:22,022 --> 01:01:25,062
+I think we probably all can all guess
+
+1642
+01:01:25,062 --> 01:01:28,662
+that the invariant or the best definition
+
+1643
+01:01:28,662 --> 01:01:30,722
+of acceleration and relativity
+
+1644
+01:01:30,722 --> 01:01:34,102
+is to differentiate the coordinates twice
+
+1645
+01:01:34,102 --> 01:01:37,462
+with respect to proper time along the trajectory.
+
+1646
+01:01:38,442 --> 01:01:39,442
+That's a guess.
+
+1647
+01:01:39,682 --> 01:01:41,262
+It is the right definition.
+
+1648
+01:01:41,772 --> 01:01:42,782
+And in that form,
+
+1649
+01:01:42,782 --> 01:01:44,902
+acceleration is a four vector.
+
+1650
+01:01:46,082 --> 01:01:47,742
+We want to write four vector equations.
+
+1651
+01:01:48,782 --> 01:01:54,942
+But we're going to begin with a thinking about velocity
+
+1652
+01:01:54,942 --> 01:01:56,722
+being derivative with respect to time.
+
+1653
+01:01:56,922 --> 01:01:57,462
+And later,
+
+1654
+01:01:57,462 --> 01:01:58,642
+when we calculate the equation,
+
+1655
+01:01:59,142 --> 01:02:01,862
+we'll go back and make it Lorentz invariant.
+
+1656
+01:02:01,922 --> 01:02:02,002
+Now,
+
+1657
+01:02:02,002 --> 01:02:02,722
+we won't change it.
+
+1658
+01:02:02,922 --> 01:02:05,402
+We'll rewrite it in a way which you'll recognize
+
+1659
+01:02:05,402 --> 01:02:07,442
+as an equation among four vectors.
+
+1660
+01:02:08,282 --> 01:02:08,762
+Okay,
+
+1661
+01:02:08,762 --> 01:02:10,242
+so let's leave it this way for the moment.
+
+1662
+01:02:12,362 --> 01:02:16,002
+This quantity in here would be the Lagrangian.
+
+1663
+01:02:16,082 --> 01:02:19,322
+So this would be the Lagrangian for the free particle.
+
+1664
+01:02:20,462 --> 01:02:23,382
+But there's another contribution to the action over here.
+
+1665
+01:02:23,462 --> 01:02:24,942
+So let's write this in a form
+
+1666
+01:02:26,282 --> 01:02:28,302
+which would make it look like a Lagrangian.
+
+1667
+01:02:28,342 --> 01:02:29,062
+This is very easy.
+
+1668
+01:02:29,562 --> 01:02:36,042
+We just divide by dt and multiply by dt.
+
+1669
+01:02:38,202 --> 01:02:38,882
+All right,
+
+1670
+01:02:38,882 --> 01:02:40,042
+so let's see what we have here.
+
+1671
+01:02:41,742 --> 01:02:43,462
+There's dx0 by dt.
+
+1672
+01:02:43,682 --> 01:02:45,042
+What is dx0 by dt?
+
+1673
+01:02:47,502 --> 01:02:48,522
+x0 is t.
+
+1674
+01:02:50,102 --> 01:02:52,402
+So dx0 by dt is just 1.
+
+1675
+01:02:53,002 --> 01:02:59,262
+And the first thing we get here is a0 dt.
+
+1676
+01:03:00,242 --> 01:03:02,762
+And a0 is a function of x and t.
+
+1677
+01:03:09,722 --> 01:03:11,002
+So that's the first term.
+
+1678
+01:03:11,362 --> 01:03:12,502
+dt by dt,
+
+1679
+01:03:12,502 --> 01:03:13,302
+that's trivial.
+
+1680
+01:03:13,302 --> 01:03:17,542
+Now the next term is minus ee integral.
+
+1681
+01:03:18,362 --> 01:03:20,102
+Let's call this one now x.
+
+1682
+01:03:20,202 --> 01:03:21,342
+So it's dx by dt,
+
+1683
+01:03:21,342 --> 01:03:29,862
+which is x dot times a sub x dt.
+
+1684
+01:03:33,122 --> 01:03:35,082
+And likewise for y and z.
+
+1685
+01:03:35,622 --> 01:03:39,452
+And so the rest of this
+
+1686
+01:03:39,452 --> 01:03:43,282
+is simply xm dot a m.
+
+1687
+01:03:43,282 --> 01:03:45,822
+Or xm dot.
+
+1688
+01:03:47,822 --> 01:03:49,882
+The mth component of velocity
+
+1689
+01:03:50,861 --> 01:03:53,262
+dotted into dot product.
+
+1690
+01:03:53,822 --> 01:03:56,582
+mth component of velocity dotted
+
+1691
+01:03:57,102 --> 01:03:59,422
+with the mth component of the vector potential.
+
+1692
+01:04:01,562 --> 01:04:02,702
+That's what this is.
+
+1693
+01:04:03,122 --> 01:04:04,602
+And the reason I wrote it
+
+1694
+01:04:04,602 --> 01:04:06,082
+this way with a dt here
+
+1695
+01:04:06,082 --> 01:04:08,592
+is to make it have the
+
+1696
+01:04:08,592 --> 01:04:11,102
+familiar look of a Lagrangian action.
+
+1697
+01:04:11,462 --> 01:04:13,262
+An action written as an integral.
+
+1698
+01:04:13,282 --> 01:04:14,222
+Integral over dt.
+
+1699
+01:04:15,042 --> 01:04:15,762
+Okay,
+
+1700
+01:04:15,762 --> 01:04:16,962
+so let's write it down now.
+
+1701
+01:04:17,042 --> 01:04:33,782
+Minus ee integral a0 plus xm dot a m dt.
+
+1702
+01:04:37,842 --> 01:04:40,462
+And now we can identify the Lagrangian.
+
+1703
+01:04:40,562 --> 01:04:41,582
+Let's calculate.
+
+1704
+01:04:41,582 --> 01:04:41,882
+Well,
+
+1705
+01:04:41,882 --> 01:04:43,062
+it's here.
+
+1706
+01:04:43,242 --> 01:04:44,222
+The Lagrangian is here.
+
+1707
+01:04:44,442 --> 01:04:46,802
+It's just everything inside the integral here.
+
+1708
+01:04:47,022 --> 01:04:48,862
+The Lagrangian for this system,
+
+1709
+01:04:48,862 --> 01:04:49,681
+for this particle
+
+1710
+01:04:49,681 --> 01:04:52,161
+in an electromagnetic field is just minus m
+
+1711
+01:04:52,842 --> 01:04:56,942
+square root of one minus x dot squared.
+
+1712
+01:04:57,362 --> 01:04:58,952
+Which means x dot squared plus
+
+1713
+01:04:58,952 --> 01:05:00,542
+y dot squared plus z dot squared.
+
+1714
+01:05:02,942 --> 01:05:05,802
+Minus electric charge a0.
+
+1715
+01:05:07,082 --> 01:05:08,022
+That's this one.
+
+1716
+01:05:09,221 --> 01:05:13,501
+Minus electric charge x dot m
+
+1717
+01:05:13,501 --> 01:05:17,782
+a m of x and t.
+
+1718
+01:05:17,982 --> 01:05:21,142
+The a's are just functions of x and t.
+
+1719
+01:05:21,681 --> 01:05:22,562
+They're fields.
+
+1720
+01:05:23,562 --> 01:05:25,502
+Just like we did with the scalar field,
+
+1721
+01:05:26,602 --> 01:05:29,201
+I'm going to imagine that somebody told us
+
+1722
+01:05:29,201 --> 01:05:31,282
+what a of x and t is.
+
+1723
+01:05:31,502 --> 01:05:34,122
+Somebody told us it's just a known function.
+
+1724
+01:05:34,642 --> 01:05:36,922
+Each one is a known function of x and t.
+
+1725
+01:05:36,922 --> 01:05:40,382
+And now we're just exploring the motion of the particle
+
+1726
+01:05:40,382 --> 01:05:41,762
+in that known field.
+
+1727
+01:05:42,482 --> 01:05:44,162
+And here's the action for it.
+
+1728
+01:05:45,942 --> 01:05:47,302
+What do we want to do with it?
+
+1729
+01:05:47,362 --> 01:05:49,342
+We want to write the Euler Lagrange equations.
+
+1730
+01:05:50,022 --> 01:05:51,902
+And we want to show that
+
+1731
+01:05:51,902 --> 01:05:53,782
+they look like the Lorentz force law.
+
+1732
+01:05:54,202 --> 01:05:55,582
+So that's our goal.
+
+1733
+01:05:55,982 --> 01:05:57,382
+Take this Lagrangian
+
+1734
+01:05:57,382 --> 01:06:00,422
+and see if we can derive
+
+1735
+01:06:04,002 --> 01:06:05,862
+the Lorentz force law.
+
+1736
+01:06:07,322 --> 01:06:08,962
+Mass times acceleration
+
+1737
+01:06:08,962 --> 01:06:13,202
+is equal to electric field plus magnetic force.
+
+1738
+01:06:14,162 --> 01:06:16,902
+Electric and magnetic Lorentz forces.
+
+1739
+01:06:17,802 --> 01:06:18,522
+Alright,
+
+1740
+01:06:18,522 --> 01:06:19,302
+so where do we begin?
+
+1741
+01:06:19,582 --> 01:06:23,302
+Let's consider the equation of motion for xm.
+
+1742
+01:06:23,702 --> 01:06:26,002
+So we start with partial of L
+
+1743
+01:06:26,002 --> 01:06:29,822
+with respect to xm dot.
+
+1744
+01:06:30,422 --> 01:06:31,662
+That's the starting point.
+
+1745
+01:06:34,082 --> 01:06:37,122
+There's obviously a contribution from the first term here.
+
+1746
+01:06:37,682 --> 01:06:39,382
+And we've already done one of that.
+
+1747
+01:06:39,622 --> 01:06:40,742
+We know what that is.
+
+1748
+01:06:41,402 --> 01:06:42,202
+It's m,
+
+1749
+01:06:42,202 --> 01:06:43,042
+incidentally,
+
+1750
+01:06:43,042 --> 01:06:45,742
+this m is not the same as this m.
+
+1751
+01:06:46,582 --> 01:06:47,922
+This m is an index.
+
+1752
+01:06:48,142 --> 01:06:49,302
+This m is a mass.
+
+1753
+01:06:50,542 --> 01:06:51,742
+Let's not get confused.
+
+1754
+01:06:53,802 --> 01:06:55,582
+I apologize for that.
+
+1755
+01:06:55,702 --> 01:06:59,282
+But it's too late to do anything about it now.
+
+1756
+01:06:59,362 --> 01:07:00,142
+This one is mass.
+
+1757
+01:07:00,142 --> 01:07:02,002
+This one is the component m.
+
+1758
+01:07:02,662 --> 01:07:07,802
+m times xm dot
+
+1759
+01:07:07,802 --> 01:07:12,202
+divided by square root of 1 minus x dot squared.
+
+1760
+01:07:13,262 --> 01:07:16,382
+That's the derivative of this Lagrangian here
+
+1761
+01:07:16,382 --> 01:07:20,602
+with respect to the mth component of velocity.
+
+1762
+01:07:21,722 --> 01:07:22,722
+That's easy.
+
+1763
+01:07:23,222 --> 01:07:25,602
+We've done that before.
+
+1764
+01:07:25,942 --> 01:07:26,702
+Incidentally,
+
+1765
+01:07:26,702 --> 01:07:28,342
+this happens to be m
+
+1766
+01:07:31,922 --> 01:07:33,882
+times dxm by d tau.
+
+1767
+01:07:36,082 --> 01:07:37,542
+It's dx by dt,
+
+1768
+01:07:37,802 --> 01:07:40,102
+but this extra factor here just makes it
+
+1769
+01:07:40,702 --> 01:07:41,902
+the four velocity,
+
+1770
+01:07:42,182 --> 01:07:43,922
+the four vector of velocity.
+
+1771
+01:07:44,202 --> 01:07:47,062
+This is m times the four vector of velocity,
+
+1772
+01:07:48,082 --> 01:07:49,582
+the xm by d tau.
+
+1773
+01:07:49,962 --> 01:07:52,122
+But we'll come back to that.
+
+1774
+01:07:52,282 --> 01:07:52,842
+For the moment,
+
+1775
+01:07:52,842 --> 01:07:53,982
+let's just leave it this way.
+
+1776
+01:07:55,102 --> 01:07:56,582
+And then what do we do with that?
+
+1777
+01:07:56,582 --> 01:07:59,422
+We take the derivative with respect to time.
+
+1778
+01:07:59,862 --> 01:08:04,462
+So we get m d by d time
+
+1779
+01:08:06,542 --> 01:08:09,232
+xm dot divided by square root
+
+1780
+01:08:09,232 --> 01:08:11,922
+of 1 minus x dot squared.
+
+1781
+01:08:14,202 --> 01:08:15,782
+That's the left hand...
+
+1782
+01:08:15,782 --> 01:08:15,882
+Well,
+
+1783
+01:08:15,882 --> 01:08:16,301
+I'm sorry.
+
+1784
+01:08:16,442 --> 01:08:17,702
+That's one term.
+
+1785
+01:08:18,202 --> 01:08:18,662
+Oh,
+
+1786
+01:08:18,662 --> 01:08:20,022
+sorry.
+
+1787
+01:08:20,162 --> 01:08:21,162
+This is not right,
+
+1788
+01:08:21,162 --> 01:08:21,482
+is it?
+
+1789
+01:08:21,841 --> 01:08:22,502
+No.
+
+1790
+01:08:22,841 --> 01:08:23,502
+What?
+
+1791
+01:08:23,502 --> 01:08:24,282
+So why isn't it right?
+
+1792
+01:08:24,542 --> 01:08:26,402
+Because there's mixed stuff.
+
+1793
+01:08:26,421 --> 01:08:26,761
+Yeah,
+
+1794
+01:08:26,761 --> 01:08:27,881
+there's more stuff there.
+
+1795
+01:08:28,002 --> 01:08:29,102
+There's more stuff there,
+
+1796
+01:08:29,102 --> 01:08:29,682
+right over here.
+
+1797
+01:08:32,662 --> 01:08:33,721
+Let's put it back in.
+
+1798
+01:08:39,582 --> 01:08:40,362
+What is it?
+
+1799
+01:08:40,381 --> 01:08:44,202
+It's minus e times a sub m
+
+1800
+01:08:46,682 --> 01:08:47,482
+from here.
+
+1801
+01:08:49,022 --> 01:08:51,582
+Derivative of the Lagrangian with respect to x dot
+
+1802
+01:08:53,502 --> 01:08:54,622
+gives us another term,
+
+1803
+01:08:54,622 --> 01:08:56,182
+which is just the vector potential.
+
+1804
+01:08:56,362 --> 01:08:58,062
+Electric charge times the vector potential.
+
+1805
+01:08:58,602 --> 01:09:01,122
+And so what we have to do is be careful,
+
+1806
+01:09:01,122 --> 01:09:01,902
+first of all.
+
+1807
+01:09:02,102 --> 01:09:07,402
+This is m times this minus e a m.
+
+1808
+01:09:12,381 --> 01:09:13,822
+That's the left hand side.
+
+1809
+01:09:14,162 --> 01:09:16,612
+That's the full left hand
+
+1810
+01:09:16,612 --> 01:09:19,062
+side of the Euler-Lagrange equation.
+
+1811
+01:09:19,602 --> 01:09:21,202
+How about the right hand side?
+
+1812
+01:09:21,502 --> 01:09:22,822
+The right hand side...
+
+1813
+01:09:23,502 --> 01:09:27,142
+The right hand side should just be dl by dxm,
+
+1814
+01:09:27,142 --> 01:09:27,462
+right?
+
+1815
+01:09:29,261 --> 01:09:33,902
+Did we switch between co and contra x's?
+
+1816
+01:09:34,242 --> 01:09:34,721
+Yes,
+
+1817
+01:09:34,721 --> 01:09:35,261
+I did.
+
+1818
+01:09:35,562 --> 01:09:37,502
+But remember that this...
+
+1819
+01:09:37,502 --> 01:09:38,542
+We can put it back.
+
+1820
+01:09:39,122 --> 01:09:39,801
+Yeah,
+
+1821
+01:09:39,801 --> 01:09:40,562
+I did.
+
+1822
+01:09:40,761 --> 01:09:41,362
+I did.
+
+1823
+01:09:41,622 --> 01:09:45,801
+But remember that when you switch the space components,
+
+1824
+01:09:45,962 --> 01:09:46,682
+it doesn't matter.
+
+1825
+01:09:47,142 --> 01:09:49,301
+Does that require a,
+
+1826
+01:09:49,301 --> 01:09:51,462
+switching the a?
+
+1827
+01:09:51,462 --> 01:09:53,442
+It doesn't matter for a either.
+
+1828
+01:09:53,782 --> 01:09:54,362
+Right.
+
+1829
+01:09:54,802 --> 01:09:57,822
+All three-dimensional components,
+
+1830
+01:09:57,822 --> 01:09:59,102
+it doesn't matter.
+
+1831
+01:09:59,682 --> 01:10:00,262
+Question.
+
+1832
+01:10:00,502 --> 01:10:02,422
+Are we summing on Latin indices?
+
+1833
+01:10:04,222 --> 01:10:06,562
+Only sum over repeated indices.
+
+1834
+01:10:06,982 --> 01:10:08,982
+And don't count the mass as an index.
+
+1835
+01:10:09,682 --> 01:10:11,862
+But I mean Latin and Greek doesn't matter?
+
+1836
+01:10:14,082 --> 01:10:14,662
+Well,
+
+1837
+01:10:14,662 --> 01:10:15,342
+if you...
+
+1838
+01:10:15,942 --> 01:10:16,682
+Let's see.
+
+1839
+01:10:16,742 --> 01:10:18,522
+Where might have I done that?
+
+1840
+01:10:18,802 --> 01:10:19,482
+On the top four.
+
+1841
+01:10:19,622 --> 01:10:20,042
+Yes.
+
+1842
+01:10:20,042 --> 01:10:20,902
+Over here,
+
+1843
+01:10:20,902 --> 01:10:21,362
+I did.
+
+1844
+01:10:22,422 --> 01:10:22,902
+Yeah.
+
+1845
+01:10:23,002 --> 01:10:23,462
+Over here,
+
+1846
+01:10:23,462 --> 01:10:23,802
+I did.
+
+1847
+01:10:24,002 --> 01:10:25,322
+And so...
+
+1848
+01:10:25,322 --> 01:10:25,922
+Right.
+
+1849
+01:10:26,722 --> 01:10:28,042
+With Latin indices,
+
+1850
+01:10:28,042 --> 01:10:31,522
+it doesn't matter whether they're upstairs or downstairs.
+
+1851
+01:10:32,022 --> 01:10:33,302
+And if they're repeated,
+
+1852
+01:10:33,302 --> 01:10:34,182
+you sum over them.
+
+1853
+01:10:34,422 --> 01:10:36,222
+But you only sum from one to three,
+
+1854
+01:10:36,222 --> 01:10:37,482
+not from zero to three.
+
+1855
+01:10:38,182 --> 01:10:38,662
+Okay?
+
+1856
+01:10:39,362 --> 01:10:40,222
+So that's...
+
+1857
+01:10:40,222 --> 01:10:40,442
+Yes,
+
+1858
+01:10:40,442 --> 01:10:42,902
+that's part of the notational trick.
+
+1859
+01:10:44,502 --> 01:10:45,122
+All right.
+
+1860
+01:10:45,142 --> 01:10:47,432
+So here we have the left
+
+1861
+01:10:47,432 --> 01:10:49,722
+hand side of the Euler-Lagrange equation.
+
+1862
+01:10:49,722 --> 01:10:51,182
+And what do we have on the right hand side?
+
+1863
+01:10:51,382 --> 01:10:52,162
+On the right hand side,
+
+1864
+01:10:52,162 --> 01:10:55,052
+we have the derivative of
+
+1865
+01:10:55,052 --> 01:10:57,942
+the Lagrangian with respect to Xm.
+
+1866
+01:10:58,322 --> 01:10:59,002
+All right.
+
+1867
+01:10:59,002 --> 01:11:02,022
+So where does it depend on Xm?
+
+1868
+01:11:02,582 --> 01:11:04,042
+A naught depends on X.
+
+1869
+01:11:04,422 --> 01:11:06,972
+It's just thought of now as a fixed
+
+1870
+01:11:06,972 --> 01:11:09,522
+known function of the positions of the particles.
+
+1871
+01:11:10,182 --> 01:11:11,702
+And so on the right hand side,
+
+1872
+01:11:11,702 --> 01:11:15,642
+we will have minus E times the
+
+1873
+01:11:15,642 --> 01:11:19,582
+derivative of A naught with respect to Xm.
+
+1874
+01:11:20,722 --> 01:11:21,282
+Now,
+
+1875
+01:11:21,282 --> 01:11:22,762
+does that look familiar in any way?
+
+1876
+01:11:23,642 --> 01:11:25,162
+On the left hand side,
+
+1877
+01:11:25,162 --> 01:11:27,882
+something that's sort of like mass times acceleration.
+
+1878
+01:11:28,562 --> 01:11:30,162
+And on the right hand side,
+
+1879
+01:11:30,162 --> 01:11:33,202
+something which is minus the derivative of something.
+
+1880
+01:11:35,262 --> 01:11:37,682
+This is clearly E times
+
+1881
+01:11:37,682 --> 01:11:40,102
+A naught is clearly the electrostatic...
+
+1882
+01:11:40,102 --> 01:11:43,362
+is the potential energy.
+
+1883
+01:11:44,502 --> 01:11:47,032
+It's the thing which in mechanics we would ordinarily
+
+1884
+01:11:47,032 --> 01:11:49,562
+call V or U or whatever we call it.
+
+1885
+01:11:49,582 --> 01:11:50,142
+It's the thing which in mechanics
+
+1886
+01:11:50,142 --> 01:11:50,702
+we would ordinarily call potential energy.
+
+1887
+01:11:52,762 --> 01:11:55,502
+So this here is just familiar.
+
+1888
+01:11:56,902 --> 01:11:57,942
+It's here...
+
+1889
+01:11:57,942 --> 01:11:59,662
+left hand side here has
+
+1890
+01:11:59,662 --> 01:12:01,382
+something like mass times acceleration.
+
+1891
+01:12:02,262 --> 01:12:04,622
+If we didn't have this thing downstairs here,
+
+1892
+01:12:04,622 --> 01:12:05,082
+which is...
+
+1893
+01:12:05,082 --> 01:12:05,462
+after all,
+
+1894
+01:12:05,462 --> 01:12:07,402
+it's very close to 1 for slow motion.
+
+1895
+01:12:07,922 --> 01:12:09,222
+If the motion is slow,
+
+1896
+01:12:09,222 --> 01:12:11,742
+this literally is mass times acceleration.
+
+1897
+01:12:12,442 --> 01:12:14,122
+This term we'll worry about later.
+
+1898
+01:12:14,322 --> 01:12:15,662
+And on the right hand side,
+
+1899
+01:12:15,662 --> 01:12:17,742
+we just have minus the electric charge
+
+1900
+01:12:17,742 --> 01:12:22,082
+times the derivative of the electrostatic potential.
+
+1901
+01:12:23,542 --> 01:12:25,922
+So this is potential energy over here,
+
+1902
+01:12:25,922 --> 01:12:27,522
+or the gradient of potential energy,
+
+1903
+01:12:27,802 --> 01:12:30,322
+which is essentially electric field.
+
+1904
+01:12:30,582 --> 01:12:31,662
+But we'll come back to that.
+
+1905
+01:12:32,382 --> 01:12:33,382
+But now there's more.
+
+1906
+01:12:34,962 --> 01:12:37,862
+These terms also depend on X.
+
+1907
+01:12:38,562 --> 01:12:41,282
+And I have to differentiate them with respect to X.
+
+1908
+01:12:41,922 --> 01:12:44,002
+These terms are mixed.
+
+1909
+01:12:44,202 --> 01:12:47,482
+They depend on both velocity and position.
+
+1910
+01:12:48,522 --> 01:12:51,632
+We've already taken into account the
+
+1911
+01:12:51,632 --> 01:12:54,742
+fact that they depend on velocity.
+
+1912
+01:12:55,182 --> 01:12:57,382
+That was on the left side of the equation.
+
+1913
+01:12:57,722 --> 01:12:59,822
+On the right hand side of the equation,
+
+1914
+01:12:59,822 --> 01:13:02,162
+we have to write minus E...
+
+1915
+01:13:04,022 --> 01:13:05,802
+Let's call this here N,
+
+1916
+01:13:05,802 --> 01:13:06,802
+N,
+
+1917
+01:13:06,802 --> 01:13:07,342
+N.
+
+1918
+01:13:08,982 --> 01:13:10,422
+It's a summation index.
+
+1919
+01:13:12,142 --> 01:13:17,722
+X N dot times the derivative of A N.
+
+1920
+01:13:17,722 --> 01:13:21,162
+With respect to X M.
+
+1921
+01:13:22,002 --> 01:13:22,742
+Now why,
+
+1922
+01:13:22,742 --> 01:13:23,902
+where did all this come from?
+
+1923
+01:13:28,382 --> 01:13:30,782
+It doesn't matter whether I call this N or M.
+
+1924
+01:13:30,862 --> 01:13:31,442
+It's summed over.
+
+1925
+01:13:33,022 --> 01:13:35,162
+But by the time I got down to here,
+
+1926
+01:13:35,821 --> 01:13:38,082
+the M index was not summed over.
+
+1927
+01:13:38,302 --> 01:13:42,082
+So I don't want to call the summation index M.
+
+1928
+01:13:42,502 --> 01:13:43,662
+I called it N.
+
+1929
+01:13:43,662 --> 01:13:44,282
+I switched it.
+
+1930
+01:13:45,402 --> 01:13:48,362
+Why am I differentiating with respect to X M?
+
+1931
+01:13:49,282 --> 01:13:52,342
+Because the right hand side of the Euler-Lagrange equation
+
+1932
+01:13:52,342 --> 01:13:53,982
+is the derivative of the
+
+1933
+01:13:53,982 --> 01:13:55,622
+Lagrangian with respect to X M.
+
+1934
+01:13:57,002 --> 01:13:59,002
+So we have X N dot,
+
+1935
+01:13:59,002 --> 01:14:00,162
+derivative of A N,
+
+1936
+01:14:00,162 --> 01:14:01,762
+with respect to X M.
+
+1937
+01:14:02,462 --> 01:14:03,442
+So look at this.
+
+1938
+01:14:03,442 --> 01:14:04,182
+Look at it carefully.
+
+1939
+01:14:05,142 --> 01:14:08,122
+The left hand side has an index M,
+
+1940
+01:14:08,122 --> 01:14:09,462
+which is unsummed over.
+
+1941
+01:14:10,422 --> 01:14:12,782
+The right hand side has an index M,
+
+1942
+01:14:12,782 --> 01:14:14,182
+which is unsummed over.
+
+1943
+01:14:14,282 --> 01:14:15,022
+Not summed over.
+
+1944
+01:14:15,282 --> 01:14:17,082
+But it also has an index N,
+
+1945
+01:14:17,082 --> 01:14:18,602
+which is summed over.
+
+1946
+01:14:20,382 --> 01:14:22,602
+This is the Euler-Lagrange equation
+
+1947
+01:14:23,262 --> 01:14:25,982
+for each component of the position.
+
+1948
+01:14:26,522 --> 01:14:27,202
+X 1,
+
+1949
+01:14:27,202 --> 01:14:27,682
+X 2,
+
+1950
+01:14:27,682 --> 01:14:28,102
+X 3,
+
+1951
+01:14:28,102 --> 01:14:28,622
+and so forth.
+
+1952
+01:14:28,762 --> 01:14:32,702
+It doesn't look like anything you might recognize yet.
+
+1953
+01:14:34,062 --> 01:14:34,702
+Let's see,
+
+1954
+01:14:34,702 --> 01:14:35,222
+let's...
+
+1955
+01:14:38,042 --> 01:14:39,002
+And unfortunately,
+
+1956
+01:14:39,002 --> 01:14:42,062
+there's no simple way to deal with it,
+
+1957
+01:14:42,082 --> 01:14:43,062
+except to deal with it.
+
+1958
+01:14:45,622 --> 01:14:46,062
+Well,
+
+1959
+01:14:46,062 --> 01:14:46,502
+let's...
+
+1960
+01:14:56,642 --> 01:14:57,082
+Okay.
+
+1961
+01:14:59,762 --> 01:15:01,042
+The side over here,
+
+1962
+01:15:01,042 --> 01:15:01,422
+that's easy.
+
+1963
+01:15:01,562 --> 01:15:02,002
+That's just,
+
+1964
+01:15:02,002 --> 01:15:03,302
+we're not going to change that.
+
+1965
+01:15:03,382 --> 01:15:08,482
+D by D T of M,
+
+1966
+01:15:08,482 --> 01:15:10,202
+take M on the outside,
+
+1967
+01:15:10,882 --> 01:15:12,542
+X dot M,
+
+1968
+01:15:13,342 --> 01:15:14,522
+or M,
+
+1969
+01:15:14,522 --> 01:15:15,122
+doesn't matter,
+
+1970
+01:15:15,222 --> 01:15:16,342
+upper or lower,
+
+1971
+01:15:16,342 --> 01:15:16,962
+doesn't matter,
+
+1972
+01:15:17,102 --> 01:15:22,062
+over square root of 1 minus X dot squared.
+
+1973
+01:15:22,402 --> 01:15:23,862
+That's this term over here.
+
+1974
+01:15:24,442 --> 01:15:24,802
+Now,
+
+1975
+01:15:24,802 --> 01:15:28,762
+how do we differentiate this thing with respect to time?
+
+1976
+01:15:29,782 --> 01:15:30,642
+This doesn't...
+
+1977
+01:15:30,642 --> 01:15:34,042
+It may depend explicitly on time,
+
+1978
+01:15:34,922 --> 01:15:38,742
+but even if it didn't depend explicitly on time,
+
+1979
+01:15:39,402 --> 01:15:41,422
+it still wouldn't be constant.
+
+1980
+01:15:41,422 --> 01:15:42,262
+Why?
+
+1981
+01:15:42,802 --> 01:15:45,702
+Because the position of the particle is not constant.
+
+1982
+01:15:46,302 --> 01:15:48,442
+The position of the particle is moving,
+
+1983
+01:15:48,742 --> 01:15:52,622
+and so even if M only depended on position
+
+1984
+01:15:52,622 --> 01:15:54,422
+and not on time,
+
+1985
+01:15:55,482 --> 01:15:56,522
+A sub M,
+
+1986
+01:15:56,522 --> 01:15:58,502
+as it tracks the particle,
+
+1987
+01:15:58,622 --> 01:15:59,782
+as it follows the particle,
+
+1988
+01:16:00,022 --> 01:16:01,242
+would depend on time.
+
+1989
+01:16:03,222 --> 01:16:03,822
+So,
+
+1990
+01:16:03,822 --> 01:16:09,122
+there are two terms when you differentiate A sub M.
+
+1991
+01:16:09,222 --> 01:16:10,182
+Let's see what they are.
+
+1992
+01:16:10,182 --> 01:16:12,282
+There's minus E,
+
+1993
+01:16:13,042 --> 01:16:16,232
+and the first term is just
+
+1994
+01:16:16,232 --> 01:16:19,422
+the explicit derivative of A M
+
+1995
+01:16:20,142 --> 01:16:21,382
+with respect to T.
+
+1996
+01:16:22,902 --> 01:16:24,122
+A M of X and T.
+
+1997
+01:16:24,922 --> 01:16:26,722
+But then there's another term,
+
+1998
+01:16:26,742 --> 01:16:30,062
+and the other term is minus E
+
+1999
+01:16:31,361 --> 01:16:34,922
+times the change in A
+
+2000
+01:16:36,042 --> 01:16:37,482
+when X changes.
+
+2001
+01:16:37,582 --> 01:16:38,142
+Now,
+
+2002
+01:16:38,142 --> 01:16:38,522
+let's see.
+
+2003
+01:16:39,222 --> 01:16:40,342
+X in,
+
+2004
+01:16:41,822 --> 01:16:43,002
+A M,
+
+2005
+01:16:44,422 --> 01:16:46,142
+X in dot.
+
+2006
+01:16:47,602 --> 01:16:48,202
+Now,
+
+2007
+01:16:48,202 --> 01:16:49,462
+if you haven't gone to sleep yet,
+
+2008
+01:16:51,282 --> 01:16:52,642
+let's just see what we have.
+
+2009
+01:16:52,782 --> 01:16:55,462
+We have the time derivative of A.
+
+2010
+01:16:56,662 --> 01:16:57,662
+It's over here.
+
+2011
+01:16:58,902 --> 01:17:01,102
+A depends on time explicitly
+
+2012
+01:17:01,102 --> 01:17:03,222
+if the field is changing with time,
+
+2013
+01:17:03,382 --> 01:17:06,742
+but it also depends on time implicitly
+
+2014
+01:17:06,742 --> 01:17:08,502
+from the fact that the position of the particle
+
+2015
+01:17:08,522 --> 01:17:11,662
+is varying with respect to time.
+
+2016
+01:17:12,202 --> 01:17:12,822
+All right,
+
+2017
+01:17:12,822 --> 01:17:15,162
+so we differentiate A with respect to position
+
+2018
+01:17:15,162 --> 01:17:16,962
+and multiply by velocity.
+
+2019
+01:17:17,942 --> 01:17:19,622
+This is a dummy index.
+
+2020
+01:17:19,722 --> 01:17:20,362
+It's summed over.
+
+2021
+01:17:20,742 --> 01:17:22,712
+This one is the index that appears
+
+2022
+01:17:22,712 --> 01:17:24,682
+on the left side of the equation.
+
+2023
+01:17:25,422 --> 01:17:25,862
+So,
+
+2024
+01:17:25,862 --> 01:17:26,362
+what do we have?
+
+2025
+01:17:26,542 --> 01:17:29,162
+That's this side of the equation,
+
+2026
+01:17:29,642 --> 01:17:31,102
+and on the right-hand side,
+
+2027
+01:17:31,322 --> 01:17:32,162
+we're still not finished.
+
+2028
+01:17:32,262 --> 01:17:33,402
+We still have the right-hand side.
+
+2029
+01:17:33,722 --> 01:17:34,902
+A bit of a mess.
+
+2030
+01:17:36,862 --> 01:17:37,502
+Minus E,
+
+2031
+01:17:39,342 --> 01:17:41,042
+times the A naught
+
+2032
+01:17:46,282 --> 01:17:47,642
+by the X in.
+
+2033
+01:17:49,242 --> 01:17:50,002
+That's this term.
+
+2034
+01:17:50,102 --> 01:17:51,182
+That's the potential energy.
+
+2035
+01:17:51,622 --> 01:17:53,302
+And then there's this term over here.
+
+2036
+01:17:54,702 --> 01:17:55,422
+Minus E,
+
+2037
+01:17:59,562 --> 01:18:01,122
+X in dot,
+
+2038
+01:18:02,082 --> 01:18:05,342
+the A in by the X in.
+
+2039
+01:18:07,502 --> 01:18:08,262
+That's a lot of stuff.
+
+2040
+01:18:08,882 --> 01:18:10,312
+It's more stuff than I usually
+
+2041
+01:18:10,312 --> 01:18:11,742
+like to do on the blackboard,
+
+2042
+01:18:14,422 --> 01:18:16,042
+but no way around it.
+
+2043
+01:18:17,102 --> 01:18:17,582
+So,
+
+2044
+01:18:17,582 --> 01:18:20,142
+let's take this and call this M A.
+
+2045
+01:18:20,822 --> 01:18:21,982
+Mass times acceleration.
+
+2046
+01:18:22,382 --> 01:18:23,602
+It's not literally acceleration,
+
+2047
+01:18:24,002 --> 01:18:25,002
+but let's just call it,
+
+2048
+01:18:25,022 --> 01:18:26,602
+let's think of it as mass times acceleration.
+
+2049
+01:18:27,102 --> 01:18:28,742
+Leave it on the left-hand side.
+
+2050
+01:18:29,262 --> 01:18:31,452
+M D by D T
+
+2051
+01:18:31,452 --> 01:18:33,642
+X dot M over square root.
+
+2052
+01:18:34,782 --> 01:18:37,222
+And put everything else on the right-hand side,
+
+2053
+01:18:37,222 --> 01:18:38,722
+and then group things together.
+
+2054
+01:18:39,202 --> 01:18:40,542
+We're going to group them
+
+2055
+01:18:40,542 --> 01:18:41,882
+together into two kinds of terms.
+
+2056
+01:18:42,582 --> 01:18:45,922
+One kind of term is not proportional to a velocity.
+
+2057
+01:18:46,462 --> 01:18:48,822
+This has no velocity multiplying it.
+
+2058
+01:18:49,702 --> 01:18:51,662
+And here is another term
+
+2059
+01:18:51,662 --> 01:18:53,622
+which has no velocity multiplying it.
+
+2060
+01:18:55,002 --> 01:18:56,772
+The second term here on
+
+2061
+01:18:56,772 --> 01:18:58,542
+the left-hand side has a velocity.
+
+2062
+01:18:59,022 --> 01:19:00,462
+And the last term on
+
+2063
+01:19:00,462 --> 01:19:01,902
+the right-hand side has a velocity.
+
+2064
+01:19:02,042 --> 01:19:03,622
+So we're going to group things
+
+2065
+01:19:03,622 --> 01:19:05,202
+by whether they have a velocity
+
+2066
+01:19:05,202 --> 01:19:06,582
+or don't have a velocity.
+
+2067
+01:19:07,222 --> 01:19:07,562
+Now,
+
+2068
+01:19:07,562 --> 01:19:08,942
+just remember where we're going.
+
+2069
+01:19:09,282 --> 01:19:14,602
+We're going to electric field times electric charge,
+
+2070
+01:19:14,842 --> 01:19:17,582
+which does not have a velocity,
+
+2071
+01:19:17,842 --> 01:19:19,722
+and then V cross B,
+
+2072
+01:19:19,722 --> 01:19:21,142
+which does have a velocity.
+
+2073
+01:19:21,302 --> 01:19:22,102
+That's where we're going.
+
+2074
+01:19:22,442 --> 01:19:25,602
+And we're trying to identify now those two terms.
+
+2075
+01:19:26,662 --> 01:19:27,142
+All right,
+
+2076
+01:19:27,142 --> 01:19:28,482
+so left-hand side is,
+
+2077
+01:19:29,062 --> 01:19:32,142
+let's just call it mass times acceleration,
+
+2078
+01:19:32,262 --> 01:19:33,812
+but put some quotes around
+
+2079
+01:19:33,812 --> 01:19:35,362
+it to indicate that it's not
+
+2080
+01:19:35,362 --> 01:19:37,202
+the literal second time derivative of mass.
+
+2081
+01:19:37,222 --> 01:19:38,722
+It's the derivative of x with respect to t.
+
+2082
+01:19:40,742 --> 01:19:42,402
+Just left-hand side.
+
+2083
+01:19:42,682 --> 01:19:44,302
+On the right-hand side now,
+
+2084
+01:19:44,302 --> 01:19:45,742
+we have the two terms
+
+2085
+01:19:45,742 --> 01:19:49,882
+which don't involve velocities.
+
+2086
+01:19:50,222 --> 01:19:57,542
+We have E times dA m by d x naught.
+
+2087
+01:20:00,322 --> 01:20:02,542
+dA m by d x naught.
+
+2088
+01:20:02,622 --> 01:20:05,082
+I've now reverted to calling time x naught.
+
+2089
+01:20:08,022 --> 01:20:08,702
+minus,
+
+2090
+01:20:08,702 --> 01:20:09,702
+same E,
+
+2091
+01:20:09,702 --> 01:20:14,302
+dA naught by d x m.
+
+2092
+01:20:15,862 --> 01:20:17,802
+Notice the nice symmetry here.
+
+2093
+01:20:20,222 --> 01:20:23,422
+It has dA m by d x naught,
+
+2094
+01:20:23,582 --> 01:20:26,642
+and it has dA naught by d x m,
+
+2095
+01:20:26,762 --> 01:20:27,942
+with a minus sign.
+
+2096
+01:20:28,822 --> 01:20:29,502
+Obviously,
+
+2097
+01:20:29,502 --> 01:20:32,162
+this thing wants to be electric field.
+
+2098
+01:20:32,162 --> 01:20:35,062
+It has no velocity in this term over here.
+
+2099
+01:20:36,042 --> 01:20:38,162
+So if there's any sense to all of this,
+
+2100
+01:20:38,302 --> 01:20:41,242
+this must mean mass times acceleration
+
+2101
+01:20:41,242 --> 01:20:44,602
+is electric charge times electric field.
+
+2102
+01:20:44,782 --> 01:20:45,182
+And indeed,
+
+2103
+01:20:45,182 --> 01:20:46,462
+it is the electric field.
+
+2104
+01:20:46,662 --> 01:20:48,462
+The electric field has two terms.
+
+2105
+01:20:48,582 --> 01:20:49,842
+One of them is the gradient,
+
+2106
+01:20:50,602 --> 01:20:54,542
+the gradient of the time component,
+
+2107
+01:20:54,602 --> 01:20:57,262
+and the other term is the time derivative
+
+2108
+01:20:57,262 --> 01:20:58,902
+of the space component.
+
+2109
+01:20:59,962 --> 01:21:00,642
+All right,
+
+2110
+01:21:00,642 --> 01:21:01,902
+so that's one thing.
+
+2111
+01:21:01,902 --> 01:21:05,142
+We will later see that this falls nicely into place
+
+2112
+01:21:05,142 --> 01:21:06,082
+as electric field.
+
+2113
+01:21:06,722 --> 01:21:07,282
+Now,
+
+2114
+01:21:07,282 --> 01:21:08,922
+what about the terms involving velocity?
+
+2115
+01:21:09,202 --> 01:21:09,862
+Let's get them.
+
+2116
+01:21:12,722 --> 01:21:15,042
+We bring this one over on the right-hand side,
+
+2117
+01:21:15,142 --> 01:21:17,002
+so it's plus E.
+
+2118
+01:21:17,922 --> 01:21:22,162
+We have both of them have x n dot.
+
+2119
+01:21:22,762 --> 01:21:26,702
+So let's put x n dot out here.
+
+2120
+01:21:27,502 --> 01:21:30,422
+And one of them has,
+
+2121
+01:21:30,422 --> 01:21:31,042
+let's see,
+
+2122
+01:21:31,042 --> 01:21:31,562
+where is it?
+
+2123
+01:21:31,562 --> 01:21:33,762
+Put it in bracket.
+
+2124
+01:21:40,942 --> 01:21:43,482
+One has d A m by d x n,
+
+2125
+01:21:43,722 --> 01:21:45,472
+and the other one has d
+
+2126
+01:21:45,472 --> 01:21:47,222
+A n by d x n.
+
+2127
+01:21:54,182 --> 01:21:55,302
+Notice the pattern.
+
+2128
+01:21:56,862 --> 01:21:58,042
+Each term here,
+
+2129
+01:21:58,042 --> 01:21:58,342
+oh,
+
+2130
+01:21:58,342 --> 01:21:58,602
+yeah.
+
+2131
+01:21:59,042 --> 01:21:59,682
+All right.
+
+2132
+01:21:59,682 --> 01:22:00,702
+The pattern,
+
+2133
+01:22:00,702 --> 01:22:01,842
+apart from the x dot,
+
+2134
+01:22:04,422 --> 01:22:07,222
+is each of these terms
+
+2135
+01:22:07,222 --> 01:22:10,022
+has a derivative of an A
+
+2136
+01:22:10,022 --> 01:22:13,322
+with respect to a coordinate anti-symmetrized.
+
+2137
+01:22:13,822 --> 01:22:15,842
+Notice that anti-symmetry there,
+
+2138
+01:22:16,602 --> 01:22:19,622
+that it's A m by x
+
+2139
+01:22:19,622 --> 01:22:22,642
+n minus A n by x m.
+
+2140
+01:22:23,082 --> 01:22:25,302
+A m by x n
+
+2141
+01:22:25,302 --> 01:22:27,522
+minus A n by x m.
+
+2142
+01:22:27,522 --> 01:22:30,622
+Interchange of n and m over here,
+
+2143
+01:22:31,402 --> 01:22:34,422
+and interchange of m and nought over here.
+
+2144
+01:22:35,942 --> 01:22:36,662
+All right.
+
+2145
+01:22:39,362 --> 01:22:44,502
+Let me do something over here to make this term
+
+2146
+01:22:44,502 --> 01:22:46,302
+a little more parallel to this term.
+
+2147
+01:22:46,422 --> 01:22:47,622
+I'm going to write something stupid here.
+
+2148
+01:22:47,802 --> 01:22:49,962
+I'm going to write t dot here.
+
+2149
+01:22:51,102 --> 01:22:52,582
+What on earth is t dot?
+
+2150
+01:22:54,082 --> 01:22:55,602
+It's d t by d t.
+
+2151
+01:22:55,602 --> 01:22:56,242
+It's just one,
+
+2152
+01:22:56,242 --> 01:22:56,442
+huh?
+
+2153
+01:22:56,802 --> 01:22:57,242
+Yeah.
+
+2154
+01:22:57,862 --> 01:22:58,502
+All right.
+
+2155
+01:22:58,562 --> 01:23:01,102
+Or I could also write it as x nought dot.
+
+2156
+01:23:09,642 --> 01:23:10,722
+It didn't do anything.
+
+2157
+01:23:10,902 --> 01:23:13,242
+I just threw in for
+
+2158
+01:23:13,242 --> 01:23:15,582
+free d t by d t,
+
+2159
+01:23:15,742 --> 01:23:16,742
+which is just one.
+
+2160
+01:23:17,322 --> 01:23:20,042
+But now it starts to look kind of symmetric
+
+2161
+01:23:20,042 --> 01:23:22,382
+with respect to space and time a little bit.
+
+2162
+01:23:22,382 --> 01:23:26,262
+Here we have an anti-symmetrized thing
+
+2163
+01:23:26,262 --> 01:23:28,262
+with an index m and n,
+
+2164
+01:23:28,402 --> 01:23:30,762
+and here we have an anti-symmetrized thing
+
+2165
+01:23:30,762 --> 01:23:32,322
+with a nought and m.
+
+2166
+01:23:32,962 --> 01:23:34,602
+This is x m dot here.
+
+2167
+01:23:35,642 --> 01:23:36,202
+Sorry.
+
+2168
+01:23:36,362 --> 01:23:36,582
+Yeah,
+
+2169
+01:23:36,582 --> 01:23:37,042
+that's right.
+
+2170
+01:23:37,142 --> 01:23:37,622
+I got it right.
+
+2171
+01:23:37,862 --> 01:23:38,542
+That's right.
+
+2172
+01:23:39,942 --> 01:23:40,502
+Okay.
+
+2173
+01:23:40,602 --> 01:23:44,302
+So this is the form of the equation of motion.
+
+2174
+01:23:44,602 --> 01:23:46,142
+This is electric field.
+
+2175
+01:23:46,422 --> 01:23:46,982
+This,
+
+2176
+01:23:46,982 --> 01:23:47,582
+of course,
+
+2177
+01:23:47,582 --> 01:23:49,182
+is the magnetic field.
+
+2178
+01:23:49,502 --> 01:23:51,262
+This is the magnetic field.
+
+2179
+01:23:51,262 --> 01:23:53,862
+To identify in detail how
+
+2180
+01:23:53,862 --> 01:23:56,462
+the components of magnetic field...
+
+2181
+01:23:56,462 --> 01:23:58,422
+What is this operation over here?
+
+2182
+01:23:59,142 --> 01:24:01,442
+What mathematical operation have I done
+
+2183
+01:24:01,442 --> 01:24:03,822
+on the components of the vector potential?
+
+2184
+01:24:04,982 --> 01:24:05,802
+The curl,
+
+2185
+01:24:05,802 --> 01:24:06,102
+right?
+
+2186
+01:24:07,262 --> 01:24:08,822
+It's the mathematical curl,
+
+2187
+01:24:08,822 --> 01:24:09,802
+but we'll come to it.
+
+2188
+01:24:09,982 --> 01:24:12,422
+I didn't want to do that tonight.
+
+2189
+01:24:12,682 --> 01:24:13,742
+This is...
+
+2190
+01:24:14,402 --> 01:24:17,222
+These are the components of the curl of A,
+
+2191
+01:24:17,542 --> 01:24:20,122
+and the curl of A is the magnetic field.
+
+2192
+01:24:20,722 --> 01:24:22,762
+This here contains one term,
+
+2193
+01:24:22,922 --> 01:24:26,302
+which is just the gradient of the time component,
+
+2194
+01:24:28,562 --> 01:24:29,742
+plus another term,
+
+2195
+01:24:29,902 --> 01:24:31,802
+and this constitutes the electric field.
+
+2196
+01:24:32,902 --> 01:24:33,422
+Good?
+
+2197
+01:24:33,602 --> 01:24:33,882
+All right.
+
+2198
+01:24:33,902 --> 01:24:36,142
+Everybody happy with this?
+
+2199
+01:24:37,242 --> 01:24:38,282
+It's a bit much,
+
+2200
+01:24:39,182 --> 01:24:40,782
+but I tell you now,
+
+2201
+01:24:40,782 --> 01:24:41,682
+go through this.
+
+2202
+01:24:41,862 --> 01:24:43,282
+This is something...
+
+2203
+01:24:43,962 --> 01:24:44,602
+You know,
+
+2204
+01:24:44,602 --> 01:24:46,022
+if you really care about this,
+
+2205
+01:24:47,382 --> 01:24:48,682
+here's your Lagrangian.
+
+2206
+01:24:50,742 --> 01:24:51,702
+Where is it?
+
+2207
+01:24:51,842 --> 01:24:52,442
+This is...
+
+2208
+01:24:53,502 --> 01:24:54,102
+Sorry.
+
+2209
+01:24:56,702 --> 01:24:57,502
+Top board.
+
+2210
+01:24:59,282 --> 01:25:00,462
+There's your Lagrangian.
+
+2211
+01:25:01,262 --> 01:25:03,722
+Go through the Euler-Lagrange equations.
+
+2212
+01:25:04,522 --> 01:25:06,842
+Collect together the terms.
+
+2213
+01:25:06,942 --> 01:25:09,282
+One side you'll call mA.
+
+2214
+01:25:09,622 --> 01:25:12,662
+The other terms have terms with velocities
+
+2215
+01:25:12,662 --> 01:25:14,102
+and terms without velocity.
+
+2216
+01:25:14,282 --> 01:25:14,422
+This,
+
+2217
+01:25:14,422 --> 01:25:14,722
+of course,
+
+2218
+01:25:14,722 --> 01:25:15,602
+didn't have a velocity.
+
+2219
+01:25:15,882 --> 01:25:16,942
+It was just one.
+
+2220
+01:25:17,282 --> 01:25:18,542
+And group them together,
+
+2221
+01:25:18,542 --> 01:25:20,642
+and show that this is the way they group together.
+
+2222
+01:25:21,622 --> 01:25:23,162
+You will learn a lot,
+
+2223
+01:25:24,102 --> 01:25:25,462
+both about field theory,
+
+2224
+01:25:25,702 --> 01:25:26,902
+about a little bit of calculus,
+
+2225
+01:25:27,242 --> 01:25:29,942
+and especially about electrodynamics.
+
+2226
+01:25:30,262 --> 01:25:30,762
+Okay?
+
+2227
+01:25:32,322 --> 01:25:32,862
+Yeah?
+
+2228
+01:25:34,942 --> 01:25:36,262
+At the very beginning,
+
+2229
+01:25:36,982 --> 01:25:40,902
+for the electromagnetic part of the action?
+
+2230
+01:25:41,702 --> 01:25:42,402
+This is,
+
+2231
+01:25:42,402 --> 01:25:42,622
+of course,
+
+2232
+01:25:42,622 --> 01:25:44,502
+just the action on the particle,
+
+2233
+01:25:44,682 --> 01:25:45,802
+of the particle motion,
+
+2234
+01:25:45,802 --> 01:25:46,162
+right.
+
+2235
+01:25:46,782 --> 01:25:47,322
+Yeah?
+
+2236
+01:25:47,962 --> 01:25:51,522
+Why did you write the integral of A over...
+
+2237
+01:25:52,222 --> 01:25:52,662
+Well,
+
+2238
+01:25:52,662 --> 01:25:54,162
+you had a four-becker form,
+
+2239
+01:25:54,202 --> 01:25:55,222
+but the thing on the right,
+
+2240
+01:25:55,222 --> 01:25:56,122
+you have there now.
+
+2241
+01:25:58,306 --> 01:25:58,726
+うん
+
+2242
+01:26:02,530 --> 01:26:06,280
+This integral is minus e times
+
+2243
+01:26:06,280 --> 01:26:10,030
+the integral of a mu dx mu.
+
+2244
+01:26:10,250 --> 01:26:11,530
+So why did you write that?
+
+2245
+01:26:11,650 --> 01:26:12,670
+That's really my question.
+
+2246
+01:26:21,770 --> 01:26:23,390
+This is hundreds of years of experiment.
+
+2247
+01:26:26,229 --> 01:26:31,810
+But what constrains it?
+
+2248
+01:26:31,810 --> 01:26:33,220
+I think the right answer is not
+
+2249
+01:26:33,220 --> 01:26:34,630
+why did I write down exactly this.
+
+2250
+01:26:35,070 --> 01:26:36,390
+That's partly experiment.
+
+2251
+01:26:37,789 --> 01:26:40,630
+But what is it that this integral has?
+
+2252
+01:26:40,690 --> 01:26:41,980
+What properties does it have
+
+2253
+01:26:41,980 --> 01:26:43,270
+which make it a good candidate?
+
+2254
+01:26:44,550 --> 01:26:45,490
+First of all,
+
+2255
+01:26:45,490 --> 01:26:48,870
+the action is an integral along the trajectory.
+
+2256
+01:26:51,450 --> 01:26:54,190
+That's a rule that up till now we've respected,
+
+2257
+01:26:54,850 --> 01:26:56,470
+that the action is to be
+
+2258
+01:26:56,470 --> 01:26:58,090
+thought of as little incremental pieces.
+
+2259
+01:26:58,710 --> 01:27:00,450
+So it's a bunch of incremental pieces.
+
+2260
+01:27:01,810 --> 01:27:03,130
+And the other rule is simply
+
+2261
+01:27:03,130 --> 01:27:04,450
+that it should be a scalar,
+
+2262
+01:27:05,390 --> 01:27:07,570
+that it should be composed out of scalars.
+
+2263
+01:27:08,550 --> 01:27:09,850
+Given a dx mu,
+
+2264
+01:27:09,850 --> 01:27:11,790
+there are basically two things
+
+2265
+01:27:11,790 --> 01:27:13,650
+you can do with it to make a scalar.
+
+2266
+01:27:14,270 --> 01:27:17,630
+One is to multiply it by itself.
+
+2267
+01:27:19,430 --> 01:27:20,350
+And what is that?
+
+2268
+01:27:20,910 --> 01:27:22,650
+That's just d tau squared.
+
+2269
+01:27:24,210 --> 01:27:25,990
+That's already in the Lagrangian.
+
+2270
+01:27:26,210 --> 01:27:27,540
+Here is d tau is
+
+2271
+01:27:27,540 --> 01:27:28,870
+just the square root of that.
+
+2272
+01:27:28,930 --> 01:27:30,210
+That's in the Lagrangian already.
+
+2273
+01:27:31,070 --> 01:27:31,790
+It doesn't matter.
+
+2274
+01:27:31,810 --> 01:27:32,910
+It doesn't involve any field.
+
+2275
+01:27:34,170 --> 01:27:35,750
+What's the other thing you can do?
+
+2276
+01:27:35,990 --> 01:27:38,370
+You can dot the four vector of a lot.
+
+2277
+01:27:38,450 --> 01:27:39,830
+You can dot the dx,
+
+2278
+01:27:39,830 --> 01:27:41,050
+or not dot,
+
+2279
+01:27:41,050 --> 01:27:43,950
+but you can multiply dx by a
+
+2280
+01:27:43,950 --> 01:27:45,370
+and contract the indices.
+
+2281
+01:27:45,770 --> 01:27:48,190
+If you can find another way to make a scalar,
+
+2282
+01:27:48,370 --> 01:27:50,190
+you're welcome to play with it.
+
+2283
+01:27:50,770 --> 01:27:52,190
+And there are other ways.
+
+2284
+01:27:52,730 --> 01:27:53,950
+There are other ways.
+
+2285
+01:27:56,130 --> 01:28:01,790
+We have not got yet to the constant.
+
+2286
+01:28:01,810 --> 01:28:03,110
+We have to do the concept of gauge invariance.
+
+2287
+01:28:03,350 --> 01:28:05,190
+But I prefer to work
+
+2288
+01:28:05,190 --> 01:28:07,030
+with it at this level first,
+
+2289
+01:28:07,590 --> 01:28:10,530
+and then to study its gauge invariance
+
+2290
+01:28:10,530 --> 01:28:12,250
+after we've gone this far.
+
+2291
+01:28:12,350 --> 01:28:13,970
+So this is basically the simplest thing
+
+2292
+01:28:13,970 --> 01:28:14,830
+we could have written down.
+
+2293
+01:28:15,230 --> 01:28:16,170
+You could write down,
+
+2294
+01:28:16,170 --> 01:28:19,110
+you could multiply it by a nu a nu.
+
+2295
+01:28:20,710 --> 01:28:21,990
+You could take a scalar
+
+2296
+01:28:21,990 --> 01:28:23,270
+and multiply it by another scalar.
+
+2297
+01:28:23,350 --> 01:28:24,370
+You can write down a lot of junk.
+
+2298
+01:28:24,910 --> 01:28:27,210
+But this is very much the simplest,
+
+2299
+01:28:27,210 --> 01:28:28,330
+so let's explore it.
+
+2300
+01:28:28,430 --> 01:28:29,350
+Let's do it in that.
+
+2301
+01:28:32,290 --> 01:28:33,370
+Let's do it in that frame of mind,
+
+2302
+01:28:33,370 --> 01:28:35,970
+an exploration of a simple action.
+
+2303
+01:28:36,890 --> 01:28:37,750
+What happens?
+
+2304
+01:28:37,910 --> 01:28:39,030
+You start grinding it out.
+
+2305
+01:28:39,190 --> 01:28:41,030
+You get a set of equations of motion,
+
+2306
+01:28:41,030 --> 01:28:43,950
+which are the Lorentz force law.
+
+2307
+01:28:44,670 --> 01:28:45,150
+OK.
+
+2308
+01:28:45,230 --> 01:28:46,570
+You know you've made the right choice
+
+2309
+01:28:46,570 --> 01:28:47,910
+once that comes out of the equation.
+
+2310
+01:28:48,150 --> 01:28:48,330
+Yeah,
+
+2311
+01:28:48,330 --> 01:28:49,410
+you know you've made the right choice,
+
+2312
+01:28:49,410 --> 01:28:49,710
+right.
+
+2313
+01:28:50,310 --> 01:28:53,230
+But we haven't used all the principles yet.
+
+2314
+01:28:53,510 --> 01:28:56,070
+But we haven't identified all the principles yet.
+
+2315
+01:28:56,650 --> 01:28:58,640
+Can you derive Maxwell's equations
+
+2316
+01:28:58,640 --> 01:29:00,630
+from the principle of least action?
+
+2317
+01:29:00,850 --> 01:29:00,990
+Oh,
+
+2318
+01:29:00,990 --> 01:29:01,190
+yes.
+
+2319
+01:29:01,190 --> 01:29:02,110
+We're going to do it.
+
+2320
+01:29:03,370 --> 01:29:03,770
+Oh,
+
+2321
+01:29:03,770 --> 01:29:04,910
+we will do exactly that.
+
+2322
+01:29:05,830 --> 01:29:07,870
+But we will need another term in the action.
+
+2323
+01:29:07,990 --> 01:29:09,300
+The other term in the action will
+
+2324
+01:29:09,300 --> 01:29:10,610
+be the field part of the action,
+
+2325
+01:29:11,350 --> 01:29:13,530
+not the particle moving in the field,
+
+2326
+01:29:13,530 --> 01:29:14,350
+but just
+
+2327
+01:29:14,350 --> 01:29:15,460
+the part of the action
+
+2328
+01:29:15,460 --> 01:29:16,570
+that governs the field by itself.
+
+2329
+01:29:17,930 --> 01:29:18,470
+All right,
+
+2330
+01:29:18,470 --> 01:29:20,050
+that's what we did for the scalar last time.
+
+2331
+01:29:21,070 --> 01:29:21,470
+OK,
+
+2332
+01:29:21,470 --> 01:29:22,850
+so let's keep going.
+
+2333
+01:29:26,570 --> 01:29:28,630
+In the last equation there,
+
+2334
+01:29:28,630 --> 01:29:29,270
+can you?
+
+2335
+01:29:29,570 --> 01:29:30,050
+This one?
+
+2336
+01:29:30,230 --> 01:29:30,510
+Yeah.
+
+2337
+01:29:30,610 --> 01:29:31,010
+Yeah.
+
+2338
+01:29:31,010 --> 01:29:34,030
+Can you just show me explicitly
+
+2339
+01:29:34,030 --> 01:29:37,050
+where the summations are occurring in this,
+
+2340
+01:29:37,050 --> 01:29:38,150
+if by a bad notation?
+
+2341
+01:29:38,650 --> 01:29:38,830
+OK,
+
+2342
+01:29:38,830 --> 01:29:40,330
+there's no summation here.
+
+2343
+01:29:40,470 --> 01:29:43,310
+This is the mth component of the acceleration.
+
+2344
+01:29:43,650 --> 01:29:43,970
+That's it.
+
+2345
+01:29:44,070 --> 01:29:45,690
+It's the mth component of the acceleration.
+
+2346
+01:29:46,230 --> 01:29:48,050
+And there's no summation over here.
+
+2347
+01:29:48,190 --> 01:29:49,270
+There's just an m index,
+
+2348
+01:29:49,270 --> 01:29:49,950
+and that's all.
+
+2349
+01:29:51,690 --> 01:29:55,690
+There's an n index over here that is combined together
+
+2350
+01:29:55,690 --> 01:29:57,150
+with an n index over here.
+
+2351
+01:29:57,210 --> 01:29:58,410
+There's a repeated index.
+
+2352
+01:29:59,570 --> 01:30:00,090
+xn.
+
+2353
+01:30:00,470 --> 01:30:00,990
+Yeah.
+
+2354
+01:30:01,010 --> 01:30:03,690
+d by dxn times xn
+
+2355
+01:30:03,690 --> 01:30:06,370
+dot and dan times xn dot.
+
+2356
+01:30:07,130 --> 01:30:08,870
+n is the summation index.
+
+2357
+01:30:09,070 --> 01:30:09,590
+So literally,
+
+2358
+01:30:09,590 --> 01:30:11,070
+this is sum over n,
+
+2359
+01:30:11,070 --> 01:30:13,330
+if we wanted to put the summation sign.
+
+2360
+01:30:13,470 --> 01:30:14,070
+Sum over n.
+
+2361
+01:30:15,750 --> 01:30:19,369
+But the rule is repeated indices get summed over.
+
+2362
+01:30:19,830 --> 01:30:22,450
+Non-repeated indices are explicit,
+
+2363
+01:30:22,450 --> 01:30:23,270
+and they're
+
+2364
+01:30:23,270 --> 01:30:26,450
+on both the left-hand side and the right-hand side.
+
+2365
+01:30:34,629 --> 01:30:38,449
+Let's see if we can write this
+
+2366
+01:30:38,449 --> 01:30:42,270
+formula in a way which is manifestly,
+
+2367
+01:30:42,270 --> 01:30:43,270
+that means obviously,
+
+2368
+01:30:43,270 --> 01:30:44,970
+Lorentz invariant.
+
+2369
+01:30:45,290 --> 01:30:46,130
+At the moment,
+
+2370
+01:30:46,130 --> 01:30:46,650
+it is not.
+
+2371
+01:30:46,790 --> 01:30:48,420
+And the reason is that the
+
+2372
+01:30:48,420 --> 01:30:50,050
+left-hand side and the right-hand side
+
+2373
+01:30:50,050 --> 01:30:51,650
+are not themselves four vectors.
+
+2374
+01:30:52,870 --> 01:30:54,090
+They're not four vectors,
+
+2375
+01:30:54,090 --> 01:30:56,190
+but we can convert them to four vectors.
+
+2376
+01:30:58,630 --> 01:30:59,750
+So let's do that.
+
+2377
+01:31:04,030 --> 01:31:04,790
+Excuse me.
+
+2378
+01:31:04,910 --> 01:31:05,230
+Yeah.
+
+2379
+01:31:05,710 --> 01:31:07,700
+Could you say something about why
+
+2380
+01:31:07,700 --> 01:31:09,690
+that term is the electric field,
+
+2381
+01:31:09,770 --> 01:31:12,130
+the partial of am with respect to x0
+
+2382
+01:31:12,130 --> 01:31:14,490
+minus the partial of am with respect to xn?
+
+2383
+01:31:15,110 --> 01:31:15,590
+Well,
+
+2384
+01:31:15,590 --> 01:31:17,070
+what would we write if it was electric?
+
+2385
+01:31:17,250 --> 01:31:18,270
+What do we want to write?
+
+2386
+01:31:18,370 --> 01:31:19,270
+We want to write e.
+
+2387
+01:31:19,630 --> 01:31:20,390
+Sort of by definition?
+
+2388
+01:31:20,790 --> 01:31:21,090
+Yes.
+
+2389
+01:31:22,330 --> 01:31:24,180
+We want to write e times
+
+2390
+01:31:24,180 --> 01:31:26,030
+the mth component of the electric field.
+
+2391
+01:31:27,650 --> 01:31:30,790
+What's special about this is it doesn't involve a velocity.
+
+2392
+01:31:30,870 --> 01:31:30,990
+It's just a function.
+
+2393
+01:31:30,990 --> 01:31:31,070
+It's not a velocity.
+
+2394
+01:31:31,170 --> 01:31:33,990
+It just depends on an electric field,
+
+2395
+01:31:33,990 --> 01:31:35,770
+which depends on space and time.
+
+2396
+01:31:37,129 --> 01:31:40,230
+But this term does not contain a velocity.
+
+2397
+01:31:40,470 --> 01:31:43,430
+And it's not a velocity-dependent force.
+
+2398
+01:31:44,530 --> 01:31:45,070
+All right.
+
+2399
+01:31:45,090 --> 01:31:46,650
+Force doesn't depend on velocity.
+
+2400
+01:31:46,830 --> 01:31:48,350
+It only depends on where the particle is.
+
+2401
+01:31:48,770 --> 01:31:50,340
+And so here we have
+
+2402
+01:31:50,340 --> 01:31:51,910
+a term which is like that.
+
+2403
+01:31:54,390 --> 01:31:55,310
+Over here,
+
+2404
+01:31:55,310 --> 01:31:57,470
+we have all the terms which multiply velocity.
+
+2405
+01:31:58,090 --> 01:31:59,530
+And so it better be that
+
+2406
+01:31:59,530 --> 01:32:00,970
+that corresponds to the magnitude of velocity.
+
+2407
+01:32:00,970 --> 01:32:01,370
+And so we have a term called the magnetic field.
+
+2408
+01:32:01,650 --> 01:32:03,430
+But I think what you're saying is right.
+
+2409
+01:32:03,590 --> 01:32:03,750
+I mean,
+
+2410
+01:32:03,750 --> 01:32:05,330
+if we started from this principle,
+
+2411
+01:32:05,330 --> 01:32:07,710
+if we started from the principle of least
+
+2412
+01:32:07,710 --> 01:32:08,130
+action,
+
+2413
+01:32:08,130 --> 01:32:10,210
+and we wrote down that action,
+
+2414
+01:32:10,210 --> 01:32:11,750
+and we eventually got this equation,
+
+2415
+01:32:11,750 --> 01:32:12,970
+we might
+
+2416
+01:32:12,970 --> 01:32:13,790
+look at it and say,
+
+2417
+01:32:13,790 --> 01:32:13,990
+ah,
+
+2418
+01:32:13,990 --> 01:32:15,410
+let's take this whole thing here.
+
+2419
+01:32:15,910 --> 01:32:18,550
+It doesn't matter whether it's part this and part that.
+
+2420
+01:32:19,310 --> 01:32:20,470
+Let's just call that e.
+
+2421
+01:32:21,450 --> 01:32:24,090
+And we would have invented or discovered the electric field.
+
+2422
+01:32:25,510 --> 01:32:26,450
+So I think that,
+
+2423
+01:32:26,450 --> 01:32:27,250
+in fact,
+
+2424
+01:32:27,250 --> 01:32:28,730
+really is the natural logic.
+
+2425
+01:32:28,730 --> 01:32:30,780
+The natural logic is to identify
+
+2426
+01:32:30,780 --> 01:32:32,830
+this and call it the electric field.
+
+2427
+01:32:33,150 --> 01:32:34,630
+And in a like manner,
+
+2428
+01:32:34,630 --> 01:32:38,210
+we will identify this with components of the magnetic field.
+
+2429
+01:32:38,710 --> 01:32:40,910
+V times something.
+
+2430
+01:32:41,690 --> 01:32:42,250
+OK.
+
+2431
+01:32:42,370 --> 01:32:43,090
+But not yet,
+
+2432
+01:32:43,090 --> 01:32:45,610
+because we don't want to do that yet.
+
+2433
+01:32:47,550 --> 01:32:48,390
+All right.
+
+2434
+01:32:48,430 --> 01:32:50,690
+Let's see if we can write this in a form,
+
+2435
+01:32:50,690 --> 01:32:51,450
+first of all,
+
+2436
+01:32:51,450 --> 01:32:53,930
+which is obviously Lorentz invariant.
+
+2437
+01:32:55,610 --> 01:32:57,870
+Obviously invariant means.
+
+2438
+01:32:58,150 --> 01:32:58,710
+OK.
+
+2439
+01:32:58,710 --> 01:33:02,250
+That you should write it as the
+
+2440
+01:33:02,250 --> 01:33:05,790
+left-hand side and the right-hand side being tensors
+
+2441
+01:33:05,790 --> 01:33:06,790
+of the same kind.
+
+2442
+01:33:09,089 --> 01:33:12,910
+Well this obviously wants to be a vector-type thing.
+
+2443
+01:33:13,150 --> 01:33:14,150
+It doesn't want to be a,
+
+2444
+01:33:14,150 --> 01:33:15,870
+it has a component.
+
+2445
+01:33:17,749 --> 01:33:20,910
+The component is a spatial component.
+
+2446
+01:33:21,770 --> 01:33:23,160
+It sounds like it's part
+
+2447
+01:33:23,160 --> 01:33:24,550
+of some kind of four complex,
+
+2448
+01:33:24,550 --> 01:33:26,230
+which you might identify as a four
+
+2449
+01:33:26,230 --> 01:33:26,510
+vector,
+
+2450
+01:33:26,510 --> 01:33:27,290
+but not quite.
+
+2451
+01:33:28,130 --> 01:33:28,610
+And,
+
+2452
+01:33:28,610 --> 01:33:28,690
+well,
+
+2453
+01:33:28,690 --> 01:33:28,690
+let's see.
+
+2454
+01:33:28,710 --> 01:33:31,750
+And let's see what we can do with it.
+
+2455
+01:33:32,230 --> 01:33:32,570
+OK.
+
+2456
+01:33:32,670 --> 01:33:33,690
+So what was it really?
+
+2457
+01:33:34,470 --> 01:33:35,350
+What it really was,
+
+2458
+01:33:35,350 --> 01:33:40,840
+m times d by dt of the
+
+2459
+01:33:40,840 --> 01:33:46,330
+x mu by the x m by dt,
+
+2460
+01:33:46,330 --> 01:33:50,010
+or x m dot,
+
+2461
+01:33:50,010 --> 01:33:53,670
+divided
+
+2462
+01:33:53,670 --> 01:33:55,290
+by square root of 1 minus,
+
+2463
+01:33:55,290 --> 01:33:56,390
+let's just call it v squared.
+
+2464
+01:33:56,910 --> 01:33:58,690
+I called it x dot squared before.
+
+2465
+01:34:00,310 --> 01:34:01,590
+This quantity,
+
+2466
+01:34:01,590 --> 01:34:04,670
+x dot over square root of 1 minus v squared,
+
+2467
+01:34:04,670 --> 01:34:12,390
+x dot means dx by dt.
+
+2468
+01:34:13,170 --> 01:34:14,650
+This is dx by dt.
+
+2469
+01:34:18,130 --> 01:34:25,650
+This happens to be exactly dx m by d tau.
+
+2470
+01:34:27,730 --> 01:34:28,690
+Do you remember what that was?
+
+2471
+01:34:28,710 --> 01:34:29,950
+Remember what we called that variable,
+
+2472
+01:34:29,950 --> 01:34:30,650
+that quantity,
+
+2473
+01:34:30,650 --> 01:34:32,530
+the x m by d tau?
+
+2474
+01:34:35,089 --> 01:34:36,730
+We called it the four velocity,
+
+2475
+01:34:36,730 --> 01:34:39,470
+and there was a letter that I identified with it.
+
+2476
+01:34:40,410 --> 01:34:40,890
+U.
+
+2477
+01:34:45,790 --> 01:34:46,750
+Of course,
+
+2478
+01:34:46,750 --> 01:34:48,090
+there's also a fourth component.
+
+2479
+01:34:48,990 --> 01:34:50,410
+There is a fourth component.
+
+2480
+01:34:50,510 --> 01:34:53,990
+The fourth component would be dx naught by d tau.
+
+2481
+01:34:55,450 --> 01:34:56,650
+That would be u naught.
+
+2482
+01:34:56,650 --> 01:34:59,090
+For slow particles,
+
+2483
+01:34:59,090 --> 01:35:00,510
+this is very close to 1.
+
+2484
+01:35:00,730 --> 01:35:01,490
+But nevertheless,
+
+2485
+01:35:01,490 --> 01:35:02,150
+it's there.
+
+2486
+01:35:02,270 --> 01:35:03,110
+But at the moment,
+
+2487
+01:35:03,110 --> 01:35:08,230
+what we have here is literally d
+
+2488
+01:35:08,230 --> 01:35:13,350
+by dt of dx m by d tau.
+
+2489
+01:35:15,210 --> 01:35:16,230
+In other words,
+
+2490
+01:35:16,230 --> 01:35:20,810
+the time derivative of the four velocity.
+
+2491
+01:35:22,630 --> 01:35:23,130
+OK.
+
+2492
+01:35:23,210 --> 01:35:24,850
+And that's equal to the right-hand side.
+
+2493
+01:35:25,050 --> 01:35:26,630
+The right-hand side will also manipulate the four velocity.
+
+2494
+01:35:26,630 --> 01:35:27,990
+OK?
+
+2495
+01:35:29,110 --> 01:35:29,490
+FO x will be theta,
+
+2496
+01:35:29,490 --> 01:35:29,490
+and theta m mu.
+
+2497
+01:35:29,490 --> 01:35:29,490
+From there,
+
+2498
+01:35:29,490 --> 01:35:38,720
+you get dx vd by dt VDZ
+
+2499
+01:35:38,720 --> 01:35:47,950
+1 and S t and theta m.
+
+2500
+01:35:47,950 --> 01:35:49,490
+that's Lorentz invariant.
+
+2501
+01:35:49,490 --> 01:35:51,930
+Tau doesn't change from one frame to another.
+
+2502
+01:35:51,930 --> 01:35:53,110
+But T
+
+2503
+01:35:53,110 --> 01:35:53,370
+does.
+
+2504
+01:35:53,370 --> 01:35:55,330
+So what do I do with this?
+
+2505
+01:35:55,330 --> 01:35:56,070
+I multiply,
+
+2506
+01:35:56,070 --> 01:35:59,470
+I'm going to multiply whatever's
+
+2507
+01:35:59,470 --> 01:35:59,670
+here,
+
+2508
+01:35:59,670 --> 01:36:00,890
+all the stuff here,
+
+2509
+01:36:00,890 --> 01:36:04,270
+all the stuff that comes from the right-hand side of
+
+2510
+01:36:04,270 --> 01:36:04,730
+the equation,
+
+2511
+01:36:04,730 --> 01:36:06,030
+whatever it is,
+
+2512
+01:36:06,030 --> 01:36:10,490
+I'm going to multiply both sides of the equation by
+
+2513
+01:36:10,490 --> 01:36:12,090
+dt by d tau.
+
+2514
+01:36:12,090 --> 01:36:18,750
+What do I get on the left side?
+
+2515
+01:36:18,750 --> 01:36:23,270
+d by dt,
+
+2516
+01:36:23,270 --> 01:36:23,730
+dt,
+
+2517
+01:36:23,730 --> 01:36:24,230
+d tau,
+
+2518
+01:36:24,230 --> 01:36:24,630
+what's that?
+
+2519
+01:36:26,530 --> 01:36:27,630
+That's just d by d tau.
+
+2520
+01:36:27,630 --> 01:36:30,110
+This dt's cancel,
+
+2521
+01:36:30,110 --> 01:36:34,270
+and this is just the rate of change with
+
+2522
+01:36:34,270 --> 01:36:35,070
+respect to tau.
+
+2523
+01:36:35,070 --> 01:36:40,470
+That's after I multiply by dt by d tau.
+
+2524
+01:36:40,490 --> 01:36:41,350
+And this is a nice expression.
+
+2525
+01:36:41,350 --> 01:36:46,550
+This is just a mass times a second
+
+2526
+01:36:46,550 --> 01:36:51,750
+derivative of the component with respect to tau squared.
+
+2527
+01:36:53,090 --> 01:36:55,650
+This is part of a four vector.
+
+2528
+01:36:55,650 --> 01:36:59,310
+If I add the first three components,
+
+2529
+01:36:59,310 --> 01:36:59,690
+x,
+
+2530
+01:36:59,690 --> 01:36:59,970
+y,
+
+2531
+01:36:59,970 --> 01:37:00,350
+and z,
+
+2532
+01:37:00,350 --> 01:37:02,750
+if I add to that a fourth component,
+
+2533
+01:37:02,950 --> 01:37:05,370
+which is the second derivative of
+
+2534
+01:37:05,370 --> 01:37:07,790
+time with respect to tau squared,
+
+2535
+01:37:07,790 --> 01:37:09,290
+that is a four vector.
+
+2536
+01:37:09,290 --> 01:37:12,660
+It's the four vector m d second
+
+2537
+01:37:12,660 --> 01:37:16,030
+x mu with respect to tau squared.
+
+2538
+01:37:18,970 --> 01:37:20,730
+It's a kind of acceleration,
+
+2539
+01:37:20,730 --> 01:37:23,490
+but it's an acceleration just as
+
+2540
+01:37:23,490 --> 01:37:26,250
+the Lorentz invariant concept of a velocity
+
+2541
+01:37:26,250 --> 01:37:28,900
+is to differentiate the four components
+
+2542
+01:37:28,900 --> 01:37:31,550
+with respect to the proper time.
+
+2543
+01:37:32,030 --> 01:37:34,470
+The Lorentz invariant notation,
+
+2544
+01:37:34,470 --> 01:37:39,190
+the Lorentz invariant concept of an acceleration
+
+2545
+01:37:39,290 --> 01:37:42,820
+is to take the second derivative of all four
+
+2546
+01:37:42,820 --> 01:37:46,350
+components of position with respect to the proper time.
+
+2547
+01:37:46,690 --> 01:37:49,810
+So we can do that on the left side.
+
+2548
+01:37:50,509 --> 01:37:52,949
+That gives us what is
+
+2549
+01:37:52,949 --> 01:37:55,390
+standardly called the proper acceleration.
+
+2550
+01:37:56,190 --> 01:37:58,930
+That's called the proper acceleration on the left side.
+
+2551
+01:37:59,070 --> 01:38:00,570
+For slow moving particles,
+
+2552
+01:38:00,570 --> 01:38:02,710
+it's close to the ordinary acceleration.
+
+2553
+01:38:04,150 --> 01:38:06,130
+Let's look what's on the right hand side.
+
+2554
+01:38:06,930 --> 01:38:08,970
+Let's go to the right hand side here.
+
+2555
+01:38:09,290 --> 01:38:14,130
+And now multiply it by dt d tau.
+
+2556
+01:38:19,030 --> 01:38:21,170
+Let's multiply it by dt d tau.
+
+2557
+01:38:23,950 --> 01:38:25,630
+So we have there,
+
+2558
+01:38:25,630 --> 01:38:28,030
+here it's dx nought by dt,
+
+2559
+01:38:28,030 --> 01:38:29,740
+dt d tau is the same
+
+2560
+01:38:29,740 --> 01:38:31,450
+thing as dx nought by d tau.
+
+2561
+01:38:33,290 --> 01:38:34,610
+Let's multiply it.
+
+2562
+01:38:34,610 --> 01:38:35,090
+We're multiplying.
+
+2563
+01:38:39,310 --> 01:38:40,990
+dx nought by d tau.
+
+2564
+01:38:42,790 --> 01:38:44,050
+But what's over here?
+
+2565
+01:38:44,950 --> 01:38:49,030
+This is dx m by dt.
+
+2566
+01:38:50,050 --> 01:38:52,450
+Now I'm multiplying by dt by d tau.
+
+2567
+01:38:54,170 --> 01:38:55,850
+So what does that make that term?
+
+2568
+01:38:59,570 --> 01:39:01,990
+It just makes it dx m by d tau.
+
+2569
+01:39:06,950 --> 01:39:07,590
+Now,
+
+2570
+01:39:07,590 --> 01:39:09,110
+look at these two terms.
+
+2571
+01:39:10,550 --> 01:39:12,830
+They have exactly the same form.
+
+2572
+01:39:13,770 --> 01:39:15,350
+The same form,
+
+2573
+01:39:15,350 --> 01:39:16,770
+but with a different index.
+
+2574
+01:39:17,150 --> 01:39:18,890
+Here the index is 0,
+
+2575
+01:39:18,890 --> 01:39:19,470
+0.
+
+2576
+01:39:19,830 --> 01:39:22,510
+Here the index is m and n.
+
+2577
+01:39:23,830 --> 01:39:27,590
+This can all be summarized into a single equation,
+
+2578
+01:39:27,590 --> 01:39:29,390
+or a single term.
+
+2579
+01:39:29,390 --> 01:39:40,510
+And the single term is e times the am by dx
+
+2580
+01:39:40,510 --> 01:39:51,630
+mu minus the amu by dxm times dx mu by d tau.
+
+2581
+01:39:53,410 --> 01:39:54,890
+On the left hand side,
+
+2582
+01:39:54,890 --> 01:39:55,470
+on the right,
+
+2583
+01:39:55,470 --> 01:39:56,490
+on the left hand side,
+
+2584
+01:39:56,490 --> 01:40:00,880
+it's d second by d
+
+2585
+01:40:00,880 --> 01:40:05,270
+tau squared m of xm equals.
+
+2586
+01:40:08,690 --> 01:40:10,150
+This is xm,
+
+2587
+01:40:10,150 --> 01:40:11,730
+not mu.
+
+2588
+01:40:18,470 --> 01:40:20,620
+Wouldn't it be nice if I
+
+2589
+01:40:20,620 --> 01:40:22,770
+could change this m to a mu?
+
+2590
+01:40:24,370 --> 01:40:25,570
+This is an equation.
+
+2591
+01:40:25,570 --> 01:40:28,150
+This is three equations for the
+
+2592
+01:40:28,150 --> 01:40:30,730
+space components of the proper acceleration.
+
+2593
+01:40:33,610 --> 01:40:35,070
+On the right hand side,
+
+2594
+01:40:35,070 --> 01:40:38,090
+we still have space components here.
+
+2595
+01:40:38,690 --> 01:40:41,610
+Wouldn't it be nice if there was a fourth equation?
+
+2596
+01:40:41,910 --> 01:40:43,030
+This is three equations.
+
+2597
+01:40:43,370 --> 01:40:44,670
+One for each m.
+
+2598
+01:40:44,830 --> 01:40:45,270
+One,
+
+2599
+01:40:45,270 --> 01:40:45,430
+two,
+
+2600
+01:40:45,430 --> 01:40:45,790
+and three.
+
+2601
+01:40:46,610 --> 01:40:48,950
+Wouldn't it be nice if there was a fourth equation,
+
+2602
+01:40:49,510 --> 01:40:51,770
+which was just a time component of this?
+
+2603
+01:40:53,230 --> 01:40:54,350
+Same equation,
+
+2604
+01:40:54,630 --> 01:40:55,550
+except with m,
+
+2605
+01:40:55,570 --> 01:40:57,490
+m being the time component over
+
+2606
+01:40:57,490 --> 01:40:59,410
+here and the time component over here.
+
+2607
+01:41:00,310 --> 01:41:02,890
+If that fourth equation was correct,
+
+2608
+01:41:03,230 --> 01:41:08,830
+then we could summarize the entire set of equations by
+
+2609
+01:41:12,550 --> 01:41:14,370
+basically one equation,
+
+2610
+01:41:15,350 --> 01:41:15,730
+mass,
+
+2611
+01:41:15,730 --> 01:41:18,630
+proper acceleration,
+
+2612
+01:41:18,630 --> 01:41:20,490
+all four components,
+
+2613
+01:41:20,490 --> 01:41:21,290
+dx mu,
+
+2614
+01:41:22,350 --> 01:41:24,830
+equals e times,
+
+2615
+01:41:24,830 --> 01:41:26,850
+the derivative of a mu.
+
+2616
+01:41:28,390 --> 01:41:29,550
+What do I have here?
+
+2617
+01:41:34,370 --> 01:41:38,440
+A mu with respect to x nu minus
+
+2618
+01:41:38,440 --> 01:41:42,510
+derivative of a nu with respect to x mu,
+
+2619
+01:41:45,790 --> 01:41:48,250
+dx mu by d tau.
+
+2620
+01:41:48,590 --> 01:41:49,150
+No,
+
+2621
+01:41:49,150 --> 01:41:50,490
+dx nu by d tau.
+
+2622
+01:41:50,490 --> 01:41:55,970
+I think I should have x in here.
+
+2623
+01:41:58,610 --> 01:41:59,170
+In,
+
+2624
+01:41:59,170 --> 01:41:59,570
+in.
+
+2625
+01:42:00,670 --> 01:42:01,470
+All right.
+
+2626
+01:42:04,310 --> 01:42:06,450
+Let me write that equation down again.
+
+2627
+01:42:06,930 --> 01:42:09,030
+Your homework is to go
+
+2628
+01:42:09,030 --> 01:42:11,130
+home and derive the following equations.
+
+2629
+01:42:13,510 --> 01:42:14,070
+Oh,
+
+2630
+01:42:14,070 --> 01:42:15,870
+do I know that the fourth equa-
+
+2631
+01:42:15,870 --> 01:42:17,370
+Let's just rewrite it.
+
+2632
+01:42:17,430 --> 01:42:17,770
+Here it is.
+
+2633
+01:42:19,489 --> 01:42:22,050
+This is a complex of four equations,
+
+2634
+01:42:22,250 --> 01:42:23,170
+one for each mu,
+
+2635
+01:42:23,729 --> 01:42:24,170
+one,
+
+2636
+01:42:24,170 --> 01:42:24,450
+two,
+
+2637
+01:42:24,450 --> 01:42:24,690
+three,
+
+2638
+01:42:24,690 --> 01:42:25,010
+and four.
+
+2639
+01:42:25,430 --> 01:42:26,830
+The first three of them,
+
+2640
+01:42:26,830 --> 01:42:27,910
+or the last three of them,
+
+2641
+01:42:27,970 --> 01:42:28,150
+one,
+
+2642
+01:42:28,150 --> 01:42:28,410
+two,
+
+2643
+01:42:28,410 --> 01:42:28,810
+and three,
+
+2644
+01:42:28,970 --> 01:42:31,330
+are just the equations that were written here
+
+2645
+01:42:31,330 --> 01:42:32,650
+when m is one,
+
+2646
+01:42:32,650 --> 01:42:32,830
+two,
+
+2647
+01:42:32,830 --> 01:42:33,190
+and three.
+
+2648
+01:42:33,650 --> 01:42:34,990
+I've added an equation.
+
+2649
+01:42:35,530 --> 01:42:37,590
+The equation I've added is for
+
+2650
+01:42:37,590 --> 01:42:39,650
+the second time derivative of x naught.
+
+2651
+01:42:39,730 --> 01:42:40,810
+How do I know that it's true?
+
+2652
+01:42:40,990 --> 01:42:42,070
+Why should it be true?
+
+2653
+01:42:43,990 --> 01:42:45,650
+Because the first time derivative
+
+2654
+01:42:45,650 --> 01:42:46,670
+would just be constant,
+
+2655
+01:42:46,670 --> 01:42:48,110
+and the second time would be zero?
+
+2656
+01:42:48,330 --> 01:42:48,610
+Oh.
+
+2657
+01:42:49,930 --> 01:42:50,490
+No.
+
+2658
+01:42:51,370 --> 01:42:51,930
+No.
+
+2659
+01:42:53,170 --> 01:42:53,470
+No.
+
+2660
+01:42:54,370 --> 01:42:57,830
+The left-hand side is literally a four vector.
+
+2661
+01:42:57,890 --> 01:42:59,210
+So is the right-hand side.
+
+2662
+01:42:59,850 --> 01:43:01,010
+This is a tensor.
+
+2663
+01:43:02,050 --> 01:43:03,450
+This is a tensor with a
+
+2664
+01:43:03,450 --> 01:43:04,850
+mu index and a nu index.
+
+2665
+01:43:05,290 --> 01:43:06,699
+If you take a tensor and
+
+2666
+01:43:06,699 --> 01:43:08,109
+you combine it with a vector,
+
+2667
+01:43:08,230 --> 01:43:09,270
+you get a vector.
+
+2668
+01:43:09,730 --> 01:43:12,770
+This equation is a tensor equation in the sense
+
+2669
+01:43:13,810 --> 01:43:15,349
+because it transforms.
+
+2670
+01:43:15,830 --> 01:43:16,170
+Right.
+
+2671
+01:43:16,670 --> 01:43:20,790
+So because we took care from the beginning
+
+2672
+01:43:20,790 --> 01:43:25,149
+to make sure that the equations of motion
+
+2673
+01:43:25,149 --> 01:43:26,649
+were Lorentz invariant,
+
+2674
+01:43:26,649 --> 01:43:28,649
+and we did that by making
+
+2675
+01:43:28,649 --> 01:43:30,649
+sure that the action was a scalar.
+
+2676
+01:43:30,849 --> 01:43:31,590
+This is the logic.
+
+2677
+01:43:31,690 --> 01:43:32,390
+Here's the logic.
+
+2678
+01:43:32,490 --> 01:43:36,650
+It pervades everything in field theory,
+
+2679
+01:43:36,790 --> 01:43:37,670
+in particle physics,
+
+2680
+01:43:37,890 --> 01:43:38,970
+in modern physics.
+
+2681
+01:43:40,530 --> 01:43:42,980
+Make sure that your Lagrangian
+
+2682
+01:43:42,980 --> 01:43:45,430
+respects the symmetries of the problem.
+
+2683
+01:43:45,430 --> 01:43:48,570
+If the symmetry of the problem is Lorentz symmetry,
+
+2684
+01:43:48,930 --> 01:43:51,669
+make sure your Lagrangian is Lorentz invariant.
+
+2685
+01:43:52,430 --> 01:43:53,510
+Once you do that,
+
+2686
+01:43:53,530 --> 01:43:54,770
+you don't have to worry,
+
+2687
+01:43:54,770 --> 01:43:55,570
+again,
+
+2688
+01:43:55,670 --> 01:43:59,710
+about whether the theory is invariant
+
+2689
+01:43:59,710 --> 01:44:01,190
+with respect to Lorentz transformations.
+
+2690
+01:44:01,550 --> 01:44:01,950
+In other words,
+
+2691
+01:44:01,970 --> 01:44:02,770
+you don't have to worry
+
+2692
+01:44:02,770 --> 01:44:03,570
+about whether it looks the same
+
+2693
+01:44:03,570 --> 01:44:04,530
+in every reference frame.
+
+2694
+01:44:05,150 --> 01:44:05,710
+Okay.
+
+2695
+01:44:06,290 --> 01:44:08,790
+Once you know that the
+
+2696
+01:44:08,790 --> 01:44:11,290
+laws of physics are Lorentz invariant
+
+2697
+01:44:11,290 --> 01:44:13,350
+and that the first three
+
+2698
+01:44:13,350 --> 01:44:15,410
+components of a law of physics
+
+2699
+01:44:15,410 --> 01:44:16,570
+of a certain four vector
+
+2700
+01:44:17,110 --> 01:44:19,390
+are equal to the first three
+
+2701
+01:44:19,390 --> 01:44:21,670
+components of some other four vector,
+
+2702
+01:44:21,990 --> 01:44:24,100
+then you know automatically that
+
+2703
+01:44:24,100 --> 01:44:26,210
+the fourth components will also match.
+
+2704
+01:44:27,230 --> 01:44:29,320
+The only way a system
+
+2705
+01:44:29,320 --> 01:44:31,410
+of equations can be Lorentz invariant
+
+2706
+01:44:31,410 --> 01:44:33,830
+if the first three components are zero,
+
+2707
+01:44:33,830 --> 01:44:34,410
+let's say,
+
+2708
+01:44:34,590 --> 01:44:37,190
+is for the fourth component also to be zero.
+
+2709
+01:44:37,730 --> 01:44:40,130
+So one can automatically conclude from the
+
+2710
+01:44:40,130 --> 01:44:42,530
+fact that we built a Lorentz invariant theory
+
+2711
+01:44:43,190 --> 01:44:45,210
+that the fourth equation must be true
+
+2712
+01:44:45,410 --> 01:44:47,050
+if the other three equations are true.
+
+2713
+01:44:47,670 --> 01:44:50,390
+They'll just form a complex of equations
+
+2714
+01:44:50,390 --> 01:44:53,570
+which include all four components.
+
+2715
+01:44:54,810 --> 01:44:56,290
+And another way to say it
+
+2716
+01:44:56,290 --> 01:44:57,950
+is if you took the
+
+2717
+01:44:57,950 --> 01:44:59,610
+equations for the first three components
+
+2718
+01:44:59,610 --> 01:45:01,070
+and then transformed them,
+
+2719
+01:45:01,210 --> 01:45:06,770
+you would simply pick up the fourth equation that way.
+
+2720
+01:45:06,850 --> 01:45:07,750
+But you don't need to do that.
+
+2721
+01:45:08,250 --> 01:45:09,550
+All you need to do is say,
+
+2722
+01:45:09,630 --> 01:45:11,730
+I know my theory is Lorentz invariant,
+
+2723
+01:45:11,750 --> 01:45:13,470
+and therefore,
+
+2724
+01:45:13,470 --> 01:45:15,720
+if the first three components
+
+2725
+01:45:15,720 --> 01:45:17,970
+of a vector equation are true,
+
+2726
+01:45:18,110 --> 01:45:19,590
+so must be the fourth component.
+
+2727
+01:45:19,870 --> 01:45:20,410
+Question.
+
+2728
+01:45:20,770 --> 01:45:21,010
+Yeah.
+
+2729
+01:45:21,190 --> 01:45:23,200
+I follow exactly what you're
+
+2730
+01:45:23,200 --> 01:45:25,210
+saying in terms of the notation
+
+2731
+01:45:25,210 --> 01:45:27,400
+and how it was constructed and what it
+
+2732
+01:45:27,400 --> 01:45:29,590
+denotes in terms of the symmetry and the tensions.
+
+2733
+01:45:29,910 --> 01:45:30,630
+That's fine.
+
+2734
+01:45:30,630 --> 01:45:31,350
+That's great.
+
+2735
+01:45:31,610 --> 01:45:32,090
+That's all there is.
+
+2736
+01:45:32,510 --> 01:45:34,530
+But putting blinders on,
+
+2737
+01:45:34,710 --> 01:45:37,030
+forgetting all the other things that we know,
+
+2738
+01:45:37,190 --> 01:45:39,570
+if we were just doing this derivation,
+
+2739
+01:45:39,790 --> 01:45:41,890
+we could add in the fourth equation,
+
+2740
+01:45:42,150 --> 01:45:43,410
+know that it was valid,
+
+2741
+01:45:43,410 --> 01:45:44,890
+but how would we know that
+
+2742
+01:45:44,890 --> 01:45:46,370
+it was meaningful in a physical sense?
+
+2743
+01:45:46,610 --> 01:45:47,450
+I'll tell you what it is.
+
+2744
+01:45:47,530 --> 01:45:48,570
+It's energy conservation.
+
+2745
+01:45:49,670 --> 01:45:50,170
+Well,
+
+2746
+01:45:50,170 --> 01:45:50,670
+okay,
+
+2747
+01:45:50,670 --> 01:45:52,090
+it's sort of energy conservation.
+
+2748
+01:45:53,210 --> 01:45:56,430
+The first three equations,
+
+2749
+01:45:57,690 --> 01:46:00,010
+they're not energy conservation.
+
+2750
+01:46:00,290 --> 01:46:01,150
+I'll tell you what they are,
+
+2751
+01:46:01,150 --> 01:46:01,270
+though.
+
+2752
+01:46:01,510 --> 01:46:04,050
+The first three equations are of the
+
+2753
+01:46:04,050 --> 01:46:06,590
+form dp dt is equal to force.
+
+2754
+01:46:09,970 --> 01:46:10,590
+You know,
+
+2755
+01:46:10,590 --> 01:46:11,950
+dp dt is ma,
+
+2756
+01:46:11,950 --> 01:46:12,330
+right?
+
+2757
+01:46:12,330 --> 01:46:12,770
+I mean,
+
+2758
+01:46:12,770 --> 01:46:16,590
+p is mv and dp dt is ma.
+
+2759
+01:46:17,190 --> 01:46:19,010
+So they're roughly speaking the...
+
+2760
+01:46:19,010 --> 01:46:19,490
+No,
+
+2761
+01:46:19,490 --> 01:46:20,270
+not roughly speaking.
+
+2762
+01:46:20,370 --> 01:46:22,230
+They're exactly the equations that
+
+2763
+01:46:22,230 --> 01:46:24,090
+the time derivative of the momentum
+
+2764
+01:46:24,090 --> 01:46:25,810
+is equal to the force,
+
+2765
+01:46:25,810 --> 01:46:27,050
+the first three equations,
+
+2766
+01:46:27,350 --> 01:46:28,900
+and the force being everything that's
+
+2767
+01:46:28,900 --> 01:46:30,450
+on the right-hand side of the equations.
+
+2768
+01:46:31,130 --> 01:46:32,150
+The fourth...
+
+2769
+01:46:32,150 --> 01:46:34,350
+And they tell you not momentum conservation,
+
+2770
+01:46:34,450 --> 01:46:36,650
+but they tell you how
+
+2771
+01:46:36,650 --> 01:46:38,850
+the change of momentum with time
+
+2772
+01:46:39,490 --> 01:46:40,590
+is due to...
+
+2773
+01:46:40,590 --> 01:46:41,410
+is...
+
+2774
+01:46:41,410 --> 01:46:43,410
+responds to the existence of a force.
+
+2775
+01:46:43,870 --> 01:46:46,470
+The fourth equation tells you how
+
+2776
+01:46:46,470 --> 01:46:49,070
+the kinetic energy changes with time.
+
+2777
+01:46:50,270 --> 01:46:50,910
+Okay,
+
+2778
+01:46:50,910 --> 01:46:53,130
+how the kinetic energy changes with time.
+
+2779
+01:46:53,310 --> 01:46:55,630
+How does the kinetic energy change with time?
+
+2780
+01:46:57,210 --> 01:46:59,330
+The kinetic energy by dt.
+
+2781
+01:46:59,650 --> 01:47:01,090
+Let's call it k by dt.
+
+2782
+01:47:06,309 --> 01:47:06,949
+Well,
+
+2783
+01:47:06,949 --> 01:47:08,110
+that's called work,
+
+2784
+01:47:08,110 --> 01:47:09,090
+right?
+
+2785
+01:47:09,090 --> 01:47:11,590
+And work is force times velocity.
+
+2786
+01:47:15,770 --> 01:47:17,490
+That's what the fourth equation is.
+
+2787
+01:47:17,590 --> 01:47:21,270
+The fourth equation is the equation that tells you
+
+2788
+01:47:21,270 --> 01:47:24,370
+that the energy changes in a way which is consistent
+
+2789
+01:47:24,370 --> 01:47:25,890
+with the amount of work being done.
+
+2790
+01:47:26,510 --> 01:47:29,030
+And that's not too surprising that...
+
+2791
+01:47:29,030 --> 01:47:31,120
+Remember that the momentum and the
+
+2792
+01:47:31,120 --> 01:47:33,210
+kinetic energy form a four vector.
+
+2793
+01:47:34,070 --> 01:47:34,630
+Okay?
+
+2794
+01:47:34,750 --> 01:47:39,010
+So it's not surprising that the four component equation
+
+2795
+01:47:39,090 --> 01:47:40,330
+is related,
+
+2796
+01:47:40,330 --> 01:47:43,310
+if not to energy and momentum conservation,
+
+2797
+01:47:43,790 --> 01:47:45,380
+at least to the way
+
+2798
+01:47:45,380 --> 01:47:46,970
+in which energy and momentum change
+
+2799
+01:47:48,290 --> 01:47:50,930
+in response to the existence of a force.
+
+2800
+01:47:51,190 --> 01:47:53,050
+So that's what the fourth equation is.
+
+2801
+01:47:53,230 --> 01:47:54,570
+It's the energy balance.
+
+2802
+01:47:54,730 --> 01:47:56,470
+It tells you how the kinetic energy changes
+
+2803
+01:47:56,470 --> 01:47:57,950
+when you do work on the system
+
+2804
+01:47:58,630 --> 01:48:00,870
+and the work being done by the field.
+
+2805
+01:48:02,730 --> 01:48:04,170
+That's what this is about.
+
+2806
+01:48:07,770 --> 01:48:09,070
+But the third equation tells you
+
+2807
+01:48:09,090 --> 01:48:09,130
+that the tensors are the function of the energy.
+
+2808
+01:48:09,130 --> 01:48:09,130
+Now,
+
+2809
+01:48:09,130 --> 01:48:10,390
+the sort of exciting thing is
+
+2810
+01:48:10,390 --> 01:48:13,090
+that you can represent the equations
+
+2811
+01:48:13,090 --> 01:48:16,870
+in this very neat Lorentz invariant form,
+
+2812
+01:48:17,850 --> 01:48:18,810
+tensor form,
+
+2813
+01:48:19,150 --> 01:48:21,330
+where the left-hand side is a tensor,
+
+2814
+01:48:21,450 --> 01:48:22,310
+namely a four vector,
+
+2815
+01:48:22,530 --> 01:48:24,890
+and the right-hand side is the product
+
+2816
+01:48:24,890 --> 01:48:26,550
+of a tensor with two indices
+
+2817
+01:48:27,270 --> 01:48:28,850
+times a four vector again.
+
+2818
+01:48:30,270 --> 01:48:32,370
+We contract the indices,
+
+2819
+01:48:32,670 --> 01:48:34,150
+and the contraction of the indices
+
+2820
+01:48:34,150 --> 01:48:36,450
+produces a four vector on the left-hand side,
+
+2821
+01:48:40,250 --> 01:48:42,290
+That's the exciting thing about this,
+
+2822
+01:48:42,290 --> 01:48:45,730
+that we used symmetry from the beginning,
+
+2823
+01:48:46,490 --> 01:48:48,880
+that told us the kind of Lagrangians we
+
+2824
+01:48:48,880 --> 01:48:51,270
+could write down that would manifest the symmetry,
+
+2825
+01:48:51,950 --> 01:48:54,170
+and then we plowed through it and discovered,
+
+2826
+01:48:54,170 --> 01:48:55,030
+in fact,
+
+2827
+01:48:55,030 --> 01:48:57,010
+that the equations of motion really
+
+2828
+01:48:57,010 --> 01:48:58,990
+do reflect the symmetry of the problem,
+
+2829
+01:48:59,190 --> 01:49:02,710
+the symmetry being Lorentz invariance.
+
+2830
+01:49:03,290 --> 01:49:03,850
+Now,
+
+2831
+01:49:03,850 --> 01:49:04,810
+there is another symmetry.
+
+2832
+01:49:04,810 --> 01:49:07,570
+The other symmetry is called Gagin invariance,
+
+2833
+01:49:07,570 --> 01:49:08,810
+and we haven't gotten to it yet.
+
+2834
+01:49:08,810 --> 01:49:10,030
+We'll get to it next time.
+
+2835
+01:49:17,429 --> 01:49:17,850
+But,
+
+2836
+01:49:17,850 --> 01:49:20,230
+and I'll tell you what it is next time,
+
+2837
+01:49:20,330 --> 01:49:25,190
+but let me say that the three really
+
+2838
+01:49:25,190 --> 01:49:30,050
+fundamental principles that come time and time again,
+
+2839
+01:49:30,610 --> 01:49:32,570
+which we'll see in this simple example,
+
+2840
+01:49:34,630 --> 01:49:35,470
+three principles
+
+2841
+01:49:37,570 --> 01:49:39,510
+The first principle is called locality.
+
+2842
+01:49:45,250 --> 01:49:50,100
+What locality says is that the way a thing changes only
+
+2843
+01:49:50,100 --> 01:49:54,950
+depends on what's going on nearby the thing that you're thinking about.
+
+2844
+01:49:55,830 --> 01:49:58,900
+A field over here doesn't change due
+
+2845
+01:49:58,900 --> 01:50:01,970
+to a field over there having some value.
+
+2846
+01:50:02,130 --> 01:50:04,750
+It changes because the field nearby has some value.
+
+2847
+01:50:05,070 --> 01:50:06,310
+The motion of a particle only
+
+2848
+01:50:06,310 --> 01:50:07,550
+changes when it's close to the field.
+
+2849
+01:50:07,550 --> 01:50:09,870
+It only depends on the values of the fields nearby.
+
+2850
+01:50:10,670 --> 01:50:13,370
+It also doesn't depend on the values of the
+
+2851
+01:50:13,370 --> 01:50:16,070
+fields at a later time or an earlier time.
+
+2852
+01:50:16,570 --> 01:50:19,840
+The equations of motion are
+
+2853
+01:50:19,840 --> 01:50:23,110
+equations between things at a nearby,
+
+2854
+01:50:23,110 --> 01:50:25,610
+in a small vicinity of the time,
+
+2855
+01:50:26,550 --> 01:50:28,310
+being related to other things in
+
+2856
+01:50:28,310 --> 01:50:30,070
+the same small vicinity of time.
+
+2857
+01:50:31,390 --> 01:50:32,410
+And space.
+
+2858
+01:50:33,210 --> 01:50:34,490
+How do we represent,
+
+2859
+01:50:34,490 --> 01:50:36,130
+how do we implement that?
+
+2860
+01:50:36,130 --> 01:50:37,730
+We implement that,
+
+2861
+01:50:37,730 --> 01:50:38,670
+that's called locality.
+
+2862
+01:50:39,130 --> 01:50:41,950
+We implement that by making the action,
+
+2863
+01:50:45,650 --> 01:50:48,380
+the action should be an
+
+2864
+01:50:48,380 --> 01:50:51,110
+integral over all space and time,
+
+2865
+01:50:51,110 --> 01:50:51,530
+dx,
+
+2866
+01:50:51,530 --> 01:50:51,950
+dt,
+
+2867
+01:50:52,689 --> 01:50:55,050
+of some kind of Lagrange density,
+
+2868
+01:50:55,290 --> 01:50:58,460
+which only depends on the values of
+
+2869
+01:50:58,460 --> 01:51:01,630
+things at a particular point in the neighborhood,
+
+2870
+01:51:01,930 --> 01:51:03,230
+let's call it x and t,
+
+2871
+01:51:04,650 --> 01:51:05,330
+and,
+
+2872
+01:51:05,330 --> 01:51:06,010
+well,
+
+2873
+01:51:06,130 --> 01:51:07,330
+sorry,
+
+2874
+01:51:08,150 --> 01:51:10,870
+depends on things and derivatives.
+
+2875
+01:51:12,230 --> 01:51:15,910
+Let's say fields and their derivatives.
+
+2876
+01:51:17,610 --> 01:51:18,850
+In other words,
+
+2877
+01:51:18,850 --> 01:51:21,100
+it depends on data which has
+
+2878
+01:51:21,100 --> 01:51:23,350
+to do with local nearby concepts.
+
+2879
+01:51:23,830 --> 01:51:27,140
+And you add up the action in
+
+2880
+01:51:27,140 --> 01:51:30,450
+point by point by point in space,
+
+2881
+01:51:32,990 --> 01:51:36,030
+and what comes out is differential.
+
+2882
+01:51:36,870 --> 01:51:39,970
+Differential equations are equations which relate how things
+
+2883
+01:51:39,970 --> 01:51:43,070
+change from one point to another to neighboring things.
+
+2884
+01:51:43,750 --> 01:51:47,530
+You could imagine the action not having this form.
+
+2885
+01:51:47,750 --> 01:51:51,840
+You could imagine the action has in it things which involve
+
+2886
+01:51:51,840 --> 01:51:55,930
+products of fields over here and products of fields far away.
+
+2887
+01:51:56,790 --> 01:51:58,290
+But then your equations,
+
+2888
+01:51:58,290 --> 01:52:00,610
+when you worked out the Euler-Lagrange equations,
+
+2889
+01:52:00,890 --> 01:52:03,490
+they would have the form that the way
+
+2890
+01:52:03,490 --> 01:52:06,090
+things change over here depends on what's happening.
+
+2891
+01:52:06,110 --> 01:52:07,090
+What's going on over here.
+
+2892
+01:52:07,710 --> 01:52:08,310
+No,
+
+2893
+01:52:08,310 --> 01:52:11,170
+that's not the way the action principle works.
+
+2894
+01:52:11,430 --> 01:52:14,870
+The action depends on fields and neighboring fields.
+
+2895
+01:52:15,390 --> 01:52:17,270
+Neighboring fields now means derivatives.
+
+2896
+01:52:18,090 --> 01:52:21,350
+So the way the field changes at one point is only determined
+
+2897
+01:52:21,350 --> 01:52:24,610
+by the value of the field at that point and neighboring points.
+
+2898
+01:52:25,070 --> 01:52:28,910
+So that phi sub u is four components derivative?
+
+2899
+01:52:29,230 --> 01:52:29,410
+Yes,
+
+2900
+01:52:29,410 --> 01:52:30,330
+four components.
+
+2901
+01:52:30,710 --> 01:52:31,930
+Four components.
+
+2902
+01:52:32,170 --> 01:52:35,770
+Phi sub mu represents the four derivatives of phi.
+
+2903
+01:52:37,669 --> 01:52:39,010
+And as I said,
+
+2904
+01:52:39,010 --> 01:52:43,140
+it says that fields change in a way which depends
+
+2905
+01:52:43,140 --> 01:52:47,270
+only on what's going on nearby in space and time.
+
+2906
+01:52:48,070 --> 01:52:49,910
+That's the principle of locality,
+
+2907
+01:52:49,910 --> 01:52:52,060
+and it's no more and no less
+
+2908
+01:52:52,060 --> 01:52:54,210
+than saying that the action is an integral.
+
+2909
+01:52:55,030 --> 01:52:57,290
+How do you quantify nearby?
+
+2910
+01:52:57,890 --> 01:52:58,310
+Well,
+
+2911
+01:52:58,310 --> 01:52:59,910
+by making derivatives.
+
+2912
+01:53:00,190 --> 01:53:03,230
+By saying it depends on fields and their first derivatives.
+
+2913
+01:53:03,790 --> 01:53:04,470
+That's all.
+
+2914
+01:53:04,470 --> 01:53:06,550
+Fields and their first derivatives.
+
+2915
+01:53:06,970 --> 01:53:07,570
+Now,
+
+2916
+01:53:07,570 --> 01:53:09,230
+you could try putting in second derivatives,
+
+2917
+01:53:09,230 --> 01:53:12,290
+and there's an interesting subject there,
+
+2918
+01:53:12,290 --> 01:53:16,430
+but let's not get into it too much.
+
+2919
+01:53:17,990 --> 01:53:20,700
+Action principle together with the idea that the
+
+2920
+01:53:20,700 --> 01:53:23,410
+action is built up out of incremental pieces,
+
+2921
+01:53:24,070 --> 01:53:26,370
+each of which depends only on a
+
+2922
+01:53:26,370 --> 01:53:28,670
+field in a neighborhood and its local neighbors.
+
+2923
+01:53:29,470 --> 01:53:31,940
+What we've been doing here
+
+2924
+01:53:31,940 --> 01:53:34,410
+just depends on x and y.
+
+2925
+01:53:35,230 --> 01:53:35,850
+Yeah,
+
+2926
+01:53:35,850 --> 01:53:37,510
+when we're talking about the particle,
+
+2927
+01:53:37,510 --> 01:53:37,810
+yes,
+
+2928
+01:53:37,810 --> 01:53:39,890
+when we're talking about the particle motion,
+
+2929
+01:53:40,590 --> 01:53:43,360
+then we can substitute the statement that the
+
+2930
+01:53:43,360 --> 01:53:46,130
+Lagrangian along the world line of a particle
+
+2931
+01:53:46,130 --> 01:53:49,020
+only depends on the positions of the
+
+2932
+01:53:49,020 --> 01:53:51,910
+particles and neighboring positions along the world line.
+
+2933
+01:53:52,190 --> 01:53:53,210
+But also,
+
+2934
+01:53:53,210 --> 01:53:55,240
+it depends on the values of the
+
+2935
+01:53:55,240 --> 01:53:57,270
+fields at the position of the particle.
+
+2936
+01:53:57,770 --> 01:54:00,320
+The acceleration of a particle over here does not
+
+2937
+01:54:00,320 --> 01:54:02,870
+depend on the value of the field over here.
+
+2938
+01:54:02,870 --> 01:54:04,230
+It depends on the values of
+
+2939
+01:54:04,230 --> 01:54:05,590
+the fields in the neighboring region.
+
+2940
+01:54:06,530 --> 01:54:08,570
+That's the principle of locality.
+
+2941
+01:54:09,410 --> 01:54:13,680
+That the response of either fields or particles
+
+2942
+01:54:13,680 --> 01:54:17,950
+depends only on what's going on infinitesimally close by.
+
+2943
+01:54:18,949 --> 01:54:19,650
+Second,
+
+2944
+01:54:19,650 --> 01:54:21,290
+Lorentz invariants.
+
+2945
+01:54:25,640 --> 01:54:29,245
+Lorentz invariants are in both cases
+
+2946
+01:54:29,245 --> 01:54:32,850
+for both the particle and the region.
+
+2947
+01:54:32,870 --> 01:54:37,690
+The rule is build the Lagrangian out of scalars.
+
+2948
+01:54:38,710 --> 01:54:40,270
+Build the Lagrangian,
+
+2949
+01:54:40,270 --> 01:54:43,150
+make sure that the Lagrangian itself is a scalar.
+
+2950
+01:54:43,550 --> 01:54:48,050
+That's another way of saying that we'll all agree about
+
+2951
+01:54:48,050 --> 01:54:52,550
+the action within a certain volume of space and time.
+
+2952
+01:54:54,010 --> 01:54:55,350
+Lorentz invariants,
+
+2953
+01:54:55,350 --> 01:54:57,650
+L equals scalar.
+
+2954
+01:55:02,950 --> 01:55:05,290
+Those two principles are very pervasive.
+
+2955
+01:55:05,550 --> 01:55:07,140
+There is one more principle
+
+2956
+01:55:07,140 --> 01:55:08,730
+which we haven't worked out yet.
+
+2957
+01:55:08,830 --> 01:55:09,920
+I have it in my notes
+
+2958
+01:55:09,920 --> 01:55:11,010
+and so I'll write it down,
+
+2959
+01:55:11,010 --> 01:55:13,150
+but it's going to be the subject of next week.
+
+2960
+01:55:13,610 --> 01:55:14,830
+Gauge invariants.
+
+2961
+01:55:20,530 --> 01:55:22,310
+And that means...
+
+2962
+01:55:23,810 --> 01:55:25,050
+We'll find out next week.
+
+2963
+01:55:27,490 --> 01:55:31,010
+These three principles are extremely pervasive.
+
+2964
+01:55:31,010 --> 01:55:33,050
+Every theory that we know about,
+
+2965
+01:55:33,050 --> 01:55:35,190
+whether it's general relativity,
+
+2966
+01:55:35,190 --> 01:55:37,030
+quantum electrodynamics,
+
+2967
+01:55:37,030 --> 01:55:39,050
+the standard model of particle physics,
+
+2968
+01:55:39,050 --> 01:55:40,890
+Yang-Mills theory,
+
+2969
+01:55:40,890 --> 01:55:45,910
+all conform to these three principles.
+
+2970
+01:55:46,789 --> 01:55:50,609
+And basically I would say anything else on top
+
+2971
+01:55:50,609 --> 01:55:54,430
+of that that you need is sort of incidental.
+
+2972
+01:55:54,430 --> 01:55:57,230
+And incidental not in the sense that it's not important.
+
+2973
+01:55:57,790 --> 01:55:59,470
+But incidental in the sense...
+
+2974
+01:55:59,470 --> 01:56:00,730
+Or what's the right word?
+
+2975
+01:56:00,910 --> 01:56:04,920
+That it varies from example to example in ways
+
+2976
+01:56:04,920 --> 01:56:08,930
+that don't really have to do with such deep principles.
+
+2977
+01:56:09,230 --> 01:56:09,790
+The fact,
+
+2978
+01:56:09,790 --> 01:56:10,310
+for example,
+
+2979
+01:56:10,310 --> 01:56:13,010
+that the standard model has three species of quarks,
+
+2980
+01:56:13,010 --> 01:56:15,270
+well that's not contained in here.
+
+2981
+01:56:15,870 --> 01:56:18,590
+That's a sort of random addition.
+
+2982
+01:56:18,850 --> 01:56:21,410
+But the basic deep principles are these.
+
+2983
+01:56:23,010 --> 01:56:25,930
+So next time we'll learn what gauge invariance is.
+
+2984
+01:56:27,890 --> 01:56:28,890
+As I said,
+
+2985
+01:56:28,890 --> 01:56:29,450
+I advise you to...
+
+2986
+01:56:29,470 --> 01:56:32,800
+Go through these equations and figure
+
+2987
+01:56:32,800 --> 01:56:36,130
+out where the various things came from.
+
+2988
+01:56:36,310 --> 01:56:38,450
+Because I certainly don't expect that
+
+2989
+01:56:38,450 --> 01:56:40,590
+you got it all in one sitting.
+
+2990
+01:56:42,950 --> 01:56:43,950
+For more,
+
+2991
+01:56:43,950 --> 01:56:46,370
+please visit us at stanford.edu.
+
