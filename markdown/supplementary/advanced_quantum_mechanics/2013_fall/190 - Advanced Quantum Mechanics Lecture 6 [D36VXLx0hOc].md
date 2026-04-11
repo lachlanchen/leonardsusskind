@@ -1,0 +1,2972 @@
+# Transcript
+
+Source: supplementary/advanced_quantum_mechanics/2013_fall/190 - Advanced Quantum Mechanics Lecture 6 [D36VXLx0hOc].mkv
+
+- [00:00:04,880 - 00:00:06,180] Stanford University.
+- [00:00:09,640 - 00:00:10,300] Okay,
+- [00:00:10,300 - 00:00:14,740] we're entering today into the world of quantum field theory.
+- [00:00:15,640 - 00:00:19,100] Quantum field theory is,
+- [00:00:19,100 - 00:00:19,580] of course,
+- [00:00:19,580 - 00:00:22,160] the description of nature as we know it,
+- [00:00:22,160 - 00:00:23,760] with the exception of gravity.
+- [00:00:24,160 - 00:00:28,040] And so practically everything that we know,
+- [00:00:28,040 - 00:00:29,520] with the exception of gravity,
+- [00:00:29,520 - 00:00:30,280] in principle,
+- [00:00:30,280 - 00:00:31,180] we think,
+- [00:00:31,180 - 00:00:36,080] is explainable if only we had the computational power
+- [00:00:36,080 - 00:00:39,070] to be able to solve quantum field
+- [00:00:39,070 - 00:00:42,060] theories with the accuracy that would be appropriate.
+- [00:00:42,660 - 00:00:43,880] Now the problem is,
+- [00:00:43,880 - 00:00:44,380] of course,
+- [00:00:44,380 - 00:00:49,700] that problems tend to be much too complicated to solve,
+- [00:00:50,379 - 00:00:52,280] except for some very special problems.
+- [00:00:53,040 - 00:00:55,420] You can understand the hydrogen atom,
+- [00:00:55,420 - 00:00:58,600] but by the time you get to the boron atom,
+- [00:00:58,680 - 00:00:59,420] they're too complicated.
+- [00:00:59,520 - 00:01:00,340] And so forth,
+- [00:01:00,340 - 00:01:02,929] and certainly studying human beings is well beyond the
+- [00:01:02,929 - 00:01:05,519] capacity of any quantum field theorist that I know.
+- [00:01:10,460 - 00:01:11,500] But nevertheless,
+- [00:01:11,500 - 00:01:14,220] apart from gravity,
+- [00:01:14,220 - 00:01:16,080] quantum field theory seems to be all there is.
+- [00:01:16,560 - 00:01:19,920] And we're going to enter into the
+- [00:01:19,920 - 00:01:23,280] study of it today in a very,
+- [00:01:23,280 - 00:01:23,780] very,
+- [00:01:23,780 - 00:01:25,140] very elementary way.
+- [00:01:26,280 - 00:01:27,890] We're going to study today the idea
+- [00:01:27,890 - 00:01:29,500] of what is called quantum field theory.
+- [00:01:29,520 - 00:01:30,980] And it's called second quantization.
+- [00:01:32,160 - 00:01:33,500] But before we do,
+- [00:01:33,500 - 00:01:36,580] and second quantization is about quantum fields,
+- [00:01:36,580 - 00:01:37,640] but we'll come to it,
+- [00:01:37,700 - 00:01:41,140] I want to review something first and
+- [00:01:41,140 - 00:01:44,580] maybe generalize that something a little bit.
+- [00:01:45,540 - 00:01:48,930] The thing that I want to study or to
+- [00:01:48,930 - 00:01:52,320] remind you of or go through with you is,
+- [00:01:52,320 - 00:01:52,660] again,
+- [00:01:52,660 - 00:01:53,900] the harmonic oscillator.
+- [00:01:54,640 - 00:01:57,100] But a new aspect of the harmonic oscillator,
+- [00:01:57,100 - 00:01:59,300] a couple of new aspects,
+- [00:01:59,300 - 00:01:59,500] of course,
+- [00:01:59,500 - 00:01:59,500] is that the harmonic oscillator is a
+- [00:01:59,500 - 00:01:59,500] very important element of the quantum field theory.
+- [00:01:59,520 - 00:02:00,970] And I'm going to talk about the harmonic oscillator
+- [00:02:00,970 - 00:02:02,420] just so that we have it in front of us,
+- [00:02:02,460 - 00:02:05,080] because the harmonic oscillator is the central ingredient,
+- [00:02:05,080 - 00:02:07,600] the central mathematical structure that
+- [00:02:07,600 - 00:02:10,120] goes into quantum field theory.
+- [00:02:11,140 - 00:02:13,240] So we need to understand it,
+- [00:02:13,240 - 00:02:14,640] make sure we understand it well.
+- [00:02:19,600 - 00:02:22,280] But we're not going to worry about springs and,
+- [00:02:22,280 - 00:02:23,680] you know,
+- [00:02:23,680 - 00:02:25,020] systems oscillating.
+- [00:02:25,240 - 00:02:27,220] When I speak about the harmonic oscillator,
+- [00:02:28,079 - 00:02:29,500] I'm really speaking about the harmonic field theory.
+- [00:02:29,520 - 00:02:30,810] I'm really speaking about the
+- [00:02:30,810 - 00:02:32,100] algebra of those little operators,
+- [00:02:32,100 - 00:02:33,580] a plus and a minus,
+- [00:02:34,980 - 00:02:38,040] and the product of a plus times a minus,
+- [00:02:38,040 - 00:02:38,760] which is what?
+- [00:02:38,760 - 00:02:39,100] Do you remember?
+- [00:02:42,320 - 00:02:42,960] What is it?
+- [00:02:43,140 - 00:02:44,180] It's the number operator.
+- [00:02:44,480 - 00:02:45,520] It's the number operator.
+- [00:02:45,520 - 00:02:49,000] It's the number of the excitations.
+- [00:02:49,060 - 00:02:49,880] So I'll remind you now.
+- [00:02:51,000 - 00:02:52,220] We'll go through it a little bit,
+- [00:02:52,220 - 00:02:53,600] and I'll tell you one or two facts
+- [00:02:53,600 - 00:02:54,980] that I may not have told you about.
+- [00:02:57,340 - 00:02:57,740] Particularly,
+- [00:02:57,740 - 00:02:58,540] all right.
+- [00:02:58,540 - 00:03:00,540] So let's just write down the
+- [00:03:00,540 - 00:03:02,540] rules for a single harmonic oscillator.
+- [00:03:03,320 - 00:03:05,000] There are A pluses.
+- [00:03:06,440 - 00:03:08,440] They act on states to elevate
+- [00:03:08,440 - 00:03:10,440] them up to the next level.
+- [00:03:10,740 - 00:03:12,380] There are A minuses,
+- [00:03:12,380 - 00:03:14,160] which take you down.
+- [00:03:15,160 - 00:03:17,320] At the bottom level,
+- [00:03:17,320 - 00:03:18,740] the ground state,
+- [00:03:18,740 - 00:03:21,060] A minus gives you nothing.
+- [00:03:21,120 - 00:03:22,880] It just annihilates the state.
+- [00:03:23,240 - 00:03:24,060] All right.
+- [00:03:24,080 - 00:03:26,440] So A minus is the lowering operator.
+- [00:03:27,380 - 00:03:28,020] And...
+- [00:03:28,540 - 00:03:30,760] A plus is the raising operator.
+- [00:03:31,180 - 00:03:33,150] We're going to learn to call
+- [00:03:33,150 - 00:03:35,120] them creation operators and annihilation operators.
+- [00:03:35,820 - 00:03:38,100] What is it that they create and annihilate?
+- [00:03:38,260 - 00:03:38,740] As we'll see,
+- [00:03:38,740 - 00:03:39,160] particles.
+- [00:03:41,640 - 00:03:43,910] But let's just use the same
+- [00:03:43,910 - 00:03:46,180] conventions that we've used up till now.
+- [00:03:48,320 - 00:03:48,920] And...
+- [00:03:50,260 - 00:03:54,480] There is also A plus times A minus.
+- [00:03:55,240 - 00:03:56,500] That was the thing,
+- [00:03:56,500 - 00:03:57,120] if you remember,
+- [00:03:57,120 - 00:03:59,300] that went into the Hamiltonian.
+- [00:03:59,420 - 00:03:59,960] If you remember,
+- [00:03:59,960 - 00:04:02,860] the Hamiltonian was just basically A plus,
+- [00:04:02,860 - 00:04:03,480] A minus.
+- [00:04:04,200 - 00:04:05,120] What was it?
+- [00:04:05,160 - 00:04:07,040] A plus is...
+- [00:04:09,500 - 00:04:12,310] X plus I omega P divided
+- [00:04:12,310 - 00:04:15,120] by some square root of 2 omega.
+- [00:04:16,180 - 00:04:18,079] A minus is the same sort of
+- [00:04:18,079 - 00:04:19,980] thing with a minus sign in there.
+- [00:04:20,180 - 00:04:21,959] And if you multiply them together,
+- [00:04:21,959 - 00:04:23,800] you get things with X squared...
+- [00:04:23,800 - 00:04:27,260] X squared plus...
+- [00:04:27,260 - 00:04:27,840] Do I have that right?
+- [00:04:28,300 - 00:04:28,920] P plus...
+- [00:04:28,920 - 00:04:29,040] No,
+- [00:04:29,040 - 00:04:29,160] no.
+- [00:04:29,180 - 00:04:29,660] I have it wrong.
+- [00:04:31,780 - 00:04:33,700] It's P plus omega X.
+- [00:04:40,340 - 00:04:42,460] And if you multiply the two of them together,
+- [00:04:42,460 - 00:04:44,940] you get P squared plus omega squared X squared
+- [00:04:44,940 - 00:04:46,270] plus this extra little term
+- [00:04:46,270 - 00:04:47,600] that was the ground state energy.
+- [00:04:49,360 - 00:04:51,380] And so that was...
+- [00:04:51,380 - 00:04:53,100] That went into the Hamiltonian.
+- [00:04:53,100 - 00:04:54,300] A plus times A minus.
+- [00:04:54,540 - 00:04:56,720] And we called it the number operator.
+- [00:04:57,080 - 00:04:59,320] It was the thing whose eigenvalues,
+- [00:04:59,320 - 00:05:01,280] whose observable values,
+- [00:05:01,280 - 00:05:04,120] were the integer level spacing,
+- [00:05:04,440 - 00:05:06,800] or the integer levels of the harmonic oscillator.
+- [00:05:07,220 - 00:05:09,740] So I believe we called this capital N,
+- [00:05:09,740 - 00:05:10,340] if I remember.
+- [00:05:11,780 - 00:05:14,380] And its eigenvalues we called little n.
+- [00:05:15,100 - 00:05:17,100] The observable values of it.
+- [00:05:20,840 - 00:05:22,000] One more thing.
+- [00:05:22,000 - 00:05:25,240] The commutation relations of A plus and A minus.
+- [00:05:26,320 - 00:05:27,480] That's what made...
+- [00:05:27,480 - 00:05:27,600] Oh,
+- [00:05:27,600 - 00:05:29,510] A plus and A minus
+- [00:05:29,510 - 00:05:31,420] are Hermitian conjugates of each other.
+- [00:05:31,520 - 00:05:33,500] That's an important mathematical fact.
+- [00:05:33,900 - 00:05:38,920] But the other mathematical fact is that the commutator
+- [00:05:38,920 - 00:05:43,940] of A minus with A plus is equal to 1.
+- [00:05:44,140 - 00:05:45,360] That's what made everything work.
+- [00:05:45,780 - 00:05:48,880] That's what we used to find the properties of what
+- [00:05:48,880 - 00:05:51,980] happens when we act with A plus and A minus.
+- [00:05:51,980 - 00:05:54,840] We used those commutation relations.
+- [00:05:56,340 - 00:05:57,700] That was basically it.
+- [00:05:57,800 - 00:05:59,620] That's all that went into the harmonic oscillator.
+- [00:06:01,380 - 00:06:01,900] Now,
+- [00:06:01,900 - 00:06:05,540] I'm going to suppose I have many harmonic oscillators.
+- [00:06:05,800 - 00:06:07,140] You could just think of
+- [00:06:07,140 - 00:06:08,480] them as a collection of springs.
+- [00:06:09,380 - 00:06:10,360] Collection of springs.
+- [00:06:10,520 - 00:06:13,210] Or you could think of them as
+- [00:06:13,210 - 00:06:15,900] the various oscillations of a violin string.
+- [00:06:16,700 - 00:06:17,740] Or whatever,
+- [00:06:17,740 - 00:06:19,080] for whatever reason,
+- [00:06:19,080 - 00:06:22,400] there happen to be many
+- [00:06:22,400 - 00:06:25,720] independent systems that are undergoing oscillation,
+- [00:06:25,780 - 00:06:27,400] or that can undergo oscillations,
+- [00:06:27,860 - 00:06:29,380] possibly with different frequencies.
+- [00:06:30,980 - 00:06:32,540] Possibly with different frequencies.
+- [00:06:32,900 - 00:06:35,020] Where does the frequency come into all of this?
+- [00:06:35,260 - 00:06:36,280] The frequency,
+- [00:06:36,280 - 00:06:36,460] well,
+- [00:06:36,460 - 00:06:36,840] first of all,
+- [00:06:36,840 - 00:06:37,360] it comes in here.
+- [00:06:37,840 - 00:06:39,640] But by the time we
+- [00:06:39,640 - 00:06:41,440] get to that point over there,
+- [00:06:41,600 - 00:06:46,400] the place where the frequency came in
+- [00:06:46,400 - 00:06:48,400] was just the fact that the energy
+- [00:06:49,140 - 00:06:53,120] is equal h-bar times the frequency
+- [00:06:54,120 - 00:06:55,580] times this n here.
+- [00:06:58,180 - 00:06:59,700] There's also plus a half a,
+- [00:06:59,720 - 00:07:00,900] I'm going to leave out the half,
+- [00:07:00,900 - 00:07:01,600] the ground state.
+- [00:07:01,680 - 00:07:02,760] It's not important for us.
+- [00:07:03,640 - 00:07:05,840] So that's where the frequency came in.
+- [00:07:05,880 - 00:07:09,160] It came in just as telling us what the energy
+- [00:07:09,160 - 00:07:12,980] for each increase of the number operator was.
+- [00:07:13,380 - 00:07:14,400] The frequency,
+- [00:07:14,400 - 00:07:16,560] together with h-bar,
+- [00:07:17,520 - 00:07:18,960] determine each time,
+- [00:07:19,080 - 00:07:20,420] we go up a level,
+- [00:07:21,320 - 00:07:23,660] how much energy it cost
+- [00:07:23,660 - 00:07:26,300] to jump the oscillator up one level.
+- [00:07:26,640 - 00:07:28,160] Or how much energy we might
+- [00:07:28,160 - 00:07:29,680] get back in some other form
+- [00:07:29,680 - 00:07:32,520] if the oscillator jumps down.
+- [00:07:34,500 - 00:07:36,140] If it jumps up for some reason,
+- [00:07:36,260 - 00:07:38,100] that's how much energy we have to pay,
+- [00:07:38,640 - 00:07:39,540] h-bar omega.
+- [00:07:39,940 - 00:07:41,000] If it jumps down,
+- [00:07:41,000 - 00:07:42,340] that's how much energy we get.
+- [00:07:43,960 - 00:07:44,440] And,
+- [00:07:44,440 - 00:07:46,240] as I said,
+- [00:07:46,240 - 00:07:48,020] that's the single harmonic oscillator.
+- [00:07:48,020 - 00:07:50,960] But now if we have many harmonic oscillators,
+- [00:07:51,140 - 00:07:52,620] we can label them.
+- [00:07:52,740 - 00:07:54,600] We can label them with an index.
+- [00:07:55,100 - 00:07:57,440] And I'll use the index i,
+- [00:07:57,740 - 00:07:59,280] but i does not stand for
+- [00:07:59,280 - 00:08:00,820] the square root of minus one.
+- [00:08:01,500 - 00:08:03,920] It's just a label which goes over
+- [00:08:03,920 - 00:08:06,640] all the possible oscillators that I'm interested in.
+- [00:08:07,000 - 00:08:08,300] There may be a finite number,
+- [00:08:08,540 - 00:08:10,160] there may be an infinite number.
+- [00:08:10,420 - 00:08:12,300] In the examples that we'll be interested in,
+- [00:08:12,340 - 00:08:13,580] there are an infinite number.
+- [00:08:14,480 - 00:08:15,000] Alright,
+- [00:08:15,000 - 00:08:16,680] so now we get to label,
+- [00:08:16,680 - 00:08:19,280] the oscillators,
+- [00:08:24,380 - 00:08:25,760] just by putting in,
+- [00:08:27,340 - 00:08:27,780] well,
+- [00:08:27,780 - 00:08:28,140] okay,
+- [00:08:28,140 - 00:08:29,600] we have to be a little careful over here.
+- [00:08:39,259 - 00:08:40,140] Each oscillator,
+- [00:08:40,140 - 00:08:42,620] think of it as an independent system.
+- [00:08:43,299 - 00:08:45,880] As a system which is just an independent,
+- [00:08:45,880 - 00:08:46,240] uh,
+- [00:08:46,240 - 00:08:47,360] degree of freedom.
+- [00:08:48,980 - 00:08:51,200] And when you have independent degrees of freedom,
+- [00:08:51,420 - 00:08:55,000] the operators for one subsystem
+- [00:08:55,000 - 00:08:57,840] commute with the operators for the other subs-
+- [00:08:57,840 - 00:08:59,240] for any other subsystem.
+- [00:08:59,920 - 00:09:00,700] That's a rule.
+- [00:09:01,000 - 00:09:02,420] We went through it,
+- [00:09:02,420 - 00:09:02,680] uh,
+- [00:09:03,020 - 00:09:04,600] two years ago or a year ago,
+- [00:09:04,600 - 00:09:05,340] whenever it was.
+- [00:09:05,480 - 00:09:08,260] The operators describing system A,
+- [00:09:08,480 - 00:09:10,860] and the operators for describing system B,
+- [00:09:11,040 - 00:09:13,900] if A and B are truly independent systems,
+- [00:09:14,540 - 00:09:15,860] they commute with each other.
+- [00:09:15,880 - 00:09:16,180] Why?
+- [00:09:16,900 - 00:09:18,620] Because to not commute
+- [00:09:18,620 - 00:09:21,760] would tell you that you cannot measure them independently.
+- [00:09:22,000 - 00:09:23,460] If you can't measure them independently,
+- [00:09:23,740 - 00:09:24,840] they're not independent systems.
+- [00:09:25,980 - 00:09:28,000] So presumably if you had two springs,
+- [00:09:28,200 - 00:09:29,820] you could take one off way over there,
+- [00:09:29,860 - 00:09:31,080] and the other one way off over there,
+- [00:09:31,180 - 00:09:33,340] and there's no reason why they should influence each other.
+- [00:09:33,820 - 00:09:35,040] Their operators,
+- [00:09:35,040 - 00:09:36,220] everything about them,
+- [00:09:36,220 - 00:09:36,760] commutes.
+- [00:09:37,460 - 00:09:39,240] And so we can write the following,
+- [00:09:39,240 - 00:09:39,780] that,
+- [00:09:41,800 - 00:09:44,020] let's write out all the commutation relations,
+- [00:09:44,280 - 00:09:45,160] because they're important.
+- [00:09:47,240 - 00:09:48,620] Let's forget this for the moment.
+- [00:09:51,260 - 00:09:52,840] Let's first take
+- [00:09:56,300 - 00:10:00,660] the commutation relations of the lowering operators,
+- [00:10:01,260 - 00:10:02,440] I with J.
+- [00:10:03,860 - 00:10:06,640] The first oscillator with the fourteenth oscillator.
+- [00:10:07,120 - 00:10:07,660] Okay,
+- [00:10:07,660 - 00:10:07,960] let's,
+- [00:10:08,940 - 00:10:10,160] well first of all,
+- [00:10:10,160 - 00:10:11,780] if I is not equal to J,
+- [00:10:11,980 - 00:10:13,820] they're talking about different oscillators.
+- [00:10:14,280 - 00:10:15,860] If we're talking about different oscillators,
+- [00:10:15,860 - 00:10:17,020] they must commute.
+- [00:10:17,760 - 00:10:19,860] But if we're talking about the same oscillator,
+- [00:10:20,680 - 00:10:22,290] then the commutator should be
+- [00:10:22,290 - 00:10:23,900] exactly the same as it was
+- [00:10:23,900 - 00:10:25,380] for the single oscillator case,
+- [00:10:25,380 - 00:10:26,240] namely one.
+- [00:10:27,200 - 00:10:28,660] So how do we write that?
+- [00:10:28,900 - 00:10:32,940] We write that by putting the Kronecker delta over here.
+- [00:10:33,680 - 00:10:34,380] All that means,
+- [00:10:34,980 - 00:10:35,540] oh,
+- [00:10:35,540 - 00:10:36,060] so now,
+- [00:10:36,060 - 00:10:36,600] zero,
+- [00:10:36,600 - 00:10:36,980] sorry,
+- [00:10:36,980 - 00:10:37,340] zero.
+- [00:10:37,940 - 00:10:40,480] Annihilation operators all commute with each other.
+- [00:10:43,020 - 00:10:44,560] Even for a single oscillator,
+- [00:10:44,560 - 00:10:47,620] the annihilation operator commutes with itself,
+- [00:10:47,780 - 00:10:49,400] because everything commutes with itself.
+- [00:10:50,720 - 00:10:54,280] Same thing for the creation operators,
+- [00:10:57,340 - 00:10:59,360] or the raising operators.
+- [00:11:02,220 - 00:11:02,900] But,
+- [00:11:02,900 - 00:11:03,580] now,
+- [00:11:03,580 - 00:11:05,160] here's what I wanted to say a moment ago.
+- [00:11:05,320 - 00:11:07,860] If I take the annihilation operator,
+- [00:11:08,200 - 00:11:11,980] and take its commutator with the creation operator,
+- [00:11:13,319 - 00:11:15,220] then if I is not J,
+- [00:11:15,480 - 00:11:17,360] we're talking about two different oscillators.
+- [00:11:17,420 - 00:11:18,380] They don't know about each other,
+- [00:11:18,420 - 00:11:19,460] they don't talk to each other,
+- [00:11:20,140 - 00:11:22,360] or at least they may talk to each other,
+- [00:11:22,420 - 00:11:24,520] but they are independent of each other,
+- [00:11:24,580 - 00:11:26,240] and the commutator must be zero.
+- [00:11:26,920 - 00:11:27,820] On the other hand,
+- [00:11:27,820 - 00:11:28,760] if it's the same oscillator
+- [00:11:28,760 - 00:11:29,880] that we're talking about,
+- [00:11:30,120 - 00:11:31,840] then the commutator must be one.
+- [00:11:33,999 - 00:11:34,439] So,
+- [00:11:34,439 - 00:11:36,220] this is equal to delta I J.
+- [00:11:37,340 - 00:11:41,360] This is the algebra of the operators of many,
+- [00:11:41,360 - 00:11:43,200] many harmonic oscillators.
+- [00:11:44,180 - 00:11:45,400] You need to know that.
+- [00:11:46,800 - 00:11:47,980] And one more thing,
+- [00:11:47,980 - 00:11:49,600] what's the total energy?
+- [00:11:49,840 - 00:11:52,320] The total energy is just the sum of the energy
+- [00:11:52,320 - 00:11:53,360] of all the oscillators.
+- [00:11:54,160 - 00:11:54,640] So,
+- [00:11:54,640 - 00:11:55,380] let's write that.
+- [00:11:57,000 - 00:11:58,040] The total energy,
+- [00:11:58,040 - 00:11:59,880] which we can take to be the Hamiltonian,
+- [00:12:00,000 - 00:12:03,240] is the sum over all I,
+- [00:12:04,480 - 00:12:05,880] all the oscillators,
+- [00:12:05,940 - 00:12:06,820] the first oscillator,
+- [00:12:06,820 - 00:12:07,660] the second oscillator,
+- [00:12:09,560 - 00:12:10,520] of omega,
+- [00:12:11,360 - 00:12:13,140] I'll include the h-bar for the moment,
+- [00:12:13,300 - 00:12:15,640] I'll probably forget about it before the night is over,
+- [00:12:16,360 - 00:12:16,660] omega,
+- [00:12:16,660 - 00:12:17,480] but which omega?
+- [00:12:18,080 - 00:12:21,060] Each oscillator may have a different frequency.
+- [00:12:21,760 - 00:12:22,280] So,
+- [00:12:22,280 - 00:12:23,440] each oscillator,
+- [00:12:23,440 - 00:12:25,500] the contribution of the ith oscillator,
+- [00:12:26,120 - 00:12:29,120] is proportional to the frequency of the ith oscillator,
+- [00:12:30,200 - 00:12:31,640] times n sub i.
+- [00:12:35,780 - 00:12:36,890] We're going to give a
+- [00:12:36,890 - 00:12:38,000] name to n sub i now.
+- [00:12:39,640 - 00:12:41,340] We're going to call n sub i,
+- [00:12:41,360 - 00:12:42,020] and a soggy 1 I,
+- [00:12:42,050 - 00:12:42,150] 是
+- [00:12:42,722 - 00:12:43,742] or n sub i but n,
+- [00:12:43,742 - 00:12:46,122] we're going to call them occupation numbers
+- [00:12:48,402 - 00:12:50,982] not occupation like what's your occupation
+- [00:12:51,702 - 00:12:54,272] but occupation in the sense of
+- [00:12:54,272 - 00:12:56,842] you are sitting there occupying some space
+- [00:12:58,282 - 00:13:01,702] okay all right these are the occupation numbers
+- [00:13:01,702 - 00:13:03,612] it's just a name for the moment
+- [00:13:03,612 - 00:13:05,522] what is it that's doing the occupying
+- [00:13:05,522 - 00:13:10,102] well we'll find out but this says that each oscillator
+- [00:13:10,102 - 00:13:14,122] has an energy proportional to its occupation number
+- [00:13:14,932 - 00:13:18,142] times omega times its frequency with the h bar
+- [00:13:19,112 - 00:13:20,827] being there there is the
+- [00:13:20,827 - 00:13:22,542] extra half of ground state energy
+- [00:13:22,542 - 00:13:25,212] i want to ignore it it's of no
+- [00:13:25,212 - 00:13:27,882] interest it plays no role it's just an additive
+- [00:13:27,882 - 00:13:31,562] constant additive constants in energy are
+- [00:13:32,531 - 00:13:35,286] don't make any difference okay that's
+- [00:13:35,286 - 00:13:38,042] the whole theory if you like
+- [00:13:38,372 - 00:13:39,242] well not quite
+- [00:13:40,102 - 00:13:43,172] not quite now how do we label states
+- [00:13:43,172 - 00:13:46,242] if we have many oscillators if we have
+- [00:13:46,242 - 00:13:49,442] one if we have one oscillator we can label
+- [00:13:49,442 - 00:13:52,342] a complete basis of states just by
+- [00:13:56,802 - 00:14:00,382] the level or the occupation number
+- [00:14:00,382 - 00:14:03,962] of the oscillator remember we have all
+- [00:14:03,962 - 00:14:07,502] these states n equals zero which is the ground state
+- [00:14:07,502 - 00:14:09,282] which we sometimes just call o
+- [00:14:10,102 - 00:14:12,392] n equals one which we call one n
+- [00:14:12,392 - 00:14:14,682] equals two and so forth and so on
+- [00:14:16,022 - 00:14:19,002] we label the states by the occupation number
+- [00:14:21,722 - 00:14:25,342] that's a state what if we have many oscillators
+- [00:14:25,882 - 00:14:27,742] and i now imagine that i lay
+- [00:14:27,742 - 00:14:29,602] them out there are many oscillators here's the
+- [00:14:29,602 - 00:14:31,412] first one over here second one
+- [00:14:31,412 - 00:14:33,222] over here third one over here
+- [00:14:33,222 - 00:14:35,252] fourth one over here i equals
+- [00:14:35,252 - 00:14:37,282] one i equals two and so forth
+- [00:14:38,242 - 00:14:40,002] right then in order to
+- [00:14:40,002 - 00:14:42,832] specify a state i have to specify
+- [00:14:42,832 - 00:14:45,662] the occupation number or one way of
+- [00:14:45,662 - 00:14:48,722] specifying a complete basis of states one
+- [00:14:48,722 - 00:14:51,782] way of specifying a basis of states
+- [00:14:51,782 - 00:14:54,862] is to label was to write down the occupation
+- [00:14:54,862 - 00:14:57,872] number of each oscillator how many
+- [00:14:57,872 - 00:15:00,882] quanta or how many units of
+- [00:15:00,882 - 00:15:02,222] energy are there so to speak
+- [00:15:04,402 - 00:15:07,082] in the first oscillator i'm going to
+- [00:15:07,082 - 00:15:09,762] call the first oscillator and no and one
+- [00:15:11,801 - 00:15:16,022] and two and three
+- [00:15:19,081 - 00:15:21,811] if there's a finite number of oscillators
+- [00:15:21,811 - 00:15:24,542] it terminates if there's an infinite number it
+- [00:15:24,542 - 00:15:27,242] doesn't do you know any situations where
+- [00:15:27,242 - 00:15:29,942] at least mathematically there's an infinite number of
+- [00:15:29,942 - 00:15:38,162] oscillators what's that the continuum well if yeah
+- [00:15:40,002 - 00:15:42,512] an example would be an
+- [00:15:42,512 - 00:15:45,022] a very idealized mathematical violin string
+- [00:15:45,822 - 00:15:48,992] a violin string has any number of
+- [00:15:48,992 - 00:15:52,162] harmonics everyone can oscillate with a different frequency
+- [00:15:53,982 - 00:15:56,712] that's a mathematically idealized of course the
+- [00:15:56,712 - 00:15:59,442] real violin string is made out of atoms
+- [00:16:00,182 - 00:16:04,002] and there aren't really that many possibilities but
+- [00:16:04,002 - 00:16:07,822] a violin string would be a mathematically ideal
+- [00:16:08,802 - 00:16:09,982] idealized violin string
+- [00:16:10,002 - 00:16:14,302] would have an infinite number of oscillators but of
+- [00:16:14,302 - 00:16:18,602] course the very very high n the very high i
+- [00:16:18,602 - 00:16:23,272] would correspond to extremely rapid frequencies and
+- [00:16:23,272 - 00:16:27,942] really because of the atomic structure of the
+- [00:16:27,942 - 00:16:31,962] violin string it really doesn't have that many oscillators
+- [00:16:35,991 - 00:16:38,702] but that's an example mathematically
+- [00:16:40,002 - 00:16:41,542] of infinitely many and we're going
+- [00:16:41,542 - 00:16:43,082] to be interested in that case
+- [00:16:43,082 - 00:16:47,172] okay let's talk about ah let's
+- [00:16:47,172 - 00:16:51,262] come over to another blackboard over here
+- [00:16:51,781 - 00:16:55,201] we're a little more a little
+- [00:16:55,201 - 00:16:58,622] more oscillation a little more oscillator mathematics
+- [00:17:00,701 - 00:17:04,801] i told you in the originally that
+- [00:17:06,222 - 00:17:07,462] if you act
+- [00:17:14,922 - 00:17:18,821] as an alternating field where we have an interlinear
+- [00:17:18,821 - 00:17:19,682] of problems
+- [00:17:19,682 - 00:17:20,402] what's that
+- [00:17:24,962 - 00:17:25,962] a
+- [00:17:25,962 - 00:17:26,281] is
+- [00:17:28,722 - 00:17:29,722] a
+- [00:17:29,722 - 00:17:29,782] movement
+- [00:17:29,782 - 00:17:29,802] e
+- [00:17:33,042 - 00:17:34,042] one
+- [00:17:34,042 - 00:17:34,622] are
+- [00:17:36,262 - 00:17:37,262] are
+- [00:17:40,002 - 00:17:41,042] because they have a different,
+- [00:17:41,042 - 00:17:43,722] observably different number of n.
+- [00:17:44,681 - 00:17:46,811] So states with different values
+- [00:17:46,811 - 00:17:48,942] of an eigenvalue are orthogonal.
+- [00:17:49,852 - 00:17:54,017] So the usual normalization would be that the
+- [00:17:54,017 - 00:17:58,182] inner product of n with m is delta nm,
+- [00:17:58,342 - 00:17:59,282] or in other words,
+- [00:17:59,282 - 00:18:03,462] each state nn is equal to 1,
+- [00:18:03,462 - 00:18:08,202] nm is equal to 0.
+- [00:18:08,202 - 00:18:10,122] For n not equal to m,
+- [00:18:10,122 - 00:18:10,622] they're orthogonal.
+- [00:18:11,842 - 00:18:13,502] For n equal to n,
+- [00:18:13,502 - 00:18:17,402] we normally would take them to be normalized states.
+- [00:18:18,062 - 00:18:21,782] That's standard quantum mechanical notation procedure.
+- [00:18:23,862 - 00:18:25,102] With that notation,
+- [00:18:25,102 - 00:18:26,002] in other words,
+- [00:18:26,002 - 00:18:28,142] each one of these states is of unit length.
+- [00:18:28,962 - 00:18:31,242] Each one of these states is of unit length,
+- [00:18:31,242 - 00:18:32,282] but with that notation,
+- [00:18:32,902 - 00:18:35,882] a plus on n does not give n plus 1.
+- [00:18:36,242 - 00:18:38,182] It gives a numerical correlation.
+- [00:18:38,202 - 00:18:39,142] So we have a numerical coefficient in front,
+- [00:18:39,282 - 00:18:42,162] and the numerical coefficient is the
+- [00:18:42,162 - 00:18:45,042] square root of n plus 1.
+- [00:18:47,282 - 00:18:48,802] Let me prove that for you.
+- [00:19:00,722 - 00:19:01,962] Let's see if we can prove it.
+- [00:19:04,242 - 00:19:04,682] Ah,
+- [00:19:04,682 - 00:19:05,422] we can do it over here.
+- [00:19:06,742 - 00:19:07,182] Okay.
+- [00:19:09,302 - 00:19:11,682] Let's not put the answer in.
+- [00:19:13,582 - 00:19:16,342] Let's just call this some numerical coefficient,
+- [00:19:16,342 - 00:19:18,082] and we don't know what it is yet.
+- [00:19:18,742 - 00:19:20,122] We don't know what it is yet.
+- [00:19:20,602 - 00:19:21,962] It's some cn,
+- [00:19:21,962 - 00:19:23,012] and we're going to try
+- [00:19:23,012 - 00:19:24,062] to figure out what it is.
+- [00:19:24,442 - 00:19:25,282] What's our tool?
+- [00:19:25,562 - 00:19:28,822] Our tool is the commutation relations for the oscillators.
+- [00:19:28,842 - 00:19:29,942] It's a single oscillator now,
+- [00:19:29,942 - 00:19:31,322] not multiple oscillators.
+- [00:19:32,082 - 00:19:32,542] Okay.
+- [00:19:32,602 - 00:19:32,762] Okay.
+- [00:19:35,582 - 00:19:36,262] Let's write.
+- [00:19:36,442 - 00:19:38,082] This is a ket vector.
+- [00:19:38,202 - 00:19:38,322] This is a ket vector equation.
+- [00:19:38,862 - 00:19:41,822] Let's write the corresponding bra vector equation.
+- [00:19:42,342 - 00:19:43,282] When you write,
+- [00:19:43,282 - 00:19:45,632] when you go from a ket
+- [00:19:45,632 - 00:19:47,982] vector equation to a bra vector equation,
+- [00:19:48,302 - 00:19:49,402] what do you do with the operators?
+- [00:19:50,962 - 00:19:52,662] The kets go to bras.
+- [00:19:53,042 - 00:19:54,102] What about the operators?
+- [00:19:55,442 - 00:19:56,342] Hermitian conjugate.
+- [00:19:57,142 - 00:19:58,122] Hermitian conjugate.
+- [00:19:58,842 - 00:19:59,882] Hermitian conjugate.
+- [00:20:03,482 - 00:20:04,282] All right.
+- [00:20:04,302 - 00:20:06,962] The Hermitian conjugate of a plus is a minus.
+- [00:20:07,162 - 00:20:07,522] So,
+- [00:20:07,522 - 00:20:08,102] another.
+- [00:20:08,102 - 00:20:14,692] Another way to write the same fact is the Hermitian
+- [00:20:14,692 - 00:20:21,282] conjugate on the bra vector n is equal to cn.
+- [00:20:21,362 - 00:20:23,122] I'm assuming that cn is real.
+- [00:20:23,482 - 00:20:25,362] We can do the complex case.
+- [00:20:25,482 - 00:20:26,042] It doesn't matter.
+- [00:20:26,702 - 00:20:27,382] We can.
+- [00:20:27,602 - 00:20:29,962] It's okay to think of cn as real.
+- [00:20:30,102 - 00:20:30,442] I don't.
+- [00:20:30,702 - 00:20:31,602] It doesn't.
+- [00:20:31,602 - 00:20:32,282] It doesn't matter.
+- [00:20:32,462 - 00:20:33,542] But let's let it be real.
+- [00:20:34,182 - 00:20:35,342] If it wasn't real,
+- [00:20:35,342 - 00:20:37,702] then we would want the complex conjugated.
+- [00:20:38,102 - 00:20:39,542] But we can choose it to be real.
+- [00:20:39,902 - 00:20:41,582] And then n plus 1.
+- [00:20:43,422 - 00:20:47,582] That's the exact same equation except bras.
+- [00:20:48,002 - 00:20:48,942] Kets go to bras.
+- [00:20:49,862 - 00:20:51,662] Operators go to their Hermitian conjugate.
+- [00:20:52,382 - 00:20:54,742] And numbers go to their complex conjugate.
+- [00:20:54,822 - 00:20:56,232] But I'm taking c to
+- [00:20:56,232 - 00:20:57,642] be equal to a real number.
+- [00:20:59,142 - 00:20:59,582] Okay.
+- [00:20:59,742 - 00:21:00,182] Now,
+- [00:21:00,182 - 00:21:01,382] here's what we're going to do.
+- [00:21:02,762 - 00:21:04,622] We're going to put this equation next to it.
+- [00:21:04,682 - 00:21:06,002] We're going to take the inner
+- [00:21:06,002 - 00:21:07,322] product of this equation with this equation.
+- [00:21:07,382 - 00:21:08,002] With the bottom one,
+- [00:21:08,002 - 00:21:08,042] we're going to take the inner
+- [00:21:08,042 - 00:21:08,082] product of this equation with this equation.
+- [00:21:08,082 - 00:21:08,622] With the top one.
+- [00:21:09,142 - 00:21:10,062] Let's write it out.
+- [00:21:10,162 - 00:21:10,362] n,
+- [00:21:10,362 - 00:21:12,442] a minus,
+- [00:21:12,442 - 00:21:14,442] a plus,
+- [00:21:14,442 - 00:21:15,482] n.
+- [00:21:16,502 - 00:21:18,542] That's what happens if you take the inner product
+- [00:21:18,542 - 00:21:20,582] of the left side here with the right side here.
+- [00:21:21,122 - 00:21:25,452] And that's going to equal cn squared times
+- [00:21:25,452 - 00:21:29,782] the inner product of this vector with this vector.
+- [00:21:29,882 - 00:21:31,302] But what's the inner product of this with this?
+- [00:21:36,822 - 00:21:37,982] Every one of these vectors.
+- [00:21:38,082 - 00:21:39,502] Every one of these vectors is normalized to 1.
+- [00:21:39,962 - 00:21:40,902] So it's just 1.
+- [00:21:42,122 - 00:21:43,372] So now we have a tool
+- [00:21:43,372 - 00:21:44,622] to figure out what cn is.
+- [00:21:45,442 - 00:21:45,982] All right.
+- [00:21:46,002 - 00:21:47,842] All we have to do is juggle the
+- [00:21:47,842 - 00:21:49,682] a pluses and a minuses in a clever way.
+- [00:21:51,622 - 00:21:52,562] How do we want to,
+- [00:21:52,562 - 00:21:53,442] what do we want to do?
+- [00:21:54,002 - 00:21:56,362] I think I erased an equation over here.
+- [00:21:56,462 - 00:21:57,022] I should have written,
+- [00:21:57,022 - 00:21:57,342] yeah.
+- [00:21:58,462 - 00:22:02,002] Let's write down the guiding equation over here.
+- [00:22:02,482 - 00:22:03,482] Or over here.
+- [00:22:04,962 - 00:22:05,362] n.
+- [00:22:07,182 - 00:22:08,062] On the nth.
+- [00:22:08,082 - 00:22:10,462] Nth state is equal to
+- [00:22:10,462 - 00:22:12,842] little n on the nth state.
+- [00:22:13,022 - 00:22:13,722] Why is that true?
+- [00:22:18,062 - 00:22:18,702] Come on.
+- [00:22:22,162 - 00:22:23,902] Definition of being an eigenvector.
+- [00:22:24,302 - 00:22:26,862] Little n is the eigenvector of big N.
+- [00:22:27,762 - 00:22:30,762] Big N acts on the eigenstate
+- [00:22:30,762 - 00:22:33,762] with eigenvalue n to give little n.
+- [00:22:33,942 - 00:22:35,622] That's the definition of an eigenvector.
+- [00:22:35,842 - 00:22:36,362] Question?
+- [00:22:36,662 - 00:22:36,922] Yes.
+- [00:22:38,082 - 00:22:40,282] I don't see why the interproctor of n plus 1,
+- [00:22:40,282 - 00:22:42,322] but n plus 1 is 1.
+- [00:22:43,022 - 00:22:45,142] Because I've used the rule.
+- [00:22:45,702 - 00:22:47,002] But we haven't normalized it yet.
+- [00:22:47,042 - 00:22:47,422] No,
+- [00:22:47,422 - 00:22:47,602] no,
+- [00:22:47,602 - 00:22:47,842] no,
+- [00:22:47,842 - 00:22:48,042] no.
+- [00:22:48,042 - 00:22:49,062] Now I've assumed they're normalized.
+- [00:22:50,182 - 00:22:52,902] I'm assuming now that the n vectors are normalized.
+- [00:22:54,502 - 00:22:55,462] And having.
+- [00:22:57,642 - 00:22:58,122] No,
+- [00:22:58,122 - 00:22:58,602] no.
+- [00:22:59,822 - 00:23:03,742] I have put the ambiguity into the c's.
+- [00:23:03,922 - 00:23:04,102] Right.
+- [00:23:04,842 - 00:23:06,922] I may assume that they're normalized.
+- [00:23:06,922 - 00:23:09,062] And then seek to.
+- [00:23:09,182 - 00:23:09,662] Got it?
+- [00:23:09,942 - 00:23:10,422] Right.
+- [00:23:10,882 - 00:23:11,362] Yeah.
+- [00:23:11,502 - 00:23:11,982] Okay,
+- [00:23:11,982 - 00:23:12,202] good.
+- [00:23:12,782 - 00:23:13,442] All right.
+- [00:23:13,462 - 00:23:18,382] So big N is nothing but a plus a minus.
+- [00:23:19,202 - 00:23:20,462] So let's put that here.
+- [00:23:21,942 - 00:23:23,422] A plus a minus.
+- [00:23:29,862 - 00:23:31,682] That's almost what I have here.
+- [00:23:31,902 - 00:23:32,482] A plus.
+- [00:23:32,522 - 00:23:33,982] I don't have a plus a minus.
+- [00:23:34,062 - 00:23:35,302] I have a minus a plus.
+- [00:23:35,802 - 00:23:36,802] But what I know.
+- [00:23:36,802 - 00:23:38,962] Is what a plus a minus does.
+- [00:23:39,242 - 00:23:40,262] What can I do?
+- [00:23:45,002 - 00:23:46,142] What's that operation?
+- [00:23:47,282 - 00:23:47,962] Commute.
+- [00:23:49,902 - 00:23:50,582] Commute.
+- [00:23:50,702 - 00:23:53,142] And here is our commutator.
+- [00:23:53,202 - 00:23:54,922] The commutator is 1.
+- [00:23:55,742 - 00:23:56,822] So what that says.
+- [00:23:57,762 - 00:23:59,522] Is that this same thing.
+- [00:23:59,602 - 00:24:00,802] Is equal to n.
+- [00:24:02,182 - 00:24:04,082] A plus a minus.
+- [00:24:04,382 - 00:24:06,702] A plus.
+- [00:24:06,702 - 00:24:07,442] Plus 1.
+- [00:24:08,422 - 00:24:09,922] That's the commutator term.
+- [00:24:10,382 - 00:24:10,862] N.
+- [00:24:13,622 - 00:24:14,102] Okay.
+- [00:24:14,202 - 00:24:15,342] Now I'm in good shape.
+- [00:24:15,562 - 00:24:17,902] Because I know what a plus a minus does.
+- [00:24:17,942 - 00:24:18,922] When it acts on n.
+- [00:24:19,782 - 00:24:21,462] It just multiplies by little n.
+- [00:24:23,182 - 00:24:24,902] So all of this just gives me.
+- [00:24:27,602 - 00:24:28,882] N plus 1.
+- [00:24:30,682 - 00:24:33,102] Times the inner product of n with itself.
+- [00:24:34,102 - 00:24:34,902] Which is what?
+- [00:24:37,422 - 00:24:38,762] So there we have it.
+- [00:24:38,802 - 00:24:40,942] Cn squared is equal to n plus 1.
+- [00:24:41,182 - 00:24:44,122] And therefore Cn is the
+- [00:24:44,122 - 00:24:47,062] square root of n plus 1.
+- [00:24:47,942 - 00:24:49,102] We now know.
+- [00:24:51,002 - 00:24:54,442] What the creation operator does in all of its glory.
+- [00:24:56,602 - 00:25:01,282] It increases the occupation number by 1.
+- [00:25:01,682 - 00:25:03,962] And it multiplies by the number
+- [00:25:03,962 - 00:25:06,242] square root of n plus 1.
+- [00:25:06,362 - 00:25:06,522] And it multiplies by the number
+- [00:25:06,522 - 00:25:06,682] square root of n plus 1.
+- [00:25:07,422 - 00:25:09,002] We can get rid of the rest of this.
+- [00:25:09,142 - 00:25:10,102] We don't need it anymore.
+- [00:25:28,102 - 00:25:28,502] Next.
+- [00:25:29,642 - 00:25:31,622] What about a minus on n.
+- [00:25:34,342 - 00:25:34,742] Well.
+- [00:25:34,922 - 00:25:35,562] You go through.
+- [00:25:35,842 - 00:25:36,242] Essentially.
+- [00:25:36,362 - 00:25:36,622] The.
+- [00:25:36,702 - 00:25:38,222] same little game.
+- [00:25:38,222 - 00:25:40,042] You can do it yourself,
+- [00:25:40,042 - 00:25:40,922] it doesn't take,
+- [00:25:40,922 - 00:25:41,942] it's not very hard.
+- [00:25:42,662 - 00:25:45,142] This time you don't even have to do any commutator.
+- [00:25:45,142 - 00:25:47,002] They'll wind up in the
+- [00:25:47,002 - 00:25:49,212] right order and what you'll find out is
+- [00:25:49,212 - 00:25:51,422] that this is equal to the square root of
+- [00:25:51,422 - 00:25:54,162] n times n minus 1.
+- [00:25:54,162 - 00:25:56,202] In other words,
+- [00:25:56,202 - 00:25:59,722] it takes you down a level but multiplies by
+- [00:25:59,722 - 00:26:00,622] the square root of n.
+- [00:26:00,622 - 00:26:01,682] Notice that this one,
+- [00:26:01,682 - 00:26:02,502] yeah okay,
+- [00:26:02,502 - 00:26:02,942] that's,
+- [00:26:02,942 - 00:26:03,322] that's,
+- [00:26:03,322 - 00:26:04,402] that's what
+- [00:26:04,402 - 00:26:04,702] you find.
+- [00:26:04,702 - 00:26:09,622] Once you know this formula here,
+- [00:26:09,622 - 00:26:12,202] you don't have to worry about the
+- [00:26:12,202 - 00:26:13,882] fact of what happens when
+- [00:26:13,882 - 00:26:15,562] a minus hits the bottom level.
+- [00:26:15,562 - 00:26:18,242] When a minus hits the
+- [00:26:18,242 - 00:26:18,882] bottom level,
+- [00:26:18,882 - 00:26:20,682] the bottom level is n equals 0,
+- [00:26:20,682 - 00:26:22,422] you get 0.
+- [00:26:22,422 - 00:26:25,002] So this equation as
+- [00:26:25,002 - 00:26:29,092] it stands now encodes the fact
+- [00:26:29,092 - 00:26:33,182] that the lowering operator annihilates or kills
+- [00:26:33,182 - 00:26:34,382] or gives away the lower limit.
+- [00:26:34,402 - 00:26:35,472] So the lower limit is 0
+- [00:26:35,472 - 00:26:36,542] when it acts on the ground state,
+- [00:26:36,542 - 00:26:38,822] at just the square root of n here.
+- [00:26:42,382 - 00:26:47,522] So this is more oscillator stuff that
+- [00:26:47,522 - 00:26:52,662] I assume that Dirac was responsible for.
+- [00:26:53,982 - 00:26:55,102] And now we know,
+- [00:26:55,102 - 00:26:55,802] I think,
+- [00:26:55,802 - 00:26:59,082] everything we need to know about harmonic oscillators,
+- [00:26:59,182 - 00:27:00,322] at least for the moment.
+- [00:27:04,762 - 00:27:07,122] And that was just a mathematical interlude,
+- [00:27:07,122 - 00:27:07,642] if you like,
+- [00:27:07,642 - 00:27:08,142] to,
+- [00:27:08,142 - 00:27:09,382] so that we'd
+- [00:27:09,382 - 00:27:11,682] have it in front of us when we need it.
+- [00:27:11,682 - 00:27:12,822] Let's put it up on top.
+- [00:27:19,842 - 00:27:21,832] Any questions about harmonic
+- [00:27:21,832 - 00:27:23,822] oscillators or multiple harmonic oscillators?
+- [00:27:24,602 - 00:27:25,082] Oh,
+- [00:27:25,082 - 00:27:25,322] oh.
+- [00:27:25,322 - 00:27:27,422] One thing,
+- [00:27:27,422 - 00:27:29,582] what happens,
+- [00:27:29,582 - 00:27:34,382] here's a particular vector or a particular state,authentic
+- [00:27:34,402 - 00:27:36,882] which has a certain set of occupation numbers.
+- [00:27:37,942 - 00:27:41,452] Let's hit it with a
+- [00:27:41,452 - 00:27:44,962] creation operator for the i-th oscillator.
+- [00:27:45,742 - 00:27:47,162] We're going to the i-th oscillator,
+- [00:27:47,162 - 00:27:50,222] and we're applying one unit of creation to it,
+- [00:27:50,282 - 00:27:52,142] or one unit of elevation.
+- [00:27:52,802 - 00:27:53,802] What does it do?
+- [00:27:54,562 - 00:27:55,042] Well,
+- [00:27:55,042 - 00:27:57,062] it goes over to the i-th slot.
+- [00:27:57,222 - 00:27:58,122] If this were 3,
+- [00:27:58,122 - 00:27:58,922] if i was 3,
+- [00:27:58,922 - 00:28:00,122] it would go over to this slot,
+- [00:28:00,342 - 00:28:03,862] and it increases the occupation number by one unit,
+- [00:28:04,702 - 00:28:07,122] but only for the particular
+- [00:28:07,122 - 00:28:09,542] i that we wrote down here.
+- [00:28:09,722 - 00:28:11,302] So if we go to the 7th oscillator,
+- [00:28:11,302 - 00:28:14,062] and we apply the creation operator,
+- [00:28:14,542 - 00:28:18,102] it increases the 7th oscillator level.
+- [00:28:18,422 - 00:28:20,082] It does not increase the 6th one,
+- [00:28:20,082 - 00:28:21,542] it doesn't increase the 5th one.
+- [00:28:22,242 - 00:28:22,462] You know,
+- [00:28:22,462 - 00:28:23,582] if there's an oscillator over there,
+- [00:28:23,582 - 00:28:24,522] it's over there.
+- [00:28:24,742 - 00:28:27,682] And it's not to be confused with anybody else.
+- [00:28:28,122 - 00:28:28,842] And so,
+- [00:28:28,842 - 00:28:31,092] what this does is it
+- [00:28:31,092 - 00:28:33,342] leaves all the other ones alone.
+- [00:28:33,642 - 00:28:34,382] Let's say i-th.
+- [00:28:34,402 - 00:28:35,422] i is out here somewhere.
+- [00:28:36,282 - 00:28:36,762] n1,
+- [00:28:36,762 - 00:28:37,242] n2,
+- [00:28:37,242 - 00:28:37,602] dot,
+- [00:28:37,602 - 00:28:37,742] dot,
+- [00:28:37,742 - 00:28:37,902] dot,
+- [00:28:37,902 - 00:28:39,722] until we get up to the i-th place.
+- [00:28:40,322 - 00:28:43,062] And then it gives us ni plus 1,
+- [00:28:43,062 - 00:28:47,402] and then beyond that,
+- [00:28:47,402 - 00:28:48,042] nothing.
+- [00:28:48,162 - 00:28:49,622] But this is not quite right.
+- [00:28:50,242 - 00:28:52,602] This is not quite right because it fails to
+- [00:28:52,602 - 00:28:54,962] take into account the square root of n plus 1.
+- [00:28:55,802 - 00:28:56,282] So,
+- [00:28:56,282 - 00:28:58,582] what we actually have to write...
+- [00:28:59,722 - 00:29:00,642] What am I writing?
+- [00:29:02,722 - 00:29:03,922] I'm writing nonsense.
+- [00:29:05,902 - 00:29:06,382] So,
+- [00:29:06,382 - 00:29:09,082] what we have to write is,
+- [00:29:09,082 - 00:29:09,222] n1,
+- [00:29:09,222 - 00:29:09,962] dot,
+- [00:29:09,962 - 00:29:10,202] dot,
+- [00:29:10,202 - 00:29:10,502] dot,
+- [00:29:10,502 - 00:29:12,462] ni plus 1,
+- [00:29:12,462 - 00:29:13,342] dot,
+- [00:29:13,342 - 00:29:13,562] dot,
+- [00:29:13,562 - 00:29:13,902] dot.
+- [00:29:15,561 - 00:29:16,041] But,
+- [00:29:16,041 - 00:29:18,541] we have to put in a
+- [00:29:18,541 - 00:29:21,042] square root of ni plus 1.
+- [00:29:21,542 - 00:29:22,022] So,
+- [00:29:22,022 - 00:29:22,462] in other words,
+- [00:29:22,462 - 00:29:24,402] it works exactly the same as a single oscillator,
+- [00:29:24,702 - 00:29:27,602] with all the other ones just being bystanders,
+- [00:29:27,642 - 00:29:29,912] which play no role when you
+- [00:29:29,912 - 00:29:32,182] hit it with the i-th oscillator.
+- [00:29:32,582 - 00:29:34,382] If you hit it with the j-th oscillator,
+- [00:29:34,402 - 00:29:38,242] some other occupation number would get increased.
+- [00:29:39,342 - 00:29:40,022] Likewise,
+- [00:29:40,022 - 00:29:43,142] for the lowering operators or the annihilation operators,
+- [00:29:43,622 - 00:29:46,942] same kind of understanding.
+- [00:29:47,202 - 00:29:47,382] So,
+- [00:29:47,382 - 00:29:47,762] as I said,
+- [00:29:47,762 - 00:29:51,301] that's what we need to know about oscillators.
+- [00:29:53,041 - 00:29:53,722] Now,
+- [00:29:53,722 - 00:29:55,222] we're going to come to quantum fields.
+- [00:29:55,422 - 00:29:56,102] Real,
+- [00:29:56,102 - 00:29:57,722] genuine quantum fields,
+- [00:29:57,722 - 00:29:59,242] but in a very simple context.
+- [00:29:59,742 - 00:30:01,682] Non-relativistic quantum mechanics,
+- [00:30:01,682 - 00:30:02,982] ordinary quantum mechanics.
+- [00:30:04,402 - 00:30:05,742] Not relativity yet.
+- [00:30:05,882 - 00:30:07,321] We're not doing special relativity,
+- [00:30:07,321 - 00:30:09,922] just ordinary quantum mechanics.
+- [00:30:11,422 - 00:30:13,302] In ordinary quantum mechanics,
+- [00:30:14,101 - 00:30:16,251] there's some kind of funny
+- [00:30:16,251 - 00:30:18,402] connection between particles and fields.
+- [00:30:19,182 - 00:30:21,162] Particles are described by wave functions.
+- [00:30:21,582 - 00:30:23,842] Wave functions are functions of position.
+- [00:30:24,602 - 00:30:26,422] They sort of look like fields.
+- [00:30:26,762 - 00:30:27,502] What are fields?
+- [00:30:27,502 - 00:30:28,542] Fields are things,
+- [00:30:28,542 - 00:30:30,162] degrees of freedom,
+- [00:30:30,362 - 00:30:33,602] which depend on position and on time,
+- [00:30:33,602 - 00:30:34,162] in particular.
+- [00:30:34,162 - 00:30:35,982] But let's just say position for the moment.
+- [00:30:36,082 - 00:30:37,002] Let's freeze time.
+- [00:30:37,982 - 00:30:39,762] Fields are functions of position.
+- [00:30:40,922 - 00:30:42,442] The wave function of a
+- [00:30:42,442 - 00:30:43,962] particle is a function of position.
+- [00:30:45,142 - 00:30:46,382] And so you might think,
+- [00:30:46,382 - 00:30:48,302] that's all there is to it.
+- [00:30:48,342 - 00:30:50,702] That's the connection between particles and fields.
+- [00:30:51,122 - 00:30:52,002] But it's not.
+- [00:30:52,002 - 00:30:53,282] It's not.
+- [00:30:53,422 - 00:30:54,702] Let me...
+- [00:30:54,702 - 00:30:56,072] Or at least it's only
+- [00:30:56,072 - 00:30:57,442] a very tiny part of it.
+- [00:30:58,182 - 00:30:59,322] And in fact,
+- [00:30:59,322 - 00:31:00,282] not the real idea.
+- [00:31:01,222 - 00:31:02,522] It's right up here.
+- [00:31:04,162 - 00:31:04,962] Psi of x.
+- [00:31:05,182 - 00:31:09,002] Psi of x is the wave function of one particle
+- [00:31:09,002 - 00:31:12,322] where x is the position of that particle.
+- [00:31:12,562 - 00:31:14,022] x could stand for x,
+- [00:31:14,022 - 00:31:14,202] y,
+- [00:31:14,202 - 00:31:14,522] and z,
+- [00:31:14,522 - 00:31:14,982] of course.
+- [00:31:15,022 - 00:31:17,542] It doesn't necessarily stand for just x.
+- [00:31:18,082 - 00:31:20,662] But psi is a function of x.
+- [00:31:21,502 - 00:31:22,562] But what is it?
+- [00:31:22,642 - 00:31:24,082] It's not an observable quantity.
+- [00:31:25,142 - 00:31:26,402] It's the state vector.
+- [00:31:26,622 - 00:31:29,582] It's the state vector in the position representation.
+- [00:31:30,222 - 00:31:31,642] It's not an observable.
+- [00:31:31,782 - 00:31:32,962] You don't do experiments to
+- [00:31:32,962 - 00:31:34,142] measure the state of a particle.
+- [00:31:34,162 - 00:31:35,662] You don't measure the wave function of a particle.
+- [00:31:35,802 - 00:31:38,962] You do experiments to measure the position of a particle.
+- [00:31:39,182 - 00:31:41,002] Or the momentum of a particle.
+- [00:31:41,242 - 00:31:43,242] Or the angular momentum of a particle.
+- [00:31:43,442 - 00:31:44,802] But not the state of a particle.
+- [00:31:45,442 - 00:31:46,662] You don't measure...
+- [00:31:46,662 - 00:31:47,802] That's not a measurable thing.
+- [00:31:48,502 - 00:31:51,312] It's a thing which tells you a
+- [00:31:51,312 - 00:31:54,122] great deal about the probabilities of various measurements.
+- [00:31:54,462 - 00:31:57,362] But it itself is not an observable.
+- [00:31:57,762 - 00:31:59,182] So that's the first thing.
+- [00:32:00,962 - 00:32:01,562] Not...
+- [00:32:01,562 - 00:32:04,542] Not an observable.
+- [00:32:08,342 - 00:32:09,442] Next fact.
+- [00:32:10,622 - 00:32:13,702] If we have several particles,
+- [00:32:14,842 - 00:32:18,242] then psi is not a function of one position.
+- [00:32:18,442 - 00:32:20,562] It's a function of all the positions.
+- [00:32:24,342 - 00:32:24,942] I'm gonna...
+- [00:32:24,942 - 00:32:29,722] I want to exaggerate a notation a little bit.
+- [00:32:31,562 - 00:32:32,642] A small psi.
+- [00:32:34,042 - 00:32:35,542] A lowercase psi.
+- [00:32:38,082 - 00:32:39,402] And it's a wave function.
+- [00:32:41,382 - 00:32:42,982] If I have two particles,
+- [00:32:42,982 - 00:32:44,482] let's call them x and y.
+- [00:32:45,402 - 00:32:46,042] Again,
+- [00:32:46,042 - 00:32:48,642] not the x coordinate and the y coordinate of space.
+- [00:32:49,362 - 00:32:51,162] But just the coordinates of two particles.
+- [00:32:52,381 - 00:32:56,122] Then the wave function is a function of two positions.
+- [00:32:57,562 - 00:32:58,202] Alright?
+- [00:32:58,582 - 00:33:01,402] A function of several positions.
+- [00:33:01,562 - 00:33:02,442] In fact,
+- [00:33:02,442 - 00:33:06,922] it's a function of the position of all particles.
+- [00:33:10,502 - 00:33:11,862] Third fact.
+- [00:33:11,862 - 00:33:12,922] What was the third fact?
+- [00:33:13,302 - 00:33:13,842] Ah.
+- [00:33:15,262 - 00:33:19,432] The third fact is given a wave function
+- [00:33:19,432 - 00:33:23,602] which may depend on x1 through some number,
+- [00:33:23,602 - 00:33:24,202] whatever,
+- [00:33:24,202 - 00:33:25,362] x15.
+- [00:33:26,142 - 00:33:27,382] Fifteen particles.
+- [00:33:27,982 - 00:33:31,542] It's the description of a fixed number of particles.
+- [00:33:31,542 - 00:33:34,402] We describe fifteen particles with
+- [00:33:34,402 - 00:33:37,262] the fifteen particle wave function.
+- [00:33:38,622 - 00:33:40,802] Fixed number of particles.
+- [00:33:45,762 - 00:33:48,622] That is not the idea of a quantum field.
+- [00:33:48,962 - 00:33:50,142] By contrast,
+- [00:33:50,142 - 00:33:50,622] now,
+- [00:33:50,622 - 00:33:53,682] I'll tell you by contrast what a quantum field is.
+- [00:33:53,922 - 00:33:55,062] And in many respects,
+- [00:33:55,062 - 00:33:56,742] it's everything that this is not.
+- [00:33:56,962 - 00:33:57,562] Although,
+- [00:33:57,562 - 00:33:59,272] we tend to use the same
+- [00:33:59,272 - 00:34:00,982] notation for it and it's closely related.
+- [00:34:01,681 - 00:34:02,322] Okay.
+- [00:34:02,662 - 00:34:03,802] First of all,
+- [00:34:03,802 - 00:34:06,022] a quantum field,
+- [00:34:06,022 - 00:34:07,022] this is a wave,
+- [00:34:07,022 - 00:34:07,982] these are wave functions.
+- [00:34:08,762 - 00:34:10,422] And they represent state vectors.
+- [00:34:14,121 - 00:34:19,621] Capital Psi is different.
+- [00:34:20,322 - 00:34:21,302] Number one,
+- [00:34:21,302 - 00:34:22,342] it's an observable.
+- [00:34:22,641 - 00:34:24,222] It's a thing you can measure.
+- [00:34:25,942 - 00:34:27,482] Let's just think for a moment.
+- [00:34:30,982 - 00:34:32,402] When we get to the real thing,
+- [00:34:32,402 - 00:34:34,382] more complicated,
+- [00:34:34,382 - 00:34:37,101] serious quantum field theory,
+- [00:34:37,242 - 00:34:39,621] it's going to be things like the electromagnetic field.
+- [00:34:40,782 - 00:34:42,272] It's going to be
+- [00:34:42,272 - 00:34:43,762] the quantum mechanical electromagnetic field.
+- [00:34:44,262 - 00:34:48,542] The electromagnetic field is most certainly an observable.
+- [00:34:49,702 - 00:34:50,762] We observe it.
+- [00:34:52,141 - 00:34:53,422] And so,
+- [00:34:53,422 - 00:34:55,121] first of all,
+- [00:34:55,121 - 00:34:56,002] whatever Psi is,
+- [00:34:56,002 - 00:34:57,882] it is an observable.
+- [00:35:03,902 - 00:35:04,862] Number two,
+- [00:35:04,862 - 00:35:09,402] Psi is a function of only one coordinate.
+- [00:35:10,722 - 00:35:11,282] Oh,
+- [00:35:11,282 - 00:35:11,842] incidentally,
+- [00:35:11,842 - 00:35:13,542] the fact that it's an
+- [00:35:13,542 - 00:35:15,242] observable means that it's an operator.
+- [00:35:16,242 - 00:35:17,642] It means that it's an
+- [00:35:17,642 - 00:35:19,042] operator in the space of states.
+- [00:35:19,742 - 00:35:21,222] It's not itself a state.
+- [00:35:21,662 - 00:35:24,442] It is a operator.
+- [00:35:24,782 - 00:35:26,942] That must be if it's going to be an observable.
+- [00:35:27,402 - 00:35:28,242] Number two,
+- [00:35:28,242 - 00:35:30,882] it's a function of only one coordinate.
+- [00:35:34,981 - 00:35:37,662] Of one position.
+- [00:35:41,242 - 00:35:44,382] Function of one free vector,
+- [00:35:44,382 - 00:35:45,182] so to speak.
+- [00:35:46,322 - 00:35:47,602] And finally,
+- [00:35:47,602 - 00:35:53,382] it describes systems of any number of particles.
+- [00:35:53,762 - 00:35:55,182] Any number of particles.
+- [00:36:02,302 - 00:36:03,442] In other words,
+- [00:36:03,442 - 00:36:06,232] it's capable of describing systems
+- [00:36:06,232 - 00:36:09,022] where particle numbers can change even.
+- [00:36:09,202 - 00:36:11,042] Where particle numbers can change.
+- [00:36:11,082 - 00:36:12,482] How can particle numbers change?
+- [00:36:12,942 - 00:36:13,522] Well,
+- [00:36:13,522 - 00:36:15,602] if we were thinking about the electromagnetic field,
+- [00:36:15,602 - 00:36:18,002] and we remember that electromagnetic field is photons,
+- [00:36:18,622 - 00:36:21,402] every time electromagnetic field is radiated,
+- [00:36:21,402 - 00:36:23,122] it changes the number of photons.
+- [00:36:23,962 - 00:36:24,562] So,
+- [00:36:24,562 - 00:36:25,742] whatever Psi is,
+- [00:36:25,742 - 00:36:27,202] it's a description,
+- [00:36:27,202 - 00:36:28,382] it's an observable,
+- [00:36:28,382 - 00:36:29,122] it's an operator,
+- [00:36:29,122 - 00:36:30,662] it's a function of one position,
+- [00:36:30,662 - 00:36:34,282] and it represents the quantum
+- [00:36:34,282 - 00:36:37,902] mechanics of any number of particles.
+- [00:36:37,942 - 00:36:39,242] Not a fixed number of particles.
+- [00:36:42,342 - 00:36:43,302] That's number one.
+- [00:36:47,342 - 00:36:49,082] I don't want to go too fast,
+- [00:36:49,082 - 00:36:52,222] because this is tricky stuff.
+- [00:36:52,502 - 00:36:52,682] Yeah?
+- [00:36:52,862 - 00:36:54,482] So when you say function of one position,
+- [00:36:54,482 - 00:36:57,122] you mean the position x,
+- [00:36:57,882 - 00:36:59,102] where x can vary?
+- [00:36:59,601 - 00:37:00,542] x can vary.
+- [00:37:01,942 - 00:37:02,382] Yes,
+- [00:37:02,382 - 00:37:03,222] x can vary,
+- [00:37:03,222 - 00:37:05,182] but it's a function of only one x.
+- [00:37:05,362 - 00:37:05,622] Oh boy.
+- [00:37:10,162 - 00:37:12,222] It's a function of only one x,
+- [00:37:12,222 - 00:37:14,022] but that doesn't mean it's a
+- [00:37:14,022 - 00:37:15,822] function of x when x is five.
+- [00:37:16,022 - 00:37:17,402] It means it's a function of x,
+- [00:37:17,402 - 00:37:18,222] x can be anything,
+- [00:37:18,222 - 00:37:20,062] but it's not a function of x1,
+- [00:37:20,062 - 00:37:20,462] x2,
+- [00:37:20,462 - 00:37:20,942] and x3.
+- [00:37:21,782 - 00:37:22,762] But what happens to y,
+- [00:37:22,762 - 00:37:23,042] though?
+- [00:37:24,922 - 00:37:25,862] I keep telling you,
+- [00:37:25,862 - 00:37:26,302] y...
+- [00:37:27,401 - 00:37:28,022] I mean,
+- [00:37:28,022 - 00:37:28,502] y...
+- [00:37:28,502 - 00:37:29,762] y is just not y.
+- [00:37:30,022 - 00:37:30,062] Yeah.
+- [00:37:33,422 - 00:37:35,042] It's just a function of one coordinate.
+- [00:37:35,961 - 00:37:38,962] One coordinate in real world means three coordinates,
+- [00:37:38,962 - 00:37:39,582] means x,
+- [00:37:39,582 - 00:37:39,762] y,
+- [00:37:39,762 - 00:37:40,002] and z.
+- [00:37:40,922 - 00:37:42,122] But that's not what that y is.
+- [00:37:42,242 - 00:37:42,622] No,
+- [00:37:42,622 - 00:37:42,742] no,
+- [00:37:42,742 - 00:37:43,702] that's not what that y is.
+- [00:37:44,721 - 00:37:45,522] That y...
+- [00:37:45,522 - 00:37:46,902] two particles.
+- [00:37:46,902 - 00:37:47,882] One is named x,
+- [00:37:47,882 - 00:37:48,802] the other is named y.
+- [00:37:49,502 - 00:37:49,902] Right.
+- [00:37:51,062 - 00:37:51,462] Why?
+- [00:37:52,202 - 00:37:53,302] Because who's on first?
+- [00:37:53,302 - 00:37:53,782] That's why.
+- [00:37:53,782 - 00:37:57,702] So that's really just a special case of an xy.
+- [00:37:59,182 - 00:38:01,182] You've got two particles in psi xy.
+- [00:38:01,202 - 00:38:01,522] Yes.
+- [00:38:01,522 - 00:38:03,502] You've got 15 particles in psi x1,
+- [00:38:03,502 - 00:38:03,882] x2.
+- [00:38:04,062 - 00:38:04,082] Yeah,
+- [00:38:04,082 - 00:38:04,082] yeah,
+- [00:38:04,082 - 00:38:04,302] that's right.
+- [00:38:04,482 - 00:38:04,842] Okay.
+- [00:38:04,962 - 00:38:05,302] Right.
+- [00:38:06,182 - 00:38:07,562] Y is just x2.
+- [00:38:08,082 - 00:38:09,122] X is x1.
+- [00:38:09,622 - 00:38:10,102] Right.
+- [00:38:10,322 - 00:38:12,482] And one and two label two different particles.
+- [00:38:13,662 - 00:38:14,142] Right.
+- [00:38:15,002 - 00:38:18,542] How do these just transform to each other?
+- [00:38:18,642 - 00:38:20,342] How do you explain one in terms of the other?
+- [00:38:20,702 - 00:38:21,662] We can do that.
+- [00:38:22,342 - 00:38:23,302] That's the whole...
+- [00:38:24,522 - 00:38:25,562] That's the whole point.
+- [00:38:27,082 - 00:38:30,382] I laid out for you the big contrast,
+- [00:38:30,382 - 00:38:31,812] and now we want to
+- [00:38:31,812 - 00:38:33,242] know what's the connection between them.
+- [00:38:33,442 - 00:38:34,702] It's going to take a little while.
+- [00:38:35,082 - 00:38:35,962] But it's not...
+- [00:38:37,682 - 00:38:39,242] Different kind of particles?
+- [00:38:39,642 - 00:38:40,142] No,
+- [00:38:40,142 - 00:38:41,202] same kind of particles.
+- [00:38:42,922 - 00:38:44,582] Same kind of particles.
+- [00:38:46,302 - 00:38:47,482] And in particular,
+- [00:38:47,482 - 00:38:51,022] bosons will come to fermions later.
+- [00:38:52,662 - 00:38:54,082] We'll come to fermions later.
+- [00:38:54,222 - 00:38:54,382] Yes,
+- [00:38:54,382 - 00:38:56,082] this is the theory of bosons.
+- [00:38:56,882 - 00:38:59,242] Everything we're doing tonight will be bosons.
+- [00:39:00,882 - 00:39:01,582] Excuse me.
+- [00:39:01,702 - 00:39:03,132] I had a question back
+- [00:39:03,132 - 00:39:04,562] on the left-hand board about the...
+- [00:39:04,562 - 00:39:04,842] What's that?
+- [00:39:04,922 - 00:39:05,162] The what?
+- [00:39:05,382 - 00:39:07,072] A question on the left-hand
+- [00:39:07,072 - 00:39:08,762] board about the harmonic oscillators.
+- [00:39:09,242 - 00:39:12,352] Is the assumption about the independence
+- [00:39:12,352 - 00:39:15,462] of the different operators exact or approximately
+- [00:39:15,462 - 00:39:15,982] correct?
+- [00:39:16,322 - 00:39:16,702] Exact.
+- [00:39:17,002 - 00:39:17,422] Okay.
+- [00:39:17,842 - 00:39:18,362] So,
+- [00:39:18,362 - 00:39:18,922] for example,
+- [00:39:18,922 - 00:39:19,962] pi would not be used
+- [00:39:19,962 - 00:39:21,002] to index the number of particles.
+- [00:39:21,002 - 00:39:22,782] It's not going to index the electrons in an atom.
+- [00:39:23,042 - 00:39:23,762] Say it again?
+- [00:39:24,162 - 00:39:25,462] I would not be using...
+- [00:39:25,462 - 00:39:25,862] I?
+- [00:39:25,862 - 00:39:26,342] Yeah,
+- [00:39:26,342 - 00:39:27,082] the subscript.
+- [00:39:27,162 - 00:39:28,842] That wouldn't be used to index...
+- [00:39:28,842 - 00:39:31,072] I could be labeling the states
+- [00:39:31,072 - 00:39:33,302] of an electron in an atom.
+- [00:39:35,582 - 00:39:36,062] Now,
+- [00:39:36,062 - 00:39:37,002] you've got to be careful.
+- [00:39:38,662 - 00:39:40,402] If the electrons are interacting,
+- [00:39:40,402 - 00:39:41,982] then it's more complicated.
+- [00:39:42,022 - 00:39:45,242] But if you just had non-interacting electrons in an atom,
+- [00:39:45,242 - 00:39:47,742] I would be labeling the states
+- [00:39:47,742 - 00:39:48,302] of the atom.
+- [00:39:48,622 - 00:39:49,102] Okay,
+- [00:39:49,102 - 00:39:49,982] but we're going to come to that.
+- [00:39:50,502 - 00:39:50,982] Okay.
+- [00:39:51,742 - 00:39:52,182] Yeah,
+- [00:39:52,182 - 00:39:53,062] let's come to it right now.
+- [00:39:55,402 - 00:39:58,462] Let's go back to single particle quantum mechanics.
+- [00:39:59,682 - 00:40:02,702] This is the theory of many particles.
+- [00:40:03,042 - 00:40:03,382] Well,
+- [00:40:03,382 - 00:40:04,802] it could be the theory of no particles.
+- [00:40:04,882 - 00:40:06,242] It could be the theory of one particle.
+- [00:40:06,322 - 00:40:07,622] It could be the theory of two particles.
+- [00:40:08,422 - 00:40:09,502] Variable number of particles.
+- [00:40:10,062 - 00:40:12,622] Let's go back to the theory of just one particle.
+- [00:40:14,202 - 00:40:14,642] Okay.
+- [00:40:15,522 - 00:40:17,062] And for simplicity,
+- [00:40:17,062 - 00:40:20,022] I'm going to take a particular example.
+- [00:40:20,982 - 00:40:22,262] A particle in a box.
+- [00:40:23,562 - 00:40:25,772] The potential energy is such that the
+- [00:40:25,772 - 00:40:27,982] particle can't get out of a box.
+- [00:40:28,362 - 00:40:30,362] Just one direction of space,
+- [00:40:30,362 - 00:40:34,262] although nothing I'm saying is going to depend on that.
+- [00:40:34,562 - 00:40:36,022] This is a boson in a box?
+- [00:40:36,262 - 00:40:36,662] A boson.
+- [00:40:36,962 - 00:40:38,302] For the moment,
+- [00:40:38,302 - 00:40:38,882] it doesn't matter.
+- [00:40:39,062 - 00:40:40,302] If there's only one of them,
+- [00:40:40,302 - 00:40:41,802] it doesn't matter.
+- [00:40:42,582 - 00:40:43,722] If there's one of them,
+- [00:40:43,722 - 00:40:46,572] there's no question of
+- [00:40:46,572 - 00:40:49,422] whether there's an exclusion principle
+- [00:40:49,422 - 00:40:49,942] or not.
+- [00:40:50,982 - 00:40:51,182] Right?
+- [00:40:51,302 - 00:40:52,542] So one of them doesn't matter.
+- [00:40:53,962 - 00:40:56,782] Let's think about the energy eigenstates
+- [00:40:56,782 - 00:40:59,602] of a particle in a box.
+- [00:41:00,922 - 00:41:02,122] They're wave functions.
+- [00:41:03,902 - 00:41:04,982] For example,
+- [00:41:04,982 - 00:41:08,192] the lowest energy wave function will
+- [00:41:08,192 - 00:41:11,402] be the smoothest wave function that satisfies
+- [00:41:11,402 - 00:41:12,522] the Schrodinger equation.
+- [00:41:13,582 - 00:41:15,762] And it'll typically look something like that.
+- [00:41:16,762 - 00:41:18,452] It'll be a sine function that
+- [00:41:18,452 - 00:41:20,142] just barely fits in the box.
+- [00:41:20,202 - 00:41:20,962] It fits in the box.
+- [00:41:20,982 - 00:41:22,142] From one end to the other.
+- [00:41:23,621 - 00:41:25,122] And that's a wave function.
+- [00:41:25,482 - 00:41:27,622] It's a wave function in the
+- [00:41:27,622 - 00:41:29,762] sense of this one over here.
+- [00:41:32,402 - 00:41:33,422] Let's give it a name.
+- [00:41:33,982 - 00:41:35,822] Let's call it psi 1 of x.
+- [00:41:38,062 - 00:41:39,342] This should be little psi.
+- [00:41:40,822 - 00:41:42,282] Just make sure it's little psi.
+- [00:41:44,762 - 00:41:46,942] It's just a wave function of
+- [00:41:46,942 - 00:41:49,122] a one particle system in a box.
+- [00:41:49,802 - 00:41:51,002] Psi 1 of x.
+- [00:41:51,662 - 00:41:53,622] What does the one represent?
+- [00:41:53,922 - 00:41:55,802] Just that it's the first energy level.
+- [00:41:55,922 - 00:41:57,182] The lowest energy level.
+- [00:41:58,762 - 00:42:00,442] What about the next energy level?
+- [00:42:00,782 - 00:42:03,162] The next energy level is some other wave function.
+- [00:42:03,702 - 00:42:05,202] And as you go up in energy,
+- [00:42:05,202 - 00:42:08,362] the wave functions tend to be more variable.
+- [00:42:08,862 - 00:42:11,202] The next one would have a node.
+- [00:42:11,802 - 00:42:12,522] Like that.
+- [00:42:14,082 - 00:42:16,062] We can call that psi 2 of x.
+- [00:42:17,342 - 00:42:19,062] I'm using a funny notation.
+- [00:42:19,082 - 00:42:19,102] I'm going to call it psi 2 of x.
+- [00:42:19,122 - 00:42:19,142] That's not a good notation.
+- [00:42:24,562 - 00:42:27,822] The index here is not the number of nodes.
+- [00:42:28,122 - 00:42:30,122] It's one more than the number of nodes,
+- [00:42:30,122 - 00:42:31,782] the number of nodes in the box.
+- [00:42:32,262 - 00:42:34,342] So the next one would be psi 2 of x.
+- [00:42:35,462 - 00:42:37,752] Would have a higher energy
+- [00:42:37,752 - 00:42:40,042] and so forth and so on.
+- [00:42:40,202 - 00:42:43,402] The 1s and the 2s here do not represent,
+- [00:42:43,402 - 00:42:45,582] go down the line,
+- [00:42:45,582 - 00:42:47,562] psi i of x.
+- [00:42:50,102 - 00:42:51,812] Now this I is will be
+- [00:42:51,812 - 00:42:53,522] the same as this I eventually,
+- [00:42:53,522 - 00:42:57,582] but at the moment they're two
+- [00:42:57,582 - 00:42:58,222] different things.
+- [00:42:58,222 - 00:43:00,702] In this case it's labeling oscillators,
+- [00:43:00,702 - 00:43:02,162] in this case it's
+- [00:43:02,162 - 00:43:06,162] labeling state vectors of one particle in a box,
+- [00:43:06,162 - 00:43:06,982] just one particle.
+- [00:43:11,462 - 00:43:12,822] Each one has an energy.
+- [00:43:12,822 - 00:43:15,082] I won't write down what
+- [00:43:15,082 - 00:43:17,342] the energy is other than to
+- [00:43:17,342 - 00:43:19,042] remind you that each of these
+- [00:43:19,042 - 00:43:20,742] wave functions does have an energy.
+- [00:43:33,082 - 00:43:33,662] Okay,
+- [00:43:33,662 - 00:43:35,262] everybody all right with that?
+- [00:43:35,262 - 00:43:37,322] One particle wave functions?
+- [00:43:37,322 - 00:43:38,362] Now,
+- [00:43:38,362 - 00:43:40,302] let's
+- [00:43:40,302 - 00:43:42,262] imagine now that we have many particles.
+- [00:43:42,262 - 00:43:45,482] We have many particles of an
+- [00:43:45,482 - 00:43:46,642] undetermined number.
+- [00:43:47,482 - 00:43:52,462] But some number of them with in state one,
+- [00:43:52,462 - 00:43:55,742] some number of particles in the box
+- [00:43:55,742 - 00:43:57,522] occupying state one,
+- [00:43:57,522 - 00:44:01,442] some number of particles occupying state two,
+- [00:44:01,442 - 00:44:02,342] some
+- [00:44:02,342 - 00:44:04,722] number of particles occupying state three,
+- [00:44:04,722 - 00:44:05,702] and so forth.
+- [00:44:07,082 - 00:44:10,812] That is a pretty good description of a
+- [00:44:10,812 - 00:44:14,542] wide class or a basis of states in fact.
+- [00:44:14,542 - 00:44:15,942] If I know
+- [00:44:17,742 - 00:44:20,822] that is a basis of states saying
+- [00:44:20,822 - 00:44:23,902] how many particles occupy each energy level.
+- [00:44:24,782 - 00:44:26,262] So let's write that down now.
+- [00:44:26,262 - 00:44:28,042] Here's a family of states.
+- [00:44:33,602 - 00:44:36,982] Number of particles in state one,
+- [00:44:36,982 - 00:44:40,022] number of particles in state two,
+- [00:44:40,022 - 00:44:42,502] number of
+- [00:44:42,502 - 00:44:43,642] particles in state three.
+- [00:44:43,642 - 00:44:44,142] Oh boy,
+- [00:44:44,142 - 00:44:44,702] deja vu.
+- [00:44:46,202 - 00:44:47,302] Where is,
+- [00:44:47,302 - 00:44:47,662] ah,
+- [00:44:47,662 - 00:44:49,242] here it is over here.
+- [00:44:49,242 - 00:44:53,462] Absolutely identical to the way I labeled
+- [00:44:53,462 - 00:44:56,802] the states of a multiple harmonic oscillator system.
+- [00:44:56,802 - 00:44:58,062] Now,
+- [00:44:58,062 - 00:44:59,802] of course,
+- [00:44:59,802 - 00:45:00,842] the,
+- [00:45:00,842 - 00:45:03,202] there are
+- [00:45:03,202 - 00:45:05,422] infinitely many possible states
+- [00:45:05,422 - 00:45:07,642] in here of arbitrary wavelength,
+- [00:45:07,642 - 00:45:08,862] arbitrarily small
+- [00:45:08,862 - 00:45:09,342] wavelength,
+- [00:45:09,342 - 00:45:12,372] and that's the reason why we need to
+- [00:45:12,372 - 00:45:15,402] study any number of oscillators up to infinity.
+- [00:45:16,562 - 00:45:17,002] Okay,
+- [00:45:17,002 - 00:45:21,242] so here is a parallel between,
+- [00:45:21,242 - 00:45:22,542] and you wouldn't want to do this for,
+- [00:45:22,542 - 00:45:23,142] you couldn't
+- [00:45:23,142 - 00:45:24,022] do this for fermions.
+- [00:45:24,022 - 00:45:27,202] For fermions you can either have no particle in a,
+- [00:45:27,202 - 00:45:27,822] with a particular
+- [00:45:27,822 - 00:45:29,322] state or one particle,
+- [00:45:29,322 - 00:45:30,102] never two.
+- [00:45:30,102 - 00:45:31,782] Okay,
+- [00:45:31,782 - 00:45:32,542] can't put two.
+- [00:45:32,542 - 00:45:34,922] So in writing down the idea that
+- [00:45:34,922 - 00:45:35,952] you can have any number
+- [00:45:35,952 - 00:45:36,982] of particles in the first state,
+- [00:45:36,982 - 00:45:38,482] any number in the second state,
+- [00:45:38,582 - 00:45:39,642] any number in the third state,
+- [00:45:39,642 - 00:45:41,122] we're assuming to begin with
+- [00:45:41,122 - 00:45:42,602] that we're talking about bosons.
+- [00:45:43,622 - 00:45:44,062] Okay.
+- [00:45:44,162 - 00:45:44,922] But notice.
+- [00:45:44,922 - 00:45:46,382] There's a complete parallel here.
+- [00:45:46,382 - 00:45:48,202] Because there's a complete parallel,
+- [00:45:48,202 - 00:45:49,322] it means we can
+- [00:45:49,322 - 00:45:49,862] invent,
+- [00:45:49,862 - 00:45:51,762] this is an invention out of the head,
+- [00:45:51,762 - 00:45:56,122] operators which do exactly the same thing
+- [00:45:57,422 - 00:46:00,982] as the creation and annihilation operators do.
+- [00:46:00,982 - 00:46:03,742] Now they literally create particles.
+- [00:46:03,742 - 00:46:05,142] For
+- [00:46:05,142 - 00:46:05,622] example,
+- [00:46:05,622 - 00:46:10,262] a plus one on n1 dot dot dot
+- [00:46:10,262 - 00:46:14,902] gives me square root of a plus one.
+- [00:46:14,902 - 00:46:14,902] And then you
+- [00:46:14,922 - 00:46:16,322] can add a square root of n plus one,
+- [00:46:16,322 - 00:46:18,082] n1 plus one,
+- [00:46:18,082 - 00:46:21,222] times n1 plus one,
+- [00:46:21,222 - 00:46:22,962] n2,
+- [00:46:22,962 - 00:46:24,022] n3,
+- [00:46:24,022 - 00:46:24,862] and so forth.
+- [00:46:25,062 - 00:46:28,182] It increases the number of particles in the first state,
+- [00:46:28,182 - 00:46:29,822] whatever it was,
+- [00:46:29,822 - 00:46:30,682] it adds one,
+- [00:46:31,742 - 00:46:34,282] and multiplies by the standard square root.
+- [00:46:34,282 - 00:46:38,482] Why does it multiply by the standard square
+- [00:46:38,482 - 00:46:38,702] root?
+- [00:46:38,702 - 00:46:39,462] That's a definition.
+- [00:46:39,462 - 00:46:43,502] But it's a definition which is very cleverly chosen.
+- [00:46:43,502 - 00:46:44,902] It's a definition
+- [00:46:44,922 - 00:46:47,272] among other things so that we can use
+- [00:46:47,272 - 00:46:49,622] all the apparatus that we have about oscillators,
+- [00:46:49,782 - 00:46:51,182] which is very helpful,
+- [00:46:51,182 - 00:46:52,401] as we'll see.
+- [00:46:52,401 - 00:46:54,042] Likewise,
+- [00:46:54,042 - 00:46:55,822] with the annihilation operator.
+- [00:46:55,822 - 00:46:56,602] Now I'll call
+- [00:46:56,602 - 00:46:58,582] them creation and annihilation operators.
+- [00:46:58,582 - 00:47:02,361] They create and annihilate or remove particles
+- [00:47:02,361 - 00:47:03,222] from the system.
+- [00:47:03,222 - 00:47:04,702] Okay,
+- [00:47:04,702 - 00:47:06,571] that's the basic idea
+- [00:47:06,571 - 00:47:08,441] of creation and annihilation operators.
+- [00:47:10,062 - 00:47:10,762] Question.
+- [00:47:11,142 - 00:47:11,662] Yeah.
+- [00:47:11,842 - 00:47:13,921] On your top line there,
+- [00:47:13,921 - 00:47:14,901] n1 n2 n3,
+- [00:47:14,901 - 00:47:14,901] n4 n3,
+- [00:47:14,901 - 00:47:14,901] n5 n5,
+- [00:47:14,901 - 00:47:14,901] n6 n6,
+- [00:47:14,901 - 00:47:14,901] n7 n7,
+- [00:47:14,901 - 00:47:14,901] n8 n9,
+- [00:47:14,901 - 00:47:14,901] n11 n12,
+- [00:47:14,901 - 00:47:14,901] n12 n13,
+- [00:47:14,901 - 00:47:14,901] n14 n14,
+- [00:47:14,901 - 00:47:14,901] n15 n16,
+- [00:47:14,901 - 00:47:15,242] n17 n18,
+- [00:47:15,242 - 00:47:15,242] n192,
+- [00:47:15,242 - 00:47:15,242] n192,
+- [00:47:15,242 - 00:47:15,242] n193,
+- [00:47:15,242 - 00:47:17,782] I thought n1 and n2 were the quantum states.
+- [00:47:20,642 - 00:47:23,381] One two and three are the quantum states.
+- [00:47:23,381 - 00:47:27,102] N1 and two and n3 are the number of particles
+- [00:47:27,102 - 00:47:28,202] in that state.
+- [00:47:28,202 - 00:47:31,581] One two and three are one
+- [00:47:31,581 - 00:47:34,961] two and three up to i,
+- [00:47:34,961 - 00:47:35,982] and past.
+- [00:47:35,982 - 00:47:37,461] Okay,
+- [00:47:37,461 - 00:47:37,842] so this
+- [00:47:37,842 - 00:47:38,282] is tricky.
+- [00:47:38,282 - 00:47:40,182] There's a lot of notation,
+- [00:47:40,182 - 00:47:40,962] but the notation,
+- [00:47:40,962 - 00:47:43,442] it's not hard,
+- [00:47:43,442 - 00:47:44,402] it's just a bit
+- [00:47:44,402 - 00:47:44,802] to remember.
+- [00:47:46,142 - 00:47:49,282] So I'm going slow for that reason and repeating myself.
+- [00:47:51,622 - 00:47:52,622] Question please.
+- [00:47:52,622 - 00:47:55,272] What's the physical meaning in
+- [00:47:55,272 - 00:47:57,922] this environment of that square root?
+- [00:48:17,601 - 00:48:18,362] A plus,
+- [00:48:18,362 - 00:48:26,922] A minus on n is equal to n times n,
+- [00:48:26,922 - 00:48:27,662] right?
+- [00:48:27,662 - 00:48:29,582] Well,
+- [00:48:29,582 - 00:48:30,742] A plus is often a lot like
+- [00:48:30,742 - 00:48:31,182] A minus,
+- [00:48:31,182 - 00:48:33,442] so it better be that A plus and
+- [00:48:33,442 - 00:48:35,702] A minus are somehow square roots of n,
+- [00:48:35,702 - 00:48:36,022] but we
+- [00:48:36,022 - 00:48:36,842] can do better than that.
+- [00:48:36,842 - 00:48:38,402] Let's see,
+- [00:48:38,402 - 00:48:39,482] how can we do better than that?
+- [00:48:39,482 - 00:48:42,722] Hmm.
+- [00:48:49,762 - 00:48:51,362] Let's use the commutation relations.
+- [00:48:51,362 - 00:48:57,442] No.
+- [00:48:57,442 - 00:48:58,682] Okay.
+- [00:48:58,682 - 00:49:00,542] Let's suppose we didn't know this.
+- [00:49:01,922 - 00:49:03,302] Let's suppose we didn't know this,
+- [00:49:03,302 - 00:49:06,262] but we did know about the square roots of n.
+- [00:49:06,262 - 00:49:08,242] Okay,
+- [00:49:08,242 - 00:49:09,082] let's suppose we didn't know,
+- [00:49:09,082 - 00:49:10,322] we knew about the square roots of n.
+- [00:49:10,322 - 00:49:12,142] Okay.
+- [00:49:21,081 - 00:49:26,441] Let's use our commutation relations to write this
+- [00:49:26,441 - 00:49:31,802] as A minus A plus on n minus one,
+- [00:49:31,802 - 00:49:32,262] I think.
+- [00:49:43,882 - 00:49:44,271] Yes?
+- [00:49:44,722 - 00:49:44,882] Yes?
+- [00:49:47,182 - 00:49:49,742] A minus A plus is equal
+- [00:49:49,742 - 00:49:52,302] to A plus A minus plus one.
+- [00:49:53,202 - 00:49:54,082] Plus one,
+- [00:49:54,082 - 00:49:54,242] right?
+- [00:49:54,242 - 00:49:55,342] Hmm?
+- [00:49:56,002 - 00:49:56,982] One minus?
+- [00:49:58,622 - 00:49:59,342] One minus,
+- [00:49:59,342 - 00:49:59,702] yeah.
+- [00:49:59,982 - 00:50:00,582] Well,
+- [00:50:00,582 - 00:50:00,862] let's see.
+- [00:50:00,862 - 00:50:04,342] A plus A minus A plus minus
+- [00:50:04,342 - 00:50:07,822] A plus A minus is equal to one.
+- [00:50:07,822 - 00:50:10,002] So,
+- [00:50:10,002 - 00:50:11,902] plus one.
+- [00:50:13,282 - 00:50:13,882] Yeah.
+- [00:50:13,882 - 00:50:14,482] Yeah.
+- [00:50:14,922 - 00:50:15,742] You were right.
+- [00:50:15,942 - 00:50:16,662] I was right.
+- [00:50:24,762 - 00:50:26,802] A plus A minus over to the other side.
+- [00:50:26,802 - 00:50:28,602] You get a plus.
+- [00:50:28,602 - 00:50:31,282] Then take the one over and you
+- [00:50:31,282 - 00:50:31,702] get a minus.
+- [00:50:31,702 - 00:50:33,062] Minus one.
+- [00:50:35,442 - 00:50:35,862] Right.
+- [00:50:35,862 - 00:50:36,662] I had it right.
+- [00:50:36,662 - 00:50:38,882] If it doesn't work out,
+- [00:50:38,882 - 00:50:39,342] we'll change it.
+- [00:50:40,742 - 00:50:41,162] Okay.
+- [00:50:41,162 - 00:50:42,242] Now,
+- [00:50:42,242 - 00:50:45,642] what does A plus on n do?
+- [00:50:45,642 - 00:50:47,522] According to assumption,
+- [00:50:47,522 - 00:50:51,632] it gives you square root of
+- [00:50:51,632 - 00:50:55,742] n plus one times n plus one.
+- [00:50:58,582 - 00:50:59,222] Okay.
+- [00:50:59,222 - 00:51:00,502] That's this over here.
+- [00:51:00,502 - 00:51:03,322] But we still have to multiply by A minus.
+- [00:51:03,322 - 00:51:06,202] And then we have another minus n.
+- [00:51:06,202 - 00:51:08,102] That's what we have here,
+- [00:51:08,102 - 00:51:08,342] right?
+- [00:51:08,342 - 00:51:08,422] Okay.
+- [00:51:08,422 - 00:51:11,462] This is just a number,
+- [00:51:11,462 - 00:51:12,702] square root of n plus one.
+- [00:51:12,702 - 00:51:14,262] Let's put it over here.
+- [00:51:14,262 - 00:51:15,382] Square root of n plus one.
+- [00:51:16,902 - 00:51:18,822] What does A minus do when it
+- [00:51:18,822 - 00:51:20,742] acts on square root of n plus one?
+- [00:51:20,742 - 00:51:21,402] Oh,
+- [00:51:21,402 - 00:51:21,642] sorry,
+- [00:51:21,642 - 00:51:22,422] on n plus one?
+- [00:51:23,062 - 00:51:23,462] N.
+- [00:51:24,762 - 00:51:25,162] No,
+- [00:51:25,162 - 00:51:25,542] I think,
+- [00:51:25,542 - 00:51:25,802] yeah,
+- [00:51:25,802 - 00:51:26,582] it gives us n,
+- [00:51:26,582 - 00:51:27,982] but what's the numerical number?
+- [00:51:28,582 - 00:51:29,682] Square root of n plus one.
+- [00:51:30,262 - 00:51:31,642] Square root of n plus one,
+- [00:51:31,642 - 00:51:31,862] right?
+- [00:51:32,122 - 00:51:32,522] Yeah.
+- [00:51:32,722 - 00:51:33,122] So,
+- [00:51:33,122 - 00:51:34,922] we get two square roots of n plus one,
+- [00:51:34,922 - 00:51:35,842] which gives what?
+- [00:51:37,342 - 00:51:38,322] N plus one.
+- [00:51:38,322 - 00:51:38,522] N plus one.
+- [00:51:40,362 - 00:51:44,162] Times n minus one times n,
+- [00:51:44,162 - 00:51:49,382] which is just good old n times n.
+- [00:51:50,082 - 00:51:51,342] In other words,
+- [00:51:51,342 - 00:51:55,032] those square roots of n are there to ensure
+- [00:51:55,032 - 00:51:58,722] that this vector is really an eigenvector of A plus,
+- [00:51:58,722 - 00:51:59,242] A minus.
+- [00:51:59,722 - 00:52:01,162] And roughly speaking,
+- [00:52:01,162 - 00:52:02,462] very roughly,
+- [00:52:02,462 - 00:52:04,262] A plus and A minus are
+- [00:52:04,262 - 00:52:06,062] of the same order of magnitude.
+- [00:52:06,062 - 00:52:09,122] One is P plus Ix,
+- [00:52:09,122 - 00:52:10,582] the other is P minus Ix.
+- [00:52:10,582 - 00:52:12,322] Same order of magnitude.
+- [00:52:12,542 - 00:52:14,692] And since altogether they add up or
+- [00:52:14,692 - 00:52:16,842] they multiply together to give you n,
+- [00:52:16,842 - 00:52:20,842] each one is roughly the square root of n.
+- [00:52:21,982 - 00:52:22,502] Question?
+- [00:52:22,762 - 00:52:22,882] Yeah.
+- [00:52:25,042 - 00:52:25,562] So,
+- [00:52:25,562 - 00:52:29,222] you just sort of define A plus and A minus.
+- [00:52:29,222 - 00:52:30,942] You haven't really defined them,
+- [00:52:30,942 - 00:52:32,512] but you've defined the sort
+- [00:52:32,512 - 00:52:34,082] of various properties that they have,
+- [00:52:34,082 - 00:52:35,302] like the connotation property.
+- [00:52:35,522 - 00:52:35,682] Yeah.
+- [00:52:36,242 - 00:52:36,642] So,
+- [00:52:36,642 - 00:52:38,592] we don't have a definition yet
+- [00:52:38,592 - 00:52:40,542] other than kind of its behavior.
+- [00:52:40,582 - 00:52:41,182] We're making it up.
+- [00:52:41,382 - 00:52:41,782] Okay.
+- [00:52:42,742 - 00:52:43,542] We're defining.
+- [00:52:43,542 - 00:52:45,042] We're not making up randomly,
+- [00:52:45,042 - 00:52:46,282] but we're defining things.
+- [00:52:46,282 - 00:52:48,562] And then we're going to see how they work.
+- [00:52:49,562 - 00:52:50,162] Forgive me.
+- [00:52:50,162 - 00:52:51,942] My question was,
+- [00:52:51,942 - 00:52:53,402] I understand when you apply A plus,
+- [00:52:53,402 - 00:52:54,322] you create a particle.
+- [00:52:54,562 - 00:52:54,862] Mm-hmm.
+- [00:52:56,082 - 00:52:58,242] That's a very tangible thing.
+- [00:52:58,242 - 00:53:00,212] I didn't understand what does that
+- [00:53:00,212 - 00:53:02,182] square root do in a tangible sense?
+- [00:53:02,382 - 00:53:02,722] Mm-hmm.
+- [00:53:03,062 - 00:53:03,582] That's my question.
+- [00:53:03,582 - 00:53:03,702] Nothing.
+- [00:53:03,702 - 00:53:04,102] That's all.
+- [00:53:04,822 - 00:53:05,382] Well.
+- [00:53:06,822 - 00:53:07,722] Just kidding.
+- [00:53:07,862 - 00:53:08,462] Or maybe nothing.
+- [00:53:08,462 - 00:53:10,222] Sometimes mathematics is just mathematics.
+- [00:53:10,502 - 00:53:10,702] Okay.
+- [00:53:10,702 - 00:53:10,742] I mean,
+- [00:53:10,742 - 00:53:11,022] sometimes.
+- [00:53:11,942 - 00:53:15,162] It's like for ordinary quantum mechanics,
+- [00:53:15,162 - 00:53:16,622] you have to normalize the wave function.
+- [00:53:16,802 - 00:53:17,082] Mm-hmm.
+- [00:53:17,082 - 00:53:18,822] And one particle is the same thing here.
+- [00:53:19,642 - 00:53:20,202] Okay.
+- [00:53:20,402 - 00:53:21,022] All right.
+- [00:53:21,482 - 00:53:22,042] Right.
+- [00:53:22,962 - 00:53:24,682] Why doesn't particle disappear?
+- [00:53:24,682 - 00:53:27,002] Why doesn't it become a different state?
+- [00:53:27,502 - 00:53:27,822] What?
+- [00:53:29,962 - 00:53:32,322] When you do A minus,
+- [00:53:32,322 - 00:53:33,502] why does it disappear?
+- [00:53:33,502 - 00:53:34,082] Why doesn't it change?
+- [00:53:34,082 - 00:53:35,802] Why doesn't it become a different state?
+- [00:53:35,802 - 00:53:37,482] That's the definition of A minus.
+- [00:53:37,482 - 00:53:40,462] You can't ask why about a definition.
+- [00:53:40,462 - 00:53:41,882] I define A minus
+- [00:53:41,882 - 00:53:44,342] so that it decreases the number of particles.
+- [00:53:44,642 - 00:53:45,102] Okay.
+- [00:53:45,182 - 00:53:45,642] Definition.
+- [00:53:45,642 - 00:53:48,002] In mathematics,
+- [00:53:48,002 - 00:53:49,142] we make definitions,
+- [00:53:49,142 - 00:53:52,042] and then we find the consequences of them.
+- [00:53:52,502 - 00:53:53,062] So.
+- [00:53:53,162 - 00:53:53,922] The question is,
+- [00:53:53,922 - 00:53:55,342] why is it a useful definition?
+- [00:53:55,342 - 00:53:57,042] Well,
+- [00:53:57,042 - 00:53:58,602] it's a useful definition because we
+- [00:53:58,602 - 00:54:01,922] want to explore systems of various numbers of particles.
+- [00:54:01,922 - 00:54:03,222] In fact,
+- [00:54:03,222 - 00:54:04,062] we want to explore
+- [00:54:04,062 - 00:54:07,182] systems where the number of particles can change.
+- [00:54:07,182 - 00:54:09,162] For example,
+- [00:54:09,162 - 00:54:11,182] we might radiate a photon.
+- [00:54:11,942 - 00:54:14,382] How would we go about mathematically
+- [00:54:14,382 - 00:54:16,822] indicating that we created a photon?
+- [00:54:16,822 - 00:54:18,802] We take the state
+- [00:54:18,802 - 00:54:21,982] and we hit it with a photon creation operator.
+- [00:54:21,982 - 00:54:24,502] Or a photon might be absorbed.
+- [00:54:26,982 - 00:54:29,542] A atom might absorb a photon.
+- [00:54:29,542 - 00:54:33,202] How do we write the fact,
+- [00:54:33,202 - 00:54:34,042] or how do we explain the fact that
+- [00:54:34,062 - 00:54:37,942] the photon has disappeared?
+- [00:54:37,942 - 00:54:42,062] We express it by saying an annihilation operator has acted.
+- [00:54:42,642 - 00:54:45,382] So the purpose of all of this is not
+- [00:54:45,382 - 00:54:48,122] only to be able to study systems of arbitrary number
+- [00:54:48,122 - 00:54:48,742] of particles,
+- [00:54:48,742 - 00:54:50,852] but even to be able to
+- [00:54:50,852 - 00:54:52,962] study systems of variable number of particles.
+- [00:54:53,962 - 00:54:54,522] Okay.
+- [00:54:55,422 - 00:54:56,322] Another question?
+- [00:54:56,602 - 00:54:56,822] Mm-hmm.
+- [00:54:56,902 - 00:54:57,422] So,
+- [00:54:57,422 - 00:54:59,662] here's what I think you're doing.
+- [00:54:59,662 - 00:55:02,082] What you're doing is you're defining these operators,
+- [00:55:02,822 - 00:55:04,042] how they act on a random basis.
+- [00:55:04,062 - 00:55:04,962] Yeah.
+- [00:55:05,162 - 00:55:07,162] And since eigenvectors form a basis,
+- [00:55:07,162 - 00:55:09,342] that tells us how they act on all vectors.
+- [00:55:10,022 - 00:55:10,502] Okay,
+- [00:55:10,502 - 00:55:11,502] I got that part.
+- [00:55:11,622 - 00:55:11,862] Right on.
+- [00:55:12,042 - 00:55:12,442] Okay,
+- [00:55:12,442 - 00:55:13,812] now we've got this definition
+- [00:55:13,812 - 00:55:15,182] of A plus and A minus.
+- [00:55:15,182 - 00:55:16,542] We haven't shown,
+- [00:55:16,542 - 00:55:17,402] but one
+- [00:55:17,402 - 00:55:20,182] assumes that one can show that you
+- [00:55:20,182 - 00:55:22,962] have the commutation relationships that you've got
+- [00:55:22,962 - 00:55:23,242] up there.
+- [00:55:23,482 - 00:55:23,682] Yeah.
+- [00:55:23,682 - 00:55:24,962] With these definitions,
+- [00:55:24,962 - 00:55:28,742] it will follow that these operators have the same
+- [00:55:28,742 - 00:55:29,862] commutation there.
+- [00:55:30,162 - 00:55:30,642] Right.
+- [00:55:31,322 - 00:55:32,342] In other words,
+- [00:55:32,342 - 00:55:34,042] the system of...
+- [00:55:34,042 - 00:55:36,852] Of a variable number of particles here can
+- [00:55:36,852 - 00:55:39,662] be represented just as a system of harmonic
+- [00:55:39,662 - 00:55:40,522] oscillators,
+- [00:55:40,522 - 00:55:44,122] and an oscillator for each state.
+- [00:55:44,122 - 00:55:47,002] For each single particle state,
+- [00:55:47,002 - 00:55:47,802] for each single
+- [00:55:47,802 - 00:55:48,842] particle wave function,
+- [00:55:48,842 - 00:55:51,522] an oscillator and the occupation
+- [00:55:51,522 - 00:55:54,202] number of that oscillator is the
+- [00:55:54,202 - 00:55:55,832] number of particles that
+- [00:55:55,832 - 00:55:57,462] are occupying that particular state.
+- [00:55:57,462 - 00:55:59,322] So the terminology is well
+- [00:55:59,322 - 00:55:59,722] chosen.
+- [00:55:59,722 - 00:56:01,442] Occupation,
+- [00:56:01,442 - 00:56:02,322] now we know what it means.
+- [00:56:02,322 - 00:56:03,902] It's not you occupying your seat.
+- [00:56:03,902 - 00:56:04,022] It's the
+- [00:56:04,022 - 00:56:06,142] particle occupying a state,
+- [00:56:06,142 - 00:56:08,062] and a boson in particular.
+- [00:56:12,182 - 00:56:15,122] These are creation and annihilation operators for particles.
+- [00:56:19,642 - 00:56:20,782] How would you label...
+- [00:56:20,782 - 00:56:22,122] What's the vacuum in this language?
+- [00:56:27,782 - 00:56:28,982] The vacuum...
+- [00:56:32,302 - 00:56:32,902] Well,
+- [00:56:32,902 - 00:56:33,602] first of all,
+- [00:56:33,602 - 00:56:34,002] it's the...
+- [00:56:34,002 - 00:56:36,462] It's the state which is annihilated
+- [00:56:36,462 - 00:56:38,922] by all of the annihilation operators.
+- [00:56:38,922 - 00:56:40,702] It's the state
+- [00:56:40,702 - 00:56:45,762] which when you try to lower any occupation number,
+- [00:56:45,762 - 00:56:46,782] there's nothing there.
+- [00:56:46,782 - 00:56:47,722] Nothing to
+- [00:56:47,722 - 00:56:47,962] lower,
+- [00:56:47,962 - 00:56:49,522] so the state becomes zero.
+- [00:56:49,522 - 00:56:56,042] But the vacuum is simply the state with zero occupation
+- [00:56:56,042 - 00:57:00,402] number in every state.
+- [00:57:00,402 - 00:57:02,192] It has the property that
+- [00:57:02,192 - 00:57:03,982] all the occupation numbers are zero,
+- [00:57:03,982 - 00:57:03,982] and
+- [00:57:03,982 - 00:57:06,752] it has the property that any one of
+- [00:57:06,752 - 00:57:09,522] the A minuses gives zero when it acts.
+- [00:57:10,562 - 00:57:12,902] So the ground state is unoccupied as well?
+- [00:57:13,142 - 00:57:14,982] The ground state is unoccupied.
+- [00:57:14,982 - 00:57:16,942] Right.
+- [00:57:17,742 - 00:57:19,242] But if it was occupied,
+- [00:57:19,242 - 00:57:20,462] you still couldn't lower it?
+- [00:57:21,182 - 00:57:22,062] If it were occupied,
+- [00:57:22,062 - 00:57:22,802] you can lower it.
+- [00:57:22,982 - 00:57:23,902] The ground state?
+- [00:57:24,362 - 00:57:24,842] No,
+- [00:57:24,842 - 00:57:26,302] the ground state is not occupied.
+- [00:57:26,302 - 00:57:27,462] You can't occupy...
+- [00:57:27,462 - 00:57:29,562] That didn't make sense.
+- [00:57:29,862 - 00:57:30,322] Okay.
+- [00:57:30,602 - 00:57:31,082] Okay.
+- [00:57:32,962 - 00:57:33,962] The ground state is unoccupied.
+- [00:57:33,962 - 00:57:35,002] So you can't write in the vacuum the same thing.
+- [00:57:35,002 - 00:57:37,062] Sorry.
+- [00:57:47,942 - 00:57:48,422] Let's...
+- [00:57:48,422 - 00:57:49,102] While we're at it,
+- [00:57:49,102 - 00:57:51,082] let's write an expression which we
+- [00:57:51,082 - 00:57:53,062] can now do for the energy
+- [00:57:53,062 - 00:57:53,782] of the system.
+- [00:57:53,782 - 00:57:56,172] In order to write an expression
+- [00:57:56,172 - 00:57:58,562] for the energy of the system,
+- [00:57:58,562 - 00:58:00,062] we need to know
+- [00:58:00,062 - 00:58:03,462] the energy of each one of these wave functions.
+- [00:58:03,462 - 00:58:05,512] Each wave function has associated
+- [00:58:05,512 - 00:58:07,562] with it an energy eigenvalue.
+- [00:58:08,162 - 00:58:09,582] What should we call them?
+- [00:58:09,582 - 00:58:10,922] The energies?
+- [00:58:10,922 - 00:58:11,902] We could call them E,
+- [00:58:11,902 - 00:58:12,542] couldn't we?
+- [00:58:13,762 - 00:58:15,122] I'm going to call them omega,
+- [00:58:15,122 - 00:58:17,682] or actually H-bar omega.
+- [00:58:18,262 - 00:58:23,062] But let's just call the energy level of the ith...
+- [00:58:23,062 - 00:58:24,862] Let's kill H-bar,
+- [00:58:24,862 - 00:58:25,662] forget H-bar,
+- [00:58:25,662 - 00:58:27,042] because I've already forgotten it.
+- [00:58:29,212 - 00:58:30,962] And just say the energy...
+- [00:58:33,562 - 00:58:35,632] The energy of a particle in
+- [00:58:35,632 - 00:58:37,702] the first state would be omega one.
+- [00:58:39,402 - 00:58:41,382] The energy of a particle in
+- [00:58:41,382 - 00:58:43,362] the second state would be omega two.
+- [00:58:44,662 - 00:58:45,702] And so forth.
+- [00:58:45,702 - 00:58:47,302] The energy of a particle in
+- [00:58:47,302 - 00:58:48,902] the ith state would be omega I.
+- [00:58:51,642 - 00:58:55,152] Let's write an expression in terms of creation and
+- [00:58:55,152 - 00:58:58,662] annihilation operators for the energy of the whole system.
+- [00:59:04,002 - 00:59:05,182] This is easy.
+- [00:59:15,842 - 00:59:21,302] The energy of the whole system is first of all
+- [00:59:21,302 - 00:59:26,762] the energy of all of the particles in the first state.
+- [00:59:27,282 - 00:59:30,582] So that's the number of particles in the first state.
+- [00:59:32,502 - 00:59:34,772] N1 times the energy that's associated
+- [00:59:34,772 - 00:59:37,042] with the particle in the first state,
+- [00:59:37,042 - 00:59:38,062] omega one.
+- [00:59:40,062 - 00:59:42,142] Plus the number of particles in
+- [00:59:42,142 - 00:59:44,222] the second state times omega two.
+- [00:59:44,862 - 00:59:46,582] Plus and so forth and so on.
+- [00:59:46,722 - 00:59:50,382] So it's the sum of
+- [00:59:50,382 - 00:59:54,042] N sub I omega sub I.
+- [00:59:54,562 - 00:59:55,922] Now that's a true statement,
+- [00:59:55,922 - 00:59:59,782] but I want to write it as an operator statement.
+- [00:59:59,782 - 01:00:01,602] These N's are eigenvalues,
+- [01:00:01,602 - 01:00:04,442] but they're eigenvalues of the number operator.
+- [01:00:04,702 - 01:00:08,122] So we can really write this in operator
+- [01:00:08,122 - 01:00:11,542] form by saying it's the sum over all states,
+- [01:00:11,542 - 01:00:13,322] single particle states,
+- [01:00:14,042 - 01:00:17,082] of omega I times the
+- [01:00:17,082 - 01:00:20,122] occupation number of the ith state.
+- [01:00:20,922 - 01:00:23,422] And what is the occupation number of the ith state?
+- [01:00:24,122 - 01:00:26,182] A dagger I A I.
+- [01:00:30,342 - 01:00:32,112] Notice that each one of these
+- [01:00:32,112 - 01:00:33,882] is just basically the oscillator formula.
+- [01:00:34,662 - 01:00:36,262] This is just the oscillator formula.
+- [01:00:36,602 - 01:00:38,062] There would be an h bar in here.
+- [01:00:38,262 - 01:00:39,582] Put an h bar if you like.
+- [01:00:40,842 - 01:00:42,622] This is just the oscillator formula,
+- [01:00:42,622 - 01:00:48,402] but now it's summed over all the possible states here.
+- [01:00:49,022 - 01:00:50,702] And you can think of it two ways.
+- [01:00:50,822 - 01:00:53,452] You can think of it somehow the
+- [01:00:53,452 - 01:00:56,082] system of particles is equivalent to oscillators.
+- [01:00:56,422 - 01:00:58,202] And those are just the oscillator energies.
+- [01:00:58,202 - 01:01:00,062] Or you can say it's just the
+- [01:01:00,062 - 01:01:01,922] sum of the energy of all the particles.
+- [01:01:02,862 - 01:01:04,842] The number of particles in the first mode,
+- [01:01:04,842 - 01:01:05,862] first state,
+- [01:01:05,862 - 01:01:07,842] times the energy of the first state.
+- [01:01:07,942 - 01:01:09,432] Plus the second state times the energy
+- [01:01:09,432 - 01:01:10,922] of the second state and so forth.
+- [01:01:11,142 - 01:01:12,502] And it comes out to the same thing.
+- [01:01:12,722 - 01:01:12,842] Yeah?
+- [01:01:13,822 - 01:01:15,122] What is A I?
+- [01:01:16,202 - 01:01:16,782] A I?
+- [01:01:16,782 - 01:01:17,922] A minus I,
+- [01:01:17,922 - 01:01:18,162] sorry.
+- [01:01:18,422 - 01:01:18,802] Okay.
+- [01:01:19,462 - 01:01:19,902] Good.
+- [01:01:20,862 - 01:01:21,742] So A,
+- [01:01:21,742 - 01:01:23,102] what is A dagger?
+- [01:01:24,202 - 01:01:24,642] Creation.
+- [01:01:24,642 - 01:01:25,082] Oh,
+- [01:01:25,082 - 01:01:25,402] sorry.
+- [01:01:25,582 - 01:01:25,902] A plus?
+- [01:01:26,242 - 01:01:26,522] Yeah.
+- [01:01:27,542 - 01:01:27,982] Okay.
+- [01:01:28,202 - 01:01:28,322] Good.
+- [01:01:28,442 - 01:01:28,802] Okay.
+- [01:01:28,802 - 01:01:29,222] Thanks.
+- [01:01:29,542 - 01:01:30,842] In many contexts,
+- [01:01:30,842 - 01:01:31,342] I'm sorry.
+- [01:01:31,422 - 01:01:32,562] In many contexts,
+- [01:01:32,562 - 01:01:35,402] once you go to quantum field theory,
+- [01:01:35,402 - 01:01:36,582] which is what we're doing now,
+- [01:01:36,582 - 01:01:39,282] A plus just becomes A dagger
+- [01:01:39,282 - 01:01:41,982] and A minus just becomes A.
+- [01:01:43,142 - 01:01:43,582] Well,
+- [01:01:43,582 - 01:01:45,242] I'll try to stick with the same notation.
+- [01:01:45,462 - 01:01:47,122] I don't want to change notations now.
+- [01:01:49,182 - 01:01:49,622] Okay.
+- [01:01:49,722 - 01:01:57,522] So let's just think for a minute what we're doing.
+- [01:01:58,562 - 01:02:00,902] We're inventing some kind of object
+- [01:02:00,902 - 01:02:03,242] which is a bunch of oscillators.
+- [01:02:04,202 - 01:02:05,462] On the other hand,
+- [01:02:05,462 - 01:02:08,122] the violin string is a bunch of oscillators.
+- [01:02:08,282 - 01:02:10,262] The violin string is a field.
+- [01:02:10,802 - 01:02:13,802] If you look at radiation in a cavity,
+- [01:02:13,802 - 01:02:16,222] radiation bouncing between mirrors,
+- [01:02:16,222 - 01:02:18,262] it's a bunch of oscillators.
+- [01:02:18,362 - 01:02:18,982] People speak,
+- [01:02:18,982 - 01:02:21,402] I mean this goes back from long before quantum mechanics,
+- [01:02:21,402 - 01:02:25,082] speak about radiation as a collection of oscillators.
+- [01:02:26,422 - 01:02:27,502] Radiation oscillators.
+- [01:02:27,502 - 01:02:27,682] Radiation oscillators.
+- [01:02:27,802 - 01:02:29,602] Long before quantum mechanics.
+- [01:02:31,102 - 01:02:33,902] And so we're beginning to build
+- [01:02:33,902 - 01:02:36,702] up from thinking about ordinary particles,
+- [01:02:36,702 - 01:02:41,282] we're beginning to build up an idea
+- [01:02:41,282 - 01:02:45,862] of collections of particles as harmonic oscillators.
+- [01:02:46,262 - 01:02:47,822] And soon enough,
+- [01:02:47,822 - 01:02:49,622] we're going to see the connection with fields.
+- [01:02:51,102 - 01:02:51,742] Okay.
+- [01:02:51,862 - 01:02:53,142] If there are no more questions,
+- [01:02:53,142 - 01:02:55,642] maybe we'll take a five-minute break because...
+- [01:02:56,842 - 01:02:57,482] Okay.
+- [01:02:57,482 - 01:02:59,402] I need to stop for a few minutes.
+- [01:03:03,242 - 01:03:06,552] And organize your thoughts and we'll field
+- [01:03:06,552 - 01:03:09,862] a few questions before we go on.
+- [01:03:15,422 - 01:03:17,382] So that's the Hamiltonian.
+- [01:03:18,402 - 01:03:19,102] Is what?
+- [01:03:19,302 - 01:03:20,242] That's the Hamiltonian.
+- [01:03:21,062 - 01:03:22,382] That is the Hamiltonian.
+- [01:03:22,982 - 01:03:24,282] That is the Hamiltonian.
+- [01:03:24,982 - 01:03:26,642] We're going to find other
+- [01:03:26,642 - 01:03:28,302] very elegant ways to write it.
+- [01:03:29,942 - 01:03:31,482] But that is the Hamiltonian.
+- [01:03:31,562 - 01:03:31,722] Right.
+- [01:04:25,982 - 01:04:26,562] Okay.
+- [01:04:27,942 - 01:04:28,522] Okay.
+- [01:04:29,842 - 01:04:30,422] Okay.
+- [01:04:31,462 - 01:04:33,182] I want to be able
+- [01:04:33,182 - 01:04:34,902] to remember where I left off.
+- [01:04:35,592 - 01:04:35,882] Okay.
+- [01:04:38,022 - 01:04:38,602] Good.
+- [01:04:40,262 - 01:04:41,122] What do you do with them?
+- [01:04:41,222 - 01:04:42,042] You put them on the...
+- [01:04:42,862 - 01:04:43,862] I'm not sure what he's doing.
+- [01:04:43,982 - 01:04:44,882] I don't know what he does with them either.
+- [01:04:46,922 - 01:04:47,902] He's loading up the website.
+- [01:04:48,622 - 01:04:48,902] Yeah.
+- [01:04:50,081 - 01:04:51,242] I assume he puts them up.
+- [01:04:51,302 - 01:04:51,662] I don't know.
+- [01:04:52,442 - 01:04:53,662] I don't know if he puts them up directly.
+- [01:04:53,842 - 01:04:54,442] I always put them up.
+- [01:04:54,522 - 01:04:59,002] I thought that was the idea,
+- [01:04:59,002 - 01:04:59,762] but I don't remember.
+- [01:05:00,922 - 01:05:01,202] Yeah.
+- [01:05:01,262 - 01:05:01,542] Okay.
+- [01:05:03,662 - 01:05:03,942] Ah.
+- [01:05:08,202 - 01:05:09,022] Take a nap.
+- [01:05:09,362 - 01:05:11,782] Take a nap.
+- [01:05:21,202 - 01:05:22,662] Take a nap.
+- [01:05:23,382 - 01:05:25,182] Take a nap.
+- [01:05:25,742 - 01:05:27,162] Take a nap.
+- [01:05:27,162 - 01:05:29,362] Take a nap.
+- [01:05:30,042 - 01:05:32,122] Take a nap.
+- [01:05:32,602 - 01:05:36,622] Take a nap.
+- [01:05:36,622 - 01:05:38,382] Take a nap.
+- [01:06:09,362 - 01:06:09,802] What's that?
+- [01:06:10,002 - 01:06:13,182] The energy levels aren't spaced evenly in the box.
+- [01:06:13,562 - 01:06:14,162] No,
+- [01:06:14,162 - 01:06:15,322] that has nothing to do with it.
+- [01:06:15,542 - 01:06:16,122] No,
+- [01:06:16,122 - 01:06:17,502] the energy levels...
+- [01:06:18,061 - 01:06:18,382] No,
+- [01:06:18,382 - 01:06:21,982] it's not the energy levels of the single
+- [01:06:21,982 - 01:06:25,582] particles in the boxes which are evenly spaced.
+- [01:06:26,482 - 01:06:29,362] It's the energy levels of no particle,
+- [01:06:29,362 - 01:06:30,142] one particle,
+- [01:06:30,142 - 01:06:30,882] two particles,
+- [01:06:30,882 - 01:06:31,622] three particles,
+- [01:06:31,722 - 01:06:33,602] which are evenly spaced for each oscillator.
+- [01:06:34,202 - 01:06:34,682] Right.
+- [01:06:34,862 - 01:06:36,712] But isn't it in the
+- [01:06:36,712 - 01:06:38,562] simple harmonic oscillator for single particles,
+- [01:06:38,562 - 01:06:40,522] the energy levels are all spaced apart?
+- [01:06:40,662 - 01:06:40,922] Yes.
+- [01:06:41,062 - 01:06:41,542] Okay.
+- [01:06:41,802 - 01:06:41,962] Yeah.
+- [01:06:43,722 - 01:06:44,202] No.
+- [01:06:46,162 - 01:06:46,642] No,
+- [01:06:46,642 - 01:06:48,852] we're not talking about particles which are
+- [01:06:48,852 - 01:06:51,062] moving in a potential which is an oscillator.
+- [01:06:51,502 - 01:06:52,202] You could.
+- [01:06:52,622 - 01:06:54,152] You could think of a lot of
+- [01:06:54,152 - 01:06:55,682] particles in a potential of an oscillator.
+- [01:06:56,002 - 01:06:57,882] Then you would have two kinds of oscillators.
+- [01:06:57,982 - 01:06:59,982] The particles would be oscillators and the
+- [01:06:59,982 - 01:07:01,982] creation and annihilation operators would be oscillators.
+- [01:07:02,362 - 01:07:03,582] But now we're just talking about...
+- [01:07:03,602 - 01:07:09,562] Any collection of single particle states.
+- [01:07:09,922 - 01:07:12,802] Single particle states is just what you would have thought
+- [01:07:12,802 - 01:07:15,682] about when you're just thinking about one particle quantum mechanics.
+- [01:07:17,042 - 01:07:17,862] But now,
+- [01:07:17,862 - 01:07:19,962] since we can talk about any number of particles,
+- [01:07:19,962 - 01:07:23,682] we can generalize in this way.
+- [01:07:33,602 - 01:07:33,602] So,
+- [01:07:33,602 - 01:07:35,102] there's the pulsating of the slow.
+- [01:07:35,902 - 01:07:36,302] Okay.
+- [01:07:37,702 - 01:07:39,022] We can control the level
+- [01:07:39,022 - 01:07:40,342] of all the particles in this.
+- [01:07:40,482 - 01:07:41,692] We can have the liquid spin the
+- [01:07:41,692 - 01:07:42,902] how the air comes in and out.
+- [01:07:43,142 - 01:07:43,542] Yeah.
+- [01:07:43,722 - 01:07:45,682] How it works is that you can...
+- [01:07:46,162 - 01:07:46,462] Yeah.
+- [01:07:46,582 - 01:07:46,982] Yeah.
+- [01:07:46,982 - 01:07:47,382] Yeah.
+- [01:07:47,862 - 01:07:48,262] Yeah.
+- [01:07:48,262 - 01:07:48,442] I mean,
+- [01:07:48,442 - 01:07:49,902] it can't be done by the switch.
+- [01:07:49,902 - 01:07:51,222] It can't be done by the...
+- [01:07:51,822 - 01:07:52,222] No,
+- [01:07:52,222 - 01:07:52,222] no,
+- [01:07:52,222 - 01:07:52,222] no.
+- [01:07:52,222 - 01:07:54,082] It can't be done by the switch.
+- [01:07:54,082 - 01:07:54,102] No,
+- [01:07:54,102 - 01:07:54,102] no,
+- [01:07:54,102 - 01:07:54,102] no.
+- [01:07:54,102 - 01:07:54,202] It can't be done by the switch.
+- [01:07:54,602 - 01:07:54,922] Yeah.
+- [01:07:55,082 - 01:07:55,482] Yeah.
+- [01:07:55,482 - 01:07:55,882] It can't be done by the switch.
+- [01:07:55,882 - 01:07:56,862] It's pretty much the same thing.
+- [01:07:57,501 - 01:07:59,862] All the particles that are in one little hole,
+- [01:07:59,862 - 01:08:00,682] they're really...
+- [01:08:00,682 - 01:08:01,542] It's really...
+- [01:08:01,542 - 01:08:02,622] It's really...
+- [01:08:03,602 - 01:08:04,082] It's really...
+- [01:08:04,602 - 01:08:05,242] It's really...
+- [01:08:05,242 - 01:08:05,582] It's really...
+- [01:08:06,642 - 01:08:07,402] It's really...
+- [01:08:07,402 - 01:08:07,622] Okay.
+- [01:08:07,762 - 01:08:09,022] Let's get back.
+- [01:08:11,182 - 01:08:11,702] Yeah.
+- [01:08:11,802 - 01:08:12,022] Yeah.
+- [01:08:12,022 - 01:08:12,282] Yeah.
+- [01:08:15,906 - 01:08:16,526] there some questions?
+- [01:08:16,526 - 01:08:19,725] Because I don't want to go too fast
+- [01:08:21,015 - 01:08:23,991] I know that there's a lot of little
+- [01:08:23,991 - 01:08:26,966] indices and little pieces and nuts and bolts here
+- [01:08:27,826 - 01:08:29,966] which if we go fast,
+- [01:08:29,966 - 01:08:32,265] they'll slip out of your head and they
+- [01:08:32,265 - 01:08:34,566] slip out of my head from time to time
+- [01:08:36,025 - 01:08:36,606] Yes?
+- [01:08:36,606 - 01:08:36,866] Yes?
+- [01:08:38,246 - 01:08:40,136] Is there a connection between
+- [01:08:40,136 - 01:08:42,026] the Fourier and the decomposition?
+- [01:08:42,566 - 01:08:43,586] For sure
+- [01:08:44,565 - 01:08:46,805] If Fourier decomposition,
+- [01:08:46,805 - 01:08:48,546] you're going to have arbitrary amplitudes
+- [01:08:48,546 - 01:08:55,946] The a's are the complex amplitudes of Fourier coefficients
+- [01:08:58,466 - 01:08:59,666] We'll come to that
+- [01:09:01,225 - 01:09:01,986] Yes,
+- [01:09:01,986 - 01:09:05,986] it's deeply related with Fourier analysis
+- [01:09:06,606 - 01:09:06,926] Absolutely
+- [01:09:07,605 - 01:09:09,315] Are we assuming that all
+- [01:09:09,315 - 01:09:11,026] the particles have the same energy?
+- [01:09:11,586 - 01:09:12,326] Same energy?
+- [01:09:12,326 - 01:09:12,986] No,
+- [01:09:12,986 - 01:09:13,345] no,
+- [01:09:13,345 - 01:09:13,566] no,
+- [01:09:13,566 - 01:09:13,765] no,
+- [01:09:13,765 - 01:09:13,926] no,
+- [01:09:13,926 - 01:09:14,066] no
+- [01:09:14,066 - 01:09:16,606] If they're in the first state,
+- [01:09:16,606 - 01:09:17,645] they have energy at one
+- [01:09:17,645 - 01:09:19,696] All the particles which are in
+- [01:09:19,696 - 01:09:21,746] the first state have the same energy
+- [01:09:21,746 - 01:09:23,975] All the particles in the second state
+- [01:09:23,975 - 01:09:26,206] have the same energy as each other
+- [01:09:26,206 - 01:09:28,626] but not as the ones in the first state
+- [01:09:29,906 - 01:09:30,345] So,
+- [01:09:30,345 - 01:09:30,725] you know
+- [01:09:30,725 - 01:09:32,606] But they interact with each other
+- [01:09:32,606 - 01:09:33,106] Well,
+- [01:09:33,106 - 01:09:33,386] okay,
+- [01:09:33,386 - 01:09:34,546] for the moment we're talking
+- [01:09:34,546 - 01:09:35,706] about particles that don't interact
+- [01:09:36,606 - 01:09:38,656] For the moment we're talking about particles
+- [01:09:38,656 - 01:09:40,706] which simply don't interact with each other
+- [01:09:42,086 - 01:09:43,406] That's the starting point
+- [01:09:45,026 - 01:09:47,506] Later we have to ask what kind of things do
+- [01:09:47,506 - 01:09:49,986] we have to do to get the particles to interact
+- [01:09:50,606 - 01:09:52,566] What Giorgio was saying is that
+- [01:09:52,566 - 01:09:54,526] if particles really interacted with each other
+- [01:09:54,526 - 01:09:56,346] the energies wouldn't really be additive
+- [01:09:57,026 - 01:09:59,046] There wouldn't just be the energy of
+- [01:09:59,046 - 01:10:01,066] particle one plus the energy of particle two
+- [01:10:01,066 - 01:10:02,456] There would be the energy of particle
+- [01:10:02,456 - 01:10:03,846] one plus the energy of particle two
+- [01:10:03,846 - 01:10:06,306] plus any kind of potential energy between them,
+- [01:10:06,306 - 01:10:06,826] for example
+- [01:10:07,606 - 01:10:07,886] So,
+- [01:10:07,886 - 01:10:08,346] right,
+- [01:10:08,346 - 01:10:09,466] that's correct
+- [01:10:10,746 - 01:10:13,566] For the moment we're talking about free particles
+- [01:10:13,566 - 01:10:15,036] Free particles means particles which
+- [01:10:15,036 - 01:10:16,506] don't interact with each other
+- [01:10:20,126 - 01:10:20,686] Okay,
+- [01:10:20,686 - 01:10:23,186] now we come
+- [01:10:23,985 - 01:10:25,206] No other questions?
+- [01:10:25,206 - 01:10:26,105] Yes
+- [01:10:26,105 - 01:10:28,385] So in non-right-tempistic quantum field theory there's still
+- [01:10:28,385 - 01:10:30,666] a half a boson in the ground state?
+- [01:10:30,926 - 01:10:31,486] Yes,
+- [01:10:31,486 - 01:10:32,346] but it doesn't play
+- [01:10:32,346 - 01:10:34,186] It doesn't do anything
+- [01:10:34,906 - 01:10:36,666] It's just zero-point energy
+- [01:10:37,346 - 01:10:40,026] And why doesn't zero-point energy,
+- [01:10:40,026 - 01:10:41,626] why is it irrelevant for everything?
+- [01:10:42,046 - 01:10:42,426] Well,
+- [01:10:42,426 - 01:10:43,346] if you think what does...
+- [01:10:43,346 - 01:10:45,186] Energy is Hamiltonian
+- [01:10:46,046 - 01:10:48,306] What happens if you add a constant,
+- [01:10:48,306 - 01:10:48,966] a number,
+- [01:10:48,966 - 01:10:50,066] to a Hamiltonian?
+- [01:10:50,246 - 01:10:50,846] Well,
+- [01:10:50,846 - 01:10:52,986] a number commutes with everything
+- [01:10:52,986 - 01:10:55,446] And if you remember what the Hamiltonian does for you
+- [01:10:55,446 - 01:10:59,026] is it provides a method of getting equations of motion
+- [01:10:59,026 - 01:11:02,326] The time dependence of something
+- [01:11:02,346 - 01:11:04,716] is related to the commutator
+- [01:11:04,716 - 01:11:07,086] of that thing with the Hamiltonian
+- [01:11:08,366 - 01:11:09,626] Constants do nothing
+- [01:11:09,626 - 01:11:10,946] They commute with everything
+- [01:11:11,866 - 01:11:13,236] Another way of saying it
+- [01:11:13,236 - 01:11:14,606] is in keeping track of energies
+- [01:11:14,606 - 01:11:17,086] the only thing that really counts is energy differences
+- [01:11:18,386 - 01:11:19,266] Not the...
+- [01:11:19,266 - 01:11:22,486] So you can throw away that ground state energy
+- [01:11:25,226 - 01:11:28,086] except for certain very special purposes that
+- [01:11:28,086 - 01:11:30,946] are not going to concern us right now
+- [01:11:33,626 - 01:11:34,146] Okay,
+- [01:11:34,146 - 01:11:35,486] quantum fields
+- [01:11:36,226 - 01:11:38,466] A field is a function of space
+- [01:11:39,266 - 01:11:41,166] It's not a function of two points
+- [01:11:41,166 - 01:11:43,066] of space or three points of space
+- [01:11:43,066 - 01:11:44,796] So it's not like the wave
+- [01:11:44,796 - 01:11:46,526] function of a many particle system
+- [01:11:47,166 - 01:11:49,386] It's a thing which only depends on one coordinate
+- [01:11:50,006 - 01:11:51,166] It's also an operator
+- [01:11:52,186 - 01:11:52,706] Why?
+- [01:11:52,706 - 01:11:54,006] Because it's an observable
+- [01:11:54,006 - 01:11:54,906] You observe fields,
+- [01:11:54,906 - 01:11:55,586] you measure them
+- [01:11:58,766 - 01:12:00,506] What was the third point about...
+- [01:12:02,346 - 01:12:02,826] No,
+- [01:12:02,826 - 01:12:03,686] I don't remember
+- [01:12:03,686 - 01:12:04,186] But...
+- [01:12:05,286 - 01:12:05,766] Any...yeah,
+- [01:12:05,766 - 01:12:06,946] and somehow...
+- [01:12:06,946 - 01:12:09,326] Somehow this has to do with your
+- [01:12:09,326 - 01:12:11,706] ability to change the number of particles
+- [01:12:13,166 - 01:12:13,646] Okay,
+- [01:12:13,646 - 01:12:15,206] so I'm...what we're going to do is
+- [01:12:15,206 - 01:12:16,766] I'm going to give you the rule
+- [01:12:17,546 - 01:12:21,566] for the quantum field of this system of particles
+- [01:12:21,566 - 01:12:23,826] And then we're going to explore how it works
+- [01:12:23,826 - 01:12:25,566] If you ask me previously...
+- [01:12:25,586 - 01:12:28,146] Prematurely why that's the definition
+- [01:12:28,146 - 01:12:29,146] Well,
+- [01:12:29,146 - 01:12:30,306] it won't work
+- [01:12:30,306 - 01:12:31,826] It won't work
+- [01:12:31,826 - 01:12:35,196] The best thing to do...sometimes it's
+- [01:12:35,196 - 01:12:38,566] just best to follow the definition
+- [01:12:39,346 - 01:12:41,476] And I promise you we won't go too
+- [01:12:41,476 - 01:12:43,606] far before you start to see why it works
+- [01:12:43,606 - 01:12:46,066] and why it's interesting and why that's the definition
+- [01:12:46,586 - 01:12:48,706] But it's better not to try
+- [01:12:48,706 - 01:12:50,826] to intuit out from the beginning
+- [01:12:52,126 - 01:12:54,446] why this is the particular definition
+- [01:12:56,146 - 01:12:58,346] Rather get used to it and familiar with it
+- [01:12:58,346 - 01:13:00,176] and in a short amount of time
+- [01:13:00,176 - 01:13:02,006] you'll understand why that's the thing to do
+- [01:13:05,026 - 01:13:07,136] The definitions...the value of the
+- [01:13:07,136 - 01:13:09,246] definitions depends on their utility
+- [01:13:10,366 - 01:13:10,806] Alright,
+- [01:13:10,806 - 01:13:12,566] on what you can do with them and...
+- [01:13:12,566 - 01:13:14,626] I might say this to begin with
+- [01:13:15,426 - 01:13:16,626] Quantum field theory,
+- [01:13:16,626 - 01:13:18,666] at least in the way we're thinking about it here
+- [01:13:18,666 - 01:13:21,386] among other things is a bookkeeping device
+- [01:13:22,186 - 01:13:24,726] It's a bookkeeping device for keeping track
+- [01:13:25,586 - 01:13:26,526] of many particles,
+- [01:13:26,526 - 01:13:28,506] for keeping track of the quantum mechanics
+- [01:13:28,506 - 01:13:30,286] of particles which come and go,
+- [01:13:30,286 - 01:13:31,546] change their state
+- [01:13:32,486 - 01:13:34,446] even disappear and reappear,
+- [01:13:34,446 - 01:13:34,906] whatever
+- [01:13:35,406 - 01:13:36,706] It's a kind of bookkeeping device
+- [01:13:37,426 - 01:13:39,086] Whenever you have operators like this,
+- [01:13:39,086 - 01:13:40,226] you're doing bookkeeping
+- [01:13:41,146 - 01:13:42,936] It's a little more than that
+- [01:13:42,936 - 01:13:44,726] because you can actually measure these fields
+- [01:13:44,726 - 01:13:46,846] The things when they go by you,
+- [01:13:46,846 - 01:13:48,026] you feel them,
+- [01:13:48,026 - 01:13:49,206] they have an effect on you
+- [01:13:50,106 - 01:13:51,316] But for the moment we can
+- [01:13:51,316 - 01:13:52,526] just think of it as bookkeeping
+- [01:13:53,366 - 01:13:53,846] And...
+- [01:13:53,846 - 01:13:57,186] Whether a definition is a useful definition or not
+- [01:13:57,186 - 01:13:59,206] depends on what you try to do with it
+- [01:13:59,206 - 01:14:00,426] And I can tell you with
+- [01:14:00,426 - 01:14:01,646] quantum fields you can do a lot
+- [01:14:02,966 - 01:14:03,446] Yeah
+- [01:14:03,446 - 01:14:06,076] Could you take a minute or two to say just
+- [01:14:06,076 - 01:14:08,706] a little bit about the history of quantum field theory
+- [01:14:08,706 - 01:14:09,626] when it was developed,
+- [01:14:09,626 - 01:14:10,606] who developed it?
+- [01:14:15,686 - 01:14:16,166] Well...
+- [01:14:18,705 - 01:14:19,946] We go way,
+- [01:14:19,946 - 01:14:20,406] way back
+- [01:14:20,906 - 01:14:22,296] We can start with the
+- [01:14:22,296 - 01:14:23,686] question of who invented field theory
+- [01:14:23,846 - 01:14:24,706] Alright
+- [01:14:24,706 - 01:14:26,406] Who invented field theory?
+- [01:14:26,406 - 01:14:27,926] Anybody know who invented field theory?
+- [01:14:28,526 - 01:14:30,366] I suppose it was Faraday
+- [01:14:30,366 - 01:14:33,166] with the electric and magnetic field
+- [01:14:33,846 - 01:14:38,226] So I think probably the idea can best be...
+- [01:14:38,846 - 01:14:41,286] The original history started with,
+- [01:14:41,286 - 01:14:41,606] I think,
+- [01:14:41,606 - 01:14:42,166] with Faraday
+- [01:14:42,866 - 01:14:44,906] Maxwell invented field equations
+- [01:14:45,726 - 01:14:47,426] Faraday didn't have field equations,
+- [01:14:47,426 - 01:14:49,386] he just had a feel for the fields
+- [01:14:49,386 - 01:14:50,746] A feel for the fields
+- [01:14:51,646 - 01:14:52,286] And...
+- [01:14:52,286 - 01:14:54,126] And was able to visualize them
+- [01:14:55,226 - 01:14:56,566] Maxwell wrote down,
+- [01:14:56,566 - 01:14:57,426] as far as I know
+- [01:14:58,046 - 01:14:58,586] Well,
+- [01:14:58,586 - 01:15:00,326] it's probably not true that he was the
+- [01:15:00,326 - 01:15:02,066] first one to write down a wave equation
+- [01:15:02,066 - 01:15:03,326] There were wave equations
+- [01:15:03,906 - 01:15:04,946] Waves of water,
+- [01:15:04,946 - 01:15:05,966] waves of other things
+- [01:15:05,966 - 01:15:09,356] But I think it can fairly be said that
+- [01:15:09,356 - 01:15:12,746] Maxwell wrote down the first modern version of field theory
+- [01:15:12,746 - 01:15:14,326] But it was classical field theory
+- [01:15:15,786 - 01:15:16,326] Um...
+- [01:15:18,325 - 01:15:21,066] The need to quantize fields
+- [01:15:21,066 - 01:15:24,066] Or the need to do something involving H-bar
+- [01:15:24,066 - 01:15:25,806] Goes back to Planck
+- [01:15:27,306 - 01:15:27,986] Planck...
+- [01:15:29,106 - 01:15:29,786] Well,
+- [01:15:29,786 - 01:15:31,606] it goes back before Planck
+- [01:15:32,806 - 01:15:34,286] We have not talked...
+- [01:15:34,286 - 01:15:35,816] We will eventually talk about
+- [01:15:35,816 - 01:15:37,346] what is called the ultraviolet catastrophe
+- [01:15:39,125 - 01:15:40,526] Won't talk about it now
+- [01:15:41,066 - 01:15:45,256] But Planck realized that classical field theory would
+- [01:15:45,256 - 01:15:49,446] not be adequate for studying thermodynamics of radiation
+- [01:15:49,446 - 01:15:51,826] Introduced Planck's constant
+- [01:15:52,406 - 01:15:54,206] And in the process
+- [01:15:55,746 - 01:15:56,546] Uh...
+- [01:15:57,385 - 01:16:00,786] Basically said some things about harmonic oscillators
+- [01:16:01,406 - 01:16:03,346] Which were more or less correct
+- [01:16:04,406 - 01:16:07,186] He didn't realize that the radiation
+- [01:16:07,186 - 01:16:09,966] field itself was made out of oscillators
+- [01:16:09,966 - 01:16:11,726] Or photons,
+- [01:16:11,726 - 01:16:12,626] as we call...
+- [01:16:12,626 - 01:16:13,946] Or quanta of the field
+- [01:16:13,946 - 01:16:16,216] He was thinking about the oscillators
+- [01:16:16,216 - 01:16:18,486] in the walls of a cavity
+- [01:16:18,486 - 01:16:19,506] Namely the atoms
+- [01:16:19,506 - 01:16:23,146] Which he thought of and envisioned as literally oscillators
+- [01:16:23,146 - 01:16:24,446] Little oscillating charges
+- [01:16:25,726 - 01:16:26,966] And um...
+- [01:16:26,966 - 01:16:29,226] His application of Planck's constant
+- [01:16:29,226 - 01:16:30,746] And this...
+- [01:16:30,746 - 01:16:32,226] He didn't have his mathematics
+- [01:16:32,226 - 01:16:35,966] But the idea that the energy levels were integer spaced
+- [01:16:36,406 - 01:16:38,076] He wrongly thought that that
+- [01:16:38,076 - 01:16:39,746] had to do with the um...
+- [01:16:40,346 - 01:16:43,286] With the oscillators in the walls of the cavity
+- [01:16:43,286 - 01:16:46,046] It was Einstein who first um...
+- [01:16:46,046 - 01:16:48,065] Understood that the...
+- [01:16:48,486 - 01:16:52,046] That the quantization of oscillations
+- [01:16:53,006 - 01:16:55,506] Had to do with the electromagnetic field
+- [01:16:55,506 - 01:16:57,325] With Maxwell's electromagnetic field
+- [01:16:57,325 - 01:16:59,526] So as with almost everything else
+- [01:16:59,526 - 01:17:01,766] It was Einstein who uh...
+- [01:17:02,326 - 01:17:04,226] Had the first inklings of this
+- [01:17:07,106 - 01:17:08,386] But then later
+- [01:17:09,206 - 01:17:11,086] It was Heisenberg,
+- [01:17:11,086 - 01:17:11,986] Pauli,
+- [01:17:11,986 - 01:17:13,486] Dirac was the...
+- [01:17:13,486 - 01:17:15,726] Dirac was the person who really put
+- [01:17:15,726 - 01:17:17,966] it together in the form we're talking about
+- [01:17:19,386 - 01:17:20,346] Uh...
+- [01:17:22,345 - 01:17:23,586] And that was...
+- [01:17:24,486 - 01:17:26,566] Basically around 1929
+- [01:17:27,486 - 01:17:31,266] Around 1929 a lot of these ideas uh...
+- [01:17:31,266 - 01:17:32,746] First really surfaced
+- [01:17:33,266 - 01:17:34,306] But um...
+- [01:17:34,306 - 01:17:36,726] You know as usual Einstein uh...
+- [01:17:36,726 - 01:17:37,366] Had...
+- [01:17:37,366 - 01:17:40,186] Really did have all the ideas and uh...
+- [01:17:40,186 - 01:17:41,846] Um...
+- [01:17:42,486 - 01:17:44,706] Although he hadn't articulated them
+- [01:17:44,706 - 01:17:46,926] in exactly the modern form
+- [01:17:51,166 - 01:17:51,726] But um...
+- [01:17:51,726 - 01:17:51,966] After that
+- [01:17:51,966 - 01:17:54,206] The whole history
+- [01:17:54,206 - 01:17:55,166] But uh...
+- [01:17:55,166 - 01:17:56,026] Not for tonight
+- [01:17:56,026 - 01:17:56,726] Not for tonight
+- [01:17:57,446 - 01:17:58,006] Um...
+- [01:17:58,886 - 01:18:02,056] This notion of particles or variable
+- [01:18:02,056 - 01:18:05,226] number of particles as harmonic oscillators
+- [01:18:05,226 - 01:18:06,066] That's a good question
+- [01:18:06,066 - 01:18:07,046] Who was the first one?
+- [01:18:08,446 - 01:18:10,246] I'm guessing Dirac again
+- [01:18:10,246 - 01:18:11,896] But I'm not sure that he
+- [01:18:11,896 - 01:18:13,546] was the first one to identify
+- [01:18:13,546 - 01:18:18,346] Particle creation and annihilation as a form of um...
+- [01:18:18,346 - 01:18:19,906] Harmonic oscillator mathematics
+- [01:18:20,546 - 01:18:22,706] I would guess it was Dirac
+- [01:18:23,906 - 01:18:25,466] Probably around 1930
+- [01:18:26,906 - 01:18:29,396] What was the first major problem that
+- [01:18:29,396 - 01:18:31,886] they could solve that hadn't been solved before?
+- [01:18:32,126 - 01:18:35,206] The first major problem was the
+- [01:18:35,206 - 01:18:38,286] problem of the ultraviolet catastrophe of uh...
+- [01:18:38,286 - 01:18:40,426] Of um...
+- [01:18:41,326 - 01:18:45,186] Or basically why radiation was quantized
+- [01:18:45,186 - 01:18:48,346] Einstein knew radiation was quantized
+- [01:18:48,346 - 01:18:51,386] Okay he knew that radiation came in photons
+- [01:18:51,386 - 01:18:52,806] But he didn't have a
+- [01:18:52,806 - 01:18:54,226] mathematical way to think about it
+- [01:18:54,226 - 01:18:55,546] Uh...
+- [01:18:55,546 - 01:18:57,946] The first major problem that was solved
+- [01:18:57,946 - 01:19:01,486] Was a formal mathematical quantum mechanics
+- [01:19:01,486 - 01:19:03,926] That was consistent with the rest of quantum mechanics
+- [01:19:03,926 - 01:19:08,046] That included the idea that radiation came in photons
+- [01:19:08,046 - 01:19:09,226] That radiation came so far away from us that
+- [01:19:09,226 - 01:19:10,406] it was impossible to find it in the universe
+- [01:19:10,426 - 01:19:11,956] So far we have never even
+- [01:19:11,956 - 01:19:13,486] talked about what a photon is
+- [01:19:14,345 - 01:19:15,386] We're getting close
+- [01:19:16,186 - 01:19:16,946] We're getting close
+- [01:19:16,946 - 01:19:19,806] A photon has something to do with the electromagnetic field
+- [01:19:21,206 - 01:19:21,886] And...
+- [01:19:22,426 - 01:19:23,786] It's a unit of energy
+- [01:19:24,926 - 01:19:26,066] It's like...
+- [01:19:26,066 - 01:19:28,186] These occupation numbers
+- [01:19:29,166 - 01:19:29,846] Okay
+- [01:19:29,846 - 01:19:33,966] The things which occupy the occupation numbers are quanta
+- [01:19:34,646 - 01:19:37,026] If the particles we're talking about
+- [01:19:37,026 - 01:19:39,406] are the quanta of the electromagnetic field
+- [01:19:39,406 - 01:19:40,446] They're called photons
+- [01:19:41,466 - 01:19:41,986] So...
+- [01:19:41,986 - 01:19:43,526] That's where we're going
+- [01:19:43,526 - 01:19:44,126] We're...
+- [01:19:44,826 - 01:19:48,046] Really getting close to talking about what a photon is
+- [01:19:49,066 - 01:19:51,326] Or what a quantum of a field is
+- [01:19:52,226 - 01:19:53,206] In fact...
+- [01:19:53,206 - 01:19:54,846] Right now we're going to introduce
+- [01:19:54,846 - 01:19:56,486] the notion of a quantum field
+- [01:19:58,066 - 01:19:59,766] The simplest version of it
+- [01:20:01,446 - 01:20:03,186] I'm going to give it to you as a definition
+- [01:20:04,386 - 01:20:05,506] And we're going to see what
+- [01:20:05,506 - 01:20:06,626] it does and how it works
+- [01:20:07,686 - 01:20:08,206] Okay
+- [01:20:08,206 - 01:20:08,506] So,
+- [01:20:08,506 - 01:20:10,766] psi is a quantum field
+- [01:20:12,086 - 01:20:13,126] And I'm going...
+- [01:20:13,126 - 01:20:13,586] Again,
+- [01:20:13,586 - 01:20:15,166] because it's a quantum field,
+- [01:20:15,166 - 01:20:16,086] it's an operator
+- [01:20:16,086 - 01:20:17,686] It's something you can measure
+- [01:20:25,926 - 01:20:27,666] I'm going to call it capital Psi
+- [01:20:30,725 - 01:20:31,786] It's an operator,
+- [01:20:31,786 - 01:20:34,266] but it's an operator which depends on position
+- [01:20:34,266 - 01:20:36,346] So it's not a single operator
+- [01:20:36,346 - 01:20:38,186] It's an operator for each of the...
+- [01:20:38,206 - 01:20:38,766] For each position
+- [01:20:38,766 - 01:20:40,886] For each position,
+- [01:20:40,886 - 01:20:42,526] a separate operator
+- [01:20:43,186 - 01:20:44,986] It acts on a space of states
+- [01:20:44,986 - 01:20:46,066] The space of states...
+- [01:20:46,066 - 01:20:46,986] What is the space of states?
+- [01:20:47,566 - 01:20:49,246] The space of states...
+- [01:20:49,966 - 01:20:50,786] Where is it?
+- [01:20:50,866 - 01:20:51,446] We erased it?
+- [01:20:54,766 - 01:20:55,326] Well,
+- [01:20:55,326 - 01:20:56,606] the space of states...
+- [01:20:57,566 - 01:20:59,546] And one and two...
+- [01:21:02,126 - 01:21:02,686] Incidentally,
+- [01:21:02,686 - 01:21:04,666] this is called a Fox space
+- [01:21:05,206 - 01:21:05,846] F-O-K
+- [01:21:05,846 - 01:21:06,926] F-O-C-K
+- [01:21:09,106 - 01:21:10,706] F-O-K was a Russian physicist
+- [01:21:10,706 - 01:21:12,506] I doubt very much that he
+- [01:21:12,506 - 01:21:14,306] was the first one to use this
+- [01:21:14,306 - 01:21:15,666] But he wasn't
+- [01:21:16,206 - 01:21:18,816] But it got named after him for the
+- [01:21:18,816 - 01:21:21,426] usual reasons that things get named after people
+- [01:21:21,426 - 01:21:22,086] Namely,
+- [01:21:22,086 - 01:21:22,566] no reason
+- [01:21:26,506 - 01:21:27,066] Okay
+- [01:21:28,126 - 01:21:30,786] The quantum field psi of x
+- [01:21:31,586 - 01:21:33,486] It's just a very short definition
+- [01:21:39,306 - 01:21:42,326] It's equal to the sum over
+- [01:21:42,326 - 01:21:45,346] all of the single particle wave functions
+- [01:21:45,346 - 01:21:46,606] Sum over i
+- [01:21:46,866 - 01:21:49,526] A contribution for each one of these states
+- [01:21:50,365 - 01:21:51,826] So it's a sum over i
+- [01:21:52,946 - 01:21:55,866] It contains psi i of x
+- [01:21:57,146 - 01:21:59,146] The single particle wave function
+- [01:21:59,146 - 01:22:01,926] These are things like sines and cosines
+- [01:22:01,926 - 01:22:05,966] Sines and cosines of different wave number
+- [01:22:05,966 - 01:22:07,246] Of different wavelength
+- [01:22:08,226 - 01:22:09,406] That's what goes there
+- [01:22:09,406 - 01:22:11,826] And what multiplies it
+- [01:22:11,826 - 01:22:12,686] The coefficients
+- [01:22:13,246 - 01:22:16,926] The coefficients are the creation and annihilation operators
+- [01:22:16,926 - 01:22:18,566] In this case,
+- [01:22:18,566 - 01:22:20,046] the annihilation operators
+- [01:22:20,046 - 01:22:21,346] i
+- [01:22:22,246 - 01:22:22,686] Now,
+- [01:22:22,686 - 01:22:24,386] somebody asked me if any of
+- [01:22:24,386 - 01:22:26,086] this has to do with Fourier analysis
+- [01:22:26,866 - 01:22:28,626] If the size...
+- [01:22:28,626 - 01:22:32,486] If the size were momentum eigenstates
+- [01:22:32,486 - 01:22:35,646] That means they're sines and cosines
+- [01:22:35,646 - 01:22:36,246] Then...
+- [01:22:36,246 - 01:22:38,986] Then these operators A-
+- [01:22:38,986 - 01:22:41,066] Would look...
+- [01:22:41,066 - 01:22:43,446] Would resemble very closely the coefficients
+- [01:22:44,026 - 01:22:45,926] That occur in Fourier analysis
+- [01:22:46,986 - 01:22:47,646] That is,
+- [01:22:47,646 - 01:22:51,026] they are the quantum version of the Fourier coefficients
+- [01:22:52,206 - 01:22:55,986] When you expand the thing in sines and cosines
+- [01:22:55,986 - 01:22:56,586] Now,
+- [01:22:56,586 - 01:22:58,026] it might not be sines and cosines
+- [01:22:58,026 - 01:22:59,186] It's whatever the...
+- [01:22:59,186 - 01:23:01,706] The orthonormal family of states
+- [01:23:02,246 - 01:23:04,046] Of single particle states is
+- [01:23:06,266 - 01:23:06,886] That's it
+- [01:23:07,506 - 01:23:10,006] That's the definition of a quantum field
+- [01:23:10,006 - 01:23:11,166] The simplest...
+- [01:23:11,166 - 01:23:12,266] The simplest example
+- [01:23:14,206 - 01:23:14,786] What's that?
+- [01:23:15,906 - 01:23:17,326] The left hand side is the operator,
+- [01:23:17,326 - 01:23:17,626] right?
+- [01:23:17,686 - 01:23:18,586] The right hand side...
+- [01:23:18,586 - 01:23:20,346] Does it include the psi there?
+- [01:23:21,306 - 01:23:22,986] These sines are just numbers
+- [01:23:22,986 - 01:23:23,306] Now,
+- [01:23:23,306 - 01:23:23,666] in fact,
+- [01:23:23,666 - 01:23:25,286] there's a separate number for each position
+- [01:23:27,766 - 01:23:29,746] Psi of x are just classical...
+- [01:23:29,746 - 01:23:30,266] Just functions
+- [01:23:31,306 - 01:23:33,116] So if I want to know what
+- [01:23:33,116 - 01:23:34,926] the quantum field is at x equals 0
+- [01:23:35,485 - 01:23:38,286] I plug in x equals 0 here
+- [01:23:38,286 - 01:23:39,726] If I want to know what it is
+- [01:23:39,726 - 01:23:41,166] at x equals the square root of pi
+- [01:23:41,166 - 01:23:42,866] I put in the square root of pi here
+- [01:23:43,926 - 01:23:44,866] So it's a...
+- [01:23:44,866 - 01:23:47,146] It's a whole set of function...
+- [01:23:47,146 - 01:23:47,506] Sorry,
+- [01:23:47,506 - 01:23:48,926] it's a whole set of operators
+- [01:23:49,625 - 01:23:51,906] One for each position in space
+- [01:23:52,666 - 01:23:53,946] That's a lot of operators
+- [01:23:54,966 - 01:23:56,686] One for each position in space
+- [01:23:56,686 - 01:23:58,406] Why so rich?
+- [01:23:58,546 - 01:23:59,966] Why are there so many operators?
+- [01:24:00,386 - 01:24:03,766] The reason is because we're trying to study a system
+- [01:24:03,766 - 01:24:04,906] Where there can be infinite...
+- [01:24:04,906 - 01:24:05,846] Any number of particles
+- [01:24:06,666 - 01:24:07,766] That's a lot of states
+- [01:24:07,766 - 01:24:09,326] A lot of states,
+- [01:24:09,326 - 01:24:10,486] a lot of operators
+- [01:24:10,486 - 01:24:14,606] Just because the number of particles is totally unbounded
+- [01:24:14,606 - 01:24:16,046] In this idea
+- [01:24:18,026 - 01:24:18,586] Okay,
+- [01:24:18,586 - 01:24:20,326] so there's an operator at each position
+- [01:24:20,326 - 01:24:22,146] This x and this x are the same
+- [01:24:22,146 - 01:24:23,426] The sines are different
+- [01:24:23,426 - 01:24:24,366] This is an operator
+- [01:24:24,726 - 01:24:26,106] This is just a function
+- [01:24:26,106 - 01:24:27,306] A function of position
+- [01:24:28,786 - 01:24:30,606] The operator is in here
+- [01:24:30,606 - 01:24:32,386] That's where the operator is
+- [01:24:34,906 - 01:24:40,226] There is the complex conjugate or the Hermitian conjugate
+- [01:24:40,226 - 01:24:42,406] This is an operator
+- [01:24:42,406 - 01:24:44,986] It's not a number
+- [01:24:45,826 - 01:24:47,706] But it has a Hermitian conjugate
+- [01:24:49,426 - 01:24:51,766] It's exactly the same thing except
+- [01:24:53,706 - 01:24:56,566] That we put creation operators there
+- [01:24:57,766 - 01:24:59,166] And psi star here
+- [01:25:06,046 - 01:25:08,826] These quantum fields are not Hermitian
+- [01:25:08,826 - 01:25:11,096] They're not Hermitian because the creation
+- [01:25:11,096 - 01:25:13,366] and annihilation operators are not Hermitian
+- [01:25:13,745 - 01:25:15,726] And so they're not really observables
+- [01:25:15,726 - 01:25:19,166] But if you add psi and psi star,
+- [01:25:19,166 - 01:25:20,005] or psi dagger
+- [01:25:20,706 - 01:25:22,086] Or you subtract them
+- [01:25:22,086 - 01:25:24,985] You can make Hermitian combinations out of them
+- [01:25:24,985 - 01:25:26,515] And those really are things that
+- [01:25:26,515 - 01:25:28,046] you could observe in the laboratory
+- [01:25:29,866 - 01:25:32,426] Just because they're Hermitian operators
+- [01:25:33,286 - 01:25:36,546] Now we're going to explore these objects
+- [01:25:37,226 - 01:25:38,426] I'm going to go slow
+- [01:25:39,866 - 01:25:42,666] But the first thing I want to show
+- [01:25:42,666 - 01:25:45,466] you is what the action of psi is
+- [01:25:45,466 - 01:25:46,506] Psi of x,
+- [01:25:46,506 - 01:25:47,686] capital Psi of x
+- [01:25:47,686 - 01:25:49,706] When it hits the vacuum
+- [01:25:50,546 - 01:25:52,876] What does it do when
+- [01:25:52,876 - 01:25:55,206] you apply it to the vacuum?
+- [01:25:56,746 - 01:25:58,126] Let's take psi dagger
+- [01:26:00,186 - 01:26:00,806] Incidentally,
+- [01:26:00,806 - 01:26:02,406] what does psi do when the vacuum hits the vacuum?
+- [01:26:03,626 - 01:26:06,766] It kills it,
+- [01:26:06,766 - 01:26:07,666] it annihilates it
+- [01:26:07,666 - 01:26:07,826] Why?
+- [01:26:07,826 - 01:26:10,506] Because it's only got annihilation operators in it
+- [01:26:11,686 - 01:26:12,506] Psi dagger,
+- [01:26:12,506 - 01:26:13,086] however,
+- [01:26:13,086 - 01:26:14,686] has creation operators
+- [01:26:15,246 - 01:26:16,766] It creates a particle
+- [01:26:17,346 - 01:26:19,306] Each term in here creates a particle
+- [01:26:19,306 - 01:26:20,626] It doesn't create a lot of particles
+- [01:26:21,206 - 01:26:23,346] It creates a superposition of particles
+- [01:26:24,466 - 01:26:27,326] But one particle in a superposition of states
+- [01:26:27,326 - 01:26:28,756] So let's see if we
+- [01:26:28,756 - 01:26:30,186] can figure out what it does
+- [01:26:32,826 - 01:26:34,746] When it hits the vacuum
+- [01:26:34,746 - 01:26:35,606] Okay,
+- [01:26:35,606 - 01:26:36,706] so here's what we're going to do
+- [01:26:47,406 - 01:26:50,306] Let's take single particle quantum mechanics
+- [01:26:50,306 - 01:26:52,526] One particle quantum mechanics to begin with
+- [01:26:53,026 - 01:26:53,866] In other words,
+- [01:26:53,866 - 01:26:56,366] forget all this fancy stuff with oscillators
+- [01:26:56,366 - 01:26:59,266] Just good old quantum mechanics of a single particle
+- [01:27:00,406 - 01:27:01,966] There's a complete set of states
+- [01:27:01,966 - 01:27:04,646] The complete set of states are the position states
+- [01:27:07,786 - 01:27:08,466] Let's see,
+- [01:27:08,466 - 01:27:09,426] how do I want to write this?
+- [01:27:10,686 - 01:27:11,246] Okay
+- [01:27:13,986 - 01:27:16,066] States which are located where the
+- [01:27:16,066 - 01:27:18,146] particle is located at position x
+- [01:27:18,966 - 01:27:20,346] They're a complete set of states
+- [01:27:20,946 - 01:27:23,466] That means they're a complete basis of states
+- [01:27:24,126 - 01:27:27,446] And that means that you can,
+- [01:27:27,446 - 01:27:29,306] if you sum over all positions
+- [01:27:29,306 - 01:27:30,986] Or integrate over all positions
+- [01:27:30,986 - 01:27:32,506] I'll use a,
+- [01:27:32,506 - 01:27:34,026] I'll keep it simple
+- [01:27:34,026 - 01:27:35,966] I'll imagine summing over positions
+- [01:27:35,966 - 01:27:37,446] But we may have to do an integral
+- [01:27:38,246 - 01:27:39,986] If we sum over all positions
+- [01:27:39,986 - 01:27:41,626] What do we get on the right hand side?
+- [01:27:42,846 - 01:27:43,406] One
+- [01:27:43,406 - 01:27:44,066] One,
+- [01:27:44,066 - 01:27:45,246] the unit operator
+- [01:27:48,066 - 01:27:51,266] That's a general rule for any basis of states
+- [01:27:53,366 - 01:27:53,926] Okay,
+- [01:27:53,926 - 01:27:54,486] now
+- [01:27:56,106 - 01:27:56,826] Let's see,
+- [01:27:56,826 - 01:27:57,246] I just
+- [01:27:57,246 - 01:28:00,946] I'm just trying to remember which way I did this
+- [01:28:11,566 - 01:28:12,566] That's a true statement
+- [01:28:12,566 - 01:28:16,486] But what I actually wanted was a different statement
+- [01:28:17,746 - 01:28:19,266] It is a true statement
+- [01:28:19,266 - 01:28:22,166] But what I actually wanted was
+- [01:28:35,605 - 01:28:36,406] This statement
+- [01:28:38,065 - 01:28:38,966] Sum over i
+- [01:28:41,665 - 01:28:42,466] As usual,
+- [01:28:42,466 - 01:28:45,126] about this time at night I start making mistakes
+- [01:28:45,126 - 01:28:47,086] And I was just about to make a mistake,
+- [01:28:47,086 - 01:28:48,046] but I caught myself
+- [01:28:48,585 - 01:28:49,626] What are these i's,
+- [01:28:49,626 - 01:28:49,926] do you remember?
+- [01:28:52,406 - 01:28:53,826] They're the one particle states
+- [01:28:53,826 - 01:28:55,446] The ones which look like this
+- [01:28:57,246 - 01:28:57,606] Psi 1,
+- [01:28:57,606 - 01:28:59,166] psi 2,
+- [01:28:59,166 - 01:29:00,546] psi 3,
+- [01:29:00,546 - 01:29:01,466] psi 4,
+- [01:29:01,466 - 01:29:02,226] and psi 5,
+- [01:29:02,226 - 01:29:02,846] and so forth
+- [01:29:02,846 - 01:29:04,906] They are a complete,
+- [01:29:04,906 - 01:29:06,306] they're the energy eigenstates
+- [01:29:06,306 - 01:29:08,666] They are a complete set of states
+- [01:29:09,146 - 01:29:10,426] If I take all the
+- [01:29:10,426 - 01:29:11,706] signs that can fit into here,
+- [01:29:11,706 - 01:29:12,346] for example
+- [01:29:12,946 - 01:29:13,746] Sine of x,
+- [01:29:13,746 - 01:29:14,426] sine of 2x,
+- [01:29:14,426 - 01:29:15,146] sine of 3x,
+- [01:29:15,146 - 01:29:15,886] sine of 4x
+- [01:29:16,626 - 01:29:18,246] That's a complete set of states
+- [01:29:19,466 - 01:29:21,326] Each one of these i's here
+- [01:29:22,026 - 01:29:25,706] Is a state whose wave function is psi i
+- [01:29:27,606 - 01:29:29,926] But the psi i's are a complete set of states
+- [01:29:29,926 - 01:29:31,606] And so it follows
+- [01:29:32,146 - 01:29:34,886] That this expression here is just the unit operator
+- [01:29:36,666 - 01:29:39,386] This is true for any complete basis of states
+- [01:29:39,386 - 01:29:40,816] You can go back to your quantum
+- [01:29:40,816 - 01:29:42,246] mechanics and you'll remember what this means
+- [01:29:43,045 - 01:29:43,526] Now
+- [01:29:50,065 - 01:29:51,026] That means
+- [01:29:51,886 - 01:29:53,386] This is a little bit of trickery,
+- [01:29:53,386 - 01:29:55,346] but there's nothing deep going on here
+- [01:29:55,346 - 01:29:56,866] The sum over i
+- [01:29:57,646 - 01:29:58,966] Of i i
+- [01:30:00,606 - 01:30:01,506] That's an operator
+- [01:30:02,006 - 01:30:02,866] That's the unit operator,
+- [01:30:02,866 - 01:30:03,586] it's trivial
+- [01:30:03,586 - 01:30:04,586] It's a unit operator
+- [01:30:05,146 - 01:30:08,106] And what happens if I apply it
+- [01:30:08,106 - 01:30:10,096] To a state in which the
+- [01:30:10,096 - 01:30:12,086] particle is known to be at x
+- [01:30:12,086 - 01:30:12,986] What do I get?
+- [01:30:13,146 - 01:30:15,126] I get a particle at x
+- [01:30:15,866 - 01:30:16,846] I've done nothing
+- [01:30:16,846 - 01:30:19,846] I've just rewritten the particle at position x
+- [01:30:22,526 - 01:30:23,586] On the other hand,
+- [01:30:23,586 - 01:30:24,906] what is this object over here?
+- [01:30:27,246 - 01:30:27,766] A coefficient
+- [01:30:28,586 - 01:30:29,146] Well,
+- [01:30:29,146 - 01:30:30,426] it's a coefficient,
+- [01:30:30,426 - 01:30:30,846] alright
+- [01:30:30,846 - 01:30:32,566] But it's also a wave function
+- [01:30:32,566 - 01:30:33,326] Do I have it?
+- [01:30:33,326 - 01:30:33,686] Yes,
+- [01:30:33,686 - 01:30:34,546] it's a wave function
+- [01:30:35,286 - 01:30:36,746] It's the wave function
+- [01:30:37,786 - 01:30:38,346] Of
+- [01:30:38,946 - 01:30:40,766] The state i
+- [01:30:41,966 - 01:30:45,246] The inner product of a particle at x
+- [01:30:46,006 - 01:30:47,726] With the state vector i
+- [01:30:48,206 - 01:30:48,846] Is just
+- [01:30:48,846 - 01:30:50,986] Is it psi or is it psi star?
+- [01:30:51,246 - 01:30:51,826] Anybody know?
+- [01:30:52,046 - 01:30:52,726] I know
+- [01:30:54,226 - 01:30:55,466] Happens to be psi star
+- [01:30:55,466 - 01:30:57,126] Happens to be psi star
+- [01:30:57,785 - 01:30:58,426] So,
+- [01:30:58,426 - 01:30:59,946] this can also be written
+- [01:31:00,466 - 01:31:01,866] As the sum over i
+- [01:31:03,526 - 01:31:04,526] Psi star
+- [01:31:07,185 - 01:31:09,206] Of i of x
+- [01:31:10,845 - 01:31:12,226] Times the state i
+- [01:31:15,666 - 01:31:18,786] That's a particle located at point x
+- [01:31:19,526 - 01:31:21,446] Now let me slow down here and
+- [01:31:22,426 - 01:31:24,266] Get any question about this
+- [01:31:24,266 - 01:31:26,926] Because I'm sure this must be a little bit confusing
+- [01:31:28,826 - 01:31:30,106] This is the unit operator
+- [01:31:30,106 - 01:31:33,746] We apply it on a state located at x
+- [01:31:33,746 - 01:31:35,786] And it gives us a state located at x
+- [01:31:35,786 - 01:31:37,446] On the other hand,
+- [01:31:37,446 - 01:31:38,866] this inner product
+- [01:31:38,866 - 01:31:40,286] Of a particle at x
+- [01:31:40,286 - 01:31:41,866] With the wave function psi
+- [01:31:41,866 - 01:31:43,106] Or the state vector psi
+- [01:31:43,106 - 01:31:44,926] Is just psi star of i
+- [01:31:44,926 - 01:31:45,946] It's just a wave function
+- [01:31:47,486 - 01:31:48,046] Okay?
+- [01:31:52,086 - 01:31:53,746] But what about this
+- [01:31:53,746 - 01:31:55,226] What about the state here?
+- [01:31:56,686 - 01:31:57,766] That state
+- [01:31:57,766 - 01:31:59,486] Is a one particle
+- [01:31:59,486 - 01:32:00,706] Is one particle
+- [01:32:02,326 - 01:32:03,546] With wave function
+- [01:32:03,546 - 01:32:04,866] Psi i
+- [01:32:04,866 - 01:32:06,686] I can write it another way
+- [01:32:06,686 - 01:32:08,646] I can write it another way
+- [01:32:08,646 - 01:32:10,226] I can write it as follows
+- [01:32:15,126 - 01:32:15,726] i
+- [01:32:15,726 - 01:32:16,486] Is
+- [01:32:19,686 - 01:32:20,626] Is equal
+- [01:32:20,626 - 01:32:22,346] Is equal
+- [01:32:22,346 - 01:32:23,746] To a plus i
+- [01:32:24,376 - 01:32:25,446] On the vacuum
+- [01:32:26,196 - 01:32:28,246] The vacuum has no particles in it
+- [01:32:30,306 - 01:32:32,206] If I create a particle
+- [01:32:32,206 - 01:32:33,286] In the state i
+- [01:32:33,286 - 01:32:35,386] Then indeed I have a particle at i
+- [01:32:35,386 - 01:32:37,786] I have a particle in the state i
+- [01:32:38,486 - 01:32:40,566] So I can substitute for this
+- [01:32:40,566 - 01:32:43,286] I can substitute a plus
+- [01:32:46,666 - 01:32:47,426] i
+- [01:32:48,385 - 01:32:49,366] On the vacuum
+- [01:32:58,166 - 01:32:58,926] No,
+- [01:32:58,926 - 01:33:00,086] one particle
+- [01:33:00,086 - 01:33:02,426] One particle
+- [01:33:02,426 - 01:33:04,466] This is one particle
+- [01:33:04,466 - 01:33:05,866] In the state i
+- [01:33:07,206 - 01:33:08,026] That's all,
+- [01:33:08,026 - 01:33:08,726] just one particle
+- [01:33:10,386 - 01:33:14,826] And it gives me a particle
+- [01:33:14,826 - 01:33:16,186] At position x
+- [01:33:17,045 - 01:33:18,406] But wait a second
+- [01:33:18,406 - 01:33:20,566] The thing that I wrote down here
+- [01:33:21,705 - 01:33:25,086] Is exactly the quantum field psi dagger
+- [01:33:26,365 - 01:33:28,966] So we can now write this in another form
+- [01:33:28,966 - 01:33:32,006] We can write a particle at position x
+- [01:33:33,006 - 01:33:34,946] Is psi dagger
+- [01:33:35,486 - 01:33:37,686] At position x
+- [01:33:39,006 - 01:33:40,586] On the vacuum
+- [01:33:44,885 - 01:33:46,466] So now we know what psi is
+- [01:33:46,486 - 01:33:47,046] And what psi dagger is
+- [01:33:47,806 - 01:33:51,906] It's an operator which creates a particle at position x
+- [01:33:53,246 - 01:33:54,606] If we have no particles
+- [01:33:54,606 - 01:33:56,646] And we want to create a particle
+- [01:33:56,646 - 01:33:58,266] We want to change the number of particles
+- [01:33:58,266 - 01:34:00,266] By adding one at position x
+- [01:34:01,226 - 01:34:01,786] Then
+- [01:34:01,786 - 01:34:03,686] The way to do it
+- [01:34:03,686 - 01:34:05,426] Is to apply psi dagger
+- [01:34:05,426 - 01:34:06,646] To the vacuum
+- [01:34:07,386 - 01:34:09,226] Creates a particle at position x
+- [01:34:10,466 - 01:34:11,906] What if we wanted to
+- [01:34:11,906 - 01:34:13,346] create another particle at position y
+- [01:34:14,226 - 01:34:16,286] Well it's not too hard to work out
+- [01:34:16,486 - 01:34:18,126] But what do you expect?
+- [01:34:18,266 - 01:34:18,766] You expect
+- [01:34:19,926 - 01:34:23,226] Just hit it with the field operator
+- [01:34:23,226 - 01:34:25,106] We'll call this the field operator now
+- [01:34:25,106 - 01:34:26,466] Or the creation,
+- [01:34:26,466 - 01:34:28,486] the field operator
+- [01:34:30,626 - 01:34:33,446] We just hit it with another side dagger
+- [01:34:33,446 - 01:34:34,786] But at position y
+- [01:34:35,826 - 01:34:37,686] So whatever the state is
+- [01:34:37,686 - 01:34:39,146] If you want to add
+- [01:34:39,146 - 01:34:40,606] a particle at a particular location
+- [01:34:41,426 - 01:34:43,686] That's the job of the quantum field
+- [01:34:45,106 - 01:34:46,426] It's a function of x
+- [01:34:46,486 - 01:34:46,946] Y
+- [01:34:47,486 - 01:34:48,046] No,
+- [01:34:48,046 - 01:34:48,526] not y
+- [01:34:49,326 - 01:34:49,606] Ooh
+- [01:34:50,886 - 01:34:53,226] It's a function of x because
+- [01:34:53,226 - 01:34:56,186] It has to know where to put the particle
+- [01:34:57,786 - 01:35:00,086] It's an operator that puts a particle at x
+- [01:35:00,086 - 01:35:02,586] It's not the operator that puts the particle at y
+- [01:35:02,586 - 01:35:05,706] So it must be itself a function of x
+- [01:35:06,426 - 01:35:06,866] That's what
+- [01:35:07,246 - 01:35:09,146] In a simple situation
+- [01:35:09,146 - 01:35:11,686] In a simple situation that we're working on now
+- [01:35:12,406 - 01:35:14,546] That's the meaning of the quantum field
+- [01:35:14,546 - 01:35:19,106] It creates a particle at position x
+- [01:35:19,106 - 01:35:22,326] The creation and annihilation operators
+- [01:35:22,326 - 01:35:26,466] Create particles in the energy eigenstates
+- [01:35:29,986 - 01:35:34,786] You apply a dagger to the vacuum
+- [01:35:34,786 - 01:35:36,466] And you get a particle
+- [01:35:36,466 - 01:35:37,866] Not at position i,
+- [01:35:37,866 - 01:35:38,846] that doesn't mean anything
+- [01:35:38,846 - 01:35:40,846] But in the wave function i
+- [01:35:40,846 - 01:35:43,606] Sines and cosines and so forth
+- [01:35:44,246 - 01:35:45,606] That's the meaning of a plus
+- [01:35:45,606 - 01:35:47,576] On the other hand when you
+- [01:35:47,576 - 01:35:49,546] combine them together into the quantum field
+- [01:35:49,546 - 01:35:53,486] The quantum field creates a particle at position x
+- [01:35:55,046 - 01:35:57,526] What do you think the annihilation operator
+- [01:35:57,526 - 01:35:59,006] What do you think the other piece does
+- [01:36:01,646 - 01:36:03,866] That removes a particle at x
+- [01:36:03,866 - 01:36:04,766] If there's one there
+- [01:36:05,666 - 01:36:06,846] What if there's none there
+- [01:36:08,886 - 01:36:10,586] Then it annihilates the state
+- [01:36:11,826 - 01:36:12,346] So
+- [01:36:12,346 - 01:36:15,806] So psi dagger creates a particle at position x
+- [01:36:15,806 - 01:36:17,246] Whether or not there's one there
+- [01:36:19,526 - 01:36:21,666] Psi annihilates a particle at x
+- [01:36:21,666 - 01:36:24,846] Or gives zero if there's no particle there
+- [01:36:24,846 - 01:36:26,126] Question please
+- [01:36:26,126 - 01:36:28,706] Where is the information
+- [01:36:28,706 - 01:36:31,946] What kind of particle could be created buried in
+- [01:36:31,946 - 01:36:34,086] It should be in the little a plus
+- [01:36:34,086 - 01:36:34,826] First of all
+- [01:36:34,826 - 01:36:37,806] First of all we're talking about bosons
+- [01:36:38,146 - 01:36:40,026] If you get fermions you don't do them this way
+- [01:36:40,026 - 01:36:40,646] Which bosons?
+- [01:36:40,646 - 01:36:41,086] Right
+- [01:36:41,646 - 01:36:44,766] There's a separate quantum field for each species of boson
+- [01:36:45,606 - 01:36:48,386] So what kind of bosons are there in the world
+- [01:36:48,386 - 01:36:49,526] There's photons
+- [01:36:50,506 - 01:36:52,026] There's gravitons
+- [01:36:52,646 - 01:36:54,126] There are Higgs bosons
+- [01:36:54,605 - 01:36:55,626] There are gluons
+- [01:36:56,466 - 01:36:59,346] For each species of boson
+- [01:36:59,346 - 01:37:01,896] There is a separate quantum field
+- [01:37:01,896 - 01:37:04,446] that creates that kind of particle
+- [01:37:04,446 - 01:37:06,326] In this manner
+- [01:37:06,326 - 01:37:07,806] Right
+- [01:37:08,806 - 01:37:10,586] So the particle is
+- [01:37:10,646 - 01:37:12,336] Is it being created with
+- [01:37:12,336 - 01:37:14,026] a delta function probability distribution
+- [01:37:14,556 - 01:37:15,546] By psi of x
+- [01:37:15,546 - 01:37:16,526] That's right
+- [01:37:17,416 - 01:37:17,706] Right
+- [01:37:18,376 - 01:37:19,266] That's exactly right
+- [01:37:19,266 - 01:37:19,706] So
+- [01:37:21,086 - 01:37:21,666] Right
+- [01:37:22,446 - 01:37:23,306] Excuse me
+- [01:37:23,306 - 01:37:24,846] So if there's nothing
+- [01:37:24,846 - 01:37:26,906] If there's no particle at position x
+- [01:37:27,646 - 01:37:30,006] Then psi of x does nothing?
+- [01:37:30,206 - 01:37:31,486] No it gives zero
+- [01:37:31,486 - 01:37:33,246] What does give zero mean?
+- [01:37:33,446 - 01:37:34,446] The same thing that when
+- [01:37:34,446 - 01:37:36,566] When an annihilation operator hits a
+- [01:37:36,566 - 01:37:38,686] state with no particle in it
+- [01:37:38,686 - 01:37:40,546] Or when the annihilation operator hits the
+- [01:37:40,646 - 01:37:41,766] The ground state
+- [01:37:41,766 - 01:37:42,086] Yeah
+- [01:37:42,086 - 01:37:42,826] Gives zero
+- [01:37:43,586 - 01:37:44,526] It's doing nothing
+- [01:37:44,526 - 01:37:45,066] No
+- [01:37:45,066 - 01:37:45,266] No?
+- [01:37:45,266 - 01:37:46,146] It's giving zero
+- [01:37:46,746 - 01:37:47,586] Giving zero
+- [01:37:47,586 - 01:37:47,926] What is
+- [01:37:47,926 - 01:37:49,326] Thinking of it
+- [01:37:49,326 - 01:37:51,086] In terms of particles and positions
+- [01:37:51,546 - 01:37:51,806] No
+- [01:37:51,806 - 01:37:52,846] If there's nothing at that position
+- [01:37:52,846 - 01:37:54,046] What does it mean to give zero
+- [01:37:54,046 - 01:37:55,966] To a position I guess
+- [01:37:55,966 - 01:37:57,986] You started with a vacuum
+- [01:37:57,986 - 01:37:59,206] The vacuum is not zero
+- [01:37:59,206 - 01:38:00,406] Oh no
+- [01:38:00,406 - 01:38:01,466] The vacuum is a state
+- [01:38:01,466 - 01:38:04,226] It's a normalized state whose length is one
+- [01:38:04,966 - 01:38:05,966] It's a good state
+- [01:38:05,966 - 01:38:07,466] There's nothing wrong with it
+- [01:38:07,466 - 01:38:07,926] It's there
+- [01:38:07,926 - 01:38:08,366] It's a
+- [01:38:08,366 - 01:38:10,006] But it has properties
+- [01:38:10,746 - 01:38:13,066] The properties are those of empty space
+- [01:38:13,066 - 01:38:15,626] When an annihilation operator hits it
+- [01:38:15,626 - 01:38:17,746] It literally gives zero
+- [01:38:17,746 - 01:38:18,846] The zero vector
+- [01:38:18,846 - 01:38:20,146] The vector of zero length
+- [01:38:20,746 - 01:38:23,126] Now I can understand what that is
+- [01:38:24,126 - 01:38:25,606] How can you have a zero
+- [01:38:25,606 - 01:38:28,586] Zero is the unique and only vector
+- [01:38:28,586 - 01:38:30,366] That if you add it to any other vector
+- [01:38:30,366 - 01:38:31,506] You get the same one back
+- [01:38:33,466 - 01:38:35,206] It's a vector in a vector space
+- [01:38:35,206 - 01:38:36,526] Go back to vector spaces
+- [01:38:36,526 - 01:38:39,926] Vector spaces have in them zero vectors
+- [01:38:41,246 - 01:38:45,226] Zero vectors are vectors of zero length
+- [01:38:47,746 - 01:38:48,746] It's not interesting
+- [01:38:48,746 - 01:38:49,806] It doesn't have any properties
+- [01:38:49,806 - 01:38:50,666] It's just a
+- [01:38:50,666 - 01:38:51,386] It doesn't describe
+- [01:38:51,386 - 01:38:53,006] It doesn't describe anything
+- [01:38:53,006 - 01:38:54,866] It doesn't describe physically the thing itself
+- [01:38:54,866 - 01:38:56,126] It doesn't describe physically anything
+- [01:38:56,726 - 01:38:57,466] It's just
+- [01:38:57,466 - 01:38:59,266] If you add vacuum you get something else
+- [01:38:59,766 - 01:39:00,026] Hm
+- [01:39:00,786 - 01:39:03,706] So if you add the zero state
+- [01:39:03,706 - 01:39:05,086] To the vacuum
+- [01:39:05,086 - 01:39:05,806] You get the same thing
+- [01:39:05,806 - 01:39:07,406] What if you add the vacuum
+- [01:39:07,406 - 01:39:09,206] Oh you certainly don't get the
+- [01:39:09,206 - 01:39:11,786] If you add the vacuum
+- [01:39:12,886 - 01:39:14,766] Let's say to a one particle state
+- [01:39:15,406 - 01:39:16,686] Then you get a state
+- [01:39:17,206 - 01:39:17,866] Which has
+- [01:39:17,866 - 01:39:19,846] Let's say you add it with equal coefficients
+- [01:39:19,846 - 01:39:20,926] Just to be simple
+- [01:39:20,926 - 01:39:22,226] Then you get a state
+- [01:39:22,226 - 01:39:24,066] That has a probability of a half
+- [01:39:24,066 - 01:39:24,946] Of having a particle
+- [01:39:24,946 - 01:39:26,026] And a probability of half
+- [01:39:26,026 - 01:39:27,006] Not having a particle
+- [01:39:28,046 - 01:39:29,006] You see the
+- [01:39:29,006 - 01:39:31,906] If you add the zero state
+- [01:39:31,906 - 01:39:32,706] Not the vacuum
+- [01:39:32,706 - 01:39:34,146] To a one particle state
+- [01:39:34,146 - 01:39:35,606] You just get the one particle state
+- [01:39:36,166 - 01:39:38,726] If you add the vacuum to the one particle state
+- [01:39:38,726 - 01:39:39,486] You get something
+- [01:39:39,486 - 01:39:41,326] That has a statistical probability
+- [01:39:41,326 - 01:39:44,766] Of let's say a half to have a particle
+- [01:39:44,766 - 01:39:46,446] And a statistical probability
+- [01:39:46,446 - 01:39:47,766] To not have a particle
+- [01:39:49,085 - 01:39:50,406] Zero cannot be normalized
+- [01:39:51,425 - 01:39:53,246] Zero cannot be normalized
+- [01:39:53,246 - 01:39:55,966] Zero cannot be normalized
+- [01:39:55,966 - 01:39:56,366] Zero cannot be normalized
+- [01:39:56,366 - 01:39:57,546] It is definitely not normalized
+- [01:39:57,546 - 01:39:58,826] It's of zero length
+- [01:39:58,826 - 01:40:00,886] The one thing that you can't normalize
+- [01:40:00,886 - 01:40:02,186] Is a vector of zero length
+- [01:40:02,186 - 01:40:03,186] Right
+- [01:40:03,186 - 01:40:06,246] The vacuum is not a vector of zero length
+- [01:40:06,246 - 01:40:07,006] It
+- [01:40:07,006 - 01:40:07,486] It
+- [01:40:08,546 - 01:40:09,946] For a little bit of time
+- [01:40:09,946 - 01:40:12,046] People generally get confused
+- [01:40:12,046 - 01:40:13,086] By the notation
+- [01:40:15,726 - 01:40:17,266] This looks like it's zero
+- [01:40:17,266 - 01:40:18,326] But it's not zero
+- [01:40:18,326 - 01:40:19,186] It's just a name
+- [01:40:19,186 - 01:40:20,186] The zero here
+- [01:40:20,926 - 01:40:22,126] Does not mean
+- [01:40:22,126 - 01:40:23,906] That it's a vector of zero length
+- [01:40:23,906 - 01:40:25,286] It does not mean
+- [01:40:25,286 - 01:40:26,746] That if you add it to another vector
+- [01:40:26,746 - 01:40:28,026] You get back the same vector
+- [01:40:28,026 - 01:40:29,486] It's just the name of the vector
+- [01:40:29,486 - 01:40:30,946] And it represents
+- [01:40:30,946 - 01:40:32,806] A perfectly good physical state
+- [01:40:32,806 - 01:40:33,886] It happens to be a state
+- [01:40:33,886 - 01:40:35,106] With no particles in it
+- [01:40:35,106 - 01:40:36,486] But it's a state
+- [01:40:36,486 - 01:40:37,466] So
+- [01:40:37,486 - 01:40:38,186] It's empty space
+- [01:40:38,186 - 01:40:38,986] But it's a state
+- [01:40:38,986 - 01:40:40,726] So we could have put a half in there
+- [01:40:40,726 - 01:40:41,566] You could
+- [01:40:41,566 - 01:40:42,746] You know you could have called it
+- [01:40:42,746 - 01:40:43,286] Um
+- [01:40:45,226 - 01:40:45,666] Right
+- [01:40:45,666 - 01:40:47,526] You know
+- [01:40:47,526 - 01:40:48,826] You could have called it
+- [01:40:48,826 - 01:40:49,366] George Bush
+- [01:40:49,366 - 01:40:50,386] Or whatever you want to call it
+- [01:40:50,386 - 01:40:51,006] It doesn't matter
+- [01:40:51,966 - 01:40:53,486] Once you've annihilated it
+- [01:40:53,486 - 01:40:54,566] We're talking about annihilation
+- [01:40:54,566 - 01:40:54,766] No
+- [01:40:54,766 - 01:40:56,586] Once you've annihilated the vacuum
+- [01:40:56,586 - 01:40:57,886] You can't create anything
+- [01:40:57,886 - 01:40:58,606] That it gives
+- [01:40:58,606 - 01:40:59,006] Right
+- [01:40:59,926 - 01:41:01,186] We won't talk about
+- [01:41:01,186 - 01:41:01,846] Annihilation
+- [01:41:01,846 - 01:41:02,526] And George Bush
+- [01:41:02,526 - 01:41:02,826] In this
+- [01:41:02,826 - 01:41:03,466] Yeah
+- [01:41:04,366 - 01:41:04,806] Once
+- [01:41:04,806 - 01:41:05,086] That's right
+- [01:41:05,086 - 01:41:06,186] Once you've annihilated it
+- [01:41:06,186 - 01:41:07,226] You can't put anything back
+- [01:41:07,226 - 01:41:07,466] So
+- [01:41:07,466 - 01:41:07,866] You know
+- [01:41:07,866 - 01:41:08,266] It's just
+- [01:41:08,266 - 01:41:09,166] It's just zero
+- [01:41:09,166 - 01:41:10,086] It's literally zero
+- [01:41:10,086 - 01:41:10,506] Right
+- [01:41:11,066 - 01:41:11,586] Right
+- [01:41:12,146 - 01:41:14,746] Any operator that acts on the zero vector
+- [01:41:14,746 - 01:41:16,146] Just gives back the zero vector
+- [01:41:16,146 - 01:41:17,426] Doesn't give anything interesting
+- [01:41:18,306 - 01:41:18,826] Right
+- [01:41:19,386 - 01:41:20,046] You know
+- [01:41:20,046 - 01:41:20,686] It's like
+- [01:41:21,246 - 01:41:22,506] One minus one is zero
+- [01:41:23,466 - 01:41:24,546] Take any vector
+- [01:41:24,546 - 01:41:26,166] And subtract it from the same vector
+- [01:41:26,166 - 01:41:26,846] And you get zero
+- [01:41:27,606 - 01:41:29,346] If you add zero to any number
+- [01:41:29,346 - 01:41:30,386] You get the same number
+- [01:41:30,386 - 01:41:31,766] Add the vector zero to
+- [01:41:31,766 - 01:41:32,146] You know
+- [01:41:32,146 - 01:41:32,406] Here
+- [01:41:35,286 - 01:41:36,386] Here's the zero vector
+- [01:41:36,386 - 01:41:36,906] Right there
+- [01:41:36,906 - 01:41:37,446] So
+- [01:41:37,446 - 01:41:37,646] We're talking about
+- [01:41:37,646 - 01:41:38,106] Has no length
+- [01:41:39,106 - 01:41:40,626] The vacuum on the other hand
+- [01:41:40,626 - 01:41:41,706] Has a length of one
+- [01:41:42,226 - 01:41:43,806] As a vector in the vector space
+- [01:41:45,106 - 01:41:45,586] Normalized
+- [01:41:49,326 - 01:41:50,286] Not easy
+- [01:41:50,286 - 01:41:51,286] Not easy
+- [01:41:53,186 - 01:41:54,146] Not easy
+- [01:41:54,146 - 01:41:55,246] But you get used to it
+- [01:41:56,566 - 01:41:57,926] On the left board
+- [01:41:57,926 - 01:41:59,006] The lower sum
+- [01:41:59,006 - 01:41:59,666] Yeah
+- [01:41:59,666 - 01:42:01,746] Does the order of those operators
+- [01:42:01,746 - 01:42:02,226] No
+- [01:42:02,226 - 01:42:02,726] No
+- [01:42:02,726 - 01:42:03,046] This
+- [01:42:03,046 - 01:42:04,266] Only this is an operator
+- [01:42:05,186 - 01:42:06,406] At each point x
+- [01:42:06,406 - 01:42:07,306] This is just an ordinary
+- [01:42:07,306 - 01:42:07,426] Number
+- [01:42:08,366 - 01:42:10,366] Doesn't matter which order you put it in
+- [01:42:12,166 - 01:42:13,106] Numbers times operators
+- [01:42:13,106 - 01:42:14,566] Are operators times numbers
+- [01:42:15,246 - 01:42:15,526] Right
+- [01:42:16,206 - 01:42:17,786] So just think of psi of x
+- [01:42:18,266 - 01:42:19,726] As a collection of numbers
+- [01:42:19,726 - 01:42:21,386] One for each x
+- [01:42:24,826 - 01:42:25,386] Right
+- [01:42:25,386 - 01:42:25,625] So the
+- [01:42:25,625 - 01:42:26,006] Complex numbers
+- [01:42:26,006 - 01:42:26,266] Hmm
+- [01:42:26,266 - 01:42:27,286] Complex numbers
+- [01:42:27,286 - 01:42:28,706] In general complex numbers
+- [01:42:28,706 - 01:42:29,045] Yeah
+- [01:42:29,045 - 01:42:29,466] Yeah
+- [01:42:29,466 - 01:42:30,886] They will in general be complex numbers
+- [01:42:31,626 - 01:42:33,726] That of course depends on the solutions
+- [01:42:33,726 - 01:42:34,826] To the Schrodinger equation
+- [01:42:34,826 - 01:42:36,286] Whether it's real or complex
+- [01:42:36,286 - 01:42:36,986] But that's right
+- [01:42:36,986 - 01:42:37,366] Yeah
+- [01:42:37,366 - 01:42:37,406] So
+- [01:42:37,406 - 01:42:39,125] Yeah I think this to me that
+- [01:42:39,125 - 01:42:44,605] The quantum field description of a particle
+- [01:42:44,605 - 01:42:47,726] Is you basically do a creation operator
+- [01:42:47,726 - 01:42:48,806] On the vacuum space
+- [01:42:48,806 - 01:42:51,506] How would you define a second particle
+- [01:42:51,506 - 01:42:54,706] By applying again another
+- [01:42:55,746 - 01:42:58,065] You want to put a particle in a position y
+- [01:42:58,065 - 01:42:58,866] On top of this
+- [01:42:58,866 - 01:43:00,926] A phi star to the
+- [01:43:00,926 - 01:43:01,145] Yeah
+- [01:43:01,145 - 01:43:02,366] Left of it
+- [01:43:02,366 - 01:43:02,986] Yeah
+- [01:43:04,226 - 01:43:06,605] If you wanted to put another particle
+- [01:43:06,605 - 01:43:07,366] At position y
+- [01:43:09,906 - 01:43:12,085] Okay let's make a two particle state
+- [01:43:12,085 - 01:43:12,906] Good
+- [01:43:13,886 - 01:43:15,486] Let's make a two particle state
+- [01:43:15,486 - 01:43:16,206] And make
+- [01:43:16,206 - 01:43:18,526] And one more observation about it
+- [01:43:20,266 - 01:43:21,746] Here's a two particle state
+- [01:43:31,626 - 01:43:33,566] This is a particle at x
+- [01:43:33,566 - 01:43:34,726] And a particle at y
+- [01:43:36,266 - 01:43:37,386] Now x and y are two particles
+- [01:43:37,406 - 01:43:38,786] So x and y could be the same point
+- [01:43:38,786 - 01:43:41,106] Or they could be different points
+- [01:43:41,106 - 01:43:44,046] Let me point one thing out
+- [01:43:44,046 - 01:43:45,286] One interesting fact
+- [01:43:46,745 - 01:43:50,506] The size are made out of
+- [01:43:51,546 - 01:43:52,866] Annihilation operators
+- [01:43:52,866 - 01:43:55,306] There are no creation operators
+- [01:43:55,306 - 01:43:56,386] In here at all
+- [01:43:56,386 - 01:44:00,346] Every annihilation operator commutes
+- [01:44:00,346 - 01:44:03,086] With every other annihilation operator
+- [01:44:04,285 - 01:44:05,126] Okay
+- [01:44:05,886 - 01:44:08,846] Wait is side dagger a creation operator
+- [01:44:09,886 - 01:44:10,166] No
+- [01:44:11,986 - 01:44:13,386] I'm sorry did I make a mistake
+- [01:44:13,386 - 01:44:13,946] Yeah
+- [01:44:14,606 - 01:44:15,166] Yeah
+- [01:44:15,166 - 01:44:15,466] Yeah
+- [01:44:15,466 - 01:44:15,946] Right
+- [01:44:16,946 - 01:44:18,686] Side dagger is a creation operator
+- [01:44:18,686 - 01:44:19,346] Of course
+- [01:44:20,186 - 01:44:21,746] But still it's true
+- [01:44:21,746 - 01:44:23,126] That every creation operator
+- [01:44:23,126 - 01:44:24,086] This is the important thing
+- [01:44:24,086 - 01:44:25,746] It wasn't whether it was creation or annihilation
+- [01:44:25,746 - 01:44:28,186] Each one commutes with every other one
+- [01:44:29,326 - 01:44:29,886] Okay
+- [01:44:30,686 - 01:44:33,506] Every operator in here creates
+- [01:44:34,546 - 01:44:35,106] Annihilation operators
+- [01:44:35,106 - 01:44:36,906] Every operator in here commutes
+- [01:44:36,906 - 01:44:38,186] With every operator in here
+- [01:44:38,786 - 01:44:41,046] That means side dagger of y
+- [01:44:41,046 - 01:44:43,586] And side dagger of x commute
+- [01:44:44,426 - 01:44:47,306] Let's call this the state with a particle
+- [01:44:48,106 - 01:44:50,106] At y and x
+- [01:44:55,705 - 01:44:58,366] Well this is also equal to
+- [01:44:59,846 - 01:45:02,006] Side dagger of x
+- [01:45:02,006 - 01:45:05,466] Times side of y
+- [01:45:06,606 - 01:45:07,566] On o
+- [01:45:09,146 - 01:45:09,746] Dagger
+- [01:45:10,386 - 01:45:10,986] Dagger
+- [01:45:10,986 - 01:45:12,006] Thank you I'm losing it
+- [01:45:12,006 - 01:45:14,406] And that's equal to the state
+- [01:45:14,406 - 01:45:17,126] With a particle at x
+- [01:45:17,126 - 01:45:18,646] And a particle at y
+- [01:45:20,406 - 01:45:22,166] Notice they're equal to each other
+- [01:45:22,166 - 01:45:26,166] They're equal as a consequence of the fact
+- [01:45:26,166 - 01:45:27,006] That these commute
+- [01:45:29,006 - 01:45:29,606] Alright
+- [01:45:29,606 - 01:45:31,106] The fact that these commute
+- [01:45:31,106 - 01:45:31,986] Because they're built out of a state
+- [01:45:32,006 - 01:45:33,506] Of oscillators in a certain way
+- [01:45:34,266 - 01:45:36,306] Tells us that it doesn't matter
+- [01:45:36,306 - 01:45:39,126] Which order we put the part
+- [01:45:39,126 - 01:45:41,206] Which order we write the particles in here
+- [01:45:41,206 - 01:45:42,346] In other words
+- [01:45:43,126 - 01:45:44,366] Particle one at y
+- [01:45:44,366 - 01:45:45,686] Particle two at x
+- [01:45:45,686 - 01:45:47,886] Is the same as particle one at x
+- [01:45:47,886 - 01:45:48,926] Particle two at y
+- [01:45:48,926 - 01:45:51,946] That's the defining property of bosons
+- [01:45:52,786 - 01:45:55,146] That it doesn't matter which order
+- [01:45:55,146 - 01:45:56,766] You express them
+- [01:45:56,766 - 01:45:58,026] A particle
+- [01:45:58,026 - 01:45:58,946] Particle
+- [01:45:58,946 - 01:46:01,946] Harry over here and Jeffrey over here
+- [01:46:01,946 - 01:46:03,366] Is the same as Jeffrey over here
+- [01:46:03,366 - 01:46:04,946] And Harry over there
+- [01:46:04,946 - 01:46:07,326] So that's fully equivalent to symmetrization?
+- [01:46:07,566 - 01:46:09,026] It's fully equivalent to symmetrization
+- [01:46:09,846 - 01:46:11,526] And it tells you that the particles
+- [01:46:11,526 - 01:46:13,166] Are most definitely bosons
+- [01:46:13,926 - 01:46:14,946] So I didn't have
+- [01:46:14,946 - 01:46:17,066] I didn't really have to say from the beginning
+- [01:46:17,586 - 01:46:19,346] Well we're going to study bosons
+- [01:46:19,346 - 01:46:20,886] I could have started with this construction
+- [01:46:20,886 - 01:46:22,586] And we would have derived
+- [01:46:22,586 - 01:46:25,506] That the particles studied this way are bosons
+- [01:46:25,986 - 01:46:27,646] So the interesting question is
+- [01:46:27,646 - 01:46:29,446] Well how the hell then do you make fermions?
+- [01:46:30,166 - 01:46:30,646] Yeah
+- [01:46:31,526 - 01:46:32,666] That's more abstract
+- [01:46:32,666 - 01:46:34,956] So does this imply that x and
+- [01:46:34,956 - 01:46:37,246] y are the same kind of bosons?
+- [01:46:37,486 - 01:46:38,186] X and y?
+- [01:46:38,326 - 01:46:39,486] X and y are positions
+- [01:46:40,686 - 01:46:41,246] Yeah,
+- [01:46:41,246 - 01:46:41,866] yeah,
+- [01:46:41,866 - 01:46:42,046] yeah
+- [01:46:42,046 - 01:46:43,386] They're the same kind of bosons
+- [01:46:43,386 - 01:46:44,046] That's right
+- [01:46:44,046 - 01:46:45,766] They're the same kind of bosons
+- [01:46:45,766 - 01:46:48,366] So a given quantum field
+- [01:46:49,146 - 01:46:51,406] Describes one type of particle
+- [01:46:51,406 - 01:46:53,626] There's a quantum field for photons
+- [01:46:53,626 - 01:46:56,546] Well actually there are two quantum fields for photons
+- [01:46:56,546 - 01:46:58,086] Because of the two polarizations
+- [01:46:58,726 - 01:46:59,966] There's a quantum field
+- [01:47:00,646 - 01:47:02,606] Let's say a photon is along some axis
+- [01:47:02,606 - 01:47:05,066] There's a quantum field for the photons
+- [01:47:06,166 - 01:47:07,186] Polarized one way
+- [01:47:07,186 - 01:47:08,946] Another quantum field for the photons
+- [01:47:08,946 - 01:47:10,066] Polarized the other way
+- [01:47:10,646 - 01:47:12,426] There's a quantum field for
+- [01:47:13,546 - 01:47:15,606] Each different type of particle
+- [01:47:17,386 - 01:47:19,006] There's a separate quantum field
+- [01:47:20,526 - 01:47:23,126] And if you want to make that kind of particle
+- [01:47:23,126 - 01:47:26,626] You apply that quantum field
+- [01:47:26,626 - 01:47:28,226] So that's what a quantum field is
+- [01:47:29,946 - 01:47:30,626] Or at least
+- [01:47:30,646 - 01:47:34,266] In its simplest incarnation
+- [01:47:34,266 - 01:47:36,946] And I assure you this is the simplest
+- [01:47:37,746 - 01:47:41,526] But the basic concept
+- [01:47:41,526 - 01:47:42,446] Or the connection
+- [01:47:42,446 - 01:47:43,686] You see what we're doing is
+- [01:47:43,686 - 01:47:44,826] We're talking about the connection
+- [01:47:44,826 - 01:47:46,426] Between particles and fields
+- [01:47:48,346 - 01:47:51,106] Here is the connection between particles and fields
+- [01:47:51,106 - 01:47:52,066] This is the field
+- [01:47:54,386 - 01:47:56,046] When you apply it to the vacuum
+- [01:47:56,046 - 01:47:57,146] You create a particle
+- [01:47:59,366 - 01:48:01,906] You define the field to be this
+- [01:48:01,906 - 01:48:02,966] You define
+- [01:48:02,966 - 01:48:03,686] Yes that's right
+- [01:48:03,686 - 01:48:04,466] We defined it
+- [01:48:05,146 - 01:48:06,786] But once we've defined it
+- [01:48:06,786 - 01:48:08,426] It's an operator
+- [01:48:09,146 - 01:48:11,006] If we add it to its complex conjugate
+- [01:48:11,006 - 01:48:12,226] It's a Hermitian operator
+- [01:48:12,936 - 01:48:14,586] Hermitian operators are observables
+- [01:48:14,586 - 01:48:16,406] All of a sudden it takes on a life
+- [01:48:16,896 - 01:48:18,386] As something that we can measure
+- [01:48:20,546 - 01:48:23,806] And do all the things with observables that we do
+- [01:48:24,706 - 01:48:27,126] So to all the properties of the field
+- [01:48:27,126 - 01:48:30,346] Come out of these creation and annihilation operators
+- [01:48:30,346 - 01:48:30,826] Yes
+- [01:48:30,826 - 01:48:31,806] Yes
+- [01:48:31,806 - 01:48:33,686] None of this would be interesting
+- [01:48:33,686 - 01:48:35,666] If we were talking about a situation
+- [01:48:35,666 - 01:48:38,846] Where you could not create and annihilate particles
+- [01:48:38,846 - 01:48:41,766] The whole point of this
+- [01:48:41,766 - 01:48:43,886] Well I take
+- [01:48:43,886 - 01:48:47,606] Let me say a little less strongly
+- [01:48:48,066 - 01:48:49,406] None of this would be interesting
+- [01:48:49,886 - 01:48:52,046] If we were only working
+- [01:48:52,046 - 01:48:55,826] In a context where there were 37 particles
+- [01:48:55,826 - 01:48:56,786] Never 36
+- [01:48:56,786 - 01:48:57,886] Never 45
+- [01:48:57,886 - 01:48:59,126] But 37 particles
+- [01:48:59,126 - 01:48:59,866] End of story
+- [01:48:59,866 - 01:49:01,066] We wouldn't do this
+- [01:49:01,826 - 01:49:04,576] If we're interested in studying
+- [01:49:04,576 - 01:49:07,326] the whole set of possibilities
+- [01:49:07,326 - 01:49:08,966] Of any number of particles
+- [01:49:08,966 - 01:49:10,846] Then this is a good tool
+- [01:49:10,846 - 01:49:12,146] But even better
+- [01:49:12,366 - 01:49:13,926] When we're studying the possibility
+- [01:49:13,926 - 01:49:17,666] Of the number of particles itself being ambiguous
+- [01:49:17,666 - 01:49:20,326] Meaning to say a statistical variable
+- [01:49:20,326 - 01:49:21,746] A quantum mechanical variable
+- [01:49:21,746 - 01:49:25,146] We can study states in which there's a superposition
+- [01:49:25,146 - 01:49:26,626] Of different numbers of particles
+- [01:49:27,146 - 01:49:28,046] No particle
+- [01:49:28,046 - 01:49:28,726] One particle
+- [01:49:28,726 - 01:49:29,446] Two particles
+- [01:49:30,146 - 01:49:32,106] And these have real meaning
+- [01:49:32,846 - 01:49:34,426] An electromagnetic wave
+- [01:49:34,426 - 01:49:35,926] A laser wave is like that
+- [01:49:35,926 - 01:49:40,526] A laser wave is not a definite number of particles
+- [01:49:40,526 - 01:49:41,726] It's a superposition
+- [01:49:42,426 - 01:49:43,026] One,
+- [01:49:43,026 - 01:49:43,266] two,
+- [01:49:43,266 - 01:49:43,646] three
+- [01:49:43,646 - 01:49:44,206] Zero,
+- [01:49:44,206 - 01:49:44,566] one,
+- [01:49:44,566 - 01:49:44,826] two,
+- [01:49:44,826 - 01:49:45,106] three
+- [01:49:45,106 - 01:49:46,826] And good
+- [01:49:46,826 - 01:49:47,326] Okay
+- [01:49:47,326 - 01:49:48,646] Now we're finished for tonight
+- [01:49:51,026 - 01:49:51,926] For more
+- [01:49:51,926 - 01:49:53,226] Please visit us at
+- [01:49:53,226 - 01:49:54,386] Stanford.edu
+- [01:49:55,146 - 01:49:55,526] The Interdimensional Fermi Laboratory
