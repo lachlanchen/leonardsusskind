@@ -1,0 +1,2641 @@
+# Transcript
+
+Source: core/statistical_mechanics/2013_spring_modern_physics/071 - Lecture 7 ｜ Modern Physics： Statistical Mechanics [cU7bj4dNMwY].mkv
+
+- [00:00:04,720 - 00:00:06,120] Stanford University.
+- [00:00:08,020 - 00:00:13,680] The last time we discussed both the classical,
+- [00:00:13,680 - 00:00:14,340] I think,
+- [00:00:14,340 - 00:00:15,920] and the quantum mechanical
+- [00:00:15,920 - 00:00:17,500] description of harmonic oscillators.
+- [00:00:17,920 - 00:00:20,230] And we found classically that
+- [00:00:20,230 - 00:00:22,540] every harmonic oscillator has an energy
+- [00:00:23,580 - 00:00:25,910] which is independent of its
+- [00:00:25,910 - 00:00:28,240] frequency and equal to the temperature.
+- [00:00:28,240 - 00:00:30,480] In thermal equilibrium.
+- [00:00:33,760 - 00:00:36,060] We calculated the partition function,
+- [00:00:36,060 - 00:00:39,080] and we calculated the average energy
+- [00:00:39,080 - 00:00:42,750] of any harmonic oscillator and found out
+- [00:00:42,750 - 00:00:46,420] that the energy was just equal to T.
+- [00:00:47,580 - 00:00:48,800] When I say T,
+- [00:00:48,800 - 00:00:51,570] it would be the textbook
+- [00:00:51,570 - 00:00:54,340] KT equals what I call temperature.
+- [00:00:55,600 - 00:00:56,320] Alright,
+- [00:00:56,320 - 00:00:58,220] that's a true statement.
+- [00:00:59,000 - 00:01:01,180] It led to this puzzle
+- [00:01:01,180 - 00:01:03,360] about molecules which have little oscillators.
+- [00:01:03,560 - 00:01:06,340] How come in a very low temperatures,
+- [00:01:06,340 - 00:01:10,800] also the molecules don't exhibit this energy,
+- [00:01:10,960 - 00:01:11,900] because it's not there.
+- [00:01:12,080 - 00:01:15,180] We know that the molecule will not
+- [00:01:15,180 - 00:01:18,280] exhibit internal energy at very low temperatures.
+- [00:01:18,640 - 00:01:19,950] And we found out that the
+- [00:01:19,950 - 00:01:21,260] answer had to do with quantum mechanics.
+- [00:01:23,440 - 00:01:25,440] Instead of the energy being
+- [00:01:25,440 - 00:01:27,440] equal to T in quantum mechanics,
+- [00:01:28,340 - 00:01:29,540] we found out,
+- [00:01:29,540 - 00:01:30,120] well,
+- [00:01:30,120 - 00:01:31,140] let's just go through it.
+- [00:01:31,180 - 00:01:32,040] I'll go through it very briefly.
+- [00:01:33,020 - 00:01:35,860] There's some points here that are worth emphasizing.
+- [00:01:36,520 - 00:01:41,760] The energy levels of the quantum mechanical oscillator
+- [00:01:41,760 - 00:01:47,000] are E sub N equals H bar omega N.
+- [00:01:48,260 - 00:01:50,380] We can drop this ground state energy,
+- [00:01:50,380 - 00:01:51,200] it's not important,
+- [00:01:51,200 - 00:01:52,300] or put it in.
+- [00:01:52,500 - 00:01:53,580] It doesn't matter,
+- [00:01:53,580 - 00:01:54,920] it won't make any difference to anything.
+- [00:01:55,740 - 00:01:56,260] Incidentally,
+- [00:01:56,260 - 00:01:57,680] there's an interesting point here.
+- [00:01:59,860 - 00:02:04,760] The uncertainty principle is a correct principle,
+- [00:02:04,940 - 00:02:07,400] but you can think of it a little more broadly.
+- [00:02:08,280 - 00:02:12,760] Any given quantum state always corresponds.
+- [00:02:13,540 - 00:02:14,100] Now,
+- [00:02:14,100 - 00:02:15,860] I'm using the word correspond loosely,
+- [00:02:15,860 - 00:02:17,070] and I'm not going to
+- [00:02:17,070 - 00:02:18,280] tell you precisely what it means,
+- [00:02:18,500 - 00:02:21,660] but it corresponds to a little patch in phase space,
+- [00:02:21,660 - 00:02:24,700] X and P.
+- [00:02:26,200 - 00:02:28,220] It corresponds to a little patch in phase space,
+- [00:02:28,220 - 00:02:28,220] X and P.
+- [00:02:28,220 - 00:02:28,800] It corresponds to a little patch in phase space,
+- [00:02:28,800 - 00:02:32,240] where the area of that
+- [00:02:32,240 - 00:02:35,680] patch is equal to Planck's constant,
+- [00:02:35,820 - 00:02:37,480] and maybe it's Planck's constant over 2,
+- [00:02:37,480 - 00:02:38,660] I don't remember offhand.
+- [00:02:38,940 - 00:02:40,180] And it's not a question
+- [00:02:40,180 - 00:02:41,420] of greater than or equal to.
+- [00:02:41,620 - 00:02:42,680] It is equal,
+- [00:02:42,680 - 00:02:45,740] any given quantum state,
+- [00:02:45,740 - 00:02:47,760] to a patch of size H bar,
+- [00:02:47,800 - 00:02:50,380] of area in the phase space equal to H bar.
+- [00:02:51,220 - 00:02:51,700] Now,
+- [00:02:51,700 - 00:02:53,780] if the area is a little circle,
+- [00:02:54,380 - 00:02:58,200] that's sort of the most tightly knit kind of thing,
+- [00:02:58,200 - 00:02:58,880] that's a kind of quantum state,
+- [00:02:59,100 - 00:03:02,120] then a little circle in phase space,
+- [00:03:02,500 - 00:03:04,520] then clearly delta X and delta
+- [00:03:04,520 - 00:03:06,540] P will be equal to each other,
+- [00:03:07,140 - 00:03:08,220] and delta X,
+- [00:03:08,220 - 00:03:11,560] delta P will equal H bar,
+- [00:03:11,740 - 00:03:13,700] will be proportional to H bar.
+- [00:03:14,760 - 00:03:16,690] If the size of the area of
+- [00:03:16,690 - 00:03:18,620] the circle is of order H bar,
+- [00:03:18,820 - 00:03:20,120] and I'll use the term of order,
+- [00:03:20,120 - 00:03:21,420] of order H bar,
+- [00:03:21,980 - 00:03:23,700] then if we take a
+- [00:03:23,700 - 00:03:25,420] nice little symmetric disk like this,
+- [00:03:27,040 - 00:03:28,480] then delta X times delta P
+- [00:03:28,480 - 00:03:29,920] will be equal to H bar.
+- [00:03:30,480 - 00:03:33,360] There are other quantum states which have the same area,
+- [00:03:33,560 - 00:03:37,040] which might look like ellipses.
+- [00:03:38,100 - 00:03:38,600] Again,
+- [00:03:38,600 - 00:03:40,060] for an ellipse like this,
+- [00:03:40,760 - 00:03:42,520] if delta X times delta
+- [00:03:42,520 - 00:03:44,280] P is equal to H bar,
+- [00:03:45,380 - 00:03:46,680] or if the,
+- [00:03:46,680 - 00:03:47,320] sorry,
+- [00:03:47,320 - 00:03:48,810] if the area of this
+- [00:03:48,810 - 00:03:50,300] patch is equal to H bar,
+- [00:03:50,580 - 00:03:51,420] then again,
+- [00:03:51,420 - 00:03:52,700] delta X times delta P
+- [00:03:52,700 - 00:03:53,980] will be equal to H bar.
+- [00:03:53,980 - 00:03:56,480] But then there are much more peculiar states.
+- [00:03:56,820 - 00:03:57,820] There are states,
+- [00:03:57,820 - 00:04:00,320] quantum states,
+- [00:04:02,299 - 00:04:05,220] which correspond to the area H bar,
+- [00:04:05,960 - 00:04:07,340] but which are spread out
+- [00:04:07,340 - 00:04:08,720] in some other kind of way.
+- [00:04:09,100 - 00:04:09,680] Uh,
+- [00:04:09,680 - 00:04:14,500] like that.
+- [00:04:16,940 - 00:04:19,380] The properties of the quantum state
+- [00:04:19,980 - 00:04:22,680] can be identified with a patch of phase space
+- [00:04:22,680 - 00:04:25,180] whose area is equal to H bar,
+- [00:04:25,400 - 00:04:28,200] but it's quite apparent for this kind of configuration,
+- [00:04:28,680 - 00:04:31,580] this snaky kind of configuration whose area is H bar,
+- [00:04:31,760 - 00:04:35,980] that delta P times delta X
+- [00:04:36,680 - 00:04:39,620] is really greater than H bar.
+- [00:04:39,900 - 00:04:44,400] Delta P means the spread in momentum.
+- [00:04:44,740 - 00:04:47,420] Delta X means the spread in X.
+- [00:04:48,500 - 00:04:51,240] And if you don't keep the configuration
+- [00:04:51,240 - 00:04:55,640] tightly knit into some circle or ellipse or rectangle
+- [00:04:55,640 - 00:04:56,720] or something like that,
+- [00:04:56,800 - 00:04:58,770] but let it get spread out
+- [00:04:58,770 - 00:05:00,740] into this kind of snaky configuration,
+- [00:05:01,440 - 00:05:03,550] then you can take a quantum
+- [00:05:03,550 - 00:05:05,660] state which occupies area H bar
+- [00:05:06,420 - 00:05:09,700] and nevertheless make it have delta X and delta P
+- [00:05:09,700 - 00:05:12,420] such that the product is greater than H bar.
+- [00:05:17,260 - 00:05:17,780] So,
+- [00:05:17,780 - 00:05:18,960] it's kind of interesting,
+- [00:05:19,080 - 00:05:20,420] and I'm going to give you an example now.
+- [00:05:22,000 - 00:05:25,040] An example where this is useful in thinking,
+- [00:05:25,200 - 00:05:26,340] it's the harmonic oscillator.
+- [00:05:31,940 - 00:05:34,280] Let's just take the Hamiltonian to be
+- [00:05:34,280 - 00:05:36,620] P squared plus X squared over 2.
+- [00:05:37,340 - 00:05:39,840] I don't want to introduce any constants into here.
+- [00:05:40,520 - 00:05:41,840] It just makes it simpler.
+- [00:05:42,860 - 00:05:44,180] And the ground state,
+- [00:05:44,900 - 00:05:48,020] the ground state is this wave function
+- [00:05:48,020 - 00:05:49,660] or this probability distribution,
+- [00:05:49,660 - 00:05:52,760] which is concentrated at the center,
+- [00:05:54,040 - 00:05:57,720] and it has an area H bar.
+- [00:05:57,960 - 00:06:00,360] Delta X times delta P is H bar.
+- [00:06:01,000 - 00:06:01,520] Now,
+- [00:06:01,520 - 00:06:03,020] what about the first excited state?
+- [00:06:03,920 - 00:06:05,400] The first excited state,
+- [00:06:05,460 - 00:06:06,920] if you think about a harmonic oscillator,
+- [00:06:07,240 - 00:06:09,360] harmonic oscillators oscillate,
+- [00:06:09,380 - 00:06:12,020] and they oscillate in both momentum and position.
+- [00:06:12,960 - 00:06:15,310] And if you think about the way
+- [00:06:15,310 - 00:06:17,660] the phase point moves in phase space classically,
+- [00:06:17,760 - 00:06:19,240] it moves in circles.
+- [00:06:19,859 - 00:06:22,880] When the circle is projected onto the horizontal axis,
+- [00:06:23,080 - 00:06:24,980] you have the ordinary oscillation of position.
+- [00:06:25,320 - 00:06:27,500] When it's projected onto the vertical axis,
+- [00:06:27,720 - 00:06:29,940] you have the oscillation of the velocity or the momentum.
+- [00:06:31,400 - 00:06:35,040] The next excited state represents a harmonic oscillator
+- [00:06:35,040 - 00:06:37,180] with a little bit of increased energy
+- [00:06:37,180 - 00:06:40,060] moving around in a semi-classical
+- [00:06:40,060 - 00:06:42,360] and an approximate classical description in a circle,
+- [00:06:43,620 - 00:06:49,160] and so it occupies a little ring of phase space.
+- [00:06:49,780 - 00:06:51,200] But how big is that ring
+- [00:06:51,200 - 00:06:52,620] or how thick is that ring?
+- [00:06:52,840 - 00:06:55,540] That ring must be such that the
+- [00:06:55,540 - 00:06:58,240] area is again equal to H bar.
+- [00:06:59,380 - 00:07:03,120] The next excited state is
+- [00:07:03,120 - 00:07:06,860] another ring of area H bar.
+- [00:07:07,260 - 00:07:08,780] As you move out,
+- [00:07:09,440 - 00:07:10,720] as you move out,
+- [00:07:10,760 - 00:07:12,100] the width,
+- [00:07:12,100 - 00:07:14,110] since the total area of each
+- [00:07:14,110 - 00:07:16,120] state is equal to H bar,
+- [00:07:16,760 - 00:07:18,780] as you move out further and further,
+- [00:07:18,780 - 00:07:22,340] the thickness or the thickness of the annular ring
+- [00:07:22,340 - 00:07:25,260] describing each quantum state does get thinner and thinner,
+- [00:07:25,940 - 00:07:28,380] but the area stays the same.
+- [00:07:35,240 - 00:07:38,620] What's the radius of the nth circle here?
+- [00:07:38,880 - 00:07:39,980] Anybody figure that out?
+- [00:07:41,400 - 00:07:43,260] If we take the nth circle,
+- [00:07:43,260 - 00:07:45,640] what...
+- [00:07:46,560 - 00:07:48,240] H bar is the area.
+- [00:07:48,780 - 00:07:49,220] Now,
+- [00:07:49,220 - 00:07:49,840] nH bar,
+- [00:07:49,840 - 00:07:50,220] yeah,
+- [00:07:50,220 - 00:07:52,860] nH bar is the area of...
+- [00:07:52,860 - 00:07:53,300] Yeah,
+- [00:07:53,300 - 00:07:53,780] nH...
+- [00:07:54,340 - 00:07:54,820] Wait.
+- [00:07:55,580 - 00:07:57,720] H bar is the area of the circle,
+- [00:07:58,859 - 00:08:00,540] of the annular ring.
+- [00:08:01,600 - 00:08:02,080] Okay.
+- [00:08:02,280 - 00:08:02,660] All together,
+- [00:08:02,660 - 00:08:04,200] nH bar is the total area.
+- [00:08:04,420 - 00:08:04,720] Yeah.
+- [00:08:04,820 - 00:08:06,060] And then divide by the number.
+- [00:08:07,420 - 00:08:07,900] Well,
+- [00:08:07,900 - 00:08:09,080] I'll tell you what the answer is.
+- [00:08:09,840 - 00:08:10,800] The answer,
+- [00:08:10,800 - 00:08:11,420] I believe,
+- [00:08:11,420 - 00:08:13,740] is the square root of n
+- [00:08:14,700 - 00:08:15,560] is the...
+- [00:08:15,560 - 00:08:19,660] is the radius of the circle,
+- [00:08:19,800 - 00:08:21,120] the square root of n.
+- [00:08:21,340 - 00:08:21,720] Okay.
+- [00:08:22,160 - 00:08:23,680] So the radius of the circle
+- [00:08:23,680 - 00:08:25,200] here is the square root of n,
+- [00:08:26,900 - 00:08:29,020] the square root of the nth circle,
+- [00:08:29,220 - 00:08:30,160] just fitting them together.
+- [00:08:30,580 - 00:08:31,060] Yeah,
+- [00:08:31,060 - 00:08:31,380] question.
+- [00:08:32,460 - 00:08:33,280] Is there a question?
+- [00:08:34,100 - 00:08:36,220] Does pi r squared have to be...
+- [00:08:36,220 - 00:08:37,140] There's pi r squares,
+- [00:08:37,140 - 00:08:37,580] but...
+- [00:08:39,380 - 00:08:39,860] Again?
+- [00:08:41,039 - 00:08:41,520] Oh,
+- [00:08:41,520 - 00:08:42,600] I think...
+- [00:08:42,600 - 00:08:43,000] No,
+- [00:08:43,000 - 00:08:44,100] we're just talking about...
+- [00:08:44,100 - 00:08:49,640] We're talking about the radius of an annular ring,
+- [00:08:49,840 - 00:08:51,580] the nth annular ring,
+- [00:08:55,780 - 00:08:59,920] such that each one butts up against the next one
+- [00:09:01,020 - 00:09:04,380] and gives you a disk of...
+- [00:09:05,680 - 00:09:06,940] of area n.
+- [00:09:07,140 - 00:09:07,380] Yeah,
+- [00:09:07,380 - 00:09:09,520] the area that there's n such...
+- [00:09:09,520 - 00:09:11,600] We're talking about the nth ring,
+- [00:09:12,199 - 00:09:14,880] each one has area h bar.
+- [00:09:15,899 - 00:09:18,640] So what is the area of the whole disk here?
+- [00:09:18,740 - 00:09:19,920] The whole area of the
+- [00:09:19,920 - 00:09:21,100] whole disk is proportional to n,
+- [00:09:21,660 - 00:09:23,940] but the area of the annular ring...
+- [00:09:23,940 - 00:09:24,060] All right,
+- [00:09:24,060 - 00:09:24,600] let's...
+- [00:09:24,600 - 00:09:24,860] Okay,
+- [00:09:24,860 - 00:09:25,340] let's do it.
+- [00:09:25,500 - 00:09:29,860] The area of the whole disk is n.
+- [00:09:30,100 - 00:09:33,500] So the area n times h bar.
+- [00:09:33,660 - 00:09:34,680] I just want to figure out
+- [00:09:34,680 - 00:09:35,700] whether it's n to the 1 half,
+- [00:09:35,880 - 00:09:36,820] n to the 3 quarters,
+- [00:09:36,820 - 00:09:37,520] what it is.
+- [00:09:37,760 - 00:09:39,740] The area of the whole thing is n,
+- [00:09:39,740 - 00:09:40,080] yes,
+- [00:09:40,080 - 00:09:40,800] times h bar.
+- [00:09:42,760 - 00:09:44,300] That's the area of the whole thing.
+- [00:09:44,800 - 00:09:49,540] And that's equal to pi r squared,
+- [00:09:49,820 - 00:09:51,900] where r is the radius
+- [00:09:51,900 - 00:09:53,980] of this disk in phase space,
+- [00:09:53,980 - 00:09:54,640] right?
+- [00:09:54,920 - 00:09:55,940] Pi r squared.
+- [00:09:56,280 - 00:09:56,840] All right,
+- [00:09:56,840 - 00:09:59,440] so that tells us that n h bar over pi,
+- [00:10:00,540 - 00:10:01,760] the square root,
+- [00:10:01,760 - 00:10:03,680] is equal to r.
+- [00:10:05,520 - 00:10:06,080] Now,
+- [00:10:06,080 - 00:10:06,640] what...
+- [00:10:07,220 - 00:10:09,800] What does that mean about the...
+- [00:10:10,380 - 00:10:10,820] Oh,
+- [00:10:10,820 - 00:10:13,480] that does it,
+- [00:10:13,480 - 00:10:13,820] doesn't it?
+- [00:10:13,860 - 00:10:16,110] That tells us that the radius
+- [00:10:16,110 - 00:10:18,360] of the annular ring out here,
+- [00:10:20,720 - 00:10:22,040] the nth annular ring,
+- [00:10:22,120 - 00:10:23,940] is proportional to the square root of n.
+- [00:10:24,100 - 00:10:24,980] That's the important thing.
+- [00:10:25,060 - 00:10:26,580] It's proportional to the square root of n.
+- [00:10:26,660 - 00:10:27,240] In fact,
+- [00:10:27,240 - 00:10:28,270] it's proportional to the square
+- [00:10:28,270 - 00:10:29,300] root of n times h bar.
+- [00:10:30,819 - 00:10:31,260] Now,
+- [00:10:31,260 - 00:10:34,580] what is this radius?
+- [00:10:35,380 - 00:10:37,340] If you look at this formula over here,
+- [00:10:38,000 - 00:10:38,890] you see that this radius is
+- [00:10:38,890 - 00:10:39,780] proportional to the square root of n.
+- [00:10:39,780 - 00:10:44,220] So the square of the radius is essentially the energy.
+- [00:10:44,380 - 00:10:45,740] The square of the radius,
+- [00:10:45,740 - 00:10:47,320] we can think of this as r squared,
+- [00:10:47,660 - 00:10:49,220] and it is just the energy,
+- [00:10:49,220 - 00:10:51,060] apart from a factor of 2.
+- [00:10:51,120 - 00:10:52,580] I'm being loose with factors of
+- [00:10:52,580 - 00:10:54,040] 2 and even with factors of pi.
+- [00:10:55,860 - 00:10:58,960] So p squared plus x squared is the energy,
+- [00:10:59,140 - 00:11:00,560] and that's equal to r squared.
+- [00:11:00,860 - 00:11:03,440] r is of order n h bar,
+- [00:11:04,540 - 00:11:08,600] so that means that the energy is of order...
+- [00:11:08,600 - 00:11:09,900] n h bar.
+- [00:11:10,000 - 00:11:10,840] n squared.
+- [00:11:12,340 - 00:11:12,620] No,
+- [00:11:12,620 - 00:11:12,940] no,
+- [00:11:12,940 - 00:11:13,080] no,
+- [00:11:13,080 - 00:11:13,260] no,
+- [00:11:13,260 - 00:11:13,400] no,
+- [00:11:13,400 - 00:11:13,460] no.
+- [00:11:13,600 - 00:11:17,660] r squared is just of order n h bar.
+- [00:11:21,820 - 00:11:25,680] So the quantization of energy can be just thought of
+- [00:11:26,380 - 00:11:28,250] as the uncertainty principle for
+- [00:11:28,250 - 00:11:30,120] the case of the harmonic oscillator,
+- [00:11:30,220 - 00:11:31,420] but the uncertainty principle
+- [00:11:32,260 - 00:11:34,520] not thought of as delta e,
+- [00:11:34,520 - 00:11:36,980] delta p greater than h bar,
+- [00:11:36,980 - 00:11:39,300] but a different kind of uncertainty principle,
+- [00:11:39,420 - 00:11:41,780] which tells you that every quantum state
+- [00:11:42,900 - 00:11:45,240] occupies a little region of phase space,
+- [00:11:45,420 - 00:11:47,500] which is of order h bar in area,
+- [00:11:50,020 - 00:11:51,560] but that doesn't mean that the
+- [00:11:51,560 - 00:11:53,100] shape has to be a little circle.
+- [00:11:53,280 - 00:11:53,880] In this case,
+- [00:11:53,880 - 00:11:54,980] the shape is annular rings.
+- [00:11:55,600 - 00:11:57,890] The uncertainty of delta x times
+- [00:11:57,890 - 00:12:00,180] delta p of these excited states
+- [00:12:00,180 - 00:12:01,580] is much bigger than h bar.
+- [00:12:02,020 - 00:12:05,420] If I take this nth excited state here
+- [00:12:05,420 - 00:12:06,930] and ask what is its
+- [00:12:06,930 - 00:12:08,440] delta x and its delta p,
+- [00:12:08,760 - 00:12:10,460] they're this big and that big,
+- [00:12:10,600 - 00:12:12,180] and it's much bigger than h bar.
+- [00:12:13,720 - 00:12:17,620] So that's a useful way to think about quantum mechanics,
+- [00:12:17,880 - 00:12:21,420] that quantum states are to be identified
+- [00:12:21,420 - 00:12:25,760] as patches of phase space whose area is h bar.
+- [00:12:26,320 - 00:12:29,200] Each one of these is a unique quantum state,
+- [00:12:30,420 - 00:12:30,940] distinguishable,
+- [00:12:30,940 - 00:12:31,460] discrete,
+- [00:12:32,940 - 00:12:35,080] and so in any one of these states,
+- [00:12:35,080 - 00:12:37,420] no matter how big delta x and delta p get,
+- [00:12:37,640 - 00:12:39,220] every single one of them
+- [00:12:39,220 - 00:12:40,800] is a unique definite quantum state,
+- [00:12:41,400 - 00:12:43,750] and if you know that the
+- [00:12:43,750 - 00:12:46,100] system is in that discrete quantum state,
+- [00:12:46,300 - 00:12:50,040] then the probability distribution in quantum states
+- [00:12:50,040 - 00:12:53,900] is just localized at one unique quantum state
+- [00:12:53,900 - 00:12:55,140] and the entropy is zero.
+- [00:12:59,939 - 00:13:01,620] In thermal equilibrium,
+- [00:13:01,620 - 00:13:02,260] of course,
+- [00:13:02,900 - 00:13:04,340] these different rings,
+- [00:13:05,080 - 00:13:06,740] have a probability distribution,
+- [00:13:06,980 - 00:13:08,060] and it's the Boltzmann distribution,
+- [00:13:08,500 - 00:13:10,380] and the entropy is whatever it is.
+- [00:13:11,140 - 00:13:11,440] All right,
+- [00:13:11,440 - 00:13:15,440] so I got sidetracked into an interesting discussion,
+- [00:13:16,079 - 00:13:19,140] but let's go back to the classical
+- [00:13:19,140 - 00:13:21,000] and the quantum mechanical harmonic oscillator.
+- [00:13:21,660 - 00:13:24,800] The classical harmonic oscillator up in the left-hand corner
+- [00:13:24,800 - 00:13:26,760] has energy E equals T.
+- [00:13:27,400 - 00:13:29,240] The quantum mechanical oscillator,
+- [00:13:29,480 - 00:13:30,560] did we write down the answer?
+- [00:13:31,740 - 00:13:32,300] Okay,
+- [00:13:32,300 - 00:13:33,220] let's write down the answer.
+- [00:13:33,220 - 00:13:35,940] The energy of the quantum mechanical oscillator
+- [00:13:36,560 - 00:13:38,540] is omega H bar.
+- [00:13:38,920 - 00:13:39,520] Oh,
+- [00:13:39,520 - 00:13:40,980] let's just go through again
+- [00:13:40,980 - 00:13:42,980] where it came from very quickly.
+- [00:13:43,300 - 00:13:45,340] We calculated the partition function.
+- [00:13:45,780 - 00:13:49,220] The partition function came from summing up
+- [00:13:49,220 - 00:13:51,080] over all the quantum states,
+- [00:13:51,240 - 00:13:53,900] which means summing up over all those annular rings,
+- [00:13:58,959 - 00:14:00,900] E to the minus beta.
+- [00:14:00,940 - 00:14:02,260] We start with the partition function,
+- [00:14:02,260 - 00:14:03,780] E to the minus beta times
+- [00:14:03,780 - 00:14:05,300] the energy of the nth level,
+- [00:14:06,020 - 00:14:08,260] which is H bar omega times n.
+- [00:14:09,500 - 00:14:10,960] That's a geometric sum.
+- [00:14:11,260 - 00:14:13,180] Let me just very quickly go through it.
+- [00:14:13,260 - 00:14:13,720] Sum,
+- [00:14:13,720 - 00:14:16,290] that's equal to one over one minus
+- [00:14:16,290 - 00:14:18,860] E to the minus beta H bar omega,
+- [00:14:19,100 - 00:14:22,060] or equal to E to the,
+- [00:14:22,200 - 00:14:22,980] that's good enough.
+- [00:14:23,220 - 00:14:26,100] That's a good way to express it.
+- [00:14:26,860 - 00:14:27,380] Okay,
+- [00:14:27,380 - 00:14:28,520] and then from that,
+- [00:14:28,560 - 00:14:31,780] we can calculate the energy of the oscillator,
+- [00:14:32,260 - 00:14:32,820] this is Z.
+- [00:14:34,900 - 00:14:36,640] Log Z we can calculate.
+- [00:14:36,860 - 00:14:38,680] Log Z is just a logarithm of this,
+- [00:14:38,740 - 00:14:42,300] and we can calculate the derivative of minus log Z
+- [00:14:42,300 - 00:14:43,980] with respect to beta.
+- [00:14:45,480 - 00:14:46,460] That's the energy,
+- [00:14:46,460 - 00:14:47,800] average energy of course,
+- [00:14:47,820 - 00:14:48,360] of the oscillator,
+- [00:14:49,100 - 00:14:52,840] and that's equal to omega H bar
+- [00:14:55,000 - 00:14:58,350] divided by E to the
+- [00:14:58,350 - 00:15:01,700] beta omega H bar minus one.
+- [00:15:03,680 - 00:15:06,000] The one coming from the one,
+- [00:15:06,040 - 00:15:06,340] you know,
+- [00:15:06,340 - 00:15:07,280] you see what it is.
+- [00:15:08,540 - 00:15:09,220] All right,
+- [00:15:09,220 - 00:15:09,940] so that's the energy,
+- [00:15:10,100 - 00:15:11,060] and if you look at it
+- [00:15:11,060 - 00:15:12,020] and stare at it for a minute,
+- [00:15:12,180 - 00:15:14,280] you realize that at high temperature,
+- [00:15:14,480 - 00:15:16,140] when beta is small,
+- [00:15:16,720 - 00:15:18,060] when beta is small,
+- [00:15:18,200 - 00:15:20,240] we can expand this exponential,
+- [00:15:20,480 - 00:15:22,100] it becomes one plus beta
+- [00:15:22,100 - 00:15:23,720] omega H bar in the denominator,
+- [00:15:24,020 - 00:15:27,020] minus one omega H bar,
+- [00:15:30,500 - 00:15:32,120] and one minus one,
+- [00:15:32,120 - 00:15:33,100] one cancels,
+- [00:15:35,720 - 00:15:37,600] omega H bar cancels,
+- [00:15:38,120 - 00:15:39,700] and the answer is one over beta,
+- [00:15:39,860 - 00:15:40,980] which is temperature.
+- [00:15:41,440 - 00:15:42,700] So at high temperatures,
+- [00:15:42,780 - 00:15:44,380] we reproduce the classical physics,
+- [00:15:44,640 - 00:15:46,080] but at low temperature,
+- [00:15:46,320 - 00:15:48,280] when beta is very large,
+- [00:15:49,940 - 00:15:51,520] when temperatures are low,
+- [00:15:51,660 - 00:15:52,720] beta is large,
+- [00:15:52,960 - 00:15:56,100] this exponent here is very large,
+- [00:15:56,260 - 00:15:57,220] you can forget the one,
+- [00:15:57,420 - 00:15:59,680] and the energy is just
+- [00:15:59,680 - 00:16:01,220] omega H bar
+- [00:16:02,199 - 00:16:04,720] e to the beta omega H bar,
+- [00:16:04,940 - 00:16:07,000] and that's extremely small.
+- [00:16:07,800 - 00:16:09,300] When beta is large,
+- [00:16:09,420 - 00:16:10,280] temperature is small,
+- [00:16:10,520 - 00:16:12,760] the energy is tremendously suppressed
+- [00:16:12,760 - 00:16:14,480] compared to the classical answer.
+- [00:16:15,880 - 00:16:16,980] So that's the solution,
+- [00:16:17,020 - 00:16:17,480] if you like,
+- [00:16:17,520 - 00:16:19,760] of the puzzle of what happens to the,
+- [00:16:19,900 - 00:16:20,720] to the
+- [00:16:25,939 - 00:16:28,540] classical energy stored in,
+- [00:16:29,160 - 00:16:30,040] at very,
+- [00:16:30,040 - 00:16:30,980] very low temperatures.
+- [00:16:30,980 - 00:16:33,700] It's much less than you would have gotten
+- [00:16:33,700 - 00:16:34,720] from classical physics.
+- [00:16:34,980 - 00:16:36,180] At high temperatures,
+- [00:16:36,460 - 00:16:37,080] they're the same,
+- [00:16:37,200 - 00:16:38,100] at low temperatures,
+- [00:16:39,320 - 00:16:42,060] it's very hard to excite the oscillations,
+- [00:16:42,080 - 00:16:42,480] basically.
+- [00:16:43,140 - 00:16:43,740] All right,
+- [00:16:43,740 - 00:16:44,220] one other thing,
+- [00:16:46,439 - 00:16:48,460] the n which appears here,
+- [00:16:48,600 - 00:16:50,100] we can just define,
+- [00:16:50,340 - 00:16:50,980] by definition,
+- [00:16:51,000 - 00:16:53,460] we will call it the number of quanta
+- [00:16:53,460 - 00:16:54,880] in that oscillator.
+- [00:16:55,820 - 00:16:57,340] We'll think of the oscillator
+- [00:16:57,980 - 00:17:00,960] as having an occupant,
+- [00:17:00,960 - 00:17:01,420] or occupation number,
+- [00:17:01,660 - 00:17:02,500] whatever that means.
+- [00:17:02,800 - 00:17:03,800] Just definition.
+- [00:17:04,119 - 00:17:05,579] The occupation number
+- [00:17:05,579 - 00:17:06,859] of the harmonic oscillator
+- [00:17:06,859 - 00:17:08,980] is just which of these rings
+- [00:17:08,980 - 00:17:10,099] you're on,
+- [00:17:10,260 - 00:17:12,579] or which quantum state,
+- [00:17:14,000 - 00:17:15,359] in the sense of
+- [00:17:15,359 - 00:17:17,520] how many units of energy
+- [00:17:17,520 - 00:17:19,339] does the quantum state have,
+- [00:17:19,579 - 00:17:23,160] units of energy in units of H bar omega.
+- [00:17:23,780 - 00:17:24,700] So that's,
+- [00:17:24,700 - 00:17:24,940] if you like,
+- [00:17:25,020 - 00:17:26,940] a definition of the number of quanta
+- [00:17:27,800 - 00:17:29,520] in that oscillation.
+- [00:17:31,020 - 00:17:32,900] The next thing we're going to come to
+- [00:17:32,900 - 00:17:35,020] is blackbody radiation.
+- [00:17:35,300 - 00:17:37,420] Blackbody radiation is a historical,
+- [00:17:37,700 - 00:17:40,100] of enormous historical importance,
+- [00:17:40,360 - 00:17:42,960] and of course it's also of importance
+- [00:17:42,960 - 00:17:43,660] in many,
+- [00:17:43,660 - 00:17:45,720] many other ways besides history,
+- [00:17:46,340 - 00:17:48,340] but it has a glorious history
+- [00:17:48,340 - 00:17:52,000] in being the origin of quantum mechanics,
+- [00:17:52,160 - 00:17:53,160] or the historical,
+- [00:17:53,160 - 00:17:53,600] yeah.
+- [00:17:55,140 - 00:17:57,960] Was this thought of as a paradox?
+- [00:17:58,600 - 00:17:58,900] Which?
+- [00:17:59,160 - 00:17:59,580] The,
+- [00:17:59,580 - 00:17:59,780] the,
+- [00:17:59,780 - 00:18:02,640] the fact that the,
+- [00:18:03,960 - 00:18:05,660] the classical result
+- [00:18:07,000 - 00:18:08,200] of the,
+- [00:18:08,200 - 00:18:08,820] of the,
+- [00:18:10,680 - 00:18:13,360] energy being equal to the temperature?
+- [00:18:13,820 - 00:18:14,300] Yes.
+- [00:18:14,860 - 00:18:15,460] Yes,
+- [00:18:15,460 - 00:18:16,240] but it wasn't,
+- [00:18:16,760 - 00:18:17,540] it wasn't,
+- [00:18:17,540 - 00:18:18,720] it was...
+- [00:18:18,720 - 00:18:19,200] What I'm wondering was,
+- [00:18:19,280 - 00:18:19,700] I mean,
+- [00:18:19,700 - 00:18:20,980] it could have been interpreted
+- [00:18:20,980 - 00:18:22,900] as a need for other physics
+- [00:18:23,940 - 00:18:25,140] at one time,
+- [00:18:25,140 - 00:18:25,440] you know.
+- [00:18:26,080 - 00:18:26,680] Okay.
+- [00:18:27,180 - 00:18:28,420] The answer is,
+- [00:18:28,420 - 00:18:29,860] I don't know the degree
+- [00:18:29,860 - 00:18:32,580] to which people actually are worried about that,
+- [00:18:32,660 - 00:18:33,700] about the molecular,
+- [00:18:33,840 - 00:18:35,680] you talk about the molecular internal motions.
+- [00:18:35,980 - 00:18:36,080] Right.
+- [00:18:37,100 - 00:18:40,200] I'm quite certain that they did worry about it,
+- [00:18:40,280 - 00:18:46,160] but remember that they knew very little
+- [00:18:46,160 - 00:18:47,920] about molecules at that time,
+- [00:18:49,200 - 00:18:52,400] and the whole idea of molecules
+- [00:18:52,400 - 00:18:54,520] had yet to be really established.
+- [00:18:55,340 - 00:18:58,400] So my own guess is that,
+- [00:18:58,420 - 00:18:58,760] yes,
+- [00:18:58,760 - 00:19:00,500] they knew about it,
+- [00:19:00,540 - 00:19:01,620] they worried about it,
+- [00:19:01,680 - 00:19:03,740] but it wasn't in the front burner
+- [00:19:03,740 - 00:19:07,900] the way that the black body radiation was.
+- [00:19:08,820 - 00:19:09,420] Radiation,
+- [00:19:09,420 - 00:19:10,940] they thought they knew everything about.
+- [00:19:11,400 - 00:19:12,420] Wave theory,
+- [00:19:12,660 - 00:19:14,000] electric and magnetic fields,
+- [00:19:14,300 - 00:19:15,920] they thought they really understood
+- [00:19:17,500 - 00:19:18,100] electromagnetism.
+- [00:19:19,500 - 00:19:20,520] And the puzzle,
+- [00:19:21,540 - 00:19:23,100] which was very similar,
+- [00:19:23,240 - 00:19:23,780] a very,
+- [00:19:23,780 - 00:19:24,580] very similar type,
+- [00:19:25,860 - 00:19:28,400] was that a box of radiation,
+- [00:19:29,639 - 00:19:31,240] by a box of radiation,
+- [00:19:31,700 - 00:19:33,400] I mean we take some cavity,
+- [00:19:37,140 - 00:19:38,180] I guess we would call it,
+- [00:19:38,800 - 00:19:40,140] with reflecting walls.
+- [00:19:40,560 - 00:19:40,880] Now,
+- [00:19:40,880 - 00:19:41,280] of course,
+- [00:19:41,280 - 00:19:43,200] we don't have perfectly reflecting walls,
+- [00:19:43,300 - 00:19:44,100] it doesn't matter much.
+- [00:19:44,260 - 00:19:44,880] In fact,
+- [00:19:44,880 - 00:19:45,620] it's even better
+- [00:19:45,620 - 00:19:47,020] if they're not perfectly reflecting,
+- [00:19:47,140 - 00:19:47,780] but they allow,
+- [00:19:47,920 - 00:19:49,600] they transmit some energy through them,
+- [00:19:50,160 - 00:19:51,340] then we can say
+- [00:19:51,340 - 00:19:52,740] that whatever's in the box
+- [00:19:52,740 - 00:19:54,840] will come to a thermal equilibrium on the outside,
+- [00:19:55,420 - 00:19:57,940] with the outside at a given temperature,
+- [00:19:58,120 - 00:19:58,380] and then we can say
+- [00:19:58,380 - 00:19:58,800] that whatever's in the box
+- [00:19:58,800 - 00:19:59,900] But what can be in the box?
+- [00:20:01,000 - 00:20:02,380] Radiation can be in the box.
+- [00:20:02,700 - 00:20:04,600] Radiation bouncing back and forth,
+- [00:20:04,800 - 00:20:07,980] waves of radiation bouncing back and forth,
+- [00:20:09,140 - 00:20:10,740] radiation of different wavelengths.
+- [00:20:12,620 - 00:20:13,220] Now,
+- [00:20:13,220 - 00:20:15,580] it was known from very early times,
+- [00:20:15,620 - 00:20:16,740] early times from,
+- [00:20:16,740 - 00:20:17,300] you know,
+- [00:20:17,300 - 00:20:18,660] from Maxwell theory and so forth,
+- [00:20:18,800 - 00:20:22,640] that the radiation inside a box
+- [00:20:22,640 - 00:20:23,640] could be thought of
+- [00:20:23,640 - 00:20:25,780] as a collection of harmonic oscillators.
+- [00:20:25,780 - 00:20:27,540] In the same sense
+- [00:20:27,540 - 00:20:30,500] that a vibrating guitar string,
+- [00:20:30,740 - 00:20:32,540] I always mean to bring my guitar in
+- [00:20:32,540 - 00:20:33,180] for this purpose,
+- [00:20:33,340 - 00:20:37,820] but like a vibrating guitar string
+- [00:20:39,340 - 00:20:40,840] can also be thought of
+- [00:20:40,840 - 00:20:42,640] as a system of harmonic oscillators,
+- [00:20:42,640 - 00:20:43,880] not a single harmonic oscillator.
+- [00:20:44,260 - 00:20:44,540] Hey,
+- [00:20:44,540 - 00:20:45,040] that's pretty good.
+- [00:20:45,920 - 00:20:47,520] Not a single harmonic oscillator,
+- [00:20:47,660 - 00:20:50,140] but it can vibrate in any one of its,
+- [00:20:50,300 - 00:20:50,960] ooh.
+- [00:20:56,679 - 00:20:57,080] Yeah,
+- [00:20:57,080 - 00:20:57,300] yeah,
+- [00:20:57,300 - 00:20:57,760] you get the point.
+- [00:20:58,060 - 00:21:00,600] This is the first mode of oscillation,
+- [00:21:01,699 - 00:21:03,040] and that's a harmonic oscillator.
+- [00:21:03,539 - 00:21:05,080] Completely independent of that,
+- [00:21:05,760 - 00:21:08,620] the system can vibrate in its second mode.
+- [00:21:08,780 - 00:21:08,860] Now,
+- [00:21:08,860 - 00:21:09,960] I'm not gonna try to make the,
+- [00:21:10,000 - 00:21:10,160] well,
+- [00:21:10,160 - 00:21:10,480] yeah,
+- [00:21:10,480 - 00:21:10,660] yeah,
+- [00:21:10,660 - 00:21:11,420] I can do the third mode.
+- [00:21:11,480 - 00:21:12,840] There's a third mode and so forth,
+- [00:21:14,199 - 00:21:16,600] and each one of these oscillations is separate,
+- [00:21:17,419 - 00:21:18,840] and the system is described
+- [00:21:18,840 - 00:21:21,720] by a collection of harmonic oscillations.
+- [00:21:23,879 - 00:21:24,880] Each harmonic oscillation,
+- [00:21:24,880 - 00:21:28,620] and this was not an invention of Einstein
+- [00:21:28,620 - 00:21:34,280] or this goes back to original wave theory,
+- [00:21:34,480 - 00:21:35,780] everything we knew about wave theory,
+- [00:21:35,880 - 00:21:36,740] not everything we knew,
+- [00:21:36,800 - 00:21:38,180] everything they knew about wave theory,
+- [00:21:39,500 - 00:21:41,420] that waves could be described
+- [00:21:41,420 - 00:21:43,000] as collections of oscillators,
+- [00:21:43,100 - 00:21:44,820] and in thermal equilibrium,
+- [00:21:46,380 - 00:21:48,120] each oscillator ought,
+- [00:21:48,260 - 00:21:51,180] according to classical thermodynamics,
+- [00:21:51,280 - 00:21:54,000] have an energy equal to kT.
+- [00:21:54,100 - 00:21:54,400] Okay?
+- [00:21:55,860 - 00:21:57,240] But there's an infinite number
+- [00:21:57,240 - 00:21:59,000] of possible modes of oscillation.
+- [00:21:59,060 - 00:22:00,780] I could only exhibit a handful,
+- [00:22:01,960 - 00:22:03,320] because I'm not clever enough
+- [00:22:03,320 - 00:22:05,100] to make this thing oscillate
+- [00:22:05,100 - 00:22:06,880] in arbitrarily short wavelengths,
+- [00:22:07,660 - 00:22:09,660] but there was no reason to believe
+- [00:22:10,380 - 00:22:13,300] that there was any cutoff
+- [00:22:13,300 - 00:22:16,280] in how short wavelengths could be.
+- [00:22:16,360 - 00:22:17,380] There is a cutoff
+- [00:22:17,380 - 00:22:19,840] on how long wavelengths can be inside a box.
+- [00:22:20,100 - 00:22:22,500] It doesn't make sense to think about a wave
+- [00:22:22,500 - 00:22:24,860] longer in wavelength than the size of it.
+- [00:22:26,420 - 00:22:28,100] Another way of saying it
+- [00:22:28,100 - 00:22:29,370] is if you have a
+- [00:22:29,370 - 00:22:30,640] guitar string of a certain length,
+- [00:22:31,240 - 00:22:33,500] there are not going to be waves
+- [00:22:33,500 - 00:22:35,880] of longer wavelength on that guitar string
+- [00:22:35,880 - 00:22:38,720] than the distance between the endpoints of the string,
+- [00:22:38,880 - 00:22:41,700] but there can be arbitrarily short wavelengths.
+- [00:22:42,060 - 00:22:42,540] Now,
+- [00:22:42,540 - 00:22:42,820] of course,
+- [00:22:42,820 - 00:22:43,940] for a real guitar string,
+- [00:22:44,040 - 00:22:45,060] it has a certain thickness,
+- [00:22:46,360 - 00:22:48,420] and there comes a point
+- [00:22:48,420 - 00:22:50,920] where you can't really make it oscillate
+- [00:22:50,920 - 00:22:51,280] with very,
+- [00:22:51,280 - 00:22:52,120] very short wavelengths.
+- [00:22:52,700 - 00:22:53,640] In particular,
+- [00:22:53,640 - 00:22:54,840] it doesn't make any sense
+- [00:22:54,840 - 00:22:56,160] to think about wavelengths
+- [00:22:56,160 - 00:22:59,060] shorter than the intermolecular spacing along the...
+- [00:23:00,340 - 00:23:01,020] So,
+- [00:23:01,020 - 00:23:02,240] for a guitar string,
+- [00:23:02,240 - 00:23:03,520] there's a natural cutoff.
+- [00:23:03,800 - 00:23:05,100] But for radiation,
+- [00:23:05,100 - 00:23:07,440] nobody knew any reason
+- [00:23:07,440 - 00:23:10,500] why there should be a smallest wavelength.
+- [00:23:11,380 - 00:23:12,460] And if not,
+- [00:23:12,460 - 00:23:14,880] then in thermal equilibrium,
+- [00:23:15,680 - 00:23:18,320] every single wavelength should have the same energy,
+- [00:23:18,320 - 00:23:19,040] kT,
+- [00:23:19,680 - 00:23:21,300] and the damn thing should have
+- [00:23:21,300 - 00:23:24,020] an infinite explosive amount of energy,
+- [00:23:25,540 - 00:23:27,200] simply because there's an infinite number
+- [00:23:27,200 - 00:23:28,840] of possible ways you can oscillate.
+- [00:23:29,720 - 00:23:30,560] Of course,
+- [00:23:30,560 - 00:23:31,560] most of these wavelengths
+- [00:23:31,560 - 00:23:32,360] would be very,
+- [00:23:32,360 - 00:23:33,260] very high frequency,
+- [00:23:35,500 - 00:23:36,580] but nevertheless,
+- [00:23:36,580 - 00:23:37,980] thermal equilibrium
+- [00:23:37,980 - 00:23:39,220] should populate them.
+- [00:23:39,300 - 00:23:40,740] The same way the thermal equil...
+- [00:23:40,740 - 00:23:43,380] thermal equilibrium should have populated
+- [00:23:43,380 - 00:23:45,620] the oscillations of a very stiff molecule,
+- [00:23:46,200 - 00:23:47,940] it should also have populated
+- [00:23:49,860 - 00:23:52,880] the oscillations of a very stiff string,
+- [00:23:53,060 - 00:23:53,580] for example,
+- [00:23:53,580 - 00:23:55,880] of very high frequency oscillations.
+- [00:23:56,140 - 00:23:58,020] So that was the real puzzle.
+- [00:23:58,440 - 00:24:02,460] People knew enough about electromagnetism
+- [00:24:02,460 - 00:24:04,180] that they had confidence in the theory,
+- [00:24:04,320 - 00:24:05,920] and the theory was failing.
+- [00:24:06,960 - 00:24:10,160] It was failing because it was an observed fact
+- [00:24:10,880 - 00:24:15,480] that the radiation inside a box
+- [00:24:15,480 - 00:24:17,940] was not infinite in energy.
+- [00:24:18,120 - 00:24:18,840] In fact,
+- [00:24:18,840 - 00:24:21,300] if you looked at the radiation
+- [00:24:21,300 - 00:24:22,540] that was in the box,
+- [00:24:22,540 - 00:24:23,800] you would discover,
+- [00:24:23,800 - 00:24:24,560] in fact,
+- [00:24:24,580 - 00:24:26,800] that there was a cutoff in its wavelength.
+- [00:24:27,700 - 00:24:28,900] The cutoff,
+- [00:24:28,900 - 00:24:31,280] in other words,
+- [00:24:31,300 - 00:24:32,200] a shortest wavelength
+- [00:24:33,140 - 00:24:35,260] that the box could oscillate at.
+- [00:24:35,560 - 00:24:36,880] So you might have said,
+- [00:24:37,000 - 00:24:37,360] okay,
+- [00:24:37,360 - 00:24:38,120] that just means
+- [00:24:39,300 - 00:24:42,240] that physics has some smallest length.
+- [00:24:43,120 - 00:24:44,600] We didn't expect that,
+- [00:24:44,700 - 00:24:45,460] something new,
+- [00:24:45,460 - 00:24:46,620] something entirely new,
+- [00:24:46,760 - 00:24:48,160] but still,
+- [00:24:48,160 - 00:24:50,180] it can be made to coexist
+- [00:24:50,180 - 00:24:52,000] with basic classical physics
+- [00:24:52,000 - 00:24:53,040] if we were to have said
+- [00:24:53,040 - 00:24:54,760] there was a smallest length.
+- [00:24:54,920 - 00:24:56,020] But it doesn't work that way.
+- [00:24:56,480 - 00:24:58,860] The smallest length wave,
+- [00:24:59,000 - 00:25:00,380] or oscillation,
+- [00:25:00,920 - 00:25:04,140] that's present in the thermal equilibrium
+- [00:25:04,900 - 00:25:06,020] of a box of radiation,
+- [00:25:06,300 - 00:25:07,440] that smallest wavelength,
+- [00:25:07,680 - 00:25:09,980] depends on temperature.
+- [00:25:12,160 - 00:25:14,320] How can the shortest distance in the world
+- [00:25:14,320 - 00:25:15,300] depend on the temperature?
+- [00:25:15,480 - 00:25:16,340] That doesn't make sense.
+- [00:25:18,220 - 00:25:21,180] So when a box of radiation was considered,
+- [00:25:21,180 - 00:25:22,260] and studied,
+- [00:25:23,020 - 00:25:23,620] and,
+- [00:25:23,620 - 00:25:23,960] you know,
+- [00:25:23,960 - 00:25:24,740] how do they do this?
+- [00:25:24,800 - 00:25:26,320] They let a little bit of radiation out
+- [00:25:27,000 - 00:25:31,060] and studied the spectral decomposition of it.
+- [00:25:31,780 - 00:25:33,100] At each temperature,
+- [00:25:33,300 - 00:25:34,900] there was a shortest wavelength,
+- [00:25:35,920 - 00:25:37,740] or approximately a shortest wavelength,
+- [00:25:38,040 - 00:25:41,600] but that shortest wavelength
+- [00:25:41,980 - 00:25:42,820] depended on something
+- [00:25:42,820 - 00:25:44,060] that didn't make sense,
+- [00:25:44,100 - 00:25:46,180] that depended on the temperature itself.
+- [00:25:46,880 - 00:25:48,020] That was the puzzle.
+- [00:25:48,020 - 00:25:51,100] The solution of the puzzle
+- [00:25:51,100 - 00:25:54,300] was simply the quantum mechanics
+- [00:25:54,300 - 00:25:56,180] of these harmonic oscillations.
+- [00:25:56,480 - 00:25:57,840] So I want to go through that
+- [00:25:57,840 - 00:26:01,700] and show you the basic theory
+- [00:26:01,700 - 00:26:03,020] of the harmonic oscillations,
+- [00:26:03,020 - 00:26:04,020] of radiation.
+- [00:26:06,080 - 00:26:07,440] And we'll work out
+- [00:26:09,940 - 00:26:11,920] the Stefan-Boltzmann law,
+- [00:26:12,100 - 00:26:12,840] or one version,
+- [00:26:12,980 - 00:26:14,080] one particular version
+- [00:26:14,080 - 00:26:15,380] of the Stefan-Boltzmann law.
+- [00:26:17,080 - 00:26:18,000] The Stefan-Boltzmann law
+- [00:26:18,000 - 00:26:20,280] applied to the energy density
+- [00:26:20,959 - 00:26:22,000] of radiation,
+- [00:26:22,480 - 00:26:23,540] blackbody radiation.
+- [00:26:23,820 - 00:26:25,280] We're talking about blackbody radiation.
+- [00:26:26,300 - 00:26:26,940] Okay.
+- [00:26:27,160 - 00:26:29,360] Any questions before I begin this,
+- [00:26:29,380 - 00:26:31,740] the derivation of the energy
+- [00:26:31,740 - 00:26:33,180] in blackbody radiation?
+- [00:26:34,440 - 00:26:35,080] Yeah.
+- [00:26:35,800 - 00:26:38,360] It seems like the minimum wavelength
+- [00:26:38,360 - 00:26:39,160] would be cut,
+- [00:26:39,280 - 00:26:40,800] eventually the wavelength
+- [00:26:40,800 - 00:26:42,700] would get to be about the size of an atom,
+- [00:26:42,860 - 00:26:43,860] and that should cut off
+- [00:26:43,860 - 00:26:45,060] the minimum wavelength.
+- [00:26:45,520 - 00:26:46,460] Why should it?
+- [00:26:46,500 - 00:26:46,700] Why?
+- [00:26:46,700 - 00:26:48,700] Because then it's not
+- [00:26:48,700 - 00:26:50,540] perfectly reflecting well,
+- [00:26:50,840 - 00:26:54,340] and it's just a jagged bunch of atoms.
+- [00:26:56,920 - 00:26:57,760] No.
+- [00:26:57,860 - 00:26:59,060] In thermal equilibrium,
+- [00:26:59,400 - 00:27:00,900] everything gets populated.
+- [00:27:01,320 - 00:27:02,560] Everything gets populated
+- [00:27:02,560 - 00:27:03,740] that can get populated.
+- [00:27:04,180 - 00:27:06,700] And there's no reason
+- [00:27:07,220 - 00:27:10,580] why an atom cannot in principle,
+- [00:27:10,840 - 00:27:14,880] or why an atom cannot excite
+- [00:27:15,220 - 00:27:16,680] the modes of oscillation,
+- [00:27:16,700 - 00:27:17,700] of yet shorter wavelength.
+- [00:27:17,980 - 00:27:19,400] It might take a long time.
+- [00:27:20,320 - 00:27:21,900] It might take a long time
+- [00:27:21,900 - 00:27:22,860] to populate.
+- [00:27:22,860 - 00:27:24,120] Atoms of a certain size
+- [00:27:24,899 - 00:27:27,200] aren't readily going to convert.
+- [00:27:29,920 - 00:27:31,120] I'll tell you what can happen.
+- [00:27:32,140 - 00:27:34,580] How can an atom create
+- [00:27:34,580 - 00:27:36,500] a high frequency photon?
+- [00:27:37,340 - 00:27:37,820] Okay.
+- [00:27:39,260 - 00:27:39,740] Well,
+- [00:27:39,740 - 00:27:40,900] one simple way
+- [00:27:40,900 - 00:27:41,520] that it can create
+- [00:27:41,520 - 00:27:42,580] a high frequency photon,
+- [00:27:42,640 - 00:27:43,960] we haven't talked about photons yet,
+- [00:27:43,980 - 00:27:44,960] but let's talk about photons.
+- [00:27:46,260 - 00:27:47,900] One way that it can do it
+- [00:27:47,900 - 00:27:50,780] is to absorb several simultaneously,
+- [00:27:51,260 - 00:27:53,400] several low frequency photons,
+- [00:27:53,720 - 00:27:55,400] and then re-emit the energy
+- [00:27:55,400 - 00:27:56,940] as one high frequency photon.
+- [00:27:58,380 - 00:27:59,900] So it can happen.
+- [00:28:00,180 - 00:28:02,220] It's one of the possible processes
+- [00:28:02,220 - 00:28:03,020] that can happen
+- [00:28:03,919 - 00:28:06,400] that an atom can,
+- [00:28:06,600 - 00:28:07,940] it's a non-linear process.
+- [00:28:08,240 - 00:28:10,480] The frequency of the radiation changes,
+- [00:28:10,600 - 00:28:13,700] but a whole bunch of photons
+- [00:28:13,700 - 00:28:14,840] come together.
+- [00:28:14,960 - 00:28:16,180] You can think of it as accidentally
+- [00:28:16,860 - 00:28:17,740] excite the atom,
+- [00:28:17,880 - 00:28:20,080] and the atom then de-excites
+- [00:28:20,080 - 00:28:22,880] and gives back a very high frequency photon.
+- [00:28:23,360 - 00:28:24,600] Or scatters,
+- [00:28:24,600 - 00:28:26,440] just scatters a lot of low frequency photons
+- [00:28:26,440 - 00:28:27,900] and creates a high frequency photon.
+- [00:28:28,100 - 00:28:29,440] They say that's very improbable,
+- [00:28:29,560 - 00:28:30,280] and you're right.
+- [00:28:31,040 - 00:28:32,560] That means that it would take
+- [00:28:32,560 - 00:28:34,220] a long amount of time
+- [00:28:34,220 - 00:28:35,440] for the system to come
+- [00:28:35,440 - 00:28:36,340] to thermal equilibrium.
+- [00:28:37,580 - 00:28:38,680] And that's true.
+- [00:28:39,879 - 00:28:40,840] That classically,
+- [00:28:40,880 - 00:28:42,200] it would take a long time
+- [00:28:42,200 - 00:28:43,120] for the system to come
+- [00:28:43,120 - 00:28:43,920] to thermal equilibrium.
+- [00:28:44,120 - 00:28:44,900] But when it did come
+- [00:28:44,900 - 00:28:45,840] to thermal equilibrium,
+- [00:28:46,720 - 00:28:48,460] it would have this odd property
+- [00:28:48,890 - 00:28:51,520] of having every mode filled with energy
+- [00:28:52,340 - 00:28:54,080] and an infinite amount of energy.
+- [00:28:54,220 - 00:28:55,500] And that was intolerable.
+- [00:28:57,600 - 00:28:59,220] But let me say it another way.
+- [00:28:59,980 - 00:29:01,320] At low temperatures,
+- [00:29:01,920 - 00:29:06,540] the cutoff in wavelengths
+- [00:29:06,540 - 00:29:08,840] was much longer than the size of an atom.
+- [00:29:10,220 - 00:29:11,560] So it didn't make sense
+- [00:29:11,560 - 00:29:13,100] to just say atomic diameter
+- [00:29:13,120 - 00:29:14,380] cutoff things.
+- [00:29:14,620 - 00:29:16,280] It depended on the temperature.
+- [00:29:16,560 - 00:29:17,800] At low temperatures,
+- [00:29:18,060 - 00:29:20,580] only very long wavelengths were present.
+- [00:29:20,840 - 00:29:22,340] As the temperature went up,
+- [00:29:23,000 - 00:29:24,160] shorter and shorter wavelengths
+- [00:29:24,160 - 00:29:25,000] become important.
+- [00:29:25,880 - 00:29:27,960] And this just didn't jibe
+- [00:29:27,960 - 00:29:29,200] with anything that anybody knew.
+- [00:29:29,380 - 00:29:30,820] It was a real crisis.
+- [00:29:34,220 - 00:29:35,540] Planck had an idea,
+- [00:29:36,740 - 00:29:39,500] and the idea didn't really make a lot of sense.
+- [00:29:39,800 - 00:29:41,640] I will just tell you very briefly.
+- [00:29:43,120 - 00:29:44,200] It's one of these things
+- [00:29:44,200 - 00:29:45,760] that made sufficiently little sense
+- [00:29:45,760 - 00:29:46,820] that I can't even reproduce
+- [00:29:46,820 - 00:29:48,420] what the argument was.
+- [00:29:48,700 - 00:29:49,720] It was Einstein,
+- [00:29:49,720 - 00:29:50,500] of course,
+- [00:29:50,520 - 00:29:51,920] who really got the argument right.
+- [00:29:53,320 - 00:29:56,260] What Planck said is that
+- [00:29:57,700 - 00:30:01,140] the walls of the container
+- [00:30:01,140 - 00:30:02,380] are filled with atoms.
+- [00:30:03,540 - 00:30:04,920] Atoms emit radiation.
+- [00:30:06,000 - 00:30:07,760] And for reasons he didn't know,
+- [00:30:07,820 - 00:30:09,220] but reasons that didn't seem
+- [00:30:09,220 - 00:30:11,460] all that incredibly revolutionary,
+- [00:30:11,460 - 00:30:14,800] the oscillators in the walls
+- [00:30:14,800 - 00:30:17,540] oscillate only with very definite frequencies.
+- [00:30:18,480 - 00:30:22,540] And he said the energy of an oscillator,
+- [00:30:22,800 - 00:30:24,360] he spoke about oscillators
+- [00:30:24,360 - 00:30:25,640] in the walls of the system,
+- [00:30:25,660 - 00:30:26,340] meaning atoms.
+- [00:30:26,600 - 00:30:27,360] But again,
+- [00:30:27,360 - 00:30:27,980] remember,
+- [00:30:28,300 - 00:30:29,620] this was 1900.
+- [00:30:30,240 - 00:30:32,760] Atoms still hadn't been identified
+- [00:30:33,060 - 00:30:34,380] and still were not understood.
+- [00:30:34,960 - 00:30:36,420] So Planck said,
+- [00:30:36,420 - 00:30:37,860] for reasons unknown,
+- [00:30:38,080 - 00:30:41,140] the frequency of oscillations of atoms
+- [00:30:41,380 - 00:30:43,160] Do atoms even oscillate?
+- [00:30:43,560 - 00:30:45,360] Not all atoms oscillate.
+- [00:30:45,360 - 00:30:45,620] I mean,
+- [00:30:45,620 - 00:30:46,660] they do oscillate,
+- [00:30:46,660 - 00:30:47,480] but they don't oscillate
+- [00:30:47,480 - 00:30:48,560] as harmonic oscillators.
+- [00:30:48,640 - 00:30:49,500] But his idea was,
+- [00:30:49,540 - 00:30:51,560] atoms oscillate like harmonic oscillators.
+- [00:30:53,940 - 00:30:57,760] And each harmonic oscillator atom
+- [00:30:57,760 - 00:30:59,280] has a frequency omega.
+- [00:31:00,080 - 00:31:04,260] And he said the energy of the atoms
+- [00:31:04,260 - 00:31:06,220] or the oscillators in the wall
+- [00:31:06,220 - 00:31:09,540] satisfied that the energy
+- [00:31:10,800 - 00:31:13,000] is equal to an integer multiple
+- [00:31:13,000 - 00:31:16,040] of the frequency times a new constant,
+- [00:31:16,960 - 00:31:17,960] which he called,
+- [00:31:18,080 - 00:31:19,720] I don't think he called it Planck's constant,
+- [00:31:19,840 - 00:31:20,560] he called it h,
+- [00:31:20,740 - 00:31:22,320] he called it h bar or h.
+- [00:31:22,580 - 00:31:24,080] H bar came a little bit later.
+- [00:31:25,080 - 00:31:27,120] h nu equals h bar omega.
+- [00:31:28,600 - 00:31:31,540] And through some kind of mumbo jumbo
+- [00:31:31,540 - 00:31:32,720] that I've never completely understood,
+- [00:31:33,320 - 00:31:35,620] this was supposed to explain the fact
+- [00:31:35,620 - 00:31:38,280] that the radiation in the box
+- [00:31:38,280 - 00:31:42,380] was cut off at some highest wavelength.
+- [00:31:42,800 - 00:31:45,420] This is not the right explanation,
+- [00:31:45,500 - 00:31:48,840] although the formula that he concocted
+- [00:31:48,840 - 00:31:49,860] out of this was correct.
+- [00:31:50,200 - 00:31:52,120] The formula he concocted
+- [00:31:52,120 - 00:31:53,120] for the amount of radiation
+- [00:31:53,120 - 00:31:55,660] in each oscillator was correct.
+- [00:31:57,140 - 00:31:59,880] In each oscillation
+- [00:31:59,880 - 00:32:00,980] of the electromagnetic field,
+- [00:32:01,060 - 00:32:02,620] the real truth was that
+- [00:32:03,160 - 00:32:05,380] the quantization of energy levels,
+- [00:32:05,380 - 00:32:08,240] was not the quantization of energy levels
+- [00:32:08,240 - 00:32:12,600] of the atoms in the walls of the box,
+- [00:32:12,780 - 00:32:15,260] it was the quantization of the energy levels
+- [00:32:15,260 - 00:32:18,220] of the radiation itself inside the box.
+- [00:32:18,500 - 00:32:19,760] In other words,
+- [00:32:19,760 - 00:32:21,700] the radiation was made out of
+- [00:32:21,700 - 00:32:23,660] discrete quanta of energy,
+- [00:32:24,740 - 00:32:27,020] where every frequency
+- [00:32:27,020 - 00:32:29,300] of possible oscillation
+- [00:32:29,300 - 00:32:34,380] would have an integer number of quanta,
+- [00:32:35,820 - 00:32:38,940] and the energy of each possible oscillation
+- [00:32:38,940 - 00:32:42,300] would be some integer times h bar
+- [00:32:42,300 - 00:32:44,320] times the frequency of that oscillator.
+- [00:32:44,780 - 00:32:45,380] These,
+- [00:32:45,380 - 00:32:48,080] the thing that I called quanta now,
+- [00:32:48,340 - 00:32:50,780] which just correspond to the amount of energy
+- [00:32:50,780 - 00:32:52,640] in each one of these oscillations,
+- [00:32:52,720 - 00:32:54,240] got to be called photons.
+- [00:32:54,880 - 00:32:56,320] Einstein knew very well
+- [00:32:56,320 - 00:32:58,100] that he was talking about some kind of
+- [00:32:58,100 - 00:33:00,200] particulate theory of radiation,
+- [00:33:02,600 - 00:33:04,360] and he was saying something like,
+- [00:33:04,360 - 00:33:05,680] this is something extremely radical,
+- [00:33:05,960 - 00:33:06,680] extremely,
+- [00:33:06,680 - 00:33:07,760] extraordinarily radical.
+- [00:33:08,180 - 00:33:08,840] In fact,
+- [00:33:08,840 - 00:33:09,180] you know,
+- [00:33:09,200 - 00:33:11,260] when you think about it,
+- [00:33:11,280 - 00:33:12,380] there was this young man
+- [00:33:13,180 - 00:33:14,580] who was completely unknown,
+- [00:33:14,980 - 00:33:16,240] nobody had ever heard of him,
+- [00:33:16,540 - 00:33:18,140] there were all these famous physicists,
+- [00:33:18,500 - 00:33:20,340] and this young man out of nowhere,
+- [00:33:20,580 - 00:33:23,380] out of the patent office in 1905 said,
+- [00:33:23,500 - 00:33:23,680] you know,
+- [00:33:23,680 - 00:33:25,200] everybody who has ever thought
+- [00:33:25,200 - 00:33:27,500] about radiation and electromagnetic radiation
+- [00:33:27,500 - 00:33:29,200] had it completely wrong,
+- [00:33:29,500 - 00:33:31,240] all you people were wrong,
+- [00:33:31,480 - 00:33:33,540] electromagnetic radiation comes
+- [00:33:33,540 - 00:33:35,360] in some sort of particles.
+- [00:33:35,740 - 00:33:36,300] Now,
+- [00:33:36,300 - 00:33:38,080] it was not because he didn't understand
+- [00:33:38,080 - 00:33:41,160] that the wave theory of radiation
+- [00:33:41,160 - 00:33:42,220] was very effective,
+- [00:33:42,840 - 00:33:45,700] he just somehow had an inner sense
+- [00:33:45,700 - 00:33:48,400] that it was the radiation in here
+- [00:33:48,400 - 00:33:49,480] which was quantized
+- [00:33:49,480 - 00:33:51,320] and not the oscillations of the wall.
+- [00:33:51,940 - 00:33:53,080] Nobody believed him,
+- [00:33:53,080 - 00:33:53,660] incidentally,
+- [00:33:53,660 - 00:33:55,600] it took about 20 years before people
+- [00:33:55,600 - 00:33:57,460] really believed there were photons,
+- [00:33:57,840 - 00:33:58,800] even this,
+- [00:33:58,800 - 00:33:59,880] not the,
+- [00:33:59,880 - 00:34:01,400] it was a long time,
+- [00:34:01,540 - 00:34:03,120] but having told you the history,
+- [00:34:03,200 - 00:34:03,520] let's go back to the beginning
+- [00:34:03,540 - 00:34:04,180] and let's go through the mathematics.
+- [00:34:05,700 - 00:34:07,280] This is not what Einstein did.
+- [00:34:08,340 - 00:34:10,179] Einstein didn't have the mathematics
+- [00:34:10,179 - 00:34:11,020] to do this,
+- [00:34:11,020 - 00:34:12,020] he didn't do it
+- [00:34:12,020 - 00:34:12,860] the way I'm doing it,
+- [00:34:12,860 - 00:34:13,260] he did it
+- [00:34:13,260 - 00:34:14,380] using lots of thermodynamics
+- [00:34:14,380 - 00:34:16,159] and lots of clever insight,
+- [00:34:17,239 - 00:34:19,820] but we can do it really mathematically
+- [00:34:20,380 - 00:34:21,880] and very cleanly.
+- [00:34:23,840 - 00:34:25,239] All I want to do is calculate
+- [00:34:25,239 - 00:34:26,820] the total amount of energy
+- [00:34:26,820 - 00:34:28,080] in this box of radiation,
+- [00:34:28,400 - 00:34:29,219] so to do so,
+- [00:34:29,219 - 00:34:31,020] we have to state more clearly
+- [00:34:31,520 - 00:34:33,520] the nature of these oscillators,
+- [00:34:34,260 - 00:34:36,820] not the ones in the walls of the box,
+- [00:34:37,780 - 00:34:40,580] but the oscillations in the radiation field,
+- [00:34:40,880 - 00:34:44,380] which are very much like the oscillations
+- [00:34:44,380 - 00:34:45,219] of a guitar string.
+- [00:34:45,760 - 00:34:46,780] In particular,
+- [00:34:46,780 - 00:34:48,179] if the walls of the box
+- [00:34:48,179 - 00:34:49,040] are reflecting,
+- [00:34:49,040 - 00:34:51,199] that implies
+- [00:34:51,199 - 00:34:53,940] that the electric field at the boundaries
+- [00:34:53,940 - 00:34:54,980] of the box is zero.
+- [00:34:55,900 - 00:34:57,600] Take that as given,
+- [00:34:57,600 - 00:34:58,940] that the electric field
+- [00:34:58,940 - 00:35:00,840] at the boundaries of the box is zero,
+- [00:35:01,020 - 00:35:03,500] and that's analogous to the gamma field
+- [00:35:03,520 - 00:35:04,060] of the guitar string,
+- [00:35:04,060 - 00:35:08,980] where the deviation
+- [00:35:11,560 - 00:35:14,180] of the guitar string from equilibrium
+- [00:35:15,880 - 00:35:20,480] is zero at the boundary of the string.
+- [00:35:20,780 - 00:35:22,700] Electric field can be thought of
+- [00:35:22,700 - 00:35:25,320] as sort of a height of the oscillation here,
+- [00:35:25,480 - 00:35:28,800] and so the guitar string is constrained
+- [00:35:29,520 - 00:35:30,440] to be attached,
+- [00:35:30,440 - 00:35:32,590] to have zero oscillation
+- [00:35:32,590 - 00:35:34,790] at the ends of the guitar string.
+- [00:35:34,910 - 00:35:36,630] Same thing for the electromagnetic field,
+- [00:35:36,750 - 00:35:37,510] for the electric field.
+- [00:35:37,850 - 00:35:39,810] So let's think about an electric wave
+- [00:35:40,770 - 00:35:42,650] propagating along the x-axis here.
+- [00:35:44,070 - 00:35:47,590] This is an idealized box with balls
+- [00:35:48,310 - 00:35:50,310] that are not irregular and things like that.
+- [00:35:50,490 - 00:35:50,730] Yeah,
+- [00:35:50,730 - 00:35:52,170] actually that doesn't make
+- [00:35:52,170 - 00:35:56,390] any difference at all if you're deep inside the box.
+- [00:35:56,530 - 00:35:58,910] There are some surface effects at the boundaries
+- [00:35:58,910 - 00:35:59,729] of the box that...
+- [00:36:00,350 - 00:36:02,210] Wouldn't it mean that there would be
+- [00:36:02,210 - 00:36:03,330] a lot of different frequencies?
+- [00:36:03,530 - 00:36:03,650] I mean,
+- [00:36:03,650 - 00:36:06,930] it'd be like having a whole lot
+- [00:36:06,930 - 00:36:08,450] of different guitar strings.
+- [00:36:10,129 - 00:36:10,490] No,
+- [00:36:10,490 - 00:36:10,850] no,
+- [00:36:10,850 - 00:36:11,350] no.
+- [00:36:11,410 - 00:36:12,330] What is true...
+- [00:36:12,330 - 00:36:13,410] Different locations of the wave.
+- [00:36:18,950 - 00:36:19,670] You're asking,
+- [00:36:19,670 - 00:36:21,970] if you were to expand
+- [00:36:21,970 - 00:36:23,110] the box a little bit,
+- [00:36:23,110 - 00:36:24,110] you would say
+- [00:36:24,110 - 00:36:25,890] the frequencies would be a little bit different,
+- [00:36:26,050 - 00:36:27,270] and if you would shrink it a little bit,
+- [00:36:27,350 - 00:36:28,310] they would be a little different.
+- [00:36:29,510 - 00:36:31,270] If you reflected them a little bit
+- [00:36:31,270 - 00:36:33,390] towards one wall or another or something like that.
+- [00:36:33,430 - 00:36:33,530] Yeah,
+- [00:36:33,530 - 00:36:34,370] yeah.
+- [00:36:34,990 - 00:36:37,810] What you have to do is you have to read...
+- [00:36:37,810 - 00:36:40,050] You don't just add those things together.
+- [00:36:40,930 - 00:36:44,630] You can't add the oscillations of one theory
+- [00:36:44,630 - 00:36:46,450] of the guitar string to the oscillations
+- [00:36:46,790 - 00:36:47,590] of another theory.
+- [00:36:47,870 - 00:36:48,650] For example,
+- [00:36:48,650 - 00:36:50,310] you could have,
+- [00:36:50,310 - 00:36:52,190] instead of fixed
+- [00:36:52,190 - 00:36:54,630] boundary conditions here in the guitar string,
+- [00:36:55,590 - 00:36:58,170] here's another kind of guitar string.
+- [00:36:58,290 - 00:36:59,410] It's not a real guitar string.
+- [00:36:59,510 - 00:37:00,110] You have a pole.
+- [00:37:01,270 - 00:37:02,510] And another pole over here.
+- [00:37:02,610 - 00:37:02,830] Pole,
+- [00:37:02,830 - 00:37:04,210] I mean literally,
+- [00:37:04,210 - 00:37:07,070] like a pole.
+- [00:37:07,430 - 00:37:09,470] And you have a ring around this pole
+- [00:37:09,470 - 00:37:10,790] and a ring around this pole,
+- [00:37:11,830 - 00:37:14,030] and the guitar string is connected to the rings.
+- [00:37:14,910 - 00:37:16,870] The rings can move up and down now.
+- [00:37:17,070 - 00:37:20,990] They're not confined to be attached
+- [00:37:20,990 - 00:37:23,430] to fixed positions.
+- [00:37:23,930 - 00:37:26,310] And this is an entirely different kind of waves.
+- [00:37:26,530 - 00:37:28,310] The waves that now can
+- [00:37:28,310 - 00:37:30,090] exist are such that they don't
+- [00:37:30,090 - 00:37:31,730] have to vanish at the end points.
+- [00:37:32,010 - 00:37:33,490] Something else has to be true.
+- [00:37:34,070 - 00:37:34,510] Namely,
+- [00:37:34,510 - 00:37:36,530] the derivative has to be equal to zero
+- [00:37:36,530 - 00:37:37,170] at that point.
+- [00:37:37,290 - 00:37:37,730] But it's a different,
+- [00:37:37,730 - 00:37:38,950] simply a different system.
+- [00:37:40,970 - 00:37:41,850] This system,
+- [00:37:41,850 - 00:37:42,950] if you worked it out,
+- [00:37:43,070 - 00:37:45,430] would give you exactly the same answer
+- [00:37:45,430 - 00:37:48,070] for the thermodynamics of the guitar string
+- [00:37:48,570 - 00:37:50,630] when the whole system got large.
+- [00:37:50,990 - 00:37:52,850] The end effects are not important.
+- [00:37:53,210 - 00:37:54,930] The end effects turn out not to be important.
+- [00:37:55,030 - 00:37:55,630] That you have to prove.
+- [00:37:55,710 - 00:37:56,510] You have to work that out.
+- [00:37:57,130 - 00:37:59,610] You don't add the oscillations of this theory
+- [00:37:59,610 - 00:38:01,070] to the oscillations of this theory.
+- [00:38:01,170 - 00:38:02,270] They're just two different theories.
+- [00:38:02,630 - 00:38:03,150] Now,
+- [00:38:03,150 - 00:38:05,470] another possibility is you could have friction
+- [00:38:05,470 - 00:38:06,990] at the end of the walls here.
+- [00:38:07,750 - 00:38:11,550] Friction would lead to yet a different description
+- [00:38:11,550 - 00:38:13,470] of what goes on in the guitar string.
+- [00:38:13,770 - 00:38:16,490] But all of them would lead to the same thermodynamic
+- [00:38:17,550 - 00:38:20,490] behavior of the guitar string.
+- [00:38:20,590 - 00:38:24,510] So it's sufficient just to study one particular case.
+- [00:38:25,170 - 00:38:27,170] And far from the end points,
+- [00:38:27,350 - 00:38:29,370] the answers don't depend on the details
+- [00:38:29,610 - 00:38:30,570] of the boundary conditions.
+- [00:38:31,610 - 00:38:32,310] I agree.
+- [00:38:32,410 - 00:38:33,230] That has to be proved.
+- [00:38:33,310 - 00:38:33,930] That's not obvious,
+- [00:38:33,930 - 00:38:34,630] but it's true.
+- [00:38:37,230 - 00:38:40,190] So let's consider the waves that can exist
+- [00:38:40,190 - 00:38:43,790] on a finite string of length L.
+- [00:38:47,090 - 00:38:48,170] If they have to be,
+- [00:38:48,170 - 00:38:49,910] if they have to be,
+- [00:38:49,970 - 00:38:50,950] if they have to vanish,
+- [00:38:50,950 - 00:38:52,370] if the height of this wave,
+- [00:38:52,530 - 00:38:54,070] let's call the height of the wave here,
+- [00:38:54,130 - 00:38:54,850] let's call it x.
+- [00:38:55,830 - 00:38:56,230] No,
+- [00:38:56,230 - 00:38:57,250] let's not call it x.
+- [00:38:57,370 - 00:38:59,590] Let's call it capital Y.
+- [00:39:00,850 - 00:39:02,410] And it's a function of position.
+- [00:39:02,590 - 00:39:03,550] It's a function of x.
+- [00:39:04,170 - 00:39:07,560] And a given wave has to
+- [00:39:07,560 - 00:39:10,950] have the form sine 2 pi.
+- [00:39:11,410 - 00:39:11,970] No,
+- [00:39:11,970 - 00:39:12,670] sine pi.
+- [00:39:15,790 - 00:39:19,350] Pi over Lx times n.
+- [00:39:19,970 - 00:39:21,230] What is n now?
+- [00:39:21,330 - 00:39:23,530] N is the number of,
+- [00:39:23,530 - 00:39:24,390] well,
+- [00:39:24,390 - 00:39:26,610] the number of oscillations,
+- [00:39:27,450 - 00:39:28,610] number of half oscillations,
+- [00:39:31,390 - 00:39:33,730] this would correspond to n equals 1,
+- [00:39:34,390 - 00:39:36,370] this would correspond to n equals 2,
+- [00:39:36,550 - 00:39:37,470] and so forth.
+- [00:39:38,010 - 00:39:39,330] Let me call it m.
+- [00:39:39,470 - 00:39:40,110] I'm going to get,
+- [00:39:40,110 - 00:39:42,110] I don't want to call it n
+- [00:39:42,110 - 00:39:44,430] because I've used n for something else.
+- [00:39:44,630 - 00:39:46,970] I've used n for the
+- [00:39:46,970 - 00:39:49,310] number of quanta in the oscillation.
+- [00:39:49,510 - 00:39:53,150] This has nothing to do with the number of quanta
+- [00:39:53,150 - 00:39:53,670] in the oscillator.
+- [00:39:53,710 - 00:39:56,150] It just has to do
+- [00:39:56,150 - 00:39:58,590] with how many nodes there are
+- [00:39:58,590 - 00:40:01,970] in a particular electromagnetic wave.
+- [00:40:02,070 - 00:40:03,910] It's a completely classical concept.
+- [00:40:07,410 - 00:40:10,270] And it's just the kind of sine waves
+- [00:40:10,270 - 00:40:13,810] that can fit onto an interval of length L.
+- [00:40:14,590 - 00:40:16,150] All of these sine waves,
+- [00:40:16,330 - 00:40:16,570] okay,
+- [00:40:16,570 - 00:40:18,450] let's just look at it.
+- [00:40:18,790 - 00:40:19,890] If x,
+- [00:40:19,890 - 00:40:22,390] if m is equal to 1,
+- [00:40:23,670 - 00:40:27,590] then this just becomes sine pi over Lx,
+- [00:40:27,590 - 00:40:28,190] x,
+- [00:40:28,190 - 00:40:30,350] but what is x?
+- [00:40:30,610 - 00:40:31,570] At the other end,
+- [00:40:31,570 - 00:40:33,310] x starts at 0 over here,
+- [00:40:33,470 - 00:40:35,730] and x is equal to L over here.
+- [00:40:36,590 - 00:40:37,970] At x equals 0,
+- [00:40:37,970 - 00:40:40,170] the sine of 0 is 0,
+- [00:40:40,350 - 00:40:42,390] and at x equals L,
+- [00:40:42,390 - 00:40:44,870] the sine of pi is 0.
+- [00:40:45,330 - 00:40:48,310] So this wave fits into the box
+- [00:40:48,310 - 00:40:50,650] with proper boundary conditions at the end.
+- [00:40:51,150 - 00:40:53,510] Any integer here will work.
+- [00:40:54,610 - 00:40:57,310] So there are an infinite number of patterns
+- [00:40:57,590 - 00:41:01,590] of oscillation characterized by these sine waves.
+- [00:41:02,230 - 00:41:03,530] But the sine waves,
+- [00:41:03,530 - 00:41:07,410] each one of them has an amplitude,
+- [00:41:08,510 - 00:41:10,610] an amplitude of oscillation,
+- [00:41:10,670 - 00:41:12,790] which means the magnitude of the oscillation
+- [00:41:12,790 - 00:41:13,570] of each one of these.
+- [00:41:14,330 - 00:41:15,990] And so you'll have to put
+- [00:41:15,990 - 00:41:17,650] a coefficient in front of it,
+- [00:41:17,710 - 00:41:18,110] y,
+- [00:41:18,110 - 00:41:19,930] let's call it sub m.
+- [00:41:20,650 - 00:41:23,330] And it's just a number for each oscillation,
+- [00:41:24,690 - 00:41:26,230] but it's time dependent.
+- [00:41:26,230 - 00:41:29,790] The oscillator oscillates up and down,
+- [00:41:29,890 - 00:41:30,150] or the,
+- [00:41:30,150 - 00:41:32,710] let's take this case here.
+- [00:41:33,070 - 00:41:34,670] It oscillates up and down,
+- [00:41:34,770 - 00:41:37,230] and that corresponds to y oscillating.
+- [00:41:38,310 - 00:41:40,150] y is an oscillator.
+- [00:41:40,330 - 00:41:41,710] y is a function of time,
+- [00:41:42,350 - 00:41:43,710] and it is an oscillator.
+- [00:41:43,870 - 00:41:44,790] It's a harmonic oscillator.
+- [00:41:46,290 - 00:41:48,190] So these are the oscillators here.
+- [00:41:48,470 - 00:41:49,310] And in general,
+- [00:41:49,310 - 00:41:50,950] you can write that
+- [00:41:50,950 - 00:41:56,010] y of x is a sum over m,
+- [00:41:56,010 - 00:41:58,950] of y sub m,
+- [00:42:00,590 - 00:42:04,030] sine m pi over l,
+- [00:42:04,030 - 00:42:05,470] x.
+- [00:42:06,450 - 00:42:08,990] These are the dynamical degrees of freedom.
+- [00:42:09,350 - 00:42:11,030] Think of this as a function of time.
+- [00:42:11,390 - 00:42:13,490] y is also a function of time.
+- [00:42:13,710 - 00:42:15,970] And these are the things that oscillate.
+- [00:42:16,750 - 00:42:18,390] These are just fixed functions.
+- [00:42:18,850 - 00:42:21,550] So the system is a system of harmonic oscillators.
+- [00:42:22,210 - 00:42:24,150] And the next question is,
+- [00:42:24,150 - 00:42:26,810] what is the frequency of each oscillator?
+- [00:42:28,670 - 00:42:31,970] The answer depends on the velocity of propagation
+- [00:42:31,970 - 00:42:33,330] of the waves.
+- [00:42:33,730 - 00:42:36,670] There's a relationship between m
+- [00:42:36,670 - 00:42:39,710] and the frequency of oscillation.
+- [00:42:40,430 - 00:42:41,870] And I'll tell you what it is.
+- [00:42:41,950 - 00:42:43,130] Let's write this in another way,
+- [00:42:43,230 - 00:42:44,250] another useful way.
+- [00:42:44,410 - 00:42:49,310] Let's write this as y of m
+- [00:42:50,150 - 00:42:52,150] sine kx.
+- [00:42:53,410 - 00:42:54,130] kx.
+- [00:42:55,670 - 00:42:57,770] m pi over l,
+- [00:42:57,770 - 00:42:58,970] I have called k.
+- [00:42:59,390 - 00:43:01,130] That's a standard terminology.
+- [00:43:01,450 - 00:43:09,150] m pi over l is called k.
+- [00:43:10,170 - 00:43:12,570] And k is called the wave number.
+- [00:43:13,910 - 00:43:15,270] It's called the wave number.
+- [00:43:16,410 - 00:43:18,730] It's itself not necessarily an integer.
+- [00:43:19,310 - 00:43:21,450] But if you know m,
+- [00:43:21,450 - 00:43:22,430] then you know k.
+- [00:43:23,470 - 00:43:24,130] What I want to do is,
+- [00:43:24,130 - 00:43:27,170] what's the connection between the frequency and k?
+- [00:43:27,830 - 00:43:29,350] The larger k is,
+- [00:43:29,350 - 00:43:30,790] the shorter the wavelength.
+- [00:43:31,430 - 00:43:32,450] That's large k.
+- [00:43:32,650 - 00:43:33,470] This is low k.
+- [00:43:34,250 - 00:43:35,710] The shorter the wavelength,
+- [00:43:35,710 - 00:43:36,730] the higher the frequency.
+- [00:43:37,070 - 00:43:38,770] I'll tell you what the relationship is.
+- [00:43:38,970 - 00:43:43,770] The frequency is equal to the velocity of propagation,
+- [00:43:44,470 - 00:43:45,470] let's call it c,
+- [00:43:47,290 - 00:43:48,030] times k.
+- [00:43:49,530 - 00:43:50,590] The higher k,
+- [00:43:50,590 - 00:43:51,510] the larger k,
+- [00:43:51,690 - 00:43:52,930] the higher the frequency,
+- [00:43:52,930 - 00:43:55,220] and they're just related by
+- [00:43:55,220 - 00:43:57,510] the velocity of propagation of waves.
+- [00:43:58,230 - 00:43:59,290] For light,
+- [00:43:59,290 - 00:44:01,630] c is of course the speed of light.
+- [00:44:03,250 - 00:44:04,030] All right,
+- [00:44:04,030 - 00:44:11,670] so let's summarize then.
+- [00:44:18,810 - 00:44:20,090] A given wave,
+- [00:44:20,090 - 00:44:22,110] a given wave-like motion,
+- [00:44:22,110 - 00:44:22,870] has,
+- [00:44:22,870 - 00:44:25,150] is parameterized by an m.
+- [00:44:26,750 - 00:44:28,810] It has a frequency which
+- [00:44:28,810 - 00:44:30,870] is equal to c times k,
+- [00:44:32,670 - 00:44:35,370] which is the same as
+- [00:44:35,370 - 00:44:38,070] c times m pi over l.
+- [00:44:41,910 - 00:44:44,670] Each one of these oscillations stores energy,
+- [00:44:44,910 - 00:44:46,530] independently of all the others.
+- [00:44:46,870 - 00:44:47,970] And classically,
+- [00:44:47,970 - 00:44:49,250] each one of them would
+- [00:44:49,250 - 00:44:50,530] store the same amount of energy,
+- [00:44:50,670 - 00:44:51,380] and the whole thing would
+- [00:44:51,380 - 00:44:52,090] have an infinite number of waves.
+- [00:44:52,110 - 00:44:52,110] So,
+- [00:44:52,110 - 00:44:52,730] the whole thing would have an infinite amount of energy.
+- [00:44:53,370 - 00:44:53,890] Now,
+- [00:44:53,890 - 00:44:54,450] what about,
+- [00:44:54,650 - 00:44:57,170] now here I'm talking about one-dimensional waves.
+- [00:44:58,550 - 00:45:01,130] What about three-dimensional waves?
+- [00:45:01,790 - 00:45:03,190] Three-dimensional waves,
+- [00:45:03,190 - 00:45:05,350] you do almost exactly the same thing.
+- [00:45:05,470 - 00:45:07,910] Let's write the general pattern for three-dimensional waves.
+- [00:45:08,770 - 00:45:11,390] We're not now talking about the height of a string.
+- [00:45:11,570 - 00:45:14,050] We could be talking about a wave field,
+- [00:45:14,210 - 00:45:15,550] such as the electric or
+- [00:45:15,550 - 00:45:16,890] magnetic field in a light wave.
+- [00:45:17,910 - 00:45:18,850] But let's just,
+- [00:45:18,850 - 00:45:20,330] let's not call it electric.
+- [00:45:20,330 - 00:45:20,590] Well,
+- [00:45:20,590 - 00:45:21,750] we can call it electric field.
+- [00:45:21,870 - 00:45:21,930] No,
+- [00:45:21,930 - 00:45:22,830] let's just call it F.
+- [00:45:24,150 - 00:45:25,610] It could be electric field,
+- [00:45:25,610 - 00:45:26,790] it could be magnetic field,
+- [00:45:27,010 - 00:45:29,330] or it could be some other wave field,
+- [00:45:29,510 - 00:45:29,770] gravitational,
+- [00:45:29,770 - 00:45:30,530] well,
+- [00:45:30,530 - 00:45:30,770] no,
+- [00:45:30,770 - 00:45:31,230] let's not,
+- [00:45:31,250 - 00:45:33,250] let's not get into quantum gravity today.
+- [00:45:34,810 - 00:45:36,690] The electric or magnetic field.
+- [00:45:37,350 - 00:45:42,030] And it is also a sum over different independent oscillators.
+- [00:45:43,030 - 00:45:46,030] Now the wave pattern involves all three dimensions.
+- [00:45:46,630 - 00:45:49,510] And the general wave that can propagate in a box
+- [00:45:49,510 - 00:45:53,530] in three dimensions with boundary conditions on the walls
+- [00:45:53,530 - 00:45:57,250] that it should be zero looks similar to this,
+- [00:45:57,270 - 00:45:58,550] except it has three factors.
+- [00:45:58,670 - 00:45:59,530] It has sine,
+- [00:45:59,530 - 00:46:03,370] or we can write it in several ways,
+- [00:46:05,670 - 00:46:07,370] m sub x,
+- [00:46:07,370 - 00:46:07,830] let's see,
+- [00:46:07,830 - 00:46:12,470] pi over l times x,
+- [00:46:13,310 - 00:46:14,290] that's a product,
+- [00:46:14,290 - 00:46:19,490] times sine m sub x,
+- [00:46:19,510 - 00:46:20,030] times sub y,
+- [00:46:20,030 - 00:46:23,750] pi over l times y,
+- [00:46:30,250 - 00:46:34,550] times sine of m sub z,
+- [00:46:34,550 - 00:46:37,650] pi over l times z.
+- [00:46:38,270 - 00:46:40,430] These are the three domain directions of space.
+- [00:46:41,170 - 00:46:42,550] And mx,
+- [00:46:42,550 - 00:46:42,890] my,
+- [00:46:42,890 - 00:46:44,730] and mz are integers.
+- [00:46:46,350 - 00:46:47,630] Three integers.
+- [00:46:47,630 - 00:46:52,350] A given wave has to fit into the box horizontally,
+- [00:46:52,730 - 00:46:54,190] it has to fit into the box vertically,
+- [00:46:54,390 - 00:46:56,150] and it has to fit into
+- [00:46:56,150 - 00:46:57,910] the box in the other direction.
+- [00:46:59,310 - 00:47:01,690] And that's ensured by this form here.
+- [00:47:02,690 - 00:47:06,430] And then there's a coefficient which depends on time,
+- [00:47:07,250 - 00:47:09,510] which can be labeled y of,
+- [00:47:09,510 - 00:47:11,490] or y sub m,
+- [00:47:11,670 - 00:47:13,870] meaning y of mx,
+- [00:47:13,870 - 00:47:14,150] my,
+- [00:47:14,150 - 00:47:15,050] and mz.
+- [00:47:15,750 - 00:47:17,550] We can also write this,
+- [00:47:18,730 - 00:47:19,250] oh,
+- [00:47:19,250 - 00:47:19,970] and this is a sum,
+- [00:47:19,970 - 00:47:20,390] of course.
+- [00:47:20,510 - 00:47:23,730] We sum over all possible modes in the box.
+- [00:47:25,670 - 00:47:26,350] All right.
+- [00:47:26,830 - 00:47:27,630] And of course,
+- [00:47:27,630 - 00:47:29,930] this is nothing but Fourier analysis in a box.
+- [00:47:30,110 - 00:47:33,430] There's nothing special here.
+- [00:47:33,670 - 00:47:37,190] We can also write this as a sum of y,
+- [00:47:38,610 - 00:47:40,390] and use a different notation,
+- [00:47:40,670 - 00:47:43,030] sine kx times x,
+- [00:47:43,030 - 00:47:46,850] sine ky times y,
+- [00:47:48,270 - 00:47:50,450] sine kz times z,
+- [00:47:51,790 - 00:48:00,530] where the relationship between the k's and the m's
+- [00:48:00,530 - 00:48:02,230] is exactly as it was before.
+- [00:48:02,710 - 00:48:05,810] k sub x is equal to m sub x pi,
+- [00:48:06,110 - 00:48:07,790] k sub y is equal to m,
+- [00:48:08,590 - 00:48:09,410] over l,
+- [00:48:09,410 - 00:48:10,210] and so forth.
+- [00:48:10,750 - 00:48:11,310] All right.
+- [00:48:11,330 - 00:48:13,230] This is the pattern of
+- [00:48:13,230 - 00:48:15,130] oscillation of a general electromagnetic wave
+- [00:48:15,130 - 00:48:16,410] inside a cavity.
+- [00:48:17,110 - 00:48:20,930] With y being the thing that oscillates.
+- [00:48:21,490 - 00:48:24,270] The point is that there is one harmonic oscillator
+- [00:48:24,730 - 00:48:27,210] for each way of choosing mx,
+- [00:48:27,210 - 00:48:27,430] my,
+- [00:48:27,430 - 00:48:28,270] and mz,
+- [00:48:30,150 - 00:48:33,070] and we have to add together all of their energies.
+- [00:48:34,410 - 00:48:37,770] Once we know how to label the oscillators,
+- [00:48:37,810 - 00:48:39,370] and we know how many of them there are,
+- [00:48:39,870 - 00:48:41,950] then this is the way of keeping track
+- [00:48:41,950 - 00:48:43,790] of how many different oscillators there are.
+- [00:48:43,850 - 00:48:45,170] One more thing we need to know.
+- [00:48:45,170 - 00:48:49,510] We need to know the frequency of an oscillator,
+- [00:48:49,890 - 00:48:51,950] and the frequency of an oscillator,
+- [00:48:52,150 - 00:48:55,370] namely the oscillator that has wave number kx,
+- [00:48:55,370 - 00:48:55,730] ky,
+- [00:48:55,730 - 00:48:56,530] and kz,
+- [00:48:57,410 - 00:48:59,070] is just equal to k,
+- [00:49:00,390 - 00:49:02,050] the magnitude of k,
+- [00:49:02,270 - 00:49:04,030] square root of kx squared
+- [00:49:04,030 - 00:49:05,790] plus ky squared plus kz squared,
+- [00:49:06,710 - 00:49:07,850] times c,
+- [00:49:10,630 - 00:49:12,150] equals the square root,
+- [00:49:12,930 - 00:49:15,050] kx squared plus ky squared,
+- [00:49:15,050 - 00:49:16,890] plus kz squared,
+- [00:49:18,190 - 00:49:18,930] times c.
+- [00:49:20,050 - 00:49:22,070] Just the magnitude of the wave vector,
+- [00:49:22,610 - 00:49:23,930] magnitude of the wave number,
+- [00:49:25,430 - 00:49:26,690] times the speed of light.
+- [00:49:26,870 - 00:49:27,610] That's its frequency.
+- [00:49:28,010 - 00:49:29,890] So now we have laid out for us
+- [00:49:29,890 - 00:49:31,690] all of the harmonic oscillators.
+- [00:49:31,870 - 00:49:33,030] We've labeled them,
+- [00:49:33,130 - 00:49:34,930] labeled them by three integers.
+- [00:49:35,410 - 00:49:37,730] We know the frequency of each one.
+- [00:49:37,910 - 00:49:39,090] We could write it in terms
+- [00:49:39,090 - 00:49:40,270] of the m's if we like.
+- [00:49:42,529 - 00:49:45,030] And we can ask how much energy is there.
+- [00:49:45,050 - 00:49:46,270] How much energy is stored in this whole thing?
+- [00:49:47,370 - 00:49:47,930] Classically,
+- [00:49:47,930 - 00:49:48,990] it's quite infinite.
+- [00:49:49,230 - 00:49:50,930] It's quite infinite because each oscillator
+- [00:49:50,930 - 00:49:52,570] has the same amount of energy.
+- [00:49:53,030 - 00:49:54,410] Quantum mechanically,
+- [00:49:55,270 - 00:49:57,030] the answer is different.
+- [00:49:57,930 - 00:49:59,270] Let's sum it all up.
+- [00:49:59,370 - 00:49:59,970] Let's do it.
+- [00:50:00,030 - 00:50:01,370] Let's really get into it,
+- [00:50:01,390 - 00:50:02,190] get into the thing,
+- [00:50:02,290 - 00:50:05,270] and calculate how much energy is in this
+- [00:50:06,370 - 00:50:07,930] oscillating box of radiation
+- [00:50:07,930 - 00:50:09,790] at a temperature T.
+- [00:50:11,630 - 00:50:12,790] The temperature T,
+- [00:50:12,790 - 00:50:13,790] where does that come from?
+- [00:50:13,970 - 00:50:14,450] Well,
+- [00:50:14,450 - 00:50:15,030] the box of radiation,
+- [00:50:15,050 - 00:50:17,090] the box of photons,
+- [00:50:17,550 - 00:50:19,010] or box of radiation,
+- [00:50:19,390 - 00:50:21,070] could be sitting on somebody's stove.
+- [00:50:21,210 - 00:50:21,650] That's all.
+- [00:50:21,770 - 00:50:23,170] It's just heated up by whatever means
+- [00:50:23,170 - 00:50:24,030] it's heated up by.
+- [00:50:24,470 - 00:50:27,270] The walls of the box become hot.
+- [00:50:27,550 - 00:50:28,790] They emit radiation.
+- [00:50:29,030 - 00:50:29,870] They absorb radiation.
+- [00:50:30,490 - 00:50:33,190] The radiation comes into thermal equilibrium
+- [00:50:33,810 - 00:50:35,410] with the walls of the box,
+- [00:50:35,450 - 00:50:36,670] which have been heated to some temperature.
+- [00:50:37,390 - 00:50:37,910] How?
+- [00:50:38,130 - 00:50:40,470] By emission and absorption of radiation,
+- [00:50:41,750 - 00:50:42,270] which,
+- [00:50:42,270 - 00:50:42,870] of course,
+- [00:50:42,870 - 00:50:43,830] is emission and absorption
+- [00:50:43,830 - 00:50:46,470] of the quanta of the oscillators here,
+- [00:50:46,610 - 00:50:47,170] photons.
+- [00:50:48,589 - 00:50:48,870] Okay,
+- [00:50:48,870 - 00:50:50,190] that's our theory,
+- [00:50:50,290 - 00:50:51,610] and let's see if we can work it out now.
+- [00:50:53,670 - 00:50:54,670] The energy,
+- [00:50:54,850 - 00:50:56,210] let's write down the energy
+- [00:50:59,330 - 00:51:01,450] stored in the wave
+- [00:51:01,450 - 00:51:03,970] which is characterized by a given
+- [00:51:04,790 - 00:51:05,810] wave number k.
+- [00:51:06,569 - 00:51:08,730] Wave number means a set of three wave numbers,
+- [00:51:08,850 - 00:51:09,210] kx,
+- [00:51:09,210 - 00:51:09,550] ky,
+- [00:51:09,550 - 00:51:10,250] and kz,
+- [00:51:10,649 - 00:51:11,490] or mx,
+- [00:51:11,490 - 00:51:12,230] my,
+- [00:51:12,230 - 00:51:13,110] and mz.
+- [00:51:14,770 - 00:51:15,590] All right,
+- [00:51:15,590 - 00:51:16,430] that's equal to,
+- [00:51:16,590 - 00:51:19,430] now we go back to the theory of harmonic oscillators.
+- [00:51:19,810 - 00:51:25,230] It is omega h-bar
+- [00:51:25,830 - 00:51:32,510] divided by e to the beta omega h-bar minus one.
+- [00:51:33,210 - 00:51:36,730] That was the formula for the harmonic oscillator energy
+- [00:51:36,730 - 00:51:39,390] as a function of frequency
+- [00:51:39,390 - 00:51:41,150] and as a function of temperature.
+- [00:51:42,350 - 00:51:43,810] That's the energy of the harmonic oscillator
+- [00:51:43,830 - 00:51:44,990] of a given oscillator,
+- [00:51:45,310 - 00:51:46,930] and we can write that in another way.
+- [00:51:50,750 - 00:51:51,990] Our omega
+- [00:51:54,970 - 00:51:56,210] is k,
+- [00:51:57,010 - 00:51:58,650] the magnitude of k,
+- [00:51:59,450 - 00:52:00,870] times the speed of light,
+- [00:52:03,630 - 00:52:04,550] h-bar,
+- [00:52:04,730 - 00:52:11,230] divided by e to the beta kc,
+- [00:52:11,410 - 00:52:12,550] let's see,
+- [00:52:13,830 - 00:52:14,070] yeah,
+- [00:52:15,210 - 00:52:16,010] h-bar.
+- [00:52:21,050 - 00:52:22,730] In this formula here,
+- [00:52:22,830 - 00:52:24,670] k is the same thing as
+- [00:52:24,670 - 00:52:26,350] the magnitude of k.
+- [00:52:26,570 - 00:52:28,470] I don't want to try to stick too many symbols
+- [00:52:28,470 - 00:52:29,330] into this exponent,
+- [00:52:29,490 - 00:52:30,010] minus one,
+- [00:52:30,110 - 00:52:30,650] excuse me.
+- [00:52:31,890 - 00:52:34,270] I've just rewritten the fact that omega
+- [00:52:34,890 - 00:52:36,950] is equal to kc h-bar,
+- [00:52:37,910 - 00:52:38,970] but nothing else.
+- [00:52:39,230 - 00:52:41,070] That's the energy of the oscillator
+- [00:52:41,070 - 00:52:42,550] with wave number k.
+- [00:52:43,830 - 00:52:43,930] So,
+- [00:52:43,930 - 00:52:44,530] what kind of energy is there altogether?
+- [00:52:44,910 - 00:52:47,370] We've got to add up all the oscillators.
+- [00:52:47,430 - 00:52:47,590] So,
+- [00:52:47,590 - 00:52:48,370] the total energy
+- [00:52:49,950 - 00:52:51,530] is equal to the sum
+- [00:52:51,530 - 00:52:55,750] over all of the possible modes of oscillation.
+- [00:52:55,990 - 00:52:58,010] That means sum of mx,
+- [00:52:58,010 - 00:52:58,550] my,
+- [00:52:58,550 - 00:52:59,750] and mz,
+- [00:53:02,710 - 00:53:04,250] kc h-bar,
+- [00:53:04,390 - 00:53:09,570] divided by e to the beta kc h-bar minus one.
+- [00:53:10,070 - 00:53:11,030] It's a big sum.
+- [00:53:11,930 - 00:53:13,370] Any questions up till now?
+- [00:53:17,790 - 00:53:18,650] All right.
+- [00:53:18,650 - 00:53:19,410] To carry on,
+- [00:53:20,550 - 00:53:24,470] we're going to approximate the sum
+- [00:53:24,470 - 00:53:25,810] by an integral.
+- [00:53:28,010 - 00:53:30,050] The point is that,
+- [00:53:30,589 - 00:53:31,850] let's look at this here.
+- [00:53:35,650 - 00:53:38,690] k is m pi over l.
+- [00:53:39,730 - 00:53:41,790] Imagine the box is very big.
+- [00:53:41,790 - 00:53:43,490] l is large.
+- [00:53:43,890 - 00:53:46,810] Large now means large by comparison
+- [00:53:46,810 - 00:53:49,650] with the wavelengths of light in there.
+- [00:53:49,790 - 00:53:51,190] If l is large,
+- [00:53:51,450 - 00:53:55,570] the difference between neighboring values of k is small.
+- [00:53:56,290 - 00:53:59,070] Neighboring values of k mean neighboring values
+- [00:53:59,790 - 00:54:02,010] of the wave number m.
+- [00:54:02,810 - 00:54:03,570] All right.
+- [00:54:03,590 - 00:54:05,910] What's the difference between
+- [00:54:05,910 - 00:54:08,230] neighboring adjacent values of kx?
+- [00:54:08,730 - 00:54:10,810] Let's call it delta kx.
+- [00:54:12,050 - 00:54:14,450] The difference is just pi over l.
+- [00:54:17,090 - 00:54:18,030] In other words,
+- [00:54:18,030 - 00:54:19,830] if we change m by one unit,
+- [00:54:20,110 - 00:54:22,510] k changes by pi over l.
+- [00:54:23,990 - 00:54:25,290] When l is large,
+- [00:54:25,550 - 00:54:27,430] this change in k is small.
+- [00:54:28,710 - 00:54:31,070] So if we think of this as a sum,
+- [00:54:31,090 - 00:54:32,110] not over m,
+- [00:54:32,390 - 00:54:34,330] but as a sum over the values of k,
+- [00:54:36,270 - 00:54:39,810] then we're summing up a large number of numbers,
+- [00:54:39,810 - 00:54:42,470] each of which is a function of k,
+- [00:54:42,770 - 00:54:44,110] and the k's are very,
+- [00:54:44,110 - 00:54:45,750] very closely separated,
+- [00:54:46,370 - 00:54:46,930] very,
+- [00:54:46,930 - 00:54:47,610] very dense.
+- [00:54:48,710 - 00:54:50,190] Here's a function of k.
+- [00:54:50,270 - 00:54:51,490] It's got k in the numerator,
+- [00:54:51,770 - 00:54:53,270] and it's got this stuff in the denominator,
+- [00:54:53,590 - 00:54:55,610] and we're adding it all up.
+- [00:54:56,490 - 00:54:58,390] And it's just the ideal situation
+- [00:54:58,390 - 00:55:00,520] when l gets large to
+- [00:55:00,520 - 00:55:02,650] replace a sum by an integral.
+- [00:55:03,450 - 00:55:04,570] So let's do that.
+- [00:55:06,410 - 00:55:09,730] We're going to replace this by an integral over k.
+- [00:55:10,509 - 00:55:12,290] But before we do,
+- [00:55:12,430 - 00:55:16,090] we have to remember that integrals and sums
+- [00:55:16,090 - 00:55:19,230] are related in a particular way
+- [00:55:19,230 - 00:55:21,460] that involves a factor that
+- [00:55:21,460 - 00:55:23,690] we have to keep track of.
+- [00:55:27,049 - 00:55:28,570] Just abstractly,
+- [00:55:28,570 - 00:55:31,770] a sum over integers mx,
+- [00:55:31,770 - 00:55:32,250] my,
+- [00:55:32,250 - 00:55:33,190] and mz
+- [00:55:34,290 - 00:55:37,090] is going to be replaced by an integral
+- [00:55:37,090 - 00:55:37,690] over k.
+- [00:55:39,810 - 00:55:41,070] So we're going to have dkx,
+- [00:55:45,330 - 00:55:45,770] dky,
+- [00:55:45,770 - 00:55:46,210] dkz.
+- [00:55:49,150 - 00:55:49,930] At the moment,
+- [00:55:49,930 - 00:55:51,190] I haven't told you what I'm summing,
+- [00:55:51,250 - 00:55:52,060] but of course what I'm
+- [00:55:52,060 - 00:55:52,870] going to be summing is this.
+- [00:55:53,230 - 00:55:55,390] But just the abstract idea of a sum
+- [00:55:55,390 - 00:55:56,780] is going to be replaced by
+- [00:55:56,780 - 00:55:58,170] the abstract idea of an integral.
+- [00:55:58,650 - 00:56:01,010] But an integral does mean a sum.
+- [00:56:01,210 - 00:56:03,070] That's what this wiggly s means.
+- [00:56:04,470 - 00:56:06,170] And this dkx,
+- [00:56:06,170 - 00:56:06,550] dky,
+- [00:56:06,550 - 00:56:07,390] dkz
+- [00:56:07,390 - 00:56:10,010] is just the volume in k-space
+- [00:56:10,590 - 00:56:12,190] of the little cells
+- [00:56:13,390 - 00:56:14,830] that you're summing over.
+- [00:56:15,270 - 00:56:15,830] Well,
+- [00:56:15,830 - 00:56:17,330] each cell has a size
+- [00:56:18,210 - 00:56:20,430] delta kx equals pi over l,
+- [00:56:20,610 - 00:56:24,450] delta ky equals pi over l,
+- [00:56:25,150 - 00:56:29,490] and delta kz equals pi over l.
+- [00:56:30,530 - 00:56:32,390] A simple way to think about it
+- [00:56:32,390 - 00:56:33,490] is dkx,
+- [00:56:33,490 - 00:56:33,930] dky,
+- [00:56:33,930 - 00:56:34,750] dkz.
+- [00:56:35,350 - 00:56:36,850] Integral is replaced by sum.
+- [00:56:37,350 - 00:56:38,770] The volume element,
+- [00:56:38,770 - 00:56:39,550] dkx,
+- [00:56:39,550 - 00:56:39,950] dky,
+- [00:56:39,950 - 00:56:40,770] dkz,
+- [00:56:40,790 - 00:56:43,270] is replaced by delta kx,
+- [00:56:43,270 - 00:56:43,930] delta ky,
+- [00:56:43,930 - 00:56:44,910] delta kz.
+- [00:56:45,910 - 00:56:48,010] And so we should really write
+- [00:56:48,560 - 00:56:50,030] that this is equal to delta,
+- [00:56:50,030 - 00:56:51,530] let's call it delta 3k,
+- [00:56:52,170 - 00:56:53,550] which means the product
+- [00:56:53,550 - 00:56:55,170] of delta kx,
+- [00:56:55,170 - 00:56:55,710] delta ky,
+- [00:56:55,710 - 00:56:56,710] and delta kz.
+- [00:56:56,810 - 00:56:59,850] That's the way to replace sums by integrals.
+- [00:57:00,030 - 00:57:02,690] You can either approximate an integral by a sum
+- [00:57:02,690 - 00:57:04,570] or approximate a sum by an integral,
+- [00:57:04,570 - 00:57:06,110] but you gotta keep track of this factor.
+- [00:57:07,350 - 00:57:07,830] Now,
+- [00:57:07,830 - 00:57:09,350] what we have here is just a sum.
+- [00:57:10,250 - 00:57:12,310] If we wanna convert it to an integral,
+- [00:57:12,530 - 00:57:14,130] we have to divide
+- [00:57:15,190 - 00:57:18,650] by 1 over delta k cubed.
+- [00:57:19,910 - 00:57:21,130] That's the right prescription,
+- [00:57:21,310 - 00:57:22,550] the right mathematical prescription
+- [00:57:22,550 - 00:57:24,670] to go from sums to integrals.
+- [00:57:24,950 - 00:57:26,690] And so we can write
+- [00:57:26,690 - 00:57:28,430] that this is approximately equal to
+- [00:57:29,170 - 00:57:31,950] the integral dkx,
+- [00:57:31,950 - 00:57:33,850] dky,
+- [00:57:33,850 - 00:57:35,530] let's just call it d3k,
+- [00:57:40,410 - 00:57:42,150] times the same integrand,
+- [00:57:44,410 - 00:57:48,050] kch bar divided by e to the beta,
+- [00:57:49,070 - 00:57:51,190] kch bar minus 1,
+- [00:57:51,390 - 00:57:53,510] but we have to put
+- [00:57:53,510 - 00:57:55,630] in 1 over delta k cubed.
+- [00:57:55,970 - 00:57:56,810] What is that?
+- [00:57:57,790 - 00:58:00,170] That's l cubed over pi cubed.
+- [00:58:09,990 - 00:58:10,890] l cubed.
+- [00:58:11,170 - 00:58:11,770] l cubed.
+- [00:58:11,770 - 00:58:12,190] That's interesting.
+- [00:58:12,730 - 00:58:14,470] That's the volume of the box.
+- [00:58:15,390 - 00:58:16,570] Not too surprising.
+- [00:58:16,890 - 00:58:20,530] We would expect that energy being extensive
+- [00:58:20,530 - 00:58:23,850] or energy being typically proportional to,
+- [00:58:23,850 - 00:58:24,370] I was gonna say,
+- [00:58:24,430 - 00:58:26,810] we would expect that energy is proportional to volume
+- [00:58:26,810 - 00:58:28,070] at a given temperature.
+- [00:58:28,629 - 00:58:29,610] At a given temperature,
+- [00:58:29,830 - 00:58:31,270] here in this calculation
+- [00:58:31,270 - 00:58:32,870] is where the volume comes from.
+- [00:58:33,590 - 00:58:35,590] Happens to be volume over pi cubed,
+- [00:58:35,850 - 00:58:36,830] that number is there.
+- [00:58:37,150 - 00:58:39,870] So the first familiar fact
+- [00:58:39,870 - 00:58:42,570] is that the total energy in that box
+- [00:58:42,570 - 00:58:43,830] is proportional to the volume,
+- [00:58:44,030 - 00:58:45,590] and the rest of the integral
+- [00:58:45,590 - 00:58:47,210] is just the energy density.
+- [00:58:49,530 - 00:58:50,370] Does it,
+- [00:58:50,470 - 00:58:52,250] first of all,
+- [00:58:52,250 - 00:58:52,930] does it converge?
+- [00:58:53,170 - 00:58:54,250] Is it finite?
+- [00:58:55,390 - 00:58:56,010] Yeah,
+- [00:58:56,010 - 00:58:56,870] it's finite.
+- [00:58:57,330 - 00:58:59,710] The denominator goes to 0,
+- [00:58:59,790 - 00:59:01,250] or the denominator gets to 0,
+- [00:59:01,270 - 00:59:02,770] and it gets big when k gets large.
+- [00:59:02,930 - 00:59:03,710] What are we worried about?
+- [00:59:03,970 - 00:59:06,770] We're worried about the very short wavelength oscillations,
+- [00:59:06,790 - 00:59:08,650] and that means very large k.
+- [00:59:10,210 - 00:59:11,950] When k gets large,
+- [00:59:12,190 - 00:59:15,490] the denominator here gets big exponentially fast,
+- [00:59:16,090 - 00:59:18,250] and this integral is very convergent.
+- [00:59:18,350 - 00:59:18,870] So the first,
+- [00:59:18,970 - 00:59:20,190] second observation
+- [00:59:20,790 - 00:59:23,250] is that the total energy in the box is finite.
+- [00:59:24,690 - 00:59:26,750] It's extremely well cut off
+- [00:59:27,550 - 00:59:28,710] by this exponent,
+- [00:59:29,530 - 00:59:31,250] and there is not an infinite number.
+- [00:59:31,270 - 00:59:31,890] There is a finite amount of energy.
+- [00:59:32,130 - 00:59:34,090] But let's see if we can calculate it.
+- [00:59:34,250 - 00:59:34,630] Let's see,
+- [00:59:34,630 - 00:59:35,410] so what do we have?
+- [00:59:38,070 - 00:59:40,770] Let's calculate it and find the final law
+- [00:59:41,670 - 00:59:44,330] of black body radiation
+- [00:59:44,330 - 00:59:46,870] for its energy density in any case.
+- [00:59:47,490 - 00:59:48,210] All right.
+- [00:59:48,550 - 00:59:49,430] L cubed,
+- [00:59:49,730 - 00:59:50,930] the energy is equal to
+- [00:59:50,930 - 00:59:53,550] L cubed over pi cubed
+- [00:59:57,510 - 00:59:58,630] integral decay,
+- [00:59:59,770 - 01:00:01,450] and we're going to write the integral now.
+- [01:00:01,590 - 01:00:02,490] I'm going to replace,
+- [01:00:02,650 - 01:00:04,770] I'm going to change the integration variable.
+- [01:00:06,030 - 01:00:09,170] We have e to the beta k c h bar.
+- [01:00:09,550 - 01:00:10,810] That's a monstrosity,
+- [01:00:11,310 - 01:00:12,790] but we can change variables.
+- [01:00:13,450 - 01:00:14,710] We're integrating over k,
+- [01:00:14,710 - 01:00:15,570] incidentally.
+- [01:00:15,570 - 01:00:15,910] All right,
+- [01:00:15,910 - 01:00:17,410] we're integrating over the three directions,
+- [01:00:17,490 - 01:00:18,650] the three components of k,
+- [01:00:18,870 - 01:00:20,870] and the k that stands down here
+- [01:00:20,870 - 01:00:23,210] is the magnitude of the wave vector.
+- [01:00:23,870 - 01:00:24,350] Okay?
+- [01:00:24,910 - 01:00:27,210] But if I make the change of variables,
+- [01:00:27,250 - 01:00:28,610] and let me now change variables,
+- [01:00:28,630 - 01:00:29,350] from k,
+- [01:00:29,350 - 01:00:36,150] namely beta k c h bar,
+- [01:00:37,530 - 01:00:38,010] beta,
+- [01:00:38,010 - 01:00:38,350] c,
+- [01:00:38,350 - 01:00:39,870] and h bar are just constants.
+- [01:00:40,410 - 01:00:41,790] Let me call that u.
+- [01:00:42,310 - 01:00:43,110] And of course,
+- [01:00:43,110 - 01:00:44,150] there are three components.
+- [01:00:44,370 - 01:00:45,670] There's kx,
+- [01:00:45,670 - 01:00:46,810] this will give ux,
+- [01:00:46,950 - 01:00:47,930] and same thing for y,
+- [01:00:48,450 - 01:00:49,750] and same thing for z.
+- [01:00:52,690 - 01:00:55,730] We're changing variables from k to u.
+- [01:00:57,250 - 01:00:58,230] And when I do so,
+- [01:00:58,630 - 01:00:59,340] I just have to be
+- [01:00:59,340 - 01:01:00,050] careful and keep track of it.
+- [01:01:00,170 - 01:01:00,910] So let's work it out.
+- [01:01:01,030 - 01:01:03,090] We have l cubed over pi cubed.
+- [01:01:05,290 - 01:01:07,750] What happens to the integral d cubed k?
+- [01:01:11,990 - 01:01:12,810] For that,
+- [01:01:12,810 - 01:01:13,790] we can solve for k.
+- [01:01:13,930 - 01:01:16,630] k is equal to u
+- [01:01:16,630 - 01:01:19,330] divided by beta c h bar,
+- [01:01:19,330 - 01:01:19,670] right?
+- [01:01:21,230 - 01:01:22,270] So what is dk?
+- [01:01:24,710 - 01:01:27,090] du over beta c h bar.
+- [01:01:27,090 - 01:01:28,620] So that means there's going
+- [01:01:28,620 - 01:01:30,150] to be a d cubed u,
+- [01:01:30,470 - 01:01:32,090] the three components of u,
+- [01:01:32,250 - 01:01:35,690] and there's going to be
+- [01:01:35,690 - 01:01:39,130] downstairs beta c h bar cubed.
+- [01:01:39,550 - 01:01:41,270] That can come outside the integral.
+- [01:01:41,390 - 01:01:43,110] We'll take it outside the integral in a moment.
+- [01:01:43,810 - 01:01:45,870] Then we have omega,
+- [01:01:45,870 - 01:01:49,690] or we have k c h bar.
+- [01:01:50,050 - 01:01:50,850] What is that?
+- [01:01:52,070 - 01:01:54,130] u over beta.
+- [01:01:54,430 - 01:01:56,070] The magnitude of u.
+- [01:01:56,070 - 01:01:59,030] So we have omega squared over u over beta.
+- [01:02:02,710 - 01:02:05,970] And we then have 1 divided
+- [01:02:05,970 - 01:02:09,230] by e to the u minus 1.
+- [01:02:11,590 - 01:02:12,290] That's it.
+- [01:02:12,350 - 01:02:13,850] That's the thing that we have.
+- [01:02:13,970 - 01:02:15,160] Let's take all the constants
+- [01:02:15,160 - 01:02:16,350] and take them on the outside.
+- [01:02:16,690 - 01:02:22,410] Now that we've found the answer or written the answer,
+- [01:02:22,990 - 01:02:25,430] let's put all the constants on the outside
+- [01:02:25,430 - 01:02:26,330] by constants,
+- [01:02:26,330 - 01:02:28,070] I mean the things independent of u.
+- [01:02:29,070 - 01:02:30,110] What do we have?
+- [01:02:30,190 - 01:02:33,030] We have equals l cubed over pi cubed.
+- [01:02:34,129 - 01:02:36,509] And then there is c cubed
+- [01:02:36,509 - 01:02:38,890] h bar cubed in the denominator
+- [01:02:39,430 - 01:02:41,150] and beta to the fourth.
+- [01:02:43,050 - 01:02:45,090] Beta to the fourth power downstairs.
+- [01:02:46,130 - 01:02:48,930] A beta from here and three betas from here.
+- [01:02:49,070 - 01:02:50,370] And then an integral,
+- [01:02:50,370 - 01:02:53,390] d cubed u,
+- [01:02:56,190 - 01:02:56,750] u,
+- [01:02:56,750 - 01:02:59,610] I'll just write u meaning the magnitude of u,
+- [01:03:00,270 - 01:03:03,770] divided by e to the u minus 1.
+- [01:03:05,450 - 01:03:06,630] This is an integral.
+- [01:03:06,710 - 01:03:07,810] It's a definite integral.
+- [01:03:08,590 - 01:03:10,410] They're going over positive values
+- [01:03:10,410 - 01:03:12,230] of the three components of u.
+- [01:03:13,830 - 01:03:15,230] Only positive values.
+- [01:03:15,490 - 01:03:15,870] Why?
+- [01:03:16,030 - 01:03:18,310] Because the original things that we started with,
+- [01:03:18,990 - 01:03:19,910] which were,
+- [01:03:19,910 - 01:03:20,790] where are they?
+- [01:03:20,910 - 01:03:21,210] Well,
+- [01:03:21,210 - 01:03:21,910] the m's.
+- [01:03:22,050 - 01:03:24,270] The m's were positive integers.
+- [01:03:24,270 - 01:03:26,420] So u is positive and the
+- [01:03:26,420 - 01:03:28,570] integral is from 0 to infinity
+- [01:03:28,570 - 01:03:29,990] for all three integrals.
+- [01:03:30,590 - 01:03:31,010] That's it.
+- [01:03:31,090 - 01:03:31,750] This is a number.
+- [01:03:32,390 - 01:03:33,310] I'm going to tell you in
+- [01:03:33,310 - 01:03:34,230] a little while what this number is.
+- [01:03:34,330 - 01:03:37,830] This number is a famous integral.
+- [01:03:39,569 - 01:03:40,370] And we'll,
+- [01:03:40,370 - 01:03:42,310] I'll tell you what the number is.
+- [01:03:44,210 - 01:03:45,350] Anybody know what the number is?
+- [01:03:48,830 - 01:03:50,510] It's pi to the fourth over 15.
+- [01:03:57,630 - 01:03:58,090] No,
+- [01:03:58,090 - 01:03:58,890] not quite.
+- [01:03:59,070 - 01:03:59,330] Not that,
+- [01:03:59,330 - 01:03:59,910] it's not.
+- [01:04:00,030 - 01:04:01,950] It's 4 pi times pi pi to the fourth.
+- [01:04:08,630 - 01:04:12,610] 4 pi to the fifth over 15.
+- [01:04:13,590 - 01:04:14,530] Some such number.
+- [01:04:14,690 - 01:04:15,550] Some silly number.
+- [01:04:16,010 - 01:04:17,130] It's a definite integral.
+- [01:04:18,090 - 01:04:19,210] You'll find it in tables.
+- [01:04:19,330 - 01:04:20,390] It's a three dimensional integral.
+- [01:04:20,430 - 01:04:21,460] How do you make a
+- [01:04:21,460 - 01:04:22,490] one dimensional integral out of this?
+- [01:04:23,790 - 01:04:24,250] Well,
+- [01:04:24,250 - 01:04:24,250] you can't.
+- [01:04:25,670 - 01:04:26,630] You can't.
+- [01:04:26,830 - 01:04:27,230] You can't.
+- [01:04:27,230 - 01:04:27,570] You can't.
+- [01:04:27,570 - 01:04:27,950] You can't.
+- [01:04:28,270 - 01:04:28,750] You can't.
+- [01:04:28,750 - 01:04:28,770] Yes,
+- [01:04:28,770 - 01:04:28,770] you can.
+- [01:04:28,990 - 01:04:29,930] Spherical coordinates.
+- [01:04:31,029 - 01:04:32,810] Integral 0 to infinity.
+- [01:04:34,090 - 01:04:34,570] OK.
+- [01:04:34,650 - 01:04:34,870] Go ahead.
+- [01:04:34,930 - 01:04:35,810] Tell me what to do next.
+- [01:04:37,290 - 01:04:38,110] 4 pi,
+- [01:04:38,110 - 01:04:38,550] right?
+- [01:04:39,450 - 01:04:40,270] 4 pi.
+- [01:04:42,930 - 01:04:44,530] 4 pi u squared,
+- [01:04:44,530 - 01:04:46,290] that gives you u cubed all together.
+- [01:04:46,770 - 01:04:48,390] e to the u minus 1.
+- [01:04:49,450 - 01:04:51,790] So there's a factor of 4 pi out here.
+- [01:04:51,850 - 01:04:52,770] Let's put the 4 pi.
+- [01:04:53,770 - 01:04:54,250] Let's put the 4 pi.
+- [01:04:54,970 - 01:04:56,790] And it becomes this integral.
+- [01:05:03,990 - 01:05:05,330] But that's not quite right.
+- [01:05:05,430 - 01:05:06,210] You know why it's not right?
+- [01:05:08,450 - 01:05:11,390] Because this integral would be integrating,
+- [01:05:11,390 - 01:05:13,470] you went to spherical coordinates.
+- [01:05:15,430 - 01:05:16,890] In three dimensions,
+- [01:05:16,890 - 01:05:18,850] there are eight octants.
+- [01:05:20,690 - 01:05:26,470] Eight octants that this integral is integrated over.
+- [01:05:26,630 - 01:05:28,550] But we only want the octant
+- [01:05:28,550 - 01:05:30,470] where all components of u are positive.
+- [01:05:31,470 - 01:05:33,130] So there's a factor of 1 eighth.
+- [01:05:33,350 - 01:05:33,970] Not important.
+- [01:05:34,230 - 01:05:34,310] I mean,
+- [01:05:34,310 - 01:05:37,230] there is a factor of 1 eighth because we've overcounted.
+- [01:05:37,710 - 01:05:38,530] But that's it.
+- [01:05:38,590 - 01:05:39,890] That's the number.
+- [01:05:39,970 - 01:05:41,230] So let's put the 4 pi outside.
+- [01:05:41,550 - 01:05:42,530] There's an 8 downstairs.
+- [01:05:43,570 - 01:05:48,390] And then there is this integral of u cubed.
+- [01:05:50,550 - 01:05:52,410] Over e to the u minus 1.
+- [01:05:52,670 - 01:05:53,510] Famous integral.
+- [01:05:54,310 - 01:05:56,450] Can be written in terms of Riemann zeta
+- [01:05:56,450 - 01:05:58,590] functions and gamma functions and this and that.
+- [01:05:58,810 - 01:06:01,610] But it actually has a numerical value.
+- [01:06:02,110 - 01:06:05,150] And it's equal to pi to the fourth over 15.
+- [01:06:05,670 - 01:06:07,290] Pi to the fourth over 15.
+- [01:06:08,190 - 01:06:09,770] Almost the final answer.
+- [01:06:09,890 - 01:06:11,370] L cubed 4 pi.
+- [01:06:11,790 - 01:06:15,810] Pi to the fourth over 15.
+- [01:06:17,430 - 01:06:18,150] My god.
+- [01:06:18,150 - 01:06:19,050] All these other things.
+- [01:06:19,230 - 01:06:20,530] 8 pi cubed.
+- [01:06:21,030 - 01:06:22,030] C cubed.
+- [01:06:22,390 - 01:06:23,230] H bar cubed.
+- [01:06:23,650 - 01:06:24,590] And finally,
+- [01:06:24,590 - 01:06:26,470] 1 over beta to the fourth.
+- [01:06:27,010 - 01:06:28,630] That's the interesting piece here.
+- [01:06:28,690 - 01:06:30,090] 1 over beta to the fourth.
+- [01:06:31,990 - 01:06:32,510] Why?
+- [01:06:35,890 - 01:06:37,390] 1 over beta to the fourth.
+- [01:06:37,470 - 01:06:39,690] Why is 1 over beta to the fourth interesting?
+- [01:06:40,150 - 01:06:42,430] Because this is t to the fourth.
+- [01:06:43,730 - 01:06:44,010] Yeah.
+- [01:06:44,110 - 01:06:44,910] Stefan Boltzmann.
+- [01:06:45,050 - 01:06:46,030] t to the fourth.
+- [01:06:46,210 - 01:06:47,330] t to the fourth power.
+- [01:06:49,170 - 01:06:50,370] Times some number.
+- [01:06:52,050 - 01:06:52,610] Oh,
+- [01:06:52,610 - 01:06:52,990] sorry.
+- [01:06:53,090 - 01:06:54,770] t to the fourth times l cubed.
+- [01:06:57,490 - 01:06:59,410] Volume times t to the fourth.
+- [01:06:59,530 - 01:07:00,190] It's telling you,
+- [01:07:00,190 - 01:07:00,990] first of all,
+- [01:07:00,990 - 01:07:05,090] that the energy density in thermal radiation is proportional
+- [01:07:05,090 - 01:07:06,270] to t to the fourth.
+- [01:07:06,730 - 01:07:08,890] The total amount of energy is finite.
+- [01:07:09,070 - 01:07:10,670] The energy density is finite.
+- [01:07:11,130 - 01:07:14,630] And this coefficient here is apart from
+- [01:07:14,630 - 01:07:18,130] a numerical factor like a quarter or something.
+- [01:07:18,150 - 01:07:20,170] It's called the Stefan Boltzmann factor.
+- [01:07:20,390 - 01:07:24,410] The Stefan Boltzmann number constant.
+- [01:07:25,590 - 01:07:26,190] Let's see.
+- [01:07:26,270 - 01:07:27,350] I want to write it down correctly.
+- [01:07:27,590 - 01:07:27,610] Oh,
+- [01:07:27,610 - 01:07:29,090] anybody know what's missing?
+- [01:07:29,250 - 01:07:30,410] There's a factor of 2 missing.
+- [01:07:31,550 - 01:07:33,390] Anybody know where the factor of 2 missing is?
+- [01:07:35,590 - 01:07:37,690] Two polarization states of the photon.
+- [01:07:38,050 - 01:07:38,250] Yeah.
+- [01:07:40,390 - 01:07:42,030] Each wave vector.
+- [01:07:43,030 - 01:07:45,580] Each wave vector can
+- [01:07:45,580 - 01:07:48,130] support two distinct orthostatic states.
+- [01:07:48,130 - 01:07:50,000] So it's a way of calculating
+- [01:07:50,000 - 01:07:51,870] the number of orthogonal kinds of oscillations.
+- [01:07:52,270 - 01:07:54,200] A wave vector going in
+- [01:07:54,200 - 01:07:56,130] a given direction can oscillate vertically.
+- [01:07:56,330 - 01:07:57,790] The electric field can oscillate vertically.
+- [01:07:57,950 - 01:07:58,950] It can oscillate horizontally.
+- [01:07:59,670 - 01:08:00,810] Or anywhere in between.
+- [01:08:01,130 - 01:08:03,040] But in between can be made up
+- [01:08:03,040 - 01:08:04,950] out of the horizontal and the vertical polarizations.
+- [01:08:05,450 - 01:08:06,250] So in fact,
+- [01:08:06,250 - 01:08:07,390] there's another factor of 2.
+- [01:08:09,110 - 01:08:10,410] Could that be 2 cubed?
+- [01:08:10,730 - 01:08:11,170] No.
+- [01:08:11,350 - 01:08:12,030] It's just 2.
+- [01:08:12,110 - 01:08:13,630] Two polarization states.
+- [01:08:13,850 - 01:08:14,150] That's it.
+- [01:08:14,230 - 01:08:14,870] Not 2 cubed.
+- [01:08:15,730 - 01:08:16,290] OK.
+- [01:08:16,470 - 01:08:17,970] For each direction,
+- [01:08:17,970 - 01:08:20,770] there's two possible polarization states.
+- [01:08:21,310 - 01:08:21,850] All right.
+- [01:08:21,850 - 01:08:22,790] All of this is called,
+- [01:08:22,790 - 01:08:23,310] well,
+- [01:08:23,310 - 01:08:27,950] it's not quite the standard Stefan Boltzmann constant.
+- [01:08:28,609 - 01:08:31,159] But it's related to it by some
+- [01:08:31,159 - 01:08:33,710] numerical factor and a factor of c.
+- [01:08:35,670 - 01:08:37,950] Let's see if I have the precise formula here.
+- [01:08:40,970 - 01:08:41,529] Yeah.
+- [01:08:43,109 - 01:08:44,470] Here's the final formula.
+- [01:08:44,870 - 01:08:47,189] But the whole story is a long story,
+- [01:08:47,189 - 01:08:48,310] and a complicated story.
+- [01:08:48,930 - 01:08:52,149] But it's really just adding up the quantum mechanical energy
+- [01:08:52,149 - 01:08:53,649] in each harmonic oscillator,
+- [01:08:53,649 - 01:08:54,990] each mode of vibration.
+- [01:08:56,430 - 01:08:59,050] And the important thing is this exponential downstairs,
+- [01:09:00,009 - 01:09:02,499] which really kills off the
+- [01:09:02,499 - 01:09:04,990] energy in the high frequency oscillators.
+- [01:09:05,330 - 01:09:05,350] Yeah.
+- [01:09:05,630 - 01:09:06,869] May I ask how far a
+- [01:09:06,869 - 01:09:08,109] plane got along with the .
+- [01:09:08,109 - 01:09:08,410] No,
+- [01:09:08,410 - 01:09:08,550] no.
+- [01:09:11,090 - 01:09:11,390] Well.
+- [01:09:14,770 - 01:09:15,470] I don't read German,
+- [01:09:15,470 - 01:09:17,370] so I've never tried to read it.
+- [01:09:20,170 - 01:09:21,850] Did you get to the t to the fourth?
+- [01:09:21,990 - 01:09:22,370] Yeah.
+- [01:09:22,870 - 01:09:23,390] Oh,
+- [01:09:23,390 - 01:09:23,810] yeah.
+- [01:09:23,910 - 01:09:24,270] Yeah.
+- [01:09:24,350 - 01:09:24,870] Yeah,
+- [01:09:24,870 - 01:09:25,310] certainly.
+- [01:09:26,029 - 01:09:26,550] Yeah.
+- [01:09:26,810 - 01:09:27,330] Oh,
+- [01:09:27,330 - 01:09:28,630] we got the whole formula.
+- [01:09:29,789 - 01:09:33,109] But through what logic is a little bit unclear.
+- [01:09:34,010 - 01:09:35,210] Quite unclear to me.
+- [01:09:37,830 - 01:09:39,109] Here's the final formula.
+- [01:09:40,729 - 01:09:44,170] E equals volume t to the fourth.
+- [01:09:44,609 - 01:09:49,309] And I have pi squared over
+- [01:09:49,309 - 01:09:54,010] 15 c cubed h bar cubed,
+- [01:09:55,750 - 01:10:00,540] which I believe is also equal to the volume
+- [01:10:00,540 - 01:10:05,330] times t to the fourth times 4 over c times
+- [01:10:05,330 - 01:10:07,970] the thing which is called the Stefan Boltzmann constant.
+- [01:10:08,190 - 01:10:09,090] The Stefan Boltzmann constant.
+- [01:10:09,090 - 01:10:10,490] The Stefan Boltzmann constant is,
+- [01:10:10,490 - 01:10:10,810] of course,
+- [01:10:10,810 - 01:10:12,210] just c over 4 times this.
+- [01:10:13,850 - 01:10:16,770] So this is the constant that appears there.
+- [01:10:17,170 - 01:10:18,150] Number one,
+- [01:10:18,150 - 01:10:19,030] it agrees with experiment.
+- [01:10:19,510 - 01:10:23,370] But that was simply Planck's choice of Planck's constant.
+- [01:10:23,610 - 01:10:26,160] So there was no great triumph in
+- [01:10:26,160 - 01:10:28,710] the numerical value fitting the Stefan Boltzmann constant.
+- [01:10:29,270 - 01:10:34,030] But there was something else that we've forgot,
+- [01:10:34,030 - 01:10:36,490] that sort of passed by us.
+- [01:10:37,250 - 01:10:41,120] Where is the cutoff in frequencies
+- [01:10:41,120 - 01:10:44,990] that rescues the energy from being infinite?
+- [01:10:45,530 - 01:10:47,190] And the answer is,
+- [01:10:47,190 - 01:10:50,270] if you go back to the
+- [01:10:50,270 - 01:10:53,350] energy stored in these harmonic oscillators,
+- [01:10:53,550 - 01:10:56,210] you go from classical to quantum mechanical.
+- [01:10:56,450 - 01:10:57,110] In other words,
+- [01:10:57,110 - 01:10:57,810] the suppression,
+- [01:10:57,810 - 01:11:01,660] the suppression happens at a frequency
+- [01:11:01,660 - 01:11:05,510] which is related to the temperature.
+- [01:11:07,350 - 01:11:09,050] When h bar omega,
+- [01:11:09,050 - 01:11:13,730] that's the energy stored in a single quantum,
+- [01:11:14,370 - 01:11:17,100] is about equal to the classical
+- [01:11:17,100 - 01:11:19,830] energy that would be in that oscillator.
+- [01:11:20,950 - 01:11:21,610] All right,
+- [01:11:21,610 - 01:11:24,150] we can put in Boltzmann's constant if we want,
+- [01:11:24,150 - 01:11:24,830] the different k,
+- [01:11:24,830 - 01:11:26,550] k Boltzmann,
+- [01:11:26,750 - 01:11:27,650] but I'm going to leave it out.
+- [01:11:28,870 - 01:11:34,590] When h bar omega is about equal to the temperature,
+- [01:11:34,690 - 01:11:36,470] or when the temperature gets up to a certain temperature,
+- [01:11:36,470 - 01:11:38,090] to a magnitude h omega,
+- [01:11:38,430 - 01:11:41,770] that's when that oscillator starts to begin to oscillate.
+- [01:11:41,810 - 01:11:43,270] When the temperature becomes high enough,
+- [01:11:43,270 - 01:11:45,170] that oscillator begins to oscillate.
+- [01:11:45,670 - 01:11:47,690] Another way of saying it is the cutoff,
+- [01:11:47,990 - 01:11:52,160] the cutoff in frequencies is omega
+- [01:11:52,160 - 01:11:56,330] equals the temperature over h bar.
+- [01:11:57,810 - 01:11:59,770] Frequencies higher than this,
+- [01:11:59,770 - 01:12:02,380] the energy in a single quantum
+- [01:12:02,380 - 01:12:04,990] is too high to be excited.
+- [01:12:04,990 - 01:12:07,870] So omega is equal to t over h bar,
+- [01:12:08,070 - 01:12:09,410] and remember what omega is,
+- [01:12:09,410 - 01:12:11,670] omega is k times c,
+- [01:12:13,009 - 01:12:16,750] and so the wave number cutoff,
+- [01:12:16,750 - 01:12:18,290] let's call it cutoff,
+- [01:12:20,009 - 01:12:26,250] cutoff is at t over h bar divided by c,
+- [01:12:27,250 - 01:12:28,510] or is it times c,
+- [01:12:28,510 - 01:12:28,890] let's see,
+- [01:12:28,890 - 01:12:30,550] k omega is that,
+- [01:12:30,610 - 01:12:33,170] omega is k times c over c.
+- [01:12:37,450 - 01:12:40,350] So we see another feature that yes,
+- [01:12:40,590 - 01:12:43,690] it is as if the short wavelengths were cutoff,
+- [01:12:44,549 - 01:12:46,509] but not by a cutoff
+- [01:12:46,509 - 01:12:48,470] which is independent of the temperature,
+- [01:12:48,610 - 01:12:49,370] the cutoff,
+- [01:12:49,370 - 01:12:51,390] this corresponds to a wavelength,
+- [01:12:52,049 - 01:12:54,239] one over a wavelength of
+- [01:12:54,239 - 01:12:56,430] order t over h bar c.
+- [01:12:57,270 - 01:12:59,390] When the wavelength is shorter than this,
+- [01:12:59,769 - 01:13:01,670] those oscillators can't oscillate,
+- [01:13:01,670 - 01:13:03,810] they have too much energy in a single quantum
+- [01:13:03,810 - 01:13:06,110] to be able to oscillate,
+- [01:13:06,759 - 01:13:08,654] and so we see here
+- [01:13:08,654 - 01:13:10,550] that the cutoff is temperature dependent,
+- [01:13:10,910 - 01:13:11,190] exactly,
+- [01:13:11,190 - 01:13:12,250] and what's more,
+- [01:13:13,130 - 01:13:16,500] exactly equal to what the
+- [01:13:16,500 - 01:13:19,870] experimental cutoff on frequencies was.
+- [01:13:20,470 - 01:13:22,050] So this was a great success.
+- [01:13:22,550 - 01:13:23,470] In a sense,
+- [01:13:23,470 - 01:13:24,490] this was the great success
+- [01:13:24,490 - 01:13:28,550] that the shape of the spectrum was cutoff,
+- [01:13:28,570 - 01:13:31,170] the classical spectrum was cutoff at wave numbers
+- [01:13:31,170 - 01:13:33,770] equal to t over h bar c to x,
+- [01:13:33,810 - 01:13:34,230] did I have that right?
+- [01:13:34,370 - 01:13:34,690] Yeah,
+- [01:13:34,690 - 01:13:35,270] I do.
+- [01:13:35,730 - 01:13:37,030] T over h bar c.
+- [01:13:38,710 - 01:13:39,190] Okay.
+- [01:13:42,130 - 01:13:43,890] Does that mean if there
+- [01:13:43,890 - 01:13:45,650] was an oscillation at high frequencies
+- [01:13:45,650 - 01:13:48,930] then Planck's uncertainty principle would be violated
+- [01:13:48,930 - 01:13:51,910] because you would know too much about the position
+- [01:13:51,910 - 01:13:52,810] and the momentum?
+- [01:13:59,170 - 01:13:59,650] Well,
+- [01:13:59,650 - 01:14:02,170] I would just say the energy of a single quantum
+- [01:14:02,170 - 01:14:08,330] is way above the classical energy.
+- [01:14:08,910 - 01:14:10,850] So the classical energy corresponds to
+- [01:14:10,850 - 01:14:12,790] a small fraction of a quantum,
+- [01:14:12,990 - 01:14:14,730] but you can't split quanta.
+- [01:14:14,850 - 01:14:17,150] I think that's the right way to say it.
+- [01:14:18,690 - 01:14:21,450] So is there a problem with zero-point energy?
+- [01:14:21,870 - 01:14:21,890] Hm?
+- [01:14:22,050 - 01:14:24,250] Is there a problem with zero-point energy?
+- [01:14:26,130 - 01:14:28,010] Zero-point energy is a constant,
+- [01:14:28,010 - 01:14:28,530] of course.
+- [01:14:28,890 - 01:14:31,550] It's there whether the temperature is zero
+- [01:14:31,550 - 01:14:33,210] or the temperature is anything else.
+- [01:14:35,630 - 01:14:36,190] Right.
+- [01:14:36,470 - 01:14:39,110] So there is an infinity in the zero-point energy,
+- [01:14:39,350 - 01:14:41,730] but it's just a constant,
+- [01:14:41,850 - 01:14:43,530] and so it doesn't affect...
+- [01:14:43,530 - 01:14:45,270] Adding a constant to...
+- [01:14:45,270 - 01:14:45,550] Look,
+- [01:14:45,550 - 01:14:47,490] this is a problem that has
+- [01:14:47,490 - 01:14:49,430] plagued physics for a long time.
+- [01:14:49,910 - 01:14:53,070] The zero-point quantum mechanical energy is not zero.
+- [01:14:54,030 - 01:14:57,390] What does zero-point energy come into,
+- [01:14:57,450 - 01:14:58,730] since it's only an additive constant?
+- [01:14:59,290 - 01:14:59,850] Well,
+- [01:14:59,850 - 01:15:01,210] it comes into gravitation.
+- [01:15:02,150 - 01:15:04,410] Energy is the source of the gravitational field.
+- [01:15:04,790 - 01:15:05,870] So the question is,
+- [01:15:06,810 - 01:15:08,610] why isn't the vacuum,
+- [01:15:08,610 - 01:15:09,350] empty space,
+- [01:15:09,350 - 01:15:10,030] gravitating?
+- [01:15:10,230 - 01:15:11,290] And we won't get into that now.
+- [01:15:11,990 - 01:15:13,090] But short of that,
+- [01:15:13,090 - 01:15:14,610] it really has no implication.
+- [01:15:14,850 - 01:15:16,300] It's just an additive constant
+- [01:15:16,300 - 01:15:17,750] in the energy of the world
+- [01:15:21,290 - 01:15:24,130] that doesn't have any effect on energy differences,
+- [01:15:24,130 - 01:15:24,750] if you like.
+- [01:15:27,090 - 01:15:29,610] So that's not to say that it's not important.
+- [01:15:29,750 - 01:15:30,070] I mean,
+- [01:15:30,070 - 01:15:30,370] it...
+- [01:15:31,590 - 01:15:32,850] It may be important,
+- [01:15:32,970 - 01:15:35,490] and it's important to understand why it doesn't gravitate,
+- [01:15:35,750 - 01:15:37,850] but that's a mystery.
+- [01:15:38,230 - 01:15:40,010] It's important to understand why it's not important.
+- [01:15:40,370 - 01:15:40,570] Yeah,
+- [01:15:40,570 - 01:15:41,110] it's important.
+- [01:15:41,110 - 01:15:41,570] Right.
+- [01:15:42,590 - 01:15:43,070] Right.
+- [01:15:43,070 - 01:15:43,550] Right.
+- [01:15:44,570 - 01:15:46,950] And this has been argued about...
+- [01:15:48,390 - 01:15:51,350] I think there was an argument between Dirac and Pauli.
+- [01:15:53,670 - 01:15:54,390] Pauli said,
+- [01:15:54,630 - 01:15:56,770] What about this vacuum energy?
+- [01:15:57,030 - 01:15:58,130] And Dirac said,
+- [01:15:58,190 - 01:15:58,670] It's infinite,
+- [01:15:58,670 - 01:15:59,670] so it can't be there.
+- [01:15:59,670 - 01:16:00,310] And Pauli said,
+- [01:16:00,390 - 01:16:01,170] Just because it's infinite,
+- [01:16:01,270 - 01:16:02,190] that doesn't mean it's zero,
+- [01:16:02,190 - 01:16:03,490] and so forth and so on.
+- [01:16:04,990 - 01:16:05,450] And...
+- [01:16:06,070 - 01:16:06,530] But...
+- [01:16:07,630 - 01:16:09,650] But as far as energy differences goes,
+- [01:16:09,770 - 01:16:10,810] this is it.
+- [01:16:11,210 - 01:16:12,250] And that's good enough.
+- [01:16:13,810 - 01:16:14,450] All right.
+- [01:16:15,330 - 01:16:15,790] Let's...
+- [01:16:15,790 - 01:16:15,910] Yeah.
+- [01:16:17,350 - 01:16:19,910] The experimentalists have been measuring this.
+- [01:16:20,190 - 01:16:23,370] It seems like a very difficult experiment,
+- [01:16:23,910 - 01:16:25,360] because you have to control
+- [01:16:25,360 - 01:16:26,810] the temperature of the gas hole
+- [01:16:27,390 - 01:16:27,850] to...
+- [01:16:27,850 - 01:16:30,390] Maybe a few degrees,
+- [01:16:30,690 - 01:16:33,410] and you're working at several thousand degrees.
+- [01:16:34,649 - 01:16:35,169] So,
+- [01:16:35,169 - 01:16:36,850] do you really think that the...
+- [01:16:37,389 - 01:16:40,150] I can't imagine the experimental data being better than...
+- [01:16:40,150 - 01:16:41,010] I don't think the...
+- [01:16:41,010 - 01:16:41,390] ...five or ten percent.
+- [01:16:41,750 - 01:16:42,510] I don't think the...
+- [01:16:42,510 - 01:16:43,510] Better than what?
+- [01:16:43,810 - 01:16:45,380] I can't imagine the experimental data
+- [01:16:45,380 - 01:16:46,950] being better than five or ten percent.
+- [01:16:47,430 - 01:16:48,650] You mean at that time?
+- [01:16:49,050 - 01:16:49,530] Yeah,
+- [01:16:49,530 - 01:16:50,530] especially at that time.
+- [01:16:50,970 - 01:16:53,170] Probably wasn't better than five or ten percent.
+- [01:16:53,250 - 01:16:53,770] I don't know.
+- [01:16:54,730 - 01:16:55,770] These days...
+- [01:16:55,770 - 01:16:57,090] These days,
+- [01:16:57,090 - 01:16:59,050] you can do these things highly accurately,
+- [01:17:00,470 - 01:17:02,010] with great accuracy.
+- [01:17:05,030 - 01:17:05,510] Yeah.
+- [01:17:05,650 - 01:17:06,090] Another question.
+- [01:17:06,210 - 01:17:07,650] This is all derived by,
+- [01:17:07,650 - 01:17:08,350] you know,
+- [01:17:08,350 - 01:17:10,270] having a volume for radiation.
+- [01:17:10,850 - 01:17:13,910] It turns out that lump coal also has its distribution.
+- [01:17:14,370 - 01:17:15,270] Can you explain why?
+- [01:17:15,510 - 01:17:15,670] I mean,
+- [01:17:15,730 - 01:17:17,470] a lump of coal is pretty
+- [01:17:17,470 - 01:17:19,210] far from a box with reflecting size
+- [01:17:19,210 - 01:17:20,210] and a little hole in it.
+- [01:17:20,490 - 01:17:22,770] Why does a lump of coal have such a distribution?
+- [01:17:25,830 - 01:17:27,070] Thermal equilibrium is done
+- [01:17:27,090 - 01:17:27,570] by a thermal equilibrium.
+- [01:17:27,910 - 01:17:28,250] If you...
+- [01:17:28,250 - 01:17:28,790] Yeah,
+- [01:17:28,790 - 01:17:29,110] no.
+- [01:17:29,330 - 01:17:30,350] First of all,
+- [01:17:30,990 - 01:17:33,230] we haven't talked about emission of radiation.
+- [01:17:33,450 - 01:17:35,710] We've just talked about the energy density inside a box.
+- [01:17:35,890 - 01:17:36,610] But you're right.
+- [01:17:40,630 - 01:17:41,770] A lump of coal,
+- [01:17:41,770 - 01:17:42,250] of course,
+- [01:17:42,270 - 01:17:44,110] is just an object which
+- [01:17:44,110 - 01:17:45,950] absorbs and doesn't reflect much energy.
+- [01:17:46,250 - 01:17:46,690] Okay.
+- [01:17:46,990 - 01:17:48,870] So if you take the box
+- [01:17:48,870 - 01:17:50,750] of radiation as we've defined it,
+- [01:17:52,290 - 01:17:54,330] and we put a lump of coal into it,
+- [01:17:56,170 - 01:17:59,170] that lump of coal will absorb and emit radiation.
+- [01:18:00,070 - 01:18:02,150] It will absorb and emit radiation
+- [01:18:04,210 - 01:18:06,490] in such a way as to come to equilibrium.
+- [01:18:06,770 - 01:18:08,830] It'll eventually come to equilibrium
+- [01:18:08,830 - 01:18:10,450] with the thermal radiation there,
+- [01:18:10,570 - 01:18:11,900] and that means it will be
+- [01:18:11,900 - 01:18:13,230] emitting as much as it's absorbing.
+- [01:18:14,350 - 01:18:15,950] So it's emitting as much
+- [01:18:15,950 - 01:18:17,550] as it's absorbing at each wavelength.
+- [01:18:18,150 - 01:18:19,230] At each wavelength,
+- [01:18:19,430 - 01:18:21,010] otherwise it would get out of equilibrium.
+- [01:18:21,650 - 01:18:23,850] So it's emitting and absorbing at each wavelength,
+- [01:18:23,850 - 01:18:30,530] and each wavelength is being kept in equilibrium.
+- [01:18:32,190 - 01:18:33,960] And now all you have to
+- [01:18:33,960 - 01:18:35,730] do is suddenly remove the box,
+- [01:18:36,550 - 01:18:38,250] remove the reflecting walls,
+- [01:18:39,670 - 01:18:41,490] and the lump of coal is emitting,
+- [01:18:42,970 - 01:18:45,550] but it's not absorbing because nothing's coming back.
+- [01:18:45,790 - 01:18:48,310] It's emitting exactly the way it was emitting before,
+- [01:18:49,150 - 01:18:50,750] but it's no longer absorbing.
+- [01:18:51,110 - 01:18:53,170] And the emission should be such
+- [01:18:53,170 - 01:18:53,830] that it's not absorbing.
+- [01:18:53,850 - 01:18:54,950] If there were the walls there,
+- [01:18:55,070 - 01:18:56,410] it would be the right amount of emission
+- [01:18:56,410 - 01:18:59,770] to balance and keep the system in equilibrium.
+- [01:19:01,390 - 01:19:03,150] But we haven't talked about
+- [01:19:03,150 - 01:19:04,910] emission of radiation from this box.
+- [01:19:05,070 - 01:19:05,390] We can.
+- [01:19:05,390 - 01:19:06,490] That's another subject.
+- [01:19:07,090 - 01:19:08,150] What is the connection?
+- [01:19:08,670 - 01:19:10,710] This was not the emission of radiation.
+- [01:19:10,910 - 01:19:12,730] This was the energy density in the radiation.
+- [01:19:13,310 - 01:19:14,070] Now you can ask,
+- [01:19:14,070 - 01:19:15,130] what does this have to do
+- [01:19:15,130 - 01:19:17,150] with the original Stefan-Boltzmann law?
+- [01:19:17,250 - 01:19:18,590] The original Stefan-Boltzmann law
+- [01:19:18,590 - 01:19:20,190] was about the luminosity,
+- [01:19:20,190 - 01:19:22,010] a different luminosity.
+- [01:19:23,290 - 01:19:24,750] And what it has to do with it,
+- [01:19:24,790 - 01:19:25,610] if you take the box,
+- [01:19:29,210 - 01:19:30,590] let's see how to think about this.
+- [01:19:34,090 - 01:19:34,490] Well,
+- [01:19:34,490 - 01:19:36,150] just take the surface of a hot region.
+- [01:19:37,730 - 01:19:39,770] The region could be the box,
+- [01:19:39,890 - 01:19:41,600] or it could be the box
+- [01:19:41,600 - 01:19:43,310] with a little pinhole in it.
+- [01:19:48,590 - 01:19:50,390] Radiation is bouncing off the walls.
+- [01:19:50,610 - 01:19:51,990] It has a certain energy density.
+- [01:19:56,910 - 01:20:01,510] And it doesn't bounce off the opening here.
+- [01:20:01,630 - 01:20:02,450] It just goes out.
+- [01:20:05,890 - 01:20:07,790] It goes out with the speed of light.
+- [01:20:09,630 - 01:20:10,110] Well,
+- [01:20:10,110 - 01:20:13,010] let's come back to the luminosity later.
+- [01:20:14,270 - 01:20:16,210] I hadn't planned to talk about it.
+- [01:20:17,510 - 01:20:19,210] We'll talk about it next time.
+- [01:20:20,090 - 01:20:21,970] What I did want to talk about was the pressure.
+- [01:20:22,910 - 01:20:24,510] In thermal radiation.
+- [01:20:25,070 - 01:20:27,190] The pressure is something we can calculate
+- [01:20:27,190 - 01:20:29,830] by straight thermodynamics and statistical mechanics.
+- [01:20:29,970 - 01:20:31,730] The statistical mechanics we've already done.
+- [01:20:31,950 - 01:20:34,570] The luminosity is a little bit beyond
+- [01:20:34,570 - 01:20:36,750] what the thermodynamics can do,
+- [01:20:36,830 - 01:20:40,230] for the simple reason that the luminosity
+- [01:20:40,230 - 01:20:41,930] is an out-of-equilibrium thing.
+- [01:20:42,510 - 01:20:44,870] It's radiating because it's out of equilibrium
+- [01:20:44,870 - 01:20:45,750] with its environment.
+- [01:20:46,190 - 01:20:48,210] So let's not do that now.
+- [01:20:48,350 - 01:20:49,710] Let's come to the pressure,
+- [01:20:49,710 - 01:20:52,510] which we can calculate by formulas
+- [01:20:52,510 - 01:20:53,770] that we've already learned.
+- [01:20:55,490 - 01:20:56,930] Just as an example,
+- [01:20:57,050 - 01:21:00,950] just as an example of the thermodynamic relations
+- [01:21:01,290 - 01:21:03,190] and the statistical mechanical relations,
+- [01:21:03,570 - 01:21:05,010] let's see if we can find the pressure.
+- [01:21:05,230 - 01:21:06,570] To find the pressure,
+- [01:21:06,570 - 01:21:07,510] let me remind you,
+- [01:21:07,590 - 01:21:12,690] the pressure is equal to minus the derivative
+- [01:21:13,370 - 01:21:15,090] of the free energy,
+- [01:21:15,310 - 01:21:16,730] the Helmholtz free energy,
+- [01:21:16,930 - 01:21:19,690] with respect to volume at 50.
+- [01:21:19,690 - 01:21:20,330] That's the fixed temperature.
+- [01:21:20,950 - 01:21:23,530] So we have to calculate the Helmholtz free energy.
+- [01:21:23,870 - 01:21:25,510] The Helmholtz free energy,
+- [01:21:28,090 - 01:21:28,670] A,
+- [01:21:29,330 - 01:21:32,470] is equal to minus the temperature
+- [01:21:33,190 - 01:21:34,830] times the logarithm
+- [01:21:35,470 - 01:21:36,950] of the partition function.
+- [01:21:38,110 - 01:21:40,370] So we have to calculate the partition function.
+- [01:21:40,790 - 01:21:43,150] Now one way to calculate the partition function,
+- [01:21:43,350 - 01:21:44,270] or its logarithm,
+- [01:21:44,350 - 01:21:46,670] is to go back to the original oscillators
+- [01:21:47,470 - 01:21:48,050] and,
+- [01:21:48,050 - 01:21:48,370] you know,
+- [01:21:48,370 - 01:21:49,250] go all the ways back
+- [01:21:49,690 - 01:21:51,910] to the starting point and calculate z.
+- [01:21:52,310 - 01:21:53,830] But there's an easier way.
+- [01:21:53,970 - 01:21:55,490] We've already done most of the work.
+- [01:21:56,870 - 01:22:00,130] And the easier way is to use the fact
+- [01:22:00,130 - 01:22:01,150] that the energy,
+- [01:22:04,650 - 01:22:05,670] the energy
+- [01:22:07,809 - 01:22:12,110] is equal to minus the derivative of log z
+- [01:22:12,990 - 01:22:14,390] with respect to beta.
+- [01:22:14,670 - 01:22:15,310] You remember that?
+- [01:22:16,870 - 01:22:19,670] That was the energy gotten from the partition function.
+- [01:22:19,690 - 01:22:21,410] You calculate the log.
+- [01:22:21,930 - 01:22:23,330] You take the minus of it.
+- [01:22:23,430 - 01:22:25,650] And you differentiate it with respect to beta.
+- [01:22:25,830 - 01:22:26,910] And that gives you the energy.
+- [01:22:27,450 - 01:22:27,890] Well,
+- [01:22:27,890 - 01:22:28,990] we know the energy.
+- [01:22:29,630 - 01:22:31,690] We know the energy in terms of the temperature.
+- [01:22:31,910 - 01:22:32,410] Where is it?
+- [01:22:40,350 - 01:22:43,190] It's 4 over c sigma times vt to the fourth.
+- [01:22:46,410 - 01:22:47,690] 4 over sigma,
+- [01:22:47,690 - 01:22:48,550] that doesn't matter.
+- [01:22:48,550 - 01:22:49,550] Not important.
+- [01:22:50,030 - 01:22:50,770] Over c,
+- [01:22:50,770 - 01:22:51,270] I think.
+- [01:22:52,610 - 01:22:53,670] Temperature to the fourth,
+- [01:22:53,790 - 01:22:55,490] which is 1 over beta to the fourth,
+- [01:22:58,050 - 01:23:02,630] equals minus d log z by d beta.
+- [01:23:04,750 - 01:23:06,690] That's just an ordinary derivative,
+- [01:23:06,690 - 01:23:07,410] incidentally.
+- [01:23:07,430 - 01:23:08,410] I write partial derivative,
+- [01:23:08,570 - 01:23:09,310] but it's just a derivative.
+- [01:23:10,010 - 01:23:11,230] How do I calculate z?
+- [01:23:14,610 - 01:23:15,090] Integrate.
+- [01:23:15,270 - 01:23:16,530] If we know the derivative,
+- [01:23:16,530 - 01:23:19,570] the log z by d beta is equal to this,
+- [01:23:20,149 - 01:23:21,190] then z,
+- [01:23:22,190 - 01:23:23,650] let's put the minus sign here,
+- [01:23:24,749 - 01:23:28,210] z is equal to the integral d beta.
+- [01:23:30,769 - 01:23:31,290] Yeah,
+- [01:23:31,290 - 01:23:31,950] log z.
+- [01:23:32,050 - 01:23:32,350] Sorry,
+- [01:23:32,350 - 01:23:33,030] log z.
+- [01:23:33,950 - 01:23:36,770] Log z is the integral d
+- [01:23:36,770 - 01:23:39,590] beta of minus 4 sigma over c,
+- [01:23:43,570 - 01:23:45,190] 1 over beta to the fourth.
+- [01:23:48,650 - 01:23:49,130] Well,
+- [01:23:49,130 - 01:23:49,890] we can do that integral.
+- [01:23:50,010 - 01:23:51,030] It's just a simple integral,
+- [01:23:51,130 - 01:23:52,650] d beta over beta to the fourth,
+- [01:23:52,850 - 01:23:58,010] and it's just given by minus 4 sigma over c.
+- [01:24:05,330 - 01:24:07,790] What's the integral of 1 over beta to the fourth?
+- [01:24:07,970 - 01:24:10,610] 1 third beta to the minus 3?
+- [01:24:10,790 - 01:24:11,270] Yeah.
+- [01:24:11,790 - 01:24:14,150] 1 over beta cubed with a
+- [01:24:14,150 - 01:24:16,510] 1 over beta to the fourth.
+- [01:24:32,350 - 01:24:36,570] 1 over beta cubed with a
+- [01:24:36,570 - 01:24:40,790] 1 over beta to the fourth.
+- [01:25:02,470 - 01:25:03,230] Okay.
+- [01:25:06,669 - 01:25:09,910] How many times were we able to do it?
+- [01:25:09,930 - 01:25:14,910] A thing about the age males.
+- [01:25:14,930 - 01:25:18,390] respect to volume is the pressure at fixed temperature.
+- [01:25:18,390 - 01:25:20,390] So all we have to do
+- [01:25:20,390 - 01:25:22,470] now is differentiate this with respect to volume.
+- [01:25:22,470 - 01:25:23,310] That's pretty easy.
+- [01:25:23,310 - 01:25:23,870] The volume
+- [01:25:23,870 - 01:25:25,230] is just in the numerator here.
+- [01:25:25,230 - 01:25:26,850] And what do we find?
+- [01:25:26,850 - 01:25:29,850] We find that the pressure has
+- [01:25:29,850 - 01:25:32,570] the same numerical coefficient as the energy density,
+- [01:25:32,570 - 01:25:34,770] 4 sigma over C,
+- [01:25:34,770 - 01:25:39,930] but then
+- [01:25:39,930 - 01:25:41,410] an extra factor of 1 third,
+- [01:25:41,410 - 01:25:44,130] well it's t to the fourth,
+- [01:25:44,130 - 01:25:46,830] but then an extra factor of 1 third.
+- [01:25:47,330 - 01:25:49,890] Now 1 third came from doing the integral,
+- [01:25:49,890 - 01:25:51,650] the beta over beta to the fourth.
+- [01:25:51,650 - 01:25:53,410] What's
+- [01:25:53,410 - 01:25:53,870] the result?
+- [01:25:53,870 - 01:25:56,470] The result is a relationship between
+- [01:25:56,470 - 01:25:59,070] the pressure and the energy density.
+- [01:25:59,910 - 01:26:01,310] There's a famous relationship,
+- [01:26:01,310 - 01:26:06,530] the pressure is equal to 1 third the energy density,
+- [01:26:06,530 - 01:26:07,370] E
+- [01:26:07,370 - 01:26:08,030] over volume.
+- [01:26:10,410 - 01:26:12,310] You remember seeing that anywhere before?
+- [01:26:12,310 - 01:26:15,430] In cosmology.
+- [01:26:15,430 - 01:26:18,350] When we studied the radiation
+- [01:26:18,350 - 01:26:19,510] dominated universe,
+- [01:26:19,510 - 01:26:21,620] we used pressure is equal
+- [01:26:21,620 - 01:26:23,730] to 1 third the energy density.
+- [01:26:23,730 - 01:26:25,690] So this is
+- [01:26:25,690 - 01:26:27,640] a famous relationship between pressure of
+- [01:26:27,640 - 01:26:29,590] a radi- it's not a general relationship,
+- [01:26:29,590 - 01:26:30,030] it's
+- [01:26:30,030 - 01:26:31,810] a relationship for radiation.
+- [01:26:31,810 - 01:26:33,510] For radiation,
+- [01:26:33,510 - 01:26:36,910] the pressure is 1 third the energy density.
+- [01:26:37,470 - 01:26:38,210] So,
+- [01:26:38,210 - 01:26:38,870] I'm going to show you a little bit
+- [01:26:38,870 - 01:26:39,530] of a picture of the radiation dominated universe.
+- [01:26:41,730 - 01:26:42,490] As I said,
+- [01:26:42,490 - 01:26:46,080] famous rule of- and so that tells
+- [01:26:46,080 - 01:26:49,670] you what the force on a wall,
+- [01:26:49,670 - 01:26:50,670] on the walls
+- [01:26:50,670 - 01:26:51,350] of a box is.
+- [01:26:54,930 - 01:26:55,330] Okay,
+- [01:26:55,330 - 01:26:55,790] let's see,
+- [01:26:55,790 - 01:26:57,590] should we stop here and get questions?
+- [01:26:57,590 - 01:27:00,810] That went faster than I thought
+- [01:27:00,810 - 01:27:01,130] it would,
+- [01:27:01,130 - 01:27:02,950] which may mean that I went too fast,
+- [01:27:02,950 - 01:27:08,170] in which case we can collect some questions
+- [01:27:08,170 - 01:27:08,590] now.
+- [01:27:09,190 - 01:27:09,590] Yeah.
+- [01:27:09,930 - 01:27:10,510] Just a comment,
+- [01:27:10,510 - 01:27:12,910] this is about the third or fourth time that,
+- [01:27:12,910 - 01:27:13,990] you know,
+- [01:27:13,990 - 01:27:16,270] the first time
+- [01:27:16,270 - 01:27:20,450] was when you looked at a molecule
+- [01:27:20,450 - 01:27:24,630] rotating and where you- the same problem
+- [01:27:25,349 - 01:27:27,859] rose its head that things broke down
+- [01:27:27,859 - 01:27:30,370] either very low temperatures or high temperatures
+- [01:27:30,370 - 01:27:33,030] classically and you had to go to the
+- [01:27:33,030 - 01:27:35,690] mechanical kind of things to make it work out.
+- [01:27:35,910 - 01:27:36,270] Right.
+- [01:27:36,390 - 01:27:39,870] Is this replicated all throughout the framework?
+- [01:27:45,009 - 01:27:45,530] Yeah,
+- [01:27:45,530 - 01:27:46,270] I mean,
+- [01:27:46,270 - 01:27:46,610] yeah,
+- [01:27:46,610 - 01:27:47,750] I'll give you another example.
+- [01:27:51,370 - 01:27:53,110] The specific heat of solids.
+- [01:27:53,110 - 01:27:57,150] The specific heat means the relation between energy and
+- [01:27:57,150 - 01:27:58,780] temperature and so it does have
+- [01:27:58,780 - 01:28:00,410] to do with the energy of solids.
+- [01:28:00,410 - 01:28:03,390] What are solids?
+- [01:28:03,390 - 01:28:04,470] Solids
+- [01:28:04,470 - 01:28:04,910] are crystals.
+- [01:28:04,910 - 01:28:07,590] I mean,
+- [01:28:07,590 - 01:28:08,210] real solids,
+- [01:28:08,210 - 01:28:09,730] good solids are crystals.
+- [01:28:09,730 - 01:28:09,850] I mean,
+- [01:28:09,850 - 01:28:09,850] you're going to have
+- [01:28:09,850 - 01:28:14,470] two larger particles and they vibrate,
+- [01:28:14,470 - 01:28:15,170] they oscillate.
+- [01:28:15,170 - 01:28:17,270] The crystal lattice oscillates.
+- [01:28:18,770 - 01:28:21,710] So another example of this is
+- [01:28:21,710 - 01:28:24,650] the energy stored in a crystal lattice.
+- [01:28:24,650 - 01:28:25,950] Again,
+- [01:28:25,950 - 01:28:27,570] classical mechanics
+- [01:28:27,570 - 01:28:31,800] of the lattice overestimates the energy because
+- [01:28:31,800 - 01:28:36,030] it attributes a significant energy to every
+- [01:28:36,030 - 01:28:38,290] possible oscillation of this crystal lattice.
+- [01:28:38,570 - 01:28:39,330] Okay.
+- [01:28:39,330 - 01:28:40,570] Most of the oscillations,
+- [01:28:40,570 - 01:28:41,830] or many of the oscillations,
+- [01:28:41,830 - 01:28:43,090] are too high frequency.
+- [01:28:45,230 - 01:28:46,610] So at low temperatures,
+- [01:28:46,610 - 01:28:48,820] classical mechanics overestimates the
+- [01:28:48,820 - 01:28:51,030] amount of energy stored
+- [01:28:51,030 - 01:28:54,190] in the thermal oscillations or crystal lattice.
+- [01:28:54,750 - 01:28:56,150] And you get the wrong
+- [01:28:56,150 - 01:28:57,550] answer for the specific heat of...
+- [01:29:00,390 - 01:29:01,350] So yeah,
+- [01:29:01,350 - 01:29:02,890] it does recur over and over again.
+- [01:29:03,690 - 01:29:04,940] I'm not sure how many
+- [01:29:04,940 - 01:29:06,190] other examples of it there are.
+- [01:29:06,190 - 01:29:08,110] What else is there besides molecules,
+- [01:29:08,110 - 01:29:10,050] solids?
+- [01:29:11,850 - 01:29:13,870] I suppose it also happens in liquids,
+- [01:29:13,870 - 01:29:15,730] although I never thought very much about it.
+- [01:29:20,050 - 01:29:20,530] Radiation,
+- [01:29:20,530 - 01:29:21,010] molecules,
+- [01:29:21,010 - 01:29:23,450] what else can you think of that oscillates?
+- [01:29:23,870 - 01:29:25,810] Just to blame the idea of gas,
+- [01:29:25,810 - 01:29:26,330] I mean,
+- [01:29:26,330 - 01:29:31,330] after both the indistinguishability of particles.
+- [01:29:34,610 - 01:29:35,090] Well,
+- [01:29:35,090 - 01:29:36,170] we're thinking about...
+- [01:29:36,170 - 01:29:38,930] We're thinking specifically about this issue
+- [01:29:38,930 - 01:29:41,690] of energy stored in high frequency oscillations.
+- [01:29:43,390 - 01:29:44,950] Offhand I can't think of any other,
+- [01:29:44,950 - 01:29:45,750] but I'm sure there are.
+- [01:29:52,350 - 01:29:52,910] Yeah?
+- [01:29:53,050 - 01:29:54,990] When a solid like that melts,
+- [01:29:54,990 - 01:29:58,110] it's not a much pressure-volume change,
+- [01:29:58,110 - 01:29:59,730] you're adding energy.
+- [01:29:59,950 - 01:30:01,770] Does that mean entropy goes
+- [01:30:01,770 - 01:30:03,590] up a lot during that phase?
+- [01:30:03,950 - 01:30:04,150] Yeah.
+- [01:30:05,350 - 01:30:05,910] Yeah.
+- [01:30:06,170 - 01:30:08,290] The entropy does go up a lot,
+- [01:30:08,290 - 01:30:09,800] because all of a sudden
+- [01:30:09,800 - 01:30:11,310] the molecules are no longer locked
+- [01:30:11,310 - 01:30:12,030] in place,
+- [01:30:12,030 - 01:30:19,650] and they're sort of moving randomly through the...
+- [01:30:19,650 - 01:30:20,130] Right,
+- [01:30:20,130 - 01:30:21,430] certainly the entropy does go up.
+- [01:30:21,710 - 01:30:23,670] There's another interesting thing you can calculate.
+- [01:30:24,629 - 01:30:25,750] The entropy...
+- [01:30:25,750 - 01:30:26,390] Well,
+- [01:30:26,390 - 01:30:28,830] you can calculate two interesting things.
+- [01:30:29,210 - 01:30:30,870] We calculated the energy.
+- [01:30:31,710 - 01:30:33,890] We could calculate the number of photons.
+- [01:30:34,630 - 01:30:36,150] Let's think about the number of photons.
+- [01:30:37,969 - 01:30:39,970] Let's go back to the harmonic oscillator.
+- [01:30:44,310 - 01:30:45,530] What did we find?
+- [01:30:45,610 - 01:30:48,460] We found that the energy of
+- [01:30:48,460 - 01:30:51,310] a single harmonic oscillator was h-bar omega,
+- [01:30:51,310 - 01:30:53,330] I think,
+- [01:30:53,330 - 01:30:53,910] divided
+- [01:30:53,910 - 01:31:00,090] by e to the beta h-bar omega minus one.
+- [01:31:00,190 - 01:31:00,650] Is that correct?
+- [01:31:00,950 - 01:31:01,110] Yeah.
+- [01:31:01,370 - 01:31:02,410] That's the energy.
+- [01:31:02,630 - 01:31:02,990] Okay.
+- [01:31:03,090 - 01:31:03,650] Now,
+- [01:31:03,650 - 01:31:05,650] each oscillator...
+- [01:31:05,650 - 01:31:06,130] Each oscillator has a number of photons.
+- [01:31:06,130 - 01:31:08,260] Each quantum of the oscillator has
+- [01:31:08,260 - 01:31:10,390] an energy equal to h-bar omega,
+- [01:31:10,390 - 01:31:10,790] right?
+- [01:31:11,770 - 01:31:17,750] h-bar omega is the energy of each quantum of oscillation.
+- [01:31:18,810 - 01:31:20,590] Let's use the term that we now use.
+- [01:31:20,910 - 01:31:23,510] H-bar omega is the energy of each
+- [01:31:23,510 - 01:31:26,110] photon in an oscillation of the electromagnetic field.
+- [01:31:27,170 - 01:31:27,650] So,
+- [01:31:27,650 - 01:31:28,830] this is the energy.
+- [01:31:29,010 - 01:31:30,970] If I divide it by h-bar omega,
+- [01:31:30,970 - 01:31:32,930] it will give me the number of quanta.
+- [01:31:32,930 - 01:31:34,070] So,
+- [01:31:34,070 - 01:31:35,410] let's divide it by h-bar omega.
+- [01:31:35,630 - 01:31:40,850] The number of photons in each mode of oscillation,
+- [01:31:40,850 - 01:31:43,610] let's call it n omega,
+- [01:31:43,610 - 01:31:47,710] is e to the beta h-bar
+- [01:31:47,710 - 01:31:47,970] omega,
+- [01:31:47,970 - 01:31:49,730] minus one.
+- [01:31:50,430 - 01:31:51,030] Okay?
+- [01:31:51,590 - 01:31:52,190] Now,
+- [01:31:52,190 - 01:31:55,610] you can take all of the modes of
+- [01:31:55,610 - 01:31:59,030] oscillation and add up all of the photons.
+- [01:31:59,290 - 01:32:00,450] It's a similar integral.
+- [01:32:01,190 - 01:32:02,910] The only difference is that it's not a single photon.
+- [01:32:02,910 - 01:32:04,670] The only difference is that it doesn't have the h-bar,
+- [01:32:04,670 - 01:32:05,130] you know,
+- [01:32:05,130 - 01:32:06,730] the numerator here.
+- [01:32:07,130 - 01:32:09,010] Almost the identical integral,
+- [01:32:09,010 - 01:32:10,130] a little bit different,
+- [01:32:10,130 - 01:32:12,510] you can calculate the number of photons.
+- [01:32:14,130 - 01:32:15,470] That's not so hard to do.
+- [01:32:15,690 - 01:32:17,770] And you can calculate the entropy.
+- [01:32:18,150 - 01:32:19,810] How do we calculate the entropy?
+- [01:32:20,070 - 01:32:22,590] We use the statistical mechanics that we've...
+- [01:32:22,590 - 01:32:22,990] Well,
+- [01:32:22,990 - 01:32:24,350] we've calculated the free energy.
+- [01:32:24,970 - 01:32:25,650] Let's see.
+- [01:32:25,730 - 01:32:29,410] Anybody remember the formula for relating energy,
+- [01:32:29,410 - 01:32:31,630] entropy,
+- [01:32:31,630 - 01:32:32,790] and free energy?
+- [01:32:32,910 - 01:32:35,050] It's E minus T-S,
+- [01:32:35,050 - 01:32:36,070] E minus minus.
+- [01:32:38,850 - 01:32:40,610] E minus T-S is?
+- [01:32:40,830 - 01:32:41,970] E minus T-S.
+- [01:32:41,970 - 01:32:43,590] A is E minus T-S,
+- [01:32:43,590 - 01:32:43,770] right?
+- [01:32:44,070 - 01:32:48,210] A is equal to E minus T-S.
+- [01:32:49,230 - 01:32:49,830] So,
+- [01:32:49,830 - 01:32:53,070] S is equal to A minus E,
+- [01:32:53,070 - 01:32:53,570] no,
+- [01:32:53,570 - 01:32:54,450] E minus A,
+- [01:32:54,450 - 01:32:58,410] divided by T.
+- [01:32:59,530 - 01:33:00,130] Well,
+- [01:33:00,130 - 01:33:02,210] we've calculated the energy.
+- [01:33:06,330 - 01:33:07,890] We calculated the energy,
+- [01:33:07,890 - 01:33:09,510] we calculated the free energy.
+- [01:33:09,650 - 01:33:11,210] They were proportional to each other
+- [01:33:11,210 - 01:33:12,770] except for a factor of one-third,
+- [01:33:12,770 - 01:33:13,110] right?
+- [01:33:14,210 - 01:33:15,170] That's what went on here.
+- [01:33:15,250 - 01:33:17,120] The energy and the free energy
+- [01:33:17,120 - 01:33:18,990] differed by a factor of two-thirds.
+- [01:33:19,250 - 01:33:21,890] So the energy minus the free energy
+- [01:33:21,890 - 01:33:24,530] is going to be basically two-thirds of something.
+- [01:33:25,630 - 01:33:26,090] It's...
+- [01:33:26,090 - 01:33:26,690] what's it going to be?
+- [01:33:28,010 - 01:33:29,410] Two-thirds of the energy.
+- [01:33:29,610 - 01:33:31,160] And the energy is proportional to
+- [01:33:31,160 - 01:33:32,710] T to the fourth times sigma.
+- [01:33:33,950 - 01:33:36,270] Times the Stefan-Boltzmann constant.
+- [01:33:36,930 - 01:33:40,140] So T to the fourth times
+- [01:33:40,140 - 01:33:43,350] sigma is the numerator divided by T.
+- [01:33:44,310 - 01:33:47,660] So T cubed times the Stefan-Boltzmann constant or
+- [01:33:47,660 - 01:33:51,010] something like that is the number of photons.
+- [01:33:53,070 - 01:33:53,810] Sorry,
+- [01:33:53,810 - 01:33:55,090] is the entropy.
+- [01:33:56,110 - 01:33:57,690] If you work it out,
+- [01:33:57,690 - 01:34:00,290] you'll find out that it's essentially
+- [01:34:00,290 - 01:34:02,890] equal to the number of photons.
+- [01:34:02,890 - 01:34:04,430] The total number of photons.
+- [01:34:05,730 - 01:34:07,170] The total number of photons,
+- [01:34:07,170 - 01:34:09,350] a numerical constant distinguishes them.
+- [01:34:10,110 - 01:34:11,310] This number here,
+- [01:34:11,310 - 01:34:12,790] if you work it out,
+- [01:34:12,790 - 01:34:17,250] is basically the same as the integral.
+- [01:34:17,430 - 01:34:18,630] Let's just look at it for a moment.
+- [01:34:18,750 - 01:34:20,890] Supposing I wanted to count the total number of photons.
+- [01:34:21,530 - 01:34:23,730] Here's the number of photons at a given frequency.
+- [01:34:24,250 - 01:34:25,630] It would be integral,
+- [01:34:25,630 - 01:34:28,250] the same integral that we did before.
+- [01:34:29,610 - 01:34:31,630] Exactly the same integral we did before.
+- [01:34:31,630 - 01:34:32,250] What was it?
+- [01:34:36,770 - 01:34:37,770] DKKH bar,
+- [01:34:37,770 - 01:34:38,930] what?
+- [01:34:38,930 - 01:34:40,770] Omega?
+- [01:34:41,330 - 01:34:41,950] No,
+- [01:34:41,950 - 01:34:44,530] omega KH bar C.
+- [01:34:45,170 - 01:34:49,030] E to the KH bar C minus one.
+- [01:34:49,790 - 01:34:51,600] That was the integral that we
+- [01:34:51,600 - 01:34:53,410] did before to calculate the energy.
+- [01:34:54,410 - 01:34:55,030] D3K.
+- [01:34:56,790 - 01:34:57,410] Right?
+- [01:34:58,890 - 01:34:59,510] Okay.
+- [01:35:02,089 - 01:35:03,270] We did that integral,
+- [01:35:03,270 - 01:35:04,890] but now we have a different integral.
+- [01:35:05,150 - 01:35:08,210] It differs by not having omega in the numerator.
+- [01:35:08,930 - 01:35:10,610] It's exactly the same integral,
+- [01:35:10,610 - 01:35:12,940] except this factor is no longer
+- [01:35:12,940 - 01:35:15,270] there when calculating the number of photons.
+- [01:35:16,250 - 01:35:18,150] The result is going to be,
+- [01:35:18,150 - 01:35:19,330] incidentally,
+- [01:35:19,330 - 01:35:21,300] do you know where the one
+- [01:35:21,300 - 01:35:23,270] over beta to the fourth came from?
+- [01:35:23,990 - 01:35:25,870] It came from changing variables.
+- [01:35:26,330 - 01:35:27,870] It came from the four
+- [01:35:27,870 - 01:35:29,410] powers of K in the numerator.
+- [01:35:29,410 - 01:35:31,310] When we changed variables,
+- [01:35:31,310 - 01:35:34,590] we said that U is equal to,
+- [01:35:34,590 - 01:35:35,610] there's a beta here,
+- [01:35:35,610 - 01:35:41,090] beta H bar C times K.
+- [01:35:42,170 - 01:35:44,930] So in the change of variables between K and U,
+- [01:35:44,930 - 01:35:48,290] there are four powers of K in the numerator.
+- [01:35:48,850 - 01:35:50,210] D3K times K.
+- [01:35:50,710 - 01:35:53,350] That gave us a one over beta to the fourth.
+- [01:35:53,810 - 01:35:55,730] In the integral without this,
+- [01:35:55,730 - 01:35:58,430] we're just going to get one over beta cubed.
+- [01:35:59,450 - 01:36:01,010] Which is temperature cubed.
+- [01:36:03,530 - 01:36:04,170] So,
+- [01:36:04,170 - 01:36:09,330] the number of photons will be proportional to the entropy.
+- [01:36:11,090 - 01:36:12,230] That's a nice thing.
+- [01:36:12,370 - 01:36:16,130] What it says is that the total entropy at any
+- [01:36:16,130 - 01:36:19,890] temperature is essentially the same as the total number of photons.
+- [01:36:20,430 - 01:36:22,090] One bit of information,
+- [01:36:22,090 - 01:36:22,790] if you like,
+- [01:36:22,790 - 01:36:24,050] for each photon.
+- [01:36:24,490 - 01:36:25,350] It's not one,
+- [01:36:25,350 - 01:36:26,470] it's some numerical number.
+- [01:36:26,470 - 01:36:29,910] But the entropy and the number of
+- [01:36:29,910 - 01:36:33,350] photons are linearly proportional to each other.
+- [01:36:35,330 - 01:36:35,850] So,
+- [01:36:35,850 - 01:36:38,280] entropy in thermal equilibrium counts the
+- [01:36:38,280 - 01:36:40,710] number of photons in the radiation.
+- [01:36:42,130 - 01:36:43,350] You can work that out.
+- [01:36:43,450 - 01:36:44,550] It's a nice integral to do.
+- [01:36:44,810 - 01:36:47,660] You work out the integral associated with the
+- [01:36:47,660 - 01:36:50,510] number of photons and compare it with the entropy.
+- [01:36:50,750 - 01:36:53,330] And that will give you the entropy per photon,
+- [01:36:53,330 - 01:36:54,070] if you like.
+- [01:36:54,210 - 01:36:56,450] The entropy per photon in the thermal equilibrium.
+- [01:36:56,450 - 01:36:56,890] And that's the entropy per photon in the thermal radiation.
+- [01:36:57,950 - 01:36:58,410] And,
+- [01:36:58,410 - 01:36:58,750] you know,
+- [01:36:58,750 - 01:36:59,990] it's not temperature dependent.
+- [01:37:00,150 - 01:37:01,790] It's just some number which I don't remember.
+- [01:37:03,250 - 01:37:05,090] It's got pi's in it and other things.
+- [01:37:08,590 - 01:37:09,050] Yeah,
+- [01:37:09,050 - 01:37:10,290] I think it's a nasty integral.
+- [01:37:10,450 - 01:37:11,330] You can't do the integral.
+- [01:37:11,550 - 01:37:13,070] But you can express it
+- [01:37:13,070 - 01:37:14,590] in terms of Riemann zeta functions.
+- [01:37:16,150 - 01:37:17,330] But it's a number.
+- [01:37:18,870 - 01:37:19,330] Okay.
+- [01:37:21,330 - 01:37:21,790] Yes.
+- [01:37:22,410 - 01:37:25,870] If you had a gas of electrons with one...
+- [01:37:26,550 - 01:37:28,430] One electron equal to one bit of...
+- [01:37:28,430 - 01:37:28,890] No.
+- [01:37:28,990 - 01:37:29,770] Not in terms of...
+- [01:37:29,770 - 01:37:29,950] No.
+- [01:37:30,510 - 01:37:33,550] Only at very high temperatures would that be true.
+- [01:37:36,210 - 01:37:38,530] Take the case of low temperatures.
+- [01:37:39,630 - 01:37:40,570] At very,
+- [01:37:40,570 - 01:37:41,490] very low temperatures,
+- [01:37:41,490 - 01:37:45,010] the electron gas freezes into a...
+- [01:37:45,010 - 01:37:46,270] Not into a solid.
+- [01:37:46,410 - 01:37:47,450] It freezes into a...
+- [01:37:48,110 - 01:37:48,710] Well,
+- [01:37:48,710 - 01:37:50,550] it freezes into a ground state.
+- [01:37:50,710 - 01:37:56,350] Some ground state where every electron occupies its own...
+- [01:37:56,350 - 01:37:57,860] Its own special state because
+- [01:37:57,860 - 01:37:59,370] of the Pauli exclusion principle.
+- [01:38:00,230 - 01:38:01,790] And it has zero entropy.
+- [01:38:02,030 - 01:38:02,290] So,
+- [01:38:02,290 - 01:38:02,470] no,
+- [01:38:02,470 - 01:38:03,510] it is not true that...
+- [01:38:05,610 - 01:38:07,970] That entropy is equal to the number of electrons.
+- [01:38:11,650 - 01:38:12,130] No,
+- [01:38:12,130 - 01:38:17,110] it's rather special to this system.
+- [01:38:17,270 - 01:38:18,710] Because this zero state is...
+- [01:38:19,290 - 01:38:21,510] The zero energy is not zero in this system,
+- [01:38:21,510 - 01:38:21,970] is that it?
+- [01:38:22,430 - 01:38:23,110] Say it again?
+- [01:38:23,110 - 01:38:26,090] Because the zero energy isn't zero in this system.
+- [01:38:26,590 - 01:38:28,370] Zero energy isn't zero.
+- [01:38:28,590 - 01:38:29,190] Ground state.
+- [01:38:30,430 - 01:38:31,550] That's not the reason.
+- [01:38:32,630 - 01:38:33,670] That's not the reason.
+- [01:38:37,110 - 01:38:41,530] As you remove heat from a box of radiation,
+- [01:38:41,530 - 01:38:44,010] you decrease the number of photons.
+- [01:38:46,350 - 01:38:47,950] Photons are not conserved.
+- [01:38:49,010 - 01:38:51,050] And cooling the box of gas
+- [01:38:51,050 - 01:38:53,090] just eliminates the number of photons.
+- [01:38:53,090 - 01:38:53,330] It eliminates,
+- [01:38:53,330 - 01:38:54,690] removes photons from it.
+- [01:38:55,090 - 01:38:57,410] So as you cool it down towards its ground state,
+- [01:38:57,410 - 01:38:58,950] and eventually when you get down to very,
+- [01:38:58,950 - 01:38:59,830] very low temperatures,
+- [01:38:59,830 - 01:39:01,490] there are no photons left.
+- [01:39:02,070 - 01:39:04,260] So the number of photons and the entropy
+- [01:39:04,260 - 01:39:06,450] both go to zero in the ground state.
+- [01:39:07,230 - 01:39:08,470] For a system of electrons,
+- [01:39:08,470 - 01:39:09,750] electrons are conserved.
+- [01:39:09,910 - 01:39:11,790] You start taking out the energy from them,
+- [01:39:11,790 - 01:39:13,230] the electrons don't go away.
+- [01:39:14,070 - 01:39:15,880] So if you cool a system
+- [01:39:15,880 - 01:39:17,690] of electrons down to zero temperature,
+- [01:39:17,690 - 01:39:20,810] there's a lot of electrons but no entropy.
+- [01:39:20,810 - 01:39:23,690] So the entropy can't be
+- [01:39:23,690 - 01:39:26,570] equal to the number of electrons.
+- [01:39:28,909 - 01:39:31,370] But photons are not conserved,
+- [01:39:31,370 - 01:39:32,670] and as you cool it,
+- [01:39:32,670 - 01:39:36,950] the photons are just eliminated.
+- [01:39:37,750 - 01:39:39,530] They're absorbed into the walls.
+- [01:39:41,070 - 01:39:41,670] Okay.
+- [01:39:43,550 - 01:39:44,710] Any other questions?
+- [01:39:44,990 - 01:39:45,830] If not,
+- [01:39:45,830 - 01:39:47,050] we'll go home a little bit early.
+- [01:39:50,810 - 01:39:51,230] For more,
+- [01:39:51,230 - 01:39:53,610] please visit us at stanford.edu.
