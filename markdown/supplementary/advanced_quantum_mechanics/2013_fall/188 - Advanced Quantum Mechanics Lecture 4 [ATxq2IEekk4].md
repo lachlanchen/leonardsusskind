@@ -1,0 +1,2570 @@
+# Transcript
+
+Source: supplementary/advanced_quantum_mechanics/2013_fall/188 - Advanced Quantum Mechanics Lecture 4 [ATxq2IEekk4].mkv
+
+- [00:00:04,979 - 00:00:06,180] Stanford University
+- [00:00:10,219 - 00:00:11,080] Harmonic oscillator.
+- [00:00:11,080 - 00:00:15,440] Let's just very briefly review the harmonic oscillator because it's going to
+- [00:00:15,440 - 00:00:19,800] come up time and time again in what happens from here on in.
+- [00:00:19,800 - 00:00:21,200] As I said,
+- [00:00:21,200 - 00:00:23,880] harmonic oscillators are ubiquitous.
+- [00:00:23,880 - 00:00:26,260] They occur all over the place.
+- [00:00:26,260 - 00:00:30,040] Anytime you have a system which has an equilibrium state,
+- [00:00:30,040 - 00:00:34,060] it could be classical or it could be quantum mechanical,
+- [00:00:34,060 - 00:00:35,820] but classical in particular,
+- [00:00:35,820 - 00:00:37,630] if it has an equilibrium state
+- [00:00:37,630 - 00:00:39,440] and you displace it from equilibrium,
+- [00:00:39,440 - 00:00:40,940] generally speaking,
+- [00:00:40,940 - 00:00:41,880] it will oscillate.
+- [00:00:42,360 - 00:00:45,140] It may oscillate with more than one frequency.
+- [00:00:45,460 - 00:00:46,360] For example,
+- [00:00:46,360 - 00:00:49,780] a violin string can oscillate in the fundamental range.
+- [00:00:49,800 - 00:00:51,440] The fundamental frequency,
+- [00:00:51,440 - 00:00:53,080] the first harmonic,
+- [00:00:53,080 - 00:00:53,960] the second harmonic,
+- [00:00:53,960 - 00:00:55,740] and if you pluck it in odd ways,
+- [00:00:55,740 - 00:00:58,580] you can make some nasty noises,
+- [00:00:58,580 - 00:01:00,360] as I'm sure that Art knows.
+- [00:01:01,980 - 00:01:04,160] I've done it many times.
+- [00:01:04,440 - 00:01:07,370] The nastiness because of multiple
+- [00:01:07,370 - 00:01:10,300] overtones clashing with each other.
+- [00:01:10,300 - 00:01:10,540] Well,
+- [00:01:10,540 - 00:01:12,160] that's probably not quite right,
+- [00:01:12,160 - 00:01:15,000] but you know what I mean.
+- [00:01:15,360 - 00:01:15,860] All right,
+- [00:01:15,860 - 00:01:16,240] but nevertheless,
+- [00:01:16,240 - 00:01:18,010] the oscillations of a violin
+- [00:01:18,010 - 00:01:19,780] string are a collection of oscillations.
+- [00:01:19,800 - 00:01:21,800] They're a collection of oscillators of different frequency,
+- [00:01:21,800 - 00:01:29,130] but more important to us are the oscillators which
+- [00:01:29,130 - 00:01:36,460] comprise the oscillations of the electromagnetic field and other fields.
+- [00:01:36,720 - 00:01:37,820] We're going to come to that,
+- [00:01:37,820 - 00:01:39,330] and we're going to do
+- [00:01:39,330 - 00:01:40,840] a little bit of quantum electrodynamics,
+- [00:01:40,840 - 00:01:41,640] just a little bit,
+- [00:01:41,640 - 00:01:42,940] but basically,
+- [00:01:42,940 - 00:01:43,940] if you have radiation,
+- [00:01:43,940 - 00:01:44,860] for example,
+- [00:01:44,860 - 00:01:47,320] in a cavity or in a
+- [00:01:47,320 - 00:01:49,780] wave guide or something like that,
+- [00:01:49,780 - 00:01:49,780] it's going to oscillate.
+- [00:01:49,800 - 00:01:52,040] Then the radiation,
+- [00:01:52,040 - 00:01:54,020] the electric and magnetic
+- [00:01:54,020 - 00:01:56,000] fields oscillate with different frequencies.
+- [00:01:56,580 - 00:01:57,340] Again,
+- [00:01:57,340 - 00:02:00,070] what would be the equilibrium
+- [00:02:00,070 - 00:02:02,800] configuration of the radiation field?
+- [00:02:03,020 - 00:02:04,310] I should start with something
+- [00:02:04,310 - 00:02:05,600] which has an equilibrium configuration.
+- [00:02:06,340 - 00:02:08,419] What is the equilibrium
+- [00:02:08,419 - 00:02:10,500] configuration of the electromagnetic field?
+- [00:02:12,380 - 00:02:16,300] The answer is no electromagnetic field.
+- [00:02:16,560 - 00:02:17,680] The vacuum,
+- [00:02:17,680 - 00:02:19,780] empty space with no electromagnetic field.
+- [00:02:19,780 - 00:02:20,240] The vacuum,
+- [00:02:20,240 - 00:02:21,640] empty space with no electromagnetic oscillations in it.
+- [00:02:22,520 - 00:02:24,700] No electromagnetic oscillations,
+- [00:02:24,700 - 00:02:25,320] in other words,
+- [00:02:25,320 - 00:02:30,540] just empty space with no electric and magnetic fields,
+- [00:02:30,540 - 00:02:32,770] is the equilibrium position of
+- [00:02:32,770 - 00:02:35,000] the electric and magnetic fields,
+- [00:02:35,000 - 00:02:35,440] if you like.
+- [00:02:35,620 - 00:02:39,960] If you give the system a knock by,
+- [00:02:39,960 - 00:02:40,780] for example,
+- [00:02:40,780 - 00:02:45,160] sending in some microwaves or something,
+- [00:02:45,160 - 00:02:47,060] the system will start to oscillate.
+- [00:02:47,080 - 00:02:47,940] And like the...
+- [00:02:49,980 - 00:02:50,820] Violin string,
+- [00:02:50,820 - 00:02:53,640] it can oscillate in all of its various frequencies,
+- [00:02:53,640 - 00:03:02,760] and those oscillations are called photons,
+- [00:03:02,760 - 00:03:04,400] or that's not quite right.
+- [00:03:04,700 - 00:03:06,910] The oscillations are described
+- [00:03:06,910 - 00:03:09,120] or describe collections of photons,
+- [00:03:09,120 - 00:03:10,020] and we'll come to that,
+- [00:03:10,020 - 00:03:10,540] but not tonight.
+- [00:03:11,540 - 00:03:12,140] Okay,
+- [00:03:12,140 - 00:03:15,960] so harmonic oscillators are terribly important in many ways.
+- [00:03:16,420 - 00:03:17,020] Incidentally,
+- [00:03:17,020 - 00:03:19,680] sound waves are also oscillations.
+- [00:03:19,780 - 00:03:23,380] A sound wave moving through a crystal is,
+- [00:03:23,380 - 00:03:23,940] again,
+- [00:03:23,940 - 00:03:25,480] a collection of oscillations.
+- [00:03:25,700 - 00:03:28,460] You can think of it wrongly,
+- [00:03:28,460 - 00:03:30,480] as each crystal oscillating
+- [00:03:30,480 - 00:03:32,500] independently of every other crystal.
+- [00:03:33,600 - 00:03:34,120] Sorry,
+- [00:03:34,120 - 00:03:37,860] each atom oscillating independently of every other atom.
+- [00:03:38,020 - 00:03:39,820] But that's not really the way it works.
+- [00:03:40,120 - 00:03:42,700] Each atom exerts a force on the other atom,
+- [00:03:42,700 - 00:03:44,360] and so when you displace one,
+- [00:03:44,360 - 00:03:45,820] it gives a knock to the next one,
+- [00:03:45,820 - 00:03:47,100] and waves go through the crystal.
+- [00:03:47,100 - 00:03:48,300] The waves,
+- [00:03:48,300 - 00:03:48,740] again,
+- [00:03:48,740 - 00:03:50,880] are described by harmonic oscillators,
+- [00:03:50,880 - 00:03:56,520] and the quanta of the oscillations are not called photons,
+- [00:03:56,520 - 00:03:57,820] they're called phonons,
+- [00:03:57,820 - 00:03:58,280] for example.
+- [00:03:58,500 - 00:03:59,680] So these are things we're going to study,
+- [00:03:59,680 - 00:04:03,040] but to prepare ourselves for that,
+- [00:04:03,040 - 00:04:05,720] we studied a bit the harmonic oscillator,
+- [00:04:05,720 - 00:04:08,720] and I want to expand on it a bit.
+- [00:04:09,840 - 00:04:11,660] Remind you what the rules are.
+- [00:04:13,400 - 00:04:16,839] We started with the harmonic oscillator with a Hamiltonian,
+- [00:04:16,839 - 00:04:17,079] or a Hamiltonian oscillator.
+- [00:04:17,079 - 00:04:20,160] Which I wrote as p squared over twice the mass,
+- [00:04:20,160 - 00:04:22,760] and I set the mass equal to one,
+- [00:04:22,760 - 00:04:25,680] just to make my life simple.
+- [00:04:26,200 - 00:04:27,580] You can go back and do it
+- [00:04:27,580 - 00:04:28,960] with a mass not equal to one.
+- [00:04:29,080 - 00:04:30,870] I believe in our book art
+- [00:04:30,870 - 00:04:32,660] we do it with a general mass,
+- [00:04:32,660 - 00:04:33,700] so we do it with...yeah,
+- [00:04:33,700 - 00:04:34,200] okay,
+- [00:04:34,200 - 00:04:35,540] so it's done with a general mass.
+- [00:04:36,220 - 00:04:39,160] And then plus omega squared.
+- [00:04:40,060 - 00:04:41,360] That's the spring constant,
+- [00:04:41,360 - 00:04:43,150] but it also happens that omega
+- [00:04:43,150 - 00:04:44,940] is the frequency of the oscillator.
+- [00:04:45,600 - 00:04:47,060] X squared over two.
+- [00:04:47,080 - 00:04:52,840] And we constructed creation and annihilation operators,
+- [00:04:52,840 - 00:04:54,540] A plus or minus,
+- [00:04:54,540 - 00:05:02,560] which happen to have been momentum plus I omega X.
+- [00:05:03,520 - 00:05:04,700] Now notice,
+- [00:05:04,700 - 00:05:05,760] not finished yet,
+- [00:05:05,760 - 00:05:07,560] but notice if I,
+- [00:05:07,560 - 00:05:08,580] classically,
+- [00:05:08,580 - 00:05:09,620] if I were to take,
+- [00:05:09,620 - 00:05:10,960] this is plus or minus,
+- [00:05:10,960 - 00:05:13,940] if I were to take the two operators,
+- [00:05:13,940 - 00:05:15,580] A plus and A minus,
+- [00:05:15,580 - 00:05:16,900] and multiply them together,
+- [00:05:16,900 - 00:05:19,120] and then divide by two,
+- [00:05:19,120 - 00:05:21,460] I would construct the Hamiltonian.
+- [00:05:21,580 - 00:05:21,940] Alright,
+- [00:05:21,940 - 00:05:23,000] so we'll come back to that in a minute,
+- [00:05:23,000 - 00:05:26,510] but in order to be consistent
+- [00:05:26,510 - 00:05:30,020] with the notations that are ancient,
+- [00:05:30,600 - 00:05:33,740] we'll put a square root of two omega here.
+- [00:05:35,480 - 00:05:37,260] And those are the A pluses or minus,
+- [00:05:37,260 - 00:05:38,920] and if you work out,
+- [00:05:38,920 - 00:05:40,280] classically,
+- [00:05:40,280 - 00:05:42,320] or quantum mechanically,
+- [00:05:42,320 - 00:05:44,620] the Hamiltonian in terms of A plus or minus,
+- [00:05:44,620 - 00:05:45,440] here's what you find.
+- [00:05:47,600 - 00:05:48,240] Oh,
+- [00:05:48,240 - 00:05:49,560] one more quantity.
+- [00:05:50,320 - 00:05:52,420] One more quantity is called N.
+- [00:05:53,780 - 00:05:56,780] N is equal to A plus A minus,
+- [00:05:56,780 - 00:05:57,900] as simple as that.
+- [00:05:58,300 - 00:06:02,850] And the last time we proved that the spectrum of
+- [00:06:02,850 - 00:06:07,400] eigenvalues of N were just the integers starting at zero.
+- [00:06:08,480 - 00:06:10,960] We showed that A plus and
+- [00:06:10,960 - 00:06:13,440] minus were raising and lowering operators,
+- [00:06:13,440 - 00:06:16,880] which raised and lowered the eigenvalues of N.
+- [00:06:16,880 - 00:06:17,400] Alright,
+- [00:06:17,400 - 00:06:22,820] so this is an operator whose eigenvalues are one,
+- [00:06:22,820 - 00:06:23,400] zero,
+- [00:06:23,400 - 00:06:24,540] start with zero,
+- [00:06:24,540 - 00:06:27,680] no negative ones,
+- [00:06:27,680 - 00:06:28,880] zero,
+- [00:06:28,880 - 00:06:29,420] one,
+- [00:06:29,420 - 00:06:30,020] two,
+- [00:06:30,020 - 00:06:30,900] three,
+- [00:06:30,900 - 00:06:31,460] dot,
+- [00:06:31,460 - 00:06:31,740] dot,
+- [00:06:31,740 - 00:06:31,960] dot.
+- [00:06:35,860 - 00:06:37,040] And finally,
+- [00:06:37,040 - 00:06:37,900] not finally,
+- [00:06:37,900 - 00:06:39,920] but moreover,
+- [00:06:39,920 - 00:06:45,400] the Hamiltonian is equal to omega,
+- [00:06:46,919 - 00:06:47,400] and the Hamiltonian is equal to N.
+- [00:06:47,400 - 00:06:47,400] Now,
+- [00:06:47,400 - 00:06:49,980] I have left out H bar.
+- [00:06:50,580 - 00:06:51,760] I'm going to leave it out,
+- [00:06:51,760 - 00:06:52,650] but then I'm just going
+- [00:06:52,650 - 00:06:53,540] to show you where it goes.
+- [00:06:54,260 - 00:06:55,800] If we leave out H bar,
+- [00:06:55,800 - 00:07:00,960] the Hamiltonian is just omega times N.
+- [00:07:02,340 - 00:07:03,780] Now where does that come from?
+- [00:07:03,940 - 00:07:06,500] If you multiply A plus times A minus,
+- [00:07:06,500 - 00:07:08,940] clearly you get something which looks like this.
+- [00:07:10,980 - 00:07:12,520] There's a two downstairs.
+- [00:07:12,680 - 00:07:13,500] That's this two.
+- [00:07:13,500 - 00:07:15,940] And there's an omega downstairs.
+- [00:07:16,480 - 00:07:17,700] That's why I have to
+- [00:07:17,700 - 00:07:18,920] compensate it with an omega here,
+- [00:07:18,920 - 00:07:20,040] omega N.
+- [00:07:20,260 - 00:07:21,880] But quantum mechanically,
+- [00:07:21,880 - 00:07:22,920] there's a little correction,
+- [00:07:22,920 - 00:07:25,660] and the correction comes because the P's,
+- [00:07:25,740 - 00:07:27,660] because the A plus and A minus don't commute.
+- [00:07:28,160 - 00:07:30,600] And that gave us an N plus one half.
+- [00:07:32,100 - 00:07:34,460] The one half is called the ground state energy,
+- [00:07:34,460 - 00:07:35,260] or the vacu-
+- [00:07:35,260 - 00:07:35,420] well,
+- [00:07:35,420 - 00:07:36,960] if it was a field theory,
+- [00:07:36,960 - 00:07:38,280] we would call it the vacuum energy.
+- [00:07:38,820 - 00:07:42,220] If it is a simple harmonic oscillator,
+- [00:07:42,220 - 00:07:44,540] we call it either the zero
+- [00:07:44,540 - 00:07:46,860] point energy or the ground state energy.
+- [00:07:48,500 - 00:07:51,880] And it's really a consequence of the uncertainty principle
+- [00:07:51,880 - 00:07:54,120] that you can't have both
+- [00:07:54,120 - 00:07:56,360] P and X simultaneously being zero.
+- [00:07:57,100 - 00:08:00,820] And since the Hamiltonian involves P squared plus X squared,
+- [00:08:00,920 - 00:08:02,700] there's no way they can cancel each other.
+- [00:08:03,560 - 00:08:05,770] So there's always going to be a
+- [00:08:05,770 - 00:08:07,980] residual bit of ground state energy there.
+- [00:08:08,660 - 00:08:10,370] You don't lose very much if you
+- [00:08:10,370 - 00:08:12,080] just cross it out and forget it.
+- [00:08:12,220 - 00:08:16,020] Because an additive constant in the energy of a system
+- [00:08:16,020 - 00:08:20,300] really doesn't change its equations of motion.
+- [00:08:23,580 - 00:08:25,960] So you can ignore it,
+- [00:08:25,960 - 00:08:27,280] but it is there,
+- [00:08:30,620 - 00:08:32,179] for some purposes.
+- [00:08:33,020 - 00:08:33,580] Alright,
+- [00:08:33,580 - 00:08:35,360] what I wanted to do was to show you-
+- [00:08:35,360 - 00:08:36,799] is there anything else?
+- [00:08:37,120 - 00:08:37,299] Yeah,
+- [00:08:37,299 - 00:08:40,299] there's one other important point,
+- [00:08:40,380 - 00:08:42,080] or equation,
+- [00:08:42,220 - 00:08:44,450] that went into showing that
+- [00:08:44,450 - 00:08:46,680] the A pluses and A minuses
+- [00:08:46,680 - 00:08:48,200] were raising and lowering operators.
+- [00:08:48,540 - 00:08:50,500] It was the commutation relations of
+- [00:08:50,500 - 00:08:52,460] the A plus and A minus.
+- [00:08:52,920 - 00:08:53,980] They're Axe rule.
+- [00:08:54,200 - 00:08:55,520] Whenever you see two things,
+- [00:08:55,520 - 00:08:56,080] commute them.
+- [00:08:57,100 - 00:08:57,640] Alright?
+- [00:08:59,600 - 00:09:00,140] Sometimes,
+- [00:09:00,140 - 00:09:00,600] of course,
+- [00:09:00,600 - 00:09:01,140] you get garbage.
+- [00:09:01,520 - 00:09:06,580] But the commutators are A minus with A plus,
+- [00:09:08,540 - 00:09:09,820] just equal to one.
+- [00:09:11,000 - 00:09:12,200] Had I not put this in the equation,
+- [00:09:12,220 - 00:09:13,150] if I had put the square
+- [00:09:13,150 - 00:09:14,080] roots of two omegas down there,
+- [00:09:14,200 - 00:09:16,620] the commutator would have been something a little messier.
+- [00:09:16,980 - 00:09:19,010] And so really the reason for dividing
+- [00:09:19,010 - 00:09:21,040] by square root of two omega here
+- [00:09:21,040 - 00:09:24,420] was to get rid of anything on the right-hand side,
+- [00:09:24,640 - 00:09:25,680] to divide it away.
+- [00:09:26,420 - 00:09:27,920] This commutation relation,
+- [00:09:30,199 - 00:09:32,120] together with the definition of n,
+- [00:09:33,319 - 00:09:36,720] tells you that n is quantized in integers,
+- [00:09:37,980 - 00:09:39,880] and the connection with the
+- [00:09:39,880 - 00:09:41,780] Hamiltonian is such that the Hamiltonian,
+- [00:09:42,220 - 00:09:42,800] the energy levels,
+- [00:09:42,800 - 00:09:44,060] are these.
+- [00:09:44,500 - 00:09:44,940] Question?
+- [00:09:45,320 - 00:09:45,480] Yeah?
+- [00:09:46,659 - 00:09:47,540] Last time,
+- [00:09:47,540 - 00:09:49,190] you didn't go in and explain
+- [00:09:49,190 - 00:09:50,840] why it went down to state zero,
+- [00:09:51,020 - 00:09:52,020] and you said you could take it back.
+- [00:09:52,060 - 00:09:52,180] Yeah.
+- [00:09:52,180 - 00:09:53,780] Why it stops at zero?
+- [00:09:54,080 - 00:09:54,340] No,
+- [00:09:54,340 - 00:09:55,380] why zero is included.
+- [00:09:55,680 - 00:09:56,020] Oh,
+- [00:09:56,020 - 00:09:57,820] why zero is included.
+- [00:09:58,220 - 00:09:58,660] Okay,
+- [00:09:58,660 - 00:09:59,380] we're going to do it.
+- [00:09:59,520 - 00:09:59,940] Yeah,
+- [00:09:59,940 - 00:10:00,560] okay.
+- [00:10:00,940 - 00:10:02,480] What we're going to do
+- [00:10:02,480 - 00:10:04,020] is we're going to demonstrate explicitly
+- [00:10:04,500 - 00:10:05,980] what the ground state is.
+- [00:10:06,160 - 00:10:07,520] That there is a ground state,
+- [00:10:07,740 - 00:10:09,700] and we'll find the ground state
+- [00:10:09,700 - 00:10:11,660] by actually solving the Schrodinger equation.
+- [00:10:12,220 - 00:10:14,120] And we'll see that there
+- [00:10:14,120 - 00:10:16,020] definitely is a state with zero.
+- [00:10:16,240 - 00:10:16,700] So,
+- [00:10:16,700 - 00:10:20,060] what is a wave function?
+- [00:10:20,380 - 00:10:22,240] A wave function in this context,
+- [00:10:22,560 - 00:10:26,230] let's just put parallel to this
+- [00:10:26,230 - 00:10:29,900] very tricky and clever operator structure here,
+- [00:10:30,020 - 00:10:32,160] let's write down the wave
+- [00:10:32,160 - 00:10:34,300] function description of the same thing.
+- [00:10:34,880 - 00:10:42,040] State vectors are replaced by wave functions
+- [00:10:42,220 - 00:10:43,520] which are functions of position.
+- [00:10:44,480 - 00:10:47,320] If we're talking about energy eigenstates,
+- [00:10:48,040 - 00:10:50,270] we could label the wave functions
+- [00:10:50,270 - 00:10:52,500] with a little n down here,
+- [00:10:53,220 - 00:10:55,940] indicating which integer they correspond to.
+- [00:10:56,120 - 00:10:57,220] The ground state,
+- [00:10:57,220 - 00:10:57,920] for example,
+- [00:10:57,920 - 00:10:59,620] will be psi zero.
+- [00:11:01,480 - 00:11:04,560] The first excited state would be psi one,
+- [00:11:04,560 - 00:11:05,500] and so forth.
+- [00:11:07,360 - 00:11:08,000] So,
+- [00:11:08,000 - 00:11:10,460] state vectors become wave functions.
+- [00:11:13,020 - 00:11:13,940] Operators,
+- [00:11:13,940 - 00:11:14,860] x,
+- [00:11:14,860 - 00:11:20,000] the operator x becomes just
+- [00:11:20,000 - 00:11:25,140] multiplication by the coordinate x.
+- [00:11:26,500 - 00:11:30,420] I'm trying to remember to use capital letters for operators
+- [00:11:30,420 - 00:11:34,580] and lowercase letters for just numbers.
+- [00:11:35,460 - 00:11:36,380] Lowercase.
+- [00:11:37,180 - 00:11:38,100] Okay,
+- [00:11:38,100 - 00:11:38,840] the momentum,
+- [00:11:41,760 - 00:11:44,040] is replaced by minus i,
+- [00:11:44,040 - 00:11:47,080] d by just derivative with respect to x.
+- [00:11:51,880 - 00:11:52,320] Again,
+- [00:11:52,320 - 00:11:53,810] there's an h-bar in there if
+- [00:11:53,810 - 00:11:55,300] you want to keep track of h-bars.
+- [00:11:56,000 - 00:11:56,440] Oh,
+- [00:11:56,440 - 00:11:58,100] if you do want to keep track of h-bars,
+- [00:11:58,100 - 00:11:59,040] here's where it goes,
+- [00:11:59,040 - 00:11:59,520] right here.
+- [00:12:02,060 - 00:12:04,760] And that's the only place where you
+- [00:12:04,760 - 00:12:07,460] have to modify what I've done here.
+- [00:12:07,720 - 00:12:08,080] Yeah,
+- [00:12:08,080 - 00:12:09,300] I guess maybe also,
+- [00:12:10,880 - 00:12:11,440] here,
+- [00:12:11,440 - 00:12:14,040] we want to put an h-bar downstairs here,
+- [00:12:14,040 - 00:12:14,500] I think.
+- [00:12:15,340 - 00:12:15,900] But,
+- [00:12:15,900 - 00:12:16,260] um,
+- [00:12:17,079 - 00:12:19,399] and you can always figure out where
+- [00:12:19,399 - 00:12:21,720] the h-bars go by using dimensional analysis.
+- [00:12:22,980 - 00:12:24,720] Using dimensional analysis and
+- [00:12:24,720 - 00:12:26,460] remembering the units of h-bar
+- [00:12:26,460 - 00:12:29,400] will tell you uniquely where to put the h-bars.
+- [00:12:30,280 - 00:12:30,840] Okay,
+- [00:12:30,840 - 00:12:31,600] so there's momentum.
+- [00:12:33,340 - 00:12:33,900] And,
+- [00:12:33,900 - 00:12:34,380] uh,
+- [00:12:34,380 - 00:12:36,260] let's check and see
+- [00:12:37,060 - 00:12:40,440] if there is a solution of,
+- [00:12:40,460 - 00:12:41,000] of the equation,
+- [00:12:41,680 - 00:12:42,700] a minus
+- [00:12:44,460 - 00:12:45,360] on psi
+- [00:12:45,360 - 00:12:47,020] is equal to zero.
+- [00:12:47,860 - 00:12:48,880] In other words,
+- [00:12:48,880 - 00:12:50,040] is there a state,
+- [00:12:54,040 - 00:12:54,700] You know,
+- [00:12:54,700 - 00:12:56,440] I can answer your question faster without,
+- [00:12:56,980 - 00:12:57,760] let me,
+- [00:12:57,760 - 00:12:58,200] let me,
+- [00:12:58,200 - 00:13:00,420] let me answer your question quickly without,
+- [00:13:00,580 - 00:13:02,760] and then come back to calculating.
+- [00:13:03,440 - 00:13:03,960] Um,
+- [00:13:04,660 - 00:13:06,820] we know that there has to be a state,
+- [00:13:07,460 - 00:13:08,920] which is the bottom state.
+- [00:13:08,920 - 00:13:11,720] We can't keep going down and down and down
+- [00:13:11,720 - 00:13:12,780] for the simple reason
+- [00:13:12,780 - 00:13:15,060] that the Hamiltonian is positive.
+- [00:13:15,760 - 00:13:17,660] It's p squared plus x squared.
+- [00:13:17,860 - 00:13:19,760] p squared plus omega squared x squared.
+- [00:13:19,980 - 00:13:22,840] An operator like that has no negative eigenvalues.
+- [00:13:23,700 - 00:13:24,960] Just as classically,
+- [00:13:24,960 - 00:13:26,360] it's either positive or zero,
+- [00:13:26,500 - 00:13:27,400] quantum mechanically,
+- [00:13:27,400 - 00:13:28,740] it also can't be negative.
+- [00:13:29,220 - 00:13:31,020] And so there's got to be a bottom.
+- [00:13:31,160 - 00:13:33,640] There's got to be a floor to the tower of,
+- [00:13:33,640 - 00:13:33,820] uh,
+- [00:13:33,980 - 00:13:35,180] of energy levels.
+- [00:13:36,100 - 00:13:36,620] Okay.
+- [00:13:36,620 - 00:13:38,640] How can we have a floor?
+- [00:13:38,940 - 00:13:40,580] The only way we can have a floor
+- [00:13:41,439 - 00:13:42,360] is if
+- [00:13:43,939 - 00:13:45,240] the bottom state,
+- [00:13:45,240 - 00:13:46,220] let's call it O,
+- [00:13:46,460 - 00:13:48,020] let's call it ground state,
+- [00:13:51,339 - 00:13:52,300] is annihilated
+- [00:13:52,900 - 00:13:54,920] by the annihilated means
+- [00:13:54,920 - 00:13:56,180] that you get zero
+- [00:13:56,980 - 00:13:58,460] when you hit it with a minus.
+- [00:13:59,100 - 00:14:00,600] If it didn't get zero,
+- [00:14:01,140 - 00:14:02,900] whatever you got on the right-hand side
+- [00:14:02,900 - 00:14:05,160] would be a state of one unit lower energy.
+- [00:14:05,460 - 00:14:06,520] There is no state.
+- [00:14:06,520 - 00:14:07,640] There is no state with one unit lower energy.
+- [00:14:07,760 - 00:14:09,140] The only way for that to happen
+- [00:14:09,140 - 00:14:11,620] is for this to just give zero.
+- [00:14:12,260 - 00:14:12,780] Now,
+- [00:14:12,780 - 00:14:13,440] once we know
+- [00:14:14,480 - 00:14:17,360] that a minus on O gives zero,
+- [00:14:17,940 - 00:14:19,700] then we can look at n.
+- [00:14:20,520 - 00:14:22,060] So let's look at n now.
+- [00:14:22,880 - 00:14:24,160] What does n do
+- [00:14:25,360 - 00:14:27,640] when it hits the bottom state?
+- [00:14:28,460 - 00:14:28,980] Well,
+- [00:14:28,980 - 00:14:30,200] it is by definition
+- [00:14:30,880 - 00:14:34,420] a plus a minus on O,
+- [00:14:34,640 - 00:14:36,100] but we already know that
+- [00:14:36,100 - 00:14:38,340] a minus on O gives zero,
+- [00:14:38,960 - 00:14:39,800] so this is zero.
+- [00:14:41,820 - 00:14:43,380] It's an eigenvector of n
+- [00:14:43,380 - 00:14:44,900] with zero eigenvalue.
+- [00:14:45,660 - 00:14:47,320] So there must be an eigen...
+- [00:14:47,320 - 00:14:49,980] The bottom state has to have
+- [00:14:49,980 - 00:14:51,660] zero value of n.
+- [00:14:54,020 - 00:14:55,700] That's an abstract argument,
+- [00:14:56,440 - 00:14:56,960] but,
+- [00:14:56,960 - 00:14:57,340] yeah.
+- [00:14:57,600 - 00:15:00,300] So if zero is an eigenvector of n,
+- [00:15:00,440 - 00:15:01,980] shouldn't there be an eigenvector of zero
+- [00:15:01,980 - 00:15:03,320] on the far right-hand side?
+- [00:15:03,660 - 00:15:04,180] Sorry?
+- [00:15:05,380 - 00:15:06,000] It's O.
+- [00:15:06,840 - 00:15:07,340] Hmm?
+- [00:15:08,220 - 00:15:08,720] Wait,
+- [00:15:08,720 - 00:15:08,920] wait,
+- [00:15:08,920 - 00:15:08,980] wait.
+- [00:15:09,140 - 00:15:10,360] This zero here,
+- [00:15:10,360 - 00:15:11,260] this state,
+- [00:15:11,420 - 00:15:13,300] and this are two different things.
+- [00:15:14,580 - 00:15:15,080] Right.
+- [00:15:15,080 - 00:15:16,440] That's the eigenvector.
+- [00:15:16,680 - 00:15:17,840] That's the eigenvector,
+- [00:15:17,920 - 00:15:19,300] and it's normalized to one,
+- [00:15:19,970 - 00:15:21,660] and it's not zero in any sense.
+- [00:15:21,720 - 00:15:23,240] It's just that its name is zero.
+- [00:15:23,700 - 00:15:24,300] You know,
+- [00:15:24,300 - 00:15:26,820] if I called my friend Art here zero,
+- [00:15:27,400 - 00:15:29,220] that wouldn't mean Art wasn't here
+- [00:15:29,220 - 00:15:30,380] or didn't exist.
+- [00:15:30,500 - 00:15:31,420] It would just mean I'm,
+- [00:15:31,420 - 00:15:31,760] you know,
+- [00:15:31,780 - 00:15:32,540] being unpleasant,
+- [00:15:32,540 - 00:15:33,560] I'm calling him zero.
+- [00:15:34,180 - 00:15:35,180] You can still write the
+- [00:15:35,180 - 00:15:36,180] ket over there if you want.
+- [00:15:37,020 - 00:15:37,460] Yeah,
+- [00:15:37,460 - 00:15:40,300] you can write zero as a ket,
+- [00:15:40,540 - 00:15:42,560] but you have to understand it's not this zero.
+- [00:15:43,560 - 00:15:44,320] It's just zero.
+- [00:15:44,540 - 00:15:46,180] So zero times is...
+- [00:15:46,180 - 00:15:49,460] Zero times anything is zero.
+- [00:15:49,640 - 00:15:50,240] So you can write...
+- [00:15:50,240 - 00:15:51,620] The fact is that it's a vector
+- [00:15:51,620 - 00:15:53,560] on the left-hand and right-hand side,
+- [00:15:53,700 - 00:15:56,040] so you can put the vector in there
+- [00:15:56,040 - 00:15:57,180] and it's just a zero vector.
+- [00:15:57,440 - 00:15:58,100] Thank you.
+- [00:15:58,220 - 00:15:58,520] Yeah,
+- [00:15:58,520 - 00:16:01,000] but you must not call it this vector.
+- [00:16:01,720 - 00:16:03,180] Whatever name you give it,
+- [00:16:03,180 - 00:16:04,440] you've got to give it some...
+- [00:16:04,440 - 00:16:06,510] The tradition is just not
+- [00:16:06,510 - 00:16:08,580] to write it as a vector,
+- [00:16:08,660 - 00:16:09,540] but just to call it zero.
+- [00:16:10,100 - 00:16:10,500] Yeah.
+- [00:16:12,880 - 00:16:14,860] In the abstract theory of vector spaces,
+- [00:16:15,180 - 00:16:17,160] you introduce a vector called zero,
+- [00:16:17,280 - 00:16:18,140] and it's sort of special.
+- [00:16:18,220 - 00:16:21,320] It's the only one that doesn't have a ket sign.
+- [00:16:21,600 - 00:16:22,360] But as you say,
+- [00:16:22,360 - 00:16:23,500] it is just another vector,
+- [00:16:23,680 - 00:16:24,800] a rather special one.
+- [00:16:25,560 - 00:16:25,960] Yeah.
+- [00:16:27,420 - 00:16:27,820] Okay.
+- [00:16:28,940 - 00:16:29,540] All right,
+- [00:16:29,540 - 00:16:30,600] so the bottom of the tower,
+- [00:16:30,720 - 00:16:31,560] the bottom of the...
+- [00:16:32,140 - 00:16:33,800] The bottom of the energy spectrum
+- [00:16:33,800 - 00:16:36,940] has to be energy h-bar omega times one-half
+- [00:16:36,940 - 00:16:39,560] with n equal to zero,
+- [00:16:40,340 - 00:16:41,380] big N equal to zero,
+- [00:16:41,960 - 00:16:42,940] also little n.
+- [00:16:43,840 - 00:16:45,140] But let's see if we can...
+- [00:16:45,140 - 00:16:47,880] See how far we can go in calculating
+- [00:16:47,880 - 00:16:49,420] all of the wave functions.
+- [00:16:49,940 - 00:16:52,180] Can we calculate the wave functions themselves?
+- [00:16:53,100 - 00:16:53,600] Now,
+- [00:16:53,600 - 00:16:54,600] you might ask,
+- [00:16:54,760 - 00:16:56,580] I can write a Schrodinger...
+- [00:16:56,580 - 00:16:57,920] I can write a Schrodinger equation.
+- [00:16:58,280 - 00:17:00,880] I just use for p in the top equation,
+- [00:17:01,000 - 00:17:01,540] I use p for the top equation,
+- [00:17:01,560 - 00:17:01,860] for t,
+- [00:17:01,860 - 00:17:02,880] d by dx.
+- [00:17:03,360 - 00:17:05,579] For a time-independent Schrodinger equation,
+- [00:17:06,220 - 00:17:10,240] the right-hand side is just the energy eigenvalue times psi.
+- [00:17:12,119 - 00:17:12,640] Question.
+- [00:17:13,079 - 00:17:14,519] Is it really true that
+- [00:17:14,519 - 00:17:15,960] you can only solve that equation?
+- [00:17:16,220 - 00:17:16,599] In fact,
+- [00:17:16,599 - 00:17:17,880] we could write down the equation.
+- [00:17:18,060 - 00:17:19,000] Let's write down the equation.
+- [00:17:20,940 - 00:17:22,660] Just time-independent Schro...
+- [00:17:22,660 - 00:17:23,119] Here it is.
+- [00:17:23,180 - 00:17:24,440] Time-independent Schrodinger equation.
+- [00:17:24,980 - 00:17:28,339] It's minus d by dx squared...
+- [00:17:29,280 - 00:17:29,800] Oh,
+- [00:17:29,800 - 00:17:29,980] boy.
+- [00:17:30,820 - 00:17:31,880] Ordinary derivative.
+- [00:17:33,360 - 00:17:34,560] Minus one-half.
+- [00:17:35,280 - 00:17:36,780] The one-half is the half
+- [00:17:36,780 - 00:17:38,280] in front of the Hamiltonian there.
+- [00:17:38,680 - 00:17:43,120] p squared is d second by dx squared,
+- [00:17:44,199 - 00:17:45,340] psi of x,
+- [00:17:47,080 - 00:17:49,080] plus the potential energy,
+- [00:17:49,220 - 00:17:53,340] plus omega squared x squared times psi of x.
+- [00:17:54,400 - 00:17:57,440] And if this is the time-independent Schrodinger equation,
+- [00:17:57,780 - 00:17:58,870] then what I want to
+- [00:17:58,870 - 00:17:59,960] do is to solve the equation.
+- [00:17:59,960 - 00:18:01,660] That this is equal to,
+- [00:18:01,660 - 00:18:02,480] let's call it e,
+- [00:18:02,620 - 00:18:04,020] for the eigenvalue for energy,
+- [00:18:04,740 - 00:18:05,620] times psi of x.
+- [00:18:08,920 - 00:18:10,740] That's the same as writing p
+- [00:18:10,740 - 00:18:12,560] squared plus omega squared x squared
+- [00:18:12,560 - 00:18:15,460] on a vector is equal to e times that vector.
+- [00:18:16,260 - 00:18:16,820] Okay.
+- [00:18:16,900 - 00:18:17,300] Now,
+- [00:18:17,300 - 00:18:19,120] if you know anything about differential equations,
+- [00:18:19,280 - 00:18:22,300] you'll know this is a second-order differential equation.
+- [00:18:23,260 - 00:18:25,970] You can always solve it for
+- [00:18:25,970 - 00:18:28,680] any value of the energy here.
+- [00:18:29,460 - 00:18:29,980] Okay.
+- [00:18:30,460 - 00:18:33,600] But what will happen for most values of the energy
+- [00:18:33,600 - 00:18:35,780] is the wave function will
+- [00:18:35,780 - 00:18:37,960] not go to zero at infinity.
+- [00:18:38,520 - 00:18:39,480] Even worse,
+- [00:18:39,480 - 00:18:42,340] it will exponentially explode and get big.
+- [00:18:42,440 - 00:18:43,660] It won't be normalizable.
+- [00:18:44,040 - 00:18:47,820] It will not have a finite probability under it.
+- [00:18:47,880 - 00:18:49,420] There's no way to normalize it.
+- [00:18:49,640 - 00:18:51,680] If you try to normalize it,
+- [00:18:52,580 - 00:18:54,460] it'll just be zero because you'll,
+- [00:18:54,460 - 00:18:54,800] you know,
+- [00:18:54,820 - 00:18:56,510] the integral under the square of
+- [00:18:56,510 - 00:18:58,200] the wave function will be infinite,
+- [00:18:58,200 - 00:18:59,880] to get rid of that infinity,
+- [00:18:59,880 - 00:19:00,900] you'll have to divide,
+- [00:19:01,060 - 00:19:02,660] you'll have to divide by it,
+- [00:19:02,780 - 00:19:05,800] and the wave function will just be zero everywheres.
+- [00:19:08,600 - 00:19:09,160] So,
+- [00:19:09,160 - 00:19:10,320] the rule is,
+- [00:19:10,320 - 00:19:11,780] one more rule,
+- [00:19:12,100 - 00:19:13,460] and we've talked about this,
+- [00:19:13,460 - 00:19:14,040] you know,
+- [00:19:14,040 - 00:19:14,660] last quarter,
+- [00:19:14,680 - 00:19:15,860] or three quarters ago,
+- [00:19:15,860 - 00:19:16,620] or whenever it was,
+- [00:19:16,800 - 00:19:19,980] is that what you mean by an honest vector here
+- [00:19:19,980 - 00:19:22,980] is one whose square integral,
+- [00:19:22,980 - 00:19:24,080] whose integral,
+- [00:19:24,240 - 00:19:25,100] the square of,
+- [00:19:25,100 - 00:19:27,380] which is square integrable,
+- [00:19:28,539 - 00:19:29,179] integral,
+- [00:19:29,179 - 00:19:30,500] psi star psi,
+- [00:19:30,500 - 00:19:32,480] equals one.
+- [00:19:33,940 - 00:19:34,580] Okay.
+- [00:19:35,440 - 00:19:37,280] There were some exceptions to this.
+- [00:19:37,740 - 00:19:40,620] For a particle moving on an infinite line,
+- [00:19:40,920 - 00:19:43,740] sometimes we introduce momentum states and position states,
+- [00:19:44,300 - 00:19:46,080] which are a little weird in this way,
+- [00:19:46,180 - 00:19:53,360] but we would like the total probability to be finite,
+- [00:19:53,520 - 00:19:55,440] certainly not exponentially exploding.
+- [00:19:56,060 - 00:19:56,700] So,
+- [00:19:58,200 - 00:20:01,800] this is one additional restriction,
+- [00:20:02,160 - 00:20:04,210] and it's when the wave
+- [00:20:04,210 - 00:20:06,260] functions are restricted in this manner,
+- [00:20:06,380 - 00:20:09,060] when they really form an honest and good vector space,
+- [00:20:10,600 - 00:20:13,180] then that's when the rest of this applies here.
+- [00:20:14,280 - 00:20:16,680] It only applies if we're interested
+- [00:20:16,680 - 00:20:19,080] in the square integrable wave functions,
+- [00:20:19,200 - 00:20:19,880] which we are,
+- [00:20:20,970 - 00:20:24,395] and so the point is that
+- [00:20:24,395 - 00:20:27,820] when we write down the Schrödinger equation,
+- [00:20:27,900 - 00:20:28,180] the Schrodinger equation,
+- [00:20:28,200 - 00:20:31,540] there are certain definite values of energy
+- [00:20:32,140 - 00:20:34,500] which will have square integrable wave functions.
+- [00:20:35,000 - 00:20:37,820] Those are the true honest eigenfunctions.
+- [00:20:41,360 - 00:20:44,200] If the wave function blows up and goes to infinity,
+- [00:20:44,380 - 00:20:45,100] we just throw them away.
+- [00:20:45,260 - 00:20:46,320] We say they're not in the space.
+- [00:20:47,900 - 00:20:48,420] Okay,
+- [00:20:48,420 - 00:20:50,460] let's see if we can find sine naught,
+- [00:20:50,620 - 00:20:52,080] the ground state wave function.
+- [00:20:52,980 - 00:20:56,120] We could write the original Schrödinger equation for it.
+- [00:20:59,020 - 00:21:00,820] But we can be smarter than that.
+- [00:21:01,540 - 00:21:03,980] Instead of writing h on psi equals e psi,
+- [00:21:04,260 - 00:21:05,600] let's write a smarter equation,
+- [00:21:05,600 - 00:21:06,660] a simpler equation.
+- [00:21:07,280 - 00:21:08,880] Let's use the fact that we know
+- [00:21:10,379 - 00:21:12,320] that the annihilation operator,
+- [00:21:12,440 - 00:21:13,240] the lowering operator,
+- [00:21:13,240 - 00:21:13,980] excuse me,
+- [00:21:13,980 - 00:21:16,660] the lowering operator on the ground state,
+- [00:21:16,860 - 00:21:18,380] I don't need to call this sine naught,
+- [00:21:18,440 - 00:21:19,020] just naught,
+- [00:21:19,020 - 00:21:20,960] gives zero.
+- [00:21:23,360 - 00:21:23,840] Okay,
+- [00:21:23,840 - 00:21:24,740] what is A minus?
+- [00:21:25,120 - 00:21:26,180] A minus,
+- [00:21:26,180 - 00:21:29,060] I just want to get my signs right,
+- [00:21:35,420 - 00:21:40,920] A minus is proportional to p minus i omega x.
+- [00:21:42,380 - 00:21:42,960] Now,
+- [00:21:42,960 - 00:21:45,280] there's some factors in the denominator there,
+- [00:21:45,360 - 00:21:46,620] but we don't care about them
+- [00:21:47,130 - 00:21:49,615] because we're just going to write that
+- [00:21:49,615 - 00:21:52,100] this times psi of x equals zero.
+- [00:21:53,120 - 00:21:56,020] And numerical factors like square roots of omega,
+- [00:21:56,180 - 00:21:57,860] they don't matter in this equation.
+- [00:21:58,440 - 00:22:00,220] Just multiply through by them.
+- [00:22:00,600 - 00:22:01,380] And now,
+- [00:22:01,380 - 00:22:02,620] remember what p is.
+- [00:22:02,840 - 00:22:05,260] p is minus i d by dx.
+- [00:22:10,880 - 00:22:13,620] Minus i d by dx,
+- [00:22:15,780 - 00:22:19,580] minus i omega x times psi of x equals zero.
+- [00:22:19,860 - 00:22:21,350] Now we have a much
+- [00:22:21,350 - 00:22:22,840] simpler equation than we had before.
+- [00:22:23,060 - 00:22:24,960] It doesn't even have any second derivatives in it.
+- [00:22:24,960 - 00:22:27,460] It only has first derivatives in it.
+- [00:22:28,720 - 00:22:30,400] So we can try to solve it.
+- [00:22:32,120 - 00:22:35,560] The trick for solving an equation of motion like this,
+- [00:22:36,820 - 00:22:38,180] anybody know what the trick is?
+- [00:22:41,140 - 00:22:43,130] There's only a finite number
+- [00:22:43,130 - 00:22:45,120] of tricks in solving differential equations.
+- [00:22:45,920 - 00:22:47,440] There's a handful of tricks.
+- [00:22:49,000 - 00:22:49,600] What's that?
+- [00:22:49,860 - 00:22:50,740] Separation of variables.
+- [00:22:50,920 - 00:22:51,380] No,
+- [00:22:51,380 - 00:22:52,180] there's only one variable.
+- [00:22:52,710 - 00:22:53,460] What are you going to separate?
+- [00:22:53,460 - 00:22:54,360] That's it.
+- [00:22:54,520 - 00:22:55,100] Wrong hand.
+- [00:22:55,320 - 00:22:55,560] Right.
+- [00:22:56,000 - 00:22:56,620] Okay.
+- [00:22:57,680 - 00:23:01,680] One very standard trick for linear equations like this
+- [00:23:01,680 - 00:23:04,150] is to write the wave function
+- [00:23:04,150 - 00:23:06,620] as the exponential of something else.
+- [00:23:07,900 - 00:23:08,520] Now,
+- [00:23:08,520 - 00:23:10,200] this is just a matter of experience.
+- [00:23:10,480 - 00:23:13,580] I can't tell you how to guess that.
+- [00:23:13,940 - 00:23:14,380] Yeah,
+- [00:23:14,380 - 00:23:16,030] you can guess it because
+- [00:23:16,030 - 00:23:17,680] when you multiply through by dx,
+- [00:23:17,860 - 00:23:18,580] you get x dx.
+- [00:23:19,260 - 00:23:21,350] So the equation comes out
+- [00:23:21,350 - 00:23:23,440] as a derivative over a derivative.
+- [00:23:23,440 - 00:23:23,680] Over a,
+- [00:23:23,680 - 00:23:24,840] you know,
+- [00:23:24,840 - 00:23:25,180] d,
+- [00:23:25,180 - 00:23:26,020] over a,
+- [00:23:26,020 - 00:23:26,680] you know.
+- [00:23:26,720 - 00:23:27,140] Right.
+- [00:23:27,260 - 00:23:29,020] But it's the form of a logarithm.
+- [00:23:29,280 - 00:23:29,440] Yeah,
+- [00:23:29,440 - 00:23:29,780] exactly.
+- [00:23:30,220 - 00:23:30,460] All right.
+- [00:23:30,500 - 00:23:32,050] So this happens to be the
+- [00:23:32,050 - 00:23:33,600] kind of equation that you solve.
+- [00:23:34,200 - 00:23:35,840] You can solve it in many ways,
+- [00:23:35,840 - 00:23:38,280] but one way of solving it is just to write
+- [00:23:38,280 - 00:23:42,170] psi of x is equal to e to some f of
+- [00:23:42,170 - 00:23:46,060] x and try to figure out what f of x is.
+- [00:23:46,960 - 00:23:47,500] All right.
+- [00:23:47,500 - 00:23:48,220] So let's try it.
+- [00:23:49,660 - 00:23:50,600] First of all,
+- [00:23:50,600 - 00:23:51,000] of course,
+- [00:23:51,000 - 00:23:52,560] we can get rid of the i's here.
+- [00:23:53,440 - 00:23:55,760] i and i factor out.
+- [00:23:57,660 - 00:23:58,220] Furthermore,
+- [00:23:58,220 - 00:24:00,440] we can get rid of the minus
+- [00:24:00,440 - 00:24:02,660] sign because both of them have minus signs.
+- [00:24:03,420 - 00:24:06,320] And now what's the derivative of psi of x?
+- [00:24:06,680 - 00:24:09,400] To calculate the derivative of psi of x,
+- [00:24:09,400 - 00:24:12,720] we simply differentiate,
+- [00:24:12,760 - 00:24:15,180] and we find that let's call it psi prime,
+- [00:24:15,180 - 00:24:16,760] which means the derivative,
+- [00:24:17,380 - 00:24:19,100] is equal to f prime.
+- [00:24:19,180 - 00:24:21,220] That's the derivative of f times
+- [00:24:21,220 - 00:24:23,260] e to the f of x.
+- [00:24:24,160 - 00:24:26,420] To differentiate an exponential,
+- [00:24:26,420 - 00:24:29,140] you just differentiate the thing that the,
+- [00:24:29,140 - 00:24:31,180] in the argument of the exponential here,
+- [00:24:31,180 - 00:24:33,960] and multiply again by f of x,
+- [00:24:34,040 - 00:24:35,340] e to the f of x.
+- [00:24:36,480 - 00:24:36,960] Okay.
+- [00:24:37,220 - 00:24:38,440] That's psi prime.
+- [00:24:38,740 - 00:24:40,000] That's this here.
+- [00:24:40,680 - 00:24:42,400] And then we add to that,
+- [00:24:42,400 - 00:24:46,600] let's,
+- [00:24:46,600 - 00:24:49,390] we want to add to that
+- [00:24:49,390 - 00:24:52,180] plus omega x psi of x.
+- [00:24:53,679 - 00:24:59,379] Which means we're going to add to this
+- [00:24:59,379 - 00:25:05,080] plus omega x e to the f of x.
+- [00:25:06,720 - 00:25:08,320] Now you see what Michael was saying,
+- [00:25:08,320 - 00:25:11,500] that the e to the f of x factors out.
+- [00:25:12,200 - 00:25:13,380] We can get rid of it.
+- [00:25:16,219 - 00:25:17,480] And that's where the trick,
+- [00:25:17,480 - 00:25:19,200] that's why the trick was done in the first place.
+- [00:25:20,620 - 00:25:22,000] Let's get rid of all of this here.
+- [00:25:22,000 - 00:25:29,230] And our equation is just df
+- [00:25:29,230 - 00:25:36,460] dx plus omega x equals zero.
+- [00:25:38,240 - 00:25:39,080] That's it.
+- [00:25:39,880 - 00:25:40,780] Equals zero.
+- [00:25:45,300 - 00:25:48,440] The fdx came from here,
+- [00:25:48,440 - 00:25:50,080] plus omega x.
+- [00:25:50,160 - 00:25:51,500] They both multiplied psi.
+- [00:25:51,500 - 00:25:52,880] So we got rid of psi.
+- [00:25:54,500 - 00:25:55,760] And that's our equation.
+- [00:25:56,240 - 00:25:56,800] Alright,
+- [00:25:56,800 - 00:25:58,200] this is really easy to solve.
+- [00:25:58,760 - 00:26:02,640] A function whose derivative is a linear thing,
+- [00:26:02,640 - 00:26:05,060] what kind of function is that?
+- [00:26:07,280 - 00:26:08,460] A quadratic thing.
+- [00:26:09,060 - 00:26:11,190] So the solution is quite clearly
+- [00:26:11,190 - 00:26:13,320] going to be proportional to x squared.
+- [00:26:13,640 - 00:26:14,540] In fact,
+- [00:26:14,540 - 00:26:17,470] it's going to be f of
+- [00:26:17,470 - 00:26:20,400] x is equal to one half,
+- [00:26:21,200 - 00:26:22,960] omega x squared,
+- [00:26:22,960 - 00:26:24,920] plus a constant.
+- [00:26:25,160 - 00:26:26,580] Let's put the constant in there.
+- [00:26:26,680 - 00:26:27,840] Let's put the constant in there.
+- [00:26:27,920 - 00:26:28,400] And that's all.
+- [00:26:28,740 - 00:26:29,620] Not the minus.
+- [00:26:29,920 - 00:26:30,260] Hmm?
+- [00:26:30,740 - 00:26:31,300] Minus,
+- [00:26:31,300 - 00:26:31,600] minus,
+- [00:26:31,600 - 00:26:31,880] minus.
+- [00:26:32,160 - 00:26:32,740] Thank you.
+- [00:26:34,520 - 00:26:35,440] Minus one half,
+- [00:26:35,440 - 00:26:36,880] omega x squared.
+- [00:26:37,760 - 00:26:40,880] That tells us that psi of x is
+- [00:26:40,880 - 00:26:44,000] equal to e to the minus one half,
+- [00:26:44,000 - 00:26:46,740] omega x squared.
+- [00:26:46,840 - 00:26:47,840] What about the constant?
+- [00:26:49,020 - 00:26:49,580] Well,
+- [00:26:49,580 - 00:26:50,640] we can add it in,
+- [00:26:50,640 - 00:26:52,860] but that just puts a numerical
+- [00:26:52,860 - 00:26:55,080] constant in front of the exponential.
+- [00:26:55,700 - 00:26:57,990] Since I haven't bothered worrying
+- [00:26:57,990 - 00:27:00,280] too much about normalizing it,
+- [00:27:00,280 - 00:27:02,380] I'm not going to bother with the constant.
+- [00:27:02,540 - 00:27:05,340] Numerical constant out in front is there.
+- [00:27:07,500 - 00:27:08,900] It's got a one over
+- [00:27:08,900 - 00:27:10,300] square root of omega in it,
+- [00:27:10,300 - 00:27:13,800] but it's not terribly interesting for our purposes.
+- [00:27:14,400 - 00:27:16,280] This is psi naught.
+- [00:27:16,280 - 00:27:18,480] Pi naught of x.
+- [00:27:18,740 - 00:27:22,560] And notice that it goes to zero very,
+- [00:27:22,560 - 00:27:24,240] very fast with x.
+- [00:27:24,480 - 00:27:27,360] e to the minus x squared.
+- [00:27:27,980 - 00:27:29,200] It's a Gaussian.
+- [00:27:30,560 - 00:27:37,080] It's a bell-shaped curve that goes to
+- [00:27:37,080 - 00:27:43,600] zero as e to the minus one half,
+- [00:27:43,600 - 00:27:45,040] omega x squared.
+- [00:27:45,040 - 00:27:46,460] And it's very,
+- [00:27:46,460 - 00:27:47,900] very square integrable.
+- [00:27:48,060 - 00:27:48,760] I mean,
+- [00:27:48,760 - 00:27:52,300] if we square it and integrate it,
+- [00:27:52,300 - 00:27:53,680] it's extremely convergent.
+- [00:27:54,760 - 00:27:57,040] And so we've succeeded in finding...
+- [00:27:57,040 - 00:27:59,260] Now we could go back and check
+- [00:27:59,260 - 00:28:01,480] that the original Schrodinger equation is satisfied.
+- [00:28:02,560 - 00:28:03,500] In other words,
+- [00:28:03,500 - 00:28:07,370] we could plug this wave function into the Schrodinger
+- [00:28:07,370 - 00:28:11,240] Hamiltonian up above and calculate what the energy eigenvalue is.
+- [00:28:11,480 - 00:28:13,080] But we already know what it is.
+- [00:28:13,080 - 00:28:16,260] It's going to be omega times one half.
+- [00:28:17,340 - 00:28:20,300] We know that from all the algebraic tricks over here.
+- [00:28:20,480 - 00:28:25,860] So if we stuck this function back into the Schrodinger,
+- [00:28:25,860 - 00:28:27,200] into this Schrodinger equation,
+- [00:28:27,200 - 00:28:30,240] we would discover that e is equal to one half.
+- [00:28:30,480 - 00:28:31,620] Just by putting it in,
+- [00:28:31,620 - 00:28:32,420] plugging it in,
+- [00:28:32,420 - 00:28:33,540] and doing it.
+- [00:28:34,860 - 00:28:37,800] So we know the ground state wave function.
+- [00:28:38,520 - 00:28:41,420] We have one eigenvector of the energy.
+- [00:28:43,860 - 00:28:46,000] We see what its physical properties are.
+- [00:28:46,240 - 00:28:48,340] It's concentrated near the origin.
+- [00:28:48,820 - 00:28:52,240] It's very smooth because a Gaussian function is very smooth.
+- [00:28:53,420 - 00:28:55,280] It's concentrated near the origin.
+- [00:28:55,920 - 00:28:58,650] It does what you might expect a ground
+- [00:28:58,650 - 00:29:01,380] state wave function of a harmonic oscillator to do.
+- [00:29:01,460 - 00:29:02,720] It just sits at the origin.
+- [00:29:02,960 - 00:29:04,600] It sits very close to the origin.
+- [00:29:04,840 - 00:29:06,540] Or at least by close now,
+- [00:29:06,540 - 00:29:08,760] I mean that it's concentrated near the origin.
+- [00:29:10,800 - 00:29:11,340] And,
+- [00:29:11,340 - 00:29:11,620] um,
+- [00:29:11,620 - 00:29:12,080] yeah.
+- [00:29:12,080 - 00:29:12,680] Yeah,
+- [00:29:12,680 - 00:29:13,940] it's the ground state.
+- [00:29:14,460 - 00:29:16,300] What about the first excited state?
+- [00:29:16,780 - 00:29:19,060] I'll do the first excited state for you.
+- [00:29:19,460 - 00:29:20,040] It's very,
+- [00:29:20,040 - 00:29:21,220] it's almost trivial.
+- [00:29:21,480 - 00:29:23,790] And then you can go home and have
+- [00:29:23,790 - 00:29:26,100] a lot of fun calculating the next 50 states.
+- [00:29:27,260 - 00:29:27,700] It's,
+- [00:29:27,700 - 00:29:27,820] uh,
+- [00:29:27,820 - 00:29:30,300] sort of mindless,
+- [00:29:30,300 - 00:29:30,640] um,
+- [00:29:30,640 - 00:29:32,040] fun.
+- [00:29:32,240 - 00:29:33,160] But how do you do it?
+- [00:29:34,920 - 00:29:36,270] It's how you do it that's
+- [00:29:36,270 - 00:29:37,620] more interesting than what you get.
+- [00:29:37,840 - 00:29:38,180] Well,
+- [00:29:38,180 - 00:29:38,620] I don't know,
+- [00:29:38,620 - 00:29:39,300] they're both interesting.
+- [00:29:39,300 - 00:29:41,580] But you do it by saying,
+- [00:29:41,580 - 00:29:41,880] look,
+- [00:29:41,880 - 00:29:44,800] I know what the first excited state is abstractly.
+- [00:29:45,800 - 00:29:48,660] Abstractly the first excited state is equal
+- [00:29:48,660 - 00:29:51,520] to A plus times the ground state.
+- [00:29:52,180 - 00:29:53,800] I know what the ground state is
+- [00:29:53,800 - 00:29:55,420] and I know what A plus is.
+- [00:29:55,740 - 00:29:58,720] So let's just apply A plus to the ground state.
+- [00:29:58,900 - 00:29:59,620] Here's the ground state.
+- [00:30:00,940 - 00:30:04,940] A plus is P plus I omega X.
+- [00:30:05,760 - 00:30:07,040] And that will tell us
+- [00:30:07,040 - 00:30:08,320] what the first excited state is.
+- [00:30:08,480 - 00:30:08,960] All right.
+- [00:30:09,300 - 00:30:10,200] So in terms of wave functions,
+- [00:30:11,149 - 00:30:15,334] psi 1 of X is equal or
+- [00:30:15,334 - 00:30:19,520] proportional to P plus I omega X.
+- [00:30:22,940 - 00:30:27,510] Now P is minus I d
+- [00:30:27,510 - 00:30:32,080] by dx plus I omega X
+- [00:30:38,700 - 00:30:46,160] on E to the minus one half omega X squared.
+- [00:30:49,460 - 00:30:50,850] So all we have to do
+- [00:30:50,850 - 00:30:52,240] now is to calculate a derivative.
+- [00:30:52,800 - 00:30:53,320] But,
+- [00:30:53,320 - 00:30:53,540] you know,
+- [00:30:53,540 - 00:30:54,620] I already did this.
+- [00:30:54,820 - 00:30:56,040] I already did this.
+- [00:30:56,240 - 00:30:58,640] We did it with the opposite sign here.
+- [00:30:58,680 - 00:31:01,220] We did it with A minus to get zero.
+- [00:31:02,300 - 00:31:04,280] If I do it with
+- [00:31:04,280 - 00:31:06,260] the opposite sign and get zero,
+- [00:31:06,780 - 00:31:09,400] that means if I do it with the sign here,
+- [00:31:09,620 - 00:31:10,930] I'm just going to get twice
+- [00:31:10,930 - 00:31:12,240] the answer that I would get.
+- [00:31:16,840 - 00:31:17,520] Go back.
+- [00:31:18,280 - 00:31:21,580] I did this operation on here and got zero.
+- [00:31:21,760 - 00:31:23,120] That's the way I solved the equation.
+- [00:31:23,780 - 00:31:24,380] All right.
+- [00:31:24,380 - 00:31:28,200] So if this plus this acting on this gives zero,
+- [00:31:28,200 - 00:31:31,060] then it must mean that this term and this term
+- [00:31:31,060 - 00:31:32,980] give the same thing apart from the sign.
+- [00:31:33,840 - 00:31:35,240] But once I know that,
+- [00:31:35,320 - 00:31:38,600] then I know that when you
+- [00:31:38,600 - 00:31:41,880] change the sign of the over here,
+- [00:31:43,760 - 00:31:45,280] instead of having them cancel,
+- [00:31:46,180 - 00:31:47,740] they'll just double the answer.
+- [00:31:48,660 - 00:31:53,500] So this is just going to be twice I omega.
+- [00:31:54,040 - 00:31:55,100] That's not so interesting.
+- [00:31:55,260 - 00:31:57,620] It's just a numerical factor.
+- [00:31:58,200 - 00:31:59,140] Happens to be imaginary,
+- [00:31:59,140 - 00:31:59,900] but who cares?
+- [00:32:00,140 - 00:32:02,920] But it has X times E to
+- [00:32:02,920 - 00:32:05,700] the minus one half omega X squared.
+- [00:32:07,120 - 00:32:08,820] So structurally it's different.
+- [00:32:09,000 - 00:32:10,700] It's not just the Gaussian function.
+- [00:32:11,160 - 00:32:13,620] It's the Gaussian function times X.
+- [00:32:13,900 - 00:32:14,940] What does that look like?
+- [00:32:15,960 - 00:32:17,140] That looks like this.
+- [00:32:20,980 - 00:32:21,540] Again,
+- [00:32:21,540 - 00:32:23,380] it's very small far away.
+- [00:32:23,880 - 00:32:25,750] The fact that there's an X
+- [00:32:25,750 - 00:32:27,620] here doesn't make it big far away,
+- [00:32:27,620 - 00:32:29,360] because it's totally overwhelmed by the
+- [00:32:29,360 - 00:32:31,100] E to the minus X squared.
+- [00:32:32,360 - 00:32:33,680] But it has to be minus.
+- [00:32:34,380 - 00:32:37,020] It has to be minus when X is negative.
+- [00:32:37,500 - 00:32:37,760] Yeah,
+- [00:32:37,760 - 00:32:38,200] good.
+- [00:32:38,360 - 00:32:38,900] It's negative,
+- [00:32:38,900 - 00:32:39,220] yeah.
+- [00:32:40,840 - 00:32:41,320] Well,
+- [00:32:41,320 - 00:32:43,640] it's twice an imaginary number times omega.
+- [00:32:44,460 - 00:32:44,940] Right.
+- [00:32:46,000 - 00:32:47,780] But whatever it does on one side,
+- [00:32:47,860 - 00:32:49,660] it has the opposite sign on the other side.
+- [00:32:52,020 - 00:32:53,540] It's an odd function.
+- [00:32:53,680 - 00:32:55,220] Odd meaning it changes sign
+- [00:32:55,220 - 00:32:56,760] when it goes through the origin.
+- [00:32:57,620 - 00:32:57,920] Right.
+- [00:32:58,080 - 00:33:00,780] So let's make it negative on this side.
+- [00:33:00,920 - 00:33:03,680] It goes down and then comes up
+- [00:33:03,680 - 00:33:06,440] zero and then goes to zero again.
+- [00:33:07,220 - 00:33:08,140] It's odd,
+- [00:33:08,140 - 00:33:11,060] meaning to say that when you reflect it,
+- [00:33:11,140 - 00:33:12,140] it changes sign.
+- [00:33:13,140 - 00:33:15,020] It's anti-symmetric.
+- [00:33:15,180 - 00:33:16,720] You would say it's anti-symmetric.
+- [00:33:17,660 - 00:33:18,860] The probability,
+- [00:33:18,860 - 00:33:21,080] which is the square of this,
+- [00:33:21,080 - 00:33:22,480] is symmetric.
+- [00:33:22,620 - 00:33:23,970] But notice that the probability
+- [00:33:23,970 - 00:33:25,320] goes to zero at the origin.
+- [00:33:26,219 - 00:33:27,749] If you're in the first
+- [00:33:27,749 - 00:33:29,280] excited state of the harmonic oscillator,
+- [00:33:29,480 - 00:33:31,570] the probability that you find the
+- [00:33:31,570 - 00:33:33,660] oscillator at the origin is zero.
+- [00:33:36,220 - 00:33:37,260] Interesting fact.
+- [00:33:40,500 - 00:33:42,140] That's the first excited state.
+- [00:33:43,399 - 00:33:46,540] The ground state had no nodes.
+- [00:33:46,900 - 00:33:50,180] A node means that the wave function is zero somewheres.
+- [00:33:50,480 - 00:33:52,560] The ground state had no nodes.
+- [00:33:52,920 - 00:33:55,300] The first excited state has no nodes.
+- [00:34:00,800 - 00:34:19,659] It will only include a big wave.
+- [00:34:19,659 - 00:34:20,880] The second excited state's not negative.
+- [00:34:20,900 - 00:34:21,159] It's just a drift.
+- [00:34:21,179 - 00:34:21,199] The
+- [00:34:21,199 - 00:34:22,420] second excited state was theulator.
+- [00:34:22,420 - 00:34:22,659] term,
+- [00:34:22,659 - 00:34:25,400] x cubed after a while.
+- [00:34:25,400 - 00:34:28,940] Each time you'll get a higher and higher order
+- [00:34:28,940 - 00:34:32,960] polynomial and each time you'll add a node.
+- [00:34:32,960 - 00:34:35,060] So the next wave function,
+- [00:34:35,060 - 00:34:35,480] the spin
+- [00:34:35,480 - 00:34:40,120] of the the second excited state looks
+- [00:34:40,120 - 00:34:45,860] looks has two nodes.
+- [00:34:45,860 - 00:34:49,120] The third one has three nodes.
+- [00:34:49,120 - 00:34:53,980] And if you work out the
+- [00:34:53,980 - 00:34:54,840] 17th,
+- [00:34:54,840 - 00:34:56,380] it looks something like this.
+- [00:34:56,380 - 00:35:02,120] Each time you act with a plus,
+- [00:35:02,120 - 00:35:03,720] you wind up
+- [00:35:03,720 - 00:35:06,240] pushing the wave function out more.
+- [00:35:06,240 - 00:35:07,660] For example,
+- [00:35:07,660 - 00:35:08,780] zero,
+- [00:35:08,780 - 00:35:09,760] the ground state,
+- [00:35:09,760 - 00:35:10,040] was
+- [00:35:10,040 - 00:35:11,740] concentrated near the center.
+- [00:35:11,740 - 00:35:16,660] The factor of x here tended to push it
+- [00:35:16,660 - 00:35:19,980] out a little bit Why does it push it out?
+- [00:35:19,980 - 00:35:22,200] Because X is bigger far away than it is
+- [00:35:22,200 - 00:35:24,520] nearby and so pushes it out.
+- [00:35:24,520 - 00:35:29,640] After you've done 17 factors or maybe it's 24 or
+- [00:35:29,640 - 00:35:29,880] whatever,
+- [00:35:29,880 - 00:35:31,510] you'll find that the wave function
+- [00:35:31,510 - 00:35:33,140] is pushed out near the wings
+- [00:35:33,780 - 00:35:35,220] small near the origin,
+- [00:35:35,220 - 00:35:36,720] oscillating,
+- [00:35:36,720 - 00:35:37,520] and then,
+- [00:35:37,520 - 00:35:39,600] and then plop goes to
+- [00:35:39,600 - 00:35:39,860] zero
+- [00:35:41,680 - 00:35:44,140] either symmetric or anti-symmetric
+- [00:35:45,140 - 00:35:47,280] either symmetric or anti-symmetric
+- [00:35:47,280 - 00:35:49,980] and as you go up
+- [00:35:49,980 - 00:35:51,520] you get more and more wiggles
+- [00:35:51,520 - 00:35:55,500] and the whole thing gets pushed out further and further
+- [00:35:55,500 - 00:35:57,380] what do the wiggles mean?
+- [00:35:57,600 - 00:35:59,380] what's the implication of the wiggles?
+- [00:36:01,820 - 00:36:03,640] wiggles mean momentum
+- [00:36:05,860 - 00:36:07,660] what's the implication of
+- [00:36:07,660 - 00:36:09,720] it being far away from the origin?
+- [00:36:10,920 - 00:36:12,080] potential energy
+- [00:36:12,080 - 00:36:14,880] so as you keep exciting it
+- [00:36:14,880 - 00:36:18,000] you create more and more potential energy
+- [00:36:18,000 - 00:36:19,890] by pushing the wave function
+- [00:36:19,890 - 00:36:21,780] out where x squared is large
+- [00:36:21,780 - 00:36:25,340] but at the same time you create more and more
+- [00:36:26,280 - 00:36:28,220] momentum as that oscillator
+- [00:36:28,220 - 00:36:29,540] swings through the origin
+- [00:36:30,340 - 00:36:31,880] what's happening is
+- [00:36:32,700 - 00:36:34,780] the oscillator is trying to do what
+- [00:36:34,780 - 00:36:36,860] classical physics tells you it ought to do
+- [00:36:36,860 - 00:36:38,860] that the higher the energy
+- [00:36:38,860 - 00:36:41,700] the more likely it is to be found far away
+- [00:36:41,700 - 00:36:43,600] but it also may be found close
+- [00:36:43,600 - 00:36:44,770] and if it's found close it
+- [00:36:44,770 - 00:36:45,940] ought to have a high momentum
+- [00:36:47,680 - 00:36:49,360] so that's why it tends to
+- [00:36:49,360 - 00:36:51,040] oscillate very quickly near the origin
+- [00:36:51,040 - 00:36:52,480] and more slowly far away
+- [00:36:53,700 - 00:36:55,780] but that's the basic physics of it
+- [00:36:57,000 - 00:36:58,800] I don't know if I drew it well
+- [00:36:58,800 - 00:37:01,580] it should oscillate more rapidly near the center
+- [00:37:06,020 - 00:37:07,760] and less rapidly far away
+- [00:37:07,760 - 00:37:08,840] just indirectly
+- [00:37:08,860 - 00:37:10,840] indicating the fact when it swings through the origin
+- [00:37:10,840 - 00:37:12,200] of course it has more momentum
+- [00:37:14,740 - 00:37:15,840] okay that's uh
+- [00:37:15,840 - 00:37:17,720] those are the first two wave functions
+- [00:37:17,720 - 00:37:18,120] yes
+- [00:37:18,120 - 00:37:20,680] um so it seems like uh
+- [00:37:20,680 - 00:37:22,260] as n becomes very large
+- [00:37:22,260 - 00:37:24,330] uh the correspondence principle does not
+- [00:37:24,330 - 00:37:26,400] hold for the simple harmonic oscillator
+- [00:37:26,400 - 00:37:28,560] what would you say the correspondence principle is?
+- [00:37:28,820 - 00:37:30,590] um that when n becomes very
+- [00:37:30,590 - 00:37:32,360] large it looks like a classical
+- [00:37:32,360 - 00:37:33,140] it does well
+- [00:37:33,140 - 00:37:34,740] it and in fact
+- [00:37:34,740 - 00:37:37,500] what you have to do to see the classical motion
+- [00:37:38,120 - 00:37:38,840] is you have to see the classical motion
+- [00:37:38,840 - 00:37:40,680] you have to take wave packets
+- [00:37:40,680 - 00:37:43,800] you have to superpose many energy levels
+- [00:37:45,160 - 00:37:46,140] for example
+- [00:37:46,839 - 00:37:48,840] if you take the ground state
+- [00:37:48,840 - 00:37:49,960] start with the ground state
+- [00:37:53,840 - 00:37:55,720] that's a nice smooth wave packet
+- [00:37:56,359 - 00:37:57,720] now displace it
+- [00:37:58,240 - 00:37:59,920] displace it off to the side here
+- [00:38:00,760 - 00:38:02,400] it's no longer the ground state
+- [00:38:02,400 - 00:38:04,740] in fact it's not even an energy eigenstate altogether
+- [00:38:05,640 - 00:38:07,200] it does have an average energy
+- [00:38:08,840 - 00:38:09,240] but now
+- [00:38:09,939 - 00:38:12,720] take the time dependent schrodinger equation
+- [00:38:13,520 - 00:38:15,700] the time dependent schrodinger equation
+- [00:38:15,919 - 00:38:19,280] has every energy level oscillate with a different frequency
+- [00:38:20,040 - 00:38:21,260] the result is
+- [00:38:21,260 - 00:38:24,120] that this wave function is not time independent
+- [00:38:24,120 - 00:38:27,500] and what happens it starts to swing back and forth
+- [00:38:28,220 - 00:38:29,760] it starts to swing back and forth
+- [00:38:29,760 - 00:38:31,440] as it swings near the center
+- [00:38:31,440 - 00:38:33,460] it gets lots and lots of wiggles
+- [00:38:33,460 - 00:38:35,600] but it stays of the same general shape
+- [00:38:38,840 - 00:38:39,120] wiggles,
+- [00:38:39,120 - 00:38:41,440] and then it comes out this side after a while,
+- [00:38:41,440 - 00:38:42,940] nice and smooth again,
+- [00:38:42,940 - 00:38:44,210] and then it swings back
+- [00:38:44,210 - 00:38:45,480] and forth and back and forth.
+- [00:38:46,020 - 00:38:48,220] And it looks very much like a classical oscillator.
+- [00:38:48,780 - 00:38:49,520] And in fact,
+- [00:38:49,520 - 00:38:50,280] the higher the energy,
+- [00:38:50,280 - 00:38:52,300] the more it looks like a classical oscillator.
+- [00:38:53,759 - 00:38:55,559] Just because the higher the
+- [00:38:55,559 - 00:38:57,360] energy and the bigger the swings,
+- [00:38:57,360 - 00:39:00,090] the smaller the ratio of the
+- [00:39:00,090 - 00:39:02,820] uncertainty to the size of the swing.
+- [00:39:02,820 - 00:39:05,300] When the swing gets very big,
+- [00:39:05,300 - 00:39:08,120] it sort of dominates the spatial structure of it.
+- [00:39:09,120 - 00:39:09,560] Okay,
+- [00:39:09,560 - 00:39:15,400] that's the basic physics of the harmonic oscillator.
+- [00:39:15,780 - 00:39:17,320] You can work out the second level,
+- [00:39:17,320 - 00:39:18,000] third level.
+- [00:39:18,220 - 00:39:19,860] By the time you get to the fourth level,
+- [00:39:19,860 - 00:39:20,960] you won't want to see it anymore,
+- [00:39:20,960 - 00:39:22,660] but it's straightforward.
+- [00:39:25,840 - 00:39:26,280] Good.
+- [00:39:27,960 - 00:39:28,400] Question?
+- [00:39:28,600 - 00:39:28,840] Yeah.
+- [00:39:29,300 - 00:39:31,560] On your drawing of the second moment.
+- [00:39:32,140 - 00:39:32,580] Yeah.
+- [00:39:33,660 - 00:39:36,000] Shouldn't it go through zero at zero?
+- [00:39:39,380 - 00:39:40,900] Is it going to be x squared?
+- [00:39:41,680 - 00:39:42,120] No,
+- [00:39:42,120 - 00:39:43,140] I don't think so.
+- [00:39:43,380 - 00:39:44,380] I don't think so.
+- [00:39:44,920 - 00:39:47,380] I think there's a constant term also.
+- [00:39:47,580 - 00:39:47,800] Yeah.
+- [00:39:48,340 - 00:39:48,780] Yeah.
+- [00:39:49,540 - 00:39:49,980] Yeah,
+- [00:39:49,980 - 00:39:51,920] it's not just x squared times.
+- [00:39:52,140 - 00:39:52,300] Yeah.
+- [00:39:54,220 - 00:39:54,660] Right.
+- [00:39:55,140 - 00:39:55,580] Question.
+- [00:39:56,740 - 00:39:58,840] In the Hamiltonian you wrote originally,
+- [00:39:58,840 - 00:39:59,320] you know,
+- [00:39:59,320 - 00:39:59,780] the left,
+- [00:39:59,780 - 00:40:01,900] it already implicitly contained
+- [00:40:01,900 - 00:40:02,800] the normal idea of the second moment.
+- [00:40:02,820 - 00:40:03,600] Yeah.
+- [00:40:05,300 - 00:40:06,040] However,
+- [00:40:06,040 - 00:40:10,080] if you look at your
+- [00:40:10,080 - 00:40:10,120] next Answer,
+- [00:40:10,120 - 00:40:11,160] it goes everywhere.
+- [00:40:11,160 - 00:40:13,880] All the key poo what I were describing there,
+- [00:40:13,880 - 00:40:14,480] same answer as first question.
+- [00:40:14,480 - 00:40:18,900] It always lose a point.
+- [00:40:19,280 - 00:40:23,480] If you are
+- [00:40:23,480 - 00:40:25,300] fast at math.
+- [00:40:25,760 - 00:40:29,040] functions that were not square integrable,
+- [00:40:29,040 - 00:40:33,140] then A plus and A minus would not be
+- [00:40:33,140 - 00:40:34,780] Hermitian conjugates of each other.
+- [00:40:34,780 - 00:40:36,060] That's where it's assumed.
+- [00:40:36,060 - 00:40:38,100] And I did assume that.
+- [00:40:38,920 - 00:40:38,920] And,
+- [00:40:38,920 - 00:40:39,280] um,
+- [00:40:39,280 - 00:40:40,520] right.
+- [00:40:40,520 - 00:40:41,780] So,
+- [00:40:41,780 - 00:40:42,680] right.
+- [00:40:45,560 - 00:40:47,640] Is there a way in general
+- [00:40:47,640 - 00:40:49,720] of recognizing where the Hamiltonian rich is?
+- [00:40:50,820 - 00:40:51,380] Yeah,
+- [00:40:51,380 - 00:40:52,920] if it's a harmonic oscillator.
+- [00:40:59,060 - 00:41:00,620] And here and there,
+- [00:41:00,620 - 00:41:02,240] sort of sporadically,
+- [00:41:02,240 - 00:41:03,680] and this or that,
+- [00:41:03,680 - 00:41:05,240] sometimes you encounter
+- [00:41:05,240 - 00:41:07,580] a solvable example.
+- [00:41:07,580 - 00:41:09,100] And when they're solvable,
+- [00:41:09,100 - 00:41:11,240] they can usually be solved by these kind of
+- [00:41:11,240 - 00:41:11,460] tricks.
+- [00:41:11,460 - 00:41:16,760] But they're very rare in the space of possibilities.
+- [00:41:17,959 - 00:41:18,240] And
+- [00:41:18,240 - 00:41:18,520] um,
+- [00:41:20,140 - 00:41:21,940] by some fortunate accident,
+- [00:41:21,940 - 00:41:23,900] the harmonic oscillator is one of them,
+- [00:41:23,900 - 00:41:25,040] and the hydrogen atom,
+- [00:41:25,040 - 00:41:25,420] or
+- [00:41:25,420 - 00:41:27,520] the idealized hydrogen atom,
+- [00:41:27,520 - 00:41:30,100] non-relativistic hydrogen atom with a point nucleus,
+- [00:41:30,100 - 00:41:30,960] happens
+- [00:41:30,960 - 00:41:32,660] to be one of the solvable examples.
+- [00:41:33,800 - 00:41:34,400] Uh,
+- [00:41:37,460 - 00:41:38,060] okay.
+- [00:41:40,780 - 00:41:41,380] Now,
+- [00:41:41,380 - 00:41:44,300] I have in my notes two other subjects for tonight.
+- [00:41:46,760 - 00:41:47,360] Um,
+- [00:41:48,200 - 00:41:49,360] with the idea of
+- [00:41:49,360 - 00:41:49,620] uh,
+- [00:41:50,020 - 00:41:52,760] discussing atoms a little bit further,
+- [00:41:52,760 - 00:41:54,340] but more than atoms,
+- [00:41:54,340 - 00:41:56,620] discussing everything that there is
+- [00:41:56,620 - 00:41:58,900] about quantum mechanics and field theory.
+- [00:41:59,600 - 00:42:00,480] Two things,
+- [00:42:00,480 - 00:42:04,820] spin and boson-fermion difference,
+- [00:42:04,820 - 00:42:08,000] the difference between what bosons and fermions are.
+- [00:42:08,620 - 00:42:09,600] I have,
+- [00:42:09,600 - 00:42:09,880] uh,
+- [00:42:09,880 - 00:42:10,480] well,
+- [00:42:10,480 - 00:42:12,620] I guess I'll go according to my,
+- [00:42:12,620 - 00:42:12,840] um,
+- [00:42:12,840 - 00:42:13,980] to my notes here.
+- [00:42:13,980 - 00:42:15,440] I'll follow my notes.
+- [00:42:15,900 - 00:42:17,520] I have spin first,
+- [00:42:17,520 - 00:42:19,340] and then bosons and fermions.
+- [00:42:19,340 - 00:42:21,740] So let's talk about half-spin.
+- [00:42:22,140 - 00:42:23,620] The spin of the electron,
+- [00:42:23,620 - 00:42:24,920] or the spin of the proton,
+- [00:42:24,920 - 00:42:27,920] which happens to be half-spin,
+- [00:42:27,920 - 00:42:30,060] which means that the spin,
+- [00:42:30,060 - 00:42:33,260] or the angular momentum of an electron at rest,
+- [00:42:33,260 - 00:42:36,160] at rest it has no orbital angular momentum,
+- [00:42:36,160 - 00:42:38,020] it has no r cross p,
+- [00:42:38,020 - 00:42:41,000] all it has is spin.
+- [00:42:41,220 - 00:42:43,760] So spin is a kind of
+- [00:42:43,760 - 00:42:46,300] angular momentum that's attached to a particle.
+- [00:42:48,360 - 00:42:49,320] It's your choice.
+- [00:42:49,320 - 00:42:49,520] Your choice,
+- [00:42:49,520 - 00:42:51,130] whether you want to think of
+- [00:42:51,130 - 00:42:52,740] it as just an abstract concept,
+- [00:42:52,740 - 00:42:54,120] or whether you want to think
+- [00:42:54,120 - 00:42:55,500] of it as a tiny little thing,
+- [00:42:55,500 - 00:42:56,820] which is literally spinning.
+- [00:42:59,800 - 00:43:00,820] Spinning about an axis.
+- [00:43:01,720 - 00:43:03,460] And when I say it has no momentum,
+- [00:43:03,460 - 00:43:04,640] I mean to say it
+- [00:43:04,640 - 00:43:05,820] has no center of mass momentum.
+- [00:43:07,600 - 00:43:08,000] Uh,
+- [00:43:08,000 - 00:43:09,820] and it's a matter of choice and taste,
+- [00:43:09,820 - 00:43:11,410] whether you want to think of
+- [00:43:11,410 - 00:43:13,000] it as literally being a little spin,
+- [00:43:13,000 - 00:43:17,120] or just an abstract property that you,
+- [00:43:17,120 - 00:43:17,380] uh,
+- [00:43:17,380 - 00:43:19,300] mathematical property that you can,
+- [00:43:19,300 - 00:43:19,300] uh,
+- [00:43:19,300 - 00:43:19,300] understand.
+- [00:43:19,300 - 00:43:20,840] that you attach to the electron.
+- [00:43:22,440 - 00:43:23,400] But whatever it is,
+- [00:43:23,400 - 00:43:24,860] it is angular momentum.
+- [00:43:25,220 - 00:43:27,580] It transforms under rotation.
+- [00:43:27,940 - 00:43:29,000] When you transform,
+- [00:43:29,000 - 00:43:31,920] when you rotate coordinates,
+- [00:43:32,240 - 00:43:33,740] the state transforms.
+- [00:43:34,300 - 00:43:34,860] Now,
+- [00:43:34,860 - 00:43:36,040] we've already been through this.
+- [00:43:36,180 - 00:43:38,730] We spent most of a
+- [00:43:38,730 - 00:43:41,280] quarter talking about the half-spin system.
+- [00:43:42,340 - 00:43:43,940] So I'm going to go through it quickly.
+- [00:43:43,940 - 00:43:47,620] You should go back and read
+- [00:43:47,620 - 00:43:51,300] the early parts of the previous lectures.
+- [00:43:55,720 - 00:43:59,200] We talked about a spin having two states,
+- [00:43:59,200 - 00:44:00,300] up or down.
+- [00:44:01,380 - 00:44:02,220] But then we said,
+- [00:44:02,220 - 00:44:02,680] wait a minute,
+- [00:44:02,680 - 00:44:03,580] if it can be up or down,
+- [00:44:03,680 - 00:44:04,840] it can also be left or right.
+- [00:44:05,020 - 00:44:06,060] But if it can be left or right,
+- [00:44:06,060 - 00:44:06,940] it can be in or out.
+- [00:44:07,540 - 00:44:11,880] And we worked out the states describing those things,
+- [00:44:12,020 - 00:44:13,740] the operators which describe,
+- [00:44:13,940 - 00:44:16,180] the components of the spin.
+- [00:44:16,960 - 00:44:18,300] And I didn't tell you,
+- [00:44:18,300 - 00:44:19,500] but we were talking about
+- [00:44:19,500 - 00:44:21,840] the angular momentum of a spinning particle,
+- [00:44:22,060 - 00:44:23,740] or of a half-spin particle.
+- [00:44:24,680 - 00:44:27,940] So let's see how we can understand that
+- [00:44:27,940 - 00:44:29,880] now that we've talked about angular momentum.
+- [00:44:35,640 - 00:44:38,540] The thing that characterizes angular momentum
+- [00:44:39,220 - 00:44:39,760] is,
+- [00:44:39,760 - 00:44:40,620] first of all,
+- [00:44:41,820 - 00:44:43,800] that there are three components
+- [00:44:43,800 - 00:44:44,280] of it.
+- [00:44:46,260 - 00:44:47,420] But just the fact that
+- [00:44:47,420 - 00:44:48,580] there are three components of it
+- [00:44:48,580 - 00:44:49,040] is not enough.
+- [00:44:49,400 - 00:44:51,360] It must be that those three components
+- [00:44:51,360 - 00:44:54,320] are literally associated with the x,
+- [00:44:54,320 - 00:44:54,680] y,
+- [00:44:54,680 - 00:44:55,940] and z directions of space.
+- [00:44:56,600 - 00:44:59,180] You could have them connected with something else,
+- [00:44:59,200 - 00:45:01,620] some other internal dimensions or whatever.
+- [00:45:03,500 - 00:45:08,160] But once you have matrices,
+- [00:45:08,840 - 00:45:12,300] once you discover that your system is being described
+- [00:45:12,300 - 00:45:13,260] by matrices,
+- [00:45:13,360 - 00:45:13,780] by matrices,
+- [00:45:13,780 - 00:45:13,920] by matrices,
+- [00:45:13,920 - 00:45:14,520] Three of the three relationships
+- [00:45:14,520 - 00:45:14,520] and finally,
+- [00:45:14,520 - 00:45:16,480] you have three of them which
+- [00:45:16,480 - 00:45:18,440] have the commutation relations of angular momentum,
+- [00:45:18,440 - 00:45:20,420] and they are angular momentum.
+- [00:45:22,740 - 00:45:24,840] Actually there's no choice about that,
+- [00:45:24,840 - 00:45:28,550] as long as the three matrices you're talking about are literally associated
+- [00:45:28,550 - 00:45:32,260] with an x and a y and a z direction of space.
+- [00:45:33,040 - 00:45:35,370] So let me write down again what
+- [00:45:35,370 - 00:45:37,700] the basic commutation relations of angular momentum are.
+- [00:45:42,860 - 00:45:43,380] L,
+- [00:45:43,380 - 00:45:43,720] i,
+- [00:45:43,720 - 00:45:44,040] l,
+- [00:45:44,040 - 00:45:44,240] j,
+- [00:45:44,240 - 00:45:45,480] and let's write just L,
+- [00:45:45,480 - 00:45:45,800] x.
+- [00:45:45,800 - 00:45:47,040] Let's see.
+- [00:45:49,240 - 00:45:50,500] Let's take the L,
+- [00:45:50,500 - 00:45:52,160] z with the L,
+- [00:45:52,160 - 00:45:52,480] x.
+- [00:45:52,480 - 00:45:53,580] L,
+- [00:45:53,580 - 00:45:54,300] z with L,
+- [00:45:54,300 - 00:45:58,340] x is just equal to i times L,
+- [00:45:58,340 - 00:45:58,620] y.
+- [00:46:00,280 - 00:46:04,840] And the other two are just cyclic permutations.
+- [00:46:05,860 - 00:46:09,640] You may have noticed that these commutation relations are
+- [00:46:09,640 - 00:46:13,420] closely related to the commutation relations of the Pauli matrices.
+- [00:46:13,960 - 00:46:17,020] So let's write the three Pauli matrices and change them.
+- [00:46:17,040 - 00:46:18,140] And let's check whether this is
+- [00:46:18,140 - 00:46:19,240] true of the three Pauli matrices.
+- [00:46:30,800 - 00:46:31,760] Here they are.
+- [00:46:31,760 - 00:46:37,920] Sigma z is equal to 1,
+- [00:46:37,920 - 00:46:38,760] minus 1,
+- [00:46:38,760 - 00:46:39,580] 0,
+- [00:46:39,580 - 00:46:39,960] 0.
+- [00:46:41,620 - 00:46:43,280] Now we've made a choice.
+- [00:46:43,280 - 00:46:45,060] We've made an arbitrary choice.
+- [00:46:45,320 - 00:46:47,020] We've decided to take sigma z as the first one.
+- [00:46:47,040 - 00:46:48,820] We've chosen sigma z to be the diagonal matrix.
+- [00:46:49,000 - 00:46:49,540] In other words,
+- [00:46:49,540 - 00:46:51,870] we are working in the representation
+- [00:46:51,870 - 00:46:54,200] of the z component of the spin.
+- [00:46:55,000 - 00:46:57,160] We've chosen to take that to be diagonal.
+- [00:46:57,740 - 00:46:59,400] And of course the eigenvalues,
+- [00:46:59,400 - 00:47:01,180] what are the eigenvalues of this matrix?
+- [00:47:01,520 - 00:47:02,810] The eigenvalues of this matrix
+- [00:47:02,810 - 00:47:04,100] are plus 1 and minus 1,
+- [00:47:04,100 - 00:47:05,840] representing up and down.
+- [00:47:07,540 - 00:47:08,060] Okay,
+- [00:47:08,060 - 00:47:09,660] then there was sigma x.
+- [00:47:09,660 - 00:47:13,860] Sigma x was 1,
+- [00:47:13,860 - 00:47:14,540] 1,
+- [00:47:14,540 - 00:47:15,280] 0,
+- [00:47:15,280 - 00:47:15,940] 0.
+- [00:47:15,940 - 00:47:20,400] And finally sigma y is equal to minus i,
+- [00:47:20,400 - 00:47:21,320] i,
+- [00:47:21,320 - 00:47:22,040] 0,
+- [00:47:22,040 - 00:47:22,420] 0.
+- [00:47:24,240 - 00:47:25,980] There are ambiguities in these.
+- [00:47:25,980 - 00:47:27,920] You can rotate them and change them,
+- [00:47:27,920 - 00:47:30,780] but there's no,
+- [00:47:30,780 - 00:47:35,540] nothing important happens.
+- [00:47:35,980 - 00:47:37,960] There's no minus in sigma x?
+- [00:47:39,220 - 00:47:40,900] No minus in sigma x.
+- [00:47:43,580 - 00:47:45,220] All three are Hermitian.
+- [00:47:45,900 - 00:47:47,220] A real matrix,
+- [00:47:47,220 - 00:47:50,380] meaning to say if its entries are real numbers,
+- [00:47:50,380 - 00:47:51,520] if it's Hermitian,
+- [00:47:51,520 - 00:47:52,200] it's symmetric.
+- [00:47:56,140 - 00:47:57,240] That's this and this.
+- [00:47:57,900 - 00:48:00,420] If a matrix is Hermitian and imaginary,
+- [00:48:00,420 - 00:48:02,620] it must be anti-symmetric.
+- [00:48:03,220 - 00:48:04,220] So that's this.
+- [00:48:09,760 - 00:48:10,320] Okay,
+- [00:48:10,320 - 00:48:10,880] let's check this.
+- [00:48:10,880 - 00:48:11,980] Let's check the commutation relations.
+- [00:48:12,940 - 00:48:15,600] Let's multiply sigma z by sigma x.
+- [00:48:19,460 - 00:48:21,780] And that's equal to 1,
+- [00:48:21,780 - 00:48:22,660] minus 1,
+- [00:48:22,660 - 00:48:23,820] 0,
+- [00:48:23,820 - 00:48:24,340] 0,
+- [00:48:24,340 - 00:48:26,300] 0,
+- [00:48:26,300 - 00:48:26,740] 1,
+- [00:48:26,740 - 00:48:27,420] 1,
+- [00:48:27,420 - 00:48:27,780] 0.
+- [00:48:32,060 - 00:48:33,720] This times this is 0,
+- [00:48:33,720 - 00:48:35,560] this times this is 1 up in here,
+- [00:48:35,560 - 00:48:36,340] 0.
+- [00:48:37,640 - 00:48:38,640] Down here,
+- [00:48:38,640 - 00:48:39,700] minus 1.
+- [00:48:43,140 - 00:48:44,540] That's not quite sigma y,
+- [00:48:44,540 - 00:48:46,340] but it's almost sigma y.
+- [00:48:46,760 - 00:48:48,200] It would be sigma y,
+- [00:48:48,200 - 00:48:49,100] I think,
+- [00:48:49,100 - 00:48:51,440] is it i times sigma y?
+- [00:48:52,320 - 00:48:53,240] Or minus,
+- [00:48:53,240 - 00:48:54,720] it's i times sigma y.
+- [00:49:01,660 - 00:49:01,960] Yeah.
+- [00:49:02,960 - 00:49:03,560] Now,
+- [00:49:03,560 - 00:49:04,160] that's nice,
+- [00:49:04,160 - 00:49:05,560] but it's not the commutator.
+- [00:49:06,400 - 00:49:09,040] The commutator is this minus...
+- [00:49:10,960 - 00:49:11,840] Sigma x,
+- [00:49:11,840 - 00:49:12,780] sigma z.
+- [00:49:14,200 - 00:49:15,520] That's the commutator.
+- [00:49:16,840 - 00:49:18,020] And that has 0,
+- [00:49:18,020 - 00:49:18,580] 1,
+- [00:49:18,580 - 00:49:19,060] 1,
+- [00:49:19,060 - 00:49:19,500] 0.
+- [00:49:23,080 - 00:49:23,580] 1,
+- [00:49:23,580 - 00:49:23,980] 0,
+- [00:49:23,980 - 00:49:24,600] 0,
+- [00:49:24,600 - 00:49:25,480] minus 1.
+- [00:49:27,200 - 00:49:28,540] And if you go through it,
+- [00:49:28,540 - 00:49:29,080] you don't get 0.
+- [00:49:29,240 - 00:49:30,020] What do you get?
+- [00:49:31,920 - 00:49:33,900] Exactly the same thing you got over here.
+- [00:49:35,260 - 00:49:36,620] Equals i sigma y.
+- [00:49:38,540 - 00:49:42,460] So we have not quite what we wanted.
+- [00:49:43,080 - 00:49:44,540] We have instead...
+- [00:49:48,620 - 00:49:51,200] Commutator of sigma z with sigma x...
+- [00:49:54,560 - 00:49:57,420] Is twice i sigma y.
+- [00:49:59,240 - 00:50:01,320] Does this mean these are not angular momentum?
+- [00:50:01,520 - 00:50:03,420] Or does it mean that we're not talking about rotations?
+- [00:50:03,680 - 00:50:03,840] No.
+- [00:50:03,840 - 00:50:05,580] It just means we've
+- [00:50:05,580 - 00:50:07,320] normalized the sigma matrices incorrectly.
+- [00:50:08,820 - 00:50:09,760] Here's the trick.
+- [00:50:12,200 - 00:50:17,520] Take s and define it to be sigma over 2.
+- [00:50:17,660 - 00:50:18,700] For each component.
+- [00:50:19,760 - 00:50:21,140] For each component,
+- [00:50:21,140 - 00:50:24,760] take s being half the Pauli matrix.
+- [00:50:25,840 - 00:50:27,080] Seems a little bit odd,
+- [00:50:27,080 - 00:50:29,610] but nobody told us what the
+- [00:50:29,610 - 00:50:32,140] angular momentum was supposed to be.
+- [00:50:32,380 - 00:50:33,640] So let's just take it.
+- [00:50:33,640 - 00:50:34,420] And see what we get.
+- [00:50:34,800 - 00:50:35,940] Then we get...
+- [00:50:35,940 - 00:50:37,880] Let's put a 2 in here.
+- [00:50:38,620 - 00:50:39,780] A 2 in here.
+- [00:50:40,580 - 00:50:42,960] And that altogether divides by 4.
+- [00:50:43,240 - 00:50:43,500] Right?
+- [00:50:43,620 - 00:50:44,300] I put a 2 here,
+- [00:50:44,300 - 00:50:44,940] a 2 here.
+- [00:50:45,160 - 00:50:46,920] I've divided the whole thing by 4.
+- [00:50:48,140 - 00:50:50,720] 2 divided by 4 is 1 half.
+- [00:50:52,240 - 00:50:52,760] So,
+- [00:50:52,760 - 00:50:53,280] yes.
+- [00:50:53,780 - 00:50:56,530] Half the Pauli matrices satisfy
+- [00:50:56,530 - 00:50:59,280] exactly what they're supposed to satisfy.
+- [00:50:59,640 - 00:51:02,020] S z with s x.
+- [00:51:04,140 - 00:51:06,340] S z with h is equal to i s y.
+- [00:51:07,520 - 00:51:10,240] And likewise for the other commutation relations.
+- [00:51:10,740 - 00:51:13,770] So we see this little system of
+- [00:51:13,770 - 00:51:16,800] 2x2 matrices acting on 2 component vectors,
+- [00:51:16,800 - 00:51:17,920] up or down,
+- [00:51:18,120 - 00:51:21,630] are actually representing a very
+- [00:51:21,630 - 00:51:25,140] primitive and simple angular momentum system.
+- [00:51:27,620 - 00:51:29,270] It's a thing which you can
+- [00:51:29,270 - 00:51:30,920] think of as attached to the particle.
+- [00:51:32,700 - 00:51:34,780] Attached to the particle is a little spin,
+- [00:51:34,780 - 00:51:36,910] and the little spin is
+- [00:51:36,910 - 00:51:39,040] simply described by this system here.
+- [00:51:40,080 - 00:51:42,200] But now we can answer the question,
+- [00:51:42,200 - 00:51:45,020] what are the eigenvalues of,
+- [00:51:45,020 - 00:51:45,500] let's say,
+- [00:51:45,500 - 00:51:47,560] the z component of the angular momentum?
+- [00:51:48,240 - 00:51:50,940] Let's go to the z component of the angular momentum.
+- [00:51:51,360 - 00:51:53,820] The z component of the angular momentum,
+- [00:51:53,820 - 00:51:55,700] let's put some twos here now
+- [00:51:55,700 - 00:51:57,580] that we know what we want,
+- [00:51:57,580 - 00:51:58,720] one half,
+- [00:51:58,720 - 00:51:59,680] minus a half,
+- [00:51:59,680 - 00:52:00,440] one half,
+- [00:52:00,440 - 00:52:01,420] half,
+- [00:52:01,420 - 00:52:02,200] two,
+- [00:52:02,200 - 00:52:02,800] two.
+- [00:52:04,520 - 00:52:07,450] Notice that the eigenvalues of the z component of
+- [00:52:07,450 - 00:52:10,380] angular momentum are a half and minus a half.
+- [00:52:11,600 - 00:52:13,740] When we were working out angular momentum,
+- [00:52:13,740 - 00:52:15,500] I told you,
+- [00:52:15,500 - 00:52:16,660] and I showed you,
+- [00:52:16,660 - 00:52:19,100] that there were two kinds of multiplets.
+- [00:52:19,280 - 00:52:21,440] There were the half spin multiplets,
+- [00:52:21,440 - 00:52:24,060] let's put zero over here,
+- [00:52:25,380 - 00:52:25,920] sorry,
+- [00:52:25,920 - 00:52:27,560] there were the integer multiplets,
+- [00:52:27,580 - 00:52:28,580] and the two spin multiplets,
+- [00:52:32,320 - 00:52:37,920] where the magnetic quantum number m was zero,
+- [00:52:37,920 - 00:52:38,560] one,
+- [00:52:38,560 - 00:52:39,080] two,
+- [00:52:39,080 - 00:52:39,620] three,
+- [00:52:39,620 - 00:52:40,880] minus one,
+- [00:52:40,880 - 00:52:41,440] minus two,
+- [00:52:41,440 - 00:52:42,100] minus three,
+- [00:52:42,100 - 00:52:42,780] and so forth,
+- [00:52:43,540 - 00:52:45,560] with the central point being at
+- [00:52:45,560 - 00:52:47,580] zero here being one of the possibilities.
+- [00:52:47,780 - 00:52:48,080] Now remember,
+- [00:52:48,080 - 00:52:54,340] the raising and lowering operators shift you by an integer,
+- [00:52:54,560 - 00:52:56,780] but that doesn't say you start at zero.
+- [00:52:56,920 - 00:52:57,560] It says zero.
+- [00:52:57,580 - 00:53:00,390] It says either you start with
+- [00:53:00,390 - 00:53:03,200] zero or you start at a half,
+- [00:53:11,140 - 00:53:12,180] a half,
+- [00:53:12,180 - 00:53:13,420] minus a half,
+- [00:53:13,420 - 00:53:15,400] and then three halves,
+- [00:53:15,400 - 00:53:16,520] minus three halves,
+- [00:53:17,320 - 00:53:21,180] depending on the overall angular momentum.
+- [00:53:21,520 - 00:53:22,640] If it's spin a half,
+- [00:53:22,640 - 00:53:25,040] then there's only a half and minus a half.
+- [00:53:29,240 - 00:53:30,480] And that's what we have here.
+- [00:53:31,980 - 00:53:34,920] We could have guessed all of this by saying,
+- [00:53:34,920 - 00:53:35,220] look,
+- [00:53:35,880 - 00:53:37,830] we seem to have the
+- [00:53:37,830 - 00:53:39,780] mathematical possibility of having half spin.
+- [00:53:40,940 - 00:53:42,440] That means there are two states.
+- [00:53:42,980 - 00:53:44,700] Once we know there are two states,
+- [00:53:44,700 - 00:53:47,100] we can say the angular momentum of
+- [00:53:47,100 - 00:53:49,500] this one must be plus a half,
+- [00:53:49,620 - 00:53:52,120] the z component must be plus a half,
+- [00:53:52,120 - 00:53:53,320] that were minus a half,
+- [00:53:53,500 - 00:53:55,530] and we can go and start building the structure
+- [00:53:55,530 - 00:53:57,560] up the way we did in the first case.
+- [00:54:07,980 - 00:54:08,620] So,
+- [00:54:08,620 - 00:54:15,080] if you look at the
+- [00:54:15,080 - 00:54:15,080] first case,
+- [00:54:15,080 - 00:54:25,700] the z component is minus a half,
+- [00:54:25,700 - 00:54:26,360] and the z component is minus a half,
+- [00:54:26,480 - 00:54:27,540] and the z component is minus a half,
+- [00:54:29,580 - 00:54:30,280] and the z component is minus a half.
+- [00:54:30,280 - 00:54:30,280] Yes,
+- [00:54:30,280 - 00:54:31,940] nuclei can be particles.
+- [00:54:32,280 - 00:54:33,440] They are particles.
+- [00:54:34,420 - 00:54:38,560] They have no angular momentum in their rest frame.
+- [00:54:38,740 - 00:54:40,220] On the other hand,
+- [00:54:40,220 - 00:54:42,100] some nuclei do have spin.
+- [00:54:45,780 - 00:54:48,120] But some atoms have spin.
+- [00:54:50,280 - 00:54:53,340] But the important thing is,
+- [00:54:54,900 - 00:54:56,560] or what we're going to concentrate on,
+- [00:54:56,700 - 00:54:57,860] is the half spin particles.
+- [00:54:58,000 - 00:54:58,600] The electrons,
+- [00:54:58,600 - 00:55:00,400] the muon,
+- [00:55:00,400 - 00:55:01,600] neutrinos,
+- [00:55:01,600 - 00:55:02,720] quarks,
+- [00:55:03,299 - 00:55:06,320] all the ones that really we think of as fundamental,
+- [00:55:08,140 - 00:55:10,180] or some of the ones we think of as fundamental,
+- [00:55:10,280 - 00:55:10,940] have half spin.
+- [00:55:12,320 - 00:55:12,760] Okay,
+- [00:55:12,760 - 00:55:14,230] all of this means that there
+- [00:55:14,230 - 00:55:15,700] are two kinds of angular momentum.
+- [00:55:16,000 - 00:55:17,080] Orbital angular momentum,
+- [00:55:17,080 - 00:55:18,860] and this is true in classical physics too,
+- [00:55:19,520 - 00:55:21,370] orbital angular momentum is the angular
+- [00:55:21,370 - 00:55:23,220] momentum of the center of mass,
+- [00:55:23,220 - 00:55:23,880] of a system.
+- [00:55:24,700 - 00:55:26,140] In the center of mass frame,
+- [00:55:26,140 - 00:55:27,380] if the system is spinning,
+- [00:55:27,540 - 00:55:28,340] then it has spin.
+- [00:55:29,300 - 00:55:30,380] The same is true here.
+- [00:55:30,520 - 00:55:31,940] And what is the total angular momentum?
+- [00:55:32,200 - 00:55:34,220] The total angular momentum is the sum of them.
+- [00:55:35,000 - 00:55:35,760] It's a vector.
+- [00:55:36,060 - 00:55:37,630] So it's the vector sum of
+- [00:55:37,630 - 00:55:39,200] the two kinds of angular momentum.
+- [00:55:39,660 - 00:55:41,040] And it's true here too.
+- [00:55:41,600 - 00:55:43,040] So I'll write down the equation,
+- [00:55:43,220 - 00:55:44,880] but we're not going to do very much with it.
+- [00:55:45,320 - 00:55:47,560] The total angular momentum is called J.
+- [00:55:48,860 - 00:55:49,300] Again,
+- [00:55:49,300 - 00:55:50,260] it's a notation.
+- [00:55:50,420 - 00:55:51,460] I don't know where it comes from.
+- [00:55:51,840 - 00:55:53,200] It's again a vector.
+- [00:55:53,200 - 00:55:58,280] And it's equal to the orbital angular momentum L,
+- [00:55:58,480 - 00:56:00,300] which is R cross P,
+- [00:56:00,540 - 00:56:01,880] plus the spin,
+- [00:56:02,480 - 00:56:03,320] plus S.
+- [00:56:04,680 - 00:56:06,300] I just tell you that because
+- [00:56:06,300 - 00:56:07,920] you'll see that all over the place
+- [00:56:07,920 - 00:56:09,760] when you're doing quantum mechanics,
+- [00:56:10,040 - 00:56:11,680] particularly in atomic physics.
+- [00:56:12,280 - 00:56:14,820] You'll see that the total angular momentum is called J,
+- [00:56:15,940 - 00:56:17,440] and it's L plus S,
+- [00:56:18,260 - 00:56:19,280] for a particle.
+- [00:56:38,460 - 00:56:42,240] So I give it from the dollar to the hour,
+- [00:56:42,460 - 00:56:43,840] a point of temperature cube.
+- [00:56:43,840 - 00:56:43,860] We're also going to operate so far
+- [00:56:43,860 - 00:56:44,600] We're going to go toorder.
+- [00:56:44,600 - 00:56:44,780] I'm going to go to or derecho,
+- [00:56:44,780 - 00:56:45,000] but we're going to go to order tahun
+- [00:56:45,000 - 00:56:45,140] and we're going to go to Masovian ペナ
+- [00:56:48,540 - 00:56:49,400] which s is the bouton
+- [00:56:49,400 - 00:56:49,860] How do you,
+- [00:56:49,860 - 00:56:53,060] like if you're given some system with a J,
+- [00:56:53,060 - 00:56:55,540] how do you identify S?
+- [00:56:55,800 - 00:56:58,120] You're usually given something different.
+- [00:56:58,220 - 00:56:59,850] You're usually given the knowledge
+- [00:56:59,850 - 00:57:01,480] that the spin is a half,
+- [00:57:01,480 - 00:57:02,080] for example,
+- [00:57:02,740 - 00:57:05,920] and that the orbital angular momentum could be 1,
+- [00:57:05,920 - 00:57:06,460] 0.
+- [00:57:07,220 - 00:57:09,380] If the orbital angular momentum is 0,
+- [00:57:09,380 - 00:57:12,060] then the only angular momentum it has is the spin.
+- [00:57:12,060 - 00:57:15,900] If the orbital angular momentum is 1,
+- [00:57:15,900 - 00:57:19,300] then we need some rules for what we get
+- [00:57:19,300 - 00:57:21,900] if we add an angular momentum 1
+- [00:57:21,900 - 00:57:24,500] to an angular momentum of a half.
+- [00:57:24,780 - 00:57:25,740] The question is,
+- [00:57:25,740 - 00:57:26,260] what do you get?
+- [00:57:27,380 - 00:57:30,720] And I wasn't going to go into that now.
+- [00:57:31,200 - 00:57:33,860] The problem of the addition of angular momentum,
+- [00:57:33,860 - 00:57:36,660] it's a straightforward problem,
+- [00:57:37,740 - 00:57:39,580] but we won't do it tonight.
+- [00:57:40,800 - 00:57:41,920] I'd be happy to go.
+- [00:57:42,060 - 00:57:44,500] I threw it another night.
+- [00:57:45,580 - 00:57:46,820] But there are rules,
+- [00:57:46,820 - 00:57:48,140] mathematical rules,
+- [00:57:48,140 - 00:57:53,560] for adding angular momentum of two systems.
+- [00:57:53,920 - 00:57:54,520] Basically,
+- [00:57:54,520 - 00:57:55,380] you have two systems.
+- [00:57:55,440 - 00:57:57,280] You have the spin system and the orbital system.
+- [00:57:57,520 - 00:57:59,700] Or you could just have two spins.
+- [00:58:00,060 - 00:58:01,600] Or you could have two
+- [00:58:01,600 - 00:58:03,140] different orbital angular momentum systems.
+- [00:58:04,900 - 00:58:08,180] The net system has its own angular momentum,
+- [00:58:08,340 - 00:58:09,520] and there are rules,
+- [00:58:09,520 - 00:58:11,300] quantum mechanical rules,
+- [00:58:11,300 - 00:58:12,040] for adding that.
+- [00:58:13,100 - 00:58:13,580] But there are rules,
+- [00:58:13,580 - 00:58:13,580] quantum mechanical rules,
+- [00:58:13,580 - 00:58:13,580] for adding that.
+- [00:58:13,580 - 00:58:14,440] Let's not do it now.
+- [00:58:17,220 - 00:58:17,700] Question?
+- [00:58:17,920 - 00:58:18,200] Yeah.
+- [00:58:18,580 - 00:58:20,180] You said we could think of this,
+- [00:58:20,180 - 00:58:24,100] not the orbital,
+- [00:58:24,100 - 00:58:25,440] but the spin,
+- [00:58:25,680 - 00:58:29,200] as being either actually like this physical thing spinning,
+- [00:58:29,320 - 00:58:30,470] or we could think of
+- [00:58:30,470 - 00:58:31,620] it in a more theoretical way.
+- [00:58:32,000 - 00:58:33,120] Or abstractly.
+- [00:58:35,220 - 00:58:37,120] What is the background for,
+- [00:58:37,120 - 00:58:39,200] the experimental background or whatever,
+- [00:58:39,340 - 00:58:41,980] that made them introduce this notion of spin?
+- [00:58:42,060 - 00:58:42,300] Well,
+- [00:58:42,300 - 00:58:45,280] the first experimental background
+- [00:58:45,280 - 00:58:48,260] came partly from spectroscopy,
+- [00:58:49,840 - 00:58:50,960] and partly,
+- [00:58:50,960 - 00:58:52,580] more importantly,
+- [00:58:52,580 - 00:58:54,980] from the periodic table.
+- [00:58:55,960 - 00:58:57,300] So that's what I want to get.
+- [00:58:57,360 - 00:58:58,960] I want to get to
+- [00:58:58,960 - 00:59:00,560] the periodic table a little bit,
+- [00:59:00,640 - 00:59:02,900] and show you how spin comes into it.
+- [00:59:05,140 - 00:59:07,520] It was Pauli who realized
+- [00:59:07,520 - 00:59:09,900] that to understand the periodic table,
+- [00:59:10,100 - 00:59:12,040] the electron had to have a spin.
+- [00:59:12,060 - 00:59:13,280] It had to have an additional property.
+- [00:59:14,860 - 00:59:15,420] Okay,
+- [00:59:15,420 - 00:59:19,340] that brings us to the issue of fermions and bosons,
+- [00:59:19,879 - 00:59:22,940] which is closely connected to the Pauli exclusion principle,
+- [00:59:23,080 - 00:59:24,500] at least in the case of fermions.
+- [00:59:33,040 - 00:59:34,980] Let me just motivate it in
+- [00:59:34,980 - 00:59:36,920] terms of chemistry a little bit.
+- [00:59:40,640 - 00:59:42,300] It was one of the motivations.
+- [00:59:42,500 - 00:59:44,060] The other came from spectroscopy,
+- [00:59:44,060 - 00:59:47,880] but it's not as clear,
+- [00:59:47,880 - 00:59:48,660] it's not as obvious.
+- [00:59:52,540 - 00:59:53,840] If you remember,
+- [00:59:53,840 - 01:00:00,540] the angular momentum squared,
+- [01:00:00,540 - 01:00:01,620] L squared,
+- [01:00:03,620 - 01:00:05,840] is equal to L times L plus 1.
+- [01:00:06,920 - 01:00:07,820] Is that what I want?
+- [01:00:08,940 - 01:00:09,380] Yeah.
+- [01:00:12,140 - 01:00:14,140] And if we look,
+- [01:00:14,140 - 01:00:15,700] when we look at the levels,
+- [01:00:15,840 - 01:00:22,560] the energy levels of the hydrogen atom solutions,
+- [01:00:22,800 - 01:00:23,820] which we didn't do,
+- [01:00:23,820 - 01:00:25,480] but I just told you a fact.
+- [01:00:25,740 - 01:00:28,360] I told you a fact that there's some extra degeneracies.
+- [01:00:28,900 - 01:00:31,880] Each one of these has two L plus 1 states.
+- [01:00:33,380 - 01:00:34,920] But there were additional degeneracies.
+- [01:00:35,540 - 01:00:36,900] I'll redraw them for you.
+- [01:00:37,560 - 01:00:39,800] The horizontal axis is L.
+- [01:00:39,940 - 01:00:41,540] The vertical axis is energy.
+- [01:00:41,940 - 01:00:44,520] These are the energy levels of the hydrogen atom.
+- [01:00:45,500 - 01:00:47,040] And down at the bottom is
+- [01:00:47,040 - 01:00:48,580] the ground state of the hydrogen atom
+- [01:00:48,580 - 01:00:50,140] with the lowest energy level of all.
+- [01:00:50,640 - 01:00:52,340] And it's an S-wave,
+- [01:00:52,340 - 01:00:54,640] meaning to say it has no angular momentum,
+- [01:00:54,900 - 01:00:56,560] no orbital angular momentum.
+- [01:00:56,860 - 01:00:58,800] The solutions of the Schrodinger equation.
+- [01:00:59,240 - 01:01:00,900] The energy is in fact negative.
+- [01:01:00,960 - 01:01:02,580] You start at some negative value,
+- [01:01:02,580 - 01:01:06,140] minus 13 point something electron volts.
+- [01:01:06,140 - 01:01:11,300] But I'm just putting it here arbitrarily at zero,
+- [01:01:11,300 - 01:01:12,240] somewhere up here.
+- [01:01:13,540 - 01:01:13,980] Okay,
+- [01:01:13,980 - 01:01:15,300] so that's the first level.
+- [01:01:17,620 - 01:01:18,060] Now,
+- [01:01:18,060 - 01:01:20,100] at the L equals zero,
+- [01:01:20,100 - 01:01:22,000] there are states with,
+- [01:01:22,080 - 01:01:23,180] this is the state with
+- [01:01:23,180 - 01:01:24,280] no nodes in the wave function.
+- [01:01:24,720 - 01:01:26,100] Then there's one with one node,
+- [01:01:26,100 - 01:01:26,760] two nodes,
+- [01:01:26,760 - 01:01:27,300] three nodes,
+- [01:01:27,300 - 01:01:27,920] and so forth.
+- [01:01:28,240 - 01:01:29,720] So there are more states here.
+- [01:01:31,300 - 01:01:32,880] I'm just drawing them schematically,
+- [01:01:32,880 - 01:01:34,460] completely schematically.
+- [01:01:34,460 - 01:01:35,540] Okay,
+- [01:01:35,540 - 01:01:36,580] there are more.
+- [01:01:36,700 - 01:01:37,200] In fact,
+- [01:01:37,200 - 01:01:39,370] they get closer and closer together as
+- [01:01:39,370 - 01:01:41,540] they get up here near E equals zero.
+- [01:01:41,920 - 01:01:43,740] But that's not too important for us.
+- [01:01:44,360 - 01:01:46,040] Now we go to L equals one.
+- [01:01:48,140 - 01:01:49,600] And at L equals one,
+- [01:01:49,600 - 01:01:53,880] there's the lowest energy state of L equals one.
+- [01:01:55,000 - 01:01:57,940] Each L equals one state has three components.
+- [01:01:58,240 - 01:02:00,420] Two L plus one has three components.
+- [01:02:01,720 - 01:02:04,380] And the ground state of L equals one,
+- [01:02:04,460 - 01:02:05,960] has more energy than the
+- [01:02:05,960 - 01:02:07,460] ground state of L equals zero.
+- [01:02:07,600 - 01:02:07,820] Why?
+- [01:02:07,820 - 01:02:09,240] Because it's got angular momentum.
+- [01:02:09,480 - 01:02:10,820] So of course it has some more energy.
+- [01:02:11,240 - 01:02:12,920] So it's going to be up a little bit higher.
+- [01:02:13,160 - 01:02:13,840] In fact,
+- [01:02:13,840 - 01:02:16,180] this whole collection of levels here,
+- [01:02:16,320 - 01:02:17,740] is going to be raised
+- [01:02:17,740 - 01:02:19,160] up because of the angular momentum.
+- [01:02:19,500 - 01:02:22,120] And it's raised up in a rather surprising and,
+- [01:02:26,899 - 01:02:28,460] I suppose you could say elegant.
+- [01:02:28,620 - 01:02:29,440] I'm not sure it's elegant.
+- [01:02:29,620 - 01:02:29,900] It's,
+- [01:02:29,900 - 01:02:32,060] it is what it is.
+- [01:02:32,560 - 01:02:33,100] All right.
+- [01:02:33,100 - 01:02:36,320] So the first L equals one level
+- [01:02:37,920 - 01:02:39,880] occurs at the same place as
+- [01:02:39,880 - 01:02:41,840] the second L equals zero level.
+- [01:02:42,000 - 01:02:43,160] It's degenerate with it.
+- [01:02:43,180 - 01:02:44,520] So it's three states over here.
+- [01:02:46,620 - 01:02:49,100] And then the pattern continues.
+- [01:02:49,960 - 01:02:52,820] The next three states are degenerate with this.
+- [01:02:54,520 - 01:02:55,440] And so forth.
+- [01:02:56,920 - 01:02:58,420] Degenerate means it has the same energy.
+- [01:02:59,340 - 01:03:00,820] Then you go to L equals two.
+- [01:03:00,880 - 01:03:01,900] I'll use a different color.
+- [01:03:03,100 - 01:03:04,120] You go to L equals two,
+- [01:03:05,440 - 01:03:06,400] which is over here.
+- [01:03:10,280 - 01:03:12,540] And what you find when you solve the equations,
+- [01:03:12,640 - 01:03:14,340] this is supposed to be at the same level here,
+- [01:03:14,940 - 01:03:16,020] is you find again,
+- [01:03:16,420 - 01:03:19,120] the first L equals two state is higher
+- [01:03:19,120 - 01:03:21,040] than the first L equals one state,
+- [01:03:21,240 - 01:03:23,080] but it happens to occur exactly
+- [01:03:23,799 - 01:03:25,840] where the second L equals two state is,
+- [01:03:25,960 - 01:03:27,360] which is exactly where the
+- [01:03:27,360 - 01:03:28,760] third L equals zero state is.
+- [01:03:28,900 - 01:03:29,700] It's a mouthful,
+- [01:03:29,700 - 01:03:30,580] but you know what I mean.
+- [01:03:30,820 - 01:03:31,680] You go up to here.
+- [01:03:31,680 - 01:03:32,600] And how many states are there?
+- [01:03:33,500 - 01:03:33,980] Five.
+- [01:03:35,000 - 01:03:35,480] One,
+- [01:03:35,480 - 01:03:35,960] two,
+- [01:03:35,960 - 01:03:36,460] three,
+- [01:03:36,460 - 01:03:36,920] four,
+- [01:03:36,920 - 01:03:37,300] five.
+- [01:03:38,100 - 01:03:38,580] One,
+- [01:03:38,580 - 01:03:38,920] two,
+- [01:03:38,920 - 01:03:39,120] three,
+- [01:03:39,120 - 01:03:39,400] four,
+- [01:03:39,400 - 01:03:39,700] five,
+- [01:03:39,700 - 01:03:40,380] and so forth.
+- [01:03:40,520 - 01:03:41,580] And that's the pattern.
+- [01:03:42,140 - 01:03:42,500] All right,
+- [01:03:42,500 - 01:03:44,180] now you count the number of states.
+- [01:03:44,360 - 01:03:46,160] Now you count the number of states.
+- [01:03:48,460 - 01:03:51,020] One here at this energy level.
+- [01:03:51,640 - 01:03:52,120] Whoops.
+- [01:03:54,660 - 01:03:55,140] Yeah,
+- [01:03:55,140 - 01:03:55,580] one here.
+- [01:03:56,420 - 01:03:57,300] Four here.
+- [01:03:58,700 - 01:04:01,400] Zero angular momentum plus angular momentum one.
+- [01:04:01,400 - 01:04:01,800] Four.
+- [01:04:02,920 - 01:04:04,100] Nine here.
+- [01:04:05,740 - 01:04:06,640] Sixteen here.
+- [01:04:08,280 - 01:04:10,720] Evidently L squared levels.
+- [01:04:16,420 - 01:04:20,120] If you look at the way electrons fill the shells
+- [01:04:20,120 - 01:04:21,360] in idealized,
+- [01:04:21,360 - 01:04:23,380] very idealized chemical description
+- [01:04:23,380 - 01:04:27,080] of a periodic table where it's up there,
+- [01:04:27,140 - 01:04:30,440] but you see,
+- [01:04:31,400 - 01:04:32,400] that first of all,
+- [01:04:32,400 - 01:04:33,100] there's hydrogen,
+- [01:04:33,300 - 01:04:34,280] which has one electron.
+- [01:04:35,600 - 01:04:36,880] And when you look at helium,
+- [01:04:37,060 - 01:04:38,000] which has two electrons,
+- [01:04:38,580 - 01:04:41,380] you find out that the,
+- [01:04:43,420 - 01:04:44,460] it's consistent,
+- [01:04:44,600 - 01:04:47,060] it's consistent with an energy
+- [01:04:47,060 - 01:04:49,380] which would be what you would get
+- [01:04:49,380 - 01:04:52,300] if you put both electrons into the ground state.
+- [01:04:53,760 - 01:04:56,740] Things are a bit different because instead of having,
+- [01:04:57,440 - 01:04:58,220] let's go to helium.
+- [01:04:58,540 - 01:04:59,580] This is hydrogen.
+- [01:05:00,260 - 01:05:01,480] Let's go now to helium.
+- [01:05:01,880 - 01:05:04,440] Helium has a nucleus of charge two.
+- [01:05:04,620 - 01:05:05,560] Q equals two.
+- [01:05:05,680 - 01:05:06,380] Charge two.
+- [01:05:06,800 - 01:05:09,120] So it pulls on the electrons tighter.
+- [01:05:09,820 - 01:05:11,800] The whole structure is rescaled,
+- [01:05:12,320 - 01:05:13,260] but that's not important.
+- [01:05:13,740 - 01:05:15,220] The charge is bigger.
+- [01:05:15,560 - 01:05:17,700] That pulls the electrons in closer.
+- [01:05:18,200 - 01:05:20,340] But the basic structure is the same.
+- [01:05:21,200 - 01:05:22,980] And now you look at helium.
+- [01:05:23,240 - 01:05:25,580] You find out first of all there's a helium ion.
+- [01:05:26,280 - 01:05:29,560] Helium ion means one electron instead of two electrons.
+- [01:05:29,560 - 01:05:33,060] And you study the helium ion.
+- [01:05:33,480 - 01:05:37,370] And the helium ion looks
+- [01:05:37,370 - 01:05:41,260] exactly the same as the hydrogen.
+- [01:05:41,880 - 01:05:44,050] With the exception that you'll have
+- [01:05:44,050 - 01:05:46,220] to plug in twice as much charge.
+- [01:05:46,840 - 01:05:50,380] That spreads the energy levels out and rescales them.
+- [01:05:50,560 - 01:05:51,380] But same structure.
+- [01:05:52,180 - 01:05:55,320] So the ion looks like,
+- [01:05:56,360 - 01:05:57,520] exactly like the,
+- [01:05:57,520 - 01:05:58,940] and the ground state of the helium,
+- [01:05:58,940 - 01:06:00,660] ground state of the helium ion,
+- [01:06:01,360 - 01:06:04,360] looks as if it's one electron in
+- [01:06:04,360 - 01:06:07,360] the ground state of the helium wave function.
+- [01:06:08,100 - 01:06:09,980] Then you put another electron in.
+- [01:06:11,000 - 01:06:11,580] Okay,
+- [01:06:11,580 - 01:06:12,460] what do you expect?
+- [01:06:12,900 - 01:06:13,480] Well,
+- [01:06:13,480 - 01:06:15,540] the natural expectation would be
+- [01:06:15,540 - 01:06:17,600] if you put another electron in,
+- [01:06:17,700 - 01:06:19,200] the ground state of that will be,
+- [01:06:19,340 - 01:06:22,820] put that electron also in the lowest energy state.
+- [01:06:23,120 - 01:06:24,460] Why do anything else?
+- [01:06:25,000 - 01:06:26,290] If you want to keep
+- [01:06:26,290 - 01:06:27,580] the energy as low as possible,
+- [01:06:27,580 - 01:06:29,500] put them all into the ground state.
+- [01:06:30,400 - 01:06:31,040] So,
+- [01:06:31,040 - 01:06:32,200] you try that.
+- [01:06:32,420 - 01:06:36,020] Second electron into the ground state wave function,
+- [01:06:36,160 - 01:06:37,240] and it works just fine.
+- [01:06:37,420 - 01:06:40,600] It gives you the right rough description of the helium.
+- [01:06:41,280 - 01:06:43,840] It's not quite exactly right because
+- [01:06:43,840 - 01:06:46,400] it's ignoring the interaction between the electrons.
+- [01:06:46,700 - 01:06:48,470] Just pretending the electrons
+- [01:06:48,470 - 01:06:50,240] are just experiencing the nucleus.
+- [01:06:50,980 - 01:06:54,060] Let's take that as a working approximation.
+- [01:06:54,960 - 01:06:57,080] Ignore the interaction between the electrons.
+- [01:06:57,720 - 01:07:00,190] Put two electrons into the ground
+- [01:07:00,190 - 01:07:02,660] state of the helium wave function,
+- [01:07:03,399 - 01:07:04,700] and it works.
+- [01:07:04,800 - 01:07:06,740] It gives you the right energy for the helium.
+- [01:07:07,800 - 01:07:08,320] Well,
+- [01:07:08,320 - 01:07:11,260] what happens if you were to make a
+- [01:07:11,260 - 01:07:14,200] helium ion by putting an extra electron in,
+- [01:07:14,200 - 01:07:18,820] instead of the ion with only one electron?
+- [01:07:19,060 - 01:07:19,460] Incidentally,
+- [01:07:19,460 - 01:07:21,080] there's also an ion with no electrons.
+- [01:07:21,100 - 01:07:22,360] It's just called a deuteron,
+- [01:07:22,360 - 01:07:23,740] a helium nucleus.
+- [01:07:25,380 - 01:07:25,900] Okay,
+- [01:07:25,900 - 01:07:26,500] one electron,
+- [01:07:26,500 - 01:07:27,180] two electron.
+- [01:07:27,580 - 01:07:28,340] You put three electrons in.
+- [01:07:28,400 - 01:07:29,040] What's the guess?
+- [01:07:29,480 - 01:07:30,800] Right into the ground state.
+- [01:07:30,980 - 01:07:31,800] Why anything else?
+- [01:07:32,100 - 01:07:32,720] But no,
+- [01:07:32,720 - 01:07:34,180] that's not what happens.
+- [01:07:34,400 - 01:07:38,540] What happens is it goes into the first excited state.
+- [01:07:39,320 - 01:07:39,800] So,
+- [01:07:39,800 - 01:07:41,620] you put two electrons in
+- [01:07:41,620 - 01:07:43,440] the helium into the ground state,
+- [01:07:43,660 - 01:07:46,140] and the third one doesn't want to be there.
+- [01:07:46,820 - 01:07:49,680] It wants to get into the next excited state.
+- [01:07:49,820 - 01:07:49,980] Why?
+- [01:07:50,180 - 01:07:51,160] It could have saved energy.
+- [01:07:51,340 - 01:07:52,570] You could have had a lower
+- [01:07:52,570 - 01:07:53,800] energy state in the ground state
+- [01:07:54,460 - 01:07:56,240] if that electron went into the,
+- [01:07:56,240 - 01:07:56,560] um,
+- [01:07:58,560 - 01:07:59,980] went into the ground state.
+- [01:08:01,200 - 01:08:01,640] Okay,
+- [01:08:01,640 - 01:08:04,120] so along comes Pauli and says,
+- [01:08:04,180 - 01:08:04,740] I have an idea.
+- [01:08:05,540 - 01:08:07,670] My idea is that no two electrons
+- [01:08:07,670 - 01:08:09,800] can ever get into the same state.
+- [01:08:11,120 - 01:08:15,700] Something about electrons is such,
+- [01:08:16,580 - 01:08:18,140] I won't call it a repulsion.
+- [01:08:18,279 - 01:08:19,880] It's not right to call it a repulsion.
+- [01:08:20,160 - 01:08:21,840] It's an exclusion principle.
+- [01:08:22,220 - 01:08:23,960] When an electron is in a state,
+- [01:08:23,960 - 01:08:25,640] you can't fit another one in.
+- [01:08:25,640 - 01:08:28,240] Somehow the mathematics won't allow it.
+- [01:08:28,240 - 01:08:28,700] But wait a minute.
+- [01:08:28,880 - 01:08:31,700] We already said we could put
+- [01:08:31,700 - 01:08:34,520] two electrons into the helium ground state.
+- [01:08:34,779 - 01:08:35,979] So it's talking nonsense.
+- [01:08:36,700 - 01:08:39,300] The Pauli exclusion principle doesn't work.
+- [01:08:39,840 - 01:08:41,200] It only works somehow when
+- [01:08:41,200 - 01:08:42,560] you put a third one in.
+- [01:08:42,920 - 01:08:43,460] No,
+- [01:08:43,460 - 01:08:45,120] Pauli said that's not what's going on.
+- [01:08:45,359 - 01:08:46,919] He said really you can't put
+- [01:08:46,919 - 01:08:48,479] two electrons into the same state,
+- [01:08:48,600 - 01:08:50,890] but an electron has more
+- [01:08:50,890 - 01:08:53,180] properties than just its orbital motion.
+- [01:08:53,660 - 01:08:55,620] He said I'm going to make up a new property.
+- [01:08:56,140 - 01:08:58,979] And the new property has to be such
+- [01:08:58,979 - 01:09:01,819] that the electron comes with two values of it.
+- [01:09:02,800 - 01:09:04,100] Two values of it.
+- [01:09:04,580 - 01:09:05,720] In that case,
+- [01:09:05,720 - 01:09:07,220] you can put the electron,
+- [01:09:07,220 - 01:09:08,140] one electron,
+- [01:09:08,140 - 01:09:09,560] into the ground state.
+- [01:09:11,060 - 01:09:13,399] And let's call it the up electron.
+- [01:09:14,300 - 01:09:14,779] Remember,
+- [01:09:14,779 - 01:09:16,560] the electron can now have two properties.
+- [01:09:16,760 - 01:09:18,240] We're going to call them up and down.
+- [01:09:18,479 - 01:09:19,740] We can call them left or right,
+- [01:09:19,740 - 01:09:21,040] or we can call them anything we want.
+- [01:09:22,720 - 01:09:24,859] But let's give them the new property.
+- [01:09:26,679 - 01:09:28,419] Which Pauli eventually realized had
+- [01:09:28,419 - 01:09:30,160] something to do with angular momentum.
+- [01:09:30,920 - 01:09:33,159] And said if you can
+- [01:09:33,159 - 01:09:35,399] put two electrons in a state,
+- [01:09:35,560 - 01:09:37,500] not because you're allowed,
+- [01:09:37,500 - 01:09:39,540] you can't put two electrons in a state,
+- [01:09:39,700 - 01:09:42,299] but you can put two electrons
+- [01:09:42,299 - 01:09:44,899] into the same orbital angular momentum state
+- [01:09:44,899 - 01:09:46,620] if you give them opposite spin.
+- [01:09:47,720 - 01:09:49,950] If one of them is put in in the up state
+- [01:09:49,950 - 01:09:52,180] and the other one is put in in the down state,
+- [01:09:52,420 - 01:09:55,460] then I can save my crazy exclusion principle.
+- [01:09:56,400 - 01:09:59,560] I can save my crazy exclusion principle if
+- [01:09:59,560 - 01:10:02,720] I assume that the electron has one more property
+- [01:10:02,720 - 01:10:05,550] in addition to its orbital motion that it
+- [01:10:05,550 - 01:10:08,380] has a thing which I will call a spin.
+- [01:10:08,840 - 01:10:09,840] Now in fact,
+- [01:10:09,840 - 01:10:14,180] there were previous reasons to believe
+- [01:10:14,180 - 01:10:18,520] in an angular momentum like that.
+- [01:10:18,860 - 01:10:20,420] But they're not as transparent and
+- [01:10:20,420 - 01:10:21,980] I won't try to get into them.
+- [01:10:23,420 - 01:10:25,080] That was his basic reasoning.
+- [01:10:26,560 - 01:10:27,820] Electron has another property.
+- [01:10:29,220 - 01:10:30,440] A two-valued property.
+- [01:10:32,360 - 01:10:34,080] Once he knew there was a two-valued property,
+- [01:10:34,080 - 01:10:35,520] he was off and going.
+- [01:10:35,680 - 01:10:38,620] He invented matrices to describe that two-valued property.
+- [01:10:40,320 - 01:10:41,800] And before you know it,
+- [01:10:41,800 - 01:10:43,190] he had the Pauli matrices
+- [01:10:43,190 - 01:10:44,580] and he understood the whole thing.
+- [01:10:45,240 - 01:10:52,620] But let's go to the next atom.
+- [01:10:52,760 - 01:10:53,120] Let's see.
+- [01:10:53,120 - 01:10:54,800] We go to lithium.
+- [01:10:55,120 - 01:10:56,860] Lithium has three electrons.
+- [01:10:57,840 - 01:11:00,060] We would naturally expect for lithium,
+- [01:11:01,100 - 01:11:02,540] you do the same game.
+- [01:11:02,700 - 01:11:04,960] Now the nucleus has charge three,
+- [01:11:04,960 - 01:11:06,820] so it's much more attractive.
+- [01:11:08,040 - 01:11:08,960] Charge three,
+- [01:11:08,960 - 01:11:11,640] you put two electrons into the ground state.
+- [01:11:11,860 - 01:11:14,880] That works for the no electron case,
+- [01:11:14,880 - 01:11:16,140] the one electron case,
+- [01:11:16,140 - 01:11:18,740] the two electron case lithium ions.
+- [01:11:19,920 - 01:11:21,510] It works perfectly well to put
+- [01:11:21,510 - 01:11:23,100] the electrons into the ground state.
+- [01:11:23,100 - 01:11:25,600] Not if there's no electrons,
+- [01:11:25,600 - 01:11:26,620] but if there's one or two.
+- [01:11:26,780 - 01:11:27,460] And indeed,
+- [01:11:27,460 - 01:11:28,840] you find out that when
+- [01:11:28,840 - 01:11:30,220] you put the third electron in,
+- [01:11:30,220 - 01:11:32,560] into the lithium to make it neutral,
+- [01:11:32,820 - 01:11:35,060] it goes into the first excited state.
+- [01:11:35,360 - 01:11:37,220] It goes into the first excited state,
+- [01:11:37,220 - 01:11:40,180] meaning the state with angular momentum one.
+- [01:11:41,660 - 01:11:43,120] And that works out well.
+- [01:11:43,240 - 01:11:45,760] It works out the energy levels of the
+- [01:11:45,760 - 01:11:48,280] lithium atom work out reasonably well that way.
+- [01:11:52,340 - 01:11:53,080] What about the second atom?
+- [01:11:53,080 - 01:11:54,420] What about the ion of lithium?
+- [01:11:57,239 - 01:11:57,799] Well,
+- [01:11:57,799 - 01:12:00,780] you filled up the two lowest energy states.
+- [01:12:01,820 - 01:12:02,600] You've only put,
+- [01:12:02,600 - 01:12:04,620] you have three states here.
+- [01:12:05,660 - 01:12:06,660] You could add,
+- [01:12:06,660 - 01:12:07,120] oh,
+- [01:12:07,120 - 01:12:07,340] oh,
+- [01:12:07,340 - 01:12:09,020] you could add another electron
+- [01:12:09,020 - 01:12:10,700] in any one of these states.
+- [01:12:13,440 - 01:12:14,600] Let's go back a step.
+- [01:12:14,800 - 01:12:15,320] Let's go,
+- [01:12:15,320 - 01:12:16,140] let me go back a step.
+- [01:12:16,800 - 01:12:18,900] Let's forget for a moment the spin.
+- [01:12:19,160 - 01:12:21,180] And let's talk about the,
+- [01:12:21,180 - 01:12:21,580] um,
+- [01:12:23,140 - 01:12:25,020] the atoms if there was no spin,
+- [01:12:25,020 - 01:12:27,380] but if there was a Pauli exclusion principle.
+- [01:12:28,220 - 01:12:29,840] Let's try a Pauli's old idea,
+- [01:12:29,840 - 01:12:30,960] except without the spin.
+- [01:12:31,200 - 01:12:31,980] What would you find?
+- [01:12:36,260 - 01:12:36,700] Indeed,
+- [01:12:36,700 - 01:12:38,020] you would find two,
+- [01:12:38,020 - 01:12:39,100] you would find one,
+- [01:12:39,100 - 01:12:40,040] helium.
+- [01:12:40,600 - 01:12:41,440] In helium,
+- [01:12:41,440 - 01:12:43,460] you would find one electron,
+- [01:12:44,720 - 01:12:45,800] am I saying this right?
+- [01:12:47,760 - 01:12:48,820] In the ground state.
+- [01:12:50,520 - 01:12:51,260] But then,
+- [01:12:51,260 - 01:12:52,320] to keep the energy low,
+- [01:12:53,080 - 01:12:54,740] you could put the second electron
+- [01:12:54,740 - 01:12:56,400] in any one of four states.
+- [01:12:58,180 - 01:13:00,040] In any one of four states.
+- [01:13:01,000 - 01:13:02,360] If you didn't want to double,
+- [01:13:02,360 - 01:13:04,840] you didn't want to violate the exclusion principle.
+- [01:13:05,460 - 01:13:08,080] There would be four distinct helium atoms.
+- [01:13:09,440 - 01:13:11,810] Four distinct helium atoms depending on which
+- [01:13:11,810 - 01:13:14,180] state you put the next electron in.
+- [01:13:14,480 - 01:13:15,380] That was not right.
+- [01:13:16,240 - 01:13:19,340] The helium ground state was unique.
+- [01:13:19,540 - 01:13:22,340] Did not have this peculiarity.
+- [01:13:23,720 - 01:13:25,240] What Pauli's idea was,
+- [01:13:25,480 - 01:13:25,980] no,
+- [01:13:25,980 - 01:13:28,000] you don't go to the second state here,
+- [01:13:28,160 - 01:13:29,680] and there are not four possibilities.
+- [01:13:30,340 - 01:13:32,740] There's just the helium atom with one electron,
+- [01:13:32,940 - 01:13:34,460] and the helium atom with two electrons,
+- [01:13:34,460 - 01:13:35,520] both in the ground state.
+- [01:13:35,980 - 01:13:37,260] Now you come to lithium.
+- [01:13:37,940 - 01:13:39,180] Now you come to lithium,
+- [01:13:39,180 - 01:13:41,360] you put the first electron in.
+- [01:13:43,800 - 01:13:44,400] Forgetting spin,
+- [01:13:44,400 - 01:13:45,260] where can it go?
+- [01:13:46,680 - 01:13:47,820] First electron here.
+- [01:13:54,280 - 01:13:55,840] I'm getting tired as usual.
+- [01:13:56,200 - 01:13:59,290] What I'm trying to do is
+- [01:13:59,290 - 01:14:02,380] explain why there are eight different...
+- [01:14:02,380 - 01:14:04,260] Can you see this periodic table up there?
+- [01:14:05,140 - 01:14:05,700] Alright.
+- [01:14:05,840 - 01:14:09,500] The second row has eight entries,
+- [01:14:09,500 - 01:14:10,180] I hope.
+- [01:14:11,540 - 01:14:12,820] Has eight entries.
+- [01:14:13,380 - 01:14:14,640] It has eight entries.
+- [01:14:14,920 - 01:14:16,620] How do we understand those eight entries?
+- [01:14:17,060 - 01:14:18,120] Two times four.
+- [01:14:18,260 - 01:14:19,040] One extra electron.
+- [01:14:19,700 - 01:14:20,960] We add an electron.
+- [01:14:20,960 - 01:14:21,400] Yeah.
+- [01:14:21,480 - 01:14:23,230] We add the first two electrons
+- [01:14:23,230 - 01:14:24,980] and put them in the ground state,
+- [01:14:25,999 - 01:14:27,720] and that's the...
+- [01:14:29,320 - 01:14:31,120] and we're finished with the ground state.
+- [01:14:32,320 - 01:14:32,920] Then,
+- [01:14:32,920 - 01:14:35,390] how many more states do we have
+- [01:14:35,390 - 01:14:37,860] if we only occupy the first excited state?
+- [01:14:38,560 - 01:14:39,560] In other words,
+- [01:14:39,560 - 01:14:42,100] how many different ways can we make atoms?
+- [01:14:42,720 - 01:14:43,020] Well,
+- [01:14:43,020 - 01:14:46,640] we can put an electron in any one
+- [01:14:46,640 - 01:14:50,260] of four states in the first excited state,
+- [01:14:50,960 - 01:14:52,840] but if we're allowed to play with a spin,
+- [01:14:52,840 - 01:14:54,940] then there's any one of eight.
+- [01:14:56,500 - 01:14:58,180] Any one of eight possibilities.
+- [01:14:58,980 - 01:14:59,240] Hmm?
+- [01:14:59,880 - 01:15:00,800] Two six.
+- [01:15:01,500 - 01:15:02,060] Two six?
+- [01:15:02,600 - 01:15:03,520] Are you making a mistake?
+- [01:15:03,760 - 01:15:05,660] P orbitals are six.
+- [01:15:06,620 - 01:15:07,580] Two P six,
+- [01:15:07,580 - 01:15:08,540] one is one.
+- [01:15:08,860 - 01:15:09,380] Four.
+- [01:15:09,780 - 01:15:13,260] There's two P orbitals in each of three spatial directions,
+- [01:15:13,260 - 01:15:16,000] so there's two electrons in P.
+- [01:15:17,540 - 01:15:19,760] There are four states at the first excited level.
+- [01:15:21,360 - 01:15:21,840] Eight.
+- [01:15:23,380 - 01:15:24,220] Three...six are P,
+- [01:15:24,220 - 01:15:25,580] and the other two are S1.
+- [01:15:25,740 - 01:15:26,100] Yeah.
+- [01:15:27,520 - 01:15:28,000] Okay.
+- [01:15:29,660 - 01:15:30,140] Okay.
+- [01:15:32,200 - 01:15:33,640] Is the angular momentum zero
+- [01:15:33,640 - 01:15:35,080] and the three angular momentum one?
+- [01:15:36,180 - 01:15:38,000] I think that's...that's it.
+- [01:15:38,160 - 01:15:40,000] There's angular momentum zero
+- [01:15:40,000 - 01:15:41,840] and three angular momentum one.
+- [01:15:42,000 - 01:15:42,240] Yeah,
+- [01:15:42,240 - 01:15:43,100] that's the four,
+- [01:15:43,100 - 01:15:45,460] but if now you double it by the spin,
+- [01:15:45,460 - 01:15:46,260] it becomes eight.
+- [01:15:49,660 - 01:15:50,140] Yeah.
+- [01:15:50,960 - 01:15:51,760] So you have a total of eight,
+- [01:15:51,760 - 01:15:52,740] not two.
+- [01:15:52,860 - 01:15:53,420] Right.
+- [01:15:53,540 - 01:15:54,160] That's fine.
+- [01:15:55,640 - 01:15:56,200] Okay.
+- [01:15:56,300 - 01:15:57,960] That's how spin was discovered.
+- [01:15:58,200 - 01:15:59,340] That's how spin was discovered,
+- [01:15:59,340 - 01:16:02,680] and the fact that it really was angular momentum,
+- [01:16:02,680 - 01:16:04,280] that
+- [01:16:04,900 - 01:16:06,800] was...that could be checked by putting
+- [01:16:06,800 - 01:16:08,700] the atom in a magnetic field.
+- [01:16:09,780 - 01:16:12,600] If the electron's additional degree
+- [01:16:12,600 - 01:16:15,420] of freedom was really angular momentum,
+- [01:16:15,420 - 01:16:17,060] that would mean
+- [01:16:17,060 - 01:16:19,100] that since the electron is charged,
+- [01:16:19,100 - 01:16:20,940] that the electron...
+- [01:16:20,940 - 01:16:21,060] If the electron is charged,
+- [01:16:21,060 - 01:16:22,660] that the electron would be behaving like a little magnet.
+- [01:16:23,240 - 01:16:26,420] If it was really spinning and it was charged,
+- [01:16:26,420 - 01:16:29,560] it would behave like a little...like a magnet,
+- [01:16:29,700 - 01:16:32,160] like an electromagnet current going around in a loop.
+- [01:16:32,900 - 01:16:34,360] If that were the case,
+- [01:16:34,360 - 01:16:37,320] and you put the electron into a magnetic field,
+- [01:16:37,320 - 01:16:39,980] preferentially it would
+- [01:16:39,980 - 01:16:42,220] either...it would lie along the magnetic field
+- [01:16:42,220 - 01:16:44,460] or opposite to the magnetic field with two
+- [01:16:44,460 - 01:16:45,760] different energy levels.
+- [01:16:46,560 - 01:16:47,120] Okay?
+- [01:16:47,120 - 01:16:51,620] So if you took the hydrogen atom with one electron,
+- [01:16:51,620 - 01:16:55,320] and now you put it in the magnetic
+- [01:16:55,320 - 01:16:55,780] field,
+- [01:16:55,780 - 01:16:58,750] the two possibilities for the electron
+- [01:16:58,750 - 01:17:01,720] spin along the magnetic field and opposite
+- [01:17:01,720 - 01:17:03,500] to the magnetic field would
+- [01:17:03,500 - 01:17:05,280] now have two different energy levels.
+- [01:17:05,840 - 01:17:09,700] So the two states of the hydrogen atom,
+- [01:17:09,700 - 01:17:13,320] which previously had been...the ground state...ground
+- [01:17:13,320 - 01:17:15,600] state of the hydrogen atom with an electron in it,
+- [01:17:15,600 - 01:17:17,100] the electron could have been pointed
+- [01:17:17,100 - 01:17:18,660] in one way or the other way.
+- [01:17:18,820 - 01:17:21,800] They had exactly the same energy in the first approximation,
+- [01:17:21,800 - 01:17:23,880] and now you put it in a magnetic
+- [01:17:23,880 - 01:17:26,340] field and you find that the energy levels are split.
+- [01:17:26,840 - 01:17:30,560] And they split exactly as if the electron
+- [01:17:30,560 - 01:17:34,280] were a little magnet because of its angular
+- [01:17:34,280 - 01:17:34,640] momentum.
+- [01:17:35,660 - 01:17:38,340] So the fact that it had angular momentum,
+- [01:17:38,340 - 01:17:42,720] that could be tested by putting it in a magnetic
+- [01:17:42,720 - 01:17:43,060] field.
+- [01:17:43,560 - 01:17:46,480] The fact that it had two levels...
+- [01:17:47,100 - 01:17:53,110] That was consistent with the Pauli exclusion
+- [01:17:53,110 - 01:17:59,120] principle and the fact that...or the assumed
+- [01:17:59,120 - 01:18:00,860] fact that you can't put
+- [01:18:00,860 - 01:18:02,600] two electrons into the same state.
+- [01:18:02,780 - 01:18:04,820] Now this was all wild guessing.
+- [01:18:05,280 - 01:18:07,140] It was wild guessing that you couldn't
+- [01:18:07,140 - 01:18:09,000] put two electrons in the same state.
+- [01:18:12,860 - 01:18:14,970] It wasn't quite so wild that it was
+- [01:18:14,970 - 01:18:17,080] angular momentum because that could be tested experimentally.
+- [01:18:18,459 - 01:18:21,920] But the next step,
+- [01:18:21,920 - 01:18:25,660] which I think was...was it Pauli?
+- [01:18:28,839 - 01:18:31,239] It was...the one person that it wasn't was
+- [01:18:31,239 - 01:18:33,640] the person that the idea was named for,
+- [01:18:33,640 - 01:18:35,080] Fermi.
+- [01:18:37,720 - 01:18:38,280] Dirac.
+- [01:18:38,520 - 01:18:39,780] It must have been Dirac again.
+- [01:18:40,340 - 01:18:41,660] It might have been Pauli.
+- [01:18:41,740 - 01:18:44,400] It was either Pauli or
+- [01:18:44,400 - 01:18:47,060] Dirac who had the idea that...
+- [01:18:47,060 - 01:18:48,420] The idea that there are two kinds of particles.
+- [01:18:50,339 - 01:18:52,819] Particles which satisfied the Pauli exclusion principle
+- [01:18:52,819 - 01:18:55,300] where you couldn't put two in the
+- [01:18:55,300 - 01:18:57,420] same state and particles where you
+- [01:18:57,420 - 01:18:59,540] could put two in the same state.
+- [01:18:59,680 - 01:19:00,260] And not only that,
+- [01:19:00,260 - 01:19:01,810] it was preferential to put more
+- [01:19:01,810 - 01:19:03,360] than one in the same state.
+- [01:19:05,340 - 01:19:08,320] It was already known that photons...
+- [01:19:08,320 - 01:19:10,700] Photons for our purposes now are just particles.
+- [01:19:11,120 - 01:19:14,080] It was already known that a classical wave
+- [01:19:14,080 - 01:19:17,040] of photons was simply a collection of a large
+- [01:19:17,040 - 01:19:19,200] number of photons all in the same state.
+- [01:19:19,360 - 01:19:20,860] All in the same quantum state.
+- [01:19:21,600 - 01:19:24,010] So it was known that there were particles
+- [01:19:24,010 - 01:19:26,420] that you could put into the same state.
+- [01:19:28,219 - 01:19:30,889] Einstein figured them out and again it was
+- [01:19:30,889 - 01:19:33,560] named after Bozer because Einstein figured it out and...
+- [01:19:35,320 - 01:19:36,680] It wasn't Bozer.
+- [01:19:37,340 - 01:19:39,440] Although Bozer did some...
+- [01:19:39,440 - 01:19:42,920] Was he in the mix somewhere?
+- [01:19:43,200 - 01:19:43,560] What's that?
+- [01:19:44,239 - 01:19:45,360] Enrico Fermi.
+- [01:19:45,440 - 01:19:46,940] Was he in that same group?
+- [01:19:46,940 - 01:19:47,380] No.
+- [01:19:47,520 - 01:19:48,540] He came later.
+- [01:19:49,020 - 01:19:51,460] And his contribution was different.
+- [01:19:53,540 - 01:19:56,920] The discovery of what is called the statistics of particles,
+- [01:19:56,920 - 01:20:00,100] their boson or fermion character
+- [01:20:00,840 - 01:20:02,980] was Einstein and Pauli I believe.
+- [01:20:03,260 - 01:20:04,520] Or it might have been Einstein,
+- [01:20:04,520 - 01:20:05,740] Dirac and Pauli.
+- [01:20:05,820 - 01:20:10,220] I'm not sure what the actual history was.
+- [01:20:10,520 - 01:20:16,920] And it was not...
+- [01:20:16,920 - 01:20:18,460] It was not the other people,
+- [01:20:18,460 - 01:20:20,080] although they made major contributions.
+- [01:20:22,020 - 01:20:24,430] I think it was Einstein who
+- [01:20:24,430 - 01:20:26,840] gave Bozer the credit for the discovery.
+- [01:20:28,080 - 01:20:29,800] When you talk about photons,
+- [01:20:29,800 - 01:20:31,960] they're independent particles.
+- [01:20:32,340 - 01:20:33,800] But when we talk about electrons,
+- [01:20:33,800 - 01:20:35,720] we associate them with a hydrogen.
+- [01:20:36,020 - 01:20:38,540] What happens if you have just a stream of electrons?
+- [01:20:38,840 - 01:20:40,160] You can't put two of them in the same state.
+- [01:20:41,620 - 01:20:45,200] That's why you can't make a laser that lasers electrons.
+- [01:20:47,099 - 01:20:49,189] A laser creates lots of photons
+- [01:20:49,189 - 01:20:51,280] all in the same quantum state.
+- [01:20:54,660 - 01:20:57,600] You would have a pretty wild thing if
+- [01:20:57,600 - 01:21:00,540] you could get electrons into the same state and
+- [01:21:00,540 - 01:21:02,040] do the same kind of things with them,
+- [01:21:02,040 - 01:21:03,000] but you can't.
+- [01:21:03,160 - 01:21:07,000] You have a rather remarkable microscope that you could...
+- [01:21:07,000 - 01:21:09,160] You have electron microscopes,
+- [01:21:09,160 - 01:21:11,820] but this would be a rather superior electron microscope.
+- [01:21:12,140 - 01:21:13,640] So the momentum,
+- [01:21:13,640 - 01:21:14,320] this L,
+- [01:21:14,320 - 01:21:16,900] it's not related to rotation around the circle.
+- [01:21:16,900 - 01:21:17,500] It's related to rotation around the nucleus.
+- [01:21:17,860 - 01:21:18,300] It is.
+- [01:21:18,300 - 01:21:19,100] Of course it is.
+- [01:21:19,160 - 01:21:20,060] There is no nucleus.
+- [01:21:20,060 - 01:21:20,820] It's just L.
+- [01:21:20,820 - 01:21:20,980] Oh,
+- [01:21:20,980 - 01:21:22,100] then it's just R cross P.
+- [01:21:22,600 - 01:21:23,220] You know,
+- [01:21:23,220 - 01:21:25,500] a particle moving in free space,
+- [01:21:25,500 - 01:21:26,760] just moving along a line,
+- [01:21:27,419 - 01:21:29,060] can have an angular momentum,
+- [01:21:29,060 - 01:21:29,860] R cross P,
+- [01:21:29,860 - 01:21:31,440] relative to some origin.
+- [01:21:32,200 - 01:21:32,720] Yeah,
+- [01:21:32,720 - 01:21:32,880] yeah.
+- [01:21:33,539 - 01:21:37,020] The angular momentum is relative to an origin.
+- [01:21:37,580 - 01:21:39,940] That's because R is relative to an origin.
+- [01:21:41,600 - 01:21:44,340] The definition of R is relative to an origin.
+- [01:21:45,179 - 01:21:46,580] Fixing an origin,
+- [01:21:46,580 - 01:21:48,660] you need to...
+- [01:21:48,660 - 01:21:51,580] And the whole idea of rotation is about some origin.
+- [01:21:52,100 - 01:21:54,320] The whole idea of rotation picks...
+- [01:21:54,320 - 01:21:55,680] I should have emphasized that in the beginning.
+- [01:21:56,060 - 01:21:57,940] Whenever you're talking about angular momentum,
+- [01:21:57,940 - 01:21:59,220] whenever you're talking about rotation,
+- [01:21:59,420 - 01:22:03,100] you're picking a special point to study it about.
+- [01:22:03,840 - 01:22:04,360] Now,
+- [01:22:04,360 - 01:22:05,260] in the case of an atom,
+- [01:22:05,260 - 01:22:07,410] it's natural to pick the nucleus
+- [01:22:07,410 - 01:22:09,560] to be the point of symmetry.
+- [01:22:12,360 - 01:22:14,320] For a particle moving in free space,
+- [01:22:14,340 - 01:22:16,100] every point is a point of symmetry,
+- [01:22:16,100 - 01:22:17,500] rotational symmetry.
+- [01:22:18,320 - 01:22:22,040] So it becomes a less interesting thing.
+- [01:22:22,880 - 01:22:25,340] But for the atom,
+- [01:22:25,340 - 01:22:28,620] there's a natural center to talk about rotations about.
+- [01:22:29,320 - 01:22:30,960] I should have emphasized that.
+- [01:22:33,420 - 01:22:33,980] Question?
+- [01:22:34,280 - 01:22:34,440] Yeah.
+- [01:22:34,980 - 01:22:37,120] So why are there two rows of
+- [01:22:37,120 - 01:22:39,260] eight elements and then two rows of 18?
+- [01:22:40,500 - 01:22:41,740] 18 is twice 9.
+- [01:22:42,820 - 01:22:44,220] But why are there two...
+- [01:22:44,340 - 01:22:45,440] I don't know why.
+- [01:22:45,640 - 01:22:46,700] At some point,
+- [01:22:46,700 - 01:22:48,720] the whole picture breaks down and doesn't make any sense.
+- [01:22:49,980 - 01:22:51,440] And pretty quickly,
+- [01:22:51,440 - 01:22:51,880] in fact.
+- [01:22:55,699 - 01:22:58,959] The picture of shells and filling shells
+- [01:22:58,959 - 01:23:02,220] is more than a little bit naive.
+- [01:23:02,460 - 01:23:04,500] It completely overlooks the
+- [01:23:04,500 - 01:23:06,540] interactions between the electrons.
+- [01:23:07,040 - 01:23:07,560] Now,
+- [01:23:07,560 - 01:23:09,500] by the time you have a fairly large atom,
+- [01:23:10,260 - 01:23:13,240] there's basically as many electrons in the inner core
+- [01:23:14,340 - 01:23:16,460] as there are protons at the center.
+- [01:23:17,160 - 01:23:19,360] So to ignore the interaction of
+- [01:23:19,360 - 01:23:21,560] the outer electrons with the inner electrons
+- [01:23:21,560 - 01:23:22,780] makes no sense at all.
+- [01:23:23,400 - 01:23:23,960] So,
+- [01:23:23,960 - 01:23:24,700] I mean,
+- [01:23:24,700 - 01:23:27,160] the whole thing breaks down pretty badly.
+- [01:23:28,819 - 01:23:33,080] And then there's a zillion rules that I don't know.
+- [01:23:33,680 - 01:23:38,200] There's this impression that the more electrons you have,
+- [01:23:38,240 - 01:23:39,840] the bigger and the bigger the atom gets,
+- [01:23:40,000 - 01:23:41,620] but actually they don't get that much bigger.
+- [01:23:41,620 - 01:23:41,920] No,
+- [01:23:41,920 - 01:23:43,840] they don't get bigger practically,
+- [01:23:43,840 - 01:23:44,560] not at all.
+- [01:23:44,640 - 01:23:47,080] And the reason is because the more electrons,
+- [01:23:47,080 - 01:23:48,840] what happens is very simple.
+- [01:23:50,100 - 01:23:52,740] The more protons you have in the nucleus,
+- [01:23:52,740 - 01:23:54,120] the larger the charge.
+- [01:23:54,440 - 01:23:56,020] That tends to pull in
+- [01:23:56,020 - 01:23:57,600] the inner core of the electrons,
+- [01:23:57,700 - 01:23:59,940] the inner shells of the electrons.
+- [01:24:00,280 - 01:24:01,580] And what's left over,
+- [01:24:01,580 - 01:24:02,120] if you have,
+- [01:24:02,120 - 01:24:02,440] let's say,
+- [01:24:02,440 - 01:24:03,460] one valence electron,
+- [01:24:04,260 - 01:24:09,440] is one valence electron moving in what kind of field?
+- [01:24:09,740 - 01:24:11,440] The field that it's moving in,
+- [01:24:11,620 - 01:24:16,440] is n protons and n minus one electrons.
+- [01:24:18,940 - 01:24:21,370] So that one extra valence
+- [01:24:21,370 - 01:24:23,800] electron basically thinks it's hydrogen,
+- [01:24:24,260 - 01:24:25,860] and it's no bigger than hydrogen,
+- [01:24:25,860 - 01:24:26,300] really.
+- [01:24:26,460 - 01:24:28,560] It's essentially almost the same size as hydrogen.
+- [01:24:29,300 - 01:24:31,940] So I think that's what you were saying.
+- [01:24:32,940 - 01:24:35,300] Atoms do not get bigger appreciably.
+- [01:24:35,500 - 01:24:37,320] They get very slowly bigger,
+- [01:24:37,460 - 01:24:40,280] but they don't get appreciably bigger as you add electrons.
+- [01:24:41,659 - 01:24:45,160] As you add protons and electrons at the same time.
+- [01:24:45,900 - 01:24:49,180] The other interesting thing that I ran into is that
+- [01:24:49,860 - 01:24:51,320] with hydrogen atoms,
+- [01:24:51,320 - 01:24:53,210] the reason that they stay
+- [01:24:53,210 - 01:24:55,100] as far apart from each other
+- [01:24:55,100 - 01:24:57,300] is because of electrical repulsion.
+- [01:24:58,300 - 01:24:59,100] Hydrogen atoms?
+- [01:24:59,400 - 01:24:59,760] Oh,
+- [01:24:59,760 - 01:25:01,190] there's also an important component
+- [01:25:01,190 - 01:25:02,620] from the Pauli exclusion principle.
+- [01:25:02,980 - 01:25:03,160] Well,
+- [01:25:03,160 - 01:25:04,180] that's what I was going to say.
+- [01:25:04,180 - 01:25:04,980] That's the exception.
+- [01:25:05,640 - 01:25:08,160] The rule is for most atoms,
+- [01:25:08,160 - 01:25:09,620] it's Pauli repulsion.
+- [01:25:09,620 - 01:25:10,920] That keeps them apart.
+- [01:25:15,620 - 01:25:16,140] Okay.
+- [01:25:17,800 - 01:25:18,740] Where are we?
+- [01:25:19,680 - 01:25:20,200] Yeah,
+- [01:25:20,200 - 01:25:21,500] so we want to talk
+- [01:25:21,500 - 01:25:22,800] about what bosons and fermions are.
+- [01:25:22,820 - 01:25:23,040] Yes?
+- [01:25:23,340 - 01:25:28,020] This might be too much to answer,
+- [01:25:28,160 - 01:25:32,140] but is the exclusion principle a separate postulate?
+- [01:25:32,420 - 01:25:32,580] No,
+- [01:25:32,580 - 01:25:33,420] at that time,
+- [01:25:33,420 - 01:25:33,640] yes.
+- [01:25:34,740 - 01:25:35,800] Now it is not.
+- [01:25:36,820 - 01:25:39,600] Now it's part of basic special regression.
+- [01:25:39,620 - 01:25:40,670] It's part of the special
+- [01:25:40,670 - 01:25:41,720] relativity together with quantum mechanics.
+- [01:25:43,220 - 01:25:45,380] Quantum mechanics without special relativity,
+- [01:25:46,740 - 01:25:47,980] it's a postulate,
+- [01:25:47,980 - 01:25:50,000] but the postulate can be phrased
+- [01:25:50,000 - 01:25:52,020] in a more elegant mathematical way,
+- [01:25:52,120 - 01:25:52,980] and that's what we're going to do.
+- [01:25:53,600 - 01:25:55,060] We're going to phrase the
+- [01:25:55,060 - 01:25:56,520] postulate in a more elegant way.
+- [01:25:57,220 - 01:25:59,140] Once you introduce special relativity and
+- [01:25:59,140 - 01:26:01,060] you combine it with quantum mechanics,
+- [01:26:01,380 - 01:26:03,140] it's not a new postulate.
+- [01:26:03,260 - 01:26:08,220] It's a consequence of special relativity.
+- [01:26:10,559 - 01:26:11,240] It's a consequence of the discovery of the universe,
+- [01:26:11,240 - 01:26:12,220] which was Dirac's discovery.
+- [01:26:13,740 - 01:26:14,420] Okay.
+- [01:26:15,140 - 01:26:17,000] Instead of talking about one particle,
+- [01:26:17,060 - 01:26:18,320] let's talk about two particles.
+- [01:26:18,620 - 01:26:19,080] Well,
+- [01:26:19,080 - 01:26:20,790] let's go back to classical
+- [01:26:20,790 - 01:26:22,500] statistical mechanics for a minute.
+- [01:26:23,639 - 01:26:26,480] In classical statistical mechanics,
+- [01:26:27,360 - 01:26:31,800] or classical mechanics of a system of particles,
+- [01:26:33,860 - 01:26:36,840] if all the particles are the same kind of particle,
+- [01:26:38,420 - 01:26:40,040] the question is,
+- [01:26:40,060 - 01:26:42,410] do you treat them as
+- [01:26:42,410 - 01:26:44,760] identical particles in this following sense,
+- [01:26:45,040 - 01:26:47,620] in counting the number of configurations?
+- [01:26:48,000 - 01:26:49,060] For example,
+- [01:26:50,200 - 01:26:52,200] we put particles into boxes.
+- [01:26:52,960 - 01:26:56,060] The boxes could be little boxes in phase space,
+- [01:26:56,160 - 01:26:57,240] or it could just be boxes.
+- [01:27:00,620 - 01:27:02,860] Four boxes we can put particles into.
+- [01:27:03,800 - 01:27:05,260] Let's say we have two particles,
+- [01:27:05,360 - 01:27:06,820] and they're both the same kind of particles.
+- [01:27:06,840 - 01:27:11,140] So here's a configuration.
+- [01:27:11,300 - 01:27:12,670] We can put two of
+- [01:27:12,670 - 01:27:14,040] them both into the same box.
+- [01:27:14,500 - 01:27:17,940] That's clearly a unique configuration.
+- [01:27:18,980 - 01:27:21,960] Or I can put one particle in one box
+- [01:27:21,960 - 01:27:23,560] and the other particle in the other box.
+- [01:27:23,900 - 01:27:25,500] Is that one configuration,
+- [01:27:25,500 - 01:27:27,000] or is it two configurations?
+- [01:27:28,100 - 01:27:30,340] If these particles have names,
+- [01:27:30,580 - 01:27:33,720] Harry and Sally.
+- [01:27:35,020 - 01:27:36,100] Harry and Sally.
+- [01:27:36,840 - 01:27:36,900] Yeah.
+- [01:27:37,120 - 01:27:38,100] If they have names,
+- [01:27:38,560 - 01:27:40,040] then you could put Harry here,
+- [01:27:40,120 - 01:27:40,760] Sally here,
+- [01:27:40,860 - 01:27:42,720] or you could put Harry here and Sally here,
+- [01:27:42,800 - 01:27:45,080] and they seem to be two different configurations.
+- [01:27:47,160 - 01:27:49,460] In counting configurations,
+- [01:27:49,720 - 01:27:51,860] in calculating entropy and so forth,
+- [01:27:52,000 - 01:27:52,420] this could be,
+- [01:27:52,500 - 01:27:55,100] this sounds like it's a difference.
+- [01:27:55,320 - 01:27:55,460] Now,
+- [01:27:55,460 - 01:27:56,860] whether it is an important difference
+- [01:27:56,860 - 01:27:58,080] or not is a separate issue,
+- [01:27:58,260 - 01:28:01,340] but do you count these as separate configurations?
+- [01:28:04,120 - 01:28:06,680] You could always imagine that these particles
+- [01:28:06,840 - 01:28:10,500] which are identical to you
+- [01:28:11,500 - 01:28:14,340] have a little tiny little bit of paint on them
+- [01:28:14,340 - 01:28:16,040] that paints their name on them,
+- [01:28:16,840 - 01:28:19,820] but it's such a weak little bit of paint,
+- [01:28:19,940 - 01:28:20,740] classical paint,
+- [01:28:20,740 - 01:28:22,020] not quantized paint.
+- [01:28:22,640 - 01:28:24,500] Classical paint that's so faint,
+- [01:28:24,620 - 01:28:26,220] so terribly faint,
+- [01:28:26,500 - 01:28:29,740] that no experiment that you ever could do
+- [01:28:29,740 - 01:28:34,420] could detect the name imprinted on the particle,
+- [01:28:34,600 - 01:28:35,320] but
+- [01:28:35,320 - 01:28:37,160] you would have to say
+- [01:28:37,160 - 01:28:38,600] they were different particles.
+- [01:28:38,740 - 01:28:40,440] Harry here and Sally there would be different
+- [01:28:40,440 - 01:28:42,240] than Sally here and Harry there.
+- [01:28:45,719 - 01:28:46,240] Or,
+- [01:28:46,240 - 01:28:47,160] you can say,
+- [01:28:47,260 - 01:28:47,460] no,
+- [01:28:47,460 - 01:28:50,180] I'm going to do statistical mechanics
+- [01:28:50,180 - 01:28:53,500] as if these were the same configuration,
+- [01:28:54,200 - 01:28:56,360] not think of the particles as labeled.
+- [01:28:57,600 - 01:28:58,120] Now,
+- [01:28:58,120 - 01:28:58,460] in fact,
+- [01:28:58,460 - 01:28:59,420] you get the same answers.
+- [01:28:59,780 - 01:29:01,220] It doesn't make any difference
+- [01:29:01,220 - 01:29:02,840] for classical statistical mechanics,
+- [01:29:03,040 - 01:29:04,320] but it's a conceptual difference.
+- [01:29:05,320 - 01:29:07,100] Putting a particle here and a particle here,
+- [01:29:07,300 - 01:29:08,630] is it or is it
+- [01:29:08,630 - 01:29:09,960] not the same as switching them
+- [01:29:09,960 - 01:29:11,620] if they're the same kind of particle?
+- [01:29:12,580 - 01:29:14,580] So that's a classical version
+- [01:29:15,120 - 01:29:17,260] of the notion of identical particles,
+- [01:29:18,059 - 01:29:20,200] and in classical statistical mechanics,
+- [01:29:20,660 - 01:29:22,260] we usually assume
+- [01:29:22,960 - 01:29:25,540] that these are the same configurations.
+- [01:29:25,980 - 01:29:26,500] Harry,
+- [01:29:26,500 - 01:29:26,880] Sally,
+- [01:29:26,880 - 01:29:27,200] Sally,
+- [01:29:27,200 - 01:29:27,560] Harry,
+- [01:29:27,660 - 01:29:28,900] they're the same configurations,
+- [01:29:28,920 - 01:29:30,520] and that's the way we do our counting.
+- [01:29:31,040 - 01:29:33,540] How many configurations are there
+- [01:29:34,140 - 01:29:36,080] for a large number of particles?
+- [01:29:36,580 - 01:29:37,160] Well,
+- [01:29:37,160 - 01:29:37,780] typically,
+- [01:29:37,780 - 01:29:39,260] you get some n factorial
+- [01:29:39,260 - 01:29:42,500] different ways of relabeling the particles,
+- [01:29:42,760 - 01:29:45,220] and that goes into statistical mechanics.
+- [01:29:45,320 - 01:29:47,200] If you've taken statistical mechanics course,
+- [01:29:47,300 - 01:29:48,900] you know that in partition functions,
+- [01:29:49,220 - 01:29:52,720] there are these one over n factorials in them,
+- [01:29:52,820 - 01:29:56,100] and it's simply keeping track of the fact
+- [01:29:56,100 - 01:29:58,480] that if you interchange two particles,
+- [01:29:58,700 - 01:30:00,000] it's the same configuration.
+- [01:30:01,840 - 01:30:03,220] That's an assumption you make.
+- [01:30:03,540 - 01:30:05,160] In quantum mechanics,
+- [01:30:05,600 - 01:30:07,230] you don't have the luxury
+- [01:30:07,230 - 01:30:08,860] of doing one or the other.
+- [01:30:08,960 - 01:30:12,940] It is very definitely that particles are identical
+- [01:30:13,429 - 01:30:16,380] in the sense that they do not carry labels.
+- [01:30:16,720 - 01:30:17,860] Two electrons,
+- [01:30:17,860 - 01:30:18,920] one electron here
+- [01:30:18,920 - 01:30:20,160] and the other electron here
+- [01:30:20,160 - 01:30:23,680] is mathematically identical,
+- [01:30:23,920 - 01:30:25,480] and you couldn't do it otherwise,
+- [01:30:30,340 - 01:30:31,520] exchanging the electrons.
+- [01:30:32,820 - 01:30:34,100] Same with true of photons.
+- [01:30:34,720 - 01:30:35,180] Now,
+- [01:30:35,180 - 01:30:37,020] having a photon here and an electron here
+- [01:30:37,020 - 01:30:38,740] is not the same as having an electron here
+- [01:30:38,740 - 01:30:39,520] and a photon here.
+- [01:30:39,580 - 01:30:39,940] That's clear.
+- [01:30:40,100 - 01:30:41,080] That should be obvious.
+- [01:30:41,480 - 01:30:42,780] They're very different properties,
+- [01:30:42,900 - 01:30:44,780] and you can tell those two configurations apart.
+- [01:30:45,420 - 01:30:47,300] But interchanging and swapping around
+- [01:30:47,300 - 01:30:49,560] which electron is which,
+- [01:30:50,360 - 01:30:53,780] that's a non-transformation
+- [01:30:54,320 - 01:30:55,700] on the state of a system,
+- [01:30:55,840 - 01:30:57,620] and it also is true of photons.
+- [01:30:58,780 - 01:31:00,280] So let's think about that
+- [01:31:00,280 - 01:31:01,500] and what it tells us about a system.
+- [01:31:01,520 - 01:31:02,440] Let's think about the quantum state
+- [01:31:03,360 - 01:31:05,840] of a pair of identical particles.
+- [01:31:06,020 - 01:31:07,760] Let's take a pair of identical particles.
+- [01:31:07,920 - 01:31:08,940] This could be two electrons.
+- [01:31:09,620 - 01:31:10,820] And for the moment,
+- [01:31:10,820 - 01:31:15,440] let's forget spin or anything else.
+- [01:31:15,520 - 01:31:20,040] We just have two electrons in some states.
+- [01:31:22,680 - 01:31:23,720] Let's forget spin.
+- [01:31:24,100 - 01:31:26,220] How do we describe two particles?
+- [01:31:26,780 - 01:31:29,460] One particle is described by a wave function,
+- [01:31:29,460 - 01:31:31,100] psi of x,
+- [01:31:31,100 - 01:31:33,040] where x is the position of the electron.
+- [01:31:33,740 - 01:31:35,080] What about two electrons?
+- [01:31:36,120 - 01:31:37,060] And in fact,
+- [01:31:37,060 - 01:31:38,380] let's go back a step.
+- [01:31:38,660 - 01:31:39,960] What is the psi of x?
+- [01:31:40,040 - 01:31:40,620] What is its meaning?
+- [01:31:41,020 - 01:31:43,320] It's the overlap or the inner product
+- [01:31:43,320 - 01:31:45,480] of an electron at x
+- [01:31:46,160 - 01:31:47,820] with the state of the system psi.
+- [01:31:48,520 - 01:31:51,060] If psi is the state vector of the electron,
+- [01:31:51,980 - 01:31:55,180] then its projection or its inner product
+- [01:31:55,180 - 01:31:57,440] onto a state localized at x
+- [01:31:57,440 - 01:31:58,520] is called psi of x.
+- [01:31:59,580 - 01:32:01,000] Suppose there were two electrons.
+- [01:32:01,380 - 01:32:03,880] How do you characterize the states of two electrons?
+- [01:32:04,240 - 01:32:04,380] Well,
+- [01:32:04,380 - 01:32:06,260] you characterize them by two positions,
+- [01:32:07,200 - 01:32:08,880] position of one and position of the other.
+- [01:32:09,560 - 01:32:11,480] Let's call them x1 and x2.
+- [01:32:13,320 - 01:32:17,680] That does not stand for different directions of space now.
+- [01:32:17,880 - 01:32:19,380] It stands for the two electrons.
+- [01:32:20,880 - 01:32:21,980] x1 and x2,
+- [01:32:21,980 - 01:32:24,000] and the wave function is a function
+- [01:32:24,660 - 01:32:27,220] of two coordinates instead of one,
+- [01:32:27,360 - 01:32:29,440] psi of x1 and x2.
+- [01:32:35,740 - 01:32:38,000] That's the wave function of a two-particle system.
+- [01:32:38,260 - 01:32:39,180] It's a function of,
+- [01:32:39,180 - 01:32:40,740] and if you want the probability,
+- [01:32:41,020 - 01:32:43,720] the probability is a probability to find
+- [01:32:43,720 - 01:32:45,460] particle one at position x1,
+- [01:32:45,560 - 01:32:47,220] particle two at position x2.
+- [01:32:47,660 - 01:32:50,800] So we have functions of two variables
+- [01:32:50,800 - 01:32:52,080] when we have two particles.
+- [01:32:52,900 - 01:32:55,720] Now let's think of the operation
+- [01:32:55,720 - 01:32:57,820] of swapping the two particles.
+- [01:33:00,120 - 01:33:03,580] Taking particle one and replacing it by particle two,
+- [01:33:03,600 - 01:33:05,400] and particle two by particle one.
+- [01:33:05,520 - 01:33:05,680] Well,
+- [01:33:05,680 - 01:33:06,380] that's a transformation.
+- [01:33:07,260 - 01:33:10,280] That's a transformation that generally
+- [01:33:10,280 - 01:33:13,020] will change psi of x1 and x2.
+- [01:33:14,680 - 01:33:18,260] It'll change it from psi of x1,
+- [01:33:18,260 - 01:33:19,560] x2 to what?
+- [01:33:23,100 - 01:33:25,560] To psi of x2 and x1,
+- [01:33:27,059 - 01:33:29,180] which is not the same thing in general.
+- [01:33:31,420 - 01:33:32,920] A function of two variables
+- [01:33:32,920 - 01:33:34,420] does not have to be symmetric.
+- [01:33:34,660 - 01:33:36,280] It does not have to be such that if you
+- [01:33:36,280 - 01:33:37,520] interchange the two arguments,
+- [01:33:37,640 - 01:33:40,600] you get the same function back.
+- [01:33:40,940 - 01:33:41,940] So in general,
+- [01:33:41,940 - 01:33:44,700] a transformation,
+- [01:33:44,920 - 01:33:47,860] it's a transformation which swaps the two particles.
+- [01:33:49,600 - 01:33:50,960] Let's call that transformation,
+- [01:33:51,280 - 01:33:51,940] let's give it a name.
+- [01:33:53,480 - 01:33:54,460] It's an operator.
+- [01:33:54,800 - 01:33:57,240] It operates on a wave function
+- [01:33:57,240 - 01:33:58,820] and gives a new wave function.
+- [01:33:59,460 - 01:34:00,700] So let's name it.
+- [01:34:02,260 - 01:34:04,140] Let's call it the swap operation.
+- [01:34:08,300 - 01:34:09,360] Let's call it S.
+- [01:34:11,300 - 01:34:12,680] And here's what S does.
+- [01:34:13,580 - 01:34:17,900] S acts on a state with particle one
+- [01:34:18,269 - 01:34:22,480] at position x1 and particle two at position x2.
+- [01:34:22,720 - 01:34:24,500] How do I know which is particle one?
+- [01:34:24,700 - 01:34:26,000] Particle one comes first.
+- [01:34:26,580 - 01:34:28,060] Particle two comes second.
+- [01:34:28,740 - 01:34:31,020] What does the swap operation do
+- [01:34:31,020 - 01:34:33,820] when it acts on a particle at position one
+- [01:34:33,820 - 01:34:35,840] and a second particle at position two?
+- [01:34:36,600 - 01:34:38,280] It just swaps them.
+- [01:34:41,420 - 01:34:43,700] It gives you particle two,
+- [01:34:43,700 - 01:34:44,840] sorry,
+- [01:34:44,960 - 01:34:47,540] particle one at position x2
+- [01:34:47,540 - 01:34:50,320] and particle two at position x1.
+- [01:34:50,500 - 01:34:51,540] It just swaps them.
+- [01:34:52,400 - 01:34:55,440] If the particles had little names attached to them,
+- [01:34:55,560 - 01:34:56,760] this would mean something.
+- [01:34:58,340 - 01:35:00,660] Here you would have Harry at position one
+- [01:35:00,660 - 01:35:02,180] and Sally at position two.
+- [01:35:02,280 - 01:35:04,400] Here you would have Sally at position two
+- [01:35:04,400 - 01:35:05,440] and Harry at position...
+- [01:35:06,060 - 01:35:07,060] I'm not sure I said it right,
+- [01:35:07,200 - 01:35:08,060] but you know what I mean.
+- [01:35:09,600 - 01:35:10,540] You change them.
+- [01:35:10,640 - 01:35:14,100] You just do a little dance and switch them.
+- [01:35:17,900 - 01:35:19,960] So this is a possible operation
+- [01:35:19,960 - 01:35:22,380] that you can do on the state of two particles.
+- [01:35:28,200 - 01:35:29,480] Here's an interesting fact.
+- [01:35:30,500 - 01:35:32,460] Take the operation s squared.
+- [01:35:33,160 - 01:35:34,580] What does s squared do?
+- [01:35:35,220 - 01:35:37,240] It swaps and then it swaps again.
+- [01:35:38,200 - 01:35:39,960] It swaps and it swaps again.
+- [01:35:40,080 - 01:35:41,120] What happens if you swap twice?
+- [01:35:43,100 - 01:35:45,260] You get back the same thing.
+- [01:35:46,440 - 01:35:48,140] Obviously you get back the same thing
+- [01:35:48,140 - 01:35:52,340] even if the particles have little names attached to them.
+- [01:35:52,540 - 01:35:54,800] If you interchange Harry and Sally
+- [01:35:54,800 - 01:35:56,800] and then interchange Harry and Sally again,
+- [01:35:56,800 - 01:35:59,100] you get back to the original naming.
+- [01:36:00,080 - 01:36:01,700] So what do we know about s squared?
+- [01:36:02,240 - 01:36:07,020] s squared must be one as an operator.
+- [01:36:07,500 - 01:36:09,120] s squared must be one.
+- [01:36:11,400 - 01:36:12,820] It's a unitary operator.
+- [01:36:13,140 - 01:36:14,740] Why should it be a unitary operator?
+- [01:36:15,060 - 01:36:16,860] Because all transformations on the
+- [01:36:16,860 - 01:36:18,660] space of states are unitary.
+- [01:36:19,200 - 01:36:21,080] So here's what we know about s.
+- [01:36:21,460 - 01:36:22,680] s is unitary.
+- [01:36:29,300 - 01:36:31,680] That means it doesn't change probabilities.
+- [01:36:31,860 - 01:36:35,800] It doesn't change inner products.
+- [01:36:36,200 - 01:36:38,260] And s squared is equal to one.
+- [01:36:41,340 - 01:36:49,680] What are the eigenvalues of a matrix or an operator
+- [01:36:49,680 - 01:36:51,460] whose square is one?
+- [01:36:54,480 - 01:36:56,240] Either one or minus one.
+- [01:36:57,280 - 01:36:58,760] The only possibility.
+- [01:36:59,340 - 01:37:01,060] s squared is equal to one
+- [01:37:01,800 - 01:37:05,440] means that the eigenvalues are plus one or minus one.
+- [01:37:07,140 - 01:37:07,780] Okay,
+- [01:37:07,780 - 01:37:12,800] let's make a new principle.
+- [01:37:13,260 - 01:37:16,720] The new principle is that electrons
+- [01:37:17,620 - 01:37:20,620] or that identical particles
+- [01:37:20,620 - 01:37:21,500] they could be photons,
+- [01:37:21,500 - 01:37:22,600] they could be electrons,
+- [01:37:22,600 - 01:37:22,960] whatever
+- [01:37:23,680 - 01:37:26,780] that for a specific kind of particle
+- [01:37:26,800 - 01:37:30,420] the wave function when you
+- [01:37:30,420 - 01:37:32,420] when you interchange two particles
+- [01:37:33,340 - 01:37:35,900] always comes back to the same wave function
+- [01:37:35,900 - 01:37:37,940] that's if s is equal to one
+- [01:37:40,940 - 01:37:43,140] or comes back to its negative
+- [01:37:43,140 - 01:37:45,220] if s is equal to minus one.
+- [01:37:49,120 - 01:37:50,200] See what that means.
+- [01:37:50,940 - 01:37:52,800] Let's take the case plus one.
+- [01:37:57,679 - 01:38:00,020] I think I'm beginning to fade.
+- [01:38:00,140 - 01:38:01,220] I think it's time to quit.
+- [01:38:01,340 - 01:38:03,640] I think you're probably also beginning to fade.
+- [01:38:03,860 - 01:38:06,860] We'll go through fermions and bosons next time.
+- [01:38:07,080 - 01:38:09,240] But the basic idea is
+- [01:38:09,240 - 01:38:11,400] classifying the wave functions of particles
+- [01:38:11,400 - 01:38:15,480] in terms of what happens when you switch the particles.
+- [01:38:16,440 - 01:38:18,860] It's a basic quantum mechanical process
+- [01:38:18,860 - 01:38:20,920] or a basic quantum mechanical operation
+- [01:38:20,920 - 01:38:23,100] the swapping of particles.
+- [01:38:23,980 - 01:38:24,620] And
+- [01:38:26,800 - 01:38:29,060] the notion of identical particles
+- [01:38:29,800 - 01:38:32,760] is basically telling you that something simple happens
+- [01:38:32,760 - 01:38:34,340] when you swap two particles.
+- [01:38:35,900 - 01:38:37,720] Either the wave function does this
+- [01:38:37,720 - 01:38:38,740] or it does that.
+- [01:38:38,860 - 01:38:40,040] And we'll do it next week.
+- [01:38:41,880 - 01:38:42,780] For more,
+- [01:38:42,780 - 01:38:45,220] please visit us at stanford.edu.
