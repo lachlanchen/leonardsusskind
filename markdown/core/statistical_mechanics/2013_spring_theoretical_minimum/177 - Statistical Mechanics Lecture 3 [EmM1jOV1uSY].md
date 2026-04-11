@@ -1,0 +1,2878 @@
+# Transcript
+
+Source: core/statistical_mechanics/2013_spring_theoretical_minimum/177 - Statistical Mechanics Lecture 3 [EmM1jOV1uSY].mkv
+
+- [00:00:04,800 - 00:00:06,180] Stanford University
+- [00:00:08,920 - 00:00:13,050] The entropy of a probability distribution is
+- [00:00:13,050 - 00:00:17,180] the sum of all of the states.
+- [00:00:17,520 - 00:00:21,440] A probability distribution now means a probability for
+- [00:00:21,440 - 00:00:25,360] a system to be in the i-th state.
+- [00:00:26,320 - 00:00:29,399] Where now we really are thinking for the moment
+- [00:00:29,399 - 00:00:32,479] about states being discrete so that we can count them.
+- [00:00:33,600 - 00:00:36,860] Every state has a probability,
+- [00:00:36,860 - 00:00:37,600] p .
+- [00:00:39,580 - 00:00:41,540] Of course where it came from,
+- [00:00:41,540 - 00:00:43,800] where that probability came from we'll discuss later.
+- [00:00:44,080 - 00:00:46,680] But let's suppose somebody gives us,
+- [00:00:46,680 - 00:00:50,140] plops down for us a probability distribution p .
+- [00:00:51,380 - 00:00:53,160] Then there's a p .
+- [00:00:53,160 - 00:00:55,340] There's also an energy distribution.
+- [00:00:55,360 - 00:00:55,960] p ,
+- [00:00:55,960 - 00:00:58,620] the energy of the i-th state.
+- [00:01:00,440 - 00:01:03,610] And the assumption now is that the sum
+- [00:01:03,610 - 00:01:06,780] of all the p is equal to one.
+- [00:01:09,540 - 00:01:11,860] And pretty much a definition,
+- [00:01:11,860 - 00:01:17,110] the sum of p times e
+- [00:01:17,110 - 00:01:22,360] is equal to the average energy.
+- [00:01:24,020 - 00:01:25,280] It makes sense.
+- [00:01:25,320 - 00:01:25,340] It makes sense.
+- [00:01:25,360 - 00:01:26,080] So you add up the states,
+- [00:01:26,080 - 00:01:26,080] you add up,
+- [00:01:26,080 - 00:01:27,040] you take all of the states,
+- [00:01:27,040 - 00:01:29,990] you add their energies but weighted according
+- [00:01:29,990 - 00:01:32,940] to the probability of the i-th state.
+- [00:01:33,220 - 00:01:35,980] And that's what's normally called an average
+- [00:01:35,980 - 00:01:38,740] quantity in statistics or in probability theory.
+- [00:01:39,120 - 00:01:41,530] I've never understood the difference between
+- [00:01:41,530 - 00:01:43,940] what statistics is and what probability is.
+- [00:01:44,120 - 00:01:46,500] I'm told by some of my friends
+- [00:01:46,500 - 00:01:48,880] who are statisticians that there is a difference,
+- [00:01:48,880 - 00:01:50,780] but I have never understood what it is.
+- [00:01:51,660 - 00:01:54,220] I think statistics are actually sets of data,
+- [00:01:54,220 - 00:01:54,740] aren't they?
+- [00:01:54,740 - 00:01:55,540] They're real data.
+- [00:01:55,680 - 00:01:55,820] Yeah,
+- [00:01:55,820 - 00:01:57,020] they're real data,
+- [00:01:57,020 - 00:01:57,260] right.
+- [00:01:58,540 - 00:02:02,620] But how a statistician is different than a probabilist,
+- [00:02:02,620 - 00:02:03,440] I'm not sure.
+- [00:02:03,520 - 00:02:04,020] I don't know.
+- [00:02:04,840 - 00:02:05,360] Anyway,
+- [00:02:05,360 - 00:02:07,340] I'll use the two terms synonymously,
+- [00:02:07,340 - 00:02:08,580] statistics and probability.
+- [00:02:10,220 - 00:02:11,520] They're probably the same.
+- [00:02:13,440 - 00:02:14,500] They're probably not.
+- [00:02:16,320 - 00:02:17,560] They're probably not.
+- [00:02:19,299 - 00:02:20,520] But I'm not,
+- [00:02:20,520 - 00:02:21,620] right.
+- [00:02:21,620 - 00:02:21,680] Right.
+- [00:02:22,400 - 00:02:22,960] Okay,
+- [00:02:22,960 - 00:02:28,660] so this one's more or less a definition,
+- [00:02:28,660 - 00:02:30,080] although a useful definition.
+- [00:02:30,540 - 00:02:32,230] This one is just sums of
+- [00:02:32,230 - 00:02:33,920] probability should be equal to one.
+- [00:02:34,440 - 00:02:36,700] And entropy is by definition
+- [00:02:36,700 - 00:02:38,960] for a given probability distribution,
+- [00:02:38,960 - 00:02:40,240] it starts with minus.
+- [00:02:40,900 - 00:02:47,440] And then p of i logarithm of p of i.
+- [00:02:48,060 - 00:02:49,640] It looks like it's negative,
+- [00:02:49,640 - 00:02:50,460] but it's not.
+- [00:02:50,460 - 00:02:52,390] And the reason that all of
+- [00:02:52,390 - 00:02:54,320] the p's are less than one.
+- [00:02:55,380 - 00:02:57,560] And for anything which is less than one,
+- [00:02:57,560 - 00:02:58,820] the logarithm is negative.
+- [00:02:59,240 - 00:03:01,840] So this is actually a positive quantity.
+- [00:03:03,980 - 00:03:04,780] All right,
+- [00:03:04,780 - 00:03:08,820] so we discussed last time probability distributions.
+- [00:03:10,160 - 00:03:12,930] And imagined that there was a
+- [00:03:12,930 - 00:03:15,700] one parameter family of probability distributions.
+- [00:03:16,340 - 00:03:17,340] Here it is.
+- [00:03:17,500 - 00:03:18,700] Here's the next one.
+- [00:03:18,800 - 00:03:19,660] Here's the next one.
+- [00:03:21,100 - 00:03:21,820] Here's the next one.
+- [00:03:21,820 - 00:03:24,130] And they may be plotted against
+- [00:03:24,130 - 00:03:26,440] the energy of the particular state.
+- [00:03:28,440 - 00:03:32,480] And they're parameterized by an average energy.
+- [00:03:33,040 - 00:03:33,760] Obviously,
+- [00:03:33,760 - 00:03:36,620] as the probability distribution shifts to,
+- [00:03:36,620 - 00:03:38,000] gets broader and broader,
+- [00:03:38,000 - 00:03:39,460] or shifts
+- [00:03:39,460 - 00:03:40,780] to the right in some way,
+- [00:03:40,780 - 00:03:42,420] the average energy gets larger.
+- [00:03:45,120 - 00:03:47,860] There's a particular probability distribution.
+- [00:03:48,440 - 00:03:50,100] And it's a very special one.
+- [00:03:50,340 - 00:03:54,000] It's zero everywhere except at e equals zero.
+- [00:03:54,660 - 00:03:56,700] Or at e equals the minimum value,
+- [00:03:56,700 - 00:03:57,400] I should say.
+- [00:03:57,540 - 00:03:59,380] The minimum value of the energy.
+- [00:03:59,620 - 00:04:00,400] And that's,
+- [00:04:00,400 - 00:04:00,720] of course,
+- [00:04:00,720 - 00:04:02,180] the ground state of a system.
+- [00:04:02,440 - 00:04:06,020] The ground state of a system is described by a probability
+- [00:04:06,020 - 00:04:09,600] which is zero everywhere except at the state of lowest energy.
+- [00:04:10,860 - 00:04:13,660] In which case the entropy is exactly zero.
+- [00:04:15,480 - 00:04:19,100] But as the probability distribution,
+- [00:04:19,100 - 00:04:21,529] as this one parameter family of
+- [00:04:21,529 - 00:04:23,960] probability distribution shifts to the right,
+- [00:04:23,960 - 00:04:25,140] first of all,
+- [00:04:25,140 - 00:04:26,820] the energy tends to become larger.
+- [00:04:27,160 - 00:04:29,880] And the entropy tends to become larger.
+- [00:04:30,100 - 00:04:33,280] Because the entropy is qualitatively simply
+- [00:04:33,280 - 00:04:36,460] a measure of actually the logarithm.
+- [00:04:36,620 - 00:04:40,130] But it's a measure of the number of
+- [00:04:40,130 - 00:04:43,640] states that are important underneath the probability distribution.
+- [00:04:43,640 - 00:04:45,620] And so as the probability
+- [00:04:45,620 - 00:04:47,600] distribution gets broader and broader,
+- [00:04:47,600 - 00:04:49,920] wider and wider,
+- [00:04:49,920 - 00:04:51,920] the average energy goes up.
+- [00:04:52,660 - 00:04:54,480] And at the same time,
+- [00:04:54,480 - 00:04:56,760] the entropy goes up.
+- [00:04:57,900 - 00:05:01,700] We will always assume that the entropy is
+- [00:05:01,700 - 00:05:05,500] a monotonically increasing function of the average energy.
+- [00:05:05,760 - 00:05:06,400] Now,
+- [00:05:06,400 - 00:05:06,940] of course,
+- [00:05:06,940 - 00:05:08,730] you can invent probability distributions
+- [00:05:08,730 - 00:05:10,520] for which that's not true.
+- [00:05:11,680 - 00:05:12,650] You can invent a probability
+- [00:05:12,650 - 00:05:13,620] distribution for which that's not true.
+- [00:05:13,620 - 00:05:16,310] You can invent a probability distribution which gets
+- [00:05:16,310 - 00:05:19,000] narrower and narrower as it moves to the right.
+- [00:05:21,020 - 00:05:21,780] But,
+- [00:05:21,780 - 00:05:23,040] as we will see,
+- [00:05:23,040 - 00:05:25,210] the probability distributions that govern
+- [00:05:25,210 - 00:05:27,380] thermal equilibrium are not like that.
+- [00:05:28,380 - 00:05:33,560] We will find out that exactly this picture is the picture
+- [00:05:33,560 - 00:05:38,740] that governs the probability distributions for the states in thermal equilibrium.
+- [00:05:40,260 - 00:05:41,930] Thermal equilibrium is characterized by
+- [00:05:41,930 - 00:05:43,600] the probability distribution of the states.
+- [00:05:43,600 - 00:05:45,140] You can characterize it by a temperature,
+- [00:05:45,140 - 00:05:45,760] of course.
+- [00:05:46,360 - 00:05:49,820] But you can also characterize it by an average energy.
+- [00:05:50,640 - 00:05:52,710] If you have a box of gas
+- [00:05:52,710 - 00:05:54,780] and you know the average energy in it,
+- [00:05:54,780 - 00:05:58,000] and it's in thermal equilibrium,
+- [00:05:58,260 - 00:06:00,830] thermal equilibrium means that whatever was
+- [00:06:00,830 - 00:06:03,400] going to happen has finished happening,
+- [00:06:03,520 - 00:06:08,000] and now it's simply quiescent and the molecules are
+- [00:06:08,000 - 00:06:12,480] all thoroughly mixed up and thoroughly dispersed throughout the system,
+- [00:06:12,480 - 00:06:14,320] and not much is happening,
+- [00:06:14,320 - 00:06:16,460] other than microscopically,
+- [00:06:16,460 - 00:06:16,940] of course.
+- [00:06:19,360 - 00:06:21,060] That's a state of thermal equilibrium.
+- [00:06:21,440 - 00:06:23,140] In a state of thermal equilibrium,
+- [00:06:23,140 - 00:06:25,220] heat tends not to flow.
+- [00:06:25,460 - 00:06:26,140] We will see,
+- [00:06:26,140 - 00:06:27,560] we'll understand that soon enough.
+- [00:06:28,340 - 00:06:31,210] Heat tends not to flow because all
+- [00:06:31,210 - 00:06:34,080] parts of the system are in equilibrium.
+- [00:06:37,479 - 00:06:38,080] And,
+- [00:06:38,080 - 00:06:39,740] as I say,
+- [00:06:39,740 - 00:06:40,440] as we will see,
+- [00:06:40,440 - 00:06:46,660] the probability distributions for given average energy do,
+- [00:06:46,660 - 00:06:47,300] in fact,
+- [00:06:47,300 - 00:06:49,200] tend to broaden and broaden and
+- [00:06:49,200 - 00:06:51,100] broaden as the energy goes up,
+- [00:06:51,240 - 00:06:53,880] so that the entropy is
+- [00:06:53,880 - 00:06:56,520] a monotonically increasing function of energy.
+- [00:06:57,640 - 00:06:58,540] Important fact.
+- [00:07:00,080 - 00:07:00,640] Okay,
+- [00:07:00,640 - 00:07:02,190] we're going to go through now
+- [00:07:02,190 - 00:07:03,740] some of the laws of thermodynamics.
+- [00:07:04,720 - 00:07:05,980] The zeroth law,
+- [00:07:05,980 - 00:07:07,840] we'll talk about in a minute.
+- [00:07:08,200 - 00:07:10,420] The first law is just energy distribution.
+- [00:07:10,440 - 00:07:10,840] Energy conservation.
+- [00:07:15,259 - 00:07:16,800] The zeroth law,
+- [00:07:16,800 - 00:07:18,500] in a certain sense,
+- [00:07:18,500 - 00:07:21,280] in an axiomatic sense,
+- [00:07:21,560 - 00:07:24,980] when people were axiomatizing thermodynamics,
+- [00:07:25,719 - 00:07:29,449] the zeroth law sort of
+- [00:07:29,449 - 00:07:33,180] came in before almost anything else.
+- [00:07:34,060 - 00:07:35,000] But today,
+- [00:07:35,000 - 00:07:37,420] I think we think of the zeroth law as
+- [00:07:37,420 - 00:07:39,840] a consequence of the first law and the second law,
+- [00:07:39,840 - 00:07:40,420] in a sense.
+- [00:07:41,620 - 00:07:45,440] The second law of thermodynamics says,
+- [00:07:45,440 - 00:07:48,360] it says that entropy increases.
+- [00:07:48,940 - 00:07:49,620] Now,
+- [00:07:49,620 - 00:07:50,680] what on earth does that mean?
+- [00:07:51,860 - 00:07:55,570] What it means is if you have
+- [00:07:55,570 - 00:07:59,280] a system described by a given probability distribution,
+- [00:08:00,320 - 00:08:02,360] and it's not in equilibrium,
+- [00:08:02,360 - 00:08:04,440] right?
+- [00:08:05,640 - 00:08:07,440] When it's not in equilibrium,
+- [00:08:07,440 - 00:08:09,760] and then it comes to equilibrium,
+- [00:08:09,760 - 00:08:11,620] generally speaking,
+- [00:08:11,620 - 00:08:14,260] the probability distribution broadens.
+- [00:08:15,760 - 00:08:17,400] We're going to prove that eventually.
+- [00:08:17,760 - 00:08:21,700] We'll prove it in a qualitative kind of way.
+- [00:08:23,360 - 00:08:24,000] Qualitatively,
+- [00:08:24,000 - 00:08:26,640] we will prove the assertion that
+- [00:08:26,640 - 00:08:29,280] if you have a probability distribution,
+- [00:08:29,940 - 00:08:31,840] and you allow it to evolve,
+- [00:08:31,840 - 00:08:36,159] being a little bit careless,
+- [00:08:37,140 - 00:08:38,840] being a little bit careless,
+- [00:08:38,840 - 00:08:41,440] being a little bit careless is called fine-graining,
+- [00:08:41,620 - 00:08:42,480] coarse-graining,
+- [00:08:42,480 - 00:08:43,179] excuse me,
+- [00:08:43,179 - 00:08:44,080] coarse-graining,
+- [00:08:44,760 - 00:08:47,020] we'll find that the
+- [00:08:47,020 - 00:08:49,280] probability distribution always broadens.
+- [00:08:49,280 - 00:08:50,360] And that's not surprising.
+- [00:08:51,060 - 00:08:53,680] For a probability distribution to narrow,
+- [00:08:53,920 - 00:08:55,770] it means you found out more
+- [00:08:55,770 - 00:08:57,620] about the system than you originally knew.
+- [00:08:58,840 - 00:08:59,440] Typically,
+- [00:08:59,440 - 00:09:01,700] if you're talking about a very complex system
+- [00:09:01,700 - 00:09:03,960] of a large number of degrees of freedom,
+- [00:09:04,840 - 00:09:06,560] very difficult to keep track of,
+- [00:09:06,720 - 00:09:08,820] exactly the opposite tends to happen.
+- [00:09:08,840 - 00:09:11,460] You lose track of things.
+- [00:09:11,920 - 00:09:14,300] And because you lose track of things,
+- [00:09:15,280 - 00:09:20,000] the probability distribution tends to broaden,
+- [00:09:20,240 - 00:09:23,680] and that's the increase of entropy with time.
+- [00:09:24,160 - 00:09:25,060] All right,
+- [00:09:25,060 - 00:09:25,320] now,
+- [00:09:25,320 - 00:09:27,140] first law,
+- [00:09:27,140 - 00:09:29,480] energy is conserved.
+- [00:09:29,920 - 00:09:30,840] Second law,
+- [00:09:30,840 - 00:09:35,140] entropy always increases with time.
+- [00:09:35,380 - 00:09:36,520] If it doesn't increase,
+- [00:09:36,520 - 00:09:37,500] it stays the same.
+- [00:09:37,660 - 00:09:38,820] But it never does.
+- [00:09:38,820 - 00:09:39,260] It decreases.
+- [00:09:39,520 - 00:09:42,620] Let's assume that the entropy always increases,
+- [00:09:42,680 - 00:09:44,240] or stays the same.
+- [00:09:47,660 - 00:09:49,760] And now talk about the zeroth law.
+- [00:09:50,740 - 00:09:53,380] The zeroth law states,
+- [00:09:53,380 - 00:09:54,420] basically,
+- [00:09:55,380 - 00:09:56,260] first of all,
+- [00:09:56,260 - 00:09:59,320] it asserts that there's such a thing as thermal equilibrium.
+- [00:10:00,700 - 00:10:02,640] That if you take a box,
+- [00:10:02,640 - 00:10:04,540] and let's talk about a box of gas,
+- [00:10:04,700 - 00:10:06,020] but it doesn't have to be gas,
+- [00:10:06,020 - 00:10:06,880] it could be liquid,
+- [00:10:06,880 - 00:10:12,160] it could be any system which is isolated and self-contained,
+- [00:10:12,680 - 00:10:14,880] that if you wait long enough,
+- [00:10:14,880 - 00:10:17,680] it will come to equilibrium.
+- [00:10:18,120 - 00:10:18,640] Now,
+- [00:10:18,640 - 00:10:20,520] what does it mean for it to come to equilibrium?
+- [00:10:21,000 - 00:10:22,700] If you imagine that the system
+- [00:10:22,700 - 00:10:24,400] is made out of separate parts,
+- [00:10:25,120 - 00:10:26,120] let's call them A,
+- [00:10:26,120 - 00:10:27,660] B,
+- [00:10:27,660 - 00:10:31,280] and let's put a third system in C,
+- [00:10:33,180 - 00:10:34,900] and assume that they're connected.
+- [00:10:35,640 - 00:10:36,860] Connected means that they're connected.
+- [00:10:36,880 - 00:10:36,900] And if they're connected,
+- [00:10:36,900 - 00:10:38,840] they can exchange energy with each other.
+- [00:10:39,620 - 00:10:41,800] So let's put some little pipes between them
+- [00:10:41,800 - 00:10:43,860] that allows energy to flow between them.
+- [00:10:55,440 - 00:10:56,880] I'm not sure I like that picture.
+- [00:10:56,980 - 00:10:57,100] Yeah,
+- [00:10:57,100 - 00:10:57,460] it's okay.
+- [00:10:57,580 - 00:10:58,920] It's a good enough picture.
+- [00:10:59,880 - 00:11:00,480] That's fine.
+- [00:11:00,780 - 00:11:01,360] All right.
+- [00:11:01,620 - 00:11:05,480] What it says is that there's a concept called temperature,
+- [00:11:06,880 - 00:11:10,690] such that the energy always flows
+- [00:11:10,690 - 00:11:14,500] from larger temperature to smaller temperature.
+- [00:11:14,660 - 00:11:16,810] That the energy flow is
+- [00:11:16,810 - 00:11:18,960] from larger temperature to smaller temperature,
+- [00:11:19,760 - 00:11:20,840] number one.
+- [00:11:21,860 - 00:11:23,000] And number two,
+- [00:11:23,000 - 00:11:24,740] it says,
+- [00:11:26,320 - 00:11:27,300] all right,
+- [00:11:27,300 - 00:11:27,840] so that's,
+- [00:11:27,840 - 00:11:28,620] sorry,
+- [00:11:28,820 - 00:11:32,540] it flows from larger temperature to smaller temperature
+- [00:11:32,540 - 00:11:35,200] if the system is not in equilibrium.
+- [00:11:36,340 - 00:11:38,040] But if you wait long enough,
+- [00:11:38,280 - 00:11:41,580] the flow will eventually come to an equilibrium.
+- [00:11:41,880 - 00:11:43,800] Let's suppose there's only two systems for a moment.
+- [00:11:44,660 - 00:11:47,580] Energy will flow from the one of higher temperature
+- [00:11:47,580 - 00:11:48,980] to the one of lower temperature.
+- [00:11:49,780 - 00:11:50,980] Until what point?
+- [00:11:52,140 - 00:11:52,620] Well,
+- [00:11:52,620 - 00:11:54,230] until the lower temperature one becomes
+- [00:11:54,230 - 00:11:55,840] hotter than the higher temperature one.
+- [00:11:56,360 - 00:11:58,620] But then the energy will flow back the other way.
+- [00:11:58,680 - 00:11:58,840] Well,
+- [00:11:58,840 - 00:11:59,620] that's not what happens.
+- [00:11:59,900 - 00:12:01,930] What happens is the energy just flows
+- [00:12:01,930 - 00:12:03,960] from the hotter to the colder system
+- [00:12:03,960 - 00:12:06,860] until they equilibrate.
+- [00:12:07,020 - 00:12:08,540] Until they equilibrate,
+- [00:12:08,540 - 00:12:09,340] equilibrate,
+- [00:12:09,340 - 00:12:10,100] as we will see,
+- [00:12:10,860 - 00:12:13,400] means that the temperatures become equal.
+- [00:12:14,160 - 00:12:16,780] When the temperatures on both sides become equal,
+- [00:12:16,860 - 00:12:18,240] the heat stops flowing.
+- [00:12:19,260 - 00:12:21,000] That's kind of the meaning of temperature,
+- [00:12:21,000 - 00:12:21,640] if you like.
+- [00:12:22,020 - 00:12:24,220] The meaning of temperature is that
+- [00:12:24,220 - 00:12:26,420] it tells you which way heat flows.
+- [00:12:26,780 - 00:12:27,780] So number one,
+- [00:12:27,780 - 00:12:29,860] a notion of temperature exists
+- [00:12:29,860 - 00:12:32,200] such that heat flow,
+- [00:12:32,200 - 00:12:33,320] energy flow,
+- [00:12:33,320 - 00:12:35,800] is from the hotter to the colder.
+- [00:12:36,500 - 00:12:38,340] When the temperatures become equal,
+- [00:12:39,040 - 00:12:40,300] energy stops flowing.
+- [00:12:41,740 - 00:12:45,000] And if A is in equilibrium with B,
+- [00:12:45,260 - 00:12:47,050] that after all means that the temperature of
+- [00:12:47,050 - 00:12:48,840] A is the same as the temperature of B,
+- [00:12:49,060 - 00:12:51,480] and B is in equilibrium with C,
+- [00:12:52,180 - 00:12:53,850] that means that the temperature of B
+- [00:12:53,850 - 00:12:55,520] is equal to the temperature of C,
+- [00:12:56,280 - 00:13:00,640] then obviously A is in equilibrium with C.
+- [00:13:01,260 - 00:13:02,280] That just says,
+- [00:13:02,280 - 00:13:03,490] if the temperature of A is
+- [00:13:03,490 - 00:13:04,700] the same as the temperature of B,
+- [00:13:04,780 - 00:13:05,820] and the temperature of B is
+- [00:13:05,820 - 00:13:06,860] the same as the temperature of C,
+- [00:13:07,560 - 00:13:08,930] then the temperature of A and
+- [00:13:08,930 - 00:13:10,300] the temperature of C are the same.
+- [00:13:11,120 - 00:13:13,220] So you can sort of summarize the,
+- [00:13:13,280 - 00:13:15,400] you can summarize the zeroth law
+- [00:13:15,400 - 00:13:17,440] by saying there's a notion of temperature,
+- [00:13:17,680 - 00:13:18,840] which we've already introduced,
+- [00:13:19,100 - 00:13:24,700] but we're going to use it to illuminate this law.
+- [00:13:25,240 - 00:13:26,440] There's a notion of temperature,
+- [00:13:28,200 - 00:13:29,040] number one.
+- [00:13:29,220 - 00:13:29,940] Number two,
+- [00:13:31,300 - 00:13:34,680] energy flows from higher temperature to lower temperature,
+- [00:13:35,400 - 00:13:36,620] and number three,
+- [00:13:36,720 - 00:13:38,560] in thermal equilibrium,
+- [00:13:38,820 - 00:13:40,480] the temperature of all parts
+- [00:13:40,480 - 00:13:42,140] of the system is the same.
+- [00:13:42,740 - 00:13:44,400] If the temperature was not the
+- [00:13:44,400 - 00:13:46,060] same in all parts of the system,
+- [00:13:46,180 - 00:13:47,520] energy would flow,
+- [00:13:47,620 - 00:13:49,340] until it became the same.
+- [00:13:49,660 - 00:13:51,820] That's the basic zeroth law.
+- [00:13:52,160 - 00:13:54,220] The existence of a temperature function
+- [00:13:54,980 - 00:13:57,060] that tells you which way energy flows,
+- [00:13:57,880 - 00:13:59,920] and the existence of an equilibrium law,
+- [00:13:59,940 - 00:14:01,400] when the temperature in all parts
+- [00:14:01,400 - 00:14:02,860] of the system are the same.
+- [00:14:03,060 - 00:14:03,620] Alright,
+- [00:14:03,620 - 00:14:05,680] so let's see if we can relate that,
+- [00:14:05,800 - 00:14:07,040] or those ideas,
+- [00:14:07,460 - 00:14:09,560] to the notion of temperature,
+- [00:14:09,800 - 00:14:13,120] that we introduced earlier,
+- [00:14:13,120 - 00:14:14,200] last time,
+- [00:14:14,340 - 00:14:15,360] namely,
+- [00:14:15,500 - 00:14:20,100] that temperature is related to the,
+- [00:14:20,120 - 00:14:22,340] to the derivative of energy,
+- [00:14:22,480 - 00:14:24,060] or the change in energy,
+- [00:14:25,800 - 00:14:27,840] with respect to entropy.
+- [00:14:28,900 - 00:14:31,440] If you change the energy a little bit,
+- [00:14:31,460 - 00:14:33,180] the average energy,
+- [00:14:33,180 - 00:14:33,720] this means,
+- [00:14:33,920 - 00:14:36,380] if you change the average energy a little bit,
+- [00:14:36,540 - 00:14:38,340] the entropy will change,
+- [00:14:39,020 - 00:14:40,940] and that derivative,
+- [00:14:41,160 - 00:14:42,380] that rate of change,
+- [00:14:42,540 - 00:14:43,900] is called the temperature.
+- [00:14:46,520 - 00:14:48,050] Let's see if we can
+- [00:14:48,050 - 00:14:49,580] see what this definition of temperature
+- [00:14:49,580 - 00:14:52,350] has to do with the
+- [00:14:52,350 - 00:14:55,120] idea of the flow of heat,
+- [00:14:56,040 - 00:14:57,600] and which way it goes.
+- [00:14:58,740 - 00:14:59,260] So,
+- [00:14:59,260 - 00:14:59,960] let's begin,
+- [00:15:00,120 - 00:15:01,840] let's take a two piece,
+- [00:15:02,060 - 00:15:04,080] a system composed of two parts,
+- [00:15:04,720 - 00:15:06,860] let's call it A and B,
+- [00:15:07,660 - 00:15:09,300] with a little pipe between them,
+- [00:15:11,460 - 00:15:13,210] and let's write down all
+- [00:15:13,210 - 00:15:14,960] the basic equations that we know.
+- [00:15:16,000 - 00:15:17,360] But before I start,
+- [00:15:17,560 - 00:15:18,680] for the moment,
+- [00:15:18,680 - 00:15:19,420] let's assume
+- [00:15:21,460 - 00:15:23,200] that the temperature of B
+- [00:15:23,200 - 00:15:26,160] is bigger than the temperature of A.
+- [00:15:27,020 - 00:15:27,460] Now,
+- [00:15:27,460 - 00:15:28,840] if the temperature of A
+- [00:15:28,840 - 00:15:30,940] is bigger than the temperature of B,
+- [00:15:31,100 - 00:15:32,020] just switch them.
+- [00:15:32,839 - 00:15:35,620] Just interchange A and B in everything I say.
+- [00:15:36,500 - 00:15:36,940] Okay,
+- [00:15:36,940 - 00:15:38,120] but we have to pick one.
+- [00:15:39,100 - 00:15:39,740] Of course,
+- [00:15:39,740 - 00:15:40,960] we could have the temperature of B
+- [00:15:40,960 - 00:15:42,540] equal to the temperature of A,
+- [00:15:42,620 - 00:15:45,040] but let's take the case where they're not equal,
+- [00:15:45,220 - 00:15:47,340] and that means they're not in equilibrium.
+- [00:15:49,020 - 00:15:50,140] They're not in equilibrium,
+- [00:15:50,380 - 00:15:51,470] the temperature of B is
+- [00:15:51,470 - 00:15:52,560] bigger than the temperature of A.
+- [00:15:53,040 - 00:15:53,480] Okay,
+- [00:15:53,480 - 00:15:55,120] so let's write down some equations.
+- [00:15:55,120 - 00:15:57,800] The first equation tells us
+- [00:15:57,800 - 00:16:00,100] that when the system responds
+- [00:16:00,600 - 00:16:02,620] and does whatever it's going to do,
+- [00:16:02,800 - 00:16:04,880] the total energy doesn't change.
+- [00:16:05,120 - 00:16:05,240] Now,
+- [00:16:05,240 - 00:16:05,920] what is it going to do?
+- [00:16:06,060 - 00:16:07,380] What it's going to do is
+- [00:16:07,380 - 00:16:08,700] there's going to be some energy shift
+- [00:16:08,700 - 00:16:09,880] from one to the other.
+- [00:16:10,900 - 00:16:11,380] Alright,
+- [00:16:11,380 - 00:16:14,220] so let's say the change in the energy of A
+- [00:16:15,219 - 00:16:17,660] plus the change in the energy of B
+- [00:16:19,500 - 00:16:20,620] when whatever happens,
+- [00:16:20,620 - 00:16:20,920] happens,
+- [00:16:21,819 - 00:16:22,640] in other words,
+- [00:16:22,640 - 00:16:24,240] after a small amount of time,
+- [00:16:25,220 - 00:16:26,900] that is equal to zero.
+- [00:16:29,500 - 00:16:30,980] We take our stopwatch,
+- [00:16:30,980 - 00:16:32,220] we wait one second,
+- [00:16:32,380 - 00:16:34,720] and we look how the energy redistributes itself.
+- [00:16:35,140 - 00:16:37,560] We find out that the energy of A changes,
+- [00:16:37,660 - 00:16:39,680] we find out that the energy of B changes,
+- [00:16:39,920 - 00:16:42,820] but energy conservation tells us
+- [00:16:42,820 - 00:16:45,220] that the sum of the energies doesn't change.
+- [00:16:47,340 - 00:16:47,900] Next,
+- [00:16:50,620 - 00:16:53,320] the change in the entropy of A
+- [00:16:54,220 - 00:16:57,060] plus the change in the entropy of B,
+- [00:16:58,100 - 00:16:59,820] that's the change in the total entropy,
+- [00:16:59,820 - 00:17:00,500] in fact,
+- [00:17:01,300 - 00:17:04,319] that is always greater than,
+- [00:17:04,359 - 00:17:06,579] once in a while it's equal to zero,
+- [00:17:06,680 - 00:17:08,240] but only in very special cases,
+- [00:17:08,319 - 00:17:10,619] the general statement is
+- [00:17:11,640 - 00:17:13,980] that it's generally greater than zero.
+- [00:17:14,680 - 00:17:16,440] The change in the entropy of A
+- [00:17:16,440 - 00:17:18,480] plus the change in the entropy of B,
+- [00:17:18,579 - 00:17:20,339] which is the change in the total entropy,
+- [00:17:21,700 - 00:17:23,300] the entropy of the whole system,
+- [00:17:23,319 - 00:17:25,520] in other words,
+- [00:17:25,579 - 00:17:29,300] the probability distribution of the combined system,
+- [00:17:29,500 - 00:17:32,760] the probability distribution of the combined system
+- [00:17:32,760 - 00:17:33,940] shifts in such a way
+- [00:17:33,940 - 00:17:37,140] as to make the distribution broader.
+- [00:17:37,500 - 00:17:38,440] That's what it says.
+- [00:17:39,760 - 00:17:40,600] Okay,
+- [00:17:40,600 - 00:17:43,280] now let's use one more statement
+- [00:17:43,280 - 00:17:46,020] that the change in the energy
+- [00:17:47,960 - 00:17:51,700] is equal to the temperature
+- [00:17:53,120 - 00:17:55,100] times the change in the entropy,
+- [00:17:55,200 - 00:17:58,320] and let's apply this to both A and B.
+- [00:18:00,440 - 00:18:01,120] DEA
+- [00:18:01,120 - 00:18:04,720] is equal to the temperature of A
+- [00:18:04,720 - 00:18:08,020] times the change of the entropy of A,
+- [00:18:08,240 - 00:18:10,360] and same thing for B.
+- [00:18:12,300 - 00:18:15,200] Then we can rewrite this equation over here,
+- [00:18:15,340 - 00:18:17,720] this is the first law of thermodynamics now,
+- [00:18:18,580 - 00:18:18,920] as
+- [00:18:22,520 - 00:18:26,290] TA dS A plus TB
+- [00:18:26,290 - 00:18:30,060] dS B is equal to zero.
+- [00:18:32,300 - 00:18:34,140] Or just to write it in a form
+- [00:18:34,140 - 00:18:35,980] which is somewhat more useful for me,
+- [00:18:36,080 - 00:18:40,700] I'm going to solve this equation for dS B.
+- [00:18:42,740 - 00:18:45,320] I'm going to solve it for this guy over here.
+- [00:18:48,480 - 00:18:49,980] And what do we get?
+- [00:18:50,220 - 00:18:52,660] We get that dS B
+- [00:18:58,940 - 00:19:00,700] comma dS B
+- [00:19:01,860 - 00:19:03,480] is equal to minus,
+- [00:19:04,400 - 00:19:07,520] because I'm going to transpose this term
+- [00:19:07,520 - 00:19:08,700] to the right-hand side,
+- [00:19:08,860 - 00:19:09,740] that will give me a minus,
+- [00:19:10,620 - 00:19:11,180] TA,
+- [00:19:13,320 - 00:19:15,300] but now I have to divide by TA,
+- [00:19:16,380 - 00:19:20,060] minus TB dS A.
+- [00:19:24,560 - 00:19:26,560] And now take this formula
+- [00:19:28,980 - 00:19:30,640] and stick it into here.
+- [00:19:30,860 - 00:19:31,240] You know,
+- [00:19:31,240 - 00:19:31,780] as usual,
+- [00:19:31,880 - 00:19:32,920] I always tell people,
+- [00:19:32,960 - 00:19:33,660] to do physics,
+- [00:19:33,800 - 00:19:35,580] you first think really hard
+- [00:19:35,580 - 00:19:36,760] about what you want to do,
+- [00:19:36,840 - 00:19:39,380] and then you blindly just go ahead
+- [00:19:39,380 - 00:19:40,200] with the equations
+- [00:19:40,200 - 00:19:41,340] and see where they lead.
+- [00:19:41,860 - 00:19:42,560] All right?
+- [00:19:42,640 - 00:19:42,940] So,
+- [00:19:42,940 - 00:19:44,920] we have
+- [00:19:46,240 - 00:19:47,520] SA and SB,
+- [00:19:47,780 - 00:19:48,680] dS A,
+- [00:19:48,680 - 00:19:49,280] dS B,
+- [00:19:49,420 - 00:19:50,180] but they're connected,
+- [00:19:50,400 - 00:19:51,860] so let's eliminate one of them
+- [00:19:51,860 - 00:19:53,700] and rewrite this inequality.
+- [00:19:54,880 - 00:19:55,460] So,
+- [00:19:55,460 - 00:19:56,540] we rewrite the inequality.
+- [00:19:56,840 - 00:19:59,580] It's dS A plus,
+- [00:20:00,240 - 00:20:01,520] but now it's minus,
+- [00:20:01,600 - 00:20:04,060] because dS B has a minus sign in it,
+- [00:20:04,800 - 00:20:05,380] minus
+- [00:20:08,020 - 00:20:09,680] TA over TB
+- [00:20:09,680 - 00:20:12,660] times dS A,
+- [00:20:13,899 - 00:20:16,200] and that's greater than zero.
+- [00:20:16,440 - 00:20:18,400] That's what the second law tells us.
+- [00:20:21,480 - 00:20:23,920] Allow me to multiply it by TB
+- [00:20:23,920 - 00:20:24,940] for simplicity.
+- [00:20:25,080 - 00:20:26,940] Let's just multiply it by TB.
+- [00:20:30,000 - 00:20:32,360] We will assume temperatures are positive,
+- [00:20:33,280 - 00:20:34,540] unless otherwise,
+- [00:20:35,399 - 00:20:37,620] there are situations in which temperature
+- [00:20:37,620 - 00:20:38,300] can be negative,
+- [00:20:38,300 - 00:20:40,200] but not for us for the moment.
+- [00:20:40,920 - 00:20:41,360] So,
+- [00:20:41,360 - 00:20:42,080] what does it say?
+- [00:20:42,260 - 00:20:44,420] It says TB minus TA,
+- [00:20:44,580 - 00:20:45,580] let's write it out,
+- [00:20:47,840 - 00:20:49,360] TB minus TA
+- [00:20:51,879 - 00:20:53,160] times dS A
+- [00:20:53,160 - 00:20:54,900] is greater than zero.
+- [00:20:57,960 - 00:20:58,400] Now,
+- [00:20:58,400 - 00:20:59,400] we've already assumed
+- [00:21:00,500 - 00:21:01,960] that the temperature of B
+- [00:21:01,960 - 00:21:03,720] is bigger than the temperature of A.
+- [00:21:04,720 - 00:21:06,420] We can also look at the other case,
+- [00:21:06,500 - 00:21:07,380] which we'll do in a moment.
+- [00:21:08,300 - 00:21:09,940] But if the temperature of B is indeed
+- [00:21:09,940 - 00:21:11,560] bigger than the temperature of A,
+- [00:21:12,280 - 00:21:14,860] then TB minus TA is positive.
+- [00:21:17,020 - 00:21:18,900] What does that say about dS A?
+- [00:21:19,240 - 00:21:20,720] A positive number
+- [00:21:21,300 - 00:21:22,420] times the change
+- [00:21:23,150 - 00:21:24,300] in the A entropy
+- [00:21:24,300 - 00:21:25,480] is positive.
+- [00:21:26,360 - 00:21:29,560] That says that dS A is positive.
+- [00:21:32,030 - 00:21:32,380] So,
+- [00:21:34,580 - 00:21:36,800] what we conclude from this equation,
+- [00:21:40,120 - 00:21:44,360] is that dS A for the particular setup up there,
+- [00:21:44,520 - 00:21:46,060] is greater than zero.
+- [00:21:46,400 - 00:21:46,900] Now,
+- [00:21:46,900 - 00:21:47,700] what would happen
+- [00:21:48,230 - 00:21:50,740] if TA were bigger than TB?
+- [00:21:53,100 - 00:21:54,360] Exactly the opposite.
+- [00:21:54,990 - 00:21:57,440] Then TB minus TA would be negative,
+- [00:21:57,820 - 00:22:00,340] and dS A would be negative.
+- [00:22:00,500 - 00:22:02,200] But we've already chosen our convention.
+- [00:22:02,580 - 00:22:04,220] We've decided to call B
+- [00:22:04,220 - 00:22:05,520] the one with the bigger temperature,
+- [00:22:05,520 - 00:22:07,160] and in that case,
+- [00:22:07,200 - 00:22:09,720] dS A is bigger than zero.
+- [00:22:10,660 - 00:22:12,780] Let's just multiply this equation,
+- [00:22:13,100 - 00:22:13,880] or this inequality,
+- [00:22:13,880 - 00:22:14,820] by TA.
+- [00:22:15,560 - 00:22:19,140] TA times dS A is bigger than zero.
+- [00:22:19,260 - 00:22:21,080] But what is TA times dS A?
+- [00:22:23,940 - 00:22:25,720] It's the change in energy
+- [00:22:25,720 - 00:22:27,760] of the subsystem A.
+- [00:22:28,340 - 00:22:31,960] This is d of the energy of A.
+- [00:22:32,160 - 00:22:32,320] So,
+- [00:22:32,320 - 00:22:33,100] what have we found?
+- [00:22:33,100 - 00:22:35,020] By a little bit of manipulation,
+- [00:22:35,780 - 00:22:37,740] and the use of a couple of laws.
+- [00:22:37,980 - 00:22:38,760] What are the laws?
+- [00:22:39,240 - 00:22:40,400] The first law,
+- [00:22:40,400 - 00:22:41,440] energy conservation.
+- [00:22:41,820 - 00:22:42,560] The second law,
+- [00:22:42,560 - 00:22:43,800] entropy increases.
+- [00:22:44,340 - 00:22:45,680] And that's all we used.
+- [00:22:46,020 - 00:22:47,600] Plus a little bit of juggling,
+- [00:22:47,640 - 00:22:49,160] and transposing,
+- [00:22:49,160 - 00:22:49,860] and multiplying
+- [00:22:49,860 - 00:22:52,340] by simple algebraic operations.
+- [00:22:53,100 - 00:22:57,240] We find that the change in the energy of A
+- [00:22:57,240 - 00:22:58,820] is greater than zero.
+- [00:22:59,420 - 00:23:00,440] It follows,
+- [00:23:00,440 - 00:23:01,060] of course,
+- [00:23:01,060 - 00:23:03,000] that the change in the energy of B,
+- [00:23:03,100 - 00:23:04,220] is less than zero.
+- [00:23:04,520 - 00:23:05,720] In other words,
+- [00:23:05,720 - 00:23:07,520] heat has flowed,
+- [00:23:07,919 - 00:23:10,080] or energy has flowed,
+- [00:23:10,080 - 00:23:11,740] from B to A.
+- [00:23:12,680 - 00:23:14,180] So we have proved,
+- [00:23:14,719 - 00:23:17,160] that with the definition of entropy,
+- [00:23:18,920 - 00:23:19,720] sorry,
+- [00:23:19,980 - 00:23:21,840] the definition of temperature,
+- [00:23:22,820 - 00:23:23,840] as given here,
+- [00:23:25,000 - 00:23:26,400] that the temperature
+- [00:23:27,960 - 00:23:29,380] is such,
+- [00:23:30,740 - 00:23:33,420] that it defines the direction of heat flow.
+- [00:23:34,380 - 00:23:35,440] Heat will flow,
+- [00:23:35,480 - 00:23:36,640] and when I say heat,
+- [00:23:36,640 - 00:23:37,240] incidentally,
+- [00:23:37,240 - 00:23:37,720] I always,
+- [00:23:37,720 - 00:23:38,860] I just mean energy.
+- [00:23:39,200 - 00:23:41,140] Energy will flow from B to A,
+- [00:23:42,340 - 00:23:44,720] until the temperatures become equal.
+- [00:23:45,380 - 00:23:47,040] When the temperatures become equal,
+- [00:23:47,120 - 00:23:47,500] of course,
+- [00:23:47,500 - 00:23:49,220] if T A equals T B,
+- [00:23:49,380 - 00:23:50,180] then there's no flow.
+- [00:23:50,260 - 00:23:51,000] That's easy to see.
+- [00:23:54,100 - 00:23:56,520] And that's when equilibrium is established.
+- [00:23:56,900 - 00:23:58,760] So equilibrium is established,
+- [00:23:58,760 - 00:24:00,380] or there will be no flow of heat,
+- [00:24:01,900 - 00:24:04,300] when T B equals T A,
+- [00:24:05,639 - 00:24:07,660] then there's no flow of heat altogether.
+- [00:24:09,060 - 00:24:09,540] Okay,
+- [00:24:09,540 - 00:24:10,780] so that's the,
+- [00:24:12,379 - 00:24:13,340] excuse me,
+- [00:24:13,380 - 00:24:15,280] the zeroth law of thermodynamics.
+- [00:24:16,280 - 00:24:16,760] Namely,
+- [00:24:16,780 - 00:24:19,620] the temperature determines the direction of heat flow.
+- [00:24:20,100 - 00:24:21,580] When the heat flow stops,
+- [00:24:21,820 - 00:24:23,400] because the system comes to equilibrium,
+- [00:24:23,760 - 00:24:26,700] it must be that the temperature is the same
+- [00:24:26,700 - 00:24:27,960] in every part of the system.
+- [00:24:30,960 - 00:24:31,440] Conversely,
+- [00:24:31,440 - 00:24:33,560] if the temperature is not the same
+- [00:24:33,560 - 00:24:34,700] in every part of the system,
+- [00:24:34,880 - 00:24:37,540] heat will flow until it is the same.
+- [00:24:37,900 - 00:24:38,960] I have a question.
+- [00:24:39,200 - 00:24:39,420] Yeah.
+- [00:24:39,480 - 00:24:39,840] So,
+- [00:24:39,840 - 00:24:40,920] it seems,
+- [00:24:40,920 - 00:24:43,560] this analysis seems to assume that
+- [00:24:44,879 - 00:24:48,100] system A and system B individually are in equilibrium.
+- [00:24:48,780 - 00:24:49,260] Yeah,
+- [00:24:49,260 - 00:24:49,500] yeah,
+- [00:24:49,500 - 00:24:49,620] yeah,
+- [00:24:49,620 - 00:24:50,600] that is true.
+- [00:24:50,800 - 00:24:51,420] That is true.
+- [00:24:51,620 - 00:24:52,280] That is true.
+- [00:24:52,780 - 00:24:54,540] But if they're not in equilibrium,
+- [00:24:54,740 - 00:24:56,860] it could be because when you break it up
+- [00:24:56,860 - 00:24:58,600] into smaller subsystems,
+- [00:24:58,760 - 00:25:00,600] the smaller subsystems
+- [00:25:00,600 - 00:25:03,040] are not in equilibrium with each other,
+- [00:25:03,160 - 00:25:05,760] and then you just apply the analysis to the subsystems.
+- [00:25:06,340 - 00:25:06,880] Right.
+- [00:25:08,660 - 00:25:09,220] Good.
+- [00:25:10,460 - 00:25:11,020] Yeah,
+- [00:25:11,020 - 00:25:11,440] so,
+- [00:25:11,440 - 00:25:12,840] that was correct.
+- [00:25:13,060 - 00:25:16,260] I did imagine that system A and system B
+- [00:25:16,260 - 00:25:17,800] separately were in equilibrium
+- [00:25:18,660 - 00:25:19,580] with themselves,
+- [00:25:19,580 - 00:25:20,380] so to speak.
+- [00:25:21,520 - 00:25:22,800] So that's a good point.
+- [00:25:26,960 - 00:25:27,580] All right,
+- [00:25:27,580 - 00:25:28,980] now we come to the hard question.
+- [00:25:29,800 - 00:25:30,240] Yeah.
+- [00:25:31,260 - 00:25:34,380] Just so I can have something specific in mind here,
+- [00:25:34,480 - 00:25:35,800] when we talk about states,
+- [00:25:36,300 - 00:25:38,520] should I think of this whole picture here
+- [00:25:38,520 - 00:25:40,420] like we've got a gas in there,
+- [00:25:40,600 - 00:25:42,240] should I think of the state as being
+- [00:25:43,219 - 00:25:45,520] the position and the velocity
+- [00:25:45,520 - 00:25:49,120] or momentum of every single molecule in there?
+- [00:25:49,260 - 00:25:49,640] Yes,
+- [00:25:49,640 - 00:25:51,380] except that in quantum mechanics
+- [00:25:51,380 - 00:25:52,780] we can take those to be distinct.
+- [00:25:52,800 - 00:25:53,380] Discrete variables,
+- [00:25:53,380 - 00:25:53,980] basically.
+- [00:25:54,400 - 00:25:55,040] Yes,
+- [00:25:55,040 - 00:25:55,900] that is.
+- [00:25:56,020 - 00:25:59,800] Or we simply substitute for S
+- [00:25:59,800 - 00:26:03,060] an integral instead of a sum.
+- [00:26:03,940 - 00:26:04,580] Yeah,
+- [00:26:04,580 - 00:26:05,400] but that's what,
+- [00:26:05,400 - 00:26:05,720] yes.
+- [00:26:06,439 - 00:26:07,080] Look,
+- [00:26:07,080 - 00:26:09,460] a state always means the same thing.
+- [00:26:09,620 - 00:26:11,860] It means as much as you can possibly know
+- [00:26:11,860 - 00:26:15,780] about the system if you were infinitely powerful.
+- [00:26:18,840 - 00:26:19,480] Now,
+- [00:26:19,480 - 00:26:25,320] there may be limits that have to do with
+- [00:26:25,320 - 00:26:27,620] the fundamental rules of physics,
+- [00:26:28,560 - 00:26:30,100] such as quantum mechanics,
+- [00:26:30,480 - 00:26:32,440] which tells you you can't know as much
+- [00:26:32,440 - 00:26:34,200] as you thought you might have liked to know,
+- [00:26:34,300 - 00:26:36,740] such as the position and velocity of every particle.
+- [00:26:37,020 - 00:26:37,740] But still,
+- [00:26:37,740 - 00:26:40,600] a state means as much as can be known
+- [00:26:41,680 - 00:26:43,140] about a system
+- [00:26:45,820 - 00:26:46,380] by,
+- [00:26:46,380 - 00:26:46,980] let's call it,
+- [00:26:46,980 - 00:26:48,020] an infinitely powerful
+- [00:26:48,900 - 00:26:49,460] observable system.
+- [00:26:49,460 - 00:26:50,020] Now,
+- [00:26:50,020 - 00:26:51,980] there's a finite number of particles in there,
+- [00:26:52,040 - 00:26:55,300] but their velocities and positions are not discrete.
+- [00:26:55,600 - 00:26:56,600] In quantum mechanics,
+- [00:26:56,600 - 00:26:57,120] they are.
+- [00:26:57,800 - 00:26:58,400] Yeah.
+- [00:26:58,520 - 00:26:59,640] In quantum mechanics,
+- [00:26:59,640 - 00:27:00,140] they are.
+- [00:27:00,320 - 00:27:00,860] So,
+- [00:27:00,860 - 00:27:03,320] in quantum mechanics,
+- [00:27:03,520 - 00:27:06,740] the state counting for a finite box is discrete.
+- [00:27:07,460 - 00:27:08,060] Yeah.
+- [00:27:11,520 - 00:27:13,160] What we're going to have to show
+- [00:27:13,160 - 00:27:18,260] is that if we do the correct quantum mechanics,
+- [00:27:20,260 - 00:27:21,340] statistical mechanics,
+- [00:27:21,660 - 00:27:23,020] then in a certain limit,
+- [00:27:23,180 - 00:27:26,260] it becomes equal to the classical statistical mechanics.
+- [00:27:26,540 - 00:27:26,960] In other words,
+- [00:27:26,960 - 00:27:27,760] in a certain limit,
+- [00:27:27,940 - 00:27:31,000] you can replace sums by integrals.
+- [00:27:31,100 - 00:27:32,320] That's what it comes down to.
+- [00:27:32,600 - 00:27:34,200] And that's a subtle business.
+- [00:27:34,960 - 00:27:36,820] That's not a one-liner.
+- [00:27:36,980 - 00:27:37,980] That's a subtle business,
+- [00:27:37,980 - 00:27:38,960] but it is true.
+- [00:27:41,140 - 00:27:41,900] All right.
+- [00:27:41,940 - 00:27:43,220] So now the next question,
+- [00:27:43,220 - 00:27:44,220] the open question,
+- [00:27:45,140 - 00:27:46,780] is in equilibrium,
+- [00:27:46,780 - 00:27:48,880] after equilibrium is established,
+- [00:27:51,440 - 00:27:53,020] you have this box of gas,
+- [00:27:54,820 - 00:27:56,040] or whatever it is,
+- [00:27:56,860 - 00:27:58,780] there's some probability distribution,
+- [00:27:59,080 - 00:27:59,920] P of I,
+- [00:28:01,440 - 00:28:04,380] for the system to be in its different microstates.
+- [00:28:06,520 - 00:28:08,280] What is that probability distribution?
+- [00:28:10,060 - 00:28:11,580] What's the mathematics of it?
+- [00:28:12,640 - 00:28:14,880] So that's what we're going to begin to study now.
+- [00:28:16,780 - 00:28:18,340] And right now...
+- [00:28:27,700 - 00:28:29,000] First of all,
+- [00:28:29,000 - 00:28:31,400] it's always a useful idea,
+- [00:28:33,280 - 00:28:34,640] not only useful,
+- [00:28:34,880 - 00:28:37,200] it usually corresponds to the facts,
+- [00:28:37,400 - 00:28:41,680] to imagine that your system that you're interested in
+- [00:28:42,500 - 00:28:44,140] is not closed,
+- [00:28:44,280 - 00:28:45,920] but is in contact
+- [00:28:46,780 - 00:28:48,060] with the outside world
+- [00:28:48,060 - 00:28:49,940] and can exchange energy with it.
+- [00:28:50,040 - 00:28:51,140] In particular,
+- [00:28:51,140 - 00:28:52,440] it's a useful idea
+- [00:28:52,440 - 00:28:54,360] if you want to think about
+- [00:28:54,360 - 00:28:56,440] the probability distribution
+- [00:28:56,440 - 00:29:00,300] of the states of this subsystem,
+- [00:29:00,500 - 00:29:02,800] to think of it as
+- [00:29:02,800 - 00:29:05,100] being embedded in a huge reservoir
+- [00:29:06,899 - 00:29:10,380] of a much larger number of degrees of freedom
+- [00:29:12,460 - 00:29:14,520] that provide a heat bath,
+- [00:29:15,600 - 00:29:17,180] that provide a heat bath
+- [00:29:17,180 - 00:29:20,640] which allows energy to flow back and forth
+- [00:29:24,680 - 00:29:26,980] until the system in question
+- [00:29:27,520 - 00:29:30,360] comes to thermal equilibrium with the big heat bath.
+- [00:29:31,340 - 00:29:33,160] The heat bath is so big
+- [00:29:34,060 - 00:29:36,800] that if even a little bit of energy flows
+- [00:29:36,800 - 00:29:39,140] from into the subsystem,
+- [00:29:39,300 - 00:29:41,300] the temperature doesn't change much.
+- [00:29:41,500 - 00:29:43,180] Now this is something we could also prove,
+- [00:29:43,180 - 00:29:45,140] but just think about it for a minute.
+- [00:29:45,300 - 00:29:46,700] We have a big,
+- [00:29:46,700 - 00:29:46,880] big,
+- [00:29:46,880 - 00:29:47,100] big,
+- [00:29:47,100 - 00:29:47,880] huge system
+- [00:29:47,880 - 00:29:49,300] at a certain temperature,
+- [00:29:49,560 - 00:29:51,140] and we have a little system,
+- [00:29:51,140 - 00:29:52,620] and a little bit of heat flows
+- [00:29:52,620 - 00:29:55,060] from the big system to the little system.
+- [00:29:55,600 - 00:29:56,120] Typically,
+- [00:29:56,120 - 00:29:57,500] the change in the temperature
+- [00:29:57,500 - 00:30:01,160] of the big system will be negligible.
+- [00:30:02,080 - 00:30:04,140] And so we can imagine the big system
+- [00:30:04,140 - 00:30:05,220] is at some temperature,
+- [00:30:05,360 - 00:30:08,040] and simply wait until the small system
+- [00:30:08,040 - 00:30:11,360] is in equilibrium with the big system.
+- [00:30:11,660 - 00:30:13,160] Now a particularly important thing
+- [00:30:13,180 - 00:30:14,560] is that a particularly convenient choice
+- [00:30:16,060 - 00:30:17,200] of heat bath,
+- [00:30:18,080 - 00:30:19,420] you'll see why,
+- [00:30:20,780 - 00:30:24,300] but a particularly convenient choice of heat bath,
+- [00:30:24,980 - 00:30:27,520] which often actually corresponds to the facts,
+- [00:30:27,760 - 00:30:30,080] but a particularly interesting choice
+- [00:30:30,080 - 00:30:31,440] is just to imagine
+- [00:30:32,179 - 00:30:33,600] that the system in question
+- [00:30:34,960 - 00:30:38,900] is one of a very large number
+- [00:30:38,900 - 00:30:41,240] of identical systems
+- [00:30:42,680 - 00:30:44,460] which are connected together
+- [00:30:44,460 - 00:30:46,220] by little pipes that allow heat
+- [00:30:46,220 - 00:30:47,240] to flow back and forth.
+- [00:30:47,580 - 00:30:49,960] One of them is the system
+- [00:30:49,960 - 00:30:50,620] that we're studying,
+- [00:30:50,820 - 00:30:52,520] the rest of them simply provide
+- [00:30:52,520 - 00:30:53,200] the heat bath.
+- [00:30:57,240 - 00:30:57,760] Actually,
+- [00:30:57,760 - 00:30:59,000] this sometimes corresponds
+- [00:30:59,000 - 00:30:59,620] to the,
+- [00:30:59,620 - 00:31:00,340] more or less,
+- [00:31:00,340 - 00:31:00,740] the facts.
+- [00:31:00,860 - 00:31:01,500] In particular,
+- [00:31:01,500 - 00:31:04,300] if we have a very big system
+- [00:31:04,300 - 00:31:06,240] and we divide it into small subsystems,
+- [00:31:06,860 - 00:31:09,380] the small subsystems may be very much alike,
+- [00:31:09,740 - 00:31:11,220] and the big system then,
+- [00:31:11,220 - 00:31:12,280] is just the heat bath,
+- [00:31:12,480 - 00:31:13,800] and the small subsystems
+- [00:31:13,800 - 00:31:16,320] just provide a large number of replicas
+- [00:31:16,320 - 00:31:18,720] that all together add up to the big system.
+- [00:31:19,400 - 00:31:21,000] So this is a useful trick
+- [00:31:21,000 - 00:31:24,060] to pretend that the heat bath
+- [00:31:24,060 - 00:31:27,380] is just a repetition of the same system
+- [00:31:27,380 - 00:31:28,280] over and over again.
+- [00:31:32,660 - 00:31:34,600] How many such subsystems?
+- [00:31:34,620 - 00:31:35,120] Well,
+- [00:31:35,120 - 00:31:37,340] eventually we're going to let them get
+- [00:31:37,340 - 00:31:38,640] a large number of them,
+- [00:31:38,740 - 00:31:41,200] large enough that we can think of the heat bath
+- [00:31:41,220 - 00:31:41,900] as very big,
+- [00:31:42,100 - 00:31:44,940] but let's call it capital N for a moment.
+- [00:31:45,440 - 00:31:47,440] That's the number of these systems we have.
+- [00:31:48,500 - 00:31:50,620] And now each one of the systems
+- [00:31:51,140 - 00:31:52,660] is in a state.
+- [00:31:53,800 - 00:31:54,320] Alright,
+- [00:31:54,320 - 00:31:54,720] so I,
+- [00:31:54,720 - 00:31:56,100] here's my demonstration.
+- [00:32:00,420 - 00:32:02,520] These are the identical systems.
+- [00:32:05,240 - 00:32:06,020] What do I have?
+- [00:32:06,080 - 00:32:06,240] One,
+- [00:32:06,240 - 00:32:06,460] two,
+- [00:32:06,460 - 00:32:06,720] three,
+- [00:32:06,720 - 00:32:07,100] four,
+- [00:32:07,100 - 00:32:07,500] five,
+- [00:32:07,500 - 00:32:08,240] six,
+- [00:32:08,240 - 00:32:08,920] seven,
+- [00:32:08,920 - 00:32:09,460] eight,
+- [00:32:09,460 - 00:32:09,980] nine.
+- [00:32:09,980 - 00:32:12,460] So capital N is equal to nine.
+- [00:32:15,200 - 00:32:17,280] These are the possible states.
+- [00:32:19,880 - 00:32:21,200] These are all identical,
+- [00:32:21,460 - 00:32:23,020] so I'm not going to do anything to them.
+- [00:32:23,260 - 00:32:25,380] But of course the states of the system
+- [00:32:25,380 - 00:32:26,220] are not identical.
+- [00:32:26,520 - 00:32:27,820] They have different energy,
+- [00:32:27,820 - 00:32:28,480] for example.
+- [00:32:28,960 - 00:32:30,160] So let's,
+- [00:32:30,160 - 00:32:32,840] let's color them
+- [00:32:32,840 - 00:32:33,860] to remind ourselves
+- [00:32:34,920 - 00:32:37,740] that the states are not all alike.
+- [00:32:39,080 - 00:32:40,140] And in particular,
+- [00:32:40,140 - 00:32:41,460] that they have different energy.
+- [00:32:48,860 - 00:32:50,580] The states are not real systems.
+- [00:32:50,720 - 00:32:52,120] The states are just labels,
+- [00:32:52,120 - 00:32:52,880] sort of.
+- [00:32:52,920 - 00:32:52,980] Well,
+- [00:32:52,980 - 00:32:53,420] not labels,
+- [00:32:53,420 - 00:32:53,880] but...
+- [00:32:57,480 - 00:32:58,960] And some of the systems
+- [00:33:01,540 - 00:33:03,900] are going to be in one state.
+- [00:33:04,700 - 00:33:05,950] Some of them are going
+- [00:33:05,950 - 00:33:07,200] to be in the other state.
+- [00:33:08,419 - 00:33:10,880] And some of them will be in the third state.
+- [00:33:10,980 - 00:33:12,580] Here's a particularly simple example
+- [00:33:12,580 - 00:33:14,080] where there's only three states.
+- [00:33:14,900 - 00:33:16,800] Each state has different energy.
+- [00:33:17,500 - 00:33:21,100] The energy might increase from right to left.
+- [00:33:21,240 - 00:33:22,800] Your right to your left.
+- [00:33:23,580 - 00:33:24,220] No.
+- [00:33:24,640 - 00:33:25,820] Your right...
+- [00:33:26,719 - 00:33:28,580] My right to my left.
+- [00:33:28,820 - 00:33:30,380] Your left to your...
+- [00:33:31,060 - 00:33:33,520] The energy increases in one direction.
+- [00:33:35,259 - 00:33:36,960] And what I want...
+- [00:33:36,960 - 00:33:37,420] What...
+- [00:33:37,420 - 00:33:37,680] What I want to do is...
+- [00:33:37,680 - 00:33:42,240] I want to call the number of systems,
+- [00:33:43,500 - 00:33:44,060] subsystems,
+- [00:33:44,060 - 00:33:45,700] in the i-th state.
+- [00:33:45,980 - 00:33:46,540] Alright,
+- [00:33:46,540 - 00:33:47,340] here's the i-th state.
+- [00:33:47,420 - 00:33:48,220] Let's draw the states.
+- [00:33:49,200 - 00:33:53,040] I'm just going to indicate them by an axis here.
+- [00:33:54,040 - 00:33:55,580] Could be the energy axis.
+- [00:33:56,240 - 00:33:58,960] And these are all the possible states of the system.
+- [00:33:59,920 - 00:34:01,020] This is i,
+- [00:34:01,320 - 00:34:03,660] and the states will be labeled by i.
+- [00:34:04,200 - 00:34:05,700] i equals 1.
+- [00:34:05,700 - 00:34:07,460] i equals 2.
+- [00:34:08,120 - 00:34:08,219] Dot,
+- [00:34:08,219 - 00:34:08,420] dot,
+- [00:34:08,420 - 00:34:08,639] dot,
+- [00:34:08,639 - 00:34:08,860] dot,
+- [00:34:08,860 - 00:34:09,060] dot.
+- [00:34:09,360 - 00:34:11,600] And there might be an infinite number of states.
+- [00:34:12,580 - 00:34:13,360] In fact,
+- [00:34:13,360 - 00:34:13,780] in general,
+- [00:34:13,780 - 00:34:15,540] there will be an infinite number of states.
+- [00:34:16,000 - 00:34:18,000] Most of them have so much energy
+- [00:34:18,000 - 00:34:19,620] that there's no chance at all
+- [00:34:19,620 - 00:34:21,320] that they're going to be occupied.
+- [00:34:22,540 - 00:34:23,060] Okay?
+- [00:34:23,400 - 00:34:25,940] So there will be a negligible number of subsystems,
+- [00:34:26,460 - 00:34:28,159] or a negligible fraction of them,
+- [00:34:28,239 - 00:34:31,320] will occupy enormously high energy states,
+- [00:34:31,920 - 00:34:34,420] just because we may not have that much energy available.
+- [00:34:36,699 - 00:34:37,880] But now,
+- [00:34:37,880 - 00:34:41,179] let's introduce the concept of an occupation number.
+- [00:34:41,580 - 00:34:43,139] An occupation number
+- [00:34:44,860 - 00:34:47,100] is the number of systems,
+- [00:34:48,159 - 00:34:50,120] in this case it would be 3,
+- [00:34:52,320 - 00:34:56,179] occupying the i-th state.
+- [00:34:56,420 - 00:34:57,520] In this case,
+- [00:34:57,520 - 00:34:59,040] the red state or the ground state,
+- [00:34:59,160 - 00:35:00,860] the lowest energy state.
+- [00:35:01,240 - 00:35:04,040] And we'll call that little n sub i.
+- [00:35:06,660 - 00:35:07,420] Alright?
+- [00:35:07,560 - 00:35:08,180] Here's i.
+- [00:35:09,660 - 00:35:12,500] And this is the number of
+- [00:35:12,500 - 00:35:14,880] our replicas here,
+- [00:35:15,620 - 00:35:16,680] which are found
+- [00:35:17,680 - 00:35:19,740] in the box labeled i.
+- [00:35:20,440 - 00:35:22,120] The box labeled i just means
+- [00:35:22,120 - 00:35:24,580] that the system has that particular state.
+- [00:35:25,540 - 00:35:27,120] And what we're interested in,
+- [00:35:27,200 - 00:35:28,960] for statistical purposes,
+- [00:35:28,960 - 00:35:30,440] for probabilistic purposes,
+- [00:35:30,820 - 00:35:33,940] is we're interested in how many ways
+- [00:35:33,940 - 00:35:37,900] are there of redistributing
+- [00:35:41,740 - 00:35:43,260] the systems
+- [00:35:44,060 - 00:35:45,740] among the states
+- [00:35:45,740 - 00:35:49,980] for a given set of n sub i's.
+- [00:35:50,120 - 00:35:52,120] n sub i here stands for
+- [00:35:52,120 - 00:35:53,500] n1,
+- [00:35:53,500 - 00:35:54,400] n2,
+- [00:35:54,400 - 00:35:55,620] n3,
+- [00:35:55,620 - 00:35:57,020] n4,
+- [00:35:57,020 - 00:35:57,760] and so forth.
+- [00:35:59,340 - 00:36:00,100] Alright,
+- [00:36:00,100 - 00:36:00,700] so there are
+- [00:36:00,700 - 00:36:02,540] these occupation numbers,
+- [00:36:02,720 - 00:36:03,920] and the question is,
+- [00:36:03,920 - 00:36:05,640] given the occupation numbers,
+- [00:36:05,840 - 00:36:07,800] how many ways are there
+- [00:36:07,800 - 00:36:10,520] of redistributing the states
+- [00:36:10,520 - 00:36:14,680] so as to create that set of occupation numbers?
+- [00:36:15,160 - 00:36:15,880] Obviously,
+- [00:36:15,880 - 00:36:17,480] that's going to be closely connected
+- [00:36:17,480 - 00:36:18,460] with the probability
+- [00:36:18,460 - 00:36:21,180] for given values of the occupation,
+- [00:36:21,500 - 00:36:29,460] probabilities for the state i,
+- [00:36:29,700 - 00:36:32,260] or for the occupation numbers,
+- [00:36:32,260 - 00:36:32,760] n sub i.
+- [00:36:32,760 - 00:36:34,780] The more ways there are
+- [00:36:34,780 - 00:36:37,600] of distributing this system
+- [00:36:37,600 - 00:36:40,460] into a given set of occupation numbers,
+- [00:36:40,660 - 00:36:43,540] the more likely that set of occupation numbers is.
+- [00:36:43,720 - 00:36:45,180] That's a symmetry argument.
+- [00:36:45,640 - 00:36:48,860] Of all possible ways of redistributing things
+- [00:36:48,860 - 00:36:51,300] are symmetric with respect to each other,
+- [00:36:51,400 - 00:36:52,680] and equally likely,
+- [00:36:53,520 - 00:36:55,420] then the most probable configuration,
+- [00:36:56,660 - 00:36:58,820] which means the most probable set
+- [00:36:58,820 - 00:37:00,040] of occupation numbers,
+- [00:37:00,320 - 00:37:02,660] is the set of occupation numbers
+- [00:37:03,820 - 00:37:06,480] which gives rise to the maximum number
+- [00:37:06,480 - 00:37:08,440] of ways of redistributing things.
+- [00:37:08,780 - 00:37:11,860] So let's do some simple examples.
+- [00:37:12,120 - 00:37:13,900] Is there an energy constraint
+- [00:37:13,900 - 00:37:14,300] of these?
+- [00:37:14,380 - 00:37:14,600] Yeah,
+- [00:37:14,600 - 00:37:14,820] yeah,
+- [00:37:14,820 - 00:37:15,080] yeah,
+- [00:37:15,080 - 00:37:15,340] yeah.
+- [00:37:16,860 - 00:37:17,340] Right,
+- [00:37:17,340 - 00:37:17,820] alright.
+- [00:37:19,360 - 00:37:19,840] Right,
+- [00:37:19,840 - 00:37:20,920] we're going to come back to that.
+- [00:37:25,280 - 00:37:26,800] There is an energy constraint,
+- [00:37:27,040 - 00:37:28,620] so let's write the energy constraint.
+- [00:37:28,760 - 00:37:28,860] Alright,
+- [00:37:28,860 - 00:37:29,480] since you asked,
+- [00:37:29,660 - 00:37:31,460] I had intended to come to that later,
+- [00:37:31,500 - 00:37:32,200] but since you asked,
+- [00:37:32,200 - 00:37:33,000] since you asked,
+- [00:37:33,160 - 00:37:36,880] on top of the probability distribution
+- [00:37:36,880 - 00:37:39,740] that's associated with this different number of ways
+- [00:37:39,740 - 00:37:40,980] of redistributing things,
+- [00:37:41,280 - 00:37:42,420] there are constraints.
+- [00:37:43,860 - 00:37:45,300] The first constraint,
+- [00:37:45,640 - 00:37:47,060] let's write the first constraint.
+- [00:37:47,160 - 00:37:52,640] The first constraint is n1 plus n2 plus n3.
+- [00:37:53,500 - 00:37:57,760] This is the number of systems in the first level
+- [00:37:57,760 - 00:37:59,780] plus the number of systems in the second level
+- [00:37:59,780 - 00:38:01,740] plus the number of systems in the third level.
+- [00:38:02,200 - 00:38:08,680] Or just the summation over i of n sub i
+- [00:38:09,200 - 00:38:10,200] is equal to what?
+- [00:38:11,060 - 00:38:12,120] Capital N.
+- [00:38:12,400 - 00:38:13,880] Total number of systems.
+- [00:38:17,020 - 00:38:18,740] Now there's another constraint,
+- [00:38:18,920 - 00:38:22,080] which is the one that was just asked about,
+- [00:38:22,720 - 00:38:25,200] namely the total energy of the system.
+- [00:38:26,940 - 00:38:28,280] So let's write that constraint.
+- [00:38:28,940 - 00:38:31,880] The number of systems in the first state,
+- [00:38:33,540 - 00:38:35,840] times the energy of the first state,
+- [00:38:36,740 - 00:38:40,380] plus the number of systems in the second state,
+- [00:38:40,580 - 00:38:43,200] times the energy of the second state,
+- [00:38:44,120 - 00:38:45,100] all together,
+- [00:38:46,020 - 00:38:47,180] plus dot dot dot.
+- [00:38:47,540 - 00:38:50,340] That of course is equal to the summation over i
+- [00:38:51,060 - 00:38:54,160] of n sub i e sub i.
+- [00:38:54,680 - 00:38:55,940] What is that equal to?
+- [00:38:58,200 - 00:38:59,280] The total energy,
+- [00:38:59,280 - 00:38:59,560] right?
+- [00:39:00,320 - 00:39:00,920] Now,
+- [00:39:00,920 - 00:39:01,860] let's assume
+- [00:39:01,860 - 00:39:03,780] that the total energy
+- [00:39:05,040 - 00:39:06,760] is proportional to n.
+- [00:39:06,980 - 00:39:08,880] We're going to be studying this system
+- [00:39:10,120 - 00:39:12,300] making more and more replicas.
+- [00:39:12,880 - 00:39:14,360] But it's clear that as
+- [00:39:14,360 - 00:39:15,840] we double the number of replicas,
+- [00:39:15,960 - 00:39:17,860] the total energy will double,
+- [00:39:17,960 - 00:39:19,400] at least if we want to
+- [00:39:19,400 - 00:39:20,840] keep things fixed within a given box,
+- [00:39:21,100 - 00:39:21,620] and we do.
+- [00:39:22,380 - 00:39:24,620] So we can expect that the total energy
+- [00:39:25,720 - 00:39:27,720] is equal to capital N
+- [00:39:29,000 - 00:39:31,660] times the average energy per box.
+- [00:39:32,960 - 00:39:36,020] Let's just call the average energy per the boxes,
+- [00:39:36,060 - 00:39:37,400] boxes now,
+- [00:39:38,460 - 00:39:40,520] I use the word boxes,
+- [00:39:40,640 - 00:39:41,340] forget boxes.
+- [00:39:41,780 - 00:39:46,380] The average energy per subsystem here
+- [00:39:46,380 - 00:39:47,380] is E,
+- [00:39:47,660 - 00:39:51,500] and the total energy is capital N times E,
+- [00:39:51,800 - 00:39:53,320] and that must be simply
+- [00:39:53,320 - 00:39:54,840] the sum of all the energies.
+- [00:39:56,520 - 00:39:57,160] Okay,
+- [00:39:57,160 - 00:39:59,960] so before we move on to some probabilistic things,
+- [00:40:00,840 - 00:40:01,700] let's just,
+- [00:40:01,700 - 00:40:03,300] let's just rewrite this in another way.
+- [00:40:06,360 - 00:40:07,920] If I were to tell you
+- [00:40:07,920 - 00:40:10,340] that the occupation numbers were n1,
+- [00:40:10,340 - 00:40:10,980] n2,
+- [00:40:10,980 - 00:40:11,620] n3,
+- [00:40:11,620 - 00:40:12,300] and so forth,
+- [00:40:12,400 - 00:40:14,380] and the total number of systems was capital N,
+- [00:40:14,920 - 00:40:16,160] and then ask you,
+- [00:40:16,220 - 00:40:17,160] what is the probability
+- [00:40:17,980 - 00:40:20,240] that a given one of these systems
+- [00:40:21,540 - 00:40:23,160] is in the ith state,
+- [00:40:24,080 - 00:40:25,220] what would your answer be?
+- [00:40:25,900 - 00:40:26,380] Well,
+- [00:40:26,380 - 00:40:26,760] let me,
+- [00:40:27,520 - 00:40:30,380] I think we'd all come to the same answer.
+- [00:40:31,700 - 00:40:36,320] The answer is the fraction of systems
+- [00:40:38,300 - 00:40:39,940] that are in the ith state.
+- [00:40:41,460 - 00:40:43,760] A good definition in this context
+- [00:40:43,760 - 00:40:46,300] of the probability that any one of them
+- [00:40:46,300 - 00:40:48,920] is in the ith state here
+- [00:40:49,470 - 00:40:50,780] is simply the ratio
+- [00:40:51,610 - 00:40:52,400] of the number,
+- [00:40:52,400 - 00:40:54,700] of the occupation number n sub i
+- [00:40:54,700 - 00:40:55,680] to the total number.
+- [00:40:57,320 - 00:40:59,520] That's what a probability is in this context.
+- [00:40:59,860 - 00:41:01,680] So let's define the probability
+- [00:41:01,700 - 00:41:04,380] that any one of these boxes
+- [00:41:04,380 - 00:41:06,200] or any one of these subsystems
+- [00:41:06,200 - 00:41:07,520] is in the state i
+- [00:41:08,120 - 00:41:10,420] to just be the fraction
+- [00:41:15,100 - 00:41:16,040] n sub i,
+- [00:41:16,700 - 00:41:18,900] which is the number of them in the state i,
+- [00:41:19,420 - 00:41:21,040] divided by the total number.
+- [00:41:28,240 - 00:41:28,720] Yeah.
+- [00:41:29,840 - 00:41:31,680] N of i is the same as n sub i.
+- [00:41:31,700 - 00:41:32,080] Good,
+- [00:41:32,080 - 00:41:32,680] thank you.
+- [00:41:37,380 - 00:41:39,100] That's the way we normally use probability.
+- [00:41:39,420 - 00:41:41,560] Probability is a measure of the fraction of,
+- [00:41:42,520 - 00:41:44,280] the expected fraction of
+- [00:41:47,279 - 00:41:48,620] events of a given type.
+- [00:41:48,840 - 00:41:49,280] In this case,
+- [00:41:49,280 - 00:41:49,980] the event is
+- [00:41:51,200 - 00:41:52,500] measuring whether a system
+- [00:41:52,500 - 00:41:53,780] is in the state i or not.
+- [00:41:54,780 - 00:41:55,200] Okay,
+- [00:41:55,200 - 00:41:56,520] so p sub i is n sub i.
+- [00:41:56,560 - 00:41:57,180] Now supposing,
+- [00:41:57,180 - 00:41:59,680] let's now use this
+- [00:42:00,940 - 00:42:04,900] to rewrite these two constraints.
+- [00:42:05,320 - 00:42:06,480] These are two constraints.
+- [00:42:06,880 - 00:42:11,200] One says that the total number of systems
+- [00:42:11,200 - 00:42:12,340] is capital N,
+- [00:42:12,500 - 00:42:14,660] and the other says that the total energy
+- [00:42:15,800 - 00:42:17,800] is equal to capital N
+- [00:42:17,800 - 00:42:19,740] times the energy per system.
+- [00:42:20,420 - 00:42:20,920] Alright,
+- [00:42:20,920 - 00:42:21,640] so if I do that,
+- [00:42:21,840 - 00:42:23,420] I can then write,
+- [00:42:23,420 - 00:42:24,420] I can then,
+- [00:42:24,500 - 00:42:26,640] let's rewrite this.
+- [00:42:26,640 - 00:42:31,820] p of i times n is equal to n i.
+- [00:42:33,080 - 00:42:34,360] And what does this become?
+- [00:42:34,540 - 00:42:35,440] This becomes
+- [00:42:36,820 - 00:42:38,460] the summation over i,
+- [00:42:40,640 - 00:42:42,440] n times p i,
+- [00:42:43,420 - 00:42:44,760] that's just n i,
+- [00:42:44,760 - 00:42:45,420] little n i,
+- [00:42:47,680 - 00:42:49,340] is equal to capital N.
+- [00:42:51,520 - 00:42:53,740] And now divide by capital N,
+- [00:42:53,880 - 00:42:54,800] and what do we get?
+- [00:42:58,780 - 00:43:00,350] We get the sum of p
+- [00:43:00,350 - 00:43:01,920] sub i is equal to one.
+- [00:43:03,120 - 00:43:04,960] That should surprise nobody.
+- [00:43:05,800 - 00:43:06,320] Okay,
+- [00:43:06,320 - 00:43:07,360] that should surprise nobody.
+- [00:43:08,500 - 00:43:10,700] But it's just another way of writing
+- [00:43:10,700 - 00:43:12,620] the constraint that the total number
+- [00:43:12,620 - 00:43:13,880] of systems is equal to n.
+- [00:43:15,680 - 00:43:18,000] And what about this equation here?
+- [00:43:18,160 - 00:43:20,160] This becomes summation over i
+- [00:43:20,160 - 00:43:23,980] of n times p i,
+- [00:43:26,160 - 00:43:28,140] is n times the total energy.
+- [00:43:28,320 - 00:43:28,840] And again,
+- [00:43:28,840 - 00:43:29,720] divide by n,
+- [00:43:31,860 - 00:43:33,760] and it says what we knew all along,
+- [00:43:34,500 - 00:43:36,380] that e on the right hand side
+- [00:43:36,380 - 00:43:38,180] is just the average energy
+- [00:43:38,180 - 00:43:39,600] of any one of the systems.
+- [00:43:40,900 - 00:43:41,420] Okay,
+- [00:43:41,420 - 00:43:43,920] so this is,
+- [00:43:44,120 - 00:43:45,960] these are two good things to remember.
+- [00:43:47,220 - 00:43:48,540] These are two constraints,
+- [00:43:48,860 - 00:43:52,320] and whatever the probability distribution is,
+- [00:43:52,580 - 00:43:53,960] the probability distribution is,
+- [00:43:53,980 - 00:43:55,100] some p of i,
+- [00:43:55,100 - 00:43:56,200] whatever it is,
+- [00:43:56,759 - 00:43:58,040] it has to satisfy
+- [00:43:59,800 - 00:44:01,820] these two constraints,
+- [00:44:02,080 - 00:44:04,240] average energy and total probability.
+- [00:44:04,760 - 00:44:05,360] Or,
+- [00:44:05,360 - 00:44:07,260] if we want to think about it
+- [00:44:07,260 - 00:44:08,920] in terms of the occupation numbers,
+- [00:44:09,220 - 00:44:09,860] well,
+- [00:44:09,860 - 00:44:11,220] you can rewrite it
+- [00:44:11,220 - 00:44:12,580] in terms of the occupation numbers.
+- [00:44:13,800 - 00:44:14,400] Okay,
+- [00:44:14,400 - 00:44:15,860] but before we worry
+- [00:44:15,860 - 00:44:19,700] about the total number of systems
+- [00:44:19,700 - 00:44:21,000] being kept constant,
+- [00:44:21,140 - 00:44:23,540] and the total energy being kept constant,
+- [00:44:23,980 - 00:44:25,900] let's just ask a more primitive question.
+- [00:44:26,780 - 00:44:30,360] For a given set of occupation numbers,
+- [00:44:31,020 - 00:44:32,120] n1 through n,
+- [00:44:32,120 - 00:44:32,840] however,
+- [00:44:33,100 - 00:44:34,900] infinitely many of them,
+- [00:44:35,220 - 00:44:37,140] how many ways are there
+- [00:44:37,140 - 00:44:39,220] of redistributing our systems
+- [00:44:39,779 - 00:44:41,360] to correspond to that,
+- [00:44:41,799 - 00:44:42,120] that,
+- [00:44:42,120 - 00:44:42,580] um,
+- [00:44:44,280 - 00:44:45,800] to that number?
+- [00:44:46,600 - 00:44:48,880] So if you know anything about combinatorics,
+- [00:44:48,960 - 00:44:49,720] you know the answer.
+- [00:44:51,640 - 00:44:52,280] But,
+- [00:44:52,280 - 00:44:52,480] uh,
+- [00:44:54,960 - 00:44:56,400] and I'm not going to prove the answer,
+- [00:44:56,520 - 00:44:57,400] this is something,
+- [00:44:57,720 - 00:44:58,180] this is,
+- [00:44:59,080 - 00:45:00,760] this is probably the hardest mathematics
+- [00:45:00,760 - 00:45:01,700] in this course.
+- [00:45:01,840 - 00:45:03,960] I always find combinatorics very tricky.
+- [00:45:04,880 - 00:45:06,940] But there's a small number of rules,
+- [00:45:08,799 - 00:45:09,160] and,
+- [00:45:09,160 - 00:45:09,440] uh,
+- [00:45:12,660 - 00:45:13,900] and I'm not going to go through them,
+- [00:45:13,980 - 00:45:15,140] I'm going to tell you the answer,
+- [00:45:15,260 - 00:45:16,120] and then we'll just check it
+- [00:45:16,120 - 00:45:16,960] for a couple of cases.
+- [00:45:17,640 - 00:45:19,100] We'll check it for a couple of cases,
+- [00:45:19,160 - 00:45:20,140] see that it really is true.
+- [00:45:21,580 - 00:45:21,940] Okay,
+- [00:45:21,940 - 00:45:23,840] so we have a set of n's,
+- [00:45:23,840 - 00:45:25,060] now clearly,
+- [00:45:25,180 - 00:45:27,080] if capital N is finite,
+- [00:45:27,820 - 00:45:29,640] and let's assume capital N is finite,
+- [00:45:29,740 - 00:45:30,580] it may be very big,
+- [00:45:30,760 - 00:45:32,520] and we're interested in the limit
+- [00:45:32,520 - 00:45:33,960] in which it really is very big,
+- [00:45:34,400 - 00:45:35,520] but for the moment,
+- [00:45:35,620 - 00:45:36,840] let's take it to be finite,
+- [00:45:37,360 - 00:45:38,640] and let's also suppose
+- [00:45:38,640 - 00:45:40,660] there's an infinite number of energy levels
+- [00:45:40,660 - 00:45:41,660] that go up to the sky.
+- [00:45:42,780 - 00:45:44,360] Most of the occupation numbers
+- [00:45:44,360 - 00:45:45,020] are going to be zero.
+- [00:45:45,540 - 00:45:46,480] Keep that in mind.
+- [00:45:46,540 - 00:45:47,700] Most of the occupation numbers
+- [00:45:47,700 - 00:45:48,420] are going to be zero.
+- [00:45:49,040 - 00:45:49,480] Alright,
+- [00:45:49,480 - 00:45:50,540] the answer is,
+- [00:45:50,820 - 00:45:52,360] the number of ways,
+- [00:45:52,460 - 00:45:52,720] uh,
+- [00:45:52,720 - 00:45:54,500] I don't want to,
+- [00:45:54,560 - 00:45:55,220] let's see,
+- [00:45:55,260 - 00:45:56,380] let's just write it out.
+- [00:45:58,620 - 00:46:01,960] Number of arrangements,
+- [00:46:02,160 - 00:46:03,140] let's call it,
+- [00:46:03,200 - 00:46:04,400] number of ways of,
+- [00:46:09,460 - 00:46:12,440] in order to keep the occupation number fixed,
+- [00:46:12,720 - 00:46:14,800] the set of occupation numbers fixed,
+- [00:46:15,680 - 00:46:17,360] is n factorial,
+- [00:46:17,880 - 00:46:19,840] the total number of them factorial,
+- [00:46:20,840 - 00:46:22,600] divided by the product,
+- [00:46:23,320 - 00:46:24,820] n one factorial,
+- [00:46:25,240 - 00:46:26,640] n two factorial,
+- [00:46:26,920 - 00:46:28,280] n three factorial,
+- [00:46:29,100 - 00:46:30,120] dot dot dot,
+- [00:46:30,360 - 00:46:31,640] all of them.
+- [00:46:32,600 - 00:46:33,800] In other words,
+- [00:46:34,960 - 00:46:36,220] capital N factorial,
+- [00:46:38,500 - 00:46:40,280] divided by the product,
+- [00:46:41,040 - 00:46:42,540] this is the symbol for product,
+- [00:46:42,600 - 00:46:43,060] over i,
+- [00:46:43,700 - 00:46:46,180] of n sub i factorial.
+- [00:46:47,020 - 00:46:48,700] We're going to check it for a few cases,
+- [00:46:48,740 - 00:46:49,600] make sure it's true,
+- [00:46:50,940 - 00:46:52,640] but this is a combinatoric,
+- [00:46:52,640 - 00:46:53,100] fact.
+- [00:46:55,140 - 00:46:56,240] But first of all,
+- [00:46:56,280 - 00:46:57,740] what about all the ones which are zero?
+- [00:46:57,900 - 00:46:59,760] Don't they give us zeros in the denominator?
+- [00:47:00,720 - 00:47:01,160] No.
+- [00:47:01,800 - 00:47:02,460] Why not?
+- [00:47:04,380 - 00:47:05,840] Zero factorial is one.
+- [00:47:06,680 - 00:47:09,840] So all the ones which are unoccupied,
+- [00:47:09,840 - 00:47:11,300] just give us one,
+- [00:47:11,400 - 00:47:12,420] and we can forget them.
+- [00:47:13,380 - 00:47:15,600] All the occupation numbers which are zero,
+- [00:47:18,140 - 00:47:19,660] contribute the factor one,
+- [00:47:19,840 - 00:47:20,960] for each one of them.
+- [00:47:21,040 - 00:47:21,940] So there's no danger,
+- [00:47:22,640 - 00:47:23,920] of this thing blowing up,
+- [00:47:24,020 - 00:47:26,640] because there are a lot of n's equal to zero.
+- [00:47:27,600 - 00:47:28,640] Zero factorial,
+- [00:47:30,100 - 00:47:32,420] zero factorial equals one factorial,
+- [00:47:35,900 - 00:47:36,720] equals one.
+- [00:47:39,600 - 00:47:41,620] Now we could use mathematical induction,
+- [00:47:41,840 - 00:47:43,560] to prove that every number factorial,
+- [00:47:43,800 - 00:47:44,580] is equal to one.
+- [00:47:48,620 - 00:47:49,980] It makes things simple.
+- [00:47:50,160 - 00:47:52,160] It makes things simple.
+- [00:47:53,720 - 00:47:54,160] Yeah.
+- [00:47:56,100 - 00:47:57,560] It's a unified field theory,
+- [00:47:57,560 - 00:47:57,740] huh?
+- [00:47:57,920 - 00:47:58,340] Right.
+- [00:47:59,020 - 00:47:59,460] Okay.
+- [00:47:59,940 - 00:48:01,820] Just in case you think I'm not,
+- [00:48:01,880 - 00:48:02,300] you know,
+- [00:48:02,320 - 00:48:02,680] I'm serious,
+- [00:48:02,940 - 00:48:03,480] I'm not.
+- [00:48:04,480 - 00:48:05,880] Two factorial is two.
+- [00:48:07,220 - 00:48:07,660] Oh,
+- [00:48:07,660 - 00:48:08,140] one question.
+- [00:48:10,460 - 00:48:10,900] In,
+- [00:48:10,900 - 00:48:11,360] in value,
+- [00:48:11,440 - 00:48:12,260] in general,
+- [00:48:12,300 - 00:48:14,420] would it be more than one set of occupation numbers,
+- [00:48:14,480 - 00:48:15,800] that satisfies the constraints?
+- [00:48:16,120 - 00:48:16,500] Oh yes.
+- [00:48:16,760 - 00:48:17,300] Oh yes.
+- [00:48:17,400 - 00:48:18,480] There are lots of ways of,
+- [00:48:18,500 - 00:48:19,800] that's what we're counting.
+- [00:48:19,920 - 00:48:21,100] We're counting how many ways,
+- [00:48:21,100 - 00:48:21,280] no,
+- [00:48:21,280 - 00:48:21,440] no,
+- [00:48:21,440 - 00:48:23,020] for the moment forget the constraints.
+- [00:48:23,300 - 00:48:24,220] This is the number of arrangements
+- [00:48:24,220 - 00:48:26,260] for this fixed set of occupation numbers.
+- [00:48:26,300 - 00:48:27,740] This is the number of arrangements
+- [00:48:27,740 - 00:48:29,540] for a fixed set of occupation numbers,
+- [00:48:29,660 - 00:48:32,420] with no regard to whether the,
+- [00:48:32,420 - 00:48:33,900] the constraints are satisfied.
+- [00:48:34,720 - 00:48:36,400] We will come back to the question
+- [00:48:36,400 - 00:48:37,900] of the constraints being satisfied.
+- [00:48:38,280 - 00:48:40,620] We will have to add on top of this,
+- [00:48:40,760 - 00:48:42,440] the effect of constraints.
+- [00:48:43,020 - 00:48:43,540] Alright?
+- [00:48:44,080 - 00:48:45,280] But let's just look,
+- [00:48:45,280 - 00:48:46,640] let's just look at this for a moment,
+- [00:48:46,760 - 00:48:47,260] and,
+- [00:48:47,260 - 00:48:48,900] and study it.
+- [00:48:51,580 - 00:48:52,820] It's an interesting expression.
+- [00:48:53,660 - 00:48:55,400] We're going to want to approximate it.
+- [00:48:58,620 - 00:48:59,100] Oh,
+- [00:48:59,100 - 00:49:00,560] let's check it for a couple of cases.
+- [00:49:00,940 - 00:49:03,299] It does feel appropriate to do this on April 15th.
+- [00:49:08,080 - 00:49:08,900] Tax day.
+- [00:49:09,220 - 00:49:09,580] Yeah,
+- [00:49:09,580 - 00:49:09,800] I know,
+- [00:49:09,800 - 00:49:10,480] but why,
+- [00:49:10,600 - 00:49:11,100] Oh,
+- [00:49:11,100 - 00:49:12,940] it's 1040 in all the rules,
+- [00:49:12,940 - 00:49:13,340] so.
+- [00:49:13,580 - 00:49:15,120] Is 1040 a factorial?
+- [00:49:18,380 - 00:49:18,860] Okay.
+- [00:49:21,100 - 00:49:21,220] Right.
+- [00:49:23,980 - 00:49:24,500] Okay,
+- [00:49:24,500 - 00:49:25,960] let's just check it for a couple of cases.
+- [00:49:26,460 - 00:49:27,420] First of all,
+- [00:49:27,420 - 00:49:28,980] supposing you take all,
+- [00:49:29,200 - 00:49:31,420] supposing we're interested in the case
+- [00:49:31,420 - 00:49:35,340] where one of the occupation numbers
+- [00:49:35,340 - 00:49:38,460] is capital N and all the other ones are 0.
+- [00:49:39,680 - 00:49:40,200] Alright?
+- [00:49:41,000 - 00:49:45,180] That would say one of these is N factorial,
+- [00:49:45,880 - 00:49:47,240] all the others are 1,
+- [00:49:47,979 - 00:49:49,860] and it's just N factorial over N factorial,
+- [00:49:49,860 - 00:49:50,540] which is 1.
+- [00:49:50,840 - 00:49:51,280] Well,
+- [00:49:51,280 - 00:49:52,180] that seems reasonable.
+- [00:49:52,360 - 00:49:53,880] How many ways are there of putting
+- [00:49:53,880 - 00:49:55,400] all of the things into one cup?
+- [00:49:55,600 - 00:49:55,940] One.
+- [00:49:56,840 - 00:49:57,280] Okay,
+- [00:49:57,280 - 00:49:57,700] good.
+- [00:49:58,480 - 00:50:00,820] Let's try a couple of simple cases.
+- [00:50:01,940 - 00:50:03,480] Let's suppose we have two,
+- [00:50:03,480 - 00:50:05,880] two subsystems,
+- [00:50:05,880 - 00:50:07,940] and we want to know how many ways are
+- [00:50:07,940 - 00:50:10,000] there of putting two of them into one cup.
+- [00:50:10,140 - 00:50:10,200] Well,
+- [00:50:10,200 - 00:50:11,040] we've already done that.
+- [00:50:11,180 - 00:50:12,160] That's one way.
+- [00:50:12,360 - 00:50:12,800] That's,
+- [00:50:12,800 - 00:50:15,020] the other possibility is one in
+- [00:50:15,020 - 00:50:17,240] one cup and one in another cup.
+- [00:50:24,640 - 00:50:25,160] Okay.
+- [00:50:26,380 - 00:50:26,900] Alright,
+- [00:50:26,900 - 00:50:29,120] let's first check the answer this way.
+- [00:50:29,300 - 00:50:29,800] Alright?
+- [00:50:30,060 - 00:50:31,580] There are two systems,
+- [00:50:32,280 - 00:50:34,160] so there's two factorial,
+- [00:50:35,380 - 00:50:37,260] and each cup now,
+- [00:50:37,420 - 00:50:38,730] this is the first cup and
+- [00:50:38,730 - 00:50:40,040] the second cup and the third cup,
+- [00:50:40,200 - 00:50:41,980] the first cup has 1,
+- [00:50:42,160 - 00:50:43,600] the second cup has 1,
+- [00:50:43,680 - 00:50:44,840] and the third cup has 0.
+- [00:50:45,260 - 00:50:47,940] So this is 1 factorial times 1 factorial,
+- [00:50:47,960 - 00:50:49,180] times 0 factorial,
+- [00:50:49,640 - 00:50:51,480] which is 1.
+- [00:50:52,640 - 00:50:53,160] So,
+- [00:50:53,160 - 00:50:55,020] the answer is 2 factorial,
+- [00:50:55,620 - 00:50:56,400] or 2.
+- [00:50:56,840 - 00:51:01,200] Two ways of putting two systems
+- [00:51:03,680 - 00:51:05,780] into a given pair of cups,
+- [00:51:06,040 - 00:51:07,060] with the other one being empty.
+- [00:51:07,320 - 00:51:07,860] And of course,
+- [00:51:07,860 - 00:51:08,260] that's true.
+- [00:51:08,340 - 00:51:09,740] You can put this one here and this one here,
+- [00:51:09,900 - 00:51:10,940] or you can put this
+- [00:51:10,940 - 00:51:11,980] one here and this one here.
+- [00:51:12,040 - 00:51:12,540] Two ways.
+- [00:51:13,880 - 00:51:15,880] Let's do one more case.
+- [00:51:17,360 - 00:51:17,360] Uh,
+- [00:51:17,360 - 00:51:18,160] I'm sorry.
+- [00:51:20,160 - 00:51:21,400] First of all,
+- [00:51:21,420 - 00:51:24,560] how many ways are there of taking three subsystems
+- [00:51:24,560 - 00:51:28,080] and distributing them into three states,
+- [00:51:28,400 - 00:51:29,680] no two the same?
+- [00:51:31,580 - 00:51:32,780] That's not as obvious,
+- [00:51:32,780 - 00:51:33,140] is it?
+- [00:51:38,600 - 00:51:40,040] Anybody got a quick answer?
+- [00:51:41,740 - 00:51:41,860] What?
+- [00:51:44,080 - 00:51:44,160] Yeah,
+- [00:51:44,160 - 00:51:45,020] it is 3 factorial.
+- [00:51:47,480 - 00:51:47,880] Yeah,
+- [00:51:47,880 - 00:51:48,860] it's 3 factorial,
+- [00:51:48,860 - 00:51:51,300] what is it?
+- [00:51:51,300 - 00:51:52,300] It's according to this,
+- [00:51:52,300 - 00:51:53,240] there are 3 systems,
+- [00:51:53,240 - 00:51:56,760] so that becomes 3 factorial over 1 factorial,
+- [00:51:56,760 - 00:51:57,640] 1 factorial,
+- [00:51:57,640 - 00:51:58,440] 1 factorial,
+- [00:51:58,440 - 00:52:00,620] which is just 3 factorial,
+- [00:52:00,620 - 00:52:01,400] which is 6.
+- [00:52:01,900 - 00:52:02,760] And in fact,
+- [00:52:02,760 - 00:52:04,100] there are 6 ways,
+- [00:52:04,100 - 00:52:08,380] but you know how to do it,
+- [00:52:08,380 - 00:52:09,100] you know how to do it.
+- [00:52:09,100 - 00:52:10,280] And in general,
+- [00:52:10,280 - 00:52:10,980] this is the formula.
+- [00:52:10,980 - 00:52:13,020] This really is the formula,
+- [00:52:13,020 - 00:52:13,880] you can prove it,
+- [00:52:13,880 - 00:52:15,060] it's not too hard to prove,
+- [00:52:15,060 - 00:52:17,090] or you can just go
+- [00:52:17,090 - 00:52:19,120] look up in a combinatorics book,
+- [00:52:19,120 - 00:52:20,660] proof,
+- [00:52:20,660 - 00:52:22,400] high school,
+- [00:52:22,400 - 00:52:24,920] I think this is done in high school,
+- [00:52:24,920 - 00:52:25,480] if I remember,
+- [00:52:25,480 - 00:52:26,820] I don't remember.
+- [00:52:28,920 - 00:52:29,440] Okay,
+- [00:52:29,440 - 00:52:34,260] so this is the number of ways of taking
+- [00:52:34,260 - 00:52:39,080] capital N things and distributing them to the other.
+- [00:52:39,100 - 00:52:39,100] And then,
+- [00:52:39,100 - 00:52:41,540] among the possible states,
+- [00:52:41,540 - 00:52:45,240] with occupation numbers N1,
+- [00:52:45,240 - 00:52:45,540] N2,
+- [00:52:45,540 - 00:52:46,000] and N3.
+- [00:52:46,120 - 00:52:48,100] Now what we're going to find is
+- [00:52:48,100 - 00:52:50,080] that in the situations we're interested in,
+- [00:52:50,080 - 00:52:53,340] this can be thought of
+- [00:52:53,340 - 00:52:56,600] as a function of the N's,
+- [00:52:56,600 - 00:52:58,560] a function of the occupation numbers.
+- [00:52:58,880 - 00:53:00,390] And in the circumstances that
+- [00:53:00,390 - 00:53:01,900] we're going to be interested in,
+- [00:53:01,900 - 00:53:04,640] we're going to find that the
+- [00:53:04,640 - 00:53:07,380] things like this are highly peaked
+- [00:53:08,100 - 00:53:09,080] at a particular point in time.
+- [00:53:09,100 - 00:53:09,200] So,
+- [00:53:09,200 - 00:53:09,840] let's say we're interested in
+- [00:53:09,840 - 00:53:10,480] a particular set of occupation numbers.
+- [00:53:11,120 - 00:53:11,800] Namely,
+- [00:53:11,800 - 00:53:13,700] when capital N gets very,
+- [00:53:13,700 - 00:53:14,380] very big,
+- [00:53:14,380 - 00:53:17,980] we're going to find that
+- [00:53:17,980 - 00:53:21,580] the occupation numbers cluster very,
+- [00:53:21,580 - 00:53:26,760] very strongly about a particular set of occupation numbers.
+- [00:53:26,900 - 00:53:27,860] Or better yet,
+- [00:53:27,860 - 00:53:29,780] a particular set of fractions,
+- [00:53:29,780 - 00:53:31,460] little n over big N,
+- [00:53:31,460 - 00:53:37,400] that distribution gets tighter and tighter as N gets up,
+- [00:53:37,400 - 00:53:39,020] so that the probabilities,
+- [00:53:39,020 - 00:53:41,040] little n over big N,
+- [00:53:41,040 - 00:53:43,000] are well defined.
+- [00:53:43,900 - 00:53:44,380] Okay,
+- [00:53:44,380 - 00:53:46,500] so now let's do a little,
+- [00:53:46,500 - 00:53:47,520] in order to do that,
+- [00:53:47,520 - 00:53:49,780] we have to have some approximation methods.
+- [00:53:51,680 - 00:53:56,580] And the first thing we need to approximate is factorials.
+- [00:53:56,960 - 00:53:58,200] When I say approximate,
+- [00:53:58,200 - 00:54:00,380] I mean approximate under the circumstances
+- [00:54:00,380 - 00:54:02,560] that the N's are all very big.
+- [00:54:03,220 - 00:54:04,260] Here's what we imagine.
+- [00:54:05,540 - 00:54:06,020] That...
+- [00:54:07,400 - 00:54:10,040] We simply allow the number of subsystems
+- [00:54:10,040 - 00:54:12,680] to get bigger and bigger and bigger
+- [00:54:13,520 - 00:54:16,990] in such a way that the occupation numbers
+- [00:54:16,990 - 00:54:20,460] also simultaneously get bigger and bigger and bigger.
+- [00:54:21,200 - 00:54:23,290] So all the N's are going
+- [00:54:23,290 - 00:54:25,380] to be assumed to be very big.
+- [00:54:26,240 - 00:54:27,800] And let's approximate this.
+- [00:54:28,000 - 00:54:32,690] Let's approximate this using
+- [00:54:32,690 - 00:54:37,380] a standard approximation for factorials.
+- [00:54:37,380 - 00:54:39,600] Does everybody know the name of the approximation?
+- [00:54:41,180 - 00:54:41,740] Sterling's approximation.
+- [00:54:42,800 - 00:54:42,980] Sterling's approximation.
+- [00:54:42,980 - 00:54:44,040] Shall we prove it?
+- [00:54:44,040 - 00:54:44,660] Let's prove it.
+- [00:54:44,700 - 00:54:45,960] Let's prove Sterling's approximation.
+- [00:54:46,600 - 00:54:48,840] If everybody knows how to prove it,
+- [00:54:48,840 - 00:54:50,320] then I won't prove it.
+- [00:54:55,580 - 00:54:57,040] Raise your hand if you
+- [00:54:57,040 - 00:54:58,500] know how to prove Sterling's approximation.
+- [00:54:58,600 - 00:55:00,160] You will be called upon to do it.
+- [00:55:02,020 - 00:55:03,460] I noticed Michael's hand went
+- [00:55:03,460 - 00:55:04,900] back down when I said that.
+- [00:55:06,440 - 00:55:07,900] But I'll bet that he does know.
+- [00:55:08,060 - 00:55:09,410] Raise your hand if you ever
+- [00:55:09,410 - 00:55:10,760] do how to prove Sterling's approximation.
+- [00:55:10,840 - 00:55:11,460] That's another...
+- [00:55:11,460 - 00:55:13,220] Raise your hand if you
+- [00:55:13,220 - 00:55:14,980] know what Sterling's approximation is.
+- [00:55:17,000 - 00:55:18,180] Raise your hand if you don't.
+- [00:55:18,940 - 00:55:19,340] Okay,
+- [00:55:19,340 - 00:55:19,660] so good.
+- [00:55:19,660 - 00:55:21,360] So we do Sterling's approximation.
+- [00:55:22,420 - 00:55:22,820] Good.
+- [00:55:24,100 - 00:55:24,500] Alright.
+- [00:55:24,500 - 00:55:25,980] First I'll write out what it is,
+- [00:55:25,980 - 00:55:26,780] and then we'll prove it.
+- [00:55:29,379 - 00:55:30,180] N factorial...
+- [00:55:32,299 - 00:55:34,620] As N gets larger and larger and larger,
+- [00:55:35,820 - 00:55:38,380] becomes better and better approximated
+- [00:55:38,380 - 00:55:40,940] by the number N to the...
+- [00:55:40,940 - 00:55:42,560] I'm running out of ink here.
+- [00:55:42,560 - 00:55:43,640] Let's see.
+- [00:55:43,640 - 00:55:44,220] Yeah.
+- [00:55:49,180 - 00:55:55,020] N to the N times E to the minus N.
+- [00:55:55,640 - 00:55:56,180] Now,
+- [00:55:56,180 - 00:55:58,520] there are all sorts of corrections to this,
+- [00:55:58,620 - 00:56:01,740] which become important when N is not too big.
+- [00:56:01,960 - 00:56:03,780] But the bigger that N gets,
+- [00:56:03,780 - 00:56:05,920] the closer this gets to being correct.
+- [00:56:06,580 - 00:56:07,100] Alright,
+- [00:56:07,100 - 00:56:08,580] so let's see if we can prove it.
+- [00:56:12,140 - 00:56:13,680] Let's take N factorial,
+- [00:56:14,280 - 00:56:15,720] and in order to prove it,
+- [00:56:15,720 - 00:56:17,110] what we're going to do is
+- [00:56:17,110 - 00:56:18,500] work with the logarithm of the function.
+- [00:56:18,800 - 00:56:20,240] We're interested in N factorial,
+- [00:56:20,620 - 00:56:25,060] but instead we'll calculate logarithm of N factorial.
+- [00:56:26,080 - 00:56:26,600] Now,
+- [00:56:26,600 - 00:56:27,320] N factorial,
+- [00:56:27,320 - 00:56:28,060] of course,
+- [00:56:28,060 - 00:56:29,860] this is an approximate equality.
+- [00:56:30,520 - 00:56:31,900] But what is N factorial?
+- [00:56:32,100 - 00:56:33,060] N factorial...
+- [00:56:34,680 - 00:56:36,180] is 1 times 2 times
+- [00:56:36,180 - 00:56:37,680] blah blah blah up to N.
+- [00:56:38,340 - 00:56:41,020] And the logarithm of N factorial...
+- [00:56:42,000 - 00:56:43,840] is log of 1...
+- [00:56:45,740 - 00:56:47,360] plus log 2...
+- [00:56:47,360 - 00:56:49,360] plus dot dot dot...
+- [00:56:49,360 - 00:56:50,580] up to log N.
+- [00:56:52,620 - 00:56:53,720] Log N.
+- [00:56:53,980 - 00:56:55,340] Or in other words,
+- [00:56:55,340 - 00:56:56,660] it's the sum...
+- [00:56:59,720 - 00:57:01,000] of log...
+- [00:57:02,180 - 00:57:04,120] let's call it X for the moment.
+- [00:57:04,360 - 00:57:05,800] Sum of log X,
+- [00:57:05,800 - 00:57:07,160] where X is an integer,
+- [00:57:08,580 - 00:57:09,060] from...
+- [00:57:09,060 - 00:57:10,300] we might as well take it,
+- [00:57:10,300 - 00:57:12,940] we can take it from 1 to capital N.
+- [00:57:14,360 - 00:57:15,740] We add them all up,
+- [00:57:15,860 - 00:57:18,580] and that gives us the logarithm of N factorial.
+- [00:57:20,500 - 00:57:20,980] Okay,
+- [00:57:20,980 - 00:57:22,440] so log N factorial...
+- [00:57:23,000 - 00:57:24,080] is a sum...
+- [00:57:24,680 - 00:57:26,140] I've written it there...
+- [00:57:27,660 - 00:57:28,620] a sum...
+- [00:57:29,780 - 00:57:30,260] from...
+- [00:57:30,260 - 00:57:31,660] we can take it from I equals 1.
+- [00:57:31,700 - 00:57:33,000] We could also take it from I equals 0.
+- [00:57:33,120 - 00:57:33,800] It doesn't matter.
+- [00:57:34,980 - 00:57:36,480] When N gets very large,
+- [00:57:36,480 - 00:57:38,940] it doesn't matter exactly where we begin the sum.
+- [00:57:39,420 - 00:57:42,020] But from I equals 1 to N,
+- [00:57:42,020 - 00:57:43,840] logarithm...
+- [00:57:43,840 - 00:57:44,440] oh,
+- [00:57:44,440 - 00:57:44,720] sorry,
+- [00:57:44,720 - 00:57:46,960] from X equals 1,
+- [00:57:46,960 - 00:57:48,760] log of X.
+- [00:57:49,720 - 00:57:50,720] Where for the moment,
+- [00:57:50,720 - 00:57:52,560] X is an integer.
+- [00:57:54,080 - 00:57:54,520] Okay,
+- [00:57:54,520 - 00:57:56,100] so we can draw a picture of this.
+- [00:58:04,820 - 00:58:05,340] Logarithm,
+- [00:58:05,340 - 00:58:05,960] here's 1.
+- [00:58:08,180 - 00:58:10,500] Logarithm is a function which looks like so.
+- [00:58:11,600 - 00:58:12,580] This is X.
+- [00:58:13,460 - 00:58:14,680] This is log X.
+- [00:58:17,520 - 00:58:19,500] It grows forever and ever,
+- [00:58:19,500 - 00:58:22,520] but at an ever progressively smaller and smaller rate.
+- [00:58:22,960 - 00:58:24,640] And now we want to
+- [00:58:24,640 - 00:58:26,320] add up all of the integer...
+- [00:58:27,220 - 00:58:28,960] all of the logarithms...
+- [00:58:28,960 - 00:58:30,500] at all of the integers,
+- [00:58:30,500 - 00:58:31,400] starting at 1,
+- [00:58:31,400 - 00:58:32,000] 2,
+- [00:58:32,000 - 00:58:32,640] 3,
+- [00:58:32,640 - 00:58:33,300] 4,
+- [00:58:33,300 - 00:58:33,940] 5,
+- [00:58:33,940 - 00:58:34,600] 6,
+- [00:58:34,600 - 00:58:35,460] and so forth.
+- [00:58:36,480 - 00:58:38,780] The distance between the integers here,
+- [00:58:38,780 - 00:58:39,260] of course,
+- [00:58:39,260 - 00:58:39,900] is just 1.
+- [00:58:40,820 - 00:58:44,120] The difference is that integers are integers after all.
+- [00:58:45,080 - 00:58:46,890] And it's kind of obvious that
+- [00:58:46,890 - 00:58:48,700] you can make as a first approximation...
+- [00:58:48,700 - 00:58:50,740] and this is the approximation we'll make...
+- [00:58:50,740 - 00:58:53,190] the first approximation is to say
+- [00:58:53,190 - 00:58:55,640] this is just given by the area...
+- [00:58:56,560 - 00:58:58,040] adding them all up...
+- [00:58:58,040 - 00:58:59,780] with a small error.
+- [00:58:59,980 - 00:59:01,400] And the error can be estimated.
+- [00:59:01,400 - 00:59:03,440] It modifies the formula a little bit.
+- [00:59:04,340 - 00:59:06,620] But we can add all of this up...
+- [00:59:06,620 - 00:59:09,860] and replace it to a good approximation by the integral.
+- [00:59:11,600 - 00:59:12,960] It's to a good approximation,
+- [00:59:12,960 - 00:59:15,360] particularly when n gets large...
+- [00:59:16,060 - 00:59:18,140] the integral dx...
+- [00:59:18,930 - 00:59:20,300] of logarithm of X.
+- [00:59:24,280 - 00:59:25,460] From where to where?
+- [00:59:25,720 - 00:59:27,360] From X equals 1...
+- [00:59:28,040 - 00:59:29,820] where log X is just 0...
+- [00:59:29,820 - 00:59:31,160] to capital N.
+- [00:59:32,100 - 00:59:32,760] Okay.
+- [00:59:33,200 - 00:59:35,080] So all we have to do...
+- [00:59:35,860 - 00:59:39,200] is learn how to compute the integral of log.
+- [00:59:45,600 - 00:59:48,780] Rather than bat our heads against the wall...
+- [00:59:48,780 - 00:59:53,400] and try to compute the integral of log X...
+- [00:59:53,810 - 00:59:56,080] let's take the answer and differentiate it...
+- [00:59:56,080 - 00:59:58,120] and see that it really does give log X...
+- [00:59:58,120 - 00:59:59,660] going the opposite direction.
+- [01:00:00,940 - 01:00:01,500] So...
+- [01:00:02,640 - 01:00:03,760] the integral...
+- [01:00:03,760 - 01:00:06,700] just the indefinite integral of log X...
+- [01:00:06,700 - 01:00:09,080] is X log X...
+- [01:00:10,320 - 01:00:11,380] minus X.
+- [01:00:12,920 - 01:00:14,060] Let's check that.
+- [01:00:15,280 - 01:00:16,700] How did I know that?
+- [01:00:16,880 - 01:00:18,100] I know it because I once...
+- [01:00:18,839 - 01:00:20,520] by trial and error...
+- [01:00:20,859 - 01:00:22,460] a little bit of trial and error...
+- [01:00:22,460 - 01:00:24,120] and you can make your best guess...
+- [01:00:24,120 - 01:00:24,600] and this is it.
+- [01:00:24,600 - 01:00:25,620] Okay.
+- [01:00:25,820 - 01:00:26,160] Let's...
+- [01:00:26,160 - 01:00:28,380] all we have to do is differentiate this...
+- [01:00:29,960 - 01:00:31,760] differentiate what's in here...
+- [01:00:31,760 - 01:00:33,340] and show that it's log X.
+- [01:00:34,680 - 01:00:35,240] Okay.
+- [01:00:35,500 - 01:00:36,880] So first of all...
+- [01:00:36,880 - 01:00:39,020] the derivative of X log X...
+- [01:00:39,820 - 01:00:42,320] you first differentiate X...
+- [01:00:45,120 - 01:00:45,900] this is...
+- [01:00:45,900 - 01:00:47,620] the derivative of X is just 1...
+- [01:00:47,620 - 01:00:49,500] so that gives you log X...
+- [01:00:49,500 - 01:00:50,880] that's what we want...
+- [01:00:50,880 - 01:00:52,200] and then...
+- [01:00:52,200 - 01:00:54,580] X times the derivative of log X...
+- [01:00:54,600 - 01:00:56,460] what's the derivative of log X?
+- [01:00:58,200 - 01:00:58,980] All right.
+- [01:00:59,140 - 01:01:00,620] So the derivative...
+- [01:01:00,620 - 01:01:01,640] so good...
+- [01:01:01,640 - 01:01:04,520] so X times the derivative of log X...
+- [01:01:04,520 - 01:01:04,960] is just 1.
+- [01:01:07,900 - 01:01:09,680] What's the derivative of minus X?
+- [01:01:12,040 - 01:01:12,760] Minus 1.
+- [01:01:13,000 - 01:01:14,020] So there we are.
+- [01:01:14,960 - 01:01:16,340] We have proved...
+- [01:01:17,040 - 01:01:18,580] that the integral...
+- [01:01:18,580 - 01:01:19,280] well...
+- [01:01:19,280 - 01:01:20,780] d by dx...
+- [01:01:20,780 - 01:01:21,940] d by dx...
+- [01:01:21,940 - 01:01:23,120] of this thing here...
+- [01:01:23,120 - 01:01:24,400] is log X...
+- [01:01:24,400 - 01:01:25,820] or...
+- [01:01:26,400 - 01:01:28,900] the integral of log X...
+- [01:01:28,900 - 01:01:31,460] is X log X minus X.
+- [01:01:32,290 - 01:01:33,240] So there we go.
+- [01:01:35,180 - 01:01:36,900] The integral...
+- [01:01:36,900 - 01:01:38,160] of this...
+- [01:01:39,500 - 01:01:42,220] is X log X...
+- [01:01:43,400 - 01:01:44,920] minus X...
+- [01:01:44,920 - 01:01:46,980] evaluated between...
+- [01:01:46,980 - 01:01:48,380] X equals N...
+- [01:01:48,380 - 01:01:49,540] and X equals 1.
+- [01:01:51,920 - 01:01:53,300] All right.
+- [01:01:53,320 - 01:01:54,700] Now at X equals 1...
+- [01:01:55,240 - 01:01:56,520] this just vanishes.
+- [01:01:57,279 - 01:01:58,280] So we don't have to...
+- [01:01:58,280 - 01:01:59,680] X vanishes...
+- [01:01:59,680 - 01:02:00,780] log X vanishes...
+- [01:02:00,780 - 01:02:01,440] it all vanishes.
+- [01:02:01,660 - 01:02:03,360] So the whole answer...
+- [01:02:03,360 - 01:02:05,940] is N log N...
+- [01:02:06,540 - 01:02:07,780] minus N.
+- [01:02:11,440 - 01:02:13,140] We have now computed...
+- [01:02:13,140 - 01:02:15,800] to a certain approximation...
+- [01:02:15,800 - 01:02:17,560] we've now computed...
+- [01:02:18,200 - 01:02:20,100] logarithm of N factorial...
+- [01:02:21,180 - 01:02:22,580] and it's equal...
+- [01:02:23,480 - 01:02:25,000] to N log N...
+- [01:02:26,960 - 01:02:27,840] minus N.
+- [01:02:28,940 - 01:02:31,220] How do we find N factorial from this?
+- [01:02:33,000 - 01:02:35,060] If we know the logarithm of something...
+- [01:02:35,060 - 01:02:37,080] there's a certain operation we do to it...
+- [01:02:37,080 - 01:02:38,000] to find the thing itself.
+- [01:02:40,660 - 01:02:41,180] Exponentiated.
+- [01:02:42,480 - 01:02:43,000] Exponentiated.
+- [01:02:43,580 - 01:02:44,100] Okay.
+- [01:02:44,220 - 01:02:46,380] So the exponential of both sides...
+- [01:02:46,380 - 01:02:46,700] the exponential...
+- [01:02:46,700 - 01:02:48,360] of the left side...
+- [01:02:48,360 - 01:02:49,400] is of course N factorial.
+- [01:02:51,520 - 01:02:52,940] The exponential...
+- [01:02:53,480 - 01:02:55,200] of the right side...
+- [01:02:57,379 - 01:02:58,140] is...
+- [01:02:58,140 - 01:03:01,240] first of all the exponential of N log N...
+- [01:03:03,379 - 01:03:04,520] and then...
+- [01:03:04,520 - 01:03:06,200] E to the minus N.
+- [01:03:07,400 - 01:03:09,640] The exponential of a sum...
+- [01:03:09,640 - 01:03:11,920] is the product of exponentials.
+- [01:03:11,920 - 01:03:14,580] In this case the exponential of a difference...
+- [01:03:14,580 - 01:03:16,680] is the ratio of exponentials.
+- [01:03:16,700 - 01:03:19,180] E to the N log N...
+- [01:03:19,860 - 01:03:21,880] times E to the minus N.
+- [01:03:23,340 - 01:03:25,360] Did I write down Sterling's formula...
+- [01:03:25,360 - 01:03:25,640] somewhere?
+- [01:03:29,000 - 01:03:29,480] Where?
+- [01:03:29,700 - 01:03:30,140] Oh here,
+- [01:03:30,140 - 01:03:30,380] here,
+- [01:03:30,380 - 01:03:30,600] here.
+- [01:03:30,840 - 01:03:31,320] Alright,
+- [01:03:31,320 - 01:03:33,480] we've located E to the minus N...
+- [01:03:34,900 - 01:03:35,380] but...
+- [01:03:35,380 - 01:03:37,080] if you spend a minute or two...
+- [01:03:37,080 - 01:03:38,580] you'll see that...
+- [01:03:38,580 - 01:03:40,400] E to the N log N...
+- [01:03:40,400 - 01:03:41,820] is the same as N to the N.
+- [01:03:43,300 - 01:03:45,560] I'll leave that to you to prove...
+- [01:03:46,740 - 01:03:48,700] The easiest way to prove it...
+- [01:03:48,700 - 01:03:49,840] is to prove...
+- [01:03:50,440 - 01:03:52,300] that the logarithms are the same.
+- [01:03:53,720 - 01:03:55,350] The logarithm of E to
+- [01:03:55,350 - 01:03:56,980] the N log N is what?
+- [01:03:58,260 - 01:03:59,140] N log N.
+- [01:03:59,820 - 01:04:01,640] What's the logarithm of N to the N?
+- [01:04:02,680 - 01:04:03,520] N log N.
+- [01:04:04,020 - 01:04:04,500] Good.
+- [01:04:04,840 - 01:04:05,980] So here we have it.
+- [01:04:06,060 - 01:04:08,380] Here is our Sterling's formula...
+- [01:04:08,380 - 01:04:09,900] or our Sterling approximation.
+- [01:04:10,900 - 01:04:11,540] Excuse me.
+- [01:04:12,700 - 01:04:13,180] Um...
+- [01:04:13,740 - 01:04:15,200] Not that it matters that much...
+- [01:04:15,200 - 01:04:16,320] it's just a little factor but...
+- [01:04:17,000 - 01:04:19,180] you need a plus one down there.
+- [01:04:19,280 - 01:04:20,870] The X log X minus
+- [01:04:20,870 - 01:04:22,460] X when evaluated at one is...
+- [01:04:22,460 - 01:04:23,100] Yeah.
+- [01:04:23,660 - 01:04:24,100] Yeah,
+- [01:04:24,100 - 01:04:24,280] yeah,
+- [01:04:24,280 - 01:04:24,400] yeah.
+- [01:04:24,480 - 01:04:24,920] There's a...
+- [01:04:24,920 - 01:04:25,260] Right.
+- [01:04:25,360 - 01:04:25,920] There's a...
+- [01:04:26,540 - 01:04:26,980] Yeah.
+- [01:04:27,140 - 01:04:27,580] Yeah.
+- [01:04:27,640 - 01:04:30,000] There is a little discrepancy here...
+- [01:04:30,000 - 01:04:31,500] but it doesn't matter as N gets big.
+- [01:04:31,640 - 01:04:33,040] As N gets big it's negligible.
+- [01:04:33,280 - 01:04:35,720] More important than that is there's a factor...
+- [01:04:36,259 - 01:04:38,040] square root of N that's missing.
+- [01:04:38,640 - 01:04:39,080] Yeah,
+- [01:04:39,080 - 01:04:39,320] yeah,
+- [01:04:39,320 - 01:04:39,480] yeah.
+- [01:04:39,560 - 01:04:41,020] Comes from all these little pieces here.
+- [01:04:42,020 - 01:04:42,460] Yeah.
+- [01:04:42,500 - 01:04:42,600] Yeah.
+- [01:04:42,600 - 01:04:44,160] But square root of...
+- [01:04:44,160 - 01:04:44,440] Yeah.
+- [01:04:45,200 - 01:04:45,580] Right.
+- [01:04:45,660 - 01:04:46,900] There's an infinite number...
+- [01:04:46,900 - 01:04:48,480] there's an infinite number of...
+- [01:04:48,480 - 01:04:50,740] if I remember I think the square root
+- [01:04:50,740 - 01:04:53,000] of N comes from some approximation where you replace
+- [01:04:53,000 - 01:04:54,520] these by straight lines but
+- [01:04:54,520 - 01:04:56,040] you're still missing a little bit.
+- [01:04:56,340 - 01:04:59,200] There's an infinite number of factors but...
+- [01:05:01,300 - 01:05:01,780] Well,
+- [01:05:01,780 - 01:05:03,530] if you include the square root of 2
+- [01:05:03,530 - 01:05:05,280] pi you're going to get close enough to give
+- [01:05:05,280 - 01:05:05,480] it...
+- [01:05:05,480 - 01:05:09,400] I assure you this is close enough here.
+- [01:05:10,280 - 01:05:10,760] Yeah.
+- [01:05:10,840 - 01:05:12,420] This is close enough for our purposes.
+- [01:05:13,200 - 01:05:13,680] And...
+- [01:05:13,680 - 01:05:14,060] You know,
+- [01:05:14,060 - 01:05:14,700] go...
+- [01:05:15,500 - 01:05:16,020] You know,
+- [01:05:16,020 - 01:05:17,960] work out 100 factorial and try it.
+- [01:05:18,120 - 01:05:18,940] It's not too bad.
+- [01:05:23,620 - 01:05:26,300] The convergence is actually slower than I thought.
+- [01:05:26,400 - 01:05:28,540] I once worked it out for a couple of first...
+- [01:05:28,540 - 01:05:28,760] I don't know,
+- [01:05:28,760 - 01:05:29,800] first 20 or so.
+- [01:05:30,040 - 01:05:32,340] It was not as fast as I
+- [01:05:32,340 - 01:05:34,640] thought but it does converge pretty reasonably rapidly.
+- [01:05:35,840 - 01:05:38,600] And for 10 to the 23rd it's an awfully...
+- [01:05:38,600 - 01:05:39,800] it's plenty good.
+- [01:05:40,660 - 01:05:42,580] Which is the number of atoms in a mole.
+- [01:05:42,580 - 01:05:43,660] Okay,
+- [01:05:43,660 - 01:05:45,240] so here's our approximation.
+- [01:05:45,600 - 01:05:46,740] N to the N,
+- [01:05:46,740 - 01:05:48,200] E to the minus N.
+- [01:05:49,460 - 01:05:50,560] And that's...
+- [01:05:54,000 - 01:05:56,960] All the other subleading factors cancel.
+- [01:05:57,060 - 01:05:57,880] They're not important.
+- [01:05:58,060 - 01:06:00,180] And we can do that right here.
+- [01:06:01,040 - 01:06:01,640] Okay,
+- [01:06:01,640 - 01:06:02,760] so now let's...
+- [01:06:04,340 - 01:06:08,020] Let's take this monstrous combinatorial coefficient here.
+- [01:06:08,480 - 01:06:09,940] And that's what it's called.
+- [01:06:09,980 - 01:06:11,360] It's a combinatorial variable.
+- [01:06:11,360 - 01:06:12,760] Remember what it is.
+- [01:06:13,160 - 01:06:13,560] Remember,
+- [01:06:13,560 - 01:06:14,780] keep in mind what it is.
+- [01:06:14,880 - 01:06:18,630] It's the number of ways of rearranging
+- [01:06:18,630 - 01:06:22,380] capital N things into little n states.
+- [01:06:26,660 - 01:06:28,290] What we're going to do with it
+- [01:06:28,290 - 01:06:29,920] incidentally is we're going to maximize it.
+- [01:06:30,120 - 01:06:32,140] We're going to look for the
+- [01:06:32,140 - 01:06:34,160] set of little n's which makes this...
+- [01:06:34,160 - 01:06:37,340] the number of ways of rearranging as big as possible.
+- [01:06:39,040 - 01:06:39,960] That's what we're going to do.
+- [01:06:40,060 - 01:06:41,340] We're going to look for the set of...
+- [01:06:41,340 - 01:06:43,130] the set of little n's which
+- [01:06:43,130 - 01:06:44,920] makes this as big as possible.
+- [01:06:45,840 - 01:06:47,990] The fact is that we
+- [01:06:47,990 - 01:06:50,140] will find a very sharp function,
+- [01:06:50,140 - 01:06:50,960] but not yet.
+- [01:06:51,100 - 01:06:51,860] We're not there yet.
+- [01:06:52,080 - 01:06:54,800] So first we need to deal with this object here.
+- [01:06:58,220 - 01:06:58,700] Okay.
+- [01:07:01,440 - 01:07:04,200] What I'm going to be interested in...
+- [01:07:04,200 - 01:07:05,660] I'll tell you now what we're interested in.
+- [01:07:05,740 - 01:07:08,020] We're going to want to maximize this,
+- [01:07:09,180 - 01:07:11,320] but subject to two conditions.
+- [01:07:11,340 - 01:07:12,020] The two constraints.
+- [01:07:12,440 - 01:07:15,680] The two constraints are the constraints we wrote out before,
+- [01:07:16,880 - 01:07:18,730] namely that the summation of
+- [01:07:18,730 - 01:07:20,580] n sub i is capital N,
+- [01:07:20,800 - 01:07:23,440] and the summation of n sub i
+- [01:07:23,440 - 01:07:26,080] e sub i is a fixed number e.
+- [01:07:27,240 - 01:07:30,790] What we'd like to find out is
+- [01:07:30,790 - 01:07:34,340] what is the set of occupation numbers
+- [01:07:34,340 - 01:07:37,020] which makes this as big as possible,
+- [01:07:37,860 - 01:07:38,460] given...
+- [01:07:40,040 - 01:07:41,320] that the sum of the n's is n sub i,
+- [01:07:41,320 - 01:07:42,620] and the sum of the n's is capital N,
+- [01:07:42,820 - 01:07:44,520] and the sum of the n's is e.
+- [01:07:44,780 - 01:07:47,340] That's the mathematical problem we want to work out.
+- [01:07:49,360 - 01:07:50,740] Once we've found that,
+- [01:07:51,560 - 01:07:54,460] then we effectively know all of the probabilities
+- [01:07:55,800 - 01:07:57,160] through this equation here.
+- [01:07:57,340 - 01:07:58,940] Once we know these little n's,
+- [01:07:59,060 - 01:08:00,160] the occupation numbers,
+- [01:08:00,420 - 01:08:01,960] then we know the probabilities.
+- [01:08:03,740 - 01:08:04,220] Okay.
+- [01:08:04,280 - 01:08:05,980] The first thing to do is to say...
+- [01:08:07,340 - 01:08:08,520] we have a product.
+- [01:08:09,460 - 01:08:10,740] We have a big product.
+- [01:08:13,360 - 01:08:13,920] All right?
+- [01:08:13,920 - 01:08:15,980] How do you maximize a thing,
+- [01:08:15,980 - 01:08:16,680] incidentally?
+- [01:08:17,700 - 01:08:19,120] You differentiate it.
+- [01:08:19,140 - 01:08:20,520] Differentiate it with respect to what?
+- [01:08:22,620 - 01:08:23,519] The little n's.
+- [01:08:24,040 - 01:08:24,300] Now,
+- [01:08:24,300 - 01:08:26,520] the little n's are not continuous variables here,
+- [01:08:26,600 - 01:08:27,340] but in a little while,
+- [01:08:27,340 - 01:08:28,680] they'll become pretty continuous.
+- [01:08:29,300 - 01:08:30,819] But we have a big product,
+- [01:08:30,920 - 01:08:32,779] and to differentiate a big product
+- [01:08:33,380 - 01:08:36,920] is more of a nuisance than differentiating a sum.
+- [01:08:37,920 - 01:08:38,620] All right?
+- [01:08:38,620 - 01:08:39,359] Well,
+- [01:08:39,359 - 01:08:41,080] we want to maximize something,
+- [01:08:41,439 - 01:08:43,140] but maximizing it
+- [01:08:43,140 - 01:08:46,060] is the same as maximizing its logarithm.
+- [01:08:47,319 - 01:08:50,939] You can maximize a function by maximizing its logarithm.
+- [01:08:51,460 - 01:08:54,180] If you found the place where the function is biggest,
+- [01:08:54,420 - 01:08:56,720] that's also where its logarithm is biggest.
+- [01:08:57,060 - 01:08:59,040] Logarithm is a monotonic function,
+- [01:08:59,279 - 01:09:01,920] and so wherever the function is biggest,
+- [01:09:02,120 - 01:09:03,580] its logarithm is also biggest.
+- [01:09:04,120 - 01:09:04,680] So,
+- [01:09:04,680 - 01:09:07,819] let's take the logarithm of this,
+- [01:09:09,839 - 01:09:11,300] log of n factorial,
+- [01:09:11,620 - 01:09:13,700] or log of the target function here,
+- [01:09:18,580 - 01:09:19,100] product,
+- [01:09:19,100 - 01:09:19,540] product,
+- [01:09:19,540 - 01:09:19,880] product,
+- [01:09:24,319 - 01:09:25,640] product of n sub i,
+- [01:09:26,639 - 01:09:29,720] that's equal to the log of n factorial,
+- [01:09:30,160 - 01:09:30,880] I'm sort of,
+- [01:09:30,880 - 01:09:33,240] what I'm doing a bit is going backward,
+- [01:09:33,359 - 01:09:34,399] but I've,
+- [01:09:34,399 - 01:09:35,520] yeah.
+- [01:09:38,660 - 01:09:39,140] Ooh.
+- [01:09:41,279 - 01:09:41,760] No,
+- [01:09:41,760 - 01:09:42,000] no,
+- [01:09:42,000 - 01:09:42,200] no,
+- [01:09:42,200 - 01:09:42,399] no,
+- [01:09:42,399 - 01:09:42,600] no,
+- [01:09:42,600 - 01:09:42,880] no,
+- [01:09:42,880 - 01:09:43,160] no,
+- [01:09:43,160 - 01:09:43,380] no,
+- [01:09:43,380 - 01:09:43,560] no,
+- [01:09:43,560 - 01:09:43,660] no,
+- [01:09:43,660 - 01:09:43,779] no,
+- [01:09:43,779 - 01:09:43,840] no,
+- [01:09:43,840 - 01:09:43,920] no.
+- [01:09:43,979 - 01:09:44,300] I,
+- [01:09:44,300 - 01:09:44,560] I've,
+- [01:09:44,560 - 01:09:46,100] I've,
+- [01:09:46,180 - 01:09:48,359] I forgot.
+- [01:09:48,660 - 01:09:50,500] I wanted to use Sterling's approximation.
+- [01:09:51,359 - 01:09:52,800] Before we do this,
+- [01:09:52,800 - 01:09:54,100] let's use Sterling's approximation.
+- [01:09:55,040 - 01:09:55,520] Okay.
+- [01:09:55,820 - 01:09:58,460] Let's use Sterling's approximation before we go ahead.
+- [01:09:59,300 - 01:09:59,780] Okay.
+- [01:10:00,760 - 01:10:01,600] What is this?
+- [01:10:01,660 - 01:10:03,560] This is equal to capital N factorial,
+- [01:10:04,260 - 01:10:06,420] e to the minus capital N,
+- [01:10:07,460 - 01:10:07,940] hm?
+- [01:10:08,620 - 01:10:09,800] N times the power of N.
+- [01:10:11,800 - 01:10:12,820] Not N factorial,
+- [01:10:12,820 - 01:10:13,920] N to the N.
+- [01:10:14,140 - 01:10:15,000] That's what I wanted.
+- [01:10:15,140 - 01:10:15,880] N to the N,
+- [01:10:15,880 - 01:10:16,880] e to the minus N.
+- [01:10:17,320 - 01:10:18,400] And then downstairs,
+- [01:10:20,020 - 01:10:21,880] N1 to the N1,
+- [01:10:22,400 - 01:10:24,580] now there's e to the minus the N1,
+- [01:10:24,620 - 01:10:25,560] let's put that over here,
+- [01:10:25,700 - 01:10:27,800] e to the minus N1,
+- [01:10:28,420 - 01:10:32,160] then there's N2 to the N2,
+- [01:10:33,280 - 01:10:35,420] e to the minus N2,
+- [01:10:36,760 - 01:10:37,760] there's N3,
+- [01:10:39,100 - 01:10:40,300] e to the N3,
+- [01:10:41,380 - 01:10:43,940] e to the minus N3,
+- [01:10:43,960 - 01:10:44,960] minus N3,
+- [01:10:44,960 - 01:10:45,680] and so forth.
+- [01:10:49,280 - 01:10:49,960] All right.
+- [01:10:49,960 - 01:10:52,860] Now let's use the fact that we know
+- [01:10:53,440 - 01:10:55,320] that the sums of the N's
+- [01:10:55,320 - 01:10:57,560] have to add up to capital N.
+- [01:11:00,460 - 01:11:00,960] Then,
+- [01:11:00,960 - 01:11:02,740] e to the minus N1,
+- [01:11:02,920 - 01:11:04,040] plus N2,
+- [01:11:04,040 - 01:11:04,960] plus N3,
+- [01:11:04,960 - 01:11:05,540] and so forth,
+- [01:11:05,540 - 01:11:06,840] is just e to the capital N.
+- [01:11:06,840 - 01:11:09,160] So those factors cancel.
+- [01:11:10,720 - 01:11:12,480] This and this cancel.
+- [01:11:12,920 - 01:11:14,020] And in fact,
+- [01:11:14,020 - 01:11:16,020] all the other sub-leading things
+- [01:11:16,020 - 01:11:18,980] that have been not quite calculated carefully enough,
+- [01:11:19,020 - 01:11:19,980] they also cancel.
+- [01:11:21,200 - 01:11:23,200] And we now have a nice expression
+- [01:11:23,840 - 01:11:25,560] that the number of arrangements
+- [01:11:25,560 - 01:11:27,000] to a high approximation
+- [01:11:27,700 - 01:11:29,220] is N to the N,
+- [01:11:29,220 - 01:11:30,280] capital N to the N,
+- [01:11:30,320 - 01:11:31,580] divided by the product
+- [01:11:31,580 - 01:11:33,580] of N sub i
+- [01:11:35,000 - 01:11:36,220] to the N sub i.
+- [01:11:37,860 - 01:11:39,560] Now let's take its logarithm.
+- [01:11:39,700 - 01:11:41,540] These steps are not very hard.
+- [01:11:41,800 - 01:11:44,560] The story is longer than it really needs to be,
+- [01:11:44,660 - 01:11:47,720] but let's take its logarithm.
+- [01:11:48,860 - 01:11:49,340] Okay,
+- [01:11:49,340 - 01:11:50,980] so let's call it C.
+- [01:11:51,160 - 01:11:53,760] C for combinatoric.
+- [01:11:54,740 - 01:11:56,120] What is the log of C?
+- [01:11:58,860 - 01:12:01,520] That's equal to N log N,
+- [01:12:03,560 - 01:12:04,320] this one,
+- [01:12:05,140 - 01:12:06,820] minus the summation of N,
+- [01:12:06,840 - 01:12:07,420] over i,
+- [01:12:08,120 - 01:12:11,400] of N sub i log N sub i.
+- [01:12:15,160 - 01:12:18,700] Now you might start to smell something interesting here.
+- [01:12:19,820 - 01:12:20,780] Maybe not,
+- [01:12:20,780 - 01:12:21,720] but I do.
+- [01:12:23,900 - 01:12:25,820] Let's go back and remember
+- [01:12:26,740 - 01:12:27,680] that there's a,
+- [01:12:27,680 - 01:12:28,140] that
+- [01:12:29,480 - 01:12:33,380] the little N's can be interpreted as probabilities.
+- [01:12:35,480 - 01:12:37,840] This is looking awfully interesting here.
+- [01:12:38,020 - 01:12:39,510] It doesn't quite look like P
+- [01:12:39,510 - 01:12:41,000] sub i log P sub i,
+- [01:12:42,120 - 01:12:43,940] but it's somehow related to it,
+- [01:12:44,040 - 01:12:47,020] because the N's are related to the P's.
+- [01:12:47,280 - 01:12:48,890] And what is the sum over i
+- [01:12:48,890 - 01:12:50,500] of P sub i log P sub i?
+- [01:12:53,320 - 01:12:54,120] The entropy.
+- [01:12:55,760 - 01:12:56,700] The entropy,
+- [01:12:56,700 - 01:12:58,820] if the probability distribution
+- [01:12:59,170 - 01:13:00,400] really is given by this.
+- [01:13:00,400 - 01:13:03,220] So let's carry this out.
+- [01:13:03,280 - 01:13:04,220] Let's carry this out,
+- [01:13:04,220 - 01:13:05,280] the steps out,
+- [01:13:05,420 - 01:13:07,600] and see that in fact that what we're doing
+- [01:13:07,600 - 01:13:10,400] is actually maximizing,
+- [01:13:10,940 - 01:13:12,260] and trying to maximize
+- [01:13:12,260 - 01:13:15,120] the number of ways of rearranging
+- [01:13:16,019 - 01:13:17,700] the coffee packets here,
+- [01:13:19,059 - 01:13:22,460] what we're doing is maximizing some entropy.
+- [01:13:23,080 - 01:13:25,160] We're finding the probabilities
+- [01:13:25,160 - 01:13:27,180] which maximize the entropy
+- [01:13:27,839 - 01:13:29,800] under certain constrained,
+- [01:13:29,800 - 01:13:30,940] constrained circumstances.
+- [01:13:31,620 - 01:13:32,140] Okay,
+- [01:13:32,140 - 01:13:33,620] so let's just take this,
+- [01:13:33,640 - 01:13:36,120] and let's take this over here.
+- [01:13:36,220 - 01:13:37,240] I'm going to pull it over to here.
+- [01:13:37,360 - 01:13:37,900] Log C
+- [01:13:41,599 - 01:13:43,980] is equal to N log N
+- [01:13:45,659 - 01:13:48,149] minus summation over i of N
+- [01:13:48,149 - 01:13:50,640] sub i log N sub i.
+- [01:13:50,740 - 01:13:52,340] And now plug in
+- [01:13:54,200 - 01:13:56,720] that little N sub i can be identified
+- [01:13:56,720 - 01:13:59,780] in terms of the probability P sub i
+- [01:13:59,800 - 01:14:02,520] times the total number of things.
+- [01:14:02,820 - 01:14:03,060] Alright,
+- [01:14:03,060 - 01:14:03,920] so let's do that here.
+- [01:14:03,980 - 01:14:05,080] This is N log N
+- [01:14:08,759 - 01:14:10,660] minus summation over i
+- [01:14:11,839 - 01:14:15,300] N sub i is P sub i times capital N,
+- [01:14:15,300 - 01:14:15,900] right?
+- [01:14:16,860 - 01:14:18,840] But what about log N sub i?
+- [01:14:19,060 - 01:14:24,280] That's log of P sub i times N,
+- [01:14:24,280 - 01:14:24,800] right?
+- [01:14:27,620 - 01:14:29,720] But log P sub i times N
+- [01:14:29,800 - 01:14:32,880] is log P sub i
+- [01:14:35,580 - 01:14:37,020] plus log N.
+- [01:14:44,340 - 01:14:45,020] Okay,
+- [01:14:45,020 - 01:14:47,180] let's take the second term first.
+- [01:14:47,700 - 01:14:49,940] P sub i N log N.
+- [01:14:51,820 - 01:14:54,220] Notice that the N's that appear here,
+- [01:14:54,500 - 01:14:55,740] the big N's,
+- [01:14:55,780 - 01:14:58,200] those aren't functions of i.
+- [01:14:58,540 - 01:14:59,780] They're just N's.
+- [01:14:59,780 - 01:15:00,520] They're just N's.
+- [01:15:01,080 - 01:15:01,520] So,
+- [01:15:01,520 - 01:15:03,000] what is the sum over P sub i?
+- [01:15:05,360 - 01:15:05,800] One,
+- [01:15:05,800 - 01:15:06,200] right?
+- [01:15:07,260 - 01:15:07,700] So,
+- [01:15:07,700 - 01:15:08,740] if you look carefully at this,
+- [01:15:08,940 - 01:15:11,180] you'll see that the second term here,
+- [01:15:12,000 - 01:15:15,580] the second term here is N log N
+- [01:15:16,500 - 01:15:19,020] times the summation over i of P sub i.
+- [01:15:23,620 - 01:15:27,120] Summation over i P sub i times N log N.
+- [01:15:27,620 - 01:15:29,260] But what is the sum of P sub i?
+- [01:15:29,380 - 01:15:29,760] It's just a sum of N log N.
+- [01:15:29,760 - 01:15:30,120] It's just one.
+- [01:15:33,840 - 01:15:34,280] So,
+- [01:15:34,280 - 01:15:35,400] the first thing we find
+- [01:15:35,400 - 01:15:37,400] is that this N log N
+- [01:15:38,580 - 01:15:41,980] cancels this N log N here.
+- [01:15:44,440 - 01:15:44,880] Why?
+- [01:15:45,100 - 01:15:46,160] Because the sum of the P
+- [01:15:46,160 - 01:15:47,220] sub i's add up to one.
+- [01:15:47,520 - 01:15:47,960] So,
+- [01:15:47,960 - 01:15:48,760] we can forget this.
+- [01:15:50,180 - 01:15:51,420] We can forget this.
+- [01:16:01,839 - 01:16:03,580] Take the N on the outside.
+- [01:16:05,960 - 01:16:07,120] And what do we have?
+- [01:16:08,180 - 01:16:10,280] We have capital N
+- [01:16:10,280 - 01:16:12,180] in total number of systems
+- [01:16:12,759 - 01:16:16,220] times the entropy of any one of the systems.
+- [01:16:17,080 - 01:16:17,640] Remember,
+- [01:16:17,640 - 01:16:18,660] the P sub i's now
+- [01:16:18,660 - 01:16:21,380] are the probabilities for a given system
+- [01:16:22,040 - 01:16:23,540] to be in the state i.
+- [01:16:27,640 - 01:16:28,200] So,
+- [01:16:28,200 - 01:16:29,740] apart from this factor of N,
+- [01:16:29,760 - 01:16:31,370] which is just there because
+- [01:16:31,370 - 01:16:32,980] there are N subsystems altogether,
+- [01:16:33,460 - 01:16:35,420] what we're going to be asking about
+- [01:16:35,420 - 01:16:38,440] is maximizing the entropy.
+- [01:16:38,620 - 01:16:39,920] If we want to find out
+- [01:16:40,680 - 01:16:43,320] the occupation numbers
+- [01:16:44,120 - 01:16:46,500] which maximize the number of ways
+- [01:16:46,500 - 01:16:49,440] that you can rearrange the system,
+- [01:16:49,600 - 01:16:51,800] keeping the occupation numbers fixed,
+- [01:16:52,480 - 01:16:55,680] it simply corresponds to maximizing the entropy.
+- [01:16:57,100 - 01:16:59,580] That may or may not be surprising to you
+- [01:16:59,760 - 01:17:00,660] but if it's surprising to you,
+- [01:17:00,660 - 01:17:00,860] good.
+- [01:17:00,940 - 01:17:01,860] It's a pleasant surprise.
+- [01:17:02,880 - 01:17:03,720] If you know it,
+- [01:17:03,720 - 01:17:04,200] you know it.
+- [01:17:05,220 - 01:17:05,640] Okay.
+- [01:17:05,740 - 01:17:06,120] Yeah.
+- [01:17:07,860 - 01:17:09,860] If you look at the formula itself,
+- [01:17:11,300 - 01:17:13,460] just from pure arithmetic,
+- [01:17:13,840 - 01:17:16,840] N factorial over the little factorials.
+- [01:17:19,020 - 01:17:19,440] That...
+- [01:17:20,300 - 01:17:21,120] Say it again.
+- [01:17:22,220 - 01:17:22,960] That one.
+- [01:17:23,000 - 01:17:24,820] N factorial over the product of N.
+- [01:17:25,160 - 01:17:26,940] That would be maximized
+- [01:17:26,940 - 01:17:27,920] if all the N's are equal,
+- [01:17:27,920 - 01:17:28,520] the little ones.
+- [01:17:28,520 - 01:17:28,740] Yeah.
+- [01:17:29,260 - 01:17:30,320] What's the meaning of it?
+- [01:17:31,879 - 01:17:35,420] It means that the most probable situation
+- [01:17:35,420 - 01:17:37,880] is just to all...
+- [01:17:38,520 - 01:17:42,240] What it means is that all occupation number distributions
+- [01:17:42,240 - 01:17:43,980] are equally probable.
+- [01:17:44,200 - 01:17:46,920] But we have to add something important.
+- [01:17:47,240 - 01:17:49,360] We have to add the constraints.
+- [01:17:50,260 - 01:17:53,040] What we're trying to do is maximize this
+- [01:17:53,040 - 01:17:55,580] but subject to two constraints.
+- [01:17:56,440 - 01:17:57,520] The first
+- [01:17:57,520 - 01:17:59,200] is that the total number,
+- [01:17:59,200 - 01:18:00,360] the sum of the N's
+- [01:18:00,360 - 01:18:02,040] is all equal to capital N.
+- [01:18:02,380 - 01:18:04,920] And the second is that the total energy is fixed.
+- [01:18:06,920 - 01:18:08,780] Then it's no longer true
+- [01:18:09,520 - 01:18:12,540] that the thing which maximizes it is uniform.
+- [01:18:15,740 - 01:18:17,320] Mostly because of the energy.
+- [01:18:18,320 - 01:18:19,340] Both are important.
+- [01:18:19,580 - 01:18:20,300] Both are important.
+- [01:18:20,620 - 01:18:21,540] Both are important.
+- [01:18:22,300 - 01:18:22,840] Yeah.
+- [01:18:23,380 - 01:18:25,660] When you use Sterling's approximation,
+- [01:18:25,960 - 01:18:27,160] it makes sense for the numerator,
+- [01:18:27,520 - 01:18:29,240] because capital N is large.
+- [01:18:29,360 - 01:18:30,590] But do we need to
+- [01:18:30,590 - 01:18:31,820] justify using it in the denominator?
+- [01:18:35,180 - 01:18:35,820] Mm-hmm.
+- [01:18:41,500 - 01:18:43,240] As capital N gets large,
+- [01:18:43,959 - 01:18:46,520] the little N's will get large in the same proportion.
+- [01:18:49,840 - 01:18:51,980] If you double the total number of systems,
+- [01:18:52,599 - 01:18:55,300] every average occupation number will also double.
+- [01:18:57,179 - 01:19:00,820] So I suppose what you have to do
+- [01:19:00,820 - 01:19:02,200] to really do this honestly
+- [01:19:03,559 - 01:19:06,260] is to chop this off somewhere and say,
+- [01:19:06,400 - 01:19:06,540] look,
+- [01:19:06,540 - 01:19:08,580] I know that I don't have more energy
+- [01:19:08,580 - 01:19:09,460] than a certain amount
+- [01:19:10,559 - 01:19:12,960] and ignore everything above some point
+- [01:19:13,540 - 01:19:16,440] and then start making capital N
+- [01:19:16,440 - 01:19:17,500] bigger and bigger and bigger.
+- [01:19:18,520 - 01:19:21,660] And all of the important contributions
+- [01:19:22,240 - 01:19:23,940] will come from little N's,
+- [01:19:23,940 - 01:19:26,660] which also get bigger and bigger in fixed proportion.
+- [01:19:28,460 - 01:19:29,020] Okay.
+- [01:19:29,120 - 01:19:30,260] So was that what you meant
+- [01:19:30,260 - 01:19:31,420] when you mentioned coarse graining?
+- [01:19:31,680 - 01:19:32,060] No.
+- [01:19:32,060 - 01:19:32,920] No.
+- [01:19:32,920 - 01:19:33,360] No.
+- [01:19:34,000 - 01:19:34,560] No,
+- [01:19:34,560 - 01:19:36,180] coarse graining is an entirely different thing.
+- [01:19:36,760 - 01:19:37,320] Question.
+- [01:19:37,540 - 01:19:39,020] Coarse graining is what happens
+- [01:19:39,020 - 01:19:42,180] when you look at the world
+- [01:19:42,180 - 01:19:46,420] through somebody else's glasses.
+- [01:19:47,360 - 01:19:47,920] Question.
+- [01:19:48,160 - 01:19:48,640] Yeah.
+- [01:19:48,700 - 01:19:50,800] If you're trying to maximize C,
+- [01:19:50,800 - 01:19:54,420] then there's N log N minus,
+- [01:19:54,420 - 01:19:55,220] you know,
+- [01:19:55,240 - 01:19:56,780] the signal of the denominator.
+- [01:19:58,000 - 01:19:58,540] Now,
+- [01:19:58,540 - 01:20:02,180] shouldn't we be minimizing the second,
+- [01:20:02,340 - 01:20:04,780] the negative side of the equation?
+- [01:20:05,100 - 01:20:05,180] Mm-hmm.
+- [01:20:07,260 - 01:20:08,760] Remember that this is positive.
+- [01:20:10,000 - 01:20:10,540] Yeah.
+- [01:20:10,860 - 01:20:14,220] You do want to minimize this thing.
+- [01:20:15,140 - 01:20:15,680] Right.
+- [01:20:15,740 - 01:20:17,180] That's what's kind of...
+- [01:20:17,180 - 01:20:17,440] No.
+- [01:20:17,440 - 01:20:17,600] Well,
+- [01:20:17,600 - 01:20:17,800] yeah.
+- [01:20:17,880 - 01:20:19,220] You want to minimize this thing,
+- [01:20:20,680 - 01:20:23,220] but bring it back to this formula over here.
+- [01:20:23,800 - 01:20:25,480] In this formula over here,
+- [01:20:28,200 - 01:20:30,440] log P is always negative.
+- [01:20:30,840 - 01:20:32,620] So this is a positive quantity.
+- [01:20:33,840 - 01:20:34,560] Mm-hmm.
+- [01:20:34,600 - 01:20:35,260] You say,
+- [01:20:35,260 - 01:20:37,080] how did this go from being negative to positive?
+- [01:20:37,420 - 01:20:38,000] Well,
+- [01:20:38,000 - 01:20:41,460] when we subtract it off capital N log N,
+- [01:20:42,280 - 01:20:43,340] it works out.
+- [01:20:46,480 - 01:20:47,060] Yeah.
+- [01:20:48,620 - 01:20:49,200] Question.
+- [01:20:49,200 - 01:20:50,440] So this is the entropy.
+- [01:20:50,600 - 01:20:51,460] This is the entropy.
+- [01:20:52,520 - 01:20:55,240] And what we have to do is maximize the entropy,
+- [01:20:57,799 - 01:20:59,560] but subject to constraints.
+- [01:21:02,000 - 01:21:02,460] All right.
+- [01:21:02,500 - 01:21:03,540] So this is getting a little complicated,
+- [01:21:03,920 - 01:21:05,020] but if you want to do it,
+- [01:21:05,020 - 01:21:05,620] we got to do it.
+- [01:21:08,060 - 01:21:08,560] Excuse me.
+- [01:21:08,820 - 01:21:10,070] You don't want to see
+- [01:21:10,070 - 01:21:11,320] the scientific American version of it,
+- [01:21:11,360 - 01:21:12,320] but you want to see how it works,
+- [01:21:12,320 - 01:21:12,860] we have to do it.
+- [01:21:12,920 - 01:21:13,040] Yeah.
+- [01:21:15,219 - 01:21:17,880] What's wrong with a simplified way of thinking about it?
+- [01:21:17,880 - 01:21:17,900] Okay.
+- [01:21:19,200 - 01:21:20,340] Just by symmetry,
+- [01:21:20,340 - 01:21:23,280] don't all the little n's have to equal each other?
+- [01:21:23,340 - 01:21:23,840] End of story?
+- [01:21:26,000 - 01:21:27,800] If you don't constrain it by energy.
+- [01:21:32,680 - 01:21:34,480] Where's the asymmetry coming from there?
+- [01:21:34,540 - 01:21:35,340] I don't understand it.
+- [01:21:35,500 - 01:21:37,240] Because the energy of the different states of the...
+- [01:21:38,400 - 01:21:38,840] Oh,
+- [01:21:38,840 - 01:21:39,260] yeah,
+- [01:21:39,260 - 01:21:39,660] okay.
+- [01:21:39,900 - 01:21:40,340] Yeah.
+- [01:21:40,580 - 01:21:41,020] Yeah,
+- [01:21:41,020 - 01:21:41,460] I'm sorry.
+- [01:21:41,500 - 01:21:41,860] Yeah,
+- [01:21:41,860 - 01:21:41,960] yeah.
+- [01:21:42,660 - 01:21:43,280] All right.
+- [01:21:43,320 - 01:21:46,920] So our job then is to maximize this,
+- [01:21:48,360 - 01:21:54,600] subject and to constraints,
+- [01:21:54,900 - 01:21:56,720] maximize it with respect to what?
+- [01:21:58,380 - 01:22:01,700] Maximize it with respect to the choice of the probabilities.
+- [01:22:05,080 - 01:22:06,540] If we go back,
+- [01:22:06,540 - 01:22:08,400] we're maximizing it with respect
+- [01:22:09,460 - 01:22:11,780] to the possible occupation numbers,
+- [01:22:11,920 - 01:22:14,940] but that translates into maximizing
+- [01:22:15,780 - 01:22:16,680] the entropy,
+- [01:22:16,920 - 01:22:17,720] remember,
+- [01:22:17,900 - 01:22:20,670] entropy has a value that
+- [01:22:20,670 - 01:22:23,440] depends on the probability distribution.
+- [01:22:24,000 - 01:22:30,100] And now we come to the conclusion
+- [01:22:30,100 - 01:22:36,200] that the most probable distribution of occupation numbers
+- [01:22:36,820 - 01:22:40,880] corresponds to probabilities which maximize the entropy.
+- [01:22:41,560 - 01:22:44,620] But maximize the entropy subject to constraints,
+- [01:22:44,940 - 01:22:46,240] and the two constraints are,
+- [01:22:47,559 - 01:22:50,120] summation P sub i equals one,
+- [01:22:51,919 - 01:22:55,319] and summation P sub i E
+- [01:22:55,319 - 01:22:58,720] sub i is equal to E.
+- [01:22:59,740 - 01:23:00,780] You fix,
+- [01:23:00,780 - 01:23:02,740] you imagine fixing the energy,
+- [01:23:04,839 - 01:23:06,420] fixing the average energy,
+- [01:23:07,299 - 01:23:08,280] and of course,
+- [01:23:08,280 - 01:23:11,900] fixing the total probability set equal to one,
+- [01:23:12,040 - 01:23:13,800] and look for the P
+- [01:23:13,800 - 01:23:15,560] sub i's which maximize the entropy.
+- [01:23:16,759 - 01:23:17,700] That's the rule.
+- [01:23:18,660 - 01:23:19,260] Okay.
+- [01:23:21,500 - 01:23:22,880] Does that make everybody happy?
+- [01:23:23,420 - 01:23:24,420] That you maximize,
+- [01:23:24,620 - 01:23:27,840] you find the probability for the i state
+- [01:23:28,560 - 01:23:31,680] by maximizing the entropy given a certain
+- [01:23:31,680 - 01:23:34,800] total average amount of energy for the subsystem,
+- [01:23:34,960 - 01:23:37,620] and given that the probabilities add up to one.
+- [01:23:39,920 - 01:23:40,520] Okay.
+- [01:23:41,180 - 01:23:42,540] It's this one here,
+- [01:23:43,420 - 01:23:45,540] which breaks the symmetry between the two.
+- [01:23:45,540 - 01:23:50,570] So we can just computate the
+- [01:23:50,570 - 01:23:55,600] determinism that the boys and girls,
+- [01:23:55,600 - 01:24:01,180] who praticamente will have �c ending atúp grains.
+- [01:24:01,180 - 01:24:03,400] First take the soda saying that,
+- [01:24:03,400 - 01:24:03,440] and give the other one,
+- [01:24:04,340 - 01:24:04,780] and then we greater,
+- [01:24:08,020 - 01:24:09,420] three.
+- [01:24:20,639 - 01:24:24,609] Find the probability distribution that gives
+- [01:24:24,609 - 01:24:28,580] you the maximum value for minus
+- [01:24:28,580 - 01:24:31,780] some p sub i log p sub i,
+- [01:24:31,780 - 01:24:37,240] given that summation p sub i is 1 and summation
+- [01:24:37,240 - 01:24:42,700] p sub i e sub i is some given energy e.
+- [01:24:45,460 - 01:24:46,780] To do this,
+- [01:24:46,780 - 01:24:48,520] we need a little more mathematics.
+- [01:24:49,560 - 01:24:53,140] We need one more mathematical concept to do it.
+- [01:24:53,900 - 01:24:57,380] The mathematical concept is called Lagrange multipliers.
+- [01:24:57,380 - 01:25:01,980] Lagrange multipliers come up over and over and over,
+- [01:25:01,980 - 01:25:03,520] both in probability,
+- [01:25:03,520 - 01:25:07,400] they come up in any problem where
+- [01:25:07,400 - 01:25:11,280] you're asked to maximize something subject to constraints.
+- [01:25:13,260 - 01:25:15,700] So I think we'll finish up
+- [01:25:15,700 - 01:25:18,140] the evening by talking about Lagrange multipliers,
+- [01:25:18,140 - 01:25:21,580] and the next time we will apply the
+- [01:25:21,580 - 01:25:25,020] method of Lagrange multipliers to exactly this problem.
+- [01:25:26,580 - 01:25:29,180] Many of the thermodynamic quantities,
+- [01:25:29,180 - 01:25:30,380] such as temperature,
+- [01:25:30,380 - 01:25:32,380] we will find that temperature
+- [01:25:32,380 - 01:25:34,380] is nothing but a Lagrange multiplier.
+- [01:25:34,920 - 01:25:37,780] So let's talk about Lagrange multipliers.
+- [01:25:38,820 - 01:25:40,860] I think this is a lot for one evening,
+- [01:25:40,860 - 01:25:43,990] but if we ever want
+- [01:25:43,990 - 01:25:47,120] to get to real statistical mechanics,
+- [01:25:47,120 - 01:25:48,560] we have to get through this,
+- [01:25:48,560 - 01:25:49,680] so let's do it.
+- [01:25:51,419 - 01:25:51,980] Okay,
+- [01:25:51,980 - 01:25:53,660] let's set this aside now.
+- [01:25:54,440 - 01:25:55,000] Maximum is 1.
+- [01:25:55,000 - 01:25:56,440] This is our mathematics problem.
+- [01:25:56,640 - 01:25:57,620] Write it down in your notebook.
+- [01:25:57,840 - 01:25:59,080] This is what we have to figure out.
+- [01:26:02,100 - 01:26:04,200] Maximize something with constraints.
+- [01:26:12,660 - 01:26:13,100] Sorry,
+- [01:26:13,100 - 01:26:13,740] I have a question.
+- [01:26:14,280 - 01:26:15,640] Just to make sure I've got this.
+- [01:26:16,000 - 01:26:17,680] So we've got these states i,
+- [01:26:17,680 - 01:26:22,020] and then any given state has an energy e i.
+- [01:26:22,440 - 01:26:24,140] These are all givens.
+- [01:26:25,000 - 01:26:28,220] And then we want to maximize this based on that we
+- [01:26:28,220 - 01:26:31,440] want the probabilities times the energies to equal a given energy.
+- [01:26:31,620 - 01:26:32,220] That is...
+- [01:26:32,980 - 01:26:35,240] You should really think of it as an average energy.
+- [01:26:36,640 - 01:26:39,180] We have capital N replicas,
+- [01:26:39,180 - 01:26:43,760] and presumably the whole thing has a given energy.
+- [01:26:44,300 - 01:26:49,070] But the energy is constantly fluctuating back and forth in such a way that
+- [01:26:49,070 - 01:26:53,840] the average energy in each one of these is the total energy divided by n.
+- [01:27:01,860 - 01:27:02,440] Well,
+- [01:27:02,440 - 01:27:04,050] like almost every last Pershing problem when you have a
+- [01:27:04,050 - 01:27:05,660] given anything is a random kind of total Hybrid happy.
+- [01:27:05,660 - 01:27:05,880] d y now i've got that.
+- [01:27:05,880 - 01:27:05,900] you'd use the theorem to figure out
+- [01:27:05,900 - 01:27:06,120] which Nuclear field does what,
+- [01:27:06,480 - 01:27:07,100] okay.
+- [01:27:09,580 - 01:27:11,380] and let's detail something here in this littleラ
+- [01:27:13,760 - 01:27:14,860] you can say,
+- [01:27:17,160 - 01:27:17,740] right now
+- [01:27:17,740 - 01:27:19,400] and if I did 0
+- [01:27:19,400 - 01:27:21,640] i need x ext блine
+- [01:27:21,640 - 01:27:24,440] i need the power ofığı
+- [01:27:24,440 - 01:27:26,600] These coordinates are really going to be the probabilities,
+- [01:27:26,600 - 01:27:28,620] but for the moment let's just
+- [01:27:28,620 - 01:27:30,640] think of it as an abstract function,
+- [01:27:30,640 - 01:27:34,260] which is a function of some set of x's.
+- [01:27:35,500 - 01:27:37,650] We'll work out one or two
+- [01:27:37,650 - 01:27:39,800] cases with two x's and three x's,
+- [01:27:39,800 - 01:27:40,320] but...
+- [01:27:40,980 - 01:27:41,500] Problem.
+- [01:27:41,500 - 01:27:44,220] Maximize f.
+- [01:27:44,220 - 01:27:46,200] Find the stationary point of...
+- [01:27:46,200 - 01:27:50,120] find the x's which make this function maximum.
+- [01:27:50,860 - 01:27:51,360] Alright,
+- [01:27:51,360 - 01:27:52,100] now that's easy.
+- [01:27:52,100 - 01:27:52,940] We know how to do that.
+- [01:27:52,940 - 01:27:54,760] We solve the equations.
+- [01:27:54,760 - 01:27:59,570] Partial of f with respect to x1 equals 0
+- [01:27:59,570 - 01:28:04,380] with respect to x2 equals 0 dot dot dot.
+- [01:28:05,220 - 01:28:07,500] This gives us an equation for each x,
+- [01:28:07,500 - 01:28:09,380] and we solve them simultaneously,
+- [01:28:09,380 - 01:28:10,980] and that tells us the solution.
+- [01:28:11,180 - 01:28:11,540] But,
+- [01:28:11,540 - 01:28:13,820] we want to add something now.
+- [01:28:13,820 - 01:28:15,760] We want to maximize it.
+- [01:28:15,760 - 01:28:18,860] Let's draw a picture first.
+- [01:28:22,760 - 01:28:25,400] This is the set of x's.
+- [01:28:25,400 - 01:28:27,360] This is the case where there are only two x's.
+- [01:28:27,360 - 01:28:28,140] Let's say x and y.
+- [01:28:29,340 - 01:28:32,120] And I can draw the contours of f.
+- [01:28:32,120 - 01:28:34,500] Let's draw the contours of f.
+- [01:28:39,060 - 01:28:40,860] Everybody know what I mean by the contours?
+- [01:28:42,360 - 01:28:43,400] The contour map.
+- [01:28:43,400 - 01:28:47,180] The level surfaces of the function.
+- [01:28:49,200 - 01:28:49,650] And typically this function is going
+- [01:28:49,650 - 01:28:50,100] to be in the x axis.
+- [01:28:50,100 - 01:28:54,870] a stationary point is usually a point
+- [01:28:54,870 - 01:28:59,640] well if it's a minimum or maximum
+- [01:28:59,640 - 01:29:03,380] minimum or maximum it always appears as
+- [01:29:03,380 - 01:29:07,120] a point which is surrounded by circles
+- [01:29:07,120 - 01:29:10,070] so to speak not circles but the
+- [01:29:10,070 - 01:29:13,020] closed contours so if somebody shows you the
+- [01:29:13,020 - 01:29:14,920] contour map and you want to
+- [01:29:14,920 - 01:29:16,820] find the extremal points positive and negative
+- [01:29:16,820 - 01:29:19,190] just look for the places that are
+- [01:29:19,190 - 01:29:21,560] surrounded by well you know what this
+- [01:29:21,560 - 01:29:24,540] says if I have a mountain and I
+- [01:29:24,540 - 01:29:27,520] slice it by level surfaces the peaks of the
+- [01:29:27,520 - 01:29:30,080] mountain look like little circles and
+- [01:29:30,080 - 01:29:32,640] also the valleys also look like little
+- [01:29:32,640 - 01:29:35,050] circles okay so that's that's where the
+- [01:29:35,050 - 01:29:37,460] maximum of the function is where the
+- [01:29:37,460 - 01:29:40,340] circle occurs here but now these are the
+- [01:29:40,340 - 01:29:43,220] level these are the level surfaces of F
+- [01:29:44,299 - 01:29:46,480] but now let's add some constraints
+- [01:29:46,820 - 01:29:48,860] let's add one constraint what is one
+- [01:29:48,860 - 01:29:50,900] we have two constraints in the problem
+- [01:29:50,900 - 01:29:53,010] we're interested in but let's add
+- [01:29:53,010 - 01:29:55,120] one constraint the constraint is we're going
+- [01:29:55,120 - 01:29:58,130] to look for the place where F is
+- [01:29:58,130 - 01:30:01,140] maximum but given that something else is true
+- [01:30:01,140 - 01:30:05,580] and that something else is that G of X
+- [01:30:05,580 - 01:30:10,020] is equal to zero where G is some other
+- [01:30:10,020 - 01:30:10,600] function
+- [01:30:12,620 - 01:30:13,660] what is X?
+- [01:30:14,340 - 01:30:15,640] you only have X and Y
+- [01:30:16,900 - 01:30:18,420] G of X sub I
+- [01:30:18,420 - 01:30:20,100] G of all the X's
+- [01:30:21,019 - 01:30:23,720] some other function is equal to zero
+- [01:30:23,720 - 01:30:26,580] now what if the other function is equal to three
+- [01:30:26,580 - 01:30:30,230] well then just subtract off the three
+- [01:30:30,230 - 01:30:33,880] and you can always whatever the constraint is
+- [01:30:33,880 - 01:30:37,880] you can always say that it's some function equals zero
+- [01:30:39,219 - 01:30:43,009] so here's a constraint and for example the
+- [01:30:43,009 - 01:30:46,800] constraint equation G of X is equal to zero
+- [01:30:46,820 - 01:30:48,890] and the function of X equals zero
+- [01:30:48,890 - 01:30:50,960] might correspond to some curve on here
+- [01:30:53,320 - 01:30:57,640] some curve and now what we're looking for
+- [01:30:57,640 - 01:31:01,960] is along this curve where is the function F
+- [01:31:01,960 - 01:31:03,780] this is the curve G equals zero
+- [01:31:06,519 - 01:31:10,180] and along this curve we're going to look at F
+- [01:31:10,180 - 01:31:13,490] F is one thing here another thing here another thing here
+- [01:31:13,490 - 01:31:16,800] another thing here and we're going to ask where is F maximum?
+- [01:31:16,800 - 01:31:20,240] maximum along the constrained surface
+- [01:31:21,740 - 01:31:24,080] well the first thing is that
+- [01:31:24,080 - 01:31:26,420] it will always be at a point
+- [01:31:28,700 - 01:31:31,250] where the level surface of F
+- [01:31:31,250 - 01:31:33,800] happens to be tangent to G
+- [01:31:33,800 - 01:31:36,220] you can see why that is
+- [01:31:42,019 - 01:31:43,479] that's not too hard to see
+- [01:31:43,479 - 01:31:44,940] but it's not the important point here
+- [01:31:46,800 - 01:31:48,450] okay so that's what we want to find
+- [01:31:48,450 - 01:31:50,100] we want to find a tool a trick
+- [01:31:50,660 - 01:31:54,400] for solving the constrained minimization or
+- [01:31:54,400 - 01:31:58,140] the constrained maximization in this case
+- [01:31:58,640 - 01:31:59,680] so here's what we do
+- [01:32:02,799 - 01:32:04,339] here's the solution if we
+- [01:32:04,339 - 01:32:05,880] only know how to find it
+- [01:32:05,880 - 01:32:09,340] that's the place where F reaches its
+- [01:32:09,340 - 01:32:12,800] maximum value on the line G equals zero
+- [01:32:13,700 - 01:32:15,980] let's draw some let's draw a
+- [01:32:15,980 - 01:32:17,260] contour now
+- [01:32:20,020 - 01:32:20,600] whoops
+- [01:32:22,600 - 01:32:24,340] which passes through here
+- [01:32:26,080 - 01:32:28,260] and which is perpendicular
+- [01:32:29,940 - 01:32:32,080] to the level surfaces of F
+- [01:32:33,380 - 01:32:35,580] perpendicular which is sort of steepest descent
+- [01:32:37,700 - 01:32:40,400] it's the direction you move in on the
+- [01:32:40,400 - 01:32:43,100] side of the mountain to fall off most rapidly
+- [01:32:43,840 - 01:32:45,800] so you take that surface like that
+- [01:32:45,980 - 01:32:49,180] and you look at the value along here
+- [01:32:50,040 - 01:32:52,120] what's varying as you move from here to here
+- [01:32:52,920 - 01:32:55,560] G is moving as you G is varying
+- [01:32:56,200 - 01:32:57,880] let's draw the different G's
+- [01:32:57,880 - 01:32:59,680] here's G equals zero
+- [01:32:59,680 - 01:33:02,840] someplace else G is something G equals one
+- [01:33:04,280 - 01:33:06,610] someplace else G is equal to
+- [01:33:06,610 - 01:33:08,940] minus one minus one and so forth
+- [01:33:08,940 - 01:33:12,440] and let's look as we move along here
+- [01:33:14,620 - 01:33:15,660] let's look at F
+- [01:33:15,980 - 01:33:18,280] as we move along here
+- [01:33:18,280 - 01:33:20,820] is F going to be maximum at that point?
+- [01:33:22,860 - 01:33:23,420] no
+- [01:33:23,980 - 01:33:25,200] not particularly
+- [01:33:26,240 - 01:33:28,820] F is not going to be maximum along that point
+- [01:33:30,620 - 01:33:32,040] unless by accident
+- [01:33:33,099 - 01:33:34,500] this is not the place
+- [01:33:34,500 - 01:33:37,180] where F is maximum
+- [01:33:37,180 - 01:33:39,190] unless we also remember that we
+- [01:33:39,190 - 01:33:41,200] want G to be equal to zero
+- [01:33:41,200 - 01:33:42,940] but if we forget G equals zero
+- [01:33:42,940 - 01:33:44,940] and we move along here
+- [01:33:45,980 - 01:33:46,780] then F has some shape
+- [01:33:48,560 - 01:33:49,780] let's plot F
+- [01:33:49,780 - 01:33:52,440] and let's plot F against G
+- [01:33:53,340 - 01:33:55,860] G is changing as we move along here
+- [01:33:58,360 - 01:34:00,000] and as we move along
+- [01:34:00,000 - 01:34:01,380] F is also changing
+- [01:34:01,380 - 01:34:03,620] so F is some function along here
+- [01:34:05,360 - 01:34:05,980] let's
+- [01:34:10,120 - 01:34:11,500] give it a little more curvature
+- [01:34:17,599 - 01:34:20,200] but this is G equals zero right over here
+- [01:34:20,200 - 01:34:21,680] G equals zero on this line
+- [01:34:22,660 - 01:34:25,520] but F is not stationary at this point
+- [01:34:25,520 - 01:34:26,960] as we vary G
+- [01:34:31,839 - 01:34:33,480] F is not stationary
+- [01:34:33,480 - 01:34:34,740] why should it be?
+- [01:34:35,720 - 01:34:37,270] we're not looking for the place
+- [01:34:37,270 - 01:34:38,820] where F is stationary by itself
+- [01:34:38,820 - 01:34:40,980] we're looking where F is stationary subject to
+- [01:34:40,980 - 01:34:43,140] the fact that it's living on this line
+- [01:34:44,299 - 01:34:44,820] okay
+- [01:34:44,820 - 01:34:46,580] what can we do
+- [01:34:46,580 - 01:34:49,300] to change this curve
+- [01:34:49,690 - 01:34:51,620] so that we actually make this point
+- [01:34:52,760 - 01:34:55,240] a true stationary point
+- [01:34:55,820 - 01:34:57,400] all we have to do
+- [01:34:57,400 - 01:35:01,720] is add to F something proportional to G
+- [01:35:06,020 - 01:35:07,160] why is that?
+- [01:35:08,880 - 01:35:10,580] is this obvious or not?
+- [01:35:12,380 - 01:35:13,160] hmm?
+- [01:35:13,160 - 01:35:15,000] for the derivative to cancel?
+- [01:35:15,240 - 01:35:15,420] yeah
+- [01:35:16,160 - 01:35:16,800] yeah
+- [01:35:16,800 - 01:35:18,500] there's a derivative over here
+- [01:35:19,299 - 01:35:20,839] of F with respect to
+- [01:35:20,839 - 01:35:22,380] G as you move along there
+- [01:35:23,059 - 01:35:26,120] and if you add something proportional to G
+- [01:35:27,299 - 01:35:28,880] with the appropriate choice
+- [01:35:28,880 - 01:35:31,560] you can make this slope zero
+- [01:35:32,519 - 01:35:33,160] okay
+- [01:35:33,880 - 01:35:34,880] if you add
+- [01:35:36,500 - 01:35:38,220] to a function like this
+- [01:35:39,160 - 01:35:40,180] something proportional,
+- [01:35:40,180 - 01:35:41,680] something linear in G
+- [01:35:41,680 - 01:35:43,900] you can cancel this derivative
+- [01:35:43,900 - 01:35:45,800] and make it flat at this point
+- [01:35:48,280 - 01:35:50,540] so by appropriate choice
+- [01:35:51,309 - 01:35:54,200] of adding something proportional to G
+- [01:35:54,200 - 01:35:56,580] you can actually make this point
+- [01:35:56,580 - 01:35:59,560] a minimum of a new function
+- [01:35:59,560 - 01:36:01,020] the new function
+- [01:36:01,680 - 01:36:02,580] is F,
+- [01:36:02,580 - 01:36:03,780] let's call it F prime
+- [01:36:05,240 - 01:36:06,420] F prime
+- [01:36:07,600 - 01:36:09,180] is equal to F
+- [01:36:09,180 - 01:36:11,660] plus something proportional to G
+- [01:36:12,440 - 01:36:13,060] now
+- [01:36:15,960 - 01:36:17,940] this lambda is a number
+- [01:36:17,940 - 01:36:20,500] it's a number which is chosen
+- [01:36:20,500 - 01:36:23,680] to make the derivative flat here
+- [01:36:23,680 - 01:36:25,440] I don't know what it is
+- [01:36:25,440 - 01:36:26,580] I'll figure it out later
+- [01:36:27,680 - 01:36:29,860] let's put that question off for a while
+- [01:36:29,860 - 01:36:31,460] leave it till later
+- [01:36:33,160 - 01:36:35,920] but add something proportional to G
+- [01:36:37,100 - 01:36:38,140] suitably chosen
+- [01:36:39,900 - 01:36:41,660] so that this curve of F is
+- [01:36:41,660 - 01:36:43,040] a number which does not
+- [01:36:43,040 - 01:36:44,420] have a stationary point over here
+- [01:36:44,420 - 01:36:46,040] is shifted
+- [01:36:46,900 - 01:36:49,160] so that it does have a stationary point
+- [01:36:49,160 - 01:36:51,160] in other words the statement is
+- [01:36:51,160 - 01:36:52,180] if you take F
+- [01:36:52,180 - 01:36:53,580] and you add to it
+- [01:36:53,580 - 01:36:56,220] some multiple of G
+- [01:36:57,460 - 01:36:59,460] then there's some value of lambda
+- [01:37:00,160 - 01:37:02,220] some value that you'll determine later
+- [01:37:02,880 - 01:37:03,980] which will make
+- [01:37:04,679 - 01:37:06,660] this whole function here
+- [01:37:07,580 - 01:37:10,600] stationary at exactly the point you're looking for
+- [01:37:11,660 - 01:37:13,660] this is due to Lagrange
+- [01:37:14,360 - 01:37:16,320] it's a method of Lagrange multipliers
+- [01:37:16,320 - 01:37:18,120] lambda is called a Lagrange multiplier
+- [01:37:18,660 - 01:37:20,600] it's a devilishly clever trick
+- [01:37:24,200 - 01:37:26,720] and I'm going to show you some examples
+- [01:37:27,980 - 01:37:28,920] but first,
+- [01:37:28,920 - 01:37:30,260] before we talk about examples
+- [01:37:30,940 - 01:37:31,820] let's ask
+- [01:37:37,480 - 01:37:40,240] we've added another unknown into the problem
+- [01:37:41,660 - 01:37:43,980] originally we had a collection of X's
+- [01:37:43,980 - 01:37:45,320] that we were trying to determine
+- [01:37:45,320 - 01:37:47,500] we were trying to determine them
+- [01:37:47,500 - 01:37:49,220] by some set of equations like this
+- [01:37:50,339 - 01:37:53,200] but we've now added another unknown
+- [01:37:53,960 - 01:37:56,140] namely the value of lambda
+- [01:37:58,379 - 01:38:00,100] that will make F prime
+- [01:38:01,080 - 01:38:02,140] that will make
+- [01:38:02,660 - 01:38:05,580] that will make F prime stationary
+- [01:38:05,580 - 01:38:07,080] at just the right point
+- [01:38:09,019 - 01:38:10,880] so we have another unknown
+- [01:38:11,800 - 01:38:13,540] but we also have another equation
+- [01:38:13,540 - 01:38:14,720] what is the other equation?
+- [01:38:20,740 - 01:38:22,180] G equals zero
+- [01:38:22,860 - 01:38:24,500] that was the whole point,
+- [01:38:24,500 - 01:38:24,700] right?
+- [01:38:24,840 - 01:38:26,280] the whole point was to
+- [01:38:26,280 - 01:38:28,140] maximize the function
+- [01:38:28,660 - 01:38:30,300] subject to G equals zero
+- [01:38:30,980 - 01:38:32,400] so all we do
+- [01:38:32,400 - 01:38:34,700] this is the standard method
+- [01:38:34,700 - 01:38:36,140] we add
+- [01:38:36,800 - 01:38:38,640] something proportional to G
+- [01:38:38,640 - 01:38:41,040] we minimize this
+- [01:38:41,040 - 01:38:42,060] and then later
+- [01:38:42,060 - 01:38:43,620] we choose lambda
+- [01:38:43,620 - 01:38:46,200] so that the constraint is actually satisfied
+- [01:38:46,920 - 01:38:48,540] I'm going to show you an example of it
+- [01:38:48,540 - 01:38:51,080] if you haven't followed the details of this
+- [01:38:51,080 - 01:38:53,780] go back and learn about Lagrange multipliers
+- [01:38:53,780 - 01:38:58,720] but the machinery of doing it is very easy
+- [01:38:58,720 - 01:39:01,020] I'll give you an example or two
+- [01:39:01,839 - 01:39:05,680] of how to minimize
+- [01:39:06,400 - 01:39:07,960] minimize or maximize
+- [01:39:07,960 - 01:39:10,340] of course it depends on the sign of the...
+- [01:39:10,340 - 01:39:11,980] but that's not the important thing
+- [01:39:13,120 - 01:39:13,560] supposing
+- [01:39:14,080 - 01:39:15,640] let's take a simple function
+- [01:39:16,520 - 01:39:17,400] X squared
+- [01:39:21,740 - 01:39:23,080] a second ago this one
+- [01:39:26,220 - 01:39:28,100] let's take X squared plus Y squared
+- [01:39:30,900 - 01:39:32,240] and I always like to
+- [01:39:32,240 - 01:39:33,580] put a factor of two downstairs
+- [01:39:33,580 - 01:39:34,320] you know why?
+- [01:39:35,360 - 01:39:37,100] because I'm going to differentiate it
+- [01:39:37,100 - 01:39:38,940] and every time I differentiate an X squared
+- [01:39:38,940 - 01:39:39,720] I get a two X
+- [01:39:39,720 - 01:39:42,400] and I always prefer to put a two downstairs
+- [01:39:43,180 - 01:39:44,940] that's not important
+- [01:39:46,180 - 01:39:49,460] alright I want to minimize this function
+- [01:39:49,460 - 01:39:51,620] can you minimize this function?
+- [01:39:51,800 - 01:39:53,200] I know exactly where the minimum is
+- [01:39:53,980 - 01:39:55,840] so that X equals zero and Y equals zero,
+- [01:39:55,840 - 01:39:56,100] right?
+- [01:39:56,800 - 01:39:58,800] but I want to minimize it given
+- [01:40:01,500 - 01:40:04,460] that X plus Y equals one
+- [01:40:06,080 - 01:40:07,660] alright so let's just draw the picture
+- [01:40:09,559 - 01:40:10,900] this is F
+- [01:40:11,999 - 01:40:14,960] so F is equal to X
+- [01:40:14,960 - 01:40:16,910] sorry F is equal to X
+- [01:40:16,910 - 01:40:18,860] squared plus Y squared over two
+- [01:40:23,160 - 01:40:24,580] and what is G?
+- [01:40:25,220 - 01:40:29,260] G is equal to
+- [01:40:29,260 - 01:40:34,180] to X plus Y minus one,
+- [01:40:34,180 - 01:40:34,860] right?
+- [01:40:35,760 - 01:40:38,380] F is X squared plus Y squared over two
+- [01:40:38,940 - 01:40:41,680] G is X plus Y minus one
+- [01:40:41,680 - 01:40:44,660] we're seeking to minimize F
+- [01:40:44,660 - 01:40:48,020] subject to the constraint that G is equal to zero
+- [01:40:49,120 - 01:40:52,540] alright so the method of Lagrange multipliers tells us
+- [01:40:52,540 - 01:40:54,920] oh let's first draw a picture
+- [01:40:56,299 - 01:40:59,240] the contours of F are circles in this case,
+- [01:40:59,240 - 01:40:59,540] right?
+- [01:41:04,320 - 01:41:06,280] the constraint surface,
+- [01:41:06,280 - 01:41:07,660] so the constraint line
+- [01:41:07,660 - 01:41:09,780] is X plus Y equals one
+- [01:41:09,780 - 01:41:11,680] where is X plus Y equals one?
+- [01:41:12,460 - 01:41:13,420] here's one,
+- [01:41:13,420 - 01:41:14,200] here's one
+- [01:41:14,200 - 01:41:16,560] X plus Y equals one is a line like that
+- [01:41:17,180 - 01:41:21,060] we're looking for the place along this line
+- [01:41:21,560 - 01:41:24,140] where X squared plus Y squared is equal to one
+- [01:41:24,520 - 01:41:25,000] oh sorry,
+- [01:41:25,000 - 01:41:27,640] where X squared plus Y squared is minimized
+- [01:41:29,880 - 01:41:32,740] by inspection you can sort of guess where it is
+- [01:41:35,740 - 01:41:37,640] you know we can make it a little harder
+- [01:41:37,640 - 01:41:37,960] by,
+- [01:41:37,960 - 01:41:38,580] well,
+- [01:41:38,580 - 01:41:40,210] we can make it harder by making it
+- [01:41:40,210 - 01:41:41,840] two X plus Y is equal to one
+- [01:41:41,840 - 01:41:42,720] but leave it this way
+- [01:41:42,720 - 01:41:43,940] let's just check
+- [01:41:44,500 - 01:41:46,220] alright so what's the rule?
+- [01:41:46,380 - 01:41:50,500] the rule is add to F lambda times G
+- [01:41:50,500 - 01:41:51,620] let's do that
+- [01:41:57,820 - 01:41:59,950] F prime is equal to X
+- [01:41:59,950 - 01:42:02,080] squared plus Y squared over two
+- [01:42:02,900 - 01:42:07,620] plus lambda times X plus Y minus one
+- [01:42:07,640 - 01:42:10,880] this is F and this is lambda times G
+- [01:42:12,120 - 01:42:13,160] next step
+- [01:42:14,000 - 01:42:17,760] thinking of lambda as a known thing
+- [01:42:17,760 - 01:42:18,580] it's not known
+- [01:42:18,580 - 01:42:20,360] but thinking of it as a known thing
+- [01:42:21,579 - 01:42:23,140] minimize F prime
+- [01:42:23,140 - 01:42:24,340] that's the rule
+- [01:42:24,340 - 01:42:26,140] alright so that means
+- [01:42:27,219 - 01:42:29,049] instead of writing the F by
+- [01:42:29,049 - 01:42:30,880] the X is equal to zero
+- [01:42:31,500 - 01:42:32,890] we write the F prime by
+- [01:42:32,890 - 01:42:34,280] the X is equal to zero
+- [01:42:34,280 - 01:42:36,340] and likewise for Y
+- [01:42:37,640 - 01:42:38,480] let's see what we get
+- [01:42:39,780 - 01:42:42,520] alright the derivative of F prime with respect to X
+- [01:42:43,240 - 01:42:44,400] is equal to X
+- [01:42:49,300 - 01:42:50,260] from here
+- [01:42:50,260 - 01:42:51,760] and then plus lambda,
+- [01:42:51,760 - 01:42:52,240] right?
+- [01:42:54,560 - 01:42:56,460] the derivative of F prime
+- [01:42:57,460 - 01:42:58,680] with respect to Y
+- [01:43:00,120 - 01:43:01,960] is equal to Y plus lambda
+- [01:43:03,840 - 01:43:06,080] now what are we supposed to do with these things?
+- [01:43:06,160 - 01:43:07,620] we're supposed to set them equal to zero
+- [01:43:11,379 - 01:43:14,880] that's the process of minimizing F prime
+- [01:43:14,880 - 01:43:17,040] setting these derivatives equal to zero
+- [01:43:17,640 - 01:43:19,640] so that tells us that
+- [01:43:19,640 - 01:43:22,060] X is equal to minus lambda
+- [01:43:22,060 - 01:43:24,480] and Y is equal to minus lambda
+- [01:43:25,839 - 01:43:29,520] X equals minus lambda and Y equals minus lambda
+- [01:43:30,259 - 01:43:32,900] well we found out one piece of information incidentally
+- [01:43:33,420 - 01:43:34,760] we found out that the solution
+- [01:43:35,420 - 01:43:36,900] at least we know one thing
+- [01:43:36,900 - 01:43:37,800] that X is equal to Y
+- [01:43:38,520 - 01:43:39,960] but so far we haven't
+- [01:43:39,960 - 01:43:41,100] we don't know what X and Y is
+- [01:43:41,100 - 01:43:41,900] what do we do next?
+- [01:43:42,960 - 01:43:44,960] we add the one more equation
+- [01:43:45,540 - 01:43:47,100] that G is equal to zero
+- [01:43:47,680 - 01:43:48,920] and that's just the equation
+- [01:43:48,920 - 01:43:51,140] that X plus Y is equal to one
+- [01:43:52,740 - 01:43:53,220] so
+- [01:43:54,920 - 01:43:57,020] X plus Y is equal to one
+- [01:43:57,020 - 01:43:58,640] what does that give us for lambda?
+- [01:44:01,320 - 01:44:04,060] minus two lambda is equal to one
+- [01:44:04,060 - 01:44:06,760] or lambda is equal to minus a half
+- [01:44:09,379 - 01:44:11,440] given that lambda is minus a half
+- [01:44:11,440 - 01:44:13,040] we now know that the solution
+- [01:44:13,700 - 01:44:15,980] is X equals plus a half
+- [01:44:15,980 - 01:44:17,580] and Y equals plus a half
+- [01:44:17,580 - 01:44:19,080] in other words
+- [01:44:21,860 - 01:44:22,860] right over here
+- [01:44:26,940 - 01:44:27,960] that's the point
+- [01:44:29,559 - 01:44:30,680] which minimizes
+- [01:44:30,680 - 01:44:34,140] X squared plus Y squared
+- [01:44:34,859 - 01:44:36,880] given that you're along this line
+- [01:44:36,900 - 01:44:37,460] some place
+- [01:44:39,579 - 01:44:42,360] so that's the trick of Lagrange multipliers
+- [01:44:43,460 - 01:44:45,940] what happens if you have more variables
+- [01:44:45,940 - 01:44:47,320] and more constraints?
+- [01:44:48,080 - 01:44:50,540] let's suppose you had three variables
+- [01:44:50,540 - 01:44:52,820] I'm not going to work out the example
+- [01:44:52,820 - 01:44:55,000] but let's suppose you had a function
+- [01:44:55,000 - 01:44:56,260] of several variables
+- [01:44:56,900 - 01:44:58,640] instead of just one constraint
+- [01:44:58,640 - 01:45:00,020] you had several constraints
+- [01:45:00,860 - 01:45:02,940] well then the rule is very similar
+- [01:45:03,799 - 01:45:05,360] for each constraint
+- [01:45:07,700 - 01:45:09,900] each constraint can be written
+- [01:45:09,900 - 01:45:13,980] as G sub I equals zero
+- [01:45:13,980 - 01:45:15,820] let's say there are two constraints
+- [01:45:15,820 - 01:45:18,080] G one equals zero
+- [01:45:18,080 - 01:45:19,560] and G two equals zero
+- [01:45:21,519 - 01:45:24,260] I'll give you a homework problem
+- [01:45:24,260 - 01:45:25,100] to work out
+- [01:45:25,900 - 01:45:27,620] using Lagrange multipliers
+- [01:45:30,179 - 01:45:33,060] F is a function of three variables
+- [01:45:33,060 - 01:45:34,060] it happens to be
+- [01:45:34,060 - 01:45:36,400] X squared plus Y squared minus Z squared
+- [01:45:38,620 - 01:45:40,080] G one
+- [01:45:42,740 - 01:45:45,040] the first constraint
+- [01:45:45,040 - 01:45:47,880] is that X plus Y
+- [01:45:48,400 - 01:45:50,400] is equal to one
+- [01:45:50,400 - 01:45:51,260] we've done that
+- [01:45:51,260 - 01:45:52,800] we've done something like that
+- [01:45:53,000 - 01:45:55,120] and the other constraint G two
+- [01:45:55,120 - 01:45:57,200] is that
+- [01:45:57,200 - 01:45:59,140] I don't know
+- [01:45:59,140 - 01:46:00,840] let's take it
+- [01:46:00,840 - 01:46:01,900] Y squared
+- [01:46:04,440 - 01:46:06,380] plus Z squared
+- [01:46:06,380 - 01:46:08,540] is equal to seven
+- [01:46:08,540 - 01:46:09,260] I don't know
+- [01:46:09,260 - 01:46:10,440] some ridiculous constraint
+- [01:46:11,980 - 01:46:13,500] we want to find
+- [01:46:13,500 - 01:46:15,900] the minimum of F
+- [01:46:18,360 - 01:46:20,640] subject to two constraints
+- [01:46:21,620 - 01:46:22,940] let's make it simpler
+- [01:46:22,940 - 01:46:24,080] I don't want to drive you crazy
+- [01:46:24,080 - 01:46:25,320] let's just make it
+- [01:46:25,320 - 01:46:26,960] Z plus X equals zero
+- [01:46:28,139 - 01:46:29,020] equals one
+- [01:46:30,999 - 01:46:32,280] two constraints
+- [01:46:33,799 - 01:46:34,880] two constraints
+- [01:46:34,880 - 01:46:36,200] find the place where
+- [01:46:36,200 - 01:46:37,000] F is minimum
+- [01:46:37,000 - 01:46:40,140] given that both of these equations are true
+- [01:46:41,000 - 01:46:41,880] there is a place
+- [01:46:41,880 - 01:46:43,020] you can find it
+- [01:46:43,020 - 01:46:44,940] and the way that you find it
+- [01:46:44,940 - 01:46:46,940] is you add to F
+- [01:46:46,940 - 01:46:48,860] a Lagrange multiplier
+- [01:46:48,860 - 01:46:50,560] for each constraint
+- [01:46:58,119 - 01:47:00,580] you call that F prime
+- [01:47:04,459 - 01:47:06,940] and then you minimize F prime
+- [01:47:06,940 - 01:47:09,140] pretending that you knew what the Lambdas were
+- [01:47:09,140 - 01:47:11,820] so you write derivative of F prime
+- [01:47:11,820 - 01:47:13,900] with respect to XI
+- [01:47:13,900 - 01:47:15,180] for all the I's
+- [01:47:15,180 - 01:47:17,000] is equal to zero
+- [01:47:19,000 - 01:47:21,240] but you still have unknowns
+- [01:47:21,240 - 01:47:22,060] two unknowns
+- [01:47:22,060 - 01:47:23,760] that you haven't specified yet
+- [01:47:23,760 - 01:47:25,000] Lambda one and Lambda two
+- [01:47:26,240 - 01:47:27,640] what are the equations that
+- [01:47:27,640 - 01:47:29,040] govern Lambda one and Lambda two?
+- [01:47:29,960 - 01:47:30,560] well,
+- [01:47:30,560 - 01:47:30,560] you know that you have to find
+- [01:47:30,560 - 01:47:30,560] the one that is equal to one
+- [01:47:31,519 - 01:47:34,160] G1 equals 0 and G2 equals 0.
+- [01:47:34,160 - 01:47:36,920] Now you have enough equations
+- [01:47:36,920 - 01:47:39,680] to completely solve the problem.
+- [01:47:40,260 - 01:47:43,560] This seems like a rather complicated thing to do,
+- [01:47:43,560 - 01:47:48,000] but it is by far the easiest way to
+- [01:47:48,000 - 01:47:52,440] minimize something or maximize it when you have constraints.
+- [01:47:52,440 - 01:47:54,140] Why are we interested in it?
+- [01:47:54,140 - 01:47:57,440] Because in many problems in statistical mechanics,
+- [01:47:57,440 - 01:48:03,960] we want to maximize the entropy subject to some constraints.
+- [01:48:04,280 - 01:48:07,280] The constraints might be that the
+- [01:48:07,280 - 01:48:10,280] total electric charge has some value,
+- [01:48:10,280 - 01:48:13,980] the total energy has some value,
+- [01:48:13,980 - 01:48:18,180] total something else has some value.
+- [01:48:18,920 - 01:48:21,680] Those are the kinds of constraints that we impose.
+- [01:48:22,799 - 01:48:23,820] In particular,
+- [01:48:23,820 - 01:48:27,020] that the total energy is fixed,
+- [01:48:27,020 - 01:48:30,640] and the total probabilities add to 1.
+- [01:48:30,820 - 01:48:32,340] Those are two constraints.
+- [01:48:33,099 - 01:48:37,360] So let's now write the mathematics problem.
+- [01:48:37,360 - 01:48:38,240] We wrote it before.
+- [01:48:44,300 - 01:48:46,260] And you can spend a little
+- [01:48:46,260 - 01:48:48,220] bit of time trying to solve it.
+- [01:48:48,220 - 01:48:49,660] I'll solve it next time.
+- [01:48:51,720 - 01:48:52,420] F is equal to 0.
+- [01:48:52,440 - 01:48:54,020] What is it a function of now?
+- [01:48:54,460 - 01:48:56,720] It's a function of all of the probabilities,
+- [01:48:56,720 - 01:48:57,680] P of i.
+- [01:49:00,900 - 01:49:02,360] It's a function of P1,
+- [01:49:02,360 - 01:49:03,060] P2,
+- [01:49:03,060 - 01:49:04,320] dot dot dot dot dot.
+- [01:49:04,400 - 01:49:05,460] A whole bunch of probabilities.
+- [01:49:07,980 - 01:49:09,180] It's a lot of variables.
+- [01:49:10,680 - 01:49:11,840] What are the constraints?
+- [01:49:12,340 - 01:49:16,100] The constraints are G1 is
+- [01:49:16,100 - 01:49:19,860] equal to the summation over i,
+- [01:49:19,860 - 01:49:22,420] P sub i minus 1.
+- [01:49:22,420 - 01:49:25,820] In other words,
+- [01:49:25,820 - 01:49:29,500] the constraint is G1 is equal to 0,
+- [01:49:29,500 - 01:49:31,010] or the summation of P
+- [01:49:31,010 - 01:49:32,520] sub i is equal to 1.
+- [01:49:32,800 - 01:49:37,220] And the other constraint is summation over i,
+- [01:49:37,220 - 01:49:38,800] P sub i,
+- [01:49:38,800 - 01:49:43,120] E sub i is equal to a fixed number E,
+- [01:49:43,120 - 01:49:45,260] the average energy.
+- [01:49:46,320 - 01:49:47,740] Given the average energy,
+- [01:49:47,740 - 01:49:50,760] and given that the total probabilities add up to 1,
+- [01:49:50,760 - 01:49:51,880] problem.
+- [01:49:53,140 - 01:49:57,440] Maximize F as a function of all of the probabilities.
+- [01:49:57,680 - 01:49:58,520] What does that give you?
+- [01:49:58,640 - 01:50:01,720] That gives you the probability
+- [01:50:01,720 - 01:50:04,800] distribution as a function of i
+- [01:50:11,820 - 01:50:14,730] that corresponds to the most likely
+- [01:50:14,730 - 01:50:17,640] possible values for the occupation numbers.
+- [01:50:19,780 - 01:50:20,740] The occupation numbers.
+- [01:50:20,740 - 01:50:23,560] The occupation numbers tend to cluster around these values.
+- [01:50:25,120 - 01:50:26,260] This is not easy,
+- [01:50:26,260 - 01:50:28,480] but once you have the rules,
+- [01:50:28,480 - 01:50:30,320] once you know the rules,
+- [01:50:30,940 - 01:50:32,680] the rest is pretty straightforward.
+- [01:50:35,540 - 01:50:35,720] Okay,
+- [01:50:35,720 - 01:50:36,340] so...
+- [01:50:40,960 - 01:50:41,520] Incidentally,
+- [01:50:41,520 - 01:50:44,000] all of this...
+- [01:50:45,240 - 01:50:46,020] If you ask,
+- [01:50:46,020 - 01:50:47,960] what branch of mathematics are we doing?
+- [01:50:48,780 - 01:50:51,560] The branch of mathematics is just probability theory.
+- [01:50:52,420 - 01:50:56,300] This same set of rules would govern many,
+- [01:50:56,300 - 01:50:57,820] many probabilistic problems.
+- [01:50:59,040 - 01:50:59,720] Um...
+- [01:51:01,540 - 01:51:02,220] And...
+- [01:51:10,259 - 01:51:12,240] We're not doing the theory of gases.
+- [01:51:12,560 - 01:51:15,700] We're not doing the theory of superconductors.
+- [01:51:16,000 - 01:51:17,940] We're doing basic probability.
+- [01:51:17,960 - 01:51:19,940] We're doing the theory of the
+- [01:51:19,940 - 01:51:30,380] of maximizing some entropy,
+- [01:51:30,380 - 01:51:33,400] number of ways of rearranging things,
+- [01:51:33,400 - 01:51:36,100] subject to some constraints,
+- [01:51:36,440 - 01:51:38,370] the total amount of this or
+- [01:51:38,370 - 01:51:40,300] that is equal to something fixed.
+- [01:51:41,280 - 01:51:42,080] All right,
+- [01:51:42,080 - 01:51:42,540] so it's...
+- [01:51:42,540 - 01:51:43,460] It's...
+- [01:51:47,259 - 01:51:47,940] It's...
+- [01:51:47,940 - 01:51:51,520] It's not special to any particular kind of physical system.
+- [01:51:52,280 - 01:51:53,280] It's special...
+- [01:51:53,280 - 01:51:53,460] Well,
+- [01:51:53,460 - 01:51:55,400] it is special to the kinds of physical
+- [01:51:55,400 - 01:51:57,340] systems which have so many degrees of freedom
+- [01:51:58,340 - 01:52:00,210] that you are forced to
+- [01:52:00,210 - 01:52:02,080] deal with them statistically and probabilistically.
+- [01:52:02,440 - 01:52:03,600] But once you know that,
+- [01:52:03,600 - 01:52:05,100] the rules are always the same.
+- [01:52:05,660 - 01:52:06,160] Okay,
+- [01:52:06,160 - 01:52:07,320] so next time,
+- [01:52:07,320 - 01:52:10,220] we will solve this problem.
+- [01:52:10,840 - 01:52:11,620] What is f?
+- [01:52:11,740 - 01:52:12,860] I didn't write what f was.
+- [01:52:15,240 - 01:52:15,740] f,
+- [01:52:15,740 - 01:52:16,340] uh...
+- [01:52:18,840 - 01:52:19,840] I lost my...
+- [01:52:19,840 - 01:52:20,320] Here it is.
+- [01:52:22,300 - 01:52:23,400] f is the entropy.
+- [01:52:23,620 - 01:52:24,540] We should call it s.
+- [01:52:26,980 - 01:52:28,800] s of p i,
+- [01:52:28,800 - 01:52:31,800] which is equal to summation over i,
+- [01:52:31,800 - 01:52:33,340] p sub i,
+- [01:52:33,340 - 01:52:34,980] log p sub i,
+- [01:52:34,980 - 01:52:35,980] with a minus sign.
+- [01:52:37,120 - 01:52:37,820] Maximize this.
+- [01:52:38,220 - 01:52:39,260] What are you going to vary?
+- [01:52:39,480 - 01:52:40,970] What are the variables that you're
+- [01:52:40,970 - 01:52:42,460] going to shift around to maximize it?
+- [01:52:44,340 - 01:52:45,300] The p i's.
+- [01:52:45,980 - 01:52:46,940] In other words,
+- [01:52:46,940 - 01:52:48,700] you have a probability distribution,
+- [01:52:49,000 - 01:52:52,060] and you're going to vary the probability distribution
+- [01:52:52,060 - 01:52:57,380] until you find that probability distribution,
+- [01:52:57,380 - 01:52:58,020] p i,
+- [01:52:58,260 - 01:53:00,120] which maximizes the entropy,
+- [01:53:00,420 - 01:53:05,240] given that the sum of all the probabilities is 1,
+- [01:53:05,460 - 01:53:07,240] and that the average energy is e.
+- [01:53:09,340 - 01:53:10,040] That's it.
+- [01:53:10,100 - 01:53:12,560] That's all of statistical mechanics in a nutshell.
+- [01:53:13,460 - 01:53:14,560] Solving that problem
+- [01:53:15,940 - 01:53:16,920] for different purposes.
+- [01:53:16,920 - 01:53:17,040] And that's how we solve
+- [01:53:17,040 - 01:53:17,160] the problem of the equation systems.
+- [01:53:18,140 - 01:53:18,900] Okay.
+- [01:53:21,760 - 01:53:22,940] For more,
+- [01:53:22,940 - 01:53:25,220] please visit us at stanford.edu.
