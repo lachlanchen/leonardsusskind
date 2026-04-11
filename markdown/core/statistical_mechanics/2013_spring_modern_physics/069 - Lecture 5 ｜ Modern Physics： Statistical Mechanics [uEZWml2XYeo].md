@@ -1,0 +1,2831 @@
+# Transcript
+
+Source: core/statistical_mechanics/2013_spring_modern_physics/069 - Lecture 5 ｜ Modern Physics： Statistical Mechanics [uEZWml2XYeo].mkv
+
+- [00:00:05,199 - 00:00:06,160] Stanford University.
+- [00:00:08,320 - 00:00:08,960] All right,
+- [00:00:08,960 - 00:00:11,160] I want to discuss again,
+- [00:00:11,160 - 00:00:14,460] we did do the ideal gas,
+- [00:00:14,460 - 00:00:15,080] did we not?
+- [00:00:15,320 - 00:00:15,700] Yes.
+- [00:00:15,780 - 00:00:17,480] The ideal gas of point particles.
+- [00:00:18,200 - 00:00:18,680] Now,
+- [00:00:18,680 - 00:00:20,940] I want to talk about the ideal
+- [00:00:20,940 - 00:00:23,200] gas of particles which are not point particles.
+- [00:00:23,200 - 00:00:25,960] Under what circumstances is a gas
+- [00:00:25,960 - 00:00:28,720] well approximated by an ideal gas?
+- [00:00:29,420 - 00:00:31,420] An ideal gas is one where
+- [00:00:31,420 - 00:00:33,420] particles don't collide with each other.
+- [00:00:33,560 - 00:00:35,450] And the answer is when the
+- [00:00:35,450 - 00:00:37,340] density of the gas is low enough.
+- [00:00:38,580 - 00:00:41,200] And it doesn't matter very much if the
+- [00:00:41,200 - 00:00:43,820] particles themselves have some size and some structure,
+- [00:00:43,960 - 00:00:46,780] as long as the distance between particles is much,
+- [00:00:46,780 - 00:00:49,560] much larger than the structure of
+- [00:00:49,560 - 00:00:50,280] the particle itself,
+- [00:00:50,280 - 00:00:52,300] it's still an ideal gas.
+- [00:00:53,200 - 00:00:54,480] So particles in this,
+- [00:00:54,480 - 00:00:54,760] particles,
+- [00:00:54,760 - 00:00:55,440] molecules,
+- [00:00:55,440 - 00:00:56,000] and so forth,
+- [00:00:56,000 - 00:00:57,460] molecules certainly have structure.
+- [00:00:57,960 - 00:00:58,980] They can rotate,
+- [00:00:58,980 - 00:01:00,100] they can vibrate.
+- [00:01:00,600 - 00:01:03,800] But this leads to a very
+- [00:01:03,800 - 00:01:07,000] big paradox in classical statistical mechanics.
+- [00:01:07,580 - 00:01:09,650] And it is one that
+- [00:01:09,650 - 00:01:11,720] was only resolved by quantum mechanics.
+- [00:01:12,260 - 00:01:16,200] It was considered one of the big paradoxes about classical,
+- [00:01:16,200 - 00:01:19,000] about statistical mechanics
+- [00:01:19,760 - 00:01:21,520] at the end of the 19th century.
+- [00:01:21,820 - 00:01:22,800] And as I said,
+- [00:01:22,800 - 00:01:23,180] it only...
+- [00:01:23,200 - 00:01:25,970] It only got resolved by the
+- [00:01:25,970 - 00:01:28,740] same ideas that resolved the problem,
+- [00:01:28,740 - 00:01:30,440] essentially almost exactly
+- [00:01:30,440 - 00:01:31,320] the same ideas,
+- [00:01:31,320 - 00:01:35,060] which resolved the big problem about black body radiation,
+- [00:01:35,060 - 00:01:37,020] which we will
+- [00:01:37,020 - 00:01:37,540] come to.
+- [00:01:37,900 - 00:01:39,410] So if you don't know what
+- [00:01:39,410 - 00:01:40,920] the problem of black body radiation is,
+- [00:01:40,920 - 00:01:41,760] don't worry about it right
+- [00:01:41,760 - 00:01:42,020] now.
+- [00:01:42,240 - 00:01:44,800] The problem of molecules had a very,
+- [00:01:44,800 - 00:01:47,320] very similar flavor to it.
+- [00:01:47,700 - 00:01:48,920] And let me tell you
+- [00:01:48,920 - 00:01:50,140] what the problem of molecules is.
+- [00:01:50,240 - 00:01:52,740] And we'll do it by doing an example.
+- [00:01:52,840 - 00:01:53,180] Okay.
+- [00:01:53,200 - 00:01:55,160] So let's say we have a molecule with structure.
+- [00:01:55,960 - 00:01:56,280] Now,
+- [00:01:56,280 - 00:01:58,120] this is a very,
+- [00:01:58,120 - 00:02:03,260] very simplified version of the structure of a molecule.
+- [00:02:08,100 - 00:02:10,979] But it's enough to see what the problem is.
+- [00:02:13,040 - 00:02:16,040] Let's replace the point molecule.
+- [00:02:16,440 - 00:02:16,960] Oh,
+- [00:02:16,960 - 00:02:17,440] darn it.
+- [00:02:24,620 - 00:02:31,120] Let's replace the point molecule by a pair of atoms,
+- [00:02:31,120 - 00:02:35,400] which are connected by a rigid
+- [00:02:35,400 - 00:02:35,800] rod.
+- [00:02:36,240 - 00:02:36,920] Now,
+- [00:02:36,920 - 00:02:39,400] in the notes that are on the internet,
+- [00:02:39,400 - 00:02:43,720] which are available to you,
+- [00:02:43,720 - 00:02:45,380] I did the problem
+- [00:02:45,380 - 00:02:49,460] explicitly of a molecule built like this,
+- [00:02:49,460 - 00:02:52,740] which is free to rotate around in three dimensions.
+- [00:02:52,800 - 00:02:53,180] Okay.
+- [00:02:53,200 - 00:02:55,320] So I'm going to simplify it here,
+- [00:02:55,320 - 00:02:57,560] because all of the essence of
+- [00:02:57,560 - 00:02:59,800] it is in a simpler story.
+- [00:03:00,120 - 00:03:00,840] Namely,
+- [00:03:00,840 - 00:03:05,460] the molecule is only free to rotate in a plane.
+- [00:03:06,100 - 00:03:06,960] All right.
+- [00:03:07,000 - 00:03:12,660] So the molecule is free to rotate around an axis.
+- [00:03:12,900 - 00:03:16,080] And the axis could be one of the atoms.
+- [00:03:16,779 - 00:03:19,279] A simple example would be that there's
+- [00:03:19,279 - 00:03:21,780] a heavy atom and a light atom.
+- [00:03:23,200 - 00:03:25,230] The heavier atom will tend
+- [00:03:25,230 - 00:03:27,260] not to move around so much,
+- [00:03:27,260 - 00:03:29,540] and the light atom will revolve around
+- [00:03:29,540 - 00:03:33,540] it at the end of this entirely rigid rod.
+- [00:03:34,080 - 00:03:34,700] Okay.
+- [00:03:34,700 - 00:03:40,460] The atom has,
+- [00:03:40,460 - 00:03:45,980] in addition to the usual kinetic energy of motion,
+- [00:03:45,980 - 00:03:47,620] overall motion,
+- [00:03:47,620 - 00:03:48,980] it has an
+- [00:03:48,980 - 00:03:50,540] additional energy of rotation.
+- [00:03:51,180 - 00:03:54,940] And that additional energy of rotation can be excited,
+- [00:03:54,940 - 00:03:56,300] for example,
+- [00:03:56,300 - 00:03:57,300] by collisions between
+- [00:03:57,300 - 00:03:58,380] two such molecules.
+- [00:03:58,520 - 00:04:00,220] Two such molecules come together,
+- [00:04:00,220 - 00:04:02,160] and they hit each other off center,
+- [00:04:02,160 - 00:04:03,400] and even if they
+- [00:04:03,400 - 00:04:04,360] weren't rotating,
+- [00:04:04,360 - 00:04:04,680] they would rotate.
+- [00:04:04,680 - 00:04:05,760] And after they hit each other,
+- [00:04:05,760 - 00:04:06,740] they will start rotating.
+- [00:04:07,320 - 00:04:10,280] So the rotational energy is part of the energy,
+- [00:04:10,280 - 00:04:12,800] and it has to be accounted for in studying
+- [00:04:12,800 - 00:04:14,650] the statistical mechanics and the energetics
+- [00:04:14,650 - 00:04:16,500] of this gas of these molecules.
+- [00:04:18,160 - 00:04:18,660] Okay.
+- [00:04:21,940 - 00:04:25,700] So let's first consider the energy of rotation.
+- [00:04:26,380 - 00:04:27,340] And as I said,
+- [00:04:27,340 - 00:04:27,980] for simplicity,
+- [00:04:27,980 - 00:04:29,400] this is purely for simplicity,
+- [00:04:29,400 - 00:04:31,900] let's take one of the atoms
+- [00:04:31,900 - 00:04:34,360] to be heavy enough that it moves.
+- [00:04:34,360 - 00:04:34,660] Okay.
+- [00:04:34,680 - 00:04:36,400] And it's a much lower velocity than the other one.
+- [00:04:36,780 - 00:04:37,220] Really,
+- [00:04:37,220 - 00:04:37,780] of course,
+- [00:04:37,780 - 00:04:42,940] the complex system rotates about its center of mass.
+- [00:04:43,540 - 00:04:45,080] But if one of the atoms is heavy,
+- [00:04:45,080 - 00:04:47,920] then the center of mass is close to that atom.
+- [00:04:48,020 - 00:04:49,060] It's like the solar system.
+- [00:04:49,420 - 00:04:51,580] The solar system revolves around the sun.
+- [00:04:51,820 - 00:04:52,180] Well,
+- [00:04:52,180 - 00:04:52,640] not quite.
+- [00:04:52,940 - 00:04:54,840] The earth doesn't quite revolve around the sun.
+- [00:04:54,940 - 00:04:56,790] The sun and the earth revolve around the point
+- [00:04:56,790 - 00:04:58,640] which is the center of mass of the sun and
+- [00:04:58,640 - 00:04:58,940] the earth,
+- [00:04:58,940 - 00:05:01,080] assuming we didn't have to worry about Jupiter.
+- [00:05:03,060 - 00:05:04,660] But it's not such a big deal.
+- [00:05:04,660 - 00:05:06,050] It's just such a bad approximation to put the
+- [00:05:06,050 - 00:05:07,440] sun at the center and say the earth moves
+- [00:05:07,440 - 00:05:07,980] around it.
+- [00:05:08,980 - 00:05:10,140] And in that case,
+- [00:05:10,140 - 00:05:14,280] you can ignore the motion of the central one,
+- [00:05:14,280 - 00:05:14,900] the heavy one,
+- [00:05:14,900 - 00:05:15,820] and the
+- [00:05:15,820 - 00:05:17,670] kinetic energy involved is just the kinetic
+- [00:05:17,670 - 00:05:19,520] energy of the light one moving around.
+- [00:05:20,060 - 00:05:20,540] Okay.
+- [00:05:20,600 - 00:05:21,520] This is not essential.
+- [00:05:21,740 - 00:05:24,240] This is in no way essential to the story.
+- [00:05:25,200 - 00:05:25,680] Okay.
+- [00:05:25,780 - 00:05:28,680] So what is the energy of such a molecule?
+- [00:05:29,120 - 00:05:29,500] Well,
+- [00:05:29,500 - 00:05:30,220] first of all,
+- [00:05:30,220 - 00:05:33,020] there's a translational degree of freedom of the molecule.
+- [00:05:33,020 - 00:05:35,520] That just means the motion of the center of mass.
+- [00:05:37,040 - 00:05:40,940] And its energy is exactly what you would expect.
+- [00:05:41,240 - 00:05:44,370] It's the total momentum squared divided by
+- [00:05:44,370 - 00:05:47,500] twice the total mass of the molecule.
+- [00:05:48,920 - 00:05:51,750] I'll use capital M to indicate
+- [00:05:51,750 - 00:05:54,580] the total mass of the composite molecule.
+- [00:05:56,100 - 00:05:58,180] And that's one of the terms in the energy.
+- [00:05:58,380 - 00:05:58,800] And there's,
+- [00:05:58,800 - 00:05:59,060] of course,
+- [00:05:59,060 - 00:06:00,740] a term like that for each molecule,
+- [00:06:00,740 - 00:06:01,940] so there's really a summation
+- [00:06:01,940 - 00:06:02,340] sign,
+- [00:06:02,340 - 00:06:03,900] which I won't bother writing out.
+- [00:06:04,820 - 00:06:07,300] And then there's the rotational energy.
+- [00:06:07,600 - 00:06:09,380] So for the rotational energy,
+- [00:06:09,380 - 00:06:11,860] let's just imagine the center of
+- [00:06:11,860 - 00:06:14,340] mass is at one of these molecules,
+- [00:06:14,460 - 00:06:16,860] and the other one gets to move in a circle.
+- [00:06:18,400 - 00:06:20,060] It gets to move in a circle,
+- [00:06:20,060 - 00:06:21,810] and let's take the radius of
+- [00:06:21,810 - 00:06:23,560] the molecule to be small r.
+- [00:06:24,480 - 00:06:25,040] Okay.
+- [00:06:25,180 - 00:06:26,780] So what is the kinetic energy?
+- [00:06:27,860 - 00:06:31,920] Let's take the light atom and make its mass r.
+- [00:06:31,920 - 00:06:32,640] It's little m.
+- [00:06:33,660 - 00:06:34,600] And of course,
+- [00:06:34,600 - 00:06:36,560] the kinetic energy of rotation is
+- [00:06:36,560 - 00:06:38,520] nothing but the kinetic energy of moving
+- [00:06:38,520 - 00:06:39,500] around in the circle.
+- [00:06:39,840 - 00:06:44,560] It's just m times the angular velocity,
+- [00:06:44,560 - 00:06:45,640] not the angular velocity,
+- [00:06:45,640 - 00:06:47,140] but the tangential velocity,
+- [00:06:47,700 - 00:06:49,220] let's call it v squared,
+- [00:06:49,220 - 00:06:51,720] divided by 2.
+- [00:06:52,020 - 00:06:54,040] This is not the overall velocity.
+- [00:06:54,280 - 00:06:57,460] This is the component of the velocity if we
+- [00:06:57,460 - 00:07:00,640] pretended that the center of mass was standing still.
+- [00:07:01,920 - 00:07:04,120] It's the velocity around in the circular velocity,
+- [00:07:04,120 - 00:07:05,460] and that's it.
+- [00:07:05,540 - 00:07:06,360] That's the kinetic energy.
+- [00:07:07,640 - 00:07:09,060] Let me rewrite that.
+- [00:07:09,560 - 00:07:14,250] The velocity moving around in the
+- [00:07:14,250 - 00:07:18,940] circle is proportional to the angular velocity.
+- [00:07:19,260 - 00:07:22,120] So let's call the angular velocity theta dot,
+- [00:07:22,120 - 00:07:24,340] the time derivative of the angle,
+- [00:07:24,340 - 00:07:28,100] the angular
+- [00:07:28,100 - 00:07:29,480] orientation of the molecule.
+- [00:07:29,680 - 00:07:31,460] Theta dot times what?
+- [00:07:31,460 - 00:07:32,320] r.
+- [00:07:33,060 - 00:07:33,680] R.
+- [00:07:33,680 - 00:07:34,520] Theta dot times r.
+- [00:07:34,820 - 00:07:36,460] And we can plug this in here,
+- [00:07:36,460 - 00:07:40,020] and this gives us m r squared.
+- [00:07:40,180 - 00:07:43,500] And r now is not a dynamical variable.
+- [00:07:43,860 - 00:07:47,010] It's the fixed length of the
+- [00:07:47,010 - 00:07:50,160] rigid rod connecting the two atoms.
+- [00:07:50,540 - 00:07:52,410] That's of course associated with
+- [00:07:52,410 - 00:07:54,280] the rigidity of certain molecular bonds.
+- [00:07:54,940 - 00:07:57,240] Sometimes molecular bonds are pretty rigid,
+- [00:07:57,240 - 00:07:59,320] and this would be an instance in which the
+- [00:07:59,320 - 00:08:01,200] molecular bond was very,
+- [00:08:01,200 - 00:08:01,440] very rigid.
+- [00:08:01,440 - 00:08:04,720] And it didn't allow much inward outward motion.
+- [00:08:05,200 - 00:08:05,840] Now,
+- [00:08:05,840 - 00:08:08,500] so this becomes m r squared over 2,
+- [00:08:08,500 - 00:08:12,820] times theta dot squared.
+- [00:08:15,960 - 00:08:16,600] Now,
+- [00:08:16,600 - 00:08:17,980] m r squared,
+- [00:08:17,980 - 00:08:22,260] is just a constant,
+- [00:08:22,260 - 00:08:23,920] and has a name.
+- [00:08:24,040 - 00:08:25,080] This is the moment of inertia.
+- [00:08:26,140 - 00:08:27,550] So we can give it a
+- [00:08:27,550 - 00:08:28,960] name and it's usually called i.
+- [00:08:29,760 - 00:08:31,040] And again,
+- [00:08:31,040 - 00:08:31,380] there's no Cin
+- [00:08:31,380 - 00:08:31,380] n,
+- [00:08:31,380 - 00:08:31,420] the moment of inertia.
+- [00:08:31,420 - 00:08:33,539] times theta dot squared.
+- [00:08:33,539 - 00:08:35,799] And for our purposes,
+- [00:08:35,799 - 00:08:38,820] the definition of the moment of inertia is nothing but
+- [00:08:38,820 - 00:08:39,520] mr squared.
+- [00:08:39,520 - 00:08:41,659] It's just a symbol that
+- [00:08:41,659 - 00:08:43,799] I use to simplify the formula.
+- [00:08:43,799 - 00:08:47,000] I over 2 times theta dot squared.
+- [00:08:48,500 - 00:08:50,060] Now theta dot,
+- [00:08:50,060 - 00:08:50,860] or theta,
+- [00:08:50,860 - 00:08:51,800] excuse me,
+- [00:08:51,800 - 00:08:54,020] is a generalized coordinate.
+- [00:08:54,020 - 00:08:56,860] If we go back to our studies of mechanics,
+- [00:08:56,860 - 00:09:02,340] we remember that we can think of any possible description of the
+- [00:09:02,340 - 00:09:07,820] coordinates of a system as being more or less on an equal footing,
+- [00:09:08,060 - 00:09:13,160] and work either with position along here,
+- [00:09:13,160 - 00:09:14,900] or we can work with angle,
+- [00:09:14,900 - 00:09:18,920] and apply the standard rules of classical mechanics.
+- [00:09:19,220 - 00:09:22,100] The standard rules of classical mechanics involve,
+- [00:09:22,100 - 00:09:23,220] among other things,
+- [00:09:23,220 - 00:09:25,660] constructing a Hamiltonian,
+- [00:09:25,720 - 00:09:26,840] which is a very simple thing.
+- [00:09:28,140 - 00:09:29,340] Constructing momenta,
+- [00:09:29,340 - 00:09:32,320] which are conjugate to the coordinates.
+- [00:09:32,320 - 00:09:34,540] The coordinate in this case is theta,
+- [00:09:34,740 - 00:09:39,260] and the momentum conjugate to it is called angular momentum.
+- [00:09:39,960 - 00:09:40,560] Alright,
+- [00:09:40,560 - 00:09:41,680] what is the rule?
+- [00:09:41,680 - 00:09:42,820] Incidentally,
+- [00:09:42,820 - 00:09:45,220] this is the kinetic energy.
+- [00:09:45,220 - 00:09:47,140] It's also the Lagrangian.
+- [00:09:47,220 - 00:09:48,980] For those who like Lagrangians,
+- [00:09:48,980 - 00:09:52,580] this happens to be the Lagrangian of the circular motion.
+- [00:09:53,000 - 00:09:54,380] So think of it that way.
+- [00:09:54,800 - 00:09:56,840] What is the definition of angular momentum?
+- [00:09:56,840 - 00:10:00,280] The definition of the momentum conjugate to theta.
+- [00:10:01,080 - 00:10:03,440] Anybody remember the definition of conjugate momentum?
+- [00:10:05,700 - 00:10:08,710] The derivative of the Lagrangian with respect
+- [00:10:08,710 - 00:10:11,720] to the time derivative of the coordinate.
+- [00:10:12,740 - 00:10:13,380] So,
+- [00:10:13,380 - 00:10:16,000] that just means the derivative of
+- [00:10:16,000 - 00:10:18,620] the Lagrangian with respect to theta dot.
+- [00:10:20,540 - 00:10:22,480] So the angular momentum...
+- [00:10:22,480 - 00:10:23,440] Now,
+- [00:10:23,440 - 00:10:25,130] I had a reason for not
+- [00:10:25,130 - 00:10:26,820] writing that this is equal to theta.
+- [00:10:26,820 - 00:10:27,140] It's equal to L,
+- [00:10:27,140 - 00:10:28,000] the Lagrangian.
+- [00:10:29,900 - 00:10:34,500] Because the standard symbol for angular momentum is also L.
+- [00:10:35,800 - 00:10:36,960] Sorry about that.
+- [00:10:37,900 - 00:10:41,120] The L that I'm writing here is not the Lagrangian.
+- [00:10:41,220 - 00:10:42,580] It is the angular momentum,
+- [00:10:42,580 - 00:10:44,460] standard symbol.
+- [00:10:44,980 - 00:10:47,330] And it's equal to the derivative of
+- [00:10:47,330 - 00:10:49,680] this object with respect to theta dot.
+- [00:10:50,800 - 00:10:51,920] Just as...
+- [00:10:51,920 - 00:10:51,980] Well,
+- [00:10:51,980 - 00:10:52,760] you know the story.
+- [00:10:52,760 - 00:10:53,620] I don't have to tell you.
+- [00:10:53,680 - 00:10:56,500] So the angular momentum is just I.
+- [00:10:57,480 - 00:10:58,260] Theta dot.
+- [00:11:01,100 - 00:11:01,660] Now,
+- [00:11:01,660 - 00:11:02,160] again,
+- [00:11:02,160 - 00:11:03,480] this is not Lagrangian.
+- [00:11:03,580 - 00:11:04,020] Oh,
+- [00:11:04,020 - 00:11:06,350] I suppose I could write
+- [00:11:06,350 - 00:11:08,680] this as scripty L for Lagrangian.
+- [00:11:08,900 - 00:11:10,380] This is angular momentum,
+- [00:11:10,380 - 00:11:12,760] and it's I times theta dot.
+- [00:11:14,500 - 00:11:17,420] Let's now rewrite the kinetic energy in
+- [00:11:17,420 - 00:11:20,340] terms of angular momentum instead of theta dot.
+- [00:11:20,620 - 00:11:22,620] Here we have it in terms of theta dot.
+- [00:11:23,520 - 00:11:24,360] Easy enough.
+- [00:11:24,440 - 00:11:26,080] We just solve for theta dot.
+- [00:11:26,080 - 00:11:29,060] In terms of I and L.
+- [00:11:29,320 - 00:11:30,760] And plug it back in.
+- [00:11:31,160 - 00:11:33,040] What do we get for the kinetic energy?
+- [00:11:33,360 - 00:11:38,530] We get the extra term in the kinetic energy
+- [00:11:38,530 - 00:11:43,700] is L squared over twice the moment of inertia.
+- [00:11:45,460 - 00:11:47,220] When we square theta dot,
+- [00:11:47,220 - 00:11:50,360] we get L squared over I squared.
+- [00:11:50,940 - 00:11:51,460] Well,
+- [00:11:51,460 - 00:11:53,140] there's an I in the numerator here,
+- [00:11:53,140 - 00:11:55,280] I squared in the denominator.
+- [00:11:55,280 - 00:11:56,580] We get one over I.
+- [00:11:56,860 - 00:11:58,540] So L squared over I.
+- [00:11:58,820 - 00:12:02,440] And this becomes now the energy of
+- [00:12:02,440 - 00:12:06,060] a molecule in terms of its linear momentum.
+- [00:12:06,840 - 00:12:07,640] That's this.
+- [00:12:08,000 - 00:12:09,880] There are three components of it,
+- [00:12:09,880 - 00:12:11,720] just as there would be for a point particle.
+- [00:12:13,030 - 00:12:15,220] And one additional momentum,
+- [00:12:15,220 - 00:12:17,580] namely the angular momentum.
+- [00:12:18,120 - 00:12:20,700] This is the expression for the energy.
+- [00:12:25,280 - 00:12:26,040] The new thing now,
+- [00:12:26,040 - 00:12:26,340] though,
+- [00:12:26,340 - 00:12:29,180] from the point of view of statistical mechanics,
+- [00:12:29,180 - 00:12:31,480] is that
+- [00:12:31,480 - 00:12:34,680] a configuration involves the position,
+- [00:12:34,680 - 00:12:38,000] the overall center of mass position,
+- [00:12:38,000 - 00:12:39,860] the momentum,
+- [00:12:40,060 - 00:12:42,620] and also the angular momentum of,
+- [00:12:42,620 - 00:12:45,160] and also the angular coordinates.
+- [00:12:47,200 - 00:12:47,860] Okay.
+- [00:12:48,680 - 00:12:49,640] Here's a rule.
+- [00:12:50,000 - 00:12:51,760] And I think you probably
+- [00:12:51,760 - 00:12:53,520] discovered this by yourself by now.
+- [00:12:53,800 - 00:12:54,530] That whenever the energy of a
+- [00:12:54,530 - 00:12:55,260] molecule is in the center of mass,
+- [00:12:55,260 - 00:12:55,260] it's the same as the
+- [00:12:55,260 - 00:12:55,760] energy of a molecule.
+- [00:12:55,760 - 00:12:55,760] So essentially,
+- [00:12:55,760 - 00:12:57,820] energy consists of two terms
+- [00:12:57,820 - 00:12:59,880] that are independent of each other,
+- [00:12:59,880 - 00:13:00,560] with
+- [00:13:00,560 - 00:13:02,140] no interaction between them.
+- [00:13:02,260 - 00:13:02,920] And here,
+- [00:13:02,920 - 00:13:04,820] there's no interaction between the
+- [00:13:04,820 - 00:13:06,720] rotational motion and the translational motion.
+- [00:13:06,960 - 00:13:07,920] There's nothing,
+- [00:13:07,920 - 00:13:08,680] for example,
+- [00:13:08,680 - 00:13:10,300] in this expression,
+- [00:13:10,300 - 00:13:12,200] which links these two terms together,
+- [00:13:12,200 - 00:13:12,880] rotation
+- [00:13:12,880 - 00:13:15,880] can happen independently of translational motion,
+- [00:13:15,880 - 00:13:18,500] nothing to link them together.
+- [00:13:18,700 - 00:13:21,500] When you have a situation where there
+- [00:13:21,500 - 00:13:24,300] are two completely independent degrees of freedom,
+- [00:13:25,300 - 00:13:26,700] the partition function
+- [00:13:27,620 - 00:13:28,340] factorizes.
+- [00:13:28,340 - 00:13:29,960] In other words,
+- [00:13:29,960 - 00:13:32,360] let's first write out the partition function
+- [00:13:33,120 - 00:13:34,640] for a single particle.
+- [00:13:34,640 - 00:13:36,900] Let's put a single molecule in
+- [00:13:37,719 - 00:13:39,380] at a certain temperature.
+- [00:13:39,380 - 00:13:42,240] Then the partition function for that single
+- [00:13:42,240 - 00:13:45,100] molecule is the sum or the integral,
+- [00:13:46,020 - 00:13:47,880] the sum over all the configurations.
+- [00:13:48,500 - 00:13:50,140] I won't write that yet,
+- [00:13:50,140 - 00:13:51,960] but let's write e to the minus beta,
+- [00:13:51,960 - 00:13:54,620] and now we have the usual.
+- [00:13:55,180 - 00:13:58,720] Let's try the p squared over twice the mass.
+- [00:14:00,720 - 00:14:01,340] That's it,
+- [00:14:01,340 - 00:14:01,560] right?
+- [00:14:02,420 - 00:14:02,940] Yep,
+- [00:14:02,940 - 00:14:05,880] and then plus l squared over 2i,
+- [00:14:05,880 - 00:14:07,440] but let's just write that as a product,
+- [00:14:07,440 - 00:14:08,540] e to the minus beta,
+- [00:14:08,740 - 00:14:10,960] l squared over 2i.
+- [00:14:13,340 - 00:14:14,920] We have to sum this
+- [00:14:15,580 - 00:14:17,860] over all the configurations of
+- [00:14:17,880 - 00:14:18,340] the particle.
+- [00:14:18,340 - 00:14:19,560] That means,
+- [00:14:19,560 - 00:14:20,360] first of all,
+- [00:14:20,800 - 00:14:25,080] integrating over the center of mass location of the atom.
+- [00:14:25,080 - 00:14:27,100] That's exactly the usual
+- [00:14:27,100 - 00:14:28,900] d cubed x.
+- [00:14:31,420 - 00:14:35,680] We have to integrate over the momentum of
+- [00:14:36,420 - 00:14:38,280] the linear momentum of the particle.
+- [00:14:38,280 - 00:14:41,520] That's the usual d cubed p.
+- [00:14:43,940 - 00:14:45,720] But now there are new coordinates
+- [00:14:45,720 - 00:14:47,500] that we have to integrate over.
+- [00:14:47,880 - 00:14:48,720] Namely,
+- [00:14:48,720 - 00:14:52,120] the position of the molecule along
+- [00:14:52,120 - 00:14:55,520] the circle and its angular momentum.
+- [00:14:55,780 - 00:14:58,940] Just as we integrated over position and momentum here,
+- [00:14:58,940 - 00:15:01,270] we have to integrate over
+- [00:15:01,270 - 00:15:03,600] angular position and angular momentum.
+- [00:15:04,140 - 00:15:07,620] So we might as well write down another integral here,
+- [00:15:08,700 - 00:15:12,080] d theta d l.
+- [00:15:14,040 - 00:15:15,100] And that's it.
+- [00:15:15,100 - 00:15:17,260] That's the partition function for a single particle.
+- [00:15:17,880 - 00:15:20,720] What would the partition function be for n particles?
+- [00:15:22,540 - 00:15:23,020] Well,
+- [00:15:23,020 - 00:15:25,580] it would be a multiple integral of a similar kind,
+- [00:15:25,580 - 00:15:28,120] but we've already learned from experience
+- [00:15:28,699 - 00:15:30,480] that when you have n particles,
+- [00:15:31,500 - 00:15:33,580] it's just the nth power of
+- [00:15:33,580 - 00:15:35,660] the partition function for one particle.
+- [00:15:36,980 - 00:15:39,400] So later on we can remember that
+- [00:15:39,400 - 00:15:41,820] we should take the nth power of this,
+- [00:15:41,820 - 00:15:42,700] capital N,
+- [00:15:42,920 - 00:15:44,620] where n is the number of particles.
+- [00:15:44,620 - 00:15:45,850] This is the central thing that
+- [00:15:45,850 - 00:15:47,080] we have to be able to compute.
+- [00:15:48,220 - 00:15:48,740] Okay.
+- [00:15:48,740 - 00:15:50,420] First of all,
+- [00:15:50,420 - 00:15:51,980] the integral over the position,
+- [00:15:51,980 - 00:15:55,620] that's as always the volume to the nth power.
+- [00:15:57,880 - 00:16:00,800] Let's throw in our friend the 1 over n factorial,
+- [00:16:00,800 - 00:16:03,140] which I forgot to put into this formula here,
+- [00:16:03,240 - 00:16:04,380] and I don't have enough room anymore.
+- [00:16:04,380 - 00:16:04,740] Yeah,
+- [00:16:04,740 - 00:16:05,300] we can put it in.
+- [00:16:05,300 - 00:16:06,100] 1 over n factorial.
+- [00:16:08,100 - 00:16:11,540] The usual 1 over n factorial for identity of particles.
+- [00:16:12,540 - 00:16:13,060] Okay.
+- [00:16:13,060 - 00:16:15,240] Volume to the nth comes,
+- [00:16:15,240 - 00:16:16,340] or volume...
+- [00:16:19,260 - 00:16:19,740] Yeah,
+- [00:16:19,740 - 00:16:21,540] we're only doing it for one particle,
+- [00:16:21,540 - 00:16:23,140] so let's just do it for one particle.
+- [00:16:23,260 - 00:16:23,660] Volume,
+- [00:16:23,660 - 00:16:24,100] period.
+- [00:16:24,100 - 00:16:25,940] We'll come back to the multiple.
+- [00:16:26,740 - 00:16:28,860] Volume from dp of d cubed x.
+- [00:16:29,400 - 00:16:29,880] Now,
+- [00:16:29,880 - 00:16:32,550] do you remember what we got by integrating e to
+- [00:16:32,550 - 00:16:35,220] the minus beta p squared over 2m d cubed p?
+- [00:16:36,720 - 00:16:37,660] I'm trying to remember.
+- [00:16:38,280 - 00:16:40,700] I think for each moment...
+- [00:16:41,240 - 00:16:47,860] It's the square root of 2m pi over...
+- [00:16:47,880 - 00:16:50,580] 2m pi over beta to the third power,
+- [00:16:50,580 - 00:16:54,240] and the 3 comes from the three dimensions of space.
+- [00:16:55,360 - 00:16:55,880] Okay,
+- [00:16:55,880 - 00:16:57,580] so it's 2m pi over
+- [00:16:57,580 - 00:16:59,280] beta to the three halves power.
+- [00:17:00,200 - 00:17:00,720] Okay,
+- [00:17:00,720 - 00:17:01,400] so we have that.
+- [00:17:01,400 - 00:17:04,220] But now we have another factor coming from here.
+- [00:17:04,540 - 00:17:08,579] The other factor coming from here looks exactly like...
+- [00:17:08,579 - 00:17:08,859] Oh,
+- [00:17:08,859 - 00:17:09,319] what about,
+- [00:17:09,319 - 00:17:09,800] first of all,
+- [00:17:09,800 - 00:17:10,579] the theta integration?
+- [00:17:11,240 - 00:17:12,839] What does the theta integration give?
+- [00:17:13,140 - 00:17:13,880] 2 pi.
+- [00:17:14,579 - 00:17:16,319] It's sort of like the volume,
+- [00:17:16,319 - 00:17:17,859] except the volume is just...
+- [00:17:17,859 - 00:17:18,260] 2 pi.
+- [00:17:19,380 - 00:17:22,380] The volume of the theta variable is just 2 pi.
+- [00:17:22,900 - 00:17:24,770] So if I really want to
+- [00:17:24,770 - 00:17:26,640] keep track of all the numerical constants,
+- [00:17:27,300 - 00:17:28,760] there's a factor of 2 pi,
+- [00:17:28,760 - 00:17:30,680] and then I get to erase the d theta.
+- [00:17:32,520 - 00:17:33,160] All right,
+- [00:17:33,160 - 00:17:35,800] and then there is the integral dl.
+- [00:17:37,220 - 00:17:37,720] Now,
+- [00:17:37,720 - 00:17:39,510] the integral of dl is the same
+- [00:17:39,510 - 00:17:41,300] kind of integral that we did here.
+- [00:17:41,440 - 00:17:41,680] Again,
+- [00:17:41,680 - 00:17:43,100] it's a Gaussian integral.
+- [00:17:43,700 - 00:17:44,800] Easy to do.
+- [00:17:45,920 - 00:17:47,760] Instead of being to the third...
+- [00:17:47,860 - 00:17:47,980] So the third power,
+- [00:17:47,980 - 00:17:50,440] since there's only one angle,
+- [00:17:50,440 - 00:17:51,560] not three angles,
+- [00:17:51,560 - 00:17:52,660] there's only one angle,
+- [00:17:54,600 - 00:17:56,740] there's just a single integration to do here,
+- [00:17:56,740 - 00:17:58,740] but it's the same kind of integration.
+- [00:17:59,260 - 00:18:00,600] The only difference is,
+- [00:18:00,600 - 00:18:01,840] instead of where you see m,
+- [00:18:01,840 - 00:18:04,360] you now have i.
+- [00:18:05,680 - 00:18:09,740] So the next factor would be square
+- [00:18:09,740 - 00:18:13,800] root of 2i pi divided by beta,
+- [00:18:13,800 - 00:18:16,160] and that's it.
+- [00:18:18,600 - 00:18:20,020] One more factor.
+- [00:18:20,680 - 00:18:23,850] Another way of saying it is there were
+- [00:18:23,850 - 00:18:27,020] three directions of space plus an extra internal direction,
+- [00:18:27,380 - 00:18:31,120] and so the third power of 1 over beta
+- [00:18:31,120 - 00:18:34,860] got replaced by the fourth power of 1 over beta.
+- [00:18:35,020 - 00:18:36,740] One extra power of 1 over beta.
+- [00:18:37,680 - 00:18:40,580] The extra volume coming from the
+- [00:18:40,580 - 00:18:43,480] integration over the position of the circle,
+- [00:18:43,480 - 00:18:46,240] that's just a numerical factor of 2 pi.
+- [00:18:47,960 - 00:18:52,340] This is the partition function for a
+- [00:18:52,340 - 00:18:56,720] single diatomic molecule of a particularly simple kind.
+- [00:18:57,580 - 00:18:59,610] Now notice I have restricted the
+- [00:18:59,610 - 00:19:01,640] molecule to move in a plane.
+- [00:19:02,020 - 00:19:05,460] A real molecule can move around in all three dimensions,
+- [00:19:05,460 - 00:19:07,580] and it gets a little more complicated,
+- [00:19:07,880 - 00:19:10,520] but I wanted to do the simplest example,
+- [00:19:10,520 - 00:19:13,350] and the notes is the example where the
+- [00:19:13,350 - 00:19:16,180] rigid molecule can move around in three dimensions.
+- [00:19:17,860 - 00:19:20,780] So this would be the simplest diatomic molecule,
+- [00:19:20,780 - 00:19:25,660] and we would raise that to the nth power
+- [00:19:27,640 - 00:19:31,980] and divide by n factorial
+- [00:19:31,980 - 00:19:36,320] for a gas of n particles.
+- [00:19:40,960 - 00:19:42,320] As I said,
+- [00:19:42,320 - 00:19:43,440] the only new thing is this.
+- [00:19:43,580 - 00:19:45,740] Let's put a box around it.
+- [00:19:46,640 - 00:19:47,700] The diatomic...
+- [00:19:47,860 - 00:19:51,060] The simplest possible diatomic molecule.
+- [00:19:56,520 - 00:19:57,100] Oh,
+- [00:19:57,100 - 00:19:58,640] exactly the equations I needed.
+- [00:19:59,680 - 00:20:02,540] I think we've seen these before at
+- [00:20:02,540 - 00:20:05,400] some point in the history of our studies.
+- [00:20:12,780 - 00:20:13,360] Yeah,
+- [00:20:13,360 - 00:20:14,360] it's a Newtonian limit.
+- [00:20:15,080 - 00:20:15,640] Yeah,
+- [00:20:15,640 - 00:20:18,440] it's a geodesic equation in the Newtonian limit.
+- [00:20:18,820 - 00:20:21,600] That's what's going on here.
+- [00:20:22,760 - 00:20:23,540] All right.
+- [00:20:28,600 - 00:20:29,160] Okay,
+- [00:20:29,160 - 00:20:30,620] so let's rewrite it.
+- [00:20:32,300 - 00:20:32,860] No,
+- [00:20:32,860 - 00:20:33,920] let's not rewrite it.
+- [00:20:33,940 - 00:20:34,940] Let's take this logarithm.
+- [00:20:35,260 - 00:20:37,420] The main thing that we're interested in
+- [00:20:37,420 - 00:20:39,580] usually is the logarithm of the partition function.
+- [00:20:42,200 - 00:20:44,340] Logarithm of the partition function.
+- [00:20:44,340 - 00:20:45,300] The partition is,
+- [00:20:45,300 - 00:20:46,260] as always,
+- [00:20:46,260 - 00:20:50,120] proportional to n.
+- [00:20:53,080 - 00:20:53,460] Well,
+- [00:20:53,460 - 00:20:56,880] let's be a little bit slow.
+- [00:20:57,000 - 00:20:58,260] Let's actually just do it.
+- [00:20:58,860 - 00:21:03,620] n minus n log n factorial,
+- [00:21:03,620 - 00:21:06,780] coming from the n factorial in the denominator,
+- [00:21:06,780 - 00:21:09,180] volume to the nth...
+- [00:21:09,180 - 00:21:09,820] Sorry.
+- [00:21:09,920 - 00:21:13,120] Plus n log volume.
+- [00:21:13,560 - 00:21:14,320] Sorry.
+- [00:21:14,320 - 00:21:17,080] Plus n log of the volume.
+- [00:21:17,820 - 00:21:20,130] You can combine these together so that
+- [00:21:20,130 - 00:21:22,440] it involves the logarithm of the density.
+- [00:21:22,740 - 00:21:25,500] I showed you how to do that using Stirling's approximation,
+- [00:21:25,500 - 00:21:28,360] but I'm not going to bother even doing it.
+- [00:21:28,440 - 00:21:29,320] We've done that before.
+- [00:21:29,500 - 00:21:31,180] You would do exactly the same thing here.
+- [00:21:31,500 - 00:21:33,060] And then you get plus,
+- [00:21:33,060 - 00:21:34,080] plus,
+- [00:21:34,080 - 00:21:35,440] or minus,
+- [00:21:35,440 - 00:21:40,860] minus 3 halves logarithm of beta.
+- [00:21:42,180 - 00:21:44,680] There's also the logarithm,
+- [00:21:44,680 - 00:21:46,480] 3 halves,
+- [00:21:46,480 - 00:21:48,100] the logarithm of 2m pi.
+- [00:21:48,520 - 00:21:50,740] I'll include that at the end over here.
+- [00:21:52,080 - 00:21:53,980] But let's not worry about it for the moment.
+- [00:21:54,180 - 00:21:55,680] And now there is...
+- [00:21:55,680 - 00:21:56,100] Oh,
+- [00:21:56,100 - 00:21:57,200] sorry,
+- [00:21:57,200 - 00:21:58,380] you didn't correct me.
+- [00:21:58,460 - 00:22:01,420] There's 3n log beta.
+- [00:22:01,600 - 00:22:03,360] 3 over 2n log beta.
+- [00:22:03,740 - 00:22:04,660] But now,
+- [00:22:04,660 - 00:22:08,060] from the beta dependence in the last term there,
+- [00:22:08,060 - 00:22:09,100] let's write it explicitly.
+- [00:22:09,100 - 00:22:13,060] Minus another n log beta.
+- [00:22:14,540 - 00:22:17,080] And then a whole bunch of constants.
+- [00:22:17,900 - 00:22:19,980] Logarithm of 2m pi,
+- [00:22:19,980 - 00:22:22,800] logarithm of 2i pi.
+- [00:22:23,020 - 00:22:24,500] All those constants.
+- [00:22:24,880 - 00:22:26,180] Logarithm of 2pi.
+- [00:22:26,860 - 00:22:28,280] All the various constants.
+- [00:22:28,640 - 00:22:32,720] Let's just add them up here and call it constant.
+- [00:22:33,640 - 00:22:38,920] A numerical addition to the log of the partition function.
+- [00:22:39,100 - 00:22:42,660] Which will not contribute to anything interesting.
+- [00:22:43,180 - 00:22:44,280] You got a factor 2.
+- [00:22:44,280 - 00:22:46,050] I don't think the first term
+- [00:22:46,050 - 00:22:47,820] should be just log n factorial.
+- [00:22:48,240 - 00:22:48,460] Yeah.
+- [00:22:50,140 - 00:22:50,700] Good,
+- [00:22:50,700 - 00:22:51,280] thank you.
+- [00:22:51,820 - 00:22:53,220] Or minus log n.
+- [00:22:53,820 - 00:22:54,380] Yeah,
+- [00:22:54,380 - 00:22:55,740] minus log n factorial.
+- [00:22:59,740 - 00:23:01,110] You get a factor 2 in
+- [00:23:01,110 - 00:23:02,480] the second to the last term.
+- [00:23:03,740 - 00:23:04,560] Which one?
+- [00:23:04,860 - 00:23:05,760] n log beta.
+- [00:23:06,060 - 00:23:06,620] Here?
+- [00:23:09,100 - 00:23:09,500] Next one.
+- [00:23:10,120 - 00:23:11,740] n log beta over,
+- [00:23:11,740 - 00:23:11,980] yeah,
+- [00:23:11,980 - 00:23:13,500] n over 2 log beta.
+- [00:23:15,140 - 00:23:15,620] Okay?
+- [00:23:15,740 - 00:23:16,460] So it's simple.
+- [00:23:16,580 - 00:23:18,210] It's just one extra coordinate
+- [00:23:18,210 - 00:23:19,840] added to the three coordinates.
+- [00:23:19,880 - 00:23:21,780] But I wanted to keep them separate because,
+- [00:23:21,780 - 00:23:25,900] just to show that they come from different places.
+- [00:23:26,560 - 00:23:26,860] All right,
+- [00:23:26,860 - 00:23:28,360] now what is the energy per molecule?
+- [00:23:28,820 - 00:23:31,190] The energy per molecule is just the
+- [00:23:31,190 - 00:23:33,560] derivative of log z with respect to beta.
+- [00:23:34,440 - 00:23:35,480] With a minus sign.
+- [00:23:35,900 - 00:23:36,540] All right?
+- [00:23:36,540 - 00:23:38,240] That will give us minus.
+- [00:23:38,480 - 00:23:41,140] When the minus sign is accounted for,
+- [00:23:41,140 - 00:23:44,100] it will give us 3n over 2.
+- [00:23:51,320 - 00:23:52,720] Times 1 over beta.
+- [00:23:53,160 - 00:23:54,160] Differentiate log beta.
+- [00:23:54,380 - 00:23:55,320] You get 1 over beta.
+- [00:23:55,480 - 00:23:56,860] But that's just the temperature.
+- [00:23:57,060 - 00:23:58,180] So let's just call it temperature.
+- [00:23:58,960 - 00:23:59,860] 3n over 2.
+- [00:24:00,000 - 00:24:03,220] And that's the classic formula for the point particle gas.
+- [00:24:03,900 - 00:24:05,740] But now there's another term.
+- [00:24:05,740 - 00:24:11,600] Plus 1 half n times the temperature.
+- [00:24:13,240 - 00:24:21,180] So the whole upshot is that the energy per
+- [00:24:21,180 - 00:24:29,120] particle is 2n t rather than 3 halves nt.
+- [00:24:32,140 - 00:24:33,180] In other words,
+- [00:24:33,180 - 00:24:35,720] there's just more energy there for a given temperature.
+- [00:24:35,720 - 00:24:38,120] There's more energy there because the
+- [00:24:38,120 - 00:24:40,520] rotational degrees of freedom get excited.
+- [00:24:41,060 - 00:24:41,700] Okay.
+- [00:24:41,780 - 00:24:43,200] So that's what this is here.
+- [00:24:43,580 - 00:24:45,340] Now there's a puzzle.
+- [00:24:45,840 - 00:24:47,620] And the puzzle goes as follows.
+- [00:24:49,839 - 00:24:53,989] Imagine that you now took the limit in which the
+- [00:24:53,989 - 00:24:58,140] radius of the molecule got smaller and smaller and smaller.
+- [00:24:59,760 - 00:25:02,070] Shouldn't you eventually get closer and
+- [00:25:02,070 - 00:25:04,380] closer to the point particle limit?
+- [00:25:05,720 - 00:25:06,500] After all,
+- [00:25:06,500 - 00:25:09,560] is it really reasonable that you can tell...
+- [00:25:09,560 - 00:25:11,280] Imagine that this rod,
+- [00:25:11,280 - 00:25:14,420] which connects one point particle...
+- [00:25:14,420 - 00:25:16,410] We're thinking about a model now of
+- [00:25:16,410 - 00:25:18,400] two point particles connected by a rod.
+- [00:25:18,620 - 00:25:23,410] And now imagine shrinking the rod until the two point
+- [00:25:23,410 - 00:25:28,200] particles are 10 to the minus 10 Planck distances apart.
+- [00:25:28,480 - 00:25:29,060] In other words,
+- [00:25:29,060 - 00:25:32,380] until the distance between the points
+- [00:25:32,380 - 00:25:35,700] is infinitesimally smaller than any other distance.
+- [00:25:35,700 - 00:25:39,500] Any distance scale that we ever think about in physics.
+- [00:25:40,160 - 00:25:42,420] Shouldn't it become the point particle?
+- [00:25:43,060 - 00:25:44,180] If it does,
+- [00:25:44,180 - 00:25:46,960] it means that you should only have
+- [00:25:46,960 - 00:25:49,740] 3 halves nt energy in the system.
+- [00:25:50,260 - 00:25:52,500] But somehow this doesn't go away.
+- [00:25:53,120 - 00:25:55,160] It doesn't depend on the radius.
+- [00:25:55,500 - 00:25:56,140] Incidentally,
+- [00:25:56,140 - 00:25:57,960] where in this formula up there
+- [00:25:57,960 - 00:25:59,780] is the radius of the molecule embedded?
+- [00:26:00,860 - 00:26:01,800] It's an i.
+- [00:26:02,420 - 00:26:04,840] And that adds to this constant here.
+- [00:26:05,700 - 00:26:07,550] But the constant doesn't get
+- [00:26:07,550 - 00:26:09,400] differentiated to calculate the average energy.
+- [00:26:10,700 - 00:26:13,520] So no matter how small you make this molecule,
+- [00:26:13,520 - 00:26:16,300] no matter how tight you make that molecular bond,
+- [00:26:17,620 - 00:26:19,640] this term does not go away.
+- [00:26:20,620 - 00:26:21,260] Well,
+- [00:26:21,260 - 00:26:23,020] this gets a little bit crazy now.
+- [00:26:24,000 - 00:26:28,700] Do we have to worry separately about the electrons rotating?
+- [00:26:29,000 - 00:26:32,360] Even an atom is not a point particle.
+- [00:26:32,640 - 00:26:35,680] An atom might contain 20 electrons going on.
+- [00:26:35,700 - 00:26:39,960] Do we have to include 20 additional contributions like
+- [00:26:39,960 - 00:26:44,220] this coming from the 20 electrons going around it?
+- [00:26:44,520 - 00:26:49,140] And perhaps the electrons themselves secretly have some...
+- [00:26:49,140 - 00:26:49,160] Oh,
+- [00:26:49,160 - 00:26:53,580] the nucleus of course has many constituents and so forth.
+- [00:26:53,840 - 00:26:58,560] So even a simple atom is not a point particle.
+- [00:26:58,760 - 00:26:59,960] It contains many,
+- [00:26:59,960 - 00:27:01,120] many degrees of freedom.
+- [00:27:01,380 - 00:27:04,140] If you were to do the classical calculation,
+- [00:27:04,140 - 00:27:08,350] you would find out that there is a one-half
+- [00:27:08,350 - 00:27:12,560] nT for each internal degree of freedom of the atom.
+- [00:27:13,340 - 00:27:15,140] This doesn't make a lot of sense.
+- [00:27:16,860 - 00:27:20,110] There should be no way that you could tell
+- [00:27:20,110 - 00:27:23,360] from the properties of a gas at a low temperature.
+- [00:27:24,520 - 00:27:25,940] Certainly at a very,
+- [00:27:25,940 - 00:27:26,860] very high temperature,
+- [00:27:27,140 - 00:27:30,200] where the molecules may collide so hard that they
+- [00:27:30,200 - 00:27:33,260] would knock each other into smithereens and so forth,
+- [00:27:33,260 - 00:27:36,980] you could tell that the molecules were not point particles.
+- [00:27:37,280 - 00:27:38,340] But at very,
+- [00:27:38,340 - 00:27:39,280] very low temperatures,
+- [00:27:39,280 - 00:27:41,040] where the velocities are very small,
+- [00:27:41,440 - 00:27:42,740] the momenta are small,
+- [00:27:43,060 - 00:27:44,580] how can it possibly be,
+- [00:27:44,580 - 00:27:47,160] and the gas is very dilute,
+- [00:27:47,240 - 00:27:49,560] particles are far from each other,
+- [00:27:49,640 - 00:27:53,380] how can it possibly be that the thermodynamics,
+- [00:27:53,380 - 00:27:55,400] the energy of the system in particular,
+- [00:27:55,580 - 00:28:02,620] remembers that the atoms are composite?
+- [00:28:03,260 - 00:28:04,020] Shouldn't be the case.
+- [00:28:06,159 - 00:28:07,820] The solution to this puzzle,
+- [00:28:07,820 - 00:28:08,860] and we'll do it now,
+- [00:28:09,060 - 00:28:11,920] the solution to this puzzle is quantum mechanics.
+- [00:28:13,960 - 00:28:16,690] So I thought I would just
+- [00:28:16,690 - 00:28:19,420] work out the quantum mechanical formula
+- [00:28:21,740 - 00:28:23,620] and show you how that comes about.
+- [00:28:24,120 - 00:28:25,560] I'm not sure how it comes about.
+- [00:28:25,640 - 00:28:27,300] We're going to pretty much assume a formula
+- [00:28:28,460 - 00:28:30,620] and show you what actually does happen.
+- [00:28:32,240 - 00:28:33,800] For a real molecule,
+- [00:28:33,800 - 00:28:35,520] how the paradox gets resolved.
+- [00:28:36,300 - 00:28:38,320] All we have to know,
+- [00:28:38,320 - 00:28:41,340] the only thing we have to know about quantum mechanics,
+- [00:28:41,760 - 00:28:45,420] is that angular momentum is quantized.
+- [00:28:46,040 - 00:28:50,100] That angular momentum is not a continuous variable.
+- [00:28:50,520 - 00:28:53,630] It's a variable which comes in
+- [00:28:53,630 - 00:28:56,740] discrete multiples of a basic unit,
+- [00:28:56,840 - 00:28:59,960] and that basic unit is Planck's constant.
+- [00:29:00,620 - 00:29:06,800] So let's go back to this formula over here.
+- [00:29:07,340 - 00:29:09,780] I think we don't need this anymore.
+- [00:29:17,660 - 00:29:19,720] Let's go back to the energy,
+- [00:29:19,720 - 00:29:21,220] to the rotational energy,
+- [00:29:21,480 - 00:29:26,660] E equals L squared over 2I.
+- [00:29:27,600 - 00:29:30,500] And now write that the possible value,
+- [00:29:30,620 - 00:29:32,600] the possible values of the angular momentum
+- [00:29:32,600 - 00:29:34,920] are not a continuous variable,
+- [00:29:35,240 - 00:29:42,540] but that L is quantized in units of,
+- [00:29:42,820 - 00:29:45,380] let's call it n times h bar,
+- [00:29:46,680 - 00:29:49,020] Planck's constant times h bar.
+- [00:29:50,840 - 00:29:51,560] Okay.
+- [00:29:55,460 - 00:29:58,540] L is equal to n times h bar.
+- [00:29:58,540 - 00:29:59,480] h bar,
+- [00:29:59,480 - 00:29:59,860] of course,
+- [00:29:59,860 - 00:30:01,020] being a very small number,
+- [00:30:01,200 - 00:30:03,940] so that means the steps between different values
+- [00:30:03,940 - 00:30:05,880] of the angular momentum are very small,
+- [00:30:06,100 - 00:30:07,980] but nevertheless it's not continuous.
+- [00:30:08,420 - 00:30:10,520] And then we can write the energy
+- [00:30:11,840 - 00:30:14,080] not as L squared over 2I,
+- [00:30:14,080 - 00:30:14,740] which is correct,
+- [00:30:15,540 - 00:30:24,720] but as n squared h bar squared over 2I.
+- [00:30:26,140 - 00:30:27,240] Do I have that right?
+- [00:30:27,240 - 00:30:28,120] I think I have that right.
+- [00:30:28,480 - 00:30:31,660] And what is the variable now which distinguishes
+- [00:30:31,660 - 00:30:32,920] one state from another?
+- [00:30:33,420 - 00:30:34,080] n.
+- [00:30:35,340 - 00:30:36,020] n,
+- [00:30:36,020 - 00:30:36,700] n,
+- [00:30:36,700 - 00:30:37,680] and incidentally,
+- [00:30:37,680 - 00:30:39,780] n can be any integer,
+- [00:30:39,880 - 00:30:40,940] positive or negative.
+- [00:30:41,400 - 00:30:42,980] Why positive or negative?
+- [00:30:43,260 - 00:30:43,760] Well,
+- [00:30:43,760 - 00:30:45,580] negative angular momentum corresponds
+- [00:30:45,580 - 00:30:47,420] to rotating in one direction,
+- [00:30:47,660 - 00:30:50,000] positive angular momentum in the other direction,
+- [00:30:50,280 - 00:30:53,460] angular momentum zero just means not rotating at all.
+- [00:30:54,560 - 00:30:56,860] This is the energy of the,
+- [00:30:58,600 - 00:31:00,540] of the molecule quantum mechanically.
+- [00:31:00,860 - 00:31:03,560] And that's all that we need from quantum mechanics,
+- [00:31:03,820 - 00:31:06,640] that we replace the sum over states
+- [00:31:07,240 - 00:31:08,900] by the sum over n.
+- [00:31:10,000 - 00:31:10,920] And that's it.
+- [00:31:11,020 - 00:31:13,840] So let's write down now what the partition function is
+- [00:31:13,840 - 00:31:18,020] for the quantized angular momentum.
+- [00:31:19,100 - 00:31:19,700] Incidentally,
+- [00:31:19,700 - 00:31:21,540] there is no real change associated
+- [00:31:21,540 - 00:31:22,700] with the first term,
+- [00:31:22,700 - 00:31:24,920] the p squared over 2m.
+- [00:31:25,140 - 00:31:25,980] Quantum mechan-
+- [00:31:25,980 - 00:31:26,000] Okay,
+- [00:31:26,000 - 00:31:28,200] we should do quantum mechanics to really do it correctly,
+- [00:31:28,460 - 00:31:29,700] but it gives the same answer.
+- [00:31:30,100 - 00:31:31,980] It's the L squared over 2I,
+- [00:31:31,980 - 00:31:33,240] which is most sensitive
+- [00:31:33,240 - 00:31:35,380] because of the quantization of angular momentum.
+- [00:31:35,860 - 00:31:36,640] Momentum itself,
+- [00:31:36,640 - 00:31:37,680] linear momentum,
+- [00:31:37,680 - 00:31:39,140] is not quantized as a rule,
+- [00:31:39,820 - 00:31:41,160] at least in a very big system.
+- [00:31:42,260 - 00:31:44,440] It's the angular momentum which is quantized.
+- [00:31:44,780 - 00:31:45,260] Okay,
+- [00:31:45,260 - 00:31:47,340] so now let's write down the partition function,
+- [00:31:47,520 - 00:31:47,760] again,
+- [00:31:47,760 - 00:31:49,160] for a single molecule.
+- [00:31:51,000 - 00:31:54,420] And z now becomes equal to
+- [00:31:54,420 - 00:31:57,880] the sum over n of e
+- [00:31:57,880 - 00:32:01,340] to the minus beta times the energy,
+- [00:32:01,540 - 00:32:05,050] which is n squared h bar
+- [00:32:05,050 - 00:32:08,560] squared over twice the moment of inertia.
+- [00:32:11,300 - 00:32:12,120] That's it.
+- [00:32:15,100 - 00:32:19,340] The sum over n here is too hard to do.
+- [00:32:19,920 - 00:32:23,220] There's no simple closed form for summing over n.
+- [00:32:23,220 - 00:32:24,780] So we can't do it.
+- [00:32:24,940 - 00:32:26,500] But we can do enough.
+- [00:32:26,600 - 00:32:28,140] We can do some approximations,
+- [00:32:28,140 - 00:32:31,400] which will show us exactly what's going on.
+- [00:32:35,019 - 00:32:37,420] Sometimes approximations are more illuminating
+- [00:32:37,420 - 00:32:40,400] than an exact formula.
+- [00:32:40,920 - 00:32:41,880] First of all,
+- [00:32:41,880 - 00:32:44,280] there are two regimes of temperature
+- [00:32:45,200 - 00:32:46,900] which behave quite differently,
+- [00:32:47,020 - 00:32:49,540] or which are extreme situations.
+- [00:32:50,040 - 00:32:51,440] Very high temperatures,
+- [00:32:51,440 - 00:32:52,820] very low temperatures.
+- [00:32:53,400 - 00:32:56,120] Let's examine the two cases of very high temperatures
+- [00:32:56,120 - 00:32:57,380] and very low temperatures.
+- [00:32:58,460 - 00:33:01,900] Very high temperatures means beta very small.
+- [00:33:03,280 - 00:33:04,740] So keep that in mind.
+- [00:33:04,840 - 00:33:05,660] High temperatures,
+- [00:33:05,660 - 00:33:08,260] T is one over beta.
+- [00:33:09,600 - 00:33:11,360] I always get myself confused,
+- [00:33:11,440 - 00:33:13,960] and I always naturally first think,
+- [00:33:14,080 - 00:33:15,480] when temperatures are high,
+- [00:33:15,480 - 00:33:16,400] that means large beta.
+- [00:33:16,540 - 00:33:18,020] But then I have to correct myself and say,
+- [00:33:18,080 - 00:33:18,220] no,
+- [00:33:18,220 - 00:33:19,200] when temperatures are high,
+- [00:33:19,200 - 00:33:20,100] beta is small.
+- [00:33:20,360 - 00:33:21,580] When temperatures are low,
+- [00:33:21,580 - 00:33:22,540] beta is high.
+- [00:33:22,540 - 00:33:23,380] So keep that in mind.
+- [00:33:23,880 - 00:33:24,440] Okay,
+- [00:33:24,440 - 00:33:25,500] what happens?
+- [00:33:25,760 - 00:33:27,040] What should we do first?
+- [00:33:27,180 - 00:33:29,160] Let's do first high temperatures.
+- [00:33:29,720 - 00:33:32,260] High temperatures means beta is small.
+- [00:33:32,600 - 00:33:35,660] And let's take this quantity here,
+- [00:33:35,800 - 00:33:37,620] and imagine plotting it.
+- [00:33:37,820 - 00:33:38,460] Let's see,
+- [00:33:38,460 - 00:33:39,300] I'll plot it over here.
+- [00:33:41,880 - 00:33:43,420] Horizontal axis is n.
+- [00:33:44,280 - 00:33:45,280] n is an integer.
+- [00:33:50,320 - 00:33:52,030] And what I'm plotting is
+- [00:33:52,030 - 00:33:53,740] the thing in this exponential here.
+- [00:33:54,220 - 00:33:56,600] It has a value at each integer.
+- [00:33:57,920 - 00:33:59,960] Now when beta is very small,
+- [00:34:00,860 - 00:34:02,600] forget for the moment the quantization,
+- [00:34:02,860 - 00:34:04,600] let's just look at this as a function of n.
+- [00:34:04,840 - 00:34:06,460] When beta is very small,
+- [00:34:06,460 - 00:34:07,680] temperature is very high,
+- [00:34:07,900 - 00:34:10,840] this is a very slowly varying exponential.
+- [00:34:11,639 - 00:34:13,380] When beta is very small,
+- [00:34:13,380 - 00:34:16,880] it's a very slowly varying exponential.
+- [00:34:24,659 - 00:34:27,800] And to a high approximation under this circumstance,
+- [00:34:29,040 - 00:34:34,300] the sum over the values of n,
+- [00:34:35,820 - 00:34:37,699] each delta n here,
+- [00:34:37,699 - 00:34:39,739] delta n equals 1.
+- [00:34:39,940 - 00:34:41,299] So each one of these is
+- [00:34:41,299 - 00:34:42,659] separated by one unit of n.
+- [00:34:44,199 - 00:34:46,080] The height is the function,
+- [00:34:46,380 - 00:34:48,920] and so the contribution of
+- [00:34:48,920 - 00:34:51,460] each one of these strips here
+- [00:34:51,460 - 00:34:53,880] is basically just the area of it.
+- [00:34:56,219 - 00:34:57,300] And so forth.
+- [00:34:57,520 - 00:34:59,020] To a high approximation,
+- [00:34:59,480 - 00:35:02,360] as long as this is smooth and gentle enough,
+- [00:35:02,560 - 00:35:05,000] which means the temperature high enough,
+- [00:35:06,300 - 00:35:10,320] this sum can be replaced by the integral over n.
+- [00:35:11,240 - 00:35:13,200] The integral over n,
+- [00:35:15,340 - 00:35:17,280] we replace by the integral over n,
+- [00:35:17,460 - 00:35:19,580] and if we do replace it by the integral,
+- [00:35:19,820 - 00:35:22,680] we're back to the classical calculation.
+- [00:35:23,420 - 00:35:25,580] Instead of integrating over angular momentum,
+- [00:35:25,800 - 00:35:26,880] we're integrating over n,
+- [00:35:27,100 - 00:35:28,440] but that doesn't make any difference.
+- [00:35:28,680 - 00:35:30,640] n is proportional to the angular momentum.
+- [00:35:31,080 - 00:35:33,880] It's the same integral except for a numerical constant,
+- [00:35:34,000 - 00:35:36,360] and we don't care about numerical constants very much.
+- [00:35:36,960 - 00:35:40,440] So the first thing is that at very high temperatures,
+- [00:35:40,640 - 00:35:42,200] it simply reproduces,
+- [00:35:42,200 - 00:35:46,200] the same answer as the classical calculation,
+- [00:35:46,600 - 00:35:48,360] at least for everything interesting.
+- [00:35:48,780 - 00:35:52,400] The sum can be replaced by the integral
+- [00:35:52,400 - 00:35:55,500] because the function is extremely smooth and slowly varying.
+- [00:35:56,540 - 00:35:58,120] On the other hand,
+- [00:35:58,180 - 00:35:59,960] so that's one fact.
+- [00:36:00,120 - 00:36:00,860] High temperatures,
+- [00:36:08,040 - 00:36:08,840] classical,
+- [00:36:13,000 - 00:36:13,560] answer.
+- [00:36:14,700 - 00:36:16,380] And what was the classical answer?
+- [00:36:16,660 - 00:36:19,380] Not three halves kT,
+- [00:36:19,620 - 00:36:22,020] not three halves T for the energy per molecule,
+- [00:36:22,320 - 00:36:23,400] but twice T.
+- [00:36:25,940 - 00:36:26,500] Or,
+- [00:36:26,500 - 00:36:27,960] not two over T,
+- [00:36:28,080 - 00:36:28,500] twice T.
+- [00:36:29,340 - 00:36:30,460] In other words,
+- [00:36:30,460 - 00:36:32,460] the rotational energy is excited
+- [00:36:33,060 - 00:36:35,420] just as it would be in the classical case.
+- [00:36:35,780 - 00:36:37,020] On the other hand,
+- [00:36:37,040 - 00:36:38,760] let's go to low temperatures.
+- [00:36:38,760 - 00:36:39,760] At low temperatures,
+- [00:36:39,760 - 00:36:41,720] beta is very big.
+- [00:36:42,320 - 00:36:46,260] That means this function is a very rapidly falling function.
+- [00:36:49,920 - 00:36:51,080] And in fact,
+- [00:36:51,080 - 00:36:54,080] if beta is big enough,
+- [00:36:54,280 - 00:36:56,060] if the temperature is small enough,
+- [00:36:56,360 - 00:36:58,180] the function varies enormously
+- [00:36:58,180 - 00:37:00,520] before it even gets to n equals one.
+- [00:37:02,380 - 00:37:04,880] And then between n equals one and n equals two,
+- [00:37:05,040 - 00:37:06,480] it falls even further,
+- [00:37:06,480 - 00:37:07,960] and so forth.
+- [00:37:07,960 - 00:37:10,740] To approximate such a rapidly varying
+- [00:37:10,740 - 00:37:13,760] and rapidly falling function by the integral is nonsense.
+- [00:37:14,140 - 00:37:15,600] That's not a good thing to do.
+- [00:37:15,740 - 00:37:17,680] It's not approximately given by the integral.
+- [00:37:17,940 - 00:37:18,980] In fact,
+- [00:37:18,980 - 00:37:21,080] the smart way to do the calculation
+- [00:37:21,080 - 00:37:22,180] is just to recognize
+- [00:37:22,940 - 00:37:24,780] that each succeeding term
+- [00:37:24,780 - 00:37:28,240] is very much smaller than the previous one
+- [00:37:29,480 - 00:37:31,620] and just approximate it
+- [00:37:31,620 - 00:37:33,980] by the sum of a small number of terms.
+- [00:37:34,280 - 00:37:35,360] In particular,
+- [00:37:35,360 - 00:37:36,480] just approximate it
+- [00:37:36,480 - 00:37:37,940] by the first two terms.
+- [00:37:37,940 - 00:37:37,960] So,
+- [00:37:37,960 - 00:37:38,120] let's just take the first two terms
+- [00:37:38,120 - 00:37:40,200] in the sum here.
+- [00:37:40,580 - 00:37:41,900] Why the first two terms?
+- [00:37:42,020 - 00:37:42,140] Well,
+- [00:37:42,140 - 00:37:43,740] let's just take the first term to begin with.
+- [00:37:45,100 - 00:37:46,180] What's the first term?
+- [00:37:46,300 - 00:37:48,520] The first term corresponds to n equals zero.
+- [00:37:50,660 - 00:37:51,100] Remember,
+- [00:37:51,100 - 00:37:52,740] we have to sum over all positive,
+- [00:37:52,740 - 00:37:53,060] negative,
+- [00:37:53,160 - 00:37:54,520] and zero values of n.
+- [00:37:57,339 - 00:37:59,560] Positive and negative give the same answer
+- [00:37:59,560 - 00:38:00,880] because it's n squared here,
+- [00:38:00,980 - 00:38:01,520] so we can just,
+- [00:38:01,520 - 00:38:02,540] for practical purposes,
+- [00:38:02,640 - 00:38:03,880] sum over only positive,
+- [00:38:03,880 - 00:38:04,340] n,
+- [00:38:04,340 - 00:38:04,900] and zero.
+- [00:38:05,440 - 00:38:07,080] The first term is just one.
+- [00:38:09,000 - 00:38:12,140] That is not a very interesting partition function.
+- [00:38:12,700 - 00:38:14,240] The first term is just one.
+- [00:38:14,580 - 00:38:17,440] Anything you differentiate it with respect to gives zero,
+- [00:38:17,660 - 00:38:21,380] and it simply says that the energy part,
+- [00:38:21,480 - 00:38:22,880] the rotational energy now,
+- [00:38:22,960 - 00:38:24,960] the rotational energy is zero,
+- [00:38:26,340 - 00:38:26,900] okay,
+- [00:38:26,900 - 00:38:28,420] for very low temperatures.
+- [00:38:29,060 - 00:38:30,500] Let's find the first,
+- [00:38:30,560 - 00:38:31,940] and that's good because,
+- [00:38:32,080 - 00:38:32,760] well,
+- [00:38:32,760 - 00:38:34,480] we'll see what it does in a minute.
+- [00:38:36,740 - 00:38:37,920] We'll see what it does in a minute.
+- [00:38:37,940 - 00:38:38,700] Okay.
+- [00:38:41,080 - 00:38:43,680] So in order to get any kind of interesting answer
+- [00:38:43,680 - 00:38:44,900] and to see how the energy,
+- [00:38:44,900 - 00:38:45,840] rotational energy,
+- [00:38:45,920 - 00:38:47,640] does depend on the temperature,
+- [00:38:47,900 - 00:38:50,100] we at least have to go to the next term.
+- [00:38:50,220 - 00:38:51,640] So the next term is n equals one
+- [00:38:53,420 - 00:38:56,450] plus e to the minus
+- [00:38:56,450 - 00:38:59,480] beta h bar squared over 2i.
+- [00:39:01,580 - 00:39:02,100] Now,
+- [00:39:02,100 - 00:39:03,820] when beta is very big,
+- [00:39:04,500 - 00:39:06,120] not only when beta is big,
+- [00:39:06,240 - 00:39:07,920] there are various systems,
+- [00:39:07,940 - 00:39:08,420] there are various situations.
+- [00:39:08,580 - 00:39:10,540] Does that occur twice?
+- [00:39:10,920 - 00:39:11,460] Yeah,
+- [00:39:11,460 - 00:39:12,240] it does occur twice.
+- [00:39:12,320 - 00:39:12,780] Thank you.
+- [00:39:12,820 - 00:39:13,200] That's good.
+- [00:39:13,560 - 00:39:14,640] It occurs twice,
+- [00:39:14,700 - 00:39:16,260] once for positive and once for negative.
+- [00:39:16,520 - 00:39:17,080] Very good.
+- [00:39:17,540 - 00:39:18,100] Okay.
+- [00:39:19,060 - 00:39:21,580] Notice that there are two distinct ways
+- [00:39:22,240 - 00:39:23,080] that this,
+- [00:39:23,180 - 00:39:25,720] that might make this thing small.
+- [00:39:27,240 - 00:39:31,020] One way is that the temperature is very large.
+- [00:39:32,600 - 00:39:33,160] Sorry,
+- [00:39:33,160 - 00:39:33,820] opposite.
+- [00:39:34,140 - 00:39:34,820] The temperature,
+- [00:39:34,820 - 00:39:35,360] very,
+- [00:39:35,360 - 00:39:36,000] very small.
+- [00:39:36,000 - 00:39:37,340] If the temperature is small,
+- [00:39:37,340 - 00:39:38,840] beta is large,
+- [00:39:39,120 - 00:39:42,140] and then this correction here is very,
+- [00:39:42,140 - 00:39:42,880] very insignificant.
+- [00:39:43,500 - 00:39:44,760] But there's another way.
+- [00:39:44,980 - 00:39:47,780] Even if the temperature is not so small,
+- [00:39:48,460 - 00:39:51,220] if i is very small,
+- [00:39:52,920 - 00:39:55,720] if i is extremely small,
+- [00:39:56,080 - 00:39:58,020] it means the coefficient,
+- [00:39:58,020 - 00:39:59,000] one over i,
+- [00:39:59,000 - 00:40:00,000] is very big.
+- [00:40:00,640 - 00:40:04,740] So that's tantamount to just saying beta is large.
+- [00:40:06,340 - 00:40:10,960] So there are two ways to make this term insignificant.
+- [00:40:12,020 - 00:40:14,440] One of them is low temperature,
+- [00:40:14,760 - 00:40:15,960] but let's fix the temperature.
+- [00:40:16,180 - 00:40:17,900] Let's take the temperature to be fixed
+- [00:40:17,900 - 00:40:19,420] and do something different.
+- [00:40:19,740 - 00:40:21,640] Just shrink the molecule.
+- [00:40:22,100 - 00:40:24,280] What happens when you shrink the molecule?
+- [00:40:24,580 - 00:40:26,080] When you shrink the molecule,
+- [00:40:27,060 - 00:40:29,240] this i gets smaller and smaller.
+- [00:40:30,580 - 00:40:32,980] Beta over 2i gets bigger and bigger.
+- [00:40:33,220 - 00:40:34,720] And even if the temperature is very small,
+- [00:40:34,740 - 00:40:36,160] if the temperature is not so low,
+- [00:40:36,400 - 00:40:38,340] you get driven into the situation
+- [00:40:38,340 - 00:40:42,260] where this function just drops to zero like a bomb,
+- [00:40:43,360 - 00:40:45,780] and the integral is silly.
+- [00:40:45,920 - 00:40:46,700] You don't do the integral.
+- [00:40:47,020 - 00:40:50,000] The good approximation is just to add
+- [00:40:51,560 - 00:40:53,500] a small number of terms,
+- [00:40:53,660 - 00:40:55,600] each one getting much,
+- [00:40:55,600 - 00:40:57,040] much smaller than the previous.
+- [00:40:57,220 - 00:40:58,060] What's the next term?
+- [00:40:58,660 - 00:41:00,080] Every term has a 2
+- [00:41:00,080 - 00:41:03,140] because the angular momentum could be positive or negative.
+- [00:41:03,140 - 00:41:04,880] What's the next term?
+- [00:41:05,400 - 00:41:10,820] e to the minus 4 h bar squared over 2i.
+- [00:41:13,320 - 00:41:13,880] Now,
+- [00:41:13,880 - 00:41:16,100] e to the minus 4 beta.
+- [00:41:17,660 - 00:41:18,220] Now,
+- [00:41:18,220 - 00:41:20,160] this is the fourth power of this.
+- [00:41:21,720 - 00:41:23,060] If this is small,
+- [00:41:23,340 - 00:41:25,500] the fourth power of it is really,
+- [00:41:25,500 - 00:41:26,160] really small.
+- [00:41:27,120 - 00:41:29,180] The next one after that would be
+- [00:41:29,180 - 00:41:30,780] the ninth power of the same thing,
+- [00:41:30,840 - 00:41:31,860] and so forth and so on.
+- [00:41:33,279 - 00:41:39,900] So in a situation where either beta is large
+- [00:41:39,900 - 00:41:41,520] or i is small,
+- [00:41:42,920 - 00:41:46,220] then we can safely ignore the higher terms.
+- [00:41:46,920 - 00:41:49,000] I think we could also safely ignore this,
+- [00:41:49,140 - 00:41:50,680] but since we're trying to find out
+- [00:41:50,680 - 00:41:52,060] what the beta dependence is,
+- [00:41:52,160 - 00:41:53,120] it's better to keep it,
+- [00:41:53,220 - 00:41:54,730] because the first term doesn't
+- [00:41:54,730 - 00:41:56,240] have any beta dependence at all.
+- [00:41:56,920 - 00:41:57,560] All right,
+- [00:41:57,560 - 00:41:58,760] so this is a good approximation
+- [00:41:58,760 - 00:42:00,080] for very low temperatures.
+- [00:42:00,960 - 00:42:02,580] What's the logarithm of this?
+- [00:42:03,440 - 00:42:03,880] Remember,
+- [00:42:03,880 - 00:42:05,320] this is a very small quantity.
+- [00:42:05,600 - 00:42:08,600] The logarithm of 1 plus a small quantity
+- [00:42:08,600 - 00:42:10,140] is just a small quantity.
+- [00:42:10,540 - 00:42:10,980] Oh,
+- [00:42:10,980 - 00:42:11,720] incidentally,
+- [00:42:11,720 - 00:42:12,300] of course,
+- [00:42:13,040 - 00:42:14,520] if there are n particles,
+- [00:42:15,140 - 00:42:17,000] we just raise this to the nth power.
+- [00:42:17,980 - 00:42:18,420] Now,
+- [00:42:18,420 - 00:42:18,800] so far,
+- [00:42:18,800 - 00:42:20,320] this is just a rotational energy,
+- [00:42:20,460 - 00:42:22,980] and I'm only concerned with the rotational energy now.
+- [00:42:23,360 - 00:42:25,220] The other parts of it are still there.
+- [00:42:26,220 - 00:42:27,500] The logarithm of z
+- [00:42:28,960 - 00:42:30,580] is just going to be
+- [00:42:30,580 - 00:42:34,840] twice e to the minus beta h bar squared
+- [00:42:34,840 - 00:42:36,300] over twice i.
+- [00:42:39,540 - 00:42:40,280] Times n.
+- [00:42:44,860 - 00:42:45,420] No,
+- [00:42:45,420 - 00:42:45,580] it's,
+- [00:42:45,580 - 00:42:46,300] yeah,
+- [00:42:46,300 - 00:42:47,300] twice 2n.
+- [00:42:48,840 - 00:42:49,400] Okay,
+- [00:42:49,400 - 00:42:50,860] so now we can compute,
+- [00:42:50,980 - 00:42:52,580] once we know the logarithm of z,
+- [00:42:52,780 - 00:42:54,960] we can compute the energy
+- [00:42:54,960 - 00:42:56,480] stored in rotation.
+- [00:42:57,680 - 00:42:58,200] Okay,
+- [00:42:58,200 - 00:42:59,720] we can compute the energy
+- [00:42:59,720 - 00:43:00,540] stored in rotation.
+- [00:43:01,040 - 00:43:03,680] All we have to do is differentiate log z
+- [00:43:03,680 - 00:43:05,220] with respect to beta.
+- [00:43:09,000 - 00:43:11,000] So the derivative of log z
+- [00:43:14,380 - 00:43:15,820] with respect to beta
+- [00:43:19,880 - 00:43:20,400] is,
+- [00:43:20,400 - 00:43:21,060] of course,
+- [00:43:21,060 - 00:43:21,760] 2n.
+- [00:43:25,720 - 00:43:29,580] And then differentiating with respect to beta
+- [00:43:29,580 - 00:43:31,680] will give us a minus sign.
+- [00:43:34,240 - 00:43:37,060] It will give us the same e to the minus
+- [00:43:38,240 - 00:43:39,880] beta h bar squared
+- [00:43:41,760 - 00:43:42,840] over 2i.
+- [00:43:44,840 - 00:43:47,160] And then we have to differentiate
+- [00:43:47,160 - 00:43:49,140] what's in here with respect to beta.
+- [00:43:49,340 - 00:43:51,740] That will give us h bar squared over 2i.
+- [00:43:51,740 - 00:43:59,040] I think I have that right.
+- [00:43:59,260 - 00:43:59,640] Let's see.
+- [00:44:01,400 - 00:44:01,860] Differentiate,
+- [00:44:01,860 - 00:44:02,140] yeah,
+- [00:44:02,140 - 00:44:02,820] yeah,
+- [00:44:02,820 - 00:44:03,020] yeah.
+- [00:44:03,080 - 00:44:03,220] Well,
+- [00:44:03,220 - 00:44:03,680] it looks right.
+- [00:44:06,740 - 00:44:08,340] That's the derivative of log z
+- [00:44:08,340 - 00:44:09,200] with respect to beta.
+- [00:44:09,980 - 00:44:12,460] The negative of it is the energy
+- [00:44:12,460 - 00:44:13,800] stored in rotation.
+- [00:44:14,900 - 00:44:16,560] And the energy per particle
+- [00:44:17,779 - 00:44:19,360] would just be divided by n.
+- [00:44:20,300 - 00:44:21,720] This does not look like
+- [00:44:21,720 - 00:44:23,260] the classical formula.
+- [00:44:23,540 - 00:44:26,100] The classical formula was just plain
+- [00:44:26,100 - 00:44:27,160] 1 over beta.
+- [00:44:28,340 - 00:44:29,060] Okay?
+- [00:44:29,200 - 00:44:30,460] It was just 1 over beta,
+- [00:44:30,460 - 00:44:31,380] which meant temperature.
+- [00:44:31,700 - 00:44:34,020] The energy stored in rotation was just temperature.
+- [00:44:34,420 - 00:44:37,560] This formula has the feature
+- [00:44:37,560 - 00:44:39,640] that when beta is very big,
+- [00:44:39,880 - 00:44:41,580] when temperature is low,
+- [00:44:41,860 - 00:44:45,200] or when i is very small,
+- [00:44:46,080 - 00:44:49,020] the contribution is exponentially small.
+- [00:44:50,980 - 00:44:51,700] Exponentially small.
+- [00:44:51,720 - 00:44:54,540] This is not so significant here.
+- [00:44:54,620 - 00:44:56,020] This is the significant factor.
+- [00:44:56,620 - 00:44:59,220] And the energy stored in rotation
+- [00:44:59,220 - 00:45:00,840] is minute.
+- [00:45:02,060 - 00:45:04,380] Even if we keep the temperature fixed,
+- [00:45:04,680 - 00:45:07,100] if we let i shrink to 0,
+- [00:45:07,260 - 00:45:09,220] if we shrink to the point particle limit,
+- [00:45:09,620 - 00:45:11,700] this simply disappears.
+- [00:45:14,060 - 00:45:16,440] That's the solution to the paradox
+- [00:45:16,440 - 00:45:21,700] of molecular strength.
+- [00:45:21,700 - 00:45:22,000] So,
+- [00:45:22,000 - 00:45:22,000] what is the molecular structure
+- [00:45:22,000 - 00:45:25,460] and why it is that the molecular structure
+- [00:45:25,460 - 00:45:29,220] degrees of freedom do not get appreciably excited,
+- [00:45:29,460 - 00:45:31,060] at least at low temperatures?
+- [00:45:31,440 - 00:45:32,820] At high temperatures,
+- [00:45:32,820 - 00:45:34,040] they do get excited.
+- [00:45:34,680 - 00:45:35,360] So,
+- [00:45:35,360 - 00:45:36,640] an interesting question is,
+- [00:45:36,660 - 00:45:38,540] where is the crossover point
+- [00:45:39,220 - 00:45:41,300] between the classical formula
+- [00:45:41,300 - 00:45:44,220] and this...
+- [00:45:44,220 - 00:45:45,360] Now,
+- [00:45:45,360 - 00:45:45,700] remember,
+- [00:45:45,700 - 00:45:46,540] this was an approximation.
+- [00:45:46,820 - 00:45:48,920] You cannot take this approximation
+- [00:45:48,920 - 00:45:51,600] and study it for high temperature.
+- [00:45:52,460 - 00:45:53,300] Why not?
+- [00:45:53,840 - 00:45:55,780] Because the high temperature behavior
+- [00:45:55,780 - 00:45:57,960] involves this whole sum.
+- [00:45:58,880 - 00:46:00,200] For high temperatures,
+- [00:46:00,200 - 00:46:01,300] beta is not small.
+- [00:46:01,700 - 00:46:03,660] These are not small results,
+- [00:46:03,820 - 00:46:05,200] and you've got to add them all up.
+- [00:46:05,860 - 00:46:07,100] For low temperature,
+- [00:46:07,100 - 00:46:08,300] that's the place
+- [00:46:08,300 - 00:46:10,020] where you can just truncate the sum
+- [00:46:10,020 - 00:46:12,860] and say only appreciable contribution
+- [00:46:12,860 - 00:46:14,820] comes from the first term here.
+- [00:46:15,240 - 00:46:15,800] So,
+- [00:46:15,800 - 00:46:17,580] you can't mix the approximations.
+- [00:46:17,580 - 00:46:18,840] One approximation,
+- [00:46:18,840 - 00:46:20,520] high temperatures,
+- [00:46:20,840 - 00:46:22,600] is to substitute for sums,
+- [00:46:22,600 - 00:46:23,940] integrals,
+- [00:46:23,940 - 00:46:25,440] and that gives you the classical formula.
+- [00:46:25,880 - 00:46:28,220] The other approximation for low temperatures
+- [00:46:28,220 - 00:46:30,540] is just to take one or two contributions.
+- [00:46:31,580 - 00:46:33,560] Where does this formula go
+- [00:46:33,560 - 00:46:35,400] from one thing to another?
+- [00:46:35,740 - 00:46:37,740] And I'll tell you where it happens.
+- [00:46:38,000 - 00:46:39,280] Where is the crossover
+- [00:46:39,280 - 00:46:41,400] from one type of behavior to another?
+- [00:46:41,780 - 00:46:44,140] It's when the temperature is such
+- [00:46:46,420 - 00:46:47,560] that the classical formula
+- [00:46:47,560 - 00:46:47,860] is equal to the energy of the lowest rotational excitation.
+- [00:46:47,860 - 00:46:47,860] So,
+- [00:46:47,860 - 00:46:48,800] the classical energy,
+- [00:46:49,080 - 00:46:51,320] which would be one-half T,
+- [00:46:52,740 - 00:46:55,420] one-half T would be the classical answer.
+- [00:46:56,140 - 00:46:58,000] When that is equal,
+- [00:46:58,000 - 00:46:59,820] or approximately equal,
+- [00:47:00,540 - 00:47:05,500] to the energy of the lowest rotational excitation,
+- [00:47:07,100 - 00:47:10,340] what's the energy of the lowest rotational excitation?
+- [00:47:10,980 - 00:47:12,100] Here's the energy.
+- [00:47:13,299 - 00:47:14,620] N equals one.
+- [00:47:14,780 - 00:47:16,600] H-bar squared over two I.
+- [00:47:23,040 - 00:47:25,880] For temperatures lower than this,
+- [00:47:26,100 - 00:47:28,180] there just is not enough energy
+- [00:47:28,180 - 00:47:33,200] to excite the molecule into rotation.
+- [00:47:33,840 - 00:47:35,640] There's just not enough energy.
+- [00:47:35,840 - 00:47:38,300] The temperature is not high enough
+- [00:47:38,300 - 00:47:41,820] to overcome the separation
+- [00:47:41,820 - 00:47:43,280] between energy levels.
+- [00:47:44,480 - 00:47:45,680] At high temperature,
+- [00:47:45,680 - 00:47:47,100] there's no problem.
+- [00:47:47,240 - 00:47:48,520] You can excite the rotational
+- [00:47:48,520 - 00:47:49,800] degrees of freedom very easily.
+- [00:47:50,140 - 00:47:54,060] And it's when the temperature gets to be such
+- [00:47:54,820 - 00:47:58,760] that it corresponds to one quantum's worth of rotation,
+- [00:47:59,580 - 00:48:01,900] that's about where the transition
+- [00:48:01,900 - 00:48:03,820] from one thing to another happens.
+- [00:48:04,580 - 00:48:04,940] So,
+- [00:48:04,940 - 00:48:08,820] as long as the temperature is lower than this,
+- [00:48:09,980 - 00:48:12,800] then rotational degrees of freedom don't get excited.
+- [00:48:13,060 - 00:48:16,980] That depends on the moment of inertia.
+- [00:48:18,220 - 00:48:20,240] If we wrote the moment of inertia
+- [00:48:20,240 - 00:48:21,570] in terms of the mass
+- [00:48:21,570 - 00:48:22,900] and the radius of the molecule,
+- [00:48:23,320 - 00:48:25,020] we would find out that when the
+- [00:48:25,020 - 00:48:26,720] radius of the molecule goes to zero,
+- [00:48:26,980 - 00:48:27,720] in other words,
+- [00:48:27,720 - 00:48:31,400] when the moment of inertia gets extremely small,
+- [00:48:32,820 - 00:48:34,800] the temperature needed to excite
+- [00:48:34,800 - 00:48:36,780] that rotational degree of freedom
+- [00:48:36,780 - 00:48:38,800] gets infinite.
+- [00:48:38,800 - 00:48:41,380] So that's the resolution.
+- [00:48:41,920 - 00:48:44,200] Quantum mechanics sort of truncates
+- [00:48:44,200 - 00:48:49,640] and the contribution of very small angular momentum.
+- [00:48:52,240 - 00:48:55,400] And you need a certain amount of temperature
+- [00:48:55,400 - 00:48:58,140] before you start to get the molecule rotating.
+- [00:48:58,620 - 00:48:59,020] Yeah?
+- [00:48:59,520 - 00:49:00,620] There is a Boltzmann constant.
+- [00:49:01,060 - 00:49:02,340] There is a Boltzmann constant.
+- [00:49:03,499 - 00:49:06,029] My convention is such that
+- [00:49:06,029 - 00:49:08,560] what in textbooks is called K,
+- [00:49:08,560 - 00:49:12,480] and I'll use little t to
+- [00:49:12,480 - 00:49:16,400] represent the textbook definition of temperature,
+- [00:49:16,680 - 00:49:19,600] then big T is K times little t.
+- [00:49:19,940 - 00:49:20,740] So yes,
+- [00:49:20,740 - 00:49:22,600] there is a Boltzmann constant in here,
+- [00:49:24,420 - 00:49:26,360] which you would need to put in
+- [00:49:27,340 - 00:49:29,860] if you were actually doing some numerical work.
+- [00:49:32,080 - 00:49:34,440] So if you wanted to find out at what temperature,
+- [00:49:34,560 - 00:49:37,820] measured in units Celsius or in units Kelvin,
+- [00:49:38,480 - 00:49:42,900] you would want to put Boltzmann's constant in here.
+- [00:49:43,260 - 00:49:45,400] That would make the temperature even bigger.
+- [00:49:45,620 - 00:49:47,460] So let's see.
+- [00:49:53,180 - 00:49:53,700] K.
+- [00:49:56,000 - 00:49:56,520] Okay,
+- [00:49:56,520 - 00:49:57,680] so it's kind of interesting
+- [00:49:57,680 - 00:50:01,220] to put in some numbers into here
+- [00:50:01,220 - 00:50:03,120] and to find out at what temperatures
+- [00:50:03,120 - 00:50:05,290] do you start to excite
+- [00:50:05,290 - 00:50:07,460] the rotational molecular degrees of freedom,
+- [00:50:07,460 - 00:50:11,260] for a molecule with reasonable parameters.
+- [00:50:13,280 - 00:50:14,180] Can I ask a question?
+- [00:50:14,420 - 00:50:14,640] No.
+- [00:50:14,700 - 00:50:15,120] In that regard,
+- [00:50:15,120 - 00:50:17,860] is that temperature generally below the,
+- [00:50:17,940 - 00:50:18,480] let's say,
+- [00:50:18,480 - 00:50:21,960] the point at which a normal gas or air oxygen
+- [00:50:21,960 - 00:50:23,900] would turn to a liquid?
+- [00:50:24,140 - 00:50:25,720] Or is this a very low temperature?
+- [00:50:26,060 - 00:50:27,280] Or is it room temperature?
+- [00:50:27,680 - 00:50:27,840] No,
+- [00:50:27,840 - 00:50:27,980] no,
+- [00:50:27,980 - 00:50:28,040] no.
+- [00:50:28,120 - 00:50:29,540] It's a fairly high temperature.
+- [00:50:29,920 - 00:50:30,380] Well,
+- [00:50:30,380 - 00:50:31,300] it's higher than room temperature.
+- [00:50:32,120 - 00:50:34,280] So the oxygen atoms in this room,
+- [00:50:34,440 - 00:50:37,260] it's hard to imagine that they're not rotating.
+- [00:50:37,460 - 00:50:40,300] That they're not spinning at a different...
+- [00:50:40,300 - 00:50:40,720] Oh,
+- [00:50:40,720 - 00:50:41,060] oh,
+- [00:50:41,060 - 00:50:41,340] oh.
+- [00:50:41,380 - 00:50:41,980] For oxygen,
+- [00:50:41,980 - 00:50:42,500] no.
+- [00:50:42,520 - 00:50:43,060] For oxygen,
+- [00:50:43,060 - 00:50:45,460] it's probably big enough that that's...
+- [00:50:46,160 - 00:50:46,300] Yeah,
+- [00:50:46,300 - 00:50:46,460] no,
+- [00:50:46,460 - 00:50:46,660] no.
+- [00:50:46,680 - 00:50:47,660] For oxygen,
+- [00:50:47,660 - 00:50:49,620] I was actually thinking about...
+- [00:50:49,620 - 00:50:53,440] I was thinking about hydrogen and its electronic structure.
+- [00:50:53,960 - 00:50:55,820] For hydrogen and electronic structure,
+- [00:50:55,960 - 00:50:56,980] it's a rather high energy.
+- [00:51:00,520 - 00:51:01,480] For oxygen,
+- [00:51:01,480 - 00:51:04,940] I suspect it's near room temperature.
+- [00:51:05,140 - 00:51:05,740] I'm not even sure.
+- [00:51:05,880 - 00:51:06,240] I'm not sure.
+- [00:51:06,340 - 00:51:07,360] But low enough temperature.
+- [00:51:07,460 - 00:51:09,080] There is a low enough
+- [00:51:09,080 - 00:51:10,700] temperature where these are frozen out,
+- [00:51:10,760 - 00:51:12,700] where these degrees of freedom are frozen out.
+- [00:51:12,820 - 00:51:14,350] Or another way of saying it
+- [00:51:14,350 - 00:51:15,880] is that there's a moment of inertia
+- [00:51:15,880 - 00:51:16,920] for fixed temperature,
+- [00:51:16,920 - 00:51:17,700] which,
+- [00:51:17,700 - 00:51:18,580] if it's too small,
+- [00:51:19,100 - 00:51:20,860] will freeze out these degrees of freedom.
+- [00:51:21,340 - 00:51:21,820] Yeah.
+- [00:51:23,300 - 00:51:23,780] Yeah.
+- [00:51:24,500 - 00:51:24,980] Yeah,
+- [00:51:24,980 - 00:51:29,160] I think the temperature for molecular things is fairly low,
+- [00:51:29,300 - 00:51:31,140] probably lower than room temperature for,
+- [00:51:31,140 - 00:51:31,680] you know,
+- [00:51:31,680 - 00:51:32,800] nice large-sized molecules.
+- [00:51:33,640 - 00:51:35,640] Like a hydrogonic chain or something?
+- [00:51:35,820 - 00:51:35,960] Oh,
+- [00:51:35,960 - 00:51:36,140] yeah.
+- [00:51:36,140 - 00:51:36,420] No,
+- [00:51:36,420 - 00:51:36,660] no.
+- [00:51:36,800 - 00:51:37,320] They're...
+- [00:51:37,320 - 00:51:39,300] And for a hydrocarbon chain,
+- [00:51:39,300 - 00:51:40,740] yeah,
+- [00:51:40,740 - 00:51:41,220] I mean,
+- [00:51:41,240 - 00:51:42,820] you have zillions of degrees of freedom,
+- [00:51:42,960 - 00:51:45,860] so it's nowhere near 3 halves or 2 kT.
+- [00:51:46,100 - 00:51:47,880] It could be a zillion kT,
+- [00:51:47,880 - 00:51:49,240] depending on the number of ways
+- [00:51:49,240 - 00:51:50,780] that the molecule can flap around.
+- [00:51:53,480 - 00:51:54,000] Right.
+- [00:51:54,140 - 00:51:54,380] Okay.
+- [00:51:54,480 - 00:52:00,280] So that's the basic physics of the diatomic molecule
+- [00:52:01,860 - 00:52:02,900] and why,
+- [00:52:02,900 - 00:52:06,120] at low temperature,
+- [00:52:06,120 - 00:52:07,200] or very,
+- [00:52:07,200 - 00:52:08,360] very small molecules,
+- [00:52:08,540 - 00:52:10,580] you don't have to worry about the structure.
+- [00:52:12,040 - 00:52:12,360] Yeah.
+- [00:52:13,880 - 00:52:16,840] One intuition is that this would affect the specific heat.
+- [00:52:16,840 - 00:52:17,320] Louder.
+- [00:52:17,400 - 00:52:19,720] An intuition is that this would
+- [00:52:19,720 - 00:52:22,040] affect the specific heat you get.
+- [00:52:22,200 - 00:52:22,560] Yeah,
+- [00:52:22,560 - 00:52:22,980] absolutely.
+- [00:52:23,520 - 00:52:24,160] Yeah,
+- [00:52:24,160 - 00:52:26,160] yeah,
+- [00:52:26,160 - 00:52:26,680] certainly.
+- [00:52:28,440 - 00:52:31,000] It certainly does affect the specific heat.
+- [00:52:31,100 - 00:52:31,780] For example,
+- [00:52:31,780 - 00:52:32,880] just at low temperatures,
+- [00:52:32,960 - 00:52:35,600] or small molecule size,
+- [00:52:35,600 - 00:52:36,680] but at low temperatures,
+- [00:52:36,840 - 00:52:40,520] the specific heat will resemble the specific heat
+- [00:52:40,520 - 00:52:42,740] of the point molecule system,
+- [00:52:42,980 - 00:52:43,920] and at higher temperatures,
+- [00:52:44,620 - 00:52:45,960] the specific heat,
+- [00:52:45,960 - 00:52:47,220] meaning the heat capacity,
+- [00:52:47,340 - 00:52:47,920] will be bigger.
+- [00:52:49,240 - 00:52:50,460] Is that what you were asking?
+- [00:52:51,400 - 00:52:51,960] Yes.
+- [00:52:54,640 - 00:52:55,200] Question.
+- [00:52:55,860 - 00:52:56,940] If you...
+- [00:52:57,780 - 00:52:59,100] For low temperatures,
+- [00:52:59,240 - 00:53:00,700] if you add a little bit of heat,
+- [00:53:00,860 - 00:53:02,140] not enough to,
+- [00:53:02,140 - 00:53:03,280] you know,
+- [00:53:03,280 - 00:53:05,300] flip the rotational energy over,
+- [00:53:05,380 - 00:53:05,580] would that be a problem?
+- [00:53:05,580 - 00:53:09,900] And that energy must be manifested in the other...
+- [00:53:09,900 - 00:53:11,620] In the translational...
+- [00:53:11,620 - 00:53:11,740] Yeah.
+- [00:53:12,460 - 00:53:12,980] That's correct.
+- [00:53:14,060 - 00:53:14,440] Yeah.
+- [00:53:14,680 - 00:53:15,360] In other words,
+- [00:53:15,360 - 00:53:16,040] if you...
+- [00:53:17,580 - 00:53:18,340] I wouldn't...
+- [00:53:18,340 - 00:53:18,420] Yeah,
+- [00:53:18,420 - 00:53:19,720] what you say is absolutely right,
+- [00:53:19,800 - 00:53:20,860] but I would say if you
+- [00:53:20,860 - 00:53:21,920] raise the temperature a little bit,
+- [00:53:21,920 - 00:53:23,940] instead of saying add a little bit of heat,
+- [00:53:25,480 - 00:53:27,520] you can imagine adding a little bit of heat
+- [00:53:27,520 - 00:53:28,720] without changing the temperature.
+- [00:53:28,880 - 00:53:29,910] One way to do it would be
+- [00:53:29,910 - 00:53:30,940] to add a little bit of heat
+- [00:53:30,940 - 00:53:31,900] but expand the gas.
+- [00:53:33,200 - 00:53:35,180] So I think the right language
+- [00:53:35,180 - 00:53:36,330] is to say if you
+- [00:53:36,330 - 00:53:37,480] raise the temperature a little bit.
+- [00:53:39,520 - 00:53:40,400] Technically speaking,
+- [00:53:40,680 - 00:53:41,720] I wouldn't want to say if
+- [00:53:41,720 - 00:53:42,760] you add a little bit of heat
+- [00:53:42,760 - 00:53:44,110] because you can add a little
+- [00:53:44,110 - 00:53:45,460] bit of heat in many ways,
+- [00:53:45,680 - 00:53:48,220] including adding heat and expanding the gas
+- [00:53:48,220 - 00:53:49,380] or expanding the volume,
+- [00:53:50,000 - 00:53:52,140] and then you wouldn't change the temperature.
+- [00:53:52,340 - 00:53:53,720] So it's the temperature which counts here.
+- [00:53:54,200 - 00:53:54,780] All right.
+- [00:53:56,100 - 00:53:56,540] Good.
+- [00:53:58,220 - 00:53:58,840] All right.
+- [00:53:58,860 - 00:54:01,900] Are we happy about diatomic molecules?
+- [00:54:04,300 - 00:54:04,940] All right.
+- [00:54:05,180 - 00:54:08,460] I was going to talk about magnets a little bit,
+- [00:54:09,180 - 00:54:12,900] but I think I will turn to something else
+- [00:54:14,000 - 00:54:17,400] and come back to magnets next time.
+- [00:54:18,100 - 00:54:19,920] Black hole thermodynamics.
+- [00:54:24,519 - 00:54:28,320] And this is the kindergarten version
+- [00:54:28,320 - 00:54:30,840] of black hole thermodynamics.
+- [00:54:31,220 - 00:54:32,960] By kindergarten version,
+- [00:54:33,160 - 00:54:34,840] I mean it's based on...
+- [00:54:34,840 - 00:54:37,260] And you're not allowed to
+- [00:54:37,260 - 00:54:39,680] push me too hard for precision
+- [00:54:39,680 - 00:54:42,340] because the precision really comes
+- [00:54:42,340 - 00:54:44,420] from studying quantum field theory
+- [00:54:44,420 - 00:54:48,600] in the vicinity of a black hole.
+- [00:54:49,620 - 00:54:51,880] But the idea is all right.
+- [00:54:52,020 - 00:54:53,520] And what I'm describing to you now
+- [00:54:53,520 - 00:54:58,100] is very much Bekenstein's first explanation
+- [00:54:58,100 - 00:55:01,940] of why black holes have entropy.
+- [00:55:02,180 - 00:55:04,220] And then given that they have entropy,
+- [00:55:04,220 - 00:55:08,480] the various consequences of that.
+- [00:55:09,000 - 00:55:11,500] And there are applications of things
+- [00:55:11,500 - 00:55:12,440] that we've talked about.
+- [00:55:26,220 - 00:55:27,280] But as I said,
+- [00:55:27,340 - 00:55:29,260] the logic is not going to be
+- [00:55:29,260 - 00:55:32,600] as tight as you might like.
+- [00:55:41,480 - 00:55:42,320] But nevertheless,
+- [00:55:42,560 - 00:55:46,420] it does explain what's going on pretty well.
+- [00:55:48,260 - 00:55:48,860] All right.
+- [00:55:48,880 - 00:55:49,780] Let me just remind you
+- [00:55:49,780 - 00:55:51,840] about the important things about black holes.
+- [00:55:51,960 - 00:55:53,000] You don't have to know very much
+- [00:55:53,000 - 00:55:54,240] about what a black hole is.
+- [00:55:55,140 - 00:55:57,940] What you need to know is that it's an object
+- [00:56:01,660 - 00:56:03,280] which has a mass
+- [00:56:05,860 - 00:56:07,640] and a radius.
+- [00:56:08,000 - 00:56:08,560] Now,
+- [00:56:08,560 - 00:56:10,760] the radius is now the radius of the horizon.
+- [00:56:11,960 - 00:56:12,860] A radius.
+- [00:56:13,200 - 00:56:14,920] And it's the Schwarzschild radius,
+- [00:56:15,080 - 00:56:17,380] which I won't bother denoting R sub S
+- [00:56:17,899 - 00:56:19,560] because it's the only capital R
+- [00:56:19,560 - 00:56:20,580] that will be in the problem.
+- [00:56:20,900 - 00:56:22,860] And the connection between these two,
+- [00:56:22,940 - 00:56:23,600] incidentally,
+- [00:56:24,960 - 00:56:26,920] normal gas and so forth,
+- [00:56:26,920 - 00:56:30,180] has both an energy and a volume.
+- [00:56:30,360 - 00:56:33,100] Or if it's a spherical container of gas,
+- [00:56:33,420 - 00:56:36,880] it has an energy and it has a radius.
+- [00:56:37,060 - 00:56:38,600] And they're independent variables.
+- [00:56:39,100 - 00:56:43,520] You can vary both of them simultaneously at will.
+- [00:56:43,680 - 00:56:45,560] And it's a two-parameter system.
+- [00:56:46,140 - 00:56:47,700] One is a control variable,
+- [00:56:47,700 - 00:56:48,380] the volume.
+- [00:56:48,620 - 00:56:49,640] The other is,
+- [00:56:49,780 - 00:56:51,180] you can also think of it as a control,
+- [00:56:51,260 - 00:56:52,520] but the other is the energy.
+- [00:56:52,900 - 00:56:55,620] The black hole has only
+- [00:56:55,620 - 00:56:56,900] one energy.
+- [00:56:56,920 - 00:56:57,640] One parameter,
+- [00:56:57,800 - 00:56:59,840] or at least the simplest kind of black hole,
+- [00:56:59,940 - 00:57:01,060] the Schwarzschild black hole,
+- [00:57:01,260 - 00:57:02,820] has only one parameter,
+- [00:57:03,000 - 00:57:05,140] either the mass or the radius,
+- [00:57:05,360 - 00:57:06,720] because the mass and the radius
+- [00:57:06,720 - 00:57:08,140] are connected with each other,
+- [00:57:08,240 - 00:57:10,380] and they're not independent variables.
+- [00:57:11,580 - 00:57:12,140] Okay.
+- [00:57:12,280 - 00:57:13,980] What's the connection between them?
+- [00:57:14,180 - 00:57:16,580] The connection between them is that the radius,
+- [00:57:19,040 - 00:57:20,860] the radius of the black hole
+- [00:57:20,860 - 00:57:23,660] is equal to twice
+- [00:57:23,660 - 00:57:26,900] the mass times Newton's constant,
+- [00:57:26,900 - 00:57:27,560] divided,
+- [00:57:27,560 - 00:57:29,320] I think,
+- [00:57:29,320 - 00:57:31,120] by c squared.
+- [00:57:32,460 - 00:57:33,320] I'm going to keep,
+- [00:57:33,320 - 00:57:34,140] for the time being,
+- [00:57:34,240 - 00:57:36,360] I'm going to keep the c's in the formula.
+- [00:57:37,080 - 00:57:39,600] And because there is this connection,
+- [00:57:41,220 - 00:57:43,740] you think of it as a one-parameter system,
+- [00:57:43,940 - 00:57:46,420] which is completely controlled by the energy of it.
+- [00:57:47,520 - 00:57:49,260] And you don't have to
+- [00:57:49,260 - 00:57:51,000] think about a separate control parameter,
+- [00:57:51,000 - 00:57:52,460] which is the size of the system.
+- [00:57:54,620 - 00:57:55,140] Okay.
+- [00:57:55,200 - 00:57:55,600] That's,
+- [00:57:56,360 - 00:57:56,880] this is the energy of the black hole.
+- [00:57:56,880 - 00:57:56,960] This,
+- [00:57:56,960 - 00:57:57,420] I think,
+- [00:57:57,420 - 00:57:58,440] is the only real thing
+- [00:57:58,440 - 00:58:00,040] that we need to know about black holes.
+- [00:58:01,780 - 00:58:03,760] We also need to know that black holes
+- [00:58:03,760 - 00:58:05,880] swallow everything that comes in their vicinity.
+- [00:58:11,600 - 00:58:12,120] And
+- [00:58:14,520 - 00:58:15,660] here's what I want to do.
+- [00:58:16,320 - 00:58:18,780] I want to add to the black hole
+- [00:58:18,780 - 00:58:21,200] one bit of entropy,
+- [00:58:21,400 - 00:58:23,180] one bit of information.
+- [00:58:24,240 - 00:58:26,480] The minimal amount of information
+- [00:58:26,880 - 00:58:27,840] that I can add to the black hole.
+- [00:58:28,280 - 00:58:29,280] In fact,
+- [00:58:29,280 - 00:58:30,420] what we're going to imagine
+- [00:58:30,420 - 00:58:31,930] is we're going to start
+- [00:58:31,930 - 00:58:33,440] with a very small black hole.
+- [00:58:36,100 - 00:58:37,340] And we're going to imagine
+- [00:58:37,690 - 00:58:39,200] building up that black hole
+- [00:58:39,810 - 00:58:40,980] to a larger size
+- [00:58:40,980 - 00:58:44,020] by throwing in bits of information
+- [00:58:44,730 - 00:58:46,120] one bit at a time.
+- [00:58:46,680 - 00:58:46,880] Now,
+- [00:58:46,880 - 00:58:48,640] what does a bit of information mean?
+- [00:58:49,740 - 00:58:51,020] A bit of information,
+- [00:58:51,020 - 00:58:52,020] for us,
+- [00:58:52,120 - 00:58:55,060] is going to mean throwing in a particle.
+- [00:58:55,060 - 00:58:58,260] Either there's an extra particle in the black hole
+- [00:58:58,260 - 00:59:00,940] or there isn't an extra particle in the black hole.
+- [00:59:01,360 - 00:59:01,880] Okay.
+- [00:59:01,980 - 00:59:03,080] So we're going to imagine
+- [00:59:03,080 - 00:59:05,380] throwing in particle by particle
+- [00:59:05,380 - 00:59:07,840] and filling up the black hole
+- [00:59:07,840 - 00:59:09,280] until it gets to a bigger size
+- [00:59:09,280 - 00:59:10,660] by adding to its mass.
+- [00:59:11,560 - 00:59:13,110] It's very much like filling up
+- [00:59:13,110 - 00:59:14,660] a bathtub full of hot water
+- [00:59:14,660 - 00:59:16,120] by adding molecule by molecule.
+- [00:59:16,840 - 00:59:18,900] And here's the kind of question we might ask.
+- [00:59:19,140 - 00:59:21,800] If we add a certain number of molecules,
+- [00:59:22,700 - 00:59:24,840] how high is the level of the water?
+- [00:59:24,840 - 00:59:25,640] Well,
+- [00:59:25,640 - 00:59:26,400] that's an easy problem.
+- [00:59:26,660 - 00:59:27,280] You know,
+- [00:59:27,280 - 00:59:28,840] if you know the volume of a molecule
+- [00:59:29,380 - 00:59:31,340] and you add n molecules,
+- [00:59:31,520 - 00:59:33,960] you increase the volume of water by n units
+- [00:59:33,960 - 00:59:35,060] and so forth and so on.
+- [00:59:35,580 - 00:59:37,020] We know how to do that problem.
+- [00:59:37,420 - 00:59:38,200] Here now,
+- [00:59:38,200 - 00:59:39,080] we want to ask,
+- [00:59:39,180 - 00:59:42,360] how does the radius of the black hole grow
+- [00:59:42,920 - 00:59:44,980] as you add bits of information?
+- [00:59:45,560 - 00:59:46,040] Okay.
+- [00:59:46,140 - 00:59:48,260] So we're going to drop into this black hole
+- [00:59:49,680 - 00:59:50,160] particles.
+- [00:59:51,160 - 00:59:52,700] The simplest kind of particle
+- [00:59:52,700 - 00:59:53,960] to throw into the black hole
+- [00:59:53,960 - 00:59:54,740] is a photon.
+- [00:59:55,540 - 00:59:56,280] All right.
+- [00:59:56,730 - 00:59:57,020] Why?
+- [00:59:58,320 - 01:00:00,720] Because it's the easiest kind of particle
+- [01:00:00,720 - 01:00:01,460] for our purposes.
+- [01:00:02,260 - 01:00:04,680] So let's imagine photon by photon,
+- [01:00:04,960 - 01:00:06,860] we drop photons into the black hole,
+- [01:00:07,020 - 01:00:10,340] but we have to be careful not to add
+- [01:00:10,340 - 01:00:12,620] more than one bit of information
+- [01:00:12,620 - 01:00:15,500] when we throw a photon into the black hole.
+- [01:00:15,840 - 01:00:16,420] Now,
+- [01:00:16,420 - 01:00:16,920] supposing,
+- [01:00:16,920 - 01:00:17,500] first of all,
+- [01:00:17,520 - 01:00:18,480] we had a big black hole
+- [01:00:19,710 - 01:00:20,940] and we threw in a photon
+- [01:00:20,940 - 01:00:23,940] and that photon was a well-compact
+- [01:00:23,960 - 01:00:26,080] collimated photon from a laser beam
+- [01:00:26,700 - 01:00:27,900] with a short wavelength
+- [01:00:27,900 - 01:00:31,120] and the size of the black hole was a kilometer.
+- [01:00:32,460 - 01:00:33,180] Well,
+- [01:00:33,180 - 01:00:35,300] throwing in that one single photon
+- [01:00:35,300 - 01:00:37,600] is a lot more than one bit of information.
+- [01:00:38,000 - 01:00:40,960] And the reason is there's all kinds of information
+- [01:00:40,960 - 01:00:43,500] stored in the location
+- [01:00:43,500 - 01:00:46,720] that you threw in the photon.
+- [01:00:47,799 - 01:00:48,360] In fact,
+- [01:00:48,360 - 01:00:50,540] how many bits of information does it take
+- [01:00:50,540 - 01:00:53,860] in order to describe exactly where
+- [01:00:53,960 - 01:00:54,860] you threw in the photon?
+- [01:00:54,920 - 01:00:55,540] Not exactly,
+- [01:00:55,540 - 01:00:58,320] but with a certain accuracy.
+- [01:00:58,680 - 01:01:00,060] Suppose I give you a certain accuracy
+- [01:01:00,060 - 01:01:00,620] and I say,
+- [01:01:00,620 - 01:01:02,500] how many bits of information are there
+- [01:01:02,500 - 01:01:05,780] that are coded or that it takes to code
+- [01:01:05,780 - 01:01:08,040] the location of where the photon goes in?
+- [01:01:08,500 - 01:01:10,220] And the answer is,
+- [01:01:10,220 - 01:01:11,020] well,
+- [01:01:11,160 - 01:01:12,540] you have a couple of coordinates,
+- [01:01:12,860 - 01:01:18,940] an azimuthal and a polar angle to describe.
+- [01:01:19,400 - 01:01:21,220] You're going to describe those coordinates
+- [01:01:21,220 - 01:01:22,780] to a certain degree of accuracy,
+- [01:01:22,780 - 01:01:26,480] which means that a certain number of binary digits
+- [01:01:26,480 - 01:01:29,180] are necessary in order to specify
+- [01:01:29,180 - 01:01:31,660] where you threw in the photon.
+- [01:01:32,020 - 01:01:34,240] The number of binary digits is roughly
+- [01:01:34,240 - 01:01:35,660] the number of bits of information
+- [01:01:35,660 - 01:01:40,140] that are stored in the question
+- [01:01:40,140 - 01:01:41,880] or the answer to the question
+- [01:01:41,880 - 01:01:45,000] of where that photon fell through the horizon.
+- [01:01:45,460 - 01:01:46,540] So generally,
+- [01:01:46,540 - 01:01:48,500] throwing in a photon like that
+- [01:01:48,500 - 01:01:49,520] is much,
+- [01:01:49,520 - 01:01:51,180] much more than one bit of information.
+- [01:01:51,180 - 01:01:56,800] But if I throw in a long wavelength photon,
+- [01:01:57,160 - 01:02:02,200] a photon whose position uncertainty is so large,
+- [01:02:02,440 - 01:02:05,080] larger than the whole size of a black hole,
+- [01:02:05,380 - 01:02:07,160] then there's no sense.
+- [01:02:07,260 - 01:02:09,180] If we take a long wavelength photon
+- [01:02:09,180 - 01:02:12,280] whose position is quantum mechanically
+- [01:02:12,280 - 01:02:16,880] as uncertain as the whole size of the black hole,
+- [01:02:17,120 - 01:02:19,680] then the only question we can ask is,
+- [01:02:19,780 - 01:02:21,020] did the photon get in there,
+- [01:02:21,180 - 01:02:22,280] or didn't it get in there?
+- [01:02:22,940 - 01:02:25,160] Is there an extra photon in the black hole,
+- [01:02:25,300 - 01:02:25,960] or isn't there?
+- [01:02:26,900 - 01:02:27,860] So I...
+- [01:02:27,860 - 01:02:30,000] So is that true even though
+- [01:02:30,000 - 01:02:31,700] when the photon enters the black hole,
+- [01:02:31,760 - 01:02:33,060] it gets smeared across the horizon?
+- [01:02:34,600 - 01:02:35,480] The photon,
+- [01:02:35,480 - 01:02:36,340] of course,
+- [01:02:36,400 - 01:02:39,080] is quantum mechanically smeared across...
+- [01:02:39,720 - 01:02:40,200] Yes,
+- [01:02:40,200 - 01:02:40,640] that's true,
+- [01:02:40,640 - 01:02:42,260] even if the photon gets smeared...
+- [01:02:42,260 - 01:02:43,760] If it's smeared across the horizon,
+- [01:02:43,900 - 01:02:46,000] how is that positional information retained?
+- [01:02:46,340 - 01:02:47,920] It would seem that when it smears across the horizon,
+- [01:02:47,920 - 01:02:48,460] you lose it.
+- [01:02:48,700 - 01:02:49,640] The point is...
+- [01:02:50,140 - 01:02:50,380] Yeah.
+- [01:02:52,300 - 01:02:54,700] Let's come back to the bathtub full of hot water.
+- [01:02:55,340 - 01:02:55,920] Okay?
+- [01:02:56,040 - 01:02:57,960] We drop in a molecule
+- [01:02:57,960 - 01:03:01,840] at a certain definite place inside...
+- [01:03:02,740 - 01:03:05,000] on the surface of the hot water.
+- [01:03:05,440 - 01:03:06,020] Very,
+- [01:03:06,020 - 01:03:06,780] very quickly,
+- [01:03:06,960 - 01:03:08,700] for all practical purposes,
+- [01:03:08,860 - 01:03:11,260] in particular the purposes of taking a bath,
+- [01:03:12,140 - 01:03:14,900] we do not care where we dropped in that molecule.
+- [01:03:15,280 - 01:03:17,660] But information is conserved.
+- [01:03:18,200 - 01:03:19,440] To the person...
+- [01:03:19,440 - 01:03:24,280] to Laplace's master of the universe
+- [01:03:24,280 - 01:03:27,060] who can follow every single particle and so forth,
+- [01:03:27,220 - 01:03:28,900] that information is not lost.
+- [01:03:29,960 - 01:03:33,460] So when you throw in a single molecule
+- [01:03:33,460 - 01:03:35,800] into the bathtub full of hot water,
+- [01:03:36,000 - 01:03:39,500] the entropy goes up by more than one unit.
+- [01:03:39,680 - 01:03:40,560] The more,
+- [01:03:40,560 - 01:03:41,460] the better you know
+- [01:03:41,460 - 01:03:44,080] where that molecule went in.
+- [01:03:44,200 - 01:03:46,480] The fact that it later gets distributed
+- [01:03:46,480 - 01:03:49,240] throughout the entire bathtub,
+- [01:03:49,440 - 01:03:51,560] now that it gets delocalized,
+- [01:03:51,660 - 01:03:54,680] the information gets delocalized over the whole bathtub,
+- [01:03:54,940 - 01:03:56,140] that's secondary.
+- [01:03:56,480 - 01:03:58,740] The amount of information you threw in
+- [01:03:58,740 - 01:04:00,840] was whatever it took to specify
+- [01:04:01,399 - 01:04:02,980] where you threw in that molecule.
+- [01:04:03,700 - 01:04:06,280] So it's this conservation of information business,
+- [01:04:07,560 - 01:04:09,680] conservation of microscopic information.
+- [01:04:10,160 - 01:04:12,620] Same thing in a black hole.
+- [01:04:13,920 - 01:04:15,200] The details,
+- [01:04:15,460 - 01:04:18,200] the undecipherable details,
+- [01:04:18,200 - 01:04:20,700] that are too microscopic to see
+- [01:04:20,700 - 01:04:22,040] on the surface of the black hole,
+- [01:04:22,819 - 01:04:26,060] remember the things which constitute the entropy,
+- [01:04:27,100 - 01:04:29,520] remember where the photon was thrown in.
+- [01:04:30,720 - 01:04:31,320] All right,
+- [01:04:31,320 - 01:04:32,940] so our best strategy then
+- [01:04:32,940 - 01:04:36,320] is to delocalize the photon as much as possible,
+- [01:04:37,240 - 01:04:39,160] and then there won't be any memory
+- [01:04:39,160 - 01:04:41,000] of where the photon went in,
+- [01:04:41,080 - 01:04:42,800] because there was no sense in which the photon
+- [01:04:42,800 - 01:04:43,800] had a definite location.
+- [01:04:44,900 - 01:04:45,480] You say,
+- [01:04:45,480 - 01:04:45,680] well,
+- [01:04:45,680 - 01:04:48,180] why not just take an enormously long way
+- [01:04:48,200 - 01:04:49,520] wavelength photon?
+- [01:04:50,380 - 01:04:53,520] And the answer is that wavelengths,
+- [01:04:53,720 - 01:04:55,740] photons which have a wavelength,
+- [01:04:55,960 - 01:04:57,960] now this I'm going to just ask you to accept,
+- [01:05:00,340 - 01:05:04,200] that the question of whether the black hole
+- [01:05:04,200 - 01:05:06,720] is an absorber or a reflector
+- [01:05:07,520 - 01:05:09,920] is dependent on the wavelength
+- [01:05:09,920 - 01:05:11,820] of the radiation that you throw in.
+- [01:05:12,380 - 01:05:14,780] If the radiation has short wavelength
+- [01:05:14,780 - 01:05:16,720] by comparison with the,
+- [01:05:17,720 - 01:05:19,060] with the Schwarzschild radius,
+- [01:05:19,380 - 01:05:21,900] the black hole is a complete absorber.
+- [01:05:22,080 - 01:05:25,380] It will absorb radiation of shorter wavelength
+- [01:05:25,920 - 01:05:27,580] than the size of the black hole.
+- [01:05:28,040 - 01:05:29,100] On the other hand,
+- [01:05:29,100 - 01:05:31,600] for waves which are longer wavelength
+- [01:05:31,600 - 01:05:33,220] than the size of the black hole,
+- [01:05:33,280 - 01:05:34,340] they just get reflected.
+- [01:05:34,700 - 01:05:37,160] The black hole is almost a perfect reflector
+- [01:05:37,160 - 01:05:40,160] of waves which are longer wavelength
+- [01:05:40,160 - 01:05:41,680] than the size of the black hole.
+- [01:05:41,720 - 01:05:42,480] That you have to accept.
+- [01:05:42,840 - 01:05:45,360] So would it refract it or reflect it
+- [01:05:45,360 - 01:05:46,220] or just bend it?
+- [01:05:46,480 - 01:05:47,620] It will not bend it,
+- [01:05:47,620 - 01:05:48,000] but yeah.
+- [01:05:48,700 - 01:05:49,520] It will bend it.
+- [01:05:52,140 - 01:05:52,540] Yeah.
+- [01:05:53,660 - 01:05:54,560] It will bend it.
+- [01:05:55,500 - 01:05:57,000] Just like a spherical mirror.
+- [01:05:57,080 - 01:05:58,640] It will do whatever a spherical mirror does.
+- [01:05:59,900 - 01:06:00,420] I don't know,
+- [01:06:00,420 - 01:06:01,560] what does a spherical mirror do?
+- [01:06:02,740 - 01:06:04,960] Reflects and bends and does a variety of things.
+- [01:06:06,160 - 01:06:07,740] It will behave very much like a mirror.
+- [01:06:10,919 - 01:06:11,319] So,
+- [01:06:11,319 - 01:06:12,820] is it longer than the radius?
+- [01:06:12,820 - 01:06:14,200] Maybe somewhere in the diameter.
+- [01:06:15,440 - 01:06:17,380] Somewhere in that neighborhood.
+- [01:06:18,040 - 01:06:20,460] We're not going to keep track of factors of two.
+- [01:06:20,860 - 01:06:21,440] So,
+- [01:06:21,440 - 01:06:26,180] the reflectivity is a continuous function.
+- [01:06:26,660 - 01:06:30,400] And it goes from no reflectivity at short wavelengths
+- [01:06:30,400 - 01:06:33,380] to almost perfect reflectivity
+- [01:06:33,380 - 01:06:37,060] and perfect reflectivity at very long wavelengths.
+- [01:06:37,420 - 01:06:40,140] And the transition region is in the region
+- [01:06:40,140 - 01:06:41,360] of the Schwarzschild radius.
+- [01:06:45,480 - 01:06:47,740] There's a specific formula that you can work out,
+- [01:06:47,840 - 01:06:48,580] which I don't remember.
+- [01:06:49,200 - 01:06:50,160] It's not important.
+- [01:06:51,380 - 01:06:51,900] So,
+- [01:06:51,900 - 01:06:54,160] the strategy of throwing in the very,
+- [01:06:54,160 - 01:06:54,500] very,
+- [01:06:54,500 - 01:06:54,740] very,
+- [01:06:54,740 - 01:06:55,660] very long wavelength
+- [01:06:55,660 - 01:06:57,040] photon will backfire.
+- [01:06:57,120 - 01:06:58,580] The photon just won't get in for sure.
+- [01:07:00,500 - 01:07:01,520] On the other hand,
+- [01:07:01,520 - 01:07:03,400] it's good enough to throw in a photon
+- [01:07:03,400 - 01:07:06,860] whose wavelength is about equal to the radius of curvature,
+- [01:07:07,120 - 01:07:09,100] the radius of the black hole.
+- [01:07:09,400 - 01:07:11,420] It has some chance of getting in.
+- [01:07:12,680 - 01:07:14,540] 50% chance of getting in,
+- [01:07:14,540 - 01:07:16,000] 50% chance of not getting in.
+- [01:07:16,060 - 01:07:16,420] I don't know.
+- [01:07:16,560 - 01:07:19,200] But since it's delocalized on
+- [01:07:19,200 - 01:07:21,840] the scale of the whole horizon,
+- [01:07:22,400 - 01:07:25,000] there's no sense to ask where it fell in.
+- [01:07:25,260 - 01:07:27,640] And so all there is then is the question,
+- [01:07:27,760 - 01:07:29,660] did it get in or didn't it get in?
+- [01:07:29,980 - 01:07:31,620] One bit of information.
+- [01:07:32,360 - 01:07:32,880] So,
+- [01:07:32,880 - 01:07:35,620] throwing in a photon of wavelength lambda
+- [01:07:39,540 - 01:07:41,400] equal to the Schwarzschild radius,
+- [01:07:43,160 - 01:07:45,400] I said I wouldn't write R sub S,
+- [01:07:45,400 - 01:07:46,160] but I wrote it anyway,
+- [01:07:47,220 - 01:07:49,170] that's the best strategy for
+- [01:07:49,170 - 01:07:51,120] throwing in one bit of information.
+- [01:07:51,980 - 01:07:52,580] Now,
+- [01:07:52,580 - 01:07:53,380] next question.
+- [01:07:53,520 - 01:07:57,840] How much does the energy of the black hole increase
+- [01:07:57,840 - 01:08:00,180] when you add one bit of information?
+- [01:08:01,240 - 01:08:01,840] Well,
+- [01:08:01,840 - 01:08:04,760] the answer is it increases
+- [01:08:04,760 - 01:08:07,680] by the energy of a photon
+- [01:08:07,680 - 01:08:09,860] whose wavelength is this big.
+- [01:08:11,400 - 01:08:11,780] Okay,
+- [01:08:11,780 - 01:08:13,360] so you have to remember then
+- [01:08:13,360 - 01:08:14,940] what the energy of a photon is
+- [01:08:14,940 - 01:08:16,560] in terms of its wavelength.
+- [01:08:16,899 - 01:08:18,160] I will remind you.
+- [01:08:19,460 - 01:08:21,100] The energy of a photon,
+- [01:08:23,319 - 01:08:25,100] let's write it E sub gamma,
+- [01:08:25,100 - 01:08:26,580] gamma for photon.
+- [01:08:28,840 - 01:08:34,779] The energy of a photon is H
+- [01:08:34,779 - 01:08:40,720] bar over lambda times the speed of light.
+- [01:08:41,859 - 01:08:43,859] That's an elementary quantum mechanics formula.
+- [01:08:44,220 - 01:08:46,180] Is that Einstein's formula?
+- [01:08:46,660 - 01:08:47,100] Yeah.
+- [01:08:47,819 - 01:08:49,340] It's the same as E equals H nu.
+- [01:08:50,300 - 01:08:50,740] Okay.
+- [01:08:51,040 - 01:08:54,000] E equals H bar C over lambda.
+- [01:08:55,240 - 01:08:56,500] Is it H bar or H?
+- [01:08:56,700 - 01:08:57,580] I think I would take back.
+- [01:08:57,640 - 01:08:58,020] Just H.
+- [01:08:58,920 - 01:08:59,520] Just H.
+- [01:09:02,800 - 01:09:04,399] But we're not going to be
+- [01:09:04,399 - 01:09:06,000] keeping track of factors of two anyway,
+- [01:09:06,779 - 01:09:08,100] so my H is me,
+- [01:09:08,100 - 01:09:09,779] or two pi for that matter.
+- [01:09:09,779 - 01:09:11,419] The difference between H and H
+- [01:09:11,419 - 01:09:13,060] bar was a factor of two pi.
+- [01:09:13,460 - 01:09:15,160] I'm not really keeping track of that.
+- [01:09:15,260 - 01:09:18,080] And since I'm so used to writing H bar...
+- [01:09:19,939 - 01:09:21,279] Why don't you just say
+- [01:09:21,279 - 01:09:22,620] H equals H bar to one?
+- [01:09:22,859 - 01:09:23,180] No,
+- [01:09:23,180 - 01:09:24,060] you can't do that.
+- [01:09:24,140 - 01:09:24,620] Illegal.
+- [01:09:25,000 - 01:09:28,160] But you can set equal equal to wiggle.
+- [01:09:28,560 - 01:09:29,819] Equal equal to wiggle.
+- [01:09:31,100 - 01:09:31,660] All right.
+- [01:09:33,840 - 01:09:34,640] Strictly speaking,
+- [01:09:34,640 - 01:09:36,540] this means approximately equal to,
+- [01:09:37,800 - 01:09:39,420] proportional to is better.
+- [01:09:39,779 - 01:09:42,840] But close enough for our purposes.
+- [01:09:43,279 - 01:09:45,060] That's how much the energy increases.
+- [01:09:45,160 - 01:09:47,120] So when you throw in one bit of information,
+- [01:09:47,460 - 01:09:50,240] the energy of the black hole increases by this amount.
+- [01:09:51,060 - 01:09:52,080] Next question.
+- [01:09:52,260 - 01:09:54,760] How much does the radius of the black hole increase?
+- [01:09:55,480 - 01:09:56,000] Now,
+- [01:09:56,000 - 01:09:58,250] we have a formula that tells us
+- [01:09:58,250 - 01:10:00,500] the radius in terms of the mass.
+- [01:10:01,400 - 01:10:01,920] Mass,
+- [01:10:01,920 - 01:10:02,300] of course,
+- [01:10:02,300 - 01:10:02,760] is energy.
+- [01:10:02,960 - 01:10:03,820] Mass is energy.
+- [01:10:04,100 - 01:10:04,900] So when I...
+- [01:10:04,900 - 01:10:06,540] Apart from a factor of C squared,
+- [01:10:06,840 - 01:10:08,840] mass and energy are the same thing.
+- [01:10:08,840 - 01:10:11,820] So when I say that the energy
+- [01:10:11,820 - 01:10:14,800] of the black hole increases by this much,
+- [01:10:15,080 - 01:10:17,590] I'm also saying that the
+- [01:10:17,590 - 01:10:20,100] mass increases by a related amount.
+- [01:10:25,540 - 01:10:27,820] All I'm using is E equals MC squared.
+- [01:10:31,660 - 01:10:34,960] So what is the change in the mass of the...
+- [01:10:35,880 - 01:10:36,920] of the...
+- [01:10:37,839 - 01:10:39,560] of the black hole?
+- [01:10:39,700 - 01:10:42,660] You just divide the change in energy by C squared.
+- [01:10:43,280 - 01:10:45,360] So the change in mass,
+- [01:10:45,660 - 01:10:47,160] when you throw in one bit,
+- [01:10:48,460 - 01:10:51,280] is equal to the change in energy,
+- [01:10:52,000 - 01:10:54,400] H bar C over lambda.
+- [01:10:54,660 - 01:10:55,060] Oh,
+- [01:10:55,060 - 01:10:56,100] but now we can replace.
+- [01:10:56,160 - 01:10:56,580] First of all,
+- [01:10:56,580 - 01:10:57,500] we can replace lambda
+- [01:10:59,000 - 01:11:00,340] by our Schwarzschild.
+- [01:11:02,820 - 01:11:03,940] Might as well do that.
+- [01:11:07,780 - 01:11:09,600] H bar C over R.
+- [01:11:10,700 - 01:11:11,680] That's the change.
+- [01:11:11,840 - 01:11:13,760] That's the additional energy that you throw in.
+- [01:11:13,860 - 01:11:14,870] And now I think we have
+- [01:11:14,870 - 01:11:15,880] to divide that by C squared
+- [01:11:16,840 - 01:11:18,480] because of the C squared here.
+- [01:11:18,760 - 01:11:20,920] And so the mass of the
+- [01:11:20,920 - 01:11:23,080] black hole changes by this much.
+- [01:11:28,900 - 01:11:31,320] How does the radius of the black...
+- [01:11:31,320 - 01:11:32,640] And that's a nice formula.
+- [01:11:32,860 - 01:11:34,200] Throw in one bit of information.
+- [01:11:34,200 - 01:11:37,300] That's how much the mass increases.
+- [01:11:38,260 - 01:11:38,820] Okay.
+- [01:11:39,480 - 01:11:43,020] How much does the radius of the black hole increase?
+- [01:11:43,340 - 01:11:43,620] Well,
+- [01:11:43,620 - 01:11:45,880] we have a formula relating radius to mass.
+- [01:11:46,340 - 01:11:47,480] So in principle,
+- [01:11:47,480 - 01:11:48,920] we also have a formula
+- [01:11:48,920 - 01:11:52,560] relating the change of radius to the change of mass.
+- [01:11:52,980 - 01:11:54,340] All we have to do,
+- [01:11:54,340 - 01:11:56,300] let's solve this equation for the mass.
+- [01:11:57,040 - 01:11:57,600] M...
+- [01:12:00,500 - 01:12:01,060] M...
+- [01:12:02,240 - 01:12:03,060] Let's see.
+- [01:12:03,060 - 01:12:03,420] Let's see.
+- [01:12:03,420 - 01:12:06,140] Let's get rid of some of the mess over here.
+- [01:12:09,600 - 01:12:10,040] Let's see.
+- [01:12:11,460 - 01:12:13,840] M is equal to C squared R
+- [01:12:15,260 - 01:12:16,440] divided by 2G.
+- [01:12:16,560 - 01:12:17,320] Do I have that right?
+- [01:12:20,480 - 01:12:21,360] And twos,
+- [01:12:21,360 - 01:12:22,660] let's forget twos.
+- [01:12:22,660 - 01:12:24,660] Twos are not important to this calculation.
+- [01:12:26,180 - 01:12:26,800] All right.
+- [01:12:28,300 - 01:12:28,940] Proportional two.
+- [01:12:30,360 - 01:12:31,780] We're trying to make an estimate.
+- [01:12:31,960 - 01:12:33,400] This is an issue of making an estimate.
+- [01:12:33,400 - 01:12:34,400] All right.
+- [01:12:34,420 - 01:12:36,980] M is C squared R over G.
+- [01:12:43,760 - 01:12:45,200] Why did I do that?
+- [01:12:45,340 - 01:12:47,000] I don't even know why I did that.
+- [01:12:47,680 - 01:12:50,540] It's smarter just to take this formula as it is
+- [01:12:50,540 - 01:12:52,060] and to multiply.
+- [01:12:52,220 - 01:12:53,500] Here's the change in mass.
+- [01:12:54,320 - 01:12:58,080] Let's multiply it by twice G over C squared,
+- [01:12:58,200 - 01:12:59,900] and that'll give us the change in R.
+- [01:13:00,140 - 01:13:01,820] What I want is the change in R.
+- [01:13:01,820 - 01:13:08,540] So let's just multiply by G over C squared.
+- [01:13:09,100 - 01:13:16,020] The change in R is G over C squared.
+- [01:13:16,140 - 01:13:16,920] Let's forget the two.
+- [01:13:17,080 - 01:13:18,660] G over C squared
+- [01:13:23,019 - 01:13:25,100] times the change in mass,
+- [01:13:25,380 - 01:13:30,100] which is H bar over R
+- [01:13:30,920 - 01:13:31,800] times C squared.
+- [01:13:31,800 - 01:13:34,800] So I've now figured out how much
+- [01:13:34,800 - 01:13:38,580] the radius of the horizon changes
+- [01:13:38,580 - 01:13:40,520] when I throw in one bit of information.
+- [01:13:40,920 - 01:13:41,920] Here it is.
+- [01:13:42,020 - 01:13:42,480] G,
+- [01:13:42,480 - 01:13:43,260] H bar,
+- [01:13:43,260 - 01:13:45,580] small because H bar is small.
+- [01:13:46,260 - 01:13:48,340] It's also small because C is large.
+- [01:13:49,220 - 01:13:51,040] Here is the radius itself.
+- [01:13:51,520 - 01:13:54,400] So the change in radius is inverse
+- [01:13:54,400 - 01:13:56,280] to the radius itself.
+- [01:13:56,380 - 01:13:57,420] The bigger the radius,
+- [01:13:57,660 - 01:13:59,800] the smaller the change in the radius
+- [01:13:59,800 - 01:14:01,080] when you throw in one bit.
+- [01:14:01,800 - 01:14:04,560] But let's multiply the equation by R.
+- [01:14:06,080 - 01:14:09,560] That says that R times the change in R
+- [01:14:10,460 - 01:14:12,760] is equal to G,
+- [01:14:12,760 - 01:14:16,820] H bar over C cubed.
+- [01:14:17,920 - 01:14:19,280] One bit of information,
+- [01:14:20,519 - 01:14:23,000] R times delta R is equal to
+- [01:14:23,000 - 01:14:23,200] G,
+- [01:14:23,200 - 01:14:24,460] H bar over C cubed.
+- [01:14:25,080 - 01:14:27,040] Now what is R times delta R?
+- [01:14:31,800 - 01:14:33,500] It's just the change in R squared
+- [01:14:33,500 - 01:14:35,260] to within a factor of two.
+- [01:14:35,440 - 01:14:36,480] And what is R squared?
+- [01:14:38,120 - 01:14:39,820] It's the area of the horizon.
+- [01:14:40,300 - 01:14:42,100] So here's what we found out.
+- [01:14:42,540 - 01:14:45,500] That the change in the area of the horizon
+- [01:14:45,500 - 01:14:46,880] when you throw in one bit
+- [01:14:47,799 - 01:14:49,840] is a universal constant.
+- [01:14:50,720 - 01:14:52,920] It does not depend on the size
+- [01:14:52,920 - 01:14:54,400] or the mass of the black hole.
+- [01:14:54,820 - 01:14:57,180] The change in area is always
+- [01:14:57,540 - 01:14:57,840] G,
+- [01:14:57,840 - 01:15:00,940] H bar over C cubed.
+- [01:15:02,960 - 01:15:06,920] A universal constant unit of area,
+- [01:15:07,080 - 01:15:08,360] this has dimensions of area,
+- [01:15:09,500 - 01:15:11,880] where every time you throw in a single bit,
+- [01:15:12,040 - 01:15:15,340] you increase the area by the same exact amount.
+- [01:15:15,960 - 01:15:16,660] All right,
+- [01:15:16,660 - 01:15:18,060] so now if we imagined
+- [01:15:18,060 - 01:15:19,960] building up the black hole
+- [01:15:19,960 - 01:15:21,280] from a small black hole
+- [01:15:21,280 - 01:15:22,880] by throwing in bits of information,
+- [01:15:23,480 - 01:15:25,020] at the end of the process,
+- [01:15:25,100 - 01:15:25,920] we would discover
+- [01:15:26,919 - 01:15:31,300] if this is the change in the area
+- [01:15:31,300 - 01:15:33,860] when one bit of information is thrown in,
+- [01:15:33,940 - 01:15:35,900] how much does the area change
+- [01:15:35,900 - 01:15:38,220] when you've thrown in S,
+- [01:15:38,300 - 01:15:39,380] S for entropy,
+- [01:15:39,700 - 01:15:42,000] when you've thrown in S bits of entropy?
+- [01:15:42,860 - 01:15:44,600] Just multiply it by S.
+- [01:15:45,480 - 01:15:48,040] One bit changes this much.
+- [01:15:48,260 - 01:15:49,240] S bits,
+- [01:15:49,240 - 01:15:50,920] the change,
+- [01:15:50,920 - 01:15:51,580] or the...
+- [01:15:52,240 - 01:15:53,440] By now,
+- [01:15:53,440 - 01:15:54,900] if we build up the black hole
+- [01:15:54,900 - 01:15:55,900] from a small black hole,
+- [01:15:56,000 - 01:15:57,580] we can just write that the total area
+- [01:15:58,360 - 01:16:00,600] is equal to G,
+- [01:16:00,600 - 01:16:03,220] H bar over C cubed,
+- [01:16:03,540 - 01:16:05,860] times the entropy of the black hole.
+- [01:16:08,459 - 01:16:09,099] Or,
+- [01:16:09,099 - 01:16:10,980] we can invert the relationship
+- [01:16:10,980 - 01:16:11,600] and say,
+- [01:16:11,600 - 01:16:11,900] hey,
+- [01:16:11,900 - 01:16:13,300] we made a discovery.
+- [01:16:13,600 - 01:16:15,020] Black holes have entropy
+- [01:16:17,000 - 01:16:18,800] equal to C cubed
+- [01:16:19,940 - 01:16:21,560] over H bar G
+- [01:16:22,799 - 01:16:23,920] times the area.
+- [01:16:24,400 - 01:16:24,940] Now,
+- [01:16:24,940 - 01:16:25,720] that's not an equality.
+- [01:16:26,300 - 01:16:27,360] That's an...
+- [01:16:29,059 - 01:16:29,700] estimated
+- [01:16:32,120 - 01:16:32,800] value.
+- [01:16:33,720 - 01:16:35,160] Where was the estimate?
+- [01:16:35,820 - 01:16:36,500] Well,
+- [01:16:36,500 - 01:16:37,040] many,
+- [01:16:37,040 - 01:16:38,300] many places where...
+- [01:16:39,160 - 01:16:39,840] where...
+- [01:16:41,080 - 01:16:42,400] we made estimates.
+- [01:16:43,800 - 01:16:45,680] This is the Bekenstein formula.
+- [01:16:49,180 - 01:16:50,980] And what it says is that
+- [01:16:50,980 - 01:16:52,780] that's how much hidden information
+- [01:16:52,780 - 01:16:55,420] is there in the black hole.
+- [01:16:56,200 - 01:16:57,540] It's kind of interesting.
+- [01:16:57,880 - 01:16:59,840] This is one of the few places in physics
+- [01:16:59,840 - 01:17:02,720] where H bar occurs in the denominator.
+- [01:17:05,559 - 01:17:06,200] Usually,
+- [01:17:06,200 - 01:17:08,240] quantum effects are small.
+- [01:17:09,499 - 01:17:11,600] The existence of an entropy
+- [01:17:11,600 - 01:17:13,340] is a kind of quantum effect,
+- [01:17:13,600 - 01:17:15,120] but just think about it for a minute.
+- [01:17:15,420 - 01:17:17,280] What it says is that in the limit
+- [01:17:17,280 - 01:17:18,620] of classical physics,
+- [01:17:18,960 - 01:17:20,820] the entropy doesn't go away.
+- [01:17:20,980 - 01:17:22,780] The entropy becomes infinite.
+- [01:17:24,040 - 01:17:26,440] Quantum mechanics is not what gives
+- [01:17:26,440 - 01:17:27,540] the black hole entropy.
+- [01:17:27,540 - 01:17:29,700] Quantum mechanics is what prevents
+- [01:17:29,700 - 01:17:32,020] the black hole entropy from being infinite.
+- [01:17:32,440 - 01:17:35,860] Why would black holes have so much entropy?
+- [01:17:36,320 - 01:17:38,120] And the answer is very simple.
+- [01:17:38,320 - 01:17:41,740] You can hide an enormous amount of information
+- [01:17:41,740 - 01:17:43,260] in a black hole.
+- [01:17:43,800 - 01:17:45,880] Take the Encyclopedia Britannica
+- [01:17:45,880 - 01:17:47,220] and throw it into the black hole.
+- [01:17:47,500 - 01:17:49,440] You can't tell the difference between that
+- [01:17:49,440 - 01:17:51,340] and throwing in a few chickens.
+- [01:17:52,160 - 01:17:52,760] Right?
+- [01:17:52,940 - 01:17:54,800] You can't tell the difference at the end.
+- [01:17:54,800 - 01:17:56,660] So there's a lot of information
+- [01:17:56,660 - 01:17:59,300] potentially storable in a black hole,
+- [01:17:59,520 - 01:18:03,440] or a lot of hidden information
+- [01:18:04,599 - 01:18:06,300] that's storable in the black hole.
+- [01:18:06,600 - 01:18:08,200] And in classical physics,
+- [01:18:08,580 - 01:18:10,700] it's not that there's no hidden information
+- [01:18:10,700 - 01:18:11,860] hidden in a black hole.
+- [01:18:12,000 - 01:18:14,060] It's that the potential amount of information
+- [01:18:14,060 - 01:18:15,920] is infinite in a black hole.
+- [01:18:16,180 - 01:18:18,340] It's quantum mechanics which keeps it
+- [01:18:18,340 - 01:18:19,180] from being infinite
+- [01:18:19,560 - 01:18:21,120] and gives you a finite entropy.
+- [01:18:21,760 - 01:18:22,520] All right,
+- [01:18:22,520 - 01:18:24,120] so that's the origin of entropy
+- [01:18:24,120 - 01:18:25,420] in black hole physics.
+- [01:18:26,120 - 01:18:27,500] Let's talk about temperature.
+- [01:18:28,580 - 01:18:30,060] We could do this in two ways.
+- [01:18:31,360 - 01:18:33,020] I like one way better than the other.
+- [01:18:33,360 - 01:18:35,300] Here we have the entropy written
+- [01:18:35,300 - 01:18:36,380] in terms of the area.
+- [01:18:36,640 - 01:18:39,100] The area can be written in terms of the radius,
+- [01:18:39,360 - 01:18:40,620] and the radius can be
+- [01:18:40,620 - 01:18:41,880] written in terms of the mass,
+- [01:18:42,180 - 01:18:43,470] and the mass can be
+- [01:18:43,470 - 01:18:44,760] written in terms of the energy.
+- [01:18:45,340 - 01:18:46,420] So in principle,
+- [01:18:46,420 - 01:18:47,820] we have a connection
+- [01:18:47,820 - 01:18:50,800] between entropy and energy.
+- [01:18:52,120 - 01:18:53,320] When we know the connection
+- [01:18:53,320 - 01:18:54,880] between entropy and energy,
+- [01:18:55,120 - 01:18:57,020] we can compute temperature.
+- [01:18:57,240 - 01:18:59,220] dE equals T dS.
+- [01:18:59,460 - 01:19:01,340] But we can short-circuit this.
+- [01:19:01,640 - 01:19:05,640] We can also say that the definition of temperature,
+- [01:19:05,900 - 01:19:08,640] when you write dE equals T dS,
+- [01:19:10,759 - 01:19:13,240] basically this says that the definition
+- [01:19:13,240 - 01:19:16,180] of the temperature is the change in energy
+- [01:19:16,180 - 01:19:18,780] when you change S by one unit.
+- [01:19:19,520 - 01:19:22,480] If dS is just one unit of entropy,
+- [01:19:22,480 - 01:19:23,880] we can write approximate.
+- [01:19:24,360 - 01:19:27,260] dE equals T dS.
+- [01:19:27,740 - 01:19:30,180] And if we change the entropy by one unit,
+- [01:19:30,340 - 01:19:33,820] then the temperature is just the change in the entropy.
+- [01:19:34,160 - 01:19:34,680] Sorry,
+- [01:19:34,680 - 01:19:36,000] the change in the energy.
+- [01:19:36,820 - 01:19:37,380] Well,
+- [01:19:37,380 - 01:19:37,920] let's go back.
+- [01:19:38,100 - 01:19:39,160] That's what we started with.
+- [01:19:40,140 - 01:19:43,980] Here is the expression for the change in energy
+- [01:19:43,980 - 01:19:46,580] when we throw in one bit of information.
+- [01:19:48,080 - 01:19:52,240] So this then is the dE on the left-hand side
+- [01:19:52,480 - 01:19:54,140] and on the right-hand side,
+- [01:19:55,019 - 01:19:57,940] dS is equal to one unit of entropy,
+- [01:19:58,320 - 01:19:59,840] and so this must be
+- [01:19:59,840 - 01:20:01,360] the temperature of the black hole.
+- [01:20:02,600 - 01:20:07,180] h bar C divided by its radius.
+- [01:20:07,780 - 01:20:09,580] We can also write this,
+- [01:20:09,620 - 01:20:11,340] and there's a numerical constant,
+- [01:20:11,660 - 01:20:12,960] there's a numerical constant,
+- [01:20:13,260 - 01:20:15,980] but we can also write this as h bar C
+- [01:20:15,980 - 01:20:20,440] divided by the Schwarzschild radius,
+- [01:20:20,700 - 01:20:22,020] which is 2mg.
+- [01:20:24,440 - 01:20:25,140] All right,
+- [01:20:25,140 - 01:20:27,260] the honest answer happens to be,
+- [01:20:28,080 - 01:20:28,900] I think,
+- [01:20:28,900 - 01:20:30,000] 8 pi here.
+- [01:20:31,880 - 01:20:33,580] But that's not important to us.
+- [01:20:33,620 - 01:20:34,920] Let's not fool around with that.
+- [01:20:34,980 - 01:20:36,040] Let's just leave it as mg.
+- [01:20:37,220 - 01:20:38,280] That's the temperature,
+- [01:20:38,400 - 01:20:41,480] the change in entropy when you add one bit.
+- [01:20:41,940 - 01:20:44,080] So this is an application of that idea,
+- [01:20:44,300 - 01:20:47,260] and it's very interesting and unusual.
+- [01:20:48,140 - 01:20:50,480] It's unusual because remember,
+- [01:20:50,640 - 01:20:52,380] m is the energy of the black hole,
+- [01:20:52,480 - 01:20:56,300] and the temperature decreases with energy.
+- [01:20:57,140 - 01:20:59,680] So this is a very unusual situation
+- [01:20:59,680 - 01:21:02,940] where a system's energy...
+- [01:21:04,760 - 01:21:05,460] sorry,
+- [01:21:05,460 - 01:21:07,540] where a system's temperature
+- [01:21:07,540 - 01:21:10,300] is inverse to its energy.
+- [01:21:10,600 - 01:21:12,360] How many systems have you ever heard of
+- [01:21:12,360 - 01:21:15,620] whose temperature increases
+- [01:21:16,480 - 01:21:18,620] when the mass decreases?
+- [01:21:19,680 - 01:21:21,540] Or when the energy...
+- [01:21:21,540 - 01:21:22,840] whose temperature increases
+- [01:21:22,840 - 01:21:24,820] when the energy decreases?
+- [01:21:27,900 - 01:21:29,700] Anybody know a system that does that,
+- [01:21:29,760 - 01:21:30,920] other than a black hole?
+- [01:21:33,020 - 01:21:33,440] Okay,
+- [01:21:33,440 - 01:21:33,880] I'll tell you.
+- [01:21:33,960 - 01:21:35,460] They're actually extremely common.
+- [01:21:39,320 - 01:21:39,740] No,
+- [01:21:39,740 - 01:21:39,980] no,
+- [01:21:39,980 - 01:21:40,140] no,
+- [01:21:40,140 - 01:21:40,300] no,
+- [01:21:40,300 - 01:21:40,420] no,
+- [01:21:40,420 - 01:21:40,460] no.
+- [01:21:40,460 - 01:21:41,360] They're not that common.
+- [01:21:43,860 - 01:21:44,660] A star.
+- [01:21:45,560 - 01:21:46,180] A star.
+- [01:21:46,260 - 01:21:47,280] What happens to a star
+- [01:21:47,280 - 01:21:48,300] when it runs out of fuel?
+- [01:21:53,059 - 01:21:53,620] It's a gas.
+- [01:21:53,620 - 01:21:54,580] And it radiates,
+- [01:21:54,580 - 01:21:56,540] and it radiates away its energy.
+- [01:21:56,800 - 01:21:59,020] As it radiates away its energy,
+- [01:21:59,280 - 01:22:00,260] it shrinks,
+- [01:22:00,400 - 01:22:02,240] and what happens to its energy...
+- [01:22:02,240 - 01:22:03,940] What happens to its temperature?
+- [01:22:07,460 - 01:22:08,360] Temperature goes up.
+- [01:22:10,520 - 01:22:12,900] As the star runs out of fuel,
+- [01:22:13,220 - 01:22:14,300] it heats up.
+- [01:22:15,380 - 01:22:16,940] Its temperature goes up.
+- [01:22:17,660 - 01:22:19,240] What happens is...
+- [01:22:19,240 - 01:22:20,640] Let me give you an example,
+- [01:22:20,640 - 01:22:21,040] first of all.
+- [01:22:21,540 - 01:22:24,640] Just a planet orbiting the sun.
+- [01:22:24,840 - 01:22:26,180] Suppose there's a little bit of friction.
+- [01:22:26,580 - 01:22:27,920] A little bit of friction,
+- [01:22:28,080 - 01:22:30,480] or it radiates away energy
+- [01:22:30,480 - 01:22:32,200] in the form of gravitational waves,
+- [01:22:32,260 - 01:22:34,700] anything which decreases the energy of the planet
+- [01:22:34,700 - 01:22:35,500] as it goes around.
+- [01:22:35,820 - 01:22:37,620] It starts to orbit inward,
+- [01:22:37,860 - 01:22:39,600] and it loses its energy
+- [01:22:39,600 - 01:22:42,400] by increasing its negative gravitational energy.
+- [01:22:42,940 - 01:22:44,320] Its energy increases
+- [01:22:44,320 - 01:22:47,640] because its gravitational energy goes up,
+- [01:22:47,640 - 01:22:49,120] but its gravitational energy is negative.
+- [01:22:49,220 - 01:22:50,580] So it spirals in,
+- [01:22:50,580 - 01:22:52,000] losing its energy,
+- [01:22:52,200 - 01:22:54,780] but what happens to the velocity as it spirals in?
+- [01:22:55,300 - 01:22:56,860] The answer is it goes up.
+- [01:22:57,260 - 01:23:01,540] It loses more potential energy
+- [01:23:01,540 - 01:23:03,740] than it gains kinetic energy
+- [01:23:04,400 - 01:23:05,400] by a factor of two.
+- [01:23:05,760 - 01:23:07,420] So as it spirals in,
+- [01:23:07,540 - 01:23:08,720] it loses energy,
+- [01:23:08,720 - 01:23:09,680] but it speeds up.
+- [01:23:09,860 - 01:23:11,680] And because it speeds up,
+- [01:23:11,820 - 01:23:13,880] if these were individual molecules
+- [01:23:14,519 - 01:23:17,540] falling into the gravitating object,
+- [01:23:17,840 - 01:23:20,100] it would mean that its temperature goes up.
+- [01:23:20,580 - 01:23:22,460] So this is an odd situation,
+- [01:23:22,460 - 01:23:22,940] alright,
+- [01:23:23,080 - 01:23:24,420] but it's not all that uncommon,
+- [01:23:25,179 - 01:23:28,880] that the temperature increases
+- [01:23:28,880 - 01:23:31,220] as the energy decreases.
+- [01:23:31,780 - 01:23:33,500] The smaller the black hole,
+- [01:23:33,660 - 01:23:34,640] the higher the temperature.
+- [01:23:35,280 - 01:23:36,840] The smaller the energy,
+- [01:23:36,980 - 01:23:38,100] the higher the temperature.
+- [01:23:38,640 - 01:23:40,880] The bigger the black hole,
+- [01:23:40,980 - 01:23:42,060] the lower the temperature.
+- [01:23:43,540 - 01:23:46,640] So a black hole of stellar mass,
+- [01:23:47,000 - 01:23:48,560] a black hole of...
+- [01:23:51,459 - 01:23:53,400] mass of one solar mass,
+- [01:23:53,740 - 01:23:55,360] has a temperature of something like
+- [01:23:55,360 - 01:23:57,180] about 10 to the minus eighth degrees Kelvin.
+- [01:23:59,319 - 01:24:02,480] The temperature is inversely proportional to the mass,
+- [01:24:02,740 - 01:24:05,160] so a black hole at the center of the galaxy
+- [01:24:05,160 - 01:24:08,540] with a mass a million times bigger
+- [01:24:08,540 - 01:24:09,600] or a billion times bigger
+- [01:24:09,600 - 01:24:11,540] would have a temperature a billion times smaller.
+- [01:24:12,660 - 01:24:13,380] Of course,
+- [01:24:13,380 - 01:24:14,260] there are other reasons
+- [01:24:14,260 - 01:24:15,960] why black holes have temperature.
+- [01:24:16,540 - 01:24:19,200] Having nothing whatever to do with quantum mechanics
+- [01:24:19,200 - 01:24:21,520] and Hawking and Bekenstein and all of that,
+- [01:24:22,140 - 01:24:23,360] they may have temperature,
+- [01:24:24,300 - 01:24:25,060] observational temperature,
+- [01:24:25,220 - 01:24:26,420] for a totally different reason.
+- [01:24:27,020 - 01:24:27,500] Namely,
+- [01:24:27,500 - 01:24:29,740] there may be gas swirling around them,
+- [01:24:29,800 - 01:24:31,600] and as the gas swirls around them,
+- [01:24:31,620 - 01:24:32,160] it heats,
+- [01:24:32,260 - 01:24:33,340] and as it heats,
+- [01:24:33,340 - 01:24:34,100] it gives off light,
+- [01:24:34,280 - 01:24:35,830] but eventually that gas will
+- [01:24:35,830 - 01:24:37,380] be absorbed by the black hole,
+- [01:24:37,900 - 01:24:40,420] and when the black hole is in an environment
+- [01:24:41,940 - 01:24:43,740] which is otherwise empty space,
+- [01:24:44,120 - 01:24:45,480] it has a temperature,
+- [01:24:45,620 - 01:24:48,380] and the temperature is inverse to its mass.
+- [01:24:49,200 - 01:24:50,260] So that's the application
+- [01:24:50,260 - 01:24:52,600] of some of the thermodynamic relationships
+- [01:24:52,960 - 01:24:54,660] and some of the ideas of information,
+- [01:24:55,639 - 01:24:56,200] energy,
+- [01:24:57,559 - 01:24:58,120] entropy,
+- [01:24:59,099 - 01:24:59,660] temperature,
+- [01:25:00,440 - 01:25:02,200] and how they fit together
+- [01:25:02,200 - 01:25:04,860] in a surprising way
+- [01:25:04,860 - 01:25:06,380] in a black hole.
+- [01:25:06,660 - 01:25:07,040] No.
+- [01:25:08,000 - 01:25:09,400] By temperature here,
+- [01:25:09,460 - 01:25:11,320] do you mean temperature inside the
+- [01:25:11,320 - 01:25:13,180] black hole or outside the black hole?
+- [01:25:13,200 - 01:25:13,300] No,
+- [01:25:13,300 - 01:25:14,700] I mean the temperature seen
+- [01:25:14,700 - 01:25:17,480] by an observer far outside the black hole.
+- [01:25:17,720 - 01:25:18,700] Is that at the horizon?
+- [01:25:18,700 - 01:25:18,800] Yes.
+- [01:25:20,640 - 01:25:22,140] It's the temperature seen
+- [01:25:22,700 - 01:25:24,940] by somebody far away from the black hole
+- [01:25:24,940 - 01:25:28,380] detecting photons which are coming out of the black hole
+- [01:25:28,380 - 01:25:30,660] and measuring their energy
+- [01:25:30,660 - 01:25:33,520] and asking what does that correspond to
+- [01:25:33,520 - 01:25:34,640] in the way of a temperature.
+- [01:25:36,100 - 01:25:39,320] We haven't done anything about black body radiation yet.
+- [01:25:39,440 - 01:25:41,440] You stand far away from the black hole.
+- [01:25:41,560 - 01:25:43,060] It's exactly the same as the sun.
+- [01:25:43,540 - 01:25:46,540] Is the temperature that we ascribe to the sun
+- [01:25:46,540 - 01:25:48,640] the same as the temperature
+- [01:25:48,700 - 01:25:51,540] that we would measure if we lowered a thermometer down
+- [01:25:51,540 - 01:25:53,800] to near the sun?
+- [01:25:56,080 - 01:25:57,180] The answer is no.
+- [01:25:57,800 - 01:26:00,140] The temperature that we ascribe to the sun
+- [01:26:00,140 - 01:26:01,200] is a little bit less
+- [01:26:02,380 - 01:26:05,240] than the temperature that you would ascribe to the sun
+- [01:26:05,240 - 01:26:06,840] if you lowered a thermometer down.
+- [01:26:07,400 - 01:26:08,620] And the reason is
+- [01:26:08,620 - 01:26:11,080] the temperature that a thermometer sees
+- [01:26:11,640 - 01:26:15,060] is dependent on the energy of the photons
+- [01:26:15,060 - 01:26:16,140] which are hitting it.
+- [01:26:17,420 - 01:26:18,680] The energy of a photon
+- [01:26:18,700 - 01:26:20,820] when it climbs up out of
+- [01:26:20,820 - 01:26:22,940] the gravitational field of the sun
+- [01:26:23,460 - 01:26:25,320] the energy of the photon decreases.
+- [01:26:25,980 - 01:26:28,480] So the energy of the photons that we measure
+- [01:26:28,480 - 01:26:30,800] far away from the sun is a little bit less
+- [01:26:31,500 - 01:26:34,100] than the energy that we might have ascribed to it
+- [01:26:34,100 - 01:26:36,200] if we stood right at the surface of the sun.
+- [01:26:36,680 - 01:26:39,180] When we do the thermodynamics of the sun
+- [01:26:39,700 - 01:26:41,260] we do it as observers who
+- [01:26:41,260 - 01:26:42,820] are far away from the sun.
+- [01:26:42,920 - 01:26:44,340] That's the appropriate way to do it.
+- [01:26:44,420 - 01:26:45,600] And the same thing with the black hole.
+- [01:26:45,900 - 01:26:47,600] We do it from the point of view of somebody
+- [01:26:47,600 - 01:26:48,760] far from the black hole.
+- [01:26:49,160 - 01:26:51,400] If we got close to the black hole
+- [01:26:51,400 - 01:26:52,560] and measured the temperature
+- [01:26:52,560 - 01:26:53,560] it would appear higher
+- [01:26:54,340 - 01:26:56,240] just for the same reason that the temperature
+- [01:26:56,240 - 01:26:57,310] at the surface of the
+- [01:26:57,310 - 01:26:58,380] sun is a little bit higher.
+- [01:27:01,180 - 01:27:05,120] How do we detect the fact that the temperature
+- [01:27:05,120 - 01:27:06,140] at the surface of the
+- [01:27:06,140 - 01:27:07,160] sun is a little bit higher
+- [01:27:07,160 - 01:27:08,940] than the temperature that we actually measure?
+- [01:27:09,080 - 01:27:10,360] How would we detect it?
+- [01:27:14,700 - 01:27:15,180] Yeah.
+- [01:27:15,180 - 01:27:18,660] From the position of spectral lines.
+- [01:27:19,720 - 01:27:22,320] The spectral lines that we see far away
+- [01:27:23,200 - 01:27:25,380] look a little bit less energetic
+- [01:27:25,380 - 01:27:28,160] than the spectral lines that we would expect
+- [01:27:28,160 - 01:27:29,080] from,
+- [01:27:29,080 - 01:27:31,760] you know,
+- [01:27:31,760 - 01:27:32,860] chemical emissions
+- [01:27:32,860 - 01:27:35,060] near the surface of the sun.
+- [01:27:35,760 - 01:27:39,080] So this is the correct temperature to ascribe
+- [01:27:39,080 - 01:27:42,240] to somebody observing the sun from far away.
+- [01:27:45,299 - 01:27:47,040] So would the...
+- [01:27:47,040 - 01:27:47,760] It's not the sun,
+- [01:27:47,760 - 01:27:48,320] the black hole.
+- [01:27:49,200 - 01:27:51,420] Would it be correct to say that
+- [01:27:52,999 - 01:27:55,780] the maximum amount of energy per volume
+- [01:27:55,780 - 01:27:57,680] is what's inside the black hole?
+- [01:27:58,360 - 01:27:59,300] Maximum amount...
+- [01:27:59,300 - 01:27:59,860] I'll say it again.
+- [01:27:59,960 - 01:28:02,380] The entropy per unit volume
+- [01:28:03,419 - 01:28:04,920] in the biggest area
+- [01:28:04,920 - 01:28:08,000] would be basically what's inside the black hole.
+- [01:28:08,100 - 01:28:08,520] That's the thing.
+- [01:28:10,180 - 01:28:11,800] The more...the most...
+- [01:28:11,800 - 01:28:13,940] I think this is what this is telling you.
+- [01:28:13,940 - 01:28:15,360] The fact that the entropy
+- [01:28:16,540 - 01:28:18,720] is proportional to the area
+- [01:28:18,720 - 01:28:21,980] is that at least when viewed from outside,
+- [01:28:22,280 - 01:28:24,320] the black hole doesn't have an interior.
+- [01:28:24,680 - 01:28:27,340] All it has is a surface.
+- [01:28:28,260 - 01:28:30,260] And this is closely connected with the fact
+- [01:28:30,940 - 01:28:32,520] that somebody on the outside
+- [01:28:32,520 - 01:28:34,360] dropping things into a black hole
+- [01:28:34,940 - 01:28:37,620] never really sees them cross the horizon.
+- [01:28:38,100 - 01:28:39,300] They accumulate
+- [01:28:40,640 - 01:28:43,060] in layers near the horizon
+- [01:28:43,060 - 01:28:44,280] as seen from outside.
+- [01:28:47,219 - 01:28:49,840] So observations from outside the black hole
+- [01:28:49,840 - 01:28:52,080] will always say that
+- [01:28:52,080 - 01:28:53,740] the amount of stuff that you
+- [01:28:53,740 - 01:28:55,400] can store on the black hole
+- [01:28:55,980 - 01:28:58,220] is stored on the surface of the black hole.
+- [01:28:59,819 - 01:29:03,200] And it's closely connected with this fact.
+- [01:29:03,440 - 01:29:03,540] Yeah.
+- [01:29:04,220 - 01:29:04,780] Yeah.
+- [01:29:05,380 - 01:29:07,320] If you take this temperature
+- [01:29:07,320 - 01:29:10,280] and plug it into the black-body radiation formula,
+- [01:29:11,259 - 01:29:13,040] do you get the right...
+- [01:29:13,060 - 01:29:14,380] The right amount of radiation...
+- [01:29:14,380 - 01:29:14,860] Luminosity.
+- [01:29:14,860 - 01:29:15,500] Luminosity.
+- [01:29:15,580 - 01:29:16,000] Let's do it.
+- [01:29:16,780 - 01:29:17,260] Yes,
+- [01:29:17,260 - 01:29:17,500] you do.
+- [01:29:18,440 - 01:29:18,920] Um...
+- [01:29:19,920 - 01:29:20,400] Not...
+- [01:29:20,400 - 01:29:22,820] The coefficient numbers are slightly off,
+- [01:29:22,980 - 01:29:23,160] but,
+- [01:29:23,160 - 01:29:23,620] uh...
+- [01:29:23,620 - 01:29:24,020] Yeah.
+- [01:29:24,400 - 01:29:28,440] As long as we have this C there...
+- [01:29:28,440 - 01:29:28,740] Well,
+- [01:29:28,740 - 01:29:29,140] you have what?
+- [01:29:29,380 - 01:29:31,500] As long as we have Hc over Ng,
+- [01:29:32,140 - 01:29:35,400] there is a C squared that we dropped from R.
+- [01:29:35,540 - 01:29:35,920] Well,
+- [01:29:35,920 - 01:29:36,440] maybe so.
+- [01:29:36,700 - 01:29:38,080] So there's really an Hc...
+- [01:29:38,080 - 01:29:38,880] Yeah,
+- [01:29:38,880 - 01:29:39,540] you're right.
+- [01:29:39,880 - 01:29:40,360] Hc2.
+- [01:29:41,500 - 01:29:42,440] It sounds right.
+- [01:29:43,060 - 01:29:44,580] At any rate,
+- [01:29:44,580 - 01:29:44,700] I do not see households
+- [01:29:44,700 - 01:29:45,740] three
+- [01:29:45,740 - 01:29:47,260] tens
+- [01:29:47,260 - 01:29:47,500] ...
+- [01:29:53,180 - 01:29:54,500] isn't
+- [01:29:54,540 - 01:30:05,700] I it's
+- [01:30:05,700 - 01:30:06,660] some probability distress.
+- [01:30:06,660 - 01:30:07,800] Entropy is a log.
+- [01:30:07,800 - 01:30:09,960] Sorry,
+- [01:30:09,960 - 01:30:12,040] the number of bits is itself a log.
+- [01:30:13,060 - 01:30:13,880] For example,
+- [01:30:13,880 - 01:30:15,380] if you have n bits,
+- [01:30:15,380 - 01:30:21,160] those are n possible two-state systems.
+- [01:30:21,160 - 01:30:22,320] How many states
+- [01:30:22,320 - 01:30:22,760] are there?
+- [01:30:22,760 - 01:30:24,180] Two to the n.
+- [01:30:24,180 - 01:30:26,660] What's the entropy?
+- [01:30:26,660 - 01:30:28,340] It's the log of two to the n.
+- [01:30:28,340 - 01:30:28,960] N.
+- [01:30:28,960 - 01:30:30,580] Log of two
+- [01:30:30,580 - 01:30:31,420] to the n is n.
+- [01:30:31,420 - 01:30:33,430] So you don't want to take
+- [01:30:33,430 - 01:30:35,440] another log on top of that.
+- [01:30:37,920 - 01:30:40,870] Did you say that area for one
+- [01:30:40,870 - 01:30:43,820] bit is equal to the Planck's length?
+- [01:30:44,060 - 01:30:44,660] I didn't say it,
+- [01:30:44,660 - 01:30:45,180] but that's right.
+- [01:30:45,180 - 01:30:45,640] The area,
+- [01:30:45,640 - 01:30:45,980] yeah,
+- [01:30:45,980 - 01:30:46,700] okay,
+- [01:30:46,700 - 01:30:47,820] so here it is,
+- [01:30:47,820 - 01:30:51,080] c cubed h bar over
+- [01:30:51,080 - 01:30:51,440] g.
+- [01:30:51,440 - 01:30:54,800] And now we could stick in some numbers.
+- [01:30:54,800 - 01:30:56,600] Well,
+- [01:30:56,600 - 01:30:59,560] the right way to say it is one bit of
+- [01:30:59,560 - 01:30:59,940] information.
+- [01:31:02,900 - 01:31:03,500] One.
+- [01:31:03,500 - 01:31:06,400] One bit of information corresponds to an area.
+- [01:31:06,400 - 01:31:10,040] Let's call it area of a bit.
+- [01:31:10,040 - 01:31:10,340] The
+- [01:31:10,340 - 01:31:12,460] area of a bit is
+- [01:31:12,460 - 01:31:14,580] h bar g over c cubed.
+- [01:31:14,580 - 01:31:18,240] h bar is tiny.
+- [01:31:18,240 - 01:31:20,360] g is tiny.
+- [01:31:20,360 - 01:31:21,980] c is huge.
+- [01:31:21,980 - 01:31:23,480] This is a very
+- [01:31:23,480 - 01:31:24,220] small number,
+- [01:31:24,220 - 01:31:27,920] 10 to the minus 66 square centimeters.
+- [01:31:28,080 - 01:31:28,680] Okay.
+- [01:31:29,960 - 01:31:31,300] And it's the Planck area.
+- [01:31:31,660 - 01:31:32,280] Planck area.
+- [01:31:32,540 - 01:31:32,860] Yeah.
+- [01:31:32,860 - 01:31:34,020] I should have,
+- [01:31:34,020 - 01:31:34,460] right.
+- [01:31:34,460 - 01:31:37,660] It's the definition of a Planck area.
+- [01:31:37,660 - 01:31:39,140] The Planck length being
+- [01:31:39,140 - 01:31:40,200] just the square root of this.
+- [01:31:40,200 - 01:31:40,720] But it's very,
+- [01:31:40,720 - 01:31:43,740] very clear that the fundamental quantity is
+- [01:31:43,740 - 01:31:44,300] an area,
+- [01:31:44,300 - 01:31:45,020] not a length.
+- [01:31:45,020 - 01:31:47,300] Well,
+- [01:31:47,300 - 01:31:48,540] you say whenever there's an area,
+- [01:31:48,540 - 01:31:49,500] there's a square root of
+- [01:31:49,500 - 01:31:49,800] the area.
+- [01:31:49,800 - 01:31:50,820] But,
+- [01:31:50,820 - 01:31:51,740] yeah,
+- [01:31:51,740 - 01:31:52,300] that's true.
+- [01:31:52,300 - 01:31:55,280] But there are many,
+- [01:31:55,280 - 01:31:57,100] many different shapes with the same,
+- [01:31:57,100 - 01:31:58,400] with the same area.
+- [01:31:59,440 - 01:31:59,920] Yeah.
+- [01:31:59,940 - 01:32:01,120] Not all of them are squares.
+- [01:32:01,120 - 01:32:03,860] Some of them are rectangles.
+- [01:32:03,860 - 01:32:06,780] They have the same area.
+- [01:32:06,780 - 01:32:08,240] Somehow
+- [01:32:08,240 - 01:32:11,260] the fundamental quantity is the area unit,
+- [01:32:11,260 - 01:32:12,280] not the length unit.
+- [01:32:12,280 - 01:32:14,020] It's what really always
+- [01:32:14,020 - 01:32:17,040] comes into important calculations.
+- [01:32:17,040 - 01:32:18,500] Yeah?
+- [01:32:18,900 - 01:32:21,690] So the entropy in this case doesn't tell
+- [01:32:21,690 - 01:32:24,480] us anything about the internal structure at all.
+- [01:32:24,700 - 01:32:25,100] No.
+- [01:32:25,100 - 01:32:27,510] That's just the point that the
+- [01:32:27,510 - 01:32:29,920] entropy is exactly all the internal structure.
+- [01:32:29,920 - 01:32:29,920] That's
+- [01:32:29,940 - 01:32:32,360] structure that's being hidden and obscured by
+- [01:32:32,360 - 01:32:34,780] the fact that it's a black hole.
+- [01:32:34,980 - 01:32:36,040] The entropy,
+- [01:32:36,040 - 01:32:38,100] it does tell us something.
+- [01:32:39,700 - 01:32:43,360] It tells us how many degrees of freedom,
+- [01:32:43,360 - 01:32:47,480] how many elementary objects there are on the surface,
+- [01:32:47,560 - 01:32:48,600] but it doesn't tell us what they are.
+- [01:32:48,840 - 01:32:50,060] It doesn't tell us—right.
+- [01:32:50,660 - 01:32:52,540] Somebody asked me a specific question.
+- [01:32:52,640 - 01:32:53,380] Let me answer it.
+- [01:32:53,700 - 01:32:56,240] They asked me about the luminosity of the black hole.
+- [01:32:57,880 - 01:32:58,580] All right.
+- [01:32:58,580 - 01:32:59,840] So we have the temperature.
+- [01:33:00,020 - 01:33:02,820] The temperature is—I'm going to now
+- [01:33:02,820 - 01:33:05,620] simplify the story—not simplify it so much,
+- [01:33:05,620 - 01:33:05,960] but I'm
+- [01:33:05,960 - 01:33:09,220] going to set h-bar and c equal to 1.
+- [01:33:14,540 - 01:33:17,480] So the temperature then in units in which
+- [01:33:17,480 - 01:33:20,420] Planck's constant and the speed of light is
+- [01:33:20,420 - 01:33:22,660] equal to 1 is just 1 over mg.
+- [01:33:24,320 - 01:33:25,120] In fact,
+- [01:33:25,120 - 01:33:26,120] in Planck units—
+- [01:33:26,120 - 01:33:28,200] in units where h-bar,
+- [01:33:28,200 - 01:33:28,460] c,
+- [01:33:28,460 - 01:33:31,820] and g are all equal to 1—those are common units,
+- [01:33:31,820 - 01:33:32,220] they're called
+- [01:33:32,220 - 01:33:37,230] Planck units—the temperature of the black hole
+- [01:33:37,230 - 01:33:42,240] is just 1 over—1 over—it's just 1
+- [01:33:42,240 - 01:33:42,640] over m.
+- [01:33:43,120 - 01:33:43,860] All right.
+- [01:33:43,920 - 01:33:48,040] Now what's the luminosity of an object of temperature T?
+- [01:33:49,680 - 01:33:50,660] There's a formula,
+- [01:33:50,660 - 01:33:52,180] the Stefan-Boltzmann formula—or is
+- [01:33:52,180 - 01:33:53,700] it called the Stefan-Boltzmann formula?
+- [01:33:55,040 - 01:33:55,600] Yeah.
+- [01:33:56,500 - 01:33:57,990] And the answer is it's
+- [01:33:57,990 - 01:33:59,480] proportional to T to the fourth.
+- [01:34:01,360 - 01:34:02,360] T to the fourth.
+- [01:34:02,560 - 01:34:05,760] So apart from the numerical constants which appear,
+- [01:34:05,760 - 01:34:12,060] the luminosity—sorry,
+- [01:34:12,060 - 01:34:16,060] it's not 1
+- [01:34:16,060 - 01:34:16,800] over T to the fourth.
+- [01:34:16,800 - 01:34:17,600] Not T to the fourth.
+- [01:34:17,680 - 01:34:19,340] It's T to the fourth times the area.
+- [01:34:20,800 - 01:34:21,240] Okay?
+- [01:34:21,300 - 01:34:22,900] T to the fourth times the area.
+- [01:34:24,840 - 01:34:26,100] The luminosity—I'll call it f.
+- [01:34:26,100 - 01:34:26,260] L.
+- [01:34:26,260 - 01:34:29,390] Luminosity means the energy per unit time
+- [01:34:29,390 - 01:34:32,520] that's radiated from the object is proportional
+- [01:34:32,520 - 01:34:35,980] to the area—of course it's proportional to the area.
+- [01:34:36,140 - 01:34:37,760] The bigger the area at a given temperature,
+- [01:34:37,760 - 01:34:42,080] the more overall luminosity you have times
+- [01:34:42,080 - 01:34:43,300] the temperature to the fourth.
+- [01:34:44,240 - 01:34:45,840] And there's a numerical
+- [01:34:45,840 - 01:34:47,440] constant called the Stefan-Boltzmann constant,
+- [01:34:47,440 - 01:34:48,380] which is made up
+- [01:34:48,380 - 01:34:52,900] out of h-bar and other quantities.
+- [01:34:53,040 - 01:34:54,740] But this is the basic important thing.
+- [01:34:54,740 - 01:34:55,740] Now,
+- [01:34:55,740 - 01:35:01,320] the area is proportional to the square of the radius.
+- [01:35:01,760 - 01:35:05,440] The temperature is proportional to 1 over the radius.
+- [01:35:06,360 - 01:35:09,930] That means the area is proportional
+- [01:35:09,930 - 01:35:13,500] to 1 over the temperature squared.
+- [01:35:16,360 - 01:35:16,960] Right?
+- [01:35:17,280 - 01:35:20,040] Temperature is like 1 over the radius.
+- [01:35:21,100 - 01:35:22,910] And so the area—the radius squared—is
+- [01:35:22,910 - 01:35:24,720] proportional to 1 over the temperature squared.
+- [01:35:24,720 - 01:35:26,200] It's like 1 over the temperature squared.
+- [01:35:26,620 - 01:35:30,420] And what we find out is that
+- [01:35:30,420 - 01:35:34,220] the luminosity is proportional to the square—oh,
+- [01:35:34,220 - 01:35:34,520] I have
+- [01:35:34,520 - 01:35:35,180] something wrong here.
+- [01:35:36,540 - 01:35:37,020] Yeah.
+- [01:35:38,040 - 01:35:38,520] Yeah,
+- [01:35:38,520 - 01:35:39,380] the square of the temperature.
+- [01:35:43,620 - 01:35:44,660] I think that's right.
+- [01:35:45,220 - 01:35:45,700] Yeah.
+- [01:35:45,820 - 01:35:46,260] Yeah.
+- [01:35:46,740 - 01:35:47,220] Now,
+- [01:35:47,220 - 01:35:48,040] on the other hand,
+- [01:35:48,040 - 01:35:50,820] the temperature is also proportional to 1 over the mass.
+- [01:35:51,520 - 01:35:54,700] So this is 1 over the mass squared.
+- [01:35:54,700 - 01:35:57,180] The bigger the mass,
+- [01:35:57,180 - 01:35:58,500] the less the luminosity.
+- [01:36:00,260 - 01:36:01,580] The bigger the mass,
+- [01:36:01,580 - 01:36:02,860] the less the luminosity.
+- [01:36:03,020 - 01:36:05,620] Even though the area is much bigger,
+- [01:36:05,620 - 01:36:10,000] the temperature is so much smaller that it's the temperature
+- [01:36:10,000 - 01:36:11,080] effect which wins,
+- [01:36:11,080 - 01:36:13,080] and the bigger the black hole,
+- [01:36:13,080 - 01:36:14,340] the less the luminosity.
+- [01:36:16,020 - 01:36:18,860] You can use this to find out how long it
+- [01:36:18,860 - 01:36:21,700] takes a black hole to evaporate all its energy away.
+- [01:36:22,160 - 01:36:24,680] This is the rate at which it's radiating.
+- [01:36:24,700 - 01:36:25,260] This is the rate at which it's radiating energy.
+- [01:36:27,220 - 01:36:28,460] One over m squared.
+- [01:36:28,800 - 01:36:32,040] You can use that to find out how long it
+- [01:36:32,040 - 01:36:35,280] takes for the black hole to lose all of its energy.
+- [01:36:35,620 - 01:36:37,080] As time goes on,
+- [01:36:37,080 - 01:36:38,500] the mass shrinks.
+- [01:36:38,780 - 01:36:40,220] As the mass shrinks,
+- [01:36:40,220 - 01:36:41,960] it becomes more and more luminous.
+- [01:36:42,140 - 01:36:44,340] And so there's a sort of runaway process.
+- [01:36:45,140 - 01:36:46,360] As it shrinks,
+- [01:36:46,360 - 01:36:50,100] as the mass increases—sorry,
+- [01:36:50,100 - 01:36:51,460] as the mass decreases,
+- [01:36:51,460 - 01:36:52,920] as it radiates,
+- [01:36:52,920 - 01:36:53,060] the
+- [01:36:53,060 - 01:36:54,000] mass decreases.
+- [01:36:54,700 - 01:36:56,560] The luminosity increases.
+- [01:36:56,980 - 01:36:58,600] And so,
+- [01:36:58,600 - 01:36:59,800] as with time,
+- [01:36:59,800 - 01:37:03,100] it sheds its energy faster and faster,
+- [01:37:03,100 - 01:37:05,940] and finally just explodes
+- [01:37:05,940 - 01:37:10,780] in an explosion of energetic particles.
+- [01:37:11,560 - 01:37:14,160] But it takes a long time.
+- [01:37:15,580 - 01:37:18,660] I'm not sure this is a well-formulated question,
+- [01:37:18,660 - 01:37:22,060] but it seems you're saying that the clocking
+- [01:37:22,060 - 01:37:24,680] radiation is not a quantum function.
+- [01:37:25,260 - 01:37:25,700] Oh,
+- [01:37:25,700 - 01:37:26,040] it is.
+- [01:37:28,260 - 01:37:28,700] Yeah.
+- [01:37:28,820 - 01:37:29,500] Keep in mind,
+- [01:37:29,500 - 01:37:31,800] the temperature here has an h-bar in the numerator.
+- [01:37:33,320 - 01:37:35,200] When you see an h-bar in the numerator,
+- [01:37:35,200 - 01:37:36,020] you say,
+- [01:37:36,020 - 01:37:37,640] that's a quantum effect that would go
+- [01:37:37,640 - 01:37:39,220] away when h-bar is equal to zero.
+- [01:37:40,680 - 01:37:44,380] The entropy would be infinite,
+- [01:37:44,380 - 01:37:46,040] but the temperature,
+- [01:37:46,040 - 01:37:48,620] which is the thing that controls the luminosity,
+- [01:37:49,640 - 01:37:52,860] the temperature contains the h-bar in the numerator.
+- [01:37:53,200 - 01:37:53,640] Okay?
+- [01:37:55,080 - 01:37:57,180] If I neglected to say it,
+- [01:37:57,180 - 01:37:57,620] of course,
+- [01:37:57,620 - 01:38:00,960] this luminosity and this blackbody radiation that's
+- [01:38:00,960 - 01:38:03,660] being radiated is Hawking radiation.
+- [01:38:03,980 - 01:38:05,360] That is what Hawking radiation is.
+- [01:38:05,880 - 01:38:11,420] So the logic was you start by throwing
+- [01:38:11,420 - 01:38:16,960] in—you start building the black hole bit by bit.
+- [01:38:17,220 - 01:38:19,730] You notice after a little calculation that
+- [01:38:19,730 - 01:38:22,240] every bit you throw in increases the area
+- [01:38:22,240 - 01:38:23,800] by the same universal amount.
+- [01:38:25,040 - 01:38:29,760] It's sort of as if the bits were
+- [01:38:29,760 - 01:38:34,480] impenetrable things that just accumulated on the horizon
+- [01:38:34,480 - 01:38:37,250] and blocked each other out so that the
+- [01:38:37,250 - 01:38:40,020] area has to grow to accommodate more bits,
+- [01:38:40,020 - 01:38:40,320] and
+- [01:38:40,320 - 01:38:41,900] the area grows with the number of bits.
+- [01:38:42,460 - 01:38:46,260] You discover that entropy grows with area.
+- [01:38:47,620 - 01:38:48,180] Alright?
+- [01:38:48,260 - 01:38:50,310] That tells you that the entropy
+- [01:38:50,310 - 01:38:52,360] grows with mass in a certain way.
+- [01:38:53,120 - 01:38:54,520] If you know the relationship—.
+- [01:38:54,520 - 01:38:55,640] Between mass and entropy,
+- [01:38:55,640 - 01:38:57,320] you can calculate the temperature,
+- [01:38:57,320 - 01:38:59,060] dE equals TdS.
+- [01:38:59,280 - 01:39:00,520] That gives you a temperature,
+- [01:39:00,520 - 01:39:03,500] and from the temperature you can calculate a luminosity,
+- [01:39:04,980 - 01:39:05,860] blackbody radiation,
+- [01:39:05,860 - 01:39:08,940] and the result is what is called Hawking radiation.
+- [01:39:10,760 - 01:39:11,720] I'm kind of confused.
+- [01:39:11,920 - 01:39:12,700] On the one hand,
+- [01:39:12,700 - 01:39:15,300] I'm thinking nothing can escape from a black hole.
+- [01:39:15,520 - 01:39:15,800] Well,
+- [01:39:15,800 - 01:39:16,060] who can?
+- [01:39:16,240 - 01:39:16,380] On the other hand,
+- [01:39:16,380 - 01:39:18,140] we have radiation coming out of the black hole.
+- [01:39:18,180 - 01:39:18,520] No,
+- [01:39:18,520 - 01:39:19,960] it doesn't come out of the black hole.
+- [01:39:20,100 - 01:39:21,900] It comes off the surface of the black hole.
+- [01:39:21,980 - 01:39:23,240] It never gets into the black hole
+- [01:39:23,240 - 01:39:24,500] from the point of view of somebody else.
+- [01:39:24,520 - 01:39:24,680] It comes out of the black hole from
+- [01:39:24,680 - 01:39:24,840] the point of view of somebody on the outside.
+- [01:39:25,180 - 01:39:32,500] But let's not get into the subtleties of inside.
+- [01:39:33,460 - 01:39:34,710] From the point of view
+- [01:39:34,710 - 01:39:35,960] of somebody outside the black hole,
+- [01:39:35,960 - 01:39:37,960] it takes an infinite amount
+- [01:39:37,960 - 01:39:39,400] of time to cross the horizon.
+- [01:39:39,760 - 01:39:42,100] That's just another way of saying for
+- [01:39:42,100 - 01:39:44,440] all purposes of measurements performed from the
+- [01:39:44,440 - 01:39:45,580] outside of the black hole,
+- [01:39:45,580 - 01:39:47,480] all things that fall into the
+- [01:39:47,480 - 01:39:49,380] black hole do not fall into
+- [01:39:49,380 - 01:39:50,000] the black hole.
+- [01:39:50,060 - 01:39:52,060] They accumulate on the surface of the black hole.
+- [01:39:53,780 - 01:39:54,500] Do you understand?
+- [01:39:54,520 - 01:39:55,700] They accumulate just above the surface.
+- [01:39:56,360 - 01:39:57,120] All right.
+- [01:39:57,160 - 01:39:57,620] Now,
+- [01:39:57,620 - 01:40:01,680] so it's,
+- [01:40:01,680 - 01:40:02,380] right.
+- [01:40:02,560 - 01:40:03,860] That's enough said.
+- [01:40:04,000 - 01:40:04,420] No.
+- [01:40:05,540 - 01:40:06,140] No.
+- [01:40:06,380 - 01:40:08,440] So is this a temperature then that would
+- [01:40:08,440 - 01:40:10,500] be in equilibrium with the heat bath or?
+- [01:40:10,600 - 01:40:10,920] Okay,
+- [01:40:10,920 - 01:40:11,940] that's an interesting question.
+- [01:40:12,140 - 01:40:13,280] That's an interesting question.
+- [01:40:14,420 - 01:40:17,380] The sun has a pretty well-defined temperature.
+- [01:40:17,900 - 01:40:19,460] You measure it pretty well.
+- [01:40:19,780 - 01:40:21,550] But it's not really in
+- [01:40:21,550 - 01:40:23,320] thermal equilibrium with its environment.
+- [01:40:23,320 - 01:40:25,580] Its environment is cold on the outside.
+- [01:40:25,780 - 01:40:27,620] And that's why it radiates away its energy.
+- [01:40:28,360 - 01:40:28,920] Okay?
+- [01:40:29,020 - 01:40:30,360] If it was in equilibrium,
+- [01:40:30,360 - 01:40:32,840] a thing in equilibrium won't radiate away its energy.
+- [01:40:33,040 - 01:40:35,340] It'll gain energy and lose energy at the same time.
+- [01:40:35,520 - 01:40:36,980] Now there's a very,
+- [01:40:36,980 - 01:40:38,160] very peculiar thing,
+- [01:40:38,160 - 01:40:39,840] both about the sun.
+- [01:40:40,719 - 01:40:44,129] Any system whose temperature is inverse
+- [01:40:44,129 - 01:40:47,540] to its energy has negative specific heat.
+- [01:40:47,920 - 01:40:50,760] The rate of change of energy with temperature is negative.
+- [01:40:51,400 - 01:40:53,840] Negative specific heat is very unstable.
+- [01:40:54,900 - 01:40:56,100] It's not impossible.
+- [01:40:56,380 - 01:40:59,000] Black holes and stars have negative
+- [01:40:59,000 - 01:41:01,620] specific heat or negative heat capacity.
+- [01:41:02,000 - 01:41:05,800] The increase in energy makes the temperature lower.
+- [01:41:06,080 - 01:41:08,680] But it always means the system is unstable.
+- [01:41:09,300 - 01:41:10,880] If you tried to put it,
+- [01:41:10,880 - 01:41:12,730] let's imagine we had a black
+- [01:41:12,730 - 01:41:14,580] hole in equilibrium with its environment.
+- [01:41:15,120 - 01:41:17,240] That would mean that its environment would have
+- [01:41:17,240 - 01:41:19,360] to have the same temperature as the black hole.
+- [01:41:20,140 - 01:41:20,440] And it would have to have
+- [01:41:20,440 - 01:41:20,740] the same temperature as the black hole.
+- [01:41:20,760 - 01:41:23,140] And that would mean that it had the Hawking temperature,
+- [01:41:23,140 - 01:41:24,180] the environment.
+- [01:41:24,680 - 01:41:25,200] Okay?
+- [01:41:25,380 - 01:41:25,980] Now,
+- [01:41:25,980 - 01:41:29,440] supposing accidentally the black hole
+- [01:41:29,440 - 01:41:32,900] emitted a little bit extra energy.
+- [01:41:33,440 - 01:41:34,160] You know,
+- [01:41:34,160 - 01:41:35,720] it's in equilibrium,
+- [01:41:35,720 - 01:41:37,210] so energy is going back and
+- [01:41:37,210 - 01:41:38,700] forth between it and the environment.
+- [01:41:39,140 - 01:41:40,720] But by fluctuation,
+- [01:41:40,720 - 01:41:41,400] by accident,
+- [01:41:41,400 - 01:41:44,040] it emits a little extra energy.
+- [01:41:44,300 - 01:41:45,520] What happens to it?
+- [01:41:45,560 - 01:41:45,980] Does it cool?
+- [01:41:46,860 - 01:41:47,460] Normally,
+- [01:41:47,460 - 01:41:50,600] if a system emits a little extra energy,
+- [01:41:50,600 - 01:41:52,800] it will cool relative to the environment.
+- [01:41:53,260 - 01:41:55,230] And then the energy will flow from
+- [01:41:55,230 - 01:41:57,200] the environment back to the cooler object.
+- [01:41:58,260 - 01:42:01,320] And so there's a sort of self...
+- [01:42:01,320 - 01:42:02,300] What is it?
+- [01:42:02,300 - 01:42:03,120] What do we call it?
+- [01:42:03,900 - 01:42:04,420] What?
+- [01:42:05,540 - 01:42:10,240] A regulating mechanism which,
+- [01:42:10,240 - 01:42:14,000] when an object in equilibrium gives off,
+- [01:42:14,000 - 01:42:15,340] by fluctuation,
+- [01:42:15,340 - 01:42:16,460] a little bit too much energy,
+- [01:42:17,179 - 01:42:18,580] it cools the object.
+- [01:42:18,580 - 01:42:21,320] And the result is heat flows back into it.
+- [01:42:21,540 - 01:42:23,140] What happens to the black hole?
+- [01:42:23,460 - 01:42:26,000] When it gives off a little bit of extra energy,
+- [01:42:26,000 - 01:42:28,020] its mass decreases.
+- [01:42:29,420 - 01:42:30,420] It gets hotter.
+- [01:42:31,600 - 01:42:34,140] And so it tries to give even more energy
+- [01:42:34,140 - 01:42:36,680] to the environment because it's now hotter than the environment.
+- [01:42:37,160 - 01:42:38,200] So it's a runaway.
+- [01:42:38,680 - 01:42:39,680] On the other hand,
+- [01:42:39,680 - 01:42:41,660] supposing the opposite happened.
+- [01:42:41,920 - 01:42:44,240] It absorbed a little bit of extra energy.
+- [01:42:44,700 - 01:42:45,900] What would happen to it?
+- [01:42:46,760 - 01:42:47,700] It would cool.
+- [01:42:47,700 - 01:42:50,140] And it would want to suck more energy out.
+- [01:42:50,200 - 01:42:52,890] So negative specific heat is
+- [01:42:52,890 - 01:42:55,580] always an unstable situation where...
+- [01:42:55,580 - 01:42:56,520] And black holes,
+- [01:42:56,520 - 01:42:57,160] in that sense,
+- [01:42:57,160 - 01:42:57,740] are unstable.
+- [01:42:58,040 - 01:42:59,150] If you try to put
+- [01:42:59,150 - 01:43:00,260] them in equilibrium with their environment,
+- [01:43:00,260 - 01:43:04,480] they will lead to runaway situations.
+- [01:43:06,200 - 01:43:07,660] So they can never be
+- [01:43:07,660 - 01:43:09,120] in thermal equilibrium with their environment.
+- [01:43:10,060 - 01:43:10,640] Yeah?
+- [01:43:10,800 - 01:43:11,380] Yeah,
+- [01:43:11,380 - 01:43:15,160] if you take the delta for a bit of energy...
+- [01:43:15,510 - 01:43:15,800] Where?
+- [01:43:16,719 - 01:43:18,309] Each bit of energy is
+- [01:43:18,309 - 01:43:19,900] equal to an increase in area.
+- [01:43:20,420 - 01:43:22,080] Then there has to be...
+- [01:43:22,080 - 01:43:22,860] Each bit of entropy.
+- [01:43:23,480 - 01:43:25,460] Each bit of entropy is
+- [01:43:25,460 - 01:43:27,440] equal to a bit of area.
+- [01:43:27,800 - 01:43:28,160] Okay.
+- [01:43:28,800 - 01:43:31,480] And that's equivalent to the
+- [01:43:31,480 - 01:43:34,160] simplest particle falling into a photon.
+- [01:43:34,300 - 01:43:35,360] The simplest particle.
+- [01:43:35,720 - 01:43:37,100] The appropriate wavelength.
+- [01:43:37,520 - 01:43:37,820] Right.
+- [01:43:37,880 - 01:43:39,510] The longest possible wavelength that
+- [01:43:39,510 - 01:43:41,140] will get into the black hole.
+- [01:43:41,420 - 01:43:43,040] So would that mean that
+- [01:43:43,040 - 01:43:44,660] there's the smallest possible black hole,
+- [01:43:44,660 - 01:43:46,700] which would be the area of the event horizon,
+- [01:43:46,700 - 01:43:47,680] would be the plant area?
+- [01:43:47,920 - 01:43:48,280] Exactly.
+- [01:43:48,560 - 01:43:49,920] And that would be equivalent to...
+- [01:43:49,920 - 01:43:51,540] A black hole with less than one
+- [01:43:51,540 - 01:43:53,160] bit of information doesn't make much sense.
+- [01:43:53,680 - 01:43:54,080] Okay,
+- [01:43:54,080 - 01:43:55,480] now if you take it the opposite,
+- [01:43:55,480 - 01:43:56,120] if you take...
+- [01:43:56,920 - 01:43:57,320] So,
+- [01:43:57,320 - 01:43:59,500] associating with a bit of information is an area.
+- [01:44:00,280 - 01:44:01,800] If you take all the
+- [01:44:01,800 - 01:44:03,320] bits of information in the universe,
+- [01:44:03,320 - 01:44:05,120] would that be equal to the cosmic horizon?
+- [01:44:05,340 - 01:44:06,260] Are you in connection to that?
+- [01:44:06,500 - 01:44:06,680] Yes.
+- [01:44:07,860 - 01:44:08,260] Yes.
+- [01:44:08,780 - 01:44:11,710] The number of bits of information in the universe
+- [01:44:11,710 - 01:44:14,640] is equal to the area of the cosmic horizon.
+- [01:44:15,700 - 01:44:17,720] Ten to the one hundred and twenty.
+- [01:44:18,960 - 01:44:19,700] It is a lot.
+- [01:44:19,700 - 01:44:19,920] It is a lot.
+- [01:44:20,720 - 01:44:23,050] And then a number of possible configurations
+- [01:44:23,050 - 01:44:25,380] of the universe is exponential of that.
+- [01:44:25,700 - 01:44:26,220] Right.
+- [01:44:28,699 - 01:44:29,219] Now,
+- [01:44:29,219 - 01:44:30,180] that entropy,
+- [01:44:30,180 - 01:44:31,520] the ten to the one hundred and twenty,
+- [01:44:31,520 - 01:44:33,100] is much bigger than the entropy
+- [01:44:33,100 - 01:44:35,240] that you would count by looking at
+- [01:44:35,240 - 01:44:37,380] all the ordinary material in the universe.
+- [01:44:37,520 - 01:44:39,070] Most of it is stored out very
+- [01:44:39,070 - 01:44:40,620] close to the horizon of the universe.
+- [01:44:41,000 - 01:44:42,810] The ordinary bits of entropy is the
+- [01:44:42,810 - 01:44:44,620] same as the ordinary bits of information.
+- [01:44:44,620 - 01:44:46,700] In the form of stars and light...
+- [01:44:46,700 - 01:44:48,320] What's most of the entropy in the universe?
+- [01:44:48,460 - 01:44:48,740] Do you know?
+- [01:44:48,880 - 01:44:49,160] I mean,
+- [01:44:49,160 - 01:44:49,520] ordinary,
+- [01:44:49,520 - 01:44:51,420] ordinary stuff that's visible.
+- [01:44:53,460 - 01:44:54,420] Background radiation.
+- [01:44:55,120 - 01:44:55,600] Okay,
+- [01:44:55,600 - 01:44:57,610] you might think that it was
+- [01:44:57,610 - 01:44:59,620] the background radiation because there are many,
+- [01:44:59,620 - 01:45:00,080] many more
+- [01:45:00,080 - 01:45:01,700] photons than there are anything else,
+- [01:45:01,700 - 01:45:02,260] but in fact,
+- [01:45:02,260 - 01:45:02,780] it's not true.
+- [01:45:03,940 - 01:45:06,940] The entropy is dominated by black holes.
+- [01:45:08,240 - 01:45:08,720] Yeah.
+- [01:45:09,680 - 01:45:12,120] There's something like about an entropy of ten
+- [01:45:12,120 - 01:45:14,560] to the ninetieth or that order of magnitude.
+- [01:45:14,600 - 01:45:16,060] There's a certain order of magnitude
+- [01:45:16,060 - 01:45:17,520] in photons in the observable universe,
+- [01:45:17,520 - 01:45:19,260] but there are
+- [01:45:19,260 - 01:45:22,870] enough black holes at the centers of
+- [01:45:22,870 - 01:45:26,480] galaxies mostly that there's another factor of ten
+- [01:45:26,480 - 01:45:28,640] to the tenth entropy in black holes.
+- [01:45:28,960 - 01:45:32,520] So most of the entropy of visible entropy,
+- [01:45:32,520 - 01:45:34,820] by visible entropy I mean the entropy of stuff
+- [01:45:34,820 - 01:45:36,720] that can be in principle seen,
+- [01:45:36,720 - 01:45:39,220] not associated with the horizon,
+- [01:45:39,220 - 01:45:41,040] but associated with more
+- [01:45:41,559 - 01:45:42,300] ordinary stuff.
+- [01:45:43,019 - 01:45:43,909] So the average of the black holes in
+- [01:45:43,909 - 01:45:44,800] the universe is about ten to the one hundred,
+- [01:45:44,800 - 01:45:46,080] ten to the
+- [01:45:46,080 - 01:45:47,120] hundred units of entropy.
+- [01:45:47,400 - 01:45:48,400] In addition,
+- [01:45:48,400 - 01:45:51,380] the horizon has another ten to the,
+- [01:45:51,380 - 01:45:53,960] the cosmic horizon has another factor
+- [01:45:53,960 - 01:45:56,120] of ten to the tenth bigger than that,
+- [01:45:56,120 - 01:45:57,760] ten to the hundred and twenty altogether.
+- [01:45:59,440 - 01:46:01,610] And that's just from knowing how big
+- [01:46:01,610 - 01:46:03,780] the universe is and then computing its area.
+- [01:46:04,719 - 01:46:05,840] So yeah,
+- [01:46:05,840 - 01:46:06,880] it's kind of interesting.
+- [01:46:07,080 - 01:46:08,680] Almost for every...
+- [01:46:10,600 - 01:46:12,920] For every ordinary bit in the universe,
+- [01:46:12,920 - 01:46:14,490] there are ten to the
+- [01:46:14,490 - 01:46:16,060] tenth bits stuck on the horizon
+- [01:46:16,060 - 01:46:16,780] of black holes.
+- [01:46:17,460 - 01:46:19,840] So almost everything in the universe
+- [01:46:19,840 - 01:46:22,220] is black hole or horizon information.
+- [01:46:25,320 - 01:46:25,800] So,
+- [01:46:25,800 - 01:46:26,020] so,
+- [01:46:26,020 - 01:46:26,320] so,
+- [01:46:26,320 - 01:46:26,400] so,
+- [01:46:26,400 - 01:46:28,380] any arguments about the exist,
+- [01:46:28,380 - 01:46:29,220] you know,
+- [01:46:29,220 - 01:46:31,320] old arguments maybe about the existence
+- [01:46:31,320 - 01:46:33,200] of black holes at the centers of galaxies,
+- [01:46:33,200 - 01:46:35,680] is that,
+- [01:46:35,680 - 01:46:37,160] how does this apply to that?
+- [01:46:37,260 - 01:46:37,420] I mean,
+- [01:46:37,420 - 01:46:37,760] do we...
+- [01:46:37,760 - 01:46:37,880] Well,
+- [01:46:37,880 - 01:46:38,420] I mean,
+- [01:46:38,420 - 01:46:38,600] no,
+- [01:46:38,600 - 01:46:38,780] no,
+- [01:46:38,780 - 01:46:39,020] I mean,
+- [01:46:39,020 - 01:46:39,860] we're,
+- [01:46:39,860 - 01:46:39,940] we're,
+- [01:46:39,940 - 01:46:41,720] we're counting,
+- [01:46:41,720 - 01:46:44,180] counting the number of galaxies
+- [01:46:44,180 - 01:46:46,970] and assuming that each galaxy contains
+- [01:46:46,970 - 01:46:49,760] a black hole of approximately somewhere between
+- [01:46:49,760 - 01:46:53,880] a million and a billion mass black hole,
+- [01:46:53,880 - 01:46:55,480] that's what you find.
+- [01:46:55,620 - 01:46:56,900] You find that most of the entropy,
+- [01:46:56,900 - 01:46:59,340] ordinary entropy,
+- [01:46:59,340 - 01:47:00,540] in other words,
+- [01:47:00,540 - 01:47:01,120] the entropy of a
+- [01:47:01,120 - 01:47:04,240] galaxy is dominated by the entropy of the...
+- [01:47:05,940 - 01:47:06,900] of the...
+- [01:47:07,440 - 01:47:08,120] In fact,
+- [01:47:08,120 - 01:47:10,340] the entropy of the vicinity of a,
+- [01:47:10,340 - 01:47:11,520] of a galaxy,
+- [01:47:11,520 - 01:47:13,240] the space around the galaxy
+- [01:47:13,240 - 01:47:15,020] before you get to the next galaxy,
+- [01:47:15,020 - 01:47:19,680] it would be dominated by the black body microwave stuff,
+- [01:47:19,980 - 01:47:22,550] but even that is overwhelmed by a factor of ten
+- [01:47:22,550 - 01:47:25,120] to the tenth by the black hole at the center
+- [01:47:25,120 - 01:47:25,760] of the galaxy.
+- [01:47:25,960 - 01:47:28,660] So it's an interesting fact.
+- [01:47:29,660 - 01:47:31,640] Interesting fact for cocktail party,
+- [01:47:31,640 - 01:47:33,080] you can explain it to your friends.
+- [01:47:34,020 - 01:47:34,540] Yeah.
+- [01:47:36,920 - 01:47:37,620] Okay.
+- [01:47:38,880 - 01:47:39,840] For more,
+- [01:47:39,840 - 01:47:42,260] please visit us at stanford.edu.
