@@ -1,0 +1,3421 @@
+# Transcript
+
+Source: core/statistical_mechanics/2013_spring_theoretical_minimum/184 - Statistical Mechanics Lecture 10 [IWtcFAP3ju4].mkv
+
+- [00:00:04,760 - 00:00:06,160] Stanford University.
+- [00:00:07,160 - 00:00:09,840] You all know about boiling water,
+- [00:00:09,840 - 00:00:11,240] water to steam.
+- [00:00:12,419 - 00:00:20,500] And it has been understood qualitatively for
+- [00:00:22,740 - 00:00:24,340] more than 100 years,
+- [00:00:24,340 - 00:00:25,220] VanderWals.
+- [00:00:25,360 - 00:00:26,400] When was VanderWals?
+- [00:00:27,560 - 00:00:28,820] VanderWals must have been at
+- [00:00:28,820 - 00:00:30,080] the end of the 19th century.
+- [00:00:30,800 - 00:00:32,420] Somebody look up VanderWals.
+- [00:00:35,960 - 00:00:37,130] Mike Hewitt is usually the
+- [00:00:37,130 - 00:00:38,300] one to go to for that.
+- [00:00:40,120 - 00:00:40,560] Okay,
+- [00:00:40,560 - 00:00:41,000] it doesn't matter.
+- [00:00:41,540 - 00:00:44,840] It's been understood qualitatively from
+- [00:00:45,540 - 00:00:47,940] both mining and statistical mechanics
+- [00:00:47,940 - 00:00:50,340] for well over a century,
+- [00:00:50,340 - 00:00:50,760] I think.
+- [00:00:52,620 - 00:00:54,880] And we like to work with it a little bit.
+- [00:00:55,860 - 00:00:57,440] I'm going to show you how
+- [00:00:57,440 - 00:00:59,020] the liquid gas phase transition works,
+- [00:00:59,260 - 00:01:02,780] not in the standard way that VanderWals approached it.
+- [00:01:03,060 - 00:01:06,260] The way that VanderWals approached it is very elegant,
+- [00:01:06,260 - 00:01:07,060] very nice,
+- [00:01:07,060 - 00:01:08,200] and
+- [00:01:08,200 - 00:01:10,260] is equivalent to what I'm going to show you.
+- [00:01:10,920 - 00:01:12,710] What I'm going to show you is
+- [00:01:12,710 - 00:01:14,500] based on a system that we've already studied,
+- [00:01:14,800 - 00:01:15,340] magnets,
+- [00:01:15,340 - 00:01:18,120] so the Ising magnet.
+- [00:01:18,700 - 00:01:20,920] What I'm going to show you
+- [00:01:20,920 - 00:01:23,140] is in what way the Ising magnet
+- [00:01:23,140 - 00:01:28,560] is a model for the liquid gas phase transition.
+- [00:01:29,420 - 00:01:30,660] But before we do,
+- [00:01:30,660 - 00:01:32,370] let me just remind you
+- [00:01:32,370 - 00:01:34,080] what we learned last time by
+- [00:01:34,080 - 00:01:37,520] studying the mean field approximation to the,
+- [00:01:37,520 - 00:01:38,820] not the liquid gas,
+- [00:01:38,820 - 00:01:39,120] but
+- [00:01:39,120 - 00:01:42,300] to the Ising model.
+- [00:01:43,110 - 00:01:44,755] We also know that it doesn't
+- [00:01:44,755 - 00:01:46,400] work very well in one dimension.
+- [00:01:46,640 - 00:01:47,040] In fact,
+- [00:01:47,040 - 00:01:48,940] it gives the wrong answer in one dimension.
+- [00:01:51,460 - 00:01:52,880] Mean field approximation.
+- [00:01:52,880 - 00:01:54,050] Mean field approximation always tells
+- [00:01:54,050 - 00:01:55,220] you that it's a phase transition,
+- [00:01:56,280 - 00:01:59,120] and this happens not to be true in one dimension.
+- [00:01:59,500 - 00:02:01,940] But it is true in two dimensions and higher,
+- [00:02:01,940 - 00:02:04,620] and by the time you get to three dimensions,
+- [00:02:05,500 - 00:02:09,740] every particle in a lattice has enough nearest neighbors,
+- [00:02:09,740 - 00:02:11,080] basically six of them,
+- [00:02:11,859 - 00:02:16,020] that the mean field approximation becomes very good.
+- [00:02:17,280 - 00:02:20,180] Not accurate in the sense of 1%,
+- [00:02:20,180 - 00:02:22,860] but probably accurate in the sense of 1%.
+- [00:02:22,880 - 00:02:28,340] And so mean field approximation is a good
+- [00:02:28,340 - 00:02:33,800] way to qualitatively understand how phase transitions take place.
+- [00:02:34,820 - 00:02:35,120] Now,
+- [00:02:35,120 - 00:02:36,580] it has to do with these little magnets,
+- [00:02:36,580 - 00:02:38,060] which can either be up or down.
+- [00:02:39,980 - 00:02:43,950] They were described by placing at each point
+- [00:02:43,950 - 00:02:47,920] on a lattice a variable that we call sigma.
+- [00:02:48,560 - 00:02:50,300] And sigma could even be one.
+- [00:02:51,620 - 00:02:52,780] In which case,
+- [00:02:52,780 - 00:02:52,860] it's a point.
+- [00:02:52,860 - 00:02:52,880] In which case,
+- [00:02:52,880 - 00:02:55,840] we thought of it as pointing up or minus 1.
+- [00:02:56,640 - 00:02:57,600] In which case,
+- [00:02:57,600 - 00:02:58,940] we thought of it as pointing down.
+- [00:03:00,600 - 00:03:03,100] And we talked about several,
+- [00:03:03,100 - 00:03:03,760] well,
+- [00:03:03,760 - 00:03:07,380] at least two different kinds of models for magnets.
+- [00:03:08,280 - 00:03:12,420] The Ising model was the more difficult of the models.
+- [00:03:13,320 - 00:03:17,580] It said there's an energy not for every particle,
+- [00:03:17,580 - 00:03:19,220] every site,
+- [00:03:19,220 - 00:03:21,720] not for every site,
+- [00:03:21,720 - 00:03:23,780] but for every pair of neighboring sites.
+- [00:03:24,380 - 00:03:26,340] That the energy was stored
+- [00:03:26,340 - 00:03:28,300] in the relationship between neighboring sites.
+- [00:03:28,660 - 00:03:29,780] And in particular,
+- [00:03:29,780 - 00:03:33,350] energy was lower if the sites
+- [00:03:33,350 - 00:03:36,920] are parallel and higher if they're anti-parallel.
+- [00:03:37,180 - 00:03:40,930] You can think of the energy as being located
+- [00:03:40,930 - 00:03:44,680] in some sense in the links between the sites.
+- [00:03:51,960 - 00:03:54,580] If two neighbors are parallel,
+- [00:03:54,580 - 00:03:56,560] we'll call that an unbroken bond.
+- [00:03:57,660 - 00:03:58,640] If they're parallel,
+- [00:03:58,640 - 00:04:00,180] then the energy is low.
+- [00:04:00,580 - 00:04:02,380] If they're anti-parallel,
+- [00:04:02,380 - 00:04:03,720] we'll call that a broken bond.
+- [00:04:04,359 - 00:04:05,480] If the bond is broken,
+- [00:04:05,480 - 00:04:06,880] then the energy is higher.
+- [00:04:07,260 - 00:04:10,400] And so we wrote an expression to represent that.
+- [00:04:11,799 - 00:04:19,980] And the representation was that the energy is the sum.
+- [00:04:20,779 - 00:04:21,700] Not over the energy.
+- [00:04:21,700 - 00:04:23,080] over the sides of the lattice,
+- [00:04:23,080 - 00:04:24,200] but the bonds,
+- [00:04:24,200 - 00:04:25,340] the links.
+- [00:04:25,440 - 00:04:26,580] They're usually called links.
+- [00:04:29,600 - 00:04:32,880] Links of the product of sigma
+- [00:04:32,880 - 00:04:36,160] at one end of the link,
+- [00:04:36,340 - 00:04:39,520] let's call it sigma i and sigma j.
+- [00:04:39,660 - 00:04:41,420] Let's not try to make a fancy notation.
+- [00:04:41,920 - 00:04:43,450] i and j just mean the
+- [00:04:43,450 - 00:04:44,980] two opposite ends of a link.
+- [00:04:45,440 - 00:04:47,420] We put in here a minus sign,
+- [00:04:47,420 - 00:04:49,780] w y in a minute,
+- [00:04:49,780 - 00:04:51,480] and a constant j.
+- [00:04:51,860 - 00:04:57,180] The constant j is just associated with how tightly bound,
+- [00:04:58,230 - 00:04:59,060] how tightly,
+- [00:04:59,060 - 00:05:01,060] how hard it is to break a bond.
+- [00:05:02,160 - 00:05:04,740] How much energy does it cost to break a bond?
+- [00:05:07,400 - 00:05:08,020] Well,
+- [00:05:08,020 - 00:05:09,900] if we start with two spins,
+- [00:05:09,900 - 00:05:11,380] two sigmas aligned,
+- [00:05:12,530 - 00:05:14,720] then sigma dot sigma is plus one.
+- [00:05:15,330 - 00:05:16,780] If they're anti-aligned,
+- [00:05:16,780 - 00:05:17,840] it's minus one.
+- [00:05:18,410 - 00:05:19,520] So the difference,
+- [00:05:20,340 - 00:05:21,880] in this expression here,
+- [00:05:21,880 - 00:05:22,620] is two units.
+- [00:05:22,700 - 00:05:23,460] Not one unit,
+- [00:05:23,460 - 00:05:24,700] but two units to go
+- [00:05:24,700 - 00:05:25,940] from minus one to plus one.
+- [00:05:26,340 - 00:05:29,040] And so that means every broken bond
+- [00:05:29,040 - 00:05:31,240] costs you an energy plus j,
+- [00:05:31,240 - 00:05:32,160] two j.
+- [00:05:32,400 - 00:05:32,920] Two j.
+- [00:05:33,000 - 00:05:33,540] Two j.
+- [00:05:34,180 - 00:05:37,420] Every broken bond costs an energy.
+- [00:05:37,500 - 00:05:40,440] That's how much energy it takes to flip it.
+- [00:05:42,140 - 00:05:42,660] Okay,
+- [00:05:42,660 - 00:05:47,640] that was the first thing we introduced.
+- [00:05:47,640 - 00:05:50,980] And the second thing was
+- [00:05:50,980 - 00:05:54,320] another possible term in the energy
+- [00:05:55,030 - 00:05:58,720] that would correspond to a uniform magnetic field,
+- [00:06:00,390 - 00:06:02,815] which is just a term
+- [00:06:02,815 - 00:06:05,240] which acts not on the neighbor,
+- [00:06:05,360 - 00:06:06,440] not on the links,
+- [00:06:06,440 - 00:06:09,260] but acts on the individual sites.
+- [00:06:10,429 - 00:06:12,144] It's an extra energy if
+- [00:06:12,144 - 00:06:13,860] a site is up or down.
+- [00:06:14,080 - 00:06:16,440] It doesn't depend on what its neighbors are doing.
+- [00:06:17,960 - 00:06:19,600] And so let's put that in there
+- [00:06:20,340 - 00:06:22,980] as something proportional to a magnetic field.
+- [00:06:23,180 - 00:06:24,560] That just means a number here.
+- [00:06:25,140 - 00:06:28,180] I think I probably called it capital H last time.
+- [00:06:28,540 - 00:06:30,500] I'm going to use standard notation,
+- [00:06:30,720 - 00:06:31,840] and I'm going to use a notation
+- [00:06:31,840 - 00:06:33,760] that's in the statistical mechanics notes.
+- [00:06:33,820 - 00:06:35,160] I'm going to call it little h.
+- [00:06:36,240 - 00:06:37,780] You called it B last time.
+- [00:06:38,000 - 00:06:38,780] I called it B,
+- [00:06:38,780 - 00:06:39,240] you're right.
+- [00:06:40,780 - 00:06:41,560] You're right,
+- [00:06:41,560 - 00:06:42,420] I called it B.
+- [00:06:42,600 - 00:06:45,180] But I'm not going to now because...
+- [00:06:48,020 - 00:06:48,580] I'm going to call it H.
+- [00:06:48,580 - 00:06:49,460] Because in the notes,
+- [00:06:49,460 - 00:06:50,300] it's called H.
+- [00:06:51,360 - 00:06:53,160] But H looks a lot like B.
+- [00:06:53,280 - 00:06:55,280] It just looks like a badly drawn slide.
+- [00:06:58,860 - 00:07:01,700] So that's not the labor of the difference.
+- [00:07:04,840 - 00:07:05,120] Yeah,
+- [00:07:05,120 - 00:07:05,640] okay,
+- [00:07:05,640 - 00:07:06,340] so let's see.
+- [00:07:06,900 - 00:07:08,240] If H is positive,
+- [00:07:08,240 - 00:07:11,480] then this term is lower
+- [00:07:12,320 - 00:07:13,600] if sigma is negative.
+- [00:07:13,940 - 00:07:15,760] So if this was all there was,
+- [00:07:15,760 - 00:07:17,280] which was incidentally,
+- [00:07:17,280 - 00:07:18,820] the first model that we studied,
+- [00:07:18,820 - 00:07:20,780] only H,
+- [00:07:22,300 - 00:07:24,480] then this would favor spin,
+- [00:07:24,480 - 00:07:25,340] spin.
+- [00:07:25,500 - 00:07:29,340] This would favor sigma being negative or being down.
+- [00:07:29,620 - 00:07:31,140] That would lower the energy,
+- [00:07:31,140 - 00:07:33,460] lower the energy by this being
+- [00:07:33,460 - 00:07:35,120] a down configuration,
+- [00:07:35,120 - 00:07:36,120] in other words,
+- [00:07:36,120 - 00:07:36,820] the minus one.
+- [00:07:38,720 - 00:07:39,700] But of course,
+- [00:07:39,700 - 00:07:43,500] thermal fluctuations would cause it
+- [00:07:43,500 - 00:07:44,800] to fluctuate up sometimes,
+- [00:07:44,800 - 00:07:45,580] and at very,
+- [00:07:45,580 - 00:07:46,420] very high energy,
+- [00:07:46,540 - 00:07:47,260] it would be at a very,
+- [00:07:47,260 - 00:07:47,260] very low energy.
+- [00:07:47,260 - 00:07:47,880] At very high temperature,
+- [00:07:47,880 - 00:07:49,340] it would be up as much as down.
+- [00:07:49,900 - 00:07:53,260] And so there's a pattern according to energy.
+- [00:07:54,320 - 00:07:56,440] So this term here tends
+- [00:07:56,440 - 00:07:58,560] to want to make things lie
+- [00:07:58,560 - 00:07:59,540] in the same direction,
+- [00:07:59,540 - 00:08:01,220] and this one wants
+- [00:08:01,220 - 00:08:02,120] to make them lie down.
+- [00:08:04,960 - 00:08:06,660] Since you're summing over length,
+- [00:08:06,880 - 00:08:09,400] shouldn't there be a H sigma J as well?
+- [00:08:10,220 - 00:08:10,740] No,
+- [00:08:10,740 - 00:08:12,000] that coefficient is called J.
+- [00:08:13,680 - 00:08:14,200] Here,
+- [00:08:14,200 - 00:08:14,620] this one?
+- [00:08:15,020 - 00:08:15,540] No,
+- [00:08:15,540 - 00:08:15,660] no,
+- [00:08:15,660 - 00:08:15,760] no.
+- [00:08:15,860 - 00:08:17,240] You're summing over length.
+- [00:08:17,260 - 00:08:17,860] Yeah.
+- [00:08:18,739 - 00:08:21,700] So shouldn't there be an H sigma J as well?
+- [00:08:23,400 - 00:08:23,880] Okay,
+- [00:08:23,880 - 00:08:24,920] so I assume that was science.
+- [00:08:28,180 - 00:08:29,880] An H sigma J.
+- [00:08:31,300 - 00:08:31,780] Sorry.
+- [00:08:34,400 - 00:08:35,419] I'm missing your point.
+- [00:08:36,980 - 00:08:37,460] Yes,
+- [00:08:37,460 - 00:08:37,659] sir.
+- [00:08:37,980 - 00:08:39,760] If you're summing over the legs.
+- [00:08:40,140 - 00:08:40,520] Here,
+- [00:08:40,520 - 00:08:41,299] we're summing over length.
+- [00:08:41,980 - 00:08:42,460] Right,
+- [00:08:42,460 - 00:08:43,740] and there you're summing over.
+- [00:08:43,960 - 00:08:44,440] Here,
+- [00:08:44,440 - 00:08:45,140] we're summing over science.
+- [00:08:45,280 - 00:08:45,560] Okay.
+- [00:08:45,880 - 00:08:46,500] All right,
+- [00:08:46,500 - 00:08:46,760] sure.
+- [00:08:47,120 - 00:08:48,020] Quick question,
+- [00:08:48,020 - 00:08:48,300] please.
+- [00:08:48,860 - 00:08:52,400] It seems that the larger J,
+- [00:08:52,400 - 00:08:55,040] when sigma is one,
+- [00:08:55,200 - 00:08:56,500] I mean the product,
+- [00:08:56,500 - 00:08:58,620] it's the lower energy.
+- [00:08:59,060 - 00:09:00,140] When they're parallel,
+- [00:09:00,140 - 00:09:01,120] it's the lower energy.
+- [00:09:01,680 - 00:09:03,220] Not only when they're parallel,
+- [00:09:03,300 - 00:09:04,600] but also when J is large.
+- [00:09:05,380 - 00:09:05,860] Yes,
+- [00:09:05,860 - 00:09:06,380] J will.
+- [00:09:06,640 - 00:09:06,740] So.
+- [00:09:06,820 - 00:09:07,140] Yes,
+- [00:09:07,140 - 00:09:09,040] but J is not variable in the problem.
+- [00:09:09,220 - 00:09:10,100] J is just a number.
+- [00:09:10,420 - 00:09:11,140] I understand.
+- [00:09:11,360 - 00:09:11,460] Right.
+- [00:09:11,520 - 00:09:13,310] But it's a number that
+- [00:09:13,310 - 00:09:15,100] varies from one substance to another.
+- [00:09:15,260 - 00:09:15,420] Yes,
+- [00:09:15,420 - 00:09:15,700] yes.
+- [00:09:15,700 - 00:09:16,580] It's a number that varies.
+- [00:09:16,580 - 00:09:16,720] So.
+- [00:09:16,720 - 00:09:20,790] So does that mean that it is harder
+- [00:09:20,790 - 00:09:24,860] to break a bond when the energy is lower?
+- [00:09:25,060 - 00:09:27,180] Is there a physical meaning to that?
+- [00:09:27,180 - 00:09:28,080] Do you mean when J is lower?
+- [00:09:28,320 - 00:09:29,380] When J is bigger,
+- [00:09:29,380 - 00:09:30,960] it's a lower energy.
+- [00:09:31,080 - 00:09:32,360] And at the same time,
+- [00:09:32,360 - 00:09:33,280] when J is bigger,
+- [00:09:33,280 - 00:09:34,280] it's harder to break.
+- [00:09:34,500 - 00:09:37,300] Both are consequence of larger J.
+- [00:09:37,560 - 00:09:41,480] I don't think the zero energy matters.
+- [00:09:42,120 - 00:09:44,410] It's the energy difference between
+- [00:09:44,410 - 00:09:46,700] the broken and the unbroken.
+- [00:09:46,700 - 00:09:47,400] unbroken bond,
+- [00:09:47,400 - 00:09:50,340] we are perfectly free to
+- [00:09:50,340 - 00:09:53,280] add any constant that we want.
+- [00:09:53,280 - 00:09:54,840] And in fact,
+- [00:09:54,840 - 00:09:55,520] the
+- [00:09:55,520 - 00:09:58,000] material may tell us what constant to add.
+- [00:09:58,000 - 00:09:59,280] For example,
+- [00:09:59,280 - 00:10:00,920] there's energy stored in mass,
+- [00:10:01,120 - 00:10:01,320] you know,
+- [00:10:01,320 - 00:10:02,660] little e equals mc squared.
+- [00:10:02,660 - 00:10:07,900] A lump of uranium would have a bigger number here
+- [00:10:08,640 - 00:10:10,800] than a lump of frozen hydrogen.
+- [00:10:10,800 - 00:10:12,260] So,
+- [00:10:12,260 - 00:10:15,400] but the point is this is just a numerical constant
+- [00:10:15,400 - 00:10:17,320] that added a constant to the energy,
+- [00:10:17,320 - 00:10:18,100] that doesn't matter.
+- [00:10:19,362 - 00:10:19,542] ありがとうございました
+- [00:10:20,066 - 00:10:20,846] And also,
+- [00:10:20,846 - 00:10:23,106] the ground state energy here,
+- [00:10:23,106 - 00:10:24,085] how much energy you have,
+- [00:10:24,106 - 00:10:25,786] let's calculate how much energy you have.
+- [00:10:25,966 - 00:10:28,126] Let's forget this for the moment.
+- [00:10:28,366 - 00:10:30,416] Ask how much energy you have
+- [00:10:30,416 - 00:10:32,466] if all the spins are aligned.
+- [00:10:32,866 - 00:10:34,666] That's the lowest possible energy.
+- [00:10:35,126 - 00:10:36,486] If they're all aligned,
+- [00:10:36,486 - 00:10:42,466] then it's just the number of links times minus j.
+- [00:10:43,646 - 00:10:45,806] Minus j times the number of links.
+- [00:10:46,426 - 00:10:46,866] Incidentally,
+- [00:10:46,866 - 00:10:48,626] how many links are there in a,
+- [00:10:48,626 - 00:10:50,446] let's take a three-dimensional lattice.
+- [00:10:50,946 - 00:10:53,286] If the number of sites is n,
+- [00:10:53,286 - 00:10:54,526] how many links are there?
+- [00:10:54,726 - 00:10:55,226] Anybody know?
+- [00:10:57,206 - 00:10:57,906] Six links.
+- [00:10:58,706 - 00:10:59,306] Six n?
+- [00:10:59,446 - 00:10:59,686] Six n.
+- [00:10:59,786 - 00:11:00,186] Six n.
+- [00:11:00,186 - 00:11:00,946] How many people say six?
+- [00:11:01,726 - 00:11:02,926] How many people say three?
+- [00:11:04,346 - 00:11:05,006] Three is n.
+- [00:11:05,886 - 00:11:07,506] I'll show you why for two,
+- [00:11:07,506 - 00:11:09,106] because I can't draw three so well.
+- [00:11:09,386 - 00:11:10,286] Is that assuming it's infinite?
+- [00:11:11,106 - 00:11:11,546] Yeah,
+- [00:11:11,546 - 00:11:11,726] yeah,
+- [00:11:11,726 - 00:11:12,346] assuming it's infinite.
+- [00:11:12,486 - 00:11:12,866] Assuming it's infinite.
+- [00:11:12,866 - 00:11:13,066] I mean,
+- [00:11:13,066 - 00:11:13,606] if it were infinite,
+- [00:11:13,606 - 00:11:13,906] then.
+- [00:11:13,926 - 00:11:14,466] Assuming it's infinite.
+- [00:11:14,666 - 00:11:14,786] Oh,
+- [00:11:14,786 - 00:11:15,366] assuming it's infinite.
+- [00:11:15,586 - 00:11:15,726] Yeah.
+- [00:11:15,806 - 00:11:15,986] That's fine.
+- [00:11:16,286 - 00:11:16,846] All right.
+- [00:11:17,126 - 00:11:19,746] So each site is connected to four links.
+- [00:11:20,026 - 00:11:21,426] So you might think the answer
+- [00:11:21,426 - 00:11:22,826] is four times the number of sites.
+- [00:11:23,366 - 00:11:24,945] But that's not the way it works.
+- [00:11:25,186 - 00:11:26,306] So the way it works,
+- [00:11:26,306 - 00:11:27,306] the way to draw it,
+- [00:11:27,306 - 00:11:29,146] is to draw,
+- [00:11:29,146 - 00:11:30,326] for each site,
+- [00:11:30,326 - 00:11:31,486] draw two links.
+- [00:11:32,106 - 00:11:32,586] Now,
+- [00:11:32,586 - 00:11:33,606] for the next site here,
+- [00:11:33,606 - 00:11:35,066] also draw two links.
+- [00:11:35,506 - 00:11:36,806] For the site over here,
+- [00:11:36,806 - 00:11:37,726] draw two links.
+- [00:11:38,206 - 00:11:39,426] For the site over here,
+- [00:11:39,426 - 00:11:40,306] draw two links.
+- [00:11:40,826 - 00:11:42,526] Notice we'll fill up all the links.
+- [00:11:43,446 - 00:11:45,786] So all you have to do is put two links.
+- [00:11:47,346 - 00:11:48,506] At each site.
+- [00:11:48,866 - 00:11:50,526] And that fills up everything.
+- [00:11:51,126 - 00:11:52,206] Three dimensions,
+- [00:11:52,206 - 00:11:53,966] it's three links at each site.
+- [00:11:54,146 - 00:11:55,586] And that covers everything.
+- [00:11:56,406 - 00:11:56,906] The reason,
+- [00:11:56,906 - 00:11:57,226] of course,
+- [00:11:57,226 - 00:12:00,326] is that the link connects two sites.
+- [00:12:01,726 - 00:12:06,396] So it's only half the half
+- [00:12:06,396 - 00:12:11,066] of what you might have thought.
+- [00:12:11,766 - 00:12:12,326] Okay.
+- [00:12:13,066 - 00:12:13,986] But in any case,
+- [00:12:13,986 - 00:12:15,706] you have in here.
+- [00:12:15,746 - 00:12:15,786] In here.
+- [00:12:16,346 - 00:12:19,946] in energy that's associated with the ground state,
+- [00:12:20,106 - 00:12:22,526] which means when everybody is aligned.
+- [00:12:23,266 - 00:12:23,706] Well,
+- [00:12:23,706 - 00:12:24,606] that's a constant.
+- [00:12:24,786 - 00:12:25,986] We could subtract it out.
+- [00:12:26,106 - 00:12:27,405] We could add it or
+- [00:12:27,405 - 00:12:28,705] subtract it in such a way
+- [00:12:28,705 - 00:12:31,105] that the ground state is zero energy,
+- [00:12:31,686 - 00:12:33,806] and group it together with this constant here.
+- [00:12:34,226 - 00:12:35,746] It wouldn't make any difference.
+- [00:12:36,266 - 00:12:38,506] Only energy differences are important
+- [00:12:38,506 - 00:12:39,726] in statistical mechanics,
+- [00:12:41,866 - 00:12:43,666] or in almost everything.
+- [00:12:43,926 - 00:12:44,866] Energy differences.
+- [00:12:45,806 - 00:12:50,026] So the ground state energy is not so important.
+- [00:12:50,486 - 00:12:52,926] What is important is the energy difference
+- [00:12:52,926 - 00:12:54,906] between an up spin and a down spin,
+- [00:12:56,286 - 00:12:58,346] or a bond and a broken bond.
+- [00:13:01,326 - 00:13:01,906] All right,
+- [00:13:01,906 - 00:13:04,566] let's just remember what we found out
+- [00:13:04,566 - 00:13:06,346] from the mean field theory.
+- [00:13:07,246 - 00:13:07,906] Excuse me,
+- [00:13:07,906 - 00:13:08,786] does there need to be a j
+- [00:13:08,786 - 00:13:10,546] by the sum over the sides?
+- [00:13:11,266 - 00:13:11,706] No,
+- [00:13:11,706 - 00:13:12,506] no j there.
+- [00:13:12,506 - 00:13:13,146] No j there.
+- [00:13:13,266 - 00:13:14,066] No j there.
+- [00:13:14,766 - 00:13:15,426] All right.
+- [00:13:15,806 - 00:13:18,646] It's reminding now that we calculate the partition function,
+- [00:13:19,186 - 00:13:21,626] e to the minus beta times e.
+- [00:13:22,506 - 00:13:24,306] That means every time you see a j,
+- [00:13:24,486 - 00:13:25,966] it'll come together with a beta.
+- [00:13:26,446 - 00:13:28,506] And also every time you see an h,
+- [00:13:28,606 - 00:13:29,906] it will come together with a beta.
+- [00:13:30,646 - 00:13:31,766] It'll always be there.
+- [00:13:32,626 - 00:13:33,306] All right,
+- [00:13:33,306 - 00:13:34,806] we calculate the partition function.
+- [00:13:35,306 - 00:13:38,686] We go through the manipulations that we went through.
+- [00:13:39,066 - 00:13:39,966] And if you remember,
+- [00:13:39,966 - 00:13:40,686] we calculated
+- [00:13:44,046 - 00:13:45,526] in the mean field approximately,
+- [00:13:45,806 - 00:13:46,166] we calculated the mean field approximation.
+- [00:13:47,066 - 00:13:48,306] Just to remind you,
+- [00:13:48,306 - 00:13:49,606] for anybody who wasn't here,
+- [00:13:49,766 - 00:13:51,726] just what the mean field approximation was.
+- [00:13:52,506 - 00:13:53,706] So here's a sign.
+- [00:13:54,426 - 00:13:56,306] It's surrounded by a bunch of neighbors.
+- [00:13:56,506 - 00:13:58,206] Let's draw the neighbors as crosses.
+- [00:13:59,426 - 00:14:02,826] The neighbors have an average sigma.
+- [00:14:04,566 - 00:14:06,426] That average sigma might be zero,
+- [00:14:07,166 - 00:14:09,786] or it might have a net average value
+- [00:14:09,786 - 00:14:12,126] when averaged over the neighboring sites.
+- [00:14:12,966 - 00:14:15,626] The more neighboring sites that you have,
+- [00:14:15,806 - 00:14:19,266] the better approximation it is to just say
+- [00:14:19,266 - 00:14:21,446] each spin here,
+- [00:14:21,446 - 00:14:22,386] each neighbor,
+- [00:14:23,066 - 00:14:25,786] has a spin which is equal to the value,
+- [00:14:25,906 - 00:14:26,826] equal to the average.
+- [00:14:27,746 - 00:14:29,206] So in a high enough dimension,
+- [00:14:29,646 - 00:14:31,386] which turns out to only mean two,
+- [00:14:32,286 - 00:14:34,546] you can make a reasonable approximation
+- [00:14:35,266 - 00:14:38,786] by saying each spin here sees around it
+- [00:14:39,465 - 00:14:41,046] a collection of spins,
+- [00:14:41,246 - 00:14:43,286] each one of which has the average spin.
+- [00:14:43,886 - 00:14:44,626] All right,
+- [00:14:44,626 - 00:14:45,106] then we say,
+- [00:14:45,226 - 00:14:45,706] all right.
+- [00:14:45,806 - 00:14:45,906] Good.
+- [00:14:48,586 - 00:14:49,976] Then what is the energy
+- [00:14:49,976 - 00:14:51,366] of the spin on the average?
+- [00:14:51,566 - 00:14:57,316] It is minus j times
+- [00:14:57,316 - 00:15:03,066] the average spin of the neighbors
+- [00:15:04,866 - 00:15:07,886] times the spin itself of that particular particle.
+- [00:15:09,046 - 00:15:10,566] Sigma bar means the average.
+- [00:15:10,606 - 00:15:11,346] Minus j,
+- [00:15:11,346 - 00:15:12,926] sigma bar,
+- [00:15:12,926 - 00:15:13,686] sigma.
+- [00:15:15,806 - 00:15:17,386] And then what about this term over here?
+- [00:15:17,846 - 00:15:18,366] Well,
+- [00:15:18,366 - 00:15:20,166] this term doesn't care about the neighbors.
+- [00:15:20,566 - 00:15:21,806] And so it's just,
+- [00:15:23,526 - 00:15:24,046] oh,
+- [00:15:24,046 - 00:15:25,386] I missed something here.
+- [00:15:25,406 - 00:15:25,826] What did I miss?
+- [00:15:27,746 - 00:15:29,146] The number of neighbors.
+- [00:15:30,406 - 00:15:32,726] That's where twice the dimension came from.
+- [00:15:34,506 - 00:15:35,466] Twice the dimension,
+- [00:15:35,466 - 00:15:36,806] whatever the dimension is,
+- [00:15:38,906 - 00:15:41,246] minus twice the dimension of space,
+- [00:15:41,366 - 00:15:42,486] the dimension of the lattice,
+- [00:15:42,486 - 00:15:44,246] j,
+- [00:15:49,366 - 00:15:49,926] times the spin of the neighbor.
+- [00:15:49,926 - 00:15:49,926] Well,
+- [00:15:49,926 - 00:15:50,606] this is the average of the spins,
+- [00:15:50,606 - 00:15:52,206] whatever happens to be,
+- [00:15:52,206 - 00:15:53,606] times the spin itself.
+- [00:15:55,466 - 00:15:57,706] And then another term from here,
+- [00:15:57,846 - 00:16:03,166] which is just h times the spin itself.
+- [00:16:04,226 - 00:16:05,046] ありがとうございました
+- [00:16:06,370 - 00:16:08,200] And we pretended that the
+- [00:16:08,200 - 00:16:10,030] average u was just a number
+- [00:16:10,410 - 00:16:13,770] and did the statistical mechanical problem of one spin
+- [00:16:14,910 - 00:16:16,730] with an energy given by this expression.
+- [00:16:19,110 - 00:16:20,590] And of course,
+- [00:16:20,590 - 00:16:22,510] this is just a number.
+- [00:16:24,866 - 00:16:24,986] うん
+- [00:16:25,922 - 00:16:26,442] times the spin.
+- [00:16:28,022 - 00:16:28,582] Okay,
+- [00:16:28,582 - 00:16:30,202] so that's a calculation that we did
+- [00:16:30,202 - 00:16:32,062] when we first looked at these magnets,
+- [00:16:32,302 - 00:16:35,822] and we found out that the average spin,
+- [00:16:36,581 - 00:16:38,222] the average spin that you would get,
+- [00:16:41,721 - 00:16:45,122] I'm gonna call it for the moment sigma double bar.
+- [00:16:45,642 - 00:16:48,322] It's the average of the spin that you would get
+- [00:16:48,881 - 00:16:52,442] if all of the neighbors happened to be frozen
+- [00:16:52,442 - 00:16:55,182] and had the value sigma bar.
+- [00:16:56,242 - 00:16:56,542] Then,
+- [00:16:56,542 - 00:16:57,382] if you remember,
+- [00:16:57,382 - 00:16:58,102] that's equal
+- [00:16:58,102 - 00:17:03,422] to the hyperbolic tangent of the coefficient,
+- [00:17:03,642 - 00:17:04,561] the thing in the bracket,
+- [00:17:07,862 - 00:17:16,662] minus two VJ sigma bar plus H times beta,
+- [00:17:16,781 - 00:17:18,142] that is the inverse temperature,
+- [00:17:18,142 - 00:17:19,882] and that was it.
+- [00:17:22,442 - 00:17:22,541] Okay,
+- [00:17:22,541 - 00:17:23,382] that's it.
+- [00:17:24,402 - 00:17:24,882] Now,
+- [00:17:24,882 - 00:17:25,922] it's a complicated expression.
+- [00:17:26,142 - 00:17:27,162] We studied it a little bit,
+- [00:17:27,162 - 00:17:29,702] but the important thing was
+- [00:17:29,702 - 00:17:32,862] we now make the mean field assumption
+- [00:17:33,742 - 00:17:34,922] that sigma bar,
+- [00:17:34,922 - 00:17:36,042] the average of this spin,
+- [00:17:36,282 - 00:17:37,592] is just equal to the
+- [00:17:37,592 - 00:17:38,902] average of all of its neighbors.
+- [00:17:40,302 - 00:17:40,782] This,
+- [00:17:40,782 - 00:17:41,302] of course,
+- [00:17:41,302 - 00:17:44,162] would be true if we had a big enough sample
+- [00:17:44,162 - 00:17:46,642] and we were deep in the interior of it.
+- [00:17:46,842 - 00:17:48,152] It wouldn't matter which one
+- [00:17:48,152 - 00:17:49,462] of the spins we look at.
+- [00:17:49,562 - 00:17:51,062] They all have the same average,
+- [00:17:51,062 - 00:17:52,282] so we now,
+- [00:17:52,282 - 00:17:55,522] we now do the self-consistency trick of saying
+- [00:17:56,642 - 00:18:00,102] that's our equation that determines sigma bar.
+- [00:18:01,461 - 00:18:01,802] Two,
+- [00:18:01,802 - 00:18:02,402] D,
+- [00:18:02,402 - 00:18:03,282] J,
+- [00:18:03,282 - 00:18:05,602] and H are all just numbers,
+- [00:18:06,461 - 00:18:09,042] so this is now an equation for sigma bar.
+- [00:18:10,962 - 00:18:13,882] Let's just remind ourselves what the solution looked like.
+- [00:18:14,322 - 00:18:15,482] What we did,
+- [00:18:15,482 - 00:18:16,202] we did a trick.
+- [00:18:17,401 - 00:18:21,362] We defined a new variable by redefining this thing
+- [00:18:21,362 - 00:18:22,142] and calling it Y.
+- [00:18:24,242 - 00:18:27,422] We wound up with an equation that looked like Y
+- [00:18:28,382 - 00:18:29,702] divided by two,
+- [00:18:29,702 - 00:18:30,242] D,
+- [00:18:30,242 - 00:18:31,022] J,
+- [00:18:31,961 - 00:18:33,002] of course,
+- [00:18:33,002 - 00:18:33,442] that's it,
+- [00:18:35,102 - 00:18:35,662] Y,
+- [00:18:35,662 - 00:18:36,222] or,
+- [00:18:36,222 - 00:18:37,462] that's beta,
+- [00:18:41,281 - 00:18:43,482] equals tanh of Y.
+- [00:18:45,022 - 00:18:46,302] That was our equation.
+- [00:18:49,122 - 00:18:50,522] Let's forget the rest of it.
+- [00:18:50,622 - 00:18:51,342] Let's just start over.
+- [00:18:51,342 - 00:18:54,382] Start right there and remind ourselves what we learned.
+- [00:18:55,062 - 00:18:55,542] Oh.
+- [00:18:55,702 - 00:18:57,082] And Y plus H?
+- [00:18:57,322 - 00:18:57,682] Yes,
+- [00:18:57,682 - 00:18:59,202] Y plus beta H,
+- [00:18:59,202 - 00:18:59,522] I think.
+- [00:19:00,281 - 00:19:02,482] And aren't you missing a minus sign also?
+- [00:19:02,722 - 00:19:02,822] Yeah.
+- [00:19:03,401 - 00:19:05,102] Y minus beta H,
+- [00:19:05,102 - 00:19:05,482] I think.
+- [00:19:09,682 - 00:19:11,002] Y minus beta H.
+- [00:19:11,042 - 00:19:11,682] Which was by,
+- [00:19:11,682 - 00:19:12,882] what was Y,
+- [00:19:12,882 - 00:19:13,682] is that equal to two,
+- [00:19:13,682 - 00:19:13,982] D,
+- [00:19:13,982 - 00:19:14,342] J,
+- [00:19:14,342 - 00:19:14,742] beta,
+- [00:19:14,782 - 00:19:15,902] or minus two,
+- [00:19:15,902 - 00:19:16,142] D,
+- [00:19:16,142 - 00:19:16,382] J,
+- [00:19:16,382 - 00:19:16,662] beta?
+- [00:19:19,282 - 00:19:19,762] Plus.
+- [00:19:20,162 - 00:19:20,642] Plus.
+- [00:19:21,342 - 00:19:22,402] And you had a minus sign.
+- [00:19:23,182 - 00:19:25,642] The thing you originally had was tan minus two,
+- [00:19:25,642 - 00:19:25,822] D,
+- [00:19:25,822 - 00:19:26,102] J.
+- [00:19:27,102 - 00:19:27,942] See what I'm saying?
+- [00:19:28,802 - 00:19:30,102] That's why the minus sign is here,
+- [00:19:30,102 - 00:19:30,442] I think.
+- [00:19:31,742 - 00:19:32,142] No.
+- [00:19:33,642 - 00:19:34,042] Oh,
+- [00:19:34,042 - 00:19:34,362] okay.
+- [00:19:34,482 - 00:19:34,642] No.
+- [00:19:34,862 - 00:19:36,682] There's a relative minus sign between them.
+- [00:19:36,842 - 00:19:37,042] Okay,
+- [00:19:37,042 - 00:19:37,462] all right.
+- [00:19:37,542 - 00:19:37,562] Yeah.
+- [00:19:39,742 - 00:19:40,142] Okay,
+- [00:19:40,142 - 00:19:41,502] so this was our equation,
+- [00:19:41,502 - 00:19:42,822] our mean field equation,
+- [00:19:42,822 - 00:19:44,302] our consistency equation,
+- [00:19:44,482 - 00:19:45,882] which tells us what Y is.
+- [00:19:47,642 - 00:19:51,182] Y is just the average spin divided by two,
+- [00:19:51,182 - 00:19:51,322] D,
+- [00:19:51,322 - 00:19:51,322] J,
+- [00:19:51,322 - 00:19:51,322] beta,
+- [00:19:51,322 - 00:19:51,322] or beta.
+- [00:19:51,322 - 00:19:53,422] All right,
+- [00:19:53,422 - 00:19:54,162] one more element,
+- [00:19:54,162 - 00:19:54,942] one more thing.
+- [00:19:55,122 - 00:19:58,802] Let's just remember that beta is one over the temperature,
+- [00:19:58,802 - 00:20:00,162] so let's put the temperature
+- [00:20:00,162 - 00:20:00,782] over here,
+- [00:20:00,782 - 00:20:01,962] the temperature of here.
+- [00:20:03,562 - 00:20:04,242] All right,
+- [00:20:04,242 - 00:20:05,502] first exercise.
+- [00:20:05,802 - 00:20:08,222] What happens if H is equal to zero?
+- [00:20:10,202 - 00:20:13,302] Then it's just Y times T over two,
+- [00:20:13,302 - 00:20:13,442] D,
+- [00:20:13,442 - 00:20:15,122] J is equal to tan of Y,
+- [00:20:15,122 - 00:20:16,322] and we can get this.
+- [00:20:16,742 - 00:20:18,022] And now we can just,
+- [00:20:18,022 - 00:20:19,822] by inspection,
+- [00:20:19,822 - 00:20:21,302] get a quiz.
+- [00:20:21,302 - 00:20:23,242] pretty good idea of what things look like.
+- [00:20:24,162 - 00:20:25,962] Hatch function looks like this.
+- [00:20:28,682 - 00:20:29,602] Hatch of y.
+- [00:20:29,782 - 00:20:30,922] y on this axis,
+- [00:20:31,742 - 00:20:34,102] and on the vertical axis,
+- [00:20:34,462 - 00:20:35,542] the hyperbolic tangent.
+- [00:20:36,722 - 00:20:38,102] On the left side,
+- [00:20:38,162 - 00:20:39,622] you have a linear function of y,
+- [00:20:40,501 - 00:20:42,142] and the linear function of y
+- [00:20:42,142 - 00:20:43,462] passes through the origin,
+- [00:20:44,462 - 00:20:45,522] and it has a slope.
+- [00:20:46,402 - 00:20:47,562] It has a slope,
+- [00:20:48,262 - 00:20:50,162] which is the temperature
+- [00:20:50,162 - 00:20:51,902] divided by 2dj.
+- [00:20:52,942 - 00:20:54,202] So in particular,
+- [00:20:54,422 - 00:20:56,162] when the temperature is very high,
+- [00:20:56,802 - 00:20:58,402] the slope is steep.
+- [00:20:59,842 - 00:21:02,682] And the only place where these curves intersect
+- [00:21:02,682 - 00:21:03,922] is right at the origin,
+- [00:21:04,762 - 00:21:05,442] and therefore,
+- [00:21:06,422 - 00:21:07,862] for large temperature,
+- [00:21:08,142 - 00:21:09,422] there is no magnetization.
+- [00:21:09,682 - 00:21:11,122] y is equal to zero.
+- [00:21:11,602 - 00:21:13,822] y is proportional to sigma bar,
+- [00:21:14,641 - 00:21:15,342] and therefore,
+- [00:21:15,542 - 00:21:17,162] sigma bar is equal to zero
+- [00:21:17,162 - 00:21:18,522] when the temperature is high.
+- [00:21:18,782 - 00:21:19,802] As expected.
+- [00:21:21,182 - 00:21:23,802] Now we start lowering the temperature.
+- [00:21:23,962 - 00:21:26,182] The slope of this curve decreases,
+- [00:21:27,122 - 00:21:28,662] and at some point,
+- [00:21:28,722 - 00:21:30,942] it becomes exactly tangent
+- [00:21:30,942 - 00:21:32,842] to the hyperbolic tangent.
+- [00:21:34,082 - 00:21:34,722] Tangent,
+- [00:21:34,722 - 00:21:36,702] two different uses of the term tangent.
+- [00:21:38,602 - 00:21:39,602] Tangent meaning
+- [00:21:40,922 - 00:21:42,102] hugs it closely.
+- [00:21:44,502 - 00:21:45,382] Hyperbolic tangent
+- [00:21:45,382 - 00:21:45,882] means,
+- [00:21:45,882 - 00:21:46,342] yes.
+- [00:21:46,662 - 00:21:48,142] What is the slope
+- [00:21:48,142 - 00:21:50,082] of the hyperbolic tangent function?
+- [00:21:50,162 - 00:21:51,582] At the origin.
+- [00:21:51,742 - 00:21:52,262] Anybody know?
+- [00:21:56,022 - 00:21:57,182] It's exactly one.
+- [00:21:58,522 - 00:22:00,182] Easy to differentiate.
+- [00:22:00,842 - 00:22:03,082] You differentiate the hyperbolic tangent,
+- [00:22:03,322 - 00:22:04,082] you can do it yourself,
+- [00:22:04,422 - 00:22:06,342] and you discover that the slope
+- [00:22:06,342 - 00:22:07,482] of the hyperbolic tangent
+- [00:22:07,482 - 00:22:09,922] at the origin is exactly equal to one.
+- [00:22:10,562 - 00:22:11,462] That means,
+- [00:22:12,242 - 00:22:14,722] when the slope of the left-hand side
+- [00:22:14,722 - 00:22:16,162] is adjusted to one,
+- [00:22:17,202 - 00:22:19,762] that's the magic point.
+- [00:22:19,802 - 00:22:20,142] It's a magic point.
+- [00:22:20,162 - 00:22:21,502] Where the two curves
+- [00:22:21,502 - 00:22:23,082] lie on top of each other.
+- [00:22:23,282 - 00:22:24,742] Go past that,
+- [00:22:24,942 - 00:22:27,462] decrease the temperature even more,
+- [00:22:27,682 - 00:22:31,442] you decrease the slope of this line even more,
+- [00:22:31,482 - 00:22:33,002] and all of a sudden,
+- [00:22:33,102 - 00:22:35,642] you have a solution over here,
+- [00:22:35,762 - 00:22:37,142] and a solution over here.
+- [00:22:38,482 - 00:22:40,602] Those solutions are magnetized.
+- [00:22:40,942 - 00:22:42,182] Those solutions
+- [00:22:42,182 - 00:22:45,142] have non-zero y,
+- [00:22:45,502 - 00:22:47,842] and therefore non-zero
+- [00:22:49,162 - 00:22:50,142] sigma bar.
+- [00:22:50,162 - 00:22:51,742] Sigma bar over two d j,
+- [00:22:51,742 - 00:22:52,302] I believe.
+- [00:22:56,322 - 00:22:57,502] That's a phase transition.
+- [00:22:58,802 - 00:22:59,942] At that point,
+- [00:23:01,161 - 00:23:02,302] the system
+- [00:23:02,302 - 00:23:04,722] doesn't quite know what to do.
+- [00:23:05,482 - 00:23:06,562] Should it go here?
+- [00:23:06,782 - 00:23:08,182] It doesn't go there.
+- [00:23:08,522 - 00:23:09,542] It doesn't go there.
+- [00:23:09,682 - 00:23:10,622] Should it go here,
+- [00:23:10,622 - 00:23:11,982] or should it go here?
+- [00:23:12,642 - 00:23:13,762] In other words,
+- [00:23:14,882 - 00:23:16,042] there's an ambiguity.
+- [00:23:16,322 - 00:23:18,622] It seems like the spins
+- [00:23:18,622 - 00:23:19,862] want to have
+- [00:23:20,162 - 00:23:20,962] an average value.
+- [00:23:21,722 - 00:23:23,802] But is that average value up,
+- [00:23:23,962 - 00:23:25,082] or is it down?
+- [00:23:25,322 - 00:23:26,202] That's the question.
+- [00:23:26,342 - 00:23:27,922] Here the average value is up,
+- [00:23:28,142 - 00:23:29,562] sigma bar is positive,
+- [00:23:29,742 - 00:23:30,642] here it's down.
+- [00:23:31,002 - 00:23:32,222] And the problem is,
+- [00:23:32,222 - 00:23:34,042] there's a complete symmetry in the problem.
+- [00:23:34,522 - 00:23:36,802] If you take all the spins and turn them over,
+- [00:23:37,042 - 00:23:37,842] whatever they are,
+- [00:23:38,022 - 00:23:39,202] turn every one over,
+- [00:23:39,382 - 00:23:41,242] it's the same problem back again.
+- [00:23:44,522 - 00:23:45,042] So,
+- [00:23:45,982 - 00:23:47,482] there's no way to decide
+- [00:23:47,482 - 00:23:49,702] whether it does this or it does that.
+- [00:23:50,542 - 00:23:51,582] To decide,
+- [00:23:51,722 - 00:23:53,362] we add a tiny,
+- [00:23:53,622 - 00:23:53,962] tiny,
+- [00:23:53,962 - 00:23:55,242] tiny little bit of
+- [00:23:55,242 - 00:23:55,762] h.
+- [00:23:58,102 - 00:23:59,382] And the effect of adding
+- [00:23:59,382 - 00:24:01,282] a tiny little bit of h is to
+- [00:24:01,282 - 00:24:02,382] shift this curve,
+- [00:24:02,382 - 00:24:03,282] either to the left
+- [00:24:03,282 - 00:24:03,942] or the right.
+- [00:24:04,642 - 00:24:06,142] But once you shift it,
+- [00:24:07,042 - 00:24:09,302] that point of the solution
+- [00:24:09,302 - 00:24:10,482] is no longer there.
+- [00:24:12,382 - 00:24:13,282] And only
+- [00:24:13,922 - 00:24:15,082] one of these two
+- [00:24:15,082 - 00:24:16,262] will remain.
+- [00:24:18,562 - 00:24:19,782] In that case,
+- [00:24:19,822 - 00:24:21,202] that's what happens,
+- [00:24:21,262 - 00:24:22,862] that's magnetization.
+- [00:24:23,282 - 00:24:24,662] One of them wins,
+- [00:24:24,662 - 00:24:25,562] and the one that wins,
+- [00:24:25,602 - 00:24:26,042] of course,
+- [00:24:26,042 - 00:24:27,562] is if you put a little
+- [00:24:27,562 - 00:24:29,602] magnetic field which is trying to push
+- [00:24:29,602 - 00:24:30,942] the spins to be up,
+- [00:24:31,022 - 00:24:32,282] then up will win.
+- [00:24:32,862 - 00:24:34,222] If you put the
+- [00:24:34,222 - 00:24:37,742] magnetic field such that they want to be down,
+- [00:24:37,842 - 00:24:39,042] then down will win.
+- [00:24:40,041 - 00:24:40,521] So,
+- [00:24:40,521 - 00:24:41,422] we can now
+- [00:24:41,422 - 00:24:42,782] draw a graph
+- [00:24:44,421 - 00:24:45,382] of what
+- [00:24:45,382 - 00:24:47,142] the system looks like as a function
+- [00:24:47,482 - 00:24:48,102] of two variables.
+- [00:24:48,562 - 00:24:50,802] The two variables are the temperature
+- [00:24:51,221 - 00:24:53,002] and the external magnetic field.
+- [00:24:53,082 - 00:24:54,182] Those are the two things
+- [00:24:54,182 - 00:24:55,282] we can vary in the problem.
+- [00:24:55,862 - 00:24:56,622] We can
+- [00:24:56,622 - 00:24:59,002] turn up the temperature or down the temperature.
+- [00:24:59,182 - 00:25:01,182] We do that by turning up the
+- [00:25:01,182 - 00:25:03,182] heat bath or turning it down.
+- [00:25:03,461 - 00:25:05,382] Putting a little fire under it.
+- [00:25:06,442 - 00:25:07,002] Or,
+- [00:25:07,282 - 00:25:09,341] we can change the magnetic field
+- [00:25:09,341 - 00:25:10,402] by
+- [00:25:11,182 - 00:25:13,202] turning on the current through
+- [00:25:13,202 - 00:25:15,362] a coil and making
+- [00:25:15,362 - 00:25:17,002] the magnetic field
+- [00:25:17,482 - 00:25:18,062] a little larger or smaller.
+- [00:25:18,242 - 00:25:19,642] Those are the two things at our disposal.
+- [00:25:20,502 - 00:25:21,522] What about J?
+- [00:25:23,522 - 00:25:25,362] J is also something
+- [00:25:25,362 - 00:25:26,342] we can change,
+- [00:25:26,342 - 00:25:28,502] but in order to change it,
+- [00:25:28,562 - 00:25:31,062] what we usually have to do is change the material.
+- [00:25:31,802 - 00:25:32,322] Now,
+- [00:25:32,322 - 00:25:32,742] in fact,
+- [00:25:32,742 - 00:25:33,162] you can also
+- [00:25:33,162 - 00:25:34,642] change it by changing the pressure
+- [00:25:34,642 - 00:25:35,422] and other things,
+- [00:25:35,422 - 00:25:36,682] but we're going to take J
+- [00:25:36,682 - 00:25:37,682] to be a fixed number.
+- [00:25:39,082 - 00:25:40,262] Fixed chemical composition,
+- [00:25:41,402 - 00:25:42,442] fixed pressure,
+- [00:25:43,062 - 00:25:44,922] fixed distance between the atoms,
+- [00:25:45,102 - 00:25:47,462] J is a well-defined number.
+- [00:25:47,482 - 00:25:49,002] You can look up in the
+- [00:25:49,002 - 00:25:51,082] handbook of physics and chemistry or whatever.
+- [00:25:51,942 - 00:25:52,502] But,
+- [00:25:52,502 - 00:25:53,182] beta and J
+- [00:25:53,182 - 00:25:54,202] are the things that you,
+- [00:25:54,202 - 00:25:54,482] sorry,
+- [00:25:54,482 - 00:25:55,302] beta and H
+- [00:25:55,302 - 00:25:57,342] are the things that are easily under your disposal.
+- [00:25:58,382 - 00:25:58,942] So,
+- [00:25:58,942 - 00:25:59,462] you might
+- [00:25:59,462 - 00:26:00,282] want to ask,
+- [00:26:01,202 - 00:26:02,902] as an experimental fact,
+- [00:26:03,722 - 00:26:05,242] what does the
+- [00:26:05,242 - 00:26:07,122] magnetization look like
+- [00:26:07,122 - 00:26:09,142] as a function of
+- [00:26:10,962 - 00:26:11,522] temperature
+- [00:26:11,522 - 00:26:12,982] and magnetic field?
+- [00:26:14,822 - 00:26:15,382] So,
+- [00:26:15,402 - 00:26:16,022] first of all,
+- [00:26:16,022 - 00:26:17,262] let's turn
+- [00:26:17,482 - 00:26:18,502] off H altogether.
+- [00:26:18,882 - 00:26:19,522] No H.
+- [00:26:20,622 - 00:26:21,422] No H,
+- [00:26:21,422 - 00:26:23,122] and go to large temperature.
+- [00:26:23,602 - 00:26:24,002] Oh,
+- [00:26:24,002 - 00:26:24,642] oh,
+- [00:26:24,642 - 00:26:24,982] oh,
+- [00:26:25,002 - 00:26:26,622] let me come back a second,
+- [00:26:26,622 - 00:26:27,422] one second.
+- [00:26:28,882 - 00:26:30,402] Let's go back to this formula.
+- [00:26:33,922 - 00:26:35,142] The question is,
+- [00:26:35,222 - 00:26:37,422] at what temperature does the transition
+- [00:26:37,422 - 00:26:37,842] happen?
+- [00:26:37,842 - 00:26:39,222] The transition
+- [00:26:39,222 - 00:26:41,562] from having a solution like this
+- [00:26:41,562 - 00:26:43,262] to not having a solution like that.
+- [00:26:43,662 - 00:26:44,222] So,
+- [00:26:44,222 - 00:26:45,162] the transition happens
+- [00:26:45,162 - 00:26:47,362] when the slope of the left
+- [00:26:47,482 - 00:26:48,882] side is equal to one.
+- [00:26:50,402 - 00:26:51,402] When the slope
+- [00:26:51,402 - 00:26:53,002] of the left side is equal to one,
+- [00:26:53,582 - 00:26:55,022] that's where you're hugging
+- [00:26:55,022 - 00:26:56,082] the curve's hub.
+- [00:26:57,082 - 00:26:57,642] Okay,
+- [00:26:57,642 - 00:26:59,502] so the slope of the left side is one
+- [00:26:59,502 - 00:27:00,842] when the temperature
+- [00:27:00,842 - 00:27:03,142] is equal to 2 d
+- [00:27:03,142 - 00:27:03,842] J.
+- [00:27:05,322 - 00:27:07,262] That's called the critical temperature.
+- [00:27:09,442 - 00:27:10,722] It's not exact.
+- [00:27:10,842 - 00:27:12,382] This is a mean field approximation.
+- [00:27:12,582 - 00:27:14,842] It becomes exact when d becomes large.
+- [00:27:16,902 - 00:27:17,462] And
+- [00:27:17,482 - 00:27:18,722] I'm sorry,
+- [00:27:18,722 - 00:27:19,822] I forgot to look up
+- [00:27:19,822 - 00:27:21,242] what the correct answer is for
+- [00:27:21,242 - 00:27:22,462] d equals 2 and 3.
+- [00:27:22,842 - 00:27:25,382] But for d equals 2,
+- [00:27:25,582 - 00:27:27,582] it's off by a significant amount.
+- [00:27:27,962 - 00:27:29,142] For d equals 3,
+- [00:27:29,242 - 00:27:30,402] it's fairly good.
+- [00:27:31,982 - 00:27:33,522] But it captures
+- [00:27:34,922 - 00:27:35,482] qualitatively
+- [00:27:35,482 - 00:27:36,862] what it is that does really happen.
+- [00:27:38,202 - 00:27:38,762] Okay,
+- [00:27:38,762 - 00:27:39,462] so a temperature
+- [00:27:39,462 - 00:27:41,082] 2 d J,
+- [00:27:41,222 - 00:27:43,042] that's called the critical temperature,
+- [00:27:43,202 - 00:27:45,082] and let's write it C R I T.
+- [00:27:45,522 - 00:27:47,022] The critical temperature
+- [00:27:47,842 - 00:27:48,962] below which
+- [00:27:49,302 - 00:27:50,862] the system is spontaneously
+- [00:27:51,482 - 00:27:52,222] magnetized.
+- [00:27:53,802 - 00:27:55,462] Everybody wants to line up
+- [00:27:55,462 - 00:27:56,702] and the lining up tendency
+- [00:27:57,402 - 00:27:59,382] wins and everybody lines up.
+- [00:27:59,722 - 00:28:00,882] Not absolutely.
+- [00:28:01,822 - 00:28:03,342] They're not 100%
+- [00:28:03,342 - 00:28:04,002] lined up.
+- [00:28:04,002 - 00:28:04,862] They fluctuate,
+- [00:28:04,862 - 00:28:05,322] but there's
+- [00:28:05,322 - 00:28:07,662] a net tendency for everybody to line up.
+- [00:28:09,582 - 00:28:10,962] Above that temperature,
+- [00:28:11,262 - 00:28:13,182] thermal fluctuations win
+- [00:28:13,182 - 00:28:15,562] and it doesn't magnetize.
+- [00:28:16,182 - 00:28:16,862] Okay,
+- [00:28:16,862 - 00:28:17,282] so now
+- [00:28:17,482 - 00:28:18,682] let's draw a picture here.
+- [00:28:19,422 - 00:28:21,182] Is that the Curie temperature?
+- [00:28:21,642 - 00:28:22,402] What's that?
+- [00:28:22,622 - 00:28:24,002] The Curie temperature?
+- [00:28:26,274 - 00:28:26,814] きゅうり
+- [00:28:27,970 - 00:28:28,510] Yeah,
+- [00:28:28,510 - 00:28:29,870] yeah,
+- [00:28:29,870 - 00:28:30,810] yeah,
+- [00:28:30,810 - 00:28:31,930] same thing.
+- [00:28:34,310 - 00:28:37,970] Curie temperature is a term that's used for magnets,
+- [00:28:38,050 - 00:28:38,590] but it's strictly.
+- [00:28:39,670 - 00:28:42,510] If we're talking about the general phenomena
+- [00:28:42,510 - 00:28:43,930] of phase transitions,
+- [00:28:44,310 - 00:28:46,090] this would just be called critical temperature.
+- [00:28:46,430 - 00:28:49,910] So Curie temperature is a
+- [00:28:49,910 - 00:28:53,390] special case of a critical point.
+- [00:28:53,930 - 00:28:56,690] A lambda point in liquid helium is another one,
+- [00:28:56,690 - 00:28:58,490] and they're very similar to each other.
+- [00:28:58,690 - 00:28:59,250] In fact,
+- [00:28:59,250 - 00:29:02,990] they fall into a class of phase transitions
+- [00:29:02,990 - 00:29:05,230] which are almost identical in many ways.
+- [00:29:05,930 - 00:29:07,550] I'm going to show you why that,
+- [00:29:07,650 - 00:29:10,610] or at least how this is related
+- [00:29:10,610 - 00:29:12,350] to another interesting transition.
+- [00:29:13,170 - 00:29:13,730] Okay,
+- [00:29:13,730 - 00:29:15,530] so there's some critical temperature over here.
+- [00:29:15,690 - 00:29:16,150] T critical.
+- [00:29:18,070 - 00:29:18,630] Now,
+- [00:29:18,630 - 00:29:20,670] what is the magnetization?
+- [00:29:21,250 - 00:29:21,810] All right,
+- [00:29:21,810 - 00:29:23,610] let's think about the value
+- [00:29:23,610 - 00:29:25,790] of the magnetization on this plane.
+- [00:29:26,690 - 00:29:27,790] First of all,
+- [00:29:27,790 - 00:29:29,670] if you're at higher temperatures
+- [00:29:29,670 - 00:29:30,470] than T critical,
+- [00:29:30,470 - 00:29:33,209] and there is no magnetic field,
+- [00:29:34,509 - 00:29:36,270] then magnetization is just zero.
+- [00:29:36,590 - 00:29:38,910] There's no bias due to the magnetic field,
+- [00:29:39,509 - 00:29:40,730] but at higher temperatures,
+- [00:29:40,730 - 00:29:42,530] the statistics of ups
+- [00:29:42,530 - 00:29:44,030] and downs being equal will win.
+- [00:29:44,710 - 00:29:45,910] And so over here,
+- [00:29:45,910 - 00:29:48,770] let's call it average
+- [00:29:48,770 - 00:29:50,630] of sigma bar is equal to zero.
+- [00:29:51,070 - 00:29:52,410] Along this line,
+- [00:29:52,410 - 00:29:54,890] along the line,
+- [00:29:54,910 - 00:29:56,670] the average of sigma bar is equal to zero.
+- [00:29:56,670 - 00:29:59,290] Now you start lowering the temperature,
+- [00:30:00,050 - 00:30:01,610] and you come to this critical point.
+- [00:30:02,130 - 00:30:03,870] When you get to the critical point,
+- [00:30:04,070 - 00:30:05,750] it just doesn't know what to do.
+- [00:30:05,970 - 00:30:07,930] Should it go up or should it go down?
+- [00:30:08,490 - 00:30:10,370] But the tiniest little bit
+- [00:30:10,370 - 00:30:12,570] of straight magnetic field H will
+- [00:30:12,570 - 00:30:14,770] tell you which way to go.
+- [00:30:15,830 - 00:30:17,310] If H is positive,
+- [00:30:17,310 - 00:30:20,810] the magnetization will be positive.
+- [00:30:23,070 - 00:30:25,150] And right above this line,
+- [00:30:25,150 - 00:30:26,310] it won't be zero.
+- [00:30:27,090 - 00:30:28,810] And right below the line,
+- [00:30:28,810 - 00:30:29,530] it won't be zero.
+- [00:30:30,670 - 00:30:32,510] Spontaneous magnetization has happened.
+- [00:30:32,730 - 00:30:34,570] And so all along here,
+- [00:30:34,570 - 00:30:36,970] sigma is positive.
+- [00:30:38,210 - 00:30:38,810] Plus,
+- [00:30:38,810 - 00:30:39,130] plus,
+- [00:30:39,130 - 00:30:39,410] plus,
+- [00:30:39,410 - 00:30:39,770] plus,
+- [00:30:39,770 - 00:30:40,050] plus.
+- [00:30:40,930 - 00:30:42,130] On the average,
+- [00:30:42,130 - 00:30:43,970] the average is positive.
+- [00:30:44,550 - 00:30:45,690] And down below,
+- [00:30:45,690 - 00:30:46,430] it's negative.
+- [00:30:49,490 - 00:30:51,650] Corresponds to the two possible roots
+- [00:30:52,929 - 00:30:56,530] where the red line either intersected on the right side,
+- [00:30:56,630 - 00:30:56,650] or on the left side.
+- [00:30:56,650 - 00:30:59,310] And physically,
+- [00:30:59,310 - 00:31:01,290] it's just the extra little bit
+- [00:31:01,290 - 00:31:02,210] of magnetic field.
+- [00:31:02,730 - 00:31:07,850] It's broken the symmetry between ups and downs,
+- [00:31:08,830 - 00:31:10,050] and it's biased it.
+- [00:31:10,270 - 00:31:12,630] And that little bit of biasing is enough
+- [00:31:12,630 - 00:31:17,070] that just the tiniest little bit of H goes plus.
+- [00:31:17,310 - 00:31:19,750] Tiniest little bit of H down goes minus.
+- [00:31:20,130 - 00:31:20,770] Now,
+- [00:31:20,770 - 00:31:23,700] you can ask what the jump
+- [00:31:23,700 - 00:31:26,630] is in the magnetization going on.
+- [00:31:26,650 - 00:31:27,170] We'll do it across here.
+- [00:31:27,750 - 00:31:28,270] Remember,
+- [00:31:28,270 - 00:31:30,870] this is the average magnetization.
+- [00:31:31,950 - 00:31:33,490] It's not zero or one.
+- [00:31:34,390 - 00:31:36,170] It's not one or minus one.
+- [00:31:37,750 - 00:31:38,830] It can be zero,
+- [00:31:38,830 - 00:31:39,890] or it can be two-thirds,
+- [00:31:40,010 - 00:31:41,050] or it could be one-quarter.
+- [00:31:41,410 - 00:31:44,030] It can be any number between zero,
+- [00:31:44,030 - 00:31:44,750] sorry,
+- [00:31:44,830 - 00:31:46,410] between minus one and one.
+- [00:31:48,710 - 00:31:49,230] Well,
+- [00:31:49,230 - 00:31:50,470] at zero temperature,
+- [00:31:50,470 - 00:31:51,490] way down here,
+- [00:31:52,910 - 00:31:55,510] it doesn't matter what the magnetic field is.
+- [00:31:55,650 - 00:31:56,630] It's zero temperature.
+- [00:31:56,630 - 00:31:59,250] All these guys line up,
+- [00:31:59,250 - 00:32:00,630] and they line up
+- [00:32:00,630 - 00:32:02,670] in the down direction down here.
+- [00:32:03,210 - 00:32:04,630] So all along here,
+- [00:32:04,630 - 00:32:08,550] sigma bar is equal to minus one,
+- [00:32:09,050 - 00:32:10,310] and all along here,
+- [00:32:10,310 - 00:32:11,330] it's equal to plus one.
+- [00:32:11,770 - 00:32:13,890] That's just the fact that at zero temperature,
+- [00:32:13,890 - 00:32:15,250] even,
+- [00:32:18,370 - 00:32:20,650] they just line up.
+- [00:32:21,490 - 00:32:22,590] Choose the lowest energy.
+- [00:32:23,230 - 00:32:23,790] Now,
+- [00:32:23,790 - 00:32:25,730] what about right at the critical point,
+- [00:32:25,830 - 00:32:26,220] and that's the point where you're
+- [00:32:26,220 - 00:32:26,610] going to have to go down.
+- [00:32:26,610 - 00:32:29,230] Imagine going up and down from negative temperature
+- [00:32:29,230 - 00:32:32,590] to positive temperature just at the critical point.
+- [00:32:32,750 - 00:32:32,890] Well,
+- [00:32:32,890 - 00:32:34,650] just at the critical point,
+- [00:32:35,390 - 00:32:41,330] that's this place where the red line is just barely
+- [00:32:41,330 - 00:32:42,510] at 45 degrees,
+- [00:32:42,510 - 00:32:45,170] just barely,
+- [00:32:45,170 - 00:32:49,610] critical barely.
+- [00:32:54,790 - 00:32:55,130] So.
+- [00:32:56,790 - 00:32:58,410] At the critical point,
+- [00:32:58,410 - 00:33:01,630] the magnetization is clearly zero.
+- [00:33:02,410 - 00:33:04,970] If you increase the temperature,
+- [00:33:04,970 - 00:33:05,470] sorry,
+- [00:33:05,590 - 00:33:08,010] decrease the temperature just a tiny bit,
+- [00:33:09,269 - 00:33:11,750] the magnetization changes a tiny bit.
+- [00:33:13,650 - 00:33:18,070] If you decrease the temperature just a tiny bit,
+- [00:33:18,150 - 00:33:20,010] that means lowering the slope here.
+- [00:33:21,070 - 00:33:22,690] Don't turn on the magnetic field,
+- [00:33:22,690 - 00:33:25,190] but there are two branches,
+- [00:33:25,190 - 00:33:26,990] one just to the right,
+- [00:33:26,990 - 00:33:28,050] one just to the left,
+- [00:33:28,110 - 00:33:31,670] and the magnetization is tiny if the temperature is tiny.
+- [00:33:32,490 - 00:33:33,030] So,
+- [00:33:33,030 - 00:33:36,830] as we move vertically here at the critical temperature,
+- [00:33:38,409 - 00:33:41,690] the magnetization increases,
+- [00:33:41,690 - 00:33:43,130] but continuously.
+- [00:33:43,710 - 00:33:44,790] Just above here,
+- [00:33:44,790 - 00:33:47,150] it's very small,
+- [00:33:47,150 - 00:33:47,830] but positive.
+- [00:33:47,910 - 00:33:48,970] Just below here,
+- [00:33:48,970 - 00:33:49,930] it's very small,
+- [00:33:49,930 - 00:33:50,610] but negative.
+- [00:33:51,830 - 00:33:52,370] So,
+- [00:33:52,370 - 00:33:54,250] as you come into this critical point,
+- [00:33:55,190 - 00:33:58,850] the magnetization tends to zero from every direction,
+- [00:33:59,170 - 00:34:00,190] no matter how direction,
+- [00:34:00,190 - 00:34:02,050] including this one,
+- [00:34:02,950 - 00:34:04,230] including this one,
+- [00:34:04,230 - 00:34:05,870] the magnetization tends to zero
+- [00:34:05,870 - 00:34:07,210] at the critical point,
+- [00:34:07,210 - 00:34:09,810] but once you pass the critical point,
+- [00:34:09,989 - 00:34:12,409] there's a jump in the magnetization.
+- [00:34:13,790 - 00:34:14,150] So,
+- [00:34:14,150 - 00:34:14,670] for example,
+- [00:34:14,670 - 00:34:18,790] if you had your magnet turned on,
+- [00:34:19,750 - 00:34:23,050] and you slowly vary the magnetic field,
+- [00:34:23,110 - 00:34:25,170] if you slowly vary the magnetic field,
+- [00:34:25,170 - 00:34:26,010] if you slowly vary the magnetic field,
+- [00:34:26,090 - 00:34:27,489] above the critical temperature,
+- [00:34:28,889 - 00:34:33,110] then the magnetization gets smaller and smaller
+- [00:34:33,110 - 00:34:34,130] and smaller and smaller,
+- [00:34:34,130 - 00:34:36,110] goes to zero continuously,
+- [00:34:36,590 - 00:34:38,630] and then gets bigger and bigger and bigger,
+- [00:34:38,870 - 00:34:41,030] completely smoothly,
+- [00:34:41,030 - 00:34:43,630] just as you might expect.
+- [00:34:44,230 - 00:34:46,230] With the magnet is pointing down,
+- [00:34:46,530 - 00:34:48,290] it makes everything tilt down,
+- [00:34:48,550 - 00:34:49,750] with the magnet is pointing up,
+- [00:34:49,750 - 00:34:51,350] it tilts stuff up,
+- [00:34:51,550 - 00:34:53,090] but completely continuously,
+- [00:34:53,090 - 00:34:55,150] as you turn off the magnetic field,
+- [00:34:55,150 - 00:34:56,050] it goes to zero,
+- [00:34:56,050 - 00:34:57,230] and as you turn it back on,
+- [00:34:57,430 - 00:34:58,270] it becomes positive.
+- [00:34:58,990 - 00:35:00,550] We could draw a curve for that,
+- [00:35:00,550 - 00:35:00,850] I don't mind.
+- [00:35:01,870 - 00:35:02,310] Question?
+- [00:35:02,550 - 00:35:02,670] Yeah.
+- [00:35:04,710 - 00:35:06,390] I'm still not clear what's happening
+- [00:35:06,970 - 00:35:08,490] on a horizontal axis.
+- [00:35:08,810 - 00:35:09,490] It jumps.
+- [00:35:09,830 - 00:35:10,190] Pardon?
+- [00:35:10,350 - 00:35:10,970] It jumps.
+- [00:35:12,250 - 00:35:13,310] But what do you see,
+- [00:35:13,310 - 00:35:13,970] what's it doing?
+- [00:35:14,290 - 00:35:15,150] It jumps.
+- [00:35:16,090 - 00:35:17,670] It jumps when you go across it?
+- [00:35:17,870 - 00:35:17,930] Yeah.
+- [00:35:18,070 - 00:35:19,330] But what's it doing on it?
+- [00:35:19,590 - 00:35:20,030] Oh,
+- [00:35:20,030 - 00:35:21,730] on it,
+- [00:35:21,730 - 00:35:23,370] doesn't know what to do.
+- [00:35:23,910 - 00:35:24,350] Okay.
+- [00:35:25,150 - 00:35:26,730] It can't decide what's the minus.
+- [00:35:28,430 - 00:35:28,910] Now,
+- [00:35:28,910 - 00:35:30,190] it does one thing or the other,
+- [00:35:30,330 - 00:35:32,710] but of course the answer is you could never really
+- [00:35:32,710 - 00:35:34,590] turn off all the magnetic field.
+- [00:35:34,670 - 00:35:36,670] Something is gonna bias it a little bit.
+- [00:35:37,490 - 00:35:38,450] In particular,
+- [00:35:38,450 - 00:35:39,750] it's not continuous there.
+- [00:35:39,910 - 00:35:40,790] It's not continuous.
+- [00:35:42,150 - 00:35:44,530] That's the key to what a phase transition is.
+- [00:35:44,870 - 00:35:45,350] So,
+- [00:35:45,350 - 00:35:47,810] or this is technically called
+- [00:35:47,810 - 00:35:49,210] the second order phase transition.
+- [00:35:49,790 - 00:35:51,790] We don't need to distinguish them
+- [00:35:51,790 - 00:35:53,410] because I'm not gonna get a chance
+- [00:35:53,410 - 00:35:54,970] to talk about first order phase transition.
+- [00:35:55,150 - 00:35:55,310] So,
+- [00:35:55,310 - 00:35:55,310] what is it?
+- [00:35:55,830 - 00:35:56,510] It's a series of changes.
+- [00:35:56,510 - 00:35:56,570] Okay.
+- [00:35:57,490 - 00:35:58,170] So,
+- [00:35:58,170 - 00:36:02,170] as the experimental physicist manipulates
+- [00:36:02,170 - 00:36:04,490] his magnetic field at fixed temperature,
+- [00:36:05,250 - 00:36:08,630] the magnetic field varies at first
+- [00:36:08,970 - 00:36:11,970] the magnetization is nice and smooth
+- [00:36:12,430 - 00:36:13,890] until it gets to this point.
+- [00:36:14,590 - 00:36:15,830] When it gets over to here,
+- [00:36:15,830 - 00:36:16,470] it's not zero.
+- [00:36:17,290 - 00:36:17,930] It's negative.
+- [00:36:19,390 - 00:36:22,850] And then a little tiny change in the magnetic field,
+- [00:36:22,950 - 00:36:23,510] whoop,
+- [00:36:23,510 - 00:36:24,270] flips it over.
+- [00:36:26,030 - 00:36:28,450] flips it over and the
+- [00:36:28,450 - 00:36:30,870] magnetization changes discontinuously across there.
+- [00:36:31,950 - 00:36:34,030] That discontinuous change is a,
+- [00:36:34,030 - 00:36:35,610] well,
+- [00:36:35,610 - 00:36:37,890] it's a symptom that in a sense there are two
+- [00:36:37,890 - 00:36:38,230] phases.
+- [00:36:38,230 - 00:36:41,830] Supposing you didn't know anything about this up here,
+- [00:36:41,830 - 00:36:44,310] let's suppose T
+- [00:36:44,310 - 00:36:46,760] critical is too high a temperature
+- [00:36:46,760 - 00:36:49,210] for our experimental physicists to ever
+- [00:36:49,210 - 00:36:49,630] study,
+- [00:36:49,630 - 00:36:52,150] they would say there are two phases.
+- [00:36:52,150 - 00:36:55,290] There's a phase of negative
+- [00:36:55,290 - 00:36:56,030] magnetization,
+- [00:36:56,030 - 00:36:57,930] there's a phase of positive magnetization,
+- [00:36:57,930 - 00:36:59,970] and as you vary the
+- [00:36:59,970 - 00:37:00,430] parameters,
+- [00:37:00,430 - 00:37:01,910] it jumps.
+- [00:37:01,910 - 00:37:07,410] It's not all down to all up.
+- [00:37:07,410 - 00:37:08,950] It's not all down to all up.
+- [00:37:08,950 - 00:37:11,410] It's an average down to average up.
+- [00:37:11,670 - 00:37:13,250] Because it would be the hysteresis
+- [00:37:13,250 - 00:37:14,830] if it was all to all up.
+- [00:37:14,830 - 00:37:15,190] No.
+- [00:37:15,190 - 00:37:17,150] We're not going to have
+- [00:37:17,150 - 00:37:19,110] time to talk about the hysteresis.
+- [00:37:19,890 - 00:37:20,650] All right,
+- [00:37:20,650 - 00:37:24,170] but there's another way you can move around in space.
+- [00:37:24,170 - 00:37:25,490] You can say,
+- [00:37:25,490 - 00:37:27,530] can I go from here to
+- [00:37:27,530 - 00:37:29,570] here without having a sharp change?
+- [00:37:30,070 - 00:37:31,170] And of course you can.
+- [00:37:31,170 - 00:37:32,900] You can go from here to
+- [00:37:32,900 - 00:37:34,630] here going around the critical point.
+- [00:37:34,630 - 00:37:36,970] If you go around the critical point,
+- [00:37:36,970 - 00:37:38,630] you experience no jump.
+- [00:37:39,350 - 00:37:42,610] But you do get from negative to positive.
+- [00:37:42,610 - 00:37:44,450] So on the one hand,
+- [00:37:44,450 - 00:37:46,770] experimentalists down here who never got up to
+- [00:37:46,770 - 00:37:49,090] T critical would say there are two phases.
+- [00:37:49,750 - 00:37:50,770] And they're distinct.
+- [00:37:50,770 - 00:37:52,610] And not only are there two phases,
+- [00:37:52,610 - 00:37:55,580] but there's a sudden jump
+- [00:37:55,580 - 00:37:58,550] as you vary the magnetic field.
+- [00:38:00,070 - 00:38:00,890] On the other hand,
+- [00:38:00,890 - 00:38:03,350] somebody who had more experience with this system would say,
+- [00:38:03,350 - 00:38:03,610] oh,
+- [00:38:03,610 - 00:38:03,950] well,
+- [00:38:03,950 - 00:38:04,150] no,
+- [00:38:04,150 - 00:38:06,990] there's really not a sharp difference between here and here.
+- [00:38:07,310 - 00:38:09,060] Let me show you how to go
+- [00:38:09,060 - 00:38:10,810] from one to the other without jumping.
+- [00:38:10,810 - 00:38:13,670] And both would be right.
+- [00:38:13,670 - 00:38:15,250] Both are correct statements.
+- [00:38:15,510 - 00:38:17,230] Does it jump if you stay at fixed temperature?
+- [00:38:17,710 - 00:38:19,070] Have you allowed yourself to adjust?
+- [00:38:19,090 - 00:38:20,970] If you explore the whole region here,
+- [00:38:20,970 - 00:38:23,220] you'll discover there are ways to get from
+- [00:38:23,220 - 00:38:25,470] here to here which don't involve a jump.
+- [00:38:25,470 - 00:38:26,510] Smooth.
+- [00:38:28,170 - 00:38:28,950] Another question?
+- [00:38:29,270 - 00:38:29,390] Yeah.
+- [00:38:29,850 - 00:38:31,880] On the part below the critical where you're
+- [00:38:31,880 - 00:38:33,910] going from negative to positive and there's that jump.
+- [00:38:34,130 - 00:38:34,310] Yeah.
+- [00:38:34,430 - 00:38:36,810] As you're getting closer and closer to the horizontal axis,
+- [00:38:36,810 - 00:38:37,710] say from below,
+- [00:38:37,710 - 00:38:40,470] are you getting closer and closer to zero?
+- [00:38:41,110 - 00:38:44,790] Is the average getting closer and closer to zero?
+- [00:38:45,050 - 00:38:45,230] No.
+- [00:38:45,490 - 00:38:45,930] No,
+- [00:38:45,930 - 00:38:46,690] I know it's not zero.
+- [00:38:46,810 - 00:38:47,170] It's a relative thing.
+- [00:38:47,250 - 00:38:47,930] Is it?
+- [00:38:49,090 - 00:38:50,910] The actual value is getting less and less or not?
+- [00:38:51,570 - 00:38:52,010] Here?
+- [00:38:52,250 - 00:38:52,530] Yeah.
+- [00:38:53,010 - 00:38:53,450] No.
+- [00:38:53,750 - 00:38:54,190] No?
+- [00:38:54,270 - 00:38:55,890] The average is staying negative.
+- [00:38:56,230 - 00:38:57,130] I know it's negative,
+- [00:38:57,130 - 00:38:58,790] but is it very near zero?
+- [00:38:58,990 - 00:38:59,190] No,
+- [00:38:59,190 - 00:39:00,530] it's not near zero over here.
+- [00:39:00,650 - 00:39:00,910] Oh.
+- [00:39:00,910 - 00:39:00,970] No,
+- [00:39:00,970 - 00:39:01,230] no,
+- [00:39:01,230 - 00:39:01,450] no,
+- [00:39:01,450 - 00:39:01,550] no,
+- [00:39:01,550 - 00:39:01,650] no.
+- [00:39:01,670 - 00:39:02,230] Over here,
+- [00:39:02,230 - 00:39:02,530] look.
+- [00:39:03,290 - 00:39:04,550] Go back to this curve.
+- [00:39:09,650 - 00:39:10,890] And now draw.
+- [00:39:13,350 - 00:39:16,150] Now we're essentially at zero magnetic field.
+- [00:39:16,410 - 00:39:16,830] Right.
+- [00:39:16,990 - 00:39:18,450] So I don't need to shift the curve.
+- [00:39:18,450 - 00:39:18,670] Yeah.
+- [00:39:18,770 - 00:39:19,130] Okay.
+- [00:39:20,270 - 00:39:23,510] We still have these two solutions.
+- [00:39:23,930 - 00:39:24,410] Yeah.
+- [00:39:24,790 - 00:39:28,970] And the two solutions don't have y near zero.
+- [00:39:29,790 - 00:39:30,270] Well,
+- [00:39:30,270 - 00:39:32,730] as you get it closer and closer to one,
+- [00:39:32,730 - 00:39:33,750] to the critical,
+- [00:39:33,750 - 00:39:35,010] that's here.
+- [00:39:35,150 - 00:39:35,650] That's here.
+- [00:39:36,330 - 00:39:36,810] Oh,
+- [00:39:36,810 - 00:39:37,170] yeah.
+- [00:39:37,270 - 00:39:37,530] Okay.
+- [00:39:37,590 - 00:39:37,870] That's here.
+- [00:39:38,330 - 00:39:39,050] I see.
+- [00:39:39,230 - 00:39:39,870] That's here.
+- [00:39:39,970 - 00:39:41,670] So as you approach from here,
+- [00:39:41,670 - 00:39:42,530] it goes to zero.
+- [00:39:42,670 - 00:39:42,870] Yeah.
+- [00:39:42,890 - 00:39:43,130] Okay.
+- [00:39:43,270 - 00:39:43,710] Right.
+- [00:39:44,470 - 00:39:45,450] But over here,
+- [00:39:45,450 - 00:39:47,690] that's when the temperature is.
+- [00:39:47,950 - 00:39:48,430] Yeah.
+- [00:39:48,430 - 00:39:48,650] Okay.
+- [00:39:48,810 - 00:39:49,070] Got it.
+- [00:39:49,190 - 00:39:49,430] Good.
+- [00:39:49,530 - 00:39:49,890] Thank you.
+- [00:39:49,970 - 00:39:50,330] Excellent.
+- [00:39:52,110 - 00:39:52,670] Okay.
+- [00:39:52,850 - 00:39:54,480] So now we have everything
+- [00:39:54,480 - 00:39:56,110] we need to know about magnets.
+- [00:39:57,230 - 00:40:00,550] But I'm interested in the liquid-gas phase transition.
+- [00:40:00,830 - 00:40:02,410] What does that have to do with this?
+- [00:40:04,530 - 00:40:07,280] There's a way of thinking about exactly
+- [00:40:07,280 - 00:40:10,030] the same system as being the transition between
+- [00:40:10,030 - 00:40:11,010] liquid and gas.
+- [00:40:12,050 - 00:40:14,590] It's not good for liquid to solid.
+- [00:40:15,890 - 00:40:17,410] That is not good.
+- [00:40:17,590 - 00:40:18,410] Liquid solid.
+- [00:40:18,410 - 00:40:20,050] But liquid solid phase transition is very different.
+- [00:40:24,290 - 00:40:27,100] So let's talk about what this possibly could
+- [00:40:27,100 - 00:40:29,910] have to do with a bunch of particles.
+- [00:40:31,690 - 00:40:32,210] Okay.
+- [00:40:32,290 - 00:40:34,390] Let's talk about a box of particles.
+- [00:40:34,870 - 00:40:36,230] There are a box of particles,
+- [00:40:36,230 - 00:40:38,130] a box of liquid.
+- [00:40:39,530 - 00:40:41,530] And the fluid is in,
+- [00:40:41,530 - 00:40:44,590] I'll tell you what this drawing means in a minute.
+- [00:40:44,830 - 00:40:46,610] It's a potential energy block.
+- [00:40:47,870 - 00:40:48,390] So it's a potential energy block.
+- [00:40:48,410 - 00:40:49,960] The edges here are the edges
+- [00:40:49,960 - 00:40:51,510] of the walls of a box.
+- [00:40:51,770 - 00:40:53,390] Here we're inside the box.
+- [00:40:53,490 - 00:40:54,790] Here we're outside the box.
+- [00:40:57,250 - 00:40:58,390] As it turns out,
+- [00:40:58,390 - 00:41:00,590] the box really corresponds to some,
+- [00:41:00,590 - 00:41:03,010] it might correspond to a material
+- [00:41:03,010 - 00:41:04,750] or whatever it happens to correspond to,
+- [00:41:04,750 - 00:41:09,070] the energy of the particle when it's inside the
+- [00:41:09,070 - 00:41:10,820] box is lower than the energy of
+- [00:41:10,820 - 00:41:12,570] the particle when it's outside the box.
+- [00:41:13,110 - 00:41:15,370] Now we could manufacture this just by having
+- [00:41:15,370 - 00:41:17,630] the inside of the box and the outside of
+- [00:41:17,630 - 00:41:18,390] the box being inside one another.
+- [00:41:18,390 - 00:41:19,470] slightly different elevations,
+- [00:41:19,470 - 00:41:19,730] right?
+- [00:41:19,830 - 00:41:22,070] We could have a flat box and a drop box.
+- [00:41:22,850 - 00:41:24,270] But for whatever reason,
+- [00:41:24,270 - 00:41:25,710] we're going to imagine
+- [00:41:25,710 - 00:41:29,570] that a particle at rest inside the box
+- [00:41:30,169 - 00:41:31,370] has less energy,
+- [00:41:31,370 - 00:41:32,470] negative energy,
+- [00:41:32,610 - 00:41:34,470] relative to what it has outside the box.
+- [00:41:36,850 - 00:41:39,970] That difference in energy has a name,
+- [00:41:39,970 - 00:41:41,490] it's called the chemical potential.
+- [00:41:42,210 - 00:41:43,930] And it's usually written mu.
+- [00:41:45,350 - 00:41:47,250] It's the amount of energy difference,
+- [00:41:47,250 - 00:41:50,130] it's actually the amount of energy that it takes
+- [00:41:50,130 - 00:41:52,730] to remove the particle from the box.
+- [00:41:54,030 - 00:41:55,570] How much energy does it take
+- [00:41:55,570 - 00:41:57,530] to remove the particle from the box?
+- [00:41:57,850 - 00:41:59,410] Now we're not going to ask what is it,
+- [00:41:59,470 - 00:42:01,310] in this particular case it's not important
+- [00:42:01,310 - 00:42:03,470] what makes the difference,
+- [00:42:03,470 - 00:42:05,430] why there's a different energy.
+- [00:42:05,770 - 00:42:07,200] We'll just take it that the
+- [00:42:07,200 - 00:42:08,630] energy is lower inside the box.
+- [00:42:08,750 - 00:42:09,450] But furthermore,
+- [00:42:09,450 - 00:42:10,830] there are particles
+- [00:42:10,830 - 00:42:12,830] outside the box and inside the box.
+- [00:42:13,050 - 00:42:14,490] Lots of them all over the place.
+- [00:42:18,630 - 00:42:20,390] And we can ask what
+- [00:42:20,390 - 00:42:22,150] the density is inside the box
+- [00:42:22,150 - 00:42:23,130] and outside the box.
+- [00:42:23,330 - 00:42:23,550] Oh,
+- [00:42:23,550 - 00:42:24,450] one more thing.
+- [00:42:25,950 - 00:42:29,090] The walls of the box are permeable.
+- [00:42:30,190 - 00:42:32,130] Particles can come in and go out.
+- [00:42:33,550 - 00:42:36,070] So they can cross the boundaries of the box.
+- [00:42:38,510 - 00:42:39,730] So this could just be,
+- [00:42:39,730 - 00:42:40,450] you know this could be,
+- [00:42:40,490 - 00:42:43,310] this could be a bunch of molecules,
+- [00:42:44,650 - 00:42:46,450] you dig a hole in the ground.
+- [00:42:50,670 - 00:42:52,610] And the ground,
+- [00:42:52,610 - 00:42:55,950] and now you just deposit some particles.
+- [00:42:56,450 - 00:42:58,170] If the particles are in the hole,
+- [00:42:58,250 - 00:42:59,610] they have less potential energy
+- [00:42:59,610 - 00:43:00,810] than if they're out of the hole.
+- [00:43:01,630 - 00:43:03,970] Where do you think the density of particles
+- [00:43:03,970 - 00:43:05,210] is likely to be larger?
+- [00:43:05,490 - 00:43:07,010] In the hole or out of the hole?
+- [00:43:10,530 - 00:43:12,450] We're thinking thermal equilibrium now.
+- [00:43:12,570 - 00:43:14,130] We're thinking thermal equilibrium.
+- [00:43:16,030 - 00:43:16,730] We're thinking thermal equilibrium.
+- [00:43:16,730 - 00:43:17,030] We're thinking thermal equilibrium.
+- [00:43:17,110 - 00:43:17,230] We're thinking thermal equilibrium.
+- [00:43:17,250 - 00:43:17,750] That's right.
+- [00:43:19,426 - 00:43:19,746] Anyhow
+- [00:43:22,306 - 00:43:24,306] The energy is less in the home,
+- [00:43:24,306 - 00:43:28,926] and so it's natural that the
+- [00:43:28,926 - 00:43:33,546] Boltzmann distribution always favors lower energy.
+- [00:43:34,626 - 00:43:36,526] Always favors lower energy.
+- [00:43:36,866 - 00:43:37,126] Remember,
+- [00:43:37,126 - 00:43:39,016] the Boltzmann distribution is e to
+- [00:43:39,016 - 00:43:40,906] the minus beta times the energy,
+- [00:43:40,906 - 00:43:43,926] so it's always a function which decreases energy.
+- [00:43:44,286 - 00:43:46,926] It always prefers lower energy.
+- [00:43:47,945 - 00:43:52,315] So the answer will be that this system will adjust itself so
+- [00:43:52,315 - 00:43:56,686] that the density in here is in a certain kind of equilibrium.
+- [00:43:57,346 - 00:44:03,386] And the equilibrium will depend on the energy
+- [00:44:03,386 - 00:44:09,426] cost of taking the particle outside the box.
+- [00:44:10,566 - 00:44:11,796] Now we can set this
+- [00:44:11,796 - 00:44:13,026] up in a very definite way.
+- [00:44:13,106 - 00:44:15,766] We can say we can do ordinary statistical mechanics.
+- [00:44:16,306 - 00:44:16,906] We can say we can do ordinary statistical mechanics.
+- [00:44:16,926 - 00:44:19,746] And we can just say there's
+- [00:44:19,746 - 00:44:22,566] a potential energy which depends on position,
+- [00:44:22,566 - 00:44:25,966] but it depends on position in a very special way.
+- [00:44:26,266 - 00:44:30,066] It's flat completely over the box of interest,
+- [00:44:30,066 - 00:44:36,086] and maybe jumps when you go outside the box.
+- [00:44:36,286 - 00:44:38,566] But we can focus on inside the box,
+- [00:44:38,566 - 00:44:41,546] and we can ask what
+- [00:44:41,546 - 00:44:44,526] is the density of the fluid
+- [00:44:44,526 - 00:44:45,716] as a function of the energy cost
+- [00:44:45,716 - 00:44:46,906] of taking the particle outside the box.
+- [00:44:46,926 - 00:44:48,766] And that's kind of the depth of this potential.
+- [00:44:49,046 - 00:44:49,686] Question.
+- [00:44:49,906 - 00:44:50,346] Yeah?
+- [00:44:51,146 - 00:44:52,706] Is the depth mu?
+- [00:44:53,546 - 00:44:54,746] The depth is mu.
+- [00:44:55,466 - 00:44:56,506] Chemical potential.
+- [00:44:57,886 - 00:45:01,186] It's called the chemical potential because…
+- [00:45:01,886 - 00:45:02,906] In general,
+- [00:45:02,906 - 00:45:05,406] it can be different for different chemical molecules.
+- [00:45:06,806 - 00:45:10,506] So you could imagine a situation where one
+- [00:45:10,506 - 00:45:14,206] kind of molecule prefers to be in the box
+- [00:45:14,206 - 00:45:15,516] and the other kind of molecule
+- [00:45:15,516 - 00:45:16,826] doesn't prefer to be in the box.
+- [00:45:17,046 - 00:45:20,446] And then turning on chemical potentials
+- [00:45:20,446 - 00:45:27,306] can change chemical compositions in various ways.
+- [00:45:27,626 - 00:45:29,646] But we're not interested in the chemistry here.
+- [00:45:29,806 - 00:45:31,406] We're interested just in this idea
+- [00:45:32,246 - 00:45:35,266] that you can tune the
+- [00:45:35,266 - 00:45:38,286] density by changing the chemical potential.
+- [00:45:38,906 - 00:45:40,886] By changing the chemical potential,
+- [00:45:41,026 - 00:45:42,426] you can change the density.
+- [00:45:42,426 - 00:45:44,046] And all the chemical potential is
+- [00:45:44,046 - 00:45:45,726] is a term in the energy
+- [00:45:46,466 - 00:45:50,306] which depends on the number of particles in the box.
+- [00:45:52,766 - 00:45:54,526] Mu for each particle.
+- [00:45:55,366 - 00:45:57,586] If there are n particles in the box,
+- [00:45:57,586 - 00:45:59,626] then n mu.
+- [00:45:59,766 - 00:46:02,166] If there are n minus 1 particles in the box,
+- [00:46:02,166 - 00:46:03,406] n minus 1 mu.
+- [00:46:04,326 - 00:46:05,526] Now in this problem,
+- [00:46:05,526 - 00:46:08,206] the number of particles is a variable.
+- [00:46:08,526 - 00:46:11,766] It's a variable because particles can come into the box
+- [00:46:11,766 - 00:46:12,406] and out of the box.
+- [00:46:12,426 - 00:46:15,566] That means a configuration
+- [00:46:16,545 - 00:46:19,555] involves not only the positions
+- [00:46:19,555 - 00:46:22,566] and momentum of every particle,
+- [00:46:22,746 - 00:46:24,126] but also the number of particles.
+- [00:46:24,846 - 00:46:27,286] Now the number of particles is free to change
+- [00:46:27,286 - 00:46:28,586] because they can come into the
+- [00:46:28,586 - 00:46:29,886] system and out of the system.
+- [00:46:30,166 - 00:46:33,966] And part of determining thermal equilibrium
+- [00:46:33,966 - 00:46:36,246] is determining how many particles on
+- [00:46:36,246 - 00:46:38,526] the average are inside the box.
+- [00:46:40,206 - 00:46:42,406] So I'm not going to go through this in detail.
+- [00:46:42,426 - 00:46:43,926] But I'm going to tell you what to do.
+- [00:46:44,966 - 00:46:48,666] You write the usual formula for the partition plus.
+- [00:46:48,786 - 00:46:53,866] E to the minus beta times the energy.
+- [00:46:56,146 - 00:46:58,666] You sum over all the configurations.
+- [00:46:58,706 - 00:47:00,556] That means the momentum and the
+- [00:47:00,556 - 00:47:02,406] position of all of the particles.
+- [00:47:03,126 - 00:47:05,226] But you add another term here.
+- [00:47:06,946 - 00:47:09,306] Plus the number of particles
+- [00:47:10,446 - 00:47:13,746] times the chemical potential times beta.
+- [00:47:14,326 - 00:47:15,506] Why is that there?
+- [00:47:15,906 - 00:47:16,466] Well,
+- [00:47:16,466 - 00:47:18,366] this is just the potential energy
+- [00:47:18,366 - 00:47:20,266] of the particles inside the box.
+- [00:47:20,866 - 00:47:22,186] If there are n of them,
+- [00:47:22,186 - 00:47:25,886] this is the energy stored inside,
+- [00:47:26,066 - 00:47:28,886] just in the particles of being there.
+- [00:47:30,086 - 00:47:33,226] And you also sum over the number of particles.
+- [00:47:34,766 - 00:47:35,986] We're not going to do that.
+- [00:47:36,046 - 00:47:36,646] We don't have time.
+- [00:47:38,046 - 00:47:38,666] But I'm just going to
+- [00:47:38,666 - 00:47:39,286] show you how to do it.
+- [00:47:39,286 - 00:47:41,116] And I'm going to indicate to you
+- [00:47:41,116 - 00:47:42,946] what the meaning of the chemical potential is.
+- [00:47:43,145 - 00:47:45,685] It's the thing that you adjust if you
+- [00:47:45,685 - 00:47:48,226] want to adjust the density of the fluid.
+- [00:47:50,646 - 00:47:52,006] You could do another thing.
+- [00:47:52,246 - 00:47:54,296] You can seal the box and
+- [00:47:54,296 - 00:47:56,346] not let particles go in and out.
+- [00:47:56,386 - 00:47:57,656] And then just put in the
+- [00:47:57,656 - 00:47:58,926] number of particles that you want.
+- [00:48:00,206 - 00:48:03,006] But you may be interested in the problem of particles
+- [00:48:03,006 - 00:48:04,236] that can come into the
+- [00:48:04,236 - 00:48:05,466] box and out of the box.
+- [00:48:05,646 - 00:48:07,666] And then you change the density
+- [00:48:07,666 - 00:48:09,406] by changing the chemical potential.
+- [00:48:10,486 - 00:48:12,326] By changing the chemical potential,
+- [00:48:12,486 - 00:48:13,806] you can change the average
+- [00:48:13,806 - 00:48:15,126] number of particles in the box.
+- [00:48:18,606 - 00:48:19,166] What,
+- [00:48:19,166 - 00:48:20,346] in this language,
+- [00:48:21,126 - 00:48:23,386] what is a liquid gas transition?
+- [00:48:23,886 - 00:48:24,966] And I will tell you.
+- [00:48:25,066 - 00:48:27,726] What happens in a liquid gas transition is
+- [00:48:27,726 - 00:48:28,466] you take your box,
+- [00:48:28,586 - 00:48:30,686] you keep it at a fixed temperature,
+- [00:48:31,526 - 00:48:33,766] and you start varying the chemical potential.
+- [00:48:35,546 - 00:48:37,646] The more you vary the chemical potential,
+- [00:48:37,666 - 00:48:40,586] the more it wants to pull back,
+- [00:48:40,766 - 00:48:41,886] depending on the science,
+- [00:48:41,886 - 00:48:42,306] of course,
+- [00:48:43,466 - 00:48:44,966] lowering its energy here,
+- [00:48:45,046 - 00:48:47,546] the more it wants to suck particles into the box.
+- [00:48:48,686 - 00:48:50,986] And so there's a density,
+- [00:48:51,026 - 00:48:53,846] which is a natural function of the chemical potential.
+- [00:48:54,906 - 00:48:56,766] And what is it that happens in a transition?
+- [00:48:57,406 - 00:48:59,086] What happens in a transition is
+- [00:48:59,086 - 00:49:00,746] as you vary the chemical potential,
+- [00:49:00,826 - 00:49:02,006] all of a sudden,
+- [00:49:02,026 - 00:49:03,166] you hit a point
+- [00:49:04,686 - 00:49:07,646] where the density of the fluid suddenly drops.
+- [00:49:07,646 - 00:49:08,106] It suddenly changes.
+- [00:49:09,066 - 00:49:12,026] It changes from being a gas to being a liquid.
+- [00:49:12,986 - 00:49:15,546] So if you were to fill up this,
+- [00:49:17,086 - 00:49:17,946] a box,
+- [00:49:17,946 - 00:49:18,326] of course,
+- [00:49:18,326 - 00:49:18,646] here,
+- [00:49:18,706 - 00:49:21,806] might mean a region of three-dimensional space.
+- [00:49:22,406 - 00:49:23,906] I'd imagine it was a,
+- [00:49:24,046 - 00:49:26,146] when I imagine a hole in the ground,
+- [00:49:26,246 - 00:49:27,746] it was in two-dimensional space.
+- [00:49:28,386 - 00:49:29,106] But imagine,
+- [00:49:29,106 - 00:49:29,506] you know,
+- [00:49:29,566 - 00:49:30,886] a box,
+- [00:49:30,886 - 00:49:32,366] a real box of three dimensions.
+- [00:49:33,086 - 00:49:34,026] Particles go in,
+- [00:49:34,206 - 00:49:36,486] you get some extra energy out of it,
+- [00:49:36,486 - 00:49:37,866] because there's a chemical potential.
+- [00:49:37,886 - 00:49:39,566] Particles go out and cost energy.
+- [00:49:40,666 - 00:49:42,926] The extra energy that you save
+- [00:49:42,926 - 00:49:44,606] by bringing particles into the box
+- [00:49:44,606 - 00:49:47,966] will tend to increase the density inside the box.
+- [00:49:48,286 - 00:49:51,046] You keep lowering the energy inside the box,
+- [00:49:51,086 - 00:49:52,826] it keeps wanting to suck particles in,
+- [00:49:52,946 - 00:49:54,706] and then all of a sudden,
+- [00:49:54,786 - 00:49:57,406] even though the atmosphere around the box
+- [00:49:57,406 - 00:49:59,386] might be at a temperature,
+- [00:49:59,966 - 00:50:01,246] and whatever else,
+- [00:50:01,406 - 00:50:02,726] temperature and density
+- [00:50:03,275 - 00:50:05,466] that corresponds to vapor,
+- [00:50:06,546 - 00:50:08,986] all of a sudden you hit a transition point
+- [00:50:08,986 - 00:50:10,766] where it becomes liquid.
+- [00:50:11,686 - 00:50:13,946] The difference between liquid and vapor
+- [00:50:14,206 - 00:50:18,266] is a sudden discontinuity in the density,
+- [00:50:19,566 - 00:50:21,806] liquid being denser than vapor.
+- [00:50:22,386 - 00:50:24,986] So if you could do this experiment with a box
+- [00:50:24,986 - 00:50:26,526] and vary the potential energy
+- [00:50:26,526 - 00:50:28,066] of a particle inside the box,
+- [00:50:28,266 - 00:50:29,466] lower the potential energy,
+- [00:50:30,365 - 00:50:33,066] outside conditions are such that you have steam,
+- [00:50:33,286 - 00:50:33,806] or vapor,
+- [00:50:33,806 - 00:50:34,566] water vapor,
+- [00:50:35,006 - 00:50:36,386] and you lower the energy,
+- [00:50:37,046 - 00:50:39,346] particles will congregate inside the box
+- [00:50:39,346 - 00:50:40,346] as you lower their energy,
+- [00:50:40,446 - 00:50:42,046] and then all of a sudden at some point
+- [00:50:42,046 - 00:50:43,766] it will jump to the fluid phase,
+- [00:50:43,866 - 00:50:44,606] to the liquid phase.
+- [00:50:48,226 - 00:50:50,626] That transition is very much like this transition,
+- [00:50:50,826 - 00:50:51,726] I'm going to spell it out,
+- [00:50:51,866 - 00:50:53,966] I'm going to spell out exactly what the relationship is.
+- [00:51:04,566 - 00:51:05,106] Well,
+- [00:51:05,106 - 00:51:05,666] first of all,
+- [00:51:05,666 - 00:51:07,186] what are the conditions that you need
+- [00:51:07,186 - 00:51:10,566] to have a liquid-gas phase transition?
+- [00:51:12,826 - 00:51:14,026] You need two things.
+- [00:51:14,446 - 00:51:19,166] You need to have a hard core repulsion between molecules.
+- [00:51:21,025 - 00:51:21,626] Well,
+- [00:51:21,626 - 00:51:24,226] molecules always have hard core repulsions.
+- [00:51:24,266 - 00:51:28,106] You cannot stick two molecules onto the same cycle,
+- [00:51:28,246 - 00:51:28,846] they repel,
+- [00:51:29,866 - 00:51:31,186] for a number of reasons.
+- [00:51:31,826 - 00:51:32,426] So,
+- [00:51:32,426 - 00:51:35,186] it's natural to have hard,
+- [00:51:35,246 - 00:51:37,766] that molecules behave like little billiard balls.
+- [00:51:38,266 - 00:51:39,546] Little billiard balls,
+- [00:51:39,686 - 00:51:41,186] they don't want to interpenetrate,
+- [00:51:41,406 - 00:51:43,116] so roughly speaking you can't put
+- [00:51:43,116 - 00:51:44,826] two of them on the same cycle.
+- [00:51:46,626 - 00:51:48,206] The next thing that's important is
+- [00:51:48,206 - 00:51:49,786] that there be a little bit of,
+- [00:51:49,906 - 00:51:52,306] and that's a form of really hard core repulsion.
+- [00:51:53,306 - 00:51:55,746] Just like two billiard balls really repel
+- [00:51:55,746 - 00:51:56,906] when you try to push them together.
+- [00:51:58,026 - 00:51:59,365] You need something else though.
+- [00:51:59,506 - 00:52:01,146] You need a little bit of attraction
+- [00:52:01,146 - 00:52:02,406] when they're not quite together.
+- [00:52:04,006 - 00:52:05,426] You need a little bit of
+- [00:52:05,426 - 00:52:06,846] attraction when they're not quite touching.
+- [00:52:06,986 - 00:52:07,036] You need a little bit of
+- [00:52:07,036 - 00:52:07,086] attraction when they're not quite touching.
+- [00:52:07,086 - 00:52:08,946] So you need a potential energy
+- [00:52:08,946 - 00:52:10,806] which is big and repulsive and positive
+- [00:52:10,806 - 00:52:13,986] when they're trying to get into each other,
+- [00:52:14,066 - 00:52:16,546] and then when you separate them out a little bit,
+- [00:52:17,106 - 00:52:18,236] all of a sudden they
+- [00:52:18,236 - 00:52:19,366] want to attract a little bit.
+- [00:52:19,626 - 00:52:21,296] That's an extremely common
+- [00:52:21,296 - 00:52:22,966] feature of molecular interactions.
+- [00:52:23,646 - 00:52:28,986] Hard core repulsions and very short range attractions.
+- [00:52:29,666 - 00:52:31,566] And that's what you need in order to have
+- [00:52:31,566 - 00:52:33,886] the standard liquid gas transition.
+- [00:52:35,006 - 00:52:35,606] Alright,
+- [00:52:35,606 - 00:52:37,406] so I'm going to show you how the magnet
+- [00:52:38,686 - 00:52:40,686] produces exactly that situation.
+- [00:52:50,246 - 00:52:52,676] Let's start with the magnet with
+- [00:52:52,676 - 00:52:55,106] all of its little elementary magnets down.
+- [00:52:56,726 - 00:52:57,986] When they're all down,
+- [00:52:57,986 - 00:52:59,186] that's the ground state,
+- [00:52:59,186 - 00:53:01,306] and let's call that empty space.
+- [00:53:03,206 - 00:53:04,966] When all the magnets are down,
+- [00:53:05,846 - 00:53:06,886] in fact what we're going
+- [00:53:06,886 - 00:53:07,926] to say is something like this.
+- [00:53:07,986 - 00:53:10,146] We're going to say on each side of the lattice,
+- [00:53:10,406 - 00:53:11,826] each side of the lattice,
+- [00:53:12,285 - 00:53:14,706] you can have a particle or not have a particle.
+- [00:53:14,986 - 00:53:15,686] This is our game.
+- [00:53:15,786 - 00:53:17,906] We're going to make out of the liquid gas problem,
+- [00:53:18,166 - 00:53:20,106] we're going to make a lattice version of it.
+- [00:53:20,746 - 00:53:21,406] The particles,
+- [00:53:21,406 - 00:53:22,206] the molecules,
+- [00:53:22,206 - 00:53:23,886] live on a lattice.
+- [00:53:33,226 - 00:53:36,266] You can have no particles at a site.
+- [00:53:36,786 - 00:53:38,506] Let's call that down.
+- [00:53:39,566 - 00:53:42,166] Let's call that sigma equals down.
+- [00:53:42,586 - 00:53:47,486] Sigma equals minus one means no particle on that site.
+- [00:53:51,766 - 00:53:53,606] What about sigma equals plus one?
+- [00:53:57,286 - 00:53:59,166] We're going to take that to the next slide.
+- [00:53:59,186 - 00:54:00,026] Model.
+- [00:54:01,306 - 00:54:02,906] Yes particle on site.
+- [00:54:08,786 - 00:54:10,526] What about two particles on site?
+- [00:54:13,506 - 00:54:14,066] Well,
+- [00:54:14,066 - 00:54:15,946] the magnet doesn't allow that.
+- [00:54:17,186 - 00:54:18,566] Sigma can't be two.
+- [00:54:19,326 - 00:54:21,746] It can only be minus one or one.
+- [00:54:21,826 - 00:54:22,646] It can't be four.
+- [00:54:22,746 - 00:54:23,806] It can't be anything else.
+- [00:54:24,126 - 00:54:26,166] So immediately from the start,
+- [00:54:26,266 - 00:54:28,266] it forbids the possibility of
+- [00:54:28,266 - 00:54:29,966] two particles on a site.
+- [00:54:30,306 - 00:54:31,186] But then again,
+- [00:54:31,186 - 00:54:32,846] that's exactly what we're trying to do.
+- [00:54:32,906 - 00:54:34,366] We're trying to model a gas
+- [00:54:34,366 - 00:54:37,126] where you can't put two particles on the same site
+- [00:54:37,126 - 00:54:38,226] because they have a hard core.
+- [00:54:38,846 - 00:54:43,786] So it's built in to this system of particles.
+- [00:54:44,766 - 00:54:47,586] If they're really described by the same kind of variable,
+- [00:54:47,806 - 00:54:49,366] sigma equals plus one and minus one,
+- [00:54:49,506 - 00:54:51,066] it's automatically built in
+- [00:54:51,946 - 00:54:56,046] that they have an infinite hard core repulsive barrier
+- [00:54:56,046 - 00:54:58,246] when they try to get out to the same site.
+- [00:54:58,266 - 00:55:01,426] So we satisfied condition number one.
+- [00:55:02,386 - 00:55:04,186] What about condition number two?
+- [00:55:04,546 - 00:55:05,626] Do they attract?
+- [00:55:06,246 - 00:55:09,026] Now here we're going to use for the energy
+- [00:55:09,026 - 00:55:12,526] exactly the Ising model energy
+- [00:55:12,526 - 00:55:14,526] plus a little magnetic field.
+- [00:55:14,946 - 00:55:17,166] And I'm going to show you what that does
+- [00:55:17,166 - 00:55:20,106] in the language of these fake particles.
+- [00:55:20,566 - 00:55:21,166] Well,
+- [00:55:21,166 - 00:55:22,126] I'm not sure which are fake.
+- [00:55:22,226 - 00:55:24,226] Are the particles fake or is the magnet flat fake?
+- [00:55:24,526 - 00:55:27,406] The point is it's the same mathematical system.
+- [00:55:27,406 - 00:55:31,026] The particles or the magnet.
+- [00:55:35,126 - 00:55:37,166] Let's start with this term here.
+- [00:55:38,086 - 00:55:45,666] Minus J times sigma I times sigma J
+- [00:55:45,666 - 00:55:48,486] where these are neighboring sites on the lattice.
+- [00:55:49,226 - 00:55:51,606] Sung over all the links.
+- [00:55:54,766 - 00:55:57,326] How much energy is there
+- [00:55:57,326 - 00:55:59,726] if there are no particles whatever?
+- [00:56:03,106 - 00:56:03,846] Well,
+- [00:56:03,846 - 00:56:06,506] that's the situation where all sigmas are down.
+- [00:56:07,746 - 00:56:09,826] When all sigmas are down,
+- [00:56:13,686 - 00:56:18,106] then there is an energy minus J for each link.
+- [00:56:19,386 - 00:56:21,466] So there's total ground state energy
+- [00:56:21,466 - 00:56:26,786] which is minus J times the number of links.
+- [00:56:27,906 - 00:56:29,126] What do we do with that?
+- [00:56:29,426 - 00:56:30,946] Don't do anything with it.
+- [00:56:30,966 - 00:56:32,526] That's just the energy of the system
+- [00:56:32,526 - 00:56:33,986] when there's no particles at all.
+- [00:56:34,846 - 00:56:36,166] Does it matter for anything?
+- [00:56:36,446 - 00:56:36,766] No,
+- [00:56:36,766 - 00:56:37,206] it doesn't.
+- [00:56:37,386 - 00:56:38,666] It's always there.
+- [00:56:38,806 - 00:56:40,046] It's the ground state energy.
+- [00:56:40,226 - 00:56:41,386] We can throw it away.
+- [00:56:41,766 - 00:56:44,466] And we can throw it away just by subtracting
+- [00:56:44,466 - 00:56:46,886] minus the number of links
+- [00:56:46,886 - 00:56:47,186] and the number of links.
+- [00:56:48,886 - 00:56:50,206] I think it's times 2 J.
+- [00:56:52,306 - 00:56:53,686] Now that I've thrown it away,
+- [00:56:53,786 - 00:56:55,866] let's really throw it away and ignore it
+- [00:56:56,385 - 00:56:58,146] because it plays no role in anything.
+- [00:56:59,466 - 00:57:00,366] It's just a number.
+- [00:57:01,826 - 00:57:04,166] And energy differences are the important things.
+- [00:57:05,106 - 00:57:05,546] Alright,
+- [00:57:05,546 - 00:57:06,906] so we have this term in the energy.
+- [00:57:07,985 - 00:57:08,866] No particles.
+- [00:57:09,666 - 00:57:11,226] That gives us a certain energy.
+- [00:57:11,366 - 00:57:12,506] Let's call it zero.
+- [00:57:13,306 - 00:57:14,766] Let's make the zero of energy
+- [00:57:14,766 - 00:57:15,826] when there are no particles.
+- [00:57:16,886 - 00:57:18,786] Now what happens if I put in one particle?
+- [00:57:19,686 - 00:57:23,046] That means flip one of the spins over.
+- [00:57:24,026 - 00:57:26,306] It means all the spins went down.
+- [00:57:26,446 - 00:57:27,566] Every one of them goes down.
+- [00:57:28,514 - 00:57:28,634] はい
+- [00:57:29,698 - 00:57:30,978] We take one and we flip it up.
+- [00:57:31,637 - 00:57:33,198] That's mathematically equivalent
+- [00:57:33,198 - 00:57:35,118] to putting one particle in some place.
+- [00:57:35,258 - 00:57:36,398] How much energy do we get?
+- [00:57:37,318 - 00:57:38,078] Let's calculate.
+- [00:57:39,798 - 00:57:40,998] The energy that we get,
+- [00:57:40,998 - 00:57:42,538] how many bonds have we broken?
+- [00:57:44,898 - 00:57:46,178] Depends on the dimensionality.
+- [00:57:48,198 - 00:57:49,298] Let's do two dimensions,
+- [00:57:49,298 - 00:57:50,618] because it's easy to visualize.
+- [00:57:53,457 - 00:57:55,078] We flip this spin over,
+- [00:57:55,078 - 00:57:57,898] then we break four bonds.
+- [00:57:59,698 - 00:58:02,948] We get a total amount
+- [00:58:02,948 - 00:58:06,198] of energy equal to two j
+- [00:58:06,198 - 00:58:07,078] for each bond,
+- [00:58:07,078 - 00:58:08,078] eight j I believe.
+- [00:58:08,658 - 00:58:09,478] Eight j,
+- [00:58:09,478 - 00:58:09,858] eight?
+- [00:58:10,118 - 00:58:10,678] Yes,
+- [00:58:10,678 - 00:58:11,278] eight j.
+- [00:58:13,377 - 00:58:20,738] One particle has energy eight j.
+- [00:58:25,438 - 00:58:26,338] Later on,
+- [00:58:26,338 - 00:58:27,438] we're going to put in a little bit
+- [00:58:27,438 - 00:58:28,338] of magnetic field.
+- [00:58:29,698 - 00:58:30,918] When we put in a magnetic field,
+- [00:58:31,138 - 00:58:34,657] that's going to add another twice h,
+- [00:58:34,717 - 00:58:35,658] but we'll do that later.
+- [00:58:37,138 - 00:58:40,018] So one particle has eight j.
+- [00:58:40,638 - 00:58:42,898] That's how much energy it costs
+- [00:58:42,898 - 00:58:45,278] to create a particle at that point.
+- [00:58:47,598 - 00:58:50,838] What about two particles if one particle is over here
+- [00:58:52,097 - 00:58:54,258] and one particle is over here?
+- [00:58:58,618 - 00:58:59,598] 16 j.
+- [00:58:59,618 - 00:58:59,678] 16 j.
+- [00:58:59,698 - 00:59:00,658] 16 j.
+- [00:59:03,278 - 00:59:04,218] Two particles,
+- [00:59:04,218 - 00:59:08,658] 16 j.
+- [00:59:11,118 - 00:59:11,618] But,
+- [00:59:11,618 - 00:59:12,118] incidentally,
+- [00:59:12,118 - 00:59:12,998] the same is true
+- [00:59:13,758 - 00:59:15,698] if the two particles are over here.
+- [00:59:18,038 - 00:59:19,398] Let's just check that.
+- [00:59:19,518 - 00:59:21,218] Let's see how many bonds we have to break
+- [00:59:21,218 - 00:59:22,818] if they're on the corners of the bag.
+- [00:59:24,038 - 00:59:24,538] One,
+- [00:59:24,538 - 00:59:25,238] two,
+- [00:59:25,238 - 00:59:25,838] three,
+- [00:59:25,838 - 00:59:26,418] four,
+- [00:59:26,418 - 00:59:27,858] five,
+- [00:59:27,858 - 00:59:28,398] six,
+- [00:59:28,398 - 00:59:29,018] seven,
+- [00:59:29,018 - 00:59:29,378] eight.
+- [00:59:30,258 - 00:59:30,778] Yes.
+- [00:59:30,918 - 00:59:32,718] So even if they're on diagonals,
+- [00:59:34,138 - 00:59:36,818] you still pay a price of 16 j.
+- [00:59:37,078 - 00:59:38,378] But what if they're neighbors?
+- [00:59:38,518 - 00:59:39,737] What if they're even closer?
+- [00:59:40,998 - 00:59:43,118] What if they're even closer like that?
+- [00:59:43,278 - 00:59:44,598] Then how many bonds do you break?
+- [00:59:46,857 - 00:59:47,898] One less.
+- [00:59:48,198 - 00:59:48,958] Two less.
+- [00:59:50,598 - 00:59:52,018] This bond is not broken.
+- [00:59:53,358 - 00:59:53,878] Same.
+- [00:59:54,278 - 00:59:54,778] Why not?
+- [00:59:56,257 - 00:59:57,678] Because they're both plus.
+- [00:59:58,338 - 00:59:58,858] Right.
+- [00:59:58,898 - 00:59:59,218] Right.
+- [00:59:59,698 - 01:00:00,778] That bond is not broken.
+- [01:00:01,228 - 01:00:03,238] So we've broken six bonds.
+- [01:00:04,328 - 01:00:06,378] So two particles close together.
+- [01:00:12,508 - 01:00:14,118] Two close particles.
+- [01:00:14,258 - 01:00:18,238] And close now means within one bond length away.
+- [01:00:18,998 - 01:00:20,158] What do they have?
+- [01:00:20,238 - 01:00:21,638] They have 12 j.
+- [01:00:24,708 - 01:00:27,018] So let me suppose I plotted the energy
+- [01:00:27,018 - 01:00:28,598] as a function of difference.
+- [01:00:30,478 - 01:00:31,558] I would find,
+- [01:00:31,558 - 01:00:32,878] yes,
+- [01:00:32,878 - 01:00:36,438] just the mere act of putting particles in
+- [01:00:37,217 - 01:00:38,758] cost me 16 j.
+- [01:00:39,878 - 01:00:40,898] But that's all right.
+- [01:00:40,938 - 01:00:43,178] That energy is always there no matter where
+- [01:00:43,178 - 01:00:44,438] I move the particles around.
+- [01:00:45,218 - 01:00:47,978] But if I move them within a bond length,
+- [01:00:48,258 - 01:00:49,758] the energy decreases.
+- [01:00:51,278 - 01:00:52,698] The energy decreases.
+- [01:00:52,818 - 01:00:55,398] That's like a potential energy which decreases
+- [01:00:55,398 - 01:00:56,938] when they get very close together.
+- [01:00:58,718 - 01:00:59,678] So there's a point.
+- [01:00:59,678 - 01:01:00,458] There's a potential energy,
+- [01:01:00,458 - 01:01:01,778] an energy which depends
+- [01:01:01,778 - 01:01:03,638] on the position of the particles.
+- [01:01:04,798 - 01:01:07,598] And when the particles get within one bond length
+- [01:01:07,598 - 01:01:08,138] of each other,
+- [01:01:08,138 - 01:01:11,238] the energy decreases by two j.
+- [01:01:11,518 - 01:01:12,658] Two j or four j?
+- [01:01:12,858 - 01:01:13,258] Four.
+- [01:01:13,618 - 01:01:14,318] Four j.
+- [01:01:14,458 - 01:01:16,578] Or the energy decreases by four j.
+- [01:01:17,198 - 01:01:20,798] So that's like having a short range attractive energy
+- [01:01:21,918 - 01:01:23,598] where when the particles are close together,
+- [01:01:23,838 - 01:01:27,698] the energy is negative relative to what it would be
+- [01:01:27,698 - 01:01:28,438] in their far apart.
+- [01:01:30,657 - 01:01:34,338] Negative relative to what they would be
+- [01:01:34,338 - 01:01:34,958] when they're far apart.
+- [01:01:35,498 - 01:01:36,698] So the particles attract.
+- [01:01:37,738 - 01:01:39,118] They like to be close together.
+- [01:01:40,138 - 01:01:41,178] How close together?
+- [01:01:41,398 - 01:01:42,578] One bond length away.
+- [01:01:42,938 - 01:01:44,938] But it's not an overwhelming attraction.
+- [01:01:45,598 - 01:01:49,138] It doesn't say the energy is infinitely negative
+- [01:01:49,138 - 01:01:51,298] if you put them next to each other.
+- [01:01:51,498 - 01:01:53,558] It's just a modest amount of attraction.
+- [01:01:55,418 - 01:01:58,638] A modest saving of energy of putting them close together.
+- [01:01:58,638 - 01:02:01,848] and it's very much like the molecular attraction of
+- [01:02:01,848 - 01:02:05,058] a pair of molecules when they get close together.
+- [01:02:06,178 - 01:02:06,898] Okay,
+- [01:02:06,898 - 01:02:07,458] so we
+- [01:02:08,398 - 01:02:09,838] have a system now
+- [01:02:10,877 - 01:02:13,798] which is mathematically isomorphic
+- [01:02:14,458 - 01:02:16,758] to a system of particles on a lattice
+- [01:02:17,638 - 01:02:18,838] which have
+- [01:02:18,838 - 01:02:22,018] an attractive force between them where
+- [01:02:22,018 - 01:02:25,198] you can have any number of particles.
+- [01:02:26,078 - 01:02:28,998] The particle number is something that can change.
+- [01:02:30,338 - 01:02:33,368] So it's like the system of molecules where
+- [01:02:33,368 - 01:02:36,398] molecules can come into and out of the system.
+- [01:02:36,858 - 01:02:39,038] Doesn't have a definite number of molecules.
+- [01:02:40,158 - 01:02:42,518] The number of molecules itself is a variable.
+- [01:02:44,018 - 01:02:45,198] Short range potential,
+- [01:02:45,198 - 01:02:47,158] short range attraction,
+- [01:02:47,958 - 01:02:49,038] excuse me,
+- [01:02:49,918 - 01:02:52,618] very short range infinite repulsion.
+- [01:02:52,618 - 01:02:55,118] You cannot put two of them on the same side.
+- [01:02:55,628 - 01:02:55,938] But
+- [01:02:55,938 - 01:02:58,558] when they get a little bit apart,
+- [01:02:58,558 - 01:03:00,078] they're slightly attractive.
+- [01:03:00,558 - 01:03:03,678] Exactly what you need for a liquid gas phase transition.
+- [01:03:03,678 - 01:03:04,078] Now,
+- [01:03:04,078 - 01:03:05,398] let's add something else.
+- [01:03:08,118 - 01:03:11,458] Does this system have a chemical potential incidentally?
+- [01:03:11,458 - 01:03:14,058] A chemical potential
+- [01:03:16,578 - 01:03:20,718] is the energy stored in just having one particle.
+- [01:03:22,098 - 01:03:23,158] That's what it is.
+- [01:03:23,158 - 01:03:25,078] The chemical potential is just the energy
+- [01:03:25,198 - 01:03:26,958] in having a particle present.
+- [01:03:28,298 - 01:03:31,438] Just by virtue of having the particle,
+- [01:03:32,358 - 01:03:34,208] if there's an energy which wouldn't
+- [01:03:34,208 - 01:03:36,058] be there if the particle weren't there,
+- [01:03:36,058 - 01:03:38,358] that is called the chemical potential.
+- [01:03:39,598 - 01:03:40,118] Well,
+- [01:03:40,118 - 01:03:40,418] yes,
+- [01:03:41,038 - 01:03:43,978] just having the particle with no other particles around
+- [01:03:44,738 - 01:03:46,418] gives you an energy 8 Gen.
+- [01:03:46,418 - 01:03:47,598] So yes,
+- [01:03:47,598 - 01:03:48,538] give me some chemical potential.
+- [01:03:49,218 - 01:03:50,598] But I want to be
+- [01:03:50,598 - 01:03:51,978] able to vary that chemical potential.
+- [01:03:53,178 - 01:03:55,058] I would like to be able to vary that.
+- [01:03:55,058 - 01:03:56,818] And without varying J incidentally.
+- [01:03:56,818 - 01:03:57,898] I'd like to hold J fixed.
+- [01:04:02,978 - 01:04:05,438] I want to be able to
+- [01:04:05,438 - 01:04:07,898] vary the chemical potential separately from J.
+- [01:04:08,318 - 01:04:09,638] That's easy to do.
+- [01:04:09,638 - 01:04:11,578] Put a magnetic field in.
+- [01:04:16,238 - 01:04:18,498] Now this is sum over the sites.
+- [01:04:20,698 - 01:04:23,138] Sum over the sites of sigma I.
+- [01:04:25,598 - 01:04:27,938] How much does this give me
+- [01:04:27,938 - 01:04:30,278] when I add a particle to the,
+- [01:04:30,278 - 01:04:30,998] to the brew?
+- [01:04:33,538 - 01:04:36,078] Sigma starts down when there's no particle.
+- [01:04:36,818 - 01:04:38,278] When I put a particle in,
+- [01:04:38,278 - 01:04:39,458] sigma becomes plus.
+- [01:04:39,978 - 01:04:41,418] So it jumps two units.
+- [01:04:41,818 - 01:04:43,988] It gives me two units worth of
+- [01:04:43,988 - 01:04:46,158] energy for every spin which is flipped up.
+- [01:04:46,178 - 01:04:48,238] For every particle that you put in,
+- [01:04:48,238 - 01:04:50,378] it gives you twice H.
+- [01:04:51,338 - 01:04:53,038] So you can add,
+- [01:04:53,618 - 01:04:54,918] for each particle,
+- [01:04:55,058 - 01:04:56,358] for each isolated particle,
+- [01:04:56,558 - 01:04:58,158] for each isolated particle,
+- [01:04:58,378 - 01:05:01,058] you can add plus two H.
+- [01:05:06,438 - 01:05:08,078] So now we have everything we need.
+- [01:05:09,058 - 01:05:11,458] We have a system that is equivalent
+- [01:05:11,458 - 01:05:13,858] to a collection of particles on a lattice.
+- [01:05:15,938 - 01:05:18,478] It has a variable chemical potential which,
+- [01:05:18,478 - 01:05:19,638] notice how we vary it.
+- [01:05:19,678 - 01:05:21,958] We vary it by varying the magnetic field.
+- [01:05:23,638 - 01:05:26,058] Magnetic field gave us an energy per particle.
+- [01:05:26,818 - 01:05:30,678] And we have a short range of traction.
+- [01:05:31,078 - 01:05:32,878] The short range of traction,
+- [01:05:32,878 - 01:05:35,178] of course the hardcore,
+- [01:05:35,178 - 01:05:37,538] the hardcore billiard ball potential.
+- [01:05:37,878 - 01:05:39,758] But then a short range of traction,
+- [01:05:39,758 - 01:05:43,818] the coefficient of which is 2J.
+- [01:05:45,358 - 01:05:46,018] 4J.
+- [01:05:46,098 - 01:05:46,438] 4J.
+- [01:05:48,428 - 01:05:49,418] All right.
+- [01:05:49,458 - 01:05:50,578] So I can,
+- [01:05:50,578 - 01:05:51,938] I want to give you an example.
+- [01:05:51,938 - 01:05:54,078] I want to keep the molecular properties fixed.
+- [01:05:54,418 - 01:05:55,998] So I'm not going to play with J.
+- [01:05:56,158 - 01:05:58,658] That has to do with the molecular properties that design
+- [01:05:58,658 - 01:06:01,158] to tell you what the potential energy between them is.
+- [01:06:01,458 - 01:06:03,598] What I can vary is the chemical potential.
+- [01:06:04,078 - 01:06:05,758] And mathematically that seems to be
+- [01:06:05,758 - 01:06:07,438] the same thing as varying H.
+- [01:06:13,298 - 01:06:14,138] Varying H.
+- [01:06:15,158 - 01:06:15,858] Varying H.
+- [01:06:17,718 - 01:06:21,678] So this problem is exactly the same as the average.
+- [01:06:21,738 - 01:06:21,918] So this problem is exactly the same as the average.
+- [01:06:21,938 - 01:06:22,098] I've already said,
+- [01:06:22,098 - 01:06:22,818] I've already said.
+- [01:06:23,038 - 01:06:23,278] No,
+- [01:06:23,278 - 01:06:23,938] there it is.
+- [01:06:24,138 - 01:06:26,398] It is exactly this problem here.
+- [01:06:27,318 - 01:06:27,878] Precisely.
+- [01:06:28,838 - 01:06:30,538] There's a temperature that we can vary.
+- [01:06:31,938 - 01:06:33,218] Particles are at some temperature.
+- [01:06:33,758 - 01:06:36,418] There is a chemical potential we can vary.
+- [01:06:36,658 - 01:06:38,798] Now H is not exactly the chemical potential.
+- [01:06:39,278 - 01:06:41,598] There's an offset by an amount AJ.
+- [01:06:42,658 - 01:06:43,638] There's an offset by an amount AJ.
+- [01:06:43,638 - 01:06:45,058] What about the particle density?
+- [01:06:45,518 - 01:06:45,878] What about the particle density?
+- [01:06:45,878 - 01:06:47,018] Let's talk about the particle density.
+- [01:06:47,678 - 01:06:49,598] We haven't discussed the particle density.
+- [01:06:50,678 - 01:06:51,238] Okay.
+- [01:06:51,318 - 01:06:51,598] Okay.
+- [01:06:51,938 - 01:06:52,218] Okay.
+- [01:06:52,218 - 01:06:52,678] Okay.
+- [01:06:54,158 - 01:06:56,828] How many particles are there
+- [01:06:56,828 - 01:06:59,498] on the average at a point?
+- [01:06:59,938 - 01:07:00,618] How many particles are there
+- [01:07:00,618 - 01:07:01,298] on the average at a point?
+- [01:07:01,298 - 01:07:02,258] At a particular point?
+- [01:07:02,638 - 01:07:03,198] Well,
+- [01:07:03,198 - 01:07:05,378] I say the answer is somewhere,
+- [01:07:05,378 - 01:07:06,058] first of all,
+- [01:07:06,058 - 01:07:06,978] between 0 and 1.
+- [01:07:07,278 - 01:07:09,978] I say the number of particles on the average,
+- [01:07:10,038 - 01:07:12,558] the number of particles at a point,
+- [01:07:13,738 - 01:07:15,858] of course it's either 0 or 1.
+- [01:07:16,078 - 01:07:17,718] But we're talking about the average.
+- [01:07:17,938 - 01:07:19,338] The average number of particles.
+- [01:07:19,598 - 01:07:21,918] The average number of particles is 0.
+- [01:07:21,918 - 01:07:25,258] It's 1 plus sigma divided by 2.
+- [01:07:26,118 - 01:07:27,278] Let's see why that's true.
+- [01:07:28,918 - 01:07:30,438] If there is a particle there,
+- [01:07:30,438 - 01:07:31,798] that means sigma is 1,
+- [01:07:31,798 - 01:07:32,138] right?
+- [01:07:33,198 - 01:07:34,798] So 1 plus 1 is 2,
+- [01:07:34,798 - 01:07:35,978] divided by 2 is 1.
+- [01:07:36,578 - 01:07:37,978] What if there's no particle there?
+- [01:07:41,978 - 01:07:43,358] That's a good candidate for the
+- [01:07:43,358 - 01:07:44,738] number of particles at a point.
+- [01:07:44,798 - 01:07:45,358] And it's the average.
+- [01:07:45,458 - 01:07:47,148] It is truly the average
+- [01:07:47,148 - 01:07:48,838] number of particles at a point
+- [01:07:49,378 - 01:07:51,898] is equal to 1 half plus the average of sigma.
+- [01:07:52,618 - 01:07:55,428] The average number of particles at a
+- [01:07:55,428 - 01:07:58,238] point is 1 plus the average of sigma.
+- [01:08:00,058 - 01:08:02,918] That tells us that the density of particles,
+- [01:08:02,918 - 01:08:03,898] let's call it rho,
+- [01:08:04,078 - 01:08:07,498] is proportional to 1 plus sigma divided by 2.
+- [01:08:11,518 - 01:08:13,058] That's the density of particles.
+- [01:08:13,198 - 01:08:13,618] In other words,
+- [01:08:13,618 - 01:08:16,758] the number of particles per lattice cell,
+- [01:08:16,877 - 01:08:19,858] the average number of particles per lattice cell,
+- [01:08:19,858 - 01:08:23,658] is 1 plus sigma bar divided by 2.
+- [01:08:24,938 - 01:08:26,837] That's the average number of particles.
+- [01:08:27,638 - 01:08:29,278] It's not sigma divided by 2.
+- [01:08:29,398 - 01:08:30,098] It's not sigma bar.
+- [01:08:31,218 - 01:08:33,638] It's 1 plus sigma bar divided by 2.
+- [01:08:33,917 - 01:08:36,638] And that's because of this offset that
+- [01:08:36,638 - 01:08:39,358] sigma bar being down means no particles.
+- [01:08:39,438 - 01:08:40,198] Not minus 1.
+- [01:08:40,298 - 01:08:41,598] It's 0.16 is minus 1 particle.
+- [01:08:42,198 - 01:08:44,417] So we offset it by this half here.
+- [01:08:44,698 - 01:08:45,377] Excuse me.
+- [01:08:45,478 - 01:08:47,658] Didn't you say sigma bar could be
+- [01:08:47,658 - 01:08:49,837] a value between minus 1 and minus 1?
+- [01:08:49,837 - 01:08:50,558] Yes.
+- [01:08:51,518 - 01:08:51,997] Which?
+- [01:08:52,298 - 01:08:54,398] It says rho goes between 0 and 1.
+- [01:08:56,238 - 01:08:56,718] Right?
+- [01:08:57,917 - 01:09:00,238] You can't have more than one particle in a cell
+- [01:09:00,238 - 01:09:03,167] because they have sharp elbows and they
+- [01:09:03,167 - 01:09:06,098] push each other out of the way.
+- [01:09:06,337 - 01:09:07,858] You can't have less than one
+- [01:09:07,858 - 01:09:09,377] particle because that doesn't mean anything.
+- [01:09:10,118 - 01:09:11,957] So it goes between 0 and 1.
+- [01:09:13,858 - 01:09:19,258] And so the density is just 1 half.
+- [01:09:19,258 - 01:09:21,978] So it's 1 half plus the average magnetization.
+- [01:09:23,158 - 01:09:24,178] For rho2?
+- [01:09:24,417 - 01:09:25,278] For rho2.
+- [01:09:25,278 - 01:09:27,258] Plus half the average magnetization.
+- [01:09:27,497 - 01:09:28,198] What did I say?
+- [01:09:28,258 - 01:09:30,718] Half plus half the average magnetization.
+- [01:09:31,018 - 01:09:31,298] Right.
+- [01:09:31,438 - 01:09:34,198] Half plus half the average magnetization
+- [01:09:34,198 - 01:09:36,957] is the density of this fluid.
+- [01:09:38,238 - 01:09:41,287] So now we're all set to say what
+- [01:09:41,287 - 01:09:44,337] happens if we were to vary the chemical potential,
+- [01:09:44,578 - 01:09:45,578] varying H,
+- [01:09:45,578 - 01:09:47,558] keeping the temperature fixed.
+- [01:09:49,258 - 01:09:50,917] If we're above the critical temperature,
+- [01:09:50,917 - 01:09:55,358] the magnetization varies uniformly and continuously.
+- [01:09:56,198 - 01:09:57,038] No joke.
+- [01:09:57,978 - 01:09:59,778] That says the density doesn't jump.
+- [01:09:59,978 - 01:10:02,278] The density of particles.
+- [01:10:02,398 - 01:10:04,058] So above the critical temperature,
+- [01:10:04,058 - 01:10:06,668] as we vary the chemical
+- [01:10:06,668 - 01:10:09,278] potential in a box of gas,
+- [01:10:09,478 - 01:10:10,418] lower the energy,
+- [01:10:10,418 - 01:10:11,078] pull it down,
+- [01:10:11,078 - 01:10:15,078] nothing very exciting happens when
+- [01:10:15,078 - 01:10:19,078] we pass this horizontal axis.
+- [01:10:19,678 - 01:10:20,878] In other words,
+- [01:10:20,878 - 01:10:24,898] the horizontal axis is when the chemical potential
+- [01:10:24,898 - 01:10:28,918] plus the clever H plus this is equal.
+- [01:10:29,986 - 01:10:30,106] 好
+- [01:10:30,594 - 01:10:32,974] The horizontal axis is when h is equal to zero,
+- [01:10:33,194 - 01:10:36,674] corresponds to the chemical potential of aj plus 2h,
+- [01:10:36,674 - 01:10:37,494] whatever.
+- [01:10:38,654 - 01:10:41,674] No sudden jump in anything above the critical point.
+- [01:10:42,174 - 01:10:43,834] Below the critical point,
+- [01:10:43,834 - 01:10:44,914] by contrast,
+- [01:10:45,774 - 01:10:48,454] as you vary the chemical potential,
+- [01:10:48,454 - 01:10:48,994] h,
+- [01:10:49,734 - 01:10:51,534] all of a sudden at this point here,
+- [01:10:51,534 - 01:10:53,194] the magnetization jumps.
+- [01:10:53,574 - 01:10:55,154] It jumps from negative.
+- [01:10:56,174 - 01:10:57,294] When it's negative,
+- [01:10:57,294 - 01:10:59,514] that means the density is low.
+- [01:11:00,794 - 01:11:03,234] The density is low when this is negative,
+- [01:11:03,494 - 01:11:05,154] so it jumps,
+- [01:11:05,154 - 01:11:07,894] and it jumps from low density to high density.
+- [01:11:09,613 - 01:11:12,663] The experimentalists didn't have temperatures
+- [01:11:12,663 - 01:11:15,714] available as big as t critical,
+- [01:11:16,514 - 01:11:18,334] which was t critical for water.
+- [01:11:19,174 - 01:11:19,814] No.
+- [01:11:23,874 - 01:11:24,294] どうもどうも
+- [01:11:30,249 - 01:11:30,810] That's a,
+- [01:11:30,810 - 01:11:33,270] I shouldn't have asked that question.
+- [01:11:35,050 - 01:11:36,170] That's pressure dependent,
+- [01:11:36,170 - 01:11:37,270] which means chemical,
+- [01:11:37,270 - 01:11:39,150] chemical potential dependent.
+- [01:11:40,150 - 01:11:40,710] No,
+- [01:11:40,710 - 01:11:42,930] the critical is a good deal higher than that.
+- [01:11:46,510 - 01:11:48,510] And it's a good deal higher than that.
+- [01:11:50,350 - 01:11:51,110] You see,
+- [01:11:51,110 - 01:11:54,850] going across here is the phenomenon of boiling.
+- [01:11:55,510 - 01:11:58,370] Or going down this way is the phenomenon of boiling.
+- [01:11:58,830 - 01:12:00,230] Here's where boiling happens.
+- [01:12:00,830 - 01:12:02,750] Boiling doesn't happen out here.
+- [01:12:03,329 - 01:12:04,310] It's just a smooth,
+- [01:12:04,310 - 01:12:07,110] continuous transition of the density
+- [01:12:07,570 - 01:12:09,850] when you're at high temperature,
+- [01:12:10,110 - 01:12:12,350] high enough temperature above the critical point.
+- [01:12:12,930 - 01:12:14,550] Below the critical point,
+- [01:12:18,310 - 01:12:19,510] you're here.
+- [01:12:19,870 - 01:12:23,510] Are you referring to superheated steam above that?
+- [01:12:23,990 - 01:12:24,730] You could,
+- [01:12:24,730 - 01:12:25,470] yeah.
+- [01:12:27,990 - 01:12:29,230] The density changes.
+- [01:12:29,790 - 01:12:30,530] Question please,
+- [01:12:30,530 - 01:12:32,210] how do you vary the chemical potential?
+- [01:12:32,290 - 01:12:33,530] We understand magnetic,
+- [01:12:33,530 - 01:12:36,110] but in the other case,
+- [01:12:36,270 - 01:12:36,810] how do you do it?
+- [01:12:36,910 - 01:12:38,150] Really by varying the density.
+- [01:12:40,710 - 01:12:41,710] You can do it even,
+- [01:12:41,710 - 01:12:43,290] you can either vary the density,
+- [01:12:43,490 - 01:12:45,030] you see the density jumps across here,
+- [01:12:45,090 - 01:12:46,730] but how do you vary the chemical potential?
+- [01:12:51,450 - 01:12:51,890] Pressure?
+- [01:12:52,330 - 01:12:52,770] Yeah.
+- [01:12:53,510 - 01:12:53,850] Pressure is one way,
+- [01:12:53,850 - 01:12:54,150] but...
+- [01:12:55,618 - 01:12:56,218] ああああああ
+- [01:12:59,586 - 01:13:01,366] chemical potential for water molecules.
+- [01:13:03,206 - 01:13:04,246] A little tricky.
+- [01:13:07,486 - 01:13:09,806] Whatever it takes to vary the density.
+- [01:13:10,426 - 01:13:12,326] So I like to think about it by,
+- [01:13:13,086 - 01:13:15,406] in a thought experiment,
+- [01:13:15,406 - 01:13:16,726] by doing what I said,
+- [01:13:16,926 - 01:13:18,006] which is to create a box.
+- [01:13:22,186 - 01:13:25,466] And then literally pull the molecules into the box.
+- [01:13:26,906 - 01:13:29,246] Literally pull the molecules into the box,
+- [01:13:29,386 - 01:13:31,426] and pull the molecules into the box
+- [01:13:31,426 - 01:13:34,146] by creating a potential energy inside the box.
+- [01:13:34,206 - 01:13:35,286] I have to think about how
+- [01:13:35,286 - 01:13:36,366] you would do that in practice.
+- [01:13:36,546 - 01:13:37,566] It's not actually what you do.
+- [01:13:37,626 - 01:13:39,126] What you do instead is raise the pressure.
+- [01:13:43,846 - 01:13:45,626] But varying the chemical potential
+- [01:13:45,626 - 01:13:47,646] is the simplest thing to do.
+- [01:13:48,646 - 01:13:49,606] When you do it,
+- [01:13:49,606 - 01:13:51,366] you suddenly find a sudden jump
+- [01:13:51,366 - 01:13:53,886] in the density of the fluid.
+- [01:13:54,206 - 01:13:55,446] And that is the way to do it.
+- [01:13:55,466 - 01:13:56,046] That is what happens.
+- [01:13:56,726 - 01:13:58,466] We're gonna do gas-based transition.
+- [01:13:59,026 - 01:14:00,526] Down here is gas,
+- [01:14:00,526 - 01:14:01,446] low density.
+- [01:14:04,185 - 01:14:05,105] Up here is liquid.
+- [01:14:07,406 - 01:14:10,326] But notice that you can go from gas to liquid
+- [01:14:10,666 - 01:14:14,806] without any jump by going around the critical point,
+- [01:14:14,946 - 01:14:18,166] way up above the critical temperature.
+- [01:14:21,366 - 01:14:23,366] And varying whatever you have
+- [01:14:23,366 - 01:14:25,366] to vary to vary the density.
+- [01:14:25,466 - 01:14:28,466] You can vary the density by varying the pressure.
+- [01:14:28,626 - 01:14:30,206] That's actually the easiest way.
+- [01:14:30,326 - 01:14:31,206] You vary the pressure.
+- [01:14:31,746 - 01:14:33,446] You increase the temperature,
+- [01:14:33,446 - 01:14:34,946] vary the pressure,
+- [01:14:35,026 - 01:14:36,726] increase the temperature and the pressure,
+- [01:14:37,086 - 01:14:40,366] making sure you go above the critical point,
+- [01:14:40,406 - 01:14:41,206] the critical temperature,
+- [01:14:42,146 - 01:14:46,686] and then lower the temperature back,
+- [01:14:46,906 - 01:14:49,746] and you'll go from gas to liquid without any jump.
+- [01:14:50,146 - 01:14:50,746] Question?
+- [01:14:50,946 - 01:14:51,166] Yeah.
+- [01:14:51,386 - 01:14:54,606] When you say you're changing the chemical potential,
+- [01:14:54,606 - 01:14:56,246] by changing the density,
+- [01:14:56,446 - 01:15:00,146] you're basically changing your effective distance
+- [01:15:00,146 - 01:15:01,686] for a van der Waals potential?
+- [01:15:03,666 - 01:15:04,226] No,
+- [01:15:04,226 - 01:15:04,506] no,
+- [01:15:04,506 - 01:15:04,706] no.
+- [01:15:04,806 - 01:15:05,426] You're keeping the,
+- [01:15:05,426 - 01:15:08,046] the property of the molecule is fixed.
+- [01:15:09,426 - 01:15:10,826] But the density says,
+- [01:15:11,945 - 01:15:14,166] the van der Waals potential is not constant.
+- [01:15:15,006 - 01:15:15,566] Oh,
+- [01:15:15,566 - 01:15:16,526] it's function of position,
+- [01:15:16,526 - 01:15:16,806] yeah.
+- [01:15:17,066 - 01:15:19,106] So when you change the density,
+- [01:15:19,706 - 01:15:22,126] you're changing the distance between molecules.
+- [01:15:22,586 - 01:15:23,146] Certainly.
+- [01:15:23,146 - 01:15:24,166] In that sense,
+- [01:15:24,166 - 01:15:25,406] you're changing the potential energy.
+- [01:15:25,706 - 01:15:26,226] Right,
+- [01:15:26,226 - 01:15:26,546] right.
+- [01:15:28,846 - 01:15:29,926] So when you change,
+- [01:15:29,926 - 01:15:30,286] that's right.
+- [01:15:30,326 - 01:15:32,006] So when you change the density enough,
+- [01:15:32,765 - 01:15:34,566] it suddenly makes a transition,
+- [01:15:34,806 - 01:15:36,126] realizes that the potential,
+- [01:15:36,286 - 01:15:38,026] that the negative potential energy is there,
+- [01:15:38,126 - 01:15:39,826] and tries to put all the molecules together.
+- [01:15:40,346 - 01:15:40,866] Right.
+- [01:15:42,486 - 01:15:43,726] What's the relationship between,
+- [01:15:43,806 - 01:15:46,106] in this case of the gas-liquid transition,
+- [01:15:46,765 - 01:15:49,486] between the critical temperature and the boiling point?
+- [01:15:50,286 - 01:15:50,806] Well,
+- [01:15:50,806 - 01:15:52,206] boiling point depends,
+- [01:15:52,526 - 01:15:52,686] Yeah.
+- [01:15:52,686 - 01:15:57,686] The boiling point depends on the pressure,
+- [01:15:58,686 - 01:16:00,926] which in turn means it depends on the density.
+- [01:16:04,826 - 01:16:05,466] Let's see,
+- [01:16:05,466 - 01:16:06,746] so how would we say this?
+- [01:16:09,746 - 01:16:11,436] The problem with this is
+- [01:16:11,436 - 01:16:13,126] I haven't worked out the pressure.
+- [01:16:14,386 - 01:16:15,166] What we could do,
+- [01:16:15,166 - 01:16:17,326] the pressure is a function
+- [01:16:17,326 - 01:16:19,286] of temperature and chemical potential.
+- [01:16:20,426 - 01:16:22,666] And if I were to have worked out the pressure,
+- [01:16:22,666 - 01:16:24,986] we could have varied the pressure
+- [01:16:24,986 - 01:16:26,466] instead of the chemical potential.
+- [01:16:27,006 - 01:16:28,306] That's why I'm hemming and hawing,
+- [01:16:28,386 - 01:16:30,206] because I don't want to go through the effort now
+- [01:16:30,206 - 01:16:31,366] of calculating the pressure.
+- [01:16:31,866 - 01:16:33,366] But just in a simple-minded way,
+- [01:16:33,526 - 01:16:34,726] when I'm boiling water,
+- [01:16:34,726 - 01:16:36,766] what's my path along there from?
+- [01:16:37,086 - 01:16:39,206] From liquid to gas or gas to liquids?
+- [01:16:39,926 - 01:16:40,406] Go on,
+- [01:16:40,406 - 01:16:40,886] say it over here.
+- [01:16:41,406 - 01:16:41,926] Go on,
+- [01:16:41,926 - 01:16:42,106] go on.
+- [01:16:42,786 - 01:16:43,186] Yeah.
+- [01:16:44,246 - 01:16:44,646] Okay.
+- [01:16:45,346 - 01:16:45,946] Where you going,
+- [01:16:45,946 - 01:16:47,326] from liquid to gas or gas to liquid?
+- [01:16:47,466 - 01:16:47,786] Doesn't matter,
+- [01:16:47,786 - 01:16:48,726] just keep it where you are.
+- [01:16:48,726 - 01:16:50,066] I'm going across here,
+- [01:16:50,106 - 01:16:51,306] but the point at which
+- [01:16:51,306 - 01:16:52,506] you go across there depends on,
+- [01:16:52,506 - 01:16:52,826] depends on the pressure.
+- [01:16:53,026 - 01:16:53,226] Sure,
+- [01:16:53,226 - 01:16:53,866] I understand.
+- [01:16:53,966 - 01:16:54,426] Depends on the pressure.
+- [01:16:55,526 - 01:16:55,926] Depends on the pressure.
+- [01:16:55,926 - 01:16:55,966] So,
+- [01:16:55,966 - 01:16:57,826] right,
+- [01:16:57,826 - 01:16:59,886] so the point at which you cross
+- [01:17:00,406 - 01:17:01,466] does depend on the pressure.
+- [01:17:01,786 - 01:17:03,346] So there's another variable in here,
+- [01:17:03,346 - 01:17:04,026] it's not independent.
+- [01:17:06,146 - 01:17:06,546] And,
+- [01:17:06,546 - 01:17:06,946] okay.
+- [01:17:09,066 - 01:17:11,806] One of the very fascinating things is the properties
+- [01:17:11,806 - 01:17:14,126] of the system near the critical point there.
+- [01:17:15,386 - 01:17:17,425] There's a whole theory of the behavior,
+- [01:17:17,605 - 01:17:19,485] there's a whole theory of lots of experiments
+- [01:17:19,485 - 01:17:20,146] that have been,
+- [01:17:20,146 - 01:17:21,165] that has been felt.
+- [01:17:21,165 - 01:17:21,766] And,
+- [01:17:21,766 - 01:17:24,566] what happens as you approach the critical temperature?
+- [01:17:25,066 - 01:17:27,266] As you approach the critical temperature,
+- [01:17:27,326 - 01:17:28,146] the critical point,
+- [01:17:28,146 - 01:17:29,786] as you approach the critical point,
+- [01:17:29,966 - 01:17:31,926] a number of fascinating things happen,
+- [01:17:32,226 - 01:17:33,786] but they're all characterized
+- [01:17:33,786 - 01:17:36,646] what are called critical exponents.
+- [01:17:37,466 - 01:17:40,326] Every quantity that you can think of that's interesting,
+- [01:17:40,926 - 01:17:44,546] in its dependence on temperature,
+- [01:17:46,146 - 01:17:50,106] will generally go as P minus T critical,
+- [01:17:51,166 - 01:17:52,186] to some power.
+- [01:17:53,386 - 01:17:54,746] And that power,
+- [01:17:54,746 - 01:17:55,566] those powers,
+- [01:17:55,566 - 01:17:57,086] they're not ones and twos,
+- [01:17:57,146 - 01:17:59,746] they're various kinds of irrational numbers of things,
+- [01:18:00,006 - 01:18:01,386] transcendental numbers.
+- [01:18:02,486 - 01:18:04,306] They're called the critical exponents.
+- [01:18:04,966 - 01:18:05,266] And,
+- [01:18:05,266 - 01:18:05,586] of course,
+- [01:18:05,586 - 01:18:07,886] they vary from one kind of phase transition
+- [01:18:07,886 - 01:18:08,506] to another,
+- [01:18:08,506 - 01:18:11,486] but they're exactly the same
+- [01:18:11,766 - 01:18:15,606] for the magnetic transitions and the liquid gas transitions.
+- [01:18:16,586 - 01:18:19,026] They fall into exactly the same class.
+- [01:18:19,666 - 01:18:20,766] The behaviors,
+- [01:18:20,766 - 01:18:21,046] the,
+- [01:18:21,166 - 01:18:22,846] these critical points are,
+- [01:18:23,586 - 01:18:26,426] are rather insensitive to the details.
+- [01:18:28,226 - 01:18:28,806] And,
+- [01:18:28,806 - 01:18:33,726] they depend on features
+- [01:18:33,726 - 01:18:36,846] that don't care whether you put them on a lattice,
+- [01:18:37,106 - 01:18:39,226] they don't care whether it's nearest neighbor
+- [01:18:39,226 - 01:18:40,486] or second nearest neighbor,
+- [01:18:40,566 - 01:18:41,966] they all behave the same way.
+- [01:18:42,466 - 01:18:43,046] And,
+- [01:18:43,046 - 01:18:46,886] the magnets and the fluid transitions
+- [01:18:46,886 - 01:18:48,086] are in the same class.
+- [01:18:48,386 - 01:18:48,726] Okay,
+- [01:18:48,726 - 01:18:50,066] I think we're finished.
+- [01:18:50,306 - 01:18:50,606] I'm sorry,
+- [01:18:50,606 - 01:18:51,006] do they,
+- [01:18:51,006 - 01:18:51,146] do they,
+- [01:18:51,146 - 01:18:51,146] do they,
+- [01:18:51,146 - 01:18:53,036] Is it a form of continuum or
+- [01:18:53,036 - 01:18:54,926] is it a discrete countable even finite?
+- [01:18:55,066 - 01:18:55,286] Oh,
+- [01:18:55,286 - 01:18:56,886] the set of possible critical points?
+- [01:18:56,946 - 01:18:57,146] Yeah.
+- [01:18:57,246 - 01:18:59,026] Because they're discrete.
+- [01:19:01,166 - 01:19:01,606] Finite?
+- [01:19:02,966 - 01:19:03,406] No,
+- [01:19:03,406 - 01:19:04,306] they're probably not finite.
+- [01:19:04,306 - 01:19:05,266] I don't think they're finite.
+- [01:19:05,626 - 01:19:08,046] The number of critical points is not finite,
+- [01:19:08,046 - 01:19:08,906] but they are discrete.
+- [01:19:09,826 - 01:19:10,586] さあ、
+- [01:19:10,586 - 01:19:11,086] 始める
+- [01:19:40,230 - 01:19:40,870] How do you define a gas
+- [01:19:40,870 - 01:19:40,970] and gas
+- [01:19:40,970 - 01:20:03,770] So they coexist.
+- [01:20:04,090 - 01:20:06,290] Liquid and gas coexist if you go around.
+- [01:20:07,370 - 01:20:07,970] Well,
+- [01:20:07,970 - 01:20:08,970] they're not distinguishable.
+- [01:20:09,130 - 01:20:10,010] They're continuously,
+- [01:20:10,010 - 01:20:10,750] you know,
+- [01:20:10,870 - 01:20:14,770] they have a continuous transition from one to the other.
+- [01:20:16,310 - 01:20:18,110] What do you need to put into
+- [01:20:18,110 - 01:20:19,910] the theory to get a gas liquid interface?
+- [01:20:23,510 - 01:20:24,410] A gas,
+- [01:20:24,410 - 01:20:24,810] oh,
+- [01:20:24,810 - 01:20:27,190] to have a gas liquid interface,
+- [01:20:27,270 - 01:20:29,160] you have some gravitational potential
+- [01:20:29,160 - 01:20:31,050] energy or something to be separated.
+- [01:20:31,050 - 01:20:32,650] It's not surface tension?
+- [01:20:33,130 - 01:20:34,550] It's not surface tension.
+- [01:20:35,030 - 01:20:35,550] Oh,
+- [01:20:35,550 - 01:20:36,950] it could be surface tension.
+- [01:20:37,230 - 01:20:38,390] It could be surface tension.
+- [01:20:38,610 - 01:20:39,370] If you are,
+- [01:20:39,370 - 01:20:40,250] look,
+- [01:20:40,870 - 01:20:43,300] most of this kind of analysis is what
+- [01:20:43,300 - 01:20:45,730] you think about for an infinite volume of fluid.
+- [01:20:46,929 - 01:20:49,670] So surface tension is not really the thing here.
+- [01:20:49,890 - 01:20:53,010] But you could have an infinite volume of fluid
+- [01:20:53,010 - 01:20:56,130] laid out on an infinite plane in a gravitational field,
+- [01:20:56,350 - 01:20:58,270] and then you would create a
+- [01:20:58,270 - 01:21:00,190] liquid gas transition at some point.
+- [01:21:01,190 - 01:21:02,990] And that could be worked out.
+- [01:21:03,070 - 01:21:03,950] That's a full-blown tool.
+- [01:21:05,850 - 01:21:06,370] Basically,
+- [01:21:06,370 - 01:21:09,730] the altitude is related to the chemical potential.
+- [01:21:09,730 - 01:21:12,150] So varying the altitude varies the chemical potential.
+- [01:21:12,470 - 01:21:12,730] And,
+- [01:21:12,730 - 01:21:14,470] you know,
+- [01:21:14,470 - 01:21:16,130] a sudden transition at some height,
+- [01:21:16,330 - 01:21:17,950] which is connected to this transition.
+- [01:21:18,870 - 01:21:19,910] In this model,
+- [01:21:19,910 - 01:21:22,480] do you get a heat of
+- [01:21:22,480 - 01:21:25,050] vaporization as you go across that transition?
+- [01:21:25,570 - 01:21:26,130] In general,
+- [01:21:26,130 - 01:21:26,390] yes.
+- [01:21:28,730 - 01:21:29,530] No doubt.
+- [01:21:31,350 - 01:21:33,190] I would have to think about
+- [01:21:33,190 - 01:21:35,030] what that means in this model.
+- [01:21:37,130 - 01:21:37,970] The thing is,
+- [01:21:37,970 - 01:21:38,840] the energy down here is exactly
+- [01:21:38,840 - 01:21:39,710] the same as the energy down here.
+- [01:21:39,710 - 01:21:40,380] The energy up here is exactly
+- [01:21:40,380 - 01:21:41,050] the same as the energy just above.
+- [01:21:41,350 - 01:21:42,370] I would have to think about that.
+- [01:21:47,410 - 01:21:48,370] So this...
+- [01:21:53,050 - 01:21:55,450] Isn't there a heat release at that point?
+- [01:21:58,030 - 01:21:59,730] Total energy is conserved,
+- [01:21:59,730 - 01:22:00,150] of course,
+- [01:22:00,150 - 01:22:00,750] but...
+- [01:22:00,750 - 01:22:01,330] Yeah,
+- [01:22:01,330 - 01:22:02,550] but there's a certain...
+- [01:22:02,550 - 01:22:04,210] In a magnetic problem,
+- [01:22:04,210 - 01:22:05,860] the energy above and the energy
+- [01:22:05,860 - 01:22:07,510] below is just exactly the same.
+- [01:22:10,149 - 01:22:11,310] That's a good question.
+- [01:22:11,450 - 01:22:13,050] I don't know if the answer is offhand.
+- [01:22:13,150 - 01:22:14,030] I have to think about it.
+- [01:22:16,610 - 01:22:17,510] It's getting late.
+- [01:22:18,630 - 01:22:19,150] Okay.
+- [01:22:19,250 - 01:22:22,050] Does this have implications for superconductor magnets?
+- [01:22:24,130 - 01:22:25,350] I suppose it does,
+- [01:22:25,350 - 01:22:26,250] but I'm not sure what.
+- [01:22:27,130 - 01:22:27,950] What's the question?
+- [01:22:28,750 - 01:22:29,270] Well,
+- [01:22:29,270 - 01:22:34,130] you talked back about the Germanium detectors at the...
+- [01:22:34,130 - 01:22:36,610] At Sudren Mine for the dark matter detectors.
+- [01:22:37,130 - 01:22:38,550] And how the...
+- [01:22:38,550 - 01:22:39,070] The...
+- [01:22:39,070 - 01:22:39,690] The...
+- [01:22:39,710 - 01:22:44,190] The physical interaction creates a point where the...
+- [01:22:45,490 - 01:22:46,950] It kicks over.
+- [01:22:47,270 - 01:22:50,420] Where the transition happens
+- [01:22:50,420 - 01:22:53,570] between superconductor and ordinary.
+- [01:22:54,050 - 01:22:54,130] Right.
+- [01:22:54,230 - 01:22:54,590] Yes.
+- [01:22:55,990 - 01:22:56,710] Oh,
+- [01:22:56,710 - 01:22:58,050] you're asking...
+- [01:22:58,050 - 01:22:58,470] Yeah.
+- [01:22:58,790 - 01:23:00,590] Is that a phase transition like this?
+- [01:23:00,650 - 01:23:01,110] It's a phase transition.
+- [01:23:01,130 - 01:23:02,110] It's a phase transition.
+- [01:23:02,370 - 01:23:03,550] It has similarities.
+- [01:23:04,350 - 01:23:07,020] And the point there is if
+- [01:23:07,020 - 01:23:09,690] you can adjust your superconductor to the...
+- [01:23:09,710 - 01:23:11,600] To be very near the transition
+- [01:23:11,600 - 01:23:13,490] or very near the phase transition,
+- [01:23:13,490 - 01:23:14,650] let's say across here,
+- [01:23:14,910 - 01:23:17,450] by a tiny change in some parameter,
+- [01:23:17,450 - 01:23:19,480] you can have it to
+- [01:23:19,480 - 01:23:21,510] jump from superconducting to non-superconducting.
+- [01:23:22,570 - 01:23:26,710] And that gives you the possibility...
+- [01:23:27,350 - 01:23:27,450] You know,
+- [01:23:27,450 - 01:23:31,190] some energy is deposited in the detector
+- [01:23:31,190 - 01:23:34,930] and even a small amount of energy
+- [01:23:34,930 - 01:23:39,130] can create a little local pocket of a changed phase.
+- [01:23:39,130 - 01:23:41,160] So it can be useful as
+- [01:23:41,160 - 01:23:43,190] a very sensitive kind of detector.
+- [01:23:43,790 - 01:23:47,190] But I don't know a lot about superconductor detectors.
+- [01:23:48,250 - 01:23:49,350] They are...
+- [01:23:49,350 - 01:23:51,520] If you're very close to the
+- [01:23:51,520 - 01:23:53,690] phase transition and something really jumps,
+- [01:23:53,690 - 01:23:55,730] then the presence
+- [01:23:55,730 - 01:23:59,070] of a phase transition can be a very,
+- [01:23:59,070 - 01:24:01,610] very good detector of very small changes in things.
+- [01:24:02,430 - 01:24:03,730] Any phase transition?
+- [01:24:04,170 - 01:24:05,110] Any phase transition.
+- [01:24:05,950 - 01:24:06,610] Yeah.
+- [01:24:07,430 - 01:24:08,510] Any phase transition.
+- [01:24:08,510 - 01:24:09,090] Any phase transition.
+- [01:24:09,090 - 01:24:09,410] And it can be very,
+- [01:24:09,410 - 01:24:09,410] very sensitive.
+- [01:24:09,410 - 01:24:09,470] Thank you.
+- [01:24:11,230 - 01:24:11,830] Okay.
+- [01:24:13,470 - 01:24:15,830] We have finished with statistical mechanics.
+- [01:24:16,130 - 01:24:19,650] We've done our duty to...
+- [01:24:21,050 - 01:24:21,930] Bulk money.
+- [01:24:25,590 - 01:24:26,570] I think.
+- [01:24:29,310 - 01:24:33,290] I keep making the same mistakes about Isaac.
+- [01:24:33,330 - 01:24:34,830] I went back and looked at my notes,
+- [01:24:34,830 - 01:24:35,840] and I realized that in
+- [01:24:35,840 - 01:24:36,850] my notes I had an apology
+- [01:24:36,850 - 01:24:37,790] to the students.
+- [01:24:37,790 - 01:24:39,290] I'm doing the wrong thing.
+- [01:24:39,370 - 01:24:40,850] I'm realizing exactly the same thing.
+- [01:24:41,370 - 01:24:42,770] I'll probably do it again.
+- [01:24:44,610 - 01:24:45,130] Okay.
+- [01:24:45,210 - 01:24:47,750] I said I would talk about the anthropic principle.
+- [01:24:54,350 - 01:24:56,710] What do you do with this question and answer?
+- [01:24:57,670 - 01:24:58,790] That's sort of...
+- [01:25:01,750 - 01:25:03,770] If you want to ask me questions
+- [01:25:03,770 - 01:25:05,330] about the anthropic principle,
+- [01:25:05,450 - 01:25:06,810] perhaps you will get me going
+- [01:25:06,810 - 01:25:07,890] and I will answer them.
+- [01:25:08,950 - 01:25:13,790] But I've sort of run out of steam.
+- [01:25:16,570 - 01:25:17,690] No cookies.
+- [01:25:19,090 - 01:25:20,330] It's not my fault.
+- [01:25:20,570 - 01:25:21,430] There's no coffee.
+- [01:25:24,290 - 01:25:27,990] But who asked me about the anthropic principle again?
+- [01:25:28,790 - 01:25:29,750] Go ahead.
+- [01:25:29,750 - 01:25:30,590] Shoot your question.
+- [01:25:30,850 - 01:25:32,690] I wish I'd turned out the email now.
+- [01:25:33,150 - 01:25:35,310] It was just basically about the generalities
+- [01:25:35,310 - 01:25:36,450] of the applications,
+- [01:25:36,810 - 01:25:37,970] the misapplications,
+- [01:25:37,970 - 01:25:39,630] the implications.
+- [01:25:41,069 - 01:25:41,550] Well,
+- [01:25:41,550 - 01:25:42,230] all right.
+- [01:25:42,270 - 01:25:44,510] I asked you a preceding question if I could.
+- [01:25:45,450 - 01:25:47,850] Could you give a clear,
+- [01:25:47,850 - 01:25:49,410] if there is such a thing,
+- [01:25:49,470 - 01:25:51,630] a crisp statement of the anthropic principle?
+- [01:25:51,670 - 01:25:53,990] Exactly what does it say?
+- [01:25:56,230 - 01:25:57,850] Can I give a crisp?
+- [01:25:58,130 - 01:25:58,610] No,
+- [01:25:58,610 - 01:26:00,550] because it means many things to many people.
+- [01:26:01,090 - 01:26:03,470] But I can tell you how I
+- [01:26:03,470 - 01:26:05,850] think a rational use of it looks.
+- [01:26:06,810 - 01:26:07,970] I don't say it's right,
+- [01:26:08,110 - 01:26:09,210] but I think it can,
+- [01:26:09,210 - 01:26:10,670] in some circumstances,
+- [01:26:11,050 - 01:26:13,230] be a rational explanation of something.
+- [01:26:14,870 - 01:26:15,470] First,
+- [01:26:15,470 - 01:26:17,510] you have to understand what fine-tuning means.
+- [01:26:21,930 - 01:26:22,530] OK,
+- [01:26:22,530 - 01:26:24,390] let's talk about fine-tuning.
+- [01:26:25,810 - 01:26:28,910] There's a small number of physics.
+- [01:26:29,110 - 01:26:32,550] The classic case of an extreme fine-tuning
+- [01:26:32,550 - 01:26:32,890] is,
+- [01:26:32,890 - 01:26:33,350] of course,
+- [01:26:33,350 - 01:26:34,690] the cosmological constant.
+- [01:26:34,690 - 01:26:38,210] The cosmological constant is very small.
+- [01:26:40,130 - 01:26:41,730] In natural units,
+- [01:26:41,730 - 01:26:42,750] in Planck units,
+- [01:26:43,150 - 01:26:46,430] it's 123 decimal places small.
+- [01:26:47,750 - 01:26:50,450] What's the difference between being small
+- [01:26:50,450 - 01:26:52,670] and being fine-tuned?
+- [01:26:53,370 - 01:26:55,190] They sound like the same thing,
+- [01:26:55,270 - 01:26:56,430] but they're not the same thing.
+- [01:26:56,510 - 01:26:57,750] So I'll give you an example.
+- [01:26:57,950 - 01:26:59,370] It's an example that I
+- [01:26:59,370 - 01:27:00,790] cooked up to explain this once
+- [01:27:02,790 - 01:27:04,670] to a bunch of people.
+- [01:27:04,690 - 01:27:07,130] I had a bunch of condensed matter physicists
+- [01:27:07,130 - 01:27:09,190] who didn't know what fine-tuning meant.
+- [01:27:09,230 - 01:27:10,290] As soon as I told them what it meant,
+- [01:27:10,350 - 01:27:10,630] they said,
+- [01:27:10,630 - 01:27:10,850] oh,
+- [01:27:10,850 - 01:27:11,330] we know that.
+- [01:27:12,650 - 01:27:21,010] But let me explain it in terms of an example.
+- [01:27:21,450 - 01:27:22,450] It's a silly example.
+- [01:27:22,890 - 01:27:24,700] This is the only example
+- [01:27:24,700 - 01:27:26,510] I've ever made up like this.
+- [01:27:26,590 - 01:27:28,010] It doesn't have fish in it.
+- [01:27:29,690 - 01:27:33,530] But it does have submersible submarines.
+- [01:27:36,430 - 01:27:38,110] And also balloons.
+- [01:27:38,730 - 01:27:40,010] And also balloons.
+- [01:27:40,350 - 01:27:40,710] OK.
+- [01:27:41,950 - 01:27:43,430] Here's the difference.
+- [01:27:44,370 - 01:27:49,129] Let's suppose that you were a certain kind of creature
+- [01:27:49,690 - 01:27:51,769] that could only exist at a certain altitude
+- [01:27:51,769 - 01:27:56,510] where the air was at just the right temperature,
+- [01:27:56,670 - 01:27:57,370] not just temperature,
+- [01:27:57,370 - 01:27:57,790] density,
+- [01:27:57,790 - 01:27:58,510] and so forth.
+- [01:27:59,010 - 01:27:59,630] OK.
+- [01:28:05,710 - 01:28:08,470] So you find yourself at that temperature,
+- [01:28:08,630 - 01:28:08,970] density,
+- [01:28:08,970 - 01:28:09,690] and so forth,
+- [01:28:11,490 - 01:28:12,430] in a balloon.
+- [01:28:12,950 - 01:28:13,870] Not in a balloon,
+- [01:28:13,870 - 01:28:15,110] in a gondola,
+- [01:28:15,630 - 01:28:17,510] in a dirigible.
+- [01:28:19,329 - 01:28:20,610] And a Zeppelin.
+- [01:28:21,170 - 01:28:22,550] What's a good Zeppelin?
+- [01:28:22,650 - 01:28:23,150] A dirigible.
+- [01:28:24,270 - 01:28:25,570] Just get next to that.
+- [01:28:25,710 - 01:28:26,390] What's a good Zeppelin?
+- [01:28:26,950 - 01:28:27,390] Branding.
+- [01:28:27,530 - 01:28:27,970] Yeah.
+- [01:28:28,930 - 01:28:29,810] A Zeppelin,
+- [01:28:29,810 - 01:28:30,290] I think,
+- [01:28:30,290 - 01:28:31,370] is a big bag of gas.
+- [01:28:31,570 - 01:28:33,050] A dirigible,
+- [01:28:33,050 - 01:28:33,450] I think,
+- [01:28:33,450 - 01:28:34,410] has some support.
+- [01:28:34,410 - 01:28:35,430] Some supporting structure.
+- [01:28:35,690 - 01:28:36,170] A Zeppelin.
+- [01:28:36,170 - 01:28:37,090] A Zeppelin and a balloon,
+- [01:28:37,090 - 01:28:37,710] but a dirigible.
+- [01:28:37,870 - 01:28:39,330] A Zeppelin is a brand name.
+- [01:28:39,550 - 01:28:39,930] Oh,
+- [01:28:39,930 - 01:28:40,850] a Zeppelin is a brand name.
+- [01:28:40,970 - 01:28:41,150] OK.
+- [01:28:41,810 - 01:28:42,390] All right.
+- [01:28:42,990 - 01:28:43,430] Anyway.
+- [01:28:44,590 - 01:28:45,550] So there you are.
+- [01:28:45,630 - 01:28:46,750] You're floating above the earth.
+- [01:28:46,790 - 01:28:47,510] In your...
+- [01:28:49,329 - 01:28:49,770] Blimp.
+- [01:28:51,409 - 01:28:55,750] And you notice you're neither rising nor falling.
+- [01:28:55,990 - 01:28:56,710] Isn't that wonderful?
+- [01:28:56,870 - 01:28:58,130] You're neither rising nor falling.
+- [01:28:58,210 - 01:28:58,830] Isn't that lucky?
+- [01:28:59,709 - 01:29:01,810] You're at some stationary height.
+- [01:29:02,430 - 01:29:03,930] And at stationary height,
+- [01:29:03,930 - 01:29:05,890] you've been there for several billion years.
+- [01:29:06,210 - 01:29:07,950] Long enough to have evolved.
+- [01:29:08,250 - 01:29:10,250] And you've evolved in just the right way
+- [01:29:10,250 - 01:29:12,670] to be able to live at that temperature
+- [01:29:12,670 - 01:29:14,950] and at that behavior and so forth.
+- [01:29:15,550 - 01:29:16,130] Let's see.
+- [01:29:16,230 - 01:29:20,150] Isn't it very lucky that this blimp
+- [01:29:20,150 - 01:29:22,610] happens to be exceptionally light?
+- [01:29:23,310 - 01:29:24,790] Light enough that it floats.
+- [01:29:25,710 - 01:29:26,230] OK.
+- [01:29:27,130 - 01:29:27,650] Yes,
+- [01:29:27,650 - 01:29:28,090] you're lucky.
+- [01:29:28,210 - 01:29:30,490] The blimp happened to be light enough that it floats.
+- [01:29:31,050 - 01:29:32,610] And it was a small number.
+- [01:29:32,610 - 01:29:34,560] The small number was the density
+- [01:29:34,560 - 01:29:36,510] of the material inside the blimp.
+- [01:29:36,670 - 01:29:37,890] And that number is small.
+- [01:29:38,230 - 01:29:39,210] In this case,
+- [01:29:39,210 - 01:29:40,370] it's not horribly small,
+- [01:29:40,370 - 01:29:41,130] but it's small.
+- [01:29:41,390 - 01:29:43,510] It might be the density of hydrogen.
+- [01:29:43,710 - 01:29:44,850] It might be the density of helium.
+- [01:29:45,130 - 01:29:46,870] But notice there's a factor of,
+- [01:29:46,870 - 01:29:47,190] what,
+- [01:29:47,190 - 01:29:47,970] four difference
+- [01:29:47,970 - 01:29:52,070] in the mass of helium and the mass of...
+- [01:29:53,450 - 01:29:55,790] So the density could be quite different.
+- [01:29:55,870 - 01:29:56,230] But still,
+- [01:29:56,230 - 01:29:57,230] you'll float somewheres.
+- [01:29:58,330 - 01:30:00,370] Your helium will support you.
+- [01:30:00,430 - 01:30:01,970] Your hydrogen will support you.
+- [01:30:01,970 - 01:30:02,650] You're OK.
+- [01:30:02,950 - 01:30:05,830] And you'll come to equilibrium at some position.
+- [01:30:06,010 - 01:30:08,730] The density of the air varies.
+- [01:30:08,930 - 01:30:10,550] And you'll find some equilibrium.
+- [01:30:10,670 - 01:30:12,410] And you'll just hover at that equilibrium.
+- [01:30:13,130 - 01:30:14,950] And you stay there forever and ever,
+- [01:30:15,030 - 01:30:16,730] long enough to evolve your species.
+- [01:30:17,330 - 01:30:19,590] And that's an example of a small number.
+- [01:30:19,590 - 01:30:22,450] The small number in this case being the luck
+- [01:30:22,450 - 01:30:27,710] that your system happens to have a low density.
+- [01:30:28,170 - 01:30:28,970] In fact,
+- [01:30:28,970 - 01:30:30,050] lower than air.
+- [01:30:31,330 - 01:30:32,170] Small number.
+- [01:30:32,230 - 01:30:33,190] No fine tuning.
+- [01:30:33,470 - 01:30:35,710] It didn't matter if it was helium or hydrogen.
+- [01:30:36,070 - 01:30:37,710] And it wouldn't matter if it was
+- [01:30:37,710 - 01:30:39,350] an equal mixture of helium or hydrogen.
+- [01:30:39,970 - 01:30:41,620] You could have changed the parameters
+- [01:30:41,620 - 01:30:43,270] of the gas quite a lot.
+- [01:30:43,970 - 01:30:45,690] By several hundred percent,
+- [01:30:45,690 - 01:30:47,150] you could have changed the...
+- [01:30:47,150 - 01:30:49,950] As long as it stays lighter than air.
+- [01:30:50,190 - 01:30:51,390] So there you're in luck
+- [01:30:51,390 - 01:30:52,590] that there was a small number.
+- [01:30:52,990 - 01:30:56,590] But there was no exceptional fine tuning of anything.
+- [01:30:57,130 - 01:31:00,030] You didn't have to fine tune in any detail.
+- [01:31:00,050 - 01:31:01,910] A percentage of hydrogen and helium.
+- [01:31:03,190 - 01:31:05,710] So that's a small number.
+- [01:31:05,930 - 01:31:08,430] Now let's talk about another situation.
+- [01:31:09,230 - 01:31:12,150] This object is now not a blimp.
+- [01:31:12,780 - 01:31:14,090] It is a submarine.
+- [01:31:16,090 - 01:31:17,490] Yellow submarine.
+- [01:31:19,390 - 01:31:21,770] We all live in a yellow submarine.
+- [01:31:39,670 - 01:31:41,030] Submarine has no motor.
+- [01:31:41,130 - 01:31:42,090] It just floats.
+- [01:31:45,690 - 01:31:46,970] Down here,
+- [01:31:46,970 - 01:31:50,350] the pressure is much too great for us to survive.
+- [01:31:51,590 - 01:31:53,030] As it happens,
+- [01:31:53,030 - 01:31:58,550] the atmosphere is highly poisonous.
+- [01:31:58,550 - 01:32:01,170] And if we float to the top,
+- [01:32:01,170 - 01:32:01,670] we're dead.
+- [01:32:02,310 - 01:32:04,350] We have to stay in the water.
+- [01:32:05,510 - 01:32:07,010] Maybe it doesn't matter so much
+- [01:32:07,010 - 01:32:08,510] how high we are in the water.
+- [01:32:08,610 - 01:32:09,510] But we've got to stay there.
+- [01:32:10,929 - 01:32:14,149] Our submarine has existed in that
+- [01:32:14,149 - 01:32:17,370] configuration long enough for us to evolve.
+- [01:32:17,810 - 01:32:18,350] In other words,
+- [01:32:18,350 - 01:32:19,470] for a billion years,
+- [01:32:19,470 - 01:32:21,770] it has been hovering in the water.
+- [01:32:23,390 - 01:32:25,730] Without falling or without rising.
+- [01:32:27,510 - 01:32:28,310] We know that.
+- [01:32:28,310 - 01:32:29,010] Because we're here.
+- [01:32:29,270 - 01:32:31,530] All these people who live in a submarine are here.
+- [01:32:31,970 - 01:32:35,400] And they know that if there
+- [01:32:35,400 - 01:32:38,830] was any significant tendency to fall,
+- [01:32:38,830 - 01:32:40,210] they'd be dead.
+- [01:32:40,350 - 01:32:42,570] If there was any significant tendency to rise,
+- [01:32:42,570 - 01:32:43,490] they'd be dead.
+- [01:32:43,770 - 01:32:46,730] Let's assume for simplicity that the water has the same density
+- [01:32:46,730 - 01:32:49,690] from the bottom of the sea to the top of the sea.
+- [01:32:49,790 - 01:32:51,070] Which is very proximately true.
+- [01:32:51,250 - 01:32:52,450] Very close to being true.
+- [01:32:54,590 - 01:32:56,710] What do these people in the yellow submarine conclude?
+- [01:32:56,710 - 01:33:01,310] They conclude that whatever the submarine is made out of,
+- [01:33:01,310 - 01:33:05,630] the density of that submarine is finely tuned.
+- [01:33:05,790 - 01:33:07,550] It's made out of some iron,
+- [01:33:07,550 - 01:33:09,470] together with some brass,
+- [01:33:09,470 - 01:33:11,630] and maybe a little bit of concrete,
+- [01:33:11,630 - 01:33:13,270] and a few other things.
+- [01:33:13,890 - 01:33:14,530] Plus,
+- [01:33:14,530 - 01:33:16,070] it's hollowed out in the interior.
+- [01:33:16,490 - 01:33:20,610] Its average density is such that...
+- [01:33:20,610 - 01:33:23,870] Its average density is very,
+- [01:33:23,870 - 01:33:25,850] very close to that of water.
+- [01:33:26,710 - 01:33:28,690] If it was any denser than water,
+- [01:33:28,690 - 01:33:29,710] it would sink.
+- [01:33:29,910 - 01:33:32,610] If it was any lighter than water,
+- [01:33:32,610 - 01:33:33,910] it would flow.
+- [01:33:35,030 - 01:33:36,250] And what's more,
+- [01:33:36,250 - 01:33:39,490] it's been sitting there at that
+- [01:33:39,490 - 01:33:42,730] compromised position for a billion years.
+- [01:33:43,250 - 01:33:44,150] From that,
+- [01:33:44,150 - 01:33:47,850] you can conclude that whatever the chemical composition is,
+- [01:33:47,850 - 01:33:50,290] it is very,
+- [01:33:50,290 - 01:33:51,710] very finely tuned.
+- [01:33:52,010 - 01:33:56,450] If you would change the ratio of iron to concrete,
+- [01:33:58,270 - 01:34:00,450] by one part in a thousand,
+- [01:34:00,450 - 01:34:02,930] or probably one part in a million...
+- [01:34:02,930 - 01:34:03,090] Remember,
+- [01:34:03,090 - 01:34:05,250] this thing has been sitting there for a billion years.
+- [01:34:05,470 - 01:34:06,010] Or,
+- [01:34:06,010 - 01:34:06,850] let's say,
+- [01:34:06,850 - 01:34:07,670] four billion years,
+- [01:34:07,670 - 01:34:08,490] or ten billion years.
+- [01:34:08,790 - 01:34:10,830] It's been sitting there for ten billion years,
+- [01:34:11,910 - 01:34:16,650] and it's right somewhere in the middle of the zone.
+- [01:34:19,090 - 01:34:20,050] That's extraordinary.
+- [01:34:20,610 - 01:34:23,770] That's extraordinary because there's no feedback mechanism
+- [01:34:23,770 - 01:34:26,010] whereby it could start to sink.
+- [01:34:26,010 - 01:34:27,650] It would rise.
+- [01:34:27,970 - 01:34:29,030] If it started to rise,
+- [01:34:29,030 - 01:34:30,130] it would sink.
+- [01:34:30,530 - 01:34:31,850] No feedback mechanism.
+- [01:34:32,110 - 01:34:33,830] If it's just a little bit too heavy,
+- [01:34:34,110 - 01:34:36,590] it would just slowly sink to the bottom.
+- [01:34:36,610 - 01:34:37,630] If it's a little too light,
+- [01:34:37,630 - 01:34:38,730] it would slowly rise.
+- [01:34:39,110 - 01:34:40,190] And so somebody,
+- [01:34:40,190 - 01:34:41,630] very,
+- [01:34:41,630 - 01:34:42,710] very fortunately,
+- [01:34:43,030 - 01:34:45,990] has tuned the chemical composition
+- [01:34:45,990 - 01:34:48,490] and the amount of hollowing out
+- [01:34:49,010 - 01:34:51,330] and the weight of everything that's inside it
+- [01:34:51,330 - 01:34:54,150] to one part in I don't know how much.
+- [01:34:54,250 - 01:34:55,210] We can try to work it out,
+- [01:34:55,210 - 01:34:55,910] but it's not important.
+- [01:34:56,010 - 01:34:56,770] But it's important to take it to one part
+- [01:34:56,770 - 01:34:58,230] in a fairly large number
+- [01:34:59,190 - 01:35:03,990] to make sure that that submarine hovers.
+- [01:35:05,830 - 01:35:06,390] Now,
+- [01:35:06,390 - 01:35:08,170] the submariners are curious about this.
+- [01:35:08,230 - 01:35:10,790] They want to know why is this true.
+- [01:35:12,730 - 01:35:15,050] They have no explanation for it at all.
+- [01:35:20,130 - 01:35:21,790] Their first reaction is,
+- [01:35:21,790 - 01:35:26,690] this must be something like the dirigible,
+- [01:35:26,690 - 01:35:29,010] the Zeppelin.
+- [01:35:29,830 - 01:35:31,690] The Zeppelin had a feedback.
+- [01:35:32,110 - 01:35:33,870] If the Zeppelin goes too high,
+- [01:35:33,970 - 01:35:41,350] the air density goes down and it sinks back.
+- [01:35:41,490 - 01:35:42,150] It goes too low,
+- [01:35:42,150 - 01:35:43,090] it rises up again.
+- [01:35:43,650 - 01:35:45,190] But they do a few calculations
+- [01:35:45,190 - 01:35:46,970] and they realize there's no question
+- [01:35:46,970 - 01:35:48,490] of that kind of feedback mechanism.
+- [01:35:48,490 - 01:35:52,790] The density of water is too constant over this range
+- [01:35:52,790 - 01:35:55,410] and there's no possibility of using that
+- [01:35:55,410 - 01:35:56,750] to get a stability mechanism.
+- [01:35:58,550 - 01:36:02,330] They try all kinds of mathematical tricks,
+- [01:36:03,289 - 01:36:04,490] symmetry principles,
+- [01:36:04,490 - 01:36:05,930] whatever you have.
+- [01:36:06,490 - 01:36:07,610] Nothing works.
+- [01:36:07,910 - 01:36:09,390] And the reason nothing works
+- [01:36:09,390 - 01:36:12,710] is because this is one of these very fine-tuned things.
+- [01:36:12,790 - 01:36:14,790] If you just change the chemical composition
+- [01:36:14,790 - 01:36:15,919] a tiny bit this way
+- [01:36:15,919 - 01:36:17,049] or a tiny bit that way,
+- [01:36:17,049 - 01:36:18,990] the whole thing breaks down.
+- [01:36:20,469 - 01:36:24,010] What kind of conclusion could they come to?
+- [01:36:26,010 - 01:36:28,569] They do a little more calculation
+- [01:36:29,309 - 01:36:31,210] using whatever laws they know
+- [01:36:31,210 - 01:36:34,230] and they discover something very interesting
+- [01:36:34,829 - 01:36:37,350] about the nature of the fluid that they're in.
+- [01:36:37,530 - 01:36:39,610] The nature of the fluid that they're in
+- [01:36:39,610 - 01:36:40,670] is that it has a instability.
+- [01:36:42,590 - 01:36:44,130] It makes bubbles.
+- [01:36:44,470 - 01:36:47,030] And the form of these bubbles is somewhat similar.
+- [01:36:47,030 - 01:36:48,230] It's like a submarine.
+- [01:36:48,230 - 01:36:49,690] Somewhere in the fluid,
+- [01:36:52,490 - 01:36:53,550] bubbles nucleate.
+- [01:36:53,950 - 01:36:55,710] And when the bubbles nucleate,
+- [01:36:55,710 - 01:36:56,890] they morph into submarines.
+- [01:36:57,730 - 01:36:59,530] But the trouble is the submarines
+- [01:37:01,710 - 01:37:03,850] that they can nucleate into
+- [01:37:03,850 - 01:37:06,410] are generally not of the right type.
+- [01:37:07,650 - 01:37:08,490] In fact,
+- [01:37:08,490 - 01:37:09,270] as it turns out,
+- [01:37:09,290 - 01:37:10,790] the submarines can nucleate
+- [01:37:10,790 - 01:37:12,330] with different chemical compositions.
+- [01:37:13,510 - 01:37:15,570] Some of them have a little more brass.
+- [01:37:15,770 - 01:37:17,010] Some of them have a little more iron.
+- [01:37:17,030 - 01:37:18,910] A few of them have more hollowed out.
+- [01:37:19,030 - 01:37:21,030] And there's a whole huge variety
+- [01:37:22,070 - 01:37:25,190] of different species of submarine
+- [01:37:25,190 - 01:37:26,070] that can nucleate.
+- [01:37:26,210 - 01:37:26,690] They do.
+- [01:37:26,810 - 01:37:27,610] They make these calculations.
+- [01:37:28,210 - 01:37:30,050] And they discover this is a property
+- [01:37:30,050 - 01:37:31,510] of the fluid that they live in.
+- [01:37:32,910 - 01:37:33,310] You say,
+- [01:37:33,310 - 01:37:33,450] ah,
+- [01:37:33,450 - 01:37:35,750] I think I know the answer.
+- [01:37:36,190 - 01:37:38,150] The answer must be that there must be
+- [01:37:38,150 - 01:37:40,410] zillions of different kinds of submarines,
+- [01:37:41,790 - 01:37:42,310] huge,
+- [01:37:42,310 - 01:37:43,830] huge numbers of different kinds,
+- [01:37:45,350 - 01:37:46,390] and moreover,
+- [01:37:47,030 - 01:37:49,310] they keep nucleating and nucleating
+- [01:37:49,310 - 01:37:50,790] and nucleating this fluid.
+- [01:37:51,190 - 01:37:53,350] And so the fluid just keeps
+- [01:37:55,130 - 01:37:57,850] producing more and more and more of them
+- [01:37:57,850 - 01:37:59,450] of every conceivable type.
+- [01:37:59,870 - 01:38:01,170] 10% iron,
+- [01:38:01,170 - 01:38:02,710] 90% brass,
+- [01:38:03,010 - 01:38:04,550] and all possible things in between.
+- [01:38:05,270 - 01:38:07,570] And most of them either sink to the bottom,
+- [01:38:07,630 - 01:38:08,910] they lie dead at the bottom,
+- [01:38:09,030 - 01:38:10,810] or they rise to the top
+- [01:38:10,810 - 01:38:14,109] and they poison the proto-inhabitants
+- [01:38:14,690 - 01:38:16,050] that have time to...
+- [01:38:16,050 - 01:38:18,270] And some tiny fraction of them,
+- [01:38:18,350 - 01:38:20,450] some incredibly tiny fraction of them,
+- [01:38:20,470 - 01:38:22,530] were nucleated with the right properties.
+- [01:38:23,190 - 01:38:25,270] They were nucleated with the right properties
+- [01:38:25,270 - 01:38:27,630] just because everything that could happen happened.
+- [01:38:28,470 - 01:38:32,090] And so they are not particularly lucky.
+- [01:38:32,290 - 01:38:33,810] They are just the ones that were in
+- [01:38:33,810 - 01:38:35,750] the kind of submarines that...
+- [01:38:37,290 - 01:38:40,250] that nucleated with exactly the right density to hover.
+- [01:38:43,210 - 01:38:44,810] If all of that really happened,
+- [01:38:44,810 - 01:38:48,070] and these people really had a genuine scientific reason
+- [01:38:48,430 - 01:38:51,230] to believe in submarine nucleation in their city,
+- [01:38:51,490 - 01:38:55,190] and they could see that the submarines could nucleate
+- [01:38:55,190 - 01:38:57,570] with a vast variety of different types,
+- [01:38:58,550 - 01:39:00,150] they would have what I would say
+- [01:39:00,150 - 01:39:03,810] was a reasonable explanation of what's going on.
+- [01:39:04,490 - 01:39:06,070] It's just a lot of stuff.
+- [01:39:06,350 - 01:39:07,510] The sea is very big.
+- [01:39:08,630 - 01:39:10,170] The sea is very big.
+- [01:39:10,330 - 01:39:11,570] A long time has passed.
+- [01:39:11,790 - 01:39:14,230] Every conceivable kind of thing is nucleated.
+- [01:39:14,230 - 01:39:14,490] It's been nucleated many,
+- [01:39:14,490 - 01:39:15,210] many times,
+- [01:39:15,390 - 01:39:16,840] and they are just in
+- [01:39:16,840 - 01:39:18,290] the kind where survival is possible.
+- [01:39:19,030 - 01:39:24,310] That is the logic that I think the anthropic principle,
+- [01:39:25,210 - 01:39:26,670] when it's rational,
+- [01:39:26,670 - 01:39:28,050] is making use of.
+- [01:39:29,949 - 01:39:33,730] That fine-tuning is a consequence
+- [01:39:33,730 - 01:39:34,630] of many,
+- [01:39:34,630 - 01:39:35,070] many,
+- [01:39:35,070 - 01:39:35,810] many possibilities
+- [01:39:36,869 - 01:39:42,270] and many actual events taking place,
+- [01:39:42,270 - 01:39:45,050] creating the submarine that we live in,
+- [01:39:45,850 - 01:39:47,380] so many so that some
+- [01:39:47,380 - 01:39:48,910] fraction of them will be livable.
+- [01:39:49,630 - 01:39:52,090] Then it becomes a non-mystery
+- [01:39:52,090 - 01:39:54,230] about why we live in a fine-tuning universe.
+- [01:39:55,030 - 01:39:57,430] That's a logic that I find,
+- [01:39:57,430 - 01:39:58,090] personally,
+- [01:39:58,210 - 01:39:59,150] I find acceptable.
+- [01:40:01,750 - 01:40:02,270] If...
+- [01:40:02,270 - 01:40:03,350] You know,
+- [01:40:03,350 - 01:40:04,530] there are other possible answers.
+- [01:40:04,830 - 01:40:07,190] The other possible answer is always the benevolence
+- [01:40:07,190 - 01:40:08,500] that created the submarine
+- [01:40:08,500 - 01:40:09,810] with exactly the right properties.
+- [01:40:10,850 - 01:40:11,370] Uh...
+- [01:40:12,270 - 01:40:13,670] There are some people who would like to believe that.
+- [01:40:14,190 - 01:40:16,670] Most of my scientific friends don't think that
+- [01:40:16,670 - 01:40:17,970] is an acceptable solution.
+- [01:40:20,070 - 01:40:20,490] Um...
+- [01:40:24,110 - 01:40:24,650] So,
+- [01:40:24,650 - 01:40:26,210] what are the other possibilities?
+- [01:40:26,790 - 01:40:28,050] And at this time,
+- [01:40:28,050 - 01:40:28,610] right now,
+- [01:40:28,610 - 01:40:29,450] here and now,
+- [01:40:29,590 - 01:40:32,130] there are no other plausible possibilities
+- [01:40:32,130 - 01:40:36,110] for why certain things are fine-tuned.
+- [01:40:36,490 - 01:40:37,030] Okay,
+- [01:40:37,030 - 01:40:37,230] now,
+- [01:40:37,230 - 01:40:39,110] what is it that's playing the role
+- [01:40:39,110 - 01:40:39,970] of this,
+- [01:40:39,970 - 01:40:40,350] um...
+- [01:40:40,350 - 01:40:41,350] of this,
+- [01:40:41,350 - 01:40:41,770] uh...
+- [01:40:41,770 - 01:40:43,230] the density of the submarine?
+- [01:40:44,109 - 01:40:46,370] What's playing the role of the density of the submarine
+- [01:40:46,370 - 01:40:48,350] is the cosmological constant.
+- [01:40:49,390 - 01:40:55,410] If the cosmological constant is slightly negative,
+- [01:40:57,350 - 01:40:59,890] the universe would re-collapse.
+- [01:41:01,070 - 01:41:01,830] Now,
+- [01:41:01,830 - 01:41:03,390] if it's sufficiently small,
+- [01:41:04,990 - 01:41:05,750] that's like...
+- [01:41:06,290 - 01:41:08,230] that's like the density of the submarine
+- [01:41:08,230 - 01:41:10,170] being only a tiny bit different
+- [01:41:10,350 - 01:41:10,610] than water.
+- [01:41:12,550 - 01:41:15,290] If the cosmological constant is very small,
+- [01:41:16,110 - 01:41:17,740] then it will take a
+- [01:41:17,740 - 01:41:19,370] long time for it to re-collapse
+- [01:41:19,370 - 01:41:20,650] in the same sense...
+- [01:41:20,650 - 01:41:21,130] in a very,
+- [01:41:21,130 - 01:41:22,510] very similar way to the way
+- [01:41:22,510 - 01:41:24,050] it would take a long time for the submarine
+- [01:41:24,050 - 01:41:25,370] to fall to the bottom of the sea
+- [01:41:25,370 - 01:41:28,090] if the difference between water density
+- [01:41:28,090 - 01:41:28,570] and,
+- [01:41:28,570 - 01:41:28,870] um...
+- [01:41:30,110 - 01:41:32,090] and submarine density were small.
+- [01:41:34,130 - 01:41:34,650] Okay,
+- [01:41:34,650 - 01:41:34,910] so,
+- [01:41:34,910 - 01:41:35,430] um...
+- [01:41:37,070 - 01:41:39,430] If the cosmological constant is small enough,
+- [01:41:39,430 - 01:41:41,730] the universe lasts long enough...
+- [01:41:42,430 - 01:41:43,550] assuming it's negative,
+- [01:41:43,670 - 01:41:45,540] it lasts long enough without re-collapsing
+- [01:41:45,950 - 01:41:48,610] for us to be here and to survive and,
+- [01:41:48,610 - 01:41:48,810] uh...
+- [01:41:48,810 - 01:41:49,290] and so forth.
+- [01:41:49,630 - 01:41:50,610] On the other hand,
+- [01:41:50,610 - 01:41:52,550] a cosmological constant could be positive,
+- [01:41:52,730 - 01:41:54,450] in which case the universe doesn't crunch.
+- [01:41:55,050 - 01:41:56,270] It expands,
+- [01:41:56,590 - 01:41:59,550] and it expands in an exponential way.
+- [01:41:59,910 - 01:42:01,990] But if it expands too fast,
+- [01:42:02,170 - 01:42:03,290] if it expands,
+- [01:42:03,290 - 01:42:03,850] uh...
+- [01:42:04,300 - 01:42:05,430] too rapidly,
+- [01:42:06,510 - 01:42:08,619] then it prevents structure.
+- [01:42:08,620 - 01:42:10,000] It prevents structures from forming.
+- [01:42:10,380 - 01:42:14,080] If the universe was accelerating very rapidly,
+- [01:42:14,300 - 01:42:14,760] um...
+- [01:42:14,760 - 01:42:17,180] an accelerated expansion,
+- [01:42:17,680 - 01:42:19,660] then the material that's in it
+- [01:42:19,660 - 01:42:21,480] would get carried along with the acceleration
+- [01:42:22,300 - 01:42:22,700] and,
+- [01:42:22,700 - 01:42:23,180] uh...
+- [01:42:23,180 - 01:42:24,100] would simply be,
+- [01:42:24,100 - 01:42:24,680] um...
+- [01:42:24,680 - 01:42:28,720] incapable of contracting into galaxies,
+- [01:42:28,900 - 01:42:29,320] stars,
+- [01:42:29,320 - 01:42:30,120] and so forth.
+- [01:42:30,400 - 01:42:31,940] So the sun window...
+- [01:42:31,940 - 01:42:33,060] the sun window,
+- [01:42:34,340 - 01:42:35,140] uh...
+- [01:42:35,140 - 01:42:37,800] which is analogous to the window of densities.
+- [01:42:37,800 - 01:42:38,980] So submarine densities,
+- [01:42:39,700 - 01:42:41,900] where either positive or negative,
+- [01:42:42,060 - 01:42:42,840] some new window,
+- [01:42:43,560 - 01:42:46,460] where the submarine could last for a billion years.
+- [01:42:46,900 - 01:42:47,500] Here,
+- [01:42:47,660 - 01:42:49,580] it's a window between,
+- [01:42:49,580 - 01:42:50,360] um...
+- [01:42:50,360 - 01:42:52,660] collapse and destruction
+- [01:42:53,580 - 01:42:55,050] on a time scale that
+- [01:42:55,050 - 01:42:56,520] would not allow our own existence,
+- [01:42:56,940 - 01:42:57,660] on the one hand,
+- [01:42:57,900 - 01:42:59,340] and in the other direction,
+- [01:43:00,840 - 01:43:01,440] uh...
+- [01:43:02,380 - 01:43:03,660] lack of galaxies,
+- [01:43:03,660 - 01:43:04,060] stars,
+- [01:43:04,060 - 01:43:04,920] planets,
+- [01:43:05,180 - 01:43:06,000] structures would form.
+- [01:43:06,000 - 01:43:07,780] And that window is very,
+- [01:43:07,780 - 01:43:08,320] very small.
+- [01:43:09,040 - 01:43:12,180] The window is small because,
+- [01:43:12,180 - 01:43:12,740] uh...
+- [01:43:12,740 - 01:43:14,760] because time scales are so long.
+- [01:43:14,940 - 01:43:17,000] The same reason the window is small for the,
+- [01:43:17,000 - 01:43:17,300] uh...
+- [01:43:17,300 - 01:43:17,860] for the submarine.
+- [01:43:18,200 - 01:43:20,900] We have to be able to survive in this universe
+- [01:43:20,900 - 01:43:22,000] for a period of time
+- [01:43:22,840 - 01:43:24,080] which is very long,
+- [01:43:25,220 - 01:43:25,740] uh...
+- [01:43:25,740 - 01:43:26,720] and,
+- [01:43:26,720 - 01:43:27,240] um...
+- [01:43:27,240 - 01:43:28,360] that means
+- [01:43:28,360 - 01:43:31,620] that the imbalances in the cosmological constant
+- [01:43:31,620 - 01:43:32,540] have to be very,
+- [01:43:32,540 - 01:43:33,020] very small.
+- [01:43:33,660 - 01:43:34,180] Now,
+- [01:43:34,180 - 01:43:35,980] there's another sense in which the cosmological constant
+- [01:43:36,000 - 01:43:37,240] is like the,
+- [01:43:37,240 - 01:43:37,520] uh...
+- [01:43:37,520 - 01:43:38,500] the density of the submarine.
+- [01:43:38,940 - 01:43:40,460] The density of the submarine
+- [01:43:41,000 - 01:43:43,080] is made up out of some composite
+- [01:43:43,080 - 01:43:44,310] of the densities of the
+- [01:43:44,310 - 01:43:45,540] different materials that make it up
+- [01:43:45,540 - 01:43:46,980] in various proportions.
+- [01:43:48,780 - 01:43:51,540] It's not just that some number is small.
+- [01:43:51,740 - 01:43:53,600] It's that some number is very,
+- [01:43:53,600 - 01:43:54,600] very finely adjusted.
+- [01:43:55,500 - 01:43:57,780] The same is true of the cosmological constant
+- [01:43:57,780 - 01:43:59,120] in quantum field theory.
+- [01:43:59,920 - 01:44:03,060] It gets contributions from many,
+- [01:44:03,060 - 01:44:04,620] many different sources.
+- [01:44:04,620 - 01:44:05,880] Basically,
+- [01:44:05,880 - 01:44:09,520] it gets a contribution from every quantum field that exists.
+- [01:44:11,120 - 01:44:12,560] Bosons give positive.
+- [01:44:12,960 - 01:44:14,500] Fermions give negative.
+- [01:44:14,980 - 01:44:17,540] The mass of the particles that
+- [01:44:17,540 - 01:44:20,100] are associated with those quantum fields
+- [01:44:21,020 - 01:44:22,560] shift them a little bit.
+- [01:44:22,700 - 01:44:25,180] The cosmological constant that results from it
+- [01:44:25,180 - 01:44:28,140] shifts a little bit.
+- [01:44:28,680 - 01:44:29,940] And the whole thing,
+- [01:44:30,060 - 01:44:31,220] all of the constants,
+- [01:44:31,400 - 01:44:32,420] all of the particles,
+- [01:44:32,660 - 01:44:34,020] all of the contributions,
+- [01:44:34,020 - 01:44:36,480] all of the contributions to the cosmological constant
+- [01:44:37,560 - 01:44:39,720] have to balance very finely
+- [01:44:39,720 - 01:44:41,540] exactly the same way as the
+- [01:44:41,540 - 01:44:43,360] density of the submarine has to balance.
+- [01:44:44,280 - 01:44:45,780] If there's a little too much iron,
+- [01:44:45,780 - 01:44:46,380] you're dead.
+- [01:44:46,560 - 01:44:47,560] If there's a little too much brass,
+- [01:44:47,560 - 01:44:48,440] you go up.
+- [01:44:49,940 - 01:44:52,480] Same thing with the cosmological constant.
+- [01:44:52,800 - 01:44:55,820] Put in an extra fermion species into the theory
+- [01:44:55,820 - 01:44:59,140] and the cosmological constant gets too negative
+- [01:44:59,140 - 01:45:00,360] and you implode.
+- [01:45:00,540 - 01:45:02,260] Put in an extra boson,
+- [01:45:02,300 - 01:45:04,000] the cosmological constant gets too big,
+- [01:45:04,020 - 01:45:05,570] and you're out of luck at
+- [01:45:05,570 - 01:45:07,120] a tiny fraction of a second.
+- [01:45:08,320 - 01:45:09,040] So...
+- [01:45:10,359 - 01:45:11,080] Question,
+- [01:45:11,080 - 01:45:11,520] please.
+- [01:45:11,700 - 01:45:14,200] What is the meaning of
+- [01:45:14,200 - 01:45:16,700] making a change but that compensates?
+- [01:45:16,700 - 01:45:18,000] Meaning it doesn't...
+- [01:45:18,000 - 01:45:20,260] It's just a different submarine,
+- [01:45:20,340 - 01:45:21,920] but still floating.
+- [01:45:22,880 - 01:45:23,600] Yeah.
+- [01:45:25,980 - 01:45:28,180] There are parameters in physics,
+- [01:45:28,280 - 01:45:30,940] such as various masses and coupling constants.
+- [01:45:31,700 - 01:45:34,000] You could change one thing
+- [01:45:34,020 - 01:45:35,720] one way a little bit,
+- [01:45:35,840 - 01:45:38,900] which might increase the cosmological constant,
+- [01:45:39,100 - 01:45:41,560] and change something else another way a little bit,
+- [01:45:41,660 - 01:45:44,040] which might decrease the cosmological constant,
+- [01:45:44,220 - 01:45:45,420] and you might be able to...
+- [01:45:47,120 - 01:45:48,960] It's not just that there's only one
+- [01:45:50,300 - 01:45:53,220] chemical composition of the submarine that can survive.
+- [01:45:54,420 - 01:45:57,000] There's just a very thin surface
+- [01:45:57,000 - 01:45:59,660] in some space of different configurations.
+- [01:46:00,480 - 01:46:01,580] That's the same thing here.
+- [01:46:01,720 - 01:46:02,940] You can change things.
+- [01:46:05,000 - 01:46:06,640] But you have to change them
+- [01:46:07,360 - 01:46:08,360] in a very,
+- [01:46:08,360 - 01:46:09,560] very fine-tuned way.
+- [01:46:09,700 - 01:46:11,340] If you change one thing by this amount,
+- [01:46:11,460 - 01:46:14,080] you have to change the other thing by that amount,
+- [01:46:14,300 - 01:46:17,640] and it has to be adjusted to 123 decimal places.
+- [01:46:19,420 - 01:46:20,860] So that's the...
+- [01:46:20,860 - 01:46:24,940] So will this water that produces every kind of submarine
+- [01:46:24,940 - 01:46:29,020] will make various submarines that have the same density
+- [01:46:29,020 - 01:46:30,480] but look different than this?
+- [01:46:30,720 - 01:46:32,780] So these are alternate universes?
+- [01:46:34,340 - 01:46:34,840] Yeah.
+- [01:46:36,060 - 01:46:36,560] Well,
+- [01:46:36,560 - 01:46:37,580] they're all alternate universes,
+- [01:46:37,780 - 01:46:40,700] but some of them are capable of sustaining themselves
+- [01:46:40,700 - 01:46:41,940] for a long enough time.
+- [01:46:42,600 - 01:46:43,100] Yeah.
+- [01:46:43,300 - 01:46:44,140] You have people,
+- [01:46:44,140 - 01:46:45,460] others are not.
+- [01:46:45,740 - 01:46:46,240] Yeah.
+- [01:46:46,880 - 01:46:47,520] You know,
+- [01:46:47,520 - 01:46:48,940] we know very little about this.
+- [01:46:49,020 - 01:46:49,200] I mean,
+- [01:46:49,200 - 01:46:52,200] our knowledge of space of possibilities
+- [01:46:52,980 - 01:46:54,420] is extremely limited.
+- [01:46:54,600 - 01:46:56,200] We don't know very much about it.
+- [01:46:56,740 - 01:46:58,260] String theory seems to say
+- [01:46:58,260 - 01:47:01,300] that there are endless huge numbers of possibilities.
+- [01:47:03,520 - 01:47:06,680] Analogous to every possible chemical composition.
+- [01:47:08,360 - 01:47:09,880] So that's a plus.
+- [01:47:10,340 - 01:47:11,860] I don't know whether to regard
+- [01:47:11,860 - 01:47:13,380] that as a plus for string theory
+- [01:47:13,380 - 01:47:15,300] or a plus for the entropic principle
+- [01:47:15,300 - 01:47:17,580] or a plus for cosmology.
+- [01:47:18,100 - 01:47:20,820] But it does seem to fit together with the idea.
+- [01:47:26,000 - 01:47:29,280] And the fact is there is no other known explanation.
+- [01:47:29,660 - 01:47:30,920] There's just nothing out there.
+- [01:47:30,920 - 01:47:32,280] It's been many years now
+- [01:47:32,280 - 01:47:34,160] that people have looked for explanations.
+- [01:47:35,580 - 01:47:36,180] Oh,
+- [01:47:36,180 - 01:47:37,100] there's one more thing.
+- [01:47:37,280 - 01:47:37,940] Just a moment.
+- [01:47:38,060 - 01:47:39,720] There's one more thing about the submarine.
+- [01:47:40,980 - 01:47:41,580] Yeah.
+- [01:47:41,740 - 01:47:43,280] These submariners might,
+- [01:47:43,280 - 01:47:43,880] as I said,
+- [01:47:44,060 - 01:47:47,780] they might start looking for mathematical explanations,
+- [01:47:48,320 - 01:47:49,640] some symmetry of nature,
+- [01:47:49,820 - 01:47:51,320] some symmetry of their equations,
+- [01:47:52,240 - 01:47:56,280] which makes the submarine density exactly equal
+- [01:47:56,280 - 01:47:58,740] to the surrounding water.
+- [01:48:00,099 - 01:48:01,919] They think they have this
+- [01:48:01,919 - 01:48:03,740] theory called rope theory or something.
+- [01:48:03,960 - 01:48:04,400] I don't know.
+- [01:48:06,660 - 01:48:10,500] Rope theory seems that they can't quite prove it.
+- [01:48:10,720 - 01:48:12,280] But they have some idea,
+- [01:48:12,520 - 01:48:14,220] they only have the right idea,
+- [01:48:14,400 - 01:48:19,480] that rope theory would say that the submarines
+- [01:48:19,480 - 01:48:23,660] always come out with exactly the right density of water.
+- [01:48:23,940 - 01:48:26,720] Some symmetry between water and other things.
+- [01:48:28,280 - 01:48:29,240] We've got it.
+- [01:48:29,240 - 01:48:30,560] We don't quite understand it,
+- [01:48:30,640 - 01:48:31,320] but we've got it.
+- [01:48:31,360 - 01:48:32,600] We know there's some theory there.
+- [01:48:32,720 - 01:48:34,500] If we could only understand that theory better,
+- [01:48:34,580 - 01:48:39,920] it would tell us why the cosmological constant
+- [01:48:39,920 - 01:48:43,400] or the density of submarines is exactly the right thing.
+- [01:48:44,500 - 01:48:45,440] But then,
+- [01:48:45,440 - 01:48:47,760] with their horror and dismay,
+- [01:48:47,820 - 01:48:49,860] they discover that in their own submarine,
+- [01:48:49,920 - 01:48:51,900] it's not exactly the right thing.
+- [01:48:52,020 - 01:48:52,780] In fact,
+- [01:48:52,780 - 01:48:55,900] the submarine is slowly sinking.
+- [01:48:56,040 - 01:48:56,440] Oh,
+- [01:48:56,440 - 01:48:56,700] my God.
+- [01:48:56,720 - 01:48:59,540] It really is slowly sinking.
+- [01:48:59,720 - 01:49:01,460] How long does it take for it to sink?
+- [01:49:01,520 - 01:49:03,320] More than 10 billion years.
+- [01:49:04,300 - 01:49:06,720] But their finest measurements tell them,
+- [01:49:06,720 - 01:49:07,000] no,
+- [01:49:07,000 - 01:49:09,760] it's not that things are perfectly adjusted.
+- [01:49:10,120 - 01:49:12,120] We'll have to explain why they're perfectly adjusted.
+- [01:49:12,600 - 01:49:14,120] They're not perfectly adjusted.
+- [01:49:14,920 - 01:49:18,080] They're just adjusted to 123 decimal places.
+- [01:49:18,180 - 01:49:20,280] And at the 124th decimal place,
+- [01:49:20,280 - 01:49:20,740] they're sinking.
+- [01:49:21,860 - 01:49:22,680] Excuse me.
+- [01:49:22,900 - 01:49:26,160] Isn't this precision violating the uncertainty principle?
+- [01:49:27,200 - 01:49:27,660] No.
+- [01:49:28,200 - 01:49:30,800] Any one thing can be as accurate as your life.
+- [01:49:31,780 - 01:49:32,240] Oh,
+- [01:49:32,240 - 01:49:32,400] yes.
+- [01:49:34,040 - 01:49:34,500] Question?
+- [01:49:34,880 - 01:49:35,100] Yes.
+- [01:49:37,740 - 01:49:39,020] When you gave this explanation,
+- [01:49:39,020 - 01:49:39,380] you said,
+- [01:49:39,460 - 01:49:42,540] this is an explanation of the anthropic principle
+- [01:49:42,540 - 01:49:43,500] that I'm comfortable with.
+- [01:49:43,640 - 01:49:43,920] Are there?
+- [01:49:44,120 - 01:49:44,360] No,
+- [01:49:44,360 - 01:49:46,380] I wouldn't say it's an explanation.
+- [01:49:46,420 - 01:49:48,640] I would say it's a use of the anthropic principle
+- [01:49:48,640 - 01:49:49,720] that I'm comfortable with,
+- [01:49:49,720 - 01:49:49,940] say.
+- [01:49:50,080 - 01:49:50,520] Right,
+- [01:49:50,520 - 01:49:53,200] but what are some other uses
+- [01:49:53,200 - 01:49:54,800] that you are not comfortable with?
+- [01:49:56,880 - 01:49:57,360] Look,
+- [01:49:57,360 - 01:50:01,580] I have no idea if there was an intelligence,
+- [01:50:01,840 - 01:50:02,940] benevolent or not,
+- [01:50:02,940 - 01:50:04,340] that created the universe.
+- [01:50:04,720 - 01:50:07,300] I do not know and I don't pretend to know.
+- [01:50:07,360 - 01:50:08,510] So are you saying that
+- [01:50:08,510 - 01:50:09,660] others sort of give that spin
+- [01:50:09,660 - 01:50:10,740] on things a little bit?
+- [01:50:10,980 - 01:50:11,520] I suppose.
+- [01:50:11,720 - 01:50:12,900] Not many scientists do.
+- [01:50:13,040 - 01:50:13,300] Yeah.
+- [01:50:13,340 - 01:50:14,700] At least at one time.
+- [01:50:17,720 - 01:50:18,200] OK,
+- [01:50:18,200 - 01:50:19,890] there are other uses of it
+- [01:50:19,890 - 01:50:21,580] which I find much less compelling.
+- [01:50:22,380 - 01:50:25,720] There are all sorts of models,
+- [01:50:25,720 - 01:50:28,040] but there are also modest coincidences.
+- [01:50:28,800 - 01:50:31,940] If any of them were not satisfied,
+- [01:50:32,640 - 01:50:36,000] they might be enough to destroy life on Earth.
+- [01:50:37,720 - 01:50:39,190] If we were to make
+- [01:50:39,190 - 01:50:40,660] a list of the elementary particles,
+- [01:50:41,540 - 01:50:44,220] we would find that almost all of the known ones,
+- [01:50:44,420 - 01:50:47,700] almost all of them are necessary for our own existence.
+- [01:50:48,320 - 01:50:49,640] On the other hand,
+- [01:50:49,640 - 01:50:52,220] our understanding of particle physics
+- [01:50:52,220 - 01:50:54,700] would allow just about any one of them
+- [01:50:54,700 - 01:50:57,040] to not be there or other ones to be there.
+- [01:50:57,280 - 01:50:57,940] For example,
+- [01:50:57,940 - 01:50:58,160] I mean,
+- [01:50:58,160 - 01:50:59,340] stop thinking about the particles
+- [01:50:59,340 - 01:50:59,900] you know about.
+- [01:51:00,620 - 01:51:02,300] A photon is the lightest.
+- [01:51:02,320 - 01:51:03,740] Where would we be without a photon?
+- [01:51:04,140 - 01:51:05,120] There would be no light,
+- [01:51:05,120 - 01:51:06,560] no heat from the sun.
+- [01:51:07,140 - 01:51:08,020] Worse than that,
+- [01:51:08,020 - 01:51:10,620] there would be no photons jumping back and forth
+- [01:51:10,620 - 01:51:12,000] between the atomic nucleus and
+- [01:51:12,000 - 01:51:13,380] the electron to hold it together.
+- [01:51:14,620 - 01:51:15,540] No chemistry,
+- [01:51:15,540 - 01:51:16,540] we wouldn't be here.
+- [01:51:17,260 - 01:51:20,360] What about no neutrinos?
+- [01:51:20,380 - 01:51:21,500] No neutrinos,
+- [01:51:21,500 - 01:51:22,900] there would be no nuclear reactions
+- [01:51:22,900 - 01:51:25,800] of the kind which created the elements
+- [01:51:25,800 - 01:51:28,340] from the time of the Big Bang.
+- [01:51:28,780 - 01:51:32,080] So the existence of carbon and all these other elements
+- [01:51:32,080 - 01:51:34,280] that make us up wouldn't be here without neutrinos.
+- [01:51:35,040 - 01:51:36,540] What about no electrons?
+- [01:51:36,820 - 01:51:36,980] Well,
+- [01:51:36,980 - 01:51:38,380] no electrons is a clear disaster,
+- [01:51:38,740 - 01:51:39,720] there's no question of that.
+- [01:51:40,000 - 01:51:41,240] What about no quarks?
+- [01:51:41,380 - 01:51:42,240] No quarks,
+- [01:51:42,240 - 01:51:42,780] no protons,
+- [01:51:42,780 - 01:51:43,380] neutrons.
+- [01:51:43,860 - 01:51:46,620] What if you change the parameters a little bit?
+- [01:51:47,020 - 01:51:47,960] What if you...
+- [01:51:48,600 - 01:51:50,540] It was a puzzle for many
+- [01:51:50,540 - 01:51:52,480] years and still is a puzzle.
+- [01:51:53,080 - 01:51:55,860] Why the proton is lighter than the neutron?
+- [01:51:56,300 - 01:51:58,440] In the early days of nuclear physics,
+- [01:51:58,540 - 01:52:00,780] this was a great puzzle because the electron is charged.
+- [01:52:01,420 - 01:52:04,160] You would have thought its electrostatic energy
+- [01:52:05,480 - 01:52:07,760] would make it a little bit heavier than the neutron.
+- [01:52:08,560 - 01:52:11,500] Neutrons and protons are twins.
+- [01:52:13,160 - 01:52:15,860] They are almost exactly the same
+- [01:52:15,860 - 01:52:18,080] with the exception that the proton
+- [01:52:18,420 - 01:52:20,420] has a little bit of positive electric charge.
+- [01:52:21,500 - 01:52:22,060] Ordinarily,
+- [01:52:22,060 - 01:52:22,760] you would say that,
+- [01:52:22,760 - 01:52:22,880] hey,
+- [01:52:22,900 - 01:52:23,780] that increases its energy.
+- [01:52:24,520 - 01:52:27,240] It takes energy to pull together a charge.
+- [01:52:27,680 - 01:52:29,120] So that increases its energy.
+- [01:52:29,220 - 01:52:30,960] Protons would be a little bit heavier than the neutron.
+- [01:52:32,580 - 01:52:35,120] It would have been a disaster because if the proton
+- [01:52:35,120 - 01:52:36,400] was heavier than the neutron,
+- [01:52:36,580 - 01:52:38,620] the proton would decay into neutrons
+- [01:52:38,620 - 01:52:40,640] instead of the neutron decaying into protons.
+- [01:52:41,620 - 01:52:43,920] If the proton decayed into neutrons,
+- [01:52:45,620 - 01:52:46,960] there would be no hydrogen.
+- [01:52:47,320 - 01:52:49,760] There would be nothing.
+- [01:52:50,580 - 01:52:51,720] We wouldn't be here.
+- [01:52:52,900 - 01:52:55,940] So the little tiny difference between proton and neutron
+- [01:52:55,940 - 01:52:56,500] is small,
+- [01:52:56,500 - 01:52:58,620] which happens to go the wrong way
+- [01:52:58,620 - 01:53:01,220] from expectations is absolutely essential
+- [01:53:01,220 - 01:53:02,200] to our own existence.
+- [01:53:04,360 - 01:53:06,200] All sorts of other...
+- [01:53:07,874 - 01:53:08,474] フェインを見せる
+- [01:53:09,314 - 01:53:15,634] What would happen if the electromagnetic coupling constant,
+- [01:53:15,774 - 01:53:17,014] the fine structure constant,
+- [01:53:17,014 - 01:53:18,894] which is one over 137,
+- [01:53:19,074 - 01:53:20,694] what would happen if it was one over 10
+- [01:53:20,694 - 01:53:22,434] instead of one over 137?
+- [01:53:22,894 - 01:53:23,454] Well,
+- [01:53:23,454 - 01:53:25,514] then the atom would be very,
+- [01:53:25,514 - 01:53:26,634] very tightly bound,
+- [01:53:27,274 - 01:53:30,174] and ordinary chemistry would probably go awry.
+- [01:53:33,294 - 01:53:35,554] And what would happen if the electron
+- [01:53:35,554 - 01:53:36,774] were heavier than the proton?
+- [01:53:36,774 - 01:53:38,784] It would be buried deep
+- [01:53:38,784 - 01:53:40,794] inside the center of the atom
+- [01:53:40,794 - 01:53:42,514] instead of having a valence structure.
+- [01:53:43,234 - 01:53:46,494] So you can look at physics as we know it,
+- [01:53:46,554 - 01:53:48,034] which means largely particle physics,
+- [01:53:48,744 - 01:53:49,614] and you can say,
+- [01:53:49,614 - 01:53:50,034] you know,
+- [01:53:50,034 - 01:53:52,674] there's so many different things
+- [01:53:52,674 - 01:53:54,134] that you could have changed by 10,
+- [01:53:54,134 - 01:53:55,094] 20%,
+- [01:53:55,094 - 01:53:57,034] or even 1% here and there,
+- [01:53:57,464 - 01:54:00,314] and any one of them would have destroyed our existence.
+- [01:54:02,254 - 01:54:05,614] I can easily imagine 1% accidents.
+- [01:54:06,774 - 01:54:09,774] I can even imagine 10 1% accidents,
+- [01:54:09,814 - 01:54:11,234] although it gets a little harder.
+- [01:54:13,374 - 01:54:17,654] Are those accidents sufficient to really push us
+- [01:54:17,654 - 01:54:19,134] in the anthropic direction?
+- [01:54:20,794 - 01:54:22,034] I'm not gonna answer that.
+- [01:54:22,114 - 01:54:23,054] I don't have an answer to that.
+- [01:54:23,134 - 01:54:24,694] That's a matter of taste,
+- [01:54:24,874 - 01:54:27,104] but the accidents of one
+- [01:54:27,104 - 01:54:29,334] part of 10 to the 123,
+- [01:54:29,754 - 01:54:30,634] or in some other case,
+- [01:54:30,634 - 01:54:32,114] one part of 10 to the 60,
+- [01:54:32,334 - 01:54:34,694] or something else having to do with the Higgs boson,
+- [01:54:36,774 - 01:54:37,174] or one part of 10 to the 30,
+- [01:54:37,174 - 01:54:37,574] I'm sorry,
+- [01:54:37,674 - 01:54:38,734] one part of 10 to the 30,
+- [01:54:39,994 - 01:54:41,774] those are not the kind of accidents
+- [01:54:41,774 - 01:54:43,654] that you can imagine are accidental,
+- [01:54:43,854 - 01:54:45,374] one part of 10 to the 60,
+- [01:54:45,374 - 01:54:46,174] or 10 to the 120.
+- [01:54:48,334 - 01:54:52,394] So I think if it wasn't for the cosmological constant
+- [01:54:52,394 - 01:54:54,294] and the other fine-tuning,
+- [01:54:54,294 - 01:54:55,534] comparable fine-tuning,
+- [01:54:56,814 - 01:55:01,174] I think we would not be,
+- [01:55:02,394 - 01:55:05,034] most serious physicists would be rejecting
+- [01:55:05,034 - 01:55:06,374] the anthropic explanation.
+- [01:55:07,554 - 01:55:08,934] Maybe not completely,
+- [01:55:08,934 - 01:55:11,774] but not with the same support.
+- [01:55:15,714 - 01:55:18,634] That doesn't mean that every physicist approves of it.
+- [01:55:19,214 - 01:55:20,934] They just don't have another explanation.
+- [01:55:22,154 - 01:55:24,374] Spinehart and some other guys in April
+- [01:55:24,374 - 01:55:26,774] had a set of inflationary paradigm
+- [01:55:26,774 - 01:55:28,314] and trouble after 2013.
+- [01:55:29,673 - 01:55:31,154] Have you seen what they said?
+- [01:55:31,574 - 01:55:35,994] They say basically most of the inflationary models
+- [01:55:35,994 - 01:55:36,694] don't work.
+- [01:55:36,834 - 01:55:37,494] Who said that?
+- [01:55:38,174 - 01:55:39,014] Paul J.
+- [01:55:39,014 - 01:55:39,734] Spinehart,
+- [01:55:39,734 - 01:55:40,834] Abraham Lube.
+- [01:55:41,394 - 01:55:42,574] Who said that?
+- [01:55:43,574 - 01:55:46,674] Abraham Lube and Eloy B and Adam.
+- [01:55:46,694 - 01:55:46,854] Okay,
+- [01:55:46,854 - 01:55:48,394] these are contrarians.
+- [01:55:51,254 - 01:55:52,534] The vast,
+- [01:55:52,534 - 01:55:52,894] vast,
+- [01:55:52,894 - 01:55:53,354] vast,
+- [01:55:53,354 - 01:55:54,954] overwhelming majority
+- [01:55:54,954 - 01:55:57,874] of cosmologists and physicists believe in inflation.
+- [01:55:58,734 - 01:56:03,954] Now they said that plot 2013 results are in
+- [01:56:03,954 - 01:56:05,974] and that they knock out most of the,
+- [01:56:07,574 - 01:56:08,054] Well,
+- [01:56:08,054 - 01:56:09,074] they didn't model the world.
+- [01:56:10,334 - 01:56:10,814] Sure.
+- [01:56:11,014 - 01:56:12,914] People make up a lot of wild models.
+- [01:56:13,214 - 01:56:14,934] And then when good data comes in,
+- [01:56:14,954 - 01:56:16,474] it knocks out most of the wild models
+- [01:56:17,374 - 01:56:19,314] and leaves the sensible ones.
+- [01:56:20,154 - 01:56:21,034] Nothing is done.
+- [01:56:21,274 - 01:56:23,374] You have 500 models.
+- [01:56:24,054 - 01:56:26,754] One of them is the gold standard model.
+- [01:56:27,034 - 01:56:29,554] And the data comes in and knocks out 499.
+- [01:56:29,894 - 01:56:30,174] Good.
+- [01:56:31,954 - 01:56:32,434] Unfortunately,
+- [01:56:32,434 - 01:56:33,714] it's not that good.
+- [01:56:33,714 - 01:56:33,794] Sure.
+- [01:56:34,794 - 01:56:35,354] Yeah,
+- [01:56:35,354 - 01:56:35,534] no.
+- [01:56:35,614 - 01:56:35,974] This bit,
+- [01:56:35,974 - 01:56:36,354] no,
+- [01:56:36,354 - 01:56:36,494] no,
+- [01:56:36,494 - 01:56:36,714] no.
+- [01:56:36,714 - 01:56:40,004] There are people with axes
+- [01:56:40,004 - 01:56:43,294] that could fit with the grind.
+- [01:56:43,734 - 01:56:46,994] Physics is not a highly politicized subject.
+- [01:56:47,094 - 01:56:47,554] It's not.
+- [01:56:47,734 - 01:56:48,554] But here and there,
+- [01:56:48,554 - 01:56:50,674] it does have people in it
+- [01:56:51,474 - 01:56:57,034] who get very highly politicized about their own ideas.
+- [01:56:57,974 - 01:57:00,554] And going around saying things like that,
+- [01:57:00,554 - 01:57:01,074] I think,
+- [01:57:01,074 - 01:57:02,154] is irresponsible,
+- [01:57:02,154 - 01:57:02,834] frankly.
+- [01:57:03,054 - 01:57:03,694] I would consider that.
+- [01:57:03,694 - 01:57:04,294] I would consider that irresponsible.
+- [01:57:05,394 - 01:57:06,754] I do consider it irresponsible.
+- [01:57:07,254 - 01:57:08,074] Paul J.
+- [01:57:08,074 - 01:57:12,794] Steinhardt is not the most responsible cosmologist.
+- [01:57:13,074 - 01:57:13,554] Sorry,
+- [01:57:13,554 - 01:57:13,814] Paul.
+- [01:57:14,614 - 01:57:15,334] It's true.
+- [01:57:16,114 - 01:57:16,634] Yes.
+- [01:57:17,014 - 01:57:20,014] Would it also be possible for the cosmological concept
+- [01:57:20,014 - 01:57:21,374] to vary in some sense,
+- [01:57:21,374 - 01:57:21,574] perhaps,
+- [01:57:21,574 - 01:57:22,174] over time?
+- [01:57:22,394 - 01:57:24,074] So instead of having like a ..
+- [01:57:25,094 - 01:57:27,694] There's no good theory in which it varies gradually.
+- [01:57:28,574 - 01:57:30,194] It can vary in a jump.
+- [01:57:30,774 - 01:57:33,074] It can vary in a jump if one of these,
+- [01:57:33,074 - 01:57:34,814] if one of these submarines nucleates
+- [01:57:34,814 - 01:57:36,034] with a different value of it.
+- [01:57:36,134 - 01:57:36,394] Yes,
+- [01:57:36,394 - 01:57:37,254] it can jump.
+- [01:57:38,014 - 01:57:41,414] There's no good theory in which it varies smoothly
+- [01:57:41,414 - 01:57:44,034] over such a long time scale,
+- [01:57:44,034 - 01:57:48,874] slow enough to be consistent
+- [01:57:48,874 - 01:57:49,534] with the data.
+- [01:57:51,334 - 01:57:52,594] That was another theory,
+- [01:57:52,594 - 01:57:53,094] a very,
+- [01:57:53,094 - 01:57:54,194] very slowly varying
+- [01:57:54,194 - 01:57:55,514] cosmological constant.
+- [01:57:55,614 - 01:57:57,654] But it doesn't seem to fit with anything we know.
+- [01:57:58,554 - 01:57:59,754] In any case,
+- [01:57:59,754 - 01:58:00,494] it would require,
+- [01:58:00,494 - 01:58:03,014] it turns out,
+- [01:58:03,014 - 01:58:03,054] you know,
+- [01:58:03,054 - 01:58:05,954] that they have a slowly varying version of it,
+- [01:58:05,954 - 01:58:06,114] which
+- [01:58:06,114 - 01:58:07,214] seconds down to zero,
+- [01:58:07,214 - 01:58:09,634] requires a fine tuning
+- [01:58:09,934 - 01:58:11,294] of several parameters,
+- [01:58:11,294 - 01:58:12,494] not just one,
+- [01:58:12,494 - 01:58:14,814] not just the vacuum
+- [01:58:14,814 - 01:58:15,754] potential energy,
+- [01:58:15,754 - 01:58:17,194] but several of its derivatives
+- [01:58:17,194 - 01:58:19,454] have to be fine tuned.
+- [01:58:20,014 - 01:58:22,034] So it's not a better explanation.
+- [01:58:24,234 - 01:58:24,794] Look,
+- [01:58:24,794 - 01:58:26,974] we don't know where this is going to go.
+- [01:58:27,114 - 01:58:28,994] Nobody knows at present where it's going to go.
+- [01:58:30,594 - 01:58:31,934] There are contrarians.
+- [01:58:32,054 - 01:58:32,754] There are people.
+- [01:58:32,754 - 01:58:34,894] There are people who have political agendas.
+- [01:58:35,874 - 01:58:36,754] I don't.
+- [01:58:36,834 - 01:58:38,014] I don't really.
+- [01:58:38,234 - 01:58:38,614] I don't.
+- [01:58:38,734 - 01:58:41,654] I'm not the inventor of inflation.
+- [01:58:42,694 - 01:58:44,954] I don't have a big stake in it.
+- [01:58:45,054 - 01:58:48,634] I will not win a Nobel Prize if it's confirmed.
+- [01:58:49,154 - 01:58:49,754] It is confirmed.
+- [01:58:49,974 - 01:58:50,734] It's highly confirmed.
+- [01:58:51,434 - 01:58:53,674] Somebody's going to win a Nobel Prize for it.
+- [01:58:54,734 - 01:58:55,774] But it ain't going to be me.
+- [01:59:00,033 - 01:59:01,494] The logic of it,
+- [01:59:01,494 - 01:59:01,834] to me,
+- [01:59:01,834 - 01:59:02,614] is extremely
+- [01:59:02,614 - 01:59:03,054] compelling.
+- [01:59:03,374 - 01:59:06,914] And I honestly cannot understand these people who
+- [01:59:06,914 - 01:59:09,514] say that Planck data is ruling out inflation.
+- [01:59:09,914 - 01:59:12,074] I think they are off base.
+- [01:59:15,733 - 01:59:18,034] But why trust me?
+- [01:59:18,054 - 01:59:18,654] Who am I?
+- [01:59:19,774 - 01:59:20,914] Does that apply?
+- [01:59:21,154 - 01:59:24,294] Does the anthropophic principle imply nucleation?
+- [01:59:25,734 - 01:59:28,274] It fits together with it very well.
+- [01:59:29,054 - 01:59:29,734] Now,
+- [01:59:29,734 - 01:59:31,374] you could go back to the submarines.
+- [01:59:31,734 - 01:59:32,014] You could.
+- [01:59:32,014 - 01:59:32,914] that you could say,
+- [01:59:32,914 - 01:59:33,574] well,
+- [01:59:33,574 - 01:59:35,234] the anthropic principle itself,
+- [01:59:36,234 - 01:59:39,214] all that says is we live in a submarine
+- [01:59:39,754 - 01:59:40,854] which is of the right
+- [01:59:40,854 - 01:59:41,954] type for us to live in.
+- [01:59:43,154 - 01:59:45,474] And which is cause and which is effect.
+- [01:59:45,594 - 01:59:45,694] Now,
+- [01:59:45,694 - 01:59:46,334] what's cause and effect?
+- [01:59:47,654 - 01:59:49,514] Do we explain the fact that we live
+- [01:59:49,514 - 01:59:50,584] in the right kind of submarine
+- [01:59:50,584 - 01:59:51,654] by the fact that we're here,
+- [01:59:51,754 - 01:59:53,254] or do we explain the fact that we're here
+- [01:59:53,254 - 01:59:54,204] by the fact that we live
+- [01:59:54,204 - 01:59:55,154] in the right kind of submarine?
+- [01:59:56,674 - 01:59:57,914] I prefer the latter.
+- [01:59:57,914 - 02:00:00,234] That we can understand why we're here
+- [02:00:01,274 - 02:00:04,014] as a consequence of there being enough
+- [02:00:04,654 - 02:00:05,874] right kinds of submarines,
+- [02:00:05,874 - 02:00:08,134] rather than to say the opposite,
+- [02:00:08,394 - 02:00:10,874] that we can explain the properties of submarines
+- [02:00:10,874 - 02:00:12,414] by the fact that we are here.
+- [02:00:13,654 - 02:00:14,814] That seems backward.
+- [02:00:16,014 - 02:00:19,134] Seems scientifically backward to put us
+- [02:00:19,134 - 02:00:20,584] at the center of the
+- [02:00:20,584 - 02:00:22,034] laws of nature to that extent.
+- [02:00:23,594 - 02:00:23,894] Yeah,
+- [02:00:23,894 - 02:00:26,414] I guess I think a misuse of it
+- [02:00:27,254 - 02:00:27,574] is going to be a misuse
+- [02:00:27,574 - 02:00:27,894] of the fact that we're here.
+- [02:00:27,894 - 02:00:32,034] We've tried to start explaining why the laws of nature
+- [02:00:32,034 - 02:00:34,024] have to be the way
+- [02:00:34,024 - 02:00:36,014] they are because we are here.
+- [02:00:39,414 - 02:00:41,734] It seems to me much less egregious to say
+- [02:00:41,734 - 02:00:43,614] that the laws of nature are highly variable,
+- [02:00:44,294 - 02:00:46,714] which theories tend to suggest anyway.
+- [02:00:47,394 - 02:00:48,294] Highly variable,
+- [02:00:48,294 - 02:00:50,454] environments are highly variable,
+- [02:00:51,214 - 02:00:53,094] and that we live in a temperate zone
+- [02:00:53,094 - 02:00:55,494] for the same reason that we all live in Antarctica.
+- [02:00:56,274 - 02:00:57,754] It's just too damn cold there.
+- [02:01:03,934 - 02:01:04,494] It's too cold.
+- [02:01:04,494 - 02:01:05,334] The real question,
+- [02:01:05,334 - 02:01:05,534] look,
+- [02:01:05,534 - 02:01:08,434] the real question is,
+- [02:01:08,554 - 02:01:10,214] apart from the fact that it's nine o'clock,
+- [02:01:10,314 - 02:01:12,914] the real question is how are we gonna find out?
+- [02:01:13,934 - 02:01:16,774] The agenda of those who hate the idea
+- [02:01:16,774 - 02:01:19,514] and who love the idea should be exactly the same.
+- [02:01:20,094 - 02:01:24,054] Take it seriously enough to either kill it
+- [02:01:24,054 - 02:01:25,994] or make it into science.
+- [02:01:27,894 - 02:01:29,594] The fact is that it looks very,
+- [02:01:29,594 - 02:01:31,074] very hard to do either.
+- [02:01:32,154 - 02:01:35,354] It looks extremely hard to find signatures
+- [02:01:35,354 - 02:01:38,894] of this kind of thing in data
+- [02:01:38,894 - 02:01:41,714] which would either kill it or confirm it.
+- [02:01:41,834 - 02:01:43,054] That's the real problem.
+- [02:01:43,454 - 02:01:46,394] The problem is not that it's bad philosophy
+- [02:01:46,394 - 02:01:49,554] or that it's religious or that it,
+- [02:01:51,973 - 02:01:53,603] one of my friends seems
+- [02:01:53,603 - 02:01:55,234] to think it's a terrible thing
+- [02:01:55,234 - 02:01:57,694] to propose because young people will,
+- [02:01:57,694 - 02:01:57,874] you know,
+- [02:01:57,874 - 02:02:01,174] their minds will be deformed by it
+- [02:02:01,174 - 02:02:03,614] and they will stop thinking about other explanations.
+- [02:02:04,614 - 02:02:05,094] Okay,
+- [02:02:05,094 - 02:02:06,574] these are political reasons.
+- [02:02:06,974 - 02:02:07,474] These are,
+- [02:02:07,474 - 02:02:08,154] oh,
+- [02:02:08,154 - 02:02:10,734] other people think it's a bad idea
+- [02:02:10,734 - 02:02:13,714] because it enables the religious right to say,
+- [02:02:13,794 - 02:02:13,994] ah,
+- [02:02:13,994 - 02:02:15,094] the world was created,
+- [02:02:15,094 - 02:02:15,534] though,
+- [02:02:15,534 - 02:02:16,734] just the right properties.
+- [02:02:17,454 - 02:02:18,674] None of these are science.
+- [02:02:18,774 - 02:02:19,374] That's not science.
+- [02:02:20,653 - 02:02:22,494] The scientific question is,
+- [02:02:22,494 - 02:02:24,594] is it true or is it not true?
+- [02:02:24,734 - 02:02:26,454] And if it is true or not true,
+- [02:02:26,454 - 02:02:27,854] how do you find out?
+- [02:02:27,854 - 02:02:29,034] How do you find confirming evidence?
+- [02:02:30,094 - 02:02:30,734] It's hard.
+- [02:02:30,954 - 02:02:31,274] In other words,
+- [02:02:31,274 - 02:02:32,834] you want to try to observe
+- [02:02:32,834 - 02:02:35,654] other submarines nucleating.
+- [02:02:35,874 - 02:02:36,174] Right,
+- [02:02:36,174 - 02:02:36,434] right.
+- [02:02:37,114 - 02:02:39,134] So if you're very lucky or unlucky,
+- [02:02:39,134 - 02:02:40,094] as the case may be,
+- [02:02:40,294 - 02:02:42,114] you might bump into another submarine
+- [02:02:43,114 - 02:02:45,074] that could be either lucky or not lucky.
+- [02:02:45,234 - 02:02:45,394] I mean,
+- [02:02:45,394 - 02:02:46,794] it's lucky if it doesn't kill you
+- [02:02:46,794 - 02:02:47,914] and you find out that
+- [02:02:47,914 - 02:02:49,034] there are other submarines out there
+- [02:02:49,034 - 02:02:51,154] and you confirm and you win a Nobel Prize.
+- [02:02:52,693 - 02:02:54,114] Or it could be bad.
+- [02:02:54,214 - 02:02:56,094] The submarine could make a hole in your submarine
+- [02:02:56,094 - 02:02:57,314] and then you sink to the bottom.
+- [02:02:57,534 - 02:02:57,834] Right.
+- [02:02:58,694 - 02:02:59,894] Still a good one.
+- [02:02:59,914 - 02:03:00,114] Right.
+- [02:03:00,214 - 02:03:01,594] In principle,
+- [02:03:01,594 - 02:03:03,174] there could be collisions
+- [02:03:03,174 - 02:03:06,534] between regions of space with different properties.
+- [02:03:09,194 - 02:03:11,194] It's expected to be extremely rare.
+- [02:03:12,434 - 02:03:15,554] Computation seems to say that it's extremely rare.
+- [02:03:15,894 - 02:03:16,534] Basically,
+- [02:03:16,534 - 02:03:20,614] computation seems to say that the ocean is
+- [02:03:20,614 - 02:03:21,494] exceedingly big,
+- [02:03:21,494 - 02:03:24,314] but the nucleation of submarines
+- [02:03:24,314 - 02:03:25,294] is very rare.
+- [02:03:26,194 - 02:03:27,834] It doesn't happen very often.
+- [02:03:27,854 - 02:03:29,294] It doesn't happen very often and very frequently.
+- [02:03:29,634 - 02:03:32,474] And so most submarines will last a long time
+- [02:03:32,474 - 02:03:33,914] without bending into a middle one.
+- [02:03:35,274 - 02:03:39,334] So we found no evidence in the cosmic microwave background
+- [02:03:39,334 - 02:03:40,634] for a collision like this.
+- [02:03:40,934 - 02:03:41,494] None.
+- [02:03:41,574 - 02:03:42,114] There's no evidence.
+- [02:03:42,354 - 02:03:43,534] It's probably not going to be there.
+- [02:03:43,834 - 02:03:45,314] So the only question is then,
+- [02:03:45,314 - 02:03:46,894] what other possible kinds
+- [02:03:46,894 - 02:03:52,194] of signatures could there be for the physics that
+- [02:03:52,194 - 02:03:53,654] goes into this kind of theory?
+- [02:03:54,734 - 02:03:55,514] It's hard.
+- [02:03:56,154 - 02:03:57,834] Nobody has a really good idea.
+- [02:03:59,714 - 02:04:01,834] That's the worst thing about this kind of idea,
+- [02:04:01,974 - 02:04:05,354] that it just looks overwhelmingly hard to find
+- [02:04:05,354 - 02:04:10,014] the convincing data for.
+- [02:04:11,254 - 02:04:11,814] OK.
+- [02:04:12,694 - 02:04:13,654] We are finished.
+- [02:04:14,474 - 02:04:15,254] Thank you.
+- [02:04:19,494 - 02:04:20,614] For more,
+- [02:04:20,614 - 02:04:23,054] please visit us at stanford.edu.
