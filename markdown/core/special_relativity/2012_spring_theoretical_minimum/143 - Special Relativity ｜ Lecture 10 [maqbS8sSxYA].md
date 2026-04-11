@@ -1,0 +1,3136 @@
+# Transcript
+
+Source: core/special_relativity/2012_spring_theoretical_minimum/143 - Special Relativity ｜ Lecture 10 [maqbS8sSxYA].mp4
+
+- [00:00:05,079 - 00:00:06,160] Stanford University
+- [00:00:08,359 - 00:00:09,120] All right,
+- [00:00:09,120 - 00:00:12,010] since everything I have here in the
+- [00:00:12,010 - 00:00:14,900] way of preliminaries before the real lecture
+- [00:00:14,900 - 00:00:17,630] tonight is also in notes
+- [00:00:17,630 - 00:00:20,360] that I'm going to have somebody,
+- [00:00:20,360 - 00:00:22,500] Kevin or anybody else who wants
+- [00:00:22,500 - 00:00:23,260] to put them up.
+- [00:00:23,260 - 00:00:25,750] Since I have these here and
+- [00:00:25,750 - 00:00:28,240] they're going to be put up,
+- [00:00:28,240 - 00:00:29,980] I will start
+- [00:00:30,000 - 00:00:31,600] talking about them now even
+- [00:00:31,600 - 00:00:33,200] though maybe not everybody is here.
+- [00:00:33,200 - 00:00:39,220] I think it was Byron,
+- [00:00:39,280 - 00:00:39,780] where is Byron?
+- [00:00:39,780 - 00:00:46,620] Byron caught an inconsistency in,
+- [00:00:46,620 - 00:00:50,260] it's not an inconsistency in my notes,
+- [00:00:52,199 - 00:00:54,249] it's an inconsistency between my
+- [00:00:54,249 - 00:00:56,300] notes and everybody else's notes.
+- [00:00:56,300 - 00:00:58,980] If you stick with
+- [00:00:58,980 - 00:00:59,460] a convention
+- [00:00:59,460 - 00:01:00,640] and you never change,
+- [00:01:00,640 - 00:01:02,520] you'll be okay and I do.
+- [00:01:02,520 - 00:01:05,860] The trouble is my conventions are the
+- [00:01:05,860 - 00:01:08,740] at some point are different than everybody else's.
+- [00:01:08,740 - 00:01:11,040] This is a common thing for me,
+- [00:01:11,040 - 00:01:11,140] it
+- [00:01:11,140 - 00:01:13,520] happens to me all the time and the
+- [00:01:13,520 - 00:01:15,900] reason is I can't stand reading other people's equations.
+- [00:01:16,180 - 00:01:16,640] It's for me,
+- [00:01:16,640 - 00:01:18,740] it's an easier thing to write
+- [00:01:18,740 - 00:01:20,840] a textbook than to read a textbook,
+- [00:01:20,840 - 00:01:22,340] it really
+- [00:01:22,340 - 00:01:22,640] is.
+- [00:01:22,640 - 00:01:25,680] So when I sit down to prepare a course,
+- [00:01:25,680 - 00:01:27,560] I do it step by
+- [00:01:27,560 - 00:01:29,440] step by step working out the
+- [00:01:29,460 - 00:01:29,600] equations,
+- [00:01:29,600 - 00:01:33,250] working out the details and I tend
+- [00:01:33,250 - 00:01:36,900] to work them out in my own notations
+- [00:01:36,900 - 00:01:39,690] which over the years have never
+- [00:01:39,690 - 00:01:42,480] necessarily been made consistent with everybody else's.
+- [00:01:42,960 - 00:01:44,590] So there's always some point in
+- [00:01:44,590 - 00:01:46,220] the class where I have to tell,
+- [00:01:46,220 - 00:01:46,760] not always,
+- [00:01:46,760 - 00:01:47,440] but sometimes
+- [00:01:47,440 - 00:01:48,430] there's a point in the class
+- [00:01:48,430 - 00:01:49,420] which I have to tell people,
+- [00:01:49,420 - 00:01:51,300] my conventions are different
+- [00:01:51,300 - 00:01:52,400] than other people's conventions,
+- [00:01:52,400 - 00:01:54,660] here's the connection.
+- [00:01:54,660 - 00:01:56,200] I'll do that now.
+- [00:01:59,460 - 00:01:59,460] So,
+- [00:01:59,460 - 00:02:01,790] apparently my Maxwell equations
+- [00:02:01,790 - 00:02:04,120] are different than Maxwell's equations.
+- [00:02:04,120 - 00:02:06,940] A couple of signs,
+- [00:02:07,200 - 00:02:08,320] no more than a couple of signs,
+- [00:02:08,320 - 00:02:12,620] but those signs actually are just conventions and I'll
+- [00:02:12,620 - 00:02:14,470] tell you precisely how to
+- [00:02:14,470 - 00:02:16,320] relate the two sets of conventions.
+- [00:02:19,160 - 00:02:20,160] First of all,
+- [00:02:20,160 - 00:02:21,520] it has to do with
+- [00:02:21,520 - 00:02:22,880] the definition of the electric field.
+- [00:02:22,880 - 00:02:25,000] Let me write down first,
+- [00:02:26,740 - 00:02:28,220] E sub M.
+- [00:02:28,220 - 00:02:29,440] M is not an E,
+- [00:02:29,440 - 00:02:29,440] it's an E.
+- [00:02:29,440 - 00:02:29,440] It's an E.
+- [00:02:29,440 - 00:02:29,440] It's an E.
+- [00:02:29,440 - 00:02:29,440] It's an E.
+- [00:02:29,440 - 00:02:29,440] It's an E.
+- [00:02:29,440 - 00:02:29,440] It's an
+- [00:02:29,440 - 00:02:30,940] E.
+- [00:02:39,140 - 00:02:41,360] So essex is an E,
+- [00:02:41,360 - 00:02:41,660] we don't have given that,
+- [00:02:41,660 - 00:02:42,040] let's say the resistance of that resistance
+- [00:02:42,040 - 00:02:42,480] is negative.
+- [00:02:42,480 - 00:02:44,160] So that's I over W equals Y.
+- [00:02:44,160 - 00:02:54,900] SO here we have x cube times angle times
+- [00:02:54,900 - 00:02:55,540] terminal square times Ca times Y.
+- [00:02:55,540 - 00:02:59,240] That's just integral such that it's the same kind of
+- [00:02:59,240 - 00:02:59,420] part.
+- [00:03:01,180 - 00:03:05,540] of the vector potential divided by dt.
+- [00:03:06,340 - 00:03:08,810] So there's one term in it which
+- [00:03:08,810 - 00:03:11,280] has the time derivative of the vector potential.
+- [00:03:11,680 - 00:03:13,220] The vector potential now,
+- [00:03:13,220 - 00:03:15,480] I mean the three-component vector potential.
+- [00:03:15,760 - 00:03:18,060] If I wanted to stick some indices on here,
+- [00:03:18,280 - 00:03:20,880] I would say that this might be the x
+- [00:03:20,880 - 00:03:23,480] or y or z component of the electric field
+- [00:03:23,480 - 00:03:26,140] being related to the x or y or z
+- [00:03:26,140 - 00:03:28,800] component of the time derivative of the vector potential.
+- [00:03:29,420 - 00:03:32,180] And then plus the gradient,
+- [00:03:32,180 - 00:03:34,420] which is also a vector operation,
+- [00:03:35,160 - 00:03:38,600] of the time component of the vector potential.
+- [00:03:40,160 - 00:03:41,180] That's Maxwell.
+- [00:03:41,940 - 00:03:42,960] Where he got that from,
+- [00:03:42,960 - 00:03:43,480] I don't know.
+- [00:03:46,140 - 00:03:48,780] My definition that I have been using,
+- [00:03:49,820 - 00:03:51,240] this is Max's,
+- [00:03:51,240 - 00:03:52,380] this is Lenz,
+- [00:03:54,260 - 00:03:58,560] is exactly the opposite plus the a by.
+- [00:03:59,420 - 00:04:04,960] Y dt minus gradient of a naught.
+- [00:04:07,500 - 00:04:08,480] Just a definition.
+- [00:04:08,680 - 00:04:09,800] You can do it any way you want.
+- [00:04:10,020 - 00:04:11,580] Just make sure at the end of the day
+- [00:04:11,580 - 00:04:13,240] that the things that you're
+- [00:04:13,240 - 00:04:14,900] calculating to compare with experiment
+- [00:04:14,900 - 00:04:18,380] are being compared in a consistent way.
+- [00:04:18,959 - 00:04:19,680] And so,
+- [00:04:19,680 - 00:04:21,740] to put it shortly,
+- [00:04:24,860 - 00:04:29,020] my definition and Maxwell's definition,
+- [00:04:29,780 - 00:04:31,720] differ by a minus sign.
+- [00:04:33,400 - 00:04:34,140] That's it.
+- [00:04:34,340 - 00:04:34,940] Actually,
+- [00:04:34,940 - 00:04:38,520] we'll see there's another convention
+- [00:04:38,520 - 00:04:40,800] that we'll also have to change a little bit.
+- [00:04:41,300 - 00:04:41,900] But,
+- [00:04:41,900 - 00:04:45,240] if Maxwell's equations,
+- [00:04:45,480 - 00:04:47,560] the equations that Maxwell wrote down,
+- [00:04:49,679 - 00:04:53,980] are of the form del cross e,
+- [00:04:54,260 - 00:04:55,680] this is Maxwell,
+- [00:04:57,159 - 00:04:58,480] is equal to minus,
+- [00:04:59,560 - 00:05:00,760] db by dt.
+- [00:05:01,160 - 00:05:01,500] Now,
+- [00:05:01,500 - 00:05:02,280] incidentally,
+- [00:05:02,280 - 00:05:04,600] we all agree
+- [00:05:05,160 - 00:05:06,780] on the definition of b.
+- [00:05:06,900 - 00:05:07,820] I'll write it down.
+- [00:05:08,000 - 00:05:11,160] That b is just equal to the curl
+- [00:05:11,780 - 00:05:13,440] of the vector potential.
+- [00:05:14,800 - 00:05:15,320] That,
+- [00:05:15,320 - 00:05:17,160] Maxwell and I agree about.
+- [00:05:17,660 - 00:05:19,120] When I say Maxwell and I,
+- [00:05:19,200 - 00:05:20,420] he's not around to defend himself.
+- [00:05:20,640 - 00:05:21,480] I mean the conventions.
+- [00:05:21,940 - 00:05:23,180] The conventions agree.
+- [00:05:23,280 - 00:05:23,400] So,
+- [00:05:23,400 - 00:05:27,340] I don't have to indicate,
+- [00:05:28,760 - 00:05:29,400] with a,
+- [00:05:29,400 - 00:05:30,180] with a magnetic field,
+- [00:05:30,380 - 00:05:32,040] whose conventions I'm using.
+- [00:05:32,200 - 00:05:32,740] They're the same.
+- [00:05:33,200 - 00:05:33,820] All right.
+- [00:05:33,840 - 00:05:33,940] So,
+- [00:05:33,940 - 00:05:35,500] if Maxwell has that equation,
+- [00:05:35,800 - 00:05:37,340] let's write what Maxwell would write down.
+- [00:05:37,520 - 00:05:40,360] He would also write down del dot b equals zero.
+- [00:05:43,500 - 00:05:47,800] He would write down del cross b
+- [00:05:50,240 - 00:05:56,840] equals d e Maxwell by dt,
+- [00:06:00,320 - 00:06:01,620] plus j.
+- [00:06:03,099 - 00:06:03,900] Now,
+- [00:06:03,900 - 00:06:05,780] whose convention is j,
+- [00:06:06,000 - 00:06:07,500] positive or negative?
+- [00:06:07,760 - 00:06:09,440] The convention about j
+- [00:06:10,120 - 00:06:12,880] was established actually not by Maxwell,
+- [00:06:13,120 - 00:06:14,720] but by Benjamin Franklin.
+- [00:06:15,160 - 00:06:15,700] All right.
+- [00:06:15,740 - 00:06:16,220] So,
+- [00:06:16,220 - 00:06:19,420] with Franklin's definition of j and rho,
+- [00:06:19,640 - 00:06:22,440] current and charge density,
+- [00:06:22,740 - 00:06:25,660] in which the electron carries a negative charge,
+- [00:06:26,000 - 00:06:28,760] we would put here Franklin's,
+- [00:06:29,400 - 00:06:30,960] the definition of j.
+- [00:06:31,300 - 00:06:36,720] And we would also write down del dot e,
+- [00:06:37,580 - 00:06:40,040] the divergence of the electric field,
+- [00:06:40,220 - 00:06:43,040] is the charge density,
+- [00:06:43,280 - 00:06:47,680] but with Franklin's notation for charge.
+- [00:06:48,180 - 00:06:48,920] All right.
+- [00:06:49,480 - 00:06:52,360] Currents through wires being carried by electrons
+- [00:06:52,360 - 00:06:53,400] are negative.
+- [00:06:54,520 - 00:06:55,420] All right.
+- [00:06:55,420 - 00:06:55,540] Now,
+- [00:06:55,540 - 00:06:58,100] if you make the following changes of convention,
+- [00:06:58,380 - 00:06:59,380] you change the,
+- [00:06:59,380 - 00:07:00,840] you change the sign of the electric field,
+- [00:07:01,060 - 00:07:03,900] that changes the relative sign of these two,
+- [00:07:04,140 - 00:07:11,520] and it turns it into del cross Leonard's electric field,
+- [00:07:11,640 - 00:07:13,480] is plus d b by dt.
+- [00:07:14,700 - 00:07:16,440] Del dot b equals zero,
+- [00:07:16,540 - 00:07:17,600] that doesn't change.
+- [00:07:19,060 - 00:07:23,860] Del cross b becomes minus
+- [00:07:28,200 - 00:07:28,840] Lenz's,
+- [00:07:28,840 - 00:07:31,240] notation for the electric field.
+- [00:07:32,980 - 00:07:33,740] But,
+- [00:07:33,740 - 00:07:39,260] since my notation for current is opposite of Franklin's,
+- [00:07:39,380 - 00:07:43,920] this becomes minus j Leonard.
+- [00:07:45,720 - 00:07:47,300] How about this one here?
+- [00:07:49,540 - 00:07:51,600] This one doesn't change,
+- [00:07:51,880 - 00:07:54,740] because both the sign of the electric field
+- [00:07:54,740 - 00:07:57,520] and the sign of the charge density,
+- [00:07:59,320 - 00:08:01,760] if I use the L notation,
+- [00:08:02,080 - 00:08:03,120] doesn't change.
+- [00:08:03,540 - 00:08:04,140] All right.
+- [00:08:04,160 - 00:08:04,300] So,
+- [00:08:04,300 - 00:08:06,020] the main point is here that,
+- [00:08:10,900 - 00:08:12,840] through partly historical glitches,
+- [00:08:13,520 - 00:08:17,220] and partly glitches in my own notes,
+- [00:08:18,700 - 00:08:21,460] I wound up with a notation for electric field,
+- [00:08:21,640 - 00:08:23,640] which was the opposite of the Maxwell,
+- [00:08:23,940 - 00:08:27,040] and so we wound up with some minus signs.
+- [00:08:27,320 - 00:08:28,720] The importance of it,
+- [00:08:28,840 - 00:08:30,480] is just to be consistent.
+- [00:08:30,860 - 00:08:32,020] To be consistent,
+- [00:08:32,240 - 00:08:33,380] carry through consistently,
+- [00:08:33,799 - 00:08:35,480] and of course at the end of the day,
+- [00:08:35,640 - 00:08:36,919] if you're looking up,
+- [00:08:36,960 - 00:08:38,520] or you're trying to compare your theory,
+- [00:08:38,640 - 00:08:42,919] with an experiment that's published in the physical review,
+- [00:08:43,520 - 00:08:45,250] and the physical review quotes
+- [00:08:45,250 - 00:08:46,980] a number for the electric field,
+- [00:08:47,380 - 00:08:49,860] you better make sure that your electric field
+- [00:08:49,860 - 00:08:51,720] is normalized in the same way,
+- [00:08:51,740 - 00:08:52,840] or has the same convention.
+- [00:08:54,460 - 00:08:56,160] The number of times in my life
+- [00:08:56,160 - 00:08:58,080] I have ever had to actually compare,
+- [00:08:58,080 - 00:09:02,340] with a number from the physical review,
+- [00:09:02,480 - 00:09:03,420] has been very small.
+- [00:09:05,160 - 00:09:05,660] So,
+- [00:09:05,660 - 00:09:06,160] I,
+- [00:09:07,860 - 00:09:09,320] until Byron's message,
+- [00:09:09,720 - 00:09:12,040] I never knew that I had the wrong sign
+- [00:09:12,040 - 00:09:13,000] for the electric field.
+- [00:09:13,500 - 00:09:14,000] Okay.
+- [00:09:14,640 - 00:09:15,580] That's true.
+- [00:09:18,700 - 00:09:19,700] Most likely,
+- [00:09:19,740 - 00:09:21,080] when I was teaching undergraduates,
+- [00:09:21,820 - 00:09:23,500] I probably corrected,
+- [00:09:23,820 - 00:09:26,000] this is probably not the first time I've done this,
+- [00:09:26,060 - 00:09:26,720] had this little,
+- [00:09:26,720 - 00:09:28,220] all right.
+- [00:09:28,220 - 00:09:28,580] Now,
+- [00:09:28,580 - 00:09:29,200] the next,
+- [00:09:29,220 - 00:09:32,280] the next thing I want to,
+- [00:09:32,320 - 00:09:34,540] preliminary that I want to discuss,
+- [00:09:34,760 - 00:09:36,420] is the notion of momentum.
+- [00:09:36,980 - 00:09:40,560] We have at least three concepts of momentum,
+- [00:09:41,900 - 00:09:44,520] and at least two of them will come up tonight.
+- [00:09:45,200 - 00:09:46,400] Maybe all three.
+- [00:09:46,860 - 00:09:47,380] So,
+- [00:09:47,380 - 00:09:48,100] I want to,
+- [00:09:49,480 - 00:09:52,090] I want to just go
+- [00:09:52,090 - 00:09:54,700] over the three concepts of momentum,
+- [00:09:54,800 - 00:09:55,400] and they're different.
+- [00:09:55,560 - 00:09:56,300] They're not the same.
+- [00:09:56,340 - 00:09:56,700] They're not the same.
+- [00:09:56,700 - 00:09:59,560] They're not three concepts,
+- [00:09:59,660 - 00:10:01,940] or three ways of thinking about the same thing.
+- [00:10:02,360 - 00:10:05,460] They're three ways of thinking about three different things.
+- [00:10:05,820 - 00:10:08,180] Things which in general have different values,
+- [00:10:08,580 - 00:10:09,780] different numerical values.
+- [00:10:10,640 - 00:10:13,600] The first concept of momentum,
+- [00:10:13,940 - 00:10:15,180] mechanical momentum,
+- [00:10:15,440 - 00:10:17,040] it's usually called mechanical momentum,
+- [00:10:17,560 - 00:10:18,300] I'll write it out,
+- [00:10:18,400 - 00:10:18,760] mechanical,
+- [00:10:23,699 - 00:10:24,900] mechanical momentum.
+- [00:10:25,640 - 00:10:28,060] That's the thing we write when we write mechanical,
+- [00:10:28,900 - 00:10:30,020] mechanical p.
+- [00:10:30,700 - 00:10:33,700] Mechanical p is just equal to mass times velocity.
+- [00:10:34,040 - 00:10:35,720] I'll assume we know what mass is,
+- [00:10:35,800 - 00:10:37,380] I'll assume we know what velocity is,
+- [00:10:37,560 - 00:10:38,760] or in other words,
+- [00:10:38,800 - 00:10:39,740] the piece of m,
+- [00:10:39,960 - 00:10:41,740] the mth component,
+- [00:10:42,040 - 00:10:42,320] x,
+- [00:10:42,320 - 00:10:42,620] y,
+- [00:10:42,620 - 00:10:42,940] or z,
+- [00:10:43,060 - 00:10:46,740] of momentum is the total mass of a system,
+- [00:10:48,100 - 00:10:50,460] times the time derivative of,
+- [00:10:50,640 - 00:10:51,240] in fact,
+- [00:10:51,240 - 00:10:53,060] it really is the time derivative
+- [00:10:53,060 - 00:10:54,880] of the center of mass position.
+- [00:10:54,880 - 00:10:56,780] If it's a single particle,
+- [00:10:56,920 - 00:10:58,480] then it's just the position of that particle.
+- [00:10:58,820 - 00:11:00,720] If it's a complex system,
+- [00:11:01,120 - 00:11:02,940] then it's just the center of mass position.
+- [00:11:04,640 - 00:11:07,040] And that's the notion of mechanical momentum.
+- [00:11:08,120 - 00:11:08,740] Next,
+- [00:11:10,300 - 00:11:12,540] the concept of canonical momentum.
+- [00:11:12,800 - 00:11:13,880] This is a more abstract.
+- [00:11:19,480 - 00:11:21,060] The canonical momentum,
+- [00:11:22,280 - 00:11:23,760] and that comes about
+- [00:11:23,760 - 00:11:25,580] when we start thinking about
+- [00:11:25,580 - 00:11:27,400] the Lagrangian formulation of mechanics.
+- [00:11:28,060 - 00:11:30,040] We have a Lagrangian of some sort.
+- [00:11:31,060 - 00:11:31,580] So,
+- [00:11:31,580 - 00:11:31,780] alright,
+- [00:11:31,780 - 00:11:32,000] this,
+- [00:11:32,640 - 00:11:33,440] let's start over here.
+- [00:11:33,520 - 00:11:34,500] We have a Lagrangian,
+- [00:11:34,540 - 00:11:36,280] and the Lagrangian l,
+- [00:11:36,460 - 00:11:38,660] I'm going to use for the Lagrangian,
+- [00:11:38,660 - 00:11:39,880] I'm going to use the square l,
+- [00:11:40,020 - 00:11:41,440] and not the script l for the moment.
+- [00:11:43,100 - 00:11:47,420] It's a function of a set of coordinates called qi,
+- [00:11:49,580 - 00:11:51,820] and their time derivatives,
+- [00:11:51,820 - 00:11:52,820] qi dot.
+- [00:11:53,220 - 00:11:53,480] This is a function of
+- [00:11:53,480 - 00:11:53,740] a set of coordinates called qi,
+- [00:11:53,760 - 00:11:55,360] this doesn't mean some particular qi,
+- [00:11:55,500 - 00:11:58,000] it means the set of coordinates
+- [00:11:58,000 - 00:11:59,660] and the set of time derivatives.
+- [00:12:00,940 - 00:12:03,600] And depending on the structure of that Lagrangian,
+- [00:12:03,780 - 00:12:05,820] it may begin with q dot
+- [00:12:05,820 - 00:12:07,860] one half m q dot squared,
+- [00:12:08,060 - 00:12:09,500] or it may start with something else.
+- [00:12:10,380 - 00:12:13,540] The Lagrangian may have a more general,
+- [00:12:13,600 - 00:12:14,520] more complex form,
+- [00:12:15,140 - 00:12:17,720] but the definition of canonical momentum,
+- [00:12:17,960 - 00:12:20,000] and now I'll write it as p sub i,
+- [00:12:22,120 - 00:12:23,740] the ith canonical momentum,
+- [00:12:23,740 - 00:12:28,020] is associated with the ith canonical coordinate,
+- [00:12:28,260 - 00:12:32,140] and it's just equal to the derivative of the Lagrangian
+- [00:12:32,140 - 00:12:35,020] with respect to qi dot.
+- [00:12:35,920 - 00:12:37,760] If the Lagrangian,
+- [00:12:37,840 - 00:12:41,380] if the coordinates q happen to be called x,
+- [00:12:42,940 - 00:12:44,040] x is q,
+- [00:12:44,300 - 00:12:46,820] and if the Lagrangian happens
+- [00:12:46,820 - 00:12:49,340] to be l equals one half,
+- [00:12:49,580 - 00:12:51,560] the mass of a particle,
+- [00:12:51,560 - 00:12:52,200] for example,
+- [00:12:52,200 - 00:12:55,360] times q dot squared i,
+- [00:12:57,140 - 00:12:58,500] or n,
+- [00:12:58,500 - 00:12:59,880] or whatever it happens to be,
+- [00:12:59,960 - 00:13:01,840] I'll use i in this equation,
+- [00:13:02,360 - 00:13:03,280] qi dot squared,
+- [00:13:03,900 - 00:13:05,940] plus perhaps some potential energy,
+- [00:13:06,160 - 00:13:07,940] or minus some potential energy,
+- [00:13:08,180 - 00:13:09,520] v of x,
+- [00:13:10,800 - 00:13:13,440] then the derivative of the Lagrangian
+- [00:13:13,440 - 00:13:14,940] with respect to the velocity
+- [00:13:14,940 - 00:13:17,840] is just the mechanical momentum.
+- [00:13:18,840 - 00:13:19,520] Okay?
+- [00:13:19,600 - 00:13:20,560] So in that case,
+- [00:13:20,560 - 00:13:21,900] for this simple Lagrangian,
+- [00:13:22,060 - 00:13:24,680] the canonical momentum
+- [00:13:24,680 - 00:13:26,900] and the mechanical momentum
+- [00:13:26,900 - 00:13:27,560] are the same.
+- [00:13:28,300 - 00:13:30,700] And for a wide class of Lagrangians,
+- [00:13:30,740 - 00:13:32,420] in which the kinetic energy
+- [00:13:32,420 - 00:13:34,180] is just expressed as the sums
+- [00:13:34,180 - 00:13:37,700] of masses times x dot squared.
+- [00:13:38,920 - 00:13:40,700] But I'll give you an example
+- [00:13:40,700 - 00:13:41,500] where it's not true,
+- [00:13:41,720 - 00:13:44,420] where the two kinds of momentum
+- [00:13:44,420 - 00:13:45,300] are not the same.
+- [00:13:45,820 - 00:13:47,680] If a particle is coupled,
+- [00:13:47,680 - 00:13:49,920] or is in the presence of a magnetic field,
+- [00:13:50,740 - 00:13:52,920] you can either get this from things
+- [00:13:52,920 - 00:13:53,740] we did this quarter,
+- [00:13:53,900 - 00:13:55,900] or you can go back to the notes
+- [00:13:55,900 - 00:13:56,960] on classical mechanics,
+- [00:13:57,260 - 00:13:59,680] where we did discuss particles
+- [00:14:00,200 - 00:14:01,280] and magnetic fields.
+- [00:14:01,700 - 00:14:05,880] Then the additional term representing
+- [00:14:05,880 - 00:14:09,020] the particle motion in the magnetic field,
+- [00:14:09,120 - 00:14:10,520] I think it's a minus if I remember,
+- [00:14:10,800 - 00:14:11,340] but again,
+- [00:14:11,340 - 00:14:12,740] I might have this wrong here,
+- [00:14:13,760 - 00:14:15,120] the electric charge,
+- [00:14:15,880 - 00:14:17,660] if you want to keep track of something,
+- [00:14:17,680 - 00:14:18,420] the speeds of light,
+- [00:14:18,540 - 00:14:20,120] you can put them in the denominator here,
+- [00:14:20,240 - 00:14:21,320] but I don't want to do that now,
+- [00:14:21,460 - 00:14:23,100] minus the electric charge
+- [00:14:23,680 - 00:14:24,960] times the velocity
+- [00:14:26,260 - 00:14:28,280] dotted into the vector potential,
+- [00:14:28,520 - 00:14:32,560] or just a x i dot a i.
+- [00:14:33,440 - 00:14:34,640] That's the vector potential.
+- [00:14:35,260 - 00:14:36,200] From that,
+- [00:14:36,200 - 00:14:37,760] from this we can derive
+- [00:14:37,760 - 00:14:39,140] the Lorentz force law
+- [00:14:39,620 - 00:14:42,220] by working out the Lagrangian equations of motion,
+- [00:14:42,500 - 00:14:45,240] but the only thing I'm emphasizing now
+- [00:14:45,240 - 00:14:47,260] is that the canonical momentum
+- [00:14:47,680 - 00:14:48,800] conjugate to x i now,
+- [00:14:49,000 - 00:14:49,840] p sub i,
+- [00:14:51,439 - 00:14:55,340] is not just m x i dot,
+- [00:14:55,979 - 00:14:57,640] but it also has a term from here,
+- [00:14:58,500 - 00:14:58,940] minus,
+- [00:15:00,066 - 00:15:00,286] 一
+- [00:15:01,090 - 00:15:01,610] a sub i.
+- [00:15:01,610 - 00:15:04,350] This is the canonical momentum.
+- [00:15:06,489 - 00:15:07,990] The canonical momentum,
+- [00:15:07,990 - 00:15:08,930] the right words to say,
+- [00:15:09,010 - 00:15:12,010] is that the canonical momentum is the
+- [00:15:12,930 - 00:15:16,990] mechanical momentum plus a piece coming from the vector
+- [00:15:16,990 - 00:15:17,390] potential.
+- [00:15:19,110 - 00:15:24,010] When we write Hamilton's equations,
+- [00:15:24,010 - 00:15:24,830] for example,
+- [00:15:25,380 - 00:15:26,930] when we do the canonical thing,
+- [00:15:26,930 - 00:15:27,930] when we do the
+- [00:15:27,930 - 00:15:31,650] mathematics of
+- [00:15:32,290 - 00:15:34,830] classical mechanics in Hamiltonian form,
+- [00:15:34,830 - 00:15:35,450] for example,
+- [00:15:35,530 - 00:15:38,690] the momentum always means the canonical momentum.
+- [00:15:39,650 - 00:15:43,250] That doesn't mean we don't want to sometimes shift
+- [00:15:44,010 - 00:15:47,750] everything into an equation so that on the left-hand side
+- [00:15:47,750 - 00:15:48,530] you have m,
+- [00:15:48,530 - 00:15:49,890] let's say,
+- [00:15:49,890 - 00:15:51,170] x double dot acceleration.
+- [00:15:51,750 - 00:15:53,500] You might want to write
+- [00:15:53,500 - 00:15:55,250] equations so that this thing appears
+- [00:15:56,230 - 00:15:57,810] on the left-hand side.
+- [00:15:57,930 - 00:15:59,230] But still,
+- [00:15:59,230 - 00:16:01,670] the canonical momentum is this object over here.
+- [00:16:03,210 - 00:16:05,170] The last notion of momentum,
+- [00:16:06,950 - 00:16:09,870] which also in many cases,
+- [00:16:09,870 - 00:16:10,750] in some cases,
+- [00:16:10,750 - 00:16:11,130] agrees
+- [00:16:11,690 - 00:16:16,370] with the mechanical momentum
+- [00:16:17,290 - 00:16:19,370] or the canonical momentum,
+- [00:16:19,550 - 00:16:20,670] sometimes does,
+- [00:16:20,670 - 00:16:21,530] sometimes it doesn't,
+- [00:16:21,530 - 00:16:23,410] is the quantity which is
+- [00:16:23,410 - 00:16:27,650] conserved by virtue of Noether's theorem,
+- [00:16:30,349 - 00:16:35,170] if the physical setup is translation invariant,
+- [00:16:35,190 - 00:16:38,010] invariant with respect to translations of space.
+- [00:16:38,830 - 00:16:39,710] In other words,
+- [00:16:39,710 - 00:16:40,710] if nothing changes,
+- [00:16:40,710 - 00:16:41,630] if the Lagrangian
+- [00:16:41,630 - 00:16:42,370] doesn't change,
+- [00:16:42,370 - 00:16:44,690] when you shift coordinates,
+- [00:16:44,690 - 00:16:45,930] x goes to x
+- [00:16:45,930 - 00:16:46,610] plus a constant,
+- [00:16:46,610 - 00:16:48,810] then there is a conserved quantity,
+- [00:16:49,010 - 00:16:51,450] and that quantity is called also momentum.
+- [00:16:52,070 - 00:16:53,890] So it's yet another thing.
+- [00:16:54,050 - 00:16:56,410] It may or may not be equal to this,
+- [00:16:56,410 - 00:16:57,910] it may or may not be equal to this,
+- [00:16:58,470 - 00:17:01,850] it's the quantity conserved
+- [00:17:01,850 - 00:17:05,230] by virtue of translation invariance.
+- [00:17:05,410 - 00:17:08,170] It is also unfortunately called p sub m,
+- [00:17:09,770 - 00:17:11,609] either sub m or super m,
+- [00:17:11,609 - 00:17:13,890] depending on whether you're using
+- [00:17:13,890 - 00:17:15,450] relativistic notation or not,
+- [00:17:15,450 - 00:17:18,390] but we're going to need that quantity.
+- [00:17:18,550 - 00:17:20,369] So let's remind ourselves what it is.
+- [00:17:20,630 - 00:17:22,630] I'm just going to call it q for quantity,
+- [00:17:22,630 - 00:17:23,030] okay?
+- [00:17:23,150 - 00:17:24,910] I won't call it p for the moment.
+- [00:17:25,310 - 00:17:26,829] If you have a symmetry,
+- [00:17:26,829 - 00:17:29,500] if you have a symmetry so
+- [00:17:29,500 - 00:17:32,170] that when the symmetry operation is performed,
+- [00:17:33,170 - 00:17:34,990] the q's transform.
+- [00:17:35,310 - 00:17:38,170] Let's suppose each q goes,
+- [00:17:38,170 - 00:17:41,490] when you do the transformation operation,
+- [00:17:45,770 - 00:17:50,670] let's say q sub i prime,
+- [00:17:50,670 - 00:17:52,730] the transformed q sub i,
+- [00:17:52,870 - 00:17:54,830] is equal to q sub i,
+- [00:17:57,449 - 00:17:58,030] plus,
+- [00:17:58,030 - 00:18:00,310] let's say a small infinitesimal correction,
+- [00:18:00,550 - 00:18:04,450] which we can call delta of q sub i.
+- [00:18:08,570 - 00:18:10,550] If we have a symmetry,
+- [00:18:10,550 - 00:18:14,170] which means a transformation of this type,
+- [00:18:14,270 - 00:18:16,490] under which the Lagrangian doesn't change,
+- [00:18:17,149 - 00:18:18,310] if the magnitude,
+- [00:18:18,310 - 00:18:21,070] the value of the Lagrangian doesn't change,
+- [00:18:21,250 - 00:18:23,930] then there's a conserved quantity capital q,
+- [00:18:25,650 - 00:18:29,830] which is equal to the sum over all the coordinates,
+- [00:18:30,070 - 00:18:32,290] the contribution from each coordinate,
+- [00:18:34,769 - 00:18:36,910] of p sub i,
+- [00:18:36,910 - 00:18:38,410] the canonical momentum,
+- [00:18:39,109 - 00:18:40,670] not the mechanical momentum,
+- [00:18:40,670 - 00:18:42,870] but the canonical momentum,
+- [00:18:43,669 - 00:18:45,570] times delta q sub i.
+- [00:18:48,850 - 00:18:50,070] So for example,
+- [00:18:50,070 - 00:18:52,130] if q happens to be x,
+- [00:18:52,130 - 00:18:54,010] the x position of a particle,
+- [00:18:57,290 - 00:18:58,870] if q happens to be
+- [00:18:58,870 - 00:19:00,450] the x position of a particle,
+- [00:19:01,489 - 00:19:03,610] then when you translate x,
+- [00:19:03,610 - 00:19:06,170] when you translate the coordinates,
+- [00:19:06,710 - 00:19:08,860] all that happens to x is
+- [00:19:08,860 - 00:19:11,010] it shifts by a little amount.
+- [00:19:11,350 - 00:19:13,020] And the amount that it
+- [00:19:13,020 - 00:19:14,690] shifts by is independent of x.
+- [00:19:14,930 - 00:19:16,620] So you can say in that
+- [00:19:16,620 - 00:19:18,310] case that the delta q sub i,
+- [00:19:18,390 - 00:19:19,109] or the delta x,
+- [00:19:19,109 - 00:19:20,010] is just a constant,
+- [00:19:20,010 - 00:19:20,830] just a number,
+- [00:19:21,010 - 00:19:22,510] the amount that you shift by.
+- [00:19:22,510 - 00:19:24,370] In that case,
+- [00:19:24,370 - 00:19:26,310] this delta q sub i is just a number,
+- [00:19:26,910 - 00:19:29,970] and we find a quantity which is just proportional
+- [00:19:29,970 - 00:19:32,370] to the total momentum of the system,
+- [00:19:32,590 - 00:19:34,050] in fact,
+- [00:19:34,050 - 00:19:36,870] typically the total mechanical momentum of the system,
+- [00:19:36,930 - 00:19:41,030] if the mechanical and canonical momentum are the same.
+- [00:19:44,030 - 00:19:46,730] So one last concept of
+- [00:19:46,730 - 00:19:49,430] momentum is as a conserved quantity,
+- [00:19:50,330 - 00:19:51,990] where you construct it,
+- [00:19:52,510 - 00:19:56,130] by figuring out how all the coordinates in the system,
+- [00:19:56,290 - 00:19:59,110] all the canonical coordinates in the system change
+- [00:19:59,110 - 00:20:00,390] when you do the operation,
+- [00:20:01,220 - 00:20:03,650] and then multiplying those small changes
+- [00:20:04,480 - 00:20:07,370] by their conjugate momentum and adding them all up.
+- [00:20:07,570 - 00:20:10,770] And that gives you the conserved quantity,
+- [00:20:10,910 - 00:20:12,130] which is also called momentum.
+- [00:20:12,270 - 00:20:13,810] I just called the q here for quantity,
+- [00:20:15,770 - 00:20:20,110] but it's conserved if the world is translation invariant.
+- [00:20:20,350 - 00:20:21,110] All right.
+- [00:20:21,110 - 00:20:22,550] Those are the three concepts of momentum.
+- [00:20:23,990 - 00:20:25,010] And as I said,
+- [00:20:25,010 - 00:20:28,570] they're not necessarily the same as each other.
+- [00:20:30,730 - 00:20:33,890] When the Lagrangian has the usual simple form
+- [00:20:33,890 - 00:20:36,690] of a sum of kinetic energies plus potential energies,
+- [00:20:36,770 - 00:20:37,950] ordinary potential energies,
+- [00:20:37,950 - 00:20:38,970] not this kind of thing,
+- [00:20:39,210 - 00:20:40,840] if they're just a sum of
+- [00:20:40,840 - 00:20:42,470] the usual kinds of kinetic energies
+- [00:20:43,110 - 00:20:44,110] and a potential energy,
+- [00:20:44,689 - 00:20:46,650] then they all tend to be the same thing,
+- [00:20:46,710 - 00:20:47,930] the various definitions.
+- [00:20:48,530 - 00:20:49,750] But more generally,
+- [00:20:49,750 - 00:20:50,190] they're not.
+- [00:20:51,110 - 00:20:51,370] Okay.
+- [00:20:52,210 - 00:20:54,350] Now I want to move on
+- [00:20:55,430 - 00:21:01,530] to the relationship between mechanics and field theory.
+- [00:21:03,410 - 00:21:04,490] We've used it.
+- [00:21:04,510 - 00:21:09,610] We've used the Lagrangian form for field theory.
+- [00:21:09,770 - 00:21:11,620] But I want to spell
+- [00:21:11,620 - 00:21:13,470] it out in some detail now.
+- [00:21:14,430 - 00:21:15,810] Where's my eraser?
+- [00:21:16,870 - 00:21:17,490] Ah,
+- [00:21:17,490 - 00:21:17,870] okay.
+- [00:21:21,870 - 00:21:22,590] All right.
+- [00:21:22,590 - 00:21:23,210] We don't need this now.
+- [00:21:24,250 - 00:21:26,180] I want to spell out in
+- [00:21:26,180 - 00:21:28,110] detail in what sense field theory
+- [00:21:29,330 - 00:21:32,710] is just a version of classical mechanics.
+- [00:21:33,450 - 00:21:35,340] But the reason I'm going there is
+- [00:21:35,340 - 00:21:37,230] because I want to get to these questions
+- [00:21:37,230 - 00:21:38,590] of conserved quantities,
+- [00:21:38,590 - 00:21:40,070] conserved momentum,
+- [00:21:40,110 - 00:21:41,970] and also the conserved energy.
+- [00:21:42,490 - 00:21:43,070] Let me,
+- [00:21:43,070 - 00:21:43,750] before doing that,
+- [00:21:43,750 - 00:21:44,570] let me put over here,
+- [00:21:44,630 - 00:21:45,670] right in the corner over here,
+- [00:21:45,750 - 00:21:48,810] the concept of energy in classical mechanics.
+- [00:21:49,130 - 00:21:51,090] The concept of energy becomes important,
+- [00:21:51,090 - 00:21:56,350] when the Lagrangian is invariant under time translations.
+- [00:21:56,610 - 00:21:58,270] T goes to T plus a constant.
+- [00:21:58,610 - 00:21:59,630] In other words,
+- [00:21:59,630 - 00:22:00,710] when the answer to a question
+- [00:22:00,710 - 00:22:03,130] doesn't depend on the time that you start the experiment.
+- [00:22:05,710 - 00:22:08,490] I'll just write down the formulas,
+- [00:22:08,490 - 00:22:09,510] not derive them.
+- [00:22:10,050 - 00:22:12,010] Given a Lagrangian,
+- [00:22:12,010 - 00:22:15,710] which is a function of q's and q dots,
+- [00:22:20,230 - 00:22:21,070] there's another function of q's and q dots.
+- [00:22:21,070 - 00:22:21,930] There's another quantity called,
+- [00:22:21,930 - 00:22:22,990] sorry,
+- [00:22:22,990 - 00:22:23,670] no good,
+- [00:22:23,670 - 00:22:24,050] l,
+- [00:22:24,050 - 00:22:25,490] square l.
+- [00:22:25,850 - 00:22:28,110] There's another quantity called the Hamiltonian.
+- [00:22:28,270 - 00:22:31,150] The Hamiltonian is conserved and it is the energy.
+- [00:22:32,790 - 00:22:34,170] Just to remind you,
+- [00:22:34,170 - 00:22:36,890] it's given by the sum over all the coordinates,
+- [00:22:37,690 - 00:22:39,950] whatever coordinates describe the system,
+- [00:22:40,150 - 00:22:45,870] of the canonical momentum conjugate to the ith coordinate
+- [00:22:47,790 - 00:22:49,790] times the time derivative,
+- [00:22:51,530 - 00:22:52,890] of the ith coordinate,
+- [00:22:54,150 - 00:22:55,490] minus the Lagrangian.
+- [00:22:57,090 - 00:22:58,130] While we're at it,
+- [00:22:58,130 - 00:23:00,230] why don't we work this out for the simple case,
+- [00:23:00,350 - 00:23:01,310] just to remind you.
+- [00:23:02,750 - 00:23:05,270] If the q happens to be x,
+- [00:23:05,950 - 00:23:07,470] if it happens to just be a coordinate,
+- [00:23:07,510 - 00:23:13,570] and the Lagrangian is one half m x dot squared,
+- [00:23:14,790 - 00:23:16,210] minus v of x,
+- [00:23:16,210 - 00:23:18,390] a potential energy function of x,
+- [00:23:18,990 - 00:23:21,050] let's just work out what the Hamiltonian is.
+- [00:23:21,070 - 00:23:22,250] All right,
+- [00:23:22,250 - 00:23:23,030] first of all,
+- [00:23:23,030 - 00:23:24,250] there's the canonical momentum.
+- [00:23:24,770 - 00:23:28,010] The canonical momentum is the derivative of the Lagrangian
+- [00:23:28,010 - 00:23:29,070] with respect to the velocity.
+- [00:23:29,550 - 00:23:30,310] So p,
+- [00:23:30,310 - 00:23:31,290] in this case,
+- [00:23:31,290 - 00:23:32,610] is just equal to m x dot,
+- [00:23:32,730 - 00:23:34,070] just exactly what you'd expect.
+- [00:23:35,710 - 00:23:38,690] If we multiply that by q dot,
+- [00:23:38,870 - 00:23:41,190] in this case there's only one coordinate in the problem,
+- [00:23:41,389 - 00:23:42,110] just x.
+- [00:23:42,610 - 00:23:45,610] Then we would get p x dot,
+- [00:23:45,770 - 00:23:48,370] which would just be m x dot squared,
+- [00:23:50,270 - 00:23:55,230] one x dot comes from the q dot,
+- [00:23:55,390 - 00:23:57,010] the other one comes from the p,
+- [00:23:57,850 - 00:24:00,030] so it's m x dot squared,
+- [00:24:00,310 - 00:24:02,810] and then minus the Lagrangian.
+- [00:24:03,090 - 00:24:03,690] So,
+- [00:24:03,690 - 00:24:05,330] minus this term,
+- [00:24:06,409 - 00:24:08,970] minus one half m x dot squared,
+- [00:24:10,970 - 00:24:11,810] this one,
+- [00:24:11,950 - 00:24:14,490] and then minus minus v,
+- [00:24:14,490 - 00:24:15,610] or plus v.
+- [00:24:18,850 - 00:24:21,570] Two minus signs giving you a plus sign.
+- [00:24:22,030 - 00:24:22,630] Okay,
+- [00:24:22,630 - 00:24:24,420] the m x dot squared and the
+- [00:24:24,420 - 00:24:26,210] minus a half m x dot squared
+- [00:24:26,210 - 00:24:29,110] just give you plus m x dot,
+- [00:24:29,110 - 00:24:30,690] half m x dot squared.
+- [00:24:31,190 - 00:24:31,790] So,
+- [00:24:31,790 - 00:24:32,590] what do you get?
+- [00:24:33,310 - 00:24:37,510] You get the sum of kinetic energy plus potential energy.
+- [00:24:39,530 - 00:24:40,730] Just the definition.
+- [00:24:40,970 - 00:24:44,870] The definition of potential energy and kinetic energy,
+- [00:24:45,090 - 00:24:46,730] in the case where they apply,
+- [00:24:46,730 - 00:24:49,970] where you can separate the Lagrangian nicely into
+- [00:24:51,390 - 00:24:54,690] quadratic things in coordinate and time derivatives,
+- [00:24:54,970 - 00:24:58,030] and other pieces which don't depend on time derivatives.
+- [00:24:58,570 - 00:25:01,830] It's in that case where there's things which are
+- [00:25:03,290 - 00:25:05,070] quadratic in time derivatives,
+- [00:25:05,350 - 00:25:08,350] and other things which don't contain time derivatives,
+- [00:25:08,590 - 00:25:10,590] that there's a well-defined separation
+- [00:25:11,429 - 00:25:13,770] into kinetic energy and potential energy.
+- [00:25:13,770 - 00:25:18,670] The kinetic energy is just the quadratic expression
+- [00:25:18,670 - 00:25:20,010] in terms of velocities.
+- [00:25:20,470 - 00:25:24,630] The potential energy is the piece in the Lagrangian
+- [00:25:24,630 - 00:25:27,270] which doesn't depend on time derivatives.
+- [00:25:27,690 - 00:25:28,530] That's it.
+- [00:25:28,930 - 00:25:31,150] Notice that in the Hamiltonian,
+- [00:25:31,770 - 00:25:33,150] the energy,
+- [00:25:33,150 - 00:25:34,730] it's t,
+- [00:25:34,730 - 00:25:35,910] or kinetic energy,
+- [00:25:36,050 - 00:25:37,350] plus potential energy,
+- [00:25:37,630 - 00:25:38,850] and the Lagrangian,
+- [00:25:38,850 - 00:25:41,070] it's kinetic energy minus potential energy.
+- [00:25:41,590 - 00:25:42,350] So,
+- [00:25:42,350 - 00:25:43,090] in any case,
+- [00:25:43,090 - 00:25:45,170] if the Lagrangian is of the simple form
+- [00:25:45,840 - 00:25:50,310] of squares of velocities,
+- [00:25:50,330 - 00:25:51,910] plus things which don't,
+- [00:25:51,910 - 00:25:54,130] or minus things which don't depend on velocities,
+- [00:25:54,370 - 00:25:56,650] you can usually read off very quickly,
+- [00:25:56,730 - 00:25:57,710] without doing any work,
+- [00:25:57,970 - 00:26:02,330] what the Hamiltonian is from the Lagrangian.
+- [00:26:02,390 - 00:26:06,030] You just change the sign of the term
+- [00:26:06,860 - 00:26:09,010] which doesn't contain velocities.
+- [00:26:10,050 - 00:26:10,690] That's it.
+- [00:26:10,750 - 00:26:11,510] That's the whole prescription.
+- [00:26:11,510 - 00:26:14,770] And we can use that,
+- [00:26:14,850 - 00:26:18,570] but we should remember that it really comes from that.
+- [00:26:18,990 - 00:26:21,210] What was the point of this Hamiltonian?
+- [00:26:21,350 - 00:26:24,290] The point of this Hamiltonian is it's very easy,
+- [00:26:24,430 - 00:26:26,490] go back to your classical mechanics notes,
+- [00:26:26,610 - 00:26:28,210] using Lagrange's equations
+- [00:26:28,890 - 00:26:31,230] to prove that this is conserved,
+- [00:26:31,410 - 00:26:32,730] that it doesn't change with time,
+- [00:26:33,370 - 00:26:34,750] that the equations of motion,
+- [00:26:35,830 - 00:26:37,310] Lagrangian equations of motion,
+- [00:26:37,390 - 00:26:39,290] applied to everything on this side here,
+- [00:26:39,510 - 00:26:41,430] will tell you that,
+- [00:26:41,510 - 00:26:43,470] the Hamiltonian is conserved,
+- [00:26:43,590 - 00:26:45,650] and it is of course the energy.
+- [00:26:45,850 - 00:26:47,050] It is of course the energy
+- [00:26:47,050 - 00:26:49,790] expressed in a somewhat unfamiliar form.
+- [00:26:50,070 - 00:26:50,990] Total energy.
+- [00:26:52,250 - 00:26:52,890] Okay,
+- [00:26:52,890 - 00:26:54,850] now let's come to field theory.
+- [00:26:56,130 - 00:26:58,630] Field theory is a special case
+- [00:26:58,630 - 00:27:01,150] of ordinary classical mechanics,
+- [00:27:02,870 - 00:27:04,150] slightly obscured
+- [00:27:04,150 - 00:27:07,530] when we try to write it in relativistic fashion.
+- [00:27:08,390 - 00:27:10,750] If we want to see the close connection
+- [00:27:10,750 - 00:27:14,110] between field theory and classical mechanics,
+- [00:27:14,410 - 00:27:18,090] it is best to give up this whole enterprise
+- [00:27:18,090 - 00:27:21,930] of trying to keep all equations explicitly invariant
+- [00:27:21,930 - 00:27:22,950] under Lorentz transformation,
+- [00:27:23,370 - 00:27:24,670] and to just say,
+- [00:27:24,750 - 00:27:26,830] let's pick somebody's time,
+- [00:27:27,569 - 00:27:30,230] your time or my time,
+- [00:27:30,450 - 00:27:32,590] but pick a time variable,
+- [00:27:32,810 - 00:27:33,210] in other words,
+- [00:27:33,210 - 00:27:34,450] pick a frame of reference
+- [00:27:34,450 - 00:27:36,410] and stick with that frame of reference,
+- [00:27:36,670 - 00:27:38,870] and don't for the moment worry about
+- [00:27:38,870 - 00:27:40,690] going back and forth between different frames
+- [00:27:40,750 - 00:27:41,210] of reference.
+- [00:27:42,110 - 00:27:43,150] We'll do that later.
+- [00:27:43,350 - 00:27:44,690] Pick a frame of reference,
+- [00:27:44,950 - 00:27:45,850] pick a time,
+- [00:27:46,610 - 00:27:48,750] don't try to keep the equations invariant
+- [00:27:49,510 - 00:27:50,590] under Lorentz transformation,
+- [00:27:51,910 - 00:27:54,650] and it is easier in that form
+- [00:27:54,650 - 00:27:57,150] to see the connection with classical mechanics.
+- [00:27:57,650 - 00:27:58,170] Okay,
+- [00:27:58,170 - 00:27:58,650] so let me,
+- [00:27:58,730 - 00:27:59,630] well I'll leave this up here,
+- [00:27:59,710 - 00:28:01,050] but let's come over to here.
+- [00:28:01,950 - 00:28:02,570] All right,
+- [00:28:02,570 - 00:28:03,410] classical mechanics,
+- [00:28:03,690 - 00:28:04,890] you have a time axis,
+- [00:28:05,630 - 00:28:07,110] and you have a collection of things,
+- [00:28:07,210 - 00:28:09,070] q sub i of t,
+- [00:28:09,070 - 00:28:12,350] and you have an action principle.
+- [00:28:12,690 - 00:28:14,870] The action principle is
+- [00:28:17,330 - 00:28:19,750] Lagrangian as a function of q and q dot,
+- [00:28:20,310 - 00:28:22,290] or all the q's and q dots,
+- [00:28:22,370 - 00:28:22,950] dt.
+- [00:28:24,350 - 00:28:25,370] That's the action,
+- [00:28:26,710 - 00:28:29,510] and the action principle is the principle of least action.
+- [00:28:29,690 - 00:28:30,210] That's it,
+- [00:28:30,210 - 00:28:30,830] a time axis,
+- [00:28:31,110 - 00:28:33,870] a set of coordinates which depend on the time axis,
+- [00:28:34,130 - 00:28:36,610] an expression for the action,
+- [00:28:36,690 - 00:28:38,250] which is an integral over time,
+- [00:28:38,250 - 00:28:43,530] and a principle variation of the action,
+- [00:28:43,630 - 00:28:45,870] or the action is a stationary point.
+- [00:28:46,130 - 00:28:46,730] All right,
+- [00:28:46,730 - 00:28:48,650] so now to go from here to field theory,
+- [00:28:49,890 - 00:28:50,390] again,
+- [00:28:50,390 - 00:28:51,650] we have a time axis,
+- [00:28:52,490 - 00:28:54,710] and the coordinates of the system
+- [00:28:55,250 - 00:28:56,630] are functions of time.
+- [00:28:56,830 - 00:28:58,710] But what are the coordinates of the system?
+- [00:28:58,770 - 00:29:00,370] The coordinates of the system
+- [00:29:00,370 - 00:29:04,470] are not labeled by a discrete index i,
+- [00:29:04,790 - 00:29:07,910] the coordinates of the system are labeled by position,
+- [00:29:07,910 - 00:29:09,910] they are the values of the fields
+- [00:29:09,910 - 00:29:11,650] at each position in space.
+- [00:29:11,990 - 00:29:13,510] If we wanted to,
+- [00:29:13,710 - 00:29:18,270] we could imagine that space was discrete,
+- [00:29:22,130 - 00:29:24,850] and have x go horizontally,
+- [00:29:25,670 - 00:29:29,350] but the only relevant points
+- [00:29:29,350 - 00:29:31,510] would be some discrete collection of points,
+- [00:29:31,810 - 00:29:34,750] and then say the values of the fields
+- [00:29:34,750 - 00:29:36,330] at each position
+- [00:29:36,970 - 00:29:38,310] would define a coordinate.
+- [00:29:38,830 - 00:29:39,970] The field over here,
+- [00:29:40,050 - 00:29:40,770] the field over here,
+- [00:29:40,830 - 00:29:41,570] the field over here,
+- [00:29:41,610 - 00:29:42,330] the field over here,
+- [00:29:42,390 - 00:29:42,890] and so forth.
+- [00:29:43,250 - 00:29:44,030] This would be,
+- [00:29:44,090 - 00:29:45,310] this might be called phi zero,
+- [00:29:45,550 - 00:29:46,690] this might be called phi one,
+- [00:29:46,790 - 00:29:47,850] this might be called phi two,
+- [00:29:47,910 - 00:29:48,350] and so forth.
+- [00:29:48,510 - 00:29:49,650] And the q's,
+- [00:29:49,830 - 00:29:51,430] the canonical coordinates,
+- [00:29:51,470 - 00:29:52,830] would be the phi's.
+- [00:29:53,450 - 00:29:55,470] And instead of writing phi i
+- [00:29:56,189 - 00:30:00,190] to indicate which green line the phi is on,
+- [00:30:00,770 - 00:30:03,970] I'll just accept the fact that there's an x axis,
+- [00:30:04,210 - 00:30:05,630] and write phi of x.
+- [00:30:06,970 - 00:30:08,350] So at each point x,
+- [00:30:08,470 - 00:30:10,990] there's a separate and independent field,
+- [00:30:11,190 - 00:30:13,790] or a separate and independent coordinate.
+- [00:30:13,990 - 00:30:15,610] Now I don't use coordinate to mean x,
+- [00:30:15,810 - 00:30:17,030] I mean to use coordinate in
+- [00:30:17,030 - 00:30:18,250] the same sense that we use q.
+- [00:30:18,790 - 00:30:19,690] Degree of freedom.
+- [00:30:19,970 - 00:30:21,910] Perhaps degree of freedom is a better word.
+- [00:30:22,430 - 00:30:22,870] Yeah,
+- [00:30:22,870 - 00:30:24,050] let's call it degree of freedom.
+- [00:30:24,230 - 00:30:25,790] Phi of x is a degree of freedom,
+- [00:30:25,910 - 00:30:27,490] and x is simply a label,
+- [00:30:27,670 - 00:30:30,290] in the same sense that i is a label.
+- [00:30:31,610 - 00:30:32,050] Okay,
+- [00:30:32,050 - 00:30:33,090] so we shouldn't get confused
+- [00:30:33,090 - 00:30:34,590] between coordinates and labels.
+- [00:30:36,350 - 00:30:37,130] There's also,
+- [00:30:37,130 - 00:30:37,750] of course,
+- [00:30:37,850 - 00:30:39,230] time derivatives.
+- [00:30:42,870 - 00:30:44,370] Those are like the q dots.
+- [00:30:45,570 - 00:30:47,810] Now Lagrangians also depend
+- [00:30:47,810 - 00:30:51,210] not only on phi at each point,
+- [00:30:51,410 - 00:30:54,050] but they also depend on derivatives
+- [00:30:54,050 - 00:30:55,350] with respect to space.
+- [00:30:55,630 - 00:30:56,970] Let's think about that for a moment.
+- [00:30:57,330 - 00:30:58,170] In other words,
+- [00:30:58,190 - 00:31:01,610] they depend on things like d phi by dx.
+- [00:31:02,150 - 00:31:03,390] Not d phi by dt,
+- [00:31:03,650 - 00:31:04,570] but d phi by dx.
+- [00:31:05,450 - 00:31:07,270] Typical Lagrangian density,
+- [00:31:08,290 - 00:31:10,350] typical Lagrangian for a field theory.
+- [00:31:10,850 - 00:31:13,450] But what is phi,
+- [00:31:13,730 - 00:31:15,650] derivative of phi with respect to x?
+- [00:31:16,910 - 00:31:17,910] What is it?
+- [00:31:18,450 - 00:31:20,330] It's really another way of writing,
+- [00:31:22,090 - 00:31:24,430] let's say the distance between these points
+- [00:31:24,430 - 00:31:25,250] is called epsilon,
+- [00:31:25,650 - 00:31:26,790] where epsilon is small.
+- [00:31:27,110 - 00:31:29,010] It's really a way of writing phi
+- [00:31:29,580 - 00:31:31,730] at a point x plus epsilon,
+- [00:31:32,870 - 00:31:33,890] minus phi,
+- [00:31:34,770 - 00:31:36,250] at a point x,
+- [00:31:36,370 - 00:31:38,030] divided by epsilon.
+- [00:31:38,870 - 00:31:40,250] And so the derivative
+- [00:31:40,250 - 00:31:43,710] is really just a function of the phi's.
+- [00:31:43,790 - 00:31:44,330] It doesn't,
+- [00:31:44,330 - 00:31:45,290] the most important thing is
+- [00:31:45,290 - 00:31:46,750] it doesn't involve phi dot.
+- [00:31:47,370 - 00:31:49,810] So in places where the Lagrangian
+- [00:31:49,810 - 00:31:51,990] might depend on spatial derivatives,
+- [00:31:52,630 - 00:31:54,690] that's really part of its dependence
+- [00:31:54,690 - 00:31:55,870] on the phi's.
+- [00:31:56,070 - 00:31:56,810] In this case,
+- [00:31:56,830 - 00:31:58,030] it might depend on two phi's
+- [00:31:58,030 - 00:31:58,850] at the same time,
+- [00:31:59,770 - 00:32:01,190] but there's nothing to say
+- [00:32:01,190 - 00:32:03,170] that a Lagrangian can't depend on
+- [00:32:03,170 - 00:32:04,570] two q's at the same time.
+- [00:32:04,570 - 00:32:07,310] It could depend on q1 minus q2,
+- [00:32:07,429 - 00:32:08,350] or something like that.
+- [00:32:08,530 - 00:32:11,990] Here it's depending on phi at one point
+- [00:32:11,990 - 00:32:13,330] minus phi at the other point.
+- [00:32:13,610 - 00:32:14,090] So,
+- [00:32:14,090 - 00:32:14,370] yeah.
+- [00:32:14,750 - 00:32:18,030] So you've got phi dot of x.
+- [00:32:18,230 - 00:32:18,449] Yeah.
+- [00:32:18,550 - 00:32:21,370] So phi's not explicitly a function of phi.
+- [00:32:21,510 - 00:32:21,669] No,
+- [00:32:21,669 - 00:32:21,770] no,
+- [00:32:21,770 - 00:32:22,490] it's not explicitly.
+- [00:32:22,830 - 00:32:23,050] No,
+- [00:32:23,050 - 00:32:23,449] it is,
+- [00:32:23,449 - 00:32:23,790] it is,
+- [00:32:23,810 - 00:32:24,270] whoa,
+- [00:32:24,270 - 00:32:24,590] whoa,
+- [00:32:24,590 - 00:32:24,650] whoa,
+- [00:32:24,650 - 00:32:24,990] be careful.
+- [00:32:25,810 - 00:32:28,010] It's not depending on time
+- [00:32:28,010 - 00:32:29,550] because x depends on time.
+- [00:32:29,670 - 00:32:30,810] x is just a label.
+- [00:32:32,090 - 00:32:33,350] x is just a label.
+- [00:32:34,570 - 00:32:34,850] We could,
+- [00:32:34,850 - 00:32:37,470] instead of calling this the x-axis,
+- [00:32:37,650 - 00:32:39,770] we could call it the numerical axis i,
+- [00:32:40,630 - 00:32:43,150] and this would be phi of phi i.
+- [00:32:43,750 - 00:32:45,850] So why don't you write phi of x and t?
+- [00:32:46,590 - 00:32:47,030] Yeah,
+- [00:32:47,030 - 00:32:47,470] that's right.
+- [00:32:47,590 - 00:32:49,530] Phi is in general a function of x and t,
+- [00:32:50,790 - 00:32:53,390] in the same sense that
+- [00:32:53,390 - 00:32:55,990] q depends on i and t.
+- [00:32:56,670 - 00:32:59,390] It depends on i just because it depends
+- [00:32:59,390 - 00:33:00,630] on which one you're talking about.
+- [00:33:00,670 - 00:33:01,410] You're talking about q1,
+- [00:33:01,470 - 00:33:02,370] you're talking about q2.
+- [00:33:03,290 - 00:33:03,750] Here,
+- [00:33:03,750 - 00:33:06,690] are you talking about phi at one point,
+- [00:33:06,750 - 00:33:08,430] or are you talking about phi at another point?
+- [00:33:08,550 - 00:33:09,650] Just one more follow-up.
+- [00:33:09,730 - 00:33:11,510] So you treat each one of those phi's
+- [00:33:11,510 - 00:33:12,590] as an independent variable?
+- [00:33:12,790 - 00:33:13,830] You treat each one of them
+- [00:33:13,830 - 00:33:16,910] as an independent canonical degree of freedom.
+- [00:33:17,290 - 00:33:19,190] What about the sort of continuity constraints?
+- [00:33:20,770 - 00:33:21,370] All right,
+- [00:33:21,370 - 00:33:22,510] that's a very good question.
+- [00:33:22,610 - 00:33:23,550] That's a very good question.
+- [00:33:23,730 - 00:33:25,660] And the answer is if you
+- [00:33:25,660 - 00:33:27,590] write the right kind of Lagrangian
+- [00:33:27,590 - 00:33:29,710] or the right kind of Hamiltonian,
+- [00:33:30,570 - 00:33:32,350] then sudden abrupt change
+- [00:33:32,370 - 00:33:34,850] in phi from one point to another
+- [00:33:34,850 - 00:33:36,630] will be very costly in energy.
+- [00:33:37,450 - 00:33:39,850] So the dynamics is what the...
+- [00:33:40,370 - 00:33:40,670] Right,
+- [00:33:40,670 - 00:33:42,330] we'll come to that.
+- [00:33:42,410 - 00:33:42,850] That's a very,
+- [00:33:42,850 - 00:33:43,470] very good point.
+- [00:33:43,830 - 00:33:47,330] What is it that requires the phi
+- [00:33:47,330 - 00:33:49,550] to vary smoothly between two points?
+- [00:33:49,950 - 00:33:50,470] Yeah.
+- [00:33:50,970 - 00:33:52,690] And the answer is energy.
+- [00:33:53,030 - 00:33:53,830] But we'll see.
+- [00:33:54,250 - 00:33:55,510] I'll show you how that works.
+- [00:33:56,070 - 00:33:56,590] Okay,
+- [00:33:56,590 - 00:33:59,390] so now let's think about
+- [00:33:59,390 - 00:34:01,170] what we would mean by a Lagrangian.
+- [00:34:01,170 - 00:34:02,930] Or better yet,
+- [00:34:02,930 - 00:34:03,450] an action.
+- [00:34:03,850 - 00:34:07,070] An action in classical mechanics
+- [00:34:07,070 - 00:34:09,510] is always an integral over time.
+- [00:34:11,270 - 00:34:13,389] So it's an integral dt
+- [00:34:14,929 - 00:34:17,210] of a Lagrangian,
+- [00:34:17,210 - 00:34:18,850] L.
+- [00:34:19,850 - 00:34:23,050] But now the Lagrangian itself
+- [00:34:23,889 - 00:34:28,389] is going to be a sum over space
+- [00:34:29,170 - 00:34:30,929] or an integral over space.
+- [00:34:31,170 - 00:34:32,350] We've already done this kind of thing.
+- [00:34:32,489 - 00:34:33,489] We've done this kind of thing.
+- [00:34:33,570 - 00:34:36,130] I'm simply repeating what we did earlier,
+- [00:34:36,510 - 00:34:39,010] that the Lagrangian or the action itself
+- [00:34:39,010 - 00:34:42,090] is an integral over space and time.
+- [00:34:42,370 - 00:34:44,590] But if we separate off the time integral
+- [00:34:45,489 - 00:34:50,550] and write it as an integral dt of square L,
+- [00:34:52,710 - 00:34:56,210] then write this as integral dt
+- [00:34:57,030 - 00:34:59,010] times the integral dx.
+- [00:34:59,010 - 00:35:00,390] And what does dx mean?
+- [00:35:00,770 - 00:35:02,350] It can mean one...
+- [00:35:02,350 - 00:35:03,010] Incidentally,
+- [00:35:03,010 - 00:35:04,790] I did not mean to imply
+- [00:35:04,790 - 00:35:06,170] that space is one-dimensional.
+- [00:35:06,750 - 00:35:09,070] We might have several dimensions of space,
+- [00:35:10,990 - 00:35:12,730] but you get the idea.
+- [00:35:12,910 - 00:35:14,690] This could be d3x,
+- [00:35:14,830 - 00:35:15,790] dxdydz,
+- [00:35:16,750 - 00:35:18,790] of a Lagrange density.
+- [00:35:19,830 - 00:35:21,130] The script L,
+- [00:35:21,310 - 00:35:24,070] the thing that we've called script L in field theory,
+- [00:35:24,770 - 00:35:25,670] which depends...
+- [00:35:25,670 - 00:35:26,450] What does it depend on?
+- [00:35:26,630 - 00:35:28,910] It depends on the field at point,
+- [00:35:29,010 - 00:35:31,350] it depends on the time derivative,
+- [00:35:31,750 - 00:35:32,870] and it may also,
+- [00:35:32,870 - 00:35:33,970] and generally does,
+- [00:35:34,230 - 00:35:36,170] depend on d5 by dx.
+- [00:35:38,390 - 00:35:40,290] I'm going back to earlier notations
+- [00:35:40,690 - 00:35:43,830] where we wrote the Lagrangian density here
+- [00:35:43,830 - 00:35:46,030] in terms of phi and derivatives of phi.
+- [00:35:46,310 - 00:35:48,170] But now I'm keeping separate
+- [00:35:48,170 - 00:35:51,110] the idea of time derivatives and space derivatives.
+- [00:35:51,290 - 00:35:52,370] I don't want to mix them up
+- [00:35:52,370 - 00:35:54,310] into a single common notation now.
+- [00:35:54,650 - 00:35:56,430] Time derivatives and space derivatives.
+- [00:35:58,270 - 00:35:58,990] And the idea is that
+- [00:35:59,010 - 00:36:00,130] the space derivatives here,
+- [00:36:00,270 - 00:36:03,170] they are just differences of phi.
+- [00:36:03,830 - 00:36:05,610] So really I could just think of this
+- [00:36:05,610 - 00:36:07,650] as a function of all of the phi's
+- [00:36:07,650 - 00:36:08,470] and the phi dots.
+- [00:36:10,450 - 00:36:12,190] Because this is really just...
+- [00:36:13,150 - 00:36:13,770] You know,
+- [00:36:13,770 - 00:36:14,610] if you know all the phi's,
+- [00:36:14,610 - 00:36:15,850] you also know the differences.
+- [00:36:16,030 - 00:36:18,010] But I'll keep it in this form.
+- [00:36:18,630 - 00:36:21,610] Separate off in this form.
+- [00:36:22,210 - 00:36:24,170] And the square Lagrangian,
+- [00:36:24,290 - 00:36:24,790] in other words,
+- [00:36:24,790 - 00:36:25,790] this Lagrangian here,
+- [00:36:26,670 - 00:36:28,150] which gets integrated over t,
+- [00:36:28,150 - 00:36:29,130] this is it.
+- [00:36:30,710 - 00:36:33,430] The Lagrangian itself is an integral
+- [00:36:33,430 - 00:36:34,710] of a Lagrange density.
+- [00:36:35,130 - 00:36:38,490] There's a notion of a density of Lagrangian.
+- [00:36:39,290 - 00:36:40,650] Meaning to say,
+- [00:36:40,650 - 00:36:42,070] you integrate it over space
+- [00:36:42,070 - 00:36:44,670] to find out what the full Lagrangian is.
+- [00:36:44,890 - 00:36:46,890] You can think of it as a sum of terms.
+- [00:36:47,750 - 00:36:50,830] Each term involving the field,
+- [00:36:51,010 - 00:36:52,490] the time derivative of the field,
+- [00:36:52,530 - 00:36:54,630] and perhaps neighboring values of the field.
+- [00:36:55,890 - 00:36:56,470] Okay.
+- [00:37:00,789 - 00:37:03,130] I think that's reasonably clear.
+- [00:37:04,110 - 00:37:04,570] Now,
+- [00:37:04,570 - 00:37:10,390] let's think about what's up here.
+- [00:37:10,450 - 00:37:11,990] Let's go for the Hamiltonian.
+- [00:37:12,090 - 00:37:12,750] After all,
+- [00:37:12,750 - 00:37:14,430] this is a special case of mechanics.
+- [00:37:20,450 - 00:37:20,910] Yeah.
+- [00:37:21,410 - 00:37:21,870] Yeah.
+- [00:37:22,830 - 00:37:23,290] Yeah.
+- [00:37:23,450 - 00:37:24,410] And that may...
+- [00:37:24,410 - 00:37:24,550] Yeah.
+- [00:37:24,790 - 00:37:25,770] I think that's right.
+- [00:37:26,590 - 00:37:27,330] That is right.
+- [00:37:27,670 - 00:37:28,130] So,
+- [00:37:28,130 - 00:37:28,130] let's go for the Hamiltonian.
+- [00:37:28,130 - 00:37:28,770] All right.
+- [00:37:28,890 - 00:37:29,410] Now,
+- [00:37:29,410 - 00:37:31,410] field theories,
+- [00:37:31,410 - 00:37:32,970] like Maxwell's theory,
+- [00:37:33,150 - 00:37:34,010] other field theories,
+- [00:37:34,570 - 00:37:37,370] certainly have a notion of energy associated with them.
+- [00:37:38,250 - 00:37:42,070] Light waves have a notion of energy associated with them.
+- [00:37:42,810 - 00:37:46,910] Light wave shines on a bucket of water
+- [00:37:46,910 - 00:37:47,650] and it heats it up.
+- [00:37:48,030 - 00:37:50,370] It heats it up because it transfers energy
+- [00:37:50,970 - 00:37:51,970] to the molecules.
+- [00:37:52,410 - 00:37:53,950] It turns into thermal energy.
+- [00:37:54,210 - 00:37:54,730] So,
+- [00:37:54,730 - 00:37:56,370] fields have energy.
+- [00:37:57,450 - 00:37:58,190] They're not...
+- [00:37:58,190 - 00:37:58,990] In that sense,
+- [00:37:58,990 - 00:38:00,710] they're not something entirely new.
+- [00:38:00,770 - 00:38:05,410] And that energy is part of the universal conserved energy
+- [00:38:06,370 - 00:38:08,950] that is associated with time translation.
+- [00:38:09,830 - 00:38:11,630] We should be able to use
+- [00:38:11,630 - 00:38:13,430] the formulas that we have there
+- [00:38:14,130 - 00:38:16,110] if we apply them correctly
+- [00:38:16,110 - 00:38:18,090] to this kind of special case.
+- [00:38:19,010 - 00:38:19,530] So,
+- [00:38:19,530 - 00:38:20,590] I want to go through that with you.
+- [00:38:20,670 - 00:38:21,170] First thing,
+- [00:38:21,170 - 00:38:22,830] how do you construct the energy?
+- [00:38:23,510 - 00:38:24,130] All right.
+- [00:38:24,150 - 00:38:24,270] So,
+- [00:38:24,270 - 00:38:25,210] we want the Hamiltonian.
+- [00:38:25,210 - 00:38:26,790] The first thing we want,
+- [00:38:27,670 - 00:38:29,390] we need the p's and the q's.
+- [00:38:29,470 - 00:38:29,850] The p's,
+- [00:38:29,850 - 00:38:30,310] the q dots,
+- [00:38:30,310 - 00:38:31,570] and we need the Lagrangian.
+- [00:38:32,090 - 00:38:32,530] Okay.
+- [00:38:32,530 - 00:38:32,750] So,
+- [00:38:32,750 - 00:38:33,510] what are the p's?
+- [00:38:33,930 - 00:38:36,170] The p's now do not mean
+- [00:38:36,170 - 00:38:38,410] momentum in the sense of mv.
+- [00:38:38,570 - 00:38:40,390] They have nothing whatever to do with that.
+- [00:38:40,650 - 00:38:43,310] They are the derivatives of the Lagrangian
+- [00:38:43,310 - 00:38:47,890] with respect to the velocities.
+- [00:38:47,970 - 00:38:49,270] And what does velocity mean here?
+- [00:38:49,490 - 00:38:50,990] It means a phi dot.
+- [00:38:52,250 - 00:38:54,030] It doesn't mean velocity in space.
+- [00:38:54,030 - 00:38:56,190] It means velocity in field space.
+- [00:38:56,630 - 00:39:00,870] How fast the field is changing at a particular point.
+- [00:39:01,610 - 00:39:03,850] Not changing because you're going from point to point,
+- [00:39:04,070 - 00:39:07,070] but changing because the field at any given point changes.
+- [00:39:07,670 - 00:39:08,330] All right.
+- [00:39:08,370 - 00:39:08,650] So,
+- [00:39:08,650 - 00:39:09,790] the notion of a p,
+- [00:39:10,790 - 00:39:14,050] a p conjugate to a particular phi,
+- [00:39:15,850 - 00:39:17,730] we need a notation for it.
+- [00:39:17,850 - 00:39:19,890] And the reason we need a notation for it
+- [00:39:19,890 - 00:39:22,270] is because we've already called too many things p.
+- [00:39:24,590 - 00:39:26,350] We've called too many things p,
+- [00:39:28,010 - 00:39:30,630] and there is a standard notation.
+- [00:39:31,170 - 00:39:32,530] What are we talking about?
+- [00:39:32,590 - 00:39:35,050] We're talking about the derivative of the Lagrangian
+- [00:39:36,390 - 00:39:39,270] with respect to phi dot.
+- [00:39:40,750 - 00:39:42,290] We look for the phi dot.
+- [00:39:42,950 - 00:39:46,250] It actually doesn't matter if the Lagrangian,
+- [00:39:46,370 - 00:39:47,150] and we'll assume this,
+- [00:39:47,350 - 00:39:49,270] we'll assume that the Lagrangian,
+- [00:39:49,390 - 00:39:51,050] each term in the Lagrangian,
+- [00:39:51,050 - 00:39:52,310] at any given point x,
+- [00:39:52,310 - 00:39:56,270] only involves the phi dot at that point of x.
+- [00:39:56,730 - 00:39:57,210] So,
+- [00:39:57,210 - 00:39:57,450] therefore,
+- [00:39:57,450 - 00:39:59,530] when you differentiate the total Lagrangian,
+- [00:39:59,590 - 00:40:02,570] it only picks the particular point.
+- [00:40:02,990 - 00:40:03,470] Yeah.
+- [00:40:03,890 - 00:40:04,530] All right.
+- [00:40:04,550 - 00:40:04,690] So,
+- [00:40:04,690 - 00:40:06,750] we're interested in the derivative of the Lagrangian
+- [00:40:06,750 - 00:40:07,810] with respect to phi dot.
+- [00:40:09,030 - 00:40:11,950] And that is the canonical momentum conjugate to phi.
+- [00:40:12,190 - 00:40:13,490] I don't want to call it p
+- [00:40:13,490 - 00:40:15,410] because we're going to save p for something else.
+- [00:40:15,950 - 00:40:16,430] So,
+- [00:40:16,430 - 00:40:18,130] the standard notation for it is pi.
+- [00:40:19,690 - 00:40:21,550] Sometimes pi sub phi.
+- [00:40:23,050 - 00:40:24,110] In other words,
+- [00:40:24,210 - 00:40:27,590] the canonical momentum conjugate to the coordinate phi,
+- [00:40:27,710 - 00:40:30,670] and both sides are functions of position.
+- [00:40:32,050 - 00:40:33,370] This is a function of position,
+- [00:40:34,010 - 00:40:38,010] and this canonical momentum is also a function of position.
+- [00:40:43,650 - 00:40:44,130] Now,
+- [00:40:44,130 - 00:40:45,690] if there are many fields in a problem,
+- [00:40:46,490 - 00:40:48,370] there may be many fields in a problem,
+- [00:40:48,450 - 00:40:49,010] not just phi,
+- [00:40:49,010 - 00:40:49,810] but phi 1,
+- [00:40:49,810 - 00:40:50,310] phi 2,
+- [00:40:50,310 - 00:40:50,850] phi 3,
+- [00:40:50,930 - 00:40:52,290] and maybe a few a's,
+- [00:40:52,290 - 00:40:54,170] and maybe a few other kinds of fields,
+- [00:40:54,310 - 00:40:55,810] then there will be one of each,
+- [00:40:55,850 - 00:40:58,050] one of these for each kind of field.
+- [00:40:58,230 - 00:40:58,770] All right.
+- [00:41:00,329 - 00:41:01,630] And this will be there.
+- [00:41:01,710 - 00:41:01,790] So,
+- [00:41:01,790 - 00:41:02,290] that's pi.
+- [00:41:04,069 - 00:41:06,830] It's associated with the field at a point x,
+- [00:41:08,029 - 00:41:11,110] and it's replacing the p over here.
+- [00:41:12,590 - 00:41:13,030] Okay.
+- [00:41:13,110 - 00:41:13,250] So,
+- [00:41:13,250 - 00:41:16,290] now we're in a position to compute the Lagrangian,
+- [00:41:16,890 - 00:41:17,090] ah,
+- [00:41:17,090 - 00:41:17,850] the Hamiltonian.
+- [00:41:18,270 - 00:41:20,670] Let's compute the Hamiltonian over here.
+- [00:41:22,290 - 00:41:22,570] H.
+- [00:41:25,050 - 00:41:25,330] Now,
+- [00:41:25,330 - 00:41:26,070] first of all,
+- [00:41:26,090 - 00:41:28,530] it's a sum over all i.
+- [00:41:28,690 - 00:41:30,450] What does i stand for in this problem?
+- [00:41:31,370 - 00:41:32,810] i stands for X.
+- [00:41:33,370 - 00:41:35,070] i and X are the same thing.
+- [00:41:35,110 - 00:41:36,430] They're the labels that label
+- [00:41:36,430 - 00:41:37,630] the degrees of freedom.
+- [00:41:39,730 - 00:41:40,290] So,
+- [00:41:40,290 - 00:41:41,710] the sum over i
+- [00:41:42,290 - 00:41:44,930] is really going to be an integral over X,
+- [00:41:45,250 - 00:41:46,430] integral biennial to X,
+- [00:41:49,530 - 00:41:51,190] sum over all positions.
+- [00:41:53,350 - 00:41:55,010] Now what's it going to have in it?
+- [00:41:55,010 - 00:41:56,490] It's going to have
+- [00:41:58,290 - 00:41:59,370] p sub i,
+- [00:41:59,370 - 00:42:00,770] that's pi sub i
+- [00:42:01,950 - 00:42:03,110] of x,
+- [00:42:03,110 - 00:42:05,750] times phi dot
+- [00:42:06,430 - 00:42:07,210] of x.
+- [00:42:07,210 - 00:42:10,130] This is an integral over x,
+- [00:42:10,130 - 00:42:13,370] and it has pi,
+- [00:42:13,370 - 00:42:15,110] the subject
+- [00:42:15,110 - 00:42:15,490] over here,
+- [00:42:15,490 - 00:42:16,010] whatever it is.
+- [00:42:16,010 - 00:42:16,730] We're going to do an example,
+- [00:42:16,730 - 00:42:19,130] so we'll see how this works soon enough.
+- [00:42:19,510 - 00:42:22,410] Then minus the total Lagrangian.
+- [00:42:22,410 - 00:42:24,790] But the Lagrangian is also
+- [00:42:25,450 - 00:42:25,890] sorry,
+- [00:42:25,890 - 00:42:27,050] this is correct,
+- [00:42:27,050 - 00:42:28,910] but let me
+- [00:42:28,910 - 00:42:30,790] Which i?
+- [00:42:30,790 - 00:42:32,350] No,
+- [00:42:32,350 - 00:42:32,790] no i.
+- [00:42:32,790 - 00:42:34,970] That's redundant.
+- [00:42:36,530 - 00:42:37,210] That's redundant,
+- [00:42:37,210 - 00:42:37,590] good.
+- [00:42:37,590 - 00:42:38,850] No i.
+- [00:42:40,770 - 00:42:43,570] Now we have to subtract off the total Lagrangian.
+- [00:42:43,570 - 00:42:45,130] But the total Lagrangian
+- [00:42:45,130 - 00:42:46,330] is just this thing here,
+- [00:42:46,330 - 00:42:47,650] which is also an integral.
+- [00:42:47,650 - 00:42:50,210] So under the integral
+- [00:42:50,210 - 00:42:50,510] sign,
+- [00:42:50,510 - 00:42:52,690] under the integral d cubed x,
+- [00:42:52,690 - 00:42:53,790] this is d cubed x,
+- [00:42:53,790 - 00:42:55,210] we have to
+- [00:42:55,210 - 00:42:58,810] subtract off minus the Lagrangian density.
+- [00:43:02,890 - 00:43:03,410] Well,
+- [00:43:03,410 - 00:43:04,050] as I said,
+- [00:43:04,050 - 00:43:05,070] we'll work out an example
+- [00:43:05,070 - 00:43:05,750] soon enough,
+- [00:43:05,750 - 00:43:09,650] but let's look at what we have.
+- [00:43:10,130 - 00:43:11,880] We have an energy which is
+- [00:43:11,880 - 00:43:13,630] expressed as an integral over space.
+- [00:43:14,730 - 00:43:16,510] What would you call this thing in the bracket?
+- [00:43:17,590 - 00:43:18,930] We call it the energy density.
+- [00:43:18,930 - 00:43:20,630] The energy density,
+- [00:43:20,630 - 00:43:21,970] and that's exactly what it is.
+- [00:43:22,190 - 00:43:24,170] This object is the energy density.
+- [00:43:25,530 - 00:43:27,890] The thing inside the square bracket over here.
+- [00:43:27,890 - 00:43:29,090] Okay,
+- [00:43:29,090 - 00:43:29,590] so now
+- [00:43:30,310 - 00:43:31,270] we're cooking.
+- [00:43:31,270 - 00:43:31,750] We can,
+- [00:43:31,750 - 00:43:33,990] I think we don't need
+- [00:43:33,990 - 00:43:34,470] this picture.
+- [00:43:34,470 - 00:43:35,950] Let's put this picture up here.
+- [00:43:42,470 - 00:43:43,010] x,
+- [00:43:43,010 - 00:43:44,370] y of x,
+- [00:43:44,370 - 00:43:45,610] p.
+- [00:43:46,990 - 00:43:47,530] Okay.
+- [00:43:47,530 - 00:43:49,790] Get rid of the picture.
+- [00:43:54,550 - 00:43:57,910] And let's do an example to see how this works.
+- [00:43:58,890 - 00:44:01,030] The example that we've used over and over,
+- [00:44:01,030 - 00:44:01,970] let's just take one
+- [00:44:01,970 - 00:44:02,910] dimension of space.
+- [00:44:02,910 - 00:44:05,530] Do as many dimensions as you like,
+- [00:44:05,530 - 00:44:06,150] but let's
+- [00:44:06,150 - 00:44:07,850] just do one dimension.
+- [00:44:07,850 - 00:44:08,990] Alright.
+- [00:44:08,990 - 00:44:10,110] Lagrangian,
+- [00:44:10,130 - 00:44:10,530] density.
+- [00:44:10,530 - 00:44:12,590] It has a kinetic energy term,
+- [00:44:12,590 - 00:44:13,870] one half
+- [00:44:13,870 - 00:44:16,590] phi dot squared.
+- [00:44:17,770 - 00:44:20,450] Remember the Lagrangian contains phi and phi dot.
+- [00:44:21,670 - 00:44:22,330] Alright.
+- [00:44:22,330 - 00:44:25,610] Let's put in minus one half
+- [00:44:26,509 - 00:44:29,010] partial of phi with respect to x
+- [00:44:31,850 - 00:44:32,510] squared.
+- [00:44:34,010 - 00:44:35,210] And finally,
+- [00:44:35,210 - 00:44:37,950] let's add in just for generality
+- [00:44:37,950 - 00:44:40,150] some sort of v of phi.
+- [00:44:42,590 - 00:44:43,410] In other words,
+- [00:44:43,410 - 00:44:44,650] we'll call,
+- [00:44:44,650 - 00:44:45,210] well,
+- [00:44:46,210 - 00:44:46,890] I don't,
+- [00:44:46,890 - 00:44:48,310] let's just call it v of phi.
+- [00:44:48,310 - 00:44:49,550] Let's call it v of phi.
+- [00:44:49,690 - 00:44:51,030] It has phi dot squared,
+- [00:44:51,030 - 00:44:52,770] it has gradient of phi squared,
+- [00:44:52,770 - 00:44:53,930] and it has v of phi.
+- [00:44:54,490 - 00:44:56,990] If we went back to thinking about relativity,
+- [00:44:56,990 - 00:44:58,030] we would
+- [00:44:58,030 - 00:45:00,870] recognize this quantity here as a scalar,
+- [00:45:00,870 - 00:45:01,750] and this quantity
+- [00:45:01,750 - 00:45:02,630] here as a scalar,
+- [00:45:02,630 - 00:45:04,310] and we would be doing the same
+- [00:45:04,310 - 00:45:05,990] kind of constructions we did when we
+- [00:45:05,990 - 00:45:06,910] thought about relativity.
+- [00:45:06,910 - 00:45:09,850] And we would sort of combine these two things
+- [00:45:09,850 - 00:45:13,010] and call them something like one half d mu phi
+- [00:45:13,770 - 00:45:14,610] d mu phi.
+- [00:45:14,610 - 00:45:16,710] And that's a nice,
+- [00:45:16,710 - 00:45:17,090] beautiful,
+- [00:45:17,090 - 00:45:18,110] relativistic
+- [00:45:18,110 - 00:45:18,910] way to write it,
+- [00:45:18,910 - 00:45:20,450] but we don't want to mix
+- [00:45:20,450 - 00:45:21,990] them up in that form now.
+- [00:45:22,190 - 00:45:25,370] We want to keep separate time derivatives
+- [00:45:25,370 - 00:45:26,910] and space derivatives.
+- [00:45:26,910 - 00:45:28,750] Okay.
+- [00:45:28,750 - 00:45:29,850] Let's now
+- [00:45:29,850 - 00:45:30,270] ask,
+- [00:45:30,270 - 00:45:33,770] what is pi
+- [00:45:33,770 - 00:45:34,410] sub phi
+- [00:45:35,990 - 00:45:38,010] pi sub phi is the
+- [00:45:38,010 - 00:45:40,030] derivative of the Lagrangian with respect
+- [00:45:40,030 - 00:45:40,670] to phi dot.
+- [00:45:40,670 - 00:45:42,930] And that's just phi dot.
+- [00:45:43,650 - 00:45:44,650] It's pretty easy.
+- [00:45:44,650 - 00:45:46,770] Did I write it here?
+- [00:45:48,010 - 00:45:48,570] Yeah.
+- [00:45:48,570 - 00:45:49,990] Pi sub pi,
+- [00:45:49,990 - 00:45:50,810] or just pi,
+- [00:45:50,810 - 00:45:51,750] is
+- [00:45:51,750 - 00:45:52,850] just plain phi dot.
+- [00:45:52,850 - 00:45:53,830] It's easy.
+- [00:45:53,830 - 00:45:55,950] Now let's
+- [00:45:55,950 - 00:45:57,010] work out the Hamiltonian,
+- [00:45:57,010 - 00:45:59,490] or the
+- [00:45:59,490 - 00:46:00,330] energy.
+- [00:46:00,330 - 00:46:03,370] The energy is
+- [00:46:03,990 - 00:46:04,670] integral dx
+- [00:46:07,290 - 00:46:09,990] of pi sub phi times phi dot.
+- [00:46:10,290 - 00:46:12,190] Pi sub phi is phi dot.
+- [00:46:12,190 - 00:46:13,950] So there's phi dot
+- [00:46:13,950 - 00:46:14,210] squared.
+- [00:46:14,210 - 00:46:17,090] Then there's minus
+- [00:46:18,810 - 00:46:20,090] that's this whole thing here.
+- [00:46:20,090 - 00:46:22,250] And then there's minus the Lagrangian.
+- [00:46:23,630 - 00:46:24,170] Minus
+- [00:46:26,010 - 00:46:27,670] here's the Lagrangian density here.
+- [00:46:27,670 - 00:46:30,030] So we can just read
+- [00:46:30,030 - 00:46:30,390] it off.
+- [00:46:30,390 - 00:46:33,190] Phi dot squared minus a half phi dot squared.
+- [00:46:33,690 - 00:46:34,710] That's going to give me
+- [00:46:34,710 - 00:46:35,730] just a half phi dot squared,
+- [00:46:35,730 - 00:46:36,110] right?
+- [00:46:38,350 - 00:46:40,530] Phi dot squared minus a half phi dot squared.
+- [00:46:40,630 - 00:46:42,750] Now we're also going to subtract off this thing.
+- [00:46:42,750 - 00:46:43,290] Ooh,
+- [00:46:43,290 - 00:46:44,670] this is wrong.
+- [00:46:44,890 - 00:46:45,830] Let's get this right.
+- [00:46:45,830 - 00:46:48,870] We're going to subtract
+- [00:46:48,870 - 00:46:50,610] off this thing,
+- [00:46:50,610 - 00:46:51,910] which already has a minus sign.
+- [00:46:51,910 - 00:46:52,930] Two minus signs
+- [00:46:52,930 - 00:46:53,730] make a plus sign.
+- [00:46:53,730 - 00:46:56,770] So this becomes plus derivative
+- [00:46:56,770 - 00:47:01,110] of phi with respect to x squared
+- [00:47:01,110 - 00:47:02,590] plus v of x.
+- [00:47:05,450 - 00:47:06,050] Oops.
+- [00:47:06,050 - 00:47:07,330] I know.
+- [00:47:10,290 - 00:47:10,890] Okay,
+- [00:47:10,890 - 00:47:11,790] let's see what we have.
+- [00:47:11,790 - 00:47:13,190] In the Lagrangian
+- [00:47:13,190 - 00:47:17,090] we have a kinetic energy related to time derivatives.
+- [00:47:17,490 - 00:47:19,340] And we have another term which
+- [00:47:19,340 - 00:47:21,190] doesn't have time derivatives in it.
+- [00:47:21,490 - 00:47:24,950] Obviously this whole thing is playing the role of potential
+- [00:47:24,950 - 00:47:25,390] energy.
+- [00:47:25,390 - 00:47:28,350] The piece of the energy which doesn't have time derivatives.
+- [00:47:29,590 - 00:47:32,230] Sometimes people call this the field potential
+- [00:47:32,230 - 00:47:32,750] energy,
+- [00:47:32,750 - 00:47:35,750] but it's really this whole combination
+- [00:47:36,350 - 00:47:38,910] everything which doesn't contain any time derivatives,
+- [00:47:38,910 - 00:47:40,030] which is
+- [00:47:40,030 - 00:47:41,510] a kind of potential energy.
+- [00:47:41,510 - 00:47:44,270] All that's happening is
+- [00:47:44,270 - 00:47:44,870] again,
+- [00:47:44,870 - 00:47:46,130] we have kinetic energy,
+- [00:47:46,130 - 00:47:47,910] and then instead of minus potential
+- [00:47:47,910 - 00:47:48,450] energy,
+- [00:47:48,450 - 00:47:51,750] we have plus potential energy in the Hamiltonian.
+- [00:47:53,310 - 00:47:55,330] This is the energy of a field.
+- [00:47:57,650 - 00:47:58,130] The
+- [00:47:59,390 - 00:48:01,230] time derivatives are positive.
+- [00:48:01,230 - 00:48:03,170] The space derivatives
+- [00:48:03,170 - 00:48:03,850] are positive.
+- [00:48:03,850 - 00:48:06,690] The space derivatives are positive.
+- [00:48:07,550 - 00:48:09,850] And if v is a positive function,
+- [00:48:09,850 - 00:48:11,330] this would also be
+- [00:48:11,330 - 00:48:12,030] positive.
+- [00:48:12,030 - 00:48:14,990] What's that?
+- [00:48:15,170 - 00:48:15,610] v of phi.
+- [00:48:15,610 - 00:48:15,970] Sorry,
+- [00:48:15,970 - 00:48:16,530] v of phi.
+- [00:48:16,530 - 00:48:16,990] Very good.
+- [00:48:16,990 - 00:48:19,050] It's also a function of x,
+- [00:48:19,050 - 00:48:19,250] but
+- [00:48:19,250 - 00:48:19,690] v of phi.
+- [00:48:19,690 - 00:48:22,670] Depending on v of phi,
+- [00:48:23,590 - 00:48:26,090] I want to concentrate mostly on these terms.
+- [00:48:26,330 - 00:48:27,630] They're both positive.
+- [00:48:27,630 - 00:48:30,410] The Lagrangian has positive and negative terms.
+- [00:48:30,590 - 00:48:31,090] It's not,
+- [00:48:31,090 - 00:48:32,170] in general,
+- [00:48:32,170 - 00:48:32,630] positive.
+- [00:48:34,710 - 00:48:37,630] The energy only has positive terms.
+- [00:48:37,630 - 00:48:38,590] Of course,
+- [00:48:38,610 - 00:48:39,170] it can be zero.
+- [00:48:39,170 - 00:48:40,690] But what's the only way that
+- [00:48:40,690 - 00:48:42,210] this thing can be zero here?
+- [00:48:42,310 - 00:48:44,190] The only way it can be
+- [00:48:44,190 - 00:48:46,070] zero is if phi is constant,
+- [00:48:46,070 - 00:48:46,510] so
+- [00:48:46,510 - 00:48:47,990] that its derivatives are all zero.
+- [00:48:47,990 - 00:48:50,650] One example being
+- [00:48:50,650 - 00:48:51,770] phi is equal to zero.
+- [00:48:51,770 - 00:48:53,770] If phi is equal to zero,
+- [00:48:55,010 - 00:48:56,870] this and this are just zero,
+- [00:48:56,870 - 00:48:58,530] but it can't be negative.
+- [00:48:58,990 - 00:49:02,770] So energy is typically something which doesn't go negative.
+- [00:49:03,050 - 00:49:03,130] Yeah?
+- [00:49:03,130 - 00:49:04,730] So in normal mechanics,
+- [00:49:04,730 - 00:49:06,570] the potential
+- [00:49:06,570 - 00:49:07,850] of v is a hundred,
+- [00:49:07,850 - 00:49:09,110] so it can't be negative?
+- [00:49:09,110 - 00:49:10,269] It can be
+- [00:49:10,269 - 00:49:11,530] negative here,
+- [00:49:11,530 - 00:49:11,789] too,
+- [00:49:11,789 - 00:49:13,850] but you can get into trouble if
+- [00:49:14,590 - 00:49:16,170] it's unbounded from below.
+- [00:49:16,170 - 00:49:18,729] If it's bounded from below,
+- [00:49:18,729 - 00:49:20,069] then you can just add a
+- [00:49:20,069 - 00:49:21,410] constant to it and make it positive.
+- [00:49:21,410 - 00:49:22,670] And it doesn't
+- [00:49:22,670 - 00:49:23,150] change anything.
+- [00:49:23,150 - 00:49:26,710] So you can arbitrarily assume that this is positive.
+- [00:49:26,950 - 00:49:28,729] If it's not bounded from below,
+- [00:49:28,729 - 00:49:30,030] the theory is not stable,
+- [00:49:30,030 - 00:49:30,690] and it just goes
+- [00:49:30,690 - 00:49:31,630] to hell in a hand wagon.
+- [00:49:31,630 - 00:49:33,370] You don't want any part of such a theory.
+- [00:49:34,909 - 00:49:37,570] So you can assume that this is positive also.
+- [00:49:38,590 - 00:49:42,130] And then the energy
+- [00:49:42,550 - 00:49:44,289] is above zero.
+- [00:49:44,289 - 00:49:45,749] The only
+- [00:49:45,749 - 00:49:49,430] configurations in which it's equal to zero is
+- [00:49:49,430 - 00:49:51,650] when phi is constant.
+- [00:49:51,650 - 00:49:53,470] And
+- [00:49:53,470 - 00:49:56,990] probably also at the minimum of this potential here.
+- [00:49:57,650 - 00:50:00,790] That's just what substitutes for empty space.
+- [00:50:00,790 - 00:50:01,170] Yes,
+- [00:50:01,170 - 00:50:01,290] sir?
+- [00:50:01,430 - 00:50:02,030] Kevin?
+- [00:50:03,770 - 00:50:04,370] Well,
+- [00:50:04,370 - 00:50:06,450] yeah,
+- [00:50:06,450 - 00:50:08,250] that's just a past...
+- [00:50:09,290 - 00:50:09,890] Yes,
+- [00:50:09,890 - 00:50:10,350] this,
+- [00:50:10,350 - 00:50:11,970] when we study the field,
+- [00:50:11,970 - 00:50:12,810] the scalar field,
+- [00:50:12,810 - 00:50:13,430] in
+- [00:50:13,430 - 00:50:14,870] relativity theory,
+- [00:50:14,870 - 00:50:16,810] we used a couple of principles,
+- [00:50:17,130 - 00:50:18,770] the first being locality.
+- [00:50:18,770 - 00:50:19,150] Alright,
+- [00:50:19,150 - 00:50:21,430] locality means it depends on the field and its derivatives.
+- [00:50:22,050 - 00:50:25,150] We used the principle that it should be Lorentz invariant.
+- [00:50:25,690 - 00:50:28,290] Lorentz invariant means it should be made of scalars.
+- [00:50:28,290 - 00:50:29,270] And this is
+- [00:50:29,270 - 00:50:33,410] just the scalar obtained from
+- [00:50:33,410 - 00:50:34,250] d mu phi,
+- [00:50:34,250 - 00:50:36,770] d mu phi.
+- [00:50:40,150 - 00:50:41,130] That's what this is.
+- [00:50:41,130 - 00:50:41,530] Phi dot
+- [00:50:41,530 - 00:50:43,910] squared minus spatial gradient of phi squared.
+- [00:50:43,910 - 00:50:45,330] The minus sign
+- [00:50:45,330 - 00:50:47,000] is that funny minus sign which
+- [00:50:47,000 - 00:50:48,670] comes into relativity all the time.
+- [00:50:49,330 - 00:50:49,930] Okay,
+- [00:50:49,930 - 00:50:50,290] so,
+- [00:50:50,290 - 00:50:52,190] first thing,
+- [00:50:52,190 - 00:50:53,510] not first
+- [00:50:53,510 - 00:50:54,290] thing we found tonight,
+- [00:50:54,290 - 00:50:56,270] but an important thing we find tonight,
+- [00:50:56,270 - 00:50:57,370] is the
+- [00:50:57,370 - 00:50:58,910] notion of field energy,
+- [00:50:58,910 - 00:51:01,250] and especially field energy
+- [00:51:01,250 - 00:51:01,790] density.
+- [00:51:01,790 - 00:51:05,670] The energy is an integral of a space
+- [00:51:05,670 - 00:51:07,010] of a field energy density.
+- [00:51:07,010 - 00:51:07,810] I'm going to give that,
+- [00:51:07,810 - 00:51:09,090] the energy density,
+- [00:51:09,090 - 00:51:09,490] a new
+- [00:51:09,490 - 00:51:09,850] name.
+- [00:51:12,170 - 00:51:15,330] Let's take away the
+- [00:51:15,330 - 00:51:15,670] integral.
+- [00:51:15,670 - 00:51:19,450] We're going to call this the field energy density.
+- [00:51:20,390 - 00:51:22,030] And we're going to give it a funny name.
+- [00:51:22,030 - 00:51:23,070] We're going to call it
+- [00:51:23,070 - 00:51:24,430] T naught naught.
+- [00:51:35,870 - 00:51:36,470] The T,
+- [00:51:36,470 - 00:51:38,010] I have no idea where that comes from,
+- [00:51:38,010 - 00:51:39,690] but I will tell you where the naughts and naughts
+- [00:51:39,690 - 00:51:40,130] comes from.
+- [00:51:44,710 - 00:51:45,190] Let's,
+- [00:51:45,190 - 00:51:47,070] I guess I can erase this for the time being.
+- [00:51:47,070 - 00:51:47,410] Yeah.
+- [00:51:56,270 - 00:51:56,750] Yeah,
+- [00:51:56,750 - 00:51:57,230] yes.
+- [00:51:57,230 - 00:52:00,050] As long as the Lagrangian
+- [00:52:01,349 - 00:52:03,630] is an integral of a space
+- [00:52:03,630 - 00:52:05,490] where at every point,
+- [00:52:05,490 - 00:52:06,890] at every point,
+- [00:52:08,610 - 00:52:09,890] at each point,
+- [00:52:09,890 - 00:52:11,150] it's an integral of a space,
+- [00:52:11,310 - 00:52:12,730] so it's an integral of this form,
+- [00:52:12,730 - 00:52:14,690] and at each point of space,
+- [00:52:15,030 - 00:52:18,970] it involves phi and phi dot at that point.
+- [00:52:19,190 - 00:52:21,490] The time derivative of phi at that point.
+- [00:52:21,490 - 00:52:22,890] Then when
+- [00:52:22,890 - 00:52:25,350] you go to differentiate the total Lagrangian,
+- [00:52:25,350 - 00:52:26,790] let's get rid of this integral over T
+- [00:52:26,790 - 00:52:27,130] here,
+- [00:52:27,130 - 00:52:27,570] actually.
+- [00:52:27,570 - 00:52:28,450] Let's get rid of this,
+- [00:52:28,450 - 00:52:29,870] just Lagrangian is equal to this.
+- [00:52:30,830 - 00:52:33,070] When you go to differentiate the
+- [00:52:33,070 - 00:52:35,310] Lagrangian with respect to phi dot,
+- [00:52:35,310 - 00:52:37,550] let's say phi dot at some specific point.
+- [00:52:37,550 - 00:52:39,170] Let's go to some specific
+- [00:52:39,170 - 00:52:40,350] point right over here.
+- [00:52:40,350 - 00:52:43,190] We're going to differentiate the Lagrangian with respect to
+- [00:52:43,190 - 00:52:44,210] the phi dot over here.
+- [00:52:44,210 - 00:52:45,110] Well,
+- [00:52:45,110 - 00:52:46,390] where does that phi dot occur?
+- [00:52:46,810 - 00:52:48,510] It only occurs in one,
+- [00:52:48,510 - 00:52:49,670] think of this as a sum.
+- [00:52:49,670 - 00:52:51,110] Think of this as a sum over
+- [00:52:51,110 - 00:52:54,690] i of Lagrangian
+- [00:52:55,110 - 00:52:56,690] of phi and phi dot.
+- [00:52:56,690 - 00:52:59,190] Think of it as a
+- [00:52:59,190 - 00:52:59,390] sum.
+- [00:52:59,390 - 00:53:02,870] Only one term in the sum contains
+- [00:53:02,870 - 00:53:04,430] that particular phi dot.
+- [00:53:04,430 - 00:53:06,770] The phi dot
+- [00:53:06,770 - 00:53:10,810] associated with this particular point only occurs
+- [00:53:10,810 - 00:53:12,110] in one term,
+- [00:53:12,110 - 00:53:14,510] namely the term associated with that point.
+- [00:53:14,850 - 00:53:16,050] If that's the case,
+- [00:53:16,050 - 00:53:17,470] if the Lagrangian is built that way,
+- [00:53:17,470 - 00:53:18,630] and they usually are,
+- [00:53:18,930 - 00:53:22,930] then differentiating
+- [00:53:22,930 - 00:53:24,870] with respect to a specific phi dot
+- [00:53:24,870 - 00:53:26,810] of a specific point throws away all
+- [00:53:26,810 - 00:53:28,090] these terms except one,
+- [00:53:28,090 - 00:53:29,730] and that's the point
+- [00:53:30,410 - 00:53:31,010] right.
+- [00:53:31,010 - 00:53:32,010] So,
+- [00:53:32,010 - 00:53:32,390] yeah.
+- [00:53:35,590 - 00:53:36,870] I can't think of any,
+- [00:53:36,870 - 00:53:37,250] actually,
+- [00:53:37,350 - 00:53:38,510] that's not like that.
+- [00:53:38,510 - 00:53:39,570] Yeah,
+- [00:53:39,570 - 00:53:40,510] I think they're pathological.
+- [00:53:40,690 - 00:53:40,990] At least,
+- [00:53:40,990 - 00:53:41,370] yeah.
+- [00:53:41,370 - 00:53:43,270] Not the Lorentz invariant.
+- [00:53:43,270 - 00:53:44,690] Offhand,
+- [00:53:44,690 - 00:53:44,970] I don't
+- [00:53:44,970 - 00:53:45,250] think of any.
+- [00:53:45,250 - 00:53:45,770] Okay.
+- [00:53:45,770 - 00:53:47,350] But now we're also in
+- [00:53:47,350 - 00:53:48,930] a position to answer another question
+- [00:53:48,930 - 00:53:49,610] that was asked earlier.
+- [00:53:49,610 - 00:53:52,350] Let's suppose that phi
+- [00:53:54,250 - 00:53:54,670] jumps.
+- [00:53:54,670 - 00:53:55,090] Now,
+- [00:53:55,090 - 00:53:55,390] I was asked,
+- [00:53:55,390 - 00:53:56,330] what is it
+- [00:53:57,550 - 00:54:00,310] that's requiring phi to vary smoothly
+- [00:54:01,010 - 00:54:03,930] as the separation between these points?
+- [00:54:04,050 - 00:54:06,330] Why can't it be wildly jagged,
+- [00:54:06,330 - 00:54:06,950] for example,
+- [00:54:06,950 - 00:54:08,050] if they're really
+- [00:54:08,050 - 00:54:09,550] independent degrees of freedom?
+- [00:54:09,550 - 00:54:10,610] Well,
+- [00:54:10,610 - 00:54:11,810] wildly jagged,
+- [00:54:11,850 - 00:54:14,050] as you let these distances go to zero,
+- [00:54:14,050 - 00:54:16,350] means bigger and bigger
+- [00:54:16,350 - 00:54:16,790] derivatives.
+- [00:54:16,790 - 00:54:19,310] Remember what the derivative is.
+- [00:54:19,310 - 00:54:20,370] It's the difference between
+- [00:54:20,370 - 00:54:23,110] phi divided by the small separation.
+- [00:54:23,110 - 00:54:24,410] As that
+- [00:54:24,410 - 00:54:26,570] small separation gets smaller and smaller,
+- [00:54:26,570 - 00:54:28,450] for a given
+- [00:54:28,450 - 00:54:28,790] distance,
+- [00:54:28,790 - 00:54:30,230] a given difference,
+- [00:54:30,230 - 00:54:32,210] the gradient
+- [00:54:32,210 - 00:54:33,930] of the derivative gets bigger and bigger,
+- [00:54:33,930 - 00:54:36,330] and that would mean that the energy density
+- [00:54:36,330 - 00:54:37,810] in here is getting bigger and bigger.
+- [00:54:37,810 - 00:54:39,530] So,
+- [00:54:40,270 - 00:54:43,210] if you say I'm interested in finite energies,
+- [00:54:43,210 - 00:54:44,250] I'm interested in
+- [00:54:44,250 - 00:54:46,330] configurations where the energy is not
+- [00:54:46,330 - 00:54:48,410] going off to be something huge,
+- [00:54:48,790 - 00:54:51,790] it requires these derivatives to be finite,
+- [00:54:52,610 - 00:54:54,270] that the derivatives are finite,
+- [00:54:54,270 - 00:54:55,910] that's what controls
+- [00:54:55,910 - 00:54:58,310] phi and tells it to be smooth.
+- [00:54:58,310 - 00:54:58,990] Okay?
+- [00:54:58,990 - 00:54:59,530] Is that clear?
+- [00:55:00,170 - 00:55:00,610] Yeah.
+- [00:55:00,610 - 00:55:03,490] So it's energy that is
+- [00:55:03,490 - 00:55:04,350] doing that.
+- [00:55:04,350 - 00:55:07,270] Alright.
+- [00:55:07,270 - 00:55:07,910] What is
+- [00:55:07,910 - 00:55:08,610] the T naught naught?
+- [00:55:08,610 - 00:55:11,870] I'll tell you where the T naught
+- [00:55:11,870 - 00:55:12,490] naught comes from.
+- [00:55:12,490 - 00:55:15,850] There are
+- [00:55:15,850 - 00:55:16,570] two naught's there.
+- [00:55:16,570 - 00:55:17,810] T,
+- [00:55:17,810 - 00:55:19,070] I don't know where it came from.
+- [00:55:20,190 - 00:55:21,090] Stands for something,
+- [00:55:21,090 - 00:55:21,830] historical
+- [00:55:23,550 - 00:55:23,990] tension.
+- [00:55:25,910 - 00:55:27,190] It does have to do with,
+- [00:55:27,190 - 00:55:27,390] yeah,
+- [00:55:27,390 - 00:55:29,170] I'm not sure what it has to do with,
+- [00:55:29,170 - 00:55:29,450] but
+- [00:55:31,170 - 00:55:32,350] the naught naught,
+- [00:55:32,350 - 00:55:33,890] that I will explain to you.
+- [00:55:35,770 - 00:55:36,950] First of all,
+- [00:55:37,750 - 00:55:38,550] in relativity,
+- [00:55:38,550 - 00:55:40,370] and this could be,
+- [00:55:40,370 - 00:55:41,750] we're interested really in
+- [00:55:41,750 - 00:55:42,690] relativistic theories.
+- [00:55:42,690 - 00:55:44,250] We're interested in relativistic theories.
+- [00:55:44,250 - 00:55:45,890] In relativistic theories,
+- [00:55:46,090 - 00:55:49,390] the energy is the time component
+- [00:55:49,690 - 00:55:50,830] of a four vector.
+- [00:55:50,830 - 00:55:53,070] In fact,
+- [00:55:53,070 - 00:55:53,770] we usually call
+- [00:55:53,770 - 00:55:54,690] that four vector P.
+- [00:55:54,690 - 00:55:57,190] Too many things are being called P,
+- [00:55:57,190 - 00:55:57,670] but we
+- [00:55:57,670 - 00:55:58,490] usually call it P,
+- [00:55:58,490 - 00:56:00,350] and it's the time component,
+- [00:56:00,350 - 00:56:01,670] the energy is the time
+- [00:56:01,670 - 00:56:04,790] component of a four vector of energy and momentum.
+- [00:56:05,550 - 00:56:06,090] Okay?
+- [00:56:06,090 - 00:56:09,790] That's one fact I want you to remember.
+- [00:56:11,270 - 00:56:13,750] That the energy is
+- [00:56:13,750 - 00:56:17,710] in some sense associated with
+- [00:56:17,710 - 00:56:19,490] a time component of a four vector.
+- [00:56:19,490 - 00:56:21,790] And then there's another interesting fact.
+- [00:56:21,790 - 00:56:25,570] Whenever you have a conserved quantity in
+- [00:56:25,570 - 00:56:28,230] a relativistic theory and a sensible theory,
+- [00:56:28,230 - 00:56:29,190] the
+- [00:56:30,890 - 00:56:32,910] conservation is local.
+- [00:56:33,590 - 00:56:35,540] That means that the quantity
+- [00:56:35,540 - 00:56:37,490] just doesn't disappear over here and
+- [00:56:37,490 - 00:56:39,110] reappear someplace far away.
+- [00:56:39,110 - 00:56:41,530] If there was no
+- [00:56:41,530 - 00:56:43,530] locality to the conservation law,
+- [00:56:43,530 - 00:56:45,430] then energy or
+- [00:56:45,430 - 00:56:47,820] charge or whatever it is could disappear
+- [00:56:47,820 - 00:56:50,210] over here and reappear at Alpha Centauri
+- [00:56:50,210 - 00:56:53,390] and the experiment taking place in this laboratory here,
+- [00:56:53,390 - 00:56:54,310] for all practical
+- [00:56:54,310 - 00:56:54,750] purposes,
+- [00:56:54,750 - 00:56:56,110] there would be no energy conservation.
+- [00:56:56,110 - 00:56:57,510] That's not the way things work.
+- [00:56:57,770 - 00:56:58,970] The way things work,
+- [00:56:58,970 - 00:56:59,810] as I explained,
+- [00:56:59,810 - 00:57:01,910] is that when you have conserved quantities,
+- [00:57:02,070 - 00:57:05,790] they only change if you can detect
+- [00:57:05,790 - 00:57:07,980] a flux of them or a current
+- [00:57:07,980 - 00:57:10,170] of them passing through the walls of your
+- [00:57:10,170 - 00:57:10,610] laboratory.
+- [00:57:10,610 - 00:57:12,750] That gave rise
+- [00:57:13,950 - 00:57:18,070] to the concept of a density and
+- [00:57:18,070 - 00:57:19,730] a current.
+- [00:57:19,730 - 00:57:22,130] And the density
+- [00:57:22,130 - 00:57:25,450] and the current combined together to form
+- [00:57:26,590 - 00:57:28,130] another four vector,
+- [00:57:28,130 - 00:57:29,730] J mu.
+- [00:57:30,690 - 00:57:33,950] The time component of J mu is
+- [00:57:33,950 - 00:57:38,110] the density and the space component of J is the
+- [00:57:38,110 - 00:57:40,510] flux or the flow of the current.
+- [00:57:40,510 - 00:57:42,210] But in particular,
+- [00:57:42,390 - 00:57:43,770] the density,
+- [00:57:43,770 - 00:57:46,170] I'm using the language of charge
+- [00:57:46,170 - 00:57:47,210] density here now,
+- [00:57:47,210 - 00:57:49,450] but think more generally,
+- [00:57:49,730 - 00:57:53,090] the density is like the time component
+- [00:57:53,990 - 00:57:55,210] of a four vector.
+- [00:57:55,210 - 00:57:57,310] Well now we have
+- [00:57:58,490 - 00:58:01,330] the density of energy.
+- [00:58:02,050 - 00:58:06,010] Energy itself is the fourth component of something,
+- [00:58:06,210 - 00:58:07,150] the time component.
+- [00:58:07,150 - 00:58:10,110] And density is the
+- [00:58:10,110 - 00:58:11,510] fourth component of something,
+- [00:58:11,510 - 00:58:12,850] namely a current,
+- [00:58:12,850 - 00:58:13,830] a four dimensional
+- [00:58:13,830 - 00:58:14,350] current.
+- [00:58:14,350 - 00:58:15,570] So,
+- [00:58:16,170 - 00:58:19,970] the density of energy is the density
+- [00:58:19,970 - 00:58:22,970] of the time component of a four vector.
+- [00:58:22,970 - 00:58:24,130] That's why there are
+- [00:58:24,130 - 00:58:25,050] two zeros up here.
+- [00:58:25,050 - 00:58:26,540] One of them stands for
+- [00:58:26,540 - 00:58:28,030] the fact that we're talking about
+- [00:58:28,030 - 00:58:28,370] energy,
+- [00:58:28,370 - 00:58:32,230] and the other one has to do with
+- [00:58:32,230 - 00:58:33,730] the fact that we're talking about a density.
+- [00:58:36,230 - 00:58:39,090] I think I'll take the second one here,
+- [00:58:39,610 - 00:58:41,990] to have to do with the energy and the first
+- [00:58:41,990 - 00:58:44,370] one having to do with the fact that it's a density.
+- [00:58:45,550 - 00:58:46,150] We can call this a density.
+- [00:58:46,150 - 00:58:46,150] We can call this a density.
+- [00:58:46,170 - 00:58:48,070] We can come back later to the continuity equation,
+- [00:58:48,070 - 00:58:49,990] which is important,
+- [00:58:50,190 - 00:58:52,170] and there is a continuity equation for energy.
+- [00:58:52,170 - 00:58:54,130] The continuity equation for energy
+- [00:58:54,130 - 00:58:56,930] says that if you see the energy changing someplace,
+- [00:58:56,930 - 00:58:58,230] the energy density changing
+- [00:58:58,230 - 00:58:58,550] someplace,
+- [00:58:58,550 - 00:59:00,590] it's because there's a flow of energy through the system.
+- [00:59:02,190 - 00:59:03,850] So this is t naught naught,
+- [00:59:03,850 - 00:59:05,490] and it's the energy density.
+- [00:59:05,810 - 00:59:06,510] Excuse me.
+- [00:59:06,510 - 00:59:08,890] When I hear the word density,
+- [00:59:08,890 - 00:59:09,470] I think
+- [00:59:09,950 - 00:59:11,910] whatever it's the density of,
+- [00:59:11,910 - 00:59:14,330] that thing that's the density of
+- [00:59:14,330 - 00:59:17,470] is obtained by doing an integral of the density.
+- [00:59:17,470 - 00:59:18,010] Yes.
+- [00:59:18,150 - 00:59:18,690] Okay,
+- [00:59:18,690 - 00:59:22,210] so in the case of the energy
+- [00:59:22,210 - 00:59:25,590] there being the first component of that four vector,
+- [00:59:26,330 - 00:59:27,650] and that it's a density.
+- [00:59:27,650 - 00:59:30,230] Remember that it is equal
+- [00:59:30,230 - 00:59:34,210] to the integral of pi
+- [00:59:34,210 - 00:59:37,570] phi dot minus L.
+- [00:59:40,330 - 00:59:41,810] So this is the thing.
+- [00:59:41,810 - 00:59:42,170] The thing
+- [00:59:42,170 - 00:59:44,290] in the bracket here is the density.
+- [00:59:44,290 - 00:59:46,170] That's the energy density.
+- [00:59:47,350 - 00:59:48,070] That's the energy density.
+- [00:59:48,070 - 00:59:48,370] That's the energy density.
+- [00:59:48,370 - 00:59:48,830] Right.
+- [00:59:48,830 - 00:59:49,590] Very good.
+- [00:59:51,650 - 00:59:52,990] It's interesting to ask,
+- [00:59:52,990 - 00:59:53,250] alright,
+- [00:59:53,250 - 00:59:54,170] if that's the energy density,
+- [00:59:54,470 - 00:59:55,610] what is the flow of energy?
+- [00:59:56,010 - 00:59:59,110] If we have time,
+- [00:59:59,110 - 01:00:01,150] we'll discuss it a bit.
+- [01:00:03,510 - 01:00:04,070] Okay.
+- [01:00:04,070 - 01:00:05,790] Next.
+- [01:00:06,910 - 01:00:08,910] What about the momentum density?
+- [01:00:08,910 - 01:00:10,570] Now by momentum,
+- [01:00:10,570 - 01:00:13,010] I don't mean canonical momentum.
+- [01:00:14,050 - 01:00:16,550] I mean the momentum which is
+- [01:00:16,550 - 01:00:20,270] conserved because of translation invariance.
+- [01:00:20,550 - 01:00:23,810] A general concept due to Emmy Noether,
+- [01:00:23,810 - 01:00:24,910] that every
+- [01:00:24,910 - 01:00:26,650] time there's a symmetry in the world,
+- [01:00:26,650 - 01:00:28,770] there's a conserved quantity that goes with it.
+- [01:00:30,350 - 01:00:32,670] I am going to call that quantity p.
+- [01:00:34,150 - 01:00:35,490] I apologize,
+- [01:00:35,490 - 01:00:36,830] there's just too many things called
+- [01:00:36,830 - 01:00:37,030] p.
+- [01:00:37,030 - 01:00:38,390] Historically,
+- [01:00:38,390 - 01:00:40,230] they were related to each other.
+- [01:00:40,590 - 01:00:43,310] But now we're talking about momentum
+- [01:00:44,710 - 01:00:46,190] in the sense of Noether,
+- [01:00:46,190 - 01:00:48,690] having to do with
+- [01:00:48,690 - 01:00:50,230] translation invariance.
+- [01:00:50,230 - 01:00:51,350] Alright,
+- [01:00:51,350 - 01:00:52,210] now that quantity,
+- [01:00:53,470 - 01:00:54,740] which is a special case of
+- [01:00:54,740 - 01:00:56,010] the thing that we call q,
+- [01:00:56,870 - 01:00:58,840] what you have to do to compute
+- [01:00:58,840 - 01:01:00,810] it is you sum over all the coordinates
+- [01:01:01,810 - 01:01:03,470] of the canonical momentum
+- [01:01:03,470 - 01:01:06,810] of the canonical momentum
+- [01:01:09,870 - 01:01:11,710] which now is just pi,
+- [01:01:13,230 - 01:01:14,810] the canonical momentum,
+- [01:01:15,030 - 01:01:16,110] times,
+- [01:01:16,110 - 01:01:19,290] well let's write it
+- [01:01:19,290 - 01:01:21,830] first more generally,
+- [01:01:23,430 - 01:01:25,810] p sub q delta q.
+- [01:01:27,370 - 01:01:28,750] Remember Noether's theorem.
+- [01:01:28,750 - 01:01:31,390] We figure out what delta q
+- [01:01:31,390 - 01:01:33,830] is by figuring out how the symmetry operation
+- [01:01:33,830 - 01:01:35,630] affects the coordinates,
+- [01:01:35,630 - 01:01:36,910] p sub i,
+- [01:01:37,470 - 01:01:39,270] p sub i delta q sub i.
+- [01:01:41,330 - 01:01:43,290] So now we can guess what the
+- [01:01:43,290 - 01:01:45,250] form of the answer is going to be.
+- [01:01:45,330 - 01:01:46,910] It's going to be sum is
+- [01:01:46,910 - 01:01:48,490] going to be replaced by integral,
+- [01:01:49,570 - 01:01:52,290] i is replaced by x,
+- [01:01:53,250 - 01:01:55,510] so this is going to be an integral over x,
+- [01:01:58,050 - 01:01:58,530] p,
+- [01:01:58,530 - 01:01:59,470] well that's just pi,
+- [01:02:02,630 - 01:02:03,830] pi of x,
+- [01:02:03,990 - 01:02:06,710] the canonical momentum conjugate to phi,
+- [01:02:07,470 - 01:02:09,250] and then we have to
+- [01:02:09,250 - 01:02:11,030] figure out what delta phi is.
+- [01:02:11,550 - 01:02:15,330] What is delta phi when you make
+- [01:02:15,330 - 01:02:16,750] a shift of coordinates,
+- [01:02:16,750 - 01:02:19,290] what we're talking about now is a translation
+- [01:02:19,290 - 01:02:23,610] of coordinates where the origin of coordinates is displaced
+- [01:02:23,610 - 01:02:25,850] from one point to a neighboring point.
+- [01:02:27,570 - 01:02:29,850] What happens to phi?
+- [01:02:30,210 - 01:02:30,790] Well,
+- [01:02:30,790 - 01:02:33,310] what was originally called phi of x
+- [01:02:35,810 - 01:02:36,970] now becomes
+- [01:02:38,250 - 01:02:40,530] let's say we shift by amount delta,
+- [01:02:40,730 - 01:02:44,410] let's say we shift by a numerical amount delta,
+- [01:02:44,410 - 01:02:45,430] where delta is small.
+- [01:02:46,030 - 01:02:47,750] What happens to phi of x?
+- [01:02:47,950 - 01:02:50,610] Phi of x becomes phi of x,
+- [01:02:53,230 - 01:02:54,930] I guess minus delta.
+- [01:02:56,750 - 01:02:59,190] The point which was originally called x
+- [01:02:59,190 - 01:03:01,280] after the shift of coordinates becomes
+- [01:03:01,280 - 01:03:03,370] called the point x minus delta.
+- [01:03:03,590 - 01:03:04,270] Is that clear?
+- [01:03:05,050 - 01:03:06,650] The point that was called x,
+- [01:03:06,830 - 01:03:07,510] here it was,
+- [01:03:09,750 - 01:03:11,590] after we shift the origin,
+- [01:03:12,170 - 01:03:14,230] becomes either x minus delta,
+- [01:03:14,350 - 01:03:15,640] it doesn't matter whether it's x
+- [01:03:15,640 - 01:03:16,930] minus delta or x plus delta,
+- [01:03:17,050 - 01:03:18,310] let's just call it x minus delta.
+- [01:03:19,790 - 01:03:20,310] Okay?
+- [01:03:20,610 - 01:03:23,470] So what is the change in phi?
+- [01:03:25,930 - 01:03:27,230] The change in phi
+- [01:03:29,930 - 01:03:30,450] is
+- [01:03:31,010 - 01:03:32,190] phi of x
+- [01:03:33,550 - 01:03:34,070] minus
+- [01:03:34,489 - 01:03:36,490] phi of x minus delta.
+- [01:03:39,690 - 01:03:40,950] That's the change in phi
+- [01:03:40,950 - 01:03:42,390] when you shift coordinates.
+- [01:03:43,950 - 01:03:45,230] Really all it is,
+- [01:03:45,230 - 01:03:46,590] is if I have some field
+- [01:03:46,590 - 01:03:48,510] and I move a little bit,
+- [01:03:48,570 - 01:03:50,030] how much does the field change?
+- [01:03:50,610 - 01:03:53,050] It changes by something proportional to the derivative.
+- [01:03:54,410 - 01:03:55,710] So the change in the,
+- [01:03:56,970 - 01:03:58,090] that's how much it changes,
+- [01:03:58,290 - 01:04:00,590] and that's of course just proportional to
+- [01:04:00,590 - 01:04:02,230] the derivative of phi
+- [01:04:02,230 - 01:04:03,610] with respect to x.
+- [01:04:04,270 - 01:04:05,050] In other words,
+- [01:04:05,070 - 01:04:06,130] the change in the field,
+- [01:04:06,290 - 01:04:08,230] when I move my head a little bit
+- [01:04:08,230 - 01:04:09,390] to correspond to,
+- [01:04:09,430 - 01:04:10,800] when I take all of my coordinate
+- [01:04:10,800 - 01:04:12,170] rulers and move them a little bit,
+- [01:04:12,350 - 01:04:14,390] the change in phi that I see
+- [01:04:14,390 - 01:04:16,410] at a particular point along my rulers
+- [01:04:16,910 - 01:04:17,790] is proportional
+- [01:04:17,790 - 01:04:20,450] to the derivative of phi with respect to x.
+- [01:04:20,770 - 01:04:22,210] So this delta phi
+- [01:04:22,210 - 01:04:23,850] just becomes
+- [01:04:23,850 - 01:04:26,190] derivative of phi with respect to x.
+- [01:04:31,730 - 01:04:33,050] Nice simple formula.
+- [01:04:33,970 - 01:04:34,610] The...
+- [01:04:42,130 - 01:04:42,770] Yeah,
+- [01:04:42,770 - 01:04:43,410] good.
+- [01:04:45,030 - 01:04:45,810] That's right.
+- [01:04:45,930 - 01:04:47,670] Why aren't I dividing by delta?
+- [01:04:47,790 - 01:04:49,590] Both here...
+- [01:04:49,590 - 01:04:49,730] Yeah.
+- [01:04:49,730 - 01:04:51,190] The answer is,
+- [01:04:51,370 - 01:04:52,910] if a thing is conserved,
+- [01:04:52,910 - 01:04:53,630] it's conserved
+- [01:04:53,630 - 01:04:55,130] after you multiply it by delta,
+- [01:04:55,130 - 01:04:55,870] it doesn't matter.
+- [01:04:56,270 - 01:04:56,850] Yeah.
+- [01:04:57,350 - 01:04:58,730] It's a good question,
+- [01:04:59,030 - 01:05:00,370] but the answer is,
+- [01:05:00,370 - 01:05:01,610] we're just trying to find
+- [01:05:01,610 - 01:05:02,690] conserved quantities.
+- [01:05:03,590 - 01:05:04,170] And
+- [01:05:04,170 - 01:05:07,730] the official definition of the momentum
+- [01:05:08,470 - 01:05:10,130] is defined in such a way
+- [01:05:10,130 - 01:05:12,090] that that delta is divided out.
+- [01:05:15,540 - 01:05:16,410] I mean,
+- [01:05:16,410 - 01:05:17,710] could you think of it as
+- [01:05:17,790 - 01:05:19,350] becoming dx in the integral,
+- [01:05:19,350 - 01:05:19,790] essentially?
+- [01:05:20,270 - 01:05:20,770] Where?
+- [01:05:20,970 - 01:05:22,510] The delta sort of
+- [01:05:23,190 - 01:05:25,470] becomes the infinitesimal dx
+- [01:05:25,470 - 01:05:26,690] when you go to the...
+- [01:05:26,690 - 01:05:27,310] Yeah.
+- [01:05:27,310 - 01:05:29,230] From the sub to the integral.
+- [01:05:30,350 - 01:05:30,950] Yeah.
+- [01:05:31,870 - 01:05:32,470] Right.
+- [01:05:33,890 - 01:05:35,610] I think it's defined in a way
+- [01:05:35,610 - 01:05:37,630] here which is consistent with previous
+- [01:05:37,630 - 01:05:39,490] definitions of the
+- [01:05:39,490 - 01:05:40,250] Noether theorem.
+- [01:05:44,070 - 01:05:45,150] In any case,
+- [01:05:45,150 - 01:05:45,710] this quantity
+- [01:05:45,710 - 01:05:46,710] is conserved.
+- [01:05:48,550 - 01:05:49,450] It's called p,
+- [01:05:51,430 - 01:05:51,990] but
+- [01:05:52,690 - 01:05:53,730] it's the space
+- [01:05:53,730 - 01:05:55,970] component of a four vector.
+- [01:05:56,430 - 01:05:57,430] For example,
+- [01:05:58,130 - 01:05:59,450] if this is the
+- [01:06:00,090 - 01:06:01,710] space component m
+- [01:06:02,950 - 01:06:04,130] of a four vector,
+- [01:06:04,270 - 01:06:06,150] then this would be d phi by dxm,
+- [01:06:06,210 - 01:06:06,890] incidentally.
+- [01:06:07,130 - 01:06:10,210] We're shifting along the m-axis.
+- [01:06:11,850 - 01:06:13,710] Each component of the momentum,
+- [01:06:14,010 - 01:06:14,430] 1,
+- [01:06:14,430 - 01:06:14,790] 2,
+- [01:06:14,790 - 01:06:15,170] and 3,
+- [01:06:15,330 - 01:06:17,710] each can be represented as the integral
+- [01:06:17,790 - 01:06:18,390] of a density.
+- [01:06:18,910 - 01:06:21,530] So it's pretty clear that this is the momentum density.
+- [01:06:22,770 - 01:06:24,110] This is the momentum density.
+- [01:06:26,610 - 01:06:27,690] What sort of notation
+- [01:06:27,690 - 01:06:28,690] should we use for it?
+- [01:06:29,490 - 01:06:29,930] Well,
+- [01:06:31,770 - 01:06:32,650] the first...
+- [01:06:32,650 - 01:06:32,890] let's see,
+- [01:06:32,890 - 01:06:33,490] I think the
+- [01:06:33,490 - 01:06:34,790] second index...
+- [01:06:37,550 - 01:06:38,870] It's the momentum density,
+- [01:06:40,490 - 01:06:41,770] so we'll call it
+- [01:06:41,770 - 01:06:42,070] t.
+- [01:06:45,330 - 01:06:47,730] m for the fact that it's the m-th component,
+- [01:06:47,790 - 01:06:50,130] or the momentum that we're talking about,
+- [01:06:50,210 - 01:06:52,090] but zero from the fact that
+- [01:06:52,090 - 01:06:53,170] we're talking about a density.
+- [01:06:54,470 - 01:06:55,970] We're talking about a density
+- [01:06:55,970 - 01:06:56,950] as a density.
+- [01:06:57,310 - 01:06:58,110] A density,
+- [01:06:58,110 - 01:06:58,970] where did I write it?
+- [01:07:00,370 - 01:07:00,910] J.
+- [01:07:02,490 - 01:07:03,230] J mu
+- [01:07:03,790 - 01:07:04,590] equals rho
+- [01:07:04,590 - 01:07:06,550] and J.
+- [01:07:09,470 - 01:07:11,510] So we're talking about somebody's density.
+- [01:07:11,850 - 01:07:13,830] That makes this a time component.
+- [01:07:14,450 - 01:07:15,230] Whose density?
+- [01:07:15,550 - 01:07:17,710] The density of the m-th component.
+- [01:07:17,790 - 01:07:18,450] The density of the m-th component of momentum.
+- [01:07:18,990 - 01:07:20,350] And that's called t.
+- [01:07:20,350 - 01:07:20,810] 0.
+- [01:07:20,810 - 01:07:21,250] m.
+- [01:07:22,430 - 01:07:22,950] t.
+- [01:07:22,950 - 01:07:23,190] 0.
+- [01:07:23,190 - 01:07:23,450] 0,
+- [01:07:23,670 - 01:07:25,150] that's the density of
+- [01:07:25,890 - 01:07:26,410] energy,
+- [01:07:26,670 - 01:07:28,290] density of time component.
+- [01:07:28,950 - 01:07:29,470] t.
+- [01:07:29,470 - 01:07:29,710] 0.
+- [01:07:29,710 - 01:07:30,050] m,
+- [01:07:30,050 - 01:07:31,530] that's the density of
+- [01:07:31,530 - 01:07:33,010] space component of momentum.
+- [01:07:33,510 - 01:07:34,930] And we can write it down now.
+- [01:07:34,930 - 01:07:35,010] Now,
+- [01:07:45,710 - 01:07:47,690] that's equal to pi sub phi,
+- [01:07:48,910 - 01:07:49,430] pi,
+- [01:07:50,350 - 01:07:50,870] times
+- [01:07:50,870 - 01:07:53,350] the derivative of phi with respect to x.
+- [01:07:55,770 - 01:07:57,190] I'm sorry I erased it
+- [01:07:57,190 - 01:07:58,170] before I rewrote it,
+- [01:07:58,210 - 01:07:59,370] but that's what it was.
+- [01:07:59,590 - 01:08:00,110] Pi
+- [01:08:00,110 - 01:08:03,610] divided by the x.
+- [01:08:04,930 - 01:08:05,690] Which x?
+- [01:08:05,690 - 01:08:06,930] xm.
+- [01:08:07,990 - 01:08:09,910] If we're talking about the x component,
+- [01:08:09,910 - 01:08:11,090] then this is x.
+- [01:08:11,170 - 01:08:12,310] If we're talking about the y component,
+- [01:08:12,310 - 01:08:12,830] it's y,
+- [01:08:12,830 - 01:08:13,630] and so forth.
+- [01:08:15,350 - 01:08:18,430] Let's work it out now for our simple field theory.
+- [01:08:18,670 - 01:08:20,109] Here's our simple field theory.
+- [01:08:20,510 - 01:08:22,090] Pi sub phi is phi dot.
+- [01:08:22,569 - 01:08:24,250] For this very simple field theory,
+- [01:08:24,250 - 01:08:25,029] this is just equal.
+- [01:08:26,609 - 01:08:28,229] Pi is phi dot.
+- [01:08:30,270 - 01:08:32,830] The derivative of phi with respect to time.
+- [01:08:34,930 - 01:08:36,189] d phi with respect to t.
+- [01:08:37,149 - 01:08:39,390] Times d phi with respect to xm.
+- [01:08:42,130 - 01:08:43,569] That's the momentum density.
+- [01:08:43,870 - 01:08:45,069] A very simple expression.
+- [01:08:48,710 - 01:08:50,470] What is this momentum density?
+- [01:08:50,670 - 01:08:50,850] I mean,
+- [01:08:50,850 - 01:08:51,069] physically,
+- [01:08:51,069 - 01:08:51,850] what is it?
+- [01:08:52,830 - 01:08:53,750] For example,
+- [01:08:53,750 - 01:08:54,890] for an electromagnetic wave,
+- [01:08:54,890 - 01:08:56,510] or a wave of phi.
+- [01:08:57,210 - 01:08:57,810] Well,
+- [01:08:57,810 - 01:09:01,189] it literally is the momentum carried by that wave.
+- [01:09:02,010 - 01:09:03,649] It's combined together.
+- [01:09:03,649 - 01:09:05,720] With the momentum carried by
+- [01:09:05,720 - 01:09:07,790] all the particles in the system.
+- [01:09:09,210 - 01:09:09,770] Incidentally,
+- [01:09:09,770 - 01:09:11,590] if you think about translation invariance,
+- [01:09:12,270 - 01:09:14,470] the system is only translation invariant
+- [01:09:14,470 - 01:09:16,689] if when you translate all the fields,
+- [01:09:16,689 - 01:09:18,710] you also translate all the particles.
+- [01:09:19,569 - 01:09:20,770] If there are particles,
+- [01:09:20,770 - 01:09:21,790] charged particles,
+- [01:09:21,790 - 01:09:22,670] and so forth,
+- [01:09:22,830 - 01:09:26,810] it's not okay to just translate the electromagnetic waves
+- [01:09:26,810 - 01:09:28,490] and not translate the particles.
+- [01:09:29,270 - 01:09:31,210] Invariance means you translate everything.
+- [01:09:31,870 - 01:09:33,630] So if we were to calculate the electromagnetic waves,
+- [01:09:33,630 - 01:09:34,600] and we were to keep
+- [01:09:34,600 - 01:09:35,569] track of not only the field,
+- [01:09:35,689 - 01:09:37,870] but all the particles that it might interact with,
+- [01:09:38,130 - 01:09:40,000] there would be contributions to
+- [01:09:40,000 - 01:09:41,870] the momentum coming from those particles.
+- [01:09:42,410 - 01:09:45,060] And we would literally be talking about
+- [01:09:45,060 - 01:09:47,710] the conservation of momentum of particles and fields.
+- [01:09:48,189 - 01:09:48,710] Well,
+- [01:09:48,710 - 01:09:49,569] this blackboard,
+- [01:09:49,569 - 01:09:50,490] this whiteboard here,
+- [01:09:50,490 - 01:09:52,149] is made up out of particles.
+- [01:09:52,850 - 01:09:54,650] We can shine light on it.
+- [01:09:55,090 - 01:09:56,750] And when we shine light on it,
+- [01:09:56,750 - 01:09:58,510] let's say we shine a pulse of light on it.
+- [01:09:58,630 - 01:10:00,750] Let's suppose this blackboard were
+- [01:10:00,750 - 01:10:02,870] freely hanging freely in space.
+- [01:10:03,090 - 01:10:03,350] And we can see that the
+- [01:10:03,350 - 01:10:03,610] blackboard is hanging freely in space.
+- [01:10:03,630 - 01:10:06,610] And we shine a good pulse of light on it.
+- [01:10:06,650 - 01:10:07,850] The light reflects off it.
+- [01:10:08,190 - 01:10:11,430] The momentum of the light is transferred,
+- [01:10:11,710 - 01:10:13,490] or maybe the light might be absorbed.
+- [01:10:13,690 - 01:10:14,910] If the light is absorbed,
+- [01:10:14,910 - 01:10:16,670] the momentum of the light
+- [01:10:16,670 - 01:10:18,430] is absorbed by the system here.
+- [01:10:18,650 - 01:10:20,290] And what happens is it recoils.
+- [01:10:21,130 - 01:10:21,690] Now,
+- [01:10:21,690 - 01:10:22,730] for ordinary light,
+- [01:10:22,730 - 01:10:24,170] for an ordinary pulse of light,
+- [01:10:25,130 - 01:10:28,000] the momentum is so feeble that
+- [01:10:28,000 - 01:10:30,870] it's pretty darn hard to measure
+- [01:10:30,870 - 01:10:35,700] the recoil of anything but maybe
+- [01:10:35,700 - 01:10:40,530] the lightest filament of some sort,
+- [01:10:40,610 - 01:10:44,770] the lightest membrane due to light.
+- [01:10:44,870 - 01:10:45,050] Light,
+- [01:10:45,050 - 01:10:46,910] the ordinary light that you see coming out of
+- [01:10:46,910 - 01:10:48,770] a light bulb is extremely feeble in the sense.
+- [01:10:49,490 - 01:10:49,910] But,
+- [01:10:49,910 - 01:10:50,110] you know,
+- [01:10:50,110 - 01:10:52,590] a really powerful laser beam,
+- [01:10:54,170 - 01:10:54,590] well,
+- [01:10:54,590 - 01:10:55,030] okay,
+- [01:10:55,030 - 01:10:57,880] the kind of laser beams that
+- [01:10:57,880 - 01:11:00,730] they use across the bay in Livermore,
+- [01:11:01,470 - 01:11:05,050] have so much momentum that when that momentum is absorbed,
+- [01:11:05,350 - 01:11:07,090] the tiny bit of material,
+- [01:11:07,090 - 01:11:07,970] the pellet in there,
+- [01:11:07,970 - 01:11:09,150] just gets squashed.
+- [01:11:09,550 - 01:11:10,070] So,
+- [01:11:10,070 - 01:11:10,470] yes,
+- [01:11:10,470 - 01:11:11,490] light has momentum.
+- [01:11:11,750 - 01:11:12,950] Light has energy.
+- [01:11:14,510 - 01:11:16,890] Here we've just done it for simple waves.
+- [01:11:18,450 - 01:11:20,150] I'm not going to write down,
+- [01:11:20,150 - 01:11:20,530] well,
+- [01:11:20,530 - 01:11:20,990] let's see.
+- [01:11:21,850 - 01:11:25,210] I want to do this for the electromagnetic field.
+- [01:11:25,690 - 01:11:28,090] There's another question that we haven't addressed yet.
+- [01:11:28,550 - 01:11:29,630] And I may not address it
+- [01:11:29,630 - 01:11:30,710] until the end of the session.
+- [01:11:30,710 - 01:11:31,450] Until next quarter.
+- [01:11:31,610 - 01:11:33,290] But the other question is,
+- [01:11:33,290 - 01:11:34,050] what is the flow?
+- [01:11:34,310 - 01:11:36,350] These are the densities of these quantities.
+- [01:11:37,770 - 01:11:40,190] What about the flow or
+- [01:11:40,190 - 01:11:42,610] the flux of energy and momentum?
+- [01:11:42,990 - 01:11:44,650] The way energy and momentum move.
+- [01:11:47,070 - 01:11:47,550] Yeah.
+- [01:11:47,930 - 01:11:48,410] So,
+- [01:11:48,410 - 01:11:48,810] one question.
+- [01:11:49,110 - 01:11:51,550] When we were doing particles,
+- [01:11:51,550 - 01:11:53,430] say the Luritz force case,
+- [01:11:54,250 - 01:11:56,330] you picked a Lagrangian and you said,
+- [01:11:56,330 - 01:11:56,810] you know,
+- [01:11:56,830 - 01:11:58,070] the way to prove that you
+- [01:11:58,070 - 01:11:59,310] had chosen the right one is that
+- [01:11:59,310 - 01:12:01,590] when you do the Euler-Lagrange equations,
+- [01:12:02,210 - 01:12:04,210] Newton's laws basically should drop down.
+- [01:12:04,370 - 01:12:04,630] So,
+- [01:12:04,630 - 01:12:06,890] what corresponds to Newton's laws,
+- [01:12:06,890 - 01:12:07,230] say,
+- [01:12:07,230 - 01:12:07,870] in this case,
+- [01:12:07,870 - 01:12:08,590] when you're doing a field?
+- [01:12:08,870 - 01:12:10,410] For the simple field here,
+- [01:12:10,410 - 01:12:14,290] the equations of motion.
+- [01:12:16,310 - 01:12:16,790] Sometimes,
+- [01:12:16,790 - 01:12:19,330] especially in modern physics,
+- [01:12:19,910 - 01:12:22,170] you don't start with the equations of motion,
+- [01:12:22,350 - 01:12:24,070] which you've known for years and years by measurement.
+- [01:12:24,350 - 01:12:27,290] You start with a few symmetry principles and some guesses
+- [01:12:27,290 - 01:12:29,150] about what the fields are in the Lagrangian.
+- [01:12:29,310 - 01:12:30,030] So,
+- [01:12:30,030 - 01:12:31,370] here we're starting with the Lagrangian.
+- [01:12:31,530 - 01:12:33,540] But the analog of Newton's
+- [01:12:33,540 - 01:12:35,550] laws would be the field equations.
+- [01:12:35,870 - 01:12:39,640] d second phi by dt squared
+- [01:12:39,640 - 01:12:43,410] minus d second phi by dx squared
+- [01:12:47,230 - 01:12:50,930] is equal to minus dv by d phi.
+- [01:12:53,490 - 01:12:54,650] Some wave equation.
+- [01:12:55,290 - 01:12:55,930] So,
+- [01:12:55,930 - 01:12:59,290] is there another way to prove that the lagrangian
+- [01:12:59,290 - 01:13:01,410] is correct,
+- [01:13:01,410 - 01:13:04,530] other than showing that this comes out to be?
+- [01:13:05,950 - 01:13:06,470] Well,
+- [01:13:06,470 - 01:13:06,990] no.
+- [01:13:10,470 - 01:13:12,290] You have two ways to start.
+- [01:13:12,590 - 01:13:13,730] You can start with a
+- [01:13:13,730 - 01:13:14,870] guess about what the Lagrangian is
+- [01:13:14,870 - 01:13:16,170] and derive the field equations,
+- [01:13:16,430 - 01:13:18,830] or you can start with some experiments
+- [01:13:18,830 - 01:13:22,410] and take those experiments and from those experiments
+- [01:13:22,410 - 01:13:25,010] derive field equations and then derive an action.
+- [01:13:26,570 - 01:13:27,090] So,
+- [01:13:27,090 - 01:13:28,370] which field is this?
+- [01:13:28,370 - 01:13:29,090] The Higgs field?
+- [01:13:30,110 - 01:13:32,210] The Higgs field has never really been measured.
+- [01:13:34,910 - 01:13:36,210] This could be,
+- [01:13:36,210 - 01:13:37,770] you know what this field could stand for?
+- [01:13:38,090 - 01:13:40,290] This field phi could stand
+- [01:13:40,290 - 01:13:42,490] for the position of a rope
+- [01:13:42,490 - 01:13:44,650] that's stretched between two points.
+- [01:13:45,470 - 01:13:47,090] Then you could derive it
+- [01:13:47,090 - 01:13:48,710] from the fact that the rope
+- [01:13:48,710 - 01:13:50,470] is made up out of a bunch of particles.
+- [01:13:51,310 - 01:13:53,670] It would just be the kinetic and potential energies
+- [01:13:53,670 - 01:13:55,070] of the particles that make up the rope.
+- [01:13:55,690 - 01:13:56,170] But,
+- [01:13:56,170 - 01:13:56,370] uh,
+- [01:13:58,690 - 01:13:59,810] more and more,
+- [01:13:59,810 - 01:14:00,330] I mean,
+- [01:14:00,330 - 01:14:02,310] I think modern physics revolves around
+- [01:14:03,030 - 01:14:06,570] trying to guess either from symmetry principles
+- [01:14:06,570 - 01:14:09,390] or some basic underlying principle of physics,
+- [01:14:09,710 - 01:14:11,970] trying to guess the Lagrangian,
+- [01:14:12,070 - 01:14:13,890] and then deriving the,
+- [01:14:13,890 - 01:14:14,150] uh,
+- [01:14:14,490 - 01:14:16,630] and often you don't know what the field equations are
+- [01:14:16,630 - 01:14:17,450] until you derive them.
+- [01:14:18,330 - 01:14:19,310] And then,
+- [01:14:20,110 - 01:14:21,230] and then attempt,
+- [01:14:21,230 - 01:14:22,510] and then attempt to,
+- [01:14:22,510 - 01:14:22,830] right,
+- [01:14:22,890 - 01:14:23,830] compare them with experiments.
+- [01:14:24,470 - 01:14:25,030] Right,
+- [01:14:25,030 - 01:14:25,310] so,
+- [01:14:26,150 - 01:14:26,710] uh,
+- [01:14:27,270 - 01:14:28,710] it's a historical fact.
+- [01:14:28,850 - 01:14:31,230] Newton's equations were known before Lagrangian's equations.
+- [01:14:31,810 - 01:14:32,030] Right.
+- [01:14:32,850 - 01:14:34,860] And Maxwell's equations were known
+- [01:14:34,860 - 01:14:36,870] before the action formulation of,
+- [01:14:36,990 - 01:14:37,030] uh,
+- [01:14:37,030 - 01:14:37,590] right.
+- [01:14:38,170 - 01:14:38,690] But,
+- [01:14:38,690 - 01:14:38,890] uh,
+- [01:14:39,070 - 01:14:41,110] this gets to be less and less so with time.
+- [01:14:41,390 - 01:14:41,950] All right,
+- [01:14:41,950 - 01:14:42,790] let's talk about,
+- [01:14:43,010 - 01:14:43,590] um,
+- [01:14:44,470 - 01:14:46,370] we can go two directions now.
+- [01:14:46,430 - 01:14:47,770] We can talk about the flux
+- [01:14:47,770 - 01:14:49,110] of momentum and the flux of energy,
+- [01:14:50,410 - 01:14:51,150] which I,
+- [01:14:51,150 - 01:14:52,590] I did not want to do right now.
+- [01:14:53,130 - 01:14:54,890] Or we can talk about
+- [01:14:54,890 - 01:14:56,650] the notion of energy and momentum,
+- [01:14:56,650 - 01:14:59,470] and the energy density and
+- [01:14:59,470 - 01:15:02,290] the momentum density in electrodynamics,
+- [01:15:02,410 - 01:15:04,950] in particular for electromagnetic waves.
+- [01:15:06,429 - 01:15:08,009] And I think that's probably a
+- [01:15:08,009 - 01:15:09,590] more important thing to do right now.
+- [01:15:12,349 - 01:15:13,270] The energy momentum,
+- [01:15:14,810 - 01:15:15,530] this,
+- [01:15:15,670 - 01:15:16,990] these quantities,
+- [01:15:17,190 - 01:15:20,970] T nought m and T nought nought,
+- [01:15:22,490 - 01:15:24,530] are some components of a
+- [01:15:24,530 - 01:15:26,570] thing called the energy momentum density.
+- [01:15:26,570 - 01:15:26,830] So,
+- [01:15:27,490 - 01:15:28,690] Energy momentum tensor.
+- [01:15:28,810 - 01:15:30,800] The other components of it are associated
+- [01:15:30,800 - 01:15:32,790] with the flow of energy and momentum.
+- [01:15:33,150 - 01:15:34,130] Maybe we'll get a chance
+- [01:15:34,130 - 01:15:35,110] to talk about it yet tonight,
+- [01:15:35,250 - 01:15:35,690] I'm not sure.
+- [01:15:36,250 - 01:15:36,770] But,
+- [01:15:36,790 - 01:15:39,160] these objects here are the
+- [01:15:39,160 - 01:15:41,530] fluxes and densities of energy momentum,
+- [01:15:41,830 - 01:15:44,670] and they play a huge role in general relativity.
+- [01:15:45,550 - 01:15:46,750] In general relativity,
+- [01:15:47,070 - 01:15:49,030] they play the huge role of
+- [01:15:49,030 - 01:15:50,990] being the sources of the gravitational field.
+- [01:15:51,390 - 01:15:51,910] So,
+- [01:15:51,970 - 01:15:52,270] we,
+- [01:15:52,270 - 01:15:54,450] we have to come back to them.
+- [01:15:55,810 - 01:15:56,330] But,
+- [01:15:56,570 - 01:15:57,590] I don't think we have to do that tonight,
+- [01:15:57,830 - 01:15:58,610] not necessarily.
+- [01:16:01,070 - 01:16:05,470] Let's talk about applying this to the electromagnetic field.
+- [01:16:17,810 - 01:16:18,430] Now,
+- [01:16:18,550 - 01:16:22,370] we want to apply some of these ideas,
+- [01:16:22,470 - 01:16:26,550] particularly the idea of energy momentum density,
+- [01:16:26,550 - 01:16:28,430] in the field,
+- [01:16:28,490 - 01:16:29,030] field momentum.
+- [01:16:29,910 - 01:16:33,270] We want to apply those ideas to the electromagnetic field.
+- [01:16:34,110 - 01:16:34,950] In fact,
+- [01:16:34,950 - 01:16:36,900] we want to apply the whole
+- [01:16:36,900 - 01:16:38,850] set of ideas to the electromagnetic field.
+- [01:16:40,910 - 01:16:45,410] We could do it using the Lagrangian and the
+- [01:16:45,410 - 01:16:49,910] formulation that I gave you earlier in past lectures.
+- [01:16:50,310 - 01:16:51,630] The fields,
+- [01:16:51,770 - 01:16:52,430] what are the fields?
+- [01:16:52,670 - 01:16:55,330] The fields are the components of the vector potential.
+- [01:16:56,110 - 01:16:56,930] A mule.
+- [01:16:57,890 - 01:17:00,430] There are four components to the vector potential,
+- [01:17:00,710 - 01:17:02,730] the time component and the three space components.
+- [01:17:04,330 - 01:17:06,950] And the Lagrangian is written in terms of them.
+- [01:17:07,590 - 01:17:09,120] The electromagnetic field tensor is
+- [01:17:09,120 - 01:17:10,650] written in terms of them,
+- [01:17:11,930 - 01:17:13,450] in terms of their derivatives,
+- [01:17:14,070 - 01:17:16,070] space derivatives and time derivatives,
+- [01:17:16,250 - 01:17:17,570] and we square the whole thing,
+- [01:17:17,690 - 01:17:20,290] and that gives us the Lagrangian.
+- [01:17:20,470 - 01:17:22,730] And we could work it out.
+- [01:17:23,190 - 01:17:25,010] Instead of having just one field,
+- [01:17:25,110 - 01:17:25,310] we would have to have a set of fields,
+- [01:17:25,310 - 01:17:26,270] we would have four fields,
+- [01:17:26,370 - 01:17:27,710] but the same set of principles.
+- [01:17:28,210 - 01:17:30,890] But there is a bit of a shortcut,
+- [01:17:31,270 - 01:17:32,290] not so much a shortcut,
+- [01:17:32,430 - 01:17:35,470] but a simplification that can be made that's very helpful.
+- [01:17:35,890 - 01:17:38,890] And it really does illustrate the,
+- [01:17:39,530 - 01:17:42,610] some things about this idea of gauge invariance,
+- [01:17:43,150 - 01:17:44,510] which are quite important.
+- [01:17:46,070 - 01:17:48,530] Remember that the vector potential is not unique.
+- [01:17:49,370 - 01:17:51,350] That there are changes you can make in
+- [01:17:51,350 - 01:17:53,330] the vector potential that don't change the physics.
+- [01:17:53,330 - 01:18:00,070] You can use that freedom to simplify things.
+- [01:18:00,550 - 01:18:03,750] You can use the freedom that you have,
+- [01:18:04,650 - 01:18:07,060] which is almost like a freedom
+- [01:18:07,060 - 01:18:09,470] in your choice of a coordinate system.
+- [01:18:09,910 - 01:18:12,060] All kinds of freedoms are
+- [01:18:12,060 - 01:18:14,210] in physics associated with conventions,
+- [01:18:14,670 - 01:18:16,230] associated with coordinate frames,
+- [01:18:16,550 - 01:18:18,490] associated with gauges.
+- [01:18:18,890 - 01:18:22,170] You can use your freedom to,
+- [01:18:24,350 - 01:18:27,910] to simplify a problem by saying,
+- [01:18:28,030 - 01:18:29,650] I'm not going to work
+- [01:18:29,650 - 01:18:31,270] with the full general vector potential,
+- [01:18:31,530 - 01:18:33,230] but I'm going to use my freedom to
+- [01:18:33,230 - 01:18:34,930] do something a little bit simpler with it.
+- [01:18:35,250 - 01:18:36,230] In particular,
+- [01:18:36,230 - 01:18:39,470] let me first remind you what a gauge transformation is.
+- [01:18:39,650 - 01:18:42,120] A gauge transformation is you add
+- [01:18:42,120 - 01:18:44,590] to A the gradient of a scalar.
+- [01:18:47,970 - 01:18:49,010] Any scalar.
+- [01:18:49,370 - 01:18:50,510] Any scalar function.
+- [01:18:50,510 - 01:18:50,730] Any function.
+- [01:18:52,050 - 01:18:57,460] I can use this freedom to pick S in
+- [01:18:57,460 - 01:19:02,870] a way that may simplify my choice of A.
+- [01:19:03,130 - 01:19:04,230] For example,
+- [01:19:04,230 - 01:19:06,200] here is a particularly simple
+- [01:19:06,200 - 01:19:08,170] simplification that you can make.
+- [01:19:08,550 - 01:19:11,430] I'm going to choose S in such a way
+- [01:19:11,430 - 01:19:14,310] that the time component of the vector potential is zero.
+- [01:19:14,870 - 01:19:15,930] Can I do that?
+- [01:19:15,930 - 01:19:16,570] Is that possible?
+- [01:19:16,870 - 01:19:19,130] Is it possible to choose an S,
+- [01:19:19,130 - 01:19:21,390] so that given any time component,
+- [01:19:21,390 - 01:19:22,830] given any A naught,
+- [01:19:23,730 - 01:19:24,950] given an A naught,
+- [01:19:25,190 - 01:19:28,850] is it possible to pick an S?
+- [01:19:30,890 - 01:19:31,490] Now,
+- [01:19:31,490 - 01:19:32,910] mu is a time component,
+- [01:19:32,910 - 01:19:34,850] so this means d by dt.
+- [01:19:35,870 - 01:19:37,570] If we start with the original
+- [01:19:37,570 - 01:19:39,270] vector potential with a time component,
+- [01:19:39,650 - 01:19:42,530] we change the time component by adding dS by dt.
+- [01:19:44,770 - 01:19:47,030] Is it possible to choose S,
+- [01:19:48,150 - 01:19:50,350] so that this is always equal to zero?
+- [01:19:51,510 - 01:19:52,630] The answer is yes.
+- [01:19:52,890 - 01:19:53,590] You can,
+- [01:19:53,590 - 01:19:57,650] given any function at a point in space,
+- [01:19:57,890 - 01:20:00,000] remember this is a derivative with respect
+- [01:20:00,000 - 01:20:02,110] to time at a fixed position in space.
+- [01:20:03,530 - 01:20:05,690] So you go to that fixed position in space,
+- [01:20:05,690 - 01:20:06,590] right over here,
+- [01:20:06,770 - 01:20:07,690] and you say,
+- [01:20:07,690 - 01:20:09,410] can I pick S,
+- [01:20:10,190 - 01:20:14,490] so that its time derivative is minus
+- [01:20:14,490 - 01:20:18,170] some pre-existing or pre-specified A naught?
+- [01:20:19,090 - 01:20:20,650] Can I choose S,
+- [01:20:21,490 - 01:20:23,510] so that this is equal to
+- [01:20:23,510 - 01:20:25,530] minus the A naught by dt?
+- [01:20:25,790 - 01:20:26,270] Sorry,
+- [01:20:26,270 - 01:20:27,370] just minus A naught.
+- [01:20:30,990 - 01:20:31,570] Well,
+- [01:20:31,570 - 01:20:31,850] yes.
+- [01:20:31,970 - 01:20:35,110] You can always find an S,
+- [01:20:35,230 - 01:20:39,070] such that its derivative is any particular function.
+- [01:20:39,350 - 01:20:41,230] That you can convince yourself of.
+- [01:20:41,270 - 01:20:42,660] You do it by the S
+- [01:20:42,660 - 01:20:44,050] is some integral of A naught,
+- [01:20:44,690 - 01:20:47,350] but given any function on the right-hand side,
+- [01:20:47,570 - 01:20:49,450] you can always find a
+- [01:20:49,450 - 01:20:51,330] function S on the left-hand side
+- [01:20:51,330 - 01:20:53,270] whose time derivative is equal to A naught.
+- [01:20:54,250 - 01:20:55,710] All you have to do is
+- [01:20:55,710 - 01:20:57,170] go back to the original Levy's convention.
+- [01:20:58,990 - 01:21:00,090] The minus sign.
+- [01:21:00,410 - 01:21:01,890] There's no question of the minus sign.
+- [01:21:02,030 - 01:21:02,590] It's a question of,
+- [01:21:02,590 - 01:21:02,910] yeah,
+- [01:21:02,910 - 01:21:03,490] that's right.
+- [01:21:05,190 - 01:21:06,990] But can you find,
+- [01:21:06,990 - 01:21:08,430] and the answer is yes.
+- [01:21:08,510 - 01:21:09,550] You always can do that.
+- [01:21:09,750 - 01:21:11,510] So if I choose the S,
+- [01:21:12,990 - 01:21:16,090] so that its time derivative is
+- [01:21:16,090 - 01:21:19,190] minus the original vector potential component,
+- [01:21:19,270 - 01:21:19,910] time component,
+- [01:21:20,010 - 01:21:22,530] then the new vector potential,
+- [01:21:22,790 - 01:21:25,070] let's call it A prime mu,
+- [01:21:25,990 - 01:21:29,150] will have zero for its time component.
+- [01:21:29,530 - 01:21:30,270] You can always do that.
+- [01:21:30,810 - 01:21:32,630] It's called fixing the gauge.
+- [01:21:32,870 - 01:21:33,350] It's called,
+- [01:21:33,350 - 01:21:36,610] or it's called fixing the gauge freedom.
+- [01:21:37,130 - 01:21:38,590] You have gauge freedom,
+- [01:21:38,790 - 01:21:41,370] meaning to say that you can change the vector potential,
+- [01:21:41,370 - 01:21:42,850] without changing any of the physics,
+- [01:21:43,090 - 01:21:44,470] and so you make a choice.
+- [01:21:44,650 - 01:21:45,650] You make a choice,
+- [01:21:45,650 - 01:21:46,910] I will choose to work
+- [01:21:46,910 - 01:21:48,350] so that the time component
+- [01:21:48,350 - 01:21:49,790] of the vector potential is zero.
+- [01:21:50,030 - 01:21:51,030] There are other choices.
+- [01:21:51,430 - 01:21:53,030] There are other choices you can do,
+- [01:21:54,790 - 01:21:57,070] but in fact that changes none of the physics.
+- [01:21:57,510 - 01:21:58,010] So,
+- [01:21:58,010 - 01:22:00,570] we fix A naught equal to zero.
+- [01:22:02,570 - 01:22:04,440] That completely eliminates the time
+- [01:22:04,440 - 01:22:06,310] component of the vector potential,
+- [01:22:06,610 - 01:22:08,810] and all we have left are
+- [01:22:08,810 - 01:22:11,010] the space components of the vector potential,
+- [01:22:11,010 - 01:22:11,290] A,
+- [01:22:11,290 - 01:22:12,630] A sub m of x.
+- [01:22:14,130 - 01:22:14,770] All right,
+- [01:22:14,770 - 01:22:15,670] let's suppose we've done that.
+- [01:22:16,230 - 01:22:18,650] What then are the electric and magnetic fields?
+- [01:22:19,330 - 01:22:19,810] Well,
+- [01:22:19,810 - 01:22:21,050] the electric field,
+- [01:22:22,330 - 01:22:23,550] now the question is,
+- [01:22:23,610 - 01:22:25,490] shall I use my convention or Maxwell's?
+- [01:22:26,370 - 01:22:28,070] I will use Maxwell's tonight,
+- [01:22:28,270 - 01:22:30,130] which is minus my convention,
+- [01:22:31,630 - 01:22:33,310] in which case there,
+- [01:22:33,530 - 01:22:35,150] let's see if I can remember it now,
+- [01:22:38,550 - 01:22:39,510] I can't.
+- [01:22:43,390 - 01:22:43,950] Yeah,
+- [01:22:43,950 - 01:22:44,510] okay,
+- [01:22:44,510 - 01:22:45,610] that's minus,
+- [01:22:47,950 - 01:22:49,110] this is a vector,
+- [01:22:49,850 - 01:22:53,010] minus the A by dt,
+- [01:22:56,130 - 01:22:59,290] plus gradient of A naught.
+- [01:23:02,310 - 01:23:03,030] All right,
+- [01:23:03,030 - 01:23:04,490] but now I've simplified A naught,
+- [01:23:04,670 - 01:23:06,050] and set A naught equal to zero.
+- [01:23:06,350 - 01:23:07,750] A naught doesn't exist anymore,
+- [01:23:08,350 - 01:23:09,190] and so,
+- [01:23:13,250 - 01:23:14,870] the electric field,
+- [01:23:15,010 - 01:23:16,390] Maxwell's electric field,
+- [01:23:16,610 - 01:23:19,190] is just minus the time derivative
+- [01:23:19,190 - 01:23:21,069] of the space component of,
+- [01:23:21,170 - 01:23:22,390] we can put some space indices,
+- [01:23:22,650 - 01:23:23,750] let's put space indices,
+- [01:23:24,150 - 01:23:24,670] m,
+- [01:23:24,670 - 01:23:25,390] m.
+- [01:23:26,850 - 01:23:29,210] The electric field is nothing but
+- [01:23:30,109 - 01:23:31,489] the time derivative
+- [01:23:32,269 - 01:23:33,569] of the vector potential.
+- [01:23:35,550 - 01:23:37,470] What about the magnetic field?
+- [01:23:37,750 - 01:23:38,250] Well,
+- [01:23:38,250 - 01:23:40,110] the magnetic field only depended
+- [01:23:40,110 - 01:23:42,010] on the space components of the vector potential
+- [01:23:42,010 - 01:23:42,909] in the first place.
+- [01:23:43,090 - 01:23:45,310] It was just equal to the curl of the magnetic,
+- [01:23:45,510 - 01:23:46,350] the curl of A.
+- [01:23:46,710 - 01:23:47,790] That doesn't change.
+- [01:23:48,790 - 01:23:50,750] The magnetic field has not changed,
+- [01:23:50,890 - 01:23:53,050] or the space components of the,
+- [01:23:53,890 - 01:23:55,369] that stays the same.
+- [01:23:55,670 - 01:23:57,210] B is del cross A,
+- [01:23:57,430 - 01:24:00,830] and electric field is now minus the A by dt.
+- [01:24:03,610 - 01:24:05,790] And that simplifies our lives a little bit.
+- [01:24:05,869 - 01:24:08,050] We don't have to worry about the time component
+- [01:24:08,050 - 01:24:09,090] of the vector potential.
+- [01:24:10,110 - 01:24:10,330] The fields,
+- [01:24:10,330 - 01:24:11,470] the degrees of freedom,
+- [01:24:11,670 - 01:24:14,369] the degrees of freedom are just the space components
+- [01:24:14,369 - 01:24:15,250] of the vector potential.
+- [01:24:15,510 - 01:24:17,970] We'll find out that that simplifies life a lot.
+- [01:24:18,730 - 01:24:19,130] Okay,
+- [01:24:19,130 - 01:24:20,150] what about the Lagrangian?
+- [01:24:20,870 - 01:24:21,670] The Lagrangian,
+- [01:24:23,570 - 01:24:24,970] remember what the Lagrangian is
+- [01:24:24,970 - 01:24:26,630] in terms of the electric and magnetic fields?
+- [01:24:32,670 - 01:24:33,070] Yeah,
+- [01:24:33,070 - 01:24:34,790] it's f mu nu,
+- [01:24:34,949 - 01:24:35,930] f mu nu,
+- [01:24:37,090 - 01:24:37,949] minus a quarter,
+- [01:24:37,949 - 01:24:40,170] but that happens to be equal to
+- [01:24:40,170 - 01:24:41,250] e squared over 2,
+- [01:24:41,470 - 01:24:43,470] minus b squared over 2.
+- [01:24:44,810 - 01:24:46,550] The square of the electric field
+- [01:24:46,550 - 01:24:49,330] minus the square of the magnetic field.
+- [01:24:50,670 - 01:24:51,949] Let's see if we can see it.
+- [01:24:52,449 - 01:24:55,450] There's the mixed space-time components.
+- [01:24:56,990 - 01:24:58,030] They get squared.
+- [01:24:58,210 - 01:24:59,270] Each component gets squared.
+- [01:25:00,110 - 01:25:02,090] So the mixed space-time components,
+- [01:25:02,290 - 01:25:03,650] those are the electric field squares,
+- [01:25:04,550 - 01:25:06,870] and the space components,
+- [01:25:06,870 - 01:25:09,690] those give you the magnetic field squared.
+- [01:25:10,170 - 01:25:10,710] Okay,
+- [01:25:10,710 - 01:25:12,870] so that's the Lagrangian.
+- [01:25:13,550 - 01:25:15,100] And now we can write the Lagrangian,
+- [01:25:15,770 - 01:25:18,470] write in terms of these quantities here,
+- [01:25:18,550 - 01:25:19,530] in terms of the vector potential.
+- [01:25:20,210 - 01:25:22,750] The vector potential are the real fields
+- [01:25:22,750 - 01:25:25,350] that we use in the Lagrangian.
+- [01:25:26,130 - 01:25:27,590] And so let's write it down.
+- [01:25:27,690 - 01:25:30,410] It's e squared minus b squared,
+- [01:25:30,570 - 01:25:32,530] one half e squared minus one half b squared.
+- [01:25:33,150 - 01:25:36,330] One half the electric field squared,
+- [01:25:36,330 - 01:25:39,430] but the electric field squared is just
+- [01:25:43,649 - 01:25:46,450] dA by dT squared.
+- [01:25:48,830 - 01:25:50,750] That looks an awful lot like this.
+- [01:25:51,710 - 01:25:54,970] One half the time derivative of field squared.
+- [01:25:55,510 - 01:25:57,550] Now there's not just one term here,
+- [01:25:57,610 - 01:25:58,730] there are three terms here.
+- [01:25:58,970 - 01:26:00,150] There's Ax squared,
+- [01:26:00,290 - 01:26:02,250] there's this time derivative of Ax squared,
+- [01:26:02,410 - 01:26:04,110] this time derivative of Ay squared,
+- [01:26:04,110 - 01:26:06,030] and this time derivative of Az squared.
+- [01:26:06,450 - 01:26:08,020] But it is a sum
+- [01:26:08,020 - 01:26:09,590] of terms of exactly this type.
+- [01:26:10,310 - 01:26:13,050] One for each component of the vector potential.
+- [01:26:13,770 - 01:26:15,290] So the first thing we see
+- [01:26:15,290 - 01:26:16,810] is that there's a kinetic energy.
+- [01:26:17,010 - 01:26:18,330] There's a kinetic energy which
+- [01:26:18,330 - 01:26:19,650] is just the sums of squares
+- [01:26:22,050 - 01:26:24,890] of time derivatives of the basic fields.
+- [01:26:25,250 - 01:26:26,750] What about the second term?
+- [01:26:26,890 - 01:26:30,470] The second term is minus one half b squared.
+- [01:26:31,070 - 01:26:33,850] b squared is minus one half,
+- [01:26:33,850 - 01:26:38,950] one half del cross A squared.
+- [01:26:39,750 - 01:26:40,570] Well,
+- [01:26:40,570 - 01:26:42,990] that doesn't look so different from this term.
+- [01:26:43,460 - 01:26:45,850] This term involves space derivatives.
+- [01:26:46,290 - 01:26:48,290] No time derivatives in here at all.
+- [01:26:48,870 - 01:26:50,410] Only space derivatives.
+- [01:26:51,390 - 01:26:53,550] Here there are only space derivatives.
+- [01:26:53,930 - 01:26:56,710] A curl only involves space derivatives.
+- [01:26:58,640 - 01:27:02,310] And A only has space components.
+- [01:27:03,850 - 01:27:06,710] So what we have here looks quite
+- [01:27:06,710 - 01:27:09,570] similar to what we wrote up here.
+- [01:27:10,370 - 01:27:13,410] Squares of time derivatives minus squares
+- [01:27:13,410 - 01:27:16,450] of various kinds of space derivatives.
+- [01:27:17,210 - 01:27:19,290] The Lagrangian looks nice and healthy.
+- [01:27:20,210 - 01:27:22,510] Doesn't have anything peculiar about it.
+- [01:27:22,830 - 01:27:27,430] And now we can apply exactly the rules
+- [01:27:27,430 - 01:27:32,030] that we derived before we took the break.
+- [01:27:32,989 - 01:27:34,030] In particular,
+- [01:27:34,030 - 01:27:37,210] let's think about the energy,
+- [01:27:37,210 - 01:27:38,430] the Hamiltonian.
+- [01:27:39,590 - 01:27:40,770] I don't have to go,
+- [01:27:40,770 - 01:27:41,030] oh,
+- [01:27:41,030 - 01:27:41,930] before we do that,
+- [01:27:41,930 - 01:27:42,890] let me just tell you,
+- [01:27:42,950 - 01:27:45,030] we're not going to go through the whole operation.
+- [01:27:45,310 - 01:27:46,810] We can short circuit it.
+- [01:27:46,930 - 01:27:48,050] But you might ask,
+- [01:27:48,050 - 01:27:50,290] what is the canonical momentum
+- [01:27:52,169 - 01:27:55,910] conjugate to a particular component of the vector potential?
+- [01:27:56,850 - 01:27:57,870] In other words,
+- [01:27:57,870 - 01:27:58,750] by definition,
+- [01:27:58,970 - 01:28:01,610] the derivative of the Lagrangian,
+- [01:28:02,030 - 01:28:04,610] with respect to the time derivative,
+- [01:28:07,570 - 01:28:09,170] dt of A.
+- [01:28:10,800 - 01:28:11,150] Well,
+- [01:28:11,150 - 01:28:12,110] it's clearly just,
+- [01:28:12,110 - 01:28:13,530] it's clearly just,
+- [01:28:13,570 - 01:28:16,110] it's clearly just dA by dt.
+- [01:28:21,890 - 01:28:25,730] Let me be a little clearer about this.
+- [01:28:29,590 - 01:28:31,410] There are three components,
+- [01:28:32,490 - 01:28:33,010] Ax,
+- [01:28:33,010 - 01:28:33,610] Ay,
+- [01:28:33,610 - 01:28:34,490] and Az.
+- [01:28:36,690 - 01:28:39,950] These three components can be thought of as three fields.
+- [01:28:40,630 - 01:28:42,810] Each one is a degree of freedom of its own.
+- [01:28:43,570 - 01:28:45,770] Each one of them has a canonical momentum.
+- [01:28:46,250 - 01:28:49,610] That means the canonical momentum also has an index,
+- [01:28:49,850 - 01:28:50,330] x,
+- [01:28:50,330 - 01:28:50,710] y,
+- [01:28:50,710 - 01:28:51,130] and z.
+- [01:28:51,750 - 01:28:53,970] So let's call it pi x,
+- [01:28:55,189 - 01:28:58,190] this would be derivative of Ax with respect to t,
+- [01:28:58,410 - 01:29:01,690] pi y would be derivative of Ay,
+- [01:29:02,030 - 01:29:03,030] pi with respect to t,
+- [01:29:04,170 - 01:29:06,610] and likewise for pi z,
+- [01:29:06,790 - 01:29:09,890] equals dAz by dt.
+- [01:29:12,650 - 01:29:14,830] This of course here stands
+- [01:29:14,830 - 01:29:17,010] for time derivative of Ax squared,
+- [01:29:17,270 - 01:29:18,950] plus time derivative of Ay squared,
+- [01:29:18,950 - 01:29:19,290] etc.
+- [01:29:20,670 - 01:29:21,350] Alright,
+- [01:29:21,350 - 01:29:22,510] so the pi quantity,
+- [01:29:22,690 - 01:29:23,750] the canonical momentum,
+- [01:29:24,110 - 01:29:25,770] also has an index,
+- [01:29:26,090 - 01:29:28,770] and the index is simply
+- [01:29:28,770 - 01:29:31,450] associated with the index of A.
+- [01:29:34,829 - 01:29:35,389] But,
+- [01:29:35,389 - 01:29:38,610] it's also true that the time derivative of A
+- [01:29:38,610 - 01:29:40,290] is just minus the electric field.
+- [01:29:40,630 - 01:29:41,910] So we found something interesting.
+- [01:29:42,150 - 01:29:46,470] The canonical momenta happen to be just minus the electric,
+- [01:29:46,610 - 01:29:48,270] the components of the electric field.
+- [01:29:49,130 - 01:29:50,270] For what it's worth,
+- [01:29:50,430 - 01:29:51,230] for what it's worth,
+- [01:29:51,350 - 01:29:52,470] the physical meaning,
+- [01:29:52,730 - 01:29:53,690] in this case,
+- [01:29:53,710 - 01:29:56,830] the physical meaning of the canonical momentum
+- [01:29:57,749 - 01:29:59,490] conjugate to the vector potential
+- [01:30:00,010 - 01:30:01,370] is just the electric field.
+- [01:30:11,270 - 01:30:12,710] That's a sort of by the way,
+- [01:30:12,770 - 01:30:14,550] just a notice of fact.
+- [01:30:14,810 - 01:30:16,410] But now let's take this Lagrangian
+- [01:30:16,410 - 01:30:17,930] and ask what the Hamiltonian is.
+- [01:30:18,210 - 01:30:21,270] We could go through the construction of the Hamiltonian,
+- [01:30:21,330 - 01:30:22,850] but we don't really have to.
+- [01:30:23,450 - 01:30:26,090] And the reason is we can look at this Lagrangian
+- [01:30:26,090 - 01:30:26,550] and say look,
+- [01:30:26,670 - 01:30:28,090] here's a kinetic energy term
+- [01:30:28,090 - 01:30:30,790] that depends on squares of time derivatives,
+- [01:30:31,050 - 01:30:32,010] and here's a potential energy term
+- [01:30:32,010 - 01:30:34,250] that has no time derivatives at all.
+- [01:30:34,610 - 01:30:37,430] So this is kinetic energy minus potential energy.
+- [01:30:37,650 - 01:30:39,190] And we know what the answer is.
+- [01:30:39,310 - 01:30:41,610] The answer is going to be the kinetic energy
+- [01:30:41,610 - 01:30:43,330] plus the potential energy.
+- [01:30:43,670 - 01:30:44,330] That's it.
+- [01:30:44,650 - 01:30:45,970] So we can guess.
+- [01:30:46,850 - 01:30:48,710] The Hamiltonian and the energy
+- [01:30:48,710 - 01:30:50,970] is going to be one half
+- [01:30:53,210 - 01:30:54,190] E squared,
+- [01:30:55,070 - 01:30:56,150] that's this term,
+- [01:30:56,830 - 01:30:57,910] A dot squared,
+- [01:30:58,610 - 01:30:59,190] plus
+- [01:31:00,390 - 01:31:01,330] one half
+- [01:31:02,229 - 01:31:03,190] B squared.
+- [01:31:04,290 - 01:31:05,790] That's the correct expression
+- [01:31:05,790 - 01:31:08,250] for the electromagnetic field energy
+- [01:31:08,250 - 01:31:10,150] in an electric and magnetic field.
+- [01:31:11,350 - 01:31:13,610] Setting the speed of light equal to one.
+- [01:31:13,770 - 01:31:16,030] Setting the speed of light equal to one.
+- [01:31:16,210 - 01:31:18,330] One half E squared plus B squared.
+- [01:31:19,090 - 01:31:20,270] It's analogous,
+- [01:31:20,330 - 01:31:22,110] everything is entirely analogous,
+- [01:31:22,110 - 01:31:23,350] although not identical,
+- [01:31:23,730 - 01:31:25,550] to the Lagrangian here being
+- [01:31:25,550 - 01:31:28,670] phi dot squared over two minus gradient of phi squared,
+- [01:31:28,970 - 01:31:31,690] and the Hamiltonian being phi dot squared
+- [01:31:31,690 - 01:31:33,850] plus gradient of phi squared.
+- [01:31:34,310 - 01:31:35,890] Notice that again,
+- [01:31:36,110 - 01:31:37,090] same pattern,
+- [01:31:37,370 - 01:31:39,310] the Lagrangian is not positive,
+- [01:31:39,470 - 01:31:40,130] necessarily.
+- [01:31:41,810 - 01:31:42,890] In particular,
+- [01:31:43,090 - 01:31:46,010] if there's a magnetic field but no electric field,
+- [01:31:46,130 - 01:31:47,150] the Lagrangian is negative.
+- [01:31:47,530 - 01:31:48,690] But the energy,
+- [01:31:48,850 - 01:31:50,030] the energy is positive.
+- [01:31:50,330 - 01:31:51,970] E squared plus B squared.
+- [01:31:52,910 - 01:31:54,310] So what does this tell you?
+- [01:31:54,350 - 01:31:56,890] For an electromagnetic wave moving down an axis,
+- [01:31:58,149 - 01:31:58,790] there's,
+- [01:31:59,410 - 01:32:01,810] remember what the electromagnetic wave looked like.
+- [01:32:03,930 - 01:32:06,870] It had an E component in one direction,
+- [01:32:07,110 - 01:32:09,670] and then in the perpendicular direction
+- [01:32:09,670 - 01:32:10,870] it had a B field.
+- [01:32:11,630 - 01:32:15,670] The B field in magnitude
+- [01:32:15,670 - 01:32:17,210] was the same as the E field,
+- [01:32:17,330 - 01:32:18,570] in phase with it,
+- [01:32:18,690 - 01:32:21,950] but polarized in the perpendicular direction.
+- [01:32:22,450 - 01:32:24,640] And this tells us that the electric
+- [01:32:24,640 - 01:32:26,830] and magnetic field energies are the same.
+- [01:32:27,250 - 01:32:28,770] There's field energy in the electric field,
+- [01:32:28,790 - 01:32:31,190] there's field energy in the magnetic field,
+- [01:32:31,330 - 01:32:33,810] that electromagnetic wave moving down the axis
+- [01:32:33,810 - 01:32:35,750] has both electric and magnetic energy,
+- [01:32:35,870 - 01:32:36,810] and they happen to be the same.
+- [01:32:37,390 - 01:32:39,190] One half E squared plus B squared
+- [01:32:39,190 - 01:32:39,630] is just
+- [01:32:42,629 - 01:32:44,190] twice either one of these.
+- [01:32:45,850 - 01:32:46,370] Okay,
+- [01:32:46,370 - 01:32:47,530] so that's the field energy.
+- [01:32:48,670 - 01:32:50,310] Any questions about the field energy?
+- [01:32:54,270 - 01:32:56,950] The next question is the momentum density.
+- [01:32:57,990 - 01:32:58,770] We can go next to the field energy.
+- [01:32:58,790 - 01:32:59,870] Next to the momentum density,
+- [01:33:01,809 - 01:33:03,530] how much momentum is there
+- [01:33:03,530 - 01:33:05,050] in an electromagnetic wave?
+- [01:33:06,970 - 01:33:07,570] Okay,
+- [01:33:07,570 - 01:33:09,670] so let's go back to,
+- [01:33:11,590 - 01:33:12,970] let's go back to
+- [01:33:14,950 - 01:33:15,550] Noether.
+- [01:33:17,770 - 01:33:21,010] Let's do it up here for this field over here.
+- [01:33:23,810 - 01:33:26,770] We said that the field momentum
+- [01:33:26,770 - 01:33:28,490] was equal,
+- [01:33:29,229 - 01:33:30,490] the momentum density,
+- [01:33:30,810 - 01:33:31,370] let's call it,
+- [01:33:31,430 - 01:33:32,910] the field momentum,
+- [01:33:33,809 - 01:33:35,690] is equal to the integral dx
+- [01:33:37,189 - 01:33:37,750] of
+- [01:33:39,809 - 01:33:41,930] pi times d phi by dx.
+- [01:33:43,130 - 01:33:45,090] Let me remind you where that came from.
+- [01:33:46,330 - 01:33:48,150] Pi is the canonical momentum,
+- [01:33:48,350 - 01:33:50,990] and d phi by dx is the amount
+- [01:33:50,990 - 01:33:53,470] the phi changes when you move a little bit.
+- [01:33:53,850 - 01:33:55,930] So this is the conserved quantity,
+- [01:33:55,930 - 01:33:59,210] conserved by virtue of Noether's theorem.
+- [01:33:59,910 - 01:34:01,550] It contains a pi,
+- [01:34:01,790 - 01:34:03,850] and it contains a d phi by dx.
+- [01:34:04,470 - 01:34:06,810] If there were several fields in the problem,
+- [01:34:06,950 - 01:34:07,990] we would add them up.
+- [01:34:08,850 - 01:34:10,150] We would add them up,
+- [01:34:10,270 - 01:34:12,570] and there are several fields in this problem.
+- [01:34:13,650 - 01:34:14,870] But that's all it is.
+- [01:34:14,890 - 01:34:16,630] This is a collection of three fields.
+- [01:34:16,890 - 01:34:19,890] Each one does exactly the same thing here.
+- [01:34:19,950 - 01:34:20,690] Instead of pi,
+- [01:34:21,849 - 01:34:23,850] we'll have the electric field.
+- [01:34:24,070 - 01:34:25,850] Pi is minus,
+- [01:34:25,930 - 01:34:26,250] I guess,
+- [01:34:26,250 - 01:34:27,050] the electric field.
+- [01:34:27,430 - 01:34:29,130] And instead of d phi by dx,
+- [01:34:29,350 - 01:34:30,670] we'll have dA by dx.
+- [01:34:31,330 - 01:34:31,970] That's all.
+- [01:34:32,510 - 01:34:34,550] So it's basically the same structure,
+- [01:34:34,730 - 01:34:36,390] and we can say that this
+- [01:34:36,390 - 01:34:38,050] is going to be replaced by
+- [01:34:38,809 - 01:34:40,350] the integral over dx
+- [01:34:43,329 - 01:34:44,450] of pi,
+- [01:34:45,450 - 01:34:48,830] which is related
+- [01:34:48,830 - 01:34:52,250] to the electric field,
+- [01:34:55,930 - 01:34:55,940] and we'll have to figure
+- [01:34:55,940 - 01:34:55,950] out what the electric field is.
+- [01:34:55,950 - 01:34:57,010] I will bet you that,
+- [01:34:57,590 - 01:34:58,310] I'll bet you,
+- [01:34:59,110 - 01:35:00,150] I don't have to bet you,
+- [01:35:00,210 - 01:35:01,500] I am certain that I don't
+- [01:35:01,500 - 01:35:02,790] know the sign that goes here.
+- [01:35:04,770 - 01:35:05,170] Offhand,
+- [01:35:05,170 - 01:35:06,330] I would have to figure it out.
+- [01:35:06,390 - 01:35:07,690] It would take me some time to figure it out.
+- [01:35:09,170 - 01:35:11,930] But let's just not worry about the sign.
+- [01:35:13,670 - 01:35:16,050] The mth component of the electric field
+- [01:35:16,530 - 01:35:19,130] is a particular canonical momentum,
+- [01:35:19,690 - 01:35:21,130] and then that gets multiplied
+- [01:35:21,130 - 01:35:24,390] by dA sub m
+- [01:35:26,470 - 01:35:27,110] by,
+- [01:35:28,609 - 01:35:29,250] okay,
+- [01:35:29,250 - 01:35:30,470] let's get it right,
+- [01:35:39,389 - 01:35:41,810] dA sub m
+- [01:35:41,810 - 01:35:44,390] by dx n,
+- [01:35:45,109 - 01:35:47,130] and this is summed on m.
+- [01:35:47,430 - 01:35:47,910] All right,
+- [01:35:47,910 - 01:35:49,030] so let's get the idea here.
+- [01:35:49,490 - 01:35:51,050] If there are several fields
+- [01:35:51,050 - 01:35:51,670] in a problem,
+- [01:35:51,850 - 01:35:54,390] let's take the mth component of momentum.
+- [01:35:55,170 - 01:35:57,290] The mth component of momentum,
+- [01:35:57,470 - 01:36:00,330] momentum along the mth axis,
+- [01:36:01,490 - 01:36:02,250] that's this.
+- [01:36:03,010 - 01:36:05,230] Momentum along the axis n
+- [01:36:06,429 - 01:36:09,070] is pi d phi by dx n.
+- [01:36:09,490 - 01:36:11,730] If there are several fields in the problem,
+- [01:36:11,910 - 01:36:13,050] we add them all up.
+- [01:36:13,150 - 01:36:13,250] Well,
+- [01:36:13,250 - 01:36:14,690] there are several fields in the problem,
+- [01:36:14,870 - 01:36:16,570] and the several fields in the problem
+- [01:36:16,570 - 01:36:18,570] are the three components of the vector potential.
+- [01:36:19,550 - 01:36:20,110] So,
+- [01:36:20,110 - 01:36:21,030] let's add them up.
+- [01:36:23,309 - 01:36:25,270] Derivative is with respect to xn,
+- [01:36:25,530 - 01:36:27,930] and that defines the mth component of momentum,
+- [01:36:28,210 - 01:36:30,270] but we have to sum over m.
+- [01:36:31,010 - 01:36:31,530] So,
+- [01:36:31,530 - 01:36:32,390] n is summed over,
+- [01:36:32,510 - 01:36:34,110] I won't bother writing a summation sign,
+- [01:36:34,310 - 01:36:35,410] we'll use the summation convention.
+- [01:36:36,410 - 01:36:39,490] This is the momentum in the field.
+- [01:36:40,250 - 01:36:41,450] Electric field is,
+- [01:36:41,550 - 01:36:42,670] this is the p sub n,
+- [01:36:42,870 - 01:36:44,390] the mth component of momentum.
+- [01:37:08,170 - 01:37:17,250] So this is the mth component of m.
+- [01:37:17,250 - 01:37:18,090] The mth component of the momentum,
+- [01:37:18,270 - 01:37:19,710] is this tool.
+- [01:37:19,710 - 01:37:19,770] if you simply press suis!,
+- [01:37:19,770 - 01:37:19,790] this is the vacuum.
+- [01:37:19,790 - 01:37:19,880] It sounds like a blend
+- [01:37:19,880 - 01:37:19,970] of f is sold to us.
+- [01:37:20,150 - 01:37:21,150] Yeah,
+- [01:37:21,150 - 01:37:23,050] I've lost the sign.
+- [01:37:23,050 - 01:37:24,250] I can't keep track of the sign.
+- [01:37:27,049 - 01:37:27,570] Yeah,
+- [01:37:27,570 - 01:37:29,770] I'm not sure.
+- [01:37:32,430 - 01:37:33,410] P sub n,
+- [01:37:33,410 - 01:37:35,110] apart from the sign,
+- [01:37:35,110 - 01:37:37,770] is E sub m,
+- [01:37:37,770 - 01:37:41,170] dA sub m,
+- [01:37:41,170 - 01:37:43,570] by dxn.
+- [01:37:46,330 - 01:37:48,390] m being a summation index here.
+- [01:37:51,469 - 01:37:52,030] Now,
+- [01:37:52,030 - 01:37:53,070] this is a little bit funny.
+- [01:37:53,510 - 01:37:55,630] This dA sub m by dxn,
+- [01:37:55,630 - 01:37:59,590] it's very tempting to want to put
+- [01:37:59,590 - 01:38:03,550] minus dA sub n by dx sub m.
+- [01:38:03,710 - 01:38:05,390] Why do I say that's tempting?
+- [01:38:07,930 - 01:38:11,110] Because you really want to put the magnetic field there,
+- [01:38:11,170 - 01:38:12,370] not just some damn thing
+- [01:38:12,370 - 01:38:13,570] with the vector potential in it.
+- [01:38:14,090 - 01:38:14,650] Okay,
+- [01:38:14,650 - 01:38:15,450] so let's ask,
+- [01:38:15,450 - 01:38:19,350] what damage does it do to P
+- [01:38:19,350 - 01:38:20,130] if I put minus dA sub m by dxn?
+- [01:38:20,150 - 01:38:22,610] If I did put this extra term there,
+- [01:38:22,610 - 01:38:23,450] does it change it?
+- [01:38:23,710 - 01:38:27,690] So let's focus on this thing that I added in,
+- [01:38:28,630 - 01:38:30,330] integral E sub m,
+- [01:38:30,330 - 01:38:33,570] dA sub n,
+- [01:38:33,570 - 01:38:36,050] by dx sub.
+- [01:38:38,290 - 01:38:38,970] No,
+- [01:38:38,970 - 01:38:39,650] dAn,
+- [01:38:39,650 - 01:38:39,950] yes,
+- [01:38:39,950 - 01:38:41,710] by dxn.
+- [01:38:42,270 - 01:38:43,870] I added that thing in,
+- [01:38:43,870 - 01:38:45,350] or I subtracted it off.
+- [01:38:46,530 - 01:38:47,210] Well,
+- [01:38:47,210 - 01:38:49,970] I suggested that maybe it's okay to do that.
+- [01:38:50,570 - 01:38:51,090] Maybe.
+- [01:38:51,890 - 01:38:52,570] All right.
+- [01:38:53,130 - 01:38:56,750] And this is integral d cubed x.
+- [01:38:58,230 - 01:38:58,870] All right,
+- [01:38:58,870 - 01:38:59,030] now,
+- [01:38:59,030 - 01:38:59,610] by now,
+- [01:38:59,610 - 01:39:01,020] I hope everybody knows how
+- [01:39:01,020 - 01:39:02,430] to do an integral by parts,
+- [01:39:02,550 - 01:39:03,790] a partial integration.
+- [01:39:04,710 - 01:39:06,690] Whenever you have an integral like this,
+- [01:39:06,690 - 01:39:09,250] with a derivative on one thing times another,
+- [01:39:10,649 - 01:39:11,590] it's equal,
+- [01:39:11,590 - 01:39:13,530] assuming you're making an assumption,
+- [01:39:13,730 - 01:39:15,890] namely that the fields go to zero far away,
+- [01:39:16,030 - 01:39:17,470] so that there are no boundary terms,
+- [01:39:17,690 - 01:39:19,910] but you can take this derivative,
+- [01:39:19,910 - 01:39:22,850] and shift it to the other factor
+- [01:39:22,850 - 01:39:25,790] at the cost of a minus sign.
+- [01:39:26,330 - 01:39:36,150] This is equal to minus the integral dEm by dxmAn.
+- [01:39:38,090 - 01:39:40,710] You can just take the derivative from one factor,
+- [01:39:41,250 - 01:39:42,430] put it on the other factor,
+- [01:39:42,430 - 01:39:43,410] and put a minus sign.
+- [01:39:43,510 - 01:39:44,810] That's called integrating by parts,
+- [01:39:44,910 - 01:39:46,150] and we've done it over and over and over.
+- [01:39:46,850 - 01:39:48,670] This is just another example of it.
+- [01:39:48,750 - 01:39:49,010] All right.
+- [01:39:49,010 - 01:39:49,890] But what do we have here?
+- [01:39:49,910 - 01:39:51,570] The divergence of the electric field.
+- [01:39:51,570 - 01:39:53,130] The divergence of the electric field.
+- [01:39:54,060 - 01:39:55,190] Del dot e.
+- [01:39:55,530 - 01:39:57,410] And that's one of Maxwell's equations,
+- [01:39:57,530 - 01:39:59,050] that del dot e is equal to zero.
+- [01:40:00,870 - 01:40:01,450] So,
+- [01:40:01,450 - 01:40:02,470] this integral,
+- [01:40:03,650 - 01:40:06,070] this added term in the integral,
+- [01:40:06,230 - 01:40:07,570] in the integral,
+- [01:40:08,950 - 01:40:10,230] doesn't contribute anything.
+- [01:40:11,090 - 01:40:12,930] That means that the total momentum
+- [01:40:13,550 - 01:40:15,610] can be written in terms of
+- [01:40:15,610 - 01:40:17,670] the electric and the magnetic fields.
+- [01:40:18,950 - 01:40:21,810] This is Em,
+- [01:40:21,810 - 01:40:24,790] this is actually E cross B.
+- [01:40:25,510 - 01:40:26,750] If you work it out,
+- [01:40:26,750 - 01:40:32,190] you'll find out that the momentum
+- [01:40:34,330 - 01:40:38,030] is equal to E cross B.
+- [01:40:38,550 - 01:40:39,110] Again,
+- [01:40:39,110 - 01:40:41,010] the sign I've forgotten,
+- [01:40:41,010 - 01:40:41,710] I don't remember.
+- [01:40:42,010 - 01:40:44,070] E cross B is the momentum density,
+- [01:40:44,070 - 01:40:45,950] the x,
+- [01:40:45,950 - 01:40:46,930] the cube x.
+- [01:40:47,130 - 01:40:47,650] So,
+- [01:40:47,650 - 01:40:47,650] this is the momentum density.
+- [01:40:48,370 - 01:40:49,450] E cross B.
+- [01:40:50,930 - 01:40:53,970] Cross product between E and B is the momentum density.
+- [01:40:54,010 - 01:40:54,510] It's a vector.
+- [01:40:54,870 - 01:40:55,810] It is a vector.
+- [01:40:56,310 - 01:40:56,770] So,
+- [01:40:56,770 - 01:40:58,310] the direction of this vector tells
+- [01:40:58,310 - 01:40:59,850] you the direction of the momentum.
+- [01:41:00,410 - 01:41:01,810] If you have an electric and magnetic...
+- [01:41:01,810 - 01:41:02,290] For example,
+- [01:41:02,290 - 01:41:03,330] for example,
+- [01:41:03,330 - 01:41:04,650] if I create an electric field
+- [01:41:04,650 - 01:41:05,650] by taking a capacitor,
+- [01:41:05,650 - 01:41:06,470] plus,
+- [01:41:06,470 - 01:41:06,870] plus,
+- [01:41:06,870 - 01:41:07,310] plus,
+- [01:41:07,310 - 01:41:07,630] plus,
+- [01:41:07,630 - 01:41:08,310] minus,
+- [01:41:08,310 - 01:41:08,690] minus,
+- [01:41:08,690 - 01:41:08,950] minus,
+- [01:41:09,110 - 01:41:11,050] the electric field goes that way.
+- [01:41:11,470 - 01:41:12,650] And let's see,
+- [01:41:12,650 - 01:41:13,850] I want to make a magnetic field
+- [01:41:13,850 - 01:41:15,970] going into the blackboard,
+- [01:41:16,090 - 01:41:17,630] so I put north pole and a south pole,
+- [01:41:17,630 - 01:41:22,570] and in here there's an electric field going one way,
+- [01:41:22,650 - 01:41:24,170] magnetic field going the other way,
+- [01:41:25,090 - 01:41:26,470] and the cross product,
+- [01:41:26,470 - 01:41:27,590] which goes in which direction?
+- [01:41:28,930 - 01:41:29,850] Or that way,
+- [01:41:29,850 - 01:41:30,290] I'm not sure.
+- [01:41:30,950 - 01:41:31,630] That way.
+- [01:41:32,010 - 01:41:32,490] Okay?
+- [01:41:32,590 - 01:41:35,550] That means locally in here there's a momentum density,
+- [01:41:35,830 - 01:41:37,880] there's a momentum density of a
+- [01:41:37,880 - 01:41:39,930] momentum that's moving to the right.
+- [01:41:43,750 - 01:41:44,770] That's the meaning of it.
+- [01:41:44,870 - 01:41:46,290] This is called a pointing vector,
+- [01:41:46,290 - 01:41:47,070] incidentally.
+- [01:41:47,130 - 01:41:47,610] Okay?
+- [01:41:48,490 - 01:41:48,970] Pointing,
+- [01:41:48,970 - 01:41:50,850] not because it points in the direction of the momentum.
+- [01:41:51,490 - 01:41:51,970] Pointing,
+- [01:41:51,970 - 01:41:53,590] P-O-Y-N-T-I-N-G,
+- [01:41:53,590 - 01:41:54,770] pointing was a name.
+- [01:41:55,030 - 01:41:55,210] Yeah?
+- [01:41:57,130 - 01:41:57,610] Um,
+- [01:41:57,610 - 01:42:01,030] delta E is zero because there's no...
+- [01:42:01,030 - 01:42:02,170] Because there's no charge density.
+- [01:42:02,470 - 01:42:02,810] That's right,
+- [01:42:02,810 - 01:42:03,890] assuming there's no charge density.
+- [01:42:04,210 - 01:42:04,430] Yeah.
+- [01:42:04,510 - 01:42:05,130] In other words,
+- [01:42:05,130 - 01:42:06,410] for a free electromagnetic wave.
+- [01:42:06,670 - 01:42:07,990] If there is charge density,
+- [01:42:07,990 - 01:42:09,890] you have to account for the momentum
+- [01:42:09,890 - 01:42:11,390] of the particles making up,
+- [01:42:11,390 - 01:42:12,910] so at the moment we're just doing
+- [01:42:12,910 - 01:42:16,850] pure electromagnetic fields with no charge density.
+- [01:42:16,850 - 01:42:17,350] That's right.
+- [01:42:17,670 - 01:42:18,590] That's a good point.
+- [01:42:18,950 - 01:42:19,690] All right,
+- [01:42:19,690 - 01:42:20,410] so let's just,
+- [01:42:20,410 - 01:42:21,530] as a last thing,
+- [01:42:21,530 - 01:42:23,190] just let's look at this expression
+- [01:42:23,190 - 01:42:24,730] for an electromagnetic wave.
+- [01:42:25,270 - 01:42:28,310] We have an electromagnetic wave with an electric field,
+- [01:42:28,310 - 01:42:28,810] for example,
+- [01:42:28,810 - 01:42:30,170] pointing up over here.
+- [01:42:30,850 - 01:42:32,520] Let's say a magnetic field pointing
+- [01:42:32,520 - 01:42:34,190] out of the blackboard over here.
+- [01:42:34,390 - 01:42:35,910] You move down a ways.
+- [01:42:36,230 - 01:42:38,010] The electric field is down,
+- [01:42:38,010 - 01:42:40,290] you know,
+- [01:42:40,290 - 01:42:41,730] a half wave down,
+- [01:42:41,950 - 01:42:44,190] and the magnetic field is into the blackboard.
+- [01:42:44,710 - 01:42:46,470] Which way is E cross B?
+- [01:42:47,210 - 01:42:47,670] Well,
+- [01:42:47,670 - 01:42:48,470] let's start over here.
+- [01:42:48,790 - 01:42:49,410] And then,
+- [01:42:49,410 - 01:42:49,710] of course,
+- [01:42:49,710 - 01:42:50,570] it keeps oscillating.
+- [01:42:50,950 - 01:42:51,970] Electric field up,
+- [01:42:51,970 - 01:42:52,950] magnetic field out,
+- [01:42:52,950 - 01:42:53,930] electric field down,
+- [01:42:54,010 - 01:42:54,910] magnetic field in,
+- [01:42:54,910 - 01:42:55,810] go a little further,
+- [01:42:55,810 - 01:42:57,350] electric field up,
+- [01:42:57,350 - 01:42:58,270] magnetic field down.
+- [01:42:58,490 - 01:43:00,210] Which way is E cross B?
+- [01:43:02,910 - 01:43:04,250] Is it the right or the left?
+- [01:43:04,810 - 01:43:05,270] Okay.
+- [01:43:05,590 - 01:43:08,630] So the momentum is going this way over here.
+- [01:43:08,750 - 01:43:09,610] What about over here?
+- [01:43:10,630 - 01:43:11,430] Same direction.
+- [01:43:11,810 - 01:43:13,910] Both E and B have changed sign,
+- [01:43:13,910 - 01:43:15,630] but E cross B stays the same.
+- [01:43:15,630 - 01:43:17,790] And so there's momentum flowing here.
+- [01:43:18,250 - 01:43:18,730] And,
+- [01:43:18,730 - 01:43:19,070] of course,
+- [01:43:19,070 - 01:43:20,810] that's the direction of the wave.
+- [01:43:21,350 - 01:43:25,730] The wave moving down the z-axis carries a momentum,
+- [01:43:25,730 - 01:43:27,110] which is E cross B.
+- [01:43:27,650 - 01:43:29,260] Notice how important it is that E
+- [01:43:29,260 - 01:43:30,870] and B are perpendicular to each other.
+- [01:43:30,930 - 01:43:31,790] If they weren't perpendicular,
+- [01:43:31,790 - 01:43:33,630] that's not a solution to Maxwell's equations.
+- [01:43:33,750 - 01:43:34,730] But if they weren't perpendicular,
+- [01:43:34,730 - 01:43:36,490] it wouldn't carry any momentum.
+- [01:43:38,290 - 01:43:40,590] So the momentum,
+- [01:43:40,590 - 01:43:41,650] the pointing vector,
+- [01:43:41,650 - 01:43:44,630] is a consequence of the perpendicular nature
+- [01:43:44,630 - 01:43:45,990] of E and B.
+- [01:43:46,190 - 01:43:49,390] But it all traces back to
+- [01:43:49,390 - 01:43:52,590] Emmy Noether's wonderful theorem about the connection
+- [01:43:52,590 - 01:43:56,310] between conserved momentum and translation invariance,
+- [01:43:56,310 - 01:43:57,910] spatial translation invariance.
+- [01:43:58,190 - 01:44:00,810] So it's all coming home in one big piece,
+- [01:44:00,810 - 01:44:01,730] classical mechanics,
+- [01:44:01,730 - 01:44:02,710] field theory,
+- [01:44:02,710 - 01:44:05,090] electromagnetism.
+- [01:44:05,190 - 01:44:06,770] It's all the same stuff.
+- [01:44:07,490 - 01:44:08,930] It's all the same stuff.
+- [01:44:09,170 - 01:44:10,670] It's all principle of least action.
+- [01:44:11,370 - 01:44:13,990] And I think that's probably a good place to stop.
+- [01:44:14,950 - 01:44:15,470] Yeah?
+- [01:44:15,910 - 01:44:18,750] I know you did this several times,
+- [01:44:18,750 - 01:44:23,290] but I'm having trouble keeping track of the points
+- [01:44:23,290 - 01:44:26,280] of contact between the vector potential and the
+- [01:44:26,280 - 01:44:29,270] things that were called the E field and
+- [01:44:29,270 - 01:44:29,830] the B field.
+- [01:44:30,070 - 01:44:30,330] Yeah.
+- [01:44:30,470 - 01:44:36,310] So where are the places where those things hook up?
+- [01:44:36,550 - 01:44:36,990] Well,
+- [01:44:36,990 - 01:44:39,070] here's a rule.
+- [01:44:42,230 - 01:44:42,750] OK.
+- [01:44:42,750 - 01:44:43,910] So,
+- [01:44:43,910 - 01:44:43,910] let's take the nth component of the electric field.
+- [01:44:46,390 - 01:44:50,810] Electric field is equal to minus,
+- [01:44:50,810 - 01:44:54,370] let's take the nth component of the electric field,
+- [01:44:54,370 - 01:44:55,910] minus
+- [01:44:55,910 - 01:44:58,570] the derivative of the nth component of
+- [01:44:58,570 - 01:45:01,230] the vector potential with respect to time,
+- [01:45:01,230 - 01:45:02,310] plus
+- [01:45:02,310 - 01:45:05,250] the derivative of the time component of
+- [01:45:05,250 - 01:45:08,190] the vector potential with respect to xn.
+- [01:45:10,930 - 01:45:11,890] That's Maxwell...
+- [01:45:11,890 - 01:45:12,390] Hmm?
+- [01:45:13,310 - 01:45:14,130] Does that read it...
+- [01:45:14,130 - 01:45:14,730] Maxwell or
+- [01:45:14,730 - 01:45:17,230] I think this is Maxwell's.
+- [01:45:17,310 - 01:45:17,630] Yeah.
+- [01:45:19,230 - 01:45:19,710] Yeah,
+- [01:45:19,710 - 01:45:20,470] for some reason,
+- [01:45:20,470 - 01:45:22,110] I've always been prejudiced to call
+- [01:45:22,110 - 01:45:23,750] the electric field plus the ADT.
+- [01:45:23,850 - 01:45:25,740] I like the idea that the electric
+- [01:45:25,740 - 01:45:27,630] field is the canonical momentum conjugate to A,
+- [01:45:27,630 - 01:45:28,670] and,
+- [01:45:28,770 - 01:45:28,910] you know,
+- [01:45:28,910 - 01:45:35,070] I've believed that for at least 40 years...
+- [01:45:35,070 - 01:45:35,870] OK.
+- [01:45:36,710 - 01:45:36,790] All right.
+- [01:45:39,809 - 01:45:42,390] Probably intermittently I knew that it wasn't,
+- [01:45:42,390 - 01:45:43,590] but...
+- [01:45:44,809 - 01:45:45,330] Right.
+- [01:45:46,869 - 01:45:47,389] Notice,
+- [01:45:47,389 - 01:45:47,910] incidentally,
+- [01:45:47,910 - 01:45:51,970] that the expressions for the energy density and so forth,
+- [01:45:52,010 - 01:45:54,010] those don't change when you change,
+- [01:45:54,010 - 01:45:55,550] but the E cross B does.
+- [01:45:55,790 - 01:45:56,590] You've got to be careful.
+- [01:45:56,590 - 01:45:57,330] You do have to be careful.
+- [01:45:58,570 - 01:45:59,090] Okay.
+- [01:45:59,590 - 01:46:01,750] This is the expression for the electric field.
+- [01:46:01,910 - 01:46:05,910] The magnetic field is just B equals del cross A.
+- [01:46:07,309 - 01:46:07,990] Now,
+- [01:46:07,990 - 01:46:10,870] if you do this trick,
+- [01:46:10,870 - 01:46:13,250] this trick of fixing the gauge,
+- [01:46:13,490 - 01:46:15,990] of using the gauge freedom
+- [01:46:15,990 - 01:46:18,490] to set A0 equal to zero,
+- [01:46:18,490 - 01:46:19,830] then it's easier.
+- [01:46:20,550 - 01:46:23,470] The electric field is just the
+- [01:46:23,470 - 01:46:26,390] time derivative of the gauge potential.
+- [01:46:27,710 - 01:46:31,310] So it's electric field,
+- [01:46:31,310 - 01:46:32,050] time derivative,
+- [01:46:32,050 - 01:46:34,730] magnetic field related to space derivatives.
+- [01:46:34,990 - 01:46:35,130] Yeah.
+- [01:46:36,790 - 01:46:38,150] You might be also wondering,
+- [01:46:38,150 - 01:46:42,850] is the electric field in some sense more fundamental?
+- [01:46:44,269 - 01:46:44,870] Well,
+- [01:46:44,870 - 01:46:46,350] I think it's more fundamental.
+- [01:46:47,729 - 01:46:48,330] No,
+- [01:46:48,330 - 01:46:52,670] I think it's more than a...
+- [01:46:56,789 - 01:46:58,449] I think there's some questions
+- [01:46:58,449 - 01:47:00,110] you have to answer for yourself.
+- [01:47:00,970 - 01:47:03,690] If you can't formulate the theory...
+- [01:47:08,570 - 01:47:11,170] With just the electric magnetic fields,
+- [01:47:11,170 - 01:47:13,900] and you need the vector potential
+- [01:47:13,900 - 01:47:16,630] to formulate the theory from the beginning,
+- [01:47:16,810 - 01:47:18,830] I think you would say that they're more fundamental.
+- [01:47:19,350 - 01:47:20,610] On the other hand,
+- [01:47:20,610 - 01:47:24,400] there is this obscure fact that
+- [01:47:24,400 - 01:47:28,190] the vector potential is itself not unique.
+- [01:47:28,810 - 01:47:29,370] Therefore,
+- [01:47:29,370 - 01:47:30,470] it's not a measurable thing.
+- [01:47:31,190 - 01:47:34,590] All measurements are unchanged by a gauge transformation.
+- [01:47:36,190 - 01:47:36,750] So...
+- [01:47:37,610 - 01:47:38,870] On the one hand,
+- [01:47:38,870 - 01:47:40,970] it's more fundamental from the point of
+- [01:47:40,970 - 01:47:43,070] view of the mathematical formulation of the theory.
+- [01:47:43,430 - 01:47:44,690] From another point of view,
+- [01:47:44,690 - 01:47:47,010] it's not directly measurable.
+- [01:47:48,130 - 01:47:49,870] So you have to accept it for what it is.
+- [01:47:49,970 - 01:47:51,590] So it can't exert a force.
+- [01:47:52,510 - 01:47:52,910] Right.
+- [01:47:55,906 - 01:47:56,526] ありがとうございました。
+- [01:47:59,618 - 01:48:01,718] The static field you have in
+- [01:48:01,718 - 01:48:03,818] the capacitor that you put up there,
+- [01:48:03,818 - 01:48:05,248] is it true that the
+- [01:48:05,248 - 01:48:06,678] momentum is zero in that field?
+- [01:48:06,898 - 01:48:08,098] Which field is that now?
+- [01:48:08,178 - 01:48:10,418] Where you have the capacitor and
+- [01:48:10,418 - 01:48:12,658] you have the magnetic field going?
+- [01:48:13,438 - 01:48:15,158] The total momentum must be zero,
+- [01:48:15,158 - 01:48:15,538] I think.
+- [01:48:16,058 - 01:48:16,838] It has energy,
+- [01:48:16,838 - 01:48:17,098] right?
+- [01:48:17,954 - 01:48:18,304] يسعى
+- [01:48:18,304 - 01:48:18,654] زردي
+- [01:48:20,322 - 01:48:20,822] I have a question about,
+- [01:48:20,822 - 01:48:23,332] I remember some 60 years ago learning
+- [01:48:23,332 - 01:48:25,842] that the pointing vector was the power density.
+- [01:48:27,882 - 01:48:28,322] Yes.
+- [01:48:29,162 - 01:48:29,602] Good,
+- [01:48:29,602 - 01:48:30,042] good,
+- [01:48:30,042 - 01:48:30,222] good.
+- [01:48:30,342 - 01:48:30,622] Okay.
+- [01:48:31,142 - 01:48:31,582] Good.
+- [01:48:31,662 - 01:48:32,182] So let me,
+- [01:48:32,182 - 01:48:33,262] good.
+- [01:48:33,482 - 01:48:33,922] Yes.
+- [01:48:33,942 - 01:48:34,222] All right.
+- [01:48:34,242 - 01:48:34,842] So what's,
+- [01:48:34,842 - 01:48:37,062] that's correct.
+- [01:48:37,942 - 01:48:39,742] The pointing vector has two meanings,
+- [01:48:39,742 - 01:48:41,102] and I'm going to tell you about them now.
+- [01:48:42,162 - 01:48:42,762] All right.
+- [01:48:43,942 - 01:48:46,422] That goes back to the energy momentum tensor.
+- [01:48:51,682 - 01:48:52,142] Remember,
+- [01:48:52,142 - 01:48:52,922] first of all,
+- [01:48:52,922 - 01:48:57,582] T naught mu is the density
+- [01:48:57,582 - 01:49:02,242] of the mu component of momentum.
+- [01:49:03,002 - 01:49:03,462] Now,
+- [01:49:03,462 - 01:49:04,722] let's make a big,
+- [01:49:04,722 - 01:49:05,842] it's got two indices.
+- [01:49:05,962 - 01:49:06,822] It's quite clear.
+- [01:49:06,862 - 01:49:08,202] It must have something to do with a tensor.
+- [01:49:11,222 - 01:49:11,802] All right.
+- [01:49:13,682 - 01:49:16,162] As we move along the horizontal axis,
+- [01:49:16,162 - 01:49:17,482] we're changing this thing here.
+- [01:49:17,962 - 01:49:19,442] This is energy.
+- [01:49:20,341 - 01:49:25,582] Let's call it P naught and Px,
+- [01:49:25,582 - 01:49:26,222] Py,
+- [01:49:26,222 - 01:49:27,902] and Pz.
+- [01:49:28,582 - 01:49:29,962] These are the things,
+- [01:49:29,962 - 01:49:33,822] the quantities whose density we're talking about.
+- [01:49:35,702 - 01:49:36,322] Let's see.
+- [01:49:36,382 - 01:49:37,062] Do I have that right?
+- [01:49:37,682 - 01:49:39,202] This is varying from here.
+- [01:49:42,042 - 01:49:43,142] I think so.
+- [01:49:45,122 - 01:49:46,922] And what about vertically?
+- [01:49:47,842 - 01:49:49,042] What about vertically?
+- [01:49:49,222 - 01:49:49,362] Well,
+- [01:49:49,362 - 01:49:50,122] for vertically,
+- [01:49:50,322 - 01:49:51,642] we go back and we remember,
+- [01:49:51,642 - 01:49:55,042] suppress this index here,
+- [01:49:55,042 - 01:49:57,602] and just think of this as a density of something.
+- [01:49:57,902 - 01:49:59,122] As a density of something,
+- [01:49:59,122 - 01:50:00,382] it's similar to J naught.
+- [01:50:01,462 - 01:50:02,022] Well,
+- [01:50:02,022 - 01:50:05,442] J naught also has Jm associated with it,
+- [01:50:05,442 - 01:50:07,502] which is the flux of that quantity.
+- [01:50:08,162 - 01:50:11,122] So it sounds like maybe there's a
+- [01:50:11,122 - 01:50:14,082] bigger quantity that includes T nu mu.
+- [01:50:14,482 - 01:50:15,602] When nu is spatial,
+- [01:50:15,602 - 01:50:16,702] it means a flux.
+- [01:50:17,102 - 01:50:17,782] When T,
+- [01:50:17,782 - 01:50:19,362] when nu is time-like,
+- [01:50:19,362 - 01:50:20,242] it means a density.
+- [01:50:21,001 - 01:50:21,762] All right.
+- [01:50:21,762 - 01:50:22,802] So this here would be,
+- [01:50:22,802 - 01:50:26,322] the density here would be T naught naught,
+- [01:50:26,322 - 01:50:28,722] T naught 1,
+- [01:50:28,722 - 01:50:30,581] T naught 2,
+- [01:50:30,882 - 01:50:32,362] T naught 3.
+- [01:50:32,442 - 01:50:34,082] These would be the density of energy,
+- [01:50:34,082 - 01:50:35,902] the density of Px,
+- [01:50:35,902 - 01:50:37,002] the density of Py,
+- [01:50:37,002 - 01:50:37,482] and the
+- [01:50:37,482 - 01:50:38,262] density of Pz.
+- [01:50:39,022 - 01:50:40,682] Then we would come down a row.
+- [01:50:41,102 - 01:50:43,482] We would have T1 naught.
+- [01:50:43,922 - 01:50:44,862] This would be,
+- [01:50:44,862 - 01:50:46,742] read it down vertically now,
+- [01:50:46,742 - 01:50:48,382] and think of it vertically.
+- [01:50:48,642 - 01:50:49,202] Okay.
+- [01:50:50,922 - 01:50:52,142] So we would have T1 naught,
+- [01:50:52,142 - 01:50:53,222] T2 naught,
+- [01:50:53,222 - 01:50:55,182] T3 naught.
+- [01:50:56,342 - 01:50:57,882] And what meaning of this is,
+- [01:50:57,882 - 01:50:59,582] this is the density of energy,
+- [01:50:59,582 - 01:51:02,902] the flux of energy in the x direction,
+- [01:51:03,102 - 01:51:04,862] the flux of energy in the y direction,
+- [01:51:04,862 - 01:51:06,582] and the flux of energy in the z direction.
+- [01:51:07,322 - 01:51:08,022] All right.
+- [01:51:08,042 - 01:51:10,922] So the second index here says energy.
+- [01:51:11,422 - 01:51:13,502] The first index says density,
+- [01:51:13,502 - 01:51:14,102] flux,
+- [01:51:14,102 - 01:51:14,722] flux,
+- [01:51:14,722 - 01:51:15,162] flux.
+- [01:51:15,822 - 01:51:17,002] Then we come over here.
+- [01:51:19,242 - 01:51:19,762] T1.
+- [01:51:20,802 - 01:51:21,282] T1,
+- [01:51:21,282 - 01:51:21,562] 1.
+- [01:51:24,282 - 01:51:24,762] T2,
+- [01:51:24,762 - 01:51:25,282] 1.
+- [01:51:26,182 - 01:51:26,662] T3,
+- [01:51:26,662 - 01:51:27,002] 1.
+- [01:51:27,962 - 01:51:31,102] This is the density of x component of momentum.
+- [01:51:31,722 - 01:51:33,742] This is the flux of the x,
+- [01:51:33,742 - 01:51:35,542] the x flux of the x momentum,
+- [01:51:35,542 - 01:51:38,122] the y flux of the x momentum,
+- [01:51:38,302 - 01:51:39,802] and the z flux of the x momentum.
+- [01:51:40,022 - 01:51:40,422] What does it mean,
+- [01:51:40,422 - 01:51:41,702] the z flux and the y flux?
+- [01:51:42,022 - 01:51:45,252] It means the amount of x momentum that's
+- [01:51:45,252 - 01:51:48,482] passing through a window oriented in the y direction.
+- [01:51:48,982 - 01:51:49,462] Okay.
+- [01:51:49,542 - 01:51:50,082] It's a little tricky.
+- [01:51:51,181 - 01:51:52,102] And so forth.
+- [01:51:52,262 - 01:51:54,662] This whole thing forms a tensor.
+- [01:51:56,322 - 01:51:58,302] It's not obvious that it forms a tensor,
+- [01:51:58,302 - 01:51:59,462] but it does form a tensor.
+- [01:51:59,822 - 01:52:00,762] And what is more,
+- [01:52:00,762 - 01:52:03,182] it forms a symmetric tensor.
+- [01:52:03,442 - 01:52:05,502] Now this is not something I'm going to prove tonight.
+- [01:52:05,882 - 01:52:07,582] It forms a symmetric tensor,
+- [01:52:07,582 - 01:52:10,062] which means that T naught,
+- [01:52:10,062 - 01:52:12,302] 1 is the same as T1 naught.
+- [01:52:12,962 - 01:52:14,422] Let's think about what that says.
+- [01:52:15,062 - 01:52:19,782] This is the density of x momentum.
+- [01:52:19,782 - 01:52:24,542] And this is the x flux of energy.
+- [01:52:25,382 - 01:52:45,002] x flux of energy equals the density of x momentum.
+- [01:52:50,642 - 01:52:51,322] All right.
+- [01:52:51,342 - 01:52:53,242] We worked out the density of momentum,
+- [01:52:53,242 - 01:52:54,802] and it was the pointing vector.
+- [01:52:56,142 - 01:52:57,942] What I didn't tell you is
+- [01:52:57,942 - 01:52:59,742] that it's also the flux of energy.
+- [01:53:00,022 - 01:53:02,362] The flux of energy is what you call the power,
+- [01:53:02,362 - 01:53:03,462] what do you call it?
+- [01:53:03,482 - 01:53:03,942] You gave it a name,
+- [01:53:03,942 - 01:53:04,542] the power density?
+- [01:53:04,862 - 01:53:05,802] The power density?
+- [01:53:06,102 - 01:53:06,542] Yeah,
+- [01:53:06,542 - 01:53:07,302] the power density.
+- [01:53:07,762 - 01:53:09,722] It's the flow of energy.
+- [01:53:10,102 - 01:53:13,522] So the flow of energy along an axis is the
+- [01:53:13,522 - 01:53:16,942] same as the density of the momentum along that same axis.
+- [01:53:16,942 - 01:53:19,102] Density of momentum equals flux of energy.
+- [01:53:19,522 - 01:53:20,782] The pointing vector,
+- [01:53:20,782 - 01:53:21,162] therefore,
+- [01:53:21,162 - 01:53:21,862] has two meanings.
+- [01:53:22,562 - 01:53:23,322] All right.
+- [01:53:23,322 - 01:53:24,142] The pointing vector,
+- [01:53:24,142 - 01:53:25,502] here's the pointing vector,
+- [01:53:25,502 - 01:53:25,942] pointing,
+- [01:53:25,942 - 01:53:26,682] P-O-Y.
+- [01:53:27,682 - 01:53:30,982] It's formed from a cross product of an electric field,
+- [01:53:30,982 - 01:53:31,802] pointing.
+- [01:53:33,182 - 01:53:34,402] It has two meanings.
+- [01:53:35,822 - 01:53:37,642] It's the flow of energy,
+- [01:53:37,642 - 01:53:40,582] and it's the density of momentum.
+- [01:53:42,762 - 01:53:43,342] Good.
+- [01:53:44,742 - 01:53:45,902] If you're...
+- [01:53:45,902 - 01:53:47,282] And as the flow of energy,
+- [01:53:47,282 - 01:53:51,292] you can think of it as the
+- [01:53:51,292 - 01:53:55,302] power per unit area flowing through a region.
+- [01:53:57,282 - 01:53:57,722] Good.
+- [01:53:57,802 - 01:53:58,022] All right.
+- [01:53:58,062 - 01:54:00,982] So this energy momentum plays a really,
+- [01:54:00,982 - 01:54:02,762] really big role in general relativity,
+- [01:54:02,762 - 01:54:03,962] and we will come back to it.
+- [01:54:04,202 - 01:54:05,762] We'll come back to it and think
+- [01:54:05,762 - 01:54:07,322] of it in a totally different way.
+- [01:54:10,982 - 01:54:13,462] But I'm glad we got to it this quarter.
+- [01:54:14,242 - 01:54:15,882] I was a little afraid we wouldn't get to it.
+- [01:54:15,902 - 01:54:18,592] And I wanted to get to it so that we would
+- [01:54:18,592 - 01:54:21,282] have it as a basis to start general relativity next time.
+- [01:54:21,782 - 01:54:22,942] In general relativity,
+- [01:54:22,942 - 01:54:25,402] the energy momentum tensor is the
+- [01:54:25,402 - 01:54:27,862] right-hand side of Einstein's field equations.
+- [01:54:28,082 - 01:54:30,522] So it's not an insignificant quantity.
+- [01:54:31,022 - 01:54:31,482] Okay.
+- [01:54:31,542 - 01:54:31,802] Good.
+- [01:54:32,922 - 01:54:33,642] Thank you.
+- [01:54:39,501 - 01:54:40,702] For more,
+- [01:54:40,702 - 01:54:43,142] please visit us at stanford.edu.
