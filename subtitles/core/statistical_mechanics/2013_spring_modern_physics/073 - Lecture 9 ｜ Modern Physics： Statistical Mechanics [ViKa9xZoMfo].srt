@@ -1,0 +1,10248 @@
+1
+00:00:04,739 --> 00:00:06,140
+Stanford University.
+
+2
+00:00:08,719 --> 00:00:10,800
+The last time,
+
+3
+00:00:10,800 --> 00:00:11,880
+as I remember,
+
+4
+00:00:12,160 --> 00:00:13,580
+and I have a poor memory,
+
+5
+00:00:13,800 --> 00:00:15,440
+so correct me if I'm wrong,
+
+6
+00:00:16,140 --> 00:00:18,680
+we talked about magnets
+
+7
+00:00:19,220 --> 00:00:23,520
+and we talk about phase transitions
+
+8
+00:00:23,860 --> 00:00:25,560
+and mean field approximation,
+
+9
+00:00:25,560 --> 00:00:29,800
+and I showed you how the phase transition
+
+10
+00:00:30,440 --> 00:00:32,060
+between a magnetized,
+
+11
+00:00:32,060 --> 00:00:33,140
+well,
+
+12
+00:00:33,300 --> 00:00:34,940
+how the phase transition happens
+
+13
+00:00:35,860 --> 00:00:37,320
+to a magnetic system,
+
+14
+00:00:37,540 --> 00:00:38,880
+a simple magnetic system,
+
+15
+00:00:39,000 --> 00:00:41,760
+a magnetic system being the system
+
+16
+00:00:42,640 --> 00:00:45,760
+on a lattice where every spin
+
+17
+00:00:46,280 --> 00:00:48,120
+is coupled to its nearest neighbor
+
+18
+00:00:48,940 --> 00:00:50,400
+by a term in the
+
+19
+00:00:50,400 --> 00:00:51,860
+energy which seeks to align them.
+
+20
+00:00:52,020 --> 00:00:52,760
+In other words,
+
+21
+00:00:52,760 --> 00:00:53,660
+the energy is lowest
+
+22
+00:00:53,660 --> 00:00:55,120
+when the neighboring spins
+
+23
+00:00:55,120 --> 00:00:55,680
+are aligned.
+
+24
+00:00:56,820 --> 00:00:58,540
+The ground state of that,
+
+25
+00:00:58,720 --> 00:01:00,160
+the lowest energy state,
+
+26
+00:01:01,319 --> 00:01:03,980
+and which describes zero temperature,
+
+27
+00:01:04,300 --> 00:01:06,380
+is all spins perfectly aligned.
+
+28
+00:01:09,160 --> 00:01:11,260
+As you begin to heat it up a little bit,
+
+29
+00:01:11,440 --> 00:01:13,660
+the spins begin to jiggle a little bit,
+
+30
+00:01:16,340 --> 00:01:18,550
+but any spin still has
+
+31
+00:01:18,550 --> 00:01:20,760
+a bunch of neighbors around it,
+
+32
+00:01:22,040 --> 00:01:24,660
+and particularly if the dimension
+
+33
+00:01:24,660 --> 00:01:26,380
+of the system is very high,
+
+34
+00:01:26,960 --> 00:01:27,560
+and actually,
+
+35
+00:01:27,560 --> 00:01:28,320
+for our purposes,
+
+36
+00:01:28,380 --> 00:01:29,900
+three dimensions is pretty high,
+
+37
+00:01:31,340 --> 00:01:33,560
+then the number of bonds connecting
+
+38
+00:01:34,200 --> 00:01:35,960
+that spin to its neighbor,
+
+39
+00:01:36,720 --> 00:01:38,220
+neighbors are also high,
+
+40
+00:01:38,480 --> 00:01:40,640
+and so I showed you how to use
+
+41
+00:01:40,640 --> 00:01:42,160
+the mean field approximation
+
+42
+00:01:42,899 --> 00:01:44,860
+to calculate mean field approximation
+
+43
+00:01:44,860 --> 00:01:48,940
+simply means postulate an average
+
+44
+00:01:49,640 --> 00:01:51,000
+for all the spins,
+
+45
+00:01:51,140 --> 00:01:51,860
+and in particular,
+
+46
+00:01:51,860 --> 00:01:52,480
+in this case,
+
+47
+00:01:52,520 --> 00:01:54,480
+it means all the spins neighboring
+
+48
+00:01:54,480 --> 00:01:56,380
+to our target spin,
+
+49
+00:01:56,380 --> 00:01:59,060
+to the spin that we are going to focus on.
+
+50
+00:01:59,060 --> 00:02:01,540
+And just imagine
+
+51
+00:02:01,540 --> 00:02:05,080
+that they are frozen at their average value.
+
+52
+00:02:05,080 --> 00:02:06,400
+These spins are frozen at their
+
+53
+00:02:06,400 --> 00:02:07,000
+average value.
+
+54
+00:02:07,000 --> 00:02:08,870
+That gives you an expression
+
+55
+00:02:08,870 --> 00:02:10,740
+for the energy of the one
+
+56
+00:02:10,740 --> 00:02:13,120
+spin that is left over,
+
+57
+00:02:13,120 --> 00:02:14,040
+the one at the center.
+
+58
+00:02:14,040 --> 00:02:16,840
+And in a sense,
+
+59
+00:02:16,840 --> 00:02:17,980
+the other spins
+
+60
+00:02:17,980 --> 00:02:21,920
+surrounding it give it a bias to
+
+61
+00:02:21,920 --> 00:02:25,860
+point in the same direction as the average
+
+62
+00:02:25,860 --> 00:02:26,860
+spin of the others.
+
+63
+00:02:26,860 --> 00:02:29,740
+The higher the dimensionality,
+
+64
+00:02:29,740 --> 00:02:31,340
+the more neighboring
+
+65
+00:02:31,340 --> 00:02:32,200
+spins there are,
+
+66
+00:02:32,200 --> 00:02:35,580
+the better the approximation of saying you can average
+
+67
+00:02:35,580 --> 00:02:36,200
+over them.
+
+68
+00:02:36,200 --> 00:02:39,700
+But that's the basic idea of the mean field approximation.
+
+69
+00:02:39,700 --> 00:02:40,440
+And then
+
+70
+00:02:40,440 --> 00:02:41,760
+let me remind you what you do.
+
+71
+00:02:41,760 --> 00:02:45,020
+You calculate in the background of the other
+
+72
+00:02:45,020 --> 00:02:45,340
+spins,
+
+73
+00:02:45,340 --> 00:02:47,960
+you calculate the partitioning
+
+74
+00:02:47,960 --> 00:02:49,620
+function for the one extra spin.
+
+75
+00:02:49,620 --> 00:02:54,380
+You then calculate the average magnetization
+
+76
+00:02:54,380 --> 00:02:55,540
+of the extra spin.
+
+77
+00:02:55,540 --> 00:02:56,220
+In other words,
+
+78
+00:02:56,220 --> 00:03:06,380
+you calculate the average value of sigma of
+
+79
+00:03:06,960 --> 00:03:07,940
+the extra spin there.
+
+80
+00:03:07,940 --> 00:03:11,480
+What was it equal to?
+
+81
+00:03:11,480 --> 00:03:12,940
+Anybody remember the formula for it?
+
+82
+00:03:12,940 --> 00:03:16,060
+I
+
+83
+00:03:16,060 --> 00:03:17,400
+don't remember the formula for it.
+
+84
+00:03:18,620 --> 00:03:20,380
+I just want to go back and...
+
+85
+00:03:20,960 --> 00:03:25,780
+Minus the average energy over 2...2 sd?
+
+86
+00:03:26,040 --> 00:03:26,720
+No,
+
+87
+00:03:26,720 --> 00:03:26,820
+no,
+
+88
+00:03:26,820 --> 00:03:28,780
+but there was a formula with a tangent,
+
+89
+00:03:28,780 --> 00:03:29,920
+a hyperbolic tangent...
+
+90
+00:03:29,920 --> 00:03:30,160
+Yeah,
+
+91
+00:03:30,160 --> 00:03:33,740
+hyperbolic tangent 2 beta sd.
+
+92
+00:03:34,480 --> 00:03:36,280
+Hyperbolic tangent of...
+
+93
+00:03:37,480 --> 00:03:39,860
+2 beta sd.
+
+94
+00:03:40,000 --> 00:03:42,480
+2 beta sd.
+
+95
+00:03:42,480 --> 00:03:45,820
+d is the dimensionality of space,
+
+96
+00:03:45,820 --> 00:03:47,940
+and it simply represents
+
+97
+00:03:47,960 --> 00:03:51,340
+the number of nearest neighbors to this fellow over here.
+
+98
+00:03:52,040 --> 00:03:52,740
+All right.
+
+99
+00:03:52,740 --> 00:03:54,520
+Beta is the inverse temperature.
+
+100
+00:03:54,520 --> 00:03:56,540
+Where did the 2 come from?
+
+101
+00:03:56,540 --> 00:03:56,700
+Oh,
+
+102
+00:03:56,700 --> 00:03:57,040
+I remember
+
+103
+00:03:57,040 --> 00:03:57,940
+where the 2 came from.
+
+104
+00:03:58,040 --> 00:03:58,540
+2 times d.
+
+105
+00:03:58,540 --> 00:03:58,560
+Hmm?
+
+106
+00:03:58,760 --> 00:03:59,440
+2 times d.
+
+107
+00:03:59,480 --> 00:03:59,820
+Yeah,
+
+108
+00:03:59,820 --> 00:04:01,810
+because the number of nearest
+
+109
+00:04:01,810 --> 00:04:03,800
+neighbors is twice the dimensionality.
+
+110
+00:04:04,240 --> 00:04:08,690
+And s was the average spin at the...the
+
+111
+00:04:08,690 --> 00:04:13,140
+average spin of the entire ensemble of spins.
+
+112
+00:04:14,300 --> 00:04:17,260
+And then the consistency requires...
+
+113
+00:04:17,959 --> 00:04:19,760
+that this be the same as s.
+
+114
+00:04:19,760 --> 00:04:20,399
+In other words,
+
+115
+00:04:20,399 --> 00:04:22,160
+this spin is no different than all the others.
+
+116
+00:04:22,480 --> 00:04:23,820
+I said that all the
+
+117
+00:04:23,820 --> 00:04:25,160
+others have an average spin s,
+
+118
+00:04:25,160 --> 00:04:28,900
+and we get a consistency equation.
+
+119
+00:04:29,900 --> 00:04:35,880
+s is equal to tanh 2 beta s times d.
+
+120
+00:04:38,180 --> 00:04:39,700
+And if we can solve that equation,
+
+121
+00:04:39,700 --> 00:04:44,560
+then we will determine what the average magnetization is
+
+122
+00:04:45,400 --> 00:04:47,840
+as a function of the other variables in the problem.
+
+123
+00:04:47,960 --> 00:04:48,080
+Beta,
+
+124
+00:04:48,080 --> 00:04:48,520
+d,
+
+125
+00:04:48,520 --> 00:04:49,200
+and so forth.
+
+126
+00:04:49,780 --> 00:04:50,460
+All right.
+
+127
+00:04:50,460 --> 00:04:52,120
+So let me just remind you what that looked like.
+
+128
+00:04:54,500 --> 00:04:55,780
+We plot s.
+
+129
+00:04:57,440 --> 00:04:59,900
+s is just a linear function.
+
+130
+00:05:00,140 --> 00:05:01,180
+s of what?
+
+131
+00:05:01,180 --> 00:05:01,840
+s of s.
+
+132
+00:05:02,740 --> 00:05:03,380
+All right.
+
+133
+00:05:03,380 --> 00:05:04,820
+We plot s of s.
+
+134
+00:05:04,820 --> 00:05:06,960
+s of s is just a straight line.
+
+135
+00:05:06,960 --> 00:05:07,980
+s equals s.
+
+136
+00:05:09,020 --> 00:05:14,260
+And then we superimpose on that the graph
+
+137
+00:05:16,900 --> 00:05:17,940
+of tanh.
+
+138
+00:05:17,960 --> 00:05:20,260
+tanh 2 beta s d.
+
+139
+00:05:20,760 --> 00:05:23,000
+And that looks something like this.
+
+140
+00:05:24,000 --> 00:05:24,760
+Let's see.
+
+141
+00:05:24,760 --> 00:05:27,220
+If the temperature is high...
+
+142
+00:05:27,220 --> 00:05:29,160
+When the temperature is high,
+
+143
+00:05:29,160 --> 00:05:31,520
+that means that beta is small.
+
+144
+00:05:32,690 --> 00:05:35,200
+Then the tanh function looks like this.
+
+145
+00:05:35,730 --> 00:05:36,620
+It's very flat.
+
+146
+00:05:37,140 --> 00:05:38,960
+It asymptotes to 1.
+
+147
+00:05:44,180 --> 00:05:46,320
+It's linear at the origin here.
+
+148
+00:05:46,320 --> 00:05:49,730
+But the slope is less than the
+
+149
+00:05:49,730 --> 00:05:53,140
+slope of this straight line over here.
+
+150
+00:05:53,340 --> 00:05:55,240
+And so there's no intersection.
+
+151
+00:05:55,500 --> 00:05:58,280
+There's no intersection of this blue curve
+
+152
+00:05:58,280 --> 00:06:01,060
+with a black curve other than the origin.
+
+153
+00:06:01,500 --> 00:06:04,520
+And that means the only solution to
+
+154
+00:06:04,520 --> 00:06:07,540
+this problem is that s equals 0.
+
+155
+00:06:08,880 --> 00:06:13,220
+Now we start decreasing the temperature.
+
+156
+00:06:13,500 --> 00:06:14,880
+That means increasing beta.
+
+157
+00:06:14,880 --> 00:06:19,160
+And we discover that this curve moves in.
+
+158
+00:06:22,980 --> 00:06:26,070
+And eventually its slope at the
+
+159
+00:06:26,070 --> 00:06:29,160
+origin will become equal to 1.
+
+160
+00:06:29,980 --> 00:06:31,560
+When you go beyond that,
+
+161
+00:06:31,560 --> 00:06:33,820
+the curve will look like this.
+
+162
+00:06:36,980 --> 00:06:39,340
+And you have two new solutions.
+
+163
+00:06:41,180 --> 00:06:44,140
+These two solutions are in fact the stable solutions.
+
+164
+00:06:44,140 --> 00:06:47,430
+It's possible to prove that this
+
+165
+00:06:47,430 --> 00:06:50,720
+solution over here really is unstable.
+
+166
+00:06:51,120 --> 00:06:54,250
+That if you try to make the
+
+167
+00:06:54,250 --> 00:06:57,380
+magnet behave as this solution tells you,
+
+168
+00:06:58,140 --> 00:07:01,320
+any tiny little perturbation will...
+
+169
+00:07:01,880 --> 00:07:02,680
+In other words,
+
+170
+00:07:02,680 --> 00:07:04,440
+over here,
+
+171
+00:07:04,440 --> 00:07:05,420
+what does it say?
+
+172
+00:07:05,560 --> 00:07:07,520
+It says that the magnetization is 0.
+
+173
+00:07:07,760 --> 00:07:09,510
+How do you make the magnetization equal to
+
+174
+00:07:09,510 --> 00:07:11,260
+0 if it doesn't want to be 0,
+
+175
+00:07:11,260 --> 00:07:12,640
+if it wants to all line up?
+
+176
+00:07:12,980 --> 00:07:13,540
+Well,
+
+177
+00:07:13,540 --> 00:07:14,120
+you say...
+
+178
+00:07:14,140 --> 00:07:17,760
+You simply take the two possibilities all lined up
+
+179
+00:07:17,760 --> 00:07:21,380
+one way plus all lined up the other way.
+
+180
+00:07:21,480 --> 00:07:21,860
+In other words,
+
+181
+00:07:21,860 --> 00:07:23,270
+you make a probability of half that
+
+182
+00:07:23,270 --> 00:07:24,680
+they're all lined up in one way,
+
+183
+00:07:24,760 --> 00:07:25,850
+probability of half that they're all
+
+184
+00:07:25,850 --> 00:07:26,940
+lined up in the other way.
+
+185
+00:07:27,120 --> 00:07:28,060
+And sure enough,
+
+186
+00:07:28,060 --> 00:07:29,820
+there will be a solution
+
+187
+00:07:29,820 --> 00:07:31,580
+which will correspond to no magnetization.
+
+188
+00:07:32,080 --> 00:07:34,160
+But that's a highly unstable situation.
+
+189
+00:07:35,260 --> 00:07:36,760
+Any small stray,
+
+190
+00:07:36,760 --> 00:07:38,720
+very,
+
+191
+00:07:38,720 --> 00:07:42,620
+very tiny magnetic field pointing either up or down
+
+192
+00:07:42,620 --> 00:07:47,740
+will tend to flip the magnets to the preferred...
+
+193
+00:07:47,740 --> 00:07:49,180
+in the preferred direction.
+
+194
+00:07:49,820 --> 00:07:52,460
+And you will either get this or this,
+
+195
+00:07:52,460 --> 00:07:54,720
+depending on which way the...
+
+196
+00:07:54,720 --> 00:07:55,740
+Well,
+
+197
+00:07:55,740 --> 00:07:56,780
+two possibilities.
+
+198
+00:07:57,160 --> 00:07:59,180
+You'll either get this or this,
+
+199
+00:07:59,180 --> 00:08:00,960
+depending on the direction of
+
+200
+00:08:00,960 --> 00:08:02,740
+that extremely weak magnetic field.
+
+201
+00:08:03,020 --> 00:08:03,580
+Now,
+
+202
+00:08:03,580 --> 00:08:05,120
+I have not included that very
+
+203
+00:08:05,120 --> 00:08:06,660
+weak magnetic field in the calculation.
+
+204
+00:08:08,340 --> 00:08:09,300
+We could,
+
+205
+00:08:09,300 --> 00:08:11,020
+but that's just a nuisance.
+
+206
+00:08:11,300 --> 00:08:12,600
+We simply know that...
+
+207
+00:08:12,620 --> 00:08:13,980
+We know that if we have a lot
+
+208
+00:08:13,980 --> 00:08:15,340
+of spins and they all want to line up
+
+209
+00:08:15,340 --> 00:08:16,760
+and they're reinforcing each other,
+
+210
+00:08:16,760 --> 00:08:19,620
+binding each other to be in the same direction,
+
+211
+00:08:20,660 --> 00:08:23,440
+that at low temperatures they will tend to line up,
+
+212
+00:08:23,480 --> 00:08:27,160
+and either they will line up positively or negatively.
+
+213
+00:08:27,820 --> 00:08:29,660
+S will either be positive or negative,
+
+214
+00:08:30,200 --> 00:08:32,780
+depending on nothing more than the value of,
+
+215
+00:08:32,780 --> 00:08:33,240
+let's say,
+
+216
+00:08:33,240 --> 00:08:36,520
+an infinitesimally small background field,
+
+217
+00:08:38,000 --> 00:08:40,149
+which is of such insignificance that we
+
+218
+00:08:40,149 --> 00:08:42,299
+don't even need to worry about it.
+
+219
+00:08:42,620 --> 00:08:42,720
+So,
+
+220
+00:08:42,720 --> 00:08:43,319
+we can just say that the magnet is in the same
+
+221
+00:08:43,319 --> 00:08:43,919
+direction as the magnet is in the dynamics of the magnet.
+
+222
+00:08:45,980 --> 00:08:47,540
+There's a critical point.
+
+223
+00:08:47,700 --> 00:08:49,320
+The critical point...
+
+224
+00:08:50,140 --> 00:08:52,360
+The critical temperature is the
+
+225
+00:08:52,360 --> 00:08:54,580
+temperature of the beta over here,
+
+226
+00:08:54,720 --> 00:08:57,230
+which makes the blue curve have
+
+227
+00:08:57,230 --> 00:08:59,740
+the same slope as the black curve.
+
+228
+00:09:00,160 --> 00:09:01,340
+In other words,
+
+229
+00:09:01,340 --> 00:09:03,040
+it's the first point...
+
+230
+00:09:03,040 --> 00:09:05,300
+It's the point at which...
+
+231
+00:09:06,820 --> 00:09:08,920
+you're just on the cusp...
+
+232
+00:09:08,920 --> 00:09:11,160
+of having spontaneous magnetization.
+
+233
+00:09:11,440 --> 00:09:13,040
+I didn't draw that well over here.
+
+234
+00:09:13,600 --> 00:09:18,840
+I meant it to be tangent to the black curve.
+
+235
+00:09:19,140 --> 00:09:19,660
+So,
+
+236
+00:09:19,660 --> 00:09:20,580
+as I vary beta,
+
+237
+00:09:21,620 --> 00:09:23,690
+I eventually hit a point where the
+
+238
+00:09:23,690 --> 00:09:25,760
+blue curve is tangent to the black curve.
+
+239
+00:09:26,600 --> 00:09:28,640
+There's only one solution at that point.
+
+240
+00:09:28,820 --> 00:09:30,560
+The magnetization is zero,
+
+241
+00:09:30,740 --> 00:09:33,360
+but then when I just go epsilon past that,
+
+242
+00:09:33,460 --> 00:09:35,020
+just a tiny bit past that,
+
+243
+00:09:35,200 --> 00:09:36,940
+then the magnetization,
+
+244
+00:09:36,940 --> 00:09:38,780
+the spontaneous magnetization happens,
+
+245
+00:09:38,920 --> 00:09:41,980
+and that point is the critical point.
+
+246
+00:09:42,460 --> 00:09:43,060
+Alright?
+
+247
+00:09:43,060 --> 00:09:44,020
+It's the critical point,
+
+248
+00:09:44,120 --> 00:09:47,840
+and it's the point where tanh has unit slope.
+
+249
+00:09:48,740 --> 00:09:49,340
+So,
+
+250
+00:09:49,340 --> 00:09:50,020
+what does that mean?
+
+251
+00:09:50,140 --> 00:09:54,540
+What's the slope of this tanh here at the origin?
+
+252
+00:09:55,200 --> 00:09:58,220
+It's the derivative of tanh with respect to s.
+
+253
+00:09:59,140 --> 00:09:59,740
+So,
+
+254
+00:09:59,740 --> 00:10:02,200
+what's the derivative of tanh with respect to s?
+
+255
+00:10:04,220 --> 00:10:05,340
+At the origin.
+
+256
+00:10:06,360 --> 00:10:08,360
+I think it's just twice...
+
+257
+00:10:10,619 --> 00:10:12,740
+twice beta d.
+
+258
+00:10:19,840 --> 00:10:20,300
+So,
+
+259
+00:10:20,300 --> 00:10:22,100
+when twice beta d...
+
+260
+00:10:22,100 --> 00:10:22,860
+Is that right?
+
+261
+00:10:22,860 --> 00:10:23,200
+I mean,
+
+262
+00:10:23,200 --> 00:10:24,720
+if we differentiate tanh...
+
+263
+00:10:24,720 --> 00:10:25,620
+Can anybody do that?
+
+264
+00:10:29,060 --> 00:10:29,520
+Alright,
+
+265
+00:10:29,520 --> 00:10:30,020
+let's do it.
+
+266
+00:10:30,740 --> 00:10:32,900
+Let's do it just to convince ourselves that I'm right.
+
+267
+00:10:33,180 --> 00:10:34,180
+What is tanh?
+
+268
+00:10:34,180 --> 00:10:35,720
+Tanh is sinh over khash,
+
+269
+00:10:35,720 --> 00:10:36,060
+right?
+
+270
+00:10:37,260 --> 00:10:38,380
+Sinh over khash.
+
+271
+00:10:38,380 --> 00:10:38,800
+So,
+
+272
+00:10:38,800 --> 00:10:39,580
+sinh...
+
+273
+00:10:42,100 --> 00:10:44,700
+Let's write just sinh x over khash x.
+
+274
+00:10:44,900 --> 00:10:46,920
+We'll differentiate first with respect to x,
+
+275
+00:10:47,100 --> 00:10:48,790
+and then we'll differentiate x with
+
+276
+00:10:48,790 --> 00:10:50,480
+respect to the argument of the tanh.
+
+277
+00:10:50,640 --> 00:10:50,780
+Alright?
+
+278
+00:10:50,780 --> 00:10:52,580
+Just usual rule for calculating derivatives.
+
+279
+00:10:53,400 --> 00:10:57,380
+The derivative of sinh is khash.
+
+280
+00:10:57,660 --> 00:10:58,220
+Alright?
+
+281
+00:10:58,220 --> 00:10:58,400
+So,
+
+282
+00:10:58,400 --> 00:10:58,920
+let's do the...
+
+283
+00:10:58,920 --> 00:10:59,900
+What's the usual rule?
+
+284
+00:11:00,720 --> 00:11:02,600
+Denominator times the derivative of the numerator.
+
+285
+00:11:04,040 --> 00:11:05,900
+Derivative of this with respect to x
+
+286
+00:11:05,900 --> 00:11:08,380
+is equal to the denominator,
+
+287
+00:11:08,380 --> 00:11:09,520
+khash x,
+
+288
+00:11:11,199 --> 00:11:13,260
+times the derivative of the numerator.
+
+289
+00:11:13,620 --> 00:11:16,040
+Derivative of the numerator is also khash x,
+
+290
+00:11:16,040 --> 00:11:17,140
+khash squared x,
+
+291
+00:11:18,540 --> 00:11:21,800
+minus the numerator times the derivative of the denominator.
+
+292
+00:11:23,300 --> 00:11:23,900
+So,
+
+293
+00:11:23,900 --> 00:11:26,220
+I think that should be minus sinh squared x?
+
+294
+00:11:27,980 --> 00:11:29,000
+Plus or minus?
+
+295
+00:11:30,500 --> 00:11:31,580
+We'll see in a minute.
+
+296
+00:11:32,540 --> 00:11:33,140
+Hmm?
+
+297
+00:11:38,040 --> 00:11:38,520
+Let's see.
+
+298
+00:11:42,640 --> 00:11:48,000
+We have denominator times the derivative of the numerator,
+
+299
+00:11:48,920 --> 00:11:51,800
+minus numerator times the derivative of the denominator.
+
+300
+00:11:52,200 --> 00:11:52,540
+So,
+
+301
+00:11:52,540 --> 00:11:54,420
+it looks to me like khash squared minus sinh squared.
+
+302
+00:11:55,320 --> 00:11:57,080
+Derivative of khash is equal to sinh,
+
+303
+00:11:57,120 --> 00:11:58,920
+and derivative of sinh is equal to khash.
+
+304
+00:11:59,980 --> 00:12:00,860
+As the numerator is minus sinh squared.
+
+305
+00:12:01,000 --> 00:12:01,020
+So,
+
+306
+00:12:01,020 --> 00:12:01,020
+that's the derivative of sinh squared.
+
+307
+00:12:01,800 --> 00:12:03,220
+As the numerator is 1.
+
+308
+00:12:04,880 --> 00:12:08,020
+The numerator is 1 at x equals 0.
+
+309
+00:12:09,220 --> 00:12:10,580
+The numerator is 1?
+
+310
+00:12:10,720 --> 00:12:11,020
+Oh,
+
+311
+00:12:11,020 --> 00:12:11,640
+khash squared,
+
+312
+00:12:11,640 --> 00:12:12,000
+yeah.
+
+313
+00:12:12,380 --> 00:12:14,520
+Khash squared minus sinh squared is 1,
+
+314
+00:12:14,740 --> 00:12:17,400
+and this is just equal to
+
+315
+00:12:17,400 --> 00:12:20,060
+1 over khash of x squared.
+
+316
+00:12:21,120 --> 00:12:21,640
+Okay?
+
+317
+00:12:21,900 --> 00:12:22,420
+So,
+
+318
+00:12:22,420 --> 00:12:23,440
+um...
+
+319
+00:12:24,660 --> 00:12:25,700
+And that,
+
+320
+00:12:25,700 --> 00:12:27,400
+at x equals 0,
+
+321
+00:12:28,120 --> 00:12:29,680
+right at this point over here,
+
+322
+00:12:29,680 --> 00:12:30,720
+at x equals 0,
+
+323
+00:12:31,400 --> 00:12:32,000
+that's 1.
+
+324
+00:12:33,540 --> 00:12:34,780
+Khash of 0 is 1,
+
+325
+00:12:35,000 --> 00:12:37,400
+so this is all equal to the number 1.
+
+326
+00:12:38,400 --> 00:12:40,900
+That's the derivative of the tanh
+
+327
+00:12:41,439 --> 00:12:43,800
+with respect to the argument here,
+
+328
+00:12:44,000 --> 00:12:46,000
+but then we have to differentiate
+
+329
+00:12:46,000 --> 00:12:48,000
+the argument with respect to s,
+
+330
+00:12:48,160 --> 00:12:49,360
+and that will give us a 2 beta d.
+
+331
+00:12:50,160 --> 00:12:50,600
+So,
+
+332
+00:12:50,600 --> 00:12:52,060
+that's where the 2 beta d comes from.
+
+333
+00:12:52,280 --> 00:12:54,260
+The derivative of this with respect to
+
+334
+00:12:54,260 --> 00:12:56,240
+s at the origin is 2 beta d.
+
+335
+00:12:56,660 --> 00:12:58,640
+And when that becomes equal to 1,
+
+336
+00:12:59,680 --> 00:13:00,300
+in other words,
+
+337
+00:13:00,340 --> 00:13:02,860
+when the derivative of this curve just matches,
+
+338
+00:13:02,960 --> 00:13:07,980
+just kisses the 45 degree line here,
+
+339
+00:13:08,660 --> 00:13:10,080
+that's the critical point.
+
+340
+00:13:10,400 --> 00:13:12,400
+That determines the critical temperature,
+
+341
+00:13:13,000 --> 00:13:14,920
+and so the critical temperature...
+
+342
+00:13:14,920 --> 00:13:15,020
+Let's see,
+
+343
+00:13:15,020 --> 00:13:16,880
+did I miss a j out of this?
+
+344
+00:13:18,720 --> 00:13:21,400
+Wasn't there a parameter j that...
+
+345
+00:13:22,500 --> 00:13:23,020
+Yeah,
+
+346
+00:13:23,020 --> 00:13:24,840
+you used that as a temperature.
+
+347
+00:13:25,060 --> 00:13:25,780
+It was 1 over beta.
+
+348
+00:13:26,100 --> 00:13:26,560
+Yeah,
+
+349
+00:13:26,560 --> 00:13:27,140
+it's there.
+
+350
+00:13:27,260 --> 00:13:28,040
+There's a j there.
+
+351
+00:13:28,040 --> 00:13:28,620
+A j.
+
+352
+00:13:30,100 --> 00:13:30,640
+J.
+
+353
+00:13:34,520 --> 00:13:35,240
+All right,
+
+354
+00:13:35,240 --> 00:13:36,800
+so this is 1 over temperature here,
+
+355
+00:13:38,480 --> 00:13:39,720
+and if I shift it to
+
+356
+00:13:39,720 --> 00:13:40,960
+the other side of the equation,
+
+357
+00:13:41,260 --> 00:13:43,000
+it just gives me the critical temperature.
+
+358
+00:13:43,600 --> 00:13:46,080
+The critical temperature at which the...
+
+359
+00:13:51,320 --> 00:13:54,980
+T critical is twice d times j.
+
+360
+00:13:55,720 --> 00:13:56,260
+Notice,
+
+361
+00:13:56,260 --> 00:13:57,440
+among other things,
+
+362
+00:13:57,440 --> 00:13:59,320
+that the critical temperature gets higher
+
+363
+00:13:59,320 --> 00:14:01,620
+with increasing dimensionality.
+
+364
+00:14:01,800 --> 00:14:02,380
+Why is that?
+
+365
+00:14:03,219 --> 00:14:03,560
+Well,
+
+366
+00:14:03,560 --> 00:14:04,980
+low temperature,
+
+367
+00:14:05,280 --> 00:14:07,380
+you're in the magnetized phase.
+
+368
+00:14:07,740 --> 00:14:08,860
+The question is,
+
+369
+00:14:08,860 --> 00:14:09,900
+how long,
+
+370
+00:14:10,580 --> 00:14:12,840
+or how high can you heat it
+
+371
+00:14:13,440 --> 00:14:16,300
+before the temperature thermal fluctuations
+
+372
+00:14:16,300 --> 00:14:18,760
+disrupt the magnetized phase?
+
+373
+00:14:19,100 --> 00:14:20,260
+And the answer is,
+
+374
+00:14:20,260 --> 00:14:21,800
+the more neighbors that you have,
+
+375
+00:14:22,080 --> 00:14:24,520
+the higher the temperature you can get to
+
+376
+00:14:24,520 --> 00:14:27,200
+before you'll escape from their...
+
+377
+00:14:27,440 --> 00:14:30,160
+from their tendency to hold you in place.
+
+378
+00:14:30,680 --> 00:14:33,740
+So that's why the critical temperature increases with d.
+
+379
+00:14:34,420 --> 00:14:36,580
+You get to higher temperatures
+
+380
+00:14:37,350 --> 00:14:40,720
+before the magnetization disappears in higher d.
+
+381
+00:14:40,940 --> 00:14:42,440
+That's proportional to j.
+
+382
+00:14:42,580 --> 00:14:44,340
+j was just the strength of a coupling
+
+383
+00:14:44,340 --> 00:14:45,700
+between neighboring spins.
+
+384
+00:14:45,980 --> 00:14:48,160
+The stronger the coupling between neighboring spins
+
+385
+00:14:48,160 --> 00:14:50,440
+also increases the temperature,
+
+386
+00:14:51,230 --> 00:14:53,700
+and the two came from someplace.
+
+387
+00:14:54,980 --> 00:14:55,740
+All right,
+
+388
+00:14:55,740 --> 00:14:56,040
+so now,
+
+389
+00:14:56,040 --> 00:14:56,580
+if we...
+
+390
+00:14:57,780 --> 00:15:00,220
+if we go back...
+
+391
+00:15:00,839 --> 00:15:01,960
+I know I explained this,
+
+392
+00:15:02,060 --> 00:15:03,740
+but let's do it again.
+
+393
+00:15:04,820 --> 00:15:07,480
+If we go back to the phase diagram,
+
+394
+00:15:07,800 --> 00:15:09,460
+let's go back to the phase diagram.
+
+395
+00:15:10,540 --> 00:15:13,160
+And the phase diagram is a diagram
+
+396
+00:15:13,859 --> 00:15:15,460
+which on the horizontal axis
+
+397
+00:15:15,460 --> 00:15:16,680
+is just the temperature,
+
+398
+00:15:18,580 --> 00:15:20,220
+and the vertical axis
+
+399
+00:15:20,859 --> 00:15:23,660
+is the external magnetic field,
+
+400
+00:15:23,820 --> 00:15:25,400
+which may be up or down.
+
+401
+00:15:26,040 --> 00:15:28,860
+It plays the role in the magnet
+
+402
+00:15:28,860 --> 00:15:33,260
+of the chemical potential in the fluid.
+
+403
+00:15:33,940 --> 00:15:34,680
+All right,
+
+404
+00:15:34,680 --> 00:15:37,460
+so let's put vertically here h.
+
+405
+00:15:40,240 --> 00:15:42,960
+And if h is less than zero,
+
+406
+00:15:44,500 --> 00:15:45,540
+in other words,
+
+407
+00:15:45,540 --> 00:15:47,240
+the magnetic field is pointing down,
+
+408
+00:15:47,420 --> 00:15:49,380
+it will bias all of the spins down,
+
+409
+00:15:49,760 --> 00:15:53,000
+and throughout this entire quadrant here,
+
+410
+00:15:53,180 --> 00:15:55,000
+the average spin will be down.
+
+411
+00:15:55,000 --> 00:15:55,920
+That's for sure.
+
+412
+00:15:56,240 --> 00:16:00,940
+But if you approach this line
+
+413
+00:16:00,940 --> 00:16:03,080
+where h is equal to zero,
+
+414
+00:16:03,660 --> 00:16:05,360
+it may or may not be
+
+415
+00:16:05,760 --> 00:16:07,700
+that when you just get to that line,
+
+416
+00:16:07,900 --> 00:16:10,720
+the magnetization is still there.
+
+417
+00:16:11,180 --> 00:16:12,940
+Or it may be absent.
+
+418
+00:16:13,580 --> 00:16:14,140
+Okay?
+
+419
+00:16:14,320 --> 00:16:15,280
+If it's there,
+
+420
+00:16:15,460 --> 00:16:17,500
+that means there's a jump discontinuity,
+
+421
+00:16:17,600 --> 00:16:18,840
+because certainly if you approach
+
+422
+00:16:18,840 --> 00:16:19,860
+from the other side,
+
+423
+00:16:20,760 --> 00:16:24,540
+you'll find that the magnetization
+
+424
+00:16:24,540 --> 00:16:24,980
+is still there.
+
+425
+00:16:24,980 --> 00:16:26,140
+So the line is positive on this side,
+
+426
+00:16:26,260 --> 00:16:27,300
+negative on this side,
+
+427
+00:16:27,400 --> 00:16:29,100
+and if there's anything left of it
+
+428
+00:16:29,100 --> 00:16:31,060
+right at the edge of this line here,
+
+429
+00:16:31,160 --> 00:16:31,900
+it will have to jump.
+
+430
+00:16:32,140 --> 00:16:34,420
+And that's a first-order phase trans-
+
+431
+00:16:34,420 --> 00:16:36,040
+called a first-order phase transition.
+
+432
+00:16:36,620 --> 00:16:38,720
+It is the sort of thing that happens
+
+433
+00:16:41,180 --> 00:16:48,360
+as you increase the density of a gas.
+
+434
+00:16:49,460 --> 00:16:51,700
+The chemical potential can be used
+
+435
+00:16:51,700 --> 00:16:53,560
+to increase the density of the gas.
+
+436
+00:16:53,560 --> 00:16:56,240
+You increase the density of the gas
+
+437
+00:16:56,240 --> 00:16:57,940
+at fixed temperature,
+
+438
+00:16:58,160 --> 00:17:02,420
+and eventually you will go from gas to liquid.
+
+439
+00:17:03,000 --> 00:17:03,760
+All right?
+
+440
+00:17:03,900 --> 00:17:05,760
+When does that happen?
+
+441
+00:17:05,880 --> 00:17:06,119
+Well,
+
+442
+00:17:06,119 --> 00:17:07,260
+it happens when the molecules
+
+443
+00:17:07,260 --> 00:17:08,560
+get good and close together
+
+444
+00:17:08,560 --> 00:17:10,540
+so that they're almost butting up
+
+445
+00:17:10,540 --> 00:17:11,260
+against each other.
+
+446
+00:17:11,359 --> 00:17:12,099
+Not quite.
+
+447
+00:17:12,500 --> 00:17:14,599
+If they're butting up against each other too much,
+
+448
+00:17:14,599 --> 00:17:16,180
+of course what'll happen is it'll freeze
+
+449
+00:17:16,180 --> 00:17:17,800
+into a crystal lattice.
+
+450
+00:17:18,800 --> 00:17:20,839
+But somewhere in between freezing
+
+451
+00:17:20,839 --> 00:17:22,480
+in a crystal lattice
+
+452
+00:17:22,480 --> 00:17:25,060
+and high-temperature boiling water,
+
+453
+00:17:29,160 --> 00:17:30,500
+somewhere in between,
+
+454
+00:17:31,320 --> 00:17:33,100
+you'll have a jump in the density.
+
+455
+00:17:33,720 --> 00:17:34,280
+Okay,
+
+456
+00:17:34,280 --> 00:17:35,960
+or a jump in the magnetization.
+
+457
+00:17:37,140 --> 00:17:39,000
+If you go to too high a temperature,
+
+458
+00:17:40,080 --> 00:17:41,360
+this is T-critical,
+
+459
+00:17:41,520 --> 00:17:42,520
+as we've seen,
+
+460
+00:17:42,520 --> 00:17:44,020
+if you go to too high a temperature,
+
+461
+00:17:44,340 --> 00:17:46,240
+then the spontaneous magnetization
+
+462
+00:17:46,240 --> 00:17:47,580
+disappears over here,
+
+463
+00:17:48,380 --> 00:17:51,020
+and so the phase diagram contains
+
+464
+00:17:51,020 --> 00:17:53,540
+spontaneous magnetization over here,
+
+465
+00:17:55,480 --> 00:17:57,120
+and it disappears over here.
+
+466
+00:17:58,420 --> 00:17:59,360
+As I said,
+
+467
+00:17:59,360 --> 00:18:00,480
+you can go...
+
+468
+00:18:00,480 --> 00:18:02,220
+I'm sure I did say this,
+
+469
+00:18:02,320 --> 00:18:04,960
+but I need to remind myself as well as you.
+
+470
+00:18:05,980 --> 00:18:07,480
+I can go from,
+
+471
+00:18:07,480 --> 00:18:10,340
+let's call it,
+
+472
+00:18:10,340 --> 00:18:13,380
+the downward magnetized phase over here,
+
+473
+00:18:13,540 --> 00:18:15,260
+which is also the gas phase,
+
+474
+00:18:15,380 --> 00:18:16,360
+let's call it the gas,
+
+475
+00:18:19,080 --> 00:18:20,680
+or magnetization negative,
+
+476
+00:18:22,580 --> 00:18:23,420
+over here,
+
+477
+00:18:23,420 --> 00:18:23,920
+liquid,
+
+478
+00:18:26,680 --> 00:18:28,140
+magnetization greater than zero.
+
+479
+00:18:28,860 --> 00:18:30,760
+You can go across this boundary,
+
+480
+00:18:30,980 --> 00:18:32,540
+in which case you see a sudden jump,
+
+481
+00:18:32,660 --> 00:18:34,380
+and there's no doubt in that case
+
+482
+00:18:34,380 --> 00:18:39,300
+that you've made a jump in the density,
+
+483
+00:18:39,640 --> 00:18:41,440
+or you can go around here
+
+484
+00:18:43,480 --> 00:18:45,920
+and pass from gas to liquid
+
+485
+00:18:45,920 --> 00:18:47,940
+without a discontinuity.
+
+486
+00:18:48,860 --> 00:18:50,920
+So if you go around the critical temperature,
+
+487
+00:18:50,920 --> 00:18:52,260
+of water,
+
+488
+00:18:52,420 --> 00:18:53,880
+around in this way,
+
+489
+00:18:54,860 --> 00:18:56,660
+increasing the density,
+
+490
+00:18:56,820 --> 00:18:59,980
+you can avoid the sudden jump.
+
+491
+00:19:01,986 --> 00:19:02,086
+有
+
+492
+00:19:02,786 --> 00:19:03,846
+In the case,
+
+493
+00:19:03,846 --> 00:19:05,956
+let's say you're going from the bottom to
+
+494
+00:19:05,956 --> 00:19:08,066
+the top through the critical to the left,
+
+495
+00:19:08,066 --> 00:19:11,026
+the lower arrow,
+
+496
+00:19:11,845 --> 00:19:14,045
+does that imply that you're changing
+
+497
+00:19:14,045 --> 00:19:16,246
+the magnetic field at one point?
+
+498
+00:19:16,626 --> 00:19:16,846
+No,
+
+499
+00:19:16,846 --> 00:19:16,966
+no,
+
+500
+00:19:16,966 --> 00:19:17,126
+no,
+
+501
+00:19:17,126 --> 00:19:17,286
+no,
+
+502
+00:19:17,286 --> 00:19:17,426
+no.
+
+503
+00:19:17,426 --> 00:19:18,006
+All over.
+
+504
+00:19:18,206 --> 00:19:18,786
+All over?
+
+505
+00:19:18,886 --> 00:19:19,466
+All over.
+
+506
+00:19:19,466 --> 00:19:20,226
+Right.
+
+507
+00:19:21,425 --> 00:19:24,306
+What we're doing is we're changing the chemical potential.
+
+508
+00:19:25,066 --> 00:19:26,886
+Changing the chemical potential is
+
+509
+00:19:26,886 --> 00:19:28,706
+a trick for changing the density.
+
+510
+00:19:29,606 --> 00:19:30,426
+That's all it is.
+
+511
+00:19:30,426 --> 00:19:32,066
+It's a trick for changing the density.
+
+512
+00:19:32,066 --> 00:19:33,066
+If you like,
+
+513
+00:19:33,066 --> 00:19:35,826
+you can simply think of yourself as squeezing the water,
+
+514
+00:19:35,826 --> 00:19:37,186
+keeping the temperature fixed.
+
+515
+00:19:38,366 --> 00:19:40,606
+We don't even really have to keep the temperature fixed.
+
+516
+00:19:40,806 --> 00:19:41,166
+In fact,
+
+517
+00:19:41,166 --> 00:19:42,746
+here I didn't keep the temperature fixed.
+
+518
+00:19:42,746 --> 00:19:43,866
+It wandered from here to here.
+
+519
+00:19:44,266 --> 00:19:45,576
+But if we wanted to
+
+520
+00:19:45,576 --> 00:19:46,886
+have a precise version of it,
+
+521
+00:19:46,886 --> 00:19:49,386
+we might cross at a fixed temperature.
+
+522
+00:19:49,906 --> 00:19:51,046
+So in that case,
+
+523
+00:19:51,046 --> 00:19:53,866
+you would be increasing the pressure,
+
+524
+00:19:53,866 --> 00:19:56,406
+at the same time increasing the density,
+
+525
+00:19:56,906 --> 00:19:58,626
+but keeping the temperature...
+
+526
+00:19:58,626 --> 00:19:59,386
+What did I say?
+
+527
+00:20:00,566 --> 00:20:01,686
+Increase the pressure.
+
+528
+00:20:02,286 --> 00:20:03,426
+Increase the density,
+
+529
+00:20:03,426 --> 00:20:05,716
+but keep the system in
+
+530
+00:20:05,716 --> 00:20:08,006
+thermal equilibrium with its environment,
+
+531
+00:20:08,866 --> 00:20:10,726
+so that the temperature stays the same.
+
+532
+00:20:10,946 --> 00:20:12,026
+At some point,
+
+533
+00:20:12,026 --> 00:20:15,326
+the system will jump from gas to...
+
+534
+00:20:17,966 --> 00:20:21,386
+from vapor to liquid.
+
+535
+00:20:21,766 --> 00:20:24,876
+So that's the basic physics of
+
+536
+00:20:24,876 --> 00:20:27,986
+the very simplest kind of phase transition.
+
+537
+00:20:28,686 --> 00:20:29,736
+So what do you see
+
+538
+00:20:29,736 --> 00:20:30,786
+if you go around the outside?
+
+539
+00:20:30,966 --> 00:20:32,046
+I can understand that if you go...
+
+540
+00:20:32,526 --> 00:20:34,726
+If you go around the outside to the right...
+
+541
+00:20:35,526 --> 00:20:36,606
+If you go around this way.
+
+542
+00:20:36,786 --> 00:20:36,986
+Yeah,
+
+543
+00:20:36,986 --> 00:20:37,926
+if you go the other way,
+
+544
+00:20:37,926 --> 00:20:39,686
+you see it go from gas to liquid.
+
+545
+00:20:39,846 --> 00:20:40,486
+That makes sense.
+
+546
+00:20:40,646 --> 00:20:42,106
+But on the top,
+
+547
+00:20:42,106 --> 00:20:42,546
+it's liquid,
+
+548
+00:20:42,546 --> 00:20:43,046
+and on the bottom,
+
+549
+00:20:43,046 --> 00:20:43,406
+it's gas.
+
+550
+00:20:43,586 --> 00:20:44,606
+So what do you see if you go around...
+
+551
+00:20:44,606 --> 00:20:49,226
+You just see gas continuously change into liquid.
+
+552
+00:20:49,886 --> 00:20:52,666
+The density increases at no point that you
+
+553
+00:20:52,666 --> 00:20:55,446
+see a sharp discontinuity between liquid and gas.
+
+554
+00:20:56,006 --> 00:20:58,126
+The lesson is there is no sharp discontinuity.
+
+555
+00:20:58,806 --> 00:21:01,946
+There is no infinitely sharp way to say,
+
+556
+00:21:01,966 --> 00:21:02,026
+Okay,
+
+557
+00:21:02,026 --> 00:21:02,026
+I'm going to go around this way.
+
+558
+00:21:02,026 --> 00:21:03,026
+This is a gas,
+
+559
+00:21:03,026 --> 00:21:04,146
+and this is a liquid.
+
+560
+00:21:05,286 --> 00:21:07,086
+You can go continuously from one
+
+561
+00:21:07,086 --> 00:21:08,886
+to the other without an abrupt change.
+
+562
+00:21:09,346 --> 00:21:09,866
+Now,
+
+563
+00:21:09,866 --> 00:21:12,746
+this is not true for going to a solid.
+
+564
+00:21:13,346 --> 00:21:13,866
+Something...
+
+565
+00:21:15,345 --> 00:21:20,046
+The solid-liquid phase transition has a different character.
+
+566
+00:21:21,046 --> 00:21:25,346
+What happens when you go from liquid to ice,
+
+567
+00:21:25,346 --> 00:21:25,906
+let's say?
+
+568
+00:21:26,206 --> 00:21:28,686
+What happens when you go from liquid to ice...
+
+569
+00:21:29,305 --> 00:21:29,926
+You know,
+
+570
+00:21:29,926 --> 00:21:30,966
+both the...
+
+571
+00:21:33,106 --> 00:21:34,106
+You get a fog,
+
+572
+00:21:34,106 --> 00:21:34,586
+basically.
+
+573
+00:21:35,126 --> 00:21:35,566
+Yeah,
+
+574
+00:21:35,566 --> 00:21:37,266
+you get a kind of fog,
+
+575
+00:21:37,266 --> 00:21:39,216
+or with a fog which
+
+576
+00:21:39,216 --> 00:21:41,166
+gets denser and denser and denser,
+
+577
+00:21:41,186 --> 00:21:43,826
+and then just becomes basically...
+
+578
+00:21:44,546 --> 00:21:46,136
+So are you saying that if
+
+579
+00:21:46,136 --> 00:21:47,726
+both in liquid and solid state,
+
+580
+00:21:47,726 --> 00:21:48,846
+like 5% liquid,
+
+581
+00:21:48,846 --> 00:21:50,786
+95% solid,
+
+582
+00:21:51,026 --> 00:21:51,566
+I mean,
+
+583
+00:21:51,566 --> 00:21:52,706
+liquid and gas...
+
+584
+00:21:53,246 --> 00:21:54,796
+There would be no way to
+
+585
+00:21:54,796 --> 00:21:56,346
+go from the liquid and gas continuously.
+
+586
+00:21:57,566 --> 00:22:01,126
+There's always an abrupt change from...
+
+587
+00:22:01,126 --> 00:22:01,746
+Sorry,
+
+588
+00:22:01,746 --> 00:22:04,766
+from solid to liquid.
+
+589
+00:22:04,826 --> 00:22:04,946
+Right,
+
+590
+00:22:04,946 --> 00:22:05,126
+right.
+
+591
+00:22:05,126 --> 00:22:06,246
+I meant gas to liquid.
+
+592
+00:22:06,506 --> 00:22:07,226
+Gas to liquid.
+
+593
+00:22:07,226 --> 00:22:08,286
+So when you go around,
+
+594
+00:22:08,286 --> 00:22:11,186
+you've basically got like a fog of 5% liquid...
+
+595
+00:22:11,186 --> 00:22:11,326
+Yeah,
+
+596
+00:22:11,326 --> 00:22:11,446
+yeah,
+
+597
+00:22:11,446 --> 00:22:11,646
+yeah,
+
+598
+00:22:11,646 --> 00:22:11,806
+yeah,
+
+599
+00:22:11,806 --> 00:22:11,926
+yeah.
+
+600
+00:22:11,926 --> 00:22:12,426
+Right,
+
+601
+00:22:12,426 --> 00:22:12,906
+right.
+
+602
+00:22:13,466 --> 00:22:13,906
+There's...
+
+603
+00:22:13,906 --> 00:22:14,166
+Yeah,
+
+604
+00:22:14,166 --> 00:22:15,586
+there's little droplets in it.
+
+605
+00:22:16,186 --> 00:22:17,486
+You start down here.
+
+606
+00:22:20,846 --> 00:22:22,326
+And it's mostly gas,
+
+607
+00:22:22,326 --> 00:22:23,566
+but there are little droplets.
+
+608
+00:22:23,926 --> 00:22:26,966
+Little droplets are part of the gaseous phase.
+
+609
+00:22:27,426 --> 00:22:28,546
+Having little droplets.
+
+610
+00:22:28,626 --> 00:22:29,746
+If you look at it through a microscope,
+
+611
+00:22:29,746 --> 00:22:31,106
+you'll find little droplets in it.
+
+612
+00:22:31,126 --> 00:22:33,326
+But the little droplets come and go.
+
+613
+00:22:33,966 --> 00:22:35,166
+What happens to them?
+
+614
+00:22:35,166 --> 00:22:36,466
+They form and they evaporate.
+
+615
+00:22:36,486 --> 00:22:37,726
+They form and they evaporate.
+
+616
+00:22:37,726 --> 00:22:38,786
+They form and they evaporate.
+
+617
+00:22:39,546 --> 00:22:40,046
+Likewise,
+
+618
+00:22:40,046 --> 00:22:40,806
+up here,
+
+619
+00:22:40,806 --> 00:22:44,906
+sort of symmetrically,
+
+620
+00:22:45,086 --> 00:22:49,046
+the liquid will sometimes have formed little bubbles of gas.
+
+621
+00:22:49,726 --> 00:22:51,186
+There'll be little bubbles of gas,
+
+622
+00:22:51,186 --> 00:22:53,126
+but the little bubbles of gas will also...
+
+623
+00:22:53,666 --> 00:22:55,066
+They won't evaporate,
+
+624
+00:22:55,066 --> 00:22:57,426
+but the liquid will squeeze them out.
+
+625
+00:22:57,926 --> 00:22:59,886
+The liquid will squeeze them out,
+
+626
+00:22:59,906 --> 00:23:01,106
+and the little bubbles of gas will...
+
+627
+00:23:01,126 --> 00:23:02,016
+The little bubbles of gas
+
+628
+00:23:02,016 --> 00:23:02,906
+that accidentally form get squeezed out.
+
+629
+00:23:03,086 --> 00:23:05,666
+And so there is a kind of symmetry between these.
+
+630
+00:23:05,926 --> 00:23:07,066
+On one side,
+
+631
+00:23:07,066 --> 00:23:10,346
+you have gas with little droplets of liquid.
+
+632
+00:23:10,746 --> 00:23:11,926
+On the other side,
+
+633
+00:23:11,926 --> 00:23:13,886
+you have liquid with little bubbles of gas.
+
+634
+00:23:14,266 --> 00:23:15,466
+But as you said,
+
+635
+00:23:15,466 --> 00:23:16,826
+as you move around here,
+
+636
+00:23:18,026 --> 00:23:20,436
+the little droplets of liquid
+
+637
+00:23:20,436 --> 00:23:22,846
+begin to become more prominent.
+
+638
+00:23:23,865 --> 00:23:24,586
+They grow.
+
+639
+00:23:25,086 --> 00:23:28,786
+They are more numerous and maybe bigger.
+
+640
+00:23:29,346 --> 00:23:30,426
+And the little...
+
+641
+00:23:31,126 --> 00:23:34,246
+And the gaseous phase sort of
+
+642
+00:23:34,246 --> 00:23:37,366
+smoothly goes over to the liquid phase.
+
+643
+00:23:37,706 --> 00:23:38,966
+But right along here,
+
+644
+00:23:38,966 --> 00:23:39,726
+right along here,
+
+645
+00:23:39,806 --> 00:23:41,546
+you have sort of both liquid
+
+646
+00:23:41,546 --> 00:23:43,286
+and gas at the same time.
+
+647
+00:23:43,446 --> 00:23:44,806
+You have little lumps of liquid,
+
+648
+00:23:44,806 --> 00:23:45,986
+little lumps of gas,
+
+649
+00:23:45,986 --> 00:23:47,006
+and so forth.
+
+650
+00:23:47,326 --> 00:23:49,826
+Just in the same way that if
+
+651
+00:23:49,826 --> 00:23:52,326
+you looked at the magnet through a microscope,
+
+652
+00:23:52,606 --> 00:23:54,626
+you would discover islands of
+
+653
+00:23:54,626 --> 00:23:56,646
+downspin and islands of upspin,
+
+654
+00:23:56,746 --> 00:23:59,286
+equally numerous along here.
+
+655
+00:24:00,005 --> 00:24:00,806
+Down here,
+
+656
+00:24:00,806 --> 00:24:03,326
+you would find more islands of downspin.
+
+657
+00:24:03,766 --> 00:24:04,486
+Up here,
+
+658
+00:24:04,486 --> 00:24:06,666
+you would form more islands of upspin.
+
+659
+00:24:07,026 --> 00:24:07,946
+Right on here,
+
+660
+00:24:07,946 --> 00:24:09,686
+you would find an equal population,
+
+661
+00:24:09,886 --> 00:24:11,926
+and you would go smoothly from one to the other.
+
+662
+00:24:12,426 --> 00:24:14,806
+Quite different what happens when you go across here.
+
+663
+00:24:15,306 --> 00:24:16,626
+When you go across here,
+
+664
+00:24:16,626 --> 00:24:21,126
+you'll see mostly gas or mostly downspins
+
+665
+00:24:21,666 --> 00:24:23,266
+until you get right to here,
+
+666
+00:24:23,266 --> 00:24:26,566
+and then you jump to mostly upspins.
+
+667
+00:24:27,826 --> 00:24:29,266
+In the case of...
+
+668
+00:24:29,286 --> 00:24:30,106
+In the case of the magnet,
+
+669
+00:24:30,106 --> 00:24:33,126
+the y-axis is the magnetic field.
+
+670
+00:24:33,486 --> 00:24:35,226
+The external magnetic field.
+
+671
+00:24:35,466 --> 00:24:35,646
+Right.
+
+672
+00:24:35,646 --> 00:24:37,986
+And in the case of the liquid and gas,
+
+673
+00:24:37,986 --> 00:24:39,146
+what is the y-axis?
+
+674
+00:24:39,206 --> 00:24:40,786
+The y-axis is the chemical potential.
+
+675
+00:24:41,926 --> 00:24:42,486
+Remember,
+
+676
+00:24:42,486 --> 00:24:43,866
+what the chemical potential is,
+
+677
+00:24:43,866 --> 00:24:48,046
+is it's just a device for increasing the density.
+
+678
+00:24:49,326 --> 00:24:51,926
+It's a device for increasing the density.
+
+679
+00:24:52,306 --> 00:24:55,446
+The bigger or smaller you make the...
+
+680
+00:24:55,446 --> 00:24:56,626
+depends on your definition.
+
+681
+00:24:57,026 --> 00:24:59,186
+But pushing the chemical potential
+
+682
+00:24:59,286 --> 00:25:01,396
+one way or the other tends
+
+683
+00:25:01,396 --> 00:25:03,506
+to make it more or less dense.
+
+684
+00:25:03,966 --> 00:25:07,086
+Remember what the chemical potential was?
+
+685
+00:25:07,466 --> 00:25:08,486
+It was a...
+
+686
+00:25:08,486 --> 00:25:11,226
+I don't think you covered it in this class.
+
+687
+00:25:11,586 --> 00:25:11,746
+Oh,
+
+688
+00:25:11,746 --> 00:25:11,906
+I didn't.
+
+689
+00:25:12,526 --> 00:25:13,086
+Oh,
+
+690
+00:25:13,086 --> 00:25:15,726
+I didn't explain what the chemical potential is.
+
+691
+00:25:16,166 --> 00:25:16,626
+Oh,
+
+692
+00:25:16,626 --> 00:25:16,886
+okay,
+
+693
+00:25:16,886 --> 00:25:17,946
+why don't I do that right now?
+
+694
+00:25:18,146 --> 00:25:18,606
+Okay,
+
+695
+00:25:18,606 --> 00:25:18,926
+good.
+
+696
+00:25:20,726 --> 00:25:21,686
+My apologies.
+
+697
+00:25:21,826 --> 00:25:23,686
+Let's talk about chemical potential.
+
+698
+00:25:25,966 --> 00:25:26,646
+All right,
+
+699
+00:25:26,646 --> 00:25:28,206
+chemical potential is...
+
+700
+00:25:29,286 --> 00:25:34,626
+a tool for problems...
+
+701
+00:25:36,006 --> 00:25:37,366
+Let me erase the blackboard.
+
+702
+00:25:38,486 --> 00:25:39,446
+All right,
+
+703
+00:25:39,446 --> 00:25:43,506
+let's imagine we go back to the very beginning
+
+704
+00:25:44,046 --> 00:25:46,346
+where we have a bunch of identical boxes.
+
+705
+00:25:48,626 --> 00:25:51,006
+And remember what the game was.
+
+706
+00:25:51,446 --> 00:25:55,746
+We allowed energy to be interchanged between the boxes
+
+707
+00:25:56,206 --> 00:25:57,486
+by a weak interaction,
+
+708
+00:25:57,766 --> 00:25:59,086
+which allowed the boxes...
+
+709
+00:25:59,286 --> 00:26:01,746
+to exchange energy between them.
+
+710
+00:26:01,966 --> 00:26:03,666
+And then what we calculated
+
+711
+00:26:03,666 --> 00:26:05,366
+was the probability distribution
+
+712
+00:26:06,106 --> 00:26:07,426
+for a given box
+
+713
+00:26:08,806 --> 00:26:11,626
+given a total amount of energy.
+
+714
+00:26:11,906 --> 00:26:13,766
+In a situation in equilibrium
+
+715
+00:26:13,766 --> 00:26:15,026
+where they come to equilibrium
+
+716
+00:26:15,026 --> 00:26:16,686
+and where energy is going
+
+717
+00:26:16,686 --> 00:26:18,346
+back and forth at equal rates
+
+718
+00:26:18,346 --> 00:26:19,326
+so it's at equilibrium,
+
+719
+00:26:20,146 --> 00:26:23,706
+then there's some total energy
+
+720
+00:26:24,286 --> 00:26:25,626
+and given the total energy,
+
+721
+00:26:25,766 --> 00:26:27,806
+we can calculate the probability distribution
+
+722
+00:26:27,806 --> 00:26:31,166
+for a given box to have a...
+
+723
+00:26:32,486 --> 00:26:33,886
+Now when we did that,
+
+724
+00:26:33,986 --> 00:26:36,726
+we introduced the temperature
+
+725
+00:26:36,726 --> 00:26:37,966
+or the inverse temperature
+
+726
+00:26:37,966 --> 00:26:39,286
+as a Lagrange multiplier.
+
+727
+00:26:40,046 --> 00:26:43,666
+We said we want to maximize the entropy
+
+728
+00:26:43,666 --> 00:26:45,726
+subject to a constraint.
+
+729
+00:26:46,126 --> 00:26:47,246
+And what was the constraint?
+
+730
+00:26:47,466 --> 00:26:48,916
+The constraint was that the
+
+731
+00:26:48,916 --> 00:26:50,366
+total amount of energy was fixed.
+
+732
+00:26:50,746 --> 00:26:54,006
+So we said let's maximize entropy
+
+733
+00:26:54,806 --> 00:26:56,186
+given that
+
+734
+00:26:56,186 --> 00:27:00,006
+that E1 plus E2 plus E3
+
+735
+00:27:00,006 --> 00:27:01,026
+blah blah blah blah blah
+
+736
+00:27:01,866 --> 00:27:02,426
+No,
+
+737
+00:27:02,426 --> 00:27:03,266
+that's not right.
+
+738
+00:27:03,446 --> 00:27:04,426
+That's not what I want to write.
+
+739
+00:27:05,346 --> 00:27:06,526
+I want to write
+
+740
+00:27:09,445 --> 00:27:11,506
+that the number of boxes
+
+741
+00:27:12,326 --> 00:27:13,766
+with energy E1
+
+742
+00:27:13,766 --> 00:27:16,626
+plus the number of boxes with energy E2
+
+743
+00:27:17,186 --> 00:27:18,246
+and so forth
+
+744
+00:27:20,706 --> 00:27:23,666
+all add up to the total energy of the system.
+
+745
+00:27:26,286 --> 00:27:27,086
+E total.
+
+746
+00:27:29,386 --> 00:27:31,726
+The number of boxes with energy E1,
+
+747
+00:27:32,385 --> 00:27:35,266
+the total energy that they have is N times E1,
+
+748
+00:27:35,465 --> 00:27:36,845
+so let's call that N1,
+
+749
+00:27:36,845 --> 00:27:37,626
+N2,
+
+750
+00:27:37,626 --> 00:27:38,205
+and so forth.
+
+751
+00:27:38,406 --> 00:27:38,686
+I'm just...
+
+752
+00:27:38,686 --> 00:27:40,906
+Just go back to your early notes.
+
+753
+00:27:41,026 --> 00:27:41,906
+I just want to remind you.
+
+754
+00:27:42,046 --> 00:27:44,006
+And how did we implement this constraint?
+
+755
+00:27:44,546 --> 00:27:45,705
+This was a constraint.
+
+756
+00:27:45,906 --> 00:27:49,126
+We had a problem of minimizing or maximizing something.
+
+757
+00:27:49,466 --> 00:27:51,406
+We wanted to maximize the entropy.
+
+758
+00:27:53,106 --> 00:27:54,386
+I'm not going to go through it.
+
+759
+00:27:54,526 --> 00:27:56,166
+We wanted to maximize the entropy
+
+760
+00:27:56,186 --> 00:28:00,626
+given that the total energy is fixed.
+
+761
+00:28:02,086 --> 00:28:03,676
+The way to do that
+
+762
+00:28:03,676 --> 00:28:05,266
+was to introduce a Lagrange multiplier.
+
+763
+00:28:05,866 --> 00:28:07,726
+We introduced a Lagrange multiplier.
+
+764
+00:28:07,926 --> 00:28:09,136
+I can't remember now if it had
+
+765
+00:28:09,136 --> 00:28:10,346
+a plus sign or a minus sign,
+
+766
+00:28:10,586 --> 00:28:12,926
+but we called that Lagrange multiplier beta.
+
+767
+00:28:14,926 --> 00:28:17,726
+And that beta multiplied sum
+
+768
+00:28:17,726 --> 00:28:20,526
+N sub i E sub i.
+
+769
+00:28:26,226 --> 00:28:26,726
+Or...
+
+770
+00:28:26,726 --> 00:28:27,086
+Well,
+
+771
+00:28:27,086 --> 00:28:27,866
+that's good enough.
+
+772
+00:28:28,006 --> 00:28:28,586
+That's what we did.
+
+773
+00:28:28,726 --> 00:28:29,506
+We went through this.
+
+774
+00:28:29,706 --> 00:28:31,286
+We maximized the entropy.
+
+775
+00:28:32,426 --> 00:28:33,986
+And what do we find?
+
+776
+00:28:34,186 --> 00:28:37,246
+We found that the probability distribution...
+
+777
+00:28:37,246 --> 00:28:39,666
+The probability distribution for a given box
+
+778
+00:28:40,246 --> 00:28:44,226
+was E to the minus beta times the energy.
+
+779
+00:28:45,386 --> 00:28:47,266
+And if we want to normalize it,
+
+780
+00:28:47,346 --> 00:28:49,506
+we had to put one over the partition function there.
+
+781
+00:28:49,666 --> 00:28:52,166
+Now that's just back to first...
+
+782
+00:28:52,166 --> 00:28:53,706
+Back to first lecture or
+
+783
+00:28:53,706 --> 00:28:55,246
+second lecture or whatever it was.
+
+784
+00:28:56,186 --> 00:28:59,406
+Now supposing that it is also possible
+
+785
+00:29:00,186 --> 00:29:03,186
+not just for energy to be exchanged between these boxes,
+
+786
+00:29:03,326 --> 00:29:05,706
+but particles to be exchanged.
+
+787
+00:29:07,306 --> 00:29:08,146
+Helium atoms,
+
+788
+00:29:08,146 --> 00:29:09,006
+if this was helium,
+
+789
+00:29:09,006 --> 00:29:09,666
+for example,
+
+790
+00:29:09,686 --> 00:29:10,826
+or whatever it happens to be.
+
+791
+00:29:10,906 --> 00:29:11,726
+Or water molecules,
+
+792
+00:29:11,726 --> 00:29:12,346
+if it's water.
+
+793
+00:29:12,586 --> 00:29:13,606
+In other words,
+
+794
+00:29:13,606 --> 00:29:15,706
+there's little thin pipes here.
+
+795
+00:29:18,706 --> 00:29:19,926
+Little thin pipes.
+
+796
+00:29:20,946 --> 00:29:24,206
+And those little thin pipes allow water or fluid
+
+797
+00:29:24,206 --> 00:29:26,126
+to be exchanged back and forth
+
+798
+00:29:26,186 --> 00:29:32,426
+then we will not know with absolute certainty
+
+799
+00:29:32,426 --> 00:29:35,326
+what the number of particles in each box was.
+
+800
+00:29:35,946 --> 00:29:38,366
+Remember that we've assumed previously
+
+801
+00:29:38,366 --> 00:29:41,186
+that each box had a given number of particles.
+
+802
+00:29:41,346 --> 00:29:42,936
+But now we don't know what the
+
+803
+00:29:42,936 --> 00:29:44,526
+number of particles is in the box.
+
+804
+00:29:44,766 --> 00:29:47,166
+It also has a probability distribution.
+
+805
+00:29:48,666 --> 00:29:50,606
+It also has a probability distribution.
+
+806
+00:29:51,266 --> 00:29:54,206
+But here now is what we will have to do.
+
+807
+00:29:54,846 --> 00:29:56,166
+We will have to add...
+
+808
+00:29:56,186 --> 00:29:57,786
+We had two Lagrange multipliers.
+
+809
+00:29:58,126 --> 00:29:59,806
+We'll have to...
+
+810
+00:29:59,806 --> 00:30:03,666
+The one Lagrange multiplier is for the total energy.
+
+811
+00:30:04,306 --> 00:30:07,106
+And so that's summation of n sub i,
+
+812
+00:30:07,106 --> 00:30:08,146
+e sub i.
+
+813
+00:30:09,606 --> 00:30:10,166
+Incidentally,
+
+814
+00:30:10,166 --> 00:30:11,206
+the n sub i's,
+
+815
+00:30:11,206 --> 00:30:11,686
+if you remember,
+
+816
+00:30:12,486 --> 00:30:15,326
+were proportional to the probability...
+
+817
+00:30:15,326 --> 00:30:16,586
+What was i in this formula?
+
+818
+00:30:16,846 --> 00:30:17,366
+Anybody remember?
+
+819
+00:30:20,026 --> 00:30:21,146
+Which box?
+
+820
+00:30:22,806 --> 00:30:23,226
+No,
+
+821
+00:30:23,226 --> 00:30:24,066
+not which box.
+
+822
+00:30:24,246 --> 00:30:25,306
+Not which box.
+
+823
+00:30:26,846 --> 00:30:27,366
+Okay,
+
+824
+00:30:27,366 --> 00:30:27,806
+let me...
+
+825
+00:30:27,806 --> 00:30:30,586
+I'll remind you because you probably have forgotten by now.
+
+826
+00:30:30,686 --> 00:30:31,126
+So have I.
+
+827
+00:30:31,686 --> 00:30:32,206
+Okay,
+
+828
+00:30:32,206 --> 00:30:34,886
+what n sub i and e sub i were,
+
+829
+00:30:35,046 --> 00:30:37,066
+each box can be in any
+
+830
+00:30:37,066 --> 00:30:39,086
+one of a whole bunch of states.
+
+831
+00:30:39,766 --> 00:30:41,046
+Here are all the states.
+
+832
+00:30:41,526 --> 00:30:42,046
+Energy.
+
+833
+00:30:43,326 --> 00:30:44,426
+Here's the first state,
+
+834
+00:30:44,426 --> 00:30:45,086
+the second state,
+
+835
+00:30:45,166 --> 00:30:45,726
+the third state,
+
+836
+00:30:45,726 --> 00:30:46,326
+the fourth state,
+
+837
+00:30:46,326 --> 00:30:46,846
+and so forth.
+
+838
+00:30:47,106 --> 00:30:49,246
+The states are labeled by i.
+
+839
+00:30:50,666 --> 00:30:53,426
+n sub i is the number of boxes
+
+840
+00:30:53,426 --> 00:30:57,346
+that occupy the i-th state.
+
+841
+00:30:57,906 --> 00:31:00,136
+The number of boxes in which you
+
+842
+00:31:00,136 --> 00:31:02,366
+will find the system in the i-th state.
+
+843
+00:31:03,826 --> 00:31:07,126
+n sub i times the energy at the i-th state,
+
+844
+00:31:08,485 --> 00:31:11,766
+if I sum it over all i,
+
+845
+00:31:13,966 --> 00:31:15,426
+that gives me the total energy.
+
+846
+00:31:16,746 --> 00:31:18,866
+It's the number of boxes in the first state
+
+847
+00:31:18,866 --> 00:31:20,266
+times the energy of the first state
+
+848
+00:31:20,266 --> 00:31:22,106
+plus the number of boxes in the second state
+
+849
+00:31:22,106 --> 00:31:23,406
+times the energy of the second state.
+
+850
+00:31:23,406 --> 00:31:24,686
+And so forth and so on.
+
+851
+00:31:24,966 --> 00:31:26,846
+This has to equal the total energy.
+
+852
+00:31:30,586 --> 00:31:31,806
+That's the first thing.
+
+853
+00:31:32,226 --> 00:31:32,506
+Now,
+
+854
+00:31:32,506 --> 00:31:34,626
+do you remember if there were n boxes here,
+
+855
+00:31:34,946 --> 00:31:37,076
+do you remember the formula that
+
+856
+00:31:37,076 --> 00:31:39,206
+n sub i over total n
+
+857
+00:31:39,206 --> 00:31:42,446
+is equal to the probability of the i-th state?
+
+858
+00:31:44,126 --> 00:31:45,186
+In other words,
+
+859
+00:31:45,186 --> 00:31:47,926
+the probability that any given box
+
+860
+00:31:47,926 --> 00:31:50,666
+is in the i-th state is just proportional
+
+861
+00:31:50,666 --> 00:31:53,386
+to the fraction of...
+
+862
+00:31:53,406 --> 00:31:56,586
+total number of boxes that are occupying the i-th state.
+
+863
+00:31:56,746 --> 00:31:58,066
+And we call that the probability.
+
+864
+00:31:58,946 --> 00:32:00,605
+So we could divide this formula...
+
+865
+00:32:00,926 --> 00:32:02,006
+I'll just go through it with you again.
+
+866
+00:32:02,146 --> 00:32:03,826
+We could divide this formula by n,
+
+867
+00:32:05,266 --> 00:32:07,446
+e total divided by n.
+
+868
+00:32:07,606 --> 00:32:09,066
+What's e total divided by n?
+
+869
+00:32:10,266 --> 00:32:12,486
+It's the average energy in any given box.
+
+870
+00:32:12,966 --> 00:32:14,546
+So we'll just call this e.
+
+871
+00:32:14,906 --> 00:32:17,546
+The average energy in a particular box.
+
+872
+00:32:17,846 --> 00:32:20,386
+And this becomes summation over i,
+
+873
+00:32:20,686 --> 00:32:22,326
+p of i,
+
+874
+00:32:23,406 --> 00:32:23,906
+e i,
+
+875
+00:32:26,706 --> 00:32:29,366
+equals the energy.
+
+876
+00:32:31,066 --> 00:32:32,526
+This was a constraint.
+
+877
+00:32:32,726 --> 00:32:33,726
+This was a constraint.
+
+878
+00:32:34,166 --> 00:32:36,666
+And what we want to
+
+879
+00:32:36,666 --> 00:32:39,166
+do is to maximize the entropy.
+
+880
+00:32:40,766 --> 00:32:41,886
+Maximize the entropy.
+
+881
+00:32:42,106 --> 00:32:43,186
+Remember what s is?
+
+882
+00:32:43,186 --> 00:32:43,646
+What's s?
+
+883
+00:32:46,386 --> 00:32:48,146
+Minus summation over i,
+
+884
+00:32:48,146 --> 00:32:49,566
+p of i,
+
+885
+00:32:49,566 --> 00:32:51,146
+log p of i.
+
+886
+00:32:57,946 --> 00:32:59,226
+That was the entropy.
+
+887
+00:32:59,466 --> 00:33:01,386
+And we want to maximize it,
+
+888
+00:33:01,386 --> 00:33:02,686
+subject to a constraint.
+
+889
+00:33:02,966 --> 00:33:04,656
+And the way you do that
+
+890
+00:33:04,656 --> 00:33:06,346
+is to introduce a Lagrange multiplier beta.
+
+891
+00:33:07,226 --> 00:33:08,506
+Forget this over here.
+
+892
+00:33:09,066 --> 00:33:10,906
+Introduce a Lagrange multiplier beta.
+
+893
+00:33:14,046 --> 00:33:19,766
+And then maximize this expression with respect to p i.
+
+894
+00:33:19,766 --> 00:33:22,066
+The p i's are the variables.
+
+895
+00:33:22,226 --> 00:33:23,576
+We're trying to find out what
+
+896
+00:33:23,576 --> 00:33:24,926
+the probability of the i state is.
+
+897
+00:33:25,186 --> 00:33:26,946
+We want to maximize the entropy,
+
+898
+00:33:28,246 --> 00:33:30,326
+subject to the constraint of a given energy.
+
+899
+00:33:30,626 --> 00:33:31,566
+And if you remember,
+
+900
+00:33:31,566 --> 00:33:33,066
+we went through it.
+
+901
+00:33:33,206 --> 00:33:37,386
+It gave us that p i is equal to what?
+
+902
+00:33:40,526 --> 00:33:43,786
+e to the minus beta e sub i,
+
+903
+00:33:45,005 --> 00:33:46,266
+divided by z.
+
+904
+00:33:46,466 --> 00:33:47,986
+Z is just there to make
+
+905
+00:33:47,986 --> 00:33:49,506
+the total probability add up to one.
+
+906
+00:33:51,306 --> 00:33:53,466
+That's the probability of being in the i state.
+
+907
+00:33:53,646 --> 00:33:55,666
+Now we've done something new.
+
+908
+00:33:55,746 --> 00:33:57,926
+We've allowed particles to jump back and forth.
+
+909
+00:34:00,066 --> 00:34:02,146
+We've allowed particles to jump back and forth.
+
+910
+00:34:04,506 --> 00:34:06,546
+But the total number of
+
+911
+00:34:06,546 --> 00:34:08,585
+particles is not allowed to change.
+
+912
+00:34:09,186 --> 00:34:10,505
+The total number of particles,
+
+913
+00:34:10,505 --> 00:34:11,085
+we'll assume,
+
+914
+00:34:11,085 --> 00:34:11,985
+is conserved.
+
+915
+00:34:12,025 --> 00:34:13,656
+The total number of helium atoms
+
+916
+00:34:13,656 --> 00:34:15,286
+or water molecules or whatever it is,
+
+917
+00:34:15,286 --> 00:34:16,525
+is conserved.
+
+918
+00:34:16,706 --> 00:34:18,846
+And so we can write another constraint.
+
+919
+00:34:18,846 --> 00:34:26,676
+The other constraint is that the
+
+920
+00:34:26,676 --> 00:34:34,505
+number of particles in the first box,
+
+921
+00:34:34,686 --> 00:34:35,466
+let's see,
+
+922
+00:34:35,466 --> 00:34:37,826
+the number of particles in the first box,
+
+923
+00:34:38,826 --> 00:34:40,306
+and one plus the number
+
+924
+00:34:40,306 --> 00:34:41,786
+of particles in the second box,
+
+925
+00:34:41,906 --> 00:34:43,706
+plus the number of particles in the third box,
+
+926
+00:34:43,706 --> 00:34:44,505
+and so forth,
+
+927
+00:34:44,626 --> 00:34:45,565
+not plus,
+
+928
+00:34:45,746 --> 00:34:47,275
+all have to add up
+
+929
+00:34:47,275 --> 00:34:48,806
+to the total number of particles.
+
+930
+00:34:50,565 --> 00:34:50,946
+n1,
+
+931
+00:34:50,946 --> 00:34:51,326
+n2,
+
+932
+00:34:51,326 --> 00:34:52,045
+and n3,
+
+933
+00:34:52,045 --> 00:34:52,666
+and so forth,
+
+934
+00:34:52,666 --> 00:34:53,426
+they can change,
+
+935
+00:34:54,085 --> 00:34:57,206
+but the total number of particles has to remain constant.
+
+936
+00:34:57,426 --> 00:34:57,526
+Yeah?
+
+937
+00:34:58,106 --> 00:34:58,766
+I just wondered,
+
+938
+00:34:58,766 --> 00:35:00,166
+when you did this the first time,
+
+939
+00:35:00,166 --> 00:35:01,126
+you had two constraints.
+
+940
+00:35:01,706 --> 00:35:02,086
+Yes,
+
+941
+00:35:02,086 --> 00:35:02,266
+yes,
+
+942
+00:35:02,266 --> 00:35:02,486
+yes.
+
+943
+00:35:02,666 --> 00:35:03,306
+There was a total...
+
+944
+00:35:03,706 --> 00:35:04,086
+Yeah,
+
+945
+00:35:04,086 --> 00:35:05,706
+that wasn't the number of particles.
+
+946
+00:35:05,806 --> 00:35:06,906
+It was the number of boxes.
+
+947
+00:35:07,226 --> 00:35:07,606
+Right.
+
+948
+00:35:07,606 --> 00:35:08,206
+Yeah,
+
+949
+00:35:08,206 --> 00:35:08,606
+you're right.
+
+950
+00:35:08,846 --> 00:35:10,846
+There actually were two constraints.
+
+951
+00:35:10,966 --> 00:35:12,906
+The total number of boxes added up to n.
+
+952
+00:35:14,626 --> 00:35:15,546
+But that's right.
+
+953
+00:35:16,026 --> 00:35:16,526
+All right.
+
+954
+00:35:16,826 --> 00:35:18,366
+I had hoped to...
+
+955
+00:35:18,846 --> 00:35:20,526
+to get around that.
+
+956
+00:35:21,066 --> 00:35:21,846
+It's there.
+
+957
+00:35:22,106 --> 00:35:22,846
+All right.
+
+958
+00:35:22,886 --> 00:35:26,086
+So there's another Lagrange multiplier that has to be added,
+
+959
+00:35:26,366 --> 00:35:28,106
+and that Lagrange multiplier,
+
+960
+00:35:28,106 --> 00:35:31,866
+instead of multiplying the energy,
+
+961
+00:35:33,286 --> 00:35:36,126
+multiplies the number of particles in each box.
+
+962
+00:35:36,546 --> 00:35:38,426
+I'll tell you what the net result is.
+
+963
+00:35:38,586 --> 00:35:40,626
+The net result is...
+
+964
+00:35:40,626 --> 00:35:42,686
+We can now think of the probability
+
+965
+00:35:44,406 --> 00:35:46,006
+as a joint probability
+
+966
+00:35:46,626 --> 00:35:48,586
+that the system is in the i-th state
+
+967
+00:35:48,846 --> 00:35:50,506
+and it has n particles.
+
+968
+00:35:52,346 --> 00:35:54,096
+It's not just a question now
+
+969
+00:35:54,096 --> 00:35:55,846
+of which quantum state the system is,
+
+970
+00:35:55,946 --> 00:35:58,146
+but also how many particles it has in it.
+
+971
+00:35:59,286 --> 00:36:01,766
+So there's a probability which is a function
+
+972
+00:36:03,166 --> 00:36:05,686
+of the number of particles in the box
+
+973
+00:36:05,686 --> 00:36:07,686
+and also which of the many
+
+974
+00:36:07,686 --> 00:36:09,686
+quantum states the box is in
+
+975
+00:36:09,686 --> 00:36:10,786
+for that many particles.
+
+976
+00:36:11,246 --> 00:36:12,776
+And the answer that you
+
+977
+00:36:12,776 --> 00:36:14,306
+get by the same exact analysis
+
+978
+00:36:14,966 --> 00:36:17,706
+is another term up in here,
+
+979
+00:36:17,706 --> 00:36:23,246
+which is minus beta mu
+
+980
+00:36:25,865 --> 00:36:29,405
+times the number of particles in the box.
+
+981
+00:36:32,986 --> 00:36:34,826
+This beta times mu
+
+982
+00:36:34,826 --> 00:36:37,626
+is a somewhat artificial decomposition.
+
+983
+00:36:38,466 --> 00:36:40,606
+You could have just called beta and mu
+
+984
+00:36:40,606 --> 00:36:42,506
+the original Lagrange multiplier.
+
+985
+00:36:43,306 --> 00:36:44,906
+It's beta times mu,
+
+986
+00:36:44,906 --> 00:36:46,206
+which is the Lagrange multiplier.
+
+987
+00:36:46,766 --> 00:36:48,726
+It's just a historical definition
+
+988
+00:36:50,005 --> 00:36:52,966
+that this wasn't called a single thing,
+
+989
+00:36:53,146 --> 00:36:54,026
+beta times mu,
+
+990
+00:36:55,185 --> 00:36:56,566
+but that's the way it is.
+
+991
+00:36:56,786 --> 00:36:57,666
+That's the way it is.
+
+992
+00:36:59,146 --> 00:37:02,166
+What does mu do for you?
+
+993
+00:37:02,226 --> 00:37:03,986
+What does tuning mu do for you?
+
+994
+00:37:04,066 --> 00:37:04,106
+Well,
+
+995
+00:37:04,106 --> 00:37:04,666
+first of all,
+
+996
+00:37:04,666 --> 00:37:06,506
+mu is very much like a temperature.
+
+997
+00:37:06,986 --> 00:37:08,306
+Or beta times mu,
+
+998
+00:37:09,646 --> 00:37:11,026
+this combination here,
+
+999
+00:37:11,226 --> 00:37:12,466
+is like a temperature,
+
+1000
+00:37:12,686 --> 00:37:14,146
+but what does temperature do for you?
+
+1001
+00:37:14,206 --> 00:37:14,626
+Forget this.
+
+1002
+00:37:14,626 --> 00:37:15,166
+What does temperature,
+
+1003
+00:37:15,346 --> 00:37:16,426
+what does changing temperature do?
+
+1004
+00:37:18,066 --> 00:37:20,106
+It allows you to tune the energy.
+
+1005
+00:37:21,846 --> 00:37:23,366
+By changing the temperature,
+
+1006
+00:37:23,526 --> 00:37:25,466
+if you know you have a given amount of energy,
+
+1007
+00:37:27,046 --> 00:37:29,386
+the way you would deal with this
+
+1008
+00:37:29,386 --> 00:37:31,946
+is you would change beta
+
+1009
+00:37:32,806 --> 00:37:36,206
+until the average energy is equal to the average energy
+
+1010
+00:37:36,206 --> 00:37:37,346
+that you think is in the box.
+
+1011
+00:37:37,766 --> 00:37:39,766
+So beta is the tuning device.
+
+1012
+00:37:40,146 --> 00:37:41,826
+The temperature is the tuning device,
+
+1013
+00:37:42,106 --> 00:37:44,006
+the knob that you change,
+
+1014
+00:37:44,006 --> 00:37:46,146
+to change the energy in the box.
+
+1015
+00:37:47,946 --> 00:37:50,586
+Mu is the knob that you change
+
+1016
+00:37:50,586 --> 00:37:53,126
+to change the number of particles in the box.
+
+1017
+00:37:56,866 --> 00:38:00,366
+Mu is the knob that you change
+
+1018
+00:38:00,366 --> 00:38:01,706
+if you want to change the
+
+1019
+00:38:01,706 --> 00:38:03,046
+number of particles in the box.
+
+1020
+00:38:03,146 --> 00:38:03,726
+And why is that?
+
+1021
+00:38:03,866 --> 00:38:03,986
+Well,
+
+1022
+00:38:03,986 --> 00:38:05,066
+you can see if the probability,
+
+1023
+00:38:06,006 --> 00:38:07,906
+let's forget this factor over here,
+
+1024
+00:38:08,066 --> 00:38:10,626
+if the probability goes as e
+
+1025
+00:38:10,626 --> 00:38:13,186
+to the minus beta mu times n,
+
+1026
+00:38:14,006 --> 00:38:16,286
+then the average number of particles in the box
+
+1027
+00:38:16,286 --> 00:38:18,446
+is going to be controlled by this mu here.
+
+1028
+00:38:19,686 --> 00:38:20,206
+Let's see,
+
+1029
+00:38:20,206 --> 00:38:21,246
+the smaller mu is,
+
+1030
+00:38:21,386 --> 00:38:23,326
+the more particles will be in the box,
+
+1031
+00:38:23,366 --> 00:38:24,026
+or whatever it is.
+
+1032
+00:38:24,566 --> 00:38:27,226
+So chemical potential is just a device
+
+1033
+00:38:28,546 --> 00:38:31,266
+for tuning the number of particles in a box
+
+1034
+00:38:31,866 --> 00:38:33,136
+in a situation where the
+
+1035
+00:38:33,136 --> 00:38:34,406
+number of particles in the box
+
+1036
+00:38:34,406 --> 00:38:36,586
+can fluctuate or change in one way or another.
+
+1037
+00:38:37,726 --> 00:38:38,326
+All right,
+
+1038
+00:38:38,326 --> 00:38:39,276
+I didn't want to spend
+
+1039
+00:38:39,276 --> 00:38:40,226
+a lot of time on that,
+
+1040
+00:38:40,346 --> 00:38:42,126
+but let's come back to here now.
+
+1041
+00:38:42,126 --> 00:38:45,586
+How do you change mathematically,
+
+1042
+00:38:46,286 --> 00:38:49,466
+in terms of the statistical mechanical partition function,
+
+1043
+00:38:50,846 --> 00:38:53,826
+in terms of the statistical mechanical partition function,
+
+1044
+00:38:54,046 --> 00:38:55,946
+how do you change,
+
+1045
+00:38:56,046 --> 00:38:56,186
+oh,
+
+1046
+00:38:56,186 --> 00:38:56,886
+incidentally,
+
+1047
+00:38:56,886 --> 00:38:58,706
+the partition function z,
+
+1048
+00:38:59,026 --> 00:39:01,486
+let's think about the partition function z.
+
+1049
+00:39:02,666 --> 00:39:05,326
+The partition function z satisfies
+
+1050
+00:39:06,445 --> 00:39:08,446
+z is equal to the sum
+
+1051
+00:39:09,346 --> 00:39:11,526
+over all of the states of the system
+
+1052
+00:39:11,526 --> 00:39:12,106
+in the box.
+
+1053
+00:39:12,126 --> 00:39:14,166
+And the number of particles in the box,
+
+1054
+00:39:14,866 --> 00:39:16,506
+the number of particles in the box
+
+1055
+00:39:16,506 --> 00:39:19,106
+and the various states that the particles can be in,
+
+1056
+00:39:19,186 --> 00:39:22,886
+of e to the minus beta e sub i
+
+1057
+00:39:23,686 --> 00:39:24,906
+minus beta mu
+
+1058
+00:39:25,626 --> 00:39:27,446
+times the number of particles in the box.
+
+1059
+00:39:28,786 --> 00:39:30,286
+That's just to make sure
+
+1060
+00:39:30,286 --> 00:39:32,706
+that the total probability adds up to one.
+
+1061
+00:39:33,446 --> 00:39:34,306
+So that's z.
+
+1062
+00:39:35,246 --> 00:39:37,026
+And notice it has a new thing in it.
+
+1063
+00:39:37,126 --> 00:39:39,506
+It has a thing which allows you to control
+
+1064
+00:39:39,506 --> 00:39:40,846
+the number of particles.
+
+1065
+00:39:42,026 --> 00:39:44,326
+Is the capital N in that formula
+
+1066
+00:39:44,326 --> 00:39:46,246
+supposed to be N sub i?
+
+1067
+00:39:46,526 --> 00:39:47,046
+No.
+
+1068
+00:39:48,066 --> 00:39:48,626
+No.
+
+1069
+00:39:48,806 --> 00:39:50,826
+It's the number of particles in...
+
+1070
+00:39:52,106 --> 00:39:55,046
+The average number of particles in all the boxes.
+
+1071
+00:39:55,186 --> 00:39:55,366
+The average number of particles in all the boxes.
+
+1072
+00:39:55,366 --> 00:39:55,546
+That's right.
+
+1073
+00:39:55,746 --> 00:39:57,826
+The average number of particles in all the boxes.
+
+1074
+00:39:58,566 --> 00:39:59,286
+All right.
+
+1075
+00:39:59,326 --> 00:40:00,146
+So this is a device.
+
+1076
+00:40:00,306 --> 00:40:01,406
+And how do you choose mu?
+
+1077
+00:40:02,026 --> 00:40:04,486
+You choose mu by calculating
+
+1078
+00:40:04,486 --> 00:40:06,026
+the average number of particles
+
+1079
+00:40:06,666 --> 00:40:08,346
+from this probability distribution
+
+1080
+00:40:09,066 --> 00:40:10,826
+and then set it equal to mu.
+
+1081
+00:40:10,846 --> 00:40:11,926
+And that's equal to what you think
+
+1082
+00:40:11,926 --> 00:40:13,286
+the average number of particles is,
+
+1083
+00:40:13,386 --> 00:40:14,366
+whatever it happens to be.
+
+1084
+00:40:14,806 --> 00:40:16,866
+By changing mu...
+
+1085
+00:40:18,006 --> 00:40:21,926
+Isn't N the possible number of particles in the box?
+
+1086
+00:40:22,026 --> 00:40:23,986
+Because N can be anywhere...
+
+1087
+00:40:23,986 --> 00:40:24,626
+In this formula,
+
+1088
+00:40:24,806 --> 00:40:27,166
+it's the possible number of particles in the box.
+
+1089
+00:40:28,246 --> 00:40:28,826
+That's right.
+
+1090
+00:40:29,006 --> 00:40:30,366
+And you sum over it.
+
+1091
+00:40:30,586 --> 00:40:32,986
+But you can also use this now
+
+1092
+00:40:32,986 --> 00:40:35,246
+to calculate the average number of particles.
+
+1093
+00:40:35,386 --> 00:40:36,926
+How would you calculate the average number?
+
+1094
+00:40:37,186 --> 00:40:39,166
+You take the probability distribution,
+
+1095
+00:40:39,166 --> 00:40:41,826
+multiply it by n and sum.
+
+1096
+00:40:41,826 --> 00:40:43,536
+So you also have a
+
+1097
+00:40:43,536 --> 00:40:45,246
+formula for the average number of
+
+1098
+00:40:45,246 --> 00:40:46,206
+particles in the box.
+
+1099
+00:40:46,206 --> 00:40:51,166
+So if you know there are altogether n total particles
+
+1100
+00:40:51,166 --> 00:40:54,186
+all together divided up among all the boxes,
+
+1101
+00:40:54,186 --> 00:40:56,166
+then you think you know what how
+
+1102
+00:40:56,166 --> 00:40:57,906
+many particles should be in each box,
+
+1103
+00:40:57,906 --> 00:41:01,186
+you simply tune mu until you get that
+
+1104
+00:41:01,186 --> 00:41:01,746
+many particles.
+
+1105
+00:41:01,746 --> 00:41:02,286
+Yeah,
+
+1106
+00:41:02,286 --> 00:41:05,316
+but obviously tuning the number
+
+1107
+00:41:05,316 --> 00:41:08,346
+of particles in a given box
+
+1108
+00:41:08,346 --> 00:41:10,286
+of a given size is
+
+1109
+00:41:10,286 --> 00:41:12,226
+the same as changing the density.
+
+1110
+00:41:12,226 --> 00:41:15,646
+You can think about
+
+1111
+00:41:15,646 --> 00:41:16,286
+how to do that,
+
+1112
+00:41:16,286 --> 00:41:17,386
+you just divide by the volume.
+
+1113
+00:41:17,386 --> 00:41:19,965
+And so the chemical potential is
+
+1114
+00:41:20,466 --> 00:41:23,116
+a trick in the partition function
+
+1115
+00:41:23,116 --> 00:41:25,766
+for changing the density of the gas.
+
+1116
+00:41:25,766 --> 00:41:28,666
+What is
+
+1117
+00:41:28,666 --> 00:41:28,766
+that?
+
+1118
+00:41:28,766 --> 00:41:31,086
+Mu is the chemical potential.
+
+1119
+00:41:31,086 --> 00:41:34,206
+And I have a strong feeling that my
+
+1120
+00:41:34,206 --> 00:41:35,886
+definition of mu differs from everybody
+
+1121
+00:41:35,886 --> 00:41:37,566
+else's on earth by a sign.
+
+1122
+00:41:38,026 --> 00:41:38,326
+I'm sorry.
+
+1123
+00:41:38,346 --> 00:41:40,106
+I discovered that sign the other day.
+
+1124
+00:41:40,106 --> 00:41:41,886
+I've been going out through my entire
+
+1125
+00:41:41,886 --> 00:41:43,846
+life with the chemical potential having
+
+1126
+00:41:43,846 --> 00:41:45,806
+the sign that I've given it here.
+
+1127
+00:41:45,806 --> 00:41:46,146
+I'm not
+
+1128
+00:41:46,146 --> 00:41:47,246
+going to try to correct it now.
+
+1129
+00:41:47,246 --> 00:41:48,546
+Whatever it is,
+
+1130
+00:41:48,546 --> 00:41:51,366
+it is the thing which allows you
+
+1131
+00:41:51,366 --> 00:41:54,046
+to vary the density.
+
+1132
+00:41:54,046 --> 00:41:58,906
+Now what is the density in this lattice fluid?
+
+1133
+00:41:58,906 --> 00:41:59,646
+The
+
+1134
+00:41:59,646 --> 00:42:01,706
+density in the lattice fluid is,
+
+1135
+00:42:01,706 --> 00:42:03,106
+roughly speaking,
+
+1136
+00:42:03,106 --> 00:42:05,326
+the number of up spins divided
+
+1137
+00:42:05,326 --> 00:42:06,146
+by the volume.
+
+1138
+00:42:06,146 --> 00:42:07,946
+Capital N,
+
+1139
+00:42:08,346 --> 00:42:11,246
+becomes the number of up spins here.
+
+1140
+00:42:11,246 --> 00:42:12,626
+A down spin is empty.
+
+1141
+00:42:12,626 --> 00:42:13,426
+An up spin
+
+1142
+00:42:14,166 --> 00:42:15,346
+represents a molecule.
+
+1143
+00:42:15,346 --> 00:42:20,686
+So capital N is just the number of up spins.
+
+1144
+00:42:20,686 --> 00:42:21,406
+How do you
+
+1145
+00:42:21,406 --> 00:42:22,886
+change the number of up spins?
+
+1146
+00:42:22,886 --> 00:42:26,566
+How do you tune the system from,
+
+1147
+00:42:26,566 --> 00:42:27,526
+essentially,
+
+1148
+00:42:27,526 --> 00:42:27,786
+no
+
+1149
+00:42:27,786 --> 00:42:28,326
+up spins,
+
+1150
+00:42:28,326 --> 00:42:31,586
+and bias it towards lots of up spins?
+
+1151
+00:42:31,586 --> 00:42:33,346
+You change H,
+
+1152
+00:42:33,346 --> 00:42:34,866
+right?
+
+1153
+00:42:34,866 --> 00:42:36,566
+When H is down,
+
+1154
+00:42:36,726 --> 00:42:38,326
+it pushes all the spins down,
+
+1155
+00:42:38,326 --> 00:42:38,326
+and when H goes up,
+
+1156
+00:42:38,326 --> 00:42:38,326
+it pushes all the so-called up spins,
+
+1157
+00:42:38,326 --> 00:42:39,646
+Now no matter what the temperature is,
+
+1158
+00:42:39,646 --> 00:42:40,886
+if H is down,
+
+1159
+00:42:40,886 --> 00:42:45,046
+it will bias the system toward few upspins.
+
+1160
+00:42:45,366 --> 00:42:49,046
+And if you want to change the density of upspins,
+
+1161
+00:42:49,046 --> 00:42:51,946
+what you do is move along this H-axis.
+
+1162
+00:42:52,226 --> 00:42:55,966
+So the H-axis is closely connected.
+
+1163
+00:42:55,966 --> 00:42:58,486
+It's essentially the same as the chemical potential.
+
+1164
+00:42:59,686 --> 00:43:02,396
+And it's the thing that you tune
+
+1165
+00:43:02,396 --> 00:43:05,106
+to change the density of the gas,
+
+1166
+00:43:05,106 --> 00:43:07,346
+the density of the fluid.
+
+1167
+00:43:07,346 --> 00:43:08,786
+Quick question.
+
+1168
+00:43:08,786 --> 00:43:12,316
+The terminology is one Lagrange multiplier is beta
+
+1169
+00:43:12,316 --> 00:43:15,846
+and the other Lagrange multiplier is beta mu?
+
+1170
+00:43:16,246 --> 00:43:16,446
+Well,
+
+1171
+00:43:16,446 --> 00:43:16,806
+yeah,
+
+1172
+00:43:16,806 --> 00:43:18,286
+it's a historical fact.
+
+1173
+00:43:18,286 --> 00:43:20,066
+We could have just called it lambda.
+
+1174
+00:43:21,546 --> 00:43:22,146
+Okay,
+
+1175
+00:43:22,146 --> 00:43:23,726
+so it's different than beta.
+
+1176
+00:43:23,946 --> 00:43:25,086
+It's different than beta.
+
+1177
+00:43:25,086 --> 00:43:28,366
+And historically,
+
+1178
+00:43:28,366 --> 00:43:31,486
+lambda was set equal to beta times mu.
+
+1179
+00:43:31,926 --> 00:43:33,506
+A little confusing there.
+
+1180
+00:43:33,666 --> 00:43:33,906
+Yeah,
+
+1181
+00:43:33,906 --> 00:43:34,166
+I know.
+
+1182
+00:43:34,306 --> 00:43:34,906
+Great.
+
+1183
+00:43:35,106 --> 00:43:36,226
+All right.
+
+1184
+00:43:37,346 --> 00:43:38,226
+So we could have just called it lambda.
+
+1185
+00:43:40,326 --> 00:43:41,486
+But that wouldn't be,
+
+1186
+00:43:41,486 --> 00:43:43,206
+that would be ahistorical and it
+
+1187
+00:43:43,206 --> 00:43:44,926
+would be different than the standard terminology.
+
+1188
+00:43:45,406 --> 00:43:47,426
+So the standard terminology is
+
+1189
+00:43:47,426 --> 00:43:49,446
+to replace lambda by beta mu.
+
+1190
+00:43:49,826 --> 00:43:52,106
+But think of beta mu as itself a quantity.
+
+1191
+00:43:53,366 --> 00:43:53,846
+Incidentally,
+
+1192
+00:43:53,846 --> 00:43:57,116
+you calculate the average number of particles by differentiating
+
+1193
+00:43:57,116 --> 00:44:00,386
+the logarithm of the partition function with respect to mu.
+
+1194
+00:44:01,686 --> 00:44:02,886
+Differentiating with respect to mu,
+
+1195
+00:44:02,886 --> 00:44:03,066
+well,
+
+1196
+00:44:03,066 --> 00:44:04,666
+differentiating with respect to beta mu,
+
+1197
+00:44:04,666 --> 00:44:07,546
+brings down an n and allows you
+
+1198
+00:44:07,546 --> 00:44:10,426
+to calculate the average number of particles.
+
+1199
+00:44:10,546 --> 00:44:13,026
+So you calculate the derivative of the logarithm
+
+1200
+00:44:13,026 --> 00:44:15,506
+of the partition function with respect to beta mu.
+
+1201
+00:44:16,346 --> 00:44:19,766
+And that gives you the mean number of particles,
+
+1202
+00:44:19,766 --> 00:44:21,866
+which is very similar to
+
+1203
+00:44:21,866 --> 00:44:23,966
+how we calculated the mean energy,
+
+1204
+00:44:24,646 --> 00:44:25,996
+differentiate the log of the
+
+1205
+00:44:25,996 --> 00:44:27,346
+partition function with respect to beta.
+
+1206
+00:44:27,566 --> 00:44:28,406
+Similar idea.
+
+1207
+00:44:29,306 --> 00:44:29,866
+Okay,
+
+1208
+00:44:29,866 --> 00:44:30,426
+that's,
+
+1209
+00:44:30,426 --> 00:44:33,326
+that is the basic setup for...
+
+1210
+00:44:33,326 --> 00:44:33,906
+Yeah.
+
+1211
+00:44:34,446 --> 00:44:37,486
+How does an experimentalist measure the chemical potential?
+
+1212
+00:44:37,866 --> 00:44:39,226
+I know how they do temperature,
+
+1213
+00:44:39,226 --> 00:44:40,186
+but how do you...
+
+1214
+00:44:40,186 --> 00:44:42,046
+I'm not sure you do measure the chemical potential.
+
+1215
+00:44:42,246 --> 00:44:42,366
+Yeah.
+
+1216
+00:44:44,246 --> 00:44:45,906
+How do you measure the chemical potential?
+
+1217
+00:44:45,966 --> 00:44:47,766
+I would say you measure the
+
+1218
+00:44:47,766 --> 00:44:49,566
+density more likely than the chemical potential.
+
+1219
+00:44:54,945 --> 00:44:55,886
+I don't know.
+
+1220
+00:44:55,926 --> 00:44:58,026
+I never think about measuring the chemical potential.
+
+1221
+00:44:58,226 --> 00:44:59,796
+I think of it as a
+
+1222
+00:44:59,796 --> 00:45:01,366
+tunable parameter that changes the density,
+
+1223
+00:45:01,526 --> 00:45:03,306
+and that the density is the thing that you...
+
+1224
+00:45:03,326 --> 00:45:05,866
+Does that have anything to do with the work function?
+
+1225
+00:45:06,646 --> 00:45:07,126
+Yeah,
+
+1226
+00:45:07,126 --> 00:45:08,886
+it is the amount of energy that it
+
+1227
+00:45:08,886 --> 00:45:10,646
+takes to remove a system from a box.
+
+1228
+00:45:10,866 --> 00:45:11,346
+Yeah,
+
+1229
+00:45:11,346 --> 00:45:12,726
+it is related to the work function.
+
+1230
+00:45:12,986 --> 00:45:14,586
+So the work function is the energy?
+
+1231
+00:45:15,326 --> 00:45:15,806
+Yeah,
+
+1232
+00:45:15,806 --> 00:45:17,526
+how much energy it takes to
+
+1233
+00:45:17,526 --> 00:45:19,246
+remove a particle from a box.
+
+1234
+00:45:19,986 --> 00:45:20,466
+Yeah.
+
+1235
+00:45:22,066 --> 00:45:22,946
+It's true.
+
+1236
+00:45:23,726 --> 00:45:24,206
+Okay,
+
+1237
+00:45:24,206 --> 00:45:24,686
+so...
+
+1238
+00:45:26,386 --> 00:45:26,866
+Good.
+
+1239
+00:45:27,346 --> 00:45:30,106
+But now I want to talk about something very exotic,
+
+1240
+00:45:30,106 --> 00:45:31,326
+extremely interesting,
+
+1241
+00:45:31,506 --> 00:45:33,306
+and took many years.
+
+1242
+00:45:33,326 --> 00:45:34,526
+It took many years to really get right.
+
+1243
+00:45:35,366 --> 00:45:38,126
+It has had an enormous influence
+
+1244
+00:45:38,126 --> 00:45:40,886
+on statistical mechanics and quantum field theory.
+
+1245
+00:45:41,986 --> 00:45:46,126
+I doubt that that's obvious to anybody in the room,
+
+1246
+00:45:46,146 --> 00:45:47,036
+what all of this has
+
+1247
+00:45:47,036 --> 00:45:47,926
+to do with quantum field theory,
+
+1248
+00:45:48,066 --> 00:45:51,546
+but let's not worry about that.
+
+1249
+00:45:52,366 --> 00:45:55,216
+It has to do with the behavior of
+
+1250
+00:45:55,216 --> 00:45:58,066
+the system as you approach the critical point.
+
+1251
+00:45:58,426 --> 00:46:02,146
+Let's say moving along h equals zero.
+
+1252
+00:46:02,146 --> 00:46:05,726
+We don't even need h for this here.
+
+1253
+00:46:06,086 --> 00:46:09,846
+We just move along from the high temperature side,
+
+1254
+00:46:10,126 --> 00:46:12,826
+getting closer and closer to the critical point.
+
+1255
+00:46:12,946 --> 00:46:15,346
+What is it that happens at the critical point?
+
+1256
+00:46:15,506 --> 00:46:17,046
+And something very interesting
+
+1257
+00:46:17,046 --> 00:46:18,586
+happens at the critical point.
+
+1258
+00:46:19,706 --> 00:46:21,846
+The first idea that you need
+
+1259
+00:46:21,846 --> 00:46:23,986
+in order to understand the critical point
+
+1260
+00:46:23,986 --> 00:46:25,666
+is the idea of a correlation length.
+
+1261
+00:46:27,046 --> 00:46:27,886
+We talked,
+
+1262
+00:46:27,886 --> 00:46:28,846
+I think we talked,
+
+1263
+00:46:28,846 --> 00:46:31,266
+did we talk at all about the correlation function?
+
+1264
+00:46:32,466 --> 00:46:33,066
+No,
+
+1265
+00:46:33,066 --> 00:46:33,766
+we didn't.
+
+1266
+00:46:33,806 --> 00:46:35,606
+So I'll tell you what the correlation function is.
+
+1267
+00:46:35,666 --> 00:46:37,666
+We don't need to talk about how you calculate it.
+
+1268
+00:46:38,486 --> 00:46:39,606
+It's an average.
+
+1269
+00:46:40,306 --> 00:46:43,306
+It's an average of the product
+
+1270
+00:46:43,306 --> 00:46:46,306
+of spins at two different points.
+
+1271
+00:46:46,786 --> 00:46:49,666
+Let's say sigma of A and sigma of B.
+
+1272
+00:46:50,286 --> 00:46:52,456
+It's the average value of the
+
+1273
+00:46:52,456 --> 00:46:54,626
+product of sigma A and sigma B.
+
+1274
+00:46:56,706 --> 00:46:59,126
+It measures the degree of correlation
+
+1275
+00:46:59,766 --> 00:47:01,706
+between the spin at point A
+
+1276
+00:47:02,146 --> 00:47:02,886
+and the spin at point B.
+
+1277
+00:47:03,026 --> 00:47:05,126
+These could be two points on the lattice.
+
+1278
+00:47:06,646 --> 00:47:08,086
+They could be near each other.
+
+1279
+00:47:08,186 --> 00:47:09,446
+They could be far from each other.
+
+1280
+00:47:09,806 --> 00:47:11,626
+What happens if A is equal to B,
+
+1281
+00:47:11,626 --> 00:47:12,346
+incidentally?
+
+1282
+00:47:14,646 --> 00:47:16,286
+Sigma squared is just equal to one.
+
+1283
+00:47:16,706 --> 00:47:19,626
+So the correlation function at the origin,
+
+1284
+00:47:19,626 --> 00:47:20,566
+let's call it,
+
+1285
+00:47:22,786 --> 00:47:23,746
+in other words,
+
+1286
+00:47:23,746 --> 00:47:25,286
+when A and B are the same point,
+
+1287
+00:47:25,386 --> 00:47:26,586
+that's always equal to one.
+
+1288
+00:47:27,265 --> 00:47:29,986
+But now let's separate the points.
+
+1289
+00:47:30,366 --> 00:47:30,806
+Okay?
+
+1290
+00:47:32,206 --> 00:47:32,826
+All right.
+
+1291
+00:47:32,846 --> 00:47:34,766
+So how do I calculate the correlation function
+
+1292
+00:47:34,766 --> 00:47:36,506
+at these two different points?
+
+1293
+00:47:36,586 --> 00:47:37,106
+And let's imagine,
+
+1294
+00:47:37,106 --> 00:47:39,406
+let's go to extremely high temperatures.
+
+1295
+00:47:39,566 --> 00:47:41,606
+Let's start at the high temperature end of things.
+
+1296
+00:47:42,166 --> 00:47:42,786
+All right?
+
+1297
+00:47:42,806 --> 00:47:44,086
+Not at the magnetized phase,
+
+1298
+00:47:44,086 --> 00:47:45,626
+but at the high temperature end.
+
+1299
+00:47:46,266 --> 00:47:47,226
+Infinite temperature,
+
+1300
+00:47:47,226 --> 00:47:48,686
+enormously high temperature.
+
+1301
+00:47:48,886 --> 00:47:50,326
+And what happens at very high temperature?
+
+1302
+00:47:50,766 --> 00:47:51,246
+Eh,
+
+1303
+00:47:51,246 --> 00:47:52,786
+jiggling around like mad.
+
+1304
+00:47:53,086 --> 00:47:54,706
+And the temperature is so high
+
+1305
+00:47:54,706 --> 00:47:58,746
+that the bonds are not very potent
+
+1306
+00:47:58,746 --> 00:48:00,846
+at holding the spins aligned with each other.
+
+1307
+00:48:03,586 --> 00:48:06,726
+So let's talk about the correlation,
+
+1308
+00:48:06,766 --> 00:48:07,726
+or the average,
+
+1309
+00:48:07,726 --> 00:48:09,346
+of the product of two spins
+
+1310
+00:48:10,026 --> 00:48:12,046
+neighboring to each other at very,
+
+1311
+00:48:12,046 --> 00:48:14,026
+very high temperature.
+
+1312
+00:48:14,246 --> 00:48:15,446
+What would you expect that it would be?
+
+1313
+00:48:15,766 --> 00:48:16,226
+Zero.
+
+1314
+00:48:17,606 --> 00:48:18,086
+Zero,
+
+1315
+00:48:18,086 --> 00:48:20,406
+because even if you freeze,
+
+1316
+00:48:20,626 --> 00:48:21,626
+you can think of it this way.
+
+1317
+00:48:21,746 --> 00:48:23,326
+You can think of calculating
+
+1318
+00:48:23,326 --> 00:48:24,906
+it by freezing this spin up
+
+1319
+00:48:24,906 --> 00:48:27,386
+and then calculating in the presence of this spin up,
+
+1320
+00:48:27,466 --> 00:48:29,126
+calculating the average of this spin.
+
+1321
+00:48:30,246 --> 00:48:31,086
+And then...
+
+1322
+00:48:32,046 --> 00:48:33,406
+That's the way you can think about it.
+
+1323
+00:48:33,446 --> 00:48:35,216
+It really represents the probability
+
+1324
+00:48:35,216 --> 00:48:36,986
+that if this spin is up,
+
+1325
+00:48:37,126 --> 00:48:39,206
+then this spin is also up,
+
+1326
+00:48:39,286 --> 00:48:40,486
+or also down.
+
+1327
+00:48:40,626 --> 00:48:41,346
+Some average,
+
+1328
+00:48:41,346 --> 00:48:43,566
+given that this one is up,
+
+1329
+00:48:43,586 --> 00:48:46,306
+what's the probability that this one is up or down?
+
+1330
+00:48:46,846 --> 00:48:47,866
+And that represents,
+
+1331
+00:48:47,866 --> 00:48:49,186
+that's the correlation function.
+
+1332
+00:48:49,366 --> 00:48:50,146
+Or better yet,
+
+1333
+00:48:50,146 --> 00:48:51,966
+given that this one is up,
+
+1334
+00:48:52,046 --> 00:48:53,486
+what's the average of this one?
+
+1335
+00:48:53,926 --> 00:48:54,406
+All right.
+
+1336
+00:48:55,225 --> 00:48:55,665
+So,
+
+1337
+00:48:55,665 --> 00:48:56,706
+what would you expect,
+
+1338
+00:48:56,706 --> 00:48:57,086
+again,
+
+1339
+00:48:57,086 --> 00:48:58,026
+at very high temperatures?
+
+1340
+00:48:58,906 --> 00:48:59,646
+Just zero,
+
+1341
+00:48:59,646 --> 00:49:01,066
+because they're fluctuating.
+
+1342
+00:49:01,086 --> 00:49:02,186
+They're fluctuating completely independently,
+
+1343
+00:49:02,346 --> 00:49:04,386
+because the temperature is so high
+
+1344
+00:49:04,386 --> 00:49:06,426
+that the bond joining these is ineffective.
+
+1345
+00:49:07,286 --> 00:49:09,626
+What happens as you start to lower the temperature?
+
+1346
+00:49:11,046 --> 00:49:12,886
+As you start to lower the temperature,
+
+1347
+00:49:14,606 --> 00:49:17,106
+if this spin is up,
+
+1348
+00:49:17,766 --> 00:49:20,706
+it will bias this spin to also be up,
+
+1349
+00:49:20,886 --> 00:49:23,546
+because the energy will be lowered if they're parallel.
+
+1350
+00:49:23,986 --> 00:49:25,506
+If this spin is down,
+
+1351
+00:49:25,746 --> 00:49:28,086
+it will also bias it.
+
+1352
+00:49:28,856 --> 00:49:30,186
+So what starts to happen,
+
+1353
+00:49:31,086 --> 00:49:32,926
+is that sigma times sigma
+
+1354
+00:49:32,926 --> 00:49:34,766
+starts to not be zero anymore,
+
+1355
+00:49:35,986 --> 00:49:38,146
+and in fact is usually positive.
+
+1356
+00:49:38,646 --> 00:49:41,646
+It's positive because if this spin is up,
+
+1357
+00:49:41,706 --> 00:49:43,346
+this one is more likely to be up,
+
+1358
+00:49:43,446 --> 00:49:45,266
+so sigma times sigma is positive.
+
+1359
+00:49:45,836 --> 00:49:47,066
+If this spin is down,
+
+1360
+00:49:47,246 --> 00:49:49,506
+then this one is also more likely to be down,
+
+1361
+00:49:49,706 --> 00:49:50,526
+and so again,
+
+1362
+00:49:50,526 --> 00:49:52,146
+sigma times sigma is positive.
+
+1363
+00:49:52,836 --> 00:49:54,506
+And so this correlation function
+
+1364
+00:49:55,706 --> 00:49:57,466
+between neighboring points
+
+1365
+00:49:59,306 --> 00:50:01,186
+at moderately high temperatures
+
+1366
+00:50:01,826 --> 00:50:03,366
+will stop being zero
+
+1367
+00:50:03,366 --> 00:50:05,946
+and be small but non-zero.
+
+1368
+00:50:06,126 --> 00:50:10,046
+What about the correlation function
+
+1369
+00:50:10,046 --> 00:50:12,386
+between second nearest neighbors?
+
+1370
+00:50:13,106 --> 00:50:13,666
+Square?
+
+1371
+00:50:14,566 --> 00:50:16,226
+Square is a negative one?
+
+1372
+00:50:16,426 --> 00:50:17,366
+It'll be more or less,
+
+1373
+00:50:17,366 --> 00:50:17,726
+that's right,
+
+1374
+00:50:17,806 --> 00:50:19,246
+it'll be more or less the square
+
+1375
+00:50:20,166 --> 00:50:22,986
+of the correlation between first nearest neighbors.
+
+1376
+00:50:23,246 --> 00:50:23,886
+That's right.
+
+1377
+00:50:24,106 --> 00:50:25,926
+That in fact is about what it is.
+
+1378
+00:50:25,926 --> 00:50:28,306
+What about you go way,
+
+1379
+00:50:28,306 --> 00:50:29,326
+way down the line here?
+
+1380
+00:50:30,506 --> 00:50:31,866
+And there's nothing that's special
+
+1381
+00:50:31,866 --> 00:50:34,066
+about moving along the horizontal axis here.
+
+1382
+00:50:34,226 --> 00:50:35,746
+We move vertical axis,
+
+1383
+00:50:35,846 --> 00:50:37,166
+or we can move at a 45 degree,
+
+1384
+00:50:37,326 --> 00:50:38,166
+but what would you expect
+
+1385
+00:50:38,726 --> 00:50:39,986
+as you move way down here?
+
+1386
+00:50:42,426 --> 00:50:42,946
+Again,
+
+1387
+00:50:42,946 --> 00:50:44,746
+you'll expect each time you move,
+
+1388
+00:50:44,846 --> 00:50:46,326
+you'll lose some correlation.
+
+1389
+00:50:47,346 --> 00:50:48,326
+And in fact,
+
+1390
+00:50:48,326 --> 00:50:50,026
+you lose the same fraction
+
+1391
+00:50:50,026 --> 00:50:50,686
+of correlation,
+
+1392
+00:50:50,686 --> 00:50:51,946
+roughly speaking,
+
+1393
+00:50:52,106 --> 00:50:54,846
+and that means that this is going to be
+
+1394
+00:50:54,846 --> 00:50:57,666
+exponential in the distance between these points.
+
+1395
+00:50:58,066 --> 00:51:00,106
+If each time you lost,
+
+1396
+00:51:00,106 --> 00:51:00,586
+let's say,
+
+1397
+00:51:00,646 --> 00:51:02,086
+half the correlation,
+
+1398
+00:51:02,406 --> 00:51:05,086
+if the correlation between nearest neighbors
+
+1399
+00:51:05,086 --> 00:51:05,726
+was a half,
+
+1400
+00:51:05,726 --> 00:51:07,486
+and second nearest neighbors
+
+1401
+00:51:07,486 --> 00:51:08,046
+was a quarter,
+
+1402
+00:51:08,046 --> 00:51:09,246
+third nearest neighbors
+
+1403
+00:51:09,246 --> 00:51:09,906
+was an eighth,
+
+1404
+00:51:09,906 --> 00:51:10,466
+and so forth,
+
+1405
+00:51:10,626 --> 00:51:13,206
+you might expect that this would behave
+
+1406
+00:51:13,846 --> 00:51:16,386
+like e to the minus
+
+1407
+00:51:17,265 --> 00:51:19,126
+some parameter m
+
+1408
+00:51:20,406 --> 00:51:22,646
+times the distance between them.
+
+1409
+00:51:22,986 --> 00:51:24,826
+Let's call it distance between them
+
+1410
+00:51:24,846 --> 00:51:25,166
+d.
+
+1411
+00:51:25,926 --> 00:51:28,826
+Distance means number of lattice sites
+
+1412
+00:51:28,826 --> 00:51:29,626
+between them.
+
+1413
+00:51:30,366 --> 00:51:31,986
+So when you're very,
+
+1414
+00:51:31,986 --> 00:51:32,846
+very far away,
+
+1415
+00:51:34,665 --> 00:51:35,946
+very far away,
+
+1416
+00:51:36,106 --> 00:51:38,266
+the correlation is extremely weak,
+
+1417
+00:51:38,346 --> 00:51:39,326
+exponentially weak.
+
+1418
+00:51:39,486 --> 00:51:40,706
+When you're close by,
+
+1419
+00:51:40,926 --> 00:51:43,226
+the correlation function is stronger.
+
+1420
+00:51:43,346 --> 00:51:44,446
+The correlation is stronger.
+
+1421
+00:51:44,646 --> 00:51:47,246
+This m depends on the temperature.
+
+1422
+00:51:48,066 --> 00:51:49,126
+At very,
+
+1423
+00:51:49,126 --> 00:51:50,106
+very high temperatures,
+
+1424
+00:51:51,546 --> 00:51:54,626
+the correlation falls very rapidly
+
+1425
+00:51:54,846 --> 00:51:55,026
+to zero.
+
+1426
+00:51:55,106 --> 00:51:56,166
+Let's imagine plotting it
+
+1427
+00:51:56,166 --> 00:51:57,366
+at different temperatures.
+
+1428
+00:52:00,526 --> 00:52:02,586
+Correlation function is always one
+
+1429
+00:52:03,266 --> 00:52:04,646
+at d equals zero.
+
+1430
+00:52:04,826 --> 00:52:05,526
+So this is d.
+
+1431
+00:52:06,596 --> 00:52:08,226
+At extremely high temperatures,
+
+1432
+00:52:08,566 --> 00:52:10,946
+the correlation function just drops
+
+1433
+00:52:10,946 --> 00:52:12,266
+like a bomb down to zero.
+
+1434
+00:52:13,186 --> 00:52:14,726
+And so by the time you get over
+
+1435
+00:52:14,726 --> 00:52:15,846
+to the first lattice point,
+
+1436
+00:52:16,046 --> 00:52:17,186
+it's negligible.
+
+1437
+00:52:17,596 --> 00:52:19,406
+Small at very high temperatures.
+
+1438
+00:52:19,746 --> 00:52:21,286
+And then it just stays small.
+
+1439
+00:52:21,826 --> 00:52:22,986
+Gets even smaller,
+
+1440
+00:52:22,986 --> 00:52:23,526
+smaller,
+
+1441
+00:52:23,526 --> 00:52:24,026
+smaller,
+
+1442
+00:52:24,846 --> 00:52:25,306
+exponentially.
+
+1443
+00:52:26,486 --> 00:52:29,306
+What happens as you lower the temperature?
+
+1444
+00:52:29,646 --> 00:52:31,386
+As you lower the temperature,
+
+1445
+00:52:31,586 --> 00:52:35,926
+the correlation function continues to drop
+
+1446
+00:52:35,926 --> 00:52:37,106
+as an exponential,
+
+1447
+00:52:38,606 --> 00:52:41,906
+but the rate in here at which it falls
+
+1448
+00:52:41,906 --> 00:52:43,986
+becomes more and more gradual.
+
+1449
+00:52:44,266 --> 00:52:45,486
+As the temperature gets lower,
+
+1450
+00:52:45,666 --> 00:52:48,286
+the rate at which it falls becomes more gradual.
+
+1451
+00:52:48,706 --> 00:52:50,426
+And that means that m
+
+1452
+00:52:50,426 --> 00:52:53,066
+is a function of temperature.
+
+1453
+00:52:54,146 --> 00:52:54,826
+So,
+
+1454
+00:52:54,826 --> 00:52:54,826
+if you look at the graph,
+
+1455
+00:52:55,446 --> 00:52:57,206
+m is a function of temperature.
+
+1456
+00:52:58,806 --> 00:53:00,206
+And what does it represent?
+
+1457
+00:53:00,526 --> 00:53:02,366
+It represents the distance
+
+1458
+00:53:02,366 --> 00:53:04,286
+that you have to go out
+
+1459
+00:53:04,286 --> 00:53:07,046
+in order that the correlation has dropped
+
+1460
+00:53:07,046 --> 00:53:08,906
+by a factor of e.
+
+1461
+00:53:10,506 --> 00:53:11,126
+Alright?
+
+1462
+00:53:12,586 --> 00:53:14,726
+How far do you have to go out
+
+1463
+00:53:14,726 --> 00:53:17,286
+in order that the correlation function
+
+1464
+00:53:17,286 --> 00:53:18,965
+has dropped by a factor of e?
+
+1465
+00:53:19,226 --> 00:53:20,646
+That's what m represents.
+
+1466
+00:53:21,866 --> 00:53:24,826
+It's also called the inverse correlation function.
+
+1467
+00:53:24,846 --> 00:53:25,166
+So,
+
+1468
+00:53:25,166 --> 00:53:25,166
+the inverse correlation function
+
+1469
+00:53:26,426 --> 00:53:28,266
+The inverse correlation length,
+
+1470
+00:53:28,346 --> 00:53:31,286
+the correlation length is the width of this curve.
+
+1471
+00:53:31,586 --> 00:53:32,206
+Here,
+
+1472
+00:53:32,206 --> 00:53:34,586
+the correlation length is very,
+
+1473
+00:53:34,586 --> 00:53:35,106
+very small.
+
+1474
+00:53:36,446 --> 00:53:38,226
+And m is very large.
+
+1475
+00:53:43,726 --> 00:53:45,346
+As you lower the temperature,
+
+1476
+00:53:45,746 --> 00:53:48,686
+the correlation length gets longer and longer,
+
+1477
+00:53:49,666 --> 00:53:52,086
+and the inverse correlation function
+
+1478
+00:53:52,086 --> 00:53:53,485
+gets smaller and smaller.
+
+1479
+00:53:54,406 --> 00:53:54,925
+Okay?
+
+1480
+00:53:55,005 --> 00:53:56,386
+When m is very small,
+
+1481
+00:53:57,126 --> 00:54:00,546
+this function very gradually goes to zero.
+
+1482
+00:54:02,006 --> 00:54:02,526
+Okay?
+
+1483
+00:54:02,626 --> 00:54:03,126
+So,
+
+1484
+00:54:03,126 --> 00:54:04,086
+m is a function of t.
+
+1485
+00:54:04,386 --> 00:54:07,546
+It represents the inverse of the correlation length,
+
+1486
+00:54:07,706 --> 00:54:09,886
+correlation length being the distance out
+
+1487
+00:54:09,886 --> 00:54:10,766
+to which you have to go
+
+1488
+00:54:11,746 --> 00:54:13,206
+in order that the,
+
+1489
+00:54:14,026 --> 00:54:15,946
+that you've lost a factor of e
+
+1490
+00:54:15,946 --> 00:54:17,126
+in the correlation.
+
+1491
+00:54:18,226 --> 00:54:19,966
+And those are a set of definitions,
+
+1492
+00:54:20,146 --> 00:54:21,986
+but they're clearly a useful set of definitions.
+
+1493
+00:54:22,086 --> 00:54:24,866
+And what the correlation length tells you
+
+1494
+00:54:24,866 --> 00:54:26,546
+is it just tells you exactly what it says.
+
+1495
+00:54:27,306 --> 00:54:28,346
+How long,
+
+1496
+00:54:28,626 --> 00:54:30,786
+how far out on the lattice
+
+1497
+00:54:31,706 --> 00:54:32,846
+will you feel
+
+1498
+00:54:32,846 --> 00:54:36,806
+the effect of nailing one particular spin in place?
+
+1499
+00:54:37,446 --> 00:54:39,946
+Supposing you nailed one particular spin in place,
+
+1500
+00:54:40,006 --> 00:54:42,106
+either up or down,
+
+1501
+00:54:42,326 --> 00:54:44,066
+how far away is it felt?
+
+1502
+00:54:44,526 --> 00:54:46,146
+That's called the correlation length,
+
+1503
+00:54:46,286 --> 00:54:47,886
+and it's inverse to this m of t.
+
+1504
+00:54:48,846 --> 00:54:49,366
+So,
+
+1505
+00:54:49,366 --> 00:54:50,826
+m of t decreases,
+
+1506
+00:54:50,826 --> 00:54:53,486
+obviously decreases with temperature.
+
+1507
+00:54:54,806 --> 00:54:56,246
+Correlation length increases,
+
+1508
+00:54:56,666 --> 00:54:57,966
+m of t decreases.
+
+1509
+00:54:58,586 --> 00:54:59,146
+Okay.
+
+1510
+00:54:59,606 --> 00:55:00,166
+Yeah?
+
+1511
+00:55:00,266 --> 00:55:01,306
+In all these cases,
+
+1512
+00:55:01,326 --> 00:55:02,306
+you're assuming there's nothing
+
+1513
+00:55:02,306 --> 00:55:03,646
+between the two test points,
+
+1514
+00:55:03,646 --> 00:55:03,966
+right?
+
+1515
+00:55:04,046 --> 00:55:04,186
+Yeah.
+
+1516
+00:55:04,546 --> 00:55:05,106
+So,
+
+1517
+00:55:05,106 --> 00:55:05,986
+you're making an assumption
+
+1518
+00:55:05,986 --> 00:55:07,846
+about the density in there implicitly.
+
+1519
+00:55:09,646 --> 00:55:10,986
+You're making an assumption
+
+1520
+00:55:10,986 --> 00:55:12,946
+that it's not so dense
+
+1521
+00:55:12,946 --> 00:55:14,126
+that you're squeezing...
+
+1522
+00:55:14,126 --> 00:55:16,066
+Dense in the sense of...
+
+1523
+00:55:16,666 --> 00:55:18,226
+Particles on every lattice point.
+
+1524
+00:55:18,426 --> 00:55:19,006
+Mm-hmm.
+
+1525
+00:55:19,466 --> 00:55:20,026
+So,
+
+1526
+00:55:20,026 --> 00:55:20,286
+you're getting...
+
+1527
+00:55:20,286 --> 00:55:20,806
+Dense in the sense of...
+
+1528
+00:55:20,826 --> 00:55:22,986
+Particles on every lattice point.
+
+1529
+00:55:23,186 --> 00:55:23,446
+Oh,
+
+1530
+00:55:23,446 --> 00:55:24,526
+there could be a particle
+
+1531
+00:55:24,526 --> 00:55:25,586
+on every lattice point.
+
+1532
+00:55:25,706 --> 00:55:28,846
+Then the correlation length...
+
+1533
+00:55:28,846 --> 00:55:29,546
+It could be.
+
+1534
+00:55:29,786 --> 00:55:30,006
+So,
+
+1535
+00:55:30,006 --> 00:55:31,006
+it's just a two-position...
+
+1536
+00:55:31,006 --> 00:55:31,566
+Mm-hmm.
+
+1537
+00:55:31,626 --> 00:55:32,366
+It's just a two-position
+
+1538
+00:55:32,366 --> 00:55:33,606
+of all the effects then?
+
+1539
+00:55:34,426 --> 00:55:34,946
+Yeah.
+
+1540
+00:55:35,066 --> 00:55:36,666
+But at very high temperatures,
+
+1541
+00:55:37,366 --> 00:55:39,126
+with no chemical potential,
+
+1542
+00:55:39,726 --> 00:55:41,306
+you will not find
+
+1543
+00:55:41,306 --> 00:55:43,026
+that there's a particle on every point.
+
+1544
+00:55:43,126 --> 00:55:44,426
+You'll find it's about half filled.
+
+1545
+00:55:45,746 --> 00:55:46,266
+Okay.
+
+1546
+00:55:46,566 --> 00:55:47,346
+Half filled
+
+1547
+00:55:48,966 --> 00:55:50,466
+at high temperatures.
+
+1548
+00:55:50,466 --> 00:55:51,446
+Half filled,
+
+1549
+00:55:51,446 --> 00:55:52,026
+half empty.
+
+1550
+00:55:53,286 --> 00:55:54,386
+Doesn't that depend on
+
+1551
+00:55:54,386 --> 00:55:56,426
+how finely you draw the lattice?
+
+1552
+00:55:58,106 --> 00:55:59,606
+How finely you draw the lattice?
+
+1553
+00:55:59,786 --> 00:56:00,026
+Yeah.
+
+1554
+00:56:00,126 --> 00:56:00,146
+No?
+
+1555
+00:56:02,206 --> 00:56:02,646
+No,
+
+1556
+00:56:02,646 --> 00:56:03,226
+we just...
+
+1557
+00:56:03,686 --> 00:56:04,126
+No.
+
+1558
+00:56:07,206 --> 00:56:09,406
+Nothing depends on how I draw the lattice.
+
+1559
+00:56:10,206 --> 00:56:11,645
+Drawing the lattice is just...
+
+1560
+00:56:13,526 --> 00:56:14,946
+I can draw on a piece of paper.
+
+1561
+00:56:15,066 --> 00:56:16,126
+I can draw on the blackboard.
+
+1562
+00:56:16,266 --> 00:56:17,706
+I can draw it on the ceiling.
+
+1563
+00:56:18,026 --> 00:56:18,946
+Same system.
+
+1564
+00:56:21,085 --> 00:56:22,546
+The spin could be up or down.
+
+1565
+00:56:22,866 --> 00:56:22,866
+So,
+
+1566
+00:56:22,866 --> 00:56:24,986
+at each point in the lattice,
+
+1567
+00:56:25,046 --> 00:56:26,026
+the spin could be up or down.
+
+1568
+00:56:26,086 --> 00:56:26,226
+So,
+
+1569
+00:56:26,226 --> 00:56:26,896
+half of them are up
+
+1570
+00:56:26,896 --> 00:56:27,566
+and half of them are down.
+
+1571
+00:56:27,566 --> 00:56:27,606
+Right.
+
+1572
+00:56:27,726 --> 00:56:28,556
+Half of them are up
+
+1573
+00:56:28,556 --> 00:56:29,386
+and half of them are down
+
+1574
+00:56:29,386 --> 00:56:30,566
+at high temperatures,
+
+1575
+00:56:30,566 --> 00:56:30,946
+typically.
+
+1576
+00:56:31,266 --> 00:56:31,606
+Yeah.
+
+1577
+00:56:31,666 --> 00:56:31,806
+Yeah.
+
+1578
+00:56:31,806 --> 00:56:32,066
+Okay.
+
+1579
+00:56:32,666 --> 00:56:33,026
+Good.
+
+1580
+00:56:33,986 --> 00:56:35,486
+But the interesting thing is
+
+1581
+00:56:35,486 --> 00:56:36,626
+this correlation length
+
+1582
+00:56:36,626 --> 00:56:38,046
+gets longer and longer.
+
+1583
+00:56:38,546 --> 00:56:38,906
+Okay.
+
+1584
+00:56:40,026 --> 00:56:40,386
+Now,
+
+1585
+00:56:40,386 --> 00:56:41,546
+imagine you now pass
+
+1586
+00:56:42,305 --> 00:56:43,746
+below the critical point.
+
+1587
+00:56:44,526 --> 00:56:46,386
+What happens to the correlation function
+
+1588
+00:56:46,386 --> 00:56:47,786
+below the critical point?
+
+1589
+00:56:49,186 --> 00:56:50,086
+Let's think about that.
+
+1590
+00:56:51,026 --> 00:56:53,886
+Take sigma of A times sigma of B
+
+1591
+00:56:59,266 --> 00:57:00,946
+below the critical point.
+
+1592
+00:57:01,126 --> 00:57:02,806
+And below the critical point,
+
+1593
+00:57:02,846 --> 00:57:04,326
+here we are below the critical point.
+
+1594
+00:57:04,406 --> 00:57:05,926
+We could be here or we could be here.
+
+1595
+00:57:08,806 --> 00:57:10,306
+Below the critical point,
+
+1596
+00:57:10,506 --> 00:57:14,046
+the bias of just one spin being up
+
+1597
+00:57:14,826 --> 00:57:16,826
+is enough to bias...
+
+1598
+00:57:16,826 --> 00:57:19,006
+Remember what happens below the critical point.
+
+1599
+00:57:19,006 --> 00:57:20,246
+There's this sort of instability
+
+1600
+00:57:20,846 --> 00:57:23,266
+that the tiniest little perturbation,
+
+1601
+00:57:23,366 --> 00:57:25,806
+which biases it one way or the other,
+
+1602
+00:57:25,946 --> 00:57:27,626
+will lock all the spins,
+
+1603
+00:57:27,786 --> 00:57:29,886
+not all the spins exactly into the same direction,
+
+1604
+00:57:30,146 --> 00:57:31,926
+but will bias all the spins
+
+1605
+00:57:31,926 --> 00:57:33,926
+so that the average magnetization
+
+1606
+00:57:35,146 --> 00:57:37,446
+is in one of the two directions.
+
+1607
+00:57:38,206 --> 00:57:38,726
+So,
+
+1608
+00:57:38,726 --> 00:57:43,146
+supposing we freeze sigma A to be up.
+
+1609
+00:57:43,926 --> 00:57:45,566
+And now we look at sigma B.
+
+1610
+00:57:46,086 --> 00:57:46,606
+Well,
+
+1611
+00:57:46,606 --> 00:57:48,986
+the sample has been up,
+
+1612
+00:57:48,986 --> 00:57:51,146
+but the average has been biased by sigma A.
+
+1613
+00:57:51,546 --> 00:57:53,546
+And we're in the magnetized phase.
+
+1614
+00:57:53,666 --> 00:57:55,226
+We're below the critical temperature.
+
+1615
+00:57:56,226 --> 00:57:57,686
+And so what's going to happen
+
+1616
+00:57:57,686 --> 00:57:59,846
+is sigma B will,
+
+1617
+00:57:59,846 --> 00:58:01,486
+on the average,
+
+1618
+00:58:01,626 --> 00:58:03,466
+be in the same direction as sigma A,
+
+1619
+00:58:03,706 --> 00:58:05,506
+but right out to infinity.
+
+1620
+00:58:06,246 --> 00:58:07,546
+Right out to infinity.
+
+1621
+00:58:08,126 --> 00:58:08,686
+One...
+
+1622
+00:58:09,286 --> 00:58:11,246
+In this magnetized phase here,
+
+1623
+00:58:11,406 --> 00:58:14,106
+one spin pointing up is enough
+
+1624
+00:58:14,846 --> 00:58:16,686
+to tell all the others that,
+
+1625
+00:58:16,726 --> 00:58:17,286
+on the average,
+
+1626
+00:58:17,286 --> 00:58:18,086
+they will point up.
+
+1627
+00:58:18,086 --> 00:58:20,786
+That's what happens in...
+
+1628
+00:58:20,786 --> 00:58:21,786
+to this...
+
+1629
+00:58:24,226 --> 00:58:25,786
+down below the critical temperature.
+
+1630
+00:58:26,266 --> 00:58:26,746
+So,
+
+1631
+00:58:26,746 --> 00:58:27,786
+what we can say then
+
+1632
+00:58:27,786 --> 00:58:30,026
+is that sigma A,
+
+1633
+00:58:30,026 --> 00:58:30,546
+sigma B
+
+1634
+00:58:31,086 --> 00:58:32,666
+will go to some constant,
+
+1635
+00:58:32,786 --> 00:58:34,326
+some positive number...
+
+1636
+00:58:35,346 --> 00:58:36,306
+positive number...
+
+1637
+00:58:36,306 --> 00:58:37,286
+I don't know what to call it.
+
+1638
+00:58:37,346 --> 00:58:38,946
+Let's just call it number...
+
+1639
+00:58:39,846 --> 00:58:40,326
+constant.
+
+1640
+00:58:42,686 --> 00:58:45,006
+As you move further and further away,
+
+1641
+00:58:45,586 --> 00:58:46,266
+mm-hmm,
+
+1642
+00:58:47,226 --> 00:58:47,926
+sigma A,
+
+1643
+00:58:47,926 --> 00:58:49,286
+sigma B will go to some constant.
+
+1644
+00:58:49,766 --> 00:58:51,766
+That constant will also depend
+
+1645
+00:58:51,766 --> 00:58:52,586
+on the temperature.
+
+1646
+00:58:53,646 --> 00:58:55,546
+If you're at very low temperatures,
+
+1647
+00:58:55,866 --> 00:58:59,026
+the spins will tend to align each other
+
+1648
+00:58:59,026 --> 00:58:59,946
+rather rigidly.
+
+1649
+00:59:00,146 --> 00:59:01,666
+If you're at zero temperature,
+
+1650
+00:59:02,006 --> 00:59:03,906
+the only two possibilities are
+
+1651
+00:59:03,906 --> 00:59:05,566
+all spins up and all spins down.
+
+1652
+00:59:05,866 --> 00:59:08,406
+What happens to this at zero temperature?
+
+1653
+00:59:10,146 --> 00:59:10,846
+It's one.
+
+1654
+00:59:11,406 --> 00:59:12,846
+If sigma A is up,
+
+1655
+00:59:12,846 --> 00:59:13,906
+then sigma B is up.
+
+1656
+00:59:13,906 --> 00:59:14,866
+If sigma A is down,
+
+1657
+00:59:14,866 --> 00:59:16,026
+then sigma B is down.
+
+1658
+00:59:16,266 --> 00:59:16,886
+So,
+
+1659
+00:59:16,886 --> 00:59:18,026
+at zero temperature,
+
+1660
+00:59:18,326 --> 00:59:20,526
+let's approach now...
+
+1661
+00:59:20,526 --> 00:59:21,166
+I'm going to use red
+
+1662
+00:59:21,166 --> 00:59:24,966
+to approach from the low temperature side.
+
+1663
+00:59:25,306 --> 00:59:27,786
+This is what happened from the high temperature side,
+
+1664
+00:59:28,006 --> 00:59:30,806
+and this always goes to zero
+
+1665
+00:59:30,806 --> 00:59:32,966
+as long as the temperature is high enough.
+
+1666
+00:59:33,326 --> 00:59:34,166
+But now,
+
+1667
+00:59:36,886 --> 00:59:38,166
+here's temperature zero.
+
+1668
+00:59:38,926 --> 00:59:41,546
+What happens at a little bit higher temperature?
+
+1669
+00:59:41,866 --> 00:59:43,826
+You're still in the magnetized phase,
+
+1670
+00:59:44,446 --> 00:59:45,046
+and
+
+1671
+00:59:45,046 --> 00:59:48,146
+you still go to a constant out here,
+
+1672
+00:59:48,266 --> 00:59:49,566
+but a little bit less constant.
+
+1673
+00:59:49,766 --> 00:59:51,866
+Things are not rigidly held in place as well.
+
+1674
+00:59:53,166 --> 00:59:53,766
+Eventually,
+
+1675
+00:59:53,766 --> 00:59:55,926
+you come down to the critical temperature,
+
+1676
+00:59:56,146 --> 00:59:58,046
+and as you get to the critical temperature,
+
+1677
+00:59:58,286 --> 01:00:01,046
+that's the temperature which divides these two behaviors.
+
+1678
+01:00:02,006 --> 01:00:03,306
+What's the behavior here?
+
+1679
+01:00:04,306 --> 01:00:06,366
+Exponentially decreasing correlation.
+
+1680
+01:00:07,786 --> 01:00:09,146
+What's the behavior here?
+
+1681
+01:00:09,306 --> 01:00:11,686
+The correlation function doesn't decrease.
+
+1682
+01:00:12,386 --> 01:00:13,806
+What divides them?
+
+1683
+01:00:13,806 --> 01:00:16,806
+What divides them is the critical behavior...
+
+1684
+01:00:17,326 --> 01:00:17,826
+Let's see,
+
+1685
+01:00:17,826 --> 01:00:19,006
+I have trouble drawing it.
+
+1686
+01:00:19,106 --> 01:00:20,786
+The critical behavior
+
+1687
+01:00:23,145 --> 01:00:27,026
+which is neither constant at infinity,
+
+1688
+01:00:27,226 --> 01:00:29,626
+nor is it exponentially falling.
+
+1689
+01:00:30,006 --> 01:00:35,686
+Every one of these eventually falls exponentially.
+
+1690
+01:00:36,066 --> 01:00:37,726
+Every one of them falls exponentially.
+
+1691
+01:00:38,086 --> 01:00:40,406
+What about this critical one here?
+
+1692
+01:00:40,546 --> 01:00:42,406
+What's in between being constant
+
+1693
+01:00:42,406 --> 01:00:43,786
+and falling exponentially?
+
+1694
+01:00:44,706 --> 01:00:45,106
+Well,
+
+1695
+01:00:45,106 --> 01:00:46,146
+there's a lot of things,
+
+1696
+01:00:46,146 --> 01:00:46,986
+but...
+
+1697
+01:00:46,986 --> 01:00:47,626
+Hmm?
+
+1698
+01:00:49,145 --> 01:00:50,206
+Hyperbolic means what?
+
+1699
+01:00:52,446 --> 01:00:53,126
+1 over x.
+
+1700
+01:00:53,806 --> 01:00:54,206
+Well,
+
+1701
+01:00:54,206 --> 01:00:55,486
+how about just 1 over x to a power?
+
+1702
+01:00:55,626 --> 01:00:56,066
+1 over d,
+
+1703
+01:00:56,066 --> 01:00:57,246
+1 over d to a power.
+
+1704
+01:00:58,706 --> 01:00:59,106
+Hmm?
+
+1705
+01:00:59,306 --> 01:01:01,186
+At infinity,
+
+1706
+01:01:01,186 --> 01:01:01,606
+it's zero.
+
+1707
+01:01:01,826 --> 01:01:02,126
+Yeah,
+
+1708
+01:01:02,126 --> 01:01:04,746
+this falls and falls and falls and falls,
+
+1709
+01:01:05,286 --> 01:01:07,686
+but it never falls as fast as an exponential,
+
+1710
+01:01:09,866 --> 01:01:11,616
+and it fails to have
+
+1711
+01:01:11,616 --> 01:01:13,366
+a finite limit at the end.
+
+1712
+01:01:13,366 --> 01:01:14,106
+Right.
+
+1713
+01:01:14,206 --> 01:01:15,586
+So what is known...
+
+1714
+01:01:15,586 --> 01:01:17,766
+This requires a proof,
+
+1715
+01:01:17,766 --> 01:01:19,666
+and it requires some work,
+
+1716
+01:01:20,026 --> 01:01:22,766
+but what's known is right at the critical point,
+
+1717
+01:01:22,906 --> 01:01:24,466
+right at that critical point,
+
+1718
+01:01:25,346 --> 01:01:27,726
+this just falls off as a power law.
+
+1719
+01:01:28,306 --> 01:01:32,406
+This falls off gradually as a power law,
+
+1720
+01:01:32,586 --> 01:01:33,806
+not as an exponential.
+
+1721
+01:01:34,486 --> 01:01:37,226
+That's the characteristic critical behavior,
+
+1722
+01:01:37,406 --> 01:01:40,726
+that the correlations are long-range,
+
+1723
+01:01:40,726 --> 01:01:43,006
+sort of 1 over r to a power.
+
+1724
+01:01:43,786 --> 01:01:45,586
+For the two-dimensional Ising model,
+
+1725
+01:01:45,726 --> 01:01:48,446
+it's 1 over distance to the 1 eighth,
+
+1726
+01:01:48,706 --> 01:01:50,546
+so it gradually falls off.
+
+1727
+01:01:50,646 --> 01:01:51,966
+The number is not terribly important.
+
+1728
+01:01:52,946 --> 01:01:53,466
+Okay,
+
+1729
+01:01:53,466 --> 01:01:55,466
+so that's one of the things that happens
+
+1730
+01:01:55,466 --> 01:01:56,426
+at that critical point.
+
+1731
+01:01:56,886 --> 01:01:57,406
+Now,
+
+1732
+01:01:57,406 --> 01:01:59,566
+as you approach the critical point,
+
+1733
+01:01:59,646 --> 01:02:01,966
+imagine that you looked microscopically
+
+1734
+01:02:03,606 --> 01:02:05,026
+at the magnet.
+
+1735
+01:02:08,706 --> 01:02:10,646
+The correlation length here,
+
+1736
+01:02:10,786 --> 01:02:12,666
+the fact that it has some size,
+
+1737
+01:02:12,666 --> 01:02:14,866
+what it's really telling you
+
+1738
+01:02:14,866 --> 01:02:17,716
+is that the magnet is
+
+1739
+01:02:17,716 --> 01:02:20,566
+filled up with blobs of spins,
+
+1740
+01:02:21,586 --> 01:02:22,806
+bubbles of spins,
+
+1741
+01:02:23,026 --> 01:02:25,506
+more or less pointing in the same direction.
+
+1742
+01:02:29,306 --> 01:02:31,726
+There are blobs of spins up.
+
+1743
+01:02:32,146 --> 01:02:33,946
+There are blobs down,
+
+1744
+01:02:34,106 --> 01:02:35,906
+but they're not exactly all up.
+
+1745
+01:02:36,366 --> 01:02:38,786
+They're somewhat biased toward up.
+
+1746
+01:02:38,846 --> 01:02:41,066
+They're somewhat biased toward down over here,
+
+1747
+01:02:41,206 --> 01:02:42,646
+somewhat biased toward up.
+
+1748
+01:02:42,646 --> 01:02:43,126
+Down.
+
+1749
+01:02:45,306 --> 01:02:46,786
+A kind of patchwork
+
+1750
+01:02:48,706 --> 01:02:51,406
+where the patches tend to be
+
+1751
+01:02:51,406 --> 01:02:53,526
+about as big as the correlation length.
+
+1752
+01:02:54,126 --> 01:02:57,286
+If you take two points beyond the correlation length,
+
+1753
+01:02:59,306 --> 01:03:01,606
+out way past the correlation length,
+
+1754
+01:03:01,846 --> 01:03:04,466
+there isn't much correlation between them.
+
+1755
+01:03:04,846 --> 01:03:06,276
+Something over here is as
+
+1756
+01:03:06,276 --> 01:03:07,706
+likely to be up or down
+
+1757
+01:03:07,706 --> 01:03:09,006
+if this is up.
+
+1758
+01:03:09,506 --> 01:03:11,066
+But if your two points
+
+1759
+01:03:11,066 --> 01:03:12,626
+are within one of these blobs,
+
+1760
+01:03:14,046 --> 01:03:16,866
+then most likely they're pointing the same direction.
+
+1761
+01:03:17,246 --> 01:03:17,906
+All right,
+
+1762
+01:03:17,906 --> 01:03:18,886
+so it's this blob,
+
+1763
+01:03:19,066 --> 01:03:20,766
+it's this formation of these bubbles
+
+1764
+01:03:20,766 --> 01:03:22,866
+or blobs of material.
+
+1765
+01:03:23,746 --> 01:03:24,506
+It could be,
+
+1766
+01:03:24,506 --> 01:03:25,646
+it's really,
+
+1767
+01:03:25,646 --> 01:03:26,006
+what is it,
+
+1768
+01:03:26,066 --> 01:03:28,766
+it's liquid gas in the case of the fluid,
+
+1769
+01:03:28,866 --> 01:03:30,156
+or up spins and down spins
+
+1770
+01:03:30,156 --> 01:03:31,446
+in the case of the magnet.
+
+1771
+01:03:33,186 --> 01:03:36,606
+These structures more or less follow in size
+
+1772
+01:03:36,606 --> 01:03:38,146
+the correlation length.
+
+1773
+01:03:38,766 --> 01:03:42,126
+So this M of T is basically just the inverse
+
+1774
+01:03:42,126 --> 01:03:45,006
+of the size of the blobs that you would see
+
+1775
+01:03:45,006 --> 01:03:47,226
+if you looked carefully.
+
+1776
+01:03:47,586 --> 01:03:48,586
+Size one over M?
+
+1777
+01:03:48,746 --> 01:03:49,206
+Yeah,
+
+1778
+01:03:49,206 --> 01:03:50,346
+size one over M.
+
+1779
+01:03:50,906 --> 01:03:51,466
+Right.
+
+1780
+01:03:52,526 --> 01:03:54,036
+And as you get closer
+
+1781
+01:03:54,036 --> 01:03:55,546
+and closer to the critical point,
+
+1782
+01:03:55,786 --> 01:03:58,646
+what happens to M is it goes to zero.
+
+1783
+01:04:00,606 --> 01:04:01,966
+M goes to zero.
+
+1784
+01:04:02,266 --> 01:04:04,926
+It's no longer a exponential,
+
+1785
+01:04:05,286 --> 01:04:07,406
+but gives way to a power law,
+
+1786
+01:04:08,966 --> 01:04:12,106
+and that corresponds to M going to zero.
+
+1787
+01:04:12,126 --> 01:04:13,426
+All right,
+
+1788
+01:04:13,426 --> 01:04:16,266
+or the correlation length blowing up.
+
+1789
+01:04:16,666 --> 01:04:19,166
+The correlation length gets bigger and bigger,
+
+1790
+01:04:19,306 --> 01:04:22,106
+bigger and bigger blobs like this.
+
+1791
+01:04:23,266 --> 01:04:24,586
+So that's what,
+
+1792
+01:04:24,586 --> 01:04:25,406
+now what happens?
+
+1793
+01:04:26,686 --> 01:04:27,766
+Of course,
+
+1794
+01:04:27,766 --> 01:04:28,766
+I should say this,
+
+1795
+01:04:28,886 --> 01:04:31,606
+that each one of these
+
+1796
+01:04:31,606 --> 01:04:34,326
+blobs is not a pure phase.
+
+1797
+01:04:34,826 --> 01:04:37,506
+It is not pure all spins up.
+
+1798
+01:04:37,626 --> 01:04:39,906
+This one is not all spins down.
+
+1799
+01:04:40,166 --> 01:04:42,106
+This one just has all spins up.
+
+1800
+01:04:42,746 --> 01:04:44,906
+This one has a preference for ups.
+
+1801
+01:04:45,426 --> 01:04:48,486
+This one has a mild preference for downs.
+
+1802
+01:04:49,706 --> 01:04:52,366
+What happens as you get closer and closer
+
+1803
+01:04:52,366 --> 01:04:53,526
+to the critical point,
+
+1804
+01:04:53,526 --> 01:04:54,486
+two things happen.
+
+1805
+01:04:56,366 --> 01:04:57,526
+First of all,
+
+1806
+01:04:57,526 --> 01:04:59,086
+these blobs get bigger and bigger.
+
+1807
+01:04:59,986 --> 01:05:01,486
+But second of all,
+
+1808
+01:05:01,486 --> 01:05:02,886
+they tend to fade.
+
+1809
+01:05:03,186 --> 01:05:04,746
+Fade means they,
+
+1810
+01:05:04,746 --> 01:05:06,246
+what's the word when you put
+
+1811
+01:05:06,246 --> 01:05:09,246
+your nice colored shirt with lots of contrast
+
+1812
+01:05:09,246 --> 01:05:11,146
+through the washing machine too many times?
+
+1813
+01:05:11,146 --> 01:05:11,866
+Bleed.
+
+1814
+01:05:13,026 --> 01:05:13,506
+Well,
+
+1815
+01:05:13,506 --> 01:05:13,986
+fade.
+
+1816
+01:05:14,926 --> 01:05:15,406
+Fade.
+
+1817
+01:05:15,646 --> 01:05:17,076
+If you were to look at
+
+1818
+01:05:17,076 --> 01:05:18,506
+this as you move closer and closer
+
+1819
+01:05:18,506 --> 01:05:19,666
+to the critical point,
+
+1820
+01:05:19,666 --> 01:05:22,726
+what you would see is these blobs blowing up.
+
+1821
+01:05:23,446 --> 01:05:23,926
+Okay.
+
+1822
+01:05:24,486 --> 01:05:24,966
+Now,
+
+1823
+01:05:24,966 --> 01:05:25,686
+you could say,
+
+1824
+01:05:25,686 --> 01:05:26,266
+all right,
+
+1825
+01:05:26,266 --> 01:05:28,326
+let me just try to restore some,
+
+1826
+01:05:28,326 --> 01:05:29,246
+some,
+
+1827
+01:05:29,246 --> 01:05:30,546
+just for convenience,
+
+1828
+01:05:30,546 --> 01:05:33,626
+let me squeeze the whole thing down
+
+1829
+01:05:34,206 --> 01:05:36,506
+so that the blobs have the same size.
+
+1830
+01:05:36,746 --> 01:05:38,326
+I'll have to make the lattice smaller.
+
+1831
+01:05:39,426 --> 01:05:39,966
+All right.
+
+1832
+01:05:39,966 --> 01:05:40,966
+I'm just going to do that.
+
+1833
+01:05:41,086 --> 01:05:42,406
+I'm going to do it
+
+1834
+01:05:42,406 --> 01:05:43,726
+as I move closer and closer
+
+1835
+01:05:43,726 --> 01:05:44,706
+to the critical point.
+
+1836
+01:05:44,966 --> 01:05:47,226
+The blobs indeed get bigger and bigger.
+
+1837
+01:05:47,426 --> 01:05:48,946
+But just as a matter of convenience,
+
+1838
+01:05:48,946 --> 01:05:51,686
+so that I don't have to draw the whole thing
+
+1839
+01:05:51,686 --> 01:05:53,966
+on a blackboard which is 20 miles long,
+
+1840
+01:05:53,966 --> 01:05:57,146
+what I'll do instead is rescale
+
+1841
+01:05:57,146 --> 01:05:58,916
+the whole diagram so that
+
+1842
+01:05:58,916 --> 01:06:00,686
+the blobs remain the same size.
+
+1843
+01:06:02,346 --> 01:06:04,086
+The blobs remain the same size.
+
+1844
+01:06:04,386 --> 01:06:04,826
+Moreover,
+
+1845
+01:06:04,826 --> 01:06:06,766
+there are blobs within blobs.
+
+1846
+01:06:09,106 --> 01:06:09,946
+There are blobs within blobs.
+
+1847
+01:06:09,946 --> 01:06:10,826
+There are blobs within blobs.
+
+1848
+01:06:10,886 --> 01:06:11,686
+There are blobs within blobs.
+
+1849
+01:06:11,926 --> 01:06:15,986
+But the net effect in the biggest
+
+1850
+01:06:15,986 --> 01:06:20,046
+blobs is to be on the average upspin.
+
+1851
+01:06:20,126 --> 01:06:23,186
+In the biggest blobs of the downspin type,
+
+1852
+01:06:23,186 --> 01:06:24,866
+the net effect is to be downspin.
+
+1853
+01:06:24,926 --> 01:06:26,366
+So that's what the correlation length is.
+
+1854
+01:06:26,966 --> 01:06:29,186
+But what happens to these blobs,
+
+1855
+01:06:29,186 --> 01:06:32,426
+even if you plot them always in such a way
+
+1856
+01:06:32,426 --> 01:06:33,946
+that their size looks the same,
+
+1857
+01:06:33,946 --> 01:06:37,046
+this is just an arbitrary rescaling of the lattice,
+
+1858
+01:06:37,246 --> 01:06:39,046
+just so that we can redraw it.
+
+1859
+01:06:40,026 --> 01:06:42,406
+So that I don't have to run out of the
+
+1860
+01:06:42,406 --> 01:06:44,786
+room to the next room out there to get closer and
+
+1861
+01:06:44,786 --> 01:06:45,826
+closer to the critical point.
+
+1862
+01:06:46,946 --> 01:06:47,426
+Instead,
+
+1863
+01:06:47,426 --> 01:06:50,176
+we imagine in our heads making the
+
+1864
+01:06:50,176 --> 01:06:52,926
+lattice spacing much smaller so that the blobs
+
+1865
+01:06:52,926 --> 01:06:55,786
+occupy more and more lattice spacings.
+
+1866
+01:06:57,006 --> 01:06:59,466
+But in addition to the blobs getting bigger,
+
+1867
+01:06:59,466 --> 01:07:01,486
+they get fainter.
+
+1868
+01:07:01,666 --> 01:07:02,366
+They get,
+
+1869
+01:07:02,366 --> 01:07:03,906
+what's the right word,
+
+1870
+01:07:03,906 --> 01:07:06,166
+bleached I think somebody said.
+
+1871
+01:07:08,986 --> 01:07:09,466
+Faded.
+
+1872
+01:07:10,246 --> 01:07:13,826
+Faded like putting your polka dot
+
+1873
+01:07:13,826 --> 01:07:17,406
+black and white shirt through the dishwasher,
+
+1874
+01:07:17,606 --> 01:07:18,146
+not the dishwasher,
+
+1875
+01:07:18,146 --> 01:07:20,026
+the washing machine too many times.
+
+1876
+01:07:20,466 --> 01:07:22,826
+And what will happen?
+
+1877
+01:07:22,966 --> 01:07:24,006
+After a while,
+
+1878
+01:07:24,006 --> 01:07:27,116
+the contrast between the up blobs and
+
+1879
+01:07:27,116 --> 01:07:30,226
+the down blobs will get weaker and
+
+1880
+01:07:30,226 --> 01:07:31,026
+weaker and weaker.
+
+1881
+01:07:31,586 --> 01:07:33,726
+That's what happens at the critical point.
+
+1882
+01:07:34,666 --> 01:07:35,586
+In fact,
+
+1883
+01:07:35,586 --> 01:07:36,546
+at the critical point,
+
+1884
+01:07:36,546 --> 01:07:37,996
+you have blobs of every
+
+1885
+01:07:37,996 --> 01:07:39,446
+size right at the critical point.
+
+1886
+01:07:39,466 --> 01:07:43,926
+When the biggest blobs grow to infinity,
+
+1887
+01:07:43,926 --> 01:07:46,126
+there are still smaller blobs.
+
+1888
+01:07:46,206 --> 01:07:49,926
+The biggest blobs grow to infinity but are infinitely faded.
+
+1889
+01:07:50,326 --> 01:07:52,286
+The next biggest blobs,
+
+1890
+01:07:52,286 --> 01:07:56,606
+they're still there,
+
+1891
+01:07:56,606 --> 01:07:58,466
+they're still there pretty big,
+
+1892
+01:07:58,566 --> 01:08:00,506
+they're not quite as faded.
+
+1893
+01:08:01,106 --> 01:08:02,906
+Smaller blobs within blobs,
+
+1894
+01:08:02,906 --> 01:08:06,546
+not quite as faded as their predecessors,
+
+1895
+01:08:06,546 --> 01:08:08,906
+and smaller.
+
+1896
+01:08:08,906 --> 01:08:11,406
+What happens at the critical point
+
+1897
+01:08:11,406 --> 01:08:13,906
+is a kind of self-similar fractal structure.
+
+1898
+01:08:14,726 --> 01:08:18,786
+A self-similar fractal structure that on every scale,
+
+1899
+01:08:18,786 --> 01:08:20,026
+if you look at it,
+
+1900
+01:08:20,026 --> 01:08:21,366
+you see the same
+
+1901
+01:08:21,366 --> 01:08:21,866
+thing,
+
+1902
+01:08:21,866 --> 01:08:26,046
+namely blobs within blobs within blobs,
+
+1903
+01:08:26,046 --> 01:08:29,446
+but as you look on smaller and smaller scales,
+
+1904
+01:08:29,725 --> 01:08:30,866
+the contrast,
+
+1905
+01:08:30,866 --> 01:08:33,765
+the density contrast gets stronger and stronger.
+
+1906
+01:08:35,185 --> 01:08:37,386
+If at the same time,
+
+1907
+01:08:37,386 --> 01:08:41,006
+that you rescale the lattice,
+
+1908
+01:08:41,006 --> 01:08:44,345
+push the temperature closer to the critical point,
+
+1909
+01:08:44,446 --> 01:08:46,706
+push the temperature closer to the critical point,
+
+1910
+01:08:46,706 --> 01:08:48,746
+rescale the lattice,
+
+1911
+01:08:51,066 --> 01:08:54,786
+and also rescale the density,
+
+1912
+01:08:54,786 --> 01:08:55,725
+the contrast,
+
+1913
+01:08:55,725 --> 01:08:56,946
+the contrast,
+
+1914
+01:08:56,946 --> 01:08:58,106
+you know,
+
+1915
+01:08:58,106 --> 01:08:59,206
+you have your television
+
+1916
+01:08:59,206 --> 01:09:00,486
+and you turn down the
+
+1917
+01:09:00,486 --> 01:09:01,765
+contrast or turn up the contrast.
+
+1918
+01:09:02,265 --> 01:09:04,706
+As you look at smaller and smaller blobs,
+
+1919
+01:09:05,526 --> 01:09:07,845
+if you turn down the contrast,
+
+1920
+01:09:07,845 --> 01:09:11,106
+then you literally see the same thing at every scale.
+
+1921
+01:09:12,286 --> 01:09:15,606
+The only distinction between what you see at
+
+1922
+01:09:15,606 --> 01:09:18,926
+one scale and another scale is the intensity
+
+1923
+01:09:18,926 --> 01:09:20,946
+of the contrast between the blobs.
+
+1924
+01:09:21,446 --> 01:09:22,765
+If you allow for that,
+
+1925
+01:09:22,765 --> 01:09:25,676
+if you allow for the decrease
+
+1926
+01:09:25,676 --> 01:09:28,586
+or the fading of the contrast from,
+
+1927
+01:09:29,786 --> 01:09:33,286
+as you get closer and closer to the critical point,
+
+1928
+01:09:33,286 --> 01:09:36,286
+then what you see is just a self-similar
+
+1929
+01:09:36,286 --> 01:09:39,286
+fractal which looks the same on every scale.
+
+1930
+01:09:40,486 --> 01:09:42,286
+Everybody know what I mean by self-similar?
+
+1931
+01:09:43,866 --> 01:09:46,106
+It just means it looks the same in every scale.
+
+1932
+01:09:46,265 --> 01:09:47,496
+You could not tell by
+
+1933
+01:09:47,496 --> 01:09:48,725
+looking at it through a microscope,
+
+1934
+01:09:48,725 --> 01:09:49,725
+unless your microscope,
+
+1935
+01:09:49,725 --> 01:09:50,225
+of course,
+
+1936
+01:09:51,145 --> 01:09:53,946
+was strong enough to see the actual lattice structure.
+
+1937
+01:09:54,386 --> 01:09:56,176
+I'm assuming we have a microscope
+
+1938
+01:09:56,176 --> 01:09:57,966
+which can't see the actual lattice structure,
+
+1939
+01:09:58,446 --> 01:09:59,826
+but it sees blobs.
+
+1940
+01:10:00,506 --> 01:10:02,546
+Then at the critical point,
+
+1941
+01:10:02,546 --> 01:10:03,846
+at the critical point,
+
+1942
+01:10:03,846 --> 01:10:05,226
+you cannot tell,
+
+1943
+01:10:05,406 --> 01:10:07,526
+or close to the critical point,
+
+1944
+01:10:07,706 --> 01:10:11,206
+you cannot tell how big the,
+
+1945
+01:10:11,366 --> 01:10:12,226
+well,
+
+1946
+01:10:12,226 --> 01:10:13,966
+you can't tell which blobs you're looking at,
+
+1947
+01:10:14,046 --> 01:10:15,026
+they all look the same,
+
+1948
+01:10:16,026 --> 01:10:18,466
+except for the strength of the density contrast.
+
+1949
+01:10:18,846 --> 01:10:19,646
+The smaller they are,
+
+1950
+01:10:19,646 --> 01:10:23,446
+the stronger the density contrast.
+
+1951
+01:10:23,946 --> 01:10:24,626
+In fact,
+
+1952
+01:10:24,626 --> 01:10:26,546
+if you get down to the lattice spacing itself,
+
+1953
+01:10:27,266 --> 01:10:30,366
+you will see upspins and downspins.
+
+1954
+01:10:30,666 --> 01:10:32,406
+Upspins are absolutely black,
+
+1955
+01:10:32,546 --> 01:10:34,586
+downspins are absolutely white,
+
+1956
+01:10:34,826 --> 01:10:38,126
+and so you'll see spins next to each other,
+
+1957
+01:10:38,266 --> 01:10:40,226
+slightly biased maybe,
+
+1958
+01:10:40,466 --> 01:10:43,346
+but with very strong contrast.
+
+1959
+01:10:43,886 --> 01:10:45,106
+On the other hand,
+
+1960
+01:10:45,106 --> 01:10:46,666
+these very big lumps here,
+
+1961
+01:10:46,846 --> 01:10:51,746
+those very big lumps will have weak contrast.
+
+1962
+01:10:52,526 --> 01:10:53,606
+In fact,
+
+1963
+01:10:53,606 --> 01:10:56,526
+the fact that the contrast gets more and more faded
+
+1964
+01:10:56,526 --> 01:10:58,846
+is just the fact that this
+
+1965
+01:10:58,846 --> 01:11:01,166
+correlation function gets smaller and smaller
+
+1966
+01:11:01,166 --> 01:11:04,166
+as the distance between things gets big.
+
+1967
+01:11:04,886 --> 01:11:08,366
+As the distance between points gets big,
+
+1968
+01:11:08,546 --> 01:11:10,526
+right at the critical point,
+
+1969
+01:11:10,726 --> 01:11:12,726
+there are blobs of every size,
+
+1970
+01:11:15,066 --> 01:11:17,626
+but if you take two points,
+
+1971
+01:11:17,866 --> 01:11:20,356
+the correlation will mainly be due
+
+1972
+01:11:20,356 --> 01:11:22,846
+to blobs of about the scale
+
+1973
+01:11:22,846 --> 01:11:24,226
+between the two points.
+
+1974
+01:11:25,266 --> 01:11:27,706
+What is it that will lead
+
+1975
+01:11:27,706 --> 01:11:30,146
+to a correlation between these two points?
+
+1976
+01:11:30,146 --> 01:11:33,626
+The likelihood that there's a blob about that big.
+
+1977
+01:11:35,426 --> 01:11:37,386
+The further apart you take them,
+
+1978
+01:11:37,546 --> 01:11:39,986
+you'll be sampling bigger and bigger blobs,
+
+1979
+01:11:40,006 --> 01:11:42,206
+but bigger and bigger blobs have less contrast,
+
+1980
+01:11:42,806 --> 01:11:45,866
+and that's why the correlation function falls
+
+1981
+01:11:45,866 --> 01:11:47,506
+and goes to zero,
+
+1982
+01:11:47,666 --> 01:11:49,306
+because for very,
+
+1983
+01:11:49,306 --> 01:11:50,626
+very big blobs,
+
+1984
+01:11:50,646 --> 01:11:53,186
+the contrast has faded.
+
+1985
+01:11:53,706 --> 01:11:55,696
+You can actually see this
+
+1986
+01:11:55,696 --> 01:11:57,686
+in simulations of magnetic systems.
+
+1987
+01:11:57,686 --> 01:11:59,346
+You look at the simulations,
+
+1988
+01:11:59,506 --> 01:12:01,516
+and you see patterns of blobs
+
+1989
+01:12:01,516 --> 01:12:03,526
+and blobs and blobs inside blobs.
+
+1990
+01:12:03,586 --> 01:12:04,746
+It's hard to really see anything.
+
+1991
+01:12:04,906 --> 01:12:05,346
+More or less,
+
+1992
+01:12:05,346 --> 01:12:07,706
+you see white noise or black noise or whatever.
+
+1993
+01:12:08,106 --> 01:12:09,286
+But if you look carefully,
+
+1994
+01:12:09,406 --> 01:12:11,786
+you can see some slightly overdense regions,
+
+1995
+01:12:12,006 --> 01:12:13,406
+some slightly underdense regions,
+
+1996
+01:12:13,726 --> 01:12:15,196
+and then as you tune
+
+1997
+01:12:15,196 --> 01:12:16,666
+the system toward the critical point,
+
+1998
+01:12:16,986 --> 01:12:19,746
+the overdense regions and the underdense regions grow,
+
+1999
+01:12:20,006 --> 01:12:23,086
+and you'll also see that they have blobs inside them
+
+2000
+01:12:23,086 --> 01:12:24,526
+which are even more overdense,
+
+2001
+01:12:24,526 --> 01:12:26,526
+and blobs inside blobs inside blobs.
+
+2002
+01:12:26,526 --> 01:12:29,166
+And so this pattern of self-similarity
+
+2003
+01:12:30,966 --> 01:12:35,306
+is the first thing that happens at the critical point.
+
+2004
+01:12:35,606 --> 01:12:37,666
+Something else happens at the critical point.
+
+2005
+01:12:38,406 --> 01:12:41,346
+If you look at these blobs,
+
+2006
+01:12:41,486 --> 01:12:43,306
+the theory of these blobs,
+
+2007
+01:12:43,366 --> 01:12:48,526
+the actual lattice itself was not very symmetric.
+
+2008
+01:12:48,886 --> 01:12:50,926
+It certainly did not have circular symmetry.
+
+2009
+01:12:52,146 --> 01:12:53,806
+It has just square symmetry.
+
+2010
+01:12:53,986 --> 01:12:55,066
+It's a square lattice,
+
+2011
+01:12:55,066 --> 01:12:55,886
+for example,
+
+2012
+01:12:55,886 --> 01:12:59,006
+and so it's not isotropic.
+
+2013
+01:12:59,086 --> 01:13:00,506
+It's by no means isotropic,
+
+2014
+01:13:00,706 --> 01:13:06,666
+and you would not expect the properties of the magnet
+
+2015
+01:13:08,606 --> 01:13:10,126
+to look isotropic.
+
+2016
+01:13:10,626 --> 01:13:12,366
+You wouldn't expect the correlation function
+
+2017
+01:13:12,366 --> 01:13:13,906
+to be truly isotropic.
+
+2018
+01:13:14,126 --> 01:13:16,986
+You would expect it to be different along the axes
+
+2019
+01:13:16,986 --> 01:13:19,186
+than it is along the 45-degree angles.
+
+2020
+01:13:19,866 --> 01:13:21,576
+But as you get closer
+
+2021
+01:13:21,576 --> 01:13:23,286
+and closer to the critical point,
+
+2022
+01:13:23,466 --> 01:13:25,586
+the system loses memory.
+
+2023
+01:13:25,886 --> 01:13:27,336
+And so you have this theory
+
+2024
+01:13:27,336 --> 01:13:28,786
+of the basic underlying lattice theory,
+
+2025
+01:13:30,586 --> 01:13:35,066
+and it just gets more and more rotationally symmetric,
+
+2026
+01:13:35,366 --> 01:13:37,186
+more and more isotropic,
+
+2027
+01:13:37,886 --> 01:13:40,306
+until right at the critical point,
+
+2028
+01:13:40,406 --> 01:13:41,746
+by looking at these big,
+
+2029
+01:13:41,746 --> 01:13:42,426
+big blobs,
+
+2030
+01:13:42,506 --> 01:13:45,946
+you cannot tell which direction the lattice is oriented.
+
+2031
+01:13:46,346 --> 01:13:48,046
+So that's another thing that happens,
+
+2032
+01:13:48,286 --> 01:13:51,946
+a washout of the basic starting point,
+
+2033
+01:13:51,946 --> 01:13:52,466
+if you like,
+
+2034
+01:13:52,626 --> 01:13:55,046
+the basic starting point being some specific lattice,
+
+2035
+01:13:58,086 --> 01:13:59,666
+with a given orientation.
+
+2036
+01:14:00,546 --> 01:14:01,986
+I'll give you another example.
+
+2037
+01:14:02,526 --> 01:14:05,846
+We might have made a more complicated structure.
+
+2038
+01:14:06,665 --> 01:14:09,666
+Instead of the magnet having only nearest-neighbor coupling,
+
+2039
+01:14:09,906 --> 01:14:13,026
+we might have had a lattice with nearest-neighbor
+
+2040
+01:14:13,026 --> 01:14:14,506
+and second-nearest-neighbor coupling,
+
+2041
+01:14:14,726 --> 01:14:18,866
+or neighboring couplings
+
+2042
+01:14:22,665 --> 01:14:24,146
+this spin times this spin,
+
+2043
+01:14:24,146 --> 01:14:26,386
+but maybe also diagonal couplings,
+
+2044
+01:14:26,626 --> 01:14:27,106
+spins,
+
+2045
+01:14:27,106 --> 01:14:30,306
+energy of the spins,
+
+2046
+01:14:31,686 --> 01:14:34,726
+depending on diagonal couplings,
+
+2047
+01:14:34,766 --> 01:14:36,606
+and maybe second-nearest-neighbor couplings,
+
+2048
+01:14:36,606 --> 01:14:37,246
+and so forth.
+
+2049
+01:14:37,446 --> 01:14:39,626
+We might have invented a more complicated model,
+
+2050
+01:14:41,406 --> 01:14:42,566
+sigma times sigma,
+
+2051
+01:14:42,566 --> 01:14:43,286
+nearest-neighbor,
+
+2052
+01:14:43,326 --> 01:14:44,326
+plus sigma times sigma,
+
+2053
+01:14:44,326 --> 01:14:45,626
+times next-nearest-neighbor,
+
+2054
+01:14:45,626 --> 01:14:46,266
+and so forth.
+
+2055
+01:14:49,446 --> 01:14:52,326
+Let's suppose that all the bonds
+
+2056
+01:14:52,326 --> 01:14:55,126
+favor parallel spins.
+
+2057
+01:14:55,506 --> 01:14:57,846
+Let's suppose that it tends to favor parallel spins.
+
+2058
+01:14:58,366 --> 01:15:01,126
+Then there are detailed differences
+
+2059
+01:15:01,126 --> 01:15:04,006
+between a magnet with second-nearest-neighbor couplings
+
+2060
+01:15:04,006 --> 01:15:09,186
+and first-nearest-neighbor couplings.
+
+2061
+01:15:09,266 --> 01:15:10,286
+They're in detail different.
+
+2062
+01:15:11,125 --> 01:15:13,606
+The details of the thermodynamics are different,
+
+2063
+01:15:14,426 --> 01:15:15,886
+and in particular they're
+
+2064
+01:15:15,886 --> 01:15:17,346
+quite different at high temperatures,
+
+2065
+01:15:17,546 --> 01:15:19,966
+where the correlation length is very small.
+
+2066
+01:15:23,066 --> 01:15:24,426
+In general,
+
+2067
+01:15:24,426 --> 01:15:26,386
+the details of the lattice
+
+2068
+01:15:26,386 --> 01:15:27,706
+and the details of the structure
+
+2069
+01:15:28,326 --> 01:15:31,606
+will be remembered at the high-temperature limit,
+
+2070
+01:15:32,506 --> 01:15:34,906
+but as you lower the temperature
+
+2071
+01:15:34,906 --> 01:15:36,866
+and these blobs get bigger and bigger,
+
+2072
+01:15:37,106 --> 01:15:40,346
+the system starts to forget what the details were.
+
+2073
+01:15:41,125 --> 01:15:43,375
+So the critical behavior
+
+2074
+01:15:43,375 --> 01:15:45,626
+of the second-nearest-neighbor coupled lattice
+
+2075
+01:15:46,026 --> 01:15:48,546
+is exactly the same as the critical behavior
+
+2076
+01:15:48,546 --> 01:15:50,746
+of the first-nearest-neighbor coupled lattice.
+
+2077
+01:15:50,746 --> 01:15:54,746
+The diagonal bonds don't do very much.
+
+2078
+01:15:54,886 --> 01:15:56,026
+They may shift.
+
+2079
+01:15:56,186 --> 01:15:58,186
+What they will do is they will shift
+
+2080
+01:15:58,186 --> 01:15:59,786
+the critical temperature a little bit.
+
+2081
+01:16:01,406 --> 01:16:04,906
+The effect of changing the bonds
+
+2082
+01:16:04,906 --> 01:16:08,506
+and the nature of the microscopic interaction
+
+2083
+01:16:08,506 --> 01:16:10,046
+between molecules,
+
+2084
+01:16:10,426 --> 01:16:12,786
+it will have the effect in general
+
+2085
+01:16:12,786 --> 01:16:16,306
+that it may change the critical temperature a little bit.
+
+2086
+01:16:16,826 --> 01:16:19,786
+But whatever the critical temperature is,
+
+2087
+01:16:19,786 --> 01:16:21,046
+as you approach it,
+
+2088
+01:16:21,846 --> 01:16:23,026
+whatever it is,
+
+2089
+01:16:23,506 --> 01:16:26,146
+you'll always see exactly the same pattern
+
+2090
+01:16:26,786 --> 01:16:30,706
+of fractal self-similar type of structure,
+
+2091
+01:16:31,966 --> 01:16:34,806
+which will forget the details of the lattice.
+
+2092
+01:16:35,286 --> 01:16:37,206
+That's the nature of critical behavior.
+
+2093
+01:16:38,406 --> 01:16:41,026
+Bubbles or blobs at every length scale,
+
+2094
+01:16:41,706 --> 01:16:43,986
+stronger ones at small length scale,
+
+2095
+01:16:44,306 --> 01:16:46,566
+more faded ones at large length scale,
+
+2096
+01:16:46,666 --> 01:16:48,526
+contrast going down and down and down.
+
+2097
+01:16:49,786 --> 01:16:52,006
+There's an interesting experimental consequence of this.
+
+2098
+01:16:52,086 --> 01:16:53,806
+Has anybody ever seen critical opalescence?
+
+2099
+01:16:55,626 --> 01:16:57,906
+Critical opalescence is a wonderful phenomenon.
+
+2100
+01:16:58,106 --> 01:16:59,226
+If you take a liquid,
+
+2101
+01:16:59,226 --> 01:17:00,886
+helium is a good example,
+
+2102
+01:17:01,026 --> 01:17:02,186
+but any transparent liquid,
+
+2103
+01:17:02,446 --> 01:17:06,606
+and you tune its temperature toward the critical point,
+
+2104
+01:17:06,826 --> 01:17:09,666
+you tune temperature and density,
+
+2105
+01:17:09,906 --> 01:17:10,786
+move along here,
+
+2106
+01:17:11,466 --> 01:17:13,906
+getting closer and closer to the critical point,
+
+2107
+01:17:14,606 --> 01:17:17,086
+what happens is exactly this.
+
+2108
+01:17:17,126 --> 01:17:19,546
+Blobs of every length scale
+
+2109
+01:17:19,786 --> 01:17:21,626
+are in the critical form of every length scale,
+
+2110
+01:17:21,886 --> 01:17:24,106
+and the effect is that it scatters light.
+
+2111
+01:17:24,706 --> 01:17:26,406
+Light passing through it will
+
+2112
+01:17:26,406 --> 01:17:28,106
+be scattered at every wavelength.
+
+2113
+01:17:28,866 --> 01:17:30,826
+Every wavelength will be scattered
+
+2114
+01:17:31,545 --> 01:17:33,526
+pretty much the same way as every other wavelength.
+
+2115
+01:17:34,846 --> 01:17:36,906
+If you're away from the critical point,
+
+2116
+01:17:37,545 --> 01:17:40,366
+the largest blobs will have some given size,
+
+2117
+01:17:40,486 --> 01:17:43,786
+and wavelengths longer than that will not be scattered.
+
+2118
+01:17:45,306 --> 01:17:47,926
+But as you tune toward the critical wave,
+
+2119
+01:17:47,926 --> 01:17:48,866
+the critical point,
+
+2120
+01:17:49,026 --> 01:17:51,626
+longer and longer wavelengths will be scattered,
+
+2121
+01:17:51,846 --> 01:17:54,186
+and light passing through a
+
+2122
+01:17:54,186 --> 01:17:56,526
+material close to its critical point,
+
+2123
+01:17:56,646 --> 01:17:57,346
+just a...
+
+2124
+01:17:57,926 --> 01:17:59,486
+It's called critical opalescence.
+
+2125
+01:17:59,606 --> 01:18:00,806
+You can imagine what that means.
+
+2126
+01:18:01,226 --> 01:18:02,386
+It means...
+
+2127
+01:18:02,386 --> 01:18:04,366
+How would you describe opalescence?
+
+2128
+01:18:05,886 --> 01:18:06,486
+Well,
+
+2129
+01:18:06,486 --> 01:18:07,926
+all colors,
+
+2130
+01:18:07,926 --> 01:18:08,786
+all colors,
+
+2131
+01:18:08,806 --> 01:18:09,846
+it gets very milky.
+
+2132
+01:18:10,066 --> 01:18:10,886
+You have a filter.
+
+2133
+01:18:11,166 --> 01:18:12,566
+You have a filter,
+
+2134
+01:18:12,566 --> 01:18:12,886
+basically.
+
+2135
+01:18:13,286 --> 01:18:14,026
+You have a...
+
+2136
+01:18:14,026 --> 01:18:14,606
+Filter.
+
+2137
+01:18:15,386 --> 01:18:15,866
+Filter.
+
+2138
+01:18:15,966 --> 01:18:16,686
+A filter.
+
+2139
+01:18:17,926 --> 01:18:18,006
+Well,
+
+2140
+01:18:18,006 --> 01:18:19,026
+you have a filter,
+
+2141
+01:18:19,146 --> 01:18:20,946
+but the point is that it scatters light.
+
+2142
+01:18:21,086 --> 01:18:22,726
+It scatters light that...
+
+2143
+01:18:22,726 --> 01:18:25,026
+If you're close to the critical point,
+
+2144
+01:18:25,106 --> 01:18:25,906
+but not that close,
+
+2145
+01:18:26,166 --> 01:18:31,266
+you'll scatter all wavelengths down to microwaves.
+
+2146
+01:18:31,366 --> 01:18:33,346
+Get closer to the critical point,
+
+2147
+01:18:33,386 --> 01:18:35,306
+and you'll start scattering radio waves.
+
+2148
+01:18:35,426 --> 01:18:36,606
+I'm being a little bit extreme,
+
+2149
+01:18:36,606 --> 01:18:37,206
+but...
+
+2150
+01:18:37,866 --> 01:18:38,706
+At first,
+
+2151
+01:18:38,706 --> 01:18:39,886
+you scatter optical light,
+
+2152
+01:18:39,986 --> 01:18:41,886
+then you scatter optical light and infrared,
+
+2153
+01:18:42,166 --> 01:18:44,046
+then you start scattering optical light,
+
+2154
+01:18:44,086 --> 01:18:44,386
+infrared,
+
+2155
+01:18:44,386 --> 01:18:45,426
+and microwaves,
+
+2156
+01:18:45,446 --> 01:18:46,846
+then you start scattering everything.
+
+2157
+01:18:46,846 --> 01:18:50,346
+And the whole thing just looks like a milky,
+
+2158
+01:18:50,346 --> 01:18:50,666
+um,
+
+2159
+01:18:50,666 --> 01:18:52,646
+opalescent material.
+
+2160
+01:18:53,466 --> 01:18:55,246
+It loses its transparency
+
+2161
+01:18:55,246 --> 01:18:57,806
+because it just scatters at every wavelength.
+
+2162
+01:18:58,806 --> 01:19:00,686
+So that's called critical opalescence,
+
+2163
+01:19:00,786 --> 01:19:01,926
+and it's a real phenomenon.
+
+2164
+01:19:02,046 --> 01:19:02,726
+I wish I had...
+
+2165
+01:19:02,726 --> 01:19:03,806
+I wish I could show it to you here,
+
+2166
+01:19:03,926 --> 01:19:05,306
+but I don't have any liquid helium.
+
+2167
+01:19:05,486 --> 01:19:08,786
+I think liquid helium is probably the best example.
+
+2168
+01:19:09,026 --> 01:19:10,666
+Is this approaching the critical mass
+
+2169
+01:19:10,666 --> 01:19:12,446
+by cooling to it or...
+
+2170
+01:19:12,446 --> 01:19:12,886
+Critical.
+
+2171
+01:19:12,886 --> 01:19:12,926
+Critical.
+
+2172
+01:19:13,526 --> 01:19:15,566
+By cooling or by heating to it?
+
+2173
+01:19:15,566 --> 01:19:16,186
+It doesn't matter,
+
+2174
+01:19:16,186 --> 01:19:16,626
+really,
+
+2175
+01:19:16,626 --> 01:19:20,866
+but I think it's best to do it by cooling.
+
+2176
+01:19:21,906 --> 01:19:22,426
+Yeah.
+
+2177
+01:19:22,686 --> 01:19:23,206
+Normally,
+
+2178
+01:19:23,206 --> 01:19:24,466
+it would be done by cooling.
+
+2179
+01:19:24,626 --> 01:19:26,506
+You would start above the critical temperature
+
+2180
+01:19:26,506 --> 01:19:28,866
+and slowly cool down to the critical temperature.
+
+2181
+01:19:29,346 --> 01:19:30,626
+And as you cool down,
+
+2182
+01:19:30,846 --> 01:19:32,206
+you'll discover the thing becomes
+
+2183
+01:19:32,206 --> 01:19:34,246
+a better and better scatterer of light.
+
+2184
+01:19:35,626 --> 01:19:37,826
+It doesn't really absorb the light.
+
+2185
+01:19:37,906 --> 01:19:40,306
+It just becomes not opaque.
+
+2186
+01:19:40,606 --> 01:19:41,386
+There's another word.
+
+2187
+01:19:41,886 --> 01:19:43,746
+What's in between opaque and transparent?
+
+2188
+01:19:45,386 --> 01:19:45,906
+Translucent.
+
+2189
+01:19:45,906 --> 01:19:46,886
+It becomes translucent,
+
+2190
+01:19:47,146 --> 01:19:49,366
+but translucent at every wavelength.
+
+2191
+01:19:50,166 --> 01:19:52,866
+Would that be because of the different refractive index
+
+2192
+01:19:52,866 --> 01:19:54,026
+between the solid and...
+
+2193
+01:19:54,026 --> 01:19:54,146
+I mean,
+
+2194
+01:19:54,146 --> 01:19:56,926
+the liquid and the refractive index?
+
+2195
+01:19:57,066 --> 01:19:57,586
+Yeah,
+
+2196
+01:19:57,586 --> 01:19:57,586
+yeah,
+
+2197
+01:19:57,586 --> 01:19:57,586
+yeah.
+
+2198
+01:19:58,826 --> 01:20:01,086
+There's a difference between the index of refraction
+
+2199
+01:20:01,086 --> 01:20:02,426
+and the liquid in the...
+
+2200
+01:20:02,426 --> 01:20:04,686
+And so it scatters the light.
+
+2201
+01:20:05,186 --> 01:20:05,706
+Yes,
+
+2202
+01:20:05,706 --> 01:20:06,366
+and at all scales.
+
+2203
+01:20:06,426 --> 01:20:08,466
+There are structures there at all scales
+
+2204
+01:20:08,466 --> 01:20:10,126
+that scatter the light.
+
+2205
+01:20:10,246 --> 01:20:10,426
+Right,
+
+2206
+01:20:10,426 --> 01:20:10,666
+exactly.
+
+2207
+01:20:11,826 --> 01:20:13,246
+And in fact,
+
+2208
+01:20:13,246 --> 01:20:15,026
+one word that's used to describe
+
+2209
+01:20:15,826 --> 01:20:19,206
+this self-similarity is it's called scale invariance.
+
+2210
+01:20:19,306 --> 01:20:21,266
+Scale invariance means the phenomena
+
+2211
+01:20:21,266 --> 01:20:23,686
+of things looking the same at every scale.
+
+2212
+01:20:24,246 --> 01:20:25,546
+But as a rule,
+
+2213
+01:20:25,546 --> 01:20:27,586
+you have to keep in mind
+
+2214
+01:20:27,586 --> 01:20:32,166
+that the contrasts tend to fade,
+
+2215
+01:20:32,306 --> 01:20:34,946
+and so you have to artificially jack up.
+
+2216
+01:20:35,046 --> 01:20:36,566
+As you look at the bigger and bigger things,
+
+2217
+01:20:36,646 --> 01:20:38,026
+you have to artificially renormalize,
+
+2218
+01:20:38,806 --> 01:20:39,286
+is the word,
+
+2219
+01:20:40,486 --> 01:20:42,626
+renormalize the density contrast
+
+2220
+01:20:43,846 --> 01:20:45,006
+so as to keep it the same.
+
+2221
+01:20:45,026 --> 01:20:46,306
+Then what you see at
+
+2222
+01:20:46,306 --> 01:20:47,586
+every length scale is the same.
+
+2223
+01:20:49,706 --> 01:20:51,306
+Quick question about the fading.
+
+2224
+01:20:52,966 --> 01:20:53,866
+I'm trying to understand.
+
+2225
+01:20:54,006 --> 01:20:57,266
+If you have 100 molecules or whatever,
+
+2226
+01:20:57,486 --> 01:20:58,046
+if,
+
+2227
+01:20:58,046 --> 01:20:58,326
+like,
+
+2228
+01:20:58,326 --> 01:20:59,466
+the ratio is,
+
+2229
+01:20:59,466 --> 01:20:59,726
+like,
+
+2230
+01:20:59,726 --> 01:21:01,346
+97 are spin up
+
+2231
+01:21:01,346 --> 01:21:02,306
+and 3 spin down,
+
+2232
+01:21:02,306 --> 01:21:04,026
+that's very contrasty.
+
+2233
+01:21:04,026 --> 01:21:05,706
+If it's 85-15,
+
+2234
+01:21:05,706 --> 01:21:06,546
+that's less...
+
+2235
+01:21:06,546 --> 01:21:07,306
+more fading.
+
+2236
+01:21:07,346 --> 01:21:07,466
+Right.
+
+2237
+01:21:08,146 --> 01:21:10,006
+Wouldn't that be just the entropy of it?
+
+2238
+01:21:10,386 --> 01:21:11,026
+It is.
+
+2239
+01:21:11,026 --> 01:21:12,126
+It's certainly connected to entropy.
+
+2240
+01:21:12,826 --> 01:21:14,586
+But the fact that this correlation
+
+2241
+01:21:15,026 --> 01:21:17,766
+function falls at large distances,
+
+2242
+01:21:17,786 --> 01:21:18,686
+like a power law,
+
+2243
+01:21:18,686 --> 01:21:22,606
+tells you that the intensity
+
+2244
+01:21:22,606 --> 01:21:23,746
+of the,
+
+2245
+01:21:23,746 --> 01:21:24,906
+or the contrast,
+
+2246
+01:21:24,906 --> 01:21:27,206
+within a blob of a,
+
+2247
+01:21:27,716 --> 01:21:32,106
+of a big blob is less than the intensity
+
+2248
+01:21:32,106 --> 01:21:37,146
+of the contrast of a smaller blob.
+
+2249
+01:21:37,826 --> 01:21:40,386
+So that's exactly what this falling
+
+2250
+01:21:40,386 --> 01:21:41,946
+correlation function tells you.
+
+2251
+01:21:43,266 --> 01:21:44,946
+So it's a pretty interesting phenomenon.
+
+2252
+01:21:46,206 --> 01:21:47,966
+And more than interesting,
+
+2253
+01:21:47,966 --> 01:21:49,346
+it's sort of at the root
+
+2254
+01:21:49,346 --> 01:21:50,966
+of how quantum field theory works,
+
+2255
+01:21:51,126 --> 01:21:52,966
+but we haven't talked about quantum field theory.
+
+2256
+01:21:54,866 --> 01:21:59,346
+And it is the ingredient in many approximate schemes.
+
+2257
+01:21:59,586 --> 01:22:00,746
+In many approximate schemes,
+
+2258
+01:22:00,746 --> 01:22:03,326
+you take a system
+
+2259
+01:22:03,326 --> 01:22:05,396
+which you expect at the
+
+2260
+01:22:05,396 --> 01:22:07,466
+end to be isotropic and homogeneous.
+
+2261
+01:22:07,806 --> 01:22:09,746
+You're really talking about
+
+2262
+01:22:09,746 --> 01:22:11,686
+some isotropic homogeneous thing.
+
+2263
+01:22:12,246 --> 01:22:15,006
+A quantum field theory would be a case in point
+
+2264
+01:22:15,006 --> 01:22:16,866
+where things are rotationally symmetric,
+
+2265
+01:22:17,126 --> 01:22:18,026
+translationally symmetric,
+
+2266
+01:22:18,026 --> 01:22:18,726
+and so forth,
+
+2267
+01:22:18,846 --> 01:22:20,486
+and you want to model it.
+
+2268
+01:22:20,586 --> 01:22:22,096
+You want to model it
+
+2269
+01:22:22,096 --> 01:22:23,606
+as a system on a lattice.
+
+2270
+01:22:24,086 --> 01:22:24,726
+Why?
+
+2271
+01:22:26,046 --> 01:22:28,706
+Because it's convenient to a pro...
+
+2272
+01:22:28,706 --> 01:22:32,506
+to replace the continuous distribution of field variables
+
+2273
+01:22:32,506 --> 01:22:37,026
+that fill space by an approximate version of the theory
+
+2274
+01:22:37,026 --> 01:22:39,186
+where all the degrees of
+
+2275
+01:22:39,186 --> 01:22:41,346
+freedom live on individual lattice sites.
+
+2276
+01:22:41,646 --> 01:22:42,066
+Right?
+
+2277
+01:22:42,266 --> 01:22:43,446
+What's going to happen?
+
+2278
+01:22:43,446 --> 01:22:44,126
+Well,
+
+2279
+01:22:44,126 --> 01:22:46,806
+you're going to wind up with a description
+
+2280
+01:22:47,446 --> 01:22:50,546
+where the lattice behavior will stick through
+
+2281
+01:22:50,546 --> 01:22:51,806
+and get in your way.
+
+2282
+01:22:52,286 --> 01:22:55,266
+The system will not look translational invariant
+
+2283
+01:22:55,266 --> 01:22:57,826
+because the lattice is not translationally invariant.
+
+2284
+01:22:57,846 --> 01:22:59,606
+There will be corners to
+
+2285
+01:22:59,606 --> 01:23:01,366
+things because the lattice has corners.
+
+2286
+01:23:01,986 --> 01:23:05,106
+But how do you restore in such a system
+
+2287
+01:23:05,106 --> 01:23:06,796
+the behavior that you were
+
+2288
+01:23:06,796 --> 01:23:08,486
+looking for in the first place,
+
+2289
+01:23:08,586 --> 01:23:09,706
+which was this smooth,
+
+2290
+01:23:09,706 --> 01:23:11,146
+translationally invariant,
+
+2291
+01:23:11,146 --> 01:23:12,486
+rotationally invariant behavior,
+
+2292
+01:23:12,486 --> 01:23:14,716
+and the answer is you
+
+2293
+01:23:14,716 --> 01:23:16,946
+tune yourself to a critical point.
+
+2294
+01:23:17,146 --> 01:23:18,686
+Whatever the example is,
+
+2295
+01:23:19,086 --> 01:23:21,446
+whether it's statistical mechanics or quantum field theory,
+
+2296
+01:23:21,686 --> 01:23:25,446
+you tune the parameters until you get to a point
+
+2297
+01:23:25,446 --> 01:23:27,426
+where the correlation length is much,
+
+2298
+01:23:27,426 --> 01:23:28,166
+much longer
+
+2299
+01:23:28,166 --> 01:23:29,606
+than the lattice length.
+
+2300
+01:23:30,846 --> 01:23:32,446
+And that limit,
+
+2301
+01:23:32,446 --> 01:23:34,106
+the artifacts,
+
+2302
+01:23:34,106 --> 01:23:35,786
+the lattice artifacts disappear.
+
+2303
+01:23:36,246 --> 01:23:38,826
+So this is a common tool in quantum field theory.
+
+2304
+01:23:42,546 --> 01:23:45,086
+And in statistical mechanics and so forth.
+
+2305
+01:23:45,266 --> 01:23:45,446
+Okay,
+
+2306
+01:23:45,446 --> 01:23:45,986
+so let's see.
+
+2307
+01:23:46,046 --> 01:23:46,486
+Where are we?
+
+2308
+01:23:47,726 --> 01:23:48,566
+Any questions?
+
+2309
+01:23:49,626 --> 01:23:49,766
+Yeah.
+
+2310
+01:23:49,986 --> 01:23:50,686
+I've got one.
+
+2311
+01:23:50,746 --> 01:23:53,186
+Is this related to superconductivity in any way?
+
+2312
+01:23:53,486 --> 01:23:54,566
+Not particularly.
+
+2313
+01:23:58,166 --> 01:23:59,206
+Not particularly.
+
+2314
+01:23:59,786 --> 01:24:00,866
+This is called,
+
+2315
+01:24:00,866 --> 01:24:01,666
+incidentally,
+
+2316
+01:24:01,666 --> 01:24:04,226
+the rescaling that I've described here.
+
+2317
+01:24:04,366 --> 01:24:06,616
+This rescaling and constantly pushing the
+
+2318
+01:24:06,616 --> 01:24:08,866
+blobs back to the same size,
+
+2319
+01:24:09,046 --> 01:24:10,786
+that's called renormalization group.
+
+2320
+01:24:12,486 --> 01:24:15,006
+Got to do with renormalization in quantum field theory.
+
+2321
+01:24:15,286 --> 01:24:16,426
+Does it have to do,
+
+2322
+01:24:16,426 --> 01:24:16,786
+well,
+
+2323
+01:24:16,786 --> 01:24:19,546
+yes and no.
+
+2324
+01:24:21,906 --> 01:24:23,286
+In some systems,
+
+2325
+01:24:23,286 --> 01:24:26,686
+there is a phase transition in a superfluid
+
+2326
+01:24:26,686 --> 01:24:29,186
+or in a superconductor which behaves exactly this way.
+
+2327
+01:24:29,326 --> 01:24:29,486
+Yeah,
+
+2328
+01:24:29,486 --> 01:24:32,226
+but it's not really got
+
+2329
+01:24:32,226 --> 01:24:34,966
+much to do with the phenomena
+
+2330
+01:24:34,966 --> 01:24:37,446
+of superconductivity itself.
+
+2331
+01:24:40,226 --> 01:24:40,366
+ありがとうございました
+
+2332
+01:24:40,994 --> 01:24:43,174
+Are there applications of this to cosmology,
+
+2333
+01:24:43,254 --> 01:24:45,814
+like the microwave background radiation?
+
+2334
+01:24:45,954 --> 01:24:46,234
+Yes.
+
+2335
+01:24:46,654 --> 01:24:47,234
+Yes.
+
+2336
+01:24:47,814 --> 01:24:48,394
+Yes,
+
+2337
+01:24:48,394 --> 01:24:48,894
+there are.
+
+2338
+01:24:50,314 --> 01:24:50,894
+Right.
+
+2339
+01:24:52,254 --> 01:24:53,294
+That's a good point.
+
+2340
+01:24:56,014 --> 01:24:58,754
+The fluctuations that are seen in the sky,
+
+2341
+01:25:00,853 --> 01:25:04,414
+the microwave background is very homogeneous,
+
+2342
+01:25:04,414 --> 01:25:05,114
+of course,
+
+2343
+01:25:05,154 --> 01:25:07,894
+extremely homogeneous or isotropic across the sky.
+
+2344
+01:25:07,894 --> 01:25:09,344
+But if you look at the
+
+2345
+01:25:09,344 --> 01:25:10,794
+level of 10 to the minus 5,
+
+2346
+01:25:11,394 --> 01:25:15,054
+you see over densities and under densities and so forth.
+
+2347
+01:25:16,094 --> 01:25:17,034
+In other words,
+
+2348
+01:25:17,034 --> 01:25:17,774
+you see blobs.
+
+2349
+01:25:17,834 --> 01:25:18,694
+You see a blobiness.
+
+2350
+01:25:19,414 --> 01:25:20,794
+And in fact,
+
+2351
+01:25:20,794 --> 01:25:23,314
+you see the same blobiness at every scale.
+
+2352
+01:25:23,454 --> 01:25:27,194
+You see exactly the same sort of self-similar scale
+
+2353
+01:25:28,113 --> 01:25:31,454
+invariant kind of behavior as at a critical point.
+
+2354
+01:25:31,994 --> 01:25:32,474
+Now,
+
+2355
+01:25:32,474 --> 01:25:35,714
+is it connected with critical points?
+
+2356
+01:25:35,874 --> 01:25:36,154
+Yes,
+
+2357
+01:25:36,154 --> 01:25:36,554
+it is,
+
+2358
+01:25:36,554 --> 01:25:37,754
+but not in a completely
+
+2359
+01:25:37,894 --> 01:25:38,554
+obvious way.
+
+2360
+01:25:38,674 --> 01:25:40,174
+But it looks very much
+
+2361
+01:25:40,174 --> 01:25:41,674
+what is seen in the sky.
+
+2362
+01:25:42,114 --> 01:25:44,014
+When you look at the microwave background
+
+2363
+01:25:44,014 --> 01:25:46,934
+and you see these maps of the microwave background
+
+2364
+01:25:46,934 --> 01:25:47,674
+and so forth,
+
+2365
+01:25:47,674 --> 01:25:50,694
+is self-similar in the same way
+
+2366
+01:25:50,694 --> 01:25:51,654
+that the critical point,
+
+2367
+01:25:51,654 --> 01:25:53,614
+self-similar or scale
+
+2368
+01:25:53,614 --> 01:25:54,174
+invariant.
+
+2369
+01:25:54,194 --> 01:25:55,874
+Scale invariant is the word that's used.
+
+2370
+01:25:56,174 --> 01:25:59,334
+So it's almost as though the early universe was generated
+
+2371
+01:25:59,334 --> 01:26:01,294
+from a Monte Carlo simulation.
+
+2372
+01:26:01,754 --> 01:26:04,114
+Monte Carlo just means a statistical averaging
+
+2373
+01:26:04,794 --> 01:26:07,094
+of a magnetic system.
+
+2374
+01:26:07,294 --> 01:26:07,874
+But that's not the case.
+
+2375
+01:26:07,874 --> 01:26:09,094
+That's not the real reason for it.
+
+2376
+01:26:09,454 --> 01:26:11,494
+The real reason for it is quite different.
+
+2377
+01:26:11,734 --> 01:26:12,234
+We didn't,
+
+2378
+01:26:12,234 --> 01:26:15,574
+the organization in the sky
+
+2379
+01:26:15,574 --> 01:26:18,354
+did not come from a second order phase transition.
+
+2380
+01:26:18,774 --> 01:26:19,334
+Incidentally,
+
+2381
+01:26:19,334 --> 01:26:22,034
+jumping across here,
+
+2382
+01:26:22,254 --> 01:26:24,754
+where you have a real jump in the density,
+
+2383
+01:26:25,574 --> 01:26:27,794
+that's called a first order phase transition.
+
+2384
+01:26:28,973 --> 01:26:30,974
+The order of the transition,
+
+2385
+01:26:30,974 --> 01:26:33,594
+the lowest order transition,
+
+2386
+01:26:34,334 --> 01:26:35,894
+corresponds to the biggest,
+
+2387
+01:26:35,894 --> 01:26:37,774
+most abrupt jump.
+
+2388
+01:26:38,934 --> 01:26:40,884
+So a first order phase
+
+2389
+01:26:40,884 --> 01:26:42,834
+transition is one in which density
+
+2390
+01:26:42,834 --> 01:26:45,914
+or magnetic field or whatever the appropriate variable is,
+
+2391
+01:26:46,304 --> 01:26:47,374
+the obvious variable,
+
+2392
+01:26:47,374 --> 01:26:49,214
+makes a discontinuous jump.
+
+2393
+01:26:49,734 --> 01:26:52,033
+If you approach along here,
+
+2394
+01:26:52,033 --> 01:26:54,914
+along the temperature axis
+
+2395
+01:26:54,914 --> 01:26:55,914
+with no bias,
+
+2396
+01:26:55,914 --> 01:26:59,174
+you come right down to this critical point
+
+2397
+01:26:59,174 --> 01:26:59,774
+over here.
+
+2398
+01:27:00,464 --> 01:27:02,454
+And then if you go a little bit further,
+
+2399
+01:27:02,574 --> 01:27:05,174
+you'll see spontaneous magnetization.
+
+2400
+01:27:05,794 --> 01:27:07,394
+Here you don't see anything.
+
+2401
+01:27:07,394 --> 01:27:08,694
+You don't see anything discontinuous.
+
+2402
+01:27:08,834 --> 01:27:10,754
+Right at this point over here,
+
+2403
+01:27:10,754 --> 01:27:12,134
+the magnetization is zero.
+
+2404
+01:27:13,054 --> 01:27:14,394
+And as you move in,
+
+2405
+01:27:14,394 --> 01:27:15,274
+the magnetization,
+
+2406
+01:27:15,514 --> 01:27:18,854
+the magnitude of the magnetization continuously increases.
+
+2407
+01:27:19,494 --> 01:27:22,654
+So there's no sudden jump in the magnetization here.
+
+2408
+01:27:22,874 --> 01:27:23,834
+It's just zero,
+
+2409
+01:27:23,834 --> 01:27:24,154
+zero,
+
+2410
+01:27:24,154 --> 01:27:24,394
+zero,
+
+2411
+01:27:24,394 --> 01:27:24,714
+zero,
+
+2412
+01:27:24,714 --> 01:27:24,974
+zero,
+
+2413
+01:27:24,974 --> 01:27:25,214
+zero,
+
+2414
+01:27:25,334 --> 01:27:27,754
+and then it starts increasing from here,
+
+2415
+01:27:27,754 --> 01:27:28,874
+but smoothly.
+
+2416
+01:27:29,234 --> 01:27:31,714
+That's called a second order phase transition,
+
+2417
+01:27:31,994 --> 01:27:35,754
+when the density or magnetization,
+
+2418
+01:27:36,314 --> 01:27:36,874
+uh,
+
+2419
+01:27:37,394 --> 01:27:39,994
+is absolutely zero until a critical point
+
+2420
+01:27:39,994 --> 01:27:42,714
+and then starts to increase smoothly from there.
+
+2421
+01:27:44,434 --> 01:27:44,953
+Uh,
+
+2422
+01:27:44,953 --> 01:27:47,954
+something is discontinuous over at this point over here.
+
+2423
+01:27:48,134 --> 01:27:51,394
+If you differentiate the magnetization enough times,
+
+2424
+01:27:51,394 --> 01:27:53,554
+you will find that there's some singularity in it.
+
+2425
+01:27:53,734 --> 01:27:54,794
+But it's a subtle,
+
+2426
+01:27:54,794 --> 01:27:55,774
+it's a more subtle effect.
+
+2427
+01:27:56,074 --> 01:27:58,054
+Second order phase transitions are more subtle,
+
+2428
+01:27:58,614 --> 01:28:01,314
+and third order phase transitions are even more subtle
+
+2429
+01:28:01,314 --> 01:28:03,674
+and almost never happen because they're so subtle.
+
+2430
+01:28:04,774 --> 01:28:05,294
+OK,
+
+2431
+01:28:05,294 --> 01:28:05,514
+yeah?
+
+2432
+01:28:05,714 --> 01:28:06,714
+What is the third order?
+
+2433
+01:28:06,714 --> 01:28:08,154
+I can't think of one offhand.
+
+2434
+01:28:08,214 --> 01:28:08,874
+I once knew one.
+
+2435
+01:28:08,974 --> 01:28:10,534
+I don't remember what it was.
+
+2436
+01:28:11,694 --> 01:28:12,874
+But they're rare.
+
+2437
+01:28:14,513 --> 01:28:15,554
+And offhand,
+
+2438
+01:28:15,554 --> 01:28:16,754
+I cannot remember what
+
+2439
+01:28:17,454 --> 01:28:19,334
+system had a third order phase transition.
+
+2440
+01:28:22,433 --> 01:28:24,954
+Chemical opalescence phenomenon,
+
+2441
+01:28:24,954 --> 01:28:26,454
+is that what happens?
+
+2442
+01:28:26,474 --> 01:28:27,314
+Critical opalescence.
+
+2443
+01:28:27,594 --> 01:28:28,454
+Critical opalescence.
+
+2444
+01:28:28,454 --> 01:28:29,254
+Critical opalescence.
+
+2445
+01:28:29,754 --> 01:28:32,494
+Is that what's happening when water vapor condenses
+
+2446
+01:28:32,494 --> 01:28:33,094
+into clouds?
+
+2447
+01:28:33,974 --> 01:28:34,494
+Well.
+
+2448
+01:28:35,834 --> 01:28:36,694
+I don't know.
+
+2449
+01:28:36,694 --> 01:28:37,174
+I think snow.
+
+2450
+01:28:39,294 --> 01:28:39,814
+No.
+
+2451
+01:28:40,514 --> 01:28:41,034
+No.
+
+2452
+01:28:41,774 --> 01:28:42,494
+It's not.
+
+2453
+01:28:44,734 --> 01:28:46,194
+It sort of looks like it,
+
+2454
+01:28:46,194 --> 01:28:46,654
+but it's not.
+
+2455
+01:28:47,294 --> 01:28:48,594
+The critical point,
+
+2456
+01:28:48,594 --> 01:28:49,254
+anybody know what
+
+2457
+01:28:49,254 --> 01:28:51,134
+the critical temperature of water is?
+
+2458
+01:28:51,994 --> 01:28:52,834
+1000 degrees.
+
+2459
+01:28:53,214 --> 01:28:54,154
+Something like that.
+
+2460
+01:28:54,234 --> 01:28:55,014
+I don't remember exactly,
+
+2461
+01:28:55,014 --> 01:28:55,994
+but it's way,
+
+2462
+01:28:55,994 --> 01:28:56,994
+way above boiling.
+
+2463
+01:28:57,393 --> 01:28:58,474
+It's about 300.
+
+2464
+01:28:59,494 --> 01:29:00,573
+360 or something.
+
+2465
+01:29:02,773 --> 01:29:04,094
+360 degrees,
+
+2466
+01:29:04,094 --> 01:29:04,734
+something like that?
+
+2467
+01:29:05,254 --> 01:29:06,134
+306 degrees.
+
+2468
+01:29:06,694 --> 01:29:07,134
+Right.
+
+2469
+01:29:07,254 --> 01:29:09,974
+So this temperature here is
+
+2470
+01:29:09,974 --> 01:29:12,694
+at 306 degrees and some pressure.
+
+2471
+01:29:13,294 --> 01:29:15,034
+Some pressure and some temperature,
+
+2472
+01:29:16,134 --> 01:29:19,094
+or some density and some temperature.
+
+2473
+01:29:19,834 --> 01:29:21,614
+Some density and some temperature
+
+2474
+01:29:22,213 --> 01:29:23,594
+is a critical point.
+
+2475
+01:29:23,894 --> 01:29:25,334
+And that critical point is
+
+2476
+01:29:25,334 --> 01:29:26,774
+the second order phase transition.
+
+2477
+01:29:27,054 --> 01:29:28,414
+And if you want to see it,
+
+2478
+01:29:28,414 --> 01:29:28,774
+you've got to,
+
+2479
+01:29:28,774 --> 01:29:29,154
+in water,
+
+2480
+01:29:29,334 --> 01:29:31,854
+you have to be up at 306 degrees.
+
+2481
+01:29:32,394 --> 01:29:33,394
+On the other hand,
+
+2482
+01:29:33,394 --> 01:29:33,834
+in helium,
+
+2483
+01:29:33,834 --> 01:29:35,534
+it happens at a very low temperature,
+
+2484
+01:29:35,534 --> 01:29:36,194
+a much lower
+
+2485
+01:29:36,194 --> 01:29:36,494
+temperature.
+
+2486
+01:29:37,474 --> 01:29:40,084
+And so you can see
+
+2487
+01:29:40,084 --> 01:29:42,694
+liquid helium boiling into helium vapor.
+
+2488
+01:29:43,474 --> 01:29:45,924
+And if you bring the helium
+
+2489
+01:29:45,924 --> 01:29:48,374
+to just the right density and temperature,
+
+2490
+01:29:48,554 --> 01:29:50,074
+you can see the critical opalescence.
+
+2491
+01:29:55,254 --> 01:29:55,934
+OK.
+
+2492
+01:29:56,913 --> 01:29:59,234
+In the cosmology example,
+
+2493
+01:29:59,234 --> 01:30:02,474
+if you look at over time
+
+2494
+01:30:02,474 --> 01:30:05,714
+when dark energy thing took over
+
+2495
+01:30:07,994 --> 01:30:09,374
+from the matter,
+
+2496
+01:30:09,374 --> 01:30:12,174
+could that be considered like a critical point as well?
+
+2497
+01:30:12,294 --> 01:30:12,594
+No.
+
+2498
+01:30:13,034 --> 01:30:13,694
+No.
+
+2499
+01:30:13,854 --> 01:30:17,274
+That's not a critical point.
+
+2500
+01:30:17,314 --> 01:30:20,374
+In cosmology,
+
+2501
+01:30:20,374 --> 01:30:26,624
+the main analog of this kind
+
+2502
+01:30:26,624 --> 01:30:32,874
+of critical behavior is what's called the
+
+2503
+01:30:32,874 --> 01:30:35,234
+scale invariant fluctuation spectrum.
+
+2504
+01:30:35,514 --> 01:30:36,174
+OK.
+
+2505
+01:30:36,174 --> 01:30:38,404
+So the scale invariant is the
+
+2506
+01:30:38,404 --> 01:30:40,634
+spectrum of fluctuations and perturbations over densities
+
+2507
+01:30:40,634 --> 01:30:43,734
+and under densities that were there
+
+2508
+01:30:43,734 --> 01:30:46,834
+at primordial times before galaxies formed,
+
+2509
+01:30:46,834 --> 01:30:48,394
+just the surface
+
+2510
+01:30:48,394 --> 01:30:49,274
+of last scattering.
+
+2511
+01:30:49,594 --> 01:30:51,334
+The surface of last scattering,
+
+2512
+01:30:51,334 --> 01:30:53,134
+if you look out on the sky,
+
+2513
+01:30:53,134 --> 01:30:55,874
+looks like this kind of behavior.
+
+2514
+01:30:56,194 --> 01:30:57,874
+And I mean quantitatively.
+
+2515
+01:30:58,114 --> 01:30:58,754
+Quantitatively,
+
+2516
+01:30:58,754 --> 01:31:00,254
+it looks scale invariant.
+
+2517
+01:31:00,694 --> 01:31:04,254
+Now it's actually not completely true.
+
+2518
+01:31:04,254 --> 01:31:06,334
+It's not completely true because the
+
+2519
+01:31:06,334 --> 01:31:08,414
+system gets processed a little bit.
+
+2520
+01:31:08,514 --> 01:31:11,544
+I mean it's quite obvious that gravity
+
+2521
+01:31:11,544 --> 01:31:14,574
+took over and started manipulating the overdense
+
+2522
+01:31:14,574 --> 01:31:15,554
+and the underdense regions.
+
+2523
+01:31:16,194 --> 01:31:20,014
+But if we could have seen what that sky
+
+2524
+01:31:20,014 --> 01:31:23,834
+was like before gravity started to work on these
+
+2525
+01:31:23,834 --> 01:31:26,794
+overdense and the real primordial fluctuation spectrum,
+
+2526
+01:31:26,794 --> 01:31:29,194
+it would look very much like the
+
+2527
+01:31:29,854 --> 01:31:31,294
+critical point of this magnet.
+
+2528
+01:31:31,594 --> 01:31:32,014
+OK.
+
+2529
+01:31:32,234 --> 01:31:32,914
+Thank you.
+
+2530
+01:31:33,494 --> 01:31:34,174
+Thank you.
+
+2531
+01:31:34,254 --> 01:31:34,634
+Thank you.
+
+2532
+01:31:34,634 --> 01:31:35,234
+On inflation,
+
+2533
+01:31:35,234 --> 01:31:40,334
+I hear when you go from the vacuum steroids,
+
+2534
+01:31:40,334 --> 01:31:41,354
+the really high one,
+
+2535
+01:31:41,354 --> 01:31:42,074
+down
+
+2536
+01:31:42,074 --> 01:31:42,894
+to the regular one,
+
+2537
+01:31:42,894 --> 01:31:44,674
+I've heard that they had
+
+2538
+01:31:44,674 --> 01:31:46,454
+some original problem with the theory.
+
+2539
+01:31:47,334 --> 01:31:48,354
+It's called reheating.
+
+2540
+01:31:49,914 --> 01:31:51,174
+That's called reheating.
+
+2541
+01:31:51,654 --> 01:31:52,074
+Yeah.
+
+2542
+01:31:52,174 --> 01:31:53,614
+Why reheating and not just heating?
+
+2543
+01:31:53,714 --> 01:31:54,194
+They said,
+
+2544
+01:31:54,194 --> 01:31:56,074
+and it didn't make any sense to me then,
+
+2545
+01:31:56,074 --> 01:31:58,034
+but they said it was originally modeled
+
+2546
+01:31:58,034 --> 01:31:59,894
+as a first order phase transition.
+
+2547
+01:32:00,114 --> 01:32:00,214
+Oh,
+
+2548
+01:32:00,214 --> 01:32:01,014
+OK.
+
+2549
+01:32:01,414 --> 01:32:01,734
+Yeah.
+
+2550
+01:32:03,054 --> 01:32:03,454
+Right.
+
+2551
+01:32:04,094 --> 01:32:05,734
+We can talk about that next time a little bit.
+
+2552
+01:32:05,814 --> 01:32:06,314
+Remind me.
+
+2553
+01:32:08,174 --> 01:32:08,574
+Yes,
+
+2554
+01:32:08,574 --> 01:32:11,054
+it was originally modeled as a first order phase transition.
+
+2555
+01:32:11,274 --> 01:32:12,094
+That was a disaster.
+
+2556
+01:32:13,414 --> 01:32:14,714
+And I can tell you why.
+
+2557
+01:32:14,894 --> 01:32:16,894
+We have enough things I can tell you why,
+
+2558
+01:32:16,894 --> 01:32:18,254
+but I'm not going to tell you why now.
+
+2559
+01:32:20,934 --> 01:32:21,734
+I'm fading.
+
+2560
+01:32:21,914 --> 01:32:23,614
+My contrast is diminishing.
+
+2561
+01:32:26,854 --> 01:32:27,654
+For more,
+
+2562
+01:32:27,654 --> 01:32:30,134
+please visit us at stanford.edu.
+

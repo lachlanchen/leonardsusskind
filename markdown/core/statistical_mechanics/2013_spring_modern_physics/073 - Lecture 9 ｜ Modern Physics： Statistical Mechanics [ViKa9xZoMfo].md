@@ -1,0 +1,2566 @@
+# Transcript
+
+Source: core/statistical_mechanics/2013_spring_modern_physics/073 - Lecture 9 ｜ Modern Physics： Statistical Mechanics [ViKa9xZoMfo].mkv
+
+- [00:00:04,739 - 00:00:06,140] Stanford University.
+- [00:00:08,719 - 00:00:10,800] The last time,
+- [00:00:10,800 - 00:00:11,880] as I remember,
+- [00:00:12,160 - 00:00:13,580] and I have a poor memory,
+- [00:00:13,800 - 00:00:15,440] so correct me if I'm wrong,
+- [00:00:16,140 - 00:00:18,680] we talked about magnets
+- [00:00:19,220 - 00:00:23,520] and we talk about phase transitions
+- [00:00:23,860 - 00:00:25,560] and mean field approximation,
+- [00:00:25,560 - 00:00:29,800] and I showed you how the phase transition
+- [00:00:30,440 - 00:00:32,060] between a magnetized,
+- [00:00:32,060 - 00:00:33,140] well,
+- [00:00:33,300 - 00:00:34,940] how the phase transition happens
+- [00:00:35,860 - 00:00:37,320] to a magnetic system,
+- [00:00:37,540 - 00:00:38,880] a simple magnetic system,
+- [00:00:39,000 - 00:00:41,760] a magnetic system being the system
+- [00:00:42,640 - 00:00:45,760] on a lattice where every spin
+- [00:00:46,280 - 00:00:48,120] is coupled to its nearest neighbor
+- [00:00:48,940 - 00:00:50,400] by a term in the
+- [00:00:50,400 - 00:00:51,860] energy which seeks to align them.
+- [00:00:52,020 - 00:00:52,760] In other words,
+- [00:00:52,760 - 00:00:53,660] the energy is lowest
+- [00:00:53,660 - 00:00:55,120] when the neighboring spins
+- [00:00:55,120 - 00:00:55,680] are aligned.
+- [00:00:56,820 - 00:00:58,540] The ground state of that,
+- [00:00:58,720 - 00:01:00,160] the lowest energy state,
+- [00:01:01,319 - 00:01:03,980] and which describes zero temperature,
+- [00:01:04,300 - 00:01:06,380] is all spins perfectly aligned.
+- [00:01:09,160 - 00:01:11,260] As you begin to heat it up a little bit,
+- [00:01:11,440 - 00:01:13,660] the spins begin to jiggle a little bit,
+- [00:01:16,340 - 00:01:18,550] but any spin still has
+- [00:01:18,550 - 00:01:20,760] a bunch of neighbors around it,
+- [00:01:22,040 - 00:01:24,660] and particularly if the dimension
+- [00:01:24,660 - 00:01:26,380] of the system is very high,
+- [00:01:26,960 - 00:01:27,560] and actually,
+- [00:01:27,560 - 00:01:28,320] for our purposes,
+- [00:01:28,380 - 00:01:29,900] three dimensions is pretty high,
+- [00:01:31,340 - 00:01:33,560] then the number of bonds connecting
+- [00:01:34,200 - 00:01:35,960] that spin to its neighbor,
+- [00:01:36,720 - 00:01:38,220] neighbors are also high,
+- [00:01:38,480 - 00:01:40,640] and so I showed you how to use
+- [00:01:40,640 - 00:01:42,160] the mean field approximation
+- [00:01:42,899 - 00:01:44,860] to calculate mean field approximation
+- [00:01:44,860 - 00:01:48,940] simply means postulate an average
+- [00:01:49,640 - 00:01:51,000] for all the spins,
+- [00:01:51,140 - 00:01:51,860] and in particular,
+- [00:01:51,860 - 00:01:52,480] in this case,
+- [00:01:52,520 - 00:01:54,480] it means all the spins neighboring
+- [00:01:54,480 - 00:01:56,380] to our target spin,
+- [00:01:56,380 - 00:01:59,060] to the spin that we are going to focus on.
+- [00:01:59,060 - 00:02:01,540] And just imagine
+- [00:02:01,540 - 00:02:05,080] that they are frozen at their average value.
+- [00:02:05,080 - 00:02:06,400] These spins are frozen at their
+- [00:02:06,400 - 00:02:07,000] average value.
+- [00:02:07,000 - 00:02:08,870] That gives you an expression
+- [00:02:08,870 - 00:02:10,740] for the energy of the one
+- [00:02:10,740 - 00:02:13,120] spin that is left over,
+- [00:02:13,120 - 00:02:14,040] the one at the center.
+- [00:02:14,040 - 00:02:16,840] And in a sense,
+- [00:02:16,840 - 00:02:17,980] the other spins
+- [00:02:17,980 - 00:02:21,920] surrounding it give it a bias to
+- [00:02:21,920 - 00:02:25,860] point in the same direction as the average
+- [00:02:25,860 - 00:02:26,860] spin of the others.
+- [00:02:26,860 - 00:02:29,740] The higher the dimensionality,
+- [00:02:29,740 - 00:02:31,340] the more neighboring
+- [00:02:31,340 - 00:02:32,200] spins there are,
+- [00:02:32,200 - 00:02:35,580] the better the approximation of saying you can average
+- [00:02:35,580 - 00:02:36,200] over them.
+- [00:02:36,200 - 00:02:39,700] But that's the basic idea of the mean field approximation.
+- [00:02:39,700 - 00:02:40,440] And then
+- [00:02:40,440 - 00:02:41,760] let me remind you what you do.
+- [00:02:41,760 - 00:02:45,020] You calculate in the background of the other
+- [00:02:45,020 - 00:02:45,340] spins,
+- [00:02:45,340 - 00:02:47,960] you calculate the partitioning
+- [00:02:47,960 - 00:02:49,620] function for the one extra spin.
+- [00:02:49,620 - 00:02:54,380] You then calculate the average magnetization
+- [00:02:54,380 - 00:02:55,540] of the extra spin.
+- [00:02:55,540 - 00:02:56,220] In other words,
+- [00:02:56,220 - 00:03:06,380] you calculate the average value of sigma of
+- [00:03:06,960 - 00:03:07,940] the extra spin there.
+- [00:03:07,940 - 00:03:11,480] What was it equal to?
+- [00:03:11,480 - 00:03:12,940] Anybody remember the formula for it?
+- [00:03:12,940 - 00:03:16,060] I
+- [00:03:16,060 - 00:03:17,400] don't remember the formula for it.
+- [00:03:18,620 - 00:03:20,380] I just want to go back and...
+- [00:03:20,960 - 00:03:25,780] Minus the average energy over 2...2 sd?
+- [00:03:26,040 - 00:03:26,720] No,
+- [00:03:26,720 - 00:03:26,820] no,
+- [00:03:26,820 - 00:03:28,780] but there was a formula with a tangent,
+- [00:03:28,780 - 00:03:29,920] a hyperbolic tangent...
+- [00:03:29,920 - 00:03:30,160] Yeah,
+- [00:03:30,160 - 00:03:33,740] hyperbolic tangent 2 beta sd.
+- [00:03:34,480 - 00:03:36,280] Hyperbolic tangent of...
+- [00:03:37,480 - 00:03:39,860] 2 beta sd.
+- [00:03:40,000 - 00:03:42,480] 2 beta sd.
+- [00:03:42,480 - 00:03:45,820] d is the dimensionality of space,
+- [00:03:45,820 - 00:03:47,940] and it simply represents
+- [00:03:47,960 - 00:03:51,340] the number of nearest neighbors to this fellow over here.
+- [00:03:52,040 - 00:03:52,740] All right.
+- [00:03:52,740 - 00:03:54,520] Beta is the inverse temperature.
+- [00:03:54,520 - 00:03:56,540] Where did the 2 come from?
+- [00:03:56,540 - 00:03:56,700] Oh,
+- [00:03:56,700 - 00:03:57,040] I remember
+- [00:03:57,040 - 00:03:57,940] where the 2 came from.
+- [00:03:58,040 - 00:03:58,540] 2 times d.
+- [00:03:58,540 - 00:03:58,560] Hmm?
+- [00:03:58,760 - 00:03:59,440] 2 times d.
+- [00:03:59,480 - 00:03:59,820] Yeah,
+- [00:03:59,820 - 00:04:01,810] because the number of nearest
+- [00:04:01,810 - 00:04:03,800] neighbors is twice the dimensionality.
+- [00:04:04,240 - 00:04:08,690] And s was the average spin at the...the
+- [00:04:08,690 - 00:04:13,140] average spin of the entire ensemble of spins.
+- [00:04:14,300 - 00:04:17,260] And then the consistency requires...
+- [00:04:17,959 - 00:04:19,760] that this be the same as s.
+- [00:04:19,760 - 00:04:20,399] In other words,
+- [00:04:20,399 - 00:04:22,160] this spin is no different than all the others.
+- [00:04:22,480 - 00:04:23,820] I said that all the
+- [00:04:23,820 - 00:04:25,160] others have an average spin s,
+- [00:04:25,160 - 00:04:28,900] and we get a consistency equation.
+- [00:04:29,900 - 00:04:35,880] s is equal to tanh 2 beta s times d.
+- [00:04:38,180 - 00:04:39,700] And if we can solve that equation,
+- [00:04:39,700 - 00:04:44,560] then we will determine what the average magnetization is
+- [00:04:45,400 - 00:04:47,840] as a function of the other variables in the problem.
+- [00:04:47,960 - 00:04:48,080] Beta,
+- [00:04:48,080 - 00:04:48,520] d,
+- [00:04:48,520 - 00:04:49,200] and so forth.
+- [00:04:49,780 - 00:04:50,460] All right.
+- [00:04:50,460 - 00:04:52,120] So let me just remind you what that looked like.
+- [00:04:54,500 - 00:04:55,780] We plot s.
+- [00:04:57,440 - 00:04:59,900] s is just a linear function.
+- [00:05:00,140 - 00:05:01,180] s of what?
+- [00:05:01,180 - 00:05:01,840] s of s.
+- [00:05:02,740 - 00:05:03,380] All right.
+- [00:05:03,380 - 00:05:04,820] We plot s of s.
+- [00:05:04,820 - 00:05:06,960] s of s is just a straight line.
+- [00:05:06,960 - 00:05:07,980] s equals s.
+- [00:05:09,020 - 00:05:14,260] And then we superimpose on that the graph
+- [00:05:16,900 - 00:05:17,940] of tanh.
+- [00:05:17,960 - 00:05:20,260] tanh 2 beta s d.
+- [00:05:20,760 - 00:05:23,000] And that looks something like this.
+- [00:05:24,000 - 00:05:24,760] Let's see.
+- [00:05:24,760 - 00:05:27,220] If the temperature is high...
+- [00:05:27,220 - 00:05:29,160] When the temperature is high,
+- [00:05:29,160 - 00:05:31,520] that means that beta is small.
+- [00:05:32,690 - 00:05:35,200] Then the tanh function looks like this.
+- [00:05:35,730 - 00:05:36,620] It's very flat.
+- [00:05:37,140 - 00:05:38,960] It asymptotes to 1.
+- [00:05:44,180 - 00:05:46,320] It's linear at the origin here.
+- [00:05:46,320 - 00:05:49,730] But the slope is less than the
+- [00:05:49,730 - 00:05:53,140] slope of this straight line over here.
+- [00:05:53,340 - 00:05:55,240] And so there's no intersection.
+- [00:05:55,500 - 00:05:58,280] There's no intersection of this blue curve
+- [00:05:58,280 - 00:06:01,060] with a black curve other than the origin.
+- [00:06:01,500 - 00:06:04,520] And that means the only solution to
+- [00:06:04,520 - 00:06:07,540] this problem is that s equals 0.
+- [00:06:08,880 - 00:06:13,220] Now we start decreasing the temperature.
+- [00:06:13,500 - 00:06:14,880] That means increasing beta.
+- [00:06:14,880 - 00:06:19,160] And we discover that this curve moves in.
+- [00:06:22,980 - 00:06:26,070] And eventually its slope at the
+- [00:06:26,070 - 00:06:29,160] origin will become equal to 1.
+- [00:06:29,980 - 00:06:31,560] When you go beyond that,
+- [00:06:31,560 - 00:06:33,820] the curve will look like this.
+- [00:06:36,980 - 00:06:39,340] And you have two new solutions.
+- [00:06:41,180 - 00:06:44,140] These two solutions are in fact the stable solutions.
+- [00:06:44,140 - 00:06:47,430] It's possible to prove that this
+- [00:06:47,430 - 00:06:50,720] solution over here really is unstable.
+- [00:06:51,120 - 00:06:54,250] That if you try to make the
+- [00:06:54,250 - 00:06:57,380] magnet behave as this solution tells you,
+- [00:06:58,140 - 00:07:01,320] any tiny little perturbation will...
+- [00:07:01,880 - 00:07:02,680] In other words,
+- [00:07:02,680 - 00:07:04,440] over here,
+- [00:07:04,440 - 00:07:05,420] what does it say?
+- [00:07:05,560 - 00:07:07,520] It says that the magnetization is 0.
+- [00:07:07,760 - 00:07:09,510] How do you make the magnetization equal to
+- [00:07:09,510 - 00:07:11,260] 0 if it doesn't want to be 0,
+- [00:07:11,260 - 00:07:12,640] if it wants to all line up?
+- [00:07:12,980 - 00:07:13,540] Well,
+- [00:07:13,540 - 00:07:14,120] you say...
+- [00:07:14,140 - 00:07:17,760] You simply take the two possibilities all lined up
+- [00:07:17,760 - 00:07:21,380] one way plus all lined up the other way.
+- [00:07:21,480 - 00:07:21,860] In other words,
+- [00:07:21,860 - 00:07:23,270] you make a probability of half that
+- [00:07:23,270 - 00:07:24,680] they're all lined up in one way,
+- [00:07:24,760 - 00:07:25,850] probability of half that they're all
+- [00:07:25,850 - 00:07:26,940] lined up in the other way.
+- [00:07:27,120 - 00:07:28,060] And sure enough,
+- [00:07:28,060 - 00:07:29,820] there will be a solution
+- [00:07:29,820 - 00:07:31,580] which will correspond to no magnetization.
+- [00:07:32,080 - 00:07:34,160] But that's a highly unstable situation.
+- [00:07:35,260 - 00:07:36,760] Any small stray,
+- [00:07:36,760 - 00:07:38,720] very,
+- [00:07:38,720 - 00:07:42,620] very tiny magnetic field pointing either up or down
+- [00:07:42,620 - 00:07:47,740] will tend to flip the magnets to the preferred...
+- [00:07:47,740 - 00:07:49,180] in the preferred direction.
+- [00:07:49,820 - 00:07:52,460] And you will either get this or this,
+- [00:07:52,460 - 00:07:54,720] depending on which way the...
+- [00:07:54,720 - 00:07:55,740] Well,
+- [00:07:55,740 - 00:07:56,780] two possibilities.
+- [00:07:57,160 - 00:07:59,180] You'll either get this or this,
+- [00:07:59,180 - 00:08:00,960] depending on the direction of
+- [00:08:00,960 - 00:08:02,740] that extremely weak magnetic field.
+- [00:08:03,020 - 00:08:03,580] Now,
+- [00:08:03,580 - 00:08:05,120] I have not included that very
+- [00:08:05,120 - 00:08:06,660] weak magnetic field in the calculation.
+- [00:08:08,340 - 00:08:09,300] We could,
+- [00:08:09,300 - 00:08:11,020] but that's just a nuisance.
+- [00:08:11,300 - 00:08:12,600] We simply know that...
+- [00:08:12,620 - 00:08:13,980] We know that if we have a lot
+- [00:08:13,980 - 00:08:15,340] of spins and they all want to line up
+- [00:08:15,340 - 00:08:16,760] and they're reinforcing each other,
+- [00:08:16,760 - 00:08:19,620] binding each other to be in the same direction,
+- [00:08:20,660 - 00:08:23,440] that at low temperatures they will tend to line up,
+- [00:08:23,480 - 00:08:27,160] and either they will line up positively or negatively.
+- [00:08:27,820 - 00:08:29,660] S will either be positive or negative,
+- [00:08:30,200 - 00:08:32,780] depending on nothing more than the value of,
+- [00:08:32,780 - 00:08:33,240] let's say,
+- [00:08:33,240 - 00:08:36,520] an infinitesimally small background field,
+- [00:08:38,000 - 00:08:40,149] which is of such insignificance that we
+- [00:08:40,149 - 00:08:42,299] don't even need to worry about it.
+- [00:08:42,620 - 00:08:42,720] So,
+- [00:08:42,720 - 00:08:43,319] we can just say that the magnet is in the same
+- [00:08:43,319 - 00:08:43,919] direction as the magnet is in the dynamics of the magnet.
+- [00:08:45,980 - 00:08:47,540] There's a critical point.
+- [00:08:47,700 - 00:08:49,320] The critical point...
+- [00:08:50,140 - 00:08:52,360] The critical temperature is the
+- [00:08:52,360 - 00:08:54,580] temperature of the beta over here,
+- [00:08:54,720 - 00:08:57,230] which makes the blue curve have
+- [00:08:57,230 - 00:08:59,740] the same slope as the black curve.
+- [00:09:00,160 - 00:09:01,340] In other words,
+- [00:09:01,340 - 00:09:03,040] it's the first point...
+- [00:09:03,040 - 00:09:05,300] It's the point at which...
+- [00:09:06,820 - 00:09:08,920] you're just on the cusp...
+- [00:09:08,920 - 00:09:11,160] of having spontaneous magnetization.
+- [00:09:11,440 - 00:09:13,040] I didn't draw that well over here.
+- [00:09:13,600 - 00:09:18,840] I meant it to be tangent to the black curve.
+- [00:09:19,140 - 00:09:19,660] So,
+- [00:09:19,660 - 00:09:20,580] as I vary beta,
+- [00:09:21,620 - 00:09:23,690] I eventually hit a point where the
+- [00:09:23,690 - 00:09:25,760] blue curve is tangent to the black curve.
+- [00:09:26,600 - 00:09:28,640] There's only one solution at that point.
+- [00:09:28,820 - 00:09:30,560] The magnetization is zero,
+- [00:09:30,740 - 00:09:33,360] but then when I just go epsilon past that,
+- [00:09:33,460 - 00:09:35,020] just a tiny bit past that,
+- [00:09:35,200 - 00:09:36,940] then the magnetization,
+- [00:09:36,940 - 00:09:38,780] the spontaneous magnetization happens,
+- [00:09:38,920 - 00:09:41,980] and that point is the critical point.
+- [00:09:42,460 - 00:09:43,060] Alright?
+- [00:09:43,060 - 00:09:44,020] It's the critical point,
+- [00:09:44,120 - 00:09:47,840] and it's the point where tanh has unit slope.
+- [00:09:48,740 - 00:09:49,340] So,
+- [00:09:49,340 - 00:09:50,020] what does that mean?
+- [00:09:50,140 - 00:09:54,540] What's the slope of this tanh here at the origin?
+- [00:09:55,200 - 00:09:58,220] It's the derivative of tanh with respect to s.
+- [00:09:59,140 - 00:09:59,740] So,
+- [00:09:59,740 - 00:10:02,200] what's the derivative of tanh with respect to s?
+- [00:10:04,220 - 00:10:05,340] At the origin.
+- [00:10:06,360 - 00:10:08,360] I think it's just twice...
+- [00:10:10,619 - 00:10:12,740] twice beta d.
+- [00:10:19,840 - 00:10:20,300] So,
+- [00:10:20,300 - 00:10:22,100] when twice beta d...
+- [00:10:22,100 - 00:10:22,860] Is that right?
+- [00:10:22,860 - 00:10:23,200] I mean,
+- [00:10:23,200 - 00:10:24,720] if we differentiate tanh...
+- [00:10:24,720 - 00:10:25,620] Can anybody do that?
+- [00:10:29,060 - 00:10:29,520] Alright,
+- [00:10:29,520 - 00:10:30,020] let's do it.
+- [00:10:30,740 - 00:10:32,900] Let's do it just to convince ourselves that I'm right.
+- [00:10:33,180 - 00:10:34,180] What is tanh?
+- [00:10:34,180 - 00:10:35,720] Tanh is sinh over khash,
+- [00:10:35,720 - 00:10:36,060] right?
+- [00:10:37,260 - 00:10:38,380] Sinh over khash.
+- [00:10:38,380 - 00:10:38,800] So,
+- [00:10:38,800 - 00:10:39,580] sinh...
+- [00:10:42,100 - 00:10:44,700] Let's write just sinh x over khash x.
+- [00:10:44,900 - 00:10:46,920] We'll differentiate first with respect to x,
+- [00:10:47,100 - 00:10:48,790] and then we'll differentiate x with
+- [00:10:48,790 - 00:10:50,480] respect to the argument of the tanh.
+- [00:10:50,640 - 00:10:50,780] Alright?
+- [00:10:50,780 - 00:10:52,580] Just usual rule for calculating derivatives.
+- [00:10:53,400 - 00:10:57,380] The derivative of sinh is khash.
+- [00:10:57,660 - 00:10:58,220] Alright?
+- [00:10:58,220 - 00:10:58,400] So,
+- [00:10:58,400 - 00:10:58,920] let's do the...
+- [00:10:58,920 - 00:10:59,900] What's the usual rule?
+- [00:11:00,720 - 00:11:02,600] Denominator times the derivative of the numerator.
+- [00:11:04,040 - 00:11:05,900] Derivative of this with respect to x
+- [00:11:05,900 - 00:11:08,380] is equal to the denominator,
+- [00:11:08,380 - 00:11:09,520] khash x,
+- [00:11:11,199 - 00:11:13,260] times the derivative of the numerator.
+- [00:11:13,620 - 00:11:16,040] Derivative of the numerator is also khash x,
+- [00:11:16,040 - 00:11:17,140] khash squared x,
+- [00:11:18,540 - 00:11:21,800] minus the numerator times the derivative of the denominator.
+- [00:11:23,300 - 00:11:23,900] So,
+- [00:11:23,900 - 00:11:26,220] I think that should be minus sinh squared x?
+- [00:11:27,980 - 00:11:29,000] Plus or minus?
+- [00:11:30,500 - 00:11:31,580] We'll see in a minute.
+- [00:11:32,540 - 00:11:33,140] Hmm?
+- [00:11:38,040 - 00:11:38,520] Let's see.
+- [00:11:42,640 - 00:11:48,000] We have denominator times the derivative of the numerator,
+- [00:11:48,920 - 00:11:51,800] minus numerator times the derivative of the denominator.
+- [00:11:52,200 - 00:11:52,540] So,
+- [00:11:52,540 - 00:11:54,420] it looks to me like khash squared minus sinh squared.
+- [00:11:55,320 - 00:11:57,080] Derivative of khash is equal to sinh,
+- [00:11:57,120 - 00:11:58,920] and derivative of sinh is equal to khash.
+- [00:11:59,980 - 00:12:00,860] As the numerator is minus sinh squared.
+- [00:12:01,000 - 00:12:01,020] So,
+- [00:12:01,020 - 00:12:01,020] that's the derivative of sinh squared.
+- [00:12:01,800 - 00:12:03,220] As the numerator is 1.
+- [00:12:04,880 - 00:12:08,020] The numerator is 1 at x equals 0.
+- [00:12:09,220 - 00:12:10,580] The numerator is 1?
+- [00:12:10,720 - 00:12:11,020] Oh,
+- [00:12:11,020 - 00:12:11,640] khash squared,
+- [00:12:11,640 - 00:12:12,000] yeah.
+- [00:12:12,380 - 00:12:14,520] Khash squared minus sinh squared is 1,
+- [00:12:14,740 - 00:12:17,400] and this is just equal to
+- [00:12:17,400 - 00:12:20,060] 1 over khash of x squared.
+- [00:12:21,120 - 00:12:21,640] Okay?
+- [00:12:21,900 - 00:12:22,420] So,
+- [00:12:22,420 - 00:12:23,440] um...
+- [00:12:24,660 - 00:12:25,700] And that,
+- [00:12:25,700 - 00:12:27,400] at x equals 0,
+- [00:12:28,120 - 00:12:29,680] right at this point over here,
+- [00:12:29,680 - 00:12:30,720] at x equals 0,
+- [00:12:31,400 - 00:12:32,000] that's 1.
+- [00:12:33,540 - 00:12:34,780] Khash of 0 is 1,
+- [00:12:35,000 - 00:12:37,400] so this is all equal to the number 1.
+- [00:12:38,400 - 00:12:40,900] That's the derivative of the tanh
+- [00:12:41,439 - 00:12:43,800] with respect to the argument here,
+- [00:12:44,000 - 00:12:46,000] but then we have to differentiate
+- [00:12:46,000 - 00:12:48,000] the argument with respect to s,
+- [00:12:48,160 - 00:12:49,360] and that will give us a 2 beta d.
+- [00:12:50,160 - 00:12:50,600] So,
+- [00:12:50,600 - 00:12:52,060] that's where the 2 beta d comes from.
+- [00:12:52,280 - 00:12:54,260] The derivative of this with respect to
+- [00:12:54,260 - 00:12:56,240] s at the origin is 2 beta d.
+- [00:12:56,660 - 00:12:58,640] And when that becomes equal to 1,
+- [00:12:59,680 - 00:13:00,300] in other words,
+- [00:13:00,340 - 00:13:02,860] when the derivative of this curve just matches,
+- [00:13:02,960 - 00:13:07,980] just kisses the 45 degree line here,
+- [00:13:08,660 - 00:13:10,080] that's the critical point.
+- [00:13:10,400 - 00:13:12,400] That determines the critical temperature,
+- [00:13:13,000 - 00:13:14,920] and so the critical temperature...
+- [00:13:14,920 - 00:13:15,020] Let's see,
+- [00:13:15,020 - 00:13:16,880] did I miss a j out of this?
+- [00:13:18,720 - 00:13:21,400] Wasn't there a parameter j that...
+- [00:13:22,500 - 00:13:23,020] Yeah,
+- [00:13:23,020 - 00:13:24,840] you used that as a temperature.
+- [00:13:25,060 - 00:13:25,780] It was 1 over beta.
+- [00:13:26,100 - 00:13:26,560] Yeah,
+- [00:13:26,560 - 00:13:27,140] it's there.
+- [00:13:27,260 - 00:13:28,040] There's a j there.
+- [00:13:28,040 - 00:13:28,620] A j.
+- [00:13:30,100 - 00:13:30,640] J.
+- [00:13:34,520 - 00:13:35,240] All right,
+- [00:13:35,240 - 00:13:36,800] so this is 1 over temperature here,
+- [00:13:38,480 - 00:13:39,720] and if I shift it to
+- [00:13:39,720 - 00:13:40,960] the other side of the equation,
+- [00:13:41,260 - 00:13:43,000] it just gives me the critical temperature.
+- [00:13:43,600 - 00:13:46,080] The critical temperature at which the...
+- [00:13:51,320 - 00:13:54,980] T critical is twice d times j.
+- [00:13:55,720 - 00:13:56,260] Notice,
+- [00:13:56,260 - 00:13:57,440] among other things,
+- [00:13:57,440 - 00:13:59,320] that the critical temperature gets higher
+- [00:13:59,320 - 00:14:01,620] with increasing dimensionality.
+- [00:14:01,800 - 00:14:02,380] Why is that?
+- [00:14:03,219 - 00:14:03,560] Well,
+- [00:14:03,560 - 00:14:04,980] low temperature,
+- [00:14:05,280 - 00:14:07,380] you're in the magnetized phase.
+- [00:14:07,740 - 00:14:08,860] The question is,
+- [00:14:08,860 - 00:14:09,900] how long,
+- [00:14:10,580 - 00:14:12,840] or how high can you heat it
+- [00:14:13,440 - 00:14:16,300] before the temperature thermal fluctuations
+- [00:14:16,300 - 00:14:18,760] disrupt the magnetized phase?
+- [00:14:19,100 - 00:14:20,260] And the answer is,
+- [00:14:20,260 - 00:14:21,800] the more neighbors that you have,
+- [00:14:22,080 - 00:14:24,520] the higher the temperature you can get to
+- [00:14:24,520 - 00:14:27,200] before you'll escape from their...
+- [00:14:27,440 - 00:14:30,160] from their tendency to hold you in place.
+- [00:14:30,680 - 00:14:33,740] So that's why the critical temperature increases with d.
+- [00:14:34,420 - 00:14:36,580] You get to higher temperatures
+- [00:14:37,350 - 00:14:40,720] before the magnetization disappears in higher d.
+- [00:14:40,940 - 00:14:42,440] That's proportional to j.
+- [00:14:42,580 - 00:14:44,340] j was just the strength of a coupling
+- [00:14:44,340 - 00:14:45,700] between neighboring spins.
+- [00:14:45,980 - 00:14:48,160] The stronger the coupling between neighboring spins
+- [00:14:48,160 - 00:14:50,440] also increases the temperature,
+- [00:14:51,230 - 00:14:53,700] and the two came from someplace.
+- [00:14:54,980 - 00:14:55,740] All right,
+- [00:14:55,740 - 00:14:56,040] so now,
+- [00:14:56,040 - 00:14:56,580] if we...
+- [00:14:57,780 - 00:15:00,220] if we go back...
+- [00:15:00,839 - 00:15:01,960] I know I explained this,
+- [00:15:02,060 - 00:15:03,740] but let's do it again.
+- [00:15:04,820 - 00:15:07,480] If we go back to the phase diagram,
+- [00:15:07,800 - 00:15:09,460] let's go back to the phase diagram.
+- [00:15:10,540 - 00:15:13,160] And the phase diagram is a diagram
+- [00:15:13,859 - 00:15:15,460] which on the horizontal axis
+- [00:15:15,460 - 00:15:16,680] is just the temperature,
+- [00:15:18,580 - 00:15:20,220] and the vertical axis
+- [00:15:20,859 - 00:15:23,660] is the external magnetic field,
+- [00:15:23,820 - 00:15:25,400] which may be up or down.
+- [00:15:26,040 - 00:15:28,860] It plays the role in the magnet
+- [00:15:28,860 - 00:15:33,260] of the chemical potential in the fluid.
+- [00:15:33,940 - 00:15:34,680] All right,
+- [00:15:34,680 - 00:15:37,460] so let's put vertically here h.
+- [00:15:40,240 - 00:15:42,960] And if h is less than zero,
+- [00:15:44,500 - 00:15:45,540] in other words,
+- [00:15:45,540 - 00:15:47,240] the magnetic field is pointing down,
+- [00:15:47,420 - 00:15:49,380] it will bias all of the spins down,
+- [00:15:49,760 - 00:15:53,000] and throughout this entire quadrant here,
+- [00:15:53,180 - 00:15:55,000] the average spin will be down.
+- [00:15:55,000 - 00:15:55,920] That's for sure.
+- [00:15:56,240 - 00:16:00,940] But if you approach this line
+- [00:16:00,940 - 00:16:03,080] where h is equal to zero,
+- [00:16:03,660 - 00:16:05,360] it may or may not be
+- [00:16:05,760 - 00:16:07,700] that when you just get to that line,
+- [00:16:07,900 - 00:16:10,720] the magnetization is still there.
+- [00:16:11,180 - 00:16:12,940] Or it may be absent.
+- [00:16:13,580 - 00:16:14,140] Okay?
+- [00:16:14,320 - 00:16:15,280] If it's there,
+- [00:16:15,460 - 00:16:17,500] that means there's a jump discontinuity,
+- [00:16:17,600 - 00:16:18,840] because certainly if you approach
+- [00:16:18,840 - 00:16:19,860] from the other side,
+- [00:16:20,760 - 00:16:24,540] you'll find that the magnetization
+- [00:16:24,540 - 00:16:24,980] is still there.
+- [00:16:24,980 - 00:16:26,140] So the line is positive on this side,
+- [00:16:26,260 - 00:16:27,300] negative on this side,
+- [00:16:27,400 - 00:16:29,100] and if there's anything left of it
+- [00:16:29,100 - 00:16:31,060] right at the edge of this line here,
+- [00:16:31,160 - 00:16:31,900] it will have to jump.
+- [00:16:32,140 - 00:16:34,420] And that's a first-order phase trans-
+- [00:16:34,420 - 00:16:36,040] called a first-order phase transition.
+- [00:16:36,620 - 00:16:38,720] It is the sort of thing that happens
+- [00:16:41,180 - 00:16:48,360] as you increase the density of a gas.
+- [00:16:49,460 - 00:16:51,700] The chemical potential can be used
+- [00:16:51,700 - 00:16:53,560] to increase the density of the gas.
+- [00:16:53,560 - 00:16:56,240] You increase the density of the gas
+- [00:16:56,240 - 00:16:57,940] at fixed temperature,
+- [00:16:58,160 - 00:17:02,420] and eventually you will go from gas to liquid.
+- [00:17:03,000 - 00:17:03,760] All right?
+- [00:17:03,900 - 00:17:05,760] When does that happen?
+- [00:17:05,880 - 00:17:06,119] Well,
+- [00:17:06,119 - 00:17:07,260] it happens when the molecules
+- [00:17:07,260 - 00:17:08,560] get good and close together
+- [00:17:08,560 - 00:17:10,540] so that they're almost butting up
+- [00:17:10,540 - 00:17:11,260] against each other.
+- [00:17:11,359 - 00:17:12,099] Not quite.
+- [00:17:12,500 - 00:17:14,599] If they're butting up against each other too much,
+- [00:17:14,599 - 00:17:16,180] of course what'll happen is it'll freeze
+- [00:17:16,180 - 00:17:17,800] into a crystal lattice.
+- [00:17:18,800 - 00:17:20,839] But somewhere in between freezing
+- [00:17:20,839 - 00:17:22,480] in a crystal lattice
+- [00:17:22,480 - 00:17:25,060] and high-temperature boiling water,
+- [00:17:29,160 - 00:17:30,500] somewhere in between,
+- [00:17:31,320 - 00:17:33,100] you'll have a jump in the density.
+- [00:17:33,720 - 00:17:34,280] Okay,
+- [00:17:34,280 - 00:17:35,960] or a jump in the magnetization.
+- [00:17:37,140 - 00:17:39,000] If you go to too high a temperature,
+- [00:17:40,080 - 00:17:41,360] this is T-critical,
+- [00:17:41,520 - 00:17:42,520] as we've seen,
+- [00:17:42,520 - 00:17:44,020] if you go to too high a temperature,
+- [00:17:44,340 - 00:17:46,240] then the spontaneous magnetization
+- [00:17:46,240 - 00:17:47,580] disappears over here,
+- [00:17:48,380 - 00:17:51,020] and so the phase diagram contains
+- [00:17:51,020 - 00:17:53,540] spontaneous magnetization over here,
+- [00:17:55,480 - 00:17:57,120] and it disappears over here.
+- [00:17:58,420 - 00:17:59,360] As I said,
+- [00:17:59,360 - 00:18:00,480] you can go...
+- [00:18:00,480 - 00:18:02,220] I'm sure I did say this,
+- [00:18:02,320 - 00:18:04,960] but I need to remind myself as well as you.
+- [00:18:05,980 - 00:18:07,480] I can go from,
+- [00:18:07,480 - 00:18:10,340] let's call it,
+- [00:18:10,340 - 00:18:13,380] the downward magnetized phase over here,
+- [00:18:13,540 - 00:18:15,260] which is also the gas phase,
+- [00:18:15,380 - 00:18:16,360] let's call it the gas,
+- [00:18:19,080 - 00:18:20,680] or magnetization negative,
+- [00:18:22,580 - 00:18:23,420] over here,
+- [00:18:23,420 - 00:18:23,920] liquid,
+- [00:18:26,680 - 00:18:28,140] magnetization greater than zero.
+- [00:18:28,860 - 00:18:30,760] You can go across this boundary,
+- [00:18:30,980 - 00:18:32,540] in which case you see a sudden jump,
+- [00:18:32,660 - 00:18:34,380] and there's no doubt in that case
+- [00:18:34,380 - 00:18:39,300] that you've made a jump in the density,
+- [00:18:39,640 - 00:18:41,440] or you can go around here
+- [00:18:43,480 - 00:18:45,920] and pass from gas to liquid
+- [00:18:45,920 - 00:18:47,940] without a discontinuity.
+- [00:18:48,860 - 00:18:50,920] So if you go around the critical temperature,
+- [00:18:50,920 - 00:18:52,260] of water,
+- [00:18:52,420 - 00:18:53,880] around in this way,
+- [00:18:54,860 - 00:18:56,660] increasing the density,
+- [00:18:56,820 - 00:18:59,980] you can avoid the sudden jump.
+- [00:19:01,986 - 00:19:02,086] 有
+- [00:19:02,786 - 00:19:03,846] In the case,
+- [00:19:03,846 - 00:19:05,956] let's say you're going from the bottom to
+- [00:19:05,956 - 00:19:08,066] the top through the critical to the left,
+- [00:19:08,066 - 00:19:11,026] the lower arrow,
+- [00:19:11,845 - 00:19:14,045] does that imply that you're changing
+- [00:19:14,045 - 00:19:16,246] the magnetic field at one point?
+- [00:19:16,626 - 00:19:16,846] No,
+- [00:19:16,846 - 00:19:16,966] no,
+- [00:19:16,966 - 00:19:17,126] no,
+- [00:19:17,126 - 00:19:17,286] no,
+- [00:19:17,286 - 00:19:17,426] no.
+- [00:19:17,426 - 00:19:18,006] All over.
+- [00:19:18,206 - 00:19:18,786] All over?
+- [00:19:18,886 - 00:19:19,466] All over.
+- [00:19:19,466 - 00:19:20,226] Right.
+- [00:19:21,425 - 00:19:24,306] What we're doing is we're changing the chemical potential.
+- [00:19:25,066 - 00:19:26,886] Changing the chemical potential is
+- [00:19:26,886 - 00:19:28,706] a trick for changing the density.
+- [00:19:29,606 - 00:19:30,426] That's all it is.
+- [00:19:30,426 - 00:19:32,066] It's a trick for changing the density.
+- [00:19:32,066 - 00:19:33,066] If you like,
+- [00:19:33,066 - 00:19:35,826] you can simply think of yourself as squeezing the water,
+- [00:19:35,826 - 00:19:37,186] keeping the temperature fixed.
+- [00:19:38,366 - 00:19:40,606] We don't even really have to keep the temperature fixed.
+- [00:19:40,806 - 00:19:41,166] In fact,
+- [00:19:41,166 - 00:19:42,746] here I didn't keep the temperature fixed.
+- [00:19:42,746 - 00:19:43,866] It wandered from here to here.
+- [00:19:44,266 - 00:19:45,576] But if we wanted to
+- [00:19:45,576 - 00:19:46,886] have a precise version of it,
+- [00:19:46,886 - 00:19:49,386] we might cross at a fixed temperature.
+- [00:19:49,906 - 00:19:51,046] So in that case,
+- [00:19:51,046 - 00:19:53,866] you would be increasing the pressure,
+- [00:19:53,866 - 00:19:56,406] at the same time increasing the density,
+- [00:19:56,906 - 00:19:58,626] but keeping the temperature...
+- [00:19:58,626 - 00:19:59,386] What did I say?
+- [00:20:00,566 - 00:20:01,686] Increase the pressure.
+- [00:20:02,286 - 00:20:03,426] Increase the density,
+- [00:20:03,426 - 00:20:05,716] but keep the system in
+- [00:20:05,716 - 00:20:08,006] thermal equilibrium with its environment,
+- [00:20:08,866 - 00:20:10,726] so that the temperature stays the same.
+- [00:20:10,946 - 00:20:12,026] At some point,
+- [00:20:12,026 - 00:20:15,326] the system will jump from gas to...
+- [00:20:17,966 - 00:20:21,386] from vapor to liquid.
+- [00:20:21,766 - 00:20:24,876] So that's the basic physics of
+- [00:20:24,876 - 00:20:27,986] the very simplest kind of phase transition.
+- [00:20:28,686 - 00:20:29,736] So what do you see
+- [00:20:29,736 - 00:20:30,786] if you go around the outside?
+- [00:20:30,966 - 00:20:32,046] I can understand that if you go...
+- [00:20:32,526 - 00:20:34,726] If you go around the outside to the right...
+- [00:20:35,526 - 00:20:36,606] If you go around this way.
+- [00:20:36,786 - 00:20:36,986] Yeah,
+- [00:20:36,986 - 00:20:37,926] if you go the other way,
+- [00:20:37,926 - 00:20:39,686] you see it go from gas to liquid.
+- [00:20:39,846 - 00:20:40,486] That makes sense.
+- [00:20:40,646 - 00:20:42,106] But on the top,
+- [00:20:42,106 - 00:20:42,546] it's liquid,
+- [00:20:42,546 - 00:20:43,046] and on the bottom,
+- [00:20:43,046 - 00:20:43,406] it's gas.
+- [00:20:43,586 - 00:20:44,606] So what do you see if you go around...
+- [00:20:44,606 - 00:20:49,226] You just see gas continuously change into liquid.
+- [00:20:49,886 - 00:20:52,666] The density increases at no point that you
+- [00:20:52,666 - 00:20:55,446] see a sharp discontinuity between liquid and gas.
+- [00:20:56,006 - 00:20:58,126] The lesson is there is no sharp discontinuity.
+- [00:20:58,806 - 00:21:01,946] There is no infinitely sharp way to say,
+- [00:21:01,966 - 00:21:02,026] Okay,
+- [00:21:02,026 - 00:21:02,026] I'm going to go around this way.
+- [00:21:02,026 - 00:21:03,026] This is a gas,
+- [00:21:03,026 - 00:21:04,146] and this is a liquid.
+- [00:21:05,286 - 00:21:07,086] You can go continuously from one
+- [00:21:07,086 - 00:21:08,886] to the other without an abrupt change.
+- [00:21:09,346 - 00:21:09,866] Now,
+- [00:21:09,866 - 00:21:12,746] this is not true for going to a solid.
+- [00:21:13,346 - 00:21:13,866] Something...
+- [00:21:15,345 - 00:21:20,046] The solid-liquid phase transition has a different character.
+- [00:21:21,046 - 00:21:25,346] What happens when you go from liquid to ice,
+- [00:21:25,346 - 00:21:25,906] let's say?
+- [00:21:26,206 - 00:21:28,686] What happens when you go from liquid to ice...
+- [00:21:29,305 - 00:21:29,926] You know,
+- [00:21:29,926 - 00:21:30,966] both the...
+- [00:21:33,106 - 00:21:34,106] You get a fog,
+- [00:21:34,106 - 00:21:34,586] basically.
+- [00:21:35,126 - 00:21:35,566] Yeah,
+- [00:21:35,566 - 00:21:37,266] you get a kind of fog,
+- [00:21:37,266 - 00:21:39,216] or with a fog which
+- [00:21:39,216 - 00:21:41,166] gets denser and denser and denser,
+- [00:21:41,186 - 00:21:43,826] and then just becomes basically...
+- [00:21:44,546 - 00:21:46,136] So are you saying that if
+- [00:21:46,136 - 00:21:47,726] both in liquid and solid state,
+- [00:21:47,726 - 00:21:48,846] like 5% liquid,
+- [00:21:48,846 - 00:21:50,786] 95% solid,
+- [00:21:51,026 - 00:21:51,566] I mean,
+- [00:21:51,566 - 00:21:52,706] liquid and gas...
+- [00:21:53,246 - 00:21:54,796] There would be no way to
+- [00:21:54,796 - 00:21:56,346] go from the liquid and gas continuously.
+- [00:21:57,566 - 00:22:01,126] There's always an abrupt change from...
+- [00:22:01,126 - 00:22:01,746] Sorry,
+- [00:22:01,746 - 00:22:04,766] from solid to liquid.
+- [00:22:04,826 - 00:22:04,946] Right,
+- [00:22:04,946 - 00:22:05,126] right.
+- [00:22:05,126 - 00:22:06,246] I meant gas to liquid.
+- [00:22:06,506 - 00:22:07,226] Gas to liquid.
+- [00:22:07,226 - 00:22:08,286] So when you go around,
+- [00:22:08,286 - 00:22:11,186] you've basically got like a fog of 5% liquid...
+- [00:22:11,186 - 00:22:11,326] Yeah,
+- [00:22:11,326 - 00:22:11,446] yeah,
+- [00:22:11,446 - 00:22:11,646] yeah,
+- [00:22:11,646 - 00:22:11,806] yeah,
+- [00:22:11,806 - 00:22:11,926] yeah.
+- [00:22:11,926 - 00:22:12,426] Right,
+- [00:22:12,426 - 00:22:12,906] right.
+- [00:22:13,466 - 00:22:13,906] There's...
+- [00:22:13,906 - 00:22:14,166] Yeah,
+- [00:22:14,166 - 00:22:15,586] there's little droplets in it.
+- [00:22:16,186 - 00:22:17,486] You start down here.
+- [00:22:20,846 - 00:22:22,326] And it's mostly gas,
+- [00:22:22,326 - 00:22:23,566] but there are little droplets.
+- [00:22:23,926 - 00:22:26,966] Little droplets are part of the gaseous phase.
+- [00:22:27,426 - 00:22:28,546] Having little droplets.
+- [00:22:28,626 - 00:22:29,746] If you look at it through a microscope,
+- [00:22:29,746 - 00:22:31,106] you'll find little droplets in it.
+- [00:22:31,126 - 00:22:33,326] But the little droplets come and go.
+- [00:22:33,966 - 00:22:35,166] What happens to them?
+- [00:22:35,166 - 00:22:36,466] They form and they evaporate.
+- [00:22:36,486 - 00:22:37,726] They form and they evaporate.
+- [00:22:37,726 - 00:22:38,786] They form and they evaporate.
+- [00:22:39,546 - 00:22:40,046] Likewise,
+- [00:22:40,046 - 00:22:40,806] up here,
+- [00:22:40,806 - 00:22:44,906] sort of symmetrically,
+- [00:22:45,086 - 00:22:49,046] the liquid will sometimes have formed little bubbles of gas.
+- [00:22:49,726 - 00:22:51,186] There'll be little bubbles of gas,
+- [00:22:51,186 - 00:22:53,126] but the little bubbles of gas will also...
+- [00:22:53,666 - 00:22:55,066] They won't evaporate,
+- [00:22:55,066 - 00:22:57,426] but the liquid will squeeze them out.
+- [00:22:57,926 - 00:22:59,886] The liquid will squeeze them out,
+- [00:22:59,906 - 00:23:01,106] and the little bubbles of gas will...
+- [00:23:01,126 - 00:23:02,016] The little bubbles of gas
+- [00:23:02,016 - 00:23:02,906] that accidentally form get squeezed out.
+- [00:23:03,086 - 00:23:05,666] And so there is a kind of symmetry between these.
+- [00:23:05,926 - 00:23:07,066] On one side,
+- [00:23:07,066 - 00:23:10,346] you have gas with little droplets of liquid.
+- [00:23:10,746 - 00:23:11,926] On the other side,
+- [00:23:11,926 - 00:23:13,886] you have liquid with little bubbles of gas.
+- [00:23:14,266 - 00:23:15,466] But as you said,
+- [00:23:15,466 - 00:23:16,826] as you move around here,
+- [00:23:18,026 - 00:23:20,436] the little droplets of liquid
+- [00:23:20,436 - 00:23:22,846] begin to become more prominent.
+- [00:23:23,865 - 00:23:24,586] They grow.
+- [00:23:25,086 - 00:23:28,786] They are more numerous and maybe bigger.
+- [00:23:29,346 - 00:23:30,426] And the little...
+- [00:23:31,126 - 00:23:34,246] And the gaseous phase sort of
+- [00:23:34,246 - 00:23:37,366] smoothly goes over to the liquid phase.
+- [00:23:37,706 - 00:23:38,966] But right along here,
+- [00:23:38,966 - 00:23:39,726] right along here,
+- [00:23:39,806 - 00:23:41,546] you have sort of both liquid
+- [00:23:41,546 - 00:23:43,286] and gas at the same time.
+- [00:23:43,446 - 00:23:44,806] You have little lumps of liquid,
+- [00:23:44,806 - 00:23:45,986] little lumps of gas,
+- [00:23:45,986 - 00:23:47,006] and so forth.
+- [00:23:47,326 - 00:23:49,826] Just in the same way that if
+- [00:23:49,826 - 00:23:52,326] you looked at the magnet through a microscope,
+- [00:23:52,606 - 00:23:54,626] you would discover islands of
+- [00:23:54,626 - 00:23:56,646] downspin and islands of upspin,
+- [00:23:56,746 - 00:23:59,286] equally numerous along here.
+- [00:24:00,005 - 00:24:00,806] Down here,
+- [00:24:00,806 - 00:24:03,326] you would find more islands of downspin.
+- [00:24:03,766 - 00:24:04,486] Up here,
+- [00:24:04,486 - 00:24:06,666] you would form more islands of upspin.
+- [00:24:07,026 - 00:24:07,946] Right on here,
+- [00:24:07,946 - 00:24:09,686] you would find an equal population,
+- [00:24:09,886 - 00:24:11,926] and you would go smoothly from one to the other.
+- [00:24:12,426 - 00:24:14,806] Quite different what happens when you go across here.
+- [00:24:15,306 - 00:24:16,626] When you go across here,
+- [00:24:16,626 - 00:24:21,126] you'll see mostly gas or mostly downspins
+- [00:24:21,666 - 00:24:23,266] until you get right to here,
+- [00:24:23,266 - 00:24:26,566] and then you jump to mostly upspins.
+- [00:24:27,826 - 00:24:29,266] In the case of...
+- [00:24:29,286 - 00:24:30,106] In the case of the magnet,
+- [00:24:30,106 - 00:24:33,126] the y-axis is the magnetic field.
+- [00:24:33,486 - 00:24:35,226] The external magnetic field.
+- [00:24:35,466 - 00:24:35,646] Right.
+- [00:24:35,646 - 00:24:37,986] And in the case of the liquid and gas,
+- [00:24:37,986 - 00:24:39,146] what is the y-axis?
+- [00:24:39,206 - 00:24:40,786] The y-axis is the chemical potential.
+- [00:24:41,926 - 00:24:42,486] Remember,
+- [00:24:42,486 - 00:24:43,866] what the chemical potential is,
+- [00:24:43,866 - 00:24:48,046] is it's just a device for increasing the density.
+- [00:24:49,326 - 00:24:51,926] It's a device for increasing the density.
+- [00:24:52,306 - 00:24:55,446] The bigger or smaller you make the...
+- [00:24:55,446 - 00:24:56,626] depends on your definition.
+- [00:24:57,026 - 00:24:59,186] But pushing the chemical potential
+- [00:24:59,286 - 00:25:01,396] one way or the other tends
+- [00:25:01,396 - 00:25:03,506] to make it more or less dense.
+- [00:25:03,966 - 00:25:07,086] Remember what the chemical potential was?
+- [00:25:07,466 - 00:25:08,486] It was a...
+- [00:25:08,486 - 00:25:11,226] I don't think you covered it in this class.
+- [00:25:11,586 - 00:25:11,746] Oh,
+- [00:25:11,746 - 00:25:11,906] I didn't.
+- [00:25:12,526 - 00:25:13,086] Oh,
+- [00:25:13,086 - 00:25:15,726] I didn't explain what the chemical potential is.
+- [00:25:16,166 - 00:25:16,626] Oh,
+- [00:25:16,626 - 00:25:16,886] okay,
+- [00:25:16,886 - 00:25:17,946] why don't I do that right now?
+- [00:25:18,146 - 00:25:18,606] Okay,
+- [00:25:18,606 - 00:25:18,926] good.
+- [00:25:20,726 - 00:25:21,686] My apologies.
+- [00:25:21,826 - 00:25:23,686] Let's talk about chemical potential.
+- [00:25:25,966 - 00:25:26,646] All right,
+- [00:25:26,646 - 00:25:28,206] chemical potential is...
+- [00:25:29,286 - 00:25:34,626] a tool for problems...
+- [00:25:36,006 - 00:25:37,366] Let me erase the blackboard.
+- [00:25:38,486 - 00:25:39,446] All right,
+- [00:25:39,446 - 00:25:43,506] let's imagine we go back to the very beginning
+- [00:25:44,046 - 00:25:46,346] where we have a bunch of identical boxes.
+- [00:25:48,626 - 00:25:51,006] And remember what the game was.
+- [00:25:51,446 - 00:25:55,746] We allowed energy to be interchanged between the boxes
+- [00:25:56,206 - 00:25:57,486] by a weak interaction,
+- [00:25:57,766 - 00:25:59,086] which allowed the boxes...
+- [00:25:59,286 - 00:26:01,746] to exchange energy between them.
+- [00:26:01,966 - 00:26:03,666] And then what we calculated
+- [00:26:03,666 - 00:26:05,366] was the probability distribution
+- [00:26:06,106 - 00:26:07,426] for a given box
+- [00:26:08,806 - 00:26:11,626] given a total amount of energy.
+- [00:26:11,906 - 00:26:13,766] In a situation in equilibrium
+- [00:26:13,766 - 00:26:15,026] where they come to equilibrium
+- [00:26:15,026 - 00:26:16,686] and where energy is going
+- [00:26:16,686 - 00:26:18,346] back and forth at equal rates
+- [00:26:18,346 - 00:26:19,326] so it's at equilibrium,
+- [00:26:20,146 - 00:26:23,706] then there's some total energy
+- [00:26:24,286 - 00:26:25,626] and given the total energy,
+- [00:26:25,766 - 00:26:27,806] we can calculate the probability distribution
+- [00:26:27,806 - 00:26:31,166] for a given box to have a...
+- [00:26:32,486 - 00:26:33,886] Now when we did that,
+- [00:26:33,986 - 00:26:36,726] we introduced the temperature
+- [00:26:36,726 - 00:26:37,966] or the inverse temperature
+- [00:26:37,966 - 00:26:39,286] as a Lagrange multiplier.
+- [00:26:40,046 - 00:26:43,666] We said we want to maximize the entropy
+- [00:26:43,666 - 00:26:45,726] subject to a constraint.
+- [00:26:46,126 - 00:26:47,246] And what was the constraint?
+- [00:26:47,466 - 00:26:48,916] The constraint was that the
+- [00:26:48,916 - 00:26:50,366] total amount of energy was fixed.
+- [00:26:50,746 - 00:26:54,006] So we said let's maximize entropy
+- [00:26:54,806 - 00:26:56,186] given that
+- [00:26:56,186 - 00:27:00,006] that E1 plus E2 plus E3
+- [00:27:00,006 - 00:27:01,026] blah blah blah blah blah
+- [00:27:01,866 - 00:27:02,426] No,
+- [00:27:02,426 - 00:27:03,266] that's not right.
+- [00:27:03,446 - 00:27:04,426] That's not what I want to write.
+- [00:27:05,346 - 00:27:06,526] I want to write
+- [00:27:09,445 - 00:27:11,506] that the number of boxes
+- [00:27:12,326 - 00:27:13,766] with energy E1
+- [00:27:13,766 - 00:27:16,626] plus the number of boxes with energy E2
+- [00:27:17,186 - 00:27:18,246] and so forth
+- [00:27:20,706 - 00:27:23,666] all add up to the total energy of the system.
+- [00:27:26,286 - 00:27:27,086] E total.
+- [00:27:29,386 - 00:27:31,726] The number of boxes with energy E1,
+- [00:27:32,385 - 00:27:35,266] the total energy that they have is N times E1,
+- [00:27:35,465 - 00:27:36,845] so let's call that N1,
+- [00:27:36,845 - 00:27:37,626] N2,
+- [00:27:37,626 - 00:27:38,205] and so forth.
+- [00:27:38,406 - 00:27:38,686] I'm just...
+- [00:27:38,686 - 00:27:40,906] Just go back to your early notes.
+- [00:27:41,026 - 00:27:41,906] I just want to remind you.
+- [00:27:42,046 - 00:27:44,006] And how did we implement this constraint?
+- [00:27:44,546 - 00:27:45,705] This was a constraint.
+- [00:27:45,906 - 00:27:49,126] We had a problem of minimizing or maximizing something.
+- [00:27:49,466 - 00:27:51,406] We wanted to maximize the entropy.
+- [00:27:53,106 - 00:27:54,386] I'm not going to go through it.
+- [00:27:54,526 - 00:27:56,166] We wanted to maximize the entropy
+- [00:27:56,186 - 00:28:00,626] given that the total energy is fixed.
+- [00:28:02,086 - 00:28:03,676] The way to do that
+- [00:28:03,676 - 00:28:05,266] was to introduce a Lagrange multiplier.
+- [00:28:05,866 - 00:28:07,726] We introduced a Lagrange multiplier.
+- [00:28:07,926 - 00:28:09,136] I can't remember now if it had
+- [00:28:09,136 - 00:28:10,346] a plus sign or a minus sign,
+- [00:28:10,586 - 00:28:12,926] but we called that Lagrange multiplier beta.
+- [00:28:14,926 - 00:28:17,726] And that beta multiplied sum
+- [00:28:17,726 - 00:28:20,526] N sub i E sub i.
+- [00:28:26,226 - 00:28:26,726] Or...
+- [00:28:26,726 - 00:28:27,086] Well,
+- [00:28:27,086 - 00:28:27,866] that's good enough.
+- [00:28:28,006 - 00:28:28,586] That's what we did.
+- [00:28:28,726 - 00:28:29,506] We went through this.
+- [00:28:29,706 - 00:28:31,286] We maximized the entropy.
+- [00:28:32,426 - 00:28:33,986] And what do we find?
+- [00:28:34,186 - 00:28:37,246] We found that the probability distribution...
+- [00:28:37,246 - 00:28:39,666] The probability distribution for a given box
+- [00:28:40,246 - 00:28:44,226] was E to the minus beta times the energy.
+- [00:28:45,386 - 00:28:47,266] And if we want to normalize it,
+- [00:28:47,346 - 00:28:49,506] we had to put one over the partition function there.
+- [00:28:49,666 - 00:28:52,166] Now that's just back to first...
+- [00:28:52,166 - 00:28:53,706] Back to first lecture or
+- [00:28:53,706 - 00:28:55,246] second lecture or whatever it was.
+- [00:28:56,186 - 00:28:59,406] Now supposing that it is also possible
+- [00:29:00,186 - 00:29:03,186] not just for energy to be exchanged between these boxes,
+- [00:29:03,326 - 00:29:05,706] but particles to be exchanged.
+- [00:29:07,306 - 00:29:08,146] Helium atoms,
+- [00:29:08,146 - 00:29:09,006] if this was helium,
+- [00:29:09,006 - 00:29:09,666] for example,
+- [00:29:09,686 - 00:29:10,826] or whatever it happens to be.
+- [00:29:10,906 - 00:29:11,726] Or water molecules,
+- [00:29:11,726 - 00:29:12,346] if it's water.
+- [00:29:12,586 - 00:29:13,606] In other words,
+- [00:29:13,606 - 00:29:15,706] there's little thin pipes here.
+- [00:29:18,706 - 00:29:19,926] Little thin pipes.
+- [00:29:20,946 - 00:29:24,206] And those little thin pipes allow water or fluid
+- [00:29:24,206 - 00:29:26,126] to be exchanged back and forth
+- [00:29:26,186 - 00:29:32,426] then we will not know with absolute certainty
+- [00:29:32,426 - 00:29:35,326] what the number of particles in each box was.
+- [00:29:35,946 - 00:29:38,366] Remember that we've assumed previously
+- [00:29:38,366 - 00:29:41,186] that each box had a given number of particles.
+- [00:29:41,346 - 00:29:42,936] But now we don't know what the
+- [00:29:42,936 - 00:29:44,526] number of particles is in the box.
+- [00:29:44,766 - 00:29:47,166] It also has a probability distribution.
+- [00:29:48,666 - 00:29:50,606] It also has a probability distribution.
+- [00:29:51,266 - 00:29:54,206] But here now is what we will have to do.
+- [00:29:54,846 - 00:29:56,166] We will have to add...
+- [00:29:56,186 - 00:29:57,786] We had two Lagrange multipliers.
+- [00:29:58,126 - 00:29:59,806] We'll have to...
+- [00:29:59,806 - 00:30:03,666] The one Lagrange multiplier is for the total energy.
+- [00:30:04,306 - 00:30:07,106] And so that's summation of n sub i,
+- [00:30:07,106 - 00:30:08,146] e sub i.
+- [00:30:09,606 - 00:30:10,166] Incidentally,
+- [00:30:10,166 - 00:30:11,206] the n sub i's,
+- [00:30:11,206 - 00:30:11,686] if you remember,
+- [00:30:12,486 - 00:30:15,326] were proportional to the probability...
+- [00:30:15,326 - 00:30:16,586] What was i in this formula?
+- [00:30:16,846 - 00:30:17,366] Anybody remember?
+- [00:30:20,026 - 00:30:21,146] Which box?
+- [00:30:22,806 - 00:30:23,226] No,
+- [00:30:23,226 - 00:30:24,066] not which box.
+- [00:30:24,246 - 00:30:25,306] Not which box.
+- [00:30:26,846 - 00:30:27,366] Okay,
+- [00:30:27,366 - 00:30:27,806] let me...
+- [00:30:27,806 - 00:30:30,586] I'll remind you because you probably have forgotten by now.
+- [00:30:30,686 - 00:30:31,126] So have I.
+- [00:30:31,686 - 00:30:32,206] Okay,
+- [00:30:32,206 - 00:30:34,886] what n sub i and e sub i were,
+- [00:30:35,046 - 00:30:37,066] each box can be in any
+- [00:30:37,066 - 00:30:39,086] one of a whole bunch of states.
+- [00:30:39,766 - 00:30:41,046] Here are all the states.
+- [00:30:41,526 - 00:30:42,046] Energy.
+- [00:30:43,326 - 00:30:44,426] Here's the first state,
+- [00:30:44,426 - 00:30:45,086] the second state,
+- [00:30:45,166 - 00:30:45,726] the third state,
+- [00:30:45,726 - 00:30:46,326] the fourth state,
+- [00:30:46,326 - 00:30:46,846] and so forth.
+- [00:30:47,106 - 00:30:49,246] The states are labeled by i.
+- [00:30:50,666 - 00:30:53,426] n sub i is the number of boxes
+- [00:30:53,426 - 00:30:57,346] that occupy the i-th state.
+- [00:30:57,906 - 00:31:00,136] The number of boxes in which you
+- [00:31:00,136 - 00:31:02,366] will find the system in the i-th state.
+- [00:31:03,826 - 00:31:07,126] n sub i times the energy at the i-th state,
+- [00:31:08,485 - 00:31:11,766] if I sum it over all i,
+- [00:31:13,966 - 00:31:15,426] that gives me the total energy.
+- [00:31:16,746 - 00:31:18,866] It's the number of boxes in the first state
+- [00:31:18,866 - 00:31:20,266] times the energy of the first state
+- [00:31:20,266 - 00:31:22,106] plus the number of boxes in the second state
+- [00:31:22,106 - 00:31:23,406] times the energy of the second state.
+- [00:31:23,406 - 00:31:24,686] And so forth and so on.
+- [00:31:24,966 - 00:31:26,846] This has to equal the total energy.
+- [00:31:30,586 - 00:31:31,806] That's the first thing.
+- [00:31:32,226 - 00:31:32,506] Now,
+- [00:31:32,506 - 00:31:34,626] do you remember if there were n boxes here,
+- [00:31:34,946 - 00:31:37,076] do you remember the formula that
+- [00:31:37,076 - 00:31:39,206] n sub i over total n
+- [00:31:39,206 - 00:31:42,446] is equal to the probability of the i-th state?
+- [00:31:44,126 - 00:31:45,186] In other words,
+- [00:31:45,186 - 00:31:47,926] the probability that any given box
+- [00:31:47,926 - 00:31:50,666] is in the i-th state is just proportional
+- [00:31:50,666 - 00:31:53,386] to the fraction of...
+- [00:31:53,406 - 00:31:56,586] total number of boxes that are occupying the i-th state.
+- [00:31:56,746 - 00:31:58,066] And we call that the probability.
+- [00:31:58,946 - 00:32:00,605] So we could divide this formula...
+- [00:32:00,926 - 00:32:02,006] I'll just go through it with you again.
+- [00:32:02,146 - 00:32:03,826] We could divide this formula by n,
+- [00:32:05,266 - 00:32:07,446] e total divided by n.
+- [00:32:07,606 - 00:32:09,066] What's e total divided by n?
+- [00:32:10,266 - 00:32:12,486] It's the average energy in any given box.
+- [00:32:12,966 - 00:32:14,546] So we'll just call this e.
+- [00:32:14,906 - 00:32:17,546] The average energy in a particular box.
+- [00:32:17,846 - 00:32:20,386] And this becomes summation over i,
+- [00:32:20,686 - 00:32:22,326] p of i,
+- [00:32:23,406 - 00:32:23,906] e i,
+- [00:32:26,706 - 00:32:29,366] equals the energy.
+- [00:32:31,066 - 00:32:32,526] This was a constraint.
+- [00:32:32,726 - 00:32:33,726] This was a constraint.
+- [00:32:34,166 - 00:32:36,666] And what we want to
+- [00:32:36,666 - 00:32:39,166] do is to maximize the entropy.
+- [00:32:40,766 - 00:32:41,886] Maximize the entropy.
+- [00:32:42,106 - 00:32:43,186] Remember what s is?
+- [00:32:43,186 - 00:32:43,646] What's s?
+- [00:32:46,386 - 00:32:48,146] Minus summation over i,
+- [00:32:48,146 - 00:32:49,566] p of i,
+- [00:32:49,566 - 00:32:51,146] log p of i.
+- [00:32:57,946 - 00:32:59,226] That was the entropy.
+- [00:32:59,466 - 00:33:01,386] And we want to maximize it,
+- [00:33:01,386 - 00:33:02,686] subject to a constraint.
+- [00:33:02,966 - 00:33:04,656] And the way you do that
+- [00:33:04,656 - 00:33:06,346] is to introduce a Lagrange multiplier beta.
+- [00:33:07,226 - 00:33:08,506] Forget this over here.
+- [00:33:09,066 - 00:33:10,906] Introduce a Lagrange multiplier beta.
+- [00:33:14,046 - 00:33:19,766] And then maximize this expression with respect to p i.
+- [00:33:19,766 - 00:33:22,066] The p i's are the variables.
+- [00:33:22,226 - 00:33:23,576] We're trying to find out what
+- [00:33:23,576 - 00:33:24,926] the probability of the i state is.
+- [00:33:25,186 - 00:33:26,946] We want to maximize the entropy,
+- [00:33:28,246 - 00:33:30,326] subject to the constraint of a given energy.
+- [00:33:30,626 - 00:33:31,566] And if you remember,
+- [00:33:31,566 - 00:33:33,066] we went through it.
+- [00:33:33,206 - 00:33:37,386] It gave us that p i is equal to what?
+- [00:33:40,526 - 00:33:43,786] e to the minus beta e sub i,
+- [00:33:45,005 - 00:33:46,266] divided by z.
+- [00:33:46,466 - 00:33:47,986] Z is just there to make
+- [00:33:47,986 - 00:33:49,506] the total probability add up to one.
+- [00:33:51,306 - 00:33:53,466] That's the probability of being in the i state.
+- [00:33:53,646 - 00:33:55,666] Now we've done something new.
+- [00:33:55,746 - 00:33:57,926] We've allowed particles to jump back and forth.
+- [00:34:00,066 - 00:34:02,146] We've allowed particles to jump back and forth.
+- [00:34:04,506 - 00:34:06,546] But the total number of
+- [00:34:06,546 - 00:34:08,585] particles is not allowed to change.
+- [00:34:09,186 - 00:34:10,505] The total number of particles,
+- [00:34:10,505 - 00:34:11,085] we'll assume,
+- [00:34:11,085 - 00:34:11,985] is conserved.
+- [00:34:12,025 - 00:34:13,656] The total number of helium atoms
+- [00:34:13,656 - 00:34:15,286] or water molecules or whatever it is,
+- [00:34:15,286 - 00:34:16,525] is conserved.
+- [00:34:16,706 - 00:34:18,846] And so we can write another constraint.
+- [00:34:18,846 - 00:34:26,676] The other constraint is that the
+- [00:34:26,676 - 00:34:34,505] number of particles in the first box,
+- [00:34:34,686 - 00:34:35,466] let's see,
+- [00:34:35,466 - 00:34:37,826] the number of particles in the first box,
+- [00:34:38,826 - 00:34:40,306] and one plus the number
+- [00:34:40,306 - 00:34:41,786] of particles in the second box,
+- [00:34:41,906 - 00:34:43,706] plus the number of particles in the third box,
+- [00:34:43,706 - 00:34:44,505] and so forth,
+- [00:34:44,626 - 00:34:45,565] not plus,
+- [00:34:45,746 - 00:34:47,275] all have to add up
+- [00:34:47,275 - 00:34:48,806] to the total number of particles.
+- [00:34:50,565 - 00:34:50,946] n1,
+- [00:34:50,946 - 00:34:51,326] n2,
+- [00:34:51,326 - 00:34:52,045] and n3,
+- [00:34:52,045 - 00:34:52,666] and so forth,
+- [00:34:52,666 - 00:34:53,426] they can change,
+- [00:34:54,085 - 00:34:57,206] but the total number of particles has to remain constant.
+- [00:34:57,426 - 00:34:57,526] Yeah?
+- [00:34:58,106 - 00:34:58,766] I just wondered,
+- [00:34:58,766 - 00:35:00,166] when you did this the first time,
+- [00:35:00,166 - 00:35:01,126] you had two constraints.
+- [00:35:01,706 - 00:35:02,086] Yes,
+- [00:35:02,086 - 00:35:02,266] yes,
+- [00:35:02,266 - 00:35:02,486] yes.
+- [00:35:02,666 - 00:35:03,306] There was a total...
+- [00:35:03,706 - 00:35:04,086] Yeah,
+- [00:35:04,086 - 00:35:05,706] that wasn't the number of particles.
+- [00:35:05,806 - 00:35:06,906] It was the number of boxes.
+- [00:35:07,226 - 00:35:07,606] Right.
+- [00:35:07,606 - 00:35:08,206] Yeah,
+- [00:35:08,206 - 00:35:08,606] you're right.
+- [00:35:08,846 - 00:35:10,846] There actually were two constraints.
+- [00:35:10,966 - 00:35:12,906] The total number of boxes added up to n.
+- [00:35:14,626 - 00:35:15,546] But that's right.
+- [00:35:16,026 - 00:35:16,526] All right.
+- [00:35:16,826 - 00:35:18,366] I had hoped to...
+- [00:35:18,846 - 00:35:20,526] to get around that.
+- [00:35:21,066 - 00:35:21,846] It's there.
+- [00:35:22,106 - 00:35:22,846] All right.
+- [00:35:22,886 - 00:35:26,086] So there's another Lagrange multiplier that has to be added,
+- [00:35:26,366 - 00:35:28,106] and that Lagrange multiplier,
+- [00:35:28,106 - 00:35:31,866] instead of multiplying the energy,
+- [00:35:33,286 - 00:35:36,126] multiplies the number of particles in each box.
+- [00:35:36,546 - 00:35:38,426] I'll tell you what the net result is.
+- [00:35:38,586 - 00:35:40,626] The net result is...
+- [00:35:40,626 - 00:35:42,686] We can now think of the probability
+- [00:35:44,406 - 00:35:46,006] as a joint probability
+- [00:35:46,626 - 00:35:48,586] that the system is in the i-th state
+- [00:35:48,846 - 00:35:50,506] and it has n particles.
+- [00:35:52,346 - 00:35:54,096] It's not just a question now
+- [00:35:54,096 - 00:35:55,846] of which quantum state the system is,
+- [00:35:55,946 - 00:35:58,146] but also how many particles it has in it.
+- [00:35:59,286 - 00:36:01,766] So there's a probability which is a function
+- [00:36:03,166 - 00:36:05,686] of the number of particles in the box
+- [00:36:05,686 - 00:36:07,686] and also which of the many
+- [00:36:07,686 - 00:36:09,686] quantum states the box is in
+- [00:36:09,686 - 00:36:10,786] for that many particles.
+- [00:36:11,246 - 00:36:12,776] And the answer that you
+- [00:36:12,776 - 00:36:14,306] get by the same exact analysis
+- [00:36:14,966 - 00:36:17,706] is another term up in here,
+- [00:36:17,706 - 00:36:23,246] which is minus beta mu
+- [00:36:25,865 - 00:36:29,405] times the number of particles in the box.
+- [00:36:32,986 - 00:36:34,826] This beta times mu
+- [00:36:34,826 - 00:36:37,626] is a somewhat artificial decomposition.
+- [00:36:38,466 - 00:36:40,606] You could have just called beta and mu
+- [00:36:40,606 - 00:36:42,506] the original Lagrange multiplier.
+- [00:36:43,306 - 00:36:44,906] It's beta times mu,
+- [00:36:44,906 - 00:36:46,206] which is the Lagrange multiplier.
+- [00:36:46,766 - 00:36:48,726] It's just a historical definition
+- [00:36:50,005 - 00:36:52,966] that this wasn't called a single thing,
+- [00:36:53,146 - 00:36:54,026] beta times mu,
+- [00:36:55,185 - 00:36:56,566] but that's the way it is.
+- [00:36:56,786 - 00:36:57,666] That's the way it is.
+- [00:36:59,146 - 00:37:02,166] What does mu do for you?
+- [00:37:02,226 - 00:37:03,986] What does tuning mu do for you?
+- [00:37:04,066 - 00:37:04,106] Well,
+- [00:37:04,106 - 00:37:04,666] first of all,
+- [00:37:04,666 - 00:37:06,506] mu is very much like a temperature.
+- [00:37:06,986 - 00:37:08,306] Or beta times mu,
+- [00:37:09,646 - 00:37:11,026] this combination here,
+- [00:37:11,226 - 00:37:12,466] is like a temperature,
+- [00:37:12,686 - 00:37:14,146] but what does temperature do for you?
+- [00:37:14,206 - 00:37:14,626] Forget this.
+- [00:37:14,626 - 00:37:15,166] What does temperature,
+- [00:37:15,346 - 00:37:16,426] what does changing temperature do?
+- [00:37:18,066 - 00:37:20,106] It allows you to tune the energy.
+- [00:37:21,846 - 00:37:23,366] By changing the temperature,
+- [00:37:23,526 - 00:37:25,466] if you know you have a given amount of energy,
+- [00:37:27,046 - 00:37:29,386] the way you would deal with this
+- [00:37:29,386 - 00:37:31,946] is you would change beta
+- [00:37:32,806 - 00:37:36,206] until the average energy is equal to the average energy
+- [00:37:36,206 - 00:37:37,346] that you think is in the box.
+- [00:37:37,766 - 00:37:39,766] So beta is the tuning device.
+- [00:37:40,146 - 00:37:41,826] The temperature is the tuning device,
+- [00:37:42,106 - 00:37:44,006] the knob that you change,
+- [00:37:44,006 - 00:37:46,146] to change the energy in the box.
+- [00:37:47,946 - 00:37:50,586] Mu is the knob that you change
+- [00:37:50,586 - 00:37:53,126] to change the number of particles in the box.
+- [00:37:56,866 - 00:38:00,366] Mu is the knob that you change
+- [00:38:00,366 - 00:38:01,706] if you want to change the
+- [00:38:01,706 - 00:38:03,046] number of particles in the box.
+- [00:38:03,146 - 00:38:03,726] And why is that?
+- [00:38:03,866 - 00:38:03,986] Well,
+- [00:38:03,986 - 00:38:05,066] you can see if the probability,
+- [00:38:06,006 - 00:38:07,906] let's forget this factor over here,
+- [00:38:08,066 - 00:38:10,626] if the probability goes as e
+- [00:38:10,626 - 00:38:13,186] to the minus beta mu times n,
+- [00:38:14,006 - 00:38:16,286] then the average number of particles in the box
+- [00:38:16,286 - 00:38:18,446] is going to be controlled by this mu here.
+- [00:38:19,686 - 00:38:20,206] Let's see,
+- [00:38:20,206 - 00:38:21,246] the smaller mu is,
+- [00:38:21,386 - 00:38:23,326] the more particles will be in the box,
+- [00:38:23,366 - 00:38:24,026] or whatever it is.
+- [00:38:24,566 - 00:38:27,226] So chemical potential is just a device
+- [00:38:28,546 - 00:38:31,266] for tuning the number of particles in a box
+- [00:38:31,866 - 00:38:33,136] in a situation where the
+- [00:38:33,136 - 00:38:34,406] number of particles in the box
+- [00:38:34,406 - 00:38:36,586] can fluctuate or change in one way or another.
+- [00:38:37,726 - 00:38:38,326] All right,
+- [00:38:38,326 - 00:38:39,276] I didn't want to spend
+- [00:38:39,276 - 00:38:40,226] a lot of time on that,
+- [00:38:40,346 - 00:38:42,126] but let's come back to here now.
+- [00:38:42,126 - 00:38:45,586] How do you change mathematically,
+- [00:38:46,286 - 00:38:49,466] in terms of the statistical mechanical partition function,
+- [00:38:50,846 - 00:38:53,826] in terms of the statistical mechanical partition function,
+- [00:38:54,046 - 00:38:55,946] how do you change,
+- [00:38:56,046 - 00:38:56,186] oh,
+- [00:38:56,186 - 00:38:56,886] incidentally,
+- [00:38:56,886 - 00:38:58,706] the partition function z,
+- [00:38:59,026 - 00:39:01,486] let's think about the partition function z.
+- [00:39:02,666 - 00:39:05,326] The partition function z satisfies
+- [00:39:06,445 - 00:39:08,446] z is equal to the sum
+- [00:39:09,346 - 00:39:11,526] over all of the states of the system
+- [00:39:11,526 - 00:39:12,106] in the box.
+- [00:39:12,126 - 00:39:14,166] And the number of particles in the box,
+- [00:39:14,866 - 00:39:16,506] the number of particles in the box
+- [00:39:16,506 - 00:39:19,106] and the various states that the particles can be in,
+- [00:39:19,186 - 00:39:22,886] of e to the minus beta e sub i
+- [00:39:23,686 - 00:39:24,906] minus beta mu
+- [00:39:25,626 - 00:39:27,446] times the number of particles in the box.
+- [00:39:28,786 - 00:39:30,286] That's just to make sure
+- [00:39:30,286 - 00:39:32,706] that the total probability adds up to one.
+- [00:39:33,446 - 00:39:34,306] So that's z.
+- [00:39:35,246 - 00:39:37,026] And notice it has a new thing in it.
+- [00:39:37,126 - 00:39:39,506] It has a thing which allows you to control
+- [00:39:39,506 - 00:39:40,846] the number of particles.
+- [00:39:42,026 - 00:39:44,326] Is the capital N in that formula
+- [00:39:44,326 - 00:39:46,246] supposed to be N sub i?
+- [00:39:46,526 - 00:39:47,046] No.
+- [00:39:48,066 - 00:39:48,626] No.
+- [00:39:48,806 - 00:39:50,826] It's the number of particles in...
+- [00:39:52,106 - 00:39:55,046] The average number of particles in all the boxes.
+- [00:39:55,186 - 00:39:55,366] The average number of particles in all the boxes.
+- [00:39:55,366 - 00:39:55,546] That's right.
+- [00:39:55,746 - 00:39:57,826] The average number of particles in all the boxes.
+- [00:39:58,566 - 00:39:59,286] All right.
+- [00:39:59,326 - 00:40:00,146] So this is a device.
+- [00:40:00,306 - 00:40:01,406] And how do you choose mu?
+- [00:40:02,026 - 00:40:04,486] You choose mu by calculating
+- [00:40:04,486 - 00:40:06,026] the average number of particles
+- [00:40:06,666 - 00:40:08,346] from this probability distribution
+- [00:40:09,066 - 00:40:10,826] and then set it equal to mu.
+- [00:40:10,846 - 00:40:11,926] And that's equal to what you think
+- [00:40:11,926 - 00:40:13,286] the average number of particles is,
+- [00:40:13,386 - 00:40:14,366] whatever it happens to be.
+- [00:40:14,806 - 00:40:16,866] By changing mu...
+- [00:40:18,006 - 00:40:21,926] Isn't N the possible number of particles in the box?
+- [00:40:22,026 - 00:40:23,986] Because N can be anywhere...
+- [00:40:23,986 - 00:40:24,626] In this formula,
+- [00:40:24,806 - 00:40:27,166] it's the possible number of particles in the box.
+- [00:40:28,246 - 00:40:28,826] That's right.
+- [00:40:29,006 - 00:40:30,366] And you sum over it.
+- [00:40:30,586 - 00:40:32,986] But you can also use this now
+- [00:40:32,986 - 00:40:35,246] to calculate the average number of particles.
+- [00:40:35,386 - 00:40:36,926] How would you calculate the average number?
+- [00:40:37,186 - 00:40:39,166] You take the probability distribution,
+- [00:40:39,166 - 00:40:41,826] multiply it by n and sum.
+- [00:40:41,826 - 00:40:43,536] So you also have a
+- [00:40:43,536 - 00:40:45,246] formula for the average number of
+- [00:40:45,246 - 00:40:46,206] particles in the box.
+- [00:40:46,206 - 00:40:51,166] So if you know there are altogether n total particles
+- [00:40:51,166 - 00:40:54,186] all together divided up among all the boxes,
+- [00:40:54,186 - 00:40:56,166] then you think you know what how
+- [00:40:56,166 - 00:40:57,906] many particles should be in each box,
+- [00:40:57,906 - 00:41:01,186] you simply tune mu until you get that
+- [00:41:01,186 - 00:41:01,746] many particles.
+- [00:41:01,746 - 00:41:02,286] Yeah,
+- [00:41:02,286 - 00:41:05,316] but obviously tuning the number
+- [00:41:05,316 - 00:41:08,346] of particles in a given box
+- [00:41:08,346 - 00:41:10,286] of a given size is
+- [00:41:10,286 - 00:41:12,226] the same as changing the density.
+- [00:41:12,226 - 00:41:15,646] You can think about
+- [00:41:15,646 - 00:41:16,286] how to do that,
+- [00:41:16,286 - 00:41:17,386] you just divide by the volume.
+- [00:41:17,386 - 00:41:19,965] And so the chemical potential is
+- [00:41:20,466 - 00:41:23,116] a trick in the partition function
+- [00:41:23,116 - 00:41:25,766] for changing the density of the gas.
+- [00:41:25,766 - 00:41:28,666] What is
+- [00:41:28,666 - 00:41:28,766] that?
+- [00:41:28,766 - 00:41:31,086] Mu is the chemical potential.
+- [00:41:31,086 - 00:41:34,206] And I have a strong feeling that my
+- [00:41:34,206 - 00:41:35,886] definition of mu differs from everybody
+- [00:41:35,886 - 00:41:37,566] else's on earth by a sign.
+- [00:41:38,026 - 00:41:38,326] I'm sorry.
+- [00:41:38,346 - 00:41:40,106] I discovered that sign the other day.
+- [00:41:40,106 - 00:41:41,886] I've been going out through my entire
+- [00:41:41,886 - 00:41:43,846] life with the chemical potential having
+- [00:41:43,846 - 00:41:45,806] the sign that I've given it here.
+- [00:41:45,806 - 00:41:46,146] I'm not
+- [00:41:46,146 - 00:41:47,246] going to try to correct it now.
+- [00:41:47,246 - 00:41:48,546] Whatever it is,
+- [00:41:48,546 - 00:41:51,366] it is the thing which allows you
+- [00:41:51,366 - 00:41:54,046] to vary the density.
+- [00:41:54,046 - 00:41:58,906] Now what is the density in this lattice fluid?
+- [00:41:58,906 - 00:41:59,646] The
+- [00:41:59,646 - 00:42:01,706] density in the lattice fluid is,
+- [00:42:01,706 - 00:42:03,106] roughly speaking,
+- [00:42:03,106 - 00:42:05,326] the number of up spins divided
+- [00:42:05,326 - 00:42:06,146] by the volume.
+- [00:42:06,146 - 00:42:07,946] Capital N,
+- [00:42:08,346 - 00:42:11,246] becomes the number of up spins here.
+- [00:42:11,246 - 00:42:12,626] A down spin is empty.
+- [00:42:12,626 - 00:42:13,426] An up spin
+- [00:42:14,166 - 00:42:15,346] represents a molecule.
+- [00:42:15,346 - 00:42:20,686] So capital N is just the number of up spins.
+- [00:42:20,686 - 00:42:21,406] How do you
+- [00:42:21,406 - 00:42:22,886] change the number of up spins?
+- [00:42:22,886 - 00:42:26,566] How do you tune the system from,
+- [00:42:26,566 - 00:42:27,526] essentially,
+- [00:42:27,526 - 00:42:27,786] no
+- [00:42:27,786 - 00:42:28,326] up spins,
+- [00:42:28,326 - 00:42:31,586] and bias it towards lots of up spins?
+- [00:42:31,586 - 00:42:33,346] You change H,
+- [00:42:33,346 - 00:42:34,866] right?
+- [00:42:34,866 - 00:42:36,566] When H is down,
+- [00:42:36,726 - 00:42:38,326] it pushes all the spins down,
+- [00:42:38,326 - 00:42:38,326] and when H goes up,
+- [00:42:38,326 - 00:42:38,326] it pushes all the so-called up spins,
+- [00:42:38,326 - 00:42:39,646] Now no matter what the temperature is,
+- [00:42:39,646 - 00:42:40,886] if H is down,
+- [00:42:40,886 - 00:42:45,046] it will bias the system toward few upspins.
+- [00:42:45,366 - 00:42:49,046] And if you want to change the density of upspins,
+- [00:42:49,046 - 00:42:51,946] what you do is move along this H-axis.
+- [00:42:52,226 - 00:42:55,966] So the H-axis is closely connected.
+- [00:42:55,966 - 00:42:58,486] It's essentially the same as the chemical potential.
+- [00:42:59,686 - 00:43:02,396] And it's the thing that you tune
+- [00:43:02,396 - 00:43:05,106] to change the density of the gas,
+- [00:43:05,106 - 00:43:07,346] the density of the fluid.
+- [00:43:07,346 - 00:43:08,786] Quick question.
+- [00:43:08,786 - 00:43:12,316] The terminology is one Lagrange multiplier is beta
+- [00:43:12,316 - 00:43:15,846] and the other Lagrange multiplier is beta mu?
+- [00:43:16,246 - 00:43:16,446] Well,
+- [00:43:16,446 - 00:43:16,806] yeah,
+- [00:43:16,806 - 00:43:18,286] it's a historical fact.
+- [00:43:18,286 - 00:43:20,066] We could have just called it lambda.
+- [00:43:21,546 - 00:43:22,146] Okay,
+- [00:43:22,146 - 00:43:23,726] so it's different than beta.
+- [00:43:23,946 - 00:43:25,086] It's different than beta.
+- [00:43:25,086 - 00:43:28,366] And historically,
+- [00:43:28,366 - 00:43:31,486] lambda was set equal to beta times mu.
+- [00:43:31,926 - 00:43:33,506] A little confusing there.
+- [00:43:33,666 - 00:43:33,906] Yeah,
+- [00:43:33,906 - 00:43:34,166] I know.
+- [00:43:34,306 - 00:43:34,906] Great.
+- [00:43:35,106 - 00:43:36,226] All right.
+- [00:43:37,346 - 00:43:38,226] So we could have just called it lambda.
+- [00:43:40,326 - 00:43:41,486] But that wouldn't be,
+- [00:43:41,486 - 00:43:43,206] that would be ahistorical and it
+- [00:43:43,206 - 00:43:44,926] would be different than the standard terminology.
+- [00:43:45,406 - 00:43:47,426] So the standard terminology is
+- [00:43:47,426 - 00:43:49,446] to replace lambda by beta mu.
+- [00:43:49,826 - 00:43:52,106] But think of beta mu as itself a quantity.
+- [00:43:53,366 - 00:43:53,846] Incidentally,
+- [00:43:53,846 - 00:43:57,116] you calculate the average number of particles by differentiating
+- [00:43:57,116 - 00:44:00,386] the logarithm of the partition function with respect to mu.
+- [00:44:01,686 - 00:44:02,886] Differentiating with respect to mu,
+- [00:44:02,886 - 00:44:03,066] well,
+- [00:44:03,066 - 00:44:04,666] differentiating with respect to beta mu,
+- [00:44:04,666 - 00:44:07,546] brings down an n and allows you
+- [00:44:07,546 - 00:44:10,426] to calculate the average number of particles.
+- [00:44:10,546 - 00:44:13,026] So you calculate the derivative of the logarithm
+- [00:44:13,026 - 00:44:15,506] of the partition function with respect to beta mu.
+- [00:44:16,346 - 00:44:19,766] And that gives you the mean number of particles,
+- [00:44:19,766 - 00:44:21,866] which is very similar to
+- [00:44:21,866 - 00:44:23,966] how we calculated the mean energy,
+- [00:44:24,646 - 00:44:25,996] differentiate the log of the
+- [00:44:25,996 - 00:44:27,346] partition function with respect to beta.
+- [00:44:27,566 - 00:44:28,406] Similar idea.
+- [00:44:29,306 - 00:44:29,866] Okay,
+- [00:44:29,866 - 00:44:30,426] that's,
+- [00:44:30,426 - 00:44:33,326] that is the basic setup for...
+- [00:44:33,326 - 00:44:33,906] Yeah.
+- [00:44:34,446 - 00:44:37,486] How does an experimentalist measure the chemical potential?
+- [00:44:37,866 - 00:44:39,226] I know how they do temperature,
+- [00:44:39,226 - 00:44:40,186] but how do you...
+- [00:44:40,186 - 00:44:42,046] I'm not sure you do measure the chemical potential.
+- [00:44:42,246 - 00:44:42,366] Yeah.
+- [00:44:44,246 - 00:44:45,906] How do you measure the chemical potential?
+- [00:44:45,966 - 00:44:47,766] I would say you measure the
+- [00:44:47,766 - 00:44:49,566] density more likely than the chemical potential.
+- [00:44:54,945 - 00:44:55,886] I don't know.
+- [00:44:55,926 - 00:44:58,026] I never think about measuring the chemical potential.
+- [00:44:58,226 - 00:44:59,796] I think of it as a
+- [00:44:59,796 - 00:45:01,366] tunable parameter that changes the density,
+- [00:45:01,526 - 00:45:03,306] and that the density is the thing that you...
+- [00:45:03,326 - 00:45:05,866] Does that have anything to do with the work function?
+- [00:45:06,646 - 00:45:07,126] Yeah,
+- [00:45:07,126 - 00:45:08,886] it is the amount of energy that it
+- [00:45:08,886 - 00:45:10,646] takes to remove a system from a box.
+- [00:45:10,866 - 00:45:11,346] Yeah,
+- [00:45:11,346 - 00:45:12,726] it is related to the work function.
+- [00:45:12,986 - 00:45:14,586] So the work function is the energy?
+- [00:45:15,326 - 00:45:15,806] Yeah,
+- [00:45:15,806 - 00:45:17,526] how much energy it takes to
+- [00:45:17,526 - 00:45:19,246] remove a particle from a box.
+- [00:45:19,986 - 00:45:20,466] Yeah.
+- [00:45:22,066 - 00:45:22,946] It's true.
+- [00:45:23,726 - 00:45:24,206] Okay,
+- [00:45:24,206 - 00:45:24,686] so...
+- [00:45:26,386 - 00:45:26,866] Good.
+- [00:45:27,346 - 00:45:30,106] But now I want to talk about something very exotic,
+- [00:45:30,106 - 00:45:31,326] extremely interesting,
+- [00:45:31,506 - 00:45:33,306] and took many years.
+- [00:45:33,326 - 00:45:34,526] It took many years to really get right.
+- [00:45:35,366 - 00:45:38,126] It has had an enormous influence
+- [00:45:38,126 - 00:45:40,886] on statistical mechanics and quantum field theory.
+- [00:45:41,986 - 00:45:46,126] I doubt that that's obvious to anybody in the room,
+- [00:45:46,146 - 00:45:47,036] what all of this has
+- [00:45:47,036 - 00:45:47,926] to do with quantum field theory,
+- [00:45:48,066 - 00:45:51,546] but let's not worry about that.
+- [00:45:52,366 - 00:45:55,216] It has to do with the behavior of
+- [00:45:55,216 - 00:45:58,066] the system as you approach the critical point.
+- [00:45:58,426 - 00:46:02,146] Let's say moving along h equals zero.
+- [00:46:02,146 - 00:46:05,726] We don't even need h for this here.
+- [00:46:06,086 - 00:46:09,846] We just move along from the high temperature side,
+- [00:46:10,126 - 00:46:12,826] getting closer and closer to the critical point.
+- [00:46:12,946 - 00:46:15,346] What is it that happens at the critical point?
+- [00:46:15,506 - 00:46:17,046] And something very interesting
+- [00:46:17,046 - 00:46:18,586] happens at the critical point.
+- [00:46:19,706 - 00:46:21,846] The first idea that you need
+- [00:46:21,846 - 00:46:23,986] in order to understand the critical point
+- [00:46:23,986 - 00:46:25,666] is the idea of a correlation length.
+- [00:46:27,046 - 00:46:27,886] We talked,
+- [00:46:27,886 - 00:46:28,846] I think we talked,
+- [00:46:28,846 - 00:46:31,266] did we talk at all about the correlation function?
+- [00:46:32,466 - 00:46:33,066] No,
+- [00:46:33,066 - 00:46:33,766] we didn't.
+- [00:46:33,806 - 00:46:35,606] So I'll tell you what the correlation function is.
+- [00:46:35,666 - 00:46:37,666] We don't need to talk about how you calculate it.
+- [00:46:38,486 - 00:46:39,606] It's an average.
+- [00:46:40,306 - 00:46:43,306] It's an average of the product
+- [00:46:43,306 - 00:46:46,306] of spins at two different points.
+- [00:46:46,786 - 00:46:49,666] Let's say sigma of A and sigma of B.
+- [00:46:50,286 - 00:46:52,456] It's the average value of the
+- [00:46:52,456 - 00:46:54,626] product of sigma A and sigma B.
+- [00:46:56,706 - 00:46:59,126] It measures the degree of correlation
+- [00:46:59,766 - 00:47:01,706] between the spin at point A
+- [00:47:02,146 - 00:47:02,886] and the spin at point B.
+- [00:47:03,026 - 00:47:05,126] These could be two points on the lattice.
+- [00:47:06,646 - 00:47:08,086] They could be near each other.
+- [00:47:08,186 - 00:47:09,446] They could be far from each other.
+- [00:47:09,806 - 00:47:11,626] What happens if A is equal to B,
+- [00:47:11,626 - 00:47:12,346] incidentally?
+- [00:47:14,646 - 00:47:16,286] Sigma squared is just equal to one.
+- [00:47:16,706 - 00:47:19,626] So the correlation function at the origin,
+- [00:47:19,626 - 00:47:20,566] let's call it,
+- [00:47:22,786 - 00:47:23,746] in other words,
+- [00:47:23,746 - 00:47:25,286] when A and B are the same point,
+- [00:47:25,386 - 00:47:26,586] that's always equal to one.
+- [00:47:27,265 - 00:47:29,986] But now let's separate the points.
+- [00:47:30,366 - 00:47:30,806] Okay?
+- [00:47:32,206 - 00:47:32,826] All right.
+- [00:47:32,846 - 00:47:34,766] So how do I calculate the correlation function
+- [00:47:34,766 - 00:47:36,506] at these two different points?
+- [00:47:36,586 - 00:47:37,106] And let's imagine,
+- [00:47:37,106 - 00:47:39,406] let's go to extremely high temperatures.
+- [00:47:39,566 - 00:47:41,606] Let's start at the high temperature end of things.
+- [00:47:42,166 - 00:47:42,786] All right?
+- [00:47:42,806 - 00:47:44,086] Not at the magnetized phase,
+- [00:47:44,086 - 00:47:45,626] but at the high temperature end.
+- [00:47:46,266 - 00:47:47,226] Infinite temperature,
+- [00:47:47,226 - 00:47:48,686] enormously high temperature.
+- [00:47:48,886 - 00:47:50,326] And what happens at very high temperature?
+- [00:47:50,766 - 00:47:51,246] Eh,
+- [00:47:51,246 - 00:47:52,786] jiggling around like mad.
+- [00:47:53,086 - 00:47:54,706] And the temperature is so high
+- [00:47:54,706 - 00:47:58,746] that the bonds are not very potent
+- [00:47:58,746 - 00:48:00,846] at holding the spins aligned with each other.
+- [00:48:03,586 - 00:48:06,726] So let's talk about the correlation,
+- [00:48:06,766 - 00:48:07,726] or the average,
+- [00:48:07,726 - 00:48:09,346] of the product of two spins
+- [00:48:10,026 - 00:48:12,046] neighboring to each other at very,
+- [00:48:12,046 - 00:48:14,026] very high temperature.
+- [00:48:14,246 - 00:48:15,446] What would you expect that it would be?
+- [00:48:15,766 - 00:48:16,226] Zero.
+- [00:48:17,606 - 00:48:18,086] Zero,
+- [00:48:18,086 - 00:48:20,406] because even if you freeze,
+- [00:48:20,626 - 00:48:21,626] you can think of it this way.
+- [00:48:21,746 - 00:48:23,326] You can think of calculating
+- [00:48:23,326 - 00:48:24,906] it by freezing this spin up
+- [00:48:24,906 - 00:48:27,386] and then calculating in the presence of this spin up,
+- [00:48:27,466 - 00:48:29,126] calculating the average of this spin.
+- [00:48:30,246 - 00:48:31,086] And then...
+- [00:48:32,046 - 00:48:33,406] That's the way you can think about it.
+- [00:48:33,446 - 00:48:35,216] It really represents the probability
+- [00:48:35,216 - 00:48:36,986] that if this spin is up,
+- [00:48:37,126 - 00:48:39,206] then this spin is also up,
+- [00:48:39,286 - 00:48:40,486] or also down.
+- [00:48:40,626 - 00:48:41,346] Some average,
+- [00:48:41,346 - 00:48:43,566] given that this one is up,
+- [00:48:43,586 - 00:48:46,306] what's the probability that this one is up or down?
+- [00:48:46,846 - 00:48:47,866] And that represents,
+- [00:48:47,866 - 00:48:49,186] that's the correlation function.
+- [00:48:49,366 - 00:48:50,146] Or better yet,
+- [00:48:50,146 - 00:48:51,966] given that this one is up,
+- [00:48:52,046 - 00:48:53,486] what's the average of this one?
+- [00:48:53,926 - 00:48:54,406] All right.
+- [00:48:55,225 - 00:48:55,665] So,
+- [00:48:55,665 - 00:48:56,706] what would you expect,
+- [00:48:56,706 - 00:48:57,086] again,
+- [00:48:57,086 - 00:48:58,026] at very high temperatures?
+- [00:48:58,906 - 00:48:59,646] Just zero,
+- [00:48:59,646 - 00:49:01,066] because they're fluctuating.
+- [00:49:01,086 - 00:49:02,186] They're fluctuating completely independently,
+- [00:49:02,346 - 00:49:04,386] because the temperature is so high
+- [00:49:04,386 - 00:49:06,426] that the bond joining these is ineffective.
+- [00:49:07,286 - 00:49:09,626] What happens as you start to lower the temperature?
+- [00:49:11,046 - 00:49:12,886] As you start to lower the temperature,
+- [00:49:14,606 - 00:49:17,106] if this spin is up,
+- [00:49:17,766 - 00:49:20,706] it will bias this spin to also be up,
+- [00:49:20,886 - 00:49:23,546] because the energy will be lowered if they're parallel.
+- [00:49:23,986 - 00:49:25,506] If this spin is down,
+- [00:49:25,746 - 00:49:28,086] it will also bias it.
+- [00:49:28,856 - 00:49:30,186] So what starts to happen,
+- [00:49:31,086 - 00:49:32,926] is that sigma times sigma
+- [00:49:32,926 - 00:49:34,766] starts to not be zero anymore,
+- [00:49:35,986 - 00:49:38,146] and in fact is usually positive.
+- [00:49:38,646 - 00:49:41,646] It's positive because if this spin is up,
+- [00:49:41,706 - 00:49:43,346] this one is more likely to be up,
+- [00:49:43,446 - 00:49:45,266] so sigma times sigma is positive.
+- [00:49:45,836 - 00:49:47,066] If this spin is down,
+- [00:49:47,246 - 00:49:49,506] then this one is also more likely to be down,
+- [00:49:49,706 - 00:49:50,526] and so again,
+- [00:49:50,526 - 00:49:52,146] sigma times sigma is positive.
+- [00:49:52,836 - 00:49:54,506] And so this correlation function
+- [00:49:55,706 - 00:49:57,466] between neighboring points
+- [00:49:59,306 - 00:50:01,186] at moderately high temperatures
+- [00:50:01,826 - 00:50:03,366] will stop being zero
+- [00:50:03,366 - 00:50:05,946] and be small but non-zero.
+- [00:50:06,126 - 00:50:10,046] What about the correlation function
+- [00:50:10,046 - 00:50:12,386] between second nearest neighbors?
+- [00:50:13,106 - 00:50:13,666] Square?
+- [00:50:14,566 - 00:50:16,226] Square is a negative one?
+- [00:50:16,426 - 00:50:17,366] It'll be more or less,
+- [00:50:17,366 - 00:50:17,726] that's right,
+- [00:50:17,806 - 00:50:19,246] it'll be more or less the square
+- [00:50:20,166 - 00:50:22,986] of the correlation between first nearest neighbors.
+- [00:50:23,246 - 00:50:23,886] That's right.
+- [00:50:24,106 - 00:50:25,926] That in fact is about what it is.
+- [00:50:25,926 - 00:50:28,306] What about you go way,
+- [00:50:28,306 - 00:50:29,326] way down the line here?
+- [00:50:30,506 - 00:50:31,866] And there's nothing that's special
+- [00:50:31,866 - 00:50:34,066] about moving along the horizontal axis here.
+- [00:50:34,226 - 00:50:35,746] We move vertical axis,
+- [00:50:35,846 - 00:50:37,166] or we can move at a 45 degree,
+- [00:50:37,326 - 00:50:38,166] but what would you expect
+- [00:50:38,726 - 00:50:39,986] as you move way down here?
+- [00:50:42,426 - 00:50:42,946] Again,
+- [00:50:42,946 - 00:50:44,746] you'll expect each time you move,
+- [00:50:44,846 - 00:50:46,326] you'll lose some correlation.
+- [00:50:47,346 - 00:50:48,326] And in fact,
+- [00:50:48,326 - 00:50:50,026] you lose the same fraction
+- [00:50:50,026 - 00:50:50,686] of correlation,
+- [00:50:50,686 - 00:50:51,946] roughly speaking,
+- [00:50:52,106 - 00:50:54,846] and that means that this is going to be
+- [00:50:54,846 - 00:50:57,666] exponential in the distance between these points.
+- [00:50:58,066 - 00:51:00,106] If each time you lost,
+- [00:51:00,106 - 00:51:00,586] let's say,
+- [00:51:00,646 - 00:51:02,086] half the correlation,
+- [00:51:02,406 - 00:51:05,086] if the correlation between nearest neighbors
+- [00:51:05,086 - 00:51:05,726] was a half,
+- [00:51:05,726 - 00:51:07,486] and second nearest neighbors
+- [00:51:07,486 - 00:51:08,046] was a quarter,
+- [00:51:08,046 - 00:51:09,246] third nearest neighbors
+- [00:51:09,246 - 00:51:09,906] was an eighth,
+- [00:51:09,906 - 00:51:10,466] and so forth,
+- [00:51:10,626 - 00:51:13,206] you might expect that this would behave
+- [00:51:13,846 - 00:51:16,386] like e to the minus
+- [00:51:17,265 - 00:51:19,126] some parameter m
+- [00:51:20,406 - 00:51:22,646] times the distance between them.
+- [00:51:22,986 - 00:51:24,826] Let's call it distance between them
+- [00:51:24,846 - 00:51:25,166] d.
+- [00:51:25,926 - 00:51:28,826] Distance means number of lattice sites
+- [00:51:28,826 - 00:51:29,626] between them.
+- [00:51:30,366 - 00:51:31,986] So when you're very,
+- [00:51:31,986 - 00:51:32,846] very far away,
+- [00:51:34,665 - 00:51:35,946] very far away,
+- [00:51:36,106 - 00:51:38,266] the correlation is extremely weak,
+- [00:51:38,346 - 00:51:39,326] exponentially weak.
+- [00:51:39,486 - 00:51:40,706] When you're close by,
+- [00:51:40,926 - 00:51:43,226] the correlation function is stronger.
+- [00:51:43,346 - 00:51:44,446] The correlation is stronger.
+- [00:51:44,646 - 00:51:47,246] This m depends on the temperature.
+- [00:51:48,066 - 00:51:49,126] At very,
+- [00:51:49,126 - 00:51:50,106] very high temperatures,
+- [00:51:51,546 - 00:51:54,626] the correlation falls very rapidly
+- [00:51:54,846 - 00:51:55,026] to zero.
+- [00:51:55,106 - 00:51:56,166] Let's imagine plotting it
+- [00:51:56,166 - 00:51:57,366] at different temperatures.
+- [00:52:00,526 - 00:52:02,586] Correlation function is always one
+- [00:52:03,266 - 00:52:04,646] at d equals zero.
+- [00:52:04,826 - 00:52:05,526] So this is d.
+- [00:52:06,596 - 00:52:08,226] At extremely high temperatures,
+- [00:52:08,566 - 00:52:10,946] the correlation function just drops
+- [00:52:10,946 - 00:52:12,266] like a bomb down to zero.
+- [00:52:13,186 - 00:52:14,726] And so by the time you get over
+- [00:52:14,726 - 00:52:15,846] to the first lattice point,
+- [00:52:16,046 - 00:52:17,186] it's negligible.
+- [00:52:17,596 - 00:52:19,406] Small at very high temperatures.
+- [00:52:19,746 - 00:52:21,286] And then it just stays small.
+- [00:52:21,826 - 00:52:22,986] Gets even smaller,
+- [00:52:22,986 - 00:52:23,526] smaller,
+- [00:52:23,526 - 00:52:24,026] smaller,
+- [00:52:24,846 - 00:52:25,306] exponentially.
+- [00:52:26,486 - 00:52:29,306] What happens as you lower the temperature?
+- [00:52:29,646 - 00:52:31,386] As you lower the temperature,
+- [00:52:31,586 - 00:52:35,926] the correlation function continues to drop
+- [00:52:35,926 - 00:52:37,106] as an exponential,
+- [00:52:38,606 - 00:52:41,906] but the rate in here at which it falls
+- [00:52:41,906 - 00:52:43,986] becomes more and more gradual.
+- [00:52:44,266 - 00:52:45,486] As the temperature gets lower,
+- [00:52:45,666 - 00:52:48,286] the rate at which it falls becomes more gradual.
+- [00:52:48,706 - 00:52:50,426] And that means that m
+- [00:52:50,426 - 00:52:53,066] is a function of temperature.
+- [00:52:54,146 - 00:52:54,826] So,
+- [00:52:54,826 - 00:52:54,826] if you look at the graph,
+- [00:52:55,446 - 00:52:57,206] m is a function of temperature.
+- [00:52:58,806 - 00:53:00,206] And what does it represent?
+- [00:53:00,526 - 00:53:02,366] It represents the distance
+- [00:53:02,366 - 00:53:04,286] that you have to go out
+- [00:53:04,286 - 00:53:07,046] in order that the correlation has dropped
+- [00:53:07,046 - 00:53:08,906] by a factor of e.
+- [00:53:10,506 - 00:53:11,126] Alright?
+- [00:53:12,586 - 00:53:14,726] How far do you have to go out
+- [00:53:14,726 - 00:53:17,286] in order that the correlation function
+- [00:53:17,286 - 00:53:18,965] has dropped by a factor of e?
+- [00:53:19,226 - 00:53:20,646] That's what m represents.
+- [00:53:21,866 - 00:53:24,826] It's also called the inverse correlation function.
+- [00:53:24,846 - 00:53:25,166] So,
+- [00:53:25,166 - 00:53:25,166] the inverse correlation function
+- [00:53:26,426 - 00:53:28,266] The inverse correlation length,
+- [00:53:28,346 - 00:53:31,286] the correlation length is the width of this curve.
+- [00:53:31,586 - 00:53:32,206] Here,
+- [00:53:32,206 - 00:53:34,586] the correlation length is very,
+- [00:53:34,586 - 00:53:35,106] very small.
+- [00:53:36,446 - 00:53:38,226] And m is very large.
+- [00:53:43,726 - 00:53:45,346] As you lower the temperature,
+- [00:53:45,746 - 00:53:48,686] the correlation length gets longer and longer,
+- [00:53:49,666 - 00:53:52,086] and the inverse correlation function
+- [00:53:52,086 - 00:53:53,485] gets smaller and smaller.
+- [00:53:54,406 - 00:53:54,925] Okay?
+- [00:53:55,005 - 00:53:56,386] When m is very small,
+- [00:53:57,126 - 00:54:00,546] this function very gradually goes to zero.
+- [00:54:02,006 - 00:54:02,526] Okay?
+- [00:54:02,626 - 00:54:03,126] So,
+- [00:54:03,126 - 00:54:04,086] m is a function of t.
+- [00:54:04,386 - 00:54:07,546] It represents the inverse of the correlation length,
+- [00:54:07,706 - 00:54:09,886] correlation length being the distance out
+- [00:54:09,886 - 00:54:10,766] to which you have to go
+- [00:54:11,746 - 00:54:13,206] in order that the,
+- [00:54:14,026 - 00:54:15,946] that you've lost a factor of e
+- [00:54:15,946 - 00:54:17,126] in the correlation.
+- [00:54:18,226 - 00:54:19,966] And those are a set of definitions,
+- [00:54:20,146 - 00:54:21,986] but they're clearly a useful set of definitions.
+- [00:54:22,086 - 00:54:24,866] And what the correlation length tells you
+- [00:54:24,866 - 00:54:26,546] is it just tells you exactly what it says.
+- [00:54:27,306 - 00:54:28,346] How long,
+- [00:54:28,626 - 00:54:30,786] how far out on the lattice
+- [00:54:31,706 - 00:54:32,846] will you feel
+- [00:54:32,846 - 00:54:36,806] the effect of nailing one particular spin in place?
+- [00:54:37,446 - 00:54:39,946] Supposing you nailed one particular spin in place,
+- [00:54:40,006 - 00:54:42,106] either up or down,
+- [00:54:42,326 - 00:54:44,066] how far away is it felt?
+- [00:54:44,526 - 00:54:46,146] That's called the correlation length,
+- [00:54:46,286 - 00:54:47,886] and it's inverse to this m of t.
+- [00:54:48,846 - 00:54:49,366] So,
+- [00:54:49,366 - 00:54:50,826] m of t decreases,
+- [00:54:50,826 - 00:54:53,486] obviously decreases with temperature.
+- [00:54:54,806 - 00:54:56,246] Correlation length increases,
+- [00:54:56,666 - 00:54:57,966] m of t decreases.
+- [00:54:58,586 - 00:54:59,146] Okay.
+- [00:54:59,606 - 00:55:00,166] Yeah?
+- [00:55:00,266 - 00:55:01,306] In all these cases,
+- [00:55:01,326 - 00:55:02,306] you're assuming there's nothing
+- [00:55:02,306 - 00:55:03,646] between the two test points,
+- [00:55:03,646 - 00:55:03,966] right?
+- [00:55:04,046 - 00:55:04,186] Yeah.
+- [00:55:04,546 - 00:55:05,106] So,
+- [00:55:05,106 - 00:55:05,986] you're making an assumption
+- [00:55:05,986 - 00:55:07,846] about the density in there implicitly.
+- [00:55:09,646 - 00:55:10,986] You're making an assumption
+- [00:55:10,986 - 00:55:12,946] that it's not so dense
+- [00:55:12,946 - 00:55:14,126] that you're squeezing...
+- [00:55:14,126 - 00:55:16,066] Dense in the sense of...
+- [00:55:16,666 - 00:55:18,226] Particles on every lattice point.
+- [00:55:18,426 - 00:55:19,006] Mm-hmm.
+- [00:55:19,466 - 00:55:20,026] So,
+- [00:55:20,026 - 00:55:20,286] you're getting...
+- [00:55:20,286 - 00:55:20,806] Dense in the sense of...
+- [00:55:20,826 - 00:55:22,986] Particles on every lattice point.
+- [00:55:23,186 - 00:55:23,446] Oh,
+- [00:55:23,446 - 00:55:24,526] there could be a particle
+- [00:55:24,526 - 00:55:25,586] on every lattice point.
+- [00:55:25,706 - 00:55:28,846] Then the correlation length...
+- [00:55:28,846 - 00:55:29,546] It could be.
+- [00:55:29,786 - 00:55:30,006] So,
+- [00:55:30,006 - 00:55:31,006] it's just a two-position...
+- [00:55:31,006 - 00:55:31,566] Mm-hmm.
+- [00:55:31,626 - 00:55:32,366] It's just a two-position
+- [00:55:32,366 - 00:55:33,606] of all the effects then?
+- [00:55:34,426 - 00:55:34,946] Yeah.
+- [00:55:35,066 - 00:55:36,666] But at very high temperatures,
+- [00:55:37,366 - 00:55:39,126] with no chemical potential,
+- [00:55:39,726 - 00:55:41,306] you will not find
+- [00:55:41,306 - 00:55:43,026] that there's a particle on every point.
+- [00:55:43,126 - 00:55:44,426] You'll find it's about half filled.
+- [00:55:45,746 - 00:55:46,266] Okay.
+- [00:55:46,566 - 00:55:47,346] Half filled
+- [00:55:48,966 - 00:55:50,466] at high temperatures.
+- [00:55:50,466 - 00:55:51,446] Half filled,
+- [00:55:51,446 - 00:55:52,026] half empty.
+- [00:55:53,286 - 00:55:54,386] Doesn't that depend on
+- [00:55:54,386 - 00:55:56,426] how finely you draw the lattice?
+- [00:55:58,106 - 00:55:59,606] How finely you draw the lattice?
+- [00:55:59,786 - 00:56:00,026] Yeah.
+- [00:56:00,126 - 00:56:00,146] No?
+- [00:56:02,206 - 00:56:02,646] No,
+- [00:56:02,646 - 00:56:03,226] we just...
+- [00:56:03,686 - 00:56:04,126] No.
+- [00:56:07,206 - 00:56:09,406] Nothing depends on how I draw the lattice.
+- [00:56:10,206 - 00:56:11,645] Drawing the lattice is just...
+- [00:56:13,526 - 00:56:14,946] I can draw on a piece of paper.
+- [00:56:15,066 - 00:56:16,126] I can draw on the blackboard.
+- [00:56:16,266 - 00:56:17,706] I can draw it on the ceiling.
+- [00:56:18,026 - 00:56:18,946] Same system.
+- [00:56:21,085 - 00:56:22,546] The spin could be up or down.
+- [00:56:22,866 - 00:56:22,866] So,
+- [00:56:22,866 - 00:56:24,986] at each point in the lattice,
+- [00:56:25,046 - 00:56:26,026] the spin could be up or down.
+- [00:56:26,086 - 00:56:26,226] So,
+- [00:56:26,226 - 00:56:26,896] half of them are up
+- [00:56:26,896 - 00:56:27,566] and half of them are down.
+- [00:56:27,566 - 00:56:27,606] Right.
+- [00:56:27,726 - 00:56:28,556] Half of them are up
+- [00:56:28,556 - 00:56:29,386] and half of them are down
+- [00:56:29,386 - 00:56:30,566] at high temperatures,
+- [00:56:30,566 - 00:56:30,946] typically.
+- [00:56:31,266 - 00:56:31,606] Yeah.
+- [00:56:31,666 - 00:56:31,806] Yeah.
+- [00:56:31,806 - 00:56:32,066] Okay.
+- [00:56:32,666 - 00:56:33,026] Good.
+- [00:56:33,986 - 00:56:35,486] But the interesting thing is
+- [00:56:35,486 - 00:56:36,626] this correlation length
+- [00:56:36,626 - 00:56:38,046] gets longer and longer.
+- [00:56:38,546 - 00:56:38,906] Okay.
+- [00:56:40,026 - 00:56:40,386] Now,
+- [00:56:40,386 - 00:56:41,546] imagine you now pass
+- [00:56:42,305 - 00:56:43,746] below the critical point.
+- [00:56:44,526 - 00:56:46,386] What happens to the correlation function
+- [00:56:46,386 - 00:56:47,786] below the critical point?
+- [00:56:49,186 - 00:56:50,086] Let's think about that.
+- [00:56:51,026 - 00:56:53,886] Take sigma of A times sigma of B
+- [00:56:59,266 - 00:57:00,946] below the critical point.
+- [00:57:01,126 - 00:57:02,806] And below the critical point,
+- [00:57:02,846 - 00:57:04,326] here we are below the critical point.
+- [00:57:04,406 - 00:57:05,926] We could be here or we could be here.
+- [00:57:08,806 - 00:57:10,306] Below the critical point,
+- [00:57:10,506 - 00:57:14,046] the bias of just one spin being up
+- [00:57:14,826 - 00:57:16,826] is enough to bias...
+- [00:57:16,826 - 00:57:19,006] Remember what happens below the critical point.
+- [00:57:19,006 - 00:57:20,246] There's this sort of instability
+- [00:57:20,846 - 00:57:23,266] that the tiniest little perturbation,
+- [00:57:23,366 - 00:57:25,806] which biases it one way or the other,
+- [00:57:25,946 - 00:57:27,626] will lock all the spins,
+- [00:57:27,786 - 00:57:29,886] not all the spins exactly into the same direction,
+- [00:57:30,146 - 00:57:31,926] but will bias all the spins
+- [00:57:31,926 - 00:57:33,926] so that the average magnetization
+- [00:57:35,146 - 00:57:37,446] is in one of the two directions.
+- [00:57:38,206 - 00:57:38,726] So,
+- [00:57:38,726 - 00:57:43,146] supposing we freeze sigma A to be up.
+- [00:57:43,926 - 00:57:45,566] And now we look at sigma B.
+- [00:57:46,086 - 00:57:46,606] Well,
+- [00:57:46,606 - 00:57:48,986] the sample has been up,
+- [00:57:48,986 - 00:57:51,146] but the average has been biased by sigma A.
+- [00:57:51,546 - 00:57:53,546] And we're in the magnetized phase.
+- [00:57:53,666 - 00:57:55,226] We're below the critical temperature.
+- [00:57:56,226 - 00:57:57,686] And so what's going to happen
+- [00:57:57,686 - 00:57:59,846] is sigma B will,
+- [00:57:59,846 - 00:58:01,486] on the average,
+- [00:58:01,626 - 00:58:03,466] be in the same direction as sigma A,
+- [00:58:03,706 - 00:58:05,506] but right out to infinity.
+- [00:58:06,246 - 00:58:07,546] Right out to infinity.
+- [00:58:08,126 - 00:58:08,686] One...
+- [00:58:09,286 - 00:58:11,246] In this magnetized phase here,
+- [00:58:11,406 - 00:58:14,106] one spin pointing up is enough
+- [00:58:14,846 - 00:58:16,686] to tell all the others that,
+- [00:58:16,726 - 00:58:17,286] on the average,
+- [00:58:17,286 - 00:58:18,086] they will point up.
+- [00:58:18,086 - 00:58:20,786] That's what happens in...
+- [00:58:20,786 - 00:58:21,786] to this...
+- [00:58:24,226 - 00:58:25,786] down below the critical temperature.
+- [00:58:26,266 - 00:58:26,746] So,
+- [00:58:26,746 - 00:58:27,786] what we can say then
+- [00:58:27,786 - 00:58:30,026] is that sigma A,
+- [00:58:30,026 - 00:58:30,546] sigma B
+- [00:58:31,086 - 00:58:32,666] will go to some constant,
+- [00:58:32,786 - 00:58:34,326] some positive number...
+- [00:58:35,346 - 00:58:36,306] positive number...
+- [00:58:36,306 - 00:58:37,286] I don't know what to call it.
+- [00:58:37,346 - 00:58:38,946] Let's just call it number...
+- [00:58:39,846 - 00:58:40,326] constant.
+- [00:58:42,686 - 00:58:45,006] As you move further and further away,
+- [00:58:45,586 - 00:58:46,266] mm-hmm,
+- [00:58:47,226 - 00:58:47,926] sigma A,
+- [00:58:47,926 - 00:58:49,286] sigma B will go to some constant.
+- [00:58:49,766 - 00:58:51,766] That constant will also depend
+- [00:58:51,766 - 00:58:52,586] on the temperature.
+- [00:58:53,646 - 00:58:55,546] If you're at very low temperatures,
+- [00:58:55,866 - 00:58:59,026] the spins will tend to align each other
+- [00:58:59,026 - 00:58:59,946] rather rigidly.
+- [00:59:00,146 - 00:59:01,666] If you're at zero temperature,
+- [00:59:02,006 - 00:59:03,906] the only two possibilities are
+- [00:59:03,906 - 00:59:05,566] all spins up and all spins down.
+- [00:59:05,866 - 00:59:08,406] What happens to this at zero temperature?
+- [00:59:10,146 - 00:59:10,846] It's one.
+- [00:59:11,406 - 00:59:12,846] If sigma A is up,
+- [00:59:12,846 - 00:59:13,906] then sigma B is up.
+- [00:59:13,906 - 00:59:14,866] If sigma A is down,
+- [00:59:14,866 - 00:59:16,026] then sigma B is down.
+- [00:59:16,266 - 00:59:16,886] So,
+- [00:59:16,886 - 00:59:18,026] at zero temperature,
+- [00:59:18,326 - 00:59:20,526] let's approach now...
+- [00:59:20,526 - 00:59:21,166] I'm going to use red
+- [00:59:21,166 - 00:59:24,966] to approach from the low temperature side.
+- [00:59:25,306 - 00:59:27,786] This is what happened from the high temperature side,
+- [00:59:28,006 - 00:59:30,806] and this always goes to zero
+- [00:59:30,806 - 00:59:32,966] as long as the temperature is high enough.
+- [00:59:33,326 - 00:59:34,166] But now,
+- [00:59:36,886 - 00:59:38,166] here's temperature zero.
+- [00:59:38,926 - 00:59:41,546] What happens at a little bit higher temperature?
+- [00:59:41,866 - 00:59:43,826] You're still in the magnetized phase,
+- [00:59:44,446 - 00:59:45,046] and
+- [00:59:45,046 - 00:59:48,146] you still go to a constant out here,
+- [00:59:48,266 - 00:59:49,566] but a little bit less constant.
+- [00:59:49,766 - 00:59:51,866] Things are not rigidly held in place as well.
+- [00:59:53,166 - 00:59:53,766] Eventually,
+- [00:59:53,766 - 00:59:55,926] you come down to the critical temperature,
+- [00:59:56,146 - 00:59:58,046] and as you get to the critical temperature,
+- [00:59:58,286 - 01:00:01,046] that's the temperature which divides these two behaviors.
+- [01:00:02,006 - 01:00:03,306] What's the behavior here?
+- [01:00:04,306 - 01:00:06,366] Exponentially decreasing correlation.
+- [01:00:07,786 - 01:00:09,146] What's the behavior here?
+- [01:00:09,306 - 01:00:11,686] The correlation function doesn't decrease.
+- [01:00:12,386 - 01:00:13,806] What divides them?
+- [01:00:13,806 - 01:00:16,806] What divides them is the critical behavior...
+- [01:00:17,326 - 01:00:17,826] Let's see,
+- [01:00:17,826 - 01:00:19,006] I have trouble drawing it.
+- [01:00:19,106 - 01:00:20,786] The critical behavior
+- [01:00:23,145 - 01:00:27,026] which is neither constant at infinity,
+- [01:00:27,226 - 01:00:29,626] nor is it exponentially falling.
+- [01:00:30,006 - 01:00:35,686] Every one of these eventually falls exponentially.
+- [01:00:36,066 - 01:00:37,726] Every one of them falls exponentially.
+- [01:00:38,086 - 01:00:40,406] What about this critical one here?
+- [01:00:40,546 - 01:00:42,406] What's in between being constant
+- [01:00:42,406 - 01:00:43,786] and falling exponentially?
+- [01:00:44,706 - 01:00:45,106] Well,
+- [01:00:45,106 - 01:00:46,146] there's a lot of things,
+- [01:00:46,146 - 01:00:46,986] but...
+- [01:00:46,986 - 01:00:47,626] Hmm?
+- [01:00:49,145 - 01:00:50,206] Hyperbolic means what?
+- [01:00:52,446 - 01:00:53,126] 1 over x.
+- [01:00:53,806 - 01:00:54,206] Well,
+- [01:00:54,206 - 01:00:55,486] how about just 1 over x to a power?
+- [01:00:55,626 - 01:00:56,066] 1 over d,
+- [01:00:56,066 - 01:00:57,246] 1 over d to a power.
+- [01:00:58,706 - 01:00:59,106] Hmm?
+- [01:00:59,306 - 01:01:01,186] At infinity,
+- [01:01:01,186 - 01:01:01,606] it's zero.
+- [01:01:01,826 - 01:01:02,126] Yeah,
+- [01:01:02,126 - 01:01:04,746] this falls and falls and falls and falls,
+- [01:01:05,286 - 01:01:07,686] but it never falls as fast as an exponential,
+- [01:01:09,866 - 01:01:11,616] and it fails to have
+- [01:01:11,616 - 01:01:13,366] a finite limit at the end.
+- [01:01:13,366 - 01:01:14,106] Right.
+- [01:01:14,206 - 01:01:15,586] So what is known...
+- [01:01:15,586 - 01:01:17,766] This requires a proof,
+- [01:01:17,766 - 01:01:19,666] and it requires some work,
+- [01:01:20,026 - 01:01:22,766] but what's known is right at the critical point,
+- [01:01:22,906 - 01:01:24,466] right at that critical point,
+- [01:01:25,346 - 01:01:27,726] this just falls off as a power law.
+- [01:01:28,306 - 01:01:32,406] This falls off gradually as a power law,
+- [01:01:32,586 - 01:01:33,806] not as an exponential.
+- [01:01:34,486 - 01:01:37,226] That's the characteristic critical behavior,
+- [01:01:37,406 - 01:01:40,726] that the correlations are long-range,
+- [01:01:40,726 - 01:01:43,006] sort of 1 over r to a power.
+- [01:01:43,786 - 01:01:45,586] For the two-dimensional Ising model,
+- [01:01:45,726 - 01:01:48,446] it's 1 over distance to the 1 eighth,
+- [01:01:48,706 - 01:01:50,546] so it gradually falls off.
+- [01:01:50,646 - 01:01:51,966] The number is not terribly important.
+- [01:01:52,946 - 01:01:53,466] Okay,
+- [01:01:53,466 - 01:01:55,466] so that's one of the things that happens
+- [01:01:55,466 - 01:01:56,426] at that critical point.
+- [01:01:56,886 - 01:01:57,406] Now,
+- [01:01:57,406 - 01:01:59,566] as you approach the critical point,
+- [01:01:59,646 - 01:02:01,966] imagine that you looked microscopically
+- [01:02:03,606 - 01:02:05,026] at the magnet.
+- [01:02:08,706 - 01:02:10,646] The correlation length here,
+- [01:02:10,786 - 01:02:12,666] the fact that it has some size,
+- [01:02:12,666 - 01:02:14,866] what it's really telling you
+- [01:02:14,866 - 01:02:17,716] is that the magnet is
+- [01:02:17,716 - 01:02:20,566] filled up with blobs of spins,
+- [01:02:21,586 - 01:02:22,806] bubbles of spins,
+- [01:02:23,026 - 01:02:25,506] more or less pointing in the same direction.
+- [01:02:29,306 - 01:02:31,726] There are blobs of spins up.
+- [01:02:32,146 - 01:02:33,946] There are blobs down,
+- [01:02:34,106 - 01:02:35,906] but they're not exactly all up.
+- [01:02:36,366 - 01:02:38,786] They're somewhat biased toward up.
+- [01:02:38,846 - 01:02:41,066] They're somewhat biased toward down over here,
+- [01:02:41,206 - 01:02:42,646] somewhat biased toward up.
+- [01:02:42,646 - 01:02:43,126] Down.
+- [01:02:45,306 - 01:02:46,786] A kind of patchwork
+- [01:02:48,706 - 01:02:51,406] where the patches tend to be
+- [01:02:51,406 - 01:02:53,526] about as big as the correlation length.
+- [01:02:54,126 - 01:02:57,286] If you take two points beyond the correlation length,
+- [01:02:59,306 - 01:03:01,606] out way past the correlation length,
+- [01:03:01,846 - 01:03:04,466] there isn't much correlation between them.
+- [01:03:04,846 - 01:03:06,276] Something over here is as
+- [01:03:06,276 - 01:03:07,706] likely to be up or down
+- [01:03:07,706 - 01:03:09,006] if this is up.
+- [01:03:09,506 - 01:03:11,066] But if your two points
+- [01:03:11,066 - 01:03:12,626] are within one of these blobs,
+- [01:03:14,046 - 01:03:16,866] then most likely they're pointing the same direction.
+- [01:03:17,246 - 01:03:17,906] All right,
+- [01:03:17,906 - 01:03:18,886] so it's this blob,
+- [01:03:19,066 - 01:03:20,766] it's this formation of these bubbles
+- [01:03:20,766 - 01:03:22,866] or blobs of material.
+- [01:03:23,746 - 01:03:24,506] It could be,
+- [01:03:24,506 - 01:03:25,646] it's really,
+- [01:03:25,646 - 01:03:26,006] what is it,
+- [01:03:26,066 - 01:03:28,766] it's liquid gas in the case of the fluid,
+- [01:03:28,866 - 01:03:30,156] or up spins and down spins
+- [01:03:30,156 - 01:03:31,446] in the case of the magnet.
+- [01:03:33,186 - 01:03:36,606] These structures more or less follow in size
+- [01:03:36,606 - 01:03:38,146] the correlation length.
+- [01:03:38,766 - 01:03:42,126] So this M of T is basically just the inverse
+- [01:03:42,126 - 01:03:45,006] of the size of the blobs that you would see
+- [01:03:45,006 - 01:03:47,226] if you looked carefully.
+- [01:03:47,586 - 01:03:48,586] Size one over M?
+- [01:03:48,746 - 01:03:49,206] Yeah,
+- [01:03:49,206 - 01:03:50,346] size one over M.
+- [01:03:50,906 - 01:03:51,466] Right.
+- [01:03:52,526 - 01:03:54,036] And as you get closer
+- [01:03:54,036 - 01:03:55,546] and closer to the critical point,
+- [01:03:55,786 - 01:03:58,646] what happens to M is it goes to zero.
+- [01:04:00,606 - 01:04:01,966] M goes to zero.
+- [01:04:02,266 - 01:04:04,926] It's no longer a exponential,
+- [01:04:05,286 - 01:04:07,406] but gives way to a power law,
+- [01:04:08,966 - 01:04:12,106] and that corresponds to M going to zero.
+- [01:04:12,126 - 01:04:13,426] All right,
+- [01:04:13,426 - 01:04:16,266] or the correlation length blowing up.
+- [01:04:16,666 - 01:04:19,166] The correlation length gets bigger and bigger,
+- [01:04:19,306 - 01:04:22,106] bigger and bigger blobs like this.
+- [01:04:23,266 - 01:04:24,586] So that's what,
+- [01:04:24,586 - 01:04:25,406] now what happens?
+- [01:04:26,686 - 01:04:27,766] Of course,
+- [01:04:27,766 - 01:04:28,766] I should say this,
+- [01:04:28,886 - 01:04:31,606] that each one of these
+- [01:04:31,606 - 01:04:34,326] blobs is not a pure phase.
+- [01:04:34,826 - 01:04:37,506] It is not pure all spins up.
+- [01:04:37,626 - 01:04:39,906] This one is not all spins down.
+- [01:04:40,166 - 01:04:42,106] This one just has all spins up.
+- [01:04:42,746 - 01:04:44,906] This one has a preference for ups.
+- [01:04:45,426 - 01:04:48,486] This one has a mild preference for downs.
+- [01:04:49,706 - 01:04:52,366] What happens as you get closer and closer
+- [01:04:52,366 - 01:04:53,526] to the critical point,
+- [01:04:53,526 - 01:04:54,486] two things happen.
+- [01:04:56,366 - 01:04:57,526] First of all,
+- [01:04:57,526 - 01:04:59,086] these blobs get bigger and bigger.
+- [01:04:59,986 - 01:05:01,486] But second of all,
+- [01:05:01,486 - 01:05:02,886] they tend to fade.
+- [01:05:03,186 - 01:05:04,746] Fade means they,
+- [01:05:04,746 - 01:05:06,246] what's the word when you put
+- [01:05:06,246 - 01:05:09,246] your nice colored shirt with lots of contrast
+- [01:05:09,246 - 01:05:11,146] through the washing machine too many times?
+- [01:05:11,146 - 01:05:11,866] Bleed.
+- [01:05:13,026 - 01:05:13,506] Well,
+- [01:05:13,506 - 01:05:13,986] fade.
+- [01:05:14,926 - 01:05:15,406] Fade.
+- [01:05:15,646 - 01:05:17,076] If you were to look at
+- [01:05:17,076 - 01:05:18,506] this as you move closer and closer
+- [01:05:18,506 - 01:05:19,666] to the critical point,
+- [01:05:19,666 - 01:05:22,726] what you would see is these blobs blowing up.
+- [01:05:23,446 - 01:05:23,926] Okay.
+- [01:05:24,486 - 01:05:24,966] Now,
+- [01:05:24,966 - 01:05:25,686] you could say,
+- [01:05:25,686 - 01:05:26,266] all right,
+- [01:05:26,266 - 01:05:28,326] let me just try to restore some,
+- [01:05:28,326 - 01:05:29,246] some,
+- [01:05:29,246 - 01:05:30,546] just for convenience,
+- [01:05:30,546 - 01:05:33,626] let me squeeze the whole thing down
+- [01:05:34,206 - 01:05:36,506] so that the blobs have the same size.
+- [01:05:36,746 - 01:05:38,326] I'll have to make the lattice smaller.
+- [01:05:39,426 - 01:05:39,966] All right.
+- [01:05:39,966 - 01:05:40,966] I'm just going to do that.
+- [01:05:41,086 - 01:05:42,406] I'm going to do it
+- [01:05:42,406 - 01:05:43,726] as I move closer and closer
+- [01:05:43,726 - 01:05:44,706] to the critical point.
+- [01:05:44,966 - 01:05:47,226] The blobs indeed get bigger and bigger.
+- [01:05:47,426 - 01:05:48,946] But just as a matter of convenience,
+- [01:05:48,946 - 01:05:51,686] so that I don't have to draw the whole thing
+- [01:05:51,686 - 01:05:53,966] on a blackboard which is 20 miles long,
+- [01:05:53,966 - 01:05:57,146] what I'll do instead is rescale
+- [01:05:57,146 - 01:05:58,916] the whole diagram so that
+- [01:05:58,916 - 01:06:00,686] the blobs remain the same size.
+- [01:06:02,346 - 01:06:04,086] The blobs remain the same size.
+- [01:06:04,386 - 01:06:04,826] Moreover,
+- [01:06:04,826 - 01:06:06,766] there are blobs within blobs.
+- [01:06:09,106 - 01:06:09,946] There are blobs within blobs.
+- [01:06:09,946 - 01:06:10,826] There are blobs within blobs.
+- [01:06:10,886 - 01:06:11,686] There are blobs within blobs.
+- [01:06:11,926 - 01:06:15,986] But the net effect in the biggest
+- [01:06:15,986 - 01:06:20,046] blobs is to be on the average upspin.
+- [01:06:20,126 - 01:06:23,186] In the biggest blobs of the downspin type,
+- [01:06:23,186 - 01:06:24,866] the net effect is to be downspin.
+- [01:06:24,926 - 01:06:26,366] So that's what the correlation length is.
+- [01:06:26,966 - 01:06:29,186] But what happens to these blobs,
+- [01:06:29,186 - 01:06:32,426] even if you plot them always in such a way
+- [01:06:32,426 - 01:06:33,946] that their size looks the same,
+- [01:06:33,946 - 01:06:37,046] this is just an arbitrary rescaling of the lattice,
+- [01:06:37,246 - 01:06:39,046] just so that we can redraw it.
+- [01:06:40,026 - 01:06:42,406] So that I don't have to run out of the
+- [01:06:42,406 - 01:06:44,786] room to the next room out there to get closer and
+- [01:06:44,786 - 01:06:45,826] closer to the critical point.
+- [01:06:46,946 - 01:06:47,426] Instead,
+- [01:06:47,426 - 01:06:50,176] we imagine in our heads making the
+- [01:06:50,176 - 01:06:52,926] lattice spacing much smaller so that the blobs
+- [01:06:52,926 - 01:06:55,786] occupy more and more lattice spacings.
+- [01:06:57,006 - 01:06:59,466] But in addition to the blobs getting bigger,
+- [01:06:59,466 - 01:07:01,486] they get fainter.
+- [01:07:01,666 - 01:07:02,366] They get,
+- [01:07:02,366 - 01:07:03,906] what's the right word,
+- [01:07:03,906 - 01:07:06,166] bleached I think somebody said.
+- [01:07:08,986 - 01:07:09,466] Faded.
+- [01:07:10,246 - 01:07:13,826] Faded like putting your polka dot
+- [01:07:13,826 - 01:07:17,406] black and white shirt through the dishwasher,
+- [01:07:17,606 - 01:07:18,146] not the dishwasher,
+- [01:07:18,146 - 01:07:20,026] the washing machine too many times.
+- [01:07:20,466 - 01:07:22,826] And what will happen?
+- [01:07:22,966 - 01:07:24,006] After a while,
+- [01:07:24,006 - 01:07:27,116] the contrast between the up blobs and
+- [01:07:27,116 - 01:07:30,226] the down blobs will get weaker and
+- [01:07:30,226 - 01:07:31,026] weaker and weaker.
+- [01:07:31,586 - 01:07:33,726] That's what happens at the critical point.
+- [01:07:34,666 - 01:07:35,586] In fact,
+- [01:07:35,586 - 01:07:36,546] at the critical point,
+- [01:07:36,546 - 01:07:37,996] you have blobs of every
+- [01:07:37,996 - 01:07:39,446] size right at the critical point.
+- [01:07:39,466 - 01:07:43,926] When the biggest blobs grow to infinity,
+- [01:07:43,926 - 01:07:46,126] there are still smaller blobs.
+- [01:07:46,206 - 01:07:49,926] The biggest blobs grow to infinity but are infinitely faded.
+- [01:07:50,326 - 01:07:52,286] The next biggest blobs,
+- [01:07:52,286 - 01:07:56,606] they're still there,
+- [01:07:56,606 - 01:07:58,466] they're still there pretty big,
+- [01:07:58,566 - 01:08:00,506] they're not quite as faded.
+- [01:08:01,106 - 01:08:02,906] Smaller blobs within blobs,
+- [01:08:02,906 - 01:08:06,546] not quite as faded as their predecessors,
+- [01:08:06,546 - 01:08:08,906] and smaller.
+- [01:08:08,906 - 01:08:11,406] What happens at the critical point
+- [01:08:11,406 - 01:08:13,906] is a kind of self-similar fractal structure.
+- [01:08:14,726 - 01:08:18,786] A self-similar fractal structure that on every scale,
+- [01:08:18,786 - 01:08:20,026] if you look at it,
+- [01:08:20,026 - 01:08:21,366] you see the same
+- [01:08:21,366 - 01:08:21,866] thing,
+- [01:08:21,866 - 01:08:26,046] namely blobs within blobs within blobs,
+- [01:08:26,046 - 01:08:29,446] but as you look on smaller and smaller scales,
+- [01:08:29,725 - 01:08:30,866] the contrast,
+- [01:08:30,866 - 01:08:33,765] the density contrast gets stronger and stronger.
+- [01:08:35,185 - 01:08:37,386] If at the same time,
+- [01:08:37,386 - 01:08:41,006] that you rescale the lattice,
+- [01:08:41,006 - 01:08:44,345] push the temperature closer to the critical point,
+- [01:08:44,446 - 01:08:46,706] push the temperature closer to the critical point,
+- [01:08:46,706 - 01:08:48,746] rescale the lattice,
+- [01:08:51,066 - 01:08:54,786] and also rescale the density,
+- [01:08:54,786 - 01:08:55,725] the contrast,
+- [01:08:55,725 - 01:08:56,946] the contrast,
+- [01:08:56,946 - 01:08:58,106] you know,
+- [01:08:58,106 - 01:08:59,206] you have your television
+- [01:08:59,206 - 01:09:00,486] and you turn down the
+- [01:09:00,486 - 01:09:01,765] contrast or turn up the contrast.
+- [01:09:02,265 - 01:09:04,706] As you look at smaller and smaller blobs,
+- [01:09:05,526 - 01:09:07,845] if you turn down the contrast,
+- [01:09:07,845 - 01:09:11,106] then you literally see the same thing at every scale.
+- [01:09:12,286 - 01:09:15,606] The only distinction between what you see at
+- [01:09:15,606 - 01:09:18,926] one scale and another scale is the intensity
+- [01:09:18,926 - 01:09:20,946] of the contrast between the blobs.
+- [01:09:21,446 - 01:09:22,765] If you allow for that,
+- [01:09:22,765 - 01:09:25,676] if you allow for the decrease
+- [01:09:25,676 - 01:09:28,586] or the fading of the contrast from,
+- [01:09:29,786 - 01:09:33,286] as you get closer and closer to the critical point,
+- [01:09:33,286 - 01:09:36,286] then what you see is just a self-similar
+- [01:09:36,286 - 01:09:39,286] fractal which looks the same on every scale.
+- [01:09:40,486 - 01:09:42,286] Everybody know what I mean by self-similar?
+- [01:09:43,866 - 01:09:46,106] It just means it looks the same in every scale.
+- [01:09:46,265 - 01:09:47,496] You could not tell by
+- [01:09:47,496 - 01:09:48,725] looking at it through a microscope,
+- [01:09:48,725 - 01:09:49,725] unless your microscope,
+- [01:09:49,725 - 01:09:50,225] of course,
+- [01:09:51,145 - 01:09:53,946] was strong enough to see the actual lattice structure.
+- [01:09:54,386 - 01:09:56,176] I'm assuming we have a microscope
+- [01:09:56,176 - 01:09:57,966] which can't see the actual lattice structure,
+- [01:09:58,446 - 01:09:59,826] but it sees blobs.
+- [01:10:00,506 - 01:10:02,546] Then at the critical point,
+- [01:10:02,546 - 01:10:03,846] at the critical point,
+- [01:10:03,846 - 01:10:05,226] you cannot tell,
+- [01:10:05,406 - 01:10:07,526] or close to the critical point,
+- [01:10:07,706 - 01:10:11,206] you cannot tell how big the,
+- [01:10:11,366 - 01:10:12,226] well,
+- [01:10:12,226 - 01:10:13,966] you can't tell which blobs you're looking at,
+- [01:10:14,046 - 01:10:15,026] they all look the same,
+- [01:10:16,026 - 01:10:18,466] except for the strength of the density contrast.
+- [01:10:18,846 - 01:10:19,646] The smaller they are,
+- [01:10:19,646 - 01:10:23,446] the stronger the density contrast.
+- [01:10:23,946 - 01:10:24,626] In fact,
+- [01:10:24,626 - 01:10:26,546] if you get down to the lattice spacing itself,
+- [01:10:27,266 - 01:10:30,366] you will see upspins and downspins.
+- [01:10:30,666 - 01:10:32,406] Upspins are absolutely black,
+- [01:10:32,546 - 01:10:34,586] downspins are absolutely white,
+- [01:10:34,826 - 01:10:38,126] and so you'll see spins next to each other,
+- [01:10:38,266 - 01:10:40,226] slightly biased maybe,
+- [01:10:40,466 - 01:10:43,346] but with very strong contrast.
+- [01:10:43,886 - 01:10:45,106] On the other hand,
+- [01:10:45,106 - 01:10:46,666] these very big lumps here,
+- [01:10:46,846 - 01:10:51,746] those very big lumps will have weak contrast.
+- [01:10:52,526 - 01:10:53,606] In fact,
+- [01:10:53,606 - 01:10:56,526] the fact that the contrast gets more and more faded
+- [01:10:56,526 - 01:10:58,846] is just the fact that this
+- [01:10:58,846 - 01:11:01,166] correlation function gets smaller and smaller
+- [01:11:01,166 - 01:11:04,166] as the distance between things gets big.
+- [01:11:04,886 - 01:11:08,366] As the distance between points gets big,
+- [01:11:08,546 - 01:11:10,526] right at the critical point,
+- [01:11:10,726 - 01:11:12,726] there are blobs of every size,
+- [01:11:15,066 - 01:11:17,626] but if you take two points,
+- [01:11:17,866 - 01:11:20,356] the correlation will mainly be due
+- [01:11:20,356 - 01:11:22,846] to blobs of about the scale
+- [01:11:22,846 - 01:11:24,226] between the two points.
+- [01:11:25,266 - 01:11:27,706] What is it that will lead
+- [01:11:27,706 - 01:11:30,146] to a correlation between these two points?
+- [01:11:30,146 - 01:11:33,626] The likelihood that there's a blob about that big.
+- [01:11:35,426 - 01:11:37,386] The further apart you take them,
+- [01:11:37,546 - 01:11:39,986] you'll be sampling bigger and bigger blobs,
+- [01:11:40,006 - 01:11:42,206] but bigger and bigger blobs have less contrast,
+- [01:11:42,806 - 01:11:45,866] and that's why the correlation function falls
+- [01:11:45,866 - 01:11:47,506] and goes to zero,
+- [01:11:47,666 - 01:11:49,306] because for very,
+- [01:11:49,306 - 01:11:50,626] very big blobs,
+- [01:11:50,646 - 01:11:53,186] the contrast has faded.
+- [01:11:53,706 - 01:11:55,696] You can actually see this
+- [01:11:55,696 - 01:11:57,686] in simulations of magnetic systems.
+- [01:11:57,686 - 01:11:59,346] You look at the simulations,
+- [01:11:59,506 - 01:12:01,516] and you see patterns of blobs
+- [01:12:01,516 - 01:12:03,526] and blobs and blobs inside blobs.
+- [01:12:03,586 - 01:12:04,746] It's hard to really see anything.
+- [01:12:04,906 - 01:12:05,346] More or less,
+- [01:12:05,346 - 01:12:07,706] you see white noise or black noise or whatever.
+- [01:12:08,106 - 01:12:09,286] But if you look carefully,
+- [01:12:09,406 - 01:12:11,786] you can see some slightly overdense regions,
+- [01:12:12,006 - 01:12:13,406] some slightly underdense regions,
+- [01:12:13,726 - 01:12:15,196] and then as you tune
+- [01:12:15,196 - 01:12:16,666] the system toward the critical point,
+- [01:12:16,986 - 01:12:19,746] the overdense regions and the underdense regions grow,
+- [01:12:20,006 - 01:12:23,086] and you'll also see that they have blobs inside them
+- [01:12:23,086 - 01:12:24,526] which are even more overdense,
+- [01:12:24,526 - 01:12:26,526] and blobs inside blobs inside blobs.
+- [01:12:26,526 - 01:12:29,166] And so this pattern of self-similarity
+- [01:12:30,966 - 01:12:35,306] is the first thing that happens at the critical point.
+- [01:12:35,606 - 01:12:37,666] Something else happens at the critical point.
+- [01:12:38,406 - 01:12:41,346] If you look at these blobs,
+- [01:12:41,486 - 01:12:43,306] the theory of these blobs,
+- [01:12:43,366 - 01:12:48,526] the actual lattice itself was not very symmetric.
+- [01:12:48,886 - 01:12:50,926] It certainly did not have circular symmetry.
+- [01:12:52,146 - 01:12:53,806] It has just square symmetry.
+- [01:12:53,986 - 01:12:55,066] It's a square lattice,
+- [01:12:55,066 - 01:12:55,886] for example,
+- [01:12:55,886 - 01:12:59,006] and so it's not isotropic.
+- [01:12:59,086 - 01:13:00,506] It's by no means isotropic,
+- [01:13:00,706 - 01:13:06,666] and you would not expect the properties of the magnet
+- [01:13:08,606 - 01:13:10,126] to look isotropic.
+- [01:13:10,626 - 01:13:12,366] You wouldn't expect the correlation function
+- [01:13:12,366 - 01:13:13,906] to be truly isotropic.
+- [01:13:14,126 - 01:13:16,986] You would expect it to be different along the axes
+- [01:13:16,986 - 01:13:19,186] than it is along the 45-degree angles.
+- [01:13:19,866 - 01:13:21,576] But as you get closer
+- [01:13:21,576 - 01:13:23,286] and closer to the critical point,
+- [01:13:23,466 - 01:13:25,586] the system loses memory.
+- [01:13:25,886 - 01:13:27,336] And so you have this theory
+- [01:13:27,336 - 01:13:28,786] of the basic underlying lattice theory,
+- [01:13:30,586 - 01:13:35,066] and it just gets more and more rotationally symmetric,
+- [01:13:35,366 - 01:13:37,186] more and more isotropic,
+- [01:13:37,886 - 01:13:40,306] until right at the critical point,
+- [01:13:40,406 - 01:13:41,746] by looking at these big,
+- [01:13:41,746 - 01:13:42,426] big blobs,
+- [01:13:42,506 - 01:13:45,946] you cannot tell which direction the lattice is oriented.
+- [01:13:46,346 - 01:13:48,046] So that's another thing that happens,
+- [01:13:48,286 - 01:13:51,946] a washout of the basic starting point,
+- [01:13:51,946 - 01:13:52,466] if you like,
+- [01:13:52,626 - 01:13:55,046] the basic starting point being some specific lattice,
+- [01:13:58,086 - 01:13:59,666] with a given orientation.
+- [01:14:00,546 - 01:14:01,986] I'll give you another example.
+- [01:14:02,526 - 01:14:05,846] We might have made a more complicated structure.
+- [01:14:06,665 - 01:14:09,666] Instead of the magnet having only nearest-neighbor coupling,
+- [01:14:09,906 - 01:14:13,026] we might have had a lattice with nearest-neighbor
+- [01:14:13,026 - 01:14:14,506] and second-nearest-neighbor coupling,
+- [01:14:14,726 - 01:14:18,866] or neighboring couplings
+- [01:14:22,665 - 01:14:24,146] this spin times this spin,
+- [01:14:24,146 - 01:14:26,386] but maybe also diagonal couplings,
+- [01:14:26,626 - 01:14:27,106] spins,
+- [01:14:27,106 - 01:14:30,306] energy of the spins,
+- [01:14:31,686 - 01:14:34,726] depending on diagonal couplings,
+- [01:14:34,766 - 01:14:36,606] and maybe second-nearest-neighbor couplings,
+- [01:14:36,606 - 01:14:37,246] and so forth.
+- [01:14:37,446 - 01:14:39,626] We might have invented a more complicated model,
+- [01:14:41,406 - 01:14:42,566] sigma times sigma,
+- [01:14:42,566 - 01:14:43,286] nearest-neighbor,
+- [01:14:43,326 - 01:14:44,326] plus sigma times sigma,
+- [01:14:44,326 - 01:14:45,626] times next-nearest-neighbor,
+- [01:14:45,626 - 01:14:46,266] and so forth.
+- [01:14:49,446 - 01:14:52,326] Let's suppose that all the bonds
+- [01:14:52,326 - 01:14:55,126] favor parallel spins.
+- [01:14:55,506 - 01:14:57,846] Let's suppose that it tends to favor parallel spins.
+- [01:14:58,366 - 01:15:01,126] Then there are detailed differences
+- [01:15:01,126 - 01:15:04,006] between a magnet with second-nearest-neighbor couplings
+- [01:15:04,006 - 01:15:09,186] and first-nearest-neighbor couplings.
+- [01:15:09,266 - 01:15:10,286] They're in detail different.
+- [01:15:11,125 - 01:15:13,606] The details of the thermodynamics are different,
+- [01:15:14,426 - 01:15:15,886] and in particular they're
+- [01:15:15,886 - 01:15:17,346] quite different at high temperatures,
+- [01:15:17,546 - 01:15:19,966] where the correlation length is very small.
+- [01:15:23,066 - 01:15:24,426] In general,
+- [01:15:24,426 - 01:15:26,386] the details of the lattice
+- [01:15:26,386 - 01:15:27,706] and the details of the structure
+- [01:15:28,326 - 01:15:31,606] will be remembered at the high-temperature limit,
+- [01:15:32,506 - 01:15:34,906] but as you lower the temperature
+- [01:15:34,906 - 01:15:36,866] and these blobs get bigger and bigger,
+- [01:15:37,106 - 01:15:40,346] the system starts to forget what the details were.
+- [01:15:41,125 - 01:15:43,375] So the critical behavior
+- [01:15:43,375 - 01:15:45,626] of the second-nearest-neighbor coupled lattice
+- [01:15:46,026 - 01:15:48,546] is exactly the same as the critical behavior
+- [01:15:48,546 - 01:15:50,746] of the first-nearest-neighbor coupled lattice.
+- [01:15:50,746 - 01:15:54,746] The diagonal bonds don't do very much.
+- [01:15:54,886 - 01:15:56,026] They may shift.
+- [01:15:56,186 - 01:15:58,186] What they will do is they will shift
+- [01:15:58,186 - 01:15:59,786] the critical temperature a little bit.
+- [01:16:01,406 - 01:16:04,906] The effect of changing the bonds
+- [01:16:04,906 - 01:16:08,506] and the nature of the microscopic interaction
+- [01:16:08,506 - 01:16:10,046] between molecules,
+- [01:16:10,426 - 01:16:12,786] it will have the effect in general
+- [01:16:12,786 - 01:16:16,306] that it may change the critical temperature a little bit.
+- [01:16:16,826 - 01:16:19,786] But whatever the critical temperature is,
+- [01:16:19,786 - 01:16:21,046] as you approach it,
+- [01:16:21,846 - 01:16:23,026] whatever it is,
+- [01:16:23,506 - 01:16:26,146] you'll always see exactly the same pattern
+- [01:16:26,786 - 01:16:30,706] of fractal self-similar type of structure,
+- [01:16:31,966 - 01:16:34,806] which will forget the details of the lattice.
+- [01:16:35,286 - 01:16:37,206] That's the nature of critical behavior.
+- [01:16:38,406 - 01:16:41,026] Bubbles or blobs at every length scale,
+- [01:16:41,706 - 01:16:43,986] stronger ones at small length scale,
+- [01:16:44,306 - 01:16:46,566] more faded ones at large length scale,
+- [01:16:46,666 - 01:16:48,526] contrast going down and down and down.
+- [01:16:49,786 - 01:16:52,006] There's an interesting experimental consequence of this.
+- [01:16:52,086 - 01:16:53,806] Has anybody ever seen critical opalescence?
+- [01:16:55,626 - 01:16:57,906] Critical opalescence is a wonderful phenomenon.
+- [01:16:58,106 - 01:16:59,226] If you take a liquid,
+- [01:16:59,226 - 01:17:00,886] helium is a good example,
+- [01:17:01,026 - 01:17:02,186] but any transparent liquid,
+- [01:17:02,446 - 01:17:06,606] and you tune its temperature toward the critical point,
+- [01:17:06,826 - 01:17:09,666] you tune temperature and density,
+- [01:17:09,906 - 01:17:10,786] move along here,
+- [01:17:11,466 - 01:17:13,906] getting closer and closer to the critical point,
+- [01:17:14,606 - 01:17:17,086] what happens is exactly this.
+- [01:17:17,126 - 01:17:19,546] Blobs of every length scale
+- [01:17:19,786 - 01:17:21,626] are in the critical form of every length scale,
+- [01:17:21,886 - 01:17:24,106] and the effect is that it scatters light.
+- [01:17:24,706 - 01:17:26,406] Light passing through it will
+- [01:17:26,406 - 01:17:28,106] be scattered at every wavelength.
+- [01:17:28,866 - 01:17:30,826] Every wavelength will be scattered
+- [01:17:31,545 - 01:17:33,526] pretty much the same way as every other wavelength.
+- [01:17:34,846 - 01:17:36,906] If you're away from the critical point,
+- [01:17:37,545 - 01:17:40,366] the largest blobs will have some given size,
+- [01:17:40,486 - 01:17:43,786] and wavelengths longer than that will not be scattered.
+- [01:17:45,306 - 01:17:47,926] But as you tune toward the critical wave,
+- [01:17:47,926 - 01:17:48,866] the critical point,
+- [01:17:49,026 - 01:17:51,626] longer and longer wavelengths will be scattered,
+- [01:17:51,846 - 01:17:54,186] and light passing through a
+- [01:17:54,186 - 01:17:56,526] material close to its critical point,
+- [01:17:56,646 - 01:17:57,346] just a...
+- [01:17:57,926 - 01:17:59,486] It's called critical opalescence.
+- [01:17:59,606 - 01:18:00,806] You can imagine what that means.
+- [01:18:01,226 - 01:18:02,386] It means...
+- [01:18:02,386 - 01:18:04,366] How would you describe opalescence?
+- [01:18:05,886 - 01:18:06,486] Well,
+- [01:18:06,486 - 01:18:07,926] all colors,
+- [01:18:07,926 - 01:18:08,786] all colors,
+- [01:18:08,806 - 01:18:09,846] it gets very milky.
+- [01:18:10,066 - 01:18:10,886] You have a filter.
+- [01:18:11,166 - 01:18:12,566] You have a filter,
+- [01:18:12,566 - 01:18:12,886] basically.
+- [01:18:13,286 - 01:18:14,026] You have a...
+- [01:18:14,026 - 01:18:14,606] Filter.
+- [01:18:15,386 - 01:18:15,866] Filter.
+- [01:18:15,966 - 01:18:16,686] A filter.
+- [01:18:17,926 - 01:18:18,006] Well,
+- [01:18:18,006 - 01:18:19,026] you have a filter,
+- [01:18:19,146 - 01:18:20,946] but the point is that it scatters light.
+- [01:18:21,086 - 01:18:22,726] It scatters light that...
+- [01:18:22,726 - 01:18:25,026] If you're close to the critical point,
+- [01:18:25,106 - 01:18:25,906] but not that close,
+- [01:18:26,166 - 01:18:31,266] you'll scatter all wavelengths down to microwaves.
+- [01:18:31,366 - 01:18:33,346] Get closer to the critical point,
+- [01:18:33,386 - 01:18:35,306] and you'll start scattering radio waves.
+- [01:18:35,426 - 01:18:36,606] I'm being a little bit extreme,
+- [01:18:36,606 - 01:18:37,206] but...
+- [01:18:37,866 - 01:18:38,706] At first,
+- [01:18:38,706 - 01:18:39,886] you scatter optical light,
+- [01:18:39,986 - 01:18:41,886] then you scatter optical light and infrared,
+- [01:18:42,166 - 01:18:44,046] then you start scattering optical light,
+- [01:18:44,086 - 01:18:44,386] infrared,
+- [01:18:44,386 - 01:18:45,426] and microwaves,
+- [01:18:45,446 - 01:18:46,846] then you start scattering everything.
+- [01:18:46,846 - 01:18:50,346] And the whole thing just looks like a milky,
+- [01:18:50,346 - 01:18:50,666] um,
+- [01:18:50,666 - 01:18:52,646] opalescent material.
+- [01:18:53,466 - 01:18:55,246] It loses its transparency
+- [01:18:55,246 - 01:18:57,806] because it just scatters at every wavelength.
+- [01:18:58,806 - 01:19:00,686] So that's called critical opalescence,
+- [01:19:00,786 - 01:19:01,926] and it's a real phenomenon.
+- [01:19:02,046 - 01:19:02,726] I wish I had...
+- [01:19:02,726 - 01:19:03,806] I wish I could show it to you here,
+- [01:19:03,926 - 01:19:05,306] but I don't have any liquid helium.
+- [01:19:05,486 - 01:19:08,786] I think liquid helium is probably the best example.
+- [01:19:09,026 - 01:19:10,666] Is this approaching the critical mass
+- [01:19:10,666 - 01:19:12,446] by cooling to it or...
+- [01:19:12,446 - 01:19:12,886] Critical.
+- [01:19:12,886 - 01:19:12,926] Critical.
+- [01:19:13,526 - 01:19:15,566] By cooling or by heating to it?
+- [01:19:15,566 - 01:19:16,186] It doesn't matter,
+- [01:19:16,186 - 01:19:16,626] really,
+- [01:19:16,626 - 01:19:20,866] but I think it's best to do it by cooling.
+- [01:19:21,906 - 01:19:22,426] Yeah.
+- [01:19:22,686 - 01:19:23,206] Normally,
+- [01:19:23,206 - 01:19:24,466] it would be done by cooling.
+- [01:19:24,626 - 01:19:26,506] You would start above the critical temperature
+- [01:19:26,506 - 01:19:28,866] and slowly cool down to the critical temperature.
+- [01:19:29,346 - 01:19:30,626] And as you cool down,
+- [01:19:30,846 - 01:19:32,206] you'll discover the thing becomes
+- [01:19:32,206 - 01:19:34,246] a better and better scatterer of light.
+- [01:19:35,626 - 01:19:37,826] It doesn't really absorb the light.
+- [01:19:37,906 - 01:19:40,306] It just becomes not opaque.
+- [01:19:40,606 - 01:19:41,386] There's another word.
+- [01:19:41,886 - 01:19:43,746] What's in between opaque and transparent?
+- [01:19:45,386 - 01:19:45,906] Translucent.
+- [01:19:45,906 - 01:19:46,886] It becomes translucent,
+- [01:19:47,146 - 01:19:49,366] but translucent at every wavelength.
+- [01:19:50,166 - 01:19:52,866] Would that be because of the different refractive index
+- [01:19:52,866 - 01:19:54,026] between the solid and...
+- [01:19:54,026 - 01:19:54,146] I mean,
+- [01:19:54,146 - 01:19:56,926] the liquid and the refractive index?
+- [01:19:57,066 - 01:19:57,586] Yeah,
+- [01:19:57,586 - 01:19:57,586] yeah,
+- [01:19:57,586 - 01:19:57,586] yeah.
+- [01:19:58,826 - 01:20:01,086] There's a difference between the index of refraction
+- [01:20:01,086 - 01:20:02,426] and the liquid in the...
+- [01:20:02,426 - 01:20:04,686] And so it scatters the light.
+- [01:20:05,186 - 01:20:05,706] Yes,
+- [01:20:05,706 - 01:20:06,366] and at all scales.
+- [01:20:06,426 - 01:20:08,466] There are structures there at all scales
+- [01:20:08,466 - 01:20:10,126] that scatter the light.
+- [01:20:10,246 - 01:20:10,426] Right,
+- [01:20:10,426 - 01:20:10,666] exactly.
+- [01:20:11,826 - 01:20:13,246] And in fact,
+- [01:20:13,246 - 01:20:15,026] one word that's used to describe
+- [01:20:15,826 - 01:20:19,206] this self-similarity is it's called scale invariance.
+- [01:20:19,306 - 01:20:21,266] Scale invariance means the phenomena
+- [01:20:21,266 - 01:20:23,686] of things looking the same at every scale.
+- [01:20:24,246 - 01:20:25,546] But as a rule,
+- [01:20:25,546 - 01:20:27,586] you have to keep in mind
+- [01:20:27,586 - 01:20:32,166] that the contrasts tend to fade,
+- [01:20:32,306 - 01:20:34,946] and so you have to artificially jack up.
+- [01:20:35,046 - 01:20:36,566] As you look at the bigger and bigger things,
+- [01:20:36,646 - 01:20:38,026] you have to artificially renormalize,
+- [01:20:38,806 - 01:20:39,286] is the word,
+- [01:20:40,486 - 01:20:42,626] renormalize the density contrast
+- [01:20:43,846 - 01:20:45,006] so as to keep it the same.
+- [01:20:45,026 - 01:20:46,306] Then what you see at
+- [01:20:46,306 - 01:20:47,586] every length scale is the same.
+- [01:20:49,706 - 01:20:51,306] Quick question about the fading.
+- [01:20:52,966 - 01:20:53,866] I'm trying to understand.
+- [01:20:54,006 - 01:20:57,266] If you have 100 molecules or whatever,
+- [01:20:57,486 - 01:20:58,046] if,
+- [01:20:58,046 - 01:20:58,326] like,
+- [01:20:58,326 - 01:20:59,466] the ratio is,
+- [01:20:59,466 - 01:20:59,726] like,
+- [01:20:59,726 - 01:21:01,346] 97 are spin up
+- [01:21:01,346 - 01:21:02,306] and 3 spin down,
+- [01:21:02,306 - 01:21:04,026] that's very contrasty.
+- [01:21:04,026 - 01:21:05,706] If it's 85-15,
+- [01:21:05,706 - 01:21:06,546] that's less...
+- [01:21:06,546 - 01:21:07,306] more fading.
+- [01:21:07,346 - 01:21:07,466] Right.
+- [01:21:08,146 - 01:21:10,006] Wouldn't that be just the entropy of it?
+- [01:21:10,386 - 01:21:11,026] It is.
+- [01:21:11,026 - 01:21:12,126] It's certainly connected to entropy.
+- [01:21:12,826 - 01:21:14,586] But the fact that this correlation
+- [01:21:15,026 - 01:21:17,766] function falls at large distances,
+- [01:21:17,786 - 01:21:18,686] like a power law,
+- [01:21:18,686 - 01:21:22,606] tells you that the intensity
+- [01:21:22,606 - 01:21:23,746] of the,
+- [01:21:23,746 - 01:21:24,906] or the contrast,
+- [01:21:24,906 - 01:21:27,206] within a blob of a,
+- [01:21:27,716 - 01:21:32,106] of a big blob is less than the intensity
+- [01:21:32,106 - 01:21:37,146] of the contrast of a smaller blob.
+- [01:21:37,826 - 01:21:40,386] So that's exactly what this falling
+- [01:21:40,386 - 01:21:41,946] correlation function tells you.
+- [01:21:43,266 - 01:21:44,946] So it's a pretty interesting phenomenon.
+- [01:21:46,206 - 01:21:47,966] And more than interesting,
+- [01:21:47,966 - 01:21:49,346] it's sort of at the root
+- [01:21:49,346 - 01:21:50,966] of how quantum field theory works,
+- [01:21:51,126 - 01:21:52,966] but we haven't talked about quantum field theory.
+- [01:21:54,866 - 01:21:59,346] And it is the ingredient in many approximate schemes.
+- [01:21:59,586 - 01:22:00,746] In many approximate schemes,
+- [01:22:00,746 - 01:22:03,326] you take a system
+- [01:22:03,326 - 01:22:05,396] which you expect at the
+- [01:22:05,396 - 01:22:07,466] end to be isotropic and homogeneous.
+- [01:22:07,806 - 01:22:09,746] You're really talking about
+- [01:22:09,746 - 01:22:11,686] some isotropic homogeneous thing.
+- [01:22:12,246 - 01:22:15,006] A quantum field theory would be a case in point
+- [01:22:15,006 - 01:22:16,866] where things are rotationally symmetric,
+- [01:22:17,126 - 01:22:18,026] translationally symmetric,
+- [01:22:18,026 - 01:22:18,726] and so forth,
+- [01:22:18,846 - 01:22:20,486] and you want to model it.
+- [01:22:20,586 - 01:22:22,096] You want to model it
+- [01:22:22,096 - 01:22:23,606] as a system on a lattice.
+- [01:22:24,086 - 01:22:24,726] Why?
+- [01:22:26,046 - 01:22:28,706] Because it's convenient to a pro...
+- [01:22:28,706 - 01:22:32,506] to replace the continuous distribution of field variables
+- [01:22:32,506 - 01:22:37,026] that fill space by an approximate version of the theory
+- [01:22:37,026 - 01:22:39,186] where all the degrees of
+- [01:22:39,186 - 01:22:41,346] freedom live on individual lattice sites.
+- [01:22:41,646 - 01:22:42,066] Right?
+- [01:22:42,266 - 01:22:43,446] What's going to happen?
+- [01:22:43,446 - 01:22:44,126] Well,
+- [01:22:44,126 - 01:22:46,806] you're going to wind up with a description
+- [01:22:47,446 - 01:22:50,546] where the lattice behavior will stick through
+- [01:22:50,546 - 01:22:51,806] and get in your way.
+- [01:22:52,286 - 01:22:55,266] The system will not look translational invariant
+- [01:22:55,266 - 01:22:57,826] because the lattice is not translationally invariant.
+- [01:22:57,846 - 01:22:59,606] There will be corners to
+- [01:22:59,606 - 01:23:01,366] things because the lattice has corners.
+- [01:23:01,986 - 01:23:05,106] But how do you restore in such a system
+- [01:23:05,106 - 01:23:06,796] the behavior that you were
+- [01:23:06,796 - 01:23:08,486] looking for in the first place,
+- [01:23:08,586 - 01:23:09,706] which was this smooth,
+- [01:23:09,706 - 01:23:11,146] translationally invariant,
+- [01:23:11,146 - 01:23:12,486] rotationally invariant behavior,
+- [01:23:12,486 - 01:23:14,716] and the answer is you
+- [01:23:14,716 - 01:23:16,946] tune yourself to a critical point.
+- [01:23:17,146 - 01:23:18,686] Whatever the example is,
+- [01:23:19,086 - 01:23:21,446] whether it's statistical mechanics or quantum field theory,
+- [01:23:21,686 - 01:23:25,446] you tune the parameters until you get to a point
+- [01:23:25,446 - 01:23:27,426] where the correlation length is much,
+- [01:23:27,426 - 01:23:28,166] much longer
+- [01:23:28,166 - 01:23:29,606] than the lattice length.
+- [01:23:30,846 - 01:23:32,446] And that limit,
+- [01:23:32,446 - 01:23:34,106] the artifacts,
+- [01:23:34,106 - 01:23:35,786] the lattice artifacts disappear.
+- [01:23:36,246 - 01:23:38,826] So this is a common tool in quantum field theory.
+- [01:23:42,546 - 01:23:45,086] And in statistical mechanics and so forth.
+- [01:23:45,266 - 01:23:45,446] Okay,
+- [01:23:45,446 - 01:23:45,986] so let's see.
+- [01:23:46,046 - 01:23:46,486] Where are we?
+- [01:23:47,726 - 01:23:48,566] Any questions?
+- [01:23:49,626 - 01:23:49,766] Yeah.
+- [01:23:49,986 - 01:23:50,686] I've got one.
+- [01:23:50,746 - 01:23:53,186] Is this related to superconductivity in any way?
+- [01:23:53,486 - 01:23:54,566] Not particularly.
+- [01:23:58,166 - 01:23:59,206] Not particularly.
+- [01:23:59,786 - 01:24:00,866] This is called,
+- [01:24:00,866 - 01:24:01,666] incidentally,
+- [01:24:01,666 - 01:24:04,226] the rescaling that I've described here.
+- [01:24:04,366 - 01:24:06,616] This rescaling and constantly pushing the
+- [01:24:06,616 - 01:24:08,866] blobs back to the same size,
+- [01:24:09,046 - 01:24:10,786] that's called renormalization group.
+- [01:24:12,486 - 01:24:15,006] Got to do with renormalization in quantum field theory.
+- [01:24:15,286 - 01:24:16,426] Does it have to do,
+- [01:24:16,426 - 01:24:16,786] well,
+- [01:24:16,786 - 01:24:19,546] yes and no.
+- [01:24:21,906 - 01:24:23,286] In some systems,
+- [01:24:23,286 - 01:24:26,686] there is a phase transition in a superfluid
+- [01:24:26,686 - 01:24:29,186] or in a superconductor which behaves exactly this way.
+- [01:24:29,326 - 01:24:29,486] Yeah,
+- [01:24:29,486 - 01:24:32,226] but it's not really got
+- [01:24:32,226 - 01:24:34,966] much to do with the phenomena
+- [01:24:34,966 - 01:24:37,446] of superconductivity itself.
+- [01:24:40,226 - 01:24:40,366] ありがとうございました
+- [01:24:40,994 - 01:24:43,174] Are there applications of this to cosmology,
+- [01:24:43,254 - 01:24:45,814] like the microwave background radiation?
+- [01:24:45,954 - 01:24:46,234] Yes.
+- [01:24:46,654 - 01:24:47,234] Yes.
+- [01:24:47,814 - 01:24:48,394] Yes,
+- [01:24:48,394 - 01:24:48,894] there are.
+- [01:24:50,314 - 01:24:50,894] Right.
+- [01:24:52,254 - 01:24:53,294] That's a good point.
+- [01:24:56,014 - 01:24:58,754] The fluctuations that are seen in the sky,
+- [01:25:00,853 - 01:25:04,414] the microwave background is very homogeneous,
+- [01:25:04,414 - 01:25:05,114] of course,
+- [01:25:05,154 - 01:25:07,894] extremely homogeneous or isotropic across the sky.
+- [01:25:07,894 - 01:25:09,344] But if you look at the
+- [01:25:09,344 - 01:25:10,794] level of 10 to the minus 5,
+- [01:25:11,394 - 01:25:15,054] you see over densities and under densities and so forth.
+- [01:25:16,094 - 01:25:17,034] In other words,
+- [01:25:17,034 - 01:25:17,774] you see blobs.
+- [01:25:17,834 - 01:25:18,694] You see a blobiness.
+- [01:25:19,414 - 01:25:20,794] And in fact,
+- [01:25:20,794 - 01:25:23,314] you see the same blobiness at every scale.
+- [01:25:23,454 - 01:25:27,194] You see exactly the same sort of self-similar scale
+- [01:25:28,113 - 01:25:31,454] invariant kind of behavior as at a critical point.
+- [01:25:31,994 - 01:25:32,474] Now,
+- [01:25:32,474 - 01:25:35,714] is it connected with critical points?
+- [01:25:35,874 - 01:25:36,154] Yes,
+- [01:25:36,154 - 01:25:36,554] it is,
+- [01:25:36,554 - 01:25:37,754] but not in a completely
+- [01:25:37,894 - 01:25:38,554] obvious way.
+- [01:25:38,674 - 01:25:40,174] But it looks very much
+- [01:25:40,174 - 01:25:41,674] what is seen in the sky.
+- [01:25:42,114 - 01:25:44,014] When you look at the microwave background
+- [01:25:44,014 - 01:25:46,934] and you see these maps of the microwave background
+- [01:25:46,934 - 01:25:47,674] and so forth,
+- [01:25:47,674 - 01:25:50,694] is self-similar in the same way
+- [01:25:50,694 - 01:25:51,654] that the critical point,
+- [01:25:51,654 - 01:25:53,614] self-similar or scale
+- [01:25:53,614 - 01:25:54,174] invariant.
+- [01:25:54,194 - 01:25:55,874] Scale invariant is the word that's used.
+- [01:25:56,174 - 01:25:59,334] So it's almost as though the early universe was generated
+- [01:25:59,334 - 01:26:01,294] from a Monte Carlo simulation.
+- [01:26:01,754 - 01:26:04,114] Monte Carlo just means a statistical averaging
+- [01:26:04,794 - 01:26:07,094] of a magnetic system.
+- [01:26:07,294 - 01:26:07,874] But that's not the case.
+- [01:26:07,874 - 01:26:09,094] That's not the real reason for it.
+- [01:26:09,454 - 01:26:11,494] The real reason for it is quite different.
+- [01:26:11,734 - 01:26:12,234] We didn't,
+- [01:26:12,234 - 01:26:15,574] the organization in the sky
+- [01:26:15,574 - 01:26:18,354] did not come from a second order phase transition.
+- [01:26:18,774 - 01:26:19,334] Incidentally,
+- [01:26:19,334 - 01:26:22,034] jumping across here,
+- [01:26:22,254 - 01:26:24,754] where you have a real jump in the density,
+- [01:26:25,574 - 01:26:27,794] that's called a first order phase transition.
+- [01:26:28,973 - 01:26:30,974] The order of the transition,
+- [01:26:30,974 - 01:26:33,594] the lowest order transition,
+- [01:26:34,334 - 01:26:35,894] corresponds to the biggest,
+- [01:26:35,894 - 01:26:37,774] most abrupt jump.
+- [01:26:38,934 - 01:26:40,884] So a first order phase
+- [01:26:40,884 - 01:26:42,834] transition is one in which density
+- [01:26:42,834 - 01:26:45,914] or magnetic field or whatever the appropriate variable is,
+- [01:26:46,304 - 01:26:47,374] the obvious variable,
+- [01:26:47,374 - 01:26:49,214] makes a discontinuous jump.
+- [01:26:49,734 - 01:26:52,033] If you approach along here,
+- [01:26:52,033 - 01:26:54,914] along the temperature axis
+- [01:26:54,914 - 01:26:55,914] with no bias,
+- [01:26:55,914 - 01:26:59,174] you come right down to this critical point
+- [01:26:59,174 - 01:26:59,774] over here.
+- [01:27:00,464 - 01:27:02,454] And then if you go a little bit further,
+- [01:27:02,574 - 01:27:05,174] you'll see spontaneous magnetization.
+- [01:27:05,794 - 01:27:07,394] Here you don't see anything.
+- [01:27:07,394 - 01:27:08,694] You don't see anything discontinuous.
+- [01:27:08,834 - 01:27:10,754] Right at this point over here,
+- [01:27:10,754 - 01:27:12,134] the magnetization is zero.
+- [01:27:13,054 - 01:27:14,394] And as you move in,
+- [01:27:14,394 - 01:27:15,274] the magnetization,
+- [01:27:15,514 - 01:27:18,854] the magnitude of the magnetization continuously increases.
+- [01:27:19,494 - 01:27:22,654] So there's no sudden jump in the magnetization here.
+- [01:27:22,874 - 01:27:23,834] It's just zero,
+- [01:27:23,834 - 01:27:24,154] zero,
+- [01:27:24,154 - 01:27:24,394] zero,
+- [01:27:24,394 - 01:27:24,714] zero,
+- [01:27:24,714 - 01:27:24,974] zero,
+- [01:27:24,974 - 01:27:25,214] zero,
+- [01:27:25,334 - 01:27:27,754] and then it starts increasing from here,
+- [01:27:27,754 - 01:27:28,874] but smoothly.
+- [01:27:29,234 - 01:27:31,714] That's called a second order phase transition,
+- [01:27:31,994 - 01:27:35,754] when the density or magnetization,
+- [01:27:36,314 - 01:27:36,874] uh,
+- [01:27:37,394 - 01:27:39,994] is absolutely zero until a critical point
+- [01:27:39,994 - 01:27:42,714] and then starts to increase smoothly from there.
+- [01:27:44,434 - 01:27:44,953] Uh,
+- [01:27:44,953 - 01:27:47,954] something is discontinuous over at this point over here.
+- [01:27:48,134 - 01:27:51,394] If you differentiate the magnetization enough times,
+- [01:27:51,394 - 01:27:53,554] you will find that there's some singularity in it.
+- [01:27:53,734 - 01:27:54,794] But it's a subtle,
+- [01:27:54,794 - 01:27:55,774] it's a more subtle effect.
+- [01:27:56,074 - 01:27:58,054] Second order phase transitions are more subtle,
+- [01:27:58,614 - 01:28:01,314] and third order phase transitions are even more subtle
+- [01:28:01,314 - 01:28:03,674] and almost never happen because they're so subtle.
+- [01:28:04,774 - 01:28:05,294] OK,
+- [01:28:05,294 - 01:28:05,514] yeah?
+- [01:28:05,714 - 01:28:06,714] What is the third order?
+- [01:28:06,714 - 01:28:08,154] I can't think of one offhand.
+- [01:28:08,214 - 01:28:08,874] I once knew one.
+- [01:28:08,974 - 01:28:10,534] I don't remember what it was.
+- [01:28:11,694 - 01:28:12,874] But they're rare.
+- [01:28:14,513 - 01:28:15,554] And offhand,
+- [01:28:15,554 - 01:28:16,754] I cannot remember what
+- [01:28:17,454 - 01:28:19,334] system had a third order phase transition.
+- [01:28:22,433 - 01:28:24,954] Chemical opalescence phenomenon,
+- [01:28:24,954 - 01:28:26,454] is that what happens?
+- [01:28:26,474 - 01:28:27,314] Critical opalescence.
+- [01:28:27,594 - 01:28:28,454] Critical opalescence.
+- [01:28:28,454 - 01:28:29,254] Critical opalescence.
+- [01:28:29,754 - 01:28:32,494] Is that what's happening when water vapor condenses
+- [01:28:32,494 - 01:28:33,094] into clouds?
+- [01:28:33,974 - 01:28:34,494] Well.
+- [01:28:35,834 - 01:28:36,694] I don't know.
+- [01:28:36,694 - 01:28:37,174] I think snow.
+- [01:28:39,294 - 01:28:39,814] No.
+- [01:28:40,514 - 01:28:41,034] No.
+- [01:28:41,774 - 01:28:42,494] It's not.
+- [01:28:44,734 - 01:28:46,194] It sort of looks like it,
+- [01:28:46,194 - 01:28:46,654] but it's not.
+- [01:28:47,294 - 01:28:48,594] The critical point,
+- [01:28:48,594 - 01:28:49,254] anybody know what
+- [01:28:49,254 - 01:28:51,134] the critical temperature of water is?
+- [01:28:51,994 - 01:28:52,834] 1000 degrees.
+- [01:28:53,214 - 01:28:54,154] Something like that.
+- [01:28:54,234 - 01:28:55,014] I don't remember exactly,
+- [01:28:55,014 - 01:28:55,994] but it's way,
+- [01:28:55,994 - 01:28:56,994] way above boiling.
+- [01:28:57,393 - 01:28:58,474] It's about 300.
+- [01:28:59,494 - 01:29:00,573] 360 or something.
+- [01:29:02,773 - 01:29:04,094] 360 degrees,
+- [01:29:04,094 - 01:29:04,734] something like that?
+- [01:29:05,254 - 01:29:06,134] 306 degrees.
+- [01:29:06,694 - 01:29:07,134] Right.
+- [01:29:07,254 - 01:29:09,974] So this temperature here is
+- [01:29:09,974 - 01:29:12,694] at 306 degrees and some pressure.
+- [01:29:13,294 - 01:29:15,034] Some pressure and some temperature,
+- [01:29:16,134 - 01:29:19,094] or some density and some temperature.
+- [01:29:19,834 - 01:29:21,614] Some density and some temperature
+- [01:29:22,213 - 01:29:23,594] is a critical point.
+- [01:29:23,894 - 01:29:25,334] And that critical point is
+- [01:29:25,334 - 01:29:26,774] the second order phase transition.
+- [01:29:27,054 - 01:29:28,414] And if you want to see it,
+- [01:29:28,414 - 01:29:28,774] you've got to,
+- [01:29:28,774 - 01:29:29,154] in water,
+- [01:29:29,334 - 01:29:31,854] you have to be up at 306 degrees.
+- [01:29:32,394 - 01:29:33,394] On the other hand,
+- [01:29:33,394 - 01:29:33,834] in helium,
+- [01:29:33,834 - 01:29:35,534] it happens at a very low temperature,
+- [01:29:35,534 - 01:29:36,194] a much lower
+- [01:29:36,194 - 01:29:36,494] temperature.
+- [01:29:37,474 - 01:29:40,084] And so you can see
+- [01:29:40,084 - 01:29:42,694] liquid helium boiling into helium vapor.
+- [01:29:43,474 - 01:29:45,924] And if you bring the helium
+- [01:29:45,924 - 01:29:48,374] to just the right density and temperature,
+- [01:29:48,554 - 01:29:50,074] you can see the critical opalescence.
+- [01:29:55,254 - 01:29:55,934] OK.
+- [01:29:56,913 - 01:29:59,234] In the cosmology example,
+- [01:29:59,234 - 01:30:02,474] if you look at over time
+- [01:30:02,474 - 01:30:05,714] when dark energy thing took over
+- [01:30:07,994 - 01:30:09,374] from the matter,
+- [01:30:09,374 - 01:30:12,174] could that be considered like a critical point as well?
+- [01:30:12,294 - 01:30:12,594] No.
+- [01:30:13,034 - 01:30:13,694] No.
+- [01:30:13,854 - 01:30:17,274] That's not a critical point.
+- [01:30:17,314 - 01:30:20,374] In cosmology,
+- [01:30:20,374 - 01:30:26,624] the main analog of this kind
+- [01:30:26,624 - 01:30:32,874] of critical behavior is what's called the
+- [01:30:32,874 - 01:30:35,234] scale invariant fluctuation spectrum.
+- [01:30:35,514 - 01:30:36,174] OK.
+- [01:30:36,174 - 01:30:38,404] So the scale invariant is the
+- [01:30:38,404 - 01:30:40,634] spectrum of fluctuations and perturbations over densities
+- [01:30:40,634 - 01:30:43,734] and under densities that were there
+- [01:30:43,734 - 01:30:46,834] at primordial times before galaxies formed,
+- [01:30:46,834 - 01:30:48,394] just the surface
+- [01:30:48,394 - 01:30:49,274] of last scattering.
+- [01:30:49,594 - 01:30:51,334] The surface of last scattering,
+- [01:30:51,334 - 01:30:53,134] if you look out on the sky,
+- [01:30:53,134 - 01:30:55,874] looks like this kind of behavior.
+- [01:30:56,194 - 01:30:57,874] And I mean quantitatively.
+- [01:30:58,114 - 01:30:58,754] Quantitatively,
+- [01:30:58,754 - 01:31:00,254] it looks scale invariant.
+- [01:31:00,694 - 01:31:04,254] Now it's actually not completely true.
+- [01:31:04,254 - 01:31:06,334] It's not completely true because the
+- [01:31:06,334 - 01:31:08,414] system gets processed a little bit.
+- [01:31:08,514 - 01:31:11,544] I mean it's quite obvious that gravity
+- [01:31:11,544 - 01:31:14,574] took over and started manipulating the overdense
+- [01:31:14,574 - 01:31:15,554] and the underdense regions.
+- [01:31:16,194 - 01:31:20,014] But if we could have seen what that sky
+- [01:31:20,014 - 01:31:23,834] was like before gravity started to work on these
+- [01:31:23,834 - 01:31:26,794] overdense and the real primordial fluctuation spectrum,
+- [01:31:26,794 - 01:31:29,194] it would look very much like the
+- [01:31:29,854 - 01:31:31,294] critical point of this magnet.
+- [01:31:31,594 - 01:31:32,014] OK.
+- [01:31:32,234 - 01:31:32,914] Thank you.
+- [01:31:33,494 - 01:31:34,174] Thank you.
+- [01:31:34,254 - 01:31:34,634] Thank you.
+- [01:31:34,634 - 01:31:35,234] On inflation,
+- [01:31:35,234 - 01:31:40,334] I hear when you go from the vacuum steroids,
+- [01:31:40,334 - 01:31:41,354] the really high one,
+- [01:31:41,354 - 01:31:42,074] down
+- [01:31:42,074 - 01:31:42,894] to the regular one,
+- [01:31:42,894 - 01:31:44,674] I've heard that they had
+- [01:31:44,674 - 01:31:46,454] some original problem with the theory.
+- [01:31:47,334 - 01:31:48,354] It's called reheating.
+- [01:31:49,914 - 01:31:51,174] That's called reheating.
+- [01:31:51,654 - 01:31:52,074] Yeah.
+- [01:31:52,174 - 01:31:53,614] Why reheating and not just heating?
+- [01:31:53,714 - 01:31:54,194] They said,
+- [01:31:54,194 - 01:31:56,074] and it didn't make any sense to me then,
+- [01:31:56,074 - 01:31:58,034] but they said it was originally modeled
+- [01:31:58,034 - 01:31:59,894] as a first order phase transition.
+- [01:32:00,114 - 01:32:00,214] Oh,
+- [01:32:00,214 - 01:32:01,014] OK.
+- [01:32:01,414 - 01:32:01,734] Yeah.
+- [01:32:03,054 - 01:32:03,454] Right.
+- [01:32:04,094 - 01:32:05,734] We can talk about that next time a little bit.
+- [01:32:05,814 - 01:32:06,314] Remind me.
+- [01:32:08,174 - 01:32:08,574] Yes,
+- [01:32:08,574 - 01:32:11,054] it was originally modeled as a first order phase transition.
+- [01:32:11,274 - 01:32:12,094] That was a disaster.
+- [01:32:13,414 - 01:32:14,714] And I can tell you why.
+- [01:32:14,894 - 01:32:16,894] We have enough things I can tell you why,
+- [01:32:16,894 - 01:32:18,254] but I'm not going to tell you why now.
+- [01:32:20,934 - 01:32:21,734] I'm fading.
+- [01:32:21,914 - 01:32:23,614] My contrast is diminishing.
+- [01:32:26,854 - 01:32:27,654] For more,
+- [01:32:27,654 - 01:32:30,134] please visit us at stanford.edu.
