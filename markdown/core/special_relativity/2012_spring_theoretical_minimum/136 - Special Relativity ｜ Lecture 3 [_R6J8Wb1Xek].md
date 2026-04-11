@@ -1,0 +1,3187 @@
+# Transcript
+
+Source: core/special_relativity/2012_spring_theoretical_minimum/136 - Special Relativity ｜ Lecture 3 [_R6J8Wb1Xek].webm
+
+- [00:00:04,659 - 00:00:06,160] Stanford University
+- [00:00:09,839 - 00:00:10,639] Alright,
+- [00:00:10,639 - 00:00:13,999] this evening I want to get started
+- [00:00:13,999 - 00:00:17,360] on talking about particle mechanics in the
+- [00:00:17,360 - 00:00:18,400] special theory of relativity.
+- [00:00:18,400 - 00:00:23,000] How particles move,
+- [00:00:23,000 - 00:00:24,880] notions of momentum,
+- [00:00:24,880 - 00:00:26,040] energy,
+- [00:00:26,040 - 00:00:27,960] we will
+- [00:00:27,960 - 00:00:29,280] get to E equals mc squared,
+- [00:00:29,280 - 00:00:33,380] and that sort of thing.
+- [00:00:33,380 - 00:00:35,540] The next time,
+- [00:00:35,540 - 00:00:36,640] or maybe even tonight
+- [00:00:36,640 - 00:00:37,240] a little bit,
+- [00:00:37,240 - 00:00:38,980] we might even get to move past that
+- [00:00:38,980 - 00:00:40,720] if we get finished with it and start
+- [00:00:40,720 - 00:00:43,000] to talk about classical field theory.
+- [00:00:43,000 - 00:00:50,920] Let me just do one thing on the blackboard that
+- [00:00:50,920 - 00:00:54,840] we will need recurrently and over and over.
+- [00:00:56,120 - 00:00:56,600] Okay.
+- [00:01:01,340 - 00:01:03,200] For various purposes,
+- [00:01:03,200 - 00:01:06,910] mostly for purposes of
+- [00:01:06,910 - 00:01:10,620] showing that the relativistic formulas
+- [00:01:10,620 - 00:01:14,280] that we write down have the limit of
+- [00:01:14,280 - 00:01:17,940] the non-relativistic formulas that we may have written down,
+- [00:01:17,940 - 00:01:18,120] that
+- [00:01:18,120 - 00:01:22,020] we did write down two quarters ago in classical mechanics.
+- [00:01:22,020 - 00:01:24,720] We are going to want to show that
+- [00:01:24,720 - 00:01:27,620] when objects move slowly compared to the speed of light,
+- [00:01:27,720 - 00:01:27,940] Okay.
+- [00:01:27,940 - 00:01:31,450] that the newfangled relativistic theory of
+- [00:01:31,450 - 00:01:34,960] particle motion and particle mechanics reduces
+- [00:01:34,960 - 00:01:37,680] to the oldfangled Newtonian.
+- [00:01:37,680 - 00:01:39,400] Okay,
+- [00:01:39,400 - 00:01:44,680] for that we are going to need to make approximations
+- [00:01:44,680 - 00:01:46,340] which become better and better
+- [00:01:46,340 - 00:01:48,000] for slower and slower velocities,
+- [00:01:48,000 - 00:01:49,600] and in particular the
+- [00:01:49,600 - 00:01:52,900] thing that we are going to have to approximate,
+- [00:01:52,900 - 00:01:53,910] now I know you all
+- [00:01:53,910 - 00:01:54,920] know this but I am going
+- [00:01:54,920 - 00:01:56,880] to do it just for completeness on the blackboard.
+- [00:01:57,200 - 00:01:57,640] Okay.
+- [00:01:57,940 - 00:01:59,980] So we have this quantity which recurs over and over,
+- [00:01:59,980 - 00:02:01,620] 1 minus v squared,
+- [00:02:01,620 - 00:02:03,500] square root
+- [00:02:03,500 - 00:02:04,560] of 1 minus v squared.
+- [00:02:04,560 - 00:02:07,140] It really means square root of
+- [00:02:07,140 - 00:02:09,720] 1 minus v squared over c squared.
+- [00:02:10,300 - 00:02:12,130] If we measure the velocity in
+- [00:02:12,130 - 00:02:13,960] units of the speed of light,
+- [00:02:13,960 - 00:02:15,060] then it is just 1 minus v
+- [00:02:15,060 - 00:02:15,440] squared,
+- [00:02:15,440 - 00:02:19,010] but we remember that v represents the
+- [00:02:19,010 - 00:02:22,580] fraction of the speed of light of the
+- [00:02:22,580 - 00:02:24,600] object which is moving with velocity v,
+- [00:02:24,600 - 00:02:26,220] so typically it is very small,
+- [00:02:26,220 - 00:02:27,500] and we just want
+- [00:02:27,500 - 00:02:31,500] to write down how we approximate this for small velocities,
+- [00:02:31,500 - 00:02:33,700] in particular how we approximate
+- [00:02:33,700 - 00:02:35,760] it to order velocity squared.
+- [00:02:35,760 - 00:02:40,420] This is just an example of the binomial theorem.
+- [00:02:40,420 - 00:02:41,580] I will
+- [00:02:41,580 - 00:02:43,180] write it down once and for all,
+- [00:02:43,180 - 00:02:44,570] we will use it a couple
+- [00:02:44,570 - 00:02:45,960] of times tonight and I assume
+- [00:02:45,960 - 00:02:46,740] everybody knows it.
+- [00:02:46,740 - 00:02:48,780] The binomial theorem says that
+- [00:02:48,780 - 00:02:50,820] 1 plus a small number epsilon,
+- [00:02:50,820 - 00:02:53,480] it doesn't
+- [00:02:53,480 - 00:02:54,240] matter if it is small,
+- [00:02:54,240 - 00:02:55,860] but 1 plus a small number
+- [00:02:55,860 - 00:02:57,480] epsilon equals 1 plus a small number
+- [00:02:58,600 - 00:02:59,860] epsilon to a power p,
+- [00:02:59,860 - 00:03:03,320] where p can be anything as a matter of fact,
+- [00:03:03,320 - 00:03:04,080] it can be positive,
+- [00:03:04,080 - 00:03:04,540] negative,
+- [00:03:04,720 - 00:03:05,200] imaginary,
+- [00:03:05,200 - 00:03:06,000] complex,
+- [00:03:06,000 - 00:03:06,960] it doesn't matter,
+- [00:03:06,960 - 00:03:10,720] that this can be expanded in powers of epsilon,
+- [00:03:10,980 - 00:03:12,800] a Taylor series if you like.
+- [00:03:12,800 - 00:03:14,280] If you don't know Taylor series,
+- [00:03:14,280 - 00:03:15,620] we just expand it in powers
+- [00:03:15,620 - 00:03:16,140] of epsilon.
+- [00:03:16,140 - 00:03:19,120] For epsilon equals 0,
+- [00:03:19,120 - 00:03:20,300] it is just given by 1,
+- [00:03:20,300 - 00:03:24,020] and then the next term is p times
+- [00:03:24,020 - 00:03:24,600] epsilon.
+- [00:03:24,600 - 00:03:26,020] Now I am not going to work,
+- [00:03:26,020 - 00:03:27,020] I am not going to prove this.
+- [00:03:27,480 - 00:03:27,860] This is something,
+- [00:03:27,860 - 00:03:29,600] this is the standard binomial theorem,
+- [00:03:29,600 - 00:03:30,860] and the next term,
+- [00:03:30,860 - 00:03:31,440] everybody remember
+- [00:03:31,440 - 00:03:32,000] the next term?
+- [00:03:32,000 - 00:03:37,100] p times,
+- [00:03:37,100 - 00:03:37,740] hmm?
+- [00:03:37,740 - 00:03:39,340] p choose 2,
+- [00:03:39,340 - 00:03:42,260] which is the same as p
+- [00:03:42,260 - 00:03:45,180] times p minus 1 over 2 factorial,
+- [00:03:45,480 - 00:03:48,240] 2 factorial is incidentally just 2,
+- [00:03:48,240 - 00:03:51,740] times epsilon squared,
+- [00:03:51,740 - 00:03:55,540] and then it keeps going like
+- [00:03:55,540 - 00:03:55,900] that.
+- [00:03:55,900 - 00:03:57,700] I will write the next one,
+- [00:03:57,700 - 00:03:59,400] and you can write all the ones after it,
+- [00:03:59,400 - 00:04:00,320] it is a homework assignment
+- [00:04:00,320 - 00:04:02,700] to write out all the infinite number of them.
+- [00:04:04,880 - 00:04:05,440] What?
+- [00:04:08,400 - 00:04:08,960] Yeah,
+- [00:04:08,960 - 00:04:09,900] pi.
+- [00:04:15,440 - 00:04:19,260] Over 3 factorial epsilon cubed and so forth.
+- [00:04:19,260 - 00:04:22,980] If epsilon is not too big,
+- [00:04:22,980 - 00:04:25,700] then this series
+- [00:04:25,700 - 00:04:25,880] will be 0.
+- [00:04:25,900 - 00:04:26,360] will converge.
+- [00:04:26,360 - 00:04:29,050] And the meaning of saying it
+- [00:04:29,050 - 00:04:31,740] converges is that each term is significantly
+- [00:04:31,740 - 00:04:36,770] smaller than the previous in such a way
+- [00:04:36,770 - 00:04:41,800] that it is a good approximation to terminate the
+- [00:04:41,800 - 00:04:44,880] series after an appropriate number of terms,
+- [00:04:44,880 - 00:04:47,300] where appropriate depends on just how much
+- [00:04:47,300 - 00:04:48,660] precision you want.
+- [00:04:48,660 - 00:04:50,060] But in particular,
+- [00:04:50,060 - 00:04:54,180] if epsilon is really very small,
+- [00:04:54,180 - 00:04:55,580] it is usually
+- [00:04:55,580 - 00:04:56,920] the case that the first
+- [00:04:56,920 - 00:04:58,260] term is the most important one.
+- [00:04:58,260 - 00:04:58,900] Of course,
+- [00:04:58,900 - 00:05:00,380] it is the zeroth term,
+- [00:05:00,380 - 00:05:01,280] which
+- [00:05:01,280 - 00:05:03,200] of course is the most important one,
+- [00:05:03,200 - 00:05:05,760] but the zeroth term is awfully boring here.
+- [00:05:05,760 - 00:05:07,600] We are
+- [00:05:07,600 - 00:05:09,230] going to find for the various
+- [00:05:09,230 - 00:05:10,860] applications that the zeroth order term,
+- [00:05:10,860 - 00:05:11,400] the 1,
+- [00:05:11,400 - 00:05:13,160] is just
+- [00:05:13,820 - 00:05:15,980] too boring to be relevant to us,
+- [00:05:15,980 - 00:05:17,440] and it is the first
+- [00:05:17,440 - 00:05:18,900] order term here which is important.
+- [00:05:19,360 - 00:05:21,760] So let's terminate the series at that point.
+- [00:05:21,760 - 00:05:23,060] Of course,
+- [00:05:23,060 - 00:05:24,700] it does break down if epsilon is
+- [00:05:24,700 - 00:05:25,280] not too small.
+- [00:05:32,060 - 00:05:34,920] So supposing we want to expand 1 minus v squared,
+- [00:05:34,920 - 00:05:36,160] square root of 1 minus v squared,
+- [00:05:37,320 - 00:05:39,660] where epsilon is now,
+- [00:05:39,660 - 00:05:45,060] we are now using epsilon equals minus v squared.
+- [00:05:45,060 - 00:05:46,800] In other words,
+- [00:05:46,800 - 00:05:46,960] 1
+- [00:05:46,960 - 00:05:47,700] minus epsilon,
+- [00:05:47,700 - 00:05:49,880] 1 plus epsilon is the
+- [00:05:49,880 - 00:05:52,060] same as 1 minus v squared,
+- [00:05:52,060 - 00:05:53,940] and the power p,
+- [00:05:53,940 - 00:05:54,960] which
+- [00:05:54,960 - 00:05:56,620] is the same as 1 minus v squared over 2,
+- [00:05:56,620 - 00:05:57,180] is equal to 1 half.
+- [00:05:57,180 - 00:05:59,800] Square root of a quantity
+- [00:05:59,800 - 00:06:01,800] is that quantity to the 1 half power,
+- [00:06:01,800 - 00:06:05,640] and so this becomes 1 plus epsilon,
+- [00:06:05,640 - 00:06:06,940] which is 1,
+- [00:06:07,120 - 00:06:08,920] sorry 1 plus p epsilon,
+- [00:06:08,920 - 00:06:12,760] which is 1 plus 1 half,
+- [00:06:12,760 - 00:06:15,000] that's the p,
+- [00:06:15,000 - 00:06:17,400] and then epsilon is minus
+- [00:06:17,400 - 00:06:18,060] v squared,
+- [00:06:18,060 - 00:06:19,980] minus v squared,
+- [00:06:19,980 - 00:06:21,710] which is the same as
+- [00:06:21,710 - 00:06:23,440] 1 minus v squared over 2.
+- [00:06:23,440 - 00:06:24,940] So we have 1
+- [00:06:24,960 - 00:06:25,380] plus 1 half,
+- [00:06:25,380 - 00:06:27,320] so that's a pretty damn
+- [00:06:27,320 - 00:06:29,260] good approximation for small velocities,
+- [00:06:29,260 - 00:06:29,740] in particular
+- [00:06:29,740 - 00:06:31,600] for non-relativistic velocities,
+- [00:06:31,600 - 00:06:33,600] so the square root of 1
+- [00:06:33,600 - 00:06:35,600] minus v squared is just 1 minus
+- [00:06:35,600 - 00:06:36,760] v squared over 2.
+- [00:06:36,760 - 00:06:38,960] That's where a lot of
+- [00:06:38,960 - 00:06:41,160] 2's in classical physics come from,
+- [00:06:41,160 - 00:06:42,100] if thought
+- [00:06:42,100 - 00:06:44,480] about as the limit of relativistic physics,
+- [00:06:44,480 - 00:06:46,820] most of the 2's,
+- [00:06:46,820 - 00:06:47,880] and I'll show you some examples,
+- [00:06:48,479 - 00:06:49,820] come from here.
+- [00:06:49,820 - 00:06:53,420] I'll show you some examples as we go along.
+- [00:06:54,960 - 00:06:58,610] The other example that we will need
+- [00:06:58,610 - 00:07:02,260] will be 1 divided by the same thing.
+- [00:07:02,260 - 00:07:07,840] This case is
+- [00:07:07,840 - 00:07:11,080] the same as 1 minus v
+- [00:07:11,080 - 00:07:14,320] squared to the power minus a half.
+- [00:07:14,320 - 00:07:18,220] The only difference relative
+- [00:07:18,220 - 00:07:20,070] to what we just did above
+- [00:07:20,070 - 00:07:21,920] is that p is minus a half,
+- [00:07:21,920 - 00:07:24,940] that has the effect of 2 minus 1 half,
+- [00:07:24,960 - 00:07:25,080] so that's 1 plus v squared over 2.
+- [00:07:25,080 - 00:07:28,280] So we're changing the sign here so that this becomes
+- [00:07:29,139 - 00:07:31,920] 1 plus v squared over 2.
+- [00:07:31,920 - 00:07:36,380] Two signs have conspired to cancel each other.
+- [00:07:36,380 - 00:07:38,820] The sign from the half
+- [00:07:38,820 - 00:07:42,010] up in the exponent and the minus v squared
+- [00:07:42,010 - 00:07:45,200] here give us 1 plus v squared over 2.
+- [00:07:45,640 - 00:07:46,240] Alright,
+- [00:07:46,240 - 00:07:50,590] so that is just by way of setting
+- [00:07:50,590 - 00:07:54,940] up a little piece of calculation for the equation
+- [00:07:54,960 - 00:07:57,980] of mathematics that we'll use in various situations.
+- [00:07:58,840 - 00:07:59,360] Alright,
+- [00:07:59,360 - 00:08:00,940] now we're going to be interested in particles.
+- [00:08:00,940 - 00:08:03,460] Now a particle can be anything
+- [00:08:03,460 - 00:08:05,040] that holds itself together.
+- [00:08:05,040 - 00:08:07,040] It doesn't have to be an elementary particle.
+- [00:08:07,040 - 00:08:07,740] It could be
+- [00:08:07,740 - 00:08:08,140] the sun,
+- [00:08:08,140 - 00:08:10,000] it could be a box of chocolate,
+- [00:08:10,000 - 00:08:12,860] it could be a cookie,
+- [00:08:12,860 - 00:08:13,740] no cookie.
+- [00:08:20,320 - 00:08:21,480] It could be anything.
+- [00:08:21,480 - 00:08:24,940] And when you think about the location of the particle,
+- [00:08:24,940 - 00:08:24,940] you can see
+- [00:08:24,940 - 00:08:27,440] that it is kind of like an egg.
+- [00:08:27,440 - 00:08:28,060] So a particle can be anything.
+- [00:08:28,060 - 00:08:28,720] It could be a donut.
+- [00:08:28,720 - 00:08:29,120] If
+- [00:08:32,740 - 00:08:35,559] you think about the position of an object,
+- [00:08:35,559 - 00:08:37,320] it's generally the center of mass.
+- [00:08:37,320 - 00:08:38,640] When we
+- [00:08:38,640 - 00:08:41,020] talk about the mechanics of the motion of particles,
+- [00:08:41,020 - 00:08:43,159] we're speaking really about the
+- [00:08:43,159 - 00:08:45,760] mechanics of the center of mass of an object.
+- [00:08:45,760 - 00:08:47,500] In the case of a donut,
+- [00:08:47,500 - 00:08:48,440] the center of mass
+- [00:08:48,440 - 00:08:49,360] is where there is nothing,
+- [00:08:49,360 - 00:08:50,420] but that's okay,
+- [00:08:50,420 - 00:08:51,780] we know where the center of mass is.
+- [00:08:51,780 - 00:08:54,440] And motion,
+- [00:08:54,940 - 00:08:56,740] according to the center of mass,
+- [00:08:56,740 - 00:08:58,380] is governed,
+- [00:08:58,380 - 00:08:58,980] for example,
+- [00:08:58,980 - 00:09:01,660] by Newtonian mechanics of F equals mA.
+- [00:09:04,040 - 00:09:06,220] Momentum is mass times velocity.
+- [00:09:06,620 - 00:09:09,630] Does it matter whether it's an
+- [00:09:09,630 - 00:09:12,640] elementary particle or a donut or cookie?
+- [00:09:12,920 - 00:09:13,440] No.
+- [00:09:13,520 - 00:09:16,560] Its momentum is its total mass times its velocity.
+- [00:09:18,640 - 00:09:21,270] Its kinetic energy is one-half
+- [00:09:21,270 - 00:09:23,900] mV squared in Newtonian physics.
+- [00:09:23,900 - 00:09:25,580] That's the energy of motion.
+- [00:09:26,580 - 00:09:28,700] Does it have any other energy if it's a donut?
+- [00:09:28,920 - 00:09:30,940] Does a donut have any
+- [00:09:30,940 - 00:09:32,960] other energy besides one-half mV squared?
+- [00:09:35,480 - 00:09:36,000] Yeah,
+- [00:09:36,000 - 00:09:36,640] calories,
+- [00:09:36,640 - 00:09:36,920] exactly.
+- [00:09:37,120 - 00:09:39,670] It has all the internal chemical energy and
+- [00:09:39,670 - 00:09:42,220] that sort of stuff that's inside the donut.
+- [00:09:42,500 - 00:09:45,320] That part of the energy does
+- [00:09:45,320 - 00:09:48,140] not depend on its overall motion,
+- [00:09:48,140 - 00:09:49,720] on its state of motion.
+- [00:09:50,360 - 00:09:51,280] It's a constant.
+- [00:09:51,460 - 00:09:53,760] It's a constant with respect to how fast.
+- [00:09:53,900 - 00:09:54,640] The object is moving.
+- [00:09:54,960 - 00:09:58,960] So you can say that the energy of a
+- [00:09:58,960 - 00:10:02,960] moving donut is one-half mV squared plus the internal energy.
+- [00:10:03,200 - 00:10:04,420] And the internal energy doesn't
+- [00:10:04,420 - 00:10:05,640] depend on the state of motion.
+- [00:10:06,560 - 00:10:07,120] Okay,
+- [00:10:07,120 - 00:10:10,220] so those are just some reminders about classical mechanics.
+- [00:10:11,980 - 00:10:15,820] Another reminder about classical mechanics is to
+- [00:10:15,820 - 00:10:19,660] go back and read the classical mechanics book,
+- [00:10:19,840 - 00:10:21,350] where you will find things
+- [00:10:21,350 - 00:10:22,860] like the principle of least action,
+- [00:10:22,980 - 00:10:23,740] which we will use.
+- [00:10:23,740 - 00:10:23,980] We're going to use tonight.
+- [00:10:25,120 - 00:10:25,720] Lagrangians,
+- [00:10:25,720 - 00:10:27,180] canonical momenta,
+- [00:10:27,180 - 00:10:28,300] and all that stuff.
+- [00:10:28,560 - 00:10:29,540] And we're going to use them.
+- [00:10:29,820 - 00:10:31,180] So very quickly,
+- [00:10:31,180 - 00:10:33,590] review in your head now
+- [00:10:33,590 - 00:10:36,000] the previous quarter of classical mechanics.
+- [00:10:38,079 - 00:10:41,829] The important idea about the principle of least
+- [00:10:41,829 - 00:10:45,580] action was the idea of a trajectory in space-time.
+- [00:10:45,880 - 00:10:47,580] Not just a trajectory in space,
+- [00:10:47,580 - 00:10:52,000] but a trajectory in space-time that if you plot,
+- [00:10:53,020 - 00:10:53,620] position,
+- [00:10:53,740 - 00:10:55,500] of a system,
+- [00:10:56,400 - 00:10:57,540] it could stand,
+- [00:10:57,540 - 00:11:00,280] x could stand for a one-dimensional coordinate,
+- [00:11:00,280 - 00:11:02,600] it could stand for a three-dimensional coordinate.
+- [00:11:02,800 - 00:11:03,580] In fact,
+- [00:11:03,580 - 00:11:05,370] it could even stand for the
+- [00:11:05,370 - 00:11:07,160] coordinates of a large number of particles.
+- [00:11:07,640 - 00:11:09,240] And we can just call it space,
+- [00:11:09,240 - 00:11:10,640] or coordinate space.
+- [00:11:11,500 - 00:11:12,060] Vertically,
+- [00:11:12,060 - 00:11:13,100] we plot time,
+- [00:11:13,100 - 00:11:16,360] and the trajectory of a system between two
+- [00:11:17,820 - 00:11:18,380] instants
+- [00:11:20,960 - 00:11:22,340] is a curve that goes
+- [00:11:22,340 - 00:11:23,720] from one point to the other.
+- [00:11:23,740 - 00:11:24,500] And then it goes from one point to another curve.
+- [00:11:25,000 - 00:11:26,820] And we can call it a world line.
+- [00:11:26,940 - 00:11:27,600] If it's a particle,
+- [00:11:27,600 - 00:11:28,780] if it's a single particle,
+- [00:11:28,780 - 00:11:30,480] we call it a world line.
+- [00:11:30,740 - 00:11:33,320] We call it the world line of the particle.
+- [00:11:33,580 - 00:11:36,300] Now this concept is just as good a concept
+- [00:11:36,300 - 00:11:39,020] in non-relativistic physics as it is in relativistic physics,
+- [00:11:39,300 - 00:11:43,550] but it takes a certain primacy in relativity
+- [00:11:43,550 - 00:11:47,800] because of the connection between space and time.
+- [00:11:47,880 - 00:11:49,320] Space and time can morph
+- [00:11:49,320 - 00:11:50,760] into each other by Lorentz transformation.
+- [00:11:51,360 - 00:11:53,720] We tend to focus more on the space-time connection.
+- [00:11:53,740 - 00:11:55,100] We tend to focus more on the idea of space-time.
+- [00:11:56,300 - 00:12:00,120] The trajectory of a particle is time-like.
+- [00:12:00,340 - 00:12:01,780] Now what do I mean by time-like?
+- [00:12:01,900 - 00:12:05,700] Let's define the notion of time-like.
+- [00:12:06,700 - 00:12:08,640] Begin with just two points.
+- [00:12:12,460 - 00:12:16,180] Begin with any pair of points in space-time.
+- [00:12:18,020 - 00:12:21,520] And think of the separation of the coordinates,
+- [00:12:21,520 - 00:12:24,660] the difference between the coordinates of the two points.
+- [00:12:25,060 - 00:12:26,800] The difference of the coordinates,
+- [00:12:26,800 - 00:12:29,860] now I'm speaking about space and time coordinates,
+- [00:12:30,200 - 00:12:35,360] we can call them delta t and delta x.
+- [00:12:39,440 - 00:12:42,920] I discussed for a couple of times already the
+- [00:12:42,920 - 00:12:46,400] notion of the invariant proper time between the two points.
+- [00:12:46,840 - 00:12:49,720] And we wrote that as delta t squared.
+- [00:12:50,940 - 00:12:54,770] Delta t squared minus delta x
+- [00:12:54,770 - 00:12:58,600] squared is equal to delta tau squared.
+- [00:12:59,520 - 00:13:01,700] Where delta tau itself,
+- [00:13:01,700 - 00:13:03,320] the square root of this quantity,
+- [00:13:03,540 - 00:13:06,060] is the proper time connecting those two points.
+- [00:13:06,560 - 00:13:07,120] Now,
+- [00:13:07,120 - 00:13:10,160] this quantity can be positive,
+- [00:13:10,380 - 00:13:12,460] this quantity which I've written delta tau squared,
+- [00:13:12,540 - 00:13:14,440] it can clearly be positive or negative.
+- [00:13:14,940 - 00:13:18,220] It is positive if the,
+- [00:13:18,220 - 00:13:21,740] the separation between these points
+- [00:13:21,740 - 00:13:25,700] is such that the t interval
+- [00:13:26,220 - 00:13:30,560] is larger than the spatial distance between them.
+- [00:13:30,740 - 00:13:31,600] In other words,
+- [00:13:33,040 - 00:13:34,760] if the interval
+- [00:13:38,820 - 00:13:40,040] is like so,
+- [00:13:40,840 - 00:13:44,480] if the spatial distance is less than the time distance,
+- [00:13:44,780 - 00:13:46,340] in that case,
+- [00:13:46,340 - 00:13:49,080] delta tau squared is positive,
+- [00:13:49,860 - 00:13:51,780] and the interval between these
+- [00:13:51,780 - 00:13:53,700] two points is called time-like.
+- [00:13:54,180 - 00:13:55,510] It's got more time in it
+- [00:13:55,510 - 00:13:56,840] than it's got space in it.
+- [00:13:57,660 - 00:13:59,560] When an interval is time-like,
+- [00:13:59,800 - 00:14:03,520] you can always find a Lorentz frame of reference.
+- [00:14:03,980 - 00:14:08,000] You can always transform to a frame of reference
+- [00:14:08,000 - 00:14:10,980] where the two points are at the same position,
+- [00:14:11,200 - 00:14:12,320] where it hasn't moved.
+- [00:14:13,120 - 00:14:13,760] In fact,
+- [00:14:13,800 - 00:14:15,320] you simply go to the,
+- [00:14:16,340 - 00:14:17,560] to the frame of reference
+- [00:14:18,340 - 00:14:20,280] where this line is at rest.
+- [00:14:20,700 - 00:14:22,080] There always exists such a,
+- [00:14:22,080 - 00:14:23,380] such a frame of reference.
+- [00:14:23,840 - 00:14:24,560] And so,
+- [00:14:24,640 - 00:14:27,280] if two points in space-time
+- [00:14:27,280 - 00:14:29,900] are time-like separated relative to each other,
+- [00:14:30,040 - 00:14:32,440] you can always move in such a way
+- [00:14:32,440 - 00:14:33,810] that they wind up being
+- [00:14:33,810 - 00:14:35,180] at the same point in space,
+- [00:14:35,500 - 00:14:37,560] that they haven't moved relative to each other.
+- [00:14:38,320 - 00:14:38,960] Okay.
+- [00:14:39,660 - 00:14:40,760] That's one case.
+- [00:14:40,960 - 00:14:41,940] The other case
+- [00:14:43,200 - 00:14:44,960] is where delta x
+- [00:14:44,960 - 00:14:46,480] is bigger than delta t.
+- [00:14:48,220 - 00:14:49,540] In that case,
+- [00:14:52,280 - 00:14:53,600] the separation
+- [00:14:54,840 - 00:14:57,820] has more space interval than time interval.
+- [00:14:58,260 - 00:14:59,360] Looks like this,
+- [00:14:59,360 - 00:14:59,720] let's say.
+- [00:15:02,320 - 00:15:04,620] It's at less than 45 degrees
+- [00:15:04,620 - 00:15:06,440] relative to the horizontal.
+- [00:15:07,980 - 00:15:08,640] Incidentally,
+- [00:15:08,800 - 00:15:10,920] I should say right now,
+- [00:15:11,080 - 00:15:14,740] when I'm thinking about four-dimensional space-time,
+- [00:15:14,960 - 00:15:16,460] three coordinates of space,
+- [00:15:16,680 - 00:15:17,840] one coordinate of time,
+- [00:15:18,080 - 00:15:20,320] what delta x stands for
+- [00:15:20,860 - 00:15:22,960] is the three components
+- [00:15:23,839 - 00:15:26,980] of the vector delta x,
+- [00:15:27,100 - 00:15:29,120] and delta x squared means
+- [00:15:29,120 - 00:15:31,320] the sums of the squares of those three components.
+- [00:15:31,520 - 00:15:32,710] Delta x squared plus delta
+- [00:15:32,710 - 00:15:33,900] y squared plus delta z squared.
+- [00:15:34,540 - 00:15:35,020] Okay.
+- [00:15:35,160 - 00:15:36,380] I suppose we could,
+- [00:15:36,440 - 00:15:37,000] if we liked,
+- [00:15:37,100 - 00:15:39,200] if we wanted to be fancy,
+- [00:15:39,460 - 00:15:41,080] we would put a little arrow over here
+- [00:15:41,080 - 00:15:42,740] to indicate that it's a three vector.
+- [00:15:43,660 - 00:15:44,940] That delta x is a three vector.
+- [00:15:44,960 - 00:15:46,140] All right.
+- [00:15:46,160 - 00:15:46,220] Now,
+- [00:15:46,220 - 00:15:47,980] if the three vector delta x
+- [00:15:47,980 - 00:15:49,360] is bigger than delta t,
+- [00:15:49,600 - 00:15:52,040] then the interval becomes space-like.
+- [00:15:53,280 - 00:15:56,580] Space-like intervals are,
+- [00:15:56,700 - 00:15:57,920] as I said,
+- [00:15:57,920 - 00:15:59,380] are more space than they are time.
+- [00:16:00,720 - 00:16:01,960] And in this case,
+- [00:16:02,040 - 00:16:04,400] you cannot find a reference frame
+- [00:16:04,960 - 00:16:06,660] in which the two points
+- [00:16:06,660 - 00:16:08,620] are at the same position in space.
+- [00:16:09,780 - 00:16:11,040] What you can do
+- [00:16:11,040 - 00:16:13,400] is you can find a reference frame
+- [00:16:13,400 - 00:16:14,940] in which they are at the same position.
+- [00:16:14,960 - 00:16:15,220] They are at the same time.
+- [00:16:17,840 - 00:16:19,360] You can always find,
+- [00:16:19,480 - 00:16:20,120] so that means
+- [00:16:20,120 - 00:16:22,820] that there's no invariant significance
+- [00:16:22,820 - 00:16:25,860] to one end being later than the other.
+- [00:16:26,100 - 00:16:28,560] You can always find a frame of reference
+- [00:16:28,560 - 00:16:29,640] in which the two points
+- [00:16:29,640 - 00:16:31,520] are at exactly the same time,
+- [00:16:31,740 - 00:16:33,040] and even worse,
+- [00:16:34,040 - 00:16:35,060] I've drawn this
+- [00:16:35,060 - 00:16:36,900] so that point B,
+- [00:16:37,120 - 00:16:38,260] let's call it B and A,
+- [00:16:38,920 - 00:16:41,460] point B appears to be later than point A,
+- [00:16:41,620 - 00:16:43,840] but there exists a reference frame,
+- [00:16:43,840 - 00:16:45,100] this you can work out,
+- [00:16:45,140 - 00:16:46,320] it's very easy to work out,
+- [00:16:46,440 - 00:16:48,300] you can find a reference frame
+- [00:16:48,300 - 00:16:51,440] in which point B is earlier than point A.
+- [00:16:52,420 - 00:16:54,300] So there's no invariant significance
+- [00:16:54,300 - 00:16:56,060] for points which are separated
+- [00:16:56,060 - 00:16:57,700] by space-like interval,
+- [00:16:57,960 - 00:17:00,500] there is no invariant significance
+- [00:17:00,500 - 00:17:02,040] to which one occurred first,
+- [00:17:03,200 - 00:17:04,920] one being later than the other,
+- [00:17:04,960 - 00:17:06,079] or being simultaneous.
+- [00:17:06,520 - 00:17:08,680] This is the relativity of simultaneity.
+- [00:17:09,680 - 00:17:10,220] Okay.
+- [00:17:12,380 - 00:17:13,460] Particles move,
+- [00:17:13,839 - 00:17:16,359] move on time-like trajectories.
+- [00:17:17,200 - 00:17:19,599] Everywhere's along the motion of a particle,
+- [00:17:20,599 - 00:17:22,760] if we break the trajectory up
+- [00:17:22,760 - 00:17:23,839] into little intervals,
+- [00:17:25,339 - 00:17:27,579] every little piece of that trajectory
+- [00:17:27,579 - 00:17:28,460] is time-like.
+- [00:17:29,560 - 00:17:31,640] That's just a statement that particles can't,
+- [00:17:31,640 - 00:17:33,960] nothing can move faster than the speed of light.
+- [00:17:34,360 - 00:17:37,060] We've already seen how frustrating it can be
+- [00:17:37,060 - 00:17:38,880] to try to get something to move faster
+- [00:17:38,880 - 00:17:39,780] than the speed of light.
+- [00:17:40,100 - 00:17:43,220] You try to compile up a whole bunch of velocities,
+- [00:17:43,320 - 00:17:43,820] each of which
+- [00:17:43,840 - 00:17:45,440] is nine-tenths the speed of light,
+- [00:17:45,600 - 00:17:45,940] you know,
+- [00:17:46,020 - 00:17:48,960] a stationary observer shoots out something
+- [00:17:48,960 - 00:17:50,420] with nine-tenths the speed of light,
+- [00:17:50,600 - 00:17:52,880] a moving thing shoots out something else
+- [00:17:52,880 - 00:17:54,820] with velocity nine-tenths the speed of light,
+- [00:17:54,960 - 00:17:57,260] something else shoots out a third thing
+- [00:17:57,260 - 00:17:58,840] nine-tenths the speed of light,
+- [00:17:58,940 - 00:18:00,060] you never get anywhere.
+- [00:18:00,360 - 00:18:01,620] It's like Zeno's paradox,
+- [00:18:01,900 - 00:18:02,940] you just get closer and
+- [00:18:02,940 - 00:18:03,980] closer to the speed of light
+- [00:18:03,980 - 00:18:04,960] without ever getting there.
+- [00:18:06,020 - 00:18:08,800] And so it seems like a reasonable hypothesis
+- [00:18:09,440 - 00:18:11,760] that nothing ever goes faster than the speed of light.
+- [00:18:12,060 - 00:18:13,380] And that's a good thing,
+- [00:18:13,380 - 00:18:15,280] because it would get very confusing
+- [00:18:16,020 - 00:18:19,160] if we said a particle goes from A to B,
+- [00:18:19,340 - 00:18:20,800] but we can't make sense
+- [00:18:20,800 - 00:18:22,260] out of which one is earlier,
+- [00:18:22,380 - 00:18:23,880] the starting point of the particle
+- [00:18:23,880 - 00:18:25,240] or the end point of the particle,
+- [00:18:25,420 - 00:18:27,940] we'd get us very confused,
+- [00:18:28,220 - 00:18:31,010] we'd get into all sorts of
+- [00:18:31,010 - 00:18:33,800] questions of time travel and so forth,
+- [00:18:33,980 - 00:18:36,340] but the physical fact is nothing,
+- [00:18:36,480 - 00:18:37,640] including a photon,
+- [00:18:37,980 - 00:18:39,820] can move faster than the speed of light.
+- [00:18:41,860 - 00:18:43,160] And I would,
+- [00:18:43,380 - 00:18:45,760] I would generalize that and say that information,
+- [00:18:46,000 - 00:18:48,480] information is carried by physical systems.
+- [00:18:50,680 - 00:18:51,200] Signals,
+- [00:18:51,220 - 00:18:54,000] signals that signal information from one place to another
+- [00:18:54,000 - 00:18:56,960] can also not propagate faster than the speed of light.
+- [00:18:57,380 - 00:18:58,920] We can take that as a postulate,
+- [00:18:59,020 - 00:19:01,300] but if it were otherwise,
+- [00:19:01,700 - 00:19:03,720] we'd get into some very paradoxical
+- [00:19:03,720 - 00:19:06,820] and inconsistent situations.
+- [00:19:08,000 - 00:19:08,700] All right,
+- [00:19:08,700 - 00:19:10,680] so that's the notion of time-like and space-like,
+- [00:19:11,400 - 00:19:13,240] the notion of the world line,
+- [00:19:13,380 - 00:19:14,260] of a system,
+- [00:19:15,120 - 00:19:16,720] and the world line of a system
+- [00:19:16,720 - 00:19:19,600] is made up out of small time-like intervals.
+- [00:19:20,460 - 00:19:22,800] Now let's focus on one of those time-like intervals.
+- [00:19:24,520 - 00:19:25,780] Let's redraw it over here.
+- [00:19:28,940 - 00:19:30,580] Here's one of the time-like intervals,
+- [00:19:30,740 - 00:19:32,820] imagine in your head that it's a small interval,
+- [00:19:33,399 - 00:19:35,099] because eventually we're going to let
+- [00:19:35,099 - 00:19:36,800] that interval get smaller and smaller.
+- [00:19:37,300 - 00:19:38,740] I don't think we talked about,
+- [00:19:38,980 - 00:19:40,940] did we talk about relativistic four velocity?
+- [00:19:42,060 - 00:19:42,540] We did.
+- [00:19:43,380 - 00:19:44,000] We didn't do it.
+- [00:19:44,020 - 00:19:45,240] We didn't do it in any detail.
+- [00:19:45,400 - 00:19:45,600] All right,
+- [00:19:45,600 - 00:19:47,800] so along the trajectory,
+- [00:19:48,120 - 00:19:50,800] the particle moves from one point to another point
+- [00:19:50,800 - 00:19:52,400] with a separation delta x,
+- [00:19:53,020 - 00:19:58,160] but delta x is a four-dimensional delta x.
+- [00:19:58,260 - 00:19:59,660] It consists of a delta t
+- [00:20:03,940 - 00:20:09,700] and a delta of the three other coordinates,
+- [00:20:09,800 - 00:20:11,020] which are of course called
+- [00:20:11,020 - 00:20:12,240] delta with an arrow above them.
+- [00:20:12,240 - 00:20:13,960] That's delta x mu.
+- [00:20:15,020 - 00:20:18,860] Sometimes I will call these spatial delta x's,
+- [00:20:19,040 - 00:20:21,740] sometimes we'll call them delta x i.
+- [00:20:22,260 - 00:20:23,420] When you see an i,
+- [00:20:23,420 - 00:20:25,240] it just runs over space.
+- [00:20:25,980 - 00:20:26,860] When you see a mu,
+- [00:20:26,860 - 00:20:29,640] it runs over all four coordinates of space.
+- [00:20:30,120 - 00:20:35,620] This is an interval along the trajectory here,
+- [00:20:35,740 - 00:20:37,660] has four components to it,
+- [00:20:38,380 - 00:20:41,360] and it defines a delta tau,
+- [00:20:43,300 - 00:20:46,720] between the two endpoints of the interval.
+- [00:20:47,120 - 00:20:52,080] Delta tau is equal to the square root
+- [00:20:52,080 - 00:20:57,040] of delta t squared minus delta x squared.
+- [00:20:59,520 - 00:21:00,080] Incidentally,
+- [00:21:00,080 - 00:21:02,360] just once or twice every so often,
+- [00:21:02,400 - 00:21:03,560] let's put in the speed of
+- [00:21:03,560 - 00:21:04,720] light just to remember where it goes,
+- [00:21:04,980 - 00:21:06,860] t has units of time,
+- [00:21:06,860 - 00:21:08,100] x has units of space.
+- [00:21:08,320 - 00:21:09,080] To make this thing,
+- [00:21:09,080 - 00:21:12,220] and since this is a,
+- [00:21:12,240 - 00:21:13,500] this is called proper time,
+- [00:21:14,139 - 00:21:16,180] let's assume that it has units of time.
+- [00:21:17,420 - 00:21:18,320] This one's okay,
+- [00:21:18,320 - 00:21:20,220] it has the same units as the left-hand side,
+- [00:21:20,400 - 00:21:21,380] but this one is not okay,
+- [00:21:21,380 - 00:21:22,540] it has units of length,
+- [00:21:22,660 - 00:21:23,700] this one has units of time.
+- [00:21:23,820 - 00:21:24,900] Where do we put the speed of light?
+- [00:21:26,060 - 00:21:27,060] Divide by c squared.
+- [00:21:29,100 - 00:21:29,500] Right.
+- [00:21:30,220 - 00:21:31,360] I'll do it now and then,
+- [00:21:31,360 - 00:21:32,340] every so often.
+- [00:21:32,820 - 00:21:34,180] Do it once more over here.
+- [00:21:37,139 - 00:21:38,840] And then stop doing it,
+- [00:21:38,840 - 00:21:40,060] because it gets annoying.
+- [00:21:42,980 - 00:21:44,900] Now we have the concept of velocity.
+- [00:21:45,320 - 00:21:48,390] Now basic ordinary velocity is the
+- [00:21:48,390 - 00:21:51,460] derivative of x with respect to t.
+- [00:21:52,400 - 00:21:55,340] But there's a notion of four-dimensional velocity,
+- [00:21:55,580 - 00:21:56,420] it is a four vector,
+- [00:21:56,420 - 00:21:58,200] it transforms as a four vector.
+- [00:21:58,700 - 00:22:01,200] Delta x mu transforms as a four vector.
+- [00:22:01,560 - 00:22:04,020] Delta tau is an invariant,
+- [00:22:04,020 - 00:22:04,940] it doesn't transform.
+- [00:22:05,020 - 00:22:06,040] Every observer,
+- [00:22:06,040 - 00:22:07,080] no matter how they're moving,
+- [00:22:07,740 - 00:22:09,300] ascribes the same delta tau,
+- [00:22:09,300 - 00:22:11,680] but different delta x mus to this interval.
+- [00:22:14,280 - 00:22:15,960] The velocity,
+- [00:22:15,960 - 00:22:17,600] ordinary velocity,
+- [00:22:17,600 - 00:22:18,860] ordinary velocity,
+- [00:22:20,000 - 00:22:23,280] let's call it v with a vector here,
+- [00:22:23,400 - 00:22:27,060] the ordinary velocity is,
+- [00:22:27,060 - 00:22:30,060] its components are simply
+- [00:22:33,000 - 00:22:35,620] the xi by dt,
+- [00:22:35,620 - 00:22:39,040] or the limits.
+- [00:22:39,340 - 00:22:42,100] And the limit that the delta x's get small,
+- [00:22:42,140 - 00:22:42,220] is the delta t.
+- [00:22:42,240 - 00:22:44,680] It just becomes the limit of
+- [00:22:44,680 - 00:22:47,120] delta xi divided by delta t.
+- [00:22:48,340 - 00:22:51,080] That's a three-dimensional notion of velocity.
+- [00:22:52,040 - 00:22:53,060] And of course,
+- [00:22:53,060 - 00:22:54,400] this also has,
+- [00:22:54,400 - 00:22:56,340] this should be written this way.
+- [00:22:56,740 - 00:22:57,460] Or,
+- [00:22:57,460 - 00:23:04,800] vi is equal to dxi by dt.
+- [00:23:06,240 - 00:23:06,960] Alright,
+- [00:23:06,960 - 00:23:08,200] that's one notion of velocity.
+- [00:23:09,000 - 00:23:12,220] A more invariant relativistic notion of velocity,
+- [00:23:12,220 - 00:23:14,780] is instead of using t down here,
+- [00:23:14,960 - 00:23:21,660] refer the separation of coordinates to the proper time,
+- [00:23:21,840 - 00:23:23,560] instead of the coordinate,
+- [00:23:23,560 - 00:23:29,160] instead of the frame-dependent ordinary time.
+- [00:23:29,520 - 00:23:32,060] That gives rise to something called four velocity.
+- [00:23:32,740 - 00:23:34,960] It doesn't have three components,
+- [00:23:34,960 - 00:23:36,920] it has four components.
+- [00:23:37,920 - 00:23:39,880] So it has a mu up here,
+- [00:23:39,880 - 00:23:42,020] the mu stands for the four components.
+- [00:23:42,720 - 00:23:43,300] Incidentally,
+- [00:23:43,300 - 00:23:47,980] mu runs from zero to three.
+- [00:23:48,820 - 00:23:50,480] Zero is the time component.
+- [00:23:52,020 - 00:23:57,880] This is equal to dx mu by,
+- [00:23:57,880 - 00:23:58,880] not d tau,
+- [00:23:59,140 - 00:24:00,020] not dt,
+- [00:24:00,020 - 00:24:00,900] but d tau.
+- [00:24:01,820 - 00:24:03,180] So there are four of them,
+- [00:24:04,630 - 00:24:07,400] and they constitute what is called the four velocity.
+- [00:24:07,660 - 00:24:09,860] The four-dimensional analog of the velocity.
+- [00:24:12,159 - 00:24:13,120] First question is,
+- [00:24:13,120 - 00:24:15,320] what is the connection between the
+- [00:24:15,320 - 00:24:17,520] four velocity and the ordinary velocity?
+- [00:24:17,860 - 00:24:18,880] So let's work that out.
+- [00:24:26,379 - 00:24:27,180] Non-relativistically,
+- [00:24:27,180 - 00:24:27,760] of course,
+- [00:24:27,760 - 00:24:29,900] there are only three components of the velocity,
+- [00:24:30,100 - 00:24:31,560] so that must mean something funny
+- [00:24:31,560 - 00:24:33,020] happens to one of the components here,
+- [00:24:33,100 - 00:24:33,960] and we'll see what happens.
+- [00:24:34,960 - 00:24:35,360] Alright,
+- [00:24:35,360 - 00:24:37,280] let's start with dx sub i by dt.
+- [00:24:37,500 - 00:24:38,560] Let's start with v sub i,
+- [00:24:39,960 - 00:24:42,500] that's equal to dx i by dt,
+- [00:24:42,660 - 00:24:46,460] but let's write it as dx i by d tau,
+- [00:24:47,140 - 00:24:50,120] d tau divided by dt.
+- [00:24:51,120 - 00:24:52,400] That's a triviality,
+- [00:24:52,400 - 00:24:55,100] I've just divided and multiplied by d tau,
+- [00:24:55,760 - 00:24:56,520] but it's useful.
+- [00:24:57,980 - 00:24:58,500] Sorry,
+- [00:24:58,500 - 00:24:59,020] yes,
+- [00:24:59,020 - 00:24:59,660] this is correct.
+- [00:25:01,180 - 00:25:01,700] Alright,
+- [00:25:01,700 - 00:25:03,340] now dx i by d tau,
+- [00:25:03,340 - 00:25:04,180] what is that?
+- [00:25:08,480 - 00:25:09,420] u sub i.
+- [00:25:11,960 - 00:25:12,820] u sub i,
+- [00:25:12,820 - 00:25:13,940] where i now,
+- [00:25:13,940 - 00:25:14,780] in particular,
+- [00:25:14,780 - 00:25:17,200] concentrating on the space components of u,
+- [00:25:18,060 - 00:25:19,440] times dt by d tau,
+- [00:25:19,440 - 00:25:20,580] d tau by dt.
+- [00:25:22,900 - 00:25:24,120] We'll come back to d
+- [00:25:24,120 - 00:25:25,340] tau by dt in a moment,
+- [00:25:25,420 - 00:25:26,180] in fact we're going to
+- [00:25:26,180 - 00:25:26,940] come back to it right now,
+- [00:25:27,100 - 00:25:31,820] but let's consider the...
+- [00:25:35,500 - 00:25:35,940] yeah.
+- [00:25:37,880 - 00:25:38,900] Before we go ahead,
+- [00:25:40,020 - 00:25:42,400] let's consider exactly this quantity,
+- [00:25:42,400 - 00:25:43,600] u naught.
+- [00:25:43,980 - 00:25:45,000] What is u naught?
+- [00:25:45,500 - 00:25:48,180] u naught is the fourth
+- [00:25:48,180 - 00:25:50,860] component of this relativistic velocity,
+- [00:25:51,320 - 00:25:52,680] and what it is,
+- [00:25:52,680 - 00:25:55,560] is it's dt by d tau.
+- [00:25:55,760 - 00:25:57,140] That's exactly what it is.
+- [00:25:57,780 - 00:25:59,200] dt by d tau.
+- [00:25:59,500 - 00:26:00,960] The fourth component,
+- [00:26:00,960 - 00:26:02,060] or the zeroth component,
+- [00:26:02,060 - 00:26:02,820] I should say,
+- [00:26:02,820 - 00:26:04,040] of x is just t,
+- [00:26:04,360 - 00:26:05,160] where is it?
+- [00:26:05,160 - 00:26:05,780] t.
+- [00:26:05,780 - 00:26:09,280] And u naught is just dt by d tau.
+- [00:26:09,840 - 00:26:13,460] d tau by dt is just the inverse of this.
+- [00:26:14,000 - 00:26:14,580] Alright?
+- [00:26:15,680 - 00:26:16,260] So,
+- [00:26:16,260 - 00:26:18,110] we're interested in figuring out
+- [00:26:18,110 - 00:26:19,960] what d tau by dt is.
+- [00:26:20,700 - 00:26:23,100] Let's figure out what d tau by dt is.
+- [00:26:34,140 - 00:26:38,600] d tau is the square root of one...
+- [00:26:39,639 - 00:26:40,320] nope,
+- [00:26:40,320 - 00:26:43,840] it's the square root of dt squared minus dx squared.
+- [00:26:48,260 - 00:26:50,780] That's just rewriting this thing here,
+- [00:26:50,780 - 00:26:52,360] but with differential notation.
+- [00:26:52,940 - 00:26:54,300] dt squared by...
+- [00:26:54,300 - 00:26:55,060] times dx squared,
+- [00:26:55,340 - 00:26:58,500] and this means all three components,
+- [00:26:58,700 - 00:27:00,580] the sums of the squares of all three components.
+- [00:27:02,100 - 00:27:04,920] Let's take out of the square root dt.
+- [00:27:06,660 - 00:27:08,900] Let's take it outside the square root of t,
+- [00:27:09,100 - 00:27:11,140] and let's factor it off this stuff,
+- [00:27:11,300 - 00:27:15,090] and then we get in here
+- [00:27:15,090 - 00:27:18,880] one minus dx squared by dt squared.
+- [00:27:21,220 - 00:27:21,780] Or,
+- [00:27:21,780 - 00:27:24,940] just dt times the square
+- [00:27:24,940 - 00:27:28,100] root of one minus v squared.
+- [00:27:33,620 - 00:27:34,180] So,
+- [00:27:34,180 - 00:27:35,160] what do we know?
+- [00:27:35,260 - 00:27:38,920] We know that d tau by dt is equal
+- [00:27:38,920 - 00:27:42,580] to the square root of one minus v squared.
+- [00:27:43,280 - 00:27:45,620] That's what this one minus v squared is,
+- [00:27:45,840 - 00:27:48,400] or the square root of one minus v squared.
+- [00:27:49,000 - 00:27:51,240] It's the rate of change of
+- [00:27:51,240 - 00:27:53,480] proper time relative to ordinary time.
+- [00:27:53,780 - 00:27:55,340] If v is close...
+- [00:27:56,060 - 00:27:58,110] If v is small by
+- [00:27:58,110 - 00:28:00,160] comparison with the speed of light,
+- [00:28:00,180 - 00:28:01,060] if it's close to zero,
+- [00:28:01,060 - 00:28:02,880] then this is close to one.
+- [00:28:03,520 - 00:28:04,340] In other words,
+- [00:28:04,340 - 00:28:05,800] in a non-relativistic limit,
+- [00:28:06,480 - 00:28:08,540] dt by d tau is just one.
+- [00:28:08,620 - 00:28:10,680] There's no difference between tau and t.
+- [00:28:11,720 - 00:28:13,070] If the object is moving with
+- [00:28:13,070 - 00:28:14,420] close to the speed of light,
+- [00:28:14,540 - 00:28:15,500] there can be a large difference.
+- [00:28:16,160 - 00:28:16,720] All right,
+- [00:28:16,720 - 00:28:17,100] let's see,
+- [00:28:17,100 - 00:28:17,740] where were we?
+- [00:28:17,740 - 00:28:18,080] I,
+- [00:28:18,080 - 00:28:18,580] uh...
+- [00:28:19,120 - 00:28:19,520] Ah.
+- [00:28:20,580 - 00:28:21,160] All right,
+- [00:28:21,160 - 00:28:22,560] so what we want from
+- [00:28:22,560 - 00:28:23,960] here is this equation over here.
+- [00:28:24,020 - 00:28:25,660] I've crowded too many equations together.
+- [00:28:26,840 - 00:28:28,240] I was working on this.
+- [00:28:30,220 - 00:28:31,220] Here's where I was working.
+- [00:28:31,360 - 00:28:31,580] All right,
+- [00:28:31,580 - 00:28:31,880] so first,
+- [00:28:31,880 - 00:28:33,300] I'm making a little bit
+- [00:28:33,300 - 00:28:34,720] of a mess out of this.
+- [00:28:34,840 - 00:28:35,920] A mess of the blackboard,
+- [00:28:35,920 - 00:28:36,440] in any case.
+- [00:28:36,960 - 00:28:37,480] All right,
+- [00:28:37,480 - 00:28:37,960] first of all,
+- [00:28:37,960 - 00:28:40,160] this is equal to dt by d tau.
+- [00:28:40,280 - 00:28:41,400] What is dt by d tau?
+- [00:28:41,820 - 00:28:43,110] d tau by dt is the
+- [00:28:43,110 - 00:28:44,400] square root of one minus v squared.
+- [00:28:44,680 - 00:28:45,840] What is dt by d tau?
+- [00:28:46,500 - 00:28:47,580] One over that,
+- [00:28:47,580 - 00:28:47,820] right?
+- [00:28:48,220 - 00:28:49,420] So u-naught,
+- [00:28:49,420 - 00:28:50,300] whatever it is,
+- [00:28:50,360 - 00:28:52,040] is one divided by the square
+- [00:28:52,040 - 00:28:53,720] root of one minus v squared.
+- [00:28:55,100 - 00:28:59,360] It's a thing which non-relativistically just goes to one.
+- [00:29:00,300 - 00:29:01,940] In the non-relativistic limit,
+- [00:29:02,060 - 00:29:05,500] where v is much smaller than the speed of light,
+- [00:29:05,940 - 00:29:06,980] this is just one.
+- [00:29:07,140 - 00:29:08,660] That's why we never think about it.
+- [00:29:09,120 - 00:29:11,100] We never think about dt by d tau,
+- [00:29:11,180 - 00:29:12,100] because tau is t,
+- [00:29:12,100 - 00:29:13,740] and d tau by dt is just one.
+- [00:29:14,420 - 00:29:14,860] Good,
+- [00:29:14,860 - 00:29:15,260] all right.
+- [00:29:15,260 - 00:29:16,640] On the other hand,
+- [00:29:16,640 - 00:29:19,700] relativistically we worry about it.
+- [00:29:20,540 - 00:29:21,540] What about here?
+- [00:29:21,660 - 00:29:23,750] v sub i is u
+- [00:29:23,750 - 00:29:25,840] sub i d tau by dt.
+- [00:29:26,280 - 00:29:29,380] But d tau by dt is again just...
+- [00:29:30,580 - 00:29:31,560] Which way is it?
+- [00:29:35,420 - 00:29:36,840] The tau by dt is the
+- [00:29:36,840 - 00:29:38,260] square root of one minus v squared.
+- [00:29:40,920 - 00:29:41,480] Divided by?
+- [00:29:41,480 - 00:29:41,880] Let's see.
+- [00:29:43,020 - 00:29:43,500] Yeah.
+- [00:29:43,540 - 00:29:43,820] Yeah.
+- [00:29:44,460 - 00:29:49,240] v sub i is dx d tau d tau dt.
+- [00:29:51,460 - 00:29:52,560] Looks like it's multiplied.
+- [00:29:54,180 - 00:29:55,600] Why does that surprise me?
+- [00:29:55,700 - 00:29:55,960] No,
+- [00:29:55,960 - 00:29:56,860] it doesn't surprise me.
+- [00:29:56,900 - 00:29:57,400] That's correct.
+- [00:29:58,620 - 00:29:59,380] That's correct.
+- [00:30:01,340 - 00:30:03,200] So now we can assemble together
+- [00:30:04,380 - 00:30:06,660] what is the meaning of the four velocity
+- [00:30:06,660 - 00:30:08,640] in terms of the normal velocity.
+- [00:30:11,540 - 00:30:12,660] First of all,
+- [00:30:12,660 - 00:30:13,660] u-naught,
+- [00:30:13,820 - 00:30:15,800] the time component of the four velocity,
+- [00:30:16,060 - 00:30:17,400] is just one over the square
+- [00:30:17,400 - 00:30:18,740] root of one minus v squared.
+- [00:30:19,200 - 00:30:20,700] What about the space component?
+- [00:30:23,780 - 00:30:24,840] u sub i,
+- [00:30:24,840 - 00:30:28,260] that we read off from here,
+- [00:30:29,400 - 00:30:30,980] that's equal to v sub i
+- [00:30:32,400 - 00:30:33,950] divided by that same square
+- [00:30:33,950 - 00:30:35,500] root of one minus v squared.
+- [00:30:36,160 - 00:30:40,000] So this is the basic computation you would do
+- [00:30:40,000 - 00:30:42,840] to find the components of four velocity.
+- [00:30:44,939 - 00:30:45,340] Again,
+- [00:30:45,340 - 00:30:47,780] if we're talking about the non-relativistic limit
+- [00:30:47,780 - 00:30:49,700] where v is very close to zero,
+- [00:30:50,560 - 00:30:52,040] then the square root is trivial,
+- [00:30:52,220 - 00:30:54,180] and u sub i and v sub i,
+- [00:30:54,280 - 00:30:56,220] the two notions of velocity are the same.
+- [00:30:57,560 - 00:30:58,780] As you get up closer and
+- [00:30:58,780 - 00:31:00,000] closer to the speed of light,
+- [00:31:00,240 - 00:31:01,990] it looks like u sub i
+- [00:31:01,990 - 00:31:03,740] is much bigger than v sub i.
+- [00:31:03,900 - 00:31:04,240] Is that right?
+- [00:31:04,420 - 00:31:04,560] Yeah.
+- [00:31:04,640 - 00:31:06,480] u sub i is much bigger than v sub i.
+- [00:31:06,740 - 00:31:07,860] Or v sub i is
+- [00:31:07,860 - 00:31:08,980] much smaller than u sub i.
+- [00:31:10,020 - 00:31:10,420] Okay,
+- [00:31:10,420 - 00:31:12,440] this is the notion of four velocity.
+- [00:31:12,440 - 00:31:14,520] This is the notion of four velocity.
+- [00:31:15,520 - 00:31:18,920] And everywhere along the trajectory of a particle,
+- [00:31:19,120 - 00:31:22,340] the particle is characterized by a position.
+- [00:31:23,820 - 00:31:25,570] You can add in the
+- [00:31:25,570 - 00:31:27,320] time at which you're characterizing it.
+- [00:31:27,440 - 00:31:29,440] So that's a four vector of position
+- [00:31:32,220 - 00:31:38,620] and also a four vector of velocity.
+- [00:31:40,180 - 00:31:40,800] Now,
+- [00:31:40,800 - 00:31:42,420] the four vector of velocity,
+- [00:31:44,260 - 00:31:47,080] doesn't really have four independent components.
+- [00:31:47,580 - 00:31:50,040] It only has three independent components.
+- [00:31:50,300 - 00:31:51,760] Let's go through why that's true.
+- [00:31:57,280 - 00:32:00,440] Let's take the...
+- [00:32:05,120 - 00:32:05,460] Okay,
+- [00:32:05,460 - 00:32:07,210] I'll explain very quickly why
+- [00:32:07,210 - 00:32:08,960] it doesn't have four independent components.
+- [00:32:09,620 - 00:32:11,740] There is a relationship between
+- [00:32:11,740 - 00:32:14,400] the three components of spatial velocity
+- [00:32:14,400 - 00:32:18,260] of u sub i and u sub 0.
+- [00:32:18,520 - 00:32:21,340] And it's just a relationship that u sub i,
+- [00:32:22,120 - 00:32:24,060] let's call it u squared,
+- [00:32:25,300 - 00:32:30,300] which happens to be v squared over square root of...
+- [00:32:32,260 - 00:32:34,760] v squared over 1 minus v squared.
+- [00:32:37,960 - 00:32:39,880] That's the space component squared,
+- [00:32:40,100 - 00:32:41,420] is v squared,
+- [00:32:41,420 - 00:32:43,960] divided by 1 minus v squared.
+- [00:32:46,439 - 00:32:47,280] If I...
+- [00:32:51,360 - 00:32:52,970] It seems like you can just see
+- [00:32:52,970 - 00:32:54,580] it from the definition of u sub 0.
+- [00:32:54,720 - 00:32:54,960] Yes,
+- [00:32:54,960 - 00:32:55,300] we can.
+- [00:32:56,220 - 00:32:56,640] Yes,
+- [00:32:56,640 - 00:32:56,940] we can,
+- [00:32:56,940 - 00:32:59,100] but I'm halfway through it,
+- [00:32:59,100 - 00:32:59,780] so let's finish it.
+- [00:33:00,120 - 00:33:04,000] Let's take u sub 0 squared minus this thing here.
+- [00:33:04,640 - 00:33:05,160] All right,
+- [00:33:05,160 - 00:33:06,860] so that gives us a minus sign here,
+- [00:33:08,080 - 00:33:10,860] plus 1 over square root of 1 minus v squared.
+- [00:33:10,860 - 00:33:13,500] I'm making this more complicated than it is.
+- [00:33:13,980 - 00:33:16,080] The answer is that the right hand...
+- [00:33:16,080 - 00:33:16,640] Not square root,
+- [00:33:16,640 - 00:33:18,040] just 1 minus v squared.
+- [00:33:18,280 - 00:33:18,580] Oh boy.
+- [00:33:21,300 - 00:33:22,400] What's the right hand side?
+- [00:33:25,540 - 00:33:28,040] 1 minus v squared over 1 minus v squared.
+- [00:33:33,000 - 00:33:34,940] So all four velocities,
+- [00:33:34,940 - 00:33:36,240] no matter how fast the
+- [00:33:36,240 - 00:33:37,540] particle is moving or not moving,
+- [00:33:37,700 - 00:33:39,540] the square of the...
+- [00:33:39,540 - 00:33:42,240] The square,
+- [00:33:42,480 - 00:33:44,540] or the difference of the squares of components,
+- [00:33:44,800 - 00:33:46,640] time component and space component,
+- [00:33:46,780 - 00:33:48,420] is always equal to 1.
+- [00:33:49,300 - 00:33:49,800] All right?
+- [00:33:51,220 - 00:33:52,760] It's always equal to 1,
+- [00:33:52,900 - 00:33:55,980] and that's why there are not four independent components
+- [00:33:55,980 - 00:33:57,440] of the four velocity.
+- [00:33:57,660 - 00:34:00,220] Only three independent components of the four velocity.
+- [00:34:00,500 - 00:34:04,040] They're related by a single relationship like this.
+- [00:34:04,380 - 00:34:04,980] Otherwise,
+- [00:34:04,980 - 00:34:05,980] they're independent.
+- [00:34:07,520 - 00:34:09,520] Could you also say that...
+- [00:34:09,540 - 00:34:12,480] Can you conceptualize it by saying
+- [00:34:12,480 - 00:34:14,340] that it's because you're differentiating with respect
+- [00:34:14,340 - 00:34:15,880] to one of the components?
+- [00:34:16,219 - 00:34:16,860] Say it again?
+- [00:34:17,260 - 00:34:18,300] Can you also...
+- [00:34:18,300 - 00:34:20,719] Can you alternatively conceptualize it independently
+- [00:34:21,319 - 00:34:23,560] by saying that it's because you're differentiating
+- [00:34:23,560 - 00:34:25,040] with respect to one of the components?
+- [00:34:25,500 - 00:34:25,639] Yeah.
+- [00:34:25,960 - 00:34:26,520] Yeah,
+- [00:34:26,520 - 00:34:26,760] sure.
+- [00:34:27,199 - 00:34:27,760] Yeah.
+- [00:34:28,420 - 00:34:29,780] There's an easier way to...
+- [00:34:29,780 - 00:34:30,980] I said this badly.
+- [00:34:31,239 - 00:34:34,800] Let's go through a very simple version of it.
+- [00:34:35,040 - 00:34:35,600] All right.
+- [00:34:35,620 - 00:34:36,560] Delta tau squared
+- [00:34:37,780 - 00:34:42,060] is equal to delta t squared minus delta x squared.
+- [00:34:43,480 - 00:34:44,040] Okay?
+- [00:34:44,600 - 00:34:45,159] Boy,
+- [00:34:45,159 - 00:34:46,179] did I make a mess over there.
+- [00:34:46,620 - 00:34:48,149] Let's just divide both sides
+- [00:34:48,149 - 00:34:49,679] of this by delta tau squared.
+- [00:34:49,780 - 00:34:52,500] We get 1 is equal to delta t squared
+- [00:34:53,480 - 00:34:55,100] over delta tau squared
+- [00:34:56,440 - 00:34:59,460] minus delta x squared
+- [00:34:59,460 - 00:35:01,100] over delta tau squared.
+- [00:35:02,700 - 00:35:03,820] Delta tau...
+- [00:35:03,820 - 00:35:05,160] Delta t by delta tau,
+- [00:35:05,160 - 00:35:06,320] that's u-naught.
+- [00:35:07,320 - 00:35:09,780] So the first term here is just u-naught squared,
+- [00:35:10,300 - 00:35:14,480] and the other one is u-vector squared.
+- [00:35:14,940 - 00:35:15,280] Okay?
+- [00:35:15,720 - 00:35:17,840] So that's all that went on here.
+- [00:35:18,040 - 00:35:19,740] A complicated way to say this.
+- [00:35:20,400 - 00:35:20,940] All right.
+- [00:35:21,000 - 00:35:23,720] But let's go back now to the world line.
+- [00:35:24,880 - 00:35:25,840] Here's a world line.
+- [00:35:25,920 - 00:35:28,660] It's characterized by a 4-velocity and a 4-vector,
+- [00:35:28,820 - 00:35:30,500] only one redundancy,
+- [00:35:30,540 - 00:35:32,880] and that's that the four components of u
+- [00:35:32,880 - 00:35:33,900] are not completely independent.
+- [00:35:35,180 - 00:35:36,380] We want to know...
+- [00:35:36,380 - 00:35:36,540] Okay.
+- [00:35:36,560 - 00:35:36,560] Now,
+- [00:35:36,560 - 00:35:41,460] what law governs the motion...
+- [00:35:41,460 - 00:35:42,680] Let's take a free particle,
+- [00:35:42,680 - 00:35:44,120] one with no forces on it.
+- [00:35:44,420 - 00:35:46,200] What law governs its motion?
+- [00:35:46,960 - 00:35:50,340] And the law that we're going to abstract
+- [00:35:51,720 - 00:35:53,980] from a quarter's worth of classical mechanics
+- [00:35:54,820 - 00:35:56,500] is the principle of least action.
+- [00:35:57,320 - 00:35:57,940] All right?
+- [00:35:57,960 - 00:35:59,340] The principle of least action...
+- [00:35:59,340 - 00:36:01,190] The only thing new is that
+- [00:36:01,190 - 00:36:03,040] the action is going to have...
+- [00:36:03,040 - 00:36:04,600] We want our laws of physics
+- [00:36:04,600 - 00:36:07,920] to be the same in every reference frame.
+- [00:36:08,240 - 00:36:11,020] That means we should try to cast them
+- [00:36:11,299 - 00:36:13,400] in terms of quantities which are the same
+- [00:36:13,400 - 00:36:14,500] in every reference frame.
+- [00:36:15,240 - 00:36:17,480] If we have a principle that says
+- [00:36:17,480 - 00:36:20,480] that in going from here to here,
+- [00:36:22,320 - 00:36:24,900] the particle goes along a trajectory
+- [00:36:25,600 - 00:36:28,400] which minimizes or maximizes...
+- [00:36:28,400 - 00:36:30,780] minimizes some quantity called the action,
+- [00:36:32,379 - 00:36:34,000] we are doing good business
+- [00:36:34,000 - 00:36:37,100] if we make sure that that action doesn't depend
+- [00:36:37,879 - 00:36:41,560] on which frame of reference it's evaluated in.
+- [00:36:41,680 - 00:36:43,800] We would like the action to be something
+- [00:36:43,800 - 00:36:46,400] which is the same in every reference frame.
+- [00:36:47,140 - 00:36:48,940] We know of only one...
+- [00:36:48,940 - 00:36:50,040] That's one fact.
+- [00:36:50,280 - 00:36:51,800] The action should be invariant.
+- [00:36:52,260 - 00:36:54,660] And the other thing that we've learned from experience
+- [00:36:54,660 - 00:36:58,280] is the action should be built up incrementally
+- [00:36:59,040 - 00:37:02,120] as a sum over the trajectory
+- [00:37:02,120 - 00:37:03,980] of little infinitesimal numbers.
+- [00:37:04,000 - 00:37:04,300] So that's the idea of the integral.
+- [00:37:04,300 - 00:37:04,320] of the number of infinitesimal pieces
+- [00:37:04,320 - 00:37:07,460] for each segment of the trajectory.
+- [00:37:08,040 - 00:37:10,320] That we can abstract from classical mechanics.
+- [00:37:10,940 - 00:37:13,680] Action being a sum or an integral,
+- [00:37:13,680 - 00:37:14,560] better yet,
+- [00:37:14,700 - 00:37:16,340] an integral over the trajectory,
+- [00:37:16,540 - 00:37:19,400] and the thing of which it is an integral
+- [00:37:19,400 - 00:37:21,740] should be a quantity which is the same
+- [00:37:21,740 - 00:37:22,780] in every reference frame.
+- [00:37:23,160 - 00:37:25,260] There's really only one thing
+- [00:37:26,800 - 00:37:28,700] that is invariant
+- [00:37:31,400 - 00:37:34,480] in going from a small...
+- [00:37:34,480 - 00:37:36,720] from a position to a displaced position.
+- [00:37:37,040 - 00:37:39,640] And it is the proper time along the trajectory.
+- [00:37:42,140 - 00:37:45,020] The proper time from here to here
+- [00:37:45,020 - 00:37:47,000] is an invariant,
+- [00:37:47,000 - 00:37:47,800] meaning to say
+- [00:37:47,800 - 00:37:48,880] that all observers,
+- [00:37:48,880 - 00:37:50,520] no matter what velocity
+- [00:37:50,520 - 00:37:51,660] they're moving with,
+- [00:37:51,820 - 00:37:54,240] will not agree on the delta x's,
+- [00:37:54,240 - 00:37:56,380] but they will agree on the delta tau.
+- [00:37:57,180 - 00:37:57,740] So,
+- [00:37:57,740 - 00:37:59,680] a good guess,
+- [00:37:59,960 - 00:38:01,040] and it's the right guess,
+- [00:38:01,200 - 00:38:03,320] the right guess for the action
+- [00:38:04,100 - 00:38:04,860] is the sum,
+- [00:38:05,820 - 00:38:08,240] we'll convert that to an integral in a moment,
+- [00:38:09,360 - 00:38:12,200] of all the little delta taus
+- [00:38:12,200 - 00:38:16,560] from one end of the trajectory
+- [00:38:16,560 - 00:38:18,020] to another end of the trajectory.
+- [00:38:20,940 - 00:38:22,520] All the delta taus,
+- [00:38:22,520 - 00:38:24,160] that is the action.
+- [00:38:24,380 - 00:38:25,260] Not quite,
+- [00:38:25,260 - 00:38:25,760] not quite.
+- [00:38:29,040 - 00:38:31,920] And that action has to be minimized
+- [00:38:31,920 - 00:38:33,600] holding the end points fixed,
+- [00:38:33,720 - 00:38:34,960] remember your classical mechanics,
+- [00:38:35,380 - 00:38:36,860] the action principle,
+- [00:38:36,920 - 00:38:39,840] you hold the initial and the final configuration fixed,
+- [00:38:40,040 - 00:38:42,000] and you search for the trajectory
+- [00:38:42,520 - 00:38:44,920] that minimizes or makes stationary
+- [00:38:45,359 - 00:38:47,860] the action between the two end points of the trajectory.
+- [00:38:48,740 - 00:38:50,580] So you wiggle around the path
+- [00:38:50,580 - 00:38:52,500] until you find the path,
+- [00:38:52,500 - 00:38:53,360] the path of least action.
+- [00:38:54,700 - 00:38:57,840] Since the action is composed out of invariance,
+- [00:38:58,460 - 00:38:59,800] everybody will agree
+- [00:39:01,060 - 00:39:04,620] that a given path minimizes the action.
+- [00:39:05,940 - 00:39:08,160] So that's our principle.
+- [00:39:09,340 - 00:39:10,320] Add them up.
+- [00:39:11,240 - 00:39:12,140] So what does that mean?
+- [00:39:12,300 - 00:39:12,520] That means
+- [00:39:12,520 - 00:39:15,080] we have a freedom,
+- [00:39:15,080 - 00:39:15,800] incidentally.
+- [00:39:15,840 - 00:39:16,840] We have a freedom,
+- [00:39:16,900 - 00:39:19,840] we could multiply the action by a number,
+- [00:39:19,960 - 00:39:20,560] any number,
+- [00:39:20,560 - 00:39:21,460] it won't make any difference,
+- [00:39:23,460 - 00:39:24,360] why not?
+- [00:39:24,580 - 00:39:27,380] Because if a thing is stationary
+- [00:39:27,380 - 00:39:29,680] with respect to changes of the trajectory,
+- [00:39:29,980 - 00:39:31,450] if I multiply it by
+- [00:39:31,450 - 00:39:32,920] 10 or 7 or minus 15,
+- [00:39:33,280 - 00:39:34,840] it will still be stationary.
+- [00:39:35,240 - 00:39:37,340] Of course if I multiply it by a negative number,
+- [00:39:37,520 - 00:39:40,400] I will turn a maximum to a minimum,
+- [00:39:40,640 - 00:39:42,520] but I won't change the fact
+- [00:39:42,520 - 00:39:45,900] that that trajectory makes the action stationary.
+- [00:39:46,800 - 00:39:47,360] Yeah?
+- [00:39:47,580 - 00:39:48,940] What happens to energy?
+- [00:39:49,620 - 00:39:51,440] Why are you getting ahead of yourself?
+- [00:39:51,460 - 00:39:51,820] Because you're not ahead of the game.
+- [00:39:52,360 - 00:39:53,460] We start with action.
+- [00:39:54,100 - 00:39:55,160] Energy we derive.
+- [00:39:55,500 - 00:39:56,080] We will do that.
+- [00:39:56,860 - 00:39:57,720] We will do that.
+- [00:40:00,819 - 00:40:02,300] Before the evening is over,
+- [00:40:02,380 - 00:40:04,480] we will discuss why we didn't start with energy.
+- [00:40:04,740 - 00:40:06,460] But the answer is it's not invariant.
+- [00:40:09,140 - 00:40:12,220] It's not even invariant in ordinary Newtonian physics.
+- [00:40:12,700 - 00:40:15,320] The energy of a particle is not independent
+- [00:40:15,320 - 00:40:16,600] of its state of motion.
+- [00:40:17,800 - 00:40:20,440] So if you see a particle standing still,
+- [00:40:20,440 - 00:40:21,900] and I see the particle moving,
+- [00:40:22,100 - 00:40:24,000] we ascribe a different kinetic energy to it.
+- [00:40:24,140 - 00:40:25,920] So it's not an invariant concept.
+- [00:40:26,380 - 00:40:28,480] It's a good idea to start our discussion
+- [00:40:28,480 - 00:40:30,640] of particle motion by talking about invariants
+- [00:40:31,160 - 00:40:32,240] that everybody agrees upon,
+- [00:40:32,640 - 00:40:33,770] and in that way make
+- [00:40:33,770 - 00:40:34,900] sure that our laws of physics
+- [00:40:34,900 - 00:40:37,340] are the same in every reference frame.
+- [00:40:38,180 - 00:40:38,700] Okay,
+- [00:40:38,700 - 00:40:38,880] so,
+- [00:40:38,880 - 00:40:39,120] yeah?
+- [00:40:39,700 - 00:40:43,900] Could you state again why a relativistic invariant
+- [00:40:43,900 - 00:40:45,190] is a good choice for action
+- [00:40:45,190 - 00:40:46,480] or a good guess for action?
+- [00:40:46,680 - 00:40:49,500] It's a good guess simply because
+- [00:40:49,500 - 00:40:51,300] it's the same for every observer,
+- [00:40:51,400 - 00:40:52,400] no matter how they're moving.
+- [00:40:53,720 - 00:40:55,400] That's what proper time was.
+- [00:40:55,480 - 00:40:57,640] Proper time was the particular combination
+- [00:40:57,640 - 00:41:00,760] of delta x's and delta t's between two points
+- [00:41:01,470 - 00:41:03,820] that everybody will agree on the value of it.
+- [00:41:04,760 - 00:41:07,240] It's the thing which is invariant
+- [00:41:07,240 - 00:41:08,240] on the Lorentz transformations.
+- [00:41:09,600 - 00:41:12,480] If we want our laws of physics to be invariant,
+- [00:41:13,700 - 00:41:17,160] it would be a good idea to base them
+- [00:41:17,160 - 00:41:19,400] on quantities which all observers
+- [00:41:21,300 - 00:41:23,180] have the same value for.
+- [00:41:23,880 - 00:41:24,420] So,
+- [00:41:24,420 - 00:41:24,820] for example,
+- [00:41:24,820 - 00:41:25,480] if I just say,
+- [00:41:25,620 - 00:41:26,040] you know,
+- [00:41:26,040 - 00:41:27,460] it's analogous to the following.
+- [00:41:27,580 - 00:41:30,420] This is entirely analogous to the following idea.
+- [00:41:31,660 - 00:41:34,060] Supposing I am interested in the shortest distance
+- [00:41:34,060 - 00:41:35,840] between two points on the blackboard.
+- [00:41:36,680 - 00:41:38,500] What do I do?
+- [00:41:40,260 - 00:41:43,040] If I'm interested in the shortest distance
+- [00:41:43,040 - 00:41:43,900] between two points,
+- [00:41:43,900 - 00:41:44,920] obviously I search
+- [00:41:44,920 - 00:41:45,960] for the shortest distance.
+- [00:41:46,040 - 00:41:49,420] I search for the curve which has the shortest distance.
+- [00:41:49,500 - 00:41:50,240] Now,
+- [00:41:50,240 - 00:41:54,780] might we find that we get different answers
+- [00:41:54,780 - 00:41:56,760] in different coordinate systems?
+- [00:41:56,860 - 00:41:59,260] That coordinate system or that coordinate system
+- [00:41:59,260 - 00:41:59,900] or whatever?
+- [00:42:00,180 - 00:42:00,740] No,
+- [00:42:00,740 - 00:42:01,840] of course we won't.
+- [00:42:01,980 - 00:42:05,040] And the reason is distance in the Euclidean plane
+- [00:42:05,040 - 00:42:09,160] is invariant with respect to rotations of coordinates.
+- [00:42:09,760 - 00:42:10,900] In particular,
+- [00:42:10,900 - 00:42:13,420] if we think of the distance
+- [00:42:13,420 - 00:42:16,280] from one point to another along the curve
+- [00:42:16,280 - 00:42:19,480] to be a sum of a lot of little integers,
+- [00:42:19,500 - 00:42:23,320] and everybody agrees on the incremental distances,
+- [00:42:24,440 - 00:42:27,720] then the curve that we get will not depend
+- [00:42:27,720 - 00:42:30,600] on the coordinate system that we use to evaluate it.
+- [00:42:30,900 - 00:42:31,440] Why?
+- [00:42:31,440 - 00:42:32,560] It's an invariant concept.
+- [00:42:32,860 - 00:42:35,160] The shortest distance between two points.
+- [00:42:35,780 - 00:42:37,990] What we do then is we add
+- [00:42:37,990 - 00:42:40,200] up all the little Euclidean distances here,
+- [00:42:40,360 - 00:42:42,720] and we're doing exactly the same kind of thing,
+- [00:42:42,860 - 00:42:45,740] adding up all the little proper times along the trajectory.
+- [00:42:46,180 - 00:42:47,040] In fact,
+- [00:42:47,040 - 00:42:48,360] the formulas are almost identical
+- [00:42:48,360 - 00:42:49,480] apart from the science.
+- [00:42:50,940 - 00:42:51,540] All right,
+- [00:42:51,540 - 00:42:51,720] now,
+- [00:42:51,720 - 00:42:52,880] we have a freedom.
+- [00:42:53,000 - 00:42:56,300] We could multiply this action by a number.
+- [00:42:56,900 - 00:42:57,560] Excuse me.
+- [00:42:57,600 - 00:42:57,920] Yeah.
+- [00:42:59,440 - 00:43:00,820] You may have said this,
+- [00:43:00,820 - 00:43:01,960] but I don't remember it.
+- [00:43:03,000 - 00:43:05,040] We arrive at proper time at being
+- [00:43:05,040 - 00:43:07,800] delta p squared minus delta x squared.
+- [00:43:08,620 - 00:43:09,500] Square root of that.
+- [00:43:09,580 - 00:43:10,220] Square root of that.
+- [00:43:10,440 - 00:43:10,880] Square.
+- [00:43:11,200 - 00:43:11,400] Yeah.
+- [00:43:11,980 - 00:43:12,860] Was there a reason,
+- [00:43:12,860 - 00:43:14,740] is there a reason
+- [00:43:14,740 - 00:43:16,820] why you inherently choose a positive square root
+- [00:43:16,820 - 00:43:18,080] as opposed to a negative square root?
+- [00:43:19,480 - 00:43:19,500] Well,
+- [00:43:19,500 - 00:43:21,300] we will always choose the positive square root,
+- [00:43:21,300 - 00:43:21,580] yeah.
+- [00:43:25,200 - 00:43:25,700] Yeah,
+- [00:43:25,700 - 00:43:27,960] proper time is by its very definition
+- [00:43:27,960 - 00:43:28,980] a positive quantity.
+- [00:43:29,240 - 00:43:31,620] It's the time read along the clock
+- [00:43:31,620 - 00:43:33,820] from the past to the future.
+- [00:43:36,240 - 00:43:39,120] And we could use the negative root.
+- [00:43:39,320 - 00:43:41,220] If we used the negative root everywhere,
+- [00:43:41,700 - 00:43:44,440] it would simply change the sign of the action.
+- [00:43:44,800 - 00:43:45,520] That's okay.
+- [00:43:45,620 - 00:43:46,540] What would happen if you
+- [00:43:46,540 - 00:43:47,460] change the sign of the action?
+- [00:43:47,460 - 00:43:50,660] It would not change the equations of motion at all.
+- [00:43:50,860 - 00:43:52,210] Instead of saying we were looking
+- [00:43:52,210 - 00:43:53,560] for the minimum of the action,
+- [00:43:53,700 - 00:43:54,890] we might say we were looking
+- [00:43:54,890 - 00:43:56,080] for the maximum of the action.
+- [00:43:56,380 - 00:43:57,280] But remember,
+- [00:43:57,280 - 00:43:58,620] to minimize a function
+- [00:43:58,620 - 00:43:59,960] or to maximize it,
+- [00:43:59,960 - 00:44:01,360] exactly the same equation,
+- [00:44:01,620 - 00:44:03,060] you just say it's stationary.
+- [00:44:03,540 - 00:44:07,720] So it doesn't matter whether you take the action
+- [00:44:07,720 - 00:44:09,440] and multiply it by a number,
+- [00:44:09,540 - 00:44:11,640] including the possibility of a negative number.
+- [00:44:12,120 - 00:44:16,400] It won't change the trajectories
+- [00:44:16,400 - 00:44:18,480] if the rule is the
+- [00:44:18,480 - 00:44:20,560] trajectories should make stationary the action.
+- [00:44:23,360 - 00:44:26,040] Stationary means it could be a minimum or a maximum.
+- [00:44:26,500 - 00:44:28,400] I guess also if you had a coordinate system
+- [00:44:28,400 - 00:44:31,300] in which the x-coordinate didn't change,
+- [00:44:31,580 - 00:44:33,740] then if you chose the positive square root,
+- [00:44:33,780 - 00:44:37,040] then the proper time is the same as the time.
+- [00:44:37,220 - 00:44:37,560] Yes.
+- [00:44:37,560 - 00:44:38,480] Yes,
+- [00:44:38,480 - 00:44:39,000] that's true.
+- [00:44:39,000 - 00:44:40,260] That is true.
+- [00:44:41,380 - 00:44:42,100] All right,
+- [00:44:42,100 - 00:44:45,240] and I'm going to put in one more little sign,
+- [00:44:45,240 - 00:44:46,480] one more little change.
+- [00:44:46,720 - 00:44:48,160] I'm going to put a minus sign in here.
+- [00:44:48,520 - 00:44:49,080] Now,
+- [00:44:49,080 - 00:44:49,520] as I said,
+- [00:44:49,520 - 00:44:52,780] multiplying by minus m changes nothing.
+- [00:44:53,200 - 00:44:54,220] It's a convention.
+- [00:44:54,220 - 00:44:55,760] It's a complete convention.
+- [00:44:56,200 - 00:44:59,440] But the convention was established not by Einstein
+- [00:44:59,440 - 00:45:01,300] when he was doing relativistic mechanics,
+- [00:45:02,080 - 00:45:06,160] but long before Einstein by people who had no idea
+- [00:45:06,160 - 00:45:08,040] what the special theory of relativity was,
+- [00:45:08,240 - 00:45:10,930] but who had some prejudices about
+- [00:45:10,930 - 00:45:13,620] the way classical Newtonian mechanics work.
+- [00:45:13,760 - 00:45:14,500] So we're going to come back.
+- [00:45:15,240 - 00:45:16,320] This minus m is there.
+- [00:45:16,760 - 00:45:17,540] We'll come back.
+- [00:45:17,620 - 00:45:19,760] It's for the purpose
+- [00:45:19,760 - 00:45:21,900] of matching onto nonrelativistic formulas.
+- [00:45:22,520 - 00:45:23,760] It would not change anything
+- [00:45:23,760 - 00:45:25,000] if we didn't put it there,
+- [00:45:25,180 - 00:45:29,240] but in order to match with nonrelativistic formulas,
+- [00:45:29,580 - 00:45:32,220] we'll put a minus m there for the time being.
+- [00:45:33,620 - 00:45:34,140] Okay,
+- [00:45:34,140 - 00:45:37,780] so let's take that to be the action.
+- [00:45:38,340 - 00:45:41,560] And now what we do is we put the interval,
+- [00:45:41,720 - 00:45:43,940] the trajectories have already been imagined
+- [00:45:43,940 - 00:45:45,320] to be broken up into intervals.
+- [00:45:45,700 - 00:45:47,540] And now we move the
+- [00:45:47,540 - 00:45:49,380] points around in space and time
+- [00:45:49,380 - 00:45:54,000] and look for the trajectory which minimizes,
+- [00:45:54,000 - 00:45:55,860] or I'll say minimize,
+- [00:45:55,860 - 00:45:57,260] which minimizes the action,
+- [00:45:57,440 - 00:45:59,120] and that will be the true trajectory.
+- [00:46:00,440 - 00:46:01,940] That's the principle of released action.
+- [00:46:02,300 - 00:46:03,700] But before we do that,
+- [00:46:03,700 - 00:46:05,320] let's convert this to an integral.
+- [00:46:06,200 - 00:46:07,850] Let's convert this by taking
+- [00:46:07,850 - 00:46:09,500] the limit in which the differential,
+- [00:46:09,640 - 00:46:11,160] in which these finite differences
+- [00:46:11,160 - 00:46:12,680] here are replaced by differentials.
+- [00:46:12,680 - 00:46:17,910] So this will become then minus m times
+- [00:46:17,910 - 00:46:23,140] the integral of d tau along the trajectory.
+- [00:46:23,900 - 00:46:24,980] The integral,
+- [00:46:24,980 - 00:46:27,560] and I'll explain exactly what this means in a moment,
+- [00:46:27,620 - 00:46:30,190] the integral of sum of little infinitesimal
+- [00:46:30,190 - 00:46:32,760] d taus from one place to another.
+- [00:46:34,320 - 00:46:36,490] There's a reason why the integral
+- [00:46:36,490 - 00:46:38,660] is written by this curly symbol here.
+- [00:46:38,760 - 00:46:39,960] You know what the curly symbol means?
+- [00:46:41,000 - 00:46:41,600] Sum.
+- [00:46:42,680 - 00:46:43,180] Right?
+- [00:46:44,300 - 00:46:47,100] And delta tau just becomes d tau from
+- [00:46:47,100 - 00:46:49,900] one end of the trajectory to the other,
+- [00:46:49,960 - 00:46:51,460] from the initial end to the other end.
+- [00:46:51,720 - 00:46:53,980] And now we can write down a formula
+- [00:46:53,980 - 00:46:56,240] d tau is equal to the square root
+- [00:47:01,400 - 00:47:03,120] of one minus,
+- [00:47:03,120 - 00:47:06,300] no,
+- [00:47:06,300 - 00:47:11,500] dt squared minus dx squared.
+- [00:47:12,720 - 00:47:14,510] And dx squared means dx squared
+- [00:47:14,510 - 00:47:16,300] plus dy squared plus dz squared.
+- [00:47:16,580 - 00:47:17,840] Now this is a funny thing,
+- [00:47:17,840 - 00:47:19,810] an integral with a d tau underneath
+- [00:47:19,810 - 00:47:21,780] a thing in a square root there.
+- [00:47:21,860 - 00:47:23,560] I bet you've never seen an integral like that.
+- [00:47:23,620 - 00:47:24,240] Maybe you have,
+- [00:47:24,240 - 00:47:25,930] where the differential things
+- [00:47:25,930 - 00:47:27,620] are underneath the square root.
+- [00:47:27,720 - 00:47:28,500] But it's easy to fix.
+- [00:47:28,600 - 00:47:30,040] It's easy to make it look more standard.
+- [00:47:30,860 - 00:47:32,140] Factor out a dt.
+- [00:47:33,640 - 00:47:35,300] Factor out a dt and
+- [00:47:35,300 - 00:47:36,960] put the dt on the outside.
+- [00:47:38,040 - 00:47:40,190] That means under the square root
+- [00:47:40,190 - 00:47:42,340] we have to divide by dt squared.
+- [00:47:42,340 - 00:47:43,700] And this just becomes one.
+- [00:47:45,480 - 00:47:47,260] And what about dx by dt?
+- [00:47:49,260 - 00:47:51,700] That's the good old fashioned velocity squared.
+- [00:47:52,540 - 00:47:56,730] So this becomes one minus velocity
+- [00:47:56,730 - 00:48:00,920] squared or one minus xi dot squared.
+- [00:48:01,560 - 00:48:04,510] xi dot squared means x dot squared
+- [00:48:04,510 - 00:48:07,460] plus y dot squared plus z dot squared.
+- [00:48:08,440 - 00:48:09,220] All right.
+- [00:48:09,240 - 00:48:10,620] I won't bother writing the sum.
+- [00:48:10,760 - 00:48:11,800] And I won't bother writing x,
+- [00:48:11,800 - 00:48:11,980] y,
+- [00:48:11,980 - 00:48:12,300] and z.
+- [00:48:12,300 - 00:48:14,740] It's just x sub i dot.
+- [00:48:14,820 - 00:48:19,180] And dot now means derivative with respect to ordinary time.
+- [00:48:20,640 - 00:48:22,600] Derivative with respect to ordinary time.
+- [00:48:22,940 - 00:48:25,260] So by factoring out a dt,
+- [00:48:25,260 - 00:48:28,290] I converted this to something more
+- [00:48:28,290 - 00:48:31,320] recognizable than it might have been before.
+- [00:48:31,980 - 00:48:35,900] It's an integral of something that depends on the velocity.
+- [00:48:38,560 - 00:48:41,440] Remember about the ordinary principle of least action.
+- [00:48:41,440 - 00:48:43,920] And the ordinary principle of least action for an element,
+- [00:48:43,920 - 00:48:44,740] for a particle,
+- [00:48:44,740 - 00:48:45,440] for example,
+- [00:48:46,360 - 00:48:50,840] the action is an integral over a quantity called what?
+- [00:48:52,960 - 00:48:53,920] The Lagrangian.
+- [00:48:54,280 - 00:48:56,140] And the Lagrangian depends on what?
+- [00:48:58,340 - 00:48:59,620] Positions and velocities.
+- [00:49:00,400 - 00:49:02,800] What about for the case where there are no forces?
+- [00:49:04,780 - 00:49:06,500] Then it only depends on the velocity,
+- [00:49:06,500 - 00:49:07,260] not the positions.
+- [00:49:07,620 - 00:49:08,600] And here's what we got.
+- [00:49:08,700 - 00:49:09,980] We have something like that here.
+- [00:49:09,980 - 00:49:13,090] We have that the action is minus m times
+- [00:49:13,090 - 00:49:16,200] the integral of 1 minus the square of the velocity
+- [00:49:16,900 - 00:49:19,140] from the initial starting point,
+- [00:49:19,140 - 00:49:20,840] let's call it a to b.
+- [00:49:25,080 - 00:49:26,680] So we have a Lagrangian now.
+- [00:49:26,840 - 00:49:28,750] And now we can just take off and do
+- [00:49:28,750 - 00:49:30,660] all the things that we would do with a Lagrangian.
+- [00:49:31,400 - 00:49:32,960] Let's write what the Lagrangian is.
+- [00:49:36,020 - 00:49:39,540] The Lagrangian is minus m.
+- [00:49:39,540 - 00:49:41,480] Which I say is a convention.
+- [00:49:42,440 - 00:49:43,580] Minus m over here.
+- [00:49:44,330 - 00:49:48,260] Times the square root of 1 minus,
+- [00:49:48,260 - 00:49:49,280] now I'll write it,
+- [00:49:49,280 - 00:49:51,360] x dot squared plus y
+- [00:49:51,360 - 00:49:53,440] dot squared plus z dot squared.
+- [00:50:02,440 - 00:50:05,920] It's not as simple as the
+- [00:50:05,920 - 00:50:09,400] usual Lagrangian that Lagrange first wrote down.
+- [00:50:09,540 - 00:50:11,120] The Lagrangian that Lagrange,
+- [00:50:11,120 - 00:50:12,280] what did Lagrange write down?
+- [00:50:13,160 - 00:50:15,780] He just wrote down for the Lagrangian the kinetic energy.
+- [00:50:16,520 - 00:50:17,260] He didn't even know,
+- [00:50:17,260 - 00:50:18,940] I don't even know if he knew it was energy.
+- [00:50:19,240 - 00:50:21,230] He wrote down for the Lagrangian
+- [00:50:21,230 - 00:50:23,220] just one half m x dot squared.
+- [00:50:25,740 - 00:50:26,800] That's nice and simple.
+- [00:50:30,480 - 00:50:32,180] Lagrangian of Lagrange.
+- [00:50:33,020 - 00:50:33,900] L sub L.
+- [00:50:34,600 - 00:50:39,380] That was just m x dot squared over 2.
+- [00:50:40,080 - 00:50:42,020] One half m v squared.
+- [00:50:42,280 - 00:50:44,350] Where x dot squared does mean x dot
+- [00:50:44,350 - 00:50:46,420] squared plus y dot squared plus z dot squared.
+- [00:50:46,800 - 00:50:49,380] This is the Lagrangian Lagrange would have written down.
+- [00:50:49,540 - 00:50:52,310] This is the Lagrangian that a relativistic
+- [00:50:52,310 - 00:50:55,080] version of Lagrange would have written down.
+- [00:50:55,680 - 00:50:57,320] What's the connection between them?
+- [00:50:57,780 - 00:50:58,300] Well,
+- [00:50:58,300 - 00:51:00,020] the first connection between them and the
+- [00:51:00,020 - 00:51:01,740] most important for our purposes right now.
+- [00:51:01,940 - 00:51:02,120] Oh,
+- [00:51:02,120 - 00:51:03,280] before I say that.
+- [00:51:03,880 - 00:51:05,880] What is the value of this Lagrangian?
+- [00:51:06,020 - 00:51:08,960] The value of this Lagrangian is that it encapsulates
+- [00:51:08,960 - 00:51:10,960] the motion of a free particle
+- [00:51:10,960 - 00:51:12,960] in a way that is independent
+- [00:51:12,960 - 00:51:16,080] or that is the same for every reference frame.
+- [00:51:16,360 - 00:51:19,020] It is guaranteed because this quantity of
+- [00:51:19,020 - 00:51:21,680] the action is independent of reference frame,
+- [00:51:21,900 - 00:51:23,500] making it stationary,
+- [00:51:23,500 - 00:51:25,980] you'll get the same answer in every frame.
+- [00:51:26,320 - 00:51:29,400] So this is the translation of that to Lagrangian language.
+- [00:51:30,020 - 00:51:30,640] Okay.
+- [00:51:31,920 - 00:51:37,140] First let's ask what this is approximately like.
+- [00:51:37,740 - 00:51:38,860] Not approximately.
+- [00:51:38,860 - 00:51:40,900] But what it's like in the limit
+- [00:51:40,900 - 00:51:42,940] where the velocities are much smaller than one.
+- [00:51:43,800 - 00:51:45,400] One being the speed of light.
+- [00:51:45,680 - 00:51:48,680] So this is one minus m
+- [00:51:48,680 - 00:51:51,680] square root of one minus v squared.
+- [00:51:53,240 - 00:51:54,020] Velocity squared.
+- [00:51:54,400 - 00:51:57,200] To that we go back to the good old
+- [00:52:02,760 - 00:52:03,800] binomial theorem.
+- [00:52:04,060 - 00:52:05,980] The binomial theorem tells us that the
+- [00:52:05,980 - 00:52:07,900] square root of one minus v squared
+- [00:52:07,900 - 00:52:12,790] is approximately equal to minus m
+- [00:52:12,790 - 00:52:17,680] times one plus v squared over two.
+- [00:52:21,160 - 00:52:22,480] So first of all,
+- [00:52:22,480 - 00:52:25,020] there is a contribution which is just minus m.
+- [00:52:25,200 - 00:52:26,440] It doesn't depend on anything.
+- [00:52:26,640 - 00:52:27,720] It doesn't depend on position.
+- [00:52:27,900 - 00:52:29,000] It doesn't depend on velocity.
+- [00:52:29,400 - 00:52:30,400] It's just a number.
+- [00:52:30,840 - 00:52:34,320] What does adding a number to the Lagrangian do?
+- [00:52:34,500 - 00:52:35,200] It does nothing.
+- [00:52:35,200 - 00:52:38,600] Adding a number to a Lagrangian does nothing.
+- [00:52:38,980 - 00:52:40,200] Because the trajectory,
+- [00:52:40,200 - 00:52:41,960] the action of the trajectory,
+- [00:52:42,680 - 00:52:43,260] you know,
+- [00:52:43,260 - 00:52:44,940] comparing different trajectories,
+- [00:52:45,120 - 00:52:48,080] the constant piece here doesn't depend on the trajectory,
+- [00:52:48,200 - 00:52:49,040] it doesn't depend on the x,
+- [00:52:49,040 - 00:52:50,080] it doesn't depend on the velocity.
+- [00:52:50,320 - 00:52:51,400] It plays no role at all.
+- [00:52:51,720 - 00:52:53,260] So it's not important to us.
+- [00:52:54,020 - 00:52:55,220] The important piece,
+- [00:52:55,220 - 00:52:56,100] oh,
+- [00:52:56,100 - 00:52:56,740] do I have something?
+- [00:52:56,820 - 00:52:57,320] I'm sorry.
+- [00:52:59,340 - 00:52:59,780] Minus,
+- [00:52:59,780 - 00:52:59,920] right?
+- [00:53:00,040 - 00:53:01,340] One minus v squared over two.
+- [00:53:03,740 - 00:53:04,320] All right.
+- [00:53:04,320 - 00:53:06,120] So apart from the constant piece,
+- [00:53:06,120 - 00:53:08,880] the piece with the juice in it,
+- [00:53:08,940 - 00:53:10,480] the piece with juice in it
+- [00:53:10,480 - 00:53:12,020] is plus mv squared over two.
+- [00:53:13,980 - 00:53:19,000] Minus m plus mv squared over two.
+- [00:53:19,680 - 00:53:20,800] In other words,
+- [00:53:20,800 - 00:53:22,620] it's just the Lagrangian of Lagrange.
+- [00:53:24,760 - 00:53:25,740] In this way,
+- [00:53:25,740 - 00:53:28,640] we can be certain that the laws
+- [00:53:28,640 - 00:53:31,540] of motion that we derive in this way
+- [00:53:32,440 - 00:53:32,920] will,
+- [00:53:32,920 - 00:53:34,680] in the limit of small velocity,
+- [00:53:34,680 - 00:53:37,960] be the same as good old Laplace,
+- [00:53:37,960 - 00:53:38,700] Lagrangian,
+- [00:53:38,700 - 00:53:38,960] Newton,
+- [00:53:38,960 - 00:53:39,660] and so forth.
+- [00:53:40,900 - 00:53:41,680] So far,
+- [00:53:41,680 - 00:53:43,670] we haven't put in anything that resembles
+- [00:53:43,670 - 00:53:45,660] a potential energy or a force law.
+- [00:53:46,100 - 00:53:46,760] So far,
+- [00:53:46,760 - 00:53:48,340] we're simply working with a free particle.
+- [00:53:48,760 - 00:53:49,160] Okay.
+- [00:53:49,720 - 00:53:50,820] So that's a good thing.
+- [00:53:53,660 - 00:53:54,140] Now,
+- [00:53:54,140 - 00:53:55,100] next concept.
+- [00:53:55,260 - 00:53:57,040] I'm not going to work out the equations of motion.
+- [00:53:57,380 - 00:53:58,040] I will tell you,
+- [00:53:58,040 - 00:53:58,420] right now,
+- [00:53:58,420 - 00:53:59,380] the equations of motion
+- [00:53:59,380 - 00:54:00,680] have the brilliant,
+- [00:54:01,540 - 00:54:03,850] the ability to simply make this particle
+- [00:54:03,850 - 00:54:06,160] move on a straight line with constant velocity.
+- [00:54:06,840 - 00:54:07,820] We'll see that.
+- [00:54:08,060 - 00:54:10,400] But the equations of motion are not
+- [00:54:10,400 - 00:54:12,740] the interesting things for this evening's lecture.
+- [00:54:13,240 - 00:54:15,400] The interesting thing is to identify
+- [00:54:15,400 - 00:54:17,560] the notions of momentum and energy.
+- [00:54:17,780 - 00:54:18,880] That's where we want to go.
+- [00:54:18,960 - 00:54:22,090] We want to understand where the relativistic
+- [00:54:22,090 - 00:54:25,220] formulas for momentum and energy come from.
+- [00:54:26,460 - 00:54:29,760] They're not quite the same as the non-relativistic formulas.
+- [00:54:29,760 - 00:54:31,520] So let's go through them.
+- [00:54:37,280 - 00:54:38,220] Momentum and energy
+- [00:54:40,760 - 00:54:43,280] are important because they're conserved.
+- [00:54:47,940 - 00:54:50,560] If we account for all the particles in the universe,
+- [00:54:51,460 - 00:54:53,980] or at least all the particles in a closed system,
+- [00:54:54,240 - 00:54:56,980] they may be interacting with forces and this and that,
+- [00:54:57,160 - 00:54:59,520] but the net momentum is conserved,
+- [00:54:59,520 - 00:55:01,060] what was that a consequence of?
+- [00:55:01,140 - 00:55:02,600] Do you remember what that's a consequence of?
+- [00:55:05,340 - 00:55:06,600] Translation invariance.
+- [00:55:06,780 - 00:55:08,540] So translation invariance,
+- [00:55:08,540 - 00:55:10,260] and translation invariance is true here.
+- [00:55:12,080 - 00:55:16,120] We're actually in a special case of Lagrangian mechanics.
+- [00:55:17,319 - 00:55:19,320] Everything we said about Lagrangian mechanics,
+- [00:55:19,720 - 00:55:20,500] Lagrangians,
+- [00:55:20,500 - 00:55:21,500] Hamiltonians,
+- [00:55:21,500 - 00:55:22,840] conservation laws,
+- [00:55:23,080 - 00:55:24,780] it all applies here.
+- [00:55:24,940 - 00:55:27,340] It's just that the Lagrangian is a little bit strange.
+- [00:55:27,340 - 00:55:29,480] It has a square root
+- [00:55:29,480 - 00:55:31,620] of 1-x.square plus y.square plus z.square.
+- [00:55:31,660 - 00:55:32,400] But other than that,
+- [00:55:32,400 - 00:55:35,180] the rules of the game are the rules of Lagrangian,
+- [00:55:35,180 - 00:55:35,500] Hamiltonian,
+- [00:55:35,920 - 00:55:37,840] whatever we derived previously,
+- [00:55:37,840 - 00:55:39,480] and we can use it.
+- [00:55:40,440 - 00:55:41,080] All right,
+- [00:55:41,080 - 00:55:42,740] so the first question then is
+- [00:55:42,740 - 00:55:44,400] what is the meaning of momentum?
+- [00:55:44,560 - 00:55:46,120] It will be conserved.
+- [00:55:46,500 - 00:55:48,560] It will be conserved because
+- [00:55:48,560 - 00:55:50,620] this Lagrangian is translation invariant.
+- [00:55:50,640 - 00:55:52,460] It only depends on the velocities.
+- [00:55:52,520 - 00:55:53,800] It does not depend on position.
+- [00:55:54,360 - 00:55:55,439] It's translation invariant.
+- [00:55:55,960 - 00:55:57,320] The momentum will be conserved.
+- [00:55:57,320 - 00:55:58,690] There's a consequence of everything
+- [00:55:58,690 - 00:56:00,060] we learned the first quarter.
+- [00:56:00,940 - 00:56:01,540] Okay,
+- [00:56:01,540 - 00:56:03,860] so I would like to identify,
+- [00:56:03,860 - 00:56:04,860] for example,
+- [00:56:04,860 - 00:56:06,860] p sub x,
+- [00:56:07,120 - 00:56:08,580] the x component of momentum.
+- [00:56:09,620 - 00:56:10,760] So we go back.
+- [00:56:10,820 - 00:56:13,000] We open up our book on classical mechanics,
+- [00:56:13,120 - 00:56:16,160] and we go back to the definition of momentum,
+- [00:56:16,460 - 00:56:18,840] not the definition which began by
+- [00:56:18,840 - 00:56:21,220] saying momentum is equal to mv,
+- [00:56:22,620 - 00:56:24,690] but the definition which came
+- [00:56:24,690 - 00:56:26,760] from the Lagrangian point of view,
+- [00:56:26,760 - 00:56:27,600] and that was,
+- [00:56:27,600 - 00:56:29,740] anybody remember the definition of momentum?
+- [00:56:32,980 - 00:56:34,420] In terms of the Lagrangian?
+- [00:56:35,540 - 00:56:36,940] Everybody have it at their fingertips?
+- [00:56:37,540 - 00:56:38,860] It was partially L,
+- [00:56:38,860 - 00:56:39,680] partially Q dot.
+- [00:56:40,020 - 00:56:40,160] Yeah.
+- [00:56:41,020 - 00:56:42,850] The derivative of the Lagrangian with
+- [00:56:42,850 - 00:56:44,680] respect to the component of velocity.
+- [00:56:46,140 - 00:56:51,120] Derivative of Lagrangian with respect to x dot.
+- [00:56:53,580 - 00:56:54,140] Hmm?
+- [00:56:56,760 - 00:56:58,320] I won't bother redoing classical mechanics
+- [00:56:58,320 - 00:56:59,880] in front of your eyes here.
+- [00:57:00,000 - 00:57:01,360] It's a little bit too late for that.
+- [00:57:01,920 - 00:57:02,900] At this point,
+- [00:57:02,900 - 00:57:05,310] the thing to do between now
+- [00:57:05,310 - 00:57:07,720] and next week is to review this.
+- [00:57:07,800 - 00:57:08,860] I should have told you last week.
+- [00:57:09,660 - 00:57:11,050] P sub x is partial of
+- [00:57:11,050 - 00:57:12,440] L with respect to x dot.
+- [00:57:12,600 - 00:57:13,920] Same thing for p sub y,
+- [00:57:13,920 - 00:57:14,520] p sub z,
+- [00:57:14,520 - 00:57:15,000] and so forth.
+- [00:57:15,440 - 00:57:16,440] So let's apply that.
+- [00:57:17,420 - 00:57:19,320] Lagrangian is minus m times the
+- [00:57:19,320 - 00:57:21,220] square root of this thing here.
+- [00:57:22,620 - 00:57:23,280] All right,
+- [00:57:23,280 - 00:57:24,400] so this is going to be,
+- [00:57:24,400 - 00:57:26,900] first of all is a minus m.
+- [00:57:29,560 - 00:57:32,080] Then there's a derivative of this
+- [00:57:32,080 - 00:57:34,600] square root with respect to x dot.
+- [00:57:35,460 - 00:57:36,080] All right,
+- [00:57:36,080 - 00:57:37,200] what do you get when you
+- [00:57:37,200 - 00:57:38,320] take the derivative of a square root?
+- [00:57:40,320 - 00:57:42,200] You get one over a square root.
+- [00:57:47,760 - 00:57:49,660] One over a square root
+- [00:57:49,660 - 00:57:51,560] of everything inside the square root,
+- [00:57:51,760 - 00:57:53,840] which happens to be one minus v squared.
+- [00:57:55,620 - 00:57:56,100] Yes,
+- [00:57:56,100 - 00:57:57,180] there's a half.
+- [00:57:57,940 - 00:57:58,540] Thank you.
+- [00:58:00,100 - 00:58:01,020] There's a half there.
+- [00:58:01,300 - 00:58:05,570] Now we have to take the derivative of the
+- [00:58:05,570 - 00:58:09,840] thing inside the square root with respect to x dot.
+- [00:58:10,800 - 00:58:11,460] All right,
+- [00:58:11,460 - 00:58:13,180] that's going to give us a minus from here.
+- [00:58:14,460 - 00:58:15,940] So there's another minus sign,
+- [00:58:15,940 - 00:58:17,380] plus,
+- [00:58:18,420 - 00:58:20,050] and then the derivative of this
+- [00:58:20,050 - 00:58:21,680] thing with respect to x dot,
+- [00:58:21,760 - 00:58:23,560] which is twice x dot.
+- [00:58:24,160 - 00:58:29,080] So that will eat up the two in the denominator,
+- [00:58:32,740 - 00:58:34,620] and it will put an x dot here.
+- [00:58:34,900 - 00:58:39,410] Or mv sub x divided by the square
+- [00:58:39,410 - 00:58:43,920] root of one minus the total velocity squared.
+- [00:58:45,700 - 00:58:46,240] Well,
+- [00:58:46,240 - 00:58:47,200] we've seen this before,
+- [00:58:47,200 - 00:58:47,880] have we not?
+- [00:58:53,560 - 00:58:54,160] Right here.
+- [00:58:55,500 - 00:58:56,500] v sub i,
+- [00:58:56,500 - 00:58:57,880] in this case v sub x,
+- [00:58:58,480 - 00:59:00,720] divided by the square root of one minus v squared,
+- [00:59:00,900 - 00:59:02,820] is just u sub x.
+- [00:59:03,600 - 00:59:04,700] So what do we get?
+- [00:59:04,720 - 00:59:06,160] We get p sub x.
+- [00:59:07,060 - 00:59:07,700] Here it is,
+- [00:59:07,700 - 00:59:08,500] p sub x.
+- [00:59:09,200 - 00:59:11,800] It's nothing but the mass,
+- [00:59:12,500 - 00:59:14,900] not times the ordinary velocity,
+- [00:59:16,840 - 00:59:18,860] but by the ordinary velocity divided by
+- [00:59:18,860 - 00:59:20,880] the square root of one minus v squared,
+- [00:59:21,060 - 00:59:22,440] which is u sub x.
+- [00:59:26,080 - 00:59:29,160] The relativistic four velocity times the mass
+- [00:59:29,160 - 00:59:32,960] is equal to the x component of momentum.
+- [00:59:34,520 - 00:59:35,160] Likewise,
+- [00:59:35,160 - 00:59:36,660] for the y component,
+- [00:59:36,660 - 00:59:38,020] and so forth and so on,
+- [00:59:38,780 - 00:59:39,860] the y component,
+- [00:59:39,860 - 00:59:40,480] p sub y,
+- [00:59:41,580 - 00:59:44,700] is equal to m u sub y,
+- [00:59:48,580 - 00:59:50,140] and likewise for z.
+- [00:59:50,780 - 00:59:52,100] m is less mass.
+- [00:59:52,360 - 00:59:53,260] m will...
+- [00:59:53,560 - 00:59:54,260] m is the rest mass.
+- [00:59:54,760 - 00:59:55,760] m is mass.
+- [00:59:56,200 - 00:59:56,660] Okay,
+- [00:59:56,660 - 00:59:59,180] let's talk about a convention.
+- [01:00:00,500 - 01:00:02,060] The use of the term mass,
+- [01:00:02,060 - 01:00:02,760] rest mass,
+- [01:00:02,760 - 01:00:03,600] and all that stuff.
+- [01:00:05,620 - 01:00:08,060] There's an old convention and a new convention.
+- [01:00:08,240 - 01:00:10,120] The new convention is older than I am.
+- [01:00:17,520 - 01:00:18,760] More or less.
+- [01:00:21,500 - 01:00:23,540] Nobody that I know who does physics,
+- [01:00:23,540 - 01:00:26,000] uses the term rest mass anymore.
+- [01:00:26,380 - 01:00:29,040] Rest mass is an anachronism.
+- [01:00:29,080 - 01:00:29,700] That's the word,
+- [01:00:29,700 - 01:00:30,380] anachronism.
+- [01:00:30,500 - 01:00:31,140] In other words,
+- [01:00:31,140 - 01:00:31,600] right.
+- [01:00:32,080 - 01:00:33,340] It's an anachronism.
+- [01:00:33,540 - 01:00:35,520] The only place where it's ever used
+- [01:00:35,520 - 01:00:38,280] is in undergraduate textbooks.
+- [01:00:39,940 - 01:00:41,740] Undergraduate textbooks cannot seem to
+- [01:00:41,740 - 01:00:43,540] get their head around the idea
+- [01:00:43,540 - 01:00:46,840] that the mass of a particle
+- [01:00:47,520 - 01:00:49,720] is a tag that goes with a particle
+- [01:00:49,720 - 01:00:51,900] which characterizes the particle
+- [01:00:51,900 - 01:00:53,520] and not the motion of the particle.
+- [01:00:53,520 - 01:00:56,300] The mass of an electron,
+- [01:00:56,620 - 01:00:58,200] if you look up mass of an electron,
+- [01:00:58,580 - 01:01:00,780] you won't get something that's different
+- [01:01:00,780 - 01:01:02,740] if the electron is moving or stationary.
+- [01:01:02,960 - 01:01:05,820] You will simply get whatever it happens to be.
+- [01:01:05,940 - 01:01:08,020] I don't remember the mass of the electron in kilograms,
+- [01:01:08,280 - 01:01:09,580] but it's some small number.
+- [01:01:11,580 - 01:01:14,920] So the way that mass is used in modern language
+- [01:01:14,920 - 01:01:19,000] is it's a number that goes with the particle,
+- [01:01:19,080 - 01:01:20,910] but it is exactly what used
+- [01:01:20,910 - 01:01:22,740] to be called the rest mass.
+- [01:01:23,760 - 01:01:25,740] What used to be called the rest mass
+- [01:01:25,740 - 01:01:28,300] is now just called mass.
+- [01:01:29,200 - 01:01:32,960] What used to be called mass is what?
+- [01:01:34,600 - 01:01:35,280] Energy.
+- [01:01:36,020 - 01:01:39,180] Energy divided by the speed of light squared or something.
+- [01:01:39,540 - 01:01:43,880] We use the term energy for the thing,
+- [01:01:43,980 - 01:01:48,100] which characterizes the moving object,
+- [01:01:48,740 - 01:01:52,520] and the energy at rest we just call the mass.
+- [01:01:52,740 - 01:01:53,320] Now,
+- [01:01:53,320 - 01:01:54,660] there's the speed of light factor,
+- [01:01:54,720 - 01:01:55,840] that's just a conversion factor,
+- [01:01:56,060 - 01:01:56,760] and we'll come to it.
+- [01:01:57,220 - 01:01:57,800] All right,
+- [01:01:57,800 - 01:02:00,980] so when we talk about the mass of a particle,
+- [01:02:01,100 - 01:02:04,980] we mean what used to be called the rest mass.
+- [01:02:05,120 - 01:02:05,760] From now on,
+- [01:02:05,760 - 01:02:07,340] I will never use the term rest mass.
+- [01:02:07,540 - 01:02:10,420] I will always use the term mass meaning
+- [01:02:11,500 - 01:02:12,900] the energy at rest.
+- [01:02:14,660 - 01:02:15,140] Okay.
+- [01:02:15,140 - 01:02:15,620] Good.
+- [01:02:18,040 - 01:02:19,960] That was an important distinction.
+- [01:02:20,180 - 01:02:22,720] I normally don't even think in that way.
+- [01:02:22,740 - 01:02:23,700] I'm not in the language of rest mass,
+- [01:02:23,980 - 01:02:25,460] so I didn't mention it,
+- [01:02:25,560 - 01:02:31,620] but it was good that Warren brought it up
+- [01:02:33,380 - 01:02:34,860] so that we don't get confused.
+- [01:02:36,380 - 01:02:36,940] Okay.
+- [01:02:38,560 - 01:02:39,120] Now,
+- [01:02:39,120 - 01:02:41,660] let's talk for a moment about four vectors.
+- [01:02:42,140 - 01:02:44,460] Four vectors are the things
+- [01:02:44,460 - 01:02:46,780] like delta x and delta t.
+- [01:02:52,740 - 01:02:53,760] Supposing I have a four vector.
+- [01:02:54,020 - 01:02:54,820] In this case,
+- [01:02:54,820 - 01:02:56,900] it would simply represent a little interval.
+- [01:02:59,080 - 01:03:00,860] That's the four vector of displacement,
+- [01:03:01,240 - 01:03:02,100] I guess you would call it.
+- [01:03:02,100 - 01:03:03,580] Four vector of displacement that has
+- [01:03:03,580 - 01:03:05,060] a delta t and a delta x.
+- [01:03:05,860 - 01:03:06,340] Now,
+- [01:03:06,340 - 01:03:08,740] supposing I told you that delta x,
+- [01:03:09,000 - 01:03:10,360] as opposed to delta t,
+- [01:03:10,400 - 01:03:12,100] that delta x was equal to zero,
+- [01:03:13,280 - 01:03:16,260] could that be an invariant characterization
+- [01:03:17,080 - 01:03:18,280] of this interval?
+- [01:03:20,980 - 01:03:24,300] What happens to delta x when you Lorentz transform?
+- [01:03:26,240 - 01:03:27,140] It changes,
+- [01:03:27,140 - 01:03:27,360] right?
+- [01:03:28,740 - 01:03:29,780] In particular,
+- [01:03:29,780 - 01:03:31,600] it will pick up a little bit of delta t.
+- [01:03:33,880 - 01:03:39,440] So it cannot be an invariant description of this vector.
+- [01:03:40,480 - 01:03:42,170] A vector with delta x equals
+- [01:03:42,170 - 01:03:43,860] zero would be a vertical vector.
+- [01:03:45,400 - 01:03:46,830] But in some other frame
+- [01:03:46,830 - 01:03:48,260] of reference that we're moving to,
+- [01:03:48,280 - 01:03:50,840] if you were moving past the stationary axis,
+- [01:03:51,180 - 01:03:53,760] the same vector would be tilted.
+- [01:03:54,580 - 01:03:55,740] In other words,
+- [01:03:55,740 - 01:03:57,040] if you were moving past it,
+- [01:03:57,260 - 01:03:59,130] the beginning and the end point
+- [01:03:59,130 - 01:04:01,000] would be separated by some delta x.
+- [01:04:01,400 - 01:04:04,140] So the statement that delta x is equal to zero,
+- [01:04:04,240 - 01:04:05,930] that might have some significance
+- [01:04:05,930 - 01:04:07,620] to a particular frame of reference,
+- [01:04:07,980 - 01:04:11,140] but it can't possibly be an invariant distinction.
+- [01:04:12,040 - 01:04:16,300] What about the statement that delta x and delta t
+- [01:04:16,300 - 01:04:17,540] are both equal to zero,
+- [01:04:17,540 - 01:04:18,980] or all four of them,
+- [01:04:19,540 - 01:04:22,540] not just delta x and delta t,
+- [01:04:22,540 - 01:04:23,920] but delta y and delta z?
+- [01:04:25,000 - 01:04:27,520] Is that an invariant statement?
+- [01:04:29,020 - 01:04:31,820] All components of this vector are equal to zero,
+- [01:04:32,020 - 01:04:34,560] of this four-dimensional vector are equal to zero.
+- [01:04:35,040 - 01:04:35,480] Well,
+- [01:04:35,480 - 01:04:37,280] if you think about the way things transform,
+- [01:04:38,540 - 01:04:39,420] a delta x,
+- [01:04:39,420 - 01:04:40,280] when it transforms,
+- [01:04:40,280 - 01:04:41,880] will pick up a little bit of delta t.
+- [01:04:42,480 - 01:04:43,850] Delta t will pick up
+- [01:04:43,850 - 01:04:45,220] a little bit of delta x.
+- [01:04:45,420 - 01:04:46,280] But if delta x is equal to zero,
+- [01:04:46,300 - 01:04:47,520] and delta t and delta x
+- [01:04:47,520 - 01:04:48,740] is zero in one reference frame,
+- [01:04:49,000 - 01:04:51,940] then it will be zero in every reference frame.
+- [01:04:52,580 - 01:04:56,020] So saying that a vector,
+- [01:04:56,020 - 01:04:57,600] a four vector in particular,
+- [01:04:58,300 - 01:04:59,060] is zero,
+- [01:04:59,060 - 01:05:00,660] the whole thing,
+- [01:05:00,660 - 01:05:02,500] all components of it,
+- [01:05:02,560 - 01:05:04,200] that's an invariant statement.
+- [01:05:05,360 - 01:05:07,460] To say some specific component,
+- [01:05:07,720 - 01:05:10,180] or even a specific subset of components,
+- [01:05:10,360 - 01:05:11,360] less than all of them,
+- [01:05:11,360 - 01:05:12,720] is equal to zero,
+- [01:05:12,880 - 01:05:15,200] that is not an invariant statement.
+- [01:05:18,340 - 01:05:21,300] The same is true of the four velocity.
+- [01:05:22,600 - 01:05:23,800] The four velocity,
+- [01:05:23,800 - 01:05:25,080] here are its components.
+- [01:05:28,000 - 01:05:30,480] Is it an invariant statement to say
+- [01:05:30,480 - 01:05:32,960] that u sub i is equal to zero?
+- [01:05:33,200 - 01:05:35,780] i meaning just the space components.
+- [01:05:37,420 - 01:05:37,900] No,
+- [01:05:37,900 - 01:05:38,960] it isn't,
+- [01:05:38,960 - 01:05:40,980] because if you,
+- [01:05:41,020 - 01:05:42,640] what it means to say that
+- [01:05:42,640 - 01:05:44,260] u sub i is equal to zero
+- [01:05:44,260 - 01:05:45,940] is just that you're in a frame of reference,
+- [01:05:45,940 - 01:05:47,620] where the particle happens to be stationary.
+- [01:05:49,180 - 01:05:50,680] Change frame of reference,
+- [01:05:50,680 - 01:05:52,680] u sub i will not be zero.
+- [01:05:53,800 - 01:05:54,380] Okay?
+- [01:05:56,380 - 01:05:58,000] So in general,
+- [01:05:58,000 - 01:06:00,880] if you want to express invariant statements,
+- [01:06:01,820 - 01:06:04,310] you want those statements to be
+- [01:06:04,310 - 01:06:06,800] about all components of a four vector.
+- [01:06:07,120 - 01:06:09,510] A four vector means a
+- [01:06:09,510 - 01:06:11,900] thing like delta x or u.
+- [01:06:12,140 - 01:06:13,870] You want it to be a statement
+- [01:06:13,870 - 01:06:15,600] which is true for all the components.
+- [01:06:15,600 - 01:06:18,120] You want it to be a full-fledged vector statement.
+- [01:06:18,420 - 01:06:20,360] Full-fledged four vector statement.
+- [01:06:20,880 - 01:06:21,600] Okay,
+- [01:06:21,600 - 01:06:24,880] let's come to the concept of momentum conservation.
+- [01:06:26,420 - 01:06:27,560] Momentum conservation.
+- [01:06:33,260 - 01:06:37,360] We so far identified three components of momentum.
+- [01:06:40,180 - 01:06:41,640] Only three components.
+- [01:06:41,860 - 01:06:43,960] Those three components of momentum
+- [01:06:43,960 - 01:06:45,740] happen to be proportional
+- [01:06:47,980 - 01:06:51,220] to the components of four velocity.
+- [01:06:52,520 - 01:06:54,470] They happen to become proportional
+- [01:06:54,470 - 01:06:56,420] to the components of four velocity.
+- [01:06:56,700 - 01:06:58,440] But that's incidental for a moment.
+- [01:06:58,640 - 01:07:01,340] The important thing is that momentum is conserved.
+- [01:07:01,660 - 01:07:03,170] If I have a collection of
+- [01:07:03,170 - 01:07:04,680] particles and we add them all up,
+- [01:07:04,840 - 01:07:07,780] the initial momentum must be equal to the final momentum.
+- [01:07:08,520 - 01:07:09,980] Now that's a vector statement.
+- [01:07:10,800 - 01:07:13,020] That's a vector statement that,
+- [01:07:13,960 - 01:07:16,500] the three components of momentum,
+- [01:07:16,660 - 01:07:17,880] and let's label them this way,
+- [01:07:21,860 - 01:07:23,440] initial must equal,
+- [01:07:26,900 - 01:07:29,240] the total initial momentum must
+- [01:07:29,240 - 01:07:31,580] equal the total final momentum.
+- [01:07:31,860 - 01:07:35,640] Or we can subtract and just write,
+- [01:07:35,780 - 01:07:38,310] the law of momentum conservation says
+- [01:07:38,310 - 01:07:40,840] that this is equal to zero.
+- [01:07:41,680 - 01:07:43,940] Initial momentum minus final momentum.
+- [01:07:43,940 - 01:07:44,860] This is equal to zero.
+- [01:07:45,600 - 01:07:49,460] This in itself is a vector equation.
+- [01:07:52,480 - 01:07:54,760] Is it an invariant vector equation?
+- [01:07:55,040 - 01:07:56,240] If it's true in one frame,
+- [01:07:56,240 - 01:07:58,040] is it necessarily true in another frame?
+- [01:07:58,860 - 01:08:01,790] Not unless we can make an
+- [01:08:01,790 - 01:08:04,720] equivalent assertion about some fourth component.
+- [01:08:06,260 - 01:08:09,030] If there is a fourth component that
+- [01:08:09,030 - 01:08:11,800] turns the momentum into a four vector,
+- [01:08:11,800 - 01:08:16,120] and then we say all four components are conserved,
+- [01:08:17,200 - 01:08:19,279] then it becomes an invariant statement.
+- [01:08:21,120 - 01:08:22,700] Then it becomes an invariant.
+- [01:08:22,700 - 01:08:24,680] It's only an invariant statement if
+- [01:08:24,680 - 01:08:26,660] we can identify a fourth component
+- [01:08:26,660 - 01:08:30,000] and say that the fourth component is also conserved.
+- [01:08:30,899 - 01:08:33,499] A fourth component such that the
+- [01:08:33,499 - 01:08:36,100] three components together with the fourth component
+- [01:08:36,100 - 01:08:37,340] add up to a four vector.
+- [01:08:37,560 - 01:08:38,120] Well,
+- [01:08:38,120 - 01:08:39,819] it's pretty darn clear what the fourth
+- [01:08:39,819 - 01:08:41,520] component of this thing has to be.
+- [01:08:41,520 - 01:08:44,140] What must the fourth component be?
+- [01:08:44,700 - 01:08:48,939] It must be m times u zero.
+- [01:08:50,040 - 01:08:52,580] We have three components.
+- [01:08:52,700 - 01:08:54,279] If we didn't have the m there,
+- [01:08:54,460 - 01:08:56,979] we would have three components of the four velocity,
+- [01:08:57,240 - 01:09:00,109] and the fourth component of the fourth velocity would just
+- [01:09:00,109 - 01:09:02,979] be the thing which fills out the full four vector.
+- [01:09:05,519 - 01:09:06,080] So,
+- [01:09:06,080 - 01:09:06,640] question.
+- [01:09:08,100 - 01:09:10,180] Is there a significance?
+- [01:09:12,200 - 01:09:13,660] To m u sub naught,
+- [01:09:13,660 - 01:09:14,899] whatever it is,
+- [01:09:15,000 - 01:09:15,899] we can give it a name.
+- [01:09:15,979 - 01:09:17,160] We can call it p sub naught.
+- [01:09:19,160 - 01:09:20,399] We can give it a name.
+- [01:09:20,520 - 01:09:22,359] Is there a significance to it,
+- [01:09:22,399 - 01:09:24,949] and is it something that we already
+- [01:09:24,949 - 01:09:27,500] recognize as something which ought to be conserved?
+- [01:09:27,979 - 01:09:29,640] And of course the answer is yes.
+- [01:09:30,100 - 01:09:31,600] There is a fourth thing
+- [01:09:31,600 - 01:09:33,100] which is conserved for particle mechanics.
+- [01:09:33,300 - 01:09:33,760] It's energy.
+- [01:09:34,560 - 01:09:36,479] So it's natural to ask the question,
+- [01:09:36,700 - 01:09:38,359] is this the energy?
+- [01:09:39,899 - 01:09:41,439] Is this fourth component,
+- [01:09:41,520 - 01:09:42,240] the fourth momentum,
+- [01:09:42,439 - 01:09:44,700] nothing but the energy of the particle?
+- [01:09:45,260 - 01:09:45,779] Well,
+- [01:09:45,779 - 01:09:46,640] how do we decide that?
+- [01:09:46,800 - 01:09:48,399] How do we decide what the energy is?
+- [01:09:49,460 - 01:09:51,020] Anybody got a clue about how
+- [01:09:51,020 - 01:09:52,580] to decide what the energy is?
+- [01:09:53,399 - 01:09:53,920] Ah,
+- [01:09:53,920 - 01:09:55,320] look at the Hamiltonian.
+- [01:09:55,440 - 01:09:55,860] Right.
+- [01:09:56,320 - 01:09:57,600] And that's the only way.
+- [01:09:58,040 - 01:10:01,440] That's the only systematic procedure.
+- [01:10:02,240 - 01:10:03,660] Look at the Hamiltonian.
+- [01:10:03,700 - 01:10:03,960] So,
+- [01:10:03,960 - 01:10:06,520] the next step is to figure out the Hamiltonian.
+- [01:10:06,840 - 01:10:08,900] We're going to erase some of the blackboard here
+- [01:10:09,540 - 01:10:11,220] and go to the Hamiltonian.
+- [01:10:22,740 - 01:10:23,860] In a sense,
+- [01:10:25,580 - 01:10:27,320] from the point of view of relativity,
+- [01:10:27,940 - 01:10:30,440] all the work that we did in the same quarter
+- [01:10:30,440 - 01:10:32,140] was just to set ourselves
+- [01:10:32,140 - 01:10:33,840] up for this kind of problem.
+- [01:10:36,359 - 01:10:38,320] So let's go to the Hamiltonian.
+- [01:10:38,520 - 01:10:40,940] I know that not all of us remember
+- [01:10:40,940 - 01:10:42,880] what the Hamiltonian is,
+- [01:10:43,580 - 01:10:44,960] so I will remind you.
+- [01:10:47,380 - 01:10:49,640] The Hamiltonian is given in terms of the Lagrangian.
+- [01:10:49,640 - 01:10:49,820] Again,
+- [01:10:49,820 - 01:10:51,660] I don't expect you to remember it,
+- [01:10:51,680 - 01:10:52,380] but I do expect you to
+- [01:10:52,380 - 01:10:53,080] be able to look it up
+- [01:10:53,080 - 01:10:56,400] and remind yourself where it came from,
+- [01:10:56,500 - 01:10:58,680] why this was an important quantity.
+- [01:10:59,060 - 01:11:00,200] It's a conserved quantity.
+- [01:11:00,320 - 01:11:01,280] It's an important quantity.
+- [01:11:03,620 - 01:11:05,000] I will write it down for you.
+- [01:11:05,320 - 01:11:07,360] It's the sum of all the coordinates,
+- [01:11:08,300 - 01:11:10,340] sum of all the coordinates of a system,
+- [01:11:10,340 - 01:11:14,960] of the velocity associated with that coordinate.
+- [01:11:15,720 - 01:11:17,680] I sometimes put the indices upstairs
+- [01:11:17,680 - 01:11:19,240] and sometimes I put them downstairs.
+- [01:11:19,480 - 01:11:20,460] Pay no attention to where
+- [01:11:20,460 - 01:11:21,440] I put them at the moment.
+- [01:11:22,679 - 01:11:24,380] And what does it multiply?
+- [01:11:26,240 - 01:11:26,800] Remember?
+- [01:11:29,020 - 01:11:32,280] The momentum associated with that same direction.
+- [01:11:34,840 - 01:11:36,900] I'll put that one upstairs just for variety.
+- [01:11:39,460 - 01:11:40,200] And then,
+- [01:11:40,200 - 01:11:40,860] but that's not finished.
+- [01:11:40,980 - 01:11:41,500] What else is there?
+- [01:11:43,540 - 01:11:43,980] Minus?
+- [01:11:44,620 - 01:11:45,700] Minus the Lagrangian.
+- [01:11:49,780 - 01:11:50,920] That's the Hamiltonian.
+- [01:11:53,760 - 01:11:54,540] As I said,
+- [01:11:54,540 - 01:11:55,960] if you want a systematic way
+- [01:11:55,960 - 01:11:57,100] to think about mechanics,
+- [01:11:57,180 - 01:11:58,150] so we don't just make
+- [01:11:58,150 - 01:11:59,120] up stuff as we go along,
+- [01:11:59,640 - 01:12:04,220] we fall back on the basic principles of mechanics
+- [01:12:04,220 - 01:12:05,220] all our Lagrange,
+- [01:12:05,220 - 01:12:05,560] Hamilton,
+- [01:12:05,560 - 01:12:06,400] and so forth.
+- [01:12:07,960 - 01:12:08,400] Okay,
+- [01:12:08,400 - 01:12:09,880] so now we can write it down.
+- [01:12:10,200 - 01:12:10,780] I don't know what it is.
+- [01:12:10,860 - 01:12:12,300] Let me write the Lagrangian over here.
+- [01:12:12,480 - 01:12:13,020] And the P is,
+- [01:12:13,020 - 01:12:13,860] what is P sub i?
+- [01:12:14,020 - 01:12:16,850] P sub i is equal
+- [01:12:16,850 - 01:12:19,680] to m x sub i dot
+- [01:12:20,139 - 01:12:22,400] divided by square root of 1 minus v squared.
+- [01:12:24,240 - 01:12:29,760] That is the same as m u sub i,
+- [01:12:29,880 - 01:12:31,580] but I'm not going to use it that way.
+- [01:12:31,620 - 01:12:32,250] I'm just going to use
+- [01:12:32,250 - 01:12:32,880] it the way it is here.
+- [01:12:33,600 - 01:12:34,660] P sub i is that.
+- [01:12:36,820 - 01:12:40,180] And the Lagrangian is minus m u sub i.
+- [01:12:40,180 - 01:12:43,060] So that's m square root of 1 minus v squared,
+- [01:12:43,320 - 01:12:45,460] where that means v x squared plus v y squared
+- [01:12:45,460 - 01:12:46,420] plus v c squared.
+- [01:12:47,020 - 01:12:47,940] That's the Lagrangian.
+- [01:12:48,000 - 01:12:49,920] We have everything we need now to calculate
+- [01:12:49,920 - 01:12:53,520] the Hamiltonian or what is essentially the energy.
+- [01:12:54,360 - 01:12:54,880] Okay,
+- [01:12:54,880 - 01:12:57,100] so we have then summation over i
+- [01:12:59,459 - 01:13:03,160] x sub i dot times P sub i,
+- [01:13:03,260 - 01:13:07,020] that's m x sub i dot squared
+- [01:13:08,120 - 01:13:10,780] over I think square root of 1 minus v squared.
+- [01:13:10,940 - 01:13:11,280] Is that right?
+- [01:13:12,820 - 01:13:14,140] That's the first term here.
+- [01:13:14,320 - 01:13:15,940] The x sub i dot squared picks
+- [01:13:15,940 - 01:13:17,560] up 1 x sub i dot from here,
+- [01:13:17,620 - 01:13:18,860] 1 x sub i dot from here.
+- [01:13:19,180 - 01:13:21,920] The mass is over here.
+- [01:13:22,740 - 01:13:24,700] And now minus the Lagrangian.
+- [01:13:24,800 - 01:13:27,540] So minus the Lagrangian is plus m
+- [01:13:29,820 - 01:13:32,020] square root of 1 minus v squared.
+- [01:13:34,220 - 01:13:35,540] Looks like a bit of a mess,
+- [01:13:35,540 - 01:13:36,220] but it is not.
+- [01:13:37,020 - 01:13:37,280] It's just simple.
+- [01:13:39,520 - 01:13:40,460] First of all,
+- [01:13:40,460 - 01:13:42,200] x sub i dot squared.
+- [01:13:42,560 - 01:13:44,240] That's just the total velocity squared.
+- [01:13:44,620 - 01:13:45,790] x dot squared plus y
+- [01:13:45,790 - 01:13:46,960] dot squared plus z dot squared.
+- [01:13:47,060 - 01:13:47,960] That's what I call v squared.
+- [01:13:48,460 - 01:13:49,860] So the first term here is
+- [01:13:49,860 - 01:13:51,260] just not even a sum anymore.
+- [01:13:51,960 - 01:13:55,110] It's just m v squared over
+- [01:13:55,110 - 01:13:58,260] square root of 1 minus v squared.
+- [01:13:59,640 - 01:14:02,210] Then we have to add plus m
+- [01:14:02,210 - 01:14:04,780] times the square root in the numerator.
+- [01:14:05,060 - 01:14:05,880] How are we going to add
+- [01:14:05,880 - 01:14:06,700] a thing with a square root
+- [01:14:07,020 - 01:14:08,200] in the denominator?
+- [01:14:10,099 - 01:14:10,660] Well,
+- [01:14:10,660 - 01:14:12,300] we'll put everything in the denominator.
+- [01:14:13,060 - 01:14:15,410] So we have to multiply and divide
+- [01:14:15,410 - 01:14:17,760] by square root of 1 minus v squared.
+- [01:14:17,900 - 01:14:21,080] That gives us in the numerator 1 minus v squared
+- [01:14:21,080 - 01:14:22,710] and then square root of 1
+- [01:14:22,710 - 01:14:24,340] minus v squared in the denominator.
+- [01:14:24,780 - 01:14:25,400] There we are.
+- [01:14:26,440 - 01:14:28,640] Now it doesn't look so fearsome anymore
+- [01:14:28,640 - 01:14:32,040] because we notice immediately that m v squared over here
+- [01:14:32,040 - 01:14:33,840] cancels m v squared over here.
+- [01:14:33,980 - 01:14:37,000] And the whole thing is m squared over here.
+- [01:14:45,839 - 01:14:49,420] And that's the Hamiltonian.
+- [01:14:49,680 - 01:14:50,880] So that's the Hamiltonian.
+- [01:14:50,880 - 01:14:55,160] So let's add to the momentum a fourth component here,
+- [01:14:56,879 - 01:14:57,599] which,
+- [01:14:57,599 - 01:14:58,320] sorry,
+- [01:14:58,320 - 01:15:00,400] p naught,
+- [01:15:00,400 - 01:15:02,260] which is m.
+- [01:15:04,800 - 01:15:06,980] And do you recognize what the momentum is?
+- [01:15:06,980 - 01:15:08,180] Do you know what this thing is?
+- [01:15:10,040 - 01:15:11,200] This is u naught.
+- [01:15:16,740 - 01:15:20,660] So indeed we find that apart from a possible,
+- [01:15:20,660 - 01:15:20,980] yeah?
+- [01:15:21,600 - 01:15:23,540] When you wrote down the Hamiltonian,
+- [01:15:23,560 - 01:15:25,660] that was the classical .
+- [01:15:25,660 - 01:15:26,880] No.
+- [01:15:26,880 - 01:15:28,580] No,
+- [01:15:28,580 - 01:15:29,320] no,
+- [01:15:29,320 - 01:15:29,640] no,
+- [01:15:29,640 - 01:15:29,840] no.
+- [01:15:31,700 - 01:15:35,020] This formula for the Hamiltonian is extremely general.
+- [01:15:35,020 - 01:15:37,060] All systems that we've ever studied,
+- [01:15:37,060 - 01:15:37,960] this is the formula.
+- [01:15:40,640 - 01:15:46,400] That was the general formula for any Lagrangian,
+- [01:15:46,500 - 01:15:47,720] any action principle.
+- [01:15:47,960 - 01:15:50,000] We derived this,
+- [01:15:50,000 - 01:15:52,260] the conservation of H,
+- [01:15:52,620 - 01:15:53,500] in very,
+- [01:15:53,500 - 01:15:54,620] very general grounds.
+- [01:15:55,620 - 01:16:00,260] Depending on what you put in for the Lagrangian,
+- [01:16:00,280 - 01:16:01,880] it might be non-relativistic physics,
+- [01:16:02,000 - 01:16:03,160] it could be any number of things.
+- [01:16:03,580 - 01:16:04,180] Good.
+- [01:16:05,620 - 01:16:06,300] All right,
+- [01:16:06,300 - 01:16:07,100] so now we're in business.
+- [01:16:08,100 - 01:16:11,000] The conservation of momentum becomes
+- [01:16:11,000 - 01:16:13,900] the conservation of four momentum.
+- [01:16:14,400 - 01:16:15,800] Conservation of x momentum,
+- [01:16:15,800 - 01:16:16,500] y momentum,
+- [01:16:16,500 - 01:16:16,980] z momentum,
+- [01:16:17,180 - 01:16:18,400] and the conservation of energy.
+- [01:16:21,120 - 01:16:22,380] Before we go on,
+- [01:16:22,380 - 01:16:25,940] we should figure out what this new concept of energy
+- [01:16:25,940 - 01:16:28,180] has to do with the old concept of energy.
+- [01:16:28,440 - 01:16:30,160] How different is it than
+- [01:16:30,160 - 01:16:31,880] the energy that we've already established?
+- [01:16:32,580 - 01:16:33,100] Okay.
+- [01:16:33,100 - 01:16:33,780] So let's...
+- [01:16:36,080 - 01:16:37,480] The one thing that we're going
+- [01:16:37,480 - 01:16:38,880] to have to be careful about
+- [01:16:38,880 - 01:16:40,560] is the factors of speed of light.
+- [01:16:43,100 - 01:16:44,660] They are conventions,
+- [01:16:44,660 - 01:16:45,440] largely.
+- [01:16:45,760 - 01:16:46,400] They're conventions.
+- [01:16:47,040 - 01:16:50,740] If the energy defined in one way is conserved,
+- [01:16:50,760 - 01:16:52,900] it won't make any difference to its conservation
+- [01:16:52,900 - 01:16:53,540] if we,
+- [01:16:53,540 - 01:16:55,800] in order to make it match with units,
+- [01:16:55,960 - 01:16:57,660] if we multiply it by
+- [01:16:57,660 - 01:16:59,360] the speed of light or something.
+- [01:16:59,780 - 01:17:01,020] Conservation is conservation.
+- [01:17:01,020 - 01:17:01,540] Conservation is conservation.
+- [01:17:01,720 - 01:17:03,620] And we will probably have to do that.
+- [01:17:04,220 - 01:17:04,720] Okay,
+- [01:17:04,720 - 01:17:07,740] let's look at mu naught.
+- [01:17:08,920 - 01:17:12,190] That is m over the square
+- [01:17:12,190 - 01:17:15,460] root of 1 minus v squared.
+- [01:17:17,340 - 01:17:19,380] That's what we're calling the energy of the particle.
+- [01:17:19,720 - 01:17:20,000] Now,
+- [01:17:20,000 - 01:17:20,280] of course,
+- [01:17:20,280 - 01:17:22,100] if we want to restore some...
+- [01:17:22,100 - 01:17:22,260] Well,
+- [01:17:22,260 - 01:17:23,360] before we restore...
+- [01:17:23,360 - 01:17:23,500] Yeah,
+- [01:17:23,500 - 01:17:24,740] before we restore units,
+- [01:17:25,500 - 01:17:26,640] let's use the...
+- [01:17:32,340 - 01:17:33,100] Binomial theorem.
+- [01:17:33,460 - 01:17:36,440] Let's use the binomial theorem to approximate this.
+- [01:17:36,600 - 01:17:37,160] Here it is.
+- [01:17:37,700 - 01:17:39,670] Here's the binomial theorem for 1 divided by
+- [01:17:39,670 - 01:17:41,640] the square root of 1 minus v squared.
+- [01:17:41,780 - 01:17:43,340] And it gives us 1 plus v squared over 2.
+- [01:17:44,540 - 01:17:45,060] All right,
+- [01:17:45,060 - 01:17:46,040] so this becomes...
+- [01:17:51,400 - 01:17:55,680] m plus mv squared over 2.
+- [01:17:58,680 - 01:17:59,080] This,
+- [01:17:59,080 - 01:17:59,540] of course,
+- [01:17:59,540 - 01:18:00,700] is completely recognizable.
+- [01:18:00,700 - 01:18:05,520] It is just the ordinary Newtonian kinetic energy.
+- [01:18:05,720 - 01:18:07,340] Had Newton known about energy,
+- [01:18:07,520 - 01:18:08,630] this would have been what he
+- [01:18:08,630 - 01:18:09,740] would have written down for kinetic energy.
+- [01:18:10,440 - 01:18:12,140] It is what kinetic wrote down.
+- [01:18:13,220 - 01:18:15,100] I have no idea who
+- [01:18:15,100 - 01:18:16,980] first thought of this as energy,
+- [01:18:17,160 - 01:18:18,720] but somebody did.
+- [01:18:19,220 - 01:18:21,000] What about this term over here?
+- [01:18:22,020 - 01:18:22,540] Well,
+- [01:18:22,540 - 01:18:23,180] first of all,
+- [01:18:23,180 - 01:18:25,560] this equation is not dimensionally consistent.
+- [01:18:27,679 - 01:18:29,040] Not dimensionally consistent.
+- [01:18:29,260 - 01:18:29,860] Here we have m,
+- [01:18:29,860 - 01:18:32,520] and here we have an m times the velocity squared.
+- [01:18:33,380 - 01:18:35,760] To make it dimensionally consistent,
+- [01:18:36,640 - 01:18:38,140] all we have to do...
+- [01:18:38,140 - 01:18:39,480] We can do it in a number of ways,
+- [01:18:40,420 - 01:18:41,140] all right,
+- [01:18:41,160 - 01:18:42,840] to make it dimensionally consistent,
+- [01:18:43,180 - 01:18:45,200] but to give it units of energy,
+- [01:18:45,520 - 01:18:46,880] we're thinking that it's the energy,
+- [01:18:47,000 - 01:18:48,240] to give it units of energy,
+- [01:18:48,360 - 01:18:50,060] this already has units of energy.
+- [01:18:50,440 - 01:18:52,960] It's just a good old kinetic energy.
+- [01:18:53,300 - 01:18:55,540] In order to give this term units of energy,
+- [01:18:55,640 - 01:18:57,330] we have to multiply it by
+- [01:18:57,330 - 01:18:59,020] some power of the speed of light.
+- [01:18:59,860 - 01:19:01,380] What power of the speed of light?
+- [01:19:01,640 - 01:19:02,080] Well,
+- [01:19:02,080 - 01:19:02,640] we already know.
+- [01:19:02,760 - 01:19:04,360] This thing is missing two powers
+- [01:19:04,360 - 01:19:05,960] of a velocity compared to this one.
+- [01:19:06,400 - 01:19:07,520] So what's it going to be?
+- [01:19:07,620 - 01:19:08,800] It's going to be mc squared.
+- [01:19:13,540 - 01:19:14,220] All right,
+- [01:19:14,220 - 01:19:14,740] I won't...
+- [01:19:14,740 - 01:19:18,460] I will just write that this is the energy.
+- [01:19:22,140 - 01:19:23,240] So here we see,
+- [01:19:23,240 - 01:19:26,100] coming out of the basic principles of mechanics,
+- [01:19:27,120 - 01:19:29,120] the conservation of a quantity
+- [01:19:29,919 - 01:19:32,279] which when it's evaluated for a
+- [01:19:32,279 - 01:19:34,640] system at rest is just mc squared.
+- [01:19:36,000 - 01:19:37,600] For a system at rest,
+- [01:19:37,780 - 01:19:41,320] its energy is related to its inertial mass,
+- [01:19:41,640 - 01:19:43,880] to its mass by mc squared.
+- [01:19:44,060 - 01:19:45,600] How do we know that this is the inertial mass?
+- [01:19:46,140 - 01:19:46,700] Well,
+- [01:19:46,700 - 01:19:49,460] it's the inertial mass because it enters into the energy
+- [01:19:49,460 - 01:19:51,070] the same old way that inertial
+- [01:19:51,070 - 01:19:52,680] mass entered into the old energy.
+- [01:19:52,940 - 01:19:54,520] It enters into momentum,
+- [01:19:55,460 - 01:19:57,480] at least for slow velocities,
+- [01:19:57,640 - 01:19:59,720] in the same way that the inertial mass
+- [01:19:59,860 - 01:20:00,520] entered in here.
+- [01:20:00,840 - 01:20:02,230] And so this must be
+- [01:20:02,230 - 01:20:03,620] the inertial mass times c squared.
+- [01:20:03,920 - 01:20:04,780] That is...
+- [01:20:04,780 - 01:20:06,680] That's the origin of...
+- [01:20:07,460 - 01:20:10,680] Einstein had another way to think about it.
+- [01:20:11,080 - 01:20:13,480] He asked himself in a
+- [01:20:13,480 - 01:20:15,880] collision of objects of various kinds,
+- [01:20:17,420 - 01:20:18,020] given...
+- [01:20:18,020 - 01:20:19,500] He worked a little bit differently.
+- [01:20:19,780 - 01:20:22,100] He didn't know about Noether's theorem.
+- [01:20:23,159 - 01:20:25,660] He had to work from the ground up,
+- [01:20:25,660 - 01:20:26,140] so to speak.
+- [01:20:26,400 - 01:20:28,300] He talked about collisions of objects,
+- [01:20:28,460 - 01:20:29,460] objects come together,
+- [01:20:29,860 - 01:20:31,720] break up and scatter and go flying off.
+- [01:20:31,960 - 01:20:32,680] And he said,
+- [01:20:32,680 - 01:20:32,820] look,
+- [01:20:32,820 - 01:20:35,220] I know that the momentum is conserved.
+- [01:20:36,300 - 01:20:38,840] What do I have to think of as the energy
+- [01:20:38,840 - 01:20:42,860] in order that the energy and momentum together
+- [01:20:42,860 - 01:20:45,620] would form a complex that would be conserved
+- [01:20:45,620 - 01:20:47,160] in any frame of reference?
+- [01:20:48,860 - 01:20:50,380] We've short-circuited that
+- [01:20:51,459 - 01:20:53,840] and found the formula for the energy
+- [01:20:57,459 - 01:20:59,020] by standard methods.
+- [01:20:59,940 - 01:21:00,380] Okay,
+- [01:21:00,380 - 01:21:02,420] so that's the origin of E equals m c squared.
+- [01:21:02,520 - 01:21:04,180] It doesn't apply only to a particle.
+- [01:21:04,320 - 01:21:06,160] It applies to any object
+- [01:21:08,260 - 01:21:11,080] that can be identified as a closed object
+- [01:21:12,500 - 01:21:13,820] that its energy,
+- [01:21:14,960 - 01:21:17,040] when the object is at rest.
+- [01:21:17,140 - 01:21:18,520] Now what does the object being at rest mean?
+- [01:21:19,420 - 01:21:20,280] Inside here,
+- [01:21:20,280 - 01:21:21,320] there are lots of molecules
+- [01:21:21,320 - 01:21:22,620] moving around like crazy.
+- [01:21:23,300 - 01:21:24,240] So in that sense,
+- [01:21:24,240 - 01:21:25,620] this object is not at rest.
+- [01:21:25,840 - 01:21:26,940] On the other hand,
+- [01:21:26,960 - 01:21:29,240] its center of mass is at rest,
+- [01:21:29,860 - 01:21:34,560] but what we mean by the velocity here
+- [01:21:34,560 - 01:21:36,320] is the velocity of the center of mass.
+- [01:21:36,900 - 01:21:38,620] And what's left over when you set
+- [01:21:38,620 - 01:21:40,340] the center of mass velocity to zero
+- [01:21:40,340 - 01:21:41,500] is the rest energy.
+- [01:21:41,900 - 01:21:45,880] The rest energy is related to the mass
+- [01:21:45,880 - 01:21:47,260] by a factor of speed of light.
+- [01:21:48,100 - 01:21:49,190] Another way to say that
+- [01:21:49,190 - 01:21:50,280] is that the speed of light
+- [01:21:50,280 - 01:21:51,520] is just a conversion factor
+- [01:21:51,520 - 01:21:54,260] from one way of defining energy to another.
+- [01:21:56,260 - 01:21:57,700] It's just a conversion factor.
+- [01:22:00,940 - 01:22:01,420] So,
+- [01:22:01,420 - 01:22:05,320] you want to make the dimension consistent,
+- [01:22:05,680 - 01:22:08,040] so you multiply by c squared.
+- [01:22:08,700 - 01:22:11,440] You could have multiplied by c squared over 10 megabit,
+- [01:22:11,440 - 01:22:13,760] or a lot of different things.
+- [01:22:13,780 - 01:22:13,940] No,
+- [01:22:13,940 - 01:22:14,100] no,
+- [01:22:14,100 - 01:22:14,360] no,
+- [01:22:14,360 - 01:22:14,560] no,
+- [01:22:14,560 - 01:22:14,720] no,
+- [01:22:14,720 - 01:22:14,820] no.
+- [01:22:15,120 - 01:22:17,960] It has to reduce to this when c is one.
+- [01:22:18,700 - 01:22:19,180] Right.
+- [01:22:19,180 - 01:22:20,000] Good point.
+- [01:22:20,620 - 01:22:21,400] Good point.
+- [01:22:21,400 - 01:22:21,900] That's right.
+- [01:22:23,340 - 01:22:25,220] On purely dimensional grounds,
+- [01:22:25,320 - 01:22:26,510] we never could have deduced
+- [01:22:26,510 - 01:22:27,700] that this would be one here.
+- [01:22:28,600 - 01:22:29,080] But,
+- [01:22:29,080 - 01:22:29,840] on the ground,
+- [01:22:29,860 - 01:22:30,020] on two grounds,
+- [01:22:30,640 - 01:22:32,200] that it has to reduce to this
+- [01:22:32,800 - 01:22:34,100] when c is equal to one,
+- [01:22:34,300 - 01:22:35,420] we say there's only one
+- [01:22:35,420 - 01:22:36,540] thing we could do with it.
+- [01:22:37,160 - 01:22:39,820] So that one in the binomial expansion is important?
+- [01:22:40,100 - 01:22:40,320] Oh,
+- [01:22:40,320 - 01:22:40,560] yes.
+- [01:22:40,560 - 01:22:41,420] Absolutely.
+- [01:22:42,540 - 01:22:43,020] Absolutely.
+- [01:22:43,160 - 01:22:44,780] There are higher order terms missing,
+- [01:22:44,780 - 01:22:45,160] right?
+- [01:22:45,200 - 01:22:45,660] Yes,
+- [01:22:45,660 - 01:22:46,740] there are higher order terms,
+- [01:22:46,880 - 01:22:47,900] and they are simply very,
+- [01:22:47,900 - 01:22:48,520] very small
+- [01:22:48,520 - 01:22:50,260] when the velocity is...
+- [01:22:51,120 - 01:22:51,600] Well,
+- [01:22:51,600 - 01:22:52,420] I mean,
+- [01:22:52,420 - 01:22:53,400] for some purposes,
+- [01:22:53,420 - 01:22:54,480] we might care about them,
+- [01:22:54,660 - 01:22:57,180] but the leading piece for slow...
+- [01:22:57,180 - 01:22:57,360] You know,
+- [01:22:57,360 - 01:22:58,560] we could evaluate them,
+- [01:22:58,560 - 01:23:00,000] and we could see how small they are
+- [01:23:00,000 - 01:23:02,680] for a baseball moving at 90 miles an hour,
+- [01:23:02,840 - 01:23:03,800] and believe me,
+- [01:23:03,800 - 01:23:04,680] they would be really,
+- [01:23:04,680 - 01:23:05,380] really small.
+- [01:23:06,820 - 01:23:08,670] What's the right physical way to
+- [01:23:08,670 - 01:23:10,520] think of those higher order terms?
+- [01:23:10,820 - 01:23:12,280] Corrections to the kinetic energy?
+- [01:23:12,560 - 01:23:12,860] Yeah,
+- [01:23:12,860 - 01:23:13,640] well,
+- [01:23:13,640 - 01:23:15,320] they're corrections to everything.
+- [01:23:15,600 - 01:23:16,600] Everything gets corrections.
+- [01:23:16,880 - 01:23:19,700] Those corrections are quite significant
+- [01:23:19,700 - 01:23:20,860] when the object is moving
+- [01:23:20,860 - 01:23:22,020] close to the speed of light.
+- [01:23:22,840 - 01:23:23,600] In fact,
+- [01:23:23,600 - 01:23:23,860] I mean,
+- [01:23:23,860 - 01:23:24,500] they become huge.
+- [01:23:24,560 - 01:23:25,720] Let's just think about it for a minute.
+- [01:23:28,760 - 01:23:30,130] If I were to plug
+- [01:23:30,130 - 01:23:31,500] in the speed of light here,
+- [01:23:31,680 - 01:23:31,880] well,
+- [01:23:31,880 - 01:23:33,040] this would get pretty darn big,
+- [01:23:33,220 - 01:23:34,840] but it wouldn't get any bigger than this.
+- [01:23:36,460 - 01:23:37,480] It's perfectly finite.
+- [01:23:37,660 - 01:23:38,480] On the other hand,
+- [01:23:38,480 - 01:23:40,600] if I plug it into this formula,
+- [01:23:41,320 - 01:23:42,580] v goes to 1,
+- [01:23:43,400 - 01:23:45,290] the kinetic energy of an object
+- [01:23:45,290 - 01:23:47,180] moving close to the speed of light
+- [01:23:47,180 - 01:23:47,940] becomes infinite.
+- [01:23:48,320 - 01:23:49,660] That's another way to see
+- [01:23:49,660 - 01:23:51,000] that you can never get up,
+- [01:23:51,040 - 01:23:52,560] because it would take an infinite energy
+- [01:23:52,560 - 01:23:53,880] to get up to the speed of light.
+- [01:23:53,880 - 01:23:54,520] Also,
+- [01:23:54,520 - 01:23:55,640] an infinite momentum.
+- [01:23:57,140 - 01:23:59,760] These u's also are v's divided by
+- [01:23:59,760 - 01:24:02,380] square root of 1 minus v squared.
+- [01:24:03,160 - 01:24:06,960] So as you push the particle faster and faster,
+- [01:24:07,900 - 01:24:12,020] its momentum and its energy increase and explode,
+- [01:24:12,020 - 01:24:12,960] diverge,
+- [01:24:12,960 - 01:24:14,390] become infinite when the velocity
+- [01:24:14,390 - 01:24:15,820] becomes the speed of light.
+- [01:24:16,180 - 01:24:18,600] That means it would take an infinite force
+- [01:24:18,600 - 01:24:21,880] to accelerate a particle to a speed of light,
+- [01:24:23,040 - 01:24:23,640] and
+- [01:24:23,880 - 01:24:26,780] infinite forces are simply not part of nature.
+- [01:24:27,160 - 01:24:28,680] I was just wondering,
+- [01:24:29,619 - 01:24:32,480] what is the thing that now becomes a barrier
+- [01:24:32,480 - 01:24:33,560] as a result of
+- [01:24:33,560 - 01:24:37,740] The conservation law.
+- [01:24:38,380 - 01:24:39,620] The conservation law.
+- [01:24:39,620 - 01:24:40,100] Right.
+- [01:24:40,360 - 01:24:41,040] The four momentum.
+- [01:24:41,280 - 01:24:41,960] The four momentum.
+- [01:24:43,260 - 01:24:44,580] Conservation of four momentum.
+- [01:24:44,700 - 01:24:45,480] That's exactly right.
+- [01:24:47,299 - 01:24:47,900] Okay.
+- [01:24:47,900 - 01:24:48,500] Yeah.
+- [01:24:48,780 - 01:24:50,940] There was an earlier statement that
+- [01:24:50,940 - 01:24:52,940] we were only going to heaven,
+- [01:24:53,880 - 01:24:54,280] because of the variables,
+- [01:24:54,280 - 01:24:58,420] because of u squared minus u squared minus 1.
+- [01:24:58,520 - 01:24:58,640] Yes,
+- [01:24:58,640 - 01:25:00,040] we're going to come back to that in a minute.
+- [01:25:00,160 - 01:25:00,380] Right.
+- [01:25:00,380 - 01:25:01,100] Right.
+- [01:25:02,200 - 01:25:03,680] That's just a statement that momentum,
+- [01:25:03,700 - 01:25:05,740] that energy is determined in terms of momentum.
+- [01:25:06,860 - 01:25:10,220] If you have two particles with opposite velocities,
+- [01:25:11,120 - 01:25:13,920] does the mass of the combined system,
+- [01:25:14,080 - 01:25:16,480] is it greater than the sum of the two masses?
+- [01:25:17,360 - 01:25:17,800] Typically,
+- [01:25:17,800 - 01:25:18,120] yes,
+- [01:25:18,120 - 01:25:18,340] yes,
+- [01:25:18,340 - 01:25:18,680] of course.
+- [01:25:19,440 - 01:25:21,920] If you wanted the mass of the combined system,
+- [01:25:23,880 - 01:25:26,860] by that I mean the energy of the combined system
+- [01:25:26,860 - 01:25:28,620] when the combined system is at rest.
+- [01:25:28,820 - 01:25:29,740] Now what does it mean
+- [01:25:29,740 - 01:25:30,660] the combined system is at rest?
+- [01:25:30,760 - 01:25:31,860] It means exactly what you said,
+- [01:25:32,020 - 01:25:35,440] that the two objects might be moving in opposite directions.
+- [01:25:36,060 - 01:25:38,100] Then the energy is definitely larger
+- [01:25:38,100 - 01:25:40,140] than the sum of their masses.
+- [01:25:40,520 - 01:25:41,940] In this convention,
+- [01:25:41,940 - 01:25:45,340] the rest mass is greater than...
+- [01:25:45,940 - 01:25:47,300] The rest mass...
+- [01:25:47,300 - 01:25:47,740] All right,
+- [01:25:47,740 - 01:25:49,780] now we have to be careful about definitions.
+- [01:25:50,800 - 01:25:52,940] Some things are simply purely definitions.
+- [01:25:52,940 - 01:25:55,140] Some people might react at this point,
+- [01:25:55,260 - 01:25:55,400] well,
+- [01:25:55,400 - 01:25:57,120] what I mean by the rest mass
+- [01:25:57,120 - 01:25:58,680] is simply the sums of
+- [01:25:58,680 - 01:26:00,240] the rest mass of two particles.
+- [01:26:01,540 - 01:26:04,980] That is not a very good invariant concept at all.
+- [01:26:05,520 - 01:26:06,680] Another person might mean,
+- [01:26:06,680 - 01:26:06,880] no,
+- [01:26:06,880 - 01:26:07,880] I don't mean that.
+- [01:26:08,000 - 01:26:09,100] What I mean is think
+- [01:26:09,100 - 01:26:10,200] of the thing as a unit
+- [01:26:11,280 - 01:26:14,940] and discuss its energy in the frame of reference
+- [01:26:14,940 - 01:26:17,060] where its total momentum is equal to zero.
+- [01:26:18,000 - 01:26:19,210] That would be what we would
+- [01:26:19,210 - 01:26:20,420] call the center of mass frame
+- [01:26:20,420 - 01:26:22,740] or the rest frame of the combined system.
+- [01:26:23,860 - 01:26:25,420] Now since all ordinary systems
+- [01:26:25,420 - 01:26:26,980] are made up out of particles
+- [01:26:26,980 - 01:26:29,320] that are moving hither and thither all over the place,
+- [01:26:31,679 - 01:26:34,820] an invariant concept is the energy of a system
+- [01:26:34,820 - 01:26:37,580] in a reference frame where its momentum is zero.
+- [01:26:38,260 - 01:26:40,060] If we call that the mass,
+- [01:26:40,700 - 01:26:43,580] then the mass of the composite system in your case,
+- [01:26:43,720 - 01:26:44,620] in your particular case,
+- [01:26:44,620 - 01:26:48,280] would be greater than the sums of the two masses.
+- [01:26:49,500 - 01:26:50,800] If there were forces,
+- [01:26:50,800 - 01:26:52,560] particularly attractive forces,
+- [01:26:52,940 - 01:26:54,060] it might be less than,
+- [01:26:54,060 - 01:26:55,540] but that's another case.
+- [01:26:57,480 - 01:26:59,290] What does the mass term do when you
+- [01:26:59,290 - 01:27:01,100] include it in the phase of a wave function?
+- [01:27:01,480 - 01:27:02,430] It gives an e to
+- [01:27:02,430 - 01:27:03,380] the i m squared c squared,
+- [01:27:03,380 - 01:27:04,060] mc squared.
+- [01:27:05,820 - 01:27:06,480] Times time.
+- [01:27:08,780 - 01:27:09,660] So I've got a lot of,
+- [01:27:09,660 - 01:27:09,760] I mean,
+- [01:27:09,760 - 01:27:11,580] I have trouble forming this into a question,
+- [01:27:11,660 - 01:27:14,160] but I mean the way we got this expression was,
+- [01:27:14,700 - 01:27:16,190] it's a lot of abstract mathematics
+- [01:27:16,190 - 01:27:17,680] to Raj is having to tell you.
+- [01:27:18,620 - 01:27:19,640] Let's not call it abstract,
+- [01:27:19,640 - 01:27:20,440] let's call it systematic.
+- [01:27:20,440 - 01:27:21,340] Systematic.
+- [01:27:21,780 - 01:27:22,300] Whatever,
+- [01:27:22,300 - 01:27:23,020] I mean,
+- [01:27:23,020 - 01:27:23,640] the,
+- [01:27:23,640 - 01:27:27,800] this mc squared term is very significant.
+- [01:27:28,300 - 01:27:28,800] I mean,
+- [01:27:28,800 - 01:27:31,420] it describes things like an atomic bomb,
+- [01:27:31,420 - 01:27:31,960] for example.
+- [01:27:32,200 - 01:27:32,840] I mean,
+- [01:27:32,840 - 01:27:34,340] it's...
+- [01:27:34,340 - 01:27:35,100] Yeah,
+- [01:27:35,100 - 01:27:38,120] the thing that's conserved is the total energy,
+- [01:27:38,879 - 01:27:41,400] not the individual masses of particles.
+- [01:27:41,600 - 01:27:43,040] So let's talk about an example.
+- [01:27:43,260 - 01:27:43,720] You know,
+- [01:27:43,720 - 01:27:44,760] before I talk about the example,
+- [01:27:45,740 - 01:27:47,710] let me first take a
+- [01:27:47,710 - 01:27:49,680] little digression into massless particles.
+- [01:27:50,620 - 01:27:52,780] Massless particles are a little bit strange.
+- [01:27:53,080 - 01:27:55,320] Here's the energy over here,
+- [01:27:55,320 - 01:27:58,320] m divided by 1 minus v squared.
+- [01:27:58,660 - 01:28:01,060] Now what's the velocity of a massless particle?
+- [01:28:02,580 - 01:28:03,100] One.
+- [01:28:04,680 - 01:28:05,200] Okay,
+- [01:28:05,200 - 01:28:05,800] we're in trouble.
+- [01:28:06,540 - 01:28:07,060] Well,
+- [01:28:07,060 - 01:28:08,420] maybe the trouble's not too bad.
+- [01:28:08,620 - 01:28:12,040] The numerator is zero and the denominator is zero.
+- [01:28:12,200 - 01:28:13,720] It doesn't tell us what the answer is,
+- [01:28:13,720 - 01:28:15,050] but at least it tells us
+- [01:28:15,050 - 01:28:16,380] at worst it's zero over zero.
+- [01:28:16,620 - 01:28:19,120] That's better than one over zero.
+- [01:28:20,440 - 01:28:20,580] Okay,
+- [01:28:20,580 - 01:28:21,200] right.
+- [01:28:22,180 - 01:28:23,020] Maybe not a lot,
+- [01:28:23,020 - 01:28:24,720] but it's a little better than one over zero.
+- [01:28:26,079 - 01:28:28,719] It doesn't seem like such a good
+- [01:28:28,719 - 01:28:31,360] idea to try to think of massless particles
+- [01:28:31,360 - 01:28:33,820] in terms of the energy of
+- [01:28:33,820 - 01:28:36,280] massless particles in terms of their velocity,
+- [01:28:36,600 - 01:28:38,510] since all massless particles move
+- [01:28:38,510 - 01:28:40,420] with exactly the same velocity.
+- [01:28:41,380 - 01:28:43,060] Can they have different energy if
+- [01:28:43,060 - 01:28:44,740] they all move with the same velocity?
+- [01:28:45,260 - 01:28:45,820] Well,
+- [01:28:45,820 - 01:28:46,080] yes,
+- [01:28:46,080 - 01:28:46,640] they can.
+- [01:28:47,560 - 01:28:48,120] And...
+- [01:28:50,440 - 01:28:53,720] The reason is because zero over zero is not determined.
+- [01:28:54,360 - 01:28:56,260] Thinking about massless particles is
+- [01:28:56,260 - 01:28:58,160] not good to think about them
+- [01:28:58,160 - 01:29:00,180] or to distinguish them by their velocity.
+- [01:29:00,760 - 01:29:02,580] All their velocities are the same.
+- [01:29:03,100 - 01:29:03,640] Okay?
+- [01:29:03,740 - 01:29:05,260] We have to think about it differently.
+- [01:29:05,840 - 01:29:07,800] The way to think about massless particles,
+- [01:29:07,800 - 01:29:09,160] and in fact we can
+- [01:29:09,160 - 01:29:10,520] think about any particle this way,
+- [01:29:10,640 - 01:29:13,320] but to think about massless particles in particular
+- [01:29:13,320 - 01:29:16,100] is to think of the energy as a
+- [01:29:16,100 - 01:29:18,880] function of the momentum instead of the velocity.
+- [01:29:21,519 - 01:29:25,240] We could even do that quite often in ordinary mechanics
+- [01:29:25,240 - 01:29:28,880] when we write the energy of a particle,
+- [01:29:28,880 - 01:29:30,060] kinetic energy.
+- [01:29:32,620 - 01:29:34,460] It is one half mv squared.
+- [01:29:34,780 - 01:29:35,120] Okay,
+- [01:29:35,120 - 01:29:36,100] that's one way of writing it.
+- [01:29:36,380 - 01:29:38,810] But another way to write it
+- [01:29:38,810 - 01:29:41,240] is momentum squared over twice the mass.
+- [01:29:43,680 - 01:29:44,360] This is,
+- [01:29:44,360 - 01:29:46,500] I'm talking now not about relativistic mechanics,
+- [01:29:46,500 - 01:29:48,740] just old-fashioned mechanics.
+- [01:29:49,120 - 01:29:49,770] We write the energy of a
+- [01:29:49,770 - 01:29:50,420] particle as a function of the momentum.
+- [01:29:51,240 - 01:29:54,160] We write the energy in terms of the momentum.
+- [01:29:54,420 - 01:29:55,160] That's another way,
+- [01:29:55,160 - 01:29:57,560] an alternative way to express the energy.
+- [01:29:58,660 - 01:30:01,320] What happens if we do the same thing in relativity?
+- [01:30:02,060 - 01:30:04,670] Can we find the expression for the energy
+- [01:30:04,670 - 01:30:07,280] of a particle in terms of its momentum?
+- [01:30:08,060 - 01:30:08,400] Well,
+- [01:30:08,400 - 01:30:09,880] there's a very simple trick.
+- [01:30:10,300 - 01:30:14,860] The simple trick is just to use
+- [01:30:14,860 - 01:30:19,420] the fact that u-naught squared minus u-x squared.
+- [01:30:19,820 - 01:30:20,420] Let's do that.
+- [01:30:20,440 - 01:30:21,440] Let's add them all in.
+- [01:30:21,500 - 01:30:24,940] Minus u-y squared minus u-z squared.
+- [01:30:27,780 - 01:30:28,320] That's right,
+- [01:30:28,320 - 01:30:28,980] you said it.
+- [01:30:29,000 - 01:30:31,620] u-z squared is equal to one.
+- [01:30:32,460 - 01:30:33,820] We worked out that before.
+- [01:30:34,480 - 01:30:35,700] And now let's,
+- [01:30:35,700 - 01:30:36,720] I'm going to set c,
+- [01:30:36,720 - 01:30:37,890] for the moment I'm going to
+- [01:30:37,890 - 01:30:39,060] set c equal to one again.
+- [01:30:39,160 - 01:30:39,860] c equal one.
+- [01:30:43,059 - 01:30:43,519] Alright,
+- [01:30:43,519 - 01:30:44,440] if I multiply,
+- [01:30:44,440 - 01:30:45,440] let's see,
+- [01:30:45,440 - 01:30:45,740] the,
+- [01:30:45,740 - 01:30:46,480] yeah.
+- [01:30:47,160 - 01:30:48,540] The components of momentum,
+- [01:30:48,540 - 01:30:49,820] all four of them,
+- [01:30:49,820 - 01:30:51,680] are the same as the components of
+- [01:30:51,680 - 01:30:53,540] four velocity except for a factor of mass.
+- [01:30:54,020 - 01:30:55,510] So what I want to do
+- [01:30:55,510 - 01:30:57,000] is multiply this equation by m squared.
+- [01:30:57,340 - 01:30:58,320] m squared,
+- [01:30:58,320 - 01:30:59,200] m squared,
+- [01:30:59,200 - 01:31:01,180] m squared,
+- [01:31:01,180 - 01:31:03,020] m squared.
+- [01:31:04,740 - 01:31:06,060] And then this becomes,
+- [01:31:06,060 - 01:31:09,800] this is the square of p-naught squared,
+- [01:31:10,180 - 01:31:12,000] but p-naught is just the energy.
+- [01:31:12,240 - 01:31:14,180] So this becomes the square of the energy,
+- [01:31:17,400 - 01:31:17,920] minus,
+- [01:31:17,920 - 01:31:21,030] and each one of these is the
+- [01:31:21,030 - 01:31:24,140] square of the corresponding component of momentum.
+- [01:31:24,640 - 01:31:26,820] e squared minus p squared,
+- [01:31:26,820 - 01:31:28,840] I forgot to multiply this side by m squared.
+- [01:31:29,420 - 01:31:32,480] e squared minus p squared equals m squared.
+- [01:31:35,540 - 01:31:37,420] In terms of the four velocity,
+- [01:31:38,640 - 01:31:42,580] it's u-naught squared minus u-vector squared equals one.
+- [01:31:43,100 - 01:31:47,180] In terms of the corresponding components of the four,
+- [01:31:48,480 - 01:31:49,000] momentum,
+- [01:31:49,000 - 01:31:49,980] energy and momentum,
+- [01:31:50,260 - 01:31:53,420] it's e squared minus p squared equals m squared.
+- [01:31:53,820 - 01:31:57,740] Or I can write that as e squared,
+- [01:31:57,740 - 01:31:58,280] or e,
+- [01:31:59,000 - 01:32:02,820] equals square root of p squared plus m squared.
+- [01:32:05,760 - 01:32:06,500] I just,
+- [01:32:06,500 - 01:32:08,300] I moved the p squared over to the
+- [01:32:08,300 - 01:32:10,100] right hand side and took the square root.
+- [01:32:12,720 - 01:32:14,520] Let's put back the speeds of light.
+- [01:32:14,660 - 01:32:16,940] I'm going to leave this as an exercise for you.
+- [01:32:16,940 - 01:32:18,280] I'll tell you what the answer is.
+- [01:32:20,600 - 01:32:23,590] This is the square root of
+- [01:32:23,590 - 01:32:26,580] p squared becomes p squared c squared,
+- [01:32:26,960 - 01:32:31,000] and m squared becomes m squared c to the fourth.
+- [01:32:33,080 - 01:32:34,200] Check that out.
+- [01:32:34,420 - 01:32:36,840] It's just an exercise in getting your units straight.
+- [01:32:42,730 - 01:32:44,100] And there it is.
+- [01:32:44,100 - 01:32:47,600] That's energy in terms of momentum,
+- [01:32:47,600 - 01:32:49,320] square of momentum,
+- [01:32:49,320 - 01:32:50,880] and the mass.
+- [01:32:51,920 - 01:32:52,520] Now,
+- [01:32:52,520 - 01:32:53,480] from this formula,
+- [01:32:53,480 - 01:32:55,530] we can immediately take the limit
+- [01:32:55,530 - 01:32:57,580] that the mass goes to zero.
+- [01:32:57,920 - 01:32:59,560] We had trouble thinking about
+- [01:32:59,560 - 01:33:01,200] a photon in terms of velocity,
+- [01:33:01,600 - 01:33:03,660] but we have no trouble in thinking
+- [01:33:03,660 - 01:33:05,720] about photons in terms of this formula.
+- [01:33:06,340 - 01:33:07,380] What does it say?
+- [01:33:07,820 - 01:33:09,180] It says...
+- [01:33:09,180 - 01:33:09,640] Hmm?
+- [01:33:10,060 - 01:33:10,660] Yeah.
+- [01:33:10,740 - 01:33:13,280] The right hand becomes zero and the left becomes c.
+- [01:33:13,280 - 01:33:13,640] Yeah,
+- [01:33:13,640 - 01:33:14,340] that's right.
+- [01:33:14,520 - 01:33:18,050] Energy becomes equal to the square root of the
+- [01:33:18,050 - 01:33:21,580] square of the momentum times the speed of light,
+- [01:33:22,060 - 01:33:24,180] which is just the speed of
+- [01:33:24,180 - 01:33:26,300] light times the magnitude of the momentum.
+- [01:33:26,380 - 01:33:28,020] Let's call it magnitude of momentum.
+- [01:33:29,860 - 01:33:31,300] Square root of p squared is
+- [01:33:31,300 - 01:33:32,740] just the length of the momentum vector.
+- [01:33:33,260 - 01:33:35,980] Energy for a massless particle is
+- [01:33:35,980 - 01:33:38,700] simply the magnitude of the momentum vector,
+- [01:33:38,880 - 01:33:42,580] but in order to keep the units correct,
+- [01:33:42,580 - 01:33:44,860] you have to multiply by the speed of light.
+- [01:33:46,080 - 01:33:47,380] This is true for photons.
+- [01:33:47,960 - 01:33:50,380] It's approximately true for neutrinos.
+- [01:33:50,480 - 01:33:52,200] Neutrinos have a tiny little bit of mass.
+- [01:33:53,500 - 01:33:54,980] It's true for gravitons.
+- [01:33:56,460 - 01:33:58,640] It is not true for particles which
+- [01:33:58,640 - 01:34:00,820] move significantly slower than the speed of light.
+- [01:34:10,780 - 01:34:11,420] All right.
+- [01:34:11,420 - 01:34:13,140] Now that we know how to
+- [01:34:13,140 - 01:34:14,860] express the energy of a massless particle,
+- [01:34:15,100 - 01:34:17,440] we could solve the following equation,
+- [01:34:17,440 - 01:34:18,880] the following problem.
+- [01:34:31,560 - 01:34:32,960] Let's take a particle.
+- [01:34:33,100 - 01:34:34,380] I'm going to give this particle a name.
+- [01:34:34,520 - 01:34:35,600] It's called positronium.
+- [01:34:36,740 - 01:34:39,070] It happens to be an electron and
+- [01:34:39,070 - 01:34:41,400] a positron in orbit of the same number.
+- [01:34:41,400 - 01:34:42,120] They orbit around each other.
+- [01:34:42,440 - 01:34:44,200] But it's not important what we call it.
+- [01:34:44,680 - 01:34:46,900] It's not important what it is.
+- [01:34:46,940 - 01:34:48,360] It's important what we call it.
+- [01:34:48,600 - 01:34:49,960] We'll call it positronium.
+- [01:34:50,240 - 01:34:53,360] It's an electrically neutral particle and it has a mass.
+- [01:34:53,800 - 01:34:57,020] Its mass is approximately the mass of two electrons.
+- [01:34:57,880 - 01:34:59,390] But I don't care whether you
+- [01:34:59,390 - 01:35:00,900] call it two electrons or not.
+- [01:35:01,240 - 01:35:01,960] It's a little bit...
+- [01:35:01,960 - 01:35:03,070] Is it more than two
+- [01:35:03,070 - 01:35:04,180] electrons or less than two electrons?
+- [01:35:06,320 - 01:35:06,960] Less than.
+- [01:35:07,220 - 01:35:07,340] Less than.
+- [01:35:10,000 - 01:35:11,320] And why is it less than?
+- [01:35:12,680 - 01:35:13,320] It's bound.
+- [01:35:14,100 - 01:35:14,580] Yeah.
+- [01:35:14,940 - 01:35:15,420] It's...
+- [01:35:15,420 - 01:35:16,320] Right.
+- [01:35:16,520 - 01:35:17,740] It's got a little bit of kinetic energy,
+- [01:35:17,940 - 01:35:18,820] so that makes it a
+- [01:35:18,820 - 01:35:19,700] little bit more than two electrons,
+- [01:35:20,040 - 01:35:22,820] but it has even more negative potential energy.
+- [01:35:23,380 - 01:35:23,980] All right.
+- [01:35:24,020 - 01:35:26,940] So whatever the positronium particle is,
+- [01:35:27,580 - 01:35:29,560] it doesn't matter what it's made of.
+- [01:35:29,820 - 01:35:32,640] It's simply an electrically neutral
+- [01:35:32,640 - 01:35:35,460] particle with a mass of...
+- [01:35:35,460 - 01:35:36,540] I don't know.
+- [01:35:36,540 - 01:35:38,040] I'm not going to ask you to
+- [01:35:38,040 - 01:35:39,540] look up the mass of the electron.
+- [01:35:40,100 - 01:35:40,460] Yes,
+- [01:35:40,460 - 01:35:42,070] let me ask you to look
+- [01:35:42,070 - 01:35:43,680] up the mass of the electron.
+- [01:35:44,320 - 01:35:45,040] .51 MeV.
+- [01:35:45,460 - 01:35:45,820] That...
+- [01:35:46,780 - 01:35:47,140] Yeah,
+- [01:35:47,140 - 01:35:49,380] it's .51 MeV,
+- [01:35:49,380 - 01:35:51,400] but it's something in joules.
+- [01:35:52,500 - 01:35:53,510] I was hoping somebody would
+- [01:35:53,510 - 01:35:54,520] give it to me in joules.
+- [01:35:55,100 - 01:35:56,780] 9.1 times 10 to the minus 31.
+- [01:35:58,120 - 01:35:58,660] What is it?
+- [01:35:58,940 - 01:36:01,320] 9.1 times 10 to the minus 31.
+- [01:36:01,780 - 01:36:02,300] Is that true?
+- [01:36:02,760 - 01:36:03,520] I don't remember.
+- [01:36:03,620 - 01:36:04,040] I have no idea.
+- [01:36:04,520 - 01:36:04,980] I mean,
+- [01:36:04,980 - 01:36:05,460] I know it's...
+- [01:36:06,540 - 01:36:07,600] 9.1 times 10,
+- [01:36:07,600 - 01:36:08,780] that's the electron mass.
+- [01:36:09,540 - 01:36:10,340] All right.
+- [01:36:10,420 - 01:36:11,760] So 9.1,
+- [01:36:11,760 - 01:36:13,260] that's 1.8...
+- [01:36:14,980 - 01:36:16,660] Some number of joules.
+- [01:36:17,140 - 01:36:18,720] That's the positronium.
+- [01:36:18,840 - 01:36:19,800] So there's positronium.
+- [01:36:20,180 - 01:36:23,020] And if you leave positronium around for a while,
+- [01:36:23,180 - 01:36:24,360] positronium will decay.
+- [01:36:24,740 - 01:36:26,200] What will it decay into?
+- [01:36:26,480 - 01:36:27,880] It will make two photons.
+- [01:36:28,740 - 01:36:30,880] Two photons will go flying off.
+- [01:36:31,680 - 01:36:32,900] Positronium will disappear.
+- [01:36:33,100 - 01:36:36,520] The two photons will just go off.
+- [01:36:36,540 - 01:36:37,480] In other words,
+- [01:36:37,480 - 01:36:42,300] you've made electromagnetic energy out of them.
+- [01:36:42,460 - 01:36:44,680] You've made just plain old
+- [01:36:44,680 - 01:36:46,900] electromagnetic energy out of the positronium.
+- [01:36:47,220 - 01:36:49,640] Positronium disappears and becomes,
+- [01:36:49,640 - 01:36:50,740] in its place,
+- [01:36:50,820 - 01:36:52,820] two photons going off,
+- [01:36:52,820 - 01:36:55,520] separating from each other.
+- [01:36:55,900 - 01:37:00,980] Can you calculate what the mass...
+- [01:37:01,440 - 01:37:02,180] Not the mass.
+- [01:37:02,340 - 01:37:04,260] What the energy and...
+- [01:37:04,260 - 01:37:09,020] and momentum of those two photons are?
+- [01:37:09,460 - 01:37:10,160] All right.
+- [01:37:10,160 - 01:37:11,220] So let's go through the exercise.
+- [01:37:11,960 - 01:37:14,040] This is something which would not make
+- [01:37:14,040 - 01:37:16,120] any sense at all in non-relativistic physics.
+- [01:37:16,240 - 01:37:17,440] In non-relativistic physics,
+- [01:37:18,040 - 01:37:22,720] the sums of the masses of particles are always unchanged.
+- [01:37:23,680 - 01:37:25,420] Chemical reactions happen.
+- [01:37:25,640 - 01:37:28,040] Some chemicals turn into other chemicals and so forth.
+- [01:37:28,240 - 01:37:29,940] But if you weigh the system,
+- [01:37:30,040 - 01:37:32,180] if you weigh the mass of the system,
+- [01:37:32,360 - 01:37:33,420] the masses,
+- [01:37:33,420 - 01:37:36,860] the sums of the ordinary masses never change.
+- [01:37:38,190 - 01:37:39,840] That's non-relativistic physics.
+- [01:37:40,200 - 01:37:43,700] Here the sums of the ordinary masses is changing.
+- [01:37:44,020 - 01:37:47,900] This has a mass of whatever it was in joules.
+- [01:37:47,940 - 01:37:49,960] This has a mass of whatever it is in kilograms.
+- [01:37:50,520 - 01:37:52,800] And each of these is massless.
+- [01:37:53,020 - 01:37:54,400] The photons has no mass.
+- [01:37:55,600 - 01:37:58,320] So the numerical sums of the
+- [01:37:58,320 - 01:38:01,040] masses of particles is not conserved.
+- [01:38:01,060 - 01:38:02,300] Not if this process happens.
+- [01:38:02,300 - 01:38:03,540] And this process does happen.
+- [01:38:04,100 - 01:38:06,460] But the right rule is not
+- [01:38:06,460 - 01:38:08,820] that the sums of masses is conserved.
+- [01:38:08,920 - 01:38:11,240] It's that the energy and the momentum is conserved.
+- [01:38:11,620 - 01:38:14,820] So the first question is what is the momentum?
+- [01:38:15,080 - 01:38:16,940] Let's do momentum conservation first.
+- [01:38:17,320 - 01:38:20,200] Let's assume that the positronium atom,
+- [01:38:21,040 - 01:38:24,280] positronium particle is at rest in our frame of reference.
+- [01:38:24,660 - 01:38:27,460] If it's not at rest in your frame of reference,
+- [01:38:27,600 - 01:38:29,070] just move your butt and get into
+- [01:38:29,070 - 01:38:30,540] the frame in which it is at rest.
+- [01:38:30,760 - 01:38:31,100] Okay?
+- [01:38:31,100 - 01:38:31,880] Right.
+- [01:38:32,060 - 01:38:33,860] Get into the frame in which it is at rest.
+- [01:38:34,100 - 01:38:35,080] So it's at rest.
+- [01:38:35,220 - 01:38:36,940] What's its momentum if it's at rest?
+- [01:38:37,620 - 01:38:38,100] Zero.
+- [01:38:39,020 - 01:38:40,970] So the total momentum of the
+- [01:38:40,970 - 01:38:42,920] system to begin with is zero.
+- [01:38:43,520 - 01:38:45,240] Now it decays to two photons.
+- [01:38:46,360 - 01:38:48,930] The first conclusion is the photons must
+- [01:38:48,930 - 01:38:51,500] go off back to back in opposite directions.
+- [01:38:52,060 - 01:38:54,060] If they don't go off in opposite directions,
+- [01:38:54,160 - 01:38:56,840] it's quite clear the total momentum will not be zero.
+- [01:38:57,280 - 01:38:59,120] So they have to go off in opposite directions.
+- [01:39:00,080 - 01:39:00,560] Uh...
+- [01:39:01,100 - 01:39:01,740] By the...
+- [01:39:01,740 - 01:39:02,460] Yeah,
+- [01:39:02,460 - 01:39:04,180] they will go off in opposite directions,
+- [01:39:04,980 - 01:39:07,160] and they must have equal,
+- [01:39:07,160 - 01:39:08,720] exactly equal,
+- [01:39:08,720 - 01:39:10,100] back to back,
+- [01:39:10,260 - 01:39:12,200] equal and opposite momentum.
+- [01:39:13,400 - 01:39:14,000] Why?
+- [01:39:14,260 - 01:39:18,240] The initial thing had zero momentum.
+- [01:39:18,560 - 01:39:20,120] The final thing has zero momentum.
+- [01:39:20,620 - 01:39:21,280] All right,
+- [01:39:21,280 - 01:39:23,050] so that means that this particle
+- [01:39:23,050 - 01:39:24,820] goes off with a momentum p,
+- [01:39:25,440 - 01:39:28,320] and this particle goes off with a momentum minus p.
+- [01:39:30,200 - 01:39:30,800] Good.
+- [01:39:30,800 - 01:39:33,620] Now let's use energy conservation.
+- [01:39:35,460 - 01:39:38,580] The energy of the initial molecule,
+- [01:39:38,580 - 01:39:39,560] not molecule,
+- [01:39:39,560 - 01:39:41,780] positronium atom,
+- [01:39:41,980 - 01:39:43,260] is its mass,
+- [01:39:43,260 - 01:39:44,460] whatever its mass is,
+- [01:39:44,460 - 01:39:45,880] times the speed of light squared.
+- [01:39:46,800 - 01:39:48,440] This is not the mass of the electron,
+- [01:39:48,440 - 01:39:49,140] not exactly.
+- [01:39:49,400 - 01:39:49,720] Very,
+- [01:39:49,720 - 01:39:50,520] very close to it,
+- [01:39:50,520 - 01:39:51,200] but not exactly.
+- [01:39:51,320 - 01:39:52,770] A little bit less than
+- [01:39:52,770 - 01:39:54,220] twice the mass of an electron.
+- [01:39:54,720 - 01:39:57,200] But it is the mass of the positronium atom.
+- [01:39:58,100 - 01:40:00,520] So you get out your spring balance,
+- [01:40:00,800 - 01:40:01,340] or whatever it is,
+- [01:40:01,340 - 01:40:02,500] your scale.
+- [01:40:02,840 - 01:40:04,960] You put a positronium atom on it,
+- [01:40:04,960 - 01:40:05,600] and you weigh it.
+- [01:40:06,060 - 01:40:09,500] And that's the mass of the positronium atom.
+- [01:40:09,680 - 01:40:10,860] And when it's at rest,
+- [01:40:10,860 - 01:40:11,880] in the rest frame,
+- [01:40:12,180 - 01:40:14,460] it has an energy equal to mc squared.
+- [01:40:15,200 - 01:40:17,910] That has to equal the energy
+- [01:40:17,910 - 01:40:20,620] of the resulting two photons going off.
+- [01:40:20,900 - 01:40:24,010] So this has to equal
+- [01:40:24,010 - 01:40:27,120] the energy of the two photons.
+- [01:40:27,380 - 01:40:29,180] The energy of the two photons is the same
+- [01:40:29,180 - 01:40:30,720] because they have the same magnitude.
+- [01:40:30,800 - 01:40:35,880] And it's just equal to twice the speed of light
+- [01:40:37,299 - 01:40:38,700] times the momentum,
+- [01:40:39,339 - 01:40:41,320] times the absolute value of the momentum,
+- [01:40:41,320 - 01:40:41,700] p.
+- [01:40:42,100 - 01:40:43,650] So that tells us what the absolute
+- [01:40:43,650 - 01:40:45,200] value of the momentum has to be.
+- [01:40:45,480 - 01:40:49,380] It's mc over 2.
+- [01:40:50,180 - 01:40:52,900] That's the momentum of each one of the photons.
+- [01:40:57,039 - 01:41:00,780] That's the simplest example of calculation.
+- [01:41:00,780 - 01:41:02,640] Calculating a relativity decay,
+- [01:41:02,940 - 01:41:04,540] and calculating what happens.
+- [01:41:04,760 - 01:41:07,360] This is the momentum of the photons that go out.
+- [01:41:07,620 - 01:41:08,980] We could convert this,
+- [01:41:08,980 - 01:41:10,920] using a little bit of quantum reasoning,
+- [01:41:11,520 - 01:41:13,910] we could convert this to a
+- [01:41:13,910 - 01:41:16,300] wavelength for the photons going out.
+- [01:41:16,440 - 01:41:20,560] If we use the connection between wavelength and momentum
+- [01:41:20,560 - 01:41:21,760] that we learned last quarter,
+- [01:41:21,980 - 01:41:24,320] we could convert this to a
+- [01:41:24,320 - 01:41:26,660] statement about the wavelength of the photons.
+- [01:41:26,780 - 01:41:27,340] It's very small.
+- [01:41:27,680 - 01:41:28,540] It's much,
+- [01:41:28,540 - 01:41:29,400] much smaller than optical.
+- [01:41:30,780 - 01:41:32,910] So this is the mechanism by
+- [01:41:32,910 - 01:41:35,040] which a mass turns into energy.
+- [01:41:35,200 - 01:41:35,420] Of course,
+- [01:41:35,420 - 01:41:37,100] the mass was always energy,
+- [01:41:37,380 - 01:41:40,040] but it was in this frozen form
+- [01:41:40,040 - 01:41:42,700] of rest energy of the positronium molecule.
+- [01:41:43,320 - 01:41:46,100] And when the positronium atom decays,
+- [01:41:46,540 - 01:41:48,800] it results in two photons going out.
+- [01:41:48,860 - 01:41:50,860] The two photons collide with the atmosphere,
+- [01:41:50,960 - 01:41:51,780] with everything else,
+- [01:41:51,780 - 01:41:52,520] and heat it up.
+- [01:41:52,720 - 01:41:54,300] They can be absorbed by electrons,
+- [01:41:54,560 - 01:41:55,920] generate electrical currents,
+- [01:41:55,920 - 01:41:57,080] and so forth and so on.
+- [01:41:57,520 - 01:41:58,540] So it becomes,
+- [01:41:58,740 - 01:42:00,760] the energy gets converted from the two photons
+- [01:42:00,780 - 01:42:03,400] into this frozen form of rest mass
+- [01:42:03,400 - 01:42:05,740] into dynamical,
+- [01:42:05,740 - 01:42:11,500] useful form of electromagnetic energy.
+- [01:42:11,800 - 01:42:13,480] How is spin conserved?
+- [01:42:14,940 - 01:42:15,680] Well,
+- [01:42:15,680 - 01:42:19,800] if the atom to begin with has zero angular momentum,
+- [01:42:20,040 - 01:42:21,700] and these guys are going off back to back,
+- [01:42:21,880 - 01:42:23,840] they better have opposite angular momentum.
+- [01:42:25,080 - 01:42:29,340] So if the electron and positron are...
+- [01:42:30,700 - 01:42:31,700] lined up together,
+- [01:42:32,320 - 01:42:33,320] they won't decay?
+- [01:42:33,820 - 01:42:34,320] No,
+- [01:42:34,320 - 01:42:34,440] no,
+- [01:42:34,440 - 01:42:34,840] they won't decay.
+- [01:42:35,200 - 01:42:36,200] They'll always decay.
+- [01:42:36,500 - 01:42:37,400] They'll always decay.
+- [01:42:38,220 - 01:42:39,600] You have enough freedom,
+- [01:42:39,680 - 01:42:44,900] you have enough freedom in the photon angular momentum
+- [01:42:44,900 - 01:42:47,480] to make it go.
+- [01:42:49,090 - 01:42:49,590] ご視聴ありがとうございました
+- [01:42:49,698 - 01:42:52,058] you explain why massless particles have two nodes,
+- [01:42:52,058 - 01:42:52,658] smetalite,
+- [01:42:52,658 - 01:42:54,358] or Z2-polyrhabotoxides?
+- [01:42:56,137 - 01:42:56,737] Well,
+- [01:42:56,737 - 01:42:57,958] let's put it this way
+- [01:42:59,737 - 01:43:02,418] In order to have a finite energy
+- [01:43:02,418 - 01:43:05,398] in order to have a finite,
+- [01:43:05,398 - 01:43:06,538] well-defined energy
+- [01:43:07,218 - 01:43:08,618] if v goes to one
+- [01:43:09,238 - 01:43:11,298] the denominator goes to zero
+- [01:43:11,718 - 01:43:14,558] the mass in the numerator had better also be zero
+- [01:43:20,438 - 01:43:23,098] You said it'd be the same for all massless particles,
+- [01:43:23,098 - 01:43:25,758] that if the resulting particles were gravitons,
+- [01:43:25,758 - 01:43:27,998] what would the initial particles be?
+- [01:43:31,977 - 01:43:34,078] Some fraction of the time,
+- [01:43:34,078 - 01:43:36,138] the positronium atom,
+- [01:43:36,138 - 01:43:36,718] for example,
+- [01:43:36,718 - 01:43:38,978] will decay into a pair of gravitons
+- [01:43:39,398 - 01:43:39,698] Now,
+- [01:43:39,698 - 01:43:42,658] that percentage of the time is 10 to the minus,
+- [01:43:42,658 - 01:43:43,438] I don't know,
+- [01:43:43,438 - 01:43:44,298] some large number
+- [01:43:44,978 - 01:43:47,338] but some percentage of the time
+- [01:43:48,098 - 01:43:48,698] the
+- [01:43:50,098 - 01:43:52,168] electrically neutral positronium atom will decay
+- [01:43:52,168 - 01:43:54,238] into just a pair of photons
+- [01:43:56,578 - 01:43:58,858] As I said,
+- [01:43:58,858 - 01:44:00,338] don't look for it in the laboratory
+- [01:44:01,718 - 01:44:03,568] That decay has to be
+- [01:44:03,568 - 01:44:05,418] instantaneous because of time-damage also?
+- [01:44:06,278 - 01:44:07,338] Instantaneous means what?
+- [01:44:08,178 - 01:44:09,738] What does it mean that the decay...
+- [01:44:09,738 - 01:44:10,798] If you have,
+- [01:44:10,798 - 01:44:11,358] let's say,
+- [01:44:11,358 - 01:44:14,058] the two photons emitted
+- [01:44:14,058 - 01:44:17,638] the positronium decays into those
+- [01:44:18,178 - 01:44:19,318] because of time-damage.
+- [01:44:19,318 - 01:44:19,678] And there is a time-damage to do it.
+- [01:44:19,678 - 01:44:21,158] risk-relief going at the speed of light,
+- [01:44:21,238 - 01:44:23,098] that means that the return of the plot to zero,
+- [01:44:23,218 - 01:44:24,538] that means that it's close to it,
+- [01:44:24,598 - 01:44:25,918] so you can't just process it as possible,
+- [01:44:25,918 - 01:44:26,158] right?
+- [01:44:26,778 - 01:44:27,218] Well,
+- [01:44:27,218 - 01:44:27,638] let's see,
+- [01:44:27,638 - 01:44:29,078] so what experimental question
+- [01:44:29,078 - 01:44:29,698] would you ask?
+- [01:44:29,798 - 01:44:34,898] You could detect the photons in some sort of chamber
+- [01:44:34,898 - 01:44:35,738] that leaves tracks,
+- [01:44:35,738 - 01:44:39,658] and you could trace the two photons back
+- [01:44:40,418 - 01:44:44,898] and you would discover that they both come together
+- [01:44:45,298 - 01:44:48,918] at exactly the place where the positronium was,
+- [01:44:49,678 - 01:44:50,458] and so that you could say,
+- [01:44:50,458 - 01:44:50,638] look,
+- [01:44:50,638 - 01:44:51,418] if they decayed,
+- [01:44:51,418 - 01:44:56,638] if the decay was peculiar and the positronium decayed,
+- [01:44:56,638 - 01:44:59,758] first producing one photon that went out to here,
+- [01:45:00,298 - 01:45:02,358] and then later creating the other photon
+- [01:45:02,358 - 01:45:03,558] which only went out to here,
+- [01:45:04,238 - 01:45:06,158] they're both moving with the speed of light,
+- [01:45:06,298 - 01:45:07,698] and you trace them back,
+- [01:45:07,698 - 01:45:09,398] they would appear to come
+- [01:45:09,398 - 01:45:10,418] from somewheres over here.
+- [01:45:11,098 - 01:45:12,298] That doesn't happen.
+- [01:45:12,338 - 01:45:14,778] If you trace back the trajectories of the photon
+- [01:45:14,778 - 01:45:19,578] and as they leave tracks in a chamber,
+- [01:45:19,578 - 01:45:20,438] or something like that,
+- [01:45:20,438 - 01:45:21,778] they will come back
+- [01:45:22,178 - 01:45:24,918] and intersect at exactly where
+- [01:45:24,918 - 01:45:27,658] the initial positronium atom was.
+- [01:45:27,798 - 01:45:29,338] I'm not sure if that's the question you're asking,
+- [01:45:29,478 - 01:45:30,248] but I think that's the only
+- [01:45:30,248 - 01:45:31,018] thing I can make out of it.
+- [01:45:32,618 - 01:45:34,878] The equation I want to refer to.
+- [01:45:35,178 - 01:45:35,438] What's that?
+- [01:45:35,798 - 01:45:36,098] Oh.
+- [01:45:36,258 - 01:45:37,158] You can raise that board again.
+- [01:45:37,418 - 01:45:37,618] Yeah.
+- [01:45:38,378 - 01:45:41,998] I understand you concluded that e squared
+- [01:45:41,998 - 01:45:44,458] minus b squared equals m squared
+- [01:45:44,458 - 01:45:45,898] from that equation up above,
+- [01:45:46,138 - 01:45:49,198] and it looks like that equation is saying that,
+- [01:45:50,078 - 01:45:51,938] u-naughts squared minus u,
+- [01:45:51,938 - 01:45:53,318] x squared minus u,
+- [01:45:53,318 - 01:45:55,338] y squared minus u,
+- [01:45:55,338 - 01:45:56,238] z squared is 1?
+- [01:45:56,418 - 01:45:56,718] Yes.
+- [01:45:57,018 - 01:45:57,698] Why is that?
+- [01:45:57,978 - 01:45:58,198] Oh,
+- [01:45:58,198 - 01:45:58,938] we went through that,
+- [01:45:58,938 - 01:45:59,738] but I'll go through it again.
+- [01:46:00,338 - 01:46:01,698] I'll go through it again for you.
+- [01:46:06,358 - 01:46:08,118] We already had two versions of it,
+- [01:46:08,118 - 01:46:09,218] but one of them was garbled.
+- [01:46:10,078 - 01:46:12,068] And I guess an ungarbled one just cancels
+- [01:46:12,068 - 01:46:14,058] out a garbled one and leaves no exponent.
+- [01:46:15,578 - 01:46:16,158] All right.
+- [01:46:16,218 - 01:46:17,438] So do you remember this formula?
+- [01:46:17,438 - 01:46:19,778] Simula delta tau squared is equal to
+- [01:46:19,778 - 01:46:22,118] delta t squared minus delta x squared?
+- [01:46:23,218 - 01:46:23,658] Okay.
+- [01:46:25,598 - 01:46:26,038] Oh,
+- [01:46:26,038 - 01:46:27,178] here it is right over here.
+- [01:46:27,698 - 01:46:28,138] Right,
+- [01:46:28,138 - 01:46:28,858] here it is.
+- [01:46:29,358 - 01:46:29,798] Right.
+- [01:46:29,898 - 01:46:30,078] Good.
+- [01:46:33,958 - 01:46:34,398] Yes,
+- [01:46:34,398 - 01:46:34,538] Kevin.
+- [01:46:36,658 - 01:46:40,698] So u-naught is dT d tau.
+- [01:46:41,018 - 01:46:41,678] That's correct.
+- [01:46:41,798 - 01:46:42,618] Delta t delta tau.
+- [01:46:42,678 - 01:46:42,998] Right.
+- [01:46:43,038 - 01:46:44,358] What does that mean about energy?
+- [01:46:44,498 - 01:46:45,658] Does that tell us anything about energy?
+- [01:46:50,038 - 01:46:50,598] Well,
+- [01:46:50,598 - 01:46:54,798] it doesn't strike any deep chord in me.
+- [01:46:55,798 - 01:46:56,458] You know,
+- [01:46:56,458 - 01:46:57,318] I know it's true.
+- [01:46:58,078 - 01:47:00,598] Does it really ring something powerful?
+- [01:47:01,258 - 01:47:02,738] Only in the sense,
+- [01:47:02,738 - 01:47:05,178] well,
+- [01:47:05,178 - 01:47:06,338] let's see.
+- [01:47:06,458 - 01:47:10,698] You want to dT d tau.
+- [01:47:11,578 - 01:47:14,478] Nothing really visceral in that.
+- [01:47:22,038 - 01:47:22,998] Because at rest,
+- [01:47:22,998 - 01:47:24,298] dT d tau is one.
+- [01:47:25,238 - 01:47:26,058] In motion,
+- [01:47:26,058 - 01:47:26,938] it's not one.
+- [01:47:27,238 - 01:47:29,798] And it's telling you how the
+- [01:47:29,798 - 01:47:32,358] energy changes as a function of velocity.
+- [01:47:33,498 - 01:47:34,878] But nothing more than that.
+- [01:47:36,618 - 01:47:37,138] Yes?
+- [01:47:38,198 - 01:47:38,718] Yes.
+- [01:47:40,318 - 01:47:40,838] Yes.
+- [01:47:43,738 - 01:47:44,258] Yes.
+- [01:47:47,378 - 01:47:47,398] Yes.
+- [01:47:47,398 - 01:47:47,418] Yes.
+- [01:47:47,438 - 01:47:47,738] Yeah.
+- [01:47:47,738 - 01:47:47,738] So,
+- [01:47:47,738 - 01:47:47,738] obviously,
+- [01:47:47,738 - 01:47:49,118] the guys got to the Damnatum and,
+- [01:47:49,118 - 01:47:50,078] theatz of momentum is zero.
+- [01:47:50,258 - 01:47:50,558] Yeah.
+- [01:47:50,758 - 01:47:51,218] Is there—
+- [01:47:51,218 - 01:47:51,898] Even,
+- [01:47:51,898 - 01:47:52,778] on effects—
+- [01:47:52,778 - 01:47:55,428] Is it possible for theaz momentum to
+- [01:47:55,428 - 01:47:58,078] be teeny tiny little bit different to zero?
+- [01:47:58,998 - 01:48:00,798] Not if momentum is conserved.
+- [01:48:02,978 - 01:48:03,578] Well,
+- [01:48:03,578 - 01:48:05,218] in a laboratory situation,
+- [01:48:05,218 - 01:48:08,118] in any laboratory situation,
+- [01:48:08,118 - 01:48:10,898] of course there are contaminating effects.
+- [01:48:12,038 - 01:48:13,718] Even if nothing more,
+- [01:48:13,718 - 01:48:19,418] or the presence of some tiny stray field,
+- [01:48:19,418 - 01:48:21,978] magnetic or electric field or something,
+- [01:48:22,178 - 01:48:24,988] could corrupt the thing and
+- [01:48:24,988 - 01:48:27,798] lead to a slightly different answer.
+- [01:48:27,998 - 01:48:28,438] Remember,
+- [01:48:28,438 - 01:48:30,488] the rule is momentum is
+- [01:48:30,488 - 01:48:32,538] conserved for a truly isolated system.
+- [01:48:32,798 - 01:48:35,438] A truly isolated system means that
+- [01:48:35,438 - 01:48:38,078] you've accounted for everything in the system
+- [01:48:38,918 - 01:48:42,158] and nothing else is interacting with it.
+- [01:48:42,158 - 01:48:45,278] Then the momentum of that system is conserved.
+- [01:48:45,638 - 01:48:46,358] Now,
+- [01:48:46,358 - 01:48:49,348] if your laboratory is sufficiently isolated and
+- [01:48:49,348 - 01:48:52,338] the region of space is cold enough
+- [01:48:52,338 - 01:48:53,998] that there are no particles bombarding
+- [01:48:53,998 - 01:48:55,658] and so forth and so on,
+- [01:48:56,138 - 01:49:00,528] the positronium together with the
+- [01:49:00,528 - 01:49:04,918] photons constitute an almost closed system.
+- [01:49:05,178 - 01:49:05,998] But you know,
+- [01:49:05,998 - 01:49:07,998] it's really not completely closed.
+- [01:49:08,218 - 01:49:09,478] If nothing else,
+- [01:49:09,478 - 01:49:11,958] there's gravitational forces between the earth
+- [01:49:11,958 - 01:49:12,138] and the atmosphere.
+- [01:49:12,158 - 01:49:12,738] And the particles,
+- [01:49:12,738 - 01:49:14,238] they're completely negligible,
+- [01:49:14,238 - 01:49:15,378] but they're not zero.
+- [01:49:16,018 - 01:49:17,138] So yeah,
+- [01:49:17,138 - 01:49:18,858] there are contaminating influences.
+- [01:49:19,618 - 01:49:22,238] Like the uncertainty principle.
+- [01:49:23,058 - 01:49:24,438] That doesn't affect it.
+- [01:49:24,538 - 01:49:25,738] Momentum is conserved.
+- [01:49:25,938 - 01:49:27,698] And where it is is .
+- [01:49:28,598 - 01:49:30,458] The better you know the momentum,
+- [01:49:30,458 - 01:49:31,558] and in particular,
+- [01:49:31,558 - 01:49:33,858] the better you know the relationship between the momentum,
+- [01:49:34,018 - 01:49:36,078] it may be that you have
+- [01:49:36,078 - 01:49:38,138] less information about the relative positions.
+- [01:49:40,117 - 01:49:42,018] But that's a small .
+- [01:49:42,018 - 01:49:42,018] .
+- [01:49:42,018 - 01:49:42,058] .
+- [01:49:42,058 - 01:49:42,238] It's a small effect.
+- [01:49:42,638 - 01:49:44,778] And for our purposes tonight,
+- [01:49:44,778 - 01:49:47,058] I want to separate quantum mechanics from classical .
+- [01:49:47,058 - 01:49:47,098] .
+- [01:49:47,098 - 01:49:47,098] .
+- [01:49:47,098 - 01:49:48,558] But it's a real question.
+- [01:49:52,018 - 01:49:52,498] Right.
+- [01:49:56,237 - 01:49:59,138] Your formula for energy was just an approximation.
+- [01:50:00,538 - 01:50:01,018] Well,
+- [01:50:01,018 - 01:50:01,618] one .
+- [01:50:01,618 - 01:50:01,618] .
+- [01:50:01,618 - 01:50:01,618] .
+- [01:50:01,618 - 01:50:02,178] there was an approximation.
+- [01:50:02,418 - 01:50:03,058] This was an .
+- [01:50:03,058 - 01:50:03,138] .
+- [01:50:03,138 - 01:50:03,138] .
+- [01:50:03,138 - 01:50:03,378] well,
+- [01:50:03,378 - 01:50:05,778] this is not an approximation.
+- [01:50:06,078 - 01:50:06,258] That's right.
+- [01:50:06,618 - 01:50:07,438] But .
+- [01:50:07,438 - 01:50:07,958] .
+- [01:50:07,958 - 01:50:07,958] .
+- [01:50:07,958 - 01:50:08,858] This .
+- [01:50:08,858 - 01:50:08,998] .
+- [01:50:08,998 - 01:50:08,998] .
+- [01:50:08,998 - 01:50:09,098] well,
+- [01:50:09,098 - 01:50:09,438] let's see.
+- [01:50:09,498 - 01:50:09,898] Where is it?
+- [01:50:09,958 - 01:50:10,918] I lost it.
+- [01:50:11,138 - 01:50:11,618] Yeah.
+- [01:50:12,058 - 01:50:15,598] The equation e equals m plus mv squared over 2.
+- [01:50:15,698 - 01:50:16,518] That was an approximation.
+- [01:50:17,058 - 01:50:19,378] So the non-approximation is e equals m over
+- [01:50:19,378 - 01:50:21,698] the square root of 1 minus v squared.
+- [01:50:21,958 - 01:50:22,278] That's right.
+- [01:50:22,618 - 01:50:22,978] This is .
+- [01:50:22,978 - 01:50:22,998] .
+- [01:50:22,998 - 01:50:22,998] .
+- [01:50:22,998 - 01:50:24,158] With the c in that equation.
+- [01:50:24,458 - 01:50:24,718] Oh,
+- [01:50:24,718 - 01:50:24,958] okay.
+- [01:50:24,998 - 01:50:25,458] Let's do that.
+- [01:50:26,858 - 01:50:27,298] Okay.
+- [01:50:30,778 - 01:50:31,218] Ah,
+- [01:50:31,218 - 01:50:31,818] over here.
+- [01:50:32,518 - 01:50:33,118] All right.
+- [01:50:33,138 - 01:50:33,698] So we have .
+- [01:50:33,698 - 01:50:33,698] .
+- [01:50:33,698 - 01:50:33,698] .
+- [01:50:33,698 - 01:50:35,638] we begin with e equals .
+- [01:50:35,638 - 01:50:36,098] .
+- [01:50:36,098 - 01:50:36,958] .
+- [01:50:36,958 - 01:50:38,358] what do we want to start?
+- [01:50:38,498 - 01:50:41,378] m divided by square root of 1 minus v squared?
+- [01:50:41,378 - 01:50:41,818] Right.
+- [01:50:42,178 - 01:50:45,498] So we look at the
+- [01:50:45,498 - 01:50:48,818] units and in a minute .
+- [01:50:48,818 - 01:50:48,818] .
+- [01:50:48,818 - 01:50:48,818] .
+- [01:50:48,818 - 01:50:49,218] well,
+- [01:50:49,218 - 01:50:49,798] right now,
+- [01:50:49,798 - 01:50:50,338] right now,
+- [01:50:50,338 - 01:50:52,338] a 1 and a v squared
+- [01:50:52,338 - 01:50:53,338] have different units.
+- [01:50:53,518 - 01:50:56,478] The only way to make v squared have the
+- [01:50:56,478 - 01:50:59,438] same units as 1 is divide it by c squared.
+- [01:50:59,878 - 01:51:01,038] There's no other way.
+- [01:51:01,798 - 01:51:03,618] Now the 1 minus v squared
+- [01:51:03,618 - 01:51:05,438] over c squared is dimensionally consistent.
+- [01:51:05,718 - 01:51:05,938] However,
+- [01:51:05,938 - 01:51:07,798] the whole formula is not.
+- [01:51:08,758 - 01:51:10,558] The left-hand side is energy.
+- [01:51:10,558 - 01:51:13,078] The right-hand side now has units of a mass.
+- [01:51:13,938 - 01:51:16,598] Mass and energy don't quite have the same units.
+- [01:51:17,118 - 01:51:19,998] They're related by the square of a velocity.
+- [01:51:21,798 - 01:51:24,658] We know that the units of energy .
+- [01:51:24,658 - 01:51:24,838] .
+- [01:51:24,838 - 01:51:24,838] .
+- [01:51:24,838 - 01:51:29,958] the units of energy are equal to the units of
+- [01:51:29,958 - 01:51:34,618] mass times the units of a velocity.
+- [01:51:34,838 - 01:51:37,078] Let's put v squared.
+- [01:51:37,838 - 01:51:40,538] An example would be kinetic energy as well.
+- [01:51:40,538 - 01:51:41,598] uku1mannu m个5u".
+- [01:51:43,558 - 01:51:46,858] Then I'm going to use穩 supportive space Euro
+- [01:51:50,198 - 01:51:51,238] .
+- [01:51:51,238 - 01:51:51,358] .
+- [01:51:51,358 - 01:51:51,398] .
+- [01:51:51,398 - 01:51:53,398] value.
+- [01:51:55,878 - 01:51:56,178] Bye.
+- [01:51:58,798 - 01:51:59,318] Bye.
+- [01:51:59,718 - 01:51:59,878] Bye.
+- [01:51:59,878 - 01:51:59,938] Hello,
+- [01:51:59,938 - 01:52:01,018] everybody.
+- [01:52:01,018 - 01:52:03,038] the positronium experiment,
+- [01:52:03,038 - 01:52:06,098] the electron positron pair has
+- [01:52:06,098 - 01:52:09,158] to decay into two photons simultaneously
+- [01:52:09,158 - 01:52:10,338] in all frames of reference.
+- [01:52:10,338 - 01:52:12,118] Has to decay into two photons and then what?
+- [01:52:12,938 - 01:52:14,658] Simultaneously in all frames of reference.
+- [01:52:15,198 - 01:52:15,758] Yeah,
+- [01:52:15,758 - 01:52:16,798] yeah.
+- [01:52:17,038 - 01:52:22,138] The physical distance between the electron and the positron.
+- [01:52:22,398 - 01:52:22,538] Well,
+- [01:52:22,538 - 01:52:24,198] that's a hard thing to check.
+- [01:52:24,198 - 01:52:24,618] I mean,
+- [01:52:24,618 - 01:52:30,198] if you had the positronium at rest,
+- [01:52:30,198 - 01:52:31,818] now remember,
+- [01:52:31,818 - 01:52:33,658] because of quantum mechanics,
+- [01:52:33,818 - 01:52:36,178] there's going to be some uncertainty in its position.
+- [01:52:36,758 - 01:52:36,958] Okay?
+- [01:52:37,548 - 01:52:40,253] And so there is a region in which
+- [01:52:40,253 - 01:52:42,958] you may have known that the positronium was in.
+- [01:52:44,118 - 01:52:46,178] Then the positronium decays.
+- [01:52:50,398 - 01:52:50,978] And...
+- [01:52:52,917 - 01:52:54,178] If you trace it...
+- [01:52:54,198 - 01:52:57,648] If you trace it back along the
+- [01:52:57,648 - 01:53:01,098] world line of the photon that comes out,
+- [01:53:01,098 - 01:53:01,898] the two photons,
+- [01:53:02,038 - 01:53:02,538] they will intersect.
+- [01:53:02,758 - 01:53:05,458] Now you could draw a space-time picture of this.
+- [01:53:05,938 - 01:53:07,398] Here's the space-time picture.
+- [01:53:07,978 - 01:53:09,378] Here's the positronium.
+- [01:53:11,518 - 01:53:12,718] Time goes up.
+- [01:53:13,438 - 01:53:16,278] This is the world line of the positronium at rest.
+- [01:53:16,838 - 01:53:18,718] Then the positronium decays.
+- [01:53:21,818 - 01:53:23,858] And the photon goes out this way.
+- [01:53:23,858 - 01:53:24,458] Whoops,
+- [01:53:24,458 - 01:53:25,398] that's not very good.
+- [01:53:28,558 - 01:53:29,958] Photon goes out this way.
+- [01:53:30,098 - 01:53:31,998] And a photon goes out this way.
+- [01:53:32,518 - 01:53:34,628] If you trace back along
+- [01:53:34,628 - 01:53:36,738] the world line of the photon,
+- [01:53:36,738 - 01:53:39,778] you will find out that they will intersect,
+- [01:53:40,058 - 01:53:41,018] first of all,
+- [01:53:41,018 - 01:53:43,818] at the spatial location where the positronium was,
+- [01:53:44,098 - 01:53:46,898] but they will intersect at exactly the same time.
+- [01:53:47,538 - 01:53:49,578] Or at least at the same
+- [01:53:49,578 - 01:53:51,618] time if we ignore quantum uncertainties.
+- [01:53:52,838 - 01:53:53,398] Uh...
+- [01:53:54,437 - 01:53:54,878] Yeah?
+- [01:53:55,098 - 01:53:57,258] What determines the axes along which the
+- [01:53:57,258 - 01:53:59,418] two photons come out of the positronium?
+- [01:53:59,418 - 01:53:59,718] Random.
+- [01:54:00,898 - 01:54:01,878] Sometimes that way,
+- [01:54:01,878 - 01:54:02,658] sometimes that way,
+- [01:54:02,658 - 01:54:03,398] sometimes that way.
+- [01:54:03,478 - 01:54:05,318] That's the randomness of quantum mechanics.
+- [01:54:06,178 - 01:54:06,618] Uncertain...
+- [01:54:06,618 - 01:54:07,498] That's...
+- [01:54:08,838 - 01:54:09,458] You know,
+- [01:54:09,458 - 01:54:11,958] it's like taking a spin,
+- [01:54:11,958 - 01:54:13,498] orienting it this way,
+- [01:54:13,498 - 01:54:15,198] and then measuring it along the other axis.
+- [01:54:15,318 - 01:54:16,038] Sometimes this way,
+- [01:54:16,038 - 01:54:16,818] sometimes that way.
+- [01:54:17,738 - 01:54:20,138] So it comes out with some angular distribution,
+- [01:54:20,138 - 01:54:22,398] but randomly in different directions.
+- [01:54:23,017 - 01:54:24,638] And at random times,
+- [01:54:24,638 - 01:54:25,838] to some extent.
+- [01:54:27,278 - 01:54:29,838] When you first defined L,
+- [01:54:29,838 - 01:54:31,198] earlier this evening...
+- [01:54:31,198 - 01:54:31,858] The Lagrangian?
+- [01:54:32,198 - 01:54:32,418] Right.
+- [01:54:33,218 - 01:54:35,808] I think you picked it because it was the
+- [01:54:35,808 - 01:54:38,398] one thing we had available that would be invariant.
+- [01:54:38,618 - 01:54:41,458] The action principle being a statement about
+- [01:54:41,458 - 01:54:44,298] minimizing something or other about a trajectory
+- [01:54:44,298 - 01:54:46,488] will be invariant if you
+- [01:54:46,488 - 01:54:48,678] choose the action to be invariant.
+- [01:54:48,798 - 01:54:49,098] Right,
+- [01:54:49,098 - 01:54:49,678] so we...
+- [01:54:50,318 - 01:54:52,278] Is there more bottoms-up weight?
+- [01:54:54,118 - 01:54:54,678] No.
+- [01:54:55,758 - 01:54:56,318] No.
+- [01:54:56,678 - 01:54:57,078] No.
+- [01:54:58,398 - 01:54:58,418] No.
+- [01:54:58,418 - 01:55:00,438] So when we did the classical mechanics,
+- [01:55:00,438 - 01:55:01,498] I mean,
+- [01:55:01,498 - 01:55:03,198] I understood how this is right,
+- [01:55:03,198 - 01:55:06,598] but we basically chose the action so that
+- [01:55:06,598 - 01:55:09,998] when you get the Euler equations for that pathway,
+- [01:55:09,998 - 01:55:13,298] that they provide the equations of motion...
+- [01:55:13,298 - 01:55:13,558] Newton.
+- [01:55:13,578 - 01:55:14,218] Newton equations.
+- [01:55:15,018 - 01:55:15,518] Newton equations.
+- [01:55:15,638 - 01:55:15,738] Yes,
+- [01:55:15,738 - 01:55:15,918] indeed.
+- [01:55:16,218 - 01:55:17,728] So it didn't seem like there
+- [01:55:17,728 - 01:55:19,238] was anything analogous going on here.
+- [01:55:19,298 - 01:55:19,558] Maybe...
+- [01:55:19,558 - 01:55:19,838] Well,
+- [01:55:19,838 - 01:55:19,878] no.
+- [01:55:19,978 - 01:55:20,758] The only reason...
+- [01:55:20,758 - 01:55:22,558] We haven't put anything in concept of force.
+- [01:55:22,718 - 01:55:22,818] Now,
+- [01:55:22,818 - 01:55:23,498] all right.
+- [01:55:23,858 - 01:55:26,778] What we could do is we could take this
+- [01:55:26,778 - 01:55:29,698] Lagrangian and work out the equations of motion and see
+- [01:55:29,698 - 01:55:31,158] what the equations of motion say.
+- [01:55:31,538 - 01:55:33,058] But we already know what they say.
+- [01:55:33,278 - 01:55:35,558] They say that the energy and momentum
+- [01:55:35,558 - 01:55:37,838] and therefore the four velocity is constant.
+- [01:55:38,118 - 01:55:39,058] And that's all they say.
+- [01:55:39,698 - 01:55:41,838] Just as Newton's equations,
+- [01:55:41,838 - 01:55:43,938] when there's no forces around,
+- [01:55:43,938 - 01:55:45,578] just say...
+- [01:55:46,897 - 01:55:47,378] Well,
+- [01:55:47,378 - 01:55:48,218] they say that m...
+- [01:55:48,218 - 01:55:48,638] You know...
+- [01:55:48,638 - 01:55:50,238] Mass times acceleration is zero.
+- [01:55:50,558 - 01:55:53,098] That's the same as saying the time rate of change
+- [01:55:53,098 - 01:55:55,638] of momentum is zero or that the momentum is constant.
+- [01:55:56,298 - 01:55:56,978] All right.
+- [01:55:56,998 - 01:55:58,618] So this will say that the momentum is constant,
+- [01:55:58,618 - 01:55:59,318] nothing more,
+- [01:55:59,318 - 01:56:01,598] or that the four velocity is constant.
+- [01:56:02,058 - 01:56:02,578] Well,
+- [01:56:02,578 - 01:56:04,538] the four velocity being constant,
+- [01:56:04,538 - 01:56:06,998] that means not only in magnitude but in direction,
+- [01:56:06,998 - 01:56:09,858] it says that the particle moves along the space...
+- [01:56:09,858 - 01:56:12,178] A straight line in space-time.
+- [01:56:13,278 - 01:56:15,748] That the motion of the particle
+- [01:56:15,748 - 01:56:18,218] is a straight line through space-time.
+- [01:56:18,218 - 01:56:20,548] And that says it moves along
+- [01:56:20,548 - 01:56:22,878] a line in space with constant velocity.
+- [01:56:23,258 - 01:56:25,598] That's the whole content of the
+- [01:56:25,598 - 01:56:27,938] Euler-Lagrange equations for this particular case.
+- [01:56:28,238 - 01:56:28,758] Now,
+- [01:56:28,758 - 01:56:30,038] we could try putting force...
+- [01:56:30,038 - 01:56:33,168] We could try asking how does this get modified
+- [01:56:33,168 - 01:56:36,298] if we try to put various kinds of forces in.
+- [01:56:36,538 - 01:56:37,418] And we will do that.
+- [01:56:37,618 - 01:56:42,638] One of the things we will do is allow the particle to have a charge
+- [01:56:42,638 - 01:56:47,658] and to couple it to an electric and magnetic field and see how it moves.
+- [01:56:49,458 - 01:56:50,538] But so far,
+- [01:56:50,538 - 01:56:52,008] that's a little more complicated than
+- [01:56:52,008 - 01:56:53,478] anything we've done up till now.
+- [01:56:53,638 - 01:56:54,478] Up till now,
+- [01:56:54,478 - 01:56:56,638] the whole content of the Euler-Lagrange
+- [01:56:56,638 - 01:56:58,798] equations is just momentum and energy conservation.
+- [01:56:59,698 - 01:57:01,278] Or straight line motion,
+- [01:57:01,278 - 01:57:04,118] but not just straight line motion through space-time.
+- [01:57:04,198 - 01:57:06,318] Two of Newton's laws become the same law.
+- [01:57:06,718 - 01:57:07,738] What are Newton's laws?
+- [01:57:07,978 - 01:57:12,168] A particle moves along a straight line and the
+- [01:57:12,168 - 01:57:16,358] other one says the particle moves with constant velocity.
+- [01:57:16,978 - 01:57:17,638] Here it says...
+- [01:57:17,658 - 01:57:20,938] A particle moves in a straight line through space-time,
+- [01:57:20,938 - 01:57:23,198] which entails both straight
+- [01:57:23,198 - 01:57:25,458] line motion and constant velocity.
+- [01:57:28,798 - 01:57:29,838] One more question.
+- [01:57:30,698 - 01:57:31,758] Then I gotta go.
+- [01:57:32,078 - 01:57:34,818] You talked about how in the
+- [01:57:34,818 - 01:57:37,558] limit where velocity is very low,
+- [01:57:37,558 - 01:57:39,998] that relativity...
+- [01:57:40,658 - 01:57:41,898] The laws of Poisson,
+- [01:57:41,898 - 01:57:43,218] the laws of Newton...
+- [01:57:43,218 - 01:57:43,458] Right.
+- [01:57:44,158 - 01:57:45,898] Or at least the laws of
+- [01:57:45,898 - 01:57:47,638] conservation as they would have been defined.
+- [01:57:47,638 - 01:57:47,658] Yeah,
+- [01:57:47,658 - 01:57:48,338] that's what we derived from Newton.
+- [01:57:48,638 - 01:57:48,758] Yeah.
+- [01:57:48,938 - 01:57:49,378] Right.
+- [01:57:49,598 - 01:57:51,198] And in...
+- [01:57:51,198 - 01:57:52,658] I'm just trying to make that connection.
+- [01:57:52,658 - 01:57:53,398] I'm not really sure here,
+- [01:57:53,398 - 01:57:55,318] but in a previous program
+- [01:57:55,318 - 01:57:57,238] we were talking about quantum mechanics,
+- [01:57:57,338 - 01:57:59,158] we were talking about this other
+- [01:57:59,158 - 01:58:00,978] limit where you increase the mass,
+- [01:58:00,978 - 01:58:01,758] you...
+- [01:58:02,777 - 01:58:05,298] The laws of quantum mechanics also approach,
+- [01:58:05,298 - 01:58:05,818] you know?
+- [01:58:06,618 - 01:58:07,058] Yes.
+- [01:58:08,138 - 01:58:09,878] But it's an entirely different limit.
+- [01:58:10,838 - 01:58:11,278] Yeah,
+- [01:58:11,278 - 01:58:11,638] right.
+- [01:58:12,138 - 01:58:13,178] What is velocity?
+- [01:58:13,178 - 01:58:14,748] In the middle is like the mass
+- [01:58:14,748 - 01:58:16,318] or the number of particles or something?
+- [01:58:16,318 - 01:58:19,278] A combination of various things,
+- [01:58:19,278 - 01:58:22,278] but let's say the mass of the object and...
+- [01:58:22,278 - 01:58:25,568] The important thing is the mass of the object
+- [01:58:25,568 - 01:58:28,858] and the smoothness of the forces that act on it.
+- [01:58:28,918 - 01:58:30,538] It shouldn't be abrupt and sudden.
+- [01:58:31,478 - 01:58:32,498] But that's another,
+- [01:58:32,498 - 01:58:32,838] you know,
+- [01:58:32,838 - 01:58:34,078] we gotta separate things.
+- [01:58:34,298 - 01:58:37,338] This has got to do with the speed of light.
+- [01:58:39,578 - 01:58:42,278] Quantum mechanics has to do with Planck's constant.
+- [01:58:42,718 - 01:58:44,508] And you can have a
+- [01:58:44,508 - 01:58:46,298] situation which is highly quantum mechanical,
+- [01:58:46,318 - 01:58:48,258] but non-relativistic.
+- [01:58:48,418 - 01:58:50,378] You can have a situation which
+- [01:58:50,378 - 01:58:52,338] is highly relativistic and not quantum mechanical,
+- [01:58:52,618 - 01:58:53,658] and you can have both.
+- [01:58:54,838 - 01:58:56,198] Relativistic and quantum mechanical.
+- [01:58:56,478 - 01:58:58,198] The two independent limits.
+- [01:58:59,678 - 01:59:01,928] Is this where they say that
+- [01:59:01,928 - 01:59:04,178] there's a compatibility between the two?
+- [01:59:04,358 - 01:59:05,898] I don't know where I read that.
+- [01:59:06,238 - 01:59:06,718] No,
+- [01:59:06,718 - 01:59:06,778] no,
+- [01:59:06,778 - 01:59:07,918] there's no incompatibility.
+- [01:59:08,138 - 01:59:09,738] I think you're thinking about gravity.
+- [01:59:09,978 - 01:59:10,458] Gravity,
+- [01:59:10,458 - 01:59:12,338] there are puzzles about,
+- [01:59:12,338 - 01:59:14,298] but we haven't gotten there yet.
+- [01:59:14,498 - 01:59:16,298] So far we're not dealing with gravity.
+- [01:59:16,318 - 01:59:16,798] Gravity at all.
+- [01:59:17,978 - 01:59:18,818] We'll come to it.
+- [01:59:19,158 - 01:59:19,598] Okay,
+- [01:59:19,598 - 01:59:21,238] I think it's time to go home.
+- [01:59:23,458 - 01:59:24,178] For more,
+- [01:59:24,178 - 01:59:26,578] please visit us at stanford.edu.
