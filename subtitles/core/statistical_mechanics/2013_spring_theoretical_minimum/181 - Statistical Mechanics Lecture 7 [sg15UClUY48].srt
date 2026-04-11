@@ -1,0 +1,11764 @@
+1
+00:00:04,980 --> 00:00:06,180
+Stanford University
+
+2
+00:00:09,240 --> 00:00:09,840
+Alright,
+
+3
+00:00:09,840 --> 00:00:10,440
+let's,
+
+4
+00:00:10,440 --> 00:00:13,580
+what I want to do tonight is just begin,
+
+5
+00:00:13,580 --> 00:00:15,300
+well what we're going to do
+
+6
+00:00:15,300 --> 00:00:17,900
+is eventually get to the second law,
+
+7
+00:00:17,900 --> 00:00:19,520
+what the second law means,
+
+8
+00:00:19,520 --> 00:00:21,620
+how it's consistent.
+
+9
+00:00:24,180 --> 00:00:26,610
+I will try to explain the second
+
+10
+00:00:26,610 --> 00:00:29,040
+law to the best of my ability.
+
+11
+00:00:29,040 --> 00:00:31,540
+There should be lots of
+
+12
+00:00:31,540 --> 00:00:33,540
+questions which I will try to answer.
+
+13
+00:00:33,540 --> 00:00:39,440
+I know a little bit about the second law.
+
+14
+00:00:39,440 --> 00:00:42,760
+There may
+
+15
+00:00:42,760 --> 00:00:43,730
+be two or three people
+
+16
+00:00:43,730 --> 00:00:44,700
+in the world who know more,
+
+17
+00:00:44,700 --> 00:00:45,640
+but I've never met any.
+
+18
+00:00:55,650 --> 00:00:57,130
+we'll talk a little about the second law,
+
+19
+00:00:57,130 --> 00:00:59,030
+what it means.
+
+20
+00:00:59,990 --> 00:01:01,210
+But before we do that,
+
+21
+00:01:01,210 --> 00:01:06,430
+I want to just think
+
+22
+00:01:06,430 --> 00:01:11,610
+about some physical examples that we've
+
+23
+00:01:11,610 --> 00:01:14,810
+learned some information about by doing
+
+24
+00:01:14,810 --> 00:01:15,690
+statistical mechanics.
+
+25
+00:01:17,630 --> 00:01:18,170
+First,
+
+26
+00:01:18,170 --> 00:01:19,520
+I just want to illustrate
+
+27
+00:01:19,520 --> 00:01:20,870
+some of the just numerical facts
+
+28
+00:01:23,430 --> 00:01:25,550
+about gases and so forth
+
+29
+00:01:25,550 --> 00:01:27,670
+by contemplating the speed of sound.
+
+30
+00:01:27,750 --> 00:01:29,090
+Speed of sound in a gas,
+
+31
+00:01:29,090 --> 00:01:31,630
+and in particular in a fairly dilute gas.
+
+32
+00:01:32,530 --> 00:01:34,030
+What is the speed of sound?
+
+33
+00:01:34,290 --> 00:01:36,730
+There are two formulas for the speed of sound,
+
+34
+00:01:36,870 --> 00:01:38,810
+but if you think about it for a moment,
+
+35
+00:01:39,010 --> 00:01:43,250
+and you start with a very dilute gas,
+
+36
+00:01:44,410 --> 00:01:46,830
+what would you expect the speed of sound to be?
+
+37
+00:01:48,190 --> 00:01:50,850
+Let's say you make a little bit of overdrive
+
+38
+00:01:50,870 --> 00:01:51,290
+in a very dense region.
+
+39
+00:01:52,770 --> 00:01:56,070
+How fast does that overdensity spread?
+
+40
+00:01:56,730 --> 00:01:58,730
+That's the speed of sound.
+
+41
+00:01:59,610 --> 00:02:00,490
+What would you guess?
+
+42
+00:02:00,609 --> 00:02:00,749
+Well,
+
+43
+00:02:00,749 --> 00:02:01,590
+I know what I would guess.
+
+44
+00:02:02,030 --> 00:02:04,060
+I would guess that it
+
+45
+00:02:04,060 --> 00:02:06,090
+sure isn't going to be faster
+
+46
+00:02:06,090 --> 00:02:08,000
+than the time that it
+
+47
+00:02:08,000 --> 00:02:09,910
+takes for a molecule to travel
+
+48
+00:02:09,910 --> 00:02:11,290
+out to a certain distance.
+
+49
+00:02:12,170 --> 00:02:13,290
+And in fact,
+
+50
+00:02:13,290 --> 00:02:14,890
+for a very dilute gas,
+
+51
+00:02:15,090 --> 00:02:17,830
+you might expect that that little overdense region
+
+52
+00:02:18,590 --> 00:02:19,910
+just spreads out,
+
+53
+00:02:21,150 --> 00:02:23,890
+with a velocity that's not too different
+
+54
+00:02:23,890 --> 00:02:25,890
+than the average velocity of the molecules.
+
+55
+00:02:27,310 --> 00:02:28,670
+How does it spread out?
+
+56
+00:02:28,750 --> 00:02:30,630
+It spreads out by the molecules moving out.
+
+57
+00:02:31,429 --> 00:02:33,530
+How fast do the molecules move out?
+
+58
+00:02:33,610 --> 00:02:34,790
+They move out with their velocity.
+
+59
+00:02:35,890 --> 00:02:37,150
+What is their velocity?
+
+60
+00:02:37,630 --> 00:02:38,110
+Ah,
+
+61
+00:02:38,110 --> 00:02:38,670
+now,
+
+62
+00:02:38,670 --> 00:02:41,210
+then we have to work a little bit
+
+63
+00:02:41,210 --> 00:02:42,570
+to find out what the velocity is.
+
+64
+00:02:43,070 --> 00:02:44,690
+So let's write down a formula.
+
+65
+00:02:46,850 --> 00:02:49,310
+In thermal equilibrium at a temperature T,
+
+66
+00:02:49,510 --> 00:02:50,770
+in a dilute gas,
+
+67
+00:02:50,770 --> 00:02:59,230
+every molecule has a energy equal to 3 halves kT.
+
+68
+00:03:01,650 --> 00:03:02,250
+Now,
+
+69
+00:03:02,250 --> 00:03:03,770
+I'm going to put the k in now,
+
+70
+00:03:03,970 --> 00:03:06,629
+because we want to do some laboratory numerology.
+
+71
+00:03:06,990 --> 00:03:10,910
+3 halves k Boltzmann times the temperature,
+
+72
+00:03:11,130 --> 00:03:14,830
+where the temperature is measured in Kelvin.
+
+73
+00:03:15,130 --> 00:03:17,290
+Kelvin means relative to absolute zero,
+
+74
+00:03:17,450 --> 00:03:19,350
+but the difference between,
+
+75
+00:03:19,350 --> 00:03:19,890
+you know,
+
+76
+00:03:19,890 --> 00:03:22,370
+one degree corresponds to one centigrade degree.
+
+77
+00:03:23,630 --> 00:03:24,110
+Nine,
+
+78
+00:03:24,110 --> 00:03:24,930
+what is it,
+
+79
+00:03:24,930 --> 00:03:26,570
+nine-fifths of a Fahrenheit degree.
+
+80
+00:03:27,810 --> 00:03:28,290
+Okay,
+
+81
+00:03:28,290 --> 00:03:29,710
+so it's three halves,
+
+82
+00:03:29,930 --> 00:03:31,550
+and you can see from this formula
+
+83
+00:03:32,050 --> 00:03:34,010
+that the temperature goes to zero
+
+84
+00:03:34,010 --> 00:03:36,390
+when the energy goes to zero.
+
+85
+00:03:36,590 --> 00:03:37,670
+You see it right here.
+
+86
+00:03:37,850 --> 00:03:38,110
+Okay,
+
+87
+00:03:38,110 --> 00:03:39,490
+so temperature zero,
+
+88
+00:03:39,490 --> 00:03:41,170
+energy zero.
+
+89
+00:03:42,210 --> 00:03:43,470
+And what is that energy?
+
+90
+00:03:43,650 --> 00:03:45,550
+That energy must be the kinetic energy
+
+91
+00:03:46,170 --> 00:03:47,110
+of the molecule.
+
+92
+00:03:47,290 --> 00:03:48,490
+It's the only energy that it has
+
+93
+00:03:48,490 --> 00:03:50,790
+for an ideal gas in a big box.
+
+94
+00:03:51,430 --> 00:03:53,130
+So it's got to be one-half
+
+95
+00:03:54,290 --> 00:03:57,330
+the mass of the molecule times the velocity squared.
+
+96
+00:03:58,240 --> 00:04:01,370
+And now that tells us what the average velocity is.
+
+97
+00:04:02,710 --> 00:04:03,730
+Multiply by two.
+
+98
+00:04:09,470 --> 00:04:11,330
+I didn't mean to throw away the three.
+
+99
+00:04:13,370 --> 00:04:15,110
+And now divide by m.
+
+100
+00:04:18,529 --> 00:04:20,029
+And take the square root,
+
+101
+00:04:20,149 --> 00:04:22,490
+but I'll leave it as velocity squared for the moment,
+
+102
+00:04:22,550 --> 00:04:23,570
+just the velocity squared.
+
+103
+00:04:24,190 --> 00:04:26,490
+And you might expect that that's more or less
+
+104
+00:04:26,490 --> 00:04:31,750
+the speed of sound in a gas.
+
+105
+00:04:31,990 --> 00:04:32,770
+And that's pretty close.
+
+106
+00:04:33,270 --> 00:04:34,410
+There is a more exact,
+
+107
+00:04:34,410 --> 00:04:35,390
+let's see,
+
+108
+00:04:35,510 --> 00:04:37,050
+there is a more exact formula.
+
+109
+00:04:38,190 --> 00:04:42,230
+The more exact formula comes by actually studying
+
+110
+00:04:42,230 --> 00:04:44,530
+the mechanics of lumps of gas
+
+111
+00:04:45,350 --> 00:04:46,950
+and the forces on them.
+
+112
+00:04:46,950 --> 00:04:47,630
+The forces,
+
+113
+00:04:47,630 --> 00:04:50,030
+I'm not going to work it out.
+
+114
+00:04:50,090 --> 00:04:50,970
+We're not going to do this tonight.
+
+115
+00:04:51,210 --> 00:04:52,290
+We could do it another night.
+
+116
+00:04:52,450 --> 00:04:53,010
+It's not hard.
+
+117
+00:04:53,050 --> 00:04:53,870
+It's easy to do.
+
+118
+00:04:55,830 --> 00:04:57,190
+Newton was able to do it.
+
+119
+00:04:59,450 --> 00:04:59,810
+Well,
+
+120
+00:04:59,810 --> 00:05:00,210
+I mean,
+
+121
+00:05:00,210 --> 00:05:00,530
+you know.
+
+122
+00:05:02,670 --> 00:05:03,390
+Newton did it.
+
+123
+00:05:07,930 --> 00:05:08,710
+It's not too hard.
+
+124
+00:05:09,150 --> 00:05:09,430
+You know,
+
+125
+00:05:09,430 --> 00:05:10,950
+you take a box of gas,
+
+126
+00:05:11,110 --> 00:05:13,870
+you take a region in the gas,
+
+127
+00:05:14,290 --> 00:05:16,570
+and you first say what forces are on it,
+
+128
+00:05:16,950 --> 00:05:18,100
+the forces have to do
+
+129
+00:05:18,100 --> 00:05:19,250
+with the pressure from the outside,
+
+130
+00:05:19,809 --> 00:05:21,419
+and there's a net force
+
+131
+00:05:21,419 --> 00:05:23,030
+if there's a gradient of pressure.
+
+132
+00:05:23,150 --> 00:05:24,320
+If the pressure on this wall
+
+133
+00:05:24,320 --> 00:05:25,490
+is the same as the pressure
+
+134
+00:05:25,490 --> 00:05:26,130
+on that wall,
+
+135
+00:05:26,130 --> 00:05:27,150
+there's no net force.
+
+136
+00:05:27,610 --> 00:05:30,210
+So there's some force due to the gradient of pressure.
+
+137
+00:05:30,350 --> 00:05:31,370
+You take that into account.
+
+138
+00:05:31,890 --> 00:05:36,710
+What is the response to the variation in pressure?
+
+139
+00:05:37,170 --> 00:05:38,330
+It's F equals m a.
+
+140
+00:05:38,430 --> 00:05:38,950
+It's acceleration.
+
+141
+00:05:39,370 --> 00:05:40,690
+So the box starts to move.
+
+142
+00:05:41,889 --> 00:05:44,970
+The acceleration depends on the mass in the box,
+
+143
+00:05:44,990 --> 00:05:45,710
+so the density,
+
+144
+00:05:45,710 --> 00:05:46,930
+the mass density,
+
+145
+00:05:46,950 --> 00:05:47,770
+comes into it.
+
+146
+00:05:48,030 --> 00:05:49,730
+But in the end,
+
+147
+00:05:49,730 --> 00:05:51,070
+you find a formula.
+
+148
+00:05:51,950 --> 00:05:53,090
+And the formula,
+
+149
+00:05:53,090 --> 00:05:54,750
+I'm just going to write the formula down.
+
+150
+00:05:55,130 --> 00:05:58,610
+The formula is that the speed of sound squared,
+
+151
+00:05:58,690 --> 00:06:00,230
+this is the velocity of a molecule,
+
+152
+00:06:00,950 --> 00:06:04,570
+the speed of sound squared is equal,
+
+153
+00:06:04,710 --> 00:06:06,790
+and this is a fairly general formula.
+
+154
+00:06:07,670 --> 00:06:12,890
+This formula is more general than just the ideal gas
+
+155
+00:06:12,890 --> 00:06:14,590
+or an approximately ideal gas.
+
+156
+00:06:14,930 --> 00:06:16,930
+It's E squared is equal to,
+
+157
+00:06:16,950 --> 00:06:19,450
+the derivative of the pressure
+
+158
+00:06:20,610 --> 00:06:22,890
+with respect to the mass density.
+
+159
+00:06:23,710 --> 00:06:25,670
+Now I'm going to write the mass density
+
+160
+00:06:26,330 --> 00:06:29,730
+as the product of the density of particles,
+
+161
+00:06:29,970 --> 00:06:31,610
+the thing we've already called rho,
+
+162
+00:06:31,950 --> 00:06:33,750
+the density of particles,
+
+163
+00:06:36,970 --> 00:06:39,590
+times the mass of an individual particle.
+
+164
+00:06:42,270 --> 00:06:44,150
+Mass of the individual particle
+
+165
+00:06:44,910 --> 00:06:46,290
+times the density,
+
+166
+00:06:46,950 --> 00:06:47,670
+of particles,
+
+167
+00:06:47,810 --> 00:06:49,530
+is the mass density.
+
+168
+00:06:50,250 --> 00:06:52,130
+So the standard formula
+
+169
+00:06:52,130 --> 00:06:54,150
+for the square of the speed of sound
+
+170
+00:06:54,150 --> 00:06:56,190
+is the derivative of the pressure
+
+171
+00:06:56,190 --> 00:06:57,530
+with respect to the mass density,
+
+172
+00:06:57,850 --> 00:07:00,510
+which is the same as the derivative of the pressure
+
+173
+00:07:00,510 --> 00:07:01,930
+with respect to the particle density
+
+174
+00:07:01,930 --> 00:07:03,630
+divided by the mass.
+
+175
+00:07:04,730 --> 00:07:06,530
+Let's see what the ideal gas formula
+
+176
+00:07:06,530 --> 00:07:07,730
+has to say about this.
+
+177
+00:07:08,090 --> 00:07:10,990
+The ideal gas formula that we derived
+
+178
+00:07:11,730 --> 00:07:15,610
+is pressure times volume equals
+
+179
+00:07:15,610 --> 00:07:17,010
+n times,
+
+180
+00:07:17,350 --> 00:07:19,210
+let's put the k Boltzmann in,
+
+181
+00:07:19,250 --> 00:07:20,790
+times the temperature,
+
+182
+00:07:22,369 --> 00:07:24,470
+or dividing by the volume,
+
+183
+00:07:27,309 --> 00:07:28,950
+n over the volume.
+
+184
+00:07:30,510 --> 00:07:32,090
+Now n over the volume
+
+185
+00:07:32,090 --> 00:07:33,450
+is the particle density.
+
+186
+00:07:34,110 --> 00:07:36,110
+So here we have the particle density.
+
+187
+00:07:37,850 --> 00:07:38,830
+This is rho.
+
+188
+00:07:40,170 --> 00:07:41,950
+But it's not the mass density.
+
+189
+00:07:42,590 --> 00:07:43,130
+If,
+
+190
+00:07:43,130 --> 00:07:44,930
+well alright,
+
+191
+00:07:44,930 --> 00:07:45,450
+here it is.
+
+192
+00:07:45,450 --> 00:07:46,030
+We have it here.
+
+193
+00:07:46,430 --> 00:07:48,010
+Derivative of p with respect to rho
+
+194
+00:07:48,010 --> 00:07:49,130
+times one over mass.
+
+195
+00:07:49,850 --> 00:07:51,450
+So this is the formula.
+
+196
+00:07:51,670 --> 00:07:53,870
+Here we have p as a function of rho.
+
+197
+00:07:54,570 --> 00:07:56,810
+What is the derivative of p with respect to rho?
+
+198
+00:07:57,250 --> 00:07:59,190
+Derivative of p with respect to rho
+
+199
+00:08:00,090 --> 00:08:01,950
+is equal to k Boltzmann t.
+
+200
+00:08:05,930 --> 00:08:06,810
+Just differentiating.
+
+201
+00:08:07,650 --> 00:08:09,750
+And then we divide by one more mass.
+
+202
+00:08:13,450 --> 00:08:16,410
+And we get k Boltzmann t over m.
+
+203
+00:08:17,550 --> 00:08:19,490
+Not quite the same formula.
+
+204
+00:08:19,910 --> 00:08:21,550
+But for the velocity itself,
+
+205
+00:08:21,870 --> 00:08:23,050
+this is the square of the velocity.
+
+206
+00:08:26,470 --> 00:08:28,110
+This simplistic formula
+
+207
+00:08:31,370 --> 00:08:34,250
+is wrong by a factor of square root of three.
+
+208
+00:08:34,350 --> 00:08:35,789
+Square root of three is 1.7,
+
+209
+00:08:35,890 --> 00:08:37,429
+so it's not so bad.
+
+210
+00:08:38,030 --> 00:08:39,510
+But order of magnitude,
+
+211
+00:08:39,750 --> 00:08:41,150
+it's essentially correct.
+
+212
+00:08:42,190 --> 00:08:42,950
+We could,
+
+213
+00:08:44,049 --> 00:08:45,050
+let's work it out.
+
+214
+00:08:45,590 --> 00:08:47,210
+Let's work it out for a,
+
+215
+00:08:48,010 --> 00:08:48,870
+for the air.
+
+216
+00:08:49,810 --> 00:08:51,570
+I have some numbers written down.
+
+217
+00:08:54,350 --> 00:08:55,470
+Let's use this formula.
+
+218
+00:09:01,290 --> 00:09:02,710
+You just stick in some numbers,
+
+219
+00:09:02,730 --> 00:09:03,290
+either formula,
+
+220
+00:09:03,470 --> 00:09:04,070
+they'll be,
+
+221
+00:09:04,250 --> 00:09:06,270
+the velocity will be the same
+
+222
+00:09:06,270 --> 00:09:08,770
+to within a factor of 1.7
+
+223
+00:09:08,770 --> 00:09:09,550
+or whatever it is.
+
+224
+00:09:10,350 --> 00:09:10,830
+Alright,
+
+225
+00:09:10,830 --> 00:09:11,810
+so if you stick in,
+
+226
+00:09:11,870 --> 00:09:15,430
+k Boltzmann equals 1.3
+
+227
+00:09:15,430 --> 00:09:17,550
+times 10 to the minus 23rd.
+
+228
+00:09:18,869 --> 00:09:19,830
+The mass,
+
+229
+00:09:19,990 --> 00:09:21,970
+what about the mass of an air molecule?
+
+230
+00:09:22,569 --> 00:09:25,310
+Air molecules are mostly made out of nitrogen.
+
+231
+00:09:25,810 --> 00:09:28,270
+And nitrogen is one of these
+
+232
+00:09:29,569 --> 00:09:30,530
+di-molecular,
+
+233
+00:09:30,689 --> 00:09:31,170
+what do you call it,
+
+234
+00:09:31,270 --> 00:09:34,550
+a two atoms,
+
+235
+00:09:34,730 --> 00:09:36,290
+a diatomic molecule.
+
+236
+00:09:36,890 --> 00:09:37,370
+Alright.
+
+237
+00:09:38,070 --> 00:09:38,650
+Nitrogen is,
+
+238
+00:09:38,650 --> 00:09:40,890
+nitrogen has atomic weight 14,
+
+239
+00:09:41,110 --> 00:09:41,550
+if I remember.
+
+240
+00:09:42,110 --> 00:09:43,950
+And so the mass of a,
+
+241
+00:09:44,610 --> 00:09:46,050
+the mass of a nitrogen,
+
+242
+00:09:46,250 --> 00:09:47,930
+or the mass of an air molecule,
+
+243
+00:09:48,050 --> 00:09:49,330
+is about 30,
+
+244
+00:09:49,330 --> 00:09:49,870
+28,
+
+245
+00:09:49,870 --> 00:09:50,270
+30,
+
+246
+00:09:51,030 --> 00:09:52,450
+times the mass of a proton.
+
+247
+00:09:52,650 --> 00:09:53,790
+And you look that up,
+
+248
+00:09:55,730 --> 00:09:57,250
+that winds up being about
+
+249
+00:09:57,250 --> 00:10:00,010
+4 times 10 to the minus 26th,
+
+250
+00:10:02,710 --> 00:10:03,130
+kilograms.
+
+251
+00:10:06,010 --> 00:10:07,270
+What else do we need to know?
+
+252
+00:10:07,270 --> 00:10:07,430
+Oh,
+
+253
+00:10:07,430 --> 00:10:09,570
+and we need to know room temperature.
+
+254
+00:10:11,070 --> 00:10:12,590
+We're working at room temperature.
+
+255
+00:10:12,710 --> 00:10:13,850
+Room temperature is 300,
+
+256
+00:10:14,170 --> 00:10:15,170
+300 degrees
+
+257
+00:10:16,130 --> 00:10:18,570
+in the same units where k Boltzmann
+
+258
+00:10:18,570 --> 00:10:19,830
+is equal to this number here.
+
+259
+00:10:20,630 --> 00:10:21,510
+So stick it in,
+
+260
+00:10:21,550 --> 00:10:22,170
+what do you get?
+
+261
+00:10:23,310 --> 00:10:24,530
+I get about,
+
+262
+00:10:29,830 --> 00:10:31,010
+when I stuck it in,
+
+263
+00:10:31,090 --> 00:10:31,690
+I got about
+
+264
+00:10:33,370 --> 00:10:34,690
+the velocity itself,
+
+265
+00:10:35,390 --> 00:10:36,790
+the velocity itself,
+
+266
+00:10:36,790 --> 00:10:38,270
+was about
+
+267
+00:10:41,290 --> 00:10:42,370
+I think 500,
+
+268
+00:10:42,670 --> 00:10:43,210
+yeah,
+
+269
+00:10:43,310 --> 00:10:44,770
+500 meters per second.
+
+270
+00:10:49,470 --> 00:10:50,690
+That's what you get out of,
+
+271
+00:10:50,690 --> 00:10:51,550
+out of this formula.
+
+272
+00:10:52,390 --> 00:10:53,930
+It's a little on the high side.
+
+273
+00:10:54,190 --> 00:10:55,730
+The right answer is about
+
+274
+00:10:55,730 --> 00:10:57,150
+300 meters per second.
+
+275
+00:10:58,950 --> 00:10:59,470
+Yeah.
+
+276
+00:10:59,650 --> 00:11:00,270
+If you,
+
+277
+00:11:00,370 --> 00:11:02,350
+if you add the neutrons in there,
+
+278
+00:11:02,450 --> 00:11:04,470
+you'll get a smaller number of...
+
+279
+00:11:04,470 --> 00:11:04,850
+No,
+
+280
+00:11:04,850 --> 00:11:04,970
+no,
+
+281
+00:11:04,970 --> 00:11:05,830
+the neutrons are in there.
+
+282
+00:11:05,830 --> 00:11:08,770
+14 means 14 protons plus neutrons.
+
+283
+00:11:09,670 --> 00:11:10,110
+Oh,
+
+284
+00:11:10,110 --> 00:11:10,970
+you did that.
+
+285
+00:11:11,090 --> 00:11:11,350
+Mm-hmm,
+
+286
+00:11:11,350 --> 00:11:11,930
+that's in there.
+
+287
+00:11:12,190 --> 00:11:12,990
+Quick question.
+
+288
+00:11:13,150 --> 00:11:13,370
+Yeah,
+
+289
+00:11:13,370 --> 00:11:14,810
+atomic weight is 14,
+
+290
+00:11:14,910 --> 00:11:15,790
+not the atomic number.
+
+291
+00:11:16,130 --> 00:11:17,050
+The number three
+
+292
+00:11:17,050 --> 00:11:19,510
+in the initial derivation
+
+293
+00:11:19,510 --> 00:11:20,810
+had to do with the three dimensions.
+
+294
+00:11:21,010 --> 00:11:21,170
+Yes,
+
+295
+00:11:21,170 --> 00:11:21,470
+it did.
+
+296
+00:11:21,650 --> 00:11:23,430
+And the speed of sound
+
+297
+00:11:23,430 --> 00:11:24,810
+is meant to be in one direction.
+
+298
+00:11:24,930 --> 00:11:26,590
+Doesn't that make the three go away?
+
+299
+00:11:27,729 --> 00:11:28,170
+Well,
+
+300
+00:11:28,170 --> 00:11:28,610
+no.
+
+301
+00:11:33,070 --> 00:11:33,510
+Maybe.
+
+302
+00:11:34,530 --> 00:11:34,970
+Thanks.
+
+303
+00:11:37,110 --> 00:11:37,550
+Okay.
+
+304
+00:11:39,910 --> 00:11:40,530
+All right,
+
+305
+00:11:40,530 --> 00:11:40,910
+good.
+
+306
+00:11:42,510 --> 00:11:43,210
+Good point,
+
+307
+00:11:43,210 --> 00:11:43,550
+maybe.
+
+308
+00:11:44,070 --> 00:11:45,110
+I'll have to think about it.
+
+309
+00:11:46,610 --> 00:11:47,390
+But the point,
+
+310
+00:11:47,390 --> 00:11:47,650
+yeah,
+
+311
+00:11:47,670 --> 00:11:48,450
+you may be right.
+
+312
+00:11:52,769 --> 00:11:54,170
+You may well be right.
+
+313
+00:11:56,449 --> 00:11:56,889
+So,
+
+314
+00:11:56,889 --> 00:11:57,870
+but in any case,
+
+315
+00:11:57,870 --> 00:12:00,150
+the orders of magnitude are correct.
+
+316
+00:12:01,350 --> 00:12:01,790
+And,
+
+317
+00:12:04,049 --> 00:12:05,270
+I suppose this,
+
+318
+00:12:06,129 --> 00:12:06,770
+I wonder,
+
+319
+00:12:06,770 --> 00:12:07,790
+I don't know who the first one
+
+320
+00:12:07,790 --> 00:12:09,670
+to actually do this calculation was.
+
+321
+00:12:09,850 --> 00:12:10,450
+I don't know.
+
+322
+00:12:10,830 --> 00:12:11,270
+Actually,
+
+323
+00:12:11,270 --> 00:12:12,110
+sit down and say,
+
+324
+00:12:12,150 --> 00:12:12,990
+what is the speed of light
+
+325
+00:12:12,990 --> 00:12:15,050
+given the atomic weight of nitrogen,
+
+326
+00:12:15,370 --> 00:12:17,630
+given Boltzmann's constant,
+
+327
+00:12:17,950 --> 00:12:18,150
+and,
+
+328
+00:12:18,150 --> 00:12:19,670
+of course,
+
+329
+00:12:19,670 --> 00:12:20,290
+they didn't,
+
+330
+00:12:20,290 --> 00:12:21,490
+in order to use,
+
+331
+00:12:22,869 --> 00:12:23,990
+where's the other equation?
+
+332
+00:12:24,929 --> 00:12:26,310
+dp by d rho,
+
+333
+00:12:27,710 --> 00:12:29,740
+all I had to do
+
+334
+00:12:29,740 --> 00:12:31,770
+was to measure the pressure result.
+
+335
+00:12:31,770 --> 00:12:31,790
+And,
+
+336
+00:12:31,790 --> 00:12:31,790
+I think,
+
+337
+00:12:31,790 --> 00:12:32,870
+that was a function of density.
+
+338
+00:12:33,210 --> 00:12:33,470
+So,
+
+339
+00:12:33,470 --> 00:12:34,690
+they didn't have to do anything fancy.
+
+340
+00:12:35,050 --> 00:12:35,970
+But I'm not sure who
+
+341
+00:12:35,970 --> 00:12:36,890
+was the first one to realize
+
+342
+00:12:36,890 --> 00:12:40,030
+that it was basically the velocity of a molecule.
+
+343
+00:12:45,710 --> 00:12:46,030
+Question?
+
+344
+00:12:47,110 --> 00:12:47,570
+All right,
+
+345
+00:12:47,570 --> 00:12:47,790
+now,
+
+346
+00:12:48,969 --> 00:12:50,330
+I want to come to a puzzle.
+
+347
+00:12:54,110 --> 00:12:54,430
+Well,
+
+348
+00:12:54,430 --> 00:12:54,690
+let's see,
+
+349
+00:12:54,710 --> 00:12:55,570
+are we ready for the puzzle?
+
+350
+00:12:55,690 --> 00:12:55,830
+No,
+
+351
+00:12:55,830 --> 00:12:56,830
+we're not ready for the puzzle.
+
+352
+00:12:58,690 --> 00:12:59,190
+We're going,
+
+353
+00:12:59,190 --> 00:12:59,370
+yeah.
+
+354
+00:12:59,370 --> 00:12:59,910
+So,
+
+355
+00:12:59,910 --> 00:13:02,990
+what we just did assumes that it's constant,
+
+356
+00:13:03,210 --> 00:13:04,150
+but it's not really constant.
+
+357
+00:13:04,610 --> 00:13:05,550
+Which is constant?
+
+358
+00:13:05,930 --> 00:13:06,630
+The temperature.
+
+359
+00:13:06,870 --> 00:13:07,370
+Yeah,
+
+360
+00:13:07,370 --> 00:13:10,130
+I think it's a fairly good assumption.
+
+361
+00:13:12,530 --> 00:13:13,130
+The,
+
+362
+00:13:13,130 --> 00:13:15,690
+of course,
+
+363
+00:13:15,730 --> 00:13:16,070
+yes,
+
+364
+00:13:16,070 --> 00:13:17,850
+we did assume the temperature was constant.
+
+365
+00:13:24,030 --> 00:13:26,430
+I think that's probably very good
+
+366
+00:13:26,430 --> 00:13:29,150
+for small amplitude sound waves.
+
+367
+00:13:29,150 --> 00:13:31,990
+Imagine for small amplitude sound waves,
+
+368
+00:13:32,130 --> 00:13:34,050
+the temperature doesn't vary very much
+
+369
+00:13:34,050 --> 00:13:36,270
+as it vibrates.
+
+370
+00:13:36,350 --> 00:13:36,510
+Now,
+
+371
+00:13:36,510 --> 00:13:36,990
+again,
+
+372
+00:13:36,990 --> 00:13:39,650
+I'm not absolutely sure about that.
+
+373
+00:13:43,430 --> 00:13:48,030
+I would guess that the temperature
+
+374
+00:13:48,030 --> 00:13:48,750
+has very,
+
+375
+00:13:48,750 --> 00:13:49,930
+very little variation
+
+376
+00:13:49,930 --> 00:13:53,590
+in a near ideal gas
+
+377
+00:13:55,310 --> 00:13:56,350
+for very,
+
+378
+00:13:56,350 --> 00:13:58,950
+very low amplitude sound waves.
+
+379
+00:13:59,150 --> 00:13:59,370
+So,
+
+380
+00:13:59,370 --> 00:14:01,250
+I think that's probably okay.
+
+381
+00:14:01,430 --> 00:14:02,970
+The variation of pressure is also small.
+
+382
+00:14:03,110 --> 00:14:03,590
+What's that?
+
+383
+00:14:03,810 --> 00:14:05,830
+The variation of pressure would also be small.
+
+384
+00:14:05,990 --> 00:14:07,210
+The derivative of that,
+
+385
+00:14:07,210 --> 00:14:07,450
+I've heard.
+
+386
+00:14:07,710 --> 00:14:10,090
+The variation of pressure is also small,
+
+387
+00:14:10,090 --> 00:14:10,550
+yeah.
+
+388
+00:14:12,150 --> 00:14:12,670
+Yeah,
+
+389
+00:14:12,670 --> 00:14:14,270
+the variation of pressure is small.
+
+390
+00:14:15,290 --> 00:14:17,370
+The variation of density is small.
+
+391
+00:14:17,810 --> 00:14:20,410
+But the variation of pressure with respect to density
+
+392
+00:14:20,410 --> 00:14:21,670
+is not necessarily small.
+
+393
+00:14:23,750 --> 00:14:24,270
+Yeah.
+
+394
+00:14:25,230 --> 00:14:25,950
+I mean,
+
+395
+00:14:25,950 --> 00:14:26,730
+usually,
+
+396
+00:14:26,730 --> 00:14:27,470
+I mean,
+
+397
+00:14:27,490 --> 00:14:29,130
+I expect that when something is,
+
+398
+00:14:30,810 --> 00:14:32,770
+if you increase the pressure of it,
+
+399
+00:14:32,910 --> 00:14:35,890
+you'd think that the speed of sound would go faster
+
+400
+00:14:35,890 --> 00:14:37,820
+because it's sort of like a
+
+401
+00:14:37,820 --> 00:14:39,750
+solid is faster speed of sound
+
+402
+00:14:39,750 --> 00:14:42,150
+than a liquid is in the gas.
+
+403
+00:14:43,749 --> 00:14:44,349
+Well,
+
+404
+00:14:44,349 --> 00:14:46,870
+this dpd rho is calculated
+
+405
+00:14:47,830 --> 00:14:50,250
+at the pressure that you're working at.
+
+406
+00:14:51,310 --> 00:14:54,010
+dpd rho is not necessarily a constant.
+
+407
+00:14:54,310 --> 00:14:56,590
+The pressure depends on the density
+
+408
+00:14:57,010 --> 00:14:58,290
+in a complicated way.
+
+409
+00:14:59,150 --> 00:14:59,910
+In particular,
+
+410
+00:14:59,910 --> 00:15:03,430
+as the molecules get really squeezed together,
+
+411
+00:15:03,670 --> 00:15:07,070
+the derivative of pressure with respect to rho
+
+412
+00:15:07,070 --> 00:15:07,630
+gets very,
+
+413
+00:15:07,630 --> 00:15:08,330
+very large.
+
+414
+00:15:09,610 --> 00:15:10,130
+So,
+
+415
+00:15:10,130 --> 00:15:10,890
+you're right,
+
+416
+00:15:10,890 --> 00:15:13,150
+but it's because this changes.
+
+417
+00:15:13,530 --> 00:15:14,030
+Yeah.
+
+418
+00:15:14,110 --> 00:15:15,590
+You'd expect V0 to be a constant,
+
+419
+00:15:15,730 --> 00:15:17,530
+but something related to...
+
+420
+00:15:18,030 --> 00:15:19,070
+You'd expect what?
+
+421
+00:15:20,630 --> 00:15:21,270
+I mean,
+
+422
+00:15:21,270 --> 00:15:22,250
+the speed of sound,
+
+423
+00:15:22,330 --> 00:15:24,350
+you'd expect it to be related to pressure somehow.
+
+424
+00:15:24,730 --> 00:15:25,030
+Yeah,
+
+425
+00:15:25,030 --> 00:15:25,570
+sure it is.
+
+426
+00:15:26,190 --> 00:15:26,970
+Sure it is.
+
+427
+00:15:26,990 --> 00:15:28,530
+This quantity depends on pressure.
+
+428
+00:15:29,150 --> 00:15:30,670
+So you can't say V equals 500?
+
+429
+00:15:31,270 --> 00:15:31,750
+No,
+
+430
+00:15:31,750 --> 00:15:31,930
+no,
+
+431
+00:15:31,930 --> 00:15:32,090
+no,
+
+432
+00:15:32,090 --> 00:15:32,230
+no.
+
+433
+00:15:32,270 --> 00:15:32,710
+This is at...
+
+434
+00:15:32,710 --> 00:15:33,710
+I'm sorry.
+
+435
+00:15:34,650 --> 00:15:35,130
+Okay.
+
+436
+00:15:36,430 --> 00:15:37,050
+That's right.
+
+437
+00:15:37,130 --> 00:15:39,030
+This is at low pressure,
+
+438
+00:15:39,989 --> 00:15:41,130
+or better yet,
+
+439
+00:15:41,130 --> 00:15:41,830
+low density,
+
+440
+00:15:42,570 --> 00:15:45,530
+where the gas can be approximated as an ideal gas.
+
+441
+00:15:46,510 --> 00:15:47,470
+It doesn't...
+
+442
+00:15:47,470 --> 00:15:49,470
+In the ideal gas range,
+
+443
+00:15:50,030 --> 00:15:51,690
+it doesn't depend on pressure.
+
+444
+00:15:52,890 --> 00:15:53,370
+But,
+
+445
+00:15:53,370 --> 00:15:54,430
+as you...
+
+446
+00:15:54,430 --> 00:15:55,110
+You know,
+
+447
+00:15:55,110 --> 00:15:56,470
+the reason it doesn't is because,
+
+448
+00:15:57,070 --> 00:15:58,270
+if you go to the formula,
+
+449
+00:15:58,270 --> 00:16:04,650
+that pressure is equal to rho times the temperature,
+
+450
+00:16:05,310 --> 00:16:06,670
+at fixed temperature,
+
+451
+00:16:06,870 --> 00:16:09,390
+pressure is just proportional to rho.
+
+452
+00:16:09,990 --> 00:16:13,670
+But as the pressure gets larger and larger,
+
+453
+00:16:13,950 --> 00:16:15,830
+this formula is going to break down.
+
+454
+00:16:17,090 --> 00:16:18,110
+For example,
+
+455
+00:16:18,110 --> 00:16:20,250
+it might start varying like rho squared.
+
+456
+00:16:22,390 --> 00:16:23,610
+In which case,
+
+457
+00:16:23,610 --> 00:16:24,170
+as you say,
+
+458
+00:16:24,310 --> 00:16:28,250
+the speed of sound will depend on
+
+459
+00:16:28,250 --> 00:16:29,490
+the pressure.
+
+460
+00:16:30,270 --> 00:16:30,670
+Right.
+
+461
+00:16:32,370 --> 00:16:33,520
+Just sort of to come back
+
+462
+00:16:33,520 --> 00:16:34,670
+to the idea that you started with,
+
+463
+00:16:34,770 --> 00:16:36,500
+where the velocity of sound is about
+
+464
+00:16:36,500 --> 00:16:38,230
+equal to the velocity of a monofuel.
+
+465
+00:16:38,310 --> 00:16:38,530
+Yeah.
+
+466
+00:16:38,550 --> 00:16:40,400
+I imagine that idea would break
+
+467
+00:16:40,400 --> 00:16:42,250
+down also as the density gets larger.
+
+468
+00:16:42,730 --> 00:16:43,130
+Probably.
+
+469
+00:16:43,130 --> 00:16:43,270
+Yeah,
+
+470
+00:16:43,270 --> 00:16:44,470
+I think it probably does.
+
+471
+00:16:47,910 --> 00:16:48,570
+You know,
+
+472
+00:16:48,570 --> 00:16:49,870
+I never thought about it very much.
+
+473
+00:16:49,990 --> 00:16:51,330
+This is as much...
+
+474
+00:16:51,330 --> 00:16:53,050
+This is the depth that I've gone into it.
+
+475
+00:16:54,150 --> 00:16:54,550
+Yeah.
+
+476
+00:16:54,710 --> 00:16:55,050
+I have a question.
+
+477
+00:16:55,250 --> 00:16:56,130
+Sorry I missed out.
+
+478
+00:16:56,390 --> 00:16:58,030
+Why is the mass 32?
+
+479
+00:16:58,250 --> 00:17:00,010
+30 times the mass of the proton?
+
+480
+00:17:00,830 --> 00:17:01,290
+Well,
+
+481
+00:17:01,290 --> 00:17:02,350
+I've made an approximation.
+
+482
+00:17:02,650 --> 00:17:03,710
+30 is equal to 28.
+
+483
+00:17:04,510 --> 00:17:04,970
+Oh,
+
+484
+00:17:04,970 --> 00:17:05,210
+okay.
+
+485
+00:17:08,410 --> 00:17:08,869
+Right.
+
+486
+00:17:11,490 --> 00:17:13,670
+So as far as an approximation,
+
+487
+00:17:13,930 --> 00:17:15,710
+if you divide 500 by 1.7,
+
+488
+00:17:15,730 --> 00:17:16,609
+you get about 300.
+
+489
+00:17:24,629 --> 00:17:26,569
+And just divide it by square root of 3.
+
+490
+00:17:26,569 --> 00:17:27,310
+Could be.
+
+491
+00:17:27,310 --> 00:17:27,609
+Could be.
+
+492
+00:17:29,670 --> 00:17:30,450
+Let's move on.
+
+493
+00:17:33,790 --> 00:17:35,410
+Let's move on to the harmonic oscillator.
+
+494
+00:17:37,530 --> 00:17:42,810
+Now we have not a free particle in a gas,
+
+495
+00:17:43,389 --> 00:17:44,759
+but I'm going to put into
+
+496
+00:17:44,759 --> 00:17:46,130
+the gas or into the system,
+
+497
+00:17:46,230 --> 00:17:47,370
+whatever it happens to be,
+
+498
+00:17:47,370 --> 00:17:48,590
+whatever the heat bath is,
+
+499
+00:17:49,249 --> 00:17:53,130
+I'm going to put in a single harmonic oscillator.
+
+500
+00:17:54,790 --> 00:17:55,830
+It's part of the...
+
+501
+00:17:55,830 --> 00:17:56,890
+It's part of the system.
+
+502
+00:17:57,390 --> 00:17:58,780
+And I'm going to treat the rest
+
+503
+00:17:58,780 --> 00:18:00,170
+of the system as a heat bath
+
+504
+00:18:02,070 --> 00:18:05,110
+and ask about the property of the harmonic oscillator.
+
+505
+00:18:05,249 --> 00:18:08,870
+Now the harmonic oscillator could be a spring
+
+506
+00:18:11,229 --> 00:18:12,550
+with a mass on it
+
+507
+00:18:14,550 --> 00:18:17,749
+or anything else which naturally oscillates.
+
+508
+00:18:17,850 --> 00:18:22,330
+It could be an electromagnetic wave in a cavity.
+
+509
+00:18:22,670 --> 00:18:23,950
+What else oscillates?
+
+510
+00:18:23,950 --> 00:18:25,330
+What's another example of an oscillator?
+
+511
+00:18:27,030 --> 00:18:27,630
+Sorry?
+
+512
+00:18:27,990 --> 00:18:29,390
+Crystal with a...
+
+513
+00:18:30,050 --> 00:18:30,650
+Crystal.
+
+514
+00:18:31,490 --> 00:18:32,090
+Right.
+
+515
+00:18:32,230 --> 00:18:35,010
+All sorts of oscillations take place in crystals.
+
+516
+00:18:35,150 --> 00:18:35,590
+That's right.
+
+517
+00:18:35,810 --> 00:18:37,630
+So there's lots and lots and
+
+518
+00:18:37,630 --> 00:18:39,450
+lots of oscillating systems in nature.
+
+519
+00:18:39,990 --> 00:18:42,000
+Almost anything will oscillate if you
+
+520
+00:18:42,000 --> 00:18:44,010
+just disturb it a little bit.
+
+521
+00:18:44,930 --> 00:18:46,970
+So when we say the harmonic oscillator,
+
+522
+00:18:47,250 --> 00:18:51,610
+we're studying an extremely wide class of systems.
+
+523
+00:18:52,730 --> 00:18:53,930
+Anything will oscillate.
+
+524
+00:18:53,950 --> 00:18:56,310
+Which when disturbed a little bit away from equilibrium,
+
+525
+00:18:57,129 --> 00:18:59,210
+away from its ground state,
+
+526
+00:18:59,470 --> 00:19:01,090
+will oscillate and that covers
+
+527
+00:19:01,090 --> 00:19:02,710
+almost anything you can think about.
+
+528
+00:19:04,230 --> 00:19:06,820
+So let's do the statistical
+
+529
+00:19:06,820 --> 00:19:09,410
+mechanics of the harmonic oscillator.
+
+530
+00:19:11,070 --> 00:19:12,150
+Interesting question.
+
+531
+00:19:12,410 --> 00:19:15,730
+What is the average energy of the oscillator?
+
+532
+00:19:16,110 --> 00:19:17,950
+How does it depend on its mass?
+
+533
+00:19:18,170 --> 00:19:19,970
+How does it depend on the spring constant?
+
+534
+00:19:20,470 --> 00:19:21,470
+And so forth.
+
+535
+00:19:22,250 --> 00:19:22,890
+Uh...
+
+536
+00:19:22,890 --> 00:19:24,320
+And see if we can work
+
+537
+00:19:24,320 --> 00:19:25,750
+out the answer to that question.
+
+538
+00:19:26,210 --> 00:19:27,470
+So what do we do?
+
+539
+00:19:27,530 --> 00:19:29,230
+We begin with a Hamilton...
+
+540
+00:19:29,230 --> 00:19:29,870
+With an energy,
+
+541
+00:19:29,870 --> 00:19:31,430
+with an expression for the energy.
+
+542
+00:19:31,950 --> 00:19:34,370
+We're going to put it into the Boltzmann distribution
+
+543
+00:19:34,890 --> 00:19:36,640
+and then we're going to
+
+544
+00:19:36,640 --> 00:19:38,390
+calculate average quantities for the oscillator.
+
+545
+00:19:39,110 --> 00:19:39,670
+Okay,
+
+546
+00:19:39,670 --> 00:19:40,470
+what is the energy?
+
+547
+00:19:40,590 --> 00:19:47,550
+The energy is one half mass times x dot squared,
+
+548
+00:19:47,770 --> 00:19:49,790
+where x is the coordinate of
+
+549
+00:19:49,790 --> 00:19:51,810
+the oscillator away from its equilibrium position.
+
+550
+00:19:54,130 --> 00:19:57,280
+Mass is the mass plus the
+
+551
+00:19:57,280 --> 00:20:00,430
+spring constant times x squared over two.
+
+552
+00:20:00,530 --> 00:20:01,790
+This is not the Boltzmann constant.
+
+553
+00:20:02,070 --> 00:20:03,430
+Now we are finished with Boltzmann.
+
+554
+00:20:04,030 --> 00:20:06,770
+Boltzmann will fade into the background now.
+
+555
+00:20:07,650 --> 00:20:10,630
+We no longer will keep track of the Boltzmann constant.
+
+556
+00:20:10,970 --> 00:20:13,230
+K here is the spring constant.
+
+557
+00:20:14,550 --> 00:20:16,830
+The Hooke's law spring constant.
+
+558
+00:20:18,670 --> 00:20:19,870
+Or equivalently,
+
+559
+00:20:19,870 --> 00:20:24,350
+if we go to momentum instead of velocity,
+
+560
+00:20:24,710 --> 00:20:28,610
+it becomes p squared divided by two m.
+
+561
+00:20:30,630 --> 00:20:33,600
+Momentum squared divided by two m
+
+562
+00:20:33,600 --> 00:20:36,570
+plus the same kx squared over two.
+
+563
+00:20:37,450 --> 00:20:39,430
+So that's our expression for energy.
+
+564
+00:20:40,970 --> 00:20:42,690
+This is our expression for energy.
+
+565
+00:20:43,070 --> 00:20:45,310
+And now we want to write
+
+566
+00:20:45,310 --> 00:20:47,550
+the Boltzmann distribution for this system here.
+
+567
+00:20:47,770 --> 00:20:49,650
+And that's e to the minus...
+
+568
+00:20:52,470 --> 00:20:52,990
+beta.
+
+569
+00:20:53,150 --> 00:20:54,570
+Beta is the inverse temperature.
+
+570
+00:20:55,090 --> 00:20:56,710
+Now what determines the temperature?
+
+571
+00:21:01,030 --> 00:21:03,650
+The heat bath that it's immersed in.
+
+572
+00:21:04,570 --> 00:21:08,070
+So if the oscillator was in this room,
+
+573
+00:21:08,450 --> 00:21:10,430
+it would be 300 degrees.
+
+574
+00:21:11,070 --> 00:21:12,570
+If it was in liquid helium,
+
+575
+00:21:12,830 --> 00:21:14,890
+it would be three degrees,
+
+576
+00:21:14,890 --> 00:21:15,530
+four degrees,
+
+577
+00:21:15,530 --> 00:21:15,810
+whatever.
+
+578
+00:21:16,070 --> 00:21:17,590
+If it was in the middle of the sun,
+
+579
+00:21:17,730 --> 00:21:19,150
+it would evaporate and it wouldn't be there.
+
+580
+00:21:19,250 --> 00:21:19,850
+But it's not there.
+
+581
+00:21:19,850 --> 00:21:21,030
+You know what I mean.
+
+582
+00:21:21,550 --> 00:21:22,050
+Okay,
+
+583
+00:21:22,050 --> 00:21:23,190
+e to the minus beta,
+
+584
+00:21:24,990 --> 00:21:26,950
+p squared over two m.
+
+585
+00:21:28,850 --> 00:21:30,370
+I'm going to factorize it.
+
+586
+00:21:30,430 --> 00:21:31,730
+e to the minus beta,
+
+587
+00:21:34,370 --> 00:21:35,890
+kx squared over two.
+
+588
+00:21:36,590 --> 00:21:38,230
+I've simply used the fact
+
+589
+00:21:38,230 --> 00:21:39,870
+that the exponential of a sum
+
+590
+00:21:40,710 --> 00:21:42,870
+is just a product of exponentials.
+
+591
+00:21:42,870 --> 00:21:44,370
+So I've factorized it like this.
+
+592
+00:21:45,190 --> 00:21:46,760
+That's the expression for e to
+
+593
+00:21:46,760 --> 00:21:48,330
+the minus beta times the energy.
+
+594
+00:21:48,330 --> 00:21:49,250
+What do we do with it?
+
+595
+00:21:49,610 --> 00:21:51,510
+We calculate our friend,
+
+596
+00:21:51,510 --> 00:21:52,750
+the partition function.
+
+597
+00:21:52,970 --> 00:21:55,490
+And the partition function is our best friend
+
+598
+00:21:56,150 --> 00:21:57,350
+in statistical mechanics.
+
+599
+00:21:57,650 --> 00:21:58,730
+So we calculate it,
+
+600
+00:21:58,790 --> 00:22:02,270
+and that's equal to the sum of all configurations,
+
+601
+00:22:02,930 --> 00:22:05,150
+which in this case means dp,
+
+602
+00:22:05,150 --> 00:22:06,770
+dx.
+
+603
+00:22:09,230 --> 00:22:11,030
+Now in previous situations,
+
+604
+00:22:11,490 --> 00:22:13,540
+the x integration just gave
+
+605
+00:22:13,540 --> 00:22:15,590
+us the volume of the container
+
+606
+00:22:15,590 --> 00:22:16,770
+that the box was in.
+
+607
+00:22:18,490 --> 00:22:19,730
+Now that's not true,
+
+608
+00:22:19,850 --> 00:22:22,090
+because we're doing an integration of the integrals factor.
+
+609
+00:22:23,089 --> 00:22:23,490
+dp,
+
+610
+00:22:23,490 --> 00:22:24,010
+dx.
+
+611
+00:22:24,230 --> 00:22:25,270
+Two separate integrals.
+
+612
+00:22:25,330 --> 00:22:27,150
+It's just a product of two integrals.
+
+613
+00:22:27,170 --> 00:22:27,810
+We can write it.
+
+614
+00:22:28,330 --> 00:22:31,890
+Let's call it the p integral and the x integral.
+
+615
+00:22:34,770 --> 00:22:36,430
+I put the p downstairs here because
+
+616
+00:22:36,430 --> 00:22:38,090
+I didn't have room to write dp.
+
+617
+00:22:39,310 --> 00:22:40,290
+But that's what I mean.
+
+618
+00:22:40,490 --> 00:22:41,190
+Integral dp,
+
+619
+00:22:41,190 --> 00:22:41,970
+integral dx.
+
+620
+00:22:43,950 --> 00:22:44,350
+Okay,
+
+621
+00:22:44,350 --> 00:22:45,460
+so all we have to do
+
+622
+00:22:45,460 --> 00:22:46,570
+now is to do these two integrals.
+
+623
+00:22:47,649 --> 00:22:53,250
+Remember that numerical constants in the partition function,
+
+624
+00:22:54,210 --> 00:22:55,230
+multiplicative constants,
+
+625
+00:22:55,230 --> 00:22:56,530
+don't make any difference.
+
+626
+00:22:56,890 --> 00:22:57,810
+Why not?
+
+627
+00:22:58,050 --> 00:22:59,820
+Because when you take the
+
+628
+00:22:59,820 --> 00:23:01,590
+logarithm of the partition function,
+
+629
+00:23:01,930 --> 00:23:04,250
+they correspond to additive constants.
+
+630
+00:23:04,710 --> 00:23:06,380
+And since we're always going
+
+631
+00:23:06,380 --> 00:23:08,050
+to be differentiating the partition function,
+
+632
+00:23:08,370 --> 00:23:10,410
+we don't care about numerical constants.
+
+633
+00:23:10,730 --> 00:23:10,930
+Okay,
+
+634
+00:23:10,930 --> 00:23:11,510
+so let's,
+
+635
+00:23:11,510 --> 00:23:13,450
+forgetting the numerical constants,
+
+636
+00:23:13,550 --> 00:23:14,710
+we want to do these integrals.
+
+637
+00:23:15,270 --> 00:23:16,550
+The p integral is the number of integrals.
+
+638
+00:23:16,570 --> 00:23:16,710
+So we're going to do the integration.
+
+639
+00:23:16,790 --> 00:23:18,010
+We do the same way that we did.
+
+640
+00:23:18,050 --> 00:23:19,290
+I'll just remind you how we did it.
+
+641
+00:23:20,310 --> 00:23:25,790
+We said that p squared over 2m beta,
+
+642
+00:23:25,790 --> 00:23:27,510
+the thing occurring here,
+
+643
+00:23:27,930 --> 00:23:30,750
+we changed variables and we called that q squared.
+
+644
+00:23:33,530 --> 00:23:37,530
+And obviously that means that p is equal to
+
+645
+00:23:37,530 --> 00:23:41,530
+the square root of 2m over beta times q.
+
+646
+00:23:43,990 --> 00:23:45,370
+Once we do that,
+
+647
+00:23:45,370 --> 00:23:49,790
+this integral here becomes integral.
+
+648
+00:23:51,270 --> 00:23:51,830
+Now,
+
+649
+00:23:51,830 --> 00:23:52,390
+dp,
+
+650
+00:23:52,390 --> 00:23:54,010
+we have dp here.
+
+651
+00:23:54,190 --> 00:23:55,050
+I took it away.
+
+652
+00:23:55,170 --> 00:23:55,450
+dp,
+
+653
+00:23:55,450 --> 00:23:56,310
+let me put it back.
+
+654
+00:23:57,110 --> 00:23:58,090
+What is dp?
+
+655
+00:23:58,610 --> 00:24:00,370
+dp is the square root
+
+656
+00:24:00,370 --> 00:24:02,130
+of 2m over beta times dq.
+
+657
+00:24:03,050 --> 00:24:03,610
+So,
+
+658
+00:24:03,610 --> 00:24:06,260
+the first thing we do is we
+
+659
+00:24:06,260 --> 00:24:08,910
+pull out a factor of square root,
+
+660
+00:24:15,930 --> 00:24:19,470
+p equals square root of 2m over beta.
+
+661
+00:24:22,370 --> 00:24:23,090
+All right,
+
+662
+00:24:23,090 --> 00:24:23,850
+so first of all,
+
+663
+00:24:23,850 --> 00:24:25,640
+we have the factor of
+
+664
+00:24:25,640 --> 00:24:27,430
+square root of 2m over beta.
+
+665
+00:24:27,870 --> 00:24:29,230
+That's coming from dp.
+
+666
+00:24:29,670 --> 00:24:30,990
+Then we can write dq,
+
+667
+00:24:30,990 --> 00:24:32,810
+and this thing just becomes
+
+668
+00:24:32,810 --> 00:24:34,630
+e to the minus q squared.
+
+669
+00:24:35,190 --> 00:24:36,830
+This is a definite integral.
+
+670
+00:24:37,010 --> 00:24:38,450
+What are the ends of the integration?
+
+671
+00:24:39,850 --> 00:24:40,730
+Minus infinity.
+
+672
+00:24:40,730 --> 00:24:42,130
+Minus infinity to infinity to infinity.
+
+673
+00:24:42,750 --> 00:24:44,750
+The momentum can be anything.
+
+674
+00:24:44,910 --> 00:24:45,970
+Minus infinity to infinity.
+
+675
+00:24:47,310 --> 00:24:48,530
+And this is a number.
+
+676
+00:24:49,090 --> 00:24:50,250
+If you happen to remember,
+
+677
+00:24:50,250 --> 00:24:52,310
+the number happens to be the square root of 2pi.
+
+678
+00:24:53,270 --> 00:24:54,090
+But who cares?
+
+679
+00:24:54,350 --> 00:24:57,190
+It's a numerical constant that we don't care about.
+
+680
+00:25:00,050 --> 00:25:00,950
+It happens to be,
+
+681
+00:25:00,950 --> 00:25:02,470
+it is a pi.
+
+682
+00:25:03,290 --> 00:25:04,210
+Let's put it in there,
+
+683
+00:25:04,210 --> 00:25:04,450
+pi.
+
+684
+00:25:05,210 --> 00:25:06,070
+That's this integral,
+
+685
+00:25:06,070 --> 00:25:07,010
+and we're finished with it.
+
+686
+00:25:08,370 --> 00:25:09,310
+We've seen it before.
+
+687
+00:25:09,310 --> 00:25:12,490
+It's the same one that occurred in the ideal gas.
+
+688
+00:25:13,550 --> 00:25:15,590
+The new integration that occurs,
+
+689
+00:25:16,770 --> 00:25:17,690
+so this,
+
+690
+00:25:17,690 --> 00:25:20,750
+this integral has been replaced by this.
+
+691
+00:25:20,910 --> 00:25:22,170
+What about this one over here?
+
+692
+00:25:22,230 --> 00:25:23,670
+We play exactly the same game.
+
+693
+00:25:24,210 --> 00:25:25,150
+Let's make it,
+
+694
+00:25:25,150 --> 00:25:25,750
+this is dx.
+
+695
+00:25:28,250 --> 00:25:29,570
+Change of variables.
+
+696
+00:25:30,690 --> 00:25:35,570
+X squared beta spring constant over 2,
+
+697
+00:25:35,570 --> 00:25:37,490
+we will call y squared.
+
+698
+00:25:39,310 --> 00:25:45,010
+That means that x is equal to square
+
+699
+00:25:45,010 --> 00:25:50,710
+root of 2 over beta kappa times y.
+
+700
+00:25:57,110 --> 00:25:57,450
+Alright,
+
+701
+00:25:57,450 --> 00:25:58,490
+we have dx here.
+
+702
+00:25:59,370 --> 00:26:01,650
+So the dx is going to become a dy.
+
+703
+00:26:02,450 --> 00:26:05,870
+It will give us an additional factor
+
+704
+00:26:05,870 --> 00:26:09,290
+of square root of 2pi over beta kappa.
+
+705
+00:26:10,210 --> 00:26:10,730
+And then we have this integral,
+
+706
+00:26:10,730 --> 00:26:10,730
+k,
+
+707
+00:26:10,730 --> 00:26:11,930
+spring constant.
+
+708
+00:26:13,950 --> 00:26:14,850
+That's the dx.
+
+709
+00:26:17,350 --> 00:26:18,330
+Forget the 2pi,
+
+710
+00:26:18,330 --> 00:26:20,270
+just square root of 2.
+
+711
+00:26:20,730 --> 00:26:21,690
+Comes from here.
+
+712
+00:26:22,230 --> 00:26:23,980
+And then the integral just
+
+713
+00:26:23,980 --> 00:26:25,730
+becomes e to the minus beta,
+
+714
+00:26:25,990 --> 00:26:28,330
+e to the minus y squared dy.
+
+715
+00:26:30,650 --> 00:26:31,990
+By changing variables,
+
+716
+00:26:31,990 --> 00:26:34,350
+we turn the integral into just a simple integral,
+
+717
+00:26:34,510 --> 00:26:35,570
+e to the minus y squared.
+
+718
+00:26:35,570 --> 00:26:36,690
+And that again is equal
+
+719
+00:26:36,690 --> 00:26:37,810
+to the square root of pi.
+
+720
+00:26:38,690 --> 00:26:40,310
+So that's our whole answer,
+
+721
+00:26:40,310 --> 00:26:41,110
+very simple.
+
+722
+00:26:42,230 --> 00:26:43,890
+That's the whole partition function.
+
+723
+00:26:46,090 --> 00:26:46,610
+Z.
+
+724
+00:26:48,110 --> 00:26:49,210
+Let's write it in Z.
+
+725
+00:26:54,470 --> 00:26:55,430
+And it's equal,
+
+726
+00:26:55,430 --> 00:26:57,170
+first of all it has a 2pi.
+
+727
+00:26:58,170 --> 00:27:01,890
+The 2pi is of no particular interest to us.
+
+728
+00:27:03,010 --> 00:27:05,550
+It contains also a,
+
+729
+00:27:05,550 --> 00:27:10,090
+a square root of m over kappa.
+
+730
+00:27:11,970 --> 00:27:13,810
+Square root of m over kappa.
+
+731
+00:27:14,270 --> 00:27:15,170
+m from here,
+
+732
+00:27:15,170 --> 00:27:15,870
+kappa from here.
+
+733
+00:27:16,010 --> 00:27:16,990
+Anybody know what the square
+
+734
+00:27:16,990 --> 00:27:17,970
+root of m over kappa is?
+
+735
+00:27:21,530 --> 00:27:22,470
+What about the,
+
+736
+00:27:22,470 --> 00:27:24,190
+what about the frequency of the oscillator?
+
+737
+00:27:24,710 --> 00:27:26,510
+Do you remember the frequency of a harmonic oscillator
+
+738
+00:27:26,510 --> 00:27:28,930
+in terms of its mass and its spring constant?
+
+739
+00:27:30,210 --> 00:27:30,650
+What's that?
+
+740
+00:27:31,490 --> 00:27:32,370
+Mm-hmm.
+
+741
+00:27:32,370 --> 00:27:32,990
+Yeah.
+
+742
+00:27:33,230 --> 00:27:34,790
+So we could just write this as
+
+743
+00:27:34,790 --> 00:27:36,430
+1 over the frequency,
+
+744
+00:27:36,430 --> 00:27:37,190
+and I'll do so.
+
+745
+00:27:37,750 --> 00:27:40,050
+But of course the frequency is a constant.
+
+746
+00:27:40,290 --> 00:27:40,670
+But nevertheless,
+
+747
+00:27:40,670 --> 00:27:42,110
+I want to keep it for now.
+
+748
+00:27:42,550 --> 00:27:46,990
+2pi over omega times 1 divided by beta.
+
+749
+00:27:49,850 --> 00:27:50,530
+That's Z.
+
+750
+00:27:53,530 --> 00:27:56,230
+Now let's calculate the energy of the oscillator.
+
+751
+00:27:56,730 --> 00:27:57,630
+How do we do that?
+
+752
+00:27:57,870 --> 00:28:00,010
+We calculate the logarithm of Z
+
+753
+00:28:00,790 --> 00:28:02,830
+and differentiate it with respect to beta.
+
+754
+00:28:03,910 --> 00:28:05,940
+That's the formula that we've
+
+755
+00:28:05,940 --> 00:28:07,970
+learned to use and to trust.
+
+756
+00:28:08,690 --> 00:28:09,890
+So log Z
+
+757
+00:28:12,190 --> 00:28:13,390
+is equal
+
+758
+00:28:13,390 --> 00:28:17,410
+to the log of 2pi over omega.
+
+759
+00:28:17,670 --> 00:28:18,470
+That's a constant.
+
+760
+00:28:18,810 --> 00:28:20,150
+So let's write it as a constant.
+
+761
+00:28:20,470 --> 00:28:24,430
+And then minus log beta.
+
+762
+00:28:26,610 --> 00:28:27,910
+Minus log beta.
+
+763
+00:28:28,230 --> 00:28:29,750
+That's equal to log Z.
+
+764
+00:28:30,890 --> 00:28:32,630
+And now what we want to do is,
+
+765
+00:28:32,630 --> 00:28:35,850
+we want to calculate minus the derivative of log Z
+
+766
+00:28:36,790 --> 00:28:38,150
+with respect to beta.
+
+767
+00:28:38,310 --> 00:28:39,030
+What is that equal to?
+
+768
+00:28:39,950 --> 00:28:40,470
+Remember?
+
+769
+00:28:42,970 --> 00:28:43,790
+The energy.
+
+770
+00:28:44,130 --> 00:28:45,150
+The average energy.
+
+771
+00:28:45,970 --> 00:28:46,850
+That's the energy.
+
+772
+00:28:48,650 --> 00:28:50,330
+Minus the log Z by d beta.
+
+773
+00:28:50,590 --> 00:28:51,150
+You know,
+
+774
+00:28:51,150 --> 00:28:52,250
+we're cruising now.
+
+775
+00:28:52,370 --> 00:28:52,970
+We're not thinking.
+
+776
+00:28:53,110 --> 00:28:56,030
+We're just chasing symbols.
+
+777
+00:28:56,430 --> 00:28:58,050
+The constant gives us nothing.
+
+778
+00:28:58,290 --> 00:29:01,130
+The minus sign takes away the minus sign from here.
+
+779
+00:29:01,130 --> 00:29:05,290
+And the derivative of log beta with respect to beta
+
+780
+00:29:05,290 --> 00:29:06,530
+is just 1 over beta.
+
+781
+00:29:09,530 --> 00:29:10,550
+1 over beta,
+
+782
+00:29:10,550 --> 00:29:10,770
+yeah.
+
+783
+00:29:11,730 --> 00:29:14,750
+Which also is better known as the temperature.
+
+784
+00:29:18,290 --> 00:29:18,910
+Okay.
+
+785
+00:29:20,170 --> 00:29:26,690
+Not so different than the 3 halves kT.
+
+786
+00:29:31,130 --> 00:29:31,410
+Well,
+
+787
+00:29:31,410 --> 00:29:32,710
+let's just write 3 halves T
+
+788
+00:29:34,550 --> 00:29:37,230
+for the particle and the gas.
+
+789
+00:29:38,330 --> 00:29:38,850
+Now,
+
+790
+00:29:38,850 --> 00:29:39,790
+the first thing is,
+
+791
+00:29:39,790 --> 00:29:40,590
+where's,
+
+792
+00:29:40,590 --> 00:29:41,390
+why no 3?
+
+793
+00:29:41,610 --> 00:29:42,030
+Well,
+
+794
+00:29:42,030 --> 00:29:44,090
+because this is just a one-dimensional oscillator
+
+795
+00:29:44,090 --> 00:29:45,570
+oscillating along an axis.
+
+796
+00:29:46,090 --> 00:29:47,130
+So there's no 3.
+
+797
+00:29:47,430 --> 00:29:49,670
+But what happened to the 2 down here?
+
+798
+00:29:51,010 --> 00:29:52,630
+Why wasn't it 1 half?
+
+799
+00:29:53,290 --> 00:29:56,830
+And the reason is because there were two integrals,
+
+800
+00:29:56,830 --> 00:30:00,710
+each of which gave us a 1 half log beta.
+
+801
+00:30:02,270 --> 00:30:04,480
+The first integral here gave us
+
+802
+00:30:04,480 --> 00:30:06,690
+a 1 over square root of beta.
+
+803
+00:30:07,050 --> 00:30:08,580
+The second one also gave us
+
+804
+00:30:08,580 --> 00:30:10,110
+a 1 over square root of beta.
+
+805
+00:30:10,570 --> 00:30:13,310
+If there would have been more integrals of this type,
+
+806
+00:30:14,010 --> 00:30:15,270
+for whatever reason,
+
+807
+00:30:15,270 --> 00:30:16,350
+more dimensions,
+
+808
+00:30:16,350 --> 00:30:17,870
+more degrees of freedom,
+
+809
+00:30:17,870 --> 00:30:18,490
+whatever,
+
+810
+00:30:19,730 --> 00:30:22,750
+we would have gotten a 1
+
+811
+00:30:22,750 --> 00:30:25,770
+half log beta for each of them.
+
+812
+00:30:26,770 --> 00:30:28,380
+1 half log beta means 1
+
+813
+00:30:28,380 --> 00:30:29,990
+half T for each of them.
+
+814
+00:30:29,990 --> 00:30:34,670
+So for each integration that we have to do,
+
+815
+00:30:35,310 --> 00:30:37,410
+which has this form of
+
+816
+00:30:37,410 --> 00:30:39,510
+e to the minus x squared,
+
+817
+00:30:39,830 --> 00:30:41,790
+they're called Gaussian integrals,
+
+818
+00:30:41,850 --> 00:30:44,970
+for each integration like that that we have to do,
+
+819
+00:30:45,170 --> 00:30:47,260
+there is basically a 1
+
+820
+00:30:47,260 --> 00:30:49,350
+half the temperature in the energy.
+
+821
+00:30:50,350 --> 00:30:50,950
+Okay.
+
+822
+00:30:53,350 --> 00:30:55,630
+What are the two kinds of energies,
+
+823
+00:30:55,630 --> 00:30:56,430
+incidentally,
+
+824
+00:30:56,430 --> 00:30:57,970
+that we're talking about?
+
+825
+00:30:58,370 --> 00:30:59,970
+We're talking about the energy of the atom,
+
+826
+00:30:59,990 --> 00:31:00,490
+the energy of an oscillator,
+
+827
+00:31:03,310 --> 00:31:05,290
+this kinetic energy and potential energy.
+
+828
+00:31:05,990 --> 00:31:06,790
+In fact,
+
+829
+00:31:06,790 --> 00:31:08,290
+the kinetic energy and potential energy,
+
+830
+00:31:08,390 --> 00:31:10,390
+the average kinetic energy and potential energy,
+
+831
+00:31:10,490 --> 00:31:11,330
+are in fact equal,
+
+832
+00:31:11,330 --> 00:31:14,110
+and each one equal to 1 half beta,
+
+833
+00:31:14,330 --> 00:31:15,050
+1 half temperature.
+
+834
+00:31:15,790 --> 00:31:17,870
+So the kinetic energy is 1 half temperature,
+
+835
+00:31:18,150 --> 00:31:20,070
+the potential energy is 1 half temperature,
+
+836
+00:31:20,330 --> 00:31:22,730
+together they give you the temperature.
+
+837
+00:31:23,490 --> 00:31:24,970
+Now there's a couple of
+
+838
+00:31:24,970 --> 00:31:26,450
+interesting things to notice about this,
+
+839
+00:31:26,530 --> 00:31:28,750
+two interesting things to notice about it.
+
+840
+00:31:29,810 --> 00:31:31,410
+They're both very similar.
+
+841
+00:31:32,910 --> 00:31:34,440
+First is that the answer doesn't
+
+842
+00:31:34,440 --> 00:31:35,970
+depend on the mass of the oscillator.
+
+843
+00:31:37,350 --> 00:31:42,710
+That was also true of the particle in the gas.
+
+844
+00:31:43,310 --> 00:31:44,750
+At a given temperature,
+
+845
+00:31:44,750 --> 00:31:47,190
+the energy,
+
+846
+00:31:47,350 --> 00:31:48,870
+the kinetic energy of the particle,
+
+847
+00:31:48,950 --> 00:31:50,830
+did not depend on the mass of the particle.
+
+848
+00:31:51,030 --> 00:31:52,070
+The velocity did.
+
+849
+00:31:52,510 --> 00:31:54,950
+The velocity does because the velocity,
+
+850
+00:31:55,770 --> 00:31:58,170
+1 half mv squared is the energy,
+
+851
+00:31:58,910 --> 00:32:01,150
+1 half mv squared is the same
+
+852
+00:32:01,150 --> 00:32:03,390
+for all of the different mass particles,
+
+853
+00:32:03,610 --> 00:32:06,610
+v squared of course will be smaller for heavy particles.
+
+854
+00:32:08,650 --> 00:32:10,130
+Same is true here.
+
+855
+00:32:10,750 --> 00:32:13,630
+The average kinetic energy is the temperature,
+
+856
+00:32:13,870 --> 00:32:22,990
+and it's independent of the mass of the oscillator.
+
+857
+00:32:23,390 --> 00:32:25,610
+It's also independent of the spring constant.
+
+858
+00:32:26,790 --> 00:32:28,150
+That's a little surprising.
+
+859
+00:32:28,170 --> 00:32:29,890
+It's surprising if you think about it,
+
+860
+00:32:29,990 --> 00:32:34,670
+because imagine making the spring constant huge.
+
+861
+00:32:37,070 --> 00:32:40,270
+Imagine making the spring constant so large
+
+862
+00:32:40,750 --> 00:32:44,650
+that no known force on earth can,
+
+863
+00:32:44,810 --> 00:32:45,790
+or elsewhere,
+
+864
+00:32:47,130 --> 00:32:54,590
+can stretch this spring away from its equilibrium point.
+
+865
+00:32:54,890 --> 00:32:57,670
+One would think under such circumstances,
+
+866
+00:32:58,170 --> 00:32:59,170
+that it's not a spring,
+
+867
+00:32:59,450 --> 00:33:01,410
+it's just a constrained thing,
+
+868
+00:33:02,120 --> 00:33:03,510
+which has a fixed length,
+
+869
+00:33:04,670 --> 00:33:06,390
+perhaps the length being zero,
+
+870
+00:33:06,630 --> 00:33:08,090
+which cannot be changed.
+
+871
+00:33:09,230 --> 00:33:10,630
+Under those circumstances,
+
+872
+00:33:10,710 --> 00:33:12,470
+any sensible person would say,
+
+873
+00:33:12,980 --> 00:33:14,350
+you can't excite it.
+
+874
+00:33:14,470 --> 00:33:16,010
+You can't give it any energy.
+
+875
+00:33:16,150 --> 00:33:20,310
+There's no way to start it vibrating.
+
+876
+00:33:20,930 --> 00:33:26,110
+There's no way to give it any structure at all.
+
+877
+00:33:27,130 --> 00:33:29,130
+You can't give it any kinetic energy,
+
+878
+00:33:29,250 --> 00:33:31,330
+because it's absolutely locked in place.
+
+879
+00:33:31,770 --> 00:33:33,850
+You can't give it any potential energy,
+
+880
+00:33:34,050 --> 00:33:36,130
+because you can't pull it away from that point,
+
+881
+00:33:36,230 --> 00:33:40,750
+no matter how much force you exert on it.
+
+882
+00:33:42,210 --> 00:33:42,770
+Yet,
+
+883
+00:33:42,770 --> 00:33:45,210
+the formula doesn't seem to care.
+
+884
+00:33:46,130 --> 00:33:48,330
+The formula doesn't seem to care.
+
+885
+00:33:48,550 --> 00:33:53,450
+There always seems to be energy kT for every oscillator,
+
+886
+00:33:53,710 --> 00:33:55,850
+no matter how unphysical,
+
+887
+00:33:56,110 --> 00:33:57,350
+no matter how hard it
+
+888
+00:33:57,350 --> 00:33:58,590
+is to get that oscillator going.
+
+889
+00:33:58,750 --> 00:33:59,670
+There's something wrong.
+
+890
+00:34:01,870 --> 00:34:02,150
+Question?
+
+891
+00:34:03,050 --> 00:34:05,250
+If k goes to infinity,
+
+892
+00:34:06,730 --> 00:34:08,070
+z goes to zero.
+
+893
+00:34:11,130 --> 00:34:13,210
+k doesn't appear...
+
+894
+00:34:13,210 --> 00:34:15,270
+k appears here,
+
+895
+00:34:15,270 --> 00:34:16,290
+but it doesn't appear here.
+
+896
+00:34:21,050 --> 00:34:22,610
+Once you take the logarithm,
+
+897
+00:34:22,790 --> 00:34:25,949
+the k appears as an additive constant.
+
+898
+00:34:26,110 --> 00:34:28,170
+You can't take the logarithm if z is zero.
+
+899
+00:34:28,820 --> 00:34:31,510
+Let's let k be 10 to the 500.
+
+900
+00:34:34,150 --> 00:34:36,370
+There's something wrong about the limits here.
+
+901
+00:34:36,510 --> 00:34:37,929
+There's something wrong,
+
+902
+00:34:38,210 --> 00:34:40,570
+but the something that's wrong is
+
+903
+00:34:42,090 --> 00:34:46,270
+that we've ignored one very crucial feature of nature.
+
+904
+00:34:46,870 --> 00:34:49,650
+We have not ignored anything about classical mechanics.
+
+905
+00:34:49,909 --> 00:34:52,650
+This is a correct classical mechanical conclusion.
+
+906
+00:34:53,250 --> 00:34:54,250
+On the other hand,
+
+907
+00:34:54,250 --> 00:34:54,690
+it's crazy.
+
+908
+00:34:54,690 --> 00:34:56,690
+Let me give you an
+
+909
+00:34:56,690 --> 00:34:58,690
+example of the kind of craziness
+
+910
+00:34:58,690 --> 00:34:59,750
+that would be involved.
+
+911
+00:35:01,410 --> 00:35:03,809
+We talked about a particle...
+
+912
+00:35:03,809 --> 00:35:04,570
+Excuse me.
+
+913
+00:35:04,630 --> 00:35:04,889
+Yeah.
+
+914
+00:35:05,230 --> 00:35:06,329
+Before we move on,
+
+915
+00:35:06,430 --> 00:35:08,750
+I just had a question about the partition function.
+
+916
+00:35:09,230 --> 00:35:12,910
+When we did the analogous computation previously
+
+917
+00:35:12,910 --> 00:35:16,450
+and there was no dependence on the position,
+
+918
+00:35:17,090 --> 00:35:19,430
+we then got the volume to the nth power.
+
+919
+00:35:19,590 --> 00:35:21,590
+But divide by an n factorial
+
+920
+00:35:22,150 --> 00:35:25,289
+to take out some repetition of stuff.
+
+921
+00:35:25,450 --> 00:35:25,789
+Yeah,
+
+922
+00:35:25,789 --> 00:35:25,950
+yeah,
+
+923
+00:35:25,950 --> 00:35:27,430
+but it didn't make any difference.
+
+924
+00:35:27,530 --> 00:35:29,510
+All it did was add a multiplicative constant
+
+925
+00:35:29,510 --> 00:35:31,090
+in the partition function.
+
+926
+00:35:31,369 --> 00:35:33,490
+So is there an appropriate n factorial
+
+927
+00:35:33,490 --> 00:35:34,210
+that's needed here?
+
+928
+00:35:34,329 --> 00:35:34,809
+No,
+
+929
+00:35:34,809 --> 00:35:35,690
+it's only one particle.
+
+930
+00:35:35,829 --> 00:35:36,570
+It's only one oscillator.
+
+931
+00:35:36,970 --> 00:35:37,450
+Yeah.
+
+932
+00:35:37,789 --> 00:35:38,270
+Yeah,
+
+933
+00:35:38,270 --> 00:35:38,389
+well,
+
+934
+00:35:38,389 --> 00:35:39,450
+one oscillator.
+
+935
+00:35:39,510 --> 00:35:39,970
+That's all.
+
+936
+00:35:40,110 --> 00:35:41,630
+This is the world's simplest system,
+
+937
+00:35:41,730 --> 00:35:44,270
+an oscillating system in a heat bath.
+
+938
+00:35:45,450 --> 00:35:45,930
+Okay?
+
+939
+00:35:46,230 --> 00:35:49,050
+And what we find is the odd conclusion
+
+940
+00:35:49,510 --> 00:35:51,570
+that the energy stored in that oscillator
+
+941
+00:35:51,590 --> 00:35:54,570
+is independent of the spring constant and the mass.
+
+942
+00:35:54,890 --> 00:35:56,710
+Let's say especially the spring constant.
+
+943
+00:35:57,170 --> 00:35:58,870
+Let's take the mass to be fixed.
+
+944
+00:35:59,110 --> 00:36:01,370
+But now we just jack up the spring constant,
+
+945
+00:36:01,550 --> 00:36:02,750
+not 10 to the 500,
+
+946
+00:36:02,970 --> 00:36:04,230
+10 to the 10 to the 500.
+
+947
+00:36:04,870 --> 00:36:05,510
+All right?
+
+948
+00:36:05,790 --> 00:36:07,410
+For all practical purposes,
+
+949
+00:36:07,570 --> 00:36:09,030
+it must be that it's infinite,
+
+950
+00:36:09,230 --> 00:36:12,750
+and yet the formula takes that infinity
+
+951
+00:36:12,750 --> 00:36:14,030
+or that large number,
+
+952
+00:36:14,030 --> 00:36:14,930
+puts it here,
+
+953
+00:36:15,150 --> 00:36:17,180
+and still the derivative of
+
+954
+00:36:17,180 --> 00:36:19,210
+log z with respect to beta
+
+955
+00:36:19,210 --> 00:36:20,390
+is equal to the temperature.
+
+956
+00:36:21,050 --> 00:36:21,690
+Okay,
+
+957
+00:36:21,690 --> 00:36:23,210
+so there's something funny going on.
+
+958
+00:36:25,410 --> 00:36:29,610
+This occupied people around the turn of the 19th century.
+
+959
+00:36:29,830 --> 00:36:31,210
+They were very confused by it.
+
+960
+00:36:31,470 --> 00:36:33,570
+And the reason they were confused by it
+
+961
+00:36:33,570 --> 00:36:37,170
+is because the ideal gas law
+
+962
+00:36:38,070 --> 00:36:40,470
+and the energy per particle
+
+963
+00:36:40,470 --> 00:36:43,330
+seemed to work pretty well
+
+964
+00:36:43,330 --> 00:36:47,850
+where the particle was treated as a point particle.
+
+965
+00:36:49,090 --> 00:36:50,370
+But supposedly,
+
+966
+00:36:50,390 --> 00:36:51,550
+using that point particle,
+
+967
+00:36:52,170 --> 00:36:56,950
+that molecule was actually not a single point particle,
+
+968
+00:36:57,170 --> 00:36:58,830
+which molecules are not.
+
+969
+00:36:59,110 --> 00:37:01,590
+They might be a diatomic molecule.
+
+970
+00:37:02,150 --> 00:37:04,350
+Diatomic molecules can vibrate.
+
+971
+00:37:04,530 --> 00:37:05,990
+They're little oscillators.
+
+972
+00:37:06,510 --> 00:37:08,370
+They are little oscillators.
+
+973
+00:37:09,510 --> 00:37:15,950
+And so one might have expected that...
+
+974
+00:37:15,950 --> 00:37:16,490
+And of course,
+
+975
+00:37:16,490 --> 00:37:18,170
+they're rather stiff oscillators.
+
+976
+00:37:18,230 --> 00:37:19,050
+They are rather stiff.
+
+977
+00:37:19,050 --> 00:37:22,050
+They have a good solid spring constant.
+
+978
+00:37:23,110 --> 00:37:24,350
+So it's...
+
+979
+00:37:25,020 --> 00:37:26,495
+You have to give them
+
+980
+00:37:26,495 --> 00:37:27,970
+quite a bit of energy to...
+
+981
+00:37:27,970 --> 00:37:28,230
+Well,
+
+982
+00:37:28,230 --> 00:37:29,610
+you have to give them quite a knock,
+
+983
+00:37:29,610 --> 00:37:30,210
+I should say.
+
+984
+00:37:30,270 --> 00:37:31,650
+Quite a knock to start them vibrating.
+
+985
+00:37:32,370 --> 00:37:36,450
+But the formula seems to say
+
+986
+00:37:37,050 --> 00:37:40,410
+that for a diatomic molecule,
+
+987
+00:37:41,050 --> 00:37:45,530
+you ought to have not 3 halves kT,
+
+988
+00:37:46,230 --> 00:37:49,030
+but maybe 5 halves kT.
+
+989
+00:37:49,050 --> 00:37:49,110
+And so you have to give
+
+990
+00:37:49,110 --> 00:37:49,170
+them a little bit of energy
+
+991
+00:37:49,170 --> 00:37:50,750
+to account for an extra harmonic oscillator
+
+992
+00:37:50,750 --> 00:37:52,790
+that could start to vibrate.
+
+993
+00:37:52,990 --> 00:37:53,550
+Well,
+
+994
+00:37:53,550 --> 00:37:55,330
+it was known that that energy wasn't there.
+
+995
+00:37:57,410 --> 00:37:59,450
+So you could think of two conclusions.
+
+996
+00:37:59,830 --> 00:38:02,630
+One conclusion is that the diatomic molecule
+
+997
+00:38:02,630 --> 00:38:04,930
+is not really a diatomic molecule at all.
+
+998
+00:38:04,990 --> 00:38:05,810
+It's a point particle.
+
+999
+00:38:06,270 --> 00:38:07,070
+But that's ridiculous.
+
+1000
+00:38:08,370 --> 00:38:11,050
+The other conclusion is that you're doing something wrong
+
+1001
+00:38:11,050 --> 00:38:13,110
+or you're missing some ingredient to physics here,
+
+1002
+00:38:13,230 --> 00:38:15,890
+which tends to keep that oscillator
+
+1003
+00:38:15,890 --> 00:38:18,270
+from having this much energy.
+
+1004
+00:38:20,210 --> 00:38:20,690
+You,
+
+1005
+00:38:20,690 --> 00:38:20,990
+of course,
+
+1006
+00:38:20,990 --> 00:38:22,190
+all know what the ingredient is,
+
+1007
+00:38:22,190 --> 00:38:22,430
+right?
+
+1008
+00:38:23,730 --> 00:38:24,210
+Good.
+
+1009
+00:38:24,210 --> 00:38:25,250
+Then I won't tell you.
+
+1010
+00:38:27,630 --> 00:38:28,330
+It is,
+
+1011
+00:38:28,330 --> 00:38:28,610
+of course,
+
+1012
+00:38:28,610 --> 00:38:29,370
+quantum mechanics.
+
+1013
+00:38:30,550 --> 00:38:31,030
+Right.
+
+1014
+00:38:31,330 --> 00:38:33,200
+So what we want to do
+
+1015
+00:38:33,200 --> 00:38:35,070
+and to compare with this calculation
+
+1016
+00:38:35,730 --> 00:38:38,470
+is the quantum mechanical calculation,
+
+1017
+00:38:38,750 --> 00:38:41,150
+the corresponding quantum mechanical calculation
+
+1018
+00:38:41,810 --> 00:38:42,290
+of,
+
+1019
+00:38:42,290 --> 00:38:42,810
+again,
+
+1020
+00:38:42,810 --> 00:38:44,630
+a quantum mechanical oscillator
+
+1021
+00:38:44,630 --> 00:38:46,850
+in equilibrium.
+
+1022
+00:38:47,270 --> 00:38:49,510
+How much do we have to know about quantum mechanics?
+
+1023
+00:38:49,750 --> 00:38:50,650
+Very little.
+
+1024
+00:38:52,930 --> 00:38:54,670
+We need the expression
+
+1025
+00:38:56,790 --> 00:38:58,950
+for the energy of a harmonic oscillator.
+
+1026
+00:39:02,430 --> 00:39:04,070
+And most of you,
+
+1027
+00:39:04,070 --> 00:39:04,490
+I'm sure,
+
+1028
+00:39:04,490 --> 00:39:04,890
+know
+
+1029
+00:39:04,890 --> 00:39:07,710
+that harmonic oscillator energies are quantized.
+
+1030
+00:39:08,170 --> 00:39:10,150
+They come in discrete multiples,
+
+1031
+00:39:10,570 --> 00:39:13,010
+and the discrete multiples are discrete multiples
+
+1032
+00:39:13,010 --> 00:39:14,610
+of plus or minus.
+
+1033
+00:39:14,630 --> 00:39:14,790
+So the energy of an oscillator is
+
+1034
+00:39:14,790 --> 00:39:18,890
+the Planck's constant times what?
+
+1035
+00:39:27,450 --> 00:39:29,510
+Planck's constant times the frequency.
+
+1036
+00:39:30,810 --> 00:39:34,170
+So the energy of an oscillator is
+
+1037
+00:39:34,890 --> 00:39:37,250
+n units of energy
+
+1038
+00:39:37,250 --> 00:39:41,850
+where each unit of energy costs h-bar omega.
+
+1039
+00:39:43,430 --> 00:39:45,430
+The set of energy levels,
+
+1040
+00:39:45,530 --> 00:39:48,430
+the set of states of a quantum harmonic oscillator
+
+1041
+00:39:49,570 --> 00:39:51,730
+is just this discrete set of states,
+
+1042
+00:39:51,890 --> 00:39:53,250
+all equally spaced.
+
+1043
+00:39:55,230 --> 00:39:57,270
+And that's all that we have to know
+
+1044
+00:39:57,270 --> 00:39:58,650
+about the quantum harmonic oscillator.
+
+1045
+00:39:58,870 --> 00:40:00,510
+It's the only quantum mechanics we need to know
+
+1046
+00:40:00,510 --> 00:40:03,990
+is that the energy of a single harmonic oscillator
+
+1047
+00:40:03,990 --> 00:40:08,170
+comes in discrete integer multiples of h-bar omega.
+
+1048
+00:40:09,870 --> 00:40:10,850
+Now we can calculate the
+
+1049
+00:40:10,850 --> 00:40:11,830
+energy of a single harmonic oscillator.
+
+1050
+00:40:11,830 --> 00:40:12,530
+Let's look at the partition function
+
+1051
+00:40:12,530 --> 00:40:14,190
+for the quantum mechanical oscillator.
+
+1052
+00:40:15,150 --> 00:40:16,510
+Remember what the answer is?
+
+1053
+00:40:16,570 --> 00:40:18,730
+The answer is always z
+
+1054
+00:40:18,730 --> 00:40:20,890
+is the sum of all states.
+
+1055
+00:40:21,530 --> 00:40:23,330
+For the classical oscillator,
+
+1056
+00:40:23,530 --> 00:40:25,310
+we replace that by an integral.
+
+1057
+00:40:26,730 --> 00:40:28,610
+For the quantum mechanical oscillator,
+
+1058
+00:40:28,910 --> 00:40:29,690
+it's truly a sum.
+
+1059
+00:40:30,690 --> 00:40:33,030
+It's a sum over n
+
+1060
+00:40:33,030 --> 00:40:35,370
+of e to the minus beta
+
+1061
+00:40:36,170 --> 00:40:38,830
+times the energy of the nth state.
+
+1062
+00:40:39,010 --> 00:40:40,530
+And the energy of the nth state
+
+1063
+00:40:40,530 --> 00:40:43,470
+is n h-bar omega.
+
+1064
+00:40:44,470 --> 00:40:46,230
+I'm keeping h-bar,
+
+1065
+00:40:46,330 --> 00:40:51,090
+but throwing away the Boltzmann constant.
+
+1066
+00:40:51,490 --> 00:40:54,070
+I refuse to keep track of both of them.
+
+1067
+00:40:54,630 --> 00:40:55,550
+It's too much.
+
+1068
+00:40:56,630 --> 00:40:57,150
+Okay,
+
+1069
+00:40:57,150 --> 00:41:00,750
+so this is the formula for the partition function.
+
+1070
+00:41:01,130 --> 00:41:03,570
+It looks like a complicated mess of exponentials.
+
+1071
+00:41:03,570 --> 00:41:04,510
+How do you sum that up?
+
+1072
+00:41:04,670 --> 00:41:04,910
+Oh boy,
+
+1073
+00:41:04,910 --> 00:41:05,450
+it looks hard.
+
+1074
+00:41:05,570 --> 00:41:06,130
+Not hard,
+
+1075
+00:41:06,130 --> 00:41:06,610
+it's very easy.
+
+1076
+00:41:07,190 --> 00:41:09,890
+e to the minus beta n h-bar omega,
+
+1077
+00:41:10,530 --> 00:41:13,070
+is e to the minus beta h-bar omega,
+
+1078
+00:41:13,230 --> 00:41:14,770
+to the nth power.
+
+1079
+00:41:15,930 --> 00:41:17,370
+So this is a series.
+
+1080
+00:41:17,530 --> 00:41:19,430
+The first term is just one.
+
+1081
+00:41:19,630 --> 00:41:21,030
+That's when n is equal to zero.
+
+1082
+00:41:21,490 --> 00:41:23,750
+So this is a series that has the form.
+
+1083
+00:41:25,350 --> 00:41:27,430
+One plus a number,
+
+1084
+00:41:27,430 --> 00:41:28,530
+let's call it x,
+
+1085
+00:41:29,910 --> 00:41:31,330
+namely this number in here,
+
+1086
+00:41:31,450 --> 00:41:32,750
+plus x squared,
+
+1087
+00:41:34,390 --> 00:41:35,690
+plus x cubed,
+
+1088
+00:41:36,490 --> 00:41:37,710
+plus dot dot dot.
+
+1089
+00:41:38,330 --> 00:41:40,250
+And that's a geometric series.
+
+1090
+00:41:40,530 --> 00:41:42,050
+That's a geometric series which
+
+1091
+00:41:42,050 --> 00:41:43,570
+is very easy to sum up.
+
+1092
+00:41:43,970 --> 00:41:46,650
+The answer is that this is equal to
+
+1093
+00:41:46,650 --> 00:41:50,250
+one divided by one minus x.
+
+1094
+00:41:52,550 --> 00:41:55,690
+That's the geometric series where x,
+
+1095
+00:41:55,930 --> 00:41:57,870
+where this thing in here is just x.
+
+1096
+00:41:58,730 --> 00:42:00,190
+So now we can sum it up.
+
+1097
+00:42:01,070 --> 00:42:03,530
+We'll calculate the partition function at z
+
+1098
+00:42:05,210 --> 00:42:09,650
+is equal to one divided by one minus,
+
+1099
+00:42:10,970 --> 00:42:15,090
+e to the minus beta h-bar omega.
+
+1100
+00:42:17,770 --> 00:42:18,590
+And that's it.
+
+1101
+00:42:22,730 --> 00:42:25,550
+That's the whole calculation of the partition function.
+
+1102
+00:42:26,490 --> 00:42:27,570
+It's fairly simple.
+
+1103
+00:42:27,930 --> 00:42:29,890
+You can write it in a number of ways.
+
+1104
+00:42:31,110 --> 00:42:32,410
+But I think this is probably
+
+1105
+00:42:32,410 --> 00:42:33,710
+the best way to write it.
+
+1106
+00:42:33,750 --> 00:42:34,850
+Just leave it in this form.
+
+1107
+00:42:36,410 --> 00:42:37,810
+There's other ways to write it,
+
+1108
+00:42:37,810 --> 00:42:38,630
+but this is fine.
+
+1109
+00:42:39,710 --> 00:42:40,990
+What do we want to do?
+
+1110
+00:42:41,130 --> 00:42:43,590
+We want to calculate the energy.
+
+1111
+00:42:46,030 --> 00:42:49,310
+The energy is the derivative of log z.
+
+1112
+00:42:49,690 --> 00:42:50,910
+But it's also equal,
+
+1113
+00:42:51,190 --> 00:42:53,390
+in this case it's a little easier
+
+1114
+00:42:53,390 --> 00:42:55,650
+just to take it to be one over z
+
+1115
+00:42:55,650 --> 00:42:58,670
+times the derivative of z with respect to beta.
+
+1116
+00:42:59,990 --> 00:43:02,490
+This is equal to the,
+
+1117
+00:43:02,710 --> 00:43:03,490
+or minus this,
+
+1118
+00:43:03,650 --> 00:43:07,050
+this is equal to minus the derivative of log z
+
+1119
+00:43:07,890 --> 00:43:08,610
+with respect to beta.
+
+1120
+00:43:08,610 --> 00:43:12,390
+Just using the property of logarithm.
+
+1121
+00:43:12,950 --> 00:43:14,770
+That the derivative of logarithm
+
+1122
+00:43:15,870 --> 00:43:17,030
+gives you a one over z.
+
+1123
+00:43:17,610 --> 00:43:19,270
+In this case I think it's a little easier
+
+1124
+00:43:19,270 --> 00:43:22,010
+just to calculate the nut bar taking the logarithm.
+
+1125
+00:43:24,530 --> 00:43:24,970
+Okay,
+
+1126
+00:43:24,970 --> 00:43:26,470
+so what is dz by d beta?
+
+1127
+00:43:27,909 --> 00:43:28,350
+Well,
+
+1128
+00:43:28,350 --> 00:43:31,430
+there's some ugly expression in the denominator.
+
+1129
+00:43:32,410 --> 00:43:33,870
+When you differentiate the thing
+
+1130
+00:43:33,870 --> 00:43:35,330
+with the thing in the denominator
+
+1131
+00:43:35,330 --> 00:43:36,770
+you get the denominator squared.
+
+1132
+00:43:36,770 --> 00:43:40,410
+So we get dz by d beta,
+
+1133
+00:43:40,510 --> 00:43:41,350
+let's just work it out,
+
+1134
+00:43:41,410 --> 00:43:45,270
+dz by d beta will contain a one divided by one
+
+1135
+00:43:45,270 --> 00:43:49,130
+minus e to the minus beta h bar omega all squared.
+
+1136
+00:43:49,990 --> 00:43:52,870
+That's just coming from differentiating a denominator.
+
+1137
+00:43:53,210 --> 00:43:53,890
+One over x,
+
+1138
+00:43:53,890 --> 00:43:54,590
+one over x squared.
+
+1139
+00:43:56,250 --> 00:43:56,850
+Yeah,
+
+1140
+00:43:56,850 --> 00:43:57,770
+minus.
+
+1141
+00:43:59,570 --> 00:44:00,170
+Okay,
+
+1142
+00:44:00,170 --> 00:44:02,230
+next we have to differentiate
+
+1143
+00:44:02,770 --> 00:44:04,370
+the argument,
+
+1144
+00:44:04,370 --> 00:44:06,530
+we have to differentiate what's in the denominator,
+
+1145
+00:44:06,770 --> 00:44:07,610
+with respect to beta.
+
+1146
+00:44:08,470 --> 00:44:11,270
+That's going to give us another minus sign from here
+
+1147
+00:44:11,270 --> 00:44:12,890
+and another two minus signs,
+
+1148
+00:44:13,030 --> 00:44:14,000
+I think the whole thing will
+
+1149
+00:44:14,000 --> 00:44:14,970
+have one minus sign in it.
+
+1150
+00:44:17,370 --> 00:44:17,870
+Yeah,
+
+1151
+00:44:17,870 --> 00:44:19,630
+there will be one minus sign left over.
+
+1152
+00:44:20,870 --> 00:44:22,630
+You get a minus sign from here
+
+1153
+00:44:22,630 --> 00:44:24,210
+and you get another minus sign from here.
+
+1154
+00:44:25,290 --> 00:44:28,970
+But basically it's just the derivative in the numerator here
+
+1155
+00:44:29,640 --> 00:44:30,550
+of the exponential.
+
+1156
+00:44:31,210 --> 00:44:31,710
+Well,
+
+1157
+00:44:31,710 --> 00:44:33,340
+what's the derivative of the
+
+1158
+00:44:33,340 --> 00:44:34,970
+exponential with respect to beta?
+
+1159
+00:44:38,550 --> 00:44:42,720
+It's h bar omega times e
+
+1160
+00:44:42,720 --> 00:44:46,890
+to the minus beta h bar omega,
+
+1161
+00:44:46,890 --> 00:44:47,510
+right?
+
+1162
+00:44:50,370 --> 00:44:50,930
+That's it.
+
+1163
+00:44:52,970 --> 00:44:54,070
+Minus h bar omega.
+
+1164
+00:44:55,190 --> 00:44:55,890
+Minus here.
+
+1165
+00:44:56,470 --> 00:44:57,010
+Yeah.
+
+1166
+00:44:57,890 --> 00:44:58,430
+Okay.
+
+1167
+00:44:58,750 --> 00:45:00,910
+Now we have to divide by z.
+
+1168
+00:45:01,890 --> 00:45:03,990
+That means multiply by one
+
+1169
+00:45:03,990 --> 00:45:06,090
+minus e to the minus beta,
+
+1170
+00:45:06,090 --> 00:45:06,410
+a blob.
+
+1171
+00:45:06,770 --> 00:45:07,090
+Okay?
+
+1172
+00:45:08,190 --> 00:45:10,020
+Multiply by that and that
+
+1173
+00:45:10,020 --> 00:45:11,850
+gets rid of one factor here.
+
+1174
+00:45:15,630 --> 00:45:16,830
+And what is that?
+
+1175
+00:45:16,990 --> 00:45:18,510
+That's minus the energy.
+
+1176
+00:45:19,330 --> 00:45:21,390
+We want plus the energy.
+
+1177
+00:45:21,890 --> 00:45:24,390
+So let's put a minus sign here.
+
+1178
+00:45:27,450 --> 00:45:31,450
+And by sheer luck,
+
+1179
+00:45:31,450 --> 00:45:33,930
+we wound up with a positive quantity.
+
+1180
+00:45:36,770 --> 00:45:37,350
+Okay.
+
+1181
+00:45:38,490 --> 00:45:39,870
+This is the answer.
+
+1182
+00:45:41,290 --> 00:45:42,530
+This is the answer.
+
+1183
+00:45:43,910 --> 00:45:45,450
+What is this compared with?
+
+1184
+00:45:45,590 --> 00:45:48,030
+This is compared with one over beta.
+
+1185
+00:45:48,910 --> 00:45:51,230
+So what's the relationship between them?
+
+1186
+00:45:51,690 --> 00:45:52,290
+Well,
+
+1187
+00:45:52,290 --> 00:45:54,410
+let's first go to high temperature.
+
+1188
+00:45:55,070 --> 00:45:57,990
+Let's first ask what this is like at high temperature.
+
+1189
+00:45:58,470 --> 00:46:01,210
+High temperature is a situation
+
+1190
+00:46:01,210 --> 00:46:03,950
+where the classical theory is good.
+
+1191
+00:46:04,090 --> 00:46:05,530
+Why is the classical theory good?
+
+1192
+00:46:05,530 --> 00:46:06,230
+Well,
+
+1193
+00:46:06,230 --> 00:46:09,850
+each one of these little quanta of
+
+1194
+00:46:09,850 --> 00:46:13,470
+energy here are thought of as very small.
+
+1195
+00:46:14,030 --> 00:46:20,990
+A classical spring has a great many units of energy.
+
+1196
+00:46:21,330 --> 00:46:22,870
+So in that sense,
+
+1197
+00:46:22,870 --> 00:46:25,610
+the classical system in quantum
+
+1198
+00:46:25,610 --> 00:46:28,350
+units has a lot of energy.
+
+1199
+00:46:28,710 --> 00:46:31,440
+That must mean that it has
+
+1200
+00:46:31,440 --> 00:46:34,170
+very high temperature in some quantum sense.
+
+1201
+00:46:35,610 --> 00:46:37,430
+Classical systems are...
+
+1202
+00:46:37,430 --> 00:46:39,620
+Quantum systems become classical when
+
+1203
+00:46:39,620 --> 00:46:41,810
+the temperature is very high.
+
+1204
+00:46:42,710 --> 00:46:43,190
+Okay.
+
+1205
+00:46:43,550 --> 00:46:44,930
+When the temperature is high,
+
+1206
+00:46:44,930 --> 00:46:45,990
+they have a lot of energy.
+
+1207
+00:46:46,530 --> 00:46:49,550
+And the quantization of energy becomes unimportant.
+
+1208
+00:46:50,250 --> 00:46:51,600
+So let's go to high
+
+1209
+00:46:51,600 --> 00:46:52,950
+temperature and see what we have.
+
+1210
+00:46:55,210 --> 00:46:55,870
+This is...
+
+1211
+00:46:55,870 --> 00:46:56,670
+where did I...
+
+1212
+00:46:58,350 --> 00:46:58,830
+Ah,
+
+1213
+00:46:58,830 --> 00:46:59,290
+here it is.
+
+1214
+00:46:59,730 --> 00:47:00,730
+This is the energy.
+
+1215
+00:47:00,850 --> 00:47:03,190
+Let's erase everything else and just call this the energy.
+
+1216
+00:47:03,670 --> 00:47:04,150
+Okay.
+
+1217
+00:47:09,070 --> 00:47:11,970
+High temperature means beta big.
+
+1218
+00:47:12,190 --> 00:47:12,350
+No,
+
+1219
+00:47:12,350 --> 00:47:12,510
+no,
+
+1220
+00:47:12,510 --> 00:47:12,830
+sorry.
+
+1221
+00:47:13,730 --> 00:47:16,270
+High temperature means beta very small.
+
+1222
+00:47:16,650 --> 00:47:18,230
+Beta is one over the temperature.
+
+1223
+00:47:18,910 --> 00:47:20,490
+So high temperature,
+
+1224
+00:47:20,490 --> 00:47:21,390
+beta...
+
+1225
+00:47:22,050 --> 00:47:23,010
+What did I say?
+
+1226
+00:47:23,070 --> 00:47:23,570
+Beta small.
+
+1227
+00:47:24,470 --> 00:47:25,430
+Beta small,
+
+1228
+00:47:25,430 --> 00:47:27,930
+if we take the limit that beta gets very,
+
+1229
+00:47:27,930 --> 00:47:28,670
+very near zero,
+
+1230
+00:47:28,810 --> 00:47:30,550
+this is perfectly...
+
+1231
+00:47:30,550 --> 00:47:32,530
+This is just approximately one.
+
+1232
+00:47:32,770 --> 00:47:34,150
+And gets closer and closer to zero.
+
+1233
+00:47:34,150 --> 00:47:36,730
+And closer to one as beta gets smaller and smaller.
+
+1234
+00:47:38,270 --> 00:47:38,790
+So,
+
+1235
+00:47:38,790 --> 00:47:39,710
+here's the answer.
+
+1236
+00:47:39,830 --> 00:47:40,570
+H bar omega.
+
+1237
+00:47:41,190 --> 00:47:43,250
+This factor here just goes to one.
+
+1238
+00:47:43,550 --> 00:47:45,730
+We could do the same thing with this factor here,
+
+1239
+00:47:45,730 --> 00:47:46,650
+but then we get in trouble.
+
+1240
+00:47:47,310 --> 00:47:48,470
+One minus one,
+
+1241
+00:47:48,470 --> 00:47:50,970
+bad thing to do.
+
+1242
+00:47:51,670 --> 00:47:52,190
+So,
+
+1243
+00:47:52,190 --> 00:47:55,210
+what we do is we expand this.
+
+1244
+00:47:56,650 --> 00:47:58,910
+That's one minus...
+
+1245
+00:47:59,850 --> 00:48:00,710
+And now,
+
+1246
+00:48:00,710 --> 00:48:03,830
+e to the minus beta omega is one.
+
+1247
+00:48:06,510 --> 00:48:07,190
+Plus,
+
+1248
+00:48:07,190 --> 00:48:08,150
+I think,
+
+1249
+00:48:08,150 --> 00:48:11,510
+beta h bar omega.
+
+1250
+00:48:13,390 --> 00:48:17,840
+I'm using the expansion that e to the x is
+
+1251
+00:48:17,840 --> 00:48:22,290
+one plus x plus x squared over two and so forth.
+
+1252
+00:48:23,090 --> 00:48:25,950
+And only keeping track of the first term.
+
+1253
+00:48:26,730 --> 00:48:28,970
+I have to keep track of the first...
+
+1254
+00:48:29,810 --> 00:48:30,490
+Actually,
+
+1255
+00:48:30,490 --> 00:48:31,890
+it's the second term.
+
+1256
+00:48:32,970 --> 00:48:34,130
+The first term is...
+
+1257
+00:48:34,130 --> 00:48:35,130
+The second term cancels out.
+
+1258
+00:48:35,930 --> 00:48:36,550
+Okay?
+
+1259
+00:48:36,650 --> 00:48:36,990
+So,
+
+1260
+00:48:36,990 --> 00:48:41,570
+not good to just take the first approximation one.
+
+1261
+00:48:42,950 --> 00:48:45,710
+The second term is to
+
+1262
+00:48:45,710 --> 00:48:48,470
+approximate the exponential by just x,
+
+1263
+00:48:48,530 --> 00:48:50,230
+which is minus beta h bar omega,
+
+1264
+00:48:50,450 --> 00:48:51,810
+which just gives us beta
+
+1265
+00:48:51,810 --> 00:48:53,170
+h bar omega in the denominator.
+
+1266
+00:48:56,510 --> 00:48:58,900
+And the next terms after
+
+1267
+00:48:58,900 --> 00:49:01,290
+that are proportional to beta squared,
+
+1268
+00:49:01,290 --> 00:49:02,250
+beta cubed,
+
+1269
+00:49:02,570 --> 00:49:03,630
+beta fourth,
+
+1270
+00:49:03,630 --> 00:49:04,110
+and so on.
+
+1271
+00:49:04,130 --> 00:49:04,390
+And so forth.
+
+1272
+00:49:04,790 --> 00:49:06,590
+And they're much smaller than this.
+
+1273
+00:49:06,970 --> 00:49:09,670
+They can be ignored when beta gets very small.
+
+1274
+00:49:10,110 --> 00:49:11,210
+What do we get?
+
+1275
+00:49:11,330 --> 00:49:13,510
+We get one over beta.
+
+1276
+00:49:15,909 --> 00:49:16,710
+One over beta.
+
+1277
+00:49:17,770 --> 00:49:18,410
+So,
+
+1278
+00:49:18,410 --> 00:49:18,650
+you see,
+
+1279
+00:49:18,650 --> 00:49:20,030
+in the high temperature situation,
+
+1280
+00:49:20,030 --> 00:49:22,670
+it just reproduces the classical physics.
+
+1281
+00:49:23,870 --> 00:49:24,230
+Okay?
+
+1282
+00:49:25,890 --> 00:49:28,330
+But let's ask about the low temperatures.
+
+1283
+00:49:28,670 --> 00:49:30,510
+What happens at low temperatures?
+
+1284
+00:49:32,230 --> 00:49:33,870
+At low temperatures,
+
+1285
+00:49:33,870 --> 00:49:36,350
+that means large beta.
+
+1286
+00:49:38,110 --> 00:49:39,230
+Where's the energy?
+
+1287
+00:49:40,090 --> 00:49:40,450
+All right.
+
+1288
+00:49:41,110 --> 00:49:42,710
+Small beta...
+
+1289
+00:49:43,950 --> 00:49:44,650
+Sorry.
+
+1290
+00:49:46,530 --> 00:49:47,230
+Large...
+
+1291
+00:49:47,230 --> 00:49:48,930
+Low temperatures.
+
+1292
+00:49:49,290 --> 00:49:50,350
+Large beta.
+
+1293
+00:49:50,610 --> 00:49:51,610
+Large beta.
+
+1294
+00:49:52,230 --> 00:49:53,310
+Large beta,
+
+1295
+00:49:53,310 --> 00:49:54,970
+this exponential is small.
+
+1296
+00:49:56,030 --> 00:49:58,850
+E to the minus a large number is small.
+
+1297
+00:49:58,850 --> 00:50:01,610
+So now we're going to low temperature,
+
+1298
+00:50:01,610 --> 00:50:02,830
+large beta.
+
+1299
+00:50:03,510 --> 00:50:05,030
+This is negligible.
+
+1300
+00:50:05,690 --> 00:50:08,070
+If beta is 100 million or something,
+
+1301
+00:50:08,070 --> 00:50:08,490
+very,
+
+1302
+00:50:08,490 --> 00:50:09,370
+very low temperature,
+
+1303
+00:50:10,770 --> 00:50:12,770
+then this is negligible.
+
+1304
+00:50:12,870 --> 00:50:14,370
+We just get one in the denominator.
+
+1305
+00:50:14,750 --> 00:50:18,800
+So the answer is h bar omega times
+
+1306
+00:50:18,800 --> 00:50:22,850
+e to the minus beta h bar omega.
+
+1307
+00:50:23,930 --> 00:50:24,970
+But again,
+
+1308
+00:50:24,970 --> 00:50:27,950
+this exponential is extremely small.
+
+1309
+00:50:29,130 --> 00:50:33,270
+So we see far from getting just the temperature,
+
+1310
+00:50:33,610 --> 00:50:36,520
+we get something that's exponentially small
+
+1311
+00:50:36,520 --> 00:50:39,430
+when the temperature goes to zero.
+
+1312
+00:50:40,770 --> 00:50:42,490
+When the temperature goes to zero,
+
+1313
+00:50:42,490 --> 00:50:43,870
+which means beta gets large,
+
+1314
+00:50:44,230 --> 00:50:46,170
+this becomes enormously small
+
+1315
+00:50:46,170 --> 00:50:48,110
+because it's exponentially small.
+
+1316
+00:50:48,410 --> 00:50:49,410
+E to the minus beta,
+
+1317
+00:50:49,410 --> 00:50:51,130
+where beta is large,
+
+1318
+00:50:51,130 --> 00:50:51,830
+is very,
+
+1319
+00:50:51,830 --> 00:50:52,410
+very small.
+
+1320
+00:50:52,870 --> 00:50:53,450
+Okay?
+
+1321
+00:50:53,910 --> 00:50:55,370
+So what do we find?
+
+1322
+00:50:55,450 --> 00:50:57,270
+We find that quantum mechanics,
+
+1323
+00:50:57,270 --> 00:51:01,030
+tends to suppress the energy of an oscillator
+
+1324
+00:51:01,030 --> 00:51:05,730
+when the temperature is low enough.
+
+1325
+00:51:06,170 --> 00:51:07,910
+Very low temperatures,
+
+1326
+00:51:08,810 --> 00:51:12,170
+it doesn't behave like the classical oscillator at all.
+
+1327
+00:51:12,350 --> 00:51:15,320
+It has much less energy than
+
+1328
+00:51:15,320 --> 00:51:18,290
+the corresponding classical oscillator would have had.
+
+1329
+00:51:18,790 --> 00:51:21,210
+The question is where is the crossover?
+
+1330
+00:51:21,730 --> 00:51:25,010
+Where does it go from being quantum to classical?
+
+1331
+00:51:25,010 --> 00:51:27,930
+And if you look at a formula like this,
+
+1332
+00:51:28,610 --> 00:51:32,620
+you would know that the crossover is where
+
+1333
+00:51:32,620 --> 00:51:36,630
+the exponential goes from being small to being large.
+
+1334
+00:51:38,510 --> 00:51:41,430
+The biggest the exponential ever gets is one,
+
+1335
+00:51:41,430 --> 00:51:42,230
+e to the minus,
+
+1336
+00:51:42,370 --> 00:51:44,030
+but it goes where it goes.
+
+1337
+00:51:44,190 --> 00:51:45,410
+And when does that happen?
+
+1338
+00:51:45,510 --> 00:51:47,520
+That happens when beta h bar
+
+1339
+00:51:47,520 --> 00:51:49,530
+omega is about equal to one.
+
+1340
+00:51:50,350 --> 00:51:53,690
+The crossover between high temperature,
+
+1341
+00:51:53,690 --> 00:51:56,030
+or between the high temperature
+
+1342
+00:51:56,030 --> 00:51:58,370
+behavior and the low temperature behavior,
+
+1343
+00:51:58,690 --> 00:52:02,110
+is when what's in the exponential here is about one.
+
+1344
+00:52:02,390 --> 00:52:03,910
+For very low temperatures,
+
+1345
+00:52:04,190 --> 00:52:06,590
+this quantity here is large.
+
+1346
+00:52:06,850 --> 00:52:08,250
+For very high temperatures,
+
+1347
+00:52:08,250 --> 00:52:09,490
+this quantity is small.
+
+1348
+00:52:09,730 --> 00:52:12,070
+And it's this exponential which controls
+
+1349
+00:52:13,350 --> 00:52:15,420
+whether the discreteness of the
+
+1350
+00:52:15,420 --> 00:52:17,490
+energy levels is important or not.
+
+1351
+00:52:17,870 --> 00:52:18,510
+So,
+
+1352
+00:52:18,510 --> 00:52:20,550
+let's write where the crossover is.
+
+1353
+00:52:20,930 --> 00:52:22,690
+The crossover happens,
+
+1354
+00:52:23,690 --> 00:52:24,310
+when beta,
+
+1355
+00:52:25,530 --> 00:52:26,290
+crossover means,
+
+1356
+00:52:26,670 --> 00:52:30,210
+the transition from quantum behavior to classical behavior.
+
+1357
+00:52:30,710 --> 00:52:34,450
+It happens when beta h bar
+
+1358
+00:52:34,450 --> 00:52:38,190
+omega is about equal to one.
+
+1359
+00:52:39,450 --> 00:52:40,530
+Now let's see,
+
+1360
+00:52:40,530 --> 00:52:41,370
+which way does it go?
+
+1361
+00:52:41,810 --> 00:52:45,350
+If beta h bar omega is bigger than one,
+
+1362
+00:52:45,610 --> 00:52:47,790
+is that quantum or classical?
+
+1363
+00:52:50,270 --> 00:52:52,670
+That's quantum because it's low temperature.
+
+1364
+00:52:53,690 --> 00:52:54,910
+If beta h bar omega is bigger than one,
+
+1365
+00:52:56,910 --> 00:52:57,590
+quantum.
+
+1366
+00:53:01,950 --> 00:53:03,550
+Beta h bar omega,
+
+1367
+00:53:05,770 --> 00:53:07,070
+less than one,
+
+1368
+00:53:07,690 --> 00:53:09,630
+it starts to behave classically.
+
+1369
+00:53:13,950 --> 00:53:16,550
+Let's just write one other equation.
+
+1370
+00:53:16,950 --> 00:53:18,970
+Beta is one over the temperature,
+
+1371
+00:53:20,370 --> 00:53:21,530
+and so that says,
+
+1372
+00:53:24,110 --> 00:53:27,510
+h bar omega is equal to the temperature.
+
+1373
+00:53:30,790 --> 00:53:32,230
+That's where it crosses over.
+
+1374
+00:53:32,810 --> 00:53:34,170
+If you look at it,
+
+1375
+00:53:34,170 --> 00:53:35,010
+it makes a lot of sense.
+
+1376
+00:53:35,550 --> 00:53:36,490
+It says,
+
+1377
+00:53:36,750 --> 00:53:39,900
+the crossover is when the
+
+1378
+00:53:39,900 --> 00:53:43,050
+energy of the oscillator classically
+
+1379
+00:53:43,690 --> 00:53:45,750
+is equal to one quantum's
+
+1380
+00:53:45,750 --> 00:53:47,810
+worth of quantum mechanical energy.
+
+1381
+00:53:50,650 --> 00:53:53,290
+If you try to make the temperature lower than that,
+
+1382
+00:53:53,490 --> 00:53:57,170
+the oscillator has less than one quantum's worth of energy.
+
+1383
+00:53:57,610 --> 00:53:59,750
+The temperature is so low that it
+
+1384
+00:53:59,750 --> 00:54:01,890
+has less than one quantum's worth of energy.
+
+1385
+00:54:02,330 --> 00:54:03,630
+It doesn't want to do that.
+
+1386
+00:54:03,690 --> 00:54:04,900
+It doesn't want to have less
+
+1387
+00:54:04,900 --> 00:54:06,110
+than one quantum's worth of energy.
+
+1388
+00:54:07,530 --> 00:54:08,330
+And so,
+
+1389
+00:54:08,430 --> 00:54:11,150
+the partition function or the expression
+
+1390
+00:54:11,150 --> 00:54:13,870
+for the energy is almost zero,
+
+1391
+00:54:13,990 --> 00:54:14,950
+exponentially small.
+
+1392
+00:54:14,950 --> 00:54:17,290
+Here's the crossover point.
+
+1393
+00:54:19,070 --> 00:54:19,810
+Or,
+
+1394
+00:54:21,410 --> 00:54:22,570
+let's write it,
+
+1395
+00:54:23,510 --> 00:54:24,970
+greater than temperature,
+
+1396
+00:54:26,390 --> 00:54:27,770
+less than temperature.
+
+1397
+00:54:29,910 --> 00:54:30,650
+Okay,
+
+1398
+00:54:30,650 --> 00:54:33,710
+so now we actually know the answer
+
+1399
+00:54:33,710 --> 00:54:36,770
+to the puzzle about the diatomic molecule.
+
+1400
+00:54:37,890 --> 00:54:42,090
+When the temperature is too low,
+
+1401
+00:54:43,730 --> 00:54:44,870
+that's when,
+
+1402
+00:54:47,050 --> 00:54:49,670
+when the temperature is too low,
+
+1403
+00:54:49,710 --> 00:54:51,730
+we're deep in the quantum regime.
+
+1404
+00:54:52,710 --> 00:54:54,050
+And when you're in the quantum regime,
+
+1405
+00:54:54,270 --> 00:54:57,430
+the oscillator has exponentially small energy
+
+1406
+00:54:58,350 --> 00:55:00,310
+compared to what it would be classically.
+
+1407
+00:55:01,370 --> 00:55:02,530
+On the other hand,
+
+1408
+00:55:02,530 --> 00:55:04,190
+when the temperature goes up,
+
+1409
+00:55:06,710 --> 00:55:07,970
+at some point,
+
+1410
+00:55:08,030 --> 00:55:10,650
+the temperature will get larger than h bar omega.
+
+1411
+00:55:10,930 --> 00:55:12,070
+At that point,
+
+1412
+00:55:12,070 --> 00:55:14,010
+you begin to activate the oscillator.
+
+1413
+00:55:14,950 --> 00:55:17,470
+You can't activate the quantum oscillator
+
+1414
+00:55:17,470 --> 00:55:19,790
+unless the temperature is such
+
+1415
+00:55:19,790 --> 00:55:21,660
+that it corresponds to more
+
+1416
+00:55:21,660 --> 00:55:23,530
+than one quantum's worth of energy.
+
+1417
+00:55:23,670 --> 00:55:24,350
+That's what this says.
+
+1418
+00:55:24,690 --> 00:55:25,890
+So where are we?
+
+1419
+00:55:26,910 --> 00:55:29,550
+At very low temp- at low temperatures,
+
+1420
+00:55:29,630 --> 00:55:30,870
+up to some temperature,
+
+1421
+00:55:31,230 --> 00:55:35,010
+the diatomic molecule behaves like a monatomic molecule.
+
+1422
+00:55:35,450 --> 00:55:37,870
+You do not stop the vibrations going.
+
+1423
+00:55:38,370 --> 00:55:39,790
+But at some temperature,
+
+1424
+00:55:40,470 --> 00:55:41,650
+at some temperature,
+
+1425
+00:55:41,650 --> 00:55:43,090
+if you raise the temperature enough,
+
+1426
+00:55:43,090 --> 00:55:44,750
+so that the temperature becomes
+
+1427
+00:55:44,750 --> 00:55:46,410
+bigger than the quantum of energy,
+
+1428
+00:55:46,670 --> 00:55:48,980
+the diatomic molecule starts to
+
+1429
+00:55:48,980 --> 00:55:51,290
+behave like a diatomic molecule.
+
+1430
+00:55:51,690 --> 00:55:52,330
+Now,
+
+1431
+00:55:52,330 --> 00:55:53,990
+that temperature's pretty high.
+
+1432
+00:55:54,530 --> 00:55:56,310
+For a good stiff molecule,
+
+1433
+00:55:57,070 --> 00:55:57,750
+oh,
+
+1434
+00:55:57,750 --> 00:55:58,370
+this,
+
+1435
+00:55:58,370 --> 00:55:59,630
+here's another point.
+
+1436
+00:55:59,850 --> 00:56:02,150
+The stiffness determines omega.
+
+1437
+00:56:02,750 --> 00:56:03,850
+The stiffness,
+
+1438
+00:56:03,850 --> 00:56:05,450
+the stiffness of the oscillator,
+
+1439
+00:56:06,990 --> 00:56:07,850
+what is it,
+
+1440
+00:56:07,850 --> 00:56:09,150
+the square root of k over m?
+
+1441
+00:56:09,350 --> 00:56:11,110
+The stiffer the oscillator,
+
+1442
+00:56:11,110 --> 00:56:12,310
+the larger the frequency.
+
+1443
+00:56:12,310 --> 00:56:14,830
+So the crossover point,
+
+1444
+00:56:15,010 --> 00:56:16,330
+the stiffer the oscillator,
+
+1445
+00:56:16,670 --> 00:56:19,090
+the higher the temperature of the crossover point.
+
+1446
+00:56:19,290 --> 00:56:19,790
+Well,
+
+1447
+00:56:19,790 --> 00:56:20,430
+you know,
+
+1448
+00:56:20,430 --> 00:56:24,430
+molecules are pretty stiff on the scale of rubber bands.
+
+1449
+00:56:25,330 --> 00:56:30,950
+And the temperature at which the monatomic molecule,
+
+1450
+00:56:31,210 --> 00:56:32,730
+where the molecule goes from
+
+1451
+00:56:32,730 --> 00:56:34,250
+looking like a monatomic molecule
+
+1452
+00:56:34,250 --> 00:56:36,110
+to being a diatomic molecule,
+
+1453
+00:56:36,270 --> 00:56:37,990
+is fairly high.
+
+1454
+00:56:38,270 --> 00:56:39,730
+But what happens if you raise
+
+1455
+00:56:39,730 --> 00:56:41,190
+the temperature even a little more?
+
+1456
+00:56:41,190 --> 00:56:42,170
+Oh,
+
+1457
+00:56:42,170 --> 00:56:42,810
+incidentally,
+
+1458
+00:56:42,810 --> 00:56:43,210
+before,
+
+1459
+00:56:43,210 --> 00:56:45,230
+often before this happens,
+
+1460
+00:56:45,290 --> 00:56:46,110
+something else starts to happen.
+
+1461
+00:56:46,210 --> 00:56:47,530
+The molecule starts to rotate,
+
+1462
+00:56:47,530 --> 00:56:49,190
+other things start to happen.
+
+1463
+00:56:49,390 --> 00:56:50,830
+This is just one example.
+
+1464
+00:56:52,570 --> 00:56:54,650
+What happens if you heat it even more?
+
+1465
+00:56:55,770 --> 00:56:57,850
+You activate even worse things.
+
+1466
+00:56:58,170 --> 00:57:00,850
+The atoms themselves start to vibrate,
+
+1467
+00:57:00,870 --> 00:57:02,570
+and eventually they'll get ionized.
+
+1468
+00:57:03,150 --> 00:57:05,310
+So when they become ionized,
+
+1469
+00:57:05,310 --> 00:57:06,810
+it doesn't behave like an atom at all.
+
+1470
+00:57:06,970 --> 00:57:09,530
+It behaves like an electron and a proton.
+
+1471
+00:57:09,530 --> 00:57:14,310
+So this is an example of quantum mechanics
+
+1472
+00:57:14,310 --> 00:57:20,610
+solving a deep problem that physicists have been very,
+
+1473
+00:57:20,610 --> 00:57:21,750
+very confused about.
+
+1474
+00:57:21,990 --> 00:57:23,230
+In particular,
+
+1475
+00:57:23,230 --> 00:57:25,450
+I'll tell you where this came up.
+
+1476
+00:57:26,990 --> 00:57:30,650
+Solids are simply systems of molecules
+
+1477
+00:57:30,650 --> 00:57:34,130
+where the molecules are arranged in a lattice.
+
+1478
+00:57:34,410 --> 00:57:36,870
+They vibrate around the lattice centers.
+
+1479
+00:57:37,190 --> 00:57:39,350
+So each atom is sort of a,
+
+1480
+00:57:39,530 --> 00:57:39,790
+a kind of oscillator.
+
+1481
+00:57:43,270 --> 00:57:46,210
+The energy of the oscillators,
+
+1482
+00:57:46,310 --> 00:57:48,090
+as a function of the temperature,
+
+1483
+00:57:48,230 --> 00:57:50,270
+the amount of energy as a function of the temperature,
+
+1484
+00:57:50,430 --> 00:57:56,010
+determines the specific heat of the crystal.
+
+1485
+00:57:58,150 --> 00:58:01,590
+The specific heat of a crystal
+
+1486
+00:58:02,390 --> 00:58:03,450
+with a very,
+
+1487
+00:58:03,450 --> 00:58:05,230
+very large number of oscillators,
+
+1488
+00:58:05,250 --> 00:58:06,990
+or the heat capacity,
+
+1489
+00:58:06,990 --> 00:58:10,070
+was estimated by classical physics
+
+1490
+00:58:10,070 --> 00:58:10,990
+to be much,
+
+1491
+00:58:10,990 --> 00:58:13,650
+much larger than the actual answer.
+
+1492
+00:58:14,530 --> 00:58:17,990
+It was Einstein who basically figured out
+
+1493
+00:58:17,990 --> 00:58:20,480
+that what was going on is
+
+1494
+00:58:20,480 --> 00:58:22,970
+that the quantum statistical mechanics of oscillators
+
+1495
+00:58:22,970 --> 00:58:24,230
+suppressed the,
+
+1496
+00:58:25,649 --> 00:58:27,519
+suppressed the oscillators until
+
+1497
+00:58:27,519 --> 00:58:29,390
+the temperature got high enough.
+
+1498
+00:58:29,750 --> 00:58:32,410
+So this is another Einstein,
+
+1499
+00:58:33,750 --> 00:58:35,190
+one of his minor,
+
+1500
+00:58:35,190 --> 00:58:36,350
+one of his small minor,
+
+1501
+00:58:37,030 --> 00:58:37,470
+contributions.
+
+1502
+00:58:38,990 --> 00:58:40,950
+Did he get the Nobel Prize for it?
+
+1503
+00:58:41,710 --> 00:58:43,050
+I thought he got the
+
+1504
+00:58:43,050 --> 00:58:44,390
+Nobel Prize for the photoelectric effect.
+
+1505
+00:58:44,570 --> 00:58:45,350
+I think so.
+
+1506
+00:58:46,050 --> 00:58:46,490
+Okay,
+
+1507
+00:58:46,490 --> 00:58:48,310
+but this is neither of them.
+
+1508
+00:58:50,510 --> 00:58:51,810
+So when was this done?
+
+1509
+00:58:51,910 --> 00:58:52,650
+When did he do this?
+
+1510
+00:58:52,690 --> 00:58:53,050
+I mean,
+
+1511
+00:58:53,050 --> 00:58:54,790
+when quantum mechanics had already come in?
+
+1512
+00:58:55,990 --> 00:58:56,430
+Right,
+
+1513
+00:58:56,430 --> 00:59:00,890
+but remember that
+
+1514
+00:59:01,890 --> 00:59:04,410
+Einstein invented quantum mechanics in 1905,
+
+1515
+00:59:04,510 --> 00:59:05,690
+so I'm not sure exactly,
+
+1516
+00:59:05,690 --> 00:59:07,050
+somebody look it up,
+
+1517
+00:59:07,050 --> 00:59:08,230
+specific heat of solids.
+
+1518
+00:59:08,590 --> 00:59:09,170
+No.
+
+1519
+00:59:09,950 --> 00:59:10,970
+It was early.
+
+1520
+00:59:11,110 --> 00:59:11,810
+It was early.
+
+1521
+00:59:12,310 --> 00:59:14,730
+It was long before people
+
+1522
+00:59:14,730 --> 00:59:17,150
+understood the foundations of quantum mechanics.
+
+1523
+00:59:18,650 --> 00:59:20,890
+He just knew that the,
+
+1524
+00:59:21,010 --> 00:59:23,630
+that the quantum energy levels
+
+1525
+00:59:23,630 --> 00:59:26,250
+had to be proportional to frequency,
+
+1526
+00:59:27,190 --> 00:59:28,630
+and to n.
+
+1527
+00:59:29,670 --> 00:59:32,550
+So he wasn't opposed to all aspects of quantum mechanics?
+
+1528
+00:59:34,050 --> 00:59:34,650
+No.
+
+1529
+00:59:34,650 --> 00:59:35,310
+No.
+
+1530
+00:59:36,230 --> 00:59:36,910
+No.
+
+1531
+00:59:37,090 --> 00:59:37,170
+No.
+
+1532
+00:59:38,330 --> 00:59:39,010
+Question?
+
+1533
+00:59:39,290 --> 00:59:39,630
+Yeah?
+
+1534
+00:59:40,130 --> 00:59:42,310
+When we first derived the Boltzmann distribution,
+
+1535
+00:59:42,690 --> 00:59:42,850
+we were,
+
+1536
+00:59:42,850 --> 00:59:47,190
+it was based on discrete states and the position function
+
+1537
+00:59:47,190 --> 00:59:49,850
+by summing that possible state.
+
+1538
+00:59:50,330 --> 00:59:52,870
+And then when we looked at the gas,
+
+1539
+00:59:52,950 --> 00:59:55,330
+we went from the sum to the integral,
+
+1540
+00:59:55,510 --> 00:59:58,090
+and in that condition,
+
+1541
+00:59:58,290 --> 01:00:01,310
+we're inherently assuming that the possible states for,
+
+1542
+01:00:01,370 --> 01:00:01,790
+say,
+
+1543
+01:00:01,790 --> 01:00:03,510
+the position of momentum are uniform.
+
+1544
+01:00:05,150 --> 01:00:05,770
+Uniformly available.
+
+1545
+01:00:06,010 --> 01:00:06,150
+Now,
+
+1546
+01:00:06,150 --> 01:00:07,350
+is this a reasonable assumption?
+
+1547
+01:00:07,830 --> 01:00:08,230
+Like,
+
+1548
+01:00:08,230 --> 01:00:09,570
+from the results of what that was,
+
+1549
+01:00:09,750 --> 01:00:10,530
+I don't think that,
+
+1550
+01:00:10,530 --> 01:00:12,070
+I don't think that's considered a concept.
+
+1551
+01:00:12,730 --> 01:00:13,710
+I think that,
+
+1552
+01:00:13,730 --> 01:00:14,790
+I would think that for the momentum,
+
+1553
+01:00:14,850 --> 01:00:15,030
+Yeah.
+
+1554
+01:00:15,210 --> 01:00:17,190
+the way that some improvements of H bar,
+
+1555
+01:00:17,330 --> 01:00:19,350
+so maybe that would be uniform based on that,
+
+1556
+01:00:19,410 --> 01:00:20,610
+and the position might be,
+
+1557
+01:00:20,630 --> 01:00:22,170
+your project to that momentum,
+
+1558
+01:00:22,230 --> 01:00:22,950
+but is there any?
+
+1559
+01:00:23,010 --> 01:00:23,130
+I,
+
+1560
+01:00:23,130 --> 01:00:25,570
+I would say the ultimate
+
+1561
+01:00:25,570 --> 01:00:28,010
+justification was the quantum mechanics,
+
+1562
+01:00:28,150 --> 01:00:29,990
+the quantum derivation of the,
+
+1563
+01:00:30,130 --> 01:00:30,710
+for example,
+
+1564
+01:00:30,710 --> 01:00:31,390
+ideal gas.
+
+1565
+01:00:31,470 --> 01:00:33,490
+But here's an example of what we're going to do,
+
+1566
+01:00:33,490 --> 01:00:36,530
+of where the quantum derivation reproduces,
+
+1567
+01:00:36,550 --> 01:00:37,930
+in the high temperatures,
+
+1568
+01:00:38,090 --> 01:00:38,630
+the classical,
+
+1569
+01:00:38,710 --> 01:00:40,050
+the classical answer.
+
+1570
+01:00:41,110 --> 01:00:42,870
+So really the right logic,
+
+1571
+01:00:42,970 --> 01:00:44,030
+the real serious logic,
+
+1572
+01:00:44,090 --> 01:00:45,510
+is to start with quantum mechanics,
+
+1573
+01:00:45,730 --> 01:00:49,110
+and show that the quantum mechanical counting of states
+
+1574
+01:00:49,110 --> 01:00:51,430
+corresponds to the integral over phase space.
+
+1575
+01:00:51,810 --> 01:00:52,470
+And that's true.
+
+1576
+01:00:53,730 --> 01:00:55,850
+I'll just give you an example here.
+
+1577
+01:00:56,310 --> 01:00:58,000
+Do the calculation as classical
+
+1578
+01:00:58,000 --> 01:00:59,690
+physicists would ordinarily do it.
+
+1579
+01:01:00,070 --> 01:01:00,970
+Here it is.
+
+1580
+01:01:01,890 --> 01:01:02,430
+So,
+
+1581
+01:01:05,490 --> 01:01:05,970
+So you've got this,
+
+1582
+01:01:05,970 --> 01:01:06,350
+and we got,
+
+1583
+01:01:06,470 --> 01:01:07,550
+what do we get?
+
+1584
+01:01:11,130 --> 01:01:11,890
+Let's go back,
+
+1585
+01:01:11,910 --> 01:01:12,170
+actually,
+
+1586
+01:01:12,250 --> 01:01:13,690
+to the partition function itself.
+
+1587
+01:01:16,670 --> 01:01:17,150
+Yeah,
+
+1588
+01:01:17,190 --> 01:01:19,030
+let's just look at the partition function itself,
+
+1589
+01:01:20,350 --> 01:01:22,070
+not even take the energy,
+
+1590
+01:01:22,190 --> 01:01:23,670
+let's just see how close we get.
+
+1591
+01:01:29,030 --> 01:01:29,510
+Okay,
+
+1592
+01:01:29,590 --> 01:01:32,490
+this partition function at high temperatures,
+
+1593
+01:01:32,550 --> 01:01:33,450
+means that,
+
+1594
+01:01:33,470 --> 01:01:38,450
+small beta is 1 divided by
+
+1595
+01:01:38,450 --> 01:01:43,430
+1 minus beta H bar omega,
+
+1596
+01:01:43,430 --> 01:01:43,850
+right?
+
+1597
+01:01:49,810 --> 01:01:51,370
+H bar is a constant,
+
+1598
+01:01:51,370 --> 01:01:52,490
+incidentally so is omega,
+
+1599
+01:01:52,490 --> 01:01:54,410
+but H bar is a numerical
+
+1600
+01:01:54,410 --> 01:01:59,370
+constant that sits in front of all partition functions.
+
+1601
+01:01:59,370 --> 01:02:00,790
+Let's not
+
+1602
+01:02:00,790 --> 01:02:01,470
+worry about it.
+
+1603
+01:02:01,470 --> 01:02:02,930
+1 over beta omega.
+
+1604
+01:02:02,930 --> 01:02:05,670
+Now what was the partition function that we
+
+1605
+01:02:05,670 --> 01:02:07,150
+said for the classical case?
+
+1606
+01:02:07,150 --> 01:02:09,070
+Here it is.
+
+1607
+01:02:09,070 --> 01:02:11,530
+1 over beta omega.
+
+1608
+01:02:11,530 --> 01:02:13,710
+The 2 pi is again a
+
+1609
+01:02:13,710 --> 01:02:14,090
+constant,
+
+1610
+01:02:14,090 --> 01:02:15,810
+not particularly interesting,
+
+1611
+01:02:15,810 --> 01:02:18,730
+but its dependence on beta and omega is
+
+1612
+01:02:18,730 --> 01:02:20,090
+1 over beta omega here,
+
+1613
+01:02:20,090 --> 01:02:22,050
+1 over beta omega here.
+
+1614
+01:02:22,050 --> 01:02:25,770
+The quantum mechanics only comes in
+
+1615
+01:02:25,770 --> 01:02:28,530
+in this multiplicative constant 1 over H bar,
+
+1616
+01:02:28,530 --> 01:02:30,450
+which doesn't matter when you
+
+1617
+01:02:30,450 --> 01:02:31,330
+differentiate it.
+
+1618
+01:02:31,330 --> 01:02:36,670
+So here's an example of the derivation of the
+
+1619
+01:02:36,670 --> 01:02:39,210
+classical statistical mechanics from the quantum mechanics,
+
+1620
+01:02:39,210 --> 01:02:39,890
+and that's really the
+
+1621
+01:02:39,890 --> 01:02:40,530
+right way to go.
+
+1622
+01:02:40,530 --> 01:02:44,730
+But let me tell you,
+
+1623
+01:02:44,730 --> 01:02:47,890
+this formula was known long before quantum
+
+1624
+01:02:47,890 --> 01:02:48,330
+mechanics,
+
+1625
+01:02:48,330 --> 01:02:51,090
+so they were doing something right.
+
+1626
+01:02:51,090 --> 01:02:58,370
+They intuited that phase space was
+
+1627
+01:02:58,370 --> 01:02:59,850
+the right space.
+
+1628
+01:02:59,970 --> 01:03:00,430
+x is the right space.
+
+1629
+01:03:00,430 --> 01:03:00,990
+xp space,
+
+1630
+01:03:00,990 --> 01:03:02,370
+momentum position space,
+
+1631
+01:03:02,370 --> 01:03:06,050
+was the right way to think about classical
+
+1632
+01:03:06,050 --> 01:03:06,550
+systems.
+
+1633
+01:03:07,550 --> 01:03:07,770
+OK.
+
+1634
+01:03:09,770 --> 01:03:10,210
+Yeah?
+
+1635
+01:03:10,450 --> 01:03:12,550
+Einstein figured that out in 1907.
+
+1636
+01:03:12,850 --> 01:03:13,290
+1907,
+
+1637
+01:03:13,290 --> 01:03:13,670
+yeah.
+
+1638
+01:03:13,710 --> 01:03:14,550
+I figured it was very early.
+
+1639
+01:03:15,750 --> 01:03:16,190
+Right.
+
+1640
+01:03:17,290 --> 01:03:18,710
+This is a naive question,
+
+1641
+01:03:18,710 --> 01:03:19,710
+but does that mean that
+
+1642
+01:03:19,710 --> 01:03:20,710
+if you heat up a harmonic
+
+1643
+01:03:20,710 --> 01:03:21,130
+oscillator,
+
+1644
+01:03:21,130 --> 01:03:22,050
+it's going to go faster,
+
+1645
+01:03:22,050 --> 01:03:23,350
+or the spring's going to tighten up,
+
+1646
+01:03:23,350 --> 01:03:25,850
+or what's going to
+
+1647
+01:03:26,650 --> 01:03:27,090
+Well.
+
+1648
+01:03:29,670 --> 01:03:30,570
+Excuse me.
+
+1649
+01:03:30,570 --> 01:03:33,170
+Classically or quantum mechanically?
+
+1650
+01:03:34,430 --> 01:03:35,030
+Classically,
+
+1651
+01:03:35,030 --> 01:03:37,610
+when you're at already a
+
+1652
+01:03:37,610 --> 01:03:40,190
+high temperature high enough classical approximation,
+
+1653
+01:03:40,570 --> 01:03:42,250
+when we heat it up further,
+
+1654
+01:03:42,250 --> 01:03:44,850
+does that mean the energy .
+
+1655
+01:03:45,589 --> 01:03:45,890
+Well,
+
+1656
+01:03:45,890 --> 01:03:47,810
+the energy stays equal to the temperature.
+
+1657
+01:03:47,810 --> 01:03:51,550
+Once it's above the quantum
+
+1658
+01:03:51,550 --> 01:03:52,010
+threshold,
+
+1659
+01:03:52,010 --> 01:03:55,070
+the energy is just equal to the temperature,
+
+1660
+01:03:55,070 --> 01:03:57,070
+and it does not matter at all.
+
+1661
+01:03:58,550 --> 01:04:00,390
+what the spring constant is.
+
+1662
+01:04:05,830 --> 01:04:09,230
+It speeds up and makes larger oscillations
+
+1663
+01:04:09,930 --> 01:04:11,310
+when you apply temperature.
+
+1664
+01:04:11,310 --> 01:04:12,750
+The point is
+
+1665
+01:04:12,750 --> 01:04:16,930
+that as you heat it from low temperature
+
+1666
+01:04:16,930 --> 01:04:17,750
+to high temperature,
+
+1667
+01:04:17,750 --> 01:04:19,890
+it's
+
+1668
+01:04:19,890 --> 01:04:26,490
+the paradox
+
+1669
+01:04:27,070 --> 01:04:30,650
+of saying that the oscillator always has that energy
+
+1670
+01:04:30,650 --> 01:04:32,810
+independently of how stiff it is.
+
+1671
+01:04:32,810 --> 01:04:34,150
+What's true
+
+1672
+01:04:34,150 --> 01:04:37,590
+is the place where it begins to have that energy,
+
+1673
+01:04:37,590 --> 01:04:38,990
+in other words
+
+1674
+01:04:38,990 --> 01:04:41,950
+the temperature at which the classical behavior sets in
+
+1675
+01:04:43,270 --> 01:04:45,390
+gets to be a higher and higher
+
+1676
+01:04:45,390 --> 01:04:47,510
+temperature as a function of the spring constant.
+
+1677
+01:04:47,910 --> 01:04:49,290
+So if you took a very,
+
+1678
+01:04:49,290 --> 01:04:49,790
+you know,
+
+1679
+01:04:49,790 --> 01:04:50,590
+this 10 to the
+
+1680
+01:04:50,590 --> 01:04:53,430
+10 to the 10 to the 10th spring constant,
+
+1681
+01:04:53,430 --> 01:04:54,650
+yes,
+
+1682
+01:04:54,650 --> 01:04:56,330
+at sufficiently high temperature,
+
+1683
+01:04:56,330 --> 01:04:58,630
+it would have an energy equal
+
+1684
+01:04:58,630 --> 01:04:59,390
+to its temperature.
+
+1685
+01:04:59,390 --> 01:05:02,670
+But at any kind of ordinary
+
+1686
+01:05:02,670 --> 01:05:03,270
+temperature,
+
+1687
+01:05:03,270 --> 01:05:06,590
+it would essentially have no sort of threshold for it
+
+1688
+01:05:06,590 --> 01:05:08,130
+to start behaving classically.
+
+1689
+01:05:08,130 --> 01:05:09,370
+It would get higher and higher
+
+1690
+01:05:09,370 --> 01:05:10,610
+and higher as the spring constant
+
+1691
+01:05:10,610 --> 01:05:11,490
+got stiffer and stiffer.
+
+1692
+01:05:11,490 --> 01:05:14,610
+Now that's kind of interesting because what it means
+
+1693
+01:05:15,409 --> 01:05:17,070
+is that as you heat a system,
+
+1694
+01:05:17,070 --> 01:05:18,610
+you start to
+
+1695
+01:05:18,610 --> 01:05:20,930
+discover that it has more and more degrees of freedom.
+
+1696
+01:05:20,930 --> 01:05:22,190
+Let's
+
+1697
+01:05:22,190 --> 01:05:23,830
+make a crazy molecule now.
+
+1698
+01:05:23,830 --> 01:05:25,930
+A crazy molecule consists of a
+
+1699
+01:05:25,930 --> 01:05:28,650
+spring with two atoms connected to it,
+
+1700
+01:05:28,650 --> 01:05:30,230
+and then each one of these
+
+1701
+01:05:30,230 --> 01:05:30,770
+atoms,
+
+1702
+01:05:30,770 --> 01:05:32,890
+and a very stiff spring at that,
+
+1703
+01:05:34,270 --> 01:05:36,510
+and then connected,
+
+1704
+01:05:36,510 --> 01:05:37,770
+this atom over here
+
+1705
+01:05:37,770 --> 01:05:42,050
+turns out to be two particles
+
+1706
+01:05:42,950 --> 01:05:44,730
+with a really stiff spring,
+
+1707
+01:05:44,730 --> 01:05:45,470
+a much,
+
+1708
+01:05:45,470 --> 01:05:46,130
+much stiffer
+
+1709
+01:05:46,130 --> 01:05:46,450
+spring.
+
+1710
+01:05:46,450 --> 01:05:48,770
+Alright,
+
+1711
+01:05:48,770 --> 01:05:50,370
+so how does it look at low temperatures?
+
+1712
+01:05:50,370 --> 01:05:51,910
+At low temperatures,
+
+1713
+01:05:51,910 --> 01:05:54,270
+there's not enough temperature
+
+1714
+01:05:54,270 --> 01:05:58,430
+to overcome the quantum threshold
+
+1715
+01:05:59,970 --> 01:06:02,130
+for this oscillator to start
+
+1716
+01:06:02,130 --> 01:06:02,810
+oscillating.
+
+1717
+01:06:02,810 --> 01:06:04,330
+So it behaves like a point.
+
+1718
+01:06:04,330 --> 01:06:06,370
+Behaves with 3 halves
+
+1719
+01:06:06,370 --> 01:06:06,710
+kT.
+
+1720
+01:06:06,710 --> 01:06:09,890
+You heat it up to the point where
+
+1721
+01:06:10,670 --> 01:06:12,090
+this oscillator here,
+
+1722
+01:06:12,090 --> 01:06:14,170
+the frequency of this oscillator is such
+
+1723
+01:06:14,170 --> 01:06:18,070
+that the temperature is such that you activate
+
+1724
+01:06:18,070 --> 01:06:19,650
+the oscillations,
+
+1725
+01:06:19,650 --> 01:06:22,270
+but still not enough
+
+1726
+01:06:22,270 --> 01:06:25,790
+temperature to activate this super duper strong spring here.
+
+1727
+01:06:26,230 --> 01:06:28,330
+It behaves like a diatomic molecule.
+
+1728
+01:06:29,770 --> 01:06:32,430
+You heat it more,
+
+1729
+01:06:32,430 --> 01:06:33,930
+it
+
+1730
+01:06:33,930 --> 01:06:37,770
+starts to behave as if it had 3 molecules
+
+1731
+01:06:37,770 --> 01:06:39,030
+connected by springs.
+
+1732
+01:06:39,030 --> 01:06:41,450
+Instead of
+
+1733
+01:06:41,450 --> 01:06:42,710
+5 halves kT,
+
+1734
+01:06:42,710 --> 01:06:43,310
+I don't know,
+
+1735
+01:06:43,310 --> 01:06:44,230
+maybe 7 halves kT,
+
+1736
+01:06:44,230 --> 01:06:45,130
+whatever the right number is.
+
+1737
+01:06:45,130 --> 01:06:46,150
+So,
+
+1738
+01:06:46,150 --> 01:06:47,690
+the lesson is,
+
+1739
+01:06:47,690 --> 01:06:48,650
+as you heat the system,
+
+1740
+01:06:48,810 --> 01:06:52,070
+more and more degrees of freedom become activated,
+
+1741
+01:06:52,070 --> 01:06:53,110
+and you
+
+1742
+01:06:53,110 --> 01:06:55,570
+start to discover the complexity of things.
+
+1743
+01:06:55,570 --> 01:06:57,050
+You don't discover
+
+1744
+01:06:57,050 --> 01:06:58,910
+the complexity of things at low temperature.
+
+1745
+01:06:58,910 --> 01:07:00,950
+You
+
+1746
+01:07:00,950 --> 01:07:02,830
+discover the quantum behavior of things.
+
+1747
+01:07:02,830 --> 01:07:04,850
+As you heat it,
+
+1748
+01:07:04,990 --> 01:07:06,750
+you start to discover complexity,
+
+1749
+01:07:06,750 --> 01:07:08,230
+and you start to discover
+
+1750
+01:07:09,310 --> 01:07:11,390
+degree of freedom by degree of freedom.
+
+1751
+01:07:11,390 --> 01:07:12,990
+They unfreeze themselves
+
+1752
+01:07:12,990 --> 01:07:16,270
+from the quantum constraint and start behaving classically.
+
+1753
+01:07:18,010 --> 01:07:18,530
+Now,
+
+1754
+01:07:18,530 --> 01:07:19,780
+some of you may realize this has
+
+1755
+01:07:19,780 --> 01:07:21,030
+to do a lot with black body
+
+1756
+01:07:21,030 --> 01:07:21,490
+radiation,
+
+1757
+01:07:21,490 --> 01:07:24,070
+but we'll come to that.
+
+1758
+01:07:26,810 --> 01:07:27,330
+Well,
+
+1759
+01:07:27,330 --> 01:07:27,610
+let me,
+
+1760
+01:07:27,610 --> 01:07:29,230
+to relate it,
+
+1761
+01:07:29,250 --> 01:07:31,210
+I won't relate it right now to black body radiation,
+
+1762
+01:07:31,210 --> 01:07:33,170
+but let's relate it to something else.
+
+1763
+01:07:33,390 --> 01:07:34,530
+A violin string.
+
+1764
+01:07:34,530 --> 01:07:36,790
+Take a violin string.
+
+1765
+01:07:37,410 --> 01:07:41,010
+A violin string consists mathematically of
+
+1766
+01:07:41,010 --> 01:07:42,770
+a large number of oscillators.
+
+1767
+01:07:42,770 --> 01:07:44,790
+The oscillators
+
+1768
+01:07:44,790 --> 01:07:46,290
+are the violin string,
+
+1769
+01:07:46,290 --> 01:07:47,610
+or the guitar string,
+
+1770
+01:07:48,770 --> 01:07:52,270
+oscillating in its lowest harmonic.
+
+1771
+01:07:54,870 --> 01:07:55,470
+Plus,
+
+1772
+01:07:55,470 --> 01:07:56,190
+on top of that,
+
+1773
+01:07:56,190 --> 01:07:57,150
+you can superpose
+
+1774
+01:07:57,150 --> 01:07:58,050
+the first harmonic,
+
+1775
+01:07:58,050 --> 01:07:59,710
+second harmonic,
+
+1776
+01:07:59,710 --> 01:08:00,910
+or I think I just
+
+1777
+01:08:00,910 --> 01:08:01,210
+put,
+
+1778
+01:08:01,210 --> 01:08:02,470
+I don't know,
+
+1779
+01:08:02,470 --> 01:08:03,730
+however many harmonics.
+
+1780
+01:08:04,110 --> 01:08:05,070
+And fundamentally,
+
+1781
+01:08:05,070 --> 01:08:08,150
+the mathematics of it is that a string,
+
+1782
+01:08:08,150 --> 01:08:10,270
+a vibrating string,
+
+1783
+01:08:10,270 --> 01:08:12,170
+is basically an infinite
+
+1784
+01:08:12,170 --> 01:08:13,810
+number of harmonic oscillators.
+
+1785
+01:08:13,810 --> 01:08:15,990
+The infinite number become the
+
+1786
+01:08:15,990 --> 01:08:17,250
+shorter and shorter wavelengths.
+
+1787
+01:08:21,290 --> 01:08:24,050
+If each one of these oscillators
+
+1788
+01:08:24,050 --> 01:08:25,130
+had
+
+1789
+01:08:28,430 --> 01:08:30,410
+energy equal to the temperature,
+
+1790
+01:08:30,410 --> 01:08:31,890
+and there are an infinite
+
+1791
+01:08:31,890 --> 01:08:32,689
+number of them,
+
+1792
+01:08:32,689 --> 01:08:34,270
+that string would have an infinite
+
+1793
+01:08:34,270 --> 01:08:35,850
+amount of energy when it was
+
+1794
+01:08:35,850 --> 01:08:37,910
+when it came to thermal equilibrium.
+
+1795
+01:08:39,430 --> 01:08:40,210
+Something's wrong.
+
+1796
+01:08:40,210 --> 01:08:43,710
+Now the answer is that most of these oscillations
+
+1797
+01:08:43,710 --> 01:08:44,890
+have very high frequency.
+
+1798
+01:08:44,890 --> 01:08:46,210
+The shorter the wavelength,
+
+1799
+01:08:46,210 --> 01:08:47,590
+the higher the frequency of the
+
+1800
+01:08:47,590 --> 01:08:47,810
+oscillator.
+
+1801
+01:08:47,810 --> 01:08:49,750
+And therefore,
+
+1802
+01:08:49,750 --> 01:08:51,569
+most of these oscillators at any given
+
+1803
+01:08:51,569 --> 01:08:55,470
+temperature are frozen out by quantum mechanics.
+
+1804
+01:08:56,490 --> 01:08:58,010
+Not free to oscillate.
+
+1805
+01:08:58,010 --> 01:08:59,790
+As the temperature goes up and
+
+1806
+01:08:59,790 --> 01:09:00,010
+up,
+
+1807
+01:09:00,010 --> 01:09:03,310
+more of these oscillations begin to oscillate,
+
+1808
+01:09:03,310 --> 01:09:03,750
+begin to
+
+1809
+01:09:03,750 --> 01:09:04,149
+have energy.
+
+1810
+01:09:04,149 --> 01:09:05,029
+But,
+
+1811
+01:09:05,029 --> 01:09:07,609
+so that's another
+
+1812
+01:09:07,609 --> 01:09:08,950
+similar paradox.
+
+1813
+01:09:11,649 --> 01:09:12,290
+Question?
+
+1814
+01:09:12,290 --> 01:09:12,830
+Yeah.
+
+1815
+01:09:12,830 --> 01:09:15,490
+I was just wondering about the relative
+
+1816
+01:09:15,490 --> 01:09:16,850
+sizes of these numbers,
+
+1817
+01:09:16,850 --> 01:09:19,569
+whether this transition can be observed
+
+1818
+01:09:19,569 --> 01:09:20,830
+experimentally,
+
+1819
+01:09:20,830 --> 01:09:21,770
+somewhere,
+
+1820
+01:09:21,770 --> 01:09:22,229
+somehow?
+
+1821
+01:09:22,229 --> 01:09:23,370
+Absolutely.
+
+1822
+01:09:23,689 --> 01:09:24,670
+Is that a sun or something?
+
+1823
+01:09:27,890 --> 01:09:30,390
+Just studying the specific heat of crystals.
+
+1824
+01:09:31,149 --> 01:09:32,310
+It's very obvious.
+
+1825
+01:09:32,310 --> 01:09:33,589
+In fact,
+
+1826
+01:09:33,589 --> 01:09:33,950
+I mean,
+
+1827
+01:09:34,009 --> 01:09:38,210
+it was obvious to the experimental physicists around
+
+1828
+01:09:38,210 --> 01:09:40,410
+1900 that there was something wrong,
+
+1829
+01:09:40,410 --> 01:09:42,529
+because their crystals
+
+1830
+01:09:42,529 --> 01:09:44,830
+did not behave according to classical mechanics.
+
+1831
+01:09:44,830 --> 01:09:46,149
+So yes,
+
+1832
+01:09:46,250 --> 01:09:46,830
+it's extremely,
+
+1833
+01:09:46,830 --> 01:09:49,410
+extremely easy to
+
+1834
+01:09:50,830 --> 01:09:51,750
+see this.
+
+1835
+01:09:51,750 --> 01:09:53,229
+And if you heat the crystal,
+
+1836
+01:09:53,229 --> 01:09:53,929
+can you make it
+
+1837
+01:09:53,929 --> 01:09:55,110
+behave the other way?
+
+1838
+01:09:55,110 --> 01:09:55,730
+Yep.
+
+1839
+01:09:55,730 --> 01:09:57,830
+As you heat the crystal,
+
+1840
+01:09:59,049 --> 01:10:01,070
+the specific heat starts to behave
+
+1841
+01:10:01,730 --> 01:10:05,410
+as if there was a certain number of kT,
+
+1842
+01:10:05,629 --> 01:10:07,129
+a certain number of,
+
+1843
+01:10:07,129 --> 01:10:08,110
+you know,
+
+1844
+01:10:08,110 --> 01:10:08,750
+T per
+
+1845
+01:10:09,589 --> 01:10:09,850
+oscillator.
+
+1846
+01:10:09,850 --> 01:10:10,690
+Yeah.
+
+1847
+01:10:10,690 --> 01:10:11,570
+Yeah.
+
+1848
+01:10:11,570 --> 01:10:13,230
+This is really easy to see.
+
+1849
+01:10:14,070 --> 01:10:14,589
+So,
+
+1850
+01:10:14,589 --> 01:10:16,270
+for the flat end strain,
+
+1851
+01:10:16,270 --> 01:10:17,670
+if we wanted to calculate the
+
+1852
+01:10:17,670 --> 01:10:18,429
+partition function,
+
+1853
+01:10:18,429 --> 01:10:20,170
+we would take the sum we had,
+
+1854
+01:10:20,170 --> 01:10:21,410
+what we have
+
+1855
+01:10:21,410 --> 01:10:22,030
+left here,
+
+1856
+01:10:22,030 --> 01:10:24,650
+and just do it for multiple oscillators?
+
+1857
+01:10:24,650 --> 01:10:25,089
+Right.
+
+1858
+01:10:25,750 --> 01:10:26,330
+Right.
+
+1859
+01:10:26,330 --> 01:10:27,629
+The partition function would be
+
+1860
+01:10:27,629 --> 01:10:28,929
+the product of all the partition
+
+1861
+01:10:28,929 --> 01:10:29,469
+functions.
+
+1862
+01:10:29,469 --> 01:10:30,929
+The logarithm would be the sum.
+
+1863
+01:10:30,929 --> 01:10:31,990
+Absolutely.
+
+1864
+01:10:33,170 --> 01:10:33,750
+Yes.
+
+1865
+01:10:33,750 --> 01:10:35,350
+Right.
+
+1866
+01:10:35,350 --> 01:10:37,070
+The logarithm
+
+1867
+01:10:37,070 --> 01:10:38,720
+being the sum would mean that the
+
+1868
+01:10:38,720 --> 01:10:40,370
+energy is the sum of all the oscillators.
+
+1869
+01:10:40,629 --> 01:10:41,110
+Right.
+
+1870
+01:10:41,110 --> 01:10:43,030
+But those whose,
+
+1871
+01:10:43,030 --> 01:10:44,110
+those whose,
+
+1872
+01:10:44,110 --> 01:10:44,890
+where's our
+
+1873
+01:10:44,890 --> 01:10:45,870
+transition point?
+
+1874
+01:10:45,870 --> 01:10:48,770
+Those whose
+
+1875
+01:10:48,770 --> 01:10:51,070
+frequency is too high,
+
+1876
+01:10:51,070 --> 01:10:52,870
+above the temperature,
+
+1877
+01:10:55,090 --> 01:10:56,250
+Those are in the quantum regime,
+
+1878
+01:10:56,250 --> 01:10:58,050
+and they're not appreciably excited.
+
+1879
+01:10:59,630 --> 01:11:00,150
+Okay.
+
+1880
+01:11:00,150 --> 01:11:01,050
+That was fun.
+
+1881
+01:11:02,950 --> 01:11:03,670
+It is.
+
+1882
+01:11:08,290 --> 01:11:10,970
+You ignore the zero point
+
+1883
+01:11:10,970 --> 01:11:12,310
+one half h-bar.
+
+1884
+01:11:12,310 --> 01:11:13,030
+Yeah,
+
+1885
+01:11:13,030 --> 01:11:13,270
+okay,
+
+1886
+01:11:13,270 --> 01:11:13,670
+good,
+
+1887
+01:11:13,670 --> 01:11:13,870
+good,
+
+1888
+01:11:13,870 --> 01:11:14,090
+good,
+
+1889
+01:11:14,090 --> 01:11:14,290
+good,
+
+1890
+01:11:14,290 --> 01:11:14,730
+good.
+
+1891
+01:11:14,990 --> 01:11:15,370
+Good.
+
+1892
+01:11:15,370 --> 01:11:18,370
+The reason that doesn't matter,
+
+1893
+01:11:18,370 --> 01:11:18,910
+you're right,
+
+1894
+01:11:19,030 --> 01:11:20,130
+we did ignore it,
+
+1895
+01:11:20,130 --> 01:11:23,150
+it makes
+
+1896
+01:11:23,150 --> 01:11:24,010
+it multiplicative.
+
+1897
+01:11:24,010 --> 01:11:25,850
+Adding a constant to the energy,
+
+1898
+01:11:25,850 --> 01:11:27,050
+adding a constant to
+
+1899
+01:11:27,050 --> 01:11:28,050
+every energy level,
+
+1900
+01:11:28,050 --> 01:11:30,870
+is equivalent to multiplying the partition
+
+1901
+01:11:30,870 --> 01:11:32,190
+function by a constant,
+
+1902
+01:11:32,190 --> 01:11:34,970
+and the result
+
+1903
+01:11:34,970 --> 01:11:37,390
+is no change in anything of interest.
+
+1904
+01:11:41,430 --> 01:11:42,110
+Alright.
+
+1905
+01:11:49,569 --> 01:11:50,249
+Um,
+
+1906
+01:11:50,249 --> 01:11:51,130
+so we
+
+1907
+01:11:51,130 --> 01:11:52,650
+start to talk about the second law.
+
+1908
+01:11:54,750 --> 01:11:56,270
+Why is the second law a puzzle?
+
+1909
+01:11:56,270 --> 01:11:59,210
+The second law is a puzzle
+
+1910
+01:11:59,990 --> 01:12:00,950
+because it,
+
+1911
+01:12:00,950 --> 01:12:02,150
+it says
+
+1912
+01:12:03,530 --> 01:12:05,710
+that the world is irreversible,
+
+1913
+01:12:05,710 --> 01:12:07,110
+and that something
+
+1914
+01:12:07,110 --> 01:12:09,230
+called entropy always increases.
+
+1915
+01:12:09,230 --> 01:12:11,070
+Or
+
+1916
+01:12:11,070 --> 01:12:11,890
+it stays the same.
+
+1917
+01:12:11,890 --> 01:12:14,250
+And in fact,
+
+1918
+01:12:14,250 --> 01:12:15,190
+you'd have to be infinitely
+
+1919
+01:12:15,190 --> 01:12:16,920
+careful with a big system
+
+1920
+01:12:16,920 --> 01:12:18,650
+to keep it from increasing and
+
+1921
+01:12:18,650 --> 01:12:19,870
+make it be the same.
+
+1922
+01:12:19,870 --> 01:12:21,690
+On the other hand,
+
+1923
+01:12:21,690 --> 01:12:22,570
+Newton's
+
+1924
+01:12:23,369 --> 01:12:25,750
+equations of motion are completely reversible,
+
+1925
+01:12:26,150 --> 01:12:28,240
+so anything that can happen in one
+
+1926
+01:12:28,240 --> 01:12:30,330
+direction can happen in the opposite direction.
+
+1927
+01:12:30,630 --> 01:12:31,670
+So there's a tension there.
+
+1928
+01:12:31,670 --> 01:12:34,610
+There's a tension between reversibility on the
+
+1929
+01:12:34,610 --> 01:12:36,790
+one hand of the fundamental equations,
+
+1930
+01:12:36,790 --> 01:12:38,310
+and
+
+1931
+01:12:38,310 --> 01:12:42,690
+irreversibility of the observational
+
+1932
+01:12:42,690 --> 01:12:44,090
+properties of,
+
+1933
+01:12:44,090 --> 01:12:44,450
+um,
+
+1934
+01:12:44,450 --> 01:12:46,730
+of complicated systems.
+
+1935
+01:12:47,950 --> 01:12:48,630
+Um,
+
+1936
+01:12:48,650 --> 01:12:49,190
+and
+
+1937
+01:12:52,229 --> 01:12:54,890
+that took some time to sort out,
+
+1938
+01:12:54,890 --> 01:12:56,410
+and people are still
+
+1939
+01:12:56,410 --> 01:12:57,410
+confused about it.
+
+1940
+01:12:57,410 --> 01:12:59,990
+So,
+
+1941
+01:13:01,270 --> 01:13:02,550
+let's talk about it.
+
+1942
+01:13:10,210 --> 01:13:10,310
+嗯
+
+1943
+01:13:23,170 --> 01:13:25,870
+Let's imagine some phase space.
+
+1944
+01:13:26,150 --> 01:13:27,830
+The phase space is the space
+
+1945
+01:13:27,830 --> 01:13:29,510
+of states of some classical system,
+
+1946
+01:13:29,510 --> 01:13:33,190
+and it's got a lot
+
+1947
+01:13:33,190 --> 01:13:33,510
+of dimensions.
+
+1948
+01:13:33,770 --> 01:13:35,370
+It's got a lot of particles or a
+
+1949
+01:13:35,370 --> 01:13:36,970
+lot of whatever it is that it has,
+
+1950
+01:13:36,970 --> 01:13:38,430
+but we're going to just
+
+1951
+01:13:38,430 --> 01:13:39,190
+draw it.
+
+1952
+01:13:39,190 --> 01:13:41,570
+We're going to represent it simply as two-dimensional.
+
+1953
+01:13:41,950 --> 01:13:45,190
+One dimension will be the coordinates,
+
+1954
+01:13:45,190 --> 01:13:47,610
+and the other direction will be the momenta.
+
+1955
+01:13:47,850 --> 01:13:48,830
+And as I said,
+
+1956
+01:13:48,830 --> 01:13:50,070
+there are a lot of them.
+
+1957
+01:13:50,170 --> 01:13:51,890
+This is a high-dimensional space.
+
+1958
+01:13:53,190 --> 01:13:56,110
+We start out with some probability distribution.
+
+1959
+01:13:58,030 --> 01:13:58,730
+Let's say,
+
+1960
+01:13:58,730 --> 01:13:59,450
+for example,
+
+1961
+01:13:59,450 --> 01:14:02,570
+let's start out with a
+
+1962
+01:14:02,570 --> 01:14:05,690
+probability distribution which looks like
+
+1963
+01:14:05,690 --> 01:14:05,990
+that.
+
+1964
+01:14:06,190 --> 01:14:07,230
+Meaning to say,
+
+1965
+01:14:07,230 --> 01:14:09,170
+there's 0.5.
+
+1966
+01:14:09,170 --> 01:14:10,390
+There's no probability on the outside.
+
+1967
+01:14:11,290 --> 01:14:14,030
+Constant probability on the inside of this blob.
+
+1968
+01:14:14,650 --> 01:14:17,550
+What it means to say is we know nothing
+
+1969
+01:14:17,550 --> 01:14:20,450
+except that the system starts out inside that blob.
+
+1970
+01:14:20,990 --> 01:14:25,210
+We don't know anything more about it,
+
+1971
+01:14:25,210 --> 01:14:28,230
+so the probability density is constant within that
+
+1972
+01:14:28,230 --> 01:14:28,490
+blob.
+
+1973
+01:14:29,650 --> 01:14:31,990
+What is the entropy of that system?
+
+1974
+01:14:32,210 --> 01:14:33,110
+Anybody remember?
+
+1975
+01:14:34,050 --> 01:14:34,650
+Max.
+
+1976
+01:14:35,910 --> 01:14:37,070
+At the maximum.
+
+1977
+01:14:37,270 --> 01:14:37,830
+No,
+
+1978
+01:14:37,830 --> 01:14:38,030
+no,
+
+1979
+01:14:38,030 --> 01:14:38,230
+no,
+
+1980
+01:14:38,230 --> 01:14:38,370
+no.
+
+1981
+01:14:38,430 --> 01:14:39,150
+It's not all in maximum.
+
+1982
+01:14:39,150 --> 01:14:41,430
+The maximum would be if the probability
+
+1983
+01:14:41,430 --> 01:14:43,710
+distribution was uniformly spread over the phase space.
+
+1984
+01:14:44,250 --> 01:14:45,170
+In other words,
+
+1985
+01:14:45,170 --> 01:14:45,770
+if you knew nothing.
+
+1986
+01:14:47,010 --> 01:14:50,200
+The entropy is the logarithm
+
+1987
+01:14:50,200 --> 01:14:53,390
+of the volume of the blob.
+
+1988
+01:14:54,090 --> 01:14:55,210
+Now that's...
+
+1989
+01:14:55,210 --> 01:14:56,050
+Yeah?
+
+1990
+01:14:56,530 --> 01:14:58,080
+Are you talking about a
+
+1991
+01:14:58,080 --> 01:14:59,630
+system that's constrained to that blob?
+
+1992
+01:15:00,050 --> 01:15:01,050
+It's not constrained.
+
+1993
+01:15:01,190 --> 01:15:03,130
+We just happen to know that it's in that blob.
+
+1994
+01:15:04,970 --> 01:15:07,130
+We did our best possible measurements.
+
+1995
+01:15:07,130 --> 01:15:10,290
+And we discovered that the system is in that blob.
+
+1996
+01:15:10,510 --> 01:15:11,990
+Whatever measurements it took.
+
+1997
+01:15:12,190 --> 01:15:14,090
+So it may not be in equilibrium?
+
+1998
+01:15:14,490 --> 01:15:14,990
+Oh,
+
+1999
+01:15:14,990 --> 01:15:15,110
+no.
+
+2000
+01:15:15,170 --> 01:15:15,630
+It's not in...
+
+2001
+01:15:15,630 --> 01:15:16,010
+No,
+
+2002
+01:15:16,010 --> 01:15:16,530
+no,
+
+2003
+01:15:16,530 --> 01:15:16,610
+no.
+
+2004
+01:15:16,630 --> 01:15:17,710
+It's not in equilibrium.
+
+2005
+01:15:18,510 --> 01:15:19,050
+No.
+
+2006
+01:15:19,169 --> 01:15:21,530
+And so we're not talking about the entropy of equilibrium.
+
+2007
+01:15:21,890 --> 01:15:23,390
+We're talking about the entropy
+
+2008
+01:15:23,390 --> 01:15:24,890
+of a certain probability distribution.
+
+2009
+01:15:25,910 --> 01:15:28,470
+And the probability distribution is handed to us.
+
+2010
+01:15:29,570 --> 01:15:30,590
+Somebody tells you,
+
+2011
+01:15:30,590 --> 01:15:32,880
+somebody upstairs tells you the momenta
+
+2012
+01:15:32,880 --> 01:15:35,170
+of 10 to the 23rd particles,
+
+2013
+01:15:36,010 --> 01:15:38,600
+and the positions of 10 to the
+
+2014
+01:15:38,600 --> 01:15:41,190
+23rd particles are all within this blob.
+
+2015
+01:15:42,070 --> 01:15:42,810
+For example,
+
+2016
+01:15:42,810 --> 01:15:43,130
+I mean,
+
+2017
+01:15:43,130 --> 01:15:43,450
+you know,
+
+2018
+01:15:43,450 --> 01:15:44,870
+this is not that unrealistic.
+
+2019
+01:15:46,110 --> 01:15:49,440
+You might start with all
+
+2020
+01:15:49,440 --> 01:15:52,770
+the air molecules in some tank,
+
+2021
+01:15:52,770 --> 01:15:53,310
+you know,
+
+2022
+01:15:53,310 --> 01:15:53,790
+a tank,
+
+2023
+01:15:53,790 --> 01:15:54,490
+an air tank.
+
+2024
+01:15:55,070 --> 01:15:56,610
+And they're up in the corner of the room.
+
+2025
+01:15:57,190 --> 01:15:58,480
+And then you open up the air
+
+2026
+01:15:58,480 --> 01:15:59,770
+tank and the air tank goes out.
+
+2027
+01:15:59,870 --> 01:15:59,910
+Well,
+
+2028
+01:15:59,910 --> 01:16:00,530
+originally,
+
+2029
+01:16:00,530 --> 01:16:02,670
+the molecules were in that corner,
+
+2030
+01:16:02,670 --> 01:16:03,430
+in that tank.
+
+2031
+01:16:03,590 --> 01:16:05,150
+So they were confined in a small space.
+
+2032
+01:16:05,150 --> 01:16:07,030
+And moreover,
+
+2033
+01:16:07,030 --> 01:16:09,840
+you had a pretty good idea of
+
+2034
+01:16:09,840 --> 01:16:12,650
+what their energy was because you knew the
+
+2035
+01:16:12,650 --> 01:16:13,610
+temperature of what's in there.
+
+2036
+01:16:13,690 --> 01:16:15,390
+So you had a pretty good idea of
+
+2037
+01:16:15,390 --> 01:16:17,090
+what the momenta of all the particles were.
+
+2038
+01:16:17,430 --> 01:16:20,020
+That might not quite correspond to
+
+2039
+01:16:20,020 --> 01:16:22,610
+a uniform probability distribution in a blob,
+
+2040
+01:16:22,610 --> 01:16:24,030
+but it
+
+2041
+01:16:24,030 --> 01:16:26,690
+would certainly correspond to some blob-like configuration.
+
+2042
+01:16:27,230 --> 01:16:28,630
+The more you know,
+
+2043
+01:16:28,630 --> 01:16:33,910
+it corresponds to the smaller the volume of this region.
+
+2044
+01:16:33,910 --> 01:16:34,470
+Oh,
+
+2045
+01:16:34,470 --> 01:16:36,490
+did I say the entropy
+
+2046
+01:16:36,490 --> 01:16:38,510
+was the logarithm of the volume?
+
+2047
+01:16:39,930 --> 01:16:41,510
+Minus the logarithm of the volume.
+
+2048
+01:16:43,230 --> 01:16:45,910
+As the volume gets smaller and smaller...
+
+2049
+01:16:45,910 --> 01:16:46,050
+No.
+
+2050
+01:16:46,890 --> 01:16:47,450
+Yeah.
+
+2051
+01:16:48,350 --> 01:16:48,910
+Yeah.
+
+2052
+01:16:50,230 --> 01:16:52,710
+As the volume gets smaller and smaller,
+
+2053
+01:16:52,710 --> 01:16:54,370
+the entropy goes down.
+
+2054
+01:16:54,570 --> 01:16:55,530
+Which way is that?
+
+2055
+01:16:55,670 --> 01:16:55,970
+That's...
+
+2056
+01:16:56,810 --> 01:16:57,370
+Yeah.
+
+2057
+01:16:57,490 --> 01:16:57,790
+Okay.
+
+2058
+01:16:58,130 --> 01:16:59,350
+It's minus the volume.
+
+2059
+01:16:59,770 --> 01:17:00,450
+All right.
+
+2060
+01:17:00,470 --> 01:17:01,130
+But in any case,
+
+2061
+01:17:01,130 --> 01:17:02,150
+in any case,
+
+2062
+01:17:02,150 --> 01:17:02,870
+there's an entropy,
+
+2063
+01:17:02,870 --> 01:17:03,890
+which is a little bit more than
+
+2064
+01:17:03,910 --> 01:17:03,910
+the entropy,
+
+2065
+01:17:03,910 --> 01:17:05,820
+which has to do with the size
+
+2066
+01:17:05,820 --> 01:17:07,730
+of this blob in the phase space.
+
+2067
+01:17:08,970 --> 01:17:09,610
+All right.
+
+2068
+01:17:09,650 --> 01:17:09,750
+Now,
+
+2069
+01:17:09,750 --> 01:17:11,690
+what happens to the blob as time goes on?
+
+2070
+01:17:14,370 --> 01:17:16,910
+Do you remember a theorem called Leoville's theorem?
+
+2071
+01:17:17,970 --> 01:17:19,930
+Leoville's theorem says what?
+
+2072
+01:17:20,110 --> 01:17:21,150
+Volume stays the same.
+
+2073
+01:17:21,250 --> 01:17:22,370
+Volume stays the same.
+
+2074
+01:17:23,170 --> 01:17:23,650
+Therefore,
+
+2075
+01:17:23,650 --> 01:17:25,090
+the entropy stays the same.
+
+2076
+01:17:25,930 --> 01:17:27,810
+This is just another way of
+
+2077
+01:17:27,810 --> 01:17:29,690
+saying that if you follow the states,
+
+2078
+01:17:29,690 --> 01:17:30,890
+each state goes into
+
+2079
+01:17:30,890 --> 01:17:31,730
+a unique state.
+
+2080
+01:17:31,730 --> 01:17:34,500
+It has its analog in the discreet little
+
+2081
+01:17:34,500 --> 01:17:37,270
+games we played in classical mechanics of coins
+
+2082
+01:17:37,270 --> 01:17:38,230
+or whatever,
+
+2083
+01:17:38,230 --> 01:17:40,600
+where we talked about how states evolve one
+
+2084
+01:17:40,600 --> 01:17:42,970
+to the next to the next to the
+
+2085
+01:17:42,970 --> 01:17:43,210
+next.
+
+2086
+01:17:43,490 --> 01:17:45,330
+Any given state goes to a
+
+2087
+01:17:45,330 --> 01:17:47,170
+unique state in the next instant,
+
+2088
+01:17:47,170 --> 01:17:48,650
+another unique state in
+
+2089
+01:17:48,650 --> 01:17:49,350
+the next instant.
+
+2090
+01:17:49,610 --> 01:17:51,870
+And so if you have some probability distribution,
+
+2091
+01:17:51,870 --> 01:17:57,030
+the probability distribution just translates
+
+2092
+01:17:57,810 --> 01:18:01,490
+if there are six states.
+
+2093
+01:18:01,490 --> 01:18:01,970
+A die.
+
+2094
+01:18:02,410 --> 01:18:05,050
+If there are six states and you know
+
+2095
+01:18:05,050 --> 01:18:07,690
+that one of two of them is occupied,
+
+2096
+01:18:07,690 --> 01:18:08,610
+in other words,
+
+2097
+01:18:08,610 --> 01:18:10,370
+that the die is in one of two states,
+
+2098
+01:18:10,370 --> 01:18:13,370
+and you also know the rule for going from one
+
+2099
+01:18:13,370 --> 01:18:14,350
+state to the next state,
+
+2100
+01:18:14,350 --> 01:18:17,150
+after the next step,
+
+2101
+01:18:17,150 --> 01:18:19,830
+you'll also know that it's in one of two states.
+
+2102
+01:18:19,930 --> 01:18:20,930
+Not the same two states,
+
+2103
+01:18:20,930 --> 01:18:22,000
+but you also know that
+
+2104
+01:18:22,000 --> 01:18:23,070
+it's in one of two states.
+
+2105
+01:18:24,350 --> 01:18:25,710
+So the entropy,
+
+2106
+01:18:25,710 --> 01:18:26,430
+in that sense,
+
+2107
+01:18:26,430 --> 01:18:27,530
+stays the same.
+
+2108
+01:18:27,710 --> 01:18:31,470
+The probability distribution may change.
+
+2109
+01:18:31,470 --> 01:18:33,130
+It may change because the
+
+2110
+01:18:33,130 --> 01:18:34,790
+states which are occupied become different,
+
+2111
+01:18:34,790 --> 01:18:36,050
+but the fact that
+
+2112
+01:18:36,050 --> 01:18:37,230
+there are two of them
+
+2113
+01:18:37,230 --> 01:18:38,410
+and that they have equal probability,
+
+2114
+01:18:38,410 --> 01:18:39,530
+that stays the same.
+
+2115
+01:18:40,330 --> 01:18:40,850
+So,
+
+2116
+01:18:40,850 --> 01:18:42,130
+on the one hand,
+
+2117
+01:18:42,130 --> 01:18:45,290
+that seems to say that entropy doesn't change.
+
+2118
+01:18:47,550 --> 01:18:48,950
+And this is true.
+
+2119
+01:18:50,170 --> 01:18:53,040
+This is a correct view of
+
+2120
+01:18:53,040 --> 01:18:55,910
+what is called microscopic entropy or...
+
+2121
+01:18:59,230 --> 01:19:01,470
+I don't know what it's called.
+
+2122
+01:19:01,630 --> 01:19:03,650
+It's called microentropy.
+
+2123
+01:19:04,930 --> 01:19:08,250
+But there's another concept of entropy which does increase.
+
+2124
+01:19:08,570 --> 01:19:10,660
+And the other concept of entropy
+
+2125
+01:19:10,660 --> 01:19:12,750
+has to do with something called coarse-graining.
+
+2126
+01:19:16,190 --> 01:19:16,870
+Typically,
+
+2127
+01:19:16,870 --> 01:19:19,630
+your experiments are such that you
+
+2128
+01:19:19,630 --> 01:19:22,390
+cannot resolve points in the phase space.
+
+2129
+01:19:22,890 --> 01:19:24,910
+You don't have...
+
+2130
+01:19:24,910 --> 01:19:27,410
+Even if your experiments were ideal,
+
+2131
+01:19:27,410 --> 01:19:30,250
+perfectly precise experiments,
+
+2132
+01:19:30,250 --> 01:19:33,010
+you still could not tell
+
+2133
+01:19:33,869 --> 01:19:36,950
+one state from another state if it was too close.
+
+2134
+01:19:37,610 --> 01:19:38,930
+There's some resolution.
+
+2135
+01:19:39,350 --> 01:19:42,370
+Some resolution of states.
+
+2136
+01:19:42,650 --> 01:19:42,750
+Now,
+
+2137
+01:19:42,750 --> 01:19:43,610
+in quantum mechanics,
+
+2138
+01:19:43,610 --> 01:19:46,990
+it turns out that that resolution is naturally built in.
+
+2139
+01:19:47,250 --> 01:19:53,710
+The smallest uncertainty is given by Planck's constant.
+
+2140
+01:19:53,710 --> 01:19:55,630
+But in other situations,
+
+2141
+01:19:55,630 --> 01:19:57,210
+it may just be that your
+
+2142
+01:19:57,210 --> 01:19:58,790
+resolving powers are not good enough.
+
+2143
+01:19:58,930 --> 01:20:01,510
+So instead of talking about points of phase space,
+
+2144
+01:20:01,510 --> 01:20:06,610
+you talk about resolved or...
+
+2145
+01:20:06,610 --> 01:20:07,650
+What should we call them?
+
+2146
+01:20:07,750 --> 01:20:09,870
+Coarse-grained points in phase space.
+
+2147
+01:20:10,670 --> 01:20:11,230
+Now,
+
+2148
+01:20:11,230 --> 01:20:12,410
+let's make an example.
+
+2149
+01:20:13,350 --> 01:20:16,790
+Supposing we started with this blob in
+
+2150
+01:20:16,790 --> 01:20:20,230
+phase space and it has a certain volume.
+
+2151
+01:20:21,110 --> 01:20:22,270
+Let's follow it.
+
+2152
+01:20:22,270 --> 01:20:23,750
+And I'm going to tell you what it does,
+
+2153
+01:20:23,750 --> 01:20:25,930
+not because I've solved any mathematics problem,
+
+2154
+01:20:26,150 --> 01:20:29,030
+but I'm just going to make
+
+2155
+01:20:29,030 --> 01:20:31,910
+up a dynamics which preserves the volume,
+
+2156
+01:20:31,910 --> 01:20:34,990
+preserves the area on the plane here,
+
+2157
+01:20:35,190 --> 01:20:39,050
+but takes this phase volume here and turns
+
+2158
+01:20:39,050 --> 01:20:42,910
+it into a long snake which looks like this.
+
+2159
+01:20:45,430 --> 01:20:47,370
+It's the same total volume.
+
+2160
+01:20:48,710 --> 01:20:50,990
+The snake is extremely thin.
+
+2161
+01:20:53,010 --> 01:20:54,370
+And it looks like that.
+
+2162
+01:20:55,309 --> 01:20:56,510
+But unfortunately,
+
+2163
+01:20:56,510 --> 01:20:59,450
+because of our limited resolution powers,
+
+2164
+01:20:59,450 --> 01:21:03,320
+we cannot tell a phase
+
+2165
+01:21:03,320 --> 01:21:07,190
+point from a neighboring phase point.
+
+2166
+01:21:07,570 --> 01:21:10,580
+So what we do when this happens is
+
+2167
+01:21:10,580 --> 01:21:13,590
+we take these phase points and we blobify them.
+
+2168
+01:21:15,010 --> 01:21:16,770
+We think of them instead of
+
+2169
+01:21:16,770 --> 01:21:18,530
+as being points in the phase space,
+
+2170
+01:21:18,530 --> 01:21:19,890
+blobs.
+
+2171
+01:21:19,890 --> 01:21:22,290
+And now we start going through it.
+
+2172
+01:21:25,510 --> 01:21:26,730
+And guess what?
+
+2173
+01:21:26,930 --> 01:21:28,770
+The blobs cover...
+
+2174
+01:21:32,170 --> 01:21:34,870
+Are these overlapping or are they...
+
+2175
+01:21:34,870 --> 01:21:35,950
+They're overlapping,
+
+2176
+01:21:35,950 --> 01:21:36,690
+whatever,
+
+2177
+01:21:36,690 --> 01:21:37,150
+yep,
+
+2178
+01:21:37,150 --> 01:21:37,830
+they're overlapping.
+
+2179
+01:21:38,450 --> 01:21:39,890
+Doesn't it violate Liouville?
+
+2180
+01:21:40,570 --> 01:21:41,270
+No,
+
+2181
+01:21:41,270 --> 01:21:43,430
+it doesn't violate Liouville.
+
+2182
+01:21:43,630 --> 01:21:46,749
+We're just losing information because we
+
+2183
+01:21:46,749 --> 01:21:49,869
+can't keep track of this volume.
+
+2184
+01:21:49,869 --> 01:21:50,590
+So we're going to do this fine structure.
+
+2185
+01:21:51,370 --> 01:21:57,660
+The actual true dynamics is such that the snake here
+
+2186
+01:21:57,660 --> 01:22:03,950
+has exactly the same volume as the blob over here.
+
+2187
+01:22:04,390 --> 01:22:06,990
+But because we have fuzzy resolution,
+
+2188
+01:22:06,990 --> 01:22:08,970
+we're looking at these
+
+2189
+01:22:08,970 --> 01:22:10,950
+things with somebody else's eyeglasses.
+
+2190
+01:22:11,810 --> 01:22:12,890
+What do we see?
+
+2191
+01:22:13,090 --> 01:22:14,330
+We see a blob.
+
+2192
+01:22:14,690 --> 01:22:17,510
+And if we were to be asked,
+
+2193
+01:22:17,510 --> 01:22:20,690
+what is the volume of this blob?
+
+2194
+01:22:21,670 --> 01:22:22,870
+In other words,
+
+2195
+01:22:22,870 --> 01:22:24,290
+where...
+
+2196
+01:22:26,430 --> 01:22:27,820
+Where is the point in
+
+2197
+01:22:27,820 --> 01:22:29,210
+phase space where this thing exists?
+
+2198
+01:22:29,670 --> 01:22:32,110
+We'll come to the conclusion
+
+2199
+01:22:32,110 --> 01:22:34,550
+that it's uniformly distributed over here
+
+2200
+01:22:35,670 --> 01:22:38,850
+because we couldn't follow the system carefully enough.
+
+2201
+01:22:38,930 --> 01:22:41,150
+If we could follow it with infinite precision,
+
+2202
+01:22:42,470 --> 01:22:44,790
+if we could follow it with infinite precision
+
+2203
+01:22:45,500 --> 01:22:47,490
+and define the probability density of the blob,
+
+2204
+01:22:47,510 --> 01:22:49,190
+by defining it with infinite precision,
+
+2205
+01:22:49,530 --> 01:22:51,130
+the volume would not change.
+
+2206
+01:22:51,410 --> 01:22:53,110
+But in every real situation,
+
+2207
+01:22:53,650 --> 01:22:54,770
+in every real situation,
+
+2208
+01:22:55,050 --> 01:22:58,670
+we can't distinguish one state from a nearby state.
+
+2209
+01:22:59,170 --> 01:23:01,830
+So we do this process of coarse graining.
+
+2210
+01:23:02,130 --> 01:23:04,800
+Coarse graining is replacing points of
+
+2211
+01:23:04,800 --> 01:23:07,470
+phase space by blobs of phase space.
+
+2212
+01:23:08,750 --> 01:23:09,950
+Once we do that,
+
+2213
+01:23:09,950 --> 01:23:11,490
+guess what?
+
+2214
+01:23:11,630 --> 01:23:12,770
+The volume increases.
+
+2215
+01:23:13,330 --> 01:23:15,190
+I always imagine a big,
+
+2216
+01:23:15,190 --> 01:23:15,430
+you know,
+
+2217
+01:23:15,430 --> 01:23:16,050
+piece of cotton.
+
+2218
+01:23:16,850 --> 01:23:18,380
+What is the volume of
+
+2219
+01:23:18,380 --> 01:23:19,910
+a piece of cotton this big?
+
+2220
+01:23:21,070 --> 01:23:21,590
+Well,
+
+2221
+01:23:21,590 --> 01:23:23,600
+if you mean the volume of
+
+2222
+01:23:23,600 --> 01:23:25,610
+the cotton fibers all added up,
+
+2223
+01:23:25,650 --> 01:23:27,770
+you can squeeze them down to something small.
+
+2224
+01:23:28,650 --> 01:23:31,810
+If you let that cotton fiber go,
+
+2225
+01:23:32,830 --> 01:23:35,850
+the volume of the cotton fibers doesn't change very much,
+
+2226
+01:23:35,850 --> 01:23:36,170
+incidentally.
+
+2227
+01:23:36,630 --> 01:23:37,450
+They're pretty rigid.
+
+2228
+01:23:37,650 --> 01:23:38,010
+They don't...
+
+2229
+01:23:38,010 --> 01:23:41,450
+But the cotton sort of grows out,
+
+2230
+01:23:41,550 --> 01:23:42,830
+and now you look at it,
+
+2231
+01:23:42,830 --> 01:23:43,830
+and it has this big a volume.
+
+2232
+01:23:44,090 --> 01:23:46,030
+If you look at it through somebody else's graph,
+
+2233
+01:23:46,050 --> 01:23:46,250
+through the glasses,
+
+2234
+01:23:46,450 --> 01:23:48,250
+and you can't see the cotton fibers,
+
+2235
+01:23:48,710 --> 01:23:51,970
+you will say that the volume of
+
+2236
+01:23:51,970 --> 01:23:55,230
+that piece of fiber stuff has increased.
+
+2237
+01:23:58,890 --> 01:24:00,690
+And that's what happens.
+
+2238
+01:24:01,010 --> 01:24:01,870
+That is what happens.
+
+2239
+01:24:02,820 --> 01:24:03,690
+That is what happens.
+
+2240
+01:24:03,970 --> 01:24:04,390
+So,
+
+2241
+01:24:04,390 --> 01:24:04,690
+yeah?
+
+2242
+01:24:05,290 --> 01:24:08,930
+Are you saying then that
+
+2243
+01:24:08,930 --> 01:24:12,570
+classically entropy only appears to increase,
+
+2244
+01:24:12,810 --> 01:24:14,270
+but quantum mechanically it does,
+
+2245
+01:24:14,490 --> 01:24:16,030
+because of the limit of the fiber?
+
+2246
+01:24:16,050 --> 01:24:16,890
+Is there any limit of resolution in any of these?
+
+2247
+01:24:16,890 --> 01:24:18,730
+Let's forget the quantum mechanics.
+
+2248
+01:24:18,830 --> 01:24:19,810
+Just limits of resolution.
+
+2249
+01:24:20,170 --> 01:24:20,370
+Yes,
+
+2250
+01:24:20,370 --> 01:24:21,430
+limits of resolution.
+
+2251
+01:24:24,029 --> 01:24:24,590
+No,
+
+2252
+01:24:24,590 --> 01:24:26,960
+remember that entropy is not
+
+2253
+01:24:26,960 --> 01:24:29,330
+really a property of a system.
+
+2254
+01:24:29,450 --> 01:24:30,880
+It's a property of the system
+
+2255
+01:24:30,880 --> 01:24:32,310
+and what you know about the system.
+
+2256
+01:24:34,290 --> 01:24:34,850
+So,
+
+2257
+01:24:34,850 --> 01:24:38,220
+if you could follow in infinite
+
+2258
+01:24:38,220 --> 01:24:41,590
+detail every point in the phase space,
+
+2259
+01:24:42,350 --> 01:24:43,990
+all you knew in the beginning
+
+2260
+01:24:43,990 --> 01:24:46,490
+was that it was inside some here,
+
+2261
+01:24:46,490 --> 01:24:47,530
+but not exactly where.
+
+2262
+01:24:48,430 --> 01:24:50,170
+Then you would say afterwards
+
+2263
+01:24:50,170 --> 01:24:51,910
+it's inside the snake somewhere,
+
+2264
+01:24:51,990 --> 01:24:54,050
+but you don't know exactly where it's in the snake.
+
+2265
+01:24:54,390 --> 01:24:56,150
+Then entropy would be conserved.
+
+2266
+01:24:56,850 --> 01:24:59,150
+But if you take into account that
+
+2267
+01:24:59,150 --> 01:25:01,450
+you can't tell one point from another
+
+2268
+01:25:01,450 --> 01:25:02,750
+because of limits of resolution,
+
+2269
+01:25:03,290 --> 01:25:04,550
+then you wind up saying,
+
+2270
+01:25:04,650 --> 01:25:04,750
+look,
+
+2271
+01:25:04,750 --> 01:25:06,610
+I know much less about where it
+
+2272
+01:25:06,610 --> 01:25:08,470
+is than I did to begin with.
+
+2273
+01:25:09,150 --> 01:25:09,670
+Right.
+
+2274
+01:25:09,770 --> 01:25:11,740
+So classically you can imagine
+
+2275
+01:25:11,740 --> 01:25:13,710
+that you might be able to,
+
+2276
+01:25:14,390 --> 01:25:16,370
+entropy would remain the same because
+
+2277
+01:25:16,370 --> 01:25:18,350
+you can imagine that you could.
+
+2278
+01:25:19,130 --> 01:25:19,690
+Yeah.
+
+2279
+01:25:19,690 --> 01:25:20,190
+Yes,
+
+2280
+01:25:20,190 --> 01:25:20,730
+that's right.
+
+2281
+01:25:20,810 --> 01:25:25,030
+But the problem is given any resolution,
+
+2282
+01:25:26,150 --> 01:25:28,270
+given any degree of resolution,
+
+2283
+01:25:29,710 --> 01:25:31,330
+whatever your resolution is,
+
+2284
+01:25:31,390 --> 01:25:33,930
+let's suppose it was good enough
+
+2285
+01:25:33,930 --> 01:25:36,470
+to resolve the snake after 10 seconds.
+
+2286
+01:25:37,410 --> 01:25:39,330
+So it's good enough to resolve the snake.
+
+2287
+01:25:40,910 --> 01:25:43,690
+But then the way systems evolve in physics,
+
+2288
+01:25:43,710 --> 01:25:44,310
+in the phase space,
+
+2289
+01:25:44,590 --> 01:25:47,510
+is they start to grow even littler snakes.
+
+2290
+01:25:49,570 --> 01:25:51,750
+And littler snakes and littler snakes.
+
+2291
+01:25:52,330 --> 01:25:54,010
+Whatever your degree of resolution,
+
+2292
+01:25:56,009 --> 01:25:57,210
+this snakiness,
+
+2293
+01:25:57,550 --> 01:25:58,470
+we'll give it its right name,
+
+2294
+01:25:58,590 --> 01:25:59,930
+chaos is what its name is.
+
+2295
+01:26:00,810 --> 01:26:03,590
+The way systems evolve in phase space
+
+2296
+01:26:04,389 --> 01:26:06,830
+is they start to spread
+
+2297
+01:26:07,649 --> 01:26:11,370
+and they start to spread out tentacles
+
+2298
+01:26:14,570 --> 01:26:15,370
+and they start to spread out tentacles.
+
+2299
+01:26:15,370 --> 01:26:15,370
+So,
+
+2300
+01:26:15,370 --> 01:26:16,430
+without changing the volume,
+
+2301
+01:26:16,650 --> 01:26:19,010
+they grow fibers,
+
+2302
+01:26:20,350 --> 01:26:22,930
+and the fibers grow smaller fibers,
+
+2303
+01:26:23,090 --> 01:26:25,250
+and the smaller fibers grow smaller fibers.
+
+2304
+01:26:26,470 --> 01:26:27,650
+And eventually,
+
+2305
+01:26:27,650 --> 01:26:30,370
+no matter how good your resolution is,
+
+2306
+01:26:30,510 --> 01:26:35,010
+you'll eventually start seeing that the entropy increases.
+
+2307
+01:26:37,210 --> 01:26:39,450
+And that's the second law.
+
+2308
+01:26:39,450 --> 01:26:40,670
+That's what the second law says.
+
+2309
+01:26:40,990 --> 01:26:41,530
+Now,
+
+2310
+01:26:41,530 --> 01:26:46,870
+let's imagine some phase space.
+
+2311
+01:26:48,190 --> 01:26:50,570
+We started out knowing a great deal.
+
+2312
+01:26:57,510 --> 01:27:00,040
+Let's talk about how big the available
+
+2313
+01:27:00,040 --> 01:27:02,570
+region of phase space is for a minute.
+
+2314
+01:27:03,530 --> 01:27:05,550
+Let's think of it as a gas of
+
+2315
+01:27:05,550 --> 01:27:07,570
+a large number of particles in a box.
+
+2316
+01:27:07,570 --> 01:27:09,930
+If it's in a box,
+
+2317
+01:27:10,150 --> 01:27:12,290
+that means the X's are bounded.
+
+2318
+01:27:13,490 --> 01:27:14,090
+So,
+
+2319
+01:27:14,090 --> 01:27:15,930
+in a one-dimensional analog,
+
+2320
+01:27:16,270 --> 01:27:18,030
+it would say that the phase
+
+2321
+01:27:18,030 --> 01:27:19,790
+space is bounded between here and here.
+
+2322
+01:27:20,330 --> 01:27:21,150
+There's the phase space.
+
+2323
+01:27:21,750 --> 01:27:23,370
+Can the momentum be anything?
+
+2324
+01:27:23,770 --> 01:27:24,270
+No,
+
+2325
+01:27:24,270 --> 01:27:27,390
+usually the energy constrains how
+
+2326
+01:27:27,390 --> 01:27:30,510
+much the maximum momentum can be.
+
+2327
+01:27:31,150 --> 01:27:31,750
+So,
+
+2328
+01:27:31,750 --> 01:27:36,590
+even if all of the energy of the system
+
+2329
+01:27:36,590 --> 01:27:37,870
+went into one particle,
+
+2330
+01:27:37,990 --> 01:27:40,630
+that one particle would still itself have a finite energy.
+
+2331
+01:27:41,330 --> 01:27:42,190
+And so,
+
+2332
+01:27:42,190 --> 01:27:44,800
+the effective region of phase
+
+2333
+01:27:44,800 --> 01:27:47,410
+space which is available to you
+
+2334
+01:27:47,410 --> 01:27:49,450
+is some big box.
+
+2335
+01:27:49,690 --> 01:27:50,570
+Maybe it's not a box.
+
+2336
+01:27:50,750 --> 01:27:51,490
+It's got some shape.
+
+2337
+01:27:51,730 --> 01:27:52,910
+But it's finite.
+
+2338
+01:27:53,510 --> 01:27:54,390
+It's finite.
+
+2339
+01:27:54,790 --> 01:27:57,450
+It doesn't extend to infinity in any direction.
+
+2340
+01:27:58,590 --> 01:27:59,190
+Okay,
+
+2341
+01:27:59,190 --> 01:28:01,450
+now the phase point starts someplace.
+
+2342
+01:28:01,650 --> 01:28:04,170
+The exact precise phase point.
+
+2343
+01:28:05,310 --> 01:28:07,170
+What tends to happen
+
+2344
+01:28:08,190 --> 01:28:10,770
+is the subsequent motion
+
+2345
+01:28:10,770 --> 01:28:14,770
+is extremely sensitive to where you started with.
+
+2346
+01:28:15,090 --> 01:28:15,690
+So,
+
+2347
+01:28:15,690 --> 01:28:16,710
+if you started over here,
+
+2348
+01:28:17,010 --> 01:28:19,250
+the system would evolve for a time.
+
+2349
+01:28:20,290 --> 01:28:22,410
+If you started very close to it,
+
+2350
+01:28:22,470 --> 01:28:24,710
+the system would evolve in a very similar way
+
+2351
+01:28:24,710 --> 01:28:25,930
+for a while,
+
+2352
+01:28:26,150 --> 01:28:27,870
+but then it would start to depart.
+
+2353
+01:28:29,990 --> 01:28:32,170
+It would go off in some different directions.
+
+2354
+01:28:32,170 --> 01:28:38,270
+An example would be billiard balls,
+
+2355
+01:28:38,370 --> 01:28:40,570
+an idealized billiard table with no friction.
+
+2356
+01:28:41,050 --> 01:28:43,530
+How many people play billiards here?
+
+2357
+01:28:44,990 --> 01:28:45,310
+Okay.
+
+2358
+01:28:45,950 --> 01:28:46,510
+Pocket pool?
+
+2359
+01:28:47,730 --> 01:28:48,330
+Okay.
+
+2360
+01:28:49,390 --> 01:28:49,990
+Chicago?
+
+2361
+01:28:51,510 --> 01:28:52,110
+No.
+
+2362
+01:28:52,250 --> 01:28:52,950
+Straight pool?
+
+2363
+01:28:53,130 --> 01:28:53,530
+What do you play?
+
+2364
+01:28:54,490 --> 01:28:55,090
+Okay.
+
+2365
+01:28:58,450 --> 01:28:59,910
+Three cushion is too hard.
+
+2366
+01:29:00,070 --> 01:29:01,130
+Too much chaos.
+
+2367
+01:29:03,990 --> 01:29:04,550
+Yeah.
+
+2368
+01:29:05,030 --> 01:29:05,590
+So,
+
+2369
+01:29:05,590 --> 01:29:09,910
+you know that if you arrange
+
+2370
+01:29:09,910 --> 01:29:14,230
+the balls in a certain fashion,
+
+2371
+01:29:14,490 --> 01:29:15,850
+and start with a cue ball,
+
+2372
+01:29:16,050 --> 01:29:18,430
+and you are extremely accurate,
+
+2373
+01:29:19,110 --> 01:29:20,720
+you start with the cue
+
+2374
+01:29:20,720 --> 01:29:22,330
+of the balls exactly the same
+
+2375
+01:29:22,330 --> 01:29:23,550
+on two different occasions.
+
+2376
+01:29:24,150 --> 01:29:25,910
+If they're exactly the same,
+
+2377
+01:29:26,010 --> 01:29:27,790
+and you shoot exactly the same,
+
+2378
+01:29:27,970 --> 01:29:29,970
+exactly the same things will happen.
+
+2379
+01:29:29,970 --> 01:29:30,890
+Now,
+
+2380
+01:29:30,890 --> 01:29:32,210
+what if you're a tiny,
+
+2381
+01:29:32,210 --> 01:29:32,710
+tiny,
+
+2382
+01:29:32,710 --> 01:29:33,010
+tiny,
+
+2383
+01:29:33,010 --> 01:29:34,270
+tiny bit off
+
+2384
+01:29:35,030 --> 01:29:36,170
+in your aim,
+
+2385
+01:29:37,450 --> 01:29:40,050
+everything else being kept perfectly fixed?
+
+2386
+01:29:40,490 --> 01:29:41,090
+Well,
+
+2387
+01:29:41,090 --> 01:29:43,110
+if you're really just off by a truly,
+
+2388
+01:29:43,110 --> 01:29:44,290
+truly tiny amount,
+
+2389
+01:29:44,470 --> 01:29:47,650
+the difference in the trajectory will be,
+
+2390
+01:29:47,810 --> 01:29:52,150
+the whole system will be small for a while,
+
+2391
+01:29:52,270 --> 01:29:54,390
+but sooner or later,
+
+2392
+01:29:55,129 --> 01:29:56,870
+it's going to start exponentially,
+
+2393
+01:29:57,170 --> 01:29:58,470
+errors compound,
+
+2394
+01:29:58,470 --> 01:30:00,490
+errors compound,
+
+2395
+01:30:01,050 --> 01:30:03,050
+and sooner or later,
+
+2396
+01:30:03,210 --> 01:30:04,770
+that trajectory,
+
+2397
+01:30:05,470 --> 01:30:07,970
+that nearby trajectory is going to deviate.
+
+2398
+01:30:08,810 --> 01:30:12,430
+That's the character of what is called chaotic systems,
+
+2399
+01:30:12,570 --> 01:30:14,510
+and most systems in nature are chaotic.
+
+2400
+01:30:14,970 --> 01:30:17,610
+And so that means that no
+
+2401
+01:30:17,610 --> 01:30:20,250
+matter how close you start together,
+
+2402
+01:30:20,610 --> 01:30:28,450
+you'll eventually depart and fill up a lot of faces,
+
+2403
+01:30:30,609 --> 01:30:32,009
+jakğimizmesiέ
+
+2404
+01:30:37,089 --> 01:30:38,490
+bands
+
+2405
+01:30:59,349 --> 01:31:03,039
+regions of phase space beginning to depart from
+
+2406
+01:31:03,039 --> 01:31:06,730
+each other because errors compound and then two
+
+2407
+01:31:06,730 --> 01:31:09,810
+points over here which are close
+
+2408
+01:31:09,810 --> 01:31:12,890
+together nevertheless eventually will depart from each
+
+2409
+01:31:12,890 --> 01:31:17,230
+other and the phase space gets very
+
+2410
+01:31:17,230 --> 01:31:21,570
+the phase space volume gets extremely complicated and
+
+2411
+01:31:21,570 --> 01:31:23,640
+eventually if you wait long enough
+
+2412
+01:31:23,640 --> 01:31:25,710
+till the system gets to thermal equilibrium
+
+2413
+01:31:26,730 --> 01:31:30,620
+this cottony stuff basically fills up the whole
+
+2414
+01:31:30,620 --> 01:31:34,510
+phase space fills it up as as cotton
+
+2415
+01:31:34,510 --> 01:31:38,100
+would fill up the volume the actual volume
+
+2416
+01:31:38,100 --> 01:31:41,690
+of these fibers stays equal to whatever the
+
+2417
+01:31:41,690 --> 01:31:45,120
+initial volume of the face of the the phase blob
+
+2418
+01:31:45,120 --> 01:31:48,550
+was but it spreads out in a way that if
+
+2419
+01:31:48,550 --> 01:31:51,720
+you do any coarse graining of it at
+
+2420
+01:31:51,720 --> 01:31:54,890
+all it basically fills the thing with uniform probability
+
+2421
+01:31:54,890 --> 01:31:55,550
+you
+
+2422
+01:31:55,710 --> 01:31:59,690
+all right so now we watch a particular
+
+2423
+01:31:59,690 --> 01:32:03,670
+phase point a particular phase point start here
+
+2424
+01:32:03,990 --> 01:32:07,630
+that means we start with a particular configuration of
+
+2425
+01:32:07,630 --> 01:32:11,270
+the of the cue ball and one two three through
+
+2426
+01:32:11,270 --> 01:32:14,830
+fifteen we stack them up and we let it
+
+2427
+01:32:14,830 --> 01:32:18,390
+run it starts to go somewhere and then it goes
+
+2428
+01:32:18,390 --> 01:32:20,560
+somewhere else then it goes somewhere else
+
+2429
+01:32:20,560 --> 01:32:22,730
+and then it goes somewhere else and eventually
+
+2430
+01:32:25,710 --> 01:32:28,350
+if there's no friction on that
+
+2431
+01:32:28,350 --> 01:32:30,990
+billiard table eventually you'll sample something
+
+2432
+01:32:30,990 --> 01:32:34,690
+close to every possible configuration if you
+
+2433
+01:32:34,690 --> 01:32:38,390
+wait long enough you will see every possible
+
+2434
+01:32:39,030 --> 01:32:43,460
+configuration in the phase space visited
+
+2435
+01:32:43,460 --> 01:32:47,890
+not exactly but very close you'll pass
+
+2436
+01:32:47,890 --> 01:32:51,050
+to just about every point in the
+
+2437
+01:32:51,050 --> 01:32:54,210
+phase space very very close to it when
+
+2438
+01:32:54,210 --> 01:32:57,920
+And so what will happen is on the one hand
+
+2439
+01:32:57,920 --> 01:33:01,630
+if you know something in the beginning like for example
+
+2440
+01:33:02,310 --> 01:33:03,250
+You might know
+
+2441
+01:33:03,970 --> 01:33:07,390
+That the initial phase point is something very special
+
+2442
+01:33:07,390 --> 01:33:09,760
+It's down here in the corner all
+
+2443
+01:33:09,760 --> 01:33:12,130
+the molecules in the corner of the room
+
+2444
+01:33:12,890 --> 01:33:16,310
+With a certain definite velocity going off in some direction
+
+2445
+01:33:17,390 --> 01:33:17,950
+Alright,
+
+2446
+01:33:17,950 --> 01:33:20,870
+they start to bump into each other the phase point begins
+
+2447
+01:33:20,870 --> 01:33:23,790
+to separate and the phase points begin to separate and eventually
+
+2448
+01:33:24,210 --> 01:33:27,210
+It fills up the whole thing here
+
+2449
+01:33:29,609 --> 01:33:30,930
+And so
+
+2450
+01:33:32,030 --> 01:33:33,830
+So I don't know anything anymore
+
+2451
+01:33:34,510 --> 01:33:36,610
+It's reached its maximum entropy.
+
+2452
+01:33:36,610 --> 01:33:38,100
+There can't be any more entropy
+
+2453
+01:33:38,100 --> 01:33:39,590
+than saying I don't know anything
+
+2454
+01:33:41,389 --> 01:33:42,050
+But
+
+2455
+01:33:43,669 --> 01:33:46,749
+Nevertheless in a completely unpredictable and
+
+2456
+01:33:46,749 --> 01:33:49,830
+random way that you can't foresee
+
+2457
+01:33:50,710 --> 01:33:52,550
+Because you don't have enough detail
+
+2458
+01:33:53,150 --> 01:33:53,930
+this phase
+
+2459
+01:33:53,930 --> 01:33:55,250
+point will eventually
+
+2460
+01:33:56,070 --> 01:33:57,930
+Come back to this point here
+
+2461
+01:34:00,070 --> 01:34:02,350
+In other words in the cue ball
+
+2462
+01:34:04,230 --> 01:34:05,410
+Billiard ball analogy
+
+2463
+01:34:06,190 --> 01:34:09,150
+You start your cue you start your rack racked
+
+2464
+01:34:09,150 --> 01:34:12,110
+up in a certain very very special the triangle
+
+2465
+01:34:12,110 --> 01:34:13,630
+The cue ball down,
+
+2466
+01:34:13,630 --> 01:34:15,450
+you know definite the shoot
+
+2467
+01:34:16,050 --> 01:34:17,310
+And you're very precise,
+
+2468
+01:34:17,310 --> 01:34:19,450
+but after a certain amount of time
+
+2469
+01:34:19,450 --> 01:34:21,590
+they begin to go off in funny directions.
+
+2470
+01:34:21,590 --> 01:34:23,050
+They begin to fill the
+
+2471
+01:34:23,930 --> 01:34:25,370
+They begin to fill not
+
+2472
+01:34:25,370 --> 01:34:26,810
+that they fill the pool table,
+
+2473
+01:34:26,810 --> 01:34:28,950
+but they fill the space of possibilities
+
+2474
+01:34:29,870 --> 01:34:31,560
+But if you wait long
+
+2475
+01:34:31,560 --> 01:34:33,250
+enough if you wait long enough
+
+2476
+01:34:34,350 --> 01:34:37,370
+We can talk about how long it takes those
+
+2477
+01:34:37,370 --> 01:34:40,390
+balls will come back and and form the triangle again
+
+2478
+01:34:43,510 --> 01:34:44,550
+How long
+
+2479
+01:34:45,870 --> 01:34:46,390
+Well,
+
+2480
+01:34:46,390 --> 01:34:47,030
+it's not infinite.
+
+2481
+01:34:47,030 --> 01:34:48,390
+It's not infinite.
+
+2482
+01:34:48,390 --> 01:34:49,330
+It's not infinite.
+
+2483
+01:34:49,330 --> 01:34:51,250
+It does depend on
+
+2484
+01:34:52,350 --> 01:34:53,390
+how precise
+
+2485
+01:34:53,390 --> 01:34:55,110
+you require
+
+2486
+01:34:56,390 --> 01:35:00,740
+To reproduce the the original configuration if you
+
+2487
+01:35:00,740 --> 01:35:05,090
+allow even a very small tolerance and you say
+
+2488
+01:35:06,450 --> 01:35:09,180
+This is the original configuration
+
+2489
+01:35:09,180 --> 01:35:11,910
+X to within a certain tolerance
+
+2490
+01:35:12,590 --> 01:35:15,990
+Then depending on that tolerance it will take a finite time
+
+2491
+01:35:15,990 --> 01:35:19,390
+for the phase point to come back to that original configuration
+
+2492
+01:35:20,370 --> 01:35:22,890
+If you require infinite precision
+
+2493
+01:35:22,890 --> 01:35:24,210
+it will never come back.
+
+2494
+01:35:25,010 --> 01:35:28,110
+But if you require precision to within some epsilon,
+
+2495
+01:35:28,869 --> 01:35:31,389
+then the time that it takes to pass
+
+2496
+01:35:31,389 --> 01:35:33,910
+back through that phase point to within tolerance epsilon
+
+2497
+01:35:35,490 --> 01:35:36,370
+is finite.
+
+2498
+01:35:36,370 --> 01:35:36,990
+Yeah?
+
+2499
+01:35:37,470 --> 01:35:39,150
+In the case of a billiard table,
+
+2500
+01:35:39,150 --> 01:35:39,530
+right,
+
+2501
+01:35:39,530 --> 01:35:42,650
+you actually are imparting energy by hitting the cue ball,
+
+2502
+01:35:42,650 --> 01:35:43,110
+right?
+
+2503
+01:35:43,310 --> 01:35:43,570
+Mm-hmm.
+
+2504
+01:35:43,570 --> 01:35:43,930
+Well,
+
+2505
+01:35:43,930 --> 01:35:44,530
+no,
+
+2506
+01:35:44,530 --> 01:35:45,890
+that's the starting point with the energy.
+
+2507
+01:35:46,210 --> 01:35:46,570
+Oh,
+
+2508
+01:35:46,570 --> 01:35:46,790
+okay.
+
+2509
+01:35:46,790 --> 01:35:47,720
+So the starting point is
+
+2510
+01:35:47,720 --> 01:35:48,650
+already the cue ball hitting it.
+
+2511
+01:35:48,770 --> 01:35:50,420
+So the system will replicate with
+
+2512
+01:35:50,420 --> 01:35:52,070
+the cue ball coming at it,
+
+2513
+01:35:52,070 --> 01:35:52,270
+then?
+
+2514
+01:35:52,890 --> 01:35:53,350
+Right.
+
+2515
+01:35:53,350 --> 01:35:54,150
+Mm-hmm.
+
+2516
+01:35:54,150 --> 01:35:54,590
+Mm-hmm.
+
+2517
+01:35:54,590 --> 01:35:55,150
+Right.
+
+2518
+01:35:55,150 --> 01:35:56,450
+Right.
+
+2519
+01:35:57,350 --> 01:35:57,930
+Okay.
+
+2520
+01:35:59,250 --> 01:35:59,830
+So,
+
+2521
+01:35:59,830 --> 01:36:01,090
+on the one hand,
+
+2522
+01:36:01,090 --> 01:36:02,490
+the entropy increases.
+
+2523
+01:36:03,070 --> 01:36:04,780
+It increases in this cross-grain
+
+2524
+01:36:04,780 --> 01:36:06,490
+sense because you lose track.
+
+2525
+01:36:07,230 --> 01:36:08,270
+On the other hand,
+
+2526
+01:36:08,270 --> 01:36:10,320
+that does not say that you
+
+2527
+01:36:10,320 --> 01:36:12,370
+can't return to the original configuration.
+
+2528
+01:36:14,490 --> 01:36:16,810
+You can try to estimate how long it'll take.
+
+2529
+01:36:18,210 --> 01:36:18,790
+And
+
+2530
+01:36:20,670 --> 01:36:22,250
+maybe we'll do that next time.
+
+2531
+01:36:22,370 --> 01:36:22,870
+We'll make it.
+
+2532
+01:36:22,870 --> 01:36:25,440
+We'll make an estimate of how long it
+
+2533
+01:36:25,440 --> 01:36:28,010
+takes for a system of many degrees of freedom.
+
+2534
+01:36:29,770 --> 01:36:32,350
+Let's say the air will try out this problem.
+
+2535
+01:36:32,590 --> 01:36:33,930
+Take the air in the room,
+
+2536
+01:36:33,930 --> 01:36:37,370
+put it all up in the corner with its energy.
+
+2537
+01:36:37,490 --> 01:36:38,110
+It has its energy.
+
+2538
+01:36:38,110 --> 01:36:39,070
+It has its kinetic energy.
+
+2539
+01:36:40,530 --> 01:36:42,850
+All the molecules are going in the same direction.
+
+2540
+01:36:42,850 --> 01:36:43,470
+Very,
+
+2541
+01:36:43,470 --> 01:36:44,390
+very special state.
+
+2542
+01:36:45,870 --> 01:36:47,510
+They shoot off to the other wall.
+
+2543
+01:36:47,510 --> 01:36:48,730
+They bounce off the walls.
+
+2544
+01:36:48,730 --> 01:36:49,910
+They start hitting each other.
+
+2545
+01:36:50,010 --> 01:36:52,110
+They go crazy and they begin...
+
+2546
+01:36:52,110 --> 01:36:52,850
+The system is running.
+
+2547
+01:36:52,850 --> 01:36:53,530
+It's very chaotic.
+
+2548
+01:36:53,890 --> 01:36:55,110
+And after a while,
+
+2549
+01:36:55,110 --> 01:36:56,920
+they fill the room in
+
+2550
+01:36:56,920 --> 01:36:58,730
+a normal pattern of thermal equilibrium.
+
+2551
+01:36:59,130 --> 01:37:00,310
+And we sit and we wait
+
+2552
+01:37:00,310 --> 01:37:01,490
+and we wait and we wait.
+
+2553
+01:37:01,610 --> 01:37:03,190
+How long does it take?
+
+2554
+01:37:03,950 --> 01:37:05,050
+We can be certain.
+
+2555
+01:37:05,050 --> 01:37:06,620
+We can be certain that
+
+2556
+01:37:06,620 --> 01:37:08,190
+if the room lasts long enough,
+
+2557
+01:37:09,429 --> 01:37:11,670
+and it's a really truly closed system,
+
+2558
+01:37:11,670 --> 01:37:12,970
+how long...
+
+2559
+01:37:12,970 --> 01:37:13,070
+Well,
+
+2560
+01:37:13,070 --> 01:37:14,070
+there doesn't have to be a closed system.
+
+2561
+01:37:14,130 --> 01:37:15,570
+We just don't want to leak molecules out.
+
+2562
+01:37:15,950 --> 01:37:17,690
+But it's kept at constant temperature.
+
+2563
+01:37:18,110 --> 01:37:20,470
+How long will it take on the
+
+2564
+01:37:20,470 --> 01:37:22,830
+average before all the molecules will be up?
+
+2565
+01:37:22,850 --> 01:37:23,510
+In the corner again.
+
+2566
+01:37:23,510 --> 01:37:24,570
+Or in that corner.
+
+2567
+01:37:24,570 --> 01:37:25,290
+Or in that corner.
+
+2568
+01:37:26,110 --> 01:37:28,930
+And that question can be answered.
+
+2569
+01:37:30,030 --> 01:37:32,190
+The answer is a long time.
+
+2570
+01:37:34,090 --> 01:37:37,350
+Don't you lose information if,
+
+2571
+01:37:37,350 --> 01:37:38,690
+in this case...
+
+2572
+01:37:40,490 --> 01:37:41,970
+It's not a reversible system,
+
+2573
+01:37:41,970 --> 01:37:42,310
+right?
+
+2574
+01:37:42,970 --> 01:37:43,790
+It is.
+
+2575
+01:37:45,130 --> 01:37:48,050
+Because after some time it goes back into the corner?
+
+2576
+01:37:50,430 --> 01:37:51,390
+Completely reversible.
+
+2577
+01:37:53,270 --> 01:37:54,550
+Anything that can happen,
+
+2578
+01:37:54,550 --> 01:37:55,790
+the opposite can happen.
+
+2579
+01:37:56,770 --> 01:37:57,330
+But...
+
+2580
+01:38:00,310 --> 01:38:00,870
+No.
+
+2581
+01:38:00,870 --> 01:38:01,490
+Alright,
+
+2582
+01:38:01,490 --> 01:38:02,330
+we'll talk about it more.
+
+2583
+01:38:03,050 --> 01:38:04,870
+We'll talk about the second law more.
+
+2584
+01:38:05,050 --> 01:38:06,410
+We'll talk about reversibility.
+
+2585
+01:38:07,730 --> 01:38:10,150
+And how this paradox gets resolved.
+
+2586
+01:38:10,730 --> 01:38:13,210
+How this paradox of
+
+2587
+01:38:13,210 --> 01:38:15,690
+reversibility and irreversibility gets resolved.
+
+2588
+01:38:18,910 --> 01:38:19,470
+And,
+
+2589
+01:38:19,470 --> 01:38:19,930
+you know,
+
+2590
+01:38:19,930 --> 01:38:22,250
+it was one of the great classic...
+
+2591
+01:38:23,490 --> 01:38:24,490
+paradoxes of physics.
+
+2592
+01:38:26,010 --> 01:38:28,170
+That puzzled a lot of people.
+
+2593
+01:38:28,370 --> 01:38:29,910
+As you undoubtedly know,
+
+2594
+01:38:29,910 --> 01:38:30,950
+in the history of physics,
+
+2595
+01:38:31,190 --> 01:38:34,390
+it drove Boltzmann to distraction.
+
+2596
+01:38:34,870 --> 01:38:36,690
+I don't know if it drove him to suicide,
+
+2597
+01:38:36,690 --> 01:38:38,970
+but it certainly depressed him.
+
+2598
+01:38:41,230 --> 01:38:43,810
+And eventually he came up with the right answer.
+
+2599
+01:38:44,090 --> 01:38:46,430
+The right answer being that,
+
+2600
+01:38:46,430 --> 01:38:49,730
+not that entropy always increases,
+
+2601
+01:38:49,810 --> 01:38:52,150
+but given any configuration,
+
+2602
+01:38:52,150 --> 01:38:54,280
+it's most probable that the
+
+2603
+01:38:54,280 --> 01:38:56,410
+next configuration will have more entropy.
+
+2604
+01:38:57,710 --> 01:38:59,730
+Entropy probably increases.
+
+2605
+01:39:02,070 --> 01:39:06,950
+And the probability of the configuration
+
+2606
+01:39:06,950 --> 01:39:11,830
+aiming itself back into some unusual configuration,
+
+2607
+01:39:12,290 --> 01:39:13,010
+unexpected,
+
+2608
+01:39:13,010 --> 01:39:14,790
+that's always small.
+
+2609
+01:39:16,970 --> 01:39:17,650
+Well,
+
+2610
+01:39:17,650 --> 01:39:18,910
+I'll give you some more examples.
+
+2611
+01:39:18,970 --> 01:39:20,130
+I'll try to make this
+
+2612
+01:39:20,130 --> 01:39:21,290
+a little more intuitive next time.
+
+2613
+01:39:21,290 --> 01:39:24,400
+But we do owe the second
+
+2614
+01:39:24,400 --> 01:39:27,510
+law at least some kind of explanation.
+
+2615
+01:39:27,850 --> 01:39:28,290
+Yeah?
+
+2616
+01:39:28,450 --> 01:39:31,190
+You said earlier most systems in nature are chaotic.
+
+2617
+01:39:31,510 --> 01:39:34,190
+It sounds like an empirical fact.
+
+2618
+01:39:34,210 --> 01:39:36,250
+Or is there a principle behind that?
+
+2619
+01:39:48,010 --> 01:39:48,570
+Well...
+
+2620
+01:39:51,290 --> 01:39:52,810
+There's an infinite number of chaotic systems,
+
+2621
+01:39:52,910 --> 01:39:54,970
+and there's an infinite number of non-chaotic systems.
+
+2622
+01:39:55,130 --> 01:39:57,250
+And now we have to start talking about measures on...
+
+2623
+01:39:58,650 --> 01:39:59,650
+Measures on what?
+
+2624
+01:39:59,750 --> 01:40:01,550
+Measures on Hamiltonians and things.
+
+2625
+01:40:05,210 --> 01:40:06,210
+It's a good question.
+
+2626
+01:40:06,310 --> 01:40:10,370
+I'm sure that the mathematical people could probably answer,
+
+2627
+01:40:10,510 --> 01:40:12,610
+what is the right measure of
+
+2628
+01:40:12,610 --> 01:40:14,710
+the chaotic systems versus the non-chaotic systems?
+
+2629
+01:40:18,110 --> 01:40:18,630
+But...
+
+2630
+01:40:22,790 --> 01:40:23,570
+That's a good question.
+
+2631
+01:40:23,670 --> 01:40:23,750
+I mean,
+
+2632
+01:40:23,750 --> 01:40:24,730
+not all systems are chaotic.
+
+2633
+01:40:24,870 --> 01:40:25,430
+That's for sure.
+
+2634
+01:40:28,030 --> 01:40:29,430
+And in many cases,
+
+2635
+01:40:29,430 --> 01:40:30,930
+you can perturb them a little bit.
+
+2636
+01:40:31,010 --> 01:40:32,250
+You can change them a little bit,
+
+2637
+01:40:32,250 --> 01:40:34,150
+and they will still remain non-chaotic.
+
+2638
+01:40:34,570 --> 01:40:36,660
+It's not the sort of situation
+
+2639
+01:40:36,660 --> 01:40:38,750
+where if you have a chaotic system
+
+2640
+01:40:38,750 --> 01:40:40,630
+and you change the rules,
+
+2641
+01:40:40,630 --> 01:40:41,950
+meaning the Hamiltonian,
+
+2642
+01:40:41,950 --> 01:40:42,570
+a tiny,
+
+2643
+01:40:42,570 --> 01:40:43,150
+tiny bit,
+
+2644
+01:40:43,690 --> 01:40:46,290
+it will become chaotic.
+
+2645
+01:40:47,190 --> 01:40:47,590
+No,
+
+2646
+01:40:47,590 --> 01:40:48,510
+there's usually some...
+
+2647
+01:40:49,689 --> 01:40:50,089
+Oh,
+
+2648
+01:40:50,089 --> 01:40:50,490
+chaotic.
+
+2649
+01:40:50,490 --> 01:40:51,650
+What does chaotic mean?
+
+2650
+01:40:52,150 --> 01:40:55,480
+Chaotic means that the phase
+
+2651
+01:40:55,480 --> 01:40:58,810
+trajectories tend to separate like this
+
+2652
+01:40:58,810 --> 01:41:01,230
+after a long enough time that...
+
+2653
+01:41:06,030 --> 01:41:07,840
+I didn't want to define it
+
+2654
+01:41:07,840 --> 01:41:09,650
+with any infinite precision right now,
+
+2655
+01:41:09,770 --> 01:41:12,060
+but it is this phenomenon
+
+2656
+01:41:12,060 --> 01:41:14,350
+of close-by points in phase space
+
+2657
+01:41:14,350 --> 01:41:15,890
+following each other for a
+
+2658
+01:41:15,890 --> 01:41:17,430
+while and then exponentially departing
+
+2659
+01:41:18,210 --> 01:41:20,470
+so that the system becomes a phase.
+
+2660
+01:41:20,490 --> 01:41:21,250
+It's effectively unpredictable.
+
+2661
+01:41:22,690 --> 01:41:26,360
+It's a situation in
+
+2662
+01:41:26,360 --> 01:41:30,030
+which predictability effectively breaks down
+
+2663
+01:41:30,030 --> 01:41:32,560
+because in order to predict a
+
+2664
+01:41:32,560 --> 01:41:35,090
+system for a length of time t,
+
+2665
+01:41:35,430 --> 01:41:39,230
+your precision with the initial conditions
+
+2666
+01:41:39,230 --> 01:41:40,900
+and your precision and knowledge
+
+2667
+01:41:40,900 --> 01:41:42,570
+of the evolution of the system
+
+2668
+01:41:43,330 --> 01:41:45,410
+has to get better and better and better
+
+2669
+01:41:45,410 --> 01:41:47,530
+as the time over which
+
+2670
+01:41:47,530 --> 01:41:51,770
+you want predictability to be predictability.
+
+2671
+01:41:52,330 --> 01:41:53,590
+So you take the weather.
+
+2672
+01:41:55,690 --> 01:41:57,950
+Just define it as a collection of molecules
+
+2673
+01:41:57,950 --> 01:42:00,170
+doing whatever they're doing instantaneously.
+
+2674
+01:42:00,710 --> 01:42:01,810
+And you ask,
+
+2675
+01:42:01,810 --> 01:42:04,170
+how long can I predict the weather?
+
+2676
+01:42:06,150 --> 01:42:07,830
+How long can you predict
+
+2677
+01:42:07,830 --> 01:42:09,510
+the weather depends on how precisely
+
+2678
+01:42:09,510 --> 01:42:10,790
+you know the initial conditions.
+
+2679
+01:42:13,770 --> 01:42:15,640
+And if you want to
+
+2680
+01:42:15,640 --> 01:42:17,510
+predict it for a long time,
+
+2681
+01:42:17,510 --> 01:42:18,510
+for a longer period of time,
+
+2682
+01:42:18,650 --> 01:42:20,650
+you have to have more precise initial data.
+
+2683
+01:42:21,070 --> 01:42:22,010
+Even longer,
+
+2684
+01:42:22,010 --> 01:42:22,650
+more precise.
+
+2685
+01:42:22,910 --> 01:42:25,150
+Now that's quite different than the harmonic oscillator.
+
+2686
+01:42:26,030 --> 01:42:30,950
+The harmonic oscillator in phase space
+
+2687
+01:42:31,530 --> 01:42:34,810
+just moves around in a circle with constant frequency.
+
+2688
+01:42:35,730 --> 01:42:37,830
+If you start a phase point over here,
+
+2689
+01:42:38,030 --> 01:42:39,810
+it travels around over here.
+
+2690
+01:42:39,910 --> 01:42:41,090
+Start a phase point over here,
+
+2691
+01:42:41,090 --> 01:42:42,030
+they just go together.
+
+2692
+01:42:42,470 --> 01:42:44,530
+And they go together forever and ever.
+
+2693
+01:42:44,530 --> 01:42:48,830
+Close by phase points never get far from each other.
+
+2694
+01:42:49,490 --> 01:42:51,790
+That's a very non-chaotic system.
+
+2695
+01:42:54,190 --> 01:42:58,430
+A particle in an orbit around the sun
+
+2696
+01:42:58,430 --> 01:43:01,790
+in a true inverse square law
+
+2697
+01:43:01,790 --> 01:43:05,890
+where we do exact Newtonian physics
+
+2698
+01:43:05,890 --> 01:43:07,150
+is not chaotic.
+
+2699
+01:43:07,590 --> 01:43:10,840
+The two close by trajectories,
+
+2700
+01:43:11,330 --> 01:43:12,550
+two close by orbits
+
+2701
+01:43:12,550 --> 01:43:14,450
+will remain close by
+
+2702
+01:43:15,290 --> 01:43:16,210
+basically forever.
+
+2703
+01:43:16,770 --> 01:43:19,810
+The three body problem is chaotic in general.
+
+2704
+01:43:22,130 --> 01:43:24,090
+That neighboring orbits
+
+2705
+01:43:24,090 --> 01:43:26,470
+eventually tend to depart from each other.
+
+2706
+01:43:26,870 --> 01:43:29,030
+So that means predictability
+
+2707
+01:43:29,930 --> 01:43:32,590
+is a function of how accurately
+
+2708
+01:43:32,590 --> 01:43:34,150
+you know the initial conditions.
+
+2709
+01:43:34,710 --> 01:43:36,710
+To predict for a length of time t,
+
+2710
+01:43:36,910 --> 01:43:38,730
+you must know the initial conditions
+
+2711
+01:43:38,730 --> 01:43:40,350
+to within epsilon of t.
+
+2712
+01:43:40,830 --> 01:43:41,970
+As t gets longer,
+
+2713
+01:43:42,170 --> 01:43:44,350
+you need to know the initial conditions better.
+
+2714
+01:43:44,530 --> 01:43:45,790
+That's what it means to be chaotic.
+
+2715
+01:43:46,090 --> 01:43:48,730
+Not also the laws of motion,
+
+2716
+01:43:49,010 --> 01:43:51,670
+you need to know also with a very high precision?
+
+2717
+01:43:51,990 --> 01:43:52,510
+Yes,
+
+2718
+01:43:52,510 --> 01:43:54,070
+you also need to know the laws of motion
+
+2719
+01:43:54,070 --> 01:43:54,890
+with a very high precision.
+
+2720
+01:43:55,330 --> 01:44:01,370
+Both the laws and the initial conditions.
+
+2721
+01:44:03,110 --> 01:44:04,410
+What's the kind of moment
+
+2722
+01:44:04,410 --> 01:44:05,170
+between the two bodies
+
+2723
+01:44:05,170 --> 01:44:08,230
+that are in another direction?
+
+2724
+01:44:09,970 --> 01:44:11,550
+One is chaotic and one is not.
+
+2725
+01:44:13,210 --> 01:44:14,510
+It's mathematical problem.
+
+2726
+01:44:14,510 --> 01:44:14,650
+It's a matter of property.
+
+2727
+01:44:18,630 --> 01:44:20,690
+You've seen chaotic pendulums.
+
+2728
+01:44:20,750 --> 01:44:22,590
+The double pendulum is chaotic.
+
+2729
+01:44:24,290 --> 01:44:24,710
+You know,
+
+2730
+01:44:24,710 --> 01:44:25,930
+double pendulum is...
+
+2731
+01:44:26,510 --> 01:44:28,530
+The ordinary pendulum is not chaotic.
+
+2732
+01:44:28,770 --> 01:44:29,410
+It's very,
+
+2733
+01:44:29,410 --> 01:44:30,150
+very predictable.
+
+2734
+01:44:34,230 --> 01:44:36,530
+Now you add a second pendulum like that
+
+2735
+01:44:36,530 --> 01:44:37,910
+that swings around this one.
+
+2736
+01:44:38,090 --> 01:44:39,130
+And you start it going.
+
+2737
+01:44:39,390 --> 01:44:41,030
+Have you ever seen the double pendulum in action?
+
+2738
+01:44:42,210 --> 01:44:43,310
+It's quite fascinating.
+
+2739
+01:44:43,310 --> 01:44:44,830
+You can follow it a little bit,
+
+2740
+01:44:44,850 --> 01:44:47,670
+but then after a little bit of time
+
+2741
+01:44:47,670 --> 01:44:48,950
+it does something really weird.
+
+2742
+01:44:50,090 --> 01:44:54,930
+All the energy will go into one of the modes.
+
+2743
+01:44:55,230 --> 01:44:57,730
+Very chaotic things happen.
+
+2744
+01:44:57,970 --> 01:44:58,830
+Why is it a model though,
+
+2745
+01:44:58,830 --> 01:44:59,130
+mathematically?
+
+2746
+01:45:00,010 --> 01:45:01,090
+Why is it a model?
+
+2747
+01:45:02,050 --> 01:45:04,090
+Because the phase space spreads.
+
+2748
+01:45:05,110 --> 01:45:05,730
+You know,
+
+2749
+01:45:05,730 --> 01:45:06,290
+you're asking...
+
+2750
+01:45:08,670 --> 01:45:10,510
+You're asking a very hard question.
+
+2751
+01:45:10,990 --> 01:45:12,990
+Why some systems are chaotic
+
+2752
+01:45:12,990 --> 01:45:14,430
+and other systems aren't chaotic.
+
+2753
+01:45:18,350 --> 01:45:21,170
+I would say the state of the art
+
+2754
+01:45:22,269 --> 01:45:23,550
+is almost...
+
+2755
+01:45:25,109 --> 01:45:26,370
+It's very,
+
+2756
+01:45:26,370 --> 01:45:27,110
+very hard
+
+2757
+01:45:27,110 --> 01:45:28,910
+to look at a Hamiltonian
+
+2758
+01:45:28,910 --> 01:45:30,490
+and know whether it's chaotic or not.
+
+2759
+01:45:32,350 --> 01:45:33,870
+Except for the fact
+
+2760
+01:45:33,870 --> 01:45:35,570
+that if it's complicated
+
+2761
+01:45:35,570 --> 01:45:36,870
+it's usually chaotic.
+
+2762
+01:45:40,310 --> 01:45:41,790
+But that's a...
+
+2763
+01:45:41,790 --> 01:45:42,010
+You know,
+
+2764
+01:45:42,010 --> 01:45:43,510
+there are complicated ones
+
+2765
+01:45:43,510 --> 01:45:44,250
+which are not chaotic.
+
+2766
+01:45:44,590 --> 01:45:47,170
+So this is not an easy question.
+
+2767
+01:45:47,310 --> 01:45:50,470
+And it's something that mathematicians
+
+2768
+01:45:50,470 --> 01:45:53,210
+and mathematical physicists study.
+
+2769
+01:45:53,410 --> 01:45:55,930
+And they don't have answers
+
+2770
+01:45:56,630 --> 01:45:57,550
+that are very general.
+
+2771
+01:45:57,750 --> 01:46:00,310
+You mean even a theoretical double pendulum
+
+2772
+01:46:00,310 --> 01:46:02,710
+is chaotic with no friction?
+
+2773
+01:46:03,030 --> 01:46:03,690
+With no friction.
+
+2774
+01:46:05,110 --> 01:46:05,710
+Right.
+
+2775
+01:46:06,110 --> 01:46:09,030
+The precision with which you know
+
+2776
+01:46:09,030 --> 01:46:09,970
+the initial conditions,
+
+2777
+01:46:09,970 --> 01:46:11,870
+the relationship between that
+
+2778
+01:46:11,870 --> 01:46:12,590
+and the precision,
+
+2779
+01:46:12,730 --> 01:46:14,490
+you can predict the ultimate conditions.
+
+2780
+01:46:14,770 --> 01:46:16,650
+That relationship blows up.
+
+2781
+01:46:17,570 --> 01:46:18,730
+If you don't have...
+
+2782
+01:46:18,730 --> 01:46:19,130
+No.
+
+2783
+01:46:19,570 --> 01:46:22,290
+So precision gets so bad in the future
+
+2784
+01:46:22,290 --> 01:46:23,870
+you don't have a clue where it's going to be.
+
+2785
+01:46:24,230 --> 01:46:24,610
+Right.
+
+2786
+01:46:24,990 --> 01:46:27,470
+But if you really did know
+
+2787
+01:46:27,470 --> 01:46:28,330
+the initial conditions
+
+2788
+01:46:28,730 --> 01:46:29,950
+to infinite precision,
+
+2789
+01:46:29,950 --> 01:46:30,670
+perfect.
+
+2790
+01:46:30,870 --> 01:46:32,410
+If you know the initial conditions
+
+2791
+01:46:33,050 --> 01:46:34,390
+to infinite precision,
+
+2792
+01:46:34,690 --> 01:46:36,050
+whatever that means,
+
+2793
+01:46:36,690 --> 01:46:38,930
+you could predict for infinite time.
+
+2794
+01:46:38,930 --> 01:46:39,330
+Right.
+
+2795
+01:46:39,450 --> 01:46:39,910
+Now,
+
+2796
+01:46:39,910 --> 01:46:41,650
+I think that's probably
+
+2797
+01:46:41,650 --> 01:46:42,850
+a meaningless statement.
+
+2798
+01:46:43,250 --> 01:46:44,810
+But the right statement is
+
+2799
+01:46:47,150 --> 01:46:49,450
+some connection between
+
+2800
+01:46:49,450 --> 01:46:51,470
+given the time that you want to predict
+
+2801
+01:46:51,470 --> 01:46:54,770
+and how precise you have to know
+
+2802
+01:46:54,770 --> 01:46:55,730
+the initial conditions.
+
+2803
+01:46:55,970 --> 01:46:56,130
+Yeah,
+
+2804
+01:46:56,130 --> 01:46:57,030
+that's what I was trying to say.
+
+2805
+01:46:57,630 --> 01:46:58,110
+Yeah.
+
+2806
+01:46:59,910 --> 01:47:02,530
+So that has to do with how fast
+
+2807
+01:47:02,530 --> 01:47:04,550
+these trajectories depart from each other.
+
+2808
+01:47:05,250 --> 01:47:07,450
+If the trajectories tend to stay close
+
+2809
+01:47:07,450 --> 01:47:08,910
+to each other for a long period of time,
+
+2810
+01:47:08,930 --> 01:47:11,210
+the system is rather predictable
+
+2811
+01:47:11,870 --> 01:47:13,390
+for a long period of time,
+
+2812
+01:47:13,590 --> 01:47:14,950
+but eventually they will separate.
+
+2813
+01:47:15,330 --> 01:47:15,710
+So...
+
+2814
+01:47:16,310 --> 01:47:16,830
+And...
+
+2815
+01:47:16,830 --> 01:47:17,670
+Right.
+
+2816
+01:47:18,110 --> 01:47:20,090
+So most systems are unpredictable
+
+2817
+01:47:20,090 --> 01:47:21,230
+in that sense.
+
+2818
+01:47:22,730 --> 01:47:23,730
+But you're right.
+
+2819
+01:47:23,869 --> 01:47:24,010
+I mean,
+
+2820
+01:47:24,010 --> 01:47:24,429
+given...
+
+2821
+01:47:24,429 --> 01:47:26,310
+Another way to say it is
+
+2822
+01:47:27,369 --> 01:47:28,869
+given any length of...
+
+2823
+01:47:28,869 --> 01:47:29,329
+Yeah,
+
+2824
+01:47:29,329 --> 01:47:30,429
+given any length of time
+
+2825
+01:47:30,429 --> 01:47:31,210
+that you want to predict,
+
+2826
+01:47:31,450 --> 01:47:32,690
+there exists a tolerance
+
+2827
+01:47:32,690 --> 01:47:34,590
+or a precision,
+
+2828
+01:47:35,150 --> 01:47:36,110
+an epsilon
+
+2829
+01:47:38,110 --> 01:47:39,810
+that would allow you,
+
+2830
+01:47:39,869 --> 01:47:41,730
+if you knew the phase point
+
+2831
+01:47:41,730 --> 01:47:44,329
+within that precision epsilon,
+
+2832
+01:47:44,690 --> 01:47:45,990
+would allow you to predict
+
+2833
+01:47:45,990 --> 01:47:46,990
+for that length of time.
+
+2834
+01:47:47,970 --> 01:47:48,490
+So,
+
+2835
+01:47:48,490 --> 01:47:48,790
+you know,
+
+2836
+01:47:48,790 --> 01:47:50,630
+it's given T,
+
+2837
+01:47:50,829 --> 01:47:52,110
+there exists an epsilon,
+
+2838
+01:47:52,329 --> 01:47:52,970
+such that,
+
+2839
+01:47:52,970 --> 01:47:53,790
+and so forth.
+
+2840
+01:47:54,970 --> 01:47:56,929
+It's usually called the Yapanov...
+
+2841
+01:47:56,929 --> 01:47:57,849
+Yeah,
+
+2842
+01:47:57,849 --> 01:47:59,650
+the Yapanov co-exponents,
+
+2843
+01:47:59,650 --> 01:47:59,849
+right.
+
+2844
+01:48:00,250 --> 01:48:01,490
+That's exactly what they are,
+
+2845
+01:48:01,530 --> 01:48:01,990
+Yapanov.
+
+2846
+01:48:02,450 --> 01:48:03,710
+What's the term?
+
+2847
+01:48:04,230 --> 01:48:04,750
+Yapanov.
+
+2848
+01:48:04,889 --> 01:48:06,090
+L-Y-A-P-A-N-O-V.
+
+2849
+01:48:06,090 --> 01:48:08,850
+A-P-O-N-A-V?
+
+2850
+01:48:09,030 --> 01:48:09,290
+No,
+
+2851
+01:48:09,290 --> 01:48:09,930
+A-N-O-V?
+
+2852
+01:48:11,150 --> 01:48:11,550
+Yapanov.
+
+2853
+01:48:12,430 --> 01:48:12,830
+Lapanov.
+
+2854
+01:48:12,990 --> 01:48:14,110
+L-Y-A-P-A-N-O-V.
+
+2855
+01:48:14,210 --> 01:48:14,850
+L-Y...
+
+2856
+01:48:15,930 --> 01:48:16,730
+L-Y...
+
+2857
+01:48:16,730 --> 01:48:17,530
+A-N-O-V.
+
+2858
+01:48:18,250 --> 01:48:19,090
+A-N-O-V.
+
+2859
+01:48:19,110 --> 01:48:19,750
+L-Y-A-P-A-N-O-V.
+
+2860
+01:48:20,730 --> 01:48:22,050
+Is it the same as saying,
+
+2861
+01:48:22,090 --> 01:48:22,470
+for example...
+
+2862
+01:48:22,470 --> 01:48:24,270
+That tells you how far...
+
+2863
+01:48:24,270 --> 01:48:25,110
+The Yapanov coefficient
+
+2864
+01:48:25,110 --> 01:48:27,950
+is the exponential growth
+
+2865
+01:48:27,950 --> 01:48:28,850
+of the separation
+
+2866
+01:48:28,850 --> 01:48:29,990
+between trajectories.
+
+2867
+01:48:30,810 --> 01:48:31,910
+Is it the same as saying,
+
+2868
+01:48:31,990 --> 01:48:32,530
+for example,
+
+2869
+01:48:32,530 --> 01:48:33,150
+with the delt pendulum,
+
+2870
+01:48:33,230 --> 01:48:33,830
+that it doesn't have
+
+2871
+01:48:33,830 --> 01:48:34,510
+a closed solution?
+
+2872
+01:48:34,950 --> 01:48:36,070
+That you can't...
+
+2873
+01:48:36,070 --> 01:48:36,270
+Right,
+
+2874
+01:48:36,270 --> 01:48:36,950
+the equation is
+
+2875
+01:48:36,950 --> 01:48:39,730
+the position and speed...
+
+2876
+01:48:39,730 --> 01:48:40,090
+Oh,
+
+2877
+01:48:40,090 --> 01:48:40,090
+sorry,
+
+2878
+01:48:40,090 --> 01:48:40,790
+to you.
+
+2879
+01:48:41,110 --> 01:48:41,670
+Oh,
+
+2880
+01:48:41,670 --> 01:48:42,850
+Yapanov.
+
+2881
+01:48:44,130 --> 01:48:44,690
+Yapanov.
+
+2882
+01:48:44,850 --> 01:48:44,870
+Yapanov.
+
+2883
+01:48:44,870 --> 01:48:45,270
+Yapanov,
+
+2884
+01:48:45,270 --> 01:48:45,490
+yeah.
+
+2885
+01:48:51,330 --> 01:48:52,650
+Chaotic systems certainly
+
+2886
+01:48:52,650 --> 01:48:54,450
+don't have closed solutions
+
+2887
+01:48:54,450 --> 01:48:55,170
+as a rule.
+
+2888
+01:48:56,930 --> 01:48:58,570
+The thing with the delt
+
+2889
+01:48:58,570 --> 01:48:59,650
+pendulum is,
+
+2890
+01:48:59,950 --> 01:49:01,490
+at some point,
+
+2891
+01:49:01,590 --> 01:49:03,510
+the second pendulum starts,
+
+2892
+01:49:03,670 --> 01:49:05,210
+will be on a path
+
+2893
+01:49:05,210 --> 01:49:06,050
+going to the right,
+
+2894
+01:49:06,070 --> 01:49:06,590
+straight up,
+
+2895
+01:49:06,590 --> 01:49:08,690
+ending up here.
+
+2896
+01:49:08,970 --> 01:49:09,790
+And then,
+
+2897
+01:49:09,790 --> 01:49:11,490
+depending on
+
+2898
+01:49:11,490 --> 01:49:13,190
+exactly where it is,
+
+2899
+01:49:13,230 --> 01:49:14,630
+it'll go here or here.
+
+2900
+01:49:14,910 --> 01:49:15,810
+And now we run
+
+2901
+01:49:15,810 --> 01:49:17,730
+completely different
+
+2902
+01:49:17,730 --> 01:49:18,710
+trajectories.
+
+2903
+01:49:20,630 --> 01:49:21,470
+It's unstable.
+
+2904
+01:49:21,870 --> 01:49:22,310
+Yes.
+
+2905
+01:49:22,370 --> 01:49:23,610
+The orbits are unstable.
+
+2906
+01:49:27,250 --> 01:49:27,810
+Well,
+
+2907
+01:49:27,810 --> 01:49:28,670
+the simplest
+
+2908
+01:49:28,670 --> 01:49:29,390
+kind of instability
+
+2909
+01:49:30,270 --> 01:49:31,770
+is just the top of a hill,
+
+2910
+01:49:31,870 --> 01:49:33,410
+as you were saying.
+
+2911
+01:49:34,930 --> 01:49:35,490
+So,
+
+2912
+01:49:35,490 --> 01:49:36,050
+what's the difference
+
+2913
+01:49:36,930 --> 01:49:37,390
+between the two?
+
+2914
+01:49:37,390 --> 01:49:38,130
+If you go over here,
+
+2915
+01:49:38,230 --> 01:49:39,450
+you go this way.
+
+2916
+01:49:39,530 --> 01:49:40,370
+If you go over here,
+
+2917
+01:49:40,450 --> 01:49:41,130
+you go that way.
+
+2918
+01:49:42,030 --> 01:49:42,650
+All right.
+
+2919
+01:49:42,850 --> 01:49:44,330
+But that's just one point
+
+2920
+01:49:44,330 --> 01:49:44,970
+of instability
+
+2921
+01:49:45,750 --> 01:49:47,270
+at the very top of the hill.
+
+2922
+01:49:48,630 --> 01:49:50,110
+If you start anywhere else,
+
+2923
+01:49:52,310 --> 01:49:52,770
+nearby,
+
+2924
+01:49:52,930 --> 01:49:54,630
+let's say with zero velocity,
+
+2925
+01:49:55,170 --> 01:49:56,470
+the phase trajectories
+
+2926
+01:49:56,470 --> 01:49:57,730
+don't separate that much
+
+2927
+01:49:57,730 --> 01:49:58,470
+and that quickly.
+
+2928
+01:49:59,050 --> 01:50:00,390
+At the top of the hill here
+
+2929
+01:50:00,390 --> 01:50:01,390
+is a point of instability.
+
+2930
+01:50:03,250 --> 01:50:04,730
+In these chaotic systems,
+
+2931
+01:50:04,870 --> 01:50:06,050
+basically every point
+
+2932
+01:50:06,070 --> 01:50:07,050
+is a point of instability.
+
+2933
+01:50:07,570 --> 01:50:09,170
+Every point in the phase space
+
+2934
+01:50:09,170 --> 01:50:11,290
+is unstable like that.
+
+2935
+01:50:11,750 --> 01:50:12,350
+You...
+
+2936
+01:50:12,990 --> 01:50:13,590
+Yeah.
+
+2937
+01:50:15,390 --> 01:50:16,150
+All right.
+
+2938
+01:50:17,470 --> 01:50:18,070
+Okay.
+
+2939
+01:50:21,590 --> 01:50:22,490
+For more,
+
+2940
+01:50:22,670 --> 01:50:23,590
+please visit us
+
+2941
+01:50:23,590 --> 01:50:24,930
+at stanford.edu.
+
