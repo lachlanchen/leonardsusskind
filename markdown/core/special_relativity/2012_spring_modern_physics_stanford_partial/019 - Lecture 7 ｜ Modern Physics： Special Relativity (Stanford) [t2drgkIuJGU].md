@@ -1,0 +1,2897 @@
+# Transcript
+
+Source: core/special_relativity/2012_spring_modern_physics_stanford_partial/019 - Lecture 7 ｜ Modern Physics： Special Relativity (Stanford) [t2drgkIuJGU].mp4
+
+- [00:00:06,680 - 00:00:09,740] This program is brought to you by Stanford University.
+- [00:00:10,200 - 00:00:12,740] Please visit us at stanford.edu.
+- [00:00:15,700 - 00:00:16,500] Today,
+- [00:00:16,500 - 00:00:19,220] we're going to have our first
+- [00:00:19,220 - 00:00:21,940] encounter with what is called gauge theory.
+- [00:00:24,100 - 00:00:26,660] All of modern physics is based,
+- [00:00:26,660 - 00:00:29,240] all of modern particle physics in particular,
+- [00:00:29,240 - 00:00:31,080] and modern general relativity,
+- [00:00:31,080 - 00:00:32,860] gravity physics,
+- [00:00:32,860 - 00:00:36,060] all fundamental views of physics,
+- [00:00:36,220 - 00:00:37,020] and a great deal,
+- [00:00:37,020 - 00:00:37,700] I might add,
+- [00:00:37,700 - 00:00:38,900] in condensed matter physics.
+- [00:00:39,000 - 00:00:40,230] Not that I don't think
+- [00:00:40,230 - 00:00:41,460] that condensed matter physics is fundamental.
+- [00:00:41,560 - 00:00:42,900] I should not have made that distinction.
+- [00:00:43,380 - 00:00:45,320] But condensed matter physics,
+- [00:00:45,320 - 00:00:48,160] particle physics,
+- [00:00:48,160 - 00:00:49,780] general relativity,
+- [00:00:50,879 - 00:00:52,679] one of the most basic principles
+- [00:00:52,679 - 00:00:54,480] is the principle of gauge invariance.
+- [00:00:54,620 - 00:00:56,260] I'm sure you've all heard of it.
+- [00:00:57,080 - 00:00:58,940] You probably wonder what it is.
+- [00:00:59,240 - 00:01:00,760] Some of you may know what it is.
+- [00:01:02,020 - 00:01:09,300] We're going to begin with our study of gauge symmetry,
+- [00:01:09,300 - 00:01:11,280] or gauge invariance,
+- [00:01:11,320 - 00:01:12,880] or gauge principle,
+- [00:01:12,880 - 00:01:15,720] by studying a simple example.
+- [00:01:17,919 - 00:01:18,600] Now,
+- [00:01:18,600 - 00:01:20,040] in 1905,
+- [00:01:20,040 - 00:01:28,340] Einstein pointed to the importance of very carefully
+- [00:01:29,640 - 00:01:31,870] defining carefully and setting up
+- [00:01:31,870 - 00:01:34,100] the idea of coordinate systems,
+- [00:01:35,340 - 00:01:40,300] that there may be some hidden assumptions that one makes
+- [00:01:40,980 - 00:01:42,900] when one speaks of things like,
+- [00:01:42,900 - 00:01:43,140] well,
+- [00:01:43,140 - 00:01:44,300] simultaneity is,
+- [00:01:44,300 - 00:01:44,600] of course,
+- [00:01:44,600 - 00:01:45,240] one of them,
+- [00:01:45,860 - 00:01:46,920] but other such things,
+- [00:01:46,920 - 00:01:48,500] the length of objects and so forth,
+- [00:01:48,560 - 00:01:51,610] and that you really do have to be very
+- [00:01:51,610 - 00:01:54,660] careful to operationally and carefully define what you mean
+- [00:01:56,420 - 00:01:58,500] by various kinds of concepts.
+- [00:01:59,240 - 00:02:00,740] Such as simultaneity,
+- [00:02:00,740 - 00:02:01,360] for example.
+- [00:02:03,500 - 00:02:06,120] Everybody thinks that they know what simultaneity means,
+- [00:02:06,860 - 00:02:12,820] but comparing times at different places is not so obvious.
+- [00:02:12,840 - 00:02:13,960] How you compare,
+- [00:02:13,960 - 00:02:16,820] how you say when two times are equal,
+- [00:02:16,900 - 00:02:19,260] when they correspond to different places,
+- [00:02:19,420 - 00:02:21,070] especially since it takes light time
+- [00:02:21,070 - 00:02:22,720] to go from one place to another.
+- [00:02:23,140 - 00:02:24,380] So he was very careful,
+- [00:02:24,380 - 00:02:26,900] and in being careful,
+- [00:02:26,900 - 00:02:28,740] he invented the special theory of relativity,
+- [00:02:29,240 - 00:02:30,580] but that,
+- [00:02:30,580 - 00:02:32,400] how shall I say,
+- [00:02:32,400 - 00:02:39,540] that idea of being careful about defining relative things
+- [00:02:40,120 - 00:02:42,440] at different places of space,
+- [00:02:42,440 - 00:02:47,120] and the ambiguities that could inherently be there,
+- [00:02:47,650 - 00:02:49,465] because you're trying to
+- [00:02:49,465 - 00:02:51,280] compare things at different locations,
+- [00:02:51,700 - 00:02:59,080] that theme has sort of permeated physics since Einstein,
+- [00:02:59,240 - 00:02:59,760] and that's what we're trying to do with Einstein's time.
+- [00:03:01,180 - 00:03:04,100] The general theory of relativity makes it even worse,
+- [00:03:04,320 - 00:03:08,460] that not only can't you compare detailed simultaneity,
+- [00:03:08,500 - 00:03:10,320] but you can't even compare,
+- [00:03:10,320 - 00:03:11,060] for example,
+- [00:03:11,060 - 00:03:12,280] in an obvious way,
+- [00:03:12,440 - 00:03:14,160] what you might mean by,
+- [00:03:14,740 - 00:03:17,000] my finger is pointing that way,
+- [00:03:17,000 - 00:03:18,160] over here,
+- [00:03:18,380 - 00:03:20,560] you point your finger in some direction,
+- [00:03:20,660 - 00:03:22,000] I point your finger in some direction,
+- [00:03:22,000 - 00:03:22,320] good.
+- [00:03:22,460 - 00:03:23,710] Are we pointing our fingers
+- [00:03:23,710 - 00:03:24,960] in the same direction or not?
+- [00:03:25,280 - 00:03:26,080] How do we tell?
+- [00:03:26,280 - 00:03:26,680] Well,
+- [00:03:26,680 - 00:03:27,180] we're looking,
+- [00:03:27,180 - 00:03:29,100] and in looking we transfer photons,
+- [00:03:29,240 - 00:03:30,100] back and forth,
+- [00:03:30,100 - 00:03:30,700] and so forth,
+- [00:03:30,920 - 00:03:32,880] and so we make comparisons
+- [00:03:32,880 - 00:03:34,840] by sending photons back and forth,
+- [00:03:35,020 - 00:03:36,760] but how do we decide without,
+- [00:03:36,760 - 00:03:37,760] you know,
+- [00:03:37,760 - 00:03:40,440] without an experiment to send something back and forth,
+- [00:03:40,540 - 00:03:43,330] how do we decide whether this and this
+- [00:03:43,330 - 00:03:46,120] are really pointing in the same direction or not?
+- [00:03:47,200 - 00:03:47,660] Well,
+- [00:03:47,660 - 00:03:49,110] one way is to try to
+- [00:03:49,110 - 00:03:50,560] carefully bring this over to here,
+- [00:03:50,640 - 00:03:51,960] and see if they're pointing in the
+- [00:03:51,960 - 00:03:53,280] same direction when we line them up,
+- [00:03:53,380 - 00:03:54,920] but how do I know that in
+- [00:03:54,920 - 00:03:56,460] the process of going from here to here,
+- [00:03:56,640 - 00:03:59,220] I didn't rotate my finger?
+- [00:03:59,240 - 00:04:00,140] And,
+- [00:04:00,140 - 00:04:02,060] of course,
+- [00:04:02,060 - 00:04:03,160] in the back of our imagination,
+- [00:04:03,580 - 00:04:06,070] we imagine that there is
+- [00:04:06,070 - 00:04:08,560] located at each point of space
+- [00:04:08,560 - 00:04:12,400] an idealized coordinate reference frame
+- [00:04:12,400 - 00:04:14,709] that are oriented parallel to each other
+- [00:04:14,709 - 00:04:17,019] when we move from one place to another,
+- [00:04:17,260 - 00:04:18,620] but maybe that's a,
+- [00:04:18,620 - 00:04:26,320] maybe that's a idea that is a little too naive.
+- [00:04:26,480 - 00:04:29,220] Maybe we have to be more careful in comparing things.
+- [00:04:29,240 - 00:04:30,060] Now,
+- [00:04:30,060 - 00:04:31,740] we compare all kinds of things,
+- [00:04:32,540 - 00:04:35,100] but the specific thing I want to talk about
+- [00:04:35,100 - 00:04:40,100] is comparing the phase of complex wave fields.
+- [00:04:40,800 - 00:04:46,160] A very important example of comparisons at different points
+- [00:04:46,160 - 00:04:48,920] has to do with complex wave fields.
+- [00:04:49,100 - 00:04:49,260] Now,
+- [00:04:49,260 - 00:04:50,040] remember,
+- [00:04:50,040 - 00:04:51,340] complex wave,
+- [00:04:51,340 - 00:04:53,220] complex fields,
+- [00:04:53,500 - 00:04:54,800] we've discussed them,
+- [00:04:54,960 - 00:04:57,720] I called a field phi,
+- [00:04:59,700 - 00:05:01,440] when it happened to be
+- [00:05:01,440 - 00:05:03,180] made out of two real components,
+- [00:05:04,320 - 00:05:06,660] phi one plus i phi two,
+- [00:05:08,900 - 00:05:09,380] and,
+- [00:05:09,380 - 00:05:09,820] of course,
+- [00:05:09,820 - 00:05:13,780] I can either think of them as complex fields
+- [00:05:13,780 - 00:05:15,940] and their complex conjugate,
+- [00:05:19,340 - 00:05:21,040] or I can just think of,
+- [00:05:22,359 - 00:05:22,840] incidentally,
+- [00:05:22,840 - 00:05:24,820] this phi and this phi are the same thing.
+- [00:05:24,980 - 00:05:26,600] I sometimes draw it this way
+- [00:05:26,600 - 00:05:28,220] and sometimes draw it this way.
+- [00:05:30,260 - 00:05:32,650] That's one way of thinking of
+- [00:05:32,650 - 00:05:35,040] a complex field as a complex field.
+- [00:05:35,320 - 00:05:37,070] The other way of thinking about
+- [00:05:37,070 - 00:05:38,820] it is a pair of real fields,
+- [00:05:38,980 - 00:05:40,510] in which case we would
+- [00:05:40,510 - 00:05:42,040] say at every point in space
+- [00:05:42,040 - 00:05:44,640] we have a set of axes,
+- [00:05:45,219 - 00:05:47,360] one of which we call phi one,
+- [00:05:48,000 - 00:05:49,760] and one of which we call phi two,
+- [00:05:49,980 - 00:05:52,000] and at every point in space,
+- [00:05:52,300 - 00:05:54,360] the field takes on some value.
+- [00:05:55,100 - 00:05:56,760] At this point over here,
+- [00:05:56,880 - 00:05:58,520] the field might be oriented,
+- [00:05:59,240 - 00:06:02,520] our complex scalar field might be located at this point.
+- [00:06:02,980 - 00:06:04,220] At that point over here,
+- [00:06:04,300 - 00:06:05,700] it might be located at this point.
+- [00:06:06,719 - 00:06:09,160] But in saying something like that,
+- [00:06:09,260 - 00:06:10,600] we're implicitly assuming
+- [00:06:11,180 - 00:06:12,800] that there's some kind of way
+- [00:06:12,800 - 00:06:16,680] of relating directions in this space
+- [00:06:17,180 - 00:06:18,900] at different points of space.
+- [00:06:20,660 - 00:06:21,220] Let's,
+- [00:06:21,220 - 00:06:22,450] just to get this idea
+- [00:06:22,450 - 00:06:23,680] and to pin this idea down,
+- [00:06:24,240 - 00:06:26,180] let's go back to the jump rope analogy.
+- [00:06:26,180 - 00:06:29,120] The jump rope analogy for the complex field
+- [00:06:29,120 - 00:06:30,600] is just that we have a string,
+- [00:06:30,600 - 00:06:31,260] a long string,
+- [00:06:31,420 - 00:06:31,960] could be a rope,
+- [00:06:32,920 - 00:06:35,380] and that rope is at every point
+- [00:06:35,820 - 00:06:38,900] free to move in two directions,
+- [00:06:39,580 - 00:06:41,820] up and down and right and left,
+- [00:06:41,920 - 00:06:43,220] from my perspective over here.
+- [00:06:43,300 - 00:06:44,280] I should have brought in a rope.
+- [00:06:44,420 - 00:06:44,620] I always,
+- [00:06:44,620 - 00:06:44,940] ah.
+- [00:06:50,280 - 00:06:51,460] Who wants to play jump rope?
+- [00:06:52,720 - 00:06:53,120] Yeah,
+- [00:06:53,120 - 00:06:53,400] okay,
+- [00:06:53,400 - 00:06:53,580] good.
+- [00:06:54,160 - 00:06:54,760] I don't know,
+- [00:06:54,760 - 00:06:57,020] this is not going to go very far.
+- [00:06:57,120 - 00:06:58,480] All we're going to do is swing the rope around,
+- [00:06:58,660 - 00:06:59,220] but okay,
+- [00:06:59,220 - 00:07:00,160] let's do it anyway.
+- [00:07:01,200 - 00:07:01,640] Yeah,
+- [00:07:01,640 - 00:07:02,900] you take that in.
+- [00:07:02,960 - 00:07:03,080] Good,
+- [00:07:03,080 - 00:07:03,360] okay.
+- [00:07:03,680 - 00:07:05,540] So this is a rope,
+- [00:07:05,580 - 00:07:07,260] which when we're stretched out is like this,
+- [00:07:07,400 - 00:07:09,200] but it's actually free to move
+- [00:07:09,200 - 00:07:10,620] both horizontally and vertically,
+- [00:07:11,120 - 00:07:13,980] and then it has the capacity not just to vibrate,
+- [00:07:14,120 - 00:07:16,260] but to vibrate in a
+- [00:07:16,260 - 00:07:18,400] way that has some angular momentum.
+- [00:07:19,080 - 00:07:19,520] Now,
+- [00:07:19,520 - 00:07:23,040] in order to explain what,
+- [00:07:23,260 - 00:07:24,000] not to explain,
+- [00:07:24,100 - 00:07:24,740] but in order to do this,
+- [00:07:24,760 - 00:07:27,180] to describe the configuration of this string,
+- [00:07:27,480 - 00:07:29,590] I have to tell you not
+- [00:07:29,590 - 00:07:31,700] just how far from the origin,
+- [00:07:31,900 - 00:07:33,700] the origin now means the straight string
+- [00:07:33,700 - 00:07:34,980] when it's as straight as possible,
+- [00:07:35,460 - 00:07:35,840] how,
+- [00:07:35,840 - 00:07:37,800] not only how far it's been displaced,
+- [00:07:37,940 - 00:07:39,600] but at what angle it's been displaced.
+- [00:07:40,840 - 00:07:43,180] So I have to describe both,
+- [00:07:44,260 - 00:07:47,780] either a complex number at every point,
+- [00:07:48,000 - 00:07:50,280] complex number could be x plus i y
+- [00:07:50,280 - 00:07:51,620] for the position of the string,
+- [00:07:52,140 - 00:07:52,620] or,
+- [00:07:52,620 - 00:07:53,300] thank you,
+- [00:07:53,300 - 00:07:57,720] or I could describe it either a pair of coordinates,
+- [00:07:57,820 - 00:07:58,760] a complex number,
+- [00:07:59,080 - 00:08:01,560] or an angle and a radius,
+- [00:08:01,860 - 00:08:04,120] any number of ways of describing it.
+- [00:08:04,520 - 00:08:07,640] But it's implicit in compa-
+- [00:08:07,640 - 00:08:09,540] implicit in describing things
+- [00:08:10,290 - 00:08:12,860] that the coordinate axes x and y
+- [00:08:12,860 - 00:08:14,560] that I use over here on the string
+- [00:08:14,560 - 00:08:17,960] are parallel to the coordinate axis over here,
+- [00:08:18,020 - 00:08:20,000] or parallel to the coordinate axis over here.
+- [00:08:20,600 - 00:08:22,860] So we have made an assumption
+- [00:08:22,860 - 00:08:25,680] that it is possible to compare angles
+- [00:08:25,680 - 00:08:28,060] at different points and say whether they're the same
+- [00:08:28,060 - 00:08:28,880] or not the same.
+- [00:08:30,180 - 00:08:32,419] It is not completely obvious
+- [00:08:32,419 - 00:08:33,880] that that's a good assumption.
+- [00:08:35,000 - 00:08:35,940] In fact,
+- [00:08:35,940 - 00:08:37,559] really honestly,
+- [00:08:37,940 - 00:08:40,720] when one takes general relativity into account
+- [00:08:40,720 - 00:08:42,760] in the motion of strings and so forth,
+- [00:08:42,980 - 00:08:44,760] it is not so obvious,
+- [00:08:44,780 - 00:08:45,900] and in fact it's not even true,
+- [00:08:46,040 - 00:08:48,400] that there's a unique way of comparing angles
+- [00:08:48,400 - 00:08:49,080] at different places.
+- [00:08:49,280 - 00:08:52,400] But we're not talking about angles in real space now.
+- [00:08:52,400 - 00:08:55,740] We're talking about angles in a fictitious field space,
+- [00:08:56,760 - 00:08:58,840] which is mathematically similar
+- [00:08:58,840 - 00:09:01,960] to the rotation of the jump rope,
+- [00:09:02,180 - 00:09:04,740] but we're talking about angles
+- [00:09:05,400 - 00:09:08,540] in a mathematical field space.
+- [00:09:09,280 - 00:09:12,780] And this situation comes up
+- [00:09:12,780 - 00:09:15,020] when we ask questions like,
+- [00:09:15,300 - 00:09:17,700] is the value of the complex field
+- [00:09:17,700 - 00:09:19,660] at one location the same
+- [00:09:19,660 - 00:09:21,820] as it is in another location or not?
+- [00:09:22,720 - 00:09:24,500] In order to answer that question,
+- [00:09:24,660 - 00:09:27,260] we have to compare angles in this,
+- [00:09:27,340 - 00:09:28,180] among other things,
+- [00:09:28,340 - 00:09:30,560] angles in this space at different points.
+- [00:09:31,420 - 00:09:32,600] Now here's what we know.
+- [00:09:32,660 - 00:09:33,840] For some field theories,
+- [00:09:34,120 - 00:09:35,440] for some field theories,
+- [00:09:36,240 - 00:09:39,260] namely those which have a concept of charge,
+- [00:09:40,340 - 00:09:42,660] that there is an invariance,
+- [00:09:42,680 - 00:09:43,520] a symmetry,
+- [00:09:44,140 - 00:09:45,780] and the symmetry corresponds
+- [00:09:46,400 - 00:09:50,100] to rotating the coordinates
+- [00:09:50,100 - 00:09:51,920] phi 1 and phi 2.
+- [00:09:52,580 - 00:09:54,260] Rotating them to some new direction,
+- [00:09:54,420 - 00:09:55,520] or equivalently,
+- [00:09:55,560 - 00:09:56,640] what's equivalently,
+- [00:09:56,760 - 00:10:01,220] is rotating the position of the field
+- [00:10:01,220 - 00:10:02,380] in,
+- [00:10:02,380 - 00:10:02,980] not in space,
+- [00:10:03,180 - 00:10:04,060] but in phi 1,
+- [00:10:04,060 - 00:10:04,820] phi 2 space.
+- [00:10:05,020 - 00:10:06,300] We either rotate the axes,
+- [00:10:06,460 - 00:10:09,780] or actually physically change the value of the field
+- [00:10:09,780 - 00:10:10,820] by rotating it.
+- [00:10:10,900 - 00:10:11,960] In either case,
+- [00:10:12,060 - 00:10:14,640] the coordinates of the field will change.
+- [00:10:16,000 - 00:10:16,640] So,
+- [00:10:16,640 - 00:10:17,940] we could imagine
+- [00:10:17,940 - 00:10:21,260] a symmetry transformation of the fields
+- [00:10:23,560 - 00:10:25,140] which can either,
+- [00:10:25,140 - 00:10:25,740] as I said,
+- [00:10:25,740 - 00:10:28,140] be described by physically changing the configuration,
+- [00:10:28,540 - 00:10:30,580] or just changing the coordinates
+- [00:10:30,580 - 00:10:32,280] that we use to describe the field.
+- [00:10:33,600 - 00:10:35,340] And we know how to describe that.
+- [00:10:35,540 - 00:10:37,480] We can describe it trigonometrically,
+- [00:10:37,580 - 00:10:40,060] that phi 2 prime is equal to
+- [00:10:40,880 - 00:10:42,800] cosine of an angle and so forth.
+- [00:10:44,640 - 00:10:46,600] But we can also describe it
+- [00:10:46,600 - 00:10:48,360] in complex notation very,
+- [00:10:48,360 - 00:10:49,380] very neatly.
+- [00:10:49,960 - 00:10:52,380] The transformation that comes out of it,
+- [00:10:52,380 - 00:10:54,180] corresponds to rotation of coordinates,
+- [00:10:55,030 - 00:10:56,100] can just be written
+- [00:10:59,380 - 00:11:00,720] phi prime,
+- [00:11:02,080 - 00:11:05,780] that's the value of the field after,
+- [00:11:05,900 - 00:11:07,760] or the value of the coordinates of the field
+- [00:11:08,090 - 00:11:09,860] after you've rotated the coordinates,
+- [00:11:10,160 - 00:11:16,340] is equal to e to the i theta times phi,
+- [00:11:16,660 - 00:11:19,920] the unrotated notation for the field.
+- [00:11:20,080 - 00:11:22,360] Where theta is just the angle
+- [00:11:22,380 - 00:11:23,540] of rotation here.
+- [00:11:23,640 - 00:11:23,760] Now,
+- [00:11:23,760 - 00:11:24,860] I hope nobody gets confused
+- [00:11:24,860 - 00:11:26,300] between thetas and phis.
+- [00:11:26,880 - 00:11:28,140] Phis are fields,
+- [00:11:28,360 - 00:11:30,860] theta is just an angle of rotation
+- [00:11:31,340 - 00:11:32,340] in this field space
+- [00:11:33,260 - 00:11:36,960] of the coordinates which describe the field.
+- [00:11:37,460 - 00:11:38,020] Now,
+- [00:11:38,020 - 00:11:39,420] this is an operation
+- [00:11:39,420 - 00:11:40,900] that we can do on a field.
+- [00:11:41,140 - 00:11:42,080] It corresponds,
+- [00:11:42,080 - 00:11:44,640] in the case of the jump rope,
+- [00:11:44,880 - 00:11:47,460] to going at every point in the jump rope
+- [00:11:47,460 - 00:11:50,520] and changing the angle by the same amount.
+- [00:11:50,680 - 00:11:51,880] By the same amount.
+- [00:11:51,880 - 00:11:52,840] That's the key phrase.
+- [00:11:53,200 - 00:11:54,520] By the same amount,
+- [00:11:54,680 - 00:11:56,520] theta is just a number,
+- [00:11:56,660 - 00:11:59,540] and it rotates the field in the field space,
+- [00:11:59,860 - 00:12:01,700] sort of rigidly,
+- [00:12:01,700 - 00:12:04,140] rigidly everywhere by the same amount.
+- [00:12:05,280 - 00:12:06,480] That's a symmetry,
+- [00:12:06,640 - 00:12:07,780] for example,
+- [00:12:07,780 - 00:12:08,780] of the Lagrangian
+- [00:12:08,780 - 00:12:10,080] that we studied last time,
+- [00:12:10,260 - 00:12:10,660] which,
+- [00:12:10,660 - 00:12:11,380] what was it?
+- [00:12:11,460 - 00:12:14,000] It was d mu phi star,
+- [00:12:14,740 - 00:12:17,120] d mu phi...
+- [00:12:18,700 - 00:12:19,320] Question?
+- [00:12:19,640 - 00:12:20,160] Yeah,
+- [00:12:20,160 - 00:12:21,860] is phi prime relative to,
+- [00:12:21,880 - 00:12:22,780] is that the...
+- [00:12:22,780 - 00:12:23,740] Phi prime...
+- [00:12:23,740 - 00:12:25,340] Relative to the green line,
+- [00:12:25,480 - 00:12:26,180] which is...
+- [00:12:26,180 - 00:12:26,380] Yeah,
+- [00:12:26,380 - 00:12:26,660] yeah,
+- [00:12:26,660 - 00:12:27,160] that's right.
+- [00:12:27,360 - 00:12:28,940] Phi could be the coordinates
+- [00:12:28,940 - 00:12:30,460] relative to the black line.
+- [00:12:31,000 - 00:12:32,620] Phi prime could be the coordinates
+- [00:12:32,620 - 00:12:33,840] relative to the blue line,
+- [00:12:33,840 - 00:12:34,320] green line.
+- [00:12:34,540 - 00:12:35,060] Hm?
+- [00:12:35,760 - 00:12:37,340] Isn't it even minus phi theta?
+- [00:12:37,760 - 00:12:39,340] Because the angle's getting smaller
+- [00:12:39,880 - 00:12:41,880] when you rotate by positive theta.
+- [00:12:42,160 - 00:12:42,540] Yeah,
+- [00:12:42,540 - 00:12:42,720] well,
+- [00:12:42,720 - 00:12:43,480] it doesn't...
+- [00:12:43,480 - 00:12:44,460] You may be right,
+- [00:12:44,460 - 00:12:45,020] but...
+- [00:12:46,180 - 00:12:48,160] If it's invariant under multiplication
+- [00:12:48,160 - 00:12:50,240] by a phase like this for every angle,
+- [00:12:50,300 - 00:12:51,860] it includes negative angles and positive angles.
+- [00:12:51,880 - 00:12:52,700] So,
+- [00:12:52,700 - 00:12:54,460] uh...
+- [00:12:55,500 - 00:12:56,700] Quite possibly,
+- [00:12:56,700 - 00:12:58,560] for this particular setup over here,
+- [00:12:58,660 - 00:13:01,280] I may have inadvertently put the wrong sign here,
+- [00:13:01,380 - 00:13:02,760] but it doesn't matter for anything.
+- [00:13:04,240 - 00:13:04,840] Uh,
+- [00:13:04,840 - 00:13:05,400] good.
+- [00:13:05,540 - 00:13:08,120] So let's change the orientation
+- [00:13:08,120 - 00:13:10,180] to conform correctly to the formula.
+- [00:13:11,480 - 00:13:15,400] You're probably right that...
+- [00:13:18,439 - 00:13:20,940] That I've rotated the coordinates the other way.
+- [00:13:20,940 - 00:13:22,160] All right,
+- [00:13:22,160 - 00:13:23,140] so phi prime...
+- [00:13:23,140 - 00:13:24,040] And besides which,
+- [00:13:24,040 - 00:13:24,680] I haven't told you
+- [00:13:24,680 - 00:13:26,060] which was phi and which was phi prime.
+- [00:13:27,340 - 00:13:29,880] So there's no way to compare it on...
+- [00:13:30,660 - 00:13:31,360] I guess...
+- [00:13:31,360 - 00:13:32,500] I guess we would call...
+- [00:13:32,500 - 00:13:32,740] Let's see,
+- [00:13:32,740 - 00:13:34,020] we'll call the coordinates...
+- [00:13:35,500 - 00:13:35,940] Here,
+- [00:13:35,940 - 00:13:36,640] phi prime.
+- [00:13:37,180 - 00:13:38,560] Now I think we fixed it.
+- [00:13:39,359 - 00:13:40,240] And phi...
+- [00:13:40,240 - 00:13:41,980] Phi one prime and phi two prime.
+- [00:13:43,060 - 00:13:43,500] Okay.
+- [00:13:43,740 - 00:13:43,980] Uh,
+- [00:13:43,980 - 00:13:45,820] this is either right or wrong,
+- [00:13:45,840 - 00:13:46,540] and I don't really care.
+- [00:13:48,520 - 00:13:48,960] Um...
+- [00:13:48,960 - 00:13:49,760] Good.
+- [00:13:49,760 - 00:13:49,920] Now,
+- [00:13:49,920 - 00:13:52,020] we studied some Lagrangians.
+- [00:13:52,380 - 00:13:53,520] We studied the Lagrangian,
+- [00:13:53,560 - 00:13:56,060] the derivative of phi star
+- [00:13:56,060 - 00:13:57,440] times the derivative of phi.
+- [00:13:57,640 - 00:13:59,320] These are complex conjugates of each other.
+- [00:13:59,520 - 00:14:00,320] We added,
+- [00:14:00,320 - 00:14:01,000] for fun,
+- [00:14:01,000 - 00:14:01,720] another term.
+- [00:14:01,740 - 00:14:05,260] I think it was minus mu squared phi star phi.
+- [00:14:06,760 - 00:14:09,560] And this Lagrangian is invariant
+- [00:14:09,560 - 00:14:10,900] under this operation.
+- [00:14:11,300 - 00:14:13,060] The reason is because
+- [00:14:13,760 - 00:14:16,380] if phi is replaced by phi prime,
+- [00:14:17,380 - 00:14:19,120] then phi star prime,
+- [00:14:19,760 - 00:14:20,540] phi prime star,
+- [00:14:20,720 - 00:14:24,420] is e to the minus i theta phi.
+- [00:14:25,120 - 00:14:26,200] And furthermore,
+- [00:14:26,200 - 00:14:27,700] the same is true of the derivatives.
+- [00:14:28,820 - 00:14:31,180] Supposing I differentiate phi prime,
+- [00:14:31,400 - 00:14:34,940] the derivative of phi prime with respect to x,
+- [00:14:35,140 - 00:14:37,760] let's pick a particular coordinate with respect to x,
+- [00:14:37,960 - 00:14:39,260] is equal to what?
+- [00:14:40,760 - 00:14:42,500] Theta here is just a constant
+- [00:14:42,500 - 00:14:44,180] for my purposes right now.
+- [00:14:44,440 - 00:14:47,080] And so when I differentiate phi prime,
+- [00:14:47,080 - 00:14:48,670] I get nothing from differentiating
+- [00:14:48,670 - 00:14:50,260] the e to the i theta.
+- [00:14:50,480 - 00:14:51,720] That just stays there.
+- [00:14:53,440 - 00:14:56,900] Times derivative of phi with respect to x.
+- [00:14:57,640 - 00:15:00,440] So the derivatives that appear here
+- [00:15:01,360 - 00:15:04,480] also themselves just get rotated
+- [00:15:04,880 - 00:15:06,820] by the same phase angle.
+- [00:15:07,200 - 00:15:10,460] When you multiply them by their complex conjugates,
+- [00:15:11,080 - 00:15:12,920] the e to the i thetas cancel.
+- [00:15:13,520 - 00:15:15,600] e to the i thetas cancel here.
+- [00:15:15,600 - 00:15:18,560] And so this is an example of a Lagrangian
+- [00:15:18,560 - 00:15:20,000] which is invariant
+- [00:15:24,800 - 00:15:26,740] with respect to
+- [00:15:28,620 - 00:15:32,780] phi goes to phi e to the i theta.
+- [00:15:37,420 - 00:15:38,120] Okay,
+- [00:15:38,120 - 00:15:39,160] now you might ask,
+- [00:15:39,320 - 00:15:41,320] what would happen though,
+- [00:15:41,400 - 00:15:45,300] is it invariant with respect to rotation
+- [00:15:45,600 - 00:15:56,820] or is it invariant with respect to rotation?
+- [00:15:57,440 - 00:15:57,440] Well,
+- [00:15:57,440 - 00:15:57,700] if you look at the
+- [00:15:57,700 - 00:16:05,620] you can say that the Lagrangian is invariant under phase,
+- [00:16:06,040 - 00:16:09,600] which means that you don't have an invariant sense
+- [00:16:09,600 - 00:16:12,580] of what angle zero means.
+- [00:16:12,980 - 00:16:14,640] You can rotate the whole picture,
+- [00:16:14,780 - 00:16:15,580] but you can't say that the angle is invariant.
+- [00:16:15,580 - 00:16:21,100] but comparing angle zero at different places is meaningful.
+- [00:16:21,460 - 00:16:24,880] But supposing this Lagrangian turns out
+- [00:16:24,880 - 00:16:28,300] to be invariant under a stronger symmetry,
+- [00:16:28,660 - 00:16:33,550] a symmetry where you rotate the angle
+- [00:16:33,550 - 00:16:38,440] at each point by an arbitrary angle,
+- [00:16:38,520 - 00:16:40,460] which might differ from point to point.
+- [00:16:40,460 - 00:16:42,080] In other words,
+- [00:16:42,080 - 00:16:46,700] let's investigate whether the Lagrangian we've
+- [00:16:46,700 - 00:16:51,320] written down is invariant under a symmetry
+- [00:16:52,020 - 00:16:54,740] where we allow theta to be a function of x.
+- [00:16:57,340 - 00:16:58,980] That means as we move along
+- [00:16:58,980 - 00:17:00,620] from point to point in space,
+- [00:17:00,620 - 00:17:03,060] we rotate the axes differently.
+- [00:17:04,420 - 00:17:07,430] If there is no good sense in
+- [00:17:07,430 - 00:17:10,440] which you can compare angles at different places,
+- [00:17:10,460 - 00:17:13,859] then we would expect this to be just
+- [00:17:13,859 - 00:17:17,260] as good a symmetry as when we rigidly rotate.
+- [00:17:18,160 - 00:17:19,960] So we can think about this as
+- [00:17:19,960 - 00:17:21,760] the difference between a kind of rigid rotation
+- [00:17:21,760 - 00:17:24,800] and a rotation which varies from place to place.
+- [00:17:25,839 - 00:17:26,359] Okay,
+- [00:17:26,359 - 00:17:27,480] also x here.
+- [00:17:29,040 - 00:17:29,560] Well,
+- [00:17:29,560 - 00:17:30,660] let's examine that question.
+- [00:17:31,040 - 00:17:31,920] First of all,
+- [00:17:31,920 - 00:17:32,560] let's look,
+- [00:17:32,560 - 00:17:34,630] let me remember that we're
+- [00:17:34,630 - 00:17:36,700] supposed to integrate this over space,
+- [00:17:37,020 - 00:17:40,260] and the full action would be integral d4x.
+- [00:17:42,300 - 00:17:45,490] Let's look at the various terms in this Lagrangian and see
+- [00:17:45,490 - 00:17:48,680] whether they change or not when we do such an operation.
+- [00:17:49,480 - 00:17:49,900] Well,
+- [00:17:49,900 - 00:17:51,280] what happens to phi star phi?
+- [00:17:51,440 - 00:17:52,300] That's an easy one.
+- [00:17:52,860 - 00:17:53,940] Phi star phi,
+- [00:17:53,940 - 00:17:56,180] phi gets multiplied by e to the i theta,
+- [00:17:56,180 - 00:17:57,880] phi star gets multiplied by
+- [00:17:57,880 - 00:17:59,580] e to the minus i theta.
+- [00:17:59,760 - 00:18:01,740] At each point separately,
+- [00:18:01,740 - 00:18:04,620] those phase angles cancel.
+- [00:18:05,420 - 00:18:09,700] So this term in the Lagrangian is fully invariant,
+- [00:18:09,700 - 00:18:10,440] but it's not invariant.
+- [00:18:10,460 - 00:18:12,200] Under these position-dependent,
+- [00:18:12,200 - 00:18:15,420] let's call them position-dependent phase rotations,
+- [00:18:16,120 - 00:18:17,850] there's another name
+- [00:18:17,850 - 00:18:19,580] for position-dependent phase transformation.
+- [00:18:20,160 - 00:18:22,480] It is gauge transformation.
+- [00:18:22,760 - 00:18:25,280] That is what a gauge transformation is.
+- [00:18:25,820 - 00:18:28,120] Or at least this is a
+- [00:18:28,120 - 00:18:30,420] special case of the more general concept.
+- [00:18:33,240 - 00:18:34,360] More general concept,
+- [00:18:34,360 - 00:18:36,340] any kind of symmetry,
+- [00:18:36,340 - 00:18:39,960] you can imagine doing it differently from point to point.
+- [00:18:40,940 - 00:18:42,540] So this term,
+- [00:18:42,540 - 00:18:43,540] we could check it off,
+- [00:18:43,540 - 00:18:45,840] this term here is invariant.
+- [00:18:45,960 - 00:18:50,140] Red check means that that term is invariant.
+- [00:18:50,460 - 00:18:54,660] What about these terms which involve derivatives of phi?
+- [00:18:55,740 - 00:18:57,900] If this is going to show up anywhere,
+- [00:18:57,900 - 00:19:01,010] it's going to show up in questions having to
+- [00:19:01,010 - 00:19:04,120] do with how phi varies from place to place,
+- [00:19:04,360 - 00:19:06,450] and whether when we compare phi
+- [00:19:06,450 - 00:19:08,540] at one point with a neighboring point,
+- [00:19:09,320 - 00:19:11,100] whether this Lagrangian is invariant.
+- [00:19:11,180 - 00:19:11,680] So let's check.
+- [00:19:13,139 - 00:19:13,940] Let's calculate.
+- [00:19:15,719 - 00:19:16,120] Alright,
+- [00:19:16,120 - 00:19:16,520] let's...
+- [00:19:25,260 - 00:19:25,680] Let's see,
+- [00:19:25,680 - 00:19:26,220] I think,
+- [00:19:26,220 - 00:19:27,890] do I want to switch the
+- [00:19:27,890 - 00:19:29,560] definition of phi and phi prime?
+- [00:19:29,980 - 00:19:30,680] I may.
+- [00:19:31,920 - 00:19:33,580] Just to conform with my notes.
+- [00:19:33,840 - 00:19:34,120] No,
+- [00:19:34,120 - 00:19:35,460] I think I have it the way I want it.
+- [00:19:36,899 - 00:19:37,300] Okay,
+- [00:19:37,300 - 00:19:37,700] so...
+- [00:19:37,700 - 00:19:39,880] This is the primed field.
+- [00:19:40,180 - 00:19:41,560] Here's the unprimed field.
+- [00:19:42,900 - 00:19:44,020] Let's calculate...
+- [00:19:44,020 - 00:19:45,060] And here's the...
+- [00:19:45,060 - 00:19:46,160] And...
+- [00:19:46,160 - 00:19:47,020] Yeah,
+- [00:19:47,020 - 00:19:47,480] you know what?
+- [00:19:47,780 - 00:19:48,340] Let's...
+- [00:19:49,800 - 00:19:50,360] Right.
+- [00:19:51,980 - 00:19:55,740] Let's write the Lagrangian in terms of the primed variables.
+- [00:20:01,620 - 00:20:02,180] Primed,
+- [00:20:02,180 - 00:20:02,740] unprimed,
+- [00:20:02,740 - 00:20:03,240] what's the difference?
+- [00:20:03,440 - 00:20:04,300] We can just change,
+- [00:20:04,300 - 00:20:05,280] it's just changing names.
+- [00:20:05,560 - 00:20:06,620] It's just changing names of
+- [00:20:06,620 - 00:20:07,680] what we call the field variables.
+- [00:20:08,520 - 00:20:12,200] Here's the Lagrangian for the primed field.
+- [00:20:13,240 - 00:20:14,460] Let's work it out now,
+- [00:20:14,460 - 00:20:16,200] since we know the relationship between
+- [00:20:16,200 - 00:20:17,940] the primed and the unprimed field,
+- [00:20:18,280 - 00:20:20,460] let's work out whether this
+- [00:20:20,460 - 00:20:22,640] Lagrangian has exactly the same form
+- [00:20:23,260 - 00:20:26,420] if we substitute for phi prime,
+- [00:20:26,420 - 00:20:27,640] phi.
+- [00:20:28,420 - 00:20:28,960] Alright,
+- [00:20:28,960 - 00:20:31,330] the first thing we have to do is figure
+- [00:20:31,330 - 00:20:33,700] out what happens to the derivative of phi prime.
+- [00:20:37,700 - 00:20:38,640] With respect to x mu.
+- [00:20:40,220 - 00:20:41,900] That appears in the Lagrangian,
+- [00:20:41,900 - 00:20:44,740] but I want to rewrite it in terms of phi.
+- [00:20:45,660 - 00:20:46,140] Alright,
+- [00:20:46,140 - 00:20:46,560] but now,
+- [00:20:46,560 - 00:20:48,000] when I differentiate,
+- [00:20:49,220 - 00:20:50,340] when I differentiate,
+- [00:20:50,340 - 00:20:51,680] I get two terms.
+- [00:20:51,880 - 00:20:53,860] I get one from differentiating this factor,
+- [00:20:53,860 - 00:20:56,180] and one from differentiating this factor.
+- [00:20:57,040 - 00:20:58,140] The first term,
+- [00:20:58,140 - 00:20:58,500] well,
+- [00:20:58,500 - 00:21:00,400] let's take the first term to be the simpler one,
+- [00:21:00,480 - 00:21:01,740] when you differentiate phi,
+- [00:21:02,340 - 00:21:05,360] that just gives you d phi by d x mu.
+- [00:21:05,620 - 00:21:05,860] Okay.
+- [00:21:07,700 - 00:21:10,200] times e to the i theta of x.
+- [00:21:10,840 - 00:21:12,320] This doesn't worry me,
+- [00:21:12,320 - 00:21:14,150] because I expect that when this
+- [00:21:14,150 - 00:21:15,980] is multiplied by the complex conjugate,
+- [00:21:16,160 - 00:21:16,880] it's going to go away.
+- [00:21:17,820 - 00:21:18,340] Alright,
+- [00:21:18,340 - 00:21:18,760] but then,
+- [00:21:18,760 - 00:21:20,180] let's take the other term.
+- [00:21:20,400 - 00:21:21,680] The other term,
+- [00:21:21,680 - 00:21:25,240] you differentiate e to the i theta of x,
+- [00:21:25,240 - 00:21:26,640] and multiply by phi.
+- [00:21:27,640 - 00:21:28,160] Alright,
+- [00:21:28,160 - 00:21:29,490] so what's the derivative of e
+- [00:21:29,490 - 00:21:30,820] to the i theta of x?
+- [00:21:31,980 - 00:21:33,460] That is i
+- [00:21:34,900 - 00:21:37,680] times the derivative of theta with respect to x,
+- [00:21:39,720 - 00:21:41,660] times e to the i theta.
+- [00:21:43,820 - 00:21:46,940] I've used the derivative of an exponential,
+- [00:21:47,260 - 00:21:48,910] is just equal to the
+- [00:21:48,910 - 00:21:50,560] derivative of what's in the exponential,
+- [00:21:50,920 - 00:21:52,520] times the exponential itself.
+- [00:21:56,480 - 00:21:57,080] So,
+- [00:21:57,080 - 00:21:59,440] both the terms have an e to the i theta.
+- [00:21:59,920 - 00:22:01,020] That's a good thing,
+- [00:22:01,020 - 00:22:02,750] because that'll probably cancel when
+- [00:22:02,750 - 00:22:04,480] we multiply by the complex conjugate.
+- [00:22:04,960 - 00:22:05,560] But,
+- [00:22:05,560 - 00:22:07,680] we now have this greater derivative of x,
+- [00:22:07,680 - 00:22:10,420] and this is the derivative of the phase angle.
+- [00:22:10,620 - 00:22:14,780] The derivative of the transformation phase angle.
+- [00:22:15,420 - 00:22:18,320] And that's not so obvious that that will cancel out.
+- [00:22:18,460 - 00:22:18,780] In fact,
+- [00:22:18,780 - 00:22:19,280] it won't.
+- [00:22:19,680 - 00:22:20,280] So,
+- [00:22:20,280 - 00:22:22,530] let's rewrite now the Lagrangian in
+- [00:22:22,530 - 00:22:24,780] terms of phi instead of phi prime.
+- [00:22:25,160 - 00:22:26,840] It's just a change of variables.
+- [00:22:27,060 - 00:22:28,150] It's just a change of
+- [00:22:28,150 - 00:22:29,240] what we meant by the field.
+- [00:22:29,580 - 00:22:30,800] And let's see what we get.
+- [00:22:31,480 - 00:22:36,100] Now we get integral d mu phi star,
+- [00:22:38,320 - 00:22:39,000] let's see.
+- [00:22:41,620 - 00:22:43,260] I should write down what happens
+- [00:22:43,260 - 00:22:44,900] to the derivative of phi star.
+- [00:22:45,720 - 00:22:47,660] The derivative of phi star,
+- [00:22:47,820 - 00:22:49,080] phi prime star,
+- [00:22:49,080 - 00:22:50,580] with respect to x mu,
+- [00:22:50,680 - 00:22:51,420] what happens to it?
+- [00:22:52,080 - 00:22:53,820] You just complex conjugate.
+- [00:22:54,380 - 00:22:56,120] That's equal to the derivative of
+- [00:22:56,120 - 00:22:57,860] phi star with respect to x,
+- [00:22:59,580 - 00:23:01,340] e to the minus i theta.
+- [00:23:03,080 - 00:23:05,120] That's the complex conjugate of this factor.
+- [00:23:05,120 - 00:23:08,130] And then the complex conjugate here is
+- [00:23:08,130 - 00:23:11,140] minus i d theta by d x mu
+- [00:23:12,620 - 00:23:15,040] times e to the minus i
+- [00:23:15,040 - 00:23:17,460] theta of x times phi star.
+- [00:23:19,500 - 00:23:20,060] Alright.
+- [00:23:20,160 - 00:23:22,120] The minus came because the derivative,
+- [00:23:22,280 - 00:23:24,900] because the complex conjugate of i is minus i.
+- [00:23:25,120 - 00:23:25,280] Alright.
+- [00:23:25,280 - 00:23:26,360] Is everybody happy with this?
+- [00:23:28,100 - 00:23:28,880] If not,
+- [00:23:28,880 - 00:23:31,120] stop me now and I'll explain what's on the blackboard.
+- [00:23:31,560 - 00:23:33,600] You put a star in the second term.
+- [00:23:34,139 - 00:23:35,900] Star on which second term?
+- [00:23:37,000 - 00:23:37,440] Here?
+- [00:23:37,920 - 00:23:38,360] Where?
+- [00:23:39,080 - 00:23:39,520] Here,
+- [00:23:39,520 - 00:23:40,380] there's a star there.
+- [00:23:40,560 - 00:23:40,860] Oh.
+- [00:23:41,080 - 00:23:41,400] Yeah.
+- [00:23:43,459 - 00:23:44,540] Phi star here,
+- [00:23:44,540 - 00:23:44,740] yeah,
+- [00:23:44,740 - 00:23:45,000] good.
+- [00:23:45,600 - 00:23:46,480] Phi star here,
+- [00:23:46,480 - 00:23:46,760] right.
+- [00:23:48,080 - 00:23:48,520] Okay,
+- [00:23:48,520 - 00:23:48,860] now,
+- [00:23:48,860 - 00:23:51,520] if I didn't have to worry about this term here,
+- [00:23:52,740 - 00:23:54,520] I would just multiply these two.
+- [00:23:54,700 - 00:23:56,980] If I didn't have any x dependence in theta,
+- [00:23:57,240 - 00:23:57,640] for example,
+- [00:23:57,640 - 00:23:58,200] if x was,
+- [00:23:58,200 - 00:24:00,260] if theta was independent of x,
+- [00:24:00,480 - 00:24:02,200] these terms would not be here,
+- [00:24:02,200 - 00:24:04,620] and I would just be multiplying this by this,
+- [00:24:04,780 - 00:24:07,040] and the e to the i phi's would cancel,
+- [00:24:07,360 - 00:24:09,240] and I would find out
+- [00:24:09,240 - 00:24:11,120] that this Lagrangian was exactly equal
+- [00:24:11,600 - 00:24:15,780] to the same thing except replacing phi prime by phi.
+- [00:24:16,600 - 00:24:17,080] Okay.
+- [00:24:17,160 - 00:24:18,420] But it's not true now.
+- [00:24:18,560 - 00:24:19,860] Let's work out what we have.
+- [00:24:19,940 - 00:24:23,980] We have d by d mu of phi star times,
+- [00:24:24,140 - 00:24:25,390] let me factor out the
+- [00:24:25,390 - 00:24:26,640] e to the minus i theta.
+- [00:24:27,680 - 00:24:31,400] Minus i d theta by d x mu,
+- [00:24:33,700 - 00:24:34,720] times phi star.
+- [00:24:36,960 - 00:24:37,440] Now,
+- [00:24:37,440 - 00:24:40,480] I kept for last e to the minus i theta.
+- [00:24:40,880 - 00:24:41,760] Let's put it there.
+- [00:24:42,660 - 00:24:45,520] Now we have to multiply that by the complex conjugate,
+- [00:24:46,140 - 00:24:47,240] the derivative of phi,
+- [00:24:47,240 - 00:24:48,880] or the derivative of phi prime.
+- [00:24:49,340 - 00:24:50,500] That comes from here.
+- [00:24:50,960 - 00:24:53,940] Each term has an e to the plus i theta,
+- [00:24:54,780 - 00:24:56,350] which will cancel with the
+- [00:24:56,350 - 00:24:57,920] e to the i theta here.
+- [00:24:58,060 - 00:24:58,560] So that's good.
+- [00:24:59,060 - 00:25:01,000] That e to the i theta cancels,
+- [00:25:01,000 - 00:25:01,520] as before.
+- [00:25:02,740 - 00:25:04,200] And what are we left with?
+- [00:25:04,480 - 00:25:06,960] We're left with d phi by d x mu
+- [00:25:12,040 - 00:25:18,380] plus i d theta by d x mu phi.
+- [00:25:22,060 - 00:25:25,550] Let's add back in this
+- [00:25:25,550 - 00:25:29,040] minus mu squared phi star phi.
+- [00:25:32,240 - 00:25:32,940] All right.
+- [00:25:32,980 - 00:25:35,340] So the cost of replacing phi star,
+- [00:25:35,500 - 00:25:37,620] phi prime by phi,
+- [00:25:37,800 - 00:25:40,860] by this position-dependent rotated phi,
+- [00:25:41,700 - 00:25:43,940] is some extra terms in the Lagrangian.
+- [00:25:44,600 - 00:25:47,980] And so the Lagrangian does not have the same form
+- [00:25:47,980 - 00:25:48,960] that it started with.
+- [00:25:49,500 - 00:25:51,080] It has a different form.
+- [00:25:51,200 - 00:25:53,660] It now has things in it.
+- [00:25:53,740 - 00:25:53,820] Now,
+- [00:25:53,820 - 00:25:56,940] theta is not really a degree of freedom.
+- [00:25:57,000 - 00:25:59,060] It's just an arbitrary angle that we chose
+- [00:25:59,060 - 00:26:01,400] to vary throughout space in an arbitrary way.
+- [00:26:01,400 - 00:26:03,140] But when we see we do that,
+- [00:26:03,220 - 00:26:04,060] the structure,
+- [00:26:04,060 - 00:26:06,340] the form of the Lagrangian changes.
+- [00:26:06,640 - 00:26:07,440] It's not a symmetry.
+- [00:26:07,940 - 00:26:10,740] It's only a symmetry if the Lagrangian
+- [00:26:10,740 - 00:26:12,740] would have come back to exactly the same form.
+- [00:26:13,120 - 00:26:16,180] So we can put a cross over this term.
+- [00:26:16,260 - 00:26:17,600] This term is not invariant.
+- [00:26:17,600 - 00:26:18,920] This term is invariant.
+- [00:26:24,280 - 00:26:27,100] Lagrangian we wrote down is just not invariant
+- [00:26:27,100 - 00:26:30,280] under this transformation.
+- [00:26:30,280 - 00:26:31,520] What does that mean?
+- [00:26:31,560 - 00:26:34,040] That means that if we...
+- [00:26:38,199 - 00:26:39,120] That means,
+- [00:26:39,120 - 00:26:39,960] among other things,
+- [00:26:40,100 - 00:26:42,960] that if we did this operation on the field
+- [00:26:42,960 - 00:26:44,920] where we rotated it from point to point,
+- [00:26:45,000 - 00:26:46,660] we would change the energy of the field.
+- [00:26:47,080 - 00:26:48,500] We changed the Lagrangian.
+- [00:26:48,580 - 00:26:50,080] We changed the energy of the field.
+- [00:26:50,340 - 00:26:52,180] We changed the momentum in the field.
+- [00:26:52,460 - 00:26:54,720] It just isn't the same configuration
+- [00:26:54,720 - 00:26:55,760] that we started with,
+- [00:26:55,820 - 00:26:58,000] and it's not a configuration that has the same properties.
+- [00:26:58,300 - 00:26:58,760] Now,
+- [00:26:58,760 - 00:27:00,260] as did the Lagrangian,
+- [00:27:00,280 - 00:27:01,280] we have different equations of motion,
+- [00:27:01,420 - 00:27:02,240] different Lagrangian.
+- [00:27:02,900 - 00:27:03,960] All right,
+- [00:27:03,960 - 00:27:06,140] so our first conclusion then
+- [00:27:07,420 - 00:27:10,700] is that the Lagrangian...
+- [00:27:10,700 - 00:27:14,140] the complex scalar Lagrangian
+- [00:27:14,960 - 00:27:18,560] has an invariance under rigid phase rotations,
+- [00:27:18,840 - 00:27:21,780] but it is not invariant under gauge transformations.
+- [00:27:22,460 - 00:27:25,420] Gauge transformations mean these nonrigid rotations
+- [00:27:25,420 - 00:27:27,560] where you vary differently at different points.
+- [00:27:27,560 - 00:27:29,470] Let me stop there and
+- [00:27:29,470 - 00:27:31,380] take any questions that come up,
+- [00:27:31,440 - 00:27:34,700] because this is the essence
+- [00:27:34,700 - 00:27:38,600] and the heart of modern field theory,
+- [00:27:38,600 - 00:27:39,060] basically,
+- [00:27:39,300 - 00:27:40,580] this being the simplest example.
+- [00:27:43,280 - 00:27:43,880] Yes?
+- [00:27:44,120 - 00:27:46,840] I'm getting a little confused by your notation there.
+- [00:27:48,360 - 00:27:49,240] D mu,
+- [00:27:49,240 - 00:27:53,680] is that the same as d by dx mu?
+- [00:27:53,980 - 00:27:54,180] Yes.
+- [00:27:56,520 - 00:27:56,820] Yep.
+- [00:27:56,820 - 00:27:58,700] I will write down again
+- [00:27:59,800 - 00:28:01,880] a whole bunch of equivalences.
+- [00:28:06,100 - 00:28:08,020] d phi by dx mu
+- [00:28:09,020 - 00:28:10,620] is equal to phi mu
+- [00:28:10,620 - 00:28:12,680] is equal to d mu phi.
+- [00:28:12,960 - 00:28:14,360] Do I have any other names for it?
+- [00:28:15,140 - 00:28:16,320] I don't think so.
+- [00:28:17,000 - 00:28:17,740] But yes,
+- [00:28:17,740 - 00:28:20,020] these are things all mean the same thing.
+- [00:28:20,540 - 00:28:21,060] Okay,
+- [00:28:21,060 - 00:28:23,540] but subscripts and superscripts?
+- [00:28:24,200 - 00:28:25,660] Subscripts and superscripts are different.
+- [00:28:26,400 - 00:28:26,880] Now,
+- [00:28:26,880 - 00:28:27,640] how are they different?
+- [00:28:29,000 - 00:28:30,600] They're not different if we,
+- [00:28:30,640 - 00:28:31,060] let's see,
+- [00:28:31,060 - 00:28:33,200] it's the time component which changes when we,
+- [00:28:33,300 - 00:28:33,740] I think,
+- [00:28:33,740 - 00:28:34,720] yeah,
+- [00:28:34,720 - 00:28:35,680] right.
+- [00:28:37,860 - 00:28:38,340] That,
+- [00:28:38,340 - 00:28:38,820] yeah,
+- [00:28:38,820 - 00:28:39,500] that may mean,
+- [00:28:39,680 - 00:28:41,580] I may be off by a sign here.
+- [00:28:41,700 - 00:28:44,980] This may be possibly a minus sign there,
+- [00:28:45,140 - 00:28:48,040] but that's not the important issue here.
+- [00:28:48,320 - 00:28:50,600] That second one doesn't have any imaginary components,
+- [00:28:50,600 - 00:28:51,040] right?
+- [00:28:51,120 - 00:28:51,680] Because it was,
+- [00:28:51,680 - 00:28:52,540] it's supposed to,
+- [00:28:52,580 - 00:28:54,400] there's supposed to be complex conjugate to multiply.
+- [00:28:54,400 - 00:28:55,180] Sorry,
+- [00:28:55,180 - 00:28:55,480] which,
+- [00:28:56,719 - 00:28:57,120] yeah,
+- [00:28:57,120 - 00:28:59,540] this has no imaginary component to it
+- [00:29:00,540 - 00:29:02,640] because it's something times its complex conjugate,
+- [00:29:03,340 - 00:29:05,160] but it still does remember this,
+- [00:29:05,160 - 00:29:05,400] this,
+- [00:29:05,400 - 00:29:06,700] right.
+- [00:29:07,060 - 00:29:08,870] It looks like it can sort of
+- [00:29:08,870 - 00:29:10,680] be combined with mu squared or something.
+- [00:29:10,900 - 00:29:11,140] No,
+- [00:29:11,140 - 00:29:12,680] mu squared is a different quantity.
+- [00:29:13,199 - 00:29:13,600] Oh,
+- [00:29:13,600 - 00:29:14,000] well,
+- [00:29:14,000 - 00:29:14,260] no,
+- [00:29:14,260 - 00:29:14,360] no,
+- [00:29:14,360 - 00:29:14,900] but I mean,
+- [00:29:14,900 - 00:29:15,580] Of course,
+- [00:29:15,580 - 00:29:16,850] everybody realizes this mu has nothing
+- [00:29:16,850 - 00:29:18,120] to do with the mu in the,
+- [00:29:19,860 - 00:29:21,000] in these mu's,
+- [00:29:21,000 - 00:29:21,260] right.
+- [00:29:21,700 - 00:29:23,180] I probably should call it m squared.
+- [00:29:23,180 - 00:29:24,060] You get rid of the,
+- [00:29:24,060 - 00:29:25,800] of the imaginary components,
+- [00:29:25,840 - 00:29:27,580] but are you going to continue on this?
+- [00:29:27,860 - 00:29:28,220] Hm?
+- [00:29:28,400 - 00:29:30,660] Are you going to continue to expand this out or?
+- [00:29:30,840 - 00:29:31,180] Oh,
+- [00:29:31,180 - 00:29:31,580] if you like,
+- [00:29:31,580 - 00:29:31,980] I can.
+- [00:29:32,180 - 00:29:32,340] Yeah,
+- [00:29:32,340 - 00:29:32,740] let's do it.
+- [00:29:33,340 - 00:29:33,860] All right,
+- [00:29:33,860 - 00:29:34,940] so this is d mu phi,
+- [00:29:34,940 - 00:29:37,980] d mu phi star.
+- [00:29:38,920 - 00:29:39,280] Oh,
+- [00:29:39,280 - 00:29:41,620] I guess one of these should have upper indices,
+- [00:29:41,620 - 00:29:42,260] shouldn't they?
+- [00:29:43,300 - 00:29:44,440] I'm not sure how to do that.
+- [00:29:46,180 - 00:29:46,540] Okay,
+- [00:29:46,540 - 00:29:47,340] I know what to do.
+- [00:29:48,180 - 00:29:50,200] Do you learn anything if you expand it out?
+- [00:29:50,580 - 00:29:50,940] Hm?
+- [00:29:50,940 - 00:29:51,280] No.
+- [00:29:51,280 - 00:29:52,780] But let's do it anyway.
+- [00:29:53,940 - 00:30:00,380] d mu phi and then d mu theta.
+- [00:30:03,200 - 00:30:03,680] Oops,
+- [00:30:03,680 - 00:30:04,300] d mu theta.
+- [00:30:07,840 - 00:30:09,800] Do you learn anything if you expand it out?
+- [00:30:11,520 - 00:30:12,680] I don't see anything.
+- [00:30:13,040 - 00:30:13,380] Hm?
+- [00:30:13,700 - 00:30:14,960] When you expand it out,
+- [00:30:14,960 - 00:30:15,420] the first,
+- [00:30:15,420 - 00:30:15,980] the first,
+- [00:30:16,000 - 00:30:17,530] it just has two terms
+- [00:30:17,530 - 00:30:19,060] because the imaginary parts go away.
+- [00:30:20,300 - 00:30:20,780] No.
+- [00:30:21,480 - 00:30:22,120] That's,
+- [00:30:22,120 - 00:30:22,560] all right,
+- [00:30:22,560 - 00:30:23,660] we will learn something.
+- [00:30:24,520 - 00:30:27,000] d mu phi star times d mu phi.
+- [00:30:27,980 - 00:30:30,840] Now that's just the good old Lagrangian
+- [00:30:34,419 - 00:30:37,500] that we might have expected if there was a symmetry.
+- [00:30:37,980 - 00:30:41,620] Then of course there is minus
+- [00:30:41,620 - 00:30:45,260] i d theta by d x mu.
+- [00:30:45,400 - 00:30:45,940] Hm?
+- [00:30:50,100 - 00:30:50,760] Hm?
+- [00:30:50,760 - 00:30:50,760] Well,
+- [00:30:50,760 - 00:30:50,960] let's see,
+- [00:30:50,960 - 00:30:52,480] we're taking the cross terms now.
+- [00:30:52,680 - 00:30:53,100] Let's write,
+- [00:30:53,100 - 00:30:54,700] let me write the cross terms carefully.
+- [00:30:56,360 - 00:30:57,420] The two cross terms.
+- [00:30:57,780 - 00:30:58,620] They don't cancel.
+- [00:30:58,780 - 00:30:59,960] Are you asking whether they cancel?
+- [00:31:00,340 - 00:31:00,520] Yeah.
+- [00:31:00,640 - 00:31:00,980] No,
+- [00:31:00,980 - 00:31:01,160] they don't.
+- [00:31:01,200 - 00:31:02,240] Then they do have an imaginary part.
+- [00:31:02,240 - 00:31:02,480] No,
+- [00:31:02,480 - 00:31:03,500] let's see what they have.
+- [00:31:03,820 - 00:31:09,160] They have minus i d theta by d x mu.
+- [00:31:10,920 - 00:31:11,400] All right,
+- [00:31:11,400 - 00:31:11,940] first of all,
+- [00:31:11,940 - 00:31:13,880] they multiply d theta by d x mu,
+- [00:31:13,880 - 00:31:14,520] both of them.
+- [00:31:15,040 - 00:31:18,740] This times this and this times this,
+- [00:31:18,740 - 00:31:19,740] the two cross terms,
+- [00:31:19,740 - 00:31:20,260] all right?
+- [00:31:20,260 - 00:31:21,880] Both of them have i's in them.
+- [00:31:22,240 - 00:31:24,340] And one of them has,
+- [00:31:24,340 - 00:31:25,480] let's see what it has.
+- [00:31:25,800 - 00:31:31,400] It has phi times d mu phi star.
+- [00:31:34,030 - 00:31:40,440] And then it has minus phi star d mu phi.
+- [00:31:44,050 - 00:31:47,145] And then finally we have minus i times plus
+- [00:31:47,145 - 00:31:50,240] i is plus d mu theta by d x mu.
+- [00:31:50,980 - 00:31:52,280] So it's d mu theta d mu theta.
+- [00:31:53,460 - 00:31:55,520] It's just the square of the sums,
+- [00:31:55,520 - 00:31:58,480] the sums or the differences of the squares
+- [00:31:58,480 - 00:32:01,440] of various derivatives of theta times phi star phi.
+- [00:32:02,940 - 00:32:03,460] Okay?
+- [00:32:05,120 - 00:32:05,640] Now,
+- [00:32:05,640 - 00:32:06,640] this does not cancel.
+- [00:32:06,960 - 00:32:09,560] Phi derivative of phi star is not the same
+- [00:32:09,560 - 00:32:12,160] thing as phi star times the derivative of phi.
+- [00:32:13,100 - 00:32:15,560] These two are complex conjugates of each other.
+- [00:32:15,680 - 00:32:16,940] When you subtract them,
+- [00:32:16,940 - 00:32:18,340] you get something pure imaginary.
+- [00:32:18,340 - 00:32:20,340] And that cancels this i here.
+- [00:32:20,480 - 00:32:21,060] Now,
+- [00:32:21,060 - 00:32:21,880] do you remember this quantity?
+- [00:32:24,760 - 00:32:27,420] It was something that was invariant.
+- [00:32:28,520 - 00:32:29,160] Conserved,
+- [00:32:29,160 - 00:32:29,500] I guess.
+- [00:32:29,740 - 00:32:30,940] It was the current.
+- [00:32:31,960 - 00:32:32,860] The current,
+- [00:32:32,860 - 00:32:33,660] j mu.
+- [00:32:35,480 - 00:32:38,720] Its time component was the charge density.
+- [00:32:40,280 - 00:32:44,220] Its space component was the current density.
+- [00:32:45,180 - 00:32:45,820] Okay?
+- [00:32:45,820 - 00:32:46,380] Together,
+- [00:32:46,380 - 00:32:50,980] they satisfied the flow equation,
+- [00:32:50,980 - 00:32:53,400] the continuity equation.
+- [00:32:53,940 - 00:32:54,140] Right.
+- [00:32:54,860 - 00:32:55,420] All right.
+- [00:32:56,700 - 00:32:57,140] Okay,
+- [00:32:57,140 - 00:32:58,700] so we at least see something familiar.
+- [00:32:59,940 - 00:33:01,180] And then this term over
+- [00:33:01,180 - 00:33:02,420] there is just whatever it is.
+- [00:33:02,480 - 00:33:03,820] It contains a phi star phi,
+- [00:33:03,820 - 00:33:06,740] which I suppose we could combine with this one,
+- [00:33:06,740 - 00:33:09,440] minus m squared phi star phi.
+- [00:33:11,220 - 00:33:11,660] Good.
+- [00:33:12,380 - 00:33:13,000] All right.
+- [00:33:13,020 - 00:33:13,140] So,
+- [00:33:13,140 - 00:33:13,460] yeah.
+- [00:33:13,460 - 00:33:14,320] We did learn something,
+- [00:33:14,320 - 00:33:14,720] I think,
+- [00:33:14,720 - 00:33:14,900] by,
+- [00:33:14,900 - 00:33:18,340] we surely discovered this term here.
+- [00:33:18,720 - 00:33:19,220] Good.
+- [00:33:19,440 - 00:33:19,940] So,
+- [00:33:19,940 - 00:33:20,760] answer is,
+- [00:33:20,760 - 00:33:22,020] no cigar,
+- [00:33:22,020 - 00:33:24,160] this Lagrangian is not
+- [00:33:24,160 - 00:33:26,300] invariant under such a transformation.
+- [00:33:30,380 - 00:33:30,880] But,
+- [00:33:30,880 - 00:33:32,940] if that was the end of the story,
+- [00:33:32,940 - 00:33:33,440] of course,
+- [00:33:33,440 - 00:33:36,400] we would go home and say this
+- [00:33:36,400 - 00:33:39,360] idea of gauge invariance is not important.
+- [00:33:39,520 - 00:33:39,760] And,
+- [00:33:39,760 - 00:33:40,160] you know,
+- [00:33:40,160 - 00:33:42,320] 75 years of physics down the drain.
+- [00:33:43,460 - 00:33:44,420] All right.
+- [00:33:46,540 - 00:33:47,100] So,
+- [00:33:47,100 - 00:33:50,820] let's see if we can force it to be invariant.
+- [00:33:50,880 - 00:33:51,840] But to do so,
+- [00:33:51,840 - 00:33:54,480] we have to add another collection of fields.
+- [00:33:55,560 - 00:33:56,540] To do so,
+- [00:33:56,540 - 00:33:58,000] we have to add another
+- [00:33:58,000 - 00:33:59,460] collection of fields into the brew.
+- [00:33:59,780 - 00:34:02,750] And to give those fields also
+- [00:34:02,750 - 00:34:05,720] transformation properties under the same transformation.
+- [00:34:06,080 - 00:34:08,239] We're going to have to invent more fields
+- [00:34:08,239 - 00:34:10,400] and more transformation properties to go with them.
+- [00:34:11,020 - 00:34:13,440] In order to make this a simple equation.
+- [00:34:13,440 - 00:34:13,780] Like this,
+- [00:34:13,780 - 00:34:13,780] I'm going to take what we have in our inventory.
+- [00:34:14,139 - 00:34:15,999] The new fields that were going to invent
+- [00:34:15,999 - 00:34:17,860] are our first experience with the vector field.
+- [00:34:18,040 - 00:34:18,260] Of course,
+- [00:34:18,260 - 00:34:19,219] we have some vector fields.
+- [00:34:19,320 - 00:34:21,000] Anytime we differentiate a scalar field,
+- [00:34:21,000 - 00:34:21,820] it's a vector field.
+- [00:34:22,880 - 00:34:23,580] But now,
+- [00:34:23,580 - 00:34:25,920] we're going to invent some new fields,
+- [00:34:25,920 - 00:34:26,699] which are,
+- [00:34:26,699 - 00:34:27,860] how to say,
+- [00:34:27,860 - 00:34:28,840] primordially,
+- [00:34:28,840 - 00:34:31,540] they are vector fields from the beginning.
+- [00:34:32,260 - 00:34:33,100] Fundamental fields,
+- [00:34:33,100 - 00:34:35,040] and not derivatives of any other fields.
+- [00:34:35,400 - 00:34:36,560] And we're going to give them a name,
+- [00:34:36,560 - 00:34:37,659] we're going to call them A.
+- [00:34:39,799 - 00:34:40,679] A mu.
+- [00:34:40,679 - 00:34:40,800] mu.
+- [00:34:40,800 - 00:34:42,840] Now,
+- [00:34:42,840 - 00:34:44,719] a mu has four components.
+- [00:34:44,719 - 00:34:47,239] I'm going to tell you right now what they correspond
+- [00:34:47,239 - 00:34:47,699] to,
+- [00:34:47,699 - 00:34:49,600] so that we won't be working in the blind,
+- [00:34:49,600 - 00:34:52,500] so that I won't just be doing mathematical
+- [00:34:53,000 - 00:34:54,060] formalism on the blackboard.
+- [00:34:54,060 - 00:34:57,160] If you know anything about electromagnetism,
+- [00:34:57,160 - 00:34:58,240] you know that the
+- [00:34:58,240 - 00:34:59,900] electromagnetic field tensor,
+- [00:34:59,900 - 00:35:00,780] sorry,
+- [00:35:00,780 - 00:35:01,980] I won't even use that word,
+- [00:35:01,980 - 00:35:03,100] that the electric and
+- [00:35:03,100 - 00:35:06,810] magnetic fields can be written in terms
+- [00:35:06,810 - 00:35:10,520] of vector potentials and a scalar potential.
+- [00:35:11,300 - 00:35:13,580] I won't write them down now,
+- [00:35:13,580 - 00:35:15,560] but there are four quantities,
+- [00:35:15,560 - 00:35:17,220] the three components of the
+- [00:35:17,220 - 00:35:17,820] vector potential,
+- [00:35:17,820 - 00:35:19,280] and the fourth is
+- [00:35:19,280 - 00:35:20,740] basically called the electrostatic potential.
+- [00:35:20,740 - 00:35:22,480] And those
+- [00:35:22,480 - 00:35:24,440] four quantities form a four vector.
+- [00:35:24,440 - 00:35:28,680] The electrostatic potential being the time component,
+- [00:35:28,680 - 00:35:29,860] and the
+- [00:35:29,860 - 00:35:31,470] vector potential being the space
+- [00:35:31,470 - 00:35:33,080] components of a four vector.
+- [00:35:34,420 - 00:35:35,560] That's what these things are.
+- [00:35:35,560 - 00:35:40,060] The time component being,
+- [00:35:40,060 - 00:35:40,940] well,
+- [00:35:40,940 - 00:35:43,280] being the electrostatic potential,
+- [00:35:43,700 - 00:35:45,840] and the other three components being the space.
+- [00:35:45,840 - 00:35:46,680] Do you remember,
+- [00:35:46,680 - 00:35:47,760] for example,
+- [00:35:47,760 - 00:35:48,440] what the magnetic
+- [00:35:48,440 - 00:35:49,920] field is in terms of A,
+- [00:35:49,920 - 00:35:51,900] in terms of the space components?
+- [00:35:52,320 - 00:35:53,360] Del cross curl.
+- [00:35:53,560 - 00:35:53,740] Yeah,
+- [00:35:53,740 - 00:35:54,460] it's the curl of A.
+- [00:35:54,460 - 00:35:55,960] And the electric field,
+- [00:35:55,960 - 00:35:56,840] something else.
+- [00:35:56,840 - 00:35:57,760] Something else that
+- [00:35:57,760 - 00:35:58,620] can be written in terms of these.
+- [00:35:58,620 - 00:35:59,220] And we'll come to them,
+- [00:35:59,220 - 00:35:59,640] what they are.
+- [00:35:59,640 - 00:36:01,260] Okay.
+- [00:36:01,260 - 00:36:02,380] So,
+- [00:36:02,380 - 00:36:02,820] we're
+- [00:36:02,820 - 00:36:03,080] going to take a look at the magnetic field.
+- [00:36:03,080 - 00:36:03,080] And we're going to take a look at the magnetic
+- [00:36:03,080 - 00:36:03,080] field.
+- [00:36:03,080 - 00:36:04,720] And we're going to invent four more fields.
+- [00:36:04,720 - 00:36:05,760] Now these fields,
+- [00:36:05,760 - 00:36:07,880] unlike theta here,
+- [00:36:08,040 - 00:36:11,100] theta wasn't a dynamical field.
+- [00:36:11,100 - 00:36:13,180] It's not something which has an equation of motion.
+- [00:36:13,180 - 00:36:14,380] It was just
+- [00:36:14,380 - 00:36:16,120] a transformation that we decided to do.
+- [00:36:16,120 - 00:36:17,000] We picked it at will.
+- [00:36:17,000 - 00:36:18,840] And when we picked it,
+- [00:36:18,920 - 00:36:20,630] we found out that this was
+- [00:36:20,630 - 00:36:22,340] not a symmetry unless theta was constant.
+- [00:36:22,340 - 00:36:24,180] But now we're adding
+- [00:36:24,180 - 00:36:24,980] more fields.
+- [00:36:24,980 - 00:36:25,980] Okay?
+- [00:36:25,980 - 00:36:27,540] And I'm going to add,
+- [00:36:27,540 - 00:36:29,580] I'm going to add this field,
+- [00:36:29,580 - 00:36:30,800] and I'm going to
+- [00:36:30,800 - 00:36:33,060] assume that it also transforms.
+- [00:36:33,060 - 00:36:35,120] under the same transformation.
+- [00:36:35,320 - 00:36:36,600] What do I mean by that?
+- [00:36:36,820 - 00:36:38,440] I mean there's some transformation
+- [00:36:38,440 - 00:36:41,040] which involves all of the variables,
+- [00:36:42,240 - 00:36:45,900] just in the same way that if I rotate
+- [00:36:45,900 - 00:36:48,280] the coordinates of one particle,
+- [00:36:48,420 - 00:36:50,080] I also need to rotate the coordinates
+- [00:36:50,080 - 00:36:51,080] of another particle,
+- [00:36:51,080 - 00:36:52,320] and so forth and so on.
+- [00:36:52,460 - 00:36:54,360] There may be many degrees of freedom,
+- [00:36:54,520 - 00:36:57,820] all which transform under the same transformation.
+- [00:36:58,520 - 00:37:00,100] So we're going to assume,
+- [00:37:00,100 - 00:37:02,880] we're going to basically postulate
+- [00:37:03,660 - 00:37:07,300] that A also has a transformation property,
+- [00:37:07,380 - 00:37:08,920] or must have a transformation property,
+- [00:37:09,640 - 00:37:11,620] whenever we do such a transformation,
+- [00:37:11,840 - 00:37:13,920] and the transformation property is going to be this.
+- [00:37:14,280 - 00:37:15,480] It's going to be A mu,
+- [00:37:15,480 - 00:37:17,480] let's call it,
+- [00:37:23,779 - 00:37:25,060] hold on a second,
+- [00:37:25,060 - 00:37:28,380] I've screwed up my notes here.
+- [00:37:33,820 - 00:37:36,820] I seem to have notes from several different lectures
+- [00:37:36,820 - 00:37:37,880] all mixed up together.
+- [00:37:41,280 - 00:37:41,860] Yeah.
+- [00:37:54,160 - 00:37:54,740] Yeah,
+- [00:37:54,740 - 00:37:57,520] before we talk about the transformation property of A,
+- [00:37:59,260 - 00:37:59,840] let's,
+- [00:37:59,840 - 00:38:00,080] let's,
+- [00:38:00,820 - 00:38:01,340] let's first talk about the Lagrangian.
+- [00:38:01,340 - 00:38:03,640] talk about how A fits into the Lagrangian.
+- [00:38:04,260 - 00:38:08,220] A is another variable which has an equation of motion,
+- [00:38:08,979 - 00:38:10,720] it will also have waves,
+- [00:38:10,840 - 00:38:13,760] those waves describe electromagnetic waves and so forth,
+- [00:38:13,940 - 00:38:16,440] and A also has a Lagrangian of its own,
+- [00:38:17,340 - 00:38:20,500] plus there are interactions between A and phi,
+- [00:38:20,700 - 00:38:22,460] which means there are things in the Lagrangian
+- [00:38:22,460 - 00:38:24,040] which involve both A and phi.
+- [00:38:24,540 - 00:38:27,300] So let's go back to the phi prime Lagrangian.
+- [00:38:27,380 - 00:38:29,600] Let's go back to the phi prime Lagrangian,
+- [00:38:29,620 - 00:38:30,080] and we're going to talk about the phi prime Lagrangian,
+- [00:38:30,100 - 00:38:30,360] which is the Lagrangian of A mu.
+- [00:38:30,360 - 00:38:32,760] Our variables now are all our phi prime,
+- [00:38:32,980 - 00:38:35,340] phi complex conjugate prime,
+- [00:38:35,680 - 00:38:38,760] and I'll also call the vector potential,
+- [00:38:38,920 - 00:38:41,420] the four-dimensional vector potential A mu,
+- [00:38:41,600 - 00:38:43,300] I'll call it prime for a moment.
+- [00:38:44,240 - 00:38:45,880] These are the prime variables.
+- [00:38:46,160 - 00:38:47,870] The unprimed variables will be
+- [00:38:47,870 - 00:38:49,580] obtained from these by some transformation.
+- [00:38:49,960 - 00:38:55,600] And the Lagrangian for the prime variables,
+- [00:38:55,780 - 00:38:57,100] I'm now going to modify.
+- [00:38:57,880 - 00:38:59,980] I'm going to modify it to,
+- [00:38:59,980 - 00:39:08,580] d mu phi star prime.
+- [00:39:10,480 - 00:39:12,240] Let's put the star on the outside.
+- [00:39:13,720 - 00:39:14,480] Star out here.
+- [00:39:14,540 - 00:39:16,720] d mu phi prime.
+- [00:39:17,500 - 00:39:19,240] And now I'm going to add something.
+- [00:39:19,580 - 00:39:19,840] I,
+- [00:39:19,840 - 00:39:23,880] a constant called E,
+- [00:39:24,120 - 00:39:27,940] that constant will ultimately appear as the electric charge
+- [00:39:27,940 - 00:39:29,120] of a charged particle.
+- [00:39:29,980 - 00:39:32,260] But it's just a constant in the Lagrangian now,
+- [00:39:32,340 - 00:39:33,180] a numerical number,
+- [00:39:34,360 - 00:39:41,280] times A prime mu phi prime.
+- [00:39:42,460 - 00:39:46,120] What I've done is I've replaced just derivative of phi
+- [00:39:46,680 - 00:39:47,800] by a new thing,
+- [00:39:47,920 - 00:39:49,260] which is the derivative of phi
+- [00:39:49,919 - 00:39:50,480] plus I,
+- [00:39:50,480 - 00:39:52,900] a times the vector potential times phi.
+- [00:39:54,900 - 00:39:56,040] This is a new thing.
+- [00:39:56,120 - 00:39:58,400] It's actually called the covariant derivative of phi,
+- [00:39:58,580 - 00:39:59,700] but for the moment,
+- [00:39:59,700 - 00:40:01,240] it's just a new object.
+- [00:40:01,560 - 00:40:03,340] And we're going to multiply that by,
+- [00:40:03,360 - 00:40:05,520] notice that it's complex conjugated.
+- [00:40:06,120 - 00:40:06,720] Okay.
+- [00:40:06,800 - 00:40:08,220] When you complex conjugate,
+- [00:40:08,420 - 00:40:09,860] you've got to complex conjugate everything,
+- [00:40:10,280 - 00:40:12,300] phi and I.
+- [00:40:12,760 - 00:40:13,900] A is real.
+- [00:40:14,480 - 00:40:16,000] A is real by assumption.
+- [00:40:16,460 - 00:40:21,380] And that gets multiplied by d mu phi prime
+- [00:40:22,080 - 00:40:23,220] plus I,
+- [00:40:23,220 - 00:40:23,540] e,
+- [00:40:23,540 - 00:40:27,360] A prime mu phi prime.
+- [00:40:30,100 - 00:40:34,400] Plus or minus m squared phi star phi.
+- [00:40:36,020 - 00:40:39,400] So I've modified the original starting Lagrangian
+- [00:40:39,400 - 00:40:42,000] by replacing the derivative of phi
+- [00:40:42,000 - 00:40:43,040] by a new thing,
+- [00:40:43,140 - 00:40:43,980] derivative of phi,
+- [00:40:44,240 - 00:40:45,620] or derivative of phi prime,
+- [00:40:45,880 - 00:40:46,540] plus I,
+- [00:40:46,540 - 00:40:47,000] e,
+- [00:40:47,000 - 00:40:48,600] A times phi prime.
+- [00:40:48,680 - 00:40:51,020] Sometimes people write this by saying,
+- [00:40:51,100 - 00:40:54,000] just replace derivative with respect to mu
+- [00:40:54,700 - 00:40:56,300] by derivative with respect to mu
+- [00:40:56,300 - 00:40:57,400] plus I,
+- [00:40:57,400 - 00:40:57,880] e,
+- [00:40:57,880 - 00:40:58,820] A mu.
+- [00:41:01,120 - 00:41:03,120] Just replace the derivative operation
+- [00:41:04,100 - 00:41:07,220] by derivative plus multiplication by I,
+- [00:41:07,220 - 00:41:07,420] e,
+- [00:41:07,420 - 00:41:07,800] A mu.
+- [00:41:08,220 - 00:41:09,880] So sometimes one says
+- [00:41:09,880 - 00:41:12,520] that this is a new replacement for the derivative
+- [00:41:12,520 - 00:41:14,300] which we call the covariant derivative.
+- [00:41:14,780 - 00:41:15,700] Just a name.
+- [00:41:16,120 - 00:41:19,080] This covariant has nothing to do with the covariant from,
+- [00:41:19,160 - 00:41:19,420] yeah?
+- [00:41:19,960 - 00:41:22,160] Is phi the very end of that?
+- [00:41:22,240 - 00:41:23,380] Is it phi or phi prime?
+- [00:41:23,620 - 00:41:23,820] Oh,
+- [00:41:23,820 - 00:41:24,240] sorry.
+- [00:41:24,520 - 00:41:25,420] Phi prime.
+- [00:41:26,880 - 00:41:28,200] It doesn't matter.
+- [00:41:28,200 - 00:41:29,700] It actually doesn't matter,
+- [00:41:29,700 - 00:41:30,380] but right.
+- [00:41:30,920 - 00:41:31,520] Okay,
+- [00:41:31,520 - 00:41:31,920] right.
+- [00:41:32,060 - 00:41:32,660] Good.
+- [00:41:32,900 - 00:41:33,620] All right,
+- [00:41:33,620 - 00:41:35,360] now supposing we carry through
+- [00:41:36,260 - 00:41:38,240] the same set of operations
+- [00:41:38,940 - 00:41:39,540] and,
+- [00:41:39,540 - 00:41:40,680] in other words,
+- [00:41:40,700 - 00:41:41,560] the same set of operations
+- [00:41:41,560 - 00:41:43,460] where we're going to replace phi prime
+- [00:41:44,080 - 00:41:46,520] by e to the I theta x phi.
+- [00:41:47,300 - 00:41:48,620] What are we going to get?
+- [00:41:48,920 - 00:41:49,500] Well,
+- [00:41:49,500 - 00:41:52,000] exactly the same thing is going to happen
+- [00:41:52,000 - 00:41:54,580] and this derivative here
+- [00:41:54,580 - 00:41:57,560] is going to get replaced by d mu,
+- [00:41:59,800 - 00:42:00,460] phi,
+- [00:42:00,460 - 00:42:01,500] where is it?
+- [00:42:01,960 - 00:42:02,620] Uh,
+- [00:42:02,620 - 00:42:05,960] plus,
+- [00:42:06,700 - 00:42:09,260] I'll do the complex conjugation at the end,
+- [00:42:10,070 - 00:42:15,160] plus I d mu theta,
+- [00:42:16,140 - 00:42:16,800] whoops,
+- [00:42:16,800 - 00:42:17,720] lower d mu,
+- [00:42:18,910 - 00:42:21,980] d mu theta times phi.
+- [00:42:23,080 - 00:42:25,880] That's what happens to derivative of phi prime.
+- [00:42:26,680 - 00:42:29,060] It just becomes derivative phi
+- [00:42:29,680 - 00:42:32,380] plus I d mu theta times phi.
+- [00:42:33,700 - 00:42:34,240] Okay.
+- [00:42:34,340 - 00:42:36,700] But now we have to add plus Ie
+- [00:42:39,680 - 00:42:42,840] A prime mu times phi.
+- [00:42:48,120 - 00:42:49,740] Is this obvious what I've done
+- [00:42:49,740 - 00:42:50,800] or do I need to explain it?
+- [00:42:50,840 - 00:42:51,590] I think I may need
+- [00:42:51,590 - 00:42:52,340] to explain it a little more.
+- [00:42:52,900 - 00:42:54,880] All I'm doing is replacing
+- [00:42:54,880 - 00:42:56,240] for phi prime
+- [00:42:57,820 - 00:42:59,420] e to the I theta phi.
+- [00:43:01,220 - 00:43:03,380] When I differentiate theta prime,
+- [00:43:03,740 - 00:43:05,220] I'll get the extra term
+- [00:43:05,220 - 00:43:07,500] I d mu theta times phi,
+- [00:43:07,620 - 00:43:08,320] just as I did there.
+- [00:43:08,420 - 00:43:08,480] Oh,
+- [00:43:08,480 - 00:43:08,960] incidentally,
+- [00:43:08,960 - 00:43:09,960] this also gets multiplied,
+- [00:43:09,960 - 00:43:10,400] I guess,
+- [00:43:10,420 - 00:43:11,760] by e to the minus I theta,
+- [00:43:12,420 - 00:43:13,220] all pieces,
+- [00:43:13,520 - 00:43:16,020] and this should be complex conjugated.
+- [00:43:16,940 - 00:43:20,620] We can complex conjugate it by just...
+- [00:43:32,460 - 00:43:32,980] I don't know if you can see this.
+- [00:43:32,980 - 00:43:33,120] All right,
+- [00:43:33,120 - 00:43:33,800] stop me now
+- [00:43:33,800 - 00:43:34,960] if you don't understand what I did.
+- [00:43:35,020 - 00:43:36,280] I don't understand what I did
+- [00:43:36,280 - 00:43:37,240] because I lost an I.
+- [00:43:38,280 - 00:43:38,760] Yeah.
+- [00:43:41,180 - 00:43:42,420] Just complete substitution.
+- [00:43:43,260 - 00:43:45,620] Wherever I saw phi prime,
+- [00:43:45,860 - 00:43:48,440] I stuck e to the I theta times phi.
+- [00:43:49,759 - 00:43:51,220] That complex conjugate,
+- [00:43:51,460 - 00:43:53,700] and then add in a new term,
+- [00:43:53,700 - 00:43:54,980] the new hypothetical term
+- [00:43:54,980 - 00:43:57,040] that I've added into the Lagrangian
+- [00:43:57,040 - 00:43:58,060] for fun,
+- [00:43:58,060 - 00:43:58,900] for the fun of it,
+- [00:43:58,980 - 00:43:59,880] just to see what happens.
+- [00:44:00,640 - 00:44:01,920] That's one factor.
+- [00:44:02,240 - 00:44:04,340] The other factor will cancel
+- [00:44:04,340 - 00:44:05,820] the e to the I theta.
+- [00:44:07,040 - 00:44:08,540] This will cancel as before.
+- [00:44:09,900 - 00:44:11,240] And what we'll have then
+- [00:44:11,240 - 00:44:12,820] is just the complex conjugate
+- [00:44:12,820 - 00:44:13,420] of what's here,
+- [00:44:13,500 - 00:44:21,660] d mu phi plus I d mu theta.
+- [00:44:23,820 - 00:44:24,420] So,
+- [00:44:24,420 - 00:44:24,620] d mu times phi
+- [00:44:28,080 - 00:44:34,780] plus Ie a prime mu phi.
+- [00:44:36,140 - 00:44:38,040] And let's forget the m squared phi.
+- [00:44:38,260 - 00:44:39,060] All right,
+- [00:44:39,060 - 00:44:41,520] minus m squared phi star phi.
+- [00:44:45,320 - 00:44:46,880] Notice what's happened.
+- [00:44:48,400 - 00:44:50,180] All that's happened...
+- [00:44:50,180 - 00:44:50,900] Is there such a thing
+- [00:44:50,900 - 00:44:52,900] as A super mu?
+- [00:44:53,680 - 00:44:54,200] Yeah,
+- [00:44:54,200 - 00:44:55,860] we're A super mu.
+- [00:44:55,980 - 00:44:56,260] Good.
+- [00:44:56,460 - 00:44:59,160] This is not A1 mu.
+- [00:44:59,300 - 00:45:00,760] It's just A prime mu,
+- [00:45:00,760 - 00:45:01,620] super mu.
+- [00:45:02,340 - 00:45:02,860] Yeah,
+- [00:45:02,860 - 00:45:04,160] if this has lower indices,
+- [00:45:04,360 - 00:45:05,440] then the right-hand side
+- [00:45:05,440 - 00:45:06,440] has to have upper indices.
+- [00:45:07,660 - 00:45:08,800] And that's it.
+- [00:45:11,200 - 00:45:11,720] Okay,
+- [00:45:11,720 - 00:45:12,640] now look what's happened.
+- [00:45:12,880 - 00:45:14,200] What's happened is
+- [00:45:18,580 - 00:45:20,820] the Lagrangian sort of has changed
+- [00:45:20,900 - 00:45:22,460] form on the one hand.
+- [00:45:22,920 - 00:45:24,080] It changed form
+- [00:45:24,080 - 00:45:25,160] what it started with
+- [00:45:25,160 - 00:45:26,760] in that it now has this new term.
+- [00:45:27,040 - 00:45:28,400] But there's another sense
+- [00:45:28,400 - 00:45:29,840] in which it hasn't changed form.
+- [00:45:30,240 - 00:45:33,540] If I combine d mu theta with A mu,
+- [00:45:34,240 - 00:45:36,560] if I combine those together
+- [00:45:36,560 - 00:45:38,180] with A prime,
+- [00:45:38,760 - 00:45:39,660] in other words,
+- [00:45:39,660 - 00:45:40,840] if I take d mu theta
+- [00:45:43,620 - 00:45:46,380] plus A prime,
+- [00:45:46,380 - 00:45:50,460] and I call that A,
+- [00:45:51,860 - 00:45:53,520] I just call that A,
+- [00:45:57,820 - 00:45:58,440] unprimed,
+- [00:45:58,480 - 00:46:01,420] then this has exactly the same form
+- [00:46:01,420 - 00:46:02,320] as it started with,
+- [00:46:02,520 - 00:46:05,040] except both phi and A,
+- [00:46:05,260 - 00:46:06,900] we've dropped their primes.
+- [00:46:08,420 - 00:46:10,260] Has exactly the same form.
+- [00:46:12,040 - 00:46:13,700] And so that tells me
+- [00:46:13,700 - 00:46:16,080] that if I want to maintain the symmetry,
+- [00:46:16,200 - 00:46:16,360] I have to have the same form
+- [00:46:16,360 - 00:46:16,980] as I did with A.
+- [00:46:16,980 - 00:46:17,860] I had better postulate
+- [00:46:17,860 - 00:46:19,720] a transformation property of A,
+- [00:46:19,940 - 00:46:20,780] namely,
+- [00:46:20,780 - 00:46:23,160] that you simply add
+- [00:46:23,160 - 00:46:25,300] the derivative of theta to it
+- [00:46:25,300 - 00:46:27,980] to define the new field
+- [00:46:27,980 - 00:46:29,740] after transformation.
+- [00:46:30,260 - 00:46:30,960] So,
+- [00:46:30,960 - 00:46:32,600] to have a symmetry,
+- [00:46:34,719 - 00:46:37,800] we add another field into the brew,
+- [00:46:38,060 - 00:46:41,500] A mu prime,
+- [00:46:41,500 - 00:46:44,720] and that's equal to A mu
+- [00:46:46,720 - 00:46:47,840] plus I,
+- [00:46:47,840 - 00:46:48,780] no,
+- [00:46:48,780 - 00:46:49,200] no I,
+- [00:46:50,400 - 00:46:51,600] d mu theta.
+- [00:46:53,100 - 00:46:55,520] This is the full transformation property,
+- [00:46:57,660 - 00:47:00,180] or the full transformation structure
+- [00:47:00,180 - 00:47:02,180] of the three fields,
+- [00:47:02,340 - 00:47:02,600] phi,
+- [00:47:02,600 - 00:47:03,580] phi prime,
+- [00:47:03,580 - 00:47:05,320] phi star prime,
+- [00:47:05,320 - 00:47:05,860] and A.
+- [00:47:06,340 - 00:47:06,900] Actually,
+- [00:47:06,900 - 00:47:07,820] how many fields are there?
+- [00:47:08,420 - 00:47:09,360] Two here,
+- [00:47:09,360 - 00:47:10,740] two here,
+- [00:47:10,740 - 00:47:12,120] and four more here.
+- [00:47:12,960 - 00:47:14,120] Six fields here,
+- [00:47:14,220 - 00:47:15,300] six independent components.
+- [00:47:17,020 - 00:47:18,400] The last symbol there,
+- [00:47:18,480 - 00:47:19,620] is that a phi or a theta?
+- [00:47:19,920 - 00:47:20,180] Where?
+- [00:47:20,500 - 00:47:21,600] On the angle of time.
+- [00:47:21,600 - 00:47:21,800] Theta,
+- [00:47:21,800 - 00:47:22,340] theta,
+- [00:47:22,340 - 00:47:22,700] theta.
+- [00:47:23,300 - 00:47:23,780] Okay,
+- [00:47:23,780 - 00:47:25,860] is that a function of x or not?
+- [00:47:25,880 - 00:47:26,020] Yeah,
+- [00:47:26,020 - 00:47:26,940] it's a function of x.
+- [00:47:27,000 - 00:47:27,200] Otherwise,
+- [00:47:27,200 - 00:47:28,320] how could you differentiate it?
+- [00:47:30,020 - 00:47:30,500] Yeah,
+- [00:47:30,500 - 00:47:32,280] but it's not a function of time.
+- [00:47:32,620 - 00:47:33,360] It could be,
+- [00:47:33,360 - 00:47:33,540] no,
+- [00:47:33,540 - 00:47:33,920] no,
+- [00:47:33,920 - 00:47:34,060] no,
+- [00:47:34,060 - 00:47:34,140] no.
+- [00:47:34,820 - 00:47:36,040] Derivative with respect to mu
+- [00:47:36,040 - 00:47:37,860] means derivative with respect to everything.
+- [00:47:38,300 - 00:47:40,720] So we're not just comparing reference points,
+- [00:47:40,720 - 00:47:40,840] but we're comparing those frames
+- [00:47:40,840 - 00:47:42,360] at different points of space,
+- [00:47:42,560 - 00:47:43,580] also in time.
+- [00:47:44,980 - 00:47:47,280] We're imagining that our coordinates
+- [00:47:48,360 - 00:47:49,860] in this angular space
+- [00:47:50,760 - 00:47:52,440] can be rotated in space,
+- [00:47:52,800 - 00:47:54,660] and they can also be rotated,
+- [00:47:55,340 - 00:47:58,120] they can be rotated from point to point in space,
+- [00:47:58,320 - 00:47:59,560] and point to point in time.
+- [00:48:01,600 - 00:48:03,120] So let's just go through it again.
+- [00:48:04,300 - 00:48:06,500] We started with a new Lagrangian,
+- [00:48:06,540 - 00:48:08,300] a new field theory,
+- [00:48:08,460 - 00:48:10,060] that contains a new set of fields,
+- [00:48:10,940 - 00:48:13,280] that enter into the old Lagrangian
+- [00:48:13,280 - 00:48:14,500] in this new way.
+- [00:48:18,480 - 00:48:20,960] Then we carried out the change of variables
+- [00:48:20,960 - 00:48:22,640] from phi prime to phi,
+- [00:48:22,960 - 00:48:26,100] and we discovered that basically what it does
+- [00:48:26,100 - 00:48:28,920] is it keeps the same form for the Lagrangian,
+- [00:48:29,020 - 00:48:31,920] except that we have to modify a prime
+- [00:48:31,920 - 00:48:34,340] and add to it the derivative of theta.
+- [00:48:36,500 - 00:48:39,060] This is the full structure of a gauge transformation,
+- [00:48:39,060 - 00:48:42,060] and if we make these substitutions,
+- [00:48:42,640 - 00:48:44,360] if we make these substitutions
+- [00:48:44,360 - 00:48:45,940] into the original Lagrangian,
+- [00:48:46,920 - 00:48:49,660] then the form of the Lagrangian does not change.
+- [00:48:50,660 - 00:48:52,900] Then the form of the Lagrangian does not change,
+- [00:48:53,640 - 00:48:56,160] and we can write that this is equal to,
+- [00:48:56,260 - 00:48:57,960] I'm just going to replace this,
+- [00:48:59,180 - 00:49:00,720] exactly the same thing,
+- [00:49:00,820 - 00:49:03,040] except with all the primes dropped.
+- [00:49:04,340 - 00:49:05,060] All right.
+- [00:49:05,460 - 00:49:07,340] This is equal to,
+- [00:49:09,020 - 00:49:17,220] same thing without primes.
+- [00:49:20,080 - 00:49:21,720] That's the idea of a symmetry.
+- [00:49:22,040 - 00:49:24,480] If the Lagrangian has exactly the same form
+- [00:49:24,480 - 00:49:26,920] both before and after the transformation,
+- [00:49:27,220 - 00:49:28,440] then you say there's a symmetry.
+- [00:49:29,160 - 00:49:31,160] So this new field theory,
+- [00:49:31,160 - 00:49:32,200] whatever it is,
+- [00:49:35,520 - 00:49:37,320] is invariant under Lagrangian.
+- [00:49:37,320 - 00:49:38,560] So we can write it as a local gauge transformation.
+- [00:49:38,660 - 00:49:45,380] Local means that the phase parameter here
+- [00:49:45,380 - 00:49:46,480] can depend on position.
+- [00:49:46,780 - 00:49:49,240] Is that a gauge covariant
+- [00:49:49,240 - 00:49:51,700] or is that you're using covariant?
+- [00:49:51,700 - 00:49:52,740] Gauge invariant.
+- [00:49:52,780 - 00:49:54,760] The Lagrangian is gauge invariant,
+- [00:49:54,780 - 00:49:56,520] or the action is gauge invariant.
+- [00:49:56,940 - 00:49:57,500] Invariant.
+- [00:49:58,540 - 00:50:00,060] That's e to the one?
+- [00:50:01,180 - 00:50:02,280] E to the one.
+- [00:50:02,480 - 00:50:02,860] IEA.
+- [00:50:03,580 - 00:50:04,140] IEA.
+- [00:50:04,480 - 00:50:05,340] That's A prime.
+- [00:50:06,120 - 00:50:06,580] Well,
+- [00:50:06,580 - 00:50:07,040] whatever,
+- [00:50:07,040 - 00:50:09,040] but the E is just E to the one?
+- [00:50:09,360 - 00:50:09,820] Yeah.
+- [00:50:09,940 - 00:50:10,400] Charge.
+- [00:50:12,259 - 00:50:12,720] Oh,
+- [00:50:12,720 - 00:50:13,620] that's not E.
+- [00:50:13,760 - 00:50:17,040] That's not the mathematical symbol 2.7128,
+- [00:50:17,040 - 00:50:17,600] whatever it is.
+- [00:50:17,920 - 00:50:22,140] This is the electric charge of some particle.
+- [00:50:22,360 - 00:50:22,640] Now,
+- [00:50:22,640 - 00:50:23,140] what particle?
+- [00:50:23,260 - 00:50:26,200] The quanta of the field described by phi.
+- [00:50:26,360 - 00:50:27,580] But that's yet to be proved,
+- [00:50:27,640 - 00:50:30,500] that in any sense that this has...
+- [00:50:30,960 - 00:50:31,420] Transformation,
+- [00:50:31,420 - 00:50:34,560] you left out the E in there.
+- [00:50:35,799 - 00:50:36,200] Oh,
+- [00:50:36,200 - 00:50:36,680] you're right.
+- [00:50:37,560 - 00:50:38,340] 1 over E,
+- [00:50:38,340 - 00:50:39,020] 1 over E.
+- [00:50:39,820 - 00:50:40,420] You're right.
+- [00:50:42,240 - 00:50:43,120] 1 over E.
+- [00:50:43,960 - 00:50:45,090] Maybe that should be a
+- [00:50:45,090 - 00:50:46,220] minus in front of that partial?
+- [00:50:46,840 - 00:50:47,400] Which one?
+- [00:50:47,940 - 00:50:48,980] In that transformation.
+- [00:50:49,540 - 00:50:51,540] That one over E.
+- [00:50:54,080 - 00:50:55,400] I thought it was plus.
+- [00:50:55,500 - 00:50:55,940] Let's see.
+- [00:50:56,080 - 00:50:56,180] No,
+- [00:50:56,180 - 00:50:57,680] because he sort of worked it backwards,
+- [00:50:57,680 - 00:50:58,940] and so it...
+- [00:50:58,940 - 00:50:59,940] I thought it was plus.
+- [00:51:00,280 - 00:51:00,880] Maybe that's...
+- [00:51:00,880 - 00:51:01,660] Maybe...
+- [00:51:02,240 - 00:51:02,640] Yeah,
+- [00:51:02,640 - 00:51:02,980] I think...
+- [00:51:02,980 - 00:51:03,120] No,
+- [00:51:03,120 - 00:51:04,160] I think you're probably right.
+- [00:51:04,160 - 00:51:06,400] I think you may be right.
+- [00:51:06,580 - 00:51:06,760] Yeah.
+- [00:51:09,300 - 00:51:09,700] Yeah,
+- [00:51:09,700 - 00:51:11,060] I think we had that A...
+- [00:51:11,060 - 00:51:11,160] Yeah,
+- [00:51:11,160 - 00:51:11,540] you're right.
+- [00:51:11,680 - 00:51:15,000] A was equal to A prime plus derivative,
+- [00:51:15,000 - 00:51:15,660] I think.
+- [00:51:16,260 - 00:51:16,660] Yeah.
+- [00:51:16,780 - 00:51:17,140] That's right.
+- [00:51:17,240 - 00:51:17,440] Okay.
+- [00:51:17,500 - 00:51:17,680] Yeah,
+- [00:51:17,680 - 00:51:18,000] yeah,
+- [00:51:18,000 - 00:51:18,300] yeah.
+- [00:51:18,920 - 00:51:19,320] Good.
+- [00:51:19,580 - 00:51:20,900] I think we have it right now.
+- [00:51:22,000 - 00:51:22,400] Okay.
+- [00:51:24,879 - 00:51:25,279] So,
+- [00:51:25,279 - 00:51:27,840] what we've discovered up until now is we can force,
+- [00:51:27,840 - 00:51:28,440] if you like,
+- [00:51:28,500 - 00:51:30,550] we can force a field theory
+- [00:51:30,550 - 00:51:32,600] to have this new kind of invariance
+- [00:51:32,600 - 00:51:34,020] where you transform things.
+- [00:51:34,020 - 00:51:35,160] You can transform things from place to place,
+- [00:51:35,160 - 00:51:36,600] not just rigidly.
+- [00:51:38,400 - 00:51:39,380] In fact,
+- [00:51:39,380 - 00:51:41,480] the only real symmetries of
+- [00:51:41,480 - 00:51:43,580] nature are gauge symmetries like this.
+- [00:51:45,460 - 00:51:50,460] All others are not really symmetries of nature.
+- [00:51:53,260 - 00:51:54,380] Not yet.
+- [00:51:54,560 - 00:51:54,920] Not yet.
+- [00:51:55,080 - 00:51:55,540] Not yet.
+- [00:51:55,680 - 00:51:56,220] Not yet.
+- [00:51:57,100 - 00:51:58,060] Not yet.
+- [00:52:02,780 - 00:52:03,900] All right.
+- [00:52:03,900 - 00:52:04,000] Let's go back to the...
+- [00:52:04,000 - 00:52:04,060] Now,
+- [00:52:04,060 - 00:52:07,720] what I haven't indicated here is whether
+- [00:52:07,720 - 00:52:11,380] there's other terms in the Lagrangian governing
+- [00:52:11,380 - 00:52:11,760] A,
+- [00:52:11,760 - 00:52:12,600] for example.
+- [00:52:13,540 - 00:52:15,580] The phi part of the Lagrangian,
+- [00:52:15,580 - 00:52:18,020] we've seen what the phi part of the Lagrangian corresponds
+- [00:52:18,020 - 00:52:18,560] to.
+- [00:52:18,740 - 00:52:20,460] It's out of phi...
+- [00:52:20,460 - 00:52:20,600] Oh,
+- [00:52:20,600 - 00:52:21,380] incidentally,
+- [00:52:21,380 - 00:52:22,140] yeah,
+- [00:52:22,140 - 00:52:26,620] same thing without primes.
+- [00:52:27,680 - 00:52:31,400] Notice how A enters into the Lagrangian.
+- [00:52:39,660 - 00:52:44,390] What will happen to this form of the Lagrangian
+- [00:52:44,390 - 00:52:49,120] when we put A prime in or A in?
+- [00:52:52,080 - 00:52:53,960] This will get replaced by A.
+- [00:52:55,620 - 00:52:56,860] All right.
+- [00:52:57,160 - 00:52:57,780] So,
+- [00:52:57,780 - 00:52:58,400] in fact,
+- [00:52:58,400 - 00:53:01,380] the Lagrangian...
+- [00:53:01,400 - 00:53:02,840] Which I could write as having...
+- [00:53:02,840 - 00:53:03,440] As a plus,
+- [00:53:03,440 - 00:53:07,120] I think it's plus E times A prime.
+- [00:53:07,960 - 00:53:09,860] This whole thing just becomes E...
+- [00:53:10,250 - 00:53:10,780] Becomes A.
+- [00:53:19,140 - 00:53:19,600] Now,
+- [00:53:19,600 - 00:53:22,200] I don't know how familiar it is...
+- [00:53:22,200 - 00:53:24,640] Did I leave out E?
+- [00:53:24,800 - 00:53:25,720] I think I left out E.
+- [00:53:25,860 - 00:53:26,160] Yeah,
+- [00:53:26,160 - 00:53:26,500] E.
+- [00:53:28,034 - 00:53:28,734] 你愛妞
+- [00:53:30,594 - 00:53:32,544] I don't know whether this strikes a bell
+- [00:53:32,544 - 00:53:34,494] or rings a bell to you or not
+- [00:53:35,494 - 00:53:36,054] um...
+- [00:53:36,054 - 00:53:39,934] do you know what the Lagrangian for a current
+- [00:53:41,114 - 00:53:43,434] in an electromagnetic field looks like,
+- [00:53:43,434 - 00:53:44,594] an electric current in an
+- [00:53:46,014 - 00:53:47,134] electromagnetic field
+- [00:53:48,094 - 00:53:50,054] in particular a magnetic field
+- [00:53:51,634 - 00:53:51,914] no,
+- [00:53:51,914 - 00:53:53,154] not A dot B
+- [00:53:53,994 - 00:53:55,094] A dot V
+- [00:53:56,733 - 00:53:58,194] P goes to,
+- [00:53:58,194 - 00:54:00,574] momentum goes to momentum less
+- [00:54:00,574 - 00:54:02,634] E times the vector potential
+- [00:54:02,634 - 00:54:03,374] this is true,
+- [00:54:03,374 - 00:54:04,554] that's one way of seeing it
+- [00:54:04,554 - 00:54:06,534] but if we're talking about a,
+- [00:54:06,534 - 00:54:06,914] you know,
+- [00:54:06,914 - 00:54:07,954] uniformly flowing,
+- [00:54:07,954 - 00:54:09,314] a current of some sort
+- [00:54:09,314 - 00:54:10,414] not an individual particle
+- [00:54:11,894 - 00:54:12,694] what the,
+- [00:54:12,694 - 00:54:15,194] what is the coupling of a current
+- [00:54:15,194 - 00:54:17,034] to the electromagnetic field
+- [00:54:17,794 - 00:54:18,054] okay,
+- [00:54:18,054 - 00:54:18,874] I'll tell you right now
+- [00:54:19,673 - 00:54:20,814] what is it?
+- [00:54:20,814 - 00:54:21,914] A times that current
+- [00:54:21,914 - 00:54:23,094] A times that current,
+- [00:54:23,094 - 00:54:23,754] A dot J
+- [00:54:25,074 - 00:54:25,814] A dot J
+- [00:54:25,814 - 00:54:26,214] look at what,
+- [00:54:26,214 - 00:54:27,454] we're going to come back to this
+- [00:54:27,454 - 00:54:28,734] we're going to come to come back to this
+- [00:54:29,254 - 00:54:30,474] A dot J
+- [00:54:31,494 - 00:54:31,894] uh...
+- [00:54:33,014 - 00:54:34,174] and more generally
+- [00:54:34,654 - 00:54:35,874] this would be the case of
+- [00:54:35,874 - 00:54:37,094] it was only a space component,
+- [00:54:37,094 - 00:54:38,394] this would be the coupling of a
+- [00:54:38,394 - 00:54:40,034] magnetic field held to a current
+- [00:54:41,214 - 00:54:42,994] well that's about what we see here
+- [00:54:42,994 - 00:54:43,974] we see J
+- [00:54:44,853 - 00:54:46,034] and we see A
+- [00:54:46,034 - 00:54:49,214] so we see the pieces plus a time component piece
+- [00:54:49,214 - 00:54:50,274] we see the pieces
+- [00:54:51,434 - 00:54:52,853] that are are traditionally...
+- [00:54:52,854 - 00:54:59,874] traditionally the interaction between electric charges
+- [00:54:59,874 - 00:55:06,894] or electric currents and the electromagnetic
+- [00:55:06,894 - 00:55:07,574] field.
+- [00:55:07,574 - 00:55:10,414] Electromagnetic field is best described in terms
+- [00:55:10,414 - 00:55:13,254] of the vector potential and the electric
+- [00:55:13,254 - 00:55:15,294] and magnetic fields are things that we
+- [00:55:15,294 - 00:55:17,334] build up out of the vector potential.
+- [00:55:17,334 - 00:55:17,754] Okay,
+- [00:55:17,754 - 00:55:22,044] now let's talk about the electromagnetic field
+- [00:55:22,044 - 00:55:26,334] when there are no charges and currents.
+- [00:55:26,474 - 00:55:26,874] In other words,
+- [00:55:26,874 - 00:55:27,814] let's forget about phi.
+- [00:55:27,814 - 00:55:32,594] Let's forget about phi and ask what kind of theory
+- [00:55:32,594 - 00:55:34,494] describes A by itself.
+- [00:55:34,494 - 00:55:36,914] What we're talking about
+- [00:55:36,914 - 00:55:39,334] now is electromagnetic waves propagating
+- [00:55:39,334 - 00:55:40,694] in the absence of charges.
+- [00:55:40,694 - 00:55:42,394] Supposing we just forget phi.
+- [00:55:42,394 - 00:55:44,714] Phi is the thing which describes
+- [00:55:44,714 - 00:55:45,974] the charged currents.
+- [00:55:45,974 - 00:55:48,504] It's the thing in quantum
+- [00:55:48,504 - 00:55:51,034] mechanics which describes the charged particles.
+- [00:55:51,034 - 00:55:51,714] The charged
+- [00:55:51,714 - 00:55:53,374] particles are quanta of this field.
+- [00:55:53,374 - 00:55:55,074] But let's forget charges.
+- [00:55:55,074 - 00:55:57,434] We know that electromagnetism
+- [00:55:58,364 - 00:56:01,389] has an interesting non-trivial behavior even
+- [00:56:01,389 - 00:56:04,414] far from where there are any charges,
+- [00:56:04,414 - 00:56:05,174] namely
+- [00:56:05,174 - 00:56:08,334] electromagnetic waves propagating through empty space.
+- [00:56:08,334 - 00:56:11,794] So there must be some dynamics
+- [00:56:12,604 - 00:56:14,234] to the electromagnetic field,
+- [00:56:14,234 - 00:56:15,954] which is even there.
+- [00:56:15,954 - 00:56:16,254] But we're talking about a fairly random field.
+- [00:56:16,254 - 00:56:17,514] just there in the absence of charges.
+- [00:56:17,514 - 00:56:18,634] So it's not this.
+- [00:56:18,634 - 00:56:20,434] It's something just involving
+- [00:56:20,434 - 00:56:22,954] the electromagnetic field itself when this
+- [00:56:22,954 - 00:56:25,474] field phi is equal to zero.
+- [00:56:26,494 - 00:56:27,014] Oh,
+- [00:56:27,014 - 00:56:28,014] this incidentally,
+- [00:56:28,014 - 00:56:29,694] this would become a squared here,
+- [00:56:29,694 - 00:56:30,634] a mu,
+- [00:56:30,634 - 00:56:31,014] a mu.
+- [00:56:36,294 - 00:56:38,414] So what shall we say
+- [00:56:38,414 - 00:56:40,534] governs the electromagnetic field by itself?
+- [00:56:40,854 - 00:56:41,374] Well,
+- [00:56:41,374 - 00:56:43,284] I would like to maintain this gauge symmetry
+- [00:56:43,284 - 00:56:45,194] if I'm going to go to all of this
+- [00:56:45,194 - 00:56:48,984] effort to invent A just to make
+- [00:56:48,984 - 00:56:52,774] this this this Lagrangian gauge invariant I
+- [00:56:52,774 - 00:56:56,274] certainly don't want to destroy that
+- [00:56:56,274 - 00:56:59,774] gauge invariance by by not having the
+- [00:56:59,774 - 00:57:01,914] electromagnetic field Lagrangian by itself
+- [00:57:01,914 - 00:57:04,054] be gauge invariant by not having
+- [00:57:04,054 - 00:57:07,064] it so we want the electric we want
+- [00:57:07,064 - 00:57:10,074] the Lagrangian that we make up let's call it
+- [00:57:10,074 - 00:57:13,044] L that part of it which depends
+- [00:57:13,044 - 00:57:16,014] on the vector potential in various ways the
+- [00:57:16,014 - 00:57:19,064] vector potential and its derivatives we
+- [00:57:19,064 - 00:57:22,114] want that Lagrangian also to be gauge
+- [00:57:22,114 - 00:57:22,814] invariant
+- [00:57:32,474 - 00:57:35,044] so that brings up the question then what
+- [00:57:35,044 - 00:57:37,614] kind of combinations can I make up out
+- [00:57:37,614 - 00:57:39,694] of just the electromagnetic field of just
+- [00:57:39,694 - 00:57:39,934] a
+- [00:57:39,934 - 00:57:40,054] magnetic field of a particular type of a
+- [00:57:40,054 - 00:57:43,454] by itself the four components of a what
+- [00:57:43,454 - 00:57:46,854] kind of combinations can I make up in
+- [00:57:46,854 - 00:57:48,724] particular out of the derivatives of
+- [00:57:48,724 - 00:57:50,594] a I'm mostly interested in the derivatives
+- [00:57:50,594 - 00:57:52,834] of a it's typically derivatives of
+- [00:57:52,834 - 00:57:55,074] fields which enter into Lagrangians there
+- [00:57:55,074 - 00:57:57,374] may also be things without derivatives
+- [00:57:57,374 - 00:57:59,674] but Lagrangians most important thing is
+- [00:57:59,674 - 00:58:02,014] dependence on the velocities the derivatives
+- [00:58:02,014 - 00:58:04,354] so what kind of thing can I
+- [00:58:04,354 - 00:58:07,064] make out of the derivatives of a
+- [00:58:07,064 - 00:58:09,774] that itself is gauge invariant that might enter
+- [00:58:09,774 - 00:58:10,874] into Lagrangian
+- [00:58:10,874 - 00:58:13,734] with the same gauge invariance that you have
+- [00:58:13,734 - 00:58:16,594] up there in other words a transforming the
+- [00:58:16,594 - 00:58:17,054] same way
+- [00:58:17,054 - 00:58:20,174] yeah that's right with a transforming with
+- [00:58:20,174 - 00:58:23,294] a transforming in this way in other
+- [00:58:23,294 - 00:58:31,524] words invariant under a goes to a minus
+- [00:58:31,524 - 00:58:39,754] 1 over e times the derivative of the derivative
+- [00:58:43,494 - 00:58:47,694] of the derivative of a
+- [00:58:47,694 - 00:58:52,004] okay fine so what's that basically your right
+- [00:58:52,004 - 00:58:56,314] hand is going to do is go hopefully
+- [00:58:56,314 - 00:58:56,694] you got that you know where that number is
+- [00:58:56,694 - 00:58:57,074] but I'm just trying to figure it back out
+- [00:58:57,074 - 00:59:01,504] here let me see a
+- [00:59:01,504 - 00:59:05,934] little bit here we can do
+- [00:59:07,614 - 00:59:08,674] bam-bam down there you guys just
+- [00:59:08,674 - 00:59:09,734] one minute I've done three minutes of
+- [00:59:09,734 - 00:59:12,794] 16 derivatives of A that we can concoct.
+- [00:59:13,474 - 00:59:15,714] Derivative with respect to x of A sub x,
+- [00:59:15,914 - 00:59:18,194] derivative with respect to y of A sub x,
+- [00:59:18,194 - 00:59:18,734] and so forth.
+- [00:59:18,814 - 00:59:19,814] There are 16 of them,
+- [00:59:19,814 - 00:59:22,554] since there are four components of x
+- [00:59:22,554 - 00:59:24,014] and four components of A.
+- [00:59:24,274 - 00:59:27,034] They can all be summarized in
+- [00:59:27,034 - 00:59:29,794] the form d nu A mu.
+- [00:59:31,114 - 00:59:33,474] Mu can go from 0 to 3.
+- [00:59:33,614 - 00:59:34,674] That's four components.
+- [00:59:35,054 - 00:59:36,854] Nu can go from 0 to 3.
+- [00:59:36,854 - 00:59:40,214] And so this is just a convenient way to represent
+- [00:59:40,834 - 00:59:45,674] basically a matrix of 16 independent derivatives
+- [00:59:45,674 - 00:59:48,554] of the four components of A.
+- [00:59:49,414 - 00:59:51,264] Let's see what happens to this
+- [00:59:51,264 - 00:59:53,114] when we make a gauge transformation.
+- [00:59:53,694 - 00:59:55,434] When we make a gauge transformation,
+- [00:59:57,074 - 00:59:59,404] A mu will go to A mu
+- [00:59:59,404 - 01:00:01,734] minus 1 over E d mu theta.
+- [01:00:02,354 - 01:00:06,274] So this will go to d nu of,
+- [01:00:07,513 - 01:00:08,354] A mu,
+- [01:00:11,094 - 01:00:12,174] minus I,
+- [01:00:12,174 - 01:00:13,054] sorry,
+- [01:00:13,054 - 01:00:14,214] minus 1 over I,
+- [01:00:14,914 - 01:00:15,714] 1 over E,
+- [01:00:17,034 - 01:00:18,694] d mu theta.
+- [01:00:21,334 - 01:00:22,514] In other words,
+- [01:00:22,514 - 01:00:24,894] it will pick up an extra term.
+- [01:00:25,034 - 01:00:27,294] The change in d nu
+- [01:00:27,294 - 01:00:29,554] theta will be the extra term,
+- [01:00:29,594 - 01:00:30,834] here's the extra term,
+- [01:00:34,753 - 01:00:35,754] will be,
+- [01:00:37,434 - 01:00:38,854] minus 1 over E,
+- [01:00:40,434 - 01:00:43,814] d nu d mu theta.
+- [01:00:45,454 - 01:00:47,634] d nu d mu theta.
+- [01:00:47,754 - 01:00:48,334] What does this mean?
+- [01:00:48,474 - 01:00:50,594] This means the second partial derivative,
+- [01:00:51,334 - 01:00:53,154] first you differentiate with x mu,
+- [01:00:53,314 - 01:00:55,434] and then you differentiate with respect to x nu.
+- [01:00:55,614 - 01:00:57,474] Everybody understand what this symbol is?
+- [01:00:57,794 - 01:00:59,334] d nu d mu theta?
+- [01:01:01,114 - 01:01:03,294] It's the second partial derivative of theta
+- [01:01:03,294 - 01:01:06,294] with respect to x nu and x mu.
+- [01:01:07,734 - 01:01:08,254] Okay,
+- [01:01:08,254 - 01:01:11,674] that in itself suggests,
+- [01:01:13,414 - 01:01:14,234] if you're,
+- [01:01:14,234 - 01:01:14,534] you know,
+- [01:01:14,534 - 01:01:16,214] if you're fiddled with these things at all,
+- [01:01:16,574 - 01:01:18,404] it would immediately suggest what
+- [01:01:18,404 - 01:01:20,234] the invariant quantity you can make.
+- [01:01:20,674 - 01:01:23,994] Let's look at the related quantity.
+- [01:01:24,474 - 01:01:25,254] This could,
+- [01:01:25,254 - 01:01:25,814] for example,
+- [01:01:25,814 - 01:01:26,154] be,
+- [01:01:27,014 - 01:01:28,234] if nu was 1,
+- [01:01:28,234 - 01:01:29,154] let's take the case,
+- [01:01:29,234 - 01:01:29,974] nu equals 1,
+- [01:01:29,974 - 01:01:31,134] mu equals 2.
+- [01:01:31,494 - 01:01:33,744] That would mean derivative with respect
+- [01:01:33,744 - 01:01:35,994] to x of A sub y,
+- [01:01:36,294 - 01:01:36,834] for example,
+- [01:01:36,834 - 01:01:39,094] 1 corresponds to x,
+- [01:01:39,094 - 01:01:40,714] y corresponds to 2.
+- [01:01:41,154 - 01:01:43,574] There's another quantity which also has an
+- [01:01:43,574 - 01:01:45,994] index x and an index y in it,
+- [01:01:46,094 - 01:01:47,414] and it's sort of the opposite.
+- [01:01:47,734 - 01:01:49,374] It's dy A x.
+- [01:01:51,114 - 01:01:51,754] Okay?
+- [01:01:51,854 - 01:01:55,514] We could represent the matrix of those variables
+- [01:01:56,394 - 01:01:59,934] as d mu A nu.
+- [01:02:02,114 - 01:02:02,753] Alright,
+- [01:02:02,753 - 01:02:03,773] so if x is,
+- [01:02:03,773 - 01:02:06,114] if nu is 1 and mu is 2,
+- [01:02:06,834 - 01:02:09,314] then this could be dx of A y,
+- [01:02:09,574 - 01:02:11,354] and this would be dy of A x.
+- [01:02:11,854 - 01:02:14,314] But each one has 16 components.
+- [01:02:14,554 - 01:02:16,134] What happens to this quantity
+- [01:02:16,134 - 01:02:17,714] when you make a transformation?
+- [01:02:18,714 - 01:02:19,194] Well,
+- [01:02:19,194 - 01:02:21,454] all I have to do is swap mu and nu.
+- [01:02:21,594 - 01:02:22,594] I don't have to do much work.
+- [01:02:22,874 - 01:02:26,334] It goes to d mu A nu.
+- [01:02:26,554 - 01:02:28,554] All I've done is interchange mu and nu.
+- [01:02:29,494 - 01:02:34,714] And then minus d nu,
+- [01:02:35,514 - 01:02:35,994] no,
+- [01:02:35,994 - 01:02:36,594] d mu,
+- [01:02:36,834 - 01:02:37,534] d nu A,
+- [01:02:40,474 - 01:02:41,254] d nu,
+- [01:02:41,254 - 01:02:42,594] d mu,
+- [01:02:42,594 - 01:02:43,494] d nu theta.
+- [01:02:44,194 - 01:02:46,514] All I've done is interchange mu and nu.
+- [01:02:51,434 - 01:02:51,914] Okay,
+- [01:02:51,914 - 01:02:52,554] so d nu,
+- [01:02:52,554 - 01:03:00,734] this goes to minus d nu,
+- [01:03:00,734 - 01:03:02,734] d mu theta.
+- [01:03:03,254 - 01:03:03,734] Okay.
+- [01:03:05,074 - 01:03:05,554] Okay.
+- [01:03:06,834 - 01:03:07,294] Enough,
+- [01:03:07,294 - 01:03:07,294] enough.
+- [01:03:07,294 - 01:03:08,214] So I've got it with how many moves?
+- [01:03:08,214 - 01:03:09,434] My whole value of a
+- [01:03:09,434 - 01:03:24,494] Now it's pretty clear what to do to make something
+- [01:03:24,494 - 01:03:27,554] which doesn't change under a gauge transformation.
+- [01:03:28,174 - 01:03:28,734] Just,
+- [01:03:28,734 - 01:03:29,134] oh,
+- [01:03:29,134 - 01:03:29,734] well,
+- [01:03:29,734 - 01:03:30,794] first of all,
+- [01:03:30,794 - 01:03:31,914] the theorem.
+- [01:03:32,074 - 01:03:34,854] The theorem is that the order of differentiation
+- [01:03:34,854 - 01:03:39,214] of a variable of a function is immaterial.
+- [01:03:39,634 - 01:03:41,474] The derivative with respect to mu
+- [01:03:41,474 - 01:03:43,314] times the derivative with respect to nu
+- [01:03:43,314 - 01:03:45,814] is the same as the derivative interchanged.
+- [01:03:46,494 - 01:03:47,614] For example,
+- [01:03:47,614 - 01:03:50,054] the derivative with respect to x
+- [01:03:50,614 - 01:03:53,274] of the derivative with respect to y of theta
+- [01:03:53,754 - 01:03:56,314] is the same as the derivative of sub y,
+- [01:03:56,314 - 01:03:58,014] derivative of sub x of theta.
+- [01:03:58,014 - 01:04:03,054] Order of operations for derivatives doesn't matter.
+- [01:04:04,974 - 01:04:07,634] dx dy is the same as dy dx.
+- [01:04:10,174 - 01:04:10,854] So,
+- [01:04:10,854 - 01:04:12,894] that means that d nu d mu theta
+- [01:04:12,894 - 01:04:14,934] is the same as d mu d nu theta.
+- [01:04:15,754 - 01:04:18,034] Supposing I subtract these two things
+- [01:04:19,114 - 01:04:20,934] and define a new quantity
+- [01:04:22,813 - 01:04:27,774] d nu a mu minus d mu a nu.
+- [01:04:28,014 - 01:04:29,134] That's not zero.
+- [01:04:30,134 - 01:04:32,094] We're not subtracting the same thing,
+- [01:04:32,134 - 01:04:33,694] we're not subtracting a thing from itself.
+- [01:04:34,134 - 01:04:35,314] We're subtracting,
+- [01:04:35,314 - 01:04:35,854] for example,
+- [01:04:36,034 - 01:04:38,714] dx ay from dy ax.
+- [01:04:39,434 - 01:04:40,374] That's not zero.
+- [01:04:41,174 - 01:04:43,694] But what happens to it under a gauge transformation?
+- [01:04:44,254 - 01:04:45,834] Nothing happens to it
+- [01:04:45,834 - 01:04:48,634] because the shift cancels out.
+- [01:04:48,854 - 01:04:51,954] The change in the two of these is the same
+- [01:04:51,954 - 01:04:53,374] and when you subtract them,
+- [01:04:53,534 - 01:04:55,434] the change cancels out.
+- [01:04:55,634 - 01:04:57,174] So under a gauge transformation,
+- [01:04:57,534 - 01:04:57,994] this just works.
+- [01:04:58,014 - 01:04:58,814] This just goes to itself.
+- [01:05:01,834 - 01:05:04,534] d nu a mu minus d mu a nu.
+- [01:05:04,794 - 01:05:06,634] How many such quantities are there?
+- [01:05:08,754 - 01:05:10,294] 16 to begin with.
+- [01:05:10,954 - 01:05:14,914] There are 16 quantities which are all invariant.
+- [01:05:14,914 - 01:05:18,294] All 16 of them are invariant under gauge transformations.
+- [01:05:18,854 - 01:05:19,334] Now,
+- [01:05:19,334 - 01:05:20,814] there actually aren't 16.
+- [01:05:22,434 - 01:05:26,414] Or at least there aren't 16 non-trivial ones.
+- [01:05:28,014 - 01:05:28,734] 10 of them,
+- [01:05:28,734 - 01:05:29,494] 10 of them?
+- [01:05:31,193 - 01:05:31,634] Well,
+- [01:05:31,634 - 01:05:34,394] first of all,
+- [01:05:34,394 - 01:05:35,314] 4 of them are zero.
+- [01:05:42,514 - 01:05:43,754] All the ones in which
+- [01:05:43,754 - 01:05:44,994] nu and mu are the same.
+- [01:05:45,094 - 01:05:46,554] We can make a matrix out of these.
+- [01:05:47,014 - 01:05:48,894] We can make a matrix out of these,
+- [01:05:49,054 - 01:05:50,774] a 4 by 4 matrix.
+- [01:05:55,434 - 01:05:57,374] Label the matrix entries 0,
+- [01:05:57,374 - 01:05:57,994] 1,
+- [01:05:57,994 - 01:05:57,994] and 2.
+- [01:06:02,254 - 01:06:03,774] And then in each entry,
+- [01:06:03,934 - 01:06:06,194] we could put the appropriate d nu
+- [01:06:06,194 - 01:06:08,454] a mu minus d mu a nu.
+- [01:06:08,594 - 01:06:09,654] I think you get the idea.
+- [01:06:09,814 - 01:06:11,654] What happens in the diagonals here?
+- [01:06:12,174 - 01:06:12,854] There's 0.
+- [01:06:13,194 - 01:06:15,324] This is d 0 a
+- [01:06:15,324 - 01:06:17,454] 0 minus d 0 a 0.
+- [01:06:18,134 - 01:06:19,814] Here we would have d 1
+- [01:06:19,814 - 01:06:21,494] a 1 minus d 1 a 1.
+- [01:06:21,914 - 01:06:24,554] So all the diagonal entries are 0.
+- [01:06:26,774 - 01:06:27,974] It's anti-symmetric.
+- [01:06:27,974 - 01:06:28,654] Yes.
+- [01:06:29,054 - 01:06:30,314] It's anti-symmetric,
+- [01:06:30,314 - 01:06:30,914] which means
+- [01:06:30,914 - 01:06:32,614] when you interchange mu and nu,
+- [01:06:32,754 - 01:06:33,674] it changes sign.
+- [01:06:34,714 - 01:06:35,714] So first of all,
+- [01:06:35,714 - 01:06:37,374] it's 0 along the diagonal.
+- [01:06:40,354 - 01:06:42,674] There are some entries off the diagonal.
+- [01:06:43,034 - 01:06:43,974] For example,
+- [01:06:43,974 - 01:06:44,594] over here,
+- [01:06:44,754 - 01:06:45,894] we would have,
+- [01:06:45,894 - 01:06:46,554] I think,
+- [01:06:46,554 - 01:06:48,914] d 1 a 0,
+- [01:06:49,114 - 01:06:49,614] I think,
+- [01:06:49,614 - 01:06:51,034] minus d 0 a 1.
+- [01:06:52,274 - 01:06:53,854] What would we have down here?
+- [01:06:55,274 - 01:06:57,354] The opposite with the opposite sign,
+- [01:06:57,354 - 01:06:59,434] because when we interchange mu and nu,
+- [01:06:59,994 - 01:07:02,454] the minus sign here causes it to flip.
+- [01:07:03,494 - 01:07:06,454] So whatever we have above the diagonal here,
+- [01:07:06,514 - 01:07:10,234] we have exactly the same thing below the diagonal,
+- [01:07:10,314 - 01:07:11,574] except with the sign changed.
+- [01:07:12,054 - 01:07:14,294] So there's no use of keeping track of the things
+- [01:07:14,294 - 01:07:16,394] above the diagonal and below the diagonal separately.
+- [01:07:17,074 - 01:07:18,734] They're so closely related,
+- [01:07:18,834 - 01:07:20,154] they're just opposites from each other,
+- [01:07:20,194 - 01:07:20,894] that they're not independent.
+- [01:07:21,414 - 01:07:23,834] And so how many independent quantities are there?
+- [01:07:24,494 - 01:07:27,154] There's all the ones above the diagonal.
+- [01:07:27,354 - 01:07:28,234] That's it.
+- [01:07:33,174 - 01:07:37,834] Six independent derivatives of this type that we can form.
+- [01:07:38,114 - 01:07:43,514] Six independent components of this anti-symmetric object.
+- [01:07:44,694 - 01:07:46,454] What are those six independent components?
+- [01:07:46,894 - 01:07:48,674] I will tell you now.
+- [01:07:48,874 - 01:07:50,274] I don't want to hide it and
+- [01:07:50,274 - 01:07:51,674] jump out and surprise you with it.
+- [01:07:51,754 - 01:07:53,894] The six independent components are
+- [01:07:53,894 - 01:07:57,174] the three independent components of the electric field,
+- [01:07:57,834 - 01:08:00,814] and the three independent components of the magnetic field.
+- [01:08:01,534 - 01:08:02,294] In fact,
+- [01:08:02,294 - 01:08:03,494] we could put them up in here.
+- [01:08:03,594 - 01:08:06,054] The three independent components of the electric field
+- [01:08:06,054 - 01:08:07,614] are up in here.
+- [01:08:08,054 - 01:08:10,874] I'll be more precise about them later.
+- [01:08:11,034 - 01:08:12,604] And the three independent components
+- [01:08:12,604 - 01:08:14,174] of the magnetic field are here.
+- [01:08:15,614 - 01:08:16,554] For the moment,
+- [01:08:17,634 - 01:08:19,334] we're just counting how
+- [01:08:19,334 - 01:08:21,033] many independent quantities are there.
+- [01:08:21,374 - 01:08:21,894] Six.
+- [01:08:22,194 - 01:08:24,054] How many independent components of the
+- [01:08:24,054 - 01:08:25,913] electric and magnetic field are there?
+- [01:08:26,354 - 01:08:26,874] Six.
+- [01:08:27,354 - 01:08:27,674] Six independent components of the electric field.
+- [01:08:27,674 - 01:08:29,033] It sounds like they may be related.
+- [01:08:29,113 - 01:08:29,554] In fact,
+- [01:08:29,554 - 01:08:30,514] they are the same thing.
+- [01:08:30,874 - 01:08:33,953] But the precise connections between them we'll come back to.
+- [01:08:35,314 - 01:08:36,714] This object here,
+- [01:08:36,934 - 01:08:39,533] d mu a mu minus d mu a nu,
+- [01:08:42,434 - 01:08:45,354] which is made up out of first derivatives of A,
+- [01:08:49,413 - 01:08:50,734] There's a symbol for it,
+- [01:08:50,734 - 01:08:51,654] and a name for it.
+- [01:08:51,714 - 01:08:53,734] It's called the electromagnetic field tensor.
+- [01:08:55,413 - 01:08:58,163] okay it's called the electromagnetic field tensor
+- [01:08:58,163 - 01:09:00,913] and it consists of the components of
+- [01:09:00,913 - 01:09:07,163] electromagnetic field in B and the symbol for it is F
+- [01:09:07,163 - 01:09:13,413] nu mu so F is just a complex of six objects
+- [01:09:13,413 - 01:09:15,964] that forms an anti-symmetric tensor whose
+- [01:09:15,964 - 01:09:18,514] components are really in disguise the electric
+- [01:09:18,514 - 01:09:21,764] and magnetic fields we'll come back to them but
+- [01:09:21,764 - 01:09:25,014] now we have something that we can build a gauge
+- [01:09:25,014 - 01:09:28,384] invariant Lagrangian out of in fact this is the
+- [01:09:28,384 - 01:09:31,754] only thing which is gauge invariant and made up
+- [01:09:31,754 - 01:09:35,144] out of the first derivatives of a what kind of
+- [01:09:35,144 - 01:09:38,533] thing would we like to have in a Lagrangian for
+- [01:09:38,533 - 01:09:42,624] a well Lagrangians are usually functions of
+- [01:09:42,624 - 01:09:46,714] the variables in their first derivatives in fact
+- [01:09:46,714 - 01:09:48,413] that's always the case Lagrangians are
+- [01:09:48,413 - 01:09:50,544] functions of the variables in their
+- [01:09:50,544 - 01:09:52,674] first derivatives which variables are we talking
+- [01:09:52,674 - 01:09:56,154] about we're talking about the a's anything which
+- [01:09:56,154 - 01:09:59,634] doesn't have derivatives in it a a squared
+- [01:10:00,714 - 01:10:03,644] anything like that is not going to be
+- [01:10:03,644 - 01:10:06,574] gauge invariant it just won't a will change under
+- [01:10:06,574 - 01:10:09,234] a gauge transformation and any simple function
+- [01:10:09,234 - 01:10:11,894] of a that doesn't contain derivatives will not
+- [01:10:11,894 - 01:10:15,054] be gauge invariant the only thing that's easy
+- [01:10:15,054 - 01:10:18,214] to make up that's gauge invariant that contains
+- [01:10:18,214 - 01:10:21,134] a and its first derivatives is f mu nu
+- [01:10:21,134 - 01:10:24,054] that's it that's the only gauge invariant quantities that
+- [01:10:24,054 - 01:10:27,924] there are which contain no more than first derivatives
+- [01:10:27,924 - 01:10:31,794] and that's it so what can you do to
+- [01:10:31,794 - 01:10:35,324] make a Lagrangian that has that's quadratic in
+- [01:10:35,324 - 01:10:38,854] derivatives supposing we want to stick to this
+- [01:10:38,854 - 01:10:43,464] pattern of things which are quadratic in
+- [01:10:43,464 - 01:10:48,074] the derivatives and which is Lorentz invariant let's
+- [01:10:48,213 - 01:10:50,633] come back now there's another invariant so we
+- [01:10:50,633 - 01:10:53,054] wish to keep track of and that's Lorentz invariant
+- [01:10:53,054 - 01:10:56,814] to keep track of Lorentz invariant by now should
+- [01:10:56,814 - 01:11:00,574] be very easy all we have to do is contract
+- [01:11:01,334 - 01:11:04,764] indices upper and lower indices as long
+- [01:11:04,764 - 01:11:08,194] as all indices are contracted correctly then
+- [01:11:08,733 - 01:11:11,453] Lorentz transformations will be a symmetry of
+- [01:11:11,453 - 01:11:14,174] anything that we make it's pretty obvious
+- [01:11:14,174 - 01:11:16,124] is only one thing that we
+- [01:11:16,124 - 01:11:18,074] can make its f mu nu
+- [01:11:19,154 - 01:11:21,094] f mu mu
+- [01:11:30,694 - 01:11:35,384] this is basically sums and differences of squares
+- [01:11:35,384 - 01:11:40,074] of the components of f I'll tell you
+- [01:11:40,074 - 01:11:43,714] exactly what it is it's e squared the
+- [01:11:43,714 - 01:11:47,354] electric field squared minus the magnetic field squared
+- [01:11:47,354 - 01:11:47,774] okay
+- [01:11:48,614 - 01:11:50,954] e squared minus b squared now we're going to come
+- [01:11:50,954 - 01:11:53,294] and we're going to study the nature of this field
+- [01:11:53,294 - 01:11:56,164] tensor and its relation to the electric and
+- [01:11:56,164 - 01:11:59,034] magnetic fields in more detail but I'm sort of
+- [01:11:59,034 - 01:12:02,934] outlining and sketching where we're going that we were
+- [01:12:02,934 - 01:12:06,834] for so let's summarize if we wanted to have
+- [01:12:06,834 - 01:12:11,994] this peculiar gauge invariance then we were forced to
+- [01:12:11,994 - 01:12:17,154] introduce a new variable called a a itself had a
+- [01:12:17,154 - 01:12:21,054] transformation property and it entered into a new
+- [01:12:21,054 - 01:12:24,954] structure called the covariant derivative where is the
+- [01:12:24,954 - 01:12:36,044] covariant derivative d mu plus i e a mu is the covariant derivative
+- [01:12:36,044 - 01:12:47,134] then we discovered that if in the original Lagrangian we could have a
+- [01:12:47,154 - 01:12:49,994] we replaced all derivatives by covariant derivatives.
+- [01:12:50,314 - 01:12:50,954] That's the operation.
+- [01:12:51,234 - 01:12:53,774] Replace all derivatives by covariant derivatives.
+- [01:12:55,214 - 01:12:57,214] And at the same time,
+- [01:12:57,214 - 01:12:58,594] allow the vector potential
+- [01:12:58,594 - 01:13:00,474] to have its own transformation property.
+- [01:13:01,333 - 01:13:03,534] Then the Lagrangian was invariant
+- [01:13:03,534 - 01:13:04,694] under these gauge transformations.
+- [01:13:05,994 - 01:13:07,974] So that's a kind of pretty thing,
+- [01:13:08,094 - 01:13:13,334] that there is a Lagrangian that we can write down
+- [01:13:14,394 - 01:13:16,594] that generalizes the original Lagrangian,
+- [01:13:16,594 - 01:13:17,054] which
+- [01:13:17,154 - 01:13:19,134] has this improved symmetry,
+- [01:13:19,134 - 01:13:20,694] this more powerful symmetry,
+- [01:13:20,774 - 01:13:21,654] or this bigger symmetry,
+- [01:13:21,654 - 01:13:24,074] where you can vary the phases
+- [01:13:24,074 - 01:13:25,674] from point to point in space.
+- [01:13:26,734 - 01:13:27,134] Well,
+- [01:13:27,134 - 01:13:27,574] then we said,
+- [01:13:27,574 - 01:13:28,434] good.
+- [01:13:28,694 - 01:13:30,774] Now let's talk about A by itself.
+- [01:13:31,574 - 01:13:34,554] We've motivated why A has a certain gauge transformation
+- [01:13:34,994 - 01:13:35,274] property.
+- [01:13:35,834 - 01:13:36,954] Now let's ask,
+- [01:13:36,954 - 01:13:39,494] can we make Lagrangians for A by itself,
+- [01:13:39,554 - 01:13:41,474] which have this gauge transformation property,
+- [01:13:41,654 - 01:13:42,934] that they're invariant?
+- [01:13:43,494 - 01:13:46,194] And so we looked around for expressions
+- [01:13:46,194 - 01:13:47,974] which would not transform when
+- [01:13:47,974 - 01:13:49,754] you make a gauge transformation.
+- [01:13:50,534 - 01:13:51,374] In fact,
+- [01:13:51,374 - 01:13:53,174] we looked around for things that we could make up
+- [01:13:53,174 - 01:13:53,974] out of the derivatives.
+- [01:13:54,254 - 01:13:56,594] These are the 16 possible derivatives of A.
+- [01:13:57,954 - 01:14:02,834] And the obvious answer is the anti-symmetric quantity
+- [01:14:02,834 - 01:14:05,314] d mu A mu minus d mu A nu.
+- [01:14:06,374 - 01:14:07,374] For that,
+- [01:14:07,374 - 01:14:11,374] this extra piece which gets induced by the gauge
+- [01:14:11,374 - 01:14:14,334] transformation cancels.
+- [01:14:14,854 - 01:14:16,174] So we found this.
+- [01:14:16,174 - 01:14:17,574] We found a gauge invariant,
+- [01:14:17,574 - 01:14:18,154] F mu nu.
+- [01:14:18,614 - 01:14:20,204] Anything that we make out of
+- [01:14:20,204 - 01:14:21,794] F mu nu will be gauge invariant,
+- [01:14:22,154 - 01:14:25,554] but not anything that we make will be Lorentz invariant.
+- [01:14:26,814 - 01:14:29,634] Just F mu nu by itself is not Lorentz invariant.
+- [01:14:29,654 - 01:14:31,554] It has open indices hanging around here.
+- [01:14:31,934 - 01:14:33,014] It's not a scalar here.
+- [01:14:33,274 - 01:14:35,254] That's what I mean when I say it's not invariant.
+- [01:14:35,334 - 01:14:35,394] Yeah,
+- [01:14:35,394 - 01:14:36,154] it's not a scalar.
+- [01:14:36,594 - 01:14:37,614] It's not a scalar.
+- [01:14:37,734 - 01:14:39,134] It has open indices here.
+- [01:14:39,234 - 01:14:39,794] It has components.
+- [01:14:40,354 - 01:14:43,034] So it'll transform in various ways.
+- [01:14:44,294 - 01:14:46,154] But if we square it,
+- [01:14:46,154 - 01:14:46,154] we'll get a new invariant.
+- [01:14:46,154 - 01:14:47,714] But if we square it and
+- [01:14:47,714 - 01:14:49,274] contract the indices in the right way,
+- [01:14:50,394 - 01:14:52,994] it will become something which is Lorentz invariant.
+- [01:14:53,034 - 01:14:53,634] And in fact,
+- [01:14:53,634 - 01:14:55,994] it is just E squared minus B squared.
+- [01:14:56,354 - 01:14:59,114] It's not obvious that this is Lorentz invariant,
+- [01:14:59,114 - 01:14:59,634] but it is.
+- [01:15:00,234 - 01:15:02,954] E squared minus B squared is a quantity which
+- [01:15:02,954 - 01:15:05,074] is the same in every Lorentz frame.
+- [01:15:06,154 - 01:15:07,494] If we have an electric
+- [01:15:07,494 - 01:15:08,834] field someplace and a magnetic field,
+- [01:15:08,914 - 01:15:10,544] and we look at it
+- [01:15:10,544 - 01:15:12,174] from a different state of motion
+- [01:15:13,034 - 01:15:14,914] or a different angle,
+- [01:15:14,914 - 01:15:16,134] the electric field,
+- [01:15:16,134 - 01:15:16,134] the magnetic field,
+- [01:15:16,134 - 01:15:18,334] the electric and magnetic field components will transform.
+- [01:15:18,654 - 01:15:19,074] In fact,
+- [01:15:19,074 - 01:15:22,794] if we view an electric field from a moving frame,
+- [01:15:23,074 - 01:15:24,794] we'll typically see a magnetic field.
+- [01:15:25,034 - 01:15:27,474] If we view a magnetic field from a moving frame,
+- [01:15:27,574 - 01:15:28,514] we'll see an electric field.
+- [01:15:29,214 - 01:15:32,034] But whatever E squared minus B squared is,
+- [01:15:32,194 - 01:15:34,334] it's the same in every reference frame.
+- [01:15:37,114 - 01:15:40,274] That's the content of this expression.
+- [01:15:40,594 - 01:15:42,264] E squared minus B squared
+- [01:15:42,264 - 01:15:43,934] is invariant because all the indices
+- [01:15:43,934 - 01:15:45,194] are properly contracted.
+- [01:15:45,194 - 01:15:49,394] So now we have a candidate for the action
+- [01:15:49,394 - 01:15:51,874] of the electromagnetic field itself.
+- [01:15:51,994 - 01:15:53,024] We're not going to work
+- [01:15:53,024 - 01:15:54,054] out the equations of motion tonight.
+- [01:15:54,254 - 01:15:55,234] We'll do that another time.
+- [01:15:56,574 - 01:15:59,554] But I'm showing you the logic that went in
+- [01:15:59,554 - 01:16:02,354] to the idea of gauge symmetry.
+- [01:16:06,574 - 01:16:07,054] Well,
+- [01:16:07,054 - 01:16:08,274] let's continue.
+- [01:16:09,934 - 01:16:10,894] That's really,
+- [01:16:10,894 - 01:16:11,394] in a sense,
+- [01:16:11,394 - 01:16:12,474] enough for one night,
+- [01:16:12,474 - 01:16:12,914] isn't it?
+- [01:16:15,394 - 01:16:16,934] Are you going to go into
+- [01:16:16,934 - 01:16:18,474] what's conserved because you have a symmetry?
+- [01:16:18,734 - 01:16:19,134] Yes.
+- [01:16:19,394 - 01:16:19,834] Well,
+- [01:16:19,834 - 01:16:22,734] not tonight,
+- [01:16:22,734 - 01:16:22,994] though.
+- [01:16:23,134 - 01:16:23,834] But I may.
+- [01:16:23,994 - 01:16:24,514] I mean,
+- [01:16:24,514 - 01:16:25,054] yeah,
+- [01:16:25,054 - 01:16:26,354] I'd like to do that.
+- [01:16:26,474 - 01:16:26,714] Yes?
+- [01:16:27,154 - 01:16:28,944] Can you go back to
+- [01:16:28,944 - 01:16:30,734] the analogy of the spinning rope
+- [01:16:30,734 - 01:16:31,994] and describe,
+- [01:16:31,994 - 01:16:32,814] if it's possible,
+- [01:16:32,814 - 01:16:35,354] describe A in regards
+- [01:16:35,354 - 01:16:36,354] to that analogy?
+- [01:16:36,534 - 01:16:36,754] Well,
+- [01:16:36,754 - 01:16:38,014] I'll tell you that the,
+- [01:16:38,014 - 01:16:39,234] no,
+- [01:16:39,234 - 01:16:41,134] I can't do that at this moment
+- [01:16:41,594 - 01:16:43,974] because the analogy involves general relativity.
+- [01:16:44,734 - 01:16:45,174] OK.
+- [01:16:47,853 - 01:16:49,734] But let's put it this way.
+- [01:16:50,094 - 01:16:51,474] In the rope analogy,
+- [01:16:51,474 - 01:16:55,394] these variables phi
+- [01:16:55,394 - 01:16:58,554] are actually coordinates of positions of the rope.
+- [01:16:59,733 - 01:17:02,254] So what we're talking about when we
+- [01:17:02,254 - 01:17:03,514] make these kind of transformations
+- [01:17:03,934 - 01:17:05,434] is coordinate transformations,
+- [01:17:05,434 - 01:17:08,254] which vary from place to place.
+- [01:17:09,314 - 01:17:12,374] Coordinate transformations which vary from place to place
+- [01:17:12,374 - 01:17:15,014] are the material of the general theory of relativity.
+- [01:17:16,154 - 01:17:17,664] So until we would come
+- [01:17:17,664 - 01:17:19,174] to the general theory of relativity,
+- [01:17:19,574 - 01:17:22,134] that jump rope would not look gauge invariant.
+- [01:17:22,534 - 01:17:26,314] But it is gauge invariant when gravity is taken.
+- [01:17:26,434 - 01:17:27,154] But this is beyond,
+- [01:17:27,154 - 01:17:28,254] right now,
+- [01:17:28,254 - 01:17:29,374] beyond the level
+- [01:17:29,374 - 01:17:30,674] of the course at the moment.
+- [01:17:32,054 - 01:17:34,314] If and when we get to study general relativity,
+- [01:17:34,654 - 01:17:36,314] remind me to come back to this,
+- [01:17:36,314 - 01:17:37,234] and we
+- [01:17:37,234 - 01:17:38,874] can see how the jump rope
+- [01:17:38,874 - 01:17:40,514] also has its own gauge invariance.
+- [01:17:40,554 - 01:17:41,394] But not now.
+- [01:17:41,754 - 01:17:44,554] It's not the vector potential.
+- [01:17:44,554 - 01:17:44,834] It's the vector potential.
+- [01:17:44,834 - 01:17:44,874] It's the vector potential.
+- [01:17:44,874 - 01:17:45,934] And the vector potential would be certain components
+- [01:17:45,934 - 01:17:47,274] of the gravitational field.
+- [01:17:48,334 - 01:17:50,554] Certain components of the gravitational field,
+- [01:17:50,554 - 01:17:51,374] which
+- [01:17:51,374 - 01:17:52,994] are there in the general theory of relativity,
+- [01:17:53,414 - 01:17:55,674] would become the analog of the vector potential.
+- [01:17:57,434 - 01:17:59,454] So it's a correct question.
+- [01:17:59,514 - 01:17:59,974] It's a good question.
+- [01:18:00,094 - 01:18:06,034] But it's beyond our level at the moment.
+- [01:18:07,694 - 01:18:08,474] All right.
+- [01:18:08,554 - 01:18:09,724] I think I'm just going
+- [01:18:09,724 - 01:18:10,894] to go on a little more,
+- [01:18:10,894 - 01:18:13,574] and tell you
+- [01:18:14,554 - 01:18:14,874] in a different way,
+- [01:18:14,874 - 01:18:15,814] which,
+- [01:18:15,814 - 01:18:17,374] of course,
+- [01:18:17,374 - 01:18:18,494] is secretly
+- [01:18:18,494 - 01:18:20,544] exactly the same way of
+- [01:18:20,544 - 01:18:22,594] thinking about the electromagnetic field
+- [01:18:22,594 - 01:18:24,654] and its interaction with particles.
+- [01:18:25,074 - 01:18:28,534] This is the electromagnetic field and its interaction
+- [01:18:28,534 - 01:18:30,974] with charged wave fields.
+- [01:18:31,733 - 01:18:34,934] Phi is a charge-carrying wave field.
+- [01:18:35,134 - 01:18:36,414] That's the language one would use,
+- [01:18:36,454 - 01:18:40,014] or a charge-carrying scalar field that carries charge,
+- [01:18:40,314 - 01:18:42,294] in the sense that waves of this field
+- [01:18:43,734 - 01:18:47,294] constitute electric charge densities and electric currents.
+- [01:18:48,654 - 01:18:52,974] And here we see the basic interaction a dot j,
+- [01:18:53,234 - 01:18:55,734] which is the hallmark of the interaction of charges
+- [01:18:55,734 - 01:18:57,094] with the vector potential.
+- [01:19:01,494 - 01:19:02,254] Now,
+- [01:19:02,254 - 01:19:05,474] when we study quantum mechanics,
+- [01:19:05,834 - 01:19:09,314] the particle-field duality,
+- [01:19:09,314 - 01:19:11,534] or the particle-field complementarity,
+- [01:19:11,614 - 01:19:12,274] or whatever boring thing you call it,
+- [01:19:12,274 - 01:19:13,214] or wanted to call it,
+- [01:19:13,214 - 01:19:16,994] tells us that all fields are associated also
+- [01:19:16,994 - 01:19:17,714] with particles.
+- [01:19:18,134 - 01:19:19,154] And in fact,
+- [01:19:19,154 - 01:19:20,414] the phi field is associated
+- [01:19:20,414 - 01:19:21,474] with charged particles.
+- [01:19:23,234 - 01:19:25,584] But we don't need to
+- [01:19:25,584 - 01:19:27,934] study quantum mechanics to figure out
+- [01:19:27,934 - 01:19:29,294] how char- to figure out,
+- [01:19:29,294 - 01:19:31,154] to describe how charged particles
+- [01:19:31,154 - 01:19:33,214] interact with the electromagnetic field.
+- [01:19:33,274 - 01:19:35,774] We can just go back to
+- [01:19:35,774 - 01:19:38,274] the basic particle description of charges
+- [01:19:38,274 - 01:19:39,714] and ask,
+- [01:19:39,714 - 01:19:40,554] in that language,
+- [01:19:40,554 - 01:19:41,754] the original particle,
+- [01:19:41,754 - 01:19:43,934] classical particles with carrying charge,
+- [01:19:44,314 - 01:19:47,054] how do they interact with the electromagnetic field?
+- [01:19:47,674 - 01:19:51,334] And so I want to completely change gears
+- [01:19:51,334 - 01:19:54,004] and go back to classical particles
+- [01:19:54,004 - 01:19:56,674] in the special theory of relativity.
+- [01:19:58,954 - 01:20:00,234] Classical particles,
+- [01:20:00,234 - 01:20:02,714] the Lagrangian for classical particles
+- [01:20:02,714 - 01:20:04,794] in the special theory of relativity,
+- [01:20:05,634 - 01:20:07,344] and then show you
+- [01:20:07,344 - 01:20:09,054] how the electromagnetic field correspondence,
+- [01:20:09,614 - 01:20:10,954] and in particular,
+- [01:20:10,954 - 01:20:11,734] we'll also study the classical particles,
+- [01:20:11,754 - 01:20:13,454] and then we'll see the idea of gauge invariance.
+- [01:20:13,834 - 01:20:15,474] It takes on a different form,
+- [01:20:15,474 - 01:20:17,714] has a different flavor to it,
+- [01:20:17,814 - 01:20:19,174] but it's the same invariance.
+- [01:20:19,554 - 01:20:20,154] Okay,
+- [01:20:20,154 - 01:20:23,754] so let's think of a worldline of a particle.
+- [01:20:24,094 - 01:20:26,034] Here's the worldline of a particle.
+- [01:20:26,434 - 01:20:30,304] The worldline has to be chosen subject to
+- [01:20:30,304 - 01:20:34,174] the rules of the principle of least action.
+- [01:20:34,794 - 01:20:36,354] And so our first question is,
+- [01:20:36,354 - 01:20:40,614] what is the action of a moving particle,
+- [01:20:40,614 - 01:20:42,634] moving in the special theory of relativity?
+- [01:20:42,874 - 01:20:43,414] For the moment,
+- [01:20:43,414 - 01:20:44,514] let's forget fields.
+- [01:20:44,614 - 01:20:45,794] No fields in the problem,
+- [01:20:45,794 - 01:20:47,374] just a free particle.
+- [01:20:47,934 - 01:20:48,574] Well,
+- [01:20:48,574 - 01:20:50,804] there's really only one invariant that
+- [01:20:50,804 - 01:20:53,034] we can make for a trajectory
+- [01:20:53,614 - 01:20:57,074] that in any way looks anything like an action.
+- [01:20:58,734 - 01:21:01,324] The natural quantity to identify with a
+- [01:21:01,324 - 01:21:03,914] trajectory is the length of the trajectory.
+- [01:21:06,214 - 01:21:09,634] The length of the trajectory is the relative,
+- [01:21:09,634 - 01:21:12,554] the relativistic length of the trajectory.
+- [01:21:13,354 - 01:21:15,954] The relativistic length of the trajectory is
+- [01:21:15,954 - 01:21:18,554] the natural quantity to identify with the action.
+- [01:21:19,314 - 01:21:20,474] In any case,
+- [01:21:20,474 - 01:21:21,054] it's a candidate.
+- [01:21:21,454 - 01:21:23,034] And the reason it's a
+- [01:21:23,034 - 01:21:24,614] good candidate is because it's invariant.
+- [01:21:24,814 - 01:21:26,074] It's invariant,
+- [01:21:26,074 - 01:21:27,914] the proper time,
+- [01:21:27,914 - 01:21:30,314] I should say the length of the trajectory,
+- [01:21:30,394 - 01:21:32,494] I mean the proper time along the trajectory.
+- [01:21:33,354 - 01:21:36,274] The proper time along the trajectory is basically
+- [01:21:36,274 - 01:21:39,194] the action of a trajectory of a particle.
+- [01:21:39,634 - 01:21:40,114] Well,
+- [01:21:40,114 - 01:21:40,714] not quite.
+- [01:21:40,934 - 01:21:42,804] You have to multiply the proper
+- [01:21:42,804 - 01:21:44,674] time along the trajectory by the mass.
+- [01:21:45,734 - 01:21:48,354] And for reasons which are pretty much conventional,
+- [01:21:48,354 - 01:21:50,114] there's a minus sign.
+- [01:21:50,534 - 01:21:51,094] Ah,
+- [01:21:51,094 - 01:21:52,834] I hate these things.
+- [01:21:54,014 - 01:21:55,234] Will we run out of them?
+- [01:21:56,734 - 01:21:57,514] Let's see.
+- [01:21:59,034 - 01:21:59,674] Minus.
+- [01:22:02,534 - 01:22:03,354] Minus m,
+- [01:22:03,354 - 01:22:04,774] the mass of the particle,
+- [01:22:04,774 - 01:22:09,094] times the proper time between the initial point
+- [01:22:09,094 - 01:22:10,934] and the final point along the trajectory.
+- [01:22:11,214 - 01:22:12,134] But what's the proper time?
+- [01:22:12,394 - 01:22:12,974] Well,
+- [01:22:12,974 - 01:22:14,864] let's start with the proper time
+- [01:22:14,864 - 01:22:16,754] along a little piece of trajectory.
+- [01:22:17,844 - 01:22:22,359] That's d tau squared is equal to dt squared
+- [01:22:22,359 - 01:22:26,874] minus dx squared plus dy squared plus dz squared.
+- [01:22:27,054 - 01:22:28,534] I'm just going to write dx squared here.
+- [01:22:29,254 - 01:22:30,134] In fact,
+- [01:22:30,134 - 01:22:30,694] let's,
+- [01:22:30,694 - 01:22:32,694] that stands for dx squared
+- [01:22:32,694 - 01:22:34,694] plus dy squared plus dz squared.
+- [01:22:34,854 - 01:22:36,254] Let me write it out once in full.
+- [01:22:36,794 - 01:22:39,074] Minus dy squared minus dz squared.
+- [01:22:40,934 - 01:22:42,654] That's d tau squared.
+- [01:22:43,674 - 01:22:45,414] That's the proper time squared of a small little interval.
+- [01:22:45,414 - 01:22:47,484] And I suppose I could
+- [01:22:47,484 - 01:22:49,554] put a little arrow over this.
+- [01:22:51,294 - 01:22:52,194] dx squared.
+- [01:22:52,794 - 01:22:53,514] All right.
+- [01:22:54,434 - 01:22:55,474] That's dt squared.
+- [01:22:55,914 - 01:23:00,034] That's the proper time squared of a small little interval.
+- [01:23:00,814 - 01:23:01,954] There are some speeds of
+- [01:23:01,954 - 01:23:03,094] light which would go in here.
+- [01:23:03,154 - 01:23:04,034] If we had speed of light,
+- [01:23:04,034 - 01:23:04,914] where would they go?
+- [01:23:05,774 - 01:23:06,334] Ah,
+- [01:23:06,334 - 01:23:07,234] I don't know.
+- [01:23:08,454 - 01:23:09,014] I don't know.
+- [01:23:16,033 - 01:23:17,074] I'm going to leave them out.
+- [01:23:17,654 - 01:23:20,114] They don't add anything to the discussion at this point.
+- [01:23:21,234 - 01:23:21,634] Okay.
+- [01:23:21,734 - 01:23:23,574] So this is d tau squared.
+- [01:23:23,834 - 01:23:24,614] And d tau,
+- [01:23:24,614 - 01:23:26,914] the actual proper time along the trajectory,
+- [01:23:26,914 - 01:23:28,174] is just the square root of this.
+- [01:23:29,513 - 01:23:31,013] So let's get rid of
+- [01:23:31,013 - 01:23:32,514] the c squares because we don't,
+- [01:23:32,514 - 01:23:35,004] because we're grownups and we don't need to take
+- [01:23:35,004 - 01:23:37,494] the speed of light to not be equal to one.
+- [01:23:39,734 - 01:23:41,344] And d tau is equal
+- [01:23:41,344 - 01:23:42,954] to the square root of this.
+- [01:23:47,834 - 01:23:50,654] The total path length,
+- [01:23:50,654 - 01:23:53,714] or the total proper time along the path length,
+- [01:23:53,714 - 01:23:54,794] is an integral.
+- [01:23:56,274 - 01:24:00,064] An integral from the beginning to the end along
+- [01:24:00,064 - 01:24:03,854] the trajectory of the square root of dt squared.
+- [01:24:04,034 - 01:24:06,054] And I'm just going to write minus dx squared.
+- [01:24:06,194 - 01:24:07,594] But please keep in mind that
+- [01:24:07,594 - 01:24:08,994] that dx squared stands for d.
+- [01:24:08,994 - 01:24:09,954] So that's the integral for dx
+- [01:24:09,954 - 01:24:10,914] squared plus dy squared plus dz squared.
+- [01:24:12,234 - 01:24:12,674] Okay.
+- [01:24:13,174 - 01:24:14,054] That's the action.
+- [01:24:14,314 - 01:24:15,434] Now what on earth does this mean?
+- [01:24:15,594 - 01:24:17,774] The square root of the square of a differential.
+- [01:24:19,614 - 01:24:20,494] All right.
+- [01:24:20,514 - 01:24:21,034] First of all,
+- [01:24:21,034 - 01:24:22,724] what it means is chop
+- [01:24:22,724 - 01:24:24,414] up the trajectory into little pieces.
+- [01:24:25,774 - 01:24:29,044] Calculate the square root of dt squared minus dx squared
+- [01:24:29,044 - 01:24:32,314] along the trajectory for each little piece and add them up.
+- [01:24:32,434 - 01:24:32,774] Basically,
+- [01:24:32,774 - 01:24:33,194] that's all.
+- [01:24:33,294 - 01:24:33,734] Add them up.
+- [01:24:34,694 - 01:24:35,854] That's what the symbol means.
+- [01:24:36,454 - 01:24:37,714] But we can make it
+- [01:24:37,714 - 01:24:38,974] look like a more conventional integral.
+- [01:24:38,974 - 01:24:43,874] By dividing inside the square
+- [01:24:43,874 - 01:24:48,774] root and then multiplying out here.
+- [01:24:51,034 - 01:24:54,394] I've basically multiplied and divided by dt.
+- [01:24:54,914 - 01:24:57,494] But if I put a dt under the square root,
+- [01:24:57,494 - 01:24:58,634] it becomes dt squared.
+- [01:24:59,414 - 01:25:00,114] All right.
+- [01:25:00,134 - 01:25:01,374] So what's in the square root here?
+- [01:25:01,514 - 01:25:03,454] What's in the square root is the integral.
+- [01:25:04,394 - 01:25:04,954] Sorry.
+- [01:25:05,074 - 01:25:07,074] What's in the square root is 1.
+- [01:25:07,594 - 01:25:08,954] dt squared minus dx squared.
+- [01:25:08,954 - 01:25:09,474] You've got the integral.
+- [01:25:09,474 - 01:25:10,074] 1 over dt squared?
+- [01:25:10,214 - 01:25:10,614] 1 over dt squared.
+- [01:25:11,294 - 01:25:11,854] Minus,
+- [01:25:11,854 - 01:25:13,274] now what's dx by dt?
+- [01:25:14,894 - 01:25:15,774] speed of light.
+- [01:25:16,394 - 01:25:17,494] It's the velocity.
+- [01:25:17,634 - 01:25:19,014] This is the square of the velocity.
+- [01:25:19,374 - 01:25:22,874] The square of the three components of the velocity summed.
+- [01:25:22,954 - 01:25:27,394] vx squared plus vy squared plus vz squared.
+- [01:25:27,974 - 01:25:29,294] So this is just,
+- [01:25:29,294 - 01:25:31,674] let me call it x dot squared.
+- [01:25:33,614 - 01:25:36,894] Dot means derivative with respect to ordinary time.
+- [01:25:37,034 - 01:25:37,854] Not proper time.
+- [01:25:38,334 - 01:25:40,914] x dot squared and of course it stands for x
+- [01:25:40,914 - 01:25:43,494] dot squared plus dy dot squared plus z dot squared
+- [01:25:43,494 - 01:25:44,714] And I could also call it
+- [01:25:44,714 - 01:25:45,934] just V squared if I wanted,
+- [01:25:45,934 - 01:25:48,454] but I'm gonna leave it there as x dot squared
+- [01:25:49,954 - 01:25:50,794] times Dt
+- [01:25:52,794 - 01:25:53,234] No,
+- [01:25:53,234 - 01:25:56,514] I don't want to call it nothing I just want
+- [01:25:56,514 - 01:25:59,794] to express it in terms of the velocity itself minus M
+- [01:26:03,794 - 01:26:05,154] Well now I have a
+- [01:26:05,154 - 01:26:06,514] thing which looks like a Lagrangian.
+- [01:26:06,514 - 01:26:09,174] I should put the minus M on the inside
+- [01:26:09,174 - 01:26:11,374] We put on the inside in here
+- [01:26:13,074 - 01:26:15,734] And put the minus sign also minus M
+- [01:26:17,954 - 01:26:20,434] Square root of 1 minus x dot squared
+- [01:26:21,434 - 01:26:22,834] Lagrangians are all our
+- [01:26:23,614 - 01:26:26,694] Actions are always integrals over Lagrangians
+- [01:26:26,694 - 01:26:29,774] integrals with respect to time of Lagrangian
+- [01:26:29,794 - 01:26:31,814] Now we're not talking about field theory.
+- [01:26:31,814 - 01:26:33,854] We're just talking about the motion of a particle
+- [01:26:34,454 - 01:26:36,764] So there's no integration of a space
+- [01:26:36,764 - 01:26:39,074] the degree of freedom now is just x
+- [01:26:40,194 - 01:26:42,274] x y and z of
+- [01:26:42,274 - 01:26:42,614] T
+- [01:26:43,454 - 01:26:45,054] the position of the particle
+- [01:26:45,054 - 01:26:46,654] as a function of time is
+- [01:26:48,254 - 01:26:51,444] The degrees of freedom here's a Lagrangian which depends
+- [01:26:51,444 - 01:26:54,634] on velocities it happens and doesn't depend independently on x
+- [01:26:54,634 - 01:26:57,654] It only depends on x dot well.
+- [01:26:57,654 - 01:26:58,664] This is the kind of
+- [01:26:58,664 - 01:26:59,674] Lagrangians we've seen in the past
+- [01:26:59,794 - 01:27:00,734] It's a little bit unusual
+- [01:27:01,434 - 01:27:03,404] Instead of having an x dot squared as
+- [01:27:03,404 - 01:27:05,374] a square root of 1 minus x dot squared
+- [01:27:05,374 - 01:27:08,114] But it falls within the class of Lagrangians
+- [01:27:08,114 - 01:27:10,854] which depend on the velocities and the coordinates
+- [01:27:11,594 - 01:27:14,494] so it is a special case of a
+- [01:27:15,234 - 01:27:16,174] conventional Lagrangian
+- [01:27:16,934 - 01:27:20,194] Let's use that first of all to calculate the momentum
+- [01:27:21,194 - 01:27:23,754] What's the formula in terms of a
+- [01:27:23,754 - 01:27:26,314] Lagrangian for the momentum conjugate to x?
+- [01:27:26,694 - 01:27:27,254] remember
+- [01:27:30,434 - 01:27:32,304] The derivative of the Lagrangian
+- [01:27:32,304 - 01:27:34,174] this whole thing is Lagrangian here
+- [01:27:35,574 - 01:27:38,254] The derivative of the Lagrangian
+- [01:27:38,254 - 01:27:40,934] with respect to x x dot
+- [01:27:40,934 - 01:27:44,034] All right,
+- [01:27:44,034 - 01:27:46,894] so now we get to try out our skills at
+- [01:27:48,154 - 01:27:49,733] Differentiating this is x dots.
+- [01:27:49,733 - 01:27:52,534] Let me put y dot squared plus z dot squared
+- [01:27:55,554 - 01:27:56,174] Okay,
+- [01:27:56,174 - 01:27:57,934] anybody good at differentiating
+- [01:28:00,474 - 01:28:00,954] the
+- [01:28:05,813 - 01:28:06,493] x dot squared plus y
+- [01:28:06,493 - 01:28:07,174] dot squared plus z dot squared
+- [01:28:07,174 - 01:28:09,243] That gives us a square root
+- [01:28:09,243 - 01:28:11,313] in the denominator with a 2
+- [01:28:12,694 - 01:28:14,314] square root of 1 minus now
+- [01:28:14,314 - 01:28:15,934] let me call it v squared
+- [01:28:17,494 - 01:28:18,814] x dot squared plus y
+- [01:28:18,814 - 01:28:20,134] dot squared plus z dot squared
+- [01:28:20,134 - 01:28:21,904] And then we have to differentiate
+- [01:28:21,904 - 01:28:23,674] the argument of the square root
+- [01:28:29,794 - 01:28:31,054] So we have to separate a
+- [01:28:31,054 - 01:28:32,314] line a 2 and an x dot
+- [01:28:32,314 - 01:28:35,614] plus z dot
+- [01:28:35,614 - 01:28:36,054] those two없ies cancel
+- [01:28:36,054 - 01:28:40,074] which gets a line a 2 and and x dot
+- [01:28:40,074 - 01:28:41,234] Now we get m
+- [01:28:42,194 - 01:28:43,534] Times x dot
+- [01:28:43,534 - 01:28:47,174] Better yet m times the x component of the velocity
+- [01:28:49,674 - 01:28:52,134] over the square root of 1 minus v squared.
+- [01:28:52,134 - 01:28:54,874] I think we saw that before.
+- [01:28:54,874 - 01:28:55,994] We have studied this,
+- [01:28:56,054 - 01:28:56,454] have we not?
+- [01:28:56,454 - 01:28:57,174] Right.
+- [01:28:57,174 - 01:28:59,214] This is v squared over c squared if
+- [01:28:59,214 - 01:29:01,254] we were to put the c's back in.
+- [01:29:03,654 - 01:29:04,134] Well,
+- [01:29:04,134 - 01:29:04,854] that's nice.
+- [01:29:04,854 - 01:29:12,994] We see that the canonical momentum is just the momentum.
+- [01:29:12,994 - 01:29:14,434] The relativistic
+- [01:29:14,434 - 01:29:14,634] momentum,
+- [01:29:14,634 - 01:29:16,234] mass times velocity,
+- [01:29:16,234 - 01:29:18,214] with the Einstein correction,
+- [01:29:18,214 - 01:29:19,854] square root of 1 minus v squared
+- [01:29:19,854 - 01:29:21,254] over c squared in the denominator.
+- [01:29:21,254 - 01:29:23,194] What about the energy?
+- [01:29:23,194 - 01:29:28,894] What about the energy of the particle?
+- [01:29:31,214 - 01:29:33,774] The energy is the Hamiltonian.
+- [01:29:33,774 - 01:29:35,674] So if you have to,
+- [01:29:35,674 - 01:29:37,454] go back to your classical mechanics,
+- [01:29:37,454 - 01:29:38,614] but
+- [01:29:38,614 - 01:29:39,714] I'll tell you what the answer,
+- [01:29:39,714 - 01:29:40,854] I'm going to just tell you the answer.
+- [01:29:45,853 - 01:29:48,314] It's a little bit of algebra that goes into it,
+- [01:29:48,314 - 01:29:49,934] but I'll tell you what you have to do.
+- [01:29:50,334 - 01:29:54,404] The Hamiltonian of a system is the sum
+- [01:29:54,404 - 01:29:58,474] over the degrees of freedom of the velocities times
+- [01:29:59,734 - 01:30:02,854] the momenta minus the Lagrangian.
+- [01:30:02,854 - 01:30:03,954] Do you remember that formula?
+- [01:30:03,954 - 01:30:05,254] All right.
+- [01:30:05,254 - 01:30:07,534] So we have this.
+- [01:30:08,874 - 01:30:10,474] There's only one coordinate now,
+- [01:30:10,474 - 01:30:12,194] or three coordinates to be more precise.
+- [01:30:12,194 - 01:30:13,134] Three coordinates,
+- [01:30:13,274 - 01:30:13,454] x,
+- [01:30:13,454 - 01:30:13,694] y,
+- [01:30:13,694 - 01:30:13,974] and z.
+- [01:30:13,974 - 01:30:14,834] So,
+- [01:30:14,834 - 01:30:15,494] for example,
+- [01:30:15,494 - 01:30:19,694] one of the terms will be x dot,
+- [01:30:19,694 - 01:30:21,054] that's q dot,
+- [01:30:21,054 - 01:30:23,834] times p sub x times m
+- [01:30:23,834 - 01:30:25,984] v sub x over the square root
+- [01:30:25,984 - 01:30:28,134] of 1 minus v squared over c squared.
+- [01:30:28,134 - 01:30:30,234] And then we have to
+- [01:30:30,234 - 01:30:31,554] subtract off the Lagrangian,
+- [01:30:31,554 - 01:30:34,734] which is plus m square
+- [01:30:34,734 - 01:30:37,914] root of 1 minus v squared.
+- [01:30:37,914 - 01:30:39,574] Okay.
+- [01:30:40,274 - 01:30:41,934] A little bit of algebra,
+- [01:30:41,934 - 01:30:42,914] not much.
+- [01:30:42,914 - 01:30:44,334] We'll convince you.
+- [01:30:46,534 - 01:30:47,694] Another factor of c.
+- [01:30:47,954 - 01:30:49,274] Another factor of c.
+- [01:30:49,274 - 01:30:50,394] Oh,
+- [01:30:50,394 - 01:30:51,754] yeah,
+- [01:30:51,754 - 01:30:53,474] let's get rid of the factors.
+- [01:30:53,474 - 01:30:54,574] Let's get rid of the c's.
+- [01:30:54,654 - 01:30:54,894] You're right.
+- [01:30:54,894 - 01:30:56,134] Let's just get rid of them.
+- [01:30:56,134 - 01:30:57,334] Yeah.
+- [01:30:57,334 - 01:31:02,954] Because I've been loose in the coefficients
+- [01:31:03,254 - 01:31:05,214] of c here in other places,
+- [01:31:05,214 - 01:31:07,054] let's just leave c equal to 1.
+- [01:31:10,114 - 01:31:10,594] Oh,
+- [01:31:10,594 - 01:31:12,214] this isn't so hard.
+- [01:31:13,054 - 01:31:17,414] This is x dot times vx is vx squared,
+- [01:31:17,414 - 01:31:17,814] right?
+- [01:31:21,874 - 01:31:22,594] Oh,
+- [01:31:22,594 - 01:31:23,534] of course,
+- [01:31:23,534 - 01:31:26,074] there's also contributions from y and z.
+- [01:31:26,074 - 01:31:28,954] So this vx squared will become
+- [01:31:28,954 - 01:31:31,774] m vx squared plus vy squared plus vc squared.
+- [01:31:31,774 - 01:31:35,194] We should have added up the three terms.
+- [01:31:35,194 - 01:31:36,274] This
+- [01:31:36,274 - 01:31:38,274] just becomes m v squared,
+- [01:31:38,274 - 01:31:41,834] all three components.
+- [01:31:41,834 - 01:31:42,894] And then we have this.
+- [01:31:42,894 - 01:31:42,894] This is m v squared.
+- [01:31:42,914 - 01:31:44,334] So this is m v squared plus m.
+- [01:31:44,334 - 01:31:45,334] So let's see.
+- [01:31:45,334 - 01:31:45,994] So what is this?
+- [01:31:45,994 - 01:31:47,134] Let's put them over a common
+- [01:31:47,134 - 01:31:47,734] denominator.
+- [01:31:47,734 - 01:31:51,114] Let's put them both over the same common denominator,
+- [01:31:51,114 - 01:31:52,014] square root of 1
+- [01:31:52,014 - 01:31:52,934] minus v squared.
+- [01:31:52,934 - 01:31:55,094] Let's get rid of the square root here.
+- [01:31:55,094 - 01:32:04,034] The v squares cancel,
+- [01:32:04,034 - 01:32:05,214] and we just
+- [01:32:05,214 - 01:32:07,314] get m over the square
+- [01:32:07,314 - 01:32:09,414] root of 1 minus v squared.
+- [01:32:09,414 - 01:32:12,314] Have we seen that before?
+- [01:32:13,434 - 01:32:13,954] Yeah.
+- [01:32:13,954 - 01:32:15,354] That's the energy.
+- [01:32:15,354 - 01:32:17,274] If we wanted to give it proper
+- [01:32:17,274 - 01:32:19,194] units of energy when the c's are
+- [01:32:19,194 - 01:32:19,534] in there,
+- [01:32:19,534 - 01:32:21,374] it would be mc squared
+- [01:32:21,374 - 01:32:23,214] over v squared over c squared.
+- [01:32:23,214 - 01:32:26,294] And that would be the energy
+- [01:32:26,294 - 01:32:26,934] of the particle.
+- [01:32:26,934 - 01:32:27,914] All right,
+- [01:32:27,914 - 01:32:30,154] that's the canonical formulation of
+- [01:32:30,154 - 01:32:32,394] a particle in special relativity,
+- [01:32:32,614 - 01:32:36,054] not under the influence of any force field.
+- [01:32:36,054 - 01:32:38,794] All right.
+- [01:32:38,794 - 01:32:39,694] The question is,
+- [01:32:39,694 - 01:32:41,714] what happens when
+- [01:32:41,714 - 01:32:42,534] we...
+- [01:32:42,914 - 01:32:45,274] include an electromagnetic field?
+- [01:32:45,274 - 01:32:47,234] Now,
+- [01:32:47,234 - 01:32:48,374] I'm getting tired,
+- [01:32:48,374 - 01:32:49,574] so the question is,
+- [01:32:49,574 - 01:32:50,074] yeah,
+- [01:32:50,074 - 01:32:50,474] let's
+- [01:32:50,474 - 01:32:50,974] see if I...
+- [01:32:52,474 - 01:32:53,454] It's rather easy,
+- [01:32:53,454 - 01:32:54,334] but...
+- [01:32:56,014 - 01:32:56,514] Okay,
+- [01:32:56,514 - 01:32:57,714] let's do it.
+- [01:33:01,114 - 01:33:02,794] I don't want to stop here because
+- [01:33:02,794 - 01:33:04,474] we're going to be gone for a week,
+- [01:33:04,474 - 01:33:06,154] and I guess I'd like
+- [01:33:06,154 - 01:33:08,304] to finish the line of argument and
+- [01:33:08,304 - 01:33:10,454] then have everybody study it in some detail.
+- [01:33:10,454 - 01:33:11,654] Suppose
+- [01:33:11,654 - 01:33:12,894] there's an electromagnetic field.
+- [01:33:12,914 - 01:33:15,874] An electromagnetic field is described by a vector potential,
+- [01:33:15,874 - 01:33:16,454] a mu.
+- [01:33:16,454 - 01:33:18,014] So let's suppose
+- [01:33:18,014 - 01:33:19,654] there's a vector potential
+- [01:33:19,654 - 01:33:21,294] or a four-dimensional vector potential,
+- [01:33:21,294 - 01:33:21,834] a mu.
+- [01:33:21,834 - 01:33:24,174] How can I combine
+- [01:33:24,174 - 01:33:28,164] it with a particle to make an action
+- [01:33:28,164 - 01:33:32,154] that involves the particle moving in the electromagnetic
+- [01:33:32,154 - 01:33:32,794] field?
+- [01:33:32,794 - 01:33:34,484] I'm not talking about the
+- [01:33:34,484 - 01:33:36,174] action of the electromagnetic field now,
+- [01:33:36,174 - 01:33:36,974] just the particle,
+- [01:33:37,214 - 01:33:40,614] the influence of the electromagnetic field on it.
+- [01:33:40,874 - 01:33:41,594] All right.
+- [01:33:41,614 - 01:33:42,154] All right.
+- [01:33:42,154 - 01:33:42,894] So what can I do?
+- [01:33:42,894 - 01:33:42,894] I can't do anything.
+- [01:33:42,894 - 01:33:42,894] I can't do anything.
+- [01:33:42,894 - 01:33:42,894] I can't do anything.
+- [01:33:42,914 - 01:33:43,174] I can't do anything.
+- [01:33:43,454 - 01:33:46,054] involves a mu and a particle trajectory to
+- [01:33:46,054 - 01:33:48,654] make something that involves a mu and the particle
+- [01:33:48,654 - 01:33:49,214] trajectory,
+- [01:33:49,214 - 01:33:51,254] which is Lorentz invariant.
+- [01:33:52,634 - 01:33:53,114] Well,
+- [01:33:53,114 - 01:33:54,214] there's not too many things.
+- [01:33:54,414 - 01:33:55,294] First of all,
+- [01:33:55,294 - 01:33:57,494] you could think of an infinite variety of things,
+- [01:33:57,494 - 01:33:59,054] but most of them would
+- [01:33:59,054 - 01:34:00,274] be exceedingly complicated.
+- [01:34:00,994 - 01:34:04,614] There's one simple thing that you can write down.
+- [01:34:06,634 - 01:34:07,674] Anybody know what it is?
+- [01:34:07,814 - 01:34:08,554] a dot v.
+- [01:34:09,014 - 01:34:09,494] Well,
+- [01:34:09,494 - 01:34:10,434] this is a fourth vector.
+- [01:34:10,674 - 01:34:11,714] Can you write it?
+- [01:34:12,414 - 01:34:12,894] Okay.
+- [01:34:12,894 - 01:34:13,474] That's a four vector.
+- [01:34:16,094 - 01:34:18,854] So we don't want to use a conventional velocity,
+- [01:34:18,854 - 01:34:20,834] dx vp.
+- [01:34:21,534 - 01:34:22,614] a dot p?
+- [01:34:23,054 - 01:34:24,534] a dot p?
+- [01:34:25,474 - 01:34:27,544] p is not a thing
+- [01:34:27,544 - 01:34:29,614] that you usually put in Lagrangians.
+- [01:34:30,314 - 01:34:31,674] We usually put in,
+- [01:34:31,674 - 01:34:32,914] all right,
+- [01:34:32,914 - 01:34:34,354] but let's,
+- [01:34:36,394 - 01:34:37,494] it's a simple thing.
+- [01:34:38,714 - 01:34:41,634] Instead of a dot v,
+- [01:34:41,634 - 01:34:45,174] instead of a dot v,
+- [01:34:45,354 - 01:34:46,454] which is on the right track,
+- [01:34:46,454 - 01:34:51,254] let's try a times,
+- [01:34:51,814 - 01:34:52,934] not v mu,
+- [01:34:52,934 - 01:34:55,394] but dx mu by d tau.
+- [01:35:02,154 - 01:35:03,234] But wait a minute.
+- [01:35:04,454 - 01:35:05,574] That's okay.
+- [01:35:05,634 - 01:35:06,694] This is an interesting quantity.
+- [01:35:06,814 - 01:35:07,474] a mu.
+- [01:35:07,494 - 01:35:09,494] d mu times dx mu by d tau.
+- [01:35:09,674 - 01:35:10,554] This is a four vector,
+- [01:35:10,554 - 01:35:11,714] dx mu by d tau.
+- [01:35:12,054 - 01:35:13,854] But this is not conventional velocity.
+- [01:35:15,754 - 01:35:18,734] And it looks a little bit awkward.
+- [01:35:19,314 - 01:35:20,654] But let's take the action.
+- [01:35:20,754 - 01:35:22,354] Let's try to use this in an action.
+- [01:35:22,574 - 01:35:24,254] What's the natural thing to do with this?
+- [01:35:24,574 - 01:35:26,424] The natural thing to do with it
+- [01:35:26,424 - 01:35:28,274] is to integrate it along the trajectory.
+- [01:35:28,834 - 01:35:30,114] But do you integrate it dt?
+- [01:35:33,334 - 01:35:34,074] And if not,
+- [01:35:34,074 - 01:35:34,554] why not?
+- [01:35:36,914 - 01:35:37,474] The answer is no.
+- [01:35:37,474 - 01:35:39,354] You wouldn't want to integrate it dt,
+- [01:35:39,654 - 01:35:41,834] because this would not be Lorentz invariant.
+- [01:35:42,174 - 01:35:45,114] dt is not Lorentz invariant.
+- [01:35:45,134 - 01:35:47,014] What is Lorentz invariant is d tau.
+- [01:35:52,994 - 01:35:55,584] Another way of saying the whole same
+- [01:35:55,584 - 01:35:58,174] thing is we could include in the action
+- [01:35:58,774 - 01:36:02,314] just the integral of a mu dx mu.
+- [01:36:03,214 - 01:36:04,314] What does this mean?
+- [01:36:04,314 - 01:36:06,674] This means we go along the trajectory,
+- [01:36:06,994 - 01:36:08,714] we tromp up the trajectory,
+- [01:36:09,034 - 01:36:10,934] and for each little interval,
+- [01:36:11,094 - 01:36:12,814] we take its dx mu,
+- [01:36:14,054 - 01:36:16,374] and we multiply it by a mu.
+- [01:36:18,084 - 01:36:19,614] a mu at that point.
+- [01:36:20,194 - 01:36:21,934] a mu right at that point,
+- [01:36:21,974 - 01:36:22,974] and we add them up.
+- [01:36:24,494 - 01:36:28,014] That's a quantity which is relativistically invariant.
+- [01:36:28,494 - 01:36:29,074] Why?
+- [01:36:29,434 - 01:36:33,014] Because it's the summation of a bunch of scalars.
+- [01:36:33,674 - 01:36:34,994] a mu dx mu,
+- [01:36:35,154 - 01:36:36,874] a four vector with a lower index,
+- [01:36:37,074 - 01:36:38,754] times a four vector with an upper index,
+- [01:36:39,034 - 01:36:39,934] that's invariant,
+- [01:36:40,014 - 01:36:40,714] that's a scalar.
+- [01:36:41,234 - 01:36:43,094] And so we add them all up,
+- [01:36:43,114 - 01:36:43,874] we get a scalar.
+- [01:36:44,554 - 01:36:47,054] This is a good quantity to begin with.
+- [01:36:47,514 - 01:36:47,914] Now,
+- [01:36:47,914 - 01:36:49,774] I'm going to throw in one more factor here.
+- [01:36:49,854 - 01:36:51,394] I'm going to throw in the electric charge.
+- [01:36:51,634 - 01:36:53,214] That's just a numerical multiple,
+- [01:36:53,354 - 01:36:54,794] the electric charge of the particle.
+- [01:36:55,494 - 01:36:56,774] That ought to go in there.
+- [01:36:57,194 - 01:36:58,354] Why should it go in there?
+- [01:36:58,414 - 01:36:58,494] Well,
+- [01:36:58,494 - 01:36:59,734] if the electric charge was zero,
+- [01:36:59,934 - 01:37:01,324] then we should have no
+- [01:37:01,324 - 01:37:02,714] interaction with the electromagnetic field.
+- [01:37:03,014 - 01:37:03,974] So presumably,
+- [01:37:03,974 - 01:37:05,434] the strength of interaction
+- [01:37:05,434 - 01:37:08,294] between the electric and magnetic fields on the one hand
+- [01:37:08,294 - 01:37:11,414] and the particle is through its electric charge,
+- [01:37:11,534 - 01:37:13,134] so that's a reasonable thing to put in there.
+- [01:37:14,794 - 01:37:17,934] But this doesn't look like a conventional Lagrangian.
+- [01:37:18,764 - 01:37:19,574] Where's the velocity?
+- [01:37:19,834 - 01:37:23,014] Where's the dt?
+- [01:37:23,334 - 01:37:24,694] Where's the Lagrangian dt?
+- [01:37:25,594 - 01:37:26,214] Well,
+- [01:37:26,214 - 01:37:27,634] that's easy to fix.
+- [01:37:27,854 - 01:37:29,934] Just divide by dt
+- [01:37:30,724 - 01:37:32,254] and multiply by dt.
+- [01:37:35,894 - 01:37:37,014] What does this mean?
+- [01:37:38,894 - 01:37:40,254] It's integral E.
+- [01:37:40,614 - 01:37:41,174] Now,
+- [01:37:41,174 - 01:37:42,154] let's take the time component.
+- [01:37:42,554 - 01:37:44,794] The time component would be A naught,
+- [01:37:45,074 - 01:37:45,894] naught for time,
+- [01:37:46,634 - 01:37:47,194] times,
+- [01:37:47,194 - 01:37:48,174] now what's x naught?
+- [01:37:48,414 - 01:37:49,274] x naught is t.
+- [01:37:49,834 - 01:37:51,714] So that's just dt by dt.
+- [01:37:52,014 - 01:37:52,694] That's one.
+- [01:37:53,274 - 01:37:57,154] And then plus electric charge.
+- [01:37:57,694 - 01:37:59,134] Let's take the x component.
+- [01:37:59,574 - 01:38:02,074] A sub x times dx dt.
+- [01:38:02,314 - 01:38:02,994] What is dx?
+- [01:38:03,014 - 01:38:04,794] That's v sub x,
+- [01:38:04,794 - 01:38:05,134] right?
+- [01:38:05,294 - 01:38:07,554] That's the x component of the velocity.
+- [01:38:09,334 - 01:38:11,474] If we combine all of the terms,
+- [01:38:11,634 - 01:38:15,374] we'll just get A dot v dt.
+- [01:38:17,634 - 01:38:21,734] So somebody earlier said that the Lagrangian for,
+- [01:38:21,874 - 01:38:23,974] somebody earlier said that the interaction
+- [01:38:23,974 - 01:38:26,454] between the vector potential
+- [01:38:27,094 - 01:38:30,454] and the charged particle was through A dot v.
+- [01:38:30,774 - 01:38:31,154] Well,
+- [01:38:31,154 - 01:38:31,394] yes,
+- [01:38:31,394 - 01:38:31,774] that's right.
+- [01:38:31,774 - 01:38:32,474] Here you see it,
+- [01:38:32,554 - 01:38:33,414] but there's another term,
+- [01:38:33,913 - 01:38:34,914] integral A naught.
+- [01:38:36,714 - 01:38:37,954] This is the interaction.
+- [01:38:37,994 - 01:38:39,134] This is the Lagrangian,
+- [01:38:41,334 - 01:38:42,134] or here.
+- [01:38:42,254 - 01:38:43,234] This is the action
+- [01:38:44,794 - 01:38:45,714] for a particle
+- [01:38:47,734 - 01:38:49,414] in an electromagnetic field.
+- [01:38:49,554 - 01:38:50,234] It's very simple.
+- [01:38:50,294 - 01:38:53,274] It's just a line integral of A dot dx.
+- [01:38:53,894 - 01:38:55,294] Do you have an E squared there?
+- [01:38:55,614 - 01:38:56,414] E squared?
+- [01:38:57,334 - 01:38:57,734] Yeah,
+- [01:38:57,734 - 01:38:59,234] you have an E outside the parenthesis.
+- [01:38:59,414 - 01:38:59,594] Oh,
+- [01:38:59,594 - 01:38:59,894] sorry.
+- [01:39:01,774 - 01:39:02,214] No,
+- [01:39:02,214 - 01:39:02,914] no E squared.
+- [01:39:04,914 - 01:39:06,074] No one in second.
+- [01:39:06,374 - 01:39:06,914] That's right.
+- [01:39:08,314 - 01:39:09,834] E times A dot v.
+- [01:39:12,374 - 01:39:13,034] All right,
+- [01:39:13,034 - 01:39:14,434] I don't want to pursue this too much now
+- [01:39:14,434 - 01:39:17,954] other than to make one observation about it.
+- [01:39:18,094 - 01:39:20,034] Just one observation about it,
+- [01:39:20,094 - 01:39:23,274] and that's that it's gauge invariant,
+- [01:39:23,294 - 01:39:25,554] that it has a certain gauge invariance
+- [01:39:25,554 - 01:39:27,054] that is an action principle,
+- [01:39:28,574 - 01:39:30,634] thought of as an action principle,
+- [01:39:30,634 - 01:39:32,354] it has a gauge invariance.
+- [01:39:35,774 - 01:39:36,374] So,
+- [01:39:36,374 - 01:39:36,974] yeah,
+- [01:39:36,974 - 01:39:38,254] even before I do that,
+- [01:39:38,354 - 01:39:41,974] let me relate some of this stuff
+- [01:39:41,974 - 01:39:43,094] to what's over here.
+- [01:39:45,974 - 01:39:47,514] Supposing I have a particle
+- [01:39:47,514 - 01:39:49,394] moving along a trajectory like that,
+- [01:39:50,794 - 01:39:52,414] and it's a charged particle.
+- [01:39:53,314 - 01:39:56,154] There's an electric current that flows.
+- [01:39:56,994 - 01:39:58,654] Both time component,
+- [01:39:58,694 - 01:40:00,094] there's an electric charge density,
+- [01:40:00,094 - 01:40:01,494] and there's a flow of charge.
+- [01:40:01,954 - 01:40:03,354] The flow of charge is
+- [01:40:03,354 - 01:40:04,754] just because the charge is moving.
+- [01:40:04,914 - 01:40:05,054] Now,
+- [01:40:05,054 - 01:40:09,534] where is the current localized?
+- [01:40:10,554 - 01:40:12,514] It's localized wherever the particle is.
+- [01:40:12,674 - 01:40:14,254] It's right sitting on top of the particle.
+- [01:40:14,534 - 01:40:16,154] So wherever the particle is,
+- [01:40:16,274 - 01:40:17,414] there's a flow of current,
+- [01:40:17,554 - 01:40:18,834] if the particle is moving,
+- [01:40:19,034 - 01:40:20,254] and there's a charge density.
+- [01:40:20,554 - 01:40:22,194] The charge density is just describing
+- [01:40:22,194 - 01:40:25,114] the charge density of that single particle.
+- [01:40:25,834 - 01:40:27,154] So there's a flow,
+- [01:40:27,354 - 01:40:30,074] so there's a current along the trajectory,
+- [01:40:30,094 - 01:40:31,074] along the trajectory of the particle.
+- [01:40:32,114 - 01:40:34,354] The space component of the current,
+- [01:40:34,554 - 01:40:35,874] the flux of the charge,
+- [01:40:36,134 - 01:40:38,574] that's proportional to the velocity of the charge.
+- [01:40:38,674 - 01:40:40,734] If the particle is not moving,
+- [01:40:40,934 - 01:40:42,414] there's no flow of charge.
+- [01:40:42,874 - 01:40:44,254] There may be a charge density,
+- [01:40:44,554 - 01:40:45,934] but there's no flow of charge.
+- [01:40:46,754 - 01:40:48,254] If the particle is moving,
+- [01:40:48,474 - 01:40:49,434] there's a flow of charge.
+- [01:40:49,934 - 01:40:51,954] So along this trajectory,
+- [01:40:52,234 - 01:40:53,074] there is a J.
+- [01:40:54,974 - 01:40:58,134] The time component is just the fact
+- [01:40:58,134 - 01:40:59,194] that there's a charge there,
+- [01:41:01,614 - 01:41:04,514] a charge density at the point where the particle is.
+- [01:41:04,834 - 01:41:06,654] And the space components of J,
+- [01:41:06,914 - 01:41:08,634] what are they proportional to?
+- [01:41:08,814 - 01:41:11,174] They're proportional to the electric charge
+- [01:41:11,174 - 01:41:13,674] of the particle times its velocity.
+- [01:41:15,654 - 01:41:18,094] It's right at the point where the particle is.
+- [01:41:18,134 - 01:41:19,874] There's a current which is proportional
+- [01:41:19,874 - 01:41:20,774] to the velocity,
+- [01:41:20,974 - 01:41:22,794] in the direction of the velocity,
+- [01:41:22,914 - 01:41:24,994] and of course it also involves the electric charge.
+- [01:41:26,353 - 01:41:26,834] Well,
+- [01:41:26,834 - 01:41:27,394] let's see,
+- [01:41:27,394 - 01:41:28,114] where did we have it?
+- [01:41:28,174 - 01:41:29,334] We had the Lagrangian,
+- [01:41:30,094 - 01:41:30,554] here it is,
+- [01:41:30,654 - 01:41:31,974] A dot V.
+- [01:41:33,514 - 01:41:34,774] What is A dot V?
+- [01:41:35,154 - 01:41:36,554] A dot V
+- [01:41:39,074 - 01:41:41,814] is clearly similar to
+- [01:41:43,914 - 01:41:46,014] or E A dot V.
+- [01:41:48,474 - 01:41:50,334] E times V is the current.
+- [01:41:52,234 - 01:41:53,594] Where did I do it?
+- [01:41:53,594 - 01:41:54,094] I lost it.
+- [01:41:55,074 - 01:41:55,674] Yeah,
+- [01:41:55,674 - 01:41:56,074] here it is.
+- [01:41:56,254 - 01:41:57,914] J is E times V.
+- [01:41:58,694 - 01:42:00,074] E times V is the current.
+- [01:42:00,094 - 01:42:04,174] This is the current dotted into the vector potential.
+- [01:42:05,114 - 01:42:05,654] Well,
+- [01:42:05,654 - 01:42:07,074] that's pretty much what you have over here.
+- [01:42:07,594 - 01:42:09,654] Current times vector potential.
+- [01:42:10,254 - 01:42:11,894] So we see there's a similarity.
+- [01:42:12,454 - 01:42:15,014] The similarity being that in both cases,
+- [01:42:15,034 - 01:42:18,294] the vector potential is coupled directly
+- [01:42:18,294 - 01:42:20,234] to the charge flow,
+- [01:42:20,434 - 01:42:21,764] to the flux of charge
+- [01:42:21,764 - 01:42:23,094] or to the density of charge.
+- [01:42:24,534 - 01:42:26,114] And I just wanted to point
+- [01:42:26,114 - 01:42:27,694] out that similarity at this point,
+- [01:42:27,794 - 01:42:29,274] that in both cases,
+- [01:42:29,274 - 01:42:31,614] it's charge current or current of charge
+- [01:42:32,124 - 01:42:33,214] times vector potential,
+- [01:42:33,394 - 01:42:34,694] which goes into the Lagrangian.
+- [01:42:34,834 - 01:42:36,594] The last thing I want
+- [01:42:36,594 - 01:42:38,354] to do is just talk about
+- [01:42:38,354 - 01:42:42,074] the gauge invariance of this Lagrangian.
+- [01:42:42,394 - 01:42:44,174] Is it gauge invariant?
+- [01:42:46,574 - 01:42:47,614] Not quite,
+- [01:42:47,614 - 01:42:48,454] but almost,
+- [01:42:48,454 - 01:42:49,714] and it's good enough.
+- [01:42:53,714 - 01:42:57,594] Let's look at the action between two points.
+- [01:42:59,274 - 01:43:01,864] What will it mean to say
+- [01:43:01,864 - 01:43:04,454] that the action is gauge invariant?
+- [01:43:04,734 - 01:43:05,174] Well,
+- [01:43:05,174 - 01:43:07,114] supposing the action changes
+- [01:43:07,714 - 01:43:09,294] when I do a gauge transformation,
+- [01:43:09,614 - 01:43:10,974] but it changes in a
+- [01:43:10,974 - 01:43:12,334] way that has no effect whatever
+- [01:43:13,034 - 01:43:15,074] on the motion of a particle.
+- [01:43:16,434 - 01:43:17,294] In other words,
+- [01:43:17,294 - 01:43:20,474] it changes in a way that has no implication
+- [01:43:20,474 - 01:43:23,234] whatever for how the particle moves.
+- [01:43:23,674 - 01:43:26,854] That's good enough to say that there's a symmetry.
+- [01:43:27,114 - 01:43:28,134] So let's see what happens.
+- [01:43:28,934 - 01:43:31,694] Supposing I make a gauge transformation on a mu.
+- [01:43:32,094 - 01:43:33,154] What does that do?
+- [01:43:33,254 - 01:43:34,234] What does it add to a mu?
+- [01:43:35,694 - 01:43:40,134] a mu goes to a mu
+- [01:43:40,134 - 01:43:44,574] plus 1 over e d mu theta,
+- [01:43:44,854 - 01:43:52,094] where theta is just this arbitrary function theta of x.
+- [01:43:52,354 - 01:43:53,314] Any function,
+- [01:43:53,314 - 01:43:53,634] whatever,
+- [01:43:53,634 - 01:43:55,554] I can make such a gauge transformation.
+- [01:43:56,074 - 01:43:57,614] What happens to the action?
+- [01:43:58,354 - 01:44:01,214] The action gets an extra piece to it.
+- [01:44:01,854 - 01:44:05,474] We have to add to it e
+- [01:44:05,474 - 01:44:09,094] times the integral of the change in a.
+- [01:44:09,394 - 01:44:10,534] That's 1 over e.
+- [01:44:10,774 - 01:44:11,794] That cancels the e.
+- [01:44:13,434 - 01:44:14,514] d mu theta,
+- [01:44:14,514 - 01:44:16,754] that's the shift in a,
+- [01:44:17,814 - 01:44:19,414] times the x mu dt,
+- [01:44:19,414 - 01:44:20,634] the tau.
+- [01:44:23,254 - 01:44:23,774] Well,
+- [01:44:23,774 - 01:44:24,594] just the x mu.
+- [01:44:24,694 - 01:44:25,714] Just the x mu.
+- [01:44:31,853 - 01:44:33,494] Anybody know what this integral is?
+- [01:44:35,114 - 01:44:37,234] From the starting point to the end point,
+- [01:44:37,934 - 01:44:39,114] along the trajectory,
+- [01:44:40,954 - 01:44:43,614] the derivative of theta times the x mu,
+- [01:44:43,774 - 01:44:46,054] the mu derivative of theta times the x mu.
+- [01:44:46,834 - 01:44:47,674] The difference?
+- [01:44:47,794 - 01:44:48,174] The angle?
+- [01:44:48,334 - 01:44:48,394] Yeah.
+- [01:44:49,374 - 01:44:51,164] It's just the difference of theta
+- [01:44:51,164 - 01:44:52,954] between the end points of the integrand,
+- [01:44:53,114 - 01:44:54,814] between the end points of the integral.
+- [01:44:55,374 - 01:44:56,434] This is the change.
+- [01:44:56,674 - 01:44:58,114] Let's break it up into little pieces.
+- [01:44:58,114 - 01:45:01,134] This is the change in theta when
+- [01:45:01,134 - 01:45:04,154] you change x by a little bit,
+- [01:45:04,294 - 01:45:05,954] times the change in x.
+- [01:45:07,194 - 01:45:09,494] Each little interval along here,
+- [01:45:10,334 - 01:45:13,794] this integrand is just the change in theta from going,
+- [01:45:13,834 - 01:45:15,594] and going from one point to the next.
+- [01:45:16,054 - 01:45:17,634] When you add them all up,
+- [01:45:17,794 - 01:45:20,254] it just gives you the total change in theta
+- [01:45:20,254 - 01:45:22,514] in going from the initial point,
+- [01:45:22,514 - 01:45:23,334] theta initial,
+- [01:45:23,334 - 01:45:24,294] to theta final.
+- [01:45:24,454 - 01:45:24,774] Sorry,
+- [01:45:24,774 - 01:45:25,434] theta initial,
+- [01:45:25,434 - 01:45:27,714] theta final.
+- [01:45:28,114 - 01:45:32,894] This whole integral is just theta final minus theta initial.
+- [01:45:36,554 - 01:45:37,154] Well,
+- [01:45:37,154 - 01:45:38,954] why doesn't such a term in the action
+- [01:45:39,714 - 01:45:43,314] have any implication for the trajectory?
+- [01:45:44,834 - 01:45:46,814] Because it doesn't depend on the trajectory.
+- [01:45:47,234 - 01:45:48,764] It just depends on the value of
+- [01:45:48,764 - 01:45:50,294] the theta at the two end points,
+- [01:45:50,973 - 01:45:52,534] and it doesn't depend on the trajectory.
+- [01:45:52,794 - 01:45:54,534] No matter what trajectory you select,
+- [01:45:55,434 - 01:45:58,094] this integral here is always going to be the same.
+- [01:45:59,014 - 01:46:01,154] It's just the difference of theta
+- [01:46:01,154 - 01:46:03,034] at the beginning and end of the trajectory.
+- [01:46:04,114 - 01:46:04,714] So,
+- [01:46:04,714 - 01:46:06,414] if this contributes something
+- [01:46:07,114 - 01:46:08,794] which doesn't depend on the trajectory,
+- [01:46:09,114 - 01:46:11,514] it will not have any influence whatever
+- [01:46:12,874 - 01:46:15,474] on what trajectory the particle takes.
+- [01:46:15,814 - 01:46:17,154] And in that sense,
+- [01:46:17,254 - 01:46:20,274] this is not an interesting contribution to the action.
+- [01:46:20,514 - 01:46:22,934] It has no implication for the motion of the particle.
+- [01:46:23,214 - 01:46:25,974] The important part of the action doesn't change
+- [01:46:25,974 - 01:46:28,094] the part which really influences
+- [01:46:28,114 - 01:46:29,694] the particle does not change
+- [01:46:29,694 - 01:46:31,174] when you make a gauge transformation.
+- [01:46:31,674 - 01:46:32,294] So,
+- [01:46:32,294 - 01:46:34,014] we see from this particle perspective
+- [01:46:34,873 - 01:46:37,654] that gauge transformations are also important
+- [01:46:37,654 - 01:46:41,214] in variances of the action of a charged particle
+- [01:46:41,214 - 01:46:43,494] with the electromagnetic field.
+- [01:46:44,614 - 01:46:45,254] So,
+- [01:46:45,254 - 01:46:46,254] this time,
+- [01:46:46,254 - 01:46:48,834] we're not talking about a field
+- [01:46:48,834 - 01:46:49,954] carrying the charge.
+- [01:46:50,154 - 01:46:51,714] We're just talking about a point charge
+- [01:46:51,714 - 01:46:52,834] moving through space.
+- [01:46:55,834 - 01:46:56,414] So,
+- [01:46:56,414 - 01:46:58,014] we see from two different perspectives
+- [01:46:58,734 - 01:47:02,294] that gauge symmetry is a fundamental symmetry
+- [01:47:02,294 - 01:47:03,934] of the interaction of charges
+- [01:47:03,934 - 01:47:06,174] with the electromagnetic field.
+- [01:47:07,894 - 01:47:10,154] I will be gone next week.
+- [01:47:10,254 - 01:47:11,894] I have to give a lecture someplace.
+- [01:47:12,254 - 01:47:13,434] A couple of places.
+- [01:47:14,774 - 01:47:16,894] And I'll be back the week after.
+- [01:47:17,614 - 01:47:19,794] How many lessons have we had so far?
+- [01:47:20,994 - 01:47:21,574] Seven.
+- [01:47:22,534 - 01:47:23,014] Eight.
+- [01:47:23,414 - 01:47:24,794] Seems to me it must be eight.
+- [01:47:25,134 - 01:47:25,614] Yeah.
+- [01:47:25,934 - 01:47:26,414] So,
+- [01:47:26,414 - 01:47:26,954] we have two more.
+- [01:47:29,254 - 01:47:31,994] And I think we're getting somewhere.
+- [01:47:32,594 - 01:47:33,074] We've,
+- [01:47:33,074 - 01:47:33,654] you know,
+- [01:47:33,654 - 01:47:34,634] but I want to,
+- [01:47:34,654 - 01:47:35,774] what I do want to go through now
+- [01:47:35,774 - 01:47:38,174] is the electromagnetic field,
+- [01:47:38,694 - 01:47:41,434] the equations of motion for the electromagnetic field,
+- [01:47:41,654 - 01:47:45,794] why F mu nu is connected to E and B,
+- [01:47:47,034 - 01:47:50,034] and to see that the electromagnetic field
+- [01:47:50,034 - 01:47:51,474] actually has the effect
+- [01:47:51,574 - 01:47:53,414] on a charged particle that you would expect,
+- [01:47:54,274 - 01:47:57,134] namely that it exerts forces
+- [01:47:57,134 - 01:47:59,154] of the electrical and magnetic kind.
+- [01:48:00,214 - 01:48:01,904] Then we could maybe spend a
+- [01:48:01,904 - 01:48:03,594] little bit of time with this
+- [01:48:03,594 - 01:48:06,214] and see that the flow of charge
+- [01:48:06,214 - 01:48:09,154] in this picture here also behaves
+- [01:48:09,154 - 01:48:12,574] as you would expect for charges flowing through space
+- [01:48:12,574 - 01:48:15,014] if the charges were described by this field.
+- [01:48:15,494 - 01:48:16,134] Okay.
+- [01:48:16,214 - 01:48:17,634] I think we're finished for tonight.
+- [01:48:25,034 - 01:48:25,874] Kidney
+- [01:48:25,874 - 01:48:27,534] The preceding program is copyrighted
+- [01:48:27,534 - 01:48:28,494] by Stanford University.
+- [01:48:28,934 - 01:48:31,654] Please visit us at stanford.edu.
