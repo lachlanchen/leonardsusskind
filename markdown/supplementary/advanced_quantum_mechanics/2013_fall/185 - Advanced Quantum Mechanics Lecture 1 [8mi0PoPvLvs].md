@@ -1,0 +1,2613 @@
+# Transcript
+
+Source: supplementary/advanced_quantum_mechanics/2013_fall/185 - Advanced Quantum Mechanics Lecture 1 [8mi0PoPvLvs].webm
+
+- [00:00:04,919 - 00:00:06,180] Stanford University
+- [00:00:09,479 - 00:00:10,120] Okay.
+- [00:00:11,800 - 00:00:12,440] Alright,
+- [00:00:12,440 - 00:00:16,360] so I figured I have to start with a review
+- [00:00:17,000 - 00:00:20,940] because I do understand it's been two quarters since
+- [00:00:20,940 - 00:00:24,880] you last had lectures from me on quantum mechanics.
+- [00:00:25,120 - 00:00:26,280] On the other hand,
+- [00:00:26,280 - 00:00:28,360] they can't spend the whole quarter doing that.
+- [00:00:28,360 - 00:00:33,020] What I want to spend the quarter
+- [00:00:33,020 - 00:00:37,680] on is the applications of quantum mechanics,
+- [00:00:37,800 - 00:00:38,740] not the technology,
+- [00:00:38,740 - 00:00:39,980] but the physics problems.
+- [00:00:40,700 - 00:00:43,060] And the basic physics problems that
+- [00:00:43,060 - 00:00:45,420] I want to go through this quarter
+- [00:00:45,420 - 00:00:47,960] are those for which
+- [00:00:47,960 - 00:00:50,500] quantum mechanics was originally invented,
+- [00:00:50,500 - 00:00:51,320] discovered,
+- [00:00:51,320 - 00:00:54,420] invented by...
+- [00:00:54,420 - 00:00:55,200] I...
+- [00:00:55,200 - 00:00:55,600] I...
+- [00:00:58,779 - 00:00:59,199] Einstein,
+- [00:00:59,199 - 00:00:59,620] Heisenberg,
+- [00:00:59,620 - 00:01:00,280] Schrödinger,
+- [00:01:00,280 - 00:01:00,840] Pauli,
+- [00:01:00,840 - 00:01:01,520] all those people.
+- [00:01:04,759 - 00:01:05,179] Namely,
+- [00:01:05,179 - 00:01:05,600] atoms.
+- [00:01:09,020 - 00:01:09,440] Electrons.
+- [00:01:10,280 - 00:01:11,520] I'm going to do atoms first,
+- [00:01:11,520 - 00:01:11,880] and you say,
+- [00:01:11,880 - 00:01:13,920] how can I do atoms first before I do electrons?
+- [00:01:14,180 - 00:01:15,560] Electrons are a part of atoms.
+- [00:01:16,220 - 00:01:16,460] It's alright,
+- [00:01:16,460 - 00:01:19,400] we'll do a little bit about electrons,
+- [00:01:19,400 - 00:01:20,440] just almost nothing,
+- [00:01:20,620 - 00:01:23,030] but just enough to be able to write
+- [00:01:23,030 - 00:01:25,440] down the basic equations of the hydrogen atom.
+- [00:01:26,400 - 00:01:28,340] Discuss the hydrogen atom a little bit,
+- [00:01:29,200 - 00:01:35,020] and then move on to further investigations of the electron.
+- [00:01:35,940 - 00:01:36,860] And once...
+- [00:01:36,860 - 00:01:38,020] And when we say the electron,
+- [00:01:38,020 - 00:01:40,760] we're actually studying a class of particles,
+- [00:01:40,940 - 00:01:42,440] not just electrons,
+- [00:01:42,440 - 00:01:45,220] a wide class of particles which behave like electrons,
+- [00:01:45,400 - 00:01:47,520] which include mu particles,
+- [00:01:47,520 - 00:01:48,520] quarks,
+- [00:01:48,520 - 00:01:50,140] other things like that.
+- [00:01:50,900 - 00:01:51,660] And then,
+- [00:01:51,660 - 00:01:52,260] the photon.
+- [00:01:52,920 - 00:01:54,200] So it's going to be atoms,
+- [00:01:54,200 - 00:01:55,060] electrons,
+- [00:01:55,060 - 00:01:55,420] and electrons.
+- [00:01:55,420 - 00:01:55,800] And photons.
+- [00:01:57,190 - 00:02:01,640] But one of the themes that will recur is symmetries.
+- [00:02:02,619 - 00:02:05,049] Symmetries of nature and how
+- [00:02:05,049 - 00:02:07,480] symmetries are realized in quantum mechanics.
+- [00:02:08,580 - 00:02:11,360] How symmetries are represented in quantum mechanics,
+- [00:02:11,620 - 00:02:15,140] and what they tell us about the quantum mechanical system.
+- [00:02:16,100 - 00:02:17,830] Symmetries in quantum mechanics
+- [00:02:17,830 - 00:02:19,560] are an extremely powerful tool,
+- [00:02:20,420 - 00:02:21,040] which...
+- [00:02:21,040 - 00:02:23,480] I'm going to tell you what a symmetry is,
+- [00:02:23,480 - 00:02:24,640] if you don't know what a symmetry is,
+- [00:02:24,640 - 00:02:24,960] it's okay.
+- [00:02:24,960 - 00:02:26,000] At the moment.
+- [00:02:27,019 - 00:02:29,720] But let's begin with a very,
+- [00:02:29,720 - 00:02:31,060] very lightening review
+- [00:02:31,920 - 00:02:34,520] of the last quarter of quantum mechanics.
+- [00:02:35,180 - 00:02:36,140] First of all,
+- [00:02:36,140 - 00:02:38,350] the whole story begins by asking how
+- [00:02:38,350 - 00:02:40,560] do you represent the state of a system.
+- [00:02:40,820 - 00:02:42,460] We could go back a step
+- [00:02:42,460 - 00:02:44,100] and ask what is a system,
+- [00:02:44,220 - 00:02:45,820] but I'll assume you know what a system is.
+- [00:02:46,360 - 00:02:48,560] And how do you represent the states of a system.
+- [00:02:49,440 - 00:02:50,960] In classical mechanics,
+- [00:02:50,960 - 00:02:53,780] the states of a system are represented as points
+- [00:02:53,780 - 00:02:55,120] in phase space.
+- [00:02:55,500 - 00:02:56,820] In quantum mechanics,
+- [00:02:56,820 - 00:02:59,100] they're represented by state vectors.
+- [00:02:59,740 - 00:03:02,040] The idea of a vector is not
+- [00:03:02,040 - 00:03:04,340] a vector like a pointer in space,
+- [00:03:04,440 - 00:03:06,140] pointing in a certain direction in space.
+- [00:03:06,420 - 00:03:07,780] It's an abstract notion.
+- [00:03:08,200 - 00:03:09,820] You can add vectors.
+- [00:03:10,300 - 00:03:12,440] You can multiply them by constants.
+- [00:03:12,760 - 00:03:16,370] And the mathematical structure of a state vector
+- [00:03:16,370 - 00:03:19,980] is a mathematical vector in a vector space.
+- [00:03:20,440 - 00:03:22,640] The vector space is not three-dimensional,
+- [00:03:22,640 - 00:03:24,120] except in special cases.
+- [00:03:24,420 - 00:03:25,920] It could be any-dimensional.
+- [00:03:26,400 - 00:03:28,080] So we represent states
+- [00:03:32,080 - 00:03:33,780] by state vectors,
+- [00:03:33,920 - 00:03:36,060] and the symbol for a state vector
+- [00:03:37,880 - 00:03:40,640] is Dirac's ket symbol,
+- [00:03:40,940 - 00:03:41,420] ket,
+- [00:03:41,420 - 00:03:42,240] K-E-T,
+- [00:03:42,520 - 00:03:46,080] which is the latter half of the term braket,
+- [00:03:46,240 - 00:03:49,340] like bra-ket or bra-ket.
+- [00:03:49,580 - 00:03:52,620] Every state can be either represented by a ket symbol
+- [00:03:52,640 - 00:03:56,720] or by a corresponding bra-vector.
+- [00:03:58,460 - 00:03:59,060] Together,
+- [00:03:59,060 - 00:04:01,420] we often put them together to form a braket,
+- [00:04:01,620 - 00:04:02,360] or a bracket.
+- [00:04:05,640 - 00:04:08,260] The bra-vectors are in one-to-one
+- [00:04:08,260 - 00:04:10,880] correspondence with the ket vectors,
+- [00:04:11,060 - 00:04:13,130] and you should really think of
+- [00:04:13,130 - 00:04:15,200] them roughly as being the complex conjugates,
+- [00:04:15,820 - 00:04:19,220] in the same sense as complex conjugates of complex numbers.
+- [00:04:20,019 - 00:04:22,620] Complex numbers are ubiquitous.
+- [00:04:22,640 - 00:04:23,420] They are part of the mechanism of the quantum mechanics,
+- [00:04:23,940 - 00:04:25,600] and so are complex vectors.
+- [00:04:25,960 - 00:04:28,360] So state vectors are represented by,
+- [00:04:28,420 - 00:04:29,180] or states,
+- [00:04:29,420 - 00:04:31,440] states are represented by state vectors.
+- [00:04:32,060 - 00:04:33,320] The state vectors,
+- [00:04:33,480 - 00:04:34,240] well,
+- [00:04:34,240 - 00:04:35,280] we could say a little bit more,
+- [00:04:35,400 - 00:04:37,780] but if I were to say the whole thing,
+- [00:04:37,780 - 00:04:38,160] of course,
+- [00:04:38,220 - 00:04:39,880] we would then go through the entire quarter,
+- [00:04:40,460 - 00:04:41,080] so I won't.
+- [00:04:41,400 - 00:04:42,180] In addition,
+- [00:04:42,180 - 00:04:43,740] there are observables,
+- [00:04:43,740 - 00:04:44,740] things that you measure.
+- [00:04:45,940 - 00:04:47,420] Measurables are observables.
+- [00:04:51,160 - 00:04:52,580] In classical mechanics,
+- [00:04:52,580 - 00:04:54,080] there are also observables.
+- [00:04:54,140 - 00:04:55,280] They're the things you measure,
+- [00:04:55,340 - 00:04:57,340] but we don't spend a lot
+- [00:04:57,340 - 00:04:59,340] of time talking about their mathematical structure.
+- [00:04:59,780 - 00:05:02,100] We just assume you know what I'm talking about
+- [00:05:02,100 - 00:05:04,940] when I say position of a particle is measurable,
+- [00:05:05,120 - 00:05:06,680] or momentum of a particle,
+- [00:05:06,860 - 00:05:08,080] or the energy of a particle,
+- [00:05:08,220 - 00:05:09,080] or whatever.
+- [00:05:09,280 - 00:05:10,360] In quantum mechanics,
+- [00:05:10,360 - 00:05:12,050] we have to be very precise
+- [00:05:12,050 - 00:05:13,740] what we mean by an observable.
+- [00:05:15,500 - 00:05:18,340] And observables are represented by
+- [00:05:19,220 - 00:05:19,740] linear,
+- [00:05:19,740 - 00:05:21,500] Hermitian operators.
+- [00:05:22,840 - 00:05:24,640] I'll label them with,
+- [00:05:24,900 - 00:05:25,400] what are these?
+- [00:05:25,400 - 00:05:26,040] Let's see.
+- [00:05:26,460 - 00:05:28,020] These are Greek letters.
+- [00:05:28,140 - 00:05:29,540] What kind of letters are those?
+- [00:05:29,880 - 00:05:30,220] English?
+- [00:05:31,360 - 00:05:31,960] Roman?
+- [00:05:31,960 - 00:05:32,540] Latin?
+- [00:05:32,820 - 00:05:33,340] I don't know.
+- [00:05:34,280 - 00:05:35,220] Are they Latin?
+- [00:05:35,440 - 00:05:35,940] Hmm?
+- [00:05:36,180 - 00:05:37,240] It's capital alpha.
+- [00:05:37,800 - 00:05:38,400] Yeah,
+- [00:05:38,400 - 00:05:39,460] it's true.
+- [00:05:39,460 - 00:05:40,260] It's capital alpha.
+- [00:05:41,520 - 00:05:42,120] Okay.
+- [00:05:42,280 - 00:05:46,320] But Latin letters are representing observables,
+- [00:05:46,320 - 00:05:47,780] and they are
+- [00:05:47,780 - 00:05:51,520] Hermitian operators that act on the vectors.
+- [00:05:51,640 - 00:05:52,140] Hermitian,
+- [00:05:52,140 - 00:05:53,100] for our purposes,
+- [00:05:53,340 - 00:05:59,220] translates or is the quantum mechanical equivalent of real.
+- [00:05:59,420 - 00:06:02,860] Real as in real or complex or imaginary.
+- [00:06:05,120 - 00:06:07,440] They are the real operators
+- [00:06:07,440 - 00:06:11,640] which are equal to their own Hermitian conjugate.
+- [00:06:14,300 - 00:06:16,400] Every such operator
+- [00:06:16,400 - 00:06:19,400] in the space of states is called an observable,
+- [00:06:19,540 - 00:06:23,100] and presumably there is really a way to observe it.
+- [00:06:26,159 - 00:06:28,800] The eigenvalues and eigenvectors
+- [00:06:29,400 - 00:06:32,220] of these Hermitian operators play a special role.
+- [00:06:32,420 - 00:06:33,460] So let me just remind you,
+- [00:06:33,500 - 00:06:36,300] what is an eigenvalue and an eigenvector?
+- [00:06:36,560 - 00:06:38,800] If you have a Hermitian operator,
+- [00:06:40,190 - 00:06:43,060] you can search for vectors.
+- [00:06:45,220 - 00:06:47,120] Let's label the vector.
+- [00:06:50,320 - 00:06:52,100] Let's label it little a.
+- [00:06:54,060 - 00:06:55,520] Or better yet,
+- [00:06:55,520 - 00:06:55,980] alpha,
+- [00:06:56,100 - 00:06:58,020] since we want to label it with a Greek index.
+- [00:06:59,400 - 00:07:01,240] Let's label it with an alpha.
+- [00:07:03,000 - 00:07:04,280] And a,
+- [00:07:04,280 - 00:07:05,400] being an operator,
+- [00:07:05,760 - 00:07:07,020] can act on alpha,
+- [00:07:07,220 - 00:07:10,500] and alpha is an eigenvector of a
+- [00:07:10,500 - 00:07:13,040] if the action is a.
+- [00:07:13,040 - 00:07:15,580] So the action of a is just to multiply
+- [00:07:16,260 - 00:07:18,480] the vector alpha by a number.
+- [00:07:18,680 - 00:07:19,940] In this case,
+- [00:07:19,940 - 00:07:21,660] I'm using a redundant notation,
+- [00:07:21,980 - 00:07:25,760] the same notation for the eigenvalue and the eigenvector.
+- [00:07:26,300 - 00:07:28,400] And this says that the eigenvalue,
+- [00:07:28,520 - 00:07:29,820] the eigenvector alpha,
+- [00:07:30,040 - 00:07:33,700] is an eigenvector of a with eigenvalue alpha.
+- [00:07:34,300 - 00:07:36,420] And the significance of that equation
+- [00:07:36,420 - 00:07:37,980] is that,
+- [00:07:37,980 - 00:07:39,080] first of all,
+- [00:07:39,100 - 00:07:41,420] the set of eigenvalues
+- [00:07:41,420 - 00:07:43,280] of an operator,
+- [00:07:43,480 - 00:07:44,620] or of an observable,
+- [00:07:44,640 - 00:07:48,300] are the set of possible results of measurement.
+- [00:07:49,580 - 00:07:51,260] If you have a quantity,
+- [00:07:51,380 - 00:07:52,940] which when you measure it,
+- [00:07:52,980 - 00:07:54,980] can take on the value 1,
+- [00:07:54,980 - 00:07:55,420] 3,
+- [00:07:55,420 - 00:07:56,040] and 7,
+- [00:07:56,240 - 00:07:58,860] then the eigenvalues of that operator
+- [00:07:58,860 - 00:07:59,520] are 1,
+- [00:07:59,520 - 00:07:59,940] 3,
+- [00:07:59,940 - 00:08:00,540] and 7,
+- [00:08:00,540 - 00:08:01,600] and so forth.
+- [00:08:02,460 - 00:08:06,280] The eigenvectors are the state vectors of the system
+- [00:08:07,060 - 00:08:08,160] for which,
+- [00:08:08,160 - 00:08:10,140] if you make a measurement,
+- [00:08:10,140 - 00:08:12,120] the answer is definite,
+- [00:08:12,440 - 00:08:13,960] not statistical,
+- [00:08:15,980 - 00:08:16,620] determined,
+- [00:08:16,620 - 00:08:17,260] deterministic,
+- [00:08:17,440 - 00:08:20,260] and the answer to the measurement is alpha.
+- [00:08:20,520 - 00:08:22,500] So I assume you all remember this.
+- [00:08:22,580 - 00:08:24,640] I'm doing this mostly to just refresh your memory.
+- [00:08:27,640 - 00:08:28,280] Now,
+- [00:08:28,280 - 00:08:30,380] the particular systems
+- [00:08:30,380 - 00:08:33,299] we're going to be discussing mostly in this quarter
+- [00:08:33,299 - 00:08:35,159] are systems of particles.
+- [00:08:36,100 - 00:08:38,320] Particles are largely characterized
+- [00:08:38,320 - 00:08:40,120] by saying that things which are not things
+- [00:08:40,140 - 00:08:41,640] which have a location in space,
+- [00:08:42,000 - 00:08:43,960] an ordinary location in space.
+- [00:08:44,320 - 00:08:45,240] For example,
+- [00:08:45,240 - 00:08:46,500] if space is one-dimensional,
+- [00:08:46,840 - 00:08:49,020] then a particle is a thing
+- [00:08:49,020 - 00:08:51,280] which has a coordinate x.
+- [00:08:52,240 - 00:08:54,160] It's located somewhere as an x.
+- [00:08:54,300 - 00:08:55,720] If space is three-dimensional,
+- [00:08:55,980 - 00:08:57,160] then particles move around.
+- [00:08:57,420 - 00:08:58,000] They have x,
+- [00:08:58,000 - 00:08:58,280] y,
+- [00:08:58,280 - 00:08:58,640] and z,
+- [00:08:58,640 - 00:08:59,400] and so forth.
+- [00:09:00,120 - 00:09:02,780] Let's write formulas for the case of one dimension,
+- [00:09:03,000 - 00:09:03,940] but I'll tell you what to do
+- [00:09:03,940 - 00:09:05,880] for three dimensions in a moment.
+- [00:09:06,620 - 00:09:07,140] Okay.
+- [00:09:08,060 - 00:09:08,580] Oh,
+- [00:09:08,580 - 00:09:09,100] sorry.
+- [00:09:09,100 - 00:09:10,820] Let's come back to one point
+- [00:09:10,820 - 00:09:12,940] that I need to emphasize.
+- [00:09:13,420 - 00:09:15,920] For every bra and every ket,
+- [00:09:16,900 - 00:09:19,500] let's call the bra,
+- [00:09:20,260 - 00:09:21,500] let's call it phi.
+- [00:09:21,880 - 00:09:24,680] It is not necessarily the particular bra
+- [00:09:24,680 - 00:09:25,980] that goes together with psi,
+- [00:09:26,200 - 00:09:27,500] with the ket psi.
+- [00:09:28,000 - 00:09:29,740] For every pair like that,
+- [00:09:29,820 - 00:09:31,120] there is an inner product.
+- [00:09:31,640 - 00:09:32,800] There is a number.
+- [00:09:32,960 - 00:09:36,380] That number is in general a complex number,
+- [00:09:37,199 - 00:09:39,080] and it is represented as a number.
+- [00:09:39,100 - 00:09:40,100] It is represented as the inner product.
+- [00:09:40,820 - 00:09:41,980] Inner product.
+- [00:09:50,220 - 00:09:51,560] And it's a number.
+- [00:09:51,760 - 00:09:54,080] It's a number for every pair of vectors.
+- [00:09:55,340 - 00:09:59,720] It represents a kind of product of the two vectors.
+- [00:10:00,839 - 00:10:03,320] It's similar in its mathematical structure
+- [00:10:03,320 - 00:10:05,620] to the dot product between two vectors
+- [00:10:05,620 - 00:10:06,520] in ordinary space,
+- [00:10:07,520 - 00:10:09,860] but it's a more abstract object.
+- [00:10:10,200 - 00:10:12,400] It's the inner product between two vectors,
+- [00:10:12,600 - 00:10:14,720] and it plays an important role
+- [00:10:14,720 - 00:10:16,520] in the logic of quantum mechanics.
+- [00:10:16,840 - 00:10:18,000] In particular,
+- [00:10:19,540 - 00:10:20,840] if two states
+- [00:10:21,620 - 00:10:23,560] are distinguishable uniquely
+- [00:10:24,420 - 00:10:27,180] by the property that there's some observable
+- [00:10:27,180 - 00:10:28,440] that you could measure
+- [00:10:28,440 - 00:10:30,800] which would be different than the two of them,
+- [00:10:31,160 - 00:10:33,460] let's suppose there's some quantity
+- [00:10:33,460 - 00:10:34,440] that you could measure,
+- [00:10:34,440 - 00:10:39,300] and it is definite
+- [00:10:40,060 - 00:10:43,940] that the answer in the state psi
+- [00:10:43,940 - 00:10:46,060] is different than the state phi,
+- [00:10:46,340 - 00:10:48,900] then we would say those two states
+- [00:10:48,900 - 00:10:49,940] are distinctly different.
+- [00:10:50,080 - 00:10:52,240] There's no chance of confusing them.
+- [00:10:53,160 - 00:10:54,520] There's a measurement you could do
+- [00:10:54,520 - 00:10:55,500] to distinguish them.
+- [00:10:55,660 - 00:10:58,280] Then those states are said to be orthogonal.
+- [00:10:59,360 - 00:11:02,900] Orthogonal means physically identifiably different,
+- [00:11:02,900 - 00:11:05,340] and mathematically,
+- [00:11:06,260 - 00:11:09,100] it's the statement that the two vectors
+- [00:11:09,100 - 00:11:11,900] have inner product equal to zero.
+- [00:11:13,940 - 00:11:14,620] So,
+- [00:11:14,620 - 00:11:16,980] orthogonality is a fundamental property
+- [00:11:16,980 - 00:11:20,280] of relationships between vectors
+- [00:11:20,280 - 00:11:22,140] which says that they are different.
+- [00:11:22,380 - 00:11:23,720] You can't confuse them.
+- [00:11:24,200 - 00:11:24,780] Well,
+- [00:11:24,780 - 00:11:25,760] you can confuse them,
+- [00:11:25,800 - 00:11:26,920] but you shouldn't confuse them.
+- [00:11:29,060 - 00:11:29,740] Okay.
+- [00:11:30,780 - 00:11:31,460] Now,
+- [00:11:31,460 - 00:11:32,600] when it comes to particles,
+- [00:11:32,600 - 00:11:34,540] the most important observable
+- [00:11:34,540 - 00:11:37,140] is the position of a particle.
+- [00:11:37,460 - 00:11:39,640] And so let's just discuss particles
+- [00:11:39,640 - 00:11:40,740] moving on a line.
+- [00:11:42,420 - 00:11:44,460] The line is the x-axis.
+- [00:11:46,220 - 00:11:48,260] The location of the particle
+- [00:11:48,260 - 00:11:50,140] is just a value of x,
+- [00:11:50,460 - 00:11:51,860] and obviously,
+- [00:11:51,860 - 00:11:54,160] x should be thought of
+- [00:11:54,160 - 00:11:55,520] as an observable.
+- [00:11:56,240 - 00:11:57,000] Okay.
+- [00:11:57,320 - 00:11:58,540] In particular,
+- [00:11:58,540 - 00:12:00,120] there are states
+- [00:12:03,040 - 00:12:06,520] which are labeled by a value of position.
+- [00:12:07,060 - 00:12:08,560] Let's call it x-naught.
+- [00:12:09,940 - 00:12:12,360] This is the point x-naught over here.
+- [00:12:12,720 - 00:12:14,240] I'm just using the naught here
+- [00:12:14,240 - 00:12:16,180] to indicate a particular position.
+- [00:12:17,360 - 00:12:18,500] There are states
+- [00:12:21,320 - 00:12:23,500] which are labeled by x-naught,
+- [00:12:23,580 - 00:12:24,560] which have the property
+- [00:12:25,220 - 00:12:27,800] that if you measure the particle,
+- [00:12:27,980 - 00:12:29,120] the particle's position,
+- [00:12:29,120 - 00:12:31,820] you will definitely find it at x-naught.
+- [00:12:32,520 - 00:12:33,120] Okay?
+- [00:12:34,120 - 00:12:34,720] Good.
+- [00:12:35,840 - 00:12:37,540] The next concept...
+- [00:12:38,199 - 00:12:38,800] Oh,
+- [00:12:38,800 - 00:12:39,600] and of course,
+- [00:12:41,020 - 00:12:43,480] state vectors for different values,
+- [00:12:43,700 - 00:12:45,740] let's call them x and x-prime.
+- [00:12:46,580 - 00:12:49,900] If x and x-prime are two different positions,
+- [00:12:50,100 - 00:12:52,940] x and x-prime,
+- [00:12:54,720 - 00:12:56,700] then clearly those two states
+- [00:12:56,700 - 00:12:58,460] are distinguishable,
+- [00:12:59,120 - 00:13:01,140] operationally and by measurement,
+- [00:13:01,300 - 00:13:02,300] they're distinguishable,
+- [00:13:02,460 - 00:13:04,700] so these two states are orthogonal.
+- [00:13:06,079 - 00:13:06,920] Now,
+- [00:13:06,920 - 00:13:08,780] take any state,
+- [00:13:08,980 - 00:13:11,740] any state whatever of this particle,
+- [00:13:11,900 - 00:13:12,540] call it psi.
+- [00:13:15,080 - 00:13:16,860] Its inner product
+- [00:13:18,920 - 00:13:22,940] with the state representing the particle at x
+- [00:13:22,940 - 00:13:25,500] is called the wave function.
+- [00:13:27,120 - 00:13:29,100] The wave function of the particle,
+- [00:13:29,280 - 00:13:30,840] and it's written as psi of x.
+- [00:13:31,400 - 00:13:33,920] It's the psi that goes into the Schrodinger equation.
+- [00:13:34,600 - 00:13:35,820] It's Schrodinger's psi.
+- [00:13:35,960 - 00:13:37,680] I believe that Schrodinger was the first one
+- [00:13:37,680 - 00:13:39,300] to call it psi.
+- [00:13:40,840 - 00:13:41,820] P-S-I.
+- [00:13:47,580 - 00:13:50,940] And the meaning of the wave function
+- [00:13:51,500 - 00:13:53,360] is closely related to,
+- [00:13:53,440 - 00:13:54,640] but not the same,
+- [00:13:55,500 - 00:13:56,240] as the probability
+- [00:13:56,240 - 00:13:59,680] that the particle is at position x.
+- [00:14:01,180 - 00:14:04,160] Psi of x is an arbitrary function.
+- [00:14:04,420 - 00:14:04,600] Well,
+- [00:14:04,600 - 00:14:05,840] it's not completely arbitrary,
+- [00:14:06,180 - 00:14:08,400] but let's say it's some function.
+- [00:14:09,780 - 00:14:11,200] What does it represent?
+- [00:14:11,440 - 00:14:12,140] Psi of x?
+- [00:14:12,160 - 00:14:14,900] Psi of x is closely related to the probability
+- [00:14:14,900 - 00:14:17,060] to find the particle at position x,
+- [00:14:17,280 - 00:14:18,880] but it's not quite that.
+- [00:14:19,060 - 00:14:20,620] The probability itself,
+- [00:14:20,960 - 00:14:22,740] let's call it p of x,
+- [00:14:30,120 - 00:14:33,240] is the product of the wave function
+- [00:14:33,240 - 00:14:34,880] times its complex conjugate.
+- [00:14:35,500 - 00:14:38,220] The wave function times its complex conjugate
+- [00:14:38,220 - 00:14:39,040] is positive.
+- [00:14:39,620 - 00:14:40,660] Any number,
+- [00:14:40,660 - 00:14:41,940] any complex number,
+- [00:14:42,080 - 00:14:43,500] times its own conjugate
+- [00:14:43,500 - 00:14:45,060] is always positive.
+- [00:14:45,860 - 00:14:47,580] Probabilities are always positive.
+- [00:14:48,540 - 00:14:51,540] Psi of x's are generally complex numbers.
+- [00:14:52,180 - 00:14:53,440] They can be positive,
+- [00:14:53,440 - 00:14:54,160] they can be negative,
+- [00:14:54,280 - 00:14:55,040] they can be imaginary,
+- [00:14:55,040 - 00:14:57,020] they can be whatever you like.
+- [00:14:58,060 - 00:15:00,400] So it would not make sense to say
+- [00:15:00,400 - 00:15:02,180] that psi is a probability,
+- [00:15:02,560 - 00:15:04,060] but it does make sense to say
+- [00:15:04,060 - 00:15:06,380] psi times psi star is a probability.
+- [00:15:07,400 - 00:15:07,960] Good,
+- [00:15:07,960 - 00:15:08,240] all right.
+- [00:15:08,300 - 00:15:12,380] That's the most important property of a particle,
+- [00:15:12,540 - 00:15:13,400] that it has a position.
+- [00:15:14,480 - 00:15:16,220] It has eigenvectors
+- [00:15:16,220 - 00:15:20,680] which represent particles of known position.
+- [00:15:22,480 - 00:15:24,360] And we can construct,
+- [00:15:24,360 - 00:15:24,860] of course,
+- [00:15:24,860 - 00:15:25,920] a position operator.
+- [00:15:26,620 - 00:15:29,980] A position operator just multiplies
+- [00:15:29,980 - 00:15:32,140] psi of x by x itself.
+- [00:15:32,820 - 00:15:33,900] By x.
+- [00:15:34,120 - 00:15:36,160] So that's the idea of position.
+- [00:15:36,700 - 00:15:39,720] The other important observable for a particle,
+- [00:15:39,940 - 00:15:42,520] of course there are many observables for a particle,
+- [00:15:43,040 - 00:15:46,940] but the other particularly important one
+- [00:15:46,940 - 00:15:48,560] is called the what?
+- [00:15:50,160 - 00:15:51,160] The momentum.
+- [00:15:51,880 - 00:15:52,860] The momentum.
+- [00:15:52,860 - 00:15:55,920] In classical mechanics and in quantum mechanics,
+- [00:15:56,220 - 00:15:58,780] positions and momentum come together.
+- [00:15:58,940 - 00:15:59,060] Oh,
+- [00:15:59,060 - 00:15:59,940] before we do that,
+- [00:16:00,040 - 00:16:05,620] I should discuss the issue of a particle moving
+- [00:16:05,620 - 00:16:06,980] not just in one dimension.
+- [00:16:07,320 - 00:16:10,300] What happens if a particle is moving in three dimensions?
+- [00:16:10,820 - 00:16:11,720] In other words,
+- [00:16:11,720 - 00:16:12,480] like a real particle.
+- [00:16:12,960 - 00:16:16,100] Then it has three observable positions,
+- [00:16:16,280 - 00:16:18,120] the three components of its position,
+- [00:16:18,240 - 00:16:18,780] namely x,
+- [00:16:18,780 - 00:16:19,000] y,
+- [00:16:19,000 - 00:16:19,340] and z,
+- [00:16:19,340 - 00:16:19,900] if you like.
+- [00:16:20,400 - 00:16:22,040] But since you can rotate axes,
+- [00:16:22,040 - 00:16:26,660] you can just think of the position
+- [00:16:27,220 - 00:16:29,440] as a point in three-dimensional space.
+- [00:16:29,860 - 00:16:30,920] In that case,
+- [00:16:30,920 - 00:16:32,160] we would just think of x here
+- [00:16:32,160 - 00:16:33,880] as a point in three-dimensional space.
+- [00:16:34,400 - 00:16:35,660] We could fill it out.
+- [00:16:35,760 - 00:16:37,580] We could fill out the equations by saying
+- [00:16:37,580 - 00:16:43,000] there are states which represent particles
+- [00:16:43,000 - 00:16:45,920] at known locations in three dimensions,
+- [00:16:46,140 - 00:16:46,320] x,
+- [00:16:46,320 - 00:16:46,600] y,
+- [00:16:46,600 - 00:16:46,980] and z.
+- [00:16:48,080 - 00:16:50,020] This represents a particle located
+- [00:16:50,660 - 00:16:52,020] at a point in three dimensions.
+- [00:16:52,020 - 00:16:52,020] So,
+- [00:16:52,020 - 00:16:53,040] we would have a point in three-dimensional space
+- [00:16:53,040 - 00:16:54,180] over here,
+- [00:16:54,180 - 00:16:55,400] x,
+- [00:16:55,400 - 00:16:55,660] y,
+- [00:16:55,660 - 00:16:55,960] and z.
+- [00:16:56,580 - 00:16:58,700] And the rules would be similar,
+- [00:16:58,700 - 00:16:59,620] very similar.
+- [00:17:00,340 - 00:17:04,020] The inner products of x prime,
+- [00:17:04,020 - 00:17:04,900] y prime,
+- [00:17:04,900 - 00:17:05,599] z prime,
+- [00:17:07,579 - 00:17:13,240] that would be zero if there's any mismatch,
+- [00:17:14,140 - 00:17:16,599] not if x is not equal to x prime
+- [00:17:16,599 - 00:17:17,819] and y is not equal to y,
+- [00:17:17,900 - 00:17:19,819] but if the entire point,
+- [00:17:22,020 - 00:17:22,579] if the entire point is not the same
+- [00:17:22,579 - 00:17:23,940] as the point x prime,
+- [00:17:23,940 - 00:17:24,400] y prime,
+- [00:17:24,400 - 00:17:24,859] z prime,
+- [00:17:25,480 - 00:17:30,360] then these are observably different positions
+- [00:17:30,360 - 00:17:31,140] for a particle,
+- [00:17:31,300 - 00:17:34,000] and the states are orthogonal to each other.
+- [00:17:35,380 - 00:17:37,900] I'm going to suppress the y and z,
+- [00:17:38,540 - 00:17:43,660] but keep in mind that the position of a particle
+- [00:17:43,660 - 00:17:46,380] depends on the dimensionality of the space
+- [00:17:46,380 - 00:17:47,320] that we're talking about,
+- [00:17:47,540 - 00:17:49,120] and in the real world,
+- [00:17:49,120 - 00:17:50,240] space is three-dimensional.
+- [00:17:52,020 - 00:17:52,300] Okay,
+- [00:17:52,300 - 00:17:54,040] for each component of position,
+- [00:17:54,300 - 00:17:56,320] there is also a component of momentum.
+- [00:17:57,120 - 00:17:58,760] In classical physics,
+- [00:17:59,040 - 00:18:01,120] for non-relativistic classical physics,
+- [00:18:01,360 - 00:18:03,240] the momentum is just the mass
+- [00:18:03,240 - 00:18:05,260] times that component of the velocity.
+- [00:18:06,180 - 00:18:07,580] In quantum mechanics,
+- [00:18:08,000 - 00:18:10,620] the momentum is also an observable,
+- [00:18:10,760 - 00:18:13,740] and is also represented by an operator,
+- [00:18:14,040 - 00:18:15,100] by a Hermitian operator.
+- [00:18:17,220 - 00:18:19,360] Hermitian operators can be thought of
+- [00:18:19,360 - 00:18:22,000] in the abstract as objects of the same nature,
+- [00:18:22,000 - 00:18:25,660] objects which act on mathematical vectors,
+- [00:18:26,000 - 00:18:27,360] the space of states,
+- [00:18:27,820 - 00:18:30,560] or they can be thought of more concretely
+- [00:18:30,560 - 00:18:34,000] as operations on wave functions.
+- [00:18:34,640 - 00:18:35,880] Either one.
+- [00:18:36,040 - 00:18:37,740] You can think of them concretely
+- [00:18:37,740 - 00:18:41,240] as operations that you...
+- [00:18:41,240 - 00:18:43,120] What about x itself?
+- [00:18:43,620 - 00:18:45,580] What is the operation
+- [00:18:46,659 - 00:18:50,220] that represents the operator x?
+- [00:18:50,780 - 00:18:51,300] Well,
+- [00:18:51,300 - 00:18:53,360] it's just taking the state vector,
+- [00:18:53,500 - 00:18:54,400] the psi of x,
+- [00:18:54,480 - 00:18:55,400] or taking the wave function,
+- [00:18:56,040 - 00:18:58,960] and multiplying it by x.
+- [00:18:59,560 - 00:19:02,920] If psi of x is a function
+- [00:19:05,860 - 00:19:08,400] representing the probability amplitude,
+- [00:19:08,920 - 00:19:10,820] psi of x is called the probability amplitude
+- [00:19:10,820 - 00:19:12,120] or the wave function of a particle,
+- [00:19:12,320 - 00:19:15,040] then if you want to apply
+- [00:19:15,040 - 00:19:17,780] the operator representing position
+- [00:19:17,780 - 00:19:19,120] to psi of x,
+- [00:19:19,120 - 00:19:21,000] you just multiply psi of x by x.
+- [00:19:21,340 - 00:19:21,940] That's all.
+- [00:19:24,120 - 00:19:25,980] The eigenvectors of x
+- [00:19:25,980 - 00:19:27,620] are the wave functions
+- [00:19:27,620 - 00:19:29,140] which are highly peaked,
+- [00:19:29,360 - 00:19:29,760] very,
+- [00:19:29,760 - 00:19:30,460] very narrow,
+- [00:19:31,400 - 00:19:32,780] Dirac delta functions.
+- [00:19:33,460 - 00:19:34,100] All right,
+- [00:19:34,100 - 00:19:34,740] in the same way,
+- [00:19:34,860 - 00:19:37,780] the momentum operator...
+- [00:19:37,780 - 00:19:37,960] Now,
+- [00:19:37,960 - 00:19:40,580] I'm not going to explain this in detail.
+- [00:19:40,800 - 00:19:41,280] For this,
+- [00:19:41,280 - 00:19:42,680] you go back to the lecture notes,
+- [00:19:42,800 - 00:19:45,500] or to the lectures themselves.
+- [00:19:47,040 - 00:19:49,100] What lecture was it that we talked about
+- [00:19:49,120 - 00:19:49,800] about momentum?
+- [00:19:50,000 - 00:19:50,680] Anybody remember?
+- [00:19:50,680 - 00:19:51,320] Art?
+- [00:19:53,060 - 00:19:54,060] Several of them,
+- [00:19:54,060 - 00:19:56,160] but I think around eight.
+- [00:19:56,860 - 00:19:57,680] Around eight?
+- [00:19:58,460 - 00:19:59,020] Yeah,
+- [00:19:59,020 - 00:19:59,260] yeah,
+- [00:19:59,260 - 00:19:59,380] yeah,
+- [00:19:59,380 - 00:19:59,620] eight.
+- [00:19:59,700 - 00:20:00,620] Eight was...
+- [00:20:01,720 - 00:20:02,420] That's right.
+- [00:20:02,580 - 00:20:04,500] I remember with great grief
+- [00:20:05,300 - 00:20:06,260] lecture eight,
+- [00:20:06,260 - 00:20:06,560] right?
+- [00:20:07,280 - 00:20:07,840] Okay.
+- [00:20:08,540 - 00:20:10,960] So the momentum of a particle
+- [00:20:11,860 - 00:20:14,320] is represented by an operator called p,
+- [00:20:14,320 - 00:20:23,120] and p also does something to psi of x.
+- [00:20:24,760 - 00:20:26,310] What it does to psi
+- [00:20:26,310 - 00:20:27,860] of x is it differentiates it.
+- [00:20:28,680 - 00:20:31,000] It differentiates it with respect to x,
+- [00:20:31,160 - 00:20:32,100] but not quite.
+- [00:20:33,100 - 00:20:35,600] The real thing is that
+- [00:20:35,600 - 00:20:38,100] it multiplies it by minus i,
+- [00:20:39,500 - 00:20:41,100] the complex number i.
+- [00:20:41,620 - 00:20:44,060] There's a factor of Planck's constant,
+- [00:20:44,180 - 00:20:44,300] and that's the constant of the momentum.
+- [00:20:44,300 - 00:20:44,420] So it's a constant,
+- [00:20:44,420 - 00:20:45,760] h bar,
+- [00:20:46,040 - 00:20:48,260] and then it differentiates psi,
+- [00:20:48,480 - 00:20:49,300] d by dx,
+- [00:20:51,020 - 00:20:52,120] psi of x.
+- [00:20:55,820 - 00:20:57,740] That is the operator
+- [00:20:58,960 - 00:21:00,660] that acts on wave functions
+- [00:21:00,660 - 00:21:06,580] that represents the observable momentum.
+- [00:21:09,200 - 00:21:10,580] Everybody remember this?
+- [00:21:11,320 - 00:21:12,000] Yeah.
+- [00:21:12,000 - 00:21:13,900] We went through it.
+- [00:21:14,340 - 00:21:15,220] Okay,
+- [00:21:15,220 - 00:21:15,640] now,
+- [00:21:15,640 - 00:21:18,040] what about the eigenvectors of momentum?
+- [00:21:18,660 - 00:21:20,980] The eigenvectors of position
+- [00:21:20,980 - 00:21:22,720] are Dirac delta functions.
+- [00:21:23,160 - 00:21:26,320] They are functions which are zero everywheres
+- [00:21:28,879 - 00:21:34,000] except at the eigenvalue position.
+- [00:21:35,860 - 00:21:37,320] In other words,
+- [00:21:37,800 - 00:21:40,420] the eigenvector representing a particle
+- [00:21:40,420 - 00:21:41,980] known to be at x-north
+- [00:21:42,000 - 00:21:44,500] is a function which is zero everywheres
+- [00:21:44,500 - 00:21:45,640] except at x-north,
+- [00:21:45,840 - 00:21:47,880] where it's very high and very narrow.
+- [00:21:48,680 - 00:21:51,540] Let's not worry about its precise mathematical definition.
+- [00:21:51,700 - 00:21:53,460] It's called a Dirac delta function.
+- [00:21:55,820 - 00:21:58,260] And it's not too hard to believe
+- [00:21:58,260 - 00:22:00,480] that if the wave function of a particle
+- [00:22:00,480 - 00:22:02,960] is so concentrated at a particular point,
+- [00:22:03,160 - 00:22:05,260] that the probability for finding it
+- [00:22:05,260 - 00:22:07,520] is zero everywheres except at that point.
+- [00:22:07,640 - 00:22:07,800] That,
+- [00:22:07,800 - 00:22:08,100] of course,
+- [00:22:08,100 - 00:22:08,540] makes sense.
+- [00:22:09,480 - 00:22:10,040] Now,
+- [00:22:10,040 - 00:22:11,540] what are the states?
+- [00:22:11,540 - 00:22:14,060] The states for which the momentum is certain.
+- [00:22:14,240 - 00:22:15,160] In other words,
+- [00:22:15,220 - 00:22:18,300] what wave functions correspond to particles
+- [00:22:18,300 - 00:22:19,900] with definite momentum?
+- [00:22:20,560 - 00:22:23,820] And those are gotten by solving the eigenvalue equation.
+- [00:22:24,200 - 00:22:26,540] The eigenvalue equation is that p,
+- [00:22:26,540 - 00:22:27,980] whatever it is,
+- [00:22:28,060 - 00:22:28,640] in fact,
+- [00:22:28,640 - 00:22:29,440] we know what it is.
+- [00:22:31,310 - 00:22:31,640] Well,
+- [00:22:31,640 - 00:22:36,160] let's write the abstract equation first,
+- [00:22:36,340 - 00:22:41,060] that p on psi is equal to little p-naught,
+- [00:22:41,860 - 00:22:42,820] times psi,
+- [00:22:43,040 - 00:22:45,160] the eigenvalue being little p-naught.
+- [00:22:45,220 - 00:22:47,120] Little p-naught is the value of momentum
+- [00:22:47,120 - 00:22:48,420] that this particle has.
+- [00:22:49,180 - 00:22:51,120] And in this particular state,
+- [00:22:53,760 - 00:22:57,640] the momentum of the particle is known to be p-naught.
+- [00:22:58,140 - 00:22:59,960] This equation translates,
+- [00:23:00,100 - 00:23:04,480] just replacing p by minus i h-bar d by dx,
+- [00:23:04,700 - 00:23:07,820] minus i h-bar d psi by dx,
+- [00:23:07,820 - 00:23:12,160] is equal to p-naught,
+- [00:23:12,320 - 00:23:12,880] the number,
+- [00:23:12,880 - 00:23:14,000] a numerical number,
+- [00:23:14,740 - 00:23:16,200] times psi of x.
+- [00:23:16,360 - 00:23:17,620] Psi is a function of x.
+- [00:23:17,780 - 00:23:18,620] Psi of x.
+- [00:23:21,360 - 00:23:23,020] And this is easy to solve.
+- [00:23:23,300 - 00:23:25,360] This is one of these equations which says
+- [00:23:25,360 - 00:23:26,860] that the derivative of something
+- [00:23:26,860 - 00:23:29,360] is proportional to that same thing.
+- [00:23:30,260 - 00:23:31,180] Derivative of psi,
+- [00:23:31,800 - 00:23:33,700] apart from a numerical number,
+- [00:23:33,880 - 00:23:35,840] the numerical number we could
+- [00:23:35,840 - 00:23:37,800] get rid of the i h-bar,
+- [00:23:37,800 - 00:23:38,560] on this side,
+- [00:23:38,700 - 00:23:40,400] it would reappear on this side,
+- [00:23:41,639 - 00:23:44,640] this is the equation of the type
+- [00:23:44,640 - 00:23:46,800] that represents an exponential.
+- [00:23:47,260 - 00:23:48,760] The derivative of something is
+- [00:23:48,760 - 00:23:50,260] proportional to the something itself,
+- [00:23:50,600 - 00:23:52,180] and the solution of it
+- [00:23:52,800 - 00:23:54,680] is e to the i,
+- [00:23:55,480 - 00:23:57,000] p-naught x,
+- [00:23:57,260 - 00:23:58,980] divided by Planck's constant.
+- [00:24:02,740 - 00:24:06,100] Now I often get very tired of writing Planck's constant,
+- [00:24:06,260 - 00:24:07,780] and I often just set it aside,
+- [00:24:07,800 - 00:24:08,440] and I set it equal to one.
+- [00:24:08,960 - 00:24:10,280] We'll sometimes do that,
+- [00:24:10,400 - 00:24:10,860] in fact,
+- [00:24:10,860 - 00:24:11,100] from,
+- [00:24:12,100 - 00:24:14,220] I'll try to track it for the time being,
+- [00:24:14,360 - 00:24:17,060] but later on I may just drop it.
+- [00:24:18,039 - 00:24:20,760] And I think by the time I do drop it,
+- [00:24:20,840 - 00:24:22,120] I will have done it enough times
+- [00:24:22,120 - 00:24:23,320] that you'll know where the right,
+- [00:24:23,340 - 00:24:26,020] the right place where it goes.
+- [00:24:26,120 - 00:24:26,200] Question.
+- [00:24:26,540 - 00:24:26,620] Yeah.
+- [00:24:26,720 - 00:24:28,460] In the two equations you just wrote there,
+- [00:24:28,480 - 00:24:29,700] the upper one with the,
+- [00:24:29,700 - 00:24:30,960] with the kets,
+- [00:24:31,860 - 00:24:33,780] that would say that those are,
+- [00:24:34,020 - 00:24:36,300] or that's a eigenvector.
+- [00:24:36,300 - 00:24:36,840] Yeah,
+- [00:24:36,840 - 00:24:38,100] that says that eigenvector,
+- [00:24:38,160 - 00:24:40,500] that psi is an eigenvector of p,
+- [00:24:40,760 - 00:24:42,000] with eigenvalue p-naught.
+- [00:24:42,240 - 00:24:44,200] But the one below holds for any wavefunction,
+- [00:24:44,200 - 00:24:44,580] right?
+- [00:24:47,220 - 00:24:47,700] Any,
+- [00:24:47,700 - 00:24:49,480] you think any wavefunction is e to the i,
+- [00:24:49,480 - 00:24:49,780] p-a,
+- [00:24:49,780 - 00:24:50,400] p-x?
+- [00:24:50,420 - 00:24:50,500] No,
+- [00:24:50,500 - 00:24:50,620] no,
+- [00:24:50,620 - 00:24:50,700] no,
+- [00:24:50,700 - 00:24:52,100] the equation before it.
+- [00:24:52,220 - 00:24:52,600] Here?
+- [00:24:52,660 - 00:24:53,820] Same holds for any wavefunction.
+- [00:24:54,020 - 00:24:54,400] No,
+- [00:24:54,400 - 00:24:56,620] most wavefunctions don't satisfy this equation.
+- [00:24:56,880 - 00:24:57,340] Oh,
+- [00:24:57,340 - 00:24:57,340] okay.
+- [00:24:57,340 - 00:24:57,440] No.
+- [00:24:58,100 - 00:24:58,900] In fact,
+- [00:24:58,900 - 00:24:59,220] it's,
+- [00:25:00,560 - 00:25:03,360] it's true for basically this wavefunction.
+- [00:25:04,700 - 00:25:05,180] Okay.
+- [00:25:05,180 - 00:25:05,500] Now,
+- [00:25:05,500 - 00:25:06,440] you'll notice,
+- [00:25:06,440 - 00:25:06,940] of course,
+- [00:25:07,000 - 00:25:08,640] that there's a huge difference
+- [00:25:09,180 - 00:25:11,320] between the eigenvectors of position,
+- [00:25:12,120 - 00:25:14,800] which are these narrow little spiky functions,
+- [00:25:15,060 - 00:25:18,300] and the eigenvectors of momentum in particular.
+- [00:25:19,320 - 00:25:21,860] Let's take the probability that's associated
+- [00:25:21,860 - 00:25:23,320] with e to the i,
+- [00:25:23,320 - 00:25:23,800] p-naught,
+- [00:25:23,800 - 00:25:24,140] x.
+- [00:25:25,540 - 00:25:26,100] That's,
+- [00:25:26,100 - 00:25:28,400] multiply it by its own complex conjugate.
+- [00:25:28,740 - 00:25:30,330] What happens if you multiply
+- [00:25:30,330 - 00:25:31,920] this by its own complex conjugate?
+- [00:25:33,020 - 00:25:33,940] You get one.
+- [00:25:35,180 - 00:25:36,920] e to the i something times
+- [00:25:36,920 - 00:25:38,660] e to the minus i something
+- [00:25:38,660 - 00:25:39,740] is just plain one.
+- [00:25:40,180 - 00:25:41,860] So this wavefunction,
+- [00:25:42,260 - 00:25:45,580] the one which represents a particle
+- [00:25:45,580 - 00:25:46,920] with a definite momentum,
+- [00:25:47,480 - 00:25:50,460] its probability distribution is smeared out
+- [00:25:50,460 - 00:25:51,920] over the entire line.
+- [00:25:54,300 - 00:25:56,040] By complete contrast,
+- [00:25:56,520 - 00:26:00,340] the eigenvector of a particle located at a definite position
+- [00:26:00,340 - 00:26:02,640] is highly concentrated,
+- [00:26:02,640 - 00:26:04,260] infinitely narrow,
+- [00:26:04,260 - 00:26:05,320] and this,
+- [00:26:05,320 - 00:26:05,660] of course,
+- [00:26:05,660 - 00:26:06,520] is a manifestation
+- [00:26:06,520 - 00:26:09,080] of the uncertainty principle.
+- [00:26:10,860 - 00:26:11,900] If you know,
+- [00:26:11,900 - 00:26:12,280] well,
+- [00:26:12,900 - 00:26:14,680] if you know the momentum of a particle,
+- [00:26:16,400 - 00:26:19,160] then its position is completely uncertain,
+- [00:26:19,500 - 00:26:20,780] and likewise,
+- [00:26:20,780 - 00:26:22,740] if you know the position of a particle,
+- [00:26:22,980 - 00:26:25,520] its momentum is also completely uncertain.
+- [00:26:25,880 - 00:26:28,300] I'll refer you back to the lecture notes
+- [00:26:30,180 - 00:26:31,720] for that purpose.
+- [00:26:33,240 - 00:26:34,240] That's basically all.
+- [00:26:34,240 - 00:26:35,560] That's basically quantum mechanics in a nutshell.
+- [00:26:36,480 - 00:26:36,960] Question,
+- [00:26:36,960 - 00:26:37,400] please.
+- [00:26:37,860 - 00:26:39,060] I'm a little bit confused.
+- [00:26:39,280 - 00:26:40,420] I thought you said this,
+- [00:26:40,420 - 00:26:41,560] we know it's p zero.
+- [00:26:41,900 - 00:26:42,340] Yeah.
+- [00:26:42,340 - 00:26:42,940] So it's known.
+- [00:26:43,620 - 00:26:44,100] Yeah,
+- [00:26:44,100 - 00:26:44,860] the momentum is known.
+- [00:26:45,180 - 00:26:46,420] The momentum is known.
+- [00:26:46,560 - 00:26:46,940] Momentum.
+- [00:26:46,940 - 00:26:48,970] But then when you try
+- [00:26:48,970 - 00:26:51,000] to calculate the probability of this...
+- [00:26:51,000 - 00:26:51,180] No,
+- [00:26:51,180 - 00:26:51,280] no,
+- [00:26:51,280 - 00:26:53,340] the probability for position.
+- [00:26:56,020 - 00:26:56,500] What,
+- [00:26:56,500 - 00:26:58,560] given that the momentum is p-naught,
+- [00:26:59,040 - 00:27:01,820] now an experimenter is going to do an experiment
+- [00:27:01,820 - 00:27:03,400] not to check its momentum,
+- [00:27:03,700 - 00:27:05,340] but is going to do
+- [00:27:05,340 - 00:27:06,980] an experiment which measures its position.
+- [00:27:07,200 - 00:27:08,540] Two different kinds of experiments.
+- [00:27:09,160 - 00:27:10,940] And that was phi of x.
+- [00:27:11,400 - 00:27:13,840] Phi of x is the...
+- [00:27:13,840 - 00:27:14,140] Sorry.
+- [00:27:14,420 - 00:27:15,500] The probability,
+- [00:27:15,500 - 00:27:18,340] amplitude for position.
+- [00:27:18,620 - 00:27:18,960] That's right.
+- [00:27:19,560 - 00:27:20,000] That's right.
+- [00:27:20,140 - 00:27:21,360] If the argument...
+- [00:27:21,360 - 00:27:21,660] That's right.
+- [00:27:21,900 - 00:27:22,680] That's correct.
+- [00:27:22,920 - 00:27:23,360] Now,
+- [00:27:23,360 - 00:27:26,000] there is also a notion of an amplitude
+- [00:27:26,000 - 00:27:27,720] for finding different momenta,
+- [00:27:27,720 - 00:27:30,140] and I'll just remind you that's connected
+- [00:27:30,140 - 00:27:33,240] to Fourier transforms of psi of x.
+- [00:27:33,400 - 00:27:34,820] But I'm not going to do that now.
+- [00:27:35,040 - 00:27:36,880] If we need Fourier transforms,
+- [00:27:36,880 - 00:27:38,000] we'll come back to it.
+- [00:27:38,360 - 00:27:39,360] At the moment,
+- [00:27:40,560 - 00:27:44,100] Fourier transforms and the momentum representation,
+- [00:27:44,540 - 00:27:46,240] this is called the position representation.
+- [00:27:47,160 - 00:27:52,260] The representation of state vectors by psi of x's
+- [00:27:52,260 - 00:27:53,860] is called the position representation.
+- [00:27:54,300 - 00:27:57,000] There is also a momentum representation,
+- [00:27:57,180 - 00:28:00,120] but it will take us too far field right now.
+- [00:28:00,140 - 00:28:00,980] Question?
+- [00:28:01,480 - 00:28:01,740] Yes.
+- [00:28:02,280 - 00:28:05,460] What is the probability of the position?
+- [00:28:06,420 - 00:28:07,920] Phi star psi of x.
+- [00:28:08,180 - 00:28:11,340] If the psi function,
+- [00:28:11,340 - 00:28:12,240] the wave function,
+- [00:28:12,380 - 00:28:14,080] is the direct delta function,
+- [00:28:14,960 - 00:28:16,980] what is it when you multiply that,
+- [00:28:17,140 - 00:28:19,360] when you get the probability,
+- [00:28:19,540 - 00:28:20,500] what does that look like?
+- [00:28:21,160 - 00:28:23,220] It looks like the square of a delta function,
+- [00:28:23,400 - 00:28:25,160] which is just higher than the delta function,
+- [00:28:25,400 - 00:28:27,040] but it's concentrated at the origin.
+- [00:28:27,960 - 00:28:29,640] It's concentrated at the origin,
+- [00:28:30,140 - 00:28:34,620] and we have not talked about normalizing wave functions,
+- [00:28:34,820 - 00:28:38,380] making the area under here equal to one.
+- [00:28:39,020 - 00:28:41,220] That's a thing that we want to do,
+- [00:28:43,240 - 00:28:45,540] but as I said,
+- [00:28:45,620 - 00:28:49,620] I hesitate to go into any given thing too deeply
+- [00:28:49,620 - 00:28:51,760] because we'll wind up doing the whole class again.
+- [00:28:51,960 - 00:28:52,000] Yeah?
+- [00:28:53,180 - 00:28:55,110] So these state vectors are
+- [00:28:55,110 - 00:28:57,040] all represented by column vectors?
+- [00:28:57,180 - 00:28:57,700] Is that it?
+- [00:28:57,900 - 00:29:00,120] You can represent them by column vectors,
+- [00:29:00,140 - 00:29:02,320] in other words,
+- [00:29:02,440 - 00:29:03,820] but it would be a little awkward
+- [00:29:03,820 - 00:29:06,320] to represent psi of x by a column vector.
+- [00:29:06,480 - 00:29:09,460] x takes on a continuous infinity of values,
+- [00:29:10,240 - 00:29:12,900] whereas the column vector is useful for a quantity
+- [00:29:12,900 - 00:29:15,040] which takes on some discrete set of values.
+- [00:29:15,520 - 00:29:20,000] So you can think of it formally in your head
+- [00:29:20,000 - 00:29:22,260] as some kind of continuous column vector.
+- [00:29:22,900 - 00:29:24,880] That's for the ket vectors,
+- [00:29:25,080 - 00:29:26,360] and the bra vectors you
+- [00:29:26,360 - 00:29:27,640] can think of as rho vectors.
+- [00:29:28,140 - 00:29:28,700] Okay?
+- [00:29:28,700 - 00:29:31,320] But when we need that,
+- [00:29:31,460 - 00:29:32,960] I'll remind you.
+- [00:29:33,240 - 00:29:33,880] By then,
+- [00:29:33,900 - 00:29:36,600] you will have gone back and studied the lecture notes,
+- [00:29:36,720 - 00:29:37,360] and you won't need it.
+- [00:29:39,420 - 00:29:39,860] Okay.
+- [00:29:41,460 - 00:29:42,160] Next thing.
+- [00:29:42,320 - 00:29:43,560] How do things change with time?
+- [00:29:43,760 - 00:29:45,200] Things do change with time,
+- [00:29:46,699 - 00:29:49,220] and the evolution of a system with time
+- [00:29:49,220 - 00:29:52,520] is a special case of transformations
+- [00:29:53,179 - 00:29:55,440] that you can do on the state of a system.
+- [00:29:55,660 - 00:29:56,040] That,
+- [00:29:56,040 - 00:29:56,320] of course,
+- [00:29:56,320 - 00:29:57,920] is also true in classical mechanics,
+- [00:29:58,700 - 00:30:00,620] where the motion of a system
+- [00:30:00,620 - 00:30:04,040] is represented as a transformation in phase space,
+- [00:30:04,220 - 00:30:06,060] a transformation of the phase space position.
+- [00:30:06,520 - 00:30:08,000] In quantum mechanics,
+- [00:30:08,340 - 00:30:11,140] the evolution of a system
+- [00:30:11,480 - 00:30:14,720] is a special case of a transformation
+- [00:30:15,620 - 00:30:19,460] that you can do on the space of states,
+- [00:30:19,740 - 00:30:21,840] taking every state to some other state.
+- [00:30:23,340 - 00:30:24,060] And,
+- [00:30:24,060 - 00:30:24,440] of course,
+- [00:30:24,440 - 00:30:26,400] the idea is
+- [00:30:27,920 - 00:30:29,120] very straightforward.
+- [00:30:29,460 - 00:30:31,560] If the state at one instant of time
+- [00:30:31,560 - 00:30:32,580] is some psi,
+- [00:30:32,860 - 00:30:34,740] at some later instant of time
+- [00:30:34,740 - 00:30:36,620] it is something else,
+- [00:30:36,740 - 00:30:38,880] and that something else is a transform
+- [00:30:38,880 - 00:30:41,640] or a transformation of the original psi.
+- [00:30:42,600 - 00:30:44,540] There are some rules in quantum mechanics
+- [00:30:44,540 - 00:30:46,340] about the nature of that transformation.
+- [00:30:46,700 - 00:30:46,960] Oh,
+- [00:30:46,960 - 00:30:49,640] that transformation depends on
+- [00:30:49,640 - 00:30:51,780] the amount of elapsed time.
+- [00:30:52,900 - 00:30:53,500] Okay?
+- [00:30:53,720 - 00:30:55,620] If the amount of elapsed time
+- [00:30:55,620 - 00:30:56,440] is very,
+- [00:30:56,440 - 00:30:57,200] very short,
+- [00:30:58,060 - 00:31:00,080] then you would expect this transformation
+- [00:31:00,080 - 00:31:03,160] to practically be the identity transform.
+- [00:31:03,360 - 00:31:03,560] In fact,
+- [00:31:03,560 - 00:31:04,300] let's go back.
+- [00:31:04,520 - 00:31:07,820] If the amount of time that's elapsed is zero,
+- [00:31:08,660 - 00:31:09,220] then,
+- [00:31:09,220 - 00:31:09,620] of course,
+- [00:31:09,640 - 00:31:11,400] the transformation is completely trivial.
+- [00:31:11,600 - 00:31:13,520] It just gives back the same state.
+- [00:31:13,860 - 00:31:15,420] You can say in that case
+- [00:31:15,420 - 00:31:18,000] that the transformation was just the identity operation
+- [00:31:18,480 - 00:31:20,520] on the state vector.
+- [00:31:21,140 - 00:31:22,280] But more generally,
+- [00:31:22,280 - 00:31:26,940] the time evolution is characterized,
+- [00:31:27,220 - 00:31:28,720] or the time evolution operation,
+- [00:31:28,800 - 00:31:30,280] let's now call it operator.
+- [00:31:30,440 - 00:31:34,440] It is an operator in the sense of operators.
+- [00:31:34,940 - 00:31:35,940] It's an operator,
+- [00:31:36,240 - 00:31:38,140] but it's an operator which depends
+- [00:31:38,140 - 00:31:40,680] on the amount of elapsed time.
+- [00:31:41,460 - 00:31:42,820] So let's give it a name.
+- [00:31:42,900 - 00:31:44,120] It's usually called u.
+- [00:31:55,360 - 00:31:56,920] u stands for unitary,
+- [00:31:57,120 - 00:31:58,220] but we'll come back in a moment
+- [00:31:58,220 - 00:31:59,320] for what unitary means.
+- [00:32:01,620 - 00:32:03,600] And it's parameterized
+- [00:32:03,600 - 00:32:05,660] by an amount of elapsed time.
+- [00:32:08,000 - 00:32:10,780] And it's such that when it acts on a state
+- [00:32:11,320 - 00:32:13,360] at a given instant of time,
+- [00:32:15,000 - 00:32:16,780] it takes you to the state
+- [00:32:16,780 - 00:32:19,000] at an amount of time t later.
+- [00:32:19,260 - 00:32:19,740] So,
+- [00:32:19,740 - 00:32:20,240] for example,
+- [00:32:20,280 - 00:32:21,740] if it acts on the state
+- [00:32:21,740 - 00:32:23,540] whatever the state happens to be
+- [00:32:23,540 - 00:32:25,000] at time t equals zero,
+- [00:32:26,520 - 00:32:30,280] then it will give you psi at time t.
+- [00:32:32,020 - 00:32:33,720] It just updates the state.
+- [00:32:34,680 - 00:32:38,660] If it acts on some state
+- [00:32:38,660 - 00:32:41,000] which happens to represent things
+- [00:32:41,000 - 00:32:42,200] not at time zero,
+- [00:32:42,340 - 00:32:45,560] but let's say at time t1,
+- [00:32:48,700 - 00:32:51,000] then it takes you to the state
+- [00:32:51,000 - 00:32:57,100] at time t1 plus t.
+- [00:32:57,820 - 00:32:59,040] In other words,
+- [00:32:59,120 - 00:33:01,000] it represents the evolution
+- [00:33:01,000 - 00:33:03,960] of the system from t1 to t1 plus t.
+- [00:33:04,920 - 00:33:06,260] That's the notion of u.
+- [00:33:06,740 - 00:33:10,300] That's the notion of a time evolution operator.
+- [00:33:10,920 - 00:33:12,160] It's a linear operator,
+- [00:33:12,760 - 00:33:14,720] but it is not a Hermitian operator.
+- [00:33:15,040 - 00:33:16,740] What kind of operator is it?
+- [00:33:17,260 - 00:33:17,900] Well,
+- [00:33:17,900 - 00:33:19,860] now we need a postulate,
+- [00:33:19,860 - 00:33:21,880] and the postulate is,
+- [00:33:22,740 - 00:33:25,300] we can say the postulate very easily,
+- [00:33:25,500 - 00:33:27,080] it goes back to this
+- [00:33:27,080 - 00:33:28,940] minus first law of physics
+- [00:33:28,940 - 00:33:30,540] that I harp on all the time,
+- [00:33:30,720 - 00:33:33,980] that information is conserved.
+- [00:33:34,240 - 00:33:35,680] In quantum mechanics,
+- [00:33:35,920 - 00:33:37,480] what it means is that
+- [00:33:37,480 - 00:33:39,980] if you start with two vectors,
+- [00:33:40,240 - 00:33:41,140] two states,
+- [00:33:41,360 - 00:33:43,300] which are observably different,
+- [00:33:44,020 - 00:33:45,760] which cannot be confused,
+- [00:33:46,160 - 00:33:47,200] in other words,
+- [00:33:47,200 - 00:33:48,080] which are orthogonal,
+- [00:33:48,080 - 00:33:50,600] and you let both of them evolve,
+- [00:33:51,040 - 00:33:52,260] they will stay orthogonal.
+- [00:33:52,900 - 00:33:55,420] It will not happen that two states
+- [00:33:55,420 - 00:33:59,580] that are observably different
+- [00:33:59,580 - 00:34:02,360] will evolve into states
+- [00:34:02,780 - 00:34:05,700] which are not observably different.
+- [00:34:07,360 - 00:34:08,179] All right,
+- [00:34:08,179 - 00:34:08,960] so what that says
+- [00:34:08,960 - 00:34:12,260] is that orthogonal vectors remain orthogonal.
+- [00:34:13,580 - 00:34:14,620] In fact,
+- [00:34:14,620 - 00:34:16,060] you can do a little bit better.
+- [00:34:16,080 - 00:34:17,679] You can prove from that statement
+- [00:34:17,679 - 00:34:21,780] that the inner product between vectors
+- [00:34:22,679 - 00:34:25,560] is unchanged by time.
+- [00:34:26,219 - 00:34:30,139] So let me just explore that idea a little bit.
+- [00:34:33,239 - 00:34:34,760] Whatever u is,
+- [00:34:34,940 - 00:34:37,080] it preserves the relationships
+- [00:34:37,620 - 00:34:39,139] between pairs of vectors.
+- [00:34:39,480 - 00:34:40,500] So for example,
+- [00:34:40,639 - 00:34:44,679] if we start with psi and phi,
+- [00:34:45,420 - 00:34:47,520] two vectors,
+- [00:34:47,679 - 00:34:48,840] they may be orthogonal
+- [00:34:48,840 - 00:34:50,239] or they may not be orthogonal.
+- [00:34:50,780 - 00:34:52,020] If they're orthogonal,
+- [00:34:52,260 - 00:34:53,380] this inner product is zero.
+- [00:34:53,540 - 00:34:54,460] If they're not orthogonal,
+- [00:34:54,600 - 00:34:55,639] it is whatever it is.
+- [00:34:57,100 - 00:35:00,260] Then the postulate is that
+- [00:35:00,260 - 00:35:05,160] if we transform psi
+- [00:35:06,880 - 00:35:09,520] and we transform phi,
+- [00:35:11,100 - 00:35:11,780] now,
+- [00:35:11,780 - 00:35:14,580] phi is a bra vector,
+- [00:35:15,460 - 00:35:17,660] and it transforms with a bra vector.
+- [00:35:17,680 - 00:35:17,840] So what does that mean?
+- [00:35:17,840 - 00:35:17,840] Well,
+- [00:35:17,840 - 00:35:19,780] if we take the Hermitian conjugate of u,
+- [00:35:20,600 - 00:35:22,060] that would be u dagger,
+- [00:35:24,100 - 00:35:24,660] so,
+- [00:35:24,660 - 00:35:25,220] phi,
+- [00:35:26,160 - 00:35:27,760] what this equation says
+- [00:35:28,780 - 00:35:31,620] is that the transform of psi,
+- [00:35:32,220 - 00:35:33,940] when you take its inner product
+- [00:35:33,940 - 00:35:35,300] with the transform of phi,
+- [00:35:35,640 - 00:35:37,840] is the same as the inner product of psi
+- [00:35:37,840 - 00:35:38,860] with phi in the beginning.
+- [00:35:39,080 - 00:35:41,560] It says that the inner products between vectors
+- [00:35:41,560 - 00:35:43,040] don't change with time.
+- [00:35:44,800 - 00:35:47,220] That can only be true
+- [00:35:47,720 - 00:35:49,820] for arbitrary pair of psi and phi
+- [00:35:49,820 - 00:35:52,040] if u dagger times u
+- [00:35:52,040 - 00:35:53,220] is the unit operator.
+- [00:35:53,760 - 00:35:56,000] And that's called a unitary operator.
+- [00:35:56,420 - 00:35:58,020] u dagger times u
+- [00:35:58,020 - 00:35:59,600] is the unit operator
+- [00:35:59,600 - 00:36:01,120] or the identity operator
+- [00:36:01,120 - 00:36:02,040] or just one.
+- [00:36:04,380 - 00:36:06,400] That's the notion of a unitary operator
+- [00:36:06,400 - 00:36:07,760] and the time evolution,
+- [00:36:08,020 - 00:36:08,560] in fact,
+- [00:36:08,560 - 00:36:09,780] all transformations,
+- [00:36:10,240 - 00:36:12,320] all interesting transformations
+- [00:36:12,320 - 00:36:14,220] that you do on the space of states,
+- [00:36:14,440 - 00:36:15,580] and we're going to talk about others
+- [00:36:15,580 - 00:36:16,720] besides time evolution,
+- [00:36:17,480 - 00:36:19,160] all interesting transformations,
+- [00:36:19,480 - 00:36:21,520] ways of transforming vectors
+- [00:36:21,520 - 00:36:22,560] into other vectors,
+- [00:36:22,760 - 00:36:23,960] are unitary.
+- [00:36:26,020 - 00:36:28,000] u dagger u is equal to one.
+- [00:36:28,200 - 00:36:30,140] That's different than saying u is equal to one,
+- [00:36:30,200 - 00:36:30,620] of course.
+- [00:36:30,940 - 00:36:32,440] u is a unitary operator.
+- [00:36:33,180 - 00:36:33,800] All right,
+- [00:36:33,800 - 00:36:35,080] let's pursue it.
+- [00:36:35,160 - 00:36:35,320] Yeah.
+- [00:36:35,620 - 00:36:36,100] Question?
+- [00:36:36,360 - 00:36:36,580] Yeah.
+- [00:36:36,740 - 00:36:37,940] The way you first said it is
+- [00:36:37,940 - 00:36:39,680] if psi and phi were orthogonal,
+- [00:36:39,960 - 00:36:40,900] they would remain orthogonal,
+- [00:36:40,900 - 00:36:42,600] but this is a stronger statement than that.
+- [00:36:42,680 - 00:36:43,440] This is a...
+- [00:36:43,900 - 00:36:44,300] Actually,
+- [00:36:44,300 - 00:36:44,800] it's not.
+- [00:36:44,900 - 00:36:46,840] You can prove that if u is a linear operator
+- [00:36:47,259 - 00:36:48,980] and it maintains orthogonality,
+- [00:36:49,160 - 00:36:50,420] then you can prove that it maintains
+- [00:36:50,420 - 00:36:51,300] all inner products.
+- [00:36:53,080 - 00:36:54,400] But this is the time evolution
+- [00:36:54,400 - 00:36:56,360] of two state...
+- [00:36:56,360 - 00:36:58,880] or two systems of different states.
+- [00:36:59,120 - 00:37:00,280] Even if they're not orthogonal,
+- [00:37:01,660 - 00:37:03,680] the overlap is conserved or whatever.
+- [00:37:03,840 - 00:37:04,120] That's right.
+- [00:37:04,520 - 00:37:05,100] That's right.
+- [00:37:05,320 - 00:37:07,160] And I said that's...
+- [00:37:07,160 - 00:37:08,360] What you're saying is correct,
+- [00:37:09,720 - 00:37:10,620] but I would say,
+- [00:37:10,900 - 00:37:11,880] if the
+- [00:37:11,880 - 00:37:15,980] if orthogonality is preserved with time,
+- [00:37:16,180 - 00:37:18,060] then it's possible to prove
+- [00:37:18,060 - 00:37:20,240] that inner products are preserved with time.
+- [00:37:20,820 - 00:37:22,000] That's a little exercise.
+- [00:37:22,360 - 00:37:23,240] First of all,
+- [00:37:23,240 - 00:37:23,800] think about it
+- [00:37:23,800 - 00:37:25,220] in just ordinary three-dimensional space.
+- [00:37:25,220 - 00:37:28,300] Supposing you have some operation on vectors,
+- [00:37:28,460 - 00:37:29,160] ordinary vectors,
+- [00:37:29,440 - 00:37:31,340] which preserves orthogonality.
+- [00:37:31,600 - 00:37:31,840] Okay,
+- [00:37:31,840 - 00:37:33,060] what kind of operations,
+- [00:37:33,300 - 00:37:35,560] operators on pairs of vectors
+- [00:37:35,560 - 00:37:37,300] will preserve the fact that they're orthogonal?
+- [00:37:39,520 - 00:37:40,200] Rotations.
+- [00:37:40,220 - 00:37:40,860] Rotations,
+- [00:37:40,860 - 00:37:41,560] right.
+- [00:37:41,860 - 00:37:43,700] Rotations also have the property
+- [00:37:43,700 - 00:37:45,740] that they preserve the inner products
+- [00:37:45,740 - 00:37:47,380] or the dot products.
+- [00:37:47,700 - 00:37:48,920] It's the same mathematics.
+- [00:37:49,540 - 00:37:50,940] It's the same mathematics.
+- [00:37:51,320 - 00:37:55,200] So this is the definition of a vector.
+- [00:37:55,200 - 00:37:56,020] So if you have a unitary operator,
+- [00:37:56,480 - 00:37:58,560] there are many unitary operators.
+- [00:38:01,880 - 00:38:03,960] So there are many possible things
+- [00:38:03,960 - 00:38:07,240] that could represent the evolution of a system,
+- [00:38:07,920 - 00:38:09,400] but they're all unitary.
+- [00:38:10,560 - 00:38:11,240] Okay,
+- [00:38:11,240 - 00:38:11,640] let's...
+- [00:38:12,200 - 00:38:12,900] Excuse me.
+- [00:38:12,900 - 00:38:15,440] What would be an example of non-unitary transformation?
+- [00:38:16,240 - 00:38:16,920] Oh.
+- [00:38:17,280 - 00:38:20,080] Our mission operators are usually not unitary,
+- [00:38:20,160 - 00:38:22,480] except that the momentum is not a unitary operator.
+- [00:38:22,480 - 00:38:24,360] The position is not a unitary operator.
+- [00:38:25,820 - 00:38:26,500] Uh...
+- [00:38:27,680 - 00:38:28,360] Okay,
+- [00:38:28,360 - 00:38:30,520] unitary operators are operators
+- [00:38:30,520 - 00:38:34,400] whose eigenvalues are phases.
+- [00:38:34,900 - 00:38:36,120] Everybody know what a phase means?
+- [00:38:36,560 - 00:38:39,060] An e to the i times a real number.
+- [00:38:39,380 - 00:38:41,200] A point on the unit circle.
+- [00:38:42,240 - 00:38:43,560] A phase represents,
+- [00:38:43,560 - 00:38:45,980] on the complex plane,
+- [00:38:46,340 - 00:38:48,500] a point on the unit circle.
+- [00:38:49,920 - 00:38:52,200] One is a point on the unit circle.
+- [00:38:52,480 - 00:38:54,120] i is a point on the unit circle.
+- [00:38:54,280 - 00:38:55,580] Minus one and minus i.
+- [00:38:56,260 - 00:38:57,680] One over the square root
+- [00:38:57,680 - 00:38:59,100] of two times one plus i
+- [00:38:59,100 - 00:39:00,880] is a phase.
+- [00:39:02,180 - 00:39:03,800] The unitary operators
+- [00:39:04,660 - 00:39:09,040] are the analogs for operators of phases.
+- [00:39:10,380 - 00:39:12,880] Their eigenvalues are all phases.
+- [00:39:13,200 - 00:39:14,700] So if I have a unitary operator
+- [00:39:14,700 - 00:39:15,960] and I look at its eigenvalues,
+- [00:39:16,620 - 00:39:20,200] they will be points sprinkled around
+- [00:39:20,200 - 00:39:21,580] on the unit circle.
+- [00:39:24,060 - 00:39:25,460] That's why they're called unitary,
+- [00:39:25,600 - 00:39:27,460] because in some sense their length
+- [00:39:27,460 - 00:39:30,540] or the magnitude of their eigenvalues is unit.
+- [00:39:32,920 - 00:39:33,480] Okay.
+- [00:39:34,280 - 00:39:35,400] Now let's...
+- [00:39:38,080 - 00:39:40,920] Let's see what more we can learn about u
+- [00:39:41,480 - 00:39:44,500] from making some reasonable assumptions.
+- [00:39:45,480 - 00:39:47,060] The first reasonable assumption
+- [00:39:47,060 - 00:39:49,080] is that if t is equal to zero,
+- [00:39:50,800 - 00:39:52,460] then u is just equal to zero.
+- [00:39:52,480 - 00:39:52,560] So u is equal to one.
+- [00:39:53,160 - 00:39:55,040] All it says is that if
+- [00:39:55,040 - 00:39:56,920] you don't allow any time to elapse,
+- [00:39:58,280 - 00:40:00,820] the vector just comes back to itself,
+- [00:40:01,120 - 00:40:03,400] and u is equal to the unit operator.
+- [00:40:03,760 - 00:40:05,240] So u of zero
+- [00:40:07,180 - 00:40:09,660] is equal to i,
+- [00:40:09,820 - 00:40:10,940] the identity operator,
+- [00:40:11,300 - 00:40:14,800] the operator whose matrix representation is just one,
+- [00:40:14,920 - 00:40:16,500] one along the diagonals.
+- [00:40:16,900 - 00:40:19,140] It's just the operator which does nothing.
+- [00:40:19,300 - 00:40:20,800] It just takes the thing back to itself.
+- [00:40:20,800 - 00:40:22,720] Now is u unitary?
+- [00:40:22,980 - 00:40:23,980] Sure it is.
+- [00:40:24,140 - 00:40:26,780] The Hermitian conjugate of u
+- [00:40:26,780 - 00:40:30,660] is the Hermitian conjugate of the identity operator,
+- [00:40:31,060 - 00:40:33,220] which is just the identity operator itself.
+- [00:40:34,200 - 00:40:37,180] And identity times identity is just identity.
+- [00:40:37,600 - 00:40:38,380] So yes,
+- [00:40:38,380 - 00:40:40,200] one is one,
+- [00:40:40,260 - 00:40:42,200] or the unit operator is unitary.
+- [00:40:42,480 - 00:40:43,760] And it's...
+- [00:40:44,590 - 00:40:47,220] It's the time evolution when no evolution happens.
+- [00:40:47,740 - 00:40:48,520] Okay,
+- [00:40:48,520 - 00:40:50,780] what about evolution by a vector?
+- [00:40:50,800 - 00:40:50,920] A very,
+- [00:40:50,920 - 00:40:52,580] very small amount of time.
+- [00:40:53,080 - 00:40:53,680] Okay.
+- [00:40:53,840 - 00:40:55,960] So let's instead of writing u of zero,
+- [00:40:56,160 - 00:40:58,400] let's write u of epsilon.
+- [00:41:01,660 - 00:41:02,960] Take u of epsilon.
+- [00:41:03,300 - 00:41:04,300] It is not one.
+- [00:41:04,760 - 00:41:06,960] Something happens over time evolution,
+- [00:41:07,400 - 00:41:09,340] but it is close to one.
+- [00:41:10,540 - 00:41:11,580] It's close to one.
+- [00:41:13,480 - 00:41:14,080] That,
+- [00:41:14,080 - 00:41:14,500] of course,
+- [00:41:14,500 - 00:41:15,060] is an assumption.
+- [00:41:15,800 - 00:41:18,860] That's the assumption that systems evolve continuously,
+- [00:41:18,860 - 00:41:21,820] that they don't make radical jumps
+- [00:41:21,820 - 00:41:22,620] over very,
+- [00:41:22,620 - 00:41:23,960] very short periods of time.
+- [00:41:25,140 - 00:41:26,700] And it is an assumption.
+- [00:41:27,040 - 00:41:28,560] It's an assumption ultimately
+- [00:41:28,560 - 00:41:30,080] which is justified by experiment.
+- [00:41:30,640 - 00:41:31,460] All right.
+- [00:41:31,480 - 00:41:34,300] So that says that u of a small time epsilon,
+- [00:41:34,520 - 00:41:38,160] if we were to expand it in small epsilon,
+- [00:41:38,480 - 00:41:42,540] would be one plus something proportional to epsilon
+- [00:41:44,100 - 00:41:48,000] times an operator which is a finite...
+- [00:41:48,860 - 00:41:49,200] operator.
+- [00:41:49,400 - 00:41:52,480] The smallness of epsilon is represented by epsilon here
+- [00:41:53,240 - 00:41:57,820] times something which I'll temporarily call h,
+- [00:41:58,100 - 00:41:59,640] but it's a wrong identification.
+- [00:42:00,060 - 00:42:01,300] In a minute we're going to change it.
+- [00:42:02,480 - 00:42:02,960] Okay.
+- [00:42:05,060 - 00:42:06,340] Let me not call it h.
+- [00:42:07,560 - 00:42:08,580] What's another letter?
+- [00:42:08,720 - 00:42:09,700] Give me another letter quick,
+- [00:42:09,700 - 00:42:10,020] quick.
+- [00:42:11,260 - 00:42:11,740] No,
+- [00:42:11,740 - 00:42:12,120] no,
+- [00:42:12,120 - 00:42:12,320] no,
+- [00:42:12,320 - 00:42:12,640] no,
+- [00:42:12,640 - 00:42:12,780] no.
+- [00:42:13,060 - 00:42:13,540] G.
+- [00:42:14,100 - 00:42:14,580] G.
+- [00:42:14,840 - 00:42:15,320] G.
+- [00:42:19,560 - 00:42:20,040] F,
+- [00:42:20,040 - 00:42:20,420] G,
+- [00:42:20,420 - 00:42:20,760] H.
+- [00:42:21,280 - 00:42:21,620] Yeah,
+- [00:42:21,620 - 00:42:21,900] G.
+- [00:42:22,000 - 00:42:22,180] Good.
+- [00:42:22,820 - 00:42:23,260] All right.
+- [00:42:23,280 - 00:42:24,420] So u is of this form.
+- [00:42:25,280 - 00:42:26,420] There's nothing wrong with this.
+- [00:42:26,460 - 00:42:27,660] This is a correct thing.
+- [00:42:28,200 - 00:42:30,280] The only question is what do we know about G?
+- [00:42:30,720 - 00:42:33,980] So let's write down u conjugate,
+- [00:42:34,700 - 00:42:36,180] permission conjugate of epsilon.
+- [00:42:36,920 - 00:42:41,360] That's equal to one plus epsilon times G conjugate,
+- [00:42:41,620 - 00:42:42,900] the permission conjugate of G.
+- [00:42:42,980 - 00:42:44,480] And now let's multiply these together
+- [00:42:45,820 - 00:42:47,380] and insist that the answer,
+- [00:42:47,380 - 00:42:50,180] the leading order in epsilon is just one.
+- [00:42:50,740 - 00:42:51,380] Okay.
+- [00:42:51,440 - 00:42:55,780] So that will say that one plus epsilon G dagger
+- [00:42:56,480 - 00:43:01,160] times one plus epsilon G is equal to one.
+- [00:43:03,420 - 00:43:04,580] Looks a little queer.
+- [00:43:05,160 - 00:43:06,400] One times one is one.
+- [00:43:07,360 - 00:43:08,860] So what's left over,
+- [00:43:08,960 - 00:43:17,360] what's left over is epsilon times G dagger plus G.
+- [00:43:17,360 - 00:43:19,780] And that must be zero.
+- [00:43:20,540 - 00:43:22,000] To order epsilon,
+- [00:43:22,280 - 00:43:24,000] working to order epsilon,
+- [00:43:24,340 - 00:43:26,660] the condition that u is unitary
+- [00:43:26,660 - 00:43:30,980] is the condition that G plus its own permission conjugate
+- [00:43:30,980 - 00:43:32,200] is equal to zero.
+- [00:43:32,780 - 00:43:34,080] In other words,
+- [00:43:35,400 - 00:43:36,880] getting rid of the epsilon,
+- [00:43:38,520 - 00:43:40,980] that the conjugate of G
+- [00:43:40,980 - 00:43:43,440] is equal to minus G itself.
+- [00:43:45,600 - 00:43:47,340] Operators with this peculiar problem
+- [00:43:47,360 - 00:43:47,380] have to know that this is a pure imaginary thing.
+- [00:43:48,720 - 00:43:50,760] Do you know numbers that have that property?
+- [00:43:50,960 - 00:43:52,520] Do you know any number that has the property
+- [00:43:52,520 - 00:43:54,520] that it's minus its own complex conjugate?
+- [00:43:54,980 - 00:43:57,140] It is true,
+- [00:43:57,300 - 00:43:58,620] but there's a wider class of them.
+- [00:43:59,020 - 00:44:00,800] Pure imaginary things.
+- [00:44:01,600 - 00:44:03,580] So this is the analog
+- [00:44:04,240 - 00:44:06,420] of G being pure imaginary.
+- [00:44:07,540 - 00:44:09,680] If we multiply it by I,
+- [00:44:10,320 - 00:44:11,980] it becomes permission.
+- [00:44:11,980 - 00:44:14,040] This is called anti-permission.
+- [00:44:14,860 - 00:44:17,420] Permission is when G dagger equals G.
+- [00:44:17,660 - 00:44:18,700] Did we write that someplace?
+- [00:44:19,860 - 00:44:20,420] Yeah.
+- [00:44:20,720 - 00:44:23,020] A equals A dagger is an observable.
+- [00:44:24,120 - 00:44:25,960] G dagger equals minus G.
+- [00:44:26,060 - 00:44:27,640] We can fix that very simply.
+- [00:44:28,160 - 00:44:31,720] Just define G dagger to be,
+- [00:44:31,800 - 00:44:33,540] now do I want plus or minus?
+- [00:44:33,860 - 00:44:35,140] I always forget.
+- [00:44:36,760 - 00:44:39,240] It always takes me a minute or two to,
+- [00:44:42,980 - 00:44:48,880] I want to write one plus I epsilon H.
+- [00:44:52,100 - 00:44:54,300] But I think the right answer is minus.
+- [00:44:55,660 - 00:44:56,440] That's a,
+- [00:44:56,580 - 00:44:58,280] whether you put a plus
+- [00:44:58,280 - 00:44:59,980] sign or a minus sign here
+- [00:44:59,980 - 00:45:00,580] is a convention,
+- [00:45:00,900 - 00:45:01,880] complete convention.
+- [00:45:02,800 - 00:45:04,260] It defines H.
+- [00:45:05,560 - 00:45:08,920] This one becomes one plus I epsilon H.
+- [00:45:11,740 - 00:45:12,880] H dagger.
+- [00:45:14,080 - 00:45:20,960] And the condition just becomes that H equals H dagger.
+- [00:45:21,820 - 00:45:23,060] In other words,
+- [00:45:23,080 - 00:45:28,200] if I put a minus I epsilon H,
+- [00:45:30,000 - 00:45:30,760] no,
+- [00:45:30,760 - 00:45:32,420] plus I epsilon H dagger,
+- [00:45:32,640 - 00:45:35,920] minus I epsilon H,
+- [00:45:37,540 - 00:45:40,000] then the condition that U is unitary
+- [00:45:40,000 - 00:45:43,100] is just the condition that H is Hermitian.
+- [00:45:43,640 - 00:45:44,560] In other words,
+- [00:45:44,560 - 00:45:46,140] that H is an observable.
+- [00:45:46,940 - 00:45:47,460] Yeah.
+- [00:45:48,720 - 00:45:50,220] What assumption are we making
+- [00:45:50,220 - 00:45:52,980] that allows us to ignore the epsilon squared term?
+- [00:45:53,560 - 00:45:54,960] We're just working to order epsilon.
+- [00:45:55,100 - 00:45:56,840] We could work to order epsilon squared,
+- [00:45:57,000 - 00:45:59,640] but then we would have to be consistent about it
+- [00:45:59,640 - 00:46:01,500] and put an epsilon squared term in here.
+- [00:46:02,020 - 00:46:03,410] The epsilon squared term that we
+- [00:46:03,410 - 00:46:04,800] would want to put in here
+- [00:46:04,800 - 00:46:05,900] would be minus epsilon squared.
+- [00:46:05,900 - 00:46:06,120] So we would have to put in here
+- [00:46:06,120 - 00:46:09,100] epsilon squared over two times H squared.
+- [00:46:10,720 - 00:46:14,660] But we consistently work to one power in epsilon
+- [00:46:14,660 - 00:46:17,180] and assume that epsilon is small enough
+- [00:46:17,180 - 00:46:18,640] that we can ignore epsilon squared.
+- [00:46:18,940 - 00:46:19,860] We can do that consistently.
+- [00:46:20,100 - 00:46:21,540] We've done it over and over and over.
+- [00:46:23,000 - 00:46:24,400] But then you're perfectly right.
+- [00:46:24,520 - 00:46:25,500] We do have to come back
+- [00:46:25,500 - 00:46:28,880] and check that the formulas make sense to higher order.
+- [00:46:28,960 - 00:46:29,260] And they do.
+- [00:46:29,660 - 00:46:31,840] I'll discuss that a little bit.
+- [00:46:32,300 - 00:46:35,880] But working systematically to order epsilon,
+- [00:46:35,900 - 00:46:38,920] and dropping anything of higher order in epsilon...
+- [00:46:38,920 - 00:46:41,830] I just wondered if we
+- [00:46:41,830 - 00:46:44,740] were following the details of it,
+- [00:46:44,760 - 00:46:46,900] we'd have to say that H is approximately hermitian
+- [00:46:47,500 - 00:46:48,300] or something like that.
+- [00:46:48,560 - 00:46:48,760] Yes.
+- [00:46:49,200 - 00:46:49,640] Well,
+- [00:46:49,640 - 00:46:50,080] okay.
+- [00:46:50,220 - 00:46:51,000] With this definition,
+- [00:46:51,180 - 00:46:53,300] you would say H is approximately hermitian,
+- [00:46:53,420 - 00:46:56,780] but allowing...
+- [00:46:56,780 - 00:46:59,060] Notice that epsilon factors out
+- [00:46:59,060 - 00:47:00,340] of both sides of this equation.
+- [00:47:01,320 - 00:47:02,620] So once it's factored out,
+- [00:47:02,620 - 00:47:04,100] it just says that H...
+- [00:47:04,100 - 00:47:04,720] No,
+- [00:47:04,720 - 00:47:05,880] I think the thing which is approximately
+- [00:47:05,900 - 00:47:07,620] approximate is this relationship here.
+- [00:47:08,080 - 00:47:08,640] Yeah.
+- [00:47:09,080 - 00:47:11,480] And I'll come back and tell you what to do
+- [00:47:11,480 - 00:47:12,660] if it...
+- [00:47:14,680 - 00:47:16,200] I'll tell you the right formula
+- [00:47:17,440 - 00:47:18,440] in a little while,
+- [00:47:18,440 - 00:47:19,540] at some point.
+- [00:47:20,200 - 00:47:20,760] Okay,
+- [00:47:20,760 - 00:47:22,340] so what do we learn?
+- [00:47:22,500 - 00:47:23,660] We learn that the...
+- [00:47:24,780 - 00:47:27,780] that the unitary time evolution
+- [00:47:29,360 - 00:47:31,620] which contains a U of T
+- [00:47:33,560 - 00:47:35,000] also is specified
+- [00:47:35,900 - 00:47:37,260] in terms of a certain observable
+- [00:47:37,260 - 00:47:38,520] that I've called H.
+- [00:47:39,000 - 00:47:41,020] H stands for Hamiltonian.
+- [00:47:41,180 - 00:47:42,880] It also stands for hermitian,
+- [00:47:43,040 - 00:47:44,800] but it stands for Hamiltonian.
+- [00:47:44,860 - 00:47:48,860] It is the Hamiltonian of quantum mechanics.
+- [00:47:51,700 - 00:47:54,000] And so we come to the conclusion
+- [00:47:54,000 - 00:47:56,220] that there exists an H,
+- [00:47:56,360 - 00:47:57,640] we will call it the Hamiltonian,
+- [00:47:57,720 - 00:48:00,620] and it is related to the time evolution
+- [00:48:00,620 - 00:48:02,420] for small time intervals
+- [00:48:02,420 - 00:48:06,280] by one minus I epsilon H.
+- [00:48:06,720 - 00:48:08,320] What is the general equation
+- [00:48:08,320 - 00:48:10,160] if epsilon is not small?
+- [00:48:11,220 - 00:48:11,780] Incidentally,
+- [00:48:11,780 - 00:48:12,920] if epsilon is not small,
+- [00:48:13,080 - 00:48:14,320] we might want to call it T.
+- [00:48:15,200 - 00:48:17,060] We might give up calling it epsilon.
+- [00:48:17,240 - 00:48:18,440] Epsilon is usually reserved
+- [00:48:18,440 - 00:48:19,680] for a very small quantity.
+- [00:48:21,340 - 00:48:25,440] We might try writing U of T,
+- [00:48:29,980 - 00:48:31,740] but this wouldn't be right
+- [00:48:32,360 - 00:48:33,520] for large times.
+- [00:48:34,400 - 00:48:36,820] It wouldn't be large for large times.
+- [00:48:36,960 - 00:48:40,200] Let's see if we can improve it a little bit.
+- [00:48:45,900 - 00:48:46,380] Well,
+- [00:48:46,380 - 00:48:46,680] you know,
+- [00:48:46,680 - 00:48:48,320] I think I won't spend time at it.
+- [00:48:48,380 - 00:48:49,320] I will just tell you the answer.
+- [00:48:50,580 - 00:48:51,680] The answer is
+- [00:48:53,120 - 00:48:55,600] that this really should be written
+- [00:48:55,600 - 00:48:59,000] as E to the IHT.
+- [00:48:59,820 - 00:49:00,440] Now,
+- [00:49:00,440 - 00:49:01,100] why do I...
+- [00:49:01,100 - 00:49:05,830] Let me just say a word or two about exponentials.
+- [00:49:07,880 - 00:49:09,520] If you have an exponential
+- [00:49:11,120 - 00:49:13,740] E to some small number,
+- [00:49:14,000 - 00:49:17,140] and let's just call the small number epsilon,
+- [00:49:17,400 - 00:49:18,960] where epsilon is small,
+- [00:49:19,220 - 00:49:20,970] times an ordinary number,
+- [00:49:20,970 - 00:49:23,610] and let me call the ordinary number little h.
+- [00:49:25,250 - 00:49:27,530] Epsilon times h is a small number.
+- [00:49:28,330 - 00:49:30,310] For a very small epsilon,
+- [00:49:31,210 - 00:49:35,190] E to the epsilon h is 1 plus epsilon h.
+- [00:49:35,910 - 00:49:37,090] Does everybody know that?
+- [00:49:37,750 - 00:49:41,270] That's the formal Taylor series expansion
+- [00:49:41,270 - 00:49:43,850] of keeping only the first term,
+- [00:49:45,390 - 00:49:46,930] assuming the second term
+- [00:49:46,930 - 00:49:48,770] and higher terms are negligible.
+- [00:49:49,650 - 00:49:50,370] Now,
+- [00:49:51,570 - 00:49:53,610] supposing you want to take...
+- [00:49:53,610 - 00:49:56,390] You want to make epsilon a little bigger.
+- [00:49:57,390 - 00:49:58,690] Instead of just epsilon,
+- [00:49:58,990 - 00:50:01,010] I want to take E
+- [00:50:01,010 - 00:50:03,030] to the 2 epsilon times h.
+- [00:50:03,730 - 00:50:06,190] E to the 2 epsilon times h
+- [00:50:06,190 - 00:50:09,250] is just the square of E to the epsilon h.
+- [00:50:10,250 - 00:50:12,910] E to the 2 times something is just a square,
+- [00:50:13,010 - 00:50:18,070] so it's equal to 1 plus epsilon h squared.
+- [00:50:20,250 - 00:50:23,290] Supposing you do this over and over and over,
+- [00:50:23,430 - 00:50:27,670] which incidentally is equal to
+- [00:50:27,670 - 00:50:34,210] 1 plus 2 epsilon h
+- [00:50:34,830 - 00:50:37,810] plus epsilon squared h squared.
+- [00:50:41,070 - 00:50:43,290] But this is still an approximation.
+- [00:50:43,610 - 00:50:45,230] This was an approximation to this.
+- [00:50:45,610 - 00:50:48,050] This is still an approximation to this.
+- [00:50:49,930 - 00:50:51,030] Here's a theorem
+- [00:50:51,030 - 00:50:54,590] that if you do this over and over enough times,
+- [00:50:55,590 - 00:50:57,530] let's say n times,
+- [00:50:57,910 - 00:51:03,830] E to the epsilon times n times h,
+- [00:51:04,590 - 00:51:07,790] such that epsilon times n is finite.
+- [00:51:08,050 - 00:51:08,850] In other words,
+- [00:51:08,870 - 00:51:10,130] epsilon times n,
+- [00:51:10,230 - 00:51:12,890] epsilon is an infinitesimally small number,
+- [00:51:13,030 - 00:51:15,010] but I do it enough times
+- [00:51:15,010 - 00:51:18,030] so that n times epsilon is a finite number.
+- [00:51:18,710 - 00:51:19,310] Namely,
+- [00:51:19,310 - 00:51:19,530] t,
+- [00:51:21,250 - 00:51:22,830] I do this over and over.
+- [00:51:23,990 - 00:51:25,170] What happens,
+- [00:51:27,310 - 00:51:28,250] excuse me,
+- [00:51:28,250 - 00:51:28,890] let me go back.
+- [00:51:31,470 - 00:51:32,650] Let's do it this way.
+- [00:51:32,830 - 00:51:34,930] 1 plus epsilon h,
+- [00:51:35,790 - 00:51:38,450] and I do this a number of times,
+- [00:51:38,530 - 00:51:40,290] a large number of times n,
+- [00:51:43,810 - 00:51:46,950] such that n times epsilon,
+- [00:51:46,950 - 00:51:48,550] equals t.
+- [00:51:48,790 - 00:51:49,510] What do I get?
+- [00:51:49,810 - 00:51:50,710] Anybody know?
+- [00:51:51,070 - 00:51:52,350] It's a binomial expansion.
+- [00:51:52,750 - 00:51:53,430] Well,
+- [00:51:53,430 - 00:51:55,090] it's a binomial expansion,
+- [00:51:55,430 - 00:51:58,250] but it's also a construction
+- [00:51:58,250 - 00:51:59,930] of the exponential function.
+- [00:52:00,970 - 00:52:01,650] Okay.
+- [00:52:02,690 - 00:52:04,950] It's a rigorous theorem that
+- [00:52:04,950 - 00:52:07,110] as epsilon gets small
+- [00:52:07,110 - 00:52:08,710] and n gets large,
+- [00:52:08,810 - 00:52:10,400] in such a way that
+- [00:52:10,400 - 00:52:11,990] n times epsilon is kept fixed,
+- [00:52:12,310 - 00:52:13,770] this just becomes
+- [00:52:13,770 - 00:52:16,310] E to the,
+- [00:52:16,310 - 00:52:17,490] h,
+- [00:52:17,830 - 00:52:18,310] t.
+- [00:52:21,910 - 00:52:22,730] Say it again?
+- [00:52:29,850 - 00:52:31,170] One person talk.
+- [00:52:31,630 - 00:52:32,730] I think it's right.
+- [00:52:32,930 - 00:52:33,750] I think it's right.
+- [00:52:33,950 - 00:52:34,590] Right.
+- [00:52:34,690 - 00:52:36,690] And the way you can just understand it
+- [00:52:36,690 - 00:52:38,410] is by saying that for small epsilon,
+- [00:52:41,830 - 00:52:43,650] 1 plus epsilon h
+- [00:52:43,650 - 00:52:44,830] is the same as
+- [00:52:44,830 - 00:52:46,250] E to the epsilon h,
+- [00:52:46,530 - 00:52:48,350] and if you take it to the nth power,
+- [00:52:48,710 - 00:52:51,010] the epsilon just multiplies the n
+- [00:52:51,010 - 00:52:51,770] and becomes t.
+- [00:52:52,910 - 00:52:53,430] Okay.
+- [00:52:53,530 - 00:52:54,890] So I will tell you right now
+- [00:52:54,890 - 00:52:57,150] the generalization of this
+- [00:52:57,790 - 00:52:59,470] for finite times,
+- [00:53:02,130 - 00:53:03,650] this will be a minus sign here,
+- [00:53:04,790 - 00:53:06,790] 1 minus IHt
+- [00:53:07,750 - 00:53:09,230] for finite t
+- [00:53:09,830 - 00:53:11,990] really becomes E to the minus IHt,
+- [00:53:12,090 - 00:53:13,150] and this is an important fact,
+- [00:53:13,790 - 00:53:14,310] but,
+- [00:53:14,310 - 00:53:16,510] for small intervals,
+- [00:53:16,810 - 00:53:17,690] small epsilon,
+- [00:53:20,670 - 00:53:22,470] we can just be consistent
+- [00:53:22,470 - 00:53:23,950] and work to order epsilon.
+- [00:53:24,330 - 00:53:26,650] We'll find out everything we need to know.
+- [00:53:27,150 - 00:53:27,750] Okay,
+- [00:53:27,750 - 00:53:30,090] so there's a concept now of a Hamiltonian.
+- [00:53:35,150 - 00:53:36,730] Let's see if we can
+- [00:53:38,830 - 00:53:41,170] understand this equation a little bit better.
+- [00:53:48,990 - 00:53:51,530] Let's take the wave function psi,
+- [00:53:52,310 - 00:53:53,790] or the state vector,
+- [00:53:53,870 - 00:53:55,090] state vector psi,
+- [00:53:56,310 - 00:53:59,250] at a time t plus epsilon.
+- [00:54:00,970 - 00:54:03,990] I am starting at time t
+- [00:54:03,990 - 00:54:06,050] with a certain wave function,
+- [00:54:06,210 - 00:54:07,850] and I'm allowing it to change
+- [00:54:07,850 - 00:54:09,510] over a tiny time interval.
+- [00:54:09,510 - 00:54:11,750] What is the answer to this?
+- [00:54:11,950 - 00:54:14,470] The answer to this is that it is equal
+- [00:54:14,470 - 00:54:17,930] to E to the IH epsilon
+- [00:54:19,830 - 00:54:22,010] times psi at time t.
+- [00:54:22,190 - 00:54:23,570] Let's just see what I did.
+- [00:54:25,490 - 00:54:26,430] Minus or plus,
+- [00:54:26,690 - 00:54:27,290] sorry,
+- [00:54:27,290 - 00:54:27,730] minus,
+- [00:54:27,870 - 00:54:28,810] minus here.
+- [00:54:32,310 - 00:54:34,070] Starting at time t,
+- [00:54:34,830 - 00:54:38,190] let's update by a small little time epsilon
+- [00:54:38,190 - 00:54:43,610] the rule is we multiply by U of t.
+- [00:54:44,070 - 00:54:44,750] Sorry,
+- [00:54:44,750 - 00:54:46,230] U of epsilon.
+- [00:54:46,610 - 00:54:49,290] We're updating by an amount of time epsilon,
+- [00:54:49,970 - 00:54:51,990] and that's equivalent to multiplying by
+- [00:54:51,990 - 00:54:55,470] E to the minus IH epsilon times psi of t.
+- [00:54:55,910 - 00:54:58,330] So this is the rule for going from a time
+- [00:54:58,330 - 00:54:59,510] to a neighboring time.
+- [00:55:00,010 - 00:55:02,170] But now let's write that out as
+- [00:55:02,170 - 00:55:05,250] 1 minus IH epsilon
+- [00:55:08,710 - 00:55:09,650] times psi of t.
+- [00:55:11,690 - 00:55:13,070] And let's write this side,
+- [00:55:13,190 - 00:55:13,630] I'm not going to,
+- [00:55:13,750 - 00:55:14,290] forget the,
+- [00:55:14,290 - 00:55:15,070] okay,
+- [00:55:16,470 - 00:55:16,910] yeah,
+- [00:55:16,910 - 00:55:17,230] okay,
+- [00:55:17,330 - 00:55:17,510] yeah,
+- [00:55:17,510 - 00:55:18,110] let's put them in.
+- [00:55:18,430 - 00:55:19,830] And this one here is
+- [00:55:19,830 - 00:55:22,010] psi of t plus epsilon.
+- [00:55:26,050 - 00:55:27,450] Now let's multiply out.
+- [00:55:27,890 - 00:55:30,170] 1 times psi of t is psi of t,
+- [00:55:30,630 - 00:55:33,190] but let's take that over to the left-hand side.
+- [00:55:34,030 - 00:55:36,050] That'll give us psi of t plus epsilon
+- [00:55:36,050 - 00:55:37,690] minus psi of t.
+- [00:55:38,190 - 00:55:39,270] Just the term coming from 1.
+- [00:55:39,990 - 00:55:41,610] The term coming from 1
+- [00:55:42,109 - 00:55:43,770] will give us the difference between
+- [00:55:43,770 - 00:55:45,550] psi of t plus epsilon
+- [00:55:49,150 - 00:55:50,590] minus psi of t.
+- [00:55:52,290 - 00:55:53,410] You see where we're going.
+- [00:55:53,470 - 00:55:54,730] We're building a differential equation
+- [00:55:55,570 - 00:55:56,490] for psi.
+- [00:55:57,070 - 00:55:59,810] Psi of t plus epsilon minus psi of t
+- [00:55:59,810 - 00:56:05,130] is just equal to minus IH epsilon psi of t.
+- [00:56:09,090 - 00:56:10,210] And finally,
+- [00:56:10,250 - 00:56:11,350] divide by epsilon.
+- [00:56:17,330 - 00:56:17,890] Okay,
+- [00:56:17,890 - 00:56:19,030] what's the left-hand side?
+- [00:56:20,290 - 00:56:23,030] The left-hand side is the time derivative
+- [00:56:23,990 - 00:56:25,570] of the state vector psi.
+- [00:56:26,810 - 00:56:28,580] And the right-hand side is
+- [00:56:28,580 - 00:56:30,350] just minus IH psi of t.
+- [00:56:30,850 - 00:56:31,410] Okay,
+- [00:56:31,410 - 00:56:32,430] so that leads us,
+- [00:56:33,330 - 00:56:33,890] finally,
+- [00:56:34,930 - 00:56:36,130] to the Schrodinger equation.
+- [00:56:38,190 - 00:56:39,610] The Schrodinger equation says
+- [00:56:41,210 - 00:56:43,470] that the psi by d...
+- [00:56:43,470 - 00:56:45,250] The psi by dt,
+- [00:56:46,470 - 00:56:48,230] this could be a wave function
+- [00:56:48,230 - 00:56:49,970] or it could be the state vector.
+- [00:56:50,150 - 00:56:53,990] I will leave the notation a little bit abused.
+- [00:56:54,570 - 00:56:57,070] I won't bother writing the ket vector here.
+- [00:56:57,370 - 00:56:59,690] It stands for both the equation
+- [00:56:59,690 - 00:57:00,690] for the state vector
+- [00:57:00,690 - 00:57:03,630] or the equation for the wave function itself.
+- [00:57:04,130 - 00:57:05,550] The psi by dt
+- [00:57:05,550 - 00:57:07,030] is equal
+- [00:57:07,030 - 00:57:12,410] to minus IH psi.
+- [00:57:13,990 - 00:57:15,830] If you want to put vectors in,
+- [00:57:15,930 - 00:57:18,630] if you want to turn it into an equation
+- [00:57:18,630 - 00:57:19,530] for a state vector,
+- [00:57:20,350 - 00:57:21,190] you put
+- [00:57:21,190 - 00:57:25,070] ket notations there.
+- [00:57:25,590 - 00:57:26,150] Otherwise,
+- [00:57:26,270 - 00:57:29,090] it's just the equation for a wave function.
+- [00:57:29,930 - 00:57:31,610] This is the Schrodinger equation.
+- [00:57:32,010 - 00:57:35,130] This is the time-dependent Schrodinger,
+- [00:57:35,650 - 00:57:36,370] Schrodinger equation.
+- [00:57:37,110 - 00:57:37,590] Okay,
+- [00:57:37,590 - 00:57:38,110] this is
+- [00:57:39,130 - 00:57:39,950] Schrodinger equation
+- [00:57:44,250 - 00:57:45,210] time-dependent,
+- [00:57:45,210 - 00:57:46,490] the TdSe,
+- [00:57:46,830 - 00:57:48,570] time-dependent Schrodinger equation.
+- [00:57:49,330 - 00:57:50,540] And what it tells you
+- [00:57:50,540 - 00:57:51,750] is how the state vector changes
+- [00:57:51,750 - 00:57:52,870] as a function of time
+- [00:57:52,870 - 00:57:54,850] if you are so lucky to know
+- [00:57:54,850 - 00:57:56,250] what the Hamiltonian is.
+- [00:57:57,030 - 00:57:58,450] Hamiltonian is a Hermitian operator
+- [00:57:58,990 - 00:58:01,550] and you can make all kinds of quantum mechanical systems
+- [00:58:01,550 - 00:58:04,190] just to play with by choosing different Hs.
+- [00:58:04,190 - 00:58:05,930] We did this last quarter.
+- [00:58:07,550 - 00:58:08,130] Okay,
+- [00:58:08,290 - 00:58:12,390] what about the time-independent Schrodinger equation?
+- [00:58:12,610 - 00:58:14,410] The time-independent Schrodinger equation
+- [00:58:14,410 - 00:58:17,590] is just the statement that H
+- [00:58:18,190 - 00:58:19,330] is a Hermitian operator.
+- [00:58:19,650 - 00:58:20,950] It has eigenvalues.
+- [00:58:21,110 - 00:58:22,430] It has eigenvectors.
+- [00:58:22,930 - 00:58:25,590] Its eigenvalues are the observable
+- [00:58:28,110 - 00:58:30,550] values that you would get if you measured H.
+- [00:58:30,790 - 00:58:31,550] And what are they called?
+- [00:58:31,630 - 00:58:32,270] They have another name.
+- [00:58:35,850 - 00:58:36,890] Energy levels.
+- [00:58:37,330 - 00:58:38,350] Energy levels.
+- [00:58:38,990 - 00:58:39,630] Incidentally,
+- [00:58:39,630 - 00:58:41,370] I promised you that I would keep around
+- [00:58:41,370 - 00:58:42,670] Planck's constant,
+- [00:58:42,670 - 00:58:44,050] and I've already dropped it.
+- [00:58:47,990 - 00:58:49,790] It goes over here.
+- [00:58:51,150 - 00:58:52,490] It goes over there.
+- [00:58:55,530 - 00:58:58,050] I don't promise by any means
+- [00:58:58,050 - 00:59:00,230] that I will be consistent about Planck's constant.
+- [00:59:00,650 - 00:59:01,290] Yes,
+- [00:59:01,290 - 00:59:02,450] I will be completely consistent
+- [00:59:02,450 - 00:59:03,890] by choosing Planck's constant
+- [00:59:03,890 - 00:59:05,030] to always be equal to one.
+- [00:59:05,350 - 00:59:06,530] Sometimes I'll put it in,
+- [00:59:06,530 - 00:59:07,670] sometimes I won't put it in,
+- [00:59:07,750 - 00:59:09,430] but I will never confuse it with
+- [00:59:09,430 - 00:59:11,110] I or the square root of two.
+- [00:59:13,150 - 00:59:13,630] Okay,
+- [00:59:13,630 - 00:59:15,330] so that's the time-dependent.
+- [00:59:15,370 - 00:59:17,770] The time-independent Schrodinger equation,
+- [00:59:18,070 - 00:59:20,210] that's just the eigenvalue equation
+- [00:59:20,210 - 00:59:22,330] for the eigenvalues of H.
+- [00:59:22,750 - 00:59:25,350] And all it says is that H
+- [00:59:26,690 - 00:59:29,770] on an eigenvector of the energy,
+- [00:59:30,030 - 00:59:32,290] a state with definite energy,
+- [00:59:34,270 - 00:59:37,170] is equal to E times the energy,
+- [00:59:37,990 - 00:59:41,170] E being the eigenvalue of H.
+- [00:59:42,830 - 00:59:45,230] E being the eigenvalue of H.
+- [00:59:45,450 - 00:59:47,470] So this equation here
+- [00:59:47,470 - 00:59:49,630] is the equation which tells you
+- [00:59:49,630 - 00:59:51,150] how to find the states
+- [00:59:51,150 - 00:59:54,530] and the values of energy that go with them
+- [00:59:54,530 - 00:59:57,890] that correspond to states of definite energy.
+- [00:59:59,450 - 01:00:01,210] You solve this equation,
+- [01:00:01,210 - 01:00:04,510] and it gives you a whole bunch of possible eigenvalues
+- [01:00:04,510 - 01:00:05,490] and eigenvectors.
+- [01:00:05,930 - 01:00:08,830] Those are the eigenvectors and eigenvalues
+- [01:00:09,530 - 01:00:11,430] of the energy operator.
+- [01:00:12,110 - 01:00:12,670] Okay,
+- [01:00:12,670 - 01:00:13,330] and again,
+- [01:00:13,330 - 01:00:14,090] we went through this,
+- [01:00:14,130 - 01:00:16,930] we did some examples last two quarters ago.
+- [01:00:17,370 - 01:00:18,450] On the other hand,
+- [01:00:18,450 - 01:00:19,230] this equation
+- [01:00:19,230 - 01:00:22,330] tells you how the state vector changes with time,
+- [01:00:22,530 - 01:00:23,670] and as you can see,
+- [01:00:23,670 - 01:00:24,570] it's the same H
+- [01:00:24,570 - 01:00:25,690] in both equations,
+- [01:00:26,030 - 01:00:30,130] so the question of the energy levels
+- [01:00:30,130 - 01:00:32,390] of a system are intimately bound up
+- [01:00:32,390 - 01:00:34,750] with the way that the system changes with time.
+- [01:00:35,910 - 01:00:36,130] Okay,
+- [01:00:36,130 - 01:00:36,690] so...
+- [01:00:38,150 - 01:00:38,670] Good.
+- [01:00:42,590 - 01:00:46,710] And that's quantum mechanics in a...
+- [01:00:46,710 - 01:00:49,690] I said before it was quantum mechanics in a nutshell.
+- [01:00:49,950 - 01:00:50,070] Well,
+- [01:00:50,070 - 01:00:51,290] it's a slightly bigger nut,
+- [01:00:51,450 - 01:00:53,250] but that's it.
+- [01:00:53,310 - 01:00:54,570] That's what you need to know.
+- [01:00:55,390 - 01:00:57,870] That's a summary of a quarter's worth
+- [01:00:57,870 - 01:00:59,990] of quantum mechanics.
+- [01:01:00,130 - 01:01:01,710] Any questions?
+- [01:01:04,510 - 01:01:05,350] Okay.
+- [01:01:05,430 - 01:01:06,310] Can you...
+- [01:01:06,310 - 01:01:09,410] If in the time-dependent equation...
+- [01:01:09,410 - 01:01:09,850] Time...
+- [01:01:09,850 - 01:01:14,190] It's the time-independent Schrodinger equation.
+- [01:01:15,550 - 01:01:18,890] If in the time-dependent Schrodinger equation,
+- [01:01:19,130 - 01:01:21,470] you replace psi with E...
+- [01:01:23,149 - 01:01:24,430] Psi with E?
+- [01:01:24,670 - 01:01:25,030] Yeah,
+- [01:01:25,030 - 01:01:25,950] can you do...
+- [01:01:25,950 - 01:01:29,590] Then you can drop the ket things.
+- [01:01:30,430 - 01:01:30,990] Right?
+- [01:01:32,530 - 01:01:35,110] Then it becomes just an equi...
+- [01:01:35,110 - 01:01:36,290] a differential equation,
+- [01:01:36,490 - 01:01:40,270] because H times E will be just E times E.
+- [01:01:42,570 - 01:01:43,130] No,
+- [01:01:43,130 - 01:01:43,750] we...
+- [01:01:43,750 - 01:01:44,030] No,
+- [01:01:44,030 - 01:01:44,170] no.
+- [01:01:44,170 - 01:01:46,370] We don't want to drop the ket symbol.
+- [01:01:47,450 - 01:01:49,030] Leave the ket symbol there.
+- [01:01:50,030 - 01:01:50,710] All right,
+- [01:01:50,710 - 01:01:52,130] leave the ket symbol there for the moment.
+- [01:01:52,870 - 01:01:55,090] What we can do is we can ask
+- [01:01:55,090 - 01:01:58,610] how a eigenvector changes with time.
+- [01:01:58,610 - 01:01:59,910] That we can do.
+- [01:02:00,230 - 01:02:01,770] So we can plug in here,
+- [01:02:01,890 - 01:02:05,130] and we can ask how the eigenvector changes with time,
+- [01:02:05,190 - 01:02:06,960] and the answer is that
+- [01:02:06,960 - 01:02:08,730] the eigenvector will change with time
+- [01:02:08,730 - 01:02:12,390] by just multiplying it by I times the energy level.
+- [01:02:13,410 - 01:02:16,510] That's what tells us how eigenvectors change with time.
+- [01:02:16,630 - 01:02:17,870] Anybody remember the answer,
+- [01:02:17,990 - 01:02:19,470] how an eigenvector changes with time?
+- [01:02:21,290 - 01:02:23,170] It just gets multiplied by E to
+- [01:02:23,170 - 01:02:25,050] the I times the energy times time.
+- [01:02:26,450 - 01:02:26,970] Okay,
+- [01:02:26,970 - 01:02:27,610] so that...
+- [01:02:27,610 - 01:02:29,590] We can go through that.
+- [01:02:29,730 - 01:02:30,310] We don't need...
+- [01:02:31,290 - 01:02:32,470] It's in the notes.
+- [01:02:32,610 - 01:02:35,530] Go back to it and check it out.
+- [01:02:35,990 - 01:02:36,870] All right,
+- [01:02:36,870 - 01:02:37,010] now,
+- [01:02:37,110 - 01:02:40,670] the time evolution is one example
+- [01:02:40,670 - 01:02:44,370] of transformations that you can do on a system
+- [01:02:46,930 - 01:02:50,570] which preserve certain facts about the system,
+- [01:02:50,650 - 01:02:52,700] in particular which preserve
+- [01:02:52,700 - 01:02:54,750] the inner products between vectors.
+- [01:02:55,090 - 01:02:55,910] In other words,
+- [01:02:55,910 - 01:02:57,590] which preserve the logical relationship
+- [01:02:57,610 - 01:02:59,130] between vectors,
+- [01:02:59,370 - 01:03:01,690] preserve the notion of orthogonality,
+- [01:03:02,410 - 01:03:06,270] preserve the notion of vectors being the same vectors,
+- [01:03:06,550 - 01:03:09,510] and that kind of...
+- [01:03:12,690 - 01:03:15,730] There are many other kinds of transformations
+- [01:03:15,730 - 01:03:17,770] that you may want to do on a system.
+- [01:03:19,390 - 01:03:20,470] In particular,
+- [01:03:20,470 - 01:03:22,590] among them are symmetry transformations.
+- [01:03:24,130 - 01:03:26,770] We will need to talk about symmetry transformations.
+- [01:03:26,770 - 01:03:27,190] Now,
+- [01:03:27,190 - 01:03:28,270] I will tell you where we're going.
+- [01:03:28,710 - 01:03:32,190] One of the most important symmetries of nature
+- [01:03:32,669 - 01:03:35,250] that occur over and over and over again
+- [01:03:35,250 - 01:03:36,550] in all sorts of contexts,
+- [01:03:36,750 - 01:03:39,270] but in particular in the theory of atoms,
+- [01:03:40,310 - 01:03:42,070] is rotational symmetry.
+- [01:03:44,710 - 01:03:45,990] A atom,
+- [01:03:45,990 - 01:03:48,070] in particular a hydrogen atom,
+- [01:03:48,190 - 01:03:50,610] a hydrogen atom is an electron moving
+- [01:03:50,610 - 01:03:52,150] in a central force field.
+- [01:03:53,070 - 01:03:56,330] The equations of a hydrogen atom are rotationally symmetric,
+- [01:03:56,330 - 01:03:58,470] and that's because the potential energy,
+- [01:03:58,670 - 01:03:59,830] the Coulomb potential,
+- [01:03:59,970 - 01:04:01,210] is rotationally symmetric.
+- [01:04:01,470 - 01:04:02,350] It's a central force.
+- [01:04:03,170 - 01:04:05,870] And so hydrogen atoms,
+- [01:04:06,050 - 01:04:08,510] and basically all systems in nature really,
+- [01:04:08,730 - 01:04:10,690] but hydrogen atoms in particular,
+- [01:04:10,810 - 01:04:12,850] enjoy rotational symmetry.
+- [01:04:13,450 - 01:04:14,650] If you rotate...
+- [01:04:14,650 - 01:04:17,310] All it means is that if you rotate your coordinates,
+- [01:04:18,250 - 01:04:21,770] the description of the hydrogen atom doesn't change.
+- [01:04:22,350 - 01:04:24,040] Or another way to say it
+- [01:04:24,040 - 01:04:25,730] is if you rotate the hydrogen atom,
+- [01:04:25,730 - 01:04:27,010] it's still a hydrogen atom.
+- [01:04:28,790 - 01:04:31,070] It may or may not be the same state,
+- [01:04:31,190 - 01:04:32,430] but it's still a hydrogen atom
+- [01:04:32,430 - 01:04:34,430] described by the same set of equations.
+- [01:04:37,110 - 01:04:39,190] So the notion of a symmetry
+- [01:04:39,730 - 01:04:41,770] is central in quantum mechanics.
+- [01:04:42,070 - 01:04:44,150] It is also in classical mechanics,
+- [01:04:44,410 - 01:04:45,940] but it comes up and
+- [01:04:45,940 - 01:04:47,470] really hits you over the head
+- [01:04:47,470 - 01:04:48,410] in quantum mechanics.
+- [01:04:50,150 - 01:04:51,570] And we need to explore,
+- [01:04:53,430 - 01:04:55,490] largely for the purposes of understanding
+- [01:04:55,730 - 01:04:56,610] rotational symmetry,
+- [01:04:56,870 - 01:04:58,850] we need to understand the concept of a symmetry.
+- [01:04:59,850 - 01:05:03,170] So I'm going to spend 15 minutes
+- [01:05:03,170 - 01:05:06,070] explaining exactly what a symmetry is.
+- [01:05:09,330 - 01:05:10,370] Keep in mind,
+- [01:05:10,470 - 01:05:11,710] if you want to keep one in mind,
+- [01:05:11,750 - 01:05:13,170] there are two that you can keep in mind
+- [01:05:13,170 - 01:05:16,190] for just to have something in your head.
+- [01:05:16,810 - 01:05:18,890] One of them is rotation symmetry,
+- [01:05:19,970 - 01:05:22,170] where it just says that if you take a system
+- [01:05:22,170 - 01:05:23,850] which satisfies a certain set of equations,
+- [01:05:23,850 - 01:05:25,710] and you rotate it,
+- [01:05:25,710 - 01:05:26,910] physically rotate it,
+- [01:05:26,930 - 01:05:28,510] physically rotate it about an axis,
+- [01:05:28,770 - 01:05:30,510] you may or may not change it.
+- [01:05:30,630 - 01:05:31,510] I can tell you this,
+- [01:05:31,510 - 01:05:32,390] if you rotate me,
+- [01:05:32,570 - 01:05:33,530] you'll change me.
+- [01:05:34,190 - 01:05:35,010] You will.
+- [01:05:36,130 - 01:05:38,050] If the Earth weren't here,
+- [01:05:38,170 - 01:05:40,250] and I was in outer space and free space,
+- [01:05:41,750 - 01:05:44,510] then the Lennard equation,
+- [01:05:44,950 - 01:05:46,810] whatever the equation governing me is,
+- [01:05:46,990 - 01:05:50,630] would be the same for the rotated or the unrotated.
+- [01:05:51,070 - 01:05:53,170] Another way of saying it is I couldn't tell
+- [01:05:53,170 - 01:05:54,810] whether I was rotated or not.
+- [01:05:54,930 - 01:05:56,650] If you rotate me and then just go away,
+- [01:05:56,790 - 01:05:58,090] I can't tell that I was rotated
+- [01:05:58,090 - 01:06:01,510] because the equations that govern my metabolism,
+- [01:06:01,710 - 01:06:03,350] my internal structure and so forth
+- [01:06:03,350 - 01:06:06,570] are exactly the same as had I not been rotated.
+- [01:06:08,010 - 01:06:08,530] Okay,
+- [01:06:08,530 - 01:06:11,270] so rotation symmetry is one example.
+- [01:06:11,470 - 01:06:13,370] Another example is translation symmetry.
+- [01:06:13,770 - 01:06:15,370] If you take me in outer space,
+- [01:06:16,010 - 01:06:17,470] and you set me down,
+- [01:06:17,470 - 01:06:17,850] and you say,
+- [01:06:17,890 - 01:06:18,490] how do I feel?
+- [01:06:18,490 - 01:06:19,430] I feel fine.
+- [01:06:19,650 - 01:06:21,830] You take the same state,
+- [01:06:21,830 - 01:06:23,990] but you translate me over by a meter,
+- [01:06:24,130 - 01:06:25,370] and you ask me how I feel,
+- [01:06:25,550 - 01:06:27,950] I say exactly the same as I felt before.
+- [01:06:29,230 - 01:06:29,970] It's a symmetry.
+- [01:06:30,830 - 01:06:31,930] On the other hand,
+- [01:06:31,930 - 01:06:32,910] there are situations
+- [01:06:32,910 - 01:06:35,230] where translations may not be a symmetry.
+- [01:06:35,890 - 01:06:36,430] You know,
+- [01:06:36,430 - 01:06:38,810] if there was a furnace over there,
+- [01:06:38,850 - 01:06:39,210] a fire,
+- [01:06:39,210 - 01:06:40,730] hot fire,
+- [01:06:41,190 - 01:06:42,450] and you put me over here,
+- [01:06:42,630 - 01:06:43,250] and you said,
+- [01:06:43,250 - 01:06:43,790] how do you feel?
+- [01:06:43,790 - 01:06:44,370] I feel fine.
+- [01:06:44,650 - 01:06:45,970] Now translate me over to here,
+- [01:06:45,970 - 01:06:46,590] how do you feel?
+- [01:06:46,610 - 01:06:46,750] Well,
+- [01:06:46,750 - 01:06:47,570] I don't feel so fine.
+- [01:06:48,870 - 01:06:50,870] So the presence of an object
+- [01:06:51,849 - 01:06:54,490] may break translation symmetry.
+- [01:06:55,370 - 01:06:56,790] On the other hand,
+- [01:06:56,830 - 01:06:58,890] if you think about it a minute,
+- [01:06:59,030 - 01:06:59,470] wait a minute,
+- [01:06:59,690 - 01:07:02,070] what if I really translate everything,
+- [01:07:02,430 - 01:07:03,910] me and the furnace?
+- [01:07:04,710 - 01:07:08,210] Then we restore the translation symmetry.
+- [01:07:08,670 - 01:07:10,590] So symmetries are operations,
+- [01:07:10,810 - 01:07:13,830] or there are operations that you can do
+- [01:07:13,830 - 01:07:14,850] on states of systems,
+- [01:07:15,589 - 01:07:18,650] and if the operation doesn't change,
+- [01:07:19,930 - 01:07:21,810] the equations doesn't change,
+- [01:07:21,810 - 01:07:25,170] the properties of the system doesn't change,
+- [01:07:25,190 - 01:07:26,690] the way you describe the system,
+- [01:07:26,870 - 01:07:29,910] then that transformation is called a symmetry.
+- [01:07:30,810 - 01:07:32,210] For a free particle,
+- [01:07:32,210 - 01:07:34,030] for any ordinary system,
+- [01:07:34,390 - 01:07:36,250] if it's out in outer space,
+- [01:07:36,390 - 01:07:37,610] far from anything else,
+- [01:07:37,690 - 01:07:38,730] and you translate it,
+- [01:07:38,730 - 01:07:39,430] that's a symmetry.
+- [01:07:39,670 - 01:07:40,530] You rotate it,
+- [01:07:40,530 - 01:07:41,310] that's a symmetry.
+- [01:07:41,550 - 01:07:42,830] What if you squeeze it,
+- [01:07:43,430 - 01:07:45,930] change its dimensions by squeezing it?
+- [01:07:48,650 - 01:07:50,270] That's generally not a symmetry.
+- [01:07:50,270 - 01:07:51,130] You know,
+- [01:07:51,130 - 01:07:53,530] if you take a crystal of rock salt or something,
+- [01:07:53,670 - 01:07:55,230] and you squeeze down on it
+- [01:07:55,230 - 01:07:56,930] and compress it by a factor of two,
+- [01:07:57,210 - 01:07:59,290] it doesn't behave the same way.
+- [01:08:01,730 - 01:08:03,290] So there are all kinds of things
+- [01:08:03,290 - 01:08:04,190] which are not symmetries.
+- [01:08:05,250 - 01:08:05,770] Nevertheless,
+- [01:08:05,770 - 01:08:07,170] there still may be operations
+- [01:08:07,170 - 01:08:08,270] that you can define,
+- [01:08:08,510 - 01:08:10,330] but they may not be symmetries.
+- [01:08:11,230 - 01:08:11,750] Okay,
+- [01:08:11,750 - 01:08:14,250] let's talk about the condition.
+- [01:08:14,490 - 01:08:17,430] Let's first of all try to quantify that idea.
+- [01:08:18,950 - 01:08:19,930] We have states.
+- [01:08:21,149 - 01:08:21,750] Let's...
+- [01:08:23,129 - 01:08:26,450] The generic or typical state of the system
+- [01:08:26,450 - 01:08:28,430] that we're interested in is called psi.
+- [01:08:29,729 - 01:08:31,550] We're going to do an operation on it.
+- [01:08:31,689 - 01:08:35,270] That operation might correspond to rotating the system,
+- [01:08:35,390 - 01:08:37,510] it might correspond to translating the system,
+- [01:08:37,689 - 01:08:40,370] or it might correspond to something uglier than that,
+- [01:08:40,410 - 01:08:42,090] like squeezing it or stretching it,
+- [01:08:42,170 - 01:08:43,569] but doing something to it.
+- [01:08:44,810 - 01:08:46,430] And let's represent that
+- [01:08:47,849 - 01:08:48,450] by...
+- [01:08:49,930 - 01:08:51,569] an operator v.
+- [01:08:52,910 - 01:08:55,510] I use v because I've already used u,
+- [01:08:55,649 - 01:08:58,370] but I intend it to be a unitary operator.
+- [01:08:58,590 - 01:08:59,870] Why a unitary operator?
+- [01:09:00,689 - 01:09:00,970] Well,
+- [01:09:00,970 - 01:09:02,390] if I really have a symmetry,
+- [01:09:03,370 - 01:09:04,810] and I have two states
+- [01:09:04,810 - 01:09:06,890] which are different than each other,
+- [01:09:07,130 - 01:09:09,010] I apply the symmetry operation,
+- [01:09:09,350 - 01:09:10,990] I expect them to stay different.
+- [01:09:12,490 - 01:09:15,189] If there are two states of...
+- [01:09:16,189 - 01:09:17,109] of me,
+- [01:09:17,790 - 01:09:19,370] happy me and sad me,
+- [01:09:19,930 - 01:09:21,149] they're different from each other,
+- [01:09:21,930 - 01:09:23,250] they're observably different,
+- [01:09:23,529 - 01:09:26,189] there's an observable that you can measure,
+- [01:09:26,270 - 01:09:28,210] the happiness operator,
+- [01:09:28,670 - 01:09:29,810] and they're different.
+- [01:09:30,109 - 01:09:32,930] If you then rotate the state
+- [01:09:33,910 - 01:09:35,390] out in outer space,
+- [01:09:36,049 - 01:09:37,870] the distinction should remain.
+- [01:09:38,670 - 01:09:41,490] So that means that orthogonal states
+- [01:09:41,490 - 01:09:43,029] should remain orthogonal
+- [01:09:43,029 - 01:09:44,830] when you do a symmetry operation,
+- [01:09:45,189 - 01:09:48,450] and that says that the operator v should be unitary.
+- [01:09:49,930 - 01:09:51,109] So v is unitary,
+- [01:09:51,270 - 01:09:52,529] and it represents
+- [01:09:53,630 - 01:09:58,330] v equals v dagger v equals 1.
+- [01:09:58,590 - 01:10:01,010] I don't use u because I'm saving u
+- [01:10:01,010 - 01:10:03,710] for the special case of time translation,
+- [01:10:03,930 - 01:10:05,590] of evolution.
+- [01:10:07,470 - 01:10:08,110] Okay.
+- [01:10:09,249 - 01:10:09,889] Now,
+- [01:10:09,889 - 01:10:11,530] let's suppose...
+- [01:10:11,530 - 01:10:12,550] Yeah.
+- [01:10:15,810 - 01:10:17,270] This is a little bit tricky,
+- [01:10:17,270 - 01:10:18,270] so we'll...
+- [01:10:19,090 - 01:10:20,850] There's u's and there's v's,
+- [01:10:21,010 - 01:10:22,850] and it's quite tricky.
+- [01:10:23,070 - 01:10:24,670] It takes me half an hour each time
+- [01:10:24,670 - 01:10:26,150] I try to do this to get it right,
+- [01:10:26,290 - 01:10:27,570] but it's also very,
+- [01:10:27,570 - 01:10:28,190] very simple.
+- [01:10:28,790 - 01:10:29,230] Okay.
+- [01:10:30,450 - 01:10:34,250] Let's suppose that a wave function
+- [01:10:34,250 - 01:10:35,750] or a state vector,
+- [01:10:36,030 - 01:10:37,550] I'll use them interchangeably,
+- [01:10:37,990 - 01:10:39,450] let's call it psi 1,
+- [01:10:42,030 - 01:10:43,530] under time evolution,
+- [01:10:47,550 - 01:10:49,150] becomes psi 2.
+- [01:10:52,570 - 01:10:54,310] If I take psi 1
+- [01:10:54,310 - 01:10:56,570] and I allow it to evolve with time,
+- [01:10:56,770 - 01:10:59,270] let's represent that by putting a little u here.
+- [01:10:59,970 - 01:11:01,830] u represents time evolution.
+- [01:11:03,150 - 01:11:04,310] v does not.
+- [01:11:04,310 - 01:11:05,290] v is something else.
+- [01:11:07,110 - 01:11:09,870] And if I take psi 1
+- [01:11:10,530 - 01:11:11,950] and allow it to evolve
+- [01:11:11,950 - 01:11:13,370] for a certain amount of time,
+- [01:11:13,530 - 01:11:14,590] it will become psi 2.
+- [01:11:14,930 - 01:11:15,470] Okay.
+- [01:11:15,470 - 01:11:16,270] So that's under u.
+- [01:11:16,910 - 01:11:18,970] Another way to say that over here
+- [01:11:19,530 - 01:11:22,210] is that u on psi 1
+- [01:11:23,350 - 01:11:25,110] is equal to psi 2.
+- [01:11:25,950 - 01:11:26,570] That's all.
+- [01:11:26,570 - 01:11:28,750] Evolve psi 1 for a little bit of time,
+- [01:11:28,830 - 01:11:30,070] and you get psi 2.
+- [01:11:31,090 - 01:11:31,630] Okay.
+- [01:11:32,410 - 01:11:32,950] Now,
+- [01:11:32,950 - 01:11:36,690] let's imagine the transformed version of this.
+- [01:11:37,030 - 01:11:37,570] Transformed,
+- [01:11:37,570 - 01:11:39,030] it could be by rotation,
+- [01:11:39,370 - 01:11:40,790] it could be by translation,
+- [01:11:41,090 - 01:11:42,910] by some symmetry,
+- [01:11:42,910 - 01:11:44,230] by some symmetry operation.
+- [01:11:45,849 - 01:11:49,990] What does this equation say for the transformed things?
+- [01:11:50,470 - 01:11:51,010] Well,
+- [01:11:51,010 - 01:11:53,570] let's call this psi prime.
+- [01:11:54,790 - 01:11:55,510] Now,
+- [01:11:55,510 - 01:11:56,050] there are too many.
+- [01:11:56,230 - 01:11:58,810] Let's keep in mind exactly what's going on here.
+- [01:11:59,570 - 01:12:02,330] 1 and 2 represent some initial state
+- [01:12:02,330 - 01:12:03,510] and some final state.
+- [01:12:04,070 - 01:12:05,890] Evolution from one to another.
+- [01:12:06,430 - 01:12:08,760] Prime and unprimed represent the
+- [01:12:08,760 - 01:12:11,090] action of the symmetry operation,
+- [01:12:11,090 - 01:12:12,770] which could be rotation.
+- [01:12:12,970 - 01:12:14,870] Could be rotation or it could be translation.
+- [01:12:15,890 - 01:12:16,530] Okay.
+- [01:12:17,890 - 01:12:18,770] Here's what I maintain.
+- [01:12:19,090 - 01:12:20,990] If there really is a symmetry,
+- [01:12:21,310 - 01:12:23,470] then psi 1 prime...
+- [01:12:26,130 - 01:12:28,210] If we were talking about rotations,
+- [01:12:28,590 - 01:12:30,930] then psi 1 prime is just
+- [01:12:30,930 - 01:12:33,270] the rotated state of psi 1.
+- [01:12:34,170 - 01:12:37,930] Psi 1 prime will evolve...
+- [01:12:40,429 - 01:12:40,990] to...
+- [01:12:42,690 - 01:12:44,650] the rotated version of psi 2.
+- [01:12:50,010 - 01:12:51,570] Let's see what that says.
+- [01:12:51,930 - 01:12:52,190] Okay.
+- [01:12:53,050 - 01:12:55,170] If I evolve myself...
+- [01:12:56,610 - 01:12:58,270] over a period of time,
+- [01:12:58,430 - 01:12:59,690] and I'm in some state,
+- [01:12:59,910 - 01:13:01,310] and I get some other state,
+- [01:13:01,490 - 01:13:03,470] I go from happy to not so happy.
+- [01:13:04,330 - 01:13:04,890] Then,
+- [01:13:04,890 - 01:13:06,150] when I rotate myself,
+- [01:13:06,150 - 01:13:07,750] I should also find,
+- [01:13:07,750 - 01:13:09,130] under the same evolution,
+- [01:13:09,790 - 01:13:12,490] that I go from the rotated happy state
+- [01:13:12,490 - 01:13:15,250] to the rotated not so happy state.
+- [01:13:15,770 - 01:13:17,790] That's what it really means to have a symmetry.
+- [01:13:18,350 - 01:13:23,250] That the evolution of the transformed...
+- [01:13:28,049 - 01:13:31,230] state behaves the same way as the original state.
+- [01:13:31,350 - 01:13:31,950] It's a little bit tricky.
+- [01:13:32,470 - 01:13:32,990] Okay.
+- [01:13:33,050 - 01:13:34,240] Let's see if we can make
+- [01:13:34,240 - 01:13:35,430] an equation out of this now.
+- [01:13:39,469 - 01:13:40,110] Yeah.
+- [01:13:40,590 - 01:13:41,230] Okay.
+- [01:13:41,510 - 01:13:42,150] So,
+- [01:13:42,150 - 01:13:43,990] the first row here
+- [01:13:43,990 - 01:13:46,390] is just the equation that psi 2
+- [01:13:46,390 - 01:13:48,430] is u psi 1.
+- [01:13:49,570 - 01:13:50,670] That's what this says.
+- [01:13:53,589 - 01:13:55,530] The second equation...
+- [01:13:55,530 - 01:13:56,830] Let's go to the second equation.
+- [01:13:57,190 - 01:13:59,450] To go from unprimed to prime,
+- [01:13:59,690 - 01:14:01,170] you multiply by v.
+- [01:14:02,130 - 01:14:02,770] So,
+- [01:14:02,770 - 01:14:04,850] the second equation here says that
+- [01:14:04,850 - 01:14:06,130] v is the relative of psi 1 prime.
+- [01:14:06,130 - 01:14:06,130] v,
+- [01:14:06,130 - 01:14:09,130] it says that...
+- [01:14:13,010 - 01:14:14,030] I'm sorry.
+- [01:14:14,210 - 01:14:15,630] This always confuses me.
+- [01:14:22,630 - 01:14:25,650] It says that psi 2 prime
+- [01:14:27,969 - 01:14:33,970] is equal to u times psi 1 prime.
+- [01:14:40,490 - 01:14:41,150] So,
+- [01:14:41,150 - 01:14:41,150] I'm going to do a little bit of math here.
+- [01:14:41,150 - 01:14:43,750] To go from 1 to 2 is time evolution.
+- [01:14:44,110 - 01:14:47,690] To go from unprimed to prime is v,
+- [01:14:48,010 - 01:14:49,150] is the symmetry operation.
+- [01:14:49,710 - 01:14:50,550] All right.
+- [01:14:50,570 - 01:14:50,770] So,
+- [01:14:50,770 - 01:14:53,750] psi 1 prime is v times psi 1.
+- [01:14:54,930 - 01:14:55,910] All right.
+- [01:14:56,030 - 01:14:56,690] So,
+- [01:14:56,690 - 01:14:59,550] we have uv times psi 2
+- [01:14:59,550 - 01:15:05,750] is u times psi 1 prime
+- [01:15:05,750 - 01:15:06,110] and psi 2 prime.
+- [01:15:06,110 - 01:15:08,450] And psi 1 prime is v times psi 1.
+- [01:15:09,210 - 01:15:09,810] Okay.
+- [01:15:09,990 - 01:15:11,410] That's the right-hand side.
+- [01:15:11,830 - 01:15:15,610] The left-hand side is v on psi 2,
+- [01:15:15,750 - 01:15:18,970] but psi 2 is u times psi 1.
+- [01:15:20,790 - 01:15:21,390] So,
+- [01:15:21,390 - 01:15:25,650] after perpetual confusion
+- [01:15:25,650 - 01:15:27,990] that has...
+- [01:15:28,950 - 01:15:31,370] It stumps me every time I try to do this
+- [01:15:31,370 - 01:15:32,090] on the blackboard.
+- [01:15:32,650 - 01:15:34,080] What it says is that
+- [01:15:34,080 - 01:15:35,510] if a thing is a symmetry,
+- [01:15:36,110 - 01:15:36,750] in other words,
+- [01:15:36,750 - 01:15:40,270] if it preserves the way evolution takes place,
+- [01:15:40,330 - 01:15:41,370] if it's a transformation
+- [01:15:42,669 - 01:15:47,110] which preserves the time relationships between vectors,
+- [01:15:47,510 - 01:15:50,830] then it says that v times u
+- [01:15:50,830 - 01:15:52,670] must be equal to u times v.
+- [01:15:52,910 - 01:15:53,430] This,
+- [01:15:53,430 - 01:15:53,810] of course,
+- [01:15:53,810 - 01:15:55,390] must be true for every state
+- [01:15:55,390 - 01:15:57,950] if it's to be a true symmetry of nature.
+- [01:15:58,450 - 01:16:00,050] A true symmetry of nature,
+- [01:16:00,130 - 01:16:00,950] rotation symmetry,
+- [01:16:00,950 - 01:16:01,710] for example,
+- [01:16:01,870 - 01:16:04,330] is not something which only applies
+- [01:16:04,330 - 01:16:05,970] if I'm standing vertically upright.
+- [01:16:06,809 - 01:16:09,910] It should apply to any particular state
+- [01:16:09,910 - 01:16:11,770] of the system.
+- [01:16:12,030 - 01:16:12,930] And so,
+- [01:16:12,930 - 01:16:14,230] if v times u
+- [01:16:16,170 - 01:16:17,970] on any psi 1
+- [01:16:17,970 - 01:16:21,050] is equal to u times v on any psi 1,
+- [01:16:21,250 - 01:16:24,070] what it says is that symmetries of nature
+- [01:16:24,070 - 01:16:24,710] are such,
+- [01:16:24,710 - 01:16:25,630] they're operations,
+- [01:16:25,630 - 01:16:26,690] they're v's,
+- [01:16:27,610 - 01:16:28,750] unitary operators,
+- [01:16:30,469 - 01:16:31,750] which commute
+- [01:16:32,809 - 01:16:34,750] with the time evolution operator.
+- [01:16:38,670 - 01:16:39,730] For all t?
+- [01:16:40,030 - 01:16:40,770] For all...
+- [01:16:41,870 - 01:16:42,530] For all...
+- [01:16:42,530 - 01:16:43,030] Time.
+- [01:16:43,370 - 01:16:43,810] Yes,
+- [01:16:43,810 - 01:16:44,670] in fact,
+- [01:16:44,670 - 01:16:45,350] for all time.
+- [01:16:46,490 - 01:16:47,070] We'll see,
+- [01:16:47,070 - 01:16:48,930] it's enough for it to be true for one time
+- [01:16:48,930 - 01:16:50,190] and it will be true for all time.
+- [01:16:50,330 - 01:16:50,570] But yes,
+- [01:16:50,570 - 01:16:51,050] that's correct.
+- [01:16:51,930 - 01:16:52,370] Okay.
+- [01:16:54,010 - 01:16:54,450] So,
+- [01:16:54,450 - 01:16:55,490] unitary operations,
+- [01:16:57,110 - 01:16:58,890] things you can do to the state vectors
+- [01:16:58,890 - 01:17:00,650] which preserve orthogonality,
+- [01:17:01,610 - 01:17:04,270] which commute with the time evolution operator,
+- [01:17:04,270 - 01:17:06,010] are symmetries
+- [01:17:06,010 - 01:17:09,070] that preserve the evolution,
+- [01:17:09,250 - 01:17:11,210] the evolutionary relationships.
+- [01:17:13,110 - 01:17:14,970] So physically you're saying
+- [01:17:14,970 - 01:17:16,550] you can rotate and then wait,
+- [01:17:16,670 - 01:17:18,190] or you can wait and then rotate.
+- [01:17:18,510 - 01:17:18,810] Exactly.
+- [01:17:19,090 - 01:17:20,690] The words are very simple
+- [01:17:20,690 - 01:17:21,910] and they make perfect sense.
+- [01:17:22,690 - 01:17:23,330] And...
+- [01:17:25,130 - 01:17:25,770] Yes,
+- [01:17:25,770 - 01:17:26,970] that's exactly what it says.
+- [01:17:27,870 - 01:17:28,510] Okay.
+- [01:17:28,630 - 01:17:30,910] So how do we identify symmetries?
+- [01:17:31,270 - 01:17:33,190] We look for operations
+- [01:17:33,190 - 01:17:36,150] which commute with a time evolution operator.
+- [01:17:37,430 - 01:17:38,030] Now,
+- [01:17:38,030 - 01:17:40,450] remember that the time evolution operator
+- [01:17:43,570 - 01:17:44,770] is itself...
+- [01:17:44,770 - 01:17:48,970] Let's take the limit of a small time evolution
+- [01:17:48,970 - 01:17:50,750] just to analyze it a little bit.
+- [01:17:51,110 - 01:17:52,150] This says...
+- [01:17:52,150 - 01:17:52,410] Well,
+- [01:17:52,410 - 01:17:53,050] first of all,
+- [01:17:53,050 - 01:17:53,330] yeah,
+- [01:17:53,330 - 01:17:53,530] okay,
+- [01:17:53,610 - 01:17:58,590] it says that v times 1 plus i epsilon h...
+- [01:18:01,049 - 01:18:02,930] 1 minus i epsilon h,
+- [01:18:02,990 - 01:18:03,170] 1 minus i epsilon h,
+- [01:18:03,190 - 01:18:08,090] is equal to 1 minus i epsilon h,
+- [01:18:08,290 - 01:18:09,810] this is the first order again,
+- [01:18:10,509 - 01:18:11,330] times v.
+- [01:18:12,710 - 01:18:14,390] I'm just expanding it out.
+- [01:18:15,790 - 01:18:17,550] The first order is good enough.
+- [01:18:17,590 - 01:18:19,490] It gives us everything we really want to know.
+- [01:18:21,270 - 01:18:22,390] First of all,
+- [01:18:22,390 - 01:18:25,110] v times 1 is equal to 1 times v,
+- [01:18:25,310 - 01:18:26,270] so those cancel.
+- [01:18:27,630 - 01:18:30,380] And what it says is
+- [01:18:30,380 - 01:18:33,130] that minus i epsilon v h
+- [01:18:33,130 - 01:18:33,170] is equal to 1 minus i epsilon h,
+- [01:18:33,170 - 01:18:37,870] which is equal to 1 minus i epsilon h v.
+- [01:18:38,830 - 01:18:39,210] Well,
+- [01:18:39,210 - 01:18:41,250] canceling out the minus i epsilon,
+- [01:18:41,510 - 01:18:45,530] it says that v commutes with the Hamiltonian.
+- [01:18:47,010 - 01:18:47,390] Okay.
+- [01:18:47,870 - 01:18:49,490] Let's cancel out these things,
+- [01:18:51,010 - 01:18:53,030] the minus i epsilons.
+- [01:18:54,790 - 01:18:57,750] A symmetry is a unitary operation
+- [01:18:57,750 - 01:19:00,370] which commutes with the Hamiltonian.
+- [01:19:02,289 - 01:19:05,430] Any unitary operation which commutes with the Hamiltonian
+- [01:19:05,430 - 01:19:05,950] is a symmetry,
+- [01:19:06,170 - 01:19:08,370] and any symmetry is a unitary operation
+- [01:19:08,370 - 01:19:10,030] which commutes with the Hamiltonian.
+- [01:19:10,670 - 01:19:12,050] That's very abstract.
+- [01:19:12,930 - 01:19:14,310] That's extremely abstract,
+- [01:19:14,590 - 01:19:16,570] and in order to appreciate it,
+- [01:19:16,590 - 01:19:17,990] we have to do a couple of examples.
+- [01:19:18,150 - 01:19:19,710] We'll do some examples in a moment,
+- [01:19:19,930 - 01:19:22,550] but let's just focus on that,
+- [01:19:23,449 - 01:19:26,650] that unitary operations on the space of states
+- [01:19:26,650 - 01:19:28,530] which commute with the Hamiltonian
+- [01:19:28,530 - 01:19:29,330] are symmetries.
+- [01:19:29,330 - 01:19:34,170] What limited v to being unitary?
+- [01:19:34,990 - 01:19:36,190] What limits?
+- [01:19:36,190 - 01:19:36,550] Sorry.
+- [01:19:36,650 - 01:19:38,610] What required that v is unitary?
+- [01:19:39,230 - 01:19:39,870] Oh,
+- [01:19:39,870 - 01:19:40,830] yeah.
+- [01:19:41,010 - 01:19:41,930] A symmetry,
+- [01:19:41,930 - 01:19:43,690] whatever a symmetry is,
+- [01:19:43,770 - 01:19:45,450] it preserves logical relationships
+- [01:19:45,450 - 01:19:46,670] between the vectors.
+- [01:19:47,510 - 01:19:48,690] So it's an assumption.
+- [01:19:48,870 - 01:19:51,010] It's an assumption that the symmetries of nature
+- [01:19:51,010 - 01:19:53,550] take orthogonal states to orthogonal states.
+- [01:19:54,710 - 01:19:55,350] Okay.
+- [01:19:56,250 - 01:19:58,030] That seems plausible.
+- [01:19:58,030 - 01:20:01,770] A symmetry should not take two states
+- [01:20:01,770 - 01:20:05,110] which are distinctly different from each other
+- [01:20:05,110 - 01:20:07,930] and act on them to give states
+- [01:20:07,930 - 01:20:10,150] which are not distinctly different from each other.
+- [01:20:10,270 - 01:20:11,850] You wouldn't call that a symmetry.
+- [01:20:12,350 - 01:20:14,190] You could say mutually exclusive.
+- [01:20:14,810 - 01:20:15,450] Yeah.
+- [01:20:15,550 - 01:20:18,510] Mutually exclusive things should stay mutually exclusive.
+- [01:20:19,010 - 01:20:19,690] Right.
+- [01:20:20,849 - 01:20:21,190] Okay.
+- [01:20:21,270 - 01:20:26,590] So we now have an abstract mathematical definition
+- [01:20:32,550 - 01:20:35,130] of any symmetry operator,
+- [01:20:35,410 - 01:20:36,610] of any symmetry.
+- [01:20:43,670 - 01:20:45,830] This will become much clearer
+- [01:20:45,830 - 01:20:47,190] when we do some examples.
+- [01:20:50,490 - 01:20:51,310] Symmetry,
+- [01:20:51,310 - 01:20:54,030] commutator of h with v
+- [01:20:55,030 - 01:20:56,850] is equal to zero.
+- [01:20:58,070 - 01:20:59,070] That's what it says.
+- [01:21:02,290 - 01:21:04,610] Do you remember from two quarters ago
+- [01:21:05,370 - 01:21:08,290] what the commutator of a thing with a Hamiltonian is?
+- [01:21:11,390 - 01:21:13,110] The time derivative of it.
+- [01:21:14,790 - 01:21:15,350] Yeah.
+- [01:21:16,010 - 01:21:17,330] So what this says
+- [01:21:18,030 - 01:21:19,970] is that whatever the operator v is,
+- [01:21:20,170 - 01:21:21,310] it's conserved.
+- [01:21:23,829 - 01:21:25,770] Conservation of a certain quantity,
+- [01:21:25,950 - 01:21:26,710] in this case v,
+- [01:21:29,110 - 01:21:31,410] meaning that it commutes with a Hamiltonian,
+- [01:21:31,530 - 01:21:34,050] is the same as saying there's a symmetry.
+- [01:21:34,690 - 01:21:38,190] You've seen this before in classical mechanics.
+- [01:21:38,890 - 01:21:41,110] What's the connection between symmetries
+- [01:21:41,110 - 01:21:43,590] and conservation laws called in classical mechanics?
+- [01:21:45,910 - 01:21:47,310] It's called Noether's theorem.
+- [01:21:48,170 - 01:21:48,810] Right?
+- [01:21:49,250 - 01:21:51,630] It's much simpler in quantum mechanics.
+- [01:21:51,910 - 01:21:53,590] It's much simpler in quantum mechanics.
+- [01:21:54,830 - 01:21:58,010] We don't need any fancy Lagrangian or anything else.
+- [01:21:58,010 - 01:22:00,350] All we need to know is that
+- [01:22:01,010 - 01:22:03,650] time evolution commutes with
+- [01:22:03,650 - 01:22:05,910] the symmetry operation itself.
+- [01:22:06,810 - 01:22:09,010] And that can be read in two different ways.
+- [01:22:09,390 - 01:22:12,170] It can say that doing the symmetry operation,
+- [01:22:16,189 - 01:22:16,709] well,
+- [01:22:16,709 - 01:22:17,910] it says what it says.
+- [01:22:18,110 - 01:22:20,190] It can be read two different ways,
+- [01:22:20,330 - 01:22:22,210] but they both say the same thing.
+- [01:22:22,930 - 01:22:23,450] Okay,
+- [01:22:23,450 - 01:22:24,370] so that's...
+- [01:22:24,370 - 01:22:26,150] Now let's go one step further.
+- [01:22:26,150 - 01:22:28,830] There are different kinds of symmetries.
+- [01:22:28,950 - 01:22:30,030] Let me give you some examples
+- [01:22:30,030 - 01:22:31,950] of two different kinds of symmetries.
+- [01:22:32,830 - 01:22:34,510] There are discrete symmetries
+- [01:22:34,510 - 01:22:36,990] and there are continuous symmetries.
+- [01:22:37,970 - 01:22:40,390] Let me give you an example of a discrete symmetry.
+- [01:22:43,810 - 01:22:45,710] Think about reflection in a mirror.
+- [01:22:47,310 - 01:22:48,770] Reflection in a mirror takes a
+- [01:22:48,770 - 01:22:50,230] right hand to a left hand.
+- [01:22:50,870 - 01:22:51,390] Okay?
+- [01:22:53,830 - 01:22:56,050] That's the mirror image of a left hand
+- [01:22:56,050 - 01:22:56,730] as a right hand.
+- [01:22:57,150 - 01:22:58,450] That's a discrete operation.
+- [01:22:59,230 - 01:23:01,010] It takes left to right,
+- [01:23:01,570 - 01:23:03,370] but there's nothing sort of in between.
+- [01:23:03,630 - 01:23:06,490] It's just a discrete operation left to right.
+- [01:23:06,810 - 01:23:09,730] Let me give you another example of a discrete operation.
+- [01:23:13,070 - 01:23:15,090] Let's suppose we have a pair of electrons
+- [01:23:16,309 - 01:23:17,670] or a pair of particles.
+- [01:23:17,910 - 01:23:18,910] A pair of particles,
+- [01:23:18,910 - 01:23:19,910] and they happen to be
+- [01:23:19,910 - 01:23:21,890] the same kind of particle.
+- [01:23:22,310 - 01:23:24,690] A pair of electrons or a pair of protons.
+- [01:23:26,050 - 01:23:27,330] Then if I take the two particles
+- [01:23:27,330 - 01:23:28,530] and I interchange them,
+- [01:23:30,230 - 01:23:31,550] whatever the state is,
+- [01:23:31,710 - 01:23:34,550] I interchange one particle with the other particle.
+- [01:23:35,330 - 01:23:36,190] That's a symmetry.
+- [01:23:36,510 - 01:23:36,770] Why?
+- [01:23:36,770 - 01:23:39,170] Because the particles are of exactly the same kind.
+- [01:23:39,610 - 01:23:41,910] A proton over here and a proton over here
+- [01:23:41,910 - 01:23:43,110] is the same as a proton
+- [01:23:43,110 - 01:23:44,310] over here and a proton over here.
+- [01:23:44,390 - 01:23:45,470] That's just interchange of them.
+- [01:23:45,890 - 01:23:47,170] Those are discrete operations.
+- [01:23:48,589 - 01:23:50,330] Discrete operations means
+- [01:23:50,330 - 01:23:52,150] that there's sort of nothing in between.
+- [01:23:52,570 - 01:23:54,090] Or let's say heads and tails.
+- [01:23:54,470 - 01:23:55,830] Just say heads and tails.
+- [01:23:56,050 - 01:23:56,970] A head and a tail.
+- [01:23:57,270 - 01:24:01,230] If the coin happens to have no markings on it,
+- [01:24:01,270 - 01:24:02,270] whether it's heads or tails,
+- [01:24:02,470 - 01:24:03,810] and you turn it over,
+- [01:24:04,030 - 01:24:06,790] then the physics of the coin and the flipped coin
+- [01:24:06,790 - 01:24:07,950] are exactly the same.
+- [01:24:08,190 - 01:24:10,270] Those are discrete operations.
+- [01:24:12,010 - 01:24:13,010] By discrete,
+- [01:24:13,010 - 01:24:14,830] I mean in distinction
+- [01:24:14,830 - 01:24:16,430] to continuous operations.
+- [01:24:16,830 - 01:24:19,550] Continuous operations are like rotation in space.
+- [01:24:20,650 - 01:24:21,610] Rotation in space,
+- [01:24:21,610 - 01:24:23,710] you can do a very small rotation.
+- [01:24:24,130 - 01:24:26,030] Small means one by a very small number
+- [01:24:26,050 - 01:24:26,850] at a very small angle.
+- [01:24:27,810 - 01:24:28,330] In fact,
+- [01:24:28,330 - 01:24:29,010] you can go further.
+- [01:24:29,170 - 01:24:32,290] You can say that every rotation about an axis
+- [01:24:32,290 - 01:24:34,810] can be built up by tiny rotations
+- [01:24:34,810 - 01:24:36,630] about that same axis.
+- [01:24:37,850 - 01:24:41,410] That means that the rotations have a continuity to them
+- [01:24:41,790 - 01:24:43,930] that the flip of a coin does not have.
+- [01:24:44,350 - 01:24:45,540] Flip of a coin is
+- [01:24:45,540 - 01:24:46,730] either its heads or its tails
+- [01:24:46,730 - 01:24:49,790] and there's nothing in between for classical coins.
+- [01:24:53,789 - 01:24:56,030] For systems in three-dimensional systems,
+- [01:24:56,030 - 01:24:58,030] you can rotate them.
+- [01:25:00,990 - 01:25:02,770] You can rotate them by 90 degrees.
+- [01:25:03,030 - 01:25:04,330] That's a transformation.
+- [01:25:04,950 - 01:25:07,490] But you can build up that 90-degree rotation
+- [01:25:07,490 - 01:25:11,210] by lots of little infinitesimal transformations.
+- [01:25:11,450 - 01:25:14,090] Those are called continuous symmetries.
+- [01:25:14,570 - 01:25:16,390] What about translation symmetry?
+- [01:25:16,790 - 01:25:19,430] Is translation symmetry continuous or discrete?
+- [01:25:19,870 - 01:25:20,430] Well,
+- [01:25:20,430 - 01:25:20,890] it's continuous.
+- [01:25:21,310 - 01:25:23,730] You can take any translation of a system
+- [01:25:23,730 - 01:25:25,810] and think of it as being compounded
+- [01:25:25,810 - 01:25:26,010] in a way that it's not continuous.
+- [01:25:26,010 - 01:25:26,250] You can build up a lot of small transformations
+- [01:25:26,250 - 01:25:28,230] out of lots of small translations.
+- [01:25:29,690 - 01:25:32,530] The continuous symmetries are the ones,
+- [01:25:32,590 - 01:25:33,690] in particular,
+- [01:25:33,690 - 01:25:35,030] the rotation symmetries
+- [01:25:35,030 - 01:25:36,490] and translation symmetries,
+- [01:25:36,590 - 01:25:38,470] are the ones I want to focus on.
+- [01:25:39,950 - 01:25:42,970] What do we know about continuous symmetries?
+- [01:25:43,230 - 01:25:45,190] We know we can build them
+- [01:25:45,190 - 01:25:49,090] out of lots of little elementary small transformations.
+- [01:25:49,990 - 01:25:52,290] So let's focus on the small transformations.
+- [01:25:52,290 - 01:25:57,290] We're going through basically the same manipulations
+- [01:25:57,970 - 01:25:59,670] that we went through over here.
+- [01:26:01,690 - 01:26:04,430] Time translation is a continuous thing.
+- [01:26:04,570 - 01:26:07,730] You can build up a time translation by 10 seconds
+- [01:26:07,730 - 01:26:10,690] by thinking of it as lots of little time translations
+- [01:26:10,690 - 01:26:12,490] by microseconds.
+- [01:26:13,030 - 01:26:16,730] And that led us to the conclusion
+- [01:26:16,730 - 01:26:21,570] that u's are related
+- [01:26:22,830 - 01:26:25,150] to her mission operators
+- [01:26:25,150 - 01:26:27,390] through this relationship here.
+- [01:26:28,170 - 01:26:30,090] Exactly the same is true
+- [01:26:30,090 - 01:26:33,930] of every continuous symmetry.
+- [01:26:34,350 - 01:26:36,310] Exactly the same thing is true.
+- [01:26:36,450 - 01:26:38,350] Every continuous symmetry
+- [01:26:40,870 - 01:26:43,330] can be thought of as being built up
+- [01:26:43,330 - 01:26:46,110] by little infinitesimal ones
+- [01:26:46,110 - 01:26:50,570] which have the form 1 minus i epsilon
+- [01:26:50,570 - 01:26:53,990] not times a Hamiltonian,
+- [01:26:54,070 - 01:26:55,170] but something,
+- [01:26:55,170 - 01:26:56,750] some her mission operator.
+- [01:26:57,190 - 01:26:58,310] Let's call it G.
+- [01:27:00,810 - 01:27:02,710] G stands for generator.
+- [01:27:04,090 - 01:27:05,750] G stands for generator.
+- [01:27:06,090 - 01:27:07,870] And what we're thinking about now
+- [01:27:07,870 - 01:27:09,510] is a symmetry transformation,
+- [01:27:09,610 - 01:27:11,730] but one of them which is very close
+- [01:27:11,730 - 01:27:12,910] to being the identity.
+- [01:27:14,370 - 01:27:15,650] Such a transformation
+- [01:27:16,389 - 01:27:18,170] can always be represented
+- [01:27:18,170 - 01:27:20,150] as something close to the unit operator,
+- [01:27:20,570 - 01:27:22,430] and close to the unit operator
+- [01:27:22,430 - 01:27:24,910] means just shifted by a small amount.
+- [01:27:25,650 - 01:27:27,570] By the same argument
+- [01:27:27,570 - 01:27:30,350] that told us that H is her mission,
+- [01:27:34,090 - 01:27:36,250] G is also her mission.
+- [01:27:38,750 - 01:27:39,990] Symmetry operations,
+- [01:27:41,230 - 01:27:42,510] which are continuous,
+- [01:27:42,690 - 01:27:45,290] can be represented in terms of
+- [01:27:45,290 - 01:27:46,650] infinitesimal transformations
+- [01:27:46,650 - 01:27:49,210] which are generated by a generator G.
+- [01:27:50,570 - 01:27:52,350] And if we plug this into here,
+- [01:27:53,049 - 01:27:54,130] and we then write
+- [01:27:55,369 - 01:27:56,950] the commutator of H
+- [01:27:57,790 - 01:28:00,650] with 1 minus i epsilon G
+- [01:28:00,650 - 01:28:01,690] is equal to 0,
+- [01:28:02,410 - 01:28:03,170] what does that say?
+- [01:28:06,330 - 01:28:08,190] What's the commutator of H with 1?
+- [01:28:08,470 - 01:28:10,310] Commutator of anything with 1 is 0.
+- [01:28:10,870 - 01:28:12,330] Everything commutes with a simple,
+- [01:28:12,470 - 01:28:13,790] with the operator 0.
+- [01:28:15,430 - 01:28:16,590] The i epsilon,
+- [01:28:16,590 - 01:28:17,770] that factors out,
+- [01:28:18,650 - 01:28:20,550] and what it tells us is that
+- [01:28:22,909 - 01:28:25,910] symmetry operations are generated by,
+- [01:28:26,030 - 01:28:27,830] this is what it means to be generated by,
+- [01:28:28,010 - 01:28:30,110] generated by means can be built up
+- [01:28:30,110 - 01:28:31,130] by lots of little ones,
+- [01:28:32,269 - 01:28:33,830] they're generated by things
+- [01:28:33,830 - 01:28:35,670] which commute with the Hamiltonian.
+- [01:28:36,869 - 01:28:37,389] So,
+- [01:28:37,389 - 01:28:39,510] if you want to find all of the symmetries
+- [01:28:39,510 - 01:28:40,130] of a problem,
+- [01:28:40,969 - 01:28:42,770] you'll start looking around
+- [01:28:42,770 - 01:28:44,490] for all the things which commute
+- [01:28:44,490 - 01:28:45,490] with the Hamiltonian.
+- [01:28:46,730 - 01:28:48,670] There's another feature of things
+- [01:28:48,670 - 01:28:49,810] which commute with the Hamiltonian.
+- [01:28:49,810 - 01:28:51,430] Do you remember from last quarter?
+- [01:28:52,390 - 01:28:53,430] It's true both in,
+- [01:28:53,430 - 01:28:54,030] yeah,
+- [01:28:54,030 - 01:28:54,790] what was that?
+- [01:28:55,590 - 01:28:56,550] They're conserved.
+- [01:28:58,249 - 01:28:58,769] So,
+- [01:28:58,769 - 01:29:00,330] conservation and symmetry
+- [01:29:00,330 - 01:29:01,650] are closely connected.
+- [01:29:01,910 - 01:29:04,430] If you want to find all of the symmetries
+- [01:29:04,430 - 01:29:05,090] of a problem,
+- [01:29:05,090 - 01:29:06,870] it's equivalent to finding
+- [01:29:06,870 - 01:29:09,110] all the things which are conserved.
+- [01:29:10,970 - 01:29:11,590] All right,
+- [01:29:11,590 - 01:29:12,770] now this was very abstract,
+- [01:29:13,010 - 01:29:15,970] and so we need to do an example or two
+- [01:29:15,970 - 01:29:17,270] to get the idea.
+- [01:29:18,790 - 01:29:19,790] Let's do an example.
+- [01:29:19,810 - 01:29:24,390] And let's begin with translation.
+- [01:29:25,490 - 01:29:26,910] Translation of a particle
+- [01:29:26,910 - 01:29:28,270] from one place to another.
+- [01:29:36,570 - 01:29:37,110] Okay.
+- [01:29:37,910 - 01:29:39,450] Translation of a wave function.
+- [01:29:40,050 - 01:29:41,790] We want to take a wave function.
+- [01:29:43,630 - 01:29:44,730] Here's a wave function.
+- [01:29:45,150 - 01:29:46,850] And we're going to move it a little bit.
+- [01:29:47,410 - 01:29:48,890] We're going to translate it.
+- [01:29:50,530 - 01:29:51,830] To a new wave function.
+- [01:29:52,670 - 01:29:54,190] And we want to find out
+- [01:29:54,190 - 01:29:56,110] what operation does that.
+- [01:29:56,490 - 01:29:58,210] If we have a psi of x,
+- [01:30:01,469 - 01:30:03,290] what operation do we do
+- [01:30:04,149 - 01:30:05,570] to translate it
+- [01:30:05,570 - 01:30:06,890] to a new position?
+- [01:30:08,390 - 01:30:10,250] We're going to take that new position
+- [01:30:10,250 - 01:30:12,410] to only deviate by a small amount,
+- [01:30:12,490 - 01:30:13,370] by amount epsilon.
+- [01:30:14,489 - 01:30:16,670] But we know what the answer is.
+- [01:30:16,750 - 01:30:18,810] The answer is psi of x
+- [01:30:18,810 - 01:30:20,090] goes to
+- [01:30:22,530 - 01:30:25,090] psi of x plus epsilon.
+- [01:30:26,650 - 01:30:29,270] Epsilon now could be a large number.
+- [01:30:30,050 - 01:30:32,510] We're just translating by a large number.
+- [01:30:32,630 - 01:30:33,170] But specifically,
+- [01:30:33,170 - 01:30:34,610] I want to think about
+- [01:30:34,610 - 01:30:36,490] the case of a small translation.
+- [01:30:37,730 - 01:30:39,250] Translation by a little bit.
+- [01:30:39,970 - 01:30:40,530] Okay.
+- [01:30:41,050 - 01:30:41,650] So,
+- [01:30:42,950 - 01:30:44,090] psi of x,
+- [01:30:44,090 - 01:30:44,930] in other words,
+- [01:30:44,930 - 01:30:48,130] we can write that the translated wave function
+- [01:30:49,170 - 01:30:49,650] is a small number.
+- [01:30:49,650 - 01:30:49,830] In fact,
+- [01:30:49,830 - 01:30:50,710] we can write it this way.
+- [01:30:50,790 - 01:30:51,910] Whatever v is,
+- [01:30:51,990 - 01:30:53,130] whatever v is,
+- [01:30:53,210 - 01:30:54,590] we haven't figured out what v is yet.
+- [01:30:54,750 - 01:30:56,210] But whatever v is,
+- [01:30:56,230 - 01:30:58,290] it acts on psi of x
+- [01:30:58,290 - 01:30:59,830] to give us
+- [01:30:59,830 - 01:31:01,210] psi of x plus epsilon.
+- [01:31:02,990 - 01:31:03,910] That's pretty easy.
+- [01:31:04,010 - 01:31:05,410] That's what a v is.
+- [01:31:05,490 - 01:31:07,010] That's what the v does in this case.
+- [01:31:07,150 - 01:31:08,850] It acts on psi of x
+- [01:31:08,850 - 01:31:10,650] and it translates the wave function
+- [01:31:10,650 - 01:31:11,830] by amount epsilon.
+- [01:31:12,910 - 01:31:13,390] Okay.
+- [01:31:13,910 - 01:31:14,390] Now,
+- [01:31:14,390 - 01:31:15,930] if epsilon is small,
+- [01:31:16,630 - 01:31:18,790] we can also write that this is equal to,
+- [01:31:18,810 - 01:31:23,830] psi of x plus the derivative of psi
+- [01:31:23,830 - 01:31:27,230] with respect to x times epsilon.
+- [01:31:32,130 - 01:31:32,810] So,
+- [01:31:33,990 - 01:31:35,310] what v does,
+- [01:31:39,370 - 01:31:41,190] what v on psi does
+- [01:31:41,710 - 01:31:43,530] is it gives back the same psi
+- [01:31:43,530 - 01:31:46,230] plus something proportional to the derivative.
+- [01:31:47,290 - 01:31:47,970] Okay.
+- [01:31:48,810 - 01:31:49,510] That suggests,
+- [01:31:49,710 - 01:31:50,190] it doesn't suggest,
+- [01:31:50,390 - 01:31:50,710] it proves
+- [01:31:50,710 - 01:31:52,470] that whatever v is,
+- [01:31:52,490 - 01:31:54,190] is it's the unit operator.
+- [01:31:56,070 - 01:31:57,550] That's the first term here.
+- [01:31:58,330 - 01:32:00,130] It acts on psi of x
+- [01:32:00,130 - 01:32:01,250] to give back psi of x
+- [01:32:01,250 - 01:32:02,950] plus a small change.
+- [01:32:03,470 - 01:32:05,610] And the small change is epsilon
+- [01:32:07,049 - 01:32:09,150] times the derivative operation.
+- [01:32:11,990 - 01:32:13,890] I haven't written on x,
+- [01:32:13,950 - 01:32:14,970] we could write on x,
+- [01:32:15,030 - 01:32:15,230] v,
+- [01:32:15,230 - 01:32:15,910] sorry,
+- [01:32:15,910 - 01:32:16,570] times psi.
+- [01:32:17,669 - 01:32:18,790] v is the derivative of psi.
+- [01:32:18,810 - 01:32:19,810] So,
+- [01:32:20,510 - 01:32:21,090] is the unit operator
+- [01:32:21,090 - 01:32:23,950] plus epsilon times the derivative operator.
+- [01:32:25,730 - 01:32:28,090] We can act on any wave function
+- [01:32:28,990 - 01:32:30,630] and what it will give us
+- [01:32:30,630 - 01:32:33,410] is the wave function infinitesimally displaced.
+- [01:32:34,590 - 01:32:35,230] Okay.
+- [01:32:35,690 - 01:32:36,330] Now,
+- [01:32:37,130 - 01:32:39,310] what about d psi by dx?
+- [01:32:39,710 - 01:32:40,710] What about d by dx?
+- [01:32:41,390 - 01:32:43,890] d by dx is an operator.
+- [01:32:44,610 - 01:32:46,350] It operates on wave functions.
+- [01:32:46,530 - 01:32:47,550] It's a linear operator.
+- [01:32:48,570 - 01:32:51,070] It's connected with the momentum operator.
+- [01:32:52,250 - 01:32:53,530] Remember the relationship.
+- [01:32:53,770 - 01:32:55,170] The momentum operator p
+- [01:32:56,110 - 01:32:59,170] equals minus i h bar d by dx.
+- [01:33:02,630 - 01:33:03,450] All right.
+- [01:33:03,470 - 01:33:03,650] So,
+- [01:33:03,770 - 01:33:04,790] what do we want to do?
+- [01:33:04,910 - 01:33:05,530] We want to write,
+- [01:33:05,710 - 01:33:07,990] let's multiply by i.
+- [01:33:08,390 - 01:33:09,970] Get rid of the i here
+- [01:33:09,970 - 01:33:11,910] and divide by h bar.
+- [01:33:13,809 - 01:33:17,190] Differentiation is i over h bar times momentum.
+- [01:33:17,190 - 01:33:17,810] So,
+- [01:33:18,450 - 01:33:19,590] let's write this that way.
+- [01:33:19,710 - 01:33:23,820] One plus epsilon i epsilon
+- [01:33:23,820 - 01:33:27,930] over h bar times the momentum.
+- [01:33:31,390 - 01:33:32,690] We now have an example
+- [01:33:33,349 - 01:33:37,210] of a infinitesimal symmetry operation.
+- [01:33:37,470 - 01:33:38,290] By infinitesimal,
+- [01:33:38,410 - 01:33:39,910] I mean just by a little bit of a shift.
+- [01:33:40,730 - 01:33:42,970] And we found out what its generator is.
+- [01:33:43,530 - 01:33:44,150] The g.
+- [01:33:45,870 - 01:33:46,810] Where was it?
+- [01:33:46,810 - 01:33:48,690] Did we have g here?
+- [01:33:48,930 - 01:33:49,110] Well,
+- [01:33:51,450 - 01:33:51,910] yeah.
+- [01:33:52,750 - 01:33:55,170] v is 1 minus i epsilon g.
+- [01:33:56,150 - 01:33:57,310] In this case,
+- [01:34:04,190 - 01:34:06,850] I would have much preferred that I defined things
+- [01:34:06,850 - 01:34:08,610] so that this came out to be minus here.
+- [01:34:08,770 - 01:34:08,990] But,
+- [01:34:08,990 - 01:34:11,250] You lost the minus sign up here.
+- [01:34:11,470 - 01:34:11,790] Yeah.
+- [01:34:12,470 - 01:34:12,930] So,
+- [01:34:13,602 - 01:34:14,602] みんなの胸を開く
+- [01:34:14,882 - 01:34:15,622] The momentum definition.
+- [01:34:16,002 - 01:34:16,302] Hmm?
+- [01:34:16,462 - 01:34:17,862] The momentum definition.
+- [01:34:18,242 - 01:34:18,442] Yeah.
+- [01:34:18,502 - 01:34:18,941] Oh.
+- [01:34:19,562 - 01:34:20,942] Upper right.
+- [01:34:21,342 - 01:34:21,862] Upper right.
+- [01:34:21,862 - 01:34:22,042] Yeah,
+- [01:34:22,042 - 01:34:22,562] this one.
+- [01:34:22,622 - 01:34:23,262] I think that's right.
+- [01:34:23,702 - 01:34:24,882] The minus sign.
+- [01:34:25,002 - 01:34:25,342] Yeah.
+- [01:34:25,762 - 01:34:25,942] 大家
+- [01:34:26,690 - 01:34:26,830] No,
+- [01:34:26,830 - 01:34:27,330] that's right.
+- [01:34:27,590 - 01:34:28,490] What about by minus r?
+- [01:34:29,490 - 01:34:30,790] You think this is wrong?
+- [01:34:31,070 - 01:34:31,330] No.
+- [01:34:31,650 - 01:34:32,090] That's right.
+- [01:34:33,630 - 01:34:34,570] So let's see.
+- [01:34:34,710 - 01:34:37,250] So I substituted.
+- [01:34:37,290 - 01:34:38,130] I think I got this right.
+- [01:34:38,290 - 01:34:38,650] Wait,
+- [01:34:38,650 - 01:34:38,830] wait,
+- [01:34:38,830 - 01:34:39,010] sorry,
+- [01:34:39,010 - 01:34:39,410] did I?
+- [01:34:41,810 - 01:34:42,210] Yeah,
+- [01:34:42,210 - 01:34:42,749] that's right.
+- [01:34:44,370 - 01:34:45,630] Do you disagree with this?
+- [01:34:47,070 - 01:34:47,470] No,
+- [01:34:47,470 - 01:34:48,650] I think it's right.
+- [01:34:49,570 - 01:34:50,130] All right.
+- [01:34:51,469 - 01:34:51,930] Now,
+- [01:34:51,930 - 01:34:55,890] I think if I shift
+- [01:34:55,890 - 01:34:59,850] the wave function to the right,
+- [01:35:00,510 - 01:35:02,590] if I shift the wave function to the right,
+- [01:35:02,670 - 01:35:04,050] that's really putting a minus sign here.
+- [01:35:05,670 - 01:35:06,130] Yeah.
+- [01:35:10,390 - 01:35:10,850] Yeah,
+- [01:35:10,850 - 01:35:12,140] I made a mistake in
+- [01:35:12,140 - 01:35:13,430] defining a shift to the right.
+- [01:35:13,890 - 01:35:18,130] It looks like it should be x plus epsilon,
+- [01:35:18,270 - 01:35:20,110] but psi of x goes to psi of x.
+- [01:35:20,130 - 01:35:20,850] So psi of x minus epsilon.
+- [01:35:21,730 - 01:35:23,850] So this is actually a minus sign here.
+- [01:35:23,950 - 01:35:24,950] If you track that through,
+- [01:35:24,950 - 01:35:26,810] we will find out
+- [01:35:26,810 - 01:35:29,410] that there's a minus sign here.
+- [01:35:32,990 - 01:35:33,310] Yeah.
+- [01:35:35,470 - 01:35:35,790] OK,
+- [01:35:35,790 - 01:35:41,130] so it identifies for us what the symmetry generated
+- [01:35:41,130 - 01:35:43,050] g is for translations.
+- [01:35:43,570 - 01:35:44,550] And what is it?
+- [01:35:44,950 - 01:35:48,070] It's the momentum divided by Planck's constant.
+- [01:35:48,970 - 01:35:49,690] All right.
+- [01:35:49,690 - 01:35:51,870] Momentum divided by Planck's constant.
+- [01:35:52,010 - 01:35:54,830] We can write that the generator of translations,
+- [01:35:55,210 - 01:35:55,850] here's the language,
+- [01:35:55,850 - 01:35:57,650] the generators of,
+- [01:35:57,810 - 01:36:13,350] the generator of x translation is p sub x,
+- [01:36:13,590 - 01:36:14,310] p sub x,
+- [01:36:14,310 - 01:36:15,010] strictly speaking,
+- [01:36:15,010 - 01:36:16,570] divided by Planck's constant.
+- [01:36:21,449 - 01:36:23,470] We can drop the Planck's constant.
+- [01:36:23,650 - 01:36:25,110] I will drop the Planck's constant.
+- [01:36:25,270 - 01:36:26,310] And as a matter of fact,
+- [01:36:26,310 - 01:36:26,970] the definition,
+- [01:36:27,310 - 01:36:29,170] the official definition really doesn't
+- [01:36:29,170 - 01:36:30,990] have the Planck's constant in it.
+- [01:36:31,550 - 01:36:34,790] But there's an example.
+- [01:36:35,550 - 01:36:36,609] There's an example,
+- [01:36:36,609 - 01:36:37,810] p of x.
+- [01:36:37,930 - 01:36:38,130] Now,
+- [01:36:38,130 - 01:36:39,830] is p of x,
+- [01:36:39,830 - 01:36:43,250] is the momentum along the x-axis conserved?
+- [01:36:45,250 - 01:36:46,590] Depends on the Hamiltonian.
+- [01:36:47,930 - 01:36:49,430] It depends on the Hamiltonian.
+- [01:36:49,690 - 01:36:51,830] So let's write down a Hamiltonian.
+- [01:36:51,990 - 01:36:54,210] The Hamiltonian for a free particle,
+- [01:36:54,350 - 01:36:56,360] a particle moving in empty space
+- [01:36:56,360 - 01:36:58,370] with no forces acting on it,
+- [01:37:01,250 - 01:37:01,810] h,
+- [01:37:01,810 - 01:37:03,010] in that case,
+- [01:37:03,010 - 01:37:06,110] is just p squared over 2m.
+- [01:37:06,750 - 01:37:09,770] The momentum squared divided by twice the mass.
+- [01:37:10,810 - 01:37:12,910] If this is a one-dimensional problem,
+- [01:37:13,150 - 01:37:14,690] then it really is just px,
+- [01:37:14,690 - 01:37:16,290] just the x component of momentum.
+- [01:37:16,970 - 01:37:17,650] Does the x,
+- [01:37:17,650 - 01:37:19,670] does the Hamiltonian commute with p?
+- [01:37:19,690 - 01:37:20,410] Well,
+- [01:37:20,410 - 01:37:23,290] that becomes equivalent to the question of whether px
+- [01:37:23,290 - 01:37:25,030] commutes with px squared.
+- [01:37:26,670 - 01:37:27,230] Yes.
+- [01:37:27,730 - 01:37:31,090] Every operator commutes with every function of itself.
+- [01:37:33,830 - 01:37:36,430] p of x commutes with p of x squared.
+- [01:37:36,570 - 01:37:37,810] It commutes with p of x cubed.
+- [01:37:37,890 - 01:37:40,130] It commutes with any function of p of x.
+- [01:37:40,650 - 01:37:44,730] So for a free particle moving along the x-axis,
+- [01:37:44,870 - 01:37:49,030] we first of all find that the momentum is conserved.
+- [01:37:49,730 - 01:37:50,890] And of course,
+- [01:37:50,890 - 01:37:53,370] we also have a translation symmetry.
+- [01:37:54,190 - 01:37:56,100] The translation symmetry is just the fact
+- [01:37:56,100 - 01:37:58,010] that the free particle will behave the
+- [01:37:58,010 - 01:37:59,890] same way wherever you start it.
+- [01:38:00,630 - 01:38:02,470] If you start it here and it gets to here,
+- [01:38:02,470 - 01:38:04,190] then if you start,
+- [01:38:04,230 - 01:38:05,310] change the starting point,
+- [01:38:05,310 - 01:38:06,050] it'll just,
+- [01:38:06,050 - 01:38:07,150] everything will just translate.
+- [01:38:07,730 - 01:38:08,210] Okay,
+- [01:38:08,210 - 01:38:08,870] so that's,
+- [01:38:08,870 - 01:38:09,630] that's an example.
+- [01:38:10,030 - 01:38:12,140] P is both a conserved
+- [01:38:12,140 - 01:38:14,250] quantity and the generator of translations.
+- [01:38:14,890 - 01:38:16,910] What if there are more directions of space?
+- [01:38:17,610 - 01:38:19,570] If there are more directions of space,
+- [01:38:19,570 - 01:38:19,670] and if there are more directions of space,
+- [01:38:19,670 - 01:38:22,510] then there are several symmetries.
+- [01:38:22,590 - 01:38:24,450] You can translate along the x-axis.
+- [01:38:24,550 - 01:38:26,230] You can translate along the y-axis.
+- [01:38:26,330 - 01:38:28,010] You can translate along the z-axis.
+- [01:38:28,570 - 01:38:29,850] In that case,
+- [01:38:29,850 - 01:38:33,130] the Hamiltonian becomes px squared plus py
+- [01:38:33,130 - 01:38:36,410] squared over 2m plus pz squared over 2m.
+- [01:38:39,730 - 01:38:42,150] And the translation symmetry along
+- [01:38:42,150 - 01:38:44,570] the x-axis is still just px.
+- [01:38:45,950 - 01:38:47,610] Translation along the y-axis,
+- [01:38:47,610 - 01:38:49,650] the generator is py and so forth.
+- [01:38:49,650 - 01:38:52,910] And each of them commutes with the Hamiltonian.
+- [01:38:53,610 - 01:38:55,990] So this is an example of
+- [01:38:55,990 - 01:38:58,370] the connection between symmetries and conservation laws,
+- [01:38:58,370 - 01:38:59,370] which is very simple.
+- [01:39:00,390 - 01:39:01,470] The next time,
+- [01:39:01,470 - 01:39:02,850] it looks like we're about out of time,
+- [01:39:02,850 - 01:39:06,130] the next time we will do rotation symmetry.
+- [01:39:07,470 - 01:39:09,510] Rotation symmetry is much,
+- [01:39:09,510 - 01:39:10,990] it's much more interesting,
+- [01:39:10,990 - 01:39:12,350] it's much more involved,
+- [01:39:12,350 - 01:39:12,730] it,
+- [01:39:12,730 - 01:39:14,540] and it will bring us
+- [01:39:14,540 - 01:39:16,350] to the subject of group theory.
+- [01:39:18,930 - 01:39:19,630] There's some group theory.
+- [01:39:19,630 - 01:39:20,350] There's some group theory here,
+- [01:39:20,350 - 01:39:22,130] but the group theory is completely trivial.
+- [01:39:22,530 - 01:39:23,510] The next time,
+- [01:39:23,510 - 01:39:25,250] we will talk about rotations in space.
+- [01:39:25,890 - 01:39:28,250] And what's interesting about rotations in space
+- [01:39:28,250 - 01:39:30,610] is they don't commute with each other.
+- [01:39:30,830 - 01:39:33,480] A rotation about x followed by a rotation by
+- [01:39:33,480 - 01:39:36,130] y is not the same as a rotation by y,
+- [01:39:36,130 - 01:39:37,330] a rotation by x.
+- [01:39:37,690 - 01:39:42,610] And that will give us the idea of non-commuting symmetries.
+- [01:39:45,110 - 01:39:45,630] Symmetries,
+- [01:39:45,630 - 01:39:46,980] collections of symmetries which
+- [01:39:46,980 - 01:39:48,330] don't commute with each other,
+- [01:39:48,330 - 01:39:49,470] and when we find those,
+- [01:39:49,470 - 01:39:49,610] we're going to have a rotation.
+- [01:39:49,630 - 01:39:49,630] So,
+- [01:39:49,630 - 01:39:49,630] the question is,
+- [01:39:49,630 - 01:39:50,550] they have power.
+- [01:39:50,690 - 01:39:53,320] They have real power to tell us about
+- [01:39:53,320 - 01:39:55,950] all kinds of physical properties of a system.
+- [01:39:56,810 - 01:39:57,370] Okay,
+- [01:39:57,370 - 01:39:58,190] so next time,
+- [01:39:58,190 - 01:39:59,090] rotation symmetry.
+- [01:40:01,250 - 01:40:02,090] For more,
+- [01:40:02,090 - 01:40:04,530] please visit us at stanford.edu.
