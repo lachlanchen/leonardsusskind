@@ -1,0 +1,3184 @@
+# Transcript
+
+Source: supplementary/advanced_quantum_mechanics/2013_fall/187 - Advanced Quantum Mechanics Lecture 3 [LKYs_xwWKY4].mkv
+
+- [00:00:05,080 - 00:00:06,120] Stanford University
+- [00:00:10,420 - 00:00:10,940] Okay,
+- [00:00:10,940 - 00:00:11,920] if we're ready,
+- [00:00:11,920 - 00:00:12,420] let's go then.
+- [00:00:13,760 - 00:00:16,440] We talked last time about angular momentum operators.
+- [00:00:17,200 - 00:00:19,700] And I started to show you how
+- [00:00:19,700 - 00:00:22,200] the algebra of the angular momentum operators works,
+- [00:00:23,800 - 00:00:26,920] how multiplets with different angular momentum
+- [00:00:26,920 - 00:00:29,680] have certain numbers of states,
+- [00:00:31,420 - 00:00:35,320] and the states form,
+- [00:00:35,320 - 00:00:38,520] they're called multiplets.
+- [00:00:39,100 - 00:00:40,640] I'll come back to them in a minute,
+- [00:00:40,640 - 00:00:42,400] but let's just talk more generally
+- [00:00:42,400 - 00:00:44,160] about what angular momentum is about.
+- [00:00:45,460 - 00:00:48,620] A good example is an object,
+- [00:00:48,620 - 00:00:49,280] a particle,
+- [00:00:49,280 - 00:00:51,540] moving in a central force field.
+- [00:00:54,840 - 00:00:55,800] Here's the center.
+- [00:00:56,300 - 00:00:56,900] Particle.
+- [00:00:56,920 - 00:00:58,680] Particle moves around in a central force field.
+- [00:00:59,620 - 00:01:02,380] It has a radial position and an angular position.
+- [00:01:03,120 - 00:01:05,420] The angular position really means two angles,
+- [00:01:05,420 - 00:01:08,320] an azimuthal and a polar angle.
+- [00:01:08,760 - 00:01:11,040] So it's a three-dimensional system.
+- [00:01:11,800 - 00:01:14,020] And the angular momentum is conserved.
+- [00:01:14,100 - 00:01:15,400] The angular momentum is a vector,
+- [00:01:16,040 - 00:01:19,170] and the angular momentum always is
+- [00:01:19,170 - 00:01:22,300] in the plane perpendicular to the motion.
+- [00:01:25,000 - 00:01:26,900] Plane perpendicular to the orbit.
+- [00:01:28,380 - 00:01:30,360] So there's the angular momentum.
+- [00:01:30,980 - 00:01:31,960] The orbit,
+- [00:01:31,960 - 00:01:34,460] the orbital plane is perpendicular to it.
+- [00:01:34,660 - 00:01:38,380] And because the angular momentum is conserved as a vector,
+- [00:01:38,580 - 00:01:41,320] the orbital plane is also conserved.
+- [00:01:41,400 - 00:01:43,160] The orbital plane stays the same,
+- [00:01:43,640 - 00:01:45,090] but of course the radial
+- [00:01:45,090 - 00:01:46,540] position moves around in a circle.
+- [00:01:46,880 - 00:01:47,740] Not a circle,
+- [00:01:47,740 - 00:01:48,440] take it back.
+- [00:01:49,080 - 00:01:50,860] Moves around in some orbit.
+- [00:01:51,040 - 00:01:51,720] That's classical.
+- [00:01:52,060 - 00:01:53,040] That's classical.
+- [00:01:53,540 - 00:01:54,760] Quantum mechanically,
+- [00:01:54,760 - 00:01:57,380] the particle is described by a wave function.
+- [00:01:59,740 - 00:02:04,510] The angular momentum operator has to do
+- [00:02:04,510 - 00:02:09,280] with the angular dependence of the wave function.
+- [00:02:09,820 - 00:02:10,800] In general,
+- [00:02:10,800 - 00:02:13,380] the wave function in a situation like this
+- [00:02:13,380 - 00:02:17,020] would be a function of position,
+- [00:02:17,020 - 00:02:18,160] of course.
+- [00:02:18,380 - 00:02:19,980] It's always a function of position.
+- [00:02:20,400 - 00:02:21,800] Could be a function of x,
+- [00:02:21,800 - 00:02:22,040] y,
+- [00:02:22,040 - 00:02:22,340] and z.
+- [00:02:22,640 - 00:02:23,690] But you could also write it
+- [00:02:23,690 - 00:02:24,740] as a function of the angular momentum.
+- [00:02:24,760 - 00:02:26,500] It's a function of the radial coordinate,
+- [00:02:26,800 - 00:02:27,740] the radial distance,
+- [00:02:28,040 - 00:02:29,260] and two angles,
+- [00:02:29,260 - 00:02:30,980] polar and azimuthal angle.
+- [00:02:33,820 - 00:02:36,100] We talked a little bit the first time,
+- [00:02:36,140 - 00:02:36,960] maybe the first time,
+- [00:02:36,960 - 00:02:37,620] maybe the last time,
+- [00:02:37,620 - 00:02:38,140] I can't remember.
+- [00:02:38,380 - 00:02:39,910] We talked a little bit
+- [00:02:39,910 - 00:02:41,440] about angular momentum in two dimensions.
+- [00:02:43,060 - 00:02:44,720] Let's go back to that for a moment.
+- [00:02:45,020 - 00:02:46,940] If everything was in two dimensions,
+- [00:02:47,560 - 00:02:50,660] then the angular momentum would just be
+- [00:02:50,660 - 00:02:54,740] the generator of rotations about the perpendicular axis.
+- [00:02:54,760 - 00:02:59,000] And its structure as a quantum mechanical operator
+- [00:02:59,760 - 00:03:03,360] would just be angular momentum is equal to minus i
+- [00:03:03,360 - 00:03:06,960] times the derivative with respect to the angle.
+- [00:03:07,300 - 00:03:10,420] That's the analog of momentum being minus i
+- [00:03:10,420 - 00:03:12,260] times derivative with respect to position.
+- [00:03:13,260 - 00:03:15,660] What it tells you is how
+- [00:03:15,660 - 00:03:18,060] the wave function changes with angle.
+- [00:03:18,400 - 00:03:20,020] So let me just remind you,
+- [00:03:20,760 - 00:03:24,000] if you look for angular momentum eigenstates,
+- [00:03:24,000 - 00:03:26,120] then what you're looking for is functions
+- [00:03:26,700 - 00:03:30,900] which satisfy minus i d by d theta,
+- [00:03:31,880 - 00:03:34,760] let's say functions of r and theta.
+- [00:03:38,340 - 00:03:39,560] In two dimensions,
+- [00:03:39,560 - 00:03:40,960] we don't have to worry about phi,
+- [00:03:41,240 - 00:03:42,380] just r and theta.
+- [00:03:43,620 - 00:03:45,320] And if we're looking for
+- [00:03:45,320 - 00:03:47,020] an eigenvector of the angular momentum,
+- [00:03:47,400 - 00:03:50,240] we want to set that equal to a number,
+- [00:03:51,000 - 00:03:52,300] the eigenvalue,
+- [00:03:52,300 - 00:03:55,540] l times psi of r and theta.
+- [00:03:57,020 - 00:03:58,620] It's a little differential equation,
+- [00:03:59,280 - 00:04:01,300] and it doesn't really depend on r.
+- [00:04:01,520 - 00:04:03,160] r is just a spectator here.
+- [00:04:04,320 - 00:04:04,840] r,
+- [00:04:04,840 - 00:04:07,020] the derivative is with respect to theta.
+- [00:04:07,320 - 00:04:10,200] So this is an equation about the theta dependence,
+- [00:04:11,500 - 00:04:13,480] and it doesn't really care about r.
+- [00:04:13,620 - 00:04:15,900] We know what the solution of equations like this is.
+- [00:04:16,160 - 00:04:21,300] The solution is psi equals e,
+- [00:04:22,340 - 00:04:23,300] to the i,
+- [00:04:23,300 - 00:04:25,000] l,
+- [00:04:25,000 - 00:04:25,980] theta.
+- [00:04:27,200 - 00:04:28,120] e to the i,
+- [00:04:28,120 - 00:04:28,340] l,
+- [00:04:28,340 - 00:04:28,620] theta,
+- [00:04:28,700 - 00:04:30,860] where l has to be an integer,
+- [00:04:31,500 - 00:04:33,150] an integer in order that the
+- [00:04:33,150 - 00:04:34,800] wave function comes back to itself
+- [00:04:34,800 - 00:04:37,080] when you go around a closed curve.
+- [00:04:38,980 - 00:04:39,420] Well,
+- [00:04:39,420 - 00:04:40,280] what about the r dependence?
+- [00:04:41,780 - 00:04:43,300] What should the r dependence be?
+- [00:04:43,400 - 00:04:45,460] This doesn't tell you what the r dependence is.
+- [00:04:46,120 - 00:04:47,380] So the answer is,
+- [00:04:47,460 - 00:04:50,300] you have an angular momentum eigenfunction,
+- [00:04:50,300 - 00:04:52,160] no matter what,
+- [00:04:53,480 - 00:04:55,240] let's not use the same function,
+- [00:04:55,400 - 00:04:56,580] let's use a different function,
+- [00:04:57,500 - 00:05:00,340] let's call it chi of r.
+- [00:05:02,300 - 00:05:05,380] Any wave function that looks like e to the i,
+- [00:05:05,380 - 00:05:05,600] l,
+- [00:05:05,600 - 00:05:05,820] theta,
+- [00:05:06,640 - 00:05:09,240] it doesn't matter what its r dependence is,
+- [00:05:09,460 - 00:05:12,540] it will be an angular momentum eigenstate.
+- [00:05:13,260 - 00:05:16,200] So angular momentum has to do with the angular dependence
+- [00:05:16,200 - 00:05:17,780] of the wave function.
+- [00:05:19,280 - 00:05:19,800] The,
+- [00:05:19,800 - 00:05:20,220] um,
+- [00:05:20,300 - 00:05:24,340] the radial dependence is irrelevant to the angular momentum.
+- [00:05:24,440 - 00:05:25,940] It may be relevant to the energy,
+- [00:05:26,160 - 00:05:28,360] but it's not relevant to the angular momentum.
+- [00:05:28,900 - 00:05:31,360] And the same is true in three dimensions.
+- [00:05:32,240 - 00:05:33,620] In three dimensions,
+- [00:05:33,620 - 00:05:36,260] angular momentum also has to do
+- [00:05:36,260 - 00:05:37,740] with the angular dependence,
+- [00:05:38,880 - 00:05:41,660] and there are particular wave functions,
+- [00:05:42,640 - 00:05:43,280] generally,
+- [00:05:45,120 - 00:05:47,500] arbitrary functions of radius,
+- [00:05:47,800 - 00:05:49,060] doesn't matter what they are,
+- [00:05:49,060 - 00:05:51,420] times specific functions,
+- [00:05:51,660 - 00:05:52,820] they're usually called y,
+- [00:05:55,059 - 00:05:56,580] of theta and phi,
+- [00:05:57,919 - 00:05:59,740] which are analogous
+- [00:05:59,740 - 00:06:01,900] to the e to the i,
+- [00:06:01,900 - 00:06:02,140] l,
+- [00:06:02,140 - 00:06:02,580] thetas.
+- [00:06:02,900 - 00:06:04,700] And those wave functions
+- [00:06:04,700 - 00:06:06,280] are the things
+- [00:06:07,060 - 00:06:09,900] which determine the angular momentum of the state.
+- [00:06:10,840 - 00:06:12,840] They're the things which change
+- [00:06:12,840 - 00:06:14,480] when you rotate the configuration,
+- [00:06:14,920 - 00:06:17,480] and angular momentum has to do
+- [00:06:17,480 - 00:06:19,040] with rotating conditions.
+- [00:06:19,060 - 00:06:23,700] So when we talked about angular momentum eigenstates,
+- [00:06:23,760 - 00:06:25,080] we were really talking about
+- [00:06:25,080 - 00:06:27,220] these functions of theta and phi.
+- [00:06:28,159 - 00:06:28,760] Now,
+- [00:06:28,760 - 00:06:32,160] it's awkward to worry about theta and phi.
+- [00:06:32,400 - 00:06:33,320] We don't have to.
+- [00:06:33,900 - 00:06:35,470] What we did last time was
+- [00:06:35,470 - 00:06:37,040] we used a bunch of tricks.
+- [00:06:38,980 - 00:06:40,370] So let me go back
+- [00:06:40,370 - 00:06:41,760] to those tricks and remind you,
+- [00:06:41,840 - 00:06:43,260] but keep in mind,
+- [00:06:43,260 - 00:06:44,320] at every stage,
+- [00:06:44,320 - 00:06:47,660] what we're talking about is the angular dependence
+- [00:06:47,660 - 00:06:49,280] of wave functions.
+- [00:06:50,360 - 00:06:51,160] Okay.
+- [00:06:52,660 - 00:06:57,000] Let's recall what we learned last time.
+- [00:07:04,500 - 00:07:07,360] We started with the angular momentum operators,
+- [00:07:07,680 - 00:07:08,080] Lz,
+- [00:07:08,080 - 00:07:09,120] Lx,
+- [00:07:09,120 - 00:07:09,700] Ly.
+- [00:07:10,660 - 00:07:14,220] We found out that they have certain commutation relations,
+- [00:07:14,740 - 00:07:16,680] Lx with Ly,
+- [00:07:17,900 - 00:07:18,600] equals I,
+- [00:07:18,600 - 00:07:19,420] Lz.
+- [00:07:22,240 - 00:07:23,540] There's H bars in here,
+- [00:07:23,620 - 00:07:24,720] but I'm not going to belabor them.
+- [00:07:24,900 - 00:07:26,300] I don't care about them right now.
+- [00:07:26,900 - 00:07:27,320] Lx,
+- [00:07:27,320 - 00:07:28,380] Ly equals I,
+- [00:07:28,380 - 00:07:28,920] Lz,
+- [00:07:28,920 - 00:07:32,800] and cyclic permutations to more like it.
+- [00:07:34,099 - 00:07:36,100] Then we started to play some games.
+- [00:07:36,220 - 00:07:38,540] We played some games because Dirac taught us
+- [00:07:38,540 - 00:07:39,380] to play those games,
+- [00:07:40,159 - 00:07:42,220] not because any of us would have been smart enough
+- [00:07:42,220 - 00:07:43,200] to figure them out ourselves.
+- [00:07:43,700 - 00:07:44,380] I don't know,
+- [00:07:44,380 - 00:07:45,060] maybe we would have,
+- [00:07:45,060 - 00:07:45,440] who knows.
+- [00:07:46,780 - 00:07:49,060] But the trick was to construct,
+- [00:07:49,240 - 00:07:49,920] well,
+- [00:07:49,920 - 00:07:52,440] to pick one of the operators
+- [00:07:53,720 - 00:07:56,780] and work in the basis of that operator.
+- [00:07:57,080 - 00:07:58,320] In other words,
+- [00:07:58,320 - 00:07:59,420] pick Lz
+- [00:07:59,420 - 00:08:03,340] and work with eigenvectors of Lz
+- [00:08:03,340 - 00:08:06,880] with eigenvalue M.
+- [00:08:07,540 - 00:08:11,440] We don't know offhand what the spectrum of eigenvalues is,
+- [00:08:11,600 - 00:08:15,300] but let's just postulate
+- [00:08:15,440 - 00:08:20,000] or let's just define the eigenvalues to be little m.
+- [00:08:21,700 - 00:08:24,220] Forget for the moment whether they're integers or not.
+- [00:08:24,520 - 00:08:26,220] They may or may not be integers,
+- [00:08:26,400 - 00:08:30,160] but this defines the eigenvector of Lz
+- [00:08:30,160 - 00:08:31,780] with eigenvalue M.
+- [00:08:32,620 - 00:08:35,020] We worked in that basis and we found,
+- [00:08:35,159 - 00:08:37,760] to our great joy,
+- [00:08:38,080 - 00:08:41,860] that the operators Lx plus or minus I,
+- [00:08:41,860 - 00:08:42,320] Ly,
+- [00:08:43,820 - 00:08:45,420] which we called Lz,
+- [00:08:45,440 - 00:08:46,100] L plus or minus,
+- [00:08:47,940 - 00:08:49,760] had some nice properties,
+- [00:08:50,760 - 00:08:51,700] were useful.
+- [00:08:57,820 - 00:08:59,480] I'm not going to write down the properties.
+- [00:08:59,620 - 00:09:01,000] You have them written down from last time,
+- [00:09:01,000 - 00:09:01,400] I hope.
+- [00:09:02,840 - 00:09:03,720] They follow,
+- [00:09:03,720 - 00:09:04,580] the properties follow.
+- [00:09:04,800 - 00:09:06,240] It's commutation properties.
+- [00:09:06,680 - 00:09:09,560] They follow from the commutation properties of the Ls,
+- [00:09:09,640 - 00:09:10,920] but here's what we learned.
+- [00:09:11,160 - 00:09:13,540] We found out that if we start
+- [00:09:14,520 - 00:09:18,020] with an eigenvector of Lz with eigenvalue M,
+- [00:09:19,440 - 00:09:21,260] and we hit it with L plus,
+- [00:09:23,080 - 00:09:23,860] I guess,
+- [00:09:25,260 - 00:09:26,980] forgot whether we put the
+- [00:09:26,980 - 00:09:28,700] pluses and minuses upstairs or downstairs,
+- [00:09:29,640 - 00:09:30,380] doesn't matter.
+- [00:09:30,560 - 00:09:31,460] What did that do?
+- [00:09:32,480 - 00:09:34,740] That gave us another eigenvector
+- [00:09:37,580 - 00:09:38,720] with M plus one.
+- [00:09:39,640 - 00:09:41,700] We worked out that was a consequence
+- [00:09:41,700 - 00:09:44,640] of the simple algebra of these commutation relations.
+- [00:09:46,320 - 00:09:48,720] We worked it out by just
+- [00:09:49,580 - 00:09:51,860] sticking in the equations.
+- [00:09:52,180 - 00:09:53,040] It was a couple of lines.
+- [00:09:53,440 - 00:09:55,580] And we found out that L plus
+- [00:09:55,580 - 00:09:57,300] is a raising operator.
+- [00:09:57,780 - 00:09:59,500] This is called a raising operator.
+- [00:09:59,760 - 00:10:02,270] If this line represents the
+- [00:10:02,270 - 00:10:04,780] spectrum of possible values of M,
+- [00:10:09,180 - 00:10:09,820] zero,
+- [00:10:09,820 - 00:10:11,180] and so forth,
+- [00:10:11,180 - 00:10:16,820] this tells us that we found another eigenvector,
+- [00:10:17,939 - 00:10:19,740] which is one unit up.
+- [00:10:19,960 - 00:10:21,570] It has not yet told
+- [00:10:21,570 - 00:10:23,180] us anything about whether the M's
+- [00:10:23,180 - 00:10:24,800] are integers or not,
+- [00:10:25,020 - 00:10:27,060] but it tells us that if we find one,
+- [00:10:27,220 - 00:10:28,900] we can find another one
+- [00:10:29,500 - 00:10:31,100] by hitting it with L plus.
+- [00:10:31,760 - 00:10:32,360] Likewise,
+- [00:10:32,360 - 00:10:33,720] we can find another one
+- [00:10:33,720 - 00:10:35,320] by hitting it with L minus.
+- [00:10:37,880 - 00:10:40,400] So L pluses and L minuses
+- [00:10:40,400 - 00:10:43,220] are operators which take you up and down
+- [00:10:43,220 - 00:10:47,140] the spectrum of eigenvalues of Lz.
+- [00:10:48,620 - 00:10:49,080] Okay,
+- [00:10:49,080 - 00:10:52,020] that was the first thing that we discovered
+- [00:10:52,020 - 00:10:53,880] from the algebra of these things.
+- [00:10:54,780 - 00:10:56,320] The next thing we asked was,
+- [00:10:56,420 - 00:10:56,640] well,
+- [00:10:56,640 - 00:10:59,060] does this go on forever and ever and ever?
+- [00:10:59,940 - 00:11:02,360] It will go on forever and ever and ever
+- [00:11:02,360 - 00:11:05,120] unless it comes to an end.
+- [00:11:05,340 - 00:11:06,700] How can it come to an end?
+- [00:11:06,860 - 00:11:08,500] The only way it can come to an end
+- [00:11:09,019 - 00:11:10,680] is if L plus,
+- [00:11:10,680 - 00:11:11,600] instead of giving
+- [00:11:11,600 - 00:11:13,960] another non-zero eigenvector,
+- [00:11:14,080 - 00:11:15,280] gives us zero.
+- [00:11:17,480 - 00:11:19,540] That's the only way it can come to an end.
+- [00:11:21,520 - 00:11:23,060] And if it does come to an end,
+- [00:11:23,100 - 00:11:24,660] and typically they do come to an end,
+- [00:11:24,800 - 00:11:26,360] if it does come to an end,
+- [00:11:26,460 - 00:11:29,320] that's the end of the spectrum of raising
+- [00:11:29,320 - 00:11:30,920] that you get by raising,
+- [00:11:31,880 - 00:11:33,320] and let's suppose that's over here.
+- [00:11:36,440 - 00:11:36,880] Then,
+- [00:11:36,880 - 00:11:40,340] we have things separated by an integer,
+- [00:11:40,520 - 00:11:42,220] but we have one more thing that we know.
+- [00:11:42,820 - 00:11:44,680] We know that the z-axis,
+- [00:11:44,800 - 00:11:46,360] that there's nothing preferential
+- [00:11:46,880 - 00:11:48,380] about the plus z-axis.
+- [00:11:49,280 - 00:11:51,980] If we simply rotated the whole picture around
+- [00:11:51,980 - 00:11:54,400] and replaced the plus z-axis
+- [00:11:54,400 - 00:11:55,760] by the minus z-axis,
+- [00:11:56,020 - 00:11:57,960] all the rules would be the same.
+- [00:11:59,000 - 00:12:00,360] So for that reason,
+- [00:12:01,280 - 00:12:03,240] the spectrum has to be symmetric
+- [00:12:03,240 - 00:12:04,240] about the origin.
+- [00:12:04,700 - 00:12:06,860] Anything you can say about Lz,
+- [00:12:06,880 - 00:12:08,700] you can say exactly the same thing
+- [00:12:08,700 - 00:12:09,700] about minus Lz,
+- [00:12:09,840 - 00:12:11,800] because they're just related by rotation.
+- [00:12:13,220 - 00:12:16,600] So if the spectrum ends at some point here,
+- [00:12:17,540 - 00:12:21,200] it has to end going downward
+- [00:12:21,200 - 00:12:23,400] at exactly the same point,
+- [00:12:23,500 - 00:12:24,460] except reflected.
+- [00:12:25,540 - 00:12:26,180] Now,
+- [00:12:27,020 - 00:12:29,320] each action of L plus or minus
+- [00:12:29,320 - 00:12:31,220] displaces you by an integer.
+- [00:12:31,620 - 00:12:34,860] How is it possible to come to an end
+- [00:12:34,860 - 00:12:36,860] with the ends being symmetric like this?
+- [00:12:36,880 - 00:12:39,140] If they have to be integers.
+- [00:12:39,340 - 00:12:39,780] For example,
+- [00:12:39,780 - 00:12:41,460] if this point was at three quarters here,
+- [00:12:41,960 - 00:12:43,160] and you kept going down,
+- [00:12:43,160 - 00:12:43,500] down,
+- [00:12:43,500 - 00:12:43,740] down,
+- [00:12:43,740 - 00:12:44,040] down,
+- [00:12:44,040 - 00:12:44,220] down,
+- [00:12:44,900 - 00:12:47,200] you would never come to minus three quarters.
+- [00:12:47,880 - 00:12:48,500] Is that right?
+- [00:12:48,500 - 00:12:48,700] Yeah.
+- [00:12:49,220 - 00:12:50,300] You'd never come to,
+- [00:12:51,060 - 00:12:51,460] yes,
+- [00:12:51,460 - 00:12:53,020] you'd never come to minus three quarters.
+- [00:12:53,620 - 00:12:55,160] The only way that it can happen
+- [00:12:55,160 - 00:12:57,860] that you can end and be symmetric
+- [00:12:58,400 - 00:12:59,940] is if you start at an integer,
+- [00:13:00,100 - 00:13:00,960] that's one possibility.
+- [00:13:01,740 - 00:13:03,600] Let's say this is integer two here,
+- [00:13:03,740 - 00:13:05,520] and then end at minus two.
+- [00:13:06,300 - 00:13:07,500] That's one possibility.
+- [00:13:07,880 - 00:13:09,360] And the only other possibility
+- [00:13:10,320 - 00:13:12,640] is that you start at a half integer.
+- [00:13:13,720 - 00:13:14,740] For example,
+- [00:13:14,740 - 00:13:15,620] the simplest case
+- [00:13:16,760 - 00:13:17,580] would be
+- [00:13:19,640 - 00:13:21,900] that the spectrum ends at a half
+- [00:13:24,080 - 00:13:26,880] and ends in the other direction at minus a half.
+- [00:13:28,420 - 00:13:30,300] That's still separated by an integer.
+- [00:13:31,900 - 00:13:33,120] In that case,
+- [00:13:33,200 - 00:13:35,080] L plus would take you
+- [00:13:35,520 - 00:13:37,600] from the lower state to the upper state.
+- [00:13:38,680 - 00:13:40,120] L minus would take you
+- [00:13:40,120 - 00:13:41,720] from the upper state to the lower state.
+- [00:13:43,480 - 00:13:45,440] But what would happen if L plus
+- [00:13:45,440 - 00:13:46,740] hit the upper state?
+- [00:13:48,700 - 00:13:49,700] It would give zero.
+- [00:13:49,980 - 00:13:51,980] If L minus hits the lower state,
+- [00:13:52,280 - 00:13:53,280] it would give zero.
+- [00:13:53,680 - 00:13:55,080] So that's the way we know
+- [00:13:55,080 - 00:13:58,080] what the spectrum of the angular momenta is.
+- [00:13:58,660 - 00:14:01,180] The spectrum is either integers or half integers.
+- [00:14:02,440 - 00:14:05,440] And each collection of states like this
+- [00:14:05,520 - 00:14:05,640] is aitez.
+- [00:14:13,220 - 00:14:14,200] Let's say that this
+- [00:14:14,200 - 00:14:14,360] was actually the state of the initial
+- [00:14:14,360 - 00:14:15,580] how long did it emanate and
+- [00:14:15,580 - 00:14:17,580] how much time did it do,
+- [00:14:17,720 - 00:14:35,500] how long did it take each state to
+- [00:14:35,500 - 00:14:36,140] 1,
+- [00:14:36,140 - 00:14:36,500] 2,
+- [00:14:36,500 - 00:14:36,900] 3,
+- [00:14:36,900 - 00:14:37,780] and over here.
+- [00:14:37,780 - 00:14:39,660] So there'd be how many states?
+- [00:14:39,660 - 00:14:40,120] 1,
+- [00:14:40,120 - 00:14:40,380] 2,
+- [00:14:40,380 - 00:14:40,620] 3,
+- [00:14:40,620 - 00:14:40,920] 4,
+- [00:14:40,920 - 00:14:41,340] 5,
+- [00:14:41,340 - 00:14:41,720] 6,
+- [00:14:41,720 - 00:14:43,000] 7 states here.
+- [00:14:43,340 - 00:14:44,740] 7 possible states.
+- [00:14:44,740 - 00:14:48,740] The highest state has the
+- [00:14:48,740 - 00:14:52,740] maximum value of M before it's
+- [00:14:52,740 - 00:14:55,440] killed by the next action of the operator.
+- [00:14:55,440 - 00:14:58,140] The maximum value of M is
+- [00:14:58,140 - 00:14:58,900] called L.
+- [00:14:58,900 - 00:15:03,230] L equals the maximum value of
+- [00:15:03,230 - 00:15:07,560] M for that particular collection of
+- [00:15:07,560 - 00:15:07,880] states.
+- [00:15:07,880 - 00:15:13,740] Minus L is of course the minimum value of M.
+- [00:15:13,740 - 00:15:18,160] And so the values of M go
+- [00:15:18,160 - 00:15:20,140] from minus L to plus L,
+- [00:15:20,140 - 00:15:24,260] and then nothing beyond that from above,
+- [00:15:24,260 - 00:15:25,360] nothing beyond it
+- [00:15:25,360 - 00:15:25,820] from below.
+- [00:15:25,820 - 00:15:27,900] How many states is that all together?
+- [00:15:28,020 - 00:15:28,120] 1,
+- [00:15:28,120 - 00:15:28,120] 2,
+- [00:15:28,120 - 00:15:28,120] 3,
+- [00:15:28,120 - 00:15:28,120] 4,
+- [00:15:28,120 - 00:15:28,120] 5,
+- [00:15:28,120 - 00:15:28,120] 6,
+- [00:15:28,120 - 00:15:28,120] 7 states.
+- [00:15:28,120 - 00:15:28,120] And so the values of M
+- [00:15:28,120 - 00:15:28,120] go from minus L to plus L.
+- [00:15:28,120 - 00:15:28,120] And then nothing beyond that from above,
+- [00:15:28,120 - 00:15:28,120] nothing beyond it from below.
+- [00:15:28,120 - 00:15:28,120] How many states is that all together?
+- [00:15:28,120 - 00:15:30,680] If you go from minus L to plus L,
+- [00:15:30,680 - 00:15:32,780] 2L plus 1.
+- [00:15:32,780 - 00:15:34,600] Okay,
+- [00:15:34,600 - 00:15:36,620] so a multiplet,
+- [00:15:36,620 - 00:15:38,020] a collection of
+- [00:15:40,940 - 00:15:41,500] states,
+- [00:15:41,500 - 00:15:46,920] is characterized with a given value of,
+- [00:15:46,920 - 00:15:51,160] well we'll see what they have a
+- [00:15:51,160 - 00:15:51,920] given value of.
+- [00:15:51,920 - 00:15:53,960] But a collection of states of this type,
+- [00:15:53,960 - 00:15:54,820] a multiplet,
+- [00:15:54,820 - 00:15:55,740] has
+- [00:15:55,740 - 00:15:58,100] typically 2L plus 1 states,
+- [00:15:58,100 - 00:15:58,100] and a collection of states of this type,
+- [00:15:58,100 - 00:15:58,100] a
+- [00:15:58,100 - 00:15:58,100] collection of states of this type.
+- [00:15:58,100 - 00:15:58,480] So it basically is two L plus 1 states.
+- [00:15:58,480 - 00:16:01,200] Two L plus 1 states.
+- [00:16:01,200 - 00:16:06,160] That's the first thing we find.
+- [00:16:12,540 - 00:16:14,080] Or an infinite number of states?
+- [00:16:14,760 - 00:16:15,620] Could have it,
+- [00:16:15,620 - 00:16:16,040] that's the other.
+- [00:16:16,040 - 00:16:17,820] Sure.
+- [00:16:17,820 - 00:16:18,920] That's just L equals infinity.
+- [00:16:19,200 - 00:16:19,420] Right.
+- [00:16:19,620 - 00:16:20,820] But that is a possibility.
+- [00:16:21,080 - 00:16:21,920] It is a possibility.
+- [00:16:21,920 - 00:16:22,640] But,
+- [00:16:22,640 - 00:16:24,220] um,
+- [00:16:27,080 - 00:16:28,080] It's a possibility.
+- [00:16:28,080 - 00:16:30,680] It's not one that we're going to worry about
+- [00:16:31,380 - 00:16:32,380] the pathological
+- [00:16:33,860 - 00:16:35,380] The reason they're pathological
+- [00:16:36,480 - 00:16:38,080] for a variety of reasons
+- [00:16:38,660 - 00:16:41,760] The number a lot of the reasons that they're pathological
+- [00:16:41,760 - 00:16:44,170] but among other things energy usually
+- [00:16:44,170 - 00:16:46,580] depends on the angular momentum as
+- [00:16:47,180 - 00:16:49,030] You increase the angular momentum keeping
+- [00:16:49,030 - 00:16:50,880] other things fixed the energy goes up
+- [00:16:51,740 - 00:16:52,340] and
+- [00:16:52,340 - 00:16:52,520] And
+- [00:16:52,520 - 00:16:59,260] If you're interested in states of finite energy,
+- [00:16:59,260 - 00:17:00,840] then you're not interested in
+- [00:17:00,840 - 00:17:02,420] states with infinite angular momentum
+- [00:17:05,079 - 00:17:05,640] Okay,
+- [00:17:05,640 - 00:17:07,599] let's do one more little exercise
+- [00:17:11,000 - 00:17:14,079] What characterizes these multiplets well,
+- [00:17:14,079 - 00:17:16,160] I'll tell you what characterizes these multiplets.
+- [00:17:16,160 - 00:17:18,220] It's the magnitude of the angular momentum
+- [00:17:19,940 - 00:17:21,480] All of the states
+- [00:17:22,339 - 00:17:25,339] In this 2l plus 1 collection have the
+- [00:17:25,339 - 00:17:28,339] same value of the magnitude of the angular momentum
+- [00:17:28,879 - 00:17:30,299] Now what do we mean by
+- [00:17:30,299 - 00:17:31,720] the magnitude of the angular momentum?
+- [00:17:31,980 - 00:17:34,730] We mean by the magnitude of the angular momentum
+- [00:17:34,730 - 00:17:37,480] is exactly what you would mean in classical physics
+- [00:17:38,340 - 00:17:40,110] Or I should say the square
+- [00:17:40,110 - 00:17:41,880] of the magnitude of the angular momentum.
+- [00:17:41,880 - 00:17:44,060] It's the magnitude of
+- [00:17:44,660 - 00:17:47,679] the angular momentum vector squared and
+- [00:17:48,440 - 00:17:52,180] that's equal to LX squared plus ly squared plus
+- [00:17:52,340 - 00:17:52,880] LZ squared
+- [00:17:54,800 - 00:17:56,830] The only difference between classical physics
+- [00:17:56,830 - 00:17:58,860] and quantum physics is these are now
+- [00:17:59,719 - 00:18:00,360] Operators,
+- [00:18:00,360 - 00:18:02,600] they're not just numbers in the usual sense.
+- [00:18:02,600 - 00:18:04,770] They're quantum mechanical operators and let's
+- [00:18:04,770 - 00:18:06,940] see what we can find out
+- [00:18:07,800 - 00:18:10,200] about L squared in
+- [00:18:10,200 - 00:18:14,180] particular L squared from multiplet of
+- [00:18:14,180 - 00:18:17,410] 2l plus 1 states in other words supposing we
+- [00:18:17,410 - 00:18:20,640] have a multiplet which terminates from above at L
+- [00:18:21,420 - 00:18:23,200] terminates from below at minus L
+- [00:18:23,200 - 00:18:25,820] What can we say about its L squared?
+- [00:18:26,580 - 00:18:27,140] Okay,
+- [00:18:27,140 - 00:18:29,880] so here's the tricks and they're all tricks,
+- [00:18:29,880 - 00:18:30,800] but they're nice tricks
+- [00:18:31,920 - 00:18:33,860] This is equal to LZ squared
+- [00:18:35,180 - 00:18:36,620] Now first classical
+- [00:18:38,040 - 00:18:40,760] LX squared plus ly squared that's plus
+- [00:18:41,860 - 00:18:44,880] LX plus Ily do I want that?
+- [00:18:44,880 - 00:18:45,060] No,
+- [00:18:45,060 - 00:18:46,940] I want LX minus Ily
+- [00:18:46,940 - 00:18:47,600] I
+- [00:18:50,920 - 00:18:52,700] Times LX plus Ily
+- [00:18:55,140 - 00:18:58,410] This is LX squared plus ly
+- [00:18:58,410 - 00:19:01,680] squared and the cross term zero classically
+- [00:19:03,020 - 00:19:05,200] So this is a correct equation classically.
+- [00:19:05,200 - 00:19:08,090] It's not quite right quantum mechanically and the
+- [00:19:08,090 - 00:19:10,980] reason is that LX and ly don't commute
+- [00:19:11,840 - 00:19:13,880] We actually have an extra term here.
+- [00:19:13,880 - 00:19:15,200] We have the extra term.
+- [00:19:15,200 - 00:19:16,220] Let's see what it is.
+- [00:19:16,220 - 00:19:17,280] It's I
+- [00:19:18,340 - 00:19:19,320] LX ly
+- [00:19:20,640 - 00:19:24,340] That's this product and then minus Ily LX
+- [00:19:24,340 - 00:19:27,600] So it has the commutator of LX ly in it.
+- [00:19:27,600 - 00:19:29,460] Sorry the commutator of
+- [00:19:30,360 - 00:19:31,660] LX and ly
+- [00:19:33,580 - 00:19:34,020] Yeah
+- [00:19:36,560 - 00:19:39,800] In other words we've overshot by writing
+- [00:19:39,800 - 00:19:43,040] in LX minus Ily times LX plus Ily
+- [00:19:43,040 - 00:19:45,660] We have to subtract this
+- [00:19:47,139 - 00:19:47,880] minus I
+- [00:19:49,219 - 00:19:50,580] Commutator LX
+- [00:19:50,580 - 00:19:50,740] LX
+- [00:19:50,740 - 00:19:51,060] LX
+- [00:19:54,260 - 00:19:57,710] That's just the extra piece that's there because LX
+- [00:19:57,710 - 00:20:01,160] times ly is not equal to ly times LX
+- [00:20:01,160 - 00:20:01,900] Okay,
+- [00:20:01,900 - 00:20:02,700] so that's straightforward
+- [00:20:03,800 - 00:20:06,360] But what is the commutator of LX with a y?
+- [00:20:10,300 - 00:20:12,300] LX with ly is I LZ
+- [00:20:13,400 - 00:20:14,000] so
+- [00:20:14,800 - 00:20:17,560] This is equal to LZ squared
+- [00:20:19,760 - 00:20:22,900] Now we're going to get an I from the LZ.
+- [00:20:22,900 - 00:20:24,760] There's an I here and then
+- [00:20:24,760 - 00:20:26,620] there's another I from the commutator
+- [00:20:26,620 - 00:20:29,170] I times minus I is plus 1
+- [00:20:29,170 - 00:20:31,720] so this will give me plus LZ
+- [00:20:34,080 - 00:20:38,120] LZ squared plus LZ and then we
+- [00:20:38,120 - 00:20:42,160] have plus L minus times L plus
+- [00:20:45,200 - 00:20:45,760] Okay,
+- [00:20:45,760 - 00:20:46,160] you with me?
+- [00:20:47,479 - 00:20:51,900] That's L squared the square of the angular momentum
+- [00:20:55,699 - 00:20:58,899] Now let's apply that let's
+- [00:20:58,899 - 00:21:02,100] take this operator and apply it
+- [00:21:03,210 - 00:21:07,080] to the maximum highest M state
+- [00:21:09,060 - 00:21:13,300] M equals L M equals L
+- [00:21:13,300 - 00:21:14,980] M equals L
+- [00:21:14,980 - 00:21:17,640] So let's take this L squared
+- [00:21:19,420 - 00:21:20,180] on
+- [00:21:21,480 - 00:21:22,240] L
+- [00:21:22,240 - 00:21:25,960] L is the highest state there.
+- [00:21:25,960 - 00:21:26,600] Okay,
+- [00:21:26,600 - 00:21:28,100] what do we get?
+- [00:21:29,180 - 00:21:33,220] We get LZ squared on L
+- [00:21:34,560 - 00:21:38,180] plus LZ times L
+- [00:21:39,880 - 00:21:43,240] plus L minus L plus
+- [00:21:43,240 - 00:21:44,960] L plus L minus L plus
+- [00:21:44,960 - 00:21:45,960] times L
+- [00:21:49,120 - 00:21:49,620] Okay,
+- [00:21:49,620 - 00:21:50,280] first of all,
+- [00:21:50,280 - 00:21:51,940] what is this script L here?
+- [00:21:52,340 - 00:21:53,840] It's an eigenvector.
+- [00:21:53,840 - 00:21:55,260] Remember what it stands for
+- [00:21:55,860 - 00:21:58,920] It stands for the eigenvector of LZ
+- [00:21:58,920 - 00:22:02,480] with the highest possible value in this multiplet
+- [00:22:04,200 - 00:22:05,380] What is LZ?
+- [00:22:05,380 - 00:22:07,560] LZ is equal to little L
+- [00:22:08,840 - 00:22:12,520] The state up here LZ is equal to little L.
+- [00:22:12,520 - 00:22:13,540] Let's just go back a minute
+- [00:22:13,540 - 00:22:15,580] Too many letters.
+- [00:22:15,580 - 00:22:16,920] I'm sorry for so many letters,
+- [00:22:16,920 - 00:22:18,760] but that's just the way it is
+- [00:22:20,020 - 00:22:22,450] LZ or the state M was
+- [00:22:22,450 - 00:22:24,880] defined to be an eigenvector of LZ
+- [00:22:24,880 - 00:22:25,880] That's what this says
+- [00:22:26,500 - 00:22:27,320] In particular,
+- [00:22:27,320 - 00:22:29,000] the top eigenvector here
+- [00:22:29,820 - 00:22:32,800] We can just substitute for M
+- [00:22:32,800 - 00:22:33,900] We substitute L
+- [00:22:34,780 - 00:22:36,140] So here we have it
+- [00:22:36,980 - 00:22:39,850] LZ on L is just
+- [00:22:39,850 - 00:22:42,720] the numerical number L on L
+- [00:22:43,899 - 00:22:45,120] What about LZ squared?
+- [00:22:46,540 - 00:22:47,660] L squared on L
+- [00:22:47,660 - 00:22:48,600] It's just L squared.
+- [00:22:48,600 - 00:22:50,780] You're just hitting it with the operator LZ twice
+- [00:22:51,340 - 00:22:52,720] The first time you hit it,
+- [00:22:52,720 - 00:22:53,440] it gives you an L
+- [00:22:53,440 - 00:22:54,640] The second time you hit it,
+- [00:22:54,640 - 00:22:55,740] it gives you another L
+- [00:22:56,320 - 00:22:57,480] So that's L squared
+- [00:23:02,000 - 00:23:02,400] Okay,
+- [00:23:02,400 - 00:23:02,980] that was easy,
+- [00:23:02,980 - 00:23:04,360] but what about this here guy?
+- [00:23:05,300 - 00:23:06,400] What are we going to do about it?
+- [00:23:07,360 - 00:23:07,880] It's zero
+- [00:23:08,939 - 00:23:09,340] Why?
+- [00:23:09,340 - 00:23:12,100] Because L plus
+- [00:23:13,600 - 00:23:15,040] When it hits the top
+- [00:23:15,900 - 00:23:17,020] Runs out of states
+- [00:23:18,080 - 00:23:20,240] That was the definition of the top here
+- [00:23:20,240 - 00:23:22,380] The definition of the top state
+- [00:23:22,380 - 00:23:24,360] Is that L plus gives zero
+- [00:23:27,240 - 00:23:27,800] So,
+- [00:23:27,800 - 00:23:29,080] we can just erase this
+- [00:23:34,360 - 00:23:35,980] And now we've learned something
+- [00:23:36,540 - 00:23:39,460] That this state L is an eigenvector
+- [00:23:40,340 - 00:23:42,640] Of the square of the angular momentum
+- [00:23:42,640 - 00:23:43,620] Let's write it this way
+- [00:23:43,620 - 00:23:44,520] Let's write it down
+- [00:23:44,520 - 00:23:45,980] L squared plus L
+- [00:23:48,160 - 00:23:49,080] Times L
+- [00:23:49,900 - 00:23:50,980] Or better yet
+- [00:23:51,620 - 00:23:53,520] L times L plus one
+- [00:23:59,220 - 00:24:01,140] Just to remind you where it came from
+- [00:24:01,140 - 00:24:03,280] An L squared came from here
+- [00:24:03,280 - 00:24:04,700] And an L came from here
+- [00:24:04,700 - 00:24:07,660] L squared plus L is L times L plus one
+- [00:24:08,440 - 00:24:09,740] So what do we find?
+- [00:24:10,500 - 00:24:11,740] We find out
+- [00:24:12,640 - 00:24:16,900] That the states in this multiplet here
+- [00:24:17,480 - 00:24:18,800] The top state there
+- [00:24:18,800 - 00:24:19,640] The top,
+- [00:24:19,640 - 00:24:20,940] the highest state there
+- [00:24:21,679 - 00:24:24,020] Has an eigenvalue of L squared
+- [00:24:24,640 - 00:24:26,780] Which is L times L plus one
+- [00:24:29,199 - 00:24:32,260] The square of the angular momentum for that state
+- [00:24:32,260 - 00:24:33,580] Is not little L squared
+- [00:24:33,580 - 00:24:35,440] It's almost just little L squared
+- [00:24:36,420 - 00:24:38,300] There's a little quantum correction here
+- [00:24:38,300 - 00:24:41,580] If we were doing classical mechanics
+- [00:24:42,640 - 00:24:45,260] We would expect that the square of the angular momentum
+- [00:24:45,260 - 00:24:49,520] Would just be the square of the angular momentum
+- [00:24:49,520 - 00:24:51,940] About the Z axis for the top state there
+- [00:24:53,020 - 00:24:53,520] Incidentally,
+- [00:24:53,520 - 00:24:54,440] the highest state
+- [00:24:54,440 - 00:24:57,560] Is like the state rotating about the Z axis
+- [00:24:57,560 - 00:24:59,400] Where all of the angular momentum
+- [00:24:59,400 - 00:25:00,740] Is in the vertical direction
+- [00:25:01,460 - 00:25:03,100] That's why it has the highest value
+- [00:25:03,530 - 00:25:05,180] In the other direction it would be smaller
+- [00:25:06,860 - 00:25:07,360] Okay,
+- [00:25:07,360 - 00:25:08,640] so we find a little surprise
+- [00:25:08,640 - 00:25:09,880] It's not just L squared
+- [00:25:09,880 - 00:25:11,260] It's L times L plus one
+- [00:25:11,260 - 00:25:13,220] But then there's another surprise
+- [00:25:13,220 - 00:25:14,300] And this is something
+- [00:25:14,300 - 00:25:16,320] This is a nice little exercise for you
+- [00:25:16,320 - 00:25:16,780] Do it yourself,
+- [00:25:16,780 - 00:25:17,520] it's very easy
+- [00:25:18,240 - 00:25:19,460] But I'll let you work it out yourself
+- [00:25:22,060 - 00:25:25,300] Every one of these states in this same multiplet
+- [00:25:25,300 - 00:25:28,040] Have exactly the same value of L squared
+- [00:25:29,060 - 00:25:31,440] They all have the same magnitude
+- [00:25:31,440 - 00:25:33,160] For the square of the angular momentum
+- [00:25:33,800 - 00:25:35,700] Basically what this multiplet is
+- [00:25:35,700 - 00:25:37,560] Is it's a quantum mechanical version
+- [00:25:38,220 - 00:25:40,680] Of a state with a given angular momentum
+- [00:25:40,680 - 00:25:42,580] Except in any possible direction
+- [00:25:43,560 - 00:25:45,620] They all have the same L squared
+- [00:25:45,620 - 00:25:47,600] The same square of the angular momentum
+- [00:25:47,600 - 00:25:50,020] But they have different projections
+- [00:25:50,020 - 00:25:51,040] Onto the Z axis
+- [00:25:52,020 - 00:25:53,640] What's new in quantum mechanics
+- [00:25:53,640 - 00:25:55,720] Is that the projection onto the Z axis
+- [00:25:55,720 - 00:25:56,740] Is quantized
+- [00:25:57,820 - 00:25:59,340] Comes in integer multiples
+- [00:26:01,620 - 00:26:02,260] Okay,
+- [00:26:02,260 - 00:26:03,540] so that's
+- [00:26:04,560 - 00:26:06,720] That's what we know about angular momentum
+- [00:26:06,720 - 00:26:07,480] Question?
+- [00:26:07,780 - 00:26:07,960] Yeah
+- [00:26:08,680 - 00:26:10,660] Could you state a little bit
+- [00:26:10,680 - 00:26:13,480] I don't understand the words that you said
+- [00:26:13,480 - 00:26:14,560] In terms of the little exercise
+- [00:26:14,560 - 00:26:15,280] Oh,
+- [00:26:15,280 - 00:26:16,420] okay,
+- [00:26:16,420 - 00:26:16,640] good
+- [00:26:17,420 - 00:26:18,140] Yeah
+- [00:26:18,680 - 00:26:19,540] Here's the exercise
+- [00:26:23,440 - 00:26:23,800] Okay
+- [00:26:26,360 - 00:26:26,720] Let's
+- [00:26:26,720 - 00:26:27,320] Good
+- [00:26:34,419 - 00:26:37,240] What we've shown is that L squared
+- [00:26:38,520 - 00:26:40,660] On the maximum of the Z axis
+- [00:26:40,680 - 00:26:46,580] Is equal to L times L plus 1 on L
+- [00:26:47,460 - 00:26:49,040] In other words that
+- [00:26:50,740 - 00:26:52,300] This eigenvector here
+- [00:26:52,300 - 00:26:54,200] Happens also to be an eigenvector
+- [00:26:54,200 - 00:26:55,860] Of the square of the angular momentum
+- [00:26:56,680 - 00:26:57,260] Next step
+- [00:26:57,260 - 00:26:58,300] I would like to show
+- [00:26:59,919 - 00:27:01,960] That L minus 1
+- [00:27:02,820 - 00:27:06,020] Also equals L times L plus 1
+- [00:27:06,680 - 00:27:08,220] Times L minus 1
+- [00:27:09,820 - 00:27:11,000] In other words,
+- [00:27:11,000 - 00:27:12,460] that the next state down
+- [00:27:13,100 - 00:27:15,980] has exactly the same value for L squared.
+- [00:27:18,260 - 00:27:18,840] Okay?
+- [00:27:18,840 - 00:27:19,940] How do you do that?
+- [00:27:19,940 - 00:27:21,000] Well,
+- [00:27:21,000 - 00:27:21,460] you say
+- [00:27:21,460 - 00:27:22,520] start with L squared,
+- [00:27:22,520 - 00:27:25,080] and now hit this
+- [00:27:25,080 - 00:27:27,600] with L minus on L.
+- [00:27:27,600 - 00:27:34,400] L minus on L is the
+- [00:27:34,400 - 00:27:35,400] state L minus 1,
+- [00:27:35,400 - 00:27:37,020] and we want to prove
+- [00:27:37,020 - 00:27:40,060] that that's equal to L times L plus 1
+- [00:27:42,659 - 00:27:47,000] times L minus on L.
+- [00:27:47,000 - 00:27:51,800] That's the thing you
+- [00:27:51,800 - 00:27:52,300] want to prove.
+- [00:27:52,300 - 00:27:54,420] Okay.
+- [00:27:54,420 - 00:27:58,700] Can anybody guess how
+- [00:27:58,700 - 00:27:59,180] to prove it?
+- [00:27:59,180 - 00:28:03,620] Does the algebra here suggest
+- [00:28:03,620 - 00:28:04,060] anything?
+- [00:28:04,060 - 00:28:05,000] I'll tell you what it suggests
+- [00:28:05,000 - 00:28:05,420] to me.
+- [00:28:06,520 - 00:28:07,000] It's
+- [00:28:07,000 - 00:28:09,320] suggests to me that we figure out what
+- [00:28:09,320 - 00:28:11,760] the commutator of L squared with L minus
+- [00:28:11,760 - 00:28:12,040] is.
+- [00:28:12,040 - 00:28:14,640] Imagine we discovered,
+- [00:28:14,640 - 00:28:16,800] imagine we
+- [00:28:16,800 - 00:28:18,180] discovered a marvelous fact,
+- [00:28:18,180 - 00:28:19,020] which I'm
+- [00:28:19,020 - 00:28:20,020] not telling you is true.
+- [00:28:20,020 - 00:28:21,960] It's true,
+- [00:28:22,020 - 00:28:22,220] though.
+- [00:28:22,220 - 00:28:27,400] That L squared and L minus commute.
+- [00:28:27,900 - 00:28:29,240] Supposing we discovered that.
+- [00:28:29,240 - 00:28:31,200] Then I
+- [00:28:31,200 - 00:28:33,420] could say that this was also equal,
+- [00:28:33,760 - 00:28:35,880] trying to prove this relationship,
+- [00:28:35,880 - 00:28:36,960] of
+- [00:28:36,960 - 00:28:36,960] course,
+- [00:28:36,960 - 00:28:36,960] to L squared.
+- [00:28:36,960 - 00:28:38,000] I would then say
+- [00:28:38,000 - 00:28:41,840] that this is equal to L minus times L
+- [00:28:41,840 - 00:28:43,400] squared L,
+- [00:28:43,400 - 00:28:43,840] right?
+- [00:28:43,840 - 00:28:47,980] But what's L squared on
+- [00:28:47,980 - 00:28:48,140] L?
+- [00:28:59,040 - 00:28:59,640] Let's see,
+- [00:28:59,640 - 00:29:00,480] what do we want to do here?
+- [00:29:01,480 - 00:29:02,040] Um...
+- [00:29:02,900 - 00:29:03,460] Okay.
+- [00:29:06,340 - 00:29:06,900] So,
+- [00:29:06,900 - 00:29:06,900] what do we want to do here?
+- [00:29:06,900 - 00:29:06,900] Um...
+- [00:29:06,900 - 00:29:06,940] What do we want to do here?
+- [00:29:06,940 - 00:29:06,940] Um...
+- [00:29:11,260 - 00:29:13,040] If this commutes with this,
+- [00:29:13,040 - 00:29:13,800] we can push this
+- [00:29:13,800 - 00:29:14,680] through here.
+- [00:29:14,680 - 00:29:17,640] That's then equal to L times
+- [00:29:17,640 - 00:29:18,660] L plus 1.
+- [00:29:18,660 - 00:29:20,980] Yeah,
+- [00:29:20,980 - 00:29:21,860] we would have proved this
+- [00:29:21,860 - 00:29:22,320] relationship.
+- [00:29:22,320 - 00:29:24,900] We would have proved this
+- [00:29:24,900 - 00:29:25,280] relationship.
+- [00:29:25,280 - 00:29:27,120] We would have proved that
+- [00:29:27,120 - 00:29:30,620] this is equal to L minus times L times L
+- [00:29:30,620 - 00:29:33,180] plus 1 L,
+- [00:29:33,180 - 00:29:35,180] which is exactly what this says.
+- [00:29:36,380 - 00:29:36,920] Okay.
+- [00:29:36,940 - 00:29:37,100] So,
+- [00:29:37,100 - 00:29:38,840] if we can prove that L squared
+- [00:29:38,840 - 00:29:40,720] commutes with L minus,
+- [00:29:40,720 - 00:29:43,400] then we can prove
+- [00:29:45,060 - 00:29:48,600] that the state L plus 1 is also an eigenvector
+- [00:29:48,600 - 00:29:49,220] of L squared.
+- [00:29:49,220 - 00:29:50,240] What about L minus 2?
+- [00:29:51,160 - 00:29:52,540] What about the next state down?
+- [00:29:52,540 - 00:29:54,340] Same thing.
+- [00:29:55,160 - 00:29:57,120] We just go down until we run out of states.
+- [00:29:59,360 - 00:29:59,840] Um...
+- [00:30:03,940 - 00:30:04,620] Here's the...
+- [00:30:04,620 - 00:30:04,840] Okay,
+- [00:30:04,840 - 00:30:05,640] here's the exercise.
+- [00:30:05,640 - 00:30:06,920] The exercise is to find the state L plus 1.
+- [00:30:06,940 - 00:30:09,580] The exercise is to prove that L squared
+- [00:30:10,700 - 00:30:13,500] commutes with any one of the components
+- [00:30:13,500 - 00:30:14,960] of angular momentum.
+- [00:30:14,960 - 00:30:16,280] Let's call it L sub i.
+- [00:30:17,620 - 00:30:19,600] L x L y L 0.
+- [00:30:20,980 - 00:30:23,300] If it commutes with any of the components,
+- [00:30:23,620 - 00:30:25,030] then it will certainly commute
+- [00:30:25,030 - 00:30:26,440] with L plus and L minus.
+- [00:30:26,700 - 00:30:28,510] L plus and L minus is just L x
+- [00:30:28,510 - 00:30:30,320] plus i or plus or minus i L y.
+- [00:30:31,100 - 00:30:31,620] So,
+- [00:30:31,620 - 00:30:34,040] there's an exercise to prove that L squared
+- [00:30:34,040 - 00:30:36,440] commutes with any one of the...
+- [00:30:36,440 - 00:30:37,240] L's.
+- [00:30:38,700 - 00:30:39,320] Um...
+- [00:30:41,780 - 00:30:42,400] Alright,
+- [00:30:42,400 - 00:30:44,200] so here's what we found from
+- [00:30:44,200 - 00:30:46,540] the things that I showed you plus
+- [00:30:46,540 - 00:30:48,880] the little exercise that you can do yourself.
+- [00:30:49,420 - 00:30:52,040] Is that when you find a multiplet like this,
+- [00:30:52,980 - 00:30:55,720] going from L to minus L,
+- [00:30:56,440 - 00:30:58,010] such that there's no more above
+- [00:30:58,010 - 00:30:59,580] it and no more below it,
+- [00:31:00,320 - 00:31:03,980] you've found not only eigenvectors of L z,
+- [00:31:07,160 - 00:31:09,760] eigenvectors for which L z is equal to M,
+- [00:31:09,940 - 00:31:12,690] but you've also found eigenvectors of
+- [00:31:12,690 - 00:31:15,440] the square of the angular momentum
+- [00:31:15,440 - 00:31:18,840] with eigenvalue L times L plus 1.
+- [00:31:20,560 - 00:31:24,620] Where L is just the maximum value of M.
+- [00:31:27,440 - 00:31:28,060] So,
+- [00:31:28,060 - 00:31:30,900] for each one of these little L's,
+- [00:31:31,020 - 00:31:33,360] there are two L plus 1 states,
+- [00:31:33,580 - 00:31:36,420] and they all have the same squared value.
+- [00:31:36,440 - 00:31:36,620] So,
+- [00:31:36,620 - 00:31:37,060] what's the same squared angular momentum?
+- [00:31:38,780 - 00:31:39,760] Roughly speaking,
+- [00:31:39,760 - 00:31:41,460] they have the same squared angular momentum
+- [00:31:41,460 - 00:31:42,960] because they're just tilted tilts
+- [00:31:42,960 - 00:31:44,460] away from the vertical axis.
+- [00:31:45,240 - 00:31:46,480] That's a rough statement.
+- [00:31:46,680 - 00:31:46,940] That's...
+- [00:31:46,940 - 00:31:48,040] Quantum mechanically,
+- [00:31:48,040 - 00:31:49,320] it's a little trickier than that.
+- [00:31:49,500 - 00:31:51,200] But that's the classical analog.
+- [00:31:51,840 - 00:31:52,440] That,
+- [00:31:52,440 - 00:31:52,820] uh...
+- [00:31:52,820 - 00:31:54,680] That by rotating and changing the
+- [00:31:54,680 - 00:31:56,540] z component of the angular momentum,
+- [00:31:57,340 - 00:31:58,960] you haven't changed L squared.
+- [00:32:00,240 - 00:32:00,840] Okay.
+- [00:32:01,080 - 00:32:01,680] So,
+- [00:32:01,680 - 00:32:05,180] that's what we know about angular momentum multiplets.
+- [00:32:05,180 - 00:32:05,320] Yeah.
+- [00:32:05,700 - 00:32:06,100] Um,
+- [00:32:06,100 - 00:32:10,100] can you raise the board to show your factorization?
+- [00:32:11,440 - 00:32:11,840] So,
+- [00:32:11,840 - 00:32:14,280] when you factored L x squared plus L y squared,
+- [00:32:14,400 - 00:32:16,350] you could have just as fairly gotten
+- [00:32:16,350 - 00:32:18,300] L plus L minus as the operator.
+- [00:32:19,420 - 00:32:21,280] And then I would have had the opposite sign here.
+- [00:32:23,040 - 00:32:23,440] Okay.
+- [00:32:23,620 - 00:32:24,020] Yeah.
+- [00:32:24,260 - 00:32:26,440] It would have given you exactly the same thing.
+- [00:32:26,720 - 00:32:29,640] If you had the L minus to the right,
+- [00:32:30,080 - 00:32:31,670] you would want to hit it on
+- [00:32:31,670 - 00:32:33,260] the lowest state instead of the highest state,
+- [00:32:33,320 - 00:32:34,500] but the sign of this would change.
+- [00:32:34,620 - 00:32:35,160] It would all work out.
+- [00:32:35,180 - 00:32:36,400] It would all work out the same way.
+- [00:32:36,680 - 00:32:37,780] It's a good question,
+- [00:32:37,780 - 00:32:38,740] but...
+- [00:32:38,740 - 00:32:39,900] Uh...
+- [00:32:42,179 - 00:32:42,840] Okay.
+- [00:32:43,040 - 00:32:43,220] So,
+- [00:32:43,220 - 00:32:46,250] what we found is that there
+- [00:32:46,250 - 00:32:49,280] are collections of functions of the angles.
+- [00:32:57,080 - 00:32:59,540] These eigenvectors are functions.
+- [00:33:00,820 - 00:33:03,400] They're functions of the angles.
+- [00:33:03,400 - 00:33:04,600] Why?
+- [00:33:05,300 - 00:33:08,180] Because rotation only affects the angular dependence.
+- [00:33:09,360 - 00:33:10,380] They're functions,
+- [00:33:10,380 - 00:33:13,220] and what characterizes them?
+- [00:33:14,200 - 00:33:16,580] A value of M,
+- [00:33:16,580 - 00:33:18,900] the eigenvector of L z.
+- [00:33:20,120 - 00:33:20,460] So,
+- [00:33:20,460 - 00:33:21,080] whatever they are,
+- [00:33:21,080 - 00:33:23,820] they're functions which have a little subscript M,
+- [00:33:26,159 - 00:33:28,080] and that's the z component,
+- [00:33:28,080 - 00:33:29,820] but they also have...
+- [00:33:29,820 - 00:33:32,360] They're also eigenvectors of L squared,
+- [00:33:32,360 - 00:33:33,960] or in other words,
+- [00:33:33,960 - 00:33:36,500] they can be characterized by a little L.
+- [00:33:40,220 - 00:33:42,740] And they're called Ylm,
+- [00:33:42,740 - 00:33:45,240] and they're functions of theta and phi.
+- [00:33:46,980 - 00:33:48,340] You know what these things are called?
+- [00:33:52,760 - 00:33:54,020] Ylms of theta and phi?
+- [00:33:56,680 - 00:33:57,640] Spherical harmonics.
+- [00:33:57,940 - 00:33:59,860] They're functions on a unit sphere.
+- [00:33:59,860 - 00:34:01,580] Functions of theta and phi.
+- [00:34:02,320 - 00:34:05,090] And they're the analogs on the sphere of
+- [00:34:05,090 - 00:34:07,860] e to the plus or minus il theta.
+- [00:34:10,460 - 00:34:11,020] il...
+- [00:34:11,020 - 00:34:11,580] il...
+- [00:34:11,580 - 00:34:14,800] il theta.
+- [00:34:17,320 - 00:34:18,960] They're the three-dimensional analogs.
+- [00:34:20,580 - 00:34:22,199] This is the two-dimensional functions.
+- [00:34:22,780 - 00:34:23,600] Strictly speaking,
+- [00:34:23,600 - 00:34:24,840] these are functions on a circle,
+- [00:34:24,960 - 00:34:26,300] so they're one-dimensional functions.
+- [00:34:26,800 - 00:34:29,840] But think of them as functions for a two-dimensional sphere.
+- [00:34:29,860 - 00:34:30,080] So,
+- [00:34:30,080 - 00:34:30,179] if you look at the three-dimensional problem,
+- [00:34:31,340 - 00:34:33,070] these are the corresponding
+- [00:34:33,070 - 00:34:34,800] functions for the three-dimensional problem.
+- [00:34:36,020 - 00:34:37,570] And we don't really care very
+- [00:34:37,570 - 00:34:39,120] much about exactly what they are.
+- [00:34:39,780 - 00:34:42,199] We're going to finesse exactly what they are.
+- [00:34:42,260 - 00:34:43,360] We're never going to really need it.
+- [00:34:43,420 - 00:34:45,199] We could figure out what these functions are,
+- [00:34:45,759 - 00:34:47,159] but we're never going to need it.
+- [00:34:47,199 - 00:34:50,500] All we ever have to really know is that
+- [00:34:51,520 - 00:34:53,420] for every little value of L,
+- [00:34:53,600 - 00:34:55,520] there are two L plus one of them.
+- [00:34:56,600 - 00:34:58,690] The two L plus one
+- [00:34:58,690 - 00:35:00,780] of them have magnetic quantum numbers,
+- [00:35:00,780 - 00:35:01,320] M,
+- [00:35:01,560 - 00:35:05,500] that range from zero to L and to minus L.
+- [00:35:07,360 - 00:35:09,500] And that the square of the angular
+- [00:35:09,500 - 00:35:11,640] momentum is L times L plus one.
+- [00:35:11,940 - 00:35:13,900] That's all we're ever going to have to really know.
+- [00:35:15,980 - 00:35:16,500] Um...
+- [00:35:18,380 - 00:35:19,740] to do atomic physics.
+- [00:35:22,440 - 00:35:22,960] Okay,
+- [00:35:22,960 - 00:35:25,500] any questions about the structure of angular momentum?
+- [00:35:25,520 - 00:35:25,820] Well,
+- [00:35:25,820 - 00:35:25,820] I think we're going to have to
+- [00:35:25,820 - 00:35:25,820] look at the structure of angular momentum.
+- [00:35:25,860 - 00:35:26,480] the structure of the angular momentum multiplets.
+- [00:35:27,680 - 00:35:29,560] And they all have the same energy.
+- [00:35:29,780 - 00:35:31,300] They all have the same energy,
+- [00:35:31,300 - 00:35:32,380] and the reason is
+- [00:35:32,380 - 00:35:35,920] because the angular momentum commutes with the Hamiltonian.
+- [00:35:37,240 - 00:35:38,200] That means,
+- [00:35:38,200 - 00:35:42,740] when you apply L to a function,
+- [00:35:42,980 - 00:35:44,980] it doesn't change the energy.
+- [00:35:45,840 - 00:35:48,020] So they all have the same energy.
+- [00:35:48,740 - 00:35:51,460] At least for a problem of a central force.
+- [00:35:52,440 - 00:35:53,600] For central force,
+- [00:35:53,600 - 00:35:55,960] the angular momentum commutes with the Hamiltonian,
+- [00:35:56,080 - 00:35:57,770] and that's enough to prove that
+- [00:35:57,770 - 00:35:59,460] all of these have the same energy.
+- [00:36:02,140 - 00:36:02,660] Okay.
+- [00:36:05,060 - 00:36:05,960] No questions?
+- [00:36:05,960 - 00:36:06,540] We'll move on.
+- [00:36:08,700 - 00:36:09,560] In fact,
+- [00:36:09,560 - 00:36:11,500] let's move now to the central force problem.
+- [00:36:11,780 - 00:36:12,040] Now,
+- [00:36:12,040 - 00:36:12,580] I'm going...
+- [00:36:12,580 - 00:36:14,440] I'm not going to take you through
+- [00:36:14,819 - 00:36:17,920] all of the manipulations involving partial derivatives,
+- [00:36:17,920 - 00:36:19,480] all over the place with respect
+- [00:36:19,480 - 00:36:21,040] to theta and phi and so forth.
+- [00:36:21,780 - 00:36:22,960] We're going to do this by
+- [00:36:22,960 - 00:36:24,140] using a little bit of intuition
+- [00:36:24,140 - 00:36:25,360] from classical physics,
+- [00:36:27,180 - 00:36:31,720] and work out with a tiny bit of cheating.
+- [00:36:31,840 - 00:36:34,420] The cheating is going to be to use classical physics
+- [00:36:34,420 - 00:36:35,620] to make a guess or two,
+- [00:36:36,460 - 00:36:38,620] but the guesses are well motivated,
+- [00:36:38,800 - 00:36:42,800] and we can do this rigorously.
+- [00:36:44,140 - 00:36:45,280] What is it we want to do?
+- [00:36:45,360 - 00:36:46,860] We want to solve the Schrodinger equation
+- [00:36:46,860 - 00:36:50,080] for a problem with a Hamiltonian,
+- [00:36:53,380 - 00:36:55,580] which is p squared over 2m.
+- [00:36:55,900 - 00:36:56,640] Now,
+- [00:36:56,640 - 00:36:59,720] p stands for the three components of momentum.
+- [00:37:00,660 - 00:37:01,980] So it's a vector,
+- [00:37:01,980 - 00:37:03,680] p squared over 2m,
+- [00:37:03,720 - 00:37:05,180] kinetic energy,
+- [00:37:05,180 - 00:37:08,460] plus some potential energy
+- [00:37:08,460 - 00:37:10,620] which only depends on the radius.
+- [00:37:11,500 - 00:37:12,900] Central force problem.
+- [00:37:14,500 - 00:37:16,840] Later we'll be specific about what central force is,
+- [00:37:16,860 - 00:37:17,620] central force problem.
+- [00:37:17,820 - 00:37:18,080] Of course,
+- [00:37:18,080 - 00:37:19,740] what we're going to think about is the Coulomb force.
+- [00:37:21,980 - 00:37:23,140] But for the moment,
+- [00:37:23,140 - 00:37:25,400] let's not specialize.
+- [00:37:28,960 - 00:37:30,940] And let's do classical physics first.
+- [00:37:33,700 - 00:37:34,220] Okay,
+- [00:37:34,220 - 00:37:35,360] first statement,
+- [00:37:36,140 - 00:37:38,320] the angular momentum is conserved.
+- [00:37:38,620 - 00:37:39,140] Now,
+- [00:37:39,140 - 00:37:40,760] you could check it.
+- [00:37:40,880 - 00:37:42,380] You could work it out by
+- [00:37:42,380 - 00:37:43,880] working out the equations of motion
+- [00:37:43,880 - 00:37:46,760] and seeing that the angular momentum is conserved.
+- [00:37:47,100 - 00:37:50,620] You can also just say angular momentum is conserved
+- [00:37:50,620 - 00:37:52,480] whenever you have rotational symmetry,
+- [00:37:52,780 - 00:37:53,780] and that's correct.
+- [00:37:54,100 - 00:37:55,760] The same statement as saying
+- [00:37:55,760 - 00:37:57,420] that you have momentum conservation
+- [00:37:57,420 - 00:37:59,780] whenever you have translation invariance.
+- [00:37:59,840 - 00:38:00,880] It's Noether's theorem.
+- [00:38:02,200 - 00:38:02,840] Classically,
+- [00:38:02,840 - 00:38:03,480] quantum...
+- [00:38:07,814 - 00:38:07,894] Thank you.
+- [00:38:09,250 - 00:38:09,390] Heavy,
+- [00:38:09,390 - 00:38:10,190] heavy scone.
+- [00:38:18,390 - 00:38:19,550] That's a good scone,
+- [00:38:19,550 - 00:38:19,810] man.
+- [00:38:46,849 - 00:38:47,590] All right,
+- [00:38:47,590 - 00:38:49,550] so let's believe angular momentum is conserved.
+- [00:38:50,350 - 00:38:51,910] Angular momentum is a vector,
+- [00:38:51,910 - 00:38:52,350] oops,
+- [00:38:52,350 - 00:38:52,930] excuse me,
+- [00:38:52,930 - 00:38:54,130] r cross p.
+- [00:39:00,230 - 00:39:01,350] It's conserved.
+- [00:39:01,670 - 00:39:03,910] That means its magnitude is conserved,
+- [00:39:03,910 - 00:39:06,790] but also its direction is conserved.
+- [00:39:10,190 - 00:39:11,250] And that means,
+- [00:39:11,250 - 00:39:12,090] as I said before,
+- [00:39:12,090 - 00:39:16,210] that the plane of the orbit is also conserved.
+- [00:39:16,730 - 00:39:18,980] So once we know the plane of the orbit
+- [00:39:18,980 - 00:39:21,230] is also conserved and that everything is rotationally symmetric,
+- [00:39:21,630 - 00:39:24,610] we might as well classically put
+- [00:39:24,610 - 00:39:27,590] this whole thing in the xy plane.
+- [00:39:29,030 - 00:39:30,310] So there's our orbit.
+- [00:39:30,790 - 00:39:32,490] Orbits do not have to be circles.
+- [00:39:33,650 - 00:39:35,170] Most orbits are not circles.
+- [00:39:35,630 - 00:39:36,570] In fact,
+- [00:39:36,570 - 00:39:37,810] for a general problem,
+- [00:39:38,670 - 00:39:39,230] most orbits are not circles.
+- [00:39:39,250 - 00:39:40,730] Most orbits won't even be closed.
+- [00:39:41,950 - 00:39:43,710] If you take a general potential,
+- [00:39:44,050 - 00:39:46,990] most orbits will not be closed.
+- [00:39:49,370 - 00:39:50,530] They will...
+- [00:39:52,990 - 00:39:55,030] They will precess about...
+- [00:39:55,830 - 00:39:57,850] The axis of the orbit will precess.
+- [00:39:59,290 - 00:40:01,190] We're not going to worry too
+- [00:40:01,190 - 00:40:03,090] much about whether the orbits are closed.
+- [00:40:03,350 - 00:40:04,670] It's not our concern right now.
+- [00:40:06,510 - 00:40:07,110] Now,
+- [00:40:07,110 - 00:40:07,710] next.
+- [00:40:09,250 - 00:40:12,370] Let's look at an orbit.
+- [00:40:12,570 - 00:40:13,090] Here's r.
+- [00:40:15,089 - 00:40:18,310] And let's put the momentum over here.
+- [00:40:19,130 - 00:40:21,430] The momentum is along some direction.
+- [00:40:22,050 - 00:40:24,210] It's in the plane because we know
+- [00:40:24,210 - 00:40:26,370] that the motion is in a plane.
+- [00:40:26,810 - 00:40:28,250] So it's in the plane
+- [00:40:28,250 - 00:40:29,690] and it's pointing in some direction.
+- [00:40:30,170 - 00:40:32,890] It may or may not be perpendicular to r.
+- [00:40:33,090 - 00:40:33,510] In fact,
+- [00:40:33,510 - 00:40:34,470] it could even be...
+- [00:40:35,019 - 00:40:36,790] The velocity could be along r.
+- [00:40:36,790 - 00:40:37,750] There are orbits,
+- [00:40:37,750 - 00:40:38,330] for example,
+- [00:40:38,330 - 00:40:40,070] which just go back and forth through the origin.
+- [00:40:41,810 - 00:40:43,930] So there's no rule that says
+- [00:40:43,930 - 00:40:46,050] that the momentum is perpendicular to r.
+- [00:40:46,550 - 00:40:48,740] There is a rule that says the angular
+- [00:40:48,740 - 00:40:50,930] momentum is perpendicular to both r and momentum.
+- [00:40:51,150 - 00:40:51,770] But that's...
+- [00:40:51,770 - 00:40:52,430] We're finished with that.
+- [00:40:52,950 - 00:40:53,470] Okay,
+- [00:40:53,470 - 00:40:55,870] let's take the momentum vector
+- [00:40:57,170 - 00:40:58,430] and decompose it
+- [00:40:59,709 - 00:41:01,990] into an angular part.
+- [00:41:02,230 - 00:41:04,030] Let's call it the theta component,
+- [00:41:04,030 - 00:41:04,710] p theta.
+- [00:41:05,470 - 00:41:06,490] And a...
+- [00:41:06,490 - 00:41:07,390] A p r component.
+- [00:41:09,269 - 00:41:11,210] So the momentum has two components.
+- [00:41:12,210 - 00:41:14,710] One along the angular direction
+- [00:41:15,470 - 00:41:17,550] and one along the r direction.
+- [00:41:19,350 - 00:41:20,970] What about p squared?
+- [00:41:22,630 - 00:41:24,140] p squared is the sum of
+- [00:41:24,140 - 00:41:25,650] the squares of both of them.
+- [00:41:26,330 - 00:41:28,870] So h is p r squared
+- [00:41:29,490 - 00:41:32,790] plus p theta squared over 2m.
+- [00:41:34,370 - 00:41:35,390] And that's it.
+- [00:41:36,490 - 00:41:36,750] Well,
+- [00:41:36,750 - 00:41:37,910] what about the angular momentum,
+- [00:41:37,910 - 00:41:39,790] the magnitude of the angular momentum?
+- [00:41:40,290 - 00:41:42,670] The magnitude of the angular momentum
+- [00:41:43,270 - 00:41:44,930] is p theta times r.
+- [00:41:45,150 - 00:41:45,890] Is that clear to you?
+- [00:41:45,950 - 00:41:49,170] P theta times r is the angular momentum.
+- [00:41:49,810 - 00:41:51,250] R cross p.
+- [00:41:53,230 - 00:41:54,290] R cross p,
+- [00:41:54,290 - 00:41:55,750] the magnitude of it
+- [00:41:56,390 - 00:41:58,230] is the magnitude of r
+- [00:41:59,210 - 00:42:01,090] times the magnitude of p theta.
+- [00:42:02,410 - 00:42:05,450] So the magnitude of the angular momentum
+- [00:42:06,750 - 00:42:12,410] is equal to p theta times r,
+- [00:42:12,410 - 00:42:15,490] everybody magnitude,
+- [00:42:15,490 - 00:42:19,350] p theta times r.
+- [00:42:26,410 - 00:42:30,589] Or another way to write it is that,
+- [00:42:30,589 - 00:42:31,550] first of all,
+- [00:42:31,550 - 00:42:34,150] L squared is equal to p
+- [00:42:34,150 - 00:42:36,910] theta squared times r squared.
+- [00:42:36,910 - 00:42:45,110] And now let's write p theta squared is L squared
+- [00:42:45,110 - 00:42:46,530] over r squared.
+- [00:42:46,530 - 00:42:48,290] That was easy.
+- [00:42:48,290 - 00:42:51,590] And let's stick it into the Hamiltonian.
+- [00:42:52,810 - 00:42:54,750] pr squared plus p theta,
+- [00:42:54,750 - 00:42:55,210] this is not,
+- [00:42:55,210 - 00:42:56,050] I'm sorry,
+- [00:42:56,050 - 00:42:57,710] you didn't correct me,
+- [00:42:57,710 - 00:42:58,490] plus V of r.
+- [00:43:00,610 - 00:43:01,130] Okay,
+- [00:43:01,130 - 00:43:01,970] pr squared,
+- [00:43:01,970 - 00:43:03,410] well that's just pr squared.
+- [00:43:05,490 - 00:43:09,870] h is pr squared over 2m.
+- [00:43:09,870 - 00:43:13,390] What about p theta squared?
+- [00:43:13,390 - 00:43:19,650] p theta squared is L
+- [00:43:19,650 - 00:43:27,090] squared divided by r squared plus V of r.
+- [00:43:32,070 - 00:43:33,390] Let's erase all of this.
+- [00:43:33,410 - 00:43:44,270] Now look at what we have.
+- [00:43:44,270 - 00:43:46,270] We have a problem which
+- [00:43:46,270 - 00:43:48,270] for all practical purposes could be
+- [00:43:48,270 - 00:43:50,330] thought of as a problem in one dimension,
+- [00:43:50,330 - 00:43:52,110] namely the radial direction,
+- [00:43:52,110 - 00:43:53,550] pr squared,
+- [00:43:54,190 - 00:43:56,470] plus a potential energy V of r,
+- [00:43:56,470 - 00:43:59,550] plus another term in the potential energy.
+- [00:43:59,710 - 00:44:01,410] Remember that L is conserved.
+- [00:44:01,410 - 00:44:03,390] So once you pick L,
+- [00:44:03,390 - 00:44:03,390] you're going to have a problem.
+- [00:44:03,390 - 00:44:05,370] Once you know what the angular momentum is,
+- [00:44:05,370 - 00:44:06,510] it doesn't change on you.
+- [00:44:06,890 - 00:44:08,430] So once you know what it is,
+- [00:44:08,430 - 00:44:09,510] you can freeze it.
+- [00:44:09,950 - 00:44:12,540] And you can say the Hamiltonian of the system
+- [00:44:12,540 - 00:44:15,130] is just pr squared as though it was just a
+- [00:44:15,130 - 00:44:16,050] one-dimensional problem,
+- [00:44:16,050 - 00:44:18,610] plus an extra term which
+- [00:44:18,610 - 00:44:21,170] goes like 1 over r squared,
+- [00:44:21,170 - 00:44:23,750] plus the
+- [00:44:23,750 - 00:44:24,630] original V of r.
+- [00:44:24,630 - 00:44:25,530] What is this term called?
+- [00:44:28,170 - 00:44:28,610] Physically,
+- [00:44:28,610 - 00:44:29,090] what is it?
+- [00:44:30,550 - 00:44:32,690] Is it attractive or is it repulsive?
+- [00:44:32,910 - 00:44:33,350] Repulsive.
+- [00:44:37,690 - 00:44:40,090] How do you tell whether it's attractive or repulsive?
+- [00:44:41,390 - 00:44:42,010] It's attractive.
+- [00:44:43,350 - 00:44:44,530] Why do you think it's attractive?
+- [00:44:48,030 - 00:44:48,810] Potential energy.
+- [00:44:50,930 - 00:44:53,270] 1 over r squared gets bigger as you move away.
+- [00:44:54,650 - 00:44:55,150] So,
+- [00:44:55,150 - 00:44:55,650] sorry,
+- [00:44:55,650 - 00:44:58,430] r squared gets bigger as you move away.
+- [00:44:58,890 - 00:45:01,990] 1 over r squared decreases as you move away.
+- [00:45:02,510 - 00:45:03,370] So which one is attractive?
+- [00:45:03,390 - 00:45:04,590] So which way is this force pushing you?
+- [00:45:06,190 - 00:45:08,390] Forces push you toward smaller energy.
+- [00:45:10,750 - 00:45:13,190] Forces always push you toward smaller energy.
+- [00:45:13,290 - 00:45:15,060] That's why they're minus the derivative
+- [00:45:15,060 - 00:45:16,830] of the potential with respect to position.
+- [00:45:19,030 - 00:45:21,370] This is pushing you away from the origin.
+- [00:45:21,690 - 00:45:22,830] What kind of thing is this,
+- [00:45:22,830 - 00:45:24,010] pushing you away from the origin?
+- [00:45:24,150 - 00:45:25,310] There was nothing in this problem
+- [00:45:25,310 - 00:45:26,470] that pushed you away from the origin.
+- [00:45:26,610 - 00:45:26,970] What is it?
+- [00:45:27,370 - 00:45:28,110] Centrifugal force.
+- [00:45:28,290 - 00:45:28,730] Yeah,
+- [00:45:28,730 - 00:45:29,090] sure.
+- [00:45:29,210 - 00:45:30,210] It's centrifugal force.
+- [00:45:31,590 - 00:45:33,370] Or this is the potential energy.
+- [00:45:33,370 - 00:45:35,010] It's the energy that's
+- [00:45:35,010 - 00:45:36,650] associated with the centrifugal force.
+- [00:45:37,490 - 00:45:39,910] And it gets very big when r gets small.
+- [00:45:41,230 - 00:45:42,590] When r gets small,
+- [00:45:42,590 - 00:45:44,350] for fixed angular momentum,
+- [00:45:44,350 - 00:45:45,990] for fixed angular momentum,
+- [00:45:45,990 - 00:45:48,030] it really repels you away from the origin.
+- [00:45:48,630 - 00:45:50,330] And so if an object comes in
+- [00:45:50,330 - 00:45:52,030] with a given amount of angular momentum,
+- [00:45:52,030 - 00:45:55,070] it can't get very close to the origin.
+- [00:45:55,450 - 00:45:57,410] What it does is swing around the origin.
+- [00:45:58,730 - 00:45:59,290] Okay,
+- [00:45:59,290 - 00:46:00,910] so this is what keeps the
+- [00:46:00,910 - 00:46:02,530] particle from getting to the origin.
+- [00:46:03,750 - 00:46:05,450] And it is the centrifugal force.
+- [00:46:05,770 - 00:46:09,070] There's only one situation where it's not there.
+- [00:46:09,210 - 00:46:09,970] When is it not there?
+- [00:46:12,930 - 00:46:14,030] For l equals zero.
+- [00:46:14,730 - 00:46:15,210] Right?
+- [00:46:15,250 - 00:46:16,050] For l equals zero.
+- [00:46:16,650 - 00:46:18,510] And then for l equals zero,
+- [00:46:18,510 - 00:46:20,410] we're talking about an orbit
+- [00:46:20,410 - 00:46:22,310] which just goes through the origin.
+- [00:46:22,590 - 00:46:24,970] Back and forth and back and forth through the origin.
+- [00:46:25,290 - 00:46:26,770] It has no angular momentum.
+- [00:46:29,330 - 00:46:30,750] And this term isn't there.
+- [00:46:31,930 - 00:46:33,350] But as long as there's any momentum,
+- [00:46:33,350 - 00:46:33,350] it's not there.
+- [00:46:33,370 - 00:46:34,190] If there's any angular momentum,
+- [00:46:34,190 - 00:46:36,410] then it can't get to the
+- [00:46:36,410 - 00:46:38,630] origin because there's this huge repulsion.
+- [00:46:39,290 - 00:46:40,670] It's not a real repulsion.
+- [00:46:40,750 - 00:46:41,909] It's the centrifugal force.
+- [00:46:42,570 - 00:46:43,429] But it's there.
+- [00:46:49,670 - 00:46:50,590] P of r.
+- [00:46:50,710 - 00:46:51,450] What about P of r?
+- [00:46:51,610 - 00:46:54,510] That's just the momentum associated with the r direction.
+- [00:46:55,630 - 00:46:56,150] Okay?
+- [00:46:59,210 - 00:47:02,570] Let's go one little bit more with the classical physics.
+- [00:47:03,370 - 00:47:07,590] Let's plot this effective potential energy.
+- [00:47:07,770 - 00:47:09,730] This becomes the effective potential
+- [00:47:09,730 - 00:47:11,690] energy for the one-dimensional problem.
+- [00:47:12,470 - 00:47:14,450] It has the ordinary potential
+- [00:47:14,450 - 00:47:16,430] energy plus the centrifugal barrier.
+- [00:47:16,630 - 00:47:18,050] This is called the centrifugal barrier.
+- [00:47:18,350 - 00:47:19,630] And it looks like this.
+- [00:47:21,950 - 00:47:23,970] Let's suppose V of r is attractive.
+- [00:47:24,410 - 00:47:25,410] For example,
+- [00:47:25,410 - 00:47:26,780] it could be the attraction
+- [00:47:26,780 - 00:47:28,150] of the electron to the proton.
+- [00:47:29,270 - 00:47:29,950] Uh...
+- [00:47:36,110 - 00:47:38,350] Then V of r would look something like that.
+- [00:47:38,450 - 00:47:39,610] Let's do it a little better.
+- [00:47:41,630 - 00:47:45,450] V of r would be negative because it's attraction.
+- [00:47:46,050 - 00:47:47,570] And it would be 1 over r.
+- [00:47:47,790 - 00:47:50,490] So it would look something like this.
+- [00:47:51,110 - 00:47:51,370] Now,
+- [00:47:51,370 - 00:47:51,710] what of...
+- [00:47:51,710 - 00:47:52,510] That's V of r.
+- [00:47:54,090 - 00:47:56,310] What about L squared over r squared?
+- [00:47:56,570 - 00:47:56,670] Well,
+- [00:47:56,670 - 00:47:57,490] depending on L,
+- [00:47:57,490 - 00:47:59,210] whether or not...
+- [00:47:59,210 - 00:48:01,070] For any L except L equals 0,
+- [00:48:01,670 - 00:48:03,550] it's going to blow up at the origin,
+- [00:48:04,410 - 00:48:05,710] like 1 over r squared,
+- [00:48:05,930 - 00:48:07,350] and then fall quickly to 0.
+- [00:48:08,410 - 00:48:09,270] In fact,
+- [00:48:09,270 - 00:48:11,950] if V of r is the Coulomb potential,
+- [00:48:12,090 - 00:48:13,290] it goes like 1 over r,
+- [00:48:13,870 - 00:48:17,190] it falls more slowly than the centrifugal barrier.
+- [00:48:17,970 - 00:48:20,490] Centrifugal barrier falls very quickly to 0,
+- [00:48:20,570 - 00:48:21,390] 1 over r squared,
+- [00:48:21,710 - 00:48:23,910] and V over r a little more slowly.
+- [00:48:24,490 - 00:48:26,630] What does the combination of them look like?
+- [00:48:27,850 - 00:48:28,370] Well,
+- [00:48:28,370 - 00:48:29,730] the combination of them...
+- [00:48:29,730 - 00:48:31,730] Which is dominant at small r?
+- [00:48:32,050 - 00:48:33,010] For small r,
+- [00:48:33,010 - 00:48:33,750] which one is bigger?
+- [00:48:34,830 - 00:48:36,570] 1 over r squared or 1 over r?
+- [00:48:37,930 - 00:48:39,610] 1 over r squared is much bigger.
+- [00:48:41,390 - 00:48:41,870] So,
+- [00:48:41,870 - 00:48:43,310] very close to the origin,
+- [00:48:43,530 - 00:48:45,190] this is the dominant thing.
+- [00:48:45,850 - 00:48:47,250] What about for large r,
+- [00:48:47,410 - 00:48:49,010] if V is 1 over r?
+- [00:48:49,710 - 00:48:51,210] Supposing V is the Coulomb potential.
+- [00:48:54,550 - 00:48:56,710] 1 over r is bigger than 1 over r squared.
+- [00:48:58,650 - 00:48:59,130] So,
+- [00:48:59,130 - 00:48:59,610] asymptotically,
+- [00:48:59,610 - 00:49:00,250] far out,
+- [00:49:01,010 - 00:49:02,690] the Coulomb potential wins.
+- [00:49:03,110 - 00:49:04,610] And what happens in between?
+- [00:49:04,930 - 00:49:07,150] What happens in between looks like this.
+- [00:49:13,510 - 00:49:14,110] Okay,
+- [00:49:14,110 - 00:49:16,310] so what kind of motions do you have?
+- [00:49:16,830 - 00:49:18,510] We have an effective problem,
+- [00:49:18,710 - 00:49:20,730] which is completely one-dimensional now.
+- [00:49:21,170 - 00:49:23,210] It only depends on the r-axis.
+- [00:49:24,330 - 00:49:27,250] And all of the angular story is fixed
+- [00:49:27,250 - 00:49:28,910] by the angular momentum.
+- [00:49:29,610 - 00:49:29,910] So,
+- [00:49:29,910 - 00:49:31,450] once you know the angular momentum,
+- [00:49:31,590 - 00:49:33,150] it becomes a one-dimensional problem.
+- [00:49:33,750 - 00:49:35,010] What do you think motion
+- [00:49:35,010 - 00:49:36,910] in this kind of potential looks like?
+- [00:49:37,890 - 00:49:38,370] Well,
+- [00:49:38,370 - 00:49:40,450] the simplest kind of orbit,
+- [00:49:40,670 - 00:49:42,330] or the simplest kind of motion,
+- [00:49:42,530 - 00:49:43,890] would just be equilibrium
+- [00:49:45,510 - 00:49:46,930] down at the bottom of the potential.
+- [00:49:48,190 - 00:49:50,330] That's an orbit in which r doesn't change.
+- [00:49:50,670 - 00:49:51,770] It's a circular orbit.
+- [00:49:53,070 - 00:49:53,550] Okay,
+- [00:49:53,550 - 00:49:54,490] that's a circular orbit.
+- [00:49:54,970 - 00:49:56,750] What other kind of orbits can you have?
+- [00:49:56,950 - 00:49:57,130] Well,
+- [00:49:57,130 - 00:49:58,730] what other kind of motions could you have?
+- [00:49:59,610 - 00:50:00,070] Well,
+- [00:50:00,070 - 00:50:01,390] in a potential which looks like this,
+- [00:50:02,170 - 00:50:04,590] basically you can have oscillations,
+- [00:50:04,590 - 00:50:05,290] back and forth.
+- [00:50:08,890 - 00:50:10,530] Oscillations which go back and forth
+- [00:50:11,550 - 00:50:13,730] take the particle from a minimum distance
+- [00:50:13,730 - 00:50:15,450] from the origin to a maximum,
+- [00:50:15,610 - 00:50:16,410] and back again.
+- [00:50:17,230 - 00:50:18,390] So these are orbits
+- [00:50:19,150 - 00:50:20,930] which go from a minimum distance
+- [00:50:20,930 - 00:50:22,870] to a maximum distance and back again.
+- [00:50:23,370 - 00:50:24,850] For the Coulomb potential,
+- [00:50:24,990 - 00:50:26,290] they would be the elliptical orbits.
+- [00:50:27,910 - 00:50:28,570] All right.
+- [00:50:29,610 - 00:50:31,230] And that's the classical physics.
+- [00:50:31,370 - 00:50:31,890] In a nutshell,
+- [00:50:31,890 - 00:50:33,050] that's the classical physics.
+- [00:50:34,050 - 00:50:35,630] What about the quantum physics?
+- [00:50:36,830 - 00:50:38,130] For the quantum physics,
+- [00:50:38,270 - 00:50:39,250] we have a wave function.
+- [00:50:41,390 - 00:50:42,450] Wave function,
+- [00:50:42,450 - 00:50:43,390] instead of,
+- [00:50:43,410 - 00:50:44,630] we don't have a particle position,
+- [00:50:44,870 - 00:50:45,670] we don't have a momentum,
+- [00:50:45,850 - 00:50:46,710] we have a wave function.
+- [00:50:47,550 - 00:50:50,410] And the wave function is
+- [00:50:50,410 - 00:50:53,610] psi of r and also angles.
+- [00:50:54,890 - 00:50:56,550] But the angular structure
+- [00:50:56,550 - 00:50:58,710] is totally taken into account
+- [00:50:58,710 - 00:51:00,810] by knowing the angular momentum.
+- [00:51:01,450 - 00:51:03,470] If we know the angular momentum,
+- [00:51:03,850 - 00:51:07,730] then we know that the angular part
+- [00:51:07,730 - 00:51:09,610] of the wave function is just one of these
+- [00:51:09,610 - 00:51:10,910] spherical harmonics,
+- [00:51:11,610 - 00:51:13,150] which I've erased,
+- [00:51:13,150 - 00:51:13,590] but,
+- [00:51:15,910 - 00:51:16,690] that's gone.
+- [00:51:20,350 - 00:51:22,090] But we don't have to worry about it.
+- [00:51:22,350 - 00:51:24,070] It's a one-dimensional problem,
+- [00:51:26,290 - 00:51:27,310] psi of r,
+- [00:51:27,310 - 00:51:28,830] and what does it satisfy?
+- [00:51:29,070 - 00:51:30,890] It satisfies the Schrödinger equation
+- [00:51:31,490 - 00:51:33,830] that h on psi of r,
+- [00:51:33,990 - 00:51:36,070] let's say the time-independent
+- [00:51:36,070 - 00:51:36,810] Schrödinger equation.
+- [00:51:37,730 - 00:51:39,190] What is the time-independent
+- [00:51:39,190 - 00:51:39,770] Schrödinger equation?
+- [00:51:40,010 - 00:51:41,090] What do you put on the right-hand side?
+- [00:51:41,950 - 00:51:42,770] The energy.
+- [00:51:47,130 - 00:51:49,170] And it determines the eigenvalues
+- [00:51:49,170 - 00:51:50,650] and the eigenvectors of energy.
+- [00:51:51,410 - 00:51:52,490] Now what is h?
+- [00:51:52,890 - 00:51:54,790] h begins with pr squared.
+- [00:51:55,250 - 00:51:56,090] What is pr?
+- [00:51:57,310 - 00:51:58,330] pr is of course
+- [00:51:59,069 - 00:52:01,450] i h bar d by dr.
+- [00:52:02,370 - 00:52:03,310] As always,
+- [00:52:03,310 - 00:52:04,310] in quantum mechanics,
+- [00:52:04,910 - 00:52:06,650] a component of the momentum
+- [00:52:07,349 - 00:52:09,970] is i h bar times derivative
+- [00:52:09,970 - 00:52:12,510] with respect to the corresponding coordinate.
+- [00:52:14,270 - 00:52:14,870] So,
+- [00:52:14,870 - 00:52:16,010] pr squared,
+- [00:52:16,470 - 00:52:17,570] here's pr squared,
+- [00:52:18,290 - 00:52:20,610] pr squared is going to equal
+- [00:52:22,170 - 00:52:22,770] minus,
+- [00:52:22,770 - 00:52:24,450] because of two factors of i,
+- [00:52:25,209 - 00:52:26,430] h bar squared,
+- [00:52:26,430 - 00:52:27,290] I'm putting in the x,
+- [00:52:27,310 - 00:52:27,930] h bar is now,
+- [00:52:28,630 - 00:52:30,610] second derivative with respect to r.
+- [00:52:33,610 - 00:52:35,490] That's the first term in the Hamiltonian.
+- [00:52:35,550 - 00:52:36,630] I left something out.
+- [00:52:36,690 - 00:52:38,210] I left out twice the mass.
+- [00:52:41,110 - 00:52:43,030] Whose mass might I be talking about,
+- [00:52:43,130 - 00:52:43,710] incidentally?
+- [00:52:43,790 - 00:52:44,790] The planet Mercury?
+- [00:52:46,550 - 00:52:48,690] More likely the electron for this discussion.
+- [00:52:49,030 - 00:52:50,930] But it could be the planet Mercury too.
+- [00:52:52,470 - 00:52:54,430] I don't think we would bother doing
+- [00:52:54,430 - 00:52:55,550] quantum mechanics then.
+- [00:52:56,250 - 00:52:58,190] d second by dr squared.
+- [00:53:00,750 - 00:53:02,730] That's the first term in the Hamiltonian.
+- [00:53:02,990 - 00:53:04,650] The second term in the Hamiltonian
+- [00:53:05,010 - 00:53:06,470] is exactly what's written there.
+- [00:53:06,750 - 00:53:07,350] Plus,
+- [00:53:07,990 - 00:53:09,530] 1 over 2m,
+- [00:53:12,810 - 00:53:15,130] l squared over r squared.
+- [00:53:15,470 - 00:53:16,470] But what is l squared?
+- [00:53:16,930 - 00:53:18,630] Now we come back to here.
+- [00:53:20,370 - 00:53:23,810] l squared is not little l squared,
+- [00:53:24,550 - 00:53:26,210] it's l times l plus 1.
+- [00:53:26,450 - 00:53:26,970] Why?
+- [00:53:26,970 - 00:53:29,050] Because this is the square of the angular momentum.
+- [00:53:29,170 - 00:53:30,370] What appeared there was the square,
+- [00:53:30,390 - 00:53:32,690] it was lx squared plus ly squared plus lz squared.
+- [00:53:33,910 - 00:53:35,490] And so this becomes l
+- [00:53:37,190 - 00:53:38,590] times l plus 1
+- [00:53:39,250 - 00:53:40,050] over r squared.
+- [00:53:44,730 - 00:53:46,970] That's one of the effects of quantum mechanics.
+- [00:53:47,670 - 00:53:48,730] Just to change
+- [00:53:49,210 - 00:53:51,470] l squared to l times l plus 1.
+- [00:53:52,570 - 00:53:53,590] And finally,
+- [00:53:54,430 - 00:53:55,290] l squared plus v of r.
+- [00:53:58,870 - 00:53:59,690] v of r.
+- [00:54:02,990 - 00:54:05,550] And you can plug in your favorite potential into there.
+- [00:54:06,250 - 00:54:07,390] What do we do with it?
+- [00:54:07,730 - 00:54:09,190] We act on psi.
+- [00:54:09,930 - 00:54:12,070] And psi is now a function of r.
+- [00:54:12,250 - 00:54:13,030] Psi of r.
+- [00:54:14,810 - 00:54:15,850] Psi of r.
+- [00:54:17,750 - 00:54:18,650] Psi of r.
+- [00:54:20,490 - 00:54:22,930] Equals e psi of r.
+- [00:54:22,930 - 00:54:24,310] And that's our Schrodinger equation.
+- [00:54:24,850 - 00:54:26,640] The solutions of that equation
+- [00:54:26,640 - 00:54:28,430] are the eigenvectors of energy
+- [00:54:29,130 - 00:54:30,830] with given angular momentum.
+- [00:54:31,330 - 00:54:35,490] And the eigenvalues are the energy levels.
+- [00:54:40,660 - 00:54:42,875] I have a feeling I left
+- [00:54:42,875 - 00:54:45,090] out some h-bar squares in here.
+- [00:54:46,610 - 00:54:48,490] I probably did,
+- [00:54:48,750 - 00:54:50,790] because where did it come from?
+- [00:54:50,790 - 00:54:52,950] It came from p theta squared.
+- [00:54:53,630 - 00:54:55,750] It's probably an h-bar squared in here,
+- [00:54:55,750 - 00:54:56,010] too.
+- [00:54:59,910 - 00:55:00,930] If you track it.
+- [00:55:02,390 - 00:55:03,130] I think.
+- [00:55:03,930 - 00:55:04,410] Yeah.
+- [00:55:05,090 - 00:55:05,570] Yes.
+- [00:55:07,710 - 00:55:08,190] Alright,
+- [00:55:08,190 - 00:55:09,410] that's what we would like to solve.
+- [00:55:09,750 - 00:55:10,990] We'd like to solve this,
+- [00:55:10,990 - 00:55:12,770] find the energy levels of an atom.
+- [00:55:12,850 - 00:55:13,710] We would like to find
+- [00:55:14,530 - 00:55:16,470] the wave functions of an atom.
+- [00:55:16,569 - 00:55:18,209] We'd like to know what
+- [00:55:18,209 - 00:55:19,849] the electron probability distribution is like.
+- [00:55:20,869 - 00:55:21,790] And so forth.
+- [00:55:21,990 - 00:55:22,329] Okay,
+- [00:55:22,329 - 00:55:23,290] so we're not going to do that.
+- [00:55:23,390 - 00:55:25,080] We're not going to do it because
+- [00:55:25,080 - 00:55:26,770] it's just a matter of solving differential equations.
+- [00:55:27,369 - 00:55:29,609] And this is not a course in differential equations.
+- [00:55:30,250 - 00:55:32,790] But we can still sort of scan it out.
+- [00:55:34,210 - 00:55:34,650] Well,
+- [00:55:34,650 - 00:55:35,589] I have a question.
+- [00:55:35,650 - 00:55:35,910] Yeah.
+- [00:55:36,430 - 00:55:37,970] For a given l,
+- [00:55:40,649 - 00:55:42,770] I think what you said earlier
+- [00:55:43,250 - 00:55:45,810] suggested that they were all the same energy levels.
+- [00:55:46,750 - 00:55:47,350] Say it again.
+- [00:55:47,690 - 00:55:49,050] But all the eigenvalues,
+- [00:55:49,050 - 00:55:51,050] one of them gives you the same energy level.
+- [00:55:51,370 - 00:55:51,890] Yeah,
+- [00:55:51,890 - 00:55:53,290] all of those,
+- [00:55:53,530 - 00:55:55,190] all of these levels here,
+- [00:55:55,270 - 00:55:56,410] the two l plus one of them,
+- [00:55:56,450 - 00:55:58,810] have the same value of little l.
+- [00:55:59,290 - 00:56:00,830] And therefore the same energy.
+- [00:56:01,090 - 00:56:01,290] Oh,
+- [00:56:01,290 - 00:56:01,570] okay.
+- [00:56:01,710 - 00:56:01,970] Yeah.
+- [00:56:03,110 - 00:56:04,670] So if you were able to replace
+- [00:56:08,210 - 00:56:10,950] l squared with l l plus one
+- [00:56:10,950 - 00:56:16,290] because psi is a linear combination of the m's?
+- [00:56:16,510 - 00:56:16,690] Hmm.
+- [00:56:18,270 - 00:56:18,910] What's this?
+- [00:56:20,610 - 00:56:22,770] But that applies to any value of l.
+- [00:56:24,450 - 00:56:25,210] We said,
+- [00:56:25,210 - 00:56:25,490] right?
+- [00:56:25,750 - 00:56:26,290] Yeah.
+- [00:56:26,330 - 00:56:27,850] So if we know the angular momentum,
+- [00:56:28,230 - 00:56:30,590] if we know the angular momentum quantum number
+- [00:56:30,590 - 00:56:32,050] of the wave function,
+- [00:56:32,610 - 00:56:33,930] then we can plug it in.
+- [00:56:34,310 - 00:56:37,570] What l is really the maximum eigenvalue?
+- [00:56:38,690 - 00:56:41,190] It's the maximum eigenvalue for that multiplic.
+- [00:56:42,010 - 00:56:42,550] Yeah.
+- [00:56:42,770 - 00:56:46,190] There are wave functions of any angular momentum,
+- [00:56:46,850 - 00:56:48,410] but they come in these,
+- [00:56:48,590 - 00:56:51,350] and the pattern is that they come
+- [00:56:51,350 - 00:56:54,110] in these two l plus one multiplets.
+- [00:56:55,090 - 00:56:56,880] The two l plus one
+- [00:56:56,880 - 00:56:58,670] multiplets are the quantum mechanical analog.
+- [00:56:59,370 - 00:57:00,850] Now if you find a wave
+- [00:57:00,850 - 00:57:02,330] function and you rotate it around.
+- [00:57:03,470 - 00:57:03,910] Right.
+- [00:57:06,390 - 00:57:08,270] This tells you what the energy levels
+- [00:57:09,949 - 00:57:11,570] associated with a given l are.
+- [00:57:12,130 - 00:57:13,390] And now you want to solve it.
+- [00:57:13,850 - 00:57:14,290] Okay.
+- [00:57:14,290 - 00:57:17,030] Too hard to solve for most potentials.
+- [00:57:17,970 - 00:57:19,450] Most potentials you write down,
+- [00:57:19,570 - 00:57:20,870] you'd have to solve it numerically.
+- [00:57:21,890 - 00:57:24,550] The Coulomb potential happens to be solvable.
+- [00:57:30,710 - 00:57:32,110] If you want to solve it,
+- [00:57:33,330 - 00:57:35,570] the solutions to this equation are called
+- [00:57:35,570 - 00:57:37,130] Giegenbauer polynomials,
+- [00:57:37,130 - 00:57:38,250] or Giegenbauer functions.
+- [00:57:38,990 - 00:57:39,670] Good luck.
+- [00:57:39,810 - 00:57:40,970] Look up Giegenbauer functions.
+- [00:57:41,450 - 00:57:43,130] You will learn very little
+- [00:57:44,290 - 00:57:44,770] from it.
+- [00:57:45,870 - 00:57:48,770] I used to know what a Giegenbauer polynomial is.
+- [00:57:48,830 - 00:57:49,510] I do not anymore.
+- [00:57:51,470 - 00:57:52,110] Okay.
+- [00:57:52,930 - 00:57:55,170] Let's look at the effective potential.
+- [00:57:55,510 - 00:57:57,810] What we're doing is we're solving the Schrodinger equation
+- [00:57:57,810 - 00:58:00,470] in a potential which looks like this.
+- [00:58:01,310 - 00:58:03,250] We're solving the Schrodinger equation
+- [00:58:06,069 - 00:58:09,550] for a problem which effectively has
+- [00:58:09,550 - 00:58:11,810] a potential energy which looks like this.
+- [00:58:12,830 - 00:58:14,910] And we want to know what kind of wave functions
+- [00:58:14,910 - 00:58:17,030] and what kind of energy levels will it be.
+- [00:58:18,090 - 00:58:18,530] Okay.
+- [00:58:19,730 - 00:58:22,150] If you know anything about solving Schrodinger equations,
+- [00:58:24,830 - 00:58:28,110] then you know that given l,
+- [00:58:28,270 - 00:58:29,290] given l,
+- [00:58:29,290 - 00:58:29,730] in other words,
+- [00:58:29,730 - 00:58:30,510] we're given the potential,
+- [00:58:30,770 - 00:58:32,770] you know that first of all,
+- [00:58:33,270 - 00:58:36,470] typically there are more than one bound state.
+- [00:58:36,770 - 00:58:38,970] A bound state is a state which is confined
+- [00:58:39,750 - 00:58:41,470] with a wave function which
+- [00:58:42,150 - 00:58:43,810] doesn't leak out too far.
+- [00:58:45,210 - 00:58:47,670] They correspond to discrete energy levels.
+- [00:58:48,350 - 00:58:51,310] And you know that the thing which characterizes
+- [00:58:51,310 - 00:58:55,030] the energy level is the number of nodes
+- [00:58:55,030 - 00:58:56,030] in the wave function.
+- [00:58:56,250 - 00:58:57,450] Does everybody know what a node is?
+- [00:58:59,170 - 00:59:03,150] A wave function which is never zero,
+- [00:59:03,370 - 00:59:04,510] let's say it's always positive,
+- [00:59:04,690 - 00:59:05,550] has no nodes.
+- [00:59:06,290 - 00:59:07,410] If it goes up,
+- [00:59:07,410 - 00:59:07,750] goes down,
+- [00:59:07,750 - 00:59:08,890] passes through the origin,
+- [00:59:09,010 - 00:59:10,290] and then it has one node.
+- [00:59:11,270 - 00:59:13,250] So here are some functions
+- [00:59:13,250 - 00:59:14,670] with different numbers of nodes.
+- [00:59:15,470 - 00:59:16,070] Here's,
+- [00:59:16,070 - 00:59:16,270] oops,
+- [00:59:17,630 - 00:59:19,630] here's a function with no nodes.
+- [00:59:20,830 - 00:59:22,990] Here's a function with one node.
+- [00:59:26,390 - 00:59:28,370] How about a function with two nodes?
+- [00:59:29,710 - 00:59:32,330] A function with two nodes goes up,
+- [00:59:32,390 - 00:59:33,010] comes down,
+- [00:59:33,010 - 00:59:33,970] goes back up,
+- [00:59:33,990 - 00:59:34,950] and comes back down.
+- [00:59:36,410 - 00:59:39,290] The number of nodes are what characterize
+- [00:59:39,290 - 00:59:41,770] the different energy levels
+- [00:59:42,290 - 00:59:44,050] of a solution to the Schrodinger equation.
+- [00:59:45,310 - 00:59:46,610] The more nodes,
+- [00:59:46,610 - 00:59:47,770] the higher the energy.
+- [00:59:48,010 - 00:59:49,850] Why would it be that the more nodes,
+- [00:59:49,850 - 00:59:50,670] the higher the energy?
+- [00:59:54,390 - 00:59:55,010] What's that?
+- [00:59:55,010 - 00:59:55,470] Yeah.
+- [00:59:57,230 - 00:59:58,330] Something like that.
+- [00:59:58,330 - 00:59:58,890] Yeah.
+- [00:59:59,130 - 01:00:00,370] The more nodes,
+- [01:00:00,370 - 01:00:01,270] the faster it wiggles.
+- [01:00:01,890 - 01:00:03,290] The faster it wiggles,
+- [01:00:03,290 - 01:00:04,950] the larger the momentum.
+- [01:00:07,170 - 01:00:09,210] Momentum is characterized by
+- [01:00:09,210 - 01:00:09,590] wiggles.
+- [01:00:09,770 - 01:00:12,270] The wave functions of momentum states wiggle.
+- [01:00:12,570 - 01:00:13,870] The higher the momentum,
+- [01:00:13,870 - 01:00:14,830] the faster they wiggle.
+- [01:00:15,370 - 01:00:16,610] The more they wiggle,
+- [01:00:16,610 - 01:00:18,110] the more nodes they're going to have.
+- [01:00:18,470 - 01:00:20,030] So generally speaking,
+- [01:00:20,030 - 01:00:21,050] it's a theorem.
+- [01:00:21,170 - 01:00:21,730] It's actually not,
+- [01:00:21,730 - 01:00:22,490] it's a theorem.
+- [01:00:22,870 - 01:00:25,550] The lowest energy state in the given potential
+- [01:00:25,550 - 01:00:26,750] has no nodes.
+- [01:00:27,110 - 01:00:29,750] The first excited state has one node.
+- [01:00:30,050 - 01:00:32,290] The next excited state has two nodes.
+- [01:00:32,430 - 01:00:36,550] Eventually you may or may not run out of solutions,
+- [01:00:36,950 - 01:00:37,450] but
+- [01:00:38,870 - 01:00:41,630] they're ordered according to the number of nodes.
+- [01:00:43,069 - 01:00:44,130] So let's start.
+- [01:00:44,310 - 01:00:46,490] Let's see now what we can say about the spectrum
+- [01:00:47,649 - 01:00:48,810] of an atom.
+- [01:00:49,790 - 01:00:51,550] It doesn't have to be a realistic atom.
+- [01:00:51,690 - 01:00:54,830] This could be an atom with one over r potential,
+- [01:00:55,010 - 01:00:55,950] like a realistic atom.
+- [01:00:56,150 - 01:00:57,890] It could be one over square root of r.
+- [01:00:58,010 - 01:01:00,870] It could be e to the minus r,
+- [01:01:00,870 - 01:01:01,670] but some potential.
+- [01:01:02,250 - 01:01:03,130] What can we say?
+- [01:01:03,190 - 01:01:04,510] Let's see if we can organize
+- [01:01:05,450 - 01:01:08,990] the energy levels and the states of the atom.
+- [01:01:10,190 - 01:01:10,790] Okay,
+- [01:01:10,790 - 01:01:11,810] let's see how I do this.
+- [01:01:18,430 - 01:01:19,030] Yeah,
+- [01:01:19,030 - 01:01:19,990] let's plot horizontally
+- [01:01:23,310 - 01:01:25,650] the different angular momenta.
+- [01:01:31,850 - 01:01:33,050] Little l's.
+- [01:01:33,050 - 01:01:34,030] Little l.
+- [01:01:34,730 - 01:01:36,010] l equals zero.
+- [01:01:37,550 - 01:01:38,270] Zero.
+- [01:01:39,130 - 01:01:40,530] l equals one.
+- [01:01:41,570 - 01:01:42,890] l equals two.
+- [01:01:43,570 - 01:01:44,930] l equals three.
+- [01:01:45,050 - 01:01:45,750] And so forth.
+- [01:01:46,010 - 01:01:47,890] Now each one of these l's
+- [01:01:47,890 - 01:01:49,730] has its own Schrodinger equation.
+- [01:01:50,270 - 01:01:50,990] Remember,
+- [01:01:51,790 - 01:01:55,190] the Schrodinger equation involves l as a parameter.
+- [01:01:56,330 - 01:02:00,790] So each l may have several bound states.
+- [01:02:01,630 - 01:02:02,850] Several solutions.
+- [01:02:03,790 - 01:02:05,110] Let's take l equals zero.
+- [01:02:05,930 - 01:02:08,650] l equals zero will have a lowest energy state.
+- [01:02:08,930 - 01:02:09,430] Let's see,
+- [01:02:09,430 - 01:02:10,330] what are we plotting here?
+- [01:02:10,390 - 01:02:12,810] Let's plot energy vertically.
+- [01:02:15,130 - 01:02:15,610] Okay,
+- [01:02:15,610 - 01:02:17,090] there will be the lowest energy level.
+- [01:02:17,290 - 01:02:19,890] It has no nodes in l equals zero.
+- [01:02:20,230 - 01:02:21,610] So it's someplace over here.
+- [01:02:24,590 - 01:02:25,070] Okay.
+- [01:02:25,670 - 01:02:27,830] What's the next state with l equals zero?
+- [01:02:28,070 - 01:02:29,510] The next state with l equals
+- [01:02:29,510 - 01:02:30,950] zero has a node in it.
+- [01:02:31,550 - 01:02:32,510] Same potential,
+- [01:02:32,510 - 01:02:33,570] one node.
+- [01:02:34,150 - 01:02:35,650] So it's up here over somewheres.
+- [01:02:37,650 - 01:02:39,610] How many states are there for every,
+- [01:02:39,690 - 01:02:41,050] for l equals zero,
+- [01:02:41,250 - 01:02:41,930] each wave,
+- [01:02:41,930 - 01:02:42,790] each case,
+- [01:02:42,970 - 01:02:44,170] has one state.
+- [01:02:44,590 - 01:02:46,030] l times l plus one
+- [01:02:46,030 - 01:02:48,770] is one when l is equal to zero.
+- [01:02:49,070 - 01:02:49,650] Is that right?
+- [01:02:50,030 - 01:02:50,290] No.
+- [01:02:51,730 - 01:02:52,210] No,
+- [01:02:52,210 - 01:02:52,410] no,
+- [01:02:52,410 - 01:02:52,530] no.
+- [01:02:52,550 - 01:02:53,450] Two l plus one is,
+- [01:02:53,450 - 01:02:53,650] uh,
+- [01:02:55,030 - 01:02:55,890] two l plus,
+- [01:02:56,490 - 01:02:57,190] two l,
+- [01:02:57,210 - 01:02:59,270] two l plus one is,
+- [01:02:59,270 - 01:02:59,630] uh,
+- [01:03:00,350 - 01:03:00,830] right,
+- [01:03:00,830 - 01:03:02,170] two l plus one is one.
+- [01:03:02,370 - 01:03:05,350] So every one of the states with l equals zero,
+- [01:03:05,490 - 01:03:06,010] one node,
+- [01:03:06,010 - 01:03:06,650] two nodes,
+- [01:03:06,650 - 01:03:07,370] three nodes,
+- [01:03:07,370 - 01:03:08,050] and four node,
+- [01:03:08,430 - 01:03:11,190] they all have one state associated with them.
+- [01:03:11,590 - 01:03:12,050] There's some,
+- [01:03:12,570 - 01:03:13,610] they're not equally spaced.
+- [01:03:14,010 - 01:03:15,150] They are whatever they are.
+- [01:03:16,230 - 01:03:17,210] Whatever they are.
+- [01:03:18,530 - 01:03:19,090] Okay.
+- [01:03:22,350 - 01:03:25,370] Those are the energy levels with zero angular momentum.
+- [01:03:25,870 - 01:03:27,890] Now let's go to angular momentum one.
+- [01:03:28,890 - 01:03:30,490] At angular momentum one,
+- [01:03:30,830 - 01:03:33,410] there is also a state with one,
+- [01:03:33,470 - 01:03:34,170] with no nodes.
+- [01:03:34,650 - 01:03:36,690] We solve the same Schrodinger equation
+- [01:03:36,690 - 01:03:38,770] except with l equals one here.
+- [01:03:40,330 - 01:03:41,790] l times l plus one,
+- [01:03:41,850 - 01:03:42,750] when l is equal to one,
+- [01:03:42,810 - 01:03:43,830] one times two is,
+- [01:03:43,830 - 01:03:43,970] uh,
+- [01:03:43,970 - 01:03:44,090] two,
+- [01:03:44,090 - 01:03:44,410] right?
+- [01:03:44,530 - 01:03:45,530] One times two is two.
+- [01:03:46,350 - 01:03:47,290] On the other hand,
+- [01:03:47,290 - 01:03:48,070] for l equals zero,
+- [01:03:48,210 - 01:03:48,830] this was zero.
+- [01:03:50,090 - 01:03:50,530] Okay,
+- [01:03:50,530 - 01:03:50,770] so,
+- [01:03:51,409 - 01:03:52,610] same Schrodinger equation,
+- [01:03:52,810 - 01:03:53,810] different value of l.
+- [01:03:54,330 - 01:03:55,490] At l equals one,
+- [01:03:55,590 - 01:03:57,630] we will also find things with one node.
+- [01:03:58,110 - 01:04:00,210] Will their energy be larger or smaller
+- [01:04:00,210 - 01:04:02,430] than the l equals zero state with no l,
+- [01:04:02,510 - 01:04:03,150] with no node?
+- [01:04:06,270 - 01:04:07,990] Just a wild guess.
+- [01:04:09,450 - 01:04:09,970] Yeah,
+- [01:04:09,970 - 01:04:10,950] it's got angular momentum.
+- [01:04:11,250 - 01:04:11,630] It's,
+- [01:04:11,630 - 01:04:11,810] you know,
+- [01:04:11,830 - 01:04:13,050] it's swinging around there.
+- [01:04:13,150 - 01:04:14,130] It's got angular momentum.
+- [01:04:14,310 - 01:04:15,470] And besides which,
+- [01:04:15,510 - 01:04:17,650] this is a positive term in the Hamiltonian.
+- [01:04:17,670 - 01:04:19,250] So how could it possibly lower the energy?
+- [01:04:19,370 - 01:04:19,870] It can't.
+- [01:04:20,350 - 01:04:22,430] So the l equals one state
+- [01:04:23,190 - 01:04:24,810] with no nodes
+- [01:04:25,630 - 01:04:27,950] will lie somewhat above
+- [01:04:30,210 - 01:04:32,990] the corresponding state with l equals zero.
+- [01:04:34,490 - 01:04:35,090] Likewise,
+- [01:04:36,070 - 01:04:38,370] the state with two nodes
+- [01:04:39,710 - 01:04:41,750] will lie above this one.
+- [01:04:42,290 - 01:04:42,890] And
+- [01:04:45,270 - 01:04:46,430] just by virtue,
+- [01:04:46,530 - 01:04:48,370] the whole spectrum may move over,
+- [01:04:49,430 - 01:04:51,650] but it will move up a little bit
+- [01:04:51,650 - 01:04:53,410] because the angular momentum is higher.
+- [01:04:54,490 - 01:04:56,310] How many states are there
+- [01:04:56,310 - 01:04:57,330] at each one of these levels?
+- [01:04:58,110 - 01:05:00,190] I've drawn a little dash,
+- [01:05:00,210 - 01:05:00,490] a little dash here,
+- [01:05:00,670 - 01:05:03,590] to indicate a possible energy level,
+- [01:05:03,730 - 01:05:04,590] an energy level.
+- [01:05:05,050 - 01:05:06,750] But what is its degeneracy?
+- [01:05:06,890 - 01:05:08,050] How many states are there
+- [01:05:08,050 - 01:05:09,110] at each one of those dashes?
+- [01:05:12,950 - 01:05:14,130] Two l plus one?
+- [01:05:14,810 - 01:05:15,370] Three.
+- [01:05:16,070 - 01:05:17,990] So we should really draw these
+- [01:05:17,990 - 01:05:19,250] as three little dashes
+- [01:05:20,390 - 01:05:22,690] if I was trying to separate them
+- [01:05:22,690 - 01:05:26,530] and indicate three states.
+- [01:05:27,490 - 01:05:28,590] Each one of these
+- [01:05:28,590 - 01:05:29,410] is a triplet.
+- [01:05:31,549 - 01:05:33,190] What about at l equals two?
+- [01:05:33,470 - 01:05:34,430] At l equals two,
+- [01:05:34,530 - 01:05:36,290] we've put in a little more angular momentum.
+- [01:05:36,970 - 01:05:38,910] Surely we've raised the energy again,
+- [01:05:39,130 - 01:05:40,470] and in fact we will have.
+- [01:05:41,330 - 01:05:42,730] How many states will there be
+- [01:05:42,730 - 01:05:44,390] for each state at l equals two?
+- [01:05:46,670 - 01:05:47,070] Five.
+- [01:05:47,390 - 01:05:48,310] Two l plus one.
+- [01:05:48,850 - 01:05:50,490] So when we go up to l equals two,
+- [01:05:50,550 - 01:05:51,690] let's move them over a little bit,
+- [01:05:51,730 - 01:05:52,370] l equals two,
+- [01:05:53,270 - 01:05:55,330] we will have them go up a little bit,
+- [01:05:55,370 - 01:05:56,630] and we'll have five states.
+- [01:05:57,850 - 01:05:58,330] One,
+- [01:05:58,330 - 01:05:58,870] two,
+- [01:05:58,870 - 01:05:59,070] three,
+- [01:05:59,070 - 01:05:59,310] four,
+- [01:05:59,310 - 01:05:59,510] five.
+- [01:05:59,750 - 01:05:59,910] One,
+- [01:05:59,910 - 01:06:00,110] two,
+- [01:06:00,110 - 01:06:00,290] three,
+- [01:06:00,290 - 01:06:00,470] four,
+- [01:06:00,470 - 01:06:00,790] five.
+- [01:06:01,270 - 01:06:02,390] And so it goes.
+- [01:06:02,670 - 01:06:03,470] l equals three.
+- [01:06:04,690 - 01:06:05,890] Two l plus one,
+- [01:06:05,990 - 01:06:06,390] let's see,
+- [01:06:06,490 - 01:06:07,450] three times two is six,
+- [01:06:07,470 - 01:06:08,010] seven states,
+- [01:06:08,650 - 01:06:09,530] and so forth.
+- [01:06:11,550 - 01:06:13,210] And that's about what it looks like.
+- [01:06:13,250 - 01:06:16,270] That's about what the general solution looks like
+- [01:06:16,270 - 01:06:18,530] for sort of arbitrary potential.
+- [01:06:19,110 - 01:06:20,390] At some point,
+- [01:06:20,450 - 01:06:22,210] when the energy gets too high,
+- [01:06:23,830 - 01:06:25,510] just like in classical physics,
+- [01:06:25,590 - 01:06:26,610] what happens when the energy gets too high?
+- [01:06:26,630 - 01:06:27,610] When the energy gets too high
+- [01:06:28,390 - 01:06:30,630] for an orbit around the sun?
+- [01:06:31,830 - 01:06:32,690] It escapes.
+- [01:06:33,050 - 01:06:33,530] It escapes.
+- [01:06:33,670 - 01:06:35,310] It exceeds the escape velocity,
+- [01:06:35,630 - 01:06:38,390] and it's no longer bound to the sun.
+- [01:06:39,590 - 01:06:40,190] Likewise,
+- [01:06:40,310 - 01:06:42,170] when the energy gets too high,
+- [01:06:43,690 - 01:06:45,070] the electron escapes,
+- [01:06:45,410 - 01:06:49,010] and so there's a bound to the energy up here.
+- [01:06:51,970 - 01:06:54,350] No states above there are actually bound.
+- [01:06:54,630 - 01:06:56,330] So all the bound states have
+- [01:06:57,010 - 01:06:58,430] basically negative energy.
+- [01:06:58,690 - 01:06:59,830] Energy starts,
+- [01:06:59,830 - 01:07:00,390] it should be,
+- [01:07:00,410 - 01:07:01,530] it goes negative down here.
+- [01:07:01,730 - 01:07:04,090] And this is what the spectrum of a,
+- [01:07:04,250 - 01:07:06,470] of anything in a central force looks like.
+- [01:07:08,270 - 01:07:11,310] The Coulomb potential has a very special feature.
+- [01:07:11,850 - 01:07:13,450] It's almost accidental.
+- [01:07:13,870 - 01:07:14,930] It's not exact.
+- [01:07:15,570 - 01:07:17,610] It is an exact statement about
+- [01:07:17,610 - 01:07:19,670] the nonrelativistic Coulomb potential,
+- [01:07:19,890 - 01:07:22,570] but it is not an exact statement about atoms,
+- [01:07:22,810 - 01:07:24,130] the statement I'm going to tell you.
+- [01:07:24,350 - 01:07:26,610] It's violated by every possible way.
+- [01:07:26,630 - 01:07:27,150] It's a very possible correction
+- [01:07:27,150 - 01:07:30,510] to the simplest theory of the atom.
+- [01:07:32,330 - 01:07:35,430] It's violated by the finite size of the nucleus.
+- [01:07:36,370 - 01:07:38,850] It's violated by relativistic corrections.
+- [01:07:39,350 - 01:07:41,120] It's violated by the fact
+- [01:07:41,120 - 01:07:42,890] that the electron has a spin
+- [01:07:42,890 - 01:07:43,910] which couples to the,
+- [01:07:43,910 - 01:07:46,290] everything on earth violates it.
+- [01:07:46,510 - 01:07:48,110] So it's something of an accident.
+- [01:07:49,450 - 01:07:51,810] It's very special to the Coulomb force.
+- [01:07:53,150 - 01:07:54,930] And it goes as follows.
+- [01:07:56,690 - 01:07:59,570] The first level here,
+- [01:08:00,410 - 01:08:02,770] which is moved up a little bit,
+- [01:08:02,930 - 01:08:04,450] this is the zero node state.
+- [01:08:04,730 - 01:08:07,150] The zero node state for L equals one
+- [01:08:07,850 - 01:08:09,090] happens to be,
+- [01:08:09,270 - 01:08:11,730] have exactly the same energy
+- [01:08:12,490 - 01:08:15,830] as the one node state for L equals zero.
+- [01:08:19,870 - 01:08:22,609] Here's the one node state for L equals zero.
+- [01:08:23,710 - 01:08:25,410] The zero node state,
+- [01:08:25,410 - 01:08:28,810] the first one that occurs for L equals one
+- [01:08:29,189 - 01:08:31,109] occurs at exactly the same energy
+- [01:08:31,109 - 01:08:35,250] as the one node state for L equals zero.
+- [01:08:35,370 - 01:08:36,050] That's a mouthful.
+- [01:08:37,189 - 01:08:39,149] What about the two node state?
+- [01:08:39,450 - 01:08:40,370] The two nodes,
+- [01:08:40,370 - 01:08:40,970] sorry,
+- [01:08:42,170 - 01:08:44,590] the one node state of L equals one
+- [01:08:45,130 - 01:08:47,910] occurs at the same energy as the two node state
+- [01:08:48,710 - 01:08:50,090] of L equals zero.
+- [01:08:50,590 - 01:08:51,729] Exactly the same.
+- [01:08:52,609 - 01:08:57,510] Exactly the same for the simple Coulomb force.
+- [01:08:57,710 - 01:08:59,270] And so on and so forth.
+- [01:08:59,850 - 01:09:00,890] This is a pattern.
+- [01:09:02,870 - 01:09:04,529] Now you go to L equals two.
+- [01:09:05,830 - 01:09:08,810] The L equals two zero node state,
+- [01:09:09,010 - 01:09:09,550] in other words,
+- [01:09:09,550 - 01:09:11,069] the lowest L equals two state,
+- [01:09:11,310 - 01:09:13,729] has exactly the same energy as,
+- [01:09:14,470 - 01:09:15,210] which is this now.
+- [01:09:15,350 - 01:09:17,970] This is no node,
+- [01:09:17,970 - 01:09:18,490] one node,
+- [01:09:18,490 - 01:09:19,090] two nodes.
+- [01:09:19,990 - 01:09:20,830] It's up here.
+- [01:09:20,830 - 01:09:21,910] And there are five states.
+- [01:09:23,270 - 01:09:23,689] One,
+- [01:09:23,689 - 01:09:23,950] two,
+- [01:09:23,950 - 01:09:24,130] three,
+- [01:09:24,130 - 01:09:24,330] four,
+- [01:09:24,330 - 01:09:24,550] five.
+- [01:09:25,450 - 01:09:26,830] What about the L equals three?
+- [01:09:27,250 - 01:09:29,109] The L equals three begins up here.
+- [01:09:29,270 - 01:09:29,990] Seven states.
+- [01:09:30,069 - 01:09:30,210] One,
+- [01:09:30,210 - 01:09:30,310] two,
+- [01:09:30,310 - 01:09:30,470] three,
+- [01:09:30,470 - 01:09:30,550] four,
+- [01:09:30,550 - 01:09:30,750] five,
+- [01:09:30,750 - 01:09:30,910] six,
+- [01:09:30,910 - 01:09:31,149] seven.
+- [01:09:31,310 - 01:09:32,090] And so forth.
+- [01:09:34,229 - 01:09:36,050] That's the pattern and it's an accident.
+- [01:09:36,850 - 01:09:38,410] It's not completely an accident.
+- [01:09:38,550 - 01:09:40,729] Nothing in mathematics is ever an accident.
+- [01:09:41,669 - 01:09:43,750] But you can say things are accidental
+- [01:09:43,750 - 01:09:44,410] when,
+- [01:09:44,410 - 01:09:44,729] you know,
+- [01:09:44,729 - 01:09:46,910] just small changes in the potential
+- [01:09:46,910 - 01:09:50,310] or small changes in anything ruin it.
+- [01:09:50,310 - 01:09:52,490] And this in that sense is an accident.
+- [01:09:52,890 - 01:09:56,790] I'm not going to prove it.
+- [01:09:57,390 - 01:09:59,390] It sounds like an extra symmetry law.
+- [01:09:59,610 - 01:10:01,270] It sounds like extra degeneracy.
+- [01:10:01,730 - 01:10:05,150] It sounds like there are degeneracies between states.
+- [01:10:06,390 - 01:10:07,710] It is a symmetry,
+- [01:10:07,710 - 01:10:09,690] but it's a rather bizarre one.
+- [01:10:10,570 - 01:10:13,030] It's a rather bizarre one that you would never notice
+- [01:10:13,030 - 01:10:14,190] if you were thinking about this.
+- [01:10:14,290 - 01:10:14,650] As I said,
+- [01:10:14,650 - 01:10:16,410] it's very special to the Coulomb potential
+- [01:10:17,050 - 01:10:18,230] and is not exact.
+- [01:10:18,430 - 01:10:20,290] So I think we won't bother proving it.
+- [01:10:20,870 - 01:10:22,310] It's a nuisance to prove.
+- [01:10:27,910 - 01:10:29,150] But it is a fact.
+- [01:10:29,410 - 01:10:31,010] It's a very special fact about
+- [01:10:31,010 - 01:10:32,610] the special one over r potential.
+- [01:10:33,350 - 01:10:34,350] So there it is.
+- [01:10:34,430 - 01:10:35,250] That's the spectrum.
+- [01:10:36,030 - 01:10:41,090] What is the degeneracy at each level?
+- [01:10:42,010 - 01:10:43,550] Here's the lowest energy level.
+- [01:10:43,810 - 01:10:45,030] There's only one state.
+- [01:10:45,270 - 01:10:46,690] It has angular momentum zero.
+- [01:10:46,970 - 01:10:48,590] It's called the ground state.
+- [01:10:48,590 - 01:10:51,590] It's the lowest energy state of the atom.
+- [01:10:52,310 - 01:10:53,890] If this were the hydrogen atom,
+- [01:10:53,890 - 01:10:54,530] for example,
+- [01:10:54,690 - 01:10:56,670] it would be the most deeply bound state.
+- [01:10:57,450 - 01:10:58,970] Then you go up one level.
+- [01:10:59,730 - 01:11:02,620] You go to the first node
+- [01:11:02,620 - 01:11:05,510] of the zero angular momentum state
+- [01:11:06,110 - 01:11:08,690] or no nodes for the angular momentum.
+- [01:11:08,850 - 01:11:09,910] And how many states do you get?
+- [01:11:12,970 - 01:11:13,990] This is one.
+- [01:11:15,270 - 01:11:16,270] This is four.
+- [01:11:16,270 - 01:11:17,730] How about the next one up?
+- [01:11:20,710 - 01:11:21,150] One,
+- [01:11:21,150 - 01:11:21,570] two,
+- [01:11:21,570 - 01:11:21,930] three,
+- [01:11:21,930 - 01:11:22,230] four,
+- [01:11:22,230 - 01:11:22,650] five,
+- [01:11:22,650 - 01:11:23,050] six,
+- [01:11:23,050 - 01:11:23,450] seven,
+- [01:11:23,450 - 01:11:23,710] eight,
+- [01:11:23,710 - 01:11:23,930] nine.
+- [01:11:25,150 - 01:11:26,990] Nine states at the next level.
+- [01:11:28,290 - 01:11:30,010] Anybody want to guess what the next one is?
+- [01:11:31,550 - 01:11:32,310] Sixteen is right.
+- [01:11:36,690 - 01:11:38,230] So for the Coulomb potential,
+- [01:11:38,470 - 01:11:39,530] for the Coulomb potential,
+- [01:11:40,110 - 01:11:41,910] the states are degenerate like this
+- [01:11:41,910 - 01:11:44,430] and the degeneracy is always
+- [01:11:44,430 - 01:11:45,970] the square of some integer.
+- [01:11:46,270 - 01:11:49,350] You said the Coulomb level remains the atom
+- [01:11:49,350 - 01:11:51,230] or you were just talking about the friction?
+- [01:11:52,689 - 01:11:57,570] The hydrogen atom approximately satisfies this.
+- [01:11:59,090 - 01:12:00,550] It's a very good approximation.
+- [01:12:03,090 - 01:12:05,330] But all kinds of things violate it.
+- [01:12:05,470 - 01:12:06,610] Relativistic corrections.
+- [01:12:07,570 - 01:12:08,770] And as I said,
+- [01:12:08,770 - 01:12:11,130] just the finite size of the nucleus
+- [01:12:11,130 - 01:12:12,590] is enough to disturb this.
+- [01:12:13,310 - 01:12:15,050] Now the nucleus is very,
+- [01:12:15,050 - 01:12:15,610] very small.
+- [01:12:16,430 - 01:12:19,190] Why does the finite size of the nucleus disturb it?
+- [01:12:19,370 - 01:12:21,969] The nucleus is a little ball of charge.
+- [01:12:22,409 - 01:12:25,590] We've pretended the charge was a point at the center.
+- [01:12:26,970 - 01:12:29,730] That would give us exactly the Coulomb potential.
+- [01:12:30,310 - 01:12:32,889] If the charge were distributed over a little ball,
+- [01:12:33,190 - 01:12:35,630] the potential energy would be slightly different
+- [01:12:35,630 - 01:12:37,190] than the exact Coulomb,
+- [01:12:37,350 - 01:12:38,830] especially when you get into the nucleus.
+- [01:12:39,690 - 01:12:41,909] The electron can pass through the nucleus.
+- [01:12:42,090 - 01:12:43,350] It's just a ball of charge.
+- [01:12:43,469 - 01:12:45,409] The nucleus is just a ball of charge.
+- [01:12:45,409 - 01:12:47,670] The electron is repelled.
+- [01:12:48,090 - 01:12:48,730] Sorry,
+- [01:12:48,730 - 01:12:50,790] it's attracted to the nucleus.
+- [01:12:52,050 - 01:12:53,889] And it can pass through the nucleus.
+- [01:12:54,090 - 01:12:55,429] When it passes through the nucleus,
+- [01:12:55,690 - 01:12:58,449] it senses the fact that the charge distribution
+- [01:12:58,449 - 01:13:01,090] is not the perfect 1 over r potential.
+- [01:13:03,090 - 01:13:05,690] If the potential is anything but 1 over r,
+- [01:13:06,090 - 01:13:08,370] this degeneracy fails.
+- [01:13:09,190 - 01:13:12,230] So because the nucleus has a finite size,
+- [01:13:12,670 - 01:13:14,070] there's a very,
+- [01:13:14,070 - 01:13:15,390] very slight deviation.
+- [01:13:15,390 - 01:13:16,450] There's a very slight deviation away from this.
+- [01:13:17,630 - 01:13:18,150] Now,
+- [01:13:18,150 - 01:13:20,710] the nucleus is 100,000 times smaller
+- [01:13:20,710 - 01:13:22,870] than the size of the atomic wave functions.
+- [01:13:23,450 - 01:13:25,350] So the nucleus is very small,
+- [01:13:25,450 - 01:13:27,090] and this is a very negligible effect.
+- [01:13:27,450 - 01:13:29,230] But the only point is just
+- [01:13:29,230 - 01:13:31,010] that this is something of an accident
+- [01:13:32,730 - 01:13:34,930] and not particularly deep.
+- [01:13:35,070 - 01:13:36,850] I don't know anything deep about it,
+- [01:13:37,550 - 01:13:39,850] the fact that it has this kind of degeneracy.
+- [01:13:40,170 - 01:13:42,530] And that's the spectrum of the hydrogen atom.
+- [01:13:42,710 - 01:13:44,570] That's the spectrum of the hydrogen atom
+- [01:13:45,390 - 01:13:47,210] and the idealized approximation,
+- [01:13:47,870 - 01:13:48,770] non-relativistic,
+- [01:13:48,770 - 01:13:50,770] perfect Coulomb potential.
+- [01:13:51,710 - 01:13:52,390] Okay?
+- [01:13:53,490 - 01:13:54,510] One state,
+- [01:13:54,510 - 01:13:57,150] the ground state.
+- [01:13:58,030 - 01:13:59,730] Four states above it.
+- [01:14:01,530 - 01:14:03,290] Nine states above that.
+- [01:14:05,170 - 01:14:07,630] Is that the way real atoms work?
+- [01:14:07,810 - 01:14:08,010] No,
+- [01:14:08,010 - 01:14:09,310] it's not the way real atoms work.
+- [01:14:09,350 - 01:14:12,570] Real atoms have two degenerate ground states,
+- [01:14:12,890 - 01:14:15,150] eight first excited states,
+- [01:14:19,110 - 01:14:21,290] 18 next excited states,
+- [01:14:22,450 - 01:14:24,690] 32 next excited states.
+- [01:14:26,370 - 01:14:29,070] And so there's something missing in this analysis
+- [01:14:29,070 - 01:14:30,210] by a factor of two.
+- [01:14:30,990 - 01:14:31,630] Spin.
+- [01:14:31,630 - 01:14:32,370] Yeah.
+- [01:14:32,950 - 01:14:33,590] Spin.
+- [01:14:33,590 - 01:14:34,710] Right.
+- [01:14:35,430 - 01:14:37,250] So we haven't talked about spin,
+- [01:14:38,390 - 01:14:40,590] and I think we won't tonight.
+- [01:14:41,730 - 01:14:42,370] That's...
+- [01:14:45,390 - 01:14:46,830] All of this is,
+- [01:14:46,830 - 01:14:47,350] of course,
+- [01:14:47,390 - 01:14:52,170] just trickery for solving the Schrodinger equation.
+- [01:14:52,310 - 01:14:53,750] Let me write the Schrodinger equation
+- [01:14:53,750 - 01:14:56,930] in its original form before we went to angular variables.
+- [01:14:58,310 - 01:15:01,130] It wouldn't be particularly helpful to try to solve it,
+- [01:15:01,190 - 01:15:03,250] but we might just try to write it down.
+- [01:15:04,690 - 01:15:06,600] P squared means Px squared
+- [01:15:06,600 - 01:15:08,510] plus Py squared plus Pz squared.
+- [01:15:08,750 - 01:15:11,190] It can also mean Pr squared plus P theta squared.
+- [01:15:11,630 - 01:15:13,350] But it means Px squared plus Py.
+- [01:15:13,350 - 01:15:15,910] So this really means minus...
+- [01:15:15,910 - 01:15:16,870] What is it?
+- [01:15:16,870 - 01:15:17,690] H bar squared
+- [01:15:18,770 - 01:15:21,350] d second with respect to x squared
+- [01:15:21,350 - 01:15:24,210] plus d second with respect to y squared
+- [01:15:24,210 - 01:15:26,970] plus d second with respect to z squared
+- [01:15:28,030 - 01:15:28,830] of psi
+- [01:15:31,050 - 01:15:33,710] plus V of r
+- [01:15:34,350 - 01:15:36,210] times psi equals E psi.
+- [01:15:37,550 - 01:15:39,970] That's the equation we really set out to solve.
+- [01:15:41,150 - 01:15:42,250] You solve it
+- [01:15:42,250 - 01:15:45,250] by going first to polar coordinates
+- [01:15:45,250 - 01:15:46,290] or radial coordinates,
+- [01:15:46,430 - 01:15:47,890] radial and angular coordinates,
+- [01:15:48,470 - 01:15:50,290] and then using the algebra
+- [01:15:50,850 - 01:15:52,350] of the angular momentum
+- [01:15:52,350 - 01:15:55,250] to deal with the angular parts of it.
+- [01:15:55,390 - 01:15:56,670] And it's very simple.
+- [01:15:57,050 - 01:16:00,270] The angular parts of it are all subsumed by saying
+- [01:16:00,270 - 01:16:02,810] you work with angular momentum eigenstates.
+- [01:16:03,290 - 01:16:05,130] L squared is the thing that comes in,
+- [01:16:05,230 - 01:16:06,600] and L squared is nothing
+- [01:16:06,600 - 01:16:07,970] but L times L plus 1.
+- [01:16:09,670 - 01:16:10,770] By that time,
+- [01:16:10,790 - 01:16:12,230] you're down to a one-dimensional equation
+- [01:16:12,250 - 01:16:13,210] or a differential Schrodinger equation,
+- [01:16:15,190 - 01:16:18,630] and you use whatever mathematical strategy
+- [01:16:19,049 - 01:16:20,630] you know for solving such things.
+- [01:16:23,370 - 01:16:25,190] Once you get it down to one direction,
+- [01:16:26,350 - 01:16:28,510] it's just an ordinary differential equation.
+- [01:16:28,750 - 01:16:30,530] It's not even a partial differential equation.
+- [01:16:30,890 - 01:16:33,070] You only have derivatives with respect to r.
+- [01:16:35,410 - 01:16:38,150] So at worst,
+- [01:16:38,150 - 01:16:39,610] it's a numerical problem.
+- [01:16:42,250 - 01:16:43,090] Good question.
+- [01:16:43,870 - 01:16:50,370] First is the difference between the idealized Coulomb law
+- [01:16:50,370 - 01:16:51,210] and what you measure.
+- [01:16:51,410 - 01:16:53,570] Could that be a way of
+- [01:16:53,570 - 01:16:55,730] determining the size of the nucleus?
+- [01:16:56,010 - 01:16:56,250] No,
+- [01:16:56,250 - 01:16:56,750] no.
+- [01:16:56,790 - 01:16:59,970] There are too many corrections which are much bigger.
+- [01:17:01,030 - 01:17:01,590] No.
+- [01:17:01,930 - 01:17:04,450] I just point out the nuclear size
+- [01:17:04,450 - 01:17:06,130] because it's an easy one to think about.
+- [01:17:06,910 - 01:17:08,510] But it's minuscule.
+- [01:17:08,990 - 01:17:09,550] No.
+- [01:17:09,730 - 01:17:12,030] And the second question is,
+- [01:17:12,030 - 01:17:13,710] you get back to the very beginning
+- [01:17:13,710 - 01:17:16,810] between classical mechanics and quantum mechanics,
+- [01:17:17,150 - 01:17:19,950] the biggest difference is capital L squared
+- [01:17:19,950 - 01:17:22,510] is equal to little l squared in classical,
+- [01:17:23,230 - 01:17:25,590] and it's equal to L
+- [01:17:25,590 - 01:17:27,950] times L minus 1 in quantum.
+- [01:17:28,470 - 01:17:29,030] What's that?
+- [01:17:29,550 - 01:17:32,250] Capital L squared is equal to little l squared
+- [01:17:32,250 - 01:17:33,810] times little l squared plus 1.
+- [01:17:35,410 - 01:17:35,970] No.
+- [01:17:36,230 - 01:17:38,710] Big L squared is L times L plus 1.
+- [01:17:38,930 - 01:17:39,070] Yeah,
+- [01:17:39,070 - 01:17:39,170] yeah.
+- [01:17:40,210 - 01:17:41,590] I just said it wrong.
+- [01:17:41,590 - 01:17:42,010] Yeah.
+- [01:17:42,330 - 01:17:44,980] And that difference is caused by
+- [01:17:44,980 - 01:17:47,630] the fact that the things don't commute.
+- [01:17:48,030 - 01:17:48,390] Yeah.
+- [01:17:48,690 - 01:17:49,510] Mm-hmm.
+- [01:17:49,890 - 01:17:51,050] In other words,
+- [01:17:51,050 - 01:17:52,290] it's a little quantum correction.
+- [01:17:52,690 - 01:17:53,230] Okay,
+- [01:17:53,230 - 01:17:53,450] right.
+- [01:17:53,610 - 01:17:53,910] That's right.
+- [01:17:54,310 - 01:17:54,950] Right.
+- [01:17:55,090 - 01:17:56,270] It's a little quantum correction.
+- [01:17:57,530 - 01:17:57,850] Yeah.
+- [01:17:58,270 - 01:17:58,650] Yeah.
+- [01:17:58,890 - 01:18:01,330] Do wave functions have compact support?
+- [01:18:02,330 - 01:18:02,970] No.
+- [01:18:03,550 - 01:18:04,190] No.
+- [01:18:04,290 - 01:18:04,790] They're spread,
+- [01:18:04,790 - 01:18:06,570] but they fall off very
+- [01:18:06,570 - 01:18:08,350] rapidly as you move away from...
+- [01:18:09,310 - 01:18:11,470] Compact support would literally mean
+- [01:18:11,590 - 01:18:13,690] they go to zero outside a certain distance.
+- [01:18:15,370 - 01:18:17,650] It's a statement that the wave function
+- [01:18:17,650 - 01:18:19,930] has compact support would mean that it's zero
+- [01:18:19,930 - 01:18:21,310] out past a certain point,
+- [01:18:21,310 - 01:18:23,470] but it's exponentially small.
+- [01:18:23,670 - 01:18:25,750] They decrease exponentially.
+- [01:18:26,090 - 01:18:29,570] For practical purposes,
+- [01:18:29,570 - 01:18:32,810] if you go out past a certain distance,
+- [01:18:32,810 - 01:18:34,150] each wave function becomes
+- [01:18:34,150 - 01:18:35,270] negligibly small.
+- [01:18:36,030 - 01:18:37,330] Does that answer your question?
+- [01:18:37,690 - 01:18:38,010] Yeah,
+- [01:18:38,010 - 01:18:39,650] but there is some non-zero
+- [01:18:39,650 - 01:18:41,290] probability you could find something.
+- [01:18:41,330 - 01:18:41,570] Yeah.
+- [01:18:41,570 - 01:18:43,250] It's arbitrarily far away,
+- [01:18:43,250 - 01:18:45,770] but it goes to zero exponentially with distance.
+- [01:18:46,350 - 01:18:46,910] Right.
+- [01:18:47,530 - 01:18:48,090] Question?
+- [01:18:48,390 - 01:18:48,590] Yeah.
+- [01:18:48,910 - 01:18:50,270] When L is zero,
+- [01:18:50,270 - 01:18:50,850] little l,
+- [01:18:50,850 - 01:18:53,930] the shape is not like this.
+- [01:18:54,050 - 01:18:55,190] It's just the Coulomb potential,
+- [01:18:55,190 - 01:18:55,550] right?
+- [01:18:55,750 - 01:18:55,890] Oh,
+- [01:18:55,890 - 01:18:56,010] yeah,
+- [01:18:56,010 - 01:18:56,270] yeah,
+- [01:18:56,270 - 01:18:56,430] yeah,
+- [01:18:56,430 - 01:18:56,570] yeah.
+- [01:18:56,570 - 01:18:56,730] Good.
+- [01:18:56,890 - 01:18:57,310] That's right.
+- [01:18:57,370 - 01:18:57,910] For when L...
+- [01:18:57,910 - 01:18:58,430] That's right.
+- [01:18:58,530 - 01:19:00,630] When L is zero,
+- [01:19:00,630 - 01:19:02,850] then there's no centrifugal barrier.
+- [01:19:04,570 - 01:19:05,130] Right.
+- [01:19:05,350 - 01:19:07,480] So what is the meaning of
+- [01:19:07,480 - 01:19:09,610] the stable point in this case?
+- [01:19:09,970 - 01:19:11,550] You mean the point that's going to be a point?
+- [01:19:11,550 - 01:19:11,970] The point at the origin?
+- [01:19:12,310 - 01:19:12,710] No.
+- [01:19:13,170 - 01:19:15,130] Before it was in this well.
+- [01:19:15,290 - 01:19:15,630] Okay.
+- [01:19:15,710 - 01:19:16,650] Now the well is gone.
+- [01:19:16,830 - 01:19:16,870] Yeah.
+- [01:19:16,990 - 01:19:17,490] That's right.
+- [01:19:17,870 - 01:19:18,390] That's right.
+- [01:19:18,450 - 01:19:19,070] So classically,
+- [01:19:19,070 - 01:19:20,530] it would just go to the center.
+- [01:19:21,570 - 01:19:22,860] It would just go to the
+- [01:19:22,860 - 01:19:24,150] center and sit at the center.
+- [01:19:25,450 - 01:19:26,250] Quantum mechanically,
+- [01:19:26,250 - 01:19:28,790] it can't both sit at the center and...
+- [01:19:28,790 - 01:19:29,810] It would go to the center,
+- [01:19:29,810 - 01:19:31,230] not only go to the center,
+- [01:19:31,230 - 01:19:32,870] but it would be at rest at the
+- [01:19:32,870 - 01:19:33,210] center.
+- [01:19:35,029 - 01:19:37,930] The state of lowest energy would be at the center,
+- [01:19:37,930 - 01:19:39,550] where it would have negative infinite
+- [01:19:40,110 - 01:19:40,350] energy.
+- [01:19:41,550 - 01:19:42,630] You would lower the potential
+- [01:19:42,630 - 01:19:43,710] energy by getting to the center,
+- [01:19:43,710 - 01:19:44,770] and you would lower the potential
+- [01:19:44,770 - 01:19:46,450] energy by making the momentum zero.
+- [01:19:47,030 - 01:19:48,230] You can't have both.
+- [01:19:48,410 - 01:19:52,070] You can't have the momentum and the position definite.
+- [01:19:53,170 - 01:19:54,210] There's a compromise,
+- [01:19:54,210 - 01:19:56,020] and the compromise is for the
+- [01:19:56,020 - 01:19:57,830] wave function to have a little bit
+- [01:19:57,830 - 01:19:59,990] of spread away from the origin here.
+- [01:20:03,130 - 01:20:05,530] The Schrodinger equation has a solution,
+- [01:20:05,530 - 01:20:09,270] and the solution has some sort of exponential
+- [01:20:09,270 - 01:20:09,910] function.
+- [01:20:10,550 - 01:20:11,110] Okay.
+- [01:20:16,830 - 01:20:18,000] So now we might have our internal
+- [01:20:18,000 - 01:20:19,170] ray of rise coincidentally being Indonesians and
+- [01:20:19,170 - 01:20:19,750] no longer reach at all.
+- [01:20:21,970 - 01:20:23,550] So we could go to the center,
+- [01:20:23,550 - 01:20:23,830] so here you could have a more geographical
+- [01:20:23,830 - 01:20:24,250] We're in southern Saudi Arabia,
+- [01:20:24,250 - 01:20:25,310] something like that.
+- [01:20:25,330 - 01:20:26,310] Yeah well,
+- [01:20:26,310 - 01:20:26,610] that..
+- [01:20:26,610 - 01:20:33,150] And this is the root of what?
+- [01:20:34,550 - 01:20:35,510] This path here.
+- [01:20:37,430 - 01:20:38,030] Okay,
+- [01:20:38,030 - 01:20:41,110] this is motivated by classical mechanics up to here.
+- [01:20:42,030 - 01:20:42,630] Okay?
+- [01:20:45,430 - 01:20:47,470] Classical mechanics motivated p squared over
+- [01:20:47,470 - 01:20:49,510] 2m where p was a vector
+- [01:20:49,510 - 01:20:53,650] and allowed us to write this down.
+- [01:20:53,930 - 01:20:55,450] Once we write this down,
+- [01:20:55,450 - 01:20:56,770] we have a very,
+- [01:20:56,770 - 01:20:58,830] very precise quantum mechanical problem.
+- [01:20:59,649 - 01:21:01,230] An exact Schrodinger equation.
+- [01:21:04,370 - 01:21:07,110] I did a little bit of
+- [01:21:07,110 - 01:21:09,850] guesswork in going from here to here.
+- [01:21:10,910 - 01:21:11,510] Classically,
+- [01:21:11,510 - 01:21:13,900] it's completely rigorous to go from px
+- [01:21:13,900 - 01:21:16,290] squared plus py squared plus pz squared
+- [01:21:16,290 - 01:21:18,270] to go to pr squared plus p theta squared.
+- [01:21:18,830 - 01:21:22,590] You have to justify the step quantum mechanically.
+- [01:21:23,850 - 01:21:26,290] But that's something that would
+- [01:21:26,290 - 01:21:28,730] take an hour at the blackboard
+- [01:21:28,730 - 01:21:30,130] and you wouldn't learn very much from it.
+- [01:21:30,250 - 01:21:30,930] Another question.
+- [01:21:30,930 - 01:21:31,390] If I may,
+- [01:21:31,390 - 01:21:31,710] please.
+- [01:21:32,390 - 01:21:33,830] You have z there,
+- [01:21:33,830 - 01:21:36,190] which implies 3 dimensions,
+- [01:21:36,370 - 01:21:38,870] but you said you reduced it to
+- [01:21:38,870 - 01:21:41,370] 2 dimensions by going only r and theta.
+- [01:21:43,770 - 01:21:44,230] Classically.
+- [01:21:44,330 - 01:21:44,770] Classically.
+- [01:21:46,810 - 01:21:47,270] Classically.
+- [01:21:50,270 - 01:21:51,190] Quantum mechanically,
+- [01:21:51,190 - 01:21:52,970] the wave function fills up 3 dimensions.
+- [01:21:53,450 - 01:21:55,430] Every wave function fills up 3 dimensions.
+- [01:21:58,670 - 01:21:59,130] Classically,
+- [01:21:59,130 - 01:22:00,430] and the trick is to say,
+- [01:22:00,430 - 01:22:02,050] angular momentum is conserved.
+- [01:22:03,950 - 01:22:06,690] That means the plane of the orbit is conserved.
+- [01:22:07,170 - 01:22:09,860] Just change coordinates so your xy plane
+- [01:22:09,860 - 01:22:12,550] is in the plane of the orbit.
+- [01:22:13,050 - 01:22:14,590] Can't do that quantum mechanically.
+- [01:22:18,450 - 01:22:19,590] But you did it.
+- [01:22:19,790 - 01:22:20,270] No,
+- [01:22:20,270 - 01:22:20,530] I didn't.
+- [01:22:22,930 - 01:22:23,410] No.
+- [01:22:23,410 - 01:22:24,170] I didn't.
+- [01:22:24,610 - 01:22:26,370] But the fact that you can't do it,
+- [01:22:26,370 - 01:22:27,350] believe it or not,
+- [01:22:27,410 - 01:22:28,910] is just a statement that L squared
+- [01:22:28,910 - 01:22:30,410] is replaced by L times L plus 1.
+- [01:22:30,410 - 01:22:30,890] Yeah.
+- [01:22:33,410 - 01:22:37,190] It's these other Lx's and Ly's creeping into...
+- [01:22:38,550 - 01:22:39,030] Yeah.
+- [01:22:39,790 - 01:22:42,950] If you could just put in for L squared,
+- [01:22:42,950 - 01:22:43,890] Lz squared,
+- [01:22:45,450 - 01:22:47,330] then it would just be little L squared.
+- [01:22:47,930 - 01:22:50,180] The fact that it's 3 dimensional comes back at
+- [01:22:50,180 - 01:22:52,430] you just from the L times L plus 1.
+- [01:22:52,630 - 01:22:52,870] Yeah.
+- [01:22:54,750 - 01:22:55,710] It's more,
+- [01:22:55,710 - 01:22:56,090] I think,
+- [01:22:56,090 - 01:22:57,470] what you did with the harmonic oscillator.
+- [01:22:57,690 - 01:22:59,040] Is there always a raising
+- [01:22:59,040 - 01:23:00,390] and lowering after any of these?
+- [01:23:00,390 - 01:23:01,390] No.
+- [01:23:01,390 - 01:23:02,570] Only when you're very lucky.
+- [01:23:04,970 - 01:23:07,390] And I would say basically physics
+- [01:23:07,390 - 01:23:09,810] has been lucky this way twice.
+- [01:23:10,490 - 01:23:11,110] But,
+- [01:23:11,110 - 01:23:11,750] however,
+- [01:23:11,750 - 01:23:15,790] the harmonic oscillator piece of luck is very pervasive.
+- [01:23:16,350 - 01:23:19,750] Almost everything in nature can be well approximated,
+- [01:23:19,750 - 01:23:21,660] or many things in nature
+- [01:23:21,660 - 01:23:23,570] can be approximated by harmonic oscillators.
+- [01:23:23,930 - 01:23:25,050] For example,
+- [01:23:25,050 - 01:23:27,130] even the...
+- [01:23:30,630 - 01:23:32,170] Not L equals 0,
+- [01:23:32,170 - 01:23:34,910] but go to the higher angular momentum states.
+- [01:23:35,410 - 01:23:37,310] In the higher angular momentum states,
+- [01:23:37,310 - 01:23:38,610] the potential looks like this.
+- [01:23:39,830 - 01:23:41,680] And there are orbits which oscillate
+- [01:23:41,680 - 01:23:43,530] back and forth at the bottom here.
+- [01:23:44,690 - 01:23:46,760] And the simplest approximation to those orbits
+- [01:23:46,760 - 01:23:48,830] is to treat them as a harmonic oscillator.
+- [01:23:49,550 - 01:23:51,060] So there's all kinds of
+- [01:23:51,060 - 01:23:52,570] places where there are harmonic oscillators,
+- [01:23:52,590 - 01:23:53,410] and because of that,
+- [01:23:53,410 - 01:23:54,910] the trick of...
+- [01:23:54,910 - 01:23:56,890] whatever trickery goes into the
+- [01:23:56,890 - 01:23:58,870] harmonic oscillator is very pervasive.
+- [01:23:58,870 - 01:24:02,020] But there are not many mathematical
+- [01:24:02,020 - 01:24:05,170] cases where raising and lowering operators are...
+- [01:24:05,870 - 01:24:07,470] Sometimes they're called ladder operators.
+- [01:24:08,550 - 01:24:09,890] Only when you're very lucky.
+- [01:24:11,630 - 01:24:12,150] Okay.
+- [01:24:12,150 - 01:24:20,010] That does it for atoms for the moment.
+- [01:24:20,130 - 01:24:21,250] We're going to come back to atoms.
+- [01:24:21,570 - 01:24:22,850] We're going to talk about spin.
+- [01:24:23,010 - 01:24:24,770] We're going to talk about the fact that
+- [01:24:24,770 - 01:24:26,530] the electron is a fermion instead of a boson,
+- [01:24:26,530 - 01:24:29,970] and how that determines atomic structure a little bit,
+- [01:24:32,890 - 01:24:37,090] and how atoms radiate and give off photons.
+- [01:24:37,510 - 01:24:39,170] All that stuff we'll come back to.
+- [01:24:41,530 - 01:24:43,730] But let's forget atoms for the time being,
+- [01:24:45,990 - 01:24:48,030] and come to the harmonic oscillator.
+- [01:24:53,750 - 01:24:54,610] As I said,
+- [01:24:54,610 - 01:24:56,510] everything in physics which has an equal length,
+- [01:24:56,530 - 01:24:59,410] if you disturb the equilibrium a little bit,
+- [01:24:59,550 - 01:25:02,290] chances are it's going to behave like a harmonic oscillator.
+- [01:25:02,610 - 01:25:04,050] So it's a very pervasive thing.
+- [01:25:05,090 - 01:25:06,530] And the model for it...
+- [01:25:08,009 - 01:25:09,479] There's just a particle or a
+- [01:25:09,479 - 01:25:10,950] weight on the end of a spring.
+- [01:25:16,810 - 01:25:18,550] We're going to simplify it a little bit.
+- [01:25:19,570 - 01:25:21,810] Some of the parameters aren't terribly important.
+- [01:25:22,730 - 01:25:23,210] Well,
+- [01:25:23,210 - 01:25:24,690] imagine a weight...
+- [01:25:25,770 - 01:25:27,110] hanging by a spring.
+- [01:25:28,710 - 01:25:30,550] It has an equilibrium position,
+- [01:25:31,310 - 01:25:34,550] and the deviation from the equilibrium position...
+- [01:25:34,550 - 01:25:38,170] Not the deviation from where it's hanging,
+- [01:25:38,490 - 01:25:41,010] but the deviation from the equilibrium position.
+- [01:25:41,410 - 01:25:42,770] We'll call that x.
+- [01:25:46,050 - 01:25:47,880] I'm going to take the mass
+- [01:25:47,880 - 01:25:49,710] of the weight to be one.
+- [01:25:54,690 - 01:25:57,170] Now we can redo it for other masses.
+- [01:25:57,750 - 01:26:00,590] It's a little exercise to do it.
+- [01:26:01,130 - 01:26:03,650] But there's nothing new.
+- [01:26:03,890 - 01:26:05,070] Nothing new happens.
+- [01:26:05,610 - 01:26:06,990] So the mass is one.
+- [01:26:07,830 - 01:26:10,330] And the spring constant...
+- [01:26:10,330 - 01:26:14,070] The spring constant k...
+- [01:26:14,070 - 01:26:17,510] k is the standard terminology for a spring constant...
+- [01:26:17,510 - 01:26:19,450] we'll call omega squared.
+- [01:26:22,110 - 01:26:24,010] We're going to find out in a moment...
+- [01:26:24,010 - 01:26:26,590] that omega is the frequency of oscillation.
+- [01:26:28,730 - 01:26:31,550] But the spring constant is omega squared.
+- [01:26:31,890 - 01:26:34,950] What is the energy of a classical oscillator?
+- [01:26:35,570 - 01:26:36,550] The energy...
+- [01:26:36,550 - 01:26:37,250] Let's call it...
+- [01:26:37,250 - 01:26:38,030] Let's give it its name...
+- [01:26:38,030 - 01:26:39,230] The Hamiltonian.
+- [01:26:39,790 - 01:26:41,230] The Hamiltonian...
+- [01:26:43,790 - 01:26:45,730] is the usual p squared...
+- [01:26:45,730 - 01:26:47,010] Now p is one-dimensional.
+- [01:26:47,970 - 01:26:49,570] It's just the momentum...
+- [01:26:49,570 - 01:26:50,930] The x momentum...
+- [01:26:50,930 - 01:26:52,930] p squared over 2m...
+- [01:26:54,010 - 01:26:55,150] is p squared over 2...
+- [01:26:56,110 - 01:26:57,810] m has been set equal to one...
+- [01:26:57,810 - 01:26:59,130] plus k...
+- [01:27:02,170 - 01:27:03,210] omega squared...
+- [01:27:03,930 - 01:27:05,110] x squared over 2.
+- [01:27:12,730 - 01:27:13,730] Let's work out...
+- [01:27:13,730 - 01:27:15,150] Let's just check that this is right.
+- [01:27:15,410 - 01:27:17,030] What we're going to do is work out...
+- [01:27:17,030 - 01:27:18,670] the Hamilton equations of motion.
+- [01:27:18,870 - 01:27:20,950] If you don't remember Hamilton's equations of motion...
+- [01:27:20,950 - 01:27:21,350] it's okay,
+- [01:27:21,350 - 01:27:21,950] I'll tell you.
+- [01:27:23,630 - 01:27:24,310] Hamilton's...
+- [01:27:25,210 - 01:27:26,950] Hamilton's equations of motion...
+- [01:27:26,950 - 01:27:31,270] are dh by dp...
+- [01:27:31,270 - 01:27:33,430] equals x dot...
+- [01:27:33,430 - 01:27:35,390] and dh...
+- [01:27:35,390 - 01:27:37,370] by dx...
+- [01:27:37,370 - 01:27:39,170] equals minus p dot.
+- [01:27:39,290 - 01:27:40,330] How many people remember...
+- [01:27:40,730 - 01:27:41,450] Minus p dot.
+- [01:27:41,450 - 01:27:42,170] Thank you.
+- [01:27:44,730 - 01:27:46,150] Everybody remember that?
+- [01:27:48,350 - 01:27:49,450] Of course you do.
+- [01:27:50,910 - 01:27:51,310] Okay,
+- [01:27:51,310 - 01:27:51,870] let's check.
+- [01:27:51,970 - 01:27:52,610] Let's see what we get.
+- [01:27:53,370 - 01:27:55,410] dh by dp is equal to x dot.
+- [01:27:55,790 - 01:27:57,870] dh by dp is...
+- [01:27:57,870 - 01:27:58,070] p.
+- [01:27:58,070 - 01:27:59,990] So this says that...
+- [01:27:59,990 - 01:28:00,810] p equals x dot,
+- [01:28:00,810 - 01:28:01,130] right?
+- [01:28:04,710 - 01:28:05,670] That's not too bad.
+- [01:28:06,190 - 01:28:07,370] Momentum is equal to velocity.
+- [01:28:08,090 - 01:28:09,130] What happened to the mass?
+- [01:28:09,390 - 01:28:09,590] Oh,
+- [01:28:09,590 - 01:28:10,710] I set the mass equal to one.
+- [01:28:11,090 - 01:28:11,890] So that's okay.
+- [01:28:11,890 - 01:28:12,970] It's alright.
+- [01:28:12,970 - 01:28:13,510] I'm a physicist.
+- [01:28:13,670 - 01:28:14,430] I'm allowed to do that.
+- [01:28:17,690 - 01:28:19,070] p is equal to x dot.
+- [01:28:19,070 - 01:28:19,510] That's good.
+- [01:28:19,810 - 01:28:21,690] Now what about the h by the x?
+- [01:28:22,150 - 01:28:24,070] The h by the x is...
+- [01:28:24,070 - 01:28:25,330] omega squared...
+- [01:28:28,630 - 01:28:29,150] x.
+- [01:28:34,070 - 01:28:35,030] Plus or minus?
+- [01:28:36,770 - 01:28:37,290] Minus.
+- [01:28:41,070 - 01:28:41,590] Okay,
+- [01:28:41,590 - 01:28:42,130] let's check...
+- [01:28:42,130 - 01:28:42,770] Newton's equations.
+- [01:28:42,770 - 01:28:44,270] Let's calculate the acceleration.
+- [01:28:44,850 - 01:28:45,890] The acceleration...
+- [01:28:46,150 - 01:28:46,950] is x double dot.
+- [01:28:48,110 - 01:28:49,090] That's p dot.
+- [01:28:50,030 - 01:28:52,230] But p dot...
+- [01:28:52,230 - 01:28:52,790] is equal to...
+- [01:28:52,790 - 01:28:54,290] p dot...
+- [01:28:54,970 - 01:28:56,470] Do I have the sign wrong here?
+- [01:28:56,650 - 01:29:00,550] The h by the x equals minus p dot...
+- [01:29:00,550 - 01:29:02,910] equals plus omega x squared.
+- [01:29:03,090 - 01:29:05,250] The h by the x is plus omega x squared.
+- [01:29:06,610 - 01:29:07,170] So...
+- [01:29:07,170 - 01:29:08,630] x double dot...
+- [01:29:08,630 - 01:29:10,930] is equal to minus omega squared x.
+- [01:29:15,230 - 01:29:16,130] x double dot...
+- [01:29:16,150 - 01:29:18,110] is minus omega squared x.
+- [01:29:18,710 - 01:29:21,690] That's the equation of an oscillator with frequency omega.
+- [01:29:23,190 - 01:29:23,770] That's the equation of an oscillator with frequency omega.
+- [01:29:23,910 - 01:29:24,990] Everybody recognize it?
+- [01:29:26,270 - 01:29:28,750] x double dot is minus omega squared x.
+- [01:29:31,130 - 01:29:31,710] Acceleration...
+- [01:29:32,930 - 01:29:34,510] m was set equal to one.
+- [01:29:35,110 - 01:29:37,750] Acceleration is equal to restoring force...
+- [01:29:37,750 - 01:29:38,090] Acceleration is equal to restoring force...
+- [01:29:38,090 - 01:29:38,750] with,
+- [01:29:38,750 - 01:29:39,610] as I said,
+- [01:29:39,730 - 01:29:41,250] k is equal to omega squared.
+- [01:29:41,570 - 01:29:42,110] Okay,
+- [01:29:42,110 - 01:29:43,730] so this is the right Hamiltonian
+- [01:29:43,730 - 01:29:45,230] for the harmonic oscillator.
+- [01:29:50,790 - 01:29:52,310] And now what we want to
+- [01:29:52,310 - 01:29:53,830] do is find all its energy levels...
+- [01:29:54,470 - 01:29:54,790] And now what we want to
+- [01:29:54,790 - 01:29:55,110] do is find all its energy levels...
+- [01:29:55,110 - 01:29:55,790] Eigenvectors...
+- [01:29:55,790 - 01:29:57,330] and find out what it does...
+- [01:29:57,330 - 01:29:58,530] quantum mechanically.
+- [01:29:58,630 - 01:29:58,910] Quantum mechanically.
+- [01:29:59,050 - 01:30:00,170] Classically we know what it does.
+- [01:30:00,250 - 01:30:02,110] It swings back and forth with frequency omega.
+- [01:30:04,130 - 01:30:04,530] Okay,
+- [01:30:04,530 - 01:30:05,930] let's see what we can do with it.
+- [01:30:06,210 - 01:30:06,330] Okay,
+- [01:30:06,330 - 01:30:06,330] let's see what we can do with it.
+- [01:30:08,310 - 01:30:09,450] It's the sum of squares.
+- [01:30:09,910 - 01:30:09,930] It's the sum of squares.
+- [01:30:11,230 - 01:30:12,850] What do you do with the sum of squares?
+- [01:30:13,130 - 01:30:14,010] You factor it.
+- [01:30:15,170 - 01:30:15,570] And you get...
+- [01:30:16,150 - 01:30:18,350] Everybody knows that you factor the sum of squares.
+- [01:30:18,730 - 01:30:18,910] Well,
+- [01:30:18,910 - 01:30:20,090] not everybody knows that.
+- [01:30:20,190 - 01:30:20,970] Dirac knew it.
+- [01:30:24,030 - 01:30:24,590] Alright,
+- [01:30:24,590 - 01:30:25,530] so let's write,
+- [01:30:25,530 - 01:30:26,170] first of all,
+- [01:30:26,190 - 01:30:27,250] a one-half downstairs.
+- [01:30:27,950 - 01:30:31,170] And let's write p plus i omega x
+- [01:30:31,170 - 01:30:32,870] And let's write p plus i omega x
+- [01:30:32,870 - 01:30:35,310] times p minus i omega x.
+- [01:30:35,690 - 01:30:36,990] Is this looking familiar?
+- [01:30:37,430 - 01:30:38,970] Not from the harmonic oscillator,
+- [01:30:38,970 - 01:30:40,430] but from about an hour ago?
+- [01:30:40,790 - 01:30:41,450] Not from the harmonic oscillator,
+- [01:30:41,450 - 01:30:41,450] but from about an hour ago?
+- [01:30:43,230 - 01:30:44,670] Lx plus i Ly
+- [01:30:44,670 - 01:30:46,130] and Lx minus i Ly.
+- [01:30:46,150 - 01:30:46,570] and Lx minus i Ly.
+- [01:30:48,109 - 01:30:48,529] Yeah,
+- [01:30:48,529 - 01:30:48,950] okay.
+- [01:30:50,129 - 01:30:50,549] So,
+- [01:30:50,549 - 01:30:51,390] let's do this.
+- [01:30:51,770 - 01:30:52,510] Is this right?
+- [01:30:54,170 - 01:30:54,590] Yeah,
+- [01:30:54,590 - 01:30:54,890] that's right.
+- [01:30:55,310 - 01:30:56,510] I'm also going to put...
+- [01:30:57,130 - 01:30:57,550] Yeah,
+- [01:30:57,550 - 01:30:59,130] I'm going to put an omega downstairs
+- [01:30:59,130 - 01:31:00,370] and an omega upstairs.
+- [01:31:01,810 - 01:31:03,390] Only because it's convention.
+- [01:31:05,750 - 01:31:06,170] Okay.
+- [01:31:06,190 - 01:31:06,490] Okay.
+- [01:31:08,070 - 01:31:08,490] Now...
+- [01:31:10,290 - 01:31:11,790] Let me not put those omegas.
+- [01:31:11,810 - 01:31:12,510] I'll do that later.
+- [01:31:14,030 - 01:31:15,110] Is this right,
+- [01:31:15,110 - 01:31:15,970] quantum mechanically?
+- [01:31:16,530 - 01:31:18,330] Is this right,
+- [01:31:18,330 - 01:31:18,330] quantum mechanically?
+- [01:31:18,330 - 01:31:18,390] Correct.
+- [01:31:21,630 - 01:31:22,230] No.
+- [01:31:22,390 - 01:31:23,490] Because there's a term
+- [01:31:23,490 - 01:31:25,690] P times x
+- [01:31:25,690 - 01:31:27,090] and x times p
+- [01:31:27,090 - 01:31:28,190] but they don't cancel
+- [01:31:28,190 - 01:31:30,050] because x and p don't commute.
+- [01:31:30,610 - 01:31:31,570] So let's see.
+- [01:31:31,650 - 01:31:33,070] So what do I have to subtract here?
+- [01:31:33,110 - 01:31:35,150] I have to subtract minus one-half
+- [01:31:35,850 - 01:31:36,730] from here
+- [01:31:36,730 - 01:31:39,670] and then I will have
+- [01:31:40,870 - 01:31:41,470] i
+- [01:31:43,770 - 01:31:44,990] Now we have
+- [01:31:44,990 - 01:31:46,410] omega
+- [01:31:46,410 - 01:31:49,870] We have x times p
+- [01:31:49,870 - 01:31:51,770] minus p times x
+- [01:31:54,870 - 01:31:56,310] minus p times x
+- [01:31:56,310 - 01:31:59,350] x times p minus p times x
+- [01:31:59,350 - 01:31:59,750] x times p minus p times x
+- [01:31:59,750 - 01:32:00,650] and I think
+- [01:32:00,650 - 01:32:02,790] I think I have it right.
+- [01:32:04,230 - 01:32:05,830] I've subtracted it
+- [01:32:05,830 - 01:32:07,730] because it was appearing in here
+- [01:32:07,730 - 01:32:09,270] in an unwanted way.
+- [01:32:10,370 - 01:32:12,110] So I've subtracted it
+- [01:32:12,710 - 01:32:14,610] and now I use one more thing.
+- [01:32:14,830 - 01:32:16,470] This is the commutator
+- [01:32:16,470 - 01:32:17,470] of x and p.
+- [01:32:18,570 - 01:32:20,210] What's the commutator of x and p?
+- [01:32:23,730 - 01:32:24,250] i.
+- [01:32:25,230 - 01:32:26,490] I've dropped h bars
+- [01:32:26,490 - 01:32:27,410] all over the place.
+- [01:32:27,590 - 01:32:29,050] We'll put back the h bars
+- [01:32:29,830 - 01:32:30,350] later.
+- [01:32:31,730 - 01:32:32,250] Okay.
+- [01:32:32,510 - 01:32:34,030] x p minus p x
+- [01:32:34,930 - 01:32:35,670] that's i.
+- [01:32:36,690 - 01:32:38,490] Commutator of x with p
+- [01:32:40,970 - 01:32:41,810] equals i.
+- [01:32:42,010 - 01:32:42,490] Okay.
+- [01:32:42,510 - 01:32:44,430] Strictly i h bar
+- [01:32:44,430 - 01:32:45,830] if I wanted to keep the
+- [01:32:45,830 - 01:32:46,050] uh
+- [01:32:48,730 - 01:32:50,370] Why is that true?
+- [01:32:50,550 - 01:32:51,030] Hmm?
+- [01:32:51,590 - 01:32:54,210] You don't remember that?
+- [01:32:54,330 - 01:32:55,750] From two years ago?
+- [01:32:56,330 - 01:32:56,890] Okay.
+- [01:33:03,650 - 01:33:04,750] That's the basic
+- [01:33:04,750 - 01:33:06,470] canonical commutation relations
+- [01:33:06,470 - 01:33:08,690] of a coordinate and its corresponding
+- [01:33:08,690 - 01:33:09,190] momentum.
+- [01:33:10,270 - 01:33:11,590] We use the
+- [01:33:13,009 - 01:33:14,310] one dimensional case.
+- [01:33:14,570 - 01:33:14,990] Yeah,
+- [01:33:14,990 - 01:33:15,930] one dimensional case.
+- [01:33:16,190 - 01:33:16,950] It's not p x.
+- [01:33:17,850 - 01:33:18,330] No.
+- [01:33:18,470 - 01:33:19,770] Then you have a problem.
+- [01:33:21,509 - 01:33:22,770] Then it'll be zero.
+- [01:33:24,430 - 01:33:26,570] x commutes with p y p z.
+- [01:33:27,770 - 01:33:28,250] Yeah.
+- [01:33:28,970 - 01:33:29,650] This is
+- [01:33:29,650 - 01:33:31,310] x and p x.
+- [01:33:31,990 - 01:33:33,850] There's only one coordinate in this problem.
+- [01:33:34,010 - 01:33:34,370] That's what I'm saying.
+- [01:33:34,490 - 01:33:36,670] If you had the other dimensions
+- [01:33:36,670 - 01:33:37,670] you would have to clarify.
+- [01:33:38,750 - 01:33:39,830] If you had other dimensions
+- [01:33:39,830 - 01:33:40,910] you'd have to worry about them.
+- [01:33:42,930 - 01:33:43,450] Okay.
+- [01:33:43,450 - 01:33:44,410] This is the one dimensional
+- [01:33:44,410 - 01:33:45,190] harmonic oscillator.
+- [01:33:45,730 - 01:33:47,810] So what is x p minus p x?
+- [01:33:48,190 - 01:33:48,690] Alright,
+- [01:33:48,690 - 01:33:50,630] let's keep the h bar around for a second.
+- [01:33:50,890 - 01:33:51,410] Uh,
+- [01:33:51,410 - 01:33:52,450] we'll keep
+- [01:33:52,450 - 01:33:53,650] the h bar around for a second.
+- [01:33:53,750 - 01:33:54,830] Later on we'll drop it.
+- [01:33:56,650 - 01:33:58,130] It's i h bar
+- [01:33:58,130 - 01:34:00,570] minus i times i is plus i
+- [01:34:01,490 - 01:34:02,290] so this
+- [01:34:02,290 - 01:34:03,210] becomes plus
+- [01:34:04,390 - 01:34:06,130] h bar omega over 2.
+- [01:34:21,790 - 01:34:22,230] Okay.
+- [01:34:22,330 - 01:34:23,170] This is a constant.
+- [01:34:23,950 - 01:34:25,030] This is a constant.
+- [01:34:26,550 - 01:34:27,290] What's it called?
+- [01:34:27,290 - 01:34:27,910] It's got a name.
+- [01:34:28,930 - 01:34:30,470] It's called the zero point energy.
+- [01:34:32,770 - 01:34:34,130] It's there even
+- [01:34:34,130 - 01:34:36,370] when the harmonic oscillator is in
+- [01:34:36,370 - 01:34:37,030] its ground state.
+- [01:34:37,030 - 01:34:37,750] We're going to see that.
+- [01:34:38,470 - 01:34:39,910] Even in its ground state
+- [01:34:39,910 - 01:34:41,030] where this is zero,
+- [01:34:41,030 - 01:34:42,130] everything else is zero,
+- [01:34:42,510 - 01:34:43,190] this still remains.
+- [01:34:44,150 - 01:34:46,070] Why is there a ground state energy?
+- [01:34:46,450 - 01:34:46,710] Uh,
+- [01:34:46,710 - 01:34:47,430] let's um,
+- [01:34:48,570 - 01:34:49,210] let's ask,
+- [01:34:49,210 - 01:34:50,670] why does a harmonic oscillator
+- [01:34:50,670 - 01:34:51,830] have a ground state energy?
+- [01:34:52,170 - 01:34:53,370] Why isn't the energy zero?
+- [01:34:54,090 - 01:34:56,210] What's the energy of the ground state classically?
+- [01:34:57,110 - 01:34:57,630] Zero.
+- [01:34:58,870 - 01:35:00,170] How does it get to be zero?
+- [01:35:01,110 - 01:35:01,630] Well,
+- [01:35:01,630 - 01:35:02,450] the ground
+- [01:35:02,450 - 01:35:03,970] state is
+- [01:35:04,510 - 01:35:06,050] just the oscillator
+- [01:35:06,050 - 01:35:07,010] at rest,
+- [01:35:07,010 - 01:35:08,010] p equals zero,
+- [01:35:08,170 - 01:35:09,690] at position zero.
+- [01:35:10,590 - 01:35:11,770] Both of these are zero.
+- [01:35:12,770 - 01:35:13,770] Quantum mechanically,
+- [01:35:13,910 - 01:35:16,150] you can't have both x and p
+- [01:35:16,150 - 01:35:17,310] be zero simultaneously.
+- [01:35:18,770 - 01:35:19,270] Furthermore,
+- [01:35:19,270 - 01:35:20,250] both of these are
+- [01:35:20,250 - 01:35:20,790] positive,
+- [01:35:21,990 - 01:35:24,230] and therefore they can't cancel each other,
+- [01:35:24,370 - 01:35:26,370] so there's got to be a little bit of energy
+- [01:35:27,110 - 01:35:28,210] in the ground state.
+- [01:35:28,930 - 01:35:29,990] It's the Heisenberg
+- [01:35:29,990 - 01:35:32,410] uncertainty principle which tells you that you couldn't
+- [01:35:32,410 - 01:35:34,250] have had zero energy in the ground state.
+- [01:35:35,850 - 01:35:36,350] Okay,
+- [01:35:36,390 - 01:35:37,170] but once you know that,
+- [01:35:37,170 - 01:35:37,510] here,
+- [01:35:37,510 - 01:35:38,170] let's
+- [01:35:38,170 - 01:35:40,290] the Hamiltonian is
+- [01:35:40,290 - 01:35:41,610] this thing over here,
+- [01:35:42,510 - 01:35:43,450] plus a constant.
+- [01:35:45,250 - 01:35:46,090] Let's drop,
+- [01:35:46,210 - 01:35:48,570] the constant may or may not
+- [01:35:48,570 - 01:35:49,130] be important,
+- [01:35:49,130 - 01:35:50,510] but it's just
+- [01:35:50,510 - 01:35:51,570] an additive number.
+- [01:35:52,090 - 01:35:53,950] Every energy level has
+- [01:35:53,950 - 01:35:56,210] an extra h-bar omega
+- [01:35:56,210 - 01:35:56,950] over two.
+- [01:35:57,810 - 01:36:00,290] We're not going to lose anything terribly important
+- [01:36:00,290 - 01:36:01,370] if we drop it.
+- [01:36:02,490 - 01:36:03,090] Um,
+- [01:36:03,090 - 01:36:04,230] I'm going to drop it,
+- [01:36:04,230 - 01:36:04,350] but
+- [01:36:04,350 - 01:36:06,510] later on we can come back and add it
+- [01:36:06,510 - 01:36:07,810] back in as an overall
+- [01:36:07,810 - 01:36:09,810] additive constant in the energy.
+- [01:36:10,070 - 01:36:10,650] Yeah?
+- [01:36:10,650 - 01:36:12,270] Can you say anything further
+- [01:36:12,510 - 01:36:14,250] by the fact that it comes out
+- [01:36:14,250 - 01:36:15,630] as positive instead of negative?
+- [01:36:17,670 - 01:36:18,150] Okay,
+- [01:36:18,150 - 01:36:18,350] it
+- [01:36:18,350 - 01:36:19,790] couldn't have been negative because
+- [01:36:19,790 - 01:36:21,870] x squared plus p squared is positive.
+- [01:36:24,990 - 01:36:26,510] The energy is x squared plus
+- [01:36:26,510 - 01:36:26,850] p squared,
+- [01:36:26,850 - 01:36:28,190] that's a positive definite operator.
+- [01:36:28,750 - 01:36:30,370] It can't come out to be negative.
+- [01:36:31,570 - 01:36:32,050] Alright.
+- [01:36:34,070 - 01:36:34,550] Alright,
+- [01:36:34,550 - 01:36:36,430] so let's concentrate on this thing over
+- [01:36:36,430 - 01:36:36,710] here.
+- [01:36:36,710 - 01:36:38,510] Let's
+- [01:36:38,510 - 01:36:40,050] forget where it came from,
+- [01:36:41,650 - 01:36:42,430] or forget
+- [01:36:42,510 - 01:36:43,450] where it came from,
+- [01:36:45,049 - 01:36:46,370] and we just want to know what's
+- [01:36:46,370 - 01:36:47,830] the properties of this operator.
+- [01:36:47,830 - 01:36:48,350] Here's
+- [01:36:48,350 - 01:36:49,030] a certain operator.
+- [01:36:49,030 - 01:36:50,330] It is the
+- [01:36:50,330 - 01:36:52,430] Hamiltonian apart from this addit- I'm going to
+- [01:36:52,430 - 01:36:53,030] say it once more.
+- [01:36:53,030 - 01:36:54,330] There's an additive constant
+- [01:36:54,330 - 01:36:55,410] and now I'm not going to
+- [01:36:55,410 - 01:36:56,490] say it again until I put
+- [01:36:56,490 - 01:36:57,230] it back eventually.
+- [01:36:57,230 - 01:36:58,390] But
+- [01:36:58,390 - 01:36:59,630] this is the Hamiltonian.
+- [01:37:03,710 - 01:37:04,090] Okay.
+- [01:37:04,310 - 01:37:06,510] And we want to understand what its spectrum is,
+- [01:37:06,550 - 01:37:07,670] what its eigenvectors are,
+- [01:37:07,670 - 01:37:08,590] what is its properties.
+- [01:37:09,750 - 01:37:10,410] We have two
+- [01:37:10,410 - 01:37:10,910] operators.
+- [01:37:10,910 - 01:37:12,270] It factorizes
+- [01:37:12,510 - 01:37:13,050] very nicely.
+- [01:37:13,050 - 01:37:14,230] It makes
+- [01:37:14,230 - 01:37:16,470] sense to give these operators
+- [01:37:16,470 - 01:37:16,990] names.
+- [01:37:16,990 - 01:37:18,350] And I'm going to
+- [01:37:18,350 - 01:37:20,310] do something just for future benefit.
+- [01:37:21,010 - 01:37:22,270] I'm going to put an
+- [01:37:22,270 - 01:37:23,310] omega up here,
+- [01:37:24,330 - 01:37:26,310] and I'm going to put a square root
+- [01:37:27,009 - 01:37:28,310] of omega down-
+- [01:37:28,310 - 01:37:29,310] here's what we're going to do.
+- [01:37:29,310 - 01:37:30,350] We're going to
+- [01:37:30,350 - 01:37:32,530] put a square root of two omega downstairs,
+- [01:37:33,690 - 01:37:34,550] and a square
+- [01:37:34,550 - 01:37:36,370] root of two omega downstairs here.
+- [01:37:38,230 - 01:37:39,230] You see what I did.
+- [01:37:39,230 - 01:37:40,250] I took the two that was
+- [01:37:40,250 - 01:37:42,430] downstairs and I split it between these two.
+- [01:37:42,510 - 01:37:44,250] And I took the omega
+- [01:37:44,250 - 01:37:46,050] which I stuck upstairs and
+- [01:37:46,050 - 01:37:48,250] split it between the two factors
+- [01:37:48,250 - 01:37:48,590] again.
+- [01:37:50,130 - 01:37:52,530] This is the standard way that
+- [01:37:52,530 - 01:37:54,430] even the classical harmonic oscillator
+- [01:37:54,430 - 01:37:56,050] is often written in this way.
+- [01:37:57,570 - 01:37:58,450] We need to
+- [01:37:58,450 - 01:37:59,250] give these guys names.
+- [01:38:01,150 - 01:38:02,610] P minus i omega
+- [01:38:02,610 - 01:38:04,630] x over square root of
+- [01:38:04,630 - 01:38:06,530] two omega and P plus i
+- [01:38:06,530 - 01:38:07,150] omega x.
+- [01:38:08,230 - 01:38:10,110] Their role is going to be
+- [01:38:10,110 - 01:38:12,490] exactly the same as the raising and lowering
+- [01:38:12,510 - 01:38:13,810] operators in the
+- [01:38:14,450 - 01:38:15,930] angular momentum case.
+- [01:38:16,330 - 01:38:18,310] It's going to take us up and down a ladder.
+- [01:38:19,350 - 01:38:20,150] This time
+- [01:38:20,150 - 01:38:21,950] it'll be a ladder of energy levels.
+- [01:38:22,770 - 01:38:24,290] Not a ladder of angular
+- [01:38:24,290 - 01:38:24,690] momentum.
+- [01:38:25,850 - 01:38:26,370] Okay,
+- [01:38:26,370 - 01:38:27,430] so let's give them names.
+- [01:38:27,810 - 01:38:28,830] A plus
+- [01:38:30,510 - 01:38:31,870] is equal to P
+- [01:38:32,490 - 01:38:33,910] plus i omega x
+- [01:38:34,830 - 01:38:36,410] over square root of two
+- [01:38:36,410 - 01:38:38,530] omega and A minus
+- [01:38:38,530 - 01:38:39,790] is the same thing
+- [01:38:40,330 - 01:38:41,730] but with a minus i x.
+- [01:38:42,510 - 01:38:43,490] Over square root of two omega.
+- [01:38:44,490 - 01:38:45,810] They are Hermitian
+- [01:38:46,250 - 01:38:47,110] conjugates of each other.
+- [01:38:48,270 - 01:38:50,010] They're Hermitian conjugates of each other
+- [01:38:51,750 - 01:38:52,350] because
+- [01:38:52,350 - 01:38:54,170] one plus i omega
+- [01:38:54,170 - 01:38:55,930] x minus i omega x.
+- [01:39:00,470 - 01:39:02,130] And we can now write
+- [01:39:02,130 - 01:39:03,250] that the Hamiltonian
+- [01:39:03,250 - 01:39:04,890] is omega
+- [01:39:05,830 - 01:39:07,690] times A plus A minus.
+- [01:39:10,010 - 01:39:11,630] That is really simple
+- [01:39:12,510 - 01:39:14,490] except who knows what's buried in the A plus
+- [01:39:14,490 - 01:39:15,270] and the A minus.
+- [01:39:15,410 - 01:39:18,230] It's a crappy looking thing
+- [01:39:18,230 - 01:39:20,330] for sure to have square roots of omega
+- [01:39:20,330 - 01:39:21,410] and square roots of two
+- [01:39:22,230 - 01:39:24,570] but it turns out not to be so crappy.
+- [01:39:25,490 - 01:39:25,970] Okay.
+- [01:39:26,770 - 01:39:27,250] What
+- [01:39:31,650 - 01:39:33,070] What should we do with
+- [01:39:33,070 - 01:39:34,490] these A pluses and A minuses?
+- [01:39:38,270 - 01:39:38,930] What would
+- [01:39:40,130 - 01:39:40,890] Dirac do?
+- [01:39:44,330 - 01:39:44,730] Yeah,
+- [01:39:44,730 - 01:39:45,270] he'd do that
+- [01:39:45,270 - 01:39:47,390] but he'd probably stare at it for a while
+- [01:39:47,390 - 01:39:48,910] and say I can't figure out the eigenvalues.
+- [01:39:50,770 - 01:39:52,210] He would commute them.
+- [01:39:52,910 - 01:39:54,050] He would commute them.
+- [01:39:54,170 - 01:39:55,510] He would say what's their commutator?
+- [01:39:55,950 - 01:39:56,770] Here I have
+- [01:39:56,770 - 01:39:58,870] a Hamiltonian which is A plus A minus
+- [01:39:58,870 - 01:40:00,730] I don't know much about A plus and A minus
+- [01:40:00,730 - 01:40:02,110] but let's figure out what their
+- [01:40:03,089 - 01:40:03,710] commutator is.
+- [01:40:03,830 - 01:40:03,930] See,
+- [01:40:03,930 - 01:40:04,430] I'm bored.
+- [01:40:04,430 - 01:40:05,610] I've got nothing else to do.
+- [01:40:07,910 - 01:40:09,790] I like to sit around
+- [01:40:09,790 - 01:40:10,690] and commute things.
+- [01:40:11,270 - 01:40:11,670] Okay.
+- [01:40:12,510 - 01:40:14,650] So let's take the commutator
+- [01:40:14,650 - 01:40:16,630] of A minus
+- [01:40:16,630 - 01:40:17,810] with A plus.
+- [01:40:20,970 - 01:40:21,570] Okay,
+- [01:40:21,570 - 01:40:22,490] that's going to be
+- [01:40:23,850 - 01:40:24,450] commutator
+- [01:40:24,450 - 01:40:25,590] of
+- [01:40:26,850 - 01:40:28,410] now there's going to be
+- [01:40:28,410 - 01:40:29,550] a two omega downstairs,
+- [01:40:29,550 - 01:40:30,310] right?
+- [01:40:30,410 - 01:40:31,570] Two omega downstairs.
+- [01:40:31,570 - 01:40:32,650] One over two omega.
+- [01:40:36,570 - 01:40:38,030] And then there's going to be
+- [01:40:38,030 - 01:40:41,190] the commutator of P minus I omega X
+- [01:40:44,130 - 01:40:46,890] with P plus I omega X.
+- [01:40:48,490 - 01:40:49,050] Now,
+- [01:40:49,050 - 01:40:50,390] who commutes with who here?
+- [01:40:50,810 - 01:40:51,290] Well,
+- [01:40:51,290 - 01:40:52,470] who doesn't commute with who?
+- [01:40:52,950 - 01:40:54,850] Who doesn't commute with whom?
+- [01:40:56,110 - 01:40:56,670] Alright.
+- [01:40:57,030 - 01:40:59,070] P doesn't commute with X
+- [01:40:59,070 - 01:41:01,050] and X doesn't commute with P.
+- [01:41:02,070 - 01:41:02,710] That's all.
+- [01:41:02,910 - 01:41:04,150] X commutes with X
+- [01:41:04,150 - 01:41:05,770] and P commutes with P.
+- [01:41:05,970 - 01:41:07,290] So what do we have here?
+- [01:41:07,630 - 01:41:09,990] We have equals one over two omega
+- [01:41:11,330 - 01:41:12,490] now we have
+- [01:41:12,490 - 01:41:13,690] an I omega
+- [01:41:13,690 - 01:41:14,710] let's take this
+- [01:41:14,710 - 01:41:18,090] let's take this one here first.
+- [01:41:19,310 - 01:41:20,450] Then we have a minus
+- [01:41:20,450 - 01:41:20,990] I omega
+- [01:41:22,190 - 01:41:23,270] minus I omega
+- [01:41:23,970 - 01:41:25,970] from here and then the
+- [01:41:26,380 - 01:41:27,630] commutator of X with P.
+- [01:41:27,850 - 01:41:29,330] What's the commutator of X with P?
+- [01:41:30,850 - 01:41:31,350] I.
+- [01:41:32,350 - 01:41:33,790] So that gives us an I.
+- [01:41:38,990 - 01:41:40,470] I times minus I
+- [01:41:40,470 - 01:41:41,310] is plus one
+- [01:41:42,750 - 01:41:43,850] we have an omega
+- [01:41:44,470 - 01:41:45,190] over omega
+- [01:41:46,270 - 01:41:48,510] all together this is just one half.
+- [01:41:50,570 - 01:41:52,130] But that was only one term.
+- [01:41:53,310 - 01:41:54,830] That was this commutator
+- [01:41:54,830 - 01:41:55,910] of this one with this one.
+- [01:41:56,350 - 01:41:58,250] The other one is the commutator of P
+- [01:41:58,250 - 01:41:59,550] with I omega X
+- [01:42:00,070 - 01:42:01,430] it's exactly the same.
+- [01:42:01,630 - 01:42:02,950] If you work it out you'll
+- [01:42:02,950 - 01:42:04,270] see it's exactly the same number
+- [01:42:04,270 - 01:42:06,790] and so all together you get two of them
+- [01:42:08,070 - 01:42:08,930] plus a half
+- [01:42:09,770 - 01:42:11,810] and the commutator is one.
+- [01:42:11,990 - 01:42:12,470] And so you get two of them
+- [01:42:16,430 - 01:42:18,690] we now know two things
+- [01:42:19,410 - 01:42:20,850] turns out this is enough
+- [01:42:20,850 - 01:42:22,610] this is really all you have to know
+- [01:42:23,550 - 01:42:25,310] you can throw away everything else
+- [01:42:28,090 - 01:42:29,370] the Hamiltonian
+- [01:42:29,370 - 01:42:30,290] is omega
+- [01:42:30,290 - 01:42:32,770] times A plus A minus
+- [01:42:33,750 - 01:42:35,670] and the commutator of
+- [01:42:35,670 - 01:42:37,450] A minus with A plus
+- [01:42:37,450 - 01:42:39,030] is one
+- [01:42:39,030 - 01:42:41,150] there's one more fact here
+- [01:42:41,150 - 01:42:42,470] and it's the fact that A plus
+- [01:42:42,490 - 01:42:43,370] and A minus
+- [01:42:43,370 - 01:42:46,030] are Hermitian conjugates of each other
+- [01:42:46,030 - 01:42:46,850] that plays a role.
+- [01:42:47,350 - 01:42:48,030] Okay.
+- [01:42:48,030 - 01:42:49,630] Good.
+- [01:42:50,790 - 01:42:51,910] Let's give
+- [01:42:52,350 - 01:42:53,110] this thing
+- [01:42:53,110 - 01:42:56,210] A plus A minus by itself a name
+- [01:42:56,210 - 01:42:58,630] let's call it capital N
+- [01:43:00,130 - 01:43:02,130] it even gets simpler now
+- [01:43:02,130 - 01:43:04,250] the commutator of H
+- [01:43:04,250 - 01:43:06,390] is omega times N
+- [01:43:07,770 - 01:43:09,990] and the next step of course
+- [01:43:09,990 - 01:43:12,090] if we were Dirac would be to start
+- [01:43:12,490 - 01:43:14,550] substituting N with A plus and N with A minus
+- [01:43:14,550 - 01:43:15,950] it's a good thing to do
+- [01:43:15,950 - 01:43:17,130] it's a good thing to do
+- [01:43:17,130 - 01:43:20,330] you find out that the commutator algebra is very simple
+- [01:43:20,830 - 01:43:22,490] but I don't think we have to do it
+- [01:43:22,490 - 01:43:23,390] I think we can
+- [01:43:24,029 - 01:43:24,470] proceed
+- [01:43:28,770 - 01:43:29,830] without doing that
+- [01:43:32,710 - 01:43:34,010] let's see what we can learn
+- [01:43:35,770 - 01:43:36,650] first of all
+- [01:43:36,650 - 01:43:38,270] this N object is a
+- [01:43:38,270 - 01:43:38,970] Hermitian operator
+- [01:43:39,690 - 01:43:41,470] if you take an operator
+- [01:43:42,490 - 01:43:43,330] N Hermitian conjugate
+- [01:43:43,330 - 01:43:44,830] it's always Hermitian
+- [01:43:44,830 - 01:43:46,230] that's something you can check
+- [01:43:46,910 - 01:43:50,030] that means N has a complete set of eigenvectors
+- [01:43:50,030 - 01:43:51,610] well of course N is Hermitian
+- [01:43:51,610 - 01:43:53,550] it's basically apart from the factor omega
+- [01:43:53,550 - 01:43:54,710] it's the Hamiltonian
+- [01:43:54,710 - 01:43:57,570] it started Hermitian it stays Hermitian
+- [01:43:58,610 - 01:44:00,370] so N is a Hermitian operator
+- [01:44:00,370 - 01:44:03,170] and that means it has a complete set
+- [01:44:03,170 - 01:44:04,730] of eigenvalues and eigenvectors
+- [01:44:05,070 - 01:44:07,210] what we want to do is find those eigenvalues
+- [01:44:07,210 - 01:44:08,090] and eigenvectors
+- [01:44:08,090 - 01:44:10,310] those eigenvalues and eigenvectors
+- [01:44:10,310 - 01:44:11,310] are the energy levels
+- [01:44:12,490 - 01:44:14,330] the eigenstates of the Hamiltonian
+- [01:44:14,330 - 01:44:15,910] ok so let's
+- [01:44:15,910 - 01:44:17,410] see what we can learn
+- [01:44:18,070 - 01:44:20,250] we want to find the eigenvalues
+- [01:44:20,250 - 01:44:20,970] of N
+- [01:44:21,670 - 01:44:23,590] once we know the eigenvalues of N
+- [01:44:23,590 - 01:44:25,090] we know everything we want to know
+- [01:44:25,090 - 01:44:27,370] so let's suppose that N
+- [01:44:28,590 - 01:44:30,350] has an eigenvector called
+- [01:44:30,350 - 01:44:30,990] little n
+- [01:44:32,050 - 01:44:33,510] and that the eigenvalue
+- [01:44:33,510 - 01:44:34,930] is just little n
+- [01:44:36,970 - 01:44:38,250] I haven't made any
+- [01:44:38,250 - 01:44:40,050] assumptions about whether little n
+- [01:44:40,050 - 01:44:41,930] is an integer or anything else
+- [01:44:43,010 - 01:44:44,230] I've called it N
+- [01:44:45,770 - 01:44:47,270] because it is an integer
+- [01:44:47,270 - 01:44:48,990] but we haven't proved that
+- [01:44:48,990 - 01:44:51,410] let's just call it little n
+- [01:44:51,410 - 01:44:53,310] big N is an operator
+- [01:44:53,310 - 01:44:54,670] it's A plus A minus
+- [01:44:54,670 - 01:44:56,330] little n is an eigenvalue
+- [01:44:56,330 - 01:44:59,090] this is the eigenvalue equation
+- [01:45:01,210 - 01:45:01,810] ok
+- [01:45:01,810 - 01:45:03,830] and we can also write it
+- [01:45:03,830 - 01:45:04,490] in another way
+- [01:45:04,490 - 01:45:05,490] we can write it
+- [01:45:05,490 - 01:45:08,790] A plus A minus on little n
+- [01:45:09,410 - 01:45:11,190] is little n times N
+- [01:45:11,190 - 01:45:11,930] ok
+- [01:45:12,490 - 01:45:13,850] I've just written that big N
+- [01:45:13,850 - 01:45:15,110] is A plus A minus
+- [01:45:15,110 - 01:45:18,010] these two equations are the same thing
+- [01:45:18,010 - 01:45:19,810] now let's take
+- [01:45:20,370 - 01:45:22,070] the commutation relation here
+- [01:45:22,070 - 01:45:22,870] let's write it out
+- [01:45:24,190 - 01:45:25,450] A minus A plus
+- [01:45:26,370 - 01:45:28,230] minus A plus
+- [01:45:28,230 - 01:45:29,050] A minus
+- [01:45:30,690 - 01:45:31,370] equals
+- [01:45:32,170 - 01:45:32,510] one
+- [01:45:37,510 - 01:45:39,890] but let's take this operator
+- [01:45:39,890 - 01:45:41,870] this equation and operate
+- [01:45:42,490 - 01:45:44,370] on the state N
+- [01:45:46,190 - 01:45:47,930] and see what we get
+- [01:45:54,850 - 01:45:55,450] alright
+- [01:45:55,450 - 01:45:57,290] you agree with this equation?
+- [01:45:57,530 - 01:45:58,870] it's just a commutation relation
+- [01:45:58,870 - 01:46:00,350] A minus A plus
+- [01:46:00,350 - 01:46:01,250] A plus A minus
+- [01:46:01,250 - 01:46:01,910] equals one
+- [01:46:01,910 - 01:46:02,990] but then
+- [01:46:02,990 - 01:46:03,850] hmm?
+- [01:46:05,250 - 01:46:05,890] what's that?
+- [01:46:07,110 - 01:46:07,710] right
+- [01:46:07,710 - 01:46:08,950] thank you
+- [01:46:08,950 - 01:46:09,450] ok
+- [01:46:09,450 - 01:46:10,310] ok
+- [01:46:14,890 - 01:46:15,290] yeah
+- [01:46:15,290 - 01:46:15,450] yeah
+- [01:46:16,970 - 01:46:17,370] good
+- [01:46:21,589 - 01:46:22,970] and let's multiply it
+- [01:46:24,270 - 01:46:25,210] I'm looking at it
+- [01:46:25,210 - 01:46:25,910] I'm staring at it
+- [01:46:25,910 - 01:46:27,189] trying to figure out what to do with it
+- [01:46:27,189 - 01:46:29,210] I know what I really want to do with it
+- [01:46:29,210 - 01:46:30,609] what I want to do with it
+- [01:46:30,609 - 01:46:32,370] is I want to apply A plus
+- [01:46:32,370 - 01:46:34,210] what I want to do is show
+- [01:46:34,210 - 01:46:36,569] that A plus will increase the energy
+- [01:46:37,470 - 01:46:38,550] I want to show that
+- [01:46:38,550 - 01:46:40,109] A plus is a raising operator
+- [01:46:41,510 - 01:46:41,910] so
+- [01:46:42,490 - 01:46:42,790] what I want
+- [01:46:42,790 - 01:46:44,010] I want to concentrate
+- [01:46:44,010 - 01:46:44,910] not on N
+- [01:46:44,910 - 01:46:47,950] but on A plus times N
+- [01:46:49,370 - 01:46:51,510] so I have to multiply it by A plus
+- [01:46:52,490 - 01:46:53,729] this is my goal
+- [01:46:53,729 - 01:46:56,029] to show that A plus times N
+- [01:46:56,029 - 01:46:57,090] is something interesting
+- [01:46:57,090 - 01:47:00,050] that raising with this A plus operator
+- [01:47:00,050 - 01:47:01,130] does something interesting
+- [01:47:01,130 - 01:47:02,270] ok so now we have an equation
+- [01:47:02,270 - 01:47:03,170] let's see what we get
+- [01:47:05,610 - 01:47:07,189] first of all we have
+- [01:47:07,189 - 01:47:08,870] A plus A minus
+- [01:47:10,240 - 01:47:11,069] A plus
+- [01:47:12,490 - 01:47:13,450] so we have a term here on N
+- [01:47:16,490 - 01:47:18,770] now what about the second term
+- [01:47:18,770 - 01:47:19,510] minus
+- [01:47:19,510 - 01:47:21,390] A plus
+- [01:47:21,390 - 01:47:22,470] ah
+- [01:47:23,250 - 01:47:25,229] what's A plus A minus on N
+- [01:47:27,710 - 01:47:28,390] right
+- [01:47:28,390 - 01:47:29,970] so this is
+- [01:47:30,870 - 01:47:31,550] minus
+- [01:47:31,550 - 01:47:33,350] A plus
+- [01:47:33,350 - 01:47:34,649] minus N
+- [01:47:36,509 - 01:47:37,609] A plus
+- [01:47:37,609 - 01:47:38,729] times N
+- [01:47:39,969 - 01:47:42,029] I've written that A plus A minus
+- [01:47:42,029 - 01:47:42,470] is a raising operator
+- [01:47:42,490 - 01:47:46,069] so I have to multiply it by N
+- [01:47:46,069 - 01:47:46,490] what we get
+- [01:47:46,490 - 01:47:47,810] so I get
+- [01:47:47,810 - 01:47:47,990] minus A
+- [01:47:47,990 - 01:47:49,010] minus A
+- [01:47:49,010 - 01:47:49,750] minus N
+- [01:47:49,750 - 01:47:52,510] minus A
+- [01:47:55,569 - 01:47:56,930] minus A
+- [01:47:56,930 - 01:47:56,950] minus A
+- [01:47:56,950 - 01:47:57,170] minus N
+- [01:47:57,170 - 01:47:58,130] minus N
+- [01:47:58,130 - 01:48:00,330] minus A
+- [01:48:09,329 - 01:48:10,690] minus N
+- [01:48:10,690 - 01:48:10,950] times N
+- [01:48:11,950 - 01:48:12,970] what do I get
+- [01:48:19,090 - 01:48:20,630] N plus one
+- [01:48:20,630 - 01:48:21,290] N plus one
+- [01:48:21,290 - 01:48:21,930] oh that's good
+- [01:48:21,930 - 01:48:22,650] oh that's good
+- [01:48:22,650 - 01:48:23,730] oh that's good
+- [01:48:23,730 - 01:48:29,050] oh that's good
+- [01:48:31,310 - 01:48:31,830] let's see
+- [01:48:31,830 - 01:48:34,310] this one got shifted over to the right
+- [01:48:34,310 - 01:48:35,890] it gave me this N
+- [01:48:35,890 - 01:48:37,370] and the other one gave me the one
+- [01:48:37,890 - 01:48:39,430] but what about this one over here
+- [01:48:41,550 - 01:48:43,570] A plus times A minus
+- [01:48:43,570 - 01:48:44,990] A plus times A minus
+- [01:48:44,990 - 01:48:46,450] is the operator capital N
+- [01:48:46,450 - 01:48:47,310] is the operator capital N
+- [01:48:47,310 - 01:48:50,690] this is the state that I'm interested in
+- [01:48:50,690 - 01:48:52,110] so N
+- [01:48:52,630 - 01:48:54,330] on this state A plus
+- [01:48:54,330 - 01:48:55,290] on N
+- [01:48:55,290 - 01:48:57,890] let's put a circle around it
+- [01:48:58,670 - 01:49:00,070] is equal to
+- [01:49:00,070 - 01:49:00,090] is equal to
+- [01:49:01,969 - 01:49:03,430] N plus one
+- [01:49:04,290 - 01:49:05,870] times that same state
+- [01:49:05,870 - 01:49:06,070] times that same state
+- [01:49:07,969 - 01:49:09,490] so guess what I found
+- [01:49:10,690 - 01:49:12,290] I was expected that
+- [01:49:12,290 - 01:49:13,570] the raising operator
+- [01:49:13,570 - 01:49:16,590] gives me a new eigenvector of capital N
+- [01:49:16,590 - 01:49:18,150] with an eigenvalue
+- [01:49:18,370 - 01:49:19,370] one unit up
+- [01:49:20,830 - 01:49:21,590] okay
+- [01:49:21,590 - 01:49:24,550] so here's what we found pictorially
+- [01:49:24,550 - 01:49:24,590] pictorially
+- [01:49:27,150 - 01:49:28,550] if I plot
+- [01:49:28,550 - 01:49:30,810] on the vertical axis here
+- [01:49:30,810 - 01:49:32,710] the eigenvalues
+- [01:49:32,710 - 01:49:33,330] of N
+- [01:49:34,710 - 01:49:36,330] then if I
+- [01:49:36,330 - 01:49:37,170] find one
+- [01:49:38,370 - 01:49:39,050] little N
+- [01:49:40,730 - 01:49:42,550] then there's another one above it
+- [01:49:42,550 - 01:49:44,570] and another one above it
+- [01:49:44,570 - 01:49:45,770] and another one above it
+- [01:49:45,770 - 01:49:47,670] unless of course I run out
+- [01:49:47,670 - 01:49:49,730] but we're going to prove that we can't run out
+- [01:49:50,930 - 01:49:52,090] there's another one above it
+- [01:49:52,090 - 01:49:53,070] and another one above it
+- [01:49:54,290 - 01:49:55,030] each one
+- [01:49:56,670 - 01:49:58,430] being shifted by one unit
+- [01:49:59,790 - 01:50:00,230] N
+- [01:50:00,230 - 01:50:01,410] N plus one,
+- [01:50:01,410 - 01:50:02,610] N plus two and so forth
+- [01:50:03,150 - 01:50:04,590] so if I find a solution
+- [01:50:04,590 - 01:50:06,230] an eigenvalue N
+- [01:50:06,770 - 01:50:08,530] there'll be another one at N plus one
+- [01:50:08,530 - 01:50:10,190] there'll be another one at N plus two
+- [01:50:10,690 - 01:50:12,150] another one at N plus three
+- [01:50:12,610 - 01:50:14,690] and furthermore you go from
+- [01:50:14,690 - 01:50:15,610] one to the other
+- [01:50:16,690 - 01:50:18,710] by applying the operator
+- [01:50:18,710 - 01:50:19,750] A plus
+- [01:50:20,730 - 01:50:22,630] A plus takes you from
+- [01:50:22,630 - 01:50:24,570] an eigenvector with eigenvalue
+- [01:50:24,570 - 01:50:26,370] N to an eigenvalue
+- [01:50:26,370 - 01:50:27,750] N plus one and so forth
+- [01:50:31,009 - 01:50:32,610] these of course have higher
+- [01:50:32,610 - 01:50:34,450] and higher energy because
+- [01:50:34,450 - 01:50:36,570] the energy is just omega
+- [01:50:36,570 - 01:50:37,330] times N
+- [01:50:38,210 - 01:50:39,870] what about going down
+- [01:50:41,049 - 01:50:42,190] how do you go down
+- [01:50:42,190 - 01:50:43,570] what's the thing that takes you down
+- [01:50:44,910 - 01:50:45,710] A minus
+- [01:50:46,450 - 01:50:48,590] so it's a straightforward thing
+- [01:50:48,590 - 01:50:50,370] to prove that
+- [01:50:51,570 - 01:50:52,470] same deal
+- [01:50:52,470 - 01:50:54,510] that A minus on N
+- [01:50:54,510 - 01:50:55,590] takes you down
+- [01:50:57,129 - 01:50:58,930] how far down can it take you
+- [01:50:58,930 - 01:50:59,870] can it take you
+- [01:51:01,570 - 01:51:02,510] indefinitely down
+- [01:51:04,030 - 01:51:04,810] why not
+- [01:51:07,150 - 01:51:08,770] because the harmonic oscillator
+- [01:51:08,770 - 01:51:10,270] Hamiltonian is positive
+- [01:51:12,290 - 01:51:14,930] it's only got positive terms
+- [01:51:14,930 - 01:51:17,430] you cannot get to negative values
+- [01:51:17,430 - 01:51:19,010] the operator
+- [01:51:19,010 - 01:51:21,210] is a positive definite operator
+- [01:51:21,210 - 01:51:22,910] which means it only has
+- [01:51:22,910 - 01:51:24,390] positive eigenvalues
+- [01:51:24,390 - 01:51:25,530] in fact it's a theorem
+- [01:51:25,530 - 01:51:27,550] that if you multiply an operator
+- [01:51:27,550 - 01:51:28,670] by its own conjugate
+- [01:51:28,670 - 01:51:30,850] by its own Hermitian conjugate
+- [01:51:30,850 - 01:51:32,490] its eigenvalues are positive
+- [01:51:32,490 - 01:51:34,470] or at worst zero
+- [01:51:35,929 - 01:51:39,010] so it can't go indefinitely down
+- [01:51:39,010 - 01:51:40,670] there's got to be
+- [01:51:40,690 - 01:51:43,330] a last one
+- [01:51:44,549 - 01:51:46,110] that last one
+- [01:51:46,110 - 01:51:47,470] is called the ground state
+- [01:51:47,470 - 01:51:48,950] and it's usually labeled O
+- [01:51:51,929 - 01:51:54,070] you can't go indefinitely down
+- [01:51:54,769 - 01:51:55,890] what does that mean
+- [01:51:55,890 - 01:51:57,890] what takes you down
+- [01:51:57,890 - 01:51:58,530] is A minus
+- [01:51:58,530 - 01:52:01,290] so A minus on N
+- [01:52:01,969 - 01:52:03,630] takes you to N plus one
+- [01:52:03,630 - 01:52:04,550] N minus one
+- [01:52:04,550 - 01:52:07,850] or it takes you to zero
+- [01:52:08,889 - 01:52:10,670] or it just kills the equation
+- [01:52:10,690 - 01:52:10,910] it just kills the state
+- [01:52:10,910 - 01:52:12,290] so there's nothing below it
+- [01:52:12,290 - 01:52:14,990] those are the only two mathematical possibilities
+- [01:52:14,990 - 01:52:17,330] A minus takes you down
+- [01:52:17,330 - 01:52:19,590] or you just run out of states
+- [01:52:19,590 - 01:52:21,130] there are no states below it
+- [01:52:21,130 - 01:52:22,850] that's what happens
+- [01:52:22,850 - 01:52:26,630] A minus on O
+- [01:52:27,750 - 01:52:29,170] is just zero
+- [01:52:29,870 - 01:52:31,710] so there's nothing down below
+- [01:52:31,710 - 01:52:33,950] N equals zero
+- [01:52:33,950 - 01:52:35,590] the first state
+- [01:52:36,450 - 01:52:38,290] corresponds to N equals zero
+- [01:52:38,290 - 01:52:39,230] N equals zero
+- [01:52:39,230 - 01:52:40,670] so that's the first one
+- [01:52:42,830 - 01:52:43,310] question
+- [01:52:43,310 - 01:52:46,310] if we take N
+- [01:52:46,310 - 01:52:47,550] and we apply A minus
+- [01:52:47,550 - 01:52:48,610] to get to N minus one
+- [01:52:48,610 - 01:52:51,090] and then if we apply A plus to that
+- [01:52:52,010 - 01:52:53,130] does that get to N
+- [01:52:53,130 - 01:52:53,790] yeah
+- [01:52:53,790 - 01:52:55,910] but then A plus A minus
+- [01:52:55,910 - 01:52:57,970] times N is N times N
+- [01:52:58,670 - 01:52:59,230] let's do it again
+- [01:53:00,750 - 01:53:02,830] the eigenvalue of A plus A minus
+- [01:53:02,830 - 01:53:03,910] is N times N one
+- [01:53:04,430 - 01:53:06,750] so if we're applying A minus
+- [01:53:06,750 - 01:53:07,530] and then A plus
+- [01:53:07,530 - 01:53:10,250] is that one or N times N
+- [01:53:10,690 - 01:53:11,210] so let's be careful
+- [01:53:13,610 - 01:53:15,690] I've been a little bit careless
+- [01:53:15,690 - 01:53:18,010] I've written that A plus
+- [01:53:20,170 - 01:53:21,370] on N
+- [01:53:21,370 - 01:53:23,850] is equal to N plus one
+- [01:53:23,850 - 01:53:25,970] but I haven't discussed
+- [01:53:25,970 - 01:53:27,950] the normalization of these states
+- [01:53:27,950 - 01:53:30,630] the normalization of these states
+- [01:53:30,630 - 01:53:31,390] is not
+- [01:53:34,190 - 01:53:35,510] N M
+- [01:53:36,370 - 01:53:38,070] equals delta N M
+- [01:53:39,509 - 01:53:40,670] there's a numerical
+- [01:53:40,690 - 01:53:41,110] factor
+- [01:53:41,110 - 01:53:42,870] there's a numerical factor
+- [01:53:43,850 - 01:53:46,010] and if we wanted to keep track of that
+- [01:53:46,010 - 01:53:46,970] numerical factor
+- [01:53:50,270 - 01:53:51,750] I'm quite tired now
+- [01:53:51,750 - 01:53:52,750] and I think we have to quit
+- [01:53:52,750 - 01:53:54,130] but there is a square
+- [01:53:54,130 - 01:53:55,510] root of N plus one here
+- [01:53:56,870 - 01:53:58,210] times N plus one
+- [01:53:58,870 - 01:54:00,350] now try your trick again
+- [01:54:00,350 - 01:54:01,070] and see what you get
+- [01:54:05,190 - 01:54:06,570] and I think it's also
+- [01:54:06,570 - 01:54:07,850] true that A minus
+- [01:54:07,850 - 01:54:09,010] on N
+- [01:54:10,690 - 01:54:11,390] is the square root of N
+- [01:54:12,169 - 01:54:13,630] times N minus one
+- [01:54:13,630 - 01:54:14,650] if I'm not mistaken
+- [01:54:14,650 - 01:54:16,870] I think that's correct
+- [01:54:19,330 - 01:54:20,470] now what do you want to do
+- [01:54:20,470 - 01:54:21,090] you want to try
+- [01:54:22,449 - 01:54:23,850] you want to try
+- [01:54:23,850 - 01:54:25,570] A plus times A minus
+- [01:54:26,650 - 01:54:27,410] on N
+- [01:54:29,049 - 01:54:29,970] was that the game
+- [01:54:30,929 - 01:54:31,950] somebody asked me
+- [01:54:32,549 - 01:54:33,890] ok let's see what we get
+- [01:54:35,549 - 01:54:36,070] alright
+- [01:54:36,070 - 01:54:37,470] A minus on N
+- [01:54:37,470 - 01:54:38,630] gives me
+- [01:54:40,690 - 01:54:41,110] A plus
+- [01:54:41,110 - 01:54:43,630] then we're going to have square root of N
+- [01:54:44,589 - 01:54:45,690] N minus one
+- [01:54:47,629 - 01:54:48,810] now what happens
+- [01:54:48,810 - 01:54:50,030] when A plus
+- [01:54:51,269 - 01:54:51,790] hits
+- [01:54:52,330 - 01:54:53,670] N minus one here
+- [01:54:55,809 - 01:54:58,110] it gives me another square root of N
+- [01:54:59,870 - 01:55:00,590] so this
+- [01:55:00,590 - 01:55:02,530] gives me two factors of square root of N
+- [01:55:03,309 - 01:55:04,070] times N
+- [01:55:07,870 - 01:55:09,690] so I was a little bit sloppy
+- [01:55:10,690 - 01:55:12,590] I didn't tell you what the normalization
+- [01:55:12,590 - 01:55:13,550] of the states were
+- [01:55:13,550 - 01:55:16,090] the states are not normalized
+- [01:55:16,830 - 01:55:18,470] by that I mean they're not
+- [01:55:19,270 - 01:55:20,630] Kronecker delta normalized
+- [01:55:21,190 - 01:55:22,590] they're normalized to some
+- [01:55:22,590 - 01:55:24,770] weird factors with square roots of N in them
+- [01:55:25,530 - 01:55:26,630] when we need that
+- [01:55:26,630 - 01:55:27,530] and we will need it
+- [01:55:27,530 - 01:55:28,850] we'll write it down
+- [01:55:28,850 - 01:55:29,510] but I
+- [01:55:31,830 - 01:55:33,490] it's getting a little too late
+- [01:55:33,490 - 01:55:35,490] for all possible details
+- [01:55:36,570 - 01:55:37,050] ok
+- [01:55:37,050 - 01:55:40,250] oh incidentally yeah just one point
+- [01:55:41,629 - 01:55:42,150] notice
+- [01:55:42,150 - 01:55:43,850] that this equation here
+- [01:55:44,590 - 01:55:45,890] says that when A minus
+- [01:55:46,450 - 01:55:47,830] hits the ground state
+- [01:55:47,830 - 01:55:49,210] it does give zero
+- [01:55:51,370 - 01:55:51,890] yeah
+- [01:55:52,790 - 01:55:54,950] does the ground state have to be zero
+- [01:55:54,950 - 01:55:56,210] or can it be above zero
+- [01:55:56,809 - 01:55:57,990] above zero what
+- [01:55:58,690 - 01:56:00,190] no it has to be zero
+- [01:56:00,190 - 01:56:01,170] it has to be zero
+- [01:56:01,170 - 01:56:02,950] is that clear why it has to be zero
+- [01:56:02,950 - 01:56:03,430] well yeah
+- [01:56:05,129 - 01:56:05,650] yeah
+- [01:56:08,870 - 01:56:09,670] let's see
+- [01:56:12,670 - 01:56:13,170] ummm
+- [01:56:14,910 - 01:56:15,410] ummm
+- [01:56:17,010 - 01:56:18,810] well square root of zero is zero
+- [01:56:18,810 - 01:56:19,790] yeah
+- [01:56:20,330 - 01:56:20,830] yeah
+- [01:56:20,830 - 01:56:21,690] if the vector is
+- [01:56:21,690 - 01:56:24,010] if the vector N minus one is zero
+- [01:56:24,010 - 01:56:25,090] is it zero like
+- [01:56:25,090 - 01:56:28,630] we can prove it
+- [01:56:28,630 - 01:56:29,530] I'm a little bit tired now
+- [01:56:29,530 - 01:56:31,070] and I don't know what the proof is
+- [01:56:31,070 - 01:56:32,050] but it's a good question
+- [01:56:32,590 - 01:56:34,290] it is the answer is zero
+- [01:56:34,290 - 01:56:37,390] the answer is that the spectrum of capital N here
+- [01:56:37,390 - 01:56:40,110] is all of the integers starting at zero
+- [01:56:41,169 - 01:56:41,730] ok
+- [01:56:41,730 - 01:56:43,310] so that tells us
+- [01:56:43,310 - 01:56:45,570] that the energy spectrum
+- [01:56:45,570 - 01:56:48,230] is omega times an integer
+- [01:56:48,230 - 01:56:49,950] there is an h bar in here
+- [01:56:49,950 - 01:56:51,710] and I'll go through the h bars
+- [01:56:51,710 - 01:56:52,780] I'll tell you where the
+- [01:56:52,780 - 01:56:53,850] h bars are hiding next time
+- [01:56:54,550 - 01:56:56,470] but um it tells you that the energy
+- [01:56:56,470 - 01:56:57,650] spectrum is omega
+- [01:56:57,650 - 01:57:00,350] times an integer plus
+- [01:57:01,450 - 01:57:02,370] the famous
+- [01:57:02,370 - 01:57:04,170] one half h bar omega
+- [01:57:04,170 - 01:57:05,150] that we threw away
+- [01:57:06,349 - 01:57:08,030] so there's the ground state energy
+- [01:57:08,690 - 01:57:10,090] plus on top of it
+- [01:57:10,690 - 01:57:12,510] is the spectrum of integer space levels
+- [01:57:12,510 - 01:57:14,510] that's the harmonic oscillator
+- [01:57:14,510 - 01:57:16,490] and um
+- [01:57:20,210 - 01:57:22,510] we'll play with it more
+- [01:57:22,510 - 01:57:24,590] but more important
+- [01:57:24,590 - 01:57:27,040] we'll use it to solve some important problems
+- [01:57:27,610 - 01:57:28,430] ok
+- [01:57:30,690 - 01:57:34,270] for more please visit us at stanford.edu
