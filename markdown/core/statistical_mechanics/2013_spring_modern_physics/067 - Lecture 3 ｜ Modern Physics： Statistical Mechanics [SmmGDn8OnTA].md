@@ -1,0 +1,3111 @@
+# Transcript
+
+Source: core/statistical_mechanics/2013_spring_modern_physics/067 - Lecture 3 ｜ Modern Physics： Statistical Mechanics [SmmGDn8OnTA].mkv
+
+- [00:00:05,079 - 00:00:06,200] Stanford University.
+- [00:00:15,640 - 00:00:16,360] All right,
+- [00:00:16,360 - 00:00:18,090] the last time I started to
+- [00:00:18,090 - 00:00:19,820] set up a little bit of mathematics,
+- [00:00:20,959 - 00:00:22,800] some very elementary mathematics,
+- [00:00:22,800 - 00:00:24,600] but let me just review it,
+- [00:00:24,600 - 00:00:25,860] and then we'll use it.
+- [00:00:25,860 - 00:00:28,820] The purpose of using it today is going
+- [00:00:28,820 - 00:00:31,780] to be to get to the Boltzmann distribution.
+- [00:00:32,500 - 00:00:36,680] The Boltzmann distribution is the probability distribution that
+- [00:00:36,680 - 00:00:40,860] a system in thermal equilibrium with a heat bath
+- [00:00:40,860 - 00:00:42,780] remember what thermal equilibrium means,
+- [00:00:42,780 - 00:00:45,050] it means that a small system is
+- [00:00:45,050 - 00:00:47,320] in contact with a large heat bath.
+- [00:00:47,820 - 00:00:49,840] When we focus on that small system,
+- [00:00:49,840 - 00:00:51,820] energy goes back and forth,
+- [00:00:51,820 - 00:00:53,380] there are fluctuations in the energy,
+- [00:00:54,640 - 00:00:55,840] over time.
+- [00:00:55,860 - 00:00:58,060] And if we have timescales which are sufficiently long,
+- [00:00:58,060 - 00:00:59,860] and not very long for most systems,
+- [00:01:00,200 - 00:01:04,099] the energy will have some average value in the subsystem,
+- [00:01:04,099 - 00:01:06,280] but it will also fluctuate some,
+- [00:01:06,500 - 00:01:08,720] and so there will be a probability distribution.
+- [00:01:09,080 - 00:01:11,980] That probability distribution is the special
+- [00:01:11,980 - 00:01:14,880] probability distribution associated with thermal equilibrium,
+- [00:01:16,280 - 00:01:17,480] and we want to try
+- [00:01:17,480 - 00:01:18,680] to find out something about it.
+- [00:01:19,840 - 00:01:20,620] In fact,
+- [00:01:20,620 - 00:01:22,780] it happens to have a rather universal form,
+- [00:01:24,400 - 00:01:25,840] which is called the Boltzmann law.
+- [00:01:25,860 - 00:01:26,280] It's a kind of Boltzmann distribution.
+- [00:01:28,020 - 00:01:29,960] Sometimes Maxwell-Boltzmann distribution,
+- [00:01:29,960 - 00:01:33,440] but it was really Boltzmann who really got it right.
+- [00:01:34,219 - 00:01:36,260] So let's begin with the idea.
+- [00:01:37,630 - 00:01:40,680] Instead of a heat bath of arbitrary kind,
+- [00:01:40,680 - 00:01:43,340] it turns out to be simplest.
+- [00:01:43,800 - 00:01:45,620] This is a mathematical convenience,
+- [00:01:45,620 - 00:01:50,460] this is not the fundamental point.
+- [00:01:50,780 - 00:01:52,740] We could take the heat bath to be anything,
+- [00:01:52,740 - 00:01:55,370] but it turns out to be simplest if we're
+- [00:01:55,370 - 00:01:58,000] interested in a system that we will call A.
+- [00:02:05,120 - 00:02:07,140] The other thing about the system is we want
+- [00:02:07,140 - 00:02:09,160] it to have a lot of degrees of freedom.
+- [00:02:09,479 - 00:02:10,660] In terms of molecules,
+- [00:02:10,660 - 00:02:11,920] we want it to have a lot of them.
+- [00:02:12,300 - 00:02:13,200] That's the system.
+- [00:02:13,360 - 00:02:15,480] It has a collection of level,
+- [00:02:15,480 - 00:02:16,960] a collection of states.
+- [00:02:18,360 - 00:02:20,720] Let's put an axis over here
+- [00:02:20,720 - 00:02:23,220] to represent the states of the system,
+- [00:02:23,380 - 00:02:25,280] and the little tick marks here
+- [00:02:25,280 - 00:02:28,620] could represent the energy levels,
+- [00:02:28,920 - 00:02:30,580] possible energy levels.
+- [00:02:33,000 - 00:02:34,760] If the energy is continuous,
+- [00:02:34,760 - 00:02:36,640] if it's a continuous variable,
+- [00:02:37,579 - 00:02:39,940] as it really is in classical mechanics,
+- [00:02:40,380 - 00:02:41,840] we'll have to take that into account,
+- [00:02:42,080 - 00:02:44,780] but for the moment let's just simplify things and say
+- [00:02:44,780 - 00:02:46,520] this is a discrete collection of states,
+- [00:02:46,800 - 00:02:49,020] which we label with an I.
+- [00:02:50,220 - 00:02:52,580] The lowest one is called the ground state,
+- [00:02:52,780 - 00:02:53,940] the state of lowest energy,
+- [00:02:54,480 - 00:02:55,720] and up we go.
+- [00:02:56,000 - 00:02:58,480] In most systems of interest,
+- [00:02:58,680 - 00:03:03,580] there's no ceiling to the energy levels.
+- [00:03:03,640 - 00:03:04,760] They go up and up and up.
+- [00:03:05,720 - 00:03:07,820] So there's an infinite number of energy levels.
+- [00:03:10,840 - 00:03:12,800] And in place of a heat bath,
+- [00:03:13,040 - 00:03:14,220] well not in place of a heat bath,
+- [00:03:14,400 - 00:03:16,020] but as a special case of a heat bath,
+- [00:03:16,320 - 00:03:18,520] which is particularly interesting,
+- [00:03:18,520 - 00:03:19,880] because it's very easy to analyze,
+- [00:03:20,400 - 00:03:22,680] we just imagine a bunch
+- [00:03:22,680 - 00:03:24,960] of copies of the same system.
+- [00:03:26,180 - 00:03:28,180] Why make things more complicated
+- [00:03:28,180 - 00:03:30,820] than just repeating the same system over and over again?
+- [00:03:31,320 - 00:03:32,740] No particular reason,
+- [00:03:33,299 - 00:03:34,220] and as I said,
+- [00:03:34,220 - 00:03:35,580] that does make things easier.
+- [00:03:35,920 - 00:03:36,520] Now,
+- [00:03:36,520 - 00:03:40,960] in order that A comes to thermal equilibrium,
+- [00:03:41,140 - 00:03:42,240] of course,
+- [00:03:42,240 - 00:03:46,140] in the heat bath of all the other replicas,
+- [00:03:46,260 - 00:03:48,180] or copies of A,
+- [00:03:48,520 - 00:03:51,260] it's necessary that heat can be exchanged,
+- [00:03:51,420 - 00:03:53,820] or that energy can be exchanged between them.
+- [00:03:54,180 - 00:03:55,020] And that,
+- [00:03:55,020 - 00:03:55,560] for example,
+- [00:03:55,560 - 00:03:57,880] could happen in a variety of ways.
+- [00:03:59,040 - 00:04:01,400] Possibly molecules go back and forth
+- [00:04:01,400 - 00:04:03,000] through a permeable partition.
+- [00:04:04,900 - 00:04:05,880] Other ways,
+- [00:04:05,880 - 00:04:07,820] radiation could go back and forth.
+- [00:04:08,320 - 00:04:11,120] Whatever the way that energy goes back and forth,
+- [00:04:11,420 - 00:04:16,180] let's just indicate it by drawing little pipes
+- [00:04:16,180 - 00:04:23,420] connecting all of the copies together.
+- [00:04:25,379 - 00:04:27,720] And we'll say that there are n copies.
+- [00:04:28,220 - 00:04:29,820] n is a very big number,
+- [00:04:29,860 - 00:04:30,260] and n,
+- [00:04:30,260 - 00:04:32,240] we'll really be interested in what happens
+- [00:04:32,240 - 00:04:33,460] when n goes to infinity.
+- [00:04:37,960 - 00:04:40,960] Now let's focus on a set of numbers,
+- [00:04:41,020 - 00:04:42,860] which we can call occupation numbers.
+- [00:04:43,080 - 00:04:43,260] Now,
+- [00:04:43,260 - 00:04:45,360] if you've heard of occupation numbers before,
+- [00:04:46,180 - 00:04:48,500] in particular in the context of quantum field theory,
+- [00:04:48,580 - 00:04:49,360] don't confuse it.
+- [00:04:50,020 - 00:04:52,020] This is a different concept.
+- [00:04:52,960 - 00:04:53,880] The question is,
+- [00:04:53,880 - 00:04:55,680] how many of these boxes
+- [00:04:56,780 - 00:04:59,500] occupy a particular energy level,
+- [00:04:59,500 - 00:04:59,840] r?
+- [00:05:00,380 - 00:05:00,980] So,
+- [00:05:00,980 - 00:05:02,000] to represent this,
+- [00:05:02,000 - 00:05:03,140] we could draw some lines.
+- [00:05:03,860 - 00:05:06,660] The lines could indicate the first box here
+- [00:05:08,020 - 00:05:10,820] is in state 1,
+- [00:05:10,820 - 00:05:11,320] 2,
+- [00:05:11,320 - 00:05:11,700] 3,
+- [00:05:11,700 - 00:05:12,040] 4,
+- [00:05:12,040 - 00:05:12,420] 5.
+- [00:05:12,900 - 00:05:14,040] r equals 5.
+- [00:05:14,400 - 00:05:15,480] The second one,
+- [00:05:15,480 - 00:05:16,100] and of course,
+- [00:05:16,180 - 00:05:17,080] this changes with time.
+- [00:05:17,200 - 00:05:17,880] They rearrange.
+- [00:05:18,420 - 00:05:19,680] But at a given instant,
+- [00:05:23,180 - 00:05:26,280] we could imagine drawing lines,
+- [00:05:26,560 - 00:05:28,640] and those lines would simply tell us
+- [00:05:28,940 - 00:05:30,300] this box is in this state,
+- [00:05:30,380 - 00:05:31,520] this box is in this state.
+- [00:05:31,600 - 00:05:31,760] Now,
+- [00:05:31,760 - 00:05:32,180] of course,
+- [00:05:32,180 - 00:05:33,720] you can have several boxes
+- [00:05:33,720 - 00:05:35,260] all in the same state.
+- [00:05:36,020 - 00:05:38,540] No reason why there can't be two boxes
+- [00:05:39,060 - 00:05:39,900] in the same state,
+- [00:05:39,900 - 00:05:40,300] or three,
+- [00:05:40,300 - 00:05:40,600] or four,
+- [00:05:40,600 - 00:05:41,100] or five.
+- [00:05:41,840 - 00:05:44,780] And so we can define a collection of integers
+- [00:05:46,180 - 00:05:46,780] that are in the same state.
+- [00:05:46,780 - 00:05:46,780] So,
+- [00:05:46,780 - 00:05:47,700] let's say that the number of copies,
+- [00:05:48,460 - 00:05:50,240] let's call it little n,
+- [00:05:51,380 - 00:05:53,980] little n is the number of copies
+- [00:05:54,920 - 00:05:56,480] drawn from big N,
+- [00:05:56,620 - 00:05:59,680] which occupy the state i.
+- [00:06:01,740 - 00:06:06,200] I'm not sure that the copies occupy the state,
+- [00:06:06,260 - 00:06:07,840] or the state occupies the copy,
+- [00:06:08,000 - 00:06:09,360] but you know what I mean.
+- [00:06:10,400 - 00:06:11,860] So that's n i,
+- [00:06:12,620 - 00:06:13,680] and of course,
+- [00:06:13,680 - 00:06:15,100] most of them are zero.
+- [00:06:15,840 - 00:06:17,180] Most of them are zero,
+- [00:06:17,180 - 00:06:17,960] the n i's,
+- [00:06:18,040 - 00:06:20,780] because there's an infinite number of states,
+- [00:06:21,400 - 00:06:23,520] but only a finite number of boxes.
+- [00:06:24,500 - 00:06:25,320] And besides,
+- [00:06:25,320 - 00:06:27,180] I'm going to also assume
+- [00:06:27,180 - 00:06:30,840] that the total energy of the whole collection
+- [00:06:30,840 - 00:06:31,640] is fixed,
+- [00:06:31,640 - 00:06:32,700] let's call it e total.
+- [00:06:34,060 - 00:06:35,550] And I might as well
+- [00:06:35,550 - 00:06:37,040] now not even define e total.
+- [00:06:38,000 - 00:06:39,340] There's an average of,
+- [00:06:39,360 - 00:06:41,020] the average energy that each box has.
+- [00:06:41,120 - 00:06:42,900] Since they're all identical to each other,
+- [00:06:43,080 - 00:06:44,800] when they come to thermal equilibrium,
+- [00:06:45,100 - 00:06:47,140] they will all have the same average energy,
+- [00:06:47,280 - 00:06:48,260] just by symmetry.
+- [00:06:49,680 - 00:06:51,980] So they'll all have the same average energy,
+- [00:06:52,240 - 00:06:53,280] and of course,
+- [00:06:53,280 - 00:06:54,380] the total energy,
+- [00:06:54,600 - 00:06:55,600] which is fixed,
+- [00:06:55,600 - 00:06:56,140] frozen,
+- [00:06:56,500 - 00:07:00,160] will simply be n times the average energy.
+- [00:07:00,300 - 00:07:00,940] Let's write it down.
+- [00:07:01,080 - 00:07:09,020] E total is of course n times the average energy
+- [00:07:10,020 - 00:07:11,500] in each box.
+- [00:07:12,700 - 00:07:15,060] I'm not going to always indicate
+- [00:07:15,060 - 00:07:16,500] that I mean averages.
+- [00:07:18,240 - 00:07:20,760] I've gotten tired of using this symbol like that.
+- [00:07:20,900 - 00:07:22,600] It takes too much space.
+- [00:07:23,140 - 00:07:24,980] I will sometimes use the Ova bar,
+- [00:07:25,140 - 00:07:26,480] and sometimes I'll just ignore it.
+- [00:07:26,560 - 00:07:28,480] Please ask me if you're confused about whether
+- [00:07:28,480 - 00:07:30,040] I'm talking about averages or not.
+- [00:07:31,020 - 00:07:33,120] But since the total energy is fixed,
+- [00:07:33,380 - 00:07:35,880] it must be n times the average energy
+- [00:07:35,880 - 00:07:36,660] in each box.
+- [00:07:36,660 - 00:07:38,780] So this is one fact.
+- [00:07:41,300 - 00:07:42,900] What other facts do we have?
+- [00:07:43,380 - 00:07:43,980] Well,
+- [00:07:43,980 - 00:07:46,720] first of all,
+- [00:07:46,740 - 00:07:48,280] each energy level has a certain
+- [00:07:48,280 - 00:07:49,820] n out of a certain value.
+- [00:07:50,260 - 00:07:53,240] These n's are subject to two constraints,
+- [00:07:53,660 - 00:07:55,660] and really only two constraints.
+- [00:07:56,080 - 00:07:57,300] Things fluctuate,
+- [00:07:57,300 - 00:07:58,440] energy goes back and forth,
+- [00:07:58,720 - 00:08:00,000] things change with time,
+- [00:08:00,160 - 00:08:01,680] but certain things don't change.
+- [00:08:02,200 - 00:08:03,200] First of all,
+- [00:08:03,200 - 00:08:05,020] the number of boxes doesn't change.
+- [00:08:06,040 - 00:08:06,640] So,
+- [00:08:07,220 - 00:08:08,020] by assumption,
+- [00:08:09,600 - 00:08:10,840] that's our system,
+- [00:08:10,900 - 00:08:11,800] a fixed number of boxes.
+- [00:08:12,460 - 00:08:15,020] This is the number of boxes in the i-th state,
+- [00:08:15,260 - 00:08:17,000] and so it must be the case
+- [00:08:17,940 - 00:08:19,340] that the sum over i
+- [00:08:20,280 - 00:08:21,340] of n sub i,
+- [00:08:22,020 - 00:08:24,420] that must equal the total number of boxes.
+- [00:08:25,780 - 00:08:27,740] The number of boxes in the first state
+- [00:08:27,740 - 00:08:29,540] plus the number of boxes in the second state,
+- [00:08:29,620 - 00:08:30,720] and so forth and so on,
+- [00:08:30,800 - 00:08:32,559] must altogether add up to n.
+- [00:08:33,480 - 00:08:35,820] And obviously since n is bounded,
+- [00:08:35,940 - 00:08:36,620] it can't get in the first state,
+- [00:08:36,640 - 00:08:38,380] since n is big,
+- [00:08:39,120 - 00:08:39,600] sorry,
+- [00:08:39,600 - 00:08:40,720] since n is bounded,
+- [00:08:41,520 - 00:08:42,770] none of these n sub
+- [00:08:42,770 - 00:08:44,020] i's can be bigger than n,
+- [00:08:44,200 - 00:08:46,840] and that means most of the states must be unoccupied.
+- [00:08:47,360 - 00:08:48,840] Most of the n's must be zero,
+- [00:08:48,920 - 00:08:50,240] most of the little n's must be zero,
+- [00:08:50,320 - 00:08:50,840] but that's okay,
+- [00:08:50,980 - 00:08:51,660] nevertheless.
+- [00:08:55,700 - 00:08:56,440] First statement.
+- [00:08:56,680 - 00:08:57,500] Next statement.
+- [00:08:58,480 - 00:09:00,580] If we take the number of boxes
+- [00:09:01,560 - 00:09:03,040] in the state i
+- [00:09:03,640 - 00:09:06,480] times the energy of the i-th state,
+- [00:09:06,480 - 00:09:08,700] that gives us the total energy.
+- [00:09:10,700 - 00:09:11,820] Sum over i,
+- [00:09:11,820 - 00:09:12,740] sum over...
+- [00:09:14,780 - 00:09:16,240] Let's be very clear now.
+- [00:09:16,380 - 00:09:20,500] This sum is not the sum over the boxes.
+- [00:09:21,160 - 00:09:23,560] It's the sum over the energy levels.
+- [00:09:24,240 - 00:09:28,000] The number of boxes in the state i.
+- [00:09:28,180 - 00:09:30,600] So i labels states,
+- [00:09:30,600 - 00:09:31,960] not boxes.
+- [00:09:32,120 - 00:09:33,120] So don't get confused by that.
+- [00:09:33,940 - 00:09:34,580] Second,
+- [00:09:34,740 - 00:09:36,460] the number of boxes in the state i,
+- [00:09:36,480 - 00:09:37,680] with each energy level,
+- [00:09:37,880 - 00:09:38,920] when added up,
+- [00:09:38,940 - 00:09:40,800] has to add up to the total energy.
+- [00:09:41,120 - 00:09:42,960] So that must add up to
+- [00:09:42,960 - 00:09:44,560] either e total,
+- [00:09:44,720 - 00:09:46,420] depending on the way we want to write it,
+- [00:09:47,480 - 00:09:48,920] but we can also remember
+- [00:09:48,920 - 00:09:50,480] that that happens to be n
+- [00:09:51,080 - 00:09:54,200] times the average energy of any given box.
+- [00:09:57,180 - 00:09:58,120] The energy,
+- [00:09:59,300 - 00:10:00,280] total energy,
+- [00:10:00,520 - 00:10:02,060] and the total number of boxes
+- [00:10:02,060 - 00:10:03,600] are fixed and frozen
+- [00:10:03,600 - 00:10:05,300] and will never change in this discussion,
+- [00:10:05,300 - 00:10:07,860] and so these can be thought of as constraints.
+- [00:10:09,580 - 00:10:10,800] Whatever we do,
+- [00:10:10,900 - 00:10:12,260] we will not change these things.
+- [00:10:13,060 - 00:10:13,700] Now,
+- [00:10:13,800 - 00:10:16,160] the next question is,
+- [00:10:16,380 - 00:10:18,840] how many ways are there,
+- [00:10:19,980 - 00:10:22,200] given a set of occupation numbers,
+- [00:10:23,640 - 00:10:26,220] given a set of occupation numbers,
+- [00:10:26,360 - 00:10:28,680] how many ways are there
+- [00:10:29,500 - 00:10:31,680] that those occupation numbers
+- [00:10:32,300 - 00:10:33,200] can be realized?
+- [00:10:33,700 - 00:10:35,280] Let me just give you a simple example.
+- [00:10:36,340 - 00:10:36,860] Supposing
+- [00:10:38,200 - 00:10:39,540] there are a bunch of states
+- [00:10:39,540 - 00:10:40,700] and only two boxes,
+- [00:10:43,640 - 00:10:45,760] and let me take the case
+- [00:10:48,100 - 00:10:48,620] n1,
+- [00:10:48,940 - 00:10:50,120] that's the ground state,
+- [00:10:50,340 - 00:10:51,680] is equal to 1,
+- [00:10:52,300 - 00:10:54,100] and n2 is equal to 1.
+- [00:10:54,680 - 00:10:56,380] How many ways are there
+- [00:10:56,380 - 00:10:57,800] that n1 can equal 1
+- [00:10:57,800 - 00:10:58,880] and n2 equal 1?
+- [00:10:59,120 - 00:11:00,080] Just one way.
+- [00:11:00,220 - 00:11:02,320] Both boxes have,
+- [00:11:03,960 - 00:11:05,260] are in the first two boxes,
+- [00:11:05,280 - 00:11:05,440] and both boxes have
+- [00:11:05,620 - 00:11:06,820] so we represent that
+- [00:11:06,820 - 00:11:08,240] by drawing a line like that.
+- [00:11:08,640 - 00:11:10,160] The line at this point.
+- [00:11:12,760 - 00:11:13,840] On the other hand,
+- [00:11:13,880 - 00:11:14,320] what's the,
+- [00:11:14,500 - 00:11:16,000] just to illustrate the concept,
+- [00:11:16,860 - 00:11:18,180] what's the number of ways
+- [00:11:18,180 - 00:11:20,780] that n1 can be 0?
+- [00:11:22,340 - 00:11:23,240] Is that what I want?
+- [00:11:24,780 - 00:11:26,300] Wasn't that n1 equals 1
+- [00:11:26,300 - 00:11:27,340] and n2 equals 0?
+- [00:11:28,260 - 00:11:29,040] Say it again.
+- [00:11:29,100 - 00:11:30,080] n1 equals 2.
+- [00:11:30,220 - 00:11:30,700] Yeah,
+- [00:11:30,740 - 00:11:31,520] n1 equals 2.
+- [00:11:31,740 - 00:11:32,720] And n2 is 0.
+- [00:11:32,820 - 00:11:34,040] And n2 is equal to 0.
+- [00:11:34,780 - 00:11:35,260] So,
+- [00:11:36,520 - 00:11:37,700] that's the number of ways,
+- [00:11:42,260 - 00:11:43,200] it's also 1,
+- [00:11:43,200 - 00:11:43,580] isn't it?
+- [00:11:43,780 - 00:11:44,080] No,
+- [00:11:44,140 - 00:11:44,520] no.
+- [00:11:44,840 - 00:11:46,260] The sum of the left and the right,
+- [00:11:47,760 - 00:11:48,540] this is correct.
+- [00:11:49,260 - 00:11:49,660] Correct.
+- [00:11:49,860 - 00:11:51,340] This is correct for what you put in.
+- [00:11:51,520 - 00:11:51,760] Sorry,
+- [00:11:51,920 - 00:11:52,740] I thought I'd run out.
+- [00:11:54,520 - 00:11:55,480] For what I drew,
+- [00:11:56,180 - 00:11:57,020] n1 is 2
+- [00:11:57,020 - 00:11:58,500] and n2 is 0.
+- [00:11:59,320 - 00:11:59,720] Good.
+- [00:11:59,780 - 00:12:00,320] On the other end,
+- [00:12:00,340 - 00:12:00,640] I see.
+- [00:12:01,140 - 00:12:01,700] Right here.
+- [00:12:02,300 - 00:12:02,700] Okay.
+- [00:12:02,800 - 00:12:04,540] How many ways are there
+- [00:12:04,540 - 00:12:05,240] of missing the number of ways
+- [00:12:05,240 - 00:12:07,080] of making n1 equal to 2?
+- [00:12:07,760 - 00:12:08,220] One.
+- [00:12:08,220 - 00:12:08,740] One way.
+- [00:12:09,360 - 00:12:09,820] Okay.
+- [00:12:10,080 - 00:12:10,940] In general,
+- [00:12:11,120 - 00:12:12,860] there may be many ways
+- [00:12:12,860 - 00:12:13,800] of doing it,
+- [00:12:13,860 - 00:12:15,800] many ways of having a given set
+- [00:12:15,800 - 00:12:16,800] of occupation numbers.
+- [00:12:17,020 - 00:12:17,880] For example,
+- [00:12:17,920 - 00:12:20,460] we could have n1 equal 1.
+- [00:12:21,400 - 00:12:21,960] Let's see.
+- [00:12:22,860 - 00:12:23,320] And,
+- [00:12:23,860 - 00:12:25,100] The sum has to be 2.
+- [00:12:25,460 - 00:12:26,980] The sum has to add up to 2.
+- [00:12:27,680 - 00:12:30,740] And what's another possibility?
+- [00:12:31,680 - 00:12:32,140] Yeah,
+- [00:12:32,820 - 00:12:33,600] you can have them both.
+- [00:12:33,900 - 00:12:34,620] One go to 1
+- [00:12:34,620 - 00:12:35,220] and the other go to 2.
+- [00:12:36,200 - 00:12:36,520] Right.
+- [00:12:37,840 - 00:12:38,400] So,
+- [00:12:38,480 - 00:12:39,340] n1 is 1
+- [00:12:40,540 - 00:12:42,020] and n2 is 1.
+- [00:12:43,620 - 00:12:44,260] Right.
+- [00:12:45,540 - 00:12:46,180] So,
+- [00:12:46,240 - 00:12:46,760] now we have
+- [00:12:50,640 - 00:12:51,280] either
+- [00:12:52,420 - 00:12:53,700] this situation
+- [00:12:55,380 - 00:12:56,020] or
+- [00:12:56,020 - 00:12:58,080] what's the other situation
+- [00:12:58,080 - 00:12:58,340] was
+- [00:12:58,340 - 00:13:00,860] just a reverse.
+- [00:13:01,180 - 00:13:01,980] Not the reverse,
+- [00:13:02,240 - 00:13:02,400] the
+- [00:13:03,420 - 00:13:04,060] inverse.
+- [00:13:04,320 - 00:13:05,200] That's the reverse.
+- [00:13:05,220 - 00:13:06,320] The inverse.
+- [00:13:06,400 - 00:13:07,240] The inverse.
+- [00:13:09,280 - 00:13:10,400] The inverse.
+- [00:13:12,920 - 00:13:14,520] The first box
+- [00:13:15,940 - 00:13:17,660] goes to the lowest energy level
+- [00:13:17,660 - 00:13:18,720] and the second box
+- [00:13:18,720 - 00:13:19,440] goes to the
+- [00:13:19,440 - 00:13:20,260] just
+- [00:13:20,260 - 00:13:20,920] cross them all out.
+- [00:13:21,260 - 00:13:21,580] So,
+- [00:13:21,660 - 00:13:22,280] there are two ways
+- [00:13:22,280 - 00:13:23,220] to have
+- [00:13:23,220 - 00:13:24,180] n1 equal 1
+- [00:13:24,180 - 00:13:25,400] and n2 equal 2.
+- [00:13:25,560 - 00:13:25,980] In general,
+- [00:13:26,000 - 00:13:27,320] there will be a multiplicity
+- [00:13:27,320 - 00:13:27,740] of ways
+- [00:13:27,740 - 00:13:28,780] of
+- [00:13:28,780 - 00:13:29,840] obtaining
+- [00:13:29,840 - 00:13:30,760] a given set
+- [00:13:30,760 - 00:13:30,920] of
+- [00:13:30,920 - 00:13:32,160] occupation numbers.
+- [00:13:32,780 - 00:13:34,700] What is that multiplicity?
+- [00:13:34,760 - 00:13:35,200] Well,
+- [00:13:35,220 - 00:13:36,400] what is the multiplicity
+- [00:13:37,839 - 00:13:38,800] in general?
+- [00:13:39,660 - 00:13:41,900] I told you what the answer was last time.
+- [00:13:42,020 - 00:13:43,400] I assume you've all worked it out.
+- [00:13:43,460 - 00:13:44,100] It's not very hard.
+- [00:13:44,160 - 00:13:45,800] It's a simple combinatoric problem.
+- [00:13:46,560 - 00:13:47,040] Standard
+- [00:13:48,620 - 00:13:49,340] combinatoric problem.
+- [00:13:49,480 - 00:13:50,580] And I'm not going to prove it here.
+- [00:13:52,460 - 00:13:54,060] We'll just write down the answer.
+- [00:13:54,620 - 00:13:55,980] Let's call that number,
+- [00:13:56,140 - 00:13:57,040] I just call it
+- [00:13:57,040 - 00:13:57,480] number.
+- [00:13:58,260 - 00:13:59,700] The number of ways
+- [00:14:00,720 - 00:14:01,200] that
+- [00:14:01,939 - 00:14:04,360] the energy can be partitioned up
+- [00:14:04,360 - 00:14:05,120] among
+- [00:14:05,220 - 00:14:05,780] the boxes
+- [00:14:05,780 - 00:14:07,180] such that
+- [00:14:07,180 - 00:14:08,980] we have a given set
+- [00:14:08,980 - 00:14:10,360] of n sub i's.
+- [00:14:11,540 - 00:14:13,360] And that is equal
+- [00:14:13,980 - 00:14:16,040] to n factorial
+- [00:14:17,780 - 00:14:18,740] divided
+- [00:14:18,740 - 00:14:21,320] by n1 factorial
+- [00:14:21,320 - 00:14:22,980] n2 factorial
+- [00:14:22,980 - 00:14:24,580] n3 factorial
+- [00:14:25,000 - 00:14:26,180] dot dot dot.
+- [00:14:27,140 - 00:14:28,300] In other words,
+- [00:14:28,320 - 00:14:29,160] let's write it
+- [00:14:29,160 - 00:14:30,820] as n factorial
+- [00:14:30,820 - 00:14:32,360] over
+- [00:14:32,360 - 00:14:33,760] the product
+- [00:14:33,760 - 00:14:35,200] over the product
+- [00:14:35,220 - 00:14:35,520] over i,
+- [00:14:35,740 - 00:14:36,960] the product
+- [00:14:36,960 - 00:14:38,060] over all the states,
+- [00:14:38,280 - 00:14:39,040] and the product
+- [00:14:39,074 - 00:14:39,314] 好
+- [00:14:40,642 - 00:14:41,762] the occupation number
+- [00:14:43,762 - 00:14:45,162] n sub i factorial
+- [00:14:48,002 - 00:14:49,982] that's the answer to that combinatorial problem
+- [00:14:57,842 - 00:14:59,222] now let me tell you first of all
+- [00:14:59,562 - 00:15:01,742] that in practical applications
+- [00:15:03,862 - 00:15:05,322] these kind of things
+- [00:15:06,162 - 00:15:08,822] think of them as functions of the n's
+- [00:15:08,822 - 00:15:10,142] first of all,
+- [00:15:10,142 - 00:15:11,631] all the n's in the problem
+- [00:15:11,631 - 00:15:13,121] are going to be very large
+- [00:15:14,282 - 00:15:18,642] capital N is a huge huge number of copies
+- [00:15:19,862 - 00:15:24,962] so huge that the occupation numbers of every state
+- [00:15:25,342 - 00:15:27,582] will also be assumed to be large
+- [00:15:28,021 - 00:15:29,842] now of course that's a bit of a contradiction
+- [00:15:29,842 - 00:15:31,692] because we don't expect to have occupation
+- [00:15:31,692 - 00:15:33,542] numbers way way way up on the top
+- [00:15:33,542 - 00:15:35,292] but those occupation numbers
+- [00:15:35,292 - 00:15:37,042] which are non-zero and non-negligible
+- [00:15:37,502 - 00:15:38,522] will typically be
+- [00:15:38,522 - 00:15:38,802] proportionally
+- [00:15:38,802 - 00:15:39,742] in itself
+- [00:15:39,742 - 00:15:42,482] if you double the total number of particles,
+- [00:15:42,482 - 00:15:43,902] the total number of boxes
+- [00:15:43,902 - 00:15:46,222] you will double the number of
+- [00:15:46,222 - 00:15:50,822] of boxes in each one of these configurations
+- [00:15:51,842 - 00:15:53,482] so by making capital N big
+- [00:15:53,482 - 00:15:55,122] we also make the little n's big
+- [00:15:57,602 - 00:15:58,082] one fact
+- [00:15:59,142 - 00:15:59,702] second
+- [00:16:00,342 - 00:16:01,042] think of this
+- [00:16:01,562 - 00:16:02,402] object over here
+- [00:16:02,402 - 00:16:05,242] as a function of the little n's
+- [00:16:07,282 - 00:16:08,362] it's a highly
+- [00:16:08,362 - 00:16:09,362] highly peaked function
+- [00:16:10,082 - 00:16:11,272] we're not going to prove it so
+- [00:16:11,272 - 00:16:12,462] I'm just going to tell it to you
+- [00:16:12,462 - 00:16:15,202] when the n's get very very very large
+- [00:16:16,002 - 00:16:18,962] actually I will wind up doing a calculation
+- [00:16:18,962 - 00:16:21,922] for you which will show you this fact
+- [00:16:22,401 - 00:16:24,622] but when the n's get very very large
+- [00:16:25,222 - 00:16:26,882] if you were to think of
+- [00:16:29,922 - 00:16:31,602] this quantity over here
+- [00:16:32,282 - 00:16:34,182] as a function of the n's
+- [00:16:34,562 - 00:16:38,342] now the horizontal axis stands for many horizontal axes
+- [00:16:38,342 - 00:16:41,062] namely all the n's
+- [00:16:42,662 - 00:16:44,442] typically this number here
+- [00:16:44,862 - 00:16:47,782] is a very sharply peaked
+- [00:16:47,782 - 00:16:49,121] I didn't draw it sharply enough
+- [00:16:49,621 - 00:16:51,641] as the n's get large it
+- [00:16:51,641 - 00:16:53,662] becomes a rather sharply peaked function
+- [00:16:56,001 - 00:16:56,602] so that
+- [00:16:57,582 - 00:16:59,682] it doesn't fluctuate very much
+- [00:17:00,221 - 00:17:02,822] it doesn't fluctuate nearly as much
+- [00:17:03,542 - 00:17:05,002] as the size of n itself
+- [00:17:05,881 - 00:17:07,101] that means when the number of boxes
+- [00:17:07,101 - 00:17:08,321] is very large it's not a big deal
+- [00:17:08,342 - 00:17:09,821] when the number of boxes gets very very big
+- [00:17:09,821 - 00:17:11,582] you can be pretty sure
+- [00:17:11,582 - 00:17:13,342] and as the number of boxes gets bigger and bigger
+- [00:17:13,342 - 00:17:15,002] you can get surer and surer
+- [00:17:15,602 - 00:17:15,882] of
+- [00:17:17,102 - 00:17:19,262] what these little n's are
+- [00:17:19,262 - 00:17:20,781] now more specifically
+- [00:17:20,781 - 00:17:22,142] that sounds a little ridiculous
+- [00:17:22,902 - 00:17:26,502] can I tell the difference between having a box n1
+- [00:17:27,182 - 00:17:29,702] with 5271
+- [00:17:30,882 - 00:17:32,002] occupation number
+- [00:17:32,002 - 00:17:33,022] versus 5272
+- [00:17:34,842 - 00:17:36,042] no of course not
+- [00:17:36,482 - 00:17:38,022] what I mean by saying it's narrow
+- [00:17:38,022 - 00:17:39,832] is that it's narrow on
+- [00:17:39,832 - 00:17:41,642] the scale of capital N itself.
+- [00:17:41,642 - 00:17:43,382] In other words,
+- [00:17:43,382 - 00:17:43,922] that you
+- [00:17:43,922 - 00:17:47,262] could be pretty sure what the value
+- [00:17:47,262 - 00:17:50,602] of N sub i over N is.
+- [00:17:50,602 - 00:17:54,702] That the N's don't fluctuate
+- [00:17:54,702 - 00:17:55,222] very much.
+- [00:17:55,222 - 00:17:58,062] The numbers get bigger and bigger,
+- [00:17:58,062 - 00:17:59,802] they get tighter and tighter.
+- [00:18:00,682 - 00:18:02,422] That means that for very,
+- [00:18:02,422 - 00:18:03,382] very large systems,
+- [00:18:03,382 - 00:18:05,962] these N's get pretty definite,
+- [00:18:05,962 - 00:18:06,242] or
+- [00:18:06,242 - 00:18:10,642] at least the fractional N's become pretty definite.
+- [00:18:11,962 - 00:18:14,542] That suggests that we give them a name,
+- [00:18:14,542 - 00:18:16,062] the fractional N's.
+- [00:18:16,062 - 00:18:17,002] Let's give the fractional
+- [00:18:17,002 - 00:18:17,662] N's a name.
+- [00:18:17,662 - 00:18:22,722] Let's call it P of i.
+- [00:18:22,722 - 00:18:24,622] Why P?
+- [00:18:24,622 - 00:18:25,962] Well,
+- [00:18:25,962 - 00:18:28,782] if you have a large number of identical replicas
+- [00:18:30,362 - 00:18:32,182] subject to some fluctuation,
+- [00:18:32,182 - 00:18:35,302] but you know the ratio
+- [00:18:36,602 - 00:18:38,362] of the number of each type
+- [00:18:38,362 - 00:18:40,122] of box to the total number,
+- [00:18:40,122 - 00:18:42,142] it makes a lot of sense to think of
+- [00:18:42,142 - 00:18:44,622] that as the probability that any
+- [00:18:44,622 - 00:18:47,102] given box is in the state i.
+- [00:18:47,102 - 00:18:49,062] What is probability,
+- [00:18:49,062 - 00:18:49,462] after
+- [00:18:49,462 - 00:18:49,702] all?
+- [00:18:49,702 - 00:18:51,742] It's essentially the same thing as saying you
+- [00:18:51,742 - 00:18:53,782] have a large number of replicas of the
+- [00:18:53,782 - 00:18:54,802] same thing,
+- [00:18:54,802 - 00:18:58,092] and you take the ratio between each
+- [00:18:58,092 - 00:19:01,382] given outcome relative to the total number
+- [00:19:01,382 - 00:19:02,782] of copies that you have,
+- [00:19:02,782 - 00:19:03,962] and that's what's called probability,
+- [00:19:03,962 - 00:19:04,982] or at least that's one
+- [00:19:04,982 - 00:19:06,062] way of representing probability.
+- [00:19:06,062 - 00:19:10,642] So N sub i over N can be thought of,
+- [00:19:10,642 - 00:19:12,282] or at least N
+- [00:19:12,282 - 00:19:18,322] sub i over N at the maximum up here,
+- [00:19:18,322 - 00:19:21,302] the most likely value of these occupation numbers,
+- [00:19:21,302 - 00:19:22,102] they
+- [00:19:22,102 - 00:19:24,872] can be identified with the probability that
+- [00:19:24,872 - 00:19:27,642] any given box is in the state i.
+- [00:19:27,642 - 00:19:29,042] That's the
+- [00:19:29,042 - 00:19:29,702] basic tool.
+- [00:19:29,702 - 00:19:33,722] It's as simple as that.
+- [00:19:34,982 - 00:19:37,462] So we'll define P sub i to
+- [00:19:37,462 - 00:19:39,942] be little n sub i over N,
+- [00:19:39,942 - 00:19:42,562] and now let's rewrite the two constraints
+- [00:19:42,562 - 00:19:43,402] that are up there.
+- [00:19:43,402 - 00:19:45,642] The two constraints that are up there are,
+- [00:19:45,642 - 00:19:46,302] first of all,
+- [00:19:46,302 - 00:19:47,622] the sum of
+- [00:19:47,622 - 00:19:51,082] N sub i equals N divided by capital N.
+- [00:19:51,082 - 00:19:53,082] What does it become?
+- [00:19:53,082 - 00:19:55,402] It becomes the sum of N sub
+- [00:19:55,402 - 00:19:57,842] i over N is equal to 1,
+- [00:19:57,842 - 00:20:00,912] or simply the familiar statement
+- [00:20:00,912 - 00:20:03,982] that the sum of the probabilities
+- [00:20:05,302 - 00:20:06,342] So N add up to 1.
+- [00:20:13,562 - 00:20:15,662] Divide through by N and that tells us
+- [00:20:15,662 - 00:20:17,762] that the sums of the probabilities add up
+- [00:20:17,762 - 00:20:18,062] to 1.
+- [00:20:18,062 - 00:20:19,462] Not a big surprise.
+- [00:20:19,462 - 00:20:21,582] The other statement,
+- [00:20:21,582 - 00:20:22,462] let's write it down,
+- [00:20:22,462 - 00:20:28,382] summation over i of N
+- [00:20:28,382 - 00:20:30,002] sub i e sub i,
+- [00:20:30,002 - 00:20:34,962] equals capital N times the average Scripture number.
+- [00:20:34,962 - 00:20:34,962] The horizontal command
+- [00:20:34,962 - 00:20:36,422] energy in each box.
+- [00:20:36,422 - 00:20:38,072] I'll continue to use the
+- [00:20:38,072 - 00:20:39,722] overbar notation for a little while
+- [00:20:39,722 - 00:20:40,702] until I get tired of it.
+- [00:20:40,702 - 00:20:43,162] Now divide this by capital N.
+- [00:20:43,162 - 00:20:49,102] This becomes n sub i over n,
+- [00:20:49,102 - 00:20:49,782] and
+- [00:20:50,582 - 00:20:51,362] that's p sub i.
+- [00:20:51,362 - 00:20:58,102] The average,
+- [00:20:58,102 - 00:20:59,362] in fact this is a
+- [00:20:59,362 - 00:21:00,622] much more general formula than just
+- [00:21:00,622 - 00:21:01,482] for the average energy.
+- [00:21:01,482 - 00:21:02,702] In general,
+- [00:21:02,702 - 00:21:04,762] the average of a quantity
+- [00:21:04,762 - 00:21:06,822] is the weighted sum over the
+- [00:21:06,822 - 00:21:09,572] states of the system of the probability of
+- [00:21:09,572 - 00:21:12,322] the i-th system times the value of that quantity
+- [00:21:12,882 - 00:21:14,042] in the i-th state.
+- [00:21:14,042 - 00:21:15,562] In this particular case,
+- [00:21:15,562 - 00:21:16,242] it's the energy.
+- [00:21:16,242 - 00:21:18,482] So these two constraints,
+- [00:21:18,802 - 00:21:20,242] or those two constraints up there,
+- [00:21:20,242 - 00:21:22,982] become the very familiar…
+- [00:21:23,982 - 00:21:25,422] Is that the total energy?
+- [00:21:25,742 - 00:21:26,302] No.
+- [00:21:26,302 - 00:21:28,062] No,
+- [00:21:28,062 - 00:21:28,842] no,
+- [00:21:28,842 - 00:21:29,342] no,
+- [00:21:29,342 - 00:21:29,762] no,
+- [00:21:29,762 - 00:21:30,222] no.
+- [00:21:30,622 - 00:21:31,222] Okay,
+- [00:21:31,222 - 00:21:32,222] let's go back over it again.
+- [00:21:32,222 - 00:21:34,422] Not the right-hand side is not.
+- [00:21:34,422 - 00:21:35,922] We started with
+- [00:21:35,922 - 00:21:36,542] sum of i,
+- [00:21:36,542 - 00:21:38,202] n sub i,
+- [00:21:38,202 - 00:21:41,802] p sub i is equal to the total energy,
+- [00:21:41,802 - 00:21:44,702] but the total energy is n times
+- [00:21:44,702 - 00:21:46,122] the energy of any box.
+- [00:21:46,122 - 00:21:49,402] Then we divide it by capital N.
+- [00:21:49,402 - 00:21:52,602] So I have gotten rid,
+- [00:21:52,602 - 00:21:54,002] effectively,
+- [00:21:54,681 - 00:21:56,362] of the large number of boxes,
+- [00:21:56,362 - 00:21:57,542] but of course the large number
+- [00:21:57,542 - 00:21:58,722] of boxes are still the problem
+- [00:21:58,722 - 00:21:59,662] here because they're going to tell
+- [00:21:59,662 - 00:22:00,602] us it's the large number of boxes.
+- [00:22:00,622 - 00:22:02,552] So the large number of boxes and
+- [00:22:02,552 - 00:22:04,482] how they equilibrate the energy between them,
+- [00:22:04,482 - 00:22:05,322] that's
+- [00:22:05,322 - 00:22:08,242] going to tell us what the energy distribution,
+- [00:22:08,242 - 00:22:09,462] what the p sub i's are.
+- [00:22:09,462 - 00:22:10,682] I haven't told you
+- [00:22:10,682 - 00:22:11,522] what the p sub i's are.
+- [00:22:11,522 - 00:22:13,002] Okay,
+- [00:22:13,002 - 00:22:15,642] so these are constraints.
+- [00:22:15,642 - 00:22:19,962] Now,
+- [00:22:19,962 - 00:22:21,582] what are the p sub i's?
+- [00:22:22,102 - 00:22:24,282] The p sub i's are
+- [00:22:24,282 - 00:22:26,462] simply the values of the n's,
+- [00:22:26,462 - 00:22:27,522] not the values of the n's,
+- [00:22:27,522 - 00:22:28,162] but the ratio,
+- [00:22:28,402 - 00:22:30,282] the fractional value of the n's.
+- [00:22:37,222 - 00:22:38,262] Constraints are
+- [00:22:39,341 - 00:22:44,042] necessarily entitled to the maximum oxygen saturation,
+- [00:22:44,042 - 00:22:45,122] and if it is,
+- [00:22:45,122 - 00:22:45,122] how do you out
+- [00:22:45,122 - 00:22:45,682] But now let's go back,
+- [00:22:45,682 - 00:22:46,382] we have a nearly happened.
+- [00:22:46,482 - 00:22:46,772] My name is Wheremed Object
+- [00:22:46,772 - 00:22:47,062] Paul reflect into the engaggending of
+- [00:22:47,062 - 00:22:47,162] i equal r
+- [00:22:47,162 - 00:22:52,042] r of a sorry i'm going to bring you,
+- [00:22:52,042 - 00:22:56,862] what's now rice a老
+- [00:22:56,862 - 00:22:56,942] So,
+- [00:22:56,942 - 00:23:04,782] we then have to find the maximum of pound here.
+- [00:23:05,782 - 00:23:07,722] I don't know when I started calling it pound,
+- [00:23:07,722 - 00:23:08,782] but a long time ago.
+- [00:23:10,782 - 00:23:15,861] The maximum of this thing as a function of the ends subject to
+- [00:23:15,861 - 00:23:20,941] these constraints can either be written this way or the way I'm talking.
+- [00:23:21,022 - 00:23:22,422] This is the mathematical problem.
+- [00:23:22,422 - 00:23:25,282] And it sounds like a terrible mathematical problem,
+- [00:23:25,282 - 00:23:28,082] but fortunately it's extremely easy,
+- [00:23:28,082 - 00:23:29,482] surprisingly easy.
+- [00:23:30,602 - 00:23:34,962] It's a couple of lines.
+- [00:23:47,921 - 00:23:48,361] Now,
+- [00:23:48,361 - 00:23:49,402] the first thing to do,
+- [00:23:49,402 - 00:23:51,382] you don't have to do what I'm going to do.
+- [00:23:51,402 - 00:23:52,342] There's other ways to do it.
+- [00:23:52,422 - 00:23:54,942] I'm going to take you through the most efficient procedure,
+- [00:23:54,942 - 00:23:58,262] which I didn't invent.
+- [00:23:58,402 - 00:23:59,702] It was invented a long time ago.
+- [00:23:59,782 - 00:24:01,342] Probably people tried other procedures.
+- [00:24:01,902 - 00:24:05,012] But the most efficient procedure begins
+- [00:24:05,012 - 00:24:08,122] by saying if you're maximizing pound,
+- [00:24:08,122 - 00:24:13,242] you can also substitute maximizing its logarithm.
+- [00:24:14,022 - 00:24:14,622] Why?
+- [00:24:14,782 - 00:24:17,942] If a function is maximized at some point,
+- [00:24:17,942 - 00:24:19,342] so is its logarithm.
+- [00:24:19,462 - 00:24:21,742] And the reason is because logarithms...
+- [00:24:22,442 - 00:24:25,702] are monatomic functions of their arguments.
+- [00:24:26,182 - 00:24:28,122] So we might as well maximize it.
+- [00:24:28,682 - 00:24:29,682] The logarithm.
+- [00:24:29,902 - 00:24:31,602] Why is the logarithm interesting?
+- [00:24:31,802 - 00:24:34,762] We're going to find out that the logarithm is interesting because
+- [00:24:34,762 - 00:24:37,722] it's easier to work with a sum than with a product.
+- [00:24:39,142 - 00:24:40,322] Pound is a product.
+- [00:24:41,822 - 00:24:43,842] The logarithm of it will be a sum.
+- [00:24:43,982 - 00:24:45,722] And that will help us analyze it.
+- [00:24:45,982 - 00:24:47,282] So what's the logarithm?
+- [00:24:52,422 - 00:24:52,822] Of pound.
+- [00:24:53,342 - 00:24:55,992] The answer is the logarithm of n
+- [00:24:55,992 - 00:24:58,642] factorial divided by the logarithm of n1...
+- [00:24:58,642 - 00:24:59,002] Sorry.
+- [00:24:59,382 - 00:25:02,562] Minus the logarithm of n1 factorial plus n2 factorial.
+- [00:25:02,702 - 00:25:03,042] In other words,
+- [00:25:03,042 - 00:25:08,712] it's just log n factorial minus the sum
+- [00:25:08,712 - 00:25:14,382] of the logs of the n sub i factorial.
+- [00:25:15,182 - 00:25:18,412] But now here the simplification happens
+- [00:25:18,412 - 00:25:21,642] when we use the Stirling approximation.
+- [00:25:22,382 - 00:25:25,092] The Stirling approximation is the trick that makes
+- [00:25:25,092 - 00:25:27,802] all of this work and work out beautifully.
+- [00:25:28,202 - 00:25:29,882] So let me remind you what it is.
+- [00:25:30,822 - 00:25:32,362] The Stirling approximation can be
+- [00:25:32,362 - 00:25:33,902] written in one of two ways.
+- [00:25:34,262 - 00:25:38,302] It can be written as either n factorial is approximately
+- [00:25:38,302 - 00:25:42,342] equal to n to the n e to the minus n.
+- [00:25:43,502 - 00:25:45,302] Or you can take its logarithm.
+- [00:25:45,782 - 00:25:46,302] Incidentally,
+- [00:25:46,302 - 00:25:47,442] the...
+- [00:25:48,102 - 00:25:50,082] If you did it numerically...
+- [00:25:50,642 - 00:25:52,342] You would find out that this is
+- [00:25:52,342 - 00:25:54,042] not all that accurate as n gets big.
+- [00:25:54,402 - 00:25:55,922] But if you take its logarithm,
+- [00:25:55,922 - 00:25:57,842] you'll find it's really accurate.
+- [00:25:58,522 - 00:26:01,622] The logarithm of n factorial is equal
+- [00:26:01,622 - 00:26:04,722] to the logarithm of n to the n...
+- [00:26:04,722 - 00:26:06,542] That's n log n...
+- [00:26:10,002 - 00:26:10,482] Minus...
+- [00:26:10,482 - 00:26:12,242] Or plus the logarithm of
+- [00:26:12,242 - 00:26:14,002] e to the minus the n.
+- [00:26:14,162 - 00:26:15,302] e to the minus n.
+- [00:26:15,841 - 00:26:17,701] The logarithm of e to the
+- [00:26:17,701 - 00:26:19,562] minus n is just minus n.
+- [00:26:19,562 - 00:26:19,702] So again,
+- [00:26:19,702 - 00:26:24,982] I think I proved this last time
+- [00:26:24,982 - 00:26:30,262] by doing a little integral for you.
+- [00:26:30,362 - 00:26:30,462] Yeah.
+- [00:26:30,642 - 00:26:32,302] We did this last time.
+- [00:26:32,782 - 00:26:35,302] Or at least motivated it.
+- [00:26:37,702 - 00:26:39,522] And this is what we have here.
+- [00:26:40,422 - 00:26:41,582] Logarithms of n factorial.
+- [00:26:42,082 - 00:26:43,712] And so we're going to use
+- [00:26:43,712 - 00:26:45,342] the Stirling approximation in this form.
+- [00:26:46,741 - 00:26:50,422] If you actually go and numerically study these things,
+- [00:26:50,422 - 00:26:52,682] you find out that this formula is very accurate.
+- [00:26:52,902 - 00:26:53,842] This one is not so accurate.
+- [00:26:54,522 - 00:26:54,962] This one is...
+- [00:26:54,962 - 00:26:55,542] You know,
+- [00:26:55,542 - 00:26:57,602] you take the thing which is
+- [00:26:57,602 - 00:26:59,662] pretty accurate and you exponentiate it.
+- [00:26:59,822 - 00:27:00,022] Well,
+- [00:27:00,022 - 00:27:02,582] you can flop around because of the exponential.
+- [00:27:02,822 - 00:27:05,102] But the logarithm is a highly accurate formula.
+- [00:27:06,262 - 00:27:07,442] When I say it's accurate,
+- [00:27:07,442 - 00:27:08,542] I mean it becomes very,
+- [00:27:08,542 - 00:27:09,622] very good for large n.
+- [00:27:10,802 - 00:27:12,282] The corrections to it get
+- [00:27:12,282 - 00:27:13,762] smaller and smaller with large n.
+- [00:27:13,762 - 00:27:14,822] Okay.
+- [00:27:16,002 - 00:27:19,422] So let's now substitute that into here.
+- [00:27:21,262 - 00:27:26,462] We have this equals log of n factorial,
+- [00:27:26,462 - 00:27:28,762] which is n to the n.
+- [00:27:31,722 - 00:27:32,282] No,
+- [00:27:32,282 - 00:27:32,742] n log n.
+- [00:27:32,742 - 00:27:32,742] No,
+- [00:27:32,742 - 00:27:34,262] n log n.
+- [00:27:35,042 - 00:27:36,602] Can you just leave that out?
+- [00:27:37,602 - 00:27:41,602] n log n minus n.
+- [00:27:42,262 - 00:27:43,542] That's this term here.
+- [00:27:43,602 - 00:27:43,742] Okay.
+- [00:27:43,762 - 00:27:49,872] And then we have minus the summation of n
+- [00:27:49,872 - 00:27:55,982] sub i log n sub i minus n sub i.
+- [00:28:00,082 - 00:28:00,522] That's it.
+- [00:28:01,022 - 00:28:02,462] Now let's work on it a little bit.
+- [00:28:02,582 - 00:28:04,012] Let me take it over here and I'm
+- [00:28:04,012 - 00:28:05,442] going to take this piece of it over here.
+- [00:28:05,602 - 00:28:05,862] Let's see.
+- [00:28:05,902 - 00:28:07,342] I want my signs right.
+- [00:28:08,282 - 00:28:09,242] This one is plus.
+- [00:28:09,302 - 00:28:10,122] This one is minus.
+- [00:28:10,882 - 00:28:11,982] This one is minus.
+- [00:28:12,062 - 00:28:13,082] And I think this one is plus.
+- [00:28:13,082 - 00:28:14,062] I all bright.
+- [00:28:15,442 - 00:28:17,382] How about I put a bracket around here.
+- [00:28:20,162 - 00:28:20,702] Minus,
+- [00:28:20,702 - 00:28:22,342] I put a bracket around here.
+- [00:28:24,422 - 00:28:25,182] All right.
+- [00:28:25,222 - 00:28:27,322] Let's work on the second term a little bit.
+- [00:28:27,762 - 00:28:29,252] The work that I'm going
+- [00:28:29,252 - 00:28:30,742] to do with is very simple.
+- [00:28:31,002 - 00:28:34,922] I'm going to simply substitute that n
+- [00:28:34,922 - 00:28:38,842] is equal to capital N times p.
+- [00:28:39,342 - 00:28:40,522] For each i.
+- [00:28:42,522 - 00:28:43,062] Therefore the q.
+- [00:28:44,102 - 00:28:45,952] That's the same as saying n sub
+- [00:28:45,952 - 00:28:47,802] i over capital N is p sub i.
+- [00:28:48,062 - 00:28:49,792] I'm just going to plug that
+- [00:28:49,792 - 00:28:51,522] into here and grind it through.
+- [00:28:52,922 - 00:28:53,842] It's quite easy.
+- [00:28:54,682 - 00:28:56,462] So let's take the thing in the brackets.
+- [00:28:56,562 - 00:29:01,232] The thing in the brackets then is equal to each
+- [00:29:01,232 - 00:29:05,902] n sub i that's replaced by n times p sub i.
+- [00:29:06,302 - 00:29:07,852] So that's going to give
+- [00:29:07,852 - 00:29:09,402] you an overall factor of n.
+- [00:29:10,202 - 00:29:11,922] Then each n sub i
+- [00:29:11,922 - 00:29:13,642] will be proportional to capital N,
+- [00:29:13,642 - 00:29:16,162] be an overall factor of n,
+- [00:29:16,642 - 00:29:18,362] and then there will be a sum,
+- [00:29:18,362 - 00:29:22,102] and the first factor will be p of i.
+- [00:29:24,182 - 00:29:25,582] That's the n sub i here.
+- [00:29:25,722 - 00:29:28,562] Then we have logarithm of n sub i.
+- [00:29:28,862 - 00:29:39,222] So that's logarithm of p of i times,
+- [00:29:39,402 - 00:29:39,642] n.
+- [00:29:41,442 - 00:29:42,802] That's this term over here.
+- [00:29:43,942 - 00:29:48,112] And then we get the
+- [00:29:48,112 - 00:29:52,282] subtract off minus n sub i.
+- [00:29:52,522 - 00:29:52,962] Incidentally,
+- [00:29:52,962 - 00:29:53,562] I left,
+- [00:29:53,562 - 00:29:54,742] no,
+- [00:29:54,742 - 00:29:55,782] this is fine.
+- [00:29:58,941 - 00:30:01,102] I think if I were really doing it right,
+- [00:30:01,102 - 00:30:02,722] I would have put the bracket over here.
+- [00:30:06,062 - 00:30:06,502] Summation,
+- [00:30:06,502 - 00:30:09,282] n sub i log n sub i minus,
+- [00:30:09,642 - 00:30:10,002] summation,
+- [00:30:10,002 - 00:30:10,842] n sub i.
+- [00:30:12,202 - 00:30:13,642] So I won't bother writing,
+- [00:30:14,902 - 00:30:15,262] yes,
+- [00:30:15,262 - 00:30:15,942] I will bother writing,
+- [00:30:16,082 - 00:30:19,182] minus summation of n sub i.
+- [00:30:20,462 - 00:30:20,822] Okay.
+- [00:30:21,162 - 00:30:23,382] Why don't you just write p sub i there?
+- [00:30:23,822 - 00:30:24,182] Where?
+- [00:30:25,102 - 00:30:26,002] On the n sub i,
+- [00:30:26,002 - 00:30:26,842] the last n sub i.
+- [00:30:27,122 - 00:30:27,482] Oh,
+- [00:30:27,482 - 00:30:28,642] I could write p sub i there.
+- [00:30:28,782 - 00:30:30,962] You mean leave it to the factor of n here.
+- [00:30:31,242 - 00:30:31,602] Yeah.
+- [00:30:32,762 - 00:30:33,302] I could.
+- [00:30:34,862 - 00:30:35,342] You're right,
+- [00:30:35,342 - 00:30:35,842] it doesn't matter.
+- [00:30:36,002 - 00:30:37,482] But either way,
+- [00:30:37,482 - 00:30:37,862] it'll,
+- [00:30:38,542 - 00:30:39,182] the summation,
+- [00:30:39,182 - 00:30:39,642] the summation of,
+- [00:30:40,282 - 00:30:40,842] so this,
+- [00:30:40,842 - 00:30:41,182] this piece,
+- [00:30:41,282 - 00:30:42,242] the way I've defined it,
+- [00:30:42,322 - 00:30:44,782] this piece does not multiply capital N.
+- [00:30:45,502 - 00:30:47,082] And it doesn't matter.
+- [00:30:47,162 - 00:30:48,302] You can do it the way you want also.
+- [00:30:48,862 - 00:30:51,002] The summation of n sub i is capital N,
+- [00:30:51,002 - 00:30:51,242] right?
+- [00:30:52,302 - 00:30:52,822] Okay,
+- [00:30:52,822 - 00:30:55,182] so let's replace this by minus capital N.
+- [00:30:56,462 - 00:30:57,302] And now,
+- [00:30:57,302 - 00:30:58,062] that,
+- [00:30:59,742 - 00:31:02,402] that cancels this capital N here.
+- [00:31:04,302 - 00:31:04,822] Right?
+- [00:31:04,822 - 00:31:04,842] Okay.
+- [00:31:09,182 - 00:31:10,102] That one cancels this.
+- [00:31:10,322 - 00:31:10,882] So,
+- [00:31:10,882 - 00:31:17,682] I think we can safely replace this,
+- [00:31:18,302 - 00:31:18,962] and this,
+- [00:31:20,202 - 00:31:21,022] and ignore that.
+- [00:31:22,982 - 00:31:24,002] Finish with that.
+- [00:31:26,822 - 00:31:27,102] Now,
+- [00:31:27,102 - 00:31:27,702] what about this?
+- [00:31:30,162 - 00:31:32,642] Log of p times n is just
+- [00:31:32,642 - 00:31:35,122] log of p plus log of n.
+- [00:31:35,522 - 00:31:36,082] So,
+- [00:31:36,082 - 00:31:38,542] this becomes n times summation,
+- [00:31:39,182 - 00:31:41,002] of p of i,
+- [00:31:41,002 - 00:31:44,242] log p of i,
+- [00:31:46,382 - 00:31:47,642] that's the first term,
+- [00:31:47,862 - 00:31:50,562] and then plus summation,
+- [00:31:50,562 - 00:31:51,542] sorry,
+- [00:31:51,542 - 00:31:52,022] n,
+- [00:31:55,562 - 00:31:56,842] summation of i,
+- [00:31:59,472 - 00:32:00,562] of p of i,
+- [00:32:00,562 - 00:32:02,702] times log n.
+- [00:32:03,922 - 00:32:05,382] See where that came from.
+- [00:32:05,682 - 00:32:08,442] The first term is gotten by just
+- [00:32:08,442 - 00:32:10,242] taking the log of p sub i.
+- [00:32:10,662 - 00:32:13,882] The second term is gotten by replacing the log here
+- [00:32:13,882 - 00:32:14,842] just by log of n.
+- [00:32:15,342 - 00:32:15,742] So,
+- [00:32:15,742 - 00:32:16,202] that's this.
+- [00:32:18,342 - 00:32:18,742] Now,
+- [00:32:18,742 - 00:32:19,902] what's the sum of p sub i?
+- [00:32:20,822 - 00:32:21,222] One.
+- [00:32:22,122 - 00:32:25,242] Which is pretty much what you would have done
+- [00:32:25,242 - 00:32:26,622] if you would have done it the way you said.
+- [00:32:27,782 - 00:32:28,182] Alright,
+- [00:32:28,182 - 00:32:29,082] so this just goes away.
+- [00:32:31,462 - 00:32:33,462] And this gives us n log n.
+- [00:32:34,182 - 00:32:35,842] It comes in with a minus sign,
+- [00:32:36,281 - 00:32:38,422] and so it cancels this n log n over here.
+- [00:32:40,582 - 00:32:42,022] This thing is gone.
+- [00:32:42,662 - 00:32:46,922] All that's left is this term over here,
+- [00:32:46,982 - 00:32:47,922] with a minus sign.
+- [00:32:48,202 - 00:32:50,102] The minus sign coming from here.
+- [00:32:50,222 - 00:32:50,382] So,
+- [00:32:50,382 - 00:32:54,432] the whole thing is just minus n
+- [00:32:54,432 - 00:32:58,482] p of i log p of i,
+- [00:32:59,482 - 00:33:00,042] sorry,
+- [00:33:00,042 - 00:33:01,082] log p of i,
+- [00:33:05,022 - 00:33:06,582] summed over i.
+- [00:33:09,762 - 00:33:10,202] So,
+- [00:33:10,202 - 00:33:10,762] if we know that,
+- [00:33:10,802 - 00:33:12,242] if we had the probability distribution,
+- [00:33:17,122 - 00:33:18,042] we would count,
+- [00:33:18,302 - 00:33:18,642] well,
+- [00:33:18,642 - 00:33:19,822] if we had the probability,
+- [00:33:20,382 - 00:33:22,262] it is just n p
+- [00:33:22,262 - 00:33:24,142] sub i log p sub i.
+- [00:33:24,442 - 00:33:24,882] Now,
+- [00:33:24,882 - 00:33:25,842] we've seen this before.
+- [00:33:26,122 - 00:33:27,162] Anybody remember what it is?
+- [00:33:27,222 - 00:33:27,302] Well,
+- [00:33:27,302 - 00:33:27,802] the minus sign,
+- [00:33:27,802 - 00:33:28,362] excuse me.
+- [00:33:28,442 - 00:33:29,162] The minus sign.
+- [00:33:29,602 - 00:33:30,042] Entropy.
+- [00:33:30,642 - 00:33:31,082] Entropy.
+- [00:33:31,382 - 00:33:32,442] It is the entropy.
+- [00:33:34,642 - 00:33:36,322] It's n times the entropy,
+- [00:33:36,322 - 00:33:37,222] which appears there.
+- [00:33:40,061 - 00:33:42,202] Why did it come out n times the entropy?
+- [00:33:42,542 - 00:33:42,922] Well,
+- [00:33:42,922 - 00:33:44,342] the reason it came out n times the entropy
+- [00:33:44,342 - 00:33:45,462] is because there are n boxes.
+- [00:33:47,281 - 00:33:47,722] But,
+- [00:33:47,722 - 00:33:48,582] our problem,
+- [00:33:48,682 - 00:33:50,962] let's take our mathematical problem now.
+- [00:33:51,222 - 00:33:52,862] Our mathematical problem,
+- [00:33:54,462 - 00:33:55,242] first of all,
+- [00:33:55,242 - 00:33:56,682] has a minus sign in it from here.
+- [00:33:57,842 - 00:34:00,342] The number of ways of rearranging things,
+- [00:34:01,662 - 00:34:03,362] so we're given the logarithm of
+- [00:34:03,362 - 00:34:05,062] the number of ways of rearranging things,
+- [00:34:05,362 - 00:34:07,882] to get a given set of occupation numbers,
+- [00:34:08,442 - 00:34:11,141] there's just minus n times the sum over i,
+- [00:34:11,382 - 00:34:12,282] p of i,
+- [00:34:12,801 - 00:34:13,902] this is just going away,
+- [00:34:15,601 - 00:34:16,641] log p sub i.
+- [00:34:17,181 - 00:34:17,681] That's it.
+- [00:34:20,042 - 00:34:20,442] Yes,
+- [00:34:20,442 - 00:34:22,242] you can remember that this is the entropy,
+- [00:34:23,422 - 00:34:25,141] but let's just take it for what it is.
+- [00:34:30,581 - 00:34:32,502] How can it possibly come out to be negative?
+- [00:34:33,101 - 00:34:33,502] Well,
+- [00:34:33,502 - 00:34:33,982] it's negative.
+- [00:34:34,762 - 00:34:35,161] Yeah.
+- [00:34:35,402 - 00:34:37,161] The log p sub i is less than one,
+- [00:34:37,161 - 00:34:39,081] and so the logarithm is negative.
+- [00:34:39,402 - 00:34:40,242] That's really log,
+- [00:34:40,242 - 00:34:41,181] log p?
+- [00:34:41,681 - 00:34:42,121] Hmm?
+- [00:34:43,297 - 00:34:43,438] では、
+- [00:34:43,438 - 00:34:43,998] ご覧ください。
+- [00:34:46,690 - 00:34:46,889] ln,
+- [00:34:46,889 - 00:34:48,030] same as log.
+- [00:34:48,750 - 00:34:51,060] Log pound minus n times p
+- [00:34:51,060 - 00:34:53,370] sub i log p sub i.
+- [00:34:53,409 - 00:34:56,250] And we want to maximize this whole thing,
+- [00:34:56,409 - 00:34:57,610] including the minus sign.
+- [00:34:57,870 - 00:34:59,550] We want to maximize it.
+- [00:34:59,590 - 00:34:59,930] In other words,
+- [00:34:59,930 - 00:35:00,810] we want to find out
+- [00:35:01,450 - 00:35:05,190] what little a's give us the most likely distribution
+- [00:35:05,510 - 00:35:06,810] of occupation numbers,
+- [00:35:06,810 - 00:35:10,610] but subject to two constraints.
+- [00:35:11,530 - 00:35:14,590] The first constraint is that the sum of the probabilities
+- [00:35:14,590 - 00:35:15,390] we want to do is add up to 1.
+- [00:35:16,830 - 00:35:18,210] So we have to remember
+- [00:35:18,210 - 00:35:19,590] that when we're varying and trying
+- [00:35:19,590 - 00:35:23,050] to find the maximum of this,
+- [00:35:23,050 - 00:35:25,670] we have to keep two things fixed.
+- [00:35:26,050 - 00:35:28,970] We have the sum of the p's equal 1,
+- [00:35:29,650 - 00:35:31,070] and the sum of the p sub
+- [00:35:31,070 - 00:35:32,490] i e sub i's is equal to e.
+- [00:35:32,690 - 00:35:33,490] How do we do that?
+- [00:35:34,190 - 00:35:34,670] Well,
+- [00:35:34,670 - 00:35:39,130] the answer is the method of Lagrange multipliers.
+- [00:35:39,850 - 00:35:43,110] We add a Lagrange multiplier for each constraint.
+- [00:35:44,590 - 00:35:45,730] And then later on,
+- [00:35:45,730 - 00:35:46,590] afterwards,
+- [00:35:46,590 - 00:35:48,530] we figure out
+- [00:35:48,530 - 00:35:50,470] what the Lagrange multipliers have
+- [00:35:50,470 - 00:35:53,710] to be in order to make the constraints actually
+- [00:35:53,710 - 00:35:54,350] satisfied.
+- [00:35:55,010 - 00:35:58,510] So what we do then is we take this quantity,
+- [00:35:58,510 - 00:35:59,630] log of pound.
+- [00:36:01,590 - 00:36:02,370] And remember,
+- [00:36:02,370 - 00:36:03,470] what is it a function of?
+- [00:36:03,990 - 00:36:04,510] See,
+- [00:36:04,510 - 00:36:06,410] you can think of it either as
+- [00:36:06,410 - 00:36:08,310] a function of the n sub i's
+- [00:36:08,310 - 00:36:10,630] or a function of the p sub i's.
+- [00:36:10,850 - 00:36:11,990] In this problem,
+- [00:36:11,990 - 00:36:14,330] the variables that we're maximizing,
+- [00:36:14,330 - 00:36:15,190] with respect to,
+- [00:36:15,190 - 00:36:16,990] are these probabilities themselves.
+- [00:36:17,710 - 00:36:19,290] We're trying to find
+- [00:36:19,290 - 00:36:20,870] the most likely probability distribution.
+- [00:36:21,510 - 00:36:23,830] So the p sub i's are the unknowns.
+- [00:36:24,370 - 00:36:27,710] And we're going to maximize this expression,
+- [00:36:27,710 - 00:36:32,270] log of pound minus,
+- [00:36:33,470 - 00:36:35,790] now we have to put in Lagrange multipliers.
+- [00:36:35,830 - 00:36:38,230] The first Lagrange multiplier I will call alpha.
+- [00:36:39,890 - 00:36:41,810] That's the one that multiplies this constraint.
+- [00:36:48,430 - 00:36:50,810] And then the second Lagrange multiplier,
+- [00:36:50,810 - 00:36:54,010] I'll call beta minus beta.
+- [00:36:55,490 - 00:36:56,790] Summation over i,
+- [00:36:56,790 - 00:36:58,090] p sub i,
+- [00:36:58,090 - 00:36:59,310] p sub i.
+- [00:37:04,690 - 00:37:05,390] And the second Lagrange multiplier,
+- [00:37:05,390 - 00:37:05,390] I'll call beta minus beta.
+- [00:37:05,390 - 00:37:07,230] And we might as well now
+- [00:37:07,230 - 00:37:09,070] write in what log of pound is.
+- [00:37:09,190 - 00:37:10,230] Here it is right here.
+- [00:37:13,070 - 00:37:13,630] O.
+- [00:37:13,750 - 00:37:14,050] O.
+- [00:37:14,730 - 00:37:15,330] Incidentally,
+- [00:37:15,330 - 00:37:17,070] one step that I didn't,
+- [00:37:17,070 - 00:37:19,070] we might as well throw away this n.
+- [00:37:19,750 - 00:37:23,470] We're trying to maximize this subject to some constraints.
+- [00:37:24,010 - 00:37:24,610] Well,
+- [00:37:24,610 - 00:37:26,970] maximizing n times something is no
+- [00:37:26,970 - 00:37:29,330] different than maximizing the something itself.
+- [00:37:29,770 - 00:37:31,350] Let's get rid of all n's.
+- [00:37:31,570 - 00:37:36,730] We want to maximize this thing right here,
+- [00:37:36,730 - 00:37:40,370] subject to the constraints that the sum of
+- [00:37:40,370 - 00:37:42,150] the p's is 1.
+- [00:37:42,150 - 00:37:43,990] And the sum of the e
+- [00:37:43,990 - 00:37:45,830] times p's is equal to e.
+- [00:37:46,710 - 00:37:50,290] So we have sum of i,
+- [00:37:50,290 - 00:37:52,110] p of i,
+- [00:37:52,110 - 00:37:58,030] log p of i,
+- [00:37:58,030 - 00:37:59,590] with a minus sign.
+- [00:38:01,170 - 00:38:01,750] Plus,
+- [00:38:01,750 - 00:38:02,810] no minus.
+- [00:38:02,950 - 00:38:04,230] I think I chose the
+- [00:38:04,230 - 00:38:05,510] Lagrange multiplier to be minus here.
+- [00:38:06,330 - 00:38:06,910] p.
+- [00:38:10,290 - 00:38:10,870] Now,
+- [00:38:10,870 - 00:38:12,070] is there any questions?
+- [00:38:12,150 - 00:38:12,630] I'm going to stop this for now.
+- [00:38:13,470 - 00:38:13,870] Yeah.
+- [00:38:15,298 - 00:38:16,238] 來
+- [00:38:16,258 - 00:38:18,418] I'm envisioning that most of the n-thes
+- [00:38:18,418 - 00:38:20,578] of i's are either 0 or 1,
+- [00:38:20,578 - 00:38:26,198] because the ones which are appreciably non-zero,
+- [00:38:26,198 - 00:38:27,638] let's put it this way.
+- [00:38:27,778 - 00:38:27,998] Okay,
+- [00:38:27,998 - 00:38:30,078] let's think of it the following way.
+- [00:38:31,738 - 00:38:36,008] I think maybe it will be helpful to
+- [00:38:36,008 - 00:38:40,278] pretend that there is a highest energy level.
+- [00:38:40,298 - 00:38:43,798] The n-i's would be proportional to n.
+- [00:38:43,798 - 00:38:44,138] Yeah,
+- [00:38:44,138 - 00:38:44,878] yeah,
+- [00:38:44,878 - 00:38:45,898] but of course,
+- [00:38:45,898 - 00:38:46,918] of course,
+- [00:38:46,918 - 00:38:49,078] yeah.
+- [00:38:49,258 - 00:38:51,718] But let's for simplicity suppose that there
+- [00:38:51,718 - 00:38:54,178] is a ceiling to the energy levels.
+- [00:38:54,398 - 00:38:55,338] In other words,
+- [00:38:55,338 - 00:38:57,038] that there are a finite number of n's.
+- [00:38:57,418 - 00:39:00,078] And then take capital N to be much,
+- [00:39:00,078 - 00:39:02,578] much bigger than the total number of states.
+- [00:39:03,598 - 00:39:06,858] That will make sure that every n is large.
+- [00:39:09,957 - 00:39:12,338] So the approximation here,
+- [00:39:12,338 - 00:39:13,598] which...
+- [00:39:13,798 - 00:39:15,038] seems a little bit ridiculous,
+- [00:39:15,038 - 00:39:17,298] but nevertheless quite legal,
+- [00:39:17,298 - 00:39:19,748] is to imagine the number of replicas
+- [00:39:19,748 - 00:39:22,198] there is larger than the number of states.
+- [00:39:23,678 - 00:39:25,038] And that's the approximation.
+- [00:39:26,218 - 00:39:27,678] It's not really an approximation.
+- [00:39:27,678 - 00:39:31,458] It's just a useful trick to keep in mind.
+- [00:39:33,938 - 00:39:36,478] What of course is true is that the p-sub
+- [00:39:36,478 - 00:39:39,018] i's go to 0 as the energy gets very,
+- [00:39:39,018 - 00:39:39,718] very large.
+- [00:39:41,158 - 00:39:43,298] But we can take that into account.
+- [00:39:43,798 - 00:39:44,838] By being very careful.
+- [00:39:44,998 - 00:39:47,578] The easiest way to be careful is just
+- [00:39:47,578 - 00:39:50,158] to truncate the energy levels at some point.
+- [00:39:50,298 - 00:39:50,418] Yeah?
+- [00:39:51,198 - 00:39:52,688] Can you just say that
+- [00:39:52,688 - 00:39:54,178] when the n survives a small...
+- [00:39:54,178 - 00:39:55,658] that it counts for a very
+- [00:39:55,658 - 00:39:57,138] small part of the sum anyway?
+- [00:39:57,418 - 00:39:57,538] Yeah.
+- [00:39:57,918 - 00:39:58,398] Yeah,
+- [00:39:58,398 - 00:39:58,918] absolutely.
+- [00:39:59,498 - 00:39:59,978] Absolutely.
+- [00:39:59,978 - 00:40:00,718] Absolutely.
+- [00:40:02,278 - 00:40:04,038] So that is not a problem.
+- [00:40:04,398 - 00:40:05,218] But as I said,
+- [00:40:05,218 - 00:40:08,988] the easiest way to handle it without the least number of words is just to
+- [00:40:08,988 - 00:40:12,758] say there's a maximum number of states and capital N is much bigger than those.
+- [00:40:13,298 - 00:40:13,778] So that's a good question.
+- [00:40:15,038 - 00:40:15,898] But yes,
+- [00:40:15,898 - 00:40:16,338] you're right.
+- [00:40:16,338 - 00:40:17,718] That's correct.
+- [00:40:17,918 - 00:40:19,018] That doesn't seem physical.
+- [00:40:19,278 - 00:40:21,318] You have just one particle in a box.
+- [00:40:21,638 - 00:40:23,938] It can go 10 million different...
+- [00:40:23,938 - 00:40:24,918] 10 million states.
+- [00:40:25,398 - 00:40:28,998] So if you have a number in a box,
+- [00:40:28,998 - 00:40:31,298] you've got 10 million states times...
+- [00:40:31,938 - 00:40:33,568] You can always make the number of
+- [00:40:33,568 - 00:40:35,198] boxes bigger than the number of states.
+- [00:40:36,018 - 00:40:37,778] As long as the number of states is bounded.
+- [00:40:38,778 - 00:40:39,818] Now in practice,
+- [00:40:39,818 - 00:40:41,358] the number of states is bounded.
+- [00:40:41,358 - 00:40:44,448] Because you sure don't want to have an energy in
+- [00:40:44,448 - 00:40:47,538] any one box which is bigger than the total energy.
+- [00:40:47,798 - 00:40:49,038] So in practice,
+- [00:40:49,038 - 00:40:50,738] there is a bound.
+- [00:40:53,698 - 00:40:58,708] But let's just take it simply to say that there's an upper
+- [00:40:58,708 - 00:41:03,718] bound here and capital N is much bigger than that upper bound.
+- [00:41:04,038 - 00:41:06,758] That simplifies the argument.
+- [00:41:07,638 - 00:41:08,238] Alright,
+- [00:41:08,238 - 00:41:09,628] the interesting thing is
+- [00:41:09,628 - 00:41:11,018] the actual mathematical argument here.
+- [00:41:11,078 - 00:41:11,208] The interesting thing is
+- [00:41:11,208 - 00:41:11,338] the actual mathematical argument here.
+- [00:41:11,358 - 00:41:13,758] Now notice all of these are summs over i.
+- [00:41:15,238 - 00:41:15,878] Now notice all of these are summs over i.
+- [00:41:15,958 - 00:41:17,838] There's no term in here.
+- [00:41:17,938 - 00:41:19,908] No single term in here which
+- [00:41:19,908 - 00:41:21,878] involves more than 1p at a time.
+- [00:41:22,438 - 00:41:25,278] p2 doesn't ever get multiplied by p1.
+- [00:41:25,598 - 00:41:26,158] p2 doesn't ever get multiplied by p1.
+- [00:41:26,158 - 00:41:28,758] p1 gets multiplied by the logarithm of p1.
+- [00:41:28,918 - 00:41:29,398] p1 gets multiplied by the logarithm of p1.
+- [00:41:29,398 - 00:41:31,578] It doesn't get multiplied by the logarithm of p2.
+- [00:41:31,858 - 00:41:33,618] So this is a function
+- [00:41:33,618 - 00:41:35,378] which is a sum of functions
+- [00:41:35,378 - 00:41:35,388] So this is a function
+- [00:41:35,388 - 00:41:35,398] which is a sum of functions
+- [00:41:35,398 - 00:41:38,478] of individual variables.
+- [00:41:39,298 - 00:41:41,098] You maximize it,
+- [00:41:41,358 - 00:41:42,918] by maximizing each,
+- [00:41:42,918 - 00:41:45,878] maximizing it for each i separately.
+- [00:41:46,718 - 00:41:47,918] How do you maximize,
+- [00:41:47,918 - 00:41:48,958] or what do you do next?
+- [00:41:49,158 - 00:41:51,438] The next thing you do is you differentiate this
+- [00:41:51,438 - 00:41:52,778] with respect to p sub i,
+- [00:41:52,778 - 00:41:54,558] or some,
+- [00:41:54,678 - 00:41:56,958] this i is a summation variable here,
+- [00:41:57,018 - 00:41:59,578] so let's not differentiate with respect to p sub i,
+- [00:41:59,658 - 00:42:03,718] let's differentiate with respect to p sub j,
+- [00:42:03,978 - 00:42:06,318] where j is some specific number.
+- [00:42:07,638 - 00:42:10,718] p sub j enters into one term here,
+- [00:42:10,878 - 00:42:11,918] one term here,
+- [00:42:11,918 - 00:42:12,998] and one term here.
+- [00:42:13,178 - 00:42:15,238] j could be 46 or 59,
+- [00:42:15,238 - 00:42:17,598] it enters only into one term
+- [00:42:17,598 - 00:42:18,358] of each of these.
+- [00:42:18,858 - 00:42:21,458] So when we differentiate with respect to p j,
+- [00:42:21,458 - 00:42:22,278] let's do it.
+- [00:42:24,198 - 00:42:25,238] First of all,
+- [00:42:25,238 - 00:42:29,578] the derivative here is the sum of two terms,
+- [00:42:30,157 - 00:42:32,418] one is the derivative of the first factor
+- [00:42:32,738 - 00:42:33,798] times the second factor,
+- [00:42:33,798 - 00:42:34,878] that will give us
+- [00:42:34,878 - 00:42:36,298] a logarithm minus logarithm,
+- [00:42:36,298 - 00:42:37,738] and then the second factor is
+- [00:42:37,738 - 00:42:39,178] the logarithm of p of j.
+- [00:42:41,218 - 00:42:45,038] I wonder if it helps to factor p.
+- [00:42:45,918 - 00:42:46,778] Factor p?
+- [00:42:46,898 - 00:42:47,178] In first place.
+- [00:42:47,378 - 00:42:47,878] Mm-hmm.
+- [00:42:47,878 - 00:42:49,478] Is it inverse of i times,
+- [00:42:49,478 - 00:42:51,738] as a product?
+- [00:42:51,978 - 00:42:53,898] We can take the summation on the outside,
+- [00:42:54,198 - 00:42:54,778] if that's what you mean.
+- [00:42:54,998 - 00:42:55,118] Well,
+- [00:42:55,118 - 00:42:56,858] you can take the p i outside.
+- [00:42:57,718 - 00:42:58,198] No,
+- [00:42:58,198 - 00:42:58,318] no,
+- [00:42:58,318 - 00:42:58,378] no,
+- [00:42:58,378 - 00:42:59,518] it's a sum over i.
+- [00:42:59,898 - 00:43:00,358] No,
+- [00:43:00,358 - 00:43:00,758] but I mean.
+- [00:43:00,998 - 00:43:01,738] You can't take the,
+- [00:43:01,738 - 00:43:02,258] no,
+- [00:43:02,258 - 00:43:02,478] no.
+- [00:43:02,738 - 00:43:02,998] No,
+- [00:43:02,998 - 00:43:03,158] no,
+- [00:43:03,158 - 00:43:03,418] no,
+- [00:43:03,418 - 00:43:06,198] you can take the summation,
+- [00:43:06,198 - 00:43:07,258] the summation on the outside.
+- [00:43:09,078 - 00:43:10,558] Get rid of the sum here,
+- [00:43:10,558 - 00:43:12,478] get rid of the sum here.
+- [00:43:15,018 - 00:43:15,718] But that's it.
+- [00:43:17,478 - 00:43:19,318] You can't take the p i on the outside.
+- [00:43:19,758 - 00:43:20,158] No,
+- [00:43:20,158 - 00:43:21,738] I'm saying take the p i on the outside
+- [00:43:21,738 - 00:43:22,298] with parentheses.
+- [00:43:24,378 - 00:43:24,778] No,
+- [00:43:24,778 - 00:43:25,038] well,
+- [00:43:25,038 - 00:43:25,338] yes,
+- [00:43:25,338 - 00:43:25,598] oh,
+- [00:43:25,598 - 00:43:25,898] yes,
+- [00:43:25,898 - 00:43:27,038] you can certainly take p i
+- [00:43:27,038 - 00:43:28,198] on the outside with the parentheses,
+- [00:43:28,198 - 00:43:28,518] sure.
+- [00:43:29,298 - 00:43:31,298] You want to do it if you like.
+- [00:43:31,618 - 00:43:32,918] I don't see that it helps anything.
+- [00:43:33,418 - 00:43:34,058] Here it is.
+- [00:43:34,318 - 00:43:34,838] All right.
+- [00:43:34,838 - 00:43:38,238] So the derivative of this term here has two terms.
+- [00:43:39,598 - 00:43:42,518] The first one is just logarithm of p j.
+- [00:43:42,778 - 00:43:46,138] It's gotten by differentiating this piece.
+- [00:43:46,518 - 00:43:50,498] And the other one is minus.
+- [00:43:50,538 - 00:43:51,948] The minus sign is all
+- [00:43:51,948 - 00:43:53,358] coming from this overall minus sign
+- [00:43:53,358 - 00:43:53,938] on the outside.
+- [00:43:54,438 - 00:43:57,178] So it's minus log piece of j.
+- [00:43:57,458 - 00:44:02,058] And then what do we get from the differentiating log?
+- [00:44:02,458 - 00:44:03,478] One over p.
+- [00:44:03,478 - 00:44:04,298] One over p.
+- [00:44:04,298 - 00:44:04,978] One over p times p,
+- [00:44:04,978 - 00:44:06,778] which is minus one.
+- [00:44:10,898 - 00:44:13,518] Now what happens when we differentiate this term
+- [00:44:13,798 - 00:44:14,838] with respect to p j?
+- [00:44:17,778 - 00:44:19,498] You just get minus alpha.
+- [00:44:23,138 - 00:44:26,058] And what happens when we differentiate this term
+- [00:44:26,058 - 00:44:27,358] with respect to p j?
+- [00:44:28,818 - 00:44:32,038] We get minus beta times j.
+- [00:44:34,778 - 00:44:37,258] And that all we set equal to zero.
+- [00:44:37,358 - 00:44:39,358] That's the method we've learned from the fliers.
+- [00:44:40,378 - 00:44:43,498] Pretend that we're minimizing this whole quantity
+- [00:44:44,078 - 00:44:45,698] with respect to all of its variables.
+- [00:44:46,758 - 00:44:48,178] So for each j,
+- [00:44:48,178 - 00:44:53,418] we find that minus log of p j minus one,
+- [00:44:53,978 - 00:44:54,538] plus alpha,
+- [00:44:54,538 - 00:44:55,278] and so forth,
+- [00:44:55,278 - 00:44:56,378] has to add up to zero.
+- [00:44:56,658 - 00:44:58,488] I can throw away the minus signs
+- [00:44:58,488 - 00:45:00,318] since it appears in all of them.
+- [00:45:02,678 - 00:45:03,198] Minus.
+- [00:45:03,518 - 00:45:04,038] Minus.
+- [00:45:04,038 - 00:45:04,258] Minus.
+- [00:45:04,298 - 00:45:05,118] Plus.
+- [00:45:05,298 - 00:45:05,858] Plus.
+- [00:45:06,338 - 00:45:06,898] Plus.
+- [00:45:06,998 - 00:45:07,178] Plus.
+- [00:45:07,338 - 00:45:08,758] And now what do I have?
+- [00:45:08,998 - 00:45:11,498] I actually have the probability distribution,
+- [00:45:11,498 - 00:45:13,118] or better yet,
+- [00:45:13,158 - 00:45:13,898] or not better yet,
+- [00:45:13,898 - 00:45:15,578] but it's a logarithm.
+- [00:45:16,318 - 00:45:25,538] So logarithm of p j equals minus one plus alpha,
+- [00:45:26,158 - 00:45:27,138] that's from here,
+- [00:45:27,138 - 00:45:29,898] minus beta e j.
+- [00:45:35,198 - 00:45:37,658] Final step to go from the
+- [00:45:37,658 - 00:45:40,118] logarithm of p to p itself,
+- [00:45:40,178 - 00:45:41,438] we exponentiate.
+- [00:45:42,778 - 00:45:45,518] Exponential of the left-hand side is p j.
+- [00:45:45,658 - 00:45:52,058] That's p j equals e to
+- [00:45:52,058 - 00:45:58,458] the minus one plus alpha times e
+- [00:45:58,458 - 00:46:02,758] to the minus beta e j.
+- [00:46:04,758 - 00:46:05,278] Now,
+- [00:46:05,278 - 00:46:06,038] first of all,
+- [00:46:06,038 - 00:46:07,578] look at this for a little bit.
+- [00:46:08,198 - 00:46:10,378] This is just a number.
+- [00:46:10,518 - 00:46:10,758] Well,
+- [00:46:10,758 - 00:46:12,618] it's a number that depends on the Lagrange multiplier,
+- [00:46:12,998 - 00:46:16,018] but it doesn't depend on which state we're talking about.
+- [00:46:16,138 - 00:46:17,098] It doesn't depend on j.
+- [00:46:18,118 - 00:46:19,438] All of the j dependence,
+- [00:46:19,438 - 00:46:20,378] in other words,
+- [00:46:20,378 - 00:46:22,398] the dependence on which state we're talking about,
+- [00:46:22,658 - 00:46:24,518] is all in this factor here.
+- [00:46:24,958 - 00:46:28,728] And this tells us that the probability for
+- [00:46:28,728 - 00:46:32,498] the j-th state is proportional to e to the
+- [00:46:32,498 - 00:46:32,898] minus,
+- [00:46:32,898 - 00:46:33,698] this Lagrange.
+- [00:46:34,298 - 00:46:36,718] So we have the Lagrange multiplier times the energy.
+- [00:46:37,038 - 00:46:40,188] It tells us that the probability for
+- [00:46:40,188 - 00:46:43,338] different energy levels falls off exponentially as a
+- [00:46:43,338 - 00:46:44,218] function of the energy.
+- [00:46:45,898 - 00:46:48,458] That's the basic property of the Boltzmann distribution.
+- [00:46:48,937 - 00:46:49,838] We've got a bunch of magic,
+- [00:46:49,838 - 00:46:52,478] a bunch of sleight of hand,
+- [00:46:52,478 - 00:46:55,018] but all of it was good,
+- [00:46:55,018 - 00:46:55,478] genuine
+- [00:46:55,478 - 00:46:55,898] mathematics.
+- [00:46:56,598 - 00:47:00,438] And we discovered that maximizing the entropy
+- [00:47:00,438 - 00:47:04,278] subject to the constraint of the given energy,
+- [00:47:04,278 - 00:47:15,178] the comparison factor,
+- [00:47:15,178 - 00:47:15,758] and the
+- [00:47:15,758 - 00:47:15,778] alternate.
+- [00:47:15,798 - 00:47:15,818] What?
+- [00:47:15,818 - 00:47:18,758] We're going to figure out soon enough what beta is.
+- [00:47:18,958 - 00:47:20,858] I'll tell you right now what beta is.
+- [00:47:23,178 - 00:47:26,158] Beta is 1 over the temperature.
+- [00:47:27,478 - 00:47:30,058] Or if I include Boltzmann's constant,
+- [00:47:30,058 - 00:47:32,458] it's 1 over k times the temperature.
+- [00:47:33,178 - 00:47:34,378] In most places,
+- [00:47:34,378 - 00:47:35,678] when I write 1 over temperature,
+- [00:47:35,678 - 00:47:38,638] I really mean 1 over kT.
+- [00:47:38,638 - 00:47:41,978] In other words,
+- [00:47:41,978 - 00:47:44,218] for most purposes,
+- [00:47:44,218 - 00:47:47,948] I will set k equal to 1 and work
+- [00:47:47,948 - 00:47:51,678] in units in which temperature has units of energy.
+- [00:47:53,698 - 00:47:54,218] Okay,
+- [00:47:54,218 - 00:47:56,678] so beta then is actually 1 over the temperature,
+- [00:47:56,678 - 00:47:58,458] proportional to 1 over the temperature.
+- [00:47:58,738 - 00:48:00,218] But why that's true,
+- [00:48:00,218 - 00:48:01,618] we have yet to establish.
+- [00:48:02,078 - 00:48:04,858] We have an independent definition of temperature.
+- [00:48:04,998 - 00:48:05,878] If you go back in
+- [00:48:05,878 - 00:48:06,758] your notes from the first time,
+- [00:48:06,958 - 00:48:08,618] there was an independent definition of temperature.
+- [00:48:08,638 - 00:48:10,758] Which I'll remind you of.
+- [00:48:11,098 - 00:48:14,938] And we need to establish that they're the same thing.
+- [00:48:15,098 - 00:48:15,918] But for the time being,
+- [00:48:15,918 - 00:48:18,378] beta is a Lagrange multiplier.
+- [00:48:18,698 - 00:48:19,838] And we'll find out later
+- [00:48:19,838 - 00:48:20,978] that it's 1 over the temperature.
+- [00:48:23,378 - 00:48:23,898] Now,
+- [00:48:23,898 - 00:48:25,418] this object over here,
+- [00:48:25,418 - 00:48:26,498] I'm going to give another name.
+- [00:48:26,738 - 00:48:28,518] This is just naming things now.
+- [00:48:29,418 - 00:48:31,518] The Lagrange multiplier was alpha.
+- [00:48:31,818 - 00:48:33,608] But I'm going to give
+- [00:48:33,608 - 00:48:35,398] this whole thing here another name.
+- [00:48:35,638 - 00:48:38,258] I'm going to call it 1 divided by z.
+- [00:48:38,938 - 00:48:40,138] Why am I doing that?
+- [00:48:40,998 - 00:48:41,478] Historical.
+- [00:48:41,478 - 00:48:43,158] It's a historical notation.
+- [00:48:43,418 - 00:48:44,058] That's all.
+- [00:48:44,058 - 00:48:45,558] 1 divided by z.
+- [00:48:45,558 - 00:48:46,418] I can't help it.
+- [00:48:46,558 - 00:48:48,578] It replaces the Lagrange multiplier.
+- [00:48:49,058 - 00:48:51,718] I don't know what the Lagrange multiplier is yet.
+- [00:48:52,218 - 00:48:53,858] I don't know what z is yet.
+- [00:48:53,958 - 00:48:55,238] I haven't really done anything.
+- [00:48:55,238 - 00:48:56,778] I just made a change of notation.
+- [00:48:57,218 - 00:48:58,718] And this I'll leave in this form.
+- [00:49:06,137 - 00:49:08,578] That may or may not be familiar to you.
+- [00:49:08,638 - 00:49:10,018] Some of you who know
+- [00:49:10,018 - 00:49:11,398] a little bit of statistical mechanics.
+- [00:49:12,298 - 00:49:13,938] This is a very famous formula.
+- [00:49:14,298 - 00:49:15,598] For those who don't know it,
+- [00:49:15,598 - 00:49:16,418] it's less famous.
+- [00:49:19,918 - 00:49:20,558] All right.
+- [00:49:20,558 - 00:49:20,998] What is z?
+- [00:49:21,798 - 00:49:23,078] When I say what is z,
+- [00:49:23,078 - 00:49:25,608] I mean what we should do
+- [00:49:25,608 - 00:49:28,138] now is fix the Lagrange multipliers.
+- [00:49:28,138 - 00:49:31,098] By making sure that the constraints are satisfied.
+- [00:49:31,778 - 00:49:32,338] Remember,
+- [00:49:32,338 - 00:49:34,938] after solving the problem,
+- [00:49:34,938 - 00:49:37,398] we have to go back and say,
+- [00:49:37,458 - 00:49:39,058] let's pick the Lagrange multipliers
+- [00:49:39,058 - 00:49:40,658] so the constraints are satisfied.
+- [00:49:41,778 - 00:49:42,858] First constraint.
+- [00:49:42,858 - 00:49:45,318] The sums of the probabilities add up to 1.
+- [00:49:46,558 - 00:49:47,798] Let's see what that says.
+- [00:49:51,318 - 00:49:53,378] The probability of the j-th
+- [00:49:53,378 - 00:49:55,438] state is 1 divided by z.
+- [00:49:56,778 - 00:49:59,418] And now we want the sum of all the states,
+- [00:49:59,418 - 00:50:02,418] e to the minus beta.
+- [00:50:03,158 - 00:50:04,998] I'll now use the e sub i.
+- [00:50:06,298 - 00:50:11,678] This is the sum of p sub i.
+- [00:50:12,598 - 00:50:13,378] The sum,
+- [00:50:13,378 - 00:50:14,918] I factored out the 1 over
+- [00:50:14,918 - 00:50:16,458] z from all of the terms,
+- [00:50:16,458 - 00:50:18,738] e to the minus beta e sub i.
+- [00:50:19,697 - 00:50:22,498] And the total probability has to add up to 1.
+- [00:50:24,438 - 00:50:24,918] Well,
+- [00:50:24,918 - 00:50:25,418] just to make sure.
+- [00:50:25,418 - 00:50:25,538] So,
+- [00:50:25,538 - 00:50:26,578] by multiplying by z,
+- [00:50:26,578 - 00:50:28,858] that tells us what z is,
+- [00:50:28,858 - 00:50:31,098] at least in terms as a
+- [00:50:31,098 - 00:50:33,338] function of beta in any case.
+- [00:50:33,838 - 00:50:34,358] Remember,
+- [00:50:34,358 - 00:50:35,258] beta being temperature.
+- [00:50:35,558 - 00:50:38,318] So this gives us a formula for what z is.
+- [00:50:38,618 - 00:50:40,178] We don't know what the temperature is.
+- [00:50:40,178 - 00:50:41,278] We don't know what beta is.
+- [00:50:41,558 - 00:50:42,918] But whatever beta is,
+- [00:50:42,918 - 00:50:45,098] that's equal to z.
+- [00:50:47,138 - 00:50:47,938] And z,
+- [00:50:47,938 - 00:50:49,638] think of it as a function of beta.
+- [00:50:49,998 - 00:50:51,458] Or as a function of temperature.
+- [00:50:52,538 - 00:50:55,278] z is called the partition function.
+- [00:50:57,118 - 00:50:57,758] Again,
+- [00:50:57,758 - 00:50:59,138] very famous formula.
+- [00:50:59,658 - 00:51:02,258] z is defined by the sum.
+- [00:51:02,498 - 00:51:05,338] You take e to the minus beta e sub i.
+- [00:51:05,518 - 00:51:07,938] And you add it up for all the energy levels.
+- [00:51:08,238 - 00:51:10,318] And that defines the partition function.
+- [00:51:11,318 - 00:51:12,218] Knowing that,
+- [00:51:12,218 - 00:51:14,198] that doesn't seem like very much,
+- [00:51:14,198 - 00:51:15,158] the partition function.
+- [00:51:15,298 - 00:51:16,438] It's one little piece of,
+- [00:51:16,438 - 00:51:19,058] who cares what the partition function is.
+- [00:51:19,058 - 00:51:21,528] It's just a normalization factor that makes sure
+- [00:51:21,528 - 00:51:23,998] your total probability is add up to 1.
+- [00:51:24,298 - 00:51:24,858] Well,
+- [00:51:24,858 - 00:51:25,578] in fact,
+- [00:51:25,578 - 00:51:26,478] as we will see,
+- [00:51:26,478 - 00:51:27,538] as we go along,
+- [00:51:27,818 - 00:51:29,778] if you know the partition function,
+- [00:51:29,778 - 00:51:30,818] you know everything.
+- [00:51:31,278 - 00:51:32,278] Partition function,
+- [00:51:32,278 - 00:51:34,738] as a function of the variables of the problem,
+- [00:51:34,978 - 00:51:40,658] is a way of codifying or representing all the thermodynamic,
+- [00:51:41,058 - 00:51:43,118] and even beyond the thermodynamic information,
+- [00:51:43,498 - 00:51:47,238] all the statistical information in your system.
+- [00:51:47,238 - 00:51:50,338] So this is not only an important function,
+- [00:51:50,558 - 00:51:52,038] it contains everything.
+- [00:51:52,758 - 00:51:53,698] We'll see why.
+- [00:51:53,978 - 00:51:55,618] I don't expect you to see why yet.
+- [00:51:56,318 - 00:51:56,698] Alright,
+- [00:51:56,698 - 00:51:57,398] how about beta?
+- [00:51:57,398 - 00:51:58,418] How do we choose beta?
+- [00:51:59,858 - 00:52:01,238] The other constraint,
+- [00:52:01,238 - 00:52:02,458] the other constraint,
+- [00:52:02,618 - 00:52:04,188] is that the sums of
+- [00:52:04,188 - 00:52:05,758] the probabilities times e sub i
+- [00:52:05,758 - 00:52:08,578] has to add up to the average energy.
+- [00:52:08,958 - 00:52:11,498] Now I'm assuming that we know the average energy.
+- [00:52:12,878 - 00:52:15,638] The whole ensemble of copies
+- [00:52:15,638 - 00:52:17,538] had a total fixed amount of energy.
+- [00:52:17,598 - 00:52:18,718] If I just divide it by n,
+- [00:52:19,438 - 00:52:22,058] that tells me what the energy of each replica is,
+- [00:52:22,058 - 00:52:22,638] of each copy.
+- [00:52:23,218 - 00:52:25,298] So I will assume for the
+- [00:52:25,298 - 00:52:27,378] moment that I know what e is,
+- [00:52:27,558 - 00:52:28,038] e bar,
+- [00:52:28,038 - 00:52:30,638] or the average energy of one copy.
+- [00:52:32,818 - 00:52:34,258] Let's write down the formula.
+- [00:52:36,598 - 00:52:37,958] Summation over i,
+- [00:52:39,138 - 00:52:41,178] it's again a 1 over z on the outside,
+- [00:52:41,498 - 00:52:42,878] that's because each piece of
+- [00:52:42,878 - 00:52:44,258] i has a 1 over z,
+- [00:52:44,258 - 00:52:46,788] and then there is e to
+- [00:52:46,788 - 00:52:49,318] the minus beta e sub i.
+- [00:52:50,518 - 00:52:51,518] That's not finished,
+- [00:52:51,518 - 00:52:53,298] we have to multiply by e sub i.
+- [00:52:57,958 - 00:53:00,338] And that's equal to the average energy.
+- [00:53:03,958 - 00:53:04,478] Now,
+- [00:53:04,478 - 00:53:04,918] one,
+- [00:53:04,918 - 00:53:06,678] it would be simple to say,
+- [00:53:06,818 - 00:53:07,438] look,
+- [00:53:07,438 - 00:53:09,578] this does determine what beta is,
+- [00:53:09,698 - 00:53:10,998] this is an equation for beta,
+- [00:53:11,198 - 00:53:13,358] I already know what z is in terms of beta,
+- [00:53:13,498 - 00:53:14,238] so this is an equation for beta,
+- [00:53:14,258 - 00:53:14,978] and this is an equation,
+- [00:53:15,678 - 00:53:17,018] if I know e bar,
+- [00:53:17,378 - 00:53:20,258] this is a relationship between the temperature,
+- [00:53:20,258 - 00:53:20,898] if you like,
+- [00:53:21,078 - 00:53:21,918] and the average energy,
+- [00:53:22,038 - 00:53:23,978] but we can do a slick thing with this.
+- [00:53:24,398 - 00:53:27,198] We can actually express all of this nicely
+- [00:53:27,198 - 00:53:29,118] in terms of the partition function itself.
+- [00:53:29,758 - 00:53:30,778] So let's see,
+- [00:53:30,778 - 00:53:32,418] let's find another blackboard here,
+- [00:53:32,598 - 00:53:36,278] and move that.
+- [00:53:59,358 - 00:54:01,758] This is the object here,
+- [00:54:02,018 - 00:54:04,198] whose sum defines the partition function.
+- [00:54:04,818 - 00:54:06,838] But we have an extra e sub i here.
+- [00:54:07,698 - 00:54:08,638] The trick,
+- [00:54:08,638 - 00:54:09,518] this is a trick,
+- [00:54:09,598 - 00:54:10,768] but this is such a
+- [00:54:10,768 - 00:54:11,938] standard trick that by this point,
+- [00:54:12,058 - 00:54:12,958] well,
+- [00:54:12,958 - 00:54:13,938] anybody who has done,
+- [00:54:13,938 - 00:54:17,358] a little bit of mathematics from time to time
+- [00:54:17,358 - 00:54:21,078] would rather quickly realize that the next step
+- [00:54:21,638 - 00:54:23,598] is to replace the e sub i
+- [00:54:23,598 - 00:54:25,958] by the derivative with respect to beta.
+- [00:54:26,178 - 00:54:28,368] If I have a thing
+- [00:54:28,368 - 00:54:30,558] like e to the minus beta
+- [00:54:31,218 - 00:54:32,098] times e,
+- [00:54:33,358 - 00:54:35,618] and I want to multiply it anyway,
+- [00:54:35,878 - 00:54:37,998] and I want to multiply it by e,
+- [00:54:38,558 - 00:54:41,838] one way of doing it is just to differentiate it
+- [00:54:41,838 - 00:54:42,778] with respect to beta,
+- [00:54:45,038 - 00:54:46,778] and then we have to change the sign.
+- [00:54:48,278 - 00:54:50,098] The derivative with respect to beta
+- [00:54:50,098 - 00:54:52,678] of an exponential e to the minus beta e
+- [00:54:52,678 - 00:54:54,978] is just e times the exponential,
+- [00:54:55,298 - 00:54:56,238] not this e,
+- [00:54:56,238 - 00:54:56,638] this e.
+- [00:54:57,518 - 00:55:00,138] This is equal to e times
+- [00:55:00,138 - 00:55:02,758] e to the minus beta e.
+- [00:55:04,998 - 00:55:05,518] Alright,
+- [00:55:05,518 - 00:55:06,658] so every place here
+- [00:55:06,658 - 00:55:08,288] where you see e times
+- [00:55:08,288 - 00:55:09,918] e to the minus beta e,
+- [00:55:11,038 - 00:55:12,758] let's write it as 1,
+- [00:55:12,758 - 00:55:13,378] 1 over 0,
+- [00:55:14,518 - 00:55:15,678] sum on i,
+- [00:55:17,118 - 00:55:18,818] derivative with respect to beta,
+- [00:55:19,118 - 00:55:20,487] I'm going to write it as
+- [00:55:20,487 - 00:55:21,857] partial derivative with respect to beta.
+- [00:55:21,958 - 00:55:23,798] The reason is later on,
+- [00:55:24,018 - 00:55:24,958] not now,
+- [00:55:25,218 - 00:55:26,728] but later on there are going
+- [00:55:26,728 - 00:55:28,238] to be more variables in the problem,
+- [00:55:29,018 - 00:55:29,538] volume,
+- [00:55:29,538 - 00:55:30,778] magnetic field,
+- [00:55:30,778 - 00:55:31,958] all sorts of things,
+- [00:55:32,518 - 00:55:34,238] and I mean differentiate
+- [00:55:34,577 - 00:55:36,678] and all those other things based.
+- [00:55:37,938 - 00:55:39,398] For our purposes here,
+- [00:55:39,518 - 00:55:40,938] I could just use ordinary derivatives.
+- [00:55:42,938 - 00:55:44,117] But later on,
+- [00:55:44,158 - 00:55:45,688] we'll want to remember there may
+- [00:55:45,688 - 00:55:47,218] be more variables in the problem,
+- [00:55:47,418 - 00:55:49,758] and now I mean differentiating the data,
+- [00:55:50,218 - 00:55:52,298] keeping all the other things in the problem fixed,
+- [00:55:55,498 - 00:55:58,398] of e to the minus beta e sub i,
+- [00:55:59,278 - 00:55:59,798] period.
+- [00:56:02,278 - 00:56:02,798] Now,
+- [00:56:02,798 - 00:56:04,578] minus sign,
+- [00:56:04,738 - 00:56:05,458] minus sign,
+- [00:56:05,458 - 00:56:05,938] thank you.
+- [00:56:06,458 - 00:56:06,978] Alright.
+- [00:56:07,958 - 00:56:08,478] Now,
+- [00:56:08,478 - 00:56:10,978] the derivative can be taken outside the sum.
+- [00:56:11,378 - 00:56:12,658] The sum of derivatives,
+- [00:56:12,658 - 00:56:13,958] is the derivative of the sum.
+- [00:56:14,698 - 00:56:15,178] Alright.
+- [00:56:15,298 - 00:56:17,518] So the derivative can be taken out on the outside.
+- [00:56:18,338 - 00:56:19,618] Let's take it on the outside.
+- [00:56:22,578 - 00:56:24,378] It becomes d by d beta,
+- [00:56:26,897 - 00:56:27,778] of the sum.
+- [00:56:28,958 - 00:56:29,978] And what is this?
+- [00:56:30,738 - 00:56:32,298] This is the partition function.
+- [00:56:32,698 - 00:56:34,598] So we have a lovely formula now,
+- [00:56:40,098 - 00:56:41,658] that the average energy,
+- [00:56:44,318 - 00:56:46,018] is equal to minus,
+- [00:56:46,958 - 00:56:48,138] one upon z,
+- [00:56:48,998 - 00:56:50,298] derivative of z,
+- [00:56:51,058 - 00:56:53,278] with respect to beta.
+- [00:56:54,478 - 00:56:55,018] Beta,
+- [00:56:55,018 - 00:56:55,418] remember,
+- [00:56:55,418 - 00:56:56,438] is the inverse temperature.
+- [00:56:56,898 - 00:56:57,658] So again,
+- [00:56:57,798 - 00:56:59,218] if you know the partition function,
+- [00:56:59,798 - 00:57:01,058] as a function of beta,
+- [00:57:02,578 - 00:57:03,118] then,
+- [00:57:03,528 - 00:57:04,558] here is z of beta,
+- [00:57:06,318 - 00:57:07,678] and all you have to do,
+- [00:57:07,798 - 00:57:09,878] is construct one over z,
+- [00:57:09,998 - 00:57:11,978] times the derivative of z with respect to beta,
+- [00:57:11,978 - 00:57:13,738] at that temperature,
+- [00:57:13,998 - 00:57:15,438] that will give you the average energy.
+- [00:57:15,878 - 00:57:19,298] This gives you a relationship between average energy,
+- [00:57:19,498 - 00:57:20,258] or just energy,
+- [00:57:20,258 - 00:57:20,978] let's call it,
+- [00:57:21,038 - 00:57:22,118] and the temperature.
+- [00:57:22,578 - 00:57:25,038] The right hand side is a function of temperature,
+- [00:57:25,378 - 00:57:27,378] the left hand side is the average energy.
+- [00:57:27,598 - 00:57:29,898] This can be rewritten as minus,
+- [00:57:29,918 - 00:57:32,458] the derivative of logarithm of z,
+- [00:57:33,238 - 00:57:34,478] with respect to beta.
+- [00:57:35,638 - 00:57:36,598] One over z,
+- [00:57:36,778 - 00:57:38,018] d z by d beta,
+- [00:57:38,178 - 00:57:40,498] is the derivative of logarithm of z.
+- [00:57:41,137 - 00:57:43,138] The logarithm of z occurs
+- [00:57:43,978 - 00:57:46,238] over and over and over again,
+- [00:57:48,118 - 00:57:50,338] and it occurs so much,
+- [00:57:50,358 - 00:57:51,718] that we give it a special name.
+- [00:57:57,298 - 00:57:58,458] That's the average energy.
+- [00:57:59,778 - 00:58:00,258] Oh,
+- [00:58:00,258 - 00:58:02,698] before we talk about the name of this thing,
+- [00:58:02,898 - 00:58:04,158] let's just see what it says.
+- [00:58:04,558 - 00:58:06,818] The left hand side is a well defined,
+- [00:58:07,278 - 00:58:07,838] I mean,
+- [00:58:07,838 - 00:58:08,518] if we can calculate,
+- [00:58:08,738 - 00:58:10,478] to the extent that we can calculate z over z,
+- [00:58:10,498 - 00:58:13,958] it's a function of beta.
+- [00:58:14,538 - 00:58:15,138] It's a function of beta,
+- [00:58:15,138 - 00:58:17,058] and a function of beta is equal to the energy.
+- [00:58:18,438 - 00:58:19,758] We can invert that,
+- [00:58:19,998 - 00:58:21,758] and we can find out
+- [00:58:22,478 - 00:58:25,198] what beta is as a function of the energy.
+- [00:58:26,138 - 00:58:27,878] Whatever that relationship is,
+- [00:58:28,078 - 00:58:29,298] if we can invert it,
+- [00:58:29,418 - 00:58:31,238] we can find out beta
+- [00:58:31,238 - 00:58:33,058] as a function of the energy.
+- [00:58:33,398 - 00:58:35,238] Beta is the Lagrange multiplier,
+- [00:58:36,258 - 00:58:38,818] but it is also the inverse temperature.
+- [00:58:38,818 - 00:58:43,138] So this is the relationship between temperature and energy.
+- [00:58:44,098 - 00:58:45,458] In many examples,
+- [00:58:45,458 - 00:58:47,578] we actually don't want to invert this.
+- [00:58:47,738 - 00:58:48,738] We may know the temperature,
+- [00:58:48,738 - 00:58:51,638] in which case we may be more interested…
+- [00:58:51,638 - 00:58:53,158] We know the temperature,
+- [00:58:53,158 - 00:58:55,578] we may be more interested in finding the energy.
+- [00:58:56,138 - 00:58:57,218] In some cases,
+- [00:58:57,218 - 00:58:58,278] we may know the energy,
+- [00:58:58,278 - 00:59:00,778] and we may be interested in finding out what the
+- [00:59:00,778 - 00:59:03,638] temperature is at that energy.
+- [00:59:03,638 - 00:59:04,998] This formula,
+- [00:59:04,998 - 00:59:09,408] together with the formula that z is summation
+- [00:59:09,408 - 00:59:13,818] of e to the minus beta e sub
+- [00:59:13,818 - 00:59:14,078] i,
+- [00:59:14,078 - 00:59:16,398] g of theta.
+- [00:59:21,218 - 00:59:21,778] That,
+- [00:59:21,778 - 00:59:22,338] as I said,
+- [00:59:22,338 - 00:59:24,678] contains a good deal of information,
+- [00:59:24,678 - 00:59:26,738] more than a good deal,
+- [00:59:26,738 - 00:59:27,938] just endless amounts
+- [00:59:27,938 - 00:59:28,398] of information,
+- [00:59:28,398 - 00:59:32,098] about the statistical system.
+- [00:59:38,718 - 00:59:40,098] Let's see what we're going to…
+- [00:59:41,938 - 00:59:42,418] Yes,
+- [00:59:42,418 - 00:59:44,068] I told you that logarithm
+- [00:59:44,068 - 00:59:45,718] of z has a special name.
+- [00:59:49,378 - 00:59:51,258] Let me just get the signs right.
+- [01:00:02,178 - 01:00:02,738] T,
+- [01:00:02,738 - 01:00:05,158] temperature times logarithm of z,
+- [01:00:05,158 - 01:00:07,078] with a minus sign,
+- [01:00:07,078 - 01:00:10,098] which is the same as logarithm
+- [01:00:10,098 - 01:00:12,498] of z divided by beta.
+- [01:00:13,338 - 01:00:14,618] Anybody know what that's called?
+- [01:00:16,418 - 01:00:17,518] With a minus sign.
+- [01:00:23,458 - 01:00:26,298] Before I tell you its name,
+- [01:00:26,298 - 01:00:29,188] let's just notice z is
+- [01:00:29,188 - 01:00:32,078] not itself actually a single x-axis.
+- [01:00:32,098 - 01:00:32,418] It's a single exponential.
+- [01:00:32,898 - 01:00:34,968] But it sort of looks like
+- [01:00:34,968 - 01:00:37,038] an exponential of beta times energy.
+- [01:00:37,498 - 01:00:39,358] If I take the logarithm of z,
+- [01:00:39,358 - 01:00:40,888] I expect it to be…
+- [01:00:40,888 - 01:00:42,418] to have at least have units,
+- [01:00:42,418 - 01:00:43,218] or be
+- [01:00:43,218 - 01:00:46,608] similar to beta times some kind of thing that
+- [01:00:46,608 - 01:00:49,998] I might call a thing which has units of energy.
+- [01:00:52,998 - 01:00:54,758] So the logarithm of z is
+- [01:00:54,758 - 01:00:56,518] sort of like what's up here.
+- [01:00:56,618 - 01:00:57,138] It's not really,
+- [01:00:57,138 - 01:00:57,558] but I mean,
+- [01:00:57,558 - 01:00:58,848] it's sort of like the sort
+- [01:00:58,848 - 01:01:00,138] of thing which goes in the exponent
+- [01:01:00,138 - 01:01:00,538] here.
+- [01:01:02,098 - 01:01:03,638] And if I divide it by beta,
+- [01:01:03,638 - 01:01:06,838] then it's some kind of
+- [01:01:06,838 - 01:01:10,038] thing which has units of energy.
+- [01:01:11,738 - 01:01:13,798] The logarithm of z divided
+- [01:01:13,798 - 01:01:15,858] by beta has units of energy.
+- [01:01:16,018 - 01:01:16,318] Of course,
+- [01:01:16,318 - 01:01:16,518] really,
+- [01:01:16,518 - 01:01:18,058] z is the sum of such terms,
+- [01:01:18,058 - 01:01:21,718] but that doesn't prevent us from calling this
+- [01:01:21,718 - 01:01:23,738] a kind of energy.
+- [01:01:24,598 - 01:01:25,878] It is what it is.
+- [01:01:26,038 - 01:01:27,738] It is not the energy of the system.
+- [01:01:27,858 - 01:01:29,858] It's the Helmholtz free energy,
+- [01:01:29,858 - 01:01:30,678] it's called.
+- [01:01:30,958 - 01:01:32,078] A is that.
+- [01:01:32,098 - 01:01:39,098] The Helmholtz free energy has units of energy,
+- [01:01:39,098 - 01:01:42,878] and it's just minus the logarithm of z divided
+- [01:01:42,878 - 01:01:43,538] by beta.
+- [01:01:44,298 - 01:01:46,078] Why minus the logarithm?
+- [01:01:46,218 - 01:01:49,138] Because the exponential here carries a minus with it.
+- [01:01:49,638 - 01:01:51,088] So it's natural to put
+- [01:01:51,088 - 01:01:52,538] a minus in front of it.
+- [01:01:53,938 - 01:01:54,678] All right,
+- [01:01:54,678 - 01:01:55,698] so that's… and that's definition.
+- [01:01:56,018 - 01:01:59,818] There's no proof of that.
+- [01:01:59,958 - 01:02:02,078] That's the definition of a-phi.
+- [01:02:02,098 - 01:02:04,198] The Helmholtz free energy.
+- [01:02:05,898 - 01:02:06,518] Okay,
+- [01:02:06,518 - 01:02:19,198] what is not definition is a relationship between the energy,
+- [01:02:19,198 - 01:02:21,438] the Helmholtz free energy,
+- [01:02:21,638 - 01:02:22,598] and the entropy.
+- [01:02:22,978 - 01:02:24,678] We've defined entropy already.
+- [01:02:26,558 - 01:02:28,798] We certainly know what energy is.
+- [01:02:28,938 - 01:02:30,448] And we now have a
+- [01:02:30,448 - 01:02:31,958] definition of the Helmholtz free energy.
+- [01:02:31,978 - 01:02:32,078] So what is the energy?
+- [01:02:32,098 - 01:02:35,718] There is a relationship between the three of these things,
+- [01:02:35,718 - 01:02:36,118] energy,
+- [01:02:36,118 - 01:02:36,638] entropy,
+- [01:02:36,638 - 01:02:37,438] and Helmholtz
+- [01:02:37,438 - 01:02:37,958] free energy,
+- [01:02:37,958 - 01:02:39,038] which we should derive.
+- [01:02:39,718 - 01:02:41,078] It's easy enough to derive.
+- [01:02:44,558 - 01:02:46,758] You might be saying to yourself by this point already,
+- [01:02:46,758 - 01:02:47,938] when the hell are we going to get
+- [01:02:47,938 - 01:02:49,158] to molecules and gas?
+- [01:02:51,118 - 01:02:52,658] The answer is pretty soon.
+- [01:02:53,838 - 01:02:57,288] But it is worth exploring the
+- [01:02:57,288 - 01:03:00,738] general mathematics before we do particular systems.
+- [01:03:00,738 - 01:03:03,738] Once we have some mathematics in place,
+- [01:03:03,738 - 01:03:07,578] once we know and understand how to use this partition
+- [01:03:07,578 - 01:03:11,318] function as a generator of all kinds of answers,
+- [01:03:11,318 - 01:03:16,798] we will have a machine that we can mindlessly
+- [01:03:16,798 - 01:03:19,158] use to crank out all kinds
+- [01:03:19,158 - 01:03:21,518] of things about statistical mechanical systems.
+- [01:03:21,738 - 01:03:24,408] So it's worth exploring the general principles
+- [01:03:24,408 - 01:03:27,078] before we actually try to attack a system.
+- [01:03:28,358 - 01:03:29,978] Let's just see what we…
+- [01:03:29,978 - 01:03:30,718] Let's see what we've got here.
+- [01:03:30,718 - 01:03:33,198] We have Helmholtz free energy is equal
+- [01:03:33,198 - 01:03:35,678] to logarithm of z divided by beta.
+- [01:03:35,918 - 01:03:37,468] And let me just write down next
+- [01:03:37,468 - 01:03:39,018] to the key f the energy itself.
+- [01:03:39,718 - 01:03:41,718] That was not by definition,
+- [01:03:41,718 - 01:03:44,778] but by calculation was equal to
+- [01:03:44,778 - 01:03:47,838] minus the derivative of the logarithm
+- [01:03:47,838 - 01:03:49,958] of z with respect to beta.
+- [01:03:51,198 - 01:03:52,278] They're kind of similar.
+- [01:03:52,498 - 01:03:55,318] One is actually the logarithm of z divided by beta,
+- [01:03:55,318 - 01:03:57,558] and the other is the derivative of
+- [01:03:57,558 - 01:03:59,438] the logarithm of z with respect to beta.
+- [01:04:00,718 - 01:04:01,618] They're not the same thing.
+- [01:04:02,897 - 01:04:03,738] If z…
+- [01:04:03,738 - 01:04:04,118] Well,
+- [01:04:04,118 - 01:04:05,498] you can see that they're not the same thing,
+- [01:04:05,498 - 01:04:08,518] but they have some relationship with
+- [01:04:08,518 - 01:04:08,898] each other.
+- [01:04:09,178 - 01:04:09,898] If z…
+- [01:04:09,898 - 01:04:11,658] If logarithm of z was a straight line,
+- [01:04:11,658 - 01:04:13,118] which it is in general not,
+- [01:04:13,118 - 01:04:14,658] but if it were a straight
+- [01:04:14,658 - 01:04:16,298] line as a function of beta,
+- [01:04:16,298 - 01:04:17,558] then they would be the same.
+- [01:04:17,838 - 01:04:18,618] But of course,
+- [01:04:18,618 - 01:04:19,318] they're not…
+- [01:04:19,318 - 01:04:20,978] It's not a straight line in general.
+- [01:04:22,078 - 01:04:22,538] All right,
+- [01:04:22,538 - 01:04:24,678] those are the two important quantities.
+- [01:04:28,018 - 01:04:30,338] And one more quantity is…
+- [01:04:30,338 - 01:04:30,698] You know,
+- [01:04:30,698 - 01:04:30,698] the first one is the…
+- [01:04:30,718 - 01:04:30,998] The entropy.
+- [01:04:31,778 - 01:04:34,338] So let's calculate the entropy.
+- [01:04:34,678 - 01:04:37,888] And we're going to find that the
+- [01:04:37,888 - 01:04:41,098] entropy is closely related to a and e,
+- [01:04:41,098 - 01:04:42,138] and of course,
+- [01:04:42,158 - 01:04:42,578] beta.
+- [01:04:55,798 - 01:04:57,098] What is the entropy?
+- [01:04:57,298 - 01:04:58,718] The entropy is minus…
+- [01:04:59,978 - 01:05:00,698] Minus…
+- [01:05:00,718 - 01:05:02,838] The sum of p sub i,
+- [01:05:02,838 - 01:05:04,918] logarithm of p sub i.
+- [01:05:08,158 - 01:05:10,098] But now we know what p sub i is.
+- [01:05:11,178 - 01:05:14,058] We know that it's just up there.
+- [01:05:14,138 - 01:05:16,178] 1 over z e to the minus beta ej,
+- [01:05:16,178 - 01:05:19,258] er e for p sub i.
+- [01:05:19,438 - 01:05:21,958] So let's plug that in and grind
+- [01:05:21,958 - 01:05:24,478] away and calculate what the entropy is.
+- [01:05:24,798 - 01:05:26,938] Maybe we'll get stuck and we won't be able
+- [01:05:26,938 - 01:05:29,078] to do it in any useful or interesting way.
+- [01:05:29,518 - 01:05:30,698] We can just do it in some other way.
+- [01:05:30,718 - 01:05:33,898] So let's try it.
+- [01:05:34,258 - 01:05:37,038] S is equal to minus.
+- [01:05:37,178 - 01:05:38,098] Now what's p sub i?
+- [01:05:39,398 - 01:05:40,818] 1 over z…
+- [01:05:44,838 - 01:05:46,898] There's a sum on the outside.
+- [01:05:47,958 - 01:05:50,918] 1 over z times e to
+- [01:05:50,918 - 01:05:53,878] the minus beta e sub i.
+- [01:05:55,578 - 01:05:58,658] And now what's the logarithm of p sub i?
+- [01:05:59,018 - 01:06:00,698] That's the logarithm of p sub i.
+- [01:06:00,698 - 01:06:02,578] of that expression up there,
+- [01:06:02,578 - 01:06:04,458] except change j to i.
+- [01:06:05,178 - 01:06:08,298] The logarithm of that is
+- [01:06:10,778 - 01:06:11,758] minus beta
+- [01:06:13,778 - 01:06:14,858] e sub i.
+- [01:06:14,858 - 01:06:16,718] That's the
+- [01:06:16,718 - 01:06:18,638] logarithm of the second factor,
+- [01:06:18,638 - 01:06:19,518] the exponential,
+- [01:06:19,518 - 01:06:20,798] and then we have
+- [01:06:20,798 - 01:06:22,578] to subtract off minus log z.
+- [01:06:26,058 - 01:06:27,258] I need a stick.
+- [01:06:28,258 - 01:06:30,078] I don't have a stick to point with.
+- [01:06:30,698 - 01:06:32,518] Does everybody see what I've done?
+- [01:06:32,518 - 01:06:35,498] I've written p sub i as 1 over z
+- [01:06:35,498 - 01:06:37,238] e to the minus beta e sub i,
+- [01:06:37,238 - 01:06:39,518] and then the logarithm of p sub i
+- [01:06:39,518 - 01:06:43,658] as minus beta e sub i
+- [01:06:43,658 - 01:06:44,758] minus log z.
+- [01:06:47,698 - 01:06:48,398] That's s.
+- [01:06:51,398 - 01:06:52,978] The minus sign goes away.
+- [01:07:00,698 - 01:07:01,558] I've taken the minus sign,
+- [01:07:01,558 - 01:07:03,058] the overall minus sign,
+- [01:07:03,058 - 01:07:04,658] and the minus sign's here,
+- [01:07:04,658 - 01:07:05,458] and canceled it.
+- [01:07:06,158 - 01:07:06,638] Okay,
+- [01:07:06,638 - 01:07:07,618] what's the first term?
+- [01:07:07,618 - 01:07:09,498] 1 over z e to the minus beta
+- [01:07:09,498 - 01:07:11,378] e sub i times beta e sub i.
+- [01:07:11,558 - 01:07:13,058] Suppose the beta wasn't there first.
+- [01:07:13,998 - 01:07:15,078] That's the average energy.
+- [01:07:16,218 - 01:07:17,358] That's the average energy.
+- [01:07:17,358 - 01:07:19,558] So we can say that s is equal,
+- [01:07:20,158 - 01:07:22,698] the first term is just the average energy,
+- [01:07:22,698 - 01:07:23,718] times beta.
+- [01:07:23,958 - 01:07:24,438] Sorry,
+- [01:07:24,438 - 01:07:25,058] times beta.
+- [01:07:25,058 - 01:07:26,858] It's this beta over here.
+- [01:07:27,778 - 01:07:30,418] And what about the second term?
+- [01:07:32,878 - 01:07:34,158] The second term,
+- [01:07:34,158 - 01:07:39,018] there's no i dependence in here.
+- [01:07:39,658 - 01:07:41,438] This is just logarithm of z.
+- [01:07:41,558 - 01:07:43,178] It doesn't depend on i at all.
+- [01:07:43,558 - 01:07:45,178] So in doing the sum here,
+- [01:07:45,178 - 01:07:47,118] all we're doing is summing
+- [01:07:47,118 - 01:07:48,758] e to the minus beta e sub i.
+- [01:07:48,858 - 01:07:49,258] What is that?
+- [01:07:49,338 - 01:07:51,118] Sum of e to the minus beta e sub i?
+- [01:07:52,158 - 01:07:52,598] Z.
+- [01:07:52,938 - 01:07:53,378] Z.
+- [01:07:53,698 - 01:07:54,038] Z.
+- [01:07:54,038 - 01:07:55,098] And that cancels the z here.
+- [01:07:55,678 - 01:07:58,618] So all we're left with is logarithm of z.
+- [01:07:59,478 - 01:07:59,918] Plus.
+- [01:08:00,418 - 01:08:01,898] Log of z.
+- [01:08:03,378 - 01:08:04,438] Go over that again.
+- [01:08:06,277 - 01:08:08,478] We've taken care of the first term here.
+- [01:08:08,518 - 01:08:09,638] That was just the average energy.
+- [01:08:10,278 - 01:08:11,358] The second term,
+- [01:08:11,358 - 01:08:12,518] we can factor out,
+- [01:08:12,558 - 01:08:12,938] no,
+- [01:08:12,938 - 01:08:13,158] sorry,
+- [01:08:13,158 - 01:08:14,278] we can factor out the
+- [01:08:14,278 - 01:08:15,398] log of z on the outside.
+- [01:08:15,538 - 01:08:16,298] That's log of z.
+- [01:08:16,678 - 01:08:18,808] And then it's just the sum of 1 over
+- [01:08:18,808 - 01:08:20,938] z e to the minus beta e sub i.
+- [01:08:21,158 - 01:08:21,917] That's just 1.
+- [01:08:23,218 - 01:08:23,917] That's just 1.
+- [01:08:24,618 - 01:08:25,018] So,
+- [01:08:25,018 - 01:08:25,518] that's it.
+- [01:08:26,158 - 01:08:26,938] What do we have?
+- [01:08:27,178 - 01:08:30,398] We now have a formula relating entries.
+- [01:08:30,398 - 01:08:30,578] We have entropy,
+- [01:08:30,578 - 01:08:31,818] energy,
+- [01:08:31,818 - 01:08:34,518] and Helmholtz free energy.
+- [01:08:34,938 - 01:08:36,497] The Helmholtz free energy,
+- [01:08:36,497 - 01:08:37,118] let's,
+- [01:08:37,118 - 01:08:39,078] I don't want to erase it in this form.
+- [01:08:39,218 - 01:08:40,258] Let's just put it up here.
+- [01:08:40,678 - 01:08:41,518] And again,
+- [01:08:41,518 - 01:08:46,078] logarithm of z is minus beta times a.
+- [01:08:46,238 - 01:08:47,258] So here we have it.
+- [01:08:47,678 - 01:08:53,558] S is equal to beta times e minus a.
+- [01:08:58,594 - 01:08:58,754] しょー!
+- [01:09:00,002 - 01:09:01,381] The Helmholtz free energy,
+- [01:09:01,381 - 01:09:04,522] or the difference between the
+- [01:09:04,522 - 01:09:07,662] energy and the Helmholtz free energy,
+- [01:09:07,662 - 01:09:09,301] is just the entropy.
+- [01:09:10,482 - 01:09:14,202] Or the entropy divided by beta.
+- [01:09:15,782 - 01:09:17,662] Another way we can write it,
+- [01:09:17,662 - 01:09:20,822] by using that beta is one over temperature,
+- [01:09:20,822 - 01:09:23,832] we can write it as T
+- [01:09:23,832 - 01:09:26,841] s is equal to E minus A.
+- [01:09:29,082 - 01:09:31,502] So whatever the Helmholtz free energy is,
+- [01:09:31,502 - 01:09:35,522] the difference between it and the real energy is just,
+- [01:09:35,522 - 01:09:38,182] or the average energy,
+- [01:09:38,182 - 01:09:40,662] is just temperature times entropy.
+- [01:09:45,782 - 01:09:48,122] This allows us to express the
+- [01:09:48,122 - 01:09:50,462] entropy in terms of the partition function.
+- [01:09:50,942 - 01:09:52,042] Let's see what it is.
+- [01:09:52,122 - 01:09:53,642] We have to take E minus A.
+- [01:09:53,962 - 01:09:56,142] So E minus A is...
+- [01:09:58,002 - 01:09:58,542] Well,
+- [01:09:58,542 - 01:10:04,502] it's the logarithm of Z divided by beta minus the
+- [01:10:04,502 - 01:10:10,462] derivative of the log of Z with respect to beta.
+- [01:10:12,002 - 01:10:13,702] This is what the entropy is.
+- [01:10:13,802 - 01:10:15,162] This is a formula for the entropy.
+- [01:10:15,342 - 01:10:16,222] I don't mean this is
+- [01:10:16,222 - 01:10:17,102] not the definition of the entropy.
+- [01:10:17,282 - 01:10:17,962] This is A,
+- [01:10:17,962 - 01:10:20,442] and that's equal to T s.
+- [01:10:21,042 - 01:10:22,082] Did I get that right?
+- [01:10:25,642 - 01:10:26,722] If I'm lucky...
+- [01:10:26,842 - 01:10:28,582] The temperature will cancel from this one.
+- [01:10:28,782 - 01:10:29,002] Yeah.
+- [01:10:29,562 - 01:10:31,202] This is also one over beta.
+- [01:10:34,462 - 01:10:35,002] Alright,
+- [01:10:35,002 - 01:10:36,942] so we can multiply by beta if we like.
+- [01:10:37,182 - 01:10:38,102] Multiply by beta.
+- [01:10:38,222 - 01:10:39,202] Another form.
+- [01:10:39,582 - 01:10:44,182] S is equal to log Z minus
+- [01:10:44,182 - 01:10:48,782] beta E log Z divided by beta.
+- [01:10:52,382 - 01:10:53,762] A whole bunch of formulas.
+- [01:10:53,862 - 01:10:55,142] The main upshot.
+- [01:10:55,262 - 01:10:56,702] The main upshot.
+- [01:10:56,842 - 01:10:59,062] The main upshot is when you know Z,
+- [01:10:59,062 - 01:11:02,562] you have tools for calculating energy,
+- [01:11:02,562 - 01:11:03,682] entropy,
+- [01:11:03,682 - 01:11:07,502] Helmholtz free energy if it means anything to you,
+- [01:11:07,502 - 01:11:08,862] which it will because we will
+- [01:11:08,862 - 01:11:10,222] use it for all sorts of applications.
+- [01:11:11,222 - 01:11:13,162] Thus far I haven't told you what it's good for,
+- [01:11:13,162 - 01:11:17,082] other than calculating the entropy from the energy.
+- [01:11:17,542 - 01:11:19,732] But you can see that there's
+- [01:11:19,732 - 01:11:21,922] some power in knowing the partition function.
+- [01:11:22,602 - 01:11:24,712] Each one of the various
+- [01:11:24,712 - 01:11:26,822] thermodynamic variables can be represented fairly...
+- [01:11:27,562 - 01:11:30,262] ...in terms of the logarithm of Z.
+- [01:11:30,462 - 01:11:32,962] It's always the logarithm of Z which comes into things.
+- [01:11:33,202 - 01:11:35,992] So the logarithm of Z is
+- [01:11:35,992 - 01:11:38,782] often more interesting than Z itself.
+- [01:11:43,722 - 01:11:44,242] Question?
+- [01:11:44,862 - 01:11:48,422] You haven't really demonstrated that probability.
+- [01:11:49,322 - 01:11:49,842] Yeah,
+- [01:11:49,842 - 01:11:50,322] we haven't.
+- [01:11:50,542 - 01:11:51,102] We haven't.
+- [01:11:51,322 - 01:11:52,982] The way to demonstrate it...
+- [01:11:52,982 - 01:11:53,222] Variance or something?
+- [01:11:53,462 - 01:11:53,962] What's that?
+- [01:11:54,282 - 01:11:55,842] You have to compute like a variance or something?
+- [01:11:56,042 - 01:11:56,142] Yeah,
+- [01:11:56,142 - 01:11:56,602] it's a variance.
+- [01:11:56,702 - 01:11:56,822] Oh.
+- [01:11:56,842 - 01:11:57,002] Okay,
+- [01:11:57,002 - 01:11:57,482] let's...
+- [01:11:57,482 - 01:11:57,962] Good.
+- [01:11:58,982 - 01:12:03,622] I was going to jump into the ideal gas.
+- [01:12:04,242 - 01:12:05,082] But let's,
+- [01:12:05,082 - 01:12:06,002] before we do that,
+- [01:12:06,002 - 01:12:08,762] let's do variances.
+- [01:12:09,802 - 01:12:10,802] Statistical fluctuations.
+- [01:12:11,382 - 01:12:14,012] Let's see if we can learn
+- [01:12:14,012 - 01:12:16,642] something about the size of statistical fluctuations.
+- [01:12:17,442 - 01:12:19,382] What we'll find is that they're very small.
+- [01:12:19,582 - 01:12:23,042] But let's see if we can do that.
+- [01:12:30,482 - 01:12:31,722] We have our choice now.
+- [01:12:31,822 - 01:12:33,802] Either to jump into an application,
+- [01:12:33,802 - 01:12:36,742] which is theory of gas and so forth,
+- [01:12:36,742 - 01:12:38,062] or to do a
+- [01:12:38,062 - 01:12:38,902] little more theory,
+- [01:12:38,902 - 01:12:41,562] the more theory being the theory of fluctuations.
+- [01:12:42,822 - 01:12:44,512] And the theory of fluctuations
+- [01:12:44,512 - 01:12:46,202] is a sort of general theory.
+- [01:12:46,302 - 01:12:48,102] The theory of gas is a special case.
+- [01:12:48,202 - 01:12:49,042] Which would you rather do?
+- [01:12:49,282 - 01:12:50,242] Theory of fluctuations.
+- [01:12:50,542 - 01:12:50,942] Fluctuations.
+- [01:12:51,142 - 01:12:51,662] Fluctuations.
+- [01:12:51,662 - 01:12:52,462] I mean,
+- [01:12:52,462 - 01:12:53,842] it's awfully interesting.
+- [01:12:55,562 - 01:12:57,022] So are gases,
+- [01:12:57,022 - 01:12:58,622] but let's generalize.
+- [01:12:58,702 - 01:12:58,942] All right.
+- [01:12:59,282 - 01:13:00,182] Let's do fluctuations.
+- [01:13:01,262 - 01:13:02,402] Let's take a quantity.
+- [01:13:04,202 - 01:13:05,262] Let's call it x.
+- [01:13:07,281 - 01:13:09,371] x is of course a thing which has
+- [01:13:09,371 - 01:13:11,462] a value for each state of the system.
+- [01:13:11,662 - 01:13:13,082] For each state of the system,
+- [01:13:13,082 - 01:13:14,822] x has some value.
+- [01:13:15,682 - 01:13:18,182] And I'm interested in the probability distribution.
+- [01:13:18,302 - 01:13:21,202] I'm interested in the variance of x.
+- [01:13:21,401 - 01:13:21,642] Now,
+- [01:13:21,642 - 01:13:21,642] I can't do any of that.
+- [01:13:21,642 - 01:13:22,422] Or if you like,
+- [01:13:22,422 - 01:13:25,382] let's call it the uncertainty or the fluctuation of x.
+- [01:13:26,982 - 01:13:28,422] The fluctuation of x,
+- [01:13:28,422 - 01:13:29,342] how do we define it?
+- [01:13:29,782 - 01:13:30,342] Well,
+- [01:13:30,342 - 01:13:31,402] I'll give you a definition.
+- [01:13:32,182 - 01:13:33,302] The definition is,
+- [01:13:33,302 - 01:13:34,102] first of all,
+- [01:13:34,102 - 01:13:36,642] subtract from x its average.
+- [01:13:37,502 - 01:13:41,462] So subtract from x its average value.
+- [01:13:43,682 - 01:13:46,082] So if we have a probability
+- [01:13:46,082 - 01:13:48,482] distribution for x which looks like that,
+- [01:13:48,482 - 01:13:52,802] we subtract the average value which is in here somewhere,
+- [01:13:52,942 - 01:13:56,062] and that effectively just moves the probability distribution
+- [01:13:56,062 - 01:13:59,602] so that the center of the probability distribution
+- [01:13:59,602 - 01:14:01,472] or the average of the probability
+- [01:14:01,472 - 01:14:03,342] distribution is now located at zero.
+- [01:14:04,722 - 01:14:05,862] Other than that,
+- [01:14:05,862 - 01:14:07,142] the interpretation.
+- [01:14:08,112 - 01:14:10,222] An x-bar does not depend on i,
+- [01:14:10,222 - 01:14:11,442] it's just a number.
+- [01:14:13,982 - 01:14:16,682] Now we take this and we square it.
+- [01:14:22,602 - 01:14:25,182] And then we take the average of the whole thing.
+- [01:14:28,902 - 01:14:31,032] So we have some probability distribution
+- [01:14:31,032 - 01:14:33,162] which is centered at the origin,
+- [01:14:33,282 - 01:14:35,342] and centered at the origin because I've shifted it.
+- [01:14:37,662 - 01:14:40,942] We take x squared and we average it,
+- [01:14:41,122 - 01:14:42,082] and that gives us,
+- [01:14:42,082 - 01:14:44,862] that is a measure of the width of the distribution.
+- [01:14:45,302 - 01:14:48,262] It's always positive because it's a square of something,
+- [01:14:48,482 - 01:14:49,222] and when averaged,
+- [01:14:49,222 - 01:14:50,262] it's always positive,
+- [01:14:50,522 - 01:14:52,562] and it measures the width of the distribution.
+- [01:14:53,022 - 01:14:53,642] All right?
+- [01:14:53,662 - 01:14:54,502] Call it the variance.
+- [01:14:55,522 - 01:14:56,422] Mean square,
+- [01:14:56,422 - 01:15:00,102] root mean square,
+- [01:15:00,102 - 01:15:00,982] something or other.
+- [01:15:01,102 - 01:15:01,382] Yeah.
+- [01:15:01,962 - 01:15:02,482] Okay.
+- [01:15:02,562 - 01:15:04,822] So that's the statistical variance in x,
+- [01:15:05,622 - 01:15:08,682] and I want to calculate it for,
+- [01:15:08,682 - 01:15:09,642] well,
+- [01:15:09,642 - 01:15:10,122] first of all,
+- [01:15:10,122 - 01:15:11,042] let me simplify it.
+- [01:15:11,042 - 01:15:12,302] Let me re-express it.
+- [01:15:13,282 - 01:15:14,142] First of all,
+- [01:15:14,142 - 01:15:15,742] this can be expressed as the average,
+- [01:15:15,802 - 01:15:18,402] it's an overbar and the bracket.
+- [01:15:18,482 - 01:15:19,702] The bracket and the bracket rotation are the same thing.
+- [01:15:20,382 - 01:15:22,702] I just didn't want to write brackets inside brackets.
+- [01:15:23,222 - 01:15:23,742] All right.
+- [01:15:23,742 - 01:15:24,202] So what is this?
+- [01:15:24,262 - 01:15:24,602] First of all,
+- [01:15:24,602 - 01:15:25,922] let's take the thing inside the bracket.
+- [01:15:26,462 - 01:15:33,742] It's x squared minus twice x
+- [01:15:33,742 - 01:15:41,022] times x bar plus x bar squared.
+- [01:15:42,882 - 01:15:43,622] If you like,
+- [01:15:43,622 - 01:15:44,942] you can call this x of i,
+- [01:15:44,942 - 01:15:46,262] x of i.
+- [01:15:48,942 - 01:15:50,702] And now we have to average this.
+- [01:15:51,242 - 01:15:52,002] First of all,
+- [01:15:52,002 - 01:15:54,662] what's the average of x of i squared?
+- [01:15:55,422 - 01:15:55,602] Well,
+- [01:15:55,602 - 01:15:56,642] it's just the average of x squared.
+- [01:15:57,162 - 01:15:59,962] So this here is just the average of x squared,
+- [01:15:59,962 - 01:16:01,942] first term.
+- [01:16:02,582 - 01:16:04,622] What about the average of x bar squared?
+- [01:16:05,682 - 01:16:06,122] Well,
+- [01:16:06,122 - 01:16:06,122] it's just the average of x squared.
+- [01:16:06,146 - 01:16:06,306] 好
+- [01:16:07,074 - 01:16:07,974] It's just x bar squared.
+- [01:16:07,974 - 01:16:10,254] x bar doesn't depend on i,
+- [01:16:10,254 - 01:16:12,754] it's just a number as far as i is concerned,
+- [01:16:13,074 - 01:16:15,534] and averaging the number is just the number.
+- [01:16:15,534 - 01:16:18,914] So this gives us plus x bar squared.
+- [01:16:18,914 - 01:16:22,254] Now,
+- [01:16:22,414 - 01:16:23,374] notice that,
+- [01:16:23,374 - 01:16:25,294] I'll deal with this one in a moment,
+- [01:16:25,294 - 01:16:26,914] but notice this is not the same as
+- [01:16:26,914 - 01:16:27,134] this.
+- [01:16:27,134 - 01:16:30,154] This is the average of the square,
+- [01:16:30,154 - 01:16:32,294] this is the square of the average.
+- [01:16:32,294 - 01:16:33,574] Okay?
+- [01:16:33,574 - 01:16:34,134] Two different
+- [01:16:34,134 - 01:16:34,394] things.
+- [01:16:34,394 - 01:16:36,294] The square of the average,
+- [01:16:36,294 - 01:16:38,014] the average of the square,
+- [01:16:38,014 - 01:16:39,693] and then what about this one?
+- [01:16:39,833 - 01:16:40,974] What's the average of this?
+- [01:16:40,974 - 01:16:48,134] It's just minus two x bar x bar,
+- [01:16:48,134 - 01:16:49,134] x bar squared.
+- [01:16:49,134 - 01:16:50,494] Averaging
+- [01:16:50,494 - 01:16:51,974] x gives you x bar,
+- [01:16:51,974 - 01:16:54,474] and it just multiplies this x bar,
+- [01:16:54,474 - 01:16:56,374] so it's minus twice x bar squared.
+- [01:16:57,334 - 01:16:58,334] Two of these,
+- [01:16:58,334 - 01:16:59,534] one over here,
+- [01:16:59,534 - 01:17:02,674] the result is just x.
+- [01:17:02,794 - 01:17:03,154] Okay?
+- [01:17:03,154 - 01:17:08,034] This one squared minus this one.
+- [01:17:08,034 - 01:17:15,914] So this is a standard statistical fact,
+- [01:17:15,914 - 01:17:17,374] that the variance
+- [01:17:17,374 - 01:17:20,234] in a variable is the difference between the
+- [01:17:20,234 - 01:17:23,094] average of the square and the square of the
+- [01:17:23,094 - 01:17:23,474] average.
+- [01:17:23,474 - 01:17:26,174] If I want to write it in a single notation,
+- [01:17:26,174 - 01:17:28,474] I will write it this way.
+- [01:17:28,474 - 01:17:30,974] The difference
+- [01:17:30,974 - 01:17:32,054] of the average of the square and the
+- [01:17:32,054 - 01:17:33,134] average of the average is the difference between the
+- [01:17:33,134 - 01:17:35,334] average of the square and the square of the average.
+- [01:17:35,334 - 01:17:36,714] That's the variance.
+- [01:17:36,714 - 01:17:38,394] For a narrow
+- [01:17:38,394 - 01:17:38,974] distribution,
+- [01:17:38,974 - 01:17:42,354] when the distribution is narrowly peaked,
+- [01:17:42,354 - 01:17:43,814] this is small.
+- [01:17:43,814 - 01:17:47,154] The smaller it is,
+- [01:17:47,174 - 01:17:48,814] the narrower the distribution.
+- [01:17:48,814 - 01:17:51,094] So let's try to calculate.
+- [01:17:51,094 - 01:17:52,874] Let's see how smart we can be.
+- [01:17:53,134 - 01:17:56,094] Let's see if we can
+- [01:17:56,094 - 01:17:59,054] calculate the variance in the energy.
+- [01:17:59,054 - 01:18:02,334] Let's try to calculate the
+- [01:18:02,334 - 01:18:03,114] variance in the energy.
+- [01:18:12,834 - 01:18:14,434] What would it mean,
+- [01:18:14,434 - 01:18:15,094] incidentally,
+- [01:18:15,094 - 01:18:18,234] for the distribution to be sharply peaked?
+- [01:18:18,234 - 01:18:19,394] It would
+- [01:18:19,394 - 01:18:22,034] mean that the variance in the energy
+- [01:18:22,034 - 01:18:24,674] is much smaller than the energy itself.
+- [01:18:24,674 - 01:18:27,234] I guess we
+- [01:18:27,234 - 01:18:28,674] would call this the square of the variance.
+- [01:18:28,674 - 01:18:30,414] Call this the variance or the square of the
+- [01:18:30,414 - 01:18:30,574] variance?
+- [01:18:30,694 - 01:18:31,594] The variance.
+- [01:18:31,994 - 01:18:32,854] The variance.
+- [01:18:32,854 - 01:18:33,714] All right.
+- [01:18:33,714 - 01:18:36,294] But it's also the square of the uncertainty in X,
+- [01:18:36,294 - 01:18:36,754] if you like.
+- [01:18:36,754 - 01:18:37,914] It's the square
+- [01:18:37,914 - 01:18:38,934] of the width of the distribution.
+- [01:18:38,934 - 01:18:40,974] So we might want to
+- [01:18:40,974 - 01:18:43,014] compare this quantity here with the
+- [01:18:43,014 - 01:18:44,414] square of the energy itself.
+- [01:18:44,414 - 01:18:45,174] In other words,
+- [01:18:45,174 - 01:18:47,914] we might want to compare the difference of
+- [01:18:47,914 - 01:18:50,474] these two to either one of them separately.
+- [01:18:50,474 - 01:18:52,014] When that's small,
+- [01:18:52,014 - 01:18:54,034] we say that the peak is
+- [01:18:54,034 - 01:18:54,374] sharp.
+- [01:18:54,374 - 01:18:57,054] But let's see how well we can do,
+- [01:18:57,054 - 01:18:58,234] how far can we go,
+- [01:18:58,234 - 01:19:00,474] in calculating this variance
+- [01:19:00,474 - 01:19:01,374] per energy?
+- [01:19:02,354 - 01:19:02,834] Man-hanna.
+- [01:19:02,854 - 01:19:05,154] We've calculated the average of the energy.
+- [01:19:05,354 - 01:19:06,694] Let's write down the formula.
+- [01:19:07,154 - 01:19:07,994] The average,
+- [01:19:07,994 - 01:19:09,034] there it is right here.
+- [01:19:09,294 - 01:19:11,014] Let me set it right over here.
+- [01:19:11,254 - 01:19:14,794] The energy is equal to minus
+- [01:19:14,794 - 01:19:18,334] d log z with respect to beta.
+- [01:19:21,054 - 01:19:23,234] Let's see if we can calculate the
+- [01:19:23,234 - 01:19:25,414] average of the square of the energy.
+- [01:19:27,354 - 01:19:29,134] This is the average energy.
+- [01:19:29,134 - 01:19:30,854] Now I'm going to use the fact that
+- [01:19:30,854 - 01:19:32,574] it really was the average of the energy.
+- [01:19:34,514 - 01:19:38,734] Most of the times I don't bother writing this average,
+- [01:19:38,814 - 01:19:40,554] but this is the average of the energy.
+- [01:19:42,474 - 01:19:44,234] Minus d log z with respect to beta.
+- [01:19:45,814 - 01:19:47,554] We'll wind up squaring it because
+- [01:19:47,554 - 01:19:49,294] we're instructed to square it over here,
+- [01:19:49,474 - 01:19:51,454] but first let's calculate the average
+- [01:19:51,454 - 01:19:53,434] of the square of the energy.
+- [01:19:54,074 - 01:19:55,354] So for that we need a
+- [01:19:55,354 - 01:19:56,634] formula for this average of the square.
+- [01:19:58,214 - 01:19:59,114] Average of the square.
+- [01:19:59,134 - 01:20:01,704] The average of the square of the energy
+- [01:20:01,704 - 01:20:04,274] is p of i times e sub i squared.
+- [01:20:06,374 - 01:20:08,374] That's the average of the square of the energy,
+- [01:20:09,774 - 01:20:14,274] which is equal to 1 over z sum
+- [01:20:14,274 - 01:20:18,774] e to the minus beta e sub i,
+- [01:20:19,854 - 01:20:20,994] that's p sub i,
+- [01:20:20,994 - 01:20:22,694] times e sub i squared.
+- [01:20:26,454 - 01:20:28,853] Remember what I did to find the average energy.
+- [01:20:29,134 - 01:20:30,394] I just,
+- [01:20:30,394 - 01:20:31,704] in that case we only
+- [01:20:31,704 - 01:20:33,014] had one power of energy here.
+- [01:20:33,474 - 01:20:35,964] We just differentiated with respect to
+- [01:20:35,964 - 01:20:38,454] beta to bring down that e here.
+- [01:20:38,774 - 01:20:40,994] What should I do to get the e squared?
+- [01:20:42,134 - 01:20:43,254] Take the second derivative.
+- [01:20:43,894 - 01:20:45,554] When I take the second derivative,
+- [01:20:46,293 - 01:20:51,374] you'll find out that the average of e squared
+- [01:20:52,354 - 01:20:57,874] is just 1 over z times the second derivative
+- [01:20:57,874 - 01:20:59,114] of z.
+- [01:20:59,934 - 01:21:01,874] With respect to beta squared,
+- [01:21:01,874 - 01:21:02,494] correct?
+- [01:21:04,634 - 01:21:06,534] I think now there's no minus sign.
+- [01:21:08,154 - 01:21:09,794] Is it z or log z?
+- [01:21:12,954 - 01:21:13,514] Uh,
+- [01:21:13,514 - 01:21:14,074] z.
+- [01:21:16,574 - 01:21:17,134] z.
+- [01:21:17,774 - 01:21:20,734] e squared gives you two derivatives.
+- [01:21:21,793 - 01:21:22,354] Right.
+- [01:21:22,354 - 01:21:23,214] z squared.
+- [01:21:23,974 - 01:21:25,754] Now we can write down the variance.
+- [01:21:26,294 - 01:21:28,154] The variance is first of all,
+- [01:21:28,174 - 01:21:29,114] z squared.
+- [01:21:29,494 - 01:21:35,134] 1 over z d seconds z by Express.
+- [01:21:35,134 - 01:21:36,034] by the beta squared.
+- [01:21:37,054 - 01:21:38,714] Now we have to subtract
+- [01:21:40,654 - 01:21:42,214] The average of e squared.
+- [01:21:42,824 - 01:21:44,314] Which is minus
+- [01:21:48,074 - 01:21:51,474] v log of z
+- [01:21:52,204 - 01:21:52,974] by the beta
+- [01:21:58,214 - 01:21:58,674] squared.
+- [01:21:58,674 - 01:21:59,554] In fact,
+- [01:21:59,554 - 01:22:00,954] let me write this slightly differently.
+- [01:22:00,954 - 01:22:04,654] The log z by d beta is 1 over z,
+- [01:22:04,694 - 01:22:05,634] dz by d beta.
+- [01:22:05,634 - 01:22:08,294] So actually this is just 1 over z squared,
+- [01:22:08,294 - 01:22:10,954] 1 over z squared,
+- [01:22:10,954 - 01:22:13,614] dz by d beta,
+- [01:22:13,614 - 01:22:14,754] 1 over z squared,
+- [01:22:14,754 - 01:22:16,034] dz by d beta,
+- [01:22:16,034 - 01:22:17,974] 1 over z,
+- [01:22:17,974 - 01:22:19,034] dz by d beta squared.
+- [01:22:19,034 - 01:22:22,994] So it's the difference
+- [01:22:22,994 - 01:22:26,084] between 1 over z times the second derivative of
+- [01:22:26,084 - 01:22:29,174] z with respect to beta minus 1 over z squared,
+- [01:22:29,274 - 01:22:30,414] dz by d beta squared.
+- [01:22:30,414 - 01:22:31,994] That's the variance.
+- [01:22:31,994 - 01:22:34,994] We're not finished with it yet.
+- [01:22:34,994 - 01:22:38,394] This is simpler
+- [01:22:38,394 - 01:22:39,014] than it looks.
+- [01:22:52,234 - 01:22:53,034] This is,
+- [01:22:53,034 - 01:22:53,754] I believe,
+- [01:22:53,754 - 01:22:57,614] I think it's just the second,
+- [01:22:57,614 - 01:22:58,434] or let's try it out,
+- [01:22:58,434 - 01:22:59,474] the second derivative
+- [01:22:59,474 - 01:23:04,894] of log z with respect to beta,
+- [01:23:04,894 - 01:23:05,974] which I think what it is.
+- [01:23:05,974 - 01:23:08,954] Let's try it out and find out.
+- [01:23:14,094 - 01:23:17,834] The derivative of log z with respect to beta,
+- [01:23:17,834 - 01:23:18,454] let's see,
+- [01:23:18,454 - 01:23:22,274] the derivative of log z with respect
+- [01:23:22,274 - 01:23:22,694] to beta,
+- [01:23:22,694 - 01:23:26,534] that's 1 over z,
+- [01:23:26,534 - 01:23:28,954] dz by d beta.
+- [01:23:28,954 - 01:23:33,574] That's the first derivative.
+- [01:23:33,574 - 01:23:35,294] And now we want to differentiate
+- [01:23:35,294 - 01:23:36,574] it again with respect to beta.
+- [01:23:36,574 - 01:23:43,374] So what happens when we differentiate this product here?
+- [01:23:44,314 - 01:23:44,754] When I differentiate this product here,
+- [01:23:44,754 - 01:23:45,934] I get one term,
+- [01:23:45,934 - 01:23:48,094] which is 1 over z times the
+- [01:23:48,094 - 01:23:49,914] second derivative of z with respect to beta.
+- [01:23:49,914 - 01:23:52,154] That's here.
+- [01:23:52,154 - 01:23:55,154] Now what's the other term when
+- [01:23:56,214 - 01:23:58,414] I differentiate 1 over z with respect to beta?
+- [01:23:58,414 - 01:24:01,194] That gives me minus 1 over z squared,
+- [01:24:01,194 - 01:24:02,374] another
+- [01:24:02,374 - 01:24:04,374] factor of 2 factors of dz by d beta.
+- [01:24:04,374 - 01:24:04,794] Is that clear?
+- [01:24:04,794 - 01:24:06,274] When I differentiate,
+- [01:24:06,274 - 01:24:07,054] to get this here
+- [01:24:07,054 - 01:24:07,514] for a moment,
+- [01:24:07,514 - 01:24:08,434] let's put it over here,
+- [01:24:08,434 - 01:24:10,094] dz by d beta.
+- [01:24:10,094 - 01:24:13,594] When I differentiate 1 over z squared,
+- [01:24:13,594 - 01:24:15,434] over z with respect to beta,
+- [01:24:15,434 - 01:24:18,664] I get minus 1 over z
+- [01:24:18,664 - 01:24:21,894] squared another dz by d beta.
+- [01:24:23,354 - 01:24:25,054] So that gives me this term here.
+- [01:24:25,054 - 01:24:30,834] So here's what I found.
+- [01:24:30,834 - 01:24:32,694] I found out that the
+- [01:24:32,694 - 01:24:36,124] that the variance is just the second
+- [01:24:36,124 - 01:24:39,554] derivative of log z with respect to beta.
+- [01:24:40,834 - 01:24:41,334] Okay,
+- [01:24:41,334 - 01:24:45,274] let's examine it a little more closely.
+- [01:24:54,094 - 01:24:55,754] The log z by d beta
+- [01:25:02,954 - 01:25:04,234] Thank you.
+- [01:25:04,386 - 01:25:05,726] That's equal to minus the energy.
+- [01:25:07,946 - 01:25:09,466] So what this whole thing is,
+- [01:25:09,466 - 01:25:09,826] I mean,
+- [01:25:09,906 - 01:25:11,126] we've made a number of steps.
+- [01:25:11,366 - 01:25:12,786] Whenever I do this,
+- [01:25:12,786 - 01:25:14,006] I always feel
+- [01:25:14,006 - 01:25:15,406] like I've done too many steps.
+- [01:25:16,306 - 01:25:17,706] Like I've done the same
+- [01:25:17,706 - 01:25:19,106] steps backward and forward and back.
+- [01:25:21,185 - 01:25:22,066] physical interpretation
+- [01:25:22,066 - 01:25:22,806] of z on
+- [01:25:22,806 - 01:25:25,646] as to what z ..
+- [01:25:27,325 - 01:25:29,186] part of the solution alpha for the
+- [01:25:29,665 - 01:25:31,566] But I don't have a sense of this ..
+- [01:25:33,305 - 01:25:34,626] Is this not a consequence?
+- [01:25:34,866 - 01:25:35,286] No,
+- [01:25:35,286 - 01:25:36,246] it's a function of beta.
+- [01:25:36,586 - 01:25:37,386] It's a function of beta.
+- [01:25:38,006 - 01:25:39,406] And whatever it is,
+- [01:25:39,406 - 01:25:41,646] it contains all the information
+- [01:25:41,646 - 01:25:42,746] about the thermodynamics.
+- [01:25:43,726 - 01:25:45,306] It's a thing which you differentiate.
+- [01:25:45,586 - 01:25:46,546] You take its logarithm.
+- [01:25:46,726 - 01:25:48,466] You do all sorts of tricks with it.
+- [01:25:49,246 - 01:25:51,346] And it generates the full thermodynamics.
+- [01:25:53,086 - 01:25:54,246] What can I tell you?
+- [01:25:54,426 - 01:25:56,006] It's free energy.
+- [01:25:56,186 - 01:25:58,106] Or its logarithm is the free energy.
+- [01:25:58,286 - 01:25:59,766] Or its logarithm is divided by beta.
+- [01:26:00,905 - 01:26:03,226] We're going to calculate these things over and over.
+- [01:26:03,406 - 01:26:03,846] And eventually,
+- [01:26:03,846 - 01:26:05,226] you'll get some sense for what it is.
+- [01:26:05,346 - 01:26:06,466] But I think there's no ..
+- [01:26:06,466 - 01:26:09,926] Is it an intermediate type of variable?
+- [01:26:10,206 - 01:26:10,386] Well,
+- [01:26:10,386 - 01:26:11,826] it's a generating function.
+- [01:26:12,466 - 01:26:15,546] It's a generating function that generates lots of answers.
+- [01:26:15,846 - 01:26:16,706] You do things to it.
+- [01:26:18,106 - 01:26:19,006] You know what it is?
+- [01:26:22,526 - 01:26:24,226] It's the Laplace transform.
+- [01:26:24,606 - 01:26:25,666] What is the Laplace transform?
+- [01:26:25,786 - 01:26:28,386] It's the Laplace transform of the density of states.
+- [01:26:28,646 - 01:26:29,506] Does that help you at all?
+- [01:26:37,046 - 01:26:39,626] It doesn't have a simple interpretation,
+- [01:26:39,626 - 01:26:40,086] something
+- [01:26:40,086 - 01:26:40,886] you can measure.
+- [01:26:41,066 - 01:26:45,706] It's something you do something to generate answers.
+- [01:26:46,686 - 01:26:49,726] The action in mechanics is a thing
+- [01:26:49,726 - 01:26:52,526] that you do things to generate equations of motion
+- [01:26:52,526 - 01:26:53,086] and so forth.
+- [01:26:53,406 - 01:26:56,306] The partition function is also a generating function
+- [01:26:57,046 - 01:26:58,566] that you do various operations.
+- [01:26:58,806 - 01:26:59,746] And you do things to it.
+- [01:26:59,746 - 01:27:00,966] It's just about everything you
+- [01:27:00,966 - 01:27:02,186] can think of in thermodynamics.
+- [01:27:04,426 - 01:27:06,726] Fluctuations take us beyond thermodynamics,
+- [01:27:06,726 - 01:27:07,386] incidentally.
+- [01:27:07,746 - 01:27:11,826] So what are the units of z?
+- [01:27:12,026 - 01:27:12,846] Say that again?
+- [01:27:12,946 - 01:27:14,066] The units of z.
+- [01:27:14,286 - 01:27:15,346] z is dimensionless.
+- [01:27:16,106 - 01:27:17,366] z is dimensionless.
+- [01:27:18,866 - 01:27:22,166] Things in exponents are always dimensionless.
+- [01:27:22,836 - 01:27:24,566] So when you sum things in exponents,
+- [01:27:24,646 - 01:27:25,846] it's always dimensionless.
+- [01:27:26,106 - 01:27:27,386] So it has been dimensionless.
+- [01:27:33,366 - 01:27:35,526] I would say rather than
+- [01:27:35,526 - 01:27:37,686] saying what its physical interpretation is,
+- [01:27:37,846 - 01:27:38,286] which means,
+- [01:27:38,286 - 01:27:41,506] I suppose that means how does it relate
+- [01:27:41,506 - 01:27:42,766] to measurable quantities?
+- [01:27:42,966 - 01:27:44,166] Is it a measurable quantity?
+- [01:27:44,466 - 01:27:44,666] No,
+- [01:27:44,666 - 01:27:46,946] it's not in itself directly a measurable quantity.
+- [01:27:47,346 - 01:27:50,646] It's not what its physical interpretation is.
+- [01:27:50,746 - 01:27:52,826] It's what you can do with it to generate things
+- [01:27:52,826 - 01:27:55,086] whose physical interpretation you do not.
+- [01:27:56,106 - 01:27:58,946] So we'll play with it a lot.
+- [01:27:58,946 - 01:27:59,926] But in any case,
+- [01:27:59,926 - 01:28:02,086] we've now seen that we can calculate
+- [01:28:02,086 - 01:28:03,766] the fluctuations in the energy
+- [01:28:03,766 - 01:28:05,446] as well as the energy itself.
+- [01:28:08,685 - 01:28:11,626] But let's do a little more with it.
+- [01:28:11,706 - 01:28:13,466] We're calculating the,
+- [01:28:13,466 - 01:28:19,706] I guess I could call it,
+- [01:28:19,786 - 01:28:23,346] the fluctuation in energy squared.
+- [01:28:23,566 - 01:28:25,086] Let's think of it that way.
+- [01:28:26,686 - 01:28:28,706] Uncertainty of the spread in the energy
+- [01:28:28,946 - 01:28:29,526] is the unaccounted for.
+- [01:28:29,866 - 01:28:32,406] And what we find out is that
+- [01:28:32,406 - 01:28:34,946] it's the second derivative of log z
+- [01:28:35,746 - 01:28:38,026] with respect to beta squared.
+- [01:28:39,106 - 01:28:39,706] Now,
+- [01:28:39,706 - 01:28:44,766] the first derivative of log z is just the energy,
+- [01:28:44,766 - 01:28:45,706] or minus.
+- [01:28:46,826 - 01:28:48,526] Minus the energy.
+- [01:28:48,766 - 01:28:50,616] And so we have d
+- [01:28:50,616 - 01:28:52,466] by d beta of the energy.
+- [01:28:53,846 - 01:28:54,446] Now,
+- [01:28:54,446 - 01:28:54,906] what is beta?
+- [01:28:54,906 - 01:28:57,146] Beta is 1 over temperature.
+- [01:28:58,146 - 01:28:59,746] So this can be related
+- [01:28:59,746 - 01:29:01,346] to the derivative of the energy
+- [01:29:01,346 - 01:29:02,986] with respect to temperature.
+- [01:29:03,666 - 01:29:08,326] This is dE d beta,
+- [01:29:08,326 - 01:29:15,106] which is dE by dT temperature,
+- [01:29:16,225 - 01:29:17,586] times d temperature,
+- [01:29:17,586 - 01:29:18,766] d beta.
+- [01:29:21,006 - 01:29:22,746] But beta is just 1 over temperature.
+- [01:29:22,965 - 01:29:24,806] So what's the dT d beta?
+- [01:29:27,605 - 01:29:28,646] 1 over T squared,
+- [01:29:28,646 - 01:29:28,986] right?
+- [01:29:29,006 - 01:29:29,986] Minus 1 over T squared.
+- [01:29:30,646 - 01:29:31,126] No.
+- [01:29:32,646 - 01:29:33,506] T squared.
+- [01:29:33,966 - 01:29:34,606] T squared.
+- [01:29:36,686 - 01:29:37,786] T by d beta.
+- [01:29:37,906 - 01:29:38,606] Let's write that out.
+- [01:29:40,286 - 01:29:42,006] T is equal to 1 over beta.
+- [01:29:44,265 - 01:29:46,695] dT by d beta is equal
+- [01:29:46,695 - 01:29:49,126] to minus 1 over beta squared,
+- [01:29:50,506 - 01:29:52,406] which is equal to minus T squared.
+- [01:29:54,286 - 01:29:54,766] OK.
+- [01:29:54,786 - 01:29:57,946] So did I lose a minus sign?
+- [01:29:58,266 - 01:29:59,386] You have a minus sign.
+- [01:29:59,486 - 01:29:59,886] Here it is.
+- [01:30:00,846 - 01:30:05,586] dT by d beta is just minus.
+- [01:30:05,766 - 01:30:06,726] That gets rid of a minus.
+- [01:30:07,206 - 01:30:09,406] And this becomes T squared upstairs.
+- [01:30:14,545 - 01:30:15,026] Now,
+- [01:30:15,026 - 01:30:16,626] what is this,
+- [01:30:16,626 - 01:30:18,166] dE by dT?
+- [01:30:19,906 - 01:30:20,066] ありがとうございました
+- [01:30:20,834 - 01:30:21,394] It's got a name.
+- [01:30:21,674 - 01:30:23,674] The heat capacity.
+- [01:30:24,414 - 01:30:25,834] It's the heat capacity.
+- [01:30:26,154 - 01:30:27,714] The heat capacity
+- [01:30:29,034 - 01:30:30,254] dE by dt
+- [01:30:32,074 - 01:30:33,954] is the heat capacity.
+- [01:30:35,514 - 01:30:36,474] It's the definition
+- [01:30:36,474 - 01:30:37,334] of a heat capacity.
+- [01:30:37,854 - 01:30:39,494] It's the amount of
+- [01:30:40,874 - 01:30:41,534] well
+- [01:30:42,774 - 01:30:43,434] numbers.
+- [01:30:44,464 - 01:30:44,794] Hmm?
+- [01:30:47,914 - 01:30:48,574] Yeah.
+- [01:30:48,574 - 01:30:49,274] Yeah.
+- [01:30:50,054 - 01:30:51,654] Amount of energy to change the temperature
+- [01:30:51,654 - 01:30:52,254] by one unit.
+- [01:30:53,094 - 01:30:54,814] How much energy do you have to put in
+- [01:30:54,814 - 01:30:56,694] to change the energy by one unit?
+- [01:31:00,874 - 01:31:02,914] Could we go back just a second here?
+- [01:31:03,334 - 01:31:03,774] Yes.
+- [01:31:04,794 - 01:31:07,574] We showed that the delta E squared
+- [01:31:08,214 - 01:31:09,594] is the second derivative
+- [01:31:09,594 - 01:31:11,514] of log Z with respect to theta squared.
+- [01:31:11,854 - 01:31:12,214] Right.
+- [01:31:13,214 - 01:31:14,574] Now where do we get from?
+- [01:31:14,814 - 01:31:15,474] How do we get?
+- [01:31:17,474 - 01:31:18,454] The first derivative
+- [01:31:18,454 - 01:31:19,974] is just the energy.
+- [01:31:21,534 - 01:31:23,254] The log Z by d theta
+- [01:31:23,254 - 01:31:24,034] apart from the sine.
+- [01:31:24,614 - 01:31:26,654] The log Z by d theta is energy.
+- [01:31:27,614 - 01:31:28,814] So the answer is
+- [01:31:28,814 - 01:31:30,894] the derivative of energy with respect to theta.
+- [01:31:33,734 - 01:31:35,234] The log Z with
+- [01:31:35,974 - 01:31:36,494] Okay,
+- [01:31:36,494 - 01:31:36,754] so
+- [01:31:36,754 - 01:31:38,114] I said it's your second.
+- [01:31:38,134 - 01:31:38,254] Yeah,
+- [01:31:38,254 - 01:31:39,194] the equation is right there.
+- [01:31:39,614 - 01:31:43,214] The first derivative
+- [01:31:43,214 - 01:31:44,334] is just the energy.
+- [01:31:44,954 - 01:31:47,114] Now I want to differentiate this again
+- [01:31:47,114 - 01:31:48,254] with respect to theta.
+- [01:31:48,894 - 01:31:51,054] So it's just the E by d theta.
+- [01:31:53,494 - 01:31:55,774] Which if I decide I would like to use temperature
+- [01:31:55,774 - 01:31:58,194] instead of just for familiarity's sake,
+- [01:31:58,454 - 01:32:00,494] if I like temperature better than beta,
+- [01:32:00,674 - 01:32:01,614] which I do,
+- [01:32:01,614 - 01:32:02,094] I mean,
+- [01:32:02,094 - 01:32:03,494] essentially temperature,
+- [01:32:03,714 - 01:32:07,954] I substitute the E d beta d beta d t,
+- [01:32:08,174 - 01:32:11,234] and it gives me t squared times the specific heat,
+- [01:32:11,254 - 01:32:12,094] not the specific heat.
+- [01:32:13,154 - 01:32:16,374] I always say specific heat when I mean the capacity.
+- [01:32:17,434 - 01:32:18,214] Heat capacity.
+- [01:32:18,214 - 01:32:18,314] Heat capacity.
+- [01:32:18,314 - 01:32:22,294] T squared times the heat capacity.
+- [01:32:23,694 - 01:32:24,214] Okay.
+- [01:32:25,334 - 01:32:26,354] First of all,
+- [01:32:26,394 - 01:32:30,154] how does the heat capacity grow
+- [01:32:30,154 - 01:32:32,574] with the number of particles in the system?
+- [01:32:33,814 - 01:32:35,054] Remember what it is now,
+- [01:32:35,194 - 01:32:37,174] or the size of the system.
+- [01:32:37,254 - 01:32:38,614] Let's say the number of particles.
+- [01:32:42,094 - 01:32:43,794] It's the amount of heat that you need
+- [01:32:43,794 - 01:32:45,794] to change the temperature by one unit.
+- [01:32:46,754 - 01:32:48,294] That's proportional to the number of particles.
+- [01:32:48,314 - 01:32:51,654] The bigger the system,
+- [01:32:51,654 - 01:32:52,754] the heavier the system,
+- [01:32:52,934 - 01:32:56,374] the more energy you have to put in
+- [01:32:56,374 - 01:32:58,194] to change the temperature by a given amount.
+- [01:32:58,454 - 01:32:59,354] And in fact,
+- [01:32:59,354 - 01:33:00,994] the heat capacity is proportional
+- [01:33:01,774 - 01:33:03,574] to the mass of the system,
+- [01:33:03,574 - 01:33:05,554] depending on what you use.
+- [01:33:05,694 - 01:33:07,974] Let's just say the number of particles in the system.
+- [01:33:08,394 - 01:33:10,814] So the right-hand side here is proportional
+- [01:33:10,814 - 01:33:12,054] to the number of particles.
+- [01:33:13,014 - 01:33:15,414] What about the energy itself?
+- [01:33:16,594 - 01:33:18,294] Also proportional to the number of particles.
+- [01:33:18,294 - 01:33:18,834] So the number of particles is
+- [01:33:18,834 - 01:33:19,374] proportional to the number of particles.
+- [01:33:19,374 - 01:33:21,004] But the square of energy is
+- [01:33:21,004 - 01:33:22,634] what we should compare it with,
+- [01:33:22,734 - 01:33:24,314] is the square of the energy.
+- [01:33:25,014 - 01:33:27,034] As the units of squares of energy,
+- [01:33:27,354 - 01:33:30,854] the square of the energy is proportional
+- [01:33:30,854 - 01:33:32,854] to the square of the number of particles.
+- [01:33:33,394 - 01:33:34,754] So in that sense,
+- [01:33:34,754 - 01:33:37,554] the fluctuation is very much smaller
+- [01:33:37,554 - 01:33:39,934] than the energy itself.
+- [01:33:40,434 - 01:33:42,694] We should take the square root of both sides
+- [01:33:42,694 - 01:33:45,574] in order to have a fluctuation in the energy.
+- [01:33:45,754 - 01:33:47,154] The uncertainty in the energy
+- [01:33:48,294 - 01:33:54,434] is T times the square root of the heat capacity.
+- [01:33:54,934 - 01:33:58,934] Heat capacities grow linearly
+- [01:33:58,934 - 01:34:00,834] with the number of particles in the system.
+- [01:34:01,394 - 01:34:05,674] So this side here grows like the square root
+- [01:34:05,674 - 01:34:06,854] of the number of particles,
+- [01:34:07,054 - 01:34:10,654] but the energy itself grows linearly
+- [01:34:10,654 - 01:34:11,814] with the number of particles.
+- [01:34:12,194 - 01:34:15,974] So the fluctuation divided by the quantity itself
+- [01:34:15,974 - 01:34:18,694] gets smaller and smaller,
+- [01:34:18,874 - 01:34:20,464] like one divided by the square
+- [01:34:20,464 - 01:34:22,054] root of the number of particles.
+- [01:34:23,934 - 01:34:25,234] That's the demonstration,
+- [01:34:25,234 - 01:34:26,294] if you like,
+- [01:34:26,514 - 01:34:29,914] that fluctuations are small by comparison
+- [01:34:29,914 - 01:34:31,554] with the quantities themselves.
+- [01:34:33,314 - 01:34:35,314] So that's one way of seeing it.
+- [01:34:36,074 - 01:34:38,353] I might also add one more point.
+- [01:34:40,034 - 01:34:41,154] Let's keep track.
+- [01:34:41,293 - 01:34:43,514] I rarely keep track of Boltzmann's constant.
+- [01:34:43,794 - 01:34:45,954] But let's keep track of Boltzmann's constant.
+- [01:34:45,954 - 01:34:51,054] In order to keep track of Boltzmann's constant,
+- [01:34:51,214 - 01:34:52,374] I'll give you some standard,
+- [01:34:53,253 - 01:34:56,614] let's call them undergraduate textbook definition.
+- [01:34:58,094 - 01:35:01,294] According to the standard undergraduate textbook definition,
+- [01:35:01,594 - 01:35:03,754] I'll call it temperature little t.
+- [01:35:05,674 - 01:35:07,604] And little t is such
+- [01:35:07,604 - 01:35:09,534] that it times the Boltzmann constant
+- [01:35:10,553 - 01:35:12,314] is what I call big T.
+- [01:35:14,954 - 01:35:17,434] That's the definition of Boltzmann's constant.
+- [01:35:17,434 - 01:35:19,894] That's where the Boltzmann constant comes in.
+- [01:35:20,394 - 01:35:23,044] And also the standard
+- [01:35:23,044 - 01:35:25,694] undergraduate textbook definition of entropy,
+- [01:35:25,914 - 01:35:27,174] which I will call little s,
+- [01:35:27,514 - 01:35:30,254] you also multiply that by k Boltzmann
+- [01:35:30,254 - 01:35:33,054] to get what I call big S,
+- [01:35:33,894 - 01:35:35,254] what I call entropy.
+- [01:35:36,734 - 01:35:39,674] No decent information theoretic physicist
+- [01:35:39,674 - 01:35:41,674] would ever define anything except this.
+- [01:35:42,953 - 01:35:45,374] Except if you're trying to compare things
+- [01:35:45,374 - 01:35:46,834] to a definition of entropy
+- [01:35:46,834 - 01:35:49,194] which was in some ancient textbook.
+- [01:35:49,494 - 01:35:51,054] Then you would put a k Boltzmann.
+- [01:35:52,573 - 01:35:55,494] Notice that k Boltzmann will cancel out,
+- [01:35:55,634 - 01:35:55,974] let's see,
+- [01:35:55,974 - 01:35:56,594] do I have this right?
+- [01:35:56,714 - 01:35:59,254] Do I have this upside down?
+- [01:36:01,414 - 01:36:03,554] kT is what I call temperature.
+- [01:36:05,874 - 01:36:06,414] Well,
+- [01:36:06,414 - 01:36:06,774] let's see.
+- [01:36:08,074 - 01:36:10,234] The E equals TES.
+- [01:36:14,134 - 01:36:18,194] Which should equal little t d little s.
+- [01:36:19,614 - 01:36:21,674] So I think I have this upside down.
+- [01:36:22,334 - 01:36:24,834] I think it's k Boltzmann of the denominator.
+- [01:36:25,314 - 01:36:25,894] Yeah,
+- [01:36:25,894 - 01:36:30,494] I think that's right.
+- [01:36:35,254 - 01:36:37,274] This is standard textbook definition.
+- [01:36:37,594 - 01:36:39,234] And it's such that when you write
+- [01:36:39,234 - 01:36:40,934] that the E equals TES
+- [01:36:41,674 - 01:36:43,994] it's the same as writing
+- [01:36:43,994 - 01:36:46,314] in the undergraduate textbook sense.
+- [01:36:46,454 - 01:36:47,694] The k Boltzmanns cancel out.
+- [01:36:47,694 - 01:36:50,174] Just engineer the definition of entropy
+- [01:36:50,174 - 01:36:51,674] so that they cancel out at the end.
+- [01:36:53,154 - 01:36:54,334] T times s,
+- [01:36:54,334 - 01:36:55,314] the Boltzmann counter.
+- [01:36:55,514 - 01:36:55,634] Yeah,
+- [01:36:55,634 - 01:36:56,534] that's correct.
+- [01:36:56,634 - 01:36:57,794] These are standard definitions.
+- [01:36:58,134 - 01:36:59,714] Is it very hard to prove
+- [01:36:59,714 - 01:37:01,294] that beta is 1 over T?
+- [01:37:03,614 - 01:37:04,954] We're going to do it at some point.
+- [01:37:05,074 - 01:37:06,534] It's in the notes and we're going to do it.
+- [01:37:06,654 - 01:37:08,834] But at the moment let it be a definition.
+- [01:37:09,154 - 01:37:09,574] Okay,
+- [01:37:09,574 - 01:37:09,974] yeah.
+- [01:37:09,974 - 01:37:10,694] Well,
+- [01:37:10,694 - 01:37:11,914] that's a definition.
+- [01:37:12,134 - 01:37:15,194] But this was also a definition.
+- [01:37:15,374 - 01:37:16,454] We have two definitions.
+- [01:37:16,814 - 01:37:17,374] They could clash.
+- [01:37:17,554 - 01:37:17,934] They don't.
+- [01:37:18,074 - 01:37:18,974] So yeah,
+- [01:37:18,974 - 01:37:19,474] we'll do that.
+- [01:37:19,674 - 01:37:20,594] But not now.
+- [01:37:23,034 - 01:37:23,654] Right.
+- [01:37:23,774 - 01:37:27,294] Now let's go back to this formula over here
+- [01:37:27,294 - 01:37:32,314] that the uncertainty in the energy squared
+- [01:37:33,794 - 01:37:37,354] is equal to T squared times the heat capacity
+- [01:37:38,094 - 01:37:39,134] which is what?
+- [01:37:39,214 - 01:37:39,754] It's TES.
+- [01:37:39,754 - 01:37:40,494] TES.
+- [01:37:40,494 - 01:37:41,194] It's E by DT.
+- [01:37:44,654 - 01:37:47,734] Does this formula make dimensional sense?
+- [01:37:49,994 - 01:37:50,634] Well,
+- [01:37:50,634 - 01:37:52,334] it does make dimensional sense.
+- [01:37:52,514 - 01:37:54,714] But where does the Boltzmann constant go into this?
+- [01:37:56,014 - 01:37:59,434] The answer is wherever you see capital P
+- [01:37:59,434 - 01:38:02,574] and you want to use what's called an undergraduate
+- [01:38:02,574 - 01:38:03,554] physics notation,
+- [01:38:03,554 - 01:38:06,014] put K times little t.
+- [01:38:06,314 - 01:38:09,494] So that means that we can put little te F,
+- [01:38:09,754 - 01:38:10,314] little t squared,
+- [01:38:10,314 - 01:38:11,874] little t here,
+- [01:38:11,874 - 01:38:13,934] and then I think there's
+- [01:38:13,934 - 01:38:15,994] one k Boltzmann in the numerator
+- [01:38:15,994 - 01:38:16,414] here.
+- [01:38:18,134 - 01:38:21,354] This is in fact the first place
+- [01:38:21,354 - 01:38:24,574] in anything we've discussed where k Boltzmann actually
+- [01:38:24,574 - 01:38:25,154] appears.
+- [01:38:25,354 - 01:38:27,254] k Boltzmann appears in fluctuations.
+- [01:38:28,554 - 01:38:30,234] This is the heat capacity.
+- [01:38:30,634 - 01:38:32,454] It's a thing you measure in a laboratory.
+- [01:38:33,134 - 01:38:36,034] It's neither terribly small nor terribly big.
+- [01:38:36,034 - 01:38:38,974] It's just whatever energy it takes.
+- [01:38:39,054 - 01:38:39,934] How much heat,
+- [01:38:39,934 - 01:38:41,174] how many BTUs,
+- [01:38:41,174 - 01:38:43,614] or how many calories,
+- [01:38:43,614 - 01:38:46,214] or how many joules you have to pump
+- [01:38:46,214 - 01:38:48,454] in to change the temperature by a certain amount.
+- [01:38:48,894 - 01:38:50,784] So this is neither a terribly
+- [01:38:50,784 - 01:38:52,674] small quantity nor a very big quantity.
+- [01:38:53,114 - 01:38:55,234] This temperature could be room temperature,
+- [01:38:55,234 - 01:38:56,834] 300 degrees or whatever.
+- [01:38:57,034 - 01:38:58,083] It's also not a very
+- [01:38:58,083 - 01:38:59,133] big number or a small number.
+- [01:39:00,194 - 01:39:02,694] We do expect for a big box of gas,
+- [01:39:02,694 - 01:39:03,774] for a mole of gas,
+- [01:39:03,774 - 01:39:04,454] for example,
+- [01:39:04,454 - 01:39:05,954] we expect the fluctuation
+- [01:39:05,954 - 01:39:07,594] in energy to be very small,
+- [01:39:07,594 - 01:39:10,414] at least by comparison with the energy itself.
+- [01:39:11,574 - 01:39:14,454] Here's another source of smallness.
+- [01:39:14,794 - 01:39:16,594] k Boltzmann is a very small number.
+- [01:39:16,694 - 01:39:17,034] How small?
+- [01:39:18,134 - 01:39:19,634] 10 to the minus 23rd.
+- [01:39:20,834 - 01:39:23,674] So this number is 10 to the minus 23rd.
+- [01:39:25,413 - 01:39:27,093] 1.4 times 10 to the
+- [01:39:27,093 - 01:39:28,774] minus 23rd or something like that.
+- [01:39:29,214 - 01:39:31,414] So this tells us for a mole of gas,
+- [01:39:31,414 - 01:39:35,514] the fluctuations in the energy at a reasonable temperature,
+- [01:39:35,514 - 01:39:37,094] are very,
+- [01:39:37,094 - 01:39:40,484] very small for no other reason because
+- [01:39:40,484 - 01:39:43,874] k Boltzmann appears in the form of
+- [01:39:43,874 - 01:39:44,054] that.
+- [01:39:47,114 - 01:39:48,234] So yeah,
+- [01:39:48,234 - 01:39:49,474] fluctuations are small.
+- [01:39:49,614 - 01:39:51,604] Probability distributions are highly peaked when
+- [01:39:51,604 - 01:39:53,594] the number of particles becomes large.
+- [01:39:54,254 - 01:39:55,684] I think I found the
+- [01:39:55,684 - 01:39:57,114] same C as the other one.
+- [01:39:57,534 - 01:39:58,094] Yeah,
+- [01:39:58,094 - 01:39:58,374] it was,
+- [01:39:58,374 - 01:39:58,634] I think.
+- [01:39:59,414 - 01:39:59,974] Well,
+- [01:39:59,974 - 01:40:00,854] the other one was .
+- [01:40:02,173 - 01:40:02,754] Oh,
+- [01:40:02,754 - 01:40:03,574] you're right.
+- [01:40:05,554 - 01:40:06,554] So what happened?
+- [01:40:07,414 - 01:40:08,514] Maybe canceled,
+- [01:40:08,514 - 01:40:09,374] like .
+- [01:40:09,374 - 01:40:10,254] No,
+- [01:40:10,254 - 01:40:11,774] kB shouldn't cancel.
+- [01:40:12,074 - 01:40:12,234] Oh,
+- [01:40:12,234 - 01:40:13,954] right.
+- [01:40:13,954 - 01:40:20,794] I don't think it should.
+- [01:40:26,914 - 01:40:27,494] Oh,
+- [01:40:27,494 - 01:40:27,874] right.
+- [01:40:27,974 - 01:40:28,454] It destroyed.
+- [01:40:34,273 - 01:40:35,714] The e to the t,
+- [01:40:35,714 - 01:40:37,254] the other e squared is equal to
+- [01:40:37,254 - 01:40:38,794] the e to the t times t squared,
+- [01:40:38,794 - 01:40:39,134] right?
+- [01:40:39,294 - 01:40:39,674] Correct.
+- [01:40:40,394 - 01:40:40,874] No.
+- [01:40:42,094 - 01:40:43,544] It's going to be kb and
+- [01:40:43,544 - 01:40:44,994] the denominator is going to be t.
+- [01:40:45,474 - 01:40:47,334] Let's put t here,
+- [01:40:47,334 - 01:40:48,914] and that would put a kb here,
+- [01:40:48,914 - 01:40:49,334] right?
+- [01:40:49,554 - 01:40:49,954] Yeah.
+- [01:40:50,294 - 01:40:52,324] And then p squared would
+- [01:40:52,324 - 01:40:54,354] be p squared times kb squared,
+- [01:40:54,354 - 01:40:54,694] right?
+- [01:40:55,274 - 01:40:55,754] Yeah.
+- [01:40:55,834 - 01:40:56,974] You have the right thing.
+- [01:40:56,974 - 01:40:59,334] The thing is just that what you wrote c
+- [01:40:59,334 - 01:41:01,694] as equal to is the e by the h.
+- [01:41:03,154 - 01:41:03,674] Oh,
+- [01:41:03,674 - 01:41:04,334] you're right.
+- [01:41:04,414 - 01:41:06,724] The standard definition of heat capacity
+- [01:41:06,724 - 01:41:09,034] is the e by the little t,
+- [01:41:09,034 - 01:41:10,514] all right?
+- [01:41:10,594 - 01:41:12,594] So you're right.
+- [01:41:13,074 - 01:41:14,454] I was careless.
+- [01:41:14,774 - 01:41:15,294] Okay.
+- [01:41:15,394 - 01:41:18,074] So here we have two kb's in the numerator,
+- [01:41:18,074 - 01:41:19,414] one kb in the denominator,
+- [01:41:19,874 - 01:41:21,444] and this is the thing that
+- [01:41:21,444 - 01:41:23,014] you would normally call heat capacity,
+- [01:41:23,014 - 01:41:24,454] the e by the little t.
+- [01:41:24,654 - 01:41:25,114] Okay.
+- [01:41:25,294 - 01:41:25,634] Good.
+- [01:41:25,834 - 01:41:26,294] Thank you.
+- [01:41:28,554 - 01:41:29,254] Very good.
+- [01:41:29,914 - 01:41:30,594] All right.
+- [01:41:30,594 - 01:41:32,694] So we see two senses in which,
+- [01:41:32,694 - 01:41:33,194] first of all,
+- [01:41:33,194 - 01:41:35,014] it's got a numerical constant in front of it,
+- [01:41:35,034 - 01:41:35,754] which is very small.
+- [01:41:36,074 - 01:41:37,414] But in the second sense,
+- [01:41:37,414 - 01:41:40,544] it's also true that the fluctuation in
+- [01:41:40,544 - 01:41:43,674] energy only grows as the square root
+- [01:41:43,674 - 01:41:44,594] of the number of particles,
+- [01:41:44,594 - 01:41:46,894] whereas the energy itself typically grows
+- [01:41:46,894 - 01:41:49,194] as the number of particles itself.
+- [01:41:50,494 - 01:41:51,414] That's characteristic,
+- [01:41:51,414 - 01:41:52,034] of course,
+- [01:41:52,034 - 01:41:54,494] of fluctuation growing as square root
+- [01:41:54,494 - 01:41:56,954] of the quantity that's the fluctuation.
+- [01:41:56,974 - 01:41:59,834] So that's the sense in
+- [01:41:59,834 - 01:42:02,694] which the probability distribution is narrow.
+- [01:42:06,054 - 01:42:06,554] Well,
+- [01:42:06,554 - 01:42:07,194] let's see.
+- [01:42:07,414 - 01:42:10,214] I think that's a good place to stop.
+- [01:42:10,414 - 01:42:11,594] I really haven't.
+- [01:42:11,694 - 01:42:11,774] Oh.
+- [01:42:18,154 - 01:42:19,834] We have 15 more minutes.
+- [01:42:24,534 - 01:42:25,744] The next time we're going to go
+- [01:42:25,744 - 01:42:26,954] into the next part of the lecture,
+- [01:42:26,954 - 01:42:26,954] we're going to go into
+- [01:42:26,954 - 01:42:26,954] the next part of the lecture,
+- [01:42:26,954 - 01:42:29,284] which is going to be the theory of the ideal gas
+- [01:42:29,284 - 01:42:31,614] and not so ideal gas and do some things with it.
+- [01:42:32,474 - 01:42:33,854] But let me just.
+- [01:42:39,354 - 01:42:39,834] No,
+- [01:42:39,834 - 01:42:41,014] I think we're going to stop here.
+- [01:42:41,134 - 01:42:43,234] Let's stop and field some questions.
+- [01:42:43,374 - 01:42:44,354] And if there are no questions,
+- [01:42:44,354 - 01:42:45,494] yeah.
+- [01:42:46,894 - 01:42:49,144] I think we should leave a little bit
+- [01:42:49,144 - 01:42:51,394] early today because I didn't get my cookie.
+- [01:42:55,374 - 01:42:56,794] I had a dog.
+- [01:42:56,794 - 01:42:56,934] It was a dog.
+- [01:42:56,954 - 01:42:57,704] I think I'm going to have
+- [01:42:57,704 - 01:42:58,454] a pony show with the bankers today.
+- [01:43:01,854 - 01:43:02,654] My wife,
+- [01:43:02,654 - 01:43:04,214] who doesn't know anything about computers,
+- [01:43:04,214 - 01:43:05,134] gets very,
+- [01:43:05,134 - 01:43:06,914] very annoyed when the computer,
+- [01:43:07,154 - 01:43:08,394] when some things happen,
+- [01:43:08,394 - 01:43:08,674] and says,
+- [01:43:08,674 - 01:43:10,054] your cookie has been deleted.
+- [01:43:12,094 - 01:43:13,894] I also don't know what a cookie is,
+- [01:43:13,894 - 01:43:14,934] but I don't get so annoyed.
+- [01:43:15,114 - 01:43:16,174] I know that you want a cookie.
+- [01:43:17,254 - 01:43:18,874] My cookie was deleted.
+- [01:43:20,394 - 01:43:20,794] OK.
+- [01:43:21,294 - 01:43:23,214] If there are no questions or other questions.
+- [01:43:23,354 - 01:43:24,394] I've got a question from last.
+- [01:43:24,794 - 01:43:25,654] You said the.
+- [01:43:26,354 - 01:43:26,754] Good.
+- [01:43:26,954 - 01:43:28,694] The quantities that are conserved like charge,
+- [01:43:28,694 - 01:43:30,794] you would actually take the total quantity
+- [01:43:30,794 - 01:43:31,734] of the universe as zero.
+- [01:43:32,374 - 01:43:32,814] And.
+- [01:43:33,034 - 01:43:33,474] Oh,
+- [01:43:33,474 - 01:43:33,814] well,
+- [01:43:33,814 - 01:43:34,154] that's where.
+- [01:43:34,814 - 01:43:35,254] Yeah,
+- [01:43:35,254 - 01:43:35,594] OK.
+- [01:43:35,754 - 01:43:36,354] I did say that.
+- [01:43:36,474 - 01:43:37,214] Last week,
+- [01:43:37,214 - 01:43:39,254] I think he said the same thing with energy.
+- [01:43:39,474 - 01:43:39,894] Yeah.
+- [01:43:40,194 - 01:43:41,754] So where's the negative energy?
+- [01:43:41,754 - 01:43:43,054] In a closed universe.
+- [01:43:44,454 - 01:43:44,894] OK,
+- [01:43:44,894 - 01:43:45,114] OK.
+- [01:43:45,114 - 01:43:45,954] In a closed universe.
+- [01:43:45,954 - 01:43:46,954] In a closed universe.
+- [01:43:47,214 - 01:43:47,334] Yeah.
+- [01:43:47,674 - 01:43:49,614] So I see all sorts of positive energy.
+- [01:43:49,714 - 01:43:50,694] I don't see any negative energy.
+- [01:43:50,894 - 01:43:51,274] No,
+- [01:43:51,274 - 01:43:52,034] the negative energy.
+- [01:43:54,473 - 01:43:55,714] The negative energy.
+- [01:43:56,694 - 01:44:00,894] There's the a dot over a squared
+- [01:44:00,894 - 01:44:05,094] term in the expansion of the universe.
+- [01:44:05,354 - 01:44:09,854] It's the kinetic energy of expansion of space.
+- [01:44:10,534 - 01:44:14,734] And it's purely got to do with geometry.
+- [01:44:15,354 - 01:44:17,314] It's the expanding geometry of space.
+- [01:44:17,694 - 01:44:20,044] And it's the term that
+- [01:44:20,044 - 01:44:22,394] corresponds to the gravitational energy.
+- [01:44:23,574 - 01:44:24,534] Gravitational energy.
+- [01:44:24,554 - 01:44:24,914] Yeah.
+- [01:44:24,914 - 01:44:25,554] Gravitational energy.
+- [01:44:25,554 - 01:44:27,294] The energy stored in the gravitational field.
+- [01:44:28,654 - 01:44:31,494] And the gravitational field is geometry.
+- [01:44:31,754 - 01:44:32,914] In this case,
+- [01:44:32,914 - 01:44:34,774] the geometry is four-dimensional geometry.
+- [01:44:36,014 - 01:44:37,894] Spatial geometry is expanding.
+- [01:44:38,494 - 01:44:40,434] That means the four-dimensional geometry
+- [01:44:40,434 - 01:44:42,034] is something that looks like that.
+- [01:44:43,134 - 01:44:43,454] OK.
+- [01:44:43,674 - 01:44:44,754] It's expanding.
+- [01:44:44,934 - 01:44:45,554] It's not flat.
+- [01:44:45,694 - 01:44:46,734] It's not flat space.
+- [01:44:47,134 - 01:44:48,674] It has some energy of its own.
+- [01:44:48,954 - 01:44:50,554] And that's the.
+- [01:44:50,734 - 01:44:54,854] And that's associated with gravitational fields.
+- [01:44:55,034 - 01:44:55,534] It's associated.
+- [01:44:55,554 - 01:44:56,714] It's associated with gravitational fields.
+- [01:45:01,194 - 01:45:02,954] If all the other energies are positive,
+- [01:45:03,533 - 01:45:05,894] then it forces the universe to expand.
+- [01:45:07,294 - 01:45:07,994] I see.
+- [01:45:08,134 - 01:45:08,434] Yeah.
+- [01:45:10,094 - 01:45:10,574] Yeah.
+- [01:45:10,814 - 01:45:11,854] What about information?
+- [01:45:12,194 - 01:45:13,634] You're saying that was more fundamental.
+- [01:45:13,934 - 01:45:15,144] But it seems like all
+- [01:45:15,144 - 01:45:16,354] the information of all the bubbles
+- [01:45:16,354 - 01:45:17,734] was in this one .
+- [01:45:18,334 - 01:45:19,394] All the information in what?
+- [01:45:19,614 - 01:45:22,394] For all the bubbles in the energy term inflation.
+- [01:45:22,834 - 01:45:22,994] Yeah,
+- [01:45:22,994 - 01:45:23,154] yeah.
+- [01:45:23,254 - 01:45:23,934] Are we getting it?
+- [01:45:23,954 - 01:45:24,554] Are we going in there?
+- [01:45:24,814 - 01:45:25,034] No.
+- [01:45:25,554 - 01:45:25,714] No.
+- [01:45:26,314 - 01:45:26,874] No.
+- [01:45:27,054 - 01:45:28,414] Let's not go in now.
+- [01:45:28,614 - 01:45:28,954] I'm too hungry.
+- [01:45:30,494 - 01:45:33,314] Somebody wanted to ask me a question about the lecture.
+- [01:45:36,434 - 01:45:40,214] You wanted to ask a question about Alex's lecture,
+- [01:45:40,314 - 01:45:41,334] about the Lincoln's lecture.
+- [01:45:41,834 - 01:45:43,254] That was that question.
+- [01:45:44,174 - 01:45:47,174] He said that the total energy was zero.
+- [01:45:48,114 - 01:45:52,614] Another thing is the argument for closed universe,
+- [01:45:52,894 - 01:45:54,534] whether the total charge is zero,
+- [01:45:54,534 - 01:45:55,534] is it's sort of.
+- [01:45:55,554 - 01:45:55,574] It's sort of.
+- [01:45:55,834 - 01:45:57,634] The lines of force came back.
+- [01:45:58,054 - 01:45:59,654] Why doesn't that work for mass?
+- [01:45:59,854 - 01:46:01,014] Let's say we have a closed universe.
+- [01:46:01,374 - 01:46:02,034] Mass is energy.
+- [01:46:04,414 - 01:46:04,854] OK.
+- [01:46:06,074 - 01:46:08,334] So you would have gravitational lines.
+- [01:46:09,274 - 01:46:09,714] Yeah.
+- [01:46:09,994 - 01:46:11,254] And would they not all
+- [01:46:11,254 - 01:46:12,514] converge the same way that they?
+- [01:46:12,594 - 01:46:12,654] No.
+- [01:46:12,674 - 01:46:14,254] You have to keep in mind that there's also
+- [01:46:14,254 - 01:46:19,034] a gravitational component to the energy.
+- [01:46:20,174 - 01:46:21,954] There's only one conservation law.
+- [01:46:22,014 - 01:46:22,334] It's energy.
+- [01:46:23,454 - 01:46:24,614] Mass is a.
+- [01:46:25,494 - 01:46:28,014] It's not conserved in relativistic sense.
+- [01:46:28,314 - 01:46:29,614] Mass itself is not conserved.
+- [01:46:30,313 - 01:46:32,794] I say there's only one conservation law.
+- [01:46:33,074 - 01:46:34,334] There are many conservation laws.
+- [01:46:34,614 - 01:46:37,714] But energy and mass are not separate conservation laws.
+- [01:46:37,874 - 01:46:37,994] Right.
+- [01:46:38,154 - 01:46:38,334] Right.
+- [01:46:38,754 - 01:46:40,034] And in general context,
+- [01:46:40,034 - 01:46:40,894] it's just energy.
+- [01:46:41,894 - 01:46:43,674] And energy has various components.
+- [01:46:44,114 - 01:46:46,774] And in addition to all the usual stuff,
+- [01:46:46,774 - 01:46:48,774] which by itself
+- [01:46:48,774 - 01:46:50,094] is not conserved,
+- [01:46:50,094 - 01:46:53,474] in an expanding universe,
+- [01:46:53,474 - 01:46:57,714] the ordinary components of the energy are not conserved.
+- [01:47:00,334 - 01:47:06,194] And the non-conservation is compensated for by a change
+- [01:47:06,194 - 01:47:07,874] in the gravitational energy.
+- [01:47:08,094 - 01:47:08,494] That's this.
+- [01:47:08,754 - 01:47:09,194] OK.
+- [01:47:09,394 - 01:47:09,854] Yeah.
+- [01:47:10,434 - 01:47:12,754] So you can either say that in general relativity,
+- [01:47:12,994 - 01:47:15,154] there's no concept of conservation of energy.
+- [01:47:15,354 - 01:47:17,624] Or you can keep track
+- [01:47:17,624 - 01:47:19,894] of pieces of the energy which
+- [01:47:19,894 - 01:47:20,634] are a little unfamiliar.
+- [01:47:21,674 - 01:47:22,954] And then you would say,
+- [01:47:22,954 - 01:47:23,454] not conserved.
+- [01:47:23,474 - 01:47:24,274] Not only is it conserved,
+- [01:47:24,274 - 01:47:25,274] but it's exactly zero.
+- [01:47:25,894 - 01:47:26,413] OK.
+- [01:47:26,974 - 01:47:27,494] OK.
+- [01:47:28,514 - 01:47:30,734] Didn't he say the cosmic horizon is
+- [01:47:30,734 - 01:47:32,374] a million billion light years away from us?
+- [01:47:32,514 - 01:47:32,554] Yeah,
+- [01:47:32,554 - 01:47:33,234] that was his other one.
+- [01:47:33,474 - 01:47:34,374] He said it's 15 billion less.
+- [01:47:35,014 - 01:47:35,574] It's not.
+- [01:47:35,894 - 01:47:38,433] He's probably more accurate than I was.
+- [01:47:38,774 - 01:47:41,614] He said earlier time that things that are now
+- [01:47:41,614 - 01:47:42,903] 40 billion light years away
+- [01:47:42,903 - 01:47:44,193] could affect our current universe.
+- [01:47:44,314 - 01:47:45,114] And it's still significant.
+- [01:47:45,474 - 01:47:45,994] OK.
+- [01:47:46,114 - 01:47:46,634] Yeah.
+- [01:47:46,734 - 01:47:47,254] Yeah.
+- [01:47:47,254 - 01:47:49,014] He's probably a good guy.
+- [01:47:49,153 - 01:47:49,994] He's probably more accurate.
+- [01:47:50,274 - 01:47:53,154] 15 was an order of magnitude within a factor
+- [01:47:53,154 - 01:47:53,574] of three,
+- [01:47:53,574 - 01:47:53,834] yeah.
+- [01:47:54,314 - 01:47:54,834] No,
+- [01:47:54,834 - 01:47:56,614] I'm sure he's right.
+- [01:47:57,674 - 01:48:00,414] I didn't sit down and calculate it.
+- [01:48:05,774 - 01:48:08,054] I think basically the difference is that there
+- [01:48:08,054 - 01:48:13,554] isn't some expansion since the light that's
+- [01:48:13,554 - 01:48:15,614] further related to the ..
+- [01:48:15,614 - 01:48:16,514] Back down to the torus.
+- [01:48:16,554 - 01:48:16,634] Yeah.
+- [01:48:16,714 - 01:48:18,574] That's what makes that happen.
+- [01:48:18,914 - 01:48:19,254] Yeah.
+- [01:48:19,474 - 01:48:20,314] He's been cool.
+- [01:48:20,454 - 01:48:22,914] I thought it was basic understanding of this.
+- [01:48:23,154 - 01:48:24,714] The Boltzmann distribution.
+- [01:48:25,254 - 01:48:26,154] Boltzmann distribution,
+- [01:48:26,154 - 01:48:26,554] yes.
+- [01:48:26,634 - 01:48:27,434] Does that increase energy?
+- [01:48:27,774 - 01:48:28,914] If you increase,
+- [01:48:28,914 - 01:48:29,534] let's see.
+- [01:48:30,334 - 01:48:31,634] Just up to the top,
+- [01:48:31,634 - 01:48:36,174] where we have the distribution of the I.
+- [01:48:37,094 - 01:48:37,694] Yeah.
+- [01:48:37,714 - 01:48:38,234] OK.
+- [01:48:38,354 - 01:48:38,974] That's dj.
+- [01:48:42,414 - 01:48:45,534] It seems that the lowest energy state is always
+- [01:48:45,534 - 01:48:46,674] going to have the highest .
+- [01:48:46,674 - 01:48:47,274] Yes,
+- [01:48:47,274 - 01:48:47,494] it does.
+- [01:48:47,754 - 01:48:52,214] So we have this long tip that gets longer
+- [01:48:52,214 - 01:48:53,134] as the energy goes up.
+- [01:48:53,154 - 01:48:55,414] So the ground thing always is the one that has
+- [01:48:55,694 - 01:48:56,694] Yeah.
+- [01:48:56,694 - 01:48:57,034] OK.
+- [01:48:57,174 - 01:48:58,114] But right.
+- [01:48:58,294 - 01:48:59,214] That is correct.
+- [01:49:01,914 - 01:49:02,694] That is correct.
+- [01:49:02,994 - 01:49:05,314] So let's put the key.
+- [01:49:05,334 - 01:49:06,994] Let's put the key in over there.
+- [01:49:07,994 - 01:49:08,914] At very,
+- [01:49:08,914 - 01:49:09,954] very low temperatures,
+- [01:49:09,954 - 01:49:11,694] the probability distribution
+- [01:49:11,694 - 01:49:16,414] is sort of squashed toward very low energy.
+- [01:49:16,974 - 01:49:18,874] As the temperature goes up
+- [01:49:18,874 - 01:49:20,774] and you go to enormously high
+- [01:49:20,774 - 01:49:21,254] temperatures,
+- [01:49:21,254 - 01:49:22,014] what happens?
+- [01:49:22,014 - 01:49:23,174] What happens?
+- [01:49:23,294 - 01:49:23,754] And these are,
+- [01:49:23,754 - 01:49:23,954] of course,
+- [01:49:23,954 - 01:49:24,294] the states.
+- [01:49:24,414 - 01:49:25,154] These are all states.
+- [01:49:29,153 - 01:49:31,494] The distribution gets flat.
+- [01:49:32,234 - 01:49:36,354] All states become equally probable at infinite temperature.
+- [01:49:36,934 - 01:49:38,374] At infinite temperature,
+- [01:49:38,374 - 01:49:42,034] that's a state of absolute maximum entropy
+- [01:49:42,034 - 01:49:43,334] that you can possibly have.
+- [01:49:43,494 - 01:49:44,214] Infinite temperature.
+- [01:49:44,554 - 01:49:46,214] You know nothing about the system,
+- [01:49:46,214 - 01:49:47,594] so all are.
+- [01:49:48,094 - 01:49:48,734] Now,
+- [01:49:48,734 - 01:49:50,014] there's another element here.
+- [01:49:50,614 - 01:49:51,994] The typical temperature.
+- [01:49:51,994 - 01:49:53,654] The typical states of a system
+- [01:49:53,654 - 01:49:55,314] are not equally spaced like this.
+- [01:49:55,914 - 01:49:59,214] If you were to write not state number here,
+- [01:49:59,214 - 01:49:59,474] I,
+- [01:49:59,474 - 01:50:01,214] but energy,
+- [01:50:01,514 - 01:50:03,804] you would find out that the
+- [01:50:03,804 - 01:50:06,094] low energy states are fairly well
+- [01:50:06,094 - 01:50:07,494] separated from each other,
+- [01:50:07,494 - 01:50:09,614] and they get denser and denser
+- [01:50:09,614 - 01:50:10,814] and denser and denser and denser.
+- [01:50:11,134 - 01:50:12,704] So if you asked about
+- [01:50:12,704 - 01:50:14,274] the probability for a given energy,
+- [01:50:14,854 - 01:50:17,254] not the probability for the I-th state,
+- [01:50:17,254 - 01:50:18,934] you would find out that
+- [01:50:18,934 - 01:50:20,404] hooks it toward higher energies
+- [01:50:20,404 - 01:50:21,874] because there are just more states
+- [01:50:21,994 - 01:50:22,754] with higher energy.
+- [01:50:24,194 - 01:50:25,074] There are many,
+- [01:50:25,074 - 01:50:27,694] many more states with higher energy than there are with
+- [01:50:27,694 - 01:50:28,234] lower energy.
+- [01:50:29,074 - 01:50:31,654] So if you wanted to know what
+- [01:50:31,654 - 01:50:34,234] the probability is that the energy is
+- [01:50:34,234 - 01:50:35,534] between two limits here,
+- [01:50:35,534 - 01:50:38,994] you would have to say at a given temperature,
+- [01:50:39,614 - 01:50:41,804] you would take the probability that
+- [01:50:41,804 - 01:50:43,994] you're in the I-th state and multiply
+- [01:50:43,994 - 01:50:46,614] it by the number of states in that narrow bin.
+- [01:50:47,054 - 01:50:49,574] And that narrow bin gets more and more states.
+- [01:50:49,634 - 01:50:50,314] You understand what I'm saying?
+- [01:50:50,514 - 01:50:51,654] It's easy to get it right.
+- [01:50:52,473 - 01:50:53,394] You get more what?
+- [01:50:53,674 - 01:50:54,394] You get more.
+- [01:50:55,494 - 01:50:59,774] There are more states within a given range of energy.
+- [01:50:59,934 - 01:51:01,474] Let's say within a given range of energy,
+- [01:51:01,474 - 01:51:05,154] delta E over here and delta E over here.
+- [01:51:05,554 - 01:51:06,554] There are just many,
+- [01:51:06,554 - 01:51:08,794] many more states here than there are here.
+- [01:51:09,794 - 01:51:11,334] So the curve doesn't come up.
+- [01:51:11,494 - 01:51:12,384] Is that a rule that there
+- [01:51:12,384 - 01:51:13,274] are going to be more things?
+- [01:51:13,514 - 01:51:14,554] It depends on what you're plotting.
+- [01:51:14,874 - 01:51:18,614] If you're plotting the probability for the I-th state,
+- [01:51:20,594 - 01:51:21,634] then it should be higher than the number of states.
+- [01:51:21,634 - 01:51:22,794] Then it's just flat.
+- [01:51:23,594 - 01:51:25,094] But if you're calculating the
+- [01:51:25,094 - 01:51:26,594] probability for a given energy,
+- [01:51:26,854 - 01:51:28,394] then it's tilted up a little bit.
+- [01:51:29,054 - 01:51:31,254] Have you ever had a system where
+- [01:51:31,254 - 01:51:33,454] you had a different kind of distribution
+- [01:51:33,454 - 01:51:35,224] where you think about those low
+- [01:51:35,224 - 01:51:36,994] energy states and everything just frees up?
+- [01:51:38,374 - 01:51:40,354] You mean a very specific approach?
+- [01:51:40,634 - 01:51:42,724] You're asking whether there's any
+- [01:51:42,724 - 01:51:44,814] interesting situations where the probability
+- [01:51:44,814 - 01:51:46,634] let's plot the I-th state,
+- [01:51:46,634 - 01:51:47,614] not the energy itself,
+- [01:51:49,154 - 01:51:51,054] where the probability distribution,
+- [01:51:51,634 - 01:51:51,814] and so on and so forth.
+- [01:51:52,254 - 01:51:52,714] Well,
+- [01:51:52,714 - 01:51:54,574] it won't be equilibrium.
+- [01:51:55,614 - 01:51:57,154] It won't be equilibrium.
+- [01:51:58,394 - 01:51:59,914] It won't be equilibrium.
+- [01:52:00,034 - 01:52:03,734] But you can see from this incidentally why
+- [01:52:03,734 - 01:52:07,434] it is that both the energy and the entropy
+- [01:52:07,434 - 01:52:10,134] increase monotonically with temperature.
+- [01:52:10,534 - 01:52:14,314] What happens as temperature increases?
+- [01:52:14,614 - 01:52:15,434] At low temperatures,
+- [01:52:15,434 - 01:52:17,134] the distribution looks a lot like that.
+- [01:52:17,274 - 01:52:18,494] At higher temperatures,
+- [01:52:18,494 - 01:52:19,814] the distribution gets spread.
+- [01:52:19,814 - 01:52:21,394] At higher temperatures,
+- [01:52:21,394 - 01:52:22,754] the distribution gets spread.
+- [01:52:22,894 - 01:52:27,154] It's completely obvious that the average energy grows.
+- [01:52:28,054 - 01:52:30,414] But why does the average entropy grow?
+- [01:52:30,694 - 01:52:31,874] Remember what entropy is.
+- [01:52:32,074 - 01:52:32,734] It's the width.
+- [01:52:32,834 - 01:52:34,244] It's the average number of
+- [01:52:34,244 - 01:52:35,654] states contained within the distribution.
+- [01:52:36,154 - 01:52:38,514] As the distribution gets flatter and flatter,
+- [01:52:38,934 - 01:52:41,914] it contains more states with significant probability.
+- [01:52:42,434 - 01:52:44,974] So both the entropy and the
+- [01:52:44,974 - 01:52:47,514] energy are typically monotonically increasing functions
+- [01:52:47,514 - 01:52:48,814] of the distribution.
+- [01:52:49,473 - 01:52:52,834] So the temperature goes up,
+- [01:52:52,834 - 01:52:54,194] the energy goes up,
+- [01:52:54,194 - 01:52:55,234] the entropy goes up.
+- [01:52:55,874 - 01:52:58,294] Can you give a pump laser an example of
+- [01:52:58,294 - 01:53:00,714] a situation where you get that kind of modulation
+- [01:53:00,714 - 01:53:01,334] in the region?
+- [01:53:02,514 - 01:53:02,994] Yes.
+- [01:53:03,294 - 01:53:04,474] And in those cases,
+- [01:53:04,474 - 01:53:05,434] you get negative temperature.
+- [01:53:05,634 - 01:53:06,794] We can talk about that next time.
+- [01:53:07,274 - 01:53:07,754] Yeah.
+- [01:53:08,514 - 01:53:08,994] Yeah.
+- [01:53:09,274 - 01:53:10,154] But of course,
+- [01:53:10,154 - 01:53:11,254] if you take the laser,
+- [01:53:11,254 - 01:53:13,654] it really isn't the system in thermal equilibrium
+- [01:53:13,654 - 01:53:15,614] where there's environment and everything else.
+- [01:53:15,634 - 01:53:16,234] It's a…
+- [01:53:17,154 - 01:53:17,634] It's a…
+- [01:53:18,334 - 01:53:19,154] But yes,
+- [01:53:19,154 - 01:53:20,834] the answer is yes.
+- [01:53:21,594 - 01:53:24,134] Question about the EI.
+- [01:53:24,354 - 01:53:27,034] The EI is some number proportional to I.
+- [01:53:27,254 - 01:53:27,674] I assume.
+- [01:53:28,334 - 01:53:28,954] Is that correct?
+- [01:53:29,274 - 01:53:30,674] What do you mean proportional to I?
+- [01:53:31,034 - 01:53:31,334] Hmm?
+- [01:53:31,934 - 01:53:32,534] Proportional,
+- [01:53:32,534 - 01:53:33,094] you mean linear?
+- [01:53:33,594 - 01:53:33,894] No.
+- [01:53:34,194 - 01:53:34,194] Yeah,
+- [01:53:34,194 - 01:53:37,054] because you're numerically…
+- [01:53:37,054 - 01:53:37,774] No,
+- [01:53:37,774 - 01:53:40,974] these states are not really equally spaced like that.
+- [01:53:41,034 - 01:53:43,534] And what determines how they're spaced?
+- [01:53:43,914 - 01:53:44,674] The system itself.
+- [01:53:45,654 - 01:53:48,164] A prime mechanical particle in a
+- [01:53:48,164 - 01:53:50,674] box would have a level density which…
+- [01:53:53,894 - 01:53:54,374] Density.
+- [01:53:54,674 - 01:53:55,154] Okay.
+- [01:53:56,394 - 01:53:56,874] No,
+- [01:53:56,874 - 01:53:57,814] I mean that's something you have
+- [01:53:57,814 - 01:53:58,754] to know what the system is.
+- [01:53:58,894 - 01:53:59,574] So you have to answer it.
+- [01:53:59,654 - 01:54:01,654] That's a characteristic of the system.
+- [01:54:01,754 - 01:54:05,134] I can tell you what the answer…
+- [01:54:05,634 - 01:54:06,114] Well,
+- [01:54:06,114 - 01:54:09,114] I will tell you now what another way…
+- [01:54:10,654 - 01:54:13,454] The answer is that the density of states…
+- [01:54:13,454 - 01:54:14,054] The density of states is
+- [01:54:14,054 - 01:54:14,654] a function of an individual's body.
+- [01:54:16,074 - 01:54:17,674] usually called rho of E
+- [01:54:17,674 - 01:54:19,654] is the number of states
+- [01:54:19,654 - 01:54:21,054] per unit energy.
+- [01:54:22,474 - 01:54:23,954] It's the number of states,
+- [01:54:23,994 - 01:54:26,194] let's call it delta N divided by delta E.
+- [01:54:26,334 - 01:54:27,774] This is the number of states.
+- [01:54:29,554 - 01:54:30,134] That's
+- [01:54:30,134 - 01:54:31,754] E to the entropy.
+- [01:54:37,474 - 01:54:39,154] We haven't proved that,
+- [01:54:39,154 - 01:54:40,074] but that's a fact.
+- [01:54:40,314 - 01:54:40,774] That
+- [01:54:41,834 - 01:54:44,154] E to the entropy is the
+- [01:54:44,154 - 01:54:45,614] density of states from all systems.
+- [01:54:46,234 - 01:54:48,074] And so since entropy
+- [01:54:48,074 - 01:54:50,014] is an increasing function of energy,
+- [01:54:50,134 - 01:54:51,614] the density of states is also
+- [01:54:51,614 - 01:54:53,834] an increasing function of...
+- [01:54:54,994 - 01:54:56,134] So for
+- [01:54:56,134 - 01:54:56,534] gas,
+- [01:54:56,534 - 01:54:56,974] then,
+- [01:54:56,974 - 01:54:57,994] it would have some
+- [01:54:57,994 - 01:54:59,194] characteristic distribution?
+- [01:54:59,754 - 01:55:00,034] Oh,
+- [01:55:00,034 - 01:55:00,134] yeah.
+- [01:55:00,134 - 01:55:01,394] Yeah,
+- [01:55:01,394 - 01:55:01,554] yeah.
+- [01:55:01,554 - 01:55:02,854] We'll calculate that distribution.
+- [01:55:05,294 - 01:55:06,114] It's equivalent
+- [01:55:06,114 - 01:55:07,414] to calculating the entropy.
+- [01:55:12,194 - 01:55:13,234] That's not obvious.
+- [01:55:13,314 - 01:55:13,794] This is
+- [01:55:13,794 - 01:55:13,954] the
+- [01:55:13,954 - 01:55:14,094] the
+- [01:55:14,154 - 01:55:14,554] questionable
+- [01:55:19,473 - 01:55:19,914] result.
+- [01:55:29,394 - 01:55:32,094] We're going to get into that next time.
+- [01:55:32,134 - 01:55:33,634] Next time we will have to talk...
+- [01:55:34,134 - 01:55:34,654] We're not
+- [01:55:34,654 - 01:55:36,394] going to be speaking about quantum mechanics.
+- [01:55:36,534 - 01:55:37,654] We will have to talk about
+- [01:55:37,654 - 01:55:39,954] what happens when the energy distribution is continuous.
+- [01:55:42,914 - 01:55:43,354] Okay.
+- [01:55:43,694 - 01:55:44,134] Okay.
+- [01:55:44,134 - 01:55:45,734] For more,
+- [01:55:45,734 - 01:55:48,174] please visit us at stanford.edu.
