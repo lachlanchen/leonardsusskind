@@ -1,0 +1,1450 @@
+# Transcript
+
+Source: core/statistical_mechanics/2013_spring_theoretical_minimum/176 - Statistical Mechanics Lecture 2 [MCRHXHskWnE].mkv
+
+- [00:00:04,580 - 00:00:05,920] Stanford University
+- [00:00:13,620 - 00:00:15,940] Let's spend a few minutes talking about units.
+- [00:00:18,160 - 00:00:19,560] In particular,
+- [00:00:19,560 - 00:00:20,800] the Boltzmann constant.
+- [00:00:21,840 - 00:00:23,460] What is the Boltzmann constant?
+- [00:00:23,460 - 00:00:25,300] The Boltzmann constant,
+- [00:00:25,300 - 00:00:28,920] like many constants in physics,
+- [00:00:28,920 - 00:00:30,460] are conversion factors.
+- [00:00:31,700 - 00:00:34,000] The speed of light is a conversion factor,
+- [00:00:34,000 - 00:00:34,640] you know that.
+- [00:00:34,780 - 00:00:40,000] And the conversion factor from distances to times.
+- [00:00:41,060 - 00:00:41,980] And of course,
+- [00:00:41,980 - 00:00:44,080] if you judiciously choose your units,
+- [00:00:44,080 - 00:00:45,880] you can set the speed of light equal to one.
+- [00:00:47,600 - 00:00:52,240] The Boltzmann constant is also a conversion factor.
+- [00:00:52,820 - 00:00:53,440] And the Boltzmann constant is also a conversion factor.
+- [00:00:53,460 - 00:00:56,040] And typically these things are conversion factors
+- [00:00:56,040 - 00:00:58,620] from what I tend to call human units
+- [00:00:58,620 - 00:01:00,680] to units which are,
+- [00:01:00,680 - 00:01:01,700] in some sense,
+- [00:01:01,700 - 00:01:02,400] more fundamental.
+- [00:01:02,920 - 00:01:06,920] Human units are units which are
+- [00:01:06,920 - 00:01:10,920] convenient for scales and magnitudes of quantities
+- [00:01:11,980 - 00:01:15,440] which people can access reasonably easily.
+- [00:01:16,640 - 00:01:17,160] Okay,
+- [00:01:17,160 - 00:01:18,860] so we haven't talked about temperature.
+- [00:01:19,000 - 00:01:20,260] We're going to talk about temperature,
+- [00:01:20,260 - 00:01:21,360] but I thought I would
+- [00:01:21,360 - 00:01:22,460] just say something about units first.
+- [00:01:24,360 - 00:01:27,320] The units of temperature,
+- [00:01:27,320 - 00:01:29,940] as invented by,
+- [00:01:29,940 - 00:01:30,960] I guess,
+- [00:01:30,960 - 00:01:33,900] 19th century physicists and chemists,
+- [00:01:34,800 - 00:01:36,820] I'm not sure when Fahrenheit was.
+- [00:01:37,060 - 00:01:37,720] I know Kelvin,
+- [00:01:37,720 - 00:01:38,220] of course,
+- [00:01:38,220 - 00:01:40,060] was late 19th century.
+- [00:01:40,600 - 00:01:43,380] I'm not sure who or what Fahrenheit was.
+- [00:01:43,740 - 00:01:44,760] About 17th century.
+- [00:01:45,700 - 00:01:47,680] Fahrenheit was 17th century?
+- [00:01:47,960 - 00:01:48,060] No,
+- [00:01:48,060 - 00:01:48,520] very early.
+- [00:01:48,660 - 00:01:49,200] Wow,
+- [00:01:49,200 - 00:01:49,940] okay.
+- [00:01:49,940 - 00:01:52,420] But in any case,
+- [00:01:52,420 - 00:01:54,790] the units that we tend to use
+- [00:01:54,790 - 00:01:57,160] these days are Kelvin units or centigrade.
+- [00:01:57,520 - 00:01:58,820] It's the same kind of unit.
+- [00:02:01,800 - 00:02:02,540] Kelvin,
+- [00:02:02,540 - 00:02:05,900] temperatures Kelvin are relative to absolute zero.
+- [00:02:06,620 - 00:02:10,139] Temperatures centigrade are relative to what,
+- [00:02:10,139 - 00:02:12,200] the freezing point of water?
+- [00:02:12,540 - 00:02:14,700] Which is a totally arbitrary thing.
+- [00:02:16,200 - 00:02:18,460] And the centigrade scale,
+- [00:02:18,460 - 00:02:20,760] the unit of one degree,
+- [00:02:20,760 - 00:02:22,180] as you well know,
+- [00:02:22,400 - 00:02:29,200] was simply set by the arbitrary choice
+- [00:02:29,200 - 00:02:33,100] to divide the temperature scale
+- [00:02:33,100 - 00:02:37,000] between freezing and boiling of water,
+- [00:02:37,100 - 00:02:40,330] freezing and boiling of water
+- [00:02:40,330 - 00:02:43,560] at atmospheric pressure into 100 units.
+- [00:02:43,640 - 00:02:44,820] Highly arbitrary.
+- [00:02:45,460 - 00:02:46,820] Didn't have to be water.
+- [00:02:46,920 - 00:02:47,220] I mean,
+- [00:02:47,220 - 00:02:48,120] it was water.
+- [00:02:48,120 - 00:02:48,760] It was not water that was used.
+- [00:02:48,880 - 00:02:49,960] If we would have used alcohol,
+- [00:02:49,960 - 00:02:51,320] it would have been a different unit.
+- [00:02:51,480 - 00:02:52,380] If we would have used,
+- [00:02:52,380 - 00:02:54,040] and so forth and so on.
+- [00:02:54,720 - 00:02:58,760] But it was a unit which people could manipulate.
+- [00:02:59,000 - 00:03:00,860] People could manipulate temperatures.
+- [00:03:01,060 - 00:03:02,200] They could measure temperatures.
+- [00:03:02,940 - 00:03:05,890] It's not too hard to measure
+- [00:03:05,890 - 00:03:08,840] a change in temperature of a degree
+- [00:03:09,340 - 00:03:11,640] with a human scale thermometer.
+- [00:03:12,380 - 00:03:13,420] By human scale,
+- [00:03:13,420 - 00:03:13,880] I mean,
+- [00:03:13,880 - 00:03:14,140] you know,
+- [00:03:14,140 - 00:03:15,320] it's made out of a lot of atoms.
+- [00:03:15,480 - 00:03:18,100] It's a thing that you can make in your shell.
+- [00:03:20,240 - 00:03:23,120] And so the degree Kelvin,
+- [00:03:23,360 - 00:03:26,240] the one unit degree of temperature change,
+- [00:03:26,620 - 00:03:33,760] is a human construct that was invented for convenience,
+- [00:03:33,760 - 00:03:34,520] if you like.
+- [00:03:35,260 - 00:03:36,020] Now,
+- [00:03:36,020 - 00:03:36,720] it was,
+- [00:03:36,720 - 00:03:37,960] at the time,
+- [00:03:38,040 - 00:03:40,820] it was not fully understood,
+- [00:03:40,960 - 00:03:42,780] although Kelvin may have understood it,
+- [00:03:42,860 - 00:03:45,280] but it was not fully understood
+- [00:03:45,280 - 00:03:48,180] that the natural units,
+- [00:03:48,180 - 00:03:49,520] the real physical units,
+- [00:03:49,640 - 00:03:51,860] that temperature has to do with,
+- [00:03:51,860 - 00:03:53,200] is energy.
+- [00:03:53,480 - 00:03:57,800] That a temperature is really an energy.
+- [00:03:58,100 - 00:03:59,460] For example,
+- [00:03:59,460 - 00:04:03,920] an example is that
+- [00:04:03,920 - 00:04:08,580] the temperature of a gas,
+- [00:04:08,580 - 00:04:09,340] for example,
+- [00:04:10,340 - 00:04:13,640] determines the kinetic energy of the molecules.
+- [00:04:14,240 - 00:04:15,160] And,
+- [00:04:15,160 - 00:04:15,260] you know,
+- [00:04:15,260 - 00:04:17,940] one measure of the temperature of the gas
+- [00:04:17,940 - 00:04:20,459] is just the kinetic energy of the molecules.
+- [00:04:20,899 - 00:04:21,459] Well,
+- [00:04:21,459 - 00:04:22,019] you might say,
+- [00:04:22,019 - 00:04:22,460] wait a minute,
+- [00:04:22,460 - 00:04:23,360] that's not so good,
+- [00:04:23,460 - 00:04:27,290] because if the gas is
+- [00:04:27,290 - 00:04:31,120] a composite of helium and oxygen,
+- [00:04:31,460 - 00:04:34,000] I don't know if it's a composite of helium and...
+- [00:04:34,000 - 00:04:35,760] I choose helium because I don't want it to explode.
+- [00:04:36,280 - 00:04:38,600] But helium and oxygen,
+- [00:04:38,940 - 00:04:40,760] then do I mean the
+- [00:04:40,760 - 00:04:42,580] helium atoms or the oxygen atoms?
+- [00:04:42,660 - 00:04:44,540] Surely they have different kinetic energy,
+- [00:04:44,540 - 00:04:45,240] but they don't.
+- [00:04:45,260 - 00:04:48,440] The thermal equilibrium at a fixed temperature,
+- [00:04:48,640 - 00:04:50,340] and we will prove this,
+- [00:04:50,340 - 00:04:51,700] eventually we will prove this,
+- [00:04:51,880 - 00:04:56,700] all of the atoms have basically the same kinetic energy,
+- [00:04:56,840 - 00:04:57,740] and in fact,
+- [00:04:57,740 - 00:04:59,900] if you put a bowling ball,
+- [00:05:00,100 - 00:05:03,680] suspended a bowling ball at finite temperature
+- [00:05:03,680 - 00:05:07,300] into a gas or even a liquid,
+- [00:05:09,780 - 00:05:12,580] the kinetic energy of the bowling ball
+- [00:05:12,580 - 00:05:15,180] would be exactly the same as the kinetic energy
+- [00:05:15,180 - 00:05:17,360] of an oxygen atom.
+- [00:05:18,020 - 00:05:18,540] Now,
+- [00:05:18,540 - 00:05:19,500] that seems a little bit odd,
+- [00:05:20,280 - 00:05:21,760] but when you think about it,
+- [00:05:21,760 - 00:05:22,440] it's not that odd.
+- [00:05:22,640 - 00:05:24,450] If the bowling ball has the
+- [00:05:24,450 - 00:05:26,260] same energy as a single molecule,
+- [00:05:26,640 - 00:05:29,080] it will surely move a
+- [00:05:29,080 - 00:05:31,520] lot slower than a single molecule,
+- [00:05:31,760 - 00:05:34,320] for the reason is that its mass is much larger.
+- [00:05:34,700 - 00:05:37,920] So if mv squared for the bowling ball
+- [00:05:37,920 - 00:05:41,660] is the same as mv squared for the oxygen molecule,
+- [00:05:41,920 - 00:05:43,940] the bowling ball will be moving a lot slower.
+- [00:05:45,860 - 00:05:48,460] But the main point is that temperature
+- [00:05:48,460 - 00:05:51,740] is really a measure of an amount of energy.
+- [00:05:52,120 - 00:05:55,000] So the natural units for temperature
+- [00:05:55,000 - 00:05:56,860] are really energy,
+- [00:05:58,400 - 00:06:00,250] but at the time that
+- [00:06:00,250 - 00:06:02,100] temperature first started to be measured,
+- [00:06:02,300 - 00:06:04,160] nobody could measure a molecule.
+- [00:06:04,440 - 00:06:06,680] Nobody had the vaguest idea how big molecules,
+- [00:06:06,860 - 00:06:08,220] how massive molecules were,
+- [00:06:08,400 - 00:06:11,260] how much energy a typical molecule had
+- [00:06:11,260 - 00:06:12,260] at a given temperature.
+- [00:06:12,780 - 00:06:13,680] In fact,
+- [00:06:13,680 - 00:06:14,960] probably in the beginning,
+- [00:06:15,180 - 00:06:18,020] nobody had the idea that temperature had to do anything
+- [00:06:18,020 - 00:06:21,160] to do with the energy of a basic constituent.
+- [00:06:22,240 - 00:06:26,620] So the scale of temperatures was defined
+- [00:06:26,620 - 00:06:29,400] before there was a notion that temperature,
+- [00:06:29,620 - 00:06:30,800] so to speak,
+- [00:06:30,800 - 00:06:31,800] equals energy.
+- [00:06:33,020 - 00:06:33,660] Okay,
+- [00:06:33,660 - 00:06:36,540] so the natural unit for temperature
+- [00:06:37,180 - 00:06:38,300] could be joules,
+- [00:06:38,300 - 00:06:38,880] for example.
+- [00:06:39,120 - 00:06:41,200] A joule is a good unit of temperature.
+- [00:06:42,080 - 00:06:45,160] It's a rather large unit of temperature.
+- [00:06:45,180 - 00:06:47,000] To see that,
+- [00:06:48,799 - 00:06:52,200] the typical energy of a single molecule
+- [00:06:52,200 - 00:06:53,840] in thermal equilibrium
+- [00:06:53,840 - 00:06:57,040] at a temperature of room temperature
+- [00:06:57,040 - 00:06:59,660] for one molecule is a tiny,
+- [00:06:59,660 - 00:06:59,920] tiny,
+- [00:06:59,920 - 00:07:01,480] tiny number in joules.
+- [00:07:01,760 - 00:07:03,840] And so the conversion factor
+- [00:07:03,840 - 00:07:05,840] between human units
+- [00:07:05,840 - 00:07:06,800] and,
+- [00:07:06,800 - 00:07:08,020] let's say,
+- [00:07:08,020 - 00:07:11,260] the basic units of energy
+- [00:07:12,180 - 00:07:13,640] is going to be a very
+- [00:07:13,640 - 00:07:15,100] large or a very small number.
+- [00:07:15,180 - 00:07:19,580] So let's just define it.
+- [00:07:21,620 - 00:07:25,240] I can define it by giving you the relationship
+- [00:07:25,240 - 00:07:29,500] between the energy of a molecule in a dilute gas,
+- [00:07:29,840 - 00:07:33,160] energy of a single molecule in a dilute gas,
+- [00:07:34,340 - 00:07:36,520] dilute because we don't want to worry too much
+- [00:07:36,520 - 00:07:39,180] about the energies of interaction between the molecules,
+- [00:07:40,020 - 00:07:43,420] and the energy of kinetic energy.
+- [00:07:43,600 - 00:07:45,160] The kinetic energy is the energy
+- [00:07:45,180 - 00:07:47,520] of a molecule in a dilute gas
+- [00:07:48,380 - 00:07:51,000] is equal to three halves.
+- [00:07:51,840 - 00:07:52,280] Now,
+- [00:07:52,280 - 00:07:53,960] the three is easy to understand.
+- [00:07:54,280 - 00:07:55,100] What does it have to do with?
+- [00:07:57,560 - 00:07:58,760] The dimension of space.
+- [00:07:58,940 - 00:07:59,280] The dimension of space,
+- [00:07:59,280 - 00:07:59,280] right.
+- [00:08:00,040 - 00:08:02,740] It has a kinetic energy for moving along the x-axis.
+- [00:08:02,840 - 00:08:05,220] It has a kinetic energy for moving along the y-axis.
+- [00:08:05,320 - 00:08:08,180] It has a kinetic energy for moving along the z-axis.
+- [00:08:08,260 - 00:08:09,360] So there's a factor of three.
+- [00:08:09,720 - 00:08:10,640] And the half,
+- [00:08:10,640 - 00:08:11,140] well,
+- [00:08:11,140 - 00:08:12,760] that's just a glitch of definition.
+- [00:08:13,800 - 00:08:14,440] All right.
+- [00:08:14,440 - 00:08:15,280] So three halves,
+- [00:08:15,280 - 00:08:21,280] the Boltzmann constant times the temperature,
+- [00:08:21,640 - 00:08:24,400] but this is the human scale of temperature,
+- [00:08:24,720 - 00:08:26,040] so it could be Kelvin.
+- [00:08:27,800 - 00:08:29,680] Temperature measured in Kelvin units.
+- [00:08:30,160 - 00:08:31,320] In that case,
+- [00:08:31,320 - 00:08:33,059] the Boltzmann constant here
+- [00:08:33,059 - 00:08:36,780] has units of energy divided by degrees Kelvin.
+- [00:08:37,640 - 00:08:39,740] Energy divided by degrees Kelvin.
+- [00:08:40,240 - 00:08:42,700] And it's a rather small number,
+- [00:08:42,700 - 00:08:43,539] as you might expect.
+- [00:08:44,440 - 00:08:46,580] If the temperature is 300 degrees,
+- [00:08:46,580 - 00:08:47,960] that's room temperature.
+- [00:08:48,860 - 00:08:51,380] Temperature Kelvin is 300 room temperature.
+- [00:08:51,620 - 00:08:55,840] The energy of a single molecule is clearly very,
+- [00:08:55,840 - 00:08:56,240] very,
+- [00:08:56,240 - 00:08:56,840] very small.
+- [00:08:57,460 - 00:08:59,780] And so 300 is pretty big.
+- [00:09:00,420 - 00:09:02,380] E is terribly small.
+- [00:09:02,720 - 00:09:04,840] K Boltzmann is very small.
+- [00:09:05,060 - 00:09:07,920] And this number in human units,
+- [00:09:07,920 - 00:09:10,840] human units now means standard units,
+- [00:09:11,040 - 00:09:12,540] meters and so forth.
+- [00:09:12,540 - 00:09:16,910] K Boltzmann is about 1.4
+- [00:09:16,910 - 00:09:21,280] times 10 to the minus 23rd.
+- [00:09:22,860 - 00:09:25,850] It's no accident that Avogadro's number
+- [00:09:25,850 - 00:09:28,840] is also roughly 10 to the 23rd.
+- [00:09:28,860 - 00:09:29,840] Not an accident,
+- [00:09:29,840 - 00:09:30,380] but...
+- [00:09:31,640 - 00:09:38,680] And the units are joules divided by degrees Kelvin.
+- [00:09:39,180 - 00:09:41,720] The unit of a joule is a unit of energy,
+- [00:09:41,720 - 00:09:43,540] and so it's a unit
+- [00:09:43,540 - 00:09:45,360] of mass times a velocity squared.
+- [00:09:45,620 - 00:09:49,000] We could reduce it to the standard units,
+- [00:09:49,420 - 00:09:50,860] get rid of the joules if we like,
+- [00:09:50,860 - 00:09:52,000] but this is what it is.
+- [00:09:52,760 - 00:09:58,160] Main point is that the really interesting quantity here,
+- [00:09:58,440 - 00:10:00,950] temperature in fundamental physics always
+- [00:10:00,950 - 00:10:03,460] comes in multiplying K Boltzmann.
+- [00:10:04,500 - 00:10:06,700] It's in all fundamental formulas of physics.
+- [00:10:07,459 - 00:10:09,860] K Boltzmann times temperature comes in,
+- [00:10:09,860 - 00:10:12,510] and that's just because the
+- [00:10:12,510 - 00:10:15,160] fundamental quantity is really energy.
+- [00:10:15,820 - 00:10:18,100] And so we redefine...
+- [00:10:18,959 - 00:10:21,880] K Boltzmann times temperature has units of energy.
+- [00:10:22,100 - 00:10:25,560] We redefine a new unit of temperature,
+- [00:10:26,439 - 00:10:28,240] let's call it capital T,
+- [00:10:30,220 - 00:10:34,330] which is just K Boltzmann
+- [00:10:34,330 - 00:10:38,440] times the human unit of temperature.
+- [00:10:39,860 - 00:10:41,320] And once we do that,
+- [00:10:41,320 - 00:10:44,100] we will get rid of degrees...
+- [00:10:44,100 - 00:10:47,780] We will get rid of K Boltzmann in all equations.
+- [00:10:48,160 - 00:10:49,700] We'll never see it again.
+- [00:10:49,960 - 00:10:51,290] But you do have to
+- [00:10:51,290 - 00:10:52,620] remember that what I call temperature
+- [00:10:54,100 - 00:11:01,080] differs from thermometer temperature by a very small factor.
+- [00:11:01,900 - 00:11:02,540] Okay,
+- [00:11:02,540 - 00:11:07,460] that same factor actually is there in units of entropy.
+- [00:11:08,020 - 00:11:09,500] Remember what entropy is?
+- [00:11:09,620 - 00:11:10,980] It's a unit of information.
+- [00:11:11,280 - 00:11:12,560] It's measured in bits.
+- [00:11:13,520 - 00:11:16,440] It's measured in fundamental little bits of information.
+- [00:11:17,060 - 00:11:19,260] At the time that entropy
+- [00:11:19,260 - 00:11:21,460] was discovered as an interesting quantity,
+- [00:11:21,560 - 00:11:22,820] which always increases,
+- [00:11:23,080 - 00:11:25,050] it was discovered by a steam
+- [00:11:25,050 - 00:11:27,020] engineer by the name of Carnot.
+- [00:11:28,740 - 00:11:30,420] And he was a steam engineer.
+- [00:11:30,560 - 00:11:31,520] That's what he did for a living.
+- [00:11:31,640 - 00:11:32,100] He built...
+- [00:11:32,100 - 00:11:33,300] He designed steam engines.
+- [00:11:35,200 - 00:11:37,440] He didn't know anything about the microscopic energy.
+- [00:11:37,460 - 00:11:38,740] He didn't know anything about
+- [00:11:38,740 - 00:11:40,020] the microscopic underlying principle of entropy.
+- [00:11:40,920 - 00:11:42,080] He had a quantity.
+- [00:11:42,560 - 00:11:44,480] The quantity wasn't so easily measured,
+- [00:11:44,620 - 00:11:46,480] but he had a quantity defined in
+- [00:11:46,480 - 00:11:48,340] terms of temperatures and energies and so forth.
+- [00:11:49,260 - 00:11:51,660] And he called it entropy,
+- [00:11:51,660 - 00:11:53,000] or somebody called it entropy.
+- [00:11:55,040 - 00:12:01,100] And it got the letter S.
+- [00:12:01,420 - 00:12:02,330] And I'm going to call
+- [00:12:02,330 - 00:12:03,240] it little s for a minute.
+- [00:12:03,240 - 00:12:06,360] And I'm going to put a sub-Carnot here.
+- [00:12:12,000 - 00:12:12,300] So,
+- [00:12:12,300 - 00:12:14,560] Sadi Carnot had a quantity,
+- [00:12:15,319 - 00:12:16,680] which he called entropy.
+- [00:12:17,420 - 00:12:18,520] It has units.
+- [00:12:19,360 - 00:12:20,120] Let's see,
+- [00:12:20,120 - 00:12:20,980] what are its units?
+- [00:12:21,100 - 00:12:22,960] Let me cheat over here for a minute.
+- [00:12:27,280 - 00:12:29,600] It's energy divided by temperature.
+- [00:12:30,240 - 00:12:32,760] But if temperature measured in Kelvin,
+- [00:12:33,240 - 00:12:36,160] then it's joules per Kelvin.
+- [00:12:37,220 - 00:12:42,320] Joules per Kelvin was Carnot's unit of entropy.
+- [00:12:44,880 - 00:12:46,820] But in modern physics,
+- [00:12:46,820 - 00:12:49,280] we think of entropy as being measured in bits.
+- [00:12:49,960 - 00:12:53,380] A fundamental unit of entropy is logarithm of two,
+- [00:12:53,380 - 00:12:54,340] for example.
+- [00:12:54,980 - 00:12:56,560] And that's dimensionless.
+- [00:12:57,040 - 00:12:59,180] So there's some other notion of...
+- [00:12:59,180 - 00:13:00,440] Not some other notion.
+- [00:13:01,040 - 00:13:02,960] It's just a conversion factor again.
+- [00:13:03,740 - 00:13:06,310] Carnot's unit of entropy differs by what
+- [00:13:06,310 - 00:13:08,880] I have called entropy up till now.
+- [00:13:09,980 - 00:13:11,460] I have to get the...yeah.
+- [00:13:12,160 - 00:13:12,780] Okay.
+- [00:13:16,600 - 00:13:18,520] Do you remember what entropy is
+- [00:13:18,520 - 00:13:20,440] from a statistical point of view?
+- [00:13:20,580 - 00:13:22,580] If you have a probability distribution,
+- [00:13:22,980 - 00:13:24,880] if you have some probability distribution
+- [00:13:26,990 - 00:13:29,240] over some discrete set of states,
+- [00:13:30,040 - 00:13:31,980] then we define the entropy,
+- [00:13:31,980 - 00:13:32,480] S,
+- [00:13:33,240 - 00:13:33,940] capital S now,
+- [00:13:34,160 - 00:13:40,260] to be minus the sum over all the states
+- [00:13:41,060 - 00:13:44,440] of P sub i logarithm of P sub i.
+- [00:13:44,520 - 00:13:45,520] We did that last week.
+- [00:13:45,760 - 00:13:48,120] And it's a rough measure of
+- [00:13:48,120 - 00:13:50,480] the logarithm of the number of states
+- [00:13:50,480 - 00:13:53,720] which are important under a statistical distribution here.
+- [00:13:55,120 - 00:13:56,460] That's what we called entropy.
+- [00:13:57,040 - 00:13:59,560] What's the connection between Carnot's entropy
+- [00:14:00,000 - 00:14:01,760] and this is Boltzmann's entropy?
+- [00:14:01,760 - 00:14:04,760] Boltzmann's entropy here...
+- [00:14:05,640 - 00:14:06,280] What's the connection?
+- [00:14:06,560 - 00:14:09,640] The connection is simply a factor of K Boltzmann.
+- [00:14:11,160 - 00:14:14,940] And it is such that this is equal
+- [00:14:16,520 - 00:14:20,440] to one over K Boltzmann
+- [00:14:20,440 - 00:14:26,060] times Carnot's quantity.
+- [00:14:29,540 - 00:14:30,980] In other words,
+- [00:14:30,980 - 00:14:36,040] when Carnot's entropy is a normal number like six
+- [00:14:37,100 - 00:14:38,820] in a steam engine,
+- [00:14:40,520 - 00:14:42,280] Boltzmann's entropy is enormous.
+- [00:14:44,580 - 00:14:47,940] Boltzmann's entropy is roughly proportional
+- [00:14:47,940 - 00:14:50,220] to the number of molecules in the system
+- [00:14:50,890 - 00:14:52,020] or something like that.
+- [00:14:52,280 - 00:14:53,860] But once we know this now,
+- [00:14:53,920 - 00:14:55,540] once we know how to go back and forth
+- [00:14:55,540 - 00:14:59,600] between human units of temperature
+- [00:14:59,600 - 00:15:01,940] and human units of entropy
+- [00:15:02,600 - 00:15:04,380] and the more fundamental units
+- [00:15:04,380 - 00:15:06,520] for temperature,
+- [00:15:06,520 - 00:15:07,040] it's energy,
+- [00:15:07,240 - 00:15:08,080] for entropy,
+- [00:15:08,080 - 00:15:09,900] it's a dimensionless quantity,
+- [00:15:10,660 - 00:15:12,340] then from now on,
+- [00:15:12,380 - 00:15:15,040] I will not introduce K Boltzmann.
+- [00:15:15,860 - 00:15:17,260] The Boltzmann factor
+- [00:15:17,260 - 00:15:20,920] effectively is gone out of all of our equations.
+- [00:15:22,700 - 00:15:24,260] But you can put it back.
+- [00:15:24,500 - 00:15:26,200] And the way of putting it back
+- [00:15:26,200 - 00:15:27,560] is always,
+- [00:15:27,560 - 00:15:29,540] whenever you see capital T,
+- [00:15:30,040 - 00:15:32,360] and you want to get it into human units,
+- [00:15:32,560 - 00:15:35,680] think of it as K Boltzmann times temperature in Kelvin,
+- [00:15:35,920 - 00:15:39,240] and whenever you see an entropy S,
+- [00:15:39,500 - 00:15:40,920] which has a huge,
+- [00:15:40,920 - 00:15:42,200] huge value typically,
+- [00:15:42,440 - 00:15:45,280] and you want to get it into steam engine units,
+- [00:15:46,260 - 00:15:47,740] divide it by K Boltzmann.
+- [00:15:48,520 - 00:15:49,000] Question?
+- [00:15:49,260 - 00:15:49,420] Yes.
+- [00:15:49,860 - 00:15:51,940] So your new units for temperature
+- [00:15:51,940 - 00:15:52,920] called capital T,
+- [00:15:53,620 - 00:15:55,280] other than that vector 3 halves,
+- [00:15:55,440 - 00:15:56,620] isn't it just joules?
+- [00:15:57,699 - 00:15:58,880] It depends on,
+- [00:15:58,880 - 00:15:59,300] of course,
+- [00:15:59,300 - 00:16:02,040] now it depends on what unit of energy you're using.
+- [00:16:02,680 - 00:16:05,880] So if you're using the energy unit joules,
+- [00:16:05,880 - 00:16:07,740] then it would be joules.
+- [00:16:07,760 - 00:16:08,560] And the point is,
+- [00:16:08,560 - 00:16:09,560] it's not a new unit.
+- [00:16:10,340 - 00:16:11,460] What is a joule?
+- [00:16:11,580 - 00:16:16,400] A joule is the energy in MKS units,
+- [00:16:16,480 - 00:16:17,440] MKS meters,
+- [00:16:17,440 - 00:16:17,900] kilograms,
+- [00:16:17,900 - 00:16:19,100] seconds units.
+- [00:16:19,600 - 00:16:20,760] So what is it?
+- [00:16:20,800 - 00:16:22,620] It's the energy of a
+- [00:16:26,620 - 00:16:28,800] one kilogram object,
+- [00:16:29,720 - 00:16:33,880] moving at a velocity of one meter per second.
+- [00:16:34,120 - 00:16:35,620] I think there's a factor of two,
+- [00:16:35,720 - 00:16:37,140] one half MV squared in there,
+- [00:16:37,320 - 00:16:41,120] so it's twice the energy
+- [00:16:41,120 - 00:16:43,040] of a one kilo object
+- [00:16:43,040 - 00:16:44,960] moving at one meter per second.
+- [00:16:45,300 - 00:16:47,120] But as you had that written up there,
+- [00:16:47,260 - 00:16:50,040] you got very specific that the temperature is in Kelvin,
+- [00:16:50,120 - 00:16:51,560] that's a very well-specified thing.
+- [00:16:51,700 - 00:16:53,520] You have a very definite constant there.
+- [00:16:53,640 - 00:16:53,720] No,
+- [00:16:53,720 - 00:16:56,020] it's not a very definite constant.
+- [00:16:56,320 - 00:16:57,860] If you change units,
+- [00:16:59,300 - 00:17:00,580] K Boltzmann will change.
+- [00:17:01,840 - 00:17:05,180] If you change units instead of using for,
+- [00:17:07,760 - 00:17:12,000] instead of using Kelvin units,
+- [00:17:12,000 - 00:17:14,079] we use Fahrenheit units,
+- [00:17:14,160 - 00:17:15,880] then K Boltzmann will change.
+- [00:17:16,079 - 00:17:17,859] But I'm just looking at your equations up there,
+- [00:17:17,940 - 00:17:21,160] and you've got the temperature in Kelvin.
+- [00:17:22,579 - 00:17:23,099] Yeah,
+- [00:17:23,099 - 00:17:23,380] yeah,
+- [00:17:23,380 - 00:17:25,079] I was doing that as an illustration.
+- [00:17:25,460 - 00:17:25,940] Right,
+- [00:17:25,940 - 00:17:26,579] that's right.
+- [00:17:27,220 - 00:17:27,760] All right.
+- [00:17:29,660 - 00:17:31,020] So energy is,
+- [00:17:31,020 - 00:17:35,780] energy itself is a quantity with units.
+- [00:17:36,280 - 00:17:37,750] And so you have to
+- [00:17:37,750 - 00:17:39,220] specify what units you're talking about.
+- [00:17:39,480 - 00:17:43,260] When I say temperature has units of energy,
+- [00:17:43,660 - 00:17:44,220] yes,
+- [00:17:44,220 - 00:17:44,580] it does,
+- [00:17:45,160 - 00:17:47,220] but you have to pick your units of energy.
+- [00:17:47,800 - 00:17:49,360] So if you're working in the meter,
+- [00:17:49,360 - 00:17:49,740] kilogram,
+- [00:17:50,140 - 00:17:51,540] second set of units,
+- [00:17:51,800 - 00:17:54,540] then your natural unit or your unit of energy
+- [00:17:54,540 - 00:17:55,860] is called a joule,
+- [00:17:55,900 - 00:17:57,260] but it's not a new unit.
+- [00:17:57,900 - 00:17:59,280] It's the unit of energy,
+- [00:17:59,300 - 00:18:07,940] and that's the unit that you would use for temperature
+- [00:18:07,940 - 00:18:09,560] if you want to keep your formula simple.
+- [00:18:09,920 - 00:18:10,960] On the other hand,
+- [00:18:11,000 - 00:18:11,460] you could use,
+- [00:18:11,460 - 00:18:13,080] I don't know,
+- [00:18:13,160 - 00:18:15,060] kilotons of TNT.
+- [00:18:15,280 - 00:18:16,780] That's a bad thing to talk about today.
+- [00:18:19,040 - 00:18:20,020] Some other unit,
+- [00:18:20,020 - 00:18:22,880] electron volts or Planck masses or whatever.
+- [00:18:23,160 - 00:18:24,940] You change your units of temperature,
+- [00:18:25,140 - 00:18:25,340] sorry,
+- [00:18:25,340 - 00:18:26,820] you change your units of energy,
+- [00:18:27,740 - 00:18:29,280] the temperature will also change.
+- [00:18:29,280 - 00:18:31,340] But your units of temperature and
+- [00:18:31,340 - 00:18:33,400] energy should be kept the same.
+- [00:18:34,100 - 00:18:34,740] Entropy,
+- [00:18:34,740 - 00:18:35,580] on the other hand,
+- [00:18:35,580 - 00:18:36,560] is dimensionless.
+- [00:18:37,480 - 00:18:39,360] This entropy is dimensionless
+- [00:18:43,579 - 00:18:45,280] and doesn't have units.
+- [00:18:45,580 - 00:18:46,040] Yeah.
+- [00:18:46,220 - 00:18:46,840] Another question.
+- [00:18:47,100 - 00:18:48,480] Is the constant itself,
+- [00:18:49,260 - 00:18:51,200] is that essentially determined experimentally?
+- [00:18:51,380 - 00:18:51,820] Yes.
+- [00:18:51,820 - 00:18:52,720] Yes.
+- [00:18:54,220 - 00:18:55,160] Boltzmann himself,
+- [00:18:55,160 - 00:18:56,220] like Newton,
+- [00:18:56,520 - 00:18:59,260] never knew the value of his own constant.
+- [00:18:59,280 - 00:19:00,680] I don't mean the usefulness,
+- [00:19:00,720 - 00:19:02,480] I mean the actual numerical value.
+- [00:19:03,360 - 00:19:06,200] And that's because nobody had measured
+- [00:19:06,200 - 00:19:07,860] the properties of atoms,
+- [00:19:08,020 - 00:19:09,840] the masses of atoms,
+- [00:19:10,620 - 00:19:11,420] to any,
+- [00:19:11,420 - 00:19:11,740] to,
+- [00:19:11,740 - 00:19:13,020] at all,
+- [00:19:13,080 - 00:19:14,090] until Einstein came along and
+- [00:19:14,090 - 00:19:15,100] figured out how to do it.
+- [00:19:18,040 - 00:19:18,560] So,
+- [00:19:18,560 - 00:19:20,700] Kelvin died just before the value
+- [00:19:20,700 - 00:19:22,840] of his constant was really paid.
+- [00:19:23,080 - 00:19:25,760] I'm quite sure that they had a rough idea.
+- [00:19:26,660 - 00:19:27,780] They had a rough idea.
+- [00:19:28,000 - 00:19:29,260] And he certainly knew that it was Kelvin,
+- [00:19:29,280 - 00:19:30,440] connected to Avogadro's number.
+- [00:19:31,180 - 00:19:34,660] But he probably never knew with any detail
+- [00:19:34,660 - 00:19:36,220] what the value of his number was.
+- [00:19:36,440 - 00:19:37,840] The same was true of Newton.
+- [00:19:38,020 - 00:19:40,900] Newton had a rough idea of what his constant was,
+- [00:19:41,040 - 00:19:42,220] but no precision.
+- [00:19:43,060 - 00:19:43,420] Okay,
+- [00:19:43,420 - 00:19:43,960] so,
+- [00:19:43,960 - 00:19:44,940] but,
+- [00:19:44,940 - 00:19:45,320] but,
+- [00:19:45,320 - 00:19:47,660] but Boltzmann did understand,
+- [00:19:48,400 - 00:19:51,100] he did understand that if only
+- [00:19:51,100 - 00:19:53,800] he could measure the properties of atoms,
+- [00:19:55,300 - 00:19:58,640] that energy would be related to temperature
+- [00:19:58,640 - 00:19:59,760] through his constant.
+- [00:19:59,960 - 00:20:00,980] That he did understand.
+- [00:20:02,260 - 00:20:02,740] Okay.
+- [00:20:06,640 - 00:20:07,120] Alright,
+- [00:20:07,120 - 00:20:09,300] but thus far,
+- [00:20:09,960 - 00:20:11,900] I have not told you what temperature is.
+- [00:20:13,600 - 00:20:15,660] You have an intuitive sense of temperature,
+- [00:20:15,940 - 00:20:18,000] that's because when you touch a hot thing,
+- [00:20:18,160 - 00:20:19,880] it does something to your nerve cells,
+- [00:20:20,120 - 00:20:21,320] and so forth and so on,
+- [00:20:21,460 - 00:20:25,760] and you have a natural intuition about hot and cold.
+- [00:20:26,620 - 00:20:27,100] But,
+- [00:20:27,100 - 00:20:29,720] temperature is a rather derived quantity.
+- [00:20:30,000 - 00:20:31,880] It's a derived mathematical quantity
+- [00:20:31,880 - 00:20:34,860] that begins with a notion of entropy,
+- [00:20:35,120 - 00:20:35,480] sorry,
+- [00:20:35,480 - 00:20:38,360] begins with a notion of energy and notions,
+- [00:20:38,660 - 00:20:41,380] twin notions of energy and entropy.
+- [00:20:42,420 - 00:20:44,120] And so let's,
+- [00:20:45,160 - 00:20:47,400] let me tell you what temperature is.
+- [00:20:48,480 - 00:20:50,700] When a system is in thermal equilibrium,
+- [00:20:50,840 - 00:20:52,340] and we haven't defined that yet,
+- [00:20:52,360 - 00:20:53,280] if we get to it tonight,
+- [00:20:53,280 - 00:20:54,380] we'll do it,
+- [00:20:54,460 - 00:20:57,080] but it just means that,
+- [00:20:57,100 - 00:21:00,780] a closed system has been allowed to evolve
+- [00:21:00,780 - 00:21:03,500] for a long enough time that it just settles down
+- [00:21:03,500 - 00:21:05,440] to some equilibrium configuration.
+- [00:21:06,620 - 00:21:09,320] And it may be that that system,
+- [00:21:09,380 - 00:21:10,840] it doesn't have to be a closed system,
+- [00:21:10,900 - 00:21:12,440] let's take back closed system,
+- [00:21:12,830 - 00:21:14,975] and a system in contact
+- [00:21:14,975 - 00:21:17,120] with a lot of other environment.
+- [00:21:18,560 - 00:21:19,380] If it,
+- [00:21:19,810 - 00:21:23,060] if the environment is not changing with time,
+- [00:21:23,970 - 00:21:26,160] the system under consideration
+- [00:21:26,160 - 00:21:28,740] will equilibrate in a certain sense,
+- [00:21:28,840 - 00:21:29,900] it will become clear,
+- [00:21:30,600 - 00:21:31,940] with its environment.
+- [00:21:33,520 - 00:21:36,640] Energy may flow from the system to the environment,
+- [00:21:37,000 - 00:21:38,120] in that case,
+- [00:21:38,120 - 00:21:41,080] we say the system is hotter than the environment,
+- [00:21:41,180 - 00:21:42,340] or the energy may flow
+- [00:21:42,340 - 00:21:43,500] the other way on the average.
+- [00:21:45,160 - 00:21:46,820] And in equilibrium,
+- [00:21:47,040 - 00:21:48,560] on the average,
+- [00:21:48,560 - 00:21:50,360] energy is flowing neither way.
+- [00:21:51,040 - 00:21:51,640] Okay?
+- [00:21:53,800 - 00:21:55,540] In thermal equilibrium,
+- [00:21:56,800 - 00:21:59,960] what characterizes the thermal equilibrium of a system,
+- [00:22:00,100 - 00:22:01,220] so here we have a system,
+- [00:22:02,000 - 00:22:02,860] that's our system,
+- [00:22:03,000 - 00:22:06,080] consists of a lot of degrees of freedom in there,
+- [00:22:06,280 - 00:22:09,760] it may be interacting with an environment out here,
+- [00:22:09,860 - 00:22:11,500] and exchanging energy with it,
+- [00:22:11,540 - 00:22:12,940] until it comes to equilibrium.
+- [00:22:14,320 - 00:22:16,480] It has a collection of states,
+- [00:22:17,680 - 00:22:19,680] let's label them by I,
+- [00:22:21,460 - 00:22:23,420] and each state I,
+- [00:22:23,420 - 00:22:26,360] has an energy E sub I.
+- [00:22:29,200 - 00:22:30,140] E sub I,
+- [00:22:30,140 - 00:22:30,580] I,
+- [00:22:30,580 - 00:22:31,920] and so forth.
+- [00:22:33,060 - 00:22:33,740] Okay,
+- [00:22:33,740 - 00:22:34,420] now,
+- [00:22:35,100 - 00:22:36,780] when a system comes to equilibrium,
+- [00:22:37,600 - 00:22:40,460] it doesn't come to a particular state I,
+- [00:22:41,160 - 00:22:43,000] it's interacting with its environment,
+- [00:22:43,220 - 00:22:44,700] energy is going back and forth,
+- [00:22:45,040 - 00:22:46,620] complicated things are happening,
+- [00:22:47,100 - 00:22:48,620] but on the average,
+- [00:22:48,960 - 00:22:50,220] in equilibrium,
+- [00:22:50,220 - 00:22:54,800] there are some probabilistic ideas,
+- [00:22:55,280 - 00:22:56,620] some probability,
+- [00:22:56,620 - 00:22:57,640] just probability,
+- [00:22:59,060 - 00:23:02,280] that the system is in the I-th state,
+- [00:23:03,160 - 00:23:04,960] with energy E sub I.
+- [00:23:05,280 - 00:23:07,260] That becomes probabilistic now,
+- [00:23:07,460 - 00:23:10,340] because when it's interacting with an environment,
+- [00:23:10,680 - 00:23:11,420] well,
+- [00:23:11,420 - 00:23:12,220] you get the point,
+- [00:23:12,340 - 00:23:13,340] there's some P sub I,
+- [00:23:15,500 - 00:23:16,080] and,
+- [00:23:16,080 - 00:23:20,900] that P sub I satisfies some rules,
+- [00:23:21,620 - 00:23:22,760] the first one,
+- [00:23:23,460 - 00:23:26,420] is that the sum of all probabilities is one,
+- [00:23:27,960 - 00:23:28,980] another rule,
+- [00:23:29,220 - 00:23:30,340] it's not even a rule,
+- [00:23:30,340 - 00:23:30,980] it's a definition,
+- [00:23:31,740 - 00:23:34,460] is that if I take P of I,
+- [00:23:35,640 - 00:23:38,840] multiply it by the energy of the I-th state,
+- [00:23:39,500 - 00:23:40,800] and sum over I,
+- [00:23:41,520 - 00:23:43,340] that's the average energy,
+- [00:23:44,600 - 00:23:46,060] I guess we can call it,
+- [00:23:46,060 - 00:23:46,420] E,
+- [00:23:47,720 - 00:23:49,880] that's the average energy of the system,
+- [00:23:50,780 - 00:23:52,860] when you say average,
+- [00:23:53,560 - 00:23:55,160] what I really have in mind,
+- [00:23:55,200 - 00:23:57,100] is that the energy is constantly changing,
+- [00:23:58,240 - 00:23:59,200] it fluctuates,
+- [00:23:59,200 - 00:24:01,300] some extra energy goes out into the environment,
+- [00:24:01,460 - 00:24:02,740] and then it comes back in,
+- [00:24:02,760 - 00:24:03,420] and so forth,
+- [00:24:03,520 - 00:24:05,200] and it's constantly fluctuating,
+- [00:24:05,879 - 00:24:07,340] but over short times,
+- [00:24:07,980 - 00:24:08,940] it averages,
+- [00:24:09,800 - 00:24:12,720] and this is the equation for the average energy,
+- [00:24:12,920 - 00:24:13,860] we have that,
+- [00:24:13,860 - 00:24:15,640] and finally,
+- [00:24:17,200 - 00:24:19,900] we have a notion of entropy,
+- [00:24:20,200 - 00:24:23,360] and the entropy is just this notion up here,
+- [00:24:24,580 - 00:24:25,180] okay,
+- [00:24:26,020 - 00:24:26,620] now,
+- [00:24:27,380 - 00:24:30,440] what is the probability distribution P of I,
+- [00:24:30,560 - 00:24:31,440] what does it depend on,
+- [00:24:31,640 - 00:24:32,560] well,
+- [00:24:32,680 - 00:24:33,760] first of all,
+- [00:24:33,780 - 00:24:34,680] among other things,
+- [00:24:34,800 - 00:24:35,660] mostly,
+- [00:24:36,040 - 00:24:37,160] what it depends on,
+- [00:24:37,200 - 00:24:39,200] is the average energy,
+- [00:24:40,000 - 00:24:41,080] in the system,
+- [00:24:41,300 - 00:24:42,920] now the average energy,
+- [00:24:42,920 - 00:24:46,280] may depend on the nature of the environment,
+- [00:24:47,440 - 00:24:49,340] if the environment is very hot,
+- [00:24:49,520 - 00:24:50,960] the average energy in here,
+- [00:24:51,020 - 00:24:51,980] may be high,
+- [00:24:52,180 - 00:24:55,860] if the environment is cold,
+- [00:24:56,120 - 00:24:57,740] the average energy in here,
+- [00:24:57,800 - 00:24:59,160] may be cold,
+- [00:24:59,400 - 00:25:01,480] but there's some average energy,
+- [00:25:01,800 - 00:25:02,860] here it is,
+- [00:25:02,920 - 00:25:03,680] average energy,
+- [00:25:03,820 - 00:25:05,180] and it can be different,
+- [00:25:06,080 - 00:25:08,840] depending on the precise nature of what's going on,
+- [00:25:08,980 - 00:25:10,100] the average energy,
+- [00:25:10,280 - 00:25:11,900] can be thought of as a parameter,
+- [00:25:11,900 - 00:25:13,480] you can change it,
+- [00:25:13,560 - 00:25:14,260] you know,
+- [00:25:14,280 - 00:25:15,370] you can change the average
+- [00:25:15,370 - 00:25:16,460] energy of a pot of water,
+- [00:25:16,540 - 00:25:17,760] by putting it on a stove,
+- [00:25:18,480 - 00:25:20,100] or you can cool it down,
+- [00:25:20,180 - 00:25:21,180] by putting it out in the snow,
+- [00:25:21,900 - 00:25:24,100] so you can change the average energy,
+- [00:25:24,280 - 00:25:25,580] and in that sense,
+- [00:25:25,880 - 00:25:26,920] in that sense,
+- [00:25:27,420 - 00:25:29,200] the probability I,
+- [00:25:31,899 - 00:25:34,180] depends on the average energy,
+- [00:25:34,660 - 00:25:36,520] now the way to think about this is,
+- [00:25:36,780 - 00:25:38,920] for every value of the average,
+- [00:25:39,040 - 00:25:41,880] I'm not going to put the complicated bars around here,
+- [00:25:41,880 - 00:25:43,940] this now stands for average energy,
+- [00:25:45,680 - 00:25:46,480] the,
+- [00:25:46,660 - 00:25:48,960] for every given average energy,
+- [00:25:49,520 - 00:25:50,840] in thermal equilibrium,
+- [00:25:51,699 - 00:25:53,460] there's a probability P sub I,
+- [00:25:54,520 - 00:25:57,720] of course if you increase the average energy,
+- [00:25:57,940 - 00:26:00,800] then you tilt the probability distribution,
+- [00:26:01,220 - 00:26:04,740] toward larger energy values of E sub I,
+- [00:26:04,980 - 00:26:06,020] alright,
+- [00:26:06,080 - 00:26:06,720] so that means,
+- [00:26:07,800 - 00:26:11,020] that there's not a single probability distribution,
+- [00:26:11,020 - 00:26:12,700] that you call equilibrium,
+- [00:26:13,020 - 00:26:15,040] there's a family of them,
+- [00:26:16,960 - 00:26:18,600] there's a family of them,
+- [00:26:18,640 - 00:26:20,120] for each value of E,
+- [00:26:21,480 - 00:26:22,080] for,
+- [00:26:23,660 - 00:26:26,400] this horizontal axis could either plot,
+- [00:26:26,720 - 00:26:28,820] the I-th state of the system,
+- [00:26:28,980 - 00:26:31,560] or it could plot the energy of the I-th state,
+- [00:26:31,860 - 00:26:34,980] but for each value of the average energy,
+- [00:26:35,120 - 00:26:36,620] there's some probability distribution,
+- [00:26:39,180 - 00:26:41,000] for every value of the E,
+- [00:26:41,020 - 00:26:41,360] for every energy,
+- [00:26:42,820 - 00:26:44,580] we can now put in here,
+- [00:26:44,640 - 00:26:45,720] let's put in here E,
+- [00:26:45,900 - 00:26:47,420] let's put a comma in there,
+- [00:26:47,660 - 00:26:49,120] for every energy,
+- [00:26:49,260 - 00:26:51,880] the total probabilities have to add up to one,
+- [00:26:53,880 - 00:26:56,040] and what about this equation here,
+- [00:26:57,460 - 00:26:58,880] on the right hand side,
+- [00:26:59,820 - 00:27:03,180] this E here is just the average energy,
+- [00:27:03,960 - 00:27:05,400] it is just the average energy,
+- [00:27:05,580 - 00:27:07,780] so that defines the average energy,
+- [00:27:07,960 - 00:27:09,800] if you change the average energy,
+- [00:27:09,960 - 00:27:10,280] to,
+- [00:27:11,060 - 00:27:12,840] if you change the energy of the,
+- [00:27:13,640 - 00:27:14,720] what's in the box,
+- [00:27:15,520 - 00:27:18,040] then the probability distribution shifts,
+- [00:27:18,900 - 00:27:19,500] oh,
+- [00:27:19,500 - 00:27:21,260] I should draw it so that
+- [00:27:21,260 - 00:27:23,020] the area under it is always one,
+- [00:27:23,160 - 00:27:25,280] the area under it,
+- [00:27:25,300 - 00:27:28,060] or the total probability should always stay to be one,
+- [00:27:29,200 - 00:27:29,800] so,
+- [00:27:29,800 - 00:27:31,200] maybe like this,
+- [00:27:33,160 - 00:27:35,860] which one corresponds to more average energy,
+- [00:27:40,040 - 00:27:42,220] the one which is peaked further out,
+- [00:27:42,660 - 00:27:44,350] and imagine the energy increases
+- [00:27:44,350 - 00:27:46,040] as we go in this direction,
+- [00:27:46,740 - 00:27:47,620] E of I,
+- [00:27:49,060 - 00:27:50,520] as we move to the right,
+- [00:27:50,620 - 00:27:52,080] energy increases,
+- [00:27:52,760 - 00:27:55,500] and so the probability distribution,
+- [00:27:55,740 - 00:27:57,800] which is peaked further to the right,
+- [00:27:58,640 - 00:27:59,980] I'm not doing this well,
+- [00:28:00,180 - 00:28:01,640] the area under each one
+- [00:28:01,640 - 00:28:03,100] of these should be the same,
+- [00:28:03,100 - 00:28:05,900] but there's a one parameter family,
+- [00:28:06,020 - 00:28:09,480] of equilibrium distributions like this,
+- [00:28:09,680 - 00:28:11,820] which we haven't calculated yet,
+- [00:28:11,880 - 00:28:12,660] we don't know what they are,
+- [00:28:14,060 - 00:28:14,620] but,
+- [00:28:14,620 - 00:28:16,000] as a matter of experience,
+- [00:28:16,340 - 00:28:18,540] for each value of the average energy,
+- [00:28:18,680 - 00:28:19,820] there's a probability distribution,
+- [00:28:20,320 - 00:28:22,340] and that's called P I of E,
+- [00:28:23,000 - 00:28:25,000] every single one of them satisfies,
+- [00:28:25,780 - 00:28:27,180] the sum rule here,
+- [00:28:28,240 - 00:28:28,800] and,
+- [00:28:28,980 - 00:28:32,300] the average energy is equal to this quantity here,
+- [00:28:33,120 - 00:28:33,600] yeah.
+- [00:28:35,760 - 00:28:37,580] Things seem circular to me,
+- [00:28:38,520 - 00:28:41,560] the average energy depends on the probability distribution,
+- [00:28:42,100 - 00:28:44,280] but the probability distribution depends,
+- [00:28:44,900 - 00:28:46,220] on the average energy,
+- [00:28:46,440 - 00:28:46,780] I mean,
+- [00:28:46,780 - 00:28:49,040] you didn't really put the E in that second equation,
+- [00:28:49,140 - 00:28:49,640] with the I,
+- [00:28:49,980 - 00:28:51,300] Which equation here?
+- [00:28:51,520 - 00:28:51,780] Down,
+- [00:28:51,780 - 00:28:52,600] the last equation,
+- [00:28:52,700 - 00:28:52,900] down there,
+- [00:28:53,420 - 00:28:55,200] put in P I E,
+- [00:28:56,780 - 00:28:58,280] like you did upstairs there,
+- [00:28:59,400 - 00:29:00,640] you put an E in there,
+- [00:29:00,640 - 00:29:00,860] right?
+- [00:29:01,020 - 00:29:01,260] Ah,
+- [00:29:01,260 - 00:29:01,420] yes,
+- [00:29:01,420 - 00:29:01,820] thank you,
+- [00:29:01,820 - 00:29:01,960] good.
+- [00:29:02,520 - 00:29:03,000] So,
+- [00:29:03,100 - 00:29:04,680] but that E is really,
+- [00:29:05,360 - 00:29:06,160] bracket E,
+- [00:29:06,260 - 00:29:07,100] so it's like,
+- [00:29:07,140 - 00:29:08,340] bracket E,
+- [00:29:08,480 - 00:29:10,700] you have to use bracket E to define bracket E.
+- [00:29:12,900 - 00:29:13,980] Let's for the moment,
+- [00:29:14,040 - 00:29:14,820] just say,
+- [00:29:14,980 - 00:29:15,840] from experience,
+- [00:29:16,040 - 00:29:16,640] there are,
+- [00:29:16,740 - 00:29:18,200] a sequence,
+- [00:29:18,200 - 00:29:21,060] or a one parameter family of probability distributions,
+- [00:29:22,080 - 00:29:22,560] okay?
+- [00:29:22,760 - 00:29:24,620] So here's a one parameter family,
+- [00:29:24,660 - 00:29:26,540] the parameter is called E for the moment,
+- [00:29:26,660 - 00:29:27,700] but it doesn't have to be called E,
+- [00:29:27,760 - 00:29:28,540] call anything you want,
+- [00:29:29,080 - 00:29:31,640] a family of different probability distributions,
+- [00:29:31,640 - 00:29:34,640] each one of them has an average energy,
+- [00:29:35,560 - 00:29:36,040] alright?
+- [00:29:36,400 - 00:29:38,700] So once I know the average energy of it,
+- [00:29:38,800 - 00:29:41,120] I can think of it as the probability distribution
+- [00:29:41,120 - 00:29:43,220] for that given average energy.
+- [00:29:43,840 - 00:29:44,320] Right.
+- [00:29:45,060 - 00:29:46,080] Do you have a question?
+- [00:29:46,480 - 00:29:46,720] Yeah.
+- [00:29:46,940 - 00:29:47,420] So,
+- [00:29:47,420 - 00:29:48,140] is there a reason,
+- [00:29:48,240 - 00:29:49,240] we assume a closed system,
+- [00:29:49,320 - 00:29:50,400] is there a reason that you say,
+- [00:29:50,540 - 00:29:52,600] average energy instead of total energy?
+- [00:29:53,060 - 00:29:53,540] Yes,
+- [00:29:53,540 - 00:29:54,460] because I'm imagining,
+- [00:29:55,340 - 00:29:56,500] that the system,
+- [00:29:56,640 - 00:29:57,180] the system,
+- [00:29:57,220 - 00:29:58,700] we're talking now about,
+- [00:29:58,900 - 00:29:59,720] the system,
+- [00:29:59,960 - 00:30:01,620] as opposed to the environment,
+- [00:30:01,620 - 00:30:02,480] that it's in,
+- [00:30:03,280 - 00:30:04,960] and there's a constant,
+- [00:30:05,500 - 00:30:07,320] interchange of energy back and forth,
+- [00:30:07,360 - 00:30:08,920] between the system and the,
+- [00:30:09,800 - 00:30:10,780] and the,
+- [00:30:11,420 - 00:30:12,200] the system,
+- [00:30:12,240 - 00:30:13,680] we'll call the system,
+- [00:30:13,920 - 00:30:14,940] the rest of it,
+- [00:30:14,980 - 00:30:16,100] we'll just call the heat bath,
+- [00:30:17,480 - 00:30:18,040] right?
+- [00:30:18,120 - 00:30:19,380] So it could be the atmosphere,
+- [00:30:19,520 - 00:30:20,920] it could be a box of gas,
+- [00:30:21,220 - 00:30:23,000] with permeable walls,
+- [00:30:23,980 - 00:30:25,560] that heat can leak through,
+- [00:30:25,740 - 00:30:28,000] sitting in room temperature,
+- [00:30:28,160 - 00:30:28,960] in this room,
+- [00:30:29,140 - 00:30:31,600] then it's constantly exchanging,
+- [00:30:31,620 - 00:30:32,800] energy back and forth,
+- [00:30:32,840 - 00:30:34,020] the energy fluctuates,
+- [00:30:34,719 - 00:30:36,520] so the energy isn't definite,
+- [00:30:37,899 - 00:30:39,880] it has a probability distribution,
+- [00:30:40,520 - 00:30:41,960] if you go into the system,
+- [00:30:41,980 - 00:30:42,700] at one instant,
+- [00:30:42,760 - 00:30:43,760] and you measure the energy,
+- [00:30:43,880 - 00:30:44,720] you get one value,
+- [00:30:44,860 - 00:30:46,180] if you go in at another instant,
+- [00:30:46,320 - 00:30:47,280] you'll get another value,
+- [00:30:47,959 - 00:30:49,280] and if you do many,
+- [00:30:49,400 - 00:30:49,540] many,
+- [00:30:49,600 - 00:30:50,180] many measurements,
+- [00:30:50,380 - 00:30:52,300] you'll get a probability distribution.
+- [00:30:53,420 - 00:30:53,820] Okay.
+- [00:30:54,400 - 00:30:54,800] Okay,
+- [00:30:54,800 - 00:30:55,140] is that clear?
+- [00:30:55,380 - 00:30:55,780] Yeah.
+- [00:30:55,900 - 00:30:56,200] Okay,
+- [00:30:56,200 - 00:30:56,380] good.
+- [00:30:57,020 - 00:30:57,640] All right.
+- [00:30:58,300 - 00:30:59,140] And the clarification,
+- [00:30:59,860 - 00:31:00,260] the,
+- [00:31:00,260 - 00:31:01,900] you have these states I,
+- [00:31:02,180 - 00:31:03,340] and you have P of I,
+- [00:31:04,060 - 00:31:05,260] and E sub I,
+- [00:31:06,580 - 00:31:08,360] it's true then that every,
+- [00:31:08,560 - 00:31:10,560] that there could be many,
+- [00:31:10,680 - 00:31:12,300] many states that have the same energy?
+- [00:31:12,640 - 00:31:13,360] There could be,
+- [00:31:13,440 - 00:31:13,700] right,
+- [00:31:13,700 - 00:31:14,300] that's why I said,
+- [00:31:14,400 - 00:31:14,920] let's assume,
+- [00:31:14,960 - 00:31:16,920] let's assume for the moment,
+- [00:31:17,060 - 00:31:19,200] that there's a one parameter family,
+- [00:31:19,260 - 00:31:20,360] that's correct,
+- [00:31:20,480 - 00:31:20,560] yeah,
+- [00:31:20,560 - 00:31:21,640] of course that's true.
+- [00:31:21,820 - 00:31:23,640] There are many probability distributions
+- [00:31:23,640 - 00:31:24,860] that you could write down
+- [00:31:24,860 - 00:31:26,160] that have the same average energy.
+- [00:31:27,880 - 00:31:30,240] Where we're getting this one parameter family,
+- [00:31:30,240 - 00:31:32,540] from will come later.
+- [00:31:33,780 - 00:31:34,580] We'll just say,
+- [00:31:34,660 - 00:31:36,100] as a matter of experience,
+- [00:31:36,280 - 00:31:39,060] if you know the average energy of the system,
+- [00:31:39,120 - 00:31:40,480] then there's some probability distribution
+- [00:31:40,960 - 00:31:42,160] associated with it.
+- [00:31:42,940 - 00:31:44,300] To give it a name,
+- [00:31:45,180 - 00:31:46,600] it's the Boltzmann distribution.
+- [00:31:47,714 - 00:31:48,054] また
+- [00:31:49,922 - 00:31:50,762] or the Maxwell-Boltzmann,
+- [00:31:50,762 - 00:31:52,082] well it's the Boltzmann distribution
+- [00:31:54,382 - 00:31:54,682] Alright,
+- [00:31:54,682 - 00:31:57,082] but for now we're just doing a mathematical exercise,
+- [00:31:57,082 - 00:31:58,542] a one parameter family
+- [00:31:59,382 - 00:31:59,982] of
+- [00:32:00,862 - 00:32:02,062] probability distributions
+- [00:32:03,502 - 00:32:05,522] parameterized by the average energy
+- [00:32:06,042 - 00:32:07,542] no two of them have
+- [00:32:07,542 - 00:32:09,042] the same average energy by assumption
+- [00:32:11,402 - 00:32:13,492] and the higher the energy is
+- [00:32:13,492 - 00:32:15,582] of course the broader this probability
+- [00:32:15,582 - 00:32:19,042] the broader the probability distribution is likely to be
+- [00:32:20,062 - 00:32:21,822] and we'll take that as a given
+- [00:32:23,522 - 00:32:26,302] but there's an implicit assumption that each of
+- [00:32:26,302 - 00:32:29,082] the states are independent of the other ones
+- [00:32:29,082 - 00:32:30,362] each of which states?
+- [00:32:30,582 - 00:32:31,662] the i state
+- [00:32:32,282 - 00:32:32,502] oh,
+- [00:32:32,502 - 00:32:32,722] the i,
+- [00:32:32,722 - 00:32:33,502] they're different,
+- [00:32:33,502 - 00:32:33,822] yeah
+- [00:32:33,822 - 00:32:35,522] but suppose the i state
+- [00:32:35,522 - 00:32:37,222] is correlated with the j state,
+- [00:32:37,222 - 00:32:38,262] then you have a
+- [00:32:38,262 - 00:32:39,652] what does it mean that the i
+- [00:32:39,652 - 00:32:41,042] state is correlated with the j state?
+- [00:32:41,062 - 00:32:42,542] the energy of the i state
+- [00:32:42,542 - 00:32:44,022] is the same as the j state
+- [00:32:44,022 - 00:32:44,562] is that what you're saying?
+- [00:32:45,582 - 00:32:48,052] oh you're asking what happens if there's more
+- [00:32:48,052 - 00:32:50,522] than one state with exactly the same energy
+- [00:32:50,522 - 00:32:50,802] no,
+- [00:32:50,802 - 00:32:51,682] that the correlated,
+- [00:32:51,682 - 00:32:52,562] that probability
+- [00:32:53,122 - 00:32:54,562] what does correlated mean?
+- [00:32:54,962 - 00:32:56,922] correlated is a very technical term
+- [00:32:57,452 - 00:32:59,427] and if you're going to try to
+- [00:32:59,427 - 00:33:01,402] transmit information back and forth between us
+- [00:33:01,402 - 00:33:02,882] we have to do it with precision
+- [00:33:03,442 - 00:33:05,722] so what does it mean to say that the
+- [00:33:06,902 - 00:33:09,302] correlation is a very definite meaning
+- [00:33:09,302 - 00:33:11,342] and it doesn't apply to this
+- [00:33:11,842 - 00:33:13,402] but it means that the
+- [00:33:15,282 - 00:33:16,402] probability of the
+- [00:33:17,282 - 00:33:18,562] now that I think about it,
+- [00:33:18,562 - 00:33:19,442] it's hard to describe
+- [00:33:19,442 - 00:33:20,482] that would be
+- [00:33:21,242 - 00:33:22,042] let me let it go
+- [00:33:22,042 - 00:33:22,522] okay
+- [00:33:23,762 - 00:33:25,102] I have a question
+- [00:33:26,042 - 00:33:28,462] you could ask what if there's more
+- [00:33:28,462 - 00:33:30,882] than one state with exactly the same energy
+- [00:33:31,622 - 00:33:32,802] not average energy,
+- [00:33:32,802 - 00:33:34,822] but that there isn't
+- [00:33:35,802 - 00:33:37,862] that the e sub i's,
+- [00:33:37,862 - 00:33:39,432] e sub 7 and e
+- [00:33:39,432 - 00:33:41,002] sub 6 are exactly the same
+- [00:33:41,862 - 00:33:42,802] that's my question,
+- [00:33:42,802 - 00:33:42,982] yeah
+- [00:33:43,761 - 00:33:44,321] that's,
+- [00:33:44,321 - 00:33:45,782] first of all it never happens
+- [00:33:46,662 - 00:33:48,622] and it's not particularly important
+- [00:33:51,062 - 00:33:51,622] degeneracy,
+- [00:33:51,622 - 00:33:53,962] that means equal energies for different states
+- [00:33:53,962 - 00:33:56,662] is a very rare and unusual thing
+- [00:33:56,662 - 00:33:58,422] we don't have to worry about it
+- [00:33:58,422 - 00:34:00,202] every state has its own energy
+- [00:34:00,202 - 00:34:02,302] every energy has its own state
+- [00:34:02,302 - 00:34:04,182] let's take that as a working assumption
+- [00:34:04,182 - 00:34:04,522] yes,
+- [00:34:04,522 - 00:34:05,122] question up there
+- [00:34:06,422 - 00:34:08,862] the thing that's confusing me here is that
+- [00:34:09,402 - 00:34:13,382] i is the possible states of energy,
+- [00:34:13,382 - 00:34:13,382] right?
+- [00:34:13,402 - 00:34:16,442] the microscopic description of the states
+- [00:34:16,442 - 00:34:18,442] the precise exact microscope
+- [00:34:18,442 - 00:34:19,782] every molecule
+- [00:34:21,081 - 00:34:24,152] position and velocity or whatever it takes to
+- [00:34:24,152 - 00:34:27,222] describe the exact microscopic state of the system
+- [00:34:27,222 - 00:34:27,942] right,
+- [00:34:27,942 - 00:34:30,592] so if it's an arbitrary
+- [00:34:30,592 - 00:34:33,242] choice of what like i means
+- [00:34:33,242 - 00:34:35,581] then it's hard to
+- [00:34:35,581 - 00:34:36,542] it's not arbitrary
+- [00:34:37,761 - 00:34:39,462] so state one,
+- [00:34:39,462 - 00:34:41,242] we can label this state as
+- [00:34:41,242 - 00:34:41,342] oh,
+- [00:34:41,342 - 00:34:42,822] how we label them?
+- [00:34:42,822 - 00:34:43,702] yeah,
+- [00:34:43,702 - 00:34:44,702] how we label them?
+- [00:34:44,802 - 00:34:45,022] okay,
+- [00:34:45,022 - 00:34:45,661] so let's,
+- [00:34:45,661 - 00:34:45,902] good,
+- [00:34:45,902 - 00:34:46,262] good
+- [00:34:46,262 - 00:34:49,012] so let's agree to label them
+- [00:34:49,012 - 00:34:51,762] in ascending order of the energy
+- [00:34:52,881 - 00:34:53,562] good,
+- [00:34:53,562 - 00:34:54,242] right,
+- [00:34:54,242 - 00:34:55,462] good
+- [00:34:55,462 - 00:34:58,482] and let's take it as given that
+- [00:34:58,482 - 00:35:01,502] no two states have exactly the same energy
+- [00:35:01,502 - 00:35:05,742] which is typically true except in very unusual situations
+- [00:35:06,742 - 00:35:07,422] okay,
+- [00:35:07,422 - 00:35:09,612] so then we have a clear
+- [00:35:09,612 - 00:35:11,802] notion of what we mean by i
+- [00:35:11,802 - 00:35:13,552] we have a notion of what
+- [00:35:13,552 - 00:35:15,302] we mean by p of i
+- [00:35:15,302 - 00:35:17,782] and p of i for
+- [00:35:17,782 - 00:35:20,262] different values of the average energy
+- [00:35:21,482 - 00:35:24,022] the nature of this thing will become clear,
+- [00:35:24,022 - 00:35:24,642] not tonight
+- [00:35:24,642 - 00:35:26,412] we don't have enough time tonight
+- [00:35:26,412 - 00:35:28,182] to work out the Boltzmann distribution
+- [00:35:28,882 - 00:35:31,702] but we do have enough time
+- [00:35:31,702 - 00:35:34,522] to define the concept of temperature
+- [00:35:35,842 - 00:35:36,402] alright
+- [00:35:37,402 - 00:35:37,962] so,
+- [00:35:37,962 - 00:35:38,982] consider the following
+- [00:35:38,982 - 00:35:39,342] oh,
+- [00:35:39,342 - 00:35:39,622] oh,
+- [00:35:39,622 - 00:35:39,802] oh,
+- [00:35:39,802 - 00:35:40,642] one more thing
+- [00:35:41,802 - 00:35:44,662] each one of these probability distributions
+- [00:35:44,662 - 00:35:47,022] for each value of e
+- [00:35:47,752 - 00:35:49,642] has its own entropy
+- [00:35:50,462 - 00:35:51,722] let's write it out
+- [00:35:51,722 - 00:35:54,142] the entropy s
+- [00:35:55,582 - 00:35:57,962] becomes now a function of e
+- [00:35:57,962 - 00:35:59,942] now it's not a universal function of e
+- [00:35:59,942 - 00:36:01,862] it depends on these probability distributions
+- [00:36:02,722 - 00:36:04,932] but given this one
+- [00:36:04,932 - 00:36:07,142] parameter family of probability distributions
+- [00:36:07,802 - 00:36:10,682] s of e is equal to minus the sum
+- [00:36:10,682 - 00:36:11,881] over i
+- [00:36:12,642 - 00:36:17,002] of p of i comma e log
+- [00:36:18,062 - 00:36:18,822] of
+- [00:36:20,042 - 00:36:21,862] I don't need a bracket there
+- [00:36:21,862 - 00:36:22,722] log of p
+- [00:36:32,622 - 00:36:33,642] and so,
+- [00:36:33,642 - 00:36:34,702] for this reason
+- [00:36:35,682 - 00:36:38,382] s becomes a function of energy
+- [00:36:39,022 - 00:36:40,802] average energy in this case
+- [00:36:41,562 - 00:36:42,602] the entropy
+- [00:36:43,382 - 00:36:46,882] which is a feature of a given probability distribution
+- [00:36:47,722 - 00:36:50,022] now becomes a function of the energy
+- [00:36:50,022 - 00:36:51,732] because for each energy we
+- [00:36:51,732 - 00:36:53,442] have a different probability distribution
+- [00:36:54,322 - 00:36:54,642] alright,
+- [00:36:54,642 - 00:36:58,462] so that tells us that there's a notion,
+- [00:36:58,462 - 00:36:59,122] there's a connection
+- [00:36:59,122 - 00:37:01,502] between entropy and energy
+- [00:37:01,502 - 00:37:03,622] if we know this one parameter family
+- [00:37:04,122 - 00:37:04,882] and as I said,
+- [00:37:04,882 - 00:37:06,502] we'll discuss later where that comes from
+- [00:37:07,442 - 00:37:08,362] now let's look at the other one
+- [00:37:08,382 - 00:37:09,502] now let's ask a very funny question,
+- [00:37:09,502 - 00:37:10,442] an interesting question
+- [00:37:12,002 - 00:37:14,562] how much energy does it take
+- [00:37:17,022 - 00:37:19,782] each one of these probability distributions
+- [00:37:20,922 - 00:37:22,862] parameterized by a given average energy
+- [00:37:23,382 - 00:37:25,182] the higher the average energy,
+- [00:37:25,182 - 00:37:28,322] the more they'll spread out to the right here
+- [00:37:28,322 - 00:37:29,402] in particular to the right
+- [00:37:30,262 - 00:37:32,902] we could ask how much energy does it
+- [00:37:32,902 - 00:37:36,522] how much do you have to change the average energy
+- [00:37:37,581 - 00:37:40,182] how much do you have to change the average energy
+- [00:37:40,182 - 00:37:43,342] in order to change the entropy
+- [00:37:43,342 - 00:37:45,402] by one bit
+- [00:37:45,402 - 00:37:47,442] one bit means log two
+- [00:37:48,901 - 00:37:51,502] how much do you have to shift
+- [00:37:51,502 - 00:37:53,262] the energy here
+- [00:37:53,262 - 00:37:55,702] in order that the entropy
+- [00:37:57,161 - 00:37:58,602] changes by
+- [00:37:59,601 - 00:38:00,962] one bit's worth
+- [00:38:01,522 - 00:38:03,702] and the answer's gonna be disappointing
+- [00:38:03,702 - 00:38:06,502] because I'm just gonna write a formula in the blackboard
+- [00:38:06,502 - 00:38:07,522] which is totally obvious
+- [00:38:08,362 - 00:38:09,722] the answer is
+- [00:38:11,062 - 00:38:11,742] that
+- [00:38:13,402 - 00:38:14,722] the change
+- [00:38:15,662 - 00:38:17,242] in the entropy
+- [00:38:17,242 - 00:38:18,242] let's
+- [00:38:19,302 - 00:38:20,222] how did I write it,
+- [00:38:20,222 - 00:38:21,202] let me see how I wrote it
+- [00:38:22,882 - 00:38:23,562] yeah
+- [00:38:24,502 - 00:38:25,182] sorry
+- [00:38:25,182 - 00:38:27,602] the change in the energy
+- [00:38:29,422 - 00:38:31,062] is going to be equal
+- [00:38:31,062 - 00:38:33,342] to the derivative of the entropy
+- [00:38:33,342 - 00:38:35,302] with respect to the energy
+- [00:38:38,242 - 00:38:38,902] sorry,
+- [00:38:38,902 - 00:38:39,342] derivative
+- [00:38:41,581 - 00:38:44,862] the change in the energy
+- [00:38:44,862 - 00:38:47,502] the change in the energy
+- [00:38:49,362 - 00:38:53,422] when I go from one probability distribution to the next
+- [00:38:54,122 - 00:38:57,042] will be equal to the derivative of the energy
+- [00:38:58,062 - 00:39:00,042] with respect to the entropy
+- [00:39:01,822 - 00:39:03,682] times the change in the entropy
+- [00:39:03,682 - 00:39:05,202] this is an identity,
+- [00:39:05,202 - 00:39:05,282] right?
+- [00:39:05,282 - 00:39:05,402] this is an identity,
+- [00:39:05,402 - 00:39:05,582] right?
+- [00:39:05,582 - 00:39:06,382] I mean this is only making
+- [00:39:06,382 - 00:39:08,242] this is assuming nothing more
+- [00:39:08,862 - 00:39:09,342] than
+- [00:39:10,221 - 00:39:12,242] that things are smooth functions
+- [00:39:12,242 - 00:39:13,842] that can be differentiated
+- [00:39:15,302 - 00:39:16,762] the change in the energy
+- [00:39:17,362 - 00:39:20,222] in going from one probability distribution to the next
+- [00:39:20,901 - 00:39:22,642] is the derivative of the energy
+- [00:39:22,642 - 00:39:23,842] with respect to the entropy
+- [00:39:23,842 - 00:39:25,242] times the change in the entropy
+- [00:39:25,242 - 00:39:27,222] it might have made a little more sense to you
+- [00:39:27,222 - 00:39:28,202] if I would have written it the
+- [00:39:28,202 - 00:39:32,142] the alternate way
+- [00:39:32,841 - 00:39:35,262] than in going from one distribution to the next
+- [00:39:35,282 - 00:39:37,822] the change in the entropy
+- [00:39:39,242 - 00:39:40,242] is equal
+- [00:39:40,242 - 00:39:42,262] to the change in the energy
+- [00:39:43,202 - 00:39:44,422] divided by
+- [00:39:46,622 - 00:39:48,002] dE by dS
+- [00:39:50,182 - 00:39:50,822] incidentally,
+- [00:39:50,822 - 00:39:52,542] there's no difference now between
+- [00:39:52,542 - 00:39:54,262] partial derivatives and total derivatives
+- [00:39:54,262 - 00:39:56,822] just the derivative of E with respect to S
+- [00:39:58,102 - 00:40:01,222] in some problems there may be more variables
+- [00:40:01,222 - 00:40:03,222] and we might have to keep track of more variables
+- [00:40:03,222 - 00:40:05,262] here it's just derivatives of E with respect to S
+- [00:40:05,282 - 00:40:07,762] times delta S
+- [00:40:09,222 - 00:40:11,922] or we can write it in this fashion here
+- [00:40:13,841 - 00:40:15,702] this is trivial
+- [00:40:15,702 - 00:40:17,442] there's nothing insightful here
+- [00:40:17,442 - 00:40:19,282] it's just the definition
+- [00:40:19,282 - 00:40:22,862] of what I mean by differential changes
+- [00:40:22,862 - 00:40:24,142] question
+- [00:40:24,142 - 00:40:26,601] it seems that you're talking about
+- [00:40:26,601 - 00:40:30,101] the variation of the entropy with respect to energy
+- [00:40:30,101 - 00:40:31,282] so energy would be
+- [00:40:31,282 - 00:40:33,422] the variable that has the function
+- [00:40:33,422 - 00:40:35,102] would it be not more
+- [00:40:35,102 - 00:40:35,262] more of a function
+- [00:40:35,262 - 00:40:36,882] or would it be more logical to
+- [00:40:36,882 - 00:40:38,502] do dS dE instead of dE dS
+- [00:40:38,502 - 00:40:39,182] either way
+- [00:40:39,182 - 00:40:42,742] dE dS is the inverse of dS dE
+- [00:40:43,262 - 00:40:44,002] yeah
+- [00:40:44,002 - 00:40:44,862] yeah
+- [00:40:46,342 - 00:40:49,982] this is also equal to dS by dE
+- [00:40:51,502 - 00:40:52,722] times delta E
+- [00:40:52,722 - 00:40:53,802] all the same thing
+- [00:40:54,862 - 00:40:55,502] okay
+- [00:40:56,982 - 00:40:58,722] if for example I want to know
+- [00:40:58,722 - 00:41:01,522] how much do I have to shift the probability distribution
+- [00:41:01,522 - 00:41:03,122] how much do I have to shift the energy
+- [00:41:03,122 - 00:41:05,402] in order to change the entropy
+- [00:41:05,402 - 00:41:06,242] by one bit
+- [00:41:07,122 - 00:41:09,262] then I would just stick in for delta S
+- [00:41:09,262 - 00:41:10,202] one bit
+- [00:41:10,202 - 00:41:11,662] namely log two
+- [00:41:12,442 - 00:41:14,802] so that would tell me how much energy
+- [00:41:14,802 - 00:41:17,342] it takes to change the entropy
+- [00:41:17,342 - 00:41:18,182] by one bit
+- [00:41:19,022 - 00:41:20,962] the main point here
+- [00:41:20,962 - 00:41:23,562] is this object over here
+- [00:41:23,562 - 00:41:25,982] this object is called temperature
+- [00:41:25,982 - 00:41:28,042] that's what temperature is
+- [00:41:29,282 - 00:41:30,802] it's a derived quantity
+- [00:41:30,802 - 00:41:33,102] and it tells you how much
+- [00:41:34,501 - 00:41:36,582] you have to change the entropy
+- [00:41:38,162 - 00:41:39,342] or either way
+- [00:41:39,342 - 00:41:40,242] either way you say it
+- [00:41:40,242 - 00:41:41,662] how much you have to change the energy
+- [00:41:41,662 - 00:41:43,722] in order to change the entropy
+- [00:41:43,722 - 00:41:44,762] by a certain amount
+- [00:41:46,241 - 00:41:48,262] I sort of fixated on one bit
+- [00:41:48,262 - 00:41:50,202] but it doesn't matter if it's one bit
+- [00:41:50,202 - 00:41:51,002] as long as it's small
+- [00:41:51,002 - 00:41:52,302] as long as it's small
+- [00:41:55,322 - 00:41:57,642] or using differential formulas
+- [00:41:57,642 - 00:41:59,202] I don't know why I write delta
+- [00:41:59,202 - 00:41:59,962] just d
+- [00:42:02,141 - 00:42:03,102] and then I would say
+- [00:42:03,122 - 00:42:04,242] the definition of temperature
+- [00:42:05,122 - 00:42:06,422] is such
+- [00:42:06,882 - 00:42:08,022] that dE
+- [00:42:08,022 - 00:42:09,002] equals
+- [00:42:09,002 - 00:42:12,362] T temperature
+- [00:42:12,822 - 00:42:13,762] times dS
+- [00:42:16,121 - 00:42:18,742] and that's the only definition
+- [00:42:18,742 - 00:42:20,402] of temperature that's universal
+- [00:42:20,762 - 00:42:22,522] general and
+- [00:42:27,062 - 00:42:29,102] dE equals T dS
+- [00:42:29,102 - 00:42:30,342] sometimes written
+- [00:42:30,802 - 00:42:32,542] dS equals one over T
+- [00:42:33,122 - 00:42:33,502] times the E
+- [00:42:35,121 - 00:42:35,842] okay
+- [00:42:35,842 - 00:42:38,002] one point that's interesting
+- [00:42:38,002 - 00:42:39,522] well it's a little bit interesting
+- [00:42:39,522 - 00:42:41,742] if I change my units
+- [00:42:41,742 - 00:42:43,842] if I change my units from these
+- [00:42:44,881 - 00:42:46,122] physical units
+- [00:42:46,122 - 00:42:47,982] to human units
+- [00:42:47,982 - 00:42:50,482] then this formula doesn't change
+- [00:42:50,482 - 00:42:51,602] and the reason is
+- [00:42:51,602 - 00:42:53,362] it does change of course
+- [00:42:53,362 - 00:42:55,462] but it changes to become
+- [00:42:56,761 - 00:42:57,482] equals
+- [00:42:58,302 - 00:43:00,402] T measured in Kelvin
+- [00:43:01,982 - 00:43:02,702] times
+- [00:43:03,122 - 00:43:03,962] dS
+- [00:43:04,922 - 00:43:06,062] of the Carnot
+- [00:43:06,062 - 00:43:07,702] you know
+- [00:43:07,702 - 00:43:09,442] and why?
+- [00:43:09,782 - 00:43:12,622] because the Boltzmann constant cancels
+- [00:43:12,622 - 00:43:14,642] capital T
+- [00:43:14,642 - 00:43:16,722] is K Boltzmann times
+- [00:43:16,722 - 00:43:18,122] little t
+- [00:43:19,102 - 00:43:20,702] and capital
+- [00:43:20,702 - 00:43:22,422] S where is it
+- [00:43:23,002 - 00:43:24,502] I seem to have lost it
+- [00:43:24,502 - 00:43:25,502] no here it is
+- [00:43:25,502 - 00:43:28,922] capital S is one over K Boltzmann
+- [00:43:28,922 - 00:43:30,022] times S Carnot
+- [00:43:30,022 - 00:43:32,082] so they cancel and
+- [00:43:33,122 - 00:43:35,282] this is why Carnot
+- [00:43:35,282 - 00:43:37,362] who wrote this formula here
+- [00:43:37,362 - 00:43:37,962] he wrote
+- [00:43:37,962 - 00:43:40,882] the energy equals little t dS
+- [00:43:42,442 - 00:43:43,682] the K Boltzmann
+- [00:43:43,682 - 00:43:44,722] the Boltzmann factors
+- [00:43:44,722 - 00:43:45,862] cancel out of that
+- [00:43:46,882 - 00:43:48,922] one gets a K in the numerator
+- [00:43:48,922 - 00:43:50,562] one gets a K in the denominator
+- [00:43:51,402 - 00:43:52,122] I'm just
+- [00:43:53,682 - 00:43:54,882] telling you this because
+- [00:43:54,882 - 00:43:57,142] you may wonder what happened to the K Boltzmann
+- [00:43:57,142 - 00:43:59,062] if you go read
+- [00:43:59,062 - 00:44:00,842] a book on standard thermodynamics
+- [00:44:00,842 - 00:44:01,842] and you say wait a minute
+- [00:44:01,842 - 00:44:02,842] what happened to the K Boltzmann?
+- [00:44:03,122 - 00:44:05,202] they cancel out
+- [00:44:05,202 - 00:44:06,082] in the definitions
+- [00:44:08,402 - 00:44:09,702] so here we are
+- [00:44:10,842 - 00:44:12,002] definition of temperature
+- [00:44:13,142 - 00:44:14,662] it's an odd and an abstract
+- [00:44:14,662 - 00:44:16,962] definition of temperature and it's not in the least bit
+- [00:44:16,962 - 00:44:19,022] clear from this what it has
+- [00:44:19,022 - 00:44:21,102] to do with temperature
+- [00:44:21,102 - 00:44:21,802] as you
+- [00:44:23,022 - 00:44:24,062] experience it
+- [00:44:24,062 - 00:44:25,482] so I'm going to tell you what
+- [00:44:25,482 - 00:44:26,902] it has to do with temperature now
+- [00:44:30,762 - 00:44:32,742] so we have the
+- [00:44:33,122 - 00:44:34,902] entropy is a function of
+- [00:44:34,902 - 00:44:35,402] energy
+- [00:44:35,402 - 00:44:37,762] and what you're saying is
+- [00:44:37,762 - 00:44:39,842] it's invertible so
+- [00:44:40,762 - 00:44:42,582] is that obvious that it's invertible?
+- [00:44:42,782 - 00:44:44,622] it's not obvious but it's usually true
+- [00:44:44,622 - 00:44:45,042] ok
+- [00:44:46,742 - 00:44:48,342] there are
+- [00:44:49,122 - 00:44:49,542] counterexamples
+- [00:44:49,542 - 00:44:51,222] there are counterexamples
+- [00:44:52,242 - 00:44:54,022] and I would also say
+- [00:44:54,022 - 00:44:56,922] it is typical of normal
+- [00:44:56,922 - 00:44:57,862] physical systems
+- [00:44:58,822 - 00:45:01,022] that the entropy and the energy
+- [00:45:01,022 - 00:45:02,102] are monotonic
+- [00:45:03,122 - 00:45:04,442] so when you increase the energy
+- [00:45:05,102 - 00:45:06,482] you usually increase
+- [00:45:06,822 - 00:45:09,242] the width of the probability distribution
+- [00:45:09,242 - 00:45:11,042] and in so doing
+- [00:45:11,042 - 00:45:12,402] increase the entropy
+- [00:45:13,102 - 00:45:15,262] we will take that as a given for now
+- [00:45:15,262 - 00:45:16,402] that
+- [00:45:17,001 - 00:45:18,422] energy and entropy
+- [00:45:18,422 - 00:45:20,762] are monotonically increasing functions
+- [00:45:20,762 - 00:45:21,662] of each other
+- [00:45:21,662 - 00:45:23,202] single valued
+- [00:45:23,202 - 00:45:24,752] and we can come later
+- [00:45:24,752 - 00:45:26,302] and ask is that always true
+- [00:45:27,001 - 00:45:28,022] the answer is no
+- [00:45:28,022 - 00:45:30,162] but when it's not true
+- [00:45:31,322 - 00:45:32,002] unusual
+- [00:45:33,122 - 00:45:33,562] situations
+- [00:45:34,722 - 00:45:37,262] ok so we're going to assume then
+- [00:45:37,262 - 00:45:39,002] that the energy is a
+- [00:45:39,002 - 00:45:40,822] monotonically increasing function
+- [00:45:40,822 - 00:45:42,462] of entropy or
+- [00:45:42,972 - 00:45:44,902] entropy is a monotonically increasing
+- [00:45:44,902 - 00:45:46,902] function of energy and that
+- [00:45:46,902 - 00:45:48,782] means the temperature is positive
+- [00:45:50,102 - 00:45:51,722] dE by dS
+- [00:45:51,722 - 00:45:54,482] or dS by dE
+- [00:45:54,482 - 00:45:55,942] are positive
+- [00:45:55,942 - 00:45:56,802] assumption
+- [00:45:56,802 - 00:45:57,722] for the moment
+- [00:46:00,202 - 00:46:01,522] and as I said
+- [00:46:01,522 - 00:46:02,622] what it means
+- [00:46:03,122 - 00:46:05,002] is that when you increase the parameter
+- [00:46:05,002 - 00:46:06,942] E you spread
+- [00:46:06,942 - 00:46:09,102] the distribution over a larger
+- [00:46:09,102 - 00:46:09,962] number of states
+- [00:46:12,262 - 00:46:13,002] we're going
+- [00:46:13,002 - 00:46:14,162] as I said we're going to
+- [00:46:14,162 - 00:46:16,922] prove some of these things most of them
+- [00:46:16,922 - 00:46:19,282] but let's take it as given for now
+- [00:46:19,282 - 00:46:21,242] ok so then the question
+- [00:46:21,242 - 00:46:23,042] is in what way
+- [00:46:23,042 - 00:46:24,962] is this definition of temperature
+- [00:46:24,962 - 00:46:26,802] in any way
+- [00:46:26,802 - 00:46:28,942] related to the familiar
+- [00:46:28,942 - 00:46:30,122] concept of temperature
+- [00:46:30,882 - 00:46:31,842] now what is
+- [00:46:33,122 - 00:46:33,882] the familiar concept
+- [00:46:33,882 - 00:46:35,522] sure ouch I burned myself
+- [00:46:35,522 - 00:46:38,882] but can we do something
+- [00:46:38,882 - 00:46:40,822] that's a little bit more physics oriented
+- [00:46:42,142 - 00:46:43,182] basic fact
+- [00:46:43,182 - 00:46:43,422] yes
+- [00:46:45,822 - 00:46:47,102] well ok
+- [00:46:47,102 - 00:46:48,882] but that depends on the properties
+- [00:46:48,882 - 00:46:50,122] of light and so forth
+- [00:46:50,122 - 00:46:51,482] that's true
+- [00:46:51,482 - 00:46:54,462] but it's not really a statistical mechanical
+- [00:46:55,001 - 00:46:57,082] concept I mean we can have a box of gas
+- [00:46:57,082 - 00:46:58,262] without having light
+- [00:46:59,762 - 00:47:00,942] so there's a
+- [00:47:00,942 - 00:47:02,342] statistical mechanics notion
+- [00:47:03,122 - 00:47:03,882] but I'll tell you what
+- [00:47:03,882 - 00:47:06,802] you can think of a thousand things
+- [00:47:06,802 - 00:47:09,262] that temperature has to do with
+- [00:47:09,262 - 00:47:10,402] but
+- [00:47:11,122 - 00:47:13,302] the really useful
+- [00:47:13,302 - 00:47:14,682] definition the definition
+- [00:47:14,682 - 00:47:16,562] that's closest to
+- [00:47:17,082 - 00:47:19,062] to being general
+- [00:47:19,062 - 00:47:20,442] is
+- [00:47:21,122 - 00:47:21,562] that
+- [00:47:22,802 - 00:47:24,702] temperature is a measure
+- [00:47:24,702 - 00:47:27,002] or differences of
+- [00:47:27,002 - 00:47:29,242] temperature if you have two systems
+- [00:47:29,242 - 00:47:30,682] now let's take two systems
+- [00:47:37,242 - 00:47:38,582] and let's
+- [00:47:38,582 - 00:47:41,342] for simplicity now suppose the two systems
+- [00:47:41,342 - 00:47:43,102] are isolated
+- [00:47:44,342 - 00:47:46,202] this is system A
+- [00:47:46,202 - 00:47:49,662] and system B
+- [00:47:51,722 - 00:47:53,602] and they're connected
+- [00:47:55,742 - 00:47:58,162] by a thin pipe
+- [00:47:58,162 - 00:47:59,682] a thin pipe
+- [00:47:59,682 - 00:48:00,982] simply means
+- [00:48:00,982 - 00:48:02,962] that they can exchange energy
+- [00:48:02,962 - 00:48:03,102] in the same way
+- [00:48:03,122 - 00:48:04,122] with each other
+- [00:48:04,122 - 00:48:05,502] but weakly
+- [00:48:05,502 - 00:48:09,342] that little bits of energy
+- [00:48:09,342 - 00:48:11,142] can go back and forth between them
+- [00:48:11,142 - 00:48:13,182] and cause
+- [00:48:13,182 - 00:48:14,502] the energies to fluctuate
+- [00:48:14,891 - 00:48:17,022] but on the average each one has
+- [00:48:17,022 - 00:48:18,902] an energy now let's start them out
+- [00:48:18,902 - 00:48:20,642] without having
+- [00:48:20,642 - 00:48:21,802] been in contact
+- [00:48:23,482 - 00:48:24,922] they start out
+- [00:48:24,922 - 00:48:26,162] not being in contact
+- [00:48:26,162 - 00:48:28,182] they're each in equilibrium
+- [00:48:29,011 - 00:48:30,062] but at a different
+- [00:48:30,762 - 00:48:31,422] temperature
+- [00:48:33,741 - 00:48:35,002] let's call this one
+- [00:48:35,002 - 00:48:36,442] T A and T B
+- [00:48:38,582 - 00:48:40,682] we know what temperature means
+- [00:48:40,682 - 00:48:43,122] temperature is the rate of change
+- [00:48:43,122 - 00:48:45,782] of energy with respect to entropy
+- [00:48:45,782 - 00:48:47,122] an abstract definition
+- [00:48:47,122 - 00:48:47,882] to be sure
+- [00:48:47,882 - 00:48:50,062] but each one of these boxes
+- [00:48:50,062 - 00:48:51,082] has been prepared
+- [00:48:51,082 - 00:48:52,462] with a given temperature
+- [00:48:53,122 - 00:48:54,822] by whatever it takes
+- [00:48:54,822 - 00:48:56,261] to make them have
+- [00:48:56,261 - 00:48:57,902] whatever temperature they have
+- [00:48:57,902 - 00:48:59,702] and now connect them
+- [00:48:59,702 - 00:49:02,682] and connecting them simply means allowing them
+- [00:49:03,122 - 00:49:04,322] to interact with each other
+- [00:49:04,322 - 00:49:07,202] and exchange energy back and forth
+- [00:49:07,202 - 00:49:08,702] ok
+- [00:49:08,702 - 00:49:11,362] which way does the energy flow
+- [00:49:12,762 - 00:49:14,942] that's the most basic concept
+- [00:49:14,942 - 00:49:16,382] of temperature or
+- [00:49:17,702 - 00:49:21,242] the most basic concept of temperature
+- [00:49:21,242 - 00:49:22,922] is that heat
+- [00:49:22,922 - 00:49:24,662] or energy
+- [00:49:24,662 - 00:49:26,722] energy will flow
+- [00:49:26,722 - 00:49:27,702] from the hotter
+- [00:49:27,702 - 00:49:29,182] in other words
+- [00:49:29,182 - 00:49:32,682] the system of higher temperature
+- [00:49:32,682 - 00:49:33,102] will be the same
+- [00:49:33,122 - 00:49:35,162] to the system of lower temperature
+- [00:49:35,862 - 00:49:37,082] and we can prove that
+- [00:49:39,042 - 00:49:39,562] arbitrarily
+- [00:49:40,342 - 00:49:41,302] let's say that
+- [00:49:41,302 - 00:49:43,502] T B is bigger than T A
+- [00:49:45,402 - 00:49:46,862] if it's the other way
+- [00:49:46,862 - 00:49:48,562] then we just interchange A and B
+- [00:49:50,022 - 00:49:51,222] of course it's possible
+- [00:49:51,222 - 00:49:53,122] that T A exactly equals T B
+- [00:49:53,122 - 00:49:54,962] and we will see in that case
+- [00:49:54,962 - 00:49:56,622] that heat doesn't flow either way
+- [00:49:57,622 - 00:49:59,002] ok on the average
+- [00:49:59,002 - 00:50:01,282] heat meaning energy now
+- [00:50:01,802 - 00:50:02,322] ok
+- [00:50:03,362 - 00:50:04,942] so what we need to do
+- [00:50:04,942 - 00:50:06,622] we need to write down a couple of simple
+- [00:50:07,182 - 00:50:08,402] oh oh oh
+- [00:50:08,402 - 00:50:09,562] I left out one step
+- [00:50:09,562 - 00:50:10,742] I left out again
+- [00:50:12,982 - 00:50:14,682] something which will not become
+- [00:50:14,682 - 00:50:16,402] completely clear till later
+- [00:50:17,402 - 00:50:19,282] it's the second law of thermodynamics
+- [00:50:21,282 - 00:50:23,022] the second law of thermodynamics
+- [00:50:23,022 - 00:50:24,682] which I have given you
+- [00:50:24,682 - 00:50:26,442] no reason to believe at the moment
+- [00:50:28,162 - 00:50:30,322] you can take it as a postulate
+- [00:50:30,322 - 00:50:30,922] for the moment
+- [00:50:30,922 - 00:50:32,762] but we will do a lot better
+- [00:50:32,762 - 00:50:33,102] because we are going to do a lot better
+- [00:50:33,122 - 00:50:34,962] the second law of thermodynamics
+- [00:50:34,962 - 00:50:36,622] says that
+- [00:50:36,622 - 00:50:39,162] when you allow the system to come to
+- [00:50:39,162 - 00:50:40,002] thermal equilibrium
+- [00:50:40,002 - 00:50:43,582] when you allow A and B to equilibrate
+- [00:50:44,601 - 00:50:47,682] heat will flow one way or the other way
+- [00:50:47,682 - 00:50:48,462] we don't know which
+- [00:50:48,462 - 00:50:49,482] energy will flow
+- [00:50:49,482 - 00:50:50,642] but eventually
+- [00:50:50,642 - 00:50:53,342] it will come to some sort of
+- [00:50:53,342 - 00:50:54,622] compromise equilibrium
+- [00:50:55,702 - 00:50:57,622] the second law of thermodynamics
+- [00:50:57,622 - 00:51:00,022] says that the entropy increases
+- [00:51:01,482 - 00:51:02,122] ok
+- [00:51:02,122 - 00:51:03,102] so let's look at
+- [00:51:03,122 - 00:51:05,502] let's try to follow the line of reasoning now
+- [00:51:06,542 - 00:51:08,262] the total entropy
+- [00:51:08,262 - 00:51:09,822] of the system
+- [00:51:10,862 - 00:51:11,262] S
+- [00:51:12,802 - 00:51:15,642] is equal to the entropy of A
+- [00:51:15,642 - 00:51:18,382] plus the entropy of B
+- [00:51:19,942 - 00:51:20,742] why
+- [00:51:20,742 - 00:51:23,162] why is entropy additive
+- [00:51:23,162 - 00:51:24,162] does anybody know
+- [00:51:24,162 - 00:51:25,982] from the mathematics
+- [00:51:27,002 - 00:51:28,662] because it's the logarithm
+- [00:51:28,662 - 00:51:29,682] yeah
+- [00:51:29,682 - 00:51:32,482] because it's the logarithm of something
+- [00:51:32,482 - 00:51:33,102] and the entropy of B
+- [00:51:33,122 - 00:51:56,042] the entropy of B
+- [00:51:56,042 - 00:51:58,482] just now
+- [00:51:59,242 - 00:51:59,962] particularly
+- [00:51:59,962 - 00:52:00,182] I don't think
+- [00:52:00,182 - 00:52:02,122] this is his
+- [00:52:02,122 - 00:52:03,002] he doesn't exist
+- [00:52:03,002 - 00:52:03,022] so
+- [00:52:03,022 - 00:52:03,102] my
+- [00:52:03,122 - 00:52:04,282] Another useful fact.
+- [00:52:04,282 - 00:52:05,742] We're going to write down some useful facts.
+- [00:52:06,842 - 00:52:10,642] The second useful fact is that when the system
+- [00:52:10,642 - 00:52:13,182] equilibrates by exchanging energy,
+- [00:52:13,182 - 00:52:15,642] the total energy is conserved.
+- [00:52:16,022 - 00:52:16,802] All right,
+- [00:52:16,802 - 00:52:18,582] here's the first law of thermodynamics.
+- [00:52:18,582 - 00:52:19,382] First law.
+- [00:52:25,382 - 00:52:27,762] If the energy of A
+- [00:52:28,442 - 00:52:28,742] increases,
+- [00:52:28,742 - 00:52:32,762] then the energy of B decreases by the same amount.
+- [00:52:33,442 - 00:52:40,482] So that says that DEA is equal to minus DEB.
+- [00:52:43,642 - 00:52:45,602] Or the change in energy
+- [00:52:51,242 - 00:52:53,312] of A and B has
+- [00:52:53,312 - 00:52:55,382] to add up altogether to zero.
+- [00:52:55,502 - 00:52:56,942] I'm not sure we're going to make it through this.
+- [00:52:56,942 - 00:52:57,542] What time is it?
+- [00:52:57,702 - 00:52:58,142] Yeah,
+- [00:52:58,142 - 00:52:58,982] maybe we will.
+- [00:53:00,782 - 00:53:01,222] Okay.
+- [00:53:03,122 - 00:53:03,522] Next,
+- [00:53:03,522 - 00:53:06,042] the second law of thermodynamics.
+- [00:53:09,842 - 00:53:12,502] The change in SA
+- [00:53:12,502 - 00:53:15,482] plus the change in SB
+- [00:53:15,482 - 00:53:17,282] is greater than zero.
+- [00:53:18,042 - 00:53:18,922] Entropy increases.
+- [00:53:19,402 - 00:53:20,002] Again,
+- [00:53:20,002 - 00:53:21,502] something we will need to justify.
+- [00:53:25,782 - 00:53:26,542] Finally,
+- [00:53:28,462 - 00:53:30,342] for each one of these,
+- [00:53:33,742 - 00:53:35,982] the change in energy A
+- [00:53:35,982 - 00:53:39,322] is equal to the temperature of A
+- [00:53:39,322 - 00:53:42,422] times the change in the entropy of A.
+- [00:53:42,682 - 00:53:43,222] Right?
+- [00:53:43,402 - 00:53:46,362] That's DE equals TDS.
+- [00:53:47,122 - 00:53:50,062] Definition of temperature.
+- [00:53:50,822 - 00:53:51,582] Likewise,
+- [00:53:51,582 - 00:53:56,202] DEB is equal to TB times DSB.
+- [00:53:58,822 - 00:53:59,782] All right,
+- [00:53:59,782 - 00:54:01,002] hold on to these equations.
+- [00:54:01,282 - 00:54:02,842] Lock them in your head.
+- [00:54:02,942 - 00:54:03,102] And remember,
+- [00:54:03,102 - 00:54:03,842] we're going to have to move across the hall.
+- [00:54:03,842 - 00:54:05,162] Because I think we are going
+- [00:54:05,162 - 00:54:06,482] to have to move across the hall.
+- [00:54:07,782 - 00:54:08,622] For more,
+- [00:54:08,622 - 00:54:11,042] please visit us at stanford.edu.
