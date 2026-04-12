@@ -1,204 +1,193 @@
 # Math Bank
 ## Core Equations
-- [transcript-backed] \(\lvert x,y\rangle=\lvert y,x\rangle\) for bosons.
-- [visible] \(\lvert x,y\rangle=-\,\lvert y,x\rangle\) for fermions.
-- [transcript-backed] \(\psi^\dagger(x)\psi^\dagger(y)\lvert 0\rangle=\psi^\dagger(y)\psi^\dagger(x)\lvert 0\rangle\) for bosons.
-- [transcript-backed] \(\psi^\dagger(x)\psi^\dagger(y)\lvert 0\rangle=-\,\psi^\dagger(y)\psi^\dagger(x)\lvert 0\rangle\) for fermions.
-- [visible] \(\psi^\dagger(x)\psi^\dagger(y)+\psi^\dagger(y)\psi^\dagger(x)=0\).
-- [visible] \(\psi^\dagger(x)\psi^\dagger(x)+\psi^\dagger(x)\psi^\dagger(x)=0\).
-- [standard reconstruction] \(\{\psi^\dagger(x),\psi^\dagger(y)\}=0\).
-- [standard reconstruction] \(\{\psi^\dagger(x),\psi^\dagger(x)\}=0\Rightarrow 2(\psi^\dagger(x))^2=0\Rightarrow (\psi^\dagger(x))^2=0\).
-- [standard reconstruction] \([a,a^\dagger]=1\) for a bosonic single mode.
-- [standard reconstruction] \(\{a,a^\dagger\}=1\), \(a^2=0\), \((a^\dagger)^2=0\) for a fermionic single mode.
-- [visible] \(i\,\frac{\partial}{\partial t}\psi_1=-\,i\,\frac{\partial}{\partial x}\psi_1\).
-- [visible] \(H\psi_1=p\,\psi_1\).
-- [partially visible] \(H\psi_2=-\,p\,\psi_2\).
-- [standard reconstruction] \(i\,\frac{\partial}{\partial t}\psi_2=+\,i\,\frac{\partial}{\partial x}\psi_2\).
-- [transcript-backed] \(\Psi=\begin{pmatrix}\psi_1\\ \psi_2\end{pmatrix}\).
-- [transcript-backed] \(H\Psi=\alpha\,p\,\Psi\).
-- [transcript-backed] \(\alpha\psi_1=+\psi_1,\qquad \alpha\psi_2=-\psi_2\).
-- [transcript-backed] \(H=\alpha p+\beta m\).
-- [transcript-backed] \(\alpha^2=1,\qquad \beta^2=1,\qquad \alpha\beta+\beta\alpha=0\).
-- [transcript-backed] \(H^2=p^2+m^2\).
+- [visible] \(\lvert x,y\rangle=-\lvert y,x\rangle\).
+- [visible] \(\psi^\dagger(x)\psi^\dagger(y)=-\,\psi^\dagger(y)\psi^\dagger(x)\).
+- [visible] \(\{\psi^\dagger(x),\psi^\dagger(y)\}=0\).
+- [visible] \(\{\psi^\dagger(x),\psi^\dagger(x)\}=0\Rightarrow 2(\psi^\dagger(x))^2=0\Rightarrow (\psi^\dagger(x))^2=0\).
+- [transcript-backed] \(\psi^\dagger(x)\psi^\dagger(y)=\psi^\dagger(y)\psi^\dagger(x)\) for the bosonic exchange step.
+- [standard reconstruction] \([a,a^\dagger]=1\).
+- [standard reconstruction] \(\{a,a^\dagger\}=1,\qquad a^2=(a^\dagger)^2=0\).
+- [transcript-backed] \(n_{\text{boson}}=0,1,2,\dots\).
+- [transcript-backed] \(n_{\text{fermion}}=0,1\).
+
+- [transcript-backed] \(i\,\partial_t\psi=-\,i\,\partial_x\psi\).
+- [transcript-backed] \(H=P\).
+- [transcript-backed] \(E=p\).
 - [transcript-backed] \(E^2=p^2+m^2\).
-- [transcript-backed] \(H=\boldsymbol{\alpha}\cdot\mathbf p=\alpha_x p_x+\alpha_y p_y+\alpha_z p_z\).
-- [transcript-backed] \(\alpha_x^2=\alpha_y^2=\alpha_z^2=1\).
-- [transcript-backed] \(\alpha_i\alpha_j+\alpha_j\alpha_i=0\) for \(i\neq j\).
-- [visible] \(\alpha_x=\sigma_x=\begin{pmatrix}0&1\\ 1&0\end{pmatrix}\).
-- [visible] \(\alpha_y=\sigma_y=\begin{pmatrix}0&-i\\ i&0\end{pmatrix}\).
-- [standard reconstruction] \(\alpha_z=\sigma_z=\begin{pmatrix}1&0\\ 0&-1\end{pmatrix}\).
-- [transcript-backed] \(H=\boldsymbol{\sigma}\cdot\mathbf p\).
+- [transcript-backed] \(H\psi_1=P\psi_1,\qquad H\psi_2=-P\psi_2\).
+- [transcript-backed] \(H\psi=\alpha P\,\psi\).
+- [transcript-backed] \(H=\alpha P+\beta m\).
+- [transcript-backed] \(\alpha^2=1,\qquad \beta^2=1,\qquad \alpha\beta+\beta\alpha=0\).
+- [transcript-backed] \(H^2=P^2+m^2\).
+
+- [visible] \(H=\alpha\cdot P=\alpha_xP_x+\alpha_yP_y+\alpha_zP_z\).
 - [transcript-backed] \(E^2=\mathbf p^2=p_x^2+p_y^2+p_z^2\).
-- [transcript-backed] \(\sigma_x\beta+\beta\sigma_x=0,\quad \sigma_y\beta+\beta\sigma_y=0,\quad \sigma_z\beta+\beta\sigma_z=0\) is required for a 2-component mass term in 3D.
-- [transcript-backed] No \(2\times2\) matrix \(\beta\) exists that anti-commutes with all three Pauli matrices.
-- [standard reconstruction] \(\alpha_i=\begin{pmatrix}\sigma_i&0\\0&-\sigma_i\end{pmatrix}\), \(\beta=\begin{pmatrix}0&I\\ I&0\end{pmatrix}\) as a convenient \(4\times4\) representation matching the lecture.
-- [transcript-backed] \(\alpha_i^2=1,\qquad \beta^2=1,\qquad \alpha_i\alpha_j+\alpha_j\alpha_i=0\ (i\neq j),\qquad \alpha_i\beta+\beta\alpha_i=0\).
-- [transcript-backed] \(H=\boldsymbol{\alpha}\cdot\mathbf p+\beta m\) in the \(4\times4\) theory.
-- [transcript-backed] \(H^2=\mathbf p^2+m^2\).
-- [standard reconstruction] \(\dot L=i[H,L]\) as the Heisenberg-form convention used for the lecture’s velocity argument.
-- [transcript-backed] \(\dot x=i[H,x]=\alpha_x\) up to the lecture’s acknowledged sign-convention ambiguity.
-- [transcript-backed] \([H,\alpha_x]\neq0\), hence \(\dot\alpha_x\neq0\).
-- [standard reconstruction] \(\Sigma_i=\begin{pmatrix}\sigma_i&0\\0&\sigma_i\end{pmatrix}\) for the genuine spin operator in the same block notation.
-- [transcript-backed] \(H=P\) for the simplest right-moving massless Dirac model.
-- [transcript-backed] Negative energies occur because \(P\) can take negative values.
-- [standard reconstruction] \(\psi(x)\sim \int_{0}^{\infty}dp\,a(p)e^{-ipx}+\int_{0}^{\infty}dp\,b^\dagger(p)e^{+ipx}\) as the schematic electron/positron split of the fermion field.
-- [transcript-backed] \(H_{\mathrm{int}}\sim \psi^\dagger(x)\psi(x)A(x)\) as the operator structure generating electron-photon processes.
+- [transcript-backed] \(\alpha_x^2=\alpha_y^2=\alpha_z^2=1\).
+- [transcript-backed] \(\alpha_i\alpha_j+\alpha_j\alpha_i=0\quad (i\neq j)\).
+- [transcript-backed] \(\alpha_x=\sigma_x,\qquad \alpha_y=\sigma_y,\qquad \alpha_z=\sigma_z\).
+- [visible] \(\sigma_z=\begin{pmatrix}1&0\\0&-1\end{pmatrix}\).
+- [visible] \(H=\sigma\cdot p\).
+- [standard reconstruction] \(H=\boldsymbol{\sigma}\cdot\mathbf p\).
+- [transcript-backed] \(\sigma_x=\begin{pmatrix}0&1\\1&0\end{pmatrix},\qquad \sigma_y=\begin{pmatrix}0&-i\\ i&0\end{pmatrix},\qquad \sigma_z=\begin{pmatrix}1&0\\0&-1\end{pmatrix}\).
+- [standard reconstruction] \(\boldsymbol{\sigma}\cdot\mathbf p=|\mathbf p|\,(\boldsymbol{\sigma}\cdot\hat{\mathbf p})\), with eigenvalues \(\pm |\mathbf p|\).
+
+- [transcript-backed] \(H=\boldsymbol{\sigma}\cdot\mathbf p+\beta m\) is the naive \(2\times2\) massive trial.
+- [transcript-backed] \(\sigma_i\beta+\beta\sigma_i=0\quad\text{for all }i\) would be required.
+- [transcript-backed] No \(2\times2\) matrix anti-commutes with all three Pauli matrices.
+- [standard reconstruction] \(H=\boldsymbol{\alpha}\cdot\mathbf P+\beta m\) for the \(4\times4\) Dirac-matrix stage.
+- [standard reconstruction] \(\{\alpha_i,\alpha_j\}=2\delta_{ij},\qquad \{\alpha_i,\beta\}=0,\qquad \beta^2=1\).
+- [standard reconstruction] \(\alpha_i=\begin{pmatrix}\sigma_i&0\\0&-\sigma_i\end{pmatrix},\qquad \beta=\begin{pmatrix}0&I\\I&0\end{pmatrix}\).
+- [standard reconstruction] \(\Sigma_i=\begin{pmatrix}\sigma_i&0\\0&\sigma_i\end{pmatrix}\) for the true spin operator, if explicitly needed.
+
+- [standard reconstruction] \(\dot L=i[H,L]\) in units \(\hbar=1\).
+- [standard reconstruction] \([x,P_x]=i\).
+- [transcript-backed] \(\dot x=\alpha_x\).
+- [transcript-backed] \(\dot\alpha_x=i[H,\alpha_x]\neq0\).
+
+- [standard reconstruction] \(E_{\text{hole}}=-E_{\text{negative electron}}>0\).
+- [standard reconstruction] \(b^\dagger(p)\equiv a(-p)\) as the negative-energy reinterpretation.
+- [standard reconstruction] \(\psi(x)\sim \int_0^\infty dp\,\big[a(p)e^{-ipx}+b^\dagger(p)e^{+ipx}\big]\).
+- [transcript-backed] \(H_{\text{int}}\sim \psi^\dagger(x)\psi(x)A(x)\).
 
 ## Definitions And Objects
-- Bosonic exchange symmetry: two-particle state is unchanged under interchange.
-- Fermionic exchange symmetry: two-particle state changes sign under interchange.
-- Vacuum state: \(\lvert 0\rangle\).
-- Creation operator: \(\psi^\dagger(x)\) creates a particle at \(x\).
-- Anti-commutator: \(\{A,B\}=AB+BA\).
-- One-dimensional right-mover: field/wavefunction satisfying \(i\partial_t\psi_1=-i\partial_x\psi_1\).
-- One-dimensional left-mover: second species with \(H\psi_2=-p\psi_2\).
-- Two-component spinor in 1D review: \(\Psi=(\psi_1,\psi_2)^T\).
-- \(\alpha\) in 1D review: matrix distinguishing right-moving and left-moving species.
-- \(\beta\) in 1D review: matrix added so the Hamiltonian acquires a mass term.
-- Three-dimensional massless Dirac/Weyl Hamiltonian: \(H=\boldsymbol{\sigma}\cdot\mathbf p\).
-- Helicity/chirality in the lecture’s language: relation between spin direction and momentum direction.
-- Four-component Dirac object: enlarged spinor required once mass is added in 3D.
-- Dirac matrices in this lecture stage: \(\alpha_x,\alpha_y,\alpha_z,\beta\), required to mutually anti-commute appropriately.
-- \(\alpha_i\) in the \(4\times4\) theory: not the genuine spin; interpreted through the Heisenberg equation as velocity operators.
-- Genuine spin operator: block-diagonal operator built from the Pauli matrices without the minus sign in the lower block.
-- Zitterbewegung: rapid non-conservation-driven wobbling associated with \([H,\alpha_i]\neq0\).
-- Dirac sea: historical picture in which all negative-energy fermion states are filled in the vacuum.
-- Hole: absence of a filled negative-energy electron state, interpreted as a positron.
-- Electron operators: \(a,a^\dagger\) in the lecture’s later field-operator discussion.
-- Positron operators: \(b,b^\dagger\) after relabeling annihilation of negative-energy electrons as creation of positrons.
-- Photon operator/field: denoted \(A\) in the interaction example.
+- \(\lvert x,y\rangle\): two-particle state with slot labels; \(x\) and \(y\) label particle positions, not Cartesian coordinates.
+- \(\psi^\dagger(x)\), \(\psi(x)\): creation and annihilation operators at position \(x\); in later parts of the lecture \(\psi\) also denotes a single-particle wavefunction or spinor.
+- \(\{A,B\}=AB+BA\): anti-commutator.
+- \([A,B]=AB-BA\): commutator.
+- \(a,a^\dagger\): single-mode bosonic or fermionic ladder operators used for the occupation-number comparison.
+- \(\psi_1,\psi_2\): right-moving and left-moving one-dimensional components/species in the review construction.
+- \(\alpha,\beta\): matrices introduced first in the one-dimensional Dirac review; \(\beta\) is the mass-coupling matrix.
+- \(\boldsymbol{\alpha}=(\alpha_x,\alpha_y,\alpha_z)\): three-component matrix object used to form the rotational scalar \(\boldsymbol{\alpha}\cdot\mathbf p\).
+- \(\sigma_x,\sigma_y,\sigma_z\): Pauli matrices supplying the \(2\times2\) massless three-dimensional solution.
+- Chirality/helicity: the lecture uses this as the relation between spin direction and momentum direction; right-handed means aligned, left-handed means anti-aligned.
+- Dirac sea: the historically motivated vacuum defined by filling all negative-energy fermion states.
+- Hole/positron: excitation produced by removing a filled negative-energy electron.
+- \(a(p)\): annihilation operator for a positive-energy electron mode.
+- \(b^\dagger(p)\): creation operator for a positron mode after reinterpreting negative-energy electron annihilation.
+- \(A(x)\): photon field/operator appearing schematically in the interaction term.
 
 ## Derivation Steps
-1. Fermionic exclusion from anti-commutation
-   1. Start from exchange antisymmetry: \(\psi^\dagger(x)\psi^\dagger(y)\lvert0\rangle=-\psi^\dagger(y)\psi^\dagger(x)\lvert0\rangle\).
-   2. Move both terms to one side.
-   3. Read the result as \(\{\psi^\dagger(x),\psi^\dagger(y)\}=0\).
-   4. Set \(y=x\).
-   5. Obtain \(2(\psi^\dagger(x))^2=0\).
-   6. Conclude \((\psi^\dagger(x))^2=0\), so two identical fermions cannot occupy the same state.
+Fermionic exchange to operator anti-commutation
+1. Start from exchanged fermionic two-particle states differing by a minus sign.
+2. Represent the two-particle state by two creation operators acting on the vacuum.
+3. Swap the order of the creation operators to represent exchanged particles.
+4. Demand the swapped state pick up a minus sign.
+5. Move both terms to one side.
+6. Read the result as a vanishing anti-commutator of creation operators.
 
-2. One-dimensional mass term
-   1. Begin with the right-moving massless equation \(H\psi_1=p\psi_1\).
-   2. Add a second species with \(H\psi_2=-p\psi_2\).
-   3. Package them into \(\Psi=(\psi_1,\psi_2)^T\).
-   4. Introduce \(\alpha\) so that \(H\Psi=\alpha p\Psi\).
-   5. Add \(+\beta m\) to form \(H=\alpha p+\beta m\).
-   6. Impose \(\alpha^2=\beta^2=1\) and \(\alpha\beta+\beta\alpha=0\).
-   7. Square \(H\).
-   8. Cross terms cancel, yielding \(H^2=p^2+m^2\).
+Equal-point exclusion
+1. Take the fermionic anti-commutator and set \(y=x\).
+2. Both operator products become identical.
+3. The anti-commutator becomes \(2(\psi^\dagger(x))^2\).
+4. Set it equal to zero.
+5. Conclude \((\psi^\dagger(x))^2=0\).
+6. Interpret this as impossibility of placing two identical fermions in the same state.
 
-3. Three-dimensional massless Dirac/Weyl construction
-   1. Demand a Hamiltonian linear in momentum.
-   2. In 3D, replace the single \(\alpha\) by a vector \(\boldsymbol{\alpha}\).
-   3. Write \(H=\boldsymbol{\alpha}\cdot\mathbf p\).
-   4. Square \(H\).
-   5. Require \(\alpha_i^2=1\) to reproduce \(p_i^2\) terms.
-   6. Require \(\alpha_i\alpha_j+\alpha_j\alpha_i=0\) for \(i\neq j\) to kill cross terms.
-   7. Identify a \(2\times2\) solution with the Pauli matrices.
-   8. Conclude \(H=\boldsymbol{\sigma}\cdot\mathbf p\).
+Boson versus fermion ladder comparison
+1. For bosons, use the infinite occupation ladder \(0,1,2,\dots\).
+2. Note that creation and annihilation operators are not algebraically interchangeable because the ladder is not symmetric under turning it upside down.
+3. For a single fermionic mode, use only \(0\) and \(1\).
+4. Observe that creation kills the filled state and annihilation kills the empty state.
+5. Conclude that the fermionic algebra is symmetric under exchanging filled and empty, even though the operators are still physically different.
 
-4. Helicity reading of the massless 3D equation
-   1. Take \(H=\boldsymbol{\sigma}\cdot\mathbf p\).
-   2. Note that the spin component along \(\mathbf p\) has eigenvalues \(\pm1\) in Susskind’s normalization.
-   3. Therefore energy is positive when spin is aligned with momentum.
-   4. Energy is negative when spin is anti-aligned with momentum.
-   5. Read the positive-energy sector as a single handedness.
+One-dimensional massive Dirac construction
+1. Begin with \(i\partial_t\psi=-i\partial_x\psi\), so \(H=P\) and \(E=p\).
+2. Identify this as a massless right-mover.
+3. Add a second species with \(H\psi_2=-P\psi_2\) to represent a left-mover.
+4. Package \(\psi_1,\psi_2\) into a two-component object.
+5. Introduce \(\alpha\) so its eigenvalues distinguish the two sectors.
+6. Write the combined Hamiltonian as \(H=\alpha P\).
+7. Add \(\beta m\).
+8. Require \(\alpha^2=\beta^2=1\) and \(\{\alpha,\beta\}=0\).
+9. Square \(H\) and use the anti-commutator to cancel the cross term.
+10. Recover \(H^2=P^2+m^2\).
 
-5. Failure of a 2-component mass term in 3D
-   1. Try \(H=\boldsymbol{\sigma}\cdot\mathbf p+\beta m\).
-   2. Square \(H\).
-   3. Cross terms require \(\sigma_i\beta+\beta\sigma_i=0\) for all \(i=x,y,z\).
-   4. Observe that no \(2\times2\) matrix anti-commutes with all three Pauli matrices.
-   5. Conclude that a 2-component 3D massive Dirac theory fails.
+Three-dimensional massless construction
+1. Demand a Hamiltonian linear in momentum but rotationally invariant.
+2. Replace the one-dimensional \(\alpha\) by a vector of matrices \(\boldsymbol{\alpha}\).
+3. Write \(H=\boldsymbol{\alpha}\cdot\mathbf p\).
+4. Square \(H\).
+5. Require each \(\alpha_i^2=1\) to reproduce the diagonal \(p_i^2\) terms.
+6. Require \(\{\alpha_i,\alpha_j\}=0\) for \(i\neq j\) to kill the cross terms.
+7. Recognize that the Pauli matrices satisfy exactly these relations.
+8. Set \(\alpha_i=\sigma_i\).
+9. Arrive at \(H=\boldsymbol{\sigma}\cdot\mathbf p\) with energies \(\pm |\mathbf p|\).
 
-6. Need for \(4\times4\) matrices
-   1. Keep the same algebraic goal: three \(\alpha_i\) plus one \(\beta\).
-   2. Require four mutually anti-commuting matrices squaring to \(1\).
-   3. Move to a four-component spinor.
-   4. Choose a convenient block representation of \(\alpha_i\) and \(\beta\).
-   5. Verify abstractly that the required anti-commutators vanish.
-   6. Conclude \(H^2=\mathbf p^2+m^2\) in 3D with mass.
+Failure of a \(2\times2\) mass term in three dimensions
+1. Try to add \(\beta m\) to \(H=\boldsymbol{\sigma}\cdot\mathbf p\).
+2. Square the Hamiltonian.
+3. The cross term requires \(\{\beta,\sigma_i\}=0\) for all three \(i\).
+4. Observe that no \(2\times2\) matrix satisfies this with all Pauli matrices.
+5. Conclude that two components are insufficient for the massive three-dimensional theory.
+6. Enlarge the matrix algebra to \(4\times4\).
 
-7. Mass as left/right or chirality mixing
-   1. In the massless \(2\times2\) theory, one handedness is isolated.
-   2. Doubling introduces the opposite handedness.
-   3. The mass term is off-diagonal in the chosen block form.
-   4. Off-diagonal structure mixes upper and lower sectors.
-   5. Therefore the mass term is interpreted as coupling left-handed and right-handed sectors.
+Four-by-four Dirac-matrix construction
+1. Keep three \(\alpha_i\) and one \(\beta\), now as \(4\times4\) matrices.
+2. Require \(\alpha_i^2=1\), \(\beta^2=1\), \(\{\alpha_i,\alpha_j\}=0\) for \(i\neq j\), and \(\{\alpha_i,\beta\}=0\).
+3. Use a block representation built from Pauli matrices and the identity.
+4. Check that the block algebra inherits Pauli anti-commutation.
+5. Obtain a Hamiltonian whose square is \(\mathbf P^2+m^2\).
 
-8. Velocity operator from the Heisenberg equation
-   1. Use \(\dot L=i[H,L]\) with \(L=x\).
-   2. Insert \(H=\boldsymbol{\alpha}\cdot\mathbf p+\beta m\).
-   3. \(\alpha_i\) and \(\beta\) commute with \(x\) because they act in spinor space.
-   4. Only \(p_x\) fails to commute with \(x\).
-   5. Use \([p_x,x]=-i\) in the lecture’s units.
-   6. Conclude \(\dot x=\alpha_x\), modulo the sign convention Susskind explicitly leaves loose.
+Mass as chirality mixing
+1. In the massless \(2\times2\) theory, positive-energy states have spin locked relative to momentum.
+2. Interpret the two alignments as opposite handedness/chirality.
+3. The \(4\times4\) enlargement introduces both chiral sectors.
+4. The off-diagonal \(\beta m\) term connects upper and lower blocks.
+5. Read the mass term as coupling left- and right-handed sectors.
 
-9. Zitterbewegung
-   1. Ask whether \(\alpha_x\) is conserved.
-   2. Compute \(\dot\alpha_x=i[H,\alpha_x]\).
-   3. Since \(H\) contains \(\alpha_y\) and \(\alpha_z\), which do not commute with \(\alpha_x\), the commutator is nonzero.
-   4. Therefore \(\alpha_x\) is not conserved.
-   5. Interpret this as rapid wobbling motion, zitterbewegung.
+Velocity operator and zitterbewegung
+1. Use the Heisenberg equation for \(\dot L\).
+2. Set \(L=x\).
+3. Only \(P_x\) fails to commute with \(x\); the matrices commute with \(x\).
+4. Pull \(\alpha_x\) outside the commutator.
+5. Use the canonical commutator with \(P_x\).
+6. Identify \(\dot x=\alpha_x\).
+7. Then test \(\dot\alpha_x\) by commuting \(\alpha_x\) with \(H\).
+8. Since \(H\) contains \(\alpha_y\) and \(\alpha_z\), the commutator is nonzero.
+9. Conclude that the velocity operator is not conserved.
+10. Interpret the resulting rapid oscillation as zitterbewegung.
 
-10. Dirac-sea stabilization
-   1. Start from the simplest right-moving model \(H=P\).
-   2. Note that negative momentum gives negative energy.
-   3. If negative-energy states were empty, energy could be lowered indefinitely.
-   4. Use fermionic exclusion: each state can be occupied only once.
-   5. Fill all negative-energy states.
-   6. Call that filled configuration the vacuum.
-   7. Conclude the vacuum is stable against further descent.
+Negative energy, Dirac sea, and positrons
+1. Return to the simplest right-moving massless case \(H=P\).
+2. Allow negative momentum, hence negative energy.
+3. Note that a vacuum with no particles would be unstable if arbitrarily many negative-energy particles could be added.
+4. Use fermionic exclusion to cap occupation at one per state.
+5. Fill all negative-energy states and declare that filled configuration to be the vacuum.
+6. Remove one negative-energy electron.
+7. Interpret the missing negative charge as positive charge.
+8. Interpret removal of negative energy as addition of positive energy.
+9. Identify the hole as a positron.
 
-11. Hole as positron
-   1. Remove one negative-energy electron from the filled sea.
-   2. Removing a negative-energy particle raises the energy.
-   3. The missing negative charge appears as positive charge.
-   4. The hole has positive energy and positive charge.
-   5. Identify the hole as the positron.
-
-12. Fermion field split into electrons and positrons
-   1. Begin with the usual momentum expansion over all \(p\).
-   2. Split the integral into \(p>0\) and \(p<0\) pieces.
-   3. Interpret the \(p>0\) annihilation operators as electron annihilation operators.
-   4. Relabel annihilation of negative-energy electrons as creation of positrons.
-   5. Rewrite the field schematically as electron annihilation plus positron creation.
-
-13. Multiple processes from one interaction term
-   1. Start with \(H_{\mathrm{int}}\sim \psi^\dagger\psi A\).
-   2. Insert the electron/positron split of \(\psi\) and \(\psi^\dagger\).
-   3. Read one term as electron scattering with a photon.
-   4. Read another as electron-positron annihilation into a photon.
-   5. Read another as pair creation from a photon.
-   6. Conclude one operator structure contains several physical channels.
+Field-operator split and process content
+1. Start from a momentum integral for the fermion field over all \(p\).
+2. Split the integral into positive-momentum and negative-momentum pieces.
+3. Reinterpret annihilation of a negative-energy electron as creation of a positron.
+4. Rewrite the field as electron-annihilation plus positron-creation pieces.
+5. Insert this split into the schematic interaction \(\psi^\dagger\psi A\).
+6. Read off electron emission, electron-positron annihilation, and pair-creation contributions from one operator structure.
 
 ## Notation Choices
-- Use \(\psi^\dagger(x)\) for position-space creation operators in the second-quantized recap.
-- Use \(\{\cdot,\cdot\}\) only for operator anti-commutators, never for matrix multiplication unless explicitly discussing matrix anti-commutation.
-- Keep a verbal distinction between field anti-commutation and matrix anti-commutation; Susskind explicitly warns about this.
-- Use \(a,a^\dagger\) for a generic single fermion or boson mode only in the occupation-number discussion.
-- Use lowercase \(\psi_1,\psi_2\) for the one-dimensional component wavefunctions/species.
-- Use uppercase \(\Psi\) for the assembled multi-component spinor.
 - Use \(H\) for the Hamiltonian operator throughout.
-- Use \(P\) for the operator and \(p\) for momentum eigenvalue or integration variable when possible; the lecture blurs them, but the final notes should keep them distinct.
-- In 3D, use boldface \(\mathbf p\) and \(\boldsymbol{\alpha}\) for vectors, with components \(\alpha_x,\alpha_y,\alpha_z\).
-- Use standard Pauli-matrix symbols \(\sigma_x,\sigma_y,\sigma_z\) in conventional matrix form, correcting the transcript’s garbled spoken entries.
-- For the \(4\times4\) representation, use block notation with \(2\times2\) submatrices:
-  - \(\alpha_i=\begin{pmatrix}\sigma_i&0\\0&-\sigma_i\end{pmatrix}\)
-  - \(\beta=\begin{pmatrix}0&I\\I&0\end{pmatrix}\)
-- Use \(\Sigma_i\) for the genuine spin operator to keep it distinct from \(\alpha_i\).
-- Use “chirality” in the lecture’s loose sense of handedness relation between spin and momentum; do not silently upgrade it to a more technical modern convention without warning.
-- Use \(A\) for the photon operator/field in the interaction example, since that is the lecture notation.
-- For the later electron/positron expansion, use \(a,a^\dagger\) for electrons and \(b,b^\dagger\) for positrons, matching the lecture’s A/B naming idea while normalizing to standard lowercase operator notation.
+- Use \(P\) for the one-dimensional momentum operator in the review section, matching the lecture’s \(H=P\) and \(H=\alpha P+\beta m\).
+- Use \(p\) for momentum eigenvalues and for component labels in dispersion relations.
+- Use \(\mathbf p=(p_x,p_y,p_z)\) and \(\mathbf P=(P_x,P_y,P_z)\) for three-dimensional momentum vectors.
+- Use boldface \(\boldsymbol{\alpha}\) and \(\boldsymbol{\sigma}\) for the three-component matrix objects in three dimensions.
+- Keep \(\psi(x)\) as the lecture’s symbol, but distinguish in prose when it means a single-particle wavefunction versus a field operator.
+- Use \(\psi_1,\psi_2\) for the two-component one-dimensional review; introduce four-component notation only after the \(2\times2\) mass obstruction.
+- Use \(\{A,B\}\) for both field and matrix anti-commutators, with context stated explicitly.
+- Normalize the transcript’s “Dirac C” and “Fermi C” to “Dirac sea” and “Fermi sea.”
+- Normalize the transcript slip “massless term” to “mass term” in the chirality discussion.
+- Use units \(\hbar=1\) when writing the Heisenberg equation and the canonical commutator.
+- If the genuine spin operator is written explicitly, denote it by \(\Sigma_i\) to keep it separate from the velocity matrices \(\alpha_i\).
 
 ## Uncertain Mathematics
-- The transcript’s repeated operator string in the equal-point exclusion argument is garbled. The clean result \((\psi^\dagger(x))^2=0\) is secure, but the intermediate line should be rebuilt from the visible frame rather than quoted literally.
-- The bosonic single-mode algebra is only partially legible in the transcript. \([a,a^\dagger]=1\) is a safe stabilizing insertion, but it is support notation, not a derivation given cleanly in the lecture.
-- The explicit \(2\times2\) matrices used for 1D \(\alpha\) and \(\beta\) are not reliably spoken. In the final notes, prioritize the algebra \(\alpha^2=\beta^2=1\), \(\{\alpha,\beta\}=0\) over any claimed unique matrix choice.
-- The lecture’s normalization of the spin component along momentum is pedagogical rather than careful about factors of \(1/2\). Preserve the lecture’s effective \(\pm1\) normalization in this chapter unless a correction is explicitly explained.
-- The transcript around the “spin falls out of the Dirac equation” exchange contains breakdown and repetition. The secure mathematical point is that the matrix structure needed for linearity in momentum forces Pauli/Dirac matrices.
-- The 3D mass-term obstruction is secure as an algebraic claim, but the final notes should avoid pretending Susskind proves a classification theorem. It is enough to state that within \(2\times2\) matrices there is no extra matrix anti-commuting with all three Pauli matrices.
-- The \(4\times4\) block representation is a cautious standard reconstruction. The lecture clearly describes the block structure and the off-diagonal \(\beta\), but not every written entry is fully recoverable from the transcript alone.
-- The Heisenberg-equation sign convention is explicitly uncertain in the lecture. The final notes should choose one convention and note that only the identification of \(\alpha_x\) with velocity is structurally important here.
-- The field expansion near the end has uncertain Fourier-sign conventions, and Susskind says they “don’t matter” in the moment. Keep the decomposition schematic unless phase conventions are verified elsewhere in the course notes.
-- The Dirac-sea picture is historically central in this lecture, but the final notes should mark it as a historical/operator-relabeling bridge, not as the final modern ontology.
+- The equal-point anti-commutator passage is verbally garbled; the clean algebra \(\{\psi^\dagger(x),\psi^\dagger(x)\}=0\Rightarrow(\psi^\dagger(x))^2=0\) should be taken from the board plus cautious reconstruction.
+- The transcript corruption around \(00{:}31{:}43\)–\(00{:}32{:}02\) breaks the “spin emerges from Dirac’s linearization” discussion; that logic should be reconstructed from surrounding remarks rather than quoted literally.
+- In the three-dimensional massless discussion, the spoken squared relation repeats \(p_y^2\); the intended final term is clearly \(p_z^2\).
+- The clean \(4\times4\) anti-commutation family is mathematically right, but one transcript stretch repeats factors in a corrupted way; the final notes should present only the cleaned relations.
+- The explicit block representation of \(\alpha_i\) and \(\beta\) is only partially legible from the transcript; it is usable, but as a cautious standard representation rather than a verbatim transcription.
+- The true spin operator is only described by contrast with \(\alpha\); if \(\Sigma_i=\mathrm{diag}(\sigma_i,\sigma_i)\) is written, it should be marked as a standard reconstruction.
+- Susskind is openly unsure of the sign convention in the Heisenberg equation; only the conclusion \(\dot x=\alpha_x\) is stable in the lecture.
+- The field-operator plane-wave phases are verbally loose; the split into \(a(p)e^{-ipx}\) and \(b^\dagger(p)e^{+ipx}\) should be kept as a cautious reconstruction with normalization and time dependence suppressed.
+- The interaction term \(\psi^\dagger\psi A\) is schematic and should not be promoted into a fully covariant QED formula at this stage.
+- The quaternion detour is too muddled to support any formal theorem beyond a brief remark that Pauli matrices are related to quaternionic structure.
