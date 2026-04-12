@@ -1,0 +1,2453 @@
+# Transcript
+
+Source: supplementary/string_theory/2010_fall_string_theory_and_m_theory/095 - Lecture 1 ｜ String Theory and M-Theory [25haxRuZQUk].webm
+
+- [00:00:00,000 - 00:00:07,000] Stanford University
+- [00:00:07,000 - 00:00:11,000] Alright, so let me just tell you a
+- [00:00:11,000 - 00:00:15,000] little bit about the origins of string theory.
+- [00:00:15,000 - 00:00:19,000] The origins of string theory really were in hadron physics.
+- [00:00:19,000 - 00:00:22,000] They did not have to do with quantum gravity.
+- [00:00:22,000 - 00:00:25,000] They had to do with
+- [00:00:25,000 - 00:00:28,000] protons, neutrons, mesons, particularly mesons.
+- [00:00:28,000 - 00:00:33,000] In fact, the theory was put forward at a
+- [00:00:33,000 - 00:00:38,000] time when it really wasn't even known that for sure,
+- [00:00:38,000 - 00:00:41,000] it was suspected, but it wasn't known for
+- [00:00:41,000 - 00:00:44,000] sure that protons and neutrons, mesons and so forth,
+- [00:00:44,000 - 00:00:47,000] had a quark content to them.
+- [00:00:47,000 - 00:00:49,500] It was suspected that a
+- [00:00:49,500 - 00:00:52,000] meson was a pair of quarks.
+- [00:00:52,000 - 00:00:56,000] The idea of gluons did not yet exist.
+- [00:00:56,000 - 00:00:57,000] The idea of gluons...
+- [00:00:57,000 - 00:00:58,000] Well, and...
+- [00:00:58,000 - 00:01:01,000] Well, in fact, it actually did.
+- [00:01:01,000 - 00:01:03,000] But nobody paid too much attention to it.
+- [00:01:03,000 - 00:01:06,000] Nembou had postulated something like it.
+- [00:01:06,000 - 00:01:11,500] But gluons were not part of the standard discussion
+- [00:01:11,500 - 00:01:17,000] of hadrons in, let's say, around 1969, 1968, 1970.
+- [00:01:17,000 - 00:01:21,500] What was part of standard
+- [00:01:21,500 - 00:01:26,000] hadron physics was an interesting fact
+- [00:01:26,000 - 00:01:27,000] that the number of particles...
+- [00:01:27,000 - 00:01:31,000] The number of particle states was large.
+- [00:01:31,000 - 00:01:36,000] There was the proton and the neutron, of course.
+- [00:01:36,000 - 00:01:37,500] I'm not interested in the
+- [00:01:37,500 - 00:01:39,000] difference between proton and neutron.
+- [00:01:39,000 - 00:01:42,000] Just think of them as one thing, the nucleon.
+- [00:01:42,000 - 00:01:44,000] And then there was another particle which
+- [00:01:44,000 - 00:01:46,000] was very similar to the proton and neutron,
+- [00:01:46,000 - 00:01:48,000] had a little more spin
+- [00:01:48,000 - 00:01:50,000] and a little bit heavier mass.
+- [00:01:50,000 - 00:01:53,000] And then there was another one above that with a
+- [00:01:53,000 - 00:01:56,000] little bit heavier mass and a little bit larger spin.
+- [00:01:56,000 - 00:01:58,000] People drew pictures, diagrams.
+- [00:01:58,000 - 00:02:00,000] They were called Choufrouchi plots.
+- [00:02:00,000 - 00:02:01,000] Plots, not plots.
+- [00:02:01,000 - 00:02:04,000] Plots, plots, plots.
+- [00:02:04,000 - 00:02:08,000] And they were diagrams which indicated the
+- [00:02:08,000 - 00:02:12,000] spectrum of objects like a proton, for example.
+- [00:02:12,000 - 00:02:16,000] And they plotted horizontally here...
+- [00:02:16,000 - 00:02:17,000] Let's see.
+- [00:02:17,000 - 00:02:20,500] They plotted vertically angular momentum and
+- [00:02:20,500 - 00:02:24,000] horizontally the square of the mass.
+- [00:02:24,000 - 00:02:26,500] Who decided to put the square of
+- [00:02:26,500 - 00:02:29,000] the mass there instead of the mass?
+- [00:02:29,000 - 00:02:30,000] Nobody.
+- [00:02:30,000 - 00:02:32,000] The diagrams had a nicer look
+- [00:02:32,000 - 00:02:34,000] to them if you plotted mass squared.
+- [00:02:34,000 - 00:02:37,000] And what was discovered experimentally...
+- [00:02:37,000 - 00:02:41,000] This is an experimental fact...
+- [00:02:41,000 - 00:02:44,000] I'm getting my P's and my F's screwed up today.
+- [00:02:44,000 - 00:02:47,000] An experimental fact that the spectrum of particles...
+- [00:02:47,000 - 00:02:50,000] Okay, let's start with the proton.
+- [00:02:50,000 - 00:02:51,000] That has half a unit of
+- [00:02:51,000 - 00:02:52,000] spin and a mass of one.
+- [00:02:52,000 - 00:02:53,000] Okay.
+- [00:02:53,000 - 00:02:56,500] And a mass of one in certain units, namely the
+- [00:02:56,500 - 00:03:00,000] unit in which the mass of the proton is one.
+- [00:03:00,000 - 00:03:05,000] That's approximately one GeV.
+- [00:03:05,000 - 00:03:08,000] Incidentally, at that time, the GeV didn't exist.
+- [00:03:08,000 - 00:03:11,000] It was the BeV for billion.
+- [00:03:11,000 - 00:03:12,000] Now it's giga.
+- [00:03:12,000 - 00:03:13,000] Okay.
+- [00:03:13,000 - 00:03:18,000] And so the proton and the neutron were over here.
+- [00:03:18,000 - 00:03:20,500] A mass of one, mass squared of
+- [00:03:20,500 - 00:03:23,000] one, and an angular momentum of a half.
+- [00:03:23,000 - 00:03:25,000] Then there's another particle
+- [00:03:25,000 - 00:03:27,000] with angular momentum three halves.
+- [00:03:27,000 - 00:03:29,500] These were fermions, and so their
+- [00:03:29,500 - 00:03:32,000] angular momentum was quantized in half integers.
+- [00:03:32,000 - 00:03:33,500] And so there was another one up
+- [00:03:33,500 - 00:03:35,000] here with a little bit bigger mass.
+- [00:03:35,000 - 00:03:38,000] Another one, another one, and another one.
+- [00:03:38,000 - 00:03:41,500] And rather remarkably, these particles
+- [00:03:41,500 - 00:03:45,000] all formed a straight line.
+- [00:03:45,000 - 00:03:51,000] A straight line in the plot of L versus M.
+- [00:03:51,000 - 00:03:53,500] Now I should tell you, when
+- [00:03:53,500 - 00:03:56,000] Chu and Frouchi first put this forward,
+- [00:03:56,000 - 00:03:59,000] the logic of drawing a straight line,
+- [00:03:59,000 - 00:04:02,000] there were only two points on this plot.
+- [00:04:02,000 - 00:04:04,500] And they thought it was a theorem that through
+- [00:04:04,500 - 00:04:07,000] any two points, you could draw a straight line.
+- [00:04:07,000 - 00:04:09,500] Well, it is a theorem, but
+- [00:04:09,500 - 00:04:12,000] these guys were not the smartest.
+- [00:04:12,000 - 00:04:15,000] Well, they were pretty smart, but they...
+- [00:04:15,000 - 00:04:18,000] And so they said, oh, there's two points.
+- [00:04:18,000 - 00:04:20,000] Let's draw a straight line through them.
+- [00:04:21,000 - 00:04:24,500] And miraculously, as experiment went on, the
+- [00:04:24,500 - 00:04:28,000] additional particles all landed on the same line.
+- [00:04:28,000 - 00:04:30,000] In M squared.
+- [00:04:30,000 - 00:04:33,000] In M squared, yes, they actually said in M squared.
+- [00:04:33,000 - 00:04:35,500] They plotted it as a function of M squared and
+- [00:04:35,500 - 00:04:38,000] L, and said, two points, let's draw a straight line.
+- [00:04:38,000 - 00:04:40,000] And that worked out just fine.
+- [00:04:40,000 - 00:04:43,500] But I mean, that explains why M squared is the axis
+- [00:04:43,500 - 00:04:47,000] there, because they're hypothesizing L is proportional to M squared somehow.
+- [00:04:47,000 - 00:04:49,000] They were.
+- [00:04:49,000 - 00:04:51,000] Why did they postulate that?
+- [00:04:51,000 - 00:04:53,000] Because L is proportional to M.
+- [00:04:53,000 - 00:04:55,000] They were lucky.
+- [00:04:55,000 - 00:04:58,000] They were lucky, or else they had some deep...
+- [00:04:58,000 - 00:05:02,000] No, it wasn't entirely luck, and it wasn't
+- [00:05:02,000 - 00:05:06,000] entirely, and it wasn't a stupid guess either.
+- [00:05:06,000 - 00:05:09,000] There were some interesting reasons for it.
+- [00:05:09,000 - 00:05:13,000] But the same pattern held true for all hadrons, or
+- [00:05:13,000 - 00:05:17,000] at least for all hadrons that have been studied in detail.
+- [00:05:17,000 - 00:05:19,000] For example, the pi meson.
+- [00:05:19,000 - 00:05:23,000] The pi meson also exists on a trajectory.
+- [00:05:23,000 - 00:05:27,000] These are known as Regge trajectories,
+- [00:05:27,000 - 00:05:31,000] R-E-G-G-E, for the Italian physicist Tullio Regge.
+- [00:05:31,000 - 00:05:34,000] They're called Regge trajectories.
+- [00:05:34,000 - 00:05:38,500] And if you plotted the meson spectrum, the meson
+- [00:05:38,500 - 00:05:43,000] spectrum, mesons are bosons, so the angular momenta were integers.
+- [00:05:43,000 - 00:05:48,000] For example, the pi meson has almost zero mass.
+- [00:05:48,000 - 00:05:52,000] Its mass squared is even smaller than its mass.
+- [00:05:52,000 - 00:05:53,000] It's true.
+- [00:05:53,000 - 00:05:55,000] In units of a GeV.
+- [00:05:55,000 - 00:05:57,500] Alright, so the pi meson was
+- [00:05:57,500 - 00:06:00,000] almost massless with almost zero angular momentum.
+- [00:06:00,000 - 00:06:02,500] And then there's the next one
+- [00:06:02,500 - 00:06:05,000] up, I forget what it's called.
+- [00:06:05,000 - 00:06:07,000] I don't remember what the next one is called.
+- [00:06:07,000 - 00:06:10,000] I used to know, but I don't remember anymore.
+- [00:06:10,000 - 00:06:14,000] The next one up, and the next one
+- [00:06:14,000 - 00:06:18,000] up, and five, six, seven particles along a trajectory.
+- [00:06:18,000 - 00:06:20,000] Like that.
+- [00:06:20,000 - 00:06:23,500] The rho meson, which was another
+- [00:06:23,500 - 00:06:27,000] meson, which starts with angular momentum one.
+- [00:06:27,000 - 00:06:29,000] Also same pattern.
+- [00:06:29,000 - 00:06:31,500] And what's more, all of these
+- [00:06:31,500 - 00:06:34,000] trajectories were parallel to each other.
+- [00:06:34,000 - 00:06:37,500] They were parallel to each other, which said, whatever this
+- [00:06:37,500 - 00:06:41,000] M squared thing is, it takes exactly the same energy.
+- [00:06:41,000 - 00:06:44,000] Well, not exactly, but approximately the
+- [00:06:44,000 - 00:06:47,000] same energy to increase the M squared
+- [00:06:47,000 - 00:06:50,000] by when you, to increase M
+- [00:06:50,000 - 00:06:53,000] squared when you increase the angular momentum.
+- [00:06:53,000 - 00:06:55,000] In other words, the spectrum was quantized.
+- [00:06:55,000 - 00:06:56,000] Of course it was quantized.
+- [00:06:56,000 - 00:06:58,000] These were particles, and this is quantum mechanics.
+- [00:06:58,000 - 00:07:02,500] The spectrum was quantized, but in each case,
+- [00:07:02,500 - 00:07:07,000] the same relationship between L and M squared
+- [00:07:07,000 - 00:07:09,500] and the same quantum jump in M
+- [00:07:09,500 - 00:07:12,000] squared when you increased L by one unit.
+- [00:07:12,000 - 00:07:14,000] One unit now means in
+- [00:07:14,000 - 00:07:16,000] units of Planck's constant, of course.
+- [00:07:16,000 - 00:07:17,000] Okay.
+- [00:07:17,000 - 00:07:21,500] So there's something going on that was giving rise to
+- [00:07:21,500 - 00:07:26,000] large numbers of particles of higher and higher angular momentum.
+- [00:07:26,000 - 00:07:30,000] Higher angular momentum is not that uncommon.
+- [00:07:30,000 - 00:07:32,000] You take a basketball.
+- [00:07:32,000 - 00:07:34,000] You leave it at rest.
+- [00:07:34,000 - 00:07:37,000] That basketball has a certain energy and therefore
+- [00:07:37,000 - 00:07:40,000] a certain mass, and you could plot it someplace.
+- [00:07:40,000 - 00:07:42,000] And now you spin the basketball.
+- [00:07:42,000 - 00:07:44,000] Give it one unit of Planck's angular momentum.
+- [00:07:44,000 - 00:07:46,000] That's not easy to do, incidentally.
+- [00:07:46,000 - 00:07:48,000] But when it has some
+- [00:07:48,000 - 00:07:50,000] angular momentum, it will be rotating.
+- [00:07:50,000 - 00:07:52,000] It will have some rotational energy.
+- [00:07:52,000 - 00:07:55,500] So if you increase its angular momentum by one unit,
+- [00:07:55,500 - 00:07:59,000] you will have to increase its energy by a little bit.
+- [00:07:59,000 - 00:08:02,000] Tiny, tiny bit for a basketball.
+- [00:08:02,000 - 00:08:04,000] And you can keep increasing
+- [00:08:04,000 - 00:08:06,000] the angular momentum of the basketball.
+- [00:08:06,000 - 00:08:09,000] As you do so, the energy will increase.
+- [00:08:09,000 - 00:08:12,000] In fact, it will not look like a straight line.
+- [00:08:12,000 - 00:08:15,000] It will look like a curve.
+- [00:08:16,000 - 00:08:18,000] And it will end somewheres.
+- [00:08:18,000 - 00:08:20,000] Why does the curve end?
+- [00:08:20,000 - 00:08:25,000] The curve ends simply because at some angular velocity, the centrifugal
+- [00:08:25,000 - 00:08:30,000] forces are so large that the basketball will just be torn apart.
+- [00:08:30,000 - 00:08:33,500] So it ends someplace at some high
+- [00:08:33,500 - 00:08:37,000] angular momentum, which represents the strength of materials.
+- [00:08:37,000 - 00:08:42,000] How strong is whatever basketballs are made out of.
+- [00:08:42,000 - 00:08:45,000] So trajectories like that were not unusual.
+- [00:08:45,000 - 00:08:47,000] You can plot them for atoms.
+- [00:08:47,000 - 00:08:50,000] Atoms also have the property that as you increase
+- [00:08:50,000 - 00:08:53,000] their angular momentum, you increase their energy, their mass.
+- [00:08:53,000 - 00:08:56,000] Energy and mass being the same thing.
+- [00:08:56,000 - 00:09:00,000] But again, for an atom, there's only so much
+- [00:09:00,000 - 00:09:04,000] mass you can give it before you ionize the atom.
+- [00:09:04,000 - 00:09:07,500] So what was unusual, particularly unusual, and again,
+- [00:09:07,500 - 00:09:11,000] incidentally, factually, I'm not going to go into that.
+- [00:09:11,000 - 00:09:12,500] But what was unusual, particularly unusual, and again,
+- [00:09:12,500 - 00:09:14,000] incidentally, factually, I'm not going to go into that.
+- [00:09:14,000 - 00:09:14,500] But what was unusual, particularly unusual, and again,
+- [00:09:14,500 - 00:09:15,000] incidentally, factually, I'm not going to go into that.
+- [00:09:15,000 - 00:09:16,500] And again, incidentally, for atoms,
+- [00:09:16,500 - 00:09:18,000] they would not be straight lines.
+- [00:09:18,000 - 00:09:21,000] But what was unusual here was the simplicity
+- [00:09:21,000 - 00:09:24,000] of the formula or the simplicity of the observation.
+- [00:09:24,000 - 00:09:25,000] Rather straight lines.
+- [00:09:25,000 - 00:09:28,000] I mean they were all
+- [00:09:28,000 - 00:09:31,000] straight and parallel to each other.
+- [00:09:31,000 - 00:09:32,000] And...
+- [00:09:32,000 - 00:09:36,000] When you say parallel, I mean, how do you mean?
+- [00:09:36,000 - 00:09:39,000] I mean that if you were to plot the
+- [00:09:39,000 - 00:09:42,000] meson, or the baryon, or the proton, or the neutron,
+- [00:09:42,000 - 00:09:43,000] I mean, how do you mean...
+- [00:09:43,000 - 00:09:46,000] the limazon or the romezon, its
+- [00:09:46,000 - 00:09:49,000] excited states would form the same line.
+- [00:09:49,000 - 00:09:52,080] In other words, you take a set of
+- [00:09:52,080 - 00:09:55,160] particles, a family of particles, same slope, same slope,
+- [00:09:55,160 - 00:09:59,000] and it was called the universal regeslope.
+- [00:09:59,000 - 00:10:03,620] Same for bosons and fermions, same
+- [00:10:03,620 - 00:10:08,240] for different families of bosons and fermions.
+- [00:10:08,240 - 00:10:11,220] Now this is strictly for those objects which
+- [00:10:11,220 - 00:10:14,200] are hadrons, those things made up out of quarks
+- [00:10:14,200 - 00:10:18,420] and gluons, which we now today recognize
+- [00:10:18,420 - 00:10:22,640] as being made up of quarks and gluons.
+- [00:10:22,640 - 00:10:24,640] That was one observation.
+- [00:10:24,640 - 00:10:27,060] The implication of this observation was fairly
+- [00:10:27,060 - 00:10:29,480] clear, even though it was misinterpreted at
+- [00:10:29,480 - 00:10:32,240] the time in many quarters.
+- [00:10:32,240 - 00:10:34,260] It was fairly clear.
+- [00:10:34,260 - 00:10:37,220] It said that hadrons were composite.
+- [00:10:37,220 - 00:10:38,220] That you could spin them up.
+- [00:10:38,220 - 00:10:41,200] This is not something you can do with an electron.
+- [00:10:41,200 - 00:10:44,330] There is no excited state of an electron
+- [00:10:44,330 - 00:10:47,460] with higher angular momentum, at least not within
+- [00:10:47,460 - 00:10:50,600] current experimental bounds.
+- [00:10:50,600 - 00:10:53,860] So electrons are like points.
+- [00:10:53,860 - 00:10:56,720] You can't spin a point.
+- [00:10:56,720 - 00:10:58,860] Spinning a point doesn't mean anything.
+- [00:10:58,860 - 00:11:02,880] Turning a point, you can spin a lump.
+- [00:11:02,880 - 00:11:08,180] So somehow these objects were not simple point particles.
+- [00:11:08,180 - 00:11:10,620] That was the message that should have been,
+- [00:11:10,620 - 00:11:13,060] and in many quarters was taken from this.
+- [00:11:13,060 - 00:11:17,340] And in fact that they had a stretchability
+- [00:11:17,340 - 00:11:21,620] that from this picture you could deduce if
+- [00:11:21,620 - 00:11:24,929] you wanted, and we will, we will, you could
+- [00:11:24,929 - 00:11:28,239] deduce the fact that they deform as they spin.
+- [00:11:28,239 - 00:11:31,020] You wouldn't, it's not obvious from here, but you can.
+- [00:11:31,020 - 00:11:33,160] All right, but there was something else.
+- [00:11:33,160 - 00:11:35,129] There was another observation, which
+- [00:11:35,129 - 00:11:37,099] was a very bizarre observation.
+- [00:11:37,099 - 00:11:38,060] Let's see.
+- [00:11:38,060 - 00:11:40,699] Let me describe it to
+- [00:11:40,699 - 00:11:43,339] you in terms of meson-meson scattering.
+- [00:11:43,339 - 00:11:46,419] Let's take meson-meson, and for
+- [00:11:46,419 - 00:11:49,500] particular let's take pi-meson, pi-meson scattering.
+- [00:11:49,500 - 00:11:51,280] Here's a pion coming in.
+- [00:11:51,280 - 00:11:54,099] A pi-meson, let's call it pi.
+- [00:11:54,099 - 00:11:55,529] It doesn't matter whether
+- [00:11:55,529 - 00:11:56,959] it's pi-plus, pi-minus, doesn't matter.
+- [00:11:56,959 - 00:12:01,140] And it scatters off another pi-meson.
+- [00:12:01,140 - 00:12:04,320] There is a particle called the romezon,
+- [00:12:04,320 - 00:12:07,500] which, while it's not a composite, it's a
+- [00:12:08,060 - 00:12:10,560] composite of two pi-mesons.
+- [00:12:10,560 - 00:12:13,439] Two pi-mesons can come together at a vertex
+- [00:12:13,439 - 00:12:16,319] in a Feynman diagram and make a romezon.
+- [00:12:16,319 - 00:12:18,380] Let's make the romezon like that.
+- [00:12:18,380 - 00:12:19,869] We're going to talk, we may or
+- [00:12:19,869 - 00:12:21,359] may not talk more about these mesons.
+- [00:12:21,359 - 00:12:23,849] It's not important, the idea is important,
+- [00:12:23,849 - 00:12:26,339] but the particular names are not important.
+- [00:12:26,339 - 00:12:27,439] Romezon.
+- [00:12:27,439 - 00:12:32,249] And then that pi-meson could, then that romezon
+- [00:12:32,249 - 00:12:37,060] could materialize as a pair of pi-mesons again,
+- [00:12:37,060 - 00:12:37,939] this being a Feynman diagram.
+- [00:12:37,940 - 00:12:40,740] A conventional Feynman diagram.
+- [00:12:40,740 - 00:12:44,510] And it would govern the
+- [00:12:44,510 - 00:12:48,280] properties of pion-pion scattering probabilities.
+- [00:12:48,280 - 00:12:49,500] That was the first thing.
+- [00:12:49,500 - 00:12:54,360] Now, these are all pions here.
+- [00:12:54,360 - 00:12:57,410] Any quantum field theorist would immediately tell
+- [00:12:57,410 - 00:13:00,460] you, if you have this diagram here, where
+- [00:13:00,460 - 00:13:02,980] the two pions come in this way and make
+- [00:13:02,980 - 00:13:05,500] a romezon and then go off as two pions, there
+- [00:13:05,500 - 00:13:06,940] will be another diagram.
+- [00:13:06,940 - 00:13:09,700] Which looks like this.
+- [00:13:09,700 - 00:13:15,300] It's just the same diagram turned on its
+- [00:13:15,300 - 00:13:20,900] side, where a romezon is exchanged between two pi-mesons.
+- [00:13:20,900 - 00:13:24,560] In this case, a romezon jumps from here
+- [00:13:24,560 - 00:13:28,220] to here, and this, without the pions ever annihilating.
+- [00:13:28,220 - 00:13:30,150] But this is just the same diagram turned on
+- [00:13:30,150 - 00:13:32,080] its side, and if one exists, the other has
+- [00:13:32,080 - 00:13:33,460] to exist.
+- [00:13:33,460 - 00:13:36,740] That's a consequence of principles of quantum field theory.
+- [00:13:36,940 - 00:13:41,940] So, that's something that everybody believed.
+- [00:13:41,940 - 00:13:46,660] But then, once it was recognized that this
+- [00:13:46,660 - 00:13:51,380] romezon was not a unique creature, but came
+- [00:13:51,380 - 00:13:55,910] along with this whole family, this
+- [00:13:55,910 - 00:14:00,440] whole regitrajectory of excited states, it became
+- [00:14:00,440 - 00:14:03,070] clear that there was no reason
+- [00:14:03,070 - 00:14:05,700] to only have a romezon in here.
+- [00:14:05,700 - 00:14:09,200] So, you could add together all the various,
+- [00:14:09,200 - 00:14:12,700] you could add, pi-mesons come in, form not
+- [00:14:12,700 - 00:14:14,950] the romezon, but the next excited state of
+- [00:14:14,950 - 00:14:17,200] the romezon, or the next excited state of
+- [00:14:17,200 - 00:14:18,200] the romezon.
+- [00:14:18,200 - 00:14:21,600] And so, actually, when you draw this diagram,
+- [00:14:21,600 - 00:14:25,000] you're really committed to adding up the contribution
+- [00:14:25,000 - 00:14:29,700] of all the mesons along here.
+- [00:14:29,700 - 00:14:31,080] Likewise, here.
+- [00:14:31,080 - 00:14:32,890] If you can exchange a romezon, you
+- [00:14:32,890 - 00:14:34,700] can also exchange all the other mesons.
+- [00:14:34,700 - 00:14:35,700] So, you can add up all the mesons.
+- [00:14:35,700 - 00:14:37,480] What is the next excited state?
+- [00:14:37,480 - 00:14:41,300] Well, there was something very, very
+- [00:14:41,300 - 00:14:45,120] suspicious, very, very peculiar, when people numerically
+- [00:14:45,120 - 00:14:46,940] went to do this.
+- [00:14:46,940 - 00:14:50,150] They actually added up from known experimental
+- [00:14:50,150 - 00:14:53,360] data the contributions of the romezon, the
+- [00:14:53,360 - 00:14:55,850] rho prime meson, the rho double prime
+- [00:14:55,850 - 00:14:58,340] meson, and so forth and so on.
+- [00:14:58,340 - 00:15:00,370] They did that and they did the
+- [00:15:00,370 - 00:15:02,400] same thing for the exchange of the romezon.
+- [00:15:02,400 - 00:15:05,100] And they found something rather remarkable.
+- [00:15:05,100 - 00:15:08,420] they found that to some approximation
+- [00:15:08,420 - 00:15:12,260] the sum over all the Romezons going this way
+- [00:15:12,260 - 00:15:15,660] gave rise to about the same thing
+- [00:15:15,660 - 00:15:18,080] as the sum over all the Romezons
+- [00:15:18,080 - 00:15:20,500] and its partners going in the opposite there
+- [00:15:20,500 - 00:15:24,320] and the other channel it was called
+- [00:15:24,320 - 00:15:27,860] in other words it appeared to be over counting
+- [00:15:27,860 - 00:15:30,360] all you needed to represent the data and
+- [00:15:30,360 - 00:15:32,860] all that you needed to represent the physics
+- [00:15:32,860 - 00:15:35,080] of pi-pi scattering
+- [00:15:35,080 - 00:15:38,320] was summing over rho, rho prime, rho double prime
+- [00:15:38,320 - 00:15:40,700] in this annihilation process
+- [00:15:40,700 - 00:15:43,080] annihilation and recreation process
+- [00:15:43,080 - 00:15:46,220] and in fact you didn't need to add this in
+- [00:15:46,220 - 00:15:47,320] because
+- [00:15:47,320 - 00:15:52,060] this already seemed to contain it numerically numerically
+- [00:15:52,060 - 00:15:53,900] on the other hand it was also
+- [00:15:53,900 - 00:15:55,740] true that you could ignore this altogether
+- [00:15:55,740 - 00:15:57,680] and add all this up
+- [00:15:57,680 - 00:15:59,800] and again get the right answer get
+- [00:15:59,800 - 00:16:01,920] something which looked pretty much like experimental
+- [00:16:01,920 - 00:16:03,080] data
+- [00:16:03,080 - 00:16:05,080] that was very peculiar any quantum field theory
+- [00:16:05,080 - 00:16:06,390] would look at this and
+- [00:16:06,390 - 00:16:07,700] say complete how rubbish you cave
+- [00:16:07,700 - 00:16:08,570] you know if you have
+- [00:16:08,570 - 00:16:09,440] this you have to add that
+- [00:16:09,440 - 00:16:11,480] you have to add it
+- [00:16:11,480 - 00:16:13,590] you don't get to say it's this or
+- [00:16:13,590 - 00:16:15,700] this you get to say is this and this
+- [00:16:16,240 - 00:16:16,920] okay
+- [00:16:16,920 - 00:16:21,000] But, peculiarly, when you added up all these contributions
+- [00:16:21,000 - 00:16:23,900] it simply gave you for free
+- [00:16:23,900 - 00:16:27,020] the effects of another diagram
+- [00:16:27,020 - 00:16:27,720] here
+- [00:16:28,240 - 00:16:32,600] for that reason I another people began to draw diagrams
+- [00:16:32,960 - 00:16:33,900] which looked not so
+- [00:16:33,900 - 00:16:34,840] much like paletteattedMUSICI food unexpected
+- [00:16:34,840 - 00:16:39,080] Feynman diagrams which looked more like this.
+- [00:16:39,080 - 00:16:41,010] We didn't know what we were doing, we
+- [00:16:41,010 - 00:16:42,940] were just saying, look, something's going on here.
+- [00:16:42,940 - 00:16:44,050] First of all, we had
+- [00:16:44,050 - 00:16:45,160] the idea that they were quarks.
+- [00:16:45,160 - 00:16:47,320] Quarks were not a new idea.
+- [00:16:47,320 - 00:16:50,010] And we said, what must be going on is
+- [00:16:50,010 - 00:16:52,700] there must be a picture which looks something like this.
+- [00:16:52,700 - 00:16:56,630] Replacing the Feynman diagram, this would be
+- [00:16:56,630 - 00:17:00,560] a quark, this would be an anti-quark,
+- [00:17:00,560 - 00:17:03,849] this would be a quark going this way,
+- [00:17:03,849 - 00:17:07,139] an anti-quark going this way, and likewise over here.
+- [00:17:07,139 - 00:17:08,940] We drew diagrams like that.
+- [00:17:08,940 - 00:17:12,139] Now, it took some time for us to
+- [00:17:12,139 - 00:17:15,339] think about filling in what goes on in here.
+- [00:17:15,339 - 00:17:16,879] We just drew pictures like this,
+- [00:17:16,879 - 00:17:18,419] and we said, look at this.
+- [00:17:18,419 - 00:17:22,999] If you think about somehow what's going on has a
+- [00:17:22,999 - 00:17:27,579] topology, let's call it a topology, which looks like this,
+- [00:17:27,579 - 00:17:29,800] then look, if you cut it this way,
+- [00:17:29,800 - 00:17:30,560] if you imagine something like this,
+- [00:17:30,560 - 00:17:32,560] slicing it in an instant of
+- [00:17:32,560 - 00:17:34,560] time, time is running upward, of course,
+- [00:17:34,560 - 00:17:38,469] in all pictures, Feynman diagrams,
+- [00:17:38,469 - 00:17:42,379] time we're allowing to run upward.
+- [00:17:42,379 - 00:17:46,349] If you slice this right through the
+- [00:17:46,349 - 00:17:50,320] middle, then you see something that looks like
+- [00:17:50,320 - 00:17:53,590] a Feynman diagram in which two particles
+- [00:17:53,590 - 00:17:56,860] come together and join and make another particle.
+- [00:17:56,860 - 00:17:59,800] If we think of particles as pairs of quarks,
+- [00:17:59,800 - 00:18:00,560] then
+- [00:18:00,560 - 00:18:08,560] this figure here can represent a picture like this.
+- [00:18:08,560 - 00:18:11,479] On the other hand, if we take
+- [00:18:11,479 - 00:18:14,399] that same picture and slice it this way,
+- [00:18:14,399 - 00:18:17,669] it looks like a picture
+- [00:18:17,669 - 00:18:20,940] in which something is jumping across.
+- [00:18:20,940 - 00:18:25,669] Slice it the other way, it looks like these two particles
+- [00:18:25,669 - 00:18:30,399] produced a thing which jumped from this side to this side.
+- [00:18:30,560 - 00:18:38,560] So this was kind of the origin of pictures.
+- [00:18:38,560 - 00:18:41,060] One more ingredient was added.
+- [00:18:41,060 - 00:18:44,560] It was just added for fun.
+- [00:18:44,560 - 00:18:47,760] Just a curious question.
+- [00:18:47,760 - 00:18:49,410] If there are these quarks,
+- [00:18:49,410 - 00:18:51,060] what's holding those quarks together?
+- [00:18:51,060 - 00:18:53,560] Well, maybe it's something in here.
+- [00:18:53,560 - 00:18:56,560] These are space-time diagrams, of course.
+- [00:18:56,560 - 00:18:58,560] Maybe something is bridging between the quarks.
+- [00:18:58,560 - 00:18:59,560] Maybe something is bridging between the quarks.
+- [00:18:59,560 - 00:19:00,560] Maybe something is bridging between the quarks.
+- [00:19:00,560 - 00:19:05,560] And if so,
+- [00:19:05,560 - 00:19:09,060] then when you slice through these diagrams,
+- [00:19:09,060 - 00:19:12,310] then what you would see is
+- [00:19:12,310 - 00:19:15,560] two quarks with something bridging between them.
+- [00:19:15,560 - 00:19:17,560] And that something, of course, would
+- [00:19:17,560 - 00:19:19,560] have the structure of something one-dimensional
+- [00:19:19,560 - 00:19:22,560] connecting a quark and an anti-quark.
+- [00:19:22,560 - 00:19:26,560] A string and a pair of quarks.
+- [00:19:26,560 - 00:19:29,560] If you cut it the other way,
+- [00:19:29,560 - 00:19:32,060] that same two-dimensional sheet here
+- [00:19:32,060 - 00:19:34,560] could be sliced into a picture
+- [00:19:34,560 - 00:19:38,560] where a string was exchanged from one side to another.
+- [00:19:38,560 - 00:19:41,560] This was the very crude origins
+- [00:19:41,560 - 00:19:44,560] of the idea of string theory.
+- [00:19:44,560 - 00:19:46,560] In fact, it isn't exactly where
+- [00:19:46,560 - 00:19:48,560] it came from, but it could have.
+- [00:19:48,560 - 00:19:51,560] It did, to some extent.
+- [00:19:51,560 - 00:19:54,560] Different people thought of it different ways.
+- [00:19:54,560 - 00:19:57,560] So...
+- [00:19:59,560 - 00:20:02,560] What's more,
+- [00:20:02,560 - 00:20:03,560] what's more,
+- [00:20:03,560 - 00:20:08,560] once a hadron is a string
+- [00:20:08,560 - 00:20:11,560] with two quarks connected to it,
+- [00:20:11,560 - 00:20:12,560] you can spin it.
+- [00:20:12,560 - 00:20:14,560] Something you can't do to an electron.
+- [00:20:14,560 - 00:20:16,560] You can spin it.
+- [00:20:16,560 - 00:20:19,560] You can try to calculate,
+- [00:20:19,560 - 00:20:22,060] with some assumptions, about the nature
+- [00:20:22,060 - 00:20:24,560] of the material forming the string,
+- [00:20:24,560 - 00:20:28,560] its elasticity, its various properties,
+- [00:20:28,560 - 00:20:32,560] you can start asking how the energy of it,
+- [00:20:32,560 - 00:20:35,560] what kind of energy is there, incidentally,
+- [00:20:35,560 - 00:20:37,560] first of all is kinetic energy,
+- [00:20:37,560 - 00:20:39,560] and second of all is stretching energy.
+- [00:20:39,560 - 00:20:42,060] So with some kind of assumptions
+- [00:20:42,060 - 00:20:44,560] about the nature of these strings,
+- [00:20:44,560 - 00:20:46,560] or this material in here,
+- [00:20:46,560 - 00:20:49,060] you can start asking questions
+- [00:20:49,060 - 00:20:51,560] about how the energy increases
+- [00:20:51,560 - 00:20:54,560] as a function of the angular momentum.
+- [00:20:57,560 - 00:20:59,560] Surprisingly, with a relatively simple
+- [00:20:59,560 - 00:21:01,560] assumption that we're going to do,
+- [00:21:01,560 - 00:21:03,560] and we may get to it today,
+- [00:21:03,560 - 00:21:05,560] I hope we get to it today,
+- [00:21:05,560 - 00:21:09,060] we'll see that these pictures are
+- [00:21:09,060 - 00:21:12,560] not as arbitrary as they might seem.
+- [00:21:12,560 - 00:21:14,560] L versus m squared, or linear
+- [00:21:14,560 - 00:21:16,560] function of L versus m squared,
+- [00:21:16,560 - 00:21:18,560] is exactly what you need.
+- [00:21:18,560 - 00:21:19,560] Now, I...
+- [00:21:19,560 - 00:21:20,560] Yeah?
+- [00:21:20,560 - 00:21:22,060] Why did you suggest that
+- [00:21:22,060 - 00:21:23,560] it was something like a string,
+- [00:21:23,560 - 00:21:26,560] something new, rather than a normal particle that changed
+- [00:21:26,560 - 00:21:28,560] between the two quarks?
+- [00:21:28,560 - 00:21:30,560] Well, this is not a particle exchange.
+- [00:21:30,560 - 00:21:32,560] This is something that's sitting
+- [00:21:32,560 - 00:21:34,560] at all the points of it
+- [00:21:34,560 - 00:21:37,560] between the quarks.
+- [00:21:37,560 - 00:21:39,560] This is...
+- [00:21:39,560 - 00:21:42,560] If you were to slice it at an instant,
+- [00:21:42,560 - 00:21:44,060] in other words, take a
+- [00:21:44,060 - 00:21:45,560] look at it at an instant.
+- [00:21:45,560 - 00:21:46,560] Here it is at an instant.
+- [00:21:46,560 - 00:21:48,560] It consists of a quark, an anti-quark,
+- [00:21:48,560 - 00:21:50,560] and a whole bunch of stuff in between.
+- [00:21:50,560 - 00:21:52,560] Now, that bunch of stuff in between
+- [00:21:52,560 - 00:21:54,560] might have been a collection of
+- [00:21:54,560 - 00:21:56,560] particles that are forming a string,
+- [00:21:56,560 - 00:21:59,560] you know, that are forming a string-like thing.
+- [00:21:59,560 - 00:22:00,560] They might...
+- [00:22:00,560 - 00:22:05,560] No prejudice about whether it was truly continuous
+- [00:22:05,560 - 00:22:08,060] or whether it was just something
+- [00:22:08,060 - 00:22:10,560] which was approximating something continuous in between.
+- [00:22:10,560 - 00:22:12,560] But there was one thing that made you think
+- [00:22:12,560 - 00:22:16,560] there might be something more fundamental about it
+- [00:22:16,560 - 00:22:20,560] than just a shoelace.
+- [00:22:20,560 - 00:22:23,560] And that was that, as far as we could tell,
+- [00:22:23,560 - 00:22:25,560] these trajectories didn't end.
+- [00:22:25,560 - 00:22:27,560] If you take a shoelace and
+- [00:22:27,560 - 00:22:29,560] put a pair of golf balls
+- [00:22:29,560 - 00:22:31,560] at the opposite ends of it and spin it around,
+- [00:22:31,560 - 00:22:35,560] eventually you'll come to the point where it breaks.
+- [00:22:35,560 - 00:22:37,560] And as far as could be told,
+- [00:22:37,560 - 00:22:40,560] these rigid trajectories did not break.
+- [00:22:40,560 - 00:22:42,560] So it seemed maybe that
+- [00:22:42,560 - 00:22:44,560] there was something new going on.
+- [00:22:44,560 - 00:22:45,560] Yeah?
+- [00:22:45,560 - 00:22:50,560] Can the standard model accurately describe pylon scattering?
+- [00:22:50,560 - 00:22:53,560] Uh...
+- [00:22:53,560 - 00:22:54,560] To the extent...
+- [00:22:55,560 - 00:22:58,560] that the standard model gives rise
+- [00:22:58,560 - 00:23:01,560] to a string-like behavior,
+- [00:23:01,560 - 00:23:03,560] it can.
+- [00:23:03,560 - 00:23:06,560] Um...
+- [00:23:06,560 - 00:23:09,060] Yeah, the standard model can describe a
+- [00:23:09,060 - 00:23:11,560] great deal about pylon scattering these days.
+- [00:23:11,560 - 00:23:12,560] Yeah.
+- [00:23:12,560 - 00:23:13,560] Depending on the energy.
+- [00:23:13,560 - 00:23:15,560] At very low energies,
+- [00:23:15,560 - 00:23:17,060] the standard model has a
+- [00:23:17,060 - 00:23:18,560] very good description of pylon scattering.
+- [00:23:18,560 - 00:23:20,560] As the energy goes up,
+- [00:23:20,560 - 00:23:23,560] where you start getting into the issues of these
+- [00:23:23,560 - 00:23:26,560] particles being exchanged back and forth,
+- [00:23:26,560 - 00:23:29,060] the standard model begins to get a
+- [00:23:29,060 - 00:23:31,560] little bit more difficult to deal with,
+- [00:23:31,560 - 00:23:36,560] and a string-like picture becomes more useful.
+- [00:23:36,560 - 00:23:37,560] Yeah.
+- [00:23:37,560 - 00:23:40,560] Did they know that the trajectory did not end?
+- [00:23:40,560 - 00:23:41,560] No, of course not.
+- [00:23:41,560 - 00:23:42,560] No.
+- [00:23:42,560 - 00:23:43,560] No.
+- [00:23:43,560 - 00:23:45,560] No.
+- [00:23:45,560 - 00:23:48,560] But it didn't give any sign of giving out.
+- [00:23:48,560 - 00:23:50,560] Uh...
+- [00:23:50,560 - 00:23:52,560] So what that meant, what it appeared,
+- [00:23:52,560 - 00:23:55,560] is this thing could be stretched more or less indefinitely
+- [00:23:55,560 - 00:23:57,560] without much happening to it.
+- [00:23:57,560 - 00:23:58,560] Uh...
+- [00:23:58,560 - 00:23:59,560] We'll...
+- [00:23:59,560 - 00:24:01,560] We'll come back to this point.
+- [00:24:03,560 - 00:24:05,060] These are something entirely different
+- [00:24:05,060 - 00:24:06,560] from the gluons, which, uh...
+- [00:24:06,560 - 00:24:09,560] Well, in fact, they're not entirely different than gluons.
+- [00:24:09,560 - 00:24:12,560] In some sense, they may be collections of gluons.
+- [00:24:12,560 - 00:24:15,560] In fact, they have to be collections of gluons.
+- [00:24:15,560 - 00:24:17,560] The present understanding of it
+- [00:24:17,560 - 00:24:19,560] today is something like this,
+- [00:24:19,560 - 00:24:20,560] that, um...
+- [00:24:20,560 - 00:24:22,560] that the gluon field is like the metal.
+- [00:24:22,560 - 00:24:25,560] The metal field is like the Maxwell field.
+- [00:24:25,560 - 00:24:26,560] All right?
+- [00:24:26,560 - 00:24:27,560] Uh...
+- [00:24:27,560 - 00:24:28,560] The quarks...
+- [00:24:28,560 - 00:24:29,560] You asked me about bar magnets.
+- [00:24:29,560 - 00:24:30,560] Okay.
+- [00:24:30,560 - 00:24:33,560] So the quarks are like poles of the, uh...
+- [00:24:33,560 - 00:24:38,560] North pole and south pole of a bar magnet.
+- [00:24:38,560 - 00:24:41,560] North pole, south pole.
+- [00:24:41,560 - 00:24:44,560] You can't have monopoles.
+- [00:24:44,560 - 00:24:46,060] The only way you can have
+- [00:24:46,060 - 00:24:47,560] a north pole or a south pole
+- [00:24:47,560 - 00:24:49,060] is to have it as
+- [00:24:49,060 - 00:24:50,560] the end of a bar magnet.
+- [00:24:50,560 - 00:24:51,560] Okay?
+- [00:24:51,560 - 00:24:54,560] Or you could say it a different way.
+- [00:24:54,560 - 00:24:56,560] You can have dipoles.
+- [00:24:56,560 - 00:24:59,560] You could have magnetic fields which look like this.
+- [00:25:02,560 - 00:25:05,560] Here it looks like...
+- [00:25:05,560 - 00:25:09,560] There's a magnetic monopole, lines of flux spreading out.
+- [00:25:09,560 - 00:25:11,060] Here it looks like there
+- [00:25:11,060 - 00:25:12,560] are lines of flux spreading out.
+- [00:25:12,560 - 00:25:14,060] And there might be some
+- [00:25:14,060 - 00:25:15,560] reason why the lines of flux
+- [00:25:15,560 - 00:25:17,560] form a narrow tube in between.
+- [00:25:17,560 - 00:25:20,560] The current understanding of
+- [00:25:20,560 - 00:25:22,560] the connection between
+- [00:25:22,560 - 00:25:26,560] gluons and these strings goes something like this.
+- [00:25:26,560 - 00:25:29,060] Quantum mechanically fields can be
+- [00:25:29,060 - 00:25:31,560] described as either particles or fields.
+- [00:25:31,560 - 00:25:34,560] Let's take the field description.
+- [00:25:34,560 - 00:25:36,560] In the field description,
+- [00:25:36,560 - 00:25:38,560] the gluon field
+- [00:25:38,560 - 00:25:41,560] between two quarks,
+- [00:25:41,560 - 00:25:45,560] a quark and an anti-quark,
+- [00:25:45,560 - 00:25:49,560] would be like the field configuration between
+- [00:25:49,560 - 00:25:54,560] a particle between a charge and an opposite charge.
+- [00:25:54,560 - 00:25:59,560] It would look like this.
+- [00:25:59,560 - 00:26:01,060] That's what the field between a positive
+- [00:26:01,060 - 00:26:02,560] charge and a negative charge looks like.
+- [00:26:02,560 - 00:26:04,560] The energy as you separate them
+- [00:26:04,560 - 00:26:07,560] is the energy stored in the field in between.
+- [00:26:07,560 - 00:26:09,560] Now for ordinary electrodynamics,
+- [00:26:09,560 - 00:26:11,560] those field lines spread out,
+- [00:26:11,560 - 00:26:13,560] and because they spread out,
+- [00:26:13,560 - 00:26:15,560] the field diminishes in between them
+- [00:26:15,560 - 00:26:17,560] as you separate the field,
+- [00:26:17,560 - 00:26:19,560] as you separate the charge lines.
+- [00:26:19,560 - 00:26:22,560] The field lines spread out,
+- [00:26:22,560 - 00:26:24,560] the field diminishes in between,
+- [00:26:24,560 - 00:26:26,560] and that's the usual pattern.
+- [00:26:26,560 - 00:26:29,560] Our understanding today is that the non-linearities,
+- [00:26:29,560 - 00:26:30,560] we've talked about this before,
+- [00:26:30,560 - 00:26:32,560] but I'll just mention it again,
+- [00:26:32,560 - 00:26:34,560] that the non-linearities
+- [00:26:34,560 - 00:26:36,560] in quantum chromodynamics
+- [00:26:36,560 - 00:26:38,560] have the effect of causing these field
+- [00:26:38,560 - 00:26:40,560] lines to attract in a certain way,
+- [00:26:40,560 - 00:26:43,560] and the effect of it is
+- [00:26:43,560 - 00:26:47,560] that the field lines form strings
+- [00:26:47,560 - 00:26:49,560] that look like that.
+- [00:26:49,560 - 00:26:51,560] As you pull these apart,
+- [00:26:51,560 - 00:26:53,560] the string doesn't spread this way,
+- [00:26:53,560 - 00:26:55,560] it just gets longer and longer and longer.
+- [00:26:55,560 - 00:26:57,560] That's our current understanding,
+- [00:26:57,560 - 00:26:59,560] and if you like,
+- [00:26:59,560 - 00:27:02,060] it's permissible to think of the string
+- [00:27:02,060 - 00:27:04,560] as being made up out of gluons.
+- [00:27:04,560 - 00:27:06,560] As you pull it apart,
+- [00:27:06,560 - 00:27:08,560] it's not like a shoelace or a rubber band.
+- [00:27:08,560 - 00:27:10,560] As you stretch a rubber band,
+- [00:27:10,560 - 00:27:13,560] the number of molecules in it doesn't change.
+- [00:27:13,560 - 00:27:15,560] The number of molecules in it,
+- [00:27:15,560 - 00:27:16,560] and they just stretch,
+- [00:27:16,560 - 00:27:17,560] and eventually, because the
+- [00:27:17,560 - 00:27:18,560] number of molecules doesn't change,
+- [00:27:18,560 - 00:27:20,560] eventually they get too far from each other,
+- [00:27:20,560 - 00:27:23,560] and bang, the rubber band breaks.
+- [00:27:23,560 - 00:27:25,560] But imagine a rubber band
+- [00:27:25,560 - 00:27:29,560] in which as you stretched it,
+- [00:27:29,560 - 00:27:33,560] every time there was a gap opening up between atoms,
+- [00:27:33,560 - 00:27:36,560] a new atom was inserted in between.
+- [00:27:36,560 - 00:27:39,060] In that case, you could imagine that
+- [00:27:39,060 - 00:27:41,560] you could stretch this ad infinitum forever
+- [00:27:41,560 - 00:27:44,560] without breaking it,
+- [00:27:44,560 - 00:27:48,560] and that's the nature of the goal.
+- [00:27:48,560 - 00:27:50,060] So, if you stretch the gluon
+- [00:27:50,060 - 00:27:51,560] field between a quark and an anti-quark,
+- [00:27:51,560 - 00:27:53,560] as you stretch it,
+- [00:27:53,560 - 00:27:56,560] the energy of stretching goes
+- [00:27:56,560 - 00:27:59,560] into creating more gluons in between.
+- [00:27:59,560 - 00:28:01,560] And you can just stretch
+- [00:28:01,560 - 00:28:03,560] the hell out of that system,
+- [00:28:03,560 - 00:28:05,560] and it won't break.
+- [00:28:07,560 - 00:28:08,560] Yeah?
+- [00:28:08,560 - 00:28:11,060] Can you extend that analogy to say that
+- [00:28:11,060 - 00:28:13,560] the string that makes up, say, an electron
+- [00:28:13,560 - 00:28:16,560] is somehow composed of gluons as well?
+- [00:28:16,560 - 00:28:17,560] It's composed of...
+- [00:28:17,560 - 00:28:19,560] First of all, we don't know that string...
+- [00:28:19,560 - 00:28:22,560] that electrons really are made of strings.
+- [00:28:22,560 - 00:28:23,560] No.
+- [00:28:23,560 - 00:28:24,560] No.
+- [00:28:24,560 - 00:28:25,560] This...
+- [00:28:25,560 - 00:28:28,060] All of this physics was
+- [00:28:28,060 - 00:28:30,560] taking place on a length scale
+- [00:28:30,560 - 00:28:34,560] of the size of a proton.
+- [00:28:34,560 - 00:28:37,560] This is an enormous length scale
+- [00:28:37,560 - 00:28:40,560] by comparison with the scales of...
+- [00:28:40,560 - 00:28:43,560] quantum gravity, which take place at the Planck length.
+- [00:28:43,560 - 00:28:46,560] It's a more or less, perhaps accidental,
+- [00:28:46,560 - 00:28:50,060] fact that the mathematics of
+- [00:28:50,060 - 00:28:53,560] string theory has described both things.
+- [00:28:53,560 - 00:28:55,560] They're quite different.
+- [00:28:55,560 - 00:28:58,560] They occur at completely different length scales.
+- [00:28:58,560 - 00:29:02,560] But through these considerations,
+- [00:29:02,560 - 00:29:06,060] I, other people, began to work
+- [00:29:06,060 - 00:29:09,560] out the mathematics of interacting strings.
+- [00:29:09,560 - 00:29:12,560] Can you really quantify this?
+- [00:29:12,560 - 00:29:14,560] Can you really make a theory of this?
+- [00:29:14,560 - 00:29:19,560] I think that a theory of interacting strings,
+- [00:29:19,560 - 00:29:22,560] which will give you all of
+- [00:29:22,560 - 00:29:25,560] the physics of the interacting hadrons.
+- [00:29:25,560 - 00:29:28,560] The answer at the time is, it looked promising.
+- [00:29:28,560 - 00:29:30,560] It looked very promising.
+- [00:29:30,560 - 00:29:33,560] In fact, it kept promising and promising and promising,
+- [00:29:33,560 - 00:29:35,560] like string theory today.
+- [00:29:35,560 - 00:29:40,560] Huge promise, but never quite did it right.
+- [00:29:40,560 - 00:29:41,560] Okay?
+- [00:29:41,560 - 00:29:43,560] For reasons that, in hindsight,
+- [00:29:44,560 - 00:29:46,560] are fairly clear.
+- [00:29:46,560 - 00:29:49,560] The precise mathematics that we were using
+- [00:29:49,560 - 00:29:54,560] was not quite the right mathematics for studying hadrons.
+- [00:29:54,560 - 00:29:58,560] It was the right mathematics for studying quantum gravity.
+- [00:29:58,560 - 00:30:00,060] And so we kept getting, as
+- [00:30:00,060 - 00:30:01,560] much as we didn't want it,
+- [00:30:01,560 - 00:30:03,560] we kept getting particles in the
+- [00:30:03,560 - 00:30:05,560] theory with zero mass and spin two.
+- [00:30:05,560 - 00:30:07,560] What is that?
+- [00:30:07,560 - 00:30:08,560] A graviton.
+- [00:30:08,560 - 00:30:10,560] Nobody wanted a graviton.
+- [00:30:10,560 - 00:30:11,560] This was a nuisance.
+- [00:30:11,560 - 00:30:12,560] Go away, graviton.
+- [00:30:12,560 - 00:30:13,560] We couldn't make it go away.
+- [00:30:13,560 - 00:30:16,560] Nothing we could do could make it go away.
+- [00:30:16,560 - 00:30:20,060] And eventually, some smart guy named
+- [00:30:20,060 - 00:30:23,560] John Schwartz and Joel Schurk said,
+- [00:30:23,560 - 00:30:25,560] wait a minute, wait a minute, maybe we're being dumb.
+- [00:30:25,560 - 00:30:28,560] Maybe this is a theory of quantum
+- [00:30:28,560 - 00:30:31,560] gravity and not a theory of hadrons.
+- [00:30:31,560 - 00:30:35,560] Incidentally, string theory of hadrons has been put together
+- [00:30:35,560 - 00:30:36,560] with the proper mathematics.
+- [00:30:36,560 - 00:30:40,560] It does work, but it's a little bit different.
+- [00:30:40,560 - 00:30:42,560] Okay, let's talk about...
+- [00:30:43,560 - 00:30:45,560] Well, okay.
+- [00:30:45,560 - 00:30:53,560] Before talking about strings, the mathematics of strings,
+- [00:30:53,560 - 00:30:58,560] let's talk about
+- [00:30:58,560 - 00:31:03,560] relativity versus non-relativistic kinematics.
+- [00:31:03,560 - 00:31:06,560] Oh, incidentally, just a buzzword.
+- [00:31:06,560 - 00:31:09,060] This two-dimensional structure in here,
+- [00:31:09,060 - 00:31:11,560] which is, what is it?
+- [00:31:11,560 - 00:31:12,560] It's replacing kinematics.
+- [00:31:12,560 - 00:31:13,560] It's replacing kinematics.
+- [00:31:13,560 - 00:31:16,560] It's replacing the idea of a world line.
+- [00:31:16,560 - 00:31:21,560] A world line is being replaced by a two-dimensional sheet.
+- [00:31:21,560 - 00:31:23,060] Such a sheet, I think the
+- [00:31:23,060 - 00:31:24,560] term actually goes back to me,
+- [00:31:24,560 - 00:31:25,560] was called a world sheet.
+- [00:31:25,560 - 00:31:29,560] Today, it's the standard terminology.
+- [00:31:29,560 - 00:31:34,560] So strings are world sheets looked at at an instant
+- [00:31:34,560 - 00:31:38,060] in the same sense that particles are
+- [00:31:38,060 - 00:31:41,560] world lines looked at at an instant.
+- [00:31:41,560 - 00:31:42,560] So that's the jargon.
+- [00:31:42,560 - 00:31:46,560] World sheets and world lines.
+- [00:31:46,560 - 00:31:51,560] Sir, could I go back to that diagram?
+- [00:31:51,560 - 00:31:52,560] Okay.
+- [00:31:52,560 - 00:31:54,560] See that there's a string in there, as it stretches,
+- [00:31:54,560 - 00:31:56,560] and that put the glue on to tension?
+- [00:31:56,560 - 00:31:58,560] No.
+- [00:31:58,560 - 00:32:00,060] And so how do you get
+- [00:32:00,060 - 00:32:01,560] from a plus to a minus?
+- [00:32:01,560 - 00:32:05,560] Well, the lines of flux come out
+- [00:32:05,560 - 00:32:09,560] one side and go in the other side.
+- [00:32:09,560 - 00:32:10,560] Same way you go from a north
+- [00:32:10,560 - 00:32:11,560] pole to a south pole in a magnet.
+- [00:32:11,560 - 00:32:12,560] And a magnet?
+- [00:32:12,560 - 00:32:13,560] No, any magnet.
+- [00:32:13,560 - 00:32:14,560] Any magnet has two poles.
+- [00:32:14,560 - 00:32:15,560] There's always two poles of opposite sign.
+- [00:32:15,560 - 00:32:16,560] No magnet has two north poles.
+- [00:32:16,560 - 00:32:17,560] No magnet has two south poles.
+- [00:32:17,560 - 00:32:18,560] Every magnet has one north pole and one south pole.
+- [00:32:18,560 - 00:32:19,560] North and south are like plus and minus.
+- [00:32:19,560 - 00:32:20,560] Is there a block wall in there?
+- [00:32:20,560 - 00:32:21,560] What?
+- [00:32:21,560 - 00:32:22,560] Is there a block wall in there?
+- [00:32:22,560 - 00:32:23,560] A black wall?
+- [00:32:23,560 - 00:32:24,560] A block?
+- [00:32:24,560 - 00:32:25,560] A black wall?
+- [00:32:25,560 - 00:32:26,560] I don't know what a block wall is.
+- [00:32:26,560 - 00:32:27,060] Despite the fact that I'm
+- [00:32:27,060 - 00:32:27,560] going to feel it's an object.
+- [00:32:27,560 - 00:32:28,560] It's not a block wall.
+- [00:32:28,560 - 00:32:29,560] So it's a block.
+- [00:32:29,560 - 00:32:30,560] I'm going to get rid of that.
+- [00:32:30,560 - 00:32:31,560] I'm going to get rid of that.
+- [00:32:31,560 - 00:32:32,560] So you have to do a block wall.
+- [00:32:32,560 - 00:32:33,560] It's a square, right?
+- [00:32:33,560 - 00:32:34,560] Yeah.
+- [00:32:34,560 - 00:32:35,560] Yeah.
+- [00:32:35,560 - 00:32:36,560] Yeah.
+- [00:32:36,560 - 00:32:37,560] Yeah.
+- [00:32:37,560 - 00:32:41,060] Despite the fact that I'm the Felix
+- [00:32:41,060 - 00:32:44,560] Bloch professor of physics, I don't know.
+- [00:32:44,560 - 00:32:45,560] Yeah?
+- [00:32:45,560 - 00:32:49,060] Could the string be considered either continuous
+- [00:32:49,060 - 00:32:52,560] or discrete, or does it make any
+- [00:32:52,560 - 00:32:53,560] difference?
+- [00:32:53,560 - 00:32:58,460] Well, you see, now you're running
+- [00:32:58,460 - 00:33:03,360] into the subtleties of quantum mechanics.
+- [00:33:03,360 - 00:33:05,560] Is the electromagnetic field a continuum?
+- [00:33:05,560 - 00:33:07,320] Well, in some ways, yes.
+- [00:33:07,320 - 00:33:09,800] Is the electromagnetic field made of discrete quanta?
+- [00:33:09,800 - 00:33:13,100] Yes, in some way, yes.
+- [00:33:13,100 - 00:33:16,629] And quantum mechanics tells you that
+- [00:33:16,629 - 00:33:20,159] that distinction between continuum and discrete
+- [00:33:20,159 - 00:33:23,699] is a very subtle one, and I
+- [00:33:23,699 - 00:33:27,240] won't try to answer it right now.
+- [00:33:27,240 - 00:33:28,240] I think both are true.
+- [00:33:28,240 - 00:33:30,290] It's continuum and it's discrete, depending
+- [00:33:30,290 - 00:33:32,340] on the way you think about it.
+- [00:33:32,340 - 00:33:34,600] All right.
+- [00:33:34,600 - 00:33:35,520] Next question.
+- [00:33:35,520 - 00:33:44,560] Nonrelativistic versus relativistic kinematics.
+- [00:33:44,560 - 00:33:52,290] So kinematics are simple ideas about
+- [00:33:52,290 - 00:34:00,020] particles, energy, momentum, the symmetries of motion.
+- [00:34:00,020 - 00:34:02,290] On the face of it, relativistic
+- [00:34:02,290 - 00:34:04,560] and nonrelativistic physics look very, very different.
+- [00:34:04,560 - 00:34:05,060] Right?
+- [00:34:05,520 - 00:34:08,550] Of course, we know that they're connected
+- [00:34:08,550 - 00:34:11,580] to each other, but let's quantify or discuss
+- [00:34:11,580 - 00:34:12,580] that difference.
+- [00:34:12,580 - 00:34:13,580] Yes?
+- [00:34:13,580 - 00:34:14,580] Yes.
+- [00:34:14,580 - 00:34:16,580] Michael, you can always ask your question.
+- [00:34:16,580 - 00:34:20,580] As long as you keep bringing me cookies.
+- [00:34:20,580 - 00:34:25,570] The string being a point
+- [00:34:25,570 - 00:34:30,560] in time at the wall sheet.
+- [00:34:30,560 - 00:34:31,560] Yeah.
+- [00:34:31,560 - 00:34:32,560] Okay.
+- [00:34:32,560 - 00:34:33,060] If you change the angle of
+- [00:34:33,060 - 00:34:33,560] that cross-section of space-time, what happens?
+- [00:34:33,560 - 00:34:34,060] Well, the point in time is the
+- [00:34:34,060 - 00:34:34,560] point in time of the wall sheet.
+- [00:34:34,560 - 00:34:37,080] So if you change the angle of the wall
+- [00:34:37,080 - 00:34:39,600] sheet, you still describe what you get as something
+- [00:34:39,600 - 00:34:40,600] like a string.
+- [00:34:40,600 - 00:34:41,600] Yes.
+- [00:34:41,600 - 00:34:42,600] Yes.
+- [00:34:42,600 - 00:34:44,600] The Lorentz transformation of us, what
+- [00:34:44,600 - 00:34:46,600] you're talking about is the Lorentz transformation,
+- [00:34:46,600 - 00:34:47,600] of course.
+- [00:34:47,600 - 00:34:50,600] The Lorentz transformation is a moving
+- [00:34:50,600 - 00:34:53,600] string, but it's still a string.
+- [00:34:53,600 - 00:34:54,600] Absolutely.
+- [00:34:54,600 - 00:34:55,600] Right.
+- [00:34:55,600 - 00:34:58,790] So if you were to consider a frame
+- [00:34:58,790 - 00:35:01,980] in which simultaneity was this line here, you would
+- [00:35:01,980 - 00:35:03,270] still be seeing a string, but you
+- [00:35:03,270 - 00:35:04,560] would be seeing a string in motion.
+- [00:35:04,560 - 00:35:07,600] As opposed to standing still.
+- [00:35:07,600 - 00:35:08,600] Right.
+- [00:35:08,600 - 00:35:11,400] When I say standing still, incidentally, I mean
+- [00:35:11,400 - 00:35:14,200] the center of mass of it standing still.
+- [00:35:14,200 - 00:35:15,200] Strings wiggle a lot.
+- [00:35:15,200 - 00:35:16,940] They've got a lot of tension and they
+- [00:35:16,940 - 00:35:18,680] vibrate a lot, so they don't stand still.
+- [00:35:18,680 - 00:35:20,799] But the center of mass can stand still.
+- [00:35:20,799 - 00:35:21,799] All right.
+- [00:35:21,799 - 00:35:24,169] Let's come now to the
+- [00:35:24,169 - 00:35:26,540] issue of relativity versus non-relativity.
+- [00:35:26,540 - 00:35:28,880] How do you describe a relativistic string?
+- [00:35:28,880 - 00:35:31,600] Well, that's awfully complicated.
+- [00:35:31,600 - 00:35:33,600] Describing anything relativistically is complicated.
+- [00:35:33,600 - 00:35:36,020] For example, just the, let's begin
+- [00:35:36,020 - 00:35:38,440] with the energy of a particle.
+- [00:35:38,440 - 00:35:43,480] The energy of a particle, non-relativistically,
+- [00:35:43,480 - 00:35:48,520] point particle, is p squared over 2m.
+- [00:35:48,520 - 00:35:51,520] Momentum squared, depending on the number of
+- [00:35:51,520 - 00:35:54,520] dimensions, we would have to add up the
+- [00:35:54,520 - 00:35:58,460] various components of momentum, divided by twice the mass.
+- [00:35:58,460 - 00:36:01,020] That's a nice simple algebraic quantity.
+- [00:36:01,020 - 00:36:03,360] The square of a function is easy to compute.
+- [00:36:03,360 - 00:36:05,360] And so forth.
+- [00:36:05,360 - 00:36:09,340] You might add to this a constant.
+- [00:36:09,340 - 00:36:12,330] And the constant you would think of as the
+- [00:36:12,330 - 00:36:15,320] binding energy or just the energy of the particle
+- [00:36:15,320 - 00:36:17,520] because it's there.
+- [00:36:17,520 - 00:36:20,280] So you might put something else there.
+- [00:36:20,280 - 00:36:23,190] Let's call it B, the energy that it
+- [00:36:23,190 - 00:36:26,100] takes to assemble a particle, whatever it is.
+- [00:36:26,100 - 00:36:27,980] The characteristic of it is that it
+- [00:36:27,980 - 00:36:29,860] does not depend on the state of motion.
+- [00:36:29,860 - 00:36:31,120] It doesn't depend on p.
+- [00:36:33,360 - 00:36:36,450] In a relativistic theory, there's a
+- [00:36:36,450 - 00:36:39,540] natural candidate for what this B is.
+- [00:36:39,540 - 00:36:41,140] It's the energy of a thing
+- [00:36:41,140 - 00:36:42,740] when p is equal to zero, right?
+- [00:36:42,740 - 00:36:44,800] I mean, relativity or not relativity.
+- [00:36:44,800 - 00:36:48,520] It's the energy of the particle at rest.
+- [00:36:48,520 - 00:36:50,620] What is, what are we, in the special
+- [00:36:50,620 - 00:36:52,720] theory of relativity, what do we put there?
+- [00:36:52,720 - 00:36:55,020] mc squared, of course.
+- [00:36:55,020 - 00:36:56,270] So there's a natural thing to
+- [00:36:56,270 - 00:36:57,520] put there, which would be mc squared.
+- [00:36:57,520 - 00:37:01,280] But let's just think of it as an additive constant.
+- [00:37:01,280 - 00:37:02,360] And it's constant.
+- [00:37:02,360 - 00:37:03,240] Only.
+- [00:37:03,240 - 00:37:05,859] But the idea is that the energy of the
+- [00:37:05,859 - 00:37:08,479] particle is not dependent on the state of motion.
+- [00:37:08,479 - 00:37:10,319] What it's doing so far is
+- [00:37:10,319 - 00:37:12,160] it does not depend on p.
+- [00:37:12,160 - 00:37:14,380] It might vary from different kind
+- [00:37:14,380 - 00:37:16,600] of particle to different kind of particle.
+- [00:37:16,600 - 00:37:19,560] It could be the binding energy holding together an atom.
+- [00:37:19,560 - 00:37:20,560] It could be whatever.
+- [00:37:20,560 - 00:37:23,839] But it doesn't depend on the overall motion.
+- [00:37:23,839 - 00:37:25,509] And for many purposes, you could
+- [00:37:25,509 - 00:37:27,180] just drop this because it's always there.
+- [00:37:27,180 - 00:37:31,419] And energy differences don't depend on it.
+- [00:37:31,419 - 00:37:32,419] So p squared over 2m.
+- [00:37:32,420 - 00:37:36,300] It's just quadratic.
+- [00:37:36,300 - 00:37:39,670] Of course, if you have many particles in a
+- [00:37:39,670 - 00:37:43,040] system, then what you do is you add up the
+- [00:37:43,040 - 00:37:44,660] energy, if they're not interacting.
+- [00:37:44,660 - 00:37:47,130] And you also add up the internal
+- [00:37:47,130 - 00:37:49,600] binding energy, internal energy you could call it.
+- [00:37:49,600 - 00:37:50,820] You add them all up.
+- [00:37:50,820 - 00:37:54,770] Again, this doesn't matter because energy
+- [00:37:54,770 - 00:37:58,720] differences don't, are insensitive to it.
+- [00:37:58,720 - 00:38:00,420] Now how do we get this from relativity?
+- [00:38:00,420 - 00:38:01,420] Let's remind ourselves of the energy differences.
+- [00:38:01,420 - 00:38:02,420] Let's remind ourselves of the energy differences.
+- [00:38:02,420 - 00:38:04,400] Let's remind ourselves what the formula
+- [00:38:04,400 - 00:38:06,380] for the energy of a particle is.
+- [00:38:06,380 - 00:38:10,660] The energy of a particle, this is E. All right.
+- [00:38:10,660 - 00:38:13,870] In relativity, it's equal to the square
+- [00:38:13,870 - 00:38:17,080] root of p squared plus m squared.
+- [00:38:17,080 - 00:38:18,890] It's of course, I'm going to correct this in
+- [00:38:18,890 - 00:38:20,700] a minute, but it's of course equal to the
+- [00:38:20,700 - 00:38:23,760] sum over all the particles.
+- [00:38:23,760 - 00:38:27,250] Let's just write it as E equals the sum
+- [00:38:27,250 - 00:38:30,740] over all the particles in the system of p squared
+- [00:38:30,740 - 00:38:31,740] plus m squared.
+- [00:38:31,740 - 00:38:32,300] Where p squared equals the sum over all the particles.
+- [00:38:32,300 - 00:38:34,940] p squared is px squared plus py squared
+- [00:38:34,940 - 00:38:37,580] plus pz squared or however many dimensions we
+- [00:38:37,580 - 00:38:39,060] wish to take into account.
+- [00:38:39,060 - 00:38:41,680] Well, why take into account?
+- [00:38:41,680 - 00:38:44,920] However many dimensions are appropriate to the problem.
+- [00:38:44,920 - 00:38:48,270] So this would be pi and mi for the ith
+- [00:38:48,270 - 00:38:51,620] particle and also x, y, and z and whatever else.
+- [00:38:51,620 - 00:38:52,620] Okay.
+- [00:38:52,620 - 00:38:54,660] How do we go from here to here?
+- [00:38:54,660 - 00:38:56,600] Well first of all, I left something out.
+- [00:38:56,600 - 00:38:59,020] I left out c to the fourth.
+- [00:38:59,020 - 00:39:01,620] That's the fourth power of the speed of light.
+- [00:39:01,620 - 00:39:04,680] And m squared, c squared here.
+- [00:39:04,680 - 00:39:06,960] As soon as I finish this one little
+- [00:39:06,960 - 00:39:09,240] demonstration, I'm going to set c equal to one.
+- [00:39:09,240 - 00:39:12,240] Maybe four and two are switched.
+- [00:39:12,240 - 00:39:14,859] Four and two are switched?
+- [00:39:14,859 - 00:39:17,000] Do I have it wrong?
+- [00:39:17,000 - 00:39:18,000] You're right.
+- [00:39:18,000 - 00:39:19,000] Sorry.
+- [00:39:19,000 - 00:39:20,000] mc squared.
+- [00:39:20,000 - 00:39:21,000] Yeah, c to the fourth.
+- [00:39:21,000 - 00:39:22,100] Very good.
+- [00:39:22,100 - 00:39:23,100] C squared.
+- [00:39:23,100 - 00:39:26,620] p squared, c squared, m squared, c to the fourth.
+- [00:39:26,620 - 00:39:27,620] Good.
+- [00:39:27,620 - 00:39:30,740] Boy, I would have been in trouble.
+- [00:39:30,740 - 00:39:31,500] Okay.
+- [00:39:31,620 - 00:39:36,620] The nonrelativistic limit is appropriate for problems
+- [00:39:36,620 - 00:39:41,620] where a particle is moving very slowly,
+- [00:39:41,620 - 00:39:44,320] which means its momentum is very small, and
+- [00:39:44,320 - 00:39:47,020] in particular in which p squared, c squared
+- [00:39:47,020 - 00:39:51,299] is much smaller than m squared, c to the fourth.
+- [00:39:51,299 - 00:39:53,439] Under those circumstances, you can take the square
+- [00:39:53,439 - 00:39:55,580] root of p squared plus m squared and
+- [00:39:55,580 - 00:39:58,100] write it first in the form m squared, c
+- [00:39:58,100 - 00:40:00,620] squared, m squared, c squared, c to the fourth.
+- [00:40:00,620 - 00:40:01,620] Okay.
+- [00:40:01,620 - 00:40:05,120] So, you have m squared, c squared, c to
+- [00:40:05,120 - 00:40:08,620] the fourth, times one plus p squared, c squared,
+- [00:40:08,620 - 00:40:11,620] over m squared, c to the fourth.
+- [00:40:11,620 - 00:40:14,120] You can factor out of the square root the
+- [00:40:14,120 - 00:40:16,620] m squared, c to the fourth, and that gives
+- [00:40:16,620 - 00:40:18,620] you mc squared on the outside.
+- [00:40:18,620 - 00:40:22,620] That's a good sign.
+- [00:40:22,620 - 00:40:24,620] But with a correction.
+- [00:40:24,620 - 00:40:27,620] And the correction is this over here.
+- [00:40:27,620 - 00:40:29,620] What do you do with it?
+- [00:40:29,620 - 00:40:30,620] You expand out the square root.
+- [00:40:30,620 - 00:40:33,120] You use the formula that the square root of
+- [00:40:33,120 - 00:40:35,620] one plus a small quantity is one plus the
+- [00:40:35,620 - 00:40:38,620] small quantity divided by two.
+- [00:40:38,620 - 00:40:41,620] Square root of one plus a small quantity is
+- [00:40:41,620 - 00:40:44,620] equal to the one plus the small quantity over
+- [00:40:44,620 - 00:40:47,620] two.
+- [00:40:47,620 - 00:40:48,620] That's an approximation, of course.
+- [00:40:48,620 - 00:40:50,620] It's not exact.
+- [00:40:50,620 - 00:40:52,620] But as the small quantity gets smaller
+- [00:40:52,620 - 00:40:54,620] and smaller, it becomes better and better.
+- [00:40:54,620 - 00:40:55,620] So what do you get?
+- [00:40:55,620 - 00:40:58,620] You get mc squared plus m squared.
+- [00:40:58,620 - 00:41:04,120] Plus p squared, c squared, over mc squared,
+- [00:41:04,120 - 00:41:09,620] mc to the fourth, divided by two, all times
+- [00:41:09,620 - 00:41:14,620] mc squared here.
+- [00:41:14,620 - 00:41:15,620] Okay.
+- [00:41:15,620 - 00:41:16,620] So let's see what cancels.
+- [00:41:16,620 - 00:41:17,620] mc squared, that's familiar.
+- [00:41:17,620 - 00:41:19,620] That's the relativistic rest energy.
+- [00:41:19,620 - 00:41:23,120] But this here has four powers of c in
+- [00:41:23,120 - 00:41:26,620] the numerator, four powers of c in the denominator.
+- [00:41:26,620 - 00:41:31,620] c goes away.
+- [00:41:31,620 - 00:41:34,120] It has one power of m in the
+- [00:41:34,120 - 00:41:36,620] numerator, two powers of m in the denominator.
+- [00:41:36,620 - 00:41:37,620] Cancel them.
+- [00:41:37,620 - 00:41:42,620] Then you get the good old nonrelativistic formula.
+- [00:41:42,620 - 00:41:44,620] But it's an approximation.
+- [00:41:44,620 - 00:41:46,620] It's an approximation.
+- [00:41:46,620 - 00:41:49,620] And when is it good?
+- [00:41:49,620 - 00:41:52,620] It's good when all particles are moving slowly.
+- [00:41:52,620 - 00:41:54,620] It's not just that.
+- [00:41:54,620 - 00:41:55,620] It's not just that.
+- [00:41:55,620 - 00:41:58,120] It's not just the whole system which
+- [00:41:58,120 - 00:42:00,620] has to be moving slowly to use nonrelativistic
+- [00:42:00,620 - 00:42:01,620] physics.
+- [00:42:01,620 - 00:42:05,620] You might, for example, have a box of particles.
+- [00:42:05,620 - 00:42:08,620] And the box may be moving slowly, but
+- [00:42:08,620 - 00:42:11,620] inside the box, the particles may be moving with
+- [00:42:11,620 - 00:42:13,620] close to the speed of light.
+- [00:42:13,620 - 00:42:18,120] You cannot use pure nonrelativistic physics for
+- [00:42:18,120 - 00:42:22,620] all of these particles because they have
+- [00:42:22,620 - 00:42:25,620] relative motions which are up near the speed of light.
+- [00:42:25,620 - 00:42:28,120] So strictly speaking, the nonrelativistic limit is a
+- [00:42:28,120 - 00:42:30,620] good thing to do when all of the
+- [00:42:30,620 - 00:42:35,620] particles are moving slowly, and it is an approximation.
+- [00:42:35,620 - 00:42:39,120] Now, there's another sense in which nonrelativistic
+- [00:42:39,120 - 00:42:42,620] physics is an exact description of relativistic
+- [00:42:42,620 - 00:42:43,620] physics.
+- [00:42:43,620 - 00:42:44,620] So I'm going to show you this.
+- [00:42:44,620 - 00:42:47,120] This is something that goes back
+- [00:42:47,120 - 00:42:49,620] a long ways in particle physics.
+- [00:42:49,620 - 00:42:53,620] When I worked on it in 1968.
+- [00:42:53,620 - 00:42:56,120] Or 67 or some time, it
+- [00:42:56,120 - 00:42:58,620] was called the infinite momentum frame.
+- [00:42:58,620 - 00:43:00,620] Now it's called the light cone frame.
+- [00:43:00,620 - 00:43:03,120] So if you look up light cone
+- [00:43:03,120 - 00:43:05,620] frame, you will see these things described.
+- [00:43:05,620 - 00:43:07,620] Okay, but it's easy.
+- [00:43:07,620 - 00:43:09,620] It's easy.
+- [00:43:09,620 - 00:43:12,120] If I don't want to do it
+- [00:43:12,120 - 00:43:14,620] in great and enormous generality, it's easy.
+- [00:43:14,620 - 00:43:16,620] And here's what the trick is.
+- [00:43:16,620 - 00:43:22,620] Instead of thinking of a system in its rest frame,
+- [00:43:23,620 - 00:43:26,620] when we said, or near the rest frame, in
+- [00:43:26,620 - 00:43:29,620] other words, a frame in which every momentum is slow,
+- [00:43:29,620 - 00:43:31,620] we're going to do a different trick.
+- [00:43:31,620 - 00:43:34,120] We're going to look at it from the point
+- [00:43:34,120 - 00:43:36,620] of view of a frame where everything, the entire system,
+- [00:43:36,620 - 00:43:39,120] has been boosted up to
+- [00:43:39,120 - 00:43:41,620] have huge momentum along one axis.
+- [00:43:43,620 - 00:43:45,120] In other words, boost it up
+- [00:43:45,120 - 00:43:46,620] so that it's moving down the z-axis.
+- [00:43:46,620 - 00:43:48,620] Let's take that to be the z-axis.
+- [00:43:48,620 - 00:43:52,620] So that it has humongously large momentum along the z-axis.
+- [00:43:53,620 - 00:43:55,620] There's no loss in generality there.
+- [00:43:55,620 - 00:43:59,120] We can take any system and just
+- [00:43:59,120 - 00:44:02,620] boost it so that it's along the z-axis.
+- [00:44:02,620 - 00:44:06,620] And then rewrite what this formula looks like.
+- [00:44:06,620 - 00:44:08,620] Okay, so I'm going to, you know what I'm going
+- [00:44:08,620 - 00:44:10,620] to do, I'm going to set c equal to one now.
+- [00:44:10,620 - 00:44:12,620] I'm not going to bother keeping c.
+- [00:44:12,620 - 00:44:16,620] The energy is the sum of all the particles
+- [00:44:16,620 - 00:44:20,620] of, again, square root of p squared plus m squared,
+- [00:44:20,620 - 00:44:22,620] which is equal to square root,
+- [00:44:23,620 - 00:44:27,620] of pz squared plus px squared
+- [00:44:27,620 - 00:44:31,620] plus py squared plus m squared.
+- [00:44:31,620 - 00:44:34,120] But now we're boosting the hell
+- [00:44:34,120 - 00:44:36,620] out of this system along the z-axis
+- [00:44:36,620 - 00:44:39,620] until every single particle has
+- [00:44:39,620 - 00:44:42,620] a huge momentum along the z-axis.
+- [00:44:42,620 - 00:44:44,620] Every single one of them.
+- [00:44:44,620 - 00:44:46,120] If there's any particle which
+- [00:44:46,120 - 00:44:47,620] is going backward on the z-axis,
+- [00:44:47,620 - 00:44:49,620] you just haven't boosted it enough.
+- [00:44:49,620 - 00:44:51,620] Just boost it more until it's
+- [00:44:51,620 - 00:44:53,620] going forward with a large momentum.
+- [00:44:53,620 - 00:44:58,620] In that case, all of the pz's are very large.
+- [00:44:58,620 - 00:45:01,120] What happens to px, py,
+- [00:45:01,120 - 00:45:03,620] and m when you boost something?
+- [00:45:03,620 - 00:45:05,620] Nothing.
+- [00:45:05,620 - 00:45:08,620] That's the rest mass.
+- [00:45:08,620 - 00:45:10,620] We don't even speak about moving mass anymore.
+- [00:45:10,620 - 00:45:12,620] The rest mass.
+- [00:45:12,620 - 00:45:15,620] And the components of momentum perpendicular to
+- [00:45:15,620 - 00:45:18,620] the boost don't change when you boost something.
+- [00:45:18,620 - 00:45:21,620] Okay, so now the big quantity is pz.
+- [00:45:21,620 - 00:45:23,620] And px, py, and m.
+- [00:45:23,620 - 00:45:25,620] Are kept fixed.
+- [00:45:25,620 - 00:45:27,620] And are much smaller than pz.
+- [00:45:27,620 - 00:45:29,620] So the appropriate thing to do here,
+- [00:45:29,620 - 00:45:31,620] in taking the limit,
+- [00:45:31,620 - 00:45:34,620] is expand it for large pz.
+- [00:45:34,620 - 00:45:36,620] Expand it for this being small.
+- [00:45:36,620 - 00:45:38,120] The way to do that is
+- [00:45:38,120 - 00:45:39,620] to write this in the form
+- [00:45:39,620 - 00:45:44,620] square root of one plus,
+- [00:45:44,620 - 00:45:51,620] let's just call it px squared plus py squared,
+- [00:45:51,620 - 00:45:53,620] plus m squared,
+- [00:45:53,620 - 00:45:56,620] divided by pz squared,
+- [00:45:56,620 - 00:46:02,620] all times pz on the outside, right?
+- [00:46:02,620 - 00:46:03,620] pz on the outside.
+- [00:46:03,620 - 00:46:05,620] If I brought the pz inside the square root,
+- [00:46:05,620 - 00:46:07,620] it would have to be squared.
+- [00:46:07,620 - 00:46:09,620] It would be pz squared,
+- [00:46:09,620 - 00:46:12,620] and then it would cancel this pz squared here.
+- [00:46:12,620 - 00:46:13,620] Okay.
+- [00:46:13,620 - 00:46:16,620] What's the next step?
+- [00:46:16,620 - 00:46:17,620] Expand.
+- [00:46:17,620 - 00:46:21,620] Use the binomial expansion, the binomial approximation,
+- [00:46:21,620 - 00:46:23,120] and then you'll see that
+- [00:46:23,120 - 00:46:24,620] this is exactly the same thing
+- [00:46:24,620 - 00:46:26,620] we did over here.
+- [00:46:26,620 - 00:46:28,620] This is now the small quantity.
+- [00:46:28,620 - 00:46:33,620] And so this becomes pz times one plus
+- [00:46:33,620 - 00:46:39,620] px squared plus py squared plus m squared
+- [00:46:39,620 - 00:46:45,620] over twice pz.
+- [00:46:45,620 - 00:46:48,620] Twice pz squared, excuse me,
+- [00:46:48,620 - 00:46:50,620] pz squared.
+- [00:46:51,620 - 00:46:55,620] Or to summarize it all,
+- [00:46:55,620 - 00:47:00,620] the energy is the sum over all the particles
+- [00:47:00,620 - 00:47:05,620] of pz of the ith particle
+- [00:47:05,620 - 00:47:09,620] plus the sum of, let's call it,
+- [00:47:09,620 - 00:47:13,620] p, uh,
+- [00:47:13,620 - 00:47:16,620] p will now stand for px and py.
+- [00:47:16,620 - 00:47:18,620] Let's use little p.
+- [00:47:18,620 - 00:47:20,620] Little p stands for px and py.
+- [00:47:21,620 - 00:47:28,620] Little p squared over twice big Pz
+- [00:47:28,620 - 00:47:35,620] plus m squared over twice big Pz.
+- [00:47:35,620 - 00:47:39,620] No.
+- [00:47:39,620 - 00:47:41,620] No.
+- [00:47:41,620 - 00:47:43,620] It was a Pz up here
+- [00:47:43,620 - 00:47:45,620] and a Pz squared down here.
+- [00:47:45,620 - 00:47:46,620] Okay?
+- [00:47:46,620 - 00:47:48,620] Good.
+- [00:47:48,620 - 00:47:50,620] I don't need to put brackets in.
+- [00:47:51,620 - 00:47:54,620] Okay, first observation.
+- [00:47:54,620 - 00:47:56,620] If we believe in momentum conservation,
+- [00:47:56,620 - 00:47:58,620] which we do in this class,
+- [00:47:58,620 - 00:48:01,620] if we believe in momentum conservation,
+- [00:48:01,620 - 00:48:03,620] then first of all, this is
+- [00:48:03,620 - 00:48:05,620] just the total momentum of the system.
+- [00:48:05,620 - 00:48:08,120] The first term here is
+- [00:48:08,120 - 00:48:10,620] the total z component of momentum
+- [00:48:10,620 - 00:48:12,620] going down the z axis.
+- [00:48:12,620 - 00:48:16,620] It's huge, very large,
+- [00:48:16,620 - 00:48:18,620] but it's a constant.
+- [00:48:18,620 - 00:48:21,620] It's a constant, and as various things go on,
+- [00:48:21,620 - 00:48:23,620] in this system,
+- [00:48:23,620 - 00:48:25,620] the total momentum never changes.
+- [00:48:25,620 - 00:48:28,620] If you have a constant term in the energy,
+- [00:48:28,620 - 00:48:30,620] which doesn't change in any
+- [00:48:30,620 - 00:48:32,620] way during the course of a,
+- [00:48:32,620 - 00:48:35,620] you know, a constant additive thing,
+- [00:48:35,620 - 00:48:38,620] adding it to the energy
+- [00:48:38,620 - 00:48:41,620] or subtracting it from the energy doesn't do anything.
+- [00:48:41,620 - 00:48:43,620] For example, if you added
+- [00:48:43,620 - 00:48:45,620] the electric charge to the energy,
+- [00:48:45,620 - 00:48:47,620] since electric charge is conserved,
+- [00:48:47,620 - 00:48:49,620] then the only thing that's ever important in physics
+- [00:48:49,620 - 00:48:51,620] is differences of energy,
+- [00:48:51,620 - 00:48:54,620] and that's the same thing with energy conservation.
+- [00:48:54,620 - 00:48:56,620] You can just drop it or keep it.
+- [00:48:56,620 - 00:48:57,620] It doesn't matter.
+- [00:48:57,620 - 00:48:58,620] The same is true here.
+- [00:48:58,620 - 00:49:00,620] You have a conserved quantity,
+- [00:49:00,620 - 00:49:02,620] which is conserved for
+- [00:49:02,620 - 00:49:04,620] other reasons than energy conservation.
+- [00:49:04,620 - 00:49:06,620] Energy, of course, is also conserved,
+- [00:49:06,620 - 00:49:09,620] but Pz is conserved for other reasons.
+- [00:49:09,620 - 00:49:11,620] Here's something which never changes.
+- [00:49:11,620 - 00:49:13,620] You can just drop it.
+- [00:49:13,620 - 00:49:15,620] If you were to think of the
+- [00:49:15,620 - 00:49:17,620] energy as being the Hamiltonian of a system,
+- [00:49:17,620 - 00:49:19,120] it would make no difference whether
+- [00:49:19,120 - 00:49:20,620] you drop it or don't drop it,
+- [00:49:20,620 - 00:49:23,620] because it's a conserved quantity which never changes.
+- [00:49:23,620 - 00:49:26,620] So you can drop this.
+- [00:49:26,620 - 00:49:28,620] It will make no difference.
+- [00:49:28,620 - 00:49:31,620] The rest of the energy here is this thing here.
+- [00:49:31,620 - 00:49:33,620] Now, first of all,
+- [00:49:33,620 - 00:49:36,620] notice that Pz is in the denominator.
+- [00:49:36,620 - 00:49:38,620] What does that mean?
+- [00:49:38,620 - 00:49:41,620] Why is the energy so small?
+- [00:49:41,620 - 00:49:44,620] In particular, energy differences,
+- [00:49:44,620 - 00:49:47,120] for example, differences depending on the
+- [00:49:47,120 - 00:49:49,620] state of motion in the xy plane,
+- [00:49:49,620 - 00:49:51,620] they will be tiny.
+- [00:49:51,620 - 00:49:53,620] Why are they tiny?
+- [00:49:53,620 - 00:49:56,620] Anybody know?
+- [00:49:56,620 - 00:49:57,620] Why are the energy diff...
+- [00:49:57,620 - 00:49:59,620] Okay, I will tell you.
+- [00:49:59,620 - 00:50:01,120] For this, it's useful to
+- [00:50:01,120 - 00:50:02,620] remember a bit of quantum mechanics,
+- [00:50:02,620 - 00:50:05,620] even though we don't need to be doing quantum mechanics.
+- [00:50:05,620 - 00:50:07,620] What is the meaning of the energy?
+- [00:50:07,620 - 00:50:09,620] The energy, of course, in quantum
+- [00:50:09,620 - 00:50:11,620] mechanics is the same as the Hamiltonian.
+- [00:50:11,620 - 00:50:14,620] It is also in classical mechanics.
+- [00:50:14,620 - 00:50:16,620] But what's the meaning of
+- [00:50:16,620 - 00:50:18,620] the Hamiltonian in quantum mechanics?
+- [00:50:18,620 - 00:50:21,620] Do you remember your quantum mechanics?
+- [00:50:23,620 - 00:50:26,620] It is an operator.
+- [00:50:26,620 - 00:50:28,620] It's a Hermitian operator.
+- [00:50:28,620 - 00:50:30,620] But it's also the oper...
+- [00:50:30,620 - 00:50:31,620] Hmm?
+- [00:50:31,620 - 00:50:33,120] It's an eigenvalue of the energy,
+- [00:50:33,120 - 00:50:34,620] but it's also associated with something else.
+- [00:50:34,620 - 00:50:38,620] It's also associated with time evolution.
+- [00:50:38,620 - 00:50:39,620] All right?
+- [00:50:39,620 - 00:50:42,120] Remember that this is the
+- [00:50:42,120 - 00:50:44,620] same as I d by dt.
+- [00:50:44,620 - 00:50:48,620] Namely, I h bar, probably, d by dt.
+- [00:50:48,620 - 00:50:49,620] This is...
+- [00:50:49,620 - 00:50:52,620] It's action as an operator on a state.
+- [00:50:52,620 - 00:50:57,620] That what it means to say energies are very small
+- [00:50:57,620 - 00:51:00,620] is that systems are changing very slowly.
+- [00:51:00,620 - 00:51:03,620] This is also true, incidentally, in classical mechanics.
+- [00:51:03,620 - 00:51:06,620] I just point this out in quantum mechanics.
+- [00:51:06,620 - 00:51:10,620] If the energies of a system are very, very small,
+- [00:51:10,620 - 00:51:14,620] it means changes take place very, very slowly.
+- [00:51:14,620 - 00:51:16,120] So, if the energy of
+- [00:51:16,120 - 00:51:17,620] a system is very, very small,
+- [00:51:17,620 - 00:51:20,620] it means changes take place very, very slowly.
+- [00:51:20,620 - 00:51:22,620] The smaller the energy,
+- [00:51:22,620 - 00:51:24,620] if the energy scales with
+- [00:51:24,620 - 00:51:26,620] some 1 over p z here,
+- [00:51:26,620 - 00:51:29,620] it means that the larger that p z is,
+- [00:51:29,620 - 00:51:32,620] the slower things take place in the system.
+- [00:51:32,620 - 00:51:34,620] What's going on here?
+- [00:51:34,620 - 00:51:35,620] Very simple.
+- [00:51:35,620 - 00:51:37,620] It's time dilation.
+- [00:51:37,620 - 00:51:39,620] The more you boost the system
+- [00:51:39,620 - 00:51:41,620] up to higher and higher momentum,
+- [00:51:41,620 - 00:51:45,620] in your reference frame, the slower things take place.
+- [00:51:45,620 - 00:51:47,620] Okay, that's interesting.
+- [00:51:47,620 - 00:51:51,620] So, we have all the time in the world,
+- [00:51:51,620 - 00:51:53,620] a system moving.
+- [00:51:53,620 - 00:51:55,120] We can wait as long as
+- [00:51:55,120 - 00:51:56,620] we like to see things take place.
+- [00:51:56,620 - 00:52:00,620] If we're trying to make a theory of radioactive decay,
+- [00:52:00,620 - 00:52:02,620] sure, boosting it up will
+- [00:52:02,620 - 00:52:04,620] make the radioactive decay go slower,
+- [00:52:04,620 - 00:52:06,620] but we can rescale that out.
+- [00:52:06,620 - 00:52:08,120] We can say instead of
+- [00:52:08,120 - 00:52:09,620] working on a scale of microseconds,
+- [00:52:09,620 - 00:52:11,620] we'll work on a scale of millions of years,
+- [00:52:11,620 - 00:52:16,620] and we'll also see the nucleus decay.
+- [00:52:17,620 - 00:52:19,620] Everything just has to be rescaled.
+- [00:52:19,620 - 00:52:21,620] So this 1 over p z there,
+- [00:52:21,620 - 00:52:23,620] the total of this is 1 over p z,
+- [00:52:23,620 - 00:52:26,620] this is incidentally for the i-th particle,
+- [00:52:26,620 - 00:52:29,620] and we add them all up.
+- [00:52:29,620 - 00:52:32,620] So the fact that all the p z's get large,
+- [00:52:32,620 - 00:52:34,620] incidentally, in fixed proportion,
+- [00:52:34,620 - 00:52:37,620] they all get large in fixed proportion,
+- [00:52:37,620 - 00:52:39,620] that said the energy got smaller.
+- [00:52:39,620 - 00:52:42,620] That's a completely expected phenomenon.
+- [00:52:42,620 - 00:52:45,620] Apart from that, if we rescale
+- [00:52:45,620 - 00:52:49,620] all the p z's,
+- [00:52:49,620 - 00:52:51,620] ignore the fact that they get big,
+- [00:52:51,620 - 00:52:54,620] or just rescale the evolution of the system,
+- [00:52:54,620 - 00:52:57,620] this Hamiltonian, or this expression for energy,
+- [00:52:57,620 - 00:53:02,620] really does look like the non-relativistic expression
+- [00:53:02,620 - 00:53:07,620] with respect to the motion in the x-y plane.
+- [00:53:07,620 - 00:53:10,620] For the motion in the x-y plane,
+- [00:53:10,620 - 00:53:13,120] the energy is proportional to
+- [00:53:13,120 - 00:53:15,620] the square of the x-y momentum,
+- [00:53:15,620 - 00:53:21,620] just as it is for the non-relativistic particle,
+- [00:53:21,620 - 00:53:24,620] but notice that the role
+- [00:53:24,620 - 00:53:27,620] of the mass of the particle
+- [00:53:27,620 - 00:53:31,620] in this non-relativistic analogy
+- [00:53:31,620 - 00:53:34,620] is not the rest mass,
+- [00:53:34,620 - 00:53:37,620] it's the momentum along the z-axis.
+- [00:53:37,620 - 00:53:39,620] What this means, what is mass?
+- [00:53:39,620 - 00:53:41,620] Mass is inertia, right?
+- [00:53:41,620 - 00:53:44,620] It's got to do with the difficulty of deflecting something.
+- [00:53:44,620 - 00:53:46,620] What this is saying is
+- [00:53:46,620 - 00:53:48,620] that the momentum along the z-axis
+- [00:53:48,620 - 00:53:52,620] is functioning as a kind of inertia
+- [00:53:52,620 - 00:53:56,620] with respect to forces in the perpendicular direction,
+- [00:53:56,620 - 00:54:00,620] and the whole thing is looking very, very much like,
+- [00:54:00,620 - 00:54:03,620] if we think of p z as a constant,
+- [00:54:03,620 - 00:54:07,620] then all this is is the non-relativistic formula
+- [00:54:07,620 - 00:54:11,620] for the energy of a two-dimensional particle now.
+- [00:54:11,620 - 00:54:14,620] Notice we now have only two dimensions of motion,
+- [00:54:14,620 - 00:54:18,620] and what about this term over here?
+- [00:54:18,620 - 00:54:20,620] How should we interpret that?
+- [00:54:20,620 - 00:54:23,620] Again, remember that we think of p z
+- [00:54:23,620 - 00:54:26,620] as being independent of the state of motion,
+- [00:54:26,620 - 00:54:28,620] at least the two-dimensional motion,
+- [00:54:28,620 - 00:54:32,620] so with respect to this two-dimensional analogy,
+- [00:54:32,620 - 00:54:36,620] analogy between relativistic and non-relativistic physics,
+- [00:54:36,620 - 00:54:38,620] it's an analogy between relativistic physics
+- [00:54:38,620 - 00:54:40,620] and two-dimensional motion,
+- [00:54:40,620 - 00:54:43,620] in which p z plays the role of the mass,
+- [00:54:43,620 - 00:54:46,620] and how about this object over here?
+- [00:54:49,620 - 00:54:52,620] It plays the role of the binding energy.
+- [00:54:54,620 - 00:54:56,120] Does it have the right
+- [00:54:56,120 - 00:54:57,620] properties to be a binding energy?
+- [00:54:57,620 - 00:54:59,620] The only thing about a binding energy
+- [00:54:59,620 - 00:55:01,120] is that it should be
+- [00:55:01,120 - 00:55:02,620] independent of the state of motion.
+- [00:55:02,620 - 00:55:04,620] It should not depend on...
+- [00:55:04,620 - 00:55:07,620] This does not depend on the two-dimensional motion.
+- [00:55:07,620 - 00:55:10,620] So this is kind of interesting,
+- [00:55:10,620 - 00:55:12,620] and it's not only interesting,
+- [00:55:12,620 - 00:55:15,620] but incredibly useful in studying particle dynamics,
+- [00:55:15,620 - 00:55:20,620] and absolutely central to studying strings,
+- [00:55:20,620 - 00:55:26,620] is that in a very precise and exact way,
+- [00:55:26,620 - 00:55:29,620] the motion of a relativistic system,
+- [00:55:29,620 - 00:55:32,620] when it's boosted up to enormously large momentum,
+- [00:55:32,620 - 00:55:35,620] behaves completely non-relativistically
+- [00:55:35,620 - 00:55:38,120] with respect to the motion in
+- [00:55:38,120 - 00:55:40,620] the plane perpendicular to the boost.
+- [00:55:40,620 - 00:55:41,620] Okay?
+- [00:55:42,620 - 00:55:44,620] It's for this reason
+- [00:55:44,620 - 00:55:48,620] that string theory is also often
+- [00:55:48,620 - 00:55:51,620] described in terms of mathematics,
+- [00:55:51,620 - 00:55:55,620] which is the mathematics of a non-relativistic string.
+- [00:55:55,620 - 00:55:57,620] A non-relativistic string...
+- [00:55:57,620 - 00:56:03,620] A non-relativistic string is a collection of point particles
+- [00:56:03,620 - 00:56:06,620] in some limit in which you let
+- [00:56:06,620 - 00:56:09,620] the point particles get more and more continuous,
+- [00:56:09,620 - 00:56:11,620] all moving non-relativistically,
+- [00:56:12,620 - 00:56:14,120] and then you let the point
+- [00:56:14,120 - 00:56:15,620] particles get more and more continuous.
+- [00:56:15,620 - 00:56:16,620] And so,
+- [00:56:16,620 - 00:56:19,620] by what chutzpah do we use non-relativistic physics
+- [00:56:19,620 - 00:56:21,620] to describe anything as
+- [00:56:21,620 - 00:56:23,620] complicated as a relativistic string?
+- [00:56:23,620 - 00:56:27,620] Well, the answer is that in the infinite momentum frame,
+- [00:56:27,620 - 00:56:30,620] which these days is called the light cone frame,
+- [00:56:30,620 - 00:56:33,620] mostly because it has nothing to do with cones,
+- [00:56:33,620 - 00:56:36,620] nothing whatever to do with cones,
+- [00:56:36,620 - 00:56:38,120] I'll tell you another time why
+- [00:56:38,120 - 00:56:39,620] it's called the light cone frame.
+- [00:56:39,620 - 00:56:40,620] Not important.
+- [00:56:40,620 - 00:56:42,620] But in the infinite momentum frame,
+- [00:56:42,620 - 00:56:44,620] you have a chance that
+- [00:56:44,620 - 00:56:46,620] perhaps the motion of a string,
+- [00:56:46,620 - 00:56:47,620] when it's boosted up,
+- [00:56:47,620 - 00:56:49,620] may be described by a
+- [00:56:49,620 - 00:56:51,620] kind of non-relativistic quantum mechanics.
+- [00:56:51,620 - 00:56:52,620] And this seems to be
+- [00:56:52,620 - 00:56:53,620] borne out, not seems to be,
+- [00:56:53,620 - 00:56:56,620] this has been the techniques that have been used for
+- [00:56:56,620 - 00:56:58,620] since the very beginning of string theory
+- [00:56:58,620 - 00:57:01,620] to analyze relativistic strings.
+- [00:57:05,620 - 00:57:08,620] Let me show you the simplest fact...
+- [00:57:08,620 - 00:57:10,620] Yeah, no, okay.
+- [00:57:10,620 - 00:57:12,620] Let me show you one of the very simple questions
+- [00:57:12,620 - 00:57:13,620] that I've been asked.
+- [00:57:13,620 - 00:57:16,620] So, let's say that we have two connections
+- [00:57:16,620 - 00:57:20,620] that follow from thinking this way.
+- [00:57:20,620 - 00:57:24,620] Let's now hypothesize or postulate
+- [00:57:24,620 - 00:57:29,620] that we can think of particles
+- [00:57:29,620 - 00:57:37,620] as strings using the two-dimensional analogy
+- [00:57:37,620 - 00:57:39,620] with non-relativistic physics
+- [00:57:39,620 - 00:57:41,620] to explore those strings as if they were conventional,
+- [00:57:41,620 - 00:57:44,620] non-relativistic, not shoelaces,
+- [00:57:44,620 - 00:57:47,620] but something closer to rubber bands.
+- [00:57:47,620 - 00:57:51,620] Stretchable, they can move, they can flap,
+- [00:57:51,620 - 00:57:53,620] they can do all the things that a rubber band,
+- [00:57:53,620 - 00:57:56,620] an ideal rubber band can do.
+- [00:58:00,620 - 00:58:02,620] What's the mathematical description
+- [00:58:02,620 - 00:58:05,620] of a two-dimensional rubber band
+- [00:58:05,620 - 00:58:08,620] which is moving around in two dimensions?
+- [00:58:11,620 - 00:58:13,120] Let's take our rubber band
+- [00:58:13,120 - 00:58:14,620] to be an open rubber band.
+- [00:58:14,620 - 00:58:16,120] That means somebody took a scissor,
+- [00:58:16,120 - 00:58:17,620] cut it, and opened it up.
+- [00:58:17,620 - 00:58:19,620] Let's begin with open strings.
+- [00:58:19,620 - 00:58:22,620] Open strings means strings with two ends.
+- [00:58:22,620 - 00:58:24,620] There may or may not be something interesting
+- [00:58:24,620 - 00:58:25,620] attached to the ends,
+- [00:58:25,620 - 00:58:28,620] but we're interested more in the strings.
+- [00:58:37,620 - 00:58:40,620] Let's write the physics of a string.
+- [00:58:40,620 - 00:58:45,620] What is the energy stored in a string?
+- [00:58:45,620 - 00:58:48,120] We can think of the
+- [00:58:48,120 - 00:58:50,620] string as a collection of points,
+- [00:58:50,620 - 00:58:55,620] point particles, which later on we will take limits.
+- [00:58:55,620 - 00:58:56,620] One of the things we will
+- [00:58:56,620 - 00:58:57,620] do when we take a limit
+- [00:58:57,620 - 00:58:59,120] is we'll let the mass
+- [00:58:59,120 - 00:59:00,620] of each point go to zero.
+- [00:59:00,620 - 00:59:05,620] That's because the whole string has a finite mass.
+- [00:59:05,620 - 00:59:07,620] We're going to think of it as being a collection
+- [00:59:07,620 - 00:59:10,620] of a virtual infinity of point masses,
+- [00:59:10,620 - 00:59:12,620] and it had better be that in taking the limit,
+- [00:59:12,620 - 00:59:15,620] we let the mass of each point go to zero.
+- [00:59:15,620 - 00:59:17,620] All right, but what's the energy of this?
+- [00:59:17,620 - 00:59:21,620] The energy is going to be proportional
+- [00:59:21,620 - 00:59:23,620] to the kinetic energy.
+- [00:59:23,620 - 00:59:26,620] It'll be the sum of all the points
+- [00:59:26,620 - 00:59:32,620] of x i dot squared.
+- [00:59:32,620 - 00:59:34,620] These are two-dimensional now,
+- [00:59:34,620 - 00:59:36,620] so we could write this
+- [00:59:36,620 - 00:59:38,620] as x plus y dot squared.
+- [00:59:38,620 - 00:59:40,620] That's the i-th point.
+- [00:59:40,620 - 00:59:43,620] Divide it by two,
+- [00:59:43,620 - 00:59:45,620] and we might put here
+- [00:59:45,620 - 00:59:47,620] a mass of the i-th particle,
+- [00:59:47,620 - 00:59:49,620] which later on we're going to let go to zero.
+- [00:59:49,620 - 00:59:52,620] But let's not be too...
+- [00:59:52,620 - 00:59:55,620] I'll just tell you how to do the continuum limit.
+- [00:59:55,620 - 00:59:57,620] I'll show you how to do it.
+- [00:59:57,620 - 00:59:58,620] I'll just tell you how to do it.
+- [00:59:58,620 - 01:00:00,620] All right, what are we missing out of this formula?
+- [01:00:00,620 - 01:00:03,620] Interactions.
+- [01:00:03,620 - 01:00:05,620] Interactions, yeah.
+- [01:00:05,620 - 01:00:08,620] These points are attracting each other.
+- [01:00:08,620 - 01:00:10,620] If they weren't attracting each other,
+- [01:00:10,620 - 01:00:12,620] they'd just fly apart.
+- [01:00:12,620 - 01:00:13,620] They're forming a string.
+- [01:00:13,620 - 01:00:15,620] They are, in addition to the points,
+- [01:00:15,620 - 01:00:18,120] we have to put in
+- [01:00:18,120 - 01:00:20,620] the little springs that connect them.
+- [01:00:20,620 - 01:00:22,620] So think of it as a
+- [01:00:22,620 - 01:00:24,620] chain of little balls and little springs.
+- [01:00:24,620 - 01:00:27,620] Can you see the springs?
+- [01:00:27,620 - 01:00:30,620] All right, little balls and little springs.
+- [01:00:35,620 - 01:00:37,620] Let's just call this x sub i squared.
+- [01:00:37,620 - 01:00:39,620] x sub i squared now stands for x squared.
+- [01:00:40,620 - 01:00:43,620] x dot squared plus y dot squared.
+- [01:00:43,620 - 01:00:48,620] Okay, what is the potential energy between the points?
+- [01:00:48,620 - 01:00:51,620] The potential energy is a
+- [01:00:51,620 - 01:00:54,620] sum also over all neighboring pairs.
+- [01:00:54,620 - 01:00:59,620] So there's another sum of i here.
+- [01:00:59,620 - 01:01:01,620] There's a spring constant.
+- [01:01:01,620 - 01:01:02,620] Let's just call it k.
+- [01:01:02,620 - 01:01:04,620] All the mass points have the same mass.
+- [01:01:04,620 - 01:01:06,620] There's a spring constant there.
+- [01:01:06,620 - 01:01:08,620] And what is the potential energy
+- [01:01:08,620 - 01:01:11,620] between a pair of points?
+- [01:01:11,620 - 01:01:14,620] It'll be proportional to the distance between them,
+- [01:01:14,620 - 01:01:20,620] xi minus xi plus one squared.
+- [01:01:20,620 - 01:01:24,620] Probably a two there.
+- [01:01:24,620 - 01:01:26,620] This is Hooke's Law.
+- [01:01:26,620 - 01:01:28,620] This is Hooke's Law.
+- [01:01:28,620 - 01:01:31,620] The energy stored in a stretched spring
+- [01:01:31,620 - 01:01:36,620] is proportional to the distance of stretching squared.
+- [01:01:36,620 - 01:01:37,620] That's the Hooke's Law.
+- [01:01:37,620 - 01:01:40,620] The formula for the...
+- [01:01:40,620 - 01:01:44,620] Now, what happens when you go to the continuum limit?
+- [01:01:44,620 - 01:01:46,620] In other words, you let the
+- [01:01:46,620 - 01:01:48,620] points get denser and denser and denser,
+- [01:01:48,620 - 01:01:50,620] more and more of them.
+- [01:01:50,620 - 01:01:51,620] You have to do two things.
+- [01:01:51,620 - 01:01:53,620] You have to let the mass
+- [01:01:53,620 - 01:01:55,620] of each one go to zero,
+- [01:01:55,620 - 01:01:58,620] and you have to also let the spring constant...
+- [01:01:58,620 - 01:01:59,620] What is this?
+- [01:01:59,620 - 01:02:01,620] You want the spring constant to get big or small?
+- [01:02:03,620 - 01:02:04,620] Big.
+- [01:02:05,620 - 01:02:06,620] Big.
+- [01:02:06,620 - 01:02:08,620] Do you know why?
+- [01:02:08,620 - 01:02:10,620] Supposing you take a rubber band.
+- [01:02:10,620 - 01:02:12,120] You take a rubber band, a
+- [01:02:12,120 - 01:02:13,620] big, long piece of rubber band,
+- [01:02:13,620 - 01:02:14,620] and you stretch it.
+- [01:02:14,620 - 01:02:15,620] It's easy to stretch.
+- [01:02:15,620 - 01:02:18,620] Now take two points very close to each other
+- [01:02:18,620 - 01:02:20,620] and try to stretch them that same distance,
+- [01:02:20,620 - 01:02:21,620] much harder.
+- [01:02:21,620 - 01:02:22,620] Okay?
+- [01:02:22,620 - 01:02:24,620] So the spring constant gets big,
+- [01:02:24,620 - 01:02:25,620] and the mass gets small,
+- [01:02:25,620 - 01:02:27,620] but in the end what you get...
+- [01:02:27,620 - 01:02:29,620] Just take it from me.
+- [01:02:29,620 - 01:02:31,620] What you get is, of course, an integral represent...
+- [01:02:31,620 - 01:02:35,620] an integral replacing the sum,
+- [01:02:36,620 - 01:02:41,620] the integral is over a parameter along the string.
+- [01:02:41,620 - 01:02:44,120] You have to introduce a
+- [01:02:44,120 - 01:02:46,620] mathematical parameter along the string.
+- [01:02:46,620 - 01:02:48,620] We can call that parameter, we'll give it a name,
+- [01:02:48,620 - 01:02:50,620] sigma.
+- [01:02:50,620 - 01:02:53,620] Sigma goes from one end of the
+- [01:02:53,620 - 01:02:56,620] string where we can arbitrarily say it's zero.
+- [01:02:56,620 - 01:02:59,620] So sigma is zero at this end,
+- [01:02:59,620 - 01:03:02,120] and at the other end we can
+- [01:03:02,120 - 01:03:04,620] arbitrarily say sigma is equal to pi.
+- [01:03:04,620 - 01:03:06,620] I could have taken it to be one,
+- [01:03:06,620 - 01:03:07,620] I could have taken it to be seven,
+- [01:03:07,620 - 01:03:11,620] it doesn't matter.
+- [01:03:11,620 - 01:03:15,620] It will be useful to call it pi.
+- [01:03:15,620 - 01:03:17,120] The reason is later on
+- [01:03:17,120 - 01:03:18,620] we're going to study closed strings,
+- [01:03:18,620 - 01:03:20,620] which go all the ways around in a loop,
+- [01:03:20,620 - 01:03:22,120] and it's nice to say they go
+- [01:03:22,120 - 01:03:23,620] from zero to two pi, that's all.
+- [01:03:23,620 - 01:03:27,620] But they go from zero to pi.
+- [01:03:27,620 - 01:03:30,120] So this sum over the mass
+- [01:03:30,120 - 01:03:32,620] points is going to be an integral
+- [01:03:32,620 - 01:03:34,620] from zero to pi, d sigma.
+- [01:03:34,620 - 01:03:35,620] This is adding up.
+- [01:03:35,620 - 01:03:36,620] This is adding up.
+- [01:03:36,620 - 01:03:38,620] This is adding them all up.
+- [01:03:38,620 - 01:03:41,620] And we're going to have the kinetic energy
+- [01:03:41,620 - 01:03:49,620] of the little element of string at point sigma.
+- [01:03:49,620 - 01:03:51,620] We have a continuous string now.
+- [01:03:51,620 - 01:03:54,620] We take a little element at point sigma.
+- [01:03:54,620 - 01:03:58,620] We take its velocity squared and divide by two.
+- [01:03:58,620 - 01:04:02,620] And what about this term over here?
+- [01:04:02,620 - 01:04:05,620] I've chosen the mass to go
+- [01:04:05,620 - 01:04:09,620] in the appropriate way of dropping the mass here.
+- [01:04:09,620 - 01:04:12,620] By the time you're finished,
+- [01:04:12,620 - 01:04:15,620] you can absorb the mass into something else.
+- [01:04:15,620 - 01:04:16,620] It doesn't matter what.
+- [01:04:16,620 - 01:04:17,620] It's just x dot squared.
+- [01:04:17,620 - 01:04:19,620] It's clearly kinetic energy.
+- [01:04:19,620 - 01:04:20,620] What about this term here?
+- [01:04:20,620 - 01:04:22,620] What's that going to look like?
+- [01:04:22,620 - 01:04:24,620] How about xi minus xi plus one?
+- [01:04:24,620 - 01:04:27,620] What do you replace that with?
+- [01:04:27,620 - 01:04:28,620] Derivative.
+- [01:04:28,620 - 01:04:29,620] Derivative.
+- [01:04:29,620 - 01:04:32,120] This is like the derivative
+- [01:04:32,120 - 01:04:34,620] of x with respect to sigma.
+- [01:04:35,620 - 01:04:38,620] So, the other term here will be
+- [01:04:38,620 - 01:04:41,620] derivative of x with respect to sigma.
+- [01:04:41,620 - 01:04:44,620] This is derivative of x with respect to time.
+- [01:04:44,620 - 01:04:49,620] This is derivative of x with respect to sigma squared.
+- [01:04:49,620 - 01:04:51,620] This is the energy of the string.
+- [01:04:51,620 - 01:04:53,620] If I wanted to write the Lagrangian,
+- [01:04:53,620 - 01:04:56,620] you all remember what a Lagrangian is.
+- [01:04:56,620 - 01:05:00,620] Energy is kinetic energy plus potential energy
+- [01:05:00,620 - 01:05:03,620] plus potential energy plus potential energy.
+- [01:05:03,620 - 01:05:04,620] So, this is the energy of the string.
+- [01:05:04,620 - 01:05:06,620] This is potential energy.
+- [01:05:06,620 - 01:05:09,620] Lagrangian is kinetic energy minus.
+- [01:05:09,620 - 01:05:13,620] So, if I wanted the Lagrangian,
+- [01:05:13,620 - 01:05:16,620] it would be this.
+- [01:05:16,620 - 01:05:17,620] If I wanted the energy,
+- [01:05:17,620 - 01:05:20,620] it would be with a plus sign.
+- [01:05:20,620 - 01:05:21,620] I'll write the energy.
+- [01:05:21,620 - 01:05:26,620] We'll write the energy.
+- [01:05:26,620 - 01:05:32,620] Hamiltonian plus.
+- [01:05:32,620 - 01:05:35,620] Let's focus for a little bit.
+- [01:05:35,620 - 01:05:38,120] I'm going to stop in a
+- [01:05:38,120 - 01:05:40,620] few minutes and we'll take a rest.
+- [01:05:40,620 - 01:05:46,620] But let's focus a little bit on a string
+- [01:05:46,620 - 01:05:52,620] which happens to have no overall center of mass motion
+- [01:05:52,620 - 01:05:55,620] in the two dimensions in the xy plane.
+- [01:05:55,620 - 01:05:59,620] We're coming back now to here.
+- [01:05:59,620 - 01:06:01,620] What we're going to do is use a model
+- [01:06:01,620 - 01:06:04,620] of a relativistic string
+- [01:06:04,620 - 01:06:06,620] which is simply based on
+- [01:06:06,620 - 01:06:08,620] this kind of infinite momentum thinking
+- [01:06:08,620 - 01:06:11,620] but in which there are only two x's.
+- [01:06:11,620 - 01:06:14,620] The two x's moving in
+- [01:06:14,620 - 01:06:17,620] the direction perpendicular to the motion.
+- [01:06:17,620 - 01:06:19,620] So, this could be called x and y,
+- [01:06:19,620 - 01:06:21,620] but I'll just call it x dot squared.
+- [01:06:21,620 - 01:06:22,620] It really consists of x
+- [01:06:22,620 - 01:06:23,620] dot squared plus y dot squared.
+- [01:06:23,620 - 01:06:25,620] This one consists of dx by d sigma squared
+- [01:06:25,620 - 01:06:28,620] plus dy by d sigma squared.
+- [01:06:28,620 - 01:06:30,620] Is that clear?
+- [01:06:30,620 - 01:06:33,620] Yeah, okay.
+- [01:06:33,620 - 01:06:35,620] Oh, I just absorbed it.
+- [01:06:35,620 - 01:06:37,620] I just chose...
+- [01:06:37,620 - 01:06:38,620] Oh, sorry, there is a two.
+- [01:06:38,620 - 01:06:40,620] Two is important.
+- [01:06:40,620 - 01:06:43,620] I chose k in such a way to make sure
+- [01:06:43,620 - 01:06:46,620] that when I got to the final continuum limit,
+- [01:06:46,620 - 01:06:48,620] the coefficient was one.
+- [01:06:48,620 - 01:06:51,620] Remember, it's something that has to vary
+- [01:06:51,620 - 01:06:53,620] as you vary the spacing,
+- [01:06:53,620 - 01:06:58,620] and it can be chosen in such a way
+- [01:06:58,620 - 01:07:01,620] as to make this...
+- [01:07:01,620 - 01:07:05,620] And this is the conventional energy of a vibrating string.
+- [01:07:05,620 - 01:07:09,620] It has two terms, kinetic and potential.
+- [01:07:09,620 - 01:07:11,620] Potential proportional to the stretching.
+- [01:07:11,620 - 01:07:14,120] This is the x d sigma
+- [01:07:14,120 - 01:07:16,620] is the stretching of the string.
+- [01:07:16,620 - 01:07:21,620] Okay, I want to point out one interesting fact.
+- [01:07:21,620 - 01:07:25,620] This Hamiltonian here,
+- [01:07:25,620 - 01:07:27,620] or this expression for energy,
+- [01:07:27,620 - 01:07:32,620] is the generalization of this expression here
+- [01:07:32,620 - 01:07:35,620] for a system of particles
+- [01:07:35,620 - 01:07:38,620] which also has an interaction between them.
+- [01:07:38,620 - 01:07:42,620] But the whole thing, the whole object,
+- [01:07:42,620 - 01:07:45,620] it may be vibrating and doing things,
+- [01:07:45,620 - 01:07:47,620] but the whole object is an object.
+- [01:07:47,620 - 01:07:49,620] We can call it a particle.
+- [01:07:49,620 - 01:07:51,620] Who's to say it's not a particle?
+- [01:07:54,620 - 01:07:56,620] Protons and neutrons have spin.
+- [01:07:56,620 - 01:07:57,620] They rotate.
+- [01:07:57,620 - 01:08:00,620] There's all sorts of internal motions in particles.
+- [01:08:00,620 - 01:08:03,620] We know there are internal motions of particles,
+- [01:08:03,620 - 01:08:05,620] internal motions of atoms,
+- [01:08:05,620 - 01:08:09,620] internal motions of quarks inside protons and neutrons.
+- [01:08:09,620 - 01:08:11,620] The best bet would be there
+- [01:08:11,620 - 01:08:13,620] are all sorts of internal motions
+- [01:08:13,620 - 01:08:15,620] in every particle.
+- [01:08:15,620 - 01:08:17,620] So this stringy vibrations and
+- [01:08:17,620 - 01:08:19,620] internal motions and so forth,
+- [01:08:19,620 - 01:08:22,620] that perhaps, not perhaps,
+- [01:08:22,620 - 01:08:24,620] but would add up to all
+- [01:08:24,620 - 01:08:26,620] the internal motion in the particle.
+- [01:08:26,620 - 01:08:29,620] All the internal energy in the particle.
+- [01:08:29,620 - 01:08:34,620] The internal energy would be the contributions to the energy
+- [01:08:34,620 - 01:08:37,620] from the potential stretching
+- [01:08:37,620 - 01:08:41,620] and from the relative motion of the different parts.
+- [01:08:41,620 - 01:08:43,620] The overall motion,
+- [01:08:43,620 - 01:08:45,620] we'll separate that out soon enough,
+- [01:08:45,620 - 01:08:47,620] but the overall motion of the string,
+- [01:08:47,620 - 01:08:49,620] the center of mass of it,
+- [01:08:49,620 - 01:08:51,620] that would just be treated
+- [01:08:51,620 - 01:08:53,620] as the position of the particle.
+- [01:08:53,620 - 01:08:55,620] But the relative stretching
+- [01:08:55,620 - 01:08:57,620] and the relative vibration,
+- [01:08:57,620 - 01:08:59,620] that's internal energy.
+- [01:08:59,620 - 01:09:03,620] So, when we calculate the internal energy of this particle,
+- [01:09:03,620 - 01:09:05,620] what should we relate it to?
+- [01:09:05,620 - 01:09:08,620] We should relate it not to the mass,
+- [01:09:08,620 - 01:09:11,620] but to the mass squared.
+- [01:09:13,620 - 01:09:16,620] In this correspondence,
+- [01:09:16,620 - 01:09:17,620] it's not an analogy,
+- [01:09:17,620 - 01:09:23,620] it's an exact statement about the properties of relativity.
+- [01:09:23,620 - 01:09:25,620] It's a very precise statement.
+- [01:09:25,620 - 01:09:27,620] It's a very precise mathematical statement,
+- [01:09:27,620 - 01:09:28,620] which I won't make now,
+- [01:09:28,620 - 01:09:30,620] but there is an exact sense
+- [01:09:30,620 - 01:09:32,620] in which fast-moving systems
+- [01:09:32,620 - 01:09:35,620] are completely non-relativistic
+- [01:09:35,620 - 01:09:37,620] in the two-dimensional sense.
+- [01:09:37,620 - 01:09:41,620] What would the internal energy correspond to?
+- [01:09:41,620 - 01:09:44,620] It would correspond not to the mass of the particle,
+- [01:09:44,620 - 01:09:47,620] but to the mass squared.
+- [01:09:47,620 - 01:09:50,620] So, for a string at rest,
+- [01:09:50,620 - 01:09:53,620] think of a string which has no motion
+- [01:09:53,620 - 01:09:55,620] in the x-axis,
+- [01:09:55,620 - 01:09:57,620] but is in a x-y plane.
+- [01:09:57,620 - 01:09:59,620] All it's doing is vibrating,
+- [01:09:59,620 - 01:10:01,620] and it has internal energy.
+- [01:10:01,620 - 01:10:04,620] That internal energy has to be identified
+- [01:10:04,620 - 01:10:06,620] with the square of the mass
+- [01:10:06,620 - 01:10:11,620] of the entire assembly of constituents of the string.
+- [01:10:11,620 - 01:10:13,620] If the constituents of the string
+- [01:10:13,620 - 01:10:15,620] are adding up to something
+- [01:10:15,620 - 01:10:18,620] that we want to call a particle,
+- [01:10:18,620 - 01:10:21,620] then that particle has a mass squared,
+- [01:10:21,620 - 01:10:25,620] which is the sum of all of the internal energies
+- [01:10:25,620 - 01:10:26,620] of the particle.
+- [01:10:26,620 - 01:10:28,620] Now, this is an interesting fact.
+- [01:10:28,620 - 01:10:31,620] We get mass squared
+- [01:10:31,620 - 01:10:33,620] for the energy of a particle
+- [01:10:33,620 - 01:10:35,620] in this framework.
+- [01:10:43,620 - 01:10:45,620] There are some C's around,
+- [01:10:45,620 - 01:10:47,620] which I haven't tried to keep track of.
+- [01:10:47,620 - 01:10:49,620] There are C's,
+- [01:10:49,620 - 01:10:51,620] and, yeah, there are C's,
+- [01:10:51,620 - 01:10:53,620] and, right.
+- [01:10:53,620 - 01:10:55,620] Yeah, I haven't tried to keep track of them.
+- [01:10:55,620 - 01:10:57,620] But,
+- [01:11:01,620 - 01:11:03,620] this connection was something I knew
+- [01:11:03,620 - 01:11:05,620] that nobody else knew at the time.
+- [01:11:07,620 - 01:11:09,620] I worked on both these things.
+- [01:11:09,620 - 01:11:12,620] And, so,
+- [01:11:12,620 - 01:11:14,620] this is interesting.
+- [01:11:14,620 - 01:11:15,620] This is exciting.
+- [01:11:15,620 - 01:11:16,620] Another fact.
+- [01:11:16,620 - 01:11:20,620] Another fact is that a string
+- [01:11:20,620 - 01:11:22,620] is not so different than a spring.
+- [01:11:22,620 - 01:11:24,620] If you look at the spectrum of energy,
+- [01:11:24,620 - 01:11:27,620] the spectrum of energies of a string,
+- [01:11:27,620 - 01:11:30,620] it's quantized in pretty much the same way.
+- [01:11:30,620 - 01:11:33,620] We're going to do the quantization of it carefully,
+- [01:11:33,620 - 01:11:38,620] but the basic fact about the quantization of it
+- [01:11:38,620 - 01:11:41,620] is that the string is a collection of springs,
+- [01:11:41,620 - 01:11:44,620] and springs have quantized energy.
+- [01:11:44,620 - 01:11:47,620] And what's the formula for the energy
+- [01:11:47,620 - 01:11:49,620] of a quantum mechanical oscillator?
+- [01:11:49,620 - 01:11:52,620] An integer multiple of something.
+- [01:11:52,620 - 01:11:54,620] Each time,
+- [01:11:54,620 - 01:11:58,620] you increase the energy of a spring or a string,
+- [01:11:58,620 - 01:12:00,620] the internal energy,
+- [01:12:00,620 - 01:12:01,620] by one unit,
+- [01:12:01,620 - 01:12:05,620] it increases the mass squared by one unit.
+- [01:12:05,620 - 01:12:09,620] Increases the mass squared by one unit.
+- [01:12:09,620 - 01:12:10,620] A quick question.
+- [01:12:10,620 - 01:12:11,620] Yeah.
+- [01:12:11,620 - 01:12:14,620] The m, m, energy is m squared.
+- [01:12:14,620 - 01:12:15,620] The m is,
+- [01:12:15,620 - 01:12:17,620] this is a simple confusion,
+- [01:12:17,620 - 01:12:19,620] is m the mass of the string?
+- [01:12:19,620 - 01:12:21,620] Yeah, it's the mass of the whole string.
+- [01:12:21,620 - 01:12:22,620] The whole string.
+- [01:12:22,620 - 01:12:23,620] The whole string.
+- [01:12:23,620 - 01:12:25,120] So she doubled the size
+- [01:12:25,120 - 01:12:26,620] of the mass of the string
+- [01:12:26,620 - 01:12:29,620] four times the energy of the general,
+- [01:12:29,620 - 01:12:30,620] because m squared would be,
+- [01:12:30,620 - 01:12:32,620] is that correct?
+- [01:12:32,620 - 01:12:33,620] Yeah.
+- [01:12:33,620 - 01:12:34,620] Yeah.
+- [01:12:34,620 - 01:12:35,620] You've stolen my thunder.
+- [01:12:35,620 - 01:12:37,620] Well, I,
+- [01:12:37,620 - 01:12:40,620] I'm confused.
+- [01:12:40,620 - 01:12:42,620] Okay, but now,
+- [01:12:42,620 - 01:12:44,620] well, okay, let's look at this formula
+- [01:12:44,620 - 01:12:46,620] a little bit carefully now,
+- [01:12:46,620 - 01:12:51,620] and see if we can see anything interesting.
+- [01:12:51,620 - 01:12:52,620] Good question.
+- [01:12:52,620 - 01:12:55,620] The right side,
+- [01:12:55,620 - 01:12:57,620] you have m squared there.
+- [01:12:57,620 - 01:12:58,620] That would kind of,
+- [01:12:58,620 - 01:13:03,620] kind of connote the rest mass of the system, correct?
+- [01:13:03,620 - 01:13:06,620] It is in fact the rest mass of the string
+- [01:13:06,620 - 01:13:09,620] in a frame of reference where it's not zipping along,
+- [01:13:09,620 - 01:13:11,620] but where it was really stationary.
+- [01:13:11,620 - 01:13:12,620] But the equation seems to be,
+- [01:13:12,620 - 01:13:16,620] seems to be not well describing a photon.
+- [01:13:16,620 - 01:13:17,620] It, well,
+- [01:13:17,620 - 01:13:19,620] that's right, because a photon is massless.
+- [01:13:19,620 - 01:13:20,620] Yeah.
+- [01:13:20,620 - 01:13:21,620] Well, that just corresponds to m equals zero
+- [01:13:21,620 - 01:13:23,620] on the right-hand side.
+- [01:13:23,620 - 01:13:24,620] And you're going to ask me,
+- [01:13:24,620 - 01:13:25,620] how can this thing be zero?
+- [01:13:25,620 - 01:13:26,620] Well, we're going to come to that.
+- [01:13:26,620 - 01:13:29,620] That is a very significant and interesting point.
+- [01:13:29,620 - 01:13:31,620] We're going to come to it.
+- [01:13:31,620 - 01:13:32,620] For the moment,
+- [01:13:32,620 - 01:13:35,620] it's just the mass of the entire string.
+- [01:13:35,620 - 01:13:39,620] The entire, including its internal energy,
+- [01:13:39,620 - 01:13:41,620] including its stretching energy,
+- [01:13:41,620 - 01:13:44,620] all of the energies that you would normally add up
+- [01:13:44,620 - 01:13:45,620] to find m c squared,
+- [01:13:45,620 - 01:13:47,620] to find the rest mass,
+- [01:13:47,620 - 01:13:49,620] that's what this is here.
+- [01:13:49,620 - 01:13:50,620] Okay?
+- [01:13:50,620 - 01:13:52,620] It's just a, yeah.
+- [01:13:52,620 - 01:13:55,620] This is just a classical mechanics
+- [01:13:55,620 - 01:13:57,620] and relativity applied so far.
+- [01:13:57,620 - 01:13:58,620] We haven't invented any other?
+- [01:13:58,620 - 01:14:00,620] We haven't introduced quantum mechanics yet.
+- [01:14:00,620 - 01:14:01,620] Do things like that.
+- [01:14:01,620 - 01:14:02,620] Nope.
+- [01:14:02,620 - 01:14:03,620] Okay.
+- [01:14:03,620 - 01:14:04,620] But if we did introduce quantum mechanics,
+- [01:14:04,620 - 01:14:06,620] we would know that this string would be,
+- [01:14:06,620 - 01:14:08,620] would have quantized energy levels,
+- [01:14:08,620 - 01:14:12,620] and therefore quantized mass squares.
+- [01:14:12,620 - 01:14:15,620] In fact, if we increase the angular momentum
+- [01:14:15,620 - 01:14:18,620] by one quantum,
+- [01:14:18,620 - 01:14:20,620] then the quantized energy,
+- [01:14:20,620 - 01:14:22,620] the quantum of energy that would be introduced
+- [01:14:22,620 - 01:14:24,620] would be a quantum of m squared,
+- [01:14:24,620 - 01:14:26,620] not a quantum of m.
+- [01:14:26,620 - 01:14:27,620] All right.
+- [01:14:27,620 - 01:14:28,620] So.
+- [01:14:28,620 - 01:14:30,620] All right.
+- [01:14:30,620 - 01:14:32,620] All right.
+- [01:14:32,620 - 01:14:35,620] This was an immediate piece of evidence that,
+- [01:14:35,620 - 01:14:37,620] that moreover,
+- [01:14:37,620 - 01:14:38,620] yeah, okay.
+- [01:14:38,620 - 01:14:41,620] This was, this was one of the hints that,
+- [01:14:41,620 - 01:14:42,620] one of the hints.
+- [01:14:42,620 - 01:14:44,620] There's another interesting fact here.
+- [01:14:44,620 - 01:14:46,620] Supposing you took a string
+- [01:14:46,620 - 01:14:47,620] which was not moving,
+- [01:14:47,620 - 01:14:49,620] but which you stretched out,
+- [01:14:49,620 - 01:14:52,620] which you stretched out to a certain length,
+- [01:14:52,620 - 01:14:53,620] okay,
+- [01:14:53,620 - 01:14:54,620] how much energy would it have?
+- [01:14:54,620 - 01:14:56,620] Well, then all of its energy would be
+- [01:14:56,620 - 01:14:59,620] potential energy, not kinetic energy.
+- [01:14:59,620 - 01:15:01,620] Let's calculate what it would be.
+- [01:15:01,620 - 01:15:03,620] How big is the x d sigma?
+- [01:15:03,620 - 01:15:05,620] Well, if you stretched it out uniformly,
+- [01:15:05,620 - 01:15:09,620] then the change in x along the length of it
+- [01:15:09,620 - 01:15:12,620] would just be the length of the string.
+- [01:15:12,620 - 01:15:13,620] L would just be,
+- [01:15:13,620 - 01:15:14,620] we're stretching it out
+- [01:15:14,620 - 01:15:17,620] to a physical distance L.
+- [01:15:17,620 - 01:15:23,620] We stretch it out to a physical distance L
+- [01:15:23,620 - 01:15:29,620] over a distance from zero to pi, right?
+- [01:15:29,620 - 01:15:30,620] All right.
+- [01:15:30,620 - 01:15:32,620] So the derivative of x with respect to sigma
+- [01:15:32,620 - 01:15:35,620] would be something like L divided by pi.
+- [01:15:35,620 - 01:15:37,620] I don't care about the pi's right now.
+- [01:15:37,620 - 01:15:39,620] They're not what's, what's interesting.
+- [01:15:39,620 - 01:15:42,620] The x by d sigma would just be proportional
+- [01:15:42,620 - 01:15:44,620] to the length of the string.
+- [01:15:44,620 - 01:15:45,620] Okay.
+- [01:15:45,620 - 01:15:47,620] If you stretched it out by distance L,
+- [01:15:47,620 - 01:15:49,620] and divided it by the range of sigma
+- [01:15:49,620 - 01:15:50,620] from zero to pi,
+- [01:15:50,620 - 01:15:53,620] that would give you the x by d sigma.
+- [01:15:53,620 - 01:15:54,620] And so we can say
+- [01:15:54,620 - 01:15:55,620] that the x by d sigma
+- [01:15:55,620 - 01:15:58,620] is proportional to the length of the string.
+- [01:15:58,620 - 01:16:00,620] And the x by d sigma squared
+- [01:16:00,620 - 01:16:02,120] would just be the square of
+- [01:16:02,120 - 01:16:03,620] the length of the string, right?
+- [01:16:03,620 - 01:16:05,620] This is Hooke's law.
+- [01:16:05,620 - 01:16:07,620] This is Hooke's law for a string.
+- [01:16:07,620 - 01:16:09,620] If you stretch it out to distance L,
+- [01:16:09,620 - 01:16:11,620] the energy stored in it,
+- [01:16:11,620 - 01:16:13,620] nonrelativistically,
+- [01:16:13,620 - 01:16:15,620] will be L squared.
+- [01:16:15,620 - 01:16:16,620] But that's what has to equal the mass of it.
+- [01:16:16,620 - 01:16:18,620] That's what has to equal the mass squared.
+- [01:16:20,620 - 01:16:23,620] Now we know something interesting
+- [01:16:23,620 - 01:16:26,620] about how, about the energetics of the string
+- [01:16:26,620 - 01:16:29,620] if we were to study it in the rest frame.
+- [01:16:29,620 - 01:16:31,620] In the rest frame of the string,
+- [01:16:31,620 - 01:16:34,620] the energy of the string is the mass.
+- [01:16:34,620 - 01:16:37,620] We got from mass to mass squared
+- [01:16:37,620 - 01:16:38,620] by boosting the string.
+- [01:16:38,620 - 01:16:39,620] But if we went back now,
+- [01:16:39,620 - 01:16:41,620] and we said, look, wait a minute.
+- [01:16:41,620 - 01:16:43,620] We know E equals mc squared.
+- [01:16:43,620 - 01:16:44,620] That's rest mass.
+- [01:16:44,620 - 01:16:46,620] What is the rest mass?
+- [01:16:46,620 - 01:16:48,620] The rest mass of the string.
+- [01:16:48,620 - 01:16:50,620] And the answer is that the rest mass
+- [01:16:50,620 - 01:16:52,620] is proportional to,
+- [01:16:52,620 - 01:16:54,620] is a proportionality factor,
+- [01:16:54,620 - 01:16:57,620] proportional to its length.
+- [01:16:57,620 - 01:16:59,620] In other words,
+- [01:16:59,620 - 01:17:01,620] this string has the property
+- [01:17:01,620 - 01:17:03,620] that the energy,
+- [01:17:03,620 - 01:17:06,620] if you think about it in its rest frame,
+- [01:17:06,620 - 01:17:09,620] if you stretch it out to distance L,
+- [01:17:09,620 - 01:17:11,620] it will have an energy
+- [01:17:11,620 - 01:17:14,620] which will grow with L
+- [01:17:14,620 - 01:17:17,620] and be proportional to L.
+- [01:17:17,620 - 01:17:19,620] In the rest frame,
+- [01:17:19,620 - 01:17:22,620] it doesn't look like a Hooke's law string at all.
+- [01:17:22,620 - 01:17:24,620] It looks like a different kind of string
+- [01:17:24,620 - 01:17:27,620] whose energy is proportional to its length.
+- [01:17:32,620 - 01:17:34,620] Well, that's very interesting
+- [01:17:34,620 - 01:17:36,620] because it fits with another picture.
+- [01:17:36,620 - 01:17:38,620] It fits with the picture
+- [01:17:38,620 - 01:17:40,620] which I described before
+- [01:17:40,620 - 01:17:43,620] of lines of,
+- [01:17:43,620 - 01:17:47,620] lines of flux connecting quarks and anti-quarks.
+- [01:17:49,620 - 01:17:52,620] Lines of flux would produce,
+- [01:17:52,620 - 01:17:55,620] if I slice them through like this,
+- [01:17:55,620 - 01:17:57,120] they would produce a patch
+- [01:17:57,120 - 01:17:58,620] of electric or magnetic field here.
+- [01:17:58,620 - 01:18:01,620] It doesn't matter whether it's electric or magnetic.
+- [01:18:01,620 - 01:18:03,620] Lines of flux in a tube like this
+- [01:18:03,620 - 01:18:06,620] would produce a magnetic or an electric field in here.
+- [01:18:06,620 - 01:18:08,620] Electric fields have energy,
+- [01:18:08,620 - 01:18:11,620] and the energy density in them depends on the field.
+- [01:18:11,620 - 01:18:13,620] The energy density along the field,
+- [01:18:13,620 - 01:18:16,620] along this long tube of flux,
+- [01:18:16,620 - 01:18:18,620] would be uniform.
+- [01:18:18,620 - 01:18:21,120] If the number of flux
+- [01:18:21,120 - 01:18:23,620] lines passing through this little area
+- [01:18:23,620 - 01:18:24,620] is the same as the
+- [01:18:24,620 - 01:18:25,620] number passing through this little area,
+- [01:18:25,620 - 01:18:27,620] and so forth,
+- [01:18:27,620 - 01:18:29,620] the field strength would be uniform
+- [01:18:29,620 - 01:18:32,620] along this tube of flux here.
+- [01:18:32,620 - 01:18:34,620] This is, in fact, a
+- [01:18:34,620 - 01:18:36,620] property of tubes of magnetic flux
+- [01:18:36,620 - 01:18:39,620] and superconductors and so forth.
+- [01:18:39,620 - 01:18:41,620] And superconductors are,
+- [01:18:41,620 - 01:18:43,620] and superconductors are,
+- [01:18:43,620 - 01:18:45,620] superconductors, you don't have, of course,
+- [01:18:45,620 - 01:18:47,620] monopoles in superconductors,
+- [01:18:47,620 - 01:18:50,620] but you can have long lines of magnetic flux,
+- [01:18:50,620 - 01:18:52,620] and they have the property
+- [01:18:52,620 - 01:18:54,620] that the magnetic field is uniform along them,
+- [01:18:54,620 - 01:18:58,620] and therefore the energy density is uniform along them.
+- [01:18:58,620 - 01:19:02,620] That means that the energy is proportional to their length.
+- [01:19:02,620 - 01:19:07,620] This is a common thing in field theory
+- [01:19:07,620 - 01:19:09,620] and condensed matter physics
+- [01:19:09,620 - 01:19:11,620] and a variety of different contexts
+- [01:19:11,620 - 01:19:13,620] where field energy,
+- [01:19:13,620 - 01:19:16,620] in a field forming a long string,
+- [01:19:16,620 - 01:19:18,620] is proportional to the length of the string,
+- [01:19:18,620 - 01:19:19,620] not the length squared.
+- [01:19:19,620 - 01:19:21,620] It's a different kind of string.
+- [01:19:21,620 - 01:19:23,620] Another way to think about it
+- [01:19:23,620 - 01:19:26,120] is that the string is made
+- [01:19:26,120 - 01:19:28,620] up of a lot of little particles,
+- [01:19:28,620 - 01:19:30,620] but as you pull on it
+- [01:19:30,620 - 01:19:33,620] and separate the distances here,
+- [01:19:33,620 - 01:19:35,620] new particles form in between
+- [01:19:35,620 - 01:19:37,620] so as to keep the number
+- [01:19:37,620 - 01:19:39,620] of particles per unit length fixed.
+- [01:19:39,620 - 01:19:42,620] That's another way to think about these long flux lines,
+- [01:19:42,620 - 01:19:45,620] that they're uniform along their length,
+- [01:19:45,620 - 01:19:47,620] and as you pull them apart,
+- [01:19:47,620 - 01:19:50,620] more particles form to fill the gaps.
+- [01:19:50,620 - 01:19:52,620] Then, in that situation,
+- [01:19:52,620 - 01:19:53,620] it would also be true
+- [01:19:53,620 - 01:19:56,620] that the energy per unit length would be fixed,
+- [01:19:56,620 - 01:19:59,620] and the energy would be proportional to the length.
+- [01:20:01,620 - 01:20:03,620] This is, by now,
+- [01:20:03,620 - 01:20:07,620] actually an experimental fact about hadrons,
+- [01:20:07,620 - 01:20:09,620] that you can spin them up,
+- [01:20:09,620 - 01:20:10,620] you can stretch them,
+- [01:20:10,620 - 01:20:11,620] and they have the property
+- [01:20:11,620 - 01:20:14,620] that the energy per unit length is fixed.
+- [01:20:14,620 - 01:20:16,620] It's called the string tension.
+- [01:20:16,620 - 01:20:19,620] The string tension is a constant.
+- [01:20:19,620 - 01:20:21,120] That would not be the
+- [01:20:21,120 - 01:20:22,620] case in an ordinary Hooke's law,
+- [01:20:22,620 - 01:20:23,620] if you stretch them.
+- [01:20:23,620 - 01:20:25,620] But this is the picture in the rest frame.
+- [01:20:25,620 - 01:20:27,620] In the rest frame,
+- [01:20:27,620 - 01:20:30,620] the energy of the string is proportional to its length.
+- [01:20:30,620 - 01:20:34,620] In the infinite momentum frame,
+- [01:20:34,620 - 01:20:36,620] where the physics is all non-relativistic,
+- [01:20:36,620 - 01:20:39,620] the energy is proportional to the square of the length,
+- [01:20:39,620 - 01:20:40,620] like Hooke's law.
+- [01:20:41,620 - 01:20:43,620] So these two kinds of strings,
+- [01:20:43,620 - 01:20:47,620] Hooke's law and flux tube,
+- [01:20:47,620 - 01:20:51,620] are related to each other.
+- [01:20:51,620 - 01:20:53,620] In some sense,
+- [01:20:53,620 - 01:20:55,620] they're just the same object
+- [01:20:55,620 - 01:20:58,620] being described in two different reference frames,
+- [01:20:58,620 - 01:21:00,620] one at rest and one...
+- [01:21:00,620 - 01:21:02,620] Just to amplify that,
+- [01:21:02,620 - 01:21:04,620] if you had an ordinary rubber band,
+- [01:21:04,620 - 01:21:08,620] and it was vibrating at almost relativistic speeds in one...
+- [01:21:08,620 - 01:21:09,620] No, no, no, wait.
+- [01:21:09,620 - 01:21:10,620] Ordinary rubber bands,
+- [01:21:10,620 - 01:21:12,620] if they vibrate with relativistic speed,
+- [01:21:12,620 - 01:21:15,620] we haven't got the vaguest idea how to describe them.
+- [01:21:15,620 - 01:21:17,620] We don't want to do that.
+- [01:21:17,620 - 01:21:19,620] No.
+- [01:21:19,620 - 01:21:22,620] We've made an indirect deduction.
+- [01:21:22,620 - 01:21:24,620] We've made an indirect deduction.
+- [01:21:24,620 - 01:21:26,620] First half of the deduction was,
+- [01:21:26,620 - 01:21:28,620] in the infinite momentum frame,
+- [01:21:28,620 - 01:21:29,620] everything is non-relativistic,
+- [01:21:29,620 - 01:21:31,620] at least in two dimensions.
+- [01:21:31,620 - 01:21:35,620] We use that to discover the fact
+- [01:21:35,620 - 01:21:38,620] that the stretched energy of a string
+- [01:21:38,620 - 01:21:41,620] which is L squared,
+- [01:21:41,620 - 01:21:43,620] because it's described non-relativistically
+- [01:21:43,620 - 01:21:46,620] like a Hooke's law spring,
+- [01:21:46,620 - 01:21:47,620] is L squared.
+- [01:21:47,620 - 01:21:50,620] That is to be related to M squared.
+- [01:21:50,620 - 01:21:52,620] Indirectly from that,
+- [01:21:52,620 - 01:21:55,620] we conclude that if we were in the rest frame,
+- [01:21:55,620 - 01:21:57,120] the energy of the string
+- [01:21:57,120 - 01:21:58,620] would be proportional to its length.
+- [01:21:58,620 - 01:22:00,620] And that's interesting,
+- [01:22:00,620 - 01:22:03,620] because there's a wide variety of interesting
+- [01:22:03,620 - 01:22:06,620] string-like objects that occur in field theory,
+- [01:22:06,620 - 01:22:08,620] and they're called field theories,
+- [01:22:08,620 - 01:22:10,620] not made out of atoms,
+- [01:22:10,620 - 01:22:12,620] but made out of field configurations,
+- [01:22:12,620 - 01:22:15,620] which have exactly the same property.
+- [01:22:22,620 - 01:22:25,620] All right, let's come back in a few minutes.
+- [01:22:25,620 - 01:22:30,620] I think I probably exhausted your attention for today.
+- [01:22:30,620 - 01:22:32,620] But let me summarize.
+- [01:22:32,620 - 01:22:34,620] Let me summarize.
+- [01:22:34,620 - 01:22:36,620] Let me summarize.
+- [01:22:36,620 - 01:22:38,620] Experimental properties of,
+- [01:22:38,620 - 01:22:43,620] of hadrons indicated this kind of
+- [01:22:43,620 - 01:22:46,620] excitations along a line.
+- [01:22:46,620 - 01:22:49,620] Had we been smart at the time,
+- [01:22:49,620 - 01:22:51,620] we probably would have realized
+- [01:22:51,620 - 01:22:54,620] that this pattern here
+- [01:22:54,620 - 01:22:57,620] is the appropriate pattern for strings
+- [01:22:57,620 - 01:23:01,620] whose potential energy is proportional to their length.
+- [01:23:01,620 - 01:23:03,620] That's something we actually could
+- [01:23:03,620 - 01:23:05,620] have deduced directly from here.
+- [01:23:05,620 - 01:23:07,620] In fact, why am I saying we could have?
+- [01:23:07,620 - 01:23:09,620] I mean, we could have deduced that
+- [01:23:09,620 - 01:23:12,620] the energy grew as the length of such a string.
+- [01:23:12,620 - 01:23:17,620] That was the consequence of this relationship here.
+- [01:23:17,620 - 01:23:19,620] All right, that was one fact.
+- [01:23:19,620 - 01:23:21,620] Next fact.
+- [01:23:21,620 - 01:23:23,620] Relativistic physics in a frame
+- [01:23:23,620 - 01:23:25,620] in which everything is moving fast
+- [01:23:25,620 - 01:23:28,620] is the same as non-relativistic physics,
+- [01:23:28,620 - 01:23:31,620] except in one less dimension.
+- [01:23:31,620 - 01:23:34,620] In one less dimension.
+- [01:23:34,620 - 01:23:36,620] And so we can say that,
+- [01:23:36,620 - 01:23:39,620] and so we can try to
+- [01:23:39,620 - 01:23:42,620] build a simple theory of relativistic strings
+- [01:23:42,620 - 01:23:44,620] by going to such a
+- [01:23:44,620 - 01:23:46,620] frame and just using non-relativistic physics,
+- [01:23:46,620 - 01:23:48,620] but in one less dimension.
+- [01:23:48,620 - 01:23:49,620] Here it is.
+- [01:23:49,620 - 01:23:53,620] Here's the non-relativistic string in two-dimensional space.
+- [01:23:53,620 - 01:23:55,620] The only thing we have to remember
+- [01:23:55,620 - 01:23:57,620] is that wherever we saw energy,
+- [01:23:57,620 - 01:23:59,620] we have to think of
+- [01:23:59,620 - 01:24:01,620] it, or internal energy in particular,
+- [01:24:01,620 - 01:24:03,620] internal energy should be really identified
+- [01:24:03,620 - 01:24:05,620] with the square of the mass,
+- [01:24:05,620 - 01:24:07,620] not the mass.
+- [01:24:07,620 - 01:24:09,620] Okay?
+- [01:24:09,620 - 01:24:11,620] That, if you remember, came
+- [01:24:11,620 - 01:24:13,620] from the two different expansions.
+- [01:24:13,620 - 01:24:16,620] If you like, one of them was an expansion
+- [01:24:16,620 - 01:24:19,620] in which this was the big term,
+- [01:24:19,620 - 01:24:22,120] and then the whole thing
+- [01:24:22,120 - 01:24:24,620] is approximately of order mc squared,
+- [01:24:24,620 - 01:24:26,620] square root of this thing in here.
+- [01:24:26,620 - 01:24:28,120] The other expansion was a
+- [01:24:28,120 - 01:24:29,620] term in which this was big,
+- [01:24:29,620 - 01:24:32,120] and then the excess energy was
+- [01:24:32,120 - 01:24:34,620] proportional to m squared, not m.
+- [01:24:35,620 - 01:24:37,620] So when you do that, and
+- [01:24:37,620 - 01:24:39,620] you go through this little exercise,
+- [01:24:39,620 - 01:24:44,620] your conclusion is that the Hooke's law energy
+- [01:24:44,620 - 01:24:47,620] of the effective non-relativistic string
+- [01:24:47,620 - 01:24:50,620] should be identified with the mass squared,
+- [01:24:50,620 - 01:24:52,620] which indirectly tells you that
+- [01:24:52,620 - 01:24:54,620] the rest mass of the string
+- [01:24:54,620 - 01:24:57,620] is proportional to its length.
+- [01:24:57,620 - 01:25:00,620] And finally, there are lots and lots of field theory
+- [01:25:00,620 - 01:25:03,620] and condensed matter systems which have the same property,
+- [01:25:03,620 - 01:25:05,620] so that was something.
+- [01:25:05,620 - 01:25:08,620] Encouraging, if you like.
+- [01:25:08,620 - 01:25:10,120] Okay, let's take a rest,
+- [01:25:10,120 - 01:25:11,620] and then we can come back
+- [01:25:11,620 - 01:25:13,620] and either ask some questions or...
+- [01:25:13,620 - 01:25:15,620] I don't think I'll discuss
+- [01:25:15,620 - 01:25:17,620] the quantization of the string today.
+- [01:25:17,620 - 01:25:19,620] The quantization is easy.
+- [01:25:19,620 - 01:25:21,620] We've done most of the things
+- [01:25:21,620 - 01:25:23,620] that are necessary to figure it out.
+- [01:25:23,620 - 01:25:26,620] It's just a collection of harmonic oscillators.
+- [01:25:29,620 - 01:25:34,620] But I think we can take a rest first.
+- [01:25:35,620 - 01:25:38,620] Just to help my comprehension here,
+- [01:25:38,620 - 01:25:42,620] it seems you start with a classic string,
+- [01:25:42,620 - 01:25:44,620] then you boost the hell out
+- [01:25:44,620 - 01:25:46,620] of it in the z direction,
+- [01:25:46,620 - 01:25:49,620] and you basically do a Lorentz transform.
+- [01:25:49,620 - 01:25:52,620] Shouldn't you get the same physics when you go back?
+- [01:25:52,620 - 01:25:55,620] Shouldn't you get back the physics that you started with?
+- [01:25:55,620 - 01:25:57,620] You do.
+- [01:25:57,620 - 01:25:59,620] You do, it's just easier this way.
+- [01:25:59,620 - 01:26:01,620] No, but you don't have the same physics.
+- [01:26:01,620 - 01:26:02,620] No?
+- [01:26:02,620 - 01:26:04,620] At first, you start with a string that had a...
+- [01:26:04,620 - 01:26:08,620] a length proportional to its mass squared.
+- [01:26:08,620 - 01:26:12,620] In both cases, the mass is proportional to the length,
+- [01:26:12,620 - 01:26:14,620] and the mass squared is proportional to the length squared,
+- [01:26:14,620 - 01:26:16,620] in both cases.
+- [01:26:18,620 - 01:26:21,620] But in one case, you call the energy the mass,
+- [01:26:21,620 - 01:26:23,120] in the other case, you
+- [01:26:23,120 - 01:26:24,620] call the energy the mass squared.
+- [01:26:24,620 - 01:26:25,620] Let's go through that.
+- [01:26:25,620 - 01:26:27,620] I'll come back to your question in a minute.
+- [01:26:27,620 - 01:26:28,620] Let me just go through it again,
+- [01:26:28,620 - 01:26:30,620] because there was some sleight of hand.
+- [01:26:30,620 - 01:26:32,620] There was some tricky business there.
+- [01:26:32,620 - 01:26:34,620] We wrote that energy is equal to...
+- [01:26:34,620 - 01:26:38,620] square root of p squared plus m squared.
+- [01:26:38,620 - 01:26:41,120] Let's, for the moment, forget
+- [01:26:41,120 - 01:26:43,620] the motion in the xy plane.
+- [01:26:43,620 - 01:26:45,120] Let's just concentrate on the
+- [01:26:45,120 - 01:26:46,620] z direction and the time direction.
+- [01:26:46,620 - 01:26:50,620] Energy is related to time, p is related to space.
+- [01:26:50,620 - 01:26:52,620] There's two ways I could expand this.
+- [01:26:52,620 - 01:26:54,620] One of them is good when
+- [01:26:54,620 - 01:26:56,620] p is small and m is large.
+- [01:26:58,620 - 01:27:00,620] In other words, when I'm in a...
+- [01:27:00,620 - 01:27:02,120] and when the particle is moving
+- [01:27:02,120 - 01:27:03,620] slowly in my frame of reference.
+- [01:27:03,620 - 01:27:06,620] In that case, let's see what we do.
+- [01:27:06,620 - 01:27:08,620] Then we write that this is equal
+- [01:27:08,620 - 01:27:10,620] to p times the square root of
+- [01:27:10,620 - 01:27:13,620] 1 plus m squared over p squared, right?
+- [01:27:16,620 - 01:27:19,620] Sorry, I want to start in the situation
+- [01:27:19,620 - 01:27:22,620] where p is small and m is large.
+- [01:27:22,620 - 01:27:23,620] Good.
+- [01:27:23,620 - 01:27:25,120] p is small and m is
+- [01:27:25,120 - 01:27:26,620] large, so I write this then as
+- [01:27:26,620 - 01:27:31,620] m squared times 1 plus p squared over m squared.
+- [01:27:31,620 - 01:27:32,620] p is small.
+- [01:27:32,620 - 01:27:36,620] p is small and m is large, so
+- [01:27:36,620 - 01:27:40,620] p squared over m squared is a small quantity.
+- [01:27:40,620 - 01:27:42,620] Okay?
+- [01:27:42,620 - 01:27:43,620] Nod.
+- [01:27:43,620 - 01:27:45,620] Good. Okay.
+- [01:27:46,620 - 01:27:49,620] The m can come out and this becomes m times
+- [01:27:49,620 - 01:27:52,620] the square root of 1 plus p squared plus m squared,
+- [01:27:52,620 - 01:27:56,620] but that's approximately 1 plus p squared over 2m.
+- [01:27:59,620 - 01:28:00,620] Okay?
+- [01:28:00,620 - 01:28:01,620] Squared.
+- [01:28:02,620 - 01:28:06,620] Which is equal to m, which really means mc squared,
+- [01:28:06,620 - 01:28:09,620] plus p squared over 2m.
+- [01:28:10,620 - 01:28:14,620] So, in that context, the internal energy
+- [01:28:14,620 - 01:28:18,620] when the particle is at rest in space
+- [01:28:18,620 - 01:28:21,620] is proportional to the mass.
+- [01:28:21,620 - 01:28:23,620] That's your good old e equals mc squared.
+- [01:28:23,620 - 01:28:24,620] Okay.
+- [01:28:24,620 - 01:28:27,120] And that tells you that for
+- [01:28:27,120 - 01:28:29,620] a particle at rest, it's inertia.
+- [01:28:29,620 - 01:28:31,620] A particle at rest, it's inertia.
+- [01:28:31,620 - 01:28:36,620] In other words, its usual resistance to acceleration
+- [01:28:36,620 - 01:28:41,620] is the same as its mass and its energy.
+- [01:28:41,620 - 01:28:43,620] It's mass meaning inertia, and its
+- [01:28:43,620 - 01:28:45,620] energy are proportional to each other.
+- [01:28:45,620 - 01:28:46,620] Okay.
+- [01:28:46,620 - 01:28:50,620] Now, let's do the other expansion.
+- [01:28:50,620 - 01:28:53,120] The other expansion, we boost like hell
+- [01:28:53,120 - 01:28:55,620] so that the momentum is very large.
+- [01:28:55,620 - 01:28:57,620] Okay?
+- [01:28:57,620 - 01:28:59,620] And then we expand it in the other way.
+- [01:28:59,620 - 01:29:01,620] Let's see, p is very large now.
+- [01:29:01,620 - 01:29:08,120] So, this is the square root of p
+- [01:29:08,120 - 01:29:14,620] squared times 1 plus m squared over p squared,
+- [01:29:14,620 - 01:29:21,620] which is p plus...
+- [01:29:21,620 - 01:29:22,620] Did I do that right?
+- [01:29:22,620 - 01:29:23,620] Yeah.
+- [01:29:23,620 - 01:29:28,620] p plus m squared, I think, over 2p.
+- [01:29:29,620 - 01:29:30,620] Okay.
+- [01:29:30,620 - 01:29:31,620] All right.
+- [01:29:31,620 - 01:29:33,120] Now, this is the momentum along
+- [01:29:33,120 - 01:29:34,620] the direction that we did the boost.
+- [01:29:34,620 - 01:29:37,120] There are two other directions of momentum,
+- [01:29:37,120 - 01:29:39,620] and we can put them in here.
+- [01:29:39,620 - 01:29:43,620] But notice that the energy, apart from this
+- [01:29:43,620 - 01:29:47,620] fact, this piece, which is just total momentum,
+- [01:29:47,620 - 01:29:49,620] which we can drop because it
+- [01:29:49,620 - 01:29:51,620] drops out of all interesting things,
+- [01:29:51,620 - 01:29:55,620] is proportional to the square of the mass.
+- [01:29:55,620 - 01:29:57,120] So, in this form, the
+- [01:29:57,120 - 01:29:58,620] energy is proportional to the square.
+- [01:29:58,620 - 01:30:01,620] It's proportional to the square of the mass.
+- [01:30:01,620 - 01:30:03,620] And what that says is that
+- [01:30:03,620 - 01:30:05,620] if a particle or a system,
+- [01:30:05,620 - 01:30:08,120] a system of particles is moving
+- [01:30:08,120 - 01:30:10,620] down the axis with an enormous momentum,
+- [01:30:10,620 - 01:30:14,620] that its inertia, that its
+- [01:30:14,620 - 01:30:18,620] inertia relative to this direction here...
+- [01:30:18,620 - 01:30:20,620] Well, let me go back.
+- [01:30:20,620 - 01:30:21,620] Let me go back.
+- [01:30:21,620 - 01:30:24,120] Let me put in here the other
+- [01:30:24,120 - 01:30:26,620] terms, plus px squared plus py squared.
+- [01:30:26,620 - 01:30:28,620] They just went together with m squared.
+- [01:30:28,620 - 01:30:31,120] This was pz squared plus m
+- [01:30:31,120 - 01:30:33,620] squared plus px squared plus py squared.
+- [01:30:33,620 - 01:30:35,120] We're taking this to be
+- [01:30:35,120 - 01:30:36,620] small and pz to be large.
+- [01:30:36,620 - 01:30:38,620] Okay?
+- [01:30:38,620 - 01:30:43,620] One of the things that this says is that
+- [01:30:43,620 - 01:30:48,620] the inertia is now not the mass of the particle.
+- [01:30:48,620 - 01:30:50,620] It's the momentum along the z axis.
+- [01:30:50,620 - 01:30:52,620] And that actually makes a lot of sense.
+- [01:30:52,620 - 01:30:54,120] It's not true nonrelativistically,
+- [01:30:54,120 - 01:30:55,620] but relativistically, it's true.
+- [01:30:56,620 - 01:31:01,620] That a given force perpendicular to the direction of motion
+- [01:31:01,620 - 01:31:06,620] will produce a smaller acceleration the larger the momentum.
+- [01:31:06,620 - 01:31:08,620] So this, that's the first thing.
+- [01:31:08,620 - 01:31:11,620] This p here is the inertia.
+- [01:31:11,620 - 01:31:14,120] And the m squared is playing
+- [01:31:14,120 - 01:31:16,620] the role of an internal energy.
+- [01:31:16,620 - 01:31:18,120] Or m squared over 2p is
+- [01:31:18,120 - 01:31:19,620] playing the role of an internal energy.
+- [01:31:19,620 - 01:31:23,620] So internal energy becomes mass squared in this frame,
+- [01:31:23,620 - 01:31:25,620] and inertia just becomes...
+- [01:31:26,620 - 01:31:28,620] pz.
+- [01:31:28,620 - 01:31:31,620] Oops, that doesn't look good, but...
+- [01:31:31,620 - 01:31:36,620] Alright, now somebody asked me about the connection
+- [01:31:36,620 - 01:31:39,620] between these kind of strings which have this
+- [01:31:39,620 - 01:31:42,620] property of having an energy per unit length
+- [01:31:42,620 - 01:31:44,620] and superconductors.
+- [01:31:44,620 - 01:31:46,620] I think I mentioned it as we were talking.
+- [01:31:46,620 - 01:31:48,620] I will spell it out.
+- [01:31:51,620 - 01:31:54,120] Superconductors have the property
+- [01:31:54,120 - 01:31:56,620] of repelling a magnetic field.
+- [01:31:56,620 - 01:31:59,120] They repel, they don't want to
+- [01:31:59,120 - 01:32:01,620] accept magnetic field penetrating through them.
+- [01:32:01,620 - 01:32:04,620] They actually repel the magnetic field.
+- [01:32:04,620 - 01:32:10,620] Because they repel the magnetic field,
+- [01:32:10,620 - 01:32:13,120] it's kind of a pressure that was
+- [01:32:13,120 - 01:32:15,620] pushing magnetic field out of the way,
+- [01:32:15,620 - 01:32:18,620] but if you somehow push a magnetic field,
+- [01:32:18,620 - 01:32:19,620] I'm going to tell you how
+- [01:32:19,620 - 01:32:20,620] to do that in a minute,
+- [01:32:20,620 - 01:32:23,120] if you push a magnetic field into the superconductor
+- [01:32:23,120 - 01:32:25,620] in such a way that the lines of force,
+- [01:32:25,620 - 01:32:27,620] the lines of force are
+- [01:32:27,620 - 01:32:29,620] passing from one side of the...
+- [01:32:29,620 - 01:32:32,620] Here's a big piece of superconductor.
+- [01:32:32,620 - 01:32:36,620] Lines of force are passing through it, like that.
+- [01:32:36,620 - 01:32:38,620] What it will do will be to squeeze, will
+- [01:32:38,620 - 01:32:40,620] push those lines of force out of the way
+- [01:32:40,620 - 01:32:48,620] and push them into a narrow...
+- [01:32:48,620 - 01:32:51,620] string-like thing, like that.
+- [01:32:51,620 - 01:32:53,620] That's called a fluxoid.
+- [01:32:53,620 - 01:32:54,620] It's called a fluxoid,
+- [01:32:54,620 - 01:32:58,620] or a superconducting flux line.
+- [01:32:58,620 - 01:33:00,620] Superconducting, yeah, superconducting flux line.
+- [01:33:00,620 - 01:33:02,620] Magnetic flux, not electric flux.
+- [01:33:02,620 - 01:33:04,620] Magnetic flux.
+- [01:33:04,620 - 01:33:07,120] And how can you make
+- [01:33:07,120 - 01:33:09,620] one in principle in a superconductor?
+- [01:33:09,620 - 01:33:11,620] Here's what you might do.
+- [01:33:11,620 - 01:33:13,620] I doubt very much, well, this is probably
+- [01:33:13,620 - 01:33:15,620] not the way it's done in real life,
+- [01:33:15,620 - 01:33:20,620] but you take a piece of superconductor,
+- [01:33:20,620 - 01:33:22,620] you drill an incredibly narrow hole through it.
+- [01:33:22,620 - 01:33:24,620] This is a Gedanken experiment.
+- [01:33:24,620 - 01:33:27,120] This is not something that I want you
+- [01:33:27,120 - 01:33:29,620] to go away with as a practical experiment.
+- [01:33:29,620 - 01:33:37,620] You drill through it an incredibly small...
+- [01:33:37,620 - 01:33:42,620] Let's see, am I going to get this right?
+- [01:33:42,620 - 01:33:43,620] Ah.
+- [01:33:43,620 - 01:33:49,620] Before you cool down the superconductor,
+- [01:33:49,620 - 01:33:52,620] you take a long bar magnet
+- [01:33:52,620 - 01:33:56,620] and you stick it through the hole.
+- [01:33:56,620 - 01:33:58,620] Like that.
+- [01:33:58,620 - 01:34:01,620] Flux lines come out this way
+- [01:34:01,620 - 01:34:04,620] from the bar magnet
+- [01:34:04,620 - 01:34:07,620] and this way.
+- [01:34:07,620 - 01:34:09,620] Now you cool it down
+- [01:34:09,620 - 01:34:11,620] so that it becomes a superconductor
+- [01:34:11,620 - 01:34:16,620] and you draw out the magnet.
+- [01:34:16,620 - 01:34:18,620] These lines of flux here
+- [01:34:18,620 - 01:34:20,620] will get pulled into the magnet.
+- [01:34:20,620 - 01:34:23,620] Even after you've pulled out the magnet,
+- [01:34:23,620 - 01:34:26,620] the lines of flux will go through that magnet
+- [01:34:26,620 - 01:34:32,620] and they will form a thin tube through that magnet.
+- [01:34:32,620 - 01:34:36,620] The field along the tube will be uniform.
+- [01:34:36,620 - 01:34:38,620] And because the field is uniform,
+- [01:34:38,620 - 01:34:41,620] that means the energy per unit length is fixed.
+- [01:34:41,620 - 01:34:44,620] Okay, now, let's go a little bit further.
+- [01:34:44,620 - 01:34:47,620] Imagine that we had magnetic monopoles.
+- [01:34:47,620 - 01:34:49,620] We can actually simulate magnetic monopoles,
+- [01:34:49,620 - 01:34:52,620] but let's suppose we really did have magnetic monopoles,
+- [01:34:52,620 - 01:34:57,620] that there really were magnetic monopoles in the world.
+- [01:34:57,620 - 01:34:59,620] And there may well be,
+- [01:34:59,620 - 01:35:01,620] but we haven't discovered them yet.
+- [01:35:01,620 - 01:35:03,620] But let's suppose we have discovered them
+- [01:35:03,620 - 01:35:05,620] and we can manipulate them.
+- [01:35:05,620 - 01:35:09,620] Okay, then we could take a monopole and an antimonopole,
+- [01:35:09,620 - 01:35:11,620] put them right on top of each other,
+- [01:35:11,620 - 01:35:16,620] don't let them annihilate, keep them a little bit apart.
+- [01:35:16,620 - 01:35:18,620] Take them and put them into the superconductor.
+- [01:35:18,620 - 01:35:22,620] Monopole and antimonopole.
+- [01:35:22,620 - 01:35:24,620] I'm not going to tell you which one is which,
+- [01:35:24,620 - 01:35:26,620] I'm just going to draw two of them.
+- [01:35:26,620 - 01:35:29,620] And of course the monopole and the antimonopole
+- [01:35:29,620 - 01:35:34,620] have some flux lines between them.
+- [01:35:34,620 - 01:35:36,620] Now cool down the superconductor.
+- [01:35:36,620 - 01:35:39,620] And take the monopole and the antimonopole
+- [01:35:39,620 - 01:35:41,620] and start to separate them.
+- [01:35:41,620 - 01:35:43,620] What happens?
+- [01:35:43,620 - 01:35:45,620] Exactly the same thing that we think happens
+- [01:35:45,620 - 01:35:47,620] between a pair of quarks.
+- [01:35:48,620 - 01:35:52,620] Except that this is just an ordinary magnetic field
+- [01:35:52,620 - 01:35:55,620] between the monopole and the antimonopole.
+- [01:35:55,620 - 01:35:57,620] So inside a superconductor,
+- [01:35:57,620 - 01:36:01,620] a monopole and an antimonopole would have an energy
+- [01:36:01,620 - 01:36:04,620] which would be proportional to the distance between them.
+- [01:36:04,620 - 01:36:06,620] Why the distance between them?
+- [01:36:06,620 - 01:36:09,120] Because the string between them has
+- [01:36:09,120 - 01:36:11,620] an energy proportional to its length.
+- [01:36:11,620 - 01:36:13,620] Okay.
+- [01:36:13,620 - 01:36:15,120] The monopole and the antimonopole
+- [01:36:15,120 - 01:36:16,620] could not separate from each other,
+- [01:36:16,620 - 01:36:17,620] they would be confined,
+- [01:36:17,620 - 01:36:19,620] because as you start to separate them,
+- [01:36:19,620 - 01:36:21,620] the energy goes up with the length,
+- [01:36:21,620 - 01:36:31,620] and that's the character of what happens to hadrons,
+- [01:36:31,620 - 01:36:33,620] or quarks in a hadron,
+- [01:36:33,620 - 01:36:35,620] you separate them and their energy goes up.
+- [01:36:35,620 - 01:36:37,620] So okay, so this is a system
+- [01:36:37,620 - 01:36:40,620] where the energy is proportional to the length,
+- [01:36:40,620 - 01:36:43,120] and it has the characteristics
+- [01:36:43,120 - 01:36:45,620] of the same kind of string.
+- [01:36:45,620 - 01:36:47,620] Does that answer your question?
+- [01:36:47,620 - 01:36:49,620] Did you ever ask me?
+- [01:36:49,620 - 01:36:51,620] I don't know who asked me.
+- [01:36:51,620 - 01:36:53,620] Oh well, I guess he's gone.
+- [01:36:57,620 - 01:36:59,620] The question was,
+- [01:36:59,620 - 01:37:02,620] what's taking the role of the superfluid for the hadrons?
+- [01:37:02,620 - 01:37:07,620] What is the superconducting fluid?
+- [01:37:07,620 - 01:37:11,620] Virtual monopoles.
+- [01:37:11,620 - 01:37:13,620] That's what it's thought to be, virtual monopoles,
+- [01:37:13,620 - 01:37:15,620] but not these different monopoles.
+- [01:37:15,620 - 01:37:22,620] These are called chromodynamic monopoles.
+- [01:37:22,620 - 01:37:25,620] In the superconductor here,
+- [01:37:25,620 - 01:37:28,620] the condensate, the superconducting condensate,
+- [01:37:28,620 - 01:37:30,620] is made out of electric charge,
+- [01:37:30,620 - 01:37:34,620] and it causes confinement of magnetic charge.
+- [01:37:34,620 - 01:37:38,620] In quantum chromodynamics,
+- [01:37:38,620 - 01:37:40,620] quarks are confined,
+- [01:37:40,620 - 01:37:43,620] and they are kind of the electric charges
+- [01:37:43,620 - 01:37:46,620] of quantum chromodynamics.
+- [01:37:46,620 - 01:37:49,620] The things which condense are magnetic charges.
+- [01:37:49,620 - 01:37:52,620] You say, where are those magnetic charges?
+- [01:37:52,620 - 01:37:53,620] Why don't we see them?
+- [01:37:53,620 - 01:37:56,620] Because they're always condensed in the vacuum.
+- [01:37:56,620 - 01:37:59,620] But this is beyond what
+- [01:37:59,620 - 01:38:02,620] I intended to talk about today.
+- [01:38:02,620 - 01:38:06,620] Okay, what other questions come up?
+- [01:38:06,620 - 01:38:08,620] Oh, it's almost 9 o'clock.
+- [01:38:08,620 - 01:38:10,620] Okay, yeah.
+- [01:38:10,620 - 01:38:11,620] So the energy being proportional to the length,
+- [01:38:11,620 - 01:38:18,620] is the rule for highly relativistic string?
+- [01:38:18,620 - 01:38:21,620] Well, a superconductor is not a highly relativistic,
+- [01:38:21,620 - 01:38:22,620] it's a...
+- [01:38:22,620 - 01:38:24,620] It's also not a string.
+- [01:38:24,620 - 01:38:26,620] No, no, but it's string-like.
+- [01:38:26,620 - 01:38:30,620] So if you took a regular Hooke's law,
+- [01:38:30,620 - 01:38:32,620] string made of springs,
+- [01:38:32,620 - 01:38:35,620] and had it going relativistically inside,
+- [01:38:35,620 - 01:38:38,620] Assuming you could...
+- [01:38:38,620 - 01:38:40,620] You'll have to make up some theory, I don't know.
+- [01:38:40,620 - 01:38:42,620] You'll have to make up some theory.
+- [01:38:42,620 - 01:38:45,120] But that construction would then have
+- [01:38:45,120 - 01:38:47,620] an energy proportional to its length.
+- [01:38:47,620 - 01:38:49,620] I don't know what it would do.
+- [01:38:49,620 - 01:38:51,620] Depends on the details.
+- [01:38:51,620 - 01:38:53,620] No, there's something special about
+- [01:38:53,620 - 01:38:55,620] energy that grows at length.
+- [01:38:55,620 - 01:38:59,620] As I said, what it really means in particle language
+- [01:38:59,620 - 01:39:05,620] is that as you separate the constituents of the string,
+- [01:39:05,620 - 01:39:08,620] as you pull it apart,
+- [01:39:10,620 - 01:39:13,620] the energy of pulling it apart,
+- [01:39:13,620 - 01:39:16,620] instead of just separating and making larger distances,
+- [01:39:16,620 - 01:39:19,620] makes more particles.
+- [01:39:19,620 - 01:39:22,120] So that the density of them
+- [01:39:22,120 - 01:39:24,620] along the string always stays the same.
+- [01:39:24,620 - 01:39:28,620] That's the character of these kind of strings.
+- [01:39:28,620 - 01:39:31,620] And the other way to think about it
+- [01:39:31,620 - 01:39:34,620] is there are strings made up out of field,
+- [01:39:34,620 - 01:39:38,620] where because field lines are not allowed to end,
+- [01:39:38,620 - 01:39:40,620] field lines are not allowed to end,
+- [01:39:40,620 - 01:39:43,620] as long as the field doesn't spread out this way,
+- [01:39:43,620 - 01:39:47,620] it has to remain uniform in the other direction.
+- [01:39:47,620 - 01:39:51,620] So it's a characteristic of flux lines.
+- [01:39:51,620 - 01:39:54,620] Flux lines which are confined to a tube.
+- [01:39:54,620 - 01:39:57,120] If you had any kind
+- [01:39:57,120 - 01:39:59,620] of situation where an electric field
+- [01:39:59,620 - 01:40:02,120] were confined and prevented from
+- [01:40:02,120 - 01:40:04,620] spreading out in the perpendicular direction,
+- [01:40:04,620 - 01:40:08,620] the energy per unit length of it would be constant.
+- [01:40:08,620 - 01:40:09,620] Yeah.
+- [01:40:10,620 - 01:40:13,120] What about the kind of
+- [01:40:13,120 - 01:40:15,620] residual motion along the p-z direction?
+- [01:40:15,620 - 01:40:16,620] Along the z?
+- [01:40:16,620 - 01:40:18,620] Ah, that's a very good question.
+- [01:40:18,620 - 01:40:19,620] Yeah.
+- [01:40:19,620 - 01:40:23,620] Remarkably, the way string theory works
+- [01:40:23,620 - 01:40:27,620] is there are not independent degrees of freedom
+- [01:40:27,620 - 01:40:29,620] for motion along the other direction.
+- [01:40:29,620 - 01:40:32,620] This is a remarkable and strange fact
+- [01:40:32,620 - 01:40:35,120] that in string theory you do
+- [01:40:35,120 - 01:40:37,620] not include directly degrees of freedom
+- [01:40:37,620 - 01:40:40,620] for the motion of the string along the direction
+- [01:40:40,620 - 01:40:43,620] of the boost here.
+- [01:40:43,620 - 01:40:45,120] It is thought that that's connected
+- [01:40:45,120 - 01:40:46,620] with something called the holographic principle,
+- [01:40:46,620 - 01:40:49,620] that really in a gravitating system you
+- [01:40:49,620 - 01:40:52,620] need one less direct dimension to describe it,
+- [01:40:52,620 - 01:40:54,620] but it's one of the
+- [01:40:54,620 - 01:40:56,620] very remarkable features of string theory
+- [01:40:56,620 - 01:40:59,620] that you don't describe the string in,
+- [01:40:59,620 - 01:41:02,620] let's say in three-dimensional space,
+- [01:41:02,620 - 01:41:04,620] in this limit you describe
+- [01:41:04,620 - 01:41:06,620] it only by the two-dimensional motion,
+- [01:41:06,620 - 01:41:09,620] and yet, as we will see,
+- [01:41:09,620 - 01:41:14,620] it's consistent with Lorentz invariance.
+- [01:41:14,620 - 01:41:15,620] Yeah.
+- [01:41:15,620 - 01:41:17,620] How many data points do
+- [01:41:17,620 - 01:41:19,620] we have on the Regiflots now?
+- [01:41:19,620 - 01:41:21,620] Five or ten or?
+- [01:41:21,620 - 01:41:24,620] I don't know what the maximum number is now.
+- [01:41:24,620 - 01:41:26,620] Seven, something like that.
+- [01:41:26,620 - 01:41:28,620] It's not endless,
+- [01:41:28,620 - 01:41:32,620] but it doesn't give any evidence of giving out.
+- [01:41:32,620 - 01:41:35,620] I'll talk about it another time,
+- [01:41:35,620 - 01:41:37,620] but the evidence for that.
+- [01:41:37,620 - 01:41:38,620] But remember,
+- [01:41:38,620 - 01:41:40,620] that we're not really interested in hadrons.
+- [01:41:40,620 - 01:41:43,620] I was just giving you a historical perspective
+- [01:41:43,620 - 01:41:50,620] of where the whole thing came from.
+- [01:41:50,620 - 01:41:54,620] But now we want to study this mathematical theory
+- [01:41:54,620 - 01:41:57,620] and not insist that it looks like hadrons,
+- [01:41:57,620 - 01:41:59,620] but just ask what it does look like.
+- [01:41:59,620 - 01:42:00,620] And what we'll find out is
+- [01:42:00,620 - 01:42:01,620] that it looks more like gravity
+- [01:42:01,620 - 01:42:04,620] than it does hadrons.
+- [01:42:04,620 - 01:42:07,620] Well, what if it was a electron?
+- [01:42:08,620 - 01:42:10,620] What if it was something that is...
+- [01:42:10,620 - 01:42:12,620] What if what was an electron?
+- [01:42:12,620 - 01:42:15,120] Well, the idea that we
+- [01:42:15,120 - 01:42:17,620] had some kind of spatial element
+- [01:42:17,620 - 01:42:20,620] of the particle, the compositeness of the particle,
+- [01:42:20,620 - 01:42:23,620] for a particle that doesn't seem to be composite...
+- [01:42:23,620 - 01:42:25,620] Well, okay, let's be...
+- [01:42:25,620 - 01:42:28,620] All right, so the question is...
+- [01:42:28,620 - 01:42:31,620] can be expressed in two different ways.
+- [01:42:31,620 - 01:42:33,620] Let's see.
+- [01:42:36,620 - 01:42:37,620] It can be expressed...
+- [01:42:37,620 - 01:42:39,620] or the answer to your question can be expressed
+- [01:42:39,620 - 01:42:41,620] in terms of the smallness of the particle
+- [01:42:41,620 - 01:42:44,620] or in terms of the energy that it takes
+- [01:42:44,620 - 01:42:46,620] to increase the particle by one unit.
+- [01:42:46,620 - 01:42:48,620] All right, so let's...
+- [01:42:48,620 - 01:42:50,620] Do you remember the formula for the energy
+- [01:42:50,620 - 01:42:52,620] of a rotating system as
+- [01:42:52,620 - 01:42:54,620] a function of its angular momentum?
+- [01:42:54,620 - 01:42:57,620] L squared, that's the angular momentum,
+- [01:42:57,620 - 01:42:59,620] divided by two times something.
+- [01:42:59,620 - 01:43:01,620] Remember what it is?
+- [01:43:01,620 - 01:43:03,620] Moment of inertia.
+- [01:43:03,620 - 01:43:06,620] And what's the moment of inertia related to?
+- [01:43:07,620 - 01:43:10,620] The mass and the square
+- [01:43:10,620 - 01:43:13,620] of the size of the system.
+- [01:43:13,620 - 01:43:14,620] Right?
+- [01:43:14,620 - 01:43:18,620] M R squared, not M squared, R squared.
+- [01:43:18,620 - 01:43:20,620] M R squared.
+- [01:43:20,620 - 01:43:23,620] But the point is that for a given mass,
+- [01:43:23,620 - 01:43:26,620] the moment of inertia gets smaller and smaller
+- [01:43:26,620 - 01:43:28,620] as the system gets...
+- [01:43:28,620 - 01:43:32,620] Sorry, yes, the moment of inertia gets very small
+- [01:43:32,620 - 01:43:34,620] when the system is very small.
+- [01:43:34,620 - 01:43:35,620] Now, what is L?
+- [01:43:35,620 - 01:43:36,620] L is angular momentum.
+- [01:43:37,620 - 01:43:39,620] And it comes in quanta.
+- [01:43:39,620 - 01:43:43,620] So this is proportional to N squared,
+- [01:43:43,620 - 01:43:46,620] H bar squared, or something like that.
+- [01:43:46,620 - 01:43:48,120] And now you can ask,
+- [01:43:48,120 - 01:43:49,620] how much energy does it take
+- [01:43:49,620 - 01:43:52,620] to go from N equals zero to N equals one?
+- [01:43:52,620 - 01:43:56,620] N equals zero, the energy...
+- [01:43:56,620 - 01:43:58,620] It might be a little bit of energy,
+- [01:43:58,620 - 01:44:01,620] but the energy, this piece of the energy is zero.
+- [01:44:01,620 - 01:44:04,620] The first excited state would have an energy
+- [01:44:04,620 - 01:44:06,620] H bar squared over two,
+- [01:44:06,620 - 01:44:09,620] one divided by the moment of inertia.
+- [01:44:09,620 - 01:44:12,620] And if the object is very, very small,
+- [01:44:12,620 - 01:44:15,620] the moment of inertia is very large.
+- [01:44:15,620 - 01:44:17,620] No.
+- [01:44:17,620 - 01:44:20,620] One over the moment of inertia is very large.
+- [01:44:20,620 - 01:44:22,620] So the excitation energy,
+- [01:44:22,620 - 01:44:27,620] the energy that it takes to increase the angular momentum
+- [01:44:27,620 - 01:44:30,620] by one unit becomes very, very big
+- [01:44:30,620 - 01:44:32,620] if the object is small.
+- [01:44:32,620 - 01:44:34,620] Well, hadrons are big objects.
+- [01:44:34,620 - 01:44:36,620] They have small moments of inertia
+- [01:44:36,620 - 01:44:39,620] on the scale of quantum gravity.
+- [01:44:39,620 - 01:44:41,620] Hadrons are just enormous.
+- [01:44:41,620 - 01:44:45,620] I mean, they're, you know, they're big blobs.
+- [01:44:45,620 - 01:44:48,620] They have large moments of inertia.
+- [01:44:48,620 - 01:44:51,620] The energy taken to excite one is not very big.
+- [01:44:51,620 - 01:44:54,620] Electrons are known to be much smaller.
+- [01:44:54,620 - 01:44:57,620] The expectation is that they're exceedingly small,
+- [01:44:57,620 - 01:45:01,620] maybe 10 to the 16th times smaller than a proton.
+- [01:45:01,620 - 01:45:04,620] You square their radius to get the moment of inertia,
+- [01:45:04,620 - 01:45:06,620] so that could mean 10 to
+- [01:45:06,620 - 01:45:08,620] the 32 times smaller moment of inertia,
+- [01:45:08,620 - 01:45:11,620] and that means that the energy of excitation
+- [01:45:11,620 - 01:45:13,620] would be 10 to the 32 times bigger.
+- [01:45:13,620 - 01:45:16,620] Well, maybe that's probably too much.
+- [01:45:16,620 - 01:45:19,620] So if electrons have excited states,
+- [01:45:19,620 - 01:45:21,620] because they're so small,
+- [01:45:21,620 - 01:45:23,620] if they have rotational excitations,
+- [01:45:23,620 - 01:45:26,620] those rotational excitations,
+- [01:45:26,620 - 01:45:30,620] well, I think I lost my true Frouchy plot,
+- [01:45:30,620 - 01:45:34,620] but the mass necessary to increase the angular momentum
+- [01:45:34,620 - 01:45:37,620] by one unit would be way off on the,
+- [01:45:37,620 - 01:45:40,620] no, that end of the plot.
+- [01:45:40,620 - 01:45:42,620] Just too much, it just takes
+- [01:45:42,620 - 01:45:44,620] too much energy to spin it up.
+- [01:45:44,620 - 01:45:46,620] When I say too much, I
+- [01:45:46,620 - 01:45:48,620] mean too much compared to the energies
+- [01:45:48,620 - 01:45:51,620] that are available in particle collisions.
+- [01:45:51,620 - 01:45:52,620] Okay?
+- [01:45:52,620 - 01:45:55,120] So the energy needed to
+- [01:45:55,120 - 01:45:57,620] excite a hadron by one unit
+- [01:45:57,620 - 01:46:02,620] is less, is roughly of order of GeV.
+- [01:46:02,620 - 01:46:04,620] You collide particles at a distance
+- [01:46:04,620 - 01:46:06,620] of GeV or whatever it is,
+- [01:46:06,620 - 01:46:08,620] you see these excitations.
+- [01:46:08,620 - 01:46:12,620] The energy needed to spin up an electron
+- [01:46:12,620 - 01:46:14,620] is very much higher.
+- [01:46:14,620 - 01:46:15,620] You don't see them.
+- [01:46:15,620 - 01:46:20,620] How about the energy needed to spin up a basketball
+- [01:46:20,620 - 01:46:23,620] by one unit of angular momentum?
+- [01:46:23,620 - 01:46:25,620] Very small, very small.
+- [01:46:25,620 - 01:46:28,620] In fact, you can't even see that it's quantized.
+- [01:46:28,620 - 01:46:30,620] All right.
+- [01:46:30,620 - 01:46:33,620] An atom would be, okay.
+- [01:46:33,620 - 01:46:34,620] Whatever it is,
+- [01:46:34,620 - 01:46:37,620] first there, you know, a couple of electron volts.
+- [01:46:37,620 - 01:46:40,620] You mean to spin up an atom by one unit?
+- [01:46:40,620 - 01:46:43,620] A couple of electron volts.
+- [01:46:43,620 - 01:46:47,620] Uh, all right.
+- [01:46:47,620 - 01:46:48,620] Good.
+- [01:46:48,620 - 01:46:50,620] Okay.
+- [01:46:50,620 - 01:46:54,620] For more, please visit us at stanford.edu.
