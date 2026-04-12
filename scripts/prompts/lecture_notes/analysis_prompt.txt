@@ -9,6 +9,7 @@ Goal:
 - use the attached images as visual evidence for equations, sketches, state diagrams, board layout, or notation
 - stay faithful to the transcript and the frames
 - preserve the lecture's rhythm, sequencing, and narration rather than flattening it into an abstract topic summary
+- identify where the lecture naturally poses a question, tension, or puzzle that should survive as a standalone `Question & Answer` subsection in the final notes
 - if a derivation is only partially visible, prefer a cautious standard reconstruction over invented detail
 
 Lecture metadata:
@@ -42,6 +43,7 @@ Required output:
 
 Rules:
 - In `Section Outline`, provide 4 to 8 sections with 1 or 2 sentences each.
+- In `Section Outline`, explicitly note where a standalone `Question & Answer` subsection should appear when the lecture naturally raises and resolves a conceptual obstacle.
 - In `Lecture Arc`, explicitly track how the lecturer moves from one idea to the next, including pivots, recaps, and motivational transitions.
 - In `Mathematical Content To Include`, tag each item as `[frame-backed]`, `[transcript-backed]`, or `[standard reconstruction]`.
 - In `Diagram And Figure Plan`, explicitly mention which asset filenames must remain visible as screenshots in the final notes and which ideas should also be redrawn in TikZ.
@@ -50,6 +52,7 @@ Rules:
 - Keep the transcript's narrative order unless there is a compelling technical reason to consolidate two adjacent beats.
 - Use the reference-book excerpts for style, notation, and canonical forms only when they align with the lecture.
 - Do not copy long passages from the reference text.
+- Plan for a narration style that mainly sounds like Susskind unfolding the mathematics on the page: mostly first-person plural and direct exposition, with occasional broader third-person or god-view framing when it sharpens the intuition.
 - If you mention curation credit in planning notes, reserve the LazyingArt website URL for the generated front-matter/header credit only; do not spread the URL through normal prose.
 - Keep it concrete and technically grounded.
 

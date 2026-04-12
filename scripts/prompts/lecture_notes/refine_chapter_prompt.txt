@@ -31,6 +31,8 @@ Rules:
 - keep visible equations faithful when legible; when not legible, use a cautious standard reconstruction and state assumptions briefly in prose
 - do not mention being an AI, attached images, or prompt instructions
 - check the draft against the transcript order and restore missing motivational beats or transition sentences when the draft became too textbook-like
+- keep the narration in a Susskind-like companion-note register: mostly first-person plural and direct explanation, with occasional broader third-person or god-view framing when it improves the intuition
+- avoid flattening the chapter into anonymous textbook prose; let it feel like the lecturer is guiding the argument on the page
 - if the chapter mentions curation, keep prose references as plain `LazyingArt LLC`; reserve the website URL for front-matter/header credit only
 
 Required improvements:
@@ -39,6 +41,7 @@ Required improvements:
 - integrate equation and diagram evidence from the frame analysis
 - preserve screenshot evidence instead of replacing all visuals with only interpreted drawings
 - keep the tone serious, smooth, and mathematically engaging
+- preserve or add standalone `\subsection{Question \& Answer}` blocks where the lecture naturally poses and resolves a local conceptual obstacle
 - end with a short summary section
 - make the reader feel the lecture unfolding step by step, not a disconnected set of polished subsections
 - keep every selected screenshot asset visible in the refined chapter, not just the redrawn interpretation

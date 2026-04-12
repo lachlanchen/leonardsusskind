@@ -155,7 +155,9 @@ def build_task_context(lecture: LectureInfo) -> str:
             "- Primary source of truth: the matching lecture transcript; preserve its order, rhythm, motivation, and narrative progression.",
             "- Visual evidence: selected lecture frames are only supporting evidence for equations, diagrams, and board layout; do not let them override the transcript.",
             "- Mathematical standard: reconstruct cautiously when the lecture is partial, but avoid generic textbook filler that was not motivated by the lecture.",
-            "- Style target: notes should read like polished companion notes to Leonard Susskind's lecture, with explicit credit to Leonard Susskind and curation by LazyingArt LLC; reserve the website URL for the generated front-matter credit, not the prose body.",
+            "- Style target: notes should read like polished companion notes in a Susskind-like register, as though the mathematical argument is being unfolded by the lecturer on the page; allow a natural mix of first-person plural, occasional broader third-person or god-view framing, and direct explanatory prose without forcing a rigid persona.",
+            "- Structural target: when the lecture naturally raises and resolves a local conceptual obstacle, preserve that rhythm with a standalone `Question & Answer` subsection inside the chapter rather than flattening it away.",
+            "- Credit target: keep explicit credit to Leonard Susskind and curation by LazyingArt LLC; reserve the website URL for the generated front-matter credit, not the prose body.",
             "- Output discipline: each prompt stage should solve only its local subtask, but keep the full end goal in mind so downstream stages remain coherent.",
         ]
     )

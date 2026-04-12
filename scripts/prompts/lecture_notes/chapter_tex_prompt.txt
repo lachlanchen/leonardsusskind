@@ -47,6 +47,8 @@ Writing rules:
 - do not mention being an AI, attached images, or prompt instructions
 - prefer slightly too much mathematical structure over a thin conceptual outline; the next pass will refine style and flow
 - read the transcript as a narrated lecture, not just a bag of facts; preserve the speaker's progression, setup, and payoff
+- let the chapter sound like companion notes written in a Susskind-like register: mainly first-person plural and direct explanatory prose, with occasional broader third-person or god-view framing when it clarifies the physics
+- do not force a rigid single-person voice or an imitation gimmick; keep the voice natural, mathematically serious, and book-like
 - if the chapter text mentions curation, use plain `LazyingArt LLC` in prose; reserve the website URL for front-matter/header credit only
 - for every selected asset in the list, include the original screenshot in the chapter with `\includegraphics`
 - when the screenshot shows an equation or diagram worth reconstructing, keep the screenshot and place the cleaned LaTeX equation or TikZ redraw nearby rather than replacing the screenshot
@@ -59,6 +61,7 @@ Content requirements:
 - include at least one worked derivation, update rule, or explicit mathematical example
 - include at least one figure or TikZ diagram when supported by the lecture
 - when a figure is derived from a screenshot, prefer pairing the screenshot with the interpreted/redrawn version rather than replacing it outright
+- when the lecture naturally raises and answers a conceptual or mathematical question, preserve that beat with a standalone `\subsection{Question \& Answer}` placed between surrounding exposition
 - end with a short summary section
 - prefer smooth transitions and clear mathematical storytelling over transcript-like repetition
 - keep the order of sections close to the transcript unless a local merge or split materially improves comprehension
