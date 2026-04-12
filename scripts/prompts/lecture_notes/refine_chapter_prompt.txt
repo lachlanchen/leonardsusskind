@@ -26,7 +26,8 @@ Rules:
 - do not include `\documentclass`, package imports, `\begin{document}`, `\end{document}`, bibliography commands, or a table of contents
 - preserve the strongest mathematical content from the draft
 - correct notation inconsistencies, weak transitions, and rough exposition
-- if a figure is better redrawn than embedded, use TikZ
+- keep extracted screenshots that support the mathematics in the final chapter
+- if a figure is better redrawn than embedded, use TikZ but keep the original screenshot nearby as evidence
 - keep visible equations faithful when legible; when not legible, use a cautious standard reconstruction and state assumptions briefly in prose
 - do not mention being an AI, attached images, or prompt instructions
 - check the draft against the transcript order and restore missing motivational beats or transition sentences when the draft became too textbook-like
@@ -35,6 +36,7 @@ Required improvements:
 - make the chapter read as deliberate notes rather than transcript fragments
 - retain or improve the worked mathematics
 - integrate equation and diagram evidence from the frame analysis
+- preserve screenshot evidence instead of replacing all visuals with only interpreted drawings
 - keep the tone serious, smooth, and mathematically engaging
 - end with a short summary section
 - make the reader feel the lecture unfolding step by step, not a disconnected set of polished subsections

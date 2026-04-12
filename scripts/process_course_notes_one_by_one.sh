@@ -17,6 +17,7 @@ Options:
   --source-root <path>      source video root
   --model <name>            codex model (default: NOTE_MODEL or gpt-5.4)
   --reasoning <level>       low|medium|high|xhigh (default: NOTE_REASONING or xhigh)
+  --session-scope <scope>   shared Codex session scope: global|course|lecture
   --max-lectures <n>        stop after n generated lectures
   --allow-partial-course    allow a specific course even if transcripts are incomplete
   -h, --help                show help
@@ -27,6 +28,7 @@ repo_root="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 source_root="/home/lachlan/ProjectsLFS/YoutubeDownloader/downloads/PLERGeJGfknBTR_nXt5QL88xJF5LhDZBnG"
 model="${NOTE_MODEL:-gpt-5.4}"
 reasoning="${NOTE_REASONING:-xhigh}"
+session_scope="${NOTE_CODEX_SESSION_SCOPE:-global}"
 shared_session_file="${NOTE_CODEX_SESSION_FILE:-$repo_root/.lecture-notes-work/codex_sessions/susskind-notes.session_id}"
 shared_session_doc="${NOTE_CODEX_SESSION_DOC_FILE:-$repo_root/.lecture-notes-work/codex_sessions/susskind-notes.session.md}"
 course=""
@@ -49,6 +51,10 @@ while [[ $# -gt 0 ]]; do
       ;;
     --reasoning)
       reasoning="${2:-}"
+      shift 2
+      ;;
+    --session-scope)
+      session_scope="${2:-}"
       shift 2
       ;;
     --max-lectures)
@@ -79,21 +85,31 @@ case "$reasoning" in
     ;;
 esac
 
+case "$session_scope" in
+  global|course|lecture) ;;
+  *)
+    echo "Invalid session scope: $session_scope" >&2
+    exit 1
+    ;;
+esac
+
 cd "$repo_root"
 mkdir -p "$(dirname "$shared_session_file")"
 export CODEX_SHARED_SESSION_FILE="$shared_session_file"
 export CODEX_SHARED_SESSION_DOC_FILE="$shared_session_doc"
 export CODEX_COMMIT_MODEL="${CODEX_COMMIT_MODEL:-$model}"
 export NOTE_TMUX_SESSION_NAME="${NOTE_TMUX_SESSION_NAME:-susskind-notes}"
+export NOTE_CODEX_SESSION_SCOPE="$session_scope"
 
 echo "Using shared Codex session file: $CODEX_SHARED_SESSION_FILE"
 echo "Documenting shared Codex session at: $CODEX_SHARED_SESSION_DOC_FILE"
+echo "Shared Codex session scope: $session_scope"
 if [[ -s "$CODEX_SHARED_SESSION_FILE" ]]; then
   echo "Reusing Codex session id: $(tr -d '[:space:]' < "$CODEX_SHARED_SESSION_FILE")"
 fi
 
 processed=0
-last_lecture_key=""
+last_session_key=""
 while true; do
   next_cmd=(python3 scripts/generate_course_notes.py --repo-root "$repo_root" --source-root "$source_root" --print-next)
   if [[ -n "$course" ]]; then
@@ -112,11 +128,22 @@ while true; do
   echo "Generating notes for $next_rel"
   echo "Using transcript source: markdown/$next_rel"
   lecture_key="${next_rel%.md}"
-  if [[ "$lecture_key" != "$last_lecture_key" ]]; then
+  case "$session_scope" in
+    global)
+      session_key="global"
+      ;;
+    course)
+      session_key="$(dirname "$next_rel")"
+      ;;
+    lecture)
+      session_key="$lecture_key"
+      ;;
+  esac
+  if [[ "$session_scope" != "global" && "$session_key" != "$last_session_key" ]]; then
     rm -f "$CODEX_SHARED_SESSION_FILE" "$CODEX_SHARED_SESSION_DOC_FILE"
-    echo "Reset shared Codex session for lecture: $lecture_key"
-    last_lecture_key="$lecture_key"
+    echo "Reset shared Codex session for $session_scope: $session_key"
   fi
+  last_session_key="$session_key"
   gen_cmd=(
     python3 scripts/generate_course_notes.py
     --repo-root "$repo_root"

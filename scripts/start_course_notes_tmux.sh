@@ -11,12 +11,14 @@ Defaults:
 - supplementary courses before core courses
 - only fully transcribed courses
 - model gpt-5.4 with xhigh reasoning
+- shared Codex writing session scope defaults to global reuse across lectures
 
 Options:
   --session <name>         tmux session name (default: susskind-notes)
   --course <rel>           restrict to one course rel path
   --model <name>           note-writing model
   --reasoning <level>      low|medium|high|xhigh
+  --session-scope <scope>  global|course|lecture
   --max-lectures <n>       stop after n lectures
   --allow-partial-course   allow the selected course even if incomplete
   --kill                   kill existing session and recreate
@@ -30,6 +32,7 @@ session="susskind-notes"
 course=""
 model="${NOTE_MODEL:-gpt-5.4}"
 reasoning="${NOTE_REASONING:-xhigh}"
+session_scope="${NOTE_CODEX_SESSION_SCOPE:-global}"
 max_lectures=0
 allow_partial_course=0
 kill_existing=0
@@ -51,6 +54,10 @@ while [[ $# -gt 0 ]]; do
       ;;
     --reasoning)
       reasoning="${2:-}"
+      shift 2
+      ;;
+    --session-scope)
+      session_scope="${2:-}"
       shift 2
       ;;
     --max-lectures)
@@ -104,6 +111,7 @@ if tmux has-session -t "$session" 2>/dev/null; then
 fi
 
 cmd=(bash ./scripts/process_course_notes_one_by_one.sh --model "$model" --reasoning "$reasoning")
+cmd+=(--session-scope "$session_scope")
 if [[ -n "$course" ]]; then
   cmd+=(--course "$course")
 fi

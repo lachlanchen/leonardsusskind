@@ -586,8 +586,8 @@ def select_frames_with_codex(
     max_frames: int,
     force: bool,
 ) -> list[FrameSelection]:
-    assets_dir = course_root / "assets"
-    assets_dir.mkdir(parents=True, exist_ok=True)
+    figures_dir = course_root / "figures"
+    figures_dir.mkdir(parents=True, exist_ok=True)
 
     candidate_times = choose_candidate_frame_times(md_text, max_frames=max_frames)
     candidates = extract_candidate_frames(lecture, runtime_dir, candidate_times, force=force)
@@ -633,7 +633,7 @@ def select_frames_with_codex(
         if candidate_name not in candidate_map or candidate_name in used_candidates:
             continue
         candidate_path, timestamp = candidate_map[candidate_name]
-        asset_path = assets_dir / f"{lecture.lecture_slug}_frame_{index:02d}.png"
+        asset_path = figures_dir / f"{lecture.lecture_slug}_frame_{index:02d}.png"
         shutil.copyfile(candidate_path, asset_path)
         selected.append(
             FrameSelection(
@@ -651,7 +651,7 @@ def select_frames_with_codex(
     if not selected:
         fallback_candidates = candidates[:max_frames]
         for index, (candidate_path, timestamp) in enumerate(fallback_candidates, start=1):
-            asset_path = assets_dir / f"{lecture.lecture_slug}_frame_{index:02d}.png"
+            asset_path = figures_dir / f"{lecture.lecture_slug}_frame_{index:02d}.png"
             shutil.copyfile(candidate_path, asset_path)
             selected.append(
                 FrameSelection(
@@ -786,8 +786,6 @@ def run_codex_prompt(
             return
 
         failure_text = prompt_failure_summary(stdout_file, stderr_file)
-        if is_context_overflow_error(failure_text):
-            reset_shared_codex_session()
         if attempt < max_attempts and (is_context_overflow_error(failure_text) or is_transient_prompt_error(failure_text)):
             time.sleep(min(20, 5 * attempt))
             continue
@@ -875,7 +873,7 @@ def ensure_common_preamble(course_root: Path, template_path: Path) -> None:
 def write_lecture_wrapper(lecture: LectureInfo, lecture_dir: Path) -> None:
     wrapper = f"""\\documentclass[11pt,oneside]{{book}}
 \\input{{../../common_preamble.tex}}
-\\graphicspath{{{{../../assets/}}}}
+\\graphicspath{{{{../../figures/}}}}
 \\begin{{document}}
 \\frontmatter
 \\title{{{lecture.course_title}: {lecture.lecture_title}}}
@@ -894,7 +892,7 @@ def write_lecture_wrapper(lecture: LectureInfo, lecture_dir: Path) -> None:
 
 
 def write_course_book(course_root: Path, lecture_entries: list[LectureInfo]) -> None:
-    graphics_path = "\\graphicspath{{assets/}}\n"
+    graphics_path = "\\graphicspath{{figures/}}\n"
     title_course = lecture_entries[0].course_title if lecture_entries else "Generated Course Notes"
     descriptor = lecture_entries[0].course_descriptor if lecture_entries else ""
     inputs = "\n".join(

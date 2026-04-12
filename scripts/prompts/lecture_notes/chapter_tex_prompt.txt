@@ -33,6 +33,8 @@ Writing rules:
   - `definition`, `theorem`, `proposition`, `remark`, `proof`
   - `tikzpicture`
 - if you include graphics, use only the listed asset basenames
+- keep the original extracted screenshots in the final chapter when they support visible equations, board layouts, or diagrams
+- if you redraw a diagram or equation in TikZ, also keep the corresponding screenshot nearby in the same section as visual evidence
 - if an exact board equation is uncertain, either:
   - present the canonical standard form with a brief textual caveat, or
   - stay conceptual instead of hallucinating detail
@@ -48,6 +50,7 @@ Content requirements:
 - include at least 3 displayed equations when the material supports it
 - include at least one worked derivation, update rule, or explicit mathematical example
 - include at least one figure or TikZ diagram when supported by the lecture
+- when a figure is derived from a screenshot, prefer pairing the screenshot with the interpreted/redrawn version rather than replacing it outright
 - end with a short summary section
 - prefer smooth transitions and clear mathematical storytelling over transcript-like repetition
 - keep the order of sections close to the transcript unless a local merge or split materially improves comprehension

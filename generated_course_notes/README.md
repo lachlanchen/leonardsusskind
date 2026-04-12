@@ -18,7 +18,7 @@ generated_course_notes/
     common_preamble.tex
     course.tex
     course.pdf
-    assets/
+    figures/
     chapters/
       lecture_01/
         analysis.md
@@ -43,14 +43,15 @@ bash scripts/start_course_notes_tmux.sh --no-attach
 
 Defaults:
 
-- note-writing model: `gpt-5.3-codex-spark`
+- note-writing model: `gpt-5.4`
 - reasoning: `xhigh`
 - generation order: fully transcribed supplementary courses first, then core courses
 - when available, prompts also use local Susskind-authored PDFs from `susskind-books-and-lecture-notes/` as a style and notation reference
 - each lecture now runs through explicit stages: frame review, plan, visual equation/diagram extraction, narrative map, math bank, LaTeX draft, refinement, compile, and course-book rebuild
 - after each material edit stage, the loop triggers a codex-driven commit/push step so progress is preserved incrementally
 - every prompt stage receives the corresponding lecture transcript path and the full transcript text for that lecture
-- the writer loop reuses one shared non-interactive Codex session id from `.lecture-notes-work/codex_sessions/susskind-notes.session_id` so prompt stages accumulate local task context across steps and lectures
+- selected lecture screenshots are stored under the course-level `figures/` folder and should remain visible in the generated notes alongside interpreted diagrams or equation reconstructions
+- the writer loop can reuse one shared non-interactive Codex session id from `.lecture-notes-work/codex_sessions/susskind-notes.session_id`; the launch scripts expose a `--session-scope global|course|lecture` option, and the current default is `global`
 - the current shared session is documented at `.lecture-notes-work/codex_sessions/susskind-notes.session.md`, including the tmux session name and the live Codex session id
 
 Runtime prompts, logs, and temporary compile artifacts live under `.lecture-notes-work/` and are intentionally not tracked.

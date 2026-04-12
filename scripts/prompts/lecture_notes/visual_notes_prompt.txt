@@ -30,11 +30,11 @@ Required output:
 ## Uncertainties
 
 Rules:
-- In `Frame Inventory`, list each asset filename with a one-sentence description of what it shows.
+- In `Frame Inventory`, list each asset filename with a one-sentence description of what it shows and whether the screenshot should remain in the final notes.
 - In `Equation Extraction`, transcribe visible equations into LaTeX where reasonably legible.
 - Tag each extracted item as `[visible]`, `[partially visible]`, or `[standard completion]`.
-- In `Diagram Extraction`, describe any figure that should be redrawn in TikZ or preserved as an image.
-- In `Reconstruction Guidance`, explain how to turn the visible content into clean note-quality equations or diagrams.
+- In `Diagram Extraction`, describe any figure that should be redrawn in TikZ, preserved as a screenshot, or shown both ways.
+- In `Reconstruction Guidance`, explain how to turn the visible content into clean note-quality equations or diagrams while keeping the original screenshot as evidence when it matters.
 - In `Uncertainties`, call out symbols, indices, or steps that are not reliably legible.
 - Prefer faithful reconstruction over aggressive invention.
 

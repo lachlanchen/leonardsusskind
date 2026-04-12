@@ -15,6 +15,7 @@ shift 5
 session_file="${CODEX_SHARED_SESSION_FILE:-}"
 session_doc_file="${CODEX_SHARED_SESSION_DOC_FILE:-}"
 tmux_session_name="${NOTE_TMUX_SESSION_NAME:-susskind-notes}"
+session_scope="${NOTE_CODEX_SESSION_SCOPE:-global}"
 
 extract_session_id() {
   python3 - "$1" <<'PY'
@@ -56,6 +57,7 @@ write_session_doc() {
 - tmux session: $tmux_session_name
 - codex session id: $session_id
 - codex session file: $session_file
+- codex session scope: $session_scope
 - repo root: $repo_path
 - model: $model
 - updated at: $(date --iso-8601=seconds)

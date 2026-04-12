@@ -40,7 +40,8 @@ Rules:
 - In `Section Outline`, provide 4 to 8 sections with 1 or 2 sentences each.
 - In `Lecture Arc`, explicitly track how the lecturer moves from one idea to the next, including pivots, recaps, and motivational transitions.
 - In `Mathematical Content To Include`, tag each item as `[frame-backed]`, `[transcript-backed]`, or `[standard reconstruction]`.
-- In `Diagram And Figure Plan`, explicitly mention which asset filenames are worth keeping as images and which ideas are better redrawn in TikZ.
+- In `Diagram And Figure Plan`, explicitly mention which asset filenames must remain visible as screenshots in the final notes and which ideas should also be redrawn in TikZ.
+- If an idea is redrawn in TikZ, keep the original screenshot nearby in the final chapter as visual evidence.
 - In `Caution Notes`, flag garbled transcript segments, ambiguous equations, or places where notation is uncertain.
 - Keep the transcript's narrative order unless there is a compelling technical reason to consolidate two adjacent beats.
 - Use the reference-book excerpts for style, notation, and canonical forms only when they align with the lecture.
