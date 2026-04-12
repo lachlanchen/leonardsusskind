@@ -1,0 +1,2414 @@
+# Transcript
+
+Source: supplementary/particle_physics_2_standard_model/2010_winter/089 - Lecture 5 ｜ New Revolutions in Particle Physics： Standard Model [3g6RtyGjX3o].mp4
+
+- [00:00:00,000 - 00:00:06,400] Stanford University.
+- [00:00:06,400 - 00:00:10,120] All right, we've really studied
+- [00:00:10,120 - 00:00:13,840] two different theories a little bit,
+- [00:00:13,840 - 00:00:16,560] quantum electrodynamics and quantum chromodynamics.
+- [00:00:16,560 - 00:00:20,080] Both of them are gauge theories.
+- [00:00:20,080 - 00:00:23,060] In fact, just about all of nature as
+- [00:00:23,060 - 00:00:26,040] we know it, in one way or another,
+- [00:00:26,040 - 00:00:31,919] is controlled by gauge theories of different kinds.
+- [00:00:31,919 - 00:00:33,179] And so I ought to tell
+- [00:00:33,179 - 00:00:34,440] you what a gauge theory is.
+- [00:00:34,440 - 00:00:36,760] Now, I'm not going to get into
+- [00:00:36,760 - 00:00:39,080] in any depth what gauge symmetry is.
+- [00:00:39,080 - 00:00:41,570] I'm going to tell you what
+- [00:00:41,570 - 00:00:44,060] a gauge theory is in more or
+- [00:00:44,060 - 00:00:46,180] less the minimal mathematical way.
+- [00:00:48,320 - 00:00:51,000] The first and simplest gauge theory is Maxwell's theory.
+- [00:00:52,100 - 00:00:53,960] Maxwell's theory of light,
+- [00:00:53,960 - 00:00:55,820] or Maxwell's theory of electromagnetism,
+- [00:00:55,820 - 00:00:56,040] let's not do that.
+- [00:00:56,040 - 00:00:58,140] Let's not worry about what the word gauge means.
+- [00:00:58,140 - 00:01:01,339] We may go through it later, but not now.
+- [00:01:01,339 - 00:01:05,099] But what it is is a theory
+- [00:01:05,099 - 00:01:08,860] of fields which have all of the properties
+- [00:01:08,860 - 00:01:11,160] of the electromagnetic field.
+- [00:01:11,160 - 00:01:13,540] The electromagnetic field has six
+- [00:01:13,540 - 00:01:15,920] components, three components of electric
+- [00:01:15,920 - 00:01:19,560] field, three components of magnetic field.
+- [00:01:20,720 - 00:01:23,270] You can represent those six components
+- [00:01:23,270 - 00:01:25,820] in terms of a four vector,
+- [00:01:25,820 - 00:01:27,679] called the vector potential.
+- [00:01:27,679 - 00:01:29,639] I'll just write it down for you.
+- [00:01:29,639 - 00:01:33,199] It's not going to play any big role today anyway.
+- [00:01:33,199 - 00:01:36,809] But just to tell you, there's
+- [00:01:36,809 - 00:01:40,419] a four vector that's generally called a,
+- [00:01:40,419 - 00:01:42,740] and it has an index mu.
+- [00:01:42,740 - 00:01:45,840] It has four components, a zero,
+- [00:01:45,840 - 00:01:48,940] that's the time component of it, and
+- [00:01:48,940 - 00:01:51,069] the three space components, a1, 2, and
+- [00:01:51,069 - 00:01:53,199] 3, or a x, y, and z.
+- [00:01:53,199 - 00:01:54,720] Let's not write them out in detail.
+- [00:01:55,820 - 00:01:59,340] So it contains a three vector
+- [00:01:59,340 - 00:02:02,860] and a fourth component, a naught.
+- [00:02:02,860 - 00:02:05,650] The significance of a naught
+- [00:02:05,650 - 00:02:08,440] is that it's the electrostatic potential.
+- [00:02:08,440 - 00:02:16,040] It's the thing whose gradient is the electric force.
+- [00:02:16,040 - 00:02:20,820] So for example, the electric force on a charged
+- [00:02:20,820 - 00:02:25,600] particle is just gotten by multiplying the electric force,
+- [00:02:25,600 - 00:02:31,449] the electric charge, by the gradient or the derivative,
+- [00:02:31,449 - 00:02:37,299] fx, derivative of a naught with respect to x.
+- [00:02:37,299 - 00:02:40,060] So it's just the electrostatic potential.
+- [00:02:40,060 - 00:02:43,080] It's measured in volts, or in particle
+- [00:02:43,080 - 00:02:46,100] physics, of course, it's not measured in volts.
+- [00:02:46,100 - 00:02:49,220] Volts per unit charge, excuse me.
+- [00:02:49,220 - 00:02:50,220] Volt, yeah.
+- [00:02:50,220 - 00:02:55,459] It's measured in whatever way you measure electrostatic.
+- [00:02:55,600 - 00:02:57,720] So it's just the electrostatic potential.
+- [00:02:57,720 - 00:03:01,280] That's the meaning of a naught.
+- [00:03:01,280 - 00:03:03,610] Notice first of all, oh, and
+- [00:03:03,610 - 00:03:05,940] of course this is the electric field.
+- [00:03:05,940 - 00:03:07,420] This is the electric field.
+- [00:03:07,420 - 00:03:09,930] It has three components, derivative with
+- [00:03:09,930 - 00:03:12,440] respect to x, y, or z.
+- [00:03:12,440 - 00:03:17,820] So it's the gradient, the gradient of a.
+- [00:03:17,820 - 00:03:19,040] And the gradient of a
+- [00:03:19,040 - 00:03:20,260] is just called the electric field.
+- [00:03:20,260 - 00:03:22,490] So the electric field is determined
+- [00:03:22,490 - 00:03:24,720] by the gradient of a naught.
+- [00:03:24,720 - 00:03:25,440] Okay.
+- [00:03:25,600 - 00:03:29,850] And the magnetic field is determined by
+- [00:03:29,850 - 00:03:34,100] also derivatives, also derivatives of the vector potential.
+- [00:03:34,100 - 00:03:36,940] And in fact, the magnetic field
+- [00:03:36,940 - 00:03:39,780] is the curl of the vector potential.
+- [00:03:39,780 - 00:03:43,000] So one of two ways you can study electrodynamics,
+- [00:03:43,000 - 00:03:46,220] either in terms of the electric and magnetic fields,
+- [00:03:46,220 - 00:03:49,050] of which there are six, or in terms
+- [00:03:49,050 - 00:03:51,880] of the vector potential, of which there are four,
+- [00:03:51,880 - 00:03:53,720] but they're equivalent descriptions of electrodynamics.
+- [00:03:53,720 - 00:03:54,799] And we won't go into maximizing that.
+- [00:03:54,799 - 00:03:55,320] Okay.
+- [00:03:55,320 - 00:03:57,120] We won't go into Maxwell's equations.
+- [00:03:57,120 - 00:04:00,099] But let me just remind you that
+- [00:04:00,099 - 00:04:03,079] Maxwell's equations give rise to electromagnetic waves.
+- [00:04:03,079 - 00:04:05,269] An electromagnetic wave is a
+- [00:04:05,269 - 00:04:07,459] wave of electric and magnetic field.
+- [00:04:07,459 - 00:04:10,039] And a typical electric magnetic wave has
+- [00:04:10,039 - 00:04:12,620] a direction in space that it moves.
+- [00:04:12,620 - 00:04:15,079] Let's just represent it by an arrow.
+- [00:04:15,079 - 00:04:17,500] And it has a polarization.
+- [00:04:17,500 - 00:04:19,920] To understand what the polarization means, you have
+- [00:04:19,920 - 00:04:22,340] to think about the electric and magnetic fields.
+- [00:04:22,340 - 00:04:25,000] And the electric and magnetic fields oscillate.
+- [00:04:25,000 - 00:04:25,320] Okay.
+- [00:04:25,320 - 00:04:26,860] So let's go down the wave.
+- [00:04:26,860 - 00:04:32,780] Here's the electric field, for example.
+- [00:04:32,780 - 00:04:36,020] The whole thing moves with the speed of light.
+- [00:04:36,020 - 00:04:38,020] But at any given instant, the
+- [00:04:38,020 - 00:04:40,020] electric field might look like that.
+- [00:04:40,020 - 00:04:43,290] And the magnetic field is
+- [00:04:43,290 - 00:04:46,560] always perpendicular to the electric field.
+- [00:04:46,560 - 00:04:47,840] Let's try to draw it, see
+- [00:04:47,840 - 00:04:49,120] if I can give a drawing.
+- [00:04:49,120 - 00:04:52,980] I'm imagining the electric field is in the horizontal plane.
+- [00:04:52,980 - 00:04:55,080] And it's always perpendicular to the...
+- [00:04:55,080 - 00:04:57,080] Let's see, is this gonna...
+- [00:05:00,340 - 00:05:02,340] It's always perpendicular.
+- [00:05:03,460 - 00:05:04,460] Like so.
+- [00:05:06,219 - 00:05:10,059] In appropriate units, the electric and magnetic
+- [00:05:10,059 - 00:05:13,900] field are equal to each other and perpendicular.
+- [00:05:13,900 - 00:05:19,520] This would be a plane polarized electromagnetic wave.
+- [00:05:19,520 - 00:05:21,969] In a plane polarized electromagnetic wave, the direction of
+- [00:05:21,969 - 00:05:24,419] polarization, which of course, is a plane, is a wave.
+- [00:05:24,419 - 00:05:24,940] Which of course, is a wave.
+- [00:05:24,940 - 00:05:26,710] Yes, which of course, is always
+- [00:05:26,710 - 00:05:28,480] perpendicular to the direction of motion,
+- [00:05:28,480 - 00:05:30,670] the direction of polarization is
+- [00:05:30,670 - 00:05:32,860] determined by the electric field.
+- [00:05:32,860 - 00:05:34,830] So the electric field determines the
+- [00:05:34,830 - 00:05:36,800] direction of polarization and that's electromagnetism
+- [00:05:36,840 - 00:05:41,580] and lots of electromagnetic waves, in a nutshell.
+- [00:05:41,580 - 00:05:43,820] the other thing, of course, about
+- [00:05:43,820 - 00:05:46,060] electromagnetic waves is that there are sources.
+- [00:05:46,060 - 00:05:48,820] Part ofoin exsules are charges and currents.
+- [00:05:48,820 - 00:05:50,960] But let's particularly focus onthe
+- [00:05:50,960 - 00:05:53,100] sources of the electric field.
+- [00:05:53,100 - 00:05:53,400] Part of the electric field is the
+- [00:05:53,400 - 00:05:53,700] beam of current of the energy of.
+- [00:05:53,700 - 00:05:54,320] theinação of electric current en.
+- [00:05:54,320 - 00:05:57,660] So the electric field, our electric charge, and to
+- [00:05:57,660 - 00:06:01,000] just draw a picture, to put it at the
+- [00:06:01,000 - 00:06:04,600] level of pictures, every electric
+- [00:06:04,600 - 00:06:08,200] charge creates an electric field.
+- [00:06:08,200 - 00:06:16,120] The electric field lines never end except on other charges.
+- [00:06:16,120 - 00:06:19,980] A positive convention, the convention is a
+- [00:06:19,980 - 00:06:23,840] positive electric charge puts out an electric
+- [00:06:23,840 - 00:06:27,110] field which is radially outward, falls
+- [00:06:27,110 - 00:06:30,380] off as 1 over r squared.
+- [00:06:30,380 - 00:06:33,339] You can imagine that the number of electric
+- [00:06:33,339 - 00:06:36,299] field lines coming out of a charge is fixed,
+- [00:06:36,299 - 00:06:38,959] proportional to the charge, and therefore
+- [00:06:38,959 - 00:06:41,620] the number of electric field lines passing
+- [00:06:41,620 - 00:06:43,919] through any sphere is the same
+- [00:06:43,919 - 00:06:46,219] no matter how far the sphere is.
+- [00:06:46,219 - 00:06:49,209] To say that mathematically, the integral of
+- [00:06:49,209 - 00:06:52,200] the electric field over the sphere is the
+- [00:06:52,200 - 00:06:53,460] same wherever you go.
+- [00:06:53,460 - 00:06:53,640] However, if you look at the electric field,
+- [00:06:53,640 - 00:06:53,820] you can see that the electric field is fixed.
+- [00:06:53,820 - 00:06:55,260] It's not as far out as you go.
+- [00:06:55,260 - 00:06:57,700] That's Gauss's law.
+- [00:06:57,700 - 00:06:59,520] That's Gauss's law.
+- [00:06:59,520 - 00:07:03,900] And that Gauss's law has a very strong consequence.
+- [00:07:03,900 - 00:07:08,190] If you don't have any other charges in
+- [00:07:08,190 - 00:07:12,480] the system, let's say just a plus charge, then
+- [00:07:12,480 - 00:07:15,710] you can't get, and the rule is electric lines
+- [00:07:15,710 - 00:07:18,940] only end on charges, then there's no way to
+- [00:07:18,940 - 00:07:21,060] get rid of a charge.
+- [00:07:21,060 - 00:07:22,920] No way to get rid of a charge.
+- [00:07:22,920 - 00:07:23,180] If you try to get rid of the
+- [00:07:23,180 - 00:07:23,440] charge, you can't get rid of the charge.
+- [00:07:23,440 - 00:07:27,350] Either the electric field
+- [00:07:27,350 - 00:07:31,260] has to suddenly disappear everywhere.
+- [00:07:31,260 - 00:07:33,710] That would violate the rules of the speed
+- [00:07:33,710 - 00:07:36,160] of light, that you can't send a signal faster
+- [00:07:36,160 - 00:07:38,720] than the speed of light.
+- [00:07:38,720 - 00:07:43,920] So instead, if you said that a wave
+- [00:07:43,920 - 00:07:49,120] moved outward of missing electric field, that also
+- [00:07:49,120 - 00:07:51,090] wouldn't make sense, not unless there were
+- [00:07:51,090 - 00:07:53,060] charges at the end of the charge.
+- [00:07:53,060 - 00:07:56,730] Now what I would do is try to figure
+- [00:07:56,730 - 00:08:00,400] out how you could handle the rich electric field
+- [00:08:00,400 - 00:08:01,360] when there aren't.
+- [00:08:01,360 - 00:08:05,210] If you are trying to get rid of charge,
+- [00:08:05,210 - 00:08:09,060] you can't just sort of take a charge and bring
+- [00:08:09,060 - 00:08:13,250] it around where it kend off, it
+- [00:08:13,250 - 00:08:17,440] spreadsheet of charge could be a lot better.
+- [00:08:17,440 - 00:08:18,400] Where it's blocked out or not.
+- [00:08:18,400 - 00:08:19,180] You can do this.
+- [00:08:19,180 - 00:08:19,320] But this is not necessarily
+- [00:08:19,320 - 00:08:19,460] what I want you to do.
+- [00:08:19,460 - 00:08:19,860] This is not.
+- [00:08:19,860 - 00:08:20,090] The beautiful better way to get
+- [00:08:20,090 - 00:08:20,320] rid of electric field is to 04
+- [00:08:20,320 - 00:08:20,980] to 04.
+- [00:08:20,980 - 00:08:21,840] Why not say I'm right.
+- [00:08:21,840 - 00:08:22,300] Just go through.
+- [00:08:22,300 - 00:08:22,740] There's an old saying.
+- [00:08:22,740 - 00:08:22,940] I'm not going to tell you this story.
+- [00:08:22,940 - 00:08:22,980] Okay, one more time and then we'll get to 00002.
+- [00:08:22,980 - 00:08:23,040] That the electric field is the peak but there are?
+- [00:08:23,040 - 00:08:30,360] That is the essence of a gauge theory.
+- [00:08:31,140 - 00:08:36,370] Essence of a gauge theory, Maxwell-like fields, I'll use the
+- [00:08:36,370 - 00:08:41,600] word Maxwell-like because they're not all truly Maxwell's electromagnetic field.
+- [00:08:41,600 - 00:08:44,780] Maxwell-like fields consisting of
+- [00:08:44,780 - 00:08:47,960] electric-like and magnetic-like fields.
+- [00:08:47,960 - 00:08:53,390] If the gauge field is weakly coupled, and
+- [00:08:53,390 - 00:08:58,820] I will tell you what that means later,
+- [00:08:58,820 - 00:09:03,480] but it basically means that if the interactions between the parts of the
+- [00:09:03,480 - 00:09:08,140] electromagnetic field are weak enough that they don't interact with each other seriously,
+- [00:09:08,920 - 00:09:13,320] then the motion of a gauge field
+- [00:09:13,320 - 00:09:17,720] is exactly the same as a light wave.
+- [00:09:17,720 - 00:09:19,920] It will have a polarization, it will move
+- [00:09:19,920 - 00:09:22,120] down the axis with the speed of light,
+- [00:09:22,120 - 00:09:26,040] unless there's something in the dynamics
+- [00:09:26,040 - 00:09:29,960] that changes that, naively at least,
+- [00:09:29,960 - 00:09:33,720] it's in every way similar to the electromagnetic field.
+- [00:09:33,720 - 00:09:38,640] The only difference is, it also has sources, every
+- [00:09:38,640 - 00:09:43,560] gauge field has sources, analogous to the electric charge,
+- [00:09:43,560 - 00:09:46,680] but it may not be the electric charge.
+- [00:09:46,680 - 00:09:47,680] It might be something else.
+- [00:09:47,680 - 00:09:50,180] Let me give you an
+- [00:09:50,180 - 00:09:52,680] example which is an unphysical example,
+- [00:09:52,680 - 00:09:55,180] unphysical not because it's inconsistent, but because it just
+- [00:09:55,180 - 00:09:57,680] happens not to be true as far as we know.
+- [00:09:57,680 - 00:10:00,180] There is another quantity in
+- [00:10:00,180 - 00:10:02,680] nature called the baryon number.
+- [00:10:02,680 - 00:10:05,680] It's simply the number of
+- [00:10:05,680 - 00:10:08,680] quarks, but it's a conserved quantity.
+- [00:10:08,680 - 00:10:11,680] And you could imagine that
+- [00:10:11,680 - 00:10:14,680] baryon number is the source of,
+- [00:10:14,680 - 00:10:17,680] now baryon number is not electric charge,
+- [00:10:17,680 - 00:10:18,680] why not?
+- [00:10:18,680 - 00:10:21,680] Well, because protons and neutrons have
+- [00:10:21,680 - 00:10:24,680] it, so it is not electric charge,
+- [00:10:24,680 - 00:10:28,180] but it could be the
+- [00:10:28,180 - 00:10:31,680] source of its own gauge field.
+- [00:10:31,680 - 00:10:36,180] If it were, that would mean that there would
+- [00:10:36,180 - 00:10:40,680] be forces between protons, neutrons, protons, protons, neutrons, neutrons,
+- [00:10:40,680 - 00:10:42,680] that would be analogous to
+- [00:10:42,680 - 00:10:44,680] the Coulomb forces between charges,
+- [00:10:44,680 - 00:10:46,680] except it would have nothing to do with electric charge,
+- [00:10:47,680 - 00:10:51,680] they would have only to do with baryon number.
+- [00:10:51,680 - 00:10:54,680] So, for example, two objects with the
+- [00:10:54,680 - 00:10:57,680] same baryon number would repel each other.
+- [00:10:57,680 - 00:11:00,180] A proton and a neutron would repel each
+- [00:11:00,180 - 00:11:02,680] other because they have the same baryon number.
+- [00:11:02,680 - 00:11:05,680] A proton and a proton would repel.
+- [00:11:05,680 - 00:11:08,680] On the other hand, proton and
+- [00:11:08,680 - 00:11:11,680] anti-proton having opposite baryon number would attract.
+- [00:11:11,680 - 00:11:14,180] Now, the only rub in this ointment
+- [00:11:14,180 - 00:11:16,680] is that there is no such gauge field,
+- [00:11:17,680 - 00:11:21,680] coupled to the baryon number.
+- [00:11:21,680 - 00:11:25,680] Baryon number does not come with
+- [00:11:25,680 - 00:11:29,680] a field like this that surrounds it,
+- [00:11:29,680 - 00:11:32,680] and no long-range force associated with it.
+- [00:11:32,680 - 00:11:35,680] So baryon number is not an example.
+- [00:11:35,680 - 00:11:37,680] Color is an example.
+- [00:11:37,680 - 00:11:45,680] And the color forces of quantum chromodynamics also,
+- [00:11:45,680 - 00:11:49,680] oh, before I do that, one or two other points,
+- [00:11:49,680 - 00:11:51,680] one or two other points.
+- [00:11:51,680 - 00:11:54,180] The other point, of course, is this is
+- [00:11:54,180 - 00:11:56,680] a completely classical description of an electromagnetic wave.
+- [00:11:56,680 - 00:11:59,180] The corresponding quantum mechanical description
+- [00:11:59,180 - 00:12:01,680] is in terms of quanta,
+- [00:12:01,680 - 00:12:04,680] but of course if we think of quanta as particles,
+- [00:12:04,680 - 00:12:08,180] at least that's about the only mental picture
+- [00:12:08,180 - 00:12:11,680] that we have to describe these discrete little objects.
+- [00:12:11,680 - 00:12:15,680] The discrete little objects which drawing them, of course,
+- [00:12:15,680 - 00:12:18,180] is always misleading, but let me draw
+- [00:12:18,180 - 00:12:20,680] a photon, there's a photon, a little point.
+- [00:12:20,680 - 00:12:23,180] That little photon has a position,
+- [00:12:23,180 - 00:12:25,680] moves with the speed of light,
+- [00:12:25,680 - 00:12:28,680] but also it has a little flag associated with it,
+- [00:12:28,680 - 00:12:32,680] and that little flag is its polarization.
+- [00:12:32,680 - 00:12:34,680] I won't try to draw a flag on it.
+- [00:12:34,680 - 00:12:37,680] In other words, it has a pointer, which either
+- [00:12:37,680 - 00:12:40,680] points this way, this way, or somewheres in between,
+- [00:12:40,680 - 00:12:45,680] that indicates the polarization of the electromagnetic wave,
+- [00:12:45,680 - 00:12:48,680] of which it is a quantum.
+- [00:12:48,680 - 00:12:51,680] That's a complicated statement, but I think you get it.
+- [00:12:51,680 - 00:12:54,680] So, photons come with polarization,
+- [00:12:54,680 - 00:12:58,680] and that polarization, in principle, can be rotated.
+- [00:12:58,680 - 00:13:01,180] You can rotate it by sending it through a
+- [00:13:01,180 - 00:13:03,680] quarter wave plate, or in any number of ways.
+- [00:13:03,680 - 00:13:07,180] And that's photons, that's
+- [00:13:07,180 - 00:13:10,680] the photon theory of electromagnetism.
+- [00:13:10,680 - 00:13:14,680] And in the quantum theory,
+- [00:13:14,680 - 00:13:19,680] one can think of the Coulomb field as, roughly speaking,
+- [00:13:19,680 - 00:13:22,180] a field set up by
+- [00:13:22,180 - 00:13:24,680] the emission and absorption of photons.
+- [00:13:24,680 - 00:13:26,680] Emission and absorption of these photons.
+- [00:13:26,680 - 00:13:30,680] Okay, so that's, that's electrodynamics in a nutshell.
+- [00:13:30,680 - 00:13:33,680] Electrons are charged, protons are charged, and so forth,
+- [00:13:33,680 - 00:13:37,680] and they interact in this way with the gauge field.
+- [00:13:37,680 - 00:13:40,680] Another aspect of gauge fields,
+- [00:13:40,680 - 00:13:42,680] I've already mentioned it,
+- [00:13:42,680 - 00:13:44,680] that there's a,
+- [00:13:44,680 - 00:13:47,680] there's always conservation laws associated with them,
+- [00:13:47,680 - 00:13:50,680] namely conservation of the sources.
+- [00:13:50,680 - 00:13:53,180] But conservation laws in both
+- [00:13:53,180 - 00:13:55,680] quantum mechanics and classical mechanics
+- [00:13:55,680 - 00:13:59,680] are always associated with symmetries.
+- [00:13:59,680 - 00:14:03,180] Symmetries of some sort or
+- [00:14:03,180 - 00:14:06,680] another are always behind conservation laws.
+- [00:14:06,680 - 00:14:08,680] The conservation of electric
+- [00:14:08,680 - 00:14:10,680] charge, we've talked about that,
+- [00:14:10,680 - 00:14:12,680] and I showed you how,
+- [00:14:12,680 - 00:14:14,680] if you,
+- [00:14:14,680 - 00:14:18,680] study the quantum mechanics of electrons,
+- [00:14:18,680 - 00:14:22,680] in terms, or charged particles in general,
+- [00:14:22,680 - 00:14:25,680] there's a wave field describing those particles,
+- [00:14:25,680 - 00:14:27,680] this could be the electron,
+- [00:14:27,680 - 00:14:31,680] and the symmetry associated with the conservation of charge
+- [00:14:31,680 - 00:14:36,680] is just the multiplication of the field by a phase.
+- [00:14:36,680 - 00:14:40,680] So that was the simplest example of a gauge theory,
+- [00:14:40,680 - 00:14:43,680] a gauge charge, meaning the electric charge,
+- [00:14:43,680 - 00:14:47,180] and a symmetry that goes along
+- [00:14:47,180 - 00:14:50,680] with the conservation of that charge.
+- [00:14:50,680 - 00:14:53,680] Those things go together.
+- [00:14:53,680 - 00:14:55,680] Okay, well, how,
+- [00:14:55,680 - 00:14:57,680] let me just very quickly remind
+- [00:14:57,680 - 00:14:59,680] you how it worked in quantum chromodynamics.
+- [00:14:59,680 - 00:15:01,680] In quantum chromodynamics,
+- [00:15:01,680 - 00:15:05,680] a more complicated structure,
+- [00:15:05,680 - 00:15:09,680] you do have Maxwell-like fields,
+- [00:15:09,680 - 00:15:11,680] let's label them.
+- [00:15:13,680 - 00:15:21,680] The Maxwell-like fields are labeled by indices.
+- [00:15:21,680 - 00:15:24,680] So in quantum chromo, let's continue to call them A.
+- [00:15:24,680 - 00:15:30,680] There is no universal symbol
+- [00:15:30,680 - 00:15:34,680] for the gauge field of quantum chromodynamics.
+- [00:15:34,680 - 00:15:37,680] Sometimes it's called G, sometimes it's called A,
+- [00:15:37,680 - 00:15:40,680] sometimes it's called B, sometimes it's called C.
+- [00:15:40,680 - 00:15:42,680] I'm going to call it A,
+- [00:15:42,680 - 00:15:44,680] but in order to distinguish
+- [00:15:44,680 - 00:15:46,680] it from the electromagnetic field,
+- [00:15:46,680 - 00:15:49,680] we give it some indices,
+- [00:15:49,680 - 00:15:50,680] I and J.
+- [00:15:50,680 - 00:15:53,680] It's a matrix.
+- [00:15:53,680 - 00:15:55,680] Now,
+- [00:15:55,680 - 00:15:57,680] it's a matrix,
+- [00:15:57,680 - 00:16:01,680] and that matrix transforms under a group.
+- [00:16:01,680 - 00:16:03,680] The group was SU3.
+- [00:16:03,680 - 00:16:06,680] So let me just remind you very, very quickly
+- [00:16:06,680 - 00:16:10,680] that we started thinking about SU3
+- [00:16:10,680 - 00:16:12,680] not by thinking about gluons,
+- [00:16:12,680 - 00:16:14,680] this of course would be the gluon field,
+- [00:16:14,680 - 00:16:17,680] but by thinking about quarks.
+- [00:16:17,680 - 00:16:21,680] So a quark was an object which we called Q.
+- [00:16:21,680 - 00:16:24,680] Q could stand for the quantum field of the quark,
+- [00:16:24,680 - 00:16:27,680] and it has an index.
+- [00:16:27,680 - 00:16:30,680] The index, it's not the up-down index,
+- [00:16:30,680 - 00:16:33,680] it's not the charm-strange index,
+- [00:16:33,680 - 00:16:35,680] we'll come to that sooner or later,
+- [00:16:35,680 - 00:16:37,680] it is the color index,
+- [00:16:37,680 - 00:16:39,680] red, green, or blue.
+- [00:16:39,680 - 00:16:42,680] I takes on three values,
+- [00:16:42,680 - 00:16:45,680] and the symmetry operation
+- [00:16:45,680 - 00:16:48,680] is not multiplying by e to the i theta,
+- [00:16:48,680 - 00:16:51,680] but multiplying by a unitary,
+- [00:16:51,680 - 00:16:53,680] special unitary matrix,
+- [00:16:53,680 - 00:16:58,680] Uij,
+- [00:16:58,680 - 00:17:00,680] gives us Q prime i.
+- [00:17:00,680 - 00:17:02,680] That was the symmetry operation,
+- [00:17:02,680 - 00:17:04,679] which is a kind of rotation
+- [00:17:04,679 - 00:17:08,679] in a kind of three-dimensional complex space.
+- [00:17:08,679 - 00:17:09,679] Don't confuse it with a matrix.
+- [00:17:09,680 - 00:17:12,680] Don't confuse it with ordinary three-dimensional space.
+- [00:17:12,680 - 00:17:15,680] This was the symmetry operation,
+- [00:17:15,680 - 00:17:19,680] and one would say that the Qs,
+- [00:17:19,680 - 00:17:21,680] think of them as particles if you like,
+- [00:17:21,680 - 00:17:25,680] the Qs form a representation of SU3
+- [00:17:25,680 - 00:17:28,680] which is called the fundamental representation.
+- [00:17:28,680 - 00:17:30,680] It's called the fundamental representation,
+- [00:17:30,680 - 00:17:32,680] it has three entries, red, green, and blue.
+- [00:17:32,680 - 00:17:36,680] Sometimes it's called the defining representation.
+- [00:17:36,680 - 00:17:39,680] It's the smallest non-trivial representation.
+- [00:17:39,680 - 00:17:41,680] And it just has,
+- [00:17:41,680 - 00:17:45,680] just can be thought of as a three-component vector,
+- [00:17:45,680 - 00:17:46,680] one, two, three,
+- [00:17:46,680 - 00:17:49,680] and the unitary matrices can be thought of as matrices,
+- [00:17:49,680 - 00:17:51,680] three by three matrices.
+- [00:17:51,680 - 00:17:54,680] Okay, we've gone through that.
+- [00:17:54,680 - 00:17:56,680] The other thing that I told you
+- [00:17:56,680 - 00:18:02,680] is that anti-quarks,
+- [00:18:02,680 - 00:18:04,680] or anti-particles in general,
+- [00:18:04,680 - 00:18:08,680] are represented by the complex conjugate fields
+- [00:18:08,680 - 00:18:13,680] fields which are simply the complex conjugates
+- [00:18:13,680 - 00:18:14,680] of the original ones.
+- [00:18:14,680 - 00:18:16,680] The relation, the mathematical relation
+- [00:18:16,680 - 00:18:18,680] between particle and anti-particle,
+- [00:18:18,680 - 00:18:21,680] or the wave functions of particles and anti-particles,
+- [00:18:21,680 - 00:18:25,680] that relationship is complex conjugation.
+- [00:18:25,680 - 00:18:27,680] So, we could ask,
+- [00:18:27,680 - 00:18:31,680] how do anti-particles transform?
+- [00:18:31,680 - 00:18:34,680] Well, we simply realize
+- [00:18:34,680 - 00:18:37,680] that if you want to transform the complex conjugates,
+- [00:18:37,680 - 00:18:40,680] the complex conjugate field,
+- [00:18:40,680 - 00:18:47,680] you should use the complex conjugate matrix.
+- [00:18:47,680 - 00:18:52,680] If you multiply q by u to get q prime,
+- [00:18:52,680 - 00:18:57,680] then you must multiply q star by u star
+- [00:18:57,680 - 00:19:04,680] to get q prime star.
+- [00:19:04,680 - 00:19:07,680] The set of matrices u,
+- [00:19:07,680 - 00:19:09,680] we call the representation of the group.
+- [00:19:09,680 - 00:19:11,680] The set of matrices u star
+- [00:19:11,680 - 00:19:14,680] are a distinct and different representation of the group,
+- [00:19:14,680 - 00:19:16,680] and the language one would use
+- [00:19:16,680 - 00:19:19,680] is that quarks and anti-quarks
+- [00:19:19,680 - 00:19:24,680] are described by the three-dimensional representation
+- [00:19:24,680 - 00:19:27,680] and we could call it three star,
+- [00:19:27,680 - 00:19:29,680] meaning complex conjugate.
+- [00:19:29,680 - 00:19:32,680] It's usually indicated by a bar.
+- [00:19:32,680 - 00:19:35,680] Two different representations of SU .
+- [00:19:37,680 - 00:19:40,680] So there's seven u matrices?
+- [00:19:40,680 - 00:19:41,680] How many?
+- [00:19:41,680 - 00:19:42,680] Seven?
+- [00:19:42,680 - 00:19:43,680] Eight.
+- [00:19:43,680 - 00:19:44,680] Nine, actually.
+- [00:19:44,680 - 00:19:46,680] Well, sorry.
+- [00:19:46,680 - 00:19:48,680] You asked me how many matrices there are?
+- [00:19:48,680 - 00:19:51,680] For u, I guess that's the number of generators.
+- [00:19:51,680 - 00:19:53,680] The number of generators is eight.
+- [00:19:53,680 - 00:19:56,680] Yeah, because these matrices are assumed
+- [00:19:56,680 - 00:19:58,680] to be special unitary matrices.
+- [00:19:58,680 - 00:20:00,680] Now, you can ask, and it's interesting to ask,
+- [00:20:00,680 - 00:20:02,680] what kind of theory would you make
+- [00:20:02,680 - 00:20:04,680] if you didn't insist that they'd be special?
+- [00:20:04,680 - 00:20:07,680] And I'll tell you another time,
+- [00:20:07,680 - 00:20:09,680] maybe later, but not now.
+- [00:20:09,680 - 00:20:12,680] Okay, now what is Aij?
+- [00:20:12,680 - 00:20:15,680] Aij has two indices,
+- [00:20:15,680 - 00:20:17,180] and the way to think about
+- [00:20:17,180 - 00:20:18,680] it is that one of those,
+- [00:20:18,680 - 00:20:24,680] it is mathematically got the same group theory structure,
+- [00:20:24,680 - 00:20:26,680] the same symmetry structure,
+- [00:20:26,680 - 00:20:33,680] as having a quark j and an anti-quark i.
+- [00:20:33,680 - 00:20:36,680] In other words, this is an object
+- [00:20:36,680 - 00:20:40,680] whose indices transform one index
+- [00:20:40,680 - 00:20:42,680] as the three-dimensional representation
+- [00:20:42,680 - 00:20:44,680] and the other index as the three-bar.
+- [00:20:44,680 - 00:20:46,680] Another way to think about it
+- [00:20:46,680 - 00:20:48,680] is it has all of the properties
+- [00:20:48,680 - 00:20:50,680] with respect to the symmetry,
+- [00:20:50,680 - 00:20:53,680] not with respect to all physical properties,
+- [00:20:53,680 - 00:20:55,680] but with respect to the way it transforms.
+- [00:20:55,680 - 00:20:57,180] It transforms as if it
+- [00:20:57,180 - 00:20:58,680] were a quark and an anti-quark
+- [00:20:58,680 - 00:21:01,680] sitting on top of each other.
+- [00:21:01,680 - 00:21:04,680] Not its spin, just its color,
+- [00:21:04,680 - 00:21:06,680] as if it were a quark and an anti-quark.
+- [00:21:06,680 - 00:21:09,680] With one special rule,
+- [00:21:09,680 - 00:21:13,680] namely the trace of Aij vanishes.
+- [00:21:13,680 - 00:21:16,680] The singlet, the singlet that you can make,
+- [00:21:16,680 - 00:21:19,680] the piece which has no transformation property
+- [00:21:19,680 - 00:21:21,680] under the group at all,
+- [00:21:21,680 - 00:21:23,680] that you can kill and forget about.
+- [00:21:23,680 - 00:21:26,680] That's why there are eight Aijs instead of nine.
+- [00:21:26,680 - 00:21:29,680] So Aij is like a thing
+- [00:21:29,680 - 00:21:32,680] with a quark and an anti-quark index.
+- [00:21:36,680 - 00:21:40,680] But because it has a quark and an anti-quark index,
+- [00:21:40,680 - 00:21:45,680] it also transforms when you,
+- [00:21:45,680 - 00:21:48,680] under the SU transformation group.
+- [00:21:48,680 - 00:21:51,680] In that sense, it's different than the photon.
+- [00:21:51,680 - 00:21:54,680] The photon is completely electrically neutral.
+- [00:21:54,680 - 00:21:57,680] Its field, the photon field,
+- [00:21:57,680 - 00:22:00,680] does not get a phase
+- [00:22:00,680 - 00:22:03,680] when you rotate the electron wave function.
+- [00:22:03,680 - 00:22:05,680] Electrons go to e to the i theta,
+- [00:22:06,680 - 00:22:08,680] times electrons.
+- [00:22:08,680 - 00:22:12,680] Positrons go to e to the minus i theta,
+- [00:22:12,680 - 00:22:14,680] times positrons.
+- [00:22:14,680 - 00:22:17,680] Photons do nothing.
+- [00:22:17,680 - 00:22:20,680] That's because they don't have electric charge.
+- [00:22:20,680 - 00:22:24,680] But the gluons,
+- [00:22:24,680 - 00:22:26,680] they do have color.
+- [00:22:26,680 - 00:22:28,680] Now what kind of color do they have?
+- [00:22:28,680 - 00:22:31,680] They have the color of a particle and an anti-particle.
+- [00:22:31,680 - 00:22:33,680] And you say, well, a particle and an anti-particle
+- [00:22:33,680 - 00:22:35,680] shouldn't have any color.
+- [00:22:35,680 - 00:22:38,680] But they do, because you could have a red particle
+- [00:22:38,680 - 00:22:41,680] and a blue anti-particle.
+- [00:22:41,680 - 00:22:44,680] A red, that would make a thing
+- [00:22:44,680 - 00:22:46,680] which was not really neutral,
+- [00:22:46,680 - 00:22:48,680] which knew about color.
+- [00:22:48,680 - 00:22:50,680] So gluons do have color,
+- [00:22:50,680 - 00:22:52,680] and they have color in what is called
+- [00:22:52,680 - 00:22:54,680] the adjoint representation,
+- [00:22:54,680 - 00:22:58,680] which is the representation of the eight generators.
+- [00:22:58,680 - 00:23:02,680] Okay, now,
+- [00:23:02,680 - 00:23:04,680] what about,
+- [00:23:05,680 - 00:23:09,680] what about the interaction between quarks?
+- [00:23:09,680 - 00:23:11,680] Incidentally,
+- [00:23:11,680 - 00:23:15,680] there are many other gauge theories of interest.
+- [00:23:15,680 - 00:23:17,680] They're all pretty similar to each other.
+- [00:23:17,680 - 00:23:20,680] The group might not be SU3,
+- [00:23:20,680 - 00:23:21,680] it might be SU2,
+- [00:23:21,680 - 00:23:22,680] it might be SU4,
+- [00:23:22,680 - 00:23:23,680] it might be SU10,
+- [00:23:23,680 - 00:23:25,680] it might be anything.
+- [00:23:25,680 - 00:23:27,680] And the objects of the group
+- [00:23:27,680 - 00:23:29,680] might not be called quarks.
+- [00:23:29,680 - 00:23:30,680] Nevertheless,
+- [00:23:30,680 - 00:23:32,680] or the fundamental objects of the group,
+- [00:23:32,680 - 00:23:34,680] the analogs of quarks,
+- [00:23:34,680 - 00:23:35,680] might be called something else.
+- [00:23:35,680 - 00:23:38,680] They might have a different name.
+- [00:23:38,680 - 00:23:43,680] But they would be objects which had a single index.
+- [00:23:43,680 - 00:23:48,680] The anti-objects would also have a single index,
+- [00:23:48,680 - 00:23:51,680] but of the complex conjugate kind.
+- [00:23:51,680 - 00:23:53,680] And the analog of the gluons,
+- [00:23:53,680 - 00:23:55,680] which are called gauge bosons,
+- [00:23:55,680 - 00:23:57,680] gauge bosons,
+- [00:23:57,680 - 00:23:59,680] Maxwell-like fields,
+- [00:23:59,680 - 00:24:03,680] always have one index of the particle type
+- [00:24:03,680 - 00:24:05,680] and another index of the index.
+- [00:24:05,680 - 00:24:07,680] So they're all of the same type.
+- [00:24:07,680 - 00:24:08,680] So that means,
+- [00:24:08,680 - 00:24:09,680] let's see,
+- [00:24:09,680 - 00:24:11,680] if we're talking about SU ,
+- [00:24:11,680 - 00:24:15,680] that means how many generators altogether?
+- [00:24:15,680 - 00:24:16,680] Well,
+- [00:24:16,680 - 00:24:18,180] n times n is n
+- [00:24:18,180 - 00:24:19,680] squared minus one for the trace.
+- [00:24:19,680 - 00:24:23,680] So it's n squared minus one distinct gluons.
+- [00:24:23,680 - 00:24:25,680] Now,
+- [00:24:25,680 - 00:24:29,680] what is the connection between the quarks
+- [00:24:29,680 - 00:24:31,680] or more generally,
+- [00:24:31,680 - 00:24:33,680] or more generally,
+- [00:24:33,680 - 00:24:34,680] the
+- [00:24:34,680 - 00:24:39,680] particles which transform like quarks,
+- [00:24:39,680 - 00:24:41,680] perhaps in a more general way?
+- [00:24:41,680 - 00:24:44,680] What's the connection between them and the gauge bosons?
+- [00:24:44,680 - 00:24:45,680] And I've explained that to you before,
+- [00:24:45,680 - 00:24:47,680] but let me just remind you again.
+- [00:24:47,680 - 00:24:52,680] If you have a quark labeled by I,
+- [00:24:52,680 - 00:24:55,680] where I could be red, green, or blue,
+- [00:24:55,680 - 00:25:01,680] and another quark labeled by J,
+- [00:25:01,680 - 00:25:03,680] that the ith quark can become the,
+- [00:25:03,680 - 00:25:06,680] can become the jth quark
+- [00:25:06,680 - 00:25:07,680] if
+- [00:25:07,680 - 00:25:10,680] a gauge boson is emitted.
+- [00:25:10,680 - 00:25:12,680] What kind of gauge boson?
+- [00:25:12,680 - 00:25:13,680] Well,
+- [00:25:13,680 - 00:25:14,680] as I showed you before,
+- [00:25:14,680 - 00:25:16,680] the way to think about it
+- [00:25:16,680 - 00:25:18,680] is just to think about these lines
+- [00:25:18,680 - 00:25:20,680] running through the diagram.
+- [00:25:22,680 - 00:25:24,680] I runs right through,
+- [00:25:24,680 - 00:25:26,680] so that's I,
+- [00:25:26,680 - 00:25:29,680] and J also runs right through,
+- [00:25:29,680 - 00:25:31,680] except when J is pointing downward,
+- [00:25:31,680 - 00:25:32,680] it should be thought of as the,
+- [00:25:32,680 - 00:25:36,680] the analog of an antiparticle.
+- [00:25:36,680 - 00:25:38,680] And so,
+- [00:25:38,680 - 00:25:41,680] an I would become a J
+- [00:25:41,680 - 00:25:44,680] by emitting a quanta,
+- [00:25:44,680 - 00:25:49,680] a quantum of the field A,
+- [00:25:49,680 - 00:25:52,680] is it J I or I J?
+- [00:25:52,680 - 00:25:54,680] I think I J.
+- [00:25:54,680 - 00:25:55,680] No, J I.
+- [00:25:55,680 - 00:25:58,680] Doesn't matter very much.
+- [00:25:58,680 - 00:26:00,680] By emitting a gluon of the I Jth type,
+- [00:26:00,680 - 00:26:01,680] by emitting a gluon of the I Jth type,
+- [00:26:02,680 - 00:26:05,680] an Ith particle becomes a Jth particle,
+- [00:26:05,680 - 00:26:07,680] and that is one of the basic interactions
+- [00:26:07,680 - 00:26:08,680] of quantum,
+- [00:26:08,680 - 00:26:11,680] of gauge theories in general,
+- [00:26:11,680 - 00:26:13,680] of gauge theories in general.
+- [00:26:13,680 - 00:26:15,680] Fundamental objects,
+- [00:26:15,680 - 00:26:17,680] analogous to quarks,
+- [00:26:17,680 - 00:26:19,680] gauge bosons,
+- [00:26:19,680 - 00:26:21,680] analogous to gluons,
+- [00:26:21,680 - 00:26:24,680] and a rule about emission and absorption
+- [00:26:24,680 - 00:26:26,680] that you have to follow the lines
+- [00:26:26,680 - 00:26:30,680] and never lose an index.
+- [00:26:30,680 - 00:26:31,680] Right?
+- [00:26:32,680 - 00:26:33,680] But now,
+- [00:26:33,680 - 00:26:36,680] that raises something new.
+- [00:26:36,680 - 00:26:40,680] If a gluon itself
+- [00:26:40,680 - 00:26:42,680] has the properties
+- [00:26:42,680 - 00:26:45,680] of a quark and an anti-quark,
+- [00:26:45,680 - 00:26:48,180] so let's say this is
+- [00:26:48,180 - 00:26:50,680] the I Jth kind of gluon.
+- [00:26:50,680 - 00:26:53,680] Well, the I Jth kind of gluon
+- [00:26:53,680 - 00:26:56,680] can also emit a gluon.
+- [00:26:56,680 - 00:27:00,680] How would it do it?
+- [00:27:00,680 - 00:27:07,680] The I Jth gluon could become the I Kth gluon.
+- [00:27:07,680 - 00:27:10,680] I J, let's say, red-green gluon
+- [00:27:10,680 - 00:27:13,680] could become the red-blue gluon
+- [00:27:13,680 - 00:27:17,680] as long as the indices make sense
+- [00:27:17,680 - 00:27:20,680] and they're followed, anti-K here.
+- [00:27:20,680 - 00:27:23,680] All right, so this would be an interaction
+- [00:27:23,680 - 00:27:26,680] in which a gluon of type I J
+- [00:27:26,680 - 00:27:28,680] became a gluon of type I K
+- [00:27:28,680 - 00:27:29,680] and a gluon of type I K.
+- [00:27:29,680 - 00:27:33,680] And a gluon of type K J.
+- [00:27:33,680 - 00:27:35,680] A gluon of type K J.
+- [00:27:35,680 - 00:27:37,680] The order of I and K matters.
+- [00:27:37,680 - 00:27:39,180] A K J is not
+- [00:27:39,180 - 00:27:40,680] the same as a J K.
+- [00:27:40,680 - 00:27:43,680] But, um...
+- [00:27:43,680 - 00:27:49,680] All right, that introduces something absolutely new
+- [00:27:49,680 - 00:27:52,680] which is not in electrodynamics.
+- [00:27:52,680 - 00:27:55,680] Namely, that the gluons themselves
+- [00:27:55,680 - 00:27:57,680] are charged particles
+- [00:27:57,680 - 00:28:02,680] and therefore exert forces on each other.
+- [00:28:02,680 - 00:28:05,680] They exert forces in a way that photons do not
+- [00:28:05,680 - 00:28:08,680] exert forces on each other.
+- [00:28:08,680 - 00:28:12,680] The dynamics of gluons is much, much more complicated
+- [00:28:12,680 - 00:28:14,680] than the dynamics of photons.
+- [00:28:14,680 - 00:28:16,680] The last time, what I told you
+- [00:28:16,680 - 00:28:18,680] was that one of the...
+- [00:28:18,680 - 00:28:20,680] And I'm not going to do the mathematics of this.
+- [00:28:20,680 - 00:28:23,680] It's not even fully understood even now.
+- [00:28:23,680 - 00:28:26,680] But the effect...
+- [00:28:27,680 - 00:28:30,680] One of the important effects
+- [00:28:30,680 - 00:28:32,680] is that if you have a source,
+- [00:28:32,680 - 00:28:35,680] a color, a bit of color,
+- [00:28:35,680 - 00:28:38,680] with field lines coming out of it,
+- [00:28:38,680 - 00:28:42,680] again, those field lines are not allowed to end.
+- [00:28:42,680 - 00:28:44,680] They're not allowed to end.
+- [00:28:44,680 - 00:28:46,680] But the effect, let's suppose,
+- [00:28:46,680 - 00:28:50,680] that's a quark, is an anti-quark over here.
+- [00:28:50,680 - 00:28:52,680] Field lines have to come into it.
+- [00:28:52,680 - 00:28:54,680] So the field lines have
+- [00:28:54,680 - 00:28:56,680] to be continuous and so forth.
+- [00:28:56,680 - 00:28:57,680] I don't want...
+- [00:28:57,680 - 00:29:01,680] Let me not draw more than that.
+- [00:29:01,680 - 00:29:04,680] Now, the effect is that the field lines
+- [00:29:04,680 - 00:29:06,680] interact with each other in a way
+- [00:29:06,680 - 00:29:09,680] that they don't in electrodynamics.
+- [00:29:09,680 - 00:29:13,680] And the effect is very simple.
+- [00:29:13,680 - 00:29:16,680] The field lines get pulled into bundles,
+- [00:29:16,680 - 00:29:19,680] which are called flux tubes,
+- [00:29:19,680 - 00:29:22,680] the result of which is...
+- [00:29:26,680 - 00:29:29,680] that no matter how far apart you pull two quarks,
+- [00:29:29,680 - 00:29:31,680] they'll never escape from each other
+- [00:29:31,680 - 00:29:36,680] because the energy stored in this
+- [00:29:36,680 - 00:29:38,680] gooey piece of glue
+- [00:29:38,680 - 00:29:42,680] just increases linearly with the distance between them.
+- [00:29:42,680 - 00:29:45,680] All right, that's a summary of quantum chromodynamics,
+- [00:29:45,680 - 00:29:47,680] but it's also a summary of gauge theory.
+- [00:29:47,680 - 00:29:49,680] It's also a summary,
+- [00:29:49,680 - 00:29:52,680] very, very quick summary of gauge theory.
+- [00:29:52,680 - 00:29:55,680] Maxwell-like fields,
+- [00:29:55,680 - 00:29:59,680] sources,
+- [00:29:59,680 - 00:30:01,680] Gauss's law,
+- [00:30:01,680 - 00:30:03,680] making sure you have conservation,
+- [00:30:03,680 - 00:30:04,680] and symmetries.
+- [00:30:04,680 - 00:30:07,680] Symmetries having to do with the conservation laws,
+- [00:30:07,680 - 00:30:08,680] but more than that,
+- [00:30:08,680 - 00:30:10,680] the symmetries telling you
+- [00:30:10,680 - 00:30:13,680] how the particles interact with each other
+- [00:30:13,680 - 00:30:15,680] in terms of emission and absorption.
+- [00:30:15,680 - 00:30:19,680] There is one other thing in a gauge theory,
+- [00:30:19,680 - 00:30:21,680] and it's the coupling constant.
+- [00:30:21,680 - 00:30:24,680] The coupling constant is the analog
+- [00:30:24,680 - 00:30:26,680] of the charge of the electron.
+- [00:30:26,680 - 00:30:28,680] The charge of the electron,
+- [00:30:28,680 - 00:30:31,680] let's talk about what the charge of the electron means.
+- [00:30:34,680 - 00:30:36,680] It is, of course,
+- [00:30:36,680 - 00:30:39,680] the coefficient in a Feynman diagram
+- [00:30:39,680 - 00:30:42,680] when you emit
+- [00:30:42,680 - 00:30:45,680] a photon from a charged particle,
+- [00:30:45,680 - 00:30:47,680] the amplitude for that,
+- [00:30:47,680 - 00:30:49,680] the quantum mechanical amplitude for that
+- [00:30:49,680 - 00:30:52,680] is the electric charge.
+- [00:30:54,680 - 00:30:59,680] But if you wanted to think about it operationally,
+- [00:30:59,680 - 00:31:02,680] you can imagine an electric charge
+- [00:31:02,680 - 00:31:08,680] slamming into the cathode of a cathode ray tube.
+- [00:31:08,680 - 00:31:10,680] When it slams into it,
+- [00:31:10,680 - 00:31:11,680] it gets accelerated,
+- [00:31:11,680 - 00:31:12,680] and the question is,
+- [00:31:12,680 - 00:31:14,680] what is the probability
+- [00:31:14,680 - 00:31:17,680] that an electron which is stopped suddenly
+- [00:31:17,680 - 00:31:19,680] emits a photon?
+- [00:31:19,680 - 00:31:22,680] The answer is the square of the electric charge.
+- [00:31:22,680 - 00:31:23,680] Okay?
+- [00:31:24,680 - 00:31:25,680] The square,
+- [00:31:25,680 - 00:31:27,680] it's really the square of the electric charge,
+- [00:31:27,680 - 00:31:28,680] there's some pi's in it,
+- [00:31:28,680 - 00:31:30,680] and h-bars and things,
+- [00:31:30,680 - 00:31:32,680] but basically the square of the electric charge
+- [00:31:32,680 - 00:31:35,680] in suitable units
+- [00:31:35,680 - 00:31:38,680] is the probability for emitting a photon.
+- [00:31:38,680 - 00:31:40,680] So that's what,
+- [00:31:40,680 - 00:31:42,680] in quantum mechanics and field theory,
+- [00:31:42,680 - 00:31:44,680] that is what the meaning of the electric charge is.
+- [00:31:44,680 - 00:31:45,680] It's a measure of the,
+- [00:31:45,680 - 00:31:48,680] the square of the electric charge is the probability.
+- [00:31:48,680 - 00:31:49,680] Why?
+- [00:31:49,680 - 00:31:52,680] Because probabilities are always squares of amplitudes.
+- [00:31:52,680 - 00:31:54,680] But that's the,
+- [00:31:54,680 - 00:31:57,680] that's the fundamental significance of the electric charge.
+- [00:31:57,680 - 00:32:00,680] And the electric charge is a dimensionless number.
+- [00:32:00,680 - 00:32:03,680] Just the probability that when you stop an electron,
+- [00:32:03,680 - 00:32:05,680] you emit a photon.
+- [00:32:05,680 - 00:32:08,680] So it's a dimensionless number.
+- [00:32:08,680 - 00:32:11,680] It's a small dimensionless number.
+- [00:32:11,680 - 00:32:14,680] And with appropriate sets of definitions,
+- [00:32:14,680 - 00:32:18,680] the square of the electric charge,
+- [00:32:18,680 - 00:32:20,680] really what tends to come into things
+- [00:32:20,680 - 00:32:22,680] is not quite the square of the electric charge,
+- [00:32:22,680 - 00:32:24,680] it's the square of the electric charge,
+- [00:32:24,680 - 00:32:26,680] divided by some 4 pi.
+- [00:32:26,680 - 00:32:29,680] 4 pi's are always floating around in there.
+- [00:32:29,680 - 00:32:31,680] It's called the fine structure constant.
+- [00:32:31,680 - 00:32:34,680] And the fine structure constant,
+- [00:32:34,680 - 00:32:38,680] which is pretty much the probability of a photon emission,
+- [00:32:38,680 - 00:32:41,680] is a number of about 1%.
+- [00:32:41,680 - 00:32:45,680] It's close to being 1 over 137,
+- [00:32:45,680 - 00:32:48,680] a famous number, 1 over 137.
+- [00:32:48,680 - 00:32:52,680] The 137 has no particular significance.
+- [00:32:52,680 - 00:32:54,680] It's just numerically about,
+- [00:32:54,680 - 00:32:57,680] what the fine structure constant is.
+- [00:32:57,680 - 00:32:59,680] And let's just call it 1%.
+- [00:32:59,680 - 00:33:02,680] It says there's a 1% probability of emitting a photon.
+- [00:33:02,680 - 00:33:04,180] So if you had a picture that
+- [00:33:04,180 - 00:33:05,680] when an electron hits a cathode ray tube,
+- [00:33:05,680 - 00:33:07,680] it sends out a spray of photons,
+- [00:33:07,680 - 00:33:09,680] that's not right.
+- [00:33:09,680 - 00:33:12,680] What is right is that if
+- [00:33:12,680 - 00:33:15,680] 137 photons hit the cathode ray tube,
+- [00:33:15,680 - 00:33:17,180] on the average, one of
+- [00:33:17,180 - 00:33:18,680] them will give off a photon.
+- [00:33:18,680 - 00:33:20,680] In that sense,
+- [00:33:20,680 - 00:33:23,680] electromagnetism is a weak force,
+- [00:33:23,680 - 00:33:25,680] or a weak process.
+- [00:33:25,680 - 00:33:29,680] The probability of emission is weak.
+- [00:33:29,680 - 00:33:34,680] Alright, that's the quick summary of gauge theory.
+- [00:33:34,680 - 00:33:36,680] What I wanted to do
+- [00:33:36,680 - 00:33:40,680] is give you a very, very briefly
+- [00:33:40,680 - 00:33:44,680] a
+- [00:33:44,680 - 00:33:48,680] rundown on some numbers and orders of magnitude
+- [00:33:48,680 - 00:33:52,680] in various parts of particle and atomic physics.
+- [00:33:53,680 - 00:33:57,680] And then go on to the weak interactions.
+- [00:33:57,680 - 00:34:00,680] Now the reason I'm giving you a rundown about numbers
+- [00:34:00,680 - 00:34:04,680] is to show you how different the weak interactions...
+- [00:34:04,680 - 00:34:06,180] Quantum chromodynamics is the
+- [00:34:06,180 - 00:34:07,680] theory of the strong interactions.
+- [00:34:07,680 - 00:34:11,679] The strong interactions was the word
+- [00:34:11,679 - 00:34:14,679] before quantum chromodynamics was invented
+- [00:34:14,679 - 00:34:17,679] for the interactions between subnuclear particles,
+- [00:34:17,679 - 00:34:19,679] between hadrons,
+- [00:34:19,679 - 00:34:21,679] between protons, neutrons, mesons,
+- [00:34:21,679 - 00:34:23,679] and all the things which are in the atom.
+- [00:34:23,679 - 00:34:25,679] Which are made of quarks and gluons.
+- [00:34:25,679 - 00:34:28,679] So it's the theory of strong interactions.
+- [00:34:28,679 - 00:34:32,679] Um...
+- [00:34:32,679 - 00:34:34,679] And...
+- [00:34:34,679 - 00:34:37,679] There are electromagnetic interactions,
+- [00:34:37,679 - 00:34:39,679] and there are also weak interactions.
+- [00:34:39,679 - 00:34:40,679] So I want to spend a
+- [00:34:40,679 - 00:34:41,679] little bit of time with numbers
+- [00:34:41,679 - 00:34:43,679] to show you where the terminology came from,
+- [00:34:43,679 - 00:34:45,179] why one is called weak, why
+- [00:34:45,179 - 00:34:46,679] the other one is called strong,
+- [00:34:46,679 - 00:34:48,679] why electromagnetism is sort of in
+- [00:34:48,679 - 00:34:50,679] the middle between the two of them.
+- [00:34:50,679 - 00:34:53,679] But let's just review a couple of numbers.
+- [00:34:53,679 - 00:34:54,679] Um...
+- [00:34:54,679 - 00:34:56,679] First of all, in terms of units.
+- [00:34:58,680 - 00:35:01,680] Energy, distance, and time
+- [00:35:01,680 - 00:35:04,680] do not have to be thought of as different units.
+- [00:35:04,680 - 00:35:06,680] They're all related with each other.
+- [00:35:06,680 - 00:35:09,680] First of all, time and distance
+- [00:35:09,680 - 00:35:11,680] really should not be distinguished
+- [00:35:11,680 - 00:35:14,680] in any sensible set of units
+- [00:35:14,680 - 00:35:16,680] that are useful for fundamental physics.
+- [00:35:16,680 - 00:35:18,680] Uh...
+- [00:35:18,680 - 00:35:20,680] We can set the speed of light equal to one,
+- [00:35:20,680 - 00:35:21,680] and if we do, if we fix
+- [00:35:21,680 - 00:35:22,680] the speed of light equal to one,
+- [00:35:23,680 - 00:35:26,680] then time and distance have the same units.
+- [00:35:26,680 - 00:35:28,680] Uh...
+- [00:35:28,680 - 00:35:30,680] And we can use the same units.
+- [00:35:30,680 - 00:35:33,680] And the...
+- [00:35:33,680 - 00:35:35,680] As far as energy goes,
+- [00:35:35,680 - 00:35:37,680] we could also choose to
+- [00:35:37,680 - 00:35:39,680] set Planck's constant equal to one.
+- [00:35:39,680 - 00:35:42,680] That's a useful thing to do in quantum mechanics.
+- [00:35:42,680 - 00:35:44,680] An awful lot of equations get simpler
+- [00:35:44,680 - 00:35:46,680] if you set h-bar equal to one.
+- [00:35:46,680 - 00:35:48,680] Well, they don't get a lot simpler.
+- [00:35:48,680 - 00:35:50,680] It just gets rid of the h-bars.
+- [00:35:50,680 - 00:35:52,680] But you can set h-bar equal to one.
+- [00:35:52,680 - 00:35:54,680] Now let me just remind you,
+- [00:35:54,680 - 00:36:00,680] there's a connection between energy
+- [00:36:00,680 - 00:36:04,680] e equals h frequency, right?
+- [00:36:04,680 - 00:36:06,680] Or h-nu.
+- [00:36:06,680 - 00:36:07,680] Or h-bar omega.
+- [00:36:07,680 - 00:36:09,680] All the same thing.
+- [00:36:09,680 - 00:36:10,680] Uh...
+- [00:36:10,680 - 00:36:12,180] The units of h-bar, well,
+- [00:36:12,180 - 00:36:13,680] we've set h-bar equal to one.
+- [00:36:13,680 - 00:36:16,680] So in units in which h-bar are equal to one,
+- [00:36:16,680 - 00:36:18,680] energy is equal to frequency.
+- [00:36:18,680 - 00:36:20,680] But what's the units of frequency?
+- [00:36:20,680 - 00:36:21,680] One over time.
+- [00:36:21,680 - 00:36:22,680] One over time.
+- [00:36:22,680 - 00:36:24,680] Number of oscillations per second.
+- [00:36:24,680 - 00:36:26,680] So that means that energy and time
+- [00:36:26,680 - 00:36:29,680] have inverse units to each other.
+- [00:36:29,680 - 00:36:31,680] You don't need to have a
+- [00:36:31,680 - 00:36:33,680] separate unit for time and energy.
+- [00:36:33,680 - 00:36:36,680] Any time you have a unit of energy,
+- [00:36:36,680 - 00:36:39,680] it defines also a unit of time.
+- [00:36:39,680 - 00:36:41,680] Now, of course, the unit of energy
+- [00:36:41,680 - 00:36:43,680] is inverse to the unit of time.
+- [00:36:43,680 - 00:36:48,680] So big energies correspond to small time intervals.
+- [00:36:48,680 - 00:36:49,680] Uh...
+- [00:36:49,680 - 00:36:51,680] And, okay, so let's, uh...
+- [00:36:51,680 - 00:36:53,680] Let's write down some connections.
+- [00:36:53,680 - 00:36:56,680] And since energy and time
+- [00:36:56,680 - 00:36:58,680] are connected to each other,
+- [00:36:58,680 - 00:37:01,180] and time and space have the same
+- [00:37:01,180 - 00:37:03,680] units when c is equal to one,
+- [00:37:03,680 - 00:37:07,680] then time and space
+- [00:37:07,680 - 00:37:10,180] have units which are just inverse
+- [00:37:10,180 - 00:37:12,680] units to the units of energy.
+- [00:37:12,680 - 00:37:14,180] So, for example, here's a
+- [00:37:14,180 - 00:37:15,680] unit of energy, one electron volt.
+- [00:37:15,680 - 00:37:18,680] We've used electron volts before.
+- [00:37:18,680 - 00:37:20,680] One electron volt cannot be thought of
+- [00:37:20,680 - 00:37:22,680] as a unit of distance.
+- [00:37:22,680 - 00:37:26,680] But the inverse, one inverse electron volt,
+- [00:37:26,680 - 00:37:28,680] in other words, one over an electron,
+- [00:37:28,680 - 00:37:32,680] one inverse electron volt is a unit of distance.
+- [00:37:32,680 - 00:37:34,680] And just to have an idea of what it is,
+- [00:37:34,680 - 00:37:40,680] it's about 10 to the minus seventh meters.
+- [00:37:40,680 - 00:37:42,680] One electron volt is about
+- [00:37:42,680 - 00:37:44,680] 10 to the minus seventh meters.
+- [00:37:44,680 - 00:37:47,680] So an electron volt is a fairly small distance,
+- [00:37:47,680 - 00:37:49,680] but on the scale of fundamental physics,
+- [00:37:49,680 - 00:37:51,680] it's not a small distance.
+- [00:37:51,680 - 00:37:53,680] 10 to the minus seventh meters is what?
+- [00:37:53,680 - 00:37:55,680] Um...
+- [00:37:55,680 - 00:37:56,680] 10 to the...
+- [00:37:56,680 - 00:37:58,680] Oh, a atom is 10 to the minus tenth meters,
+- [00:37:58,680 - 00:38:00,680] something like that.
+- [00:38:00,680 - 00:38:01,680] Yeah.
+- [00:38:01,680 - 00:38:03,680] Okay, so it's fairly big.
+- [00:38:03,680 - 00:38:04,680] Uh...
+- [00:38:04,680 - 00:38:06,680] An atomic diameter, yeah, an atomic...
+- [00:38:06,680 - 00:38:07,680] And we can...
+- [00:38:07,680 - 00:38:08,680] Right.
+- [00:38:08,680 - 00:38:10,680] And an atomic diameter,
+- [00:38:10,680 - 00:38:12,680] one atom,
+- [00:38:12,680 - 00:38:14,680] this is the atomic diameter,
+- [00:38:14,680 - 00:38:18,680] that's about 10 to the minus tenth meters.
+- [00:38:18,680 - 00:38:21,680] And so you can convert that to electron volts.
+- [00:38:21,680 - 00:38:23,680] How many electron volts is it?
+- [00:38:23,680 - 00:38:25,680] I don't know, whatever it is.
+- [00:38:25,680 - 00:38:28,680] An inverse of about a thousand electron volts,
+- [00:38:28,680 - 00:38:30,680] a kiloelectron volt.
+- [00:38:30,680 - 00:38:33,680] An inverse kiloelectron volt is an atomic diameter.
+- [00:38:36,680 - 00:38:39,680] Okay, another fact,
+- [00:38:39,680 - 00:38:41,680] just converting distance,
+- [00:38:41,680 - 00:38:43,680] if we know the distance or size of an atom,
+- [00:38:43,680 - 00:38:45,180] then we know the time that
+- [00:38:45,180 - 00:38:46,680] it takes light to go across it.
+- [00:38:46,680 - 00:38:47,680] All right?
+- [00:38:47,680 - 00:38:49,680] So the transit time,
+- [00:38:49,680 - 00:38:50,680] there's another quantity,
+- [00:38:50,680 - 00:38:52,680] transit time,
+- [00:38:52,680 - 00:38:55,680] the time that it takes transit time,
+- [00:38:55,680 - 00:38:58,680] the time for light to cross an atomic diameter,
+- [00:38:58,680 - 00:38:59,680] what is that?
+- [00:38:59,680 - 00:39:04,680] That's about 10 to the minus 18th seconds.
+- [00:39:04,680 - 00:39:06,680] I've used the fact that light goes at
+- [00:39:06,680 - 00:39:08,680] about 10 to the eighth meters per second.
+- [00:39:08,680 - 00:39:10,680] Order of magnitude 10 to the minus 18th seconds.
+- [00:39:10,680 - 00:39:13,680] These are just some numbers that I just wrote down.
+- [00:39:13,680 - 00:39:15,680] But a different time scale,
+- [00:39:15,680 - 00:39:16,680] all right, so this is the
+- [00:39:16,680 - 00:39:17,680] time scale for light to go across,
+- [00:39:17,680 - 00:39:19,680] go across an atom.
+- [00:39:19,680 - 00:39:20,680] The different times,
+- [00:39:20,680 - 00:39:21,680] and by an atom,
+- [00:39:21,680 - 00:39:22,680] I don't mean the nucleus,
+- [00:39:22,680 - 00:39:24,680] I mean the whole atom.
+- [00:39:24,680 - 00:39:28,680] Another time scale is the time scale that
+- [00:39:28,680 - 00:39:32,680] it takes for an electron to orbit an atom.
+- [00:39:32,680 - 00:39:33,680] Now you might think,
+- [00:39:33,680 - 00:39:36,680] why isn't that just about the transit time?
+- [00:39:36,680 - 00:39:40,680] Transit time is about 10 to the minus 18th centimeters.
+- [00:39:40,680 - 00:39:43,680] The reason is because
+- [00:39:43,680 - 00:39:46,680] electromagnetic forces are fairly weak.
+- [00:39:46,680 - 00:39:48,680] Because they are fairly weak,
+- [00:39:48,680 - 00:39:49,680] the force on,
+- [00:39:49,680 - 00:39:51,680] and the ultimate reason that they're weak
+- [00:39:51,680 - 00:39:54,680] is because this fine structure constant is alpha,
+- [00:39:54,680 - 00:39:57,680] which is E squared over 4 pi.
+- [00:39:57,680 - 00:40:02,680] That's a small number of about 1 over 137.
+- [00:40:02,680 - 00:40:05,680] Another way to say it is the
+- [00:40:05,680 - 00:40:08,680] electromagnetic force on an electron is weak.
+- [00:40:08,680 - 00:40:09,680] Because of that,
+- [00:40:09,680 - 00:40:13,680] the acceleration on the electron is not too big,
+- [00:40:13,680 - 00:40:15,680] and the orbit is fairly large.
+- [00:40:16,680 - 00:40:18,680] The weaker the force on an object,
+- [00:40:18,680 - 00:40:21,680] the larger the orbit is going to be.
+- [00:40:21,680 - 00:40:22,680] Sorry,
+- [00:40:22,680 - 00:40:24,680] the slower the electron will move
+- [00:40:24,680 - 00:40:26,680] is what I meant to say.
+- [00:40:26,680 - 00:40:28,680] The slower the electron will move,
+- [00:40:28,680 - 00:40:31,180] and because the electron moves slowly
+- [00:40:31,180 - 00:40:33,680] by comparison with the speed of light,
+- [00:40:33,680 - 00:40:34,680] how much slower?
+- [00:40:34,680 - 00:40:36,680] About 1% slower.
+- [00:40:36,680 - 00:40:38,680] About this much slower.
+- [00:40:38,680 - 00:40:40,680] The electron moves around with only
+- [00:40:40,680 - 00:40:42,680] about 1% the speed of light,
+- [00:40:42,680 - 00:40:45,680] and that means the orbital time,
+- [00:40:45,680 - 00:40:51,680] orbital time,
+- [00:40:51,680 - 00:40:54,680] that's about 10 to the minus,
+- [00:40:54,680 - 00:40:55,680] let's see, it's bigger,
+- [00:40:55,680 - 00:40:56,680] that time is bigger,
+- [00:40:56,680 - 00:41:01,680] 10 to the minus 16 seconds.
+- [00:41:01,680 - 00:41:04,680] Another quantity sometimes of interest
+- [00:41:04,680 - 00:41:07,680] is the decay time for an atom.
+- [00:41:07,680 - 00:41:09,680] How long does it take for an atom,
+- [00:41:09,680 - 00:41:10,680] an excited atom,
+- [00:41:10,680 - 00:41:12,680] let's say a hydrogen atom,
+- [00:41:12,680 - 00:41:13,680] with its electron,
+- [00:41:13,680 - 00:41:15,680] one orbital time,
+- [00:41:15,680 - 00:41:17,680] one orbital up from the ground state,
+- [00:41:17,680 - 00:41:18,680] one orbit up from the ground state,
+- [00:41:18,680 - 00:41:21,680] how long does it take to decay?
+- [00:41:21,680 - 00:41:22,680] Now,
+- [00:41:22,680 - 00:41:24,680] that is small,
+- [00:41:24,680 - 00:41:25,680] doubly small,
+- [00:41:25,680 - 00:41:27,680] with two powers of alpha.
+- [00:41:27,680 - 00:41:29,680] What are the two powers of alpha?
+- [00:41:29,680 - 00:41:30,680] First of all,
+- [00:41:30,680 - 00:41:34,680] the acceleration of the electron is small.
+- [00:41:34,680 - 00:41:35,680] Remember,
+- [00:41:35,680 - 00:41:40,680] charges emit radiation when they're accelerated.
+- [00:41:40,680 - 00:41:42,680] The acceleration is small
+- [00:41:42,680 - 00:41:44,680] because the force is small,
+- [00:41:44,680 - 00:41:45,680] so first of all,
+- [00:41:45,680 - 00:41:47,680] the acceleration is small.
+- [00:41:47,680 - 00:41:49,680] The electron moves around
+- [00:41:49,680 - 00:41:52,680] with a relatively small acceleration,
+- [00:41:52,680 - 00:41:55,680] compared to what it could have been
+- [00:41:55,680 - 00:41:57,680] if alpha were bigger.
+- [00:41:57,680 - 00:41:59,680] It moves around with a small acceleration,
+- [00:41:59,680 - 00:42:01,680] but on top of that,
+- [00:42:01,680 - 00:42:06,680] just like the electron plowing into the cathode ray tube,
+- [00:42:06,680 - 00:42:09,680] there's another factor of alpha
+- [00:42:09,680 - 00:42:11,680] when the electron is accelerated
+- [00:42:11,680 - 00:42:13,680] in the probability that it emits,
+- [00:42:13,680 - 00:42:15,680] a photon.
+- [00:42:15,680 - 00:42:17,680] So as the electron goes around here,
+- [00:42:17,680 - 00:42:18,680] first of all,
+- [00:42:18,680 - 00:42:20,680] it's moving with a slow acceleration,
+- [00:42:20,680 - 00:42:21,680] and second of all,
+- [00:42:21,680 - 00:42:24,680] even that acceleration is not very efficient
+- [00:42:24,680 - 00:42:26,680] in producing photons,
+- [00:42:26,680 - 00:42:27,680] just because
+- [00:42:27,680 - 00:42:29,680] the fine structure constant is small.
+- [00:42:29,680 - 00:42:33,680] The net result is that the time scale,
+- [00:42:33,680 - 00:42:35,680] order of magnitude,
+- [00:42:35,680 - 00:42:36,680] decay time,
+- [00:42:36,680 - 00:42:37,680] how long it takes
+- [00:42:37,680 - 00:42:39,680] for an atom to decay,
+- [00:42:39,680 - 00:42:40,680] decay time
+- [00:42:40,680 - 00:42:42,680] is about a nanosecond.
+- [00:42:42,680 - 00:42:43,680] So,
+- [00:42:43,680 - 00:42:45,680] 10 to the minus 9 seconds,
+- [00:42:45,680 - 00:42:47,680] much longer
+- [00:42:47,680 - 00:42:49,680] than the orbital time
+- [00:42:49,680 - 00:42:50,680] or the transit time.
+- [00:42:50,680 - 00:42:52,680] So the main thing is
+- [00:42:52,680 - 00:42:55,680] there's a variety of different scales
+- [00:42:55,680 - 00:42:56,680] in the atom,
+- [00:42:56,680 - 00:42:59,680] and they're all related
+- [00:42:59,680 - 00:43:02,680] by the fine structure constant.
+- [00:43:02,680 - 00:43:05,680] They're related by powers of the fine structure constant.
+- [00:43:05,680 - 00:43:08,680] The fine structure constant being a small number,
+- [00:43:08,680 - 00:43:11,680] there are fairly large ratios
+- [00:43:11,680 - 00:43:12,680] between different time scales.
+- [00:43:12,680 - 00:43:13,680] Transit,
+- [00:43:13,680 - 00:43:14,680] orbital,
+- [00:43:14,680 - 00:43:15,680] and decay time.
+- [00:43:15,680 - 00:43:16,680] All right,
+- [00:43:16,680 - 00:43:18,680] now let's come to hadrons.
+- [00:43:18,680 - 00:43:20,680] Hadrons are like atoms.
+- [00:43:20,680 - 00:43:23,680] They're atoms made up out of quarks.
+- [00:43:23,680 - 00:43:26,680] We could ask very much the same kind of questions.
+- [00:43:26,680 - 00:43:27,680] First of all,
+- [00:43:27,680 - 00:43:31,680] we could ask what is the hadronic diameter.
+- [00:43:31,680 - 00:43:34,680] The hadronic diameter of a typical hadron,
+- [00:43:34,680 - 00:43:36,680] it could be a proton,
+- [00:43:36,680 - 00:43:37,680] neutron,
+- [00:43:37,680 - 00:43:38,680] meson,
+- [00:43:38,680 - 00:43:40,680] they're all more or less the same,
+- [00:43:40,680 - 00:43:41,680] there's hadrons.
+- [00:43:42,680 - 00:43:43,680] Hadrons,
+- [00:43:43,680 - 00:43:44,680] hadrons.
+- [00:43:44,680 - 00:43:48,680] The hadronic diameter is a lot smaller than the electron,
+- [00:43:48,680 - 00:43:49,680] sorry,
+- [00:43:49,680 - 00:43:50,680] than the atom.
+- [00:43:50,680 - 00:43:51,680] It's a lot smaller than the atom.
+- [00:43:51,680 - 00:43:53,680] It's not 10 to the minus 10th meters.
+- [00:43:53,680 - 00:44:02,680] It's about five orders of magnitude smaller.
+- [00:44:02,680 - 00:44:06,680] 10 to the minus 15th centimeters.
+- [00:44:06,680 - 00:44:11,680] It's also more or less the diameter of a nucleus,
+- [00:44:11,680 - 00:44:15,180] nucleus of course being a few protons
+- [00:44:15,180 - 00:44:18,680] and neutrons is going to be bigger.
+- [00:44:18,680 - 00:44:19,680] Meters.
+- [00:44:19,680 - 00:44:20,680] Sorry,
+- [00:44:20,680 - 00:44:21,680] meters.
+- [00:44:21,680 - 00:44:24,680] Hadron diameter is about 10 to the minus 15th meters,
+- [00:44:24,680 - 00:44:27,680] five orders of magnitude smaller than an atom.
+- [00:44:27,680 - 00:44:29,680] Part of the reason is because,
+- [00:44:29,680 - 00:44:30,680] there's two reasons,
+- [00:44:30,680 - 00:44:32,680] there's two reasons why it's small.
+- [00:44:32,680 - 00:44:34,680] One of them has to do with
+- [00:44:34,680 - 00:44:36,680] the fact that the constituents are heavier,
+- [00:44:36,680 - 00:44:39,680] and heavier things will sit closer to the center.
+- [00:44:39,680 - 00:44:40,680] The other has to do with something else,
+- [00:44:40,680 - 00:44:42,680] that we'll come to in a minute,
+- [00:44:42,680 - 00:44:45,680] but it's about five orders of magnitude smaller.
+- [00:44:45,680 - 00:44:47,680] The transit time,
+- [00:44:47,680 - 00:44:49,180] the transit time is just
+- [00:44:49,180 - 00:44:50,680] gotten from the size straightforwardly.
+- [00:44:50,680 - 00:44:52,680] Transit time,
+- [00:44:52,680 - 00:44:54,680] this is not an independent thing,
+- [00:44:54,680 - 00:44:56,680] it's just another measure of the size of the thing.
+- [00:44:56,680 - 00:44:58,680] Just to get the numbers straight,
+- [00:44:58,680 - 00:45:02,680] it's 10 to the minus 23rd seconds.
+- [00:45:02,680 - 00:45:06,680] So that's a typical time scale for,
+- [00:45:06,680 - 00:45:08,680] well,
+- [00:45:08,680 - 00:45:09,680] it's for light,
+- [00:45:09,680 - 00:45:10,680] well,
+- [00:45:10,680 - 00:45:12,680] it's for light to cross the hadron.
+- [00:45:12,680 - 00:45:13,680] Okay,
+- [00:45:13,680 - 00:45:15,680] but now we can also talk
+- [00:45:15,680 - 00:45:17,680] about the orbital motion of quarks.
+- [00:45:17,680 - 00:45:19,680] How long does it take for a
+- [00:45:19,680 - 00:45:21,680] quark to swing around its wave function,
+- [00:45:21,680 - 00:45:25,680] or swing around the interior of a proton?
+- [00:45:25,680 - 00:45:26,680] And there,
+- [00:45:26,680 - 00:45:30,680] the answer is,
+- [00:45:30,680 - 00:45:35,680] about 10 to the minus 23rd seconds.
+- [00:45:35,680 - 00:45:37,680] What about the decay time
+- [00:45:37,680 - 00:45:40,680] of a typical hadron,
+- [00:45:40,680 - 00:45:43,680] and the typical excited state of a hadron?
+- [00:45:43,680 - 00:45:46,680] A vibrating hadron or an oscillating hadron,
+- [00:45:46,680 - 00:45:49,680] how long does it take for it to decay?
+- [00:45:49,680 - 00:45:51,680] And the answer is,
+- [00:45:51,680 - 00:45:55,680] about,
+- [00:45:55,680 - 00:45:58,680] now I'm talking about particular kinds of decays.
+- [00:45:58,680 - 00:46:00,680] A decay where you hit a proton,
+- [00:46:00,680 - 00:46:02,680] it starts oscillating,
+- [00:46:02,680 - 00:46:05,680] and then emits a pion.
+- [00:46:05,680 - 00:46:06,680] Those decays,
+- [00:46:06,680 - 00:46:10,680] have a lifetime of about
+- [00:46:10,680 - 00:46:14,680] 10 to the minus 23rd seconds.
+- [00:46:14,680 - 00:46:18,680] Different than this hierarchy of scales here.
+- [00:46:18,680 - 00:46:20,680] What is the conclusion?
+- [00:46:20,680 - 00:46:25,680] The conclusion is the analog of the fine structure constant
+- [00:46:25,680 - 00:46:27,680] is much bigger,
+- [00:46:27,680 - 00:46:29,680] close to one,
+- [00:46:29,680 - 00:46:31,680] for hadrons.
+- [00:46:31,680 - 00:46:32,680] In other words,
+- [00:46:32,680 - 00:46:34,680] the emission probability,
+- [00:46:34,680 - 00:46:35,680] of a quark,
+- [00:46:35,680 - 00:46:37,680] was to get stopped,
+- [00:46:37,680 - 00:46:39,680] in a fictitious cathode ray,
+- [00:46:39,680 - 00:46:41,680] quirky cathode ray tube,
+- [00:46:41,680 - 00:46:43,680] of quark flying off,
+- [00:46:43,680 - 00:46:46,680] the probability for it to emit a gluon,
+- [00:46:46,680 - 00:46:48,680] would be about one.
+- [00:46:48,680 - 00:46:53,680] That's what these things indicate here.
+- [00:46:53,680 - 00:46:55,680] The hierarchy here is entirely due
+- [00:46:55,680 - 00:46:57,680] to the fine structure constant.
+- [00:46:57,680 - 00:46:59,680] The lack of a hierarchy here,
+- [00:46:59,680 - 00:47:01,680] can only mean that the corresponding quantity,
+- [00:47:01,680 - 00:47:03,680] in quantum chromodynamics,
+- [00:47:03,680 - 00:47:05,680] must be close to one.
+- [00:47:05,680 - 00:47:07,680] By now it's been measured in many ways,
+- [00:47:07,680 - 00:47:09,680] and it is much closer to one.
+- [00:47:09,680 - 00:47:11,680] It's much larger,
+- [00:47:11,680 - 00:47:15,680] than the corresponding quantity for electrodynamics.
+- [00:47:15,680 - 00:47:17,680] One is a little bit, no.
+- [00:47:17,680 - 00:47:18,680] It would seem that,
+- [00:47:18,680 - 00:47:20,680] just special relativity would say,
+- [00:47:20,680 - 00:47:22,180] that the decay time should be much
+- [00:47:22,180 - 00:47:23,680] less than 10 to the minus 23rd,
+- [00:47:23,680 - 00:47:25,680] because that's a computation like,
+- [00:47:25,680 - 00:47:27,680] Yeah, I think that's a fair statement.
+- [00:47:27,680 - 00:47:29,180] It's about as fast as
+- [00:47:29,180 - 00:47:30,680] it could be, in other words.
+- [00:47:30,680 - 00:47:32,680] It's about as fast as it could be.
+- [00:47:33,680 - 00:47:35,680] Nothing's slowing it down.
+- [00:47:37,680 - 00:47:40,680] This is why the strong interactions are called strong.
+- [00:47:40,680 - 00:47:43,680] Now, the facts about the numbers here,
+- [00:47:43,680 - 00:47:46,680] were known before quantum chromodynamics.
+- [00:47:46,680 - 00:47:47,680] And it was understood,
+- [00:47:47,680 - 00:47:49,680] that there was no hierarchy of scales,
+- [00:47:49,680 - 00:47:52,680] and that's why it was called strong interactions.
+- [00:47:53,680 - 00:47:54,680] We now trace it,
+- [00:47:54,680 - 00:47:57,680] to the properties of the charge,
+- [00:47:57,680 - 00:47:58,680] or the fine structure constant.
+- [00:47:58,680 - 00:47:59,680] Incidentally,
+- [00:47:59,680 - 00:48:01,680] for quantum chromodynamics,
+- [00:48:01,680 - 00:48:03,680] the analogous quantity is not really,
+- [00:48:03,680 - 00:48:05,680] one, it's about a fifth,
+- [00:48:05,680 - 00:48:06,680] but much bigger,
+- [00:48:06,680 - 00:48:08,680] than the one over 137 here.
+- [00:48:12,680 - 00:48:13,680] Alright, so that was just,
+- [00:48:13,680 - 00:48:14,680] some numbers,
+- [00:48:14,680 - 00:48:16,680] and some facts about,
+- [00:48:16,680 - 00:48:17,680] So this,
+- [00:48:17,680 - 00:48:19,680] one is the fine structure constant,
+- [00:48:19,680 - 00:48:21,680] and then the other is called what?
+- [00:48:21,680 - 00:48:22,680] The strong,
+- [00:48:22,680 - 00:48:24,680] strong force constant?
+- [00:48:24,680 - 00:48:26,680] It's called alpha QCD.
+- [00:48:29,680 - 00:48:30,680] Right.
+- [00:48:30,680 - 00:48:31,680] So this is called alpha,
+- [00:48:31,680 - 00:48:32,680] and the other one is called alpha,
+- [00:48:32,680 - 00:48:34,680] QCD.
+- [00:48:34,680 - 00:48:36,680] And it's about 0.23,
+- [00:48:36,680 - 00:48:38,680] or something like that.
+- [00:48:38,680 - 00:48:39,680] Or in context of paper,
+- [00:48:39,680 - 00:48:40,680] may write alpha,
+- [00:48:40,680 - 00:48:41,680] QCD.
+- [00:48:41,680 - 00:48:42,680] What's that?
+- [00:48:42,680 - 00:48:43,680] In context of paper,
+- [00:48:43,680 - 00:48:44,680] may write alpha,
+- [00:48:44,680 - 00:48:45,680] QED.
+- [00:48:45,680 - 00:48:46,680] QCD.
+- [00:48:46,680 - 00:48:47,680] QCD.
+- [00:48:47,680 - 00:48:48,680] I never heard alpha QED,
+- [00:48:48,680 - 00:48:49,680] referred to as alpha QED,
+- [00:48:49,680 - 00:48:51,680] but I think if you were,
+- [00:48:51,680 - 00:48:52,680] writing a paper with both of them,
+- [00:48:52,680 - 00:48:54,680] you might call the top one alpha QED,
+- [00:48:54,680 - 00:48:55,680] yes.
+- [00:48:56,680 - 00:48:58,680] I've never seen it referred to that,
+- [00:48:58,680 - 00:48:59,680] have you?
+- [00:48:59,680 - 00:49:00,680] Well, particularly,
+- [00:49:00,680 - 00:49:01,680] if you're talking about shielding,
+- [00:49:01,680 - 00:49:03,680] or something like that.
+- [00:49:03,680 - 00:49:04,680] No, I can't,
+- [00:49:04,680 - 00:49:05,680] I don't think I've ever seen it.
+- [00:49:05,680 - 00:49:07,680] The value versus the measure value.
+- [00:49:07,680 - 00:49:09,680] Oh, oh, oh.
+- [00:49:09,680 - 00:49:11,680] It's just called alpha.
+- [00:49:11,680 - 00:49:12,680] Sometimes,
+- [00:49:12,680 - 00:49:16,680] the unshielded one is called the bare alpha,
+- [00:49:16,680 - 00:49:20,680] the shielded one is called the renormalized alpha.
+- [00:49:20,680 - 00:49:21,680] Right.
+- [00:49:21,680 - 00:49:23,680] Okay.
+- [00:49:26,680 - 00:49:27,680] Well,
+- [00:49:27,680 - 00:49:30,680] that brings us to the weak interactions.
+- [00:49:30,680 - 00:49:38,680] The weak interactions are called weak,
+- [00:49:38,680 - 00:49:39,680] primarily,
+- [00:49:39,680 - 00:49:43,680] because the decay times associated with them,
+- [00:49:43,680 - 00:49:45,680] are very long.
+- [00:49:45,680 - 00:49:47,680] They're much longer,
+- [00:49:47,680 - 00:49:49,680] than the decay times,
+- [00:49:49,680 - 00:49:52,680] associated with,
+- [00:49:52,680 - 00:49:54,680] with either hadrons,
+- [00:49:54,680 - 00:49:56,680] and they even tend to be longer,
+- [00:49:56,680 - 00:49:59,680] than the decay times associated with atoms.
+- [00:50:00,680 - 00:50:01,680] So,
+- [00:50:01,680 - 00:50:03,680] there are processes in nature,
+- [00:50:03,680 - 00:50:05,680] decay processes in nature,
+- [00:50:05,680 - 00:50:08,680] in which particles,
+- [00:50:08,680 - 00:50:10,680] elementary or otherwise,
+- [00:50:10,680 - 00:50:12,680] decay,
+- [00:50:12,680 - 00:50:14,680] by weak interactions,
+- [00:50:14,680 - 00:50:16,680] where the time scale,
+- [00:50:16,680 - 00:50:17,680] in other words,
+- [00:50:17,680 - 00:50:19,680] the half-life for these decays,
+- [00:50:19,680 - 00:50:21,680] is far longer,
+- [00:50:21,680 - 00:50:22,680] than any scale,
+- [00:50:22,680 - 00:50:24,680] that can be accounted for by these,
+- [00:50:24,680 - 00:50:26,680] by numbers like this.
+- [00:50:26,680 - 00:50:27,680] So, as an example,
+- [00:50:27,680 - 00:50:28,680] here's some examples.
+- [00:50:30,680 - 00:50:32,680] Well,
+- [00:50:32,680 - 00:50:35,680] the lifetime of the neutron.
+- [00:50:35,680 - 00:50:37,680] The neutron,
+- [00:50:37,680 - 00:50:39,680] is a hadron,
+- [00:50:41,680 - 00:50:42,680] and it decays.
+- [00:50:42,680 - 00:50:43,680] Neutron,
+- [00:50:43,680 - 00:50:45,680] goes to electron,
+- [00:50:45,680 - 00:50:47,680] proton,
+- [00:50:47,680 - 00:50:49,680] plus anti-neutrino,
+- [00:50:49,680 - 00:50:53,680] and the lifetime for that is about 12 minutes.
+- [00:50:58,680 - 00:51:00,680] That's absurdly long.
+- [00:51:00,680 - 00:51:03,680] On particle physics scales.
+- [00:51:05,680 - 00:51:08,680] Part of the reason,
+- [00:51:08,680 - 00:51:10,680] is easy,
+- [00:51:10,680 - 00:51:12,680] but it hardly accounts for the,
+- [00:51:12,680 - 00:51:15,680] for the extraordinary stability of the neutron.
+- [00:51:15,680 - 00:51:17,680] Part of the reason,
+- [00:51:17,680 - 00:51:21,680] is the neutron is only a little bit bigger,
+- [00:51:21,680 - 00:51:23,680] than the combined masses of the electron,
+- [00:51:23,680 - 00:51:24,680] the proton,
+- [00:51:24,680 - 00:51:25,680] and the neutron,
+- [00:51:25,680 - 00:51:26,680] neutrino.
+- [00:51:26,680 - 00:51:28,680] Let's just see.
+- [00:51:28,680 - 00:51:29,680] Somebody have a question?
+- [00:51:29,680 - 00:51:31,680] Somebody have out their pocket calculator,
+- [00:51:31,680 - 00:51:32,680] pocket,
+- [00:51:32,680 - 00:51:34,680] the mass of the neutron,
+- [00:51:34,680 - 00:51:37,680] is,
+- [00:51:43,680 - 00:51:46,680] 940 MeV.
+- [00:51:50,680 - 00:51:51,680] I don't know,
+- [00:51:52,680 - 00:51:54,680] about 940.
+- [00:51:54,680 - 00:51:55,680] The mass of the proton,
+- [00:51:55,680 - 00:51:58,680] is about 939.
+- [00:51:58,680 - 00:52:01,680] I think the actual difference between them,
+- [00:52:01,680 - 00:52:04,680] is about one and a half MeV.
+- [00:52:04,680 - 00:52:05,680] But then there's the electron,
+- [00:52:05,680 - 00:52:08,680] which has a mass of about half an MeV.
+- [00:52:08,680 - 00:52:09,680] All together,
+- [00:52:09,680 - 00:52:10,680] out of this 940,
+- [00:52:10,680 - 00:52:12,680] almost a thousand MeV,
+- [00:52:12,680 - 00:52:14,680] the difference of mass,
+- [00:52:14,680 - 00:52:15,680] of the proton,
+- [00:52:15,680 - 00:52:19,680] the amount of available mass left over,
+- [00:52:19,680 - 00:52:20,680] is tiny.
+- [00:52:20,680 - 00:52:23,680] It's 0.1% or less.
+- [00:52:24,680 - 00:52:26,680] If the neutron,
+- [00:52:26,680 - 00:52:27,680] was slightly lighter,
+- [00:52:27,680 - 00:52:30,680] than the sum of these masses,
+- [00:52:30,680 - 00:52:32,680] it could not decay at all.
+- [00:52:32,680 - 00:52:35,680] Just energy conservation would not allow it.
+- [00:52:35,680 - 00:52:37,680] Remember, mass is energy.
+- [00:52:37,680 - 00:52:40,680] It would not have enough energy to decay,
+- [00:52:40,680 - 00:52:42,680] and still leave over some energy,
+- [00:52:42,680 - 00:52:44,680] for kinetic energy of these particles.
+- [00:52:44,680 - 00:52:47,680] So if the neutron was exactly,
+- [00:52:47,680 - 00:52:49,680] the same as the sum
+- [00:52:49,680 - 00:52:51,680] of the energy of the electron,
+- [00:52:51,680 - 00:52:52,680] the proton,
+- [00:52:52,680 - 00:52:53,680] and the neutrino,
+- [00:52:53,680 - 00:52:54,680] the sum of the mass of them,
+- [00:52:54,680 - 00:52:56,680] it wouldn't be able to decay at all.
+- [00:52:56,680 - 00:52:58,680] If you gave it a mass,
+- [00:52:58,680 - 00:53:02,680] tiny, tiny, tiny, tiny bit above that,
+- [00:53:02,680 - 00:53:04,680] it would be able to decay,
+- [00:53:04,680 - 00:53:05,680] but it would take a very long time.
+- [00:53:05,680 - 00:53:07,680] The decay would be very slow.
+- [00:53:07,680 - 00:53:09,680] So part of the slowness,
+- [00:53:09,680 - 00:53:11,680] or the long lifetime of the neutron,
+- [00:53:11,680 - 00:53:13,680] is attributable to the fact
+- [00:53:13,680 - 00:53:15,680] that there's very little energy available,
+- [00:53:15,680 - 00:53:17,680] for the decay to take place.
+- [00:53:18,680 - 00:53:20,680] But given that,
+- [00:53:20,680 - 00:53:23,680] that's hardly the bulk of the story.
+- [00:53:24,680 - 00:53:26,680] 12 minutes is so absurdly long,
+- [00:53:26,680 - 00:53:28,680] that there's something much,
+- [00:53:28,680 - 00:53:30,680] much more than that going on.
+- [00:53:30,680 - 00:53:32,680] Another example,
+- [00:53:32,680 - 00:53:34,680] let's see, where do I have it?
+- [00:53:40,680 - 00:53:42,680] I guess I didn't write it down.
+- [00:53:42,680 - 00:53:44,680] Another example of a,
+- [00:53:44,680 - 00:53:46,680] this is called a weak decay,
+- [00:53:46,680 - 00:53:47,680] for obvious reasons,
+- [00:53:47,680 - 00:53:49,680] it's called a weak decay.
+- [00:53:49,680 - 00:53:51,680] Another example,
+- [00:53:51,680 - 00:53:54,680] is a charged pion.
+- [00:53:54,680 - 00:53:56,680] Let's say a pymelon.
+- [00:53:56,680 - 00:53:57,680] Minus.
+- [00:53:57,680 - 00:53:59,680] A charged pion,
+- [00:53:59,680 - 00:54:02,680] decays,
+- [00:54:02,680 - 00:54:04,680] to an electron,
+- [00:54:04,680 - 00:54:06,680] electron has negative charge,
+- [00:54:06,680 - 00:54:08,680] and an anti-neutrino.
+- [00:54:10,680 - 00:54:12,680] Yes, and an anti-neutrino.
+- [00:54:12,680 - 00:54:14,680] That's another possible decay.
+- [00:54:14,680 - 00:54:15,680] Charged pion,
+- [00:54:15,680 - 00:54:17,680] goes to an electron,
+- [00:54:17,680 - 00:54:18,680] and an anti-neutrino.
+- [00:54:18,680 - 00:54:21,680] A positively charged pion,
+- [00:54:21,680 - 00:54:23,680] could become,
+- [00:54:23,680 - 00:54:24,680] a positron,
+- [00:54:24,680 - 00:54:26,680] and a neutrino.
+- [00:54:26,680 - 00:54:28,680] The lifetime for that,
+- [00:54:28,680 - 00:54:30,680] I believe is about,
+- [00:54:30,680 - 00:54:32,680] 10 nanoseconds.
+- [00:54:32,680 - 00:54:34,680] Longer,
+- [00:54:34,680 - 00:54:36,680] than these,
+- [00:54:36,680 - 00:54:38,680] atomic decay times.
+- [00:54:38,680 - 00:54:39,680] And atomic decay times,
+- [00:54:39,680 - 00:54:40,680] are very, very long,
+- [00:54:40,680 - 00:54:41,680] by comparison with,
+- [00:54:41,680 - 00:54:44,680] particle physics decay times.
+- [00:54:44,680 - 00:54:45,680] Now,
+- [00:54:45,680 - 00:54:46,680] this,
+- [00:54:46,680 - 00:54:48,680] uh,
+- [00:54:51,680 - 00:54:53,680] there is a decay of the charged pions,
+- [00:54:53,680 - 00:54:54,680] to these particles.
+- [00:54:54,680 - 00:54:55,680] There's another decay,
+- [00:54:55,680 - 00:54:56,680] involving muons,
+- [00:54:56,680 - 00:54:58,680] we're gonna come to muons soon enough,
+- [00:54:58,680 - 00:55:00,680] similar to electrons.
+- [00:55:00,680 - 00:55:01,680] But the point is,
+- [00:55:01,680 - 00:55:03,680] not the particles that they decay into,
+- [00:55:03,680 - 00:55:05,680] but two things.
+- [00:55:05,680 - 00:55:06,680] First of all,
+- [00:55:06,680 - 00:55:09,680] they also decay very slowly,
+- [00:55:09,680 - 00:55:12,680] nanoseconds.
+- [00:55:12,680 - 00:55:14,680] But there's plenty of energy available,
+- [00:55:14,680 - 00:55:15,680] for these,
+- [00:55:15,680 - 00:55:16,680] these decays.
+- [00:55:16,680 - 00:55:18,680] These decays are not suppressed,
+- [00:55:18,680 - 00:55:20,680] by the fact that the energies of the initial,
+- [00:55:20,680 - 00:55:22,680] or the masses of the initial and final states,
+- [00:55:22,680 - 00:55:23,680] are very close to each other.
+- [00:55:23,680 - 00:55:25,680] So there's something else,
+- [00:55:25,680 - 00:55:28,680] going on,
+- [00:55:28,680 - 00:55:29,680] uh,
+- [00:55:29,680 - 00:55:31,680] in weak interactions,
+- [00:55:31,680 - 00:55:32,680] whatever weak,
+- [00:55:32,680 - 00:55:34,680] whatever weak interactions are,
+- [00:55:34,680 - 00:55:35,680] there's something,
+- [00:55:35,680 - 00:55:36,680] that makes them proceed,
+- [00:55:36,680 - 00:55:37,680] very, very slowly,
+- [00:55:37,680 - 00:55:39,680] and weakly.
+- [00:55:39,680 - 00:55:40,680] Alright,
+- [00:55:40,680 - 00:55:41,680] so that's what we come to next,
+- [00:55:41,680 - 00:55:43,680] is weak interactions.
+- [00:55:43,680 - 00:55:44,680] Uh,
+- [00:55:44,680 - 00:55:45,680] the,
+- [00:55:45,680 - 00:55:46,680] primary,
+- [00:55:46,680 - 00:55:48,680] or oldest example of which,
+- [00:55:48,680 - 00:55:50,680] is the decay of the neutron.
+- [00:55:50,680 - 00:55:52,680] The beta decay of the neutron,
+- [00:55:52,680 - 00:55:53,680] called beta,
+- [00:55:53,680 - 00:55:55,680] because electrons are originally called beta waves.
+- [00:55:55,680 - 00:55:56,680] Alright,
+- [00:55:56,680 - 00:55:57,680] that's,
+- [00:55:57,680 - 00:55:58,680] and this is called,
+- [00:55:58,680 - 00:55:59,680] the beta decay,
+- [00:55:59,680 - 00:56:00,680] of the,
+- [00:56:00,680 - 00:56:01,680] pion.
+- [00:56:01,680 - 00:56:02,680] And in fact,
+- [00:56:02,680 - 00:56:03,680] it's quite similar,
+- [00:56:03,680 - 00:56:04,680] quite similar physics,
+- [00:56:04,680 - 00:56:05,680] goes into both of them.
+- [00:56:05,680 - 00:56:06,680] So,
+- [00:56:06,680 - 00:56:07,680] to understand,
+- [00:56:07,680 - 00:56:08,680] what's going on,
+- [00:56:08,680 - 00:56:09,680] we need to understand,
+- [00:56:09,680 - 00:56:10,680] about some more particles.
+- [00:56:10,680 - 00:56:11,680] Particles that we haven't come to yet,
+- [00:56:11,680 - 00:56:12,680] the leptons.
+- [00:56:12,680 - 00:56:13,680] So,
+- [00:56:13,680 - 00:56:14,680] we have,
+- [00:56:14,680 - 00:56:15,680] a,
+- [00:56:15,680 - 00:56:16,680] a,
+- [00:56:16,680 - 00:56:17,680] a,
+- [00:56:17,680 - 00:56:18,680] a,
+- [00:56:18,680 - 00:56:19,680] a,
+- [00:56:19,680 - 00:56:20,680] a,
+- [00:56:20,680 - 00:56:21,680] a,
+- [00:56:21,680 - 00:56:22,680] a,
+- [00:56:22,680 - 00:56:23,680] a,
+- [00:56:23,680 - 00:56:24,680] a,
+- [00:56:24,680 - 00:56:25,680] a,
+- [00:56:25,680 - 00:56:26,680] a,
+- [00:56:26,680 - 00:56:27,680] a,
+- [00:56:27,680 - 00:56:28,680] b,
+- [00:56:28,680 - 00:56:29,680] h,
+- [00:56:29,680 - 00:56:30,680] b,
+- [00:56:31,680 - 00:56:44,680] h,
+- [00:56:44,680 - 00:56:45,680] b,
+- [00:56:45,680 - 00:56:46,680] h,
+- [00:56:46,680 - 00:56:47,680] h,
+- [00:56:47,680 - 00:56:48,680] h,
+- [00:56:48,680 - 00:56:49,680] h,
+- [00:56:49,680 - 00:56:50,680] h,
+- [00:56:50,680 - 00:56:51,680] h,
+- [00:56:51,680 - 00:56:52,680] h,
+- [00:56:52,680 - 00:56:53,680] h,
+- [00:56:53,680 - 00:57:03,370] Then along here, let me list the up quark, the down quark,
+- [00:57:03,370 - 00:57:13,060] the charmed quark, the strange quark, the top quark, and the bottom quark.
+- [00:57:13,060 - 00:57:14,259] All right.
+- [00:57:16,720 - 00:57:19,140] Each one of these boxes is filled.
+- [00:57:19,839 - 00:57:22,580] There are red, blue, and green up quarks.
+- [00:57:22,580 - 00:57:23,799] Let's put an x there.
+- [00:57:23,799 - 00:57:24,799] There's an x here.
+- [00:57:24,799 - 00:57:25,799] There's an x here.
+- [00:57:25,799 - 00:57:26,799] There's an x here.
+- [00:57:26,799 - 00:57:29,700] x here, x here, and so forth.
+- [00:57:29,700 - 00:57:33,700] These x's represent all the possible quarks that exist.
+- [00:57:37,080 - 00:57:41,689] Now, quantum chromodynamics has to do with
+- [00:57:41,689 - 00:57:46,299] symmetries which connect red to green to blue.
+- [00:57:46,299 - 00:57:49,429] It has to do with these unitary
+- [00:57:49,429 - 00:57:52,560] transformations which mix up the colors of quarks.
+- [00:57:52,560 - 00:57:53,640] They do not.
+- [00:57:53,640 - 00:57:57,360] Those symmetries do not mix horizontally.
+- [00:57:57,360 - 00:58:02,990] An SU symmetry, a color symmetry, may rotate an up red
+- [00:58:02,990 - 00:58:08,620] quark into an up blue quark or an up green quark,
+- [00:58:08,620 - 00:58:11,939] and the nature of the symmetry is to
+- [00:58:11,939 - 00:58:15,259] act vertically to mix up things this way.
+- [00:58:15,259 - 00:58:18,469] And also, at the same time, will mix the
+- [00:58:18,469 - 00:58:21,680] different down quarks, the different colors of down quarks.
+- [00:58:21,680 - 00:58:22,240] Okay.
+- [00:58:22,240 - 00:58:22,400] Okay.
+- [00:58:22,400 - 00:58:22,460] Okay.
+- [00:58:22,460 - 00:58:22,560] Okay.
+- [00:58:22,560 - 00:58:25,360] The same symmetry will mix the different colors
+- [00:58:25,360 - 00:58:28,160] of charmed quarks and strange quarks and so forth.
+- [00:58:28,160 - 00:58:31,660] So the color symmetry acts vertically.
+- [00:58:31,660 - 00:58:35,160] It mixes up the different rows here.
+- [00:58:38,160 - 00:58:44,160] Yes, the unitary matrices mix up red, green, and blue.
+- [00:58:44,160 - 00:58:46,860] I might have done better to put the rows where
+- [00:58:46,860 - 00:58:49,560] the columns are and the columns where the rows are, but...
+- [00:58:49,560 - 00:58:52,060] No, it's okay. It's good. It's good.
+- [00:58:52,060 - 00:58:54,560] No, no. It's good. It's good. Right.
+- [00:58:54,560 - 00:58:58,560] The weak interactions are associated with
+- [00:58:58,560 - 00:59:02,560] symmetries which act horizontally in this picture.
+- [00:59:02,560 - 00:59:06,560] They mix up with down.
+- [00:59:06,560 - 00:59:10,060] They mix, and the same time that they
+- [00:59:10,060 - 00:59:13,560] mix up with down, they mix charm with strange.
+- [00:59:13,560 - 00:59:16,560] And they mix top with bottom.
+- [00:59:16,560 - 00:59:19,560] Let me just remind you that an up quark
+- [00:59:19,560 - 00:59:22,560] has the same properties apart for its mass,
+- [00:59:22,560 - 00:59:25,560] same properties as a charm quark or a top quark.
+- [00:59:25,560 - 00:59:27,560] The down quarks are similar
+- [00:59:27,560 - 00:59:29,560] to strange quarks and bottom quarks.
+- [00:59:29,560 - 00:59:31,560] Ups have charge two-thirds.
+- [00:59:31,560 - 00:59:33,560] Downs have charge minus two-thirds.
+- [00:59:33,560 - 00:59:35,560] Same here and here.
+- [00:59:35,560 - 00:59:39,560] All right. So these are symmetries which
+- [00:59:39,560 - 00:59:43,560] mix, if you like, upness with downness.
+- [00:59:43,560 - 00:59:46,560] At the same time, charmness with strangeness.
+- [00:59:46,560 - 00:59:48,560] And topness with bottomness.
+- [00:59:48,560 - 00:59:49,560] Mixed up.
+- [00:59:49,560 - 00:59:52,560] So it mixes these up, the symmetries.
+- [00:59:52,560 - 00:59:55,560] Those symmetries, would you care to
+- [00:59:55,560 - 00:59:58,560] speculate on what group might be involved?
+- [00:59:58,560 - 01:00:04,560] SU because it acts on things, on doublets.
+- [01:00:04,560 - 01:00:06,560] We simply have three doublets here.
+- [01:00:06,560 - 01:00:09,560] They don't take up to charm or up to top.
+- [01:00:09,560 - 01:00:13,060] They simply act on up and
+- [01:00:13,060 - 01:00:16,560] down horizontally among pairs of things.
+- [01:00:16,560 - 01:00:18,560] A group SU .
+- [01:00:18,560 - 01:00:20,560] It is a gauge symmetry.
+- [01:00:20,560 - 01:00:24,060] In other words, it is also,
+- [01:00:24,060 - 01:00:27,560] comes together with forces, with gauge bosons,
+- [01:00:27,560 - 01:00:29,560] with interactions and with
+- [01:00:29,560 - 01:00:31,560] gauge interactions, with gauge fields.
+- [01:00:31,560 - 01:00:33,560] We're going to get to those short enough.
+- [01:00:33,560 - 01:00:37,560] But we've left out something from this table here.
+- [01:00:38,560 - 01:00:42,560] It's kind of as if there was a fourth color.
+- [01:00:42,560 - 01:00:45,060] Now the reason, the fourth
+- [01:00:45,060 - 01:00:47,560] row here is not usually identified
+- [01:00:47,560 - 01:00:49,560] as a color.
+- [01:00:49,560 - 01:00:51,560] And the reason is because the
+- [01:00:51,560 - 01:00:53,560] particles do not interact with the gluons.
+- [01:00:53,560 - 01:00:57,560] But nevertheless, it is another row here.
+- [01:00:57,560 - 01:01:00,560] Another row in which there are
+- [01:01:00,560 - 01:01:03,560] particles which are filled in here.
+- [01:01:03,560 - 01:01:05,560] And in a certain sense, they're,
+- [01:01:05,560 - 01:01:07,560] well not in a certain sense,
+- [01:01:07,560 - 01:01:09,560] they are also doublets.
+- [01:01:09,560 - 01:01:11,560] These particles are also doublets.
+- [01:01:11,560 - 01:01:15,560] And also get mixed up under this SU symmetry,
+- [01:01:15,560 - 01:01:18,560] which moves things horizontally.
+- [01:01:18,560 - 01:01:19,560] What are they?
+- [01:01:19,560 - 01:01:20,560] What are those particles?
+- [01:01:20,560 - 01:01:25,560] They're the leptons.
+- [01:01:25,560 - 01:01:28,060] So in a sense, the fourth color
+- [01:01:28,060 - 01:01:30,560] could be thought of as lepton number.
+- [01:01:30,560 - 01:01:31,560] But what are the leptons?
+- [01:01:31,560 - 01:01:33,560] The leptons are, first of
+- [01:01:33,560 - 01:01:35,560] all, in the first column here,
+- [01:01:35,560 - 01:01:38,060] there are analogous to the
+- [01:01:38,060 - 01:01:40,560] up, or analogous to the down,
+- [01:01:40,560 - 01:01:42,560] there is the electron.
+- [01:01:42,560 - 01:01:44,560] The electron is a lepton.
+- [01:01:45,560 - 01:01:55,560] But its partner, its partner is the neutrino.
+- [01:01:55,560 - 01:01:57,560] But there are different neutrinos.
+- [01:01:57,560 - 01:02:00,560] There's not only one neutrino.
+- [01:02:00,560 - 01:02:05,560] This is called the electron neutrino.
+- [01:02:05,560 - 01:02:08,560] What comes in the next column?
+- [01:02:08,560 - 01:02:10,560] The muon.
+- [01:02:10,560 - 01:02:14,560] The muon, in every respect except for mass,
+- [01:02:14,560 - 01:02:16,560] is the same as an electron.
+- [01:02:16,560 - 01:02:20,560] Just as in every respect except for mass,
+- [01:02:20,560 - 01:02:22,560] the charm quark is like an up quark.
+- [01:02:22,560 - 01:02:24,560] Or the strange quark is like a down quark.
+- [01:02:24,560 - 01:02:28,560] And together with it, there's its own neutrino,
+- [01:02:28,560 - 01:02:30,560] the muon neutrino.
+- [01:02:30,560 - 01:02:35,560] And finally, the last one is called the tau.
+- [01:02:35,560 - 01:02:39,560] And nu sub tau.
+- [01:02:39,560 - 01:02:42,560] All of the charged leptons,
+- [01:02:42,560 - 01:02:44,560] incidentally, neutrinos, of course,
+- [01:02:44,560 - 01:02:46,560] as you might guess from their name,
+- [01:02:46,560 - 01:02:48,560] are electrically neutral.
+- [01:02:48,560 - 01:02:52,560] The electrons, muons, and taus have charge minus one.
+- [01:02:52,560 - 01:02:56,560] They are put under the down column here,
+- [01:02:56,560 - 01:02:58,560] not because their charge is
+- [01:02:58,560 - 01:03:00,560] the same as the down charge,
+- [01:03:00,560 - 01:03:04,560] but because the difference between the charges of the two
+- [01:03:04,560 - 01:03:07,560] is the same as the difference up here.
+- [01:03:07,560 - 01:03:09,560] What's the difference between the two?
+- [01:03:09,560 - 01:03:11,560] The difference between the two is the charge up here.
+- [01:03:11,560 - 01:03:13,060] What's the difference between the charge
+- [01:03:13,060 - 01:03:14,560] of an up and a down?
+- [01:03:14,560 - 01:03:17,560] Two-thirds minus minus one-third.
+- [01:03:17,560 - 01:03:20,560] So the difference between this column and this column
+- [01:03:20,560 - 01:03:22,560] is plus one unit of charge.
+- [01:03:22,560 - 01:03:25,560] The difference between this column and this column
+- [01:03:25,560 - 01:03:27,560] is also one unit of charge.
+- [01:03:27,560 - 01:03:31,560] One, sorry, zero minus negative one.
+- [01:03:31,560 - 01:03:34,560] So as you go from here to here,
+- [01:03:34,560 - 01:03:39,560] you decrease charge by one unit,
+- [01:03:39,560 - 01:03:41,560] as you go horizontally.
+- [01:03:41,560 - 01:03:46,560] Now, should we take a break for five minutes?
+- [01:03:46,560 - 01:03:48,560] Let's take a break for five minutes,
+- [01:03:48,560 - 01:03:52,560] and then I will tell you about the W bosons.
+- [01:03:52,560 - 01:03:58,560] W bosons are the gauge bosons of the weak interactions.
+- [01:03:58,560 - 01:04:01,060] All right, so let's try now
+- [01:04:01,060 - 01:04:03,560] to see if we can make
+- [01:04:03,560 - 01:04:07,560] a microscopic gauge theory of the weak interactions.
+- [01:04:11,560 - 01:04:13,560] As I said, the weak interactions
+- [01:04:13,560 - 01:04:15,560] are based on a gauge theory
+- [01:04:15,560 - 01:04:19,560] which mixes up to down,
+- [01:04:19,560 - 01:04:23,560] neutrino to electron, and so forth.
+- [01:04:23,560 - 01:04:25,560] And so rather than to
+- [01:04:25,560 - 01:04:27,560] get into mathematics for the moment,
+- [01:04:27,560 - 01:04:29,560] the mathematics of the group SU ,
+- [01:04:29,560 - 01:04:31,560] which we'll come back to,
+- [01:04:31,560 - 01:04:35,560] let's think a little more simply.
+- [01:04:35,560 - 01:04:38,560] We've seen that in various situations,
+- [01:04:38,560 - 01:04:41,560] the gauge bosons typically,
+- [01:04:41,560 - 01:04:43,560] have the quantum numbers,
+- [01:04:43,560 - 01:04:45,560] or the quantum properties,
+- [01:04:45,560 - 01:04:48,560] of a particle and an antiparticle.
+- [01:04:48,560 - 01:04:50,560] In the case of the...
+- [01:04:53,560 - 01:04:58,560] In the case of the quantum chromo-dynamical interactions,
+- [01:04:58,560 - 01:05:01,560] it is a quark and an antiquark,
+- [01:05:01,560 - 01:05:03,060] so that's why we had
+- [01:05:03,060 - 01:05:04,560] nine gauge bosons and so forth,
+- [01:05:04,560 - 01:05:07,560] or eight, removing the trace.
+- [01:05:07,560 - 01:05:09,560] So we could start by saying,
+- [01:05:09,560 - 01:05:11,560] let's look at the population
+- [01:05:11,560 - 01:05:14,560] and the possibilities of gauge bosons,
+- [01:05:14,560 - 01:05:16,560] which have the properties of...
+- [01:05:24,560 - 01:05:27,560] of a particle and an antiparticle.
+- [01:05:27,560 - 01:05:30,560] But, let's not distinguish between
+- [01:05:30,560 - 01:05:33,560] whether we're talking about quarks,
+- [01:05:33,560 - 01:05:37,560] red quarks, blue quarks, green quarks, or leptons.
+- [01:05:37,560 - 01:05:40,560] Let's just say a particle from this column,
+- [01:05:40,560 - 01:05:43,560] with an antiparticle of this column.
+- [01:05:43,560 - 01:05:45,560] And for simplicity,
+- [01:05:45,560 - 01:05:47,560] let's just focus on the leptons.
+- [01:05:47,560 - 01:05:48,560] You'll see in a moment
+- [01:05:48,560 - 01:05:49,560] that you'll get the same thing
+- [01:05:49,560 - 01:05:51,560] if you focused on the quarks.
+- [01:05:51,560 - 01:05:54,560] But, let's focus on the leptons,
+- [01:05:54,560 - 01:05:57,560] and talk about objects that we could make
+- [01:05:57,560 - 01:06:00,560] with a lepton and an anti-lepton.
+- [01:06:00,560 - 01:06:02,560] All right, first of all,
+- [01:06:02,560 - 01:06:04,560] we could have some simple things,
+- [01:06:04,560 - 01:06:06,560] electron with a positron.
+- [01:06:06,560 - 01:06:09,560] Now, I don't really literally mean electrons and positrons.
+- [01:06:09,560 - 01:06:11,560] We could have electrons and positrons.
+- [01:06:11,560 - 01:06:15,560] Electrons and positrons have no charge at all.
+- [01:06:15,560 - 01:06:18,560] So, let's drop that for a minute.
+- [01:06:18,560 - 01:06:20,560] We'll come back to it.
+- [01:06:20,560 - 01:06:22,060] There are things which have
+- [01:06:22,060 - 01:06:23,560] properties of electrons and anti-electrons,
+- [01:06:23,560 - 01:06:26,560] neutrinos and anti-neutrinos.
+- [01:06:26,560 - 01:06:28,560] But more interesting for the moment
+- [01:06:28,560 - 01:06:34,560] is the combination of electron-anti-neutrino.
+- [01:06:34,560 - 01:06:38,560] So,
+- [01:06:38,560 - 01:06:42,560] what is the charge of an object
+- [01:06:42,560 - 01:06:48,560] which has the same conserved quantities,
+- [01:06:48,560 - 01:06:52,560] the same properties as an electron
+- [01:06:52,560 - 01:06:55,560] stuck on top of an anti-neutrino?
+- [01:06:55,560 - 01:06:58,560] Well, let's just focus on its charge,
+- [01:06:58,560 - 01:07:00,560] its electric charge.
+- [01:07:00,560 - 01:07:02,560] Its electric charge is minus one.
+- [01:07:02,560 - 01:07:04,560] Neutrino is neutral.
+- [01:07:04,560 - 01:07:06,560] Electron has negative charge.
+- [01:07:06,560 - 01:07:08,560] So, whatever this object is,
+- [01:07:08,560 - 01:07:11,560] it has negative electric charge.
+- [01:07:11,560 - 01:07:12,560] Let's give it a name,
+- [01:07:12,560 - 01:07:14,560] and let's call it a gauge boson.
+- [01:07:14,560 - 01:07:18,560] Let's assume that it is also a gauge boson.
+- [01:07:18,560 - 01:07:21,560] Gauge boson means that it behaves like the Maxwell field,
+- [01:07:21,560 - 01:07:23,560] the whole same thing.
+- [01:07:23,560 - 01:07:25,560] But it has negative charge.
+- [01:07:25,560 - 01:07:27,560] Let's call it W.
+- [01:07:27,560 - 01:07:30,560] W, that's the traditional name for it.
+- [01:07:30,560 - 01:07:32,560] W minus.
+- [01:07:32,560 - 01:07:33,560] Why minus?
+- [01:07:33,560 - 01:07:35,560] Because it has negative electric charge.
+- [01:07:35,560 - 01:07:36,560] We could...
+- [01:07:36,560 - 01:07:38,560] That was this one with this one.
+- [01:07:38,560 - 01:07:41,560] We could have taken down quark with,
+- [01:07:41,560 - 01:07:43,560] I guess, anti-up quark.
+- [01:07:43,560 - 01:07:44,560] Yeah, down quark.
+- [01:07:44,560 - 01:07:47,560] What happens if you take down quark with anti-up quark?
+- [01:07:47,560 - 01:07:49,560] How much charge do you get?
+- [01:07:53,560 - 01:07:55,560] Again, minus.
+- [01:07:55,560 - 01:07:57,560] Same as this.
+- [01:07:57,560 - 01:08:01,560] Down quark with anti-up quark would also have minus charge.
+- [01:08:01,560 - 01:08:04,560] So, if you like, you could also imagine
+- [01:08:04,560 - 01:08:07,560] that the W minus has the same properties
+- [01:08:07,560 - 01:08:12,560] as a down quark and an anti-up quark.
+- [01:08:12,560 - 01:08:17,559] In other words, it's one from the second column
+- [01:08:17,559 - 01:08:20,559] and an anti-one from the first column.
+- [01:08:20,559 - 01:08:22,559] That's the property that it has.
+- [01:08:22,559 - 01:08:27,559] Let's call it W for weak, in fact.
+- [01:08:27,559 - 01:08:31,559] I think W was originally the notation for weak.
+- [01:08:31,559 - 01:08:34,559] The negatively charged W boson.
+- [01:08:34,559 - 01:08:35,559] Okay.
+- [01:08:35,559 - 01:08:36,559] And, of course,
+- [01:08:36,560 - 01:08:39,560] there's also a positively charged boson,
+- [01:08:39,560 - 01:08:41,560] W boson,
+- [01:08:41,560 - 01:08:45,560] which is like anti-down with an up
+- [01:08:45,560 - 01:08:54,560] or like positron, E plus, with a neutrino.
+- [01:08:54,560 - 01:08:59,560] E plus with a neutrino would be a W plus.
+- [01:08:59,560 - 01:09:01,560] Let's suppose the pattern is pretty similar
+- [01:09:01,560 - 01:09:03,560] to quantum chromodynamics,
+- [01:09:03,560 - 01:09:05,560] that the W bosons are like
+- [01:09:05,560 - 01:09:08,560] either photons on the one hand
+- [01:09:08,560 - 01:09:10,560] or like gluons,
+- [01:09:10,560 - 01:09:13,560] which means that they would be objects
+- [01:09:13,560 - 01:09:17,560] which could be emitted
+- [01:09:17,560 - 01:09:20,560] from the leptons.
+- [01:09:20,560 - 01:09:22,560] They would be objects which would allow
+- [01:09:22,560 - 01:09:25,560] a lepton of one kind
+- [01:09:25,560 - 01:09:26,560] let me not label it,
+- [01:09:26,560 - 01:09:28,560] a lepton of one kind
+- [01:09:28,560 - 01:09:31,560] to become a lepton of another kind
+- [01:09:31,560 - 01:09:33,560] by emitting a W boson.
+- [01:09:33,560 - 01:09:34,560] Let's see if we can find some examples.
+- [01:09:34,560 - 01:09:37,560] Let's see if we can find some examples.
+- [01:09:37,560 - 01:09:45,560] An electron can emit a W minus
+- [01:09:45,560 - 01:09:48,560] to become a neutrino.
+- [01:09:48,560 - 01:09:50,560] Electron becomes neutrino
+- [01:09:50,560 - 01:09:53,560] by emission of a W minus.
+- [01:09:53,560 - 01:09:56,560] You see the action of the gauge bosons
+- [01:09:56,560 - 01:10:00,560] is to do the same kind of transition
+- [01:10:00,560 - 01:10:03,560] that the symmetry is ultimately going to be.
+- [01:10:04,560 - 01:10:07,560] to do to mix electron into neutrino
+- [01:10:07,560 - 01:10:09,560] in very much the same way
+- [01:10:09,560 - 01:10:11,560] that the colors got mixed
+- [01:10:11,560 - 01:10:13,560] by emitting gluons.
+- [01:10:13,560 - 01:10:16,560] You could follow the lines if you like
+- [01:10:16,560 - 01:10:19,560] and say the electron
+- [01:10:19,560 - 01:10:22,560] and the anti-neutrino over here
+- [01:10:22,560 - 01:10:26,560] can be imagined to be a W minus boson.
+- [01:10:26,560 - 01:10:28,560] Same pattern.
+- [01:10:28,560 - 01:10:30,560] Let's just draw it by saying
+- [01:10:30,560 - 01:10:32,560] a W minus is emitted.
+- [01:10:34,560 - 01:10:36,560] But that's not all you
+- [01:10:36,560 - 01:10:38,560] can do with a W minus.
+- [01:10:38,560 - 01:10:41,560] You can also have a down quark
+- [01:10:41,560 - 01:10:44,560] go to an up quark
+- [01:10:44,560 - 01:10:46,560] with a W minus.
+- [01:10:46,560 - 01:10:48,560] That also works.
+- [01:10:48,560 - 01:10:49,560] And in fact,
+- [01:10:49,560 - 01:10:51,560] the W minus is an object
+- [01:10:51,560 - 01:10:53,560] which can be emitted
+- [01:10:53,560 - 01:10:55,560] in a transition from,
+- [01:10:55,560 - 01:10:56,560] let's see,
+- [01:10:56,560 - 01:10:58,560] from the left to the right.
+- [01:10:58,560 - 01:10:59,560] So,
+- [01:10:59,560 - 01:11:01,560] the W minus is an object
+- [01:11:01,560 - 01:11:03,560] which can be emitted
+- [01:11:03,560 - 01:11:04,560] from, let's see,
+- [01:11:04,560 - 01:11:06,560] from the right column
+- [01:11:06,560 - 01:11:08,560] to the left column.
+- [01:11:10,560 - 01:11:11,560] A red down quark
+- [01:11:11,560 - 01:11:13,560] can become a red up quark
+- [01:11:13,560 - 01:11:15,560] by emitting a W.
+- [01:11:15,560 - 01:11:16,560] A blue down quark
+- [01:11:16,560 - 01:11:19,560] can become a blue up quark
+- [01:11:19,560 - 01:11:20,560] by emitting a W.
+- [01:11:20,560 - 01:11:22,560] Likewise for green.
+- [01:11:22,560 - 01:11:24,560] But you can go further.
+- [01:11:24,560 - 01:11:25,560] The strange quark,
+- [01:11:25,560 - 01:11:26,560] not the strange quark,
+- [01:11:26,560 - 01:11:27,560] the, yeah,
+- [01:11:27,560 - 01:11:28,560] the strange quark
+- [01:11:28,560 - 01:11:30,560] can become a charmed quark.
+- [01:11:30,560 - 01:11:32,560] That's another one.
+- [01:11:32,560 - 01:11:34,560] Strange quark,
+- [01:11:34,560 - 01:11:35,560] charmed quark,
+- [01:11:35,560 - 01:11:36,560] again,
+- [01:11:36,560 - 01:11:38,560] W minus.
+- [01:11:43,560 - 01:11:45,560] So this new symmetry,
+- [01:11:45,560 - 01:11:47,560] this idea of a new symmetry
+- [01:11:47,560 - 01:11:49,560] which acts horizontally
+- [01:11:49,560 - 01:11:50,560] and only horizontally
+- [01:11:50,560 - 01:11:52,560] between neighboring pairs here,
+- [01:11:52,560 - 01:11:54,560] introduces the possibility
+- [01:11:54,560 - 01:11:57,560] of gauge bosons
+- [01:11:57,560 - 01:11:59,560] which cause transitions
+- [01:11:59,560 - 01:12:01,560] between electron neutrinos,
+- [01:12:01,560 - 01:12:03,560] electron neutrino,
+- [01:12:03,560 - 01:12:04,560] down quark and up quark,
+- [01:12:04,560 - 01:12:06,560] strange quark and charmed quark.
+- [01:12:06,560 - 01:12:08,560] Now a W plus and a W minus
+- [01:12:08,560 - 01:12:11,560] are antiparticles of each other.
+- [01:12:11,560 - 01:12:13,560] The meaning of that
+- [01:12:13,560 - 01:12:15,560] is that you can flip these diagrams,
+- [01:12:15,560 - 01:12:18,560] put the W minus down W here,
+- [01:12:18,560 - 01:12:19,560] but when you flip it,
+- [01:12:19,560 - 01:12:22,560] it becomes a W plus.
+- [01:12:22,560 - 01:12:24,560] So a W plus can be absorbed
+- [01:12:24,560 - 01:12:26,560] by an electron
+- [01:12:26,560 - 01:12:28,560] plus a unit of charge,
+- [01:12:28,560 - 01:12:29,560] minus a unit of charge
+- [01:12:29,560 - 01:12:30,560] to become a neutrino.
+- [01:12:30,560 - 01:12:32,560] So a whole family
+- [01:12:32,560 - 01:12:34,560] of different processes
+- [01:12:34,560 - 01:12:38,560] are codified by this one vertex here.
+- [01:12:38,560 - 01:12:40,560] We can turn them upside down,
+- [01:12:40,560 - 01:12:42,560] a neutrino goes to,
+- [01:12:42,560 - 01:12:44,560] you know what we're allowed to do.
+- [01:12:44,560 - 01:12:46,560] We've done these things before.
+- [01:12:46,560 - 01:12:51,560] And that's the basic new element
+- [01:12:51,560 - 01:12:54,560] of the weak interactions.
+- [01:12:54,560 - 01:12:56,560] Actually, that's all, yeah.
+- [01:12:56,560 - 01:12:58,560] Well, it's not clear to me
+- [01:12:58,560 - 01:12:59,560] why you have a W minus here.
+- [01:12:59,560 - 01:13:01,560] You have W minuses
+- [01:13:01,560 - 01:13:03,560] in all three of these cases.
+- [01:13:03,560 - 01:13:06,560] It's like a charge conservation.
+- [01:13:06,560 - 01:13:08,560] It couldn't be W plus.
+- [01:13:08,560 - 01:13:09,560] Would you accept
+- [01:13:09,560 - 01:13:11,560] I don't know what a W means?
+- [01:13:11,560 - 01:13:14,560] W is the name of a particle.
+- [01:13:14,560 - 01:13:17,560] It's the name of another gauge.
+- [01:13:17,560 - 01:13:19,560] Yeah, but the charge conservation
+- [01:13:19,560 - 01:13:20,560] tells me it's going to be a minus.
+- [01:13:20,560 - 01:13:21,560] Right.
+- [01:13:21,560 - 01:13:23,560] But I haven't seen any reason
+- [01:13:23,560 - 01:13:25,560] why it should be the same particle
+- [01:13:25,560 - 01:13:26,560] for the two.
+- [01:13:26,560 - 01:13:28,560] Well, okay, that's right.
+- [01:13:28,560 - 01:13:31,560] But what it comes down to in the end
+- [01:13:31,560 - 01:13:33,560] is an empirical fact.
+- [01:13:33,560 - 01:13:36,560] It's the empirical fact that the symmetry
+- [01:13:36,560 - 01:13:38,560] of the weak interactions
+- [01:13:38,560 - 01:13:40,560] acts simultaneously
+- [01:13:40,560 - 01:13:42,560] on all of these doublets here.
+- [01:13:42,560 - 01:13:44,560] When an up goes to a down,
+- [01:13:44,560 - 01:13:46,560] a charm has to go to a strange,
+- [01:13:46,560 - 01:13:49,560] a top has to go to a bottom,
+- [01:13:49,560 - 01:13:51,560] and the leptons have to mix
+- [01:13:51,560 - 01:13:53,560] with each other simultaneously.
+- [01:13:53,560 - 01:13:55,560] The implication of that,
+- [01:13:55,560 - 01:13:56,560] the implication of that
+- [01:13:56,560 - 01:13:58,560] from a practical point of view
+- [01:13:58,560 - 01:14:00,560] is simply it's the same symmetry
+- [01:14:00,560 - 01:14:02,560] which acts, it's the same gauge bosons
+- [01:14:02,560 - 01:14:04,560] which are there.
+- [01:14:04,560 - 01:14:06,560] You could have imagined a theory
+- [01:14:06,560 - 01:14:12,560] in which it's quite mathematically consistent
+- [01:14:12,560 - 01:14:13,560] to imagine a theory
+- [01:14:13,560 - 01:14:15,560] where different W-type bosons
+- [01:14:15,560 - 01:14:18,560] would have been emitted by up quarks,
+- [01:14:18,560 - 01:14:21,560] charm quarks, or tau quarks,
+- [01:14:21,560 - 01:14:23,560] or even leptons.
+- [01:14:23,560 - 01:14:25,560] It's a fact of nature.
+- [01:14:25,560 - 01:14:27,560] A fact of nature that's nature-based.
+- [01:14:27,560 - 01:14:29,560] A fact of nature that's nature is simpler
+- [01:14:29,560 - 01:14:31,560] than it might have been.
+- [01:14:31,560 - 01:14:33,560] That the same gauge bosons
+- [01:14:33,560 - 01:14:36,560] cause transitions between any
+- [01:14:38,560 - 01:14:40,560] any point row,
+- [01:14:40,560 - 01:14:41,560] you know what I mean.
+- [01:14:41,560 - 01:14:42,560] I'm going to get tongue-tied
+- [01:14:42,560 - 01:14:44,560] if I try to say it.
+- [01:14:44,560 - 01:14:46,560] Okay, well, first of all,
+- [01:14:46,560 - 01:14:49,560] how do we, what processes can we explain?
+- [01:14:50,560 - 01:14:51,560] Yeah.
+- [01:14:51,560 - 01:14:52,560] Quick question.
+- [01:14:52,560 - 01:14:55,560] Can a W-
+- [01:14:55,560 - 01:14:57,560] can a negative neutrino
+- [01:14:57,560 - 01:14:58,560] as well?
+- [01:15:01,560 - 01:15:03,560] Negative, uh, say it again.
+- [01:15:03,560 - 01:15:05,560] Can you flip the arrows?
+- [01:15:05,560 - 01:15:07,560] Yes, yes, yes, yes.
+- [01:15:07,560 - 01:15:09,560] You can flip arrows and you can flip lines.
+- [01:15:09,560 - 01:15:11,560] Yes, yes, certainly you can flip arrows.
+- [01:15:13,560 - 01:15:15,560] Yeah, absolutely.
+- [01:15:15,560 - 01:15:17,560] Absolutely.
+- [01:15:17,560 - 01:15:19,560] And you can also flip lines up and down
+- [01:15:19,560 - 01:15:20,560] in various ways.
+- [01:15:20,560 - 01:15:23,560] For example, another way you could flip the lines,
+- [01:15:23,560 - 01:15:25,560] you could take this up quark here,
+- [01:15:25,560 - 01:15:28,560] have it, instead of going out,
+- [01:15:28,560 - 01:15:30,560] instead of an up quark going out,
+- [01:15:30,560 - 01:15:33,560] an anti-up quark comes in.
+- [01:15:33,560 - 01:15:37,560] Whenever you flip a line from past to future
+- [01:15:37,560 - 01:15:39,560] or from future to past,
+- [01:15:39,560 - 01:15:42,560] you also change from particle to anti-particle.
+- [01:15:42,560 - 01:15:43,560] Yeah.
+- [01:15:43,560 - 01:15:44,560] I don't understand this,
+- [01:15:44,560 - 01:15:46,560] but on the rightmost diagram,
+- [01:15:46,560 - 01:15:49,560] W minus there is a strange anti-tron.
+- [01:15:49,560 - 01:15:51,560] Yes.
+- [01:15:51,560 - 01:15:54,560] So that's the same as a down anti-tron?
+- [01:15:54,560 - 01:15:56,560] Down anti-up?
+- [01:15:56,560 - 01:15:57,560] Yes.
+- [01:15:57,560 - 01:15:58,560] The same?
+- [01:15:58,560 - 01:15:59,560] Wait a second.
+- [01:15:59,560 - 01:16:00,560] Sorry.
+- [01:16:00,560 - 01:16:01,560] Yes.
+- [01:16:01,560 - 01:16:02,560] That's a strange anti-tron, right?
+- [01:16:02,560 - 01:16:03,560] Yes.
+- [01:16:03,560 - 01:16:04,560] That's the same as a down...
+- [01:16:04,560 - 01:16:06,560] It's not literally a strange and an anti-tron.
+- [01:16:06,560 - 01:16:08,560] It's just a rule that tells you
+- [01:16:10,560 - 01:16:12,560] that whatever these W bosons are,
+- [01:16:12,560 - 01:16:15,560] they're associated with transitions
+- [01:16:15,560 - 01:16:17,560] from one column to the other.
+- [01:16:17,560 - 01:16:18,560] But you did an anti-tron.
+- [01:16:18,560 - 01:16:19,560] Did I?
+- [01:16:19,560 - 01:16:20,560] Sorry.
+- [01:16:20,560 - 01:16:21,560] Strange...
+- [01:16:21,560 - 01:16:22,560] Electron to neutrino.
+- [01:16:22,560 - 01:16:23,560] Electron to neutrino.
+- [01:16:23,560 - 01:16:24,560] Electron to neutrino.
+- [01:16:24,560 - 01:16:25,560] Strange to charm.
+- [01:16:25,560 - 01:16:26,560] Is that wrong?
+- [01:16:26,560 - 01:16:27,560] No.
+- [01:16:27,560 - 01:16:28,560] No.
+- [01:16:28,560 - 01:16:29,560] No.
+- [01:16:29,560 - 01:16:30,560] It's not an anti-charm.
+- [01:16:30,560 - 01:16:31,560] That's the point.
+- [01:16:31,560 - 01:16:32,560] Who said it was an anti-charm?
+- [01:16:32,560 - 01:16:33,560] Well, it shouldn't have done.
+- [01:16:33,560 - 01:16:34,560] It was a W.
+- [01:16:34,560 - 01:16:35,560] No.
+- [01:16:35,560 - 01:16:36,560] No, no.
+- [01:16:36,560 - 01:16:37,560] All right.
+- [01:16:37,560 - 01:16:39,560] If you follow the lines like that,
+- [01:16:39,560 - 01:16:41,560] at the point where the line turns around,
+- [01:16:41,560 - 01:16:43,560] it has to be thought of as an anti-particle.
+- [01:16:43,560 - 01:16:44,560] Yes.
+- [01:16:44,560 - 01:16:45,560] Right.
+- [01:16:45,560 - 01:16:46,560] Okay.
+- [01:16:46,560 - 01:16:47,560] So,
+- [01:16:47,560 - 01:16:48,560] you're saying that
+- [01:16:48,560 - 01:16:49,560] the line turns around
+- [01:16:49,560 - 01:16:50,560] and the particle is a neutral particle.
+- [01:16:50,560 - 01:16:51,560] Yes.
+- [01:16:51,560 - 01:16:52,560] Right.
+- [01:16:52,560 - 01:16:53,560] Okay.
+- [01:16:53,560 - 01:16:54,560] So,
+- [01:16:54,560 - 01:16:55,560] you can think of it
+- [01:16:55,560 - 01:16:56,560] as a W.
+- [01:16:56,560 - 01:16:57,560] Or,
+- [01:16:57,560 - 01:16:58,560] if you like,
+- [01:16:58,560 - 01:16:59,560] you can always think of it
+- [01:16:59,560 - 01:17:00,560] as strange
+- [01:17:00,560 - 01:17:01,560] anti-charm
+- [01:17:01,560 - 01:17:02,560] coming in
+- [01:17:02,560 - 01:17:03,560] and making a W boson.
+- [01:17:03,560 - 01:17:04,560] Okay.
+- [01:17:04,560 - 01:17:05,560] Just keep in mind
+- [01:17:05,560 - 01:17:06,560] whenever you flip
+- [01:17:06,560 - 01:17:07,560] from the past
+- [01:17:07,560 - 01:17:08,560] to the future,
+- [01:17:08,560 - 01:17:09,560] if you want to know
+- [01:17:09,560 - 01:17:10,560] what a W boson
+- [01:17:10,560 - 01:17:11,560] will decay to,
+- [01:17:11,560 - 01:17:12,560] let's read it
+- [01:17:12,560 - 01:17:13,560] downward,
+- [01:17:13,560 - 01:17:14,560] it will decay
+- [01:17:14,560 - 01:17:15,560] to a strange
+- [01:17:15,560 - 01:17:16,560] and an anti-charm.
+- [01:17:16,560 - 01:17:17,560] All right.
+- [01:17:17,560 - 01:17:18,560] And
+- [01:17:18,560 - 01:17:19,560] that really can have
+- [01:17:19,560 - 01:17:20,560] a negative effect.
+- [01:17:20,560 - 01:17:21,560] Right.
+- [01:17:21,560 - 01:17:22,560] So,
+- [01:17:22,560 - 01:17:23,560] you can create
+- [01:17:23,560 - 01:17:24,560] a W boson
+- [01:17:24,560 - 01:17:25,560] from an electron
+- [01:17:25,560 - 01:17:26,560] and an
+- [01:17:26,560 - 01:17:27,560] anti-neutrino
+- [01:17:27,560 - 01:17:28,560] and then
+- [01:17:28,560 - 01:17:29,560] cause the W boson
+- [01:17:29,560 - 01:17:30,560] to change
+- [01:17:30,560 - 01:17:31,560] into a
+- [01:17:31,560 - 01:17:32,560] strange
+- [01:17:32,560 - 01:17:33,560] and a charm.
+- [01:17:33,560 - 01:17:34,560] Exactly.
+- [01:17:34,560 - 01:17:35,560] That's where
+- [01:17:35,560 - 01:17:36,560] some of these processes
+- [01:17:36,560 - 01:17:37,560] are going to come from now.
+- [01:17:37,560 - 01:17:38,560] So,
+- [01:17:38,560 - 01:17:39,560] let's think about
+- [01:17:39,560 - 01:17:40,560] the various processes.
+- [01:17:40,560 - 01:17:41,560] Let's start,
+- [01:17:41,560 - 01:17:42,560] just for fun,
+- [01:17:42,560 - 01:17:43,560] let's start
+- [01:17:43,560 - 01:17:44,560] with the decay
+- [01:17:44,560 - 01:17:45,560] of the pi minus.
+- [01:17:45,560 - 01:17:46,560] What is a pi minus?
+- [01:17:46,560 - 01:17:47,560] A pi minus
+- [01:17:47,560 - 01:17:48,560] is a
+- [01:17:48,560 - 01:17:49,560] decay
+- [01:17:49,560 - 01:17:50,560] of the
+- [01:17:50,560 - 01:17:51,560] pi minus
+- [01:17:51,560 - 01:17:52,560] and a decay
+- [01:17:52,560 - 01:17:53,560] of the pi minus
+- [01:17:53,560 - 01:17:54,560] is a quark
+- [01:17:54,560 - 01:17:55,560] and an anti-quark
+- [01:17:55,560 - 01:17:56,560] with altogether
+- [01:17:56,560 - 01:17:57,560] negative charge.
+- [01:17:57,560 - 01:17:58,560] So,
+- [01:17:58,560 - 01:17:59,560] let's see,
+- [01:17:59,560 - 01:18:00,560] a quark
+- [01:18:00,560 - 01:18:01,560] and an anti-quark
+- [01:18:01,560 - 01:18:02,560] with negative charge
+- [01:18:02,560 - 01:18:03,560] had better be,
+- [01:18:03,560 - 01:18:04,560] here's the pi minus,
+- [01:18:04,560 - 01:18:05,560] that's equal to
+- [01:18:05,560 - 01:18:06,560] a
+- [01:18:06,560 - 01:18:07,560] down quark
+- [01:18:07,560 - 01:18:08,560] and an
+- [01:18:08,560 - 01:18:09,560] anti-up quark.
+- [01:18:09,560 - 01:18:10,560] Down
+- [01:18:10,560 - 01:18:11,560] and anti-up.
+- [01:18:11,560 - 01:18:12,560] Now,
+- [01:18:12,560 - 01:18:13,560] what can a down
+- [01:18:13,560 - 01:18:14,560] and an anti-up
+- [01:18:14,560 - 01:18:15,560] do?
+- [01:18:15,560 - 01:18:16,560] Let's see if we can find
+- [01:18:16,560 - 01:18:17,560] down and anti-up here.
+- [01:18:17,560 - 01:18:18,560] Here it is right here.
+- [01:18:18,560 - 01:18:19,560] Down
+- [01:18:19,560 - 01:18:20,560] and anti-up
+- [01:18:20,560 - 01:18:21,560] can become
+- [01:18:21,560 - 01:18:22,560] a W minus.
+- [01:18:22,560 - 01:18:32,560] That's a possible transition
+- [01:18:32,560 - 01:18:34,560] that is allowed
+- [01:18:34,560 - 01:18:36,560] by
+- [01:18:36,560 - 01:18:38,560] the physics of W bosons.
+- [01:18:38,560 - 01:18:41,560] So here's a W minus.
+- [01:18:41,560 - 01:18:42,560] But now,
+- [01:18:42,560 - 01:18:43,560] a W minus
+- [01:18:43,560 - 01:18:45,560] can do something else.
+- [01:18:45,560 - 01:18:46,560] A W minus
+- [01:18:46,560 - 01:18:48,560] here is,
+- [01:18:48,560 - 01:18:49,560] let's say,
+- [01:18:49,560 - 01:18:50,560] here is
+- [01:18:50,560 - 01:18:51,560] W plus
+- [01:18:51,560 - 01:18:52,560] W plus.
+- [01:18:52,560 - 01:18:53,560] Let's put W plus
+- [01:18:53,560 - 01:18:54,560] upstairs here.
+- [01:18:54,560 - 01:18:55,560] Sorry,
+- [01:18:55,560 - 01:18:57,560] this is W minus now.
+- [01:18:57,560 - 01:18:58,560] And let's put the neutrino
+- [01:18:58,560 - 01:18:59,560] downstairs,
+- [01:18:59,560 - 01:19:00,560] anti-neutrino.
+- [01:19:00,560 - 01:19:02,560] And read this as saying
+- [01:19:02,560 - 01:19:03,560] that W minus
+- [01:19:03,560 - 01:19:05,560] goes to what?
+- [01:19:05,560 - 01:19:07,560] Electron
+- [01:19:07,560 - 01:19:09,560] anti-neutrino.
+- [01:19:09,560 - 01:19:11,560] So W minus
+- [01:19:11,560 - 01:19:12,560] can go to electron
+- [01:19:12,560 - 01:19:13,560] anti-neutrino.
+- [01:19:13,560 - 01:19:14,560] So W minus
+- [01:19:14,560 - 01:19:15,560] can go to electron
+- [01:19:15,560 - 01:19:16,560] anti-neutrino.
+- [01:19:16,560 - 01:19:17,560] So W minus
+- [01:19:17,560 - 01:19:18,560] can go to electron
+- [01:19:18,560 - 01:19:19,560] anti-neutrino.
+- [01:19:19,560 - 01:19:22,560] And
+- [01:19:22,560 - 01:19:25,560] here it is.
+- [01:19:25,560 - 01:19:27,560] E minus,
+- [01:19:27,560 - 01:19:29,560] ordinary electron.
+- [01:19:29,560 - 01:19:31,560] So that's the basic
+- [01:19:31,560 - 01:19:33,560] underlying process
+- [01:19:33,560 - 01:19:34,560] that governs
+- [01:19:34,560 - 01:19:35,560] the beta decay
+- [01:19:35,560 - 01:19:37,560] of the negatively charged
+- [01:19:37,560 - 01:19:38,560] pion
+- [01:19:38,560 - 01:19:40,560] into a
+- [01:19:40,560 - 01:19:41,560] into a
+- [01:19:41,560 - 01:19:42,560] electron
+- [01:19:42,560 - 01:19:44,560] and an anti-neutrino.
+- [01:19:44,560 - 01:19:46,560] Now, which anti-neutrino is it?
+- [01:19:46,560 - 01:19:47,560] There are three distinct
+- [01:19:47,560 - 01:19:48,560] anti-neutrinos.
+- [01:19:48,560 - 01:19:49,560] It's the electron
+- [01:19:49,560 - 01:19:51,560] anti-neutrino over here.
+- [01:19:51,560 - 01:19:53,560] It's the electron
+- [01:19:53,560 - 01:19:54,560] anti-neutrino.
+- [01:19:54,560 - 01:19:56,560] But it can also,
+- [01:19:56,560 - 01:19:57,560] I didn't draw all
+- [01:19:57,560 - 01:19:59,560] the various possibilities,
+- [01:19:59,560 - 01:20:00,560] but any place you saw
+- [01:20:00,560 - 01:20:01,560] an electron,
+- [01:20:01,560 - 01:20:03,560] you can put a muon.
+- [01:20:03,560 - 01:20:04,560] Any place,
+- [01:20:04,560 - 01:20:05,560] and as long as
+- [01:20:05,560 - 01:20:06,560] you carry along
+- [01:20:06,560 - 01:20:08,560] the muon neutrino.
+- [01:20:08,560 - 01:20:10,560] So another process
+- [01:20:10,560 - 01:20:12,560] is muon.
+- [01:20:12,560 - 01:20:13,560] And muon is
+- [01:20:13,560 - 01:20:14,560] the electron
+- [01:20:14,560 - 01:20:15,560] anti-neutrino.
+- [01:20:15,560 - 01:20:16,560] And muon is
+- [01:20:16,560 - 01:20:17,560] the electron
+- [01:20:17,560 - 01:20:18,560] anti-neutrino.
+- [01:20:18,560 - 01:20:19,560] And muon is
+- [01:20:19,560 - 01:20:20,560] the electron
+- [01:20:20,560 - 01:20:21,560] anti-neutrino.
+- [01:20:21,560 - 01:20:22,560] And just for clarity,
+- [01:20:22,560 - 01:20:23,560] this is not strictly
+- [01:20:23,560 - 01:20:24,560] a Feynman diagram, right?
+- [01:20:24,560 - 01:20:25,560] This is just showing
+- [01:20:25,560 - 01:20:26,560] an interaction.
+- [01:20:26,560 - 01:20:27,560] It's pretty close
+- [01:20:27,560 - 01:20:28,560] to a Feynman diagram.
+- [01:20:28,560 - 01:20:29,560] Well, except for
+- [01:20:29,560 - 01:20:30,560] the time direction.
+- [01:20:30,560 - 01:20:31,560] Oh, yeah.
+- [01:20:31,560 - 01:20:32,560] Right.
+- [01:20:32,560 - 01:20:33,560] I don't know why
+- [01:20:33,560 - 01:20:34,560] all of a sudden
+- [01:20:34,560 - 01:20:35,560] I change directions.
+- [01:20:35,560 - 01:20:36,560] Yeah.
+- [01:20:36,560 - 01:20:37,560] For some reason,
+- [01:20:37,560 - 01:20:38,560] yeah, right,
+- [01:20:38,560 - 01:20:39,560] time is now
+- [01:20:39,560 - 01:20:40,560] going horizontally.
+- [01:20:40,560 - 01:20:41,560] I've become
+- [01:20:41,560 - 01:20:42,560] a computer scientist
+- [01:20:42,560 - 01:20:43,560] and they measure,
+- [01:20:43,560 - 01:20:44,560] yeah, yeah, they do.
+- [01:20:44,560 - 01:20:45,560] Right.
+- [01:20:45,560 - 01:20:46,560] So,
+- [01:20:46,560 - 01:20:47,560] right.
+- [01:20:47,560 - 01:20:48,560] Yeah, it's pretty much,
+- [01:20:48,560 - 01:20:49,560] yeah, it's good.
+- [01:20:49,560 - 01:20:50,560] We can turn it up.
+- [01:20:50,560 - 01:20:51,560] I can't do that easily,
+- [01:20:51,560 - 01:20:52,560] but, yeah.
+- [01:20:52,560 - 01:20:53,560] Yeah, that is
+- [01:20:53,560 - 01:20:54,560] essentially a Feynman diagram
+- [01:20:54,560 - 01:20:55,560] describing the decay
+- [01:20:55,560 - 01:20:56,560] of the pi minus
+- [01:20:56,560 - 01:20:57,560] to the muon.
+- [01:20:57,560 - 01:20:58,560] As it happens,
+- [01:20:58,560 - 01:20:59,560] the, for technical reasons
+- [01:20:59,560 - 01:21:00,560] having to do
+- [01:21:00,560 - 01:21:01,560] with some complications
+- [01:21:01,560 - 01:21:02,560] in Feynman diagrams
+- [01:21:02,560 - 01:21:03,560] that are not interesting
+- [01:21:03,560 - 01:21:04,560] to us,
+- [01:21:04,560 - 01:21:05,560] as it happens,
+- [01:21:05,560 - 01:21:06,560] the primary decay,
+- [01:21:06,560 - 01:21:07,560] well, primary,
+- [01:21:07,560 - 01:21:08,560] I mean the most probable,
+- [01:21:08,560 - 01:21:09,560] is the muon.
+- [01:21:09,560 - 01:21:10,560] And the muon
+- [01:21:10,560 - 01:21:11,560] is the
+- [01:21:11,560 - 01:21:12,560] muon
+- [01:21:12,560 - 01:21:13,560] that is
+- [01:21:13,560 - 01:21:14,560] the muon
+- [01:21:14,560 - 01:21:15,560] that is
+- [01:21:15,560 - 01:21:16,560] the muon
+- [01:21:16,560 - 01:21:17,560] that is
+- [01:21:17,560 - 01:21:18,560] the muon
+- [01:21:18,560 - 01:21:19,560] that is
+- [01:21:19,560 - 01:21:20,560] the muon
+- [01:21:20,560 - 01:21:21,560] that is
+- [01:21:21,560 - 01:21:22,560] the muon
+- [01:21:22,560 - 01:21:23,560] antineutrino.
+- [01:21:23,560 - 01:21:24,560] The most probable decay
+- [01:21:24,560 - 01:21:25,560] of the pi minus
+- [01:21:25,560 - 01:21:26,560] is to the muon
+- [01:21:26,560 - 01:21:27,560] antineutrino,
+- [01:21:27,560 - 01:21:28,560] not to the electron
+- [01:21:28,560 - 01:21:29,560] antineutrino.
+- [01:21:29,560 - 01:21:30,560] It's a technical point
+- [01:21:30,560 - 01:21:31,560] of no,
+- [01:21:31,560 - 01:21:32,560] no special interest
+- [01:21:32,560 - 01:21:33,560] to us.
+- [01:21:33,560 - 01:21:34,560] It just happens
+- [01:21:34,560 - 01:21:35,560] to be that way.
+- [01:21:35,560 - 01:21:36,560] Wouldn't it be consistent
+- [01:21:36,560 - 01:21:37,560] instead of
+- [01:21:37,560 - 01:21:38,560] considering
+- [01:21:38,560 - 01:21:39,560] these Feynman diagrams
+- [01:21:39,560 - 01:21:40,560] with a time
+- [01:21:40,560 - 01:21:41,560] deal
+- [01:21:41,560 - 01:21:42,560] as more like
+- [01:21:42,560 - 01:21:43,560] a chemical equilibrium
+- [01:21:43,560 - 01:21:44,560] deal?
+- [01:21:44,560 - 01:21:45,560] Which way
+- [01:21:45,560 - 01:21:46,560] you're going?
+- [01:21:46,560 - 01:21:49,700] empty space except somebody made a pi minus. A
+- [01:21:49,700 - 01:21:52,840] pi minus was created how? A pi minus might
+- [01:21:52,840 - 01:21:57,110] be created by some nucleons coming together
+- [01:21:57,110 - 01:22:01,380] and creating by strong interactions. By strong
+- [01:22:01,380 - 01:22:04,130] interactions a pi minus might be created. Now
+- [01:22:04,130 - 01:22:06,880] that pi minus is just going along and
+- [01:22:06,880 - 01:22:10,180] saying wait a minute, I can decay if I
+- [01:22:10,180 - 01:22:13,480] like into a neutrino and a muon. Then of course
+- [01:22:13,480 - 01:22:15,960] the neutrino and the muon have enough energy,
+- [01:22:15,960 - 01:22:18,440] kinetic energy to fly off and they won't come
+- [01:22:18,440 - 01:22:21,139] back together again because they've departed, they've
+- [01:22:21,139 - 01:22:23,839] gone away. Okay, on the other hand
+- [01:22:23,839 - 01:22:26,549] it is true that if you were to take
+- [01:22:26,549 - 01:22:29,259] a muon and an antineutrino and fire them toward each
+- [01:22:29,259 - 01:22:32,189] other there would be a certain probability that
+- [01:22:32,189 - 01:22:35,120] they would make a pi minus. So yes, you
+- [01:22:35,120 - 01:22:39,299] can read it both ways. Let's go, yeah.
+- [01:22:39,299 - 01:22:41,279] Quick question, you have, like in one
+- [01:22:41,279 - 01:22:43,259] dimension you have a S-shape and you have
+- [01:22:43,259 - 01:22:43,299] a pi minus. What's the difference
+- [01:22:43,299 - 01:22:43,339] between a pi minus and a muon?
+- [01:22:43,339 - 01:22:43,359] Well, you have two different dimensions in a
+- [01:22:43,359 - 01:22:43,379] pi minus. One of the dimensions is the
+- [01:22:43,379 - 01:22:43,419] pi minus and one of the neutrinos. So the pi
+- [01:22:43,419 - 01:22:43,459] minus is a pi minus. So you have a pi minus
+- [01:22:43,460 - 01:22:44,460] right.
+- [01:22:44,460 - 01:22:45,460] Beautiful.
+- [01:22:45,460 - 01:22:46,120] I was wondering when you go
+- [01:22:46,120 - 01:22:46,780] from, let's say, what is the costhφο.
+- [01:22:46,780 - 01:22:48,180] A poinzsupport function or is that?
+- [01:22:48,180 - 01:22:49,180] Computerensible something.
+- [01:22:49,180 - 01:22:51,520] So, it can, we could take a pi
+- [01:22:51,520 - 01:22:53,860] plus that is very similar, but between sura materials
+- [01:22:53,860 - 01:22:57,430] and a minimum of so called number or
+- [01:22:57,430 - 01:23:01,000] even numbers but we could different things, but
+- [01:23:01,000 - 01:23:02,690] we can take a right,
+- [01:23:02,690 - 01:23:04,380] a three times over melts one.
+- [01:23:04,380 - 01:23:05,600] Yeah, you did that.
+- [01:23:05,600 - 01:23:06,600] Yeah!
+- [01:23:07,600 - 01:23:08,140] And then, again, just recent maybe
+- [01:23:08,140 - 01:23:08,680] good last words are very rare.
+- [01:23:08,680 - 01:23:09,680] Yes.
+- [01:23:09,680 - 01:23:10,680] I guess it actually is a much better question.
+- [01:23:10,680 - 01:23:11,680] I don't have an answer to those.
+- [01:23:11,680 - 01:23:12,180] There are a total of 21- perceiving angelic places
+- [01:23:12,180 - 01:23:12,680] and I am glad that I answered them or
+- [01:23:12,680 - 01:23:13,440] you guys got a lot of questions.
+- [01:23:13,440 - 01:23:15,740] keep in mind we're doing something
+- [01:23:15,740 - 01:23:18,040] a little bit funny because we have
+- [01:23:18,040 - 01:23:20,839] SU2 has how many generators?
+- [01:23:22,519 - 01:23:23,519] Three.
+- [01:23:23,519 - 01:23:25,919] So how many gauge bosons should it have?
+- [01:23:26,919 - 01:23:27,919] Three.
+- [01:23:27,919 - 01:23:30,579] So far we only have W plus and
+- [01:23:30,579 - 01:23:33,240] W minus. There must be another one lurking around
+- [01:23:33,240 - 01:23:35,640] and that other one must
+- [01:23:35,640 - 01:23:38,040] be associated somehow with something like
+- [01:23:39,639 - 01:23:42,240] electron anti-electron
+- [01:23:42,240 - 01:23:45,140] and neutrino anti-neutrino, but we'll come to it.
+- [01:23:45,140 - 01:23:48,040] Just like the, yeah, we'll come to it.
+- [01:23:48,040 - 01:23:51,040] There is a third gauge boson lurking around
+- [01:23:51,040 - 01:23:53,339] and it does play a
+- [01:23:53,339 - 01:23:55,639] big role in the weak interactions,
+- [01:23:55,639 - 01:23:58,639] but it didn't play a big role
+- [01:23:58,639 - 01:24:01,639] historically in the weak interactions just because,
+- [01:24:01,639 - 01:24:03,639] for reasons we'll come to.
+- [01:24:05,040 - 01:24:07,540] Historically it was the W boson
+- [01:24:07,540 - 01:24:10,040] which was the first to be conjectured.
+- [01:24:10,040 - 01:24:11,040] Yeah.
+- [01:24:11,040 - 01:24:12,040] Speaking of historically,
+- [01:24:12,040 - 01:24:14,440] was the weak or the
+- [01:24:14,440 - 01:24:16,840] strong force sort of suspected first?
+- [01:24:19,840 - 01:24:24,840] Of course, all right, so let's talk about the history.
+- [01:24:24,840 - 01:24:27,840] The history of these forces goes
+- [01:24:27,840 - 01:24:30,840] back to Becquerel, goes back to radioactivity.
+- [01:24:31,840 - 01:24:33,840] Alpha, beta, and gamma decay.
+- [01:24:34,840 - 01:24:37,840] Alpha decay was what?
+- [01:24:39,840 - 01:24:41,840] Emission of a two-pronged atom.
+- [01:24:42,040 - 01:24:44,840] Two protons and two neutrons from a nucleus.
+- [01:24:44,840 - 01:24:46,840] That's a strong interaction.
+- [01:24:46,840 - 01:24:48,840] It's part of the theory of hadrons and nuclei.
+- [01:24:48,840 - 01:24:52,840] Beta decay, that was this one right here.
+- [01:24:52,840 - 01:24:54,840] Weak interactions.
+- [01:24:54,840 - 01:24:56,840] And gamma decay?
+- [01:24:56,840 - 01:24:58,840] Photon.
+- [01:24:58,840 - 01:25:00,840] Historically they happened at the same time.
+- [01:25:02,840 - 01:25:04,840] In the same experiment.
+- [01:25:04,840 - 01:25:06,840] Question?
+- [01:25:06,840 - 01:25:08,840] Yeah.
+- [01:25:08,840 - 01:25:10,840] The energy conservation, how it works,
+- [01:25:10,840 - 01:25:16,640] are you assuming some kinetic energy in all of these?
+- [01:25:16,640 - 01:25:20,640] Okay, yeah, the energy, all right, let's work on that.
+- [01:25:20,640 - 01:25:23,140] You never worry about the energy
+- [01:25:23,140 - 01:25:25,640] conservation in intermediate states like this.
+- [01:25:25,640 - 01:25:29,140] If the energy of the intermediate state doesn't
+- [01:25:29,140 - 01:25:32,640] match the energies of the initial and final state,
+- [01:25:32,640 - 01:25:35,140] it just means that the intermediate state
+- [01:25:35,140 - 01:25:37,640] can only last for a very short time.
+- [01:25:37,640 - 01:25:39,640] There's an energy time uncertainty principle.
+- [01:25:39,640 - 01:25:42,140] You can violate the energies in a
+- [01:25:42,140 - 01:25:44,640] Feynman diagram for short periods of time.
+- [01:25:44,640 - 01:25:46,140] So don't worry about conservation
+- [01:25:46,140 - 01:25:47,640] of energy between here and here.
+- [01:25:47,640 - 01:25:49,640] The only energy we have to worry about
+- [01:25:49,640 - 01:25:51,640] is the initial energy and the final energy.
+- [01:25:51,640 - 01:25:53,640] Okay, so let's worry about it.
+- [01:25:53,640 - 01:25:59,640] A pion has an energy of about a mass.
+- [01:25:59,640 - 01:26:01,640] Let's suppose the pion is at rest.
+- [01:26:01,640 - 01:26:08,640] The mass of the pion is roughly about 140 MeV.
+- [01:26:09,640 - 01:26:13,140] All right, what is the energy
+- [01:26:13,140 - 01:26:16,640] of the muon and the neutrino?
+- [01:26:16,640 - 01:26:19,140] Well, first of all, it's the rest
+- [01:26:19,140 - 01:26:21,640] energy of the muon and the neutrino.
+- [01:26:21,640 - 01:26:24,140] Okay, and the rest energy,
+- [01:26:24,140 - 01:26:26,640] the rest mass of the neutrino,
+- [01:26:26,640 - 01:26:28,640] sorry, the mass of the muon,
+- [01:26:28,640 - 01:26:30,640] I think is about 100 MeV.
+- [01:26:30,640 - 01:26:33,640] I forget exactly.
+- [01:26:33,640 - 01:26:35,640] And the mass of a
+- [01:26:35,640 - 01:26:37,640] neutrino is, for practical purposes, zero.
+- [01:26:37,640 - 01:26:39,640] Too small to be important here.
+- [01:26:39,640 - 01:26:45,640] All right, so there's more energy to start with
+- [01:26:45,640 - 01:26:48,640] than the energy in the
+- [01:26:48,640 - 01:26:51,640] masses of the two final particles.
+- [01:26:51,640 - 01:26:53,640] Does that mean it can't happen?
+- [01:26:53,640 - 01:26:55,640] No, it just means the two particles
+- [01:26:55,640 - 01:26:57,640] will go off and carry some kinetic energy.
+- [01:26:57,640 - 01:27:00,640] So the difference between the energy on this side
+- [01:27:00,640 - 01:27:02,640] and the sums of the masses on this side
+- [01:27:02,640 - 01:27:05,640] is just the kinetic energy of the outgoing particles.
+- [01:27:05,640 - 01:27:08,640] That's the energy balance.
+- [01:27:08,640 - 01:27:11,640] The momentum also has to be conserved,
+- [01:27:11,640 - 01:27:13,140] and that means if the pion
+- [01:27:13,140 - 01:27:14,640] was at rest to begin with,
+- [01:27:14,640 - 01:27:16,640] the momentum of the muon
+- [01:27:16,640 - 01:27:18,640] and the momentum of the neutrino
+- [01:27:18,640 - 01:27:21,640] have to be equal and opposite,
+- [01:27:21,640 - 01:27:24,640] and they'll go out back to back, so to speak.
+- [01:27:24,640 - 01:27:26,140] If you analyze the neutron decay in
+- [01:27:26,140 - 01:27:27,640] the same way as you look at it...
+- [01:27:27,640 - 01:27:29,640] We're going to do that now.
+- [01:27:29,640 - 01:27:31,640] Yeah, let's do the neutron decay right now,
+- [01:27:31,640 - 01:27:34,640] see how a neutron works.
+- [01:27:38,640 - 01:27:41,640] Oh, let's do something simpler first.
+- [01:27:41,640 - 01:27:44,640] Let's do the muon decay.
+- [01:27:44,640 - 01:27:47,640] The muon is also something that can decay.
+- [01:27:47,640 - 01:27:49,640] So let's take the muon.
+- [01:27:49,640 - 01:27:51,640] Here's the muon moving along.
+- [01:27:51,640 - 01:27:53,640] Now what can the muon do?
+- [01:27:53,640 - 01:27:58,640] The muon can become a neutrino submuon
+- [01:27:58,640 - 01:28:00,640] and emit a W.
+- [01:28:00,640 - 01:28:03,640] What kind of W? W minus, right?
+- [01:28:05,640 - 01:28:08,640] It can become a W minus and a neutrino.
+- [01:28:08,640 - 01:28:11,140] But now one of the
+- [01:28:11,140 - 01:28:13,640] things a W minus can do
+- [01:28:13,640 - 01:28:17,640] is it can become an electron and an antineutrino.
+- [01:28:17,640 - 01:28:22,640] So this W minus can now become an electron
+- [01:28:22,640 - 01:28:27,640] and an antineutrino of the electron variety.
+- [01:28:27,640 - 01:28:29,640] Can this happen?
+- [01:28:29,640 - 01:28:32,640] The only thing that would... Yes, it can happen.
+- [01:28:32,640 - 01:28:34,140] Not only can it happen, this
+- [01:28:34,140 - 01:28:35,640] is the way the muon decays.
+- [01:28:35,640 - 01:28:37,640] The muon decays,
+- [01:28:38,640 - 01:28:41,640] because it is sufficiently much heavier
+- [01:28:43,640 - 01:28:45,640] than the electron,
+- [01:28:45,640 - 01:28:47,640] much heavier than the electron,
+- [01:28:47,640 - 01:28:50,640] about 200 times heavier than the electron.
+- [01:28:50,640 - 01:28:52,640] The neutrinos are practically massless,
+- [01:28:52,640 - 01:28:54,640] so the energy balance is
+- [01:28:54,640 - 01:28:56,640] you have about 100 MeV here,
+- [01:28:56,640 - 01:28:57,640] a half an MeV here,
+- [01:28:57,640 - 01:28:59,640] and the rest goes off in kinetic energy.
+- [01:28:59,640 - 01:29:01,640] So that's an example of a...
+- [01:29:01,640 - 01:29:04,640] what's called a purely leptonic process.
+- [01:29:04,640 - 01:29:06,640] No quarks in it at all.
+- [01:29:06,640 - 01:29:08,640] Is that an antineutrino?
+- [01:29:08,640 - 01:29:09,640] Is it what?
+- [01:29:09,640 - 01:29:10,640] An antielectron.
+- [01:29:10,640 - 01:29:12,640] Yeah, it is.
+- [01:29:12,640 - 01:29:14,640] Right.
+- [01:29:14,640 - 01:29:18,640] So it's one neutrino, one antineutrino, and an electron.
+- [01:29:18,640 - 01:29:20,640] Okay? So that happens.
+- [01:29:20,640 - 01:29:24,640] And that's the primary decay.
+- [01:29:24,640 - 01:29:27,640] It's the only decay of the muon.
+- [01:29:27,640 - 01:29:30,640] So the muon is an unstable particle because of this,
+- [01:29:30,640 - 01:29:32,140] but the reason the muon
+- [01:29:32,140 - 01:29:33,640] is unstable and not the electron
+- [01:29:33,640 - 01:29:35,640] is just that the muon happens to be heavy enough
+- [01:29:35,640 - 01:29:37,640] to be able to decay to the electron.
+- [01:29:37,640 - 01:29:39,640] The electron is not heavy
+- [01:29:39,640 - 01:29:41,640] enough to decay to the muon.
+- [01:29:41,640 - 01:29:45,640] So in a sense, it's an accident of the masses.
+- [01:29:45,640 - 01:29:47,640] The same is true of the tau, incidentally.
+- [01:29:47,640 - 01:29:52,640] The tau can also decay to other leptons.
+- [01:29:52,640 - 01:29:55,640] But, all right, that's the mu decay.
+- [01:29:55,640 - 01:29:58,640] And notice the components are the same.
+- [01:29:58,640 - 01:30:00,640] The basic components are the same.
+- [01:30:00,640 - 01:30:03,640] A transition from one column to another,
+- [01:30:03,640 - 01:30:05,640] followed by a W,
+- [01:30:05,640 - 01:30:08,640] and then the W makes another transition
+- [01:30:08,640 - 01:30:10,640] from one column to the other.
+- [01:30:10,640 - 01:30:12,640] Or, if you like, a decay
+- [01:30:12,640 - 01:30:14,640] from one column to the other.
+- [01:30:14,640 - 01:30:19,640] All right, what about the decay of the neutron?
+- [01:30:19,640 - 01:30:21,640] Decay of the neutron...
+- [01:30:21,640 - 01:30:23,640] Would it be consistent to say
+- [01:30:23,640 - 01:30:26,640] the purpose of a linear accelerator, per se,
+- [01:30:26,640 - 01:30:29,640] is to effectively increase the mass of the electron
+- [01:30:29,640 - 01:30:32,640] so that it can now go the other direction?
+- [01:30:32,640 - 01:30:33,640] Absolutely.
+- [01:30:33,640 - 01:30:34,640] Yeah.
+- [01:30:35,640 - 01:30:37,640] Yeah.
+- [01:30:37,640 - 01:30:38,640] I mean, you don't change the mass,
+- [01:30:38,640 - 01:30:39,640] you just put enough energy in it.
+- [01:30:39,640 - 01:30:40,640] You put enough energy...
+- [01:30:40,640 - 01:30:41,640] Absolutely.
+- [01:30:41,640 - 01:30:43,640] Yeah, that's exactly right.
+- [01:30:43,640 - 01:30:45,640] Okay, we were going to do neutron decay.
+- [01:30:45,640 - 01:30:47,640] So the neutron is...
+- [01:30:47,640 - 01:30:50,640] Maybe I'd better switch to vertical.
+- [01:30:50,640 - 01:30:52,640] I don't want to...
+- [01:30:52,640 - 01:30:53,640] Vertical.
+- [01:30:53,640 - 01:30:55,640] Vertical notation, back to vertical.
+- [01:30:55,640 - 01:30:58,640] Neutron is three quarks,
+- [01:30:58,640 - 01:31:00,640] two down quarks,
+- [01:31:00,640 - 01:31:02,640] and an up quark.
+- [01:31:02,640 - 01:31:04,640] Right?
+- [01:31:04,640 - 01:31:05,640] Minus...
+- [01:31:05,640 - 01:31:08,640] Minus four thirds plus two thirds...
+- [01:31:08,640 - 01:31:09,640] Sorry, minus two thirds...
+- [01:31:09,640 - 01:31:11,640] Yes, that's a neutron.
+- [01:31:11,640 - 01:31:13,640] Electrically neutral.
+- [01:31:13,640 - 01:31:15,640] Neutron coming in.
+- [01:31:15,640 - 01:31:18,640] Okay, now what is possible?
+- [01:31:18,640 - 01:31:21,640] First of all, we can have the up quark
+- [01:31:21,640 - 01:31:23,640] become a down quark
+- [01:31:23,640 - 01:31:25,640] and emit some sort of W.
+- [01:31:25,640 - 01:31:29,640] But that'll give us three down quarks.
+- [01:31:29,640 - 01:31:31,640] Three down quarks is a fine thing.
+- [01:31:31,640 - 01:31:33,640] There's nothing wrong with three down quarks,
+- [01:31:33,640 - 01:31:35,640] except that the mass of the neutron
+- [01:31:35,640 - 01:31:38,640] is less than three down quarks.
+- [01:31:38,640 - 01:31:40,640] The mass of three down quarks,
+- [01:31:40,640 - 01:31:43,640] of a particle with three down quarks,
+- [01:31:43,640 - 01:31:46,640] is always too heavy for the neutron to decay.
+- [01:31:46,640 - 01:31:48,640] So that's not what happens.
+- [01:31:48,640 - 01:31:50,640] What about one of the down quarks?
+- [01:31:50,640 - 01:31:55,640] The down quark can emit a W,
+- [01:31:55,640 - 01:31:59,640] become an up quark.
+- [01:31:59,640 - 01:32:02,640] This is again a W minus.
+- [01:32:02,640 - 01:32:04,640] The down quark emits a W minus,
+- [01:32:04,640 - 01:32:06,640] and that's a down quark.
+- [01:32:06,640 - 01:32:08,640] And now we have two up quarks
+- [01:32:08,640 - 01:32:09,640] and a down quark.
+- [01:32:09,640 - 01:32:11,640] Up, up, down.
+- [01:32:11,640 - 01:32:12,640] What is that called?
+- [01:32:12,640 - 01:32:13,640] Proton.
+- [01:32:13,640 - 01:32:15,640] That's a proton.
+- [01:32:17,640 - 01:32:21,640] And the W does what the W always does.
+- [01:32:21,640 - 01:32:25,640] It decays to an electron
+- [01:32:25,640 - 01:32:28,640] and an anti-neutrino.
+- [01:32:30,640 - 01:32:33,640] Electron, anti-neutrino.
+- [01:32:33,640 - 01:32:38,640] So that's the beta decay of the neutron.
+- [01:32:38,640 - 01:32:41,640] Could it decay into a muon in a neutrino?
+- [01:32:44,640 - 01:32:45,640] Not enough energy.
+- [01:32:45,640 - 01:32:47,640] The muon is too heavy
+- [01:32:47,640 - 01:32:50,640] so that there wouldn't be enough energy left over
+- [01:32:50,640 - 01:32:52,640] for the muon.
+- [01:32:52,640 - 01:32:53,640] But other than that,
+- [01:32:53,640 - 01:32:54,640] if it were not for that,
+- [01:32:54,640 - 01:32:55,640] it could happen.
+- [01:32:55,640 - 01:32:57,640] Another way to say it is if you could
+- [01:32:57,640 - 01:33:01,640] jam some more energy into the neutron.
+- [01:33:01,640 - 01:33:02,640] How can you do it?
+- [01:33:02,640 - 01:33:03,640] You give it a shove.
+- [01:33:03,640 - 01:33:05,640] You give the neutron a whack,
+- [01:33:05,640 - 01:33:06,640] you excite it,
+- [01:33:06,640 - 01:33:08,640] and if you excite it enough,
+- [01:33:08,640 - 01:33:10,640] it can decay to a proton,
+- [01:33:10,640 - 01:33:12,640] a neutrino, anti-neutrino, and a muon.
+- [01:33:12,640 - 01:33:15,640] But without somehow providing that extra energy,
+- [01:33:15,640 - 01:33:19,640] the neutron will only decay to the proton,
+- [01:33:19,640 - 01:33:21,640] electron, and anti-neutrino.
+- [01:33:23,640 - 01:33:24,640] Okay, now let's come...
+- [01:33:24,640 - 01:33:25,640] Let's see, where are we?
+- [01:33:25,640 - 01:33:27,640] I think we're finished for tonight.
+- [01:33:27,640 - 01:33:28,640] I think we're finished for tonight.
+- [01:33:28,640 - 01:33:30,640] But remember, we have a puzzle.
+- [01:33:30,640 - 01:33:31,640] And the puzzle is,
+- [01:33:31,640 - 01:33:36,640] why is it that the weak interactions
+- [01:33:36,640 - 01:33:39,640] give such slow decay rates?
+- [01:33:39,640 - 01:33:44,640] And I can think of one reason,
+- [01:33:44,640 - 01:33:48,640] namely, the coupling constant,
+- [01:33:48,640 - 01:33:53,640] or the analog of the fine structure constant,
+- [01:33:53,640 - 01:33:55,640] could be ridiculously small,
+- [01:33:55,640 - 01:33:58,640] so that the probability of emitting these W bosons
+- [01:33:58,640 - 01:34:00,640] would be very, very small.
+- [01:34:00,640 - 01:34:02,640] That is not the reason.
+- [01:34:02,640 - 01:34:05,640] The fine structure constant for the weak interactions
+- [01:34:05,640 - 01:34:07,640] is about the same as for electromagnetism.
+- [01:34:07,640 - 01:34:09,640] That is not the reason.
+- [01:34:09,640 - 01:34:10,640] The reason is something else,
+- [01:34:10,640 - 01:34:12,640] and we'll come to the something else next time.
+- [01:34:12,640 - 01:34:14,640] Yeah?
+- [01:34:14,640 - 01:34:18,640] When you say that theory has its own truth,
+- [01:34:18,640 - 01:34:20,640] you mean that the Lagrangian...
+- [01:34:20,640 - 01:34:25,640] The Lagrangian is invariant under those operations.
+- [01:34:25,640 - 01:34:26,640] That's exactly what it means.
+- [01:34:26,640 - 01:34:29,640] I didn't want to start writing bunches of Lagrangians,
+- [01:34:29,640 - 01:34:31,140] so I've used the shorthand
+- [01:34:31,140 - 01:34:32,640] of saying there's a symmetry, right?
+- [01:34:32,640 - 01:34:35,640] But that's what it means, yeah.
+- [01:34:35,640 - 01:34:40,640] For more, please visit us at stanford.edu.
