@@ -1,0 +1,2641 @@
+# Transcript
+
+Source: supplementary/string_theory/2010_fall_string_theory_and_m_theory/103 - Lecture 9 ｜ String Theory and M-Theory [Tsav_xnegTk].mkv
+
+- [00:00:00,000 - 00:00:06,480] Stanford University.
+- [00:00:06,480 - 00:00:10,320] All right, let's try to get to the
+- [00:00:10,320 - 00:00:14,160] heart of some of the aspects of string theory,
+- [00:00:14,160 - 00:00:18,440] which are really very central.
+- [00:00:18,440 - 00:00:20,220] We haven't talked about them, but
+- [00:00:20,220 - 00:00:22,000] we've set up many of the questions.
+- [00:00:22,000 - 00:00:23,440] We've set up many of the ideas.
+- [00:00:23,440 - 00:00:30,220] I want to show you first something which has
+- [00:00:30,220 - 00:00:37,000] both to do with why string theory has gravity
+- [00:00:37,000 - 00:00:42,190] in it, and it has to do with
+- [00:00:42,190 - 00:00:47,380] why there are such unusual constraints on the allowable
+- [00:00:47,380 - 00:00:50,720] kinds of string theories that you can have.
+- [00:00:50,720 - 00:00:53,420] I'm not going to actually get into 26 or 30.
+- [00:00:53,420 - 00:00:56,220] It's 10 dimensions, but I'm going to give
+- [00:00:56,220 - 00:00:59,020] you an example which shows just how tightly
+- [00:00:59,020 - 00:01:04,720] constrained the idea of string theory is
+- [00:01:04,720 - 00:01:10,420] compared to the idea of point particles.
+- [00:01:10,420 - 00:01:14,660] Point particles can move in curved spaces.
+- [00:01:14,660 - 00:01:22,500] A very, very simple example would just be...
+- [00:01:22,500 - 00:01:23,400] This is something you can...
+- [00:01:23,420 - 00:01:26,780] You can look up, I
+- [00:01:26,780 - 00:01:30,140] suspect, in elementary mechanics textbooks.
+- [00:01:30,140 - 00:01:34,140] Ordinary particles moving on a curved surface.
+- [00:01:34,140 - 00:01:35,620] Curved surface could be a sphere.
+- [00:01:35,620 - 00:01:37,020] It doesn't matter.
+- [00:01:37,020 - 00:01:38,020] Some sort of curved surface.
+- [00:01:38,020 - 00:01:41,740] It could be positively curved, negatively curved.
+- [00:01:41,740 - 00:01:43,910] In fact, it doesn't have to be
+- [00:01:43,910 - 00:01:46,080] two-dimensional, but I'm drawing it as two-dimensional.
+- [00:01:46,080 - 00:01:48,940] Let's say a two-dimensional surface and a particle on it.
+- [00:01:48,940 - 00:01:53,220] A particle is described by a point on that space.
+- [00:01:53,420 - 00:01:56,620] A point and a velocity, if you
+- [00:01:56,620 - 00:01:59,820] want to know the future history of it.
+- [00:01:59,820 - 00:02:07,580] And it moves on a trajectory.
+- [00:02:07,580 - 00:02:08,580] Moves on a trajectory.
+- [00:02:08,580 - 00:02:11,460] And it satisfies an equation of motion.
+- [00:02:11,460 - 00:02:14,820] The equation of motion is some form
+- [00:02:14,820 - 00:02:18,180] of Newton's equations projected onto the surface.
+- [00:02:18,180 - 00:02:20,420] How does a point particle move?
+- [00:02:20,420 - 00:02:21,300] I'm thinking now about ordinary particles.
+- [00:02:21,300 - 00:02:22,300] I'm thinking now about ordinary particles.
+- [00:02:22,300 - 00:02:23,300] I'm thinking now about ordinary particles.
+- [00:02:23,300 - 00:02:26,350] Ordinary non-relativistic particles moving on
+- [00:02:26,350 - 00:02:29,400] a curved surface without any forces.
+- [00:02:29,400 - 00:02:31,810] The forces, of course, are there to hold
+- [00:02:31,810 - 00:02:34,220] it in the surface, but other than the forces
+- [00:02:34,220 - 00:02:37,300] needed to hold it in the surface, no other forces.
+- [00:02:37,300 - 00:02:38,300] How does a point particle move?
+- [00:02:38,300 - 00:02:39,300] Anybody know?
+- [00:02:39,300 - 00:02:41,300] It moves on a geodesic.
+- [00:02:41,300 - 00:02:43,300] Moves on a geodesic, which is another way
+- [00:02:43,300 - 00:02:45,300] of saying it moves as straight as possible.
+- [00:02:45,300 - 00:02:47,300] It doesn't deviate to the left.
+- [00:02:47,300 - 00:02:48,840] Doesn't deviate to the right.
+- [00:02:48,840 - 00:02:50,120] It moves along a geodesic.
+- [00:02:50,120 - 00:02:51,120] That's right.
+- [00:02:51,120 - 00:02:52,160] If there are forces on
+- [00:02:52,160 - 00:02:53,200] it of one kind or another...
+- [00:02:53,300 - 00:03:00,960] Then it may move in a more complicated trajectory.
+- [00:03:00,960 - 00:03:06,760] You could imagine that this wouldn't be consistent.
+- [00:03:06,760 - 00:03:08,960] You could imagine that it might not be consistent.
+- [00:03:08,960 - 00:03:12,440] How could it fail to be consistent to write down...
+- [00:03:12,440 - 00:03:14,780] It's just a differential equation,
+- [00:03:14,780 - 00:03:17,120] just a Newton-type differential equation.
+- [00:03:17,120 - 00:03:19,080] Here's a way that it could be...
+- [00:03:19,080 - 00:03:20,700] Which of course is not inconsistent.
+- [00:03:20,700 - 00:03:21,420] It's perfectly consistent.
+- [00:03:21,420 - 00:03:22,420] As long as it's consistent, it's a good thing.
+- [00:03:22,420 - 00:03:23,140] It's a good thing.
+- [00:03:23,140 - 00:03:25,100] As long as the surface is smooth.
+- [00:03:25,100 - 00:03:28,050] As long as the surface is smooth, differentiable,
+- [00:03:28,050 - 00:03:31,000] all the good things that nice surfaces have.
+- [00:03:31,000 - 00:03:34,350] But what do you really mean by a
+- [00:03:34,350 - 00:03:37,700] motion of a particle satisfying a differential equation?
+- [00:03:37,700 - 00:03:40,290] As always, you mean break up the trajectory
+- [00:03:40,290 - 00:03:42,880] into a lot of little pieces, replace derivatives
+- [00:03:42,880 - 00:03:49,320] by distances, and think of a discrete version of it.
+- [00:03:49,320 - 00:03:51,459] That's the first step.
+- [00:03:51,459 - 00:03:52,799] Derivatives are really differences.
+- [00:03:53,140 - 00:03:57,660] And then take the limit.
+- [00:03:57,660 - 00:04:03,040] Take the limit in the appropriate way
+- [00:04:03,040 - 00:04:08,420] of more and more little time intervals.
+- [00:04:08,420 - 00:04:11,959] How do I know that the limit exists?
+- [00:04:11,959 - 00:04:13,799] How do I know that the limit exists?
+- [00:04:13,799 - 00:04:16,899] Could it be that as I put more and more
+- [00:04:16,899 - 00:04:20,000] points in there, that the limit of whatever it is
+- [00:04:20,000 - 00:04:20,419] you're calculating, the trajectory itself...
+- [00:04:20,419 - 00:04:20,940] How do I know that the trajectory does not exist?
+- [00:04:20,940 - 00:04:21,180] How do I know that the trajectory does not exist?
+- [00:04:21,180 - 00:04:21,740] And then you have to figure it out.
+- [00:04:21,740 - 00:04:22,260] Could it be that...
+- [00:04:22,260 - 00:04:22,719] Could it be that...
+- [00:04:22,719 - 00:04:23,039] Could it be that...
+- [00:04:23,040 - 00:04:26,420] that the limit exists? Well, these
+- [00:04:26,420 - 00:04:29,800] are just described by ordinary differential equations.
+- [00:04:29,800 - 00:04:32,830] People have been studying differential equations
+- [00:04:32,830 - 00:04:35,860] since the mathematician differential was a
+- [00:04:35,860 - 00:04:40,140] young man. And we know that the solutions
+- [00:04:40,140 - 00:04:44,420] of these things are smooth, regular, and have
+- [00:04:44,420 - 00:04:45,420] good limits.
+- [00:04:45,420 - 00:04:46,420] Ordinary.
+- [00:04:46,420 - 00:04:48,400] Okay. Now you could ask a more complicated
+- [00:04:48,400 - 00:04:50,380] question. You could say, wait a minute, I'm
+- [00:04:50,380 - 00:04:53,190] really interested in quantum mechanics. And in
+- [00:04:53,190 - 00:04:56,000] quantum mechanics, we have a more complicated
+- [00:04:56,000 - 00:04:59,530] kind of question. Instead of just looking
+- [00:04:59,530 - 00:05:03,060] for a trajectory, we ask questions, for example,
+- [00:05:03,060 - 00:05:05,630] what's the amplitude that if a particle starts
+- [00:05:05,630 - 00:05:08,200] here, that at a later time we will discover
+- [00:05:08,200 - 00:05:11,510] it here? We find again there is an
+- [00:05:11,510 - 00:05:14,820] action principle, but the action principle is not
+- [00:05:14,820 - 00:05:17,519] to find the trajectory of least action,
+- [00:05:17,519 - 00:05:20,219] which gives a differential equation, but to use
+- [00:05:20,219 - 00:05:20,340] a particle.
+- [00:05:20,380 - 00:05:23,190] So what's the path integral? And the
+- [00:05:23,190 - 00:05:26,000] path integral sums over all trajectories, including
+- [00:05:26,000 - 00:05:30,020] wildly varying ones. Again, a trajectory being
+- [00:05:30,020 - 00:05:34,040] defined in terms of breaking it up into
+- [00:05:34,040 - 00:05:36,830] little pieces and then taking a limit. Now
+- [00:05:36,830 - 00:05:39,620] how do I know that the limit exists? Yeah?
+- [00:05:39,620 - 00:05:41,940] Are those trajectories all inside the surface?
+- [00:05:41,940 - 00:05:43,910] Yeah, they're all inside the surface.
+- [00:05:43,910 - 00:05:45,880] Yeah. Everything takes place inside the surface.
+- [00:05:45,880 - 00:05:48,049] Yes. Good point. Yeah. We're
+- [00:05:48,049 - 00:05:50,219] talking about physics in a surface.
+- [00:05:50,220 - 00:05:53,910] On a surface, whatever you want to
+- [00:05:53,910 - 00:05:57,600] call it. Those features, which are completely independent
+- [00:05:57,600 - 00:06:01,390] of how the surface, that depend on the
+- [00:06:01,390 - 00:06:05,180] geometry of the surface, but not in anything outside
+- [00:06:05,180 - 00:06:07,970] the surface. Yeah. All right. So how do
+- [00:06:07,970 - 00:06:10,760] I know that this very, very complicated path
+- [00:06:10,760 - 00:06:14,160] integral structure exists in the sense that it has
+- [00:06:14,160 - 00:06:17,560] a limit, a limit as you take the grain
+- [00:06:17,560 - 00:06:20,060] structure finer and finer?
+- [00:06:20,060 - 00:06:24,960] There the answer is much, much more
+- [00:06:24,960 - 00:06:29,860] complicated, but it's equivalent to solving the ordinary
+- [00:06:29,860 - 00:06:33,900] Schrodinger equation on the surface. And again,
+- [00:06:33,900 - 00:06:37,940] that's a more complicated kind of equation.
+- [00:06:37,940 - 00:06:42,080] It's a partial differential equation. And
+- [00:06:42,080 - 00:06:46,220] partial differential equations are more difficult,
+- [00:06:46,220 - 00:06:48,060] but partial was a very smart guy, and
+- [00:06:48,060 - 00:06:49,900] he figured out how partial differential equations work.
+- [00:06:49,900 - 00:06:53,640] And we know from 19th century physics and
+- [00:06:53,640 - 00:06:57,380] so forth that the limits do exist. They do
+- [00:06:57,380 - 00:06:59,479] make sense.
+- [00:06:59,479 - 00:07:02,889] String theory is more subtle, infinitely more
+- [00:07:02,889 - 00:07:06,299] subtle. In string theory, we're not talking
+- [00:07:06,299 - 00:07:08,839] about a point particle. We're talking about
+- [00:07:08,839 - 00:07:11,380] an extended object. Now, that's the string
+- [00:07:11,380 - 00:07:15,619] itself. Imagine a string which is constrained to
+- [00:07:15,619 - 00:07:19,859] move in a surface. And this surface does
+- [00:07:19,860 - 00:07:24,950] not have to be two dimensional. But as
+- [00:07:24,950 - 00:07:30,040] I said, I'm going to think about two dimensions.
+- [00:07:30,040 - 00:07:33,290] Here's the string. And it's a quantum
+- [00:07:33,290 - 00:07:36,540] mechanical string, which means it's subject to vibrations.
+- [00:07:36,540 - 00:07:42,440] In fact, just to pick an example, let's
+- [00:07:42,440 - 00:07:48,340] talk about string theory where the space that the
+- [00:07:48,340 - 00:07:49,860] string moves on.
+- [00:07:49,860 - 00:07:53,380] Now, there's real space. The space that the
+- [00:07:53,380 - 00:07:56,900] string moves on is a sphere. And it happens
+- [00:07:56,900 - 00:08:02,090] to be a sphere with radius r. It's a
+- [00:08:02,090 - 00:08:07,280] sphere with radius r. Oh, let's do a point particle
+- [00:08:07,280 - 00:08:13,120] first. In fact, let's do a classical point particle first.
+- [00:08:13,120 - 00:08:16,110] Point particle moves on a sphere. What is
+- [00:08:16,110 - 00:08:19,100] its kinetic energy or its Lagrangian? As always,
+- [00:08:19,100 - 00:08:19,860] it's just 1 half.
+- [00:08:19,860 - 00:08:22,990] So, the velocity vector is 1 half mv
+- [00:08:22,990 - 00:08:26,120] squared, mass times velocity squared, which is also
+- [00:08:26,120 - 00:08:29,190] the momentum squared divided by twice the mass.
+- [00:08:29,190 - 00:08:32,260] Let's write it that way. P squared divided
+- [00:08:32,260 - 00:08:34,770] by twice the mass. But now there's a
+- [00:08:34,770 - 00:08:37,280] constraint. And the constraint is that the particle has
+- [00:08:37,280 - 00:08:41,070] to stay on the sphere. Nevertheless, what that
+- [00:08:41,070 - 00:08:44,860] means is this velocity vector is in the
+- [00:08:44,860 - 00:08:47,360] surface of the sphere. The momentum vector is
+- [00:08:47,360 - 00:08:49,860] also in the surface of the sphere. And
+- [00:08:49,860 - 00:08:52,200] that's the momentum vector. But other
+- [00:08:52,200 - 00:08:54,540] than that, it's just standard classical mechanics.
+- [00:08:54,540 - 00:08:58,440] Now, if we were doing quantum mechanics, then on
+- [00:08:58,440 - 00:09:02,340] a sphere, the motion of a particle on a
+- [00:09:02,340 - 00:09:05,220] sphere moves in a circle, of course, a great
+- [00:09:05,220 - 00:09:08,100] circle, a great circle of size r. The momentum
+- [00:09:08,100 - 00:09:10,630] is quantized. How do you see that the
+- [00:09:10,630 - 00:09:13,160] momentum is quantized? Well, there's various ways to
+- [00:09:13,160 - 00:09:16,210] see it, but let me just give you a very
+- [00:09:16,210 - 00:09:19,260] simple way. If the momentum is p and the radius of
+- [00:09:19,260 - 00:09:22,439] the sphere is r, what is the angular momentum?
+- [00:09:22,439 - 00:09:29,880] PR. PR. PR. So the angular momentum L is equal
+- [00:09:29,880 - 00:09:34,030] to p times r, in magnitude anyway. And
+- [00:09:34,030 - 00:09:38,180] angular momentum we know is quantized. We know that
+- [00:09:38,180 - 00:09:43,710] it's quantized in units of h bar. So,
+- [00:09:43,710 - 00:09:49,240] some quantized angular momentum here. I'm not even
+- [00:09:49,240 - 00:09:51,660] going to bother writing it. Angular
+- [00:09:51,660 - 00:09:54,080] momentum is fundamental because it's quantized. So,
+- [00:09:54,080 - 00:09:57,670] it pays to rewrite the energy in terms of
+- [00:09:57,670 - 00:10:01,260] the angular momentum. Let's write p as L over
+- [00:10:01,260 - 00:10:05,370] r, and stick it into here. Then it becomes
+- [00:10:05,370 - 00:10:09,480] L squared divided by twice m, let's see, what
+- [00:10:09,480 - 00:10:14,250] is it, twice m, and now r squared, right? m
+- [00:10:14,250 - 00:10:19,020] r squared. Do you know what m r squared is
+- [00:10:19,020 - 00:10:20,020] called?
+- [00:10:20,020 - 00:10:21,020] Moment of inertia.
+- [00:10:21,020 - 00:10:24,400] Moment of inertia. The moment of inertia, in
+- [00:10:24,400 - 00:10:27,780] this case, of the point particle over here.
+- [00:10:27,780 - 00:10:29,780] And the symbol for it?
+- [00:10:29,780 - 00:10:30,780] I.
+- [00:10:30,780 - 00:10:35,720] I. L squared over twice the moment of
+- [00:10:35,720 - 00:10:40,660] inertia. So, what characterizes the motion of this
+- [00:10:40,660 - 00:10:44,390] particle is, first of all, its angular momentum,
+- [00:10:44,390 - 00:10:48,120] but the moment of inertia. The moment of inertia
+- [00:10:50,020 - 00:10:58,020] is less than square root of V, it's more
+- [00:10:58,020 - 00:11:06,020] than square root of V. 다양 감 m allη常
+- [00:11:06,020 - 00:11:10,340] Ϡ v attached to the moment of inertia. This
+- [00:11:10,340 - 00:11:14,090] equation, that's got the big
+- [00:11:14,090 - 00:11:17,840] constant that the initial moment
+- [00:11:17,840 - 00:11:18,020] Ts does. T
+- [00:11:18,020 - 00:11:24,780] Okay, so all of that is straightforward.
+- [00:11:24,780 - 00:11:29,020] Now we want to talk about a
+- [00:11:29,020 - 00:11:33,260] string, a string moving on this sphere.
+- [00:11:33,260 - 00:11:34,600] Here it is.
+- [00:11:34,600 - 00:11:38,020] It's constrained to be in the sphere.
+- [00:11:38,020 - 00:11:41,060] The spherical surface is all there is.
+- [00:11:41,060 - 00:11:43,460] There is no outside the spherical surface and inside.
+- [00:11:43,460 - 00:11:45,960] There's only the spherical surface itself.
+- [00:11:45,960 - 00:11:48,050] However, as I said, the spherical surface
+- [00:11:48,050 - 00:11:50,140] could be higher dimensional, but for the moment
+- [00:11:50,140 - 00:11:54,680] just two-dimensional, and it's going to move around.
+- [00:11:54,680 - 00:11:57,620] Good.
+- [00:11:57,620 - 00:12:02,110] How do I know that in the limit that I
+- [00:12:02,110 - 00:12:06,600] think of the string as a collection of little points,
+- [00:12:06,600 - 00:12:10,040] how do I know that the properties
+- [00:12:10,040 - 00:12:13,480] of this little string have good limits?
+- [00:12:13,480 - 00:12:15,680] The answer is they don't.
+- [00:12:15,680 - 00:12:20,359] Spencer, not that we don't know.
+- [00:12:20,359 - 00:12:22,939] The answer is that the limits don't exist.
+- [00:12:22,939 - 00:12:26,079] So let me show you why and what happens.
+- [00:12:26,079 - 00:12:29,289] The first thing is to understand a little
+- [00:12:29,289 - 00:12:32,500] more about the size and shapes of strings.
+- [00:12:32,500 - 00:12:36,620] We want to understand a little more about them.
+- [00:12:36,620 - 00:12:40,960] So let's calculate how big statistically the
+- [00:12:40,960 - 00:12:45,300] string has zero point oscillations, the oscillators
+- [00:12:45,300 - 00:12:47,460] in the string are constantly
+- [00:12:47,460 - 00:12:49,620] vibrating, even in the ground state.
+- [00:12:49,620 - 00:12:51,779] Because they're vibrating, they give
+- [00:12:51,779 - 00:12:53,939] the string a little size.
+- [00:12:53,939 - 00:12:56,439] They give the string a little size.
+- [00:12:56,439 - 00:13:00,009] And I'm interested in trying to figure out
+- [00:13:00,009 - 00:13:03,579] how big that string is when the zero point
+- [00:13:03,579 - 00:13:05,819] oscillations are included.
+- [00:13:05,819 - 00:13:06,819] So how do I do that?
+- [00:13:06,819 - 00:13:10,399] I go back to a formula that we had
+- [00:13:10,399 - 00:13:13,979] on the blackboard, maybe the first or second lecture.
+- [00:13:15,300 - 00:13:18,760] Let's do open strings just for simplicity.
+- [00:13:18,760 - 00:13:20,540] Remember this formula?
+- [00:13:20,540 - 00:13:23,300] The position of a point
+- [00:13:23,300 - 00:13:26,060] on the string, what is sigma?
+- [00:13:26,060 - 00:13:31,600] Sigma is the parameter along the string,
+- [00:13:31,600 - 00:13:37,140] is equal to a sum over oscillators.
+- [00:13:37,140 - 00:13:40,619] Each oscillator has a frequency
+- [00:13:40,619 - 00:13:44,099] associated with it, so an n.
+- [00:13:44,099 - 00:13:45,060] And we have...
+- [00:13:45,060 - 00:13:50,980] Let's call it a plus n plus
+- [00:13:50,980 - 00:13:56,900] a minus n cosine of n sigma.
+- [00:13:56,900 - 00:13:59,009] And there's one other thing,
+- [00:13:59,009 - 00:14:01,119] a square root of n downstairs.
+- [00:14:01,119 - 00:14:02,819] Does everybody remember that?
+- [00:14:02,819 - 00:14:03,819] Probably not.
+- [00:14:03,819 - 00:14:05,819] But if you go back in your notes...
+- [00:14:05,819 - 00:14:06,819] Yes.
+- [00:14:06,819 - 00:14:07,819] Yeah.
+- [00:14:07,819 - 00:14:11,089] There may be factors of
+- [00:14:11,089 - 00:14:14,359] two, I don't remember in detail.
+- [00:14:14,359 - 00:14:14,439] Whether the factor of two is
+- [00:14:14,439 - 00:14:14,520] a factor of n or not.
+- [00:14:14,520 - 00:14:14,619] I don't remember.
+- [00:14:14,620 - 00:14:17,120] But there's a factor of n.
+- [00:14:17,120 - 00:14:19,920] I guess it's a factor of n.
+- [00:14:19,920 - 00:14:21,080] You don't remember that.
+- [00:14:21,080 - 00:14:24,080] It's a factor of n or not.
+- [00:14:24,080 - 00:14:25,220] It's not an odd factor.
+- [00:14:25,220 - 00:14:26,120] It's a factor of n.
+- [00:14:26,120 - 00:14:26,670] It's a factor of 2 that
+- [00:14:26,670 - 00:14:27,220] sits in front of it or not.
+- [00:14:27,220 - 00:14:28,220] But that's not important.
+- [00:14:28,220 - 00:14:29,220] This is the structure of it.
+- [00:14:29,220 - 00:14:30,520] Now what do I want to calculate?
+- [00:14:30,520 - 00:14:31,640] I want to calculate in
+- [00:14:31,640 - 00:14:32,760] the ground state of the string.
+- [00:14:32,760 - 00:14:34,170] Ground state of the string
+- [00:14:34,170 - 00:14:35,580] is a state with no oscillations.
+- [00:14:35,580 - 00:14:37,850] I want to calculate the mean size
+- [00:14:37,850 - 00:14:40,120] of it, the average size of it.
+- [00:14:40,120 - 00:14:42,100] So the average size of it,
+- [00:14:42,100 - 00:14:44,080] let's calculate the average squared size.
+- [00:14:44,080 - 00:14:47,740] x squared at any point sigma, an arbitrary point sigma.
+- [00:14:49,100 - 00:14:50,180] What does that give us?
+- [00:14:50,180 - 00:14:52,730] That gives us sum on
+- [00:14:52,730 - 00:14:55,280] n and a sum on m.
+- [00:14:55,900 - 00:14:58,200] We're going to have a
+- [00:14:58,200 - 00:15:00,500] plus n plus a minus n
+- [00:15:00,500 - 00:15:07,760] times a plus m plus a minus m
+- [00:15:07,760 - 00:15:12,200] over square root of n, square root of m,
+- [00:15:12,200 - 00:15:17,380] cosine n sigma, cosine m sigma.
+- [00:15:20,800 - 00:15:23,720] I've just written down this expression twice.
+- [00:15:24,460 - 00:15:25,990] Once as a sum over n
+- [00:15:25,990 - 00:15:27,520] and once as a sum over m.
+- [00:15:28,180 - 00:15:29,360] I've done nothing special.
+- [00:15:30,120 - 00:15:32,000] Now what I want to calculate is
+- [00:15:32,000 - 00:15:33,880] its average value in the ground state.
+- [00:15:34,460 - 00:15:36,460] Average value in the ground state
+- [00:15:36,460 - 00:15:38,460] in quantum mechanics we represent like this.
+- [00:15:38,460 - 00:15:41,580] O stands for the ground state string.
+- [00:15:41,580 - 00:15:43,700] We want to calculate its average value.
+- [00:15:45,320 - 00:15:48,720] That means we want to calculate the average of this
+- [00:15:48,720 - 00:15:54,000] in the simultaneous ground state of all of the oscillations.
+- [00:15:54,400 - 00:15:56,100] You might think the answer is zero, right?
+- [00:15:57,620 - 00:15:59,360] Well, that's not quite true.
+- [00:16:00,140 - 00:16:02,200] Every oscillator in its
+- [00:16:02,200 - 00:16:04,260] ground state, quantum mechanical oscillator,
+- [00:16:04,440 - 00:16:06,260] has a little bit of zero point energy.
+- [00:16:06,640 - 00:16:09,100] That little bit of zero point
+- [00:16:09,100 - 00:16:11,560] energy gives it an average fluctuation,
+- [00:16:11,580 - 00:16:20,360] in position or in this case in x itself.
+- [00:16:20,900 - 00:16:22,120] And how do we calculate it?
+- [00:16:22,120 - 00:16:23,400] Let's look at the various terms here.
+- [00:16:23,400 - 00:16:24,840] We're going to calculate the
+- [00:16:24,840 - 00:16:26,280] ground state expectation value of this.
+- [00:16:26,280 - 00:16:28,200] O O.
+- [00:16:29,900 - 00:16:31,730] The important pieces are
+- [00:16:31,730 - 00:16:33,560] these creation and annihilation operators.
+- [00:16:34,660 - 00:16:36,450] What happens if I take the
+- [00:16:36,450 - 00:16:38,240] piece with a plus times a plus?
+- [00:16:38,700 - 00:16:40,440] Can that have an expectation value
+- [00:16:40,440 - 00:16:41,140] for in the,
+- [00:16:41,140 - 00:16:43,400] in the ground state
+- [00:16:43,400 - 00:16:44,939] well no it can't
+- [00:16:44,939 - 00:16:47,720] the reason is two A pluses
+- [00:16:47,720 - 00:16:50,260] when they act to the right
+- [00:16:50,260 - 00:16:52,000] create a state
+- [00:16:52,000 - 00:16:56,000] with two extra units of energy
+- [00:16:56,000 - 00:16:57,540] you've raised
+- [00:16:57,540 - 00:17:00,380] the oscillator in twice
+- [00:17:00,380 - 00:17:02,879] and that has no overlap
+- [00:17:02,879 - 00:17:05,379] with the ground state at all
+- [00:17:05,379 - 00:17:07,359] so the term with two
+- [00:17:07,359 - 00:17:09,280] A pluses
+- [00:17:09,280 - 00:17:12,960] that can't contribute to this
+- [00:17:12,960 - 00:17:17,160] how about the term with two A minuses
+- [00:17:17,160 - 00:17:19,230] what does A minus do
+- [00:17:19,230 - 00:17:21,300] when it hits the ground state
+- [00:17:21,300 - 00:17:23,160] it kills it right
+- [00:17:23,160 - 00:17:25,489] it's also true incidentally when A plus
+- [00:17:25,489 - 00:17:27,819] acts to the left it kills this
+- [00:17:27,819 - 00:17:30,179] so the term with A plus
+- [00:17:30,179 - 00:17:32,540] A plus and A minus A minus
+- [00:17:32,540 - 00:17:34,120] give nothing
+- [00:17:34,120 - 00:17:36,960] what about
+- [00:17:36,960 - 00:17:39,080] A plus times A minus
+- [00:17:39,080 - 00:17:39,260] A plus times A minus gives nothing
+- [00:17:39,280 - 00:17:40,860] A plus times A minus
+- [00:17:40,860 - 00:17:42,560] well you just said it kills
+- [00:17:42,560 - 00:17:43,760] the left kills the right
+- [00:17:43,760 - 00:17:45,280] right so that's not there
+- [00:17:45,280 - 00:17:48,220] but what about the term A minus A plus
+- [00:17:48,220 - 00:17:49,120] sounds good
+- [00:17:49,120 - 00:17:49,940] sounds good
+- [00:17:49,940 - 00:17:52,899] let's look at it
+- [00:17:52,899 - 00:17:56,960] A minus times A plus that's still there
+- [00:17:56,960 - 00:17:58,660] if it's zero
+- [00:17:58,660 - 00:17:59,660] so be it
+- [00:17:59,660 - 00:18:01,220] but I don't see any
+- [00:18:01,220 - 00:18:02,780] reason why it should be zero
+- [00:18:02,780 - 00:18:04,240] okay
+- [00:18:04,240 - 00:18:06,559] what does this say it says
+- [00:18:06,559 - 00:18:08,879] we create one unit of excitation
+- [00:18:08,879 - 00:18:09,080] for the
+- [00:18:09,080 - 00:18:11,760] the nth oscillator
+- [00:18:11,760 - 00:18:13,679] this says we remove
+- [00:18:13,679 - 00:18:15,620] one unit of excitation
+- [00:18:15,620 - 00:18:18,159] for the nth oscillator
+- [00:18:18,159 - 00:18:19,419] can you remove
+- [00:18:19,419 - 00:18:20,540] a unit
+- [00:18:20,540 - 00:18:22,540] other than the one you put in
+- [00:18:22,540 - 00:18:23,199] no
+- [00:18:23,199 - 00:18:24,120] no
+- [00:18:24,120 - 00:18:26,840] so this can only be non-zero
+- [00:18:26,840 - 00:18:29,159] if n is the same as m
+- [00:18:29,159 - 00:18:30,789] but if n is the same
+- [00:18:30,789 - 00:18:32,419] as m what do you get
+- [00:18:32,419 - 00:18:34,040] delta
+- [00:18:34,040 - 00:18:35,820] a chronic or delta one
+- [00:18:35,820 - 00:18:37,580] these are all discreet so they're not continuous variables
+- [00:18:37,580 - 00:18:38,879] nth oscillator
+- [00:18:38,880 - 00:18:45,160] You get 1 if n equals m, and 0 otherwise.
+- [00:18:46,040 - 00:18:48,630] In other words, the sum over n
+- [00:18:48,630 - 00:18:51,220] and m is only a single sum.
+- [00:18:52,320 - 00:18:58,520] It's the sum over n of a minus
+- [00:18:58,520 - 00:19:04,720] n, a plus n, over square root of n.
+- [00:19:05,600 - 00:19:08,500] Sorry, not square, n, n.
+- [00:19:08,880 - 00:19:10,630] Square root of n times square
+- [00:19:10,630 - 00:19:12,380] root of m, that's just n,
+- [00:19:13,480 - 00:19:19,400] and then cosine squared of n sigma.
+- [00:19:22,500 - 00:19:26,100] Now, cosine squared is always positive,
+- [00:19:26,100 - 00:19:29,700] and it averages to about a half.
+- [00:19:30,920 - 00:19:32,460] Cosine of n sigma is
+- [00:19:32,460 - 00:19:34,000] a function which looks like this.
+- [00:19:34,940 - 00:19:37,660] If you square it, of course, it's above the axis,
+- [00:19:37,840 - 00:19:38,860] because the square is always positive.
+- [00:19:38,880 - 00:19:42,220] And it averages to about a half.
+- [00:19:44,180 - 00:19:45,860] That's good enough for our purposes.
+- [00:19:46,120 - 00:19:47,040] It's never negative.
+- [00:19:47,240 - 00:19:49,500] You can't get any cancellation, and
+- [00:19:49,500 - 00:19:51,760] it kind of oscillates around a half.
+- [00:19:52,340 - 00:19:54,910] So for most purposes, it's sufficient
+- [00:19:54,910 - 00:19:57,480] just to call this a half.
+- [00:19:58,480 - 00:19:59,340] And that's about right.
+- [00:20:02,260 - 00:20:04,120] O, O.
+- [00:20:06,120 - 00:20:07,400] And what is this thing?
+- [00:20:07,400 - 00:20:08,860] This thing is just 1.
+- [00:20:08,880 - 00:20:12,000] You create a particle, or you
+- [00:20:12,000 - 00:20:15,120] create an excitation of the nth oscillator,
+- [00:20:15,400 - 00:20:16,400] and then you take it out.
+- [00:20:17,060 - 00:20:19,620] That average value is just 1.
+- [00:20:20,140 - 00:20:21,800] So we now have an answer.
+- [00:20:22,580 - 00:20:25,940] The answer is that x squared,
+- [00:20:26,080 - 00:20:27,200] now I'll tell you what
+- [00:20:27,200 - 00:20:28,320] x squared means in a moment.
+- [00:20:29,620 - 00:20:31,880] It's equal, the one half
+- [00:20:31,880 - 00:20:34,140] is not the important thing here,
+- [00:20:34,140 - 00:20:38,720] just sum on n, 1 over n.
+- [00:20:38,880 - 00:20:42,460] Now, first of all, what is x squared?
+- [00:20:42,460 - 00:20:43,580] What is x?
+- [00:20:43,580 - 00:20:45,580] I wrote here x of sigma,
+- [00:20:45,580 - 00:20:47,580] but I left out one term.
+- [00:20:47,580 - 00:20:48,480] Does anybody know what the
+- [00:20:48,480 - 00:20:49,380] term that I left out is?
+- [00:20:49,380 - 00:20:53,540] The center of mass motion.
+- [00:20:53,540 - 00:20:58,420] There's one term which corresponds to zero frequency,
+- [00:20:58,420 - 00:21:00,460] which is just the center of mass.
+- [00:21:00,460 - 00:21:04,460] So really, the thing that I've
+- [00:21:04,460 - 00:21:08,460] calculated was the average of the position,
+- [00:21:08,880 - 00:21:11,620] of the string at point sigma,
+- [00:21:11,620 - 00:21:15,380] minus the position of the center of mass.
+- [00:21:15,380 - 00:21:16,680] Think about that for a moment.
+- [00:21:16,680 - 00:21:17,680] What's it mean?
+- [00:21:19,680 - 00:21:22,680] You have a string, in this case an open string,
+- [00:21:23,680 - 00:21:25,680] and the center of mass may
+- [00:21:25,680 - 00:21:27,680] or may not be on the string.
+- [00:21:28,680 - 00:21:31,180] But different points on the string
+- [00:21:31,180 - 00:21:33,680] are separated from the center of mass.
+- [00:21:36,680 - 00:21:38,680] The average,
+- [00:21:38,880 - 00:21:42,580] the average separation from the center of mass
+- [00:21:42,580 - 00:21:46,280] is a measure of the size of the thing.
+- [00:21:46,280 - 00:21:48,480] The center of mass is
+- [00:21:48,480 - 00:21:50,680] where the center of mass is,
+- [00:21:50,680 - 00:21:52,280] and if the points of the string
+- [00:21:52,280 - 00:21:53,880] are not at the center of mass,
+- [00:21:53,880 - 00:21:57,080] that means that it's been spread out.
+- [00:21:57,080 - 00:21:59,180] If this is non-zero, it means
+- [00:21:59,180 - 00:22:01,280] the string is extended in size.
+- [00:22:01,280 - 00:22:04,780] And here we're calculating it, and we find out
+- [00:22:04,780 - 00:22:08,280] that x squared is this sum of 1 over n.
+- [00:22:08,880 - 00:22:09,880] Okay?
+- [00:22:11,880 - 00:22:12,880] Trouble.
+- [00:22:13,880 - 00:22:15,880] Trouble. Big trouble.
+- [00:22:15,880 - 00:22:17,880] Why is it trouble?
+- [00:22:17,880 - 00:22:18,880] It's infinite.
+- [00:22:18,880 - 00:22:19,880] It's infinite.
+- [00:22:20,880 - 00:22:24,880] Now, most of these oscillations are incredibly rapid.
+- [00:22:25,880 - 00:22:30,880] Large n oscillations are very, very rapid oscillations.
+- [00:22:31,880 - 00:22:34,880] Maybe we should just say, really,
+- [00:22:34,880 - 00:22:37,880] all those very, very rapid oscillations are
+- [00:22:38,880 - 00:22:40,880] unphysical,
+- [00:22:41,880 - 00:22:42,880] cut them off,
+- [00:22:42,880 - 00:22:45,380] only take the first n,
+- [00:22:45,380 - 00:22:47,880] the first 25 oscillations into account,
+- [00:22:48,880 - 00:22:50,880] and see what happens.
+- [00:22:50,880 - 00:22:52,880] Well, then we'll only have log of 25, and
+- [00:22:52,880 - 00:22:54,880] log of 25 is not a very big number.
+- [00:22:54,880 - 00:22:56,880] How big is log of 25? Log to
+- [00:22:56,880 - 00:22:58,880] the base e of 25? Not very big.
+- [00:22:59,880 - 00:23:02,880] It's a small number. A moderate number.
+- [00:23:04,880 - 00:23:07,880] But then we're not doing string theory.
+- [00:23:07,880 - 00:23:11,880] We're essentially doing a string of 25 particles.
+- [00:23:11,880 - 00:23:13,880] We're not doing string theory.
+- [00:23:19,880 - 00:23:21,880] We've got to go to the limit n equals 0.
+- [00:23:21,880 - 00:23:25,380] Now, it's an extremely remarkable
+- [00:23:25,380 - 00:23:28,880] thing that this causes no problems
+- [00:23:28,880 - 00:23:32,880] for the scattering of strings in flat space.
+- [00:23:32,880 - 00:23:35,880] In flat space, it's a real magical,
+- [00:23:35,880 - 00:23:38,880] very, very delicate cancellations that
+- [00:23:38,880 - 00:23:41,880] make sure that this string,
+- [00:23:41,880 - 00:23:44,880] which is essentially infinitely big with rapid
+- [00:23:44,880 - 00:23:47,880] fluctuations taking place all over the place,
+- [00:23:47,880 - 00:23:50,880] doesn't bombard other strings far away, even
+- [00:23:50,880 - 00:23:53,880] though it's extended out all over the place.
+- [00:23:53,880 - 00:23:55,880] They're very rapid fluctuations.
+- [00:23:55,880 - 00:23:57,880] It's an amazing set of cancellations which
+- [00:23:57,880 - 00:23:59,880] makes sure that all of this works out.
+- [00:23:59,880 - 00:24:03,880] But those cancellations don't always work.
+- [00:24:03,880 - 00:24:04,880] They work in some geometries and in others.
+- [00:24:05,880 - 00:24:07,380] So I'm going to show you
+- [00:24:07,380 - 00:24:08,880] what goes wrong on the sphere,
+- [00:24:08,880 - 00:24:11,880] and it doesn't go wrong in flat space.
+- [00:24:11,880 - 00:24:17,880] First of all, the message of all of this is,
+- [00:24:17,880 - 00:24:22,880] first step, terminate this sum at some maximum n.
+- [00:24:22,880 - 00:24:25,880] A maximum frequency.
+- [00:24:25,880 - 00:24:28,880] Later on, we're going to have to repair
+- [00:24:28,880 - 00:24:31,880] the damage by letting the maximum frequency get larger.
+- [00:24:31,880 - 00:24:34,880] Now we can ask, how does this string behave?
+- [00:24:35,880 - 00:24:39,880] As a function of n max.
+- [00:24:39,880 - 00:24:42,380] In flat space, well, here's
+- [00:24:42,380 - 00:24:44,880] the way to think about it.
+- [00:24:44,880 - 00:24:48,880] As a function of n max, the
+- [00:24:48,880 - 00:24:52,880] string occupies a certain region of space.
+- [00:24:52,880 - 00:24:58,380] It's the region of space whose x
+- [00:24:58,380 - 00:25:03,880] squared, or r, whose r squared is equal
+- [00:25:03,880 - 00:25:09,880] to the logarithm of n max.
+- [00:25:09,880 - 00:25:11,380] The higher we make n max,
+- [00:25:11,380 - 00:25:12,880] the bigger it seems to spread out.
+- [00:25:12,880 - 00:25:13,880] But very, very slowly.
+- [00:25:13,880 - 00:25:16,880] But nevertheless, it seems to spread out.
+- [00:25:16,880 - 00:25:22,880] Well, if this is moving in flat space, it has a
+- [00:25:22,880 - 00:25:28,880] energy which is just one half its mass times p squared.
+- [00:25:28,880 - 00:25:30,880] It doesn't matter that it's spread out.
+- [00:25:30,880 - 00:25:32,380] The motion of the center
+- [00:25:32,380 - 00:25:33,880] of mass of a billiard ball,
+- [00:25:33,880 - 00:25:35,880] this big, that big,
+- [00:25:35,880 - 00:25:38,380] moves exactly the same way as the motion
+- [00:25:38,380 - 00:25:40,880] of the center of mass of a proton.
+- [00:25:40,880 - 00:25:43,880] It moves the center of mass,
+- [00:25:43,880 - 00:25:45,380] well, of course it's not the
+- [00:25:45,380 - 00:25:46,880] same way, it has a different mass.
+- [00:25:46,880 - 00:25:50,880] But in flat space, the motion of a particle,
+- [00:25:50,880 - 00:25:52,880] the center of mass of a particle,
+- [00:25:52,880 - 00:25:57,880] separates off the fact that it's an extended object.
+- [00:25:57,880 - 00:26:00,380] You don't have to remember the fact that it's extended
+- [00:26:00,380 - 00:26:02,880] if you're just interested in the center of mass motion.
+- [00:26:03,880 - 00:26:06,880] But that's not true in curved space.
+- [00:26:06,880 - 00:26:09,880] In curved space, they don't separate off so easily.
+- [00:26:09,880 - 00:26:12,380] So let's see if we
+- [00:26:12,380 - 00:26:14,880] can figure out what's happening here.
+- [00:26:14,880 - 00:26:16,880] Here's the string.
+- [00:26:16,880 - 00:26:19,880] Let's put the string up at the north pole here.
+- [00:26:19,880 - 00:26:22,880] The string is up at the north pole.
+- [00:26:22,880 - 00:26:26,880] And if I make as my first approximation
+- [00:26:26,880 - 00:26:30,880] that there's only one or two oscillating modes,
+- [00:26:30,880 - 00:26:32,880] well, we could start with no oscillating modes,
+- [00:26:33,880 - 00:26:35,880] if there were no oscillating modes,
+- [00:26:35,880 - 00:26:37,880] then the string would be a point.
+- [00:26:37,880 - 00:26:39,880] It wouldn't be spread out at all.
+- [00:26:39,880 - 00:26:43,880] It would be like a, just be a point.
+- [00:26:43,880 - 00:26:45,380] Then the string would just be a
+- [00:26:45,380 - 00:26:46,880] point, and it would be over here,
+- [00:26:46,880 - 00:26:49,880] and it would move as an ordinary point particle.
+- [00:26:49,880 - 00:26:51,880] How does a point particle move?
+- [00:26:51,880 - 00:26:53,880] It moves with an energy which
+- [00:26:53,880 - 00:26:55,880] is the square of the angular momentum
+- [00:26:55,880 - 00:27:00,880] over the moment of inertia.
+- [00:27:00,880 - 00:27:02,880] And what's the moment of inertia?
+- [00:27:02,880 - 00:27:07,880] It's just proportional to mass times the radius squared,
+- [00:27:07,880 - 00:27:09,880] times the radius squared of the sphere.
+- [00:27:09,880 - 00:27:12,880] If we set m to 1, then it would
+- [00:27:12,880 - 00:27:15,880] just be the square of the radius of the sphere.
+- [00:27:15,880 - 00:27:19,880] So this point here would move
+- [00:27:19,880 - 00:27:23,880] around the sphere on great circles,
+- [00:27:23,880 - 00:27:27,380] and it would move with an energy which
+- [00:27:27,380 - 00:27:30,880] would be controlled by the radius of the sphere.
+- [00:27:30,880 - 00:27:32,880] The radius of the sphere would go into this calculation,
+- [00:27:32,880 - 00:27:34,880] in terms of the moment of inertia.
+- [00:27:34,880 - 00:27:38,380] Okay, now let's take into account that
+- [00:27:38,380 - 00:27:41,880] as we add more modes of oscillation,
+- [00:27:41,880 - 00:27:44,880] the string starts to spread out.
+- [00:27:44,880 - 00:27:47,880] It starts to get a size and grows.
+- [00:27:47,880 - 00:27:50,880] Not grows with time, but grows
+- [00:27:50,880 - 00:27:53,880] with more and more oscillations here.
+- [00:27:53,880 - 00:28:00,880] It starts to get bigger.
+- [00:28:00,880 - 00:28:04,880] It fills up some region, which looks about like that.
+- [00:28:04,880 - 00:28:06,380] Incidentally, if you ask what does
+- [00:28:06,380 - 00:28:07,880] it look like on the average,
+- [00:28:07,880 - 00:28:12,880] it simply looks like a tangle.
+- [00:28:12,880 - 00:28:16,880] The more modes that you add, the
+- [00:28:16,880 - 00:28:20,880] more and the bigger the tangle is.
+- [00:28:20,880 - 00:28:22,880] It's fluctuations on top of
+- [00:28:22,880 - 00:28:24,880] fluctuations on top of fluctuations,
+- [00:28:24,880 - 00:28:28,880] and this thing starts to get bigger.
+- [00:28:28,880 - 00:28:30,880] So if you think about its motion
+- [00:28:30,880 - 00:28:32,880] around the center of mass of it,
+- [00:28:32,880 - 00:28:35,380] think of the center of mass of
+- [00:28:35,380 - 00:28:37,880] it moving on the same great circle.
+- [00:28:37,880 - 00:28:39,380] The center of mass will
+- [00:28:39,380 - 00:28:40,880] still move on the great circle,
+- [00:28:40,880 - 00:28:43,880] but what about its moment of inertia?
+- [00:28:43,880 - 00:28:47,880] Moment of inertia about an axis.
+- [00:28:47,880 - 00:28:51,880] Here's an axis. It's moving. It's going around that axis.
+- [00:28:51,880 - 00:28:54,380] The relevant quantity is the
+- [00:28:54,380 - 00:28:56,880] moment of inertia about that axis,
+- [00:28:56,880 - 00:29:00,380] and it's governed by the square
+- [00:29:00,380 - 00:29:03,880] of the distance to the axis.
+- [00:29:03,880 - 00:29:07,380] The moment of inertia about an
+- [00:29:07,380 - 00:29:10,880] axis is proportional to a sum.
+- [00:29:10,880 - 00:29:13,880] It's an integral over the mass distribution.
+- [00:29:13,880 - 00:29:17,880] Each little piece of the mass distribution,
+- [00:29:17,880 - 00:29:19,880] you take the mass of that little piece,
+- [00:29:19,880 - 00:29:22,880] and you multiply it by the
+- [00:29:22,880 - 00:29:25,880] square of the distance to the axis
+- [00:29:25,880 - 00:29:27,880] that you're rotating about.
+- [00:29:27,880 - 00:29:30,880] Now notice that this point over
+- [00:29:30,880 - 00:29:33,880] here is closer to the axis
+- [00:29:33,880 - 00:29:35,880] than this point up here.
+- [00:29:35,880 - 00:29:37,880] In fact, let's go to extremes.
+- [00:29:37,880 - 00:29:42,880] Let's suppose we include so many modes that...
+- [00:29:42,880 - 00:29:51,880] Let me draw this better.
+- [00:29:51,880 - 00:29:54,880] It droops down to about over here.
+- [00:29:54,880 - 00:29:59,880] It's rotating around the sphere this way.
+- [00:29:59,880 - 00:30:02,880] It's on the sphere. It's not inside the sphere.
+- [00:30:02,880 - 00:30:04,880] It's on the sphere.
+- [00:30:04,880 - 00:30:06,880] The point on the sphere up here,
+- [00:30:06,880 - 00:30:14,880] that is a distance r from the axis.
+- [00:30:14,880 - 00:30:16,880] What about this point over here?
+- [00:30:16,880 - 00:30:18,880] How far from the axis is it?
+- [00:30:18,880 - 00:30:22,880] Is it less than or more than r?
+- [00:30:22,880 - 00:30:24,880] Looks less than, doesn't it?
+- [00:30:24,880 - 00:30:26,880] But that's deceptive because we forgot
+- [00:30:26,880 - 00:30:28,880] that the sphere is really a sphere.
+- [00:30:28,880 - 00:30:30,880] It's really a sphere.
+- [00:30:30,880 - 00:30:33,880] It's like moving the point down to here.
+- [00:30:33,880 - 00:30:37,880] With the axis going in this direction,
+- [00:30:37,880 - 00:30:39,880] it would be the same distance.
+- [00:30:39,880 - 00:30:41,880] This point over here,
+- [00:30:41,880 - 00:30:43,880] which is out here somewhere,
+- [00:30:43,880 - 00:30:47,880] is the same distance from the axis as this point.
+- [00:30:47,880 - 00:30:50,880] But how about this point over here?
+- [00:30:50,880 - 00:30:53,880] It really is closer to the
+- [00:30:53,880 - 00:30:56,880] axis than the point up here.
+- [00:30:56,880 - 00:31:04,880] So what's going to happen when I calculate the...
+- [00:31:04,880 - 00:31:09,880] when I calculate the moment of inertia?
+- [00:31:09,880 - 00:31:11,880] The moment is going to be bigger or
+- [00:31:11,880 - 00:31:13,880] smaller or exactly the same as it was
+- [00:31:13,880 - 00:31:15,880] when I pretended all of the
+- [00:31:15,880 - 00:31:17,880] string was at a single point.
+- [00:31:17,880 - 00:31:19,880] It's going to be smaller.
+- [00:31:20,880 - 00:31:21,880] Right.
+- [00:31:21,880 - 00:31:23,880] It's going to be smaller.
+- [00:31:23,880 - 00:31:26,880] The mass of the string is the same, incidentally.
+- [00:31:26,880 - 00:31:30,880] That does not change when you add more modes.
+- [00:31:30,880 - 00:31:32,880] It just oscillates differently, but the mass,
+- [00:31:32,880 - 00:31:34,380] the amount of mass that's there
+- [00:31:34,380 - 00:31:35,880] is just the sum of the masses
+- [00:31:35,880 - 00:31:37,880] of little point particles that make it up.
+- [00:31:37,880 - 00:31:39,880] The mass stays the same,
+- [00:31:39,880 - 00:31:43,880] but the moment of inertia gets smaller.
+- [00:31:43,880 - 00:31:48,880] The meaning of that is that the quantum mechanics behaves...
+- [00:31:48,880 - 00:31:50,880] You can either say
+- [00:31:50,880 - 00:31:51,880] You can say it two ways.
+- [00:31:51,880 - 00:31:54,880] You can say the string is spread out like that
+- [00:31:54,880 - 00:31:58,880] and therefore closer to the axis.
+- [00:31:58,880 - 00:32:01,880] Or you can just say it's as
+- [00:32:01,880 - 00:32:04,880] if the string moved on a smaller sphere.
+- [00:32:04,880 - 00:32:09,880] It's as if all of the quantum mechanics essentially takes...
+- [00:32:09,880 - 00:32:16,880] behaves as if the string was a point,
+- [00:32:16,880 - 00:32:19,880] but was a point on a smaller sphere.
+- [00:32:20,880 - 00:32:26,880] Okay?
+- [00:32:26,880 - 00:32:29,880] But the more modes that you add,
+- [00:32:29,880 - 00:32:32,880] the bigger the string gets.
+- [00:32:32,880 - 00:32:34,880] Eventually, if you add enough modes,
+- [00:32:34,880 - 00:32:37,880] it's going to grow so that it's
+- [00:32:37,880 - 00:32:40,880] almost as big as the entire sphere.
+- [00:32:40,880 - 00:32:42,880] In other words,
+- [00:32:42,880 - 00:32:44,880] well, let's go to some extreme
+- [00:32:44,880 - 00:32:48,880] where it fills up a good fraction of the sphere.
+- [00:32:48,880 - 00:32:49,880] In that case,
+- [00:32:49,880 - 00:32:51,880] the effective moment of inertia
+- [00:32:51,880 - 00:32:53,880] is going to be much smaller
+- [00:32:53,880 - 00:32:56,880] than the moment of inertia
+- [00:32:56,880 - 00:32:57,880] would have been
+- [00:32:57,880 - 00:32:59,880] if it would have been a point particle.
+- [00:32:59,880 - 00:33:00,880] But even worse,
+- [00:33:00,880 - 00:33:02,880] there's no limit.
+- [00:33:02,880 - 00:33:06,880] Or at least as n gets larger and larger,
+- [00:33:06,880 - 00:33:09,880] the string begins to cover the whole sphere
+- [00:33:09,880 - 00:33:12,880] and the effective moment of inertia is actually zero.
+- [00:33:12,880 - 00:33:15,880] The average position of it is right at the center.
+- [00:33:15,880 - 00:33:17,880] If the effective moment of inertia is zero,
+- [00:33:17,880 - 00:33:20,880] well, that's a zero in the denominator here.
+- [00:33:20,880 - 00:33:23,880] That's not a good thing for the motion of anything.
+- [00:33:23,880 - 00:33:25,880] Why is it zero?
+- [00:33:25,880 - 00:33:27,880] I mean, it's still spread around.
+- [00:33:27,880 - 00:33:29,880] It's as if the thing should...
+- [00:33:29,880 - 00:33:31,880] Well, it's...
+- [00:33:31,880 - 00:33:33,880] No, it's not zero.
+- [00:33:33,880 - 00:33:35,880] It's not zero, but...
+- [00:33:35,880 - 00:33:36,880] Okay.
+- [00:33:36,880 - 00:33:38,880] Yeah, yeah, no, no.
+- [00:33:38,880 - 00:33:39,880] You have to be...
+- [00:33:39,880 - 00:33:40,880] It does go to zero,
+- [00:33:40,880 - 00:33:42,380] but you have to think
+- [00:33:42,380 - 00:33:43,880] about it in a different way.
+- [00:33:43,880 - 00:33:45,880] What you do is...
+- [00:33:45,880 - 00:33:52,880] What you do is you say the string behaves...
+- [00:33:52,880 - 00:33:54,880] If you only take into account,
+- [00:33:54,880 - 00:33:57,880] let's say, a dozen normal modes,
+- [00:33:57,880 - 00:34:01,880] then the string behaves as if it were a point
+- [00:34:01,880 - 00:34:04,880] on a closer circle.
+- [00:34:04,880 - 00:34:07,880] But now instead of a dozen normal modes,
+- [00:34:07,880 - 00:34:10,880] let's take two dozen normal modes.
+- [00:34:10,880 - 00:34:12,880] Then what it does is it starts to behave
+- [00:34:12,880 - 00:34:15,880] like a string
+- [00:34:15,880 - 00:34:18,880] on this inner surface here.
+- [00:34:21,880 - 00:34:22,880] This is not obvious.
+- [00:34:22,880 - 00:34:24,880] This is what is called renormalization group.
+- [00:34:24,880 - 00:34:27,880] Renormalization group is a way of following the system
+- [00:34:27,880 - 00:34:30,880] as you add more and more degrees of freedom.
+- [00:34:30,880 - 00:34:32,880] What you can follow it honestly
+- [00:34:32,880 - 00:34:35,880] is for a small change in n max.
+- [00:34:35,880 - 00:34:37,380] But once you follow it for
+- [00:34:37,380 - 00:34:38,880] a small change in n max
+- [00:34:38,880 - 00:34:40,880] and you find out that it's behaving
+- [00:34:40,880 - 00:34:42,880] as if it were a lump,
+- [00:34:42,880 - 00:34:44,880] let's say this big,
+- [00:34:45,880 - 00:34:47,880] now you add more structure,
+- [00:34:47,880 - 00:34:51,880] it begins to behave like a collection of lumps
+- [00:34:51,880 - 00:34:55,880] that also form a string.
+- [00:34:55,880 - 00:34:59,880] And you just do the whole process over again.
+- [00:34:59,880 - 00:35:02,880] You say with a dozen normal modes,
+- [00:35:02,880 - 00:35:04,380] it behaves as if it were
+- [00:35:04,380 - 00:35:05,880] a more or less a point
+- [00:35:05,880 - 00:35:07,880] on an inner region here.
+- [00:35:07,880 - 00:35:09,380] Now you add more of them
+- [00:35:09,380 - 00:35:10,880] and it begins to make itself
+- [00:35:10,880 - 00:35:13,880] into a string of these same lumps.
+- [00:35:13,880 - 00:35:16,880] That has the effect of pushing it in again.
+- [00:35:16,880 - 00:35:20,880] And eventually it just pushes it to zero.
+- [00:35:20,880 - 00:35:23,880] So there is no limit.
+- [00:35:23,880 - 00:35:25,880] There is no limit.
+- [00:35:25,880 - 00:35:28,880] The limit of a string moving on a curved surface,
+- [00:35:28,880 - 00:35:30,880] and this is due to the curvature.
+- [00:35:30,880 - 00:35:32,880] If it weren't due to the curvature,
+- [00:35:32,880 - 00:35:34,880] you wouldn't have this effect.
+- [00:35:34,880 - 00:35:37,880] It's due to the curvature of the sphere.
+- [00:35:37,880 - 00:35:40,880] This happens in any number of dimensions.
+- [00:35:40,880 - 00:35:41,880] And it's not just a number.
+- [00:35:41,880 - 00:35:44,880] It's a number of modes.
+- [00:35:44,880 - 00:35:49,880] That as you add more and more modes,
+- [00:35:49,880 - 00:35:57,880] the behavior does not tend to a finite limit.
+- [00:35:57,880 - 00:36:00,880] It just tends to behave eventually
+- [00:36:00,880 - 00:36:04,880] as the motion of a string on an extremely small
+- [00:36:04,880 - 00:36:06,880] infinitesimal sphere,
+- [00:36:06,880 - 00:36:10,880] which means in the denominator here a zero.
+- [00:36:10,880 - 00:36:13,880] And that's not a good theory.
+- [00:36:13,880 - 00:36:18,880] That's what happens.
+- [00:36:18,880 - 00:36:22,880] So the answer is strings on spheres are not good.
+- [00:36:22,880 - 00:36:25,880] Strings on spheres don't make sense.
+- [00:36:25,880 - 00:36:28,880] What is the condition for a surface,
+- [00:36:28,880 - 00:36:31,380] and a surface I'm using
+- [00:36:31,380 - 00:36:33,880] the term in a general sense.
+- [00:36:33,880 - 00:36:35,880] It doesn't have to be two dimensional.
+- [00:36:35,880 - 00:36:38,880] It could be three, four, ten, twenty-six dimensions,
+- [00:36:38,880 - 00:36:40,880] whatever the number of dimensions
+- [00:36:40,880 - 00:36:42,880] of space.
+- [00:36:42,880 - 00:36:44,380] What we mean by a surface
+- [00:36:44,380 - 00:36:45,880] is a geometry with a metric.
+- [00:36:45,880 - 00:36:47,880] A geometry with a metric.
+- [00:36:47,880 - 00:36:49,880] A Riemannian geometry.
+- [00:36:49,880 - 00:36:51,880] What are the rules?
+- [00:36:54,880 - 00:36:58,880] What you really want is a set of rules
+- [00:36:58,880 - 00:37:00,880] which approach a limit.
+- [00:37:00,880 - 00:37:03,880] If you're near that limit, then,
+- [00:37:03,880 - 00:37:05,880] in other words, by a limit, I mean the limit
+- [00:37:05,880 - 00:37:08,880] that as n max gets bigger and bigger.
+- [00:37:08,880 - 00:37:11,880] You don't want the answers to change
+- [00:37:11,880 - 00:37:14,880] as n max goes from 100
+- [00:37:14,880 - 00:37:17,880] billion to 100 billion plus one.
+- [00:37:17,880 - 00:37:21,880] Or for that matter, from 100 billion to 200 billion.
+- [00:37:21,880 - 00:37:24,880] You want the answer to stabilize.
+- [00:37:24,880 - 00:37:26,880] That's called a fixed point.
+- [00:37:26,880 - 00:37:29,880] You want the answer to stabilize and not to change.
+- [00:37:29,880 - 00:37:32,380] So what you would like
+- [00:37:32,380 - 00:37:34,880] is a situation with a geometry
+- [00:37:34,880 - 00:37:37,880] that when you do exactly the same thing,
+- [00:37:37,880 - 00:37:40,880] the geometry does not seem to change.
+- [00:37:40,880 - 00:37:43,880] In other words, we could define an effective geometry
+- [00:37:43,880 - 00:37:45,880] for a string.
+- [00:37:45,880 - 00:37:47,380] We take the geometry and
+- [00:37:47,380 - 00:37:48,880] now we sort of average over
+- [00:37:48,880 - 00:37:50,880] the properties of an extended object
+- [00:37:50,880 - 00:37:54,880] and that defines the motion on a different surface.
+- [00:37:54,880 - 00:37:57,880] Different surface being the effective surface
+- [00:37:57,880 - 00:37:59,880] that the spread out string moves on.
+- [00:37:59,880 - 00:38:03,880] As long as it keeps changing on us,
+- [00:38:03,880 - 00:38:05,380] as we increase n max,
+- [00:38:05,380 - 00:38:06,880] there will not be a limit.
+- [00:38:07,880 - 00:38:10,880] A limit would mean that at some point,
+- [00:38:10,880 - 00:38:14,880] as you add more and more structure to the string,
+- [00:38:14,880 - 00:38:16,880] the effective geometry stops changing
+- [00:38:16,880 - 00:38:18,880] and tends to some limit.
+- [00:38:18,880 - 00:38:21,880] That limit will be a good geometry
+- [00:38:21,880 - 00:38:24,880] for string theory to make sense on.
+- [00:38:24,880 - 00:38:27,880] Okay, so I'll tell you what one can do
+- [00:38:27,880 - 00:38:30,880] this calculation very precisely
+- [00:38:30,880 - 00:38:33,880] for an arbitrary geometry.
+- [00:38:33,880 - 00:38:35,880] And you can ask,
+- [00:38:35,880 - 00:38:37,880] when you add
+- [00:38:37,880 - 00:38:39,880] additional modes,
+- [00:38:39,880 - 00:38:41,380] let's say you add, you
+- [00:38:41,380 - 00:38:42,880] go up to some n max
+- [00:38:42,880 - 00:38:45,880] and you add one more mode,
+- [00:38:45,880 - 00:38:48,880] how does the effective geometry
+- [00:38:48,880 - 00:38:50,880] that the string moves on,
+- [00:38:50,880 - 00:38:52,880] how does it change?
+- [00:38:52,880 - 00:38:55,880] How do you describe a Riemannian geometry?
+- [00:38:55,880 - 00:38:57,880] What's the variables that you describe
+- [00:38:57,880 - 00:38:59,880] in Riemannian geometry?
+- [00:38:59,880 - 00:39:02,880] The metric, right?
+- [00:39:02,880 - 00:39:04,880] The metric tensor.
+- [00:39:04,880 - 00:39:06,880] That's the description of the geometry.
+- [00:39:06,880 - 00:39:08,880] g mu nu of x.
+- [00:39:08,880 - 00:39:11,880] This, don't think of it now as the gravitational field,
+- [00:39:11,880 - 00:39:13,880] although it is the gravitational field,
+- [00:39:13,880 - 00:39:14,880] it's the metric of space,
+- [00:39:14,880 - 00:39:16,880] g mu nu of x.
+- [00:39:16,880 - 00:39:20,880] We have a geometry,
+- [00:39:20,880 - 00:39:22,880] could be the sphere,
+- [00:39:22,880 - 00:39:23,880] could be anything else,
+- [00:39:23,880 - 00:39:25,880] could be a hyperboloid,
+- [00:39:25,880 - 00:39:28,880] it could be a thing with wiggles in it,
+- [00:39:28,880 - 00:39:32,880] it might be space-time geometry itself.
+- [00:39:32,880 - 00:39:34,880] Okay?
+- [00:39:34,880 - 00:39:36,880] A string moving on such a geometry,
+- [00:39:36,880 - 00:39:41,880] the effective geometry will change a little bit.
+- [00:39:41,880 - 00:39:42,880] Why?
+- [00:39:42,880 - 00:39:45,880] Because the string is spread out a little bit,
+- [00:39:45,880 - 00:39:47,880] the center of it will move in a way
+- [00:39:47,880 - 00:39:50,880] that responds to a slightly different geometry,
+- [00:39:50,880 - 00:39:52,880] and so we can ask what's the change
+- [00:39:52,880 - 00:39:54,880] in the effective geometry
+- [00:39:54,880 - 00:39:59,880] when you add one more mode.
+- [00:39:59,880 - 00:40:02,880] Okay, the answer is, first of all,
+- [00:40:02,880 - 00:40:04,880] that it depends on the curvature.
+- [00:40:04,880 - 00:40:06,880] If the sphere is moving,
+- [00:40:06,880 - 00:40:08,880] if the sphere weren't curved,
+- [00:40:08,880 - 00:40:10,880] this would not have happened.
+- [00:40:10,880 - 00:40:12,880] This has to do with the
+- [00:40:12,880 - 00:40:14,880] fact that the sphere was curved.
+- [00:40:14,880 - 00:40:17,880] So, whatever the change in the geometry is,
+- [00:40:17,880 - 00:40:21,880] if it were flat, it would not change.
+- [00:40:21,880 - 00:40:24,880] But if it's curved, it does change in general.
+- [00:40:24,880 - 00:40:28,880] So, there must be on the right-hand side
+- [00:40:28,880 - 00:40:33,880] something which involves the curvature tensor.
+- [00:40:33,880 - 00:40:36,880] The left-hand side is a tensor,
+- [00:40:36,880 - 00:40:39,880] with a mu and a nu,
+- [00:40:39,880 - 00:40:44,880] a second-rank tensor, symmetric.
+- [00:40:44,880 - 00:40:48,880] So, the right-hand side has to be a tensor.
+- [00:40:48,880 - 00:40:51,880] It's not g mu nu itself,
+- [00:40:51,880 - 00:40:53,880] it's some other tensor that
+- [00:40:53,880 - 00:40:55,880] has to do with the curvature.
+- [00:40:55,880 - 00:40:57,880] If it weren't curved, nothing would happen.
+- [00:40:57,880 - 00:40:59,880] So, it must be that on the right-hand side
+- [00:40:59,880 - 00:41:01,880] is something involving curvature.
+- [00:41:01,880 - 00:41:03,880] Curvature is called capital R,
+- [00:41:03,880 - 00:41:05,880] and the full curvature tensor
+- [00:41:05,880 - 00:41:08,880] has four indices.
+- [00:41:08,880 - 00:41:11,880] It's a thing with four indices.
+- [00:41:11,880 - 00:41:14,880] R, let's say, mu, nu...
+- [00:41:14,880 - 00:41:17,880] No, let's not call it mu and nu.
+- [00:41:17,880 - 00:41:19,880] For the moment, let's just call it
+- [00:41:19,880 - 00:41:22,880] alpha, beta, gamma, delta.
+- [00:41:22,880 - 00:41:24,880] You can put all four downstairs,
+- [00:41:24,880 - 00:41:26,880] upstairs, doesn't matter.
+- [00:41:26,880 - 00:41:29,880] It's often written with one index upstairs
+- [00:41:29,880 - 00:41:33,880] and some indices downstairs.
+- [00:41:33,880 - 00:41:35,880] Okay.
+- [00:41:35,880 - 00:41:37,880] This equation doesn't make sense.
+- [00:41:37,880 - 00:41:39,880] The indices don't match.
+- [00:41:39,880 - 00:41:40,880] But is there a thing that you can make
+- [00:41:40,880 - 00:41:42,880] out of the curvature tensor
+- [00:41:42,880 - 00:41:44,880] which also has only two indices
+- [00:41:44,880 - 00:41:45,880] and which is symmetric?
+- [00:41:45,880 - 00:41:47,880] Anybody know?
+- [00:41:47,880 - 00:41:48,880] The Ricci tensor.
+- [00:41:48,880 - 00:41:54,880] The Ricci tensor is simply
+- [00:41:54,880 - 00:41:58,880] the contraction alpha, alpha, mu, nu.
+- [00:41:58,880 - 00:42:01,880] That's called R mu nu,
+- [00:42:01,880 - 00:42:04,880] and it's the Ricci tensor.
+- [00:42:04,880 - 00:42:06,880] So when a careful calculation...
+- [00:42:06,880 - 00:42:08,880] Let me see, is it plus or minus?
+- [00:42:08,880 - 00:42:10,880] I think it's minus.
+- [00:42:10,880 - 00:42:11,880] Minus.
+- [00:42:11,880 - 00:42:16,880] Minus the Ricci tensor.
+- [00:42:16,880 - 00:42:18,880] It corresponds to the sphere
+- [00:42:18,880 - 00:42:22,880] getting smaller when you add more structure.
+- [00:42:22,880 - 00:42:25,880] That's why there's a minus there.
+- [00:42:25,880 - 00:42:28,880] This is the equation that governs
+- [00:42:28,880 - 00:42:31,880] how the effective geometry of the string changes
+- [00:42:31,880 - 00:42:34,880] as you add more and more
+- [00:42:34,880 - 00:42:41,880] fluctuation to the string.
+- [00:42:41,880 - 00:42:44,880] Mathematicians have a name for this equation.
+- [00:42:44,880 - 00:42:48,880] It's called Ricci flow.
+- [00:42:48,880 - 00:42:52,880] Ricci flow is a tremendously important part of mathematics.
+- [00:42:52,880 - 00:42:56,880] And it's an equation that
+- [00:42:56,880 - 00:43:00,880] if you start with a geometry
+- [00:43:00,880 - 00:43:03,880] and then you change it in accord with this equation,
+- [00:43:03,880 - 00:43:06,880] what happens is it starts to deform,
+- [00:43:06,880 - 00:43:07,880] and it flows.
+- [00:43:07,880 - 00:43:09,880] The geometry flows.
+- [00:43:09,880 - 00:43:11,880] It's called Ricci flow.
+- [00:43:11,880 - 00:43:14,880] It has very important applications in mathematics.
+- [00:43:14,880 - 00:43:17,880] I don't know whether it was discovered by string theorists
+- [00:43:17,880 - 00:43:19,880] or first discovered by mathematicians.
+- [00:43:19,880 - 00:43:20,880] I'm not sure.
+- [00:43:20,880 - 00:43:22,880] But that's what this is.
+- [00:43:22,880 - 00:43:25,880] It's a fuzzing out of the geometry
+- [00:43:25,880 - 00:43:28,880] because the points have gotten fuzzed out.
+- [00:43:28,880 - 00:43:30,880] It's a kind of diffusion of the geometry
+- [00:43:30,880 - 00:43:31,880] which is fuzzing it out.
+- [00:43:31,880 - 00:43:33,880] The points have gotten fuzzed out,
+- [00:43:33,880 - 00:43:35,880] but by the fluctuations of the strings,
+- [00:43:35,880 - 00:43:38,880] and the effective geometry behaves this way.
+- [00:43:38,880 - 00:43:42,880] Is there a function of n max there somehow?
+- [00:43:42,880 - 00:43:47,880] No, this is the change when you add,
+- [00:43:47,880 - 00:43:48,880] it's the logarithmic change.
+- [00:43:48,880 - 00:43:50,880] It's the change when you
+- [00:43:50,880 - 00:43:52,880] change the cutoff by a factor.
+- [00:43:52,880 - 00:43:53,880] Yeah.
+- [00:43:53,880 - 00:43:54,880] Yeah.
+- [00:43:54,880 - 00:43:57,880] Yeah.
+- [00:43:57,880 - 00:44:01,880] Change in the logarithm of the cutoff to be exact.
+- [00:44:01,880 - 00:44:02,880] But it doesn't matter.
+- [00:44:02,880 - 00:44:04,880] It's the change as you change the cutoff.
+- [00:44:04,880 - 00:44:06,880] Now, what we're looking for, though,
+- [00:44:06,880 - 00:44:09,880] is geometries which don't change
+- [00:44:09,880 - 00:44:10,880] when you change the cutoff.
+- [00:44:10,880 - 00:44:11,880] We want something stable.
+- [00:44:11,880 - 00:44:13,880] We want to say we're talking about string theory
+- [00:44:13,880 - 00:44:16,880] on this or that space.
+- [00:44:16,880 - 00:44:19,880] We don't want the description of it
+- [00:44:19,880 - 00:44:22,880] to keep wandering away
+- [00:44:22,880 - 00:44:24,880] as we add more of these modes.
+- [00:44:24,880 - 00:44:26,880] So what we really want
+- [00:44:26,880 - 00:44:28,880] are geometries
+- [00:44:28,880 - 00:44:31,880] which are stable and don't change
+- [00:44:31,880 - 00:44:32,880] when we change the,
+- [00:44:32,880 - 00:44:33,880] when we change things,
+- [00:44:33,880 - 00:44:34,880] when we change the cutoff.
+- [00:44:34,880 - 00:44:36,880] What does that mean?
+- [00:44:36,880 - 00:44:42,880] That means geometries
+- [00:44:42,880 - 00:44:45,880] where the Ricci tensor is zero.
+- [00:44:45,880 - 00:44:48,880] If the Ricci tensor is zero,
+- [00:44:48,880 - 00:44:49,880] that's like saying it's,
+- [00:44:49,880 - 00:44:51,880] well, it's not like saying it's flat.
+- [00:44:51,880 - 00:44:54,880] Flat space is,
+- [00:44:54,880 - 00:44:56,880] does have Ricci tensor zero, of course.
+- [00:44:56,880 - 00:44:58,380] It has all of its
+- [00:44:58,380 - 00:44:59,880] components of curvature equal to zero.
+- [00:44:59,880 - 00:45:01,880] So flat space is,
+- [00:45:01,880 - 00:45:03,880] is an example of this.
+- [00:45:03,880 - 00:45:04,880] Question is,
+- [00:45:04,880 - 00:45:07,880] are there other examples of spaces,
+- [00:45:07,880 - 00:45:10,880] this is called Ricci flat.
+- [00:45:10,880 - 00:45:13,880] If a space has vanishing Ricci tensor,
+- [00:45:13,880 - 00:45:15,880] it's called Ricci flat.
+- [00:45:15,880 - 00:45:18,880] Ricci flatness is essentially the condition
+- [00:45:18,880 - 00:45:22,880] that strings can propagate sensibly
+- [00:45:22,880 - 00:45:25,880] on that geometry.
+- [00:45:25,880 - 00:45:26,880] Okay.
+- [00:45:26,880 - 00:45:27,880] Have good limits
+- [00:45:27,880 - 00:45:30,880] as the number of modes goes to infinity.
+- [00:45:30,880 - 00:45:31,880] All right, so there's,
+- [00:45:31,880 - 00:45:34,880] there's a condition on the geometry.
+- [00:45:34,880 - 00:45:37,880] It's called Ricci flatness.
+- [00:45:37,880 - 00:45:40,880] It could be the space-time geometry
+- [00:45:40,880 - 00:45:42,880] that the string is moving in.
+- [00:45:42,880 - 00:45:44,880] In fact,
+- [00:45:44,880 - 00:45:46,880] that's the way you think about it for the moment.
+- [00:45:46,880 - 00:45:47,880] The space-time geometry
+- [00:45:47,880 - 00:45:50,880] has space directions, time directions.
+- [00:45:50,880 - 00:45:53,880] But anybody know what that equation,
+- [00:45:53,880 - 00:45:57,880] that equation has another meaning?
+- [00:45:57,880 - 00:45:58,880] Relativity?
+- [00:45:58,880 - 00:45:59,880] Yeah.
+- [00:45:59,880 - 00:46:02,880] It's essentially the Einstein field equation
+- [00:46:02,880 - 00:46:04,880] for the gravitational field.
+- [00:46:04,880 - 00:46:07,880] The Einstein field equation for the geometry,
+- [00:46:07,880 - 00:46:11,880] it's the vacuum Einstein field equations.
+- [00:46:11,880 - 00:46:15,880] Einstein in vacuum.
+- [00:46:15,880 - 00:46:21,880] No matter, just gravity and curvature.
+- [00:46:21,880 - 00:46:23,880] I'll write out the Einstein equations for you
+- [00:46:23,880 - 00:46:26,880] and then I'll show you that it's the same as,
+- [00:46:26,880 - 00:46:28,880] as this equation.
+- [00:46:28,880 - 00:46:33,880] Anybody remember the Einstein field equations?
+- [00:46:33,880 - 00:46:34,880] Something equals,
+- [00:46:34,880 - 00:46:36,880] r equals t.
+- [00:46:36,880 - 00:46:38,880] Something like that.
+- [00:46:38,880 - 00:46:40,880] Something like that.
+- [00:46:40,880 - 00:46:43,880] It's a tensor called capital G mu nu.
+- [00:46:43,880 - 00:46:45,880] It's called the Einstein tensor
+- [00:46:45,880 - 00:46:46,880] and the reason it's called capital G is
+- [00:46:46,880 - 00:46:48,880] because it's got something to do with gravity.
+- [00:46:48,880 - 00:46:52,880] But it's also equal to r mu nu
+- [00:46:52,880 - 00:46:57,880] minus one half G mu nu r.
+- [00:46:58,880 - 00:46:59,880] Okay.
+- [00:46:59,880 - 00:47:01,880] Where r, what is r?
+- [00:47:01,880 - 00:47:06,880] r is r alpha alpha.
+- [00:47:06,880 - 00:47:08,880] Or, yeah, r alpha alpha.
+- [00:47:08,880 - 00:47:11,880] And that's equal to t mu nu,
+- [00:47:11,880 - 00:47:15,880] where t mu nu is the energy momentum tensor.
+- [00:47:15,880 - 00:47:17,880] Energy momentum tensor means
+- [00:47:17,880 - 00:47:19,880] the energy momentum of cookies,
+- [00:47:19,880 - 00:47:21,880] the energy momentum of a cup of coffee,
+- [00:47:21,880 - 00:47:25,880] but not the energy momentum of the gravitational field.
+- [00:47:25,880 - 00:47:28,880] Everything is in here other than gravity.
+- [00:47:28,880 - 00:47:29,880] Okay.
+- [00:47:29,880 - 00:47:32,880] The vacuum Einstein field equations mean
+- [00:47:32,880 - 00:47:35,880] the field equations for the gravitational field
+- [00:47:35,880 - 00:47:38,880] when there's nothing on the right hand side.
+- [00:47:38,880 - 00:47:40,880] Zero.
+- [00:47:40,880 - 00:47:45,880] That's called Einstein vacuum equations.
+- [00:47:45,880 - 00:47:48,880] Are there any interesting solutions to this equation?
+- [00:47:48,880 - 00:47:50,880] What are the solutions of this?
+- [00:47:50,880 - 00:47:52,880] Schwarzschild is one,
+- [00:47:52,880 - 00:47:54,880] but Schwarzschild has a nasty singularity in it,
+- [00:47:54,880 - 00:47:57,880] so it's, it's, it's, uh,
+- [00:47:59,880 - 00:48:00,880] No.
+- [00:48:00,880 - 00:48:03,880] Um, well Robinson Walker also has singularities,
+- [00:48:03,880 - 00:48:05,880] but, uh,
+- [00:48:05,880 - 00:48:07,880] Hmm?
+- [00:48:07,880 - 00:48:09,880] No, the, the, the, the, the,
+- [00:48:09,880 - 00:48:11,880] the city of space requires a cosmological,
+- [00:48:11,880 - 00:48:13,880] no, just gravitational waves.
+- [00:48:13,880 - 00:48:15,880] Just gravitational waves.
+- [00:48:15,880 - 00:48:17,880] Just, that's it, gravitational waves.
+- [00:48:17,880 - 00:48:21,880] It's, uh, similar to Maxwell's equations without sources.
+- [00:48:21,880 - 00:48:24,880] Maxwell's equations without charges.
+- [00:48:24,880 - 00:48:26,880] Do they have any solutions?
+- [00:48:26,880 - 00:48:27,880] Yeah.
+- [00:48:27,880 - 00:48:30,600] or just electromagnetic radiation
+- [00:48:30,600 - 00:48:33,170] gravitational radiation also exists the solutions
+- [00:48:33,170 - 00:48:35,740] of this kind of equation here
+- [00:48:35,740 - 00:48:38,100] in four-dimensional space-time
+- [00:48:38,100 - 00:48:40,460] in four-dimensional space-time
+- [00:48:40,460 - 00:48:43,720] in other words one time direction three space directions
+- [00:48:43,720 - 00:48:46,320] the solutions of this include
+- [00:48:46,320 - 00:48:49,220] all kinds of things like gravitational waves
+- [00:48:49,220 - 00:48:51,980] interacting gravitational waves
+- [00:48:51,980 - 00:48:55,960] gravitational waves can do complicated things
+- [00:48:55,960 - 00:49:00,300] in Einstein gravity but there's a whole family
+- [00:49:00,300 - 00:49:04,260] an infinite parameter family of complicated solutions
+- [00:49:04,260 - 00:49:07,360] of these equations
+- [00:49:07,360 - 00:49:08,280] now
+- [00:49:08,280 - 00:49:10,580] we're interested in Ricci flat
+- [00:49:10,580 - 00:49:13,800] this doesn't say R mu nu equals zero
+- [00:49:13,800 - 00:49:18,160] but let's take
+- [00:49:18,160 - 00:49:20,290] when I put one index upstairs and
+- [00:49:20,290 - 00:49:22,420] one index downstairs that's called the trace
+- [00:49:22,420 - 00:49:25,400] when I sum over alpha and alpha
+- [00:49:25,400 - 00:49:25,900] alright
+- [00:49:25,900 - 00:49:29,480] let's raise one index
+- [00:49:29,480 - 00:49:33,180] let's write it R mu nu
+- [00:49:33,180 - 00:49:38,140] minus one half g mu nu
+- [00:49:38,140 - 00:49:42,040] R alpha alpha equals zero
+- [00:49:42,040 - 00:49:48,300] what's g what is this thing here
+- [00:49:48,300 - 00:49:53,440] one mu g with one mu downstairs and one upstairs
+- [00:49:53,440 - 00:49:55,340] that's a Kronecker delta
+- [00:49:55,900 - 00:49:59,400] right so that's just a
+- [00:49:59,400 - 00:50:02,900] Kronecker delta
+- [00:50:02,900 - 00:50:07,900] delta mu nu
+- [00:50:07,900 - 00:50:09,900] delta mu nu
+- [00:50:09,900 - 00:50:14,900] and now set mu equal to nu and sum
+- [00:50:14,900 - 00:50:16,900] call them both alpha
+- [00:50:16,900 - 00:50:19,900] R alpha alpha
+- [00:50:19,900 - 00:50:22,900] equals one half
+- [00:50:22,900 - 00:50:25,740] minus sorry is equal to one half
+- [00:50:25,740 - 00:50:28,240] what happens to this when you set mu
+- [00:50:28,240 - 00:50:30,740] and nu both equal to alpha and sum
+- [00:50:30,740 - 00:50:33,740] I think you get four right
+- [00:50:33,740 - 00:50:35,740] four for the four directions of space
+- [00:50:35,740 - 00:50:38,240] so this becomes either plus or minus a
+- [00:50:38,240 - 00:50:40,740] half and it becomes two R alpha alpha
+- [00:50:40,740 - 00:50:48,740] it doesn't it does not say let's see
+- [00:50:48,740 - 00:50:52,740] two altogether
+- [00:50:52,740 - 00:50:54,740] it's either plus two or minus two I can't remember
+- [00:50:54,740 - 00:50:55,740] it's either plus two or minus two I can't remember
+- [00:50:55,740 - 00:50:58,740] but it's quite inconsistent unless R is zero
+- [00:50:58,740 - 00:50:59,740] right
+- [00:50:59,740 - 00:51:04,740] this equation implies that
+- [00:51:04,740 - 00:51:08,740] this is called the Ricci scalar or the curvature scalar
+- [00:51:08,740 - 00:51:11,740] the curvature scalar must vanish
+- [00:51:11,740 - 00:51:14,740] if Einstein's field equations are correct
+- [00:51:14,740 - 00:51:15,740] if they're satisfied
+- [00:51:15,740 - 00:51:17,740] so this is not there
+- [00:51:17,740 - 00:51:21,240] and the Einstein field equations in empty
+- [00:51:21,240 - 00:51:24,740] space is just R mu nu equals zero
+- [00:51:24,740 - 00:51:26,740] what have we learned
+- [00:51:26,740 - 00:51:30,740] we've learned that the only acceptable geometries
+- [00:51:30,740 - 00:51:33,740] in which strings make stable sense
+- [00:51:33,740 - 00:51:35,740] and in which the geometry doesn't
+- [00:51:35,740 - 00:51:37,740] change and change and change and change
+- [00:51:37,740 - 00:51:39,740] as you add more degrees of freedom
+- [00:51:39,740 - 00:51:43,740] are the solutions of Einstein's field equations
+- [00:51:43,740 - 00:51:45,740] you can quantize strings
+- [00:51:45,740 - 00:51:47,740] in background geometries
+- [00:51:47,740 - 00:51:50,740] which satisfy Einstein's equations
+- [00:51:50,740 - 00:51:52,740] and you cannot formulate them
+- [00:51:52,740 - 00:51:54,740] correctly in spaces which don't
+- [00:51:54,740 - 00:51:56,740] satisfy Einstein's equations
+- [00:51:56,740 - 00:51:58,740] that's pretty impressive
+- [00:51:58,740 - 00:52:02,740] that out of the consistency condition
+- [00:52:02,740 - 00:52:07,740] for strings to have a well defined geometry
+- [00:52:07,740 - 00:52:09,240] in the limit that the number
+- [00:52:09,240 - 00:52:10,740] of degrees of freedom becomes infinite
+- [00:52:10,740 - 00:52:15,740] you derive Einstein's field equations for geometry
+- [00:52:15,740 - 00:52:18,740] that's an extremely impressive fact
+- [00:52:18,740 - 00:52:20,740] question
+- [00:52:20,740 - 00:52:21,740] yes
+- [00:52:21,740 - 00:52:23,740] can there be a connection between
+- [00:52:23,740 - 00:52:29,700] the
+- [00:52:46,259 - 00:52:49,740] it is very closely connected to conformal invariance
+- [00:52:49,740 - 00:52:50,740] but not conformal invariance in spacetime
+- [00:52:50,740 - 00:52:51,740] conformal invariance of the worldsheet
+- [00:52:51,740 - 00:52:52,740] is very closely connected with that
+- [00:52:52,740 - 00:52:56,979] non-formal invariants, but they are connected, yes.
+- [00:52:59,859 - 00:53:01,019] But I've showed you the
+- [00:53:01,019 - 00:53:02,180] simplest way to think about it.
+- [00:53:03,299 - 00:53:05,299] That
+- [00:53:05,339 - 00:53:08,889] in general, because the string spreads out, the effective geometry that
+- [00:53:08,889 - 00:53:12,439] it sees is different than the geometry you started with and
+- [00:53:14,459 - 00:53:17,319] in general doesn't approach a limit. If it
+- [00:53:17,319 - 00:53:20,180] does approach a limit, it's because at the limit
+- [00:53:20,180 - 00:53:22,879] the Ricci tensor is zero.
+- [00:53:23,859 - 00:53:26,500] So Ricci tensor being zero are special.
+- [00:53:28,580 - 00:53:30,580] Okay, now we want to come to a subject.
+- [00:53:32,220 - 00:53:34,220] Oh, incidentally, I've
+- [00:53:35,759 - 00:53:37,749] cheated a little. I haven't cheated.
+- [00:53:37,749 - 00:53:39,740] I haven't told you the whole story.
+- [00:53:40,500 - 00:53:43,270] The whole story is that it really doesn't work,
+- [00:53:43,270 - 00:53:46,040] except if you're in the right number of dimensions.
+- [00:53:47,560 - 00:53:50,160] The subtleties of this kind of thing and
+- [00:53:50,180 - 00:53:52,960] are quite subtle and it really
+- [00:53:52,960 - 00:53:55,740] only works that the answers become
+- [00:53:56,060 - 00:53:59,320] independent of N-max if the geometry is Ricci
+- [00:53:59,320 - 00:54:02,580] flat and in the right number of dimensions.
+- [00:54:03,460 - 00:54:05,460] 10 for superstring theory,
+- [00:54:06,259 - 00:54:08,259] 26 for
+- [00:54:11,419 - 00:54:15,149] So that's the basic principle. The answers should
+- [00:54:15,149 - 00:54:18,879] have finite limits as N-max goes to infinity,
+- [00:54:20,180 - 00:54:23,019] and that is enough to tell you that the geometries
+- [00:54:23,019 - 00:54:25,859] that you move in must be solutions of Einstein field equation.
+- [00:54:25,859 - 00:54:27,859] They must be gravitational waves and other things.
+- [00:54:29,060 - 00:54:31,060] Now we want to come
+- [00:54:32,000 - 00:54:35,060] to the problem of what do we do
+- [00:54:35,060 - 00:54:38,120] with 10 or 26 dimensions? How do we
+- [00:54:39,200 - 00:54:41,200] make sense out of them?
+- [00:54:41,940 - 00:54:45,359] And the answer is called compactification.
+- [00:54:47,460 - 00:54:49,960] Compactification is simply the process of
+- [00:54:50,180 - 00:54:53,379] taking however many dimensions we want to get rid of,
+- [00:54:53,940 - 00:54:55,099] by getting rid of them, we
+- [00:54:55,099 - 00:54:56,259] don't really get rid of them,
+- [00:54:56,899 - 00:54:59,460] but we make them small enough that they become invisible,
+- [00:55:00,339 - 00:55:02,339] except the very very small things.
+- [00:55:02,640 - 00:55:04,640] We want to roll them up into little
+- [00:55:07,419 - 00:55:13,899] manifolds that our coarse-grained apparatuses don't see.
+- [00:55:15,940 - 00:55:18,060] They may affect and they will affect,
+- [00:55:18,060 - 00:55:20,180] they'll have, you know, real serious effect on
+- [00:55:20,339 - 00:55:22,939] the structure of particles and so forth, the structure of
+- [00:55:22,939 - 00:55:25,540] elementary particles, type of elementary particles that you can have,
+- [00:55:26,220 - 00:55:28,759] but they won't be visible as directions
+- [00:55:28,759 - 00:55:31,299] that that you can move around in.
+- [00:55:32,620 - 00:55:35,140] All right, so let's talk about compactification.
+- [00:55:36,899 - 00:55:40,759] We have, let's take the case of superstring theory where
+- [00:55:40,759 - 00:55:44,620] there are 10 dimensions of space-time, which is six too many.
+- [00:55:45,799 - 00:55:48,180] And one good thing is
+- [00:55:48,180 - 00:55:51,789] that the 10 dimensions of space-time have
+- [00:55:51,789 - 00:55:55,399] only one time and six space and
+- [00:55:56,220 - 00:55:58,220] nine space dimensions.
+- [00:55:58,339 - 00:56:00,319] We wouldn't have, we would not know
+- [00:56:00,319 - 00:56:02,299] what to do with two time dimensions.
+- [00:56:05,359 - 00:56:08,399] Physics with some extra space dimensions, that's no problem, things just get to
+- [00:56:08,399 - 00:56:11,440] move and more, but what would mean to have more than one time?
+- [00:56:12,220 - 00:56:14,220] Beats me and
+- [00:56:15,560 - 00:56:17,560] probably doesn't mean anything.
+- [00:56:18,180 - 00:56:19,799] So,
+- [00:56:19,799 - 00:56:21,969] Superspring theory is a theory with
+- [00:56:21,969 - 00:56:24,140] nine spatial dimensions and one time dimension.
+- [00:56:24,140 - 00:56:27,440] It kind of ties into what Jeff's question earlier
+- [00:56:27,440 - 00:56:30,740] was about degrees of freedom versus dimension of space.
+- [00:56:32,220 - 00:56:34,220] In essence what I was trying to say,
+- [00:56:34,819 - 00:56:38,629] never mind whether, you know, there's 12 or only six, the idea is
+- [00:56:38,629 - 00:56:42,440] that the more moving parts you have the more degrees of freedom you have.
+- [00:56:43,339 - 00:56:45,940] Okay, which is not the case for
+- [00:56:46,500 - 00:56:48,180] dimensionality of your core.
+- [00:56:48,180 - 00:56:50,499] You have more coordinates and that's because you're
+- [00:56:50,499 - 00:56:52,819] looking at commonalities of those degrees of freedom
+- [00:56:53,580 - 00:56:55,700] in dimensioning your space.
+- [00:56:56,399 - 00:56:57,829] The more dimensions you have the
+- [00:56:57,829 - 00:56:59,259] more ways the thing can move.
+- [00:56:59,879 - 00:57:02,809] So there, it turns out in
+- [00:57:02,809 - 00:57:05,740] electronics design you can have multiple clocks.
+- [00:57:06,520 - 00:57:08,520] So there are sort of multiple
+- [00:57:09,299 - 00:57:10,700] times
+- [00:57:10,700 - 00:57:13,759] within the design and essentially
+- [00:57:13,759 - 00:57:16,819] what singles out a particular
+- [00:57:18,180 - 00:57:22,360] signal as a clock signal is that it synchronizes a
+- [00:57:22,360 - 00:57:26,540] lot of other signals or ties things together connects to
+- [00:57:27,540 - 00:57:29,620] Which means it really was only one time
+- [00:57:30,540 - 00:57:32,540] and a lot of clocks.
+- [00:57:34,000 - 00:57:35,220] A lot of clocks is not
+- [00:57:35,220 - 00:57:36,440] the same as a lot of times.
+- [00:57:37,440 - 00:57:39,440] What physics would be like if you were new...
+- [00:57:39,440 - 00:57:42,119] Well the question is if you have regions in which
+- [00:57:42,119 - 00:57:44,799] they are effectively independent of one another then they would be...
+- [00:57:46,140 - 00:57:46,740] So the thing is...
+- [00:57:46,740 - 00:57:47,680] Okay, you make a theory with two times.
+- [00:57:47,680 - 00:57:49,600] I don't know how.
+- [00:57:50,339 - 00:57:52,129] When we say two times we mean at
+- [00:57:52,129 - 00:57:53,919] every point of space there are two times.
+- [00:57:54,080 - 00:57:56,020] Not a region way out there where there's one
+- [00:57:56,020 - 00:57:57,960] time and a region out there where there's another time.
+- [00:57:58,339 - 00:58:00,339] I mean every point of space...
+- [00:58:00,339 - 00:58:03,409] Well, I mean, I think the amazing thing about
+- [00:58:03,409 - 00:58:06,480] our universe is that is that the geometry space-time geometry
+- [00:58:06,960 - 00:58:08,879] everywhere seems to be the same.
+- [00:58:08,879 - 00:58:10,879] Yes, and it has only one time.
+- [00:58:10,879 - 00:58:12,960] It also only has the same...
+- [00:58:12,960 - 00:58:14,960] same, you know, whatever...
+- [00:58:14,960 - 00:58:16,960] Let him give the lecture, okay?
+- [00:58:17,680 - 00:58:19,680] It's alright.
+- [00:58:19,680 - 00:58:21,680] I think that there are people that
+- [00:58:21,680 - 00:58:23,680] don't think it's nonsense and that's why.
+- [00:58:23,680 - 00:58:25,680] Yeah, there are.
+- [00:58:27,680 - 00:58:29,680] There are.
+- [00:58:29,680 - 00:58:31,680] People who don't think it's nonsense.
+- [00:58:31,680 - 00:58:33,680] However, it has never...
+- [00:58:33,680 - 00:58:37,680] It has never become any part of mainstream thinking.
+- [00:58:37,680 - 00:58:39,680] And...
+- [00:58:39,680 - 00:58:41,680] More than one time...
+- [00:58:41,680 - 00:58:43,680] More than one time direction.
+- [00:58:43,680 - 00:58:45,680] Not more than one clock. Okay, let's go on.
+- [00:58:47,680 - 00:58:49,680] Yeah.
+- [00:58:49,680 - 00:58:51,680] So we have these six extra dimensions of space.
+- [00:58:51,680 - 00:58:53,680] How do we get rid of them?
+- [00:58:53,680 - 00:58:55,680] And of course, you know the answer.
+- [00:58:55,680 - 00:58:57,680] You roll them up.
+- [00:58:57,680 - 00:58:59,680] The simplest model
+- [00:58:59,680 - 00:59:01,680] would be a world in which
+- [00:59:01,680 - 00:59:03,680] on the large scale
+- [00:59:03,680 - 00:59:05,680] there was one dimension of space.
+- [00:59:05,680 - 00:59:07,680] Time is there.
+- [00:59:07,680 - 00:59:09,680] But let's just freeze time.
+- [00:59:09,680 - 00:59:11,680] One dimension of space.
+- [00:59:11,680 - 00:59:13,680] That's a long line.
+- [00:59:13,680 - 00:59:15,680] We can imagine particles on this line.
+- [00:59:15,680 - 00:59:17,680] We can imagine particles on this line.
+- [00:59:17,680 - 00:59:19,680] Particles move up and down the line.
+- [00:59:19,680 - 00:59:21,680] Particles move up and down the line.
+- [00:59:21,680 - 00:59:23,680] Maybe they bind together.
+- [00:59:23,680 - 00:59:25,680] Maybe they form molecules.
+- [00:59:25,680 - 00:59:27,680] Maybe they do interesting things.
+- [00:59:27,680 - 00:59:29,680] Who knows?
+- [00:59:29,680 - 00:59:31,680] Maybe even they can form life.
+- [00:59:31,680 - 00:59:33,680] They can signal each other by
+- [00:59:33,680 - 00:59:35,680] launching a particle
+- [00:59:35,680 - 00:59:37,680] from one group to another group.
+- [00:59:37,680 - 00:59:39,680] And you can have some possibly interesting physics.
+- [00:59:39,680 - 00:59:41,680] These people who live
+- [00:59:41,680 - 00:59:43,680] on this line, who are made up
+- [00:59:43,680 - 00:59:45,680] out of these point particles
+- [00:59:45,680 - 00:59:46,680] Well, I always like to
+- [00:59:46,680 - 00:59:47,680] say they have a rather boring
+- [00:59:47,680 - 00:59:49,680] life.
+- [00:59:49,680 - 00:59:51,680] Each one has a friend to the left
+- [00:59:51,680 - 00:59:53,680] and maybe a friend to the right.
+- [00:59:53,680 - 00:59:55,680] But my joke is that
+- [00:59:55,680 - 00:59:57,680] they don't have a social circle.
+- [00:59:57,680 - 00:59:59,680] Because you can't have a circle in one dimension.
+- [00:59:59,680 - 01:00:01,680] Ha ha ha.
+- [01:00:03,680 - 01:00:05,680] Very boring life.
+- [01:00:05,680 - 01:00:07,680] And also they can't
+- [01:00:07,680 - 01:00:09,680] pass through each other.
+- [01:00:09,680 - 01:00:11,680] They bang into each other.
+- [01:00:11,680 - 01:00:13,680] Very boring.
+- [01:00:13,680 - 01:00:15,680] But then they look through a high power microscope
+- [01:00:15,680 - 01:00:17,680] and they discover their line
+- [01:00:17,680 - 01:00:19,680] which is really
+- [01:00:19,680 - 01:00:21,680] the surface of a cylinder.
+- [01:00:23,680 - 01:00:25,680] Now they are too big to feel the cylinder.
+- [01:00:27,680 - 01:00:29,680] They are great big things which move up and down.
+- [01:00:29,680 - 01:00:31,680] But
+- [01:00:31,680 - 01:00:33,680] that doesn't mean that there aren't smaller things.
+- [01:00:33,680 - 01:00:35,680] And the smaller things
+- [01:00:35,680 - 01:00:37,680] now can move
+- [01:00:37,680 - 01:00:39,680] both along the line
+- [01:00:39,680 - 01:00:41,680] and perpendicular to the line.
+- [01:00:43,680 - 01:00:45,680] So there are new degrees of freedom.
+- [01:00:45,680 - 01:00:47,680] There are new distinctions between
+- [01:00:47,680 - 01:00:49,680] particles.
+- [01:00:49,680 - 01:00:51,680] Particles can move this way, they can move this way,
+- [01:00:51,680 - 01:00:53,680] they can even move this way.
+- [01:00:53,680 - 01:00:55,680] And there's a whole new game.
+- [01:00:55,680 - 01:00:57,680] This is the most
+- [01:00:57,680 - 01:00:59,680] elementary and simple example
+- [01:00:59,680 - 01:01:01,680] of compactification.
+- [01:01:01,680 - 01:01:03,680] Another way you could think about it
+- [01:01:03,680 - 01:01:05,680] is
+- [01:01:07,680 - 01:01:09,680] let's try to think about
+- [01:01:09,680 - 01:01:11,680] higher dimensions.
+- [01:01:11,680 - 01:01:13,680] Let's suppose ordinary space
+- [01:01:13,680 - 01:01:15,680] was two dimensional
+- [01:01:15,680 - 01:01:17,680] but
+- [01:01:17,680 - 01:01:19,680] when the creatures who lived in this ordinary space
+- [01:01:19,680 - 01:01:21,680] magnified it
+- [01:01:21,680 - 01:01:23,680] they discovered a tiny third dimension.
+- [01:01:23,680 - 01:01:25,680] What might that look like?
+- [01:01:25,680 - 01:01:27,680] Okay, and
+- [01:01:27,680 - 01:01:29,680] a third dimension in the same sense
+- [01:01:29,680 - 01:01:31,680] that the circle here
+- [01:01:31,680 - 01:01:33,680] provided a third dimension.
+- [01:01:33,680 - 01:01:35,680] So here's what it might look like.
+- [01:01:37,680 - 01:01:39,680] There's the world
+- [01:01:39,680 - 01:01:41,680] that they think they live on.
+- [01:01:41,680 - 01:01:43,680] But now they look under
+- [01:01:43,680 - 01:01:45,680] a microscope and they discover
+- [01:01:45,680 - 01:01:47,680] that there's a direction perpendicular
+- [01:01:53,680 - 01:01:55,680] so there's some thickness there.
+- [01:01:55,680 - 01:01:57,680] There's some thickness there.
+- [01:01:57,680 - 01:01:59,680] We'll call the top thing the ceiling
+- [01:02:01,680 - 01:02:03,680] and the bottom thing the floor.
+- [01:02:05,680 - 01:02:07,680] And there's some
+- [01:02:07,680 - 01:02:09,680] bulk stuff, namely space,
+- [01:02:09,680 - 01:02:11,680] in between.
+- [01:02:11,680 - 01:02:13,680] Okay, now we're going to do something else.
+- [01:02:13,680 - 01:02:15,680] Having edges like this
+- [01:02:15,680 - 01:02:17,680] makes trouble for strings.
+- [01:02:17,680 - 01:02:19,680] The strings start to fluctuate
+- [01:02:19,680 - 01:02:21,680] and eventually they fluctuate out
+- [01:02:21,680 - 01:02:23,680] and get bigger than the
+- [01:02:23,680 - 01:02:25,680] distance between the floor
+- [01:02:25,680 - 01:02:27,680] and the ceiling.
+- [01:02:27,680 - 01:02:29,680] But we're going to do something
+- [01:02:29,680 - 01:02:31,680] the same thing we do when we
+- [01:02:31,680 - 01:02:33,680] well, what we're going to do is
+- [01:02:33,680 - 01:02:35,680] identify the floor
+- [01:02:35,680 - 01:02:37,680] with the ceiling.
+- [01:02:37,680 - 01:02:39,680] We could have done this
+- [01:02:39,680 - 01:02:41,680] let's go back to the cylinder.
+- [01:02:41,680 - 01:02:43,680] The cylinder is really a ribbon
+- [01:02:43,680 - 01:02:45,680] in which you identify
+- [01:02:45,680 - 01:02:47,680] the floor with the ceiling.
+- [01:02:47,680 - 01:02:49,680] You say that if you go out here
+- [01:02:49,680 - 01:02:51,680] you come back here.
+- [01:02:51,680 - 01:02:53,680] In other words,
+- [01:02:57,680 - 01:02:59,680] here's the ribbon
+- [01:02:59,680 - 01:03:01,680] and
+- [01:03:01,680 - 01:03:03,680] the cylinder is obtained from the ribbon
+- [01:03:03,680 - 01:03:05,680] by identifying
+- [01:03:05,680 - 01:03:07,680] one edge with the other edge.
+- [01:03:09,680 - 01:03:11,680] When you go out here, you come back in here.
+- [01:03:11,680 - 01:03:13,680] Same thing here.
+- [01:03:13,680 - 01:03:15,680] The floor and the ceiling are identified
+- [01:03:15,680 - 01:03:17,680] so that when you go
+- [01:03:17,680 - 01:03:19,680] out the ceiling here
+- [01:03:19,680 - 01:03:21,680] you reappear on the floor.
+- [01:03:21,680 - 01:03:23,680] Now this direction
+- [01:03:23,680 - 01:03:25,680] there is no edge.
+- [01:03:25,680 - 01:03:27,680] There's no edge anymore
+- [01:03:27,680 - 01:03:29,680] and this perpendicular direction here
+- [01:03:29,680 - 01:03:31,680] has the topology of a circle.
+- [01:03:31,680 - 01:03:33,680] It's periodically identified.
+- [01:03:33,680 - 01:03:35,680] This would be an example
+- [01:03:35,680 - 01:03:37,680] of compactifying one
+- [01:03:37,680 - 01:03:39,680] out of three
+- [01:03:39,680 - 01:03:41,680] dimensions.
+- [01:03:41,680 - 01:03:43,680] Can you compactify two out of
+- [01:03:43,680 - 01:03:45,680] three dimensions? How many bits
+- [01:03:45,680 - 01:03:47,680] would be left over
+- [01:03:47,680 - 01:03:49,680] if you compactified two out of three?
+- [01:03:49,680 - 01:03:51,680] One.
+- [01:03:51,680 - 01:03:53,680] So we'd be back to the world of one dimension
+- [01:03:53,680 - 01:03:55,680] but with something new.
+- [01:03:55,680 - 01:03:57,680] Two compact dimensions instead of one.
+- [01:03:57,680 - 01:03:59,680] Let me show you what that would look like.
+- [01:03:59,680 - 01:04:01,680] A particular way of doing it.
+- [01:04:03,680 - 01:04:05,680] This is a particular way of doing it.
+- [01:04:05,680 - 01:04:07,680] Take a
+- [01:04:07,680 - 01:04:09,680] well let me make it bigger
+- [01:04:15,680 - 01:04:17,680] this is kind of a prism
+- [01:04:17,680 - 01:04:19,680] an infinitely long
+- [01:04:19,680 - 01:04:21,680] prism. Would you call this a prism?
+- [01:04:25,680 - 01:04:27,680] I thought prism I guess
+- [01:04:27,680 - 01:04:29,680] no prism is the wrong word
+- [01:04:31,680 - 01:04:33,680] Rectangular something or other
+- [01:04:35,680 - 01:04:37,680] Rectangular what?
+- [01:04:37,680 - 01:04:39,680] Rectangular parallelepiped
+- [01:04:39,680 - 01:04:41,680] except that it's infinite in extent.
+- [01:04:41,680 - 01:04:43,680] Okay? Right.
+- [01:04:43,680 - 01:04:45,680] It has edges.
+- [01:04:45,680 - 01:04:46,680] But what we're going to do
+- [01:04:46,680 - 01:04:47,680] with the edges is we're going to
+- [01:04:47,680 - 01:04:49,680] identify
+- [01:04:49,680 - 01:04:51,680] this edge with this edge
+- [01:04:51,680 - 01:04:53,680] and this edge with this edge.
+- [01:04:53,680 - 01:04:55,680] Not just the edges. A point over here
+- [01:04:57,680 - 01:04:59,680] is identified with a point on the floor.
+- [01:04:59,680 - 01:05:01,680] A point on the ceiling
+- [01:05:01,680 - 01:05:03,680] is identified with a point on the floor.
+- [01:05:03,680 - 01:05:05,680] A point on the back wall
+- [01:05:05,680 - 01:05:07,680] is identified with a point
+- [01:05:07,680 - 01:05:09,680] on the front wall. Here's the back wall
+- [01:05:09,680 - 01:05:11,680] here's the front wall.
+- [01:05:11,680 - 01:05:13,680] So anything that goes out through an edge
+- [01:05:13,680 - 01:05:15,680] reappears on the opposite
+- [01:05:15,680 - 01:05:17,680] face at the same spot.
+- [01:05:17,680 - 01:05:19,680] That
+- [01:05:19,680 - 01:05:21,680] now has compactified
+- [01:05:21,680 - 01:05:23,680] and there's no edges left.
+- [01:05:23,680 - 01:05:25,680] Once you make these identifications
+- [01:05:25,680 - 01:05:27,680] there really are no edges anymore.
+- [01:05:27,680 - 01:05:29,680] To draw it
+- [01:05:29,680 - 01:05:31,680] you know to draw it
+- [01:05:31,680 - 01:05:33,680] on a plane
+- [01:05:33,680 - 01:05:35,680] really on a plane
+- [01:05:35,680 - 01:05:37,680] you take the cylinder
+- [01:05:37,680 - 01:05:39,680] you slit it
+- [01:05:39,680 - 01:05:41,680] and you open it up.
+- [01:05:41,680 - 01:05:43,680] Okay so now it looks like
+- [01:05:43,680 - 01:05:45,680] it has a floor and a ceiling
+- [01:05:45,680 - 01:05:47,680] but then keep in mind that the
+- [01:05:47,680 - 01:05:49,680] real geometry is identified
+- [01:05:49,680 - 01:05:51,680] and has no edge.
+- [01:05:51,680 - 01:05:53,680] Same here. There are no edges.
+- [01:05:53,680 - 01:05:55,680] Anybody who walks out one side
+- [01:05:55,680 - 01:05:57,680] reappears at the other and doesn't even notice it.
+- [01:05:57,680 - 01:05:59,680] So this is
+- [01:05:59,680 - 01:06:01,680] compactifying two out of three dimensions.
+- [01:06:01,680 - 01:06:03,680] How about
+- [01:06:03,680 - 01:06:05,680] two out of ten or six out of ten?
+- [01:06:05,680 - 01:06:07,680] Yeah, you can do the same thing.
+- [01:06:07,680 - 01:06:09,680] And
+- [01:06:09,680 - 01:06:11,680] exactly
+- [01:06:11,680 - 01:06:13,680] the same thing.
+- [01:06:13,680 - 01:06:15,680] And this process
+- [01:06:15,680 - 01:06:17,680] is called
+- [01:06:17,680 - 01:06:19,680] toroidal
+- [01:06:19,680 - 01:06:21,680] compactification.
+- [01:06:21,680 - 01:06:23,680] Okay, what does it have to do with a torus?
+- [01:06:23,680 - 01:06:25,680] Let's talk about
+- [01:06:25,680 - 01:06:27,680] a tori because tori
+- [01:06:27,680 - 01:06:29,680] are the simplest
+- [01:06:29,680 - 01:06:31,680] geometries
+- [01:06:31,680 - 01:06:33,680] to use for compactification.
+- [01:06:33,680 - 01:06:35,680] The edge of this here
+- [01:06:35,680 - 01:06:37,680] this face over here
+- [01:06:37,680 - 01:06:39,680] is a torus.
+- [01:06:39,680 - 01:06:41,680] It doesn't look like a torus.
+- [01:06:41,680 - 01:06:43,680] Doesn't look like a donut.
+- [01:06:43,680 - 01:06:45,680] But topologically it's a donut.
+- [01:06:45,680 - 01:06:47,680] So let's talk about tori.
+- [01:06:51,680 - 01:06:53,680] The simplest torus
+- [01:06:53,680 - 01:06:55,680] is a circle.
+- [01:06:55,680 - 01:06:57,680] That's a one dimensional torus.
+- [01:06:57,680 - 01:06:59,680] It's just a circle.
+- [01:06:59,680 - 01:07:01,680] You say a circle doesn't
+- [01:07:01,680 - 01:07:03,680] look like a torus. Well,
+- [01:07:03,680 - 01:07:05,680] don't worry about it. We're going to
+- [01:07:05,680 - 01:07:07,680] define the thing that does look like a torus.
+- [01:07:07,680 - 01:07:09,680] Let's take a torus.
+- [01:07:13,680 - 01:07:15,680] Incidentally, when we talk about a torus,
+- [01:07:15,680 - 01:07:17,680] we're not
+- [01:07:17,680 - 01:07:19,680] talking about a shape
+- [01:07:19,680 - 01:07:21,680] embedded in three dimensional, two dimensional
+- [01:07:21,680 - 01:07:23,680] shape embedded in three dimensions.
+- [01:07:23,680 - 01:07:25,680] What we're talking about
+- [01:07:25,680 - 01:07:27,680] is a topology. We're talking about
+- [01:07:27,680 - 01:07:29,680] the topology of the
+- [01:07:29,680 - 01:07:31,680] boundary.
+- [01:07:31,680 - 01:07:33,680] Not the interior of the
+- [01:07:33,680 - 01:07:35,680] torus. We're not talking about a solid
+- [01:07:35,680 - 01:07:37,680] torus. We're not talking about a donut with
+- [01:07:37,680 - 01:07:39,680] a dough on the inside. We're talking
+- [01:07:39,680 - 01:07:41,680] about the mathematical surface
+- [01:07:41,680 - 01:07:43,680] of the torus.
+- [01:07:43,680 - 01:07:45,680] Okay? And what we're talking
+- [01:07:45,680 - 01:07:47,680] about when we use the word torus is the
+- [01:07:47,680 - 01:07:49,680] topology of the surface.
+- [01:07:49,680 - 01:07:51,680] Okay.
+- [01:07:51,680 - 01:07:53,680] There's a torus. And
+- [01:07:53,680 - 01:07:55,680] let me now do something to it.
+- [01:07:55,680 - 01:07:57,680] I'm going to
+- [01:07:57,680 - 01:07:59,680] cut it
+- [01:07:59,680 - 01:08:01,680] over here.
+- [01:08:01,680 - 01:08:03,680] Well, cut it over here.
+- [01:08:03,680 - 01:08:05,680] I'm going to take a scissor
+- [01:08:05,680 - 01:08:07,680] and slice it around here.
+- [01:08:07,680 - 01:08:09,680] Now remember, we're not talking about the stuff that's
+- [01:08:09,680 - 01:08:11,680] inside the torus. We're only talking about the surface.
+- [01:08:11,680 - 01:08:13,680] Cut it
+- [01:08:13,680 - 01:08:15,680] and open it up. What does it look like?
+- [01:08:15,680 - 01:08:17,680] It looks
+- [01:08:17,680 - 01:08:19,680] like a finite piece of a cylinder,
+- [01:08:19,680 - 01:08:21,680] right?
+- [01:08:21,680 - 01:08:23,680] But I have to remember with
+- [01:08:23,680 - 01:08:25,680] uh, yeah, we've taken it and opened
+- [01:08:25,680 - 01:08:27,680] it up. Alright, it's not the same as
+- [01:08:27,680 - 01:08:29,680] the torus, but it's topologically
+- [01:08:29,680 - 01:08:31,680] the same as the torus as long as
+- [01:08:31,680 - 01:08:33,680] we remember that this point
+- [01:08:33,680 - 01:08:35,680] is identified with this point,
+- [01:08:35,680 - 01:08:37,680] this point is identified with
+- [01:08:37,680 - 01:08:39,680] this point. Anybody
+- [01:08:39,680 - 01:08:41,680] who walks
+- [01:08:41,680 - 01:08:43,680] along here and crosses
+- [01:08:43,680 - 01:08:45,680] this edge, that's over
+- [01:08:45,680 - 01:08:47,680] here, comes back over
+- [01:08:47,680 - 01:08:49,680] here, that's over here.
+- [01:08:49,680 - 01:08:51,680] Alright, so we've done the same game
+- [01:08:51,680 - 01:08:53,680] except we've taken a cylinder now
+- [01:08:53,680 - 01:08:55,680] and identified
+- [01:08:55,680 - 01:08:57,680] the left
+- [01:08:57,680 - 01:08:59,680] cut here with the right cut
+- [01:08:59,680 - 01:09:01,680] through the cylinder over here. That is
+- [01:09:01,680 - 01:09:03,680] now mathematically a torus.
+- [01:09:03,680 - 01:09:05,680] But we can go another step.
+- [01:09:05,680 - 01:09:07,680] We can now take our scissor and cut it
+- [01:09:07,680 - 01:09:09,680] along here.
+- [01:09:13,680 - 01:09:17,680] And now open it up
+- [01:09:17,680 - 01:09:19,680] and it
+- [01:09:19,680 - 01:09:21,680] becomes a rectangle.
+- [01:09:23,680 - 01:09:25,680] So a torus is topologically
+- [01:09:25,680 - 01:09:27,680] the same as a rectangle,
+- [01:09:27,680 - 01:09:29,680] but we have to remember that
+- [01:09:29,680 - 01:09:31,680] the rectangle has identifications.
+- [01:09:31,680 - 01:09:33,680] If this point is called A,
+- [01:09:33,680 - 01:09:35,680] then this is also A.
+- [01:09:35,680 - 01:09:37,680] If this point is called
+- [01:09:37,680 - 01:09:39,680] B, then this is also called B.
+- [01:09:39,680 - 01:09:41,680] Let's follow the
+- [01:09:41,680 - 01:09:43,680] trajectory of a particle as
+- [01:09:43,680 - 01:09:45,680] it moves on a torus.
+- [01:09:45,680 - 01:09:47,680] A hypothetical particle,
+- [01:09:47,680 - 01:09:49,680] a fake particle moving on
+- [01:09:49,680 - 01:09:51,680] a mathematical
+- [01:09:51,680 - 01:09:52,680] torus like this. What happens to
+- [01:09:52,680 - 01:09:53,680] it? Let's see if we can
+- [01:09:53,680 - 01:09:55,680] follow it. Let's suppose it starts over here
+- [01:09:55,680 - 01:09:57,680] moving this way
+- [01:09:57,680 - 01:09:59,680] and assume that it moves in a straight
+- [01:09:59,680 - 01:10:01,680] line. Okay? No forces
+- [01:10:01,680 - 01:10:03,680] on it. What happens when it gets
+- [01:10:03,680 - 01:10:05,680] to here?
+- [01:10:05,680 - 01:10:07,680] It reappears
+- [01:10:07,680 - 01:10:09,680] at the bottom, right?
+- [01:10:09,680 - 01:10:11,680] Now it goes at the same angle because
+- [01:10:11,680 - 01:10:13,680] it hasn't been accelerated and it gets to over
+- [01:10:13,680 - 01:10:15,680] here. It gets to over here,
+- [01:10:15,680 - 01:10:17,680] reappears over here.
+- [01:10:17,680 - 01:10:19,680] Now what?
+- [01:10:19,680 - 01:10:21,680] Goes to here, where does it reappear?
+- [01:10:21,680 - 01:10:23,680] Back over here.
+- [01:10:33,680 - 01:10:35,680] Okay.
+- [01:10:35,680 - 01:10:37,680] Depending on the angle
+- [01:10:37,680 - 01:10:39,680] and depending on the ratio of the
+- [01:10:39,680 - 01:10:41,680] sides of the torus,
+- [01:10:41,680 - 01:10:43,680] it will either, if the ratios of the
+- [01:10:43,680 - 01:10:45,680] sides of the torus are rational
+- [01:10:45,680 - 01:10:47,680] and some other good things,
+- [01:10:47,680 - 01:10:49,680] it will simply
+- [01:10:49,680 - 01:10:51,680] repeat itself
+- [01:10:51,680 - 01:10:53,680] and eventually find itself on the original
+- [01:10:53,680 - 01:10:55,680] line again.
+- [01:10:55,680 - 01:10:57,680] So that there will be a
+- [01:10:57,680 - 01:10:59,680] finite number of bands like this
+- [01:10:59,680 - 01:11:01,680] and then repeat
+- [01:11:01,680 - 01:11:03,680] itself. If the ratios of the
+- [01:11:03,680 - 01:11:05,680] sides are incommensurate or if you have some
+- [01:11:05,680 - 01:11:07,680] incommensurate angle,
+- [01:11:07,680 - 01:11:09,680] then it will just keep going and going and
+- [01:11:09,680 - 01:11:11,680] going, essentially filling up the
+- [01:11:11,680 - 01:11:13,680] entire, or getting arbitrarily close
+- [01:11:13,680 - 01:11:15,680] to any point on the torus.
+- [01:11:15,680 - 01:11:17,680] But this is not the important thing. The important
+- [01:11:17,680 - 01:11:19,680] thing is that a
+- [01:11:19,680 - 01:11:21,680] torus is a way
+- [01:11:21,680 - 01:11:23,680] of compactifying space.
+- [01:11:23,680 - 01:11:25,680] That's exactly what we did over here.
+- [01:11:25,680 - 01:11:27,680] We took this
+- [01:11:27,680 - 01:11:29,680] and identified it with this,
+- [01:11:29,680 - 01:11:31,680] this and identified it with this.
+- [01:11:31,680 - 01:11:33,680] So this would be called
+- [01:11:33,680 - 01:11:35,680] a
+- [01:11:35,680 - 01:11:37,680] compactification
+- [01:11:37,680 - 01:11:39,680] of two
+- [01:11:39,680 - 01:11:41,680] dimensions, keeping the third
+- [01:11:41,680 - 01:11:43,680] one uncompactified
+- [01:11:43,680 - 01:11:45,680] but the compactification would
+- [01:11:45,680 - 01:11:47,680] be a torus.
+- [01:11:47,680 - 01:11:49,680] Tori are especially simple
+- [01:11:49,680 - 01:11:51,680] geometries for compactification.
+- [01:11:55,680 - 01:11:57,680] There are other geometries that you
+- [01:11:57,680 - 01:11:59,680] could try and
+- [01:11:59,680 - 01:12:01,680] people do. I can't
+- [01:12:01,680 - 01:12:03,680] draw it quite the same way,
+- [01:12:03,680 - 01:12:05,680] but you could take a line
+- [01:12:05,680 - 01:12:07,680] times a
+- [01:12:07,680 - 01:12:09,680] sphere,
+- [01:12:09,680 - 01:12:11,680] a line times a two-dimensional
+- [01:12:11,680 - 01:12:13,680] sphere so that every point on
+- [01:12:13,680 - 01:12:15,680] the line, a little fly
+- [01:12:15,680 - 01:12:17,680] moving up and down that
+- [01:12:17,680 - 01:12:19,680] or a little insect moving up and down
+- [01:12:19,680 - 01:12:21,680] that line would be able to
+- [01:12:21,680 - 01:12:23,680] move along the line
+- [01:12:23,680 - 01:12:25,680] or along a sphere
+- [01:12:25,680 - 01:12:27,680] attached to each point on
+- [01:12:27,680 - 01:12:29,680] just as there's a torus
+- [01:12:29,680 - 01:12:31,680] attached to each point here,
+- [01:12:31,680 - 01:12:33,680] you could do a sphere.
+- [01:12:33,680 - 01:12:35,680] For reasons
+- [01:12:35,680 - 01:12:37,680] that I'll come to, spheres are not
+- [01:12:37,680 - 01:12:39,680] good things to compactify on.
+- [01:12:39,680 - 01:12:41,680] Alright, so this is the toroidal
+- [01:12:41,680 - 01:12:43,680] Now, can you do the same
+- [01:12:43,680 - 01:12:45,680] thing with
+- [01:12:45,680 - 01:12:47,680] higher dimensions? Let's suppose we had
+- [01:12:49,680 - 01:12:51,680] Supposing we wanted to get rid of three
+- [01:12:51,680 - 01:12:53,680] dimensions. To get rid of
+- [01:12:53,680 - 01:12:55,680] three dimensions, we want to invent a thing
+- [01:12:55,680 - 01:12:57,680] called a three torus.
+- [01:12:57,680 - 01:12:59,680] A three-dimensional torus. We want to take
+- [01:12:59,680 - 01:13:01,680] three of the dimensions and
+- [01:13:01,680 - 01:13:03,680] make them into a torus. Yes,
+- [01:13:03,680 - 01:13:05,680] that's not hard. You do exactly the same
+- [01:13:05,680 - 01:13:07,680] thing. You take a cube.
+- [01:13:07,680 - 01:13:09,680] Doesn't have to be a cube.
+- [01:13:11,680 - 01:13:13,680] A
+- [01:13:13,680 - 01:13:17,680] parallel a pipette, or whatever you call it.
+- [01:13:17,680 - 01:13:19,680] And now, do the same
+- [01:13:19,680 - 01:13:21,680] kind of identifications.
+- [01:13:21,680 - 01:13:23,680] This face over here, A,
+- [01:13:23,680 - 01:13:25,680] is identified with this face over here, A.
+- [01:13:25,680 - 01:13:27,680] This one over here, B,
+- [01:13:27,680 - 01:13:29,680] with this one, B.
+- [01:13:29,680 - 01:13:31,680] And the backside of a
+- [01:13:31,680 - 01:13:33,680] a
+- [01:13:33,680 - 01:13:35,680] C, this is in the back,
+- [01:13:35,680 - 01:13:37,680] is identified with C
+- [01:13:37,680 - 01:13:39,680] in the front.
+- [01:13:39,680 - 01:13:41,680] That becomes what is called a three torus.
+- [01:13:41,680 - 01:13:43,680] It has the topology of a three torus.
+- [01:13:43,680 - 01:13:45,680] Again, no edges,
+- [01:13:45,680 - 01:13:47,680] although if you try to draw it, you draw it
+- [01:13:47,680 - 01:13:49,680] with edges.
+- [01:13:49,680 - 01:13:51,680] And that would
+- [01:13:51,680 - 01:13:53,680] effectively shrink
+- [01:13:53,680 - 01:13:55,680] three directions, if you made the
+- [01:13:55,680 - 01:13:57,680] torus small in any case. If you made it
+- [01:13:57,680 - 01:13:59,680] physically small, it would hide
+- [01:13:59,680 - 01:14:01,680] three dimensions,
+- [01:14:01,680 - 01:14:03,680] at least from your coarse-grained
+- [01:14:03,680 - 01:14:05,680] measurements. So if you were doing
+- [01:14:05,680 - 01:14:07,680] string theory in ten dimensions,
+- [01:14:07,680 - 01:14:09,680] and you compactify three,
+- [01:14:09,680 - 01:14:11,680] ten space-time dimensions,
+- [01:14:11,680 - 01:14:13,680] compactify three, you would have
+- [01:14:13,680 - 01:14:15,680] seven dimensions left over,
+- [01:14:15,680 - 01:14:17,680] one time and six space.
+- [01:14:17,680 - 01:14:19,680] That's also not what we want.
+- [01:14:19,680 - 01:14:21,680] So what do we want to do?
+- [01:14:21,680 - 01:14:23,680] We want to make a
+- [01:14:23,680 - 01:14:25,680] we want to get rid of six dimensions.
+- [01:14:25,680 - 01:14:27,680] So we make a six torus.
+- [01:14:27,680 - 01:14:28,680] A six torus I can't
+- [01:14:28,680 - 01:14:29,680] draw on the blackboard for you.
+- [01:14:29,680 - 01:14:31,680] I suppose I could draw a four torus,
+- [01:14:31,680 - 01:14:33,680] but we'd clutter up the blackboard terribly.
+- [01:14:33,680 - 01:14:35,680] What's the figure,
+- [01:14:35,680 - 01:14:37,680] the four cube called,
+- [01:14:37,680 - 01:14:39,680] when you,
+- [01:14:39,680 - 01:14:41,680] when you,
+- [01:14:41,680 - 01:14:43,680] when you,
+- [01:14:43,680 - 01:14:45,680] what?
+- [01:14:45,680 - 01:14:47,680] Yeah, yeah, yeah.
+- [01:14:47,680 - 01:14:49,680] And then identify faces of that,
+- [01:14:49,680 - 01:14:51,680] but, or volumes of it,
+- [01:14:51,680 - 01:14:53,680] you'd be identifying volumes of it.
+- [01:14:53,680 - 01:14:55,680] But, um,
+- [01:14:55,680 - 01:14:57,680] mathematically, all you're
+- [01:14:57,680 - 01:14:59,680] doing is adding axes,
+- [01:14:59,680 - 01:15:01,680] and keeping, and making identifications.
+- [01:15:01,680 - 01:15:03,680] A torus, yeah?
+- [01:15:03,680 - 01:15:05,680] It seems like all these dimensions,
+- [01:15:05,680 - 01:15:07,680] all these spatial dimensions greater than three
+- [01:15:07,680 - 01:15:09,680] come back on themselves.
+- [01:15:09,680 - 01:15:11,680] Yeah.
+- [01:15:11,680 - 01:15:13,680] They're periodically identified.
+- [01:15:13,680 - 01:15:15,680] They're what?
+- [01:15:15,680 - 01:15:17,680] They're periodically identified.
+- [01:15:17,680 - 01:15:19,680] Yeah. Yeah. They come back on themselves.
+- [01:15:19,680 - 01:15:21,680] Is that, that's fundamental, I guess.
+- [01:15:21,680 - 01:15:23,680] Well.
+- [01:15:23,680 - 01:15:25,680] You can't go infinite like x, y, and z can.
+- [01:15:25,680 - 01:15:27,680] You could have six or ten
+- [01:15:27,680 - 01:15:29,680] or nine, whatever it is,
+- [01:15:29,680 - 01:15:31,680] dimensions which don't come back on themselves.
+- [01:15:31,680 - 01:15:33,680] It just wouldn't be our world.
+- [01:15:33,680 - 01:15:35,680] You ask,
+- [01:15:35,680 - 01:15:37,680] why did nature choose
+- [01:15:37,680 - 01:15:39,680] to, uh, to compactify
+- [01:15:39,680 - 01:15:41,680] some dimensions and not others?
+- [01:15:41,680 - 01:15:43,680] That we haven't got the
+- [01:15:43,680 - 01:15:45,680] vaguest idea, but, uh,
+- [01:15:45,680 - 01:15:47,680] we do know that we live in a world
+- [01:15:47,680 - 01:15:49,680] of three dimensions.
+- [01:15:49,680 - 01:15:51,680] Why do we assume that other dimensions are spatial?
+- [01:15:53,680 - 01:15:55,680] String theory, or no other theory
+- [01:15:55,680 - 01:15:57,680] that I know, quantum field theory,
+- [01:15:57,680 - 01:15:59,680] none of them make sense with more than
+- [01:15:59,680 - 01:16:01,680] one time dimension.
+- [01:16:01,680 - 01:16:03,680] Correct. We know we have one
+- [01:16:03,680 - 01:16:05,680] real time dimension,
+- [01:16:05,680 - 01:16:07,680] but there's no more room for more.
+- [01:16:07,680 - 01:16:09,680] But, why beyond the
+- [01:16:09,680 - 01:16:11,680] four, do we assume that the
+- [01:16:11,680 - 01:16:13,680] remaining dimensions are spatial?
+- [01:16:13,680 - 01:16:15,680] What else could they be?
+- [01:16:15,680 - 01:16:17,680] What else would they be?
+- [01:16:17,680 - 01:16:19,680] I'm not, well, I've got some ideas, but
+- [01:16:19,680 - 01:16:21,680] my point is that just because
+- [01:16:21,680 - 01:16:23,680] we can't identify what they are,
+- [01:16:23,680 - 01:16:25,680] why do we assume they are spatial
+- [01:16:25,680 - 01:16:27,680] and
+- [01:16:27,680 - 01:16:29,680] curled up as opposed to something
+- [01:16:29,680 - 01:16:31,680] that else we just don't understand?
+- [01:16:33,680 - 01:16:35,680] Because we can understand
+- [01:16:35,680 - 01:16:37,680] this.
+- [01:16:37,680 - 01:16:39,680] It doesn't mean it's the real world.
+- [01:16:39,680 - 01:16:41,680] It means it's a thing
+- [01:16:41,680 - 01:16:43,680] we can study,
+- [01:16:43,680 - 01:16:45,680] find out its properties,
+- [01:16:45,680 - 01:16:47,680] see how it behaves,
+- [01:16:47,680 - 01:16:49,680] and compare it with the real world.
+- [01:16:49,680 - 01:16:51,680] If you just say, maybe
+- [01:16:51,680 - 01:16:53,680] it's something and we don't know what it is,
+- [01:16:53,680 - 01:16:55,680] okay, we'll stop. We're dead.
+- [01:16:57,680 - 01:16:59,680] This is
+- [01:16:59,680 - 01:17:01,680] easy,
+- [01:17:01,680 - 01:17:03,680] it's straightforward,
+- [01:17:03,680 - 01:17:05,680] it's not enormously subtle,
+- [01:17:05,680 - 01:17:07,680] not these tori,
+- [01:17:07,680 - 01:17:09,680] these tori are pretty easy,
+- [01:17:09,680 - 01:17:11,680] they're not enormously subtle,
+- [01:17:11,680 - 01:17:13,680] they're solvable,
+- [01:17:13,680 - 01:17:15,680] we can work out
+- [01:17:15,680 - 01:17:17,680] what particle physics is like,
+- [01:17:17,680 - 01:17:19,680] we can work out what the
+- [01:17:19,680 - 01:17:21,680] world on
+- [01:17:21,680 - 01:17:23,680] in such a setup is like,
+- [01:17:23,680 - 01:17:25,680] and we can ask, how close is it,
+- [01:17:25,680 - 01:17:27,680] how similar is it to the real world?
+- [01:17:27,680 - 01:17:29,680] That's the only reason.
+- [01:17:29,680 - 01:17:31,680] It's a setup that we
+- [01:17:31,680 - 01:17:33,680] know and understand,
+- [01:17:33,680 - 01:17:35,680] it has gravity, it has quantum mechanics,
+- [01:17:35,680 - 01:17:37,680] it has particles, it has bosons,
+- [01:17:37,680 - 01:17:39,680] it has fermions, and we can study it.
+- [01:17:41,680 - 01:17:43,680] It also has black holes,
+- [01:17:43,680 - 01:17:45,680] so we can study the black holes and find out
+- [01:17:45,680 - 01:17:47,680] if they do this or that,
+- [01:17:47,680 - 01:17:49,680] that's the reason.
+- [01:17:49,680 - 01:17:51,680] What does it lack?
+- [01:17:53,680 - 01:17:55,680] It's too symmetric.
+- [01:17:57,680 - 01:17:59,680] It has supersymmetry and other symmetries
+- [01:17:59,680 - 01:18:01,680] that are just too symmetric.
+- [01:18:03,680 - 01:18:04,680] Some things it lacks and some
+- [01:18:04,680 - 01:18:05,680] things it has too much of.
+- [01:18:11,680 - 01:18:13,680] When you take the bagel and turn it
+- [01:18:13,680 - 01:18:15,680] into a rectangle,
+- [01:18:15,680 - 01:18:17,680] topologically they're equivalent,
+- [01:18:17,680 - 01:18:19,680] but if you look at the distance
+- [01:18:19,680 - 01:18:21,680] of why on the inside of it...
+- [01:18:21,680 - 01:18:23,680] Yeah, don't think about the distances.
+- [01:18:23,680 - 01:18:25,680] Right.
+- [01:18:25,680 - 01:18:27,680] When a mathematician
+- [01:18:27,680 - 01:18:29,680] speaks about a torus,
+- [01:18:29,680 - 01:18:31,680] or a physicist
+- [01:18:31,680 - 01:18:33,680] for the most part,
+- [01:18:33,680 - 01:18:35,680] he's talking about a topology,
+- [01:18:35,680 - 01:18:37,680] not talking about a geometry.
+- [01:18:37,680 - 01:18:39,680] Now,
+- [01:18:39,680 - 01:18:41,680] in fact,
+- [01:18:41,680 - 01:18:43,680] the torus,
+- [01:18:43,680 - 01:18:45,680] when it's presented as a
+- [01:18:45,680 - 01:18:47,680] rectangle...
+- [01:18:47,680 - 01:18:49,680] Oh, let's talk a little bit about
+- [01:18:49,680 - 01:18:51,680] how many
+- [01:18:51,680 - 01:18:53,680] how many inequivalent tori there are.
+- [01:18:53,680 - 01:18:55,680] What is the...
+- [01:18:55,680 - 01:18:57,680] What are the parameters
+- [01:18:57,680 - 01:18:59,680] of a torus?
+- [01:18:59,680 - 01:19:01,680] Alright, it's a rectangle,
+- [01:19:01,680 - 01:19:03,680] so first of all it has
+- [01:19:03,680 - 01:19:05,680] an overall area.
+- [01:19:07,680 - 01:19:09,680] Or, equivalently,
+- [01:19:09,680 - 01:19:11,680] it has a length and a height,
+- [01:19:11,680 - 01:19:13,680] a width and a height.
+- [01:19:13,680 - 01:19:15,680] There's a width and a height,
+- [01:19:15,680 - 01:19:17,680] which are two parameters.
+- [01:19:17,680 - 01:19:19,680] One of those parameters
+- [01:19:19,680 - 01:19:21,680] is the size of it.
+- [01:19:21,680 - 01:19:23,680] You could take it to be the area.
+- [01:19:23,680 - 01:19:25,680] Call that a size parameter.
+- [01:19:25,680 - 01:19:27,680] The other is the...
+- [01:19:27,680 - 01:19:29,680] And that's the product of the
+- [01:19:29,680 - 01:19:31,680] length times the width
+- [01:19:31,680 - 01:19:33,680] times the height.
+- [01:19:33,680 - 01:19:35,680] There's also the ratio of the width
+- [01:19:35,680 - 01:19:37,680] times the height. You could call it
+- [01:19:37,680 - 01:19:39,680] the aspect ratio or
+- [01:19:39,680 - 01:19:41,680] the shape.
+- [01:19:41,680 - 01:19:43,680] Alright, so here is a
+- [01:19:43,680 - 01:19:45,680] long, thin torus.
+- [01:19:47,680 - 01:19:49,680] Here is a broad,
+- [01:19:49,680 - 01:19:51,680] fat torus.
+- [01:19:53,680 - 01:19:55,680] But these are the same.
+- [01:19:55,680 - 01:19:57,680] These are really the same
+- [01:19:57,680 - 01:19:59,680] torus. That is to say,
+- [01:19:59,680 - 01:20:01,680] they're geometrically identical.
+- [01:20:01,680 - 01:20:03,680] They're geometrically identical.
+- [01:20:03,680 - 01:20:05,680] Every point on here
+- [01:20:05,680 - 01:20:07,680] is equivalent to a point on here.
+- [01:20:07,680 - 01:20:09,680] This
+- [01:20:09,680 - 01:20:11,680] maps to this.
+- [01:20:11,680 - 01:20:13,680] This maps to this.
+- [01:20:13,680 - 01:20:15,680] This is a picture on its side.
+- [01:20:15,680 - 01:20:17,680] And we haven't made a new
+- [01:20:17,680 - 01:20:19,680] kind of torus.
+- [01:20:19,680 - 01:20:21,680] So, one thing we can say is
+- [01:20:21,680 - 01:20:23,680] there's the ratio of the sides
+- [01:20:23,680 - 01:20:25,680] but
+- [01:20:25,680 - 01:20:27,680] the ratio of the sides
+- [01:20:27,680 - 01:20:29,680] does not go from
+- [01:20:31,680 - 01:20:33,680] zero to infinity.
+- [01:20:35,680 - 01:20:37,680] It goes from one to infinity.
+- [01:20:37,680 - 01:20:39,680] Why one to infinity?
+- [01:20:39,680 - 01:20:41,680] Because when it's less than one
+- [01:20:41,680 - 01:20:45,280] The ratio, let's say, of the horizontal to the vertical
+- [01:20:45,280 - 01:20:48,780] This is bigger than 1, this is less than 1
+- [01:20:48,780 - 01:20:50,780] But they're the same torus
+- [01:20:50,780 - 01:20:54,330] So the ratio of the sides can
+- [01:20:54,330 - 01:20:57,880] vary from, basically, from 1 to infinity
+- [01:20:57,880 - 01:20:59,280] But not just 0 to 1?
+- [01:20:59,280 - 01:21:01,280] Well, from 0 to 1, either way
+- [01:21:01,280 - 01:21:04,280] In fact, you usually take from 0 to 1
+- [01:21:04,280 - 01:21:06,680] You can go from 0 to 1
+- [01:21:06,680 - 01:21:10,180] Anything else, is there anything else that
+- [01:21:10,180 - 01:21:13,680] you can do to change the torus?
+- [01:21:13,680 - 01:21:15,680] And the answer is yes
+- [01:21:15,680 - 01:21:19,680] Here's the game that we haven't discussed
+- [01:21:21,680 - 01:21:25,680] Let's go back to our piece of cylinder
+- [01:21:25,680 - 01:21:29,180] We're going to identify the left edge, the left
+- [01:21:29,180 - 01:21:32,680] circle over here with the right circle over here
+- [01:21:32,680 - 01:21:36,680] But before we do it, let's imagine a twist
+- [01:21:36,680 - 01:21:38,680] A twist by an angle
+- [01:21:38,680 - 01:21:40,680] So that you don't identify this
+- [01:21:40,680 - 01:21:42,680] point with this one up here
+- [01:21:42,680 - 01:21:48,680] But you identify it with a displaced angular point
+- [01:21:49,680 - 01:21:53,680] This one over here is identified with here
+- [01:21:53,680 - 01:21:56,680] This one over here, identified with that
+- [01:21:56,680 - 01:22:00,180] You imagine in your mind, before
+- [01:22:00,180 - 01:22:03,680] making the identification, making a little twist
+- [01:22:03,680 - 01:22:05,680] And then making the identification
+- [01:22:06,680 - 01:22:07,680] That's something new
+- [01:22:07,680 - 01:22:11,680] And what it looks like, let's see
+- [01:22:12,680 - 01:22:15,680] Let's do it vertically, let's draw it this way
+- [01:22:19,680 - 01:22:23,680] Make a little twist here before we make the identification
+- [01:22:23,680 - 01:22:27,680] So that slides things along the top edge
+- [01:22:27,680 - 01:22:29,180] If we didn't do the
+- [01:22:29,180 - 01:22:30,680] twist, we would have a rectangle
+- [01:22:31,680 - 01:22:33,680] If we do the twist, then we
+- [01:22:33,680 - 01:22:35,680] don't identify this point with this one
+- [01:22:35,680 - 01:22:37,680] We identify it with that point
+- [01:22:37,680 - 01:22:40,680] This point with that point
+- [01:22:40,680 - 01:22:48,680] And we might as well draw it like this
+- [01:22:48,680 - 01:22:51,180] We might as well draw it
+- [01:22:51,180 - 01:22:53,680] as, well that doesn't look very neat
+- [01:22:53,680 - 01:22:55,680] That's not quite right
+- [01:22:55,680 - 01:22:57,680] Yeah
+- [01:22:57,680 - 01:22:59,680] Alright
+- [01:22:59,680 - 01:23:02,180] Everything in the bottom gets
+- [01:23:02,180 - 01:23:04,680] identified with a point above it
+- [01:23:05,680 - 01:23:08,680] And everything on the left gets identified,
+- [01:23:08,680 - 01:23:11,680] but with this offset, with this angle
+- [01:23:11,680 - 01:23:15,680] So to parameterize tori, there's
+- [01:23:15,680 - 01:23:19,680] the aspect ratio, there's the size
+- [01:23:20,680 - 01:23:23,680] That can be taken to be the overall area
+- [01:23:23,680 - 01:23:26,180] Then, getting rid of the area,
+- [01:23:26,180 - 01:23:28,680] let's say unit things of unit area
+- [01:23:28,680 - 01:23:32,680] There's the aspect ratio and there's the angle
+- [01:23:32,680 - 01:23:34,680] These things are called moduli
+- [01:23:35,680 - 01:23:37,680] These are the moduli of the torus
+- [01:23:37,680 - 01:23:39,680] There are three of them
+- [01:23:39,680 - 01:23:42,680] The three moduli of the torus are the overall
+- [01:23:42,680 - 01:23:45,680] size, the ratio of the height to the width
+- [01:23:45,680 - 01:23:49,680] And the angle, the lean, the angle of leaning
+- [01:23:49,680 - 01:23:52,680] These have technical names
+- [01:23:52,680 - 01:23:55,680] The twist is called a Dehn twist,
+- [01:23:55,680 - 01:23:58,680] D-E-H-N, after a mathematician I suppose named Dehn
+- [01:24:01,680 - 01:24:04,680] The overall volume is called a Kähler moduli
+- [01:24:05,680 - 01:24:14,680] And the aspect ratio is called a complex structure moduli
+- [01:24:14,680 - 01:24:16,680] They have technical meanings
+- [01:24:16,680 - 01:24:20,680] If you see them, you'll know roughly what they mean
+- [01:24:20,680 - 01:24:22,680] Couldn't you flip it as well?
+- [01:24:22,680 - 01:24:26,680] It seems like you could flip the ring as well
+- [01:24:26,680 - 01:24:28,680] Flip it? You mean reflect it?
+- [01:24:28,680 - 01:24:32,680] Then you make a Klein bottle, it's a different topology
+- [01:24:32,680 - 01:24:34,680] You mean if you take...
+- [01:24:35,680 - 01:24:40,680] If you take this point over here
+- [01:24:40,680 - 01:24:43,680] Identify it with a point in the front
+- [01:24:43,680 - 01:24:46,680] This point with that point, this point with that point
+- [01:24:46,680 - 01:24:49,680] And this one with the one in the back
+- [01:24:49,680 - 01:24:52,680] That's a Klein bottle
+- [01:24:52,680 - 01:24:56,680] That's not a torus
+- [01:24:58,680 - 01:25:01,680] It's not an orientable manifold
+- [01:25:01,680 - 01:25:04,680] What about a non-uniform twist?
+- [01:25:05,680 - 01:25:07,680] It has to be a map,
+- [01:25:07,680 - 01:25:09,680] but in our experience it's continuous
+- [01:25:09,680 - 01:25:11,680] Yeah, yeah, yeah
+- [01:25:11,680 - 01:25:14,680] You can...that's right, that's right
+- [01:25:14,680 - 01:25:17,680] You can absorb that kind of
+- [01:25:17,680 - 01:25:20,680] thing into the metric on the torus
+- [01:25:20,680 - 01:25:24,680] You're right, there are other ways of deforming the torus
+- [01:25:24,680 - 01:25:27,180] But those can be absorbed
+- [01:25:27,180 - 01:25:29,680] into the metric on the torus
+- [01:25:29,680 - 01:25:31,680] Um...
+- [01:25:35,680 - 01:25:38,680] These tori are all flat
+- [01:25:38,680 - 01:25:40,680] They have flat geometries
+- [01:25:40,680 - 01:25:43,680] Or they can be given flat geometries
+- [01:25:43,680 - 01:25:45,680] Since they can be drawn
+- [01:25:45,680 - 01:25:47,680] on the blackboard without stretching them
+- [01:25:47,680 - 01:25:50,680] I don't mean the real donut
+- [01:25:50,680 - 01:25:54,680] The real donut is a truly curved surface
+- [01:25:54,680 - 01:25:57,680] It has curvature
+- [01:25:57,680 - 01:26:01,680] On the outer boundary it has positive curvature
+- [01:26:01,680 - 01:26:03,180] On the inner near the
+- [01:26:03,180 - 01:26:04,680] hole here it has negative curvature
+- [01:26:04,680 - 01:26:08,680] I'm talking about this mathematical structure that's
+- [01:26:08,680 - 01:26:12,680] been mapped onto the plane in this way
+- [01:26:12,680 - 01:26:13,680] It's completely flat
+- [01:26:13,680 - 01:26:19,680] Triangles on it have 180 degree sum of their angles
+- [01:26:19,680 - 01:26:23,680] Even on this one
+- [01:26:23,680 - 01:26:25,180] And in particular it's not
+- [01:26:25,180 - 01:26:26,680] only flat, but it's Ricci flat
+- [01:26:26,680 - 01:26:29,680] It's Ricci flat and it's flat
+- [01:26:29,680 - 01:26:32,680] And so string theory on these geometries is well defined
+- [01:26:32,680 - 01:26:33,680] It's a good...
+- [01:26:34,680 - 01:26:37,680] Good mathematical structure for string theory to exist on
+- [01:26:37,680 - 01:26:43,680] It's by far the easiest way to hide other dimensions
+- [01:26:43,680 - 01:26:48,680] And it's called toroidal compactification
+- [01:26:48,680 - 01:26:51,680] It's not good for the real world
+- [01:26:51,680 - 01:26:54,680] The real world is more complex than that
+- [01:26:54,680 - 01:26:56,680] But I thought I would show you
+- [01:26:56,680 - 01:26:58,680] what the simplest form of compactification is
+- [01:26:58,680 - 01:26:59,680] Now I'm gonna...
+- [01:26:59,680 - 01:27:01,680] Let's see, let's take a five minute break
+- [01:27:01,680 - 01:27:04,680] Somebody wanted to make an announcement, I can't remember
+- [01:27:04,680 - 01:27:07,680] Yeah, there you are
+- [01:27:07,680 - 01:27:10,680] Yeah, toroid are all flat
+- [01:27:10,680 - 01:27:13,680] Toroid are all flat
+- [01:27:13,680 - 01:27:17,680] Toroid is the plural of torus you realize
+- [01:27:17,680 - 01:27:21,680] Toroid are all flat in any number of dimensions
+- [01:27:21,680 - 01:27:26,680] And therefore they're also Ricci flat
+- [01:27:26,680 - 01:27:29,680] And because they're Ricci flat
+- [01:27:29,680 - 01:27:31,680] String theory
+- [01:27:31,680 - 01:27:33,680] Strings moving on toroid are...
+- [01:27:34,680 - 01:27:36,680] Good things
+- [01:27:36,680 - 01:27:40,680] They have a sensible well defined mathematics
+- [01:27:40,680 - 01:27:44,680] There are other Ricci flat spaces
+- [01:27:44,680 - 01:27:46,680] Where you can take six dimensions that
+- [01:27:46,680 - 01:27:48,680] you don't like and get rid of them
+- [01:27:48,680 - 01:27:50,680] By compactifying them
+- [01:27:50,680 - 01:27:52,680] Not on a torus
+- [01:27:52,680 - 01:27:54,680] Or not by replacing them by a torus
+- [01:27:54,680 - 01:28:00,680] But by replacing them by other Ricci flat manifolds
+- [01:28:02,680 - 01:28:03,680] In particular
+- [01:28:03,680 - 01:28:06,680] There are a class of Ricci flat manifolds
+- [01:28:06,680 - 01:28:09,680] Which are known as Calabi-Yau manifolds
+- [01:28:09,680 - 01:28:12,680] Which have very special properties
+- [01:28:12,680 - 01:28:16,680] And where string theory is a good theory
+- [01:28:16,680 - 01:28:18,680] These are incredibly complicated
+- [01:28:18,680 - 01:28:22,680] They're far beyond the scope of this course
+- [01:28:22,680 - 01:28:30,680] But they're also the kind of things that string theorists...
+- [01:28:30,680 - 01:28:32,680] Which have enough complexity
+- [01:28:32,680 - 01:28:35,680] And lack of symmetry
+- [01:28:35,680 - 01:28:38,680] That they do look more like the real world
+- [01:28:38,680 - 01:28:43,680] But they don't really involve any really new concepts
+- [01:28:43,680 - 01:28:46,680] Some mathematical concepts to be sure
+- [01:28:46,680 - 01:28:49,680] They're very mathematically difficult objects
+- [01:28:49,680 - 01:28:56,680] But no really new principles come out of...
+- [01:28:56,680 - 01:28:58,680] They just look more like the real world
+- [01:28:58,680 - 01:29:01,680] And I'm not going to try to get into them
+- [01:29:02,680 - 01:29:04,680] But I think a torus is good enough for us
+- [01:29:04,680 - 01:29:06,680] We can see some very interesting things
+- [01:29:06,680 - 01:29:09,680] When we start to explore string theory on a torus
+- [01:29:09,680 - 01:29:11,680] Alright
+- [01:29:20,680 - 01:29:23,680] Okay, let's go...
+- [01:29:23,680 - 01:29:26,680] Let's take as our model for simplicity
+- [01:29:26,680 - 01:29:30,680] Just the infinite one dimensional world
+- [01:29:30,680 - 01:29:34,680] With an extra dimension that goes around in a loop
+- [01:29:34,680 - 01:29:37,180] You see why I call
+- [01:29:37,180 - 01:29:39,680] a circle a one dimensional torus?
+- [01:29:39,680 - 01:29:44,680] It's just a line element periodically identified
+- [01:29:44,680 - 01:29:46,680] Alright, let's start with that
+- [01:29:46,680 - 01:29:48,180] Alright, we can have a
+- [01:29:48,180 - 01:29:49,680] particle which moves around on here
+- [01:29:49,680 - 01:29:54,680] And it can have a component of motion horizontally
+- [01:29:54,680 - 01:29:56,680] Nothing special about that
+- [01:29:56,680 - 01:29:58,680] That's just the momentum along the direction
+- [01:29:58,680 - 01:29:59,680] It would have been there...
+- [01:30:00,680 - 01:30:03,680] Even if you hadn't...
+- [01:30:03,680 - 01:30:06,680] Well, even if you didn't have the extra dimension
+- [01:30:06,680 - 01:30:09,680] You'd have momentum along that direction
+- [01:30:09,680 - 01:30:12,680] But you also have momentum along the other direction
+- [01:30:12,680 - 01:30:15,680] You can have both of them at the same time
+- [01:30:15,680 - 01:30:18,680] A particle moving sort of obliquely
+- [01:30:18,680 - 01:30:20,680] Sort of spiraling around this thing
+- [01:30:20,680 - 01:30:23,680] Would have a component of momentum horizontally
+- [01:30:23,680 - 01:30:26,680] And a component of momentum along the circle
+- [01:30:26,680 - 01:30:30,680] The components of momentum along the circle
+- [01:30:30,680 - 01:30:33,680] Are quantized
+- [01:30:33,680 - 01:30:35,680] Momentum...
+- [01:30:37,680 - 01:30:42,680] Momentum on periodic spaces are always quantized
+- [01:30:42,680 - 01:30:44,680] The easiest way to see it
+- [01:30:44,680 - 01:30:47,680] Is just to say supposing...
+- [01:30:47,680 - 01:30:51,680] Supposing the circumference of this circle
+- [01:30:51,680 - 01:30:54,680] Let's just call the circumference 2 pi r
+- [01:30:54,680 - 01:31:01,680] That's just what I'm calling the circumference
+- [01:31:01,680 - 01:31:05,680] If I take the momentum along the r direction
+- [01:31:05,680 - 01:31:07,680] The momentum along...
+- [01:31:07,680 - 01:31:09,680] Sorry, along the circumference
+- [01:31:09,680 - 01:31:13,680] Let's call that p along the circumference
+- [01:31:13,680 - 01:31:14,680] Pc
+- [01:31:14,680 - 01:31:16,680] P along the circumference
+- [01:31:16,680 - 01:31:20,680] And I multiply it by r
+- [01:31:20,680 - 01:31:22,680] Which is the circumference divided by 2 pi
+- [01:31:22,680 - 01:31:23,680] I get something like this
+- [01:31:23,680 - 01:31:26,680] I get something which looks like an angular momentum
+- [01:31:26,680 - 01:31:29,680] In fact it is a kind of angular momentum
+- [01:31:29,680 - 01:31:30,680] It's...
+- [01:31:30,680 - 01:31:33,680] There's an angle associated with this circle
+- [01:31:33,680 - 01:31:36,680] It's just an angular position along here
+- [01:31:36,680 - 01:31:38,680] And p times r
+- [01:31:38,680 - 01:31:39,680] It's just like...
+- [01:31:39,680 - 01:31:41,680] It is like angular momentum
+- [01:31:41,680 - 01:31:42,680] Okay
+- [01:31:42,680 - 01:31:43,680] That's quantized
+- [01:31:43,680 - 01:31:46,680] In integer multiples
+- [01:31:46,680 - 01:31:50,680] Of Planck's constant
+- [01:31:50,680 - 01:31:51,680] So...
+- [01:31:51,680 - 01:31:52,680] The momentum...
+- [01:31:53,680 - 01:31:59,680] Along the circumference
+- [01:31:59,680 - 01:32:01,680] The momentum along the circumference
+- [01:32:01,680 - 01:32:04,680] Is quantized in units
+- [01:32:04,680 - 01:32:06,680] If we set Planck's constant to 1
+- [01:32:09,680 - 01:32:12,680] Then the unit of momentum is 1 over r
+- [01:32:13,680 - 01:32:17,680] Let's suppose the particle we're talking about is massless
+- [01:32:17,680 - 01:32:20,680] If it happens to be a massless particle
+- [01:32:20,680 - 01:32:21,680] Then its momentum...
+- [01:32:21,680 - 01:32:23,680] Or the magnitude of its momentum
+- [01:32:23,680 - 01:32:27,680] Is the same as the magnitude of its energy
+- [01:32:27,680 - 01:32:29,680] Energy for a massless particle
+- [01:32:29,680 - 01:32:31,680] Is equal to the momentum
+- [01:32:31,680 - 01:32:33,680] Of course there's a factor of the speed of light
+- [01:32:33,680 - 01:32:36,680] Apart from the factor of the speed of light
+- [01:32:36,680 - 01:32:41,680] Energy is equal to the magnitude of the momentum
+- [01:32:41,680 - 01:32:43,680] This component of the momentum
+- [01:32:43,680 - 01:32:45,680] Can be positive or negative
+- [01:32:45,680 - 01:32:47,680] And it's an integer
+- [01:32:47,680 - 01:32:49,680] The implication is
+- [01:32:49,680 - 01:32:51,680] That there is a quantized amount of energy
+- [01:32:51,680 - 01:32:53,680] Even if the particle is not moving
+- [01:32:53,680 - 01:32:55,680] Along the horizontal direction
+- [01:32:55,680 - 01:32:57,680] If it's moving in the circular direction
+- [01:32:57,680 - 01:32:59,680] It has an energy
+- [01:32:59,680 - 01:33:01,680] Which is n units divided by r
+- [01:33:01,680 - 01:33:03,680] Alright?
+- [01:33:03,680 - 01:33:05,680] That energy
+- [01:33:05,680 - 01:33:07,680] It's from our point of view
+- [01:33:07,680 - 01:33:09,680] While we don't see the circular direction
+- [01:33:09,680 - 01:33:11,680] It's just a thing standing still
+- [01:33:11,680 - 01:33:13,680] It's a thing standing still
+- [01:33:13,680 - 01:33:15,680] But the manifestation of the fact
+- [01:33:15,680 - 01:33:17,680] That it's moving in the circular direction
+- [01:33:17,680 - 01:33:19,680] Is a thing standing still
+- [01:33:19,680 - 01:33:21,680] But the manifestation of the fact
+- [01:33:21,680 - 01:33:22,680] That it's moving
+- [01:33:22,680 - 01:33:24,680] Is that it has some energy
+- [01:33:24,680 - 01:33:26,680] It has some mass
+- [01:33:26,680 - 01:33:28,680] This is the mass now
+- [01:33:28,680 - 01:33:29,680] Of the particle
+- [01:33:29,680 - 01:33:31,680] And it comes in integer multiples
+- [01:33:31,680 - 01:33:34,680] Of one over r
+- [01:33:34,680 - 01:33:36,680] The smaller r is
+- [01:33:36,680 - 01:33:38,680] The bigger the spacing
+- [01:33:38,680 - 01:33:41,680] Between mass levels
+- [01:33:43,680 - 01:33:45,680] The bigger the spacing between mass levels
+- [01:33:45,680 - 01:33:47,680] So
+- [01:33:47,680 - 01:33:48,680] By knowing
+- [01:33:48,680 - 01:33:50,680] The spacing
+- [01:33:50,680 - 01:33:51,680] Of course
+- [01:33:51,680 - 01:33:52,680] We don't measure any of this
+- [01:33:52,680 - 01:33:54,680] But in principle
+- [01:33:54,680 - 01:33:56,680] By measuring
+- [01:33:56,680 - 01:33:58,680] The spacing between
+- [01:33:58,680 - 01:34:01,680] The masses of these different particles
+- [01:34:01,680 - 01:34:02,680] How are they different?
+- [01:34:02,680 - 01:34:04,680] They're different from a macroscopic
+- [01:34:04,680 - 01:34:05,680] From our point of view
+- [01:34:05,680 - 01:34:06,680] They look different
+- [01:34:06,680 - 01:34:08,680] They have different masses
+- [01:34:08,680 - 01:34:11,680] From the point of view of a small object
+- [01:34:11,680 - 01:34:12,680] You know, a small detector
+- [01:34:12,680 - 01:34:14,680] Which can see inside this thing
+- [01:34:14,680 - 01:34:15,680] They're just particles
+- [01:34:15,680 - 01:34:16,680] Which have different components
+- [01:34:16,680 - 01:34:18,680] Of momentum in this direction
+- [01:34:18,680 - 01:34:20,680] We call them different particles
+- [01:34:20,680 - 01:34:22,680] Because they have different masses
+- [01:34:22,680 - 01:34:24,680] And the spectrum of them
+- [01:34:24,680 - 01:34:26,680] Namely the spacing between them
+- [01:34:26,680 - 01:34:28,680] Tells us how big
+- [01:34:28,680 - 01:34:30,680] The internal space is
+- [01:34:32,680 - 01:34:34,680] The bigger the internal space
+- [01:34:34,680 - 01:34:36,680] The closer the levels
+- [01:34:36,680 - 01:34:38,680] Let's draw a level diagram
+- [01:34:42,680 - 01:34:44,680] Energy
+- [01:34:44,680 - 01:34:46,680] Energy equals zero or more
+- [01:34:46,680 - 01:34:47,680] Of energy
+- [01:34:47,680 - 01:34:50,680] Energy equals zero or mass
+- [01:34:50,680 - 01:34:53,680] Mass equals zero is right over here
+- [01:34:53,680 - 01:34:54,680] Then we can have
+- [01:34:54,680 - 01:34:57,680] Plus one unit
+- [01:34:57,680 - 01:35:00,680] Of rotational momentum around here
+- [01:35:00,680 - 01:35:02,680] That would give us a particle of
+- [01:35:02,680 - 01:35:06,680] Mass one over r
+- [01:35:06,680 - 01:35:07,680] And so forth
+- [01:35:07,680 - 01:35:10,680] What about if n is negative?
+- [01:35:10,680 - 01:35:13,680] Does that mean it has negative energy?
+- [01:35:13,680 - 01:35:14,680] No
+- [01:35:14,680 - 01:35:16,680] The energy is the absolute value
+- [01:35:16,680 - 01:35:17,680] I think I erased it
+- [01:35:17,680 - 01:35:19,680] The energy is always positive
+- [01:35:19,680 - 01:35:21,680] So there's a particle of mass one over r here
+- [01:35:21,680 - 01:35:24,680] There's a particle of mass one over r here
+- [01:35:24,680 - 01:35:29,680] Two over r minus or two over r
+- [01:35:29,680 - 01:35:31,680] The spacing between the mass levels
+- [01:35:31,680 - 01:35:34,680] Is a direct reflection
+- [01:35:34,680 - 01:35:36,680] Of how big the circle is
+- [01:35:36,680 - 01:35:37,680] The smaller the circle
+- [01:35:37,680 - 01:35:40,680] The larger the spacing
+- [01:35:40,680 - 01:35:43,680] If this circle is very, very big
+- [01:35:43,680 - 01:35:46,680] Then the levels are very, very close together
+- [01:35:46,680 - 01:35:49,680] So if we discovered
+- [01:35:49,680 - 01:35:51,680] Excited states of particles
+- [01:35:51,680 - 01:35:54,680] Which were very, very, very densely spaced
+- [01:35:54,680 - 01:35:56,680] We would say
+- [01:35:56,680 - 01:35:58,680] Oh, it looks like there's an extra big
+- [01:35:58,680 - 01:36:00,680] Rather big dimension
+- [01:36:00,680 - 01:36:02,680] If we find that the spacing
+- [01:36:02,680 - 01:36:04,680] Due to this kind of motion
+- [01:36:04,680 - 01:36:06,680] Is very, very sparse
+- [01:36:06,680 - 01:36:08,680] Then we say that dimension is small
+- [01:36:08,680 - 01:36:09,680] Right?
+- [01:36:09,680 - 01:36:11,680] Okay
+- [01:36:11,680 - 01:36:13,680] So these are the energy levels
+- [01:36:13,680 - 01:36:15,680] For
+- [01:36:16,680 - 01:36:19,680] The components of mass of a
+- [01:36:19,680 - 01:36:21,680] Or the mass of a particle
+- [01:36:21,680 - 01:36:24,680] Where the particle is simply a particle
+- [01:36:24,680 - 01:36:26,680] Moving around this direction
+- [01:36:26,680 - 01:36:28,680] Now you can do something else
+- [01:36:28,680 - 01:36:30,680] In a compact space
+- [01:36:30,680 - 01:36:32,680] You can have a different kind of particle
+- [01:36:32,680 - 01:36:34,680] Which from the outside
+- [01:36:34,680 - 01:36:35,680] Meaning from the big dimensions
+- [01:36:35,680 - 01:36:37,680] Just looks like a particle
+- [01:36:37,680 - 01:36:40,680] But which has an entirely different structure
+- [01:36:40,680 - 01:36:42,680] Oh, incidentally
+- [01:36:42,680 - 01:36:45,680] If all particles are strings
+- [01:36:45,680 - 01:36:48,680] If particles really are strings
+- [01:36:48,680 - 01:36:50,680] Then I might want to draw this
+- [01:36:50,680 - 01:36:52,680] As a little string over here
+- [01:36:54,680 - 01:36:56,680] But just think of it as an almost
+- [01:36:56,680 - 01:36:57,680] Tiny little particle
+- [01:36:57,680 - 01:36:59,680] Let's forget the fact that it spreads out
+- [01:36:59,680 - 01:37:01,680] It's a tiny particle
+- [01:37:01,680 - 01:37:02,680] And it moves around
+- [01:37:02,680 - 01:37:04,680] The whole center of mass of it
+- [01:37:04,680 - 01:37:06,680] Moves around
+- [01:37:06,680 - 01:37:08,680] And gives it a
+- [01:37:08,680 - 01:37:10,680] A series of energies in this way
+- [01:37:10,680 - 01:37:12,680] But there's something else you can do
+- [01:37:12,680 - 01:37:14,680] The other thing you can do with a string
+- [01:37:14,680 - 01:37:17,680] And a compact space like this
+- [01:37:17,680 - 01:37:20,680] Is wind the string around
+- [01:37:20,680 - 01:37:22,680] Like that
+- [01:37:22,680 - 01:37:24,680] Here
+- [01:37:25,680 - 01:37:26,680] This
+- [01:37:26,680 - 01:37:28,680] Band around here
+- [01:37:28,680 - 01:37:31,680] Is once wound around the cylinder of the cup
+- [01:37:31,680 - 01:37:33,180] I can take a rubber band
+- [01:37:33,180 - 01:37:34,680] and wind it around that way
+- [01:37:36,680 - 01:37:39,680] That can also move up and down the axis
+- [01:37:40,680 - 01:37:42,680] First of all, it's localized
+- [01:37:42,680 - 01:37:44,680] It's at a definite place
+- [01:37:44,680 - 01:37:46,680] In the big dimensions
+- [01:37:46,680 - 01:37:49,680] So it has a location from our point of view
+- [01:37:49,680 - 01:37:50,680] It can move
+- [01:37:50,680 - 01:37:52,680] It can move up and down
+- [01:37:52,680 - 01:37:54,680] It's a particle
+- [01:37:54,680 - 01:37:56,680] It's also a particle
+- [01:37:56,680 - 01:37:58,680] It's a particle which is
+- [01:37:58,680 - 01:38:01,680] Wound around the extra dimension
+- [01:38:02,680 - 01:38:04,680] What is its mass?
+- [01:38:04,680 - 01:38:05,680] What is its mass?
+- [01:38:05,680 - 01:38:06,680] Its mass now
+- [01:38:06,680 - 01:38:10,680] Is not due to its motion in this direction
+- [01:38:10,680 - 01:38:12,680] It's due to the potential energy
+- [01:38:12,680 - 01:38:14,680] of stretching a string around it
+- [01:38:14,680 - 01:38:16,680] So we can show you
+- [01:38:16,680 - 01:38:18,680] How much energy would we expect
+- [01:38:18,680 - 01:38:20,680] To be in a string stretched around here
+- [01:38:20,680 - 01:38:21,680] The answer, clearly, will be proportional
+- [01:38:21,680 - 01:38:22,680] to the length of the string
+- [01:38:22,680 - 01:38:24,680] There's a certain tension in the energy per unit length
+- [01:38:24,680 - 01:38:26,680] For every string
+- [01:38:26,680 - 01:38:28,680] Let's set it equal to 1
+- [01:38:28,680 - 01:38:30,680] We won't worry about the units tonight
+- [01:38:30,680 - 01:38:32,680] Tonight, I'll ignore units
+- [01:38:32,680 - 01:38:36,680] Set just working units where the string tension is 1
+- [01:38:36,680 - 01:38:40,680] If the string is stretched out to a certain distance
+- [01:38:40,680 - 01:38:42,680] Then the mass will be equal to 1
+- [01:38:42,680 - 01:38:43,680] How does it work?
+- [01:38:43,680 - 01:38:46,150] Then the mass that that string has is
+- [01:38:46,150 - 01:38:48,620] proportional to the length of the stretch string
+- [01:38:49,700 - 01:38:52,730] How about a string which is wrapped around this direction?
+- [01:38:52,730 - 01:38:55,760] What would you expect its mass to be proportional to?
+- [01:38:57,560 - 01:38:59,840] The circumference, R. Yeah, the
+- [01:38:59,840 - 01:39:02,120] radius of the circumference. So
+- [01:39:03,740 - 01:39:06,380] This one will have a mass
+- [01:39:06,380 - 01:39:09,020] equal to R, or proportional to R
+- [01:39:09,660 - 01:39:11,980] But you know you can wrap it around several times
+- [01:39:11,980 - 01:39:14,659] That I can't do with the coffee
+- [01:39:14,659 - 01:39:17,339] cup, but I can draw it I think
+- [01:39:27,660 - 01:39:30,260] No, no, but I want to connect it back
+- [01:39:30,260 - 01:39:32,860] together again. Oh, I know I know I got it
+- [01:39:35,599 - 01:39:37,599] Yeah
+- [01:39:38,040 - 01:39:41,799] It crosses here and connects back here
+- [01:39:41,980 - 01:39:44,699] Can you see it? If I had
+- [01:39:44,699 - 01:39:47,419] a rubber band I could wrap it
+- [01:39:48,120 - 01:39:50,890] You can wrap a rubber band twice around here.
+- [01:39:50,890 - 01:39:53,660] You take it twist it and put it on here
+- [01:39:54,139 - 01:39:55,979] All right. How about this one? What's the
+- [01:39:55,979 - 01:39:57,820] mass of it? How much energy does it have?
+- [01:39:58,940 - 01:40:00,419] 2R
+- [01:40:00,419 - 01:40:02,540] twice as much, twice as much stretching
+- [01:40:03,200 - 01:40:05,200] so we have
+- [01:40:05,639 - 01:40:09,980] R, we have energy R, we have energy 2R
+- [01:40:09,980 - 01:40:11,980] 3R, 4R
+- [01:40:11,980 - 01:40:15,080] If the string has an orientation
+- [01:40:15,440 - 01:40:16,670] In other words if you think
+- [01:40:16,670 - 01:40:17,900] of the string as having a direction
+- [01:40:17,900 - 01:40:19,780] Then you can wrap it positively or you can wrap
+- [01:40:19,780 - 01:40:21,660] it negatively. Here's one wrapped positively. Here's one wrapped negatively
+- [01:40:21,660 - 01:40:24,140] So this wrapping or winding number, it's called
+- [01:40:24,140 - 01:40:26,620] winding number, the winding number can be positive
+- [01:40:26,620 - 01:40:29,530] Imagine you have a rubber band, but on the rubber band
+- [01:40:29,530 - 01:40:32,440] you draw little arrows to give it a sense of direction
+- [01:40:32,440 - 01:40:34,440] And you're going to wrap it around your wrist
+- [01:40:34,440 - 01:40:36,160] You're going to put it on your wrist
+- [01:40:36,160 - 01:40:38,120] And you're going to wrap it around your wrist
+- [01:40:38,120 - 01:40:41,450] And you're going to wrap it around your wrist. You can wrap it around your
+- [01:40:41,450 - 01:40:44,780] wrist so the arrows are in this way or so that they run this way
+- [01:40:45,780 - 01:40:49,240] So the winding number can be either positive or negative
+- [01:40:49,620 - 01:40:52,120] But whatever the winding number is
+- [01:40:52,680 - 01:40:55,230] The mass of that string is
+- [01:40:55,230 - 01:40:57,780] equal to the absolute as R
+- [01:40:57,920 - 01:41:00,480] Times the absolute value of the winding number
+- [01:41:00,800 - 01:41:03,880] Okay, so there's another spectrum of particles here
+- [01:41:05,440 - 01:41:07,440] And that spectrum of particles has
+- [01:41:07,440 - 01:41:10,769] energy levels whose distance is
+- [01:41:10,769 - 01:41:14,099] not proportional to 1 over R
+- [01:41:14,099 - 01:41:16,079] But it's proportional to R itself.
+- [01:41:16,079 - 01:41:18,059] Let's suppose R is very small
+- [01:41:18,059 - 01:41:21,200] Let's suppose that R is very very small
+- [01:41:21,200 - 01:41:24,200] Then this spacing is large
+- [01:41:24,200 - 01:41:26,700] And this spacing is very small
+- [01:41:30,120 - 01:41:32,839] It takes very little energy
+- [01:41:32,839 - 01:41:35,559] to wrap around a small circle
+- [01:41:35,559 - 01:41:37,099] Okay
+- [01:41:37,440 - 01:41:41,440] But for the particles which are not wrapped
+- [01:41:41,440 - 01:41:43,820] But which are not wound around
+- [01:41:43,820 - 01:41:45,480] But which are moving around
+- [01:41:45,480 - 01:41:47,780] Literally moving and have momentum
+- [01:41:47,780 - 01:41:51,700] The spacing between levels is large if R is small
+- [01:41:51,700 - 01:41:54,189] So we have these two spectra
+- [01:41:54,189 - 01:41:56,679] of two different kinds of particles
+- [01:41:56,679 - 01:41:58,679] One is called
+- [01:41:58,679 - 01:42:01,480] These ones here are called Kaluza-Klein particles
+- [01:42:01,480 - 01:42:04,200] They were this idea has been around
+- [01:42:04,200 - 01:42:06,120] Of particles having momentum and an extra amount of energy
+- [01:42:06,120 - 01:42:06,720] They were this idea has been around of
+- [01:42:06,720 - 01:42:07,320] particles having momentum and an extra amount of energy
+- [01:42:07,320 - 01:42:08,320] They are called Kaluza-Klein particles
+- [01:42:08,320 - 01:42:09,320] They have a very large and compact direction
+- [01:42:09,320 - 01:42:11,320] That goes back to beginnings of general relativity
+- [01:42:11,320 - 01:42:13,320] They have a very large and compact direction
+- [01:42:13,320 - 01:42:15,320] Kaluza-Klein particles
+- [01:42:15,320 - 01:42:17,320] First had the idea 1917 I think
+- [01:42:17,320 - 01:42:19,320] First had the idea 1917 I think
+- [01:42:19,320 - 01:42:21,320] And it's grown up a great deal since then
+- [01:42:21,320 - 01:42:23,320] And it's grown up a great deal since then
+- [01:42:23,320 - 01:42:25,320] But string theory
+- [01:42:25,320 - 01:42:26,200] But string theory
+- [01:42:26,200 - 01:42:29,200] Introduced the new idea of wound particles
+- [01:42:29,200 - 01:42:31,200] Particles wound around
+- [01:42:31,200 - 01:42:33,200] And they have very complementary kind of spectra
+- [01:42:33,200 - 01:42:35,200] And they have very complementary kind of spectra
+- [01:42:35,200 - 01:42:37,200] So if you see particles
+- [01:42:37,320 - 01:42:39,320] With a large spacing
+- [01:42:39,320 - 01:42:42,320] You must also see particles with a small spacing
+- [01:42:42,320 - 01:42:44,320] You must also see particles with a small spacing
+- [01:42:44,320 - 01:42:47,820] Both combinations together would tell you something
+- [01:42:47,820 - 01:42:51,320] about the nature of the compact directions
+- [01:42:51,320 - 01:42:53,320] But notice
+- [01:42:53,320 - 01:42:55,320] But notice that there is no way
+- [01:42:55,320 - 01:42:59,320] To make the spacing arbitrarily large
+- [01:42:59,320 - 01:43:01,320] Here
+- [01:43:01,320 - 01:43:03,320] Without having very small spacing
+- [01:43:03,320 - 01:43:04,320] Small spacing of course means that it
+- [01:43:04,320 - 01:43:05,320] just takes a little bit of energy
+- [01:43:05,320 - 01:43:07,320] To create one of these things
+- [01:43:07,320 - 01:43:09,539] On the other hand, what happens
+- [01:43:09,539 - 01:43:11,759] if you take R very big?
+- [01:43:12,599 - 01:43:14,700] Now imagine taking R very big.
+- [01:43:15,540 - 01:43:18,390] If you take R very big, then the
+- [01:43:18,390 - 01:43:21,240] spacing of these Kaluza-Klein particles is very small.
+- [01:43:22,120 - 01:43:23,719] These are very close together now.
+- [01:43:23,980 - 01:43:26,799] R is very big. 1 over R is very small.
+- [01:43:27,580 - 01:43:29,559] These become very closely spaced.
+- [01:43:29,780 - 01:43:30,740] And what happens to these?
+- [01:43:31,799 - 01:43:34,219] They get very widely spaced.
+- [01:43:34,220 - 01:43:37,170] Why? Because it just takes a lot of energy
+- [01:43:37,170 - 01:43:40,120] to wrap it around a very, very big cylinder here.
+- [01:43:40,880 - 01:43:44,200] So you have these two complementary kinds of particles.
+- [01:43:44,340 - 01:43:45,140] There's almost a symmetry.
+- [01:43:45,800 - 01:43:48,460] There's almost a symmetry of the spectrum
+- [01:43:48,460 - 01:43:51,120] where you replace R by 1 over R.
+- [01:43:51,840 - 01:43:54,940] You replace R by 1 over R,
+- [01:43:54,940 - 01:43:58,040] and you replace momentum by winding number.
+- [01:43:59,900 - 01:44:01,040] And what happens?
+- [01:44:01,040 - 01:44:02,720] You just interchange these two.
+- [01:44:03,820 - 01:44:04,160] And?
+- [01:44:04,280 - 01:44:05,540] The spectrum stays the same.
+- [01:44:07,140 - 01:44:10,160] That seems to be a symmetry
+- [01:44:10,160 - 01:44:13,180] of the spectrum of string theory.
+- [01:44:14,420 - 01:44:16,840] This only applies to the extra dimensions.
+- [01:44:17,080 - 01:44:18,770] There's no way to wrap
+- [01:44:18,770 - 01:44:20,460] a string around the real x-axis.
+- [01:44:20,560 - 01:44:21,060] It's infinite.
+- [01:44:21,720 - 01:44:23,740] But as applied to the extra dimensions,
+- [01:44:24,480 - 01:44:26,740] there seems to be a symmetry where
+- [01:44:26,740 - 01:44:29,000] you replace R by 1 over R,
+- [01:44:30,080 - 01:44:32,560] winding by momentum around that direction,
+- [01:44:32,560 - 01:44:36,960] and the system comes back to itself.
+- [01:44:38,200 - 01:44:40,740] Is this the same as the vertical versus the horizontal?
+- [01:44:40,820 - 01:44:41,440] No, no, no, no.
+- [01:44:41,440 - 01:44:43,360] This is not the vertical versus the horizontal.
+- [01:44:43,360 - 01:44:50,600] This is the duality between winding number and momentum,
+- [01:44:51,100 - 01:44:52,240] and Kaluza-Klein momentum.
+- [01:44:53,180 - 01:44:54,720] Now, from what I've told you,
+- [01:44:55,540 - 01:44:59,040] it's hardly clear that this is
+- [01:44:59,040 - 01:45:02,540] an exact equivalence in every possible respect.
+- [01:45:02,680 - 01:45:05,310] It's just an equivalence of the
+- [01:45:05,310 - 01:45:07,940] energy spectrum of some simple particles.
+- [01:45:08,240 - 01:45:10,300] In fact, it's an exact symmetry of the theory.
+- [01:45:11,200 - 01:45:13,620] If you take a compact direction,
+- [01:45:14,520 - 01:45:18,820] and you start shrinking it down smaller and smaller,
+- [01:45:19,440 - 01:45:21,020] well, at some point, incidentally,
+- [01:45:21,580 - 01:45:24,140] the spectra will be equal.
+- [01:45:24,780 - 01:45:25,980] There's some radius.
+- [01:45:26,260 - 01:45:28,770] There's some radius where the
+- [01:45:28,770 - 01:45:31,280] spacing between the Kaluza-Klein particles
+- [01:45:31,280 - 01:45:32,540] and the winding particles,
+- [01:45:32,660 - 01:45:33,300] will be the same.
+- [01:45:34,120 - 01:45:36,760] We could call that R equals 1 in some units.
+- [01:45:37,760 - 01:45:39,540] At R equals 1, the spectrum are the same.
+- [01:45:40,280 - 01:45:41,840] Otherwise, they cross.
+- [01:45:44,840 - 01:45:47,310] If you start trying to make
+- [01:45:47,310 - 01:45:49,780] the radius of compactification smaller and smaller,
+- [01:45:50,040 - 01:45:51,840] you eventually get to this point,
+- [01:45:52,160 - 01:45:53,360] where when you cross it,
+- [01:45:53,480 - 01:45:56,360] you can either think of it as
+- [01:45:56,360 - 01:45:59,240] saying that the size is smaller than 1,
+- [01:45:59,960 - 01:46:02,260] or you can interchange winding,
+- [01:46:02,540 - 01:46:04,240] and momentum,
+- [01:46:04,500 - 01:46:06,500] and say it's bigger than 1.
+- [01:46:07,400 - 01:46:09,400] There's no sense,
+- [01:46:09,940 - 01:46:11,940] in a certain sense,
+- [01:46:11,940 - 01:46:12,940] there,
+- [01:46:12,940 - 01:46:15,940] it's not possible to think about string theory
+- [01:46:16,780 - 01:46:19,640] where R is smaller than a certain size.
+- [01:46:19,640 - 01:46:20,840] Oh, you can think of it if you
+- [01:46:20,840 - 01:46:22,040] want to make it smaller than a certain size,
+- [01:46:22,040 - 01:46:24,440] but all that happens is it rearranges itself
+- [01:46:24,900 - 01:46:26,400] so that it looks like
+- [01:46:26,400 - 01:46:27,900] string theory on the larger space.
+- [01:46:29,519 - 01:46:30,019] Yeah.
+- [01:46:30,420 - 01:46:32,519] Does R less than 1,
+- [01:46:32,520 - 01:46:33,820] and R greater than 1,
+- [01:46:33,820 - 01:46:35,620] are those different kinds of particles?
+- [01:46:35,620 - 01:46:36,820] Are they all fermions?
+- [01:46:37,560 - 01:46:42,920] Oh, fermions, bosons, they all do the same thing.
+- [01:46:42,920 - 01:46:45,220] Oh, so there's 10 or 26 dimensions,
+- [01:46:45,220 - 01:46:47,920] it's, it applies to both.
+- [01:46:48,920 - 01:46:52,220] Yeah, yeah, it applies to every compact direction.
+- [01:46:52,920 - 01:46:55,720] Here I've only indicated one compact direction,
+- [01:46:57,820 - 01:46:58,520] circle.
+- [01:46:59,120 - 01:47:02,480] We can apply it to problems with several compact directions,
+- [01:47:02,520 - 01:47:06,520] but this is a kind of freakish, surprising result
+- [01:47:06,520 - 01:47:09,520] that's characteristic, really, of string theory.
+- [01:47:09,520 - 01:47:12,520] It is not characteristic of point
+- [01:47:12,520 - 01:47:15,520] particles moving in enclosed spaces like this.
+- [01:47:16,020 - 01:47:20,520] It's the interchange of winding with momentum.
+- [01:47:20,520 - 01:47:22,520] That hardly seems an obvious thing to do.
+- [01:47:23,020 - 01:47:26,520] Remarkably, the entire theory, the scattering amplitudes,
+- [01:47:26,520 - 01:47:29,520] the spectrum of particles, the whole works,
+- [01:47:30,520 - 01:47:32,520] is symmetric under this interchange.
+- [01:47:32,520 - 01:47:35,520] But one open string and the other closed string?
+- [01:47:35,520 - 01:47:37,520] No, no, no, no, they're both closed strings.
+- [01:47:37,520 - 01:47:39,520] Closed strings, closed strings.
+- [01:47:39,520 - 01:47:41,520] Open strings, it doesn't make any sense to wind around,
+- [01:47:41,520 - 01:47:42,520] they just unwind themselves.
+- [01:47:42,520 - 01:47:44,520] But I'm comparing them to the...
+- [01:47:44,520 - 01:47:46,520] No, no, they're both closed strings.
+- [01:47:46,520 - 01:47:48,520] In a theory, I should have said that,
+- [01:47:48,520 - 01:47:50,520] in a theory of closed strings,
+- [01:47:50,520 - 01:47:52,520] there's this interchange symmetry.
+- [01:47:54,520 - 01:47:57,520] Open strings are a little more complicated.
+- [01:47:57,520 - 01:47:59,520] Yeah, and we'll talk about them.
+- [01:47:59,520 - 01:48:02,520] Would that be similar to the black hole analogy,
+- [01:48:02,520 - 01:48:05,520] where dimensions become time-like,
+- [01:48:05,520 - 01:48:07,520] and time becomes dimension-like?
+- [01:48:07,520 - 01:48:08,520] Nope.
+- [01:48:08,520 - 01:48:09,520] Nope.
+- [01:48:09,520 - 01:48:10,520] Nope.
+- [01:48:10,520 - 01:48:12,520] What it is, is it's
+- [01:48:12,520 - 01:48:14,520] saying that there's a certain distance
+- [01:48:14,520 - 01:48:16,520] where when you try to think of
+- [01:48:16,520 - 01:48:18,520] string theory on a space smaller than that,
+- [01:48:18,520 - 01:48:20,020] it's equivalent to string theory
+- [01:48:20,020 - 01:48:21,520] on a space bigger than that.
+- [01:48:22,520 - 01:48:26,520] Trying to shrink the diameter of a compactification
+- [01:48:26,520 - 01:48:29,520] to arbitrarily small distances, you get frustrated.
+- [01:48:29,520 - 01:48:32,520] It just rearranges itself,
+- [01:48:32,520 - 01:48:34,020] so that it looks like
+- [01:48:34,020 - 01:48:35,520] the theory on a bigger space.
+- [01:48:35,520 - 01:48:39,520] Does that help get rid of self-energies?
+- [01:48:39,520 - 01:48:42,020] Well, it does say in some sense
+- [01:48:42,020 - 01:48:44,520] there's a smaller size scale in string theory,
+- [01:48:44,520 - 01:48:51,520] but it keeps things from being infinite, yes.
+- [01:48:56,520 - 01:48:58,520] Well, that's true if you have a winding number, right?
+- [01:48:58,520 - 01:49:01,520] What's to say that there is a winding number?
+- [01:49:01,520 - 01:49:03,520] Is that just a theoretical model, or
+- [01:49:03,520 - 01:49:05,520] is there an analogy to physical space?
+- [01:49:10,520 - 01:49:13,520] In the absence of a winding number, right?
+- [01:49:13,520 - 01:49:16,520] If you have a compact dimension,
+- [01:49:16,520 - 01:49:20,520] then it's possible to think of strings which are round.
+- [01:49:20,520 - 01:49:22,520] Are you asking...
+- [01:49:22,520 - 01:49:24,520] Maybe you're asking how you make them
+- [01:49:24,520 - 01:49:26,520] if you don't have them to begin with.
+- [01:49:26,520 - 01:49:28,520] Well, I'm asking if there is
+- [01:49:28,520 - 01:49:30,520] no existence of a winding number.
+- [01:49:30,520 - 01:49:33,520] A winding number or a particle with a winding number?
+- [01:49:33,520 - 01:49:35,520] A particle with a winding number.
+- [01:49:35,520 - 01:49:37,520] You can make them.
+- [01:49:37,520 - 01:49:39,520] I'll show you how to make them.
+- [01:49:47,520 - 01:49:49,520] We do have to start with something.
+- [01:49:52,520 - 01:49:54,020] So we start with a
+- [01:49:54,020 - 01:49:55,520] particle which has no winding number.
+- [01:49:55,520 - 01:49:57,520] That's a little string that looks like that.
+- [01:49:57,520 - 01:49:58,520] Okay?
+- [01:49:58,520 - 01:49:59,520] Now we take this,
+- [01:49:59,520 - 01:50:01,520] and we pull it around,
+- [01:50:01,520 - 01:50:03,520] we stretch it out.
+- [01:50:03,520 - 01:50:06,520] It's still got no winding number.
+- [01:50:06,520 - 01:50:08,520] It's not wound around the thing.
+- [01:50:08,520 - 01:50:11,520] And now we stretch it all the way around here
+- [01:50:11,520 - 01:50:13,520] so that it comes back the back side
+- [01:50:17,520 - 01:50:19,520] and comes up over here.
+- [01:50:22,520 - 01:50:24,520] Can you see what I've done?
+- [01:50:24,520 - 01:50:26,520] It still has no winding number.
+- [01:50:26,520 - 01:50:29,520] The winding number of this piece is canceled out.
+- [01:50:29,520 - 01:50:31,520] It's canceled out by the winding number of that piece.
+- [01:50:31,520 - 01:50:33,520] So you take your arm,
+- [01:50:33,520 - 01:50:35,520] you take the rubber band,
+- [01:50:35,520 - 01:50:37,520] and you pull it around,
+- [01:50:37,520 - 01:50:40,520] and then take the two pieces here.
+- [01:50:40,520 - 01:50:42,520] And that's what you're left with.
+- [01:50:42,520 - 01:50:44,520] That still has no winding number.
+- [01:50:44,520 - 01:50:46,520] But remember now that in string theory,
+- [01:50:46,520 - 01:50:49,520] the basic process of interaction is for things like this
+- [01:50:49,520 - 01:50:51,520] to become things like this.
+- [01:50:51,520 - 01:50:53,520] Rearrangement.
+- [01:50:53,520 - 01:50:55,520] So if you sit there for a while,
+- [01:50:55,520 - 01:50:57,520] this string will rearrange and form that.
+- [01:50:57,520 - 01:51:00,520] Now what does this have?
+- [01:51:00,520 - 01:51:04,520] It has two particles with opposite winding number.
+- [01:51:04,520 - 01:51:06,520] Okay?
+- [01:51:06,520 - 01:51:09,520] We still have a net zero winding number.
+- [01:51:09,520 - 01:51:10,520] One is wound one way,
+- [01:51:10,520 - 01:51:12,520] one is wound the other way.
+- [01:51:12,520 - 01:51:14,520] But now they're disconnected,
+- [01:51:14,520 - 01:51:16,520] and they're free to separate.
+- [01:51:19,520 - 01:51:21,520] Throw that one away.
+- [01:51:21,520 - 01:51:23,520] Just eject it out of the system.
+- [01:51:23,520 - 01:51:25,520] Give it some velocity.
+- [01:51:25,520 - 01:51:27,520] And when it gets off to alpha centauri,
+- [01:51:27,520 - 01:51:28,520] you forget about it,
+- [01:51:28,520 - 01:51:31,520] and you're left with a particle with winding number.
+- [01:51:34,520 - 01:51:37,520] So whether you like them or not,
+- [01:51:37,520 - 01:51:39,520] you can't forbid them.
+- [01:51:39,520 - 01:51:41,520] Some things you can try to forbid.
+- [01:51:41,520 - 01:51:43,520] You can say if they're not there to begin with,
+- [01:51:43,520 - 01:51:45,520] they'll never be there.
+- [01:51:45,520 - 01:51:47,520] Possibly.
+- [01:51:47,520 - 01:51:49,520] Some things you can't forbid
+- [01:51:49,520 - 01:51:51,520] because you can imagine
+- [01:51:51,520 - 01:51:53,520] that the processes of the theory itself,
+- [01:51:53,520 - 01:51:55,520] the important processes in the theory,
+- [01:51:55,520 - 01:51:57,520] can force them on you,
+- [01:51:57,520 - 01:51:59,520] and these get forced on you.
+- [01:51:59,520 - 01:52:01,520] Of course, they always get forced in pairs.
+- [01:52:01,520 - 01:52:03,520] But you can...
+- [01:52:03,520 - 01:52:05,520] That's...
+- [01:52:05,520 - 01:52:07,520] You throw away half of them
+- [01:52:07,520 - 01:52:09,520] and just do some experiments
+- [01:52:09,520 - 01:52:11,520] with the remaining ones.
+- [01:52:11,520 - 01:52:14,520] And this is with increasing energy,
+- [01:52:14,520 - 01:52:16,520] I guess, then?
+- [01:52:16,520 - 01:52:20,520] The Kaluzik-Klein closed string gets larger?
+- [01:52:20,520 - 01:52:22,520] Does that be more energy?
+- [01:52:22,520 - 01:52:23,520] Yeah, it does.
+- [01:52:23,520 - 01:52:25,520] It gets some energy not only from momentum,
+- [01:52:25,520 - 01:52:26,520] but from being stretched.
+- [01:52:26,520 - 01:52:28,520] It takes energy to do it.
+- [01:52:30,520 - 01:52:32,520] But you know, this is the sort of thing
+- [01:52:32,520 - 01:52:34,520] which would happen if you collided
+- [01:52:34,520 - 01:52:37,520] two particles with no winding number,
+- [01:52:37,520 - 01:52:39,520] just two Kaluzik-Klein particles.
+- [01:52:39,520 - 01:52:41,520] You collide them hard.
+- [01:52:41,520 - 01:52:44,520] Every possible combination of stuff happens.
+- [01:52:44,520 - 01:52:46,520] And among the things which would happen
+- [01:52:46,520 - 01:52:48,520] is these winding and anti-winding things
+- [01:52:48,520 - 01:52:50,520] would go flying off.
+- [01:52:52,520 - 01:52:54,520] And the logic is the same as the logic
+- [01:52:54,520 - 01:52:56,520] of electric charge.
+- [01:52:56,520 - 01:52:58,520] So, if you started with no electric charge,
+- [01:52:58,520 - 01:53:00,520] does that mean there would be no electrons?
+- [01:53:00,520 - 01:53:01,520] No.
+- [01:53:01,520 - 01:53:03,520] Any kind of collision that would take place
+- [01:53:03,520 - 01:53:05,520] would create electrons and positrons,
+- [01:53:05,520 - 01:53:07,520] and then the positrons could go flying off
+- [01:53:07,520 - 01:53:09,520] to some other place,
+- [01:53:09,520 - 01:53:12,520] and you'd be left with electrons.
+- [01:53:12,520 - 01:53:14,520] So the logic is really no different
+- [01:53:14,520 - 01:53:16,520] than electric charge.
+- [01:53:16,520 - 01:53:18,520] You can't not have electric charge
+- [01:53:18,520 - 01:53:21,520] because you can always make it in pairs.
+- [01:53:22,520 - 01:53:24,520] The net charge in the world
+- [01:53:24,520 - 01:53:26,520] might be zero, for all we know.
+- [01:53:26,520 - 01:53:32,520] The net winding number might be zero,
+- [01:53:32,520 - 01:53:34,520] but who cares?
+- [01:53:34,520 - 01:53:40,520] We can do experiments on a region
+- [01:53:40,520 - 01:53:42,520] which contains a winding number.
+- [01:53:42,520 - 01:53:44,520] So, yeah.
+- [01:53:44,520 - 01:53:47,520] This has a name, incidentally.
+- [01:53:47,520 - 01:53:50,520] The equivalence between theories
+- [01:53:50,520 - 01:53:52,520] which look different
+- [01:53:52,520 - 01:53:55,520] usually called a duality.
+- [01:53:56,520 - 01:53:59,520] This is called T-duality.
+- [01:53:59,520 - 01:54:02,520] Capital T-duality.
+- [01:54:02,520 - 01:54:05,520] And the T in this case stands for torus.
+- [01:54:07,520 - 01:54:09,520] T stands for torus.
+- [01:54:09,520 - 01:54:12,520] This is torus duality, or T-duality.
+- [01:54:12,520 - 01:54:15,520] And as I say, it's a duality which relates
+- [01:54:15,520 - 01:54:18,520] compactifications on very small geometries
+- [01:54:18,520 - 01:54:20,520] to compactifications on big geometries.
+- [01:54:20,520 - 01:54:22,520] And it's a rather startling thing.
+- [01:54:22,520 - 01:54:24,520] I mean, when it was first discovered,
+- [01:54:24,520 - 01:54:26,520] it surprised everybody.
+- [01:54:26,520 - 01:54:28,520] Good.
+- [01:54:28,520 - 01:54:32,520] What it means is that geometry defined
+- [01:54:32,520 - 01:54:35,520] in terms of how strings...
+- [01:54:35,520 - 01:54:39,520] Geometry can often be recovered
+- [01:54:39,520 - 01:54:41,520] or partly recovered
+- [01:54:41,520 - 01:54:46,520] from the spectrum of modes on a...
+- [01:54:46,520 - 01:54:48,520] The geometry of a drum head,
+- [01:54:48,520 - 01:54:49,520] the shape of a drum head.
+- [01:54:49,520 - 01:54:51,520] This is a famous mathematical question.
+- [01:54:51,520 - 01:54:54,520] Can the shape of a drum head
+- [01:54:54,520 - 01:54:56,520] be predicted from the sound of it?
+- [01:54:56,520 - 01:54:57,520] The sound that it makes,
+- [01:54:57,520 - 01:54:59,520] from the spectrum of vibrations?
+- [01:54:59,520 - 01:55:01,520] The answer is not quite,
+- [01:55:01,520 - 01:55:03,520] but you can predict a lot of the shape
+- [01:55:03,520 - 01:55:05,520] of the drum head.
+- [01:55:05,520 - 01:55:07,520] The same question applies
+- [01:55:07,520 - 01:55:09,520] to these compactifications.
+- [01:55:09,520 - 01:55:11,520] From the spectrum of particles,
+- [01:55:11,520 - 01:55:13,520] the spectrum of vibrational energies,
+- [01:55:13,520 - 01:55:15,520] vibrational and other kinds of energies,
+- [01:55:15,520 - 01:55:17,520] can you predict the shape
+- [01:55:17,520 - 01:55:20,520] or the size of the compact directions?
+- [01:55:20,520 - 01:55:23,520] And the answer is yes to a large extent.
+- [01:55:23,520 - 01:55:25,520] But...
+- [01:55:25,520 - 01:55:28,520] there are some ambiguities
+- [01:55:28,520 - 01:55:30,520] and some dualities
+- [01:55:30,520 - 01:55:33,520] that you can't tell if it's a tiny geometry
+- [01:55:33,520 - 01:55:35,520] or if it's a big geometry
+- [01:55:35,520 - 01:55:38,520] because these two go into each other.
+- [01:55:38,520 - 01:55:40,520] That would not be the case
+- [01:55:40,520 - 01:55:42,520] with a drum, I assure you.
+- [01:55:42,520 - 01:55:44,520] Uh...
+- [01:55:44,520 - 01:55:46,520] You would not mistake a small drum
+- [01:55:46,520 - 01:55:48,520] for a big drum.
+- [01:55:48,520 - 01:55:50,520] Okay, good.
+- [01:55:50,520 - 01:55:53,520] For more, please visit us at
+- [01:55:53,520 - 01:55:54,520] stanford.edu.
+- [01:55:55,520 - 01:55:55,793] Thank you.
