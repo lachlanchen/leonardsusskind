@@ -1,0 +1,1719 @@
+# Transcript
+
+Source: supplementary/string_theory/2010_fall_string_theory_and_m_theory/101 - Lecture 7 ｜ String Theory and M-Theory [V8XBsPIPKDg].mkv
+
+- [00:00:00,000 - 00:00:07,000] Stanford University
+- [00:00:07,000 - 00:00:20,000] Okay, let's go to the space-time view of string theory.
+- [00:00:20,000 - 00:00:27,000] What other kind of view could there be but space-time?
+- [00:00:27,000 - 00:00:30,500] But I mean, let's think of the blackboard
+- [00:00:30,500 - 00:00:34,000] as space-time and view what string theory looks like.
+- [00:00:34,000 - 00:00:36,000] First, let's do something simpler first.
+- [00:00:36,000 - 00:00:39,000] Let's just talk about an ordinary particle.
+- [00:00:39,000 - 00:00:43,000] An ordinary particle in
+- [00:00:43,000 - 00:00:47,000] classical mechanics has a trajectory.
+- [00:00:47,000 - 00:00:51,000] Both in non-relativistic physics and relativistic physics, the
+- [00:00:51,000 - 00:00:55,000] trajectory can be described by the three-dimensional position x
+- [00:00:55,000 - 00:00:57,000] as a function of t.
+- [00:00:57,000 - 00:00:59,000] But if you're doing relativity,
+- [00:00:59,000 - 00:01:01,000] there's something which is more convenient,
+- [00:01:01,000 - 00:01:04,500] and that's to take all four components,
+- [00:01:04,500 - 00:01:08,000] space components and time components of position,
+- [00:01:08,000 - 00:01:11,000] call them x mu, and think of
+- [00:01:11,000 - 00:01:14,000] them as a function of a variable
+- [00:01:14,000 - 00:01:18,500] which just denotes and demarks, let's say,
+- [00:01:18,500 - 00:01:23,000] proper time along the trajectory of tau.
+- [00:01:23,000 - 00:01:26,000] Let tau be the proper time along the trajectory.
+- [00:01:27,000 - 00:01:29,500] And then clearly, if you know
+- [00:01:29,500 - 00:01:32,000] the four-dimensional position at every proper time,
+- [00:01:32,000 - 00:01:35,000] or every value of this parameter here, then
+- [00:01:35,000 - 00:01:38,000] you can say exactly where the trajectory went.
+- [00:01:38,000 - 00:01:41,000] So there's a slight, well, maybe more than a
+- [00:01:41,000 - 00:01:44,000] slight, there's a difference of emphasis in non-relativistic physics
+- [00:01:44,000 - 00:01:47,500] where you think of x as a function of time, and in
+- [00:01:47,500 - 00:01:51,000] relativistic physics where you might be inclined to think of x mu,
+- [00:01:51,000 - 00:01:53,500] the four components of position, as a
+- [00:01:53,500 - 00:01:56,000] function of a parameter along the trajectory,
+- [00:01:56,000 - 00:01:59,000] a kind of scalar parameter along the trajectory.
+- [00:01:59,000 - 00:02:02,500] In each case, the motion of a particle is
+- [00:02:02,500 - 00:02:06,000] defined by an action, by a principle of least action.
+- [00:02:06,000 - 00:02:09,000] In the case of a non-relativistic system,
+- [00:02:09,000 - 00:02:12,000] for a free particle, forget potentials, nothing else,
+- [00:02:12,000 - 00:02:14,000] the action, which is usually called s,
+- [00:02:14,000 - 00:02:16,000] I don't know why it's called s,
+- [00:02:16,000 - 00:02:19,000] it's the same label as we use for
+- [00:02:19,000 - 00:02:22,000] entropy, and to make matters worse, in many cases,
+- [00:02:22,000 - 00:02:24,000] entropy and action turn out
+- [00:02:24,000 - 00:02:26,000] to be the same thing, numerically.
+- [00:02:26,000 - 00:02:32,000] But s is action, and for a non-relativistic particle,
+- [00:02:32,000 - 00:02:35,500] it's the integral over time along
+- [00:02:35,500 - 00:02:39,000] the trajectory of the kinetic energy.
+- [00:02:39,000 - 00:02:42,500] One half x dot squared, and I've chosen
+- [00:02:42,500 - 00:02:46,000] the mass of the particle arbitrarily to be one,
+- [00:02:46,000 - 00:02:49,000] because I get tired of writing it.
+- [00:02:49,000 - 00:02:55,000] That's the action, and what do you do with it?
+- [00:02:55,000 - 00:02:57,000] You minimize it. You minimize it
+- [00:02:57,000 - 00:02:59,000] to find the trajectory of the particle.
+- [00:02:59,000 - 00:03:02,500] You minimize it, subject to some end positions,
+- [00:03:02,500 - 00:03:06,000] holding down the end points, you minimize it.
+- [00:03:06,000 - 00:03:09,000] Now that's not what you do in quantum mechanics.
+- [00:03:09,000 - 00:03:12,000] Before we do that, let me discuss the relativistic case.
+- [00:03:12,000 - 00:03:15,000] In the relativistic case, something very similar,
+- [00:03:15,000 - 00:03:18,000] the thing is the action can be taken
+- [00:03:18,000 - 00:03:21,000] to be the integral over tau,
+- [00:03:21,000 - 00:03:24,000] the proper time along the trajectory,
+- [00:03:24,000 - 00:03:28,500] of dx mu by d
+- [00:03:28,500 - 00:03:33,000] tau, dx mu by d tau.
+- [00:03:33,000 - 00:03:35,500] Notice there's one upper index and one lower
+- [00:03:35,500 - 00:03:38,000] index, and you can figure out what that means.
+- [00:03:38,000 - 00:03:41,000] In other words, it looks very, very
+- [00:03:41,000 - 00:03:44,000] much like the non-relativistic kinetic energy formula,
+- [00:03:44,000 - 00:03:46,000] but it means something different.
+- [00:03:46,000 - 00:03:48,500] There are four components of position,
+- [00:03:48,500 - 00:03:51,000] and the time is the proper time,
+- [00:03:51,000 - 00:03:53,000] and what's more,
+- [00:03:53,000 - 00:03:55,500] the time components and the space
+- [00:03:55,500 - 00:03:58,000] components of this expression have different sign.
+- [00:03:58,000 - 00:04:02,000] But apart from that, they look very similar.
+- [00:04:02,000 - 00:04:05,000] And again, what do you do with it?
+- [00:04:05,000 - 00:04:08,000] You minimize it. You minimize it, subject to
+- [00:04:08,000 - 00:04:11,000] the constraint that at the ends of the period,
+- [00:04:11,000 - 00:04:13,500] the particle is at this
+- [00:04:13,500 - 00:04:16,000] space-time point and that space-time point.
+- [00:04:16,000 - 00:04:20,000] So there's a sort of parallel structure,
+- [00:04:20,000 - 00:04:23,000] and basic principle is a principle of least-division.
+- [00:04:23,000 - 00:04:25,000] So you have the first action.
+- [00:04:25,000 - 00:04:27,000] Now in quantum mechanics, you do
+- [00:04:27,000 - 00:04:29,000] something totally different with the action.
+- [00:04:29,000 - 00:04:30,500] What you do with the
+- [00:04:30,500 - 00:04:32,000] action, you ask a different question.
+- [00:04:32,000 - 00:04:36,000] You don't ask, what is the trajectory given to endpoints?
+- [00:04:36,000 - 00:04:40,000] Here you ask, what is the trajectory given to endpoints?
+- [00:04:40,000 - 00:04:43,000] The answer is, of course, a straight line.
+- [00:04:43,000 - 00:04:46,000] In either case, it's a straight line.
+- [00:04:46,000 - 00:04:49,000] It's a straight line through
+- [00:04:49,000 - 00:04:52,000] space and time with constant velocity.
+- [00:04:52,000 - 00:04:53,000] You ask a different question.
+- [00:04:53,000 - 00:04:55,500] You ask, what is the amplitude that
+- [00:04:55,500 - 00:04:58,000] a particle that started at this point,
+- [00:04:58,000 - 00:05:00,500] at time zero or at the beginning of
+- [00:05:00,500 - 00:05:03,000] time, at the start of the time interval,
+- [00:05:03,000 - 00:05:08,000] is detected at that point at a later time?
+- [00:05:08,000 - 00:05:09,000] That's the question you ask.
+- [00:05:09,000 - 00:05:11,000] You don't ask, what's the trajectory in between?
+- [00:05:11,000 - 00:05:13,000] You ask, what's the amplitude for the
+- [00:05:13,000 - 00:05:15,000] particle to go from here to here?
+- [00:05:15,000 - 00:05:19,000] And the answer is,
+- [00:05:19,000 - 00:05:22,000] the amplitude to go from point one to point two,
+- [00:05:22,000 - 00:05:23,500] is the same as the amplitude
+- [00:05:23,500 - 00:05:25,000] of the particle to the point three.
+- [00:05:25,000 - 00:05:29,000] So in either case, you write the action,
+- [00:05:29,000 - 00:05:32,000] you write the exponential of the action,
+- [00:05:32,000 - 00:05:34,500] e to the i, not just any
+- [00:05:34,500 - 00:05:37,000] exponential, but exponential with an i in it,
+- [00:05:37,000 - 00:05:40,000] e to the i times the action,
+- [00:05:40,000 - 00:05:42,000] let's write it out explicitly,
+- [00:05:42,000 - 00:05:46,000] d by dt over one half,
+- [00:05:46,000 - 00:05:51,000] dt dx by dt squared.
+- [00:05:51,000 - 00:05:52,000] This is the equation.
+- [00:05:52,000 - 00:05:56,000] This integral here goes from t1 to t2,
+- [00:05:56,000 - 00:05:58,000] but then you're not finished.
+- [00:05:58,000 - 00:05:59,000] You're not finished.
+- [00:05:59,000 - 00:06:01,500] This expression depends not only on the position
+- [00:06:01,500 - 00:06:04,000] of the particle over here and over here,
+- [00:06:04,000 - 00:06:05,500] but it depends on the position
+- [00:06:05,500 - 00:06:07,000] of the particle everywhere in between.
+- [00:06:07,000 - 00:06:09,000] So what do you do
+- [00:06:09,000 - 00:06:11,000] with it to find the amplitude?
+- [00:06:11,000 - 00:06:16,000] You integrate or you sum over all possible trajectories.
+- [00:06:16,000 - 00:06:19,000] Sum over all trajectories.
+- [00:06:19,000 - 00:06:21,000] Or,
+- [00:06:21,000 - 00:06:23,000] integral, strictly speaking,
+- [00:06:23,000 - 00:06:25,000] over all trajectories.
+- [00:06:25,000 - 00:06:28,000] This is a monstrously complicated thing.
+- [00:06:28,000 - 00:06:33,000] It's not a simple integral that you can put on,
+- [00:06:33,000 - 00:06:36,000] what's his name,
+- [00:06:36,000 - 00:06:39,000] yeah, Mathematica.
+- [00:06:39,000 - 00:06:41,000] It's an infinite dimensional integral,
+- [00:06:41,000 - 00:06:44,000] a continuously infinite dimensional integral.
+- [00:06:44,000 - 00:06:46,000] So it's a mathematical monstrosity.
+- [00:06:46,000 - 00:06:48,000] I mean,
+- [00:06:48,000 - 00:06:49,000] but,
+- [00:06:49,000 - 00:06:51,500] this integral over here is
+- [00:06:51,500 - 00:06:54,000] just the integral along the trajectory.
+- [00:06:54,000 - 00:06:55,000] That's easy.
+- [00:06:55,000 - 00:06:56,000] That's just the action.
+- [00:06:56,000 - 00:06:58,000] But this integral over here
+- [00:06:58,000 - 00:07:01,000] is the sum over all trajectories.
+- [00:07:01,000 - 00:07:04,000] So the particle feels out all trajectories.
+- [00:07:04,000 - 00:07:07,000] It doesn't sample the one of least action.
+- [00:07:07,000 - 00:07:10,000] You integrate over all of them
+- [00:07:10,000 - 00:07:11,000] this expression
+- [00:07:11,000 - 00:07:14,000] to find the amplitude to go from one to two.
+- [00:07:14,000 - 00:07:17,000] That's the quantum mechanical version
+- [00:07:17,000 - 00:07:19,000] of the principle of least action.
+- [00:07:19,000 - 00:07:21,000] It's Feynman path integral.
+- [00:07:21,000 - 00:07:24,000] You do the same thing in either classical mechan-
+- [00:07:24,000 - 00:07:27,000] in either non-relativistic physics
+- [00:07:27,000 - 00:07:29,000] with this expression
+- [00:07:29,000 - 00:07:32,000] or relativistic physics with that expression.
+- [00:07:32,000 - 00:07:35,000] When you calculate in relativistic physics,
+- [00:07:35,000 - 00:07:36,500] the amplitude to go from one
+- [00:07:36,500 - 00:07:38,000] to two is called the propagator.
+- [00:07:38,000 - 00:07:40,000] It's called the propagator for the
+- [00:07:40,000 - 00:07:42,000] particle to go from one to two.
+- [00:07:42,000 - 00:07:45,000] And you do some fancier things with it.
+- [00:07:45,000 - 00:07:48,000] You, for example, consider processes where
+- [00:07:48,000 - 00:07:54,000] particles come in, join, split, and go out.
+- [00:07:54,000 - 00:07:59,000] A similar kind of action
+- [00:07:59,000 - 00:08:02,000] is defined in terms of the action
+- [00:08:02,000 - 00:08:04,000] for each one of these,
+- [00:08:04,000 - 00:08:06,000] what should we call these, each one of these segments.
+- [00:08:06,000 - 00:08:10,000] You add the action together for each segment
+- [00:08:10,000 - 00:08:14,000] and then you don't sum over just a single trajectory.
+- [00:08:14,000 - 00:08:16,000] You sum over all of these trajectories
+- [00:08:16,000 - 00:08:17,000] and on top of everything else,
+- [00:08:17,000 - 00:08:20,000] you integrate over the points
+- [00:08:20,000 - 00:08:23,000] where the trajectories came together.
+- [00:08:23,000 - 00:08:26,000] So you do the same kind of thing
+- [00:08:26,000 - 00:08:30,000] and it gives you a Feynman diagram.
+- [00:08:30,000 - 00:08:31,000] And then at the end,
+- [00:08:31,000 - 00:08:33,000] to make the whole thing even more complicated,
+- [00:08:33,000 - 00:08:37,000] you sum over all Feynman diagrams for a given process
+- [00:08:37,000 - 00:08:39,000] and that gives you the amplitude,
+- [00:08:39,000 - 00:08:40,500] not for a particle to
+- [00:08:40,500 - 00:08:42,000] go from one point to another,
+- [00:08:42,000 - 00:08:44,000] but for a pair of particles
+- [00:08:44,000 - 00:08:46,000] to come in and go out.
+- [00:08:46,000 - 00:08:47,000] All right.
+- [00:08:47,000 - 00:08:56,000] That's the basic setup of Feynman path integrals.
+- [00:08:56,000 - 00:08:58,000] Before we go into string theory,
+- [00:08:58,000 - 00:09:02,000] let me teach you a trick
+- [00:09:02,000 - 00:09:05,000] that physicists use over and over again.
+- [00:09:05,000 - 00:09:07,000] It's a cheat.
+- [00:09:07,000 - 00:09:08,000] It's a cheat.
+- [00:09:08,000 - 00:09:09,000] Can it be justified?
+- [00:09:09,000 - 00:09:13,000] In some special cases, it can be justified.
+- [00:09:13,000 - 00:09:15,000] It turns out it can be more easily justified
+- [00:09:15,000 - 00:09:16,000] in string theory
+- [00:09:16,000 - 00:09:21,000] than in quantum field theory.
+- [00:09:21,000 - 00:09:24,000] But I'll tell you what the trick is.
+- [00:09:24,000 - 00:09:26,000] This kind of integral,
+- [00:09:26,000 - 00:09:27,000] this one, this integral,
+- [00:09:27,000 - 00:09:29,000] is sum over trajectories.
+- [00:09:29,000 - 00:09:32,000] It feels out all trajectories.
+- [00:09:32,000 - 00:09:37,000] Let's even concentrate on the nonrelativistic case.
+- [00:09:37,000 - 00:09:39,000] It feels out trajectories which go like this.
+- [00:09:39,000 - 00:09:42,000] It feels out trajectories which go like this.
+- [00:09:42,000 - 00:09:44,000] It feels out straight trajectories.
+- [00:09:44,000 - 00:09:46,000] And it feels out some wild, wild,
+- [00:09:46,000 - 00:09:50,000] insane trajectories.
+- [00:09:50,000 - 00:09:53,000] Are some of them somehow more important than others?
+- [00:09:53,000 - 00:09:54,000] Of course they are.
+- [00:09:54,000 - 00:09:56,000] The ones which correspond to the classical motion,
+- [00:09:56,000 - 00:09:57,000] the straight line ones,
+- [00:09:57,000 - 00:09:59,000] must be the most important ones.
+- [00:09:59,000 - 00:10:03,000] Otherwise, classical physics wouldn't make sense.
+- [00:10:03,000 - 00:10:06,000] But when you look at the integrand here,
+- [00:10:06,000 - 00:10:09,000] e to the i times anything
+- [00:10:09,000 - 00:10:12,000] always has magnitude what?
+- [00:10:12,000 - 00:10:14,000] One.
+- [00:10:14,000 - 00:10:16,000] So whatever the trajectory is,
+- [00:10:16,000 - 00:10:20,000] they all have equal numerical weight.
+- [00:10:20,000 - 00:10:23,000] They come in with different phases.
+- [00:10:23,000 - 00:10:25,000] The different phases can cancel each other.
+- [00:10:25,000 - 00:10:28,000] If you're adding up numbers on the complex plane,
+- [00:10:28,000 - 00:10:31,000] and all those numbers happen to have unit magnitude,
+- [00:10:31,000 - 00:10:34,000] that doesn't mean they can't cancel.
+- [00:10:34,000 - 00:10:35,000] They can cancel, they can
+- [00:10:35,000 - 00:10:36,000] give rise to a real number,
+- [00:10:36,000 - 00:10:38,000] they can give rise to an imaginary number,
+- [00:10:38,000 - 00:10:40,000] they can do all sorts of things.
+- [00:10:40,000 - 00:10:43,000] But each one of their contributions
+- [00:10:43,000 - 00:10:45,000] is as big as every other contribution.
+- [00:10:45,000 - 00:10:47,000] In that case,
+- [00:10:47,000 - 00:10:51,000] a normal definition of an integral doesn't make sense.
+- [00:10:51,000 - 00:10:53,000] It doesn't converge.
+- [00:10:53,000 - 00:10:56,000] It doesn't converge because the trajectories
+- [00:10:56,000 - 00:10:58,000] which are wildly way out there
+- [00:10:58,000 - 00:11:01,000] and correspond to some very, very distant trajectories,
+- [00:11:01,000 - 00:11:03,000] in some sense,
+- [00:11:03,000 - 00:11:07,000] don't have smaller and smaller amplitude
+- [00:11:07,000 - 00:11:10,000] as the trajectory gets more and more wild.
+- [00:11:10,000 - 00:11:13,000] So, strictly speaking,
+- [00:11:13,000 - 00:11:15,000] these path integrals,
+- [00:11:15,000 - 00:11:20,000] don't really exist as any well-studied mathematical objects.
+- [00:11:20,000 - 00:11:23,000] Okay, so how do we deal with them?
+- [00:11:23,000 - 00:11:27,000] Well, one way of dealing with them
+- [00:11:27,000 - 00:11:29,000] is to be extremely careful,
+- [00:11:29,000 - 00:11:34,000] define integrals in an extremely precise way,
+- [00:11:34,000 - 00:11:39,000] all sorts of reservations and things that are too hard
+- [00:11:39,000 - 00:11:44,000] even for the people who do them to think about.
+- [00:11:44,000 - 00:11:45,000] Really hard.
+- [00:11:45,000 - 00:11:47,000] There's a trick.
+- [00:11:47,000 - 00:11:49,000] There's a trick, and the trick always works.
+- [00:11:49,000 - 00:11:53,000] The trick is one which, to justify it,
+- [00:11:53,000 - 00:11:57,000] is as hard as trying to understand the original integral.
+- [00:11:57,000 - 00:11:59,000] But once you've justified it,
+- [00:11:59,000 - 00:12:01,000] it's the trick which always works
+- [00:12:01,000 - 00:12:03,000] and always gives you the right answer.
+- [00:12:03,000 - 00:12:05,000] So I'm going to tell you what the trick is.
+- [00:12:05,000 - 00:12:06,000] Which shall we take?
+- [00:12:06,000 - 00:12:09,000] Let's take this case here, the relativistic case.
+- [00:12:10,000 - 00:12:13,000] You change the tau variable.
+- [00:12:13,000 - 00:12:14,000] And how do you change it?
+- [00:12:14,000 - 00:12:17,000] You change it very, very simply.
+- [00:12:20,000 - 00:12:24,000] You invent a new variable called s.
+- [00:12:24,000 - 00:12:29,000] And s is just any number times tau.
+- [00:12:29,000 - 00:12:31,000] We'll choose the number alpha later,
+- [00:12:31,000 - 00:12:33,000] to our convenience.
+- [00:12:33,000 - 00:12:35,000] It's just a change of variables.
+- [00:12:35,000 - 00:12:37,000] This is an integration variable.
+- [00:12:37,000 - 00:12:42,000] Incidentally, it goes from tau one to tau two,
+- [00:12:42,000 - 00:12:44,000] and tau one and tau two
+- [00:12:44,000 - 00:12:46,000] are the end points of the trajectory.
+- [00:12:47,000 - 00:12:49,000] But we change variables.
+- [00:12:49,000 - 00:12:50,500] Oh, this s, we shouldn't
+- [00:12:50,500 - 00:12:52,000] confuse this s with the action.
+- [00:12:52,000 - 00:12:54,000] I'm sorry I even called...
+- [00:12:54,000 - 00:12:57,000] Let's call the action, let's give the action another name,
+- [00:12:57,000 - 00:13:00,000] in order to avoid confusion.
+- [00:13:00,000 - 00:13:01,000] You have a little s and
+- [00:13:01,000 - 00:13:02,000] a big S. What's the difference?
+- [00:13:02,000 - 00:13:04,000] You're right.
+- [00:13:04,000 - 00:13:06,000] Little s. Okay?
+- [00:13:06,000 - 00:13:08,000] Little s.
+- [00:13:08,000 - 00:13:10,000] Little s is by definition alpha t.
+- [00:13:10,000 - 00:13:12,000] And what is alpha?
+- [00:13:12,000 - 00:13:14,000] Whatever you want it to be.
+- [00:13:14,000 - 00:13:15,000] We'll pick it later.
+- [00:13:15,000 - 00:13:17,000] Alright, so let's see what we get then.
+- [00:13:17,000 - 00:13:19,000] Dt...
+- [00:13:19,000 - 00:13:20,000] Did I want...
+- [00:13:20,000 - 00:13:22,000] No, I think I'm going to be smarter.
+- [00:13:22,000 - 00:13:25,000] I'm going to set tau equal to alpha times s.
+- [00:13:29,000 - 00:13:30,000] Tau is equal to alpha.
+- [00:13:30,000 - 00:13:33,000] Then I don't have to invert the equation.
+- [00:13:33,000 - 00:13:35,000] Alright, so what does this give us?
+- [00:13:35,000 - 00:13:37,500] This gives us integral n
+- [00:13:37,500 - 00:13:40,000] from s one to s two.
+- [00:13:40,000 - 00:13:42,000] The end points now are...
+- [00:13:42,000 - 00:13:44,000] The end points of the s interval...
+- [00:13:44,000 - 00:13:47,500] The end points of the s interval are of course
+- [00:13:47,500 - 00:13:51,000] just alpha times the end point values for the tau integration.
+- [00:13:51,000 - 00:13:52,000] Okay?
+- [00:13:52,000 - 00:13:53,000] Now we have d tau.
+- [00:13:53,000 - 00:13:57,000] d tau is alpha ds.
+- [00:13:57,000 - 00:13:58,000] And then we have dx.
+- [00:13:58,000 - 00:14:00,500] What's dx by d tau
+- [00:14:00,500 - 00:14:03,000] in terms of dx by ds?
+- [00:14:06,000 - 00:14:09,000] Wherever you see a tau, you stick alpha times s.
+- [00:14:09,000 - 00:14:10,000] That's all.
+- [00:14:10,000 - 00:14:19,000] So this becomes dx by ds squared.
+- [00:14:19,000 - 00:14:22,000] I won't bother writing all the indices mu.
+- [00:14:22,000 - 00:14:24,000] But one over alpha squared.
+- [00:14:24,000 - 00:14:28,000] For each tau, I have to put in alpha s.
+- [00:14:28,000 - 00:14:29,000] So that gives me a one over alpha squared.
+- [00:14:29,000 - 00:14:32,000] So there's alpha squared downstairs.
+- [00:14:32,000 - 00:14:34,000] That's the action.
+- [00:14:34,000 - 00:14:38,000] Alpha downstairs.
+- [00:14:38,000 - 00:14:40,000] Now what do we do with that action?
+- [00:14:40,000 - 00:14:44,000] We put it up into the exponent with an i.
+- [00:14:44,000 - 00:14:45,000] Can you read this?
+- [00:14:45,000 - 00:14:47,500] e to the i one half, I
+- [00:14:47,500 - 00:14:50,000] suppose, if I want to get it right.
+- [00:14:50,000 - 00:14:52,000] Let's just put the one half out here.
+- [00:14:52,000 - 00:14:54,000] We'll keep it out of the way.
+- [00:14:57,000 - 00:14:59,000] The i, of course, is just a
+- [00:14:59,000 - 00:15:01,000] constant that can be brought inside the integral.
+- [00:15:01,000 - 00:15:04,000] And it's i over alpha.
+- [00:15:08,000 - 00:15:11,000] Now it's complete nonsense.
+- [00:15:11,000 - 00:15:13,500] Or at least it needs a
+- [00:15:13,500 - 00:15:16,000] major justification to do this trick.
+- [00:15:16,000 - 00:15:18,000] But what do you think we're
+- [00:15:18,000 - 00:15:20,000] going to choose alpha to be?
+- [00:15:20,000 - 00:15:22,000] i.
+- [00:15:22,000 - 00:15:24,000] i or minus i?
+- [00:15:24,000 - 00:15:27,000] Let's see.
+- [00:15:27,000 - 00:15:30,000] i over i is one, right?
+- [00:15:30,000 - 00:15:33,000] I think I want it to be minus i.
+- [00:15:33,000 - 00:15:36,000] That sounds right.
+- [00:15:36,000 - 00:15:37,000] i over i.
+- [00:15:37,000 - 00:15:38,000] Yeah.
+- [00:15:38,000 - 00:15:41,000] I think I want alpha equals.
+- [00:15:41,000 - 00:15:43,000] I choose it to be minus i.
+- [00:15:43,000 - 00:15:46,000] This becomes i over minus i,
+- [00:15:46,000 - 00:15:49,000] which is also called minus one.
+- [00:15:49,000 - 00:15:57,000] And the whole exponential magically loses its i.
+- [00:15:57,000 - 00:16:01,000] It becomes e to the integral minus.
+- [00:16:01,000 - 00:16:05,000] That's this minus sign from i over minus i.
+- [00:16:05,000 - 00:16:06,000] One half.
+- [00:16:07,000 - 00:16:11,000] So we've got i over minus i.
+- [00:16:11,000 - 00:16:17,000] And here we've got something called the integral.
+- [00:16:17,000 - 00:16:19,000] And this is what we're going to call it.
+- [00:16:19,000 - 00:16:25,000] We're going to call it x by ds squared ds.
+- [00:16:26,000 - 00:16:28,500] The only place that we have to be
+- [00:16:28,500 - 00:16:31,000] a little bit careful is we have to remember
+- [00:16:31,000 - 00:16:33,000] the end points of the interval here
+- [00:16:33,000 - 00:16:35,000] are not really real values of s.
+- [00:16:35,000 - 00:16:37,830] even though the endpoints of
+- [00:16:37,830 - 00:16:40,660] the integral are not real numbers.
+- [00:16:40,960 - 00:16:42,040] Why aren't they real numbers?
+- [00:16:42,480 - 00:16:46,180] Because tau is equal to minus is,
+- [00:16:46,880 - 00:16:48,890] and the endpoints of the original
+- [00:16:48,890 - 00:16:50,900] integral were real values of tau.
+- [00:16:51,100 - 00:16:52,040] But let's forget that.
+- [00:16:52,460 - 00:16:55,160] Let's just call it from s1 to s2.
+- [00:16:55,880 - 00:16:58,490] And later on, we'll remember that
+- [00:16:58,490 - 00:17:01,100] s1 and s2 were imaginary values.
+- [00:17:01,240 - 00:17:01,780] Later on.
+- [00:17:02,140 - 00:17:03,580] For the moment, just leave it this way.
+- [00:17:03,580 - 00:17:08,700] Now we're going to integrate this over all trajectories.
+- [00:17:09,480 - 00:17:11,980] Over all trajectories.
+- [00:17:13,260 - 00:17:15,980] This is much better than the original integral.
+- [00:17:17,660 - 00:17:19,510] In the original integral, no
+- [00:17:19,510 - 00:17:21,359] matter how wild the trajectory was,
+- [00:17:22,359 - 00:17:25,089] the amplitude for that particular
+- [00:17:25,089 - 00:17:27,819] trajectory was in magnitude 1.
+- [00:17:28,440 - 00:17:30,900] Now let's take some wild trajectory.
+- [00:17:33,580 - 00:17:35,260] And stick it in here.
+- [00:17:35,919 - 00:17:39,249] If the trajectory is wild, if it goes off and
+- [00:17:39,249 - 00:17:42,580] extends off to some large spatial separation and comes back,
+- [00:17:43,159 - 00:17:45,149] then there's going to be places where the x
+- [00:17:45,149 - 00:17:47,139] by the s is going to be very large.
+- [00:17:48,820 - 00:17:51,679] If the trajectory is wild in any form whatever,
+- [00:17:53,360 - 00:17:55,560] maybe just because it doesn't even go very far,
+- [00:17:55,659 - 00:17:58,379] maybe it just wiggles extremely rapidly.
+- [00:18:01,199 - 00:18:02,179] Well, that's okay.
+- [00:18:02,179 - 00:18:02,220] That's okay.
+- [00:18:02,460 - 00:18:03,340] The x by the s.
+- [00:18:03,580 - 00:18:05,220] It's going to be very, very large.
+- [00:18:05,600 - 00:18:06,769] It's going to oscillate, but it's
+- [00:18:06,769 - 00:18:07,939] going to be very, very large.
+- [00:18:08,240 - 00:18:10,790] Or maybe it goes off and
+- [00:18:10,790 - 00:18:13,340] then comes back a long distance.
+- [00:18:13,639 - 00:18:17,489] Still, the x by the s will be very, very
+- [00:18:17,489 - 00:18:21,340] large along the orbits where it goes out and comes back.
+- [00:18:22,040 - 00:18:25,060] So for any kind of trajectory that's far
+- [00:18:25,060 - 00:18:28,080] from just the simplest trajectory, namely the straight line,
+- [00:18:29,419 - 00:18:32,699] the action is going to be huge.
+- [00:18:33,580 - 00:18:35,590] it's going to be huge and
+- [00:18:35,590 - 00:18:37,600] it comes in with a negative sign
+- [00:18:37,600 - 00:18:39,649] e to the minus a
+- [00:18:39,649 - 00:18:41,699] large number is a small number
+- [00:18:41,699 - 00:18:42,600] so
+- [00:18:42,600 - 00:18:44,060] in this form
+- [00:18:44,060 - 00:18:47,699] wild trajectories don't contribute very much
+- [00:18:47,699 - 00:18:50,560] only trajectories near the straight trajectory
+- [00:18:50,560 - 00:18:53,699] are important
+- [00:18:53,699 - 00:18:56,100] this is a form of path integral
+- [00:18:56,100 - 00:18:57,840] that is used
+- [00:18:57,840 - 00:19:01,280] in statistical mechanics it's called the wiener integral
+- [00:19:01,280 - 00:19:06,379] it was invented before the finding path integral
+- [00:19:06,379 - 00:19:08,320] and it's perfectly convergent
+- [00:19:08,320 - 00:19:12,280] mathematicians know how to define it in a serious way
+- [00:19:12,280 - 00:19:14,600] and it's a good quantity
+- [00:19:14,600 - 00:19:17,310] so this is what we are always
+- [00:19:17,310 - 00:19:20,020] doing we are always making this trick
+- [00:19:20,020 - 00:19:22,460] of turning a time variable
+- [00:19:22,460 - 00:19:24,790] on its side by making it
+- [00:19:24,790 - 00:19:27,120] i times some time interval, time variable
+- [00:19:27,120 - 00:19:30,540] and then using it in integrals. Now what's the trick?
+- [00:19:30,540 - 00:19:31,280] at the end of the day
+- [00:19:31,280 - 00:19:35,280] this whole thing is going to be some function
+- [00:19:35,280 - 00:19:36,600] of
+- [00:19:36,600 - 00:19:43,600] the end points of the integral
+- [00:19:43,899 - 00:19:45,800] you evaluate this
+- [00:19:45,800 - 00:19:48,320] not paying any attention
+- [00:19:48,320 - 00:19:49,859] to the fact that the
+- [00:19:49,859 - 00:19:51,399] end points of the interval are
+- [00:19:51,399 - 00:19:53,620] imaginary numbers
+- [00:19:53,620 - 00:19:57,420] but then after you have evaluated it
+- [00:19:57,420 - 00:19:59,639] you then
+- [00:19:59,639 - 00:20:00,540] the right word is
+- [00:20:00,540 - 00:20:01,600] the right word is
+- [00:20:01,600 - 00:20:02,540] the right word is
+- [00:20:02,540 - 00:20:03,540] I should have said
+- [00:20:03,540 - 00:20:04,540] I should have said
+- [00:20:04,540 - 00:20:05,540] you can analytically continue it
+- [00:20:05,540 - 00:20:11,320] or extrapolate it to imaginary values of of s
+- [00:20:11,320 - 00:20:13,600] this is something that we know how to do
+- [00:20:13,600 - 00:20:16,300] it's a straightforward procedure if
+- [00:20:16,300 - 00:20:19,000] you actually evaluate these things
+- [00:20:19,000 - 00:20:21,860] for the experts there are analytic functions of s
+- [00:20:21,860 - 00:20:24,540] and you can extrapolate them or analytically continue them
+- [00:20:24,540 - 00:20:27,060] to the desired complex points
+- [00:20:27,060 - 00:20:28,700] this is the only real way
+- [00:20:28,700 - 00:20:30,340] that physicists ever really do path integrals
+- [00:20:30,340 - 00:20:33,230] hear people talking about path integrals,
+- [00:20:33,230 - 00:20:36,120] either they're just talking or if
+- [00:20:36,120 - 00:20:38,060] they're actually trying to perform them,
+- [00:20:38,060 - 00:20:40,000] they're doing them this way by turning
+- [00:20:40,000 - 00:20:43,390] the time variable on its side. All right,
+- [00:20:43,390 - 00:20:46,780] I thought I would tell you that once and
+- [00:20:46,780 - 00:20:48,979] for all, because we're going
+- [00:20:48,979 - 00:20:51,179] to do that in string theory.
+- [00:20:51,180 - 00:21:03,170] So let's come to string theory now. Same kind of setup,
+- [00:21:03,170 - 00:21:15,160] but now a particle is not a point, it's a string.
+- [00:21:15,160 - 00:21:20,840] Its world history is not a world line.
+- [00:21:21,180 - 00:21:24,900] It's a surface. It could be open strings,
+- [00:21:24,900 - 00:21:28,620] in which case it's a surface, a ribbon,
+- [00:21:28,620 - 00:21:31,440] kind of ribbon, a ribbon that can
+- [00:21:31,440 - 00:21:34,260] change its length and change its way it's
+- [00:21:34,260 - 00:21:36,990] embedded in space, but it's a ribbon.
+- [00:21:36,990 - 00:21:39,720] Closed strings, it's not a ribbon, it's a
+- [00:21:39,720 - 00:21:42,950] tube. You can call it a world
+- [00:21:42,950 - 00:21:46,180] tube, usually called a world sheet. That's the
+- [00:21:46,180 - 00:21:49,120] motion of a particle.
+- [00:21:49,900 - 00:21:51,160] Let's talk about the motion of a particle.
+- [00:21:51,160 - 00:21:53,660] Let's talk about its action. We're interested in its action.
+- [00:21:53,660 - 00:21:56,160] Now the kind of question we're going to ask is,
+- [00:21:56,160 - 00:22:00,540] given the location of all of the points on
+- [00:22:00,540 - 00:22:04,920] the string at some initial time and some later
+- [00:22:04,920 - 00:22:07,460] time, what's the amplitude to go from the
+- [00:22:07,460 - 00:22:10,000] initial state to the final state? What's the
+- [00:22:10,000 - 00:22:12,270] amplitude that if you set the string up
+- [00:22:12,270 - 00:22:14,540] in a certain configuration and then let it go,
+- [00:22:14,540 - 00:22:17,210] that you would find it at
+- [00:22:17,210 - 00:22:19,880] a later time at some other configuration?
+- [00:22:19,880 - 00:22:25,160] Now, the location of a point on the
+- [00:22:25,160 - 00:22:30,440] world sheet is a function x of two variables.
+- [00:22:30,440 - 00:22:34,840] One of them is a kind of time
+- [00:22:34,840 - 00:22:39,240] variable along the sheet. We'll call it tau. It's
+- [00:22:39,240 - 00:22:42,080] not real time. It's real time, no
+- [00:22:42,080 - 00:22:44,920] more real time than the tau variable up
+- [00:22:44,920 - 00:22:47,300] here was more like proper time, but
+- [00:22:47,300 - 00:22:49,680] now it's just a parameter. It's just a
+- [00:22:49,680 - 00:22:55,240] parameter. You take the sheet, you coordinate
+- [00:22:55,240 - 00:23:00,800] it with two coordinates, sigma and tau, and
+- [00:23:00,800 - 00:23:04,680] you write x of tau and sigma. We've
+- [00:23:04,680 - 00:23:08,560] done that before. It's a function of two variables.
+- [00:23:08,560 - 00:23:11,060] If you know x mu for each sigma and tau,
+- [00:23:11,060 - 00:23:13,560] then you know where that point on the string is.
+- [00:23:13,560 - 00:23:15,960] And if you're given the whole history of the string
+- [00:23:15,960 - 00:23:18,360] as a x mu of sigma and tau, that does
+- [00:23:18,360 - 00:23:19,360] it. That's the whole history.
+- [00:23:19,680 - 00:23:23,720] Again, you construct an action. Again, you
+- [00:23:23,720 - 00:23:27,760] construct an action, and this time the action
+- [00:23:27,760 - 00:23:30,470] is the immediate generalization of that,
+- [00:23:30,470 - 00:23:33,180] but with two independent variables here. It's
+- [00:23:33,180 - 00:23:37,430] s is equal to integral from, I'm not going
+- [00:23:37,430 - 00:23:41,680] to try to label the starting, it's too complicated
+- [00:23:41,680 - 00:23:44,680] to label the start and the finish. We'll just write what
+- [00:23:44,680 - 00:23:47,680] it is. It's the integral d tau, d sigma, and d tau.
+- [00:23:47,680 - 00:23:48,180] So, you're going to have a function of two
+- [00:23:48,180 - 00:23:48,680] variables. You're going to have a function of two variables.
+- [00:23:48,680 - 00:23:49,180] You're going to have a function of two variables.
+- [00:23:49,180 - 00:23:49,680] You're going to have a function of two variables.
+- [00:23:49,680 - 00:23:50,680] You're going to have a function of two variables.
+- [00:23:50,680 - 00:24:00,450] Now, what's the integral over the two-dimensional world sheet
+- [00:24:00,450 - 00:24:10,220] of d x mu by d tau squared minus
+- [00:24:10,220 - 00:24:13,680] the x mu by d sigma squared.
+- [00:24:13,680 - 00:24:14,680] I think I have it right.
+- [00:24:14,680 - 00:24:15,680] I think I have it right.
+- [00:24:15,680 - 00:24:16,680] I think I have it right.
+- [00:24:16,680 - 00:24:17,680] I think I have it right.
+- [00:24:17,680 - 00:24:18,680] I think I have it right.
+- [00:24:18,680 - 00:24:19,680] I think I have it right.
+- [00:24:19,680 - 00:24:20,680] I think I have it right.
+- [00:24:20,680 - 00:24:21,680] I think I have it right.
+- [00:24:21,680 - 00:24:22,680] I think I have it right.
+- [00:24:22,680 - 00:24:25,680] d x mu by d tau squared minus d x
+- [00:24:25,680 - 00:24:28,680] mu by d sigma squared. That's the action for the string.
+- [00:24:28,680 - 00:24:31,930] And notice this is the action of a field
+- [00:24:31,930 - 00:24:35,180] moving in tau and sigma space. It's just the action
+- [00:24:35,180 - 00:24:38,430] of the wiggles moving up and down the tau
+- [00:24:38,430 - 00:24:41,680] and sigma, but it is also the action for a
+- [00:24:41,680 - 00:24:46,680] tube moving through space-time.
+- [00:24:47,680 - 00:24:52,180] It comes from the fact that tau is, it
+- [00:24:52,180 - 00:24:56,680] comes from the same place, okay, it comes from kinetic
+- [00:24:56,680 - 00:25:00,680] energy minus potential energy.
+- [00:25:00,680 - 00:25:02,680] Kinetic energy minus potential energy.
+- [00:25:02,680 - 00:25:03,680] This is kinetic.
+- [00:25:03,680 - 00:25:05,180] It's like a time derivative.
+- [00:25:05,180 - 00:25:06,680] This is potential energy.
+- [00:25:06,680 - 00:25:08,680] It's like a space derivative.
+- [00:25:08,680 - 00:25:12,180] So it's the fact that the action, the
+- [00:25:12,180 - 00:25:15,680] Lagrangian, has a minus sign, t minus v. Okay.
+- [00:25:16,680 - 00:25:17,680] What do you do with this action?
+- [00:25:17,680 - 00:25:18,680] You exponentiate it.
+- [00:25:18,680 - 00:25:23,680] E to the i.
+- [00:25:23,680 - 00:25:32,680] And then you integrate it over all possible surfaces.
+- [00:25:32,680 - 00:25:36,680] I'm not going to try to draw a complicated surface.
+- [00:25:36,680 - 00:25:37,680] Well, I tried.
+- [00:25:37,680 - 00:25:38,680] I failed.
+- [00:25:38,680 - 00:25:44,680] You integrate it or sum it over all possible surfaces.
+- [00:25:44,680 - 00:25:45,680] Incidentally, .
+- [00:25:45,680 - 00:25:48,680] There's a classical version where you don't
+- [00:25:48,680 - 00:25:51,680] do the path integral, which just tells you
+- [00:25:51,680 - 00:25:54,180] if you start the string in a certain fashion
+- [00:25:54,180 - 00:25:56,680] and end it in a certain fashion, how it has
+- [00:25:56,680 - 00:25:59,180] to move in between to satisfy classical equations of
+- [00:25:59,180 - 00:26:01,680] motion to go from the initial to the final.
+- [00:26:01,680 - 00:26:02,680] But we're not interested in that.
+- [00:26:02,680 - 00:26:04,680] We're interested in quantum mechanics.
+- [00:26:04,680 - 00:26:07,680] This is the amplitude for the string to
+- [00:26:07,680 - 00:26:10,680] go from an initial configuration to a final configuration.
+- [00:26:10,680 - 00:26:11,680] That's the setup.
+- [00:26:11,680 - 00:26:13,180] That's the, if you like,
+- [00:26:13,180 - 00:26:14,680] after all is said and done.
+- [00:26:14,680 - 00:26:17,680] This can pretty much be defined
+- [00:26:17,680 - 00:26:20,680] to be the definition of string theory.
+- [00:26:20,680 - 00:26:26,680] Well, no, it's too simple.
+- [00:26:26,680 - 00:26:32,680] You can generalize the idea.
+- [00:26:32,680 - 00:26:37,680] You say, supposing I'm not interested in a string going to a string,
+- [00:26:37,680 - 00:26:42,680] but two strings going to two strings, or two strings going to three strings.
+- [00:26:42,680 - 00:26:43,680] Then you can generalize it by saying, .
+- [00:26:43,680 - 00:26:48,680] You can generalize it by starting with two strings, ending with three
+- [00:26:48,680 - 00:26:53,680] strings, and drawing all the possible surfaces that can interpolate in between them.
+- [00:27:03,680 - 00:27:06,680] There's a surface that interpolates between them.
+- [00:27:06,680 - 00:27:08,680] There are other surfaces which
+- [00:27:08,680 - 00:27:10,680] interpolate between them with different topology.
+- [00:27:10,680 - 00:27:12,680] You can put a hole in here.
+- [00:27:13,680 - 00:27:16,680] Perfectly legitimate.
+- [00:27:16,680 - 00:27:18,180] But let's concentrate on the ones
+- [00:27:18,180 - 00:27:19,680] without holes in them for the moment.
+- [00:27:19,680 - 00:27:26,180] You can then ask the question, what is the amplitude to start with two strings, each
+- [00:27:26,180 - 00:27:32,680] one in its own given configuration, and end up with three strings also in particular configuration?
+- [00:27:32,680 - 00:27:34,680] The answer is the same.
+- [00:27:34,680 - 00:27:38,680] The answer is e to the i times the integral over
+- [00:27:38,680 - 00:27:42,680] all surfaces which connect the initial state to the final state.
+- [00:27:42,680 - 00:27:46,680] e to the i integral over all
+- [00:27:46,680 - 00:27:50,680] surfaces of the action for that surface.
+- [00:27:50,680 - 00:27:56,180] In a simple case, say an electron going from
+- [00:27:56,180 - 00:28:01,680] one point to another, is vx d sigma zero?
+- [00:28:01,680 - 00:28:03,680] You mean a point electron?
+- [00:28:03,680 - 00:28:05,680] Yeah.
+- [00:28:05,680 - 00:28:08,680] Well, a point electron, if you were dealing with it by finding
+- [00:28:08,680 - 00:28:11,680] integrals before anybody heard of string theory, you wouldn't have any sigma.
+- [00:28:11,680 - 00:28:13,680] You would just have tau.
+- [00:28:13,680 - 00:28:16,680] I think maybe you're asking whether in
+- [00:28:16,680 - 00:28:19,680] some limit or other this reduces to the...
+- [00:28:19,680 - 00:28:20,680] Yeah.
+- [00:28:20,680 - 00:28:22,680] Yeah, that is a good question.
+- [00:28:22,680 - 00:28:24,680] The answer is yes.
+- [00:28:24,680 - 00:28:32,180] As long as the electron is very much lighter than the string scale, and as long as
+- [00:28:32,180 - 00:28:39,680] the energies of the processes are low, then yeah, these things will reproduce Feynman diagrams, ordinary Feynman diagrams.
+- [00:28:39,680 - 00:28:40,680] So, yeah.
+- [00:28:40,680 - 00:28:43,680] They are connected.
+- [00:28:43,680 - 00:28:47,680] That would take us more than a little bit.
+- [00:28:47,680 - 00:28:50,680] Okay, so that's the...
+- [00:28:50,680 - 00:28:54,680] That's practically the definition of string theory.
+- [00:28:54,680 - 00:28:59,680] Incidentally, if you really mean sum over all surfaces that connect
+- [00:28:59,680 - 00:29:04,680] them, including the surfaces that have holes in them of various kinds,
+- [00:29:04,680 - 00:29:06,680] then that's pretty much the analog
+- [00:29:06,680 - 00:29:08,680] of summing over all Feynman diagrams,
+- [00:29:08,680 - 00:29:12,180] with all possible topologies and all
+- [00:29:12,180 - 00:29:15,680] possible number of loops and so forth.
+- [00:29:15,680 - 00:29:21,180] So you're having one simple expression or one simple idea, the
+- [00:29:21,180 - 00:29:26,680] sum over surfaces, you have something which is as complex or as...
+- [00:29:26,680 - 00:29:28,680] Complex is perhaps not the right word.
+- [00:29:28,680 - 00:29:31,680] It's much simpler than Feynman diagrams in many ways.
+- [00:29:31,680 - 00:29:34,680] But it contains as much...the same kind of
+- [00:29:34,680 - 00:29:37,680] information as the sum over all Feynman diagrams.
+- [00:29:37,680 - 00:29:42,180] Okay, but let's forget these holes for the moment and
+- [00:29:42,180 - 00:29:46,680] just concentrate on the structure of this path integral here.
+- [00:29:46,680 - 00:29:49,680] This is a path integral for strings.
+- [00:29:49,680 - 00:29:53,680] Again, it's a monstrosity for the same reason.
+- [00:29:53,680 - 00:29:58,180] Wildly varying surfaces contribute as heavily
+- [00:29:58,180 - 00:30:02,680] as straight surfaces and so forth.
+- [00:30:02,680 - 00:30:05,680] The integral doesn't converge in any meaningful sense,
+- [00:30:05,680 - 00:30:08,680] because again, surfaces which stretch out
+- [00:30:08,680 - 00:30:11,680] to alpha centauri and come back
+- [00:30:11,680 - 00:30:15,680] are no less numerically large in
+- [00:30:15,680 - 00:30:19,680] the amplitude than a nice simple tube.
+- [00:30:19,680 - 00:30:22,180] Alright, so that means we've got to
+- [00:30:22,180 - 00:30:24,680] do something to make this integral make sense.
+- [00:30:24,680 - 00:30:28,680] You can do what a serious mathematician would do, would
+- [00:30:28,680 - 00:30:32,680] be to try to define a new kind of integral.
+- [00:30:32,680 - 00:30:33,680] People have studied that.
+- [00:30:33,680 - 00:30:35,680] Or you can do what a physicist...
+- [00:30:35,680 - 00:30:39,680] would do and say, analytically continue.
+- [00:30:39,680 - 00:30:40,680] Analytically continue.
+- [00:30:40,680 - 00:30:44,680] Last refuge of scoundrels.
+- [00:30:44,680 - 00:30:46,680] And we are going to be scoundrels.
+- [00:30:46,680 - 00:30:48,680] What do we do?
+- [00:30:48,680 - 00:30:50,680] Not...we don't worry about sigma.
+- [00:30:50,680 - 00:30:54,680] Sigma is...is...um...not our problem.
+- [00:30:54,680 - 00:30:56,680] It's actually tau which is
+- [00:30:56,680 - 00:30:58,680] our problem, as we will see.
+- [00:31:01,680 - 00:31:04,680] Let's do the same thing.
+- [00:31:04,680 - 00:31:06,680] Let's let tau go to i tau.
+- [00:31:06,680 - 00:31:08,680] No, I'm not going to call it s.
+- [00:31:08,680 - 00:31:10,680] I'm not going to call it s.
+- [00:31:10,680 - 00:31:11,680] It will just get too many variables.
+- [00:31:11,680 - 00:31:12,680] I'm just going to tell you.
+- [00:31:12,680 - 00:31:15,180] We now make a transformation of
+- [00:31:15,180 - 00:31:17,680] variables from tau to i tau.
+- [00:31:17,680 - 00:31:19,680] Same trick.
+- [00:31:19,680 - 00:31:21,680] When you do, you will
+- [00:31:21,680 - 00:31:23,680] pick up an i from here,
+- [00:31:23,680 - 00:31:26,680] and you will pick up two i's from here.
+- [00:31:26,680 - 00:31:29,680] You won't pick up any i's over here.
+- [00:31:29,680 - 00:31:31,680] So let's follow it.
+- [00:31:31,680 - 00:31:33,680] Each time you see a tau,
+- [00:31:33,680 - 00:31:36,680] you write i tau.
+- [00:31:39,680 - 00:31:41,680] Really, tau is becoming s,
+- [00:31:41,680 - 00:31:44,680] but I don't want to introduce another variable.
+- [00:31:44,680 - 00:31:47,180] So I'm just going to
+- [00:31:47,180 - 00:31:49,680] say tau goes to i tau.
+- [00:31:49,680 - 00:31:51,680] We change variables to i tau.
+- [00:31:51,680 - 00:31:53,680] Then, the first thing that happens is
+- [00:31:53,680 - 00:31:55,680] we pick up an i over here.
+- [00:31:57,680 - 00:31:59,680] That's good because it will get rid of this i.
+- [00:31:59,680 - 00:32:02,680] But then we pick up two i's down here.
+- [00:32:03,680 - 00:32:05,680] What is two i's?
+- [00:32:05,680 - 00:32:07,680] Minus.
+- [00:32:07,680 - 00:32:10,680] So that turns this into minus here.
+- [00:32:10,680 - 00:32:14,680] Same as the minus here.
+- [00:32:14,680 - 00:32:18,680] And gets rid of the i over here.
+- [00:32:18,680 - 00:32:20,680] Now unfortunately, I didn't really mean it
+- [00:32:20,680 - 00:32:22,680] when I said tau goes to i tau.
+- [00:32:22,680 - 00:32:24,680] I meant tau goes to minus i tau.
+- [00:32:24,680 - 00:32:27,680] In which case, we have an extra minus sign here.
+- [00:32:27,680 - 00:32:30,680] Same as for the particle case.
+- [00:32:30,680 - 00:32:31,680] Now look at what we have.
+- [00:32:31,680 - 00:32:34,680] We have something...
+- [00:32:37,680 - 00:32:39,680] Oh, no, I...
+- [00:32:39,680 - 00:32:42,680] No, I have too many minus signs.
+- [00:32:42,680 - 00:32:44,680] Too many minus signs.
+- [00:32:44,680 - 00:32:46,680] I've lost control of the calculation.
+- [00:32:46,680 - 00:32:48,680] No, no, you had i squared.
+- [00:32:48,680 - 00:32:49,680] Is that okay?
+- [00:32:49,680 - 00:32:51,680] That gives you one minus one.
+- [00:32:51,680 - 00:32:53,680] Oh yeah, you had minus i squared.
+- [00:32:53,680 - 00:32:55,680] So you end up with plus signs over there.
+- [00:32:55,680 - 00:32:57,680] And plus sign here.
+- [00:32:57,680 - 00:32:59,680] Minus i squared.
+- [00:32:59,680 - 00:33:01,680] Minus sign here.
+- [00:33:01,680 - 00:33:02,680] Minus sign here.
+- [00:33:02,680 - 00:33:03,680] Right here?
+- [00:33:03,680 - 00:33:05,680] Oh, no.
+- [00:33:05,680 - 00:33:08,680] Right in front of you.
+- [00:33:08,680 - 00:33:10,680] Whichever one you want, you can get it.
+- [00:33:10,680 - 00:33:12,680] Whichever one you want, you can get it.
+- [00:33:12,680 - 00:33:15,680] So let's get this one.
+- [00:33:15,680 - 00:33:16,680] Let's get that one.
+- [00:33:16,680 - 00:33:18,680] It's either tau goes to minus i
+- [00:33:18,680 - 00:33:20,680] tau or tau goes to plus i tau.
+- [00:33:20,680 - 00:33:24,180] The reason I want the plus sign here and the minus signs here is
+- [00:33:24,180 - 00:33:27,680] because that allows me to remove the minus signs here and put it out here.
+- [00:33:27,680 - 00:33:28,680] Now why is that?
+- [00:33:28,680 - 00:33:30,680] Now why is that a good thing to do?
+- [00:33:30,680 - 00:33:33,680] It's a good thing to do
+- [00:33:33,680 - 00:33:36,680] because what appears in here is positive.
+- [00:33:36,680 - 00:33:39,680] The more wild the surface is,
+- [00:33:39,680 - 00:33:42,680] the bigger it's going to be.
+- [00:33:42,680 - 00:33:49,680] Even if the surface doesn't fluctuate out to far distances but it just vibrates a lot, then
+- [00:33:49,680 - 00:33:56,680] the xd tau or wiggles too much, if it wiggles too much, the xd sigma will be large.
+- [00:33:56,680 - 00:33:58,180] If it vibrates too much,
+- [00:33:58,180 - 00:33:59,680] the xd tau will be large.
+- [00:33:59,680 - 00:34:03,680] If it stretches out to alpha centauri, both
+- [00:34:03,680 - 00:34:07,680] of them are going to be large and positive.
+- [00:34:07,680 - 00:34:10,679] So one good thing of this trick is it
+- [00:34:10,679 - 00:34:13,679] made these both of the same sign and both positive.
+- [00:34:13,679 - 00:34:16,679] And then e to a minus a positive
+- [00:34:16,679 - 00:34:19,679] number is small or a large positive number.
+- [00:34:19,679 - 00:34:21,679] So what does this do?
+- [00:34:21,679 - 00:34:23,179] It does the same thing that
+- [00:34:23,179 - 00:34:24,679] it did in the particle case.
+- [00:34:24,679 - 00:34:29,679] It suppresses the wildly varying surfaces.
+- [00:34:29,679 - 00:34:34,679] And it allows you to actually calculate the path integral.
+- [00:34:34,679 - 00:34:40,179] I should tell you there's another form of string theory in which
+- [00:34:40,179 - 00:34:45,679] what you put in for the action is more complicated but quite beautiful.
+- [00:34:45,679 - 00:34:51,679] It's actually for both the particle and the string.
+- [00:34:51,679 - 00:34:53,679] There are other forms of the action.
+- [00:34:53,679 - 00:34:58,679] Which are mathematically harder to deal with but
+- [00:34:58,679 - 00:35:03,680] in a certain sense geometrically very, very highly motivated.
+- [00:35:03,680 - 00:35:07,180] For the case of the particle, what you put
+- [00:35:07,180 - 00:35:10,680] in is the proper path length as the action.
+- [00:35:10,680 - 00:35:13,180] The action is just the proper path length
+- [00:35:13,180 - 00:35:15,680] between the initial point and the final point.
+- [00:35:15,680 - 00:35:17,680] The proper path length itself.
+- [00:35:17,680 - 00:35:20,180] And for the string, what you
+- [00:35:20,180 - 00:35:22,680] put in is the space time x.
+- [00:35:22,680 - 00:35:24,680] The space time area of the world sheet.
+- [00:35:24,680 - 00:35:25,680] That's another set up.
+- [00:35:25,680 - 00:35:27,680] Another formal way to do it.
+- [00:35:27,680 - 00:35:30,180] It gives you the same answers but it is
+- [00:35:30,180 - 00:35:32,680] more complicated so I'm not going to do it.
+- [00:35:32,680 - 00:35:39,680] If you ever come across the term Nambu-Goto action, the Nambu-Goto action is the
+- [00:35:39,680 - 00:35:46,680] action which just says stick in for the action the area of the world sheet.
+- [00:35:46,680 - 00:35:48,680] Right.
+- [00:35:48,680 - 00:35:50,680] The other form is sometimes called the particle.
+- [00:35:50,680 - 00:35:53,680] The other form is sometimes called the Polyakov action.
+- [00:35:53,680 - 00:35:56,680] Although it had nothing to do with Polyakov.
+- [00:35:56,680 - 00:35:58,680] It was invented by me.
+- [00:36:02,680 - 00:36:05,680] Which Polyakov constantly keeps telling people.
+- [00:36:10,680 - 00:36:12,680] People like to get credit but they
+- [00:36:12,680 - 00:36:14,680] like to get credit for what they did.
+- [00:36:14,680 - 00:36:16,680] So.
+- [00:36:16,680 - 00:36:19,680] Anyway, it's called the Polyakov action.
+- [00:36:19,680 - 00:36:20,680] And this action here.
+- [00:36:20,680 - 00:36:22,180] Things are named after people who
+- [00:36:22,180 - 00:36:23,680] didn't do them much more often.
+- [00:36:23,680 - 00:36:25,680] Oh.
+- [00:36:25,680 - 00:36:28,680] He did do something else which is related to this.
+- [00:36:28,680 - 00:36:32,180] But that's, the other thing he
+- [00:36:32,180 - 00:36:35,680] did which is closely related to this.
+- [00:36:35,680 - 00:36:37,680] There's some other factors in
+- [00:36:37,680 - 00:36:39,680] it which is also quite beautiful.
+- [00:36:39,680 - 00:36:40,680] Which was invented by Polyakov.
+- [00:36:40,680 - 00:36:42,680] It's called the Leoville action.
+- [00:36:45,680 - 00:36:47,180] Leoville was a mathematician who died
+- [00:36:47,180 - 00:36:48,680] long, long before even classical mechanics.
+- [00:36:48,680 - 00:36:50,680] So don't ask.
+- [00:36:50,680 - 00:36:53,180] The same reason that Polchinski
+- [00:36:53,180 - 00:36:55,680] brains are called Dirichlet brains.
+- [00:36:55,680 - 00:36:56,680] I don't know.
+- [00:36:56,680 - 00:37:06,680] I guess Dirichlet strings were around a long time.
+- [00:37:06,680 - 00:37:10,180] Dirichlet boundary conditions on ordinary
+- [00:37:10,180 - 00:37:13,680] strings were around a long time.
+- [00:37:13,680 - 00:37:14,680] Yeah.
+- [00:37:14,680 - 00:37:15,680] Yeah.
+- [00:37:15,680 - 00:37:16,680] Right.
+- [00:37:16,680 - 00:37:17,680] That's correct.
+- [00:37:17,680 - 00:37:19,680] Okay.
+- [00:37:19,680 - 00:37:25,180] That is the idea of
+- [00:37:25,180 - 00:37:30,680] a path integral for string theory.
+- [00:37:30,680 - 00:37:32,680] Now I want to explain some mathematics.
+- [00:37:32,680 - 00:37:37,680] Some trivial math, not trivial.
+- [00:37:37,680 - 00:37:39,680] It's nice mathematics.
+- [00:37:39,680 - 00:37:41,680] Many of you have seen it before.
+- [00:37:41,680 - 00:37:42,680] Let's see.
+- [00:37:42,680 - 00:37:43,680] Oh.
+- [00:37:43,680 - 00:37:44,680] I forgot.
+- [00:37:44,680 - 00:37:45,680] I forgot.
+- [00:37:45,680 - 00:37:46,680] I forgot.
+- [00:37:46,680 - 00:37:47,680] I forgot.
+- [00:37:47,680 - 00:37:48,680] Yeah.
+- [00:37:48,680 - 00:37:54,180] Let's take a look at this action and
+- [00:37:54,180 - 00:37:59,680] ask what are the things that it's invariant under.
+- [00:37:59,680 - 00:38:01,680] What are the things that it's invariant under?
+- [00:38:01,680 - 00:38:04,680] What kind of transformations in particular of
+- [00:38:04,680 - 00:38:07,680] sigma and tau into new variables is it
+- [00:38:07,680 - 00:38:09,680] invariant under?
+- [00:38:09,680 - 00:38:11,680] Why am I interested in that?
+- [00:38:11,680 - 00:38:13,680] Well, I never told you exactly what
+- [00:38:13,680 - 00:38:15,680] the choice of sigma and tau is.
+- [00:38:15,680 - 00:38:16,180] I didn't tell you how to
+- [00:38:16,180 - 00:38:16,680] choose sigma and tau on here.
+- [00:38:16,680 - 00:38:17,680] You can just draw it any way we please.
+- [00:38:17,680 - 00:38:18,180] Surely, the answer can't be the same
+- [00:38:18,180 - 00:38:18,680] for any choice of sigma and tau.
+- [00:38:18,680 - 00:38:19,180] There must be some rules about what kind
+- [00:38:19,180 - 00:38:19,680] of coordinates I can use on the world sheet.
+- [00:38:19,680 - 00:38:20,680] But are those rules rigid?
+- [00:38:20,680 - 00:38:21,180] They tell you you have to use
+- [00:38:21,180 - 00:38:21,680] these particular coordinates, or is there some invariance,
+- [00:38:21,680 - 00:38:22,180] which allows you to have a
+- [00:38:22,180 - 00:38:22,680] variety of different combinations of coordinates?
+- [00:38:22,680 - 00:38:23,680] Well, the answer is no.
+- [00:38:23,680 - 00:38:24,680] It's just the same thing.
+- [00:38:24,680 - 00:38:25,680] It's just a combination of these two things.
+- [00:38:25,680 - 00:38:26,680] So, the answer is no.
+- [00:38:26,680 - 00:38:27,680] Well, the answer is no.
+- [00:38:27,680 - 00:38:28,680] So, the answer is no.
+- [00:38:28,680 - 00:38:29,680] Well, the answer is no.
+- [00:38:29,680 - 00:38:30,680] So, the answer is no.
+- [00:38:30,680 - 00:38:31,680] So, the answer is no.
+- [00:38:31,680 - 00:38:32,680] Well, the answer is no.
+- [00:38:32,680 - 00:38:33,680] Well, the answer is no.
+- [00:38:33,680 - 00:38:34,680] So, the answer is no.
+- [00:38:34,680 - 00:38:35,680] But are those rules rigid?
+- [00:38:35,680 - 00:38:38,850] They tell you you have to use
+- [00:38:38,850 - 00:38:42,020] these particular coordinates, or is there some invariance,
+- [00:38:42,020 - 00:38:45,850] which allows you to have a variety of
+- [00:38:45,850 - 00:38:49,680] different sets of coordinates, which will all give you
+- [00:38:49,680 - 00:38:52,100] the same answer?
+- [00:38:52,100 - 00:38:53,890] That's the classic problem of
+- [00:38:53,890 - 00:38:55,680] the invariances of a Lagrangian.
+- [00:38:55,680 - 00:38:58,539] What are the invariances of this Lagrangian,
+- [00:38:58,539 - 00:39:01,399] but in particular, what are the invariances
+- [00:39:01,399 - 00:39:03,560] with respect to coordinate transformations?
+- [00:39:03,560 - 00:39:06,530] of the Sigma Tau surface, of the
+- [00:39:06,530 - 00:39:09,500] Sigma Tau parameters. Sigma Tau's are just labels
+- [00:39:09,500 - 00:39:11,629] of points. They don't have
+- [00:39:11,629 - 00:39:13,759] any independent meaning other than just
+- [00:39:13,759 - 00:39:15,469] labels of points. This one is called
+- [00:39:15,469 - 00:39:17,180] George, this one's called Fred, this one's
+- [00:39:17,180 - 00:39:20,770] called Harvey. Clearly the answer can't
+- [00:39:20,770 - 00:39:24,360] depend on whether I rename the points
+- [00:39:24,360 - 00:39:32,080] to Melvin whatever. Okay so what
+- [00:39:32,080 - 00:39:39,800] are the invariances that that are allowed?
+- [00:39:40,360 - 00:39:42,500] So we look at this action and we
+- [00:39:42,500 - 00:39:44,640] ask what kind of what kind of transformations can
+- [00:39:44,660 - 00:39:49,410] we make. Let's look at it a little
+- [00:39:49,410 - 00:39:54,160] more detail here it is the x by
+- [00:39:54,160 - 00:39:54,300] n,
+- [00:39:54,360 - 00:39:59,130] In fact, instead of looking at the action
+- [00:39:59,130 - 00:40:03,900] itself, let's look at the equation of motion,
+- [00:40:03,900 - 00:40:06,900] which would come by varying this action.
+- [00:40:06,900 - 00:40:07,900] Why?
+- [00:40:07,900 - 00:40:10,820] It's just, it's as good as looking at the action.
+- [00:40:10,820 - 00:40:13,090] The equation of motion that would come from
+- [00:40:13,090 - 00:40:15,360] varying this action would look like a wave
+- [00:40:15,360 - 00:40:16,700] equation.
+- [00:40:16,700 - 00:40:18,690] This is basically the action for
+- [00:40:18,690 - 00:40:20,680] a wave equation with one exception.
+- [00:40:20,680 - 00:40:23,100] What's the exception?
+- [00:40:23,100 - 00:40:24,100] The sign here.
+- [00:40:24,100 - 00:40:26,660] Yeah, two positive signs.
+- [00:40:26,660 - 00:40:27,660] Okay.
+- [00:40:27,660 - 00:40:28,660] What's a wave equation?
+- [00:40:28,660 - 00:40:32,690] A wave equation would be d second x by d
+- [00:40:32,690 - 00:40:36,720] tau squared minus d second x by d sigma squared
+- [00:40:36,720 - 00:40:41,920] equals zero.
+- [00:40:41,920 - 00:40:45,420] What do you think the equation
+- [00:40:45,420 - 00:40:48,920] of motion coming from this would be?
+- [00:40:48,920 - 00:40:52,160] Look.
+- [00:40:52,160 - 00:40:53,100] X is some field.
+- [00:40:53,100 - 00:40:54,100] It's a little bit more complex.
+- [00:40:54,100 - 00:40:55,100] It's called the wave equation.
+- [00:40:55,100 - 00:40:56,100] What does it mean?
+- [00:40:56,100 - 00:40:57,100] It's the equation of motion.
+- [00:40:57,100 - 00:40:57,600] It's the equation of motion that's
+- [00:40:57,600 - 00:40:58,100] applied on the tau sigma coordinate space.
+- [00:40:58,100 - 00:40:59,100] Do you know the name of this equation?
+- [00:40:59,100 - 00:41:00,100] It's not called the wave equation.
+- [00:41:00,100 - 00:41:01,100] The Laplace equation.
+- [00:41:01,100 - 00:41:02,339] Two dimensional Laplace equation.
+- [00:41:02,339 - 00:41:08,600] It's the two dimensional Laplace equation.
+- [00:41:08,600 - 00:41:10,510] D second of something with respect
+- [00:41:10,510 - 00:41:12,420] to one variable squared plus d second.
+- [00:41:12,420 - 00:41:13,540] Usually you see it in a different form.
+- [00:41:13,540 - 00:41:17,540] You see the variable x would be replaced
+- [00:41:17,540 - 00:41:21,540] by phi, some function, maybe just f function,
+- [00:41:21,540 - 00:41:23,100] and tau and sigma.
+- [00:41:23,100 - 00:41:26,199] be called x and y. So you'd have an
+- [00:41:26,199 - 00:41:29,299] equation like d second f, or d second phi actually,
+- [00:41:29,299 - 00:41:34,499] yeah, by dx squared plus d second phi
+- [00:41:34,499 - 00:41:39,700] by dy squared equals zero in two dimensions.
+- [00:41:39,920 - 00:41:42,770] In three dimensions you would add another one,
+- [00:41:42,770 - 00:41:45,620] d second phi by dz squared. I'm talking
+- [00:41:45,620 - 00:41:47,920] now not about physics, I'm talking about
+- [00:41:47,920 - 00:41:50,220] the formal structure of equations. You recognize
+- [00:41:50,220 - 00:41:56,009] this equation? Vibrating drum? No, no, okay, I
+- [00:41:56,009 - 00:42:01,799] don't want to get into it. Yeah, you're
+- [00:42:01,799 - 00:42:04,599] partly right, but a vibrating drum also has a
+- [00:42:04,599 - 00:42:07,399] time variable in it. Okay, so I don't want
+- [00:42:07,399 - 00:42:10,939] to get into vibrating drums, but you're
+- [00:42:10,939 - 00:42:14,480] not completely wrong. This equation for the electrostatic
+- [00:42:14,480 - 00:42:16,760] potential, except in the electrostatic potential you
+- [00:42:16,760 - 00:42:19,040] would have a charge density on the right
+- [00:42:19,040 - 00:42:19,620] hand side.
+- [00:42:20,220 - 00:42:25,660] Okay, it's called the Laplace equation, and
+- [00:42:25,660 - 00:42:31,100] now it's a Laplace equation in two dimensions,
+- [00:42:31,100 - 00:42:33,600] except now the variable phi is replaced by x,
+- [00:42:33,600 - 00:42:36,100] and the variable x and y are replaced by
+- [00:42:36,100 - 00:42:38,600] tau and sigma. But otherwise the mathematical
+- [00:42:38,600 - 00:42:41,100] structure of this equation is the same.
+- [00:42:41,100 - 00:42:44,100] Another question? Yeah, question?
+- [00:42:44,100 - 00:42:45,600] Here you have second derivatives,
+- [00:42:45,600 - 00:42:47,100] here you have first derivatives.
+- [00:42:47,100 - 00:42:49,100] Here you have first derivatives, yeah.
+- [00:42:50,220 - 00:42:52,549] But when you have first derivatives in
+- [00:42:52,549 - 00:42:54,879] an action, it gives you second derivatives in
+- [00:42:54,879 - 00:42:57,849] the equation of motion. Just like having x
+- [00:42:57,849 - 00:43:00,819] dot squared in an action gives you x double
+- [00:43:00,819 - 00:43:03,409] dot in the equation. So that's a good question.
+- [00:43:03,409 - 00:43:06,000] Okay, and whether I work with the action or
+- [00:43:06,000 - 00:43:08,959] the equation of motion, it doesn't matter. You get
+- [00:43:08,959 - 00:43:11,919] six of one, half a dozen of the other.
+- [00:43:11,919 - 00:43:14,499] Alright, I just like this form better because
+- [00:43:14,499 - 00:43:17,080] it helps me illustrate a point. Alright, now
+- [00:43:17,080 - 00:43:19,339] let's, what is a second derivative?
+- [00:43:19,339 - 00:43:19,540] Yeah.
+- [00:43:19,540 - 00:43:20,020] Yeah, okay.
+- [00:43:20,220 - 00:43:25,720] Second derivative of x, think of the tau axis as being discrete
+- [00:43:25,720 - 00:43:31,220] now. Just to give you a geometric picture of what this equation means.
+- [00:43:31,220 - 00:43:34,720] Think of the tau axis as being
+- [00:43:34,720 - 00:43:38,220] discrete with little separations epsilon between neighboring points.
+- [00:43:38,220 - 00:43:42,720] What is a first derivative? A first derivative is, let's
+- [00:43:42,720 - 00:43:47,220] call this point one, let's call one, two, and three.
+- [00:43:47,220 - 00:43:49,220] A first derivative is called a second derivative.
+- [00:43:50,220 - 00:43:51,220] A first derivative is called a second derivative.
+- [00:43:51,220 - 00:43:52,220] A second derivative is called a second derivative.
+- [00:43:52,220 - 00:43:52,720] Because it represents a number of points
+- [00:43:52,720 - 00:43:53,220] and also its derivative is closely related to
+- [00:43:53,220 - 00:43:56,220] the difference of a quantity at neighboring points.
+- [00:43:56,220 - 00:44:01,110] Alright, so the first derivative would be like
+- [00:44:01,110 - 00:44:06,000] x of three minus x of two. You divide
+- [00:44:06,000 - 00:44:07,610] it by epsilon, but the, this, this is
+- [00:44:07,610 - 00:44:09,220] not the important thing. Let's divide it by epsilon.
+- [00:44:09,220 - 00:44:12,160] Epsilon is the distance between the points, and
+- [00:44:12,160 - 00:44:15,100] then you let the epsilon go to zero. And
+- [00:44:15,100 - 00:44:17,560] that gives you the first derivative. Let's
+- [00:44:17,560 - 00:44:20,020] not worry about the epsilons right now. That's
+- [00:44:20,020 - 00:44:22,570] not the point. A first derivative
+- [00:44:22,570 - 00:44:25,120] is like the difference of something at
+- [00:44:25,120 - 00:44:27,160] neighboring points. If that's what a
+- [00:44:27,160 - 00:44:29,200] first derivative is, what is a second
+- [00:44:29,200 - 00:44:31,810] derivative? A second derivative is
+- [00:44:31,810 - 00:44:34,420] difference of first derivatives. Alright,
+- [00:44:34,420 - 00:44:38,080] so a second derivative is x3
+- [00:44:38,080 - 00:44:41,740] minus x2, that's the first derivative evaluated
+- [00:44:41,740 - 00:44:44,940] between these two points, minus the
+- [00:44:44,940 - 00:44:48,140] first derivative evaluated one step over. So
+- [00:44:48,140 - 00:44:53,930] that's minus x of 2 minus x of
+- [00:44:53,930 - 00:44:59,720] 1. That's the analog, the discrete analog of the
+- [00:44:59,720 - 00:45:07,279] second derivative. Let's see what it is. It's x3,
+- [00:45:07,279 - 00:45:14,839] x of 3 plus x of 1 minus twice x
+- [00:45:14,839 - 00:45:16,839] of 2.
+- [00:45:16,839 - 00:45:17,839] So what is x of 2?
+- [00:45:18,140 - 00:45:22,249] It's the sum of the quantities on
+- [00:45:22,249 - 00:45:26,359] the outer edges minus twice the quantity in
+- [00:45:26,359 - 00:45:29,359] the center. That's a second derivative.
+- [00:45:29,359 - 00:45:32,629] Let's look at the thing which occurs
+- [00:45:32,629 - 00:45:35,900] in the Laplace equation here. Instead of
+- [00:45:35,900 - 00:45:37,920] taking the tau axis to be discrete,
+- [00:45:37,920 - 00:45:39,940] let's take the tau sigma plane to be
+- [00:45:39,940 - 00:45:46,379] discrete. The tau sigma plane is discrete now.
+- [00:45:46,380 - 00:45:49,880] And let's see if we can
+- [00:45:49,880 - 00:45:53,380] geometrically identify what this equation means.
+- [00:45:53,380 - 00:45:56,720] Let's go to a point over here. A
+- [00:45:56,720 - 00:46:00,060] point over here, the second derivative of x
+- [00:46:00,060 - 00:46:03,620] with respect to tau is x at this point
+- [00:46:03,620 - 00:46:07,180] plus x at this point minus twice x at
+- [00:46:07,180 - 00:46:10,780] the center. That's what we just figured out. Let's label the
+- [00:46:10,780 - 00:46:14,380] points. 1, 2, 3, 4, and at the center we'll call 5.
+- [00:46:14,380 - 00:46:14,880] 1, 2, 3, 4, and
+- [00:46:14,880 - 00:46:15,380] at the center we'll call 5.
+- [00:46:16,380 - 00:46:19,880] So d second x by d tau squared, that's x of
+- [00:46:19,880 - 00:46:23,380] 1 plus x of 3 minus twice x at 5, right?
+- [00:46:35,380 - 00:46:38,380] How about d second x with respect to sigma squared?
+- [00:46:38,380 - 00:46:41,380] Oh, sorry, did I make a mistake here?
+- [00:46:41,380 - 00:46:43,880] Well, okay, it depends on which way I think of
+- [00:46:43,880 - 00:46:46,380] tau and sigma. I guess I have in this picture here.
+- [00:46:46,380 - 00:46:49,380] I guess I have tau
+- [00:46:49,380 - 00:46:52,380] going horizontally and sigma going vertically.
+- [00:46:52,380 - 00:46:54,380] I don't usually think about it
+- [00:46:54,380 - 00:46:56,380] that way, but that's all right.
+- [00:46:56,380 - 00:46:59,380] So x of the second derivative with respect to
+- [00:46:59,380 - 00:47:02,380] tau is this one plus this one minus this one.
+- [00:47:02,380 - 00:47:08,380] How about the second derivative with respect to sigma?
+- [00:47:08,380 - 00:47:10,880] That's going to be this one plus
+- [00:47:10,880 - 00:47:13,380] this one minus twice x of 5.
+- [00:47:13,380 - 00:47:14,380] So we get to add in plus.
+- [00:47:14,380 - 00:47:23,880] We get to add in plus x of 2 plus
+- [00:47:23,880 - 00:47:33,380] x of 4 minus twice x of 5 equals 0.
+- [00:47:33,380 - 00:47:35,380] Well, that's not so bad.
+- [00:47:35,380 - 00:47:37,880] x of 1 plus x of 3
+- [00:47:37,880 - 00:47:40,380] plus x of 4 plus x of 2.
+- [00:47:40,380 - 00:47:43,380] x of 1, 3, 2, and 4.
+- [00:47:44,380 - 00:47:52,380] So we get the sum of the x's on the points surrounding x of
+- [00:47:52,380 - 00:48:00,380] 5 minus 4 times the sum, sorry, 4 times x at 5 equals 0.
+- [00:48:00,380 - 00:48:06,380] Another way to say it is that x of 1 plus
+- [00:48:06,380 - 00:48:12,380] x of 2 plus x of 3 plus x of 4.
+- [00:48:12,380 - 00:48:18,380] equals 4x at 5.
+- [00:48:18,380 - 00:48:23,380] 4x at 5.
+- [00:48:23,380 - 00:48:27,380] Or yet another way to say it is that
+- [00:48:27,380 - 00:48:31,380] x at 5 is the average of the x's on.
+- [00:48:31,380 - 00:48:33,380] That's what the Laplace equation says.
+- [00:48:33,380 - 00:48:35,380] It's true in higher dimensions also.
+- [00:48:35,380 - 00:48:38,380] That's what the Laplace equation says, that at
+- [00:48:38,380 - 00:48:41,380] any point if you're surrounded by a square,
+- [00:48:41,380 - 00:48:43,380] and even though this thing is
+- [00:48:43,380 - 00:48:45,380] on its side, it is a square,
+- [00:48:45,380 - 00:48:50,380] any square, any small square, any infinitesimal square,
+- [00:48:50,380 - 00:48:57,380] that if you evaluate the field,
+- [00:48:57,380 - 00:49:02,380] at the sum of the field at the corners,
+- [00:49:02,380 - 00:49:05,380] that the field at the center
+- [00:49:05,380 - 00:49:08,380] is the average at the corners.
+- [00:49:08,380 - 00:49:11,380] Now, the square doesn't have to be oriented this way.
+- [00:49:11,380 - 00:49:15,380] It's well known that this equation is
+- [00:49:15,380 - 00:49:19,380] invariant under rotations of the sigma-tau plane.
+- [00:49:19,380 - 00:49:22,380] So, you can say it even more geometrically.
+- [00:49:22,380 - 00:49:25,380] Take any square, any square oriented
+- [00:49:25,380 - 00:49:28,380] in any way, any small square.
+- [00:49:28,380 - 00:49:32,380] This is of course only true for infinitesimal squares.
+- [00:49:32,380 - 00:49:36,380] For any small infinitesimal square,
+- [00:49:36,380 - 00:49:38,880] the field at the center is the
+- [00:49:38,880 - 00:49:41,380] average of the field at the corners.
+- [00:49:41,380 - 00:49:44,380] That's an invariant way,
+- [00:49:44,380 - 00:49:45,880] apart from the fact that
+- [00:49:45,880 - 00:49:47,380] you have to think about limits,
+- [00:49:47,380 - 00:49:49,380] which makes it a little more complicated,
+- [00:49:49,380 - 00:49:51,380] apart from that limiting procedure that you have to do,
+- [00:49:51,380 - 00:49:53,380] that's an invariant way to
+- [00:49:53,380 - 00:49:55,380] say what the Laplace equation is,
+- [00:49:55,380 - 00:49:57,380] and it's an invariant way
+- [00:49:57,380 - 00:49:59,380] to describe the equation of motion,
+- [00:49:59,380 - 00:50:03,380] the classical equation of motion of this thing here.
+- [00:50:03,380 - 00:50:06,880] Okay, so now I can tell
+- [00:50:06,880 - 00:50:10,380] you exactly what the invariance structure
+- [00:50:10,380 - 00:50:14,380] of the Laplace equation or of this action is.
+- [00:50:14,380 - 00:50:19,380] It's the class of transformations of the sigma-tau plane
+- [00:50:19,380 - 00:50:23,880] which take every infinitesimal
+- [00:50:23,880 - 00:50:28,380] square into an infinitesimal square.
+- [00:50:28,380 - 00:50:33,380] If under coordinate transformations of the sigma-tau plane,
+- [00:50:33,380 - 00:50:37,380] squeezings and mappings of the sigma-tau plane,
+- [00:50:37,380 - 00:50:40,380] if it takes every small square
+- [00:50:40,380 - 00:50:42,380] into a small square,
+- [00:50:42,380 - 00:50:45,380] then the Laplace equation will
+- [00:50:45,380 - 00:50:48,380] be unchanged in the new coordinates.
+- [00:50:48,380 - 00:50:50,380] So, if we have some new coordinates,
+- [00:50:50,380 - 00:50:52,380] let's call it sigma prime,
+- [00:50:52,380 - 00:50:54,380] which is a function of sigma and tau,
+- [00:50:54,380 - 00:50:58,380] and tau prime, which are functions of sigma and tau.
+- [00:50:58,380 - 00:51:04,380] If it is true that any small sigma-tau square
+- [00:51:04,380 - 00:51:07,380] maps into, this is the sigma plane,
+- [00:51:07,380 - 00:51:09,380] sigma-tau plane,
+- [00:51:09,380 - 00:51:13,380] we map it now to the sigma prime-tau plane,
+- [00:51:13,380 - 00:51:16,380] most mappings will not take squares to squares.
+- [00:51:16,380 - 00:51:19,380] They'll take squares to something else.
+- [00:51:19,380 - 00:51:22,380] But there's a special class of mappings
+- [00:51:22,380 - 00:51:25,380] which take squares to squares.
+- [00:51:25,380 - 00:51:27,380] Anybody know the name of such mappings?
+- [00:51:27,380 - 00:51:30,380] Conformal mappings.
+- [00:51:30,380 - 00:51:32,380] Conformal mappings.
+- [00:51:32,380 - 00:51:36,380] Now, let me express it another way.
+- [00:51:39,380 - 00:51:46,380] If I have a transformation which preserves angles,
+- [00:51:46,380 - 00:51:49,380] if all angles are preserved,
+- [00:51:49,380 - 00:51:52,380] then it will be a conformal transformation.
+- [00:51:52,380 - 00:51:54,380] It will take squares to squares.
+- [00:51:54,380 - 00:51:55,380] Why?
+- [00:51:55,380 - 00:51:57,380] Well, first of all,
+- [00:51:57,380 - 00:52:03,380] let's take the diagonals
+- [00:52:03,380 - 00:52:06,380] and map them to the sigma-tau plane,
+- [00:52:06,380 - 00:52:08,380] so to the sigma prime-tau prime plane.
+- [00:52:09,380 - 00:52:12,380] There'll be little short segments
+- [00:52:12,380 - 00:52:16,380] oriented in some other direction.
+- [00:52:16,380 - 00:52:19,380] And let's suppose that all angles are preserved
+- [00:52:19,380 - 00:52:21,380] under this mapping.
+- [00:52:21,380 - 00:52:23,380] Any angle between two curves
+- [00:52:23,380 - 00:52:25,380] becomes the same angle
+- [00:52:25,380 - 00:52:27,380] among the sigma prime,
+- [00:52:27,380 - 00:52:29,380] the prime plane.
+- [00:52:29,380 - 00:52:31,380] Then, first of all,
+- [00:52:31,380 - 00:52:33,380] orthogonal angles here
+- [00:52:33,380 - 00:52:35,380] will go to orthogonal angles here.
+- [00:52:35,380 - 00:52:37,380] This is not true of any whole transformation.
+- [00:52:37,380 - 00:52:39,380] It's true of some class of transformations,
+- [00:52:39,380 - 00:52:42,380] the angle-preserving transformations.
+- [00:52:42,380 - 00:52:44,380] Now, we can say something else.
+- [00:52:44,380 - 00:52:47,380] Supposing that it had this property
+- [00:52:47,380 - 00:52:51,380] of taking perpendiculars in here
+- [00:52:51,380 - 00:52:52,380] to perpendiculars,
+- [00:52:52,380 - 00:52:56,380] but it stretched things out in one direction.
+- [00:52:56,380 - 00:52:57,380] In other words,
+- [00:52:57,380 - 00:53:00,380] it made a kind of an elongated kite
+- [00:53:00,380 - 00:53:02,380] out of a little square.
+- [00:53:02,380 - 00:53:04,380] Then there would be other angles
+- [00:53:04,380 - 00:53:06,380] which weren't preserved.
+- [00:53:06,380 - 00:53:09,380] These angles over here would be changed.
+- [00:53:09,380 - 00:53:12,380] This angle at this corner would not...
+- [00:53:12,380 - 00:53:14,380] If this is a 45-degree angle,
+- [00:53:14,380 - 00:53:17,380] if it stretched the square in some way,
+- [00:53:17,380 - 00:53:21,380] it would not remain a 45-degree angle.
+- [00:53:21,380 - 00:53:23,380] So, conclusion.
+- [00:53:23,380 - 00:53:25,380] Angle-preserving transformations
+- [00:53:25,380 - 00:53:27,380] preserve little squares,
+- [00:53:27,380 - 00:53:29,380] take little squares to little squares.
+- [00:53:29,380 - 00:53:31,380] Wouldn't that just be basically rotational?
+- [00:53:31,380 - 00:53:32,380] What's that?
+- [00:53:32,380 - 00:53:34,380] Wouldn't that just be basically a rotation?
+- [00:53:34,380 - 00:53:35,380] Locally, it's only a rotation,
+- [00:53:35,380 - 00:53:39,380] but it can bend the coordinates.
+- [00:53:39,380 - 00:53:42,380] No, it's not just rotations.
+- [00:53:42,380 - 00:53:44,380] Remember, we're only demanding
+- [00:53:44,380 - 00:53:48,380] that infinitesimal little squares
+- [00:53:48,380 - 00:53:50,380] remain infinitesimal little squares.
+- [00:53:50,380 - 00:53:52,380] But now we can say it
+- [00:53:52,380 - 00:53:55,380] without using the word infinitesimal.
+- [00:53:55,380 - 00:53:58,380] If the transformation has the property
+- [00:53:58,380 - 00:54:04,380] that the angle between any intersecting...
+- [00:54:05,380 - 00:54:11,380] pair of curves on the sigma-tau plane
+- [00:54:11,380 - 00:54:14,380] maps into the same angle
+- [00:54:14,380 - 00:54:17,380] on the sigma-prime-tau-prime plane,
+- [00:54:17,380 - 00:54:19,380] then that mapping is conformal.
+- [00:54:19,380 - 00:54:22,380] Conformal mappings preserve...
+- [00:54:22,380 - 00:54:24,380] They preserve angles,
+- [00:54:24,380 - 00:54:25,380] but since they preserve all angles,
+- [00:54:25,380 - 00:54:28,380] for sufficiently small shapes...
+- [00:54:28,380 - 00:54:29,380] For sufficiently small shapes,
+- [00:54:29,380 - 00:54:32,380] you can think of the curves as being straight lines.
+- [00:54:32,380 - 00:54:33,380] And it's easy to prove
+- [00:54:33,380 - 00:54:35,380] for sufficiently small shapes,
+- [00:54:35,380 - 00:54:39,380] that shapes themselves are preserved.
+- [00:54:39,380 - 00:54:43,380] Sizes are not preserved.
+- [00:54:43,380 - 00:54:44,380] Sizes are not preserved.
+- [00:54:44,380 - 00:54:49,380] A small square over here
+- [00:54:49,380 - 00:54:52,380] can map to a bigger square over here.
+- [00:54:52,380 - 00:54:53,380] No, I didn't draw.
+- [00:54:53,380 - 00:54:54,380] You know what I mean.
+- [00:54:54,380 - 00:54:56,380] Sizes can be preserved.
+- [00:54:56,380 - 00:54:58,380] Sizes can be preserved.
+- [00:54:58,380 - 00:54:59,380] Sizes can be...
+- [00:54:59,380 - 00:55:02,380] Can also be preserved in addition.
+- [00:55:02,380 - 00:55:04,380] Then we're talking about
+- [00:55:04,380 - 00:55:06,380] the rotations and translations.
+- [00:55:06,380 - 00:55:07,380] Yeah.
+- [00:55:07,380 - 00:55:08,380] Right.
+- [00:55:08,380 - 00:55:11,380] That's our much, much smaller class of transformations.
+- [00:55:11,380 - 00:55:13,380] Now, here we're talking just about
+- [00:55:13,380 - 00:55:15,380] the angle-preserving transformations,
+- [00:55:15,380 - 00:55:19,380] and they can expand and contract shapes.
+- [00:55:19,380 - 00:55:22,380] In fact, they can expand and contract differently
+- [00:55:22,380 - 00:55:24,380] in different regions of the plane.
+- [00:55:24,380 - 00:55:26,880] Over here, a shape might
+- [00:55:26,880 - 00:55:29,380] get stretched to a bigger shape.
+- [00:55:29,380 - 00:55:31,380] Over here, a shape might
+- [00:55:31,380 - 00:55:33,380] get squashed to a smaller shape.
+- [00:55:34,380 - 00:55:35,380] Question.
+- [00:55:35,380 - 00:55:36,380] Yeah.
+- [00:55:36,380 - 00:55:39,380] Would this conformal mapping be equivalent to saying
+- [00:55:39,380 - 00:55:42,380] the coordinate system is flat?
+- [00:55:42,380 - 00:55:43,380] No.
+- [00:55:43,380 - 00:55:44,380] Nope.
+- [00:55:44,380 - 00:55:47,380] Conformally flat, no.
+- [00:55:47,380 - 00:55:48,380] I don't know.
+- [00:55:48,380 - 00:55:50,380] What do you mean by coordinate system being flat?
+- [00:55:50,380 - 00:55:51,380] You mean Cartesian?
+- [00:55:51,380 - 00:55:52,380] That it's not curved,
+- [00:55:52,380 - 00:55:54,380] otherwise the angles wouldn't be preserved.
+- [00:55:54,380 - 00:55:55,380] No.
+- [00:55:55,380 - 00:55:56,380] No.
+- [00:55:56,380 - 00:55:57,380] No.
+- [00:55:57,380 - 00:56:01,380] Where is this trick of conformal mappings used?
+- [00:56:01,380 - 00:56:02,380] Mercator projection.
+- [00:56:02,380 - 00:56:03,380] Well, any projection,
+- [00:56:03,380 - 00:56:06,380] any projection of a map,
+- [00:56:06,380 - 00:56:10,380] which is intended to preserve the shape of islands,
+- [00:56:10,380 - 00:56:13,380] continents, and so forth, small ones,
+- [00:56:13,380 - 00:56:17,380] but doesn't care about the sizes of things,
+- [00:56:17,380 - 00:56:20,380] that's a conformal mapping.
+- [00:56:20,380 - 00:56:22,380] So the relationship between different maps,
+- [00:56:22,380 - 00:56:25,380] different projections,
+- [00:56:25,380 - 00:56:28,380] both of which preserve shapes,
+- [00:56:28,380 - 00:56:29,380] but not sizes,
+- [00:56:29,380 - 00:56:31,380] is always a conformal mapping.
+- [00:56:31,380 - 00:56:32,380] Yeah.
+- [00:56:32,380 - 00:56:34,380] Last week you said,
+- [00:56:34,380 - 00:56:37,380] when we were looking at the stream scattering,
+- [00:56:37,380 - 00:56:40,380] that at the end you had enough freedom
+- [00:56:40,380 - 00:56:45,380] to assume that the stream when it's split again
+- [00:56:45,380 - 00:56:47,380] was kind of in half.
+- [00:56:47,380 - 00:56:49,380] And is that related to this?
+- [00:56:49,380 - 00:56:51,380] Yeah.
+- [00:56:51,380 - 00:57:00,380] We will.
+- [00:57:00,380 - 00:57:01,380] All right, since you asked me,
+- [00:57:01,380 - 00:57:04,380] I will tell you right now what the relationship is.
+- [00:57:04,380 - 00:57:11,380] Okay.
+- [00:57:11,380 - 00:57:12,380] I was going to tell you
+- [00:57:12,380 - 00:57:13,380] a little bit about analytic functions,
+- [00:57:13,380 - 00:57:15,380] but maybe we'll come back to that.
+- [00:57:25,380 - 00:57:26,380] Coordinate transformations,
+- [00:57:26,380 - 00:57:29,380] which are defined by analytic functions
+- [00:57:29,380 - 00:57:30,380] of complex variables,
+- [00:57:30,380 - 00:57:33,380] are angle preserving.
+- [00:57:33,380 - 00:57:35,380] We may come back to that.
+- [00:57:35,380 - 00:57:38,380] Okay.
+- [00:57:38,380 - 00:57:42,380] Oh, incidentally,
+- [00:57:42,380 - 00:57:46,380] there is one situation
+- [00:57:46,380 - 00:57:50,380] where angles are not necessarily preserved.
+- [00:57:50,380 - 00:57:52,380] It's a curious one.
+- [00:57:52,380 - 00:57:58,380] You can take any figure with a boundary,
+- [00:57:58,380 - 00:58:00,380] let's say a square,
+- [00:58:00,380 - 00:58:02,380] a big square now,
+- [00:58:02,380 - 00:58:04,380] not an infinitesimal square,
+- [00:58:04,380 - 00:58:06,380] a finite size square,
+- [00:58:06,380 - 00:58:08,380] and map it by conformal mapping
+- [00:58:08,380 - 00:58:10,380] to any shape you like.
+- [00:58:10,380 - 00:58:12,380] But in particular,
+- [00:58:12,380 - 00:58:14,380] you could map it to a,
+- [00:58:14,380 - 00:58:16,380] this doesn't look very square,
+- [00:58:16,380 - 00:58:18,380] you can map it to a,
+- [00:58:18,380 - 00:58:20,380] let's say,
+- [00:58:20,380 - 00:58:22,380] this is a square.
+- [00:58:22,380 - 00:58:24,380] And you can map it to a,
+- [00:58:24,380 - 00:58:26,380] let's say,
+- [00:58:26,380 - 00:58:28,380] to a,
+- [00:58:28,380 - 00:58:30,380] something like that.
+- [00:58:30,380 - 00:58:32,380] So wait a minute,
+- [00:58:32,380 - 00:58:34,380] you said that they have to preserve angles.
+- [00:58:34,380 - 00:58:36,380] This doesn't look like it preserves the angles.
+- [00:58:36,380 - 00:58:38,380] Well, first of all,
+- [00:58:38,380 - 00:58:43,380] it only preserves infinitely small shapes.
+- [00:58:43,380 - 00:58:46,380] You can map this to this by conformal mapping,
+- [00:58:46,380 - 00:58:52,380] but the corners will not go to the corners.
+- [00:58:56,380 - 00:59:01,380] The corners here will perhaps go to these points.
+- [00:59:06,380 - 00:59:09,380] Okay, so conformal mappings are tricky.
+- [00:59:09,380 - 00:59:13,380] You can map any shape with a boundary
+- [00:59:13,380 - 00:59:15,380] to any other shape with the same boundary.
+- [00:59:15,380 - 00:59:17,380] This is a theorem about analytic mappings.
+- [00:59:17,380 - 00:59:19,380] And inside the region,
+- [00:59:19,380 - 00:59:21,880] any small shape will map to
+- [00:59:21,880 - 00:59:24,380] a shape of the same kind.
+- [00:59:24,380 - 00:59:26,380] Any small shape here will map
+- [00:59:26,380 - 00:59:29,380] to a shape of the same kind here,
+- [00:59:29,380 - 00:59:31,380] in the interior of the mapping.
+- [00:59:31,380 - 00:59:33,380] So this is something to know,
+- [00:59:33,380 - 00:59:35,380] that you can do some things
+- [00:59:35,380 - 00:59:38,380] with changing the shapes of boundaries of regions.
+- [00:59:38,380 - 00:59:40,380] Okay, having said that now,
+- [00:59:40,380 - 00:59:43,380] let me come to what the point is.
+- [00:59:48,380 - 00:59:49,380] Last time,
+- [00:59:49,380 - 00:59:53,380] we talked about strings splitting and joining.
+- [00:59:53,380 - 00:59:55,380] I drew a picture for you
+- [00:59:55,380 - 00:59:57,380] where two strings came in,
+- [00:59:57,380 - 01:00:00,380] and I indicated that by making a slit.
+- [01:00:00,380 - 01:00:02,380] Take a ribbon,
+- [01:00:02,380 - 01:00:05,380] make a slit down the ribbon,
+- [01:00:05,380 - 01:00:07,380] until that slit comes to an end point.
+- [01:00:07,380 - 01:00:10,380] Those are two separate strings
+- [01:00:10,380 - 01:00:11,380] joining at this point
+- [01:00:11,380 - 01:00:14,380] and making one long string.
+- [01:00:14,380 - 01:00:16,380] And then continuing again
+- [01:00:16,380 - 01:00:20,380] after it splits again like that.
+- [01:00:20,380 - 01:00:22,380] There's a one-parameter family
+- [01:00:22,380 - 01:00:24,380] of such splittings and joinings,
+- [01:00:24,380 - 01:00:27,380] characterized by the time interval,
+- [01:00:27,380 - 01:00:29,380] or the tau interval,
+- [01:00:29,380 - 01:00:31,380] between this point and that point.
+- [01:00:31,380 - 01:00:32,380] In the end,
+- [01:00:32,380 - 01:00:35,380] if you're calculating a scattering amplitude,
+- [01:00:35,380 - 01:00:37,380] you'll integrate over it.
+- [01:00:37,380 - 01:00:38,380] You get some integral,
+- [01:00:38,380 - 01:00:40,380] and that integral gave you
+- [01:00:40,380 - 01:00:41,380] the beta function,
+- [01:00:41,380 - 01:00:42,380] the Euler beta function,
+- [01:00:42,380 - 01:00:44,380] or the Veniziano amplitude,
+- [01:00:44,380 - 01:00:45,380] however you want to call it.
+- [01:00:45,380 - 01:00:46,380] We wrote,
+- [01:00:46,380 - 01:00:48,380] I described it for you last time,
+- [01:00:48,380 - 01:00:50,380] and it gives you the scattering amplitude
+- [01:00:50,380 - 01:00:51,380] in string theory.
+- [01:00:51,380 - 01:00:52,380] Important fact,
+- [01:00:52,380 - 01:00:53,380] but,
+- [01:00:53,380 - 01:00:56,380] not really terribly central right now.
+- [01:00:56,380 - 01:00:58,380] Okay, what's going on in here?
+- [01:00:58,380 - 01:01:00,380] What's going on in here
+- [01:01:00,380 - 01:01:02,380] is we have a two-dimensional space,
+- [01:01:02,380 - 01:01:04,380] we can call it sigma tau.
+- [01:01:04,380 - 01:01:05,380] There's sigma tau.
+- [01:01:05,380 - 01:01:07,380] And we have at each point in this space
+- [01:01:07,380 - 01:01:08,380] we have an x,
+- [01:01:08,380 - 01:01:10,380] not just one x,
+- [01:01:10,380 - 01:01:11,380] but several x,
+- [01:01:11,380 - 01:01:12,380] a family of x's,
+- [01:01:12,380 - 01:01:14,380] x mu of sigma and tau.
+- [01:01:14,380 - 01:01:17,380] And they satisfy some kind of equations.
+- [01:01:17,380 - 01:01:18,380] In fact,
+- [01:01:18,380 - 01:01:20,380] we have a series of equations
+- [01:01:20,380 - 01:01:21,380] that we call sigma tau.
+- [01:01:21,380 - 01:01:22,380] And they're called sigma tau.
+- [01:01:22,380 - 01:01:24,380] And they satisfy some kind of equations.
+- [01:01:24,380 - 01:01:25,380] In fact,
+- [01:01:25,380 - 01:01:27,380] what kind of equations do they satisfy?
+- [01:01:27,380 - 01:01:30,380] They satisfy the Laplace equation.
+- [01:01:30,380 - 01:01:31,380] Now actually,
+- [01:01:31,380 - 01:01:34,380] technically they satisfy the wave equation.
+- [01:01:34,380 - 01:01:36,380] But if you do this trick
+- [01:01:36,380 - 01:01:38,380] and carry out the path integrals
+- [01:01:38,380 - 01:01:42,380] by letting tau go to i tau,
+- [01:01:42,380 - 01:01:46,380] then the x's in here satisfy the Laplace equation.
+- [01:01:46,380 - 01:01:48,380] What does that tell you?
+- [01:01:48,380 - 01:01:50,380] It tells you that you can map,
+- [01:01:50,380 - 01:01:51,380] here we have a shape,
+- [01:01:51,380 - 01:01:58,380] here we have a piece of a plane.
+- [01:01:58,380 - 01:02:00,380] It goes out to infinity along here.
+- [01:02:00,380 - 01:02:06,380] Think of it as being slit down the center here.
+- [01:02:06,380 - 01:02:09,880] And think of it as
+- [01:02:09,880 - 01:02:13,380] being slit down the center here.
+- [01:02:13,380 - 01:02:19,380] What's the topology of this region here?
+- [01:02:19,380 - 01:02:21,380] I'll tell you what the topology of this region is.
+- [01:02:21,380 - 01:02:24,380] The topology of this region is a circle,
+- [01:02:24,380 - 01:02:26,380] but with some special,
+- [01:02:26,380 - 01:02:28,380] why is it a circle?
+- [01:02:28,380 - 01:02:30,380] Let's start at the center of a circle
+- [01:02:30,380 - 01:02:32,380] and work outward with a series of circles.
+- [01:02:32,380 - 01:02:36,380] It's a bull's eye.
+- [01:02:36,380 - 01:02:39,380] Let's start at the center of this and work outward.
+- [01:02:51,380 - 01:02:58,380] I can do this in such a way
+- [01:02:58,380 - 01:03:02,380] as to cover the whole space
+- [01:03:02,380 - 01:03:05,380] by a sequence of closed curves
+- [01:03:05,380 - 01:03:08,380] which are isomorphic to the circles.
+- [01:03:08,380 - 01:03:11,380] In other words, I have taken the bull's eye
+- [01:03:11,380 - 01:03:12,380] and deformed it,
+- [01:03:12,380 - 01:03:16,380] but without changing its topology,
+- [01:03:16,380 - 01:03:19,380] I have changed it into this double strip,
+- [01:03:19,380 - 01:03:20,380] a line,
+- [01:03:20,380 - 01:03:23,380] with these points over here.
+- [01:03:26,380 - 01:03:29,380] It depends on what happens out there.
+- [01:03:29,380 - 01:03:31,380] There's some exceptional points
+- [01:03:31,380 - 01:03:34,380] in the exceptional points
+- [01:03:34,380 - 01:03:37,380] are the infinite endpoints there and there.
+- [01:03:37,380 - 01:03:40,380] You can do this mapping.
+- [01:03:40,380 - 01:03:42,380] This mapping exists.
+- [01:03:42,380 - 01:03:43,880] You'll have to remember that
+- [01:03:43,880 - 01:03:45,380] there were some exceptional points
+- [01:03:45,380 - 01:03:48,380] which have to be...
+- [01:03:48,380 - 01:03:48,880] We have to know what
+- [01:03:48,880 - 01:03:49,380] to do with those exceptional points.
+- [01:03:50,380 - 01:03:54,380] But the answer is that the, I don't know
+- [01:03:54,380 - 01:03:58,380] what to call this shape, what should we call it?
+- [01:03:58,380 - 01:04:02,880] The slit strip, the doubly
+- [01:04:02,880 - 01:04:07,380] slit strip, okay that's a mouthful.
+- [01:04:07,380 - 01:04:08,380] Band-aid.
+- [01:04:08,380 - 01:04:09,380] The what?
+- [01:04:09,380 - 01:04:10,380] The band-aid.
+- [01:04:10,380 - 01:04:12,380] No, no, no, no, it's cut down the
+- [01:04:12,380 - 01:04:14,380] middle there so it's not quite a band-aid.
+- [01:04:14,380 - 01:04:17,380] No, the sports band-aid where they have the wing.
+- [01:04:17,380 - 01:04:20,380] Yeah, yeah, yeah, the sports
+- [01:04:20,380 - 01:04:23,380] band-aid shape, yeah, good, right, good.
+- [01:04:23,380 - 01:04:25,380] Except that it's the infinite sports band-aid shape.
+- [01:04:25,380 - 01:04:30,380] Okay, that's not much better than the doubly slit strip.
+- [01:04:30,380 - 01:04:34,380] The infinite sports band-aid.
+- [01:04:34,380 - 01:04:38,380] The infinite sports band-aid can be
+- [01:04:38,380 - 01:04:42,380] conformally mapped, conformally mapped to the circle,
+- [01:04:42,380 - 01:04:45,380] or to the disc, to the disc.
+- [01:04:45,380 - 01:04:46,380] The disc is a circle.
+- [01:04:46,380 - 01:04:47,380] It's the disc.
+- [01:04:47,380 - 01:04:51,380] It's the interior of a circle.
+- [01:04:51,380 - 01:04:54,880] So, that means in principle we can take the
+- [01:04:54,880 - 01:04:58,380] wave equation or we can take the Laplace equation
+- [01:04:58,380 - 01:05:03,380] or the action even of the action of the
+- [01:05:03,380 - 01:05:08,380] string, the path integral for the string, the entire setup,
+- [01:05:08,380 - 01:05:12,380] and rewrite it in a form in which
+- [01:05:12,380 - 01:05:16,380] the x's all live on a unit circle.
+- [01:05:16,380 - 01:05:19,380] Where the x's all live on a unit circle.
+- [01:05:19,380 - 01:05:21,880] There's something special about these four points here
+- [01:05:21,880 - 01:05:24,380] where the particles came in and went out.
+- [01:05:24,380 - 01:05:25,880] And I'm going to eventually tell
+- [01:05:25,880 - 01:05:27,380] you what that special thing is.
+- [01:05:27,380 - 01:05:30,380] You can map it to here.
+- [01:05:30,380 - 01:05:32,380] Of course you can map it to here.
+- [01:05:32,380 - 01:05:34,380] But you can map it to here
+- [01:05:34,380 - 01:05:36,380] without changing the form of the equation.
+- [01:05:36,380 - 01:05:38,380] It's still just a Laplace equation.
+- [01:05:38,380 - 01:05:41,380] The Laplace equation for the x's in here
+- [01:05:41,380 - 01:05:42,880] is the transform of the Laplace
+- [01:05:42,880 - 01:05:44,380] equation for the x's in here.
+- [01:05:44,380 - 01:05:45,380] Okay.
+- [01:05:45,380 - 01:05:49,880] And that's because of the
+- [01:05:49,880 - 01:05:54,380] conformal invariance of the Laplace equation.
+- [01:05:54,380 - 01:05:56,880] Yeah, because of the conformal
+- [01:05:56,880 - 01:05:59,380] invariance of the Laplace equation.
+- [01:05:59,380 - 01:06:04,380] So, you could set up the string path integral
+- [01:06:04,380 - 01:06:09,380] in a new way by taking a unit disc,
+- [01:06:09,380 - 01:06:11,380] thinking of a set of x's
+- [01:06:11,380 - 01:06:13,380] which live in the unit disc,
+- [01:06:13,380 - 01:06:17,380] and integrating over all ways, all
+- [01:06:17,380 - 01:06:21,380] x's that live on this unit disc.
+- [01:06:21,380 - 01:06:24,380] In other words, yeah, I think you understand.
+- [01:06:24,380 - 01:06:27,380] x of sigma and tau,
+- [01:06:27,380 - 01:06:32,380] where sigma and tau are not on the
+- [01:06:32,380 - 01:06:37,380] sports band aid, but they're on the disc.
+- [01:06:37,380 - 01:06:41,380] Writing the action as the same kind of action,
+- [01:06:41,380 - 01:06:44,380] the path integrating over the x's in here,
+- [01:06:44,380 - 01:06:46,880] with some special things going
+- [01:06:46,880 - 01:06:49,380] on at these four exceptional points.
+- [01:06:49,380 - 01:06:52,380] I think I won't get into what the exception...
+- [01:06:52,380 - 01:06:53,380] There's nothing very complicated about it,
+- [01:06:53,380 - 01:06:54,380] and we will get to it,
+- [01:06:54,380 - 01:06:56,380] we will certainly get to it.
+- [01:06:56,380 - 01:06:59,380] Technically, or in the jargon is,
+- [01:06:59,380 - 01:07:02,880] you have to put some vertex
+- [01:07:02,880 - 01:07:06,380] operators at the point over here,
+- [01:07:06,380 - 01:07:09,380] but we'll come to that, alright?
+- [01:07:09,380 - 01:07:11,940] But you could also have stretched that out into other
+- [01:07:11,940 - 01:07:14,500] shapes. You could have stretched that out into a shape
+- [01:07:14,500 - 01:07:16,500] which looked like this
+- [01:07:20,040 - 01:07:21,880] which went off to infinity
+- [01:07:21,880 - 01:07:25,880] So it looks actually more like a scattering process
+- [01:07:25,880 - 01:07:27,380] There are many things you
+- [01:07:27,380 - 01:07:28,880] could have stretched it out into
+- [01:07:31,300 - 01:07:32,300] Now
+- [01:07:34,000 - 01:07:35,000] Let's take a break
+- [01:07:36,260 - 01:07:37,260] Let's take a break
+- [01:07:39,380 - 01:07:43,380] All right, now
+- [01:07:47,380 - 01:07:50,380] In mapping this problem to this problem
+- [01:07:50,380 - 01:07:52,880] Now by this problem, I mean
+- [01:07:52,880 - 01:07:55,380] the problem of calculating the scattering amplitudes
+- [01:07:55,380 - 01:07:58,130] There is something that you have to
+- [01:07:58,130 - 01:08:00,880] do out at these infinite points here
+- [01:08:00,880 - 01:08:03,880] to set up and specify the initial and
+- [01:08:03,880 - 01:08:06,880] final states of the particles that are coming in
+- [01:08:06,880 - 01:08:08,880] Their momenta, their particle types
+- [01:08:09,380 - 01:08:10,880] Are they the ground states?
+- [01:08:10,880 - 01:08:12,380] Are they the first excited states?
+- [01:08:12,380 - 01:08:14,380] Somewhere in here
+- [01:08:16,380 - 01:08:19,880] There's some input of information that's above and beyond
+- [01:08:19,880 - 01:08:23,380] just saying that there's a Laplace equation in here
+- [01:08:23,380 - 01:08:25,880] That input of information has to do with
+- [01:08:25,880 - 01:08:28,380] something or other that we do out near the
+- [01:08:31,380 - 01:08:33,380] Out near the ends here
+- [01:08:33,380 - 01:08:34,380] I'm not sure how to draw that
+- [01:08:34,380 - 01:08:38,380] Just some input at the end flaps of the
+- [01:08:39,380 - 01:08:41,380] Of the band-aid
+- [01:08:42,380 - 01:08:47,380] That same input has to be put into this diagram
+- [01:08:48,380 - 01:08:49,880] We have to say what kind
+- [01:08:49,880 - 01:08:51,380] of particles, what is their momentum
+- [01:08:51,380 - 01:08:52,880] I'm not going to tell you exactly
+- [01:08:52,880 - 01:08:54,380] how to do that at the moment
+- [01:08:54,380 - 01:08:55,880] I will tell you eventually
+- [01:08:55,880 - 01:09:00,130] But it's some operation that you do on each one
+- [01:09:00,130 - 01:09:04,380] of these points to inject in a certain amount of momentum
+- [01:09:04,380 - 01:09:07,380] And some information about the particle type
+- [01:09:07,380 - 01:09:08,380] So keep that in mind
+- [01:09:08,380 - 01:09:10,380] Alright, now where exactly do we
+- [01:09:10,380 - 01:09:12,380] put those points, those four points?
+- [01:09:12,380 - 01:09:15,380] In this diagram it's clear where we put them
+- [01:09:15,380 - 01:09:17,880] We put them out at
+- [01:09:17,880 - 01:09:20,380] the end flaps of the band-aid
+- [01:09:20,380 - 01:09:24,380] In this diagram it's less clear
+- [01:09:24,380 - 01:09:28,380] And I will tell you what is correct
+- [01:09:28,380 - 01:09:31,380] In mapping this to here
+- [01:09:31,380 - 01:09:34,380] You forget for a moment the ends
+- [01:09:34,380 - 01:09:36,380] You have some ambiguity
+- [01:09:36,380 - 01:09:37,380] For example you could rotate it
+- [01:09:37,380 - 01:09:39,380] You can do some other things to it
+- [01:09:39,380 - 01:09:43,380] But you also have enough ambiguity
+- [01:09:43,380 - 01:09:46,380] That you can arbitrarily choose
+- [01:09:46,380 - 01:09:49,380] That there's really only one parameter
+- [01:09:49,380 - 01:09:54,380] In the relationship between the four points on here
+- [01:09:54,380 - 01:09:57,380] One parameter, all the other
+- [01:09:57,380 - 01:10:00,380] It looks like there are really several parameters
+- [01:10:00,380 - 01:10:02,380] You could arbitrarily pick by rotating
+- [01:10:02,380 - 01:10:04,380] the angles the position of this point
+- [01:10:04,380 - 01:10:05,380] But then there would be the
+- [01:10:05,380 - 01:10:06,380] length or the distance to here
+- [01:10:06,380 - 01:10:07,380] The angular distance to here
+- [01:10:07,380 - 01:10:08,380] The angular distance to here
+- [01:10:08,380 - 01:10:10,380] And the angular distance to here
+- [01:10:10,380 - 01:10:11,380] No
+- [01:10:11,380 - 01:10:14,380] You can find conformal transformations
+- [01:10:14,380 - 01:10:18,380] Which will move the boundary points around in various ways
+- [01:10:18,380 - 01:10:20,380] And the end result is there is really only
+- [01:10:20,380 - 01:10:22,380] Up to a conformal transformation
+- [01:10:22,380 - 01:10:26,380] There's only a one parameter family of such configurations
+- [01:10:26,380 - 01:10:29,380] And we could describe the parameters by saying
+- [01:10:29,380 - 01:10:33,380] I'll arbitrarily choose left-right symmetry
+- [01:10:33,380 - 01:10:34,380] That's a choice
+- [01:10:34,380 - 01:10:36,380] And I'll also choose
+- [01:10:36,380 - 01:10:41,380] Vertical symmetry
+- [01:10:41,380 - 01:10:43,380] And I can choose this point over here
+- [01:10:43,380 - 01:10:44,380] Since I've used
+- [01:10:44,380 - 01:10:46,380] Since I've decided to make the
+- [01:10:46,380 - 01:10:48,380] diagram both left-right and up-down symmetric
+- [01:10:48,380 - 01:10:50,380] I have to choose the other point over here
+- [01:10:50,380 - 01:10:53,380] Over here and over here
+- [01:10:53,380 - 01:10:55,380] In a completely symmetric way
+- [01:10:55,380 - 01:11:00,380] But that still allows a freedom
+- [01:11:00,380 - 01:11:04,380] Here's one extreme situation
+- [01:11:04,380 - 01:11:06,380] Here's another extreme situation
+- [01:11:12,380 - 01:11:17,380] What determines where you put the points
+- [01:11:17,380 - 01:11:21,380] Whether it looks like this, like this, or like that
+- [01:11:21,380 - 01:11:26,380] The answer is the time interval between here and here
+- [01:11:26,380 - 01:11:31,380] Which is also a one parameter family of figures
+- [01:11:31,380 - 01:11:32,380] Right?
+- [01:11:32,380 - 01:11:32,880] The time interval over here
+- [01:11:32,880 - 01:11:33,380] is one parameter family of figures
+- [01:11:33,380 - 01:11:35,380] The time interval or really strictly speaking
+- [01:11:35,380 - 01:11:37,880] The ratio of the time
+- [01:11:37,880 - 01:11:40,380] interval to the separation along here
+- [01:11:40,380 - 01:11:42,380] Or the time interval between the
+- [01:11:42,380 - 01:11:44,380] tau interval between here and here
+- [01:11:44,380 - 01:11:47,880] Is the one parameter that
+- [01:11:47,880 - 01:11:51,380] governs where you put these points
+- [01:11:51,380 - 01:11:53,380] You have to integrate over it
+- [01:11:53,380 - 01:11:57,380] Just as we integrated over the time separation
+- [01:11:57,380 - 01:11:59,380] This is part of the path integral
+- [01:11:59,380 - 01:12:01,380] We integrated over the time separation
+- [01:12:01,380 - 01:12:03,380] Between the joining and the splitting
+- [01:12:03,380 - 01:12:07,380] That translates into a one parameter integral
+- [01:12:07,380 - 01:12:10,380] Over, we can choose it in many ways
+- [01:12:10,380 - 01:12:14,380] But in this case, with this particular setup
+- [01:12:14,380 - 01:12:16,880] It's a one parameter integral
+- [01:12:16,880 - 01:12:19,380] over how we choose these points
+- [01:12:19,380 - 01:12:21,880] My fingers aren't big enough
+- [01:12:21,880 - 01:12:24,380] to stretch to this configuration here
+- [01:12:24,380 - 01:12:26,380] But if we had two of us up here
+- [01:12:26,380 - 01:12:28,380] I would move my fingers like that
+- [01:12:28,380 - 01:12:29,380] And you would move your fingers like that
+- [01:12:29,380 - 01:12:30,380] And then we'd spread them
+- [01:12:30,380 - 01:12:31,380] out and go the other way
+- [01:12:31,380 - 01:12:34,380] That integral is still to be done
+- [01:12:34,380 - 01:12:37,380] And it's that integral
+- [01:12:37,380 - 01:12:40,380] When you work out
+- [01:12:40,380 - 01:12:43,380] The path integral
+- [01:12:43,380 - 01:12:45,380] And then integrate over the positions
+- [01:12:45,380 - 01:12:47,380] of the points in the right way
+- [01:12:47,380 - 01:12:49,380] That's what gives you the beta function
+- [01:12:49,380 - 01:12:51,880] In this language, the beta
+- [01:12:51,880 - 01:12:54,380] function comes from integrating the positions
+- [01:12:54,380 - 01:12:56,380] Of the injection points
+- [01:12:56,380 - 01:12:58,380] Let's call them injection points
+- [01:12:58,380 - 01:13:00,380] Positions of the injection points
+- [01:13:01,380 - 01:13:04,380] Over a one parameter family
+- [01:13:04,380 - 01:13:07,380] There are two extreme situations
+- [01:13:07,380 - 01:13:10,380] One extreme situation
+- [01:13:10,380 - 01:13:12,380] Is this
+- [01:13:12,380 - 01:13:14,380] The other extreme situation is like this
+- [01:13:14,380 - 01:13:16,380] In this extreme situation
+- [01:13:16,380 - 01:13:19,380] The two input points on the left
+- [01:13:19,380 - 01:13:21,380] Are close together
+- [01:13:21,380 - 01:13:25,380] In the other configuration over here
+- [01:13:25,380 - 01:13:30,380] This one and this one are close together
+- [01:13:30,380 - 01:13:34,380] Now, this, these two extremes
+- [01:13:34,380 - 01:13:38,380] Must translate to some extremes on the band-aid
+- [01:13:38,380 - 01:13:40,380] It does
+- [01:13:45,380 - 01:13:50,380] The extreme where the two incident particles
+- [01:13:50,380 - 01:13:53,380] Appear adjacent to each other
+- [01:13:53,380 - 01:13:57,380] And the two outgoing particles appear adjacent to each other
+- [01:13:57,380 - 01:13:59,380] That
+- [01:13:59,380 - 01:14:01,380] Is the conformal mapping
+- [01:14:01,380 - 01:14:04,380] Of the configuration where the time interval here
+- [01:14:04,380 - 01:14:06,380] Is very, very long
+- [01:14:08,380 - 01:14:09,880] And so it looks like these
+- [01:14:09,880 - 01:14:11,380] two points are much, much closer
+- [01:14:11,380 - 01:14:16,380] Uh, than the distance between here and here
+- [01:14:16,380 - 01:14:19,380] That's the, if you like, the mapping
+- [01:14:19,380 - 01:14:21,380] From the band-aid to the circle
+- [01:14:21,380 - 01:14:23,380] Of the configuration
+- [01:14:23,380 - 01:14:27,380] Where the intermediate state lasts a long time
+- [01:14:27,380 - 01:14:29,380] It's the same thing
+- [01:14:29,380 - 01:14:31,380] But it's a situation that manifestly looks like
+- [01:14:31,380 - 01:14:33,380] Two particles coming in
+- [01:14:33,380 - 01:14:36,380] Forming a string that vibrates many vibrations
+- [01:14:36,380 - 01:14:38,380] And then goes off again
+- [01:14:38,380 - 01:14:39,380] That's this limit
+- [01:14:39,380 - 01:14:41,380] What's the other limit?
+- [01:14:41,380 - 01:14:43,380] Well, the other limit is exactly the other limit
+- [01:14:43,380 - 01:14:45,380] Where the time interval is very, very short
+- [01:14:49,380 - 01:14:53,380] The intermediate state lasts a very short time
+- [01:14:53,380 - 01:14:55,380] But the course of time changes
+- [01:14:55,380 - 01:14:57,380] And that's this shouting
+- [01:14:58,380 - 01:14:59,380] Yep
+- [01:14:59,380 - 01:15:00,380] Well, that's better
+- [01:15:00,380 - 01:15:02,380] Here the mistake on the over-line
+- [01:15:03,380 - 01:15:04,380] O-line
+- [01:15:05,380 - 01:15:06,380] There's no integration
+- [01:15:06,380 - 01:15:08,380] This basically looks like the transverse
+- [01:15:09,380 - 01:15:11,380] So, in this case
+- [01:15:11,380 - 01:15:12,380] You have one on the x-axis
+- [01:15:12,380 - 01:15:13,380] Okay
+- [01:15:13,380 - 01:15:14,380] Which should be enough
+- [01:15:14,380 - 01:15:14,880] Oh, you have an Janel
+- [01:15:14,880 - 01:15:15,380] Ok
+- [01:15:15,380 - 01:15:16,380] This should understand
+- [01:15:16,380 - 01:15:17,380] I've earmarked some words
+- [01:15:17,380 - 01:15:19,380] If I hit that
+- [01:15:19,380 - 01:15:20,380] Okay
+- [01:15:20,380 - 01:15:22,380] So this, it's very very easy
+- [01:15:22,380 - 01:15:25,370] symmetry, that there's some symmetry. From this
+- [01:15:25,370 - 01:15:28,360] picture over here, it's hard to see that
+- [01:15:28,360 - 01:15:31,530] there's any symmetry between these two
+- [01:15:31,530 - 01:15:34,700] extreme limits. Two physically totally different pictures.
+- [01:15:34,700 - 01:15:37,300] One, an intermediate state lasts a long
+- [01:15:37,300 - 01:15:39,900] time, and the other, an intermediate state lasts
+- [01:15:39,900 - 01:15:42,190] a very short time. It doesn't look like
+- [01:15:42,190 - 01:15:44,480] there's much symmetry. But from this picture here,
+- [01:15:44,480 - 01:15:47,050] you see that somehow there is a symmetry,
+- [01:15:47,050 - 01:15:49,620] that they must be related to each other in
+- [01:15:49,620 - 01:15:52,620] some way. How are they related to each other?
+- [01:15:52,620 - 01:15:54,620] The rotation of sigma and tau.
+- [01:15:54,620 - 01:15:57,260] Well, that's not the point though. They're
+- [01:15:57,260 - 01:15:59,900] related by the interchange of what we called
+- [01:15:59,900 - 01:16:03,280] last time the s variable and the t variable.
+- [01:16:03,280 - 01:16:06,660] Remember what the s variable was? It was the
+- [01:16:06,660 - 01:16:10,410] sum of the four momenta coming in squared,
+- [01:16:10,410 - 01:16:14,160] or the center of mass energy squared. If we
+- [01:16:14,160 - 01:16:16,660] label these with momenta, then the s
+- [01:16:16,660 - 01:16:19,160] variable, k1, k2, and k3, are the same.
+- [01:16:19,620 - 01:16:26,620] k2, k3, k4.
+- [01:16:33,519 - 01:16:37,019] Then the Mandelstam variable. The Mandelstam s
+- [01:16:37,019 - 01:16:40,519] variable was k1 plus k2 squared, and it
+- [01:16:44,960 - 01:16:48,620] corresponded to the square of the center of mass energy.
+- [01:16:49,620 - 01:16:54,420] Well, let's write that it's equal to the
+- [01:16:54,420 - 01:16:59,220] Mandelstam s variable. This is not the action, and
+- [01:16:59,220 - 01:17:02,430] it's not any other s that I used
+- [01:17:02,430 - 01:17:05,640] tonight. It's the Mandelstam s variable, s. And it's
+- [01:17:05,640 - 01:17:09,590] also equal to the square of the
+- [01:17:09,590 - 01:17:13,540] center of mass energy, center of mass.
+- [01:17:13,540 - 01:17:15,529] On the other hand, it's quite clear that we've
+- [01:17:15,529 - 01:17:17,519] done what we've done in going from here to
+- [01:17:17,519 - 01:17:18,519] here.
+- [01:17:18,520 - 01:17:24,060] We started to use the sh desk term. We
+- [01:17:24,060 - 01:17:29,600] used the sh desk term all the time and Problem
+- [01:17:29,600 - 01:17:31,930] Adam gave me one time ago so
+- [01:17:31,930 - 01:17:34,260] I might have given you two times.
+- [01:17:34,260 - 01:17:37,750] All we're doing isたpositivelyありparogam Come
+- [01:17:37,750 - 01:17:41,240] forward and leave the form form.
+- [01:17:41,240 - 01:17:43,760] We're all right will there be some arguing.
+- [01:17:43,760 - 01:17:46,520] So it's not to be anxious about that.
+- [01:17:46,520 - 01:17:47,520] So okay.
+- [01:17:47,520 - 01:17:48,220] Okay.
+- [01:17:48,220 - 01:17:51,340] center of mass energy, it's some
+- [01:17:51,340 - 01:17:54,460] combination of center of mass energy,
+- [01:17:54,460 - 01:17:57,310] E center of mass squared minus M squared
+- [01:17:57,310 - 01:18:00,160] times I think 1 minus the cosine of the
+- [01:18:00,160 - 01:18:03,040] angle of scattering or something. But it
+- [01:18:03,040 - 01:18:05,920] is just k1 plus k3 squared, where all
+- [01:18:05,920 - 01:18:09,370] moment there are counted as coming in.
+- [01:18:09,370 - 01:18:12,820] In this form, it's manifestly clear that
+- [01:18:12,820 - 01:18:16,120] these diagrams have symmetry between the S
+- [01:18:16,120 - 01:18:19,420] channel and the T channel. It's also clear
+- [01:18:19,420 - 01:18:23,210] that if they have, if they describe
+- [01:18:23,210 - 01:18:27,000] particles forming and decaying in the S
+- [01:18:27,000 - 01:18:29,549] channel, two particles coming in, forming
+- [01:18:29,549 - 01:18:32,099] and decaying, they must also describe a
+- [01:18:32,099 - 01:18:37,429] process where the two incoming particles
+- [01:18:37,429 - 01:18:42,759] are replaced now by one incoming one
+- [01:18:42,759 - 01:18:42,779] and two incoming ones. And then they have
+- [01:18:42,779 - 01:18:42,799] a symmetry between the two. And so, if you
+- [01:18:42,800 - 01:18:46,680] have one outgoing and a particle is
+- [01:18:46,680 - 01:18:50,560] exchanged, not the creation and annihilation of a
+- [01:18:50,560 - 01:18:54,610] particle, but an emission and reabsorption at
+- [01:18:54,610 - 01:18:58,660] the other side of the diagram. So, that's
+- [01:18:58,660 - 01:19:01,400] what was so fascinating about these
+- [01:19:01,400 - 01:19:04,140] structures, is that one structure, one simple
+- [01:19:04,140 - 01:19:08,440] structure, one integral, but one basic principle
+- [01:19:08,440 - 01:19:12,740] was accounting for both the S channel
+- [01:19:12,740 - 01:19:16,530] and the T channel particles. The S
+- [01:19:16,530 - 01:19:20,320] channel particles were somehow associated with long
+- [01:19:20,320 - 01:19:23,350] diagrams like this, and the T channel ones
+- [01:19:23,350 - 01:19:26,380] were short ones. But we don't have to interpret,
+- [01:19:26,580 - 01:19:30,740] we just say the integral was symmetric under S
+- [01:19:30,740 - 01:19:34,900] goes to T. And so, whatever was there in
+- [01:19:34,900 - 01:19:38,400] the form of S particles formed
+- [01:19:38,400 - 01:19:41,900] by k1 plus k2 coming together,
+- [01:19:42,740 - 01:19:46,560] there was also T channel objects which were formed
+- [01:19:46,560 - 01:19:50,380] by k1 and k3 coming together. That was called
+- [01:19:50,380 - 01:19:53,440] duality. That was the first duality, the duality
+- [01:19:53,440 - 01:19:56,500] between the S channel and the T channel. Now,
+- [01:19:56,500 - 01:19:59,600] these days, it's called channel duality. Channel,
+- [01:19:59,600 - 01:20:02,700] in this case, means either, it's clear what
+- [01:20:02,700 - 01:20:07,689] it means. It's called channel duality, and it was the first sort of, at
+- [01:20:07,689 - 01:20:12,679] first it was a miracle. At first, when thought about in terms of band-based
+- [01:20:12,680 - 01:20:18,060] diagrams, it was a miracle that there was a symmetry between S channel and T
+- [01:20:18,060 - 01:20:23,440] channel. It was very quick that it was realized that this was because of conformal symmetry,
+- [01:20:23,440 - 01:20:33,060] and that you could map it to this more symmetric situation. But at first, at first sight, it just
+- [01:20:33,060 - 01:20:42,680] looked like a miracle. The trouble with understanding miracles is it always has the same effect. You know, you're
+- [01:20:42,680 - 01:20:44,680] you may now understand it, but
+- [01:20:44,680 - 01:20:46,680] you no longer go gaga over it.
+- [01:20:46,680 - 01:20:47,680] When was it?
+- [01:20:47,680 - 01:20:49,680] Hm? 1969.
+- [01:20:49,680 - 01:20:55,680] If you were to draw that second one, the one that goes down, I can understand how
+- [01:20:55,680 - 01:21:01,680] the top one corresponds to the band-aid. Is there a band-aid that corresponds to the second one?
+- [01:21:01,680 - 01:21:06,180] Well, yeah, you could have drawn the diagram the
+- [01:21:06,180 - 01:21:10,680] other way. You could have drawn it this way.
+- [01:21:10,680 - 01:21:11,680] It would still be going?
+- [01:21:11,680 - 01:21:12,680] Okay.
+- [01:21:12,680 - 01:21:13,680] Horizontally?
+- [01:21:13,680 - 01:21:14,680] No.
+- [01:21:14,680 - 01:21:15,680] Yeah, you could have, well, yes.
+- [01:21:15,680 - 01:21:16,680] How would that?
+- [01:21:16,680 - 01:21:26,680] Well, no, time comes in here. Well, no, no, no, no, no, no, no. In that case, you could not have thought of time as running horizontally. You
+- [01:21:26,680 - 01:21:36,680] would have to say this was the deep remote past over here, and this was the deep remote future over here. But you could have drawn it that way.
+- [01:21:36,680 - 01:21:39,180] For some reason, I think of the time
+- [01:21:39,180 - 01:21:41,680] that they're together being related to the coupling constant.
+- [01:21:41,680 - 01:21:42,680] Okay.
+- [01:21:42,680 - 01:21:55,180] No, no, no, no. The time that they're together, you have to integrate over. That's something you integrate over. I think what you're trying to say is that the probability for
+- [01:21:55,180 - 01:22:07,680] it to decay is related to the coupling constant. Yeah. But in either case, no matter what, you still, that just means you have to put into the integral the coupling constant.
+- [01:22:07,680 - 01:22:11,680] And, but no, it, these diagrams are not the same.
+- [01:22:11,680 - 01:22:13,680] I think the coupling constant just
+- [01:22:13,680 - 01:22:15,680] comes in as a multiplicative factor.
+- [01:22:15,680 - 01:22:21,680] And, right. Okay, I think that's enough for tonight.
+- [01:22:21,680 - 01:22:27,680] For more, please visit us at stanford.edu.
