@@ -13,8 +13,8 @@ pathspecs=("$@")
 
 model="${CODEX_COMMIT_MODEL:-gpt-5.3-codex-spark}"
 reasoning_effort="${CODEX_COMMIT_REASONING:-low}"
-session_file="${CODEX_SHARED_SESSION_FILE:-}"
-session_doc_file="${CODEX_SHARED_SESSION_DOC_FILE:-}"
+session_file="${CODEX_COMMIT_SESSION_FILE:-}"
+session_doc_file="${CODEX_COMMIT_SESSION_DOC_FILE:-}"
 tmux_session_name="${NOTE_TMUX_SESSION_NAME:-susskind-notes}"
 
 prompt_file="$(mktemp)"

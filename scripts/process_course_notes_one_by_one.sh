@@ -93,6 +93,7 @@ if [[ -s "$CODEX_SHARED_SESSION_FILE" ]]; then
 fi
 
 processed=0
+last_lecture_key=""
 while true; do
   next_cmd=(python3 scripts/generate_course_notes.py --repo-root "$repo_root" --source-root "$source_root" --print-next)
   if [[ -n "$course" ]]; then
@@ -110,6 +111,12 @@ while true; do
 
   echo "Generating notes for $next_rel"
   echo "Using transcript source: markdown/$next_rel"
+  lecture_key="${next_rel%.md}"
+  if [[ "$lecture_key" != "$last_lecture_key" ]]; then
+    rm -f "$CODEX_SHARED_SESSION_FILE" "$CODEX_SHARED_SESSION_DOC_FILE"
+    echo "Reset shared Codex session for lecture: $lecture_key"
+    last_lecture_key="$lecture_key"
+  fi
   gen_cmd=(
     python3 scripts/generate_course_notes.py
     --repo-root "$repo_root"
