@@ -1,0 +1,1227 @@
+# Transcript
+
+Source: supplementary/particle_physics_3_supersymmetry_and_grand_unification/2010_spring/147 - Supersymmetry & Grand Unification： Lecture 3 [GzoncJBqeNk].mp4
+
+- [00:00:00,000 - 00:00:07,000] Stanford University
+- [00:00:07,000 - 00:00:10,500] Look, I was going to start
+- [00:00:10,500 - 00:00:14,000] talking about supersymmetry today, which I will.
+- [00:00:14,000 - 00:00:17,000] In fact, I'm going to talk about supersymmetry today,
+- [00:00:17,000 - 00:00:20,000] but I wanted to go back over the motivations
+- [00:00:20,000 - 00:00:26,000] and just repeat some of the things I said.
+- [00:00:26,000 - 00:00:29,500] I don't remember if it was last time, I
+- [00:00:29,500 - 00:00:33,000] think it was, about divergences in quantum field theory,
+- [00:00:33,000 - 00:00:38,000] and in particular, the divergences which have to
+- [00:00:38,000 - 00:00:43,000] do with the renormalization of the masses of particles.
+- [00:00:43,000 - 00:00:49,000] I'm not sure I said it well, and I did want to
+- [00:00:49,000 - 00:00:55,000] go back over it and discuss it at a little more length,
+- [00:00:55,000 - 00:00:56,000] and then start.
+- [00:00:56,000 - 00:00:59,500] So, I'm going to start talking about how
+- [00:00:59,500 - 00:01:03,000] supersymmetry repairs the damage of some of these problems.
+- [00:01:03,000 - 00:01:08,000] I honestly cannot remember what I said last time, so
+- [00:01:08,000 - 00:01:13,000] if I say the same thing over again, too bad.
+- [00:01:13,000 - 00:01:17,000] You'll play back the tape.
+- [00:01:17,000 - 00:01:18,000] What's that?
+- [00:01:18,000 - 00:01:19,000] You'll play back the tape.
+- [00:01:19,000 - 00:01:22,000] You'll play back the tape. Okay.
+- [00:01:22,000 - 00:01:25,000] Of course, all particle physicists are very good at this.
+- [00:01:25,000 - 00:01:28,000] All particle physics, almost all particle physics, no, not
+- [00:01:28,000 - 00:01:31,000] all particle physics, but a lot of particle physics,
+- [00:01:31,000 - 00:01:37,000] is dependent on computations of Feynman diagrams.
+- [00:01:37,000 - 00:01:40,500] And Feynman diagrams can stand or
+- [00:01:40,500 - 00:01:44,000] can govern a number of things.
+- [00:01:44,000 - 00:01:47,000] They can, first of all, govern, meaning to
+- [00:01:47,000 - 00:01:50,000] say that you use them to calculate scattering processes.
+- [00:01:50,000 - 00:01:52,000] Particles come in, particles go out,
+- [00:01:52,000 - 00:01:54,000] and you want to calculate the probability.
+- [00:01:55,000 - 00:01:57,500] So, that's one thing that
+- [00:01:57,500 - 00:02:00,000] Feynman diagrams do very efficiently,
+- [00:02:00,000 - 00:02:02,500] and you have to sum up all
+- [00:02:02,500 - 00:02:05,000] Feynman diagrams that go into the calculation.
+- [00:02:05,000 - 00:02:09,000] Another thing that Feynman diagrams do is,
+- [00:02:09,000 - 00:02:13,000] let me give you the precise words.
+- [00:02:13,000 - 00:02:15,500] The precise words is they
+- [00:02:15,500 - 00:02:18,000] help you calculate the effective Lagrangian.
+- [00:02:18,000 - 00:02:21,000] Now, what is an effective Lagrangian,
+- [00:02:21,000 - 00:02:24,000] as opposed to an ineffective Lagrangian?
+- [00:02:24,000 - 00:02:27,000] No, that's not quite the right idea.
+- [00:02:27,000 - 00:02:33,000] When one speaks about an effective Lagrangian, this is
+- [00:02:33,000 - 00:02:39,000] not a description of approval for this particular Lagrangian.
+- [00:02:39,000 - 00:02:40,500] You know, it's very effective.
+- [00:02:40,500 - 00:02:42,000] No, that's not what you mean.
+- [00:02:42,000 - 00:02:47,000] What you mean is it's an approximate
+- [00:02:47,000 - 00:02:52,000] Lagrangian, an approximation to the exact thing,
+- [00:02:52,000 - 00:02:58,000] which is effective at removing a lot of
+- [00:02:58,000 - 00:03:04,000] the complexity which was too complicated to calculate.
+- [00:03:04,000 - 00:03:11,000] An effective Lagrangian typically involves a cutoff.
+- [00:03:11,000 - 00:03:16,000] In other words, a smallest distance or a largest momentum.
+- [00:03:16,000 - 00:03:18,000] Let me say something about
+- [00:03:18,000 - 00:03:20,000] Feynman diagrams that I haven't emphasized.
+- [00:03:20,000 - 00:03:22,500] We did discuss propagators, and I'm going
+- [00:03:22,500 - 00:03:25,000] to come back to them in a moment.
+- [00:03:25,000 - 00:03:30,000] But propagators are, if you like, the amplitude for putting in
+- [00:03:30,000 - 00:03:35,000] a particle at one place and taking it out at another place.
+- [00:03:35,000 - 00:03:39,000] They're functions of relative coordinates.
+- [00:03:39,000 - 00:03:40,500] They're functions of a thing that I
+- [00:03:40,500 - 00:03:42,000] think we called delta, if I remember.
+- [00:03:42,000 - 00:03:44,000] I'm not sure I do remember.
+- [00:03:44,000 - 00:03:46,500] But delta just stands for the difference of these
+- [00:03:46,500 - 00:03:49,000] two positions, and delta is a four vector, of course.
+- [00:03:50,000 - 00:03:55,000] So it has indices, delta mu.
+- [00:03:55,000 - 00:03:58,000] The propagator is a function
+- [00:03:58,000 - 00:04:01,000] of the separation between the points.
+- [00:04:01,000 - 00:04:04,000] It can also be Fourier transformed.
+- [00:04:04,000 - 00:04:09,000] It can be Fourier transformed and expressed in
+- [00:04:09,000 - 00:04:14,000] terms of a function of four other variables,
+- [00:04:14,000 - 00:04:16,000] the Fourier conjugate variables. What are they called?
+- [00:04:16,000 - 00:04:18,000] What's the real name for
+- [00:04:18,000 - 00:04:20,000] the Fourier conjugates to positions?
+- [00:04:20,000 - 00:04:21,000] Momentum.
+- [00:04:21,000 - 00:04:23,000] Momentum. Right.
+- [00:04:23,000 - 00:04:26,500] So the propagator can, and usually the
+- [00:04:26,500 - 00:04:30,000] Feynman rules are expressed in terms of momentum.
+- [00:04:30,000 - 00:04:32,000] But I'm not going to do that.
+- [00:04:32,000 - 00:04:33,000] It's a little more complicated.
+- [00:04:33,000 - 00:04:35,000] You have to worry about momentum
+- [00:04:35,000 - 00:04:37,000] conservation and all that sort of thing.
+- [00:04:37,000 - 00:04:41,000] But the other way to describe
+- [00:04:41,000 - 00:04:45,000] Feynman diagrams is in momentum space.
+- [00:04:45,000 - 00:04:49,000] And in momentum space, Feynman diagrams become integrals
+- [00:04:49,000 - 00:04:51,000] over momentum.
+- [00:04:51,000 - 00:04:57,000] For example, in a Feynman diagram like this,
+- [00:04:57,000 - 00:04:59,000] well, let's take a simpler one.
+- [00:04:59,000 - 00:05:02,000] Let's take a simpler one, much simpler,
+- [00:05:02,000 - 00:05:06,000] with only, well, let's start with the
+- [00:05:06,000 - 00:05:10,000] very simplest Feynman diagram I can imagine,
+- [00:05:10,000 - 00:05:12,500] just a closed loop with no particles
+- [00:05:12,500 - 00:05:15,000] coming in and no particles going out.
+- [00:05:15,000 - 00:05:16,500] That, if you like, can
+- [00:05:16,500 - 00:05:18,000] be thought of as a propagator
+- [00:05:18,000 - 00:05:20,000] connecting a point with itself.
+- [00:05:20,000 - 00:05:21,000] Okay?
+- [00:05:21,000 - 00:05:26,000] We can describe it two ways.
+- [00:05:26,000 - 00:05:29,000] We can describe it exactly that, as a
+- [00:05:29,000 - 00:05:32,000] propagator going from one point to the same point.
+- [00:05:32,000 - 00:05:35,000] Or we can describe it as an
+- [00:05:35,000 - 00:05:38,000] integral, or a sum, or an integral,
+- [00:05:38,000 - 00:05:40,500] over all the momentum that can
+- [00:05:40,500 - 00:05:43,000] flow around inside this closed loop.
+- [00:05:43,000 - 00:05:45,000] We can think of this now.
+- [00:05:45,000 - 00:05:48,000] Feynman diagrams are always sub-sum.
+- [00:05:48,000 - 00:05:49,500] So, we can think of it just as
+- [00:05:49,500 - 00:05:51,000] a particle going from one place to another.
+- [00:05:51,000 - 00:05:53,000] That's one thing that can happen.
+- [00:05:53,000 - 00:05:55,000] Or we can think of it a different way.
+- [00:05:55,000 - 00:05:57,500] We can think of it as a particle
+- [00:05:57,500 - 00:06:00,000] going around this closed loop of momentum k.
+- [00:06:00,000 - 00:06:02,500] And then the propagator has some
+- [00:06:02,500 - 00:06:05,000] form in terms of momentum space,
+- [00:06:05,000 - 00:06:08,000] but the important thing is that the
+- [00:06:08,000 - 00:06:11,000] diagram becomes an integral over momentum space.
+- [00:06:11,000 - 00:06:13,000] An integral over momenta.
+- [00:06:13,000 - 00:06:14,500] And the integral over momentum
+- [00:06:14,500 - 00:06:16,000] is the integral over momentum.
+- [00:06:16,000 - 00:06:17,000] Okay?
+- [00:06:17,000 - 00:06:19,000] So, this is the integral over momenta.
+- [00:06:19,000 - 00:06:20,000] And there are low momenta.
+- [00:06:20,000 - 00:06:22,000] There are intermediate momenta.
+- [00:06:22,000 - 00:06:25,000] There are very high momenta.
+- [00:06:25,000 - 00:06:28,500] And the divergences that we're talking about
+- [00:06:28,500 - 00:06:32,000] can either be thought of as infinities,
+- [00:06:32,000 - 00:06:36,000] which occur because the two points in
+- [00:06:36,000 - 00:06:40,000] this propagator are at exactly the same point.
+- [00:06:40,000 - 00:06:42,000] In other words, they're
+- [00:06:42,000 - 00:06:44,000] short distance, small distance infinities.
+- [00:06:44,000 - 00:06:47,000] The fact that the propagator becomes very, very long,
+- [00:06:47,000 - 00:06:50,000] when the two points are close together.
+- [00:06:50,000 - 00:06:55,500] Or we can think of it as divergences which happen
+- [00:06:55,500 - 00:07:01,000] because there's just too much momentum space to integrate over.
+- [00:07:01,000 - 00:07:03,000] In other words, divergences which
+- [00:07:03,000 - 00:07:05,000] happen at very, very large momentum.
+- [00:07:05,000 - 00:07:07,000] What's the connection between
+- [00:07:07,000 - 00:07:09,000] large momentum and small distances?
+- [00:07:09,000 - 00:07:11,000] Well, that connection is an
+- [00:07:11,000 - 00:07:13,000] old connection that we know about.
+- [00:07:13,000 - 00:07:15,000] It's just the fact that
+- [00:07:15,000 - 00:07:17,000] momentum is related to inverse wavelength.
+- [00:07:17,000 - 00:07:22,000] And large momentum is associated with very small wavelength.
+- [00:07:22,000 - 00:07:23,000] That's all.
+- [00:07:23,000 - 00:07:25,500] So, we can either describe
+- [00:07:25,500 - 00:07:28,000] things in k-space or in x-space.
+- [00:07:28,000 - 00:07:31,000] This delta here is really a delta x.
+- [00:07:31,000 - 00:07:33,000] It's a difference of two x's.
+- [00:07:33,000 - 00:07:36,500] So, we could describe the propagator in position
+- [00:07:36,500 - 00:07:40,000] space, or we could describe it in momentum space.
+- [00:07:40,000 - 00:07:43,000] If you like, sometime in the future, I'll tell you
+- [00:07:43,000 - 00:07:46,000] how Feynman diagrams are described in terms of momentum space.
+- [00:07:46,000 - 00:07:50,000] For tonight, since I can't remember if
+- [00:07:50,000 - 00:07:54,000] we did this before, I will possibly repeat.
+- [00:07:54,000 - 00:07:56,000] But nevertheless, the lesson is a
+- [00:07:56,000 - 00:07:58,000] good one, and one worth learning.
+- [00:07:58,000 - 00:08:03,500] The question is, what is the propagator
+- [00:08:03,500 - 00:08:09,000] between two points for various kinds of particles?
+- [00:08:09,000 - 00:08:12,000] Now, basically, there are two kinds of particles in,
+- [00:08:12,000 - 00:08:15,000] well, actually three kinds of particles in particle physics.
+- [00:08:16,000 - 00:08:18,500] There are particles of spin
+- [00:08:18,500 - 00:08:21,000] zero, not too many of them.
+- [00:08:21,000 - 00:08:24,000] Only one that really comes up
+- [00:08:24,000 - 00:08:27,000] in the phenomenology of particle physics.
+- [00:08:27,000 - 00:08:32,000] And it's the higgly-wiggly boson, the Higgs boson.
+- [00:08:32,000 - 00:08:34,000] But it's there. It does exist.
+- [00:08:34,000 - 00:08:36,000] At least, I hope it exists.
+- [00:08:36,000 - 00:08:41,000] If it doesn't exist, we all are in trouble.
+- [00:08:41,000 - 00:08:44,000] So, yes, we do think there are scalar particles.
+- [00:08:44,000 - 00:08:46,000] It's one kind of particle.
+- [00:08:46,000 - 00:08:47,500] And the scalar particles, what does
+- [00:08:47,500 - 00:08:49,000] it mean that it's a scalar particle?
+- [00:08:49,000 - 00:08:51,000] First of all, it means that it's spin zero.
+- [00:08:51,000 - 00:08:53,000] And second of all, it means that
+- [00:08:53,000 - 00:08:55,000] the field operator for it is a scalar.
+- [00:08:55,000 - 00:08:59,000] Only one component. No multiple components.
+- [00:08:59,000 - 00:09:03,000] And the propagator, then, which, let me write down what
+- [00:09:03,000 - 00:09:07,000] the expression for the propagator for a scalar field is.
+- [00:09:07,000 - 00:09:09,000] Not the numerical expression, but
+- [00:09:09,000 - 00:09:11,000] the quantity that we're talking about.
+- [00:09:11,000 - 00:09:13,000] You start by putting in,
+- [00:09:13,000 - 00:09:15,000] at one point, let's call this,
+- [00:09:16,000 - 00:09:19,000] x and let's call this y.
+- [00:09:19,000 - 00:09:22,000] And x and y are both four vectors.
+- [00:09:22,000 - 00:09:25,000] And delta is the difference between them.
+- [00:09:25,000 - 00:09:28,000] So if you like, it's the distance y minus x.
+- [00:09:28,000 - 00:09:31,000] That's what delta is.
+- [00:09:31,000 - 00:09:34,000] Is that a space or a space-time?
+- [00:09:34,000 - 00:09:37,000] Space-time. Space-time.
+- [00:09:37,000 - 00:09:39,500] And x and y can be arbitrary
+- [00:09:39,500 - 00:09:42,000] points of space-time, separated by distance delta.
+- [00:09:42,000 - 00:09:45,000] Then the definition of the propagator is,
+- [00:09:45,000 - 00:09:48,000] you start with a vacuum,
+- [00:09:48,000 - 00:09:53,000] you create a particle at point x.
+- [00:09:53,000 - 00:09:55,000] How do you do that?
+- [00:09:55,000 - 00:09:57,500] You do it by applying
+- [00:09:57,500 - 00:10:00,000] the field operator at point x.
+- [00:10:02,000 - 00:10:06,000] And then you take the inner product of that,
+- [00:10:06,000 - 00:10:08,000] with the state that you,
+- [00:10:08,000 - 00:10:10,000] exactly the same kind of thing,
+- [00:10:10,000 - 00:10:14,000] where you create a particle at y,
+- [00:10:15,000 - 00:10:19,000] phi of y.
+- [00:10:19,000 - 00:10:23,000] In other words, it's the amplitude that
+- [00:10:23,000 - 00:10:27,000] if you put in a particle at x,
+- [00:10:27,000 - 00:10:29,500] you will take out a particle or
+- [00:10:29,500 - 00:10:32,000] you will discover a particle at y.
+- [00:10:32,000 - 00:10:35,000] It's the inner product between these things.
+- [00:10:35,000 - 00:10:38,000] And let's write that down.
+- [00:10:38,000 - 00:10:44,000] The quantum mechanical inner product, phi of y, o.
+- [00:10:44,000 - 00:10:47,000] So on the one hand, you can think of it as an
+- [00:10:47,000 - 00:10:50,000] amplitude for a signal to go from x to y, if you like.
+- [00:10:50,000 - 00:10:53,000] But it also happens to be another thing.
+- [00:10:53,000 - 00:10:57,000] It's the expectation value of the product of the field
+- [00:10:57,000 - 00:11:01,000] phi of x and phi of y in the vacuum state.
+- [00:11:01,000 - 00:11:03,000] So it's both of these things.
+- [00:11:03,000 - 00:11:05,000] Whatever it is, it is
+- [00:11:05,000 - 00:11:07,000] a function of x minus y,
+- [00:11:07,000 - 00:11:11,000] and it is the thing that we call a propagator.
+- [00:11:11,000 - 00:11:12,000] Okay.
+- [00:11:12,000 - 00:11:13,000] Now.
+- [00:11:13,000 - 00:11:15,000] That's its definition.
+- [00:11:15,000 - 00:11:20,000] What is its value?
+- [00:11:20,000 - 00:11:22,500] That depends, of course, with, here I'm
+- [00:11:22,500 - 00:11:25,000] writing this down for a scalar particle, phi.
+- [00:11:25,000 - 00:11:28,500] You do the same kind of thing if
+- [00:11:28,500 - 00:11:32,000] the particle is a fermion of spin of half.
+- [00:11:32,000 - 00:11:34,000] Let's just write it over here.
+- [00:11:34,000 - 00:11:37,000] If the particle were a fermion of spin of half,
+- [00:11:37,000 - 00:11:42,000] then it's described by a Dirac wave function,
+- [00:11:42,000 - 00:11:44,000] or a Dirac field, psi.
+- [00:11:44,000 - 00:11:47,000] Psi has some components now.
+- [00:11:47,000 - 00:11:51,000] How many components does a fermion field have?
+- [00:11:51,000 - 00:11:53,000] Four.
+- [00:11:53,000 - 00:11:54,000] Four.
+- [00:11:54,000 - 00:11:57,000] Four complex components.
+- [00:11:57,000 - 00:11:59,000] Now, if it's a massless
+- [00:11:59,000 - 00:12:01,000] fermion, it can have only two.
+- [00:12:01,000 - 00:12:03,000] But let's not get into that right now.
+- [00:12:03,000 - 00:12:06,000] This is, you can have
+- [00:12:06,000 - 00:12:09,000] separate left-handed and right-handed fermions,
+- [00:12:09,000 - 00:12:10,500] in which case it is
+- [00:12:10,500 - 00:12:12,000] allowed to be a two-component thing.
+- [00:12:12,000 - 00:12:13,000] But that's not the important thing.
+- [00:12:13,000 - 00:12:19,000] It has some components, and it also depends on position.
+- [00:12:19,000 - 00:12:23,000] And so, for a fermion going from x to y,
+- [00:12:23,000 - 00:12:25,000] the corresponding thing would
+- [00:12:25,000 - 00:12:27,000] be the vacuum expectation value,
+- [00:12:27,000 - 00:12:30,000] or, this is called the vacuum expectation value,
+- [00:12:30,000 - 00:12:32,000] or the propagator from x to
+- [00:12:32,000 - 00:12:34,000] y of, it could be, for example,
+- [00:12:34,000 - 00:12:40,000] psi dagger of x times psi of y.
+- [00:12:40,000 - 00:12:41,000] You put it apart,
+- [00:12:41,000 - 00:12:42,000] or you put it apart,
+- [00:12:42,000 - 00:12:45,000] but it's almost always going to be a two-component thing.
+- [00:12:45,000 - 00:12:46,500] So you have a vacuum expectation
+- [00:12:46,500 - 00:12:48,000] value for each particle on x,
+- [00:12:48,000 - 00:12:49,000] and you take it out at y.
+- [00:12:49,000 - 00:12:51,000] And it also has some components.
+- [00:12:51,000 - 00:12:54,000] It has some non-trivial index structure.
+- [00:12:54,000 - 00:12:57,000] The index structure is the indices of a fermion field,
+- [00:12:57,000 - 00:13:00,000] the spinner indices of the fermion field,
+- [00:13:00,000 - 00:13:02,000] the spin indices, the one through four,
+- [00:13:02,000 - 00:13:04,000] not associated with the components of space,
+- [00:13:04,000 - 00:13:07,000] but the components of spinners.
+- [00:13:07,000 - 00:13:09,000] And so whatever it is, it's
+- [00:13:09,000 - 00:13:11,000] a function which depends on two positions
+- [00:13:11,000 - 00:13:17,200] i and j
+- [00:13:17,200 - 00:13:21,720] of course you could also study the ii component but
+- [00:13:21,720 - 00:13:23,080] but in general
+- [00:13:23,080 - 00:13:24,600] it's a matrix
+- [00:13:24,600 - 00:13:26,520] in the ij space
+- [00:13:26,520 - 00:13:29,620] and also a function of separation
+- [00:13:29,620 - 00:13:32,570] now we're going to suppress the
+- [00:13:32,570 - 00:13:35,520] issue of the matrix structure of it
+- [00:13:35,520 - 00:13:37,620] in other words the ij structure, we're going to
+- [00:13:37,620 - 00:13:39,720] suppress it, I'm going to finesse it and just
+- [00:13:39,720 - 00:13:41,000] avoid it
+- [00:13:41,000 - 00:13:42,860] in the discussion, it's a
+- [00:13:42,860 - 00:13:44,720] little bit complicated, not terribly
+- [00:13:44,720 - 00:13:47,200] um...
+- [00:13:47,200 - 00:13:51,220] but uh...
+- [00:13:51,220 - 00:13:53,240] one to four of the Dirac,
+- [00:13:53,240 - 00:13:55,260] the four by four Dirac matrices
+- [00:13:55,260 - 00:13:57,150] since this is a matrix, a four by
+- [00:13:57,150 - 00:13:59,040] four matrix, it could be expanded in Dirac
+- [00:13:59,040 - 00:14:01,340] matrices if you like
+- [00:14:01,340 - 00:14:04,000] okay
+- [00:14:04,000 - 00:14:06,350] yeah it could be, it depends
+- [00:14:06,350 - 00:14:08,700] on whether the scalar particle is
+- [00:14:08,700 - 00:14:09,720] charged or not
+- [00:14:09,720 - 00:14:14,900] if the scalar particle does not have any charge
+- [00:14:14,900 - 00:14:16,540] then
+- [00:14:16,540 - 00:14:18,960] you don't have to put the dagger there
+- [00:14:18,960 - 00:14:21,300] the dagger, then the field is real
+- [00:14:21,300 - 00:14:22,940] then the field is real
+- [00:14:22,940 - 00:14:24,800] it consists of both creation and
+- [00:14:24,800 - 00:14:26,660] annihilation operators for the same kind of
+- [00:14:26,660 - 00:14:30,380] particles so for a neutral particle like the Higgs boson
+- [00:14:30,380 - 00:14:33,440] you wouldn't have to put a dagger there
+- [00:14:33,440 - 00:14:35,270] for the electron for example, the electron
+- [00:14:35,270 - 00:14:37,100] is charged and so there's a difference
+- [00:14:37,100 - 00:14:39,000] between psi and psi dagger
+- [00:14:39,000 - 00:14:42,680] so the delta is finally on this field
+- [00:14:42,680 - 00:14:46,340] so the property does actually exist
+- [00:14:46,340 - 00:14:49,560] última
+- [00:14:49,560 - 00:14:51,600] okay
+- [00:14:51,600 - 00:14:53,100] so the steins Verse
+- [00:14:53,100 - 00:14:54,300] okay
+- [00:14:54,300 - 00:14:56,580] nice
+- [00:14:56,580 - 00:14:58,880] this is a massless particle
+- [00:14:58,880 - 00:15:00,840] let's do the massless particle
+- [00:15:00,840 - 00:15:02,920] because we have an ellipse
+- [00:15:02,920 - 00:15:04,120] andAPPEL dates
+- [00:15:04,120 - 00:15:04,820] so firstly
+- [00:15:04,820 - 00:15:05,540] thebrux is, is�
+- [00:15:05,540 - 00:15:06,680] if an ellipse is on a different place
+- [00:15:06,680 - 00:15:06,740] the delta needs to be nonff sham
+- [00:15:06,740 - 00:15:07,620] so of theню
+- [00:15:07,620 - 00:15:08,100] yes, right?
+- [00:15:08,100 - 00:15:08,460] right?
+- [00:15:08,460 - 00:15:08,920] no we don't have enough square nadines can'tnd
+- [00:15:08,920 - 00:15:08,940] whoa fuck!
+- [00:15:08,940 - 00:15:12,340] points, that's the only length
+- [00:15:12,340 - 00:15:15,740] scale. Incidentally, mass is inverse length.
+- [00:15:15,740 - 00:15:19,510] Once we set h-bar equal to 1 and c equal
+- [00:15:19,510 - 00:15:23,280] to 1, a mass is an inverse length. So when
+- [00:15:23,280 - 00:15:25,850] you specify a mass, you're also
+- [00:15:25,850 - 00:15:28,420] specifying a length scale. But if we're
+- [00:15:28,420 - 00:15:31,130] talking about massless particles, then there
+- [00:15:31,130 - 00:15:33,840] is no length scale in this problem
+- [00:15:33,840 - 00:15:36,240] other than the distance between x and y,
+- [00:15:36,240 - 00:15:38,640] okay? That's the only length scale in the
+- [00:15:38,640 - 00:15:41,970] problem. So dimensional analysis alone is pretty
+- [00:15:41,970 - 00:15:45,300] much enough to tell us the form
+- [00:15:45,300 - 00:15:48,900] of this quantity. Once there's a
+- [00:15:48,900 - 00:15:52,500] mass for the particle, then the
+- [00:15:52,500 - 00:15:54,930] answer is a little more complicated
+- [00:15:54,930 - 00:15:57,360] and can't be completely guessed by
+- [00:15:57,360 - 00:15:59,520] dimensional analysis. But let's start with
+- [00:15:59,520 - 00:16:01,680] the massless case. With a massless
+- [00:16:01,680 - 00:16:05,110] case, all we have to do is figure
+- [00:16:05,110 - 00:16:08,540] out what the dimensions of phi and psi are
+- [00:16:08,540 - 00:16:08,580] and what the dimensions of phi and psi are. So if we have a massless case,
+- [00:16:08,580 - 00:16:08,620] all we have to do is figure out what the dimensions of phi and psi are
+- [00:16:08,620 - 00:16:13,010] and the way to do that is one
+- [00:16:13,010 - 00:16:17,400] basic rule. The basic rule is the action is
+- [00:16:17,400 - 00:16:19,910] always dimensionless. Now what's the units
+- [00:16:19,910 - 00:16:22,420] of action normally? The units of
+- [00:16:22,420 - 00:16:24,340] action normally are the units of action. In
+- [00:16:24,340 - 00:16:26,260] fact, they're the same as the units of
+- [00:16:26,260 - 00:16:29,190] h-bar, but if h-bar is set equal to
+- [00:16:29,190 - 00:16:32,120] 1, it means that actions are dimensionless. So
+- [00:16:32,120 - 00:16:35,020] action, the only things we're
+- [00:16:35,020 - 00:16:37,920] interested in is the lengths or
+- [00:16:37,920 - 00:16:38,520] masses, length or mass.
+- [00:16:38,520 - 00:16:41,180] Lengths, times, and masses. If c is equal
+- [00:16:41,180 - 00:16:43,840] to 1, then lengths and time have the same
+- [00:16:43,840 - 00:16:47,060] units. Length and time has the same units.
+- [00:16:47,060 - 00:16:50,280] And mass or energy or momentum has units
+- [00:16:50,280 - 00:16:53,880] of inverse length. That's the way you
+- [00:16:53,880 - 00:16:57,480] keep track of dimensions. So let's try to
+- [00:16:57,480 - 00:17:00,480] figure out what the dimensions of phi and psi are.
+- [00:17:01,140 - 00:17:04,780] We start with the action for phi.
+- [00:17:04,780 - 00:17:08,420] Alright, so a simple action, a simple expression
+- [00:17:08,420 - 00:17:11,730] for the action of a scalar field,
+- [00:17:11,730 - 00:17:15,040] we've done this before, integral d4x, that means
+- [00:17:15,040 - 00:17:17,960] integral over space and time of a
+- [00:17:17,960 - 00:17:20,880] Lagrange density. And the simple Lagrange density for
+- [00:17:20,880 - 00:17:26,130] a scalar field is, for example, just derivative
+- [00:17:26,130 - 00:17:31,380] of phi with respect to x mu squared, where
+- [00:17:31,380 - 00:17:34,810] squared means the appropriate contraction with the
+- [00:17:34,810 - 00:17:38,240] metric and so forth. But, you know,
+- [00:17:38,420 - 00:17:41,450] as far as units go, it's just derivative
+- [00:17:41,450 - 00:17:44,480] of phi with respect to x, integral d4x, and
+- [00:17:44,480 - 00:17:48,030] this is supposed to be dimensionless. So let's
+- [00:17:48,030 - 00:17:51,580] calculate the dimensions of phi. Here we have
+- [00:17:51,580 - 00:17:55,720] 4 powers of length. How many powers
+- [00:17:55,720 - 00:17:59,860] of length downstairs? Downstairs? Two. Two? Derivative
+- [00:17:59,860 - 00:18:03,450] of phi with respect to x has a length
+- [00:18:03,450 - 00:18:07,040] downstairs. So this whole thing has whatever the units
+- [00:18:07,040 - 00:18:08,040] of phi are.
+- [00:18:08,040 - 00:18:11,349] Whatever they are, let's call those units bracket
+- [00:18:11,349 - 00:18:14,659] phi. We have them twice. So we have
+- [00:18:14,659 - 00:18:19,269] the square of the dimension of whatever phi
+- [00:18:19,269 - 00:18:23,879] is divided by a length squared. Divided by
+- [00:18:23,879 - 00:18:26,519] a length, oh sorry, times a length squared.
+- [00:18:26,519 - 00:18:29,159] Here, times a length squared. Length to the
+- [00:18:29,159 - 00:18:33,159] fourth divided by length squared.
+- [00:18:33,159 - 00:18:37,159] Times length squared. Just dimensionally.
+- [00:18:38,040 - 00:18:40,750] Not keeping track of anything except dimensions,
+- [00:18:40,750 - 00:18:43,460] this quantity has units of length squared
+- [00:18:43,460 - 00:18:47,490] times whatever the dimension of phi is,
+- [00:18:47,490 - 00:18:51,520] squared. However, actions are supposed to be dimensionless.
+- [00:18:51,520 - 00:18:54,890] If the action is dimensionless, the only conclusion
+- [00:18:54,890 - 00:18:58,260] is that a scalar field like phi has units
+- [00:18:58,260 - 00:19:01,110] of inverse length. All right. So
+- [00:19:01,110 - 00:19:03,960] the dimension of phi is inverse length.
+- [00:19:03,960 - 00:19:05,960] phi,
+- [00:19:05,960 - 00:19:06,960] d4,
+- [00:19:06,960 - 00:19:07,960] d2,
+- [00:19:08,040 - 00:19:10,620] The dimension of phi is equal
+- [00:19:10,620 - 00:19:13,200] to length to the minus 1.
+- [00:19:14,460 - 00:19:15,620] Let's just check.
+- [00:19:15,680 - 00:19:17,680] Let's just go a little bit further
+- [00:19:17,680 - 00:19:19,680] and add another term to the Lagrangian.
+- [00:19:20,200 - 00:19:23,770] Let's add in minus m squared over 2,
+- [00:19:23,770 - 00:19:27,340] our friend the mass term, times phi squared.
+- [00:19:27,940 - 00:19:30,200] And let's see if it's still dimensionally consistent.
+- [00:19:31,460 - 00:19:31,520] Okay.
+- [00:19:32,220 - 00:19:35,159] Phi still has dimensions of length to the minus 1.
+- [00:19:36,020 - 00:19:36,320] All right.
+- [00:19:36,320 - 00:19:40,100] So phi squared is, what about m?
+- [00:19:40,300 - 00:19:41,300] What about a mass?
+- [00:19:41,980 - 00:19:44,579] Now a mass is like a momentum or
+- [00:19:44,579 - 00:19:47,179] an energy, and it has units of inverse length.
+- [00:19:47,800 - 00:19:51,960] Mass has units of inverse length, just as momentum does.
+- [00:19:53,040 - 00:19:53,100] Okay.
+- [00:19:53,520 - 00:19:57,520] So this has units of inverse length squared, just like
+- [00:19:57,520 - 00:20:01,520] derivatives with respect to x give you an inverse length squared.
+- [00:20:01,639 - 00:20:03,179] This is inverse length squared.
+- [00:20:03,740 - 00:20:05,580] Another inverse length squared.
+- [00:20:05,580 - 00:20:06,080] This is inverse.
+- [00:20:06,320 - 00:20:09,980] Inverse length to the fourth times length to the fourth.
+- [00:20:10,620 - 00:20:12,139] So it still works out.
+- [00:20:12,939 - 00:20:12,980] Okay.
+- [00:20:13,419 - 00:20:17,099] It still works out that, in other words,
+- [00:20:17,099 - 00:20:20,780] the mass correctly has dimensions of inverse length.
+- [00:20:20,919 - 00:20:24,179] We first used the kinetic term in the Lagrangian
+- [00:20:24,179 - 00:20:27,439] to tell us what the dimensions of phi are,
+- [00:20:28,040 - 00:20:30,750] and then we could go and check that
+- [00:20:30,750 - 00:20:33,460] the dimensions of mass are dimensions of mass.
+- [00:20:33,899 - 00:20:36,100] Supposing we added another term here.
+- [00:20:36,100 - 00:20:38,399] Let's say lambda phi to the fourth.
+- [00:20:39,300 - 00:20:41,639] What would be the dimensions of lambda?
+- [00:20:42,740 - 00:20:43,000] Okay.
+- [00:20:43,040 - 00:20:43,699] Let's check.
+- [00:20:44,639 - 00:20:46,879] Phi has units of inverse length.
+- [00:20:46,879 - 00:20:50,209] So phi to the fourth has inverse length
+- [00:20:50,209 - 00:20:53,540] to the fourth times length to the fourth.
+- [00:20:54,540 - 00:20:56,099] That's dimensionless, so what has
+- [00:20:56,099 - 00:20:57,659] to be the dimensions of lambda?
+- [00:21:00,060 - 00:21:00,959] Dimensionless, right?
+- [00:21:01,439 - 00:21:02,080] Dimensionless.
+- [00:21:02,679 - 00:21:06,060] So a phi to the fourth coupling constant.
+- [00:21:06,100 - 00:21:07,600] Is dimensionless.
+- [00:21:07,600 - 00:21:09,340] Carries no dimensions at all.
+- [00:21:09,340 - 00:21:11,100] That makes it kind of special actually.
+- [00:21:13,340 - 00:21:13,840] But,
+- [00:21:15,399 - 00:21:16,599] and if you went to phi
+- [00:21:16,599 - 00:21:17,800] to the sixth and so forth,
+- [00:21:17,800 - 00:21:19,700] or phi, you could tell me what the
+- [00:21:19,700 - 00:21:21,600] dimensions are by the same kind of rule.
+- [00:21:23,600 - 00:21:24,100] All right.
+- [00:21:24,100 - 00:21:25,499] Let's suppose now that the
+- [00:21:25,499 - 00:21:26,899] mass of the field is zero,
+- [00:21:27,480 - 00:21:30,339] in which case there is no length
+- [00:21:30,339 - 00:21:33,199] scale in the problem other than delta.
+- [00:21:34,500 - 00:21:35,000] Then,
+- [00:21:35,000 - 00:21:37,750] what must be the propagator
+- [00:21:37,750 - 00:21:40,500] phi of x, phi of y?
+- [00:21:40,500 - 00:21:42,340] On dimensional grounds,
+- [00:21:43,080 - 00:21:45,440] it has to be an inverse length squared.
+- [00:21:46,440 - 00:21:49,060] Two phis, each one an inverse length.
+- [00:21:49,800 - 00:21:51,780] It can only depend on
+- [00:21:51,780 - 00:21:53,760] the distance between x and y.
+- [00:21:54,500 - 00:21:57,680] That's the uniformity of space, or translation invariance.
+- [00:21:58,800 - 00:21:58,900] Okay.
+- [00:21:59,100 - 00:22:01,230] So it has to be translation invariant, which
+- [00:22:01,230 - 00:22:03,360] means it only depends on x minus y.
+- [00:22:03,440 - 00:22:04,440] It has to be Lorentz invariant.
+- [00:22:05,000 - 00:22:08,800] It should be the same if we rotated Lorentz frames.
+- [00:22:09,200 - 00:22:11,300] That means it can only depend on
+- [00:22:11,300 - 00:22:13,400] the proper distance between x and y.
+- [00:22:14,100 - 00:22:16,700] In other words, the proper size,
+- [00:22:16,700 - 00:22:19,300] the proper length of the interval delta.
+- [00:22:21,000 - 00:22:24,350] Nothing left for it to be
+- [00:22:24,350 - 00:22:27,700] except one over delta squared, where,
+- [00:22:27,800 - 00:22:29,600] let me just say what delta squared means.
+- [00:22:30,100 - 00:22:34,800] Delta squared means delta mu, delta mu.
+- [00:22:35,000 - 00:22:37,900] In other words, the four
+- [00:22:37,900 - 00:22:40,800] vector interval between x and y.
+- [00:22:41,800 - 00:22:43,680] That's all, that's the only thing.
+- [00:22:43,740 - 00:22:45,210] Now, when I say the only thing,
+- [00:22:45,210 - 00:22:46,680] of course, there could be a numerical constant,
+- [00:22:46,820 - 00:22:48,160] and there is a numerical constant.
+- [00:22:48,340 - 00:22:50,620] There's some pi's floating around.
+- [00:22:51,000 - 00:22:53,780] And you can't get the pi's from dimensional analysis.
+- [00:22:53,940 - 00:22:55,390] You can get them pretty
+- [00:22:55,390 - 00:22:56,840] easily, but not from dimensional analysis.
+- [00:22:57,560 - 00:23:00,820] So apart from numerical numbers of order one,
+- [00:23:00,820 - 00:23:04,080] things like pi, maybe a two here and there.
+- [00:23:04,080 - 00:23:04,980] It's probably a four pi.
+- [00:23:05,100 - 00:23:06,900] There's a four pi in it, to be exact.
+- [00:23:06,900 - 00:23:08,900] The answer is going to be one over delta squared.
+- [00:23:09,900 - 00:23:16,900] Now, what happens when there's a mass in a problem?
+- [00:23:17,900 - 00:23:19,900] Here's the logic.
+- [00:23:23,500 - 00:23:28,250] The propagator, as a general rule,
+- [00:23:28,250 - 00:23:33,000] things at very, very large momentum
+- [00:23:33,000 - 00:23:34,900] forget the function of the momentum.
+- [00:23:35,000 - 00:23:37,300] It's the fact that a particle might have mass.
+- [00:23:37,300 - 00:23:38,900] Let me give you an example.
+- [00:23:38,900 - 00:23:41,900] The energy of a particle of momentum p.
+- [00:23:41,900 - 00:23:44,400] The energy of a particle of momentum p is
+- [00:23:44,400 - 00:23:46,900] the square root of p squared plus m squared.
+- [00:23:47,900 - 00:23:48,900] Right?
+- [00:23:48,900 - 00:23:50,900] That's the energy of a particle of momentum p.
+- [00:23:51,500 - 00:23:53,200] What happens if I wanted to
+- [00:23:53,200 - 00:23:54,900] put speeds of light in there?
+- [00:23:54,900 - 00:23:57,400] I would stick a c squared and a
+- [00:23:57,400 - 00:23:59,900] c to the fourth, but let's forget that.
+- [00:23:59,900 - 00:24:01,900] c is equal to one.
+- [00:24:01,900 - 00:24:03,900] What's the energy of a massless particle?
+- [00:24:03,900 - 00:24:06,850] The energy of a massless particle is just
+- [00:24:06,850 - 00:24:09,800] e is equal to the absolute value of p.
+- [00:24:09,800 - 00:24:13,800] What happens to this expression when p gets very large?
+- [00:24:13,800 - 00:24:17,800] When p gets enormously large, much, much larger than m,
+- [00:24:17,800 - 00:24:20,300] it becomes a good approximation just to
+- [00:24:20,300 - 00:24:22,800] say that it's the absolute value of p.
+- [00:24:22,800 - 00:24:26,800] So, here's an example of how a particular
+- [00:24:26,800 - 00:24:30,800] formula forgets the fact that there's a mass
+- [00:24:30,800 - 00:24:32,800] when the momentum gets very, very large.
+- [00:24:32,800 - 00:24:35,800] Large momentum typically means
+- [00:24:35,800 - 00:24:38,800] very short distance, short wavelength.
+- [00:24:38,800 - 00:24:43,800] So, it's a general rule that things like propagators
+- [00:24:43,800 - 00:24:48,800] become insensitive to the mass at very, very small distances.
+- [00:24:48,800 - 00:24:51,800] They're dominated by very high momentum.
+- [00:24:51,800 - 00:24:55,300] In other words, when you think about the
+- [00:24:55,300 - 00:24:58,800] propagator or the Fourier transform of the propagator,
+- [00:24:58,800 - 00:25:00,800] it's a function of momentum.
+- [00:25:00,800 - 00:25:02,800] And the very, very high momentum,
+- [00:25:02,800 - 00:25:04,800] the momentum value of that propagator
+- [00:25:04,800 - 00:25:06,800] forgets the fact that there's a mass,
+- [00:25:06,800 - 00:25:09,800] but the high momentum value of the propagator is
+- [00:25:09,800 - 00:25:12,800] intimately connected with the short distance behavior of the propagator.
+- [00:25:12,800 - 00:25:16,300] So, at very short distances, we expect that
+- [00:25:16,300 - 00:25:19,800] this is correct even if there is a mass.
+- [00:25:19,800 - 00:25:23,300] 1 over delta squared is the way the propagator
+- [00:25:23,300 - 00:25:26,800] behaves even if there is a mass in the problem.
+- [00:25:26,800 - 00:25:28,800] Now, what if there is a mass?
+- [00:25:28,800 - 00:25:30,800] How is it corrected?
+- [00:25:30,800 - 00:25:32,800] It's corrected by things which
+- [00:25:32,800 - 00:25:34,800] can be important at large distances.
+- [00:25:34,800 - 00:25:40,800] Let's just draw a...
+- [00:25:40,800 - 00:25:42,800] Let's just graph this function.
+- [00:25:42,800 - 00:25:44,800] We graph the function, and
+- [00:25:44,800 - 00:25:46,800] it blows up at small distances,
+- [00:25:46,800 - 00:25:50,800] and then falls off like 1 over delta squared, smoothly.
+- [00:25:50,800 - 00:25:53,800] If the particle has a mass,
+- [00:25:53,800 - 00:25:56,800] then the result is that
+- [00:25:56,800 - 00:25:59,800] the propagator falls off when delta...
+- [00:26:00,800 - 00:26:03,800] becomes bigger than 1 over m.
+- [00:26:03,800 - 00:26:07,800] 1 over m is the Compton wavelength of the particle,
+- [00:26:07,800 - 00:26:09,800] inverse of the mass.
+- [00:26:09,800 - 00:26:12,300] When delta gets larger than
+- [00:26:12,300 - 00:26:14,800] the inverse mass of the particle,
+- [00:26:14,800 - 00:26:17,800] the particle just has a harder time propagating
+- [00:26:17,800 - 00:26:20,800] from one point to another when it's massive.
+- [00:26:20,800 - 00:26:23,800] When it's light, it can propagate a long way.
+- [00:26:23,800 - 00:26:25,300] When it's massive, it can't
+- [00:26:25,300 - 00:26:26,800] propagate so easily a long way.
+- [00:26:26,800 - 00:26:28,800] That goes back to the reason
+- [00:26:28,800 - 00:26:32,800] why forces mediated by massless particles
+- [00:26:32,800 - 00:26:36,800] are longer range than forces mediated by massive particles.
+- [00:26:36,800 - 00:26:40,800] So, the typical kind of thing that happens, approximately,
+- [00:26:40,800 - 00:26:42,800] this is not an exact statement,
+- [00:26:42,800 - 00:26:47,800] is that you get some sort of
+- [00:26:47,800 - 00:26:51,800] thing like e to the minus delta times m,
+- [00:26:51,800 - 00:26:54,300] which gets small when delta
+- [00:26:54,300 - 00:26:56,800] is bigger than 1 over m.
+- [00:26:56,800 - 00:26:58,800] This is the kind of
+- [00:26:58,800 - 00:27:00,800] correction that comes from a mass.
+- [00:27:00,800 - 00:27:02,800] When delta is very small,
+- [00:27:02,800 - 00:27:05,800] this is not very significant.
+- [00:27:05,800 - 00:27:08,800] This is just 1 when delta is very small.
+- [00:27:08,800 - 00:27:10,800] But when delta is large,
+- [00:27:10,800 - 00:27:12,800] this just gets cut off.
+- [00:27:12,800 - 00:27:15,800] Now, if we really wanted to be precise,
+- [00:27:15,800 - 00:27:18,800] it doesn't really quite look exactly like this.
+- [00:27:18,800 - 00:27:20,800] This 1 over delta squared is
+- [00:27:20,800 - 00:27:22,800] not exactly 1 over delta squared.
+- [00:27:22,800 - 00:27:24,800] It's a little bit smaller than 1 over delta squared.
+- [00:27:24,800 - 00:27:26,800] In fact, it's a little bit smaller
+- [00:27:26,800 - 00:27:28,800] at every value of delta.
+- [00:27:28,800 - 00:27:31,800] So, if we really were to plot it carefully,
+- [00:27:31,800 - 00:27:35,800] to plot the massless and the massive propagator,
+- [00:27:35,800 - 00:27:37,800] we would always find that the massive propagator
+- [00:27:37,800 - 00:27:39,800] was a little bit smaller.
+- [00:27:39,800 - 00:27:40,800] Here's the massless propagator.
+- [00:27:40,800 - 00:27:44,800] It goes off smoothly down here.
+- [00:27:44,800 - 00:27:49,800] The massive propagator would be a little bit smaller.
+- [00:27:49,800 - 00:27:51,800] It's hard for me to draw this,
+- [00:27:51,800 - 00:27:52,800] but it would be a little bit smaller
+- [00:27:52,800 - 00:27:55,800] at all values of distance.
+- [00:27:56,800 - 00:27:59,800] So, that's one fact.
+- [00:27:59,800 - 00:28:02,800] They would have the same asymptotic behavior
+- [00:28:02,800 - 00:28:04,800] near delta equals 0,
+- [00:28:04,800 - 00:28:05,800] 1 over delta squared,
+- [00:28:05,800 - 00:28:07,300] but the massive one would
+- [00:28:07,300 - 00:28:08,800] always be a little bit smaller.
+- [00:28:08,800 - 00:28:11,800] The propagator would always be a little bit less potent,
+- [00:28:11,800 - 00:28:12,800] so to speak.
+- [00:28:12,800 - 00:28:15,800] Okay, so that's the massless propagator.
+- [00:28:15,800 - 00:28:18,800] Sorry, that's the scalar propagator.
+- [00:28:18,800 - 00:28:21,800] And I think we did talk about this.
+- [00:28:21,800 - 00:28:23,800] Now I'm beginning to recall.
+- [00:28:23,800 - 00:28:26,800] We talked about a Feynman diagram
+- [00:28:26,800 - 00:28:27,800] which looks like this.
+- [00:28:27,800 - 00:28:29,800] This is one of the
+- [00:28:29,800 - 00:28:31,800] simplest Feynman diagrams you can draw.
+- [00:28:31,800 - 00:28:35,800] It represents, if you like, a correction.
+- [00:28:35,800 - 00:28:36,800] This could be a scalar particle.
+- [00:28:36,800 - 00:28:39,800] Let's think about a scalar particle.
+- [00:28:39,800 - 00:28:42,800] All right, this is a correction.
+- [00:28:42,800 - 00:28:44,300] This would be a correction coming
+- [00:28:44,300 - 00:28:45,800] from lambda phi to the fourth.
+- [00:28:45,800 - 00:28:49,800] Here's a vertex involving four particles,
+- [00:28:49,800 - 00:28:53,800] two in and two out, or one, two, three, four.
+- [00:28:53,800 - 00:28:56,800] And this would have weight lambda.
+- [00:28:56,800 - 00:28:59,800] Times the propagator from one
+- [00:28:59,800 - 00:29:02,800] point back to the same point.
+- [00:29:02,800 - 00:29:05,800] Now this is actually a correction
+- [00:29:05,800 - 00:29:08,800] to the mass term of the scalar field,
+- [00:29:08,800 - 00:29:09,800] the m squared phi squared.
+- [00:29:09,800 - 00:29:13,800] The m squared phi squared represents a diagram
+- [00:29:13,800 - 00:29:18,800] where a particle comes in and goes back out.
+- [00:29:18,800 - 00:29:20,800] You absorb one and re-emit it,
+- [00:29:20,800 - 00:29:24,800] and it has a coefficient or a strength m squared,
+- [00:29:24,800 - 00:29:25,800] or m squared over two.
+- [00:29:25,800 - 00:29:26,800] That's not important.
+- [00:29:26,800 - 00:29:28,800] This is a correction to that.
+- [00:29:28,800 - 00:29:33,800] It corrects the amplitude for a particle to come in
+- [00:29:33,800 - 00:29:37,800] and just go back out from a point.
+- [00:29:37,800 - 00:29:39,800] How big is that correction?
+- [00:29:39,800 - 00:29:41,800] It's just given by the Feynman diagram,
+- [00:29:41,800 - 00:29:45,800] and the Feynman diagram is lambda times the propagator
+- [00:29:45,800 - 00:29:49,800] for delta equals zero.
+- [00:29:49,800 - 00:29:52,800] So the answer is crazy.
+- [00:29:52,800 - 00:29:55,800] The answer for this process here is delta divided by,
+- [00:29:55,800 - 00:29:59,800] divided by zero squared.
+- [00:29:59,800 - 00:30:02,800] No, sorry, lambda divided by zero squared,
+- [00:30:02,800 - 00:30:04,800] or delta squared.
+- [00:30:04,800 - 00:30:06,800] And it's infinite.
+- [00:30:06,800 - 00:30:08,800] It's bad. It's infinite.
+- [00:30:08,800 - 00:30:11,300] Now we can't trust our
+- [00:30:11,300 - 00:30:13,800] theories to arbitrarily small distances.
+- [00:30:13,800 - 00:30:16,300] Presumably we expect that there's
+- [00:30:16,300 - 00:30:18,800] some kind of fuzziness in nature
+- [00:30:18,800 - 00:30:20,800] at very small distances.
+- [00:30:20,800 - 00:30:22,800] We know very little about it.
+- [00:30:22,800 - 00:30:24,800] Gravity might create it.
+- [00:30:24,800 - 00:30:26,800] Nothing else beyond what we actually
+- [00:30:26,800 - 00:30:28,800] know might create a degree of fuzziness.
+- [00:30:28,800 - 00:30:31,800] And if the fuzziness is on a scale,
+- [00:30:31,800 - 00:30:33,800] let's call it small delta.
+- [00:30:33,800 - 00:30:36,300] Let's write that big delta
+- [00:30:36,300 - 00:30:38,800] is always bigger than small delta.
+- [00:30:38,800 - 00:30:39,800] Why?
+- [00:30:39,800 - 00:30:42,800] Small delta is the smallest
+- [00:30:42,800 - 00:30:45,800] possible distances in our imagination.
+- [00:30:45,800 - 00:30:47,800] Very likely the Planck scale,
+- [00:30:47,800 - 00:30:50,800] or maybe some unification scale.
+- [00:30:50,800 - 00:30:52,800] Very likely a very large energy scale.
+- [00:30:52,800 - 00:30:53,800] I'm sorry.
+- [00:30:53,800 - 00:30:55,800] A very large momentum scale.
+- [00:30:55,800 - 00:30:58,800] A very, very small distance scale.
+- [00:30:58,800 - 00:31:01,800] Then this O squared, this zero squared,
+- [00:31:01,800 - 00:31:04,800] would be replaced by delta squared.
+- [00:31:04,800 - 00:31:08,800] Of course if delta is much smaller
+- [00:31:08,800 - 00:31:12,300] than the experimentally accessible
+- [00:31:12,300 - 00:31:15,800] things that we know about,
+- [00:31:15,800 - 00:31:18,800] and lambda is not horribly small itself,
+- [00:31:18,800 - 00:31:20,300] which it's not expected to be,
+- [00:31:20,300 - 00:31:21,800] for example, for the Higgs boson,
+- [00:31:21,800 - 00:31:23,800] then this is going to be a big deal.
+- [00:31:23,800 - 00:31:25,800] This is going to be a big thing,
+- [00:31:25,800 - 00:31:28,800] and typically bigger than the starting mass.
+- [00:31:28,800 - 00:31:30,800] So this is the problem.
+- [00:31:30,800 - 00:31:32,800] The problem is you start with
+- [00:31:32,800 - 00:31:34,800] something which you imagine is relatively small.
+- [00:31:34,800 - 00:31:35,800] Small on what scale?
+- [00:31:35,800 - 00:31:38,800] Small on the scale of the cutoff.
+- [00:31:38,800 - 00:31:42,300] And then you get a correction which is far bigger than
+- [00:31:42,300 - 00:31:45,800] the thing that you wanted to get out in the end.
+- [00:31:45,800 - 00:31:46,800] All right?
+- [00:31:46,800 - 00:31:50,800] So that's the problem, as we've discussed, of fine tuning.
+- [00:31:50,800 - 00:31:53,800] And another way to think about this infinity
+- [00:31:53,800 - 00:31:57,800] is to think about the proper, or the Feynman diagram,
+- [00:31:57,800 - 00:32:00,300] as being an integral over the momenta
+- [00:32:00,300 - 00:32:02,800] that can circulate in the loop here.
+- [00:32:02,800 - 00:32:05,300] You're just getting too much
+- [00:32:05,300 - 00:32:07,800] juice from very high momentum particles
+- [00:32:07,800 - 00:32:09,800] flowing around in the loop.
+- [00:32:09,800 - 00:32:11,300] So you can either think
+- [00:32:11,300 - 00:32:12,800] of a cutoff at small distances,
+- [00:32:12,800 - 00:32:14,800] or you can think of a maximum momentum.
+- [00:32:14,800 - 00:32:16,800] It comes to the same thing.
+- [00:32:16,800 - 00:32:19,800] The diagram, this is called quadratically divergent,
+- [00:32:19,800 - 00:32:23,800] which means that as the cutoff scale goes to zero,
+- [00:32:23,800 - 00:32:29,800] it diverges as two powers of one over delta.
+- [00:32:29,800 - 00:32:37,800] Okay, that's the problem for the Higgs boson.
+- [00:32:37,800 - 00:32:41,800] Now, let's discuss the propagator for fermions.
+- [00:32:41,800 - 00:32:44,800] Oh, yeah, okay, let's...
+- [00:32:44,800 - 00:32:48,300] Notice that at very small distances, this e to
+- [00:32:48,300 - 00:32:51,800] the minus delta m would not help you particularly.
+- [00:32:51,800 - 00:32:52,800] When delta is very...
+- [00:32:52,800 - 00:32:54,800] When capital delta is very small,
+- [00:32:54,800 - 00:32:57,800] this is just approximately one,
+- [00:32:57,800 - 00:32:59,800] and so it doesn't help you very much.
+- [00:32:59,800 - 00:33:01,800] It doesn't do anything for you.
+- [00:33:01,800 - 00:33:04,800] But now let's think about fermions.
+- [00:33:04,800 - 00:33:08,800] Let's go on to fermions
+- [00:33:08,800 - 00:33:11,800] and discuss the Feynman diagrams for fermions.
+- [00:33:11,800 - 00:33:12,800] Similar pattern.
+- [00:33:12,800 - 00:33:15,300] The only difference is that the
+- [00:33:15,300 - 00:33:17,800] Lagrangian for fermions has a different structure.
+- [00:33:17,800 - 00:33:20,800] So let me write the Lagrangian for fermions.
+- [00:33:20,800 - 00:33:23,800] We've discussed it before for the Dirac equation.
+- [00:33:23,800 - 00:33:26,800] It's the Lagrangian governing the Dirac equation.
+- [00:33:26,800 - 00:33:29,800] It's actually psi-bar integral d4x again.
+- [00:33:29,800 - 00:33:30,800] That's the action.
+- [00:33:30,800 - 00:33:32,800] Integral d4x.
+- [00:33:32,800 - 00:33:35,300] Psi-bar, where psi-bar is just
+- [00:33:35,300 - 00:33:37,800] basically the complex conjugate of psi.
+- [00:33:37,800 - 00:33:39,800] It's the complex conjugate of psi
+- [00:33:39,800 - 00:33:41,800] times one of the gamma matrices.
+- [00:33:41,800 - 00:33:42,800] Gamma matrices...
+- [00:33:42,800 - 00:33:45,800] Oh, one of the Dirac matrices.
+- [00:33:45,800 - 00:33:46,800] Psi-bar.
+- [00:33:46,800 - 00:33:49,800] And then there's a gamma mu.
+- [00:33:50,800 - 00:33:53,800] These are the Dirac matrices.
+- [00:33:53,800 - 00:33:55,800] These are the four Dirac matrices.
+- [00:33:55,800 - 00:33:57,800] They're not important to this argument.
+- [00:33:57,800 - 00:34:00,800] And there is a derivative
+- [00:34:00,800 - 00:34:03,800] with respect to x mu psi.
+- [00:34:03,800 - 00:34:06,800] There's only one derivative.
+- [00:34:06,800 - 00:34:10,800] The other index is soaked up by the Dirac matrices.
+- [00:34:10,800 - 00:34:11,800] This is the structure of it.
+- [00:34:11,800 - 00:34:16,800] We can also put in the m psi-bar psi.
+- [00:34:16,800 - 00:34:18,800] Notice that it's not m squared here.
+- [00:34:18,800 - 00:34:19,800] It's just m.
+- [00:34:19,800 - 00:34:20,800] Okay?
+- [00:34:20,800 - 00:34:21,800] All right.
+- [00:34:21,800 - 00:34:23,800] Let's check first from this term.
+- [00:34:23,800 - 00:34:26,800] Let's check what the dimensions of psi are.
+- [00:34:26,800 - 00:34:30,800] And then knowing the dimensions of psi, we can come back to this
+- [00:34:30,800 - 00:34:34,800] term and ask whether the m that appears here really has dimensions of mass.
+- [00:34:34,800 - 00:34:36,800] We could do it the other way also,
+- [00:34:36,800 - 00:34:38,800] but let's do it from starting from here.
+- [00:34:38,800 - 00:34:39,800] All right.
+- [00:34:39,800 - 00:34:40,800] What is the dimension?
+- [00:34:40,800 - 00:34:43,800] The dimensions of an action are that it's dimensionless.
+- [00:34:43,800 - 00:34:45,800] This has to be dimensionless.
+- [00:34:45,800 - 00:34:47,300] So far, I don't know
+- [00:34:47,300 - 00:34:48,800] what the dimensions of psi are.
+- [00:34:48,800 - 00:34:49,800] So I'll just call them bracket psi.
+- [00:34:49,800 - 00:34:52,300] Psi and psi-star, complex
+- [00:34:52,300 - 00:34:54,800] conjugate, have the same dimensions.
+- [00:34:54,800 - 00:34:56,800] So there's no difference in
+- [00:34:56,800 - 00:34:58,800] dimensionality between psi and psi-bar.
+- [00:34:58,800 - 00:35:00,800] So what do we have?
+- [00:35:00,800 - 00:35:06,800] We have two factors of psi, dimensions of psi squared.
+- [00:35:06,800 - 00:35:10,800] And now length to the fourth.
+- [00:35:10,800 - 00:35:13,300] Gamma matrices are incidentally just
+- [00:35:13,300 - 00:35:15,800] numerical matrices, ones and zeros.
+- [00:35:15,800 - 00:35:18,800] So they don't have any dimensions at all.
+- [00:35:18,800 - 00:35:21,800] And then we have the derivative with respect to x.
+- [00:35:21,800 - 00:35:24,800] What about that?
+- [00:35:24,800 - 00:35:26,800] One inverse length.
+- [00:35:26,800 - 00:35:29,800] So that's just length cubed.
+- [00:35:29,800 - 00:35:31,800] So what is the dimension of psi?
+- [00:35:31,800 - 00:35:34,300] It's not the same as
+- [00:35:34,300 - 00:35:36,800] the dimension of a scalar field.
+- [00:35:36,800 - 00:35:42,300] In fact, it has dimension psi equals
+- [00:35:42,300 - 00:35:47,800] one over length to the three halves.
+- [00:35:48,800 - 00:35:50,800] Odd. Funny.
+- [00:35:50,800 - 00:35:51,800] Fractional.
+- [00:35:51,800 - 00:35:53,800] Fermions always have halves in them.
+- [00:35:53,800 - 00:35:56,800] Everything about fermions has half integers in it.
+- [00:35:56,800 - 00:35:59,800] In particular, the dimension of the fermion field
+- [00:35:59,800 - 00:36:02,800] is one over length to the three halves.
+- [00:36:02,800 - 00:36:04,800] It's a lot easier to do with the math term.
+- [00:36:04,800 - 00:36:05,800] With what?
+- [00:36:05,800 - 00:36:07,800] It's a lot easier to do with the other term.
+- [00:36:07,800 - 00:36:08,800] Yeah, it is.
+- [00:36:08,800 - 00:36:09,800] So let's do it.
+- [00:36:09,800 - 00:36:10,800] Yeah, I know, but I wanted to
+- [00:36:10,800 - 00:36:11,800] show that you get the same answer.
+- [00:36:11,800 - 00:36:12,800] Right.
+- [00:36:12,800 - 00:36:14,800] All right, so let's check here.
+- [00:36:14,800 - 00:36:16,300] If psi has units of one
+- [00:36:16,300 - 00:36:17,800] over length to the three halves,
+- [00:36:17,800 - 00:36:20,800] how about psi star psi, or psi dagger psi?
+- [00:36:20,800 - 00:36:24,800] That has units of one over length cubed.
+- [00:36:24,800 - 00:36:26,800] A mass has units of one over length.
+- [00:36:26,800 - 00:36:30,800] That's altogether one over length to the fourth,
+- [00:36:30,800 - 00:36:32,800] times length to the fourth.
+- [00:36:32,800 - 00:36:34,800] That's dimensionless.
+- [00:36:34,800 - 00:36:36,300] All right, so in particular, you notice
+- [00:36:36,300 - 00:36:37,800] that what goes here is not m squared.
+- [00:36:37,800 - 00:36:39,800] It's m.
+- [00:36:39,800 - 00:36:40,800] And it's true.
+- [00:36:40,800 - 00:36:43,800] It really is the mass.
+- [00:36:43,800 - 00:36:47,800] Okay, so psi has units of one over length.
+- [00:36:47,800 - 00:36:49,800] It's one over length to the three halves.
+- [00:36:49,800 - 00:36:52,800] How about the fermion propagator?
+- [00:36:52,800 - 00:36:54,800] Each one of the sides has units
+- [00:36:54,800 - 00:36:56,800] of one over length to the three halves.
+- [00:36:56,800 - 00:37:01,800] And so what must the propagator be for massless particles?
+- [00:37:01,800 - 00:37:04,800] Let's start with massless particles.
+- [00:37:04,800 - 00:37:08,800] This was one over delta squared.
+- [00:37:08,800 - 00:37:14,800] One over delta cubed.
+- [00:37:14,800 - 00:37:16,800] In other words, the third power of the fermion.
+- [00:37:16,800 - 00:37:18,300] And the fourth power of the
+- [00:37:18,300 - 00:37:19,800] proper distance between the two points.
+- [00:37:19,800 - 00:37:21,800] Now this is dimensional.
+- [00:37:21,800 - 00:37:23,800] Dimensional argument.
+- [00:37:23,800 - 00:37:26,800] There are also Dirac matrices here.
+- [00:37:26,800 - 00:37:28,800] There are also Dirac indices.
+- [00:37:28,800 - 00:37:30,800] If I really wanted to write it correctly,
+- [00:37:30,800 - 00:37:33,800] all I would have to do would be to,
+- [00:37:33,800 - 00:37:36,800] let me write it with its indices.
+- [00:37:36,800 - 00:37:43,800] You put the four-vector delta up here,
+- [00:37:43,800 - 00:37:45,800] with index mu.
+- [00:37:45,800 - 00:37:50,800] You put a gamma matrix also with index mu.
+- [00:37:50,800 - 00:37:52,300] And then you take the
+- [00:37:52,300 - 00:37:53,800] ijth component of the Dirac matrix.
+- [00:37:53,800 - 00:37:54,800] Let's do it differently.
+- [00:37:54,800 - 00:37:57,800] Let's put the index here downstairs.
+- [00:37:57,800 - 00:37:59,800] The index here upstairs.
+- [00:37:59,800 - 00:38:01,800] It doesn't matter how you do it.
+- [00:38:01,800 - 00:38:06,800] And ij are the matrix entries of the Dirac matrix.
+- [00:38:06,800 - 00:38:07,800] Now this is not quite right yet.
+- [00:38:07,800 - 00:38:10,800] This is not dimensionally consistent.
+- [00:38:10,800 - 00:38:13,800] I added an extra factor of delta upstairs,
+- [00:38:13,800 - 00:38:16,300] so I have to put
+- [00:38:16,300 - 00:38:18,800] an extra factor of delta downstairs.
+- [00:38:18,800 - 00:38:21,300] That's in fact what the Dirac
+- [00:38:21,300 - 00:38:23,800] propagator is for a massless particle.
+- [00:38:23,800 - 00:38:26,800] But for our purposes,
+- [00:38:26,800 - 00:38:28,800] we can just call this one over delta cubed.
+- [00:38:28,800 - 00:38:31,300] For dimensional reasoning, it's enough
+- [00:38:31,300 - 00:38:33,800] to know one over delta cubed.
+- [00:38:33,800 - 00:38:35,800] So this is one over delta cubed.
+- [00:38:35,800 - 00:38:39,800] And when the mass term is included,
+- [00:38:39,800 - 00:38:42,800] again the propagator,
+- [00:38:43,800 - 00:38:45,800] this is a correct estimate
+- [00:38:45,800 - 00:38:47,800] of it for very small distances.
+- [00:38:47,800 - 00:38:50,800] At large distances, it's again corrected
+- [00:38:50,800 - 00:38:53,800] and suppressed by the mass term.
+- [00:38:53,800 - 00:38:55,800] So the propagator is always
+- [00:38:55,800 - 00:38:57,800] a little bit smaller than this,
+- [00:38:57,800 - 00:38:59,800] and the amount by which
+- [00:38:59,800 - 00:39:01,800] it's smaller depends on the mass.
+- [00:39:01,800 - 00:39:04,300] The bigger the mass is,
+- [00:39:04,300 - 00:39:06,800] the smaller the propagator in here.
+- [00:39:06,800 - 00:39:10,800] But at very small distances, it's essentially correct.
+- [00:39:10,800 - 00:39:13,800] So let's now ask about Feynman diagrams
+- [00:39:13,800 - 00:39:16,800] with fermions in them.
+- [00:39:22,800 - 00:39:24,800] In particular, I want to ask,
+- [00:39:24,800 - 00:39:27,800] is there something about a fermionic diagram
+- [00:39:27,800 - 00:39:31,800] that might cancel the bad thing that we discovered
+- [00:39:31,800 - 00:39:34,800] where is it? I erased it.
+- [00:39:34,800 - 00:39:36,300] The bad thing that we
+- [00:39:36,300 - 00:39:37,800] discovered about the self-energy diagram
+- [00:39:37,800 - 00:39:39,800] due to the boson.
+- [00:39:39,800 - 00:39:41,800] In other words, we started with this diagram.
+- [00:39:43,800 - 00:39:47,300] And we said that it
+- [00:39:47,300 - 00:39:50,800] was lambda divided by delta squared.
+- [00:39:50,800 - 00:39:53,800] In fact, although I didn't mention it,
+- [00:39:53,800 - 00:39:56,800] there are some numerical factors there.
+- [00:39:56,800 - 00:39:58,800] The numerical factors are computables,
+- [00:39:58,800 - 00:40:01,800] pi's and 4's and stuff like that.
+- [00:40:01,800 - 00:40:03,800] What about the sine?
+- [00:40:03,800 - 00:40:05,800] The sine is positive.
+- [00:40:05,800 - 00:40:07,800] The sine is positive,
+- [00:40:07,800 - 00:40:09,800] and it is connected with something
+- [00:40:09,800 - 00:40:11,800] that I think I mentioned last time,
+- [00:40:11,800 - 00:40:16,800] that closed loop diagrams involving bosons are positive.
+- [00:40:16,800 - 00:40:19,300] Closed loop diagrams involving
+- [00:40:19,300 - 00:40:21,800] fermions are typically negative.
+- [00:40:21,800 - 00:40:25,800] Excuse me, is there sort of like a rotation then?
+- [00:40:25,800 - 00:40:29,800] Because we talked about the one revolution.
+- [00:40:29,800 - 00:40:32,800] You're asking about the sine?
+- [00:40:32,800 - 00:40:34,800] Well, okay.
+- [00:40:34,800 - 00:40:36,800] All right, so let me go back through the argument.
+- [00:40:36,800 - 00:40:37,800] I think I discussed this
+- [00:40:37,800 - 00:40:38,800] last time, but I don't remember.
+- [00:40:38,800 - 00:40:40,800] So I'll go back through the little argument.
+- [00:40:40,800 - 00:40:42,800] It's a pretty little argument.
+- [00:40:42,800 - 00:40:43,800] I'm not sure who it's due to.
+- [00:40:43,800 - 00:40:45,800] I didn't invent it.
+- [00:40:45,800 - 00:40:47,800] It might have been Feynman.
+- [00:40:47,800 - 00:40:49,800] I'm not sure.
+- [00:40:49,800 - 00:40:51,800] So it goes as follows.
+- [00:40:51,800 - 00:40:53,300] Supposing you want to know the
+- [00:40:53,300 - 00:40:54,800] sine of a closed loop diagram.
+- [00:40:54,800 - 00:40:57,800] It's either plus or minus.
+- [00:40:57,800 - 00:40:59,800] All of these diagrams, simple diagrams like this,
+- [00:40:59,800 - 00:41:00,800] are real.
+- [00:41:00,800 - 00:41:02,800] They're either positive or negative.
+- [00:41:02,800 - 00:41:05,800] All right, so start first with two loops.
+- [00:41:05,800 - 00:41:09,800] That's just a product of a one loop diagram.
+- [00:41:09,800 - 00:41:12,800] A diagram involving two closed loops,
+- [00:41:12,800 - 00:41:14,800] just simple closed loops,
+- [00:41:14,800 - 00:41:16,800] and they could be connected to other things.
+- [00:41:16,800 - 00:41:17,800] That's not important.
+- [00:41:17,800 - 00:41:19,800] But just two closed loops,
+- [00:41:19,800 - 00:41:21,800] and ask what the sine of that is.
+- [00:41:21,800 - 00:41:23,300] Well, if the sine of
+- [00:41:23,300 - 00:41:24,800] a single closed loop is positive,
+- [00:41:24,800 - 00:41:27,800] then the product of two positives is positive.
+- [00:41:27,800 - 00:41:29,800] If the sine of a single closed loop is negative,
+- [00:41:29,800 - 00:41:32,800] the product of two negatives is a positive.
+- [00:41:32,800 - 00:41:36,800] So two loops side by side
+- [00:41:36,800 - 00:41:39,800] always corresponds to a positive answer.
+- [00:41:39,800 - 00:41:41,800] So it's a positive amplitude.
+- [00:41:41,800 - 00:41:45,800] Now next, let's cut open this diagram like that.
+- [00:41:48,800 - 00:41:50,800] And think about a diagram which
+- [00:41:50,800 - 00:41:52,800] is exactly the same as the original,
+- [00:41:52,800 - 00:41:56,800] except we switch the particles.
+- [00:41:56,800 - 00:42:00,800] Whenever you switch and interchange two bosons,
+- [00:42:00,800 - 00:42:02,800] it's a plus sign.
+- [00:42:02,800 - 00:42:05,800] That's, I'll tell you what it's related to.
+- [00:42:05,800 - 00:42:08,800] It's closely related to the fact that the wave function
+- [00:42:08,800 - 00:42:10,800] of two fermions, let's say psi,
+- [00:42:10,800 - 00:42:12,800] this is now an ordinary Schrödinger wave function,
+- [00:42:12,800 - 00:42:14,800] not a Dirac wave function.
+- [00:42:14,800 - 00:42:17,800] An ordinary Schrödinger wave function,
+- [00:42:17,800 - 00:42:19,800] let's call it S sub Schrödinger,
+- [00:42:19,800 - 00:42:22,800] just the wave function of a two particle system,
+- [00:42:22,800 - 00:42:25,800] x1 and x2,
+- [00:42:25,800 - 00:42:29,800] is symmetric under interchange of x1 and x2.
+- [00:42:29,800 - 00:42:35,800] It is equal to psi Schrödinger of x2 and x1.
+- [00:42:35,800 - 00:42:38,800] In other words, if you just interchange the particles,
+- [00:42:38,800 - 00:42:42,800] you just get the same wave function back.
+- [00:42:42,800 - 00:42:44,800] And that's the plus sign here.
+- [00:42:44,800 - 00:42:47,800] Fermions are exactly the opposite.
+- [00:42:47,800 - 00:42:50,800] Fermions, this is also the Schrödinger wave function
+- [00:42:50,800 - 00:42:52,800] for two fermions,
+- [00:42:52,800 - 00:42:56,800] but for two fermions, you always get a minus sign.
+- [00:42:56,800 - 00:42:59,300] That's the anti-symmetry of the
+- [00:42:59,300 - 00:43:01,800] wave function of two fermions.
+- [00:43:01,800 - 00:43:03,300] And it also says that if
+- [00:43:03,300 - 00:43:04,800] you try to put two fermions
+- [00:43:04,800 - 00:43:07,800] into the same state, you will always get zero,
+- [00:43:07,800 - 00:43:11,800] because if you have two fermions in the same state,
+- [00:43:11,800 - 00:43:13,800] that's a symmetric wave function,
+- [00:43:13,800 - 00:43:16,800] and the wave function for fermions must be anti-symmetric.
+- [00:43:16,800 - 00:43:18,800] So this minus sign recurs over and over,
+- [00:43:18,800 - 00:43:21,800] and it occurs in all sorts of contexts,
+- [00:43:21,800 - 00:43:24,800] wherever when you interchange two fermions,
+- [00:43:24,800 - 00:43:27,800] you get back exactly the same thing, of course,
+- [00:43:27,800 - 00:43:30,300] but with a minus sign
+- [00:43:30,300 - 00:43:32,800] in the quantum mechanical wave function.
+- [00:43:32,800 - 00:43:36,800] All right, the implication of that is that
+- [00:43:36,800 - 00:43:39,800] if you were to take
+- [00:43:39,800 - 00:43:42,800] this diagram and switch the fermions,
+- [00:43:42,800 - 00:43:45,800] you would get a minus sign
+- [00:43:45,800 - 00:43:48,800] relative to a diagram without switching.
+- [00:43:48,800 - 00:43:51,800] Well, a diagram without switching was positive,
+- [00:43:51,800 - 00:43:56,800] just because it was the product of two equal things.
+- [00:43:56,800 - 00:44:02,800] Switch them, and the diagram must be negative for fermions.
+- [00:44:02,800 - 00:44:05,800] For bosons, switching them does nothing,
+- [00:44:05,800 - 00:44:08,800] and it will remain positive.
+- [00:44:08,800 - 00:44:11,800] But when you switch the particles like that,
+- [00:44:11,800 - 00:44:13,800] what do you make?
+- [00:44:13,800 - 00:44:15,800] You simply make a one-loop
+- [00:44:15,800 - 00:44:17,800] diagram instead of a two-loop diagram.
+- [00:44:17,800 - 00:44:19,800] You can now trace this around,
+- [00:44:19,800 - 00:44:21,300] and it really is just a one-loop with
+- [00:44:21,300 - 00:44:22,800] a little bit of a twist in it.
+- [00:44:22,800 - 00:44:25,800] It's just a one-loop diagram.
+- [00:44:25,800 - 00:44:27,800] And so the net result
+- [00:44:27,800 - 00:44:29,800] is a one-loop diagram for fermions
+- [00:44:29,800 - 00:44:31,800] will have the opposite sign
+- [00:44:31,800 - 00:44:33,800] from a one-loop diagram for bosons.
+- [00:44:33,800 - 00:44:35,800] And this is very general.
+- [00:44:35,800 - 00:44:38,800] The one-loop diagram for bosons is positive.
+- [00:44:38,800 - 00:44:41,800] The one-loop diagram for fermions is typically negative.
+- [00:44:41,800 - 00:44:43,800] All right, as an example,
+- [00:44:43,800 - 00:44:46,300] there would be this diagram which is
+- [00:44:46,300 - 00:44:48,800] correcting the mass of the Higgs boson.
+- [00:44:48,800 - 00:44:51,800] This could be the Higgs boson, for example.
+- [00:44:51,800 - 00:44:54,800] Higgs boson.
+- [00:44:54,800 - 00:44:56,800] It's positive, and it's lambda,
+- [00:44:56,800 - 00:45:00,800] where lambda is the quartic coupling here.
+- [00:45:00,800 - 00:45:02,300] Where is it? I think
+- [00:45:02,300 - 00:45:03,800] I've erased it from the Lagrangian.
+- [00:45:03,800 - 00:45:05,800] The quartic coupling is the lambda,
+- [00:45:05,800 - 00:45:08,800] plus lambda times the tetrachrome.
+- [00:45:08,800 - 00:45:10,800] What's actually happening there is
+- [00:45:10,800 - 00:45:12,800] there's onlyודה possible,
+- [00:45:12,800 - 00:45:14,800] let's get this wiederum,
+- [00:45:14,800 - 00:45:15,800] alright?
+- [00:45:15,800 - 00:45:17,800] We've drawn it in 3D.
+- [00:45:17,800 - 00:45:19,800] ds,
+- [00:45:19,800 - 00:45:21,800] and we've got delta suppose
+- [00:45:21,800 - 00:45:27,280] delta !
+- [00:45:27,280 - 00:45:28,800] 3D is precalculating,
+- [00:45:28,800 - 00:45:30,560] bukan delta.
+- [00:45:30,560 - 00:45:33,800] This exercise calls for achiedol Sol.
+- [00:45:33,800 - 00:45:34,800] This just gives us,
+- [00:45:34,800 - 00:45:38,800] are drawn with dotted lines and fermions with solid lines
+- [00:45:39,560 - 00:45:41,560] Is there a diagram
+- [00:45:42,560 - 00:45:46,560] that could possibly cancel this involving fermions?
+- [00:45:47,560 - 00:45:49,930] So let's draw a diagram, the
+- [00:45:49,930 - 00:45:52,300] simplest diagram we can write down
+- [00:45:52,300 - 00:45:54,300] in which the
+- [00:45:55,560 - 00:45:57,560] Higgs boson, whatever it is
+- [00:46:00,300 - 00:46:04,300] emits two fermions, it can't emit one fermion
+- [00:46:04,800 - 00:46:07,550] You can't have a boson becoming one fermion,
+- [00:46:07,550 - 00:46:10,300] it must become an even number of fermions
+- [00:46:10,800 - 00:46:14,050] So let's take the boson, it emits two
+- [00:46:14,050 - 00:46:17,300] fermions, and the two fermions come back together again
+- [00:46:17,800 - 00:46:20,300] It looks quite different than this diagram
+- [00:46:22,300 - 00:46:25,050] But let's estimate it, let's estimate it
+- [00:46:25,050 - 00:46:27,800] by the same kind of dimensional arguments
+- [00:46:28,800 - 00:46:31,300] First of all, there's some coupling
+- [00:46:31,300 - 00:46:33,800] constant, let's call that coupling constant G
+- [00:46:34,800 - 00:46:36,800] There's another coupling constant G here
+- [00:46:37,800 - 00:46:41,800] This coupling constant is not the same as lambda
+- [00:46:42,300 - 00:46:45,800] In fact, it's the coupling which involves the
+- [00:46:45,800 - 00:46:49,300] boson times the product of two fermion fields
+- [00:46:49,800 - 00:46:54,300] So it's a terminal Lagrangian, psi bar psi times phi
+- [00:46:54,800 - 00:46:56,800] There's phi and psi bar psi
+- [00:46:57,800 - 00:46:59,800] Or if it's the Higgs boson, it would
+- [00:46:59,800 - 00:47:01,800] be the Higgs boson coupled to two fermions
+- [00:47:01,800 - 00:47:04,300] The fermions could be quarks, they could
+- [00:47:04,300 - 00:47:06,800] be leptons, they could be whatever you like
+- [00:47:07,800 - 00:47:10,800] Let's take the case, well, whatever they happen to be
+- [00:47:11,800 - 00:47:14,800] We'll discuss what particles could be there in a moment
+- [00:47:14,800 - 00:47:17,800] Or maybe we'll get to it, I guess we won't
+- [00:47:18,800 - 00:47:20,800] How do we calculate this diagram?
+- [00:47:21,800 - 00:47:25,800] Well, first of all, this diagram involves two points
+- [00:47:26,800 - 00:47:28,800] This diagram only involved one point
+- [00:47:28,800 - 00:47:31,300] Now, strictly speaking, this point
+- [00:47:31,300 - 00:47:33,800] could have been anywhere in space
+- [00:47:34,800 - 00:47:37,300] So strictly speaking, we really have an
+- [00:47:37,300 - 00:47:39,800] integral to do over all of space
+- [00:47:40,800 - 00:47:41,800] But that integral is trivial
+- [00:47:42,800 - 00:47:44,300] It just says that the
+- [00:47:44,300 - 00:47:45,800] process could happen anywhere in space
+- [00:47:46,800 - 00:47:48,800] Let's pick a point where the process happens
+- [00:47:49,800 - 00:47:51,800] And then there's no integral left
+- [00:47:52,800 - 00:47:53,800] It's particle absorbed at this
+- [00:47:53,800 - 00:47:54,800] point, emitted from that point
+- [00:47:55,800 - 00:47:56,800] Now here is more complicated
+- [00:47:56,800 - 00:47:58,800] The particle is absorbed at one
+- [00:47:58,800 - 00:48:00,800] point and emitted from another point
+- [00:48:01,800 - 00:48:03,800] But if these points are very close
+- [00:48:03,800 - 00:48:05,800] together, it looks an awful lot like this
+- [00:48:06,800 - 00:48:08,800] What do we do with this diagram?
+- [00:48:09,800 - 00:48:12,300] Well, we could, for example, hold
+- [00:48:12,300 - 00:48:14,800] the center, the average position fixed
+- [00:48:15,800 - 00:48:17,300] Just as we hold the position here fixed
+- [00:48:17,300 - 00:48:18,800] and don't integrate it over all of space
+- [00:48:19,800 - 00:48:21,800] We could hold the average position fixed
+- [00:48:22,800 - 00:48:24,800] Or even better, we could just, even easier
+- [00:48:24,800 - 00:48:26,800] We can hold one point fixed
+- [00:48:27,800 - 00:48:30,300] But then we have to integrate or sum over
+- [00:48:30,300 - 00:48:32,800] all the places where the other point could be
+- [00:48:33,800 - 00:48:36,800] So this would be the amplitude for a particle to
+- [00:48:36,800 - 00:48:39,800] be absorbed at a position and re-emitted from a nearby position
+- [00:48:41,800 - 00:48:43,300] So we're eventually going to
+- [00:48:43,300 - 00:48:44,800] have to integrate over that point
+- [00:48:45,800 - 00:48:48,800] Or you can integrate over the separation between the points
+- [00:48:49,800 - 00:48:50,800] Holding the average position fixed
+- [00:48:51,800 - 00:48:52,800] Either way, it doesn't matter
+- [00:48:53,800 - 00:48:54,800] What is this going to give?
+- [00:48:55,800 - 00:48:57,800] Well, we know what the propagators are
+- [00:48:58,800 - 00:48:59,800] The propagators are 1 over delta cubed
+- [00:49:00,800 - 00:49:02,800] These are fermions now going in the loop
+- [00:49:03,800 - 00:49:06,800] So each propagator is of
+- [00:49:06,800 - 00:49:09,800] the form 1 over delta cubed
+- [00:49:10,800 - 00:49:12,800] There are two of them, 1 over delta cubed
+- [00:49:13,800 - 00:49:17,800] So, as a Feynman diagram, this is going to
+- [00:49:17,800 - 00:49:21,800] be proportional to 1 divided by delta to the sixth
+- [00:49:21,800 - 00:49:24,800] But wait, we still have
+- [00:49:24,800 - 00:49:27,800] to integrate holding this point fixed
+- [00:49:28,800 - 00:49:29,800] Integrate over this point
+- [00:49:30,800 - 00:49:34,800] That's an integral d4 delta
+- [00:49:36,800 - 00:49:38,800] Integral d4 delta
+- [00:49:39,800 - 00:49:40,800] What else did I leave out?
+- [00:49:40,800 - 00:49:43,800] I left out the coupling constants, g squared
+- [00:49:44,800 - 00:49:45,800] And one more thing I left out
+- [00:49:45,800 - 00:49:47,800] What's the last thing I left out?
+- [00:49:47,800 - 00:49:51,800] Minus sign
+- [00:49:52,800 - 00:49:53,800] It's a loop of fermions
+- [00:49:54,800 - 00:49:55,800] It's a loop of fermions,
+- [00:49:55,800 - 00:49:56,800] so it gets a minus sign
+- [00:49:57,800 - 00:50:00,800] Now, how big is this integral?
+- [00:50:01,800 - 00:50:02,800] Well, where do you integrate between?
+- [00:50:03,800 - 00:50:06,800] You integrate from very small
+- [00:50:06,800 - 00:50:09,800] distances, namely little delta, to infinity
+- [00:50:10,800 - 00:50:13,300] This point could be far away, but it can't,
+- [00:50:13,300 - 00:50:15,800] it's not allowed to be closer than the cutoff distance
+- [00:50:15,800 - 00:50:19,300] So, this is an integral which
+- [00:50:19,300 - 00:50:22,800] goes from small distances delta to infinity
+- [00:50:22,800 - 00:50:23,800] For each one of the coordinates
+- [00:50:23,800 - 00:50:25,800] How big is this integral?
+- [00:50:26,800 - 00:50:29,300] Well, one way to calculate it
+- [00:50:29,300 - 00:50:31,800] is, again, just use dimensional analysis
+- [00:50:32,800 - 00:50:34,800] There's no length scale in this problem
+- [00:50:34,800 - 00:50:36,800] It's an integral over lengths
+- [00:50:36,800 - 00:50:38,300] So there's no length in the problem
+- [00:50:38,300 - 00:50:39,800] other than the thing that you're integrating over
+- [00:50:40,800 - 00:50:42,800] Oh, and of course the cutoff length
+- [00:50:43,800 - 00:50:44,800] This integral has dimensions
+- [00:50:45,800 - 00:50:47,800] Four powers of delta upstairs,
+- [00:50:47,800 - 00:50:49,800] six powers of delta downstairs
+- [00:50:49,800 - 00:50:51,800] That means it has a
+- [00:50:51,800 - 00:50:53,800] dimension of one over length squared
+- [00:50:54,800 - 00:50:57,300] And the only possible answer is
+- [00:50:57,300 - 00:50:59,800] one divided by little delta squared
+- [00:51:00,800 - 00:51:03,800] So, just on dimensional grounds alone, this
+- [00:51:03,800 - 00:51:06,800] is going to be minus g squared
+- [00:51:06,800 - 00:51:08,800] Doesn't this change the sign?
+- [00:51:08,800 - 00:51:09,800] What?
+- [00:51:10,800 - 00:51:13,800] Oh, this is not literally an integral from
+- [00:51:13,800 - 00:51:14,800] There are four integrals here
+- [00:51:14,800 - 00:51:15,800] There are four integrals here
+- [00:51:15,800 - 00:51:17,800] You could say each one from delta to infinity
+- [00:51:17,800 - 00:51:19,800] Four sign changes, if you like
+- [00:51:19,800 - 00:51:21,800] So no sign change
+- [00:51:21,800 - 00:51:23,800] For each component
+- [00:51:23,800 - 00:51:25,800] For each component, yeah
+- [00:51:25,800 - 00:51:27,300] You can imagine integrating each component of
+- [00:51:27,300 - 00:51:28,800] delta from some small distance to infinity
+- [00:51:28,800 - 00:51:31,300] And, no, there's no sign, no,
+- [00:51:31,300 - 00:51:33,800] in fact there's no sign change
+- [00:51:33,800 - 00:51:35,800] But the integrand is positive
+- [00:51:35,800 - 00:51:37,800] Notice that the integrand is positive
+- [00:51:37,800 - 00:51:38,800] There's no way that you can
+- [00:51:38,800 - 00:51:39,800] get anything but a positive sign
+- [00:51:39,800 - 00:51:41,800] So, you can't get anything but a positive sign
+- [00:51:41,800 - 00:51:43,800] So, you can't get anything but a positive sign
+- [00:51:43,800 - 00:51:45,800] You can't get anything but a positive answer
+- [00:51:45,800 - 00:51:47,800] Times the minus sign
+- [00:51:47,800 - 00:51:49,800] So, this is going to
+- [00:51:49,800 - 00:51:51,800] be g squared over delta squared
+- [00:51:51,800 - 00:51:53,800] What did you ask for g?
+- [00:51:54,800 - 00:51:57,800] Ah, this g is dimensionless
+- [00:51:57,800 - 00:52:00,800] Okay, let's, alright, let's check that
+- [00:52:00,800 - 00:52:02,800] Let's check that
+- [00:52:02,800 - 00:52:05,800] Let's check the dimensions of g
+- [00:52:05,800 - 00:52:08,800] What we've put here is g
+- [00:52:10,800 - 00:52:12,800] Phi, that's the scalar field
+- [00:52:12,800 - 00:52:14,800] Times psi bar psi
+- [00:52:19,800 - 00:52:22,300] That's two fermions and a boson, or
+- [00:52:22,300 - 00:52:24,800] a scalar boson at the same point
+- [00:52:24,800 - 00:52:26,300] Alright, let's check what the
+- [00:52:26,300 - 00:52:27,800] dimension of g has to be
+- [00:52:27,800 - 00:52:30,800] This has units of one over length
+- [00:52:30,800 - 00:52:34,800] This has units of one over length cubed
+- [00:52:34,800 - 00:52:36,800] The product of these three has units
+- [00:52:36,800 - 00:52:38,800] of one over length to the fourth
+- [00:52:38,800 - 00:52:41,800] Times d4x makes it dimensionless
+- [00:52:41,800 - 00:52:45,800] So, g here had better be dimensionless
+- [00:52:45,800 - 00:52:46,800] Okay
+- [00:52:46,800 - 00:52:48,800] Yukawa, this is a form of Yukawa coupling
+- [00:52:48,800 - 00:52:50,800] A coupling between the Higgs
+- [00:52:50,800 - 00:52:52,800] boson, for example, and two fermions
+- [00:52:52,800 - 00:52:55,800] So, these couplings are also dimensionless
+- [00:52:55,800 - 00:52:57,800] g is also dimensionless
+- [00:52:57,800 - 00:52:59,800] And the answer is again some
+- [00:52:59,800 - 00:53:01,800] kind of combination of coupling constants
+- [00:53:01,800 - 00:53:03,800] Divided by delta squared
+- [00:53:03,800 - 00:53:06,800] Times the minus sign
+- [00:53:06,800 - 00:53:10,800] So, we're going to get minus g squared
+- [00:53:10,800 - 00:53:13,800] G squared over delta squared
+- [00:53:13,800 - 00:53:15,800] Now, in a certain sense, it
+- [00:53:15,800 - 00:53:17,800] doesn't look like we've made much progress
+- [00:53:17,800 - 00:53:21,800] We have a number here times one over delta squared
+- [00:53:21,800 - 00:53:24,300] At least we have, at minimum, we
+- [00:53:24,300 - 00:53:26,800] have a potential source of a minus sign
+- [00:53:26,800 - 00:53:28,800] To cancel the plus sign
+- [00:53:28,800 - 00:53:31,800] But, you would think it would be an extraordinary miracle
+- [00:53:31,800 - 00:53:35,800] If nature chose to make g squared, this
+- [00:53:35,800 - 00:53:39,800] coupling constant, exactly equal to this coupling constant here
+- [00:53:40,800 - 00:53:42,800] That would require something special
+- [00:53:42,800 - 00:53:45,800] It would require some mathematical structure
+- [00:53:45,800 - 00:53:48,300] Which would tell you some
+- [00:53:48,300 - 00:53:50,800] symmetry or some other mathematical reason
+- [00:53:50,800 - 00:53:54,800] To say, choose g squared equal to lambda
+- [00:53:54,800 - 00:53:56,800] That's supersymmetry
+- [00:53:56,800 - 00:53:59,300] That's exactly what's the sort of thing
+- [00:53:59,300 - 00:54:01,800] that supersymmetry does over and over again
+- [00:54:01,800 - 00:54:05,800] It restricts the coupling constants to combinations
+- [00:54:05,800 - 00:54:07,800] And it turns out that those
+- [00:54:07,800 - 00:54:09,800] combinations are exactly the right combinations
+- [00:54:09,800 - 00:54:12,800] To get rid of these nasty divergent integrals
+- [00:54:12,800 - 00:54:15,800] Or many of the nasty divergent integrals
+- [00:54:15,800 - 00:54:19,800] Next time, we'll discuss supersymmetry itself
+- [00:54:19,800 - 00:54:21,800] Which is a symmetry principle
+- [00:54:21,800 - 00:54:24,800] Which is mathematically very potent
+- [00:54:24,800 - 00:54:28,800] And it tells you such things as
+- [00:54:28,800 - 00:54:31,800] The masses of fermions must match exactly
+- [00:54:31,800 - 00:54:33,800] Notice something interesting
+- [00:54:33,800 - 00:54:36,800] The cancellation would be incomplete
+- [00:54:36,800 - 00:54:39,800] If the fermion and boson had different masses
+- [00:54:39,800 - 00:54:40,800] Why?
+- [00:54:40,800 - 00:54:43,800] Because the propagators wouldn't be exactly the same
+- [00:54:43,800 - 00:54:47,800] In that case, the cancellation would be incomplete
+- [00:54:47,800 - 00:54:50,800] But as long as the propagators were sufficiently similar
+- [00:54:50,800 - 00:54:53,800] Or sufficiently close to what I've written here
+- [00:54:53,800 - 00:54:55,800] At small distances
+- [00:54:55,800 - 00:54:57,800] It would get rid of the infinity
+- [00:54:57,800 - 00:54:59,800] So if the fermion and
+- [00:54:59,800 - 00:55:01,800] boson didn't have the same masses
+- [00:55:01,800 - 00:55:03,800] Slightly different
+- [00:55:03,800 - 00:55:07,800] What might have cancelled wouldn't exactly cancel
+- [00:55:07,800 - 00:55:09,800] But
+- [00:55:09,800 - 00:55:11,800] The divergent part of it would cancel
+- [00:55:11,800 - 00:55:13,800] So that's the kind of thing that supersymmetry
+- [00:55:13,800 - 00:55:15,800] Or approximate supersymmetry does
+- [00:55:15,800 - 00:55:17,800] We'll discuss next time the mathma-
+- [00:55:17,800 - 00:55:20,800] A little bit about the mathematics of supersymmetry
+- [00:55:20,800 - 00:55:25,800] It's a very very abstract kind of thing
+- [00:55:25,800 - 00:55:27,800] And I will show you
+- [00:55:27,800 - 00:55:29,800] some examples of how supersymmetry operates
+- [00:55:29,800 - 00:55:35,800] To always take care of these nasty fine tuning problems
+- [00:55:35,800 - 00:55:38,800] Alright, let's go to the
+- [00:55:39,800 - 00:55:41,800] Hofstadter lecture
+- [00:55:41,800 - 00:55:46,800] For more, please visit us at stanford.edu
