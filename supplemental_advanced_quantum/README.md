@@ -38,7 +38,7 @@ The current top-level PDFs in this folder are the formal artifacts readers shoul
 ## Credits
 
 - Original lecture content: Leonard Susskind
-- Transcript-derived note curation and packaging in this repository: LazyingArt LLC
+- Transcript-derived note curation and packaging in this repository: [LazyingArt LLC](https://lazying.art)
 
 ## Local Workspace Notes
 
