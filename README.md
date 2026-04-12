@@ -39,21 +39,72 @@ The main transcript and subtitle archive in this repository is derived from this
 
 - <https://www.youtube.com/playlist?list=PLERGeJGfknBTR_nXt5QL88xJF5LhDZBnG>
 
-## 🗂️ Canonical Paths
+## 🗂️ Repo Layout
 
-| 📚 Layer | 📍 Canonical path | 🧾 What it contains |
-|---|---|---|
-| Hand-maintained course folders | `core_*`, `supplemental_*` | Existing PDFs, READMEs, and selected LaTeX sources |
-| Subtitles | `subtitles/<track>/<subject>/<run>/` | Lecture `.srt` files |
-| Markdown transcripts | `markdown/<track>/<subject>/<run>/` | Timestamped lecture transcripts |
-| Generated lecture note sources | `generated_course_notes/<track>/<subject>/<run>/chapters/lecture_XX/` | `content.tex`, `lecture.tex`, analysis files, figure notes, and chapter build inputs |
-| Generated lecture PDFs | `generated_course_notes/<track>/<subject>/<run>/chapters/lecture_XX/lecture.pdf` | One compiled PDF per lecture |
-| Generated merged course PDFs | `generated_course_notes/<track>/<subject>/<run>/course.pdf` | One compiled PDF for the full course run |
-| Canonical published Advanced Quantum PDFs | `supplemental_advanced_quantum/course.pdf` and `supplemental_advanced_quantum/lecture_*.pdf` | Reader-facing published artifacts for that track |
-| Legacy chapter-10 cosmology build artifacts | `core_cosmology/cosmology_ch10/artifacts/` | PDF and LaTeX build outputs for the older chapter-10 subproject |
-| Companion note import | `theoretical_minimum_companion_notes/` | Imported TeX companion notes derived from `weka511/tm` |
-| Theoretical Minimum submodule | `the_theoretical_minimum/` | Separate submodule checkout for related material |
-| Templates | `template/kaobook/`, `template/tuftle/` | Reusable LaTeX scaffolding |
+<table>
+  <colgroup>
+    <col style="width: 33%">
+    <col style="width: 33%">
+    <col style="width: 34%">
+  </colgroup>
+  <thead>
+    <tr>
+      <th>📚 Layer</th>
+      <th>📍 Main path</th>
+      <th>🧾 What it contains</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Hand-maintained course folders</td>
+      <td><code>core_*</code>, <code>supplemental_*</code></td>
+      <td>Reader-facing course folders, published PDFs, READMEs, and selected LaTeX sources.</td>
+    </tr>
+    <tr>
+      <td>Subtitles</td>
+      <td><code>subtitles/</code></td>
+      <td>Lecture subtitle files in <code>.srt</code> format.</td>
+    </tr>
+    <tr>
+      <td>Markdown transcripts</td>
+      <td><code>markdown/</code></td>
+      <td>Timestamped lecture transcripts used for reading, search, and note generation.</td>
+    </tr>
+    <tr>
+      <td>Generated note sources</td>
+      <td><code>generated_course_notes/</code></td>
+      <td>Transcript-derived TeX chapters, figures, prompts, and course build material.</td>
+    </tr>
+    <tr>
+      <td>Published generated PDFs</td>
+      <td><code>supplemental_advanced_quantum/</code></td>
+      <td>Canonical published outputs for finished generated courses, including lecture PDFs and a merged course PDF.</td>
+    </tr>
+    <tr>
+      <td>Legacy build artifacts</td>
+      <td><code>core_cosmology/cosmology_ch10/artifacts/</code></td>
+      <td>Build outputs kept for the older chapter-10 cosmology subproject.</td>
+    </tr>
+    <tr>
+      <td>Companion notes</td>
+      <td><code>theoretical_minimum_companion_notes/</code></td>
+      <td>Imported TeX companion notes derived from the <code>weka511/tm</code> project.</td>
+    </tr>
+    <tr>
+      <td>Templates and shared material</td>
+      <td><code>template/</code>, <code>figs/</code>, <code>the_theoretical_minimum/</code></td>
+      <td>LaTeX templates, shared branding/assets, and the related submodule checkout.</td>
+    </tr>
+  </tbody>
+</table>
+
+Inside `subtitles/`, `markdown/`, and `generated_course_notes/`, the archive is grouped in a human way: first `core/` or `supplementary/`, then the subject, then the specific course run.
+
+For generated notes, each course folder usually contains:
+
+- `chapters/` for lecture-by-lecture TeX and per-lecture PDFs
+- `figures/` for extracted lecture frames and figure assets
+- `course.tex` and `course.pdf` for the merged full-course book
 
 ## 🧭 Root Course Folders
 
@@ -77,20 +128,20 @@ Open the PDFs in the relevant course folder, for example:
 
 For the same lecture archive, use:
 
-- `subtitles/.../*.srt` for subtitle-style reading and timestamp fidelity
-- `markdown/.../*.md` for text review, searching, and note generation
+- `subtitles/` for subtitle-style reading and timestamp fidelity
+- `markdown/` for text review, searching, and note generation
 
 ### 🧪 Work on transcript-derived notes
 
-The generated-note tree lives under:
+The generated-note workspace lives under:
 
-- `generated_course_notes/<track>/<subject>/<run>/`
+- `generated_course_notes/`
 
-Typical generated outputs include:
+Within each course run:
 
-- chapter TeX in `chapters/lecture_XX/content.tex`
-- lecture PDF in `chapters/lecture_XX/lecture.pdf`
-- merged course PDF in `course.pdf`
+- `chapters/` holds one folder per lecture
+- each lecture folder contains the chapter TeX and its compiled lecture PDF
+- `course.pdf` is the merged full-course PDF for that run
 
 ### 📚 Work on imported companion notes
 
