@@ -1,0 +1,2259 @@
+# Transcript
+
+Source: supplementary/particle_physics_1_basic_concepts/2009_fall/084 - Lecture 10 ｜ New Revolutions in Particle Physics： Basic Concepts [q-QaaKCvDUs].mp4
+
+- [00:00:00,000 - 00:00:07,000] Stanford University
+- [00:00:07,000 - 00:00:16,000] Last time I started to tell you something about how quantum field theory gives
+- [00:00:16,000 - 00:00:25,000] rise to a theory of the particle interactions through an object called the Lagrangian.
+- [00:00:25,000 - 00:00:32,500] I think that was not terribly clear, so I want to go back
+- [00:00:32,500 - 00:00:40,000] to it a little bit before starting to discuss the details of particle physics.
+- [00:00:40,000 - 00:00:43,000] We're still thinking about quantum field theory.
+- [00:00:43,000 - 00:00:47,500] The basic technique that I was alluding to last
+- [00:00:47,500 - 00:00:52,000] time is called the path integral method of quantum mechanics.
+- [00:00:52,000 - 00:00:54,000] And it is the...
+- [00:00:55,000 - 00:00:59,500] most direct route to Feynman diagrams, to the theory
+- [00:00:59,500 - 00:01:04,000] of particle interactions that are based on Feynman diagrams.
+- [00:01:04,000 - 00:01:10,500] So, let me just try to briefly go through the basic ideas, which
+- [00:01:10,500 - 00:01:17,000] we started to do last time, but I don't think I was sufficiently clear.
+- [00:01:17,000 - 00:01:21,000] Anyway, the path integral formalism or
+- [00:01:21,000 - 00:01:25,000] method in quantum mechanics due to Feynman,
+- [00:01:25,000 - 00:01:28,500] is a generalization, is the quantum mechanical
+- [00:01:28,500 - 00:01:32,000] version of the principle of least action.
+- [00:01:32,000 - 00:01:34,500] So I just want to remind you
+- [00:01:34,500 - 00:01:37,000] what the principle of least action is.
+- [00:01:37,000 - 00:01:40,000] If we're talking about a particle, now I don't mean a
+- [00:01:40,000 - 00:01:43,000] particle from the particle physics quantum field theory point of view,
+- [00:01:43,000 - 00:01:48,000] just a classical Newtonian particle, the motion of a classical Newtonian
+- [00:01:48,000 - 00:01:53,000] particle from one point of space-time to another, just very quickly,
+- [00:01:53,000 - 00:01:54,000] is determined by a Lagrangian.
+- [00:01:54,000 - 00:01:55,000] Okay.
+- [00:01:55,000 - 00:01:58,500] Lagrangian is a function of the coordinates of
+- [00:01:58,500 - 00:02:02,000] the particle, the time derivatives of the particle,
+- [00:02:02,000 - 00:02:05,500] and from the Lagrangian, whatever the
+- [00:02:05,500 - 00:02:09,000] Lagrangian is, one constructs the action.
+- [00:02:09,000 - 00:02:12,000] And the action is an integral along
+- [00:02:12,000 - 00:02:15,000] the trajectory of the particle of the Lagrangian.
+- [00:02:15,000 - 00:02:18,500] For every trajectory, whether it's the true trajectory
+- [00:02:18,500 - 00:02:22,000] or not the true trajectory from here to here,
+- [00:02:22,000 - 00:02:24,000] by the true trajectory, I mean,
+- [00:02:24,000 - 00:02:28,000] the solution of Newton's equations,
+- [00:02:28,000 - 00:02:32,000] from one space-time point to another space-time point,
+- [00:02:32,000 - 00:02:36,000] whether or not the trajectory is a solution,
+- [00:02:36,000 - 00:02:38,500] it has an action, the integral
+- [00:02:38,500 - 00:02:41,000] of the Lagrangian along the orbit.
+- [00:02:41,000 - 00:02:46,500] The classical principle of least action is that the
+- [00:02:46,500 - 00:02:52,000] trajectory followed by the particle through space-time minimizes the action.
+- [00:02:52,000 - 00:02:53,000] Right.
+- [00:02:53,000 - 00:02:56,000] From that, you can derive differential equations,
+- [00:02:56,000 - 00:02:57,500] and those differential equations
+- [00:02:57,500 - 00:02:59,000] are called Newton's equations,
+- [00:02:59,000 - 00:03:03,000] and I will assume that you know
+- [00:03:03,000 - 00:03:07,000] a little bit about this idea of action.
+- [00:03:07,000 - 00:03:12,000] Now, the same idea applies to classical field theory.
+- [00:03:12,000 - 00:03:15,500] And the way the idea works is
+- [00:03:15,500 - 00:03:19,000] for a particle, for an ordinary particle motion,
+- [00:03:19,000 - 00:03:22,000] the Lagrangian is a function along an orbit,
+- [00:03:22,000 - 00:03:24,000] a function of an orbit.
+- [00:03:24,000 - 00:03:26,000] For a field theory,
+- [00:03:26,000 - 00:03:28,500] and of course it's an orbit which
+- [00:03:28,500 - 00:03:31,000] connects some initial configuration to a final configuration,
+- [00:03:31,000 - 00:03:33,000] for a field theory,
+- [00:03:33,000 - 00:03:35,000] the equations of motion of a
+- [00:03:35,000 - 00:03:37,000] field theory, classical equations of motion,
+- [00:03:37,000 - 00:03:40,000] are also determined from a Lagrangian.
+- [00:03:40,000 - 00:03:47,000] The Lagrangian is a function of whatever fields,
+- [00:03:47,000 - 00:03:50,000] I'll call them generically just phi,
+- [00:03:50,000 - 00:03:54,000] and not just the time derivatives of the fields,
+- [00:03:54,000 - 00:03:58,000] but the space derivatives and the time derivatives.
+- [00:03:58,000 - 00:04:03,000] Let's say derivative of phi with respect to x mu.
+- [00:04:03,000 - 00:04:06,500] That's just a shorthand way of saying that
+- [00:04:06,500 - 00:04:10,000] the Lagrangian depends on phi and derivatives of phi.
+- [00:04:10,000 - 00:04:13,500] One thing which is required by the theory
+- [00:04:13,500 - 00:04:17,000] of relativity is that the Lagrangian be a scalar.
+- [00:04:17,000 - 00:04:19,000] That a transform under Lorentz transformations is a scalar.
+- [00:04:19,000 - 00:04:21,000] But that being said,
+- [00:04:21,000 - 00:04:23,500] the Lagrangian can be anything built
+- [00:04:23,500 - 00:04:26,000] out of phi's and derivatives of phi.
+- [00:04:26,000 - 00:04:29,000] What is the action?
+- [00:04:29,000 - 00:04:33,000] Imagine we have a region of space-time,
+- [00:04:33,000 - 00:04:35,000] time as usual flows upward,
+- [00:04:35,000 - 00:04:37,000] space is horizontal,
+- [00:04:37,000 - 00:04:40,500] and we have a region of space-time
+- [00:04:40,500 - 00:04:44,000] between an initial time and a final time.
+- [00:04:44,000 - 00:04:47,000] Then the action is the Lagrangian.
+- [00:04:47,000 - 00:04:50,000] Then the action in this region,
+- [00:04:50,000 - 00:04:52,000] the action is the action in this region,
+- [00:04:52,000 - 00:04:54,500] just as the action for a particle trajectory is the
+- [00:04:54,500 - 00:04:57,000] action from one end point of the trajectory to another,
+- [00:04:57,000 - 00:05:00,500] here is the action in a region of
+- [00:05:00,500 - 00:05:04,000] space between an initial configuration and a final configuration,
+- [00:05:04,000 - 00:05:06,500] and the action is equal
+- [00:05:06,500 - 00:05:09,000] to the integral over that region,
+- [00:05:09,000 - 00:05:11,500] let's write it d4x, which means the
+- [00:05:11,500 - 00:05:14,000] time and dx and dy and dz,
+- [00:05:14,000 - 00:05:16,000] of this Lagrangian.
+- [00:05:17,000 - 00:05:20,000] So it's the total integrated value
+- [00:05:20,000 - 00:05:23,000] of the Lagrangian over space and time,
+- [00:05:23,000 - 00:05:26,000] whereas for the particle it's just an integral over time.
+- [00:05:26,000 - 00:05:28,000] Now what do you do?
+- [00:05:28,000 - 00:05:32,000] What's the analog of a starting point for the particle?
+- [00:05:32,000 - 00:05:37,000] A value of the field on the initial surface here.
+- [00:05:37,000 - 00:05:39,000] Given not just one field, but
+- [00:05:39,000 - 00:05:41,000] all the fields in the problem,
+- [00:05:41,000 - 00:05:43,000] prescribing the values of the
+- [00:05:43,000 - 00:05:45,000] field on the initial surface here,
+- [00:05:45,000 - 00:05:46,000] and prescribing the values of the
+- [00:05:46,000 - 00:05:47,000] field on the initial surface here,
+- [00:05:47,000 - 00:05:49,000] and the values of the fields on the final surface,
+- [00:05:49,000 - 00:05:51,000] you can ask, is there
+- [00:05:51,000 - 00:05:53,000] a solution of the equations of,
+- [00:05:53,000 - 00:05:56,000] oh, let me go back a step, forget that.
+- [00:05:56,000 - 00:05:59,500] Yes, is there a solution of
+- [00:05:59,500 - 00:06:03,000] whatever the equations of the theory are,
+- [00:06:03,000 - 00:06:06,000] which starts with a given initial value of
+- [00:06:06,000 - 00:06:09,000] the fields at time t equals zero, let's say,
+- [00:06:09,000 - 00:06:11,000] and ends with the fields being
+- [00:06:11,000 - 00:06:13,000] something different at some later time?
+- [00:06:13,000 - 00:06:17,000] And the answer is the principle of least action again.
+- [00:06:17,000 - 00:06:20,000] The equations of the theory are formulated by saying,
+- [00:06:20,000 - 00:06:26,000] yes, there always does exist something in between,
+- [00:06:26,000 - 00:06:29,000] which is a correct solution of the theory,
+- [00:06:29,000 - 00:06:32,000] which has a given initial value of the fields here,
+- [00:06:32,000 - 00:06:36,000] and a given value of the fields at the endpoint,
+- [00:06:36,000 - 00:06:39,000] and the correct solution of the fields in
+- [00:06:39,000 - 00:06:42,000] here is the one which minimizes this action.
+- [00:06:42,000 - 00:06:44,000] The one which minimizes the action.
+- [00:06:44,000 - 00:06:47,000] So the principle of least action gets extended,
+- [00:06:47,000 - 00:06:51,000] to a kind of space-time principle of least action,
+- [00:06:51,000 - 00:06:55,000] where the degrees of freedom in here are fields.
+- [00:06:55,000 - 00:06:59,000] Okay, now let me very quickly remind you
+- [00:06:59,000 - 00:07:03,000] what the quantum mechanical use of action is.
+- [00:07:03,000 - 00:07:05,000] How exactly you derive the
+- [00:07:05,000 - 00:07:07,000] classical principle of least action
+- [00:07:07,000 - 00:07:09,500] from the quantum mechanical version
+- [00:07:09,500 - 00:07:12,000] of Feynman's quantum mechanical version,
+- [00:07:12,000 - 00:07:14,000] we don't really need to get into here,
+- [00:07:14,000 - 00:07:15,000] you can go look it up,
+- [00:07:15,000 - 00:07:16,000] and anything about Peltz,
+- [00:07:16,000 - 00:07:18,000] anything about path integrals,
+- [00:07:18,000 - 00:07:20,000] but for a particle,
+- [00:07:20,000 - 00:07:23,000] let's come back to the particle motion for a moment.
+- [00:07:23,000 - 00:07:25,000] According to Feynman,
+- [00:07:25,000 - 00:07:28,000] or according to quantum mechanics,
+- [00:07:28,000 - 00:07:31,000] a thing that you might
+- [00:07:31,000 - 00:07:34,000] want to calculate is the amplitude.
+- [00:07:34,000 - 00:07:37,000] Is there anything wrong with the
+- [00:07:37,000 - 00:07:40,000] value of a field returning to itself?
+- [00:07:40,000 - 00:07:42,000] No. No. No.
+- [00:07:42,000 - 00:07:44,000] No more than the possibility
+- [00:07:44,000 - 00:07:46,000] of the position of this thing.
+- [00:07:46,000 - 00:07:49,500] So how do you go from
+- [00:07:49,500 - 00:07:53,000] one space-time event to another space-time event?
+- [00:07:53,000 - 00:07:55,000] Why space-time events?
+- [00:07:55,000 - 00:07:56,500] We're having values of fields
+- [00:07:56,500 - 00:07:58,000] here and values of fields here.
+- [00:07:58,000 - 00:08:00,000] Well, integrating d4x,
+- [00:08:00,000 - 00:08:03,000] so there has to be some d4 trajectory.
+- [00:08:03,000 - 00:08:07,000] No, the trajectory is replaced by a history.
+- [00:08:07,000 - 00:08:08,500] A history of the field
+- [00:08:08,500 - 00:08:10,000] from the beginning to the end.
+- [00:08:10,000 - 00:08:12,500] A history means the values
+- [00:08:12,500 - 00:08:15,000] of the fields all along here.
+- [00:08:15,000 - 00:08:17,000] Everywhere is in here.
+- [00:08:17,000 - 00:08:18,000] Okay?
+- [00:08:18,000 - 00:08:21,000] The idea of a trajectory
+- [00:08:21,000 - 00:08:24,000] becomes a trajectory in field space,
+- [00:08:24,000 - 00:08:25,000] which means...
+- [00:08:25,000 - 00:08:29,000] We have to specify actually the
+- [00:08:29,000 - 00:08:33,000] coordinates as well as the field values
+- [00:08:33,000 - 00:08:35,000] to get an initial point.
+- [00:08:35,000 - 00:08:37,000] To get an initial point?
+- [00:08:37,000 - 00:08:40,000] Well, you're specifying the
+- [00:08:40,000 - 00:08:43,000] initial boundary condition or whatever
+- [00:08:43,000 - 00:08:44,000] as 4.
+- [00:08:44,000 - 00:08:46,000] As field values.
+- [00:08:46,000 - 00:08:49,000] Field values all along some initial surface.
+- [00:08:49,000 - 00:08:51,000] You pick the initial surface.
+- [00:08:51,000 - 00:08:53,000] In other words, you pick time...
+- [00:08:53,000 - 00:08:56,000] It's the whole field at some cross-sectional...
+- [00:08:56,000 - 00:08:59,000] It's the whole field along some cross-sectional...
+- [00:08:59,000 - 00:09:01,000] Yeah.
+- [00:09:01,000 - 00:09:02,000] All right?
+- [00:09:02,000 - 00:09:04,500] Which is another way of saying the
+- [00:09:04,500 - 00:09:07,000] whole field at a given instant of time.
+- [00:09:07,000 - 00:09:09,500] And the final configuration is
+- [00:09:09,500 - 00:09:12,000] the whole field at some later...
+- [00:09:12,000 - 00:09:15,000] Time.
+- [00:09:15,000 - 00:09:17,500] And the question is, is there a
+- [00:09:17,500 - 00:09:20,000] solution of the theory, whatever the theory is,
+- [00:09:20,000 - 00:09:23,500] which interpolates in between these in the same
+- [00:09:23,500 - 00:09:27,000] way that a trajectory interpolates from here to here?
+- [00:09:27,000 - 00:09:30,000] And the rule is, minimize the action.
+- [00:09:30,000 - 00:09:33,000] That, if carried out...
+- [00:09:33,000 - 00:09:37,000] We did this a number of classes ago.
+- [00:09:37,000 - 00:09:39,000] But if that's carried out,
+- [00:09:39,000 - 00:09:41,000] the requirement of minimizing the action...
+- [00:09:41,000 - 00:09:44,000] The requirement of minimizing the action leads
+- [00:09:44,000 - 00:09:47,000] to partial differential equations for the fields,
+- [00:09:47,000 - 00:09:49,500] and those partial differential equations
+- [00:09:49,500 - 00:09:52,000] are things like Maxwell's equations,
+- [00:09:52,000 - 00:09:57,000] things like Einstein's equations, and so forth.
+- [00:09:57,000 - 00:09:58,000] All right, so...
+- [00:09:58,000 - 00:09:59,500] All right, let's come back
+- [00:09:59,500 - 00:10:01,000] now to the quantum mechanical idea.
+- [00:10:01,000 - 00:10:05,000] The quantum mechanical idea has to do with amplitudes.
+- [00:10:05,000 - 00:10:07,000] Amplitudes are things out
+- [00:10:07,000 - 00:10:09,000] of which you construct probabilities.
+- [00:10:09,000 - 00:10:10,000] So, for example,
+- [00:10:10,000 - 00:10:11,000] you can ask the question,
+- [00:10:11,000 - 00:10:14,500] what is the amplitude that if
+- [00:10:14,500 - 00:10:18,000] a particle is injected into the world,
+- [00:10:18,000 - 00:10:20,000] however it's injected in,
+- [00:10:20,000 - 00:10:24,000] at a space-time point x and t,
+- [00:10:24,000 - 00:10:26,000] what is the amplitude that if I
+- [00:10:26,000 - 00:10:28,000] look for it at a later time,
+- [00:10:28,000 - 00:10:32,000] let's say this is at x and time t,
+- [00:10:32,000 - 00:10:33,500] what's the amplitude that if
+- [00:10:33,500 - 00:10:35,000] I look at a later time,
+- [00:10:35,000 - 00:10:37,000] let's call it t prime,
+- [00:10:37,000 - 00:10:38,500] that I will find it at
+- [00:10:38,500 - 00:10:40,000] position x prime and t prime?
+- [00:10:40,000 - 00:10:41,500] So it's the amplitude that if
+- [00:10:41,500 - 00:10:43,000] I start a particle at this point,
+- [00:10:43,000 - 00:10:45,000] close my eyes for a while,
+- [00:10:45,000 - 00:10:49,000] and then turn on a detector,
+- [00:10:49,000 - 00:10:52,000] which looks for the particle at a certain place,
+- [00:10:52,000 - 00:10:54,000] the amplitude for finding it there.
+- [00:10:54,000 - 00:10:57,000] That amplitude is a complex number
+- [00:10:57,000 - 00:11:01,000] that depends on the initial point, on the final point.
+- [00:11:01,000 - 00:11:04,000] It's a complex number whose
+- [00:11:04,000 - 00:11:07,000] magnitude squared is the probability.
+- [00:11:07,000 - 00:11:08,000] All right, that's the rule.
+- [00:11:08,000 - 00:11:09,000] Square the amplitude,
+- [00:11:10,000 - 00:11:14,000] or multiply it by its complex conjugate,
+- [00:11:14,000 - 00:11:17,000] and that is the probability for the
+- [00:11:17,000 - 00:11:20,000] particle to go from here to here.
+- [00:11:20,000 - 00:11:23,000] Feynman's rule is the following.
+- [00:11:23,000 - 00:11:29,000] It says take the action for any trajectory.
+- [00:11:29,000 - 00:11:33,000] Take an arbitrary trajectory
+- [00:11:33,000 - 00:11:35,500] and write down the expression
+- [00:11:35,500 - 00:11:38,000] e to the i minus i,
+- [00:11:38,000 - 00:11:40,000] the action of,
+- [00:11:40,000 - 00:11:43,000] the trajectory.
+- [00:11:43,000 - 00:11:44,000] We can just write it out.
+- [00:11:44,000 - 00:11:46,000] It's integral of,
+- [00:11:46,000 - 00:11:49,000] now we're talking about particles now,
+- [00:11:49,000 - 00:11:53,000] integral of the Lagrangian dt
+- [00:11:53,000 - 00:11:55,000] from one point to another point.
+- [00:11:55,000 - 00:12:00,000] It's a function of, or functional of the trajectory.
+- [00:12:00,000 - 00:12:02,000] And now, actually there's a
+- [00:12:02,000 - 00:12:04,000] factor of h bar in here,
+- [00:12:04,000 - 00:12:06,000] a factor of h bar in here.
+- [00:12:06,000 - 00:12:09,000] That's where quantum mechanics comes into it.
+- [00:12:09,000 - 00:12:12,000] So, sum this, or integrate it,
+- [00:12:12,000 - 00:12:16,000] over all possible trajectories.
+- [00:12:16,000 - 00:12:21,000] Well, in non-relativistic quantum mechanics,
+- [00:12:21,000 - 00:12:24,000] you don't let them go backward in time.
+- [00:12:24,000 - 00:12:26,000] But all possible trajectories,
+- [00:12:26,000 - 00:12:30,000] which never loop back on themselves in time,
+- [00:12:30,000 - 00:12:34,000] sum that over all the possible trajectories.
+- [00:12:34,000 - 00:12:38,000] For each trajectory, it's a complex number.
+- [00:12:38,000 - 00:12:40,000] Add them all up.
+- [00:12:40,000 - 00:12:42,000] Now, how do you add up such a thing
+- [00:12:42,000 - 00:12:44,000] in some complicated kind of integral?
+- [00:12:44,000 - 00:12:48,000] But we needn't worry too much about the details
+- [00:12:48,000 - 00:12:51,000] of how you actually calculate it.
+- [00:12:51,000 - 00:12:53,000] That, according to Feynman,
+- [00:12:53,000 - 00:12:56,000] is the amplitude for going from here to here.
+- [00:12:56,000 - 00:13:00,000] It's the sum of all possible classical roots.
+- [00:13:00,000 - 00:13:03,000] Classical root does not mean a solution of the equations.
+- [00:13:03,000 - 00:13:05,000] It just means a possible root.
+- [00:13:05,000 - 00:13:07,000] It's the sum of all possible roots,
+- [00:13:07,000 - 00:13:10,000] whether or not they're solutions of the equations,
+- [00:13:10,000 - 00:13:12,000] of Newton's equations,
+- [00:13:12,000 - 00:13:17,000] of e to the minus i times the action,
+- [00:13:17,000 - 00:13:20,000] measured in Planck's constant units.
+- [00:13:20,000 - 00:13:24,000] Incidentally, Planck's constant has units of action.
+- [00:13:24,000 - 00:13:25,500] So this is simply the action
+- [00:13:25,500 - 00:13:27,000] in units of the Planck's constant.
+- [00:13:27,000 - 00:13:30,000] The e arises because the...
+- [00:13:30,000 - 00:13:35,000] because to go a little step involves the...
+- [00:13:35,000 - 00:13:37,000] something very...
+- [00:13:37,000 - 00:13:38,000] You have to multiply these.
+- [00:13:38,000 - 00:13:39,000] Yes.
+- [00:13:39,000 - 00:13:40,000] Both together.
+- [00:13:40,000 - 00:13:41,000] Right. Exactly.
+- [00:13:41,000 - 00:13:43,000] That's exactly right.
+- [00:13:43,000 - 00:13:45,000] And the other thing here is the i.
+- [00:13:45,000 - 00:13:47,000] The i is part of quantum mechanics.
+- [00:13:47,000 - 00:13:48,000] What can I say?
+- [00:13:48,000 - 00:13:49,000] Yeah.
+- [00:13:49,000 - 00:13:51,000] That sum is the probability?
+- [00:13:51,000 - 00:13:54,000] That sum is the thing whose square is the probability.
+- [00:13:54,000 - 00:13:57,000] By square, I mean times its complex conjugate.
+- [00:13:57,000 - 00:13:59,000] This sum could hardly be a probability
+- [00:13:59,000 - 00:14:01,000] because in general it's complex.
+- [00:14:01,000 - 00:14:03,000] It's got an i in it.
+- [00:14:03,000 - 00:14:04,000] If you multiply it,
+- [00:14:04,000 - 00:14:06,000] you get the sum of all possible roots.
+- [00:14:06,000 - 00:14:09,000] If you multiply it by its complex conjugate,
+- [00:14:09,000 - 00:14:10,000] that is the probability.
+- [00:14:10,000 - 00:14:12,000] This is the probability amplitude.
+- [00:14:12,000 - 00:14:14,000] The complex thing...
+- [00:14:14,000 - 00:14:17,000] So this is Feynman's formulation of quantum mechanics.
+- [00:14:17,000 - 00:14:21,000] And now it can be extended to quantum field theory.
+- [00:14:21,000 - 00:14:24,000] In quantum field theory, the corresponding question...
+- [00:14:24,000 - 00:14:25,500] Now we're not actually going
+- [00:14:25,500 - 00:14:27,000] to formulate it this way because...
+- [00:14:27,000 - 00:14:29,000] But this is a correct way to formulate it.
+- [00:14:29,000 - 00:14:31,000] We're going to fudge it a little bit
+- [00:14:31,000 - 00:14:34,000] and make our way through it without any rigor.
+- [00:14:34,000 - 00:14:36,000] But the same idea.
+- [00:14:36,000 - 00:14:40,000] You start with an arbitrary configuration of the field.
+- [00:14:40,000 - 00:14:41,000] All right?
+- [00:14:41,000 - 00:14:45,000] So that's some initial phi of x.
+- [00:14:45,000 - 00:14:48,000] x now being just x and not t.
+- [00:14:48,000 - 00:14:51,000] An initial configuration of the field.
+- [00:14:51,000 - 00:14:52,500] And now you look at
+- [00:14:52,500 - 00:14:54,000] some final configuration of the field.
+- [00:14:54,000 - 00:14:57,000] Let's call it phi prime of x.
+- [00:14:57,000 - 00:14:59,000] These are two different functions.
+- [00:14:59,000 - 00:15:00,500] And you can see that the first
+- [00:15:00,500 - 00:15:02,000] one is a function of the field.
+- [00:15:02,000 - 00:15:04,000] And the second one is a function of the field.
+- [00:15:04,000 - 00:15:08,000] And you can ask, what is the probability amplitude
+- [00:15:08,000 - 00:15:10,000] that if I start the field at some value
+- [00:15:10,000 - 00:15:12,000] and let the system go
+- [00:15:12,000 - 00:15:15,000] and then detect the field at a later time...
+- [00:15:15,000 - 00:15:21,000] Imagine you had some way of starting an initial condition
+- [00:15:21,000 - 00:15:24,000] with a field being prescribed at every point of space.
+- [00:15:24,000 - 00:15:26,000] Of course, that's an idealization.
+- [00:15:26,000 - 00:15:27,500] You don't have a chance in
+- [00:15:27,500 - 00:15:29,000] the world of doing that, really.
+- [00:15:29,000 - 00:15:33,000] But you had some sort of apparatus
+- [00:15:33,000 - 00:15:36,000] which allowed you to start
+- [00:15:36,000 - 00:15:39,000] the field in an arbitrary configuration,
+- [00:15:39,000 - 00:15:41,000] let it go,
+- [00:15:41,000 - 00:15:43,000] and then you had another apparatus
+- [00:15:43,000 - 00:15:46,000] which detects the values of the field at every point.
+- [00:15:46,000 - 00:15:49,000] Then you can ask, what is the probability
+- [00:15:49,000 - 00:15:51,000] that if you start the field in a given way
+- [00:15:51,000 - 00:15:53,000] that at a later time
+- [00:15:53,000 - 00:15:55,000] the field will have some value?
+- [00:15:55,000 - 00:15:58,000] Again, that probability is determined
+- [00:15:58,000 - 00:16:01,000] in terms of a probability amplitude.
+- [00:16:01,000 - 00:16:03,000] And the probability amplitude
+- [00:16:03,000 - 00:16:07,000] is...
+- [00:16:07,000 - 00:16:10,000] Again, the sum over
+- [00:16:10,000 - 00:16:14,000] all possible ways of interpolating
+- [00:16:14,000 - 00:16:17,000] the field between initial and final,
+- [00:16:17,000 - 00:16:20,000] all possible...
+- [00:16:20,000 - 00:16:22,000] Exactly what I said.
+- [00:16:22,000 - 00:16:24,000] All possible ways of filling in
+- [00:16:24,000 - 00:16:27,000] between the initial state and the final state
+- [00:16:27,000 - 00:16:31,000] with a field value at every point
+- [00:16:31,000 - 00:16:33,000] of e to the minus i a,
+- [00:16:33,000 - 00:16:35,000] and then you have the field action.
+- [00:16:35,000 - 00:16:37,000] That's the integral d x, d
+- [00:16:37,000 - 00:16:39,000] t, d x, d y, d z,
+- [00:16:39,000 - 00:16:41,000] d 4 x,
+- [00:16:41,000 - 00:16:44,000] of the Lagrangian,
+- [00:16:44,000 - 00:16:47,000] which is a function of phi
+- [00:16:47,000 - 00:16:50,000] and the derivatives of phi.
+- [00:16:50,000 - 00:16:53,000] So you evaluate the Lagrangian at every point,
+- [00:16:53,000 - 00:16:55,000] integrate it up.
+- [00:16:55,000 - 00:16:58,000] That gives you the action for a particular...
+- [00:16:58,000 - 00:17:00,000] Let's call it a trajectory.
+- [00:17:00,000 - 00:17:02,000] It's not really a trajectory in any ordinary sense.
+- [00:17:03,000 - 00:17:04,000] But it's a history.
+- [00:17:04,000 - 00:17:06,000] Let's call it a history, better yet.
+- [00:17:06,000 - 00:17:08,000] For each history,
+- [00:17:08,000 - 00:17:10,000] each possible history that you can imagine,
+- [00:17:10,000 - 00:17:12,000] it doesn't have to be a true history,
+- [00:17:12,000 - 00:17:13,000] a real history,
+- [00:17:13,000 - 00:17:15,000] for every possible history you can imagine,
+- [00:17:15,000 - 00:17:17,000] there is an action.
+- [00:17:17,000 - 00:17:19,000] The action is itself an integral.
+- [00:17:19,000 - 00:17:23,000] But then you can sum this over all possible histories,
+- [00:17:23,000 - 00:17:25,000] and that is the amplitude
+- [00:17:25,000 - 00:17:28,000] to start with a field value phi
+- [00:17:28,000 - 00:17:31,000] and end with a field value phi prime
+- [00:17:31,000 - 00:17:33,000] between these two trajectories here.
+- [00:17:33,000 - 00:17:35,000] Okay?
+- [00:17:35,000 - 00:17:38,000] That's the notion of a path integral.
+- [00:17:38,000 - 00:17:39,000] Yeah?
+- [00:17:39,000 - 00:17:44,000] I'm not concerned that they're infinite number paths,
+- [00:17:44,000 - 00:17:47,000] but the action is going to be a finite number
+- [00:17:47,000 - 00:17:49,000] for each of these paths.
+- [00:17:49,000 - 00:17:51,000] Well, it's a finite complex number, right.
+- [00:17:51,000 - 00:17:53,000] Yeah, so how can that converge to anything?
+- [00:17:53,000 - 00:17:56,000] Why is that not an infinite number?
+- [00:17:56,000 - 00:17:59,000] Um...
+- [00:17:59,000 - 00:18:01,000] No, there are many, many integrals.
+- [00:18:01,000 - 00:18:02,000] Well, okay, you're asking...
+- [00:18:03,000 - 00:18:08,000] All right, let me phrase it a little more strongly.
+- [00:18:08,000 - 00:18:11,000] Adding up an infinite number of numbers,
+- [00:18:11,000 - 00:18:14,000] well, that's nothing special.
+- [00:18:14,000 - 00:18:16,000] I think what you're pointing out is that
+- [00:18:16,000 - 00:18:18,000] each one of these numbers is not only finite,
+- [00:18:18,000 - 00:18:21,000] but has a magnitude equal to one.
+- [00:18:21,000 - 00:18:25,000] Or something that is not decreasing.
+- [00:18:25,000 - 00:18:27,000] It has a magnitude equal to one.
+- [00:18:27,000 - 00:18:28,000] All right?
+- [00:18:28,000 - 00:18:32,000] It's an exponential of i times something, right?
+- [00:18:32,000 - 00:18:34,500] So any number like this is
+- [00:18:34,500 - 00:18:37,000] a number which on the complex plane...
+- [00:18:37,000 - 00:18:39,000] You're not minimizing this sum?
+- [00:18:39,000 - 00:18:41,000] Not minimizing it.
+- [00:18:41,000 - 00:18:43,000] You're summing over all trajectories.
+- [00:18:43,000 - 00:18:50,000] You're just summing over all of these amplitude, okay.
+- [00:18:50,000 - 00:18:51,000] No.
+- [00:18:51,000 - 00:18:53,000] These things do converge.
+- [00:18:53,000 - 00:18:57,000] They don't...
+- [00:18:57,000 - 00:19:01,000] They converge because they oscillate.
+- [00:19:01,000 - 00:19:03,000] They all lie on the unit circle.
+- [00:19:03,000 - 00:19:05,000] They all lie on the unit circle.
+- [00:19:05,000 - 00:19:06,000] Not on the infinite circle.
+- [00:19:06,000 - 00:19:07,000] On the unit circle.
+- [00:19:07,000 - 00:19:10,000] And yet the integrals do converge.
+- [00:19:10,000 - 00:19:14,000] That's the definition of the delta function.
+- [00:19:14,000 - 00:19:16,000] For example, that's one example,
+- [00:19:16,000 - 00:19:18,000] but there are many examples
+- [00:19:18,000 - 00:19:23,000] where integrals like this converge.
+- [00:19:23,000 - 00:19:26,000] The kind of thing that can't converge...
+- [00:19:26,000 - 00:19:31,000] Well, if you have an infinite number of numbers
+- [00:19:31,000 - 00:19:33,000] all of which are positive,
+- [00:19:33,000 - 00:19:35,000] and you add them up,
+- [00:19:35,000 - 00:19:39,000] positive and bounded away from zero,
+- [00:19:39,000 - 00:19:41,000] all right, you have an infinite number of numbers,
+- [00:19:41,000 - 00:19:44,000] all of them positive and bounded away from zero,
+- [00:19:44,000 - 00:19:46,000] of course that's going to diverge.
+- [00:19:46,000 - 00:19:48,000] Okay?
+- [00:19:48,000 - 00:19:51,000] In this case, you have numbers which can cancel.
+- [00:19:51,000 - 00:19:53,000] Over here is one trajectory.
+- [00:19:53,000 - 00:19:55,000] Over here is another trajectory.
+- [00:19:55,000 - 00:19:57,000] Over here is another trajectory.
+- [00:19:57,000 - 00:19:59,000] These are the amplitudes for different trajectories.
+- [00:19:59,000 - 00:20:01,000] And this one
+- [00:20:01,000 - 00:20:03,000] cancels this one.
+- [00:20:03,000 - 00:20:06,000] So it's not hard for an integral...
+- [00:20:06,000 - 00:20:09,000] Well, you could say if they're equally distributed
+- [00:20:09,000 - 00:20:11,000] around the unit circle, then you get...
+- [00:20:11,000 - 00:20:12,000] Zero.
+- [00:20:12,000 - 00:20:13,000] Yeah.
+- [00:20:13,000 - 00:20:15,000] In fact, most of them,
+- [00:20:15,000 - 00:20:18,000] except for a small fraction of them, they are...
+- [00:20:18,000 - 00:20:19,000] That's right.
+- [00:20:19,000 - 00:20:21,000] They tend to cancel a lot.
+- [00:20:21,000 - 00:20:25,000] The only trajectories which tend not to cancel
+- [00:20:25,000 - 00:20:28,000] are the ones near the classical trajectory.
+- [00:20:28,000 - 00:20:30,000] We don't have to discuss that now,
+- [00:20:30,000 - 00:20:31,000] but that is the way
+- [00:20:31,000 - 00:20:32,000] that you go from quantum mechanics
+- [00:20:32,000 - 00:20:33,000] to classical theory,
+- [00:20:33,000 - 00:20:36,000] at least in this formulation.
+- [00:20:36,000 - 00:20:39,000] If you look for the particular trajectories
+- [00:20:39,000 - 00:20:41,000] where you have the least cancellation,
+- [00:20:41,000 - 00:20:45,000] those are the trajectories of stationary action.
+- [00:20:45,000 - 00:20:49,000] The trajectories where the action is minimum.
+- [00:20:49,000 - 00:20:51,000] But that's another story.
+- [00:20:51,000 - 00:20:54,000] This is the quantum mechanical
+- [00:20:54,000 - 00:20:57,000] path integral formulation
+- [00:20:57,000 - 00:21:00,000] that much of modern science,
+- [00:21:00,000 - 00:21:01,000] modern field theory,
+- [00:21:01,000 - 00:21:03,000] basically all of modern field theory,
+- [00:21:03,000 - 00:21:06,000] quantum field theory is based on.
+- [00:21:06,000 - 00:21:07,500] All right, now I'm not
+- [00:21:07,500 - 00:21:09,000] going to derive the next step.
+- [00:21:09,000 - 00:21:13,000] I'm simply going to state the next step.
+- [00:21:13,000 - 00:21:19,000] But I wanted to at least explain to you
+- [00:21:19,000 - 00:21:21,000] what this quantity is
+- [00:21:21,000 - 00:21:25,000] before I show you how in practice it's used.
+- [00:21:25,000 - 00:21:29,000] Now when I say in practice,
+- [00:21:29,000 - 00:21:33,000] this is a bit of an oversimplification,
+- [00:21:33,000 - 00:21:35,000] but not too bad, not too bad.
+- [00:21:35,000 - 00:21:37,000] The last time we talked a little bit
+- [00:21:37,000 - 00:21:39,000] about how the Lagrangian is used
+- [00:21:39,000 - 00:21:41,000] to calculate processes,
+- [00:21:41,000 - 00:21:44,000] particles moving from one place to another,
+- [00:21:44,000 - 00:21:46,000] particles interacting.
+- [00:21:46,000 - 00:21:47,000] When I say calculate processes,
+- [00:21:47,000 - 00:21:49,000] what did I really mean?
+- [00:21:49,000 - 00:21:52,000] I really meant calculate the probability
+- [00:21:52,000 - 00:21:56,000] for an initial state to go to a final state.
+- [00:21:56,000 - 00:21:59,000] But there are two distinct ways
+- [00:21:59,000 - 00:22:02,000] to think about relativism,
+- [00:22:02,000 - 00:22:04,000] well, about quantum field theory.
+- [00:22:04,000 - 00:22:07,000] One is in terms of fields
+- [00:22:07,000 - 00:22:09,000] and the other is in terms of particles.
+- [00:22:09,000 - 00:22:12,000] We know that there is this duality
+- [00:22:12,000 - 00:22:15,000] between particles and fields.
+- [00:22:15,000 - 00:22:17,000] We could ask a totally different,
+- [00:22:17,000 - 00:22:20,000] apparently totally different question.
+- [00:22:20,000 - 00:22:21,000] Instead of asking,
+- [00:22:21,000 - 00:22:23,000] suppose you had a given field value here
+- [00:22:23,000 - 00:22:25,000] and you want to know what the amplitude is
+- [00:22:25,000 - 00:22:27,000] for a final field value,
+- [00:22:27,000 - 00:22:28,000] we could ask,
+- [00:22:28,000 - 00:22:31,000] supposing you had some incoming particles,
+- [00:22:31,000 - 00:22:33,000] quanta of the field.
+- [00:22:33,000 - 00:22:36,000] You express things in terms of field quanta
+- [00:22:36,000 - 00:22:38,000] rather than in terms of
+- [00:22:38,000 - 00:22:41,000] classical field configurations.
+- [00:22:41,000 - 00:22:44,000] Supposing I told you that the field initially
+- [00:22:44,000 - 00:22:48,000] was in a state which was described
+- [00:22:48,000 - 00:22:51,000] by a particular collection of incoming particles.
+- [00:22:51,000 - 00:22:54,000] Incidentally, when I say the field,
+- [00:22:54,000 - 00:22:57,000] I may mean a collection of fields.
+- [00:22:57,000 - 00:22:58,000] All right?
+- [00:22:58,000 - 00:23:00,000] So I tell you not the
+- [00:23:00,000 - 00:23:02,000] value of the field along here,
+- [00:23:02,000 - 00:23:06,000] but rather the particle content coming in.
+- [00:23:06,000 - 00:23:08,000] And I tell you what
+- [00:23:08,000 - 00:23:10,000] the particle content is going out.
+- [00:23:10,000 - 00:23:12,000] And I ask you, what's the probability
+- [00:23:12,000 - 00:23:16,000] that you went from one particle content
+- [00:23:16,000 - 00:23:18,000] to another particle content?
+- [00:23:18,000 - 00:23:20,000] It's a question of,
+- [00:23:20,000 - 00:23:22,000] a similar kind of question,
+- [00:23:22,000 - 00:23:26,000] but expressed in terms of the particle representation
+- [00:23:26,000 - 00:23:27,000] of quantum field theory,
+- [00:23:27,000 - 00:23:30,000] rather than the classical field configuration.
+- [00:23:30,000 - 00:23:33,000] And the answer, not surprisingly,
+- [00:23:33,000 - 00:23:37,000] involves exactly this same object.
+- [00:23:37,000 - 00:23:38,000] Okay?
+- [00:23:38,000 - 00:23:40,000] We talked about it a little bit.
+- [00:23:40,000 - 00:23:42,000] I think what I told you last time,
+- [00:23:42,000 - 00:23:44,000] not incorrect, but it was
+- [00:23:44,000 - 00:23:46,000] a little small piece of it.
+- [00:23:46,000 - 00:23:48,000] I said what you do is you took one,
+- [00:23:48,000 - 00:23:51,000] I'll just remind you of something I said,
+- [00:23:51,000 - 00:23:53,000] and then I'm going to say it again,
+- [00:23:53,000 - 00:23:54,000] but in a more correct way.
+- [00:23:54,000 - 00:23:56,000] You take one plus the Lagrangian,
+- [00:23:56,000 - 00:23:58,000] remember what we did.
+- [00:23:58,000 - 00:24:00,000] We said let's divide up in space-time
+- [00:24:00,000 - 00:24:02,000] into lots of little cells.
+- [00:24:05,000 - 00:24:09,000] It's hard to give meaning to objects like this,
+- [00:24:09,000 - 00:24:13,000] like this path integral directly.
+- [00:24:13,000 - 00:24:15,000] The way to give meaning to it
+- [00:24:15,000 - 00:24:18,000] is to divide up space into lots of little cells,
+- [00:24:18,000 - 00:24:21,000] and instead of thinking about continuous functions
+- [00:24:21,000 - 00:24:23,000] or even discontinuous functions,
+- [00:24:23,000 - 00:24:25,000] think about a value of the field
+- [00:24:25,000 - 00:24:27,000] in each one of these cells.
+- [00:24:27,000 - 00:24:28,000] All right.
+- [00:24:28,000 - 00:24:30,000] That makes it more concrete.
+- [00:24:30,000 - 00:24:32,000] And then in the end,
+- [00:24:32,000 - 00:24:36,000] you let the size of the cells go to zero.
+- [00:24:36,000 - 00:24:37,500] So let's not let the size
+- [00:24:37,500 - 00:24:39,000] of the cells go to zero.
+- [00:24:39,000 - 00:24:43,000] Let's keep them finite like this.
+- [00:24:43,000 - 00:24:47,000] What I told you is that you take the quantity
+- [00:24:47,000 - 00:24:51,000] one plus the Lagrangian in each cell,
+- [00:24:51,000 - 00:24:54,000] in the ith cell, called L sub i.
+- [00:24:54,000 - 00:24:57,000] That's the value of the Lagrangian in each cell,
+- [00:24:57,000 - 00:25:00,000] and you multiply it for all the cells.
+- [00:25:00,000 - 00:25:02,000] Remember I said that?
+- [00:25:02,000 - 00:25:03,000] If you don't, it doesn't matter
+- [00:25:03,000 - 00:25:04,000] because we're going to say it again
+- [00:25:04,000 - 00:25:06,000] the right way this time.
+- [00:25:06,000 - 00:25:08,000] All right.
+- [00:25:08,000 - 00:25:10,000] And then we did something with this
+- [00:25:10,000 - 00:25:12,000] to try to calculate,
+- [00:25:12,000 - 00:25:13,500] and I tried to show you
+- [00:25:13,500 - 00:25:15,000] that there are pieces in here
+- [00:25:15,000 - 00:25:17,000] which describe the propagation of particles,
+- [00:25:17,000 - 00:25:19,000] the collisions of particles.
+- [00:25:19,000 - 00:25:21,000] We're going to go back over it again
+- [00:25:21,000 - 00:25:23,000] because it really is central.
+- [00:25:23,000 - 00:25:25,000] All right.
+- [00:25:25,000 - 00:25:29,000] First of all, I missed being tired.
+- [00:25:29,000 - 00:25:33,000] I was not terribly clear.
+- [00:25:33,000 - 00:25:35,500] It's really one minus i
+- [00:25:35,500 - 00:25:38,000] times the Lagrangian in each cell.
+- [00:25:38,000 - 00:25:40,000] Okay?
+- [00:25:40,000 - 00:25:42,000] Now one minus i,
+- [00:25:42,000 - 00:25:45,000] one plus a small,
+- [00:25:45,000 - 00:25:47,000] this is, for the moment, imagine,
+- [00:25:47,000 - 00:25:49,000] this is a small quantity.
+- [00:25:49,000 - 00:25:52,000] I shouldn't, actually it's not one
+- [00:25:52,000 - 00:25:54,000] plus the Lagrangian.
+- [00:25:54,000 - 00:25:57,000] It's one plus the action in each cell.
+- [00:25:57,000 - 00:25:59,000] Now the action in each cell
+- [00:25:59,000 - 00:26:03,500] is the Lagrangian times the
+- [00:26:03,500 - 00:26:08,000] space time volume in each cell.
+- [00:26:08,000 - 00:26:09,000] All right.
+- [00:26:09,000 - 00:26:12,000] Space time volume is delta x, delta y, delta z
+- [00:26:12,000 - 00:26:14,000] times delta t for each cell.
+- [00:26:14,000 - 00:26:17,000] Let's call that a small number.
+- [00:26:17,000 - 00:26:19,000] Let's just call it the space time volume.
+- [00:26:19,000 - 00:26:21,000] Let's call it a to the fourth,
+- [00:26:21,000 - 00:26:23,000] where a is a small number.
+- [00:26:23,000 - 00:26:24,000] All right.
+- [00:26:24,000 - 00:26:26,000] So each little cell is small,
+- [00:26:26,000 - 00:26:31,000] so the action in each cell is itself small,
+- [00:26:31,000 - 00:26:34,000] because the cell is small.
+- [00:26:34,000 - 00:26:39,000] Now one minus or one plus a small quantity,
+- [00:26:39,000 - 00:26:42,000] let's call it one plus epsilon,
+- [00:26:42,000 - 00:26:49,000] is an approximation to e to the epsilon.
+- [00:26:49,000 - 00:26:54,000] e to the epsilon is,
+- [00:26:54,000 - 00:26:59,000] this is approximately equal for small epsilon.
+- [00:26:59,000 - 00:27:03,000] But the exact formula is a power series in epsilon.
+- [00:27:03,000 - 00:27:09,000] It's one plus epsilon plus epsilon squared over two
+- [00:27:09,000 - 00:27:13,000] plus epsilon cubed over, what comes next?
+- [00:27:13,000 - 00:27:15,000] Three factorial, which is six.
+- [00:27:15,000 - 00:27:18,000] Three times two times one.
+- [00:27:19,000 - 00:27:24,000] And so forth and so on.
+- [00:27:24,000 - 00:27:31,000] So one plus epsilon is approximately for small things
+- [00:27:31,000 - 00:27:33,000] equal to e to the epsilon.
+- [00:27:33,000 - 00:27:37,000] But in fact, it's more efficient and correct
+- [00:27:37,000 - 00:27:40,000] to really write something different
+- [00:27:40,000 - 00:27:43,000] than what I wrote over here,
+- [00:27:43,000 - 00:27:47,000] namely this thing.
+- [00:27:49,000 - 00:27:54,000] Let's think about what this thing is.
+- [00:27:56,610 - 00:27:57,610] ありがとうございました
+- [00:27:57,634 - 00:28:01,134] In fact, don't you have
+- [00:28:01,134 - 00:28:04,634] to put an h-bar in the...
+- [00:28:06,014 - 00:28:08,944] I'll probably wind up setting h-bar
+- [00:28:08,944 - 00:28:11,874] equal to one as usual, but, right.
+- [00:28:11,874 - 00:28:15,134] Okay, what is this object?
+- [00:28:15,134 - 00:28:19,714] Alright, um...
+- [00:28:19,714 - 00:28:22,514] This exponential here,
+- [00:28:22,514 - 00:28:24,654] what's in here,
+- [00:28:24,654 - 00:28:26,774] we're going to imagine replacing
+- [00:28:26,774 - 00:28:28,854] not by an integral, but by a sum.
+- [00:28:28,854 - 00:28:31,674] The integral over space and time here,
+- [00:28:31,674 - 00:28:35,114] just imagine that we've replaced it
+- [00:28:35,114 - 00:28:39,174] by the sum...
+- [00:28:39,174 - 00:28:40,674] And what is it a sum of?
+- [00:28:40,674 - 00:28:43,214] It's the sum of the
+- [00:28:43,214 - 00:28:45,754] action in every little cell, right?
+- [00:28:45,754 - 00:28:49,454] Each, when I replace the
+- [00:28:49,454 - 00:28:52,214] sum of the integral by a sum, up in here,
+- [00:28:52,214 - 00:28:54,974] when I replace the integral by a sum up in here,
+- [00:28:54,974 - 00:28:56,754] what I'm really doing is just adding up
+- [00:28:56,754 - 00:29:01,754] the action in all these little cells.
+- [00:29:01,754 - 00:29:06,754] Now, the thing about a
+- [00:29:06,754 - 00:29:09,754] exponential
+- [00:29:09,754 - 00:29:13,754] is that the exponential of a sum
+- [00:29:13,754 - 00:29:16,754] is the product of exponentials.
+- [00:29:16,754 - 00:29:19,254] e to the a plus b is e
+- [00:29:19,254 - 00:29:21,754] to the a times e to the b.
+- [00:29:21,754 - 00:29:23,254] So this can also be written
+- [00:29:23,254 - 00:29:24,754] as another way, in another way,
+- [00:29:24,754 - 00:29:26,634] you forget the summation here for a minute.
+- [00:29:26,634 - 00:29:28,634] That's summing over paths.
+- [00:29:28,634 - 00:29:32,634] Before we do that summing over histories,
+- [00:29:32,634 - 00:29:34,634] what this object is,
+- [00:29:34,634 - 00:29:36,634] it's an exponential of a sum,
+- [00:29:36,634 - 00:29:38,634] so it's also the product
+- [00:29:38,634 - 00:29:42,634] of e to the minus i over h-bar,
+- [00:29:42,634 - 00:29:44,634] a in the first cell,
+- [00:29:44,634 - 00:29:47,634] e to the minus i over h-bar,
+- [00:29:47,634 - 00:29:50,634] action in the second cell, a is action,
+- [00:29:50,634 - 00:29:54,634] e to the minus i over h-bar,
+- [00:29:54,634 - 00:29:56,634] a in the third cell,
+- [00:29:56,634 - 00:30:00,634] and it's exactly this kind of product,
+- [00:30:00,634 - 00:30:03,634] product over all the cells,
+- [00:30:03,634 - 00:30:07,634] not of one minus i times the action,
+- [00:30:07,634 - 00:30:10,634] but of e to the minus i times the action.
+- [00:30:10,634 - 00:30:12,634] They're close to each other.
+- [00:30:12,634 - 00:30:14,634] It actually wouldn't matter which we used,
+- [00:30:14,634 - 00:30:18,634] but in practice, but...
+- [00:30:23,634 - 00:30:25,634] Okay, so let's now...
+- [00:30:26,634 - 00:30:28,634] consider...
+- [00:30:30,634 - 00:30:32,634] Question?
+- [00:30:32,634 - 00:30:33,634] Okay.
+- [00:30:33,634 - 00:30:36,634] All right, so now having this form here,
+- [00:30:36,634 - 00:30:40,634] let's go back to what...
+- [00:30:40,634 - 00:30:43,634] Let's forget particles for a minute and think about fields
+- [00:30:43,634 - 00:30:49,634] and re-express the path integral idea.
+- [00:30:49,634 - 00:30:52,634] So here we have a region of spacetime
+- [00:30:52,634 - 00:30:55,634] that's been chopped up into tiny little cells.
+- [00:30:56,634 - 00:30:58,634] Okay?
+- [00:30:58,634 - 00:31:00,634] So what's the idea of an initial condition?
+- [00:31:00,634 - 00:31:02,634] Enough.
+- [00:31:02,634 - 00:31:05,634] All right, what's the idea of an initial condition?
+- [00:31:05,634 - 00:31:08,134] The idea of an initial condition is to
+- [00:31:08,134 - 00:31:10,634] start on the first row of cells here
+- [00:31:10,634 - 00:31:12,634] and give the value of the
+- [00:31:12,634 - 00:31:14,634] fields at every point in there.
+- [00:31:14,634 - 00:31:15,634] That's an initial condition.
+- [00:31:15,634 - 00:31:18,634] That's the analog of an initial condition.
+- [00:31:18,634 - 00:31:21,634] A final condition is to specify
+- [00:31:21,634 - 00:31:24,634] the fields in the last row.
+- [00:31:24,634 - 00:31:28,634] So the question then is, what is the probability amplitude
+- [00:31:28,634 - 00:31:30,634] that if a field is specified in
+- [00:31:30,634 - 00:31:32,634] a certain way on the first row
+- [00:31:32,634 - 00:31:35,634] and the field is specified in the last row,
+- [00:31:35,634 - 00:31:38,634] what's the probability to go from one to another?
+- [00:31:38,634 - 00:31:40,634] Or the amplitude, the amplitude that
+- [00:31:40,634 - 00:31:42,634] if you start it a certain way
+- [00:31:42,634 - 00:31:44,634] and let the system run, you will
+- [00:31:44,634 - 00:31:46,634] later find it in the final state,
+- [00:31:46,634 - 00:31:48,634] and the final state now means the
+- [00:31:48,634 - 00:31:50,634] field in each one of these cells here.
+- [00:31:50,634 - 00:31:52,634] Answer?
+- [00:31:52,634 - 00:31:53,634] You take...
+- [00:31:54,634 - 00:31:56,634] e to the minus i times the
+- [00:31:56,634 - 00:31:58,634] sum of the action in all the cells,
+- [00:31:58,634 - 00:32:01,634] but we now realize that this is simply
+- [00:32:01,634 - 00:32:04,634] the product of e to the minus i
+- [00:32:04,634 - 00:32:06,634] of the action in each cell.
+- [00:32:06,634 - 00:32:11,634] We multiply together the action in all of these cells...
+- [00:32:11,634 - 00:32:12,634] For a given history.
+- [00:32:12,634 - 00:32:14,634] For a given history.
+- [00:32:14,634 - 00:32:16,634] For a given history.
+- [00:32:16,634 - 00:32:19,134] For a given history, which means a
+- [00:32:19,134 - 00:32:21,634] given value of the fields in each cell.
+- [00:32:21,634 - 00:32:23,634] And...
+- [00:32:23,634 - 00:32:26,634] We multiply them all together.
+- [00:32:26,634 - 00:32:30,634] We compute the exponential of the action,
+- [00:32:30,634 - 00:32:33,634] and then we sum it over all
+- [00:32:33,634 - 00:32:36,634] ways of populating the cells with fields.
+- [00:32:36,634 - 00:32:39,134] All possible histories means all
+- [00:32:39,134 - 00:32:41,634] possible values of the fields
+- [00:32:41,634 - 00:32:43,634] that could be in every cell,
+- [00:32:43,634 - 00:32:44,634] with the exception of the
+- [00:32:44,634 - 00:32:45,634] first row and the last row.
+- [00:32:45,634 - 00:32:47,634] The first row and the last row
+- [00:32:47,634 - 00:32:49,634] are fixed by the initial and final conditions.
+- [00:32:49,634 - 00:32:50,634] All right?
+- [00:32:50,634 - 00:32:51,634] In other words, by the...
+- [00:32:51,634 - 00:32:52,634] Oh, by the initial and final conditions.
+- [00:32:52,634 - 00:32:54,634] The initial and final conditions.
+- [00:32:54,634 - 00:32:56,634] We don't look at the field in the interior.
+- [00:32:56,634 - 00:33:00,634] We simply start the system and then detect it.
+- [00:33:00,634 - 00:33:05,634] And the rule is sum over all
+- [00:33:05,634 - 00:33:10,634] possible field configurations that could exist in between.
+- [00:33:10,634 - 00:33:14,634] So that has reduced this idea to a discrete form
+- [00:33:14,634 - 00:33:18,634] in which we see that what we have here
+- [00:33:18,634 - 00:33:20,634] is this infinite product.
+- [00:33:20,634 - 00:33:23,634] So this product over actions.
+- [00:33:23,634 - 00:33:24,634] All right.
+- [00:33:24,634 - 00:33:30,634] Now let's try to formulate some ideas about particles.
+- [00:33:30,634 - 00:33:33,634] Instead of asking the question,
+- [00:33:33,634 - 00:33:37,634] what if we start with a given field configuration,
+- [00:33:37,634 - 00:33:41,634] what if we start with a given particle configuration
+- [00:33:41,634 - 00:33:43,634] and end with a given particle configuration?
+- [00:33:43,634 - 00:33:45,134] What is the amplitude to
+- [00:33:45,134 - 00:33:46,634] go from one to the other?
+- [00:33:46,634 - 00:33:50,634] So I'll tell you how you think about it.
+- [00:33:50,634 - 00:33:52,634] We're not going to derive this.
+- [00:33:52,634 - 00:33:53,634] We've talked about it a good deal.
+- [00:33:53,634 - 00:33:55,634] We've talked about the idea as a good deal.
+- [00:33:55,634 - 00:33:59,134] We've talked about the fact that fields
+- [00:33:59,134 - 00:34:02,634] are made up of creation and annihilation operators.
+- [00:34:02,634 - 00:34:05,634] And what we're multiplying together
+- [00:34:05,634 - 00:34:08,634] here is functions of the fields.
+- [00:34:08,634 - 00:34:10,634] Functions of the fields and therefore functions...
+- [00:34:10,634 - 00:34:11,634] Yeah?
+- [00:34:11,634 - 00:34:15,134] I read somewhere that someone thinks that
+- [00:34:15,134 - 00:34:18,634] field quanta are not necessarily identified with particles.
+- [00:34:18,634 - 00:34:19,634] You're right.
+- [00:34:19,634 - 00:34:21,634] You would disagree with that?
+- [00:34:21,634 - 00:34:24,634] Well, I'm not sure who and what was the context.
+- [00:34:24,634 - 00:34:25,634] But you wrote field theory.
+- [00:34:25,634 - 00:34:27,134] No, I'm not sure who said
+- [00:34:27,134 - 00:34:28,634] it and what the context was.
+- [00:34:31,634 - 00:34:34,634] Well, give me a little more to go on.
+- [00:34:34,634 - 00:34:37,634] The question was somebody said something.
+- [00:34:37,634 - 00:34:40,634] My grandmother probably said it.
+- [00:34:40,634 - 00:34:44,634] The fields quanta in quantum
+- [00:34:44,634 - 00:34:48,634] field theory are not necessarily identifiable
+- [00:34:48,634 - 00:34:52,634] as a particle.
+- [00:34:52,634 - 00:34:55,134] The only thing I can think of
+- [00:34:55,134 - 00:34:57,634] is that he was talking about quarks.
+- [00:34:57,634 - 00:35:01,634] And of course, in some sense, quarks are particles.
+- [00:35:01,634 - 00:35:04,634] But in some other sense, they're never detectable as
+- [00:35:04,634 - 00:35:07,634] particles because they can never escape from one another.
+- [00:35:07,634 - 00:35:10,634] That's the only thing I can think of.
+- [00:35:10,634 - 00:35:13,634] So quarks are the quanta of the quark
+- [00:35:13,634 - 00:35:16,634] field, but they're never directly detected as separate quarks.
+- [00:35:16,634 - 00:35:21,634] They're never well separated from other quarks.
+- [00:35:21,634 - 00:35:23,134] That's the only thing I can think
+- [00:35:23,134 - 00:35:24,634] of that he might be speaking about.
+- [00:35:24,634 - 00:35:29,634] Well, I guess during unitary evolution,
+- [00:35:29,634 - 00:35:34,634] it doesn't necessarily boil down to observables.
+- [00:35:34,634 - 00:35:37,634] And so you may not have
+- [00:35:37,634 - 00:35:40,634] particles that are identifiable at intermediate states.
+- [00:35:40,634 - 00:35:42,634] I don't know what the...
+- [00:35:42,634 - 00:35:43,634] If you accept the idea
+- [00:35:43,634 - 00:35:44,634] of a quark as a particle,
+- [00:35:44,634 - 00:35:45,634] then you're not going to be able to identify it.
+- [00:35:45,634 - 00:35:52,134] It's true that there's not a one-to-one correspondence necessarily between
+- [00:35:52,134 - 00:35:58,634] the fields in a theory and the particles in the theory.
+- [00:35:58,634 - 00:36:01,634] That's an idea which is true as long
+- [00:36:01,634 - 00:36:04,634] as the coupling constants in the theory are small.
+- [00:36:04,634 - 00:36:08,134] Okay, so there is
+- [00:36:08,134 - 00:36:11,634] not necessarily a one-to-one correspondence.
+- [00:36:11,634 - 00:36:12,634] Yeah, I mean, it is true.
+- [00:36:12,634 - 00:36:14,634] There are field theories that...
+- [00:36:14,634 - 00:36:17,634] that for one reason or another,
+- [00:36:17,634 - 00:36:19,634] you wouldn't describe their
+- [00:36:19,634 - 00:36:21,634] quanta as conventional particles.
+- [00:36:21,634 - 00:36:23,634] But, you know, at some level,
+- [00:36:23,634 - 00:36:25,634] it's just the difference between words.
+- [00:36:25,634 - 00:36:28,134] If you define particle to mean
+- [00:36:28,134 - 00:36:30,634] quanta, then there's no difference between them.
+- [00:36:30,634 - 00:36:33,634] They're indivisible.
+- [00:36:33,634 - 00:36:38,634] They carry energy and so forth.
+- [00:36:38,634 - 00:36:41,634] So for my money, I would call them particles.
+- [00:36:41,634 - 00:36:42,634] But...
+- [00:36:42,634 - 00:36:43,634] But, yeah.
+- [00:36:44,634 - 00:36:47,634] Can you talk about some of the histories?
+- [00:36:47,634 - 00:36:49,634] Is there some limitation on
+- [00:36:49,634 - 00:36:51,634] what histories you can talk about?
+- [00:36:51,634 - 00:36:53,134] Do they have to be
+- [00:36:53,134 - 00:36:54,634] sort of continuous in some sense?
+- [00:36:54,634 - 00:36:55,634] No.
+- [00:36:55,634 - 00:36:56,634] No.
+- [00:36:56,634 - 00:36:58,634] No, in fact, they don't have to be continuous.
+- [00:36:58,634 - 00:37:02,134] First of all, of course, the idea of continuity on
+- [00:37:02,134 - 00:37:05,634] a discrete space like this doesn't quite mean very much.
+- [00:37:05,634 - 00:37:09,134] The field in the neighboring cell is just
+- [00:37:09,134 - 00:37:12,634] going to be a different value of the field.
+- [00:37:12,634 - 00:37:13,634] The rule is...
+- [00:37:14,634 - 00:37:18,634] The rule is divide the space into cells.
+- [00:37:18,634 - 00:37:21,134] And in actual practice, this is
+- [00:37:21,134 - 00:37:23,634] the way quantum field theory is defined.
+- [00:37:23,634 - 00:37:26,634] You divide the theory into cells.
+- [00:37:26,634 - 00:37:31,634] You sum over all possible ways of...
+- [00:37:31,634 - 00:37:35,634] of populating the cells with values of the fields.
+- [00:37:35,634 - 00:37:37,634] All possible ways.
+- [00:37:37,634 - 00:37:41,634] No restriction to things which are approximately continuous.
+- [00:37:41,634 - 00:37:42,634] And in fact, quantum
+- [00:37:42,634 - 00:37:43,634] fields are not approximately continuous.
+- [00:37:43,634 - 00:37:46,634] They jiggle a great deal.
+- [00:37:46,634 - 00:37:50,134] And you sum over all
+- [00:37:50,134 - 00:37:53,634] the possible values of the fields.
+- [00:37:53,634 - 00:37:56,634] And that gives you your...
+- [00:37:56,634 - 00:38:02,134] So, in principle, for each field and each derivative, you can
+- [00:38:02,134 - 00:38:07,634] assign it all possible values from minus and from minus plus.
+- [00:38:07,634 - 00:38:09,134] Well, you don't assign the
+- [00:38:09,134 - 00:38:10,634] derivatives separately from the fields.
+- [00:38:10,634 - 00:38:11,634] The derivatives, of course, are
+- [00:38:11,634 - 00:38:12,634] related to differences of the fields.
+- [00:38:12,634 - 00:38:14,134] And you can't assign the differences
+- [00:38:14,134 - 00:38:15,634] of the fields in neighboring boxes.
+- [00:38:15,634 - 00:38:18,634] So you populate with field values.
+- [00:38:18,634 - 00:38:21,634] And then derivatives are replaced by...
+- [00:38:21,634 - 00:38:22,634] Yeah.
+- [00:38:22,634 - 00:38:23,634] And you can use...
+- [00:38:23,634 - 00:38:28,634] There are different rules that you might adopt.
+- [00:38:28,634 - 00:38:31,134] You might define the derivative here to be
+- [00:38:31,134 - 00:38:33,634] the difference of the field here and here.
+- [00:38:33,634 - 00:38:34,634] Right.
+- [00:38:34,634 - 00:38:35,634] Yeah.
+- [00:38:35,634 - 00:38:37,634] That's a minor detail.
+- [00:38:37,634 - 00:38:38,634] Yeah.
+- [00:38:38,634 - 00:38:40,634] But in any event,
+- [00:38:40,634 - 00:38:42,634] you might take the real line up
+- [00:38:42,634 - 00:38:44,634] and break it up into small intervals,
+- [00:38:44,634 - 00:38:49,134] but you'd still have a sum over a countable
+- [00:38:49,134 - 00:38:53,634] number of possible values of the field for each field.
+- [00:38:53,634 - 00:38:55,134] And if there were two fields,
+- [00:38:55,134 - 00:38:56,634] then you'd be doing that over...
+- [00:38:56,634 - 00:38:57,634] Yep.
+- [00:38:57,634 - 00:39:00,634] By the field here, I mean all of the fields.
+- [00:39:00,634 - 00:39:01,634] Right.
+- [00:39:01,634 - 00:39:03,634] So you would give a value to each
+- [00:39:03,634 - 00:39:05,634] possible field in the theory at each initial step.
+- [00:39:05,634 - 00:39:07,634] It's a really nasty-looking computation.
+- [00:39:07,634 - 00:39:08,634] Absolutely.
+- [00:39:08,634 - 00:39:11,634] These are complex functions.
+- [00:39:11,634 - 00:39:13,634] They're analytic functions, so...
+- [00:39:13,634 - 00:39:17,634] Well, they're analytic functions of...
+- [00:39:17,634 - 00:39:24,634] But the relationships between the values of the field
+- [00:39:24,634 - 00:39:31,634] have to conform to what you learn in complex variables.
+- [00:39:31,634 - 00:39:32,634] No, no.
+- [00:39:32,634 - 00:39:35,634] Complex variables is about the theory of analytic functions.
+- [00:39:35,634 - 00:39:38,634] Analytic functions are extremely smooth.
+- [00:39:38,634 - 00:39:41,634] They're the smoothest functions you can think of.
+- [00:39:41,634 - 00:39:44,634] These functions do not have to be smooth.
+- [00:39:44,634 - 00:39:50,634] They're complex-valued, but they're not analytic functions.
+- [00:39:50,634 - 00:39:53,634] The field itself is analytic.
+- [00:39:53,634 - 00:39:55,634] The field as functions of position?
+- [00:39:55,634 - 00:39:58,634] Definitely not.
+- [00:39:58,634 - 00:40:04,634] They're, on the average, highly discontinuous, but...
+- [00:40:04,634 - 00:40:05,634] If I were to do the...
+- [00:40:05,634 - 00:40:06,634] Hm?
+- [00:40:06,634 - 00:40:07,634] If I were to do the computation on the...
+- [00:40:07,634 - 00:40:10,134] If I were to do the computation on
+- [00:40:10,134 - 00:40:12,634] the computer, how do I know, you know...
+- [00:40:12,634 - 00:40:14,634] That it will converge and do all the right things?
+- [00:40:14,634 - 00:40:16,134] Yeah, I mean, how many
+- [00:40:16,134 - 00:40:17,634] different fields I have to consider...
+- [00:40:17,634 - 00:40:18,634] How many different...
+- [00:40:18,634 - 00:40:21,634] Different assignments I have to consider.
+- [00:40:21,634 - 00:40:22,634] Okay.
+- [00:40:22,634 - 00:40:27,134] So, of course, this by now is
+- [00:40:27,134 - 00:40:31,634] a major industry called lattice gauge theory,
+- [00:40:31,634 - 00:40:33,634] or lattice quantum field theory.
+- [00:40:33,634 - 00:40:36,634] Lattice because it divides the world into a lattice.
+- [00:40:36,634 - 00:40:40,634] And this has been studied to death,
+- [00:40:40,634 - 00:40:44,634] how to do these integrals in practice.
+- [00:40:44,634 - 00:40:49,634] By now, it is a very effective tool, but it
+- [00:40:49,634 - 00:40:54,634] took, you know, some 30 years to develop the computing technology.
+- [00:40:54,634 - 00:40:57,134] I was involved in it in the
+- [00:40:57,134 - 00:40:59,634] very, very beginning, the very, very beginning.
+- [00:40:59,634 - 00:41:03,634] I wasn't involved in the computer technology of it.
+- [00:41:03,634 - 00:41:05,634] I was involved in it in the very beginning,
+- [00:41:05,634 - 00:41:07,634] but setting up the rules for lattice gauge theory.
+- [00:41:07,634 - 00:41:08,634] Okay?
+- [00:41:08,634 - 00:41:10,634] So there was a history.
+- [00:41:10,634 - 00:41:14,134] The first part of it was setting up the
+- [00:41:14,134 - 00:41:17,634] rules for it, and that took about three weeks,
+- [00:41:17,634 - 00:41:20,134] and then something like 30 years to
+- [00:41:20,134 - 00:41:22,634] develop the technology to compute these things.
+- [00:41:22,634 - 00:41:23,634] And you're right.
+- [00:41:23,634 - 00:41:25,634] I mean, you know, how do you
+- [00:41:25,634 - 00:41:27,634] know when you've sampled enough of the space?
+- [00:41:27,634 - 00:41:28,634] Okay?
+- [00:41:28,634 - 00:41:29,634] So there are...
+- [00:41:29,634 - 00:41:31,134] And a lot of the wisdom
+- [00:41:31,134 - 00:41:32,634] of it came from statistical research.
+- [00:41:32,634 - 00:41:33,634] Okay?
+- [00:41:33,634 - 00:41:35,634] And you know, you have statistical mechanics
+- [00:41:35,634 - 00:41:37,634] where you do very much the same thing.
+- [00:41:37,634 - 00:41:41,634] You calculate partition functions or
+- [00:41:41,634 - 00:41:45,634] probability distributions for this checkerboard here,
+- [00:41:45,634 - 00:41:47,634] not a quantum field theory.
+- [00:41:47,634 - 00:41:52,134] It could be a real crystal lattice, and
+- [00:41:52,134 - 00:41:56,634] you might be summing over configurations of whether
+- [00:41:56,634 - 00:42:00,634] there is or isn't an electron at each site.
+- [00:42:00,634 - 00:42:02,634] So a lot of the methodology came from...
+- [00:42:02,634 - 00:42:07,634] The quantitative study of statistical mechanics systems.
+- [00:42:07,634 - 00:42:08,634] We have the same question.
+- [00:42:08,634 - 00:42:11,634] How do you know when you've sampled enough?
+- [00:42:11,634 - 00:42:18,634] And this is not the subject of tonight's
+- [00:42:18,634 - 00:42:25,634] lecture, so the answer is the experts know.
+- [00:42:25,634 - 00:42:27,634] Or they think they know.
+- [00:42:27,634 - 00:42:28,634] And they get good answers.
+- [00:42:28,634 - 00:42:31,634] They get good answers which agree with experiments.
+- [00:42:31,634 - 00:42:34,634] So it seems to work.
+- [00:42:34,634 - 00:42:35,634] Okay.
+- [00:42:35,634 - 00:42:40,634] So let's go back and remember that quantum
+- [00:42:40,634 - 00:42:45,634] fields are a shorthand for creation and annihilation operators.
+- [00:42:45,634 - 00:42:50,134] And if we're talking about, let's say, the product of
+- [00:42:50,134 - 00:42:54,634] some fields in this box times the fields in this box,
+- [00:42:54,634 - 00:42:57,134] that can represent the annihilation
+- [00:42:57,134 - 00:42:59,634] of a particle in this box
+- [00:42:59,634 - 00:43:03,634] and the creation of a particle in a neighboring box.
+- [00:43:03,634 - 00:43:06,634] So we might just represent it by
+- [00:43:06,634 - 00:43:09,634] a particle moving from one box to another.
+- [00:43:09,634 - 00:43:14,634] What kind of things in the action here actually do
+- [00:43:14,634 - 00:43:19,634] correspond to a particle moving from one box to another?
+- [00:43:19,634 - 00:43:20,634] So let me tell you.
+- [00:43:20,634 - 00:43:24,134] There are things in the action here which,
+- [00:43:24,134 - 00:43:27,634] strictly speaking, are not associated with one box,
+- [00:43:27,634 - 00:43:28,634] but with a pair of boxes.
+- [00:43:28,634 - 00:43:30,634] Namely, the derivative terms.
+- [00:43:30,634 - 00:43:33,634] The derivative terms, I was a little bit hasty here when
+- [00:43:33,634 - 00:43:36,634] I said you multiply all these things together, one for each box,
+- [00:43:36,634 - 00:43:40,134] as a little bit of a cheat because there are
+- [00:43:40,134 - 00:43:43,634] terms in the Lagrangian which are associated with pairs of boxes.
+- [00:43:43,634 - 00:43:46,134] So really you can think of it as summing
+- [00:43:46,134 - 00:43:48,634] over the boxes and summing over neighboring pairs of boxes.
+- [00:43:48,634 - 00:43:50,634] But that's a detail.
+- [00:43:50,634 - 00:43:52,634] Which terms involve pairs of boxes?
+- [00:43:52,634 - 00:43:54,634] The terms which involve pairs of boxes are the
+- [00:43:54,634 - 00:43:56,634] ones that are associated with the annihilation of a particle.
+- [00:43:56,634 - 00:44:02,134] The terms which involve pairs of boxes are things
+- [00:44:02,134 - 00:44:07,634] like the derivative of phi with respect to t squared.
+- [00:44:07,634 - 00:44:13,134] The derivative of phi on a lattice
+- [00:44:13,134 - 00:44:18,634] becomes the difference of phi in neighboring boxes.
+- [00:44:18,634 - 00:44:21,634] So in here, this derivative of phi with
+- [00:44:21,634 - 00:44:24,634] respect to t might really be written as
+- [00:44:24,634 - 00:44:25,634] phi at point t.
+- [00:44:25,634 - 00:44:31,634] So phi at point x, well, phi at point t
+- [00:44:31,634 - 00:44:37,634] and x minus phi at point neighboring time and x.
+- [00:44:37,634 - 00:44:39,634] Do we actually have second derivatives?
+- [00:44:39,634 - 00:44:41,634] No second derivatives. These are first derivatives.
+- [00:44:41,634 - 00:44:42,634] I mean, would we?
+- [00:44:42,634 - 00:44:43,634] Never.
+- [00:44:43,634 - 00:44:44,634] Okay.
+- [00:44:44,634 - 00:44:46,634] Never. Bad idea.
+- [00:44:46,634 - 00:44:48,634] Does real damage.
+- [00:44:48,634 - 00:44:50,634] Now, what about derivatives
+- [00:44:50,634 - 00:44:52,634] with respect to spatial coordinates?
+- [00:44:52,634 - 00:44:53,634] Same thing.
+- [00:44:53,634 - 00:44:54,634] It corresponds to the...
+- [00:44:55,634 - 00:44:59,634] to the difference of two neighboring points in space.
+- [00:44:59,634 - 00:45:05,134] And then the instruction is to take
+- [00:45:05,134 - 00:45:10,634] one half of the square of the derivative.
+- [00:45:10,634 - 00:45:12,634] Well, one half of the square
+- [00:45:12,634 - 00:45:14,634] of the derivative will have in it...
+- [00:45:14,634 - 00:45:18,634] I just want to focus now on the terms
+- [00:45:18,634 - 00:45:22,634] which multiply phi times phi at a neighboring point.
+- [00:45:22,634 - 00:45:24,634] Let me just focus on those.
+- [00:45:24,634 - 00:45:26,634] There's also terms in here which
+- [00:45:26,634 - 00:45:28,634] multiply by phi by the same...
+- [00:45:28,634 - 00:45:30,634] by the value of the same point.
+- [00:45:30,634 - 00:45:34,634] But in particular, there are terms in
+- [00:45:34,634 - 00:45:38,634] this Lagrangian which multiply phi at one point
+- [00:45:38,634 - 00:45:41,634] times phi at a neighboring point.
+- [00:45:41,634 - 00:45:50,634] Every time you lay down...
+- [00:45:50,634 - 00:45:52,634] a term like this,
+- [00:45:52,634 - 00:45:55,634] represents the motion of a particle from here to here.
+- [00:45:55,634 - 00:45:57,634] You can think of it that way.
+- [00:45:57,634 - 00:45:58,634] Okay, let's...
+- [00:45:58,634 - 00:45:59,634] let's take...
+- [00:45:59,634 - 00:46:02,634] let's concentrate on these terms.
+- [00:46:02,634 - 00:46:05,634] Let's forget the interactions in the Lagrangian.
+- [00:46:05,634 - 00:46:07,634] These are simply...
+- [00:46:07,634 - 00:46:10,134] these are called the kinetic terms,
+- [00:46:10,134 - 00:46:12,634] the quadratic terms in the Lagrangian.
+- [00:46:12,634 - 00:46:15,634] They're things which are easy to deal with,
+- [00:46:15,634 - 00:46:17,634] and they do correspond to motion of
+- [00:46:17,634 - 00:46:19,634] the particle from one point to another.
+- [00:46:19,634 - 00:46:20,634] Let's look at this.
+- [00:46:20,634 - 00:46:22,634] And let's include only those.
+- [00:46:22,634 - 00:46:27,634] Let's...
+- [00:46:27,634 - 00:46:29,634] We don't even need to write it in this form.
+- [00:46:29,634 - 00:46:34,134] Let's just write it as e to the minus
+- [00:46:34,134 - 00:46:38,634] i times the sum over all pairs of boxes,
+- [00:46:38,634 - 00:46:41,634] over all neighboring pairs of boxes.
+- [00:46:41,634 - 00:46:43,134] I said over all boxes, but
+- [00:46:43,134 - 00:46:44,634] it's clear that's not quite right.
+- [00:46:44,634 - 00:46:46,134] We want to think of it
+- [00:46:46,134 - 00:46:47,634] as sums over neighboring pairs of boxes,
+- [00:46:47,634 - 00:46:50,634] of things like phi in one point,
+- [00:46:50,634 - 00:46:54,634] or things like phi in one box,
+- [00:46:54,634 - 00:46:56,634] times phi in a neighboring box.
+- [00:46:56,634 - 00:46:59,634] So I'll use the notation x in x prime
+- [00:46:59,634 - 00:47:04,634] to represent neighbors on the lattice.
+- [00:47:04,634 - 00:47:08,634] That's what goes into the action.
+- [00:47:08,634 - 00:47:11,634] Well that's what goes into the exponential of the action.
+- [00:47:11,634 - 00:47:14,634] There are some coefficients in front of it, of course,
+- [00:47:14,634 - 00:47:17,634] but that's of secondary importance.
+- [00:47:17,634 - 00:47:20,634] And now we can expand out this exponential.
+- [00:47:20,634 - 00:47:26,734] Let's see what's there. There's 1 minus i times
+- [00:47:26,734 - 00:47:32,834] the sum of phi of x, phi of x prime
+- [00:47:34,594 - 00:47:40,294] And then things like, let's see, what's the next term?
+- [00:47:41,774 - 00:47:43,744] i times i is minus 1,
+- [00:47:43,744 - 00:47:45,714] so it looks like it's minus
+- [00:47:45,714 - 00:47:51,394] summation of phi of x, phi of x prime
+- [00:47:55,114 - 00:47:56,114] squared
+- [00:47:57,313 - 00:48:01,273] times another factor of the sum of
+- [00:48:01,273 - 00:48:05,234] phi of x, phi of x prime
+- [00:48:06,073 - 00:48:08,493] Or this could be phi of x
+- [00:48:08,493 - 00:48:10,914] prime, x double prime, x triple prime
+- [00:48:11,994 - 00:48:13,994] x double prime and x triple prime
+- [00:48:13,994 - 00:48:15,694] are one pair of neighbors
+- [00:48:15,694 - 00:48:18,514] This is another pair of neighbors, and I think I
+- [00:48:18,514 - 00:48:21,334] left out a factor. There should be a two factorial downstairs
+- [00:48:24,053 - 00:48:28,174] I'm simply expanding out the exponential here
+- [00:48:28,994 - 00:48:32,393] And what's the next one? Well, it has three powers
+- [00:48:32,393 - 00:48:35,793] of the sum, four powers of the sum and so forth
+- [00:48:36,374 - 00:48:38,574] Okay, let's look at each term here
+- [00:48:39,474 - 00:48:41,474] the first term has
+- [00:48:45,694 - 00:48:51,234] something which involves a sum over the lattice of
+- [00:48:54,053 - 00:48:56,453] An annihilation of a particle at one point
+- [00:48:56,453 - 00:48:58,854] and a creation of a particle at another point
+- [00:48:59,634 - 00:49:01,634] at a neighboring point
+- [00:49:01,754 - 00:49:03,754] the next term
+- [00:49:04,634 - 00:49:05,654] Oh
+- [00:49:05,654 - 00:49:07,434] incidentally
+- [00:49:07,434 - 00:49:10,144] The rule that I'm going to tell you again. I'm in the business
+- [00:49:10,144 - 00:49:12,854] of telling you some rules now. I'm going to tell you some rules now
+- [00:49:13,793 - 00:49:15,674] the amplitude of the
+- [00:49:15,694 - 00:49:16,694] Particle is going to be the same as
+- [00:49:16,694 - 00:49:17,694] the amplitude of the particle at one point
+- [00:49:17,694 - 00:49:18,694] So if you're going to have an
+- [00:49:18,694 - 00:49:19,694] operation to put a particle into the system
+- [00:49:19,694 - 00:49:21,844] The rule is you've got to close
+- [00:49:21,844 - 00:49:23,994] off. You must not have a dangling
+- [00:49:25,254 - 00:49:26,934] endpoint a
+- [00:49:26,934 - 00:49:28,494] dangling endpoint
+- [00:49:28,494 - 00:49:31,114] Can only dangle like that if you've got an
+- [00:49:31,114 - 00:49:33,734] operation to put a particle into the system a
+- [00:49:34,533 - 00:49:36,134] dangling endpoint for example
+- [00:49:36,134 - 00:49:38,864] We're going to have diagrams which have particles going
+- [00:49:38,864 - 00:49:41,594] from one point to another if they end like this
+- [00:49:42,174 - 00:49:43,884] They're illegal unless there's an
+- [00:49:43,884 - 00:49:45,594] instruction to put a particle
+- [00:49:45,694 - 00:49:47,074] In at this point and to
+- [00:49:47,074 - 00:49:48,454] take a particle out at that point
+- [00:49:50,414 - 00:49:52,714] So endpoints like this
+- [00:49:54,053 - 00:49:57,154] We will simply rule out as things
+- [00:49:58,214 - 00:50:00,574] unless they correspond to a
+- [00:50:02,414 - 00:50:05,254] Specific instruction to put a particle in at this point
+- [00:50:05,254 - 00:50:08,094] and take it out since we're only putting particles in
+- [00:50:08,434 - 00:50:10,004] In the initial state and taking
+- [00:50:10,004 - 00:50:11,574] them out in the final state
+- [00:50:12,094 - 00:50:13,674] The only endpoints would be allowed
+- [00:50:13,674 - 00:50:15,254] on the top and the bottom
+- [00:50:16,513 - 00:50:20,394] Okay, so let's let's take a particular term here
+- [00:50:20,394 - 00:50:22,094] Phi of x and Phi of x'
+- [00:50:23,954 - 00:50:26,584] These are neighboring points on the lattice and they correspond
+- [00:50:26,584 - 00:50:29,214] to a motion of a particle from one place to another
+- [00:50:30,974 - 00:50:32,664] As a sum of terms that could be
+- [00:50:32,664 - 00:50:34,354] a term for a particle from here to here
+- [00:50:34,574 - 00:50:36,533] A term for a particle from here to here
+- [00:50:36,734 - 00:50:38,773] A term for a particle from here to here
+- [00:50:39,714 - 00:50:41,714] But none of these will contribute
+- [00:50:42,374 - 00:50:45,273] Unless of course there would be one situation
+- [00:50:45,273 - 00:50:45,463] In which they would be in
+- [00:50:45,463 - 00:50:45,654] a finite space and then I can't...
+- [00:50:45,654 - 00:50:50,384] they would contribute, that would be, of course, if
+- [00:50:50,384 - 00:50:55,114] this layered structure here was only two layers high,
+- [00:50:55,854 - 00:50:58,334] and we put in a particle over here
+- [00:50:58,334 - 00:51:00,814] and took one out at the neighboring point.
+- [00:51:01,414 - 00:51:05,664] Then there would be a contribution to the amplitude
+- [00:51:05,664 - 00:51:09,914] of that coming from this term in the product,
+- [00:51:10,434 - 00:51:12,534] phi of x times phi of neighboring x.
+- [00:51:12,534 - 00:51:16,784] That would contribute, and it would contribute
+- [00:51:16,784 - 00:51:21,034] to the amplitude, basically the factor minus i.
+- [00:51:21,714 - 00:51:24,464] It would tell you that the amplitude to go from
+- [00:51:24,464 - 00:51:27,214] one point to another was simply minus i, this coefficient here.
+- [00:51:28,514 - 00:51:32,534] Okay, but that's not very good if this...
+- [00:51:38,194 - 00:51:39,954] How do we get from here to here?
+- [00:51:41,194 - 00:51:42,294] Okay, from here to here.
+- [00:51:42,374 - 00:51:42,514] How do we get from here to here?
+- [00:51:42,514 - 00:51:42,534] How do we get from here to here?
+- [00:51:42,534 - 00:51:46,484] How do we get a particle from here to here and calculate the amplitude
+- [00:51:46,484 - 00:51:50,434] that if we put in a particle over here, that will detect it over here?
+- [00:51:50,994 - 00:51:56,234] For that, we have to find in this sum of products here,
+- [00:51:56,234 - 00:52:01,474] we have to have a term which will leave no dangling ends.
+- [00:52:02,334 - 00:52:04,414] Okay, let's just take this term here.
+- [00:52:06,494 - 00:52:09,504] This has a particle moving from x to x prime,
+- [00:52:09,504 - 00:52:12,514] and then another particle moving from x to x prime.
+- [00:52:12,534 - 00:52:14,774] So we have x double prime to x triple prime.
+- [00:52:16,394 - 00:52:20,574] Are you saying the second term contributes only
+- [00:52:20,574 - 00:52:24,754] when the initial and final state are adjacent?
+- [00:52:25,594 - 00:52:26,674] This term here, yeah.
+- [00:52:27,734 - 00:52:28,714] Yeah, that's right.
+- [00:52:29,454 - 00:52:31,454] This notation means
+- [00:52:31,454 - 00:52:33,454] neighboring particles, neighboring boxes.
+- [00:52:34,554 - 00:52:36,944] Here we have one neighboring box, and
+- [00:52:36,944 - 00:52:39,334] here we have two other neighboring boxes.
+- [00:52:39,334 - 00:52:39,814] Yeah.
+- [00:52:40,074 - 00:52:42,494] So, for that we have the five x prime.
+- [00:52:42,494 - 00:52:46,494] The first term is 5x 5x prime.
+- [00:52:46,494 - 00:52:46,994] Yeah.
+- [00:52:46,994 - 00:52:48,994] And the second term is 5 double prime.
+- [00:52:48,994 - 00:52:53,124] Yeah, it just means pick two
+- [00:52:53,124 - 00:52:57,254] neighboring and sum over all possibilities.
+- [00:52:58,073 - 00:53:02,494] Sum, this is a sum over all neighboring pairs.
+- [00:53:02,494 - 00:53:04,494] So it doesn't have to be adjacent to the first?
+- [00:53:04,494 - 00:53:05,494] No, no, no, no.
+- [00:53:05,494 - 00:53:07,494] In general not, but it can be.
+- [00:53:07,494 - 00:53:09,523] In fact, this could even be the
+- [00:53:09,523 - 00:53:11,553] same pair, but it doesn't have to be.
+- [00:53:11,553 - 00:53:12,053] Yeah.
+- [00:53:12,054 - 00:53:13,054] Sum over all of them.
+- [00:53:13,054 - 00:53:15,054] All right, so what does this one do?
+- [00:53:15,054 - 00:53:18,054] It moves a particle from x to x prime, and this
+- [00:53:18,054 - 00:53:21,054] one moves a particle from x double prime to x triple prime.
+- [00:53:21,054 - 00:53:22,054] All right.
+- [00:53:22,054 - 00:53:23,054] So one of them moves
+- [00:53:23,054 - 00:53:24,054] a particle from here to here.
+- [00:53:24,054 - 00:53:26,554] This is x prime to x double,
+- [00:53:26,554 - 00:53:29,054] to x, from x to x prime.
+- [00:53:29,054 - 00:53:30,554] And then the other one moves
+- [00:53:30,554 - 00:53:32,054] a particle from here to here.
+- [00:53:32,054 - 00:53:35,054] That's x double prime and x triple prime, let's say.
+- [00:53:36,054 - 00:53:40,054] Obviously there's going to be dangling ends.
+- [00:53:41,054 - 00:53:42,054] Unless,
+- [00:53:42,054 - 00:53:45,554] well, let's take this case here
+- [00:53:45,554 - 00:53:49,054] where we only have three layers.
+- [00:53:49,054 - 00:53:53,554] If we only have three layers, the only way to avoid dangling
+- [00:53:53,554 - 00:53:58,054] ends is to have the first particle connected to the second particle,
+- [00:53:58,054 - 00:54:01,554] sorry, the first box connected to the neighboring
+- [00:54:01,554 - 00:54:05,054] box, and then this box connected to this box.
+- [00:54:05,054 - 00:54:08,054] There won't be any dangling ends except for the dangling
+- [00:54:08,054 - 00:54:11,054] ends which correspond to the initial particle and the final particle.
+- [00:54:11,054 - 00:54:19,054] So if this was only three layers thick, we would find a
+- [00:54:19,054 - 00:54:27,054] contribution here, namely where x prime is the same as x double prime,
+- [00:54:27,054 - 00:54:32,554] that transports the particle from the initial position to the intermediate
+- [00:54:32,554 - 00:54:38,054] position, and then from the intermediate position to the final position.
+- [00:54:38,054 - 00:54:39,054] All right.
+- [00:54:39,054 - 00:54:40,054] So,
+- [00:54:40,054 - 00:54:41,054] let's look at this.
+- [00:54:41,054 - 00:54:42,054] Okay.
+- [00:54:42,054 - 00:54:44,554] What would be the amplitude then associated
+- [00:54:44,554 - 00:54:47,054] with a particle going from here to here?
+- [00:54:47,054 - 00:54:51,054] At least corresponding to this term, it would be
+- [00:54:51,054 - 00:54:55,054] a one over two factorial and a minus sign.
+- [00:54:55,054 - 00:54:56,054] That would be it.
+- [00:54:56,054 - 00:54:58,554] You read off the coefficients, and
+- [00:54:58,554 - 00:55:01,054] the coefficients tell you the amplitude.
+- [00:55:01,054 - 00:55:03,054] Thus far, we don't have a
+- [00:55:03,054 - 00:55:05,054] way to get from here to here.
+- [00:55:05,054 - 00:55:08,054] Not with two factorials, but with two factorials.
+- [00:55:08,054 - 00:55:09,054] Okay.
+- [00:55:09,054 - 00:55:11,054] Not with two steps, anyway.
+- [00:55:11,054 - 00:55:12,054] Two steps can...
+- [00:55:12,054 - 00:55:18,554] However, if this was only two layers thick, we would have now
+- [00:55:18,554 - 00:55:25,054] a way to get from here to here, to go across the diagonal.
+- [00:55:25,054 - 00:55:27,054] How do we go across the diagonal?
+- [00:55:27,054 - 00:55:30,554] We go again to this second order term here,
+- [00:55:30,554 - 00:55:34,054] the term which has a two factorial in it,
+- [00:55:34,054 - 00:55:35,554] and we find the term which
+- [00:55:35,554 - 00:55:37,054] takes us from x to x.
+- [00:55:37,054 - 00:55:42,054] From x to x prime, and then from x prime...
+- [00:55:42,054 - 00:55:43,554] From x to x prime,
+- [00:55:43,554 - 00:55:45,054] and then from x prime to...
+- [00:55:45,054 - 00:55:52,054] From here to here, and then here to here.
+- [00:55:52,054 - 00:55:53,054] What's that?
+- [00:55:53,054 - 00:55:55,054] There are other paths.
+- [00:55:55,054 - 00:55:56,054] There are other...
+- [00:55:56,054 - 00:55:58,054] Other paths to get to this angle.
+- [00:55:58,054 - 00:55:59,054] Yeah.
+- [00:55:59,054 - 00:56:00,554] There's another path where you jump from
+- [00:56:00,554 - 00:56:02,054] here first to here, and then up.
+- [00:56:02,054 - 00:56:05,054] I don't think there's any other besides that.
+- [00:56:07,054 - 00:56:08,054] Yeah.
+- [00:56:08,054 - 00:56:09,054] Not with two...
+- [00:56:09,054 - 00:56:10,054] Oh, not with just two terms.
+- [00:56:10,054 - 00:56:11,054] Right.
+- [00:56:11,054 - 00:56:12,054] Okay.
+- [00:56:12,054 - 00:56:14,054] But now, there was no reason
+- [00:56:14,054 - 00:56:16,054] to stop here with only two terms.
+- [00:56:16,054 - 00:56:19,054] Let's go on.
+- [00:56:19,054 - 00:56:21,054] We can have three terms.
+- [00:56:21,054 - 00:56:24,554] Three terms would correspond to going
+- [00:56:24,554 - 00:56:28,054] from one box to an adjacent box.
+- [00:56:28,054 - 00:56:33,054] Well, it would correspond to three distinct steps.
+- [00:56:33,054 - 00:56:34,554] And if those three distinct steps were
+- [00:56:34,554 - 00:56:36,054] to connect it together in a row,
+- [00:56:36,054 - 00:56:38,554] or to connect it together into a chain,
+- [00:56:38,554 - 00:56:41,054] in other words, in this sum of products,
+- [00:56:41,054 - 00:56:46,054] we found the term which took us...
+- [00:56:46,054 - 00:56:50,054] Here, we could come right back again.
+- [00:56:50,054 - 00:56:52,054] That would contribute together with the
+- [00:56:52,054 - 00:56:54,054] direct jump from here to here,
+- [00:56:54,054 - 00:56:56,554] would contribute to the amplitude to
+- [00:56:56,554 - 00:56:59,054] go from this point to this point.
+- [00:56:59,054 - 00:57:02,554] So you see, built into this prescription is
+- [00:57:02,554 - 00:57:06,054] something like the original particle path integral idea.
+- [00:57:06,054 - 00:57:08,554] The amplitude to get from here to here is the
+- [00:57:08,554 - 00:57:11,054] sum over the amplitude to go from here to here,
+- [00:57:11,054 - 00:57:13,554] and the amplitude to go through
+- [00:57:13,554 - 00:57:16,054] another root, also this one back here.
+- [00:57:16,054 - 00:57:21,054] And eventually, if you expand this out to arbitrary order,
+- [00:57:21,054 - 00:57:26,054] there will be a term in there for every possible
+- [00:57:26,054 - 00:57:31,054] root that you can take to go from any initial configuration
+- [00:57:31,054 - 00:57:34,054] to any final configuration of that particle.
+- [00:57:34,054 - 00:57:35,054] Okay.
+- [00:57:35,054 - 00:57:39,554] So, first of all, just thinking
+- [00:57:39,554 - 00:57:44,054] about a single particle moving in spacetime,
+- [00:57:44,054 - 00:57:48,054] this field Lagrangian contains information
+- [00:57:48,054 - 00:57:52,054] about the amplitudes to go from...
+- [00:57:52,054 - 00:57:56,054] Now, let's take an arbitrary...
+- [00:57:56,054 - 00:58:00,054] to go from any point to any other point.
+- [00:58:00,054 - 00:58:01,554] What you do is you add up
+- [00:58:01,554 - 00:58:03,054] all of the possible ways of going there,
+- [00:58:03,054 - 00:58:06,054] and what is the coefficient
+- [00:58:06,054 - 00:58:09,054] for each way of going there?
+- [00:58:09,054 - 00:58:13,054] You read it off the coefficient that
+- [00:58:13,054 - 00:58:17,054] multiplies that particular term in this sum.
+- [00:58:17,054 - 00:58:21,054] 1 over 2 factorial, 1 over 3 factorial.
+- [00:58:21,054 - 00:58:23,054] Some of them have i's,
+- [00:58:23,054 - 00:58:25,054] some of them don't have i's.
+- [00:58:25,054 - 00:58:28,054] Remember that i squared is minus 1, so some of
+- [00:58:28,054 - 00:58:31,054] them have i's and some of them don't have i's.
+- [00:58:31,054 - 00:58:34,054] And so in general, the amplitude to go
+- [00:58:34,054 - 00:58:37,054] from one point will be a complex number.
+- [00:58:37,054 - 00:58:39,054] But they can also go back and forth.
+- [00:58:39,054 - 00:58:40,554] That's what's new. That's one
+- [00:58:40,554 - 00:58:42,054] of the things that's new here,
+- [00:58:42,054 - 00:58:44,554] that they can propagate up and
+- [00:58:44,554 - 00:58:47,054] down, and that's a feature of relativity.
+- [00:58:47,054 - 00:58:52,054] Even the same two cells.
+- [00:58:52,054 - 00:58:53,054] What's that?
+- [00:58:53,054 - 00:58:55,054] Even the same two cells thousands of times.
+- [00:58:55,054 - 00:58:57,054] Oh, indeed.
+- [00:58:57,054 - 00:58:58,054] But you can go backwards.
+- [00:58:58,054 - 00:58:59,054] Yeah.
+- [00:58:59,054 - 00:59:00,054] All right.
+- [00:59:00,054 - 00:59:06,054] Let's talk about going backward in time.
+- [00:59:06,054 - 00:59:09,554] You could think of, here's
+- [00:59:09,554 - 00:59:13,054] one that goes backward in time.
+- [00:59:13,054 - 00:59:16,554] You can think of this as either allowing a
+- [00:59:16,554 - 00:59:20,054] new rule where particles can go backward in time,
+- [00:59:20,054 - 00:59:24,054] or you can follow time forward and say what really
+- [00:59:24,054 - 00:59:28,054] happened here is the particle moved from here to here,
+- [00:59:28,054 - 00:59:30,054] and then a particle pair,
+- [00:59:30,054 - 00:59:32,054] particle and antiparticle in fact,
+- [00:59:32,054 - 00:59:34,054] were created,
+- [00:59:34,054 - 00:59:37,054] the particle half of it going to here,
+- [00:59:37,054 - 00:59:40,054] and the antiparticle combining together
+- [00:59:40,054 - 00:59:43,054] with the original particle to annihilate.
+- [00:59:43,054 - 00:59:45,054] Think of it either way.
+- [00:59:45,054 - 00:59:51,054] But the rule now allows trajectories which go backward.
+- [00:59:53,054 - 00:59:57,054] Let's come back to this term here.
+- [01:00:00,054 - 01:00:02,554] In this form of relation, since
+- [01:00:02,554 - 01:00:05,054] you have n factorials in the denominator,
+- [01:00:05,054 - 01:00:07,054] does this mean that you sort
+- [01:00:07,054 - 01:00:09,054] of have convergence in the nulls?
+- [01:00:09,054 - 01:00:11,054] Does it help the convergence?
+- [01:00:11,054 - 01:00:17,054] Well, the n factorials certainly help the convergence,
+- [01:00:17,054 - 01:00:19,054] but they're not enough to make it converge.
+- [01:00:19,054 - 01:00:20,054] But the expansion of e to the i something,
+- [01:00:20,054 - 01:00:22,054] of course, this is just an expansion
+- [01:00:22,054 - 01:00:24,054] of e to the i something or other,
+- [01:00:24,054 - 01:00:26,054] so of course it converges.
+- [01:00:26,054 - 01:00:27,054] No, no, no, no, no, no, no.
+- [01:00:27,054 - 01:00:30,054] But the sum over configurations doesn't have to converge.
+- [01:00:30,054 - 01:00:32,054] Yeah.
+- [01:00:32,054 - 01:00:34,054] This part converges.
+- [01:00:34,054 - 01:00:37,054] And this is going to be
+- [01:00:37,054 - 01:00:40,054] some finite number of total configurations considered.
+- [01:00:40,054 - 01:00:42,054] Yeah.
+- [01:00:42,054 - 01:00:44,054] Okay.
+- [01:00:44,054 - 01:00:46,554] Let's, let me, all right, now let's
+- [01:00:46,554 - 01:00:49,054] go on to a slightly different problem.
+- [01:00:49,054 - 01:00:52,054] We studied the particle moving from one point to another.
+- [01:00:52,054 - 01:00:56,054] Now let's suppose we put in two particles,
+- [01:00:56,054 - 01:00:57,554] and we want to know what
+- [01:00:57,554 - 01:00:59,054] the probability for the two particles
+- [01:00:59,054 - 01:01:00,054] to go to two other particles.
+- [01:01:00,054 - 01:01:03,054] In other words, we want to start,
+- [01:01:03,054 - 01:01:05,554] and I'm going to take the case where
+- [01:01:05,554 - 01:01:08,054] there are only two layers for a moment.
+- [01:01:08,054 - 01:01:11,054] There's the case with only two layers for a moment.
+- [01:01:11,054 - 01:01:14,054] And I want to know the probability
+- [01:01:14,054 - 01:01:17,054] that if I start a particle over here,
+- [01:01:17,054 - 01:01:19,054] it will get to here.
+- [01:01:19,054 - 01:01:20,554] No, if I start two particles,
+- [01:01:20,554 - 01:01:22,054] one over here and one over here,
+- [01:01:22,054 - 01:01:24,054] that they'll get to here.
+- [01:01:24,054 - 01:01:26,054] Okay.
+- [01:01:26,054 - 01:01:28,054] Well, come back to this term.
+- [01:01:28,054 - 01:01:29,054] Now remember what this term did for me before.
+- [01:01:29,054 - 01:01:35,054] Before, it allowed me to hop three units.
+- [01:01:35,054 - 01:01:38,054] But that same term allows two
+- [01:01:38,054 - 01:01:41,054] particles each to go one unit.
+- [01:01:41,054 - 01:01:44,054] Look at it.
+- [01:01:44,054 - 01:01:47,054] This can create a particle.
+- [01:01:47,054 - 01:01:50,054] This can annihilate it.
+- [01:01:50,054 - 01:01:54,054] This can create a different particle and annihilate it.
+- [01:01:54,054 - 01:01:58,054] This corresponds to a graph
+- [01:01:58,054 - 01:02:00,054] where you start a particle in here,
+- [01:02:00,054 - 01:02:02,054] and it goes to here.
+- [01:02:02,054 - 01:02:04,054] That's this factor.
+- [01:02:04,054 - 01:02:06,054] And the other factor, instead of
+- [01:02:06,054 - 01:02:08,054] taking the particle that's already there
+- [01:02:08,054 - 01:02:10,054] and moving it over here,
+- [01:02:10,054 - 01:02:11,554] it just takes a totally new
+- [01:02:11,554 - 01:02:13,054] particle and moves it to here.
+- [01:02:13,054 - 01:02:14,054] Okay.
+- [01:02:14,054 - 01:02:17,054] So this same factor, this same term,
+- [01:02:17,054 - 01:02:22,054] contributes both to the motion of a single particle,
+- [01:02:22,054 - 01:02:24,054] three boxes,
+- [01:02:24,054 - 01:02:27,054] and it contributes to two particles each moving one box.
+- [01:02:27,054 - 01:02:28,054] Did I say that right?
+- [01:02:28,054 - 01:02:29,054] More or less.
+- [01:02:29,054 - 01:02:32,054] Three boxes, one, two, two boxes.
+- [01:02:32,054 - 01:02:34,054] Yeah.
+- [01:02:34,054 - 01:02:37,054] So there's a lot in here besides just
+- [01:02:37,054 - 01:02:40,054] motion of a particle from one place to another.
+- [01:02:40,054 - 01:02:42,554] It has information in it
+- [01:02:42,554 - 01:02:45,054] about any number of starting particles
+- [01:02:45,054 - 01:02:51,054] going to any other number of final particles.
+- [01:02:51,054 - 01:02:56,054] Now, in fact, particle number doesn't change
+- [01:02:56,054 - 01:02:58,054] as long as we just take this into account.
+- [01:02:58,054 - 01:02:59,054] Why not?
+- [01:02:59,054 - 01:03:05,054] Because every starting, every dangling endpoint here,
+- [01:03:05,054 - 01:03:08,054] well, let's see.
+- [01:03:08,054 - 01:03:12,054] Yeah, it has to end somewhere.
+- [01:03:12,054 - 01:03:13,554] Well, if you start and
+- [01:03:13,554 - 01:03:15,054] end with different numbers of particles,
+- [01:03:15,054 - 01:03:17,054] then obviously something has to happen.
+- [01:03:17,054 - 01:03:21,054] Well, that would mean there has
+- [01:03:21,054 - 01:03:25,054] to be a dangling in somewheres.
+- [01:03:25,054 - 01:03:28,054] Supposing I wanted to, I mean, I can't,
+- [01:03:28,054 - 01:03:30,054] how would you get from one particle to two particles?
+- [01:03:30,054 - 01:03:32,054] What if I start with electron and positron,
+- [01:03:32,054 - 01:03:34,054] I could end up with no particles?
+- [01:03:34,054 - 01:03:36,054] Well, okay, that would be something,
+- [01:03:36,054 - 01:03:37,554] that would be something, that
+- [01:03:37,554 - 01:03:39,054] would just be something like this.
+- [01:03:41,054 - 01:03:42,054] Two particles.
+- [01:03:42,054 - 01:03:44,054] Let's put another layer in here.
+- [01:03:44,054 - 01:03:46,054] Yeah.
+- [01:03:46,054 - 01:03:47,054] Yes.
+- [01:03:47,054 - 01:03:48,054] That's true.
+- [01:03:48,054 - 01:03:51,054] That would correspond to an electron and a positron,
+- [01:03:51,054 - 01:03:53,054] for example, annihilating each other.
+- [01:03:53,054 - 01:03:54,054] The only problem with it is it doesn't change.
+- [01:03:54,054 - 01:03:57,054] The only problem with it is it doesn't conserve energy.
+- [01:03:57,054 - 01:03:59,054] So in fact, when you added up all these amplitudes,
+- [01:03:59,054 - 01:04:03,054] you would get zero, but, but, but,
+- [01:04:03,054 - 01:04:05,054] So you have to,
+- [01:04:05,054 - 01:04:08,054] Yeah, but, yeah, but under certain circumstances,
+- [01:04:08,054 - 01:04:10,054] if there was an electromagnetic
+- [01:04:10,054 - 01:04:12,054] field to soak up the energy,
+- [01:04:12,054 - 01:04:15,054] yes, you're right, it would, it would,
+- [01:04:15,054 - 01:04:17,054] it would have information in it
+- [01:04:17,054 - 01:04:19,054] about an electron and a positron annihilating.
+- [01:04:19,054 - 01:04:22,054] Right, so there's just a lot in here.
+- [01:04:22,054 - 01:04:24,054] There's a lot in here.
+- [01:04:24,054 - 01:04:26,054] But not everything.
+- [01:04:26,054 - 01:04:28,054] Not everything.
+- [01:04:28,054 - 01:04:30,554] To find out the other things
+- [01:04:30,554 - 01:04:33,054] that are implicit in the field theory,
+- [01:04:33,054 - 01:04:37,054] there are other terms in the Lagrangian.
+- [01:04:39,054 - 01:04:40,554] Now what you put in
+- [01:04:40,554 - 01:04:42,054] the Lagrangian is determined by experiments,
+- [01:04:42,054 - 01:04:43,554] and it's really just a way
+- [01:04:43,554 - 01:04:45,054] of codifying the results of experiments.
+- [01:04:45,054 - 01:04:48,054] But what else can you have in Lagrangian?
+- [01:04:48,054 - 01:04:51,054] We had the derivative terms.
+- [01:04:52,054 - 01:04:53,054] Let's say,
+- [01:04:54,054 - 01:04:57,054] phi dot squared
+- [01:04:57,054 - 01:04:59,554] minus the derivative of phi with respect to
+- [01:04:59,554 - 01:05:02,054] x squared and y squared and z squared,
+- [01:05:02,054 - 01:05:04,054] all that kind of stuff.
+- [01:05:04,054 - 01:05:06,554] That was the stuff that I wrote down as
+- [01:05:06,554 - 01:05:09,054] phi at one point times phi at another point,
+- [01:05:09,054 - 01:05:11,054] at a neighboring point.
+- [01:05:11,054 - 01:05:14,054] Then there are possibly other things that
+- [01:05:14,054 - 01:05:17,054] just involve phi and not its derivative.
+- [01:05:17,054 - 01:05:20,054] So for example, you could have things like phi squared.
+- [01:05:20,054 - 01:05:22,054] Remember what the coefficient is?
+- [01:05:22,054 - 01:05:23,054] One half here.
+- [01:05:23,054 - 01:05:25,054] That's a convention.
+- [01:05:26,054 - 01:05:29,054] Remember what the coefficient of phi squared is?
+- [01:05:29,054 - 01:05:32,054] The square of the mass of the particle.
+- [01:05:32,054 - 01:05:34,054] We should divide by two.
+- [01:05:34,054 - 01:05:36,054] That's again a convention.
+- [01:05:36,054 - 01:05:40,054] And if we included this term here,
+- [01:05:40,054 - 01:05:43,054] what that would do,
+- [01:05:43,054 - 01:05:47,054] it doesn't move a particle from one place to another.
+- [01:05:47,054 - 01:05:49,054] It
+- [01:05:49,054 - 01:05:52,054] absorbs a particle at one point
+- [01:05:52,054 - 01:05:55,054] and emits it from the same point.
+- [01:05:55,054 - 01:05:57,054] From the same point.
+- [01:05:57,054 - 01:06:00,054] So it would correspond to graphical constructions
+- [01:06:00,054 - 01:06:03,054] where we would add a new rule.
+- [01:06:03,054 - 01:06:06,054] If a particle enters a region here,
+- [01:06:06,054 - 01:06:09,054] from one box to another,
+- [01:06:09,054 - 01:06:13,054] one of the terms that can act
+- [01:06:13,054 - 01:06:15,054] is this mass squared term.
+- [01:06:15,054 - 01:06:17,054] It would simply
+- [01:06:17,054 - 01:06:20,054] take the particle and do nothing to it.
+- [01:06:20,054 - 01:06:22,054] It would leave it in the same spot.
+- [01:06:22,054 - 01:06:25,054] Then another term could come and move it,
+- [01:06:25,054 - 01:06:29,054] but it would weigh that particular path
+- [01:06:29,054 - 01:06:31,054] with a factor of m squared.
+- [01:06:31,054 - 01:06:34,054] Every time this term acts,
+- [01:06:34,054 - 01:06:36,554] it weighs the path with another
+- [01:06:36,554 - 01:06:39,054] factor of m squared in the amplitude.
+- [01:06:39,054 - 01:06:44,054] So there would be terms where no m squares act,
+- [01:06:44,054 - 01:06:47,054] where only these derivative terms act.
+- [01:06:47,054 - 01:06:50,054] In other words, where in expanding this product out,
+- [01:06:50,054 - 01:06:52,054] we only had the derivative terms.
+- [01:06:52,054 - 01:06:56,054] That would be the theory of massless particles.
+- [01:06:56,054 - 01:06:59,054] The theory of massive particles
+- [01:06:59,054 - 01:07:02,054] would have a new rule that
+- [01:07:02,054 - 01:07:04,054] one of the possible things
+- [01:07:04,054 - 01:07:06,054] that can happen at every step
+- [01:07:06,054 - 01:07:08,054] is you may or may not
+- [01:07:08,054 - 01:07:10,054] just weigh that path at
+- [01:07:10,054 - 01:07:12,054] that point with an m squared.
+- [01:07:12,054 - 01:07:15,054] Alright, so the mass term is another rule
+- [01:07:15,054 - 01:07:17,054] for how you evaluate these paths.
+- [01:07:17,054 - 01:07:19,054] These path integrals.
+- [01:07:19,054 - 01:07:21,054] Another rule.
+- [01:07:21,054 - 01:07:23,054] We don't have to get into detail.
+- [01:07:23,054 - 01:07:26,054] The main point is that
+- [01:07:26,054 - 01:07:29,054] the mass of a particle is codified
+- [01:07:29,054 - 01:07:32,054] by another term in the Lagrangian,
+- [01:07:32,054 - 01:07:34,054] which is m squared phi squared,
+- [01:07:34,054 - 01:07:37,054] which weighs paths
+- [01:07:37,054 - 01:07:40,054] in such a way that it knows about their mass.
+- [01:07:40,054 - 01:07:42,054] Alright, but more interesting
+- [01:07:42,054 - 01:07:45,054] is the more complicated terms.
+- [01:07:45,054 - 01:07:46,054] Things like phi squared.
+- [01:07:46,054 - 01:07:48,054] Let's put a g.
+- [01:07:48,054 - 01:07:51,054] Sorry, phi cubed.
+- [01:07:51,054 - 01:07:54,054] Phi cubed
+- [01:07:54,054 - 01:07:56,054] can do a number of things.
+- [01:07:56,054 - 01:07:58,054] It can annihilate one particle
+- [01:07:58,054 - 01:08:00,054] and create two particles.
+- [01:08:00,054 - 01:08:02,054] It can annihilate two particles
+- [01:08:02,054 - 01:08:04,054] and create one particle.
+- [01:08:04,054 - 01:08:06,054] It can create three particles.
+- [01:08:06,054 - 01:08:09,054] It can annihilate three particles.
+- [01:08:09,054 - 01:08:11,054] Alright, so that's a new kind of thing
+- [01:08:11,054 - 01:08:14,054] that can happen on this checkerboard here.
+- [01:08:14,054 - 01:08:16,054] In expanding out
+- [01:08:16,054 - 01:08:18,054] the action,
+- [01:08:18,054 - 01:08:20,054] expanding out the exponential,
+- [01:08:20,054 - 01:08:22,054] there might be additional terms here,
+- [01:08:22,054 - 01:08:24,054] for example, g phi cubed.
+- [01:08:26,054 - 01:08:28,054] When we expand out,
+- [01:08:28,054 - 01:08:30,054] we can have not only
+- [01:08:30,054 - 01:08:32,054] these products which take a particle
+- [01:08:32,054 - 01:08:34,054] from one point to another,
+- [01:08:34,054 - 01:08:36,054] but also processes where particles
+- [01:08:36,054 - 01:08:38,054] are created and annihilated
+- [01:08:38,054 - 01:08:40,054] in threes.
+- [01:08:40,054 - 01:08:42,054] Either two in, one out,
+- [01:08:42,054 - 01:08:44,054] two out, one in,
+- [01:08:44,054 - 01:08:46,054] or three in or three out.
+- [01:08:46,054 - 01:08:48,054] What that looks like on here
+- [01:08:48,054 - 01:08:50,054] is, for example,
+- [01:08:50,054 - 01:08:52,054] supposing we have
+- [01:08:52,054 - 01:08:54,054] several of
+- [01:08:54,054 - 01:08:56,054] these quadratic terms
+- [01:08:56,054 - 01:08:58,054] which move particles
+- [01:08:58,054 - 01:09:00,054] in one cubic term.
+- [01:09:00,054 - 01:09:02,054] What can that look like?
+- [01:09:02,054 - 01:09:04,054] Well, what it can do
+- [01:09:04,054 - 01:09:06,054] is it can take a particle
+- [01:09:06,054 - 01:09:08,054] moving it from here to here,
+- [01:09:08,054 - 01:09:10,054] and suddenly in that box
+- [01:09:10,054 - 01:09:12,054] we put a phi cubed.
+- [01:09:12,054 - 01:09:14,054] In that box
+- [01:09:14,054 - 01:09:16,054] it can absorb one particle
+- [01:09:16,054 - 01:09:18,054] and emit two more.
+- [01:09:18,054 - 01:09:20,054] Now the next thing that could happen
+- [01:09:20,054 - 01:09:22,054] is the two particles
+- [01:09:22,054 - 01:09:24,054] could move
+- [01:09:24,054 - 01:09:26,054] to other boxes.
+- [01:09:26,054 - 01:09:28,054] But basically what it does
+- [01:09:28,054 - 01:09:30,054] is it takes a particle,
+- [01:09:30,054 - 01:09:32,054] absorbs it, and creates two.
+- [01:09:32,054 - 01:09:34,054] And those two particles can be on their way.
+- [01:09:34,054 - 01:09:36,054] And this would then
+- [01:09:36,054 - 01:09:38,054] contribute to a process
+- [01:09:38,054 - 01:09:40,054] where one particle came in,
+- [01:09:40,054 - 01:09:42,054] two particles went out.
+- [01:09:42,054 - 01:09:44,054] Okay?
+- [01:09:44,054 - 01:09:46,054] In fact, you can make
+- [01:09:46,054 - 01:09:48,054] very, very complicated things.
+- [01:09:48,054 - 01:09:50,054] You can make things of...
+- [01:09:50,054 - 01:09:52,054] Let's go back to the one particle
+- [01:09:52,054 - 01:09:54,054] going from one place to another.
+- [01:09:54,054 - 01:09:56,054] One particle going
+- [01:09:56,054 - 01:09:58,054] from one place to another...
+- [01:09:58,054 - 01:10:00,054] Let me stop drawing checkerboards.
+- [01:10:00,054 - 01:10:02,054] Let's just imagine the checkerboard there.
+- [01:10:02,054 - 01:10:04,054] One particle
+- [01:10:04,054 - 01:10:06,054] going from one place to another
+- [01:10:06,054 - 01:10:08,054] can go directly,
+- [01:10:08,054 - 01:10:10,054] just a bunch of small hops,
+- [01:10:10,054 - 01:10:12,054] a bunch of these hops.
+- [01:10:12,054 - 01:10:14,054] But also something else can happen.
+- [01:10:14,054 - 01:10:16,054] On the way,
+- [01:10:16,054 - 01:10:18,054] at some point,
+- [01:10:18,054 - 01:10:20,054] the cubic term
+- [01:10:20,054 - 01:10:22,054] could act.
+- [01:10:22,054 - 01:10:24,054] If the cubic term can act,
+- [01:10:24,054 - 01:10:26,054] it can take that one particle coming in
+- [01:10:26,054 - 01:10:28,054] and split it.
+- [01:10:28,054 - 01:10:30,054] Split it into two.
+- [01:10:30,054 - 01:10:32,054] And then
+- [01:10:32,054 - 01:10:34,054] both particles
+- [01:10:34,054 - 01:10:36,054] move along until
+- [01:10:38,054 - 01:10:40,054] another cubic term,
+- [01:10:40,054 - 01:10:42,054] something quadratic in the cubic term,
+- [01:10:42,054 - 01:10:44,054] something with two cubic terms in it,
+- [01:10:44,054 - 01:10:46,054] can create
+- [01:10:46,054 - 01:10:48,054] an extra particle
+- [01:10:48,054 - 01:10:50,054] and reabsorb it.
+- [01:10:50,054 - 01:10:52,054] So in fact,
+- [01:10:52,054 - 01:10:54,054] the actual amplitude
+- [01:10:54,054 - 01:10:56,054] to go from one point to another
+- [01:10:56,054 - 01:10:58,054] by one particle
+- [01:10:58,054 - 01:11:00,054] is not just the sum
+- [01:11:00,054 - 01:11:02,054] of simple trajectories
+- [01:11:02,054 - 01:11:04,054] going from one point to another
+- [01:11:04,054 - 01:11:06,054] through the space-time,
+- [01:11:06,054 - 01:11:08,054] but is more complicated.
+- [01:11:08,054 - 01:11:10,054] It has infinitely more complicated.
+- [01:11:10,054 - 01:11:12,054] It has processes
+- [01:11:12,054 - 01:11:14,054] where the particle
+- [01:11:14,054 - 01:11:16,054] splits and rejoins.
+- [01:11:16,054 - 01:11:18,054] In other words,
+- [01:11:18,054 - 01:11:20,054] where the particle emits a second particle
+- [01:11:20,054 - 01:11:22,054] which is then reabsorbed.
+- [01:11:22,054 - 01:11:24,054] An example of this would be an electron
+- [01:11:24,054 - 01:11:26,054] moving along and emitting a photon
+- [01:11:26,054 - 01:11:28,054] and reabsorbing it.
+- [01:11:28,054 - 01:11:30,054] Part of the amplitude
+- [01:11:30,054 - 01:11:32,054] for an electron to go from one place to another
+- [01:11:32,054 - 01:11:34,054] is through the process
+- [01:11:34,054 - 01:11:36,054] of emission and absorption of a photon.
+- [01:11:36,054 - 01:11:38,054] It can get wildly more complicated.
+- [01:11:38,054 - 01:11:40,054] Of course, we have to add all of these up.
+- [01:11:40,054 - 01:11:42,054] The rule is add up
+- [01:11:42,054 - 01:11:44,054] the amplitude for every particle
+- [01:11:44,054 - 01:11:46,054] to go from the initial state
+- [01:11:46,054 - 01:11:48,054] to the final state.
+- [01:11:48,054 - 01:11:50,054] You could have
+- [01:11:50,054 - 01:11:52,054] several of these splitting and joinings.
+- [01:11:52,054 - 01:11:54,054] You could have
+- [01:11:54,054 - 01:11:56,054] things jumping across
+- [01:11:56,054 - 01:11:58,054] the gap
+- [01:11:58,054 - 01:12:00,054] between particles.
+- [01:12:00,054 - 01:12:02,054] And this can get
+- [01:12:02,054 - 01:12:04,054] arbitrarily complicated
+- [01:12:04,054 - 01:12:06,054] from the point of view
+- [01:12:06,054 - 01:12:08,054] of electrons and photons.
+- [01:12:08,054 - 01:12:10,054] Things like this could happen.
+- [01:12:10,054 - 01:12:12,054] And this could happen
+- [01:12:12,054 - 01:12:14,054] in the form of a quantum
+- [01:12:14,054 - 01:12:16,054] process.
+- [01:12:16,054 - 01:12:18,054] An electron goes through,
+- [01:12:18,054 - 01:12:20,054] a photon emitted,
+- [01:12:20,054 - 01:12:22,054] another photon emitted,
+- [01:12:22,054 - 01:12:24,054] but even worse,
+- [01:12:24,054 - 01:12:26,054] the photon can break up
+- [01:12:26,054 - 01:12:28,054] into an electron and a positron.
+- [01:12:30,054 - 01:12:32,054] But then the electron and positron
+- [01:12:32,054 - 01:12:34,054] can exchange a photon between them.
+- [01:12:34,054 - 01:12:36,054] All of these processes
+- [01:12:36,054 - 01:12:38,054] come out of expanding out
+- [01:12:38,054 - 01:12:40,054] the action like this
+- [01:12:40,054 - 01:12:42,054] and finding the individual terms
+- [01:12:42,054 - 01:12:44,054] which do all of these things.
+- [01:12:44,054 - 01:12:46,054] If you want the amplitude
+- [01:12:46,054 - 01:12:48,054] for any one of these processes,
+- [01:12:48,054 - 01:12:50,054] you just go back
+- [01:12:50,054 - 01:12:52,054] to what appears here,
+- [01:12:52,054 - 01:12:54,054] find the term that you're looking for,
+- [01:12:54,054 - 01:12:56,054] and find the coefficient
+- [01:12:56,054 - 01:12:58,054] in front of it.
+- [01:12:58,054 - 01:13:00,054] It may or may not have an i,
+- [01:13:00,054 - 01:13:02,054] depending on whether it's an even power
+- [01:13:02,054 - 01:13:04,054] or an odd power,
+- [01:13:04,054 - 01:13:06,054] and it will have some factorials
+- [01:13:06,054 - 01:13:08,054] and so forth.
+- [01:13:08,054 - 01:13:10,054] That will give you the amplitude
+- [01:13:10,054 - 01:13:12,054] for a specific process.
+- [01:13:12,054 - 01:13:14,054] But then the full amplitude
+- [01:13:14,054 - 01:13:16,054] is a horrendously complicated sum
+- [01:13:16,054 - 01:13:18,054] of all of these things.
+- [01:13:18,054 - 01:13:20,054] Right, so you may have certain things
+- [01:13:20,054 - 01:13:22,054] that happen in multiple of those histories.
+- [01:13:22,054 - 01:13:24,054] In what?
+- [01:13:24,054 - 01:13:26,054] In multiple of those histories
+- [01:13:26,054 - 01:13:28,054] you may have similar terms
+- [01:13:28,054 - 01:13:30,054] which then the overall amplitude
+- [01:13:30,054 - 01:13:32,054] for that process would be
+- [01:13:32,054 - 01:13:34,054] actually from all the different histories.
+- [01:13:34,054 - 01:13:36,054] Yeah, from all the different histories
+- [01:13:36,054 - 01:13:38,054] going from the initial to the final.
+- [01:13:38,054 - 01:13:40,054] So there are two ways to think about field theory.
+- [01:13:40,054 - 01:13:42,054] One is to think about fields
+- [01:13:42,054 - 01:13:44,054] and think about histories
+- [01:13:44,054 - 01:13:46,054] as initial values of the fields,
+- [01:13:46,054 - 01:13:48,054] final values of the fields,
+- [01:13:48,054 - 01:13:50,054] and you sum over all the values
+- [01:13:50,054 - 01:13:52,054] of the fields in between.
+- [01:13:52,054 - 01:13:54,054] And the other is this particle way
+- [01:13:54,054 - 01:13:56,054] to think about it,
+- [01:13:56,054 - 01:13:58,054] where the field is replaced
+- [01:13:58,054 - 01:14:00,054] by a distribution of quanta.
+- [01:14:00,054 - 01:14:02,054] And again, amplitudes
+- [01:14:02,054 - 01:14:04,054] for initial configurations,
+- [01:14:04,054 - 01:14:06,054] which means an initial particular
+- [01:14:06,054 - 01:14:08,054] set of particles,
+- [01:14:08,054 - 01:14:10,054] and a final set of particles.
+- [01:14:10,054 - 01:14:12,054] The basic processes,
+- [01:14:12,054 - 01:14:14,054] the basic underlying processes
+- [01:14:14,054 - 01:14:16,054] are governed by this Lagrangian.
+- [01:14:16,054 - 01:14:18,054] That is the most important thing.
+- [01:14:18,054 - 01:14:20,054] Anytime you have
+- [01:14:20,054 - 01:14:22,054] more than two fields interacting,
+- [01:14:22,054 - 01:14:24,054] you have an interesting interaction
+- [01:14:24,054 - 01:14:26,054] process where particles can split
+- [01:14:26,054 - 01:14:28,054] and join and so forth.
+- [01:14:28,054 - 01:14:30,054] What would happen if you had
+- [01:14:30,054 - 01:14:32,054] phi to the fourth here?
+- [01:14:32,054 - 01:14:34,054] Which is a perfectly good interaction.
+- [01:14:34,054 - 01:14:36,054] That would be some place
+- [01:14:36,054 - 01:14:38,054] where a particle, for example,
+- [01:14:38,054 - 01:14:40,054] could come in and break up
+- [01:14:40,054 - 01:14:42,054] into three other particles.
+- [01:14:42,054 - 01:14:44,054] You know, one to the third,
+- [01:14:44,054 - 01:14:46,054] two to absorb the initial state,
+- [01:14:46,054 - 01:14:48,054] three to emit the final state.
+- [01:14:48,054 - 01:14:50,054] Or it could be a scattering
+- [01:14:50,054 - 01:14:52,054] in which two particles
+- [01:14:52,054 - 01:14:54,054] come along, collide,
+- [01:14:54,054 - 01:14:56,054] and two go off.
+- [01:14:56,054 - 01:14:58,054] Anything that looks like a vertex
+- [01:14:58,054 - 01:15:00,054] of four particles all together,
+- [01:15:00,054 - 01:15:02,054] two in and two out,
+- [01:15:02,054 - 01:15:04,054] or three in, one out,
+- [01:15:04,054 - 01:15:06,054] or so forth,
+- [01:15:06,054 - 01:15:08,054] or just four out,
+- [01:15:08,054 - 01:15:10,054] or four in,
+- [01:15:10,054 - 01:15:12,054] they're all governed
+- [01:15:12,054 - 01:15:14,054] by this term.
+- [01:15:14,054 - 01:15:16,054] And so forth and so on.
+- [01:15:16,054 - 01:15:18,054] Let's see, how are we doing?
+- [01:15:18,054 - 01:15:20,054] So that's the spontaneous arrival
+- [01:15:20,054 - 01:15:22,054] of four particles at the final state?
+- [01:15:22,054 - 01:15:24,054] Yeah, except once again
+- [01:15:24,054 - 01:15:26,054] it would violate energy conservation.
+- [01:15:26,054 - 01:15:28,054] So if you really worked it out
+- [01:15:28,054 - 01:15:30,054] and added up the amplitude
+- [01:15:30,054 - 01:15:32,054] from every position
+- [01:15:32,054 - 01:15:34,054] where this could happen,
+- [01:15:34,054 - 01:15:36,054] every space-time position
+- [01:15:36,054 - 01:15:38,054] where it could happen,
+- [01:15:38,054 - 01:15:40,054] you could have a very good
+- [01:15:40,054 - 01:15:42,054] interaction process
+- [01:15:42,054 - 01:15:44,054] with the four particles.
+- [01:15:44,054 - 01:15:46,054] You would find out
+- [01:15:46,054 - 01:15:48,054] that it doesn't happen.
+- [01:15:48,054 - 01:15:50,054] In other words, they all add up to zero.
+- [01:15:50,054 - 01:15:52,054] So processes which violate energy
+- [01:15:52,054 - 01:15:54,054] typically all add up to zero
+- [01:15:54,054 - 01:15:56,054] in these things,
+- [01:15:56,054 - 01:15:58,054] energy or momentum.
+- [01:15:58,054 - 01:16:00,054] So the conservation of energy
+- [01:16:00,054 - 01:16:02,054] falls out of doing the calculation
+- [01:16:02,054 - 01:16:04,054] and the conservation of momentum
+- [01:16:04,054 - 01:16:06,054] is the same thing?
+- [01:16:06,054 - 01:16:08,054] Yes.
+- [01:16:08,054 - 01:16:10,054] So the conservation of energy
+- [01:16:10,054 - 01:16:12,054] falls out of doing the calculation
+- [01:16:12,054 - 01:16:14,054] and the conservation of momentum
+- [01:16:14,054 - 01:16:16,054] is the same thing?
+- [01:16:16,054 - 01:16:18,054] Yeah, we did some examples.
+- [01:16:18,054 - 01:16:20,054] I showed you how integrating the vertex
+- [01:16:20,054 - 01:16:22,054] over all time conserves energy,
+- [01:16:22,054 - 01:16:24,054] how integrating it over all space
+- [01:16:24,054 - 01:16:26,054] conserves momentum.
+- [01:16:26,054 - 01:16:28,054] Same thing is true here.
+- [01:16:28,054 - 01:16:30,054] Integrating the position
+- [01:16:30,054 - 01:16:32,054] of these vertices and the endpoints
+- [01:16:32,054 - 01:16:34,054] of these things over all possible positions
+- [01:16:34,054 - 01:16:36,054] in space and time
+- [01:16:36,054 - 01:16:38,054] will
+- [01:16:38,054 - 01:16:40,054] simply
+- [01:16:40,054 - 01:16:42,054] add up to zero unless energy
+- [01:16:42,054 - 01:16:44,054] and momentum is conserved.
+- [01:16:44,054 - 01:16:46,054] But apart from the conservation laws,
+- [01:16:46,054 - 01:16:48,054] everything that
+- [01:16:48,054 - 01:16:50,054] you can draw down will happen
+- [01:16:50,054 - 01:16:52,054] with some probability.
+- [01:16:54,054 - 01:16:56,054] Now,
+- [01:16:56,054 - 01:16:58,054] how could it possibly be
+- [01:16:58,054 - 01:17:00,054] that you add up this humongous thing
+- [01:17:00,054 - 01:17:02,054] and the answer doesn't come out
+- [01:17:02,054 - 01:17:04,054] infinite?
+- [01:17:04,054 - 01:17:06,054] Well, the answer
+- [01:17:06,054 - 01:17:08,054] is that there are
+- [01:17:08,054 - 01:17:10,054] coefficients here.
+- [01:17:10,054 - 01:17:12,054] There are coefficients here.
+- [01:17:12,054 - 01:17:14,054] These are called coupling constants
+- [01:17:14,054 - 01:17:16,054] particularly the coefficients
+- [01:17:16,054 - 01:17:18,054] for the higher powers here.
+- [01:17:18,054 - 01:17:20,054] We could call this G3,
+- [01:17:20,054 - 01:17:22,054] we could call this G4.
+- [01:17:22,054 - 01:17:24,054] And the rule is
+- [01:17:24,054 - 01:17:26,054] in a diagram, in a Feynman diagram
+- [01:17:26,054 - 01:17:28,054] like this, every time
+- [01:17:28,054 - 01:17:30,054] you have a vertex, let's say
+- [01:17:30,054 - 01:17:32,054] with three particles coming together,
+- [01:17:32,054 - 01:17:34,054] the amplitude
+- [01:17:34,054 - 01:17:36,054] contains a factor
+- [01:17:36,054 - 01:17:38,054] of G, G3
+- [01:17:38,054 - 01:17:40,054] in this case.
+- [01:17:40,054 - 01:17:42,054] So the more complicated the diagram gets,
+- [01:17:42,054 - 01:17:44,054] the more power
+- [01:17:44,054 - 01:17:46,054] of G that it has.
+- [01:17:46,054 - 01:17:48,054] Each vertex
+- [01:17:48,054 - 01:17:50,054] gives you a power of G.
+- [01:17:50,054 - 01:17:52,054] If G is a small number,
+- [01:17:52,054 - 01:17:54,054] then
+- [01:17:54,054 - 01:17:56,054] each successive power
+- [01:17:56,054 - 01:17:58,054] of G gives you
+- [01:17:58,054 - 01:18:00,054] a smaller and smaller contribution
+- [01:18:00,054 - 01:18:02,054] and you have a chance
+- [01:18:02,054 - 01:18:04,054] that the thing might be able to converge.
+- [01:18:04,054 - 01:18:06,054] The technical
+- [01:18:06,054 - 01:18:08,054] question of whether it really converges
+- [01:18:08,054 - 01:18:10,054] or not is a very difficult one,
+- [01:18:10,054 - 01:18:12,054] but you can see that you have a chance
+- [01:18:12,054 - 01:18:14,054] if G is a small number.
+- [01:18:14,054 - 01:18:16,054] If these coupling constants
+- [01:18:16,054 - 01:18:18,054] are small numbers,
+- [01:18:18,054 - 01:18:20,054] then the simpler the process is,
+- [01:18:20,054 - 01:18:22,054] in other words,
+- [01:18:22,054 - 01:18:24,054] the fewer number of vertices,
+- [01:18:24,054 - 01:18:26,054] the bigger the contribution,
+- [01:18:26,054 - 01:18:28,054] and the larger the number of vertices,
+- [01:18:28,054 - 01:18:30,054] the more complicated
+- [01:18:30,054 - 01:18:32,054] the smaller the contribution,
+- [01:18:32,054 - 01:18:34,054] and you have a chance at any rate
+- [01:18:34,054 - 01:18:36,054] at some sort of convergence
+- [01:18:36,054 - 01:18:38,054] to an answer.
+- [01:18:38,054 - 01:18:40,054] If the coupling constants are large,
+- [01:18:40,054 - 01:18:42,054] it means these series
+- [01:18:42,054 - 01:18:44,054] do not converge,
+- [01:18:44,054 - 01:18:46,054] and if they don't converge,
+- [01:18:46,054 - 01:18:48,054] it doesn't mean that the theory is wrong,
+- [01:18:48,054 - 01:18:50,054] it just means you've chosen
+- [01:18:50,054 - 01:18:52,054] a naive prescription
+- [01:18:52,054 - 01:18:54,054] for trying to work with it.
+- [01:18:54,054 - 01:18:56,054] But in practice,
+- [01:18:56,054 - 01:18:58,054] most of the quantum field theory,
+- [01:18:58,054 - 01:19:00,054] most of the things we do with quantum field theory
+- [01:19:00,054 - 01:19:02,054] are based on the assumption
+- [01:19:02,054 - 01:19:04,054] of small coupling constants.
+- [01:19:04,054 - 01:19:06,054] And under those circumstances,
+- [01:19:06,054 - 01:19:08,054] it's possible to evaluate these,
+- [01:19:08,054 - 01:19:10,054] not just evaluate them,
+- [01:19:10,054 - 01:19:12,054] but add them up
+- [01:19:12,054 - 01:19:14,054] and find out that
+- [01:19:14,054 - 01:19:16,054] the one with four vertices
+- [01:19:16,054 - 01:19:18,054] is much smaller than
+- [01:19:18,054 - 01:19:20,054] the one with two vertices.
+- [01:19:22,054 - 01:19:24,054] So that's the name of the game.
+- [01:19:24,054 - 01:19:26,054] Can we do color theory in the same way?
+- [01:19:26,054 - 01:19:28,054] Yeah, we're going to talk about color theory.
+- [01:19:34,054 - 01:19:36,054] Now the next step is to write down
+- [01:19:36,054 - 01:19:38,054] the list of all particles
+- [01:19:38,054 - 01:19:40,054] and to write down
+- [01:19:40,054 - 01:19:42,054] either
+- [01:19:42,054 - 01:19:44,054] in the form of Lagrangians
+- [01:19:44,054 - 01:19:46,054] or in the form of Feynman rules.
+- [01:19:46,054 - 01:19:48,054] The Feynman rules
+- [01:19:48,054 - 01:19:50,054] and the Lagrangians
+- [01:19:50,054 - 01:19:52,054] have the same information in them.
+- [01:19:52,054 - 01:19:54,054] Three identical particles
+- [01:19:54,054 - 01:19:56,054] coming together,
+- [01:19:56,054 - 01:19:58,054] let's say three bosons,
+- [01:19:58,054 - 01:20:00,054] that's phi cubed.
+- [01:20:00,054 - 01:20:02,054] Particles going from one point to another,
+- [01:20:02,054 - 01:20:04,054] those are the kinetic terms,
+- [01:20:04,054 - 01:20:06,054] the quadratic
+- [01:20:06,054 - 01:20:08,054] terms here.
+- [01:20:08,054 - 01:20:10,054] So the
+- [01:20:10,054 - 01:20:12,054] Feynman type rules
+- [01:20:12,054 - 01:20:14,054] are the following.
+- [01:20:14,054 - 01:20:16,054] And the Lagrangian
+- [01:20:16,054 - 01:20:18,054] are the same thing.
+- [01:20:18,054 - 01:20:20,054] And you can either
+- [01:20:20,054 - 01:20:22,054] describe the world
+- [01:20:22,054 - 01:20:24,054] by specifying all the vertices,
+- [01:20:24,054 - 01:20:26,054] incidentally,
+- [01:20:26,054 - 01:20:28,054] the lines between one point and another
+- [01:20:28,054 - 01:20:30,054] are called propagators.
+- [01:20:30,054 - 01:20:32,054] The place where
+- [01:20:32,054 - 01:20:34,054] more than one particle, more than two particles
+- [01:20:34,054 - 01:20:36,054] come together, those are called vertices.
+- [01:20:36,054 - 01:20:38,054] Vertices and propagators.
+- [01:20:38,054 - 01:20:40,054] But as I said, they're just simply
+- [01:20:40,054 - 01:20:42,054] another shorthand way of
+- [01:20:42,054 - 01:20:44,054] describing a Lagrangian.
+- [01:20:44,054 - 01:20:46,054] This is a shorthand way of describing the graphs.
+- [01:20:46,054 - 01:20:48,054] So we would have stated
+- [01:20:48,054 - 01:20:50,054] all of particle physics
+- [01:20:50,054 - 01:20:52,054] in a kind of dumb way
+- [01:20:52,054 - 01:20:54,054] by simply writing down
+- [01:20:54,054 - 01:20:56,054] the list of all particles,
+- [01:20:56,054 - 01:20:58,054] writing or constructing
+- [01:20:58,054 - 01:21:00,054] or even just expressing
+- [01:21:00,054 - 01:21:02,054] a quantum field for each particle,
+- [01:21:02,054 - 01:21:04,054] and then writing down
+- [01:21:04,054 - 01:21:06,054] a Lagrangian
+- [01:21:06,054 - 01:21:08,054] for all those particles
+- [01:21:08,054 - 01:21:10,054] would contain all of the interactions
+- [01:21:10,054 - 01:21:12,054] or we can write down
+- [01:21:12,054 - 01:21:14,054] all of the particles in the graph.
+- [01:21:14,054 - 01:21:16,054] And simply specify
+- [01:21:16,054 - 01:21:18,054] what all the possible vertices are.
+- [01:21:18,054 - 01:21:20,054] Either way,
+- [01:21:20,054 - 01:21:22,054] they come to the same thing.
+- [01:21:22,054 - 01:21:24,054] They're kind of a complete list
+- [01:21:24,054 - 01:21:26,054] of everything that can happen.
+- [01:21:26,054 - 01:21:28,054] Once you know everything that can happen,
+- [01:21:28,054 - 01:21:30,054] you can start thinking about
+- [01:21:30,054 - 01:21:32,054] calculating amplitudes for particles
+- [01:21:32,054 - 01:21:34,054] to go from one place to another.
+- [01:21:34,054 - 01:21:36,054] Particles to collide.
+- [01:21:36,054 - 01:21:38,054] Particles to collide and scatter.
+- [01:21:38,054 - 01:21:40,054] Here's particles colliding and scattering.
+- [01:21:40,054 - 01:21:42,054] Two electrons colliding and scattering.
+- [01:21:42,054 - 01:21:44,054] Just put them together.
+- [01:21:44,054 - 01:21:46,054] And you can see
+- [01:21:46,054 - 01:21:48,054] that by a photon jumping
+- [01:21:48,054 - 01:21:50,054] from one place to another.
+- [01:21:50,054 - 01:21:52,054] Again, Lagrangian tells you
+- [01:21:52,054 - 01:21:54,054] how to calculate the amplitude
+- [01:21:54,054 - 01:21:56,054] for each of these.
+- [01:21:56,054 - 01:21:58,054] And as I said,
+- [01:21:58,054 - 01:22:00,054] it contains all the information,
+- [01:22:00,054 - 01:22:02,054] including symmetries,
+- [01:22:02,054 - 01:22:04,054] including conservation laws.
+- [01:22:04,054 - 01:22:06,054] So I think it's probably...
+- [01:22:06,054 - 01:22:08,054] Should we write down
+- [01:22:08,054 - 01:22:10,054] the list of all elementary particles?
+- [01:22:10,054 - 01:22:12,054] So when you write down
+- [01:22:12,054 - 01:22:14,054] a Feynman diagram,
+- [01:22:14,054 - 01:22:16,054] the bottom is the initial configuration
+- [01:22:16,054 - 01:22:18,054] and the top is the...
+- [01:22:18,054 - 01:22:20,054] That's right.
+- [01:22:20,054 - 01:22:22,054] The bottom is the initial configuration
+- [01:22:22,054 - 01:22:24,054] of particles.
+- [01:22:24,054 - 01:22:26,054] The top is the final configuration
+- [01:22:26,054 - 01:22:28,054] of particles.
+- [01:22:28,054 - 01:22:30,054] And as I said,
+- [01:22:30,054 - 01:22:32,054] it is the kind of complementary way
+- [01:22:32,054 - 01:22:34,054] to think about field theory,
+- [01:22:34,054 - 01:22:36,054] quantum field theory,
+- [01:22:36,054 - 01:22:38,054] complementary to the field description
+- [01:22:38,054 - 01:22:40,054] where you would start
+- [01:22:40,054 - 01:22:42,054] with a given field configuration
+- [01:22:42,054 - 01:22:44,054] and end with a given field configuration.
+- [01:22:44,054 - 01:22:46,054] So the complementarity
+- [01:22:46,054 - 01:22:48,054] between particles and fields
+- [01:22:48,054 - 01:22:50,054] is very much like the complementarity
+- [01:22:50,054 - 01:22:52,054] between momentum and position.
+- [01:22:52,054 - 01:22:54,054] These are two different ways
+- [01:22:54,054 - 01:22:56,054] to describe the same reality.
+- [01:22:56,054 - 01:22:58,054] And there are uncertainty relations
+- [01:22:58,054 - 01:23:00,054] between them.
+- [01:23:00,054 - 01:23:02,054] If you know with precision
+- [01:23:02,054 - 01:23:04,054] the number of particles,
+- [01:23:04,054 - 01:23:06,054] then you know that there's uncertainty
+- [01:23:06,054 - 01:23:08,054] in the values of fields.
+- [01:23:08,054 - 01:23:10,054] If you know the values of fields,
+- [01:23:10,054 - 01:23:12,054] then there's uncertainty
+- [01:23:12,054 - 01:23:14,054] in the number of particles.
+- [01:23:14,054 - 01:23:16,054] So there are complementary ways
+- [01:23:16,054 - 01:23:18,054] to describe the same thing.
+- [01:23:18,054 - 01:23:20,054] And the Lagrangian is useful
+- [01:23:20,054 - 01:23:22,054] in both contexts.
+- [01:23:26,054 - 01:23:28,054] Question.
+- [01:23:28,054 - 01:23:30,054] The coupling constants,
+- [01:23:30,054 - 01:23:32,054] are those predicted by theory
+- [01:23:32,054 - 01:23:34,054] or are they determined?
+- [01:23:34,054 - 01:23:36,054] Sometimes under certain circumstances
+- [01:23:36,054 - 01:23:38,054] there are symmetries
+- [01:23:38,054 - 01:23:40,054] which relate coupling constants.
+- [01:23:40,054 - 01:23:42,054] So this or that coupling constant
+- [01:23:42,054 - 01:23:44,054] for this process might,
+- [01:23:44,054 - 01:23:46,054] for instance, be related
+- [01:23:46,054 - 01:23:48,054] to another coupling constant
+- [01:23:48,054 - 01:23:50,054] for a different process.
+- [01:23:50,054 - 01:23:52,054] So some of them are related
+- [01:23:52,054 - 01:23:54,054] to each other by symmetries.
+- [01:23:54,054 - 01:23:56,054] But their values in general
+- [01:23:56,054 - 01:23:58,054] simply come from experiment.
+- [01:23:58,054 - 01:24:00,054] Simply come from experiment.
+- [01:24:04,054 - 01:24:06,054] Much of this,
+- [01:24:06,054 - 01:24:08,054] if you really go and learn
+- [01:24:08,054 - 01:24:10,054] about quantum field theory,
+- [01:24:10,054 - 01:24:12,054] has its beauty.
+- [01:24:12,054 - 01:24:14,054] It does have elegance and beauty
+- [01:24:14,054 - 01:24:16,054] in its properties.
+- [01:24:16,054 - 01:24:18,054] Now when we start writing down
+- [01:24:18,054 - 01:24:20,054] the list of facts,
+- [01:24:20,054 - 01:24:22,054] what particles there are,
+- [01:24:22,054 - 01:24:24,054] what their masses are,
+- [01:24:24,054 - 01:24:26,054] what their coupling constants are,
+- [01:24:26,054 - 01:24:28,054] it's just a mess.
+- [01:24:28,054 - 01:24:30,054] It's just a very ugly mess
+- [01:24:30,054 - 01:24:32,054] with very little coherence
+- [01:24:32,054 - 01:24:34,054] except the coherence
+- [01:24:34,054 - 01:24:36,054] that comes from symmetries.
+- [01:24:36,054 - 01:24:38,054] Symmetries tell you relationships
+- [01:24:38,054 - 01:24:40,054] between different kinds of particles
+- [01:24:40,054 - 01:24:42,054] and their processes.
+- [01:24:42,054 - 01:24:44,054] And not so much.
+- [01:24:44,054 - 01:24:46,054] It is a large number
+- [01:24:46,054 - 01:24:48,054] of random facts
+- [01:24:48,054 - 01:24:54,054] about a somewhat unmotivated
+- [01:24:54,054 - 01:24:56,054] collection of different kinds
+- [01:24:56,054 - 01:24:58,054] of particles.
+- [01:24:58,054 - 01:25:00,054] But still you're pretty confident
+- [01:25:00,054 - 01:25:02,054] of the coupling constants because
+- [01:25:02,054 - 01:25:04,054] Once you measure them, you measure them.
+- [01:25:04,054 - 01:25:06,054] If you change it a little bit,
+- [01:25:06,054 - 01:25:08,054] then you get wrong answers.
+- [01:25:08,054 - 01:25:10,054] Oh, absolutely.
+- [01:25:10,054 - 01:25:12,054] Let's do it this way.
+- [01:25:12,054 - 01:25:14,054] You have too many particles,
+- [01:25:14,054 - 01:25:16,054] which means too many fields,
+- [01:25:16,054 - 01:25:18,054] too many for any aesthetic sense.
+- [01:25:18,054 - 01:25:20,054] You have a lot of them,
+- [01:25:20,054 - 01:25:22,054] a hundred of them or something.
+- [01:25:22,054 - 01:25:24,054] A lot of coupling constants,
+- [01:25:24,054 - 01:25:26,054] which are just more or less
+- [01:25:26,054 - 01:25:28,054] numbers pulled out of an experiment.
+- [01:25:28,054 - 01:25:30,054] And a lot of masses,
+- [01:25:30,054 - 01:25:32,054] which range all over the map.
+- [01:25:32,054 - 01:25:34,054] A few relationships between them,
+- [01:25:34,054 - 01:25:36,054] but once you know them,
+- [01:25:36,054 - 01:25:38,054] you can start to understand
+- [01:25:38,054 - 01:25:40,054] what they are.
+- [01:25:40,054 - 01:25:42,054] Once you know them,
+- [01:25:42,054 - 01:25:44,054] that's it.
+- [01:25:44,054 - 01:25:46,054] You can calculate with great precision
+- [01:25:46,054 - 01:25:48,054] anything about those particles
+- [01:25:48,054 - 01:25:50,054] and anything about those particles,
+- [01:25:50,054 - 01:25:52,054] anything about quarks, electrons,
+- [01:25:52,054 - 01:25:54,054] photons and so forth,
+- [01:25:54,054 - 01:25:56,054] means atomic physics,
+- [01:25:56,054 - 01:25:58,054] particle physics,
+- [01:25:58,054 - 01:26:00,054] nuclear physics,
+- [01:26:00,054 - 01:26:02,054] chemistry,
+- [01:26:02,054 - 01:26:04,054] and maybe it means biology.
+- [01:26:04,054 - 01:26:06,054] So the amount of input that goes in
+- [01:26:06,054 - 01:26:08,054] is perhaps bigger than you might like,
+- [01:26:08,054 - 01:26:10,054] but the amount of output
+- [01:26:10,054 - 01:26:12,054] is huge.
+- [01:26:12,054 - 01:26:14,054] Question, for electrons, for example,
+- [01:26:14,054 - 01:26:16,054] how many G sub n's would be?
+- [01:26:16,054 - 01:26:18,054] G2, G3, G4,
+- [01:26:18,054 - 01:26:20,054] would these be calculated?
+- [01:26:20,054 - 01:26:22,054] How many G's are there?
+- [01:26:22,054 - 01:26:24,054] For electrons and photons?
+- [01:26:24,054 - 01:26:26,054] In electrodynamics?
+- [01:26:26,054 - 01:26:28,054] One. The electric charge.
+- [01:26:28,054 - 01:26:30,054] The electric charge...
+- [01:26:30,054 - 01:26:32,054] Hmm?
+- [01:26:34,054 - 01:26:36,054] Well, in a sense,
+- [01:26:36,054 - 01:26:38,054] the electric charge is a kind of G3.
+- [01:26:38,054 - 01:26:40,054] The electric charge is a kind
+- [01:26:40,054 - 01:26:42,054] of G3.
+- [01:26:42,054 - 01:26:44,054] The electric charge is the coefficient
+- [01:26:44,054 - 01:26:46,054] in the amplitude
+- [01:26:46,054 - 01:26:48,054] representing an electron
+- [01:26:48,054 - 01:26:50,054] coming in, an electron
+- [01:26:50,054 - 01:26:52,054] going out, and a photon being emitted.
+- [01:26:52,054 - 01:26:54,054] Alright?
+- [01:26:54,054 - 01:26:56,054] In terms of symbols,
+- [01:26:56,054 - 01:26:58,054] this diagram
+- [01:26:58,054 - 01:27:00,054] would be represented
+- [01:27:00,054 - 01:27:02,054] by an electron
+- [01:27:02,054 - 01:27:04,054] going out,
+- [01:27:04,054 - 01:27:06,054] an electron coming in,
+- [01:27:06,054 - 01:27:08,054] and the field operator for a photon,
+- [01:27:08,054 - 01:27:10,054] which is A. I'm not writing down
+- [01:27:10,054 - 01:27:12,054] the details. There are some
+- [01:27:12,054 - 01:27:14,054] direct matrices,
+- [01:27:14,054 - 01:27:16,054] but then the numerical
+- [01:27:16,054 - 01:27:18,054] coefficient in front of it
+- [01:27:18,054 - 01:27:20,054] is the electric charge.
+- [01:27:20,054 - 01:27:22,054] In certain units, certain dimensionless
+- [01:27:22,054 - 01:27:24,054] definition.
+- [01:27:24,054 - 01:27:26,054] Alright, now the only processes
+- [01:27:26,054 - 01:27:28,054] in quantum electrodynamics
+- [01:27:28,054 - 01:27:30,054] are the emission and absorption of photons
+- [01:27:30,054 - 01:27:32,054] from electrons.
+- [01:27:32,054 - 01:27:34,054] That's all there is.
+- [01:27:38,054 - 01:27:40,054] ...electron collision with a photon...
+- [01:27:40,054 - 01:27:42,054] Well, if there are...
+- [01:27:42,054 - 01:27:44,054] Electron collision with a...
+- [01:27:44,054 - 01:27:46,054] Yeah. Electron collision with a photon
+- [01:27:46,054 - 01:27:48,054] is just...the simplest
+- [01:27:48,054 - 01:27:50,054] process would be
+- [01:27:50,054 - 01:27:52,054] photon absorbed...
+- [01:27:52,054 - 01:27:54,054] I meant to say proton.
+- [01:27:54,054 - 01:27:56,054] Oh. Well, protons are not usually
+- [01:27:56,054 - 01:27:58,054] considered a part of
+- [01:27:58,054 - 01:28:00,054] quantum electrodynamics.
+- [01:28:00,054 - 01:28:02,054] Now, you can think...
+- [01:28:02,054 - 01:28:04,054] When you do quantum electrodynamics,
+- [01:28:04,054 - 01:28:06,054] you are doing atomic physics.
+- [01:28:06,054 - 01:28:08,054] You think of the proton as a point
+- [01:28:08,054 - 01:28:10,054] infinitely massive
+- [01:28:10,054 - 01:28:12,054] and you don't think of it as something
+- [01:28:12,054 - 01:28:14,054] described by quantum field theory.
+- [01:28:14,054 - 01:28:16,054] You just think of it as a nailed down
+- [01:28:16,054 - 01:28:18,054] heavy particle which never moves.
+- [01:28:18,054 - 01:28:20,054] Until you open up
+- [01:28:20,054 - 01:28:22,054] the theory of protons and neutrons.
+- [01:28:22,054 - 01:28:24,054] I mean, but...
+- [01:28:24,054 - 01:28:26,054] Alright, so the scattering by a photon,
+- [01:28:26,054 - 01:28:28,054] a photon by an electron,
+- [01:28:28,054 - 01:28:30,054] this is the first diagram.
+- [01:28:30,054 - 01:28:32,054] But the electron is moving
+- [01:28:32,054 - 01:28:34,054] at almost the speed of light
+- [01:28:34,054 - 01:28:36,054] relative to the proton?
+- [01:28:36,054 - 01:28:38,054] Proton, yes.
+- [01:28:38,054 - 01:28:40,054] But we're...right.
+- [01:28:40,054 - 01:28:42,054] Yeah, that's right.
+- [01:28:42,054 - 01:28:44,054] Let's draw some diagrams
+- [01:28:44,054 - 01:28:46,054] just to get some feel
+- [01:28:46,054 - 01:28:48,054] for what kind of things
+- [01:28:48,054 - 01:28:50,054] we have to add up.
+- [01:28:50,054 - 01:28:52,054] This is the lowest order diagram
+- [01:28:52,054 - 01:28:54,054] that goes into
+- [01:28:54,054 - 01:28:56,054] the scattering of a photon
+- [01:28:56,054 - 01:28:58,054] by an electron.
+- [01:28:58,054 - 01:29:00,054] There are two powers of the electric charge.
+- [01:29:00,054 - 01:29:02,054] So there's an E squared.
+- [01:29:02,054 - 01:29:04,054] But this is the amplitude.
+- [01:29:04,054 - 01:29:06,054] The amplitude gets squared
+- [01:29:06,054 - 01:29:08,054] to find the probability
+- [01:29:08,054 - 01:29:10,054] or the cross section.
+- [01:29:10,054 - 01:29:12,054] Cross section is another way of speaking
+- [01:29:12,054 - 01:29:14,054] about the probability for the scattering.
+- [01:29:14,054 - 01:29:16,054] Alright, so that means
+- [01:29:16,054 - 01:29:18,054] that the whole process,
+- [01:29:18,054 - 01:29:20,054] the probability,
+- [01:29:20,054 - 01:29:22,054] is proportional to the electric charge
+- [01:29:22,054 - 01:29:24,054] to the fourth.
+- [01:29:24,054 - 01:29:26,054] The
+- [01:29:26,054 - 01:29:28,054] electric charge,
+- [01:29:28,054 - 01:29:30,054] at least in suitable,
+- [01:29:30,054 - 01:29:32,054] with a suitable definition,
+- [01:29:32,054 - 01:29:34,054] is a small quantity.
+- [01:29:34,054 - 01:29:36,054] The square of the electric charge,
+- [01:29:36,054 - 01:29:38,054] again with a suitable definition,
+- [01:29:38,054 - 01:29:40,054] is about one, well that's the number
+- [01:29:40,054 - 01:29:42,054] of the electron.
+- [01:29:42,054 - 01:29:44,054] So this is proportional
+- [01:29:44,054 - 01:29:46,054] to the square of the fine structure constant.
+- [01:29:46,054 - 01:29:48,054] So scattering in quantum
+- [01:29:48,054 - 01:29:50,054] electrodynamics
+- [01:29:50,054 - 01:29:52,054] is an unlikely process.
+- [01:29:52,054 - 01:29:54,054] A photon comes in
+- [01:29:54,054 - 01:29:56,054] and strikes an electron.
+- [01:29:56,054 - 01:29:58,054] What is the probability
+- [01:29:58,054 - 01:30:00,054] that it goes right through it
+- [01:30:00,054 - 01:30:02,054] versus the probability
+- [01:30:02,054 - 01:30:04,054] that it really scatters it?
+- [01:30:04,054 - 01:30:06,054] The probability that it really scatters it
+- [01:30:06,054 - 01:30:08,054] is governed by this
+- [01:30:08,054 - 01:30:10,054] E to the fourth, and it's a very small number.
+- [01:30:10,054 - 01:30:12,054] Now,
+- [01:30:12,054 - 01:30:14,054] we have to add all the processes
+- [01:30:14,054 - 01:30:16,054] that we can find,
+- [01:30:16,054 - 01:30:18,054] add them up to form a real amplitude.
+- [01:30:18,054 - 01:30:20,054] Incidentally, there's another one here
+- [01:30:20,054 - 01:30:22,054] which looks like this,
+- [01:30:22,054 - 01:30:24,054] where
+- [01:30:24,054 - 01:30:26,054] the final photon is
+- [01:30:26,054 - 01:30:28,054] emitted before
+- [01:30:28,054 - 01:30:30,054] the initial photon is absorbed.
+- [01:30:30,054 - 01:30:32,054] That's another process.
+- [01:30:32,054 - 01:30:34,054] We have to add them all.
+- [01:30:34,054 - 01:30:36,054] But then we start adding
+- [01:30:36,054 - 01:30:38,054] more complicated things.
+- [01:30:38,054 - 01:30:40,054] Let's focus on here.
+- [01:30:40,054 - 01:30:42,054] We can add another photon.
+- [01:30:42,054 - 01:30:44,054] In many ways.
+- [01:30:44,054 - 01:30:46,054] This is not the only way.
+- [01:30:46,054 - 01:30:48,054] We could have it go from here to here,
+- [01:30:48,054 - 01:30:50,054] from here to here. Many photons.
+- [01:30:50,054 - 01:30:52,054] But how many powers of electric charge
+- [01:30:52,054 - 01:30:54,054] does this have?
+- [01:30:54,054 - 01:30:56,054] This has four powers
+- [01:30:56,054 - 01:30:58,054] of electric charge in the amplitude
+- [01:30:58,054 - 01:31:00,054] and eight in the probability.
+- [01:31:00,054 - 01:31:02,054] So this is even weaker.
+- [01:31:02,054 - 01:31:04,054] But then we can do
+- [01:31:04,054 - 01:31:06,054] even more complicated things.
+- [01:31:06,054 - 01:31:08,054] We can put an electron-positron
+- [01:31:08,054 - 01:31:10,054] pair in here.
+- [01:31:10,054 - 01:31:12,054] Each time we complicate it,
+- [01:31:12,054 - 01:31:14,054] we add two more powers
+- [01:31:14,054 - 01:31:16,054] of electric charge.
+- [01:31:16,054 - 01:31:18,054] So in quantum electrodynamics,
+- [01:31:18,054 - 01:31:20,054] the expansion is typically
+- [01:31:20,054 - 01:31:22,054] an expansion in powers of the square
+- [01:31:22,054 - 01:31:24,054] of the electric charge.
+- [01:31:24,054 - 01:31:26,054] Every time you add another
+- [01:31:26,054 - 01:31:28,054] complicating structure
+- [01:31:28,054 - 01:31:30,054] to a Feynman diagram,
+- [01:31:30,054 - 01:31:32,054] it's two powers of electric charge
+- [01:31:32,054 - 01:31:34,054] and it means it's about a hundred,
+- [01:31:34,054 - 01:31:36,054] a couple of hundred times
+- [01:31:36,054 - 01:31:38,054] smaller in amplitude
+- [01:31:38,054 - 01:31:40,054] than the previous one.
+- [01:31:40,054 - 01:31:42,054] So if you add them up,
+- [01:31:42,054 - 01:31:44,054] it looks like it converges.
+- [01:31:44,054 - 01:31:46,054] Because the more and more complicated
+- [01:31:46,054 - 01:31:48,054] they get, the weaker
+- [01:31:48,054 - 01:31:50,054] the probability from that
+- [01:31:50,054 - 01:31:52,054] particular configuration.
+- [01:31:52,054 - 01:31:54,054] Incidentally,
+- [01:31:54,054 - 01:31:56,054] you don't square this
+- [01:31:56,054 - 01:31:58,054] and add it to the square
+- [01:31:58,054 - 01:32:00,054] of this and add it to the square
+- [01:32:00,054 - 01:32:02,054] of this to find the probability.
+- [01:32:02,054 - 01:32:04,054] You add them up
+- [01:32:04,054 - 01:32:06,054] and then you square.
+- [01:32:06,054 - 01:32:08,054] That's the rule.
+- [01:32:08,054 - 01:32:10,054] Add and then square.
+- [01:32:10,054 - 01:32:12,054] That means there's cross terms
+- [01:32:12,054 - 01:32:14,054] between them in calculating
+- [01:32:14,054 - 01:32:16,054] the probability.
+- [01:32:16,054 - 01:32:18,054] These are called interference terms.
+- [01:32:18,054 - 01:32:20,054] So that's the structure
+- [01:32:20,054 - 01:32:22,054] of quantum field theory.
+- [01:32:22,054 - 01:32:24,054] That's what we do with it.
+- [01:32:24,054 - 01:32:26,054] The next issue,
+- [01:32:26,054 - 01:32:28,054] as I said,
+- [01:32:28,054 - 01:32:30,054] we're now at the stage
+- [01:32:30,054 - 01:32:32,054] where we can really start to sensibly
+- [01:32:32,054 - 01:32:34,054] talk about particle physics.
+- [01:32:34,054 - 01:32:36,054] We can name all the particles.
+- [01:32:36,054 - 01:32:38,054] We can specify their masses.
+- [01:32:38,054 - 01:32:40,054] Those are the parameters
+- [01:32:40,054 - 01:32:42,054] that we've spoken of.
+- [01:32:42,054 - 01:32:44,054] And we can write down
+- [01:32:44,054 - 01:32:46,054] the Lagrangians governing them
+- [01:32:46,054 - 01:32:48,054] partly from theory,
+- [01:32:48,054 - 01:32:50,054] partly from experiment,
+- [01:32:50,054 - 01:32:52,054] and discuss their symmetries.
+- [01:32:52,054 - 01:32:54,054] The symmetries can be discussed
+- [01:32:54,054 - 01:32:56,054] by looking at the Lagrangian.
+- [01:32:56,054 - 01:32:58,054] We'll do that.
+- [01:32:58,054 - 01:33:00,054] And we can write down
+- [01:33:00,054 - 01:33:02,054] the standard model of particle physics
+- [01:33:02,054 - 01:33:04,054] and discuss some of its properties.
+- [01:33:04,054 - 01:33:06,054] So I think we're
+- [01:33:06,054 - 01:33:08,054] off to
+- [01:33:08,054 - 01:33:10,054] the next session.
+- [01:33:10,054 - 01:33:12,054] I think we're set now
+- [01:33:12,054 - 01:33:14,054] to move ahead
+- [01:33:14,054 - 01:33:16,054] and really discuss
+- [01:33:16,054 - 01:33:18,054] the world of genuine real particles
+- [01:33:18,054 - 01:33:20,054] and what can be discovered
+- [01:33:20,054 - 01:33:22,054] in the world of them.
+- [01:33:22,054 - 01:33:24,054] Instead of that M squared,
+- [01:33:24,054 - 01:33:26,054] you could have the Higgs field
+- [01:33:26,054 - 01:33:28,054] and then that would be a
+- [01:33:28,054 - 01:33:30,054] quadratic.
+- [01:33:30,054 - 01:33:32,054] That's right.
+- [01:33:32,054 - 01:33:34,054] We're going to discuss that.
+- [01:33:34,054 - 01:33:36,054] That's right.
+- [01:33:36,054 - 01:33:38,054] That's exactly it.
+- [01:33:38,054 - 01:33:40,054] Where was the...
+- [01:33:40,054 - 01:33:42,054] Yeah.
+- [01:33:42,054 - 01:33:44,054] Where is that extension?
+- [01:33:44,054 - 01:33:46,054] Oh, they're here.
+- [01:33:46,054 - 01:33:48,054] X and X prime could stand for two different times.
+- [01:33:52,054 - 01:33:54,054] That's how we managed to move vertically.
+- [01:33:54,054 - 01:33:56,054] Alright.
+- [01:33:56,054 - 01:33:58,054] Which is the term that corresponds
+- [01:33:58,054 - 01:34:00,054] to the particle just standing
+- [01:34:00,054 - 01:34:02,054] where it's meant to be at?
+- [01:34:04,054 - 01:34:06,054] There's also some terms...
+- [01:34:06,054 - 01:34:08,054] There are various terms.
+- [01:34:08,054 - 01:34:10,054] There are various terms.
+- [01:34:10,054 - 01:34:12,054] There are terms where the particle just stands still.
+- [01:34:12,054 - 01:34:14,054] When we wrote down
+- [01:34:14,054 - 01:34:16,054] phi of X
+- [01:34:16,054 - 01:34:18,054] minus phi of X prime
+- [01:34:18,054 - 01:34:20,054] squared,
+- [01:34:20,054 - 01:34:22,054] that did have
+- [01:34:22,054 - 01:34:24,054] terms in it like phi of X squared
+- [01:34:24,054 - 01:34:26,054] and phi of X prime squared.
+- [01:34:26,054 - 01:34:28,054] Those are terms where the particle stands still.
+- [01:34:28,054 - 01:34:30,054] The cross terms
+- [01:34:30,054 - 01:34:32,054] are the ones where it moves.
+- [01:34:32,054 - 01:34:34,054] So there are terms where the particle stands still
+- [01:34:34,054 - 01:34:36,054] both from this and from the mass term.
+- [01:34:36,054 - 01:34:38,054] Right.
+- [01:34:38,054 - 01:34:40,054] Yeah.
+- [01:34:40,054 - 01:34:42,054] Okay.
+- [01:34:46,054 - 01:34:48,054] For more, please visit us at
+- [01:34:48,054 - 01:34:50,054] stanford.edu.
