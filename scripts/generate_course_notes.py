@@ -153,7 +153,7 @@ def build_task_context(lecture: LectureInfo) -> str:
             "- Primary source of truth: the matching lecture transcript; preserve its order, rhythm, motivation, and narrative progression.",
             "- Visual evidence: selected lecture frames are only supporting evidence for equations, diagrams, and board layout; do not let them override the transcript.",
             "- Mathematical standard: reconstruct cautiously when the lecture is partial, but avoid generic textbook filler that was not motivated by the lecture.",
-            "- Style target: notes should read like polished companion notes to Leonard Susskind's lecture, with explicit credit to Leonard Susskind and curation by LazyingArt LLC at https://lazying.art.",
+            "- Style target: notes should read like polished companion notes to Leonard Susskind's lecture, with explicit credit to Leonard Susskind and curation by LazyingArt LLC; reserve the website URL for the generated front-matter credit, not the prose body.",
             "- Output discipline: each prompt stage should solve only its local subtask, but keep the full end goal in mind so downstream stages remain coherent.",
         ]
     )
@@ -1098,10 +1098,10 @@ def write_lecture_wrapper(lecture: LectureInfo, lecture_dir: Path) -> None:
 \\frontmatter
 \\title{{{lecture.course_title}: {lecture.lecture_title}}}
 \\author{{Leonard Susskind}}
-\\date{{Transcript-derived notes curated by LazyingArt LLC (\\texttt{{https://lazying.art}})}}
+\\date{{Transcript-derived notes curated by \\href{{https://lazying.art}}{{LazyingArt LLC}}}}
 \\maketitle
 \\begin{{center}}
-\\small Original lecture by Leonard Susskind. Transcript-derived notes curated by LazyingArt LLC (\\texttt{{https://lazying.art}}).
+\\small Original lecture by Leonard Susskind. Transcript-derived notes curated by \\href{{https://lazying.art}}{{LazyingArt LLC}}.
 \\end{{center}}
 \\clearpage
 \\mainmatter
@@ -1124,10 +1124,10 @@ def write_course_book(course_root: Path, lecture_entries: list[LectureInfo]) -> 
 \\frontmatter
 \\title{{{title_course}}}
 \\author{{Leonard Susskind}}
-\\date{{{descriptor} \\\\ Transcript-derived notes curated by LazyingArt LLC (\\texttt{{https://lazying.art}})}}
+\\date{{{descriptor} \\\\ Transcript-derived notes curated by \\href{{https://lazying.art}}{{LazyingArt LLC}}}}
 \\maketitle
 \\begin{{center}}
-\\small Original lectures by Leonard Susskind. Transcript-derived course notes curated by LazyingArt LLC (\\texttt{{https://lazying.art}}).
+\\small Original lectures by Leonard Susskind. Transcript-derived course notes curated by \\href{{https://lazying.art}}{{LazyingArt LLC}}.
 \\end{{center}}
 \\clearpage
 \\tableofcontents
