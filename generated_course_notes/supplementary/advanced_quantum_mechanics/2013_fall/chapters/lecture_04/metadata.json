@@ -1,0 +1,34 @@
+{
+  "course_rel": "supplementary/advanced_quantum_mechanics/2013_fall",
+  "transcript_rel": "supplementary/advanced_quantum_mechanics/2013_fall/188 - Advanced Quantum Mechanics Lecture 4 [ATxq2IEekk4].md",
+  "video_rel": "supplementary/advanced_quantum_mechanics/2013_fall/188 - Advanced Quantum Mechanics Lecture 4 [ATxq2IEekk4].mkv",
+  "lecture_number": 4,
+  "lecture_slug": "lecture_04",
+  "lecture_title": "Advanced Quantum Mechanics Lecture 4",
+  "assets": [
+    {
+      "name": "lecture_04_frame_01.png",
+      "timestamp_seconds": 2975.26,
+      "timestamp_hhmmss": "00:49:35.260",
+      "source_candidate": "lecture_04_candidate_05_004935260.png",
+      "recommended_use": "tikz_reference",
+      "rationale": "Best readable shot of the matrix products used to identify the Pauli-matrix relation; partly obstructed, so it is safer as a reconstruction reference."
+    },
+    {
+      "name": "lecture_04_frame_02.png",
+      "timestamp_seconds": 3341.2,
+      "timestamp_hhmmss": "00:55:41.200",
+      "source_candidate": "lecture_04_candidate_07_005541200.png",
+      "recommended_use": "figure",
+      "rationale": "Clear, stable board view of the spin-1/2 matrices and commutator structure, with better legibility than the neighboring near-duplicate frames."
+    },
+    {
+      "name": "lecture_04_frame_03.png",
+      "timestamp_seconds": 3721.6,
+      "timestamp_hhmmss": "01:02:01.600",
+      "source_candidate": "lecture_04_candidate_12_010201600.png",
+      "recommended_use": "tikz_reference",
+      "rationale": "Best late-lecture reference for the orbital-angular-momentum spectrum sketch, with the axes, l=0 marking, and first plotted state visible enough to redraw faithfully."
+    }
+  ]
+}
