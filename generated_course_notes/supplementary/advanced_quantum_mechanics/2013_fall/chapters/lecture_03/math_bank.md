@@ -2,138 +2,156 @@
 
 ## Core Equations
 
-### Angular momentum foundation
-1. \(\hat L_z=-i\hbar\,\partial_\phi\) for azimuthal-angle dependence (2D/3D angular operator analogue). \([transcript-backed]\)  
-2. \(-i\hbar\,\partial_\theta \,\psi(r,\theta)=\hbar \ell\,\psi(r,\theta)\Rightarrow \psi\propto e^{i\ell\theta}\), \(\ell\in\mathbb Z\). \([transcript-backed]\)  
-3. \(L_\pm=L_x\pm iL_y\). \([visible]\)  
-4. \(L_\pm|\ell,m\rangle \propto |\ell,m\pm1\rangle\). \([transcript-backed]\)  
-5. \(m\in\{-\ell,-\ell+1,\dots,\ell\}\), so each multiplet has \(2\ell+1\) states. \([transcript-backed]\)  
-6. \(\mathbf L^2=L_x^2+L_y^2+L_z^2\). \([visible]\)  
-7. \([L_z,L_\pm]=\pm\hbar L_\pm,\quad [L_+,L_-]=2\hbar L_z\). \([standard\ reconstruction]\)  
-8. \(\mathbf L^2=L_-L_+ + L_z^2+\hbar L_z = L_+L_-+L_z^2-\hbar L_z\). \([standard\ reconstruction]\)  
-9. \(\mathbf L^2|\ell,m\rangle=\hbar^2\ell(\ell+1)|\ell,m\rangle\) (independent of \(m\)). \([visible]\)  
-10. \([H,\mathbf L^2]=0\) for central \(V(r)\Rightarrow\) states in same \(\ell\)-multiplet share energy. \([transcript-backed]\)
-
-### Angular functions and separation
-11. \(\psi(\mathbf r)=R_\ell(r)Y_\ell^{m}(\theta,\phi)\). \([standard\ reconstruction]\)  
-12. \(\mathbf L^2Y_\ell^m=\hbar^2\ell(\ell+1)Y_\ell^m,\quad L_zY_\ell^m=\hbar mY_\ell^m\). \([standard\ reconstruction]\)
-
-### Central-force kinematics and radial reduction
-13. \(H=\dfrac{\mathbf p^2}{2m}+V(r)\). \([visible]\)  
-14. \(\mathbf p^2=p_x^2+p_y^2+p_z^2 = p_r^2+p_\theta^2+p_\phi^2\). \([visible]\)  
-15. \(\mathbf L^2 = r^2\big(p_\theta^2+p_\phi^2\big)\;\Rightarrow\;p_\theta^2+p_\phi^2=\mathbf L^2/r^2\). \([standard\ reconstruction]\)  
-16. \(H=\dfrac{p_r^2}{2m}+\dfrac{\mathbf L^2}{2mr^2}+V(r)\). \([transcript-backed]\)  
-17. \(V_{\mathrm eff}(r)=V(r)+\dfrac{\mathbf L^2}{2mr^2}\). \([transcript-backed]\)
-
-### Fixed-\(\ell\) radial equation
-18. \[
-\left[-\frac{\hbar^2}{2m}\frac{d^2}{dr^2}+\frac{\hbar^2\ell(\ell+1)}{2mr^2}+V(r)\right]\psi_\ell(r)=E\,\psi_\ell(r)
-\]  
-\([transcript-backed]\) with note: this is the reduced 1D radial form used in this lecture’s convention. \([standard\ reconstruction]\)
-19. Alternative standard form (if carrying measure factor): \(R(r)=u(r)/r\), then  
-\[
-\left[-\frac{\hbar^2}{2m}\frac{d^2}{dr^2}+\frac{\hbar^2\ell(\ell+1)}{2mr^2}+V(r)\right]u(r)=E\,u(r).
-\]
-\([standard\ reconstruction]\)
-
-### Spectral ordering / degeneracy
-20. Higher node count at fixed \(\ell\): \(n_r\) nodes \(\Rightarrow\) higher \(E\) (the node theorem input). \([transcript-backed]\)  
-21. One radial solution per \(n_r\) for each fixed \(\ell\); each radial level has \(2\ell+1\) magnetic degenerate states. \([transcript-backed]\)  
-22. Coulomb accident (ideal): \(E\) depends primarily on \(n=n_r+\ell+1\), giving \(g_n=n^2\) for levels (ignoring spin, relativistic, finite-size corrections). \([standard\ reconstruction]\)
-
-### HO transition setup (hand-off)
-23. \(H=\dfrac{p^2}{2m}+\dfrac12 m\omega^2 x^2\). \([transcript-backed]\)  
-24. \(a=\dfrac{1}{\sqrt{2m\hbar\omega}}(m\omega x+ip),\quad a^\dagger=\dfrac{1}{\sqrt{2m\hbar\omega}}(m\omega x-ip)\). \([standard\ reconstruction]\)  
-25. \(H=\hbar\omega\left(a^\dagger a+\frac12\right)\), \(E_n=\hbar\omega\left(n+\frac12\right)\). \([standard\ reconstruction]\)
+- [transcript-backed] \(L_z=-i\hbar\,\partial_\theta\) in the two-dimensional prototype.
+- [transcript-backed] \(L_z\,\psi(r,\theta)=\hbar \ell\,\psi(r,\theta)\).
+- [transcript-backed] \(\psi(r,\theta)=\chi(r)e^{i\ell\theta}\), with \(\ell\in\mathbb Z\).
+- [transcript-backed] \(\Psi(r,\theta,\phi)=R(r)\,Y_{\ell m}(\theta,\phi)\).
+- [transcript-backed] \([L_x,L_y]=i\hbar L_z\), with cyclic permutations.
+- [transcript-backed] \(L_\pm=L_x\pm iL_y\).
+- [standard reconstruction] \(L_z\lvert \ell,m\rangle=\hbar m\,\lvert \ell,m\rangle\).
+- [standard reconstruction] \(L_\pm\lvert \ell,m\rangle\propto \lvert \ell,m\pm1\rangle\).
+- [transcript-backed] \(m=-\ell,-\ell+1,\dots,\ell\), so the multiplet size is \(2\ell+1\).
+- [transcript-backed] \(L^2=L_x^2+L_y^2+L_z^2\).
+- [standard reconstruction] \(L^2=L_z^2+\hbar L_z+L_-L_+\).
+- [standard reconstruction] \(L^2=L_z^2-\hbar L_z+L_+L_-\).
+- [visible] \(L^2=\ell(\ell+1)\) on the board, with \(\hbar\) suppressed.
+- [transcript-backed] \(L^2\lvert \ell,\ell\rangle=\hbar^2\ell(\ell+1)\lvert \ell,\ell\rangle\).
+- [transcript-backed] \(H=\dfrac{p^2}{2m}+V(r)\).
+- [visible] \(H=\dfrac{p_r^2+p_\theta^2}{2m}+V(r)\).
+- [transcript-backed] \(L=r\,p_\theta\), hence \(L^2=r^2p_\theta^2\) and \(p_\theta^2=\dfrac{L^2}{r^2}\).
+- [visible] \(H=\dfrac{p_r^2}{2m}+\dfrac{L^2}{2mr^2}+V(r)\).
+- [standard reconstruction] \(V_{\mathrm{eff}}(r)=\dfrac{L^2}{2mr^2}+V(r)\).
+- [standard reconstruction] \(p_r=-i\hbar\,\dfrac{d}{dr}\).
+- [visible] \(H\psi(r)=E\psi(r)\).
+- [standard reconstruction] \(-\dfrac{\hbar^2}{2m}\dfrac{d^2\psi}{dr^2}+\dfrac{\hbar^2\ell(\ell+1)}{2mr^2}\psi+V(r)\psi=E\psi\).
+- [transcript-backed] \(-\dfrac{\hbar^2}{2m}\left(\partial_x^2+\partial_y^2+\partial_z^2\right)\Psi+V(r)\Psi=E\Psi\).
+- [transcript-backed] For fixed \(\ell\), each radial level carries degeneracy \(2\ell+1\).
+- [transcript-backed] In the Coulomb case, shell degeneracies are \(1,4,9,16,\dots\).
+- [transcript-backed] \(H=\dfrac{p^2}{2}+\dfrac{\omega^2x^2}{2}\) for the oscillator after setting \(m=1\) and \(k=\omega^2\).
+- [transcript-backed] \(\dot x=\dfrac{\partial H}{\partial p}=p\), \(\dot p=-\dfrac{\partial H}{\partial x}=-\omega^2x\).
+- [transcript-backed] \(\ddot x=-\omega^2x\).
+- [transcript-backed] \([x,p]=i\hbar\).
+- [standard reconstruction] \(H=\dfrac12(p+i\omega x)(p-i\omega x)+\dfrac12\hbar\omega\).
+- [standard reconstruction] \(A_+=\dfrac{p+i\omega x}{\sqrt{2\hbar\omega}},\qquad A_-=\dfrac{p-i\omega x}{\sqrt{2\hbar\omega}}\).
+- [transcript-backed] \([A_-,A_+]=1\).
+- [transcript-backed] \(N=A_+A_-\).
+- [standard reconstruction] \(H=\hbar\omega\left(N+\tfrac12\right)\).
+- [transcript-backed] \(N\lvert n\rangle=n\lvert n\rangle\), with \(n=0,1,2,\dots\).
+- [transcript-backed] \(N(A_+\lvert n\rangle)=(n+1)(A_+\lvert n\rangle)\).
+- [transcript-backed] \(A_-\lvert 0\rangle=0\).
+- [standard reconstruction] \(A_+\lvert n\rangle=\sqrt{n+1}\,\lvert n+1\rangle,\qquad A_-\lvert n\rangle=\sqrt n\,\lvert n-1\rangle\).
+- [transcript-backed] \(E_n=\hbar\omega\left(n+\tfrac12\right)\).
 
 ## Definitions And Objects
 
-- \(\mathbf L=(L_x,L_y,L_z)\): angular momentum operator vector.  
-- \(L^2\) (sometimes written \(\mathbf L^2\)): \(\mathbf L\cdot\mathbf L\), used for the fixed multiplet Casimir.  
-- \(\ell\): nonnegative angular quantum number (what lecture intermittently calls “L” on board for top-of-ladder label; map to \(\ell\) in final notes).  
-- \(m\): magnetic quantum number.  
-- \(L_\pm\): angular momentum ladder operators in \(\mathbf L\) algebra.  
-- \(Y_\ell^m(\theta,\phi)\): spherical harmonics basis for angular sector.  
-- \(R_\ell(r)\), \(\psi_\ell(r)\), \(u(r)\): radial wavefunctions (choose one consistently; see uncertainty note on \(u\) vs \(\psi\)).  
-- \(p_r,p_\theta,p_\phi\): momentum components in spherical decomposition.  
-- \(V_{\mathrm eff}(r)=V(r)+\ell(\ell+1)\hbar^2/(2mr^2)\): effective one-dimensional potential.  
-- \(n_r\): radial node count (node number in the reduced radial solution).  
-- \(n\): principal label for Coulomb organization (standard reconstruction only).  
-- \(a,a^\dagger\): HO lowering/raising operators in setup section.
-
-Figure reference mapping:
-- `lecture_03_frame_01.png`: \(2\ell+1\), \(m\)-range, \(\ell(\ell+1)\) ladder result. Retain as “lecture-archival” visual.
-- `lecture_03_frame_02.png`: commutator-based degeneracy in fixed-\(\ell\), \([H,\mathbf L]=0\). Retain.
-- `lecture_03_frame_06.png`: Cartesian \(p^2\) decomposition, then radial form. Retain.
-- `lecture_03_frame_03.png`: centrifugal barrier intuition ( \(1/r^2\) repulsive behavior for \(\ell\neq0\) ). Redraw TikZ.
-- `lecture_03_frame_04.png`: substitution \(L^2\to\hbar^2\ell(\ell+1)\) in effective radial term. Redraw TikZ.
-- `lecture_03_frame_05.png`: spectrum-by-\(\ell\) stacking with \(2\ell+1\) multiplicities and node markers. Redraw TikZ.
+- Angular momentum is treated as a statement about the angular dependence of the wavefunction, not its radial dependence.
+- \(\chi(r)\): arbitrary radial factor in the two-dimensional eigenfunction \(e^{i\ell\theta}\chi(r)\).
+- \(Y_{\ell m}(\theta,\phi)\): angular functions on the sphere; these are the spherical harmonics.
+- Multiplet: the collection of states with fixed \(\ell\) and varying \(m\).
+- Top state: the highest-\(m\) state in a multiplet, annihilated by \(L_+\).
+- Bottom state: the lowest-\(m\) state in a multiplet, annihilated by \(L_-\).
+- \(L^2\): square of total angular momentum; common to the whole multiplet.
+- \(p_r\), \(p_\theta\): radial and angular components in the classical central-force reduction.
+- Centrifugal barrier: the effective potential term \(L^2/(2mr^2)\).
+- Bound state: discrete state localized in the effective potential well.
+- Node: zero of the radial wavefunction; node count orders the bound states at fixed \(\ell\).
+- \(A_+\), \(A_-\): oscillator ladder operators, Hermitian conjugates of each other.
+- \(N=A_+A_-\): oscillator number operator after the additive zero-point term is isolated.
+- Ground state: lowest oscillator state, annihilated by \(A_-\).
+- Zero-point energy: the additive \(\tfrac12\hbar\omega\) left over from factorization.
 
 ## Derivation Steps
 
-1. Angular decomposition in 2D:
-   1. Solve \(-i\hbar\partial_\theta\psi=\hbar\ell\psi\).  
-   2. Solution is \(\psi\propto e^{i\ell\theta}\).  
-   3. Single-valuedness \(\Rightarrow \ell\in\mathbb Z\).
+Angular momentum eigenfunctions in 2D
 
-2. Ladder algebra and fixed spacing:
-   1. Define \(L_\pm=L_x\pm iL_y\).  
-   2. Use \([L_z,L_\pm]=\pm\hbar L_\pm\Rightarrow m\mapsto m\pm1\).  
-   3. Repeated action creates equally spaced \(m\)-chain.
+1. Start from the rotational generator \(L_z=-i\hbar\,\partial_\theta\).
+2. Write the eigenvalue equation \(L_z\psi=\hbar\ell\,\psi\).
+3. Note that the derivative is only with respect to \(\theta\), so \(r\) is a spectator.
+4. Solve the \(\theta\)-dependence to get \(e^{i\ell\theta}\).
+5. Impose single-valuedness around the circle to force \(\ell\in\mathbb Z\).
+6. Conclude that the radial factor is arbitrary for angular-momentum purposes.
 
-3. Finite multiplet size:
-   1. Ladder can only terminate above and below for normalizable physical states.  
-   2. Symmetry about \(m=0\) implies top/bottom symmetric.  
-   3. Therefore \(m=-\ell,\ldots,\ell\), total \(2\ell+1\).
+Multiplets and the \(L^2=\ell(\ell+1)\) result
 
-4. Casimir value for fixed \(\ell\):
-   1. Rewrite \(\mathbf L^2\) via ladder factors.  
-   2. Act on top state \(L_+|\ell,\ell\rangle=0\).  
-   3. Obtain \(\mathbf L^2|\ell,\ell\rangle=\hbar^2\ell(\ell+1)|\ell,\ell\rangle\).  
-   4. Commutes with \(L_\pm\Rightarrow\) same eigenvalue for all \(m\) in multiplet.
+1. Choose an \(L_z\) eigenbasis and label states by \(m\).
+2. Use the commutators to show that \(L_+\) raises \(m\) by one and \(L_-\) lowers \(m\) by one.
+3. Argue that a finite ladder must terminate when the next raising or lowering gives zero.
+4. Use symmetry under \(z\to -z\) to force the ladder endpoints to be symmetric.
+5. Conclude that finite multiplets are indexed by a top value \(\ell\), with \(m=-\ell,\dots,\ell\).
+6. Count states to get \(2\ell+1\).
+7. Rewrite \(L^2\) in ordered form, e.g. \(L^2=L_z^2+\hbar L_z+L_-L_+\).
+8. Apply this to the top state \(\lvert \ell,\ell\rangle\).
+9. Replace \(L_z\) by \(\hbar\ell\) and use \(L_+\lvert \ell,\ell\rangle=0\).
+10. Obtain \(L^2\lvert \ell,\ell\rangle=\hbar^2\ell(\ell+1)\lvert \ell,\ell\rangle\).
+11. Use \([L^2,L_i]=0\) to propagate the same \(L^2\) eigenvalue through the whole multiplet.
 
-5. Central-force degeneracy logic:
-   1. For \(V=V(r)\), rotational symmetry gives \([H,\mathbf L]=0\).  
-   2. So \(H\) and \(\mathbf L^2, L_z\) share eigenbasis in sectors of fixed \(\ell\).  
-   3. Hence fixed \(\ell\): \(2\ell+1\) states equal in energy.
+Central-force reduction and radial equation
 
-6. Radial reduction:
-   1. Start with \(H=\mathbf p^2/(2m)+V(r)\).  
-   2. Split classically \( \mathbf p^2=p_r^2+p_\theta^2+p_\phi^2\).  
-   3. Replace \(p_\theta^2+p_\phi^2\to \mathbf L^2/r^2\).  
-   4. Obtain \(H=p_r^2/(2m)+\mathbf L^2/(2mr^2)+V(r)\).  
-   5. For fixed \(\ell\), substitute \(\mathbf L^2\to\hbar^2\ell(\ell+1)\), yielding 1D radial equation.
+1. Start from \(H=p^2/(2m)+V(r)\).
+2. Use rotational symmetry to state that \(\mathbf L=\mathbf r\times\mathbf p\) is conserved.
+3. In the classical picture, use the conserved orbital plane to work in that plane.
+4. Decompose momentum into \(p_r\) and \(p_\theta\).
+5. Write \(p^2=p_r^2+p_\theta^2\).
+6. Use \(L=r\,p_\theta\) to replace \(p_\theta^2\) by \(L^2/r^2\).
+7. Rewrite the Hamiltonian as \(p_r^2/(2m)+L^2/(2mr^2)+V(r)\).
+8. Interpret the \(1/r^2\) term as the centrifugal barrier.
+9. Quantize the radial kinetic term with \(p_r^2\to -\hbar^2\,d^2/dr^2\).
+10. Replace \(L^2\) by \(\hbar^2\ell(\ell+1)\) on angular-momentum eigenstates.
+11. Obtain the one-variable radial Schrödinger equation.
 
-7. Node-energy ordering:
-   1. For each fixed \(\ell\)-equation, each admissible bound state corresponds to node number \(n_r\).  
-   2. Standard node theorem: increasing nodes \(\Rightarrow\) increasing radial energy in that \(\ell\) sector.  
+Spectral organization for central forces
 
-8. Coulomb accident structure (compact picture):
-   1. Higher \(\ell\) raises centrifugal term so whole \(\ell\)-sector shifts up.  
-   2. In ideal \(1/r\) potential, accidental coincidences align different \(\ell\) sectors by same principal \(n\).  
-   3. Note: full real-atom spectrum violates this via spin, relativistic, finite-size corrections.
+1. Fix \(\ell\); this fixes the centrifugal term in the radial equation.
+2. Solve the resulting radial problem as a one-dimensional bound-state problem.
+3. Order states by node count: no nodes, one node, two nodes, and so on.
+4. Use the standard bound-state ordering to identify higher node count with higher energy.
+5. Attach degeneracy \(2\ell+1\) to each fixed-\(\ell\) radial level.
+6. For generic attractive potentials, increasing \(\ell\) pushes the tower upward.
+7. For Coulomb, note the special alignment: \(\ell=1\) zero-node aligns with \(\ell=0\) one-node, etc.
+8. Sum the orbital degeneracies level by level to get \(1,4,9,16,\dots\).
+9. Restore the missing factor of two later when spin is included.
 
-9. HO handoff:
-   1. Rewrite \(H=\frac{p^2}{2m}+\frac12m\omega^2x^2\).  
-   2. Factor as \(H\propto a^\dagger a+\frac12\).  
-   3. Use ladder logic for level spacing as preparatory structure for later lecture.
+Oscillator ladder construction
+
+1. Set \(m=1\) and \(k=\omega^2\), so \(H=\frac12(p^2+\omega^2x^2)\).
+2. Check classically that Hamilton’s equations give \(\ddot x=-\omega^2x\).
+3. Try to factor \(p^2+\omega^2x^2\) using \(p\pm i\omega x\).
+4. Notice that the naive factorization misses a commutator term because \(x\) and \(p\) do not commute.
+5. Use \([x,p]=i\hbar\) to extract the additive \(\tfrac12\hbar\omega\).
+6. Define the normalized operators \(A_+\) and \(A_-\).
+7. Compute \([A_-,A_+]=1\).
+8. Define \(N=A_+A_-\).
+9. If \(N\lvert n\rangle=n\lvert n\rangle\), apply \(A_+\) and show the new state has eigenvalue \(n+1\).
+10. Similarly, \(A_-\) lowers the eigenvalue.
+11. Use positivity of \(N=A_+A_-\) to show the ladder cannot descend forever.
+12. Identify the bottom state by \(A_-\lvert 0\rangle=0\).
+13. Restore the dropped constant to get \(E_n=\hbar\omega(n+\tfrac12)\).
 
 ## Notation Choices
 
-- Use \(\mathbf L\) for operator, \(\mathbf L^2=\mathbf L\cdot\mathbf L\) for Casimir; use \(\ell\) (lowercase script-like) for nonnegative angular quantum number.  
-- Use \(m\) for magnetic quantum number; never use uppercase \(L\) for eigenvalue in final text except in explicit “as in lecture symbol mapping” callouts.  
-- Use \(H\) for Hamiltonian and \(V(r)\) for central potential.  
-- Use \(\hbar\) explicitly in all eigenvalue equations.  
-- Use \(\psi_\ell(r)\) for reduced radial ODE in this lecture’s convention; optionally add side-box for \(u(r)=r\psi_\ell(r)\) if including the standard first-derivative-clean form.  
-- Use \(V_{\text eff}(r)=V(r)+\hbar^2\ell(\ell+1)/(2mr^2)\).  
-- For node indexing, prefer \(n_r\) and define “radial level index per \(\ell\)”.  
-- HO setup only: \(a,a^\dagger\) with \([a,a^\dagger]=1\), \(H=\hbar\omega(a^\dagger a+\tfrac12)\).
+- Use \(L_x,L_y,L_z\) and \(L^2\) for operators; use \(\ell,m\) for quantum numbers.
+- Use \(\lvert \ell,m\rangle\) when both labels matter; avoid bare \(\lvert m\rangle\) except in obvious shorthand.
+- Treat \(\ell\) and \(m\) as dimensionless integers or half-integers; the operator eigenvalues carry the \(\hbar\).
+- In the orbital central-force part, restrict to integer \(\ell\), because the angular functions are \(Y_{\ell m}\).
+- Use \(\Psi(r,\theta,\phi)\) for the full three-dimensional wavefunction.
+- Use \(\psi(r)\) for the lecture’s reduced radial unknown, but add a note if needed that this is simplified radial notation.
+- If a mathematically cleaner notation is needed, identify \(\psi(r)\) with the reduced radial function \(u_\ell(r)\).
+- Keep \(L_\pm\) as the main ladder-operator notation for angular momentum; the board also shows \(L^+\), \(L^-\) style.
+- Keep \(A_+\), \(A_-\) for the oscillator in the lecture-facing exposition.
+- If standard notation is preferred later, map \(A_+\to a^\dagger\) and \(A_-\to a\) once, then stay consistent.
+- Use \(N\) for the oscillator number operator only after the zero-point term has been split off.
+- Keep \(p_\theta\) in the classical reduction because that is the lecture’s notation; do not retrofit a full canonical 3D derivation into this stage.
+- In final notes, use \(d/dr\) rather than \(\partial/\partial r\) for the reduced radial ODE.
 
 ## Uncertain Mathematics
 
-- The exact angular-wave decomposition in early classical-intuition transition is partly summarized by Susskind in words; retain exactness at the structural level: \(\psi(r,\theta,\phi)=R_\ell(r)Y_\ell^m\) is standard-completion, not fully written in full detail on board. \([transcript\ noisy]\)  
-- Measure-normalized radial form and whether intermediate step uses \(\psi_\ell(r)\) vs \(u(r)\) is not fully explicit; keep both with explicit note that many treatments use \(u=r\psi\) to remove first-derivative term. \([uncertain]\)  
-- Sign and subscript conventions for \(L\), \(M\), and \(\ell\) vary in speech/frame. Final notes should standardize to \(L_\pm=L_x\pm iL_y\), \(L_z\) eigenvalue \(\hbar m\), and use \( \ell \) for orbital label. \([uncertain]\)  
-- \(L_z\) eigenvalue equation in 2D uses \(\theta\) notation on board at one point; final notation should keep standard polar \(\phi\) for azimuth and \(\theta\) for polar angle. \([standard\ reconstruction]\)  
-- Early harmonic-oscillator derivation is partial and ends at ladder-operator setup; keep only setup-level equations and defer full operator-normalization details. \([uncertain]\)  
-- The transcript includes one noisy long derivation where normalization constants are omitted; keep spectrum logic and mention normalization coefficients can be added in appendix-level follow-up. \([transcript\ noisy]\)
+- The transcript is garbled in the early counting passage near the example with seven states; preserve the logic, not the broken wording.
+- The lecture begins with general angular-momentum algebra, where half-integer multiplets are allowed, but the later orbital discussion uses spherical harmonics and therefore integer \(\ell\) only.
+- The spoken formula for \(p_r\) has the wrong sign; use the standard \(p_r=-i\hbar\,d/dr\), noting that only \(p_r^2\) is used in the actual reduction.
+- The board radial equation is written as a pure second-derivative equation for \(\psi(r)\); rigorously this is the reduced radial equation, not the unreduced \(R_\ell(r)\) equation.
+- The frame evidence for the radial equation omits at least some \(\hbar\) factors; restore them consistently.
+- There is a brief spoken slip toward \(L^2=\ell(\ell-1)\); only the corrected \(L^2=\ell(\ell+1)\) belongs in the notes.
+- The ordered identities for \(L^2\) depend on whether one places \(L_-L_+\) or \(L_+L_-\); both are valid, but the sign in front of \(L_z\) changes accordingly.
+- The “Gegenbauer” label for the Coulomb radial solutions should be treated cautiously; do not hard-wire that special-function name without checking.
+- The oscillator normalization factors \(\sqrt{n+1}\) and \(\sqrt n\) appear only as a late correction in a tired ending; use the clean standard formulas, but do not claim the lecture derived them cleanly.
+- The degeneracy pattern \(1,4,9,16,\dots\) is the orbital Coulomb pattern before spin, relativistic corrections, and finite-size effects are included.
