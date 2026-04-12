@@ -15,7 +15,7 @@ Default behavior:
 Options:
   --course <rel>            restrict to one course rel path
   --source-root <path>      source video root
-  --model <name>            codex model (default: NOTE_MODEL or gpt-5.3-codex-spark)
+  --model <name>            codex model (default: NOTE_MODEL or gpt-5.4)
   --reasoning <level>       low|medium|high|xhigh (default: NOTE_REASONING or xhigh)
   --max-lectures <n>        stop after n generated lectures
   --allow-partial-course    allow a specific course even if transcripts are incomplete
@@ -25,7 +25,7 @@ USAGE
 
 repo_root="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 source_root="/home/lachlan/ProjectsLFS/YoutubeDownloader/downloads/PLERGeJGfknBTR_nXt5QL88xJF5LhDZBnG"
-model="${NOTE_MODEL:-gpt-5.3-codex-spark}"
+model="${NOTE_MODEL:-gpt-5.4}"
 reasoning="${NOTE_REASONING:-xhigh}"
 shared_session_file="${NOTE_CODEX_SESSION_FILE:-$repo_root/.lecture-notes-work/codex_sessions/susskind-notes.session_id}"
 shared_session_doc="${NOTE_CODEX_SESSION_DOC_FILE:-$repo_root/.lecture-notes-work/codex_sessions/susskind-notes.session.md}"
