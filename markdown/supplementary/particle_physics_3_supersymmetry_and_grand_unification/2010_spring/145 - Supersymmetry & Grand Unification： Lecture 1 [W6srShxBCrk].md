@@ -1,0 +1,2344 @@
+# Transcript
+
+Source: supplementary/particle_physics_3_supersymmetry_and_grand_unification/2010_spring/145 - Supersymmetry & Grand Unification： Lecture 1 [W6srShxBCrk].mp4
+
+- [00:00:00,000 - 00:00:06,400] Stanford University.
+- [00:00:06,400 - 00:00:12,460] Most of the basic ideas that we're going
+- [00:00:12,460 - 00:00:18,520] to talk about this quarter originated out of
+- [00:00:18,520 - 00:00:24,640] questions having to do with renormalization.
+- [00:00:24,640 - 00:00:30,120] Puzzles and sometimes puzzles, sometimes
+- [00:00:30,120 - 00:00:35,600] useful observations about the renormalization of
+- [00:00:35,600 - 00:00:38,300] the standard model.
+- [00:00:38,300 - 00:00:42,050] So I thought it would be a good idea to
+- [00:00:42,050 - 00:00:45,800] spend a little bit of time explaining to you, we've
+- [00:00:45,800 - 00:00:46,800] done this before.
+- [00:00:46,800 - 00:00:48,500] We've done this a couple of times.
+- [00:00:48,500 - 00:00:53,620] But still, to describe what renormalization
+- [00:00:53,620 - 00:00:58,740] is, it's a combination of two things.
+- [00:00:58,740 - 00:01:05,129] It's a combination of learning how to eliminate
+- [00:01:05,129 - 00:01:11,520] out of the description of physics things having
+- [00:01:11,520 - 00:01:14,690] to do with distances which are so small
+- [00:01:14,690 - 00:01:17,860] that they're irrelevant to the questions that you're
+- [00:01:17,860 - 00:01:18,460] asking.
+- [00:01:18,500 - 00:01:26,540] And the other half of it is very simple.
+- [00:01:26,540 - 00:01:29,320] It's dimensional analysis.
+- [00:01:29,320 - 00:01:32,470] In fact, it's learning to think about
+- [00:01:32,470 - 00:01:35,620] how dimensional analysis tells you the answer
+- [00:01:35,620 - 00:01:37,900] to some of the very difficult problems of
+- [00:01:37,900 - 00:01:40,180] quantum field theory that have to do with
+- [00:01:40,180 - 00:01:42,340] distances much, much smaller than
+- [00:01:42,340 - 00:01:44,500] you might be interested in.
+- [00:01:44,500 - 00:01:45,500] Here's some simple examples.
+- [00:01:45,500 - 00:01:46,500] I'm going to show you a few examples.
+- [00:01:46,500 - 00:01:47,500] I'm going to show you a few examples.
+- [00:01:47,500 - 00:01:48,500] I'm going to show you a few examples.
+- [00:01:48,500 - 00:01:52,160] I'm going to show you a few examples of
+- [00:01:52,160 - 00:01:55,820] renormalization, namely getting rid of things which are too
+- [00:01:55,820 - 00:01:59,980] small to be interesting to you.
+- [00:01:59,980 - 00:02:04,080] If you're interested in the nucleus and how
+- [00:02:04,080 - 00:02:08,180] the nucleus works, you may begin with quarks.
+- [00:02:08,180 - 00:02:10,280] Quarks are the fundamental
+- [00:02:10,280 - 00:02:12,380] underlying constituents of the nucleus.
+- [00:02:12,380 - 00:02:15,380] But for many, many purposes, the nucleus
+- [00:02:15,380 - 00:02:18,380] is really a collection of protons and neutrons.
+- [00:02:18,380 - 00:02:22,140] And it doesn't matter very much what
+- [00:02:22,140 - 00:02:25,900] those protons and neutrons are made out of.
+- [00:02:25,900 - 00:02:30,280] So a simple step is to solve the
+- [00:02:30,280 - 00:02:34,660] theory of quantum chromodynamics to discover and to
+- [00:02:34,660 - 00:02:38,220] compute the properties of the protons and neutrons.
+- [00:02:38,220 - 00:02:40,460] But then once you're finished with that,
+- [00:02:40,460 - 00:02:42,700] in computing the properties of the protons and
+- [00:02:42,700 - 00:02:45,279] neutrons, you might mean their mass, you might
+- [00:02:45,279 - 00:02:47,859] mean their spin, a few other properties, but
+- [00:02:47,860 - 00:02:51,040] also the forces between them.
+- [00:02:51,040 - 00:02:53,460] Also the forces between them.
+- [00:02:53,460 - 00:02:57,260] In a nucleus, the protons and neutrons move pretty slowly.
+- [00:02:57,260 - 00:02:59,920] So there's no real need or
+- [00:02:59,920 - 00:03:02,580] no strong need for relativity theory.
+- [00:03:02,580 - 00:03:04,570] Basically the nucleus is, roughly
+- [00:03:04,570 - 00:03:06,560] speaking, described by the non-relativistic quantum
+- [00:03:06,560 - 00:03:09,640] mechanics of protons and neutrons.
+- [00:03:09,640 - 00:03:12,180] And all you really need from the quark theory
+- [00:03:12,180 - 00:03:14,720] is to find out what the properties of protons
+- [00:03:14,720 - 00:03:16,860] and neutrons are.
+- [00:03:16,860 - 00:03:17,860] Masses.
+- [00:03:17,860 - 00:03:20,580] Spins.
+- [00:03:20,580 - 00:03:22,500] And the forces between them.
+- [00:03:22,500 - 00:03:25,230] Once you've got that, you can forget where
+- [00:03:25,230 - 00:03:27,960] it came from and say protons, neutrons, and
+- [00:03:27,960 - 00:03:30,200] some simple forces between them.
+- [00:03:30,200 - 00:03:32,500] But then if you're interested in atoms, you
+- [00:03:32,500 - 00:03:34,800] may not be terribly interested in what makes
+- [00:03:34,800 - 00:03:37,520] up the nucleus.
+- [00:03:37,520 - 00:03:41,120] You use nuclear physics to calculate the
+- [00:03:41,120 - 00:03:44,720] properties of nuclei, which nuclei exist, which nuclei
+- [00:03:44,720 - 00:03:45,720] are...
+- [00:03:45,720 - 00:03:46,720] I don't know.
+- [00:03:46,720 - 00:03:47,720] I don't know.
+- [00:03:47,720 - 00:03:50,440] I don't know what they're...
+- [00:03:50,440 - 00:03:52,340] In fact, if you're interested in atomic physics,
+- [00:03:52,340 - 00:03:54,240] you're not even very interested in the mass
+- [00:03:54,240 - 00:03:56,020] of the nucleus.
+- [00:03:56,020 - 00:03:58,299] But still, you might want to know the mass
+- [00:03:58,299 - 00:04:00,579] of a given nucleus, a few of its properties,
+- [00:04:00,579 - 00:04:02,760] not much.
+- [00:04:02,760 - 00:04:05,140] Basically just its mass and its charge.
+- [00:04:05,140 - 00:04:06,960] Once you have the mass and the charge
+- [00:04:06,960 - 00:04:08,780] of the nucleus, you can forget completely where it
+- [00:04:08,780 - 00:04:10,020] came from.
+- [00:04:10,020 - 00:04:12,540] You can forget protons and neutrons.
+- [00:04:12,540 - 00:04:13,800] And you can say there are nuclei.
+- [00:04:13,800 - 00:04:15,440] There are 92 of them.
+- [00:04:15,440 - 00:04:16,720] Well, more than 92.
+- [00:04:16,720 - 00:04:18,500] Of course, there are isotopes.
+- [00:04:18,500 - 00:04:21,209] But you can start over again and
+- [00:04:21,209 - 00:04:23,920] say the elementary particles for today's thoughts...
+- [00:04:23,920 - 00:04:25,700] Not today's, but I mean if you were
+- [00:04:25,700 - 00:04:27,480] doing nuclear physics, if you're doing atomic physics,
+- [00:04:27,480 - 00:04:29,300] you say we start over again with
+- [00:04:29,300 - 00:04:31,120] a new set of the elementary particles.
+- [00:04:31,120 - 00:04:32,120] We forget quarks.
+- [00:04:32,120 - 00:04:33,960] We forget protons and neutrons.
+- [00:04:33,960 - 00:04:35,760] And we start with nuclei.
+- [00:04:35,760 - 00:04:39,060] 92 of them, or however many of
+- [00:04:39,060 - 00:04:42,360] them there are, plus, of course, electrons.
+- [00:04:42,360 - 00:04:44,000] Electrons are pretty small.
+- [00:04:44,000 - 00:04:44,720] But we can't get rid of the electrons
+- [00:04:44,720 - 00:04:45,440] and still be able to do atomic physics.
+- [00:04:45,440 - 00:04:45,960] So we're going to start over
+- [00:04:45,960 - 00:04:46,480] again and say the elementary particles.
+- [00:04:46,480 - 00:04:47,480] We forget quarks.
+- [00:04:47,480 - 00:04:48,480] We forget neutrons and neutrons.
+- [00:04:48,480 - 00:04:49,480] We forget protons and neutrons.
+- [00:04:49,480 - 00:04:50,480] We forget electrons.
+- [00:04:50,480 - 00:04:51,480] We forget electrons.
+- [00:04:51,480 - 00:04:52,480] Because we don't know how to do atomic physics.
+- [00:04:52,480 - 00:04:53,480] So we calculate the properties of atoms.
+- [00:04:53,480 - 00:04:55,420] Atoms mean nuclei plus electrons.
+- [00:04:55,420 - 00:04:58,150] We calculate their properties, and once we
+- [00:04:58,150 - 00:05:00,880] have their properties we can say, all right,
+- [00:05:00,880 - 00:05:04,140] here's the collection of atoms that exist in nature.
+- [00:05:04,140 - 00:05:07,710] There's cookie atoms and coffee atoms
+- [00:05:07,710 - 00:05:11,280] and chocolate atoms, ketchup atoms, all those
+- [00:05:11,280 - 00:05:12,480] various kinds of atoms.
+- [00:05:12,480 - 00:05:14,370] And once you have them, you don't
+- [00:05:14,370 - 00:05:16,260] need to ask where they came from anymore.
+- [00:05:16,480 - 00:05:19,650] Well, you might want to know a little bit
+- [00:05:19,650 - 00:05:22,820] more than that, because if you have to calculate,
+- [00:05:22,980 - 00:05:24,400] we're going to talk a little bit about
+- [00:05:24,400 - 00:05:25,820] the properties of, we're not going to talk about
+- [00:05:25,820 - 00:05:27,740] the properties of molecules tonight, but we're going
+- [00:05:27,740 - 00:05:29,660] to talk about how you think about molecules,
+- [00:05:30,320 - 00:05:32,220] how you go from atoms to molecules.
+- [00:05:33,180 - 00:05:34,990] But in going from atoms and
+- [00:05:34,990 - 00:05:36,800] molecules, it's the same kind of deal.
+- [00:05:37,540 - 00:05:39,840] You figure out how atoms build themselves
+- [00:05:39,840 - 00:05:42,140] into molecules, and once you have molecules,
+- [00:05:42,140 - 00:05:44,660] you can more or less forget where they
+- [00:05:44,660 - 00:05:47,180] came from, and start putting them together in tinker
+- [00:05:47,180 - 00:05:50,340] toy assemblies, and build up anything from there.
+- [00:05:50,860 - 00:05:53,229] So at each stage, you eliminated the things
+- [00:05:53,229 - 00:05:55,599] which were smaller than you were really interested
+- [00:05:55,599 - 00:05:59,699] in, and the result was a more
+- [00:05:59,699 - 00:06:03,800] coarse-grained description, perhaps not as exact a description,
+- [00:06:04,360 - 00:06:07,300] but a far more useful description for your purposes.
+- [00:06:08,039 - 00:06:11,900] Well, the same thing is true in quantum mechanics.
+- [00:06:12,140 - 00:06:15,619] Quantum field theory, where you have things
+- [00:06:15,619 - 00:06:19,099] at all possible scales, every possible wavelength
+- [00:06:19,099 - 00:06:23,649] constitutes a degree of freedom, waves
+- [00:06:23,649 - 00:06:28,200] of arbitrary wavelength, arbitrarily small wavelengths.
+- [00:06:29,500 - 00:06:32,500] But in describing physics at one length scale,
+- [00:06:32,500 - 00:06:35,500] you don't really want to have to deal with
+- [00:06:35,500 - 00:06:37,920] all the things at very, very small
+- [00:06:37,920 - 00:06:40,340] length scales which are uninteresting to you, so
+- [00:06:40,340 - 00:06:41,900] you invent a way.
+- [00:06:42,140 - 00:06:45,640] You invent a way of summing up all
+- [00:06:45,640 - 00:06:49,140] of the effects of very small distances and replacing
+- [00:06:49,140 - 00:06:53,140] it by effective new parameters in your description.
+- [00:06:53,140 - 00:06:56,140] That's all that renormalization really is.
+- [00:06:57,140 - 00:07:01,140] That, together with some dimensional analysis.
+- [00:07:03,140 - 00:07:06,140] Let me give you an example of renormalization.
+- [00:07:06,140 - 00:07:08,640] Again, it's just this example of going
+- [00:07:08,640 - 00:07:11,140] from atoms to molecules, or from going from...
+- [00:07:12,140 - 00:07:19,640] from nuclei plus electrons to atoms, and how
+- [00:07:19,640 - 00:07:27,140] you deal with atomic forces and so forth.
+- [00:07:27,140 - 00:07:30,640] Where atomic forces come from, how they
+- [00:07:30,640 - 00:07:34,140] come out of electrons, protons, not protons and
+- [00:07:34,140 - 00:07:37,140] neutrons, but nuclei and electrons.
+- [00:07:37,140 - 00:07:39,140] This is a classic example.
+- [00:07:39,140 - 00:07:40,140] It's not usually thought of
+- [00:07:40,140 - 00:07:41,140] as renormalization, but it is renormalization.
+- [00:07:41,140 - 00:07:44,640] Where getting rid of the very small degrees
+- [00:07:44,640 - 00:07:48,140] of freedom and also the very fast degrees
+- [00:07:48,140 - 00:07:49,140] of freedom.
+- [00:07:49,140 - 00:07:51,140] Small usually goes with fast.
+- [00:07:51,140 - 00:07:53,640] The smaller a system is,
+- [00:07:53,640 - 00:07:56,140] typically the faster its motion is.
+- [00:07:56,140 - 00:07:58,140] So you're getting rid of not only
+- [00:07:58,140 - 00:08:00,140] small things, but also very rapid things.
+- [00:08:00,140 - 00:08:03,140] That's the goal of renormalization.
+- [00:08:03,140 - 00:08:05,140] So let's start with something we
+- [00:08:05,140 - 00:08:07,140] know very well, the theory of atoms.
+- [00:08:07,140 - 00:08:09,140] The theory of atoms is very simple.
+- [00:08:09,140 - 00:08:10,140] It's just a nucleus.
+- [00:08:10,140 - 00:08:17,140] It's just a nucleus and a bunch of electrons.
+- [00:08:17,140 - 00:08:18,640] And what I'm actually interested
+- [00:08:18,640 - 00:08:20,140] in is a pair of atoms.
+- [00:08:20,140 - 00:08:22,140] It could be a pair of hydrogen atoms,
+- [00:08:22,140 - 00:08:24,140] but that could be more complicated than a pair
+- [00:08:24,140 - 00:08:25,140] of hydrogen atoms.
+- [00:08:25,140 - 00:08:27,140] Just some pair of atoms.
+- [00:08:27,140 - 00:08:30,640] And what I'm interested in is describing the
+- [00:08:30,640 - 00:08:34,140] dynamics of this pair of atoms in a simpler
+- [00:08:34,140 - 00:08:38,140] way than the complex structure of electrons.
+- [00:08:38,140 - 00:08:40,640] Electrons, a cloud of electrons, and
+- [00:08:40,640 - 00:08:43,140] all that very, very complicated stuff.
+- [00:08:43,140 - 00:08:45,140] What I'd like to describe
+- [00:08:45,140 - 00:08:47,140] them by is simply two particles.
+- [00:08:47,140 - 00:08:51,140] Two particles that I call atoms with forces between them.
+- [00:08:51,140 - 00:08:53,140] How do you understand those forces?
+- [00:08:53,140 - 00:08:56,140] Now, the advantage that you have here, which
+- [00:08:56,140 - 00:08:59,140] is an advantage, is that the electron motions
+- [00:08:59,140 - 00:09:02,140] are very, very fast by comparison
+- [00:09:02,140 - 00:09:05,140] with the motions of the nuclei.
+- [00:09:05,140 - 00:09:06,140] Nuclei are heavy.
+- [00:09:06,140 - 00:09:09,140] Nuclei are a thousand times or two
+- [00:09:09,140 - 00:09:12,140] thousand times the lightest nucleus, the hydrogen nucleus,
+- [00:09:12,140 - 00:09:18,140] is two thousand times heavier than an electron.
+- [00:09:18,140 - 00:09:22,140] And bigger nuclei are even more massive.
+- [00:09:22,140 - 00:09:25,140] So you can almost think of the atom as
+- [00:09:25,140 - 00:09:28,140] a heavy bowling ball with a bunch of little flies
+- [00:09:28,140 - 00:09:30,640] surrounding it, and the flies moving very,
+- [00:09:30,640 - 00:09:33,140] very much faster than the bowling ball is
+- [00:09:33,140 - 00:09:34,140] going to move.
+- [00:09:34,140 - 00:09:35,140] Because a given force is just not going to move.
+- [00:09:35,140 - 00:09:36,140] Right?
+- [00:09:36,140 - 00:09:38,140] It's not going to accelerate the bowling ball very much.
+- [00:09:38,140 - 00:09:40,140] So you can make an approximation.
+- [00:09:40,140 - 00:09:43,640] And in your first approximation, you say
+- [00:09:43,640 - 00:09:47,140] that the bowling ball nuclei are so heavy
+- [00:09:47,140 - 00:09:49,140] that they don't move at all.
+- [00:09:49,140 - 00:09:52,640] What I want to calculate is the
+- [00:09:52,640 - 00:09:56,140] effective potential, the potential energy between two
+- [00:09:56,140 - 00:09:59,640] nuclei, or between two atoms, in a
+- [00:09:59,640 - 00:10:03,140] way that gets rid of the electrons.
+- [00:10:03,140 - 00:10:04,140] In fact, which gets rid of
+- [00:10:04,140 - 00:10:05,140] separately the electrons and the molecules.
+- [00:10:05,140 - 00:10:06,140] So what do you do?
+- [00:10:06,140 - 00:10:10,640] You start, this is a quantum mechanical
+- [00:10:10,640 - 00:10:15,140] problem, and as any quantum mechanical problem, you
+- [00:10:15,140 - 00:10:16,140] start with a Hamiltonian.
+- [00:10:16,140 - 00:10:18,640] The Hamiltonian is just another expression
+- [00:10:18,640 - 00:10:21,140] for the quantum mechanical version of energy.
+- [00:10:21,140 - 00:10:23,140] So let me write down for you what Hamiltonian
+- [00:10:23,140 - 00:10:25,140] I would write down if I really wanted to do
+- [00:10:25,140 - 00:10:26,140] this problem.
+- [00:10:26,140 - 00:10:29,640] I would say, first of all, I'm not
+- [00:10:29,640 - 00:10:33,140] interested in corrections coming from the special theory
+- [00:10:33,140 - 00:10:34,140] of relativity.
+- [00:10:34,140 - 00:10:35,140] From relativity theory.
+- [00:10:35,140 - 00:10:39,140] That's not interesting for molecules.
+- [00:10:39,140 - 00:10:42,140] So, you begin with non-relativistic quantum mechanics.
+- [00:10:42,140 - 00:10:45,140] And that means the energy, first of all,
+- [00:10:45,140 - 00:10:48,140] consists of the kinetic energy of the nuclei.
+- [00:10:48,140 - 00:10:50,140] Let's take the two nuclei to be the same.
+- [00:10:50,140 - 00:10:54,140] It could be, for example, hydrogen.
+- [00:10:54,140 - 00:10:56,640] Alright, so the momentum of the
+- [00:10:56,640 - 00:10:59,140] first nucleus, let's call it P1.
+- [00:10:59,140 - 00:11:03,140] P1 squared divided by twice the mass of the nucleus.
+- [00:11:03,140 - 00:11:05,640] That's the kinetic energy of the first
+- [00:11:05,640 - 00:11:08,140] nucleus, just the nucleus, not the atom.
+- [00:11:08,140 - 00:11:11,140] Then plus P2 squared, that's the
+- [00:11:11,140 - 00:11:14,140] kinetic energy of the second nucleus.
+- [00:11:14,140 - 00:11:17,140] And then, of course, there is
+- [00:11:17,140 - 00:11:20,140] the Coulomb force between the nuclei.
+- [00:11:20,140 - 00:11:23,640] The Coulomb force between the nuclei is plus
+- [00:11:23,640 - 00:11:27,140] E squared, and the energy is plus E squared
+- [00:11:27,140 - 00:11:30,140] divided by the distance between them, R12.
+- [00:11:30,140 - 00:11:33,140] Let's just call it R12.
+- [00:11:33,140 - 00:11:35,640] That's the, and I've left out
+- [00:11:35,640 - 00:11:38,140] dimensional, you know, dimensional four-pies and stuff
+- [00:11:38,140 - 00:11:39,140] like that.
+- [00:11:39,140 - 00:11:40,140] That's not what I'm interested in.
+- [00:11:40,140 - 00:11:41,140] And then what comes next?
+- [00:11:41,140 - 00:11:42,140] The electrons.
+- [00:11:42,140 - 00:11:45,140] So let's sum up everything that goes
+- [00:11:45,140 - 00:11:48,140] into the electrons, everything that involves the
+- [00:11:48,140 - 00:11:49,140] electrons.
+- [00:11:49,140 - 00:11:50,640] First of all is the
+- [00:11:50,640 - 00:11:52,140] kinetic energy of all the electrons.
+- [00:11:52,140 - 00:11:53,140] Okay?
+- [00:11:53,140 - 00:11:56,140] So, let's call the electrons, let's
+- [00:11:56,140 - 00:11:59,140] call the momentum of the electrons Q.
+- [00:11:59,140 - 00:12:00,640] Q sub I squared over
+- [00:12:00,640 - 00:12:02,140] twice the mass of the nucleus.
+- [00:12:02,140 - 00:12:06,140] Twice the mass of an electron.
+- [00:12:06,140 - 00:12:07,140] Let's call that small mass.
+- [00:12:07,140 - 00:12:09,140] Here's big mass for the nucleus,
+- [00:12:09,140 - 00:12:11,140] here's small mass for the electrons.
+- [00:12:11,140 - 00:12:14,140] And this is the sum over all the electrons.
+- [00:12:14,140 - 00:12:16,140] Sum over all the electrons.
+- [00:12:16,140 - 00:12:18,140] That's there, that's the kinetic energy.
+- [00:12:18,140 - 00:12:21,140] Then there's the forces between the electrons.
+- [00:12:21,140 - 00:12:25,140] That's plus E squared divided by,
+- [00:12:25,140 - 00:12:29,140] let's call it little r Ij.
+- [00:12:29,140 - 00:12:32,140] That's the distance between the ith and the jth electron.
+- [00:12:32,140 - 00:12:33,640] This is the coulomb
+- [00:12:33,640 - 00:12:35,140] energy between them, electrostatic energy.
+- [00:12:35,140 - 00:12:37,140] And what have I left out?
+- [00:12:37,140 - 00:12:40,640] Oh, I have left out the
+- [00:12:40,640 - 00:12:44,140] force between the protons and the electrons.
+- [00:12:44,140 - 00:12:46,140] So, that's one more term.
+- [00:12:46,140 - 00:12:50,140] I guess we can call it
+- [00:12:50,140 - 00:12:54,140] minus E squared because they're opposite charge.
+- [00:12:54,140 - 00:12:56,140] Attractive.
+- [00:12:56,140 - 00:12:58,640] Minus E squared divided by the distance
+- [00:12:58,640 - 00:13:01,140] between the ith electron and the jth electron.
+- [00:13:02,140 - 00:13:04,140] Either one of the nucleus.
+- [00:13:04,140 - 00:13:05,140] I don't know what to call it.
+- [00:13:05,140 - 00:13:12,140] Let's call it capital R one I.
+- [00:13:12,140 - 00:13:14,640] That means the distance between the
+- [00:13:14,640 - 00:13:17,140] first nucleus and the ith electron.
+- [00:13:17,140 - 00:13:21,140] And then another one for the second electron.
+- [00:13:21,140 - 00:13:26,140] R sub one, sorry, R two I.
+- [00:13:26,140 - 00:13:27,140] Alright.
+- [00:13:27,140 - 00:13:29,140] There are things which involve the electrons
+- [00:13:29,140 - 00:13:31,140] and there are things which involve the nucleus.
+- [00:13:31,140 - 00:13:37,140] So, here are all the things that involve the electrons.
+- [00:13:37,140 - 00:13:40,640] Now, intuitively, and I won't try to prove
+- [00:13:40,640 - 00:13:44,140] this, intuitively, there are two time scales here.
+- [00:13:44,140 - 00:13:47,640] One time scale is long and it has to
+- [00:13:47,640 - 00:13:51,140] do with the very slow motions of the nuclei.
+- [00:13:51,140 - 00:13:53,140] Why are the motions of the nuclei slow?
+- [00:13:53,140 - 00:13:57,140] Because the nuclei are very heavy.
+- [00:13:57,140 - 00:14:00,140] And they move around under modest forces, in fact.
+- [00:14:00,140 - 00:14:04,140] They're never accelerated very much inside a molecule.
+- [00:14:04,140 - 00:14:07,640] And so we think of them as very, very slow
+- [00:14:07,640 - 00:14:11,140] by comparison with the very, very rapid motions of the electrons.
+- [00:14:11,140 - 00:14:14,140] Electrons, much more rapid than the...
+- [00:14:14,140 - 00:14:17,140] So the electrons form a blur.
+- [00:14:17,140 - 00:14:19,140] And we're trying to get rid of
+- [00:14:19,140 - 00:14:21,140] that blur or replace it by something else.
+- [00:14:21,140 - 00:14:24,140] Well, this is fairly easy to do.
+- [00:14:24,140 - 00:14:26,140] In principle, in concept.
+- [00:14:26,140 - 00:14:29,140] To actually do it might be more difficult.
+- [00:14:29,140 - 00:14:32,140] But in concept, it's very simple.
+- [00:14:32,140 - 00:14:35,140] You take everything in the
+- [00:14:35,140 - 00:14:38,140] Hamiltonian here that involves the electrons,
+- [00:14:38,140 - 00:14:41,140] group it together, and think of it
+- [00:14:41,140 - 00:14:44,140] as the Hamiltonian of the electrons alone.
+- [00:14:44,140 - 00:14:48,140] But what about the positions of the nuclei?
+- [00:14:48,140 - 00:14:50,140] For present purposes now, we're going
+- [00:14:50,140 - 00:14:52,140] to say the nuclei move so slow,
+- [00:14:52,140 - 00:14:56,140] and the electrons adjust their wave function so rapidly,
+- [00:14:56,140 - 00:14:58,140] that in first approximation, we can say,
+- [00:14:58,140 - 00:15:01,140] the nuclei are not moving at all.
+- [00:15:01,140 - 00:15:05,140] They're fixed, they're nailed down, they're stationary,
+- [00:15:05,140 - 00:15:07,140] and we just fix them.
+- [00:15:07,140 - 00:15:08,640] And we think of this
+- [00:15:08,640 - 00:15:10,140] as a Hamiltonian for the electrons
+- [00:15:10,140 - 00:15:13,140] in a fixed background,
+- [00:15:13,140 - 00:15:16,640] the fixed background being
+- [00:15:16,640 - 00:15:20,140] the nailed down stationary nuclei.
+- [00:15:20,140 - 00:15:23,140] So we fix the positions of the nuclei.
+- [00:15:23,140 - 00:15:26,140] Once the positions of the nuclei are fixed,
+- [00:15:26,140 - 00:15:28,140] then this becomes the...
+- [00:15:28,140 - 00:15:31,140] the expression for the energy or for the Hamiltonian,
+- [00:15:31,140 - 00:15:33,140] but it's still a function
+- [00:15:33,140 - 00:15:35,140] of the position of the nuclei.
+- [00:15:35,140 - 00:15:37,140] It's a function of the position of
+- [00:15:37,140 - 00:15:39,140] the nuclei, but those can just be...
+- [00:15:39,140 - 00:15:41,140] You set the momentum to zero.
+- [00:15:41,140 - 00:15:43,140] Well, whose momentum?
+- [00:15:43,140 - 00:15:45,140] For the moment, yes.
+- [00:15:45,140 - 00:15:47,140] In fact, for the moment, we don't even need to...
+- [00:15:47,140 - 00:15:50,140] We just say they're nailed down, they're very, very heavy.
+- [00:15:50,140 - 00:15:52,140] Okay?
+- [00:15:52,140 - 00:15:53,640] We're not going to violate the
+- [00:15:53,640 - 00:15:55,140] uncertainty principle or anything like that,
+- [00:15:55,140 - 00:15:57,140] because eventually we're going to take those momenta
+- [00:15:57,140 - 00:15:59,140] back into account,
+- [00:15:59,140 - 00:16:02,140] and the approximation here is just that they move slowly.
+- [00:16:02,140 - 00:16:06,140] All right, then we take this Hamiltonian,
+- [00:16:06,140 - 00:16:08,140] which only involves the electron coordinates
+- [00:16:08,140 - 00:16:10,140] and the fixed positions of the...
+- [00:16:10,140 - 00:16:13,140] of the nuclei,
+- [00:16:13,140 - 00:16:14,140] and we solve it.
+- [00:16:14,140 - 00:16:15,140] What does that mean?
+- [00:16:15,140 - 00:16:17,140] We solve the Schrodinger equation,
+- [00:16:17,140 - 00:16:19,140] and we solve the Schrodinger
+- [00:16:19,140 - 00:16:21,140] equation for the lowest energy state.
+- [00:16:21,140 - 00:16:24,140] We find the lowest energy state,
+- [00:16:24,140 - 00:16:26,140] and in fact, more important,
+- [00:16:26,140 - 00:16:29,140] the lowest energy eigenvalue,
+- [00:16:29,140 - 00:16:31,140] the energy, the ground state energy,
+- [00:16:31,140 - 00:16:35,140] basically the ground state energy of the electrons
+- [00:16:35,140 - 00:16:38,140] in the background of the nuclei.
+- [00:16:38,140 - 00:16:39,140] Let's call that something.
+- [00:16:39,140 - 00:16:41,140] Let's call that...
+- [00:16:41,140 - 00:16:42,140] Let's see.
+- [00:16:42,140 - 00:16:44,140] Let's just call it E.
+- [00:16:44,140 - 00:16:48,140] E of electrons.
+- [00:16:48,140 - 00:16:52,140] All the terms that involve electrons.
+- [00:16:52,140 - 00:16:55,140] E of electrons.
+- [00:16:55,140 - 00:16:57,140] And what is it a function of?
+- [00:16:57,140 - 00:16:59,140] The only thing it's a function of
+- [00:16:59,140 - 00:17:01,140] is the positions of the nuclei.
+- [00:17:01,140 - 00:17:02,140] That's all.
+- [00:17:02,140 - 00:17:04,139] Everything else is taken care of.
+- [00:17:04,139 - 00:17:06,139] This is the lowest energy state,
+- [00:17:06,139 - 00:17:09,139] the lowest energy associated with
+- [00:17:09,139 - 00:17:15,139] the positions of R1 and R2.
+- [00:17:15,139 - 00:17:17,139] Those are the positions of the...
+- [00:17:17,139 - 00:17:18,139] of the...
+- [00:17:18,139 - 00:17:20,139] of the nuclei.
+- [00:17:20,139 - 00:17:22,139] Now what do we do next?
+- [00:17:22,139 - 00:17:24,139] Now we say, okay, let's take all of this
+- [00:17:24,140 - 00:17:26,140] and forget about it,
+- [00:17:26,140 - 00:17:28,140] erase it.
+- [00:17:28,140 - 00:17:29,140] We can't forget about it, of course,
+- [00:17:29,140 - 00:17:31,140] not completely.
+- [00:17:31,140 - 00:17:36,140] But we can replace it by
+- [00:17:36,140 - 00:17:38,140] the energy of the electrons
+- [00:17:38,140 - 00:17:41,140] as a function of R1 and R2.
+- [00:17:41,140 - 00:17:47,140] That's plus E of electrons
+- [00:17:47,140 - 00:17:51,140] of R1 and R2.
+- [00:17:51,140 - 00:17:52,140] What do we have now?
+- [00:17:52,140 - 00:17:54,140] Now we have a problem
+- [00:17:54,140 - 00:17:56,140] involving only the protons,
+- [00:17:56,140 - 00:17:58,140] or only the nuclei,
+- [00:17:58,140 - 00:18:00,140] excuse me, only the nuclei,
+- [00:18:00,140 - 00:18:02,140] a potential energy between them
+- [00:18:02,140 - 00:18:03,140] that was originally there,
+- [00:18:03,140 - 00:18:05,140] plus another term in the energy
+- [00:18:05,140 - 00:18:07,140] which also can be regarded
+- [00:18:07,140 - 00:18:08,140] as potential energy.
+- [00:18:08,140 - 00:18:10,140] It's a function of the position
+- [00:18:10,140 - 00:18:12,140] of the two nuclei,
+- [00:18:12,140 - 00:18:14,140] and therefore it's a contribution
+- [00:18:14,140 - 00:18:17,140] to the potential energy.
+- [00:18:17,140 - 00:18:19,140] This is the way that we eliminate
+- [00:18:19,140 - 00:18:21,140] out of the problem the electrons
+- [00:18:21,140 - 00:18:23,140] and replace it with something else.
+- [00:18:23,140 - 00:18:25,140] In fact, it's only a function
+- [00:18:25,140 - 00:18:27,140] of the distance between the electrons.
+- [00:18:27,140 - 00:18:29,140] And so what we actually find
+- [00:18:29,140 - 00:18:33,140] is that the entire dynamics
+- [00:18:33,140 - 00:18:37,140] of the electrons is summarized.
+- [00:18:37,140 - 00:18:39,140] We first of all have the Coulomb potential
+- [00:18:39,140 - 00:18:41,140] between the nuclei,
+- [00:18:41,140 - 00:18:42,140] but then another term
+- [00:18:42,140 - 00:18:43,140] in the potential energy,
+- [00:18:43,140 - 00:18:44,140] and the other term
+- [00:18:44,140 - 00:18:45,140] in the potential energy.
+- [00:18:45,140 - 00:18:47,140] When you combine it with this term here,
+- [00:18:47,140 - 00:18:51,140] it gives you a force,
+- [00:18:51,140 - 00:18:52,140] or gives you a potential energy,
+- [00:18:52,140 - 00:18:54,140] which looks something like this.
+- [00:18:54,140 - 00:18:58,140] When the nuclei are extremely close together,
+- [00:18:58,140 - 00:19:01,140] it's completely dominated by the Coulomb term here,
+- [00:19:01,140 - 00:19:02,140] repulsive,
+- [00:19:02,140 - 00:19:03,140] when they're far away,
+- [00:19:03,140 - 00:19:05,140] there isn't much energy between them,
+- [00:19:05,140 - 00:19:10,140] and in between there's some attraction,
+- [00:19:10,140 - 00:19:13,140] and that attraction is due to the electrons.
+- [00:19:13,140 - 00:19:15,140] However, we never have to think
+- [00:19:15,140 - 00:19:16,140] about the electrons again.
+- [00:19:16,140 - 00:19:19,140] For this hydrogen molecule,
+- [00:19:19,140 - 00:19:20,140] or whatever it is,
+- [00:19:20,140 - 00:19:22,140] we don't have to think about it.
+- [00:19:22,140 - 00:19:25,140] We just have an effective potential between them,
+- [00:19:25,140 - 00:19:28,140] and we solve the problem of two protons
+- [00:19:28,140 - 00:19:30,140] in a potential like that.
+- [00:19:30,140 - 00:19:31,140] We know what the solution's going to look like.
+- [00:19:31,140 - 00:19:32,140] It's going to sit at the bottom here.
+- [00:19:32,140 - 00:19:35,140] It's going to be some wave function.
+- [00:19:35,140 - 00:19:37,140] And that's a process of,
+- [00:19:37,140 - 00:19:40,140] number one, eliminating fast degrees of freedom,
+- [00:19:40,140 - 00:19:43,140] but we can also call it renormalization.
+- [00:19:43,140 - 00:19:45,140] We started with a potential
+- [00:19:45,140 - 00:19:46,140] which was just this potential.
+- [00:19:46,140 - 00:19:49,140] We got rid of the high frequency degrees of freedom,
+- [00:19:49,140 - 00:19:50,140] and the entire potential energy
+- [00:19:50,140 - 00:19:51,140] was then replaced
+- [00:19:51,140 - 00:19:54,140] by another function.
+- [00:19:54,140 - 00:19:57,140] So the potential was renormalized.
+- [00:19:57,140 - 00:19:58,140] That's the basic idea.
+- [00:19:58,140 - 00:20:01,140] All renormalization is associated with that idea.
+- [00:20:01,140 - 00:20:04,140] Eliminating very, very fast degrees of freedom,
+- [00:20:04,140 - 00:20:07,140] and replacing them by an effective,
+- [00:20:07,140 - 00:20:09,140] slow,
+- [00:20:12,140 - 00:20:15,140] renormalized Hamiltonian.
+- [00:20:15,140 - 00:20:19,140] Hamiltonian, or however you're doing your dynamics.
+- [00:20:19,140 - 00:20:20,140] Okay, so that's,
+- [00:20:20,140 - 00:20:22,140] that's renormalization.
+- [00:20:28,140 - 00:20:31,140] We want to apply that to quantum field theory.
+- [00:20:31,140 - 00:20:33,140] So I'm going to show you how you apply that
+- [00:20:33,140 - 00:20:34,140] to quantum field theory.
+- [00:20:34,140 - 00:20:35,140] What is it that you,
+- [00:20:35,140 - 00:20:37,140] what is it that you get rid of?
+- [00:20:37,140 - 00:20:38,140] What you get rid of,
+- [00:20:38,140 - 00:20:39,140] you can either think of it
+- [00:20:39,140 - 00:20:44,140] as things associated with very small distances,
+- [00:20:44,140 - 00:20:45,140] or you can think of it
+- [00:20:45,140 - 00:20:46,140] as things having to do with
+- [00:20:46,140 - 00:20:48,140] either very high frequencies,
+- [00:20:48,140 - 00:20:49,140] or very, very short wavelengths.
+- [00:20:49,140 - 00:20:50,140] Short wavelengths,
+- [00:20:50,140 - 00:20:52,140] entail high frequencies.
+- [00:20:52,140 - 00:20:54,140] And so the things that we're getting rid of
+- [00:20:54,140 - 00:20:56,140] in the problem are
+- [00:20:56,140 - 00:20:58,140] the degrees of freedom associated with
+- [00:20:58,140 - 00:21:00,140] very high energies,
+- [00:21:00,140 - 00:21:01,140] very high frequencies.
+- [00:21:04,140 - 00:21:05,140] Let's see.
+- [00:21:07,140 - 00:21:08,140] Yeah, before we do that,
+- [00:21:08,140 - 00:21:10,140] let's just go through some dimensional analysis,
+- [00:21:10,140 - 00:21:12,140] some very simple dimensional analysis.
+- [00:21:14,140 - 00:21:16,140] Just take a break from,
+- [00:21:16,140 - 00:21:18,140] from renormalization theory for a minute,
+- [00:21:18,140 - 00:21:19,140] and I just want to do some simple things.
+- [00:21:19,140 - 00:21:22,140] I want to do some simple dimensional analysis.
+- [00:21:22,140 - 00:21:26,140] First of all, in physics in general,
+- [00:21:26,140 - 00:21:28,140] there are three length scales that you need,
+- [00:21:28,140 - 00:21:32,140] distance, time, and mass.
+- [00:21:32,140 - 00:21:35,140] And we can get rid of two of them
+- [00:21:35,140 - 00:21:37,140] in elementary particle physics
+- [00:21:37,140 - 00:21:39,140] by taking the two-dimensional parameters
+- [00:21:39,140 - 00:21:40,140] of elementary particle physics,
+- [00:21:40,140 - 00:21:42,140] namely h-bar and c,
+- [00:21:42,140 - 00:21:44,140] and setting them equal to one.
+- [00:21:44,140 - 00:21:46,140] That's two,
+- [00:21:46,140 - 00:21:48,140] that's a specification of two,
+- [00:21:48,140 - 00:21:50,140] two combinations of the,
+- [00:21:50,140 - 00:21:51,140] of the scales in the problem,
+- [00:21:51,140 - 00:21:53,140] of the dimensions in the scale
+- [00:21:53,140 - 00:21:55,140] of, in the problem.
+- [00:21:55,140 - 00:21:58,140] But it still leaves one dimension
+- [00:21:58,140 - 00:21:59,140] that you have to specify,
+- [00:21:59,140 - 00:22:01,140] one dimension that you need,
+- [00:22:01,140 - 00:22:03,140] one quantity with dimensions.
+- [00:22:03,140 - 00:22:04,640] And that dimension can be
+- [00:22:04,640 - 00:22:06,140] taken to be a length scale.
+- [00:22:06,140 - 00:22:07,140] Right?
+- [00:22:07,140 - 00:22:09,140] Once you've set h-bar equal to one
+- [00:22:09,140 - 00:22:10,140] and c equal to one,
+- [00:22:10,140 - 00:22:12,140] there's only one dimensional quantity
+- [00:22:12,140 - 00:22:13,140] that has to be specified.
+- [00:22:13,140 - 00:22:15,140] It can be taken to be a mass,
+- [00:22:15,140 - 00:22:16,140] it can be taken to be an energy,
+- [00:22:16,140 - 00:22:17,140] it can be taken to be a momentum,
+- [00:22:17,140 - 00:22:19,140] or it can be taken to be a length,
+- [00:22:19,140 - 00:22:21,140] or it can be taken to be a time,
+- [00:22:21,140 - 00:22:24,140] but you need one specification.
+- [00:22:24,140 - 00:22:26,140] Alright, with these notations here,
+- [00:22:26,140 - 00:22:28,140] then the units of mass,
+- [00:22:28,140 - 00:22:31,140] the bracket means the units of mass,
+- [00:22:31,140 - 00:22:34,140] are the same as the units of energy.
+- [00:22:34,140 - 00:22:36,140] Why?
+- [00:22:36,140 - 00:22:38,140] Because e equals mc squared,
+- [00:22:38,140 - 00:22:40,140] and c is equal to one,
+- [00:22:40,140 - 00:22:43,140] and also equal to the units of momentum.
+- [00:22:43,140 - 00:22:46,140] Also true,
+- [00:22:46,140 - 00:22:48,140] that the units of length,
+- [00:22:48,140 - 00:22:49,140] what should we call that?
+- [00:22:49,140 - 00:22:51,140] Length,
+- [00:22:51,140 - 00:22:54,140] are the same as the units of time,
+- [00:22:54,140 - 00:22:56,140] that's because c is equal to one,
+- [00:22:56,140 - 00:22:58,140] but the units of length and time
+- [00:22:58,140 - 00:23:00,140] are not the same as the units of length
+- [00:23:00,140 - 00:23:02,140] and are mass and energy,
+- [00:23:02,140 - 00:23:09,140] in fact, they are inverse.
+- [00:23:09,140 - 00:23:13,140] So, one dimensional specification,
+- [00:23:13,140 - 00:23:15,140] either a unit of mass, length, or time,
+- [00:23:15,140 - 00:23:18,140] but once you fix it, that's it.
+- [00:23:18,140 - 00:23:22,140] And all masses have units of inverse length,
+- [00:23:22,140 - 00:23:24,140] all momenta have units of inverse length,
+- [00:23:24,140 - 00:23:26,140] and so forth.
+- [00:23:26,140 - 00:23:30,140] So, let's keep that in mind,
+- [00:23:30,140 - 00:23:31,140] first of all.
+- [00:23:31,140 - 00:23:33,140] That's a bit of dimensional analysis.
+- [00:23:33,140 - 00:23:35,140] We have only units of length.
+- [00:23:35,140 - 00:23:36,140] Everything else is determined,
+- [00:23:36,140 - 00:23:39,140] or mass, depending on how we think of that.
+- [00:23:39,140 - 00:23:42,140] Okay, let's now talk about
+- [00:23:42,140 - 00:23:44,140] a typical quantum field theory,
+- [00:23:44,140 - 00:23:49,140] let's see, I think we'll start with
+- [00:23:49,140 - 00:23:51,140] a scalar quantum field theory,
+- [00:23:51,140 - 00:23:53,140] and I'll show you what's entailed
+- [00:23:53,140 - 00:23:55,140] in renormalization.
+- [00:23:55,140 - 00:23:58,140] We have, for simplicity now,
+- [00:23:58,140 - 00:24:00,140] just a quantum field theory with
+- [00:24:00,140 - 00:24:03,140] a single scalar field, phi,
+- [00:24:03,140 - 00:24:05,140] that's all there is.
+- [00:24:05,140 - 00:24:07,140] It has a Lagrangian,
+- [00:24:07,140 - 00:24:08,140] and from the Lagrangian,
+- [00:24:08,140 - 00:24:10,140] we derive Feynman diagrams.
+- [00:24:10,140 - 00:24:11,140] We're going to talk about those
+- [00:24:11,140 - 00:24:13,140] Feynman diagrams a little bit,
+- [00:24:13,140 - 00:24:18,140] and even set up roughly what a calculation
+- [00:24:18,140 - 00:24:20,140] of a Feynman diagram would look like,
+- [00:24:20,140 - 00:24:22,140] some simple ones.
+- [00:24:25,140 - 00:24:27,140] Okay, so there's a Lagrangian.
+- [00:24:27,140 - 00:24:30,140] Here is the Lagrangian for phi.
+- [00:24:30,140 - 00:24:32,140] It's very simple.
+- [00:24:32,140 - 00:24:35,140] It's just the derivative of phi
+- [00:24:35,140 - 00:24:38,140] with respect to either space or time squared.
+- [00:24:38,140 - 00:24:40,140] We've done these things before.
+- [00:24:40,140 - 00:24:42,140] That's the kinetic term in the Lagrangian.
+- [00:24:42,140 - 00:24:45,140] And then there may be a potential energy
+- [00:24:45,140 - 00:24:49,140] in the Lagrangian, minus V of phi,
+- [00:24:49,140 - 00:24:52,140] which is a function of phi.
+- [00:24:52,140 - 00:24:57,140] Now, what are the units of a Lagrangian?
+- [00:24:57,140 - 00:25:01,140] The units of a Lagrangian...
+- [00:25:01,140 - 00:25:03,140] Okay.
+- [00:25:03,140 - 00:25:06,140] What do we do with a Lagrangian?
+- [00:25:06,140 - 00:25:08,140] We integrate it over...
+- [00:25:08,140 - 00:25:10,140] We use a Lagrangian in the principle
+- [00:25:10,140 - 00:25:12,140] of least action.
+- [00:25:12,140 - 00:25:14,140] That's what a Lagrangian is for.
+- [00:25:14,140 - 00:25:15,140] It's whole...
+- [00:25:15,140 - 00:25:17,140] In classical physics, in any case.
+- [00:25:17,140 - 00:25:20,140] In quantum physics, it's used in the path integral.
+- [00:25:20,140 - 00:25:22,140] But basically, in either case,
+- [00:25:22,140 - 00:25:25,140] the quantity of real interest is the action itself.
+- [00:25:25,140 - 00:25:28,140] And what is the action in terms of the Lagrangian?
+- [00:25:28,140 - 00:25:33,140] It's the integral of the Lagrangian.
+- [00:25:33,140 - 00:25:36,140] But the integral of the Lagrangian over what?
+- [00:25:36,140 - 00:25:38,140] And space.
+- [00:25:38,140 - 00:25:39,140] Time and space.
+- [00:25:39,140 - 00:25:41,140] This is the Lagrangian of a field theory.
+- [00:25:41,140 - 00:25:43,140] So the interest in quantity,
+- [00:25:43,140 - 00:25:44,140] which is usually called S,
+- [00:25:44,140 - 00:25:45,140] sometimes S, sometimes action,
+- [00:25:45,140 - 00:25:47,140] sometimes I, it doesn't matter,
+- [00:25:47,140 - 00:25:49,140] but for now it's S for action.
+- [00:25:49,140 - 00:25:51,140] Huh?
+- [00:25:55,140 - 00:25:57,140] S for sex.
+- [00:25:57,140 - 00:25:59,140] That's like action, isn't it?
+- [00:25:59,140 - 00:26:01,140] No, no, no, I didn't say that.
+- [00:26:01,140 - 00:26:03,140] All right, S for action,
+- [00:26:03,140 - 00:26:09,140] and that's the integral d4x of the Lagrangian.
+- [00:26:09,140 - 00:26:12,140] And the action is always something...
+- [00:26:12,140 - 00:26:13,140] Yeah, question.
+- [00:26:13,140 - 00:26:17,140] Action has units of h-bar.
+- [00:26:17,140 - 00:26:19,140] But h-bar has been set equal to one.
+- [00:26:19,140 - 00:26:22,140] So h-bar is now dimensionless.
+- [00:26:22,140 - 00:26:24,140] Action is dimensionless.
+- [00:26:24,140 - 00:26:26,140] There's no dimensions at all.
+- [00:26:26,140 - 00:26:29,140] And that means whatever the Lagrangian is,
+- [00:26:29,140 - 00:26:33,140] it must have inverse length to the fourth power.
+- [00:26:33,140 - 00:26:36,140] The Lagrangian must have inverse length to the fourth power.
+- [00:26:36,140 - 00:26:38,140] The Lagrangian density in here.
+- [00:26:38,140 - 00:26:41,140] Must have inverse length to the fourth power.
+- [00:26:41,140 - 00:26:43,140] Now, what I'm really after
+- [00:26:43,140 - 00:26:46,140] is the dimensions of the field itself, phi.
+- [00:26:46,140 - 00:26:48,140] What is the dimension of phi itself?
+- [00:26:48,140 - 00:26:50,140] So let's see if we can figure it out.
+- [00:26:50,140 - 00:26:53,140] The Lagrangian has to be...
+- [00:26:53,140 - 00:26:54,140] Let's take this term here.
+- [00:26:54,140 - 00:26:57,140] This term here is derivative of phi
+- [00:26:57,140 - 00:27:01,140] with respect to x squared,
+- [00:27:01,140 - 00:27:05,140] and it has to have dimensions
+- [00:27:05,140 - 00:27:08,140] of inverse length to the fourth.
+- [00:27:08,140 - 00:27:10,140] Inverse length to the fourth,
+- [00:27:10,140 - 00:27:12,140] because it has to cancel this d4x here.
+- [00:27:12,140 - 00:27:15,140] d4x, or x has units of length.
+- [00:27:15,140 - 00:27:18,140] This must have units of length to the minus four.
+- [00:27:18,140 - 00:27:20,140] Okay?
+- [00:27:20,140 - 00:27:24,140] Well, whatever the units of phi are,
+- [00:27:24,140 - 00:27:26,140] the units of the derivative of phi
+- [00:27:26,140 - 00:27:29,140] are the units of phi
+- [00:27:29,140 - 00:27:32,140] times length to the minus one.
+- [00:27:32,140 - 00:27:35,140] That's the unit of the derivative of phi.
+- [00:27:35,140 - 00:27:37,140] Differentiating with respect to x just gives you a length.
+- [00:27:38,140 - 00:27:40,140] And that's the unit of length inverse.
+- [00:27:40,140 - 00:27:42,140] And now the square of this
+- [00:27:42,140 - 00:27:45,140] is just the dimension of phi squared
+- [00:27:45,140 - 00:27:47,140] times length to the minus two,
+- [00:27:47,140 - 00:27:48,640] and that has to give
+- [00:27:48,640 - 00:27:50,140] you length to the minus four.
+- [00:27:50,140 - 00:27:54,140] And that tells you that the units of phi squared
+- [00:27:54,140 - 00:27:58,140] must be length to the minus two.
+- [00:27:58,140 - 00:28:00,140] Or, to summarize,
+- [00:28:00,140 - 00:28:02,140] the units of a scalar field,
+- [00:28:02,140 - 00:28:05,140] the units of a scalar field
+- [00:28:05,140 - 00:28:07,140] are just inverse length,
+- [00:28:07,140 - 00:28:09,140] length to the minus one.
+- [00:28:09,140 - 00:28:10,140] Good thing to keep in mind.
+- [00:28:10,140 - 00:28:13,140] Very, very useful for all kinds of purposes.
+- [00:28:13,140 - 00:28:19,140] Um...
+- [00:28:19,140 - 00:28:23,140] That's an example of using some simple dimensional analysis.
+- [00:28:23,140 - 00:28:28,140] Now, what about the rules of Feynman graphs?
+- [00:28:28,140 - 00:28:29,640] Let's talk about the rules
+- [00:28:29,640 - 00:28:31,140] of Feynman graphs a little bit.
+- [00:28:31,140 - 00:28:33,140] First of all, the Feynman graphs
+- [00:28:33,140 - 00:28:35,140] all come from V of phi.
+- [00:28:35,140 - 00:28:37,140] V of phi might have things,
+- [00:28:37,140 - 00:28:38,140] like, in it.
+- [00:28:38,140 - 00:28:39,140] What does it have in it?
+- [00:28:39,140 - 00:28:41,640] V of phi has things in
+- [00:28:41,640 - 00:28:44,140] it like m squared over two.
+- [00:28:44,140 - 00:28:45,140] That's just a parameter.
+- [00:28:45,140 - 00:28:47,640] It really is, of course, secretly the square
+- [00:28:47,640 - 00:28:50,140] of the mass of the field divided by two,
+- [00:28:50,140 - 00:28:53,140] times phi squared.
+- [00:28:53,140 - 00:28:56,140] And then it can have things involving,
+- [00:28:56,140 - 00:29:02,140] let's call it g times phi cubed.
+- [00:29:02,140 - 00:29:03,640] And then it can have
+- [00:29:03,640 - 00:29:05,140] things with phi fourth in it.
+- [00:29:05,140 - 00:29:07,140] Let's call the coefficient of phi fourth lambda.
+- [00:29:07,140 - 00:29:12,140] That's a traditional notation.
+- [00:29:12,140 - 00:29:14,140] Lambda phi fourth, and on and on and on.
+- [00:29:14,140 - 00:29:18,140] It can have all kinds of terms in it.
+- [00:29:18,140 - 00:29:22,140] And notice that these terms also have dimensions.
+- [00:29:22,140 - 00:29:24,140] These terms also have dimensions.
+- [00:29:24,140 - 00:29:25,640] In fact, the phi squared has
+- [00:29:25,640 - 00:29:27,140] units of length to the minus two.
+- [00:29:27,140 - 00:29:29,140] Phi cubed has units of length to the minus three,
+- [00:29:29,140 - 00:29:31,140] and so forth and so on.
+- [00:29:31,140 - 00:29:33,140] And from that, we can read off
+- [00:29:33,140 - 00:29:37,140] what the dimensions of V of phi are.
+- [00:29:37,140 - 00:29:41,140] Okay.
+- [00:29:41,140 - 00:29:46,140] Now, let's talk about Feynman diagrams.
+- [00:29:46,140 - 00:29:49,140] Feynman diagrams are built out of vertices,
+- [00:29:49,140 - 00:29:52,140] and the vertices come from the potential here.
+- [00:29:52,140 - 00:29:55,140] Is g units of mass?
+- [00:29:55,140 - 00:29:57,140] G, let's see.
+- [00:29:57,140 - 00:30:02,140] So, yeah, g must have a unit of mass, yeah.
+- [00:30:02,140 - 00:30:03,140] Why is it mass?
+- [00:30:03,140 - 00:30:05,640] The whole thing has to have
+- [00:30:05,640 - 00:30:08,140] units of length to the minus four.
+- [00:30:08,140 - 00:30:11,140] All right, here's length to the minus three.
+- [00:30:11,140 - 00:30:13,140] This must be inverse length,
+- [00:30:13,140 - 00:30:15,140] but inverse length is the same as mass.
+- [00:30:15,140 - 00:30:16,140] Right.
+- [00:30:16,140 - 00:30:19,140] So, g would have units of mass.
+- [00:30:19,140 - 00:30:22,140] This obviously has units of mass squared.
+- [00:30:22,140 - 00:30:24,140] What about the dimensions of lambda?
+- [00:30:24,140 - 00:30:25,140] Dimension.
+- [00:30:25,140 - 00:30:27,140] Dimension less.
+- [00:30:27,140 - 00:30:28,140] No dimensions at all.
+- [00:30:28,140 - 00:30:30,140] That's significant.
+- [00:30:30,140 - 00:30:32,140] Dimensionless coupling constants are especially important
+- [00:30:32,140 - 00:30:36,140] in renormalization theory.
+- [00:30:36,140 - 00:30:39,140] The other ones have units of either mass, mass squared,
+- [00:30:39,140 - 00:30:42,140] and of course, if you introduce more terms up here,
+- [00:30:42,140 - 00:30:45,140] then you can follow what the dimensions are.
+- [00:30:45,140 - 00:30:49,140] Okay, now, a quantum field theory or the rules
+- [00:30:49,140 - 00:30:52,140] of Feynman diagrams are built out of two elements.
+- [00:30:52,140 - 00:30:54,140] One element are the vertices,
+- [00:30:54,140 - 00:30:59,140] and the vertices are read off from the potential here.
+- [00:30:59,140 - 00:31:01,140] For example, g phi cubed,
+- [00:31:01,140 - 00:31:06,140] represents a vertex in which three particles come together.
+- [00:31:06,140 - 00:31:08,640] And the coefficient of such a vertex
+- [00:31:08,640 - 00:31:11,140] in a Feynman diagram is just g.
+- [00:31:11,140 - 00:31:12,140] All right.
+- [00:31:12,140 - 00:31:16,140] Phi to the fourth, that's four particles coming together.
+- [00:31:16,140 - 00:31:18,140] This one has coefficient g.
+- [00:31:18,140 - 00:31:21,140] This one has coefficient lambda.
+- [00:31:21,140 - 00:31:23,140] What about m phi squared?
+- [00:31:23,140 - 00:31:25,140] Well, m phi squared is a very simple thing.
+- [00:31:25,140 - 00:31:26,640] A particle comes in, let's
+- [00:31:26,640 - 00:31:28,140] put a little cross to indicate,
+- [00:31:28,140 - 00:31:29,140] and goes back out.
+- [00:31:29,140 - 00:31:30,140] All right.
+- [00:31:31,140 - 00:31:34,140] Just, I put a little cross there
+- [00:31:34,140 - 00:31:37,140] just to indicate that something happened there.
+- [00:31:37,140 - 00:31:40,140] Namely, the particle was absorbed and re-emitted,
+- [00:31:40,140 - 00:31:44,140] and the coefficient is just m squared over two.
+- [00:31:44,140 - 00:31:46,140] So when you're building a Feynman diagram,
+- [00:31:46,140 - 00:31:49,140] a Feynman diagram has a value.
+- [00:31:49,140 - 00:31:51,140] The value corresponds to the
+- [00:31:51,140 - 00:31:53,140] amplitude for a process to happen.
+- [00:31:53,140 - 00:31:55,140] All right, it has a value.
+- [00:31:55,140 - 00:31:57,640] And in building it up, there's the
+- [00:31:57,640 - 00:32:00,140] elements of the vertices and the propagators.
+- [00:32:00,140 - 00:32:02,140] The propagators represent the motion
+- [00:32:02,140 - 00:32:04,140] from one point to another.
+- [00:32:04,140 - 00:32:07,140] All right, so let's talk about the propagators.
+- [00:32:07,140 - 00:32:12,140] The propagators, from one space-time point to another,
+- [00:32:12,140 - 00:32:15,140] we can just draw them as lines in between.
+- [00:32:15,140 - 00:32:16,140] Of course, the particle doesn't
+- [00:32:16,140 - 00:32:17,140] really move along a straight line.
+- [00:32:17,140 - 00:32:19,140] That's not the implication here.
+- [00:32:19,140 - 00:32:22,140] The particle is a quantum mechanical particle.
+- [00:32:22,140 - 00:32:25,140] But the motion from one point to another,
+- [00:32:25,140 - 00:32:27,140] or the emission from one point,
+- [00:32:27,140 - 00:32:29,140] the detection of another point,
+- [00:32:29,140 - 00:32:31,140] we'll call a propagator,
+- [00:32:31,140 - 00:32:32,640] and we'll just indicate it by a
+- [00:32:32,640 - 00:32:34,140] line going from one point to another.
+- [00:32:34,140 - 00:32:36,140] Now, I'm going to tell you
+- [00:32:36,140 - 00:32:38,140] what the meaning of the propagator is,
+- [00:32:38,140 - 00:32:40,140] the mathematical meaning of the propagator.
+- [00:32:40,140 - 00:32:43,140] The mathematical meaning of the propagator
+- [00:32:43,140 - 00:32:45,140] is just the amplitude that if
+- [00:32:45,140 - 00:32:47,140] you start a particle at one point,
+- [00:32:47,140 - 00:32:50,140] that if you create a particle at one point,
+- [00:32:50,140 - 00:32:53,140] that you detect it at another point.
+- [00:32:53,140 - 00:32:55,640] But mathematically, what it corresponds to
+- [00:32:55,640 - 00:32:58,140] is to starting with a vacuum,
+- [00:32:59,140 - 00:33:02,140] applying the field operator,
+- [00:33:02,140 - 00:33:06,140] phi at, let's call it, x,
+- [00:33:06,140 - 00:33:07,640] x, let's call this point x,
+- [00:33:07,640 - 00:33:09,140] and let's call this point y.
+- [00:33:09,140 - 00:33:10,640] These are not the x
+- [00:33:10,640 - 00:33:12,140] and y coordinates of a point.
+- [00:33:12,140 - 00:33:15,140] These are point x and point y.
+- [00:33:15,140 - 00:33:18,140] So you've created a particle at x,
+- [00:33:18,140 - 00:33:23,140] and now you want to remove the particle at y,
+- [00:33:23,140 - 00:33:26,140] so that might be some phi of y.
+- [00:33:26,140 - 00:33:28,140] The creation operator creates it,
+- [00:33:29,140 - 00:33:30,640] the creation operator that's in
+- [00:33:30,640 - 00:33:32,140] phi of x creates a particle,
+- [00:33:32,140 - 00:33:36,140] and you can think of it two ways.
+- [00:33:36,140 - 00:33:41,140] You can think of, let's think of it this way.
+- [00:33:41,140 - 00:33:45,140] The action of phi of y on the
+- [00:33:45,140 - 00:33:49,140] bra vector zero creates a particle at y.
+- [00:33:49,140 - 00:33:50,640] The action of phi of x
+- [00:33:50,640 - 00:33:52,140] here creates a particle at zero,
+- [00:33:52,140 - 00:33:55,140] but this can be read, create a particle at x,
+- [00:33:55,140 - 00:33:58,140] what's the amplitude that, after a certain amount of time,
+- [00:33:58,140 - 00:34:03,140] goes by that you find a particle at y?
+- [00:34:03,140 - 00:34:06,140] That's the meaning of this symbol here,
+- [00:34:06,140 - 00:34:10,139] the amplitude that if you created a particle at x,
+- [00:34:10,139 - 00:34:12,139] you would detect it at y.
+- [00:34:12,139 - 00:34:14,139] And that's what the propagator is.
+- [00:34:14,139 - 00:34:16,139] That is what the propagator is.
+- [00:34:16,139 - 00:34:17,639] It's just the amplitude that if
+- [00:34:17,639 - 00:34:19,139] you create a particle at x,
+- [00:34:19,139 - 00:34:21,139] you'll detect it at y.
+- [00:34:21,139 - 00:34:23,139] But now I can ask, what
+- [00:34:23,139 - 00:34:25,139] are the dimensions of this object here?
+- [00:34:25,139 - 00:34:27,139] What are the dimensions of this object?
+- [00:34:28,139 - 00:34:30,639] The vacuum, that's just a
+- [00:34:30,639 - 00:34:33,139] state, the state of lowest energy.
+- [00:34:33,139 - 00:34:36,139] Vacuums and states don't have dimensions.
+- [00:34:36,139 - 00:34:39,139] You wouldn't say the state has a certain mass.
+- [00:34:39,139 - 00:34:44,139] No, the state is just a specification of a configuration.
+- [00:34:44,139 - 00:34:48,139] It has no dimensions, but phi has dimensions.
+- [00:34:48,139 - 00:34:50,139] Phi has dimensions of inverse length.
+- [00:34:50,139 - 00:34:53,139] So what's the dimension of this object?
+- [00:34:53,139 - 00:34:56,139] Inverse length squared.
+- [00:34:56,139 - 00:34:58,140] Inverse length squared.
+- [00:34:58,140 - 00:35:01,140] Now, if there is no mass for phi,
+- [00:35:01,140 - 00:35:05,140] then there is no length scale in the problem,
+- [00:35:05,140 - 00:35:08,140] other than just the distance between x and y.
+- [00:35:08,140 - 00:35:11,140] x and y would be the only thing
+- [00:35:11,140 - 00:35:14,140] which would specify any length scale in the problem.
+- [00:35:14,140 - 00:35:16,140] So can you guess what this answer, what
+- [00:35:16,140 - 00:35:18,140] the answer to this quantity has to be?
+- [00:35:18,140 - 00:35:20,140] One over length squared.
+- [00:35:20,140 - 00:35:23,140] One over length squared, but what length?
+- [00:35:23,140 - 00:35:25,140] Inverse length squared.
+- [00:35:25,140 - 00:35:26,140] Right.
+- [00:35:26,140 - 00:35:27,140] I don't think it would make sense
+- [00:35:27,140 - 00:35:28,140] to put here one over length squared,
+- [00:35:28,140 - 00:35:30,140] one over length squared.
+- [00:35:30,140 - 00:35:32,140] No, that doesn't look good.
+- [00:35:32,140 - 00:35:34,140] How about one over length squared?
+- [00:35:34,140 - 00:35:36,140] Now, how about one over length squared?
+- [00:35:36,140 - 00:35:37,140] I don't know, what do
+- [00:35:37,140 - 00:35:38,140] I even mean by length squared?
+- [00:35:38,140 - 00:35:39,140] x is a four vector and
+- [00:35:39,140 - 00:35:40,140] length squared is a four vector.
+- [00:35:40,140 - 00:35:42,140] What do I even mean by that?
+- [00:35:42,140 - 00:35:46,140] The obvious thing is one over the distance between them,
+- [00:35:46,140 - 00:35:48,640] length squared, and the distance
+- [00:35:48,640 - 00:35:51,140] now meaning the Lorentz invariant distance,
+- [00:35:51,140 - 00:35:55,140] the proper time or the proper separation between them.
+- [00:35:55,140 - 00:35:57,140] One over length squared.
+- [00:35:57,140 - 00:36:01,140] So that's something we learned from dimensional analysis,
+- [00:36:01,140 - 00:36:03,140] that if there is no mass in the problem,
+- [00:36:03,140 - 00:36:06,140] if the particle doesn't have a mass,
+- [00:36:06,140 - 00:36:08,640] then the propagator is just one
+- [00:36:08,640 - 00:36:11,140] over the distance between the points squared.
+- [00:36:11,140 - 00:36:13,140] Notice something important.
+- [00:36:13,140 - 00:36:15,140] It blows up.
+- [00:36:15,140 - 00:36:17,140] It gets very big when the
+- [00:36:17,140 - 00:36:19,140] distance between the two points is close.
+- [00:36:19,140 - 00:36:21,140] So the amplitude for starting at one point
+- [00:36:21,140 - 00:36:23,140] and detecting a particle at a very close point,
+- [00:36:23,140 - 00:36:25,140] just on dimensional grounds,
+- [00:36:25,140 - 00:36:28,140] blows up and it diverges.
+- [00:36:28,140 - 00:36:30,140] That's the source of all
+- [00:36:30,140 - 00:36:32,140] divergences in quantum field theory,
+- [00:36:32,140 - 00:36:35,140] that propagators have divergences like this.
+- [00:36:35,140 - 00:36:38,140] And that can cause infinities in problems,
+- [00:36:38,140 - 00:36:40,640] just the fact that the propagator
+- [00:36:40,640 - 00:36:43,140] becomes so big at small distances.
+- [00:36:43,140 - 00:36:46,140] Okay.
+- [00:36:46,140 - 00:36:48,640] Everything else is just building
+- [00:36:48,640 - 00:36:51,140] up Feynman diagrams and calculating them.
+- [00:36:51,140 - 00:36:54,140] But, also of course interpreting them.
+- [00:36:55,140 - 00:37:00,140] Okay, so let's now start with the idea of renormalization
+- [00:37:00,140 - 00:37:03,140] and how it works in this very simple context.
+- [00:37:03,140 - 00:37:06,140] Let's start with renormalization of the mass.
+- [00:37:06,140 - 00:37:09,140] Now notice that in scalar field theory,
+- [00:37:09,140 - 00:37:13,140] the parameter that appears is actually the mass squared.
+- [00:37:13,140 - 00:37:14,640] It turns out that the mass
+- [00:37:14,640 - 00:37:16,140] rarely appears in scalar field theory.
+- [00:37:16,140 - 00:37:17,640] It only appears by virtue of taking
+- [00:37:17,640 - 00:37:19,140] the square root of the mass squared.
+- [00:37:19,140 - 00:37:21,640] The thing which appears in the dynamics of
+- [00:37:21,640 - 00:37:24,140] the theory is typically the square of the mass.
+- [00:37:25,140 - 00:37:28,640] It has to do with the fact that energy
+- [00:37:28,640 - 00:37:32,140] is the square root of p squared plus m squared.
+- [00:37:32,140 - 00:37:34,140] It's always m squared which appears.
+- [00:37:34,140 - 00:37:37,140] So we might as well
+- [00:37:37,140 - 00:37:40,140] ask about renormalization of m squared.
+- [00:37:40,140 - 00:37:43,140] What does it mean and how do we do it?
+- [00:37:43,140 - 00:37:48,140] So from this picture over here,
+- [00:37:48,140 - 00:37:52,140] we see that the interpretation of a mass term
+- [00:37:52,140 - 00:37:54,140] is just a basic simple function of the mass term.
+- [00:37:54,140 - 00:37:56,640] It's a basic simple Feynman diagram or
+- [00:37:56,640 - 00:37:59,140] a simple vertex in a Feynman diagram
+- [00:37:59,140 - 00:38:01,640] where a particle is absorbed at a
+- [00:38:01,640 - 00:38:04,140] point and emitted from the same point.
+- [00:38:04,140 - 00:38:07,140] Now does it have to be exactly the same point?
+- [00:38:07,140 - 00:38:08,640] Well, if we have a microscope
+- [00:38:08,640 - 00:38:10,140] which is only good up to,
+- [00:38:10,140 - 00:38:12,140] you know, we've built accelerators which
+- [00:38:12,140 - 00:38:14,140] study things down to a distance scale
+- [00:38:14,140 - 00:38:16,640] of 10 to the minus whatever it
+- [00:38:16,640 - 00:38:19,140] is, 17 centimeters or whatever it is,
+- [00:38:19,140 - 00:38:21,640] we're not really interested in the details of
+- [00:38:21,640 - 00:38:24,140] what goes on on distances smaller than that.
+- [00:38:24,140 - 00:38:27,640] So if we can find a process
+- [00:38:27,640 - 00:38:31,140] in nature which would mimic this vertex,
+- [00:38:31,140 - 00:38:33,640] even if that vertex might be separated and
+- [00:38:33,640 - 00:38:36,140] fuzzy over a very, very tiny mass length scale,
+- [00:38:36,140 - 00:38:38,140] we might not be interested in that.
+- [00:38:38,140 - 00:38:41,140] If we're blurring our eyes to such fine distinctions,
+- [00:38:41,140 - 00:38:44,140] anything, any diagram which absorbs a particle
+- [00:38:44,140 - 00:38:47,140] and re-emits it from a nearby point
+- [00:38:47,140 - 00:38:49,640] would be counted as part of
+- [00:38:49,640 - 00:38:52,140] the mass term in an effective description
+- [00:38:52,140 - 00:38:54,140] in which we don't look to it.
+- [00:38:54,140 - 00:38:56,640] In other words, in its description where we
+- [00:38:56,640 - 00:38:59,140] get rid of all the very short distance
+- [00:38:59,140 - 00:39:02,140] and high frequency degrees of freedom.
+- [00:39:02,140 - 00:39:05,140] So let's ask, are there any
+- [00:39:05,140 - 00:39:08,140] Feynman diagrams that we can build
+- [00:39:08,140 - 00:39:11,140] that will mimic just a particle
+- [00:39:11,140 - 00:39:14,140] coming in and a particle going out?
+- [00:39:14,140 - 00:39:16,140] Well, I'll give you one.
+- [00:39:16,140 - 00:39:18,640] First of all, let's build it
+- [00:39:18,640 - 00:39:21,140] out of this vertex over here,
+- [00:39:21,140 - 00:39:24,140] the phi to the fourth vertex.
+- [00:39:24,140 - 00:39:26,140] The lambda vertex.
+- [00:39:26,140 - 00:39:28,140] Here's a very simple process.
+- [00:39:28,140 - 00:39:32,140] A particle comes in, goes out,
+- [00:39:32,140 - 00:39:35,140] but here's a Feynman diagram.
+- [00:39:35,140 - 00:39:37,140] This is a little bit crazy,
+- [00:39:37,140 - 00:39:39,140] but still it's a Feynman diagram,
+- [00:39:39,140 - 00:39:42,640] where a particle is emitted and comes
+- [00:39:42,640 - 00:39:46,140] back to essentially exactly the same point.
+- [00:39:46,140 - 00:39:48,140] Okay?
+- [00:39:48,140 - 00:39:50,140] Comes back to exactly the same point.
+- [00:39:50,140 - 00:39:51,640] Really what's happening is the
+- [00:39:51,640 - 00:39:53,140] particle's not going anywhere, of course.
+- [00:39:53,140 - 00:39:55,140] It's just being emitted and absorbed very quickly.
+- [00:39:55,140 - 00:39:57,140] That's the way to think about it.
+- [00:39:57,140 - 00:39:58,140] This is a Feynman diagram, and
+- [00:39:58,140 - 00:39:59,140] if we want to calculate it,
+- [00:39:59,140 - 00:40:01,140] I'm going to show you how
+- [00:40:01,140 - 00:40:03,140] to use the rules for calculating it.
+- [00:40:03,140 - 00:40:05,640] It's the amplitude for a process in which
+- [00:40:05,640 - 00:40:08,140] a particle comes in and goes back out.
+- [00:40:08,140 - 00:40:09,640] And this whole apparatus here may
+- [00:40:09,640 - 00:40:11,140] be on such a small scale
+- [00:40:11,140 - 00:40:13,140] that we might not even see it.
+- [00:40:13,140 - 00:40:14,640] It might be too small a
+- [00:40:14,640 - 00:40:16,140] scale for us to be interested in.
+- [00:40:16,140 - 00:40:18,140] But what is this propagator?
+- [00:40:18,140 - 00:40:20,140] This propagator is...
+- [00:40:20,140 - 00:40:22,140] Where did I write the propagators?
+- [00:40:22,140 - 00:40:23,140] Did I erase them already?
+- [00:40:23,140 - 00:40:25,140] No, here it is.
+- [00:40:25,140 - 00:40:27,140] It's just 1 over squared.
+- [00:40:27,140 - 00:40:28,640] But x and y are
+- [00:40:28,640 - 00:40:30,140] the same point in this problem.
+- [00:40:30,140 - 00:40:33,140] Well, maybe they're not exactly the same point.
+- [00:40:33,140 - 00:40:36,140] Maybe I'm sort of blurring distinctions down
+- [00:40:36,140 - 00:40:39,140] to some what's called a cutoff scale,
+- [00:40:39,140 - 00:40:42,140] down to some very, very small distance scale.
+- [00:40:42,140 - 00:40:46,140] We might want to ignore separations on that small scale.
+- [00:40:46,140 - 00:40:48,140] That's called the cutoff in a quantum field theory.
+- [00:40:48,140 - 00:40:50,140] Cutoff, meaning to say we don't
+- [00:40:50,140 - 00:40:52,140] think about scales smaller than that,
+- [00:40:52,140 - 00:40:54,140] it's a sort of arbitrary thing
+- [00:40:54,140 - 00:40:56,140] to do, but we can do it.
+- [00:40:56,140 - 00:40:59,640] Let's say we're not going to be interested
+- [00:40:59,640 - 00:41:03,140] in distinctions on scales smaller than scale delta.
+- [00:41:03,140 - 00:41:05,140] All right.
+- [00:41:05,140 - 00:41:09,140] Then what should we put in here?
+- [00:41:09,140 - 00:41:13,640] We should put in a propagator which
+- [00:41:13,640 - 00:41:18,140] is separated by distances no longer than delta.
+- [00:41:18,140 - 00:41:19,640] We should put in a propagator
+- [00:41:19,640 - 00:41:21,140] which is separated by distance delta.
+- [00:41:21,140 - 00:41:24,140] If we're interested in physics on length
+- [00:41:24,140 - 00:41:27,140] scales a little bit longer than delta,
+- [00:41:27,140 - 00:41:29,140] but we are not interested
+- [00:41:29,140 - 00:41:31,140] on length scales smaller than delta,
+- [00:41:31,140 - 00:41:32,640] then we might want to
+- [00:41:32,640 - 00:41:34,140] say let's calculate the Feynman diagram,
+- [00:41:34,140 - 00:41:37,140] but smearing this vertex here, smearing it,
+- [00:41:37,140 - 00:41:40,140] make it a little bit smeary in space-time,
+- [00:41:40,140 - 00:41:43,140] smearing it over a distance of size delta.
+- [00:41:43,140 - 00:41:44,140] Then what will we get?
+- [00:41:44,140 - 00:41:47,140] We'll get 1 over delta squared for the propagator.
+- [00:41:51,140 - 00:41:55,140] 1 over delta squared for the propagator.
+- [00:41:55,140 - 00:41:58,140] We're throwing away all scales smaller than delta.
+- [00:41:58,140 - 00:42:00,140] And what did I leave out?
+- [00:42:00,140 - 00:42:02,640] I left out the coefficient lambda
+- [00:42:02,640 - 00:42:05,140] coming from the 5 fourth term.
+- [00:42:05,140 - 00:42:09,140] Lambda over delta squared.
+- [00:42:09,140 - 00:42:12,640] So what's the amplitude then in this approximation for
+- [00:42:12,640 - 00:42:16,140] a particle to come in, be absorbed, and be re-emitted?
+- [00:42:16,140 - 00:42:17,140] Well, it's got two terms.
+- [00:42:17,140 - 00:42:19,140] It has the original mass term.
+- [00:42:19,140 - 00:42:21,140] It can happen in two ways.
+- [00:42:21,140 - 00:42:23,640] It can happen just by the original
+- [00:42:23,640 - 00:42:26,140] mass term absorbing it and re-emitting it.
+- [00:42:26,140 - 00:42:29,140] And then it can happen by this more complicated process.
+- [00:42:29,140 - 00:42:34,140] And the total amplitude then is the original mass term.
+- [00:42:34,140 - 00:42:35,140] Let's give it a new name.
+- [00:42:35,140 - 00:42:36,140] I'm going to give it a new name over here.
+- [00:42:36,140 - 00:42:38,140] I'm going to call it m sub 0.
+- [00:42:38,140 - 00:42:43,140] 0 standing for original starting value.
+- [00:42:43,140 - 00:42:51,140] m sub 0 squared over 2 plus this over here.
+- [00:42:51,140 - 00:42:54,640] Another way to say it is if you're not
+- [00:42:54,640 - 00:42:58,140] going to look at distinctions on such small scales,
+- [00:42:58,140 - 00:43:01,140] that the effective mass term, the
+- [00:43:01,140 - 00:43:04,140] effective mass and the effective mass term,
+- [00:43:04,140 - 00:43:06,640] is m 0 squared over
+- [00:43:06,640 - 00:43:09,140] 2 plus lambda over delta squared.
+- [00:43:09,140 - 00:43:13,140] So this is an example of the renormalization of mass.
+- [00:43:13,140 - 00:43:16,140] It's getting rid of all degrees of freedom
+- [00:43:16,140 - 00:43:19,140] on scales too small to be interesting to us,
+- [00:43:19,140 - 00:43:20,140] too fast to be interesting to us,
+- [00:43:20,140 - 00:43:23,140] and lumping the two together.
+- [00:43:23,140 - 00:43:26,140] Lumping the two together into a single blurry effect,
+- [00:43:26,140 - 00:43:30,140] which we'll just make a blurry cross here.
+- [00:43:30,140 - 00:43:32,140] Stuff comes in and goes out.
+- [00:43:32,140 - 00:43:35,140] And the amplitude, the quantum mechanical amplitude for it,
+- [00:43:35,140 - 00:43:41,140] is m 0 squared plus lambda over delta squared.
+- [00:43:41,140 - 00:43:44,140] All right. That's mass renormalization.
+- [00:43:44,140 - 00:43:47,140] Are there other...
+- [00:43:47,140 - 00:43:49,140] In other words, the true mass of a particle,
+- [00:43:49,140 - 00:43:52,140] the mass that you would see in the laboratory
+- [00:43:52,140 - 00:43:54,640] for experiments in which nothing
+- [00:43:54,640 - 00:43:57,140] moves so rapidly and so fast
+- [00:43:57,140 - 00:43:59,640] that you can see where your accelerator
+- [00:43:59,640 - 00:44:02,140] simply doesn't expose distances smaller than delta,
+- [00:44:02,140 - 00:44:05,140] the effective mass that you see is this.
+- [00:44:09,140 - 00:44:10,140] Yeah, m 0 squared over...
+- [00:44:10,140 - 00:44:12,140] Well, yeah, all right.
+- [00:44:12,140 - 00:44:15,140] This is the effective mass term in the Lagrangian,
+- [00:44:15,140 - 00:44:16,140] the effective mass.
+- [00:44:16,140 - 00:44:18,140] And of course, the lambda over delta squared here,
+- [00:44:18,140 - 00:44:20,140] there's pi's and other things in there.
+- [00:44:20,140 - 00:44:22,140] There are numerical things in there.
+- [00:44:22,140 - 00:44:25,140] So it's not just dimensional analysis.
+- [00:44:25,140 - 00:44:29,140] Dimensional analysis plus evaluation of some integrals.
+- [00:44:29,140 - 00:44:32,140] But most of it can be done by just...
+- [00:44:32,140 - 00:44:34,140] Much of it can be done by dimensional analysis.
+- [00:44:34,140 - 00:44:39,140] Okay. So this is the shift in the mass
+- [00:44:39,140 - 00:44:43,140] due to getting rid of very, very high frequency fluctuations
+- [00:44:43,140 - 00:44:45,140] and summing them up and
+- [00:44:45,140 - 00:44:47,140] putting them into an effective description.
+- [00:44:48,140 - 00:44:51,140] Change in mass, this would be called the renormalized mass.
+- [00:44:51,140 - 00:44:53,140] But of course, we're not finished.
+- [00:44:55,140 - 00:44:57,640] We haven't evaluated every possible Feynman
+- [00:44:57,640 - 00:45:00,140] diagram that can go into this.
+- [00:45:00,140 - 00:45:03,140] Let's do another Feynman diagram for the same thing.
+- [00:45:03,140 - 00:45:05,140] Just to see how it works.
+- [00:45:05,140 - 00:45:07,140] All right, let's see.
+- [00:45:07,140 - 00:45:09,140] I'll put it over here.
+- [00:45:10,140 - 00:45:13,140] This is a Feynman diagram that looks like this.
+- [00:45:15,140 - 00:45:17,140] Again, it's using...
+- [00:45:18,140 - 00:45:20,140] This is separated over here.
+- [00:45:20,140 - 00:45:21,140] Separate this over here.
+- [00:45:21,140 - 00:45:23,140] Here's another Feynman diagram.
+- [00:45:23,140 - 00:45:24,140] Let's evaluate it.
+- [00:45:24,140 - 00:45:26,140] It also has a particle coming
+- [00:45:26,140 - 00:45:28,140] in and a particle going out.
+- [00:45:29,140 - 00:45:31,140] But now we have something new.
+- [00:45:31,140 - 00:45:32,140] We have two points.
+- [00:45:32,140 - 00:45:34,140] What do we do with those two points?
+- [00:45:34,140 - 00:45:36,640] What do we do with those two
+- [00:45:36,640 - 00:45:39,140] points in order to get rid of things
+- [00:45:39,140 - 00:45:41,140] on scales smaller than delta?
+- [00:45:41,140 - 00:45:44,140] Well, we basically evaluate that diagram
+- [00:45:44,140 - 00:45:45,640] when the distance between these
+- [00:45:45,640 - 00:45:47,140] two points is again about delta.
+- [00:45:48,140 - 00:45:50,140] Strictly speaking, you might integrate
+- [00:45:50,140 - 00:45:52,140] over the position of these points.
+- [00:45:52,140 - 00:45:53,140] Let's even do that.
+- [00:45:53,140 - 00:45:55,140] Let's even think about that.
+- [00:45:55,140 - 00:45:57,140] In fact, we should think about that.
+- [00:45:57,140 - 00:45:59,140] Let's hold this point fixed.
+- [00:45:59,140 - 00:46:02,140] This is the point where the first particle is absorbed.
+- [00:46:02,140 - 00:46:04,640] And the second particle is absorbed
+- [00:46:04,640 - 00:46:07,140] or emitted from a nearby point.
+- [00:46:07,140 - 00:46:09,140] But remember that quantum
+- [00:46:09,140 - 00:46:11,140] mechanical amplitudes are always sums
+- [00:46:11,140 - 00:46:14,140] over all the possible ways that a thing can happen.
+- [00:46:14,140 - 00:46:15,640] So if we fix this
+- [00:46:15,640 - 00:46:17,140] point where the particle is absorbed,
+- [00:46:17,140 - 00:46:19,640] we should want to integrate or sum over
+- [00:46:19,640 - 00:46:22,140] all the places where it can be emitted,
+- [00:46:22,140 - 00:46:24,140] all the nearby places it could be emitted from.
+- [00:46:24,140 - 00:46:26,140] So let's see what that would give us.
+- [00:46:26,140 - 00:46:28,640] I think we know that
+- [00:46:28,640 - 00:46:31,140] the propagator is 1 over squared.
+- [00:46:31,140 - 00:46:35,140] What's that?
+- [00:46:35,140 - 00:46:39,140] The little bar across the circle would be three particles.
+- [00:46:39,140 - 00:46:41,140] Yeah, three particles.
+- [00:46:41,140 - 00:46:43,140] That one?
+- [00:46:43,140 - 00:46:44,140] Yeah.
+- [00:46:44,140 - 00:46:47,140] We're still examining the effects of this.
+- [00:46:47,140 - 00:46:51,140] This term has four particles coming together at a vertex.
+- [00:46:51,140 - 00:46:54,140] So here's four particles coming together at a vertex,
+- [00:46:54,140 - 00:46:57,140] and here's four particles coming together at a vertex again.
+- [00:46:57,140 - 00:46:58,140] Good.
+- [00:46:58,140 - 00:47:02,140] This diagram is higher order in lambda.
+- [00:47:02,140 - 00:47:05,140] It's to the next order in lambda.
+- [00:47:05,140 - 00:47:07,140] This one only has one lambda.
+- [00:47:07,140 - 00:47:09,140] Let's move this over here.
+- [00:47:09,140 - 00:47:11,140] Lambda over delta squared.
+- [00:47:11,140 - 00:47:18,140] That's what this one gives.
+- [00:47:18,140 - 00:47:21,140] Now we look at this one over here.
+- [00:47:21,140 - 00:47:24,140] This one will contain two factors of lambda.
+- [00:47:24,140 - 00:47:26,140] If lambda happens to be a small number,
+- [00:47:26,140 - 00:47:28,140] you might say this one is smaller.
+- [00:47:28,140 - 00:47:31,140] If lambda is small, then lambda squared is smaller.
+- [00:47:31,140 - 00:47:33,140] But let's work it out.
+- [00:47:33,140 - 00:47:35,140] And this will typically be true
+- [00:47:35,140 - 00:47:37,140] if lambda is a small number.
+- [00:47:37,140 - 00:47:40,140] But let's see what kind of things we get.
+- [00:47:40,140 - 00:47:43,140] So we're going to get lambda squared.
+- [00:47:43,140 - 00:47:47,140] So this is a higher order Feynman diagram.
+- [00:47:47,140 - 00:47:49,640] It's a second order Feynman diagram
+- [00:47:49,640 - 00:47:52,140] instead of a first order Feynman diagram.
+- [00:47:52,140 - 00:47:54,140] It contains the coupling constant,
+- [00:47:54,140 - 00:47:56,140] or the constant lambda, quadratically.
+- [00:47:56,140 - 00:47:59,140] And then it contains three
+- [00:47:59,140 - 00:48:02,140] propagators going between these two points.
+- [00:48:02,140 - 00:48:05,140] Let's call the point of absorption here x,
+- [00:48:05,140 - 00:48:08,140] and let's call the point where the emission takes place,
+- [00:48:08,140 - 00:48:10,140] let's call it x plus delta.
+- [00:48:10,140 - 00:48:15,140] I don't just want to call it y,
+- [00:48:15,140 - 00:48:18,140] I want to call it x plus delta to
+- [00:48:18,140 - 00:48:21,140] indicate that there's a separation delta between the two points.
+- [00:48:21,140 - 00:48:23,140] So what do we have?
+- [00:48:23,140 - 00:48:27,140] We have three propagators between these two points.
+- [00:48:27,140 - 00:48:29,140] What are those three propagators?
+- [00:48:29,140 - 00:48:32,140] Each propagator is a one over delta squared.
+- [00:48:32,140 - 00:48:36,140] The distance between these two points is delta.
+- [00:48:36,140 - 00:48:38,140] The propagator is one over delta squared.
+- [00:48:38,140 - 00:48:40,140] So this means,
+- [00:48:40,140 - 00:48:44,140] one over delta to the sixth.
+- [00:48:44,140 - 00:48:47,140] One over delta to the sixth.
+- [00:48:47,140 - 00:48:49,140] But now I'm not finished.
+- [00:48:49,140 - 00:48:52,140] Where does this, if the particle is emitted at x,
+- [00:48:52,140 - 00:48:53,640] it can be emitted at x plus,
+- [00:48:53,640 - 00:48:55,140] it can be, if it's absorbed at x,
+- [00:48:55,140 - 00:48:58,140] it can be emitted at x plus delta,
+- [00:48:58,140 - 00:49:00,640] but we're really interested in
+- [00:49:00,640 - 00:49:03,140] the amplitude integrated over delta.
+- [00:49:03,140 - 00:49:06,140] All possible ways that this event can happen,
+- [00:49:06,140 - 00:49:08,140] particle being absorbed by, at x,
+- [00:49:08,140 - 00:49:11,140] emitted from any nearby position,
+- [00:49:11,140 - 00:49:13,640] any nearby position where we're not going to look too
+- [00:49:13,640 - 00:49:16,140] closely about whether this position is the same or not.
+- [00:49:16,140 - 00:49:19,140] The right thing to do is to integrate this.
+- [00:49:19,140 - 00:49:21,140] Now I know I'm throwing rules at you,
+- [00:49:21,140 - 00:49:23,140] but you can imagine that these rules make sense.
+- [00:49:23,140 - 00:49:26,140] Quantum mechanical amplitudes are always sums over all the
+- [00:49:26,140 - 00:49:29,140] possible ways of going from one place to another.
+- [00:49:29,140 - 00:49:31,140] All the possible ways of getting from
+- [00:49:31,140 - 00:49:33,140] the initial particle to the final particle,
+- [00:49:33,140 - 00:49:35,140] having been absorbed at x,
+- [00:49:35,140 - 00:49:37,140] you can be emitted at any point x plus delta,
+- [00:49:37,140 - 00:49:40,140] but then you have to integrate over delta.
+- [00:49:40,140 - 00:49:42,140] Alright, what is the integral over delta?
+- [00:49:42,140 - 00:49:44,140] How many dimensional integral is it?
+- [00:49:47,140 - 00:49:50,140] Delta is a four vector.
+- [00:49:50,140 - 00:49:52,140] Did I give you a hint?
+- [00:49:56,140 - 00:49:58,140] We have one over delta to the sixth,
+- [00:49:58,140 - 00:50:01,140] but now we have to integrate over delta.
+- [00:50:01,140 - 00:50:03,140] But what does the integral over delta mean?
+- [00:50:03,140 - 00:50:06,140] It means the integral over the four coordinates,
+- [00:50:06,140 - 00:50:09,140] the four space-time coordinates of delta, right?
+- [00:50:09,140 - 00:50:12,140] Delta is a four vector.
+- [00:50:12,140 - 00:50:14,140] If you want to integrate over a four vector,
+- [00:50:14,140 - 00:50:16,140] you have to integrate over its four components.
+- [00:50:16,140 - 00:50:20,140] So we can write this d delta naught, d delta x,
+- [00:50:20,140 - 00:50:24,140] d delta one, d delta two, d delta three, and so forth.
+- [00:50:24,140 - 00:50:28,140] Or we can just write d fourth delta.
+- [00:50:28,140 - 00:50:33,140] That means that it's an integral over delta,
+- [00:50:33,140 - 00:50:35,140] over the four components of delta.
+- [00:50:36,140 - 00:50:40,140] Okay, now where are we going to integrate it between?
+- [00:50:40,140 - 00:50:44,140] Well, we might want to integrate it to large distances,
+- [00:50:44,140 - 00:50:46,140] but it's not going to matter,
+- [00:50:46,140 - 00:50:47,640] because this is going to
+- [00:50:47,640 - 00:50:49,140] be so concentrated at small distances
+- [00:50:49,140 - 00:50:51,640] that it's mainly dominated by when these
+- [00:50:51,640 - 00:50:54,140] two points are close to each other.
+- [00:50:54,140 - 00:50:59,140] So, the important thing to know is that
+- [00:50:59,140 - 00:51:04,140] the integral goes from small distances of order delta
+- [00:51:04,140 - 00:51:06,140] to larger distances.
+- [00:51:06,140 - 00:51:08,640] From small distances of order delta to
+- [00:51:08,640 - 00:51:11,140] sort of the lower end of integration here,
+- [00:51:11,140 - 00:51:14,140] delta, for each one of the coordinates.
+- [00:51:14,140 - 00:51:18,140] Now, you care to guess how big this integral is?
+- [00:51:18,140 - 00:51:21,140] Lambda is a dimensionless number.
+- [00:51:21,140 - 00:51:23,140] It comes on the outside of the integral.
+- [00:51:23,140 - 00:51:26,140] Lambda squared.
+- [00:51:26,140 - 00:51:28,140] Put it over here.
+- [00:51:28,140 - 00:51:33,140] But how can I evaluate this integral?
+- [00:51:34,140 - 00:51:40,140] d fourth lambda over lambda to the sixth.
+- [00:51:40,140 - 00:51:43,140] Lambda to the sixth means lambda squared cubed.
+- [00:51:43,140 - 00:51:46,140] The answer is dimensional analysis.
+- [00:51:46,140 - 00:51:47,140] We are not going to
+- [00:51:47,140 - 00:51:48,140] do any integrals in this class.
+- [00:51:48,140 - 00:51:50,140] We're just going to say,
+- [00:51:50,140 - 00:51:53,140] dimensional analysis tells us the answer to this integral.
+- [00:51:53,140 - 00:51:55,140] What does the integral depend on?
+- [00:51:55,140 - 00:51:58,140] Just on the lower end of integration here.
+- [00:51:58,140 - 00:51:59,140] That's all.
+- [00:51:59,140 - 00:52:01,140] That we don't take into
+- [00:52:01,140 - 00:52:03,140] account distances smaller than the cutoff.
+- [00:52:04,140 - 00:52:06,140] That's all it means.
+- [00:52:06,140 - 00:52:08,140] There's a cutoff in the field theory.
+- [00:52:08,140 - 00:52:14,140] And we cut off the distance scales at distance delta.
+- [00:52:14,140 - 00:52:17,140] The answer to this integral can only depend on delta.
+- [00:52:17,140 - 00:52:19,140] There's nothing else for it to depend on.
+- [00:52:19,140 - 00:52:21,140] So, what's the answer got to be?
+- [00:52:21,140 - 00:52:25,140] One over delta squared.
+- [00:52:25,140 - 00:52:27,140] That's all it can be.
+- [00:52:34,140 - 00:52:36,140] So, notice what we get from here.
+- [00:52:36,140 - 00:52:38,140] We get something that looks very much...
+- [00:52:38,140 - 00:52:40,140] Of course, there's a number here.
+- [00:52:40,140 - 00:52:42,140] You have to sit down and calculate more carefully.
+- [00:52:42,140 - 00:52:44,140] There's pi's and other things.
+- [00:52:44,140 - 00:52:46,140] So, there's some numerical factor here.
+- [00:52:46,140 - 00:52:49,140] But the numerical factor is not terribly interesting to us.
+- [00:52:49,140 - 00:52:51,140] I mean, if we were trying to
+- [00:52:51,140 - 00:52:53,140] do a high precision experiment, it would be.
+- [00:52:53,140 - 00:52:55,140] But what do we find for this here?
+- [00:52:55,140 - 00:52:57,640] This here is the same as
+- [00:52:57,640 - 00:53:00,140] this, except with a lambda squared.
+- [00:53:00,140 - 00:53:03,140] Lambda squared over delta squared.
+- [00:53:03,140 - 00:53:07,640] There are many, many other diagrams which
+- [00:53:07,640 - 00:53:12,140] will also contribute one over delta squared
+- [00:53:12,140 - 00:53:14,140] with higher powers of lambda.
+- [00:53:14,140 - 00:53:16,140] For example, here's another diagram.
+- [00:53:25,140 - 00:53:27,140] That one will also give...
+- [00:53:27,140 - 00:53:28,140] But how many powers of lambda?
+- [00:53:28,140 - 00:53:29,140] One, two, three, four.
+- [00:53:29,140 - 00:53:30,640] This will give a lambda
+- [00:53:30,640 - 00:53:32,140] to the fourth of some kind.
+- [00:53:32,140 - 00:53:33,140] There's other powers.
+- [00:53:33,140 - 00:53:34,140] There's other powers.
+- [00:53:34,140 - 00:53:36,140] There's lambda cubes also.
+- [00:53:36,140 - 00:53:38,140] So, the answer is that
+- [00:53:38,140 - 00:53:40,140] there's an infinite series of terms,
+- [00:53:40,140 - 00:53:42,140] each with one over delta squared.
+- [00:53:42,140 - 00:53:44,140] Each with one over delta squared,
+- [00:53:44,140 - 00:53:47,140] plus a few other things.
+- [00:53:47,140 - 00:53:52,140] For example, we haven't used this term here.
+- [00:53:52,140 - 00:53:53,640] Let's see what we would get
+- [00:53:53,640 - 00:53:55,140] from this term, from the pi cubed.
+- [00:53:55,140 - 00:53:57,140] How do we make a diagram...
+- [00:54:01,140 - 00:54:03,140] Okay, this is interesting.
+- [00:54:03,140 - 00:54:06,140] A little more subtle dimensional analysis.
+- [00:54:06,140 - 00:54:08,140] What do we get if we
+- [00:54:08,140 - 00:54:10,140] have an integral that looks like this?
+- [00:54:10,140 - 00:54:14,640] An integral from delta to infinity of something
+- [00:54:14,640 - 00:54:19,140] which goes at small distances like one over delta.
+- [00:54:19,140 - 00:54:21,140] Let's say a one-dimensional integral now.
+- [00:54:21,140 - 00:54:24,140] One-dimensional integral would be delta.
+- [00:54:24,140 - 00:54:28,140] What does that look like?
+- [00:54:28,140 - 00:54:30,140] That's a logarithm, right?
+- [00:54:30,140 - 00:54:32,140] That's a logarithmic integral.
+- [00:54:32,140 - 00:54:35,140] Now, on dimensional grounds, you would look at
+- [00:54:35,140 - 00:54:38,140] this and say this has no dimensions at all.
+- [00:54:38,140 - 00:54:41,140] So, you might think that it's a constant.
+- [00:54:41,140 - 00:54:43,140] But it's not a constant
+- [00:54:43,140 - 00:54:45,140] because it's actually a divergent integral.
+- [00:54:45,140 - 00:54:46,640] Whenever you find a divergent integral, you
+- [00:54:46,640 - 00:54:48,140] have to be a little more careful.
+- [00:54:48,140 - 00:54:52,140] An integral like this you'll just recognize as a logarithm,
+- [00:54:52,140 - 00:54:54,140] and the answer will be logarithm of delta.
+- [00:54:57,140 - 00:54:59,140] So, whenever you get an integral which
+- [00:54:59,140 - 00:55:01,140] has as many powers in the numerator
+- [00:55:01,140 - 00:55:05,140] as it has in the denominator, it's always a logarithm.
+- [00:55:05,140 - 00:55:07,140] That's a rule. We're not going to use
+- [00:55:07,140 - 00:55:09,140] it very much, but it's an interesting rule.
+- [00:55:09,140 - 00:55:11,640] In dimensional analysis, an integral with as many
+- [00:55:11,640 - 00:55:14,140] powers in the numerator as in the denominator
+- [00:55:14,140 - 00:55:17,140] always becomes a logarithm.
+- [00:55:17,140 - 00:55:19,140] If there's more powers in the
+- [00:55:19,140 - 00:55:21,140] denominator, then you just use dimensional analysis.
+- [00:55:21,140 - 00:55:23,140] You would say that this one...
+- [00:55:23,140 - 00:55:26,140] Sorry, this would just be one over delta.
+- [00:55:26,140 - 00:55:30,140] Okay, so let's do this diagram here.
+- [00:55:31,140 - 00:55:37,140] This doesn't have a line running down the middle,
+- [00:55:37,140 - 00:55:41,140] and it's composed out of two cubic vertices.
+- [00:55:41,140 - 00:55:43,640] Two cubic vertices with three
+- [00:55:43,640 - 00:55:46,140] particles coming into each vertex there.
+- [00:55:46,140 - 00:55:48,140] So what is this one going to be?
+- [00:55:48,140 - 00:55:51,140] Alright, there are two propagators.
+- [00:55:51,140 - 00:55:55,140] That's a one over delta to the fourth.
+- [00:55:55,140 - 00:55:58,140] Each propagator is a one over delta squared.
+- [00:55:58,140 - 00:56:00,140] We have to integrate it.
+- [00:56:00,140 - 00:56:02,140] And what about the vertices?
+- [00:56:02,140 - 00:56:04,140] Each vertex is a g.
+- [00:56:04,140 - 00:56:06,140] So there's g squared.
+- [00:56:09,140 - 00:56:11,140] d fourth delta.
+- [00:56:11,140 - 00:56:13,640] Again, we have to integrate over
+- [00:56:13,640 - 00:56:16,140] all the positions of this point,
+- [00:56:16,140 - 00:56:18,140] keeping this point fixed.
+- [00:56:18,140 - 00:56:20,140] The particle is absorbed here,
+- [00:56:20,140 - 00:56:22,140] emitted from some nearby point,
+- [00:56:22,140 - 00:56:23,640] but we have to take
+- [00:56:23,640 - 00:56:25,140] into account that that nearby point
+- [00:56:25,140 - 00:56:29,140] could be smeared over some range of locations.
+- [00:56:29,140 - 00:56:30,140] How about this?
+- [00:56:30,140 - 00:56:33,140] What do we get for this?
+- [00:56:33,140 - 00:56:35,640] Here we have as many powers
+- [00:56:35,640 - 00:56:38,140] in the numerator as in the denominator.
+- [00:56:38,140 - 00:56:38,498] Alright?
+- [00:56:38,498 - 00:56:40,066] log
+- [00:56:40,066 - 00:56:43,566] And again, we integrate from delta to whatever.
+- [00:56:43,566 - 00:56:48,246] This one gives us g squared logarithm of delta.
+- [00:56:48,246 - 00:56:50,826] So we see there are times that
+- [00:56:50,826 - 00:56:53,406] we don't get 1 over delta squared.
+- [00:56:53,406 - 00:56:57,306] Sometimes we get logarithm, other possibilities also.
+- [00:56:57,306 - 00:56:58,726] But the single biggest thing,
+- [00:56:58,726 - 00:57:00,146] what do I mean by big?
+- [00:57:00,146 - 00:57:02,536] When delta is small, when the
+- [00:57:02,536 - 00:57:04,926] cutoff distance is small, which is bigger?
+- [00:57:04,926 - 00:57:07,926] 1 over delta squared or log delta?
+- [00:57:10,066 - 00:57:12,406] Logarithm is a very wimpy function.
+- [00:57:12,406 - 00:57:14,706] It doesn't vary very much.
+- [00:57:14,706 - 00:57:19,066] Logarithm is much weaker than any power.
+- [00:57:19,066 - 00:57:22,526] 1 over delta squared, when delta is small,
+- [00:57:22,526 - 00:57:25,986] is very dominant over the logarithm of delta here.
+- [00:57:25,986 - 00:57:27,906] Nevertheless, there are these logarithmic corrections
+- [00:57:27,906 - 00:57:29,826] to the mass, but the dominant
+- [00:57:29,826 - 00:57:32,705] things when the cutoff gets small, if you
+- [00:57:32,705 - 00:57:35,585] have a very small distance cutoff, is these powers.
+- [00:57:35,585 - 00:57:39,186] These inverse powers of 1 over delta squared.
+- [00:57:39,186 - 00:57:39,686] All right.
+- [00:57:39,686 - 00:57:40,066] So this is called the log of delta squared.
+- [00:57:40,066 - 00:57:42,066] This is called mass renormalization.
+- [00:57:42,066 - 00:57:42,566] Yeah?
+- [00:57:42,566 - 00:57:44,066] Just a quick question.
+- [00:57:44,066 - 00:57:46,066] Log to any base?
+- [00:57:46,066 - 00:57:53,566] Yeah, well, yeah, that is a good question, of course.
+- [00:57:53,566 - 00:57:55,196] And that's because I didn't tell
+- [00:57:55,196 - 00:57:56,826] you exactly how to calculate it.
+- [00:57:56,826 - 00:57:59,826] Let's just say log to the base e.
+- [00:57:59,826 - 00:58:02,826] But the point is, if you change the base of the
+- [00:58:02,826 - 00:58:05,826] logarithm, what happens to a log if you change the base?
+- [00:58:05,826 - 00:58:07,756] Not an additive constant,
+- [00:58:07,756 - 00:58:09,686] a numerical multiplicative constant.
+- [00:58:09,686 - 00:58:12,686] But I didn't tell you what the multiplicative factors
+- [00:58:12,686 - 00:58:15,686] here, the pi's and all that stuff are anyway.
+- [00:58:15,686 - 00:58:18,186] So that would be absorbed
+- [00:58:18,186 - 00:58:20,686] into the multiplicative factor here.
+- [00:58:20,686 - 00:58:23,686] So in a typical calculation, there will be
+- [00:58:23,686 - 00:58:26,686] some pi's and e's and other stuff here.
+- [00:58:26,686 - 00:58:29,186] And by changing the base of the
+- [00:58:29,186 - 00:58:31,686] logarithm, you'll just change these coefficients here.
+- [00:58:31,686 - 00:58:32,686] So it doesn't...
+- [00:58:32,686 - 00:58:34,686] Or units of length or something like that.
+- [00:58:34,686 - 00:58:36,686] No, these are dimensionless.
+- [00:58:36,686 - 00:58:37,686] These are completely dimensionless.
+- [00:58:37,686 - 00:58:38,686] So...
+- [00:58:38,686 - 00:58:39,686] Yeah.
+- [00:58:39,686 - 00:58:41,686] Just change the numerical coefficient.
+- [00:58:41,686 - 00:58:45,686] What about units of mass?
+- [00:58:45,686 - 00:58:46,686] Oh, in this case, you're right.
+- [00:58:46,686 - 00:58:47,686] Yeah.
+- [00:58:47,686 - 00:58:48,686] For this case, yes.
+- [00:58:48,686 - 00:58:49,686] Yeah.
+- [00:58:49,686 - 00:58:50,686] Right.
+- [00:58:50,686 - 00:58:56,686] The point is, yeah, the g's have units of mass.
+- [00:58:56,686 - 00:58:58,686] But what are they supposed to be giving?
+- [00:58:58,686 - 00:59:00,686] They're supposed to be giving a correction
+- [00:59:00,686 - 00:59:02,686] to something which is a mass squared.
+- [00:59:02,686 - 00:59:04,686] So the units of this g squared here is
+- [00:59:04,686 - 00:59:06,686] the same as the units of this mass squared.
+- [00:59:06,686 - 00:59:08,686] That means the rest of it is dimensionless.
+- [00:59:08,686 - 00:59:12,186] Well, all I was saying was that you
+- [00:59:12,186 - 00:59:15,686] could absorb which logarithm it is into your length...
+- [00:59:15,686 - 00:59:16,686] You can.
+- [00:59:16,686 - 00:59:17,686] You can.
+- [00:59:17,686 - 00:59:20,186] But you can also just notice that
+- [00:59:20,186 - 00:59:22,686] this and this have the same units.
+- [00:59:22,686 - 00:59:25,436] And say, look, there's a numerical number here
+- [00:59:25,436 - 00:59:28,186] that has to be computed by somebody with
+- [00:59:28,186 - 00:59:30,686] a little more power than we're exhibiting here.
+- [00:59:30,686 - 00:59:31,686] But you're right.
+- [00:59:31,686 - 00:59:34,686] It can be absorbed into units.
+- [00:59:34,686 - 00:59:35,686] Okay.
+- [00:59:35,686 - 00:59:36,686] That's it.
+- [00:59:36,686 - 00:59:37,686] Thank you.
+- [00:59:37,686 - 00:59:40,686] That's the idea of mass renormalization.
+- [00:59:40,686 - 00:59:41,686] Yeah.
+- [00:59:41,686 - 00:59:42,686] This gives an amplitude.
+- [00:59:42,686 - 00:59:45,686] And amplitude squared is a probability of this happening?
+- [00:59:45,686 - 00:59:46,686] It is.
+- [00:59:46,686 - 00:59:47,686] It is.
+- [00:59:47,686 - 00:59:51,186] But more important, this kind of
+- [00:59:51,186 - 00:59:54,686] amplitude represents the mass of a particle.
+- [00:59:54,686 - 00:59:57,686] It's more important for our purposes now that
+- [00:59:57,686 - 01:00:00,686] a diagram in which a particle is absorbed
+- [01:00:00,686 - 01:00:03,686] in a location and emitted very nearby is
+- [01:00:03,686 - 01:00:06,686] an effective description of the mass of the particle.
+- [01:00:06,686 - 01:00:10,186] Now, of course, it's not obvious how this translates
+- [01:00:10,186 - 01:00:13,686] into the inertia of a particle and so forth.
+- [01:00:13,686 - 01:00:15,186] For our purposes now, it's
+- [01:00:15,186 - 01:00:16,686] just a parameter in a Lagrangian.
+- [01:00:16,686 - 01:00:19,686] But we're seeing that the renormalized parameter,
+- [01:00:19,686 - 01:00:22,686] the parameter after you get rid of distances
+- [01:00:22,686 - 01:00:26,186] smaller than a certain length scale,
+- [01:00:26,186 - 01:00:29,686] the corrections to it, here they are.
+- [01:00:29,686 - 01:00:33,686] Well, it's not just the mass that gets renormalized.
+- [01:00:33,686 - 01:00:34,686] Let's do another example.
+- [01:00:34,686 - 01:00:35,686] Well, even if you just...
+- [01:00:35,686 - 01:00:38,186] Well, even if you just have the mass renormalization,
+- [01:00:38,186 - 01:00:40,686] you still have an infinite number of terms, don't you?
+- [01:00:40,686 - 01:00:41,686] An infinite number of what?
+- [01:00:41,686 - 01:00:43,686] A lot of those diagrams.
+- [01:00:43,686 - 01:00:44,686] Yeah.
+- [01:00:44,686 - 01:00:45,686] So, I mean, you can keep going.
+- [01:00:45,686 - 01:00:46,686] Oh, yes.
+- [01:00:46,686 - 01:00:47,686] Yeah, let's keep going.
+- [01:00:47,686 - 01:00:48,686] Right?
+- [01:00:48,686 - 01:00:49,686] So it's already infinite.
+- [01:00:49,686 - 01:00:54,686] Now, if lambda is small, it may be that
+- [01:00:54,686 - 01:00:59,686] the series is a series of smaller and smaller
+- [01:00:59,686 - 01:01:03,686] terms, and it might converge.
+- [01:01:03,686 - 01:01:05,186] But still, there are an
+- [01:01:05,186 - 01:01:06,686] infinite number of terms, and every...
+- [01:01:06,686 - 01:01:07,686] Yeah.
+- [01:01:07,686 - 01:01:08,686] Right.
+- [01:01:08,686 - 01:01:11,686] Depends on, yeah, what happens to lambda, right?
+- [01:01:11,686 - 01:01:12,686] Yeah.
+- [01:01:12,686 - 01:01:13,686] Right.
+- [01:01:13,686 - 01:01:19,686] Let's talk about the renormalization of lambda.
+- [01:01:19,686 - 01:01:22,186] Lambda is also something that gets
+- [01:01:22,186 - 01:01:24,686] renormalized, so let's talk about that.
+- [01:01:24,686 - 01:01:27,686] It's not just the mass that gets renormalized.
+- [01:01:27,686 - 01:01:32,686] Every term in the Lagrangian can also get renormalized.
+- [01:01:32,686 - 01:01:34,686] Let's see how that works.
+- [01:01:34,686 - 01:01:39,686] Delta has the units of length, right?
+- [01:01:39,686 - 01:01:42,686] Big delta has units of length, yeah.
+- [01:01:42,686 - 01:01:43,686] So small delta.
+- [01:01:43,686 - 01:01:47,186] So when you do log of it, don't you
+- [01:01:47,186 - 01:01:50,686] get really weird things, because log has all sorts of
+- [01:01:50,686 - 01:01:51,686] powers?
+- [01:01:51,686 - 01:01:53,686] Have all sorts of what?
+- [01:01:53,686 - 01:01:56,686] All sorts of powers, when you do the expansion log.
+- [01:01:56,686 - 01:01:59,186] A log is counted as dimensionless,
+- [01:01:59,186 - 01:02:01,686] because really a log always means...
+- [01:02:01,686 - 01:02:07,686] Log of delta over some other scale in the problem.
+- [01:02:07,686 - 01:02:09,686] And I didn't want to get into that.
+- [01:02:09,686 - 01:02:11,686] The logs are confusing.
+- [01:02:11,686 - 01:02:14,686] The real things that I'm interested in are these things.
+- [01:02:14,686 - 01:02:16,686] And these are less confusing.
+- [01:02:16,686 - 01:02:21,686] These are dimensionally just what you'd expect.
+- [01:02:21,686 - 01:02:28,686] I'm sorry I told you about logs.
+- [01:02:28,686 - 01:02:29,686] Often what happens is the...
+- [01:02:29,686 - 01:02:30,686] Is the logarithm is...
+- [01:02:30,686 - 01:02:35,186] The logarithm is really log of delta times
+- [01:02:35,186 - 01:02:39,686] some energy scale in the problem that you're
+- [01:02:39,686 - 01:02:40,686] interested in.
+- [01:02:40,686 - 01:02:43,686] But let's get rid of logs.
+- [01:02:43,686 - 01:02:44,686] Logs are...
+- [01:02:44,686 - 01:02:48,686] Actually, you meant lowercase delta in that case, right?
+- [01:02:48,686 - 01:02:49,686] Lowercase delta what?
+- [01:02:49,686 - 01:02:51,686] Oh, you were using...
+- [01:02:51,686 - 01:02:54,686] Have I mixed up lowercase delta and uppercase delta?
+- [01:02:54,686 - 01:02:58,686] Yeah, capital delta was the inside the integral...
+- [01:02:58,686 - 01:02:59,686] Oh, yeah, yeah.
+- [01:02:59,686 - 01:03:01,686] And the answer should involve small delta.
+- [01:03:01,686 - 01:03:02,686] Right, sorry.
+- [01:03:02,686 - 01:03:03,686] Good.
+- [01:03:03,686 - 01:03:05,686] The answer always involves small delta.
+- [01:03:05,686 - 01:03:07,686] Big delta is an integration variable.
+- [01:03:07,686 - 01:03:09,686] All right, let's take another example.
+- [01:03:09,686 - 01:03:12,186] From an operational point of view,
+- [01:03:12,186 - 01:03:14,686] meaning an experimental point of view,
+- [01:03:14,686 - 01:03:17,186] lambda phi to the fourth is
+- [01:03:17,186 - 01:03:19,686] nothing but the amplitude for a particle,
+- [01:03:19,686 - 01:03:22,686] for two particles to come in and
+- [01:03:22,686 - 01:03:25,686] to go out again as two particles.
+- [01:03:25,686 - 01:03:28,686] And from an operational experimental point of view,
+- [01:03:28,686 - 01:03:31,186] if all of this takes place again on
+- [01:03:31,186 - 01:03:33,686] a scale which is too small to see,
+- [01:03:33,686 - 01:03:36,186] you lump it all up into an
+- [01:03:36,186 - 01:03:38,686] effective coefficient of phi to the fourth.
+- [01:03:38,686 - 01:03:41,686] Two particles in, two particles out, phi to the fourth.
+- [01:03:41,686 - 01:03:47,686] All right, so, for example, you could
+- [01:03:47,686 - 01:03:53,686] have Feynman diagrams which look like this.
+- [01:03:53,686 - 01:03:55,686] This will also contribute a
+- [01:03:55,686 - 01:03:57,686] renormalization to phi to the fourth.
+- [01:03:57,686 - 01:03:58,686] I'm not going to work it out.
+- [01:03:58,686 - 01:03:59,686] The reason I'm not going to work it out
+- [01:03:59,686 - 01:04:00,686] is because I know it will give a log,
+- [01:04:00,686 - 01:04:02,186] and I don't want to
+- [01:04:02,186 - 01:04:03,686] tell you any more about logs.
+- [01:04:03,686 - 01:04:07,686] It will give you a log.
+- [01:04:07,686 - 01:04:10,686] But each one of these terms here
+- [01:04:10,686 - 01:04:13,686] is something which in itself can be renormalized.
+- [01:04:13,686 - 01:04:16,186] So what's going on is the
+- [01:04:16,186 - 01:04:18,686] effect of very small distance physics
+- [01:04:18,686 - 01:04:20,186] when you sum it all up
+- [01:04:20,186 - 01:04:21,686] and take it all into account
+- [01:04:21,686 - 01:04:24,686] the same way we took the electrons into account
+- [01:04:24,686 - 01:04:26,686] when we studied...
+- [01:04:27,686 - 01:04:30,686] molecules, for example.
+- [01:04:30,686 - 01:04:32,686] We take them into account, we solve
+- [01:04:32,686 - 01:04:34,686] for them, we get rid of them,
+- [01:04:34,686 - 01:04:36,686] we do whatever has to be done,
+- [01:04:36,686 - 01:04:39,686] and we find some effective description which
+- [01:04:39,686 - 01:04:42,686] doesn't involve those microscopic degrees of freedom.
+- [01:04:42,686 - 01:04:45,686] The result is renormalization of everything.
+- [01:04:45,686 - 01:04:48,686] Everything gets changed, everything gets shifted.
+- [01:04:52,686 - 01:04:55,686] So the parameters of the theory that you measure
+- [01:04:55,686 - 01:04:57,686] are not the parameters of the
+- [01:04:57,686 - 01:04:59,686] theory that you input into the theory.
+- [01:04:59,686 - 01:05:01,686] That's the main lesson.
+- [01:05:01,686 - 01:05:03,686] The parameters of the theory you measure
+- [01:05:03,686 - 01:05:06,186] are those which take into account all the short
+- [01:05:06,186 - 01:05:08,686] distance physics on scales smaller than you can see.
+- [01:05:13,686 - 01:05:15,686] Would you repeat that again?
+- [01:05:15,686 - 01:05:18,186] What you measure includes the scales smaller than
+- [01:05:18,186 - 01:05:20,686] what you see or not what you see?
+- [01:05:20,686 - 01:05:23,686] Yeah, what you measure has taken into account
+- [01:05:23,686 - 01:05:24,686] by summing all the finite numbers,
+- [01:05:24,686 - 01:05:27,186] by summing all the Feynman diagrams involving
+- [01:05:27,186 - 01:05:29,686] length scales smaller than what you can see,
+- [01:05:29,686 - 01:05:31,686] it has an effective output
+- [01:05:31,686 - 01:05:34,686] which is the sum of all that stuff
+- [01:05:34,686 - 01:05:36,686] which you lump together.
+- [01:05:36,686 - 01:05:38,686] You lump it together into
+- [01:05:38,686 - 01:05:40,686] a single thing that you call
+- [01:05:40,686 - 01:05:43,686] the mass squared over two.
+- [01:05:44,686 - 01:05:47,686] So the physical mass squared, the thing you measure
+- [01:05:47,686 - 01:05:49,186] when you do an experiment
+- [01:05:49,186 - 01:05:50,686] that, let's say, relatively low energy,
+- [01:05:50,686 - 01:05:53,686] that doesn't involve really, really small distances,
+- [01:05:53,686 - 01:05:55,686] is this renormalized mass here, which
+- [01:05:55,686 - 01:05:57,686] is the sum of all that junk.
+- [01:06:00,686 - 01:06:03,686] So is the conclusion that somehow
+- [01:06:03,686 - 01:06:06,686] or another the M0 term must be,
+- [01:06:06,686 - 01:06:09,686] cancel all of those other terms?
+- [01:06:09,686 - 01:06:11,686] Exactly.
+- [01:06:13,686 - 01:06:17,686] Yeah, we're going to come to that shortly.
+- [01:06:17,686 - 01:06:22,686] But before we do, let's talk
+- [01:06:22,686 - 01:06:27,686] about the renormalization of some other masses.
+- [01:06:27,686 - 01:06:30,186] This is the renormalization of
+- [01:06:30,186 - 01:06:32,686] the mass of a scalar particle.
+- [01:06:32,686 - 01:06:34,686] You might think it works essentially
+- [01:06:34,686 - 01:06:36,686] the same way for a fermion,
+- [01:06:36,686 - 01:06:37,686] and it doesn't.
+- [01:06:37,686 - 01:06:41,686] Fermions are better behaved.
+- [01:06:41,686 - 01:06:44,686] I would call this bad behavior.
+- [01:06:44,686 - 01:06:46,686] Bad behavior in the following sense.
+- [01:06:46,686 - 01:06:49,686] You wanted to get out an answer.
+- [01:06:49,686 - 01:06:53,686] Imagine in your head that the cutoff distance scale
+- [01:06:53,686 - 01:06:55,686] is something very, very small.
+- [01:06:55,686 - 01:06:57,686] Imagine in your head that the cutoff
+- [01:06:57,686 - 01:06:59,686] distance scale might be the Planck scale.
+- [01:06:59,686 - 01:07:05,686] We might be trying to account for all physics
+- [01:07:05,686 - 01:07:08,686] on scales between the experimental scale all
+- [01:07:08,686 - 01:07:11,686] the ways down to the Planck scale.
+- [01:07:11,686 - 01:07:13,186] All the ways down to
+- [01:07:13,186 - 01:07:14,686] that very, very small Planck scale.
+- [01:07:14,686 - 01:07:16,686] Then what we would put in for
+- [01:07:16,686 - 01:07:18,686] delta here would be the Planck length.
+- [01:07:18,686 - 01:07:20,686] The Planck length is terribly small.
+- [01:07:20,686 - 01:07:24,186] It's 19 orders of magnitude smaller
+- [01:07:24,186 - 01:07:27,686] than the size of a proton.
+- [01:07:27,686 - 01:07:31,186] 17 orders of magnitude smaller than
+- [01:07:31,186 - 01:07:34,686] the most current up-to-date accelerator experiments.
+- [01:07:34,686 - 01:07:37,686] 17, maybe 16 orders of magnitude.
+- [01:07:37,686 - 01:07:40,686] And so delta squared is a very,
+- [01:07:40,686 - 01:07:43,686] very small number in ordinary particle physics units.
+- [01:07:43,686 - 01:07:46,686] For example, if we use GeV,
+- [01:07:46,686 - 01:07:50,186] then the Planck distance would be
+- [01:07:50,186 - 01:07:53,686] 10 to the minus 19th inverse GeVs.
+- [01:07:53,686 - 01:07:55,686] And 1 over delta squared would be what?
+- [01:07:55,686 - 01:07:59,686] 10 to the 38th in...
+- [01:07:59,686 - 01:08:01,686] 10 to the 38th, but what kind
+- [01:08:01,686 - 01:08:03,686] of answer do we want to get?
+- [01:08:03,686 - 01:08:05,686] For example, for the Higgs boson.
+- [01:08:05,686 - 01:08:08,686] The Higgs boson is an example of a scalar particle.
+- [01:08:08,686 - 01:08:10,686] What kind of answer do we want to get?
+- [01:08:10,686 - 01:08:14,686] We want to get something like about 200 GeV.
+- [01:08:15,686 - 01:08:16,685] But what are we getting?
+- [01:08:16,685 - 01:08:18,685] We're getting 10 to the 38th.
+- [01:08:18,685 - 01:08:19,685] This is terrible.
+- [01:08:19,685 - 01:08:21,685] We don't want to get 10 to the 38th.
+- [01:08:21,685 - 01:08:23,685] The only way to avoid it, incidentally,
+- [01:08:23,685 - 01:08:25,685] the signs of all of these things,
+- [01:08:25,685 - 01:08:26,685] some of them may be plus,
+- [01:08:26,685 - 01:08:27,685] some of them may be minus.
+- [01:08:27,685 - 01:08:29,685] I didn't track the signs of anything.
+- [01:08:29,685 - 01:08:33,685] And m naught squared itself can be negative or positive.
+- [01:08:33,685 - 01:08:36,185] We want to get out a certain
+- [01:08:36,185 - 01:08:38,685] answer, which is of order 200 GeV,
+- [01:08:38,685 - 01:08:39,685] but we're getting contributions.
+- [01:08:39,685 - 01:08:43,685] We're getting contributions which are
+- [01:08:43,685 - 01:08:47,685] 17 orders of magnitude bigger.
+- [01:08:47,685 - 01:08:52,685] The only way that this can make sense is
+- [01:08:52,685 - 01:08:57,685] if all of this cancels precisely to 17 digits.
+- [01:08:57,685 - 01:09:00,185] To 17 digits, this has to
+- [01:09:00,185 - 01:09:02,685] cancel and leave over something in the...
+- [01:09:02,685 - 01:09:04,685] Sorry, in the 30...
+- [01:09:04,685 - 01:09:07,685] Sorry, it has to cancel not the 17.
+- [01:09:08,685 - 01:09:09,685] 34 digits.
+- [01:09:09,685 - 01:09:13,185] And leave over something, I think it's in
+- [01:09:13,185 - 01:09:16,685] the 35th, or maybe it's in the 34th digit.
+- [01:09:16,685 - 01:09:18,685] This is called fine-tuning.
+- [01:09:20,685 - 01:09:24,685] This is the fine-tuning problem of the Higgs boson.
+- [01:09:24,685 - 01:09:27,185] Let's just recall what we know about
+- [01:09:27,185 - 01:09:29,685] the mass term of the Higgs boson,
+- [01:09:29,685 - 01:09:32,685] and where we know it from.
+- [01:09:32,685 - 01:09:35,685] The Higgs boson has a potential, or the
+- [01:09:35,685 - 01:09:38,685] Higgs field has a potential, which looks like that.
+- [01:09:38,685 - 01:09:41,685] Near the origin, it looks like phi
+- [01:09:41,685 - 01:09:44,685] squared all right, but with a negative coefficient.
+- [01:09:44,685 - 01:09:47,685] I never told you that this m-naught squared was positive.
+- [01:09:47,685 - 01:09:49,685] It can be negative or positive.
+- [01:09:49,685 - 01:09:50,685] Yeah?
+- [01:09:50,685 - 01:09:53,685] Is lambda less or greater than 1?
+- [01:09:53,685 - 01:09:56,186] Lambda is assumed to be a number
+- [01:09:56,186 - 01:09:58,686] which is not much bigger than 1.
+- [01:09:58,686 - 01:10:01,686] Now, why do we assume that?
+- [01:10:01,686 - 01:10:04,686] We assume that, first of all, because this would all
+- [01:10:04,686 - 01:10:07,686] be nonsense if the terms, I mean, you know, completely intractable,
+- [01:10:07,686 - 01:10:11,686] if the numbers got bigger and bigger and bigger.
+- [01:10:11,686 - 01:10:15,186] But even more than that, we know that this kind
+- [01:10:15,186 - 01:10:18,686] of quantum field theory becomes mathematically inconsistent when lambda gets big.
+- [01:10:18,686 - 01:10:21,686] So lambda of order 1 is as big as it
+- [01:10:21,686 - 01:10:24,686] could be, and it really should be smaller than that.
+- [01:10:24,686 - 01:10:29,686] So assume that lambda is modestly small.
+- [01:10:29,686 - 01:10:34,686] Now, let's, modestly small but not humongously small.
+- [01:10:34,686 - 01:10:35,686] There's no reason for it to be very small.
+- [01:10:35,686 - 01:10:36,686] And in fact, experimentally, we know that.
+- [01:10:37,686 - 01:10:39,686] We know that it can't be too small.
+- [01:10:39,686 - 01:10:41,686] We know that it can't be too small.
+- [01:10:41,686 - 01:10:43,686] We know it's a number of order 1%.
+- [01:10:43,686 - 01:10:46,686] Even if it's less than 1, there's still a lot
+- [01:10:46,686 - 01:10:49,686] of terms that are in there just because of the deltas.
+- [01:10:49,686 - 01:10:52,186] Well, if lambda itself was 10 to the
+- [01:10:52,186 - 01:10:54,686] minus 38, we might not worry about it.
+- [01:10:54,686 - 01:10:57,686] No, no, if it's, you know, 0.9, then, you know, it falls
+- [01:10:57,686 - 01:11:00,686] off, but it still has a number of terms that you have to...
+- [01:11:00,686 - 01:11:03,686] Oh, there's an infinite number of terms, and all, you
+- [01:11:03,686 - 01:11:06,686] know, you have to go a long way down this chain
+- [01:11:06,686 - 01:11:09,686] before lambda to the high power
+- [01:11:09,686 - 01:11:12,686] over delta is a relatively small number.
+- [01:11:12,686 - 01:11:14,686] So it means that a whole
+- [01:11:14,686 - 01:11:16,686] bunch of them have to conspire.
+- [01:11:16,686 - 01:11:20,186] You know, I'm not sure, maybe 50 or something
+- [01:11:20,186 - 01:11:23,686] have to conspire to give this ridiculously small answer.
+- [01:11:23,686 - 01:11:25,686] Small...
+- [01:11:25,686 - 01:11:28,686] Lambda?
+- [01:11:28,686 - 01:11:31,686] Lambda is typically a number of order 1%.
+- [01:11:31,686 - 01:11:33,686] Yeah, right.
+- [01:11:36,686 - 01:11:40,686] Let me just remind you what we know about lambda.
+- [01:11:40,686 - 01:11:43,686] We speculated, or I will tell you that
+- [01:11:43,686 - 01:11:46,686] there's good reasons, we won't go into them,
+- [01:11:46,686 - 01:11:50,186] why the potential for the Higgs boson, first of
+- [01:11:50,186 - 01:11:53,686] all, why it has to have this Mexican hat shape,
+- [01:11:53,686 - 01:11:57,186] that was in order to facilitate the problem
+- [01:11:57,186 - 01:12:00,686] of getting masses, spontaneous symmetry breaking, and so forth.
+- [01:12:00,686 - 01:12:05,686] But the potential, typical potential, would be of the form
+- [01:12:05,686 - 01:12:14,686] minus, let's call it mu squared, over 2 phi squared.
+- [01:12:14,686 - 01:12:17,186] I've called it, instead of calling it m naught squared, I've
+- [01:12:17,186 - 01:12:19,686] called it minus mu squared because it's got to be negative.
+- [01:12:19,686 - 01:12:21,686] We know that it has to
+- [01:12:21,686 - 01:12:23,686] be negative to get spontaneous symmetry breaking.
+- [01:12:23,686 - 01:12:26,686] Plus, again, lambda phi to the fourth.
+- [01:12:26,686 - 01:12:28,686] And there might be more terms there, but
+- [01:12:28,686 - 01:12:30,686] the other terms are believed not to be important.
+- [01:12:30,686 - 01:12:31,686] All right.
+- [01:12:31,686 - 01:12:33,686] What if we...
+- [01:12:33,686 - 01:12:35,686] Where does the minimum occur?
+- [01:12:35,686 - 01:12:38,186] The minimum occurs, we can calculate the
+- [01:12:38,186 - 01:12:40,686] minimum by differentiating with respect to phi,
+- [01:12:40,686 - 01:12:43,686] and setting it, setting the derivative equal to zero.
+- [01:12:43,686 - 01:12:48,186] And what you'll find is that at
+- [01:12:48,186 - 01:12:52,686] the minimum, at the minimum, phi min squared,
+- [01:12:52,686 - 01:12:55,186] which we also called f squared,
+- [01:12:55,186 - 01:12:57,686] remember we call this distance here f,
+- [01:12:57,686 - 01:13:00,686] we also call that f squared,
+- [01:13:00,686 - 01:13:03,686] that was equal
+- [01:13:03,686 - 01:13:07,686] to mu squared over lambda.
+- [01:13:07,686 - 01:13:10,186] If lambda is a number of
+- [01:13:10,186 - 01:13:12,686] order of magnitude one and so forth,
+- [01:13:12,686 - 01:13:14,686] and f, do you remember about f?
+- [01:13:14,686 - 01:13:16,686] How big did f have to be?
+- [01:13:16,686 - 01:13:19,686] For experimental reasons.
+- [01:13:19,686 - 01:13:21,686] Remember all the masses of
+- [01:13:21,686 - 01:13:23,686] the z and the w boson
+- [01:13:23,686 - 01:13:25,686] were all controlled by f.
+- [01:13:25,686 - 01:13:28,686] The known masses of the z boson
+- [01:13:28,686 - 01:13:31,686] told us that f was about 200 GeV.
+- [01:13:31,686 - 01:13:32,686] All right.
+- [01:13:33,686 - 01:13:36,186] That tells us that unless lambda
+- [01:13:36,186 - 01:13:38,686] is some absurdly different number than one,
+- [01:13:38,686 - 01:13:39,686] which it shouldn't be,
+- [01:13:39,686 - 01:13:42,185] that mu is also a number
+- [01:13:42,185 - 01:13:44,685] which is of order 200 GeV.
+- [01:13:44,685 - 01:13:46,185] In other words, this mass
+- [01:13:46,185 - 01:13:47,685] term is of order 200 GeV,
+- [01:13:47,685 - 01:13:48,685] even if it's negative, to hell
+- [01:13:48,685 - 01:13:49,685] with the fact that it's negative,
+- [01:13:49,685 - 01:13:51,685] it's of order 200 GeV,
+- [01:13:51,685 - 01:13:54,185] but yet it is composed out
+- [01:13:54,185 - 01:13:56,685] of this ridiculous sum of terms,
+- [01:13:56,685 - 01:14:00,685] every one of which is 38 orders of...
+- [01:14:00,685 - 01:14:02,685] which can be as big as 38 orders of magnitude,
+- [01:14:02,685 - 01:14:05,685] bigger than the thing you're trying to get.
+- [01:14:05,685 - 01:14:07,685] This is known as the fine-tuning problem.
+- [01:14:07,685 - 01:14:10,686] Sometimes it's called the gauge hierarchy problem,
+- [01:14:10,686 - 01:14:12,686] the hierarchy problem,
+- [01:14:12,686 - 01:14:15,686] the hierarchy being the hierarchy of mass scales
+- [01:14:15,686 - 01:14:18,186] from the Planck scale down to
+- [01:14:18,186 - 01:14:20,686] the scale of ordinary particle physics.
+- [01:14:20,686 - 01:14:23,686] Enormous gap, enormous ratio of scales.
+- [01:14:23,686 - 01:14:25,186] And it's not just that
+- [01:14:25,186 - 01:14:26,686] there's a small number in physics,
+- [01:14:26,686 - 01:14:28,686] the mass scale of light particles.
+- [01:14:28,686 - 01:14:31,686] There's this incredibly finely tuned thing,
+- [01:14:31,686 - 01:14:33,686] which is composed of many pieces,
+- [01:14:33,686 - 01:14:37,686] all of which have to add up to something small.
+- [01:14:37,686 - 01:14:39,686] So that's ridiculous.
+- [01:14:39,686 - 01:14:42,186] I mean, you know, we've understood
+- [01:14:42,186 - 01:14:44,686] that that's a ridiculous idea for...
+- [01:14:44,686 - 01:14:47,186] oh, I don't know, sometime in
+- [01:14:47,186 - 01:14:49,686] the early 80s or late 70s,
+- [01:14:49,686 - 01:14:52,686] when this problem was first identified.
+- [01:14:52,686 - 01:14:57,686] And the question is, what do you do about it?
+- [01:14:57,686 - 01:14:59,686] But before I get onto that,
+- [01:14:59,686 - 01:15:01,686] let's talk about the
+- [01:15:01,686 - 01:15:03,686] mass renormalization of other particles,
+- [01:15:03,686 - 01:15:05,686] the other particles of the standard model,
+- [01:15:05,686 - 01:15:10,686] and why they are not in themselves a problem.
+- [01:15:10,686 - 01:15:12,686] It's really just one fine-tuning.
+- [01:15:12,686 - 01:15:14,686] You don't have to separately
+- [01:15:14,686 - 01:15:16,686] fine-tune the mass of the electron
+- [01:15:16,686 - 01:15:18,686] and those sorts of things.
+- [01:15:18,686 - 01:15:22,686] Why doesn't the electron have the same kind of problem?
+- [01:15:22,686 - 01:15:25,686] Okay, so let's talk about fermions.
+- [01:15:25,686 - 01:15:28,686] Fermions don't have the same sort of problem.
+- [01:15:29,686 - 01:15:31,686] They're just a bunch of particles.
+- [01:15:31,686 - 01:15:33,686] They're just a bunch of particles.
+- [01:15:33,686 - 01:15:36,686] So let's talk about the mass term of a fermion.
+- [01:15:36,686 - 01:15:38,686] The mass term of a fermion
+- [01:15:38,686 - 01:15:40,686] involves the mass, not the mass squared,
+- [01:15:40,686 - 01:15:44,686] and it's contained in the term in the Lagrangian,
+- [01:15:44,686 - 01:15:48,686] which is m psi-bar-psi.
+- [01:15:48,686 - 01:15:51,686] Psi are the fermion fields that
+- [01:15:51,686 - 01:15:54,686] describe the creation and annihilation of fermions.
+- [01:15:54,686 - 01:15:57,186] And the term in the Lagrangian
+- [01:15:57,186 - 01:15:59,686] that controls or that defines the fermions,
+- [01:15:59,686 - 01:16:01,186] the mass of the electron or
+- [01:16:01,186 - 01:16:02,686] the quark or whatever it is,
+- [01:16:02,686 - 01:16:05,686] just has the form m psi-bar-psi.
+- [01:16:05,686 - 01:16:08,686] Now, as I told you
+- [01:16:08,686 - 01:16:11,686] last time, or several times ago,
+- [01:16:11,686 - 01:16:15,686] first of all, psi-bar-psi is also a term in Lagrangian
+- [01:16:15,686 - 01:16:18,686] which creates a process where a
+- [01:16:18,686 - 01:16:21,686] fermion comes in and gets re-emitted.
+- [01:16:21,686 - 01:16:24,186] Psi absorbs a fermion at
+- [01:16:24,186 - 01:16:26,686] a position, and psi-bar emits it.
+- [01:16:26,686 - 01:16:29,686] So, again, it's very, very much like this term,
+- [01:16:29,686 - 01:16:31,186] except it only involves the
+- [01:16:31,186 - 01:16:32,686] mass and not the mass squared.
+- [01:16:32,686 - 01:16:34,686] But that's not a big deal.
+- [01:16:34,686 - 01:16:36,686] We can certainly imagine
+- [01:16:36,686 - 01:16:38,686] diagrams which re-normalize the mass,
+- [01:16:38,686 - 01:16:41,186] but I'm going to show you now why
+- [01:16:41,186 - 01:16:43,686] it's not as big a deal for the fermions.
+- [01:16:43,686 - 01:16:45,186] So, you remember I told
+- [01:16:45,186 - 01:16:46,686] you a couple of times ago
+- [01:16:46,686 - 01:16:50,186] that psi-bar-psi is a thing
+- [01:16:50,186 - 01:16:53,686] which always absorbs a left-handed particle
+- [01:16:53,686 - 01:16:55,686] and emits a right-handed particle,
+- [01:16:55,686 - 01:16:57,686] or absorbs a right-handed particle
+- [01:16:57,686 - 01:16:59,686] and emits a left-handed particle.
+- [01:16:59,686 - 01:17:06,686] It flips you between handedness of the fermion.
+- [01:17:06,686 - 01:17:09,186] If the fermion is moving down, and the
+- [01:17:09,186 - 01:17:11,686] psi-bar has an axis with a right-handed helicity,
+- [01:17:11,686 - 01:17:16,686] a right-handed spin relative to its direction of motion,
+- [01:17:16,686 - 01:17:19,686] then the mass term will flip it.
+- [01:17:19,686 - 01:17:21,686] That's an important thing to know.
+- [01:17:21,686 - 01:17:24,686] So this is a thing which takes
+- [01:17:24,686 - 01:17:27,686] left to right or right to left.
+- [01:17:27,686 - 01:17:29,686] Now, what kind of thing is left to right?
+- [01:17:29,686 - 01:17:33,686] Well, it could re-normalize the mass of the electron.
+- [01:17:33,686 - 01:17:35,686] For example, one of the things
+- [01:17:35,686 - 01:17:37,686] that we put into the standard model
+- [01:17:37,686 - 01:17:43,686] was the emission by the fermions of a scalar,
+- [01:17:43,686 - 01:17:46,686] or the emission of a gauge boson.
+- [01:17:46,686 - 01:17:48,686] Emission of a scalar, or
+- [01:17:48,686 - 01:17:50,686] the scalar, let's represent this way,
+- [01:17:50,686 - 01:17:54,686] the scalar is a dotted line, the gauge boson.
+- [01:17:54,686 - 01:17:56,686] This could be quantum electrodynamics.
+- [01:17:56,686 - 01:17:58,186] In quantum electrodynamics, the only thing
+- [01:17:58,186 - 01:17:59,686] that can happen to an electron,
+- [01:17:59,686 - 01:18:06,686] is it emits a gauge boson, a photon.
+- [01:18:06,686 - 01:18:09,686] What happens to the handedness of an
+- [01:18:09,686 - 01:18:12,686] electron when it emits a gauge boson?
+- [01:18:12,686 - 01:18:14,686] The answer is nothing.
+- [01:18:14,686 - 01:18:17,686] The handedness doesn't change.
+- [01:18:17,686 - 01:18:20,686] So, emitting a gauge boson takes
+- [01:18:20,686 - 01:18:23,686] left to left or right to right.
+- [01:18:27,686 - 01:18:29,686] You can work that out
+- [01:18:29,686 - 01:18:31,686] from the properties of the Lagrangian,
+- [01:18:31,686 - 01:18:35,686] that the emission of a photon
+- [01:18:35,686 - 01:18:39,686] doesn't flip the helicity of a fermion.
+- [01:18:39,686 - 01:18:43,686] What about the emission of a scalar particle?
+- [01:18:43,686 - 01:18:45,686] Well, it turns out the scalar
+- [01:18:45,686 - 01:18:47,686] particle does flip from left to right,
+- [01:18:47,686 - 01:18:52,686] or from right to left.
+- [01:18:52,686 - 01:18:55,686] So gauge bosons don't flip.
+- [01:18:55,686 - 01:18:58,686] Scalar particles do flip the direction of
+- [01:18:58,686 - 01:19:01,686] rotation of the spin of the electron,
+- [01:19:01,686 - 01:19:03,686] relative to its momentum.
+- [01:19:03,686 - 01:19:06,686] Okay, now let's look at processes which
+- [01:19:06,686 - 01:19:09,686] could renormalize the mass of the electron.
+- [01:19:09,686 - 01:19:11,686] And this is fun.
+- [01:19:11,686 - 01:19:14,686] This is a little bit of a surprise.
+- [01:19:14,686 - 01:19:19,686] Supposing the electron starts out with no mass.
+- [01:19:19,686 - 01:19:22,686] Notice in the boson case,
+- [01:19:22,686 - 01:19:24,686] where is it?
+- [01:19:24,686 - 01:19:27,686] Even if the particle started with no mass,
+- [01:19:27,686 - 01:19:30,186] it gets this huge,
+- [01:19:30,186 - 01:19:32,686] humongous contribution from renormalization.
+- [01:19:32,686 - 01:19:36,686] And the renormalized mass is not dependent,
+- [01:19:36,686 - 01:19:38,186] the renormalization of the mass is
+- [01:19:38,186 - 01:19:39,686] not dependent on whether the electron had,
+- [01:19:39,686 - 01:19:41,686] or whether the particle had
+- [01:19:41,686 - 01:19:43,686] the mass in the first place.
+- [01:19:43,686 - 01:19:45,186] Just all these terms would be
+- [01:19:45,186 - 01:19:46,686] there, even if this one weren't there.
+- [01:19:46,686 - 01:19:50,686] Now let's take the case of the electron.
+- [01:19:50,686 - 01:19:52,686] So what kind of things can we have?
+- [01:19:52,686 - 01:19:54,686] Here's the electron moving along.
+- [01:19:54,686 - 01:19:57,686] It could emit and absorb a photon.
+- [01:19:57,686 - 01:19:59,686] Now by definition,
+- [01:19:59,686 - 01:20:02,686] a mass term, practically by definition,
+- [01:20:02,686 - 01:20:05,686] a mass term is recognized as
+- [01:20:05,686 - 01:20:08,686] an amplitude for left to become right,
+- [01:20:08,686 - 01:20:10,686] or right to become left.
+- [01:20:10,686 - 01:20:13,686] From an experimental point of view, a mass term
+- [01:20:13,686 - 01:20:17,686] was recognized as an oscillation between left and right.
+- [01:20:17,686 - 01:20:20,686] Can we get left going to right?
+- [01:20:20,686 - 01:20:22,686] Can that be?
+- [01:20:22,686 - 01:20:25,686] Can that happen?
+- [01:20:25,686 - 01:20:27,686] And let's suppose the starting
+- [01:20:27,686 - 01:20:29,686] mass of the electron is zero.
+- [01:20:29,686 - 01:20:33,686] Let's begin with the electron mass being zero.
+- [01:20:33,686 - 01:20:35,686] Is there any way to go from left to right?
+- [01:20:35,686 - 01:20:38,686] Well, you could emit a photon and reabsorb a photon,
+- [01:20:38,686 - 01:20:41,686] but a photon always takes left to left,
+- [01:20:41,686 - 01:20:43,686] or right to right,
+- [01:20:43,686 - 01:20:46,186] and there's no way by a
+- [01:20:46,186 - 01:20:48,686] sequence of emissions and absorptions of photons
+- [01:20:48,686 - 01:20:50,686] to make a left go to right.
+- [01:20:50,686 - 01:20:53,686] The conclusion is in quantum electrodynamics,
+- [01:20:53,686 - 01:20:56,186] or in any theory which only
+- [01:20:56,186 - 01:20:58,686] involves the emission of gauge bosons,
+- [01:20:58,686 - 01:21:03,686] fermions get no mass renormalization at all.
+- [01:21:03,686 - 01:21:06,686] They get no mass renormalization at all,
+- [01:21:06,686 - 01:21:10,686] so the electromagnetic self-energy of an electron,
+- [01:21:10,686 - 01:21:13,686] if the electron started massless,
+- [01:21:13,686 - 01:21:15,686] if it started massless,
+- [01:21:15,686 - 01:21:18,686] the correction would be zero.
+- [01:21:18,686 - 01:21:19,686] A massless electron is a massless electron,
+- [01:21:19,686 - 01:21:22,686] is a consistent thing,
+- [01:21:22,686 - 01:21:24,686] well, in pure quantum electrodynamics,
+- [01:21:24,686 - 01:21:25,686] not in the standard model,
+- [01:21:25,686 - 01:21:27,686] but in pure quantum electrodynamics,
+- [01:21:27,686 - 01:21:30,686] a massless electron is a consistent thing,
+- [01:21:30,686 - 01:21:32,686] and if it starts out massless,
+- [01:21:32,686 - 01:21:36,686] the bear, or the starting point, the input mass,
+- [01:21:36,686 - 01:21:38,686] it will stay that way.
+- [01:21:38,686 - 01:21:39,686] Why?
+- [01:21:39,686 - 01:21:42,186] Because photons emitted and reabsorbed will
+- [01:21:42,186 - 01:21:44,686] not flip from left to right.
+- [01:21:44,686 - 01:21:48,686] What about supposing now there is a scalar particle
+- [01:21:48,686 - 01:21:50,686] that the electron couples to?
+- [01:21:50,686 - 01:21:52,686] The Higgs field is an example.
+- [01:21:52,686 - 01:21:55,686] Let's suppose that the Higgs
+- [01:21:55,686 - 01:21:58,686] field can be absorbed and reemitted,
+- [01:21:58,686 - 01:22:00,686] or, sorry, emitted and reabsorbed.
+- [01:22:00,686 - 01:22:02,686] What kind of thing does that make?
+- [01:22:02,686 - 01:22:04,686] Can that make left go to right?
+- [01:22:04,686 - 01:22:07,186] No, it can't, because the
+- [01:22:07,186 - 01:22:09,686] scalar emission here always takes left,
+- [01:22:09,686 - 01:22:14,686] where is it, always takes left to right,
+- [01:22:14,686 - 01:22:16,686] or right to left.
+- [01:22:16,686 - 01:22:17,686] This is the scalar particle here.
+- [01:22:18,686 - 01:22:23,686] The scalar particle always involves transition,
+- [01:22:23,686 - 01:22:25,186] and so here you can go
+- [01:22:25,186 - 01:22:26,686] from left to right all right,
+- [01:22:26,686 - 01:22:28,686] but then in the reabsorption here
+- [01:22:28,686 - 01:22:30,686] you're going to go back to left.
+- [01:22:30,686 - 01:22:32,686] And if you think about it,
+- [01:22:32,686 - 01:22:36,686] no matter how complicated the Feynman diagram is,
+- [01:22:36,686 - 01:22:41,686] it's always going to involve an even number of vertices,
+- [01:22:41,686 - 01:22:44,686] because it involves an even number of vertices.
+- [01:22:44,686 - 01:22:46,686] Whatever gets emitted must get reabsorbed.
+- [01:22:46,686 - 01:22:47,686] That's all it comes down to.
+- [01:22:47,686 - 01:22:50,686] If it's going to be just electron goes to electron,
+- [01:22:50,686 - 01:22:52,686] whatever gets emitted must get reabsorbed,
+- [01:22:52,686 - 01:22:54,686] the number of vertices must be even,
+- [01:22:54,686 - 01:22:57,686] and if the number of vertices is even from this,
+- [01:22:57,686 - 01:23:04,686] then you can't make left go to right.
+- [01:23:04,686 - 01:23:06,686] And so again, scalar emission
+- [01:23:06,686 - 01:23:08,686] and absorption will have no effect
+- [01:23:08,686 - 01:23:10,186] on the mass of the
+- [01:23:10,186 - 01:23:11,686] electron if it starts from zero.
+- [01:23:11,686 - 01:23:14,186] Okay, can you ever get a
+- [01:23:14,186 - 01:23:16,686] shift of the mass of the electron?
+- [01:23:16,686 - 01:23:18,686] For example, in quantum electrodynamics.
+- [01:23:18,686 - 01:23:20,686] And the answer is yes, but
+- [01:23:20,686 - 01:23:22,686] only if you start with a mass.
+- [01:23:22,686 - 01:23:24,686] What does a mass do?
+- [01:23:24,686 - 01:23:27,186] A mass can be thought of
+- [01:23:27,186 - 01:23:29,686] as a vertex in a Feynman diagram,
+- [01:23:29,686 - 01:23:31,686] which does take left to right,
+- [01:23:31,686 - 01:23:35,686] but the coefficient is proportional to the input mass.
+- [01:23:35,686 - 01:23:38,686] So let me draw a Feynman diagram which does create,
+- [01:23:38,686 - 01:23:41,686] which does shift the mass of the electron.
+- [01:23:41,686 - 01:23:44,686] All you have to do is,
+- [01:23:46,686 - 01:23:49,686] emit and absorb a photon,
+- [01:23:49,686 - 01:23:52,686] but in the middle here,
+- [01:23:52,686 - 01:23:55,686] have one of these mass insertions,
+- [01:23:55,686 - 01:23:59,686] which itself flips from left to right.
+- [01:23:59,686 - 01:24:01,686] Then you can start with left,
+- [01:24:01,686 - 01:24:04,686] emitting the photon takes you to right,
+- [01:24:04,686 - 01:24:08,686] but then the mass term takes you back to left,
+- [01:24:08,686 - 01:24:10,686] and then, oh sorry, I didn't do that right.
+- [01:24:10,686 - 01:24:12,686] Left goes to left,
+- [01:24:12,686 - 01:24:14,686] and then the mass term takes left to right,
+- [01:24:14,686 - 01:24:16,686] and then right to right.
+- [01:24:16,686 - 01:24:23,686] The value of this Feynman diagram contains two factors,
+- [01:24:23,686 - 01:24:25,686] or three factors.
+- [01:24:25,686 - 01:24:28,686] It contains the electric charge twice.
+- [01:24:28,686 - 01:24:31,686] Remember, the Feynman diagram for the emission of a photon
+- [01:24:31,686 - 01:24:34,686] is proportional to the electric charge.
+- [01:24:34,686 - 01:24:37,686] The coupling constant is the electric charge.
+- [01:24:37,686 - 01:24:40,186] So this kind of Feynman diagram
+- [01:24:40,186 - 01:24:42,686] would have the electric charge squared,
+- [01:24:42,686 - 01:24:45,686] but it also has the original starting mass.
+- [01:24:46,686 - 01:24:49,686] Original starting mass.
+- [01:24:49,686 - 01:24:52,686] Let's call it m naught.
+- [01:24:52,686 - 01:24:56,686] So we see that the shift in the mass
+- [01:24:56,686 - 01:24:58,686] is proportional to the mass itself.
+- [01:24:58,686 - 01:25:00,186] So now we can write down
+- [01:25:00,186 - 01:25:01,686] that the mass of the electron
+- [01:25:01,686 - 01:25:04,686] will consist of m naught,
+- [01:25:04,686 - 01:25:08,686] plus something of order e squared times m naught,
+- [01:25:08,686 - 01:25:11,686] plus more complicated diagrams,
+- [01:25:11,686 - 01:25:14,686] e to the fourth times m naught.
+- [01:25:14,686 - 01:25:15,686] In such a way,
+- [01:25:15,686 - 01:25:18,686] that if the starting mass was zero to begin with,
+- [01:25:18,686 - 01:25:20,686] it would remain zero.
+- [01:25:20,686 - 01:25:22,686] The implication of that is that
+- [01:25:22,686 - 01:25:24,686] not if the starting mass was zero
+- [01:25:24,686 - 01:25:26,686] that it would remain zero,
+- [01:25:26,686 - 01:25:29,686] it's that if the starting mass was very small,
+- [01:25:29,686 - 01:25:31,686] it would remain small.
+- [01:25:31,686 - 01:25:33,686] You would still ask the question,
+- [01:25:33,686 - 01:25:35,686] why is the electron so
+- [01:25:35,686 - 01:25:37,686] light compared to some fundamental scale,
+- [01:25:37,686 - 01:25:40,686] but at least you wouldn't have this fine-tuning problem.
+- [01:25:40,686 - 01:25:43,686] You would not be canceling out
+- [01:25:43,686 - 01:25:48,686] differences between large numbers to make a small number.
+- [01:25:48,686 - 01:25:50,686] You'd say, for reasons I don't know,
+- [01:25:50,686 - 01:25:53,686] the mass of the electron may be small,
+- [01:25:53,686 - 01:25:57,686] and all the corrections to it are even smaller.
+- [01:25:57,686 - 01:26:00,686] So fermions are, in that sense,
+- [01:26:00,686 - 01:26:03,686] better behaved than
+- [01:26:03,686 - 01:26:08,686] scalar particles.
+- [01:26:08,686 - 01:26:10,686] What about gauge bosons?
+- [01:26:10,686 - 01:26:12,686] Well, gauge bosons have the same problem.
+- [01:26:12,686 - 01:26:14,686] They have the same property,
+- [01:26:14,686 - 01:26:16,686] that if they start out massless,
+- [01:26:16,686 - 01:26:17,686] I won't go into it,
+- [01:26:17,686 - 01:26:18,686] if they start out massless,
+- [01:26:18,686 - 01:26:21,686] they remain massless to all orders.
+- [01:26:21,686 - 01:26:23,686] So what that means
+- [01:26:23,686 - 01:26:25,686] is that to understand the
+- [01:26:25,686 - 01:26:27,686] mass scales of the standard model,
+- [01:26:27,686 - 01:26:28,686] the fine-tuning problem,
+- [01:26:28,686 - 01:26:31,686] there's really only one fine-tuning problem.
+- [01:26:31,686 - 01:26:34,686] It's the fine-tuning that's associated with the Higgs boson.
+- [01:26:34,686 - 01:26:36,686] If you get that one right,
+- [01:26:36,686 - 01:26:38,686] all the other ones will be okay,
+- [01:26:38,686 - 01:26:41,686] because all the other masses are direct responses
+- [01:26:41,686 - 01:26:44,686] to the shift of the Higgs field.
+- [01:26:44,686 - 01:26:45,686] Where is it?
+- [01:26:45,686 - 01:26:46,686] I don't know.
+- [01:26:46,686 - 01:26:48,686] We erased it, I guess.
+- [01:26:48,686 - 01:26:49,686] Yeah.
+- [01:26:49,686 - 01:26:51,686] To the shift of the Higgs field.
+- [01:26:51,686 - 01:26:54,686] And if the shift of the Higgs field is controlled,
+- [01:26:54,686 - 01:26:58,686] and if it doesn't undergo this enormous renormalization
+- [01:26:58,686 - 01:27:00,686] and shift off to some huge amount,
+- [01:27:00,686 - 01:27:03,686] then everything else will be okay.
+- [01:27:03,686 - 01:27:05,686] There will be no other fine-tunings.
+- [01:27:05,686 - 01:27:09,686] The only fine-tuning in the standard model,
+- [01:27:09,686 - 01:27:11,686] no, really,
+- [01:27:11,686 - 01:27:13,686] crazy fine-tuning,
+- [01:27:13,686 - 01:27:15,686] the only really crazy fine-tuning
+- [01:27:15,686 - 01:27:18,686] is the mass term from the Higgs boson,
+- [01:27:18,686 - 01:27:22,686] which has to be about 38 orders of magnitude smaller
+- [01:27:22,686 - 01:27:27,686] than whatever fundamental scale you might envision.
+- [01:27:30,686 - 01:27:33,686] That's the great puzzle
+- [01:27:33,686 - 01:27:36,686] that supersymmetry
+- [01:27:36,686 - 01:27:38,686] and other kinds of theories like that
+- [01:27:38,686 - 01:27:40,686] are intended to address.
+- [01:27:41,686 - 01:27:43,686] Roughly speaking,
+- [01:27:43,686 - 01:27:44,686] the question is,
+- [01:27:44,686 - 01:27:46,686] is there any kind of context
+- [01:27:46,686 - 01:27:52,686] where the Higgs boson cannot get a mass correction
+- [01:27:52,686 - 01:27:53,686] which is enormously large?
+- [01:27:53,686 - 01:27:55,686] Is there any kind of theory
+- [01:27:55,686 - 01:27:57,686] where the Higgs boson itself
+- [01:27:57,686 - 01:27:59,686] will also be a particle
+- [01:27:59,686 - 01:28:02,686] whose mass isn't driven to enormously large values
+- [01:28:02,686 - 01:28:04,686] by renormalization?
+- [01:28:04,686 - 01:28:06,686] And so the answer is yes, we know some.
+- [01:28:11,686 - 01:28:13,686] There's one other fine-tuning,
+- [01:28:13,686 - 01:28:15,686] extreme fine-tuning in physics.
+- [01:28:15,686 - 01:28:17,686] It only comes into play, though,
+- [01:28:17,686 - 01:28:19,686] when you start thinking about gravity.
+- [01:28:19,686 - 01:28:20,686] Before you think about gravity,
+- [01:28:20,686 - 01:28:22,686] if you don't think about gravity,
+- [01:28:22,686 - 01:28:24,686] then it's not a problem.
+- [01:28:24,686 - 01:28:28,686] It is a problem that's associated with renormalization,
+- [01:28:28,686 - 01:28:31,186] and it's the problem of
+- [01:28:31,186 - 01:28:33,686] the renormalization of vacuum energy.
+- [01:28:33,686 - 01:28:39,686] Renormalization of vacuum energy
+- [01:28:39,686 - 01:28:41,686] is also a serious problem.
+- [01:28:41,686 - 01:28:49,686] It's also a thing of very serious need for fine-tuning.
+- [01:28:49,686 - 01:28:51,686] And I'll just tell you what it is
+- [01:28:51,686 - 01:28:53,686] since we're dealing with fine-tuning.
+- [01:28:53,686 - 01:28:56,686] First of all,
+- [01:28:56,686 - 01:28:59,686] what the energy of the vacuum is,
+- [01:28:59,686 - 01:29:02,686] for most purposes in physics, doesn't matter.
+- [01:29:02,686 - 01:29:04,686] Why not?
+- [01:29:04,686 - 01:29:07,686] Well, it's an additive constant to all energies.
+- [01:29:07,686 - 01:29:09,686] If empty space has a vacuum,
+- [01:29:09,686 - 01:29:10,686] it's energy, so be it.
+- [01:29:10,686 - 01:29:12,686] But then as long as when you add a particle,
+- [01:29:12,686 - 01:29:14,686] it adds the right amount of energy,
+- [01:29:14,686 - 01:29:15,686] that's okay.
+- [01:29:15,686 - 01:29:18,686] Who cares what the vacuum energy is?
+- [01:29:18,686 - 01:29:20,686] It doesn't play any role in physics.
+- [01:29:20,686 - 01:29:23,686] The real point is that only energy differences
+- [01:29:23,686 - 01:29:25,686] are important in physics.
+- [01:29:25,686 - 01:29:26,686] Energy differences.
+- [01:29:26,686 - 01:29:29,686] So when you think about the mass of the electron,
+- [01:29:29,686 - 01:29:32,686] don't think about it as the energy of electron.
+- [01:29:32,686 - 01:29:34,686] Think about it as the extra energy
+- [01:29:34,686 - 01:29:36,686] that you have to add to the vacuum.
+- [01:29:36,686 - 01:29:38,686] Whatever the vacuum energy is,
+- [01:29:38,686 - 01:29:40,686] you have to add a little energy
+- [01:29:40,686 - 01:29:42,686] when you add an electron.
+- [01:29:42,686 - 01:29:43,686] So it's energy differences.
+- [01:29:43,686 - 01:29:45,686] The energy difference between the energy of an electron
+- [01:29:45,686 - 01:29:47,686] and the energy of a vacuum,
+- [01:29:47,686 - 01:29:49,186] which is really what we
+- [01:29:49,186 - 01:29:50,686] call the mass of the electron.
+- [01:29:50,686 - 01:29:53,686] So who cares then if the vacuum
+- [01:29:53,686 - 01:29:55,686] gets its energy shifted by a large amount
+- [01:29:55,686 - 01:29:59,686] as long as everything else gets shifted along with it?
+- [01:29:59,686 - 01:30:02,686] So let's come back to who cares in a minute,
+- [01:30:02,686 - 01:30:04,686] but let's just ask what
+- [01:30:04,686 - 01:30:06,686] does happen to the vacuum energy.
+- [01:30:06,686 - 01:30:08,686] And the vacuum energy is,
+- [01:30:08,686 - 01:30:13,686] is something which is also renormalized,
+- [01:30:13,686 - 01:30:16,686] and it's renormalized by diagrams
+- [01:30:16,686 - 01:30:20,686] which have no input and no output particles.
+- [01:30:20,686 - 01:30:23,686] In other words, just vacuum to vacuum.
+- [01:30:23,686 - 01:30:26,686] The effect of such diagrams is to renormalize
+- [01:30:26,686 - 01:30:28,686] the energy of the vacuum,
+- [01:30:28,686 - 01:30:29,686] but who cares?
+- [01:30:29,686 - 01:30:33,686] I mean, the vacuum energy is of no physical significance,
+- [01:30:33,686 - 01:30:35,686] but nevertheless, let's ask what it looks like.
+- [01:30:35,686 - 01:30:38,686] So for example, in the 5-4th theory,
+- [01:30:38,686 - 01:30:40,686] let's do the 5-4th theory,
+- [01:30:40,686 - 01:30:42,686] so there are, oh, yeah,
+- [01:30:42,686 - 01:30:46,686] let's draw a diagram from the 5-4th theory
+- [01:30:46,686 - 01:30:49,686] that involves no in particles and no out particles,
+- [01:30:49,686 - 01:30:51,686] just vacuum to vacuum.
+- [01:30:51,686 - 01:30:53,686] Here it is.
+- [01:30:58,686 - 01:31:01,686] Four particles at the vertex here,
+- [01:31:01,686 - 01:31:02,686] and that's it.
+- [01:31:02,686 - 01:31:04,686] How big is that diagram?
+- [01:31:04,686 - 01:31:05,686] Numerically, how big is it?
+- [01:31:05,686 - 01:31:07,686] Well, it contains lambda,
+- [01:31:08,686 - 01:31:11,686] and then it contains a propagator from here
+- [01:31:11,686 - 01:31:13,686] back to the same place.
+- [01:31:13,686 - 01:31:16,686] That's a factor of 1 over delta squared.
+- [01:31:16,686 - 01:31:19,686] After I, it's a factor of 1 over delta squared
+- [01:31:19,686 - 01:31:22,686] if this little separation here is of order delta,
+- [01:31:22,686 - 01:31:23,686] but then there's another one here,
+- [01:31:23,686 - 01:31:25,686] which is another 1 over delta squared,
+- [01:31:25,686 - 01:31:27,186] so the whole thing is
+- [01:31:27,186 - 01:31:28,686] 1 over delta to the 4th.
+- [01:31:30,686 - 01:31:33,686] Every diagram that you can write down
+- [01:31:33,686 - 01:31:35,686] will typically go as 1 over delta to the 4th
+- [01:31:35,686 - 01:31:37,686] times, there are more complicated ones,
+- [01:31:37,686 - 01:31:39,186] but they'll also go as
+- [01:31:39,186 - 01:31:40,686] 1 over delta to the 4th,
+- [01:31:40,686 - 01:31:43,686] and so the vacuum energy is also something
+- [01:31:43,686 - 01:31:45,686] that gets renormalized.
+- [01:31:45,686 - 01:31:47,686] Because it gets renormalized,
+- [01:31:47,686 - 01:31:49,186] it means that if you
+- [01:31:49,186 - 01:31:50,686] really want it to be 0,
+- [01:31:50,686 - 01:31:53,686] you better fine-tune it to very high precision,
+- [01:31:53,686 - 01:31:55,686] but on the other hand, who cares what it is?
+- [01:31:55,686 - 01:31:56,686] We don't care what it is.
+- [01:31:56,686 - 01:31:57,686] We don't care what it is
+- [01:31:57,686 - 01:31:59,686] until gravity becomes important,
+- [01:31:59,686 - 01:32:04,686] and the reason is that in standard theory,
+- [01:32:04,686 - 01:32:07,686] the source of the gravitational field is 0,
+- [01:32:07,686 - 01:32:09,686] and that's because the vacuum has energy.
+- [01:32:09,686 - 01:32:11,686] If the vacuum has energy,
+- [01:32:11,686 - 01:32:13,686] it means that the vacuum itself,
+- [01:32:13,686 - 01:32:15,686] empty space, gravitates.
+- [01:32:15,686 - 01:32:17,686] We're not going to go into this now,
+- [01:32:17,686 - 01:32:19,686] this of course has to do with dark energy,
+- [01:32:19,686 - 01:32:21,686] it has to do with the cosmological constant,
+- [01:32:21,686 - 01:32:23,686] we'll talk about it another time,
+- [01:32:23,686 - 01:32:25,686] but yes, this is also something
+- [01:32:25,686 - 01:32:27,686] that has to be fine-tuned,
+- [01:32:27,686 - 01:32:29,686] and it has to be fine-tuned once again
+- [01:32:29,686 - 01:32:31,686] to enormously high precision.
+- [01:32:31,686 - 01:32:34,686] So really, strictly speaking,
+- [01:32:34,686 - 01:32:36,686] there are two fine-tuning problems in physics,
+- [01:32:36,686 - 01:32:37,686] at least two.
+- [01:32:37,686 - 01:32:39,686] Two that we know about.
+- [01:32:39,686 - 01:32:42,686] One of them is the vacuum energy,
+- [01:32:42,686 - 01:32:44,686] which has to be tuned to something like
+- [01:32:44,686 - 01:32:47,686] 123 decimal places,
+- [01:32:47,686 - 01:32:51,686] and the other is the Higgs mass,
+- [01:32:51,686 - 01:32:53,686] which only has to be tuned to something like
+- [01:32:53,686 - 01:32:55,686] 30 or 35 decimal places,
+- [01:32:55,686 - 01:32:57,686] or something like that.
+- [01:32:57,686 - 01:32:58,686] These are the two problems,
+- [01:32:58,686 - 01:33:00,686] in many respects,
+- [01:33:00,686 - 01:33:04,686] these are the sort of biggest puzzles
+- [01:33:04,686 - 01:33:06,686] in particle physics at the present time,
+- [01:33:06,686 - 01:33:10,686] of course it may turn out that these puzzles
+- [01:33:10,686 - 01:33:13,686] are simply due to a misstatement of the problem.
+- [01:33:13,686 - 01:33:16,686] You know, it often happens that really,
+- [01:33:16,686 - 01:33:18,686] really thorny puzzles go away
+- [01:33:18,686 - 01:33:20,686] when you state the problem correctly,
+- [01:33:20,686 - 01:33:22,686] but it's been a long time since these problems
+- [01:33:22,686 - 01:33:26,686] were identified, and nobody really knows
+- [01:33:26,686 - 01:33:28,686] what the solution to them is.
+- [01:33:28,686 - 01:33:31,686] Supersymmetry is a potential solution
+- [01:33:31,686 - 01:33:35,686] to the fine-tuning of the Higgs boson.
+- [01:33:35,686 - 01:33:38,686] It is not a potential solution to the fine-tuning
+- [01:33:38,686 - 01:33:40,686] of the cosmological constant.
+- [01:33:40,686 - 01:33:42,686] So the next time, I'm getting a little tired,
+- [01:33:42,686 - 01:33:44,686] I think we'll quit early tonight,
+- [01:33:44,686 - 01:33:46,686] time for a couple of questions,
+- [01:33:46,686 - 01:33:48,686] but the next time I'll start to tell you
+- [01:33:48,686 - 01:33:50,686] a little bit about what supersymmetry is.
+- [01:33:50,686 - 01:33:56,686] It looked like when we had the summation
+- [01:33:56,686 - 01:34:01,686] for the Higgs...
+- [01:34:01,686 - 01:34:02,686] For the mass of the Higgs?
+- [01:34:02,686 - 01:34:03,686] Yes.
+- [01:34:03,686 - 01:34:04,686] Yeah.
+- [01:34:04,686 - 01:34:06,686] It would actually depend on delta,
+- [01:34:06,686 - 01:34:08,686] but delta was kind of arbitrary.
+- [01:34:08,686 - 01:34:10,686] You said plane distance, but it could be
+- [01:34:10,686 - 01:34:12,686] 10 times the plane distance.
+- [01:34:12,686 - 01:34:14,686] It could be 10 times the plane distance.
+- [01:34:14,686 - 01:34:18,686] So does the fine-tuning depend on the delta?
+- [01:34:18,686 - 01:34:21,686] That doesn't make any sense.
+- [01:34:26,686 - 01:34:29,686] We can talk about all the contributions
+- [01:34:29,686 - 01:34:32,686] to the mass of the particle,
+- [01:34:32,686 - 01:34:34,686] which come from fluctuations
+- [01:34:34,686 - 01:34:36,686] of wavelengths from degrees of freedom
+- [01:34:36,686 - 01:34:39,686] down to some very small distance scale.
+- [01:34:39,686 - 01:34:42,686] The answer will depend on that scale.
+- [01:34:42,686 - 01:34:45,686] It will depend on that scale.
+- [01:34:45,686 - 01:34:48,686] So the real question is,
+- [01:34:48,686 - 01:34:51,686] ordinary quantum field theory,
+- [01:34:51,686 - 01:34:53,186] how far down in scale do
+- [01:34:53,186 - 01:34:54,686] we expect it to make sense
+- [01:34:54,686 - 01:34:56,686] before it becomes nonsense?
+- [01:34:56,686 - 01:34:59,686] All those modes, all those frequencies
+- [01:34:59,686 - 01:35:02,686] are real things that we think are really there,
+- [01:35:02,686 - 01:35:04,686] because quantum field theory makes sense
+- [01:35:04,686 - 01:35:05,686] for delta scales.
+- [01:35:05,686 - 01:35:07,686] That's a sort of lower bound
+- [01:35:07,686 - 01:35:09,686] on what these effects are.
+- [01:35:09,686 - 01:35:11,686] What I'm saying is if we have some scale
+- [01:35:11,686 - 01:35:13,686] where we expect that physics will change,
+- [01:35:13,686 - 01:35:15,686] it could be the Planck scale,
+- [01:35:15,686 - 01:35:17,686] it could be some unification scale,
+- [01:35:17,686 - 01:35:20,686] if we have some idea where physics changes,
+- [01:35:20,686 - 01:35:22,686] then the physics down to that scale
+- [01:35:22,686 - 01:35:24,686] contributes some contribution,
+- [01:35:24,686 - 01:35:26,686] and it will only be bigger than that.
+- [01:35:26,686 - 01:35:28,686] That's the point. It will only be bigger.
+- [01:35:28,686 - 01:35:30,686] This is kind of a lower bound.
+- [01:35:30,686 - 01:35:33,686] Now, what do you choose for delta in practice?
+- [01:35:33,686 - 01:35:36,686] In practice, you choose for delta
+- [01:35:36,686 - 01:35:40,686] the distance down to which
+- [01:35:40,686 - 01:35:42,686] you think you understand physics
+- [01:35:42,686 - 01:35:44,686] at the present time.
+- [01:35:44,686 - 01:35:46,686] So we have the standard model.
+- [01:35:46,686 - 01:35:49,686] The standard model appears to make sense
+- [01:35:49,686 - 01:35:51,686] to very, very small distance scales.
+- [01:35:51,686 - 01:35:53,686] We talked a little bit about unification
+- [01:35:53,686 - 01:35:55,686] of coupling constants, didn't we?
+- [01:35:55,686 - 01:35:58,686] About how the coupling constants seem to track together,
+- [01:35:58,686 - 01:36:01,686] and they seem to come together at something like
+- [01:36:01,686 - 01:36:03,686] about 10 to the 16th GeV.
+- [01:36:03,686 - 01:36:07,686] Well, a lot of us think that that's the scale
+- [01:36:07,686 - 01:36:11,686] where quantum field theory continues down to.
+- [01:36:11,686 - 01:36:14,686] Beyond that 10 to the 16th GeV,
+- [01:36:14,686 - 01:36:17,686] even smaller scales, it can only get worse.
+- [01:36:17,686 - 01:36:19,686] But if you believe that quantum field theory
+- [01:36:19,686 - 01:36:21,686] in the standard model makes sense
+- [01:36:21,686 - 01:36:23,686] to some small length scale,
+- [01:36:23,686 - 01:36:26,686] let's say 10 to the 16th GeV,
+- [01:36:26,686 - 01:36:28,686] or whatever it is,
+- [01:36:28,686 - 01:36:30,686] then you're obligated to say
+- [01:36:30,686 - 01:36:32,686] where the effects of all the scales in between,
+- [01:36:32,686 - 01:36:34,686] what they did to the theory,
+- [01:36:34,686 - 01:36:36,686] how they renormalized the theory,
+- [01:36:36,686 - 01:36:38,686] and what canceled them all out.
+- [01:36:38,686 - 01:36:40,686] And it can only get worse by thinking about
+- [01:36:40,686 - 01:36:42,686] even smaller scales.
+- [01:36:42,686 - 01:36:45,686] So, right, so we think we have a pretty good
+- [01:36:45,686 - 01:36:48,686] understanding of physics down to scales
+- [01:36:48,686 - 01:36:52,686] which are many times smaller than
+- [01:36:52,686 - 01:36:54,686] the weak interaction scale,
+- [01:36:54,686 - 01:36:57,686] in this ordinary weak interaction scale.
+- [01:36:57,686 - 01:36:59,686] We have a good understanding of it,
+- [01:36:59,686 - 01:37:01,686] only though, if we can explain what happened
+- [01:37:01,686 - 01:37:03,686] to the mass contributions
+- [01:37:03,686 - 01:37:05,686] and the renormalization contributions
+- [01:37:05,686 - 01:37:09,686] from scales between the experimental scale
+- [01:37:09,686 - 01:37:11,686] and the smaller scale where we think
+- [01:37:11,686 - 01:37:13,686] the theory makes sense.
+- [01:37:13,686 - 01:37:15,686] So in that sense, what I've described
+- [01:37:15,686 - 01:37:17,686] is sort of the lower bound
+- [01:37:17,686 - 01:37:19,686] on how bad these things can be.
+- [01:37:19,686 - 01:37:21,686] With delta, we simply take to be the scale
+- [01:37:21,686 - 01:37:24,686] at which we still believe the theory makes sense.
+- [01:37:24,686 - 01:37:26,686] Yeah?
+- [01:37:26,686 - 01:37:29,686] What's the definition of a scalar particle?
+- [01:37:29,686 - 01:37:31,686] Like, can you give an example of a scalar particle?
+- [01:37:31,686 - 01:37:32,686] A Higgs particle.
+- [01:37:32,686 - 01:37:34,686] Higgs particle.
+- [01:37:34,686 - 01:37:36,686] It is the scalar particle.
+- [01:37:36,686 - 01:37:37,686] It's a scalar particle.
+- [01:37:37,686 - 01:37:39,686] There's probably more of them.
+- [01:37:39,686 - 01:37:42,686] We've never actually detected an elementary particle
+- [01:37:42,686 - 01:37:44,686] that we would call a scalar particle.
+- [01:37:44,686 - 01:37:48,686] How do you define a scalar particle?
+- [01:37:48,686 - 01:37:49,686] How do you...
+- [01:37:49,686 - 01:37:50,686] What is a scalar particle?
+- [01:37:50,686 - 01:37:53,686] How do you define it?
+- [01:37:53,686 - 01:37:54,686] It's not a lot of permutations.
+- [01:37:54,686 - 01:37:59,686] It doesn't transform under rotation of coordinates.
+- [01:37:59,686 - 01:38:01,686] It doesn't transform under rotation.
+- [01:38:01,686 - 01:38:03,686] A photon is a vector particle.
+- [01:38:03,686 - 01:38:05,686] It's described by a vector potential,
+- [01:38:05,686 - 01:38:07,686] which, when you rotate coordinates,
+- [01:38:07,686 - 01:38:10,686] the components of the vector change.
+- [01:38:10,686 - 01:38:14,686] The gravitational field is a tensor particle.
+- [01:38:14,686 - 01:38:16,686] Fermions...
+- [01:38:16,686 - 01:38:19,686] Simply stated, let me say it even simpler.
+- [01:38:19,686 - 01:38:23,686] A scalar particle is a particle with spin zero.
+- [01:38:23,686 - 01:38:25,686] No angular momentum.
+- [01:38:25,686 - 01:38:28,686] No spin angular momentum.
+- [01:38:28,686 - 01:38:30,686] That's the simplest statement of it.
+- [01:38:31,686 - 01:38:36,686] The z particle is a gauge boson as well?
+- [01:38:36,686 - 01:38:38,686] The z particle is a spin one particle.
+- [01:38:38,686 - 01:38:40,686] Oh, it's a spin one particle.
+- [01:38:40,686 - 01:38:43,686] All gauge particles are spin one.
+- [01:38:43,686 - 01:38:45,686] W plus and W minus are spin ones.
+- [01:38:45,686 - 01:38:47,686] They're the same as the z part...
+- [01:38:47,686 - 01:38:49,686] The spin is the same as the z particle,
+- [01:38:49,686 - 01:38:53,686] which is the same as a photon.
+- [01:38:53,686 - 01:38:56,686] All these particles called gauge bosons are very similar.
+- [01:38:56,686 - 01:38:58,686] I keep emphasizing they're very, very similar
+- [01:38:58,686 - 01:39:00,686] and parallel to...
+- [01:39:01,686 - 01:39:03,686] to the photon.
+- [01:39:03,686 - 01:39:06,686] They have a Maxwell-like description.
+- [01:39:10,686 - 01:39:13,686] For the vacuum energy problem you discussed,
+- [01:39:13,686 - 01:39:15,686] how come the...
+- [01:39:15,686 - 01:39:16,686] the...
+- [01:39:16,686 - 01:39:18,186] the Bose ground state doesn't
+- [01:39:18,186 - 01:39:19,686] cancel the Fermion ground state?
+- [01:39:19,686 - 01:39:21,686] Okay.
+- [01:39:21,686 - 01:39:23,686] Right.
+- [01:39:26,686 - 01:39:28,686] That would require, again,
+- [01:39:28,686 - 01:39:30,686] a huge amount of fine-tuning.
+- [01:39:31,686 - 01:39:37,686] The actual answers are a little more delicate.
+- [01:39:37,686 - 01:39:40,686] They involve various numbers here and so forth.
+- [01:39:40,686 - 01:39:45,686] There's infinitely many such terms,
+- [01:39:45,686 - 01:39:48,686] some of them positive, some of them negative.
+- [01:39:48,686 - 01:39:50,686] And the ones...
+- [01:39:50,686 - 01:39:52,686] some of the ones from Fermions are negative,
+- [01:39:52,686 - 01:39:53,686] some of the ones from...
+- [01:39:53,686 - 01:39:56,686] from bosons are positive.
+- [01:39:56,686 - 01:39:59,686] But unless the masses of the particles
+- [01:39:59,686 - 01:40:00,686] and the coupling constants
+- [01:40:00,686 - 01:40:03,686] were very delicately matched,
+- [01:40:03,686 - 01:40:06,686] they wouldn't cancel.
+- [01:40:06,686 - 01:40:09,686] Matching them is what supersymmetry does.
+- [01:40:09,686 - 01:40:11,686] Supersymmetry does exactly that.
+- [01:40:11,686 - 01:40:12,686] It cancels out the...
+- [01:40:12,686 - 01:40:14,686] The question was why
+- [01:40:14,686 - 01:40:16,686] Fermions and bosons...
+- [01:40:16,686 - 01:40:19,686] The questioner knows something.
+- [01:40:19,686 - 01:40:21,686] Well, the questioner knew
+- [01:40:21,686 - 01:40:24,686] is that at least the simplest Feynman diagrams
+- [01:40:24,686 - 01:40:27,686] for the vacuum energy of Fermions
+- [01:40:27,686 - 01:40:30,686] is negative the simplest corresponding diagram
+- [01:40:30,686 - 01:40:32,686] for bosons is positive.
+- [01:40:32,686 - 01:40:33,686] And in principle,
+- [01:40:33,686 - 01:40:35,686] if a Fermion and a
+- [01:40:35,686 - 01:40:37,686] boson had exactly the same mass,
+- [01:40:37,686 - 01:40:40,686] they could cancel each other in the vacuum energy.
+- [01:40:40,686 - 01:40:44,686] But if they have slightly different masses,
+- [01:40:44,686 - 01:40:46,686] then you're going to get, again,
+- [01:40:46,686 - 01:40:50,686] these quantities here with huge coefficients,
+- [01:40:50,686 - 01:40:53,686] which may be proportional to the mass difference,
+- [01:40:53,686 - 01:40:55,686] for example, of a Fermion and a boson,
+- [01:40:55,686 - 01:40:58,686] but...
+- [01:40:58,686 - 01:41:01,686] or different coupling constants.
+- [01:41:01,686 - 01:41:03,686] You would have to fine-tune it in any case
+- [01:41:03,686 - 01:41:05,686] to get it to work out.
+- [01:41:05,686 - 01:41:08,686] That's what supersymmetry sometimes does.
+- [01:41:11,686 - 01:41:12,686] Okay.
+- [01:41:12,686 - 01:41:14,686] If you want to know other questions...
+- [01:41:16,686 - 01:41:20,686] For more, please visit us at stanford.edu.
