@@ -1,0 +1,34 @@
+{
+  "course_rel": "supplementary/advanced_quantum_mechanics/2013_fall",
+  "transcript_rel": "supplementary/advanced_quantum_mechanics/2013_fall/191 - Advanced Quantum Mechanics Lecture 7 [l6vR825BR3c].md",
+  "video_rel": "supplementary/advanced_quantum_mechanics/2013_fall/191 - Advanced Quantum Mechanics Lecture 7 [l6vR825BR3c].mkv",
+  "lecture_number": 7,
+  "lecture_slug": "lecture_07",
+  "lecture_title": "Advanced Quantum Mechanics Lecture 7",
+  "assets": [
+    {
+      "name": "lecture_07_frame_01.png",
+      "timestamp_seconds": 505.02,
+      "timestamp_hhmmss": "00:08:25.020",
+      "source_candidate": "lecture_07_candidate_05_000825020.png",
+      "recommended_use": "figure",
+      "rationale": "Best early board frame: the infinite-well sketch is stable and legible, with labeled psi_1(x), psi_2(x), and node structure."
+    },
+    {
+      "name": "lecture_07_frame_02.png",
+      "timestamp_seconds": 3250.04,
+      "timestamp_hhmmss": "00:54:10.040",
+      "source_candidate": "lecture_07_candidate_09_005410040.png",
+      "recommended_use": "figure",
+      "rationale": "Cleanest unobstructed mid-lecture board state showing the Schrodinger eigenvalue equation, P=-i d/dx, and the 3D replacement by -nabla^2/2m."
+    },
+    {
+      "name": "lecture_07_frame_03.png",
+      "timestamp_seconds": 4187.64,
+      "timestamp_hhmmss": "01:09:47.640",
+      "source_candidate": "lecture_07_candidate_10_010947640.png",
+      "recommended_use": "tikz_reference",
+      "rationale": "Late-lecture board is only partially framed, but it is the best available reference for the emphasized field-energy/Hamiltonian layout with Psi^dagger(x)(-nabla^2/2m+V(x))."
+    }
+  ]
+}
