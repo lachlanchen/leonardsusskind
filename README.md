@@ -7,19 +7,17 @@
 > Led by [LazyingArt LLC](https://lazying.art). Websites: [lazying.art](https://lazying.art) and [learn.lazying.art](https://learn.lazying.art).
 
 [![Archive](https://img.shields.io/badge/archive-active-16a34a?style=flat-square)](#)
-[![Subtitles](https://img.shields.io/badge/subtitles-.srt-2563eb?style=flat-square)](#-canonical-paths)
-[![Transcripts](https://img.shields.io/badge/transcripts-markdown-0f766e?style=flat-square)](#-canonical-paths)
-[![Generated Notes](https://img.shields.io/badge/generated_notes-LaTeX-f97316?style=flat-square)](#-canonical-paths)
-[![PDF Outputs](https://img.shields.io/badge/outputs-PDF-a855f7?style=flat-square)](#-canonical-paths)
+[![Subtitles](https://img.shields.io/badge/subtitles-.srt-2563eb?style=flat-square)](#-repo-layout)
+[![Transcripts](https://img.shields.io/badge/transcripts-markdown-0f766e?style=flat-square)](#-repo-layout)
+[![Generated Notes](https://img.shields.io/badge/generated_notes-LaTeX-f97316?style=flat-square)](#-repo-layout)
+[![PDF Outputs](https://img.shields.io/badge/outputs-PDF-a855f7?style=flat-square)](#-repo-layout)
 [![Theoretical Minimum](https://img.shields.io/badge/focus-Theoretical%20Minimum-f59e0b?style=flat-square)](#)
 
 This repository is a physics-study archive centered on Leonard Susskind lectures, the broader *Theoretical Minimum* ecosystem, and transcript-derived companion notes.
 
-It is not only a PDF dump. The repository is organized so that lecture videos, subtitles, Markdown transcripts, generated TeX notes, compiled PDFs, and hand-maintained course folders all live in one place with stable paths.
+It combines lecture transcriptions, subtitle files, generated TeX notes, compiled PDFs, and hand-maintained course folders in a stable directory structure.
 
-If any material should not be mirrored here, open an issue or contact the maintainer and it can be reviewed or removed.
-
-> 📘 This repo provides full lecture transcriptions, subtitle files, generated TeX note workflows, and published course PDFs in one organized archive.
+> 📘 Full lecture transcriptions, subtitle files, generated TeX note workflows, and published course PDFs are maintained here in one archive.
 
 ## ✨ What This Repo Provides
 
@@ -98,7 +96,7 @@ The main transcript and subtitle archive in this repository is derived from this
   </tbody>
 </table>
 
-Inside `subtitles/`, `markdown/`, and `generated_course_notes/`, the archive is grouped in a human way: first `core/` or `supplementary/`, then the subject, then the specific course run.
+Within `subtitles/`, `markdown/`, and `generated_course_notes/`, material is organized by track (`core/` or `supplementary/`), then subject, then course run.
 
 For generated notes, each course folder usually contains:
 
@@ -126,7 +124,7 @@ Open the PDFs in the relevant course folder, for example:
 
 ### 📝 Read transcripts directly
 
-For the same lecture archive, use:
+Use:
 
 - `subtitles/` for subtitle-style reading and timestamp fidelity
 - `markdown/` for text review, searching, and note generation
@@ -151,9 +149,9 @@ Within each course run:
 
 ## 🤝 Collaboration
 
-Collaborations are welcome, especially if you want to improve the mathematical quality and reach of Leonard Susskind-related study material.
+Contributions that improve the mathematical quality, clarity, and preservation of Leonard Susskind-related study material are welcome.
 
-High-value contribution areas:
+Priority areas include:
 
 - transcript cleanup
   - fix speaker attribution
@@ -172,9 +170,7 @@ High-value contribution areas:
   - connect related Susskind lectures, books, and note sets
   - help spread and preserve this body of physics teaching responsibly
 
-If you contribute, prefer focused commits and mention the exact folders, transcripts, or course runs you changed.
-
-> 🛠️ If you care about physics communication, TeX quality, transcript correctness, or preserving Susskind-related teaching material, this repository is meant to be collaboratively improved.
+Contributions should use focused commits and identify the exact folders, transcripts, or course runs changed.
 
 ## 🙏 Acknowledgements
 

@@ -11,7 +11,7 @@ These PDFs are derived from the transcript-driven note pipeline under:
 
 - `generated_course_notes/supplementary/advanced_quantum_mechanics/2013_fall/`
 
-The current top-level PDFs in this folder are the formal artifacts readers should open first.
+The current top-level PDFs in this folder are the canonical published artifacts.
 
 ## Course Snapshot
 
@@ -27,7 +27,7 @@ The current top-level PDFs in this folder are the formal artifacts readers shoul
 
 1. Open `course.pdf` for the full compiled book.
 2. Open `lecture_01.pdf` through `lecture_10.pdf` for chapter-sized reading.
-3. Use the generated-note tree if you need the intermediate note assets, figures, or LaTeX chapter files.
+3. Consult the generated-note tree for intermediate note assets, figures, or LaTeX chapter files.
 
 ## Publication Notes
 
@@ -42,4 +42,4 @@ The current top-level PDFs in this folder are the formal artifacts readers shoul
 
 ## Local Workspace Notes
 
-Local-only working material may exist beside these PDFs, but the published reader-facing artifacts for this folder are the top-level `course.pdf` and `lecture_*.pdf` files.
+Local-only working material may exist beside these PDFs, but the published artifacts for this folder are the top-level `course.pdf` and `lecture_*.pdf` files.
