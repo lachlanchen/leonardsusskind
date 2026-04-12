@@ -1,0 +1,284 @@
+\chapter{Black Hole Horizons and Evaporation}
+
+These notes follow Leonard Susskind's third lecture in the supplementary 2011 ``Winter Topics in String Theory'' track, curated by LazyingArt LLC. The lecture has a clear arc. It begins with a physical claim that sounds almost paradoxical: for a sufficiently large black hole, the horizon should be locally boring, even though the Schwarzschild metric seems to develop a singular behavior there. Susskind resolves that tension by rewriting the near-horizon region in more suitable coordinates, then turns to the observational meaning of the horizon, and finally returns to black-hole thermodynamics, temperature, negative specific heat, and evaporation.
+
+\section{The Puzzle at the Horizon}
+
+Susskind begins with a claim carried over from the previous lecture: nothing especially violent should happen to an observer who falls through the horizon of a large black hole. If the black hole is large enough, the local geometry at the horizon should look almost like empty flat space. The puzzle is that the standard Schwarzschild metric does not look harmless at \(r=2MG\). One coefficient vanishes there, another seems to diverge, and the metric appears to signal some dramatic event.
+
+The lecture therefore starts not by asserting a theorem, but by posing a problem of interpretation. Is the horizon physically singular, or is the singularity only a defect of coordinates? The rest of the first half is designed to answer exactly that question.
+
+\section{Metric Conventions and the Schwarzschild Form}
+
+Susskind changes conventions at the outset. Earlier lectures used \(d\tau^2\), positive on timelike intervals. Here he flips the overall sign and writes \(ds^2\), which he describes as a ``proper distance squared'' convention. The mathematical content is the same, but the later formulas are organized in this sign choice.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.55\textwidth]{lecture_03_figure_02.png}
+\caption{Board evidence for the sign-convention switch and the beginning of the Schwarzschild rewrite. The board line is transitional; the transcript controls the final metric written below.}
+\end{figure}
+
+\begin{remark}
+The board frame shows
+\[
+ds^2 = dt^2 - dx^2,
+\]
+but this is best read as a transitional reference line written during the convention shift. For the Schwarzschild analysis, the transcript gives the reliable sign structure.
+\end{remark}
+
+Suppressing the angular term, exactly as Susskind does in the lecture, the radial-time part of the Schwarzschild metric is
+\begin{equation}
+ds^2 = -\left(1-\frac{2MG}{r}\right)dt^2 + \frac{dr^2}{1-\frac{2MG}{r}}.
+\end{equation}
+Here \(2MG\) is the Schwarzschild radius; in conventional units it would be \(2MG/c^2\), but throughout the geometric discussion Susskind sets \(c=1\).
+
+Far from the black hole, the metric reduces to the flat radial-time form,
+\begin{equation}
+ds^2 \approx -dt^2 + dr^2 \qquad (r \gg 2MG),
+\end{equation}
+so there is no surprise there. The difficulty appears near \(r=2MG\), where
+\[
+1-\frac{2MG}{r} \to 0.
+\]
+One coefficient goes to zero, and the reciprocal coefficient becomes large. The lecture now pauses before doing any black-hole algebra and inserts a coordinate warm-up.
+
+\section{A Coordinate Warm-Up: Polar and Hyperbolic Polar Coordinates}
+
+\subsection{Ordinary polar coordinates}
+
+Susskind first reviews ordinary Cartesian coordinates on the plane. The metric is
+\begin{equation}
+ds^2 = dx^2 + dy^2.
+\end{equation}
+Introducing polar coordinates,
+\begin{equation}
+x=\rho\cos\theta,
+\qquad
+y=\rho\sin\theta,
+\end{equation}
+one finds the familiar polar metric
+\begin{equation}
+ds^2 = d\rho^2 + \rho^2 d\theta^2.
+\end{equation}
+
+The point of the example is not the formula itself, but the behavior of the coefficient of \(d\theta^2\). At \(\rho=0\), that coefficient vanishes. Yet nothing physically singular happens at the origin. Motion in the angular direction simply ceases to represent a finite displacement there. The lesson is that a vanishing metric coefficient can be a harmless coordinate feature.
+
+\subsection{Hyperbolic polar coordinates in Minkowski space}
+
+The second warm-up is the one the lecture really needs. In \(1+1\)-dimensional Minkowski space the metric is
+\begin{equation}
+ds^2 = -dt^2 + dx^2.
+\end{equation}
+Susskind introduces a radial variable \(\rho\) and a hyperbolic angle \(\omega\),
+\begin{equation}
+x=\rho\cosh\omega,
+\qquad
+t=\rho\sinh\omega,
+\end{equation}
+with the basic identity
+\begin{equation}
+\cosh^2\omega-\sinh^2\omega = 1.
+\end{equation}
+These are the hyperbolic analogues of \(x=\rho\cos\theta\), \(y=\rho\sin\theta\). Unlike the ordinary angle \(\theta\), which is periodic, \(\omega\) runs from \(-\infty\) to \(+\infty\).
+
+Substituting these relations into the Minkowski metric gives
+\begin{equation}
+ds^2 = -\rho^2 d\omega^2 + d\rho^2.
+\end{equation}
+This is still just flat Minkowski space. The geometry has not changed; only the coordinates have changed. Susskind explicitly leaves this formula on the board because it is the pattern he wants the audience to recognize when the Schwarzschild metric is expanded near the horizon.
+
+\section{The Near-Horizon Reduction of the Schwarzschild Metric}
+
+The decisive calculation now begins. First rewrite the Schwarzschild metric in a slightly neater form:
+\begin{align}
+ds^2
+&= -\left(1-\frac{2MG}{r}\right)dt^2 + \frac{dr^2}{1-\frac{2MG}{r}} \\
+&= -\frac{r-2MG}{r}\,dt^2 + \frac{r}{r-2MG}\,dr^2.
+\end{align}
+This is only algebra; no approximation has yet been made.
+
+The next step is the important one. Near the horizon, \(r\) is very close to \(2MG\). Susskind insists on a careful asymmetric approximation:
+\begin{itemize}
+\item replace \(r\) by \(2MG\) in slowly varying factors;
+\item do \emph{not} replace \(r-2MG\) by anything constant, because it changes sign across the horizon.
+\end{itemize}
+With that rule, the metric becomes
+\begin{equation}
+ds^2 \approx -\frac{r-2MG}{2MG}\,dt^2 + \frac{2MG}{r-2MG}\,dr^2.
+\end{equation}
+
+Now choose a new radial coordinate \(\rho\) so that the radial term is exactly \(d\rho^2\):
+\begin{equation}
+d\rho^2 = \frac{2MG}{r-2MG}\,dr^2.
+\end{equation}
+Equivalently,
+\begin{equation}
+d\rho = \sqrt{\frac{2MG}{r-2MG}}\,dr.
+\end{equation}
+Integrating gives
+\begin{equation}
+\rho = 2\sqrt{2MG}\,\sqrt{r-2MG},
+\end{equation}
+so that
+\begin{equation}
+\rho^2 = 8MG(r-2MG),
+\qquad
+r-2MG = \frac{\rho^2}{8MG}.
+\end{equation}
+
+Substituting this back into the metric gives the intermediate near-horizon form
+\begin{equation}
+ds^2 = -\frac{\rho^2\,dt^2}{16M^2G^2} + d\rho^2.
+\end{equation}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.52\textwidth]{lecture_03_figure_04.png}
+\caption{Board evidence for the intermediate near-horizon coefficient \(\rho^2/(16M^2G^2)\). The full displayed equation is reconstructed from the transcript rather than read literally from the cropped frame.}
+\end{figure}
+
+Only one nuisance factor remains. Rescale the Schwarzschild time by
+\begin{equation}
+\omega = \frac{t}{4MG},
+\qquad
+d\omega^2 = \frac{dt^2}{16M^2G^2}.
+\end{equation}
+Then the metric becomes
+\begin{equation}
+ds^2 = -\rho^2 d\omega^2 + d\rho^2.
+\end{equation}
+This is exactly the hyperbolic-polar metric of flat Minkowski space.
+
+That is the mathematical payoff of the first half of the lecture. Near \(r=2MG\), the Schwarzschild metric is not developing a physical singularity. It is approaching flat space written in coordinates that are singular in the same harmless way that polar coordinates are singular at the origin. In this sense the horizon is locally boring.
+
+\section{Horizon Geometry and Accelerated Observers}
+
+The algebra is not the end of the argument; it is only the beginning of the interpretation. In the new variables,
+\begin{equation}
+\rho=0 \iff r=2MG.
+\end{equation}
+Thus the horizon corresponds to the place where the hyperbolic-polar coordinates pinch off. Outside the black hole, \(r>2MG\), so \(\rho^2>0\). Constant \(r\) trajectories correspond, near the horizon, to constant \(\rho\) trajectories in the right Rindler wedge.
+
+Along a fixed-\(\rho\) worldline one has \(d\rho=0\), and the metric reduces to
+\begin{equation}
+ds^2 = -\rho^2 d\omega^2.
+\end{equation}
+So the proper time along that worldline is
+\begin{equation}
+d\tau = \rho\,d\omega.
+\end{equation}
+This is Susskind's answer to the question whether \(\omega\) is proper time: not exactly, but up to the multiplicative factor \(\rho\) on each constant-\(\rho\) trajectory.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.62\textwidth]{lecture_03_figure_05.png}
+\caption{Board evidence for the near-horizon causal sketch, the \(\omega\)-rescaling, and the construction of constant-\(r\) curves outside the horizon.}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\begin{tikzpicture}[scale=1.15]
+\draw[thin,->] (-3.2,0) -- (3.4,0);
+\draw[thin,->] (0,-3.2) -- (0,3.4);
+
+\draw[thick] (-2.8,-2.8) -- (2.8,2.8);
+\draw[thick] (-2.8,2.8) -- (2.8,-2.8);
+
+\fill (0,0) circle (1.4pt);
+
+\draw[thick,domain=-1.15:1.15,smooth,variable=\u] plot ({0.85*cosh(\u r)},{0.85*sinh(\u r)});
+\draw[thick,domain=-1.15:1.15,smooth,variable=\u] plot ({1.35*cosh(\u r)},{1.35*sinh(\u r)});
+\draw[thick,domain=-1.15:1.15,smooth,variable=\u] plot ({1.9*cosh(\u r)},{1.9*sinh(\u r)});
+
+\draw[thick] (1.1,-2.7) .. controls (0.95,-1.4) and (0.95,1.4) .. (1.1,2.7);
+
+\draw[thick] (0.2,0.9) -- (2.3,3.0);
+
+\draw[thin] (1.55,1.55) -- (2.6,2.6);
+\draw[thin] (1.7,1.35) -- (2.8,2.45);
+\draw[thin] (1.9,1.15) -- (3.0,2.25);
+\draw[thin] (2.1,0.95) -- (3.15,2.0);
+
+\node at (2.15,-0.45) {fixed \(r\)};
+\node at (0.65,0.25) {\(\rho=0\)};
+\node at (2.25,2.9) {outgoing light ray};
+\end{tikzpicture}
+\caption{Clean schematic version of the same near-horizon Rindler picture: null boundaries, constant-\(\rho\) worldlines outside the horizon, and an outgoing light ray that reaches all sufficiently large fixed-\(r\) observers.}
+\end{figure}
+
+The lecture now turns causal. A stationary outside observer, like Bob, follows a curved trajectory of constant \(\rho\), so Bob is accelerated. An infalling observer, Alice, is locally inertial and crosses the horizon without meeting any violent local event. Yet Bob never sees Alice cross. Signals emitted by Alice as she approaches the horizon reach Bob ever more slowly; from Bob's viewpoint she asymptotically freezes near the horizon. Alice, by contrast, crosses smoothly and continues to see Bob for some time. This asymmetry is not a contradiction. It is the observational content of the horizon.
+
+Susskind then broadens the lesson. The same causal structure occurs even in flat space for a uniformly accelerated observer. In that case one speaks of an acceleration horizon. The point is not merely analogical. The near-horizon Schwarzschild geometry has been reduced to precisely that accelerated-observer picture.
+
+\section{Temperature, Negative Specific Heat, and Evaporation}
+
+After the break Susskind returns to the thermodynamic discussion from the previous lecture. The starting point is the bit-counting picture: one builds a black hole by dropping in photons, each carrying one bit of information. The energy added by one such photon determines the temperature, up to the order-one constants that were ignored in the earlier heuristic discussion.
+
+Take a photon whose wavelength is of order the hole size,
+\begin{equation}
+\lambda \sim R_s \sim 2MG.
+\end{equation}
+Its energy is
+\begin{equation}
+E_\gamma \sim \frac{hc}{\lambda}.
+\end{equation}
+Since the temperature is the minimal energy cost per added bit, one gets the estimate
+\begin{equation}
+T \sim \frac{hc}{\lambda} \sim \frac{hc^3}{GM}.
+\end{equation}
+The lecture then inserts the correct numerical normalization:
+\begin{equation}
+T_H = \frac{\hbar c^3}{8\pi GM}.
+\end{equation}
+The crucial dependence is
+\begin{equation}
+T_H \propto \frac{1}{M}.
+\end{equation}
+The larger the black hole, the colder it is.
+
+For a stellar-mass black hole, the lecture quotes a temperature of order
+\[
+10^{-8}\ \text{Kelvin},
+\]
+far below the present microwave background temperature. Such a black hole is therefore colder than its environment and absorbs radiation rather than emitting it. But this behavior is unstable. If a black hole absorbs energy, its mass increases, and since \(T_H \propto 1/M\), it gets colder; if it loses energy, its mass decreases and it gets hotter. This is the characteristic negative specific heat of gravitating systems.
+
+To estimate the evaporation rate, Susskind switches to Planck units,
+\[
+c=\hbar=G=1.
+\]
+Then energy and mass are the same, and the luminosity is written dimensionally as
+\begin{equation}
+L = -\frac{dE}{dt} \sim A T^4.
+\end{equation}
+For a black hole,
+\begin{equation}
+A \sim R_s^2 \sim M^2,
+\qquad
+T \sim \frac{1}{R_s} \sim \frac{1}{M},
+\end{equation}
+so
+\begin{equation}
+-\frac{dM}{dt} \sim M^2\left(\frac{1}{M}\right)^4 = \frac{1}{M^2}.
+\end{equation}
+Equivalently,
+\begin{equation}
+M^2\frac{dM}{dt} \sim -1.
+\end{equation}
+Up to ignored order-one factors, this says
+\begin{equation}
+\frac{d(M^3)}{dt} \sim -1,
+\end{equation}
+and therefore
+\begin{equation}
+t_{\mathrm{evap}} \sim M^3.
+\end{equation}
+
+This scaling is the main mathematical point. Very large black holes evaporate extraordinarily slowly; the lecture's solar-mass estimate puts the lifetime vastly beyond the present age of the universe. The later numerical discussion of mountain-mass or kilogram-scale black holes is intentionally rough and, in places, garbled in the transcript, but the scaling law \(t_{\mathrm{evap}}\sim M^3\) is the part that should be preserved.
+
+The lecture closes not by solving the black-hole information problem, but by sharpening it. A black hole has entropy, temperature, and radiation. That strongly suggests hidden microscopic degrees of freedom beyond classical general relativity, much as ordinary thermodynamics suggests atomic microstructure beneath fluid dynamics. The question is then no longer merely whether information falls through the horizon, but how a theory with entropy and evaporation can remain consistent with information conservation.
+
+\section{Summary}
+
+The chapter has two intertwined themes. First, the Schwarzschild horizon is locally nonsingular: after a careful change of variables, the near-horizon geometry becomes flat Minkowski space in hyperbolic-polar coordinates. Second, black holes are thermodynamic systems: they have a temperature inversely proportional to their mass, a negative specific heat, and an evaporation time that scales like \(M^3\) in Planck units.
+
+Susskind's pedagogical strategy is to move back and forth between algebra and interpretation. The coordinate warm-up explains why singular-looking coefficients need not signal a physical singularity, and the later thermodynamic discussion explains why the horizon, though locally boring for the infalling observer, still leads to deep and unresolved questions about information, radiation, and the microscopic structure of gravity.
