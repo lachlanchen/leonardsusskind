@@ -75,6 +75,8 @@ STOPWORDS = {
     "shall", "should", "does", "did", "done", "make", "made", "take", "takes",
 }
 
+FFMPEG_BINARY_CACHE: str | None = None
+
 REFERENCE_PDF_HINTS = {
     "classical_mechanics": ["Classical_Mechanics"],
     "quantum_mechanics": ["Quantum_Mechanics"],
@@ -616,6 +618,46 @@ def run_command(
     return completed
 
 
+def select_ffmpeg_binary() -> str:
+    global FFMPEG_BINARY_CACHE
+    if FFMPEG_BINARY_CACHE:
+        return FFMPEG_BINARY_CACHE
+
+    candidates: list[str] = []
+    env_ffmpeg = os.environ.get("FFMPEG_BINARY")
+    if env_ffmpeg:
+        candidates.append(env_ffmpeg)
+    for path in ("/usr/bin/ffmpeg", shutil.which("ffmpeg")):
+        if path and path not in candidates:
+            candidates.append(path)
+
+    first_existing: str | None = None
+    for candidate in candidates:
+        if not Path(candidate).exists():
+            continue
+        if first_existing is None:
+            first_existing = candidate
+        try:
+            completed = subprocess.run(
+                [candidate, "-decoders"],
+                text=True,
+                stdout=subprocess.PIPE,
+                stderr=subprocess.DEVNULL,
+                check=False,
+            )
+        except OSError:
+            continue
+        if completed.returncode == 0 and re.search(r"\b(libdav1d|libaom-av1|av1)\b", completed.stdout):
+            FFMPEG_BINARY_CACHE = candidate
+            return candidate
+
+    if first_existing is None:
+        raise RuntimeError("No ffmpeg binary found in PATH or standard locations.")
+
+    FFMPEG_BINARY_CACHE = first_existing
+    return first_existing
+
+
 def extract_window_candidate_frames(
     lecture: LectureInfo,
     runtime_dir: Path,
@@ -637,7 +679,7 @@ def extract_window_candidate_frames(
             ffmpeg_stdout = ffmpeg_dir / f"{basename}.stdout.log"
             ffmpeg_stderr = ffmpeg_dir / f"{basename}.stderr.log"
             cmd = [
-                "ffmpeg",
+                select_ffmpeg_binary(),
                 "-y",
                 "-loglevel",
                 "error",
