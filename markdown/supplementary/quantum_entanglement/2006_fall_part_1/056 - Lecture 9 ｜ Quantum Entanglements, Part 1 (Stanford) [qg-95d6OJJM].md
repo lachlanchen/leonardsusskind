@@ -1,0 +1,2197 @@
+# Transcript
+
+Source: supplementary/quantum_entanglement/2006_fall_part_1/056 - Lecture 9 ｜ Quantum Entanglements, Part 1 (Stanford) [qg-95d6OJJM].mp4
+
+- [00:00:00,000 - 00:00:10,480] This program is brought to you by Stanford University.
+- [00:00:10,480 - 00:00:13,200] Please visit us at stanford.edu.
+- [00:00:15,760 - 00:00:18,480] Let's go on from where we were.
+- [00:00:22,000 - 00:00:25,840] We were talking about how systems change with time.
+- [00:00:25,840 - 00:00:28,440] I want to go back over that since
+- [00:00:28,440 - 00:00:31,040] partly I don't remember where we were exactly.
+- [00:00:31,759 - 00:00:33,999] But second of all, it's always
+- [00:00:33,999 - 00:00:36,240] worth going over last week's material.
+- [00:00:39,120 - 00:00:41,120] It does not mean I don't have to
+- [00:00:41,120 - 00:00:43,120] make new notes. I always throw away my notes
+- [00:00:43,120 - 00:00:46,120] to make absolutely sure that I don't use the
+- [00:00:46,120 - 00:00:49,120] same notes twice. That's a very bad thing to do.
+- [00:00:50,960 - 00:00:53,120] Okay, but I do like to go over the material
+- [00:00:53,120 - 00:00:55,280] that we studied last week and just make sure everybody
+- [00:00:55,840 - 00:00:58,960] has it solidly. All right, so the state
+- [00:00:58,960 - 00:01:02,080] of a system is described by a ket vector,
+- [00:01:03,360 - 00:01:06,920] and we call it psi. Now up till now we've
+- [00:01:06,920 - 00:01:10,480] just thought of a psi as a thing which doesn't depend
+- [00:01:10,480 - 00:01:13,000] on time. In fact, we haven't even talked about
+- [00:01:13,000 - 00:01:15,520] time. We did last week, but before last week we
+- [00:01:15,520 - 00:01:19,000] didn't even talk about time. We just
+- [00:01:19,000 - 00:01:22,480] looked at the interrelationship between quantum states,
+- [00:01:23,120 - 00:01:24,440] observables, measurements, and other things. So
+- [00:01:24,440 - 00:01:25,760] we're going to go over that.
+- [00:01:25,760 - 00:01:27,920] Okay, so here we have a system of time.
+- [00:01:27,920 - 00:01:29,760] Now we want to know the interrelationship between
+- [00:01:29,760 - 00:01:31,600] time and space, right? So we had time
+- [00:01:31,600 - 00:01:33,720] and space and that sort of thing. Now we
+- [00:01:33,720 - 00:01:35,840] want to ask how the quantum state changes with time.
+- [00:01:35,840 - 00:01:39,640] So we want to put a time argument in there.
+- [00:01:39,640 - 00:01:43,440] It's simply a vector which moves around in the vector
+- [00:01:43,440 - 00:01:46,560] space with time. Roll is that it moves
+- [00:01:46,560 - 00:01:49,680] around under the influence of a linear operator.
+- [00:01:50,320 - 00:01:52,800] And so we can write that psi
+- [00:01:52,800 - 00:01:55,280] of t is some unit, some linear operator,
+- [00:01:55,760 - 00:01:58,140] zero. That's about the most general thing
+- [00:01:58,140 - 00:02:00,520] that we could write down. So far I
+- [00:02:00,520 - 00:02:02,130] haven't told you what u is, but it's
+- [00:02:02,130 - 00:02:03,740] the most general thing that I could write
+- [00:02:03,740 - 00:02:06,560] down under the assumption that
+- [00:02:06,560 - 00:02:09,380] state vectors change linearly. Now that's
+- [00:02:09,380 - 00:02:12,530] something that, as I've emphasized many times,
+- [00:02:12,530 - 00:02:15,680] I cannot give you a proof of.
+- [00:02:15,680 - 00:02:18,480] It's basically a postulate, but it's
+- [00:02:18,480 - 00:02:21,280] a postulate that's rooted in an experiment,
+- [00:02:21,280 - 00:02:23,080] plus the fact that anybody who ever
+- [00:02:23,080 - 00:02:24,880] tries to change it and do something
+- [00:02:24,880 - 00:02:26,780] different always winds up in
+- [00:02:26,780 - 00:02:28,680] some conceptual problems. Energy isn't
+- [00:02:28,680 - 00:02:31,750] conserved or something else, something
+- [00:02:31,750 - 00:02:34,820] bad. Probability isn't well-defined or
+- [00:02:34,820 - 00:02:38,100] whatever. So we'll take it as a postulate
+- [00:02:38,100 - 00:02:41,380] that the way systems change with time is
+- [00:02:41,380 - 00:02:44,070] through linear operators. Linear
+- [00:02:44,070 - 00:02:46,760] operators just mean basically matrices,
+- [00:02:46,760 - 00:02:50,730] but matrices which are now time dependent.
+- [00:02:50,730 - 00:02:54,700] We can apply the same rule or
+- [00:02:54,700 - 00:02:54,720] a
+- [00:02:54,720 - 00:02:54,859] rule or a
+- [00:02:54,860 - 00:02:57,010] rule or the analogous or the
+- [00:02:57,010 - 00:02:59,160] related rule, actually the complex conjugate rule,
+- [00:02:59,160 - 00:03:04,040] to how bra vectors change with time. So
+- [00:03:04,040 - 00:03:08,920] here's some other bra vector, and this is
+- [00:03:08,920 - 00:03:11,880] basically the complex conjugate of some ket
+- [00:03:11,880 - 00:03:14,840] vector, and so we have to complex
+- [00:03:14,840 - 00:03:18,830] conjugate on the right-hand side, phi of zero,
+- [00:03:18,830 - 00:03:22,820] but then instead of u we have to
+- [00:03:22,820 - 00:03:23,760] write the conjugate. U of t is the conjugate of
+- [00:03:23,760 - 00:03:24,700] t, and then we have to write the conjugate of t.
+- [00:03:24,700 - 00:03:28,200] Remember what dagger means? From the point of
+- [00:03:28,200 - 00:03:31,700] view of matrices, it means you do two operations.
+- [00:03:31,700 - 00:03:34,519] You complex conjugate all the elements, and you
+- [00:03:34,519 - 00:03:37,339] reflect them. You transpose them about the diagonal.
+- [00:03:37,339 - 00:03:40,689] So these two rules are basically the same rule,
+- [00:03:40,689 - 00:03:44,040] one of them just the complex conjugate of the other.
+- [00:03:44,040 - 00:03:49,290] Now the assumption about how systems change, you can express it
+- [00:03:49,290 - 00:03:54,540] in various ways. You can just express it as probability conservation.
+- [00:03:54,540 - 00:03:59,540] If the total probability is equal to one, which it's supposed
+- [00:03:59,540 - 00:04:04,540] to be, then it should remain that way for all time.
+- [00:04:04,540 - 00:04:08,290] What is the total probability? The total probability is the inner
+- [00:04:08,290 - 00:04:12,040] product of the vector with itself, of the state vector with itself.
+- [00:04:12,040 - 00:04:18,209] And so we always write that physical real state vectors satisfy psi psi
+- [00:04:18,209 - 00:04:24,380] equals one, and we're not going to allow that to change with time.
+- [00:04:24,380 - 00:04:30,880] So that means that for all time, psi dagger psi, or
+- [00:04:30,880 - 00:04:37,380] psi conjugate psi, taking the inner product, should be unchanged with time.
+- [00:04:37,380 - 00:04:41,380] It's not hard to prove from that that the inner
+- [00:04:41,380 - 00:04:45,380] product of any two vectors has to be time independent.
+- [00:04:45,380 - 00:04:48,880] It's rather easy to prove. I'm going
+- [00:04:48,880 - 00:04:52,380] to... I'll tell you how you do it.
+- [00:04:52,380 - 00:04:54,380] How would you do it for ordinary vectors?
+- [00:04:54,380 - 00:04:59,880] How would you prove for ordinary vectors that if the length of every
+- [00:04:59,880 - 00:05:05,380] vector stays fixed, then the inner product between any pair of vectors stays fixed?
+- [00:05:05,380 - 00:05:09,880] And the way you do it is you take any
+- [00:05:09,880 - 00:05:14,380] pair of vectors, and you look at the difference of them.
+- [00:05:14,380 - 00:05:18,380] There's the difference of the two vectors.
+- [00:05:18,380 - 00:05:20,880] Now if the assumption is that the
+- [00:05:20,880 - 00:05:23,380] length of every vector stays invariant, stays unchanged,
+- [00:05:23,380 - 00:05:25,380] when you do some operation,
+- [00:05:25,380 - 00:05:27,380] some linear operation in particular,
+- [00:05:27,380 - 00:05:31,380] that means the sides of each one of
+- [00:05:31,380 - 00:05:35,380] these triangles shouldn't change under the corresponding operation.
+- [00:05:35,380 - 00:05:38,880] If the sides of the triangle don't change, that means the angle between
+- [00:05:38,880 - 00:05:42,380] these two vectors, as well as the length of these two vectors, doesn't change,
+- [00:05:42,380 - 00:05:44,380] and therefore the inner product, or
+- [00:05:44,380 - 00:05:46,380] the dot product between them, doesn't change.
+- [00:05:46,380 - 00:05:49,380] So from the assumption that the length
+- [00:05:49,380 - 00:05:52,380] of every vector doesn't change with time,
+- [00:05:53,380 - 00:05:58,380] the inner product with itself, it's also possible to prove that
+- [00:05:58,380 - 00:06:03,380] the inner product between any pair of them doesn't change with time.
+- [00:06:03,380 - 00:06:06,880] If that's true, we can now
+- [00:06:06,880 - 00:06:10,380] write down a more general statement
+- [00:06:10,380 - 00:06:18,380] that phi of t, inner product with psi of t,
+- [00:06:18,380 - 00:06:22,380] is exactly equal to phi at time zero,
+- [00:06:22,380 - 00:06:26,380] times psi at time zero.
+- [00:06:26,380 - 00:06:28,380] If the inner product doesn't change.
+- [00:06:28,380 - 00:06:32,380] Okay, now plug in that phi of t and
+- [00:06:32,380 - 00:06:36,380] psi of t are related by this object called u,
+- [00:06:36,380 - 00:06:39,880] and so that becomes phi of zero,
+- [00:06:39,880 - 00:06:43,380] u dagger of t, u of t,
+- [00:06:43,380 - 00:06:46,380] u of t because that's what you
+- [00:06:46,380 - 00:06:49,380] do to psi, times psi of zero.
+- [00:06:49,380 - 00:06:51,380] So now we have a simple rule.
+- [00:06:52,380 - 00:06:56,380] That phi of zero, that u dagger
+- [00:06:56,380 - 00:07:00,380] u, sandwiched between any pair of vectors whatever,
+- [00:07:00,380 - 00:07:04,380] is just equal to the inner product of
+- [00:07:04,380 - 00:07:08,380] the same pair of vectors without u dagger u.
+- [00:07:08,380 - 00:07:14,380] That's a simple elementary theorem that if the
+- [00:07:14,380 - 00:07:20,380] inner product of the matrix element of an operator
+- [00:07:20,380 - 00:07:26,380] is equal to the inner product for all vectors,
+- [00:07:26,380 - 00:07:28,880] then you can immediately conclude that u
+- [00:07:28,880 - 00:07:31,380] dagger u is just the unit operator.
+- [00:07:31,380 - 00:07:33,380] So the only way to make this happen
+- [00:07:33,380 - 00:07:35,380] is if u dagger u, for every vector,
+- [00:07:35,380 - 00:07:36,880] I mean the point is this is
+- [00:07:36,880 - 00:07:38,380] true for every vector in the vector space,
+- [00:07:38,380 - 00:07:42,380] the only way that can be true is if
+- [00:07:42,380 - 00:07:46,380] u dagger u, u dagger u is equal to one.
+- [00:07:46,380 - 00:07:47,880] An operator with that product,
+- [00:07:47,880 - 00:07:49,380] a linear operator with that product,
+- [00:07:49,380 - 00:07:52,380] is called unitary.
+- [00:07:52,380 - 00:07:55,380] It's the analog, it's the
+- [00:07:55,380 - 00:07:58,380] analog for numbers, for complex numbers,
+- [00:07:58,380 - 00:08:00,880] of a complex number having
+- [00:08:00,880 - 00:08:03,380] unit length in the complex plane.
+- [00:08:03,380 - 00:08:06,880] It's the analog of a number having
+- [00:08:06,880 - 00:08:10,380] the form e to the i theta.
+- [00:08:10,380 - 00:08:12,380] e to the i theta times its
+- [00:08:12,380 - 00:08:14,380] own complex conjugate is equal to one.
+- [00:08:14,380 - 00:08:16,380] That's not what a unitary operator
+- [00:08:16,380 - 00:08:18,380] is, but it's the analog of that.
+- [00:08:18,380 - 00:08:20,880] That the operator times its permission
+- [00:08:20,880 - 00:08:23,380] conjugate is equal to the unit operator.
+- [00:08:23,380 - 00:08:26,380] Okay.
+- [00:08:26,380 - 00:08:29,380] Then we, I think we derived this last time,
+- [00:08:29,380 - 00:08:31,880] I think we derived much of what I'm
+- [00:08:31,880 - 00:08:34,380] going to say today, but let's do it anyway.
+- [00:08:34,380 - 00:08:37,880] Supposing now, to get an idea
+- [00:08:37,880 - 00:08:41,380] of how, of what u is,
+- [00:08:41,380 - 00:08:43,880] supposing instead of allowing time to
+- [00:08:43,880 - 00:08:46,380] evolve for a large amount of time,
+- [00:08:46,380 - 00:08:47,380] but let's just allow it
+- [00:08:47,380 - 00:08:48,380] to evolve for a long time,
+- [00:08:48,380 - 00:08:50,380] for a very short amount of time.
+- [00:08:50,380 - 00:08:52,380] Now this is something that
+- [00:08:52,380 - 00:08:54,380] one is always doing in physics,
+- [00:08:54,380 - 00:08:59,380] studying how things change with respect to some parameter
+- [00:08:59,380 - 00:09:03,380] by chopping up the change into little infinitesimal pieces,
+- [00:09:03,380 - 00:09:06,380] and then studying how things change under an infinitesimal,
+- [00:09:06,380 - 00:09:08,380] under a very small change,
+- [00:09:08,380 - 00:09:11,380] and then building up big changes by superimposing,
+- [00:09:11,380 - 00:09:15,380] or what's the right word, juxtaposing lots of small changes.
+- [00:09:15,380 - 00:09:16,380] So, take the time interval,
+- [00:09:16,380 - 00:09:18,380] chop it up into a lot of small changes,
+- [00:09:18,380 - 00:09:19,380] into little pieces,
+- [00:09:19,380 - 00:09:21,880] and instead of asking what u
+- [00:09:21,880 - 00:09:24,380] is for a finite amount of time,
+- [00:09:24,380 - 00:09:26,380] ask what u would be for
+- [00:09:26,380 - 00:09:28,380] a very, very small time interval,
+- [00:09:28,380 - 00:09:31,380] and then we'll try to build up what
+- [00:09:31,380 - 00:09:34,380] u should be for a large time interval.
+- [00:09:34,380 - 00:09:36,380] If we know how a system
+- [00:09:36,380 - 00:09:38,380] changes over every small time interval,
+- [00:09:38,380 - 00:09:40,380] then it should be possible to build
+- [00:09:40,380 - 00:09:42,380] up how it changes over long time intervals.
+- [00:09:42,380 - 00:09:44,880] This is exactly, of course,
+- [00:09:44,880 - 00:09:47,380] the same logic as Newtonian mechanics,
+- [00:09:48,380 - 00:09:51,380] where you study the motion of a system
+- [00:09:51,380 - 00:09:54,380] by breaking up the time interval into little tiny segments,
+- [00:09:54,380 - 00:09:57,380] and then deriving differential equations.
+- [00:09:57,380 - 00:09:59,380] So it's not a new idea,
+- [00:09:59,380 - 00:10:00,880] so we're going to take
+- [00:10:00,880 - 00:10:02,380] the time t to be small.
+- [00:10:02,380 - 00:10:05,380] t equals epsilon,
+- [00:10:05,380 - 00:10:08,380] that just means it's small,
+- [00:10:08,380 - 00:10:11,380] and the assumption is that epsilon is small enough
+- [00:10:11,380 - 00:10:14,380] that epsilon squared can be ignored.
+- [00:10:14,380 - 00:10:17,380] Standard small parameter,
+- [00:10:18,380 - 00:10:20,380] approximation,
+- [00:10:20,380 - 00:10:23,380] epsilon is small and epsilon squared is much smaller,
+- [00:10:23,380 - 00:10:25,380] so we ignore it.
+- [00:10:25,380 - 00:10:29,380] Alright, now, if the time was equal to zero,
+- [00:10:29,380 - 00:10:31,380] but t equals zero,
+- [00:10:31,380 - 00:10:34,380] then u must just be one.
+- [00:10:34,380 - 00:10:35,380] Why is that?
+- [00:10:35,380 - 00:10:37,380] Times zero amount of time
+- [00:10:37,380 - 00:10:39,380] shouldn't change the system at all.
+- [00:10:39,380 - 00:10:40,880] If the system evolves for no
+- [00:10:40,880 - 00:10:42,380] time at all, it shouldn't change,
+- [00:10:42,380 - 00:10:46,380] and obviously u should then just be the unit operator.
+- [00:10:46,380 - 00:10:48,380] The small correction,
+- [00:10:48,380 - 00:10:51,380] the small correction should be proportional to epsilon.
+- [00:10:51,380 - 00:10:53,380] I'm going to write minus,
+- [00:10:53,380 - 00:10:55,380] and now this is completely arbitrary,
+- [00:10:55,380 - 00:10:57,380] I'm only putting in these factors here
+- [00:10:57,380 - 00:11:00,380] because I know that eventually I'm going to want to,
+- [00:11:00,380 - 00:11:03,380] I'm going to want to put them in.
+- [00:11:03,380 - 00:11:05,380] Minus i,
+- [00:11:05,380 - 00:11:08,380] now the important factor is epsilon,
+- [00:11:08,380 - 00:11:10,880] a small change in time should
+- [00:11:10,880 - 00:11:13,380] lead to a small change in u,
+- [00:11:13,380 - 00:11:16,380] times an object which we'll call h,
+- [00:11:16,380 - 00:11:17,880] and now I'm going to put
+- [00:11:17,880 - 00:11:19,380] in all the factors that really belong
+- [00:11:19,380 - 00:11:21,380] that would be there in the textbook.
+- [00:11:21,380 - 00:11:24,380] In the textbook, there would be an h bar,
+- [00:11:24,380 - 00:11:25,380] Planck's constant.
+- [00:11:25,380 - 00:11:30,380] Now, this is entirely conventional,
+- [00:11:30,380 - 00:11:32,380] meaning to say that there's no
+- [00:11:32,380 - 00:11:34,380] content in putting the i here,
+- [00:11:34,380 - 00:11:36,380] or the epsilon, or the h bar.
+- [00:11:36,380 - 00:11:38,380] It could all be absorbed into h,
+- [00:11:38,380 - 00:11:40,880] and then change the name
+- [00:11:40,880 - 00:11:43,380] of h and call it w.
+- [00:11:43,380 - 00:11:45,380] So, there's no content,
+- [00:11:45,380 - 00:11:47,380] none whatever,
+- [00:11:47,380 - 00:11:49,380] in putting this i and this epsilon
+- [00:11:49,380 - 00:11:51,380] and this h bar into the expression.
+- [00:11:51,380 - 00:11:57,380] It's just that for purposes of comparison with other things,
+- [00:11:57,380 - 00:11:58,880] with other things that
+- [00:11:58,880 - 00:12:00,380] were already pre-established by history,
+- [00:12:00,380 - 00:12:02,380] basically by history,
+- [00:12:02,380 - 00:12:03,880] it's more, it's got less to do with
+- [00:12:03,880 - 00:12:05,380] physics than it has to do with history,
+- [00:12:05,380 - 00:12:09,380] we put in these factors.
+- [00:12:09,380 - 00:12:11,380] The epsilon, of course, really belongs there.
+- [00:12:11,380 - 00:12:13,380] That you cannot get rid of
+- [00:12:13,380 - 00:12:15,380] because it's just telling you that the time is now.
+- [00:12:15,380 - 00:12:16,380] The time interval is small.
+- [00:12:16,380 - 00:12:17,380] But other than that,
+- [00:12:17,380 - 00:12:20,380] everything else is a pure convention.
+- [00:12:20,380 - 00:12:22,380] Okay, but let's, using this convention,
+- [00:12:22,380 - 00:12:26,380] let's see what u dagger u equals 1 says.
+- [00:12:26,380 - 00:12:27,380] So, we have to multiply, first
+- [00:12:27,380 - 00:12:28,380] of all, what is u dagger?
+- [00:12:28,380 - 00:12:33,380] u dagger is 1 plus i epsilon h dagger
+- [00:12:33,380 - 00:12:36,380] divided by, what is h bar?
+- [00:12:36,380 - 00:12:39,380] h bar is Planck's constant, of course.
+- [00:12:39,380 - 00:12:41,380] Anybody know what Planck's constant is?
+- [00:12:41,380 - 00:12:44,380] 6.6 into minus 27,
+- [00:12:44,380 - 00:12:46,380] 37,000 seconds.
+- [00:12:46,380 - 00:12:48,380] Why is it such a ridiculous number?
+- [00:12:48,380 - 00:12:51,380] Historical.
+- [00:12:51,380 - 00:12:52,380] But what the, yeah, I know,
+- [00:12:52,380 - 00:12:55,380] but why, what insane person
+- [00:12:55,380 - 00:12:58,380] chose it to be such a,
+- [00:12:58,380 - 00:13:01,380] what history would make it so small,
+- [00:13:01,380 - 00:13:03,380] so ridiculous and...
+- [00:13:03,380 - 00:13:05,380] Planck was spinning curves.
+- [00:13:05,380 - 00:13:08,380] Planck was spinning curves.
+- [00:13:08,380 - 00:13:09,380] Planck was what?
+- [00:13:09,380 - 00:13:12,380] Planck was spinning the thermodynamic curves.
+- [00:13:12,380 - 00:13:14,380] Yeah, but why did the number come out so ridiculous?
+- [00:13:14,380 - 00:13:16,380] Ridiculously small.
+- [00:13:16,380 - 00:13:18,380] I was hoping you would tell us.
+- [00:13:18,380 - 00:13:20,380] Okay, okay.
+- [00:13:20,380 - 00:13:22,380] Let's ask you another question.
+- [00:13:22,380 - 00:13:24,380] Why is the speed of light so big?
+- [00:13:24,380 - 00:13:27,380] No, yeah, why is, is that a good one?
+- [00:13:27,380 - 00:13:30,380] Why is Avogadro's number so big?
+- [00:13:30,380 - 00:13:32,380] Because we're big.
+- [00:13:32,380 - 00:13:33,380] Hmm?
+- [00:13:33,380 - 00:13:34,380] Because we're big.
+- [00:13:34,380 - 00:13:35,380] Yeah.
+- [00:13:35,380 - 00:13:38,380] It's because chemists wanted a unit
+- [00:13:38,380 - 00:13:41,380] that they could manipulate with their hands, okay?
+- [00:13:41,380 - 00:13:42,880] They had little beakers and other
+- [00:13:42,880 - 00:13:44,380] things that they put fluids into,
+- [00:13:44,380 - 00:13:46,380] and gases,
+- [00:13:46,380 - 00:13:48,380] and how big were the containers?
+- [00:13:48,380 - 00:13:50,380] They were big enough to hold in your hand,
+- [00:13:50,380 - 00:13:52,380] they were big enough to tip over,
+- [00:13:52,380 - 00:13:54,380] to do things with,
+- [00:13:54,380 - 00:13:57,380] and so it was natural that the natural unit
+- [00:13:57,380 - 00:13:59,380] of measure of substance,
+- [00:13:59,380 - 00:14:01,380] in this particular case gases,
+- [00:14:01,380 - 00:14:02,880] should be the amount of
+- [00:14:02,880 - 00:14:04,380] gas that's held in a container
+- [00:14:04,380 - 00:14:06,380] about as big as a human being.
+- [00:14:06,380 - 00:14:09,380] Okay, maybe 50 times smaller than a human being,
+- [00:14:09,380 - 00:14:10,380] but that's all.
+- [00:14:10,380 - 00:14:11,880] Well, so the question then
+- [00:14:11,880 - 00:14:13,380] is a question not of physics,
+- [00:14:13,380 - 00:14:14,380] but nothing to do with physics.
+- [00:14:14,380 - 00:14:16,380] It has to do with human biology.
+- [00:14:16,380 - 00:14:19,380] Why does it take 10 to the 27th atoms,
+- [00:14:19,380 - 00:14:21,380] or something that's more than that,
+- [00:14:21,380 - 00:14:23,380] 10 to the 30th atoms or whatever,
+- [00:14:23,380 - 00:14:26,380] to make a human being?
+- [00:14:26,380 - 00:14:30,380] The answer is that with many fewer atoms than that,
+- [00:14:30,380 - 00:14:33,380] you couldn't make complicated enough circuitry and so forth
+- [00:14:33,380 - 00:14:36,380] to make an intelligent thing that can ask questions.
+- [00:14:36,380 - 00:14:39,380] So it's the people-thropic principle
+- [00:14:39,380 - 00:14:42,380] that if you weren't this big,
+- [00:14:42,380 - 00:14:45,380] you simply couldn't ask the question,
+- [00:14:45,380 - 00:14:47,380] so you better be that big.
+- [00:14:47,380 - 00:14:51,380] That's the reason that Planck's constant is small.
+- [00:14:51,380 - 00:14:55,380] It's the reason that the electron mass is so small.
+- [00:14:55,380 - 00:14:58,380] And so it really doesn't mean anything fundamental
+- [00:14:58,380 - 00:15:00,380] from the point of view of physics.
+- [00:15:00,380 - 00:15:02,380] It's just a choice of units,
+- [00:15:02,380 - 00:15:05,380] and it's a choice of units which goes back historically
+- [00:15:05,380 - 00:15:08,380] to a time when people didn't know about macroscopic physics,
+- [00:15:08,380 - 00:15:12,380] and so they worked with large, large numbers of electrons
+- [00:15:12,380 - 00:15:14,380] and large, large numbers of atoms
+- [00:15:14,380 - 00:15:16,380] because they themselves were large.
+- [00:15:16,380 - 00:15:21,380] Okay, so H-bar is just there because we're big.
+- [00:15:21,380 - 00:15:25,380] H is there because you've got to put something there.
+- [00:15:25,380 - 00:15:27,380] The dagger is there because you
+- [00:15:27,380 - 00:15:29,380] have to take the Hermitian conjugate.
+- [00:15:29,380 - 00:15:32,380] The epsilon is there because we're talking about
+- [00:15:32,380 - 00:15:35,380] a small deviation from t equals zero.
+- [00:15:35,380 - 00:15:38,380] And the i is there because
+- [00:15:38,380 - 00:15:41,380] it will save me writing i's later on.
+- [00:15:42,380 - 00:15:44,880] Okay, you'll see in a
+- [00:15:44,880 - 00:15:47,380] moment why the i is there.
+- [00:15:47,380 - 00:15:49,380] All right, so what does U dagger U equal?
+- [00:15:49,380 - 00:15:51,380] We have to say U dagger U equal to one,
+- [00:15:51,380 - 00:15:57,380] so that's one plus i epsilon H dagger over H-bar
+- [00:15:57,380 - 00:16:03,380] times one minus i epsilon H divided by H-bar.
+- [00:16:03,380 - 00:16:05,380] That's U dagger U.
+- [00:16:05,380 - 00:16:08,380] And then we ignore everything of order epsilon squared,
+- [00:16:08,380 - 00:16:10,380] and so the only thing that
+- [00:16:10,380 - 00:16:12,380] appears is one plus i epsilon H
+- [00:16:12,380 - 00:16:15,380] bar H dagger over H-bar.
+- [00:16:15,380 - 00:16:19,380] That's this term, and the other term is minus
+- [00:16:19,380 - 00:16:23,380] almost the same thing, H.
+- [00:16:23,380 - 00:16:24,880] The only difference between them
+- [00:16:24,880 - 00:16:26,380] is one has an H dagger
+- [00:16:26,380 - 00:16:28,380] and the other has an H.
+- [00:16:28,380 - 00:16:30,380] But our rule is that that
+- [00:16:30,380 - 00:16:32,380] has to be equal to one.
+- [00:16:32,380 - 00:16:35,380] All right, so that being equal to one
+- [00:16:35,380 - 00:16:36,880] says I can cancel out
+- [00:16:36,880 - 00:16:38,380] the one on the left-hand side
+- [00:16:38,380 - 00:16:41,380] and set the result equal to zero.
+- [00:16:41,380 - 00:16:44,380] Another way to write the same thing, simpler,
+- [00:16:44,380 - 00:16:52,380] is just that H dagger equals H.
+- [00:16:52,380 - 00:16:56,380] That's the condition that U be unitary,
+- [00:16:56,380 - 00:16:59,380] that H be Hermitian.
+- [00:16:59,380 - 00:17:02,380] Hermitian means equal to its complex conjugate.
+- [00:17:02,380 - 00:17:07,380] Now, we've already argued,
+- [00:17:07,380 - 00:17:09,380] and you've accepted it so there's nothing new,
+- [00:17:09,380 - 00:17:10,380] that I'm going to write this.
+- [00:17:10,380 - 00:17:12,380] That observables, the things that
+- [00:17:12,380 - 00:17:14,380] you measure in the laboratory,
+- [00:17:14,380 - 00:17:16,380] correspond to Hermitian operators.
+- [00:17:16,380 - 00:17:18,380] Hermitian operators are observables,
+- [00:17:18,380 - 00:17:21,380] our observables are Hermitian operators.
+- [00:17:21,380 - 00:17:26,380] So, whatever this object is, H,
+- [00:17:26,380 - 00:17:28,380] it's an observable.
+- [00:17:28,380 - 00:17:31,380] According to the formal definition
+- [00:17:31,380 - 00:17:33,380] in quantum mechanics of observables,
+- [00:17:33,380 - 00:17:35,380] it's a Hermitian operator.
+- [00:17:35,380 - 00:17:38,380] It must correspond to something that you can measure.
+- [00:17:38,380 - 00:17:40,380] Moreover, it's got to be something very general.
+- [00:17:40,380 - 00:17:45,380] Precisely what its form is may not be general,
+- [00:17:45,380 - 00:17:47,380] precisely what operator,
+- [00:17:47,380 - 00:17:49,380] but every system has one of these.
+- [00:17:49,380 - 00:17:52,380] Otherwise, it couldn't change with time.
+- [00:17:52,380 - 00:17:57,380] So, the existence of some kind of thing called H
+- [00:17:57,380 - 00:17:59,380] is very, very general.
+- [00:17:59,380 - 00:18:01,380] All systems have them.
+- [00:18:01,380 - 00:18:04,380] H is, of course, the Hamiltonian.
+- [00:18:04,380 - 00:18:07,380] The Hamiltonian means the energy.
+- [00:18:07,380 - 00:18:10,380] Thought of as an operator,
+- [00:18:10,380 - 00:18:12,380] it's called the Hamiltonian.
+- [00:18:12,380 - 00:18:14,380] Thought of as a quantity that you measure,
+- [00:18:14,380 - 00:18:16,380] it's called the energy.
+- [00:18:16,380 - 00:18:18,380] Sort of a redundant notation.
+- [00:18:18,380 - 00:18:21,380] We call it H, we could also call it E,
+- [00:18:21,380 - 00:18:22,380] for energy.
+- [00:18:22,380 - 00:18:24,380] It's the same thing.
+- [00:18:24,380 - 00:18:27,380] We usually reserve the label E
+- [00:18:27,380 - 00:18:29,380] for the eigenvalues, for the things you actually measure,
+- [00:18:29,380 - 00:18:32,380] and H is the operator.
+- [00:18:32,380 - 00:18:34,380] Okay, now you can ask me,
+- [00:18:34,380 - 00:18:36,380] why is that the energy?
+- [00:18:36,380 - 00:18:38,380] Well,
+- [00:18:38,380 - 00:18:40,380] what other definitions so far do you have?
+- [00:18:40,380 - 00:18:43,380] What do you have of energy?
+- [00:18:43,380 - 00:18:45,380] Anybody got any other definition of energy?
+- [00:18:45,380 - 00:18:47,380] See, it's classical.
+- [00:18:47,380 - 00:18:49,380] It's classical physics,
+- [00:18:49,380 - 00:18:51,380] which gives you energy.
+- [00:18:51,380 - 00:18:53,380] Okay, what's the definition of classical physics?
+- [00:18:53,380 - 00:18:55,380] P squared over two.
+- [00:18:55,380 - 00:18:56,380] Hmm?
+- [00:18:56,380 - 00:18:57,380] P squared over two, yeah.
+- [00:18:57,380 - 00:18:58,380] Oh, we're not, at the moment,
+- [00:18:58,380 - 00:19:00,380] no, that's not the definition of energy.
+- [00:19:00,380 - 00:19:02,380] That's most certainly not,
+- [00:19:02,380 - 00:19:05,380] that is the energy of a non-relativistic free particle,
+- [00:19:05,380 - 00:19:07,380] but it's certainly not the general definition of energy.
+- [00:19:07,380 - 00:19:09,380] ... to do work.
+- [00:19:09,380 - 00:19:11,380] ... changing of the energy.
+- [00:19:11,380 - 00:19:13,380] ... four seconds over distance.
+- [00:19:13,380 - 00:19:14,380] ... work back.
+- [00:19:15,380 - 00:19:20,380] Yeah, we could work at it from that end,
+- [00:19:20,380 - 00:19:22,380] but to work at it from that end,
+- [00:19:22,380 - 00:19:23,380] we would have to work,
+- [00:19:23,380 - 00:19:27,380] that's a very special situation
+- [00:19:27,380 - 00:19:32,380] where you have non-relativistic objects,
+- [00:19:32,380 - 00:19:35,380] we have non-relativistic forces,
+- [00:19:35,380 - 00:19:37,380] the structure of energy,
+- [00:19:37,380 - 00:19:38,380] would that help you?
+- [00:19:38,380 - 00:19:41,380] Would that help you understand, for example,
+- [00:19:41,380 - 00:19:44,380] the energy stored in the electromagnetic field,
+- [00:19:44,380 - 00:19:46,380] saying that it's mass times velocity,
+- [00:19:46,380 - 00:19:49,380] or mass times velocity squared, or whatever?
+- [00:19:49,380 - 00:19:50,380] No.
+- [00:19:50,380 - 00:19:52,380] There's some much more general concept,
+- [00:19:52,380 - 00:19:54,380] there's some much more general concept,
+- [00:19:54,380 - 00:19:56,380] and one way of characterizing it
+- [00:19:56,380 - 00:19:58,380] is that it's conserved.
+- [00:19:58,380 - 00:20:01,380] That's the single most important thing about it,
+- [00:20:01,380 - 00:20:05,380] that it doesn't change with time,
+- [00:20:05,380 - 00:20:07,380] and that for certain familiar systems,
+- [00:20:07,380 - 00:20:09,380] it takes a certain form.
+- [00:20:09,380 - 00:20:10,380] For certain familiar systems,
+- [00:20:10,380 - 00:20:12,380] it takes a certain form.
+- [00:20:12,380 - 00:20:15,380] Add that to the statement that the whole shebang,
+- [00:20:15,380 - 00:20:17,380] all kinds of energies,
+- [00:20:17,380 - 00:20:18,380] don't change with time,
+- [00:20:18,380 - 00:20:20,380] the sum of them,
+- [00:20:20,380 - 00:20:22,380] and that's what energy is.
+- [00:20:22,380 - 00:20:25,380] So the most important thing that,
+- [00:20:25,380 - 00:20:28,380] if we're just taking an abstract system,
+- [00:20:28,380 - 00:20:29,380] and we don't know how to relate it
+- [00:20:29,380 - 00:20:33,380] to any particular non-relativistic classical system,
+- [00:20:33,380 - 00:20:35,380] the first thing we would look for
+- [00:20:35,380 - 00:20:37,380] in a definition of energy,
+- [00:20:37,380 - 00:20:39,380] would be that it's conserved,
+- [00:20:39,380 - 00:20:41,380] that it doesn't change with time.
+- [00:20:41,380 - 00:20:42,380] We'll come back to it.
+- [00:20:42,380 - 00:20:44,380] We'll come back to it today.
+- [00:20:44,380 - 00:20:45,880] Why is this object an
+- [00:20:45,880 - 00:20:47,380] object that doesn't change with time?
+- [00:20:47,380 - 00:20:49,380] In what sense doesn't it change with time?
+- [00:20:49,380 - 00:20:51,380] We'll come back to it.
+- [00:20:51,380 - 00:20:53,380] Okay, so now we have an object
+- [00:20:53,380 - 00:20:54,380] which will give it its name,
+- [00:20:54,380 - 00:20:56,380] it's called the Hamiltonian,
+- [00:20:56,380 - 00:20:59,380] and we now know that the evolution of the system
+- [00:20:59,380 - 00:21:01,380] for a small amount of time
+- [00:21:01,380 - 00:21:05,380] is characterized by this expression here.
+- [00:21:05,380 - 00:21:07,380] Okay, let's see if we can make
+- [00:21:07,380 - 00:21:09,380] a differential equation
+- [00:21:09,380 - 00:21:11,380] for the change of a system with time.
+- [00:21:11,380 - 00:21:13,380] Why a differential equation?
+- [00:21:13,380 - 00:21:15,380] Well, if we know how a system changes
+- [00:21:15,380 - 00:21:17,380] over very small time intervals,
+- [00:21:17,380 - 00:21:21,380] it's natural to think of a differential equation
+- [00:21:21,380 - 00:21:24,380] evolving it from one instant to the next.
+- [00:21:24,380 - 00:21:26,380] So instead of looking at psi,
+- [00:21:26,380 - 00:21:29,380] let's look at the time derivative of psi,
+- [00:21:29,380 - 00:21:32,380] d by dt of psi.
+- [00:21:32,380 - 00:21:40,380] Well, that's equal, essentially by definition,
+- [00:21:40,380 - 00:21:48,380] psi of epsilon minus psi of zero.
+- [00:21:48,380 - 00:21:51,380] Incidentally, any time could be taken
+- [00:21:51,380 - 00:21:53,380] to be the zero of time.
+- [00:21:53,380 - 00:21:55,380] There's nothing special about zero.
+- [00:21:55,380 - 00:21:58,380] It's just a small shift of time.
+- [00:21:58,380 - 00:22:00,380] t equals epsilon.
+- [00:22:00,380 - 00:22:02,380] The starting point was arbitrary.
+- [00:22:02,380 - 00:22:04,380] The important thing is that we change
+- [00:22:04,380 - 00:22:06,380] the time by a little bit.
+- [00:22:06,380 - 00:22:08,380] So we change the time by a little bit,
+- [00:22:08,380 - 00:22:10,380] and now we have to divide by epsilon,
+- [00:22:10,380 - 00:22:12,380] and that's the derivative,
+- [00:22:12,380 - 00:22:15,380] the time derivative of the state vector.
+- [00:22:15,380 - 00:22:18,380] Okay, we have what psi of epsilon is.
+- [00:22:18,380 - 00:22:20,380] Where is psi of epsilon?
+- [00:22:20,380 - 00:22:25,380] Yeah, psi of epsilon is gotten by applying
+- [00:22:25,380 - 00:22:30,380] one minus ih over h bar.
+- [00:22:30,380 - 00:22:32,380] Psi of zero is just gotten
+- [00:22:32,380 - 00:22:34,380] by applying one.
+- [00:22:34,380 - 00:22:35,380] So what is this here?
+- [00:22:35,380 - 00:22:39,380] This is one minus,
+- [00:22:39,380 - 00:22:50,380] and now one minus iepsilon h over h bar.
+- [00:22:50,380 - 00:22:51,380] Did I get that right?
+- [00:22:51,380 - 00:22:55,380] No, I didn't.
+- [00:22:55,380 - 00:23:00,380] Psi of epsilon is this
+- [00:23:00,380 - 00:23:05,380] minus psi of zero.
+- [00:23:05,380 - 00:23:06,380] That just cancels out,
+- [00:23:06,380 - 00:23:08,380] the second term just cancels out the one.
+- [00:23:08,380 - 00:23:10,380] So the difference in the numerator
+- [00:23:10,380 - 00:23:15,380] is nothing but i minus iepsilon h over h bar
+- [00:23:15,380 - 00:23:16,380] times psi of zero.
+- [00:23:16,380 - 00:23:18,380] That's the difference between
+- [00:23:18,380 - 00:23:20,380] psi of epsilon and psi of zero.
+- [00:23:20,380 - 00:23:22,380] Now divide it by epsilon.
+- [00:23:22,380 - 00:23:28,380] That just cancels out the epsilon.
+- [00:23:28,380 - 00:23:29,380] And that's it.
+- [00:23:29,380 - 00:23:32,380] That's another way to think about h.
+- [00:23:32,380 - 00:23:34,380] It's basically apart from this
+- [00:23:34,380 - 00:23:36,380] factor of i over h bar,
+- [00:23:36,380 - 00:23:39,380] it's the operator which tells you how psi changes
+- [00:23:39,380 - 00:23:41,380] differentially with time.
+- [00:23:41,380 - 00:23:44,380] How it changes the time derivative of it.
+- [00:23:44,380 - 00:23:51,380] d by dt of psi is equal to this.
+- [00:23:51,380 - 00:23:52,380] Now that's great.
+- [00:23:52,380 - 00:23:54,380] That tells you how psi changes with time
+- [00:23:54,380 - 00:23:56,380] from instant to instant.
+- [00:23:56,380 - 00:23:57,380] It tells you the small change
+- [00:23:57,380 - 00:23:59,380] over any small lapse of time.
+- [00:23:59,380 - 00:24:00,380] So you can't just say,
+- [00:24:00,380 - 00:24:02,380] oh, it's a differential equation.
+- [00:24:02,380 - 00:24:05,380] Or basically, it's a differential equation
+- [00:24:05,380 - 00:24:14,380] for the state vector psi.
+- [00:24:14,380 - 00:24:17,380] This equation has a name.
+- [00:24:17,380 - 00:24:22,380] It's called the Schrodinger equation.
+- [00:24:22,380 - 00:24:26,380] You're probably not used to seeing it in that form.
+- [00:24:29,380 - 00:24:33,380] Anybody have a favorite form for the Schrodinger equation
+- [00:24:33,380 - 00:24:35,380] that we want to compare this with?
+- [00:24:35,380 - 00:24:37,380] I like to spell it with the R first.
+- [00:24:37,380 - 00:24:39,380] What's that?
+- [00:24:39,380 - 00:24:43,380] I like to spell it R-O instead of O-R.
+- [00:24:43,380 - 00:24:45,380] Schrodinger.
+- [00:24:45,380 - 00:24:47,380] Schrodinger.
+- [00:24:47,380 - 00:24:49,380] We've got Schrodinger.
+- [00:24:49,380 - 00:24:51,380] Schrodinger.
+- [00:24:51,380 - 00:24:53,380] Schrodinger.
+- [00:24:53,380 - 00:24:55,380] Schrodinger.
+- [00:24:55,380 - 00:24:57,380] Schrodinger.
+- [00:24:57,380 - 00:24:58,380] Schrodinger.
+- [00:24:58,380 - 00:24:59,380] Schrodinger.
+- [00:24:59,380 - 00:25:01,380] H-R-O with an umlaut.
+- [00:25:01,380 - 00:25:03,380] Yeah, umlaut.
+- [00:25:03,380 - 00:25:04,380] Or E.
+- [00:25:04,380 - 00:25:05,380] Yeah.
+- [00:25:05,380 - 00:25:06,380] Or E.
+- [00:25:06,380 - 00:25:11,380] It's close enough.
+- [00:25:11,380 - 00:25:12,380] Yeah.
+- [00:25:12,380 - 00:25:15,380] It's within an H bar.
+- [00:25:15,380 - 00:25:26,380] And that's it.
+- [00:25:26,380 - 00:25:28,380] That's all of quantum mechanics in a nutshell.
+- [00:25:28,380 - 00:25:31,380] If somebody tells you what psi is at time zero,
+- [00:25:31,380 - 00:25:33,380] you evolve it using the Schrodinger equation.
+- [00:25:33,380 - 00:25:35,380] You find it at a later time.
+- [00:25:35,380 - 00:25:36,380] You know the state at a later time.
+- [00:25:36,380 - 00:25:37,380] You make some measurements,
+- [00:25:37,380 - 00:25:38,380] and psi gives you the
+- [00:25:38,380 - 00:25:39,380] probabilities for all the measurements.
+- [00:25:39,380 - 00:25:40,380] That's it.
+- [00:25:40,380 - 00:25:41,380] That's the whole story.
+- [00:25:41,380 - 00:25:43,380] There's nothing else but that in quantum mechanics.
+- [00:25:43,380 - 00:25:45,380] This tells you how things change.
+- [00:25:45,380 - 00:25:48,380] We already figured out, if you know the state vector,
+- [00:25:48,380 - 00:25:50,380] how to calculate expectation values
+- [00:25:50,380 - 00:25:52,380] and probabilities and so forth.
+- [00:25:52,380 - 00:25:53,380] And that's it.
+- [00:25:53,380 - 00:25:56,380] Okay, but we don't want to just stop there.
+- [00:25:56,380 - 00:25:57,380] Okay.
+- [00:25:57,380 - 00:26:02,380] Let's try to solve this for some simple situations.
+- [00:26:02,380 - 00:26:04,380] Let's see, first of all,
+- [00:26:04,380 - 00:26:06,380] you know, there is another definition of energy
+- [00:26:06,380 - 00:26:10,380] that I'm sure you've seen before.
+- [00:26:10,380 - 00:26:13,380] It doesn't come from classical physics.
+- [00:26:13,380 - 00:26:16,380] It comes from Einstein and the photon.
+- [00:26:16,380 - 00:26:18,380] Anybody know what I'm thinking of?
+- [00:26:18,380 - 00:26:21,380] Hm?
+- [00:26:21,380 - 00:26:23,380] Yeah, what's the formula?
+- [00:26:23,380 - 00:26:25,380] E equals h nu, right?
+- [00:26:25,380 - 00:26:26,380] E equals h nu.
+- [00:26:27,380 - 00:26:30,380] Or h bar omega.
+- [00:26:30,380 - 00:26:35,380] Omega, nu is frequency in cycles per second.
+- [00:26:35,380 - 00:26:40,380] Omega is frequency in radians per second.
+- [00:26:40,380 - 00:26:45,380] H bar is the thing that goes with omega.
+- [00:26:45,380 - 00:26:47,380] The other Planck's constant, h,
+- [00:26:47,380 - 00:26:49,380] is the thing which goes with frequency.
+- [00:26:49,380 - 00:26:51,380] Frequency times the old Planck's constant
+- [00:26:51,380 - 00:26:52,880] is equal to angular frequency
+- [00:26:52,880 - 00:26:54,380] times the new Planck's constant.
+- [00:26:54,380 - 00:26:56,380] Okay, you all know that.
+- [00:26:56,380 - 00:26:59,380] So, let's see if we can understand
+- [00:26:59,380 - 00:27:02,380] why this h here
+- [00:27:02,380 - 00:27:05,380] might have something to do with this energy here.
+- [00:27:05,380 - 00:27:07,380] Okay, let's see if we can figure that out.
+- [00:27:07,380 - 00:27:11,380] Let's solve the Schrodinger equation.
+- [00:27:11,380 - 00:27:13,380] But what I want to do is,
+- [00:27:13,380 - 00:27:15,380] since h is a Hermitian operator,
+- [00:27:15,380 - 00:27:17,380] it certainly has eigenvectors.
+- [00:27:17,380 - 00:27:19,380] In fact, every Hermitian operator
+- [00:27:19,380 - 00:27:21,380] has a complete set of eigenvectors.
+- [00:27:21,380 - 00:27:24,380] So there's some basis, some basis of states,
+- [00:27:24,380 - 00:27:26,380] some orthonormal basis of states,
+- [00:27:26,380 - 00:27:28,380] which are the eigenvectors of h.
+- [00:27:28,380 - 00:27:30,380] Let's imagine working in that basis.
+- [00:27:30,380 - 00:27:31,380] Okay?
+- [00:27:31,380 - 00:27:33,380] And let's pick one of the eigenvectors
+- [00:27:33,380 - 00:27:35,380] with eigenvalue e.
+- [00:27:35,380 - 00:27:39,380] e is the eigenvalue, so h on psi
+- [00:27:39,380 - 00:27:43,380] is equal to e times psi.
+- [00:27:43,380 - 00:27:46,380] Now, what happens if you start
+- [00:27:46,380 - 00:27:49,380] with an eigenvector of h?
+- [00:27:49,380 - 00:27:50,880] Well, I assert that it will
+- [00:27:50,880 - 00:27:52,380] stay an eigenvector of h with time,
+- [00:27:52,380 - 00:27:54,380] because if you want to do that,
+- [00:27:54,380 - 00:27:56,380] you'll wait a little bit of time.
+- [00:27:56,380 - 00:27:59,380] You'll be adding in, basically d by dt means,
+- [00:27:59,380 - 00:28:01,380] just what are you adding in?
+- [00:28:01,380 - 00:28:03,380] What are you adding into psi?
+- [00:28:03,380 - 00:28:06,380] You're adding in i epsilon h times psi.
+- [00:28:06,380 - 00:28:10,380] But since h times psi is proportional to psi itself,
+- [00:28:10,380 - 00:28:13,380] what you're adding in, in a little time interval,
+- [00:28:13,380 - 00:28:16,380] is just something proportional to the original vector
+- [00:28:16,380 - 00:28:18,380] that you started with,
+- [00:28:18,380 - 00:28:21,380] if psi is an eigenvector of the Hamiltonian.
+- [00:28:21,380 - 00:28:24,380] So if psi is an eigenvector of the Hamiltonian,
+- [00:28:24,380 - 00:28:26,380] it will stay an eigenvector
+- [00:28:26,380 - 00:28:28,380] of the Hamiltonian for all time,
+- [00:28:28,380 - 00:28:31,380] because the little things that you add in
+- [00:28:31,380 - 00:28:33,380] are pointing in the same direction.
+- [00:28:33,380 - 00:28:36,380] And if you add an eigenvector,
+- [00:28:36,380 - 00:28:38,380] if you add, you know, you're just multiplying
+- [00:28:38,380 - 00:28:40,380] the eigenvector by a number.
+- [00:28:40,380 - 00:28:43,380] So let's look for a solution of the equation
+- [00:28:43,380 - 00:28:46,380] of the form, it's always the same,
+- [00:28:46,380 - 00:28:48,380] psi now is by definition,
+- [00:28:48,380 - 00:28:50,380] this is, let me put a little e here,
+- [00:28:50,380 - 00:28:53,380] to indicate that it is the eigenvector with energy e.
+- [00:28:54,380 - 00:28:56,380] Let's look for a solution of the form
+- [00:28:56,380 - 00:29:03,380] psi sub e of t
+- [00:29:03,380 - 00:29:06,380] is equal to, or just psi of t,
+- [00:29:06,380 - 00:29:10,380] is equal to psi sub e of zero,
+- [00:29:10,380 - 00:29:12,380] in fact that's redundant, we don't even need that,
+- [00:29:12,380 - 00:29:15,380] just some eigenvector of the energy,
+- [00:29:15,380 - 00:29:18,380] times a function of time.
+- [00:29:18,380 - 00:29:21,380] Let's see if we can solve the equation that way.
+- [00:29:21,380 - 00:29:23,380] Okay, what is d by dt of psi
+- [00:29:23,380 - 00:29:26,380] if psi is just f
+- [00:29:26,380 - 00:29:29,380] of t times a constant vector?
+- [00:29:29,380 - 00:29:31,380] Well, if this is a constant vector,
+- [00:29:31,380 - 00:29:33,380] you just differentiate the f of t.
+- [00:29:33,380 - 00:29:35,380] So the left hand side
+- [00:29:35,380 - 00:29:37,380] is, let's call it f dot,
+- [00:29:37,380 - 00:29:39,380] f dot means d by dt of f.
+- [00:29:39,380 - 00:29:42,380] Standard notation, a dot over something means
+- [00:29:42,380 - 00:29:45,380] you're differentiating with respect to time.
+- [00:29:45,380 - 00:29:48,380] Alright, so f dot times psi,
+- [00:29:48,380 - 00:29:51,380] that's d by dt,
+- [00:29:53,380 - 00:30:02,380] and that's equal to minus i h over h bar
+- [00:30:02,380 - 00:30:07,380] times psi of zero, psi e.
+- [00:30:07,380 - 00:30:09,380] But h on psi e
+- [00:30:09,380 - 00:30:11,380] is just e times psi e.
+- [00:30:16,380 - 00:30:18,380] Did I leave something out?
+- [00:30:18,380 - 00:30:21,380] What did I leave out?
+- [00:30:23,380 - 00:30:27,380] Minus i e over h bar, so, hm?
+- [00:30:27,380 - 00:30:31,380] Oh, I'm sorry, f of t, yes, good.
+- [00:30:31,380 - 00:30:33,380] f, f of t, very good.
+- [00:30:37,380 - 00:30:39,380] Okay, this suggests, or not suggests,
+- [00:30:39,380 - 00:30:41,380] it says that we can find the solution
+- [00:30:41,380 - 00:30:43,380] if we just find the solution of the equation
+- [00:30:43,380 - 00:30:45,880] f dot is equal to minus
+- [00:30:45,880 - 00:30:48,380] i e over h bar times f.
+- [00:30:48,380 - 00:30:52,380] f of t, the time derivative of f,
+- [00:30:52,380 - 00:30:55,380] is just proportional to f itself.
+- [00:30:55,380 - 00:30:59,380] Alright, now,
+- [00:30:59,380 - 00:31:03,380] this is not such a difficult differential equation.
+- [00:31:03,380 - 00:31:05,380] It says the derivative is proportional
+- [00:31:05,380 - 00:31:07,380] to the thing itself.
+- [00:31:07,380 - 00:31:09,380] We know how to solve an equation like that.
+- [00:31:09,380 - 00:31:12,380] Solution to an equation like that is exponentials.
+- [00:31:12,380 - 00:31:14,880] If you have an equation
+- [00:31:14,880 - 00:31:17,380] that says d f by dt
+- [00:31:17,380 - 00:31:19,380] is equal to some constant,
+- [00:31:19,380 - 00:31:21,380] and all of this is a constant over here,
+- [00:31:21,380 - 00:31:24,380] a constant times f,
+- [00:31:24,380 - 00:31:26,380] then the solution to that equation
+- [00:31:26,380 - 00:31:33,380] is f is equal to e to the c t.
+- [00:31:33,380 - 00:31:35,380] If you differentiate an exponential,
+- [00:31:35,380 - 00:31:38,380] it just pulls down the coefficient of the time
+- [00:31:38,380 - 00:31:40,380] in the exponential.
+- [00:31:40,380 - 00:31:43,380] So the solution of any equation of the form
+- [00:31:43,380 - 00:31:46,380] that the derivative is proportional to the thing itself
+- [00:31:46,380 - 00:31:48,380] is an exponential, and now we can read off
+- [00:31:48,380 - 00:31:50,380] what the solution is.
+- [00:31:50,380 - 00:31:52,380] Here's the constant.
+- [00:31:52,380 - 00:31:56,380] f is equal to e to the
+- [00:31:56,380 - 00:32:00,380] minus i e over h bar times t.
+- [00:32:00,380 - 00:32:02,380] It could be a constant times that,
+- [00:32:02,380 - 00:32:04,380] but apart from a constant,
+- [00:32:04,380 - 00:32:08,380] the solution of f is this.
+- [00:32:08,380 - 00:32:11,380] We've now solved the Schrodinger equation.
+- [00:32:11,380 - 00:32:13,380] The Schrodinger equation, the solution,
+- [00:32:13,380 - 00:32:16,380] the time dependence of the Schrodinger equation
+- [00:32:16,380 - 00:32:19,380] for an eigenvector of the Hamiltonian
+- [00:32:19,380 - 00:32:22,380] is just to multiply by e to
+- [00:32:22,380 - 00:32:25,380] the minus i e over h bar t
+- [00:32:25,380 - 00:32:27,380] times psi of zero.
+- [00:32:32,380 - 00:32:34,380] Well, what is this here?
+- [00:32:34,380 - 00:32:36,380] e to the minus i e over h bar,
+- [00:32:36,380 - 00:32:38,380] that's a combination of sine,
+- [00:32:38,380 - 00:32:40,380] or we call it cosine,
+- [00:32:40,380 - 00:32:42,880] cosine of i e over
+- [00:32:42,880 - 00:32:45,380] h bar t plus i sine,
+- [00:32:45,380 - 00:32:48,380] i e over h bar t,
+- [00:32:49,380 - 00:32:51,380] so what is this?
+- [00:32:51,380 - 00:32:53,380] Frequency.
+- [00:32:53,380 - 00:32:55,380] Frequency, omega.
+- [00:32:55,380 - 00:32:57,380] So what do we see?
+- [00:32:57,380 - 00:32:59,880] We see that f is e
+- [00:32:59,880 - 00:33:02,380] to the minus i omega t,
+- [00:33:02,380 - 00:33:06,380] where omega is equal to e over h bar.
+- [00:33:11,380 - 00:33:13,380] Now, suppose I hadn't told
+- [00:33:13,380 - 00:33:15,380] you that e was the energy.
+- [00:33:15,380 - 00:33:18,380] Supposing I hadn't told you before that h
+- [00:33:18,380 - 00:33:21,380] is the Hamiltonian and that e is the energy,
+- [00:33:21,380 - 00:33:23,380] at this point, we might look at this and say,
+- [00:33:23,380 - 00:33:26,380] ooh, I've seen that equation before,
+- [00:33:26,380 - 00:33:28,380] e equals h bar omega,
+- [00:33:28,380 - 00:33:31,380] this left-hand side must be the energy.
+- [00:33:31,380 - 00:33:32,880] From a quantum point of view
+- [00:33:32,880 - 00:33:34,380] and from the point of view
+- [00:33:34,380 - 00:33:38,380] of Einstein and photons and Planck and all that stuff,
+- [00:33:38,380 - 00:33:42,380] we would recognize the left-hand side as the energy.
+- [00:33:42,380 - 00:33:44,380] Not so clear that this has
+- [00:33:44,380 - 00:33:46,380] anything to do with the energy
+- [00:33:46,380 - 00:33:47,380] from Einstein, but it's not so clear.
+- [00:33:47,380 - 00:33:49,380] It's not so clear that this is the energy
+- [00:33:49,380 - 00:33:51,380] from Newtonian mechanics and so forth.
+- [00:33:51,380 - 00:33:53,380] But in order to study that relationship,
+- [00:33:53,380 - 00:33:55,380] we would have to be talking about systems
+- [00:33:55,380 - 00:33:59,380] which have a natural, non-relativistic
+- [00:33:59,380 - 00:34:03,380] mechanical interpretation, and we're not at this point.
+- [00:34:03,380 - 00:34:05,380] So this is as close as
+- [00:34:05,380 - 00:34:07,380] we can get to a derivation of,
+- [00:34:07,380 - 00:34:11,380] for an explanation of why we call e the energy.
+- [00:34:11,380 - 00:34:15,380] It is the thing that Einstein would have recognized
+- [00:34:15,380 - 00:34:17,380] as the,
+- [00:34:17,380 - 00:34:19,380] energy in this equation.
+- [00:34:19,380 - 00:34:23,380] We have the cosine and the sine.
+- [00:34:23,380 - 00:34:24,380] Yeah.
+- [00:34:24,380 - 00:34:25,380] Should that be a minus sign?
+- [00:34:25,380 - 00:34:26,380] Yeah.
+- [00:34:26,380 - 00:34:27,380] And do you want, you
+- [00:34:27,380 - 00:34:28,380] don't have i's inside the sine?
+- [00:34:28,380 - 00:34:29,380] No.
+- [00:34:29,380 - 00:34:30,380] You don't want the i's inside the sine?
+- [00:34:30,380 - 00:34:32,380] No, I don't. Thank you.
+- [00:34:32,380 - 00:34:35,880] Right. Cosine e over h bar t
+- [00:34:35,880 - 00:34:39,380] minus i sine e over h bar.
+- [00:34:39,380 - 00:34:43,380] Right. But omega is equal to e over h bar.
+- [00:34:43,380 - 00:34:45,380] When you wrote the,
+- [00:34:45,380 - 00:34:48,380] when you wrote down the equation for h,
+- [00:34:48,380 - 00:34:52,380] you sprinkled in some values like the h bar.
+- [00:34:52,380 - 00:34:54,380] You also sprinkled in the i there,
+- [00:34:54,380 - 00:34:56,380] and said it all came out.
+- [00:34:56,380 - 00:34:59,380] That's because, that's because, well,
+- [00:34:59,380 - 00:35:01,380] I sprinkled in the i,
+- [00:35:01,380 - 00:35:05,380] so that the solution would be a Hermitian operator.
+- [00:35:05,380 - 00:35:07,380] Now, had I not sprinkled in the i,
+- [00:35:07,380 - 00:35:11,380] I would have found h dagger equals minus h.
+- [00:35:11,380 - 00:35:12,880] And I would have said,
+- [00:35:12,880 - 00:35:14,380] okay, that's an anti-Hermitian operator.
+- [00:35:14,380 - 00:35:17,380] That's, that's called an anti-Hermitian operator.
+- [00:35:17,380 - 00:35:18,380] But I know what to do with that.
+- [00:35:18,380 - 00:35:19,880] If I take an anti-Hermitian operator
+- [00:35:19,880 - 00:35:21,380] and I multiply it by i,
+- [00:35:21,380 - 00:35:23,380] it becomes a Hermitian operator.
+- [00:35:23,380 - 00:35:25,380] So there was no content in it.
+- [00:35:25,380 - 00:35:28,380] I just put it there because I wanted to give,
+- [00:35:28,380 - 00:35:30,380] I wanted to define the thing
+- [00:35:30,380 - 00:35:32,380] which would be Hermitian at the end.
+- [00:35:32,380 - 00:35:34,380] In other words, this,
+- [00:35:34,380 - 00:35:38,380] foresight or hindsight, I'm not sure which, but,
+- [00:35:38,380 - 00:35:40,380] I knew the answer.
+- [00:35:40,380 - 00:35:42,380] And when you got down here, then,
+- [00:35:42,380 - 00:35:43,380] e is going to be a real,
+- [00:35:43,380 - 00:35:46,380] yeah, yeah, yeah.
+- [00:35:46,380 - 00:35:48,380] And the reason it has to
+- [00:35:48,380 - 00:35:50,380] be real is because the unitarity.
+- [00:35:50,380 - 00:35:51,880] We don't want the length of
+- [00:35:51,880 - 00:35:53,380] the vector to change with time.
+- [00:35:53,380 - 00:35:55,380] You see, now we see it coming out
+- [00:35:55,380 - 00:35:58,380] that the length of the vector doesn't change with time.
+- [00:35:58,380 - 00:36:01,380] And that was ensured by having e being real.
+- [00:36:01,380 - 00:36:07,380] So, um,
+- [00:36:07,380 - 00:36:09,880] I put all those factors there so that I
+- [00:36:09,880 - 00:36:12,380] wouldn't have to deal with them in the end.
+- [00:36:12,380 - 00:36:14,380] But, uh,
+- [00:36:14,380 - 00:36:18,380] That makes me think, uh,
+- [00:36:18,380 - 00:36:21,380] that equation, e equals h bar omega,
+- [00:36:21,380 - 00:36:24,380] came from studying electromagnetic waves?
+- [00:36:24,380 - 00:36:25,380] Yeah.
+- [00:36:25,380 - 00:36:28,380] Well, it comes from studying any kind of oscillating system.
+- [00:36:28,380 - 00:36:31,880] Is there some principle that says
+- [00:36:31,880 - 00:36:35,380] that the frequency of the electromagnetic wave
+- [00:36:35,380 - 00:36:38,380] is the same as the frequency of the quantum?
+- [00:36:38,380 - 00:36:39,380] No, no.
+- [00:36:39,380 - 00:36:40,380] Um, no, no.
+- [00:36:40,380 - 00:36:41,380] That's next term.
+- [00:36:41,380 - 00:36:42,380] Right.
+- [00:36:42,380 - 00:36:43,380] We, right.
+- [00:36:43,380 - 00:36:44,380] Is there a principle?
+- [00:36:44,380 - 00:36:45,380] Of course there is.
+- [00:36:45,380 - 00:36:46,380] But, uh,
+- [00:36:46,380 - 00:36:47,380] but, uh,
+- [00:36:47,380 - 00:36:49,380] nothing up until this point.
+- [00:36:49,380 - 00:36:50,380] No.
+- [00:36:50,380 - 00:36:51,380] No.
+- [00:36:51,380 - 00:36:52,380] No.
+- [00:36:52,380 - 00:36:54,880] The point, the point being that e equals
+- [00:36:54,880 - 00:36:57,380] h bar omega is a more general thing
+- [00:36:57,380 - 00:37:01,380] than just, uh, photons and electromagnetic radiation.
+- [00:37:01,380 - 00:37:03,380] There's a more general interpretation of it,
+- [00:37:03,380 - 00:37:07,380] and photons being one special case of it.
+- [00:37:07,380 - 00:37:08,380] Okay, let's see.
+- [00:37:08,380 - 00:37:10,380] Um,
+- [00:37:10,380 - 00:37:20,380] Oh.
+- [00:37:20,380 - 00:37:24,380] Supposing we have a vector which is
+- [00:37:24,380 - 00:37:28,380] a sum of eigenvectors of the Hamiltonian
+- [00:37:28,380 - 00:37:30,380] with different eigenvalues.
+- [00:37:30,380 - 00:37:31,880] In general, the different
+- [00:37:31,880 - 00:37:33,380] eigenvectors will have different eigenvalues
+- [00:37:33,380 - 00:37:35,380] corresponding to the different values
+- [00:37:35,380 - 00:37:37,380] that the energy can have.
+- [00:37:37,380 - 00:37:39,380] Or that, uh, that it can be measured.
+- [00:37:39,380 - 00:37:40,380] Supposing we take,
+- [00:37:40,380 - 00:37:43,380] multiplying a vector by a phase
+- [00:37:43,380 - 00:37:46,380] like this is not very interesting.
+- [00:37:46,380 - 00:37:48,380] It doesn't change it in an interesting way.
+- [00:37:48,380 - 00:37:49,380] It just multiplies it by a phase.
+- [00:37:49,380 - 00:37:51,380] And we know that phases
+- [00:37:51,380 - 00:37:53,380] are not important in quantum mechanics.
+- [00:37:53,380 - 00:37:56,880] But supposing we have a vector
+- [00:37:56,880 - 00:38:00,380] which is some superposition of energy eigenstates.
+- [00:38:00,380 - 00:38:03,380] Now, the Hamiltonian is a, is a Hermitian operator.
+- [00:38:03,380 - 00:38:07,380] It has a complete family, a complete basis of eigenvectors.
+- [00:38:07,380 - 00:38:08,380] So, in principle,
+- [00:38:08,380 - 00:38:10,880] any vector, any state of
+- [00:38:10,880 - 00:38:13,380] the system can be expanded linearly
+- [00:38:13,380 - 00:38:15,380] in eigenvectors of the Hamiltonian.
+- [00:38:15,380 - 00:38:16,380] So let's do so.
+- [00:38:16,380 - 00:38:18,380] Uh,
+- [00:38:18,380 - 00:38:21,380] We start with the sum of n.
+- [00:38:21,380 - 00:38:24,380] n simply labels the different eigenvalues
+- [00:38:24,380 - 00:38:26,380] of, uh,
+- [00:38:26,380 - 00:38:28,380] let's just write
+- [00:38:28,380 - 00:38:32,380] some coefficient alpha n times psi n.
+- [00:38:32,380 - 00:38:37,380] Where psi n is the nth eigenvector of the Hamiltonian.
+- [00:38:37,380 - 00:38:38,380] Okay?
+- [00:38:38,380 - 00:38:41,380] What happens to that with time?
+- [00:38:41,380 - 00:38:44,380] Well, the point is that since
+- [00:38:44,380 - 00:38:47,380] the evolution is with a linear operator,
+- [00:38:47,380 - 00:38:49,380] we can figure out what happens
+- [00:38:49,380 - 00:38:51,380] to each psi and add them up.
+- [00:38:51,380 - 00:38:54,380] That's what, that's the nature of linear operators.
+- [00:38:54,380 - 00:38:56,380] That's the nature of linear operators,
+- [00:38:56,380 - 00:38:59,380] that you can bring them past the coefficients here
+- [00:38:59,380 - 00:39:01,880] and just figure out what they do to individual
+- [00:39:01,880 - 00:39:04,380] vectors and just add it up in the end.
+- [00:39:04,380 - 00:39:05,380] So what happens to this?
+- [00:39:05,380 - 00:39:06,380] This evolves into,
+- [00:39:06,380 - 00:39:07,380] this evolves into,
+- [00:39:07,380 - 00:39:11,380] summation of n,
+- [00:39:11,380 - 00:39:12,380] alpha n,
+- [00:39:12,380 - 00:39:13,880] but now we just have to
+- [00:39:13,880 - 00:39:15,380] figure out what psi n does.
+- [00:39:15,380 - 00:39:17,380] But we figured out already what, uh,
+- [00:39:17,380 - 00:39:20,380] what each eigenvector of the energy does.
+- [00:39:20,380 - 00:39:24,380] It just gets multiplied by e to the i,
+- [00:39:24,380 - 00:39:26,380] e sub n minus i, minus i,
+- [00:39:26,380 - 00:39:30,380] e sub n over h bar t,
+- [00:39:30,380 - 00:39:34,380] times psi n.
+- [00:39:34,380 - 00:39:36,380] Each one of the eigenvectors
+- [00:39:36,380 - 00:39:39,380] is evolving with a different frequency.
+- [00:39:39,380 - 00:39:43,380] This is quite different than an overall phase.
+- [00:39:43,380 - 00:39:49,380] Each phase of each component here is evolving differently.
+- [00:39:49,380 - 00:39:52,380] But that's the general solution of the Schrodinger equation.
+- [00:39:52,380 - 00:39:54,380] Each eigenvector of the energy
+- [00:39:54,380 - 00:39:56,380] just evolves with its own frequency.
+- [00:39:56,380 - 00:39:59,380] The high energy ones evolve very fast.
+- [00:39:59,380 - 00:40:01,380] The frequency goes around very fast.
+- [00:40:01,380 - 00:40:04,380] The low energy states evolve slowly.
+- [00:40:04,380 - 00:40:05,380] But if you break the, uh,
+- [00:40:05,380 - 00:40:08,380] the system up into eigenvectors of the energy,
+- [00:40:08,380 - 00:40:11,380] then the solution of any quantum mechanics problem
+- [00:40:11,380 - 00:40:14,380] is just to write down, uh,
+- [00:40:14,380 - 00:40:16,380] that each vector...
+- [00:40:16,380 - 00:40:17,380] Yeah?
+- [00:40:17,380 - 00:40:19,380] Uh, what you said,
+- [00:40:19,380 - 00:40:20,380] I mean, I could,
+- [00:40:20,380 - 00:40:22,380] even classical mechanically,
+- [00:40:22,380 - 00:40:24,380] Fourier series is saying the same thing.
+- [00:40:24,380 - 00:40:26,380] Well, this is a Fourier series in time.
+- [00:40:26,380 - 00:40:27,380] Yeah?
+- [00:40:27,380 - 00:40:29,380] So I was saying even heat conduction,
+- [00:40:29,380 - 00:40:31,380] the higher frequencies evolve with
+- [00:40:31,380 - 00:40:33,380] higher,
+- [00:40:33,380 - 00:40:34,380] faster and smaller frequencies.
+- [00:40:34,380 - 00:40:36,380] It's not...
+- [00:40:36,380 - 00:40:38,380] Normally you would do a Laplace transformation
+- [00:40:38,380 - 00:40:40,380] for heat conduction,
+- [00:40:40,380 - 00:40:42,380] but you could also do a Fourier tran...
+- [00:40:42,380 - 00:40:44,380] Yeah, both make sense.
+- [00:40:44,380 - 00:40:46,380] So I was just generally saying,
+- [00:40:46,380 - 00:40:48,380] is there anything unique about this compared to...
+- [00:40:48,380 - 00:40:50,380] Is there anything unique about it?
+- [00:40:50,380 - 00:40:51,880] Because you are saying it
+- [00:40:51,880 - 00:40:53,380] from a Schrodinger equation perspective.
+- [00:40:53,380 - 00:40:54,380] So...
+- [00:40:54,380 - 00:40:55,380] Yeah.
+- [00:40:58,380 - 00:41:00,380] Well, I'm not sure,
+- [00:41:00,380 - 00:41:02,380] I'm not sure exactly how to take the question.
+- [00:41:02,380 - 00:41:03,380] Um,
+- [00:41:04,380 - 00:41:07,380] there's probably lots of situations
+- [00:41:07,380 - 00:41:09,380] where high frequency corresponds to,
+- [00:41:09,380 - 00:41:11,380] uh, to high energy,
+- [00:41:11,380 - 00:41:13,380] but, uh, quantum mechanics being...
+- [00:41:13,380 - 00:41:15,380] Usually it does trace back to somehow,
+- [00:41:15,380 - 00:41:16,380] one way or another,
+- [00:41:16,380 - 00:41:17,380] to the quantum mechanics,
+- [00:41:17,380 - 00:41:19,380] but, uh,
+- [00:41:19,380 - 00:41:20,380] I think we have to
+- [00:41:20,380 - 00:41:21,380] look at it case by case.
+- [00:41:21,380 - 00:41:22,380] I, I...
+- [00:41:22,380 - 00:41:25,380] It's a little too loose a question right now.
+- [00:41:25,380 - 00:41:27,380] Um...
+- [00:41:32,380 - 00:41:33,380] Yeah.
+- [00:41:34,380 - 00:41:36,380] I wanted to do an example,
+- [00:41:36,380 - 00:41:37,380] but before I do the example...
+- [00:41:37,380 - 00:41:38,380] Okay, that's, that's,
+- [00:41:38,380 - 00:41:40,380] that's all basic,
+- [00:41:40,380 - 00:41:42,380] easy stuff.
+- [00:41:42,380 - 00:41:44,380] In fact, everything is easy in quantum mechanics.
+- [00:41:47,380 - 00:41:49,380] What about observables?
+- [00:41:49,380 - 00:41:51,380] Observables, not the,
+- [00:41:51,380 - 00:41:52,380] not the Hamiltonian itself,
+- [00:41:52,380 - 00:41:53,380] but other observables,
+- [00:41:53,380 - 00:41:56,380] other quantities that we can measure.
+- [00:41:56,380 - 00:41:58,380] How do they change with time?
+- [00:41:58,380 - 00:41:59,380] Okay.
+- [00:41:59,380 - 00:42:00,380] Now what do I mean by
+- [00:42:00,380 - 00:42:01,380] how do they change with time?
+- [00:42:01,380 - 00:42:02,380] For the moment,
+- [00:42:02,380 - 00:42:03,380] let's ask how they're in the moment.
+- [00:42:03,380 - 00:42:07,380] Let's ask how their expectation values change with time.
+- [00:42:07,380 - 00:42:09,380] The expectation value,
+- [00:42:09,380 - 00:42:10,380] the average value,
+- [00:42:10,380 - 00:42:11,380] it's not,
+- [00:42:11,380 - 00:42:12,380] the average value of a,
+- [00:42:12,380 - 00:42:14,380] uh, of an,
+- [00:42:14,380 - 00:42:16,380] of a observable,
+- [00:42:16,380 - 00:42:19,380] let's call the observable A.
+- [00:42:19,380 - 00:42:23,380] The average value of A
+- [00:42:23,380 - 00:42:27,380] is psi A psi.
+- [00:42:27,380 - 00:42:29,380] Now, it's the sis which change with time,
+- [00:42:29,380 - 00:42:31,380] not the As.
+- [00:42:31,380 - 00:42:33,380] The As are some very definite set of values.
+- [00:42:33,380 - 00:42:35,380] They're not just a set of matrices
+- [00:42:35,380 - 00:42:38,380] that describe very, very particular observables.
+- [00:42:38,380 - 00:42:41,380] It's the states which change with time.
+- [00:42:41,380 - 00:42:42,880] I've given you the rule for
+- [00:42:42,880 - 00:42:44,380] how the states change with time.
+- [00:42:44,380 - 00:42:46,380] And that will allow us to
+- [00:42:46,380 - 00:42:48,380] figure out how the expectation value
+- [00:42:48,380 - 00:42:50,380] of observables change with time.
+- [00:42:50,380 - 00:42:52,380] It's only the states which change.
+- [00:42:52,380 - 00:42:53,380] So let's figure it out.
+- [00:42:53,380 - 00:42:54,380] Let's just ask,
+- [00:42:54,380 - 00:42:56,380] what's the time derivative?
+- [00:42:56,380 - 00:43:01,380] Well, first of all, let's call this A average.
+- [00:43:01,380 - 00:43:02,380] A average.
+- [00:43:02,380 - 00:43:04,380] And now I'm interested in the time derivative.
+- [00:43:04,380 - 00:43:06,380] I want to understand the time derivative,
+- [00:43:06,380 - 00:43:12,380] how the average of A changes with time.
+- [00:43:12,380 - 00:43:15,380] All right, we have a product of three things here.
+- [00:43:15,380 - 00:43:16,380] A state on the left,
+- [00:43:16,380 - 00:43:17,380] a state on the right,
+- [00:43:17,380 - 00:43:18,380] and a bunch of,
+- [00:43:18,380 - 00:43:20,880] um, coefficients corresponding to the
+- [00:43:20,880 - 00:43:23,380] matrix A in the middle.
+- [00:43:23,380 - 00:43:26,380] How do we differentiate it with respect to time?
+- [00:43:26,380 - 00:43:28,380] It's just the product of three things.
+- [00:43:28,380 - 00:43:30,380] Two of them are time dependent,
+- [00:43:30,380 - 00:43:31,380] the size,
+- [00:43:31,380 - 00:43:34,380] and the A is not time dependent.
+- [00:43:34,380 - 00:43:35,880] So we just treat it
+- [00:43:35,880 - 00:43:37,380] as a product of three things.
+- [00:43:37,380 - 00:43:38,380] Product of three things,
+- [00:43:38,380 - 00:43:40,380] how do you differentiate a product?
+- [00:43:40,380 - 00:43:42,380] Well, it's a sum of terms.
+- [00:43:42,380 - 00:43:43,380] In each term,
+- [00:43:43,380 - 00:43:46,380] you differentiate one of the factors,
+- [00:43:46,380 - 00:43:48,380] and you add them all up.
+- [00:43:48,380 - 00:43:51,380] So, this then is equal to
+- [00:43:51,380 - 00:43:56,380] psi dot A psi
+- [00:43:56,380 - 00:43:59,380] plus psi A psi.
+- [00:43:59,380 - 00:44:02,380] And then you add the two things together,
+- [00:44:02,380 - 00:44:05,380] and you get the result of the matrix A.
+- [00:44:05,380 - 00:44:10,380] So, you have A psi dot.
+- [00:44:10,380 - 00:44:12,380] No, I don't have to bother differentiating A.
+- [00:44:12,380 - 00:44:15,380] That's a fixed matrix corresponding
+- [00:44:15,380 - 00:44:18,380] to some very, very definite observable.
+- [00:44:18,380 - 00:44:20,380] And I fix it once and for all.
+- [00:44:20,380 - 00:44:23,380] I say I'm studying some particular component of a spin,
+- [00:44:23,380 - 00:44:24,380] or whatever it happens to be,
+- [00:44:24,380 - 00:44:26,380] and I'm not changing it with time.
+- [00:44:26,380 - 00:44:27,380] The average only changes
+- [00:44:27,380 - 00:44:29,380] because the state of the system changes.
+- [00:44:29,380 - 00:44:31,380] Do you have a suggestion?
+- [00:44:31,380 - 00:44:35,380] Use the Schrodinger equation.
+- [00:44:35,380 - 00:44:38,380] Use the Schrodinger equation for psi dot.
+- [00:44:38,380 - 00:44:40,380] So, what is this one?
+- [00:44:40,380 - 00:44:42,380] Let's look at this factor here,
+- [00:44:42,380 - 00:44:43,380] this term,
+- [00:44:43,380 - 00:44:46,380] psi A.
+- [00:44:46,380 - 00:44:47,380] And now for psi dot,
+- [00:44:47,380 - 00:44:51,880] I put in minus I
+- [00:44:51,880 - 00:44:56,380] H over H bar times psi.
+- [00:44:56,380 - 00:44:58,380] Do I have that right?
+- [00:44:58,380 - 00:44:59,380] Yeah.
+- [00:44:59,380 - 00:45:01,380] That's this term here.
+- [00:45:01,380 - 00:45:03,380] What about this term?
+- [00:45:03,380 - 00:45:04,380] For this term,
+- [00:45:04,380 - 00:45:07,380] I put in psi.
+- [00:45:07,380 - 00:45:10,380] But now the time derivative of the bra vector
+- [00:45:10,380 - 00:45:12,380] gets a plus I.
+- [00:45:12,380 - 00:45:14,380] I have to complex conjugate.
+- [00:45:14,380 - 00:45:17,380] So that gives me a
+- [00:45:17,380 - 00:45:20,380] plus I H over H bar
+- [00:45:20,380 - 00:45:24,380] times A times psi.
+- [00:45:24,380 - 00:45:27,380] Notice two differences in the two terms.
+- [00:45:27,380 - 00:45:28,380] In one case,
+- [00:45:28,380 - 00:45:29,380] I have a minus I.
+- [00:45:29,380 - 00:45:30,380] In the other case,
+- [00:45:30,380 - 00:45:31,380] I have a plus I.
+- [00:45:31,380 - 00:45:33,380] That's because I've complex conjugated.
+- [00:45:33,380 - 00:45:35,380] When I study the time derivative of psi,
+- [00:45:35,380 - 00:45:37,380] it's the complex conjugate of
+- [00:45:37,380 - 00:45:39,380] the time derivative of psi dagger.
+- [00:45:39,380 - 00:45:41,380] The other difference is the order
+- [00:45:41,380 - 00:45:43,380] of operation of A and H
+- [00:45:43,380 - 00:45:45,380] is different in the two terms.
+- [00:45:45,380 - 00:45:47,380] Here I have H A.
+- [00:45:47,380 - 00:45:49,380] Here I have A H.
+- [00:45:49,380 - 00:45:51,380] Okay?
+- [00:45:51,380 - 00:45:53,380] Those are the two differences.
+- [00:45:53,380 - 00:45:56,380] H A minus A H.
+- [00:45:56,380 - 00:46:00,380] The factor I over H bar can be taken out.
+- [00:46:00,380 - 00:46:02,380] It's just I over H bar.
+- [00:46:02,380 - 00:46:09,380] I over H bar.
+- [00:46:09,380 - 00:46:18,380] Times psi H A minus A H.
+- [00:46:18,380 - 00:46:24,380] That's the time derivative
+- [00:46:24,380 - 00:46:26,380] of the expectation value of A.
+- [00:46:26,380 - 00:46:29,380] A bar dot, let's call it.
+- [00:46:29,380 - 00:46:34,880] We have a name for the
+- [00:46:34,880 - 00:46:40,380] product for H A minus A H.
+- [00:46:40,380 - 00:46:41,380] We've seen it before.
+- [00:46:41,380 - 00:46:42,380] We talked about that?
+- [00:46:42,380 - 00:46:44,380] Yeah, we talked about commutators, didn't we?
+- [00:46:44,380 - 00:46:46,380] We didn't.
+- [00:46:46,380 - 00:46:47,380] Yes, we did.
+- [00:46:47,380 - 00:46:48,380] Sure we did.
+- [00:46:48,380 - 00:46:52,380] Sorry, Dave.
+- [00:46:52,380 - 00:46:54,380] But it doesn't matter because we could.
+- [00:46:54,380 - 00:46:55,380] Actually, I did.
+- [00:46:55,380 - 00:46:57,880] I proved the theorem for
+- [00:46:57,880 - 00:47:00,380] you that said that two operators
+- [00:47:00,380 - 00:47:02,380] will have the same
+- [00:47:02,380 - 00:47:04,380] simultaneous eigenvectors if they commute.
+- [00:47:04,380 - 00:47:07,380] I do remember proving that.
+- [00:47:07,380 - 00:47:12,380] But it doesn't matter because it's just a definition.
+- [00:47:12,380 - 00:47:14,380] A H, take two operators.
+- [00:47:14,380 - 00:47:16,380] Let's call them A and B for a moment.
+- [00:47:16,380 - 00:47:19,380] The combination A B minus B A.
+- [00:47:19,380 - 00:47:24,380] In classical mathematics, if A and B are not equal,
+- [00:47:24,380 - 00:47:26,880] if A and B are numbers,
+- [00:47:26,880 - 00:47:29,380] this difference is always zero, obviously.
+- [00:47:29,380 - 00:47:31,380] But they're not numbers.
+- [00:47:31,380 - 00:47:34,380] They're linear operators or matrices.
+- [00:47:34,380 - 00:47:37,380] And we know that matrices don't generally commute,
+- [00:47:37,380 - 00:47:40,380] that you can't interchange the order when you multiply them.
+- [00:47:40,380 - 00:47:43,380] And so this object, A B minus B A,
+- [00:47:43,380 - 00:47:46,380] is called the commutator of A and B,
+- [00:47:46,380 - 00:47:48,880] and it's written just a
+- [00:47:48,880 - 00:47:51,380] little square bracket with a comma.
+- [00:47:51,380 - 00:47:54,380] A B minus B A equals bracket, or not bracket,
+- [00:47:54,380 - 00:47:55,380] let's not call it bracket,
+- [00:47:55,380 - 00:47:57,380] let's not confuse it with bras and kets,
+- [00:47:57,380 - 00:48:00,380] but commutator symbol.
+- [00:48:00,380 - 00:48:03,380] Commutator symbol is the square bracket here.
+- [00:48:03,380 - 00:48:08,380] All right, so now we've derived a fundamental identity
+- [00:48:08,380 - 00:48:13,380] that the time derivative of any observable A,
+- [00:48:13,380 - 00:48:17,880] let's rewrite it now, A
+- [00:48:17,880 - 00:48:22,380] dot is I over H bar,
+- [00:48:24,380 - 00:48:29,880] A bar dot is I over
+- [00:48:29,880 - 00:48:35,380] H bar times, now what is this?
+- [00:48:35,380 - 00:48:39,380] This is the average of H A minus A H.
+- [00:48:39,380 - 00:48:41,880] So it's the average of
+- [00:48:41,880 - 00:48:44,380] the commutator of H and A.
+- [00:48:44,380 - 00:48:48,380] So the time derivative of the average of an operator
+- [00:48:48,380 - 00:48:50,880] is related to the average
+- [00:48:50,880 - 00:48:53,380] of the commutator with the Hamiltonian.
+- [00:48:53,380 - 00:48:55,380] That is a fundamental significance
+- [00:48:55,380 - 00:48:57,380] of the Hamiltonian in physics,
+- [00:48:57,380 - 00:49:01,380] that if we want the time derivative of something,
+- [00:49:01,380 - 00:49:05,380] or the time derivative of an average value,
+- [00:49:05,380 - 00:49:08,380] that it is just equal to the
+- [00:49:08,380 - 00:49:11,380] average of the commutator with the Hamiltonian.
+- [00:49:11,380 - 00:49:13,380] Very simple.
+- [00:49:13,380 - 00:49:14,380] And where did it come from?
+- [00:49:17,380 - 00:49:20,380] Oh, because it's sandwiched between psi.
+- [00:49:20,380 - 00:49:22,380] Who asked me?
+- [00:49:22,380 - 00:49:25,880] Anything that's sandwiched between psi
+- [00:49:25,880 - 00:49:29,380] like this is an expectation value.
+- [00:49:29,380 - 00:49:32,380] Anything at all, if I want its expectation value,
+- [00:49:32,380 - 00:49:34,380] I sandwich it between psi.
+- [00:49:34,380 - 00:49:38,380] So in particular, the commutator is itself an operator,
+- [00:49:38,380 - 00:49:40,880] and I can ask, what is
+- [00:49:40,880 - 00:49:43,380] the expectation value of the commutator?
+- [00:49:43,380 - 00:49:49,380] And I've just written it as bar on top.
+- [00:49:49,380 - 00:49:52,380] So the time derivative of the average of an operator
+- [00:49:52,380 - 00:49:56,380] is the average of the commutator of H with A.
+- [00:49:56,380 - 00:50:04,380] Now, the first application of this,
+- [00:50:04,380 - 00:50:06,380] let's do one simple application.
+- [00:50:06,380 - 00:50:08,380] I'm going to do two applications of this.
+- [00:50:08,380 - 00:50:11,380] I'll do one before we take a break,
+- [00:50:11,380 - 00:50:13,380] and then one after we take a break.
+- [00:50:13,380 - 00:50:16,380] Question?
+- [00:50:16,380 - 00:50:17,380] Okay.
+- [00:50:17,380 - 00:50:18,880] What is the time derivative of
+- [00:50:18,880 - 00:50:20,380] the average of the Hamiltonian itself?
+- [00:50:22,380 - 00:50:25,380] Let's suppose now we didn't know what the Hamiltonian was.
+- [00:50:25,380 - 00:50:27,380] We had no idea what it stood for.
+- [00:50:27,380 - 00:50:29,380] It's some observable.
+- [00:50:29,380 - 00:50:31,380] We know that because it's Hermitian,
+- [00:50:31,380 - 00:50:34,380] but we don't know what its meaning
+- [00:50:34,380 - 00:50:37,380] is in the broader context of things.
+- [00:50:37,380 - 00:50:39,880] So what is the time derivative
+- [00:50:39,880 - 00:50:42,380] of the average of the Hamiltonian?
+- [00:50:42,380 - 00:50:44,380] Zero.
+- [00:50:44,380 - 00:50:46,880] Zero, because the commutator of
+- [00:50:46,880 - 00:50:49,380] anything with itself is always zero.
+- [00:50:49,380 - 00:50:51,380] I mean, the mathematics of quantum mechanics
+- [00:50:51,380 - 00:50:54,880] is not so bizarre that
+- [00:50:54,880 - 00:50:58,380] HH is not equal to HH.
+- [00:50:58,380 - 00:51:00,380] That bizarre it's not.
+- [00:51:00,380 - 00:51:03,380] HH is equal to HH.
+- [00:51:03,380 - 00:51:05,380] Okay?
+- [00:51:05,380 - 00:51:09,380] So if I plug in for A, H itself,
+- [00:51:09,380 - 00:51:13,380] I find out that the expectation value of the Hamiltonian
+- [00:51:13,380 - 00:51:16,380] doesn't change with time.
+- [00:51:16,380 - 00:51:19,380] Sounds like there's a conservation law.
+- [00:51:19,380 - 00:51:20,380] And there is.
+- [00:51:20,380 - 00:51:21,380] The conservation law is the law of the Hamiltonian.
+- [00:51:21,380 - 00:51:24,380] The conservation law is the conservation of H.
+- [00:51:24,380 - 00:51:27,380] Every system has an H.
+- [00:51:27,380 - 00:51:30,380] Every system has a conservation law.
+- [00:51:30,380 - 00:51:35,380] What more likely thing is there than the energy?
+- [00:51:35,380 - 00:51:36,354] And it is the energy.
+- [00:51:36,354 - 00:51:40,066] ご視聴ありがとうございました
+- [00:51:40,066 - 00:51:40,766] Okay, so Hamilton.
+- [00:51:41,086 - 00:51:41,326] Question?
+- [00:51:41,326 - 00:51:44,196] Would there be a physical interpretation for the
+- [00:51:44,196 - 00:51:47,066] set of all matrices that communicate with H?
+- [00:51:47,326 - 00:51:47,486] Yeah.
+- [00:51:48,146 - 00:51:50,166] Well, it's the set of all things.
+- [00:51:50,226 - 00:51:50,486] Yes.
+- [00:51:50,926 - 00:51:51,126] Good.
+- [00:51:51,586 - 00:51:53,246] It's the set of all things which are conserved.
+- [00:51:54,406 - 00:51:56,726] And would that go beyond energy?
+- [00:51:57,546 - 00:51:59,466] That depends on the details of the system.
+- [00:51:59,886 - 00:52:02,766] For example, if we have a particle moving in free
+- [00:52:02,766 - 00:52:05,646] space with no forces on it, then the momentum is conserved.
+- [00:52:07,186 - 00:52:08,246] So, okay.
+- [00:52:08,246 - 00:52:09,886] But if there's a force on the
+- [00:52:09,886 - 00:52:11,526] system, then the momentum is not conserved.
+- [00:52:11,825 - 00:52:14,765] So it depends on the details of
+- [00:52:14,765 - 00:52:17,706] the system, whether there are other conserved quantities.
+- [00:52:21,706 - 00:52:23,866] But yes, I mean, it's a good question.
+- [00:52:23,966 - 00:52:25,446] There is the collection of all
+- [00:52:25,446 - 00:52:26,926] things which commute with the Hamiltonian,
+- [00:52:27,445 - 00:52:30,786] and that collection is the set of conserved quantities,
+- [00:52:31,006 - 00:52:32,926] the set of things which are conserved for
+- [00:52:32,926 - 00:52:34,846] the particular system that you might be thinking about.
+- [00:52:34,846 - 00:52:36,006] Let's take a break.
+- [00:52:38,246 - 00:52:42,366] One other point that I forgot to mention.
+- [00:52:52,066 - 00:52:53,706] We're going to do an example in a minute.
+- [00:52:53,926 - 00:52:56,936] We're going to take all this abstract stuff and
+- [00:52:56,936 - 00:52:59,946] work it out in the very, very simplest case,
+- [00:53:00,586 - 00:53:02,906] namely a spin in a magnetic field, the
+- [00:53:02,906 - 00:53:05,226] simplest system that we know how to deal with.
+- [00:53:05,386 - 00:53:06,346] But we'll do it in a minute.
+- [00:53:06,506 - 00:53:08,006] But let me get all of the abstract.
+- [00:53:08,246 - 00:53:10,686] I'm going to take all of the abstract things out,
+- [00:53:10,686 - 00:53:13,126] and then we'll do it in detail, a concrete example.
+- [00:53:15,406 - 00:53:18,406] The Hamiltonian H is a Hermitian operator.
+- [00:53:18,966 - 00:53:21,336] That means it has a
+- [00:53:21,336 - 00:53:23,706] complete family of eigenvalues and eigenvectors.
+- [00:53:24,646 - 00:53:28,416] And if you work in the basis
+- [00:53:28,416 - 00:53:32,186] of states described by the eigenvectors of H,
+- [00:53:32,666 - 00:53:34,746] then H is a diagonal matrix.
+- [00:53:34,746 - 00:53:35,626] All right?
+- [00:53:36,146 - 00:53:37,946] Every H is a diagonal matrix.
+- [00:53:38,246 - 00:53:39,936] Every H is a diagonal matrix
+- [00:53:39,936 - 00:53:41,626] in the basis of eigenvectors of H.
+- [00:53:41,746 - 00:53:42,366] That's trivial.
+- [00:53:43,106 - 00:53:43,286] All right?
+- [00:53:43,326 - 00:53:44,866] That's nothing new there.
+- [00:53:45,166 - 00:53:48,606] And so in the energy eigenbasis, let's call it,
+- [00:53:48,686 - 00:53:52,406] in the basis of states which are energy eigenvectors,
+- [00:53:53,046 - 00:53:58,106] the Hamiltonian is just a diagonal matrix,
+- [00:53:58,286 - 00:54:02,406] E1, E2, E3, E4, and so forth,
+- [00:54:02,406 - 00:54:03,766] with zeros everywhere else.
+- [00:54:08,246 - 00:54:14,306] Now, we also saw what happened.
+- [00:54:14,406 - 00:54:14,966] Where is it?
+- [00:54:15,366 - 00:54:17,886] We also saw what happened to
+- [00:54:17,886 - 00:54:20,406] an individual eigenvector as time evolves.
+- [00:54:20,906 - 00:54:24,656] As time evolves, each eigenvector gets
+- [00:54:24,656 - 00:54:28,406] multiplied by E to the minus IEH,
+- [00:54:28,826 - 00:54:30,566] E over H bar T.
+- [00:54:31,146 - 00:54:34,286] That immediately tells us in the same basis,
+- [00:54:34,926 - 00:54:36,666] the basis of the same eigenvectors,
+- [00:54:36,966 - 00:54:38,026] it tells us what you are.
+- [00:54:38,026 - 00:54:38,106] It tells us what you are.
+- [00:54:38,106 - 00:54:38,226] It tells us what you are.
+- [00:54:38,226 - 00:54:38,246] It tells us what you are.
+- [00:54:38,246 - 00:54:38,286] It tells us what you are.
+- [00:54:38,286 - 00:54:38,466] It tells us what you are.
+- [00:54:38,466 - 00:54:38,726] It tells us what you are.
+- [00:54:38,726 - 00:54:38,746] It tells us what you are.
+- [00:54:42,346 - 00:54:48,026] You is a matrix whose entries are just these exponentials.
+- [00:54:48,306 - 00:54:53,066] Each eigenvector gets multiplied by this rotating phase,
+- [00:54:53,166 - 00:54:54,046] by this exponential,
+- [00:54:55,006 - 00:54:58,646] and the different eigenvectors don't get mixed up.
+- [00:54:59,466 - 00:55:00,726] Each one just gets multiplied.
+- [00:55:01,566 - 00:55:02,926] And so it tells us that
+- [00:55:02,926 - 00:55:04,286] the matrix in the same basis,
+- [00:55:04,286 - 00:55:05,406] in the same basis,
+- [00:55:05,886 - 00:55:08,226] is just E to the minus IEH,
+- [00:55:08,226 - 00:55:11,166] E to the minus IE1 over H bar T,
+- [00:55:12,086 - 00:55:16,506] E to the minus IE2 over H bar T,
+- [00:55:16,946 - 00:55:17,826] and so forth,
+- [00:55:18,046 - 00:55:19,346] everything else being zero.
+- [00:55:22,686 - 00:55:24,766] The fact that the other elements are zero
+- [00:55:24,766 - 00:55:26,606] means that the eigenvectors don't
+- [00:55:26,606 - 00:55:28,446] get mixed up with each other,
+- [00:55:29,126 - 00:55:30,946] that they don't rotate into each other.
+- [00:55:31,425 - 00:55:33,286] Each one simply gets a phase,
+- [00:55:33,906 - 00:55:37,246] and so it's a diagonal matrix that looks like this.
+- [00:55:38,226 - 00:55:42,126] The way this is usually written is just to say,
+- [00:55:42,546 - 00:55:46,046] well, these are matrix representations of linear operators.
+- [00:55:46,786 - 00:55:48,886] In terms of abstract operators,
+- [00:55:49,786 - 00:55:54,396] what one writes is that U is equal to
+- [00:55:54,396 - 00:55:59,006] E to the I minus IH over H bar T.
+- [00:56:00,585 - 00:56:03,806] You can interpret that just in terms of the eigenvalues,
+- [00:56:03,806 - 00:56:03,926] and you can interpret this
+- [00:56:03,926 - 00:56:03,936] that the element is equal to E to
+- [00:56:03,936 - 00:56:03,946] the I minus IH over H bar T,
+- [00:56:03,946 - 00:56:03,956] and you can interpret that
+- [00:56:03,956 - 00:56:03,966] just in terms of the eigenvalues,
+- [00:56:03,966 - 00:56:05,926] that the element is equal to E to
+- [00:56:05,926 - 00:56:07,886] the I minus IH over H bar T,
+- [00:56:07,886 - 00:56:12,126] but the elements of U are simply the exponentials,
+- [00:56:12,126 - 00:56:13,785] with a T here, appropriate T here,
+- [00:56:14,086 - 00:56:16,366] of the elements of H.
+- [00:56:18,686 - 00:56:20,246] That's a notation, if you like.
+- [00:56:20,346 - 00:56:20,466] Yeah?
+- [00:56:20,886 - 00:56:22,446] I have two different systems,
+- [00:56:22,766 - 00:56:23,746] and I bring them together,
+- [00:56:23,846 - 00:56:25,566] so I'm going to treat them as a single system.
+- [00:56:25,746 - 00:56:25,886] Yeah.
+- [00:56:26,406 - 00:56:29,246] But the U-champ energy components that
+- [00:56:29,246 - 00:56:32,086] happen to be at the same frequency,
+- [00:56:32,926 - 00:56:35,186] how do I interpret that relative to the fact
+- [00:56:35,186 - 00:56:37,866] that each eigenvector really is representative of the other?
+- [00:56:37,886 - 00:56:40,446] Oh, it may be.
+- [00:56:40,725 - 00:56:42,315] It can be that there
+- [00:56:42,315 - 00:56:43,906] are eigenvectors with the same frequency.
+- [00:56:45,266 - 00:56:47,146] Okay, so I just changed the coefficient.
+- [00:56:47,846 - 00:56:49,586] I just changed that eigenvectors.
+- [00:56:51,186 - 00:56:52,326] When I bring the two together,
+- [00:56:52,406 - 00:56:53,366] the value is the same.
+- [00:56:54,306 - 00:56:55,295] Well, how does it change
+- [00:56:55,295 - 00:56:56,285] when I bring the two together?
+- [00:56:56,506 - 00:56:57,526] I don't quite see that.
+- [00:56:58,186 - 00:56:59,666] I'm not sure what question you're asking.
+- [00:57:00,306 - 00:57:02,826] So I have a Hamiltonian for each of two systems,
+- [00:57:02,826 - 00:57:05,785] and I bring them together and create a single system
+- [00:57:05,785 - 00:57:07,826] with a bigger Hamiltonian.
+- [00:57:07,886 - 00:57:08,386] Right.
+- [00:57:08,386 - 00:57:11,006] If the energies in each of
+- [00:57:11,006 - 00:57:13,626] the two systems have the same frequency,
+- [00:57:14,326 - 00:57:16,046] when I bring the two Hamiltonians together,
+- [00:57:16,146 - 00:57:17,196] does that mean there's going to
+- [00:57:17,196 - 00:57:18,246] be some overlap in the two mechanisms?
+- [00:57:20,466 - 00:57:22,166] There's system A with Hamiltonian A
+- [00:57:22,166 - 00:57:23,866] and system B with Hamiltonian B.
+- [00:57:24,146 - 00:57:27,225] They both happen to have a frequency element that's common.
+- [00:57:27,886 - 00:57:28,466] When I bring them together...
+- [00:57:28,466 - 00:57:30,605] Remember, the frequencies of the combined system
+- [00:57:30,605 - 00:57:33,206] are the sums of the frequencies of the two systems.
+- [00:57:33,566 - 00:57:33,725] Yeah.
+- [00:57:34,066 - 00:57:34,506] Yeah.
+- [00:57:35,366 - 00:57:35,766] Yeah.
+- [00:57:35,766 - 00:57:36,046] Yeah.
+- [00:57:37,166 - 00:57:37,326] Yeah.
+- [00:57:37,886 - 00:57:40,346] Well, no, it's not because it's linear.
+- [00:57:41,566 - 00:57:43,686] This is a separate postulate, if you like,
+- [00:57:43,785 - 00:57:46,066] that non-interacting, separated systems,
+- [00:57:46,146 - 00:57:47,785] which are non-interacting with each other,
+- [00:57:48,246 - 00:57:49,996] have Hamiltonians, which are the
+- [00:57:49,996 - 00:57:51,746] sum of the two Hamiltonians.
+- [00:57:52,426 - 00:57:54,306] Now, we could justify that,
+- [00:57:54,546 - 00:57:57,225] but since you asked me the question,
+- [00:57:57,826 - 00:57:59,926] the answer is that the energy eigenvalues
+- [00:57:59,926 - 00:58:02,366] are the sums of the eigenvalues of the separate system.
+- [00:58:02,866 - 00:58:03,746] Now, that's not surprising.
+- [00:58:04,105 - 00:58:04,725] Energies add.
+- [00:58:05,486 - 00:58:07,686] Of course, if they're interacting, that's not quite true.
+- [00:58:07,886 - 00:58:10,586] If they're interacting, that may not be quite true,
+- [00:58:10,665 - 00:58:11,866] that the energies quite add.
+- [00:58:12,466 - 00:58:13,996] But if they're non-interacting, and
+- [00:58:13,996 - 00:58:15,526] you take the combined system,
+- [00:58:15,986 - 00:58:18,266] the energies are simply the sums of the two energies.
+- [00:58:18,686 - 00:58:20,826] The Hamiltonians are the sums of the two Hamiltonians.
+- [00:58:20,886 - 00:58:21,966] Maybe we can even do
+- [00:58:21,966 - 00:58:23,046] an example if we have time.
+- [00:58:24,526 - 00:58:26,206] But I'm not sure if we will or not.
+- [00:58:27,826 - 00:58:28,386] All right.
+- [00:58:28,506 - 00:58:29,926] The example that I want
+- [00:58:29,926 - 00:58:31,346] to do, in some detail now,
+- [00:58:31,946 - 00:58:36,206] is the problem of a spin in a magnetic field.
+- [00:58:37,886 - 00:58:40,006] Let's work out, let's write down
+- [00:58:40,006 - 00:58:42,126] all the various equations that we need.
+- [00:58:48,665 - 00:58:50,006] Just a single spin now.
+- [00:58:50,285 - 00:58:51,566] No entanglement for the moment.
+- [00:58:51,926 - 00:58:53,986] Probably won't get to it, but...
+- [00:58:53,986 - 00:58:56,286] So we have the spin matrices,
+- [00:58:56,286 - 00:58:58,586] sigma 1, sigma 2, and sigma 3.
+- [00:59:02,586 - 00:59:06,026] They represent the components of spin,
+- [00:59:06,426 - 00:59:07,866] and they're also proportional to the spin.
+- [00:59:07,866 - 00:59:11,206] So the components of the magnetic moment of the electron,
+- [00:59:11,546 - 00:59:12,246] if it's an electron.
+- [00:59:15,106 - 00:59:17,066] And we have a magnetic field B.
+- [00:59:17,666 - 00:59:18,386] That's what we have.
+- [00:59:19,826 - 00:59:20,306] B.
+- [00:59:20,586 - 00:59:22,766] Magnetic field pointing in some direction.
+- [00:59:23,046 - 00:59:23,486] It's a pointer.
+- [00:59:24,106 - 00:59:25,436] We won't call it a
+- [00:59:25,436 - 00:59:26,766] vector because we get ourselves confused.
+- [00:59:27,886 - 00:59:29,536] But it is a thing that
+- [00:59:29,536 - 00:59:31,186] points in a direction of space,
+- [00:59:31,246 - 00:59:32,746] and it has magnitude B.
+- [00:59:32,746 - 00:59:32,806] Okay.
+- [00:59:34,606 - 00:59:37,746] The energy of a...
+- [00:59:37,986 - 00:59:38,886] spin
+- [00:59:39,166 - 00:59:40,386] in a magnetic field
+- [00:59:40,786 - 00:59:42,336] is given by the product of
+- [00:59:42,336 - 00:59:43,886] the spin and the magnetic field.
+- [00:59:44,046 - 00:59:45,926] In fact, the dot product of the two of them.
+- [00:59:46,206 - 00:59:48,046] If you have a spin pointing in some direction
+- [00:59:48,046 - 00:59:49,846] and a magnetic field in some other direction,
+- [00:59:49,886 - 00:59:51,226] the energy stored
+- [00:59:51,486 - 00:59:53,216] is proportional to the dot product
+- [00:59:53,216 - 00:59:54,946] of the spin and the magnetic field.
+- [00:59:54,946 - 00:59:55,686] Or really,
+- [00:59:56,046 - 00:59:58,046] it's the dot product of the magnetic moment
+- [00:59:59,146 - 01:00:00,186] and the...
+- [01:00:01,466 - 01:00:03,566] And the magnetic field.
+- [01:00:03,986 - 01:00:06,746] Now, the magnetic moment is proportional to the spin.
+- [01:00:07,366 - 01:00:07,606] If you have one,
+- [01:00:07,606 - 01:00:10,726] If you have an electron spinning, the magnetic
+- [01:00:10,726 - 01:00:13,846] moment is proportional to the spin, and the,
+- [01:00:13,846 - 01:00:15,605] what's the coefficient that connects them?
+- [01:00:15,605 - 01:00:16,605] Anybody know?
+- [01:00:16,605 - 01:00:17,605] Mu.
+- [01:00:17,605 - 01:00:21,986] Mu, it's called mu, right.
+- [01:00:21,986 - 01:00:24,746] Magnetic moment, magnetic moment.
+- [01:00:24,746 - 01:00:30,926] So the magnetic moment, which is a
+- [01:00:30,926 - 01:00:37,106] little vector, is actually the spin vector times
+- [01:00:37,106 - 01:00:38,226] a number.
+- [01:00:38,226 - 01:00:41,076] The number is called the magnetic moment, mu,
+- [01:00:41,076 - 01:00:43,926] and I think there's a factor of two here
+- [01:00:43,926 - 01:00:47,145] in the definition.
+- [01:00:47,145 - 01:00:49,455] Let's not, let's not write that, let's
+- [01:00:49,455 - 01:00:51,765] just write, here's an interesting quantity, mu
+- [01:00:51,765 - 01:00:53,895] times sigma over two, the two is
+- [01:00:53,895 - 01:00:56,025] entirely conventional and it could be absorbed into
+- [01:00:56,025 - 01:00:57,746] the mu.
+- [01:00:57,746 - 01:00:59,126] What is it, what is this thing?
+- [01:00:59,126 - 01:01:01,306] This is the thing that you
+- [01:01:01,306 - 01:01:03,486] multiply by B to get the energy.
+- [01:01:03,486 - 01:01:06,866] Obviously there's a little coefficient here.
+- [01:01:06,866 - 01:01:09,746] That has to do with the charge on the spin.
+- [01:01:09,746 - 01:01:12,955] If the spin had no charge, there would
+- [01:01:12,955 - 01:01:16,165] be no electric current going around, and so it
+- [01:01:16,165 - 01:01:19,086] wouldn't interact with the magnetic field at all.
+- [01:01:19,086 - 01:01:21,906] So the magnitude of the electric charge of
+- [01:01:21,906 - 01:01:24,726] the particle is somehow buried in mu here,
+- [01:01:24,726 - 01:01:27,866] and this two here I think is just a convention.
+- [01:01:27,866 - 01:01:29,486] I vaguely remember there is a two
+- [01:01:29,486 - 01:01:31,106] there, I think there is a two.
+- [01:01:31,106 - 01:01:34,986] In any case, the energy is sigma mu over two.
+- [01:01:34,986 - 01:01:35,986] That's the energy.
+- [01:01:35,986 - 01:01:36,866] That's the energy.
+- [01:01:36,866 - 01:01:37,866] That's the energy.
+- [01:01:37,866 - 01:01:38,866] That's the energy.
+- [01:01:38,866 - 01:01:39,866] That's the energy.
+- [01:01:39,866 - 01:01:40,866] That's the energy.
+- [01:01:40,866 - 01:01:41,866] That's the energy.
+- [01:01:41,866 - 01:01:42,866] The energy, the magnetic field.
+- [01:01:42,866 - 01:01:46,606] So that must be the Hamiltonian.
+- [01:01:46,606 - 01:01:48,956] Let's take that to be the Hamiltonian, where
+- [01:01:48,956 - 01:01:51,306] now sigma is thought of as a quantum operator.
+- [01:01:51,306 - 01:01:54,746] B is just a magnetic field.
+- [01:01:54,746 - 01:01:57,186] It's got nothing, it's not quantum mechanical, it's
+- [01:01:57,186 - 01:01:59,626] just a great big magnet is sitting there,
+- [01:01:59,626 - 01:02:02,686] a ten Tesla magnet, B is ten Teslas or
+- [01:02:02,686 - 01:02:05,746] whatever it is, and pointing in some definite direction,
+- [01:02:05,746 - 01:02:06,746] that's providing the magnetic field.
+- [01:02:06,746 - 01:02:08,746] It's just a magnet provided
+- [01:02:08,746 - 01:02:10,746] by this big, heavy, stable magnet.
+- [01:02:10,746 - 01:02:12,246] We don't have to think about
+- [01:02:12,246 - 01:02:13,746] the quantum mechanics of the magnet.
+- [01:02:13,746 - 01:02:15,746] And so it's just there.
+- [01:02:15,746 - 01:02:18,746] Now let's choose B in a particular direction.
+- [01:02:18,746 - 01:02:20,746] What's the most convenient direction to choose?
+- [01:02:20,746 - 01:02:25,746] Let's choose B in the third direction along the z-axis.
+- [01:02:25,746 - 01:02:28,746] And then the Hamiltonian has a simple form.
+- [01:02:28,746 - 01:02:31,746] It's just mu over two times
+- [01:02:31,746 - 01:02:34,746] the magnitude of the magnetic field.
+- [01:02:34,746 - 01:02:35,746] Just B without an arrow over it.
+- [01:02:35,746 - 01:02:36,746] It means the magnitude.
+- [01:02:36,746 - 01:02:41,746] Times sigma three.
+- [01:02:41,746 - 01:02:46,246] So this is the energy or the
+- [01:02:46,246 - 01:02:50,746] Hamiltonian of a spin in a magnetic field.
+- [01:02:50,746 - 01:02:55,246] Okay, what I want to calculate first is I want to calculate
+- [01:02:55,246 - 01:02:59,746] the time dependence of the averages of the three components of the spin.
+- [01:02:59,746 - 01:03:02,746] This is the analog of the classical mechanical question
+- [01:03:02,746 - 01:03:05,746] of calculating how the spin does whatever it does.
+- [01:03:05,746 - 01:03:07,746] Does it rotate?
+- [01:03:07,746 - 01:03:08,746] What does it do?
+- [01:03:08,746 - 01:03:10,746] Okay.
+- [01:03:10,746 - 01:03:13,746] So let's begin by calculating how
+- [01:03:13,746 - 01:03:16,746] the expectation values change with time.
+- [01:03:16,746 - 01:03:18,246] The expectation values of sigma
+- [01:03:18,246 - 01:03:19,746] one, sigma two, and sigma three.
+- [01:03:19,746 - 01:03:21,746] First of all, what about sigma three?
+- [01:03:21,746 - 01:03:23,746] Oh, let's write down the equation.
+- [01:03:23,746 - 01:03:27,246] The equation for the evolution of
+- [01:03:27,246 - 01:03:30,746] an expectation value is right here.
+- [01:03:30,746 - 01:03:33,746] So let's start with sigma three.
+- [01:03:33,746 - 01:03:34,746] Sigma three dot.
+- [01:03:35,746 - 01:03:38,746] Sigma three dot.
+- [01:03:38,746 - 01:03:41,746] I won't bother writing expectation values.
+- [01:03:41,746 - 01:03:44,746] I mean here the expectation value of
+- [01:03:44,746 - 01:03:47,746] sigma three, the time derivative of it.
+- [01:03:47,746 - 01:03:48,746] Okay.
+- [01:03:48,746 - 01:03:53,746] That's equal to I over H bar times
+- [01:03:53,746 - 01:03:58,746] the commutator of the Hamiltonian with sigma three.
+- [01:03:58,746 - 01:04:03,746] But the Hamiltonian is just proportional to sigma three.
+- [01:04:03,746 - 01:04:04,746] Okay.
+- [01:04:04,746 - 01:04:07,746] So the result for a numerical factor is sigma three.
+- [01:04:07,746 - 01:04:11,746] And the commutator of sigma three with itself is zero.
+- [01:04:11,746 - 01:04:16,246] So first thing it tells us is that the time derivative
+- [01:04:16,246 - 01:04:20,746] of the expectation value of sigma three is equal to zero.
+- [01:04:20,746 - 01:04:21,746] Let's draw.
+- [01:04:21,746 - 01:04:22,746] Let's draw.
+- [01:04:22,746 - 01:04:24,746] Here's the xy plane.
+- [01:04:24,746 - 01:04:25,746] Here's the z axis.
+- [01:04:25,746 - 01:04:29,746] Z, x, y.
+- [01:04:29,746 - 01:04:31,746] And now we've discovered that the component of the
+- [01:04:31,746 - 01:04:33,746] spin along the z axis doesn't change with time.
+- [01:04:33,746 - 01:04:37,246] How much freedom does that
+- [01:04:37,246 - 01:04:40,746] give to the motion of sigma?
+- [01:04:40,746 - 01:04:43,246] Well, it means that the projection of
+- [01:04:43,246 - 01:04:45,746] sigma onto the third axis doesn't change.
+- [01:04:45,746 - 01:04:48,246] And it means that the angle of the
+- [01:04:48,246 - 01:04:50,746] spin relative to the vertical axis doesn't change.
+- [01:04:50,746 - 01:04:55,246] So whatever the spin does, the expectation value of the three
+- [01:04:55,246 - 01:04:59,746] components, it must somehow move on a cone of fixed angle here.
+- [01:04:59,746 - 01:05:02,746] Otherwise, the component along the z axis would change.
+- [01:05:02,746 - 01:05:08,746] And the axis would change with time.
+- [01:05:08,746 - 01:05:09,746] Okay.
+- [01:05:09,746 - 01:05:11,746] Now what about the x component
+- [01:05:11,746 - 01:05:13,746] and the y component of the spin?
+- [01:05:13,746 - 01:05:14,746] That's more interesting.
+- [01:05:14,746 - 01:05:16,746] This one was boring.
+- [01:05:16,746 - 01:05:18,746] Basically, this was just conservation of
+- [01:05:18,746 - 01:05:20,746] energy, that this is equal to zero.
+- [01:05:20,746 - 01:05:25,246] That since the energy is proportional to the third component of spin, the conservation
+- [01:05:25,246 - 01:05:29,746] of energy must tell us that the third component of spin doesn't change with time.
+- [01:05:29,746 - 01:05:30,746] Well, the average of it.
+- [01:05:30,746 - 01:05:32,746] The average of the energy shouldn't change with time.
+- [01:05:32,746 - 01:05:36,246] Next, what about, let's see
+- [01:05:36,246 - 01:05:39,746] which one do I do next.
+- [01:05:39,746 - 01:05:46,746] Let's do sigma one dot.
+- [01:05:46,746 - 01:05:50,246] Sigma one dot is i over h
+- [01:05:50,246 - 01:05:53,746] bar times the commutator of sigma three.
+- [01:05:53,746 - 01:05:57,746] H is, let's write down what h is.
+- [01:05:57,746 - 01:06:00,746] H is mu over two times b times sigma three.
+- [01:06:00,746 - 01:06:01,746] So there's a mu.
+- [01:06:01,746 - 01:06:10,746] Let's, i over h bar times mu divided by two,
+- [01:06:10,746 - 01:06:19,746] b times the commutator of sigma three with sigma one.
+- [01:06:19,746 - 01:06:23,246] Now I'm looking at sigma one dot,
+- [01:06:23,246 - 01:06:26,746] so I write sigma one instead of a.
+- [01:06:26,746 - 01:06:29,746] The first entry here is still sigma three.
+- [01:06:29,746 - 01:06:31,746] Anybody know what the commutator of
+- [01:06:31,746 - 01:06:33,746] sigma three and sigma one is?
+- [01:06:33,746 - 01:06:34,746] Zero.
+- [01:06:34,746 - 01:06:36,746] i is pi two or something like that.
+- [01:06:36,746 - 01:06:38,746] Okay, let's work it out.
+- [01:06:38,746 - 01:06:47,746] Let's work it out.
+- [01:06:47,746 - 01:06:50,246] Sigma three, alright, so we're going
+- [01:06:50,246 - 01:06:52,746] to write sigma three sigma one first.
+- [01:06:52,746 - 01:06:54,246] First we'll do it in
+- [01:06:54,246 - 01:06:55,746] the order sigma three sigma one.
+- [01:06:55,746 - 01:06:58,746] That's equal to one minus one zero zero.
+- [01:06:59,746 - 01:07:04,746] Sigma three times one one zero zero.
+- [01:07:04,746 - 01:07:06,746] Sigma one is here.
+- [01:07:06,746 - 01:07:08,746] Sigma three is here.
+- [01:07:08,746 - 01:07:09,746] What's the product?
+- [01:07:09,746 - 01:07:12,746] Usual rule.
+- [01:07:12,746 - 01:07:16,746] First row times first column, zero.
+- [01:07:16,746 - 01:07:20,746] First row times second column, one.
+- [01:07:20,746 - 01:07:26,746] Second row times first column, minus one, zero.
+- [01:07:26,746 - 01:07:28,746] This looks sort of like sigma y, or sigma two.
+- [01:07:29,746 - 01:07:34,746] Sigma two, except that it is lacking an i.
+- [01:07:34,746 - 01:07:36,746] This would be sigma two if there was
+- [01:07:36,746 - 01:07:38,746] a minus i and a plus i here.
+- [01:07:38,746 - 01:07:43,246] So this is actually two i times,
+- [01:07:43,246 - 01:07:47,746] sorry, it's just i times sigma two.
+- [01:07:47,746 - 01:07:49,746] Okay, let's check that.
+- [01:07:49,746 - 01:07:52,746] i times sigma two would be
+- [01:07:52,746 - 01:07:55,746] i times minus i i zero zero.
+- [01:07:55,746 - 01:07:57,746] Minus i times i is one.
+- [01:07:57,746 - 01:07:58,746] Yeah, that's correct.
+- [01:07:58,746 - 01:08:00,746] So that's i times sigma two.
+- [01:08:00,746 - 01:08:02,746] Let's do them in the other order now.
+- [01:08:02,746 - 01:08:07,746] In the other order, we have zero one
+- [01:08:07,746 - 01:08:12,746] one zero times one zero zero minus one.
+- [01:08:12,746 - 01:08:17,746] Okay, so now we have in, let's
+- [01:08:17,746 - 01:08:22,746] see, first row times first column, zero again.
+- [01:08:22,746 - 01:08:26,746] First row times second column, minus one.
+- [01:08:26,746 - 01:08:32,746] Second row times first column is one.
+- [01:08:32,746 - 01:08:33,746] Is that right?
+- [01:08:33,746 - 01:08:41,746] Yeah, one and zero.
+- [01:08:41,746 - 01:08:43,745] Now, this is the same as
+- [01:08:43,745 - 01:08:45,745] this except with a minus sign.
+- [01:08:45,745 - 01:08:48,745] So this is minus i sigma two.
+- [01:08:48,745 - 01:08:51,745] But remember when you calculate
+- [01:08:51,745 - 01:08:54,745] the commutator, you subtract these two.
+- [01:08:54,746 - 01:08:57,246] So subtracting minus i sigma two
+- [01:08:57,246 - 01:08:59,746] from i sigma two itself gives what?
+- [01:08:59,746 - 01:09:04,746] Twice i sigma two.
+- [01:09:04,746 - 01:09:07,746] So the commutator of sigma three with
+- [01:09:07,746 - 01:09:10,746] sigma one is just twice i sigma two.
+- [01:09:10,746 - 01:09:12,746] Let's write that down.
+- [01:09:12,746 - 01:09:16,746] Sigma one dot is equal to i
+- [01:09:16,746 - 01:09:20,746] over h bar, mu over two, b,
+- [01:09:20,746 - 01:09:21,746] and then commutator of sigma three with
+- [01:09:21,746 - 01:09:22,746] sigma one is a factor of two,
+- [01:09:22,746 - 01:09:27,746] i sigma two.
+- [01:09:27,746 - 01:09:30,746] Now let's gather some stuff together.
+- [01:09:30,746 - 01:09:33,746] The twos cancel.
+- [01:09:33,746 - 01:09:35,746] I think that's why I put the two there.
+- [01:09:35,746 - 01:09:38,746] I can't remember why I put the two there,
+- [01:09:38,746 - 01:09:41,746] but I think that's why I put the two there.
+- [01:09:41,746 - 01:09:44,746] i times i is minus.
+- [01:09:52,746 - 01:09:55,746] Now remember, these are expectation values.
+- [01:09:55,746 - 01:09:57,746] They're really expectation values.
+- [01:09:57,746 - 01:09:58,746] They're not operators.
+- [01:09:58,746 - 01:10:01,746] We could put a little bar above them.
+- [01:10:01,746 - 01:10:03,746] And being expectation values,
+- [01:10:03,746 - 01:10:05,746] the components are just numbers.
+- [01:10:05,746 - 01:10:08,246] So this tells me that the x
+- [01:10:08,246 - 01:10:10,746] component or the one component of sigma,
+- [01:10:10,746 - 01:10:14,746] the time derivative of it, is proportional to sigma two.
+- [01:10:14,746 - 01:10:16,746] And let me tell you what you get.
+- [01:10:16,746 - 01:10:18,746] Well, let's not belabor it.
+- [01:10:18,746 - 01:10:20,746] Let's just write down the answer.
+- [01:10:20,746 - 01:10:21,746] Sigma two dot.
+- [01:10:21,746 - 01:10:23,746] Looks very similar.
+- [01:10:23,746 - 01:10:26,746] Instead of commutator of sigma three with sigma one,
+- [01:10:26,746 - 01:10:29,746] we'll have commutator of sigma three with sigma two.
+- [01:10:29,746 - 01:10:34,246] And that winds up giving plus mu
+- [01:10:34,246 - 01:10:38,746] b over h bar times sigma one.
+- [01:10:46,746 - 01:10:49,246] So we have the time derivative of sigma
+- [01:10:49,246 - 01:10:51,746] one is minus some constant times sigma two.
+- [01:10:51,746 - 01:10:54,246] And the time derivative of
+- [01:10:54,246 - 01:10:56,746] sigma two is plus sigma one.
+- [01:10:56,746 - 01:10:58,746] Does that look familiar?
+- [01:10:58,746 - 01:11:00,746] It's just a rotation.
+- [01:11:00,746 - 01:11:02,746] Just a rotation.
+- [01:11:02,746 - 01:11:03,746] Yeah.
+- [01:11:03,746 - 01:11:06,746] Just a point rotating in a plane.
+- [01:11:06,746 - 01:11:08,746] Another way to say it is
+- [01:11:08,746 - 01:11:10,746] a very simple solution of this,
+- [01:11:10,746 - 01:11:15,746] is to choose sigma two is equal to
+- [01:11:15,746 - 01:11:20,746] cosine of mu b over h bar t.
+- [01:11:20,746 - 01:11:24,246] And sigma one is plus the sine, I think,
+- [01:11:24,246 - 01:11:27,746] plus the sine of mu b over h bar t.
+- [01:11:27,746 - 01:11:29,246] Do I have it right or do
+- [01:11:29,246 - 01:11:30,746] I need a minus sign in there somewheres?
+- [01:11:30,746 - 01:11:31,746] The other way.
+- [01:11:31,746 - 01:11:32,746] Oh, the other way.
+- [01:11:32,746 - 01:11:33,746] Yeah.
+- [01:11:33,746 - 01:11:35,746] This one should be sine?
+- [01:11:35,746 - 01:11:37,746] Sine.
+- [01:11:37,746 - 01:11:39,746] This one should be cosine.
+- [01:11:39,746 - 01:11:40,746] All right.
+- [01:11:40,746 - 01:11:42,746] Derivative of sine is cosine.
+- [01:11:42,746 - 01:11:45,746] Derivative of cosine is minus sine.
+- [01:11:45,746 - 01:11:48,746] And when you take the derivative,
+- [01:11:48,746 - 01:11:50,746] you have to pull out the coefficient
+- [01:11:50,746 - 01:11:52,746] of t when you take the time derivative.
+- [01:11:52,746 - 01:11:56,746] And that gives you the mu b over h bar.
+- [01:11:56,746 - 01:12:00,746] So what this is,
+- [01:12:00,746 - 01:12:04,746] that means that in the xy plane,
+- [01:12:04,746 - 01:12:07,246] the component of spin in the
+- [01:12:07,246 - 01:12:09,746] xy plane rotates around like that.
+- [01:12:09,746 - 01:12:11,746] So the motion of the
+- [01:12:11,746 - 01:12:13,746] spin vector looks like a procession,
+- [01:12:13,746 - 01:12:16,746] a procession about the vertical axis.
+- [01:12:16,746 - 01:12:18,746] In other words, about the magnetic field.
+- [01:12:18,746 - 01:12:20,746] There's nothing special about choosing the magnetic
+- [01:12:20,746 - 01:12:22,746] field to be along the z axis.
+- [01:12:22,746 - 01:12:24,746] We could have used any axis.
+- [01:12:24,746 - 01:12:28,246] Had I done so, we would have found that
+- [01:12:28,246 - 01:12:31,746] the component of the spin along the magnetic field
+- [01:12:31,746 - 01:12:32,746] doesn't change with time.
+- [01:12:32,746 - 01:12:34,746] That's energy conservation.
+- [01:12:34,746 - 01:12:37,746] And then in the plane perpendicular to the magnetic field,
+- [01:12:37,746 - 01:12:40,246] we would find it processing around
+- [01:12:40,246 - 01:12:42,746] the magnetic field, just like that.
+- [01:12:42,746 - 01:12:46,746] That, of course, is also the known classical solution
+- [01:12:46,746 - 01:12:48,746] of the way a magnetic moment,
+- [01:12:48,746 - 01:12:52,746] would rotate around a magnetic field,
+- [01:12:52,746 - 01:12:55,746] would process around a magnetic field.
+- [01:12:55,746 - 01:12:57,746] It's kind of a gyroscope, is what it is.
+- [01:12:57,746 - 01:12:59,746] It's like a gyroscope.
+- [01:13:02,746 - 01:13:05,746] Isn't there a phase factor in there?
+- [01:13:05,746 - 01:13:07,746] In the solution of that sine...
+- [01:13:07,746 - 01:13:09,746] Excuse me, can I go
+- [01:13:09,746 - 01:13:11,746] with sine plus the phase factor?
+- [01:13:11,746 - 01:13:13,746] Oh, you mean for t plus the phase factor?
+- [01:13:13,746 - 01:13:15,746] Yeah, yeah, that's right.
+- [01:13:15,746 - 01:13:17,746] I mean, you can put in here...
+- [01:13:18,746 - 01:13:20,746] What's the solution of the equations?
+- [01:13:20,746 - 01:13:22,746] The phase factor simply corresponds...
+- [01:13:22,746 - 01:13:24,746] Look down on the xy plane.
+- [01:13:24,746 - 01:13:27,746] There's a solution where at t equals zero,
+- [01:13:27,746 - 01:13:29,246] let's see, at t equals
+- [01:13:29,246 - 01:13:30,746] zero, only sigma one is non-zero.
+- [01:13:30,746 - 01:13:33,746] Let's call this one and two.
+- [01:13:33,746 - 01:13:35,246] So we found a solution where
+- [01:13:35,246 - 01:13:36,746] the spin at time t equals zero
+- [01:13:36,746 - 01:13:40,746] is along the x axis and then it rotates.
+- [01:13:40,746 - 01:13:43,746] There's nothing special about t equals zero.
+- [01:13:43,746 - 01:13:45,246] And the way to indicate that is to
+- [01:13:45,246 - 01:13:46,746] realize that we could have started at any time
+- [01:13:46,746 - 01:13:49,746] with the spin pointing along the x axis,
+- [01:13:49,746 - 01:13:53,746] and then we would put in here some minus theta,
+- [01:13:53,746 - 01:13:57,746] where theta would just be the phase factor
+- [01:13:57,746 - 01:13:59,746] or the time at which the
+- [01:13:59,746 - 01:14:01,746] spin was along the x axis.
+- [01:14:01,746 - 01:14:02,746] Is that what you're talking about?
+- [01:14:02,746 - 01:14:04,246] Yeah, but then I'm thinking,
+- [01:14:04,246 - 01:14:05,746] in order to do quantum mechanics,
+- [01:14:05,746 - 01:14:07,746] you've got to have millions of electrons,
+- [01:14:07,746 - 01:14:09,746] and they're going to have separate phase factors,
+- [01:14:09,746 - 01:14:11,746] so it's a lot better.
+- [01:14:11,746 - 01:14:14,746] The expectation value is going to be one half.
+- [01:14:14,746 - 01:14:15,746] Serious?
+- [01:14:16,746 - 01:14:18,746] Since in order to do quantum mechanics,
+- [01:14:18,746 - 01:14:23,746] you've got to have many electrons to get averages.
+- [01:14:23,746 - 01:14:24,746] Right.
+- [01:14:24,746 - 01:14:27,746] And so each one has a different phase factor.
+- [01:14:27,746 - 01:14:31,746] No! No, no, no, no.
+- [01:14:31,746 - 01:14:34,746] The point is we're doing some experiment.
+- [01:14:34,746 - 01:14:36,246] We want to do the
+- [01:14:36,246 - 01:14:37,746] same experiment with all the electrons.
+- [01:14:37,746 - 01:14:39,746] All right, so what's the experiment?
+- [01:14:39,746 - 01:14:42,746] The experiment starts lining up
+- [01:14:42,746 - 01:14:45,746] all the electrons along some axis
+- [01:14:45,746 - 01:14:46,746] and then letting it go.
+- [01:14:46,746 - 01:14:48,746] So we pick an axis
+- [01:14:48,746 - 01:14:50,746] to line the electron up along,
+- [01:14:50,746 - 01:14:52,746] and then we let it go.
+- [01:14:52,746 - 01:14:54,746] If we're doing the same experiment to all the electrons,
+- [01:14:54,746 - 01:14:56,246] it means that we initially
+- [01:14:56,246 - 01:14:57,746] start them all the same way.
+- [01:14:57,746 - 01:14:59,746] Okay, right.
+- [01:14:59,746 - 01:15:01,746] If we have a system, you're perfectly right,
+- [01:15:01,746 - 01:15:03,746] if we have a system that nobody's
+- [01:15:03,746 - 01:15:05,746] been careful to start exactly the same way,
+- [01:15:05,746 - 01:15:07,746] but we just start them,
+- [01:15:07,746 - 01:15:09,746] right, then we have a mess.
+- [01:15:09,746 - 01:15:12,746] We have a density, we have a mixed state then.
+- [01:15:12,746 - 01:15:15,746] But if we start all the electrons identically,
+- [01:15:16,746 - 01:15:19,746] that could mean that we start, for example,
+- [01:15:19,746 - 01:15:21,746] we start them all pointing along the
+- [01:15:21,746 - 01:15:23,746] one axis at time t equals zero,
+- [01:15:23,746 - 01:15:25,746] then they'll remain the same.
+- [01:15:25,746 - 01:15:28,746] They'll remain pointing the same way.
+- [01:15:28,746 - 01:15:32,246] Now of course, sigma one, sigma two,
+- [01:15:32,246 - 01:15:35,746] and sigma three are quantum mechanical variables.
+- [01:15:35,746 - 01:15:36,746] What does that mean?
+- [01:15:36,746 - 01:15:39,746] For example, supposing we start the spins so that
+- [01:15:39,746 - 01:15:42,746] we know that they're pointing along the one axis
+- [01:15:42,746 - 01:15:45,746] at time t equals zero.
+- [01:15:45,746 - 01:15:47,746] That would tell us that if we
+- [01:15:47,746 - 01:15:49,746] measured sigma one, we would get plus one.
+- [01:15:49,746 - 01:15:52,246] If we measured sigma two, we would get a
+- [01:15:52,246 - 01:15:54,746] half probability for it to be up or down,
+- [01:15:54,746 - 01:15:56,746] and if we measured sigma three,
+- [01:15:56,746 - 01:15:58,746] we would also get a half probability.
+- [01:15:58,746 - 01:16:00,746] But let's start with a
+- [01:16:00,746 - 01:16:02,746] system along the sigma one axis,
+- [01:16:02,746 - 01:16:05,746] and then let it go for a little time.
+- [01:16:05,746 - 01:16:08,246] After a little bit of time, the
+- [01:16:08,246 - 01:16:10,746] system is processed into the two direction.
+- [01:16:10,746 - 01:16:12,746] That means after a little bit of
+- [01:16:12,746 - 01:16:14,746] time, if we were to measure sigma two,
+- [01:16:14,746 - 01:16:17,746] we would find it definitely being up,
+- [01:16:17,746 - 01:16:20,246] but if we measured sigma one, we would
+- [01:16:20,246 - 01:16:22,746] find it with half probability in either direction.
+- [01:16:22,746 - 01:16:25,246] If we wait another half period, or
+- [01:16:25,246 - 01:16:27,746] another quarter period I guess it is,
+- [01:16:27,746 - 01:16:29,746] we would find the spin, if
+- [01:16:29,746 - 01:16:31,746] we measured along the x axis,
+- [01:16:31,746 - 01:16:34,746] we would find for sure that it was minus,
+- [01:16:34,746 - 01:16:37,246] but if we measured sigma two,
+- [01:16:37,246 - 01:16:39,746] again we would find it randomly distributed.
+- [01:16:39,746 - 01:16:43,746] So, that's the...
+- [01:16:44,746 - 01:16:47,246] that's the basic solution of the problem
+- [01:16:47,246 - 01:16:49,746] of a spin in a magnetic field.
+- [01:16:49,746 - 01:16:52,746] If you had two electrons that were entangled,
+- [01:16:52,746 - 01:16:56,746] would that imply 180 degree phase between them, or...
+- [01:16:56,746 - 01:16:59,746] I know you would... if you measured in any axis,
+- [01:16:59,746 - 01:17:00,746] if one of them is up,
+- [01:17:00,746 - 01:17:01,746] then the other is the opposite,
+- [01:17:01,746 - 01:17:04,746] given that they're sort of out entangled.
+- [01:17:04,746 - 01:17:06,746] Does that bear any...
+- [01:17:06,746 - 01:17:10,746] What are we assuming about the two electrons?
+- [01:17:10,746 - 01:17:13,746] You have two entangled electrons,
+- [01:17:13,746 - 01:17:16,746] if you measure one up, the other one is down.
+- [01:17:16,746 - 01:17:19,246] I know, but what are you
+- [01:17:19,246 - 01:17:21,746] assuming about the energy of the system?
+- [01:17:21,746 - 01:17:23,746] We can't say what they're going to do,
+- [01:17:23,746 - 01:17:25,746] unless we have an expression for the energy.
+- [01:17:25,746 - 01:17:28,746] So, one possibility is that there's no magnet around,
+- [01:17:28,746 - 01:17:31,746] but each one provides the magnet for the other one.
+- [01:17:31,746 - 01:17:33,746] Okay?
+- [01:17:33,746 - 01:17:37,746] Alright. If that were the case,
+- [01:17:37,746 - 01:17:40,746] you can work out what the energy eigenvalues are,
+- [01:17:40,746 - 01:17:42,746] and what the eigenvectors are. I'll tell you the answer.
+- [01:17:42,746 - 01:17:43,746] Okay?
+- [01:17:43,746 - 01:17:45,746] The answer is...
+- [01:17:45,746 - 01:17:47,746] Let's...
+- [01:17:47,746 - 01:17:49,746] Well, we're putting them in the magnetic field,
+- [01:17:49,746 - 01:17:51,746] unentangled, if I guess that's my first...
+- [01:17:51,746 - 01:17:52,746] Say that again?
+- [01:17:52,746 - 01:17:54,746] If you put them in a magnetic field,
+- [01:17:54,746 - 01:17:57,746] a uniform magnetic field, would that unentangle them?
+- [01:17:57,746 - 01:17:59,746] It might.
+- [01:17:59,746 - 01:18:01,246] If you put them in a strong
+- [01:18:01,246 - 01:18:02,746] magnetic field, it'll tend to line them up,
+- [01:18:02,746 - 01:18:04,746] but not necessarily, no.
+- [01:18:04,746 - 01:18:07,746] Um...
+- [01:18:07,746 - 01:18:10,746] If this is too complicated, there's no question...
+- [01:18:10,746 - 01:18:11,746] No, no, no.
+- [01:18:11,746 - 01:18:12,746] We could...
+- [01:18:12,746 - 01:18:15,746] It's easy to answer the question about two electrons
+- [01:18:15,746 - 01:18:17,746] when they're not in a magnetic field,
+- [01:18:17,746 - 01:18:20,746] but when they're providing a magnetic field for each other.
+- [01:18:20,746 - 01:18:21,746] Alright?
+- [01:18:21,746 - 01:18:24,746] Then, the Hamiltonian is proportional to
+- [01:18:24,746 - 01:18:27,746] the dot product of sigma and tau.
+- [01:18:27,746 - 01:18:31,246] Sigma 1, tau 1, plus sigma 2,
+- [01:18:31,246 - 01:18:34,746] tau 2, plus sigma 3, tau 3.
+- [01:18:34,746 - 01:18:35,746] Alright?
+- [01:18:35,746 - 01:18:37,246] We know how the sigma 1s and
+- [01:18:37,246 - 01:18:38,746] the sigma 2s and the sigma 3s
+- [01:18:38,746 - 01:18:39,746] and the tau 1 and the
+- [01:18:39,746 - 01:18:40,746] tau 2 and the tau 3,
+- [01:18:40,746 - 01:18:41,746] we know how they act on the states.
+- [01:18:41,746 - 01:18:44,746] And we can work out what the eigenvalues are.
+- [01:18:44,746 - 01:18:46,746] There are two eigenvalues.
+- [01:18:46,746 - 01:18:49,746] The dimensionality of the space is four.
+- [01:18:49,746 - 01:18:51,746] That means that there are four
+- [01:18:51,746 - 01:18:53,746] linearly independent vectors in the space.
+- [01:18:53,746 - 01:18:55,746] Two times two is four.
+- [01:18:55,746 - 01:18:58,246] But, you know what the term
+- [01:18:58,246 - 01:19:00,746] is when there are equal eigenvalues
+- [01:19:00,746 - 01:19:02,746] for an operator, for a Hamiltonian?
+- [01:19:02,746 - 01:19:04,746] It's called degenerate.
+- [01:19:04,746 - 01:19:07,746] So if two states have exactly the same energy,
+- [01:19:07,746 - 01:19:10,746] then the energy spectrum is called degenerate.
+- [01:19:10,746 - 01:19:13,746] Meaning to say that there's more than
+- [01:19:13,746 - 01:19:16,746] one state with exactly the same energy.
+- [01:19:16,746 - 01:19:17,746] Alright.
+- [01:19:17,746 - 01:19:21,746] This Hamiltonian happens to have three degenerate states
+- [01:19:21,746 - 01:19:25,746] and one state which is not degenerate with it.
+- [01:19:25,746 - 01:19:26,746] Okay.
+- [01:19:26,746 - 01:19:29,746] Therefore, there are two energy levels.
+- [01:19:29,746 - 01:19:31,746] And I'm just going to tell you the answer.
+- [01:19:31,746 - 01:19:32,746] You can work this out.
+- [01:19:32,746 - 01:19:36,746] The answer is that if both spins are...
+- [01:19:36,746 - 01:19:39,746] We can work in the basis of the energy spectrum.
+- [01:19:39,746 - 01:19:42,246] We can work in the basis
+- [01:19:42,246 - 01:19:44,746] where the spins are along the z-axis.
+- [01:19:44,746 - 01:19:47,746] If both spins are up,
+- [01:19:47,746 - 01:19:50,746] then you have one particular value of the energy.
+- [01:19:50,746 - 01:19:52,246] Let's just call it equals e, meaning
+- [01:19:52,246 - 01:19:53,746] to say that it has energy e.
+- [01:19:53,746 - 01:19:55,746] If both spins are down,
+- [01:19:55,746 - 01:19:58,746] you also have the same energy e.
+- [01:19:58,746 - 01:20:00,746] And then there's two possibilities.
+- [01:20:00,746 - 01:20:06,746] Let's call it up-down, plus or minus down-up.
+- [01:20:06,746 - 01:20:08,746] One of them is the so-called singlet state.
+- [01:20:08,746 - 01:20:10,746] That has a different energy.
+- [01:20:10,746 - 01:20:11,746] The third...
+- [01:20:11,746 - 01:20:13,746] That's the minus sign.
+- [01:20:13,746 - 01:20:16,746] With the minus sign, let's call this e1, e1.
+- [01:20:16,746 - 01:20:20,746] With this sign, we get energy e2.
+- [01:20:20,746 - 01:20:26,746] But with this sign, down-up, we get energy e1 again.
+- [01:20:26,746 - 01:20:28,746] That's something you can check.
+- [01:20:28,746 - 01:20:31,746] That's why this triplet of states, up-up, down-down,
+- [01:20:31,746 - 01:20:33,746] and up-down, plus down-up, is called the triplet,
+- [01:20:33,746 - 01:20:36,746] and the other one is called the singlet.
+- [01:20:36,746 - 01:20:38,746] So we have three different energy levels.
+- [01:20:38,746 - 01:20:41,746] And once you know there are three different energy levels,
+- [01:20:41,746 - 01:20:43,746] and you know what the eigenvectors are,
+- [01:20:43,746 - 01:20:45,246] you can then expand any vector
+- [01:20:45,246 - 01:20:46,746] that you like to start with.
+- [01:20:46,746 - 01:20:49,746] Pick anything you want to start with,
+- [01:20:49,746 - 01:20:52,746] which is some linear combination of these.
+- [01:20:52,746 - 01:20:56,746] And then just evolve it using the...
+- [01:20:56,746 - 01:20:59,746] Well, using the formula that we had on the blackboard,
+- [01:20:59,746 - 01:21:03,746] which seems to be gone by now.
+- [01:21:03,746 - 01:21:07,746] The formula that said you expand the states in eigenvectors,
+- [01:21:07,746 - 01:21:10,246] and each eigenvector goes with
+- [01:21:10,246 - 01:21:12,746] a phase that's determined by the...
+- [01:21:12,746 - 01:21:14,746] What's the answer?
+- [01:21:14,746 - 01:21:16,746] What's the question?
+- [01:21:16,746 - 01:21:19,746] You want to write down a general state?
+- [01:21:19,746 - 01:21:21,746] Pick a state. Pick a state to start with.
+- [01:21:21,746 - 01:21:26,746] Well, e2, the singlet.
+- [01:21:26,746 - 01:21:29,746] Oh, that'll just stay e2, but it will have...
+- [01:21:29,746 - 01:21:31,746] That's right, it'll just stay that way.
+- [01:21:31,746 - 01:21:33,746] Any energy eigenvector doesn't
+- [01:21:33,746 - 01:21:35,746] do anything terribly interesting.
+- [01:21:35,746 - 01:21:37,746] It just rotates around.
+- [01:21:37,746 - 01:21:40,746] It just rotates with its own phase.
+- [01:21:40,746 - 01:21:42,746] So what'll happen to it is
+- [01:21:42,746 - 01:21:44,746] it will pick up a phase,
+- [01:21:44,746 - 01:21:49,746] e to the i, e2 over h bar t.
+- [01:21:49,746 - 01:21:51,746] But what's more interesting...
+- [01:21:51,746 - 01:21:54,746] Let's see, supposing we just picked...
+- [01:21:54,746 - 01:21:57,246] Isn't the magnetic field going to supply
+- [01:21:57,246 - 01:21:59,746] some energy every once in a while?
+- [01:21:59,746 - 01:22:03,746] At the moment, they don't have any magnetic field.
+- [01:22:03,746 - 01:22:05,746] No magnetic field.
+- [01:22:05,746 - 01:22:06,746] They provide...
+- [01:22:06,746 - 01:22:07,746] The only thing they provide is
+- [01:22:07,746 - 01:22:08,746] a magnetic field of the other one.
+- [01:22:08,746 - 01:22:10,746] That's all.
+- [01:22:10,746 - 01:22:11,746] Okay?
+- [01:22:11,746 - 01:22:12,746] So, for example, we could start.
+- [01:22:12,746 - 01:22:14,746] Let's do a problem.
+- [01:22:14,746 - 01:22:19,746] Let's suppose we start the system as up-down.
+- [01:22:19,746 - 01:22:22,746] That's not an eigenvector of the energy.
+- [01:22:22,746 - 01:22:24,746] I don't see among these...
+- [01:22:24,746 - 01:22:26,746] Where are they?
+- [01:22:26,746 - 01:22:27,746] Among...
+- [01:22:27,746 - 01:22:30,746] There's up-up, down-down,
+- [01:22:30,746 - 01:22:34,746] and up-down minus down-up, and up-down plus down-up.
+- [01:22:34,746 - 01:22:37,746] Let's actually work out what would
+- [01:22:37,746 - 01:22:40,746] happen if we started with up-down.
+- [01:22:40,746 - 01:22:43,746] That won't be trivial.
+- [01:22:43,746 - 01:22:46,746] We start with up-down.
+- [01:22:46,746 - 01:22:49,246] The first thing we do
+- [01:22:49,246 - 01:22:51,746] is we expand it in eigenvectors.
+- [01:22:51,746 - 01:22:53,746] Let's write down what the eigenvectors are.
+- [01:22:53,746 - 01:23:00,746] Up-up, down-down,
+- [01:23:00,746 - 01:23:02,746] and up-down,
+- [01:23:02,746 - 01:23:04,746] plus down-up,
+- [01:23:04,746 - 01:23:06,746] plus or minus down-up,
+- [01:23:06,746 - 01:23:09,746] divided by the square root of 2.
+- [01:23:15,746 - 01:23:17,246] Obviously, these two are not
+- [01:23:17,246 - 01:23:18,746] going to come into the game.
+- [01:23:18,746 - 01:23:20,746] It's these two which will come into the game.
+- [01:23:20,746 - 01:23:24,746] And, in fact, I can write that
+- [01:23:24,746 - 01:23:28,746] up-down is equal to up-down plus down-up.
+- [01:23:30,746 - 01:23:32,746] Put a bracket around it.
+- [01:23:32,746 - 01:23:40,746] Plus up-down minus down-up.
+- [01:23:40,746 - 01:23:45,746] Divide this by 2 and this by 2.
+- [01:23:45,746 - 01:23:48,746] Okay?
+- [01:23:48,746 - 01:23:52,746] So up-down plus down-up and up-down minus down-up.
+- [01:23:52,746 - 01:23:54,746] The down-ups cancel, and I just get up-down.
+- [01:23:54,746 - 01:23:57,746] Everybody see that?
+- [01:23:57,746 - 01:23:58,746] Okay.
+- [01:23:58,746 - 01:23:59,746] All right.
+- [01:23:59,746 - 01:24:01,746] Now, this here is square root of 2 times 2.
+- [01:24:01,746 - 01:24:03,746] Square root of 2 times square root of 2.
+- [01:24:03,746 - 01:24:06,746] Square root of 2 times square root of 2.
+- [01:24:06,746 - 01:24:09,746] Let's give these two guys names.
+- [01:24:09,746 - 01:24:14,746] Up-down plus down-up and up-down minus down-up.
+- [01:24:14,746 - 01:24:15,746] All right?
+- [01:24:15,746 - 01:24:18,746] I have some names that I always call them.
+- [01:24:18,746 - 01:24:21,746] Joe and Mary.
+- [01:24:21,746 - 01:24:22,746] No.
+- [01:24:24,746 - 01:24:27,746] Seymour and Theresa.
+- [01:24:27,746 - 01:24:30,746] Singlet and triplet.
+- [01:24:30,746 - 01:24:34,746] This one is Theresa, the triplet.
+- [01:24:34,746 - 01:24:36,746] All right?
+- [01:24:36,746 - 01:24:38,746] So this is triplet divided
+- [01:24:38,746 - 01:24:40,746] by the square root of 2.
+- [01:24:40,746 - 01:24:42,746] Up-down plus down-up divided by
+- [01:24:42,746 - 01:24:44,746] square root of 2 is triplet.
+- [01:24:44,746 - 01:24:52,746] Plus Seymour divided by the square root of 2.
+- [01:24:52,746 - 01:24:54,746] So that's the starting point.
+- [01:24:54,746 - 01:24:57,746] That's the starting point.
+- [01:24:57,746 - 01:24:59,746] Now let's evolve it for some time.
+- [01:25:00,746 - 01:25:02,746] There are two different energy eigenvalues.
+- [01:25:02,746 - 01:25:04,746] One of them goes with the singlet.
+- [01:25:04,746 - 01:25:09,746] Let's call it, let's call this E triplet E triplet.
+- [01:25:09,746 - 01:25:14,746] And E singlet E triplet.
+- [01:25:14,746 - 01:25:18,746] So what happens to this state as time goes on?
+- [01:25:18,746 - 01:25:20,746] The triplet state picks up a factor.
+- [01:25:20,746 - 01:25:22,746] Now I'm going to write down
+- [01:25:22,746 - 01:25:24,746] the state after a time t.
+- [01:25:24,746 - 01:25:28,746] This will become E to the i E triplet.
+- [01:25:28,746 - 01:25:31,246] E to the minus i
+- [01:25:31,246 - 01:25:33,746] E triplet over h bar t.
+- [01:25:33,746 - 01:25:36,746] Oh boy, we got too many t's, don't we?
+- [01:25:36,746 - 01:25:42,746] I better call it, I better call Theresa capital T.
+- [01:25:42,746 - 01:25:47,746] Triplet will use capital T.
+- [01:25:47,746 - 01:25:49,746] And what happens to this one?
+- [01:25:49,746 - 01:25:53,245] This one picks up the phase E to
+- [01:25:53,245 - 01:25:56,745] the minus i E singlet over h bar t.
+- [01:25:56,745 - 01:25:59,745] Over h bar t.
+- [01:25:59,745 - 01:26:04,745] Which of E, T and E, S is bigger?
+- [01:26:04,745 - 01:26:05,745] Say it again.
+- [01:26:05,745 - 01:26:08,745] Which of E, T and E, S is bigger?
+- [01:26:08,745 - 01:26:12,245] Uh, that depends on whether I put a plus sign
+- [01:26:12,245 - 01:26:15,745] or a minus sign in front of the whole thing.
+- [01:26:15,745 - 01:26:16,745] So let's see.
+- [01:26:16,745 - 01:26:19,245] If I have a plus sign, I think I
+- [01:26:19,245 - 01:26:21,745] probably want, for magnets you'd want a minus sign.
+- [01:26:21,745 - 01:26:25,745] The energy is typically bigger for the triplet state.
+- [01:26:26,745 - 01:26:28,745] That's when they're aligned.
+- [01:26:28,745 - 01:26:31,245] And when two magnets are aligned, you
+- [01:26:31,245 - 01:26:33,745] have more energy than when they're anti-aligned, right?
+- [01:26:33,745 - 01:26:35,745] Because they like to be anti-aligned.
+- [01:26:35,745 - 01:26:37,245] The north pole likes to
+- [01:26:37,245 - 01:26:38,746] sit next to the south pole.
+- [01:26:38,746 - 01:26:40,746] So they want to anti-align.
+- [01:26:40,746 - 01:26:42,746] That means it lowers the energy when they're anti-aligned.
+- [01:26:42,746 - 01:26:44,746] And that means that the singlet
+- [01:26:44,746 - 01:26:46,746] energy is less than the triplet energy.
+- [01:26:46,746 - 01:26:49,746] For example, we could define the energy by saying, uh,
+- [01:26:49,746 - 01:26:52,746] the singlet, you can always subtract a constant from the energy.
+- [01:26:52,746 - 01:26:54,746] That won't make any difference.
+- [01:26:54,746 - 01:26:56,746] We could set the singlet energy equal to zero.
+- [01:26:56,746 - 01:26:59,746] Then the triplet energy would be positive.
+- [01:26:59,746 - 01:27:00,746] Okay.
+- [01:27:00,746 - 01:27:02,246] Nothing actually depends on that constant,
+- [01:27:02,246 - 01:27:03,746] but let's just leave it there.
+- [01:27:03,746 - 01:27:07,746] Well, okay, now we have, now we have the evolution
+- [01:27:07,746 - 01:27:11,746] of the system in terms of the triplet and singlet state.
+- [01:27:11,746 - 01:27:13,746] But if we liked, we
+- [01:27:13,746 - 01:27:15,746] could go back to this representation.
+- [01:27:15,746 - 01:27:19,746] After all, I mean, the up and down spins might be the
+- [01:27:19,746 - 01:27:23,746] thing that we're interested in, whether they're along the third axis or not.
+- [01:27:23,746 - 01:27:25,746] Uh, these are both entangled states.
+- [01:27:26,746 - 01:27:28,746] I might want to write
+- [01:27:28,746 - 01:27:30,746] it in terms of unentangled states.
+- [01:27:30,746 - 01:27:32,746] So then I would simply put back for
+- [01:27:32,746 - 01:27:34,746] the triplet state, let's see what we would get.
+- [01:27:34,746 - 01:27:37,746] We would get e to the
+- [01:27:37,746 - 01:27:40,746] minus i, et, t over h bar.
+- [01:27:40,746 - 01:27:45,746] Now, over, all over square root of 2.
+- [01:27:45,746 - 01:27:47,746] And now we would have triplet.
+- [01:27:47,746 - 01:27:51,746] So that would be up down plus
+- [01:27:51,746 - 01:27:55,746] down up over the square root of 2.
+- [01:27:56,746 - 01:28:01,746] So that would be a 2 down here.
+- [01:28:01,746 - 01:28:03,746] That would be one component.
+- [01:28:03,746 - 01:28:07,246] And then the other component
+- [01:28:07,246 - 01:28:10,746] would be something very similar.
+- [01:28:10,746 - 01:28:14,746] e to the minus i, e singlet t divided
+- [01:28:14,746 - 01:28:18,746] by h bar over the square root of 2.
+- [01:28:18,746 - 01:28:20,746] That'll give me a 2 downstairs.
+- [01:28:20,746 - 01:28:25,746] And I'll have up down minus down up.
+- [01:28:26,746 - 01:28:32,746] What do I want to do?
+- [01:28:32,746 - 01:28:36,746] What I now want to do is I want to pick off the up
+- [01:28:36,746 - 01:28:40,746] down and the down off separately from the two expressions and combine them together.
+- [01:28:40,746 - 01:28:42,746] I want to express this in terms of
+- [01:28:42,746 - 01:28:44,746] the particular states up down and down up.
+- [01:28:44,746 - 01:28:45,746] So let's see what I get.
+- [01:28:45,746 - 01:28:50,746] What multiplies up down?
+- [01:28:50,746 - 01:28:54,746] e to the minus i, et, t over h bar.
+- [01:28:54,746 - 01:29:04,246] Plus e to the minus i, e, that's et, e
+- [01:29:04,246 - 01:29:13,746] singlet t over h bar times up down over 2.
+- [01:29:13,746 - 01:29:15,746] But now what about the other component?
+- [01:29:15,746 - 01:29:17,746] The component with down up?
+- [01:29:17,746 - 01:29:20,746] It's not quite the same factor.
+- [01:29:20,746 - 01:29:22,746] In fact, it has a minus sign.
+- [01:29:22,746 - 01:29:23,746] Right?
+- [01:29:24,746 - 01:29:31,746] A minus sign from here.
+- [01:29:31,746 - 01:29:33,246] So what we get for the down
+- [01:29:33,246 - 01:29:34,746] up is different than the up down.
+- [01:29:34,746 - 01:29:39,746] Down up gets multiplied by one half.
+- [01:29:39,746 - 01:29:41,746] You know, what is this here?
+- [01:29:41,746 - 01:29:45,746] One half this times that?
+- [01:29:45,746 - 01:29:46,746] No, not quite.
+- [01:29:46,746 - 01:29:49,746] The et and the es are different from each other.
+- [01:29:49,746 - 01:29:52,746] Yeah, hyperbolic.
+- [01:29:52,746 - 01:29:53,746] No.
+- [01:29:53,746 - 01:29:55,746] Okay, I'll show you in a minute.
+- [01:29:55,746 - 01:29:57,746] No, it's not hyperbolic.
+- [01:29:57,746 - 01:30:01,746] It is e to the, it's obviously
+- [01:30:01,746 - 01:30:05,746] got to do with signs and cosines.
+- [01:30:05,746 - 01:30:09,246] What it is, is it's, I believe, e
+- [01:30:09,246 - 01:30:12,746] to the, let's just leave it this way.
+- [01:30:12,746 - 01:30:13,746] Let's just leave it there.
+- [01:30:13,746 - 01:30:14,746] You can write it in terms of
+- [01:30:14,746 - 01:30:15,746] signs and cosines, but I'm not going to.
+- [01:30:15,746 - 01:30:20,746] e to the minus i, et, t over h bar.
+- [01:30:20,746 - 01:30:24,246] Minus e to the minus
+- [01:30:24,246 - 01:30:27,746] i, es over h bar, t.
+- [01:30:27,746 - 01:30:30,746] So you see that the up and downs, the
+- [01:30:30,746 - 01:30:33,746] up downs and the down ups get different coefficients.
+- [01:30:33,746 - 01:30:34,746] Okay?
+- [01:30:34,746 - 01:30:37,246] At time t equals zero, the coefficient of
+- [01:30:37,246 - 01:30:39,746] up down and down up are the same.
+- [01:30:39,746 - 01:30:42,746] At time t equals zero, is that right?
+- [01:30:42,746 - 01:30:45,746] No, that's wrong.
+- [01:30:45,746 - 01:30:46,746] Oh, no, no, no, sorry.
+- [01:30:46,746 - 01:30:47,746] At time t equals zero, we started
+- [01:30:47,746 - 01:30:48,746] with pure up down, if you remember.
+- [01:30:48,746 - 01:30:49,746] Okay.
+- [01:30:49,746 - 01:30:53,246] So at time t equals zero, this
+- [01:30:53,246 - 01:30:56,746] one's zero at time t equals zero.
+- [01:30:56,746 - 01:30:58,746] Only up down.
+- [01:30:58,746 - 01:31:00,746] But then we wait a little bit.
+- [01:31:00,746 - 01:31:02,746] This becomes non-zero.
+- [01:31:02,746 - 01:31:04,746] This gets a little smaller than the fact.
+- [01:31:04,746 - 01:31:06,746] This one was maximum at time t equals zero.
+- [01:31:06,746 - 01:31:08,746] It gets a little smaller.
+- [01:31:08,746 - 01:31:10,746] This one grows and grows in magnitude.
+- [01:31:10,746 - 01:31:13,746] And after a little bit of time,
+- [01:31:13,746 - 01:31:16,746] you have a bit of down up.
+- [01:31:16,746 - 01:31:18,746] Now, this is a little bit smaller.
+- [01:31:18,746 - 01:31:20,746] This is a little bit smaller than the state vector.
+- [01:31:20,746 - 01:31:22,746] So that means after a little bit of
+- [01:31:22,746 - 01:31:24,746] time, even though you started with pure up down,
+- [01:31:24,746 - 01:31:26,746] after a little bit of time, you
+- [01:31:26,746 - 01:31:28,746] will have some probability of down up.
+- [01:31:28,746 - 01:31:32,246] Now, you wait for a large enough time, and
+- [01:31:32,246 - 01:31:35,746] after a while, this one will cancel this one.
+- [01:31:35,746 - 01:31:37,246] There's a time at which
+- [01:31:37,246 - 01:31:38,746] this one cancels this one exactly.
+- [01:31:38,746 - 01:31:41,746] And at that time, this one is maximum.
+- [01:31:41,746 - 01:31:44,246] So it goes back and forth
+- [01:31:44,246 - 01:31:46,746] between up down and down up.
+- [01:31:46,746 - 01:31:47,746] Back and forth between up down and down up.
+- [01:31:47,746 - 01:31:51,746] Sort of interpolating in between the two of them.
+- [01:31:51,746 - 01:31:53,746] That's what would happen.
+- [01:31:53,746 - 01:31:55,746] But you see the rule.
+- [01:31:55,746 - 01:31:57,746] The rule is first start with
+- [01:31:57,746 - 01:31:59,746] the basis that you're interested in,
+- [01:31:59,746 - 01:32:01,746] which happens to be in this
+- [01:32:01,746 - 01:32:03,746] case the up down unentangled basis.
+- [01:32:03,746 - 01:32:06,746] Write the state that you want to start with.
+- [01:32:06,746 - 01:32:10,746] Re-express it in terms of eigenvectors of the Hamiltonian.
+- [01:32:10,746 - 01:32:14,746] And then take each eigenvector of the Hamiltonian,
+- [01:32:14,746 - 01:32:17,746] multiply it by the right phase,
+- [01:32:17,746 - 01:32:21,746] and then disentangle it back into the original basis.
+- [01:32:21,746 - 01:32:24,246] And that will tell you how the
+- [01:32:24,246 - 01:32:26,746] probabilities in the original basis change with time.
+- [01:32:26,746 - 01:32:28,246] Let's just see if we
+- [01:32:28,246 - 01:32:29,746] can simplify this a little bit.
+- [01:32:29,746 - 01:32:31,746] Let's see.
+- [01:32:31,746 - 01:32:37,746] I think this is e to the minus i,
+- [01:32:37,746 - 01:32:41,746] e t plus e s...
+- [01:32:41,746 - 01:32:45,746] No.
+- [01:32:45,746 - 01:32:47,746] You know what the point is...
+- [01:32:52,746 - 01:32:53,746] What's that?
+- [01:32:53,746 - 01:32:55,746] No, no, no, you're wrong.
+- [01:32:55,746 - 01:32:56,746] No, no, no, you're wrong.
+- [01:32:56,746 - 01:32:57,746] You're wrong, you're wrong.
+- [01:32:57,746 - 01:32:58,746] Let me just see.
+- [01:32:58,746 - 01:32:59,746] What?
+- [01:33:01,746 - 01:33:02,746] Yeah, that's what I want to do.
+- [01:33:02,746 - 01:33:03,746] I want to pull out the average.
+- [01:33:03,746 - 01:33:04,746] Yeah.
+- [01:33:04,746 - 01:33:05,746] Yeah.
+- [01:33:05,746 - 01:33:06,746] So...
+- [01:33:06,746 - 01:33:08,746] Right.
+- [01:33:08,746 - 01:33:09,746] What I want to do...
+- [01:33:09,746 - 01:33:11,246] The average of the energy is
+- [01:33:11,246 - 01:33:12,746] e t plus e s over 2.
+- [01:33:12,746 - 01:33:14,746] I think that's what I want to pull out.
+- [01:33:14,746 - 01:33:19,746] So, e to the i...
+- [01:33:19,746 - 01:33:22,746] e to the minus i,
+- [01:33:22,746 - 01:33:28,746] e t plus e s over 2.
+- [01:33:28,746 - 01:33:33,746] Let me just think a minute.
+- [01:33:33,746 - 01:33:38,746] If e s had been equal to 0,
+- [01:33:38,746 - 01:33:41,746] then we'd only have this phase here.
+- [01:33:41,746 - 01:33:43,746] This one wouldn't change at all.
+- [01:33:44,746 - 01:33:46,746] Thank you for listening.
+- [01:33:46,746 - 01:33:47,746] See you next time.
+- [01:33:47,746 - 01:33:48,746] All right.
+- [01:33:48,746 - 01:33:49,746] See you then.
+- [01:33:49,746 - 01:33:51,746] ve
+- [01:33:52,286 - 01:33:53,306] That's right.
+- [01:33:53,306 - 01:33:55,306] Mm?
+- [01:33:55,306 - 01:33:56,306] That's right.
+- [01:33:56,306 - 01:34:03,746] I taught Paul the average.
+- [01:34:03,746 - 01:34:05,666] purposes of what you learn.
+- [01:34:05,666 - 01:34:07,666] 我真的把你扣上一二三
+- [01:34:08,802 - 01:34:13,522] Well, the average then, you get e to the...
+- [01:34:13,522 - 01:34:15,802] This is what you mean by the average?
+- [01:34:15,802 - 01:34:18,012] Yeah. Okay, so what we have,
+- [01:34:18,012 - 01:34:20,222] we have e to the minus i,
+- [01:34:20,222 - 01:34:26,072] e t minus e s, t, plus e
+- [01:34:26,072 - 01:34:31,922] to the i, e s minus e t,
+- [01:34:31,922 - 01:34:36,762] e t plus, oh boy, yeah, yeah.
+- [01:34:36,762 - 01:34:41,612] Okay, this one's going to be
+- [01:34:41,612 - 01:34:46,462] cosine of e t minus e s.
+- [01:34:46,462 - 01:34:51,902] Divided by twice h bar, right? Times t.
+- [01:34:51,902 - 01:34:55,352] And the other one looks exactly the
+- [01:34:55,352 - 01:34:58,802] same, has exactly the same factor, a phase,
+- [01:34:58,802 - 01:35:04,502] but then it has sine of the same thing, t.
+- [01:35:04,502 - 01:35:05,602] Now this is not important.
+- [01:35:05,602 - 01:35:06,762] This overall phase is not important.
+- [01:35:06,762 - 01:35:09,552] An overall phase doesn't
+- [01:35:09,552 - 01:35:12,342] mean anything, doesn't change anything.
+- [01:35:12,342 - 01:35:13,932] When you calculate the probabilities,
+- [01:35:13,932 - 01:35:15,522] the overall phase goes away.
+- [01:35:15,522 - 01:35:17,802] So you might as well just drop the overall phase.
+- [01:35:17,802 - 01:35:18,802] Forget it, it's not important.
+- [01:35:18,802 - 01:35:22,522] Do I have this right?
+- [01:35:22,522 - 01:35:27,322] Yes, I do.
+- [01:35:27,322 - 01:35:29,782] Okay, notice what happens.
+- [01:35:29,782 - 01:35:33,782] The probabilities only depend on the difference of energies.
+- [01:35:33,782 - 01:35:34,782] That's a good thing.
+- [01:35:34,782 - 01:35:36,762] They only depend on the difference of energies
+- [01:35:36,762 - 01:35:39,382] The overall sum of energies doesn't make any difference.
+- [01:35:39,382 - 01:35:42,622] Only the difference of energies counts.
+- [01:35:42,622 - 01:35:44,512] And you can see what happens is
+- [01:35:44,512 - 01:35:46,402] that there's an oscillation back and forth
+- [01:35:46,402 - 01:35:48,771] between up-down and down-up
+- [01:35:48,771 - 01:35:51,141] with a computable frequency here.
+- [01:35:51,141 - 01:35:52,641] Have I left something out?
+- [01:35:52,641 - 01:35:53,641] No.
+- [01:35:53,641 - 01:35:54,721] Notice what the frequency is.
+- [01:35:54,721 - 01:35:57,582] It's related to the difference of energies.
+- [01:35:57,582 - 01:35:59,172] So the difference of energies
+- [01:35:59,172 - 01:36:00,762] of the singlet and triplet state
+- [01:36:00,762 - 01:36:03,262] tell you how things go back and
+- [01:36:03,262 - 01:36:05,762] forth between the two states, up-down and down-up.
+- [01:36:05,762 - 01:36:06,762] That's a good thing.
+- [01:36:06,762 - 01:36:10,061] That's an example of a quantum mechanical
+- [01:36:10,061 - 01:36:13,361] problem worked out to death until it's finished.
+- [01:36:13,361 - 01:36:15,462] But the rules are always the same.
+- [01:36:15,462 - 01:36:18,661] Expand the vectors and the eigenvectors of the Hamiltonian.
+- [01:36:18,661 - 01:36:21,582] Let each one evolve with its own phase.
+- [01:36:21,582 - 01:36:23,652] And then put it back together again in
+- [01:36:23,652 - 01:36:25,722] whatever form you want to compute whatever probability
+- [01:36:25,722 - 01:36:27,122] you want.
+- [01:36:27,122 - 01:36:32,062] So it's a standard ritual.
+- [01:36:32,062 - 01:36:35,042] You reduce the problem to a ritual.
+- [01:36:35,042 - 01:36:36,642] Ritual is always the same.
+- [01:36:36,762 - 01:36:37,762] OK.
+- [01:36:37,762 - 01:36:38,762] I think we're finished for tonight.
+- [01:36:38,762 - 01:36:43,762] The preceding program is copyrighted by Stanford University.
+- [01:36:43,762 - 01:36:59,262] Please visit us at stanford.edu.
