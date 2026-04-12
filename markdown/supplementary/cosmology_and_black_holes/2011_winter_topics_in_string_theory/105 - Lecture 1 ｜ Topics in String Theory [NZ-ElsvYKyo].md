@@ -1,0 +1,2490 @@
+# Transcript
+
+Source: supplementary/cosmology_and_black_holes/2011_winter_topics_in_string_theory/105 - Lecture 1 ｜ Topics in String Theory [NZ-ElsvYKyo].mkv
+
+- [00:00:00,000 - 00:00:06,400] Stanford University.
+- [00:00:06,400 - 00:00:20,680] Let's start with some philosophy. Let's start with some general philosophical principle. It's
+- [00:00:20,680 - 00:00:29,440] a principle that philosophers call reductionism. Reductionism is the principle or the philosophy
+- [00:00:29,440 - 00:00:35,560] that big things are made out of little things and little things are made out of littler things.
+- [00:00:35,560 - 00:00:43,840] That's one element of reductionism. How many people would agree with reductionism here? Yeah,
+- [00:00:43,840 - 00:00:51,640] I mean, you know, molecules are made out of atoms, atoms are made out of electrons and nuclei,
+- [00:00:51,640 - 00:00:57,840] nuclei are made out of protons and neutrons, protons and neutrons are made out of quarks
+- [00:00:57,840 - 00:00:59,400] and gluons and so forth.
+- [00:00:59,440 - 00:01:09,640] I call that the building block theory that houses are made out of brick,
+- [00:01:09,640 - 00:01:16,780] bricks are made out of molecules, and nobody in their right mind mistakes a house for a brick,
+- [00:01:16,780 - 00:01:20,600] right, we all know the bricks from the houses, the bricks are smaller than the houses,
+- [00:01:20,600 - 00:01:28,120] they're also simpler than the houses. So that's another element of reductionism. As you go deeper
+- [00:01:28,120 - 00:01:28,680] and deeper into the legal scene, you'll see that the effects of reductionism is very much similar to
+- [00:01:28,680 - 00:01:29,420] the effects of reductionism. You can see how the prices are different in a few of the questions
+- [00:01:29,440 - 00:01:35,580] layers of reductionism, things get simpler, or at least we hope they do.
+- [00:01:35,580 - 00:01:44,680] That's a pious hope of reductionism. I think from what we've learned both
+- [00:01:44,680 - 00:01:49,560] from string theory, from the quantum mechanics of gravity, and so forth, that
+- [00:01:49,560 - 00:01:56,440] modern theories really do spell the end of reductionism. But before you end
+- [00:01:56,440 - 00:02:01,780] reductionism, it's interesting to ask how well it does as a philosophy and as a
+- [00:02:01,780 - 00:02:11,440] as a theory of elementary particles. If reductionism is right, particularly in
+- [00:02:11,440 - 00:02:15,760] that aspect which has to do with simplicity as you go deeper and deeper,
+- [00:02:15,760 - 00:02:20,800] you might have expected that by now elementary particle physics would be
+- [00:02:20,800 - 00:02:25,200] pretty simple. We've gone several several layers and
+- [00:02:25,200 - 00:02:26,400] you might have expected that by now elementary particle physics would be
+- [00:02:26,400 - 00:02:26,420] pretty simple. We've gone several several layers and
+- [00:02:26,420 - 00:02:32,260] is it's simple? The answer is no. It is very very complicated, and to measure
+- [00:02:32,260 - 00:02:39,020] how complicated it is, you can simply ask how many different kinds of particles
+- [00:02:39,020 - 00:02:48,040] are there, and in particular, particles which are unexplained. Well there's
+- [00:02:48,040 - 00:02:53,640] something like about 75 different particles, all of which, in the
+- [00:02:53,640 - 00:02:56,380] standard model of particle physics, and the standard model
+- [00:02:56,380 - 00:03:02,440] of particle physics, maybe only about 20 or maybe even a little bit less than
+- [00:03:02,440 - 00:03:07,060] that independent particles that don't have tight relationships between each
+- [00:03:07,060 - 00:03:13,120] other. So it's maybe 10 to 15 or 20 distinct different particles depending
+- [00:03:13,120 - 00:03:18,980] on how you count. How many parameters? Parameters again mean unexplained
+- [00:03:18,980 - 00:03:23,260] constants that have to go into the theory to make sense out of it. Well,
+- [00:03:23,260 - 00:03:33,220] about 20, 20 distinct parameters, but the theory is definitely incomplete. We know
+- [00:03:33,220 - 00:03:38,140] that it's incomplete. It doesn't have gravity, it doesn't have dark matter, it
+- [00:03:38,140 - 00:03:44,520] doesn't have the particles that are necessary for inflation, the theory of
+- [00:03:44,520 - 00:03:51,300] cosmic inflation to make sense, and it has a terrible fine-tuning problem. We've
+- [00:03:51,300 - 00:03:53,200] talked about that fine-tuning problem.
+- [00:03:53,260 - 00:04:01,000] That in order to overcome this fine-tuning problem, people introduced
+- [00:04:01,000 - 00:04:05,580] things like supersymmetry. My guess is that supersymmetry will really be
+- [00:04:05,580 - 00:04:13,020] discovered at the LHC. But if it does, it adds about 100 new parameters ...
+- [00:04:13,020 - 00:04:22,420] Well, I take that back. It's a hundred plus n, where n is an unknown number, but
+- [00:04:23,180 - 00:04:23,200] ...
+- [00:04:23,200 - 00:04:30,200] That n is now zero because it's necessary for understanding the breaking of supersymmetry,
+- [00:04:30,200 - 00:04:33,200] why supersymmetry is not a real...
+- [00:04:33,200 - 00:04:38,200] Another hundred parameters, a doubling of the number of all of the particles,
+- [00:04:38,200 - 00:04:44,200] plus a whole bunch of stuff that's necessary for inflation and other things.
+- [00:04:44,200 - 00:04:49,200] By the time you're finished, the standard model of particle physics,
+- [00:04:49,200 - 00:04:56,200] together with all of the bells and whistles that have to be added to understand everything, let's say,
+- [00:04:56,200 - 00:05:05,200] is a theory with about 200 parameters, huge number of particles, and totally unexplained connections.
+- [00:05:05,200 - 00:05:10,200] So it's not simple. It's very, very complicated.
+- [00:05:10,200 - 00:05:14,200] And complicated... either you have to say,
+- [00:05:14,200 - 00:05:17,200] well, we haven't gotten anywhere near the bottom yet,
+- [00:05:17,200 - 00:05:19,200] or we just have to...
+- [00:05:19,200 - 00:05:23,200] admit that maybe reductionism isn't working.
+- [00:05:23,200 - 00:05:28,200] But the fact, the idea that reductionism isn't working,
+- [00:05:28,200 - 00:05:34,200] that's not what I meant when I said modern theories sort of spell the end of reductionism.
+- [00:05:34,200 - 00:05:37,200] What I meant was a more theoretical fact.
+- [00:05:37,200 - 00:05:43,200] A more theoretical fact based on both quantum field theory and string theory.
+- [00:05:43,200 - 00:05:47,200] So I'll tell you a little bit about what is known.
+- [00:05:47,200 - 00:05:49,200] In particular, about the idea...
+- [00:05:49,200 - 00:05:52,200] that endlessly... well, not necessarily endlessly,
+- [00:05:52,200 - 00:05:59,200] but that we can always tell the bricks from the houses.
+- [00:05:59,200 - 00:06:04,200] Is it really always true that we can tell which thing is more fundamental than which thing?
+- [00:06:04,200 - 00:06:09,200] I'm going to give you a couple of examples of places where in quantum field theory
+- [00:06:09,200 - 00:06:13,200] that idea has broken down, broken down badly.
+- [00:06:13,200 - 00:06:17,200] The first example was an example of a very simple kind.
+- [00:06:17,200 - 00:06:21,200] I'm not going to explain this. I'm just going to tell you about it.
+- [00:06:21,200 - 00:06:29,200] It was studying the quantum field theory of one-dimensional systems.
+- [00:06:29,200 - 00:06:34,200] Models. Models in which there was time and only one dimension of space.
+- [00:06:34,200 - 00:06:39,200] Very easy to draw. A dimension of space and a dimension of time.
+- [00:06:39,200 - 00:06:42,200] And that's all there is.
+- [00:06:42,200 - 00:06:44,200] And particles.
+- [00:06:44,200 - 00:06:46,200] What was discovered is that there's a very simple kind of theory.
+- [00:06:47,200 - 00:06:49,200] It's just simple. There are a number.
+- [00:06:49,200 - 00:06:52,200] Just, in fact, almost every theory of this type
+- [00:06:52,200 - 00:06:57,200] can be described in terms of particles which are fermions.
+- [00:06:57,200 - 00:06:58,200] Remember what fermions are?
+- [00:06:58,200 - 00:07:03,200] Fermions are particles that satisfy the Pauli exclusion principle.
+- [00:07:03,200 - 00:07:09,200] They're the particles which have this odd behavior that they can't go into the state.
+- [00:07:09,200 - 00:07:12,200] You can't put two of them into the same state.
+- [00:07:12,200 - 00:07:16,200] Electrons are fermions. Quarks are fermions.
+- [00:07:17,200 - 00:07:20,200] Photons are not fermions. They're bosons.
+- [00:07:20,200 - 00:07:22,200] The opposite of a fermion is a boson.
+- [00:07:22,200 - 00:07:25,200] And all particles are either fermions or bosons.
+- [00:07:25,200 - 00:07:28,200] So in this mathematical theory,
+- [00:07:28,200 - 00:07:33,200] you start with some particles which are fermions.
+- [00:07:33,200 - 00:07:38,200] The fermion field, the object which describes the fermions,
+- [00:07:38,200 - 00:07:41,200] which creates and annihilates the fermions,
+- [00:07:41,200 - 00:07:43,200] we call psi.
+- [00:07:43,200 - 00:07:45,200] The mathematical terminology is not important.
+- [00:07:45,200 - 00:07:46,200] But it's important.
+- [00:07:46,200 - 00:07:48,200] The mathematical terminology is not important here.
+- [00:07:48,200 - 00:07:51,200] What is important is that the basic starting point
+- [00:07:51,200 - 00:07:54,200] is a field theory of fermions.
+- [00:07:54,200 - 00:07:58,200] Now, what happens if you put two fermions together?
+- [00:07:58,200 - 00:08:00,200] What do you make?
+- [00:08:00,200 - 00:08:01,200] Zero.
+- [00:08:01,200 - 00:08:03,200] The bosons.
+- [00:08:03,200 - 00:08:06,200] If you put two of them, identical ones together, you make zero.
+- [00:08:06,200 - 00:08:09,200] But supposing two not quite identical ones,
+- [00:08:09,200 - 00:08:12,200] one sort of right next to the other but not right on top of it,
+- [00:08:12,200 - 00:08:14,200] then you make a boson.
+- [00:08:14,200 - 00:08:15,200] Okay?
+- [00:08:15,200 - 00:08:18,200] For example, protons are fermions,
+- [00:08:18,200 - 00:08:20,200] electrons are fermions,
+- [00:08:20,200 - 00:08:23,200] hydrogen atoms are bosons.
+- [00:08:23,200 - 00:08:24,200] Okay?
+- [00:08:24,200 - 00:08:26,200] So you take a fermion and a boson,
+- [00:08:26,200 - 00:08:29,200] two fermions, and you put them together,
+- [00:08:29,200 - 00:08:31,200] almost together.
+- [00:08:31,200 - 00:08:34,200] Maybe there's some attractive force between them
+- [00:08:34,200 - 00:08:36,200] which holds them together.
+- [00:08:36,200 - 00:08:39,200] And these particles, which are now composites,
+- [00:08:39,200 - 00:08:41,200] they're clearly composites,
+- [00:08:41,200 - 00:08:43,200] they can move up and down.
+- [00:08:43,200 - 00:08:45,200] They're also particles, but they're composites.
+- [00:08:45,200 - 00:08:47,200] They're composite particles.
+- [00:08:47,200 - 00:08:49,200] Those composite particles are bosons,
+- [00:08:49,200 - 00:08:53,200] and bosons are also described by fields.
+- [00:08:53,200 - 00:08:56,200] You would think that it's not really a fundamental field.
+- [00:08:56,200 - 00:08:59,200] You would think that it's a field
+- [00:08:59,200 - 00:09:03,200] that is some effective description
+- [00:09:03,200 - 00:09:06,200] of the two particles stuck together.
+- [00:09:06,200 - 00:09:08,200] And you call it phi.
+- [00:09:08,200 - 00:09:10,200] Phi creates bosons.
+- [00:09:10,200 - 00:09:13,200] It creates pairs of these fermions.
+- [00:09:15,200 - 00:09:19,200] That sounds very straightforward.
+- [00:09:19,200 - 00:09:22,200] But what was then discovered in these field theories
+- [00:09:22,200 - 00:09:26,200] is that you could rewrite exactly the same field theory
+- [00:09:26,200 - 00:09:29,200] in terms of an underlying starting point
+- [00:09:29,200 - 00:09:32,200] which started with the bosons.
+- [00:09:32,200 - 00:09:35,200] Let's draw that field theory over here.
+- [00:09:35,200 - 00:09:38,200] Now you start with the bosons.
+- [00:09:38,200 - 00:09:42,200] The fermions cannot be composites of the bosons
+- [00:09:42,200 - 00:09:44,200] because any number of bosons put together
+- [00:09:44,200 - 00:09:46,200] make another boson.
+- [00:09:46,200 - 00:09:51,200] But these fermions can be described in a totally new way.
+- [00:09:51,200 - 00:09:53,200] They're described if we plot,
+- [00:09:53,200 - 00:09:55,200] this is not plotting time anymore,
+- [00:09:55,200 - 00:09:58,200] this is plotting the field phi
+- [00:09:58,200 - 00:10:01,200] as what's called a kink in the field phi.
+- [00:10:01,200 - 00:10:05,200] A place where the field phi jumps,
+- [00:10:05,200 - 00:10:07,200] smoothly jumps,
+- [00:10:07,200 - 00:10:10,200] doesn't jump suddenly.
+- [00:10:10,200 - 00:10:12,200] It smoothly jumps over a distance,
+- [00:10:12,200 - 00:10:14,200] some distance,
+- [00:10:14,200 - 00:10:16,200] jumps from one value to another.
+- [00:10:16,200 - 00:10:18,200] It's called a kink.
+- [00:10:18,200 - 00:10:19,200] It's called a kink.
+- [00:10:19,200 - 00:10:20,200] If you want a picture of it,
+- [00:10:20,200 - 00:10:21,200] I should have taken off my belt.
+- [00:10:21,200 - 00:10:24,200] Well, I won't take off my belt.
+- [00:10:24,200 - 00:10:30,200] But imagine my belt.
+- [00:10:30,200 - 00:10:32,200] Here it is.
+- [00:10:32,200 - 00:10:34,200] And here I've laid it out on the blackboard
+- [00:10:34,200 - 00:10:37,200] so that it's not twisted.
+- [00:10:37,200 - 00:10:39,200] That's got no kink.
+- [00:10:39,200 - 00:10:41,200] Now take the belt and twist it.
+- [00:10:41,200 - 00:10:43,200] Rotate this end around by two pi
+- [00:10:43,200 - 00:10:45,200] so it's twisted once.
+- [00:10:45,200 - 00:10:48,200] It comes back to its original configuration over here,
+- [00:10:48,200 - 00:10:50,200] its original configuration over here,
+- [00:10:50,200 - 00:10:55,200] but in between it's twisted.
+- [00:10:55,200 - 00:10:57,200] That's a kink.
+- [00:10:57,200 - 00:11:00,200] That's a kink in my belt.
+- [00:11:00,200 - 00:11:03,200] I often do that when I put my belt on
+- [00:11:03,200 - 00:11:06,200] and then discover two hours later
+- [00:11:06,200 - 00:11:08,200] when I'm talking to somebody
+- [00:11:08,200 - 00:11:10,200] that my belt is on wrong.
+- [00:11:10,200 - 00:11:12,200] That's called a kink.
+- [00:11:12,200 - 00:11:16,200] The bizarre thing is that these fermions
+- [00:11:16,200 - 00:11:18,200] that we thought we started with,
+- [00:11:18,200 - 00:11:21,200] the bricks which built the houses,
+- [00:11:21,200 - 00:11:24,200] the fermion bricks which built the boson houses,
+- [00:11:24,200 - 00:11:28,200] can now be re-represented as kinks
+- [00:11:28,200 - 00:11:30,200] in the boson field.
+- [00:11:30,200 - 00:11:37,200] Kinks which are extended, thick, and massive,
+- [00:11:37,200 - 00:11:41,200] much heavier than the bosons.
+- [00:11:41,200 - 00:11:43,200] Which are the houses?
+- [00:11:43,200 - 00:11:44,200] Which are the bricks?
+- [00:11:44,200 - 00:11:45,200] Nobody can say.
+- [00:11:45,200 - 00:11:48,200] It's entirely equivalent.
+- [00:11:48,200 - 00:11:50,200] There are parameters in such a theory.
+- [00:11:50,200 - 00:11:53,200] Field theories have parameters.
+- [00:11:53,200 - 00:11:55,200] It turns out that for some values of the,
+- [00:11:55,200 - 00:11:58,200] some ranges of the parameters,
+- [00:11:58,200 - 00:12:00,200] it's much more convenient
+- [00:12:00,200 - 00:12:02,200] to think of the fermions
+- [00:12:02,200 - 00:12:06,200] as the fundamental building blocks.
+- [00:12:06,200 - 00:12:09,200] And for another range of the parameters,
+- [00:12:09,200 - 00:12:12,200] the bosons are much more efficient
+- [00:12:12,200 - 00:12:14,200] at studying the theory,
+- [00:12:14,200 - 00:12:17,200] and they are the more useful building blocks.
+- [00:12:17,200 - 00:12:20,200] It simply becomes a matter of which is more useful.
+- [00:12:20,200 - 00:12:22,200] Is it more useful to think of psi,
+- [00:12:22,200 - 00:12:23,200] the fermions,
+- [00:12:23,200 - 00:12:24,200] or phi, the bosons,
+- [00:12:24,200 - 00:12:27,200] as the fundamental objects of the theory?
+- [00:12:27,200 - 00:12:30,200] And that depends on the parameters.
+- [00:12:30,200 - 00:12:33,200] That depends on a coupling constant.
+- [00:12:33,200 - 00:12:35,200] A coupling constant that's usually called G.
+- [00:12:35,200 - 00:12:37,200] It doesn't matter what it's called.
+- [00:12:37,200 - 00:12:38,200] So,
+- [00:12:38,200 - 00:12:41,200] starting with very small G,
+- [00:12:41,200 - 00:12:43,200] you discover that it's much more useful
+- [00:12:43,200 - 00:12:47,200] to think of the fermions as the starting point.
+- [00:12:47,200 - 00:12:48,200] Easy to deal with.
+- [00:12:48,200 - 00:12:50,200] Easy to study.
+- [00:12:50,200 - 00:12:53,200] These things are composites
+- [00:12:53,200 - 00:12:56,200] that are held together by complicated forces.
+- [00:12:56,200 - 00:12:59,200] Now you start changing this coupling constant,
+- [00:12:59,200 - 00:13:01,200] and increasing it and increasing it.
+- [00:13:01,200 - 00:13:02,200] Oh, incidentally,
+- [00:13:02,200 - 00:13:04,200] when that G is very small,
+- [00:13:04,200 - 00:13:06,200] uh,
+- [00:13:06,200 - 00:13:07,200] let's see,
+- [00:13:07,200 - 00:13:09,200] that kink is,
+- [00:13:09,200 - 00:13:11,200] um,
+- [00:13:11,200 - 00:13:12,200] very tight.
+- [00:13:12,200 - 00:13:15,200] Very small like that.
+- [00:13:16,200 - 00:13:18,200] Now you start changing the cou-
+- [00:13:18,200 - 00:13:21,200] and that's why the fermion is a small object.
+- [00:13:21,200 - 00:13:24,200] The fermion is a small object because it's a small kink.
+- [00:13:24,200 - 00:13:27,200] Now you start tuning the coupling constant,
+- [00:13:27,200 - 00:13:29,200] making it stronger and stronger.
+- [00:13:29,200 - 00:13:33,200] What happens is the kink starts to spread out,
+- [00:13:33,200 - 00:13:36,200] it gets less and less point-like,
+- [00:13:36,200 - 00:13:40,200] but the boson starts to behave more and more
+- [00:13:40,200 - 00:13:43,200] like a simple elementary object.
+- [00:13:43,200 - 00:13:46,200] So the question of which is fundamental
+- [00:13:46,200 - 00:13:48,200] and which is composite
+- [00:13:48,200 - 00:13:50,200] doesn't have a unique answer.
+- [00:13:50,200 - 00:13:51,200] By varying the constants,
+- [00:13:51,200 - 00:13:52,200] you can make,
+- [00:13:52,200 - 00:13:53,200] you can morph,
+- [00:13:53,200 - 00:13:55,200] you can make one thing go into the other.
+- [00:13:55,200 - 00:13:58,200] The houses go into the bricks, so to speak.
+- [00:13:58,200 - 00:14:00,200] Um,
+- [00:14:00,200 - 00:14:02,200] that was a case that was known,
+- [00:14:02,200 - 00:14:03,200] oh gee,
+- [00:14:03,200 - 00:14:05,200] since I was a very young physicist,
+- [00:14:05,200 - 00:14:07,200] um,
+- [00:14:07,200 - 00:14:13,200] the key word is called bosonization.
+- [00:14:13,200 - 00:14:16,200] It's making a fermion out of bosons,
+- [00:14:16,200 - 00:14:18,200] or form bosons out of fermions.
+- [00:14:18,200 - 00:14:22,200] Are there any things like this in elementary particle physics?
+- [00:14:22,200 - 00:14:25,200] It is believed that there are.
+- [00:14:25,200 - 00:14:28,200] And the belief centers around
+- [00:14:28,200 - 00:14:30,200] electric and magnetic monopoles.
+- [00:14:30,200 - 00:14:33,200] Let me tell you what an electric and magnetic monopole is.
+- [00:14:33,200 - 00:14:35,200] An electric monopole,
+- [00:14:35,200 - 00:14:37,200] could be an electron,
+- [00:14:37,200 - 00:14:39,200] could be any charged particle,
+- [00:14:39,200 - 00:14:41,200] ordinary charged particle,
+- [00:14:41,200 - 00:14:44,200] surrounded by an electric field,
+- [00:14:44,200 - 00:14:46,200] usual electric field.
+- [00:14:46,200 - 00:14:49,200] And let's take these,
+- [00:14:49,200 - 00:14:51,200] let's take the particle to be,
+- [00:14:51,200 - 00:14:53,200] let's say an electron.
+- [00:14:53,200 - 00:14:55,200] The electric charge of an electron
+- [00:14:55,200 - 00:14:58,200] is very weak as a matter of fact.
+- [00:14:58,200 - 00:15:01,200] It's a very weak electric charge.
+- [00:15:01,200 - 00:15:02,200] The amount of charge,
+- [00:15:02,200 - 00:15:04,200] and not just because the electron is small,
+- [00:15:05,200 - 00:15:07,200] that's actually not the issue.
+- [00:15:07,200 - 00:15:09,200] There's a dimensionless quantity.
+- [00:15:09,200 - 00:15:10,200] What's a dimensionless quantity called?
+- [00:15:10,200 - 00:15:12,200] Anybody know?
+- [00:15:12,200 - 00:15:14,200] The fine structure constant?
+- [00:15:14,200 - 00:15:16,200] The fine, yeah.
+- [00:15:16,200 - 00:15:19,200] The fine structure constant is a measure
+- [00:15:19,200 - 00:15:22,200] of how much an electron would radiate
+- [00:15:22,200 - 00:15:25,200] if you, you know, if you accelerated it suddenly.
+- [00:15:25,200 - 00:15:28,200] Or if you plowed it into a,
+- [00:15:28,200 - 00:15:31,200] an anode.
+- [00:15:31,200 - 00:15:33,200] If you plowed it into a stop,
+- [00:15:33,200 - 00:15:35,200] into a, you know,
+- [00:15:35,200 - 00:15:36,200] a field,
+- [00:15:36,200 - 00:15:37,200] how much would it radiate?
+- [00:15:37,200 - 00:15:39,200] How many photons would it radiate?
+- [00:15:39,200 - 00:15:41,200] The answer is that an electron
+- [00:15:41,200 - 00:15:42,200] will radiate on the average
+- [00:15:42,200 - 00:15:45,200] about 1 over 100 photons.
+- [00:15:45,200 - 00:15:46,200] Another way of saying it
+- [00:15:46,200 - 00:15:48,200] is that the electron will only radiate
+- [00:15:48,200 - 00:15:50,200] about 1 out of 100 times
+- [00:15:50,200 - 00:15:51,200] when it's stopped,
+- [00:15:51,200 - 00:15:53,200] radiate a photon.
+- [00:15:53,200 - 00:15:59,200] So the electron charge is very weak.
+- [00:15:59,200 - 00:16:01,200] And the electron is very simple.
+- [00:16:01,200 - 00:16:03,200] The electric field around it is rather,
+- [00:16:03,200 - 00:16:04,200] is rather weak,
+- [00:16:04,200 - 00:16:06,200] because the electric charge is weak.
+- [00:16:06,200 - 00:16:08,200] And it doesn't do very much
+- [00:16:08,200 - 00:16:11,200] to the neighboring space around it.
+- [00:16:11,200 - 00:16:13,200] It doesn't polarize the vacuum.
+- [00:16:13,200 - 00:16:15,200] It doesn't create electron positron pairs
+- [00:16:15,200 - 00:16:17,200] to any appreciable amount.
+- [00:16:17,200 - 00:16:20,200] Electron is simple.
+- [00:16:20,200 - 00:16:23,200] It is also believed that in nature
+- [00:16:23,200 - 00:16:26,200] there do exist magnetic monopoles.
+- [00:16:26,200 - 00:16:28,200] Most physicists like myself believe
+- [00:16:28,200 - 00:16:31,200] in the existence of magnetic monopoles.
+- [00:16:31,200 - 00:16:32,200] They,
+- [00:16:32,200 - 00:16:35,200] they come up in so many theories
+- [00:16:35,200 - 00:16:37,200] that by now,
+- [00:16:37,200 - 00:16:38,200] they,
+- [00:16:38,200 - 00:16:40,200] but they've never been discovered.
+- [00:16:40,200 - 00:16:41,200] They've never been discovered
+- [00:16:41,200 - 00:16:42,200] in the laboratory.
+- [00:16:42,200 - 00:16:44,200] A magnetic monopole
+- [00:16:44,200 - 00:16:47,200] is like the end of a bar magnet.
+- [00:16:50,200 - 00:16:51,200] North,
+- [00:16:51,200 - 00:16:52,200] south.
+- [00:16:52,200 - 00:16:54,200] If you just imagine the end
+- [00:16:54,200 - 00:16:55,200] of the bar magnet
+- [00:16:55,200 - 00:16:57,200] with the bar magnet itself being so thin
+- [00:16:57,200 - 00:16:59,200] that you couldn't see it,
+- [00:16:59,200 - 00:17:03,200] then waving around the bar magnet
+- [00:17:03,200 - 00:17:06,200] would look like waving around
+- [00:17:06,200 - 00:17:09,200] a magnetic monopole
+- [00:17:09,200 - 00:17:11,200] where the magnetic field comes out
+- [00:17:11,200 - 00:17:13,200] of the magnetic monopole
+- [00:17:13,200 - 00:17:15,200] exactly the same way the electric field
+- [00:17:15,200 - 00:17:17,200] comes out of the electric monopole.
+- [00:17:17,200 - 00:17:20,200] The amount of the monopoles
+- [00:17:20,200 - 00:17:24,200] that theoretical physics seems to produce
+- [00:17:24,200 - 00:17:26,200] have a magnetic charge
+- [00:17:26,200 - 00:17:28,200] which is huge,
+- [00:17:28,200 - 00:17:29,200] very large.
+- [00:17:29,200 - 00:17:32,200] The force between two magnetic monopoles
+- [00:17:32,200 - 00:17:35,200] would be 10,000 times larger
+- [00:17:35,200 - 00:17:37,200] than the force between two electrons
+- [00:17:37,200 - 00:17:39,200] at the same distance.
+- [00:17:39,200 - 00:17:42,200] That means that the magnetic monopoles
+- [00:17:42,200 - 00:17:44,200] make large fields around them
+- [00:17:44,200 - 00:17:46,200] and do very, very complicated things,
+- [00:17:46,200 - 00:17:49,200] make a very complicated mess around them.
+- [00:17:49,200 - 00:17:52,200] That complicated mess is extended,
+- [00:17:52,200 - 00:17:54,200] it's broad,
+- [00:17:54,200 - 00:17:56,200] the same way that the kink was broad,
+- [00:17:56,200 - 00:17:58,200] and it's massive.
+- [00:17:58,200 - 00:17:59,200] It's very, very heavy
+- [00:17:59,200 - 00:18:01,200] because there's so much going on
+- [00:18:01,200 - 00:18:03,200] in the vicinity of the monopole.
+- [00:18:03,200 - 00:18:05,200] I'm not really talking about
+- [00:18:05,200 - 00:18:07,200] the end of a bar magnet.
+- [00:18:07,200 - 00:18:10,200] I'm talking about the end of the bar magnet
+- [00:18:10,200 - 00:18:11,200] without the bar magnet,
+- [00:18:11,200 - 00:18:13,200] magnetic monopoles.
+- [00:18:13,200 - 00:18:15,200] They haven't been discovered in the laboratory
+- [00:18:15,200 - 00:18:17,200] because they're too heavy to make.
+- [00:18:17,200 - 00:18:19,200] Will they ever be discovered?
+- [00:18:19,200 - 00:18:20,200] Perhaps.
+- [00:18:20,200 - 00:18:23,200] But most theorists believe in them.
+- [00:18:23,200 - 00:18:24,200] But the point is,
+- [00:18:24,200 - 00:18:25,200] the more important point is,
+- [00:18:25,200 - 00:18:27,200] the mathematics of quantum electro-economy
+- [00:18:27,200 - 00:18:29,200] is that the mathematical definition
+- [00:18:29,200 - 00:18:31,200] of quantum electrodynamics,
+- [00:18:31,200 - 00:18:34,200] which contains monopoles and electrons,
+- [00:18:34,200 - 00:18:37,200] is totally unclear about which of them
+- [00:18:37,200 - 00:18:40,200] is the elementary particle.
+- [00:18:40,200 - 00:18:43,200] It depends on the fine structure constant.
+- [00:18:43,200 - 00:18:45,200] It depends on alpha,
+- [00:18:45,200 - 00:18:47,200] the fine structure constant.
+- [00:18:47,200 - 00:18:48,200] If the fine structure constant,
+- [00:18:48,200 - 00:18:49,200] which is basically the square
+- [00:18:49,200 - 00:18:52,200] of the electric charge of the electron,
+- [00:18:52,200 - 00:18:55,200] if that's much, much less than one,
+- [00:18:55,200 - 00:18:57,200] then the electron is the simple one.
+- [00:18:57,200 - 00:18:58,200] It's simple.
+- [00:18:58,200 - 00:19:00,200] It's almost point-like.
+- [00:19:00,200 - 00:19:02,200] It has very little structure.
+- [00:19:02,200 - 00:19:04,200] The charge is very weak.
+- [00:19:04,200 - 00:19:07,200] The monopole has a very, very complicated
+- [00:19:07,200 - 00:19:09,200] structure in that limit.
+- [00:19:09,200 - 00:19:11,200] The magnetic field is very powerful
+- [00:19:11,200 - 00:19:13,200] and does very complicated things
+- [00:19:13,200 - 00:19:15,200] to space around it.
+- [00:19:15,200 - 00:19:17,200] And that's why it's heavy.
+- [00:19:17,200 - 00:19:19,200] What happens if you could imagine now
+- [00:19:19,200 - 00:19:23,200] that you had a dial,
+- [00:19:23,200 - 00:19:24,200] that you could start dialing,
+- [00:19:24,200 - 00:19:27,200] redialing the fine structure.
+- [00:19:27,200 - 00:19:29,200] What happens if you could imagine now
+- [00:19:29,200 - 00:19:31,200] that you had a dial,
+- [00:19:31,200 - 00:19:33,200] that you could start dialing,
+- [00:19:33,200 - 00:19:35,200] redialing the fine structure constant?
+- [00:19:35,200 - 00:19:37,200] Start increasing it.
+- [00:19:37,200 - 00:19:39,200] What happens as you start to increase it?
+- [00:19:39,200 - 00:19:41,200] The field surrounding the electron
+- [00:19:41,200 - 00:19:43,200] becomes stronger.
+- [00:19:43,200 - 00:19:45,200] Effectively, the electric charge
+- [00:19:45,200 - 00:19:47,200] is getting larger.
+- [00:19:47,200 - 00:19:49,200] The field is getting stronger.
+- [00:19:49,200 - 00:19:51,200] It starts to do more complicated things
+- [00:19:51,200 - 00:19:53,200] in the vicinity of the electron.
+- [00:19:53,200 - 00:19:55,200] What happens to the magnetic monopole?
+- [00:19:55,200 - 00:19:57,200] Well, I can explain easily.
+- [00:19:57,200 - 00:19:59,200] But the fact is,
+- [00:19:59,200 - 00:20:01,200] it starts to shrink.
+- [00:20:01,200 - 00:20:03,200] It gets smaller and smaller.
+- [00:20:03,200 - 00:20:05,200] It gets lighter and lighter.
+- [00:20:05,200 - 00:20:07,200] The electron gets heavier and heavier
+- [00:20:07,200 - 00:20:09,200] as alpha gets large.
+- [00:20:09,200 - 00:20:11,200] When alpha gets bigger than one,
+- [00:20:11,200 - 00:20:13,200] they simply interchange.
+- [00:20:13,200 - 00:20:15,200] The magnetic monopole
+- [00:20:15,200 - 00:20:17,200] becomes light and small
+- [00:20:17,200 - 00:20:19,200] and fundamental.
+- [00:20:19,200 - 00:20:21,200] The electron would become heavy,
+- [00:20:21,200 - 00:20:23,200] complicated,
+- [00:20:23,200 - 00:20:25,200] and hard to understand.
+- [00:20:25,200 - 00:20:27,200] And full of all kinds of structure.
+- [00:20:27,200 - 00:20:29,200] And basically, they would just
+- [00:20:29,200 - 00:20:31,200] interchange themselves.
+- [00:20:31,200 - 00:20:33,200] So again,
+- [00:20:33,200 - 00:20:35,200] which is the building block?
+- [00:20:35,200 - 00:20:37,200] Is it the electron,
+- [00:20:37,200 - 00:20:39,200] whose
+- [00:20:39,200 - 00:20:41,200] complicated structure here
+- [00:20:41,200 - 00:20:43,200] is making up the monopole?
+- [00:20:43,200 - 00:20:45,200] Or is it the monopole,
+- [00:20:45,200 - 00:20:47,200] which is simple, and whose complicated structure
+- [00:20:47,200 - 00:20:49,200] is making up the electron?
+- [00:20:49,200 - 00:20:51,200] Modern quantum field theories
+- [00:20:51,200 - 00:20:53,200] say they're equivalent.
+- [00:20:53,200 - 00:20:55,200] You can't tell the difference.
+- [00:20:55,200 - 00:20:57,200] You may want to choose one of them
+- [00:20:57,200 - 00:20:59,200] as the starting point,
+- [00:20:59,200 - 00:21:01,200] depending on the fine structure constant.
+- [00:21:01,200 - 00:21:03,200] It may be more convenient
+- [00:21:03,200 - 00:21:05,200] to think of the electron as fundamental,
+- [00:21:05,200 - 00:21:07,200] and less convenient to think about the monopole.
+- [00:21:07,200 - 00:21:09,200] And that, of course, is true.
+- [00:21:09,200 - 00:21:11,200] And that's why we use electrons
+- [00:21:11,200 - 00:21:13,200] as starting points for quantum electrodynamics
+- [00:21:13,200 - 00:21:15,200] and not monopoles.
+- [00:21:19,200 - 00:21:21,200] Yeah?
+- [00:21:21,200 - 00:21:23,200] Going back to your philosophical point,
+- [00:21:23,200 - 00:21:25,200] if,
+- [00:21:25,200 - 00:21:27,200] if there's a belief that reductionism
+- [00:21:27,200 - 00:21:29,200] is not the
+- [00:21:29,200 - 00:21:31,200] correct view of things,
+- [00:21:31,200 - 00:21:33,200] why do physicists use calculus,
+- [00:21:33,200 - 00:21:35,200] which is the most reductionist
+- [00:21:35,200 - 00:21:37,200] of mathematical tools,
+- [00:21:37,200 - 00:21:39,200] to constantly...
+- [00:21:39,200 - 00:21:41,200] Calculus is not necessarily reductionist.
+- [00:21:41,200 - 00:21:43,200] It just says everything is smooth,
+- [00:21:43,200 - 00:21:45,200] smoothly varying.
+- [00:21:47,200 - 00:21:49,200] But it doesn't in any way
+- [00:21:49,200 - 00:21:51,200] tell you what the fundamental objects
+- [00:21:51,200 - 00:21:53,200] are of theory.
+- [00:21:53,200 - 00:21:55,200] But with, like, a derivative,
+- [00:21:55,200 - 00:21:57,200] you chop it up into teeny,
+- [00:21:57,200 - 00:21:59,200] weeny little points,
+- [00:21:59,200 - 00:22:01,200] and then you...
+- [00:22:01,200 - 00:22:03,200] Right.
+- [00:22:03,200 - 00:22:05,200] Right.
+- [00:22:05,200 - 00:22:07,200] You chop up the things into little distances,
+- [00:22:07,200 - 00:22:09,200] and you ask, what's in those little distances?
+- [00:22:09,200 - 00:22:11,200] And that tells you what
+- [00:22:11,200 - 00:22:13,200] the fundamental things are.
+- [00:22:13,200 - 00:22:15,200] Okay?
+- [00:22:15,200 - 00:22:17,200] In quantum field theory,
+- [00:22:19,200 - 00:22:21,200] it's just an endless hierarchy
+- [00:22:21,200 - 00:22:23,200] of distance scales.
+- [00:22:23,200 - 00:22:25,200] And so, you never get
+- [00:22:25,200 - 00:22:27,200] to the point where you can decide
+- [00:22:27,200 - 00:22:29,200] which one is fundamental.
+- [00:22:29,200 - 00:22:31,200] Hmm?
+- [00:22:31,200 - 00:22:33,200] Like a fractal?
+- [00:22:33,200 - 00:22:35,200] Yeah, pretty much like a fractal.
+- [00:22:35,200 - 00:22:37,200] For example, describing a curve,
+- [00:22:37,200 - 00:22:39,200] you can use it using a derivative,
+- [00:22:39,200 - 00:22:41,200] or one of the few non-reductionist
+- [00:22:41,200 - 00:22:43,200] models is
+- [00:22:43,200 - 00:22:45,200] general relativity, where you describe it
+- [00:22:45,200 - 00:22:47,200] as a geodesic on your...
+- [00:22:47,200 - 00:22:49,200] Quantum fields fluctuate,
+- [00:22:49,200 - 00:22:51,200] and they fluctuate on every scale.
+- [00:22:51,200 - 00:22:53,200] So they're never smooth.
+- [00:22:53,200 - 00:22:55,200] They're never smooth.
+- [00:22:55,200 - 00:22:57,200] Never smooth.
+- [00:22:57,200 - 00:22:59,200] And in some sense,
+- [00:22:59,200 - 00:23:01,200] some of the great difficulties of
+- [00:23:01,200 - 00:23:03,200] understanding quantum field theory,
+- [00:23:03,200 - 00:23:05,200] the reasons that mathematicians
+- [00:23:05,200 - 00:23:07,200] have so much trouble with it,
+- [00:23:07,200 - 00:23:09,200] is sort of because in a certain sense,
+- [00:23:09,200 - 00:23:11,200] calculus does break down.
+- [00:23:13,200 - 00:23:15,200] In studying the fields,
+- [00:23:15,200 - 00:23:17,200] they fluctuate too much, they vary too much.
+- [00:23:17,200 - 00:23:19,200] But, uh,
+- [00:23:19,200 - 00:23:21,200] let's not get into that now.
+- [00:23:21,200 - 00:23:23,200] Alright, now what does string theory say?
+- [00:23:23,200 - 00:23:25,200] Does string theory have an answer
+- [00:23:25,200 - 00:23:27,200] to what are the fundamental
+- [00:23:27,200 - 00:23:29,200] building blocks?
+- [00:23:31,200 - 00:23:33,200] Well, obviously string theory has an answer
+- [00:23:33,200 - 00:23:35,200] for what the fundamental building blocks is.
+- [00:23:35,200 - 00:23:37,200] It must be strings, right?
+- [00:23:37,200 - 00:23:39,200] Okay, so let me tell you a little bit about...
+- [00:23:39,200 - 00:23:41,200] We talked about D-brains, yes?
+- [00:23:43,200 - 00:23:45,200] Alright, so I will just very quickly
+- [00:23:45,200 - 00:23:47,200] just remind you
+- [00:23:47,200 - 00:23:49,200] what a D-brain is.
+- [00:23:53,200 - 00:23:55,200] We don't need to know a lot about the mathematics.
+- [00:23:55,200 - 00:23:57,200] Pictures are good enough.
+- [00:23:59,200 - 00:24:01,200] D-brains are objects that were
+- [00:24:01,200 - 00:24:03,200] discovered through a fairly
+- [00:24:05,200 - 00:24:07,200] indirect mathematical route.
+- [00:24:07,200 - 00:24:09,200] They are part of the theory.
+- [00:24:09,200 - 00:24:11,200] You can't get rid of them.
+- [00:24:11,200 - 00:24:13,200] You're stuck with it.
+- [00:24:13,200 - 00:24:15,200] They're objects which are, first of all,
+- [00:24:15,200 - 00:24:17,200] very heavy.
+- [00:24:19,200 - 00:24:21,200] They could be...
+- [00:24:21,200 - 00:24:23,200] They come in different dimensionality.
+- [00:24:23,200 - 00:24:25,200] The simplest one is called
+- [00:24:25,200 - 00:24:27,200] the D-zero brain.
+- [00:24:27,200 - 00:24:29,200] And zero stands for the dimension...
+- [00:24:29,200 - 00:24:31,200] What's the dimension of a point?
+- [00:24:31,200 - 00:24:33,200] The dimensionality of a point?
+- [00:24:33,200 - 00:24:35,200] First of all, what's the dimensionality of a line?
+- [00:24:35,200 - 00:24:37,200] One dimension.
+- [00:24:37,200 - 00:24:39,200] The dimensionality of a
+- [00:24:39,200 - 00:24:41,200] membrane or a two-dimensional surface?
+- [00:24:41,200 - 00:24:43,200] Two.
+- [00:24:43,200 - 00:24:45,200] What's the dimensionality of a point?
+- [00:24:45,200 - 00:24:47,200] Zero.
+- [00:24:47,200 - 00:24:49,200] So in that sense,
+- [00:24:49,200 - 00:24:51,200] particles...
+- [00:24:51,200 - 00:24:53,200] point particles are called
+- [00:24:53,200 - 00:24:55,200] zero-dimensional objects.
+- [00:24:55,200 - 00:24:57,200] zero-dimensional objects.
+- [00:24:59,200 - 00:25:01,200] Even if they're not absolute points,
+- [00:25:01,200 - 00:25:03,200] they're still regarded as
+- [00:25:03,200 - 00:25:05,200] zero-dimensional.
+- [00:25:05,200 - 00:25:07,200] They are not extended
+- [00:25:07,200 - 00:25:09,200] in higher dimensions.
+- [00:25:09,200 - 00:25:11,200] So a particle is
+- [00:25:11,200 - 00:25:13,200] a D-zero brain.
+- [00:25:13,200 - 00:25:15,200] The word brain, incidentally,
+- [00:25:15,200 - 00:25:17,200] B-R-A-N-E,
+- [00:25:17,200 - 00:25:19,200] brain comes from membrane.
+- [00:25:19,200 - 00:25:21,200] A membrane, a surface, is a two-brain.
+- [00:25:21,200 - 00:25:23,200] Or a two-brain.
+- [00:25:23,200 - 00:25:25,200] A two-dimensional brain.
+- [00:25:25,200 - 00:25:27,200] What's a string?
+- [00:25:27,200 - 00:25:29,200] A one-brain.
+- [00:25:29,200 - 00:25:31,200] What's a three-dimensional block of
+- [00:25:31,200 - 00:25:33,200] solid stuff?
+- [00:25:33,200 - 00:25:35,200] What's a three-dimensional block of solid stuff?
+- [00:25:35,200 - 00:25:37,200] It's a three-brain.
+- [00:25:37,200 - 00:25:39,200] And can you picture a four-brain?
+- [00:25:39,200 - 00:25:41,200] No, we don't have enough directions to put it into.
+- [00:25:41,200 - 00:25:43,200] But if we had more directions,
+- [00:25:43,200 - 00:25:45,200] we could make four-brains.
+- [00:25:45,200 - 00:25:47,200] Alright, so a D-zero brain is a kind of
+- [00:25:47,200 - 00:25:49,200] particle.
+- [00:25:49,200 - 00:25:51,200] The D stands for the mathematician
+- [00:25:51,200 - 00:25:53,200] Dirichlet, and it's not important.
+- [00:25:53,200 - 00:25:55,200] But the property of these D-brains
+- [00:25:55,200 - 00:25:57,200] in string theory is that they are
+- [00:25:57,200 - 00:25:59,200] places where strings can end.
+- [00:25:59,200 - 00:26:01,200] Fundamental strings.
+- [00:26:01,200 - 00:26:03,200] Let's call them F-strings.
+- [00:26:03,200 - 00:26:05,200] This is an F-string, F standing
+- [00:26:05,200 - 00:26:07,200] for fundamental.
+- [00:26:07,200 - 00:26:09,200] The building blocks, the things that gravitons
+- [00:26:09,200 - 00:26:11,200] are made out of.
+- [00:26:11,200 - 00:26:13,200] All the good stuff that we've talked about up till now.
+- [00:26:13,200 - 00:26:15,200] The fundamental strings.
+- [00:26:15,200 - 00:26:17,200] And D-zero brains are just sites
+- [00:26:17,200 - 00:26:19,200] on which a fundamental string can end.
+- [00:26:19,200 - 00:26:21,200] In fact, any number of fundamental
+- [00:26:21,200 - 00:26:23,200] strings can end on a D-zero brain.
+- [00:26:23,200 - 00:26:25,200] And that means
+- [00:26:25,200 - 00:26:27,200] that these zero brains can have
+- [00:26:27,200 - 00:26:29,200] strings attached to them.
+- [00:26:29,200 - 00:26:31,200] And they typically do.
+- [00:26:33,200 - 00:26:35,200] If you were to probe a D-zero brain,
+- [00:26:35,200 - 00:26:37,200] by scattering something
+- [00:26:37,200 - 00:26:39,200] off it, you would find out
+- [00:26:39,200 - 00:26:41,200] that it has a collection of strings
+- [00:26:41,200 - 00:26:43,200] attached to it like that.
+- [00:26:43,200 - 00:26:45,200] In fact, the harder you probed it, the more string
+- [00:26:45,200 - 00:26:47,200] you would find closer and closer in,
+- [00:26:47,200 - 00:26:49,200] and you would eventually come to the conclusion
+- [00:26:49,200 - 00:26:51,200] that the D-brain is in some sense
+- [00:26:51,200 - 00:26:53,200] made up out of strings.
+- [00:26:53,200 - 00:26:55,200] But it's got a lot of strings.
+- [00:26:55,200 - 00:26:57,200] And it's heavy.
+- [00:26:57,200 - 00:26:59,200] It's much, much heavier
+- [00:26:59,200 - 00:27:01,200] than the ordinary
+- [00:27:01,200 - 00:27:03,200] strings themselves. It's a little core
+- [00:27:03,200 - 00:27:05,200] that's very massive,
+- [00:27:05,200 - 00:27:07,200] and that core is a place where strings
+- [00:27:07,200 - 00:27:09,200] can end.
+- [00:27:09,200 - 00:27:11,200] The mathematics that went into this,
+- [00:27:11,200 - 00:27:13,200] through its discovery and so forth, is less interesting
+- [00:27:13,200 - 00:27:15,200] than the fact that these things are necessarily
+- [00:27:15,200 - 00:27:17,200] forced to exist. They're massive,
+- [00:27:17,200 - 00:27:19,200] they're complicated,
+- [00:27:19,200 - 00:27:21,200] and they
+- [00:27:21,200 - 00:27:23,200] are there.
+- [00:27:23,200 - 00:27:25,200] They're in the theory.
+- [00:27:25,200 - 00:27:27,200] Now, that's a D-zero brain.
+- [00:27:27,200 - 00:27:29,200] There are also D-one brains.
+- [00:27:29,200 - 00:27:31,200] A D-one brain
+- [00:27:33,200 - 00:27:35,200] is like a string.
+- [00:27:35,200 - 00:27:37,200] I just want to thicken
+- [00:27:37,200 - 00:27:39,200] it out, because it's
+- [00:27:39,200 - 00:27:41,200] much heavier than an ordinary string,
+- [00:27:41,200 - 00:27:43,200] much more mass per unit length,
+- [00:27:45,200 - 00:27:47,200] but it also has the property
+- [00:27:47,200 - 00:27:49,200] that it's a place where ordinary strings,
+- [00:27:49,200 - 00:27:51,200] fundamental strings, can end.
+- [00:27:51,200 - 00:27:53,200] And so again,
+- [00:27:53,200 - 00:27:55,200] it's kind of a
+- [00:27:55,200 - 00:27:57,200] an object which is
+- [00:27:57,200 - 00:27:59,200] made up out of these strings,
+- [00:27:59,200 - 00:28:01,200] a sort of cable,
+- [00:28:01,200 - 00:28:03,200] a cable, a thick cable,
+- [00:28:03,200 - 00:28:05,200] a thick cable,
+- [00:28:05,200 - 00:28:07,200] much thicker than the ordinary strings,
+- [00:28:07,200 - 00:28:09,200] and much heavier,
+- [00:28:09,200 - 00:28:11,200] heavier in the sense that per unit length,
+- [00:28:11,200 - 00:28:13,200] its mass is much larger.
+- [00:28:13,200 - 00:28:15,200] Very much
+- [00:28:15,200 - 00:28:17,200] in a sense, well, let's draw two strings
+- [00:28:17,200 - 00:28:19,200] next to each other. Here's a D-string,
+- [00:28:19,200 - 00:28:21,200] and here's
+- [00:28:21,200 - 00:28:23,200] an F-string. A D-zero, a D-zero,
+- [00:28:23,200 - 00:28:25,200] a D-one brain
+- [00:28:25,200 - 00:28:27,200] can also be called
+- [00:28:27,200 - 00:28:29,200] a D-string.
+- [00:28:33,200 - 00:28:35,200] Here's an F-string,
+- [00:28:35,200 - 00:28:37,200] a fundamental string. It's thin,
+- [00:28:37,200 - 00:28:39,200] it's narrow, it's light.
+- [00:28:39,200 - 00:28:41,200] These two objects are related
+- [00:28:41,200 - 00:28:43,200] in very much the same way
+- [00:28:43,200 - 00:28:45,200] that
+- [00:28:45,200 - 00:28:47,200] this one and this one
+- [00:28:47,200 - 00:28:49,200] are related in very much the same way as
+- [00:28:49,200 - 00:28:51,200] can you guess what I'm going to say next?
+- [00:28:51,200 - 00:28:53,200] Monopoles and a light.
+- [00:28:53,200 - 00:28:55,200] Electrons.
+- [00:28:55,200 - 00:28:57,200] The fundamental strings are like the electrons,
+- [00:28:57,200 - 00:28:59,200] the building blocks, the starting point
+- [00:28:59,200 - 00:29:01,200] for string theory. These objects
+- [00:29:01,200 - 00:29:03,200] are big, heavy, composite
+- [00:29:03,200 - 00:29:05,200] structures which are made out of
+- [00:29:05,200 - 00:29:07,200] cables of lots of string.
+- [00:29:07,200 - 00:29:09,200] They're heavy, and they're obviously
+- [00:29:09,200 - 00:29:11,200] composite.
+- [00:29:13,200 - 00:29:15,200] String theory has,
+- [00:29:15,200 - 00:29:17,200] I said it has no parameters.
+- [00:29:17,200 - 00:29:19,200] Now we're going to come back to whether,
+- [00:29:19,200 - 00:29:21,200] we're going to come back in a minute to the question
+- [00:29:21,200 - 00:29:23,200] of whether it has parameters or not.
+- [00:29:23,200 - 00:29:25,200] For practical purposes
+- [00:29:25,200 - 00:29:27,200] for the moment, it does have a parameter.
+- [00:29:27,200 - 00:29:29,200] The parameter is a coupling constant.
+- [00:29:29,200 - 00:29:31,200] Let's call it G.
+- [00:29:33,200 - 00:29:35,200] G is a coupling constant,
+- [00:29:35,200 - 00:29:37,200] a parameter of the theory,
+- [00:29:37,200 - 00:29:39,200] which basically tells you the probability
+- [00:29:39,200 - 00:29:41,200] that if a string is wiggling around
+- [00:29:41,200 - 00:29:43,200] it might split in half.
+- [00:29:43,200 - 00:29:45,200] It's very
+- [00:29:45,200 - 00:29:47,200] similar in many ways to the probability
+- [00:29:47,200 - 00:29:49,200] that an electron, when accelerated,
+- [00:29:49,200 - 00:29:51,200] will emit a photon.
+- [00:29:51,200 - 00:29:53,200] String wiggling around
+- [00:29:53,200 - 00:29:55,200] if you grab a piece of it
+- [00:29:55,200 - 00:29:57,200] and pull it, it might,
+- [00:29:57,200 - 00:29:59,200] it can break. The probability
+- [00:29:59,200 - 00:30:01,200] for that is called the coupling constant.
+- [00:30:01,200 - 00:30:03,200] If the coupling
+- [00:30:03,200 - 00:30:05,200] constant is very small,
+- [00:30:07,200 - 00:30:09,200] then the F strings are light,
+- [00:30:09,200 - 00:30:11,200] they're thin, and they look
+- [00:30:11,200 - 00:30:13,200] very fundamental, point-like.
+- [00:30:13,200 - 00:30:15,200] Well, not point-like, but line-like.
+- [00:30:15,200 - 00:30:17,200] When G is
+- [00:30:17,200 - 00:30:19,200] very small, the D string is very
+- [00:30:19,200 - 00:30:21,200] heavy, very complicated,
+- [00:30:21,200 - 00:30:23,200] and full
+- [00:30:23,200 - 00:30:25,200] of F strings.
+- [00:30:25,200 - 00:30:27,200] Guess what happens
+- [00:30:27,200 - 00:30:29,200] as you start increasing G?
+- [00:30:31,200 - 00:30:33,200] As you start increasing G,
+- [00:30:33,200 - 00:30:35,200] the fundamental string here
+- [00:30:35,200 - 00:30:37,200] tends to break off little pieces.
+- [00:30:37,200 - 00:30:39,200] Those little pieces don't
+- [00:30:39,200 - 00:30:41,200] disappear and fly off, they hang
+- [00:30:41,200 - 00:30:43,200] around, and they form a kind of
+- [00:30:43,200 - 00:30:45,200] I don't know what to call it, an atmosphere
+- [00:30:45,200 - 00:30:47,200] around the fundamental
+- [00:30:47,200 - 00:30:49,200] string.
+- [00:30:49,200 - 00:30:51,200] And the fundamental string gets
+- [00:30:51,200 - 00:30:53,200] more and more complicated.
+- [00:30:53,200 - 00:30:55,200] In the same way that the electron
+- [00:30:55,200 - 00:30:57,200] got complicated when you started to
+- [00:30:57,200 - 00:30:59,200] increase the fine structure constant,
+- [00:30:59,200 - 00:31:01,200] the fundamental string starts
+- [00:31:01,200 - 00:31:03,200] to develop structures.
+- [00:31:03,200 - 00:31:05,200] At the same
+- [00:31:05,200 - 00:31:07,200] time, well,
+- [00:31:07,200 - 00:31:09,200] at the same time, the D string
+- [00:31:09,200 - 00:31:11,200] starts to get simpler.
+- [00:31:11,200 - 00:31:13,200] The fundamental string gets heavier.
+- [00:31:13,200 - 00:31:15,200] Because it gets heavier, it gets harder
+- [00:31:15,200 - 00:31:17,200] and harder for the D string to produce
+- [00:31:17,200 - 00:31:19,200] fundamental string, and so
+- [00:31:19,200 - 00:31:21,200] these structures get
+- [00:31:21,200 - 00:31:23,200] thinned out. As they get
+- [00:31:23,200 - 00:31:25,200] thinned out, the D string gets thinner
+- [00:31:25,200 - 00:31:27,200] and thinner. Eventually
+- [00:31:27,200 - 00:31:29,200] at some point, when G
+- [00:31:29,200 - 00:31:31,200] is about one, they
+- [00:31:31,200 - 00:31:33,200] start to look exactly like each other.
+- [00:31:33,200 - 00:31:35,200] And then if you
+- [00:31:35,200 - 00:31:37,200] go to even larger coupling constant,
+- [00:31:37,200 - 00:31:39,200] the D string gets very
+- [00:31:39,200 - 00:31:41,200] simple, turns into a
+- [00:31:41,200 - 00:31:43,200] thin, line-like object,
+- [00:31:43,200 - 00:31:45,200] and the fundamental string just gets
+- [00:31:45,200 - 00:31:47,200] as complicated as the D string
+- [00:31:47,200 - 00:31:49,200] was originally.
+- [00:31:49,200 - 00:31:51,200] Which one describes,
+- [00:31:51,200 - 00:31:53,200] or which one of these strings
+- [00:31:53,200 - 00:31:55,200] when they form little loops
+- [00:31:55,200 - 00:31:57,200] create particles,
+- [00:31:57,200 - 00:31:59,200] create gravitons,
+- [00:31:59,200 - 00:32:01,200] create photons, and so forth?
+- [00:32:01,200 - 00:32:03,200] Well, if G is
+- [00:32:03,200 - 00:32:05,200] much less than one, then
+- [00:32:05,200 - 00:32:07,200] the fundamental strings
+- [00:32:09,200 - 00:32:11,200] when they
+- [00:32:11,200 - 00:32:13,200] close back on themselves
+- [00:32:13,200 - 00:32:15,200] form the particles,
+- [00:32:15,200 - 00:32:17,200] the ordinary particles of
+- [00:32:17,200 - 00:32:19,200] string theory.
+- [00:32:19,200 - 00:32:21,200] But as G gets larger and larger,
+- [00:32:21,200 - 00:32:23,200] these things get more and more massive,
+- [00:32:23,200 - 00:32:25,200] in fact eventually
+- [00:32:25,200 - 00:32:27,200] they turn into black holes,
+- [00:32:27,200 - 00:32:29,200] and what's left over
+- [00:32:29,200 - 00:32:31,200] is the D strings, which
+- [00:32:31,200 - 00:32:33,200] get lighter and lighter, and the graviton
+- [00:32:33,200 - 00:32:35,200] is made up out of the D strings.
+- [00:32:35,200 - 00:32:37,200] This is called
+- [00:32:37,200 - 00:32:39,200] D string
+- [00:32:39,200 - 00:32:41,200] fundamental string duality.
+- [00:32:41,200 - 00:32:43,200] It's not the usual name for it.
+- [00:32:43,200 - 00:32:45,200] It's usually called S-duality. I do not know what S stands for.
+- [00:32:45,200 - 00:32:47,200] I didn't make up the term.
+- [00:32:47,200 - 00:32:49,200] I don't know why it's called.
+- [00:32:49,200 - 00:32:51,200] Oh, strength duality.
+- [00:32:51,200 - 00:32:53,200] Strength.
+- [00:32:53,200 - 00:32:55,200] Yeah, strength of the coupling constant.
+- [00:32:55,200 - 00:32:57,200] So, again,
+- [00:32:57,200 - 00:32:59,200] we find this pattern
+- [00:32:59,200 - 00:33:01,200] that you can't say
+- [00:33:01,200 - 00:33:03,200] once and for all which thing is more
+- [00:33:03,200 - 00:33:05,200] fundamental than which. You just find
+- [00:33:05,200 - 00:33:07,200] them morphing into each other.
+- [00:33:07,200 - 00:33:09,200] Now they morph into each other as the
+- [00:33:09,200 - 00:33:11,200] coupling constant varies.
+- [00:33:11,200 - 00:33:13,200] But at least you could say, well,
+- [00:33:13,200 - 00:33:15,200] at least you can say that if the coupling constant
+- [00:33:15,200 - 00:33:17,200] is small, then it's
+- [00:33:17,200 - 00:33:19,200] profitable to think of the fundamental
+- [00:33:19,200 - 00:33:21,200] strings as fundamental.
+- [00:33:21,200 - 00:33:23,200] If the coupling constant is very
+- [00:33:23,200 - 00:33:25,200] large, switch them.
+- [00:33:25,200 - 00:33:27,200] The problem with that is the coupling
+- [00:33:27,200 - 00:33:29,200] constant is something that can vary in space.
+- [00:33:29,200 - 00:33:31,200] It's a field.
+- [00:33:31,200 - 00:33:33,200] G
+- [00:33:33,200 - 00:33:35,200] in string theory is not a constant.
+- [00:33:35,200 - 00:33:37,200] It's a
+- [00:33:37,200 - 00:33:39,200] thing which can vary from place to place.
+- [00:33:39,200 - 00:33:41,200] It satisfies
+- [00:33:41,200 - 00:33:43,200] field equations
+- [00:33:43,200 - 00:33:45,200] just like the gravitational
+- [00:33:45,200 - 00:33:47,200] field.
+- [00:33:47,200 - 00:33:49,200] And so
+- [00:33:49,200 - 00:33:51,200] you can easily have a situation
+- [00:33:51,200 - 00:33:53,200] in the
+- [00:33:53,200 - 00:33:55,200] mathematically idealized string theory
+- [00:33:55,200 - 00:33:57,200] where the coupling constant
+- [00:33:57,200 - 00:33:59,200] goes from very strong to very weak
+- [00:33:59,200 - 00:34:01,200] as you move across the universe.
+- [00:34:01,200 - 00:34:03,200] And in one place,
+- [00:34:03,200 - 00:34:05,200] the D strings are fundamental,
+- [00:34:05,200 - 00:34:07,200] in the other place, the F strings are fundamental.
+- [00:34:07,200 - 00:34:09,200] And in between, nothing is simple.
+- [00:34:11,200 - 00:34:13,200] That's the character of string theory.
+- [00:34:13,200 - 00:34:15,200] Question?
+- [00:34:15,200 - 00:34:17,200] On a cosmological scale,
+- [00:34:17,200 - 00:34:19,200] I mean, if it varied
+- [00:34:19,200 - 00:34:21,200] or became
+- [00:34:21,200 - 00:34:23,200] less massive than F, wouldn't that have
+- [00:34:23,200 - 00:34:25,200] an effect on spectra and such?
+- [00:34:25,200 - 00:34:27,200] Yeah. Absolutely.
+- [00:34:27,200 - 00:34:29,200] That's how we know, that's one of the ways
+- [00:34:29,200 - 00:34:31,200] we know that string theory, the
+- [00:34:31,200 - 00:34:33,200] mathematically precise version of string
+- [00:34:33,200 - 00:34:35,200] theory is not our world.
+- [00:34:37,200 - 00:34:39,200] Another question?
+- [00:34:39,200 - 00:34:41,200] So is there a dual for like the
+- [00:34:41,200 - 00:34:43,200] E2 brain?
+- [00:34:43,200 - 00:34:45,200] We'll talk about the E2 brain.
+- [00:34:45,200 - 00:34:47,200] And there's a dual, like a
+- [00:34:47,200 - 00:34:49,200] fundamental dual for that.
+- [00:34:49,200 - 00:34:51,200] Yeah.
+- [00:34:51,200 - 00:34:53,200] Yeah.
+- [00:34:53,200 - 00:34:55,200] Just trying to get it straight in my mind,
+- [00:34:55,200 - 00:34:57,200] the greater likelihood of splitting
+- [00:34:57,200 - 00:34:59,200] makes complexity in the upstream?
+- [00:34:59,200 - 00:35:01,200] Is that what?
+- [00:35:01,200 - 00:35:03,200] Yeah.
+- [00:35:03,200 - 00:35:05,200] Yeah.
+- [00:35:05,200 - 00:35:07,200] Yeah.
+- [00:35:07,200 - 00:35:09,200] Let's go back to quantum
+- [00:35:09,200 - 00:35:11,200] electrodynamics for a minute.
+- [00:35:11,200 - 00:35:13,200] Now my vertical axis is time,
+- [00:35:13,200 - 00:35:15,200] and here's an electron
+- [00:35:15,200 - 00:35:17,200] world line.
+- [00:35:17,200 - 00:35:19,200] And I'm going to do
+- [00:35:19,200 - 00:35:21,200] a little bit of a
+- [00:35:21,200 - 00:35:23,200] little bit of a
+- [00:35:23,200 - 00:35:25,200] it's a point.
+- [00:35:25,200 - 00:35:27,200] That means it's a very thin world line.
+- [00:35:27,200 - 00:35:29,200] It's not a string.
+- [00:35:29,200 - 00:35:31,200] Vertical, remember, vertical for a physicist
+- [00:35:31,200 - 00:35:33,200] always means time.
+- [00:35:33,200 - 00:35:35,200] Horizontal means space.
+- [00:35:35,200 - 00:35:37,200] So here's a point electron
+- [00:35:37,200 - 00:35:39,200] moving
+- [00:35:39,200 - 00:35:41,200] through time, so to speak.
+- [00:35:41,200 - 00:35:43,200] That point electron
+- [00:35:43,200 - 00:35:45,200] emits
+- [00:35:45,200 - 00:35:47,200] and absorbs photons.
+- [00:35:47,200 - 00:35:49,200] Now, when the fine
+- [00:35:49,200 - 00:35:51,200] structure constant is very small,
+- [00:35:51,200 - 00:35:53,200] the emission
+- [00:35:53,200 - 00:35:55,200] and absorption of photons
+- [00:35:55,200 - 00:35:57,200] is very intermittent, meaning
+- [00:35:57,200 - 00:35:59,200] to say
+- [00:35:59,200 - 00:36:01,200] that there aren't very many of these
+- [00:36:01,200 - 00:36:03,200] photons being emitted.
+- [00:36:03,200 - 00:36:05,200] What about the photons
+- [00:36:05,200 - 00:36:07,200] themselves? Well,
+- [00:36:07,200 - 00:36:09,200] a photon
+- [00:36:09,200 - 00:36:11,200] can create and annihilate
+- [00:36:11,200 - 00:36:13,200] an electron positron pair.
+- [00:36:13,200 - 00:36:15,200] So that means
+- [00:36:15,200 - 00:36:17,200] that the photons
+- [00:36:17,200 - 00:36:19,200] can create electron
+- [00:36:19,200 - 00:36:21,200] positron pairs.
+- [00:36:23,200 - 00:36:25,200] But now each one of these
+- [00:36:25,200 - 00:36:27,200] little electrons here
+- [00:36:27,200 - 00:36:29,200] can also emit photons.
+- [00:36:29,200 - 00:36:31,200] There's a sort of
+- [00:36:31,200 - 00:36:33,200] unending hierarchy at
+- [00:36:33,200 - 00:36:35,200] smaller and smaller distance scale
+- [00:36:35,200 - 00:36:37,200] of structure
+- [00:36:37,200 - 00:36:39,200] within the electron.
+- [00:36:39,200 - 00:36:41,200] As long as
+- [00:36:41,200 - 00:36:43,200] the coupling constant is weak,
+- [00:36:43,200 - 00:36:45,200] this is a relatively small
+- [00:36:45,200 - 00:36:47,200] effect. In fact, it's a small effect
+- [00:36:47,200 - 00:36:49,200] and the electron
+- [00:36:49,200 - 00:36:51,200] in the laboratory looks pretty darn
+- [00:36:51,200 - 00:36:53,200] point-like.
+- [00:36:53,200 - 00:36:55,200] You have to work very hard
+- [00:36:55,200 - 00:36:57,200] to scatter things off it
+- [00:36:57,200 - 00:36:59,200] and see that the electron has this
+- [00:36:59,200 - 00:37:01,200] composite structure there.
+- [00:37:01,200 - 00:37:03,200] Where does the energy come from?
+- [00:37:03,200 - 00:37:05,200] It's, uh,
+- [00:37:05,200 - 00:37:07,200] it's, um, where does the energy
+- [00:37:07,200 - 00:37:09,200] come from?
+- [00:37:09,200 - 00:37:11,200] Uh, the energy
+- [00:37:11,200 - 00:37:13,200] the energy
+- [00:37:13,200 - 00:37:15,200] the energy needed for this
+- [00:37:15,200 - 00:37:17,200] process is part of
+- [00:37:17,200 - 00:37:19,200] the mass of the proton, or
+- [00:37:19,200 - 00:37:21,200] the mass of the electron.
+- [00:37:21,200 - 00:37:23,200] It's part of the mass
+- [00:37:23,200 - 00:37:25,200] of the electron.
+- [00:37:25,200 - 00:37:27,200] It is the mass of the electron.
+- [00:37:27,200 - 00:37:29,200] Where did the energy come from
+- [00:37:29,200 - 00:37:31,200] to create the Coulomb field around the electron?
+- [00:37:31,200 - 00:37:33,200] Well, the point is
+- [00:37:33,200 - 00:37:35,200] you don't start without the Coulomb field.
+- [00:37:35,200 - 00:37:37,200] The Coulomb field was always there.
+- [00:37:37,200 - 00:37:39,200] Yes.
+- [00:37:39,200 - 00:37:41,200] But, uh,
+- [00:37:41,200 - 00:37:43,200] I don't
+- [00:37:43,200 - 00:37:45,200] I see things much
+- [00:37:45,200 - 00:37:47,200] simp-
+- [00:37:47,200 - 00:37:49,200] not accurately enough.
+- [00:37:49,200 - 00:37:51,200] I see two electron
+- [00:37:51,200 - 00:37:53,200] pair being produced.
+- [00:37:53,200 - 00:37:55,200] Uh, and I don't see the mass
+- [00:37:55,200 - 00:37:57,200] of the electron enough to produce an electron pair.
+- [00:38:01,200 - 00:38:03,200] Would it help if I said that virtual pairs?
+- [00:38:03,200 - 00:38:05,200] Well,
+- [00:38:05,200 - 00:38:07,200] I mean, obviously
+- [00:38:07,200 - 00:38:09,200] you know, you skin by
+- [00:38:09,200 - 00:38:11,200] the skin of your teeth, virtual.
+- [00:38:11,200 - 00:38:13,200] No, but mass and energy are the same thing
+- [00:38:13,200 - 00:38:15,200] and so when you say the mass of the electron
+- [00:38:15,200 - 00:38:17,200] you're basically including the energy
+- [00:38:17,200 - 00:38:19,200] needed to do this kind of stuff.
+- [00:38:19,200 - 00:38:21,200] Alright, but what is that energy?
+- [00:38:21,200 - 00:38:23,200] That energy is a kind of potential energy.
+- [00:38:23,200 - 00:38:25,200] Uh,
+- [00:38:25,200 - 00:38:27,200] that's connected with the
+- [00:38:27,200 - 00:38:29,200] interactions between the electrons
+- [00:38:29,200 - 00:38:31,200] and the photons.
+- [00:38:31,200 - 00:38:33,200] The energy of a system
+- [00:38:33,200 - 00:38:35,200] in quantum electrodynamics is not
+- [00:38:35,200 - 00:38:37,200] just the energy of the electrons
+- [00:38:37,200 - 00:38:39,200] plus the energy of the photons.
+- [00:38:39,200 - 00:38:41,200] There's also an interaction energy between them.
+- [00:38:41,200 - 00:38:43,200] And that's the, that interaction
+- [00:38:43,200 - 00:38:45,200] energy is the source of this.
+- [00:38:45,200 - 00:38:47,200] But, uh,
+- [00:38:47,200 - 00:38:49,200] alright, but it's, you know,
+- [00:38:49,200 - 00:38:51,200] it's an empirical fact
+- [00:38:51,200 - 00:38:53,200] that if you scatter things off an electron,
+- [00:38:53,200 - 00:38:55,200] at high enough energy,
+- [00:38:55,200 - 00:38:57,200] you will see
+- [00:38:57,200 - 00:38:59,200] this structure around the electron.
+- [00:38:59,200 - 00:39:01,200] Yes, but see if you scatter it with enough energy
+- [00:39:01,200 - 00:39:03,200] then I can see that the energy
+- [00:39:03,200 - 00:39:05,200] of your experiment
+- [00:39:05,200 - 00:39:07,200] will produce what you see.
+- [00:39:07,200 - 00:39:09,200] Well, okay, we can debate
+- [00:39:09,200 - 00:39:11,200] whether the
+- [00:39:11,200 - 00:39:13,200] energy of the experiment is producing
+- [00:39:13,200 - 00:39:15,200] what you see or whether it's seeing
+- [00:39:15,200 - 00:39:17,200] what you see.
+- [00:39:17,200 - 00:39:19,200] Um,
+- [00:39:19,200 - 00:39:21,200] we can debate that, but the fact of the
+- [00:39:21,200 - 00:39:23,200] matter is that when you scatter things
+- [00:39:23,200 - 00:39:25,200] off the electron, what happens
+- [00:39:25,200 - 00:39:27,200] is complicated.
+- [00:39:27,200 - 00:39:29,200] What happens is, well, it's not so complicated.
+- [00:39:29,200 - 00:39:31,200] Most of the times you don't see anything.
+- [00:39:31,200 - 00:39:33,200] About 1%
+- [00:39:33,200 - 00:39:35,200] of the time you see, uh, some stuff.
+- [00:39:35,200 - 00:39:37,200] On the,
+- [00:39:37,200 - 00:39:39,200] on d-brains,
+- [00:39:39,200 - 00:39:41,200] uh, you said that, uh,
+- [00:39:41,200 - 00:39:43,200] for a couple of constants small, you said
+- [00:39:43,200 - 00:39:45,200] the, uh, the mass of the
+- [00:39:45,200 - 00:39:47,200] d-1 brain is
+- [00:39:47,200 - 00:39:49,200] more than the mass of the f-string.
+- [00:39:49,200 - 00:39:51,200] Yeah.
+- [00:39:51,200 - 00:39:53,200] And would the tension also be more
+- [00:39:53,200 - 00:39:55,200] or do you still... Yeah, yeah, the tension, the mass means
+- [00:39:55,200 - 00:39:57,200] the tension, uh, the tension means the mass per
+- [00:39:57,200 - 00:39:59,200] unit length. Okay. Yeah.
+- [00:39:59,200 - 00:40:01,200] Yeah. Yeah.
+- [00:40:01,200 - 00:40:03,200] So mass per unit length is called the tension.
+- [00:40:03,200 - 00:40:05,200] Right, exactly.
+- [00:40:05,200 - 00:40:07,200] Energy per unit length. Alright, now,
+- [00:40:07,200 - 00:40:09,200] um,
+- [00:40:09,200 - 00:40:11,200] as I said,
+- [00:40:11,200 - 00:40:13,200] as the, as the fine structure
+- [00:40:13,200 - 00:40:15,200] constant starts to get bigger and bigger,
+- [00:40:15,200 - 00:40:17,200] this structure starts to
+- [00:40:17,200 - 00:40:19,200] proliferate, and the result
+- [00:40:19,200 - 00:40:21,200] is that the electron develops
+- [00:40:21,200 - 00:40:23,200] this very complicated
+- [00:40:23,200 - 00:40:25,200] structure.
+- [00:40:25,200 - 00:40:27,200] It's no longer something which is
+- [00:40:27,200 - 00:40:29,200] very rare or very, uh, dilute.
+- [00:40:29,200 - 00:40:31,200] The electron gets
+- [00:40:31,200 - 00:40:33,200] big, gets heavy, gets all the structure
+- [00:40:33,200 - 00:40:35,200] there. Very, very
+- [00:40:35,200 - 00:40:37,200] similar thing happens to a string.
+- [00:40:37,200 - 00:40:39,200] What, uh,
+- [00:40:39,200 - 00:40:41,200] what is this coupling constant g?
+- [00:40:41,200 - 00:40:43,200] This coupling constant is the
+- [00:40:43,200 - 00:40:45,200] probability that if the
+- [00:40:45,200 - 00:40:47,200] string fluctuates,
+- [00:40:47,200 - 00:40:49,200] if it undergoes a
+- [00:40:49,200 - 00:40:51,200] quantum fluctuation,
+- [00:40:51,200 - 00:40:53,200] let's say
+- [00:40:53,200 - 00:40:55,200] into a configuration like that,
+- [00:40:55,200 - 00:40:57,200] then it's basically the probability
+- [00:40:57,200 - 00:40:59,200] that the string splits off
+- [00:40:59,200 - 00:41:01,200] and forms a little,
+- [00:41:01,200 - 00:41:03,200] uh, sort of satellite string
+- [00:41:03,200 - 00:41:05,200] around the original string.
+- [00:41:05,200 - 00:41:07,200] As
+- [00:41:07,200 - 00:41:09,200] the coupling constant gets larger and larger,
+- [00:41:09,200 - 00:41:11,200] a very similar thing
+- [00:41:11,200 - 00:41:13,200] happens. The satellite
+- [00:41:13,200 - 00:41:15,200] strings start to proliferate,
+- [00:41:15,200 - 00:41:17,200] and they form
+- [00:41:17,200 - 00:41:19,200] a structure surrounding
+- [00:41:19,200 - 00:41:21,200] the string the same way that the electron-positron
+- [00:41:21,200 - 00:41:23,200] pairs and the photons surrounded
+- [00:41:23,200 - 00:41:25,200] the electron. They make it heavier,
+- [00:41:25,200 - 00:41:27,200] they give it a structure,
+- [00:41:27,200 - 00:41:29,200] uh, and, uh, the result
+- [00:41:29,200 - 00:41:31,200] is that the f-string
+- [00:41:31,200 - 00:41:33,200] starts to look more and more like the d-string.
+- [00:41:33,200 - 00:41:35,200] In the meantime,
+- [00:41:35,200 - 00:41:37,200] the d-string has
+- [00:41:37,200 - 00:41:39,200] more and more trouble
+- [00:41:39,200 - 00:41:41,200] emitting or
+- [00:41:41,200 - 00:41:43,200] producing
+- [00:41:43,200 - 00:41:45,200] f-strings. Why?
+- [00:41:45,200 - 00:41:47,200] Because those f-strings are getting heavier and heavier.
+- [00:41:47,200 - 00:41:49,200] And the result is
+- [00:41:49,200 - 00:41:51,200] that the d-string gets less
+- [00:41:51,200 - 00:41:53,200] and less structure.
+- [00:41:53,200 - 00:41:55,200] And becomes more like the f-string.
+- [00:41:55,200 - 00:41:57,200] So that's
+- [00:41:57,200 - 00:41:59,200] another example
+- [00:41:59,200 - 00:42:01,200] of a duality.
+- [00:42:01,200 - 00:42:03,200] These things are called dualities.
+- [00:42:03,200 - 00:42:05,200] Uh, this one's called s-duality.
+- [00:42:05,200 - 00:42:07,200] The name is not important.
+- [00:42:07,200 - 00:42:09,200] Um,
+- [00:42:09,200 - 00:42:11,200] and it interchanges
+- [00:42:11,200 - 00:42:13,200] fundamental strings with d-strings.
+- [00:42:15,200 - 00:42:17,200] The mathematics of this by now
+- [00:42:17,200 - 00:42:19,200] is very tight,
+- [00:42:19,200 - 00:42:21,200] even though, uh, I'm not trying
+- [00:42:21,200 - 00:42:23,200] at all to give you the mathematics.
+- [00:42:23,200 - 00:42:25,200] Now,
+- [00:42:25,200 - 00:42:27,200] um,
+- [00:42:27,200 - 00:42:29,200] there are different versions
+- [00:42:29,200 - 00:42:31,200] of string theory.
+- [00:42:31,200 - 00:42:33,200] The mathematics of them is
+- [00:42:33,200 - 00:42:35,200] not so important, but there are different versions.
+- [00:42:37,200 - 00:42:39,200] In one version,
+- [00:42:39,200 - 00:42:41,200] all of the d-brains
+- [00:42:41,200 - 00:42:43,200] are odd-dimensional.
+- [00:42:45,200 - 00:42:47,200] So, that means that there are
+- [00:42:49,200 - 00:42:51,200] d-1-brains, d-3-brains,
+- [00:42:51,200 - 00:42:53,200] d-5-brains. How do you stick a d-5
+- [00:42:53,200 - 00:42:55,200] brain into space? We don't have enough
+- [00:42:55,200 - 00:42:57,200] dimensions of space.
+- [00:42:57,200 - 00:42:59,200] Well,
+- [00:42:59,200 - 00:43:01,200] remember that string theory is fundamentally
+- [00:43:01,200 - 00:43:03,200] a 10-dimensional theory.
+- [00:43:03,200 - 00:43:05,200] You've got a lot of extra dimensions.
+- [00:43:05,200 - 00:43:07,200] String theory has enough
+- [00:43:07,200 - 00:43:09,200] dimensions that you can put in things
+- [00:43:09,200 - 00:43:11,200] up to about 8 brains.
+- [00:43:11,200 - 00:43:13,200] Uh, and then you run out of
+- [00:43:13,200 - 00:43:15,200] directions to put the brains in.
+- [00:43:15,200 - 00:43:17,200] So,
+- [00:43:17,200 - 00:43:19,200] one version of string theory,
+- [00:43:21,200 - 00:43:23,200] the mathematics tells you that they're
+- [00:43:23,200 - 00:43:25,200] must be d-1,
+- [00:43:25,200 - 00:43:27,200] d-3, d-5, d-7 brains.
+- [00:43:27,200 - 00:43:29,200] In another
+- [00:43:29,200 - 00:43:31,200] version of string theory, which is
+- [00:43:31,200 - 00:43:33,200] closely related, but different,
+- [00:43:33,200 - 00:43:35,200] there are even-dimensional
+- [00:43:35,200 - 00:43:37,200] brains.
+- [00:43:37,200 - 00:43:39,200] No string theory has both
+- [00:43:39,200 - 00:43:41,200] odd-dimensional d-brains and
+- [00:43:41,200 - 00:43:43,200] even-dimensional. It's just a fact.
+- [00:43:43,200 - 00:43:45,200] That no version of it has both.
+- [00:43:45,200 - 00:43:47,200] Not, this is by no means
+- [00:43:47,200 - 00:43:49,200] transparent. I'm telling you facts
+- [00:43:49,200 - 00:43:51,200] more than I'm telling you explanations.
+- [00:43:51,200 - 00:43:53,200] Uh,
+- [00:43:53,200 - 00:43:55,200] it would take many hours of mathematics
+- [00:43:55,200 - 00:43:57,200] to explain why that's true,
+- [00:43:57,200 - 00:43:59,200] but nevertheless, this is a fact.
+- [00:43:59,200 - 00:44:01,200] So let's go to the version of
+- [00:44:01,200 - 00:44:03,200] string theory which has
+- [00:44:03,200 - 00:44:05,200] even-dimensional brains instead of
+- [00:44:05,200 - 00:44:07,200] odd-dimensional.
+- [00:44:07,200 - 00:44:09,200] It doesn't have d-strings.
+- [00:44:09,200 - 00:44:11,200] It has d-0 brains.
+- [00:44:11,200 - 00:44:13,200] It has point-like particles,
+- [00:44:13,200 - 00:44:15,200] which are not quite point-like,
+- [00:44:15,200 - 00:44:17,200] but which are very complicated
+- [00:44:17,200 - 00:44:19,200] and full of string theory
+- [00:44:19,200 - 00:44:21,200] that are very complex.
+- [00:44:21,200 - 00:44:23,200] And, uh,
+- [00:44:23,200 - 00:44:25,200] it has a string,
+- [00:44:25,200 - 00:44:27,200] and it also has fundamental strings
+- [00:44:27,200 - 00:44:29,200] that make gravitons and so forth.
+- [00:44:29,200 - 00:44:31,200] That's the description
+- [00:44:31,200 - 00:44:33,200] when the coupling constant g
+- [00:44:35,200 - 00:44:37,200] is much, much less than one.
+- [00:44:39,200 - 00:44:41,200] This theory does something
+- [00:44:41,200 - 00:44:43,200] very different
+- [00:44:43,200 - 00:44:45,200] as g starts to get large.
+- [00:44:45,200 - 00:44:47,200] It was a great puzzle that nobody knew the answer to.
+- [00:44:47,200 - 00:44:49,200] What happens
+- [00:44:49,200 - 00:44:51,200] to these objects
+- [00:44:51,200 - 00:44:53,200] as g starts to get large?
+- [00:44:53,200 - 00:44:55,200] This can't become this.
+- [00:44:55,200 - 00:44:57,200] This is a point-like thing.
+- [00:44:57,200 - 00:44:59,200] This is a string which could be spread out all over the place.
+- [00:44:59,200 - 00:45:01,200] There are different kinds of creatures.
+- [00:45:01,200 - 00:45:03,200] It's not the case that one will go
+- [00:45:03,200 - 00:45:05,200] back and forth into the other.
+- [00:45:05,200 - 00:45:07,200] That's not the way it works.
+- [00:45:07,200 - 00:45:09,200] Something much more bizarre happens.
+- [00:45:09,200 - 00:45:11,200] So I will tell you.
+- [00:45:13,200 - 00:45:15,200] Let's see.
+- [00:45:15,200 - 00:45:17,200] Before I tell you, I have to...
+- [00:45:17,200 - 00:45:21,200] Um...
+- [00:45:25,200 - 00:45:27,200] All right, I'm going to tell you what happens.
+- [00:45:27,200 - 00:45:29,200] And perhaps, uh,
+- [00:45:29,200 - 00:45:31,200] in the second hour
+- [00:45:31,200 - 00:45:33,200] I can tell you why,
+- [00:45:33,200 - 00:45:35,200] or what it means for it to happen.
+- [00:45:35,200 - 00:45:37,200] What happens
+- [00:45:37,200 - 00:45:39,200] is that a new dimension,
+- [00:45:39,200 - 00:45:41,200] as g gets large,
+- [00:45:41,200 - 00:45:43,200] a new dimension of space materializes.
+- [00:45:43,200 - 00:45:45,200] Now that's crazy.
+- [00:45:45,200 - 00:45:47,200] That's the silliest thing I ever heard.
+- [00:45:47,200 - 00:45:49,200] A new dimension of space materializes.
+- [00:45:49,200 - 00:45:51,200] How can a dimension of space materialize?
+- [00:45:51,200 - 00:45:53,200] Well, it can't.
+- [00:45:53,200 - 00:45:55,200] But what can happen
+- [00:45:55,200 - 00:45:57,200] is a very small, compact direction
+- [00:45:57,200 - 00:45:59,200] can start to expand.
+- [00:45:59,200 - 00:46:01,200] I'm going to show you how it works
+- [00:46:01,200 - 00:46:03,200] to some extent,
+- [00:46:03,200 - 00:46:05,200] but let's just begin with that.
+- [00:46:05,200 - 00:46:07,200] Let's take ordinary space
+- [00:46:07,200 - 00:46:09,200] to start with
+- [00:46:09,200 - 00:46:11,200] to be two-dimensional.
+- [00:46:11,200 - 00:46:13,200] Just for pictures.
+- [00:46:13,200 - 00:46:15,200] Really, we're talking about
+- [00:46:15,200 - 00:46:17,200] ten-dimensional space.
+- [00:46:17,200 - 00:46:19,200] Ten-dimensional string theory.
+- [00:46:19,200 - 00:46:21,200] Let's take ordinary space...
+- [00:46:21,200 - 00:46:23,200] How many directions of space
+- [00:46:23,200 - 00:46:25,200] does ten-dimensional string theory have?
+- [00:46:25,200 - 00:46:27,200] No. Nine.
+- [00:46:27,200 - 00:46:29,200] The tenth dimension is time.
+- [00:46:29,200 - 00:46:31,200] Right. Okay.
+- [00:46:31,200 - 00:46:33,200] So when somebody tells you
+- [00:46:33,200 - 00:46:35,200] ten-dimensional string theory,
+- [00:46:35,200 - 00:46:37,200] they're talking about a theory with nine dimensions of space.
+- [00:46:37,200 - 00:46:39,200] Okay.
+- [00:46:39,200 - 00:46:41,200] So let's take a theory with two dimensions of space,
+- [00:46:41,200 - 00:46:43,200] just because I can draw it on the blackboard.
+- [00:46:43,200 - 00:46:45,200] It's not the right theory,
+- [00:46:45,200 - 00:46:47,200] but let's just draw it on the blackboard.
+- [00:46:47,200 - 00:46:49,200] Here's two dimensions of space.
+- [00:46:53,200 - 00:46:55,200] Now, maybe secretly,
+- [00:46:55,200 - 00:46:57,200] that two-dimensional space
+- [00:46:57,200 - 00:46:59,200] is really three-dimensional.
+- [00:46:59,200 - 00:47:01,200] How could it really be three-dimensional?
+- [00:47:01,200 - 00:47:03,200] It could be three-dimensional
+- [00:47:03,200 - 00:47:05,200] because this...
+- [00:47:07,200 - 00:47:09,200] because there could be a thickness to it.
+- [00:47:13,200 - 00:47:15,200] We could imagine a world
+- [00:47:17,200 - 00:47:19,200] sort of a peanut butter sandwich.
+- [00:47:23,200 - 00:47:25,200] With a piece of bread on this side,
+- [00:47:25,200 - 00:47:27,200] a piece of bread on this side,
+- [00:47:27,200 - 00:47:29,200] the bread being infinitely thin,
+- [00:47:29,200 - 00:47:31,200] and the peanut butter being real space in between.
+- [00:47:31,200 - 00:47:33,200] But with a special rule.
+- [00:47:33,200 - 00:47:35,200] The special rule is
+- [00:47:35,200 - 00:47:37,200] that when
+- [00:47:37,200 - 00:47:39,200] an object goes out here,
+- [00:47:39,200 - 00:47:41,200] it reappears at the bottom.
+- [00:47:41,200 - 00:47:43,200] That's the idea of compactification,
+- [00:47:43,200 - 00:47:45,200] of periodicity.
+- [00:47:45,200 - 00:47:47,200] That there really isn't an edge to it.
+- [00:47:47,200 - 00:47:49,200] But when you go out one end,
+- [00:47:49,200 - 00:47:51,200] when you go out on the top piece of bread,
+- [00:47:51,200 - 00:47:53,200] you reappear on the bottom piece of bread.
+- [00:47:53,200 - 00:47:55,200] Then there's no real edge.
+- [00:47:55,200 - 00:47:57,200] Somebody moving vertically
+- [00:47:57,200 - 00:47:59,200] would not notice the edge
+- [00:47:59,200 - 00:48:01,200] because when he got to the top piece of bread
+- [00:48:01,200 - 00:48:03,200] he would just reappear at the bottom piece of bread.
+- [00:48:03,200 - 00:48:05,200] All right.
+- [00:48:05,200 - 00:48:07,200] That's the idea of
+- [00:48:07,200 - 00:48:09,200] one compact dimension.
+- [00:48:11,200 - 00:48:13,200] Now, if the compact dimension
+- [00:48:13,200 - 00:48:15,200] was small enough,
+- [00:48:15,200 - 00:48:17,200] it might not be a problem.
+- [00:48:17,200 - 00:48:19,200] It might not be noticeable to the physicists
+- [00:48:19,200 - 00:48:21,200] that live in this world
+- [00:48:21,200 - 00:48:23,200] that the direction has a little,
+- [00:48:23,200 - 00:48:25,200] that there's this extra dimension.
+- [00:48:25,200 - 00:48:27,200] That this direction has some,
+- [00:48:27,200 - 00:48:29,200] that there's some thickness to the world
+- [00:48:29,200 - 00:48:31,200] along a direction that they didn't notice.
+- [00:48:31,200 - 00:48:33,200] So they would call this world
+- [00:48:33,200 - 00:48:35,200] two-dimensional.
+- [00:48:37,200 - 00:48:39,200] What happens
+- [00:48:39,200 - 00:48:41,200] as G starts to increase
+- [00:48:41,200 - 00:48:43,200] is that
+- [00:48:43,200 - 00:48:45,200] the peanut butter sandwich gets thicker
+- [00:48:45,200 - 00:48:47,200] and thicker and thicker.
+- [00:48:47,200 - 00:48:49,200] And eventually,
+- [00:48:53,200 - 00:48:55,200] when G gets very large,
+- [00:48:55,200 - 00:48:57,200] a whole new dimension
+- [00:48:57,200 - 00:48:59,200] of space materializes
+- [00:48:59,200 - 00:49:01,200] which the physicists
+- [00:49:01,200 - 00:49:03,200] who lived in here
+- [00:49:03,200 - 00:49:05,200] would not be able to ignore anymore.
+- [00:49:05,200 - 00:49:07,200] They would have discovered
+- [00:49:07,200 - 00:49:09,200] that they really live in a world
+- [00:49:09,200 - 00:49:11,200] with an extra dimension.
+- [00:49:11,200 - 00:49:13,200] That is what happens to this theory.
+- [00:49:13,200 - 00:49:15,200] This theory that has D0 brains
+- [00:49:15,200 - 00:49:17,200] and strings.
+- [00:49:17,200 - 00:49:19,200] Now you say, well,
+- [00:49:19,200 - 00:49:21,200] what happens to the D0 brains?
+- [00:49:21,200 - 00:49:23,200] The D0 brains
+- [00:49:23,200 - 00:49:25,200] start getting lighter
+- [00:49:25,200 - 00:49:27,200] and lighter.
+- [00:49:27,200 - 00:49:29,200] Just the same way that the D1 brains did
+- [00:49:29,200 - 00:49:31,200] when G gets large.
+- [00:49:31,200 - 00:49:33,200] They start getting lighter and lighter and lighter.
+- [00:49:33,200 - 00:49:35,200] More and more
+- [00:49:35,200 - 00:49:37,200] simple. But what do they turn into?
+- [00:49:37,200 - 00:49:39,200] They turn
+- [00:49:39,200 - 00:49:41,200] into the gravitons
+- [00:49:41,200 - 00:49:43,200] in this extra dimensional theory.
+- [00:49:43,200 - 00:49:45,200] Just the ordinary gravitons.
+- [00:49:45,200 - 00:49:47,200] The ordinary gravitons
+- [00:49:47,200 - 00:49:49,200] are ordinary elementary particles
+- [00:49:49,200 - 00:49:51,200] that live in this extra dimensional theory.
+- [00:49:51,200 - 00:49:53,200] This new theory
+- [00:49:53,200 - 00:49:55,200] is now 11 dimensional.
+- [00:49:55,200 - 00:49:57,200] We thought it was string theory
+- [00:49:57,200 - 00:49:59,200] with only 10 dimensions.
+- [00:49:59,200 - 00:50:01,200] And when we started increasing this coupling constant
+- [00:50:01,200 - 00:50:03,200] we discovered another dimension of space.
+- [00:50:05,200 - 00:50:07,200] And these D0 brains
+- [00:50:07,200 - 00:50:09,200] just turned into the gravitons
+- [00:50:09,200 - 00:50:11,200] that exist in here.
+- [00:50:11,200 - 00:50:13,200] In other words,
+- [00:50:13,200 - 00:50:15,200] again, very, very complicated
+- [00:50:15,200 - 00:50:17,200] objects turn into
+- [00:50:17,200 - 00:50:19,200] very simple light objects.
+- [00:50:19,200 - 00:50:21,200] Let me tell you what happens to the strings.
+- [00:50:21,200 - 00:50:23,200] To understand the strings,
+- [00:50:23,200 - 00:50:25,200] go back to the thin sandwich.
+- [00:50:27,200 - 00:50:29,200] Go back to the very thin sandwich.
+- [00:50:39,200 - 00:50:41,200] Now remember,
+- [00:50:41,200 - 00:50:43,200] I told you that this theory has even
+- [00:50:43,200 - 00:50:45,200] dimensional brains.
+- [00:50:45,200 - 00:50:47,200] Zero is even.
+- [00:50:47,200 - 00:50:49,200] So it has D0 brains.
+- [00:50:49,200 - 00:50:51,200] But it also has D2 brains,
+- [00:50:51,200 - 00:50:53,200] D4 brains, D6 brains.
+- [00:50:53,200 - 00:50:55,200] But concentrate in particular on D2 brains.
+- [00:50:55,200 - 00:50:57,200] What does a D2 brain mean?
+- [00:50:57,200 - 00:50:59,200] It means a membrane.
+- [00:50:59,200 - 00:51:01,200] It means a membrane.
+- [00:51:01,200 - 00:51:03,200] You could have two kinds
+- [00:51:03,200 - 00:51:05,200] of membranes
+- [00:51:05,200 - 00:51:07,200] stuck into this sandwich.
+- [00:51:07,200 - 00:51:09,200] A membrane
+- [00:51:09,200 - 00:51:11,200] simply means
+- [00:51:11,200 - 00:51:13,200] a surface. A surface of energy.
+- [00:51:13,200 - 00:51:15,200] You could stick in a membrane
+- [00:51:15,200 - 00:51:17,200] in between
+- [00:51:17,200 - 00:51:19,200] the floor and the ceiling.
+- [00:51:19,200 - 00:51:21,200] In between the two pieces of bread.
+- [00:51:21,200 - 00:51:23,200] Sort of embedded in the peanut butter.
+- [00:51:23,200 - 00:51:25,200] Or if you liked,
+- [00:51:25,200 - 00:51:27,200] you could think of the top piece of bread
+- [00:51:27,200 - 00:51:29,200] as the ceiling,
+- [00:51:29,200 - 00:51:31,200] the bottom piece of bread as the floor,
+- [00:51:31,200 - 00:51:33,200] and then the two brains stuck in between
+- [00:51:33,200 - 00:51:35,200] would be a floating magic carpet
+- [00:51:35,200 - 00:51:37,200] that just hovered
+- [00:51:37,200 - 00:51:39,200] halfway in between.
+- [00:51:39,200 - 00:51:41,200] That's one kind of D2 brain
+- [00:51:41,200 - 00:51:43,200] you could have.
+- [00:51:43,200 - 00:51:45,200] There's another kind that you could have.
+- [00:51:45,200 - 00:51:47,200] It's a kind of ribbon.
+- [00:51:47,200 - 00:51:49,200] Let's see if I can draw it.
+- [00:51:59,200 - 00:52:01,200] It goes from the floor
+- [00:52:01,200 - 00:52:03,200] to the ceiling.
+- [00:52:05,200 - 00:52:07,200] But it's a ribbon
+- [00:52:07,200 - 00:52:09,200] sort of stretched between
+- [00:52:09,200 - 00:52:11,200] the floor and the ceiling vertically,
+- [00:52:11,200 - 00:52:13,200] which is extended
+- [00:52:13,200 - 00:52:15,200] in the other direction.
+- [00:52:15,200 - 00:52:17,200] So it's a string.
+- [00:52:17,200 - 00:52:19,200] What happens
+- [00:52:19,200 - 00:52:21,200] when the floor and the ceiling
+- [00:52:21,200 - 00:52:23,200] get closer and closer?
+- [00:52:23,200 - 00:52:25,200] What happens to this ribbon?
+- [00:52:25,200 - 00:52:27,200] It starts to look
+- [00:52:27,200 - 00:52:29,200] more and more like a string.
+- [00:52:29,200 - 00:52:31,200] It starts to look more
+- [00:52:31,200 - 00:52:33,200] and more like a point-like string.
+- [00:52:33,200 - 00:52:35,200] And so when G
+- [00:52:35,200 - 00:52:37,200] is very small,
+- [00:52:37,200 - 00:52:39,200] not a point-like string,
+- [00:52:39,200 - 00:52:41,200] but a line-like string,
+- [00:52:41,200 - 00:52:43,200] the line-like strings
+- [00:52:43,200 - 00:52:45,200] are the membranes
+- [00:52:45,200 - 00:52:47,200] which are oriented vertically
+- [00:52:47,200 - 00:52:49,200] in this direction here.
+- [00:52:49,200 - 00:52:51,200] As and
+- [00:52:51,200 - 00:52:53,200] there are also
+- [00:52:53,200 - 00:52:55,200] D0 brains.
+- [00:52:55,200 - 00:52:57,200] D0 brains being very heavy.
+- [00:52:57,200 - 00:52:59,200] Now you start to increase
+- [00:52:59,200 - 00:53:01,200] the coupling constant.
+- [00:53:01,200 - 00:53:03,200] The floor and the ceiling
+- [00:53:03,200 - 00:53:05,200] start to separate.
+- [00:53:05,200 - 00:53:07,200] The D0 brains
+- [00:53:07,200 - 00:53:09,200] just turn into gravitons.
+- [00:53:09,200 - 00:53:11,200] They turn into just gravitons
+- [00:53:11,200 - 00:53:13,200] moving in the extra dimension.
+- [00:53:13,200 - 00:53:15,200] And they're very simple.
+- [00:53:15,200 - 00:53:17,200] They're just simple elementary particles
+- [00:53:17,200 - 00:53:19,200] in the higher dimensional theory.
+- [00:53:19,200 - 00:53:21,200] What about
+- [00:53:21,200 - 00:53:23,200] the membranes, or what about the strings?
+- [00:53:23,200 - 00:53:25,200] The strings
+- [00:53:25,200 - 00:53:27,200] now become
+- [00:53:27,200 - 00:53:29,200] very, very unstring-like.
+- [00:53:29,200 - 00:53:31,200] Very, very
+- [00:53:31,200 - 00:53:33,200] unstring-like.
+- [00:53:33,200 - 00:53:35,200] They have a lot of membrane
+- [00:53:35,200 - 00:53:37,200] in them. They're stretched a long
+- [00:53:37,200 - 00:53:39,200] ways. They're very heavy.
+- [00:53:39,200 - 00:53:41,200] Why are they so heavy?
+- [00:53:41,200 - 00:53:43,200] Because there's so much
+- [00:53:43,200 - 00:53:45,200] material there, vertically
+- [00:53:45,200 - 00:53:47,200] here. They turn into something
+- [00:53:47,200 - 00:53:49,200] very heavy.
+- [00:53:49,200 - 00:53:51,200] The D0 brains
+- [00:53:51,200 - 00:53:53,200] turned into something very light.
+- [00:53:53,200 - 00:53:55,200] This is an extremely bizarre
+- [00:53:55,200 - 00:53:57,200] story. It is one which is
+- [00:53:57,200 - 00:53:59,200] the mathematics
+- [00:53:59,200 - 00:54:01,200] was discovered by a bunch of people
+- [00:54:01,200 - 00:54:03,200] and
+- [00:54:03,200 - 00:54:05,200] the consistency
+- [00:54:05,200 - 00:54:07,200] of it, the requirement
+- [00:54:07,200 - 00:54:09,200] for it, the need of it
+- [00:54:09,200 - 00:54:11,200] was
+- [00:54:11,200 - 00:54:13,200] it was
+- [00:54:13,200 - 00:54:15,200] a lot of heavy mathematics which went into it.
+- [00:54:17,200 - 00:54:19,200] The need for it to be
+- [00:54:19,200 - 00:54:21,200] consistent involved conjectures,
+- [00:54:21,200 - 00:54:23,200] mathematical conjectures,
+- [00:54:23,200 - 00:54:25,200] which the physicists didn't know how to prove.
+- [00:54:25,200 - 00:54:27,200] They were conjectures about
+- [00:54:27,200 - 00:54:29,200] mathematical structures which mathematicians
+- [00:54:29,200 - 00:54:31,200] knew about. The mathematicians
+- [00:54:31,200 - 00:54:33,200] had no idea about
+- [00:54:33,200 - 00:54:35,200] these conjectures. They'd never heard of these conjectures.
+- [00:54:35,200 - 00:54:37,200] But when the physicists
+- [00:54:37,200 - 00:54:39,200] told them, look,
+- [00:54:39,200 - 00:54:41,200] for these ideas to make any sense,
+- [00:54:41,200 - 00:54:43,200] such and such a mathematical theorem has to
+- [00:54:43,200 - 00:54:45,200] be true, the mathematicians went back and said,
+- [00:54:45,200 - 00:54:47,200] ooh, yeah, those
+- [00:54:47,200 - 00:54:49,200] theorems turned out to be true.
+- [00:54:49,200 - 00:54:51,200] So there's really very
+- [00:54:51,200 - 00:54:53,200] little doubt that all of this holds together,
+- [00:54:53,200 - 00:54:55,200] as bizarre as it sounds.
+- [00:54:55,200 - 00:54:57,200] But it's just a whole
+- [00:54:57,200 - 00:54:59,200] collection of examples
+- [00:54:59,200 - 00:55:01,200] of the breakdown of what I call
+- [00:55:01,200 - 00:55:03,200] reductionism in the beginning.
+- [00:55:03,200 - 00:55:05,200] Now the other ingredient
+- [00:55:05,200 - 00:55:07,200] that makes it
+- [00:55:07,200 - 00:55:09,200] especially bizarre
+- [00:55:09,200 - 00:55:11,200] is that all these things like coupling constants
+- [00:55:11,200 - 00:55:13,200] can vary in space.
+- [00:55:13,200 - 00:55:15,200] So you can have a variation
+- [00:55:15,200 - 00:55:17,200] from place to place where in
+- [00:55:17,200 - 00:55:19,200] some places the world looks very, very
+- [00:55:19,200 - 00:55:21,200] close to ten-dimensional
+- [00:55:21,200 - 00:55:23,200] with very light strings,
+- [00:55:23,200 - 00:55:25,200] heavy D0 brains, and if
+- [00:55:25,200 - 00:55:27,200] you move over a couple of
+- [00:55:27,200 - 00:55:29,200] meters or whatever,
+- [00:55:29,200 - 00:55:31,200] the theory will change its character,
+- [00:55:31,200 - 00:55:33,200] develop a large direction
+- [00:55:33,200 - 00:55:35,200] in this direction,
+- [00:55:35,200 - 00:55:37,200] strings will turn into very heavy membranes,
+- [00:55:37,200 - 00:55:39,200] and D0 brains will turn
+- [00:55:39,200 - 00:55:41,200] into gravitons.
+- [00:55:41,200 - 00:55:43,200] These things are called
+- [00:55:43,200 - 00:55:45,200] inequalities, these relationships
+- [00:55:45,200 - 00:55:47,200] between what happens at one end
+- [00:55:47,200 - 00:55:49,200] of a parameter space and the other end of a
+- [00:55:49,200 - 00:55:51,200] parameter space.
+- [00:55:51,200 - 00:55:53,200] And in many ways they're very magical
+- [00:55:53,200 - 00:55:55,200] and surprising.
+- [00:55:55,200 - 00:55:57,200] They're nothing
+- [00:55:57,200 - 00:55:59,200] like
+- [00:55:59,200 - 00:56:01,200] what was originally expected
+- [00:56:01,200 - 00:56:03,200] from this theory.
+- [00:56:03,200 - 00:56:05,200] It was a simple theory, strings make
+- [00:56:05,200 - 00:56:07,200] up particles, end of story.
+- [00:56:11,200 - 00:56:13,200] What turned out was
+- [00:56:13,200 - 00:56:15,200] much, much more complex,
+- [00:56:15,200 - 00:56:17,200] and much more
+- [00:56:17,200 - 00:56:19,200] elusive in a certain sense.
+- [00:56:19,200 - 00:56:21,200] Elusive in the sense that it
+- [00:56:21,200 - 00:56:23,200] just
+- [00:56:23,200 - 00:56:25,200] became totally unclear
+- [00:56:25,200 - 00:56:27,200] what the starting
+- [00:56:27,200 - 00:56:29,200] objects of the theory are.
+- [00:56:29,200 - 00:56:31,200] What the starting objects,
+- [00:56:31,200 - 00:56:33,200] what the things which,
+- [00:56:33,200 - 00:56:35,200] what the bricks are,
+- [00:56:35,200 - 00:56:37,200] and what the houses are.
+- [00:56:37,200 - 00:56:39,200] And to this day we really simply don't
+- [00:56:39,200 - 00:56:41,200] know what, if anything,
+- [00:56:41,200 - 00:56:43,200] the fundamental
+- [00:56:43,200 - 00:56:45,200] objects that the theory is built out of are.
+- [00:56:45,200 - 00:56:47,200] If there are such objects.
+- [00:56:47,200 - 00:56:49,200] Perhaps it's just this way.
+- [00:56:49,200 - 00:56:51,200] Perhaps there is no set of objects
+- [00:56:51,200 - 00:56:53,200] which are more fundamental than
+- [00:56:53,200 - 00:56:55,200] the strings and the brains and so forth,
+- [00:56:55,200 - 00:56:57,200] and they just transform into each other.
+- [00:56:57,200 - 00:56:59,200] Perhaps there's something
+- [00:56:59,200 - 00:57:01,200] underlying the whole thing
+- [00:57:01,200 - 00:57:03,200] that's more fundamental than
+- [00:57:03,200 - 00:57:05,200] any of them, and can rearrange
+- [00:57:05,200 - 00:57:07,200] itself, can rearrange itself
+- [00:57:07,200 - 00:57:09,200] into different, these different patterns,
+- [00:57:09,200 - 00:57:11,200] and form different kinds of structures.
+- [00:57:13,200 - 00:57:15,200] So we don't know.
+- [00:57:15,200 - 00:57:17,200] We don't know the answer to those questions.
+- [00:57:17,200 - 00:57:19,200] Alright, let's take a
+- [00:57:19,200 - 00:57:21,200] break for ten minutes.
+- [00:57:25,200 - 00:57:27,200] Let me just tell you a few more
+- [00:57:27,200 - 00:57:29,200] interesting connections I was talking about
+- [00:57:29,200 - 00:57:31,200] a few minutes ago with Michael and a couple of other people.
+- [00:57:35,200 - 00:57:37,200] There's an enormous web
+- [00:57:37,200 - 00:57:39,200] of interconnected ideas
+- [00:57:39,200 - 00:57:41,200] and interconnected theories
+- [00:57:41,200 - 00:57:43,200] that string theory brings together
+- [00:57:43,200 - 00:57:45,200] so let me show you
+- [00:57:45,200 - 00:57:47,200] two more interesting ideas
+- [00:57:47,200 - 00:57:49,200] that
+- [00:57:49,200 - 00:57:51,200] take a
+- [00:57:51,200 - 00:57:53,200] D3 brain. Remember, now
+- [00:57:53,200 - 00:57:55,200] there are those theories that have odd brains
+- [00:57:55,200 - 00:57:57,200] and those theories that have even brains.
+- [00:57:57,200 - 00:57:59,200] Let's take the case
+- [00:57:59,200 - 00:58:01,200] of the odd-brained
+- [00:58:01,200 - 00:58:03,200] theories, which have
+- [00:58:03,200 - 00:58:05,200] D1 brains,
+- [00:58:05,200 - 00:58:07,200] fundamental strings, and also
+- [00:58:07,200 - 00:58:09,200] D3 brains. Now a
+- [00:58:09,200 - 00:58:11,200] D3 brain is like
+- [00:58:11,200 - 00:58:13,200] ordinary space. It has three dimensions,
+- [00:58:13,200 - 00:58:15,200] in which you can move around in.
+- [00:58:15,200 - 00:58:17,200] If you are stuck on this brain and you couldn't get off
+- [00:58:17,200 - 00:58:19,200] it, perhaps because you were attracted to it,
+- [00:58:19,200 - 00:58:21,200] you might
+- [00:58:21,200 - 00:58:23,200] think you're living
+- [00:58:23,200 - 00:58:25,200] in a world of three dimensions.
+- [00:58:25,200 - 00:58:27,200] Just as
+- [00:58:27,200 - 00:58:29,200] if there was a two-dimensional membrane
+- [00:58:29,200 - 00:58:31,200] and you were a little creature that moved around
+- [00:58:31,200 - 00:58:33,200] on the membrane, you would think you live in two dimensions.
+- [00:58:33,200 - 00:58:35,200] You might not, you know,
+- [00:58:35,200 - 00:58:37,200] under certain circumstances,
+- [00:58:37,200 - 00:58:39,200] you might really
+- [00:58:39,200 - 00:58:41,200] describe your world as being pretty
+- [00:58:41,200 - 00:58:43,200] similar to a quantum
+- [00:58:43,200 - 00:58:45,200] theory or to a theory in two dimensions,
+- [00:58:45,200 - 00:58:47,200] two space dimensions.
+- [00:58:47,200 - 00:58:49,200] Same thing
+- [00:58:49,200 - 00:58:51,200] on three brains. Three brains
+- [00:58:51,200 - 00:58:53,200] in many ways just
+- [00:58:53,200 - 00:58:55,200] behave as if they were just ordinary
+- [00:58:55,200 - 00:58:57,200] space.
+- [00:58:57,200 - 00:58:59,200] Now, the three brain
+- [00:58:59,200 - 00:59:01,200] itself can have all sorts of
+- [00:59:01,200 - 00:59:03,200] wiggles on it, all
+- [00:59:03,200 - 00:59:05,200] sorts of motions,
+- [00:59:05,200 - 00:59:07,200] and
+- [00:59:07,200 - 00:59:09,200] it also has, well, it has
+- [00:59:09,200 - 00:59:11,200] among other things, here's
+- [00:59:11,200 - 00:59:13,200] a picture of a three brain. No, I think I
+- [00:59:13,200 - 00:59:15,200] should draw it the other way.
+- [00:59:17,200 - 00:59:19,200] Let's draw it this way.
+- [00:59:19,200 - 00:59:21,200] You say,
+- [00:59:21,200 - 00:59:23,200] that's not a three brain, it's a two brain.
+- [00:59:23,200 - 00:59:25,200] Too bad, I can't draw,
+- [00:59:25,200 - 00:59:27,200] I'm not good at drawing three-dimensional
+- [00:59:27,200 - 00:59:29,200] figures.
+- [00:59:29,200 - 00:59:31,200] Imagine that
+- [00:59:31,200 - 00:59:33,200] it's three-dimensional, not two-dimensional.
+- [00:59:33,200 - 00:59:35,200] We're going to need the other dimension
+- [00:59:35,200 - 00:59:37,200] for
+- [00:59:37,200 - 00:59:39,200] additional dimensions, so
+- [00:59:39,200 - 00:59:41,200] I don't want to use full three-dimensionals.
+- [00:59:41,200 - 00:59:43,200] You know what I mean.
+- [00:59:43,200 - 00:59:45,200] Okay, so that's a D3 brain,
+- [00:59:45,200 - 00:59:47,200] and it can do things. It can have
+- [00:59:47,200 - 00:59:49,200] wiggles on it and so forth. It can also have
+- [00:59:49,200 - 00:59:51,200] strings attached to it,
+- [00:59:51,200 - 00:59:53,200] like that.
+- [00:59:53,200 - 00:59:55,200] Here's two strings
+- [00:59:55,200 - 00:59:57,200] attached to the D3
+- [00:59:57,200 - 00:59:59,200] brain, ordinary strings.
+- [00:59:59,200 - 01:00:01,200] Those two strings can come along,
+- [01:00:01,200 - 01:00:03,200] here they are, one is over here, one is over
+- [01:00:03,200 - 01:00:05,200] here. They can come along,
+- [01:00:05,200 - 01:00:07,200] they can join and form
+- [01:00:09,200 - 01:00:11,200] a single string.
+- [01:00:11,200 - 01:00:13,200] Okay, so here is the
+- [01:00:13,200 - 01:00:15,200] picture. They come along,
+- [01:00:15,200 - 01:00:17,200] they join, and they form
+- [01:00:17,200 - 01:00:19,200] a single string, and then they go
+- [01:00:19,200 - 01:00:21,200] back out and they do something else.
+- [01:00:21,200 - 01:00:23,200] They scatter.
+- [01:00:23,200 - 01:00:25,200] They scatter, they interact,
+- [01:00:25,200 - 01:00:27,200] they do all the things that
+- [01:00:27,200 - 01:00:29,200] particles do.
+- [01:00:29,200 - 01:00:31,200] And so on this
+- [01:00:31,200 - 01:00:33,200] world of three dimensions, which
+- [01:00:33,200 - 01:00:35,200] is not really the full space
+- [01:00:35,200 - 01:00:37,200] time, but just a
+- [01:00:37,200 - 01:00:39,200] brain, all sorts of things go
+- [01:00:39,200 - 01:00:41,200] on, which are in many
+- [01:00:41,200 - 01:00:43,200] ways similar to the things
+- [01:00:43,200 - 01:00:45,200] which happen in
+- [01:00:45,200 - 01:00:47,200] ordinary quantum field
+- [01:00:47,200 - 01:00:49,200] theory in three dimensions.
+- [01:00:49,200 - 01:00:51,200] Well,
+- [01:00:51,200 - 01:00:53,200] let me give you
+- [01:00:55,200 - 01:00:57,200] one interesting thought.
+- [01:00:57,200 - 01:00:59,200] Supposing from
+- [01:00:59,200 - 01:01:01,200] outside the D3 brain
+- [01:01:03,200 - 01:01:05,200] a fundamental string comes
+- [01:01:05,200 - 01:01:07,200] and ends on the D3 brain.
+- [01:01:07,200 - 01:01:09,200] How about the people
+- [01:01:09,200 - 01:01:11,200] who live on this D3 brain,
+- [01:01:11,200 - 01:01:13,200] who are made up out of the strings
+- [01:01:13,200 - 01:01:15,200] wiggling up and down the string.
+- [01:01:15,200 - 01:01:17,200] What do they call this object
+- [01:01:17,200 - 01:01:19,200] over here? They call it a
+- [01:01:19,200 - 01:01:21,200] particle, right? It looks like a particle
+- [01:01:21,200 - 01:01:23,200] to them. It's a little point over here.
+- [01:01:23,200 - 01:01:25,200] Somebody over here sees a little
+- [01:01:25,200 - 01:01:27,200] particle over here.
+- [01:01:27,200 - 01:01:29,200] Somehow, they've come in from
+- [01:01:29,200 - 01:01:31,200] some other direction. He doesn't see the other directions.
+- [01:01:31,200 - 01:01:33,200] He only sees the directions
+- [01:01:33,200 - 01:01:35,200] he lives in and
+- [01:01:35,200 - 01:01:37,200] sees a particle over here.
+- [01:01:37,200 - 01:01:39,200] What kind of particle?
+- [01:01:39,200 - 01:01:41,200] This is now a fundamental string.
+- [01:01:41,200 - 01:01:43,200] What kind
+- [01:01:43,200 - 01:01:45,200] of particle? An electrically
+- [01:01:45,200 - 01:01:47,200] charged particle.
+- [01:01:47,200 - 01:01:49,200] Well, if we
+- [01:01:49,200 - 01:01:51,200] can have fundamental strings
+- [01:01:51,200 - 01:01:53,200] and in a theory with
+- [01:01:53,200 - 01:01:55,200] odd brains,
+- [01:01:55,200 - 01:01:57,200] we also have D-strings.
+- [01:01:57,200 - 01:01:59,200] So here's a D-string,
+- [01:01:59,200 - 01:02:01,200] and a D-string can also end
+- [01:02:01,200 - 01:02:03,200] on a
+- [01:02:03,200 - 01:02:05,200] three brain. That's part of the
+- [01:02:05,200 - 01:02:07,200] mathematical story of D-brains.
+- [01:02:07,200 - 01:02:09,200] Fundamental strings
+- [01:02:09,200 - 01:02:11,200] and D-strings can
+- [01:02:11,200 - 01:02:13,200] end on the three brain.
+- [01:02:13,200 - 01:02:15,200] That's a D-string.
+- [01:02:15,200 - 01:02:17,200] What does that D-string look like
+- [01:02:17,200 - 01:02:19,200] to somebody living in here?
+- [01:02:19,200 - 01:02:21,200] It also looks like a particle.
+- [01:02:21,200 - 01:02:23,200] It's kind of a
+- [01:02:23,200 - 01:02:25,200] fatter particle. Why is it
+- [01:02:25,200 - 01:02:27,200] fatter? Because the D-string
+- [01:02:27,200 - 01:02:29,200] is fatter than the fundamental string.
+- [01:02:29,200 - 01:02:31,200] Unless the coupling constant is very large,
+- [01:02:31,200 - 01:02:33,200] of course. If the coupling constant
+- [01:02:33,200 - 01:02:35,200] is very large, they might get interchanged.
+- [01:02:35,200 - 01:02:37,200] But I'm in a world now
+- [01:02:37,200 - 01:02:39,200] where the coupling constant is small.
+- [01:02:39,200 - 01:02:41,200] The fundamental strings are skinny
+- [01:02:41,200 - 01:02:43,200] and thread-like.
+- [01:02:43,200 - 01:02:45,200] The D-strings are fat
+- [01:02:45,200 - 01:02:47,200] and rope-like.
+- [01:02:47,200 - 01:02:49,200] And a D-string ending
+- [01:02:49,200 - 01:02:51,200] on here
+- [01:02:51,200 - 01:02:53,200] would look like a bigger,
+- [01:02:53,200 - 01:02:55,200] heavier particle.
+- [01:02:55,200 - 01:02:57,200] This one
+- [01:02:57,200 - 01:02:59,200] looks like an electric charge.
+- [01:02:59,200 - 01:03:01,200] Can you guess what this one looks like?
+- [01:03:01,200 - 01:03:03,200] A magnetic monopole.
+- [01:03:03,200 - 01:03:05,200] So,
+- [01:03:05,200 - 01:03:07,200] the duality
+- [01:03:07,200 - 01:03:09,200] that connects
+- [01:03:09,200 - 01:03:11,200] the fundamental strings with the D-strings
+- [01:03:11,200 - 01:03:13,200] is nothing
+- [01:03:13,200 - 01:03:15,200] but the duality
+- [01:03:15,200 - 01:03:17,200] which connected the electric charges
+- [01:03:17,200 - 01:03:19,200] with the magnetic charges
+- [01:03:19,200 - 01:03:21,200] of ordinary field theory.
+- [01:03:21,200 - 01:03:23,200] That's a
+- [01:03:23,200 - 01:03:25,200] kind of spectacular
+- [01:03:25,200 - 01:03:27,200] connection that
+- [01:03:27,200 - 01:03:29,200] something we already knew for a long
+- [01:03:29,200 - 01:03:31,200] time has
+- [01:03:31,200 - 01:03:33,200] a new interpretation in terms
+- [01:03:33,200 - 01:03:35,200] of D-strings
+- [01:03:35,200 - 01:03:37,200] and fundamental strings, the duality between
+- [01:03:37,200 - 01:03:39,200] D-strings and fundamental strings.
+- [01:03:39,200 - 01:03:41,200] I'll give you
+- [01:03:41,200 - 01:03:43,200] one more example.
+- [01:03:43,200 - 01:03:45,200] One more example which also
+- [01:03:45,200 - 01:03:47,200] involves D-strings and F-strings.
+- [01:03:47,200 - 01:03:49,200] And
+- [01:03:57,200 - 01:03:59,200] I want you to go back to this
+- [01:03:59,200 - 01:04:01,200] 11-dimensional theory that we had over here.
+- [01:04:01,200 - 01:04:03,200] It's 11 dimensions.
+- [01:04:03,200 - 01:04:05,200] The horizontal axis
+- [01:04:05,200 - 01:04:07,200] is
+- [01:04:07,200 - 01:04:09,200] 9 dimensions of space,
+- [01:04:09,200 - 01:04:11,200] one extra dimension of space
+- [01:04:11,200 - 01:04:13,200] plus time.
+- [01:04:13,200 - 01:04:15,200] Let's go back to this theory over here.
+- [01:04:15,200 - 01:04:17,200] But unfortunately
+- [01:04:17,200 - 01:04:19,200] I can't draw enough dimensions
+- [01:04:19,200 - 01:04:21,200] to do this satisfactorily.
+- [01:04:23,200 - 01:04:25,200] In this picture
+- [01:04:25,200 - 01:04:27,200] over here, only one dimension
+- [01:04:27,200 - 01:04:29,200] of space is compact.
+- [01:04:29,200 - 01:04:31,200] The sandwich has only
+- [01:04:31,200 - 01:04:33,200] one direction
+- [01:04:33,200 - 01:04:35,200] along which it's sandwich-like.
+- [01:04:35,200 - 01:04:37,200] I want
+- [01:04:37,200 - 01:04:39,200] to imagine taking two dimensions
+- [01:04:39,200 - 01:04:41,200] of space
+- [01:04:41,200 - 01:04:43,200] and compactifying them.
+- [01:04:43,200 - 01:04:45,200] How can I draw that?
+- [01:04:45,200 - 01:04:47,200] Well, the maximum number of
+- [01:04:47,200 - 01:04:49,200] dimensions I can draw on the blackboard
+- [01:04:49,200 - 01:04:51,200] is three. I can't draw more than
+- [01:04:51,200 - 01:04:53,200] three dimensions on the blackboard.
+- [01:04:53,200 - 01:04:55,200] If I compactify
+- [01:04:55,200 - 01:04:57,200] two of them, that only gives me
+- [01:04:57,200 - 01:04:59,200] one more left to
+- [01:04:59,200 - 01:05:01,200] think of as all the other dimensions.
+- [01:05:01,200 - 01:05:03,200] So I'm
+- [01:05:03,200 - 01:05:05,200] just going to have to make do with a world
+- [01:05:05,200 - 01:05:07,200] which
+- [01:05:07,200 - 01:05:09,200] has only one large dimension
+- [01:05:09,200 - 01:05:11,200] or at least one visible large dimension
+- [01:05:11,200 - 01:05:13,200] and two small ones.
+- [01:05:13,200 - 01:05:15,200] What does that look like? It looks like this.
+- [01:05:15,200 - 01:05:17,200] Here's the two small dimensions
+- [01:05:17,200 - 01:05:19,200] and here's the one
+- [01:05:19,200 - 01:05:21,200] big dimension which is a stand-in
+- [01:05:21,200 - 01:05:23,200] for how many?
+- [01:05:27,200 - 01:05:29,200] Seven.
+- [01:05:29,200 - 01:05:31,200] Right.
+- [01:05:31,200 - 01:05:33,200] Okay, now imagine
+- [01:05:33,200 - 01:05:35,200] this is the same
+- [01:05:35,200 - 01:05:37,200] theory that had
+- [01:05:37,200 - 01:05:39,200] D2 brains.
+- [01:05:41,200 - 01:05:43,200] Oh, let's
+- [01:05:43,200 - 01:05:45,200] just for fun, let's draw this
+- [01:05:47,200 - 01:05:49,200] as rather asymmetric.
+- [01:05:51,200 - 01:05:53,200] I'm going to draw it asymmetrically
+- [01:05:53,200 - 01:05:55,200] so that
+- [01:05:55,200 - 01:05:57,200] one of the axes
+- [01:05:57,200 - 01:05:59,200] is shorter than the other
+- [01:05:59,200 - 01:06:01,200] to make a point.
+- [01:06:01,200 - 01:06:03,200] Now this theory also
+- [01:06:03,200 - 01:06:05,200] has
+- [01:06:05,200 - 01:06:07,200] D2 brains.
+- [01:06:07,200 - 01:06:09,200] The D2 brains were these
+- [01:06:09,200 - 01:06:11,200] things which formed strings
+- [01:06:11,200 - 01:06:13,200] when the sandwich
+- [01:06:13,200 - 01:06:15,200] was small.
+- [01:06:15,200 - 01:06:17,200] Those strings
+- [01:06:17,200 - 01:06:19,200] sort of stretched
+- [01:06:19,200 - 01:06:21,200] from the ceiling to the floor.
+- [01:06:21,200 - 01:06:23,200] Here's the ceiling, here's the floor.
+- [01:06:23,200 - 01:06:25,200] And we can draw
+- [01:06:25,200 - 01:06:27,200] those strings. Let me take another color.
+- [01:06:41,200 - 01:06:43,200] This happens to be a string
+- [01:06:43,200 - 01:06:45,200] which is stretched out
+- [01:06:45,200 - 01:06:47,200] along the one
+- [01:06:47,200 - 01:06:49,200] visible direction that I can draw here.
+- [01:06:49,200 - 01:06:51,200] If I could draw more directions
+- [01:06:51,200 - 01:06:53,200] I could make the string wiggle and wave
+- [01:06:53,200 - 01:06:55,200] and so forth.
+- [01:06:55,200 - 01:06:57,200] But let's just stretch it out
+- [01:06:57,200 - 01:06:59,200] along this direction.
+- [01:06:59,200 - 01:07:01,200] It's a string.
+- [01:07:01,200 - 01:07:03,200] Well, it's not quite a string. It's sort of a ribbon.
+- [01:07:03,200 - 01:07:05,200] But
+- [01:07:05,200 - 01:07:07,200] if these directions are very small
+- [01:07:07,200 - 01:07:09,200] then it looks like a string, right?
+- [01:07:09,200 - 01:07:11,200] Looks like a string.
+- [01:07:11,200 - 01:07:13,200] And what happens
+- [01:07:13,200 - 01:07:15,200] as the sandwich
+- [01:07:15,200 - 01:07:17,200] in this direction
+- [01:07:17,200 - 01:07:19,200] gets thinner and thinner?
+- [01:07:19,200 - 01:07:21,200] It gets more and more string-like, of course.
+- [01:07:21,200 - 01:07:23,200] But in fact it also gets
+- [01:07:23,200 - 01:07:25,200] lighter and lighter because there's less
+- [01:07:25,200 - 01:07:27,200] material in the vertical direction here.
+- [01:07:27,200 - 01:07:29,200] But we can also
+- [01:07:29,200 - 01:07:31,200] put
+- [01:07:31,200 - 01:07:33,200] a string in
+- [01:07:33,200 - 01:07:35,200] in the other
+- [01:07:35,200 - 01:07:37,200] oriented the other way.
+- [01:07:41,200 - 01:07:59,200] How about this string?
+- [01:07:59,200 - 01:08:01,200] That's also, from the point of view
+- [01:08:01,200 - 01:08:03,200] of the large dimensions of space
+- [01:08:03,200 - 01:08:05,200] it also looks like a
+- [01:08:05,200 - 01:08:07,200] one-dimensional object
+- [01:08:07,200 - 01:08:09,200] as long as both axes are small.
+- [01:08:09,200 - 01:08:11,200] What does this one look like?
+- [01:08:11,200 - 01:08:13,200] This one is called
+- [01:08:13,200 - 01:08:15,200] It's not the same thing.
+- [01:08:15,200 - 01:08:17,200] In fact, which one of these two
+- [01:08:17,200 - 01:08:19,200] strings would you think is heavier?
+- [01:08:21,200 - 01:08:23,200] The bottom one, because it's more
+- [01:08:23,200 - 01:08:25,200] material that way, right?
+- [01:08:25,200 - 01:08:27,200] This one's heavy.
+- [01:08:27,200 - 01:08:29,200] This one's light.
+- [01:08:29,200 - 01:08:31,200] They're both strings.
+- [01:08:31,200 - 01:08:33,200] Can you guess what they are?
+- [01:08:35,200 - 01:08:37,200] F strings
+- [01:08:37,200 - 01:08:39,200] and D strings.
+- [01:08:39,200 - 01:08:41,200] So this is
+- [01:08:41,200 - 01:08:43,200] another way to think about
+- [01:08:43,200 - 01:08:45,200] the relation between
+- [01:08:45,200 - 01:08:47,200] F strings and D strings.
+- [01:08:47,200 - 01:08:49,200] They're membranes
+- [01:08:49,200 - 01:08:51,200] which are wrapped around
+- [01:08:51,200 - 01:08:53,200] two different directions,
+- [01:08:53,200 - 01:08:55,200] two different small directions.
+- [01:08:57,200 - 01:08:59,200] One of the directions being
+- [01:08:59,200 - 01:09:01,200] larger than the other.
+- [01:09:01,200 - 01:09:03,200] Now, what happens
+- [01:09:03,200 - 01:09:05,200] if we imagine taking the space
+- [01:09:05,200 - 01:09:07,200] and distorting it
+- [01:09:07,200 - 01:09:09,200] so that we start squeezing
+- [01:09:09,200 - 01:09:11,200] this direction this way and stretching
+- [01:09:11,200 - 01:09:13,200] this one that way?
+- [01:09:13,200 - 01:09:15,200] What happens to the two kinds of strings?
+- [01:09:15,200 - 01:09:17,200] The F strings get
+- [01:09:17,200 - 01:09:19,200] heavier and heavier,
+- [01:09:19,200 - 01:09:21,200] thicker and thicker, more and more material.
+- [01:09:21,200 - 01:09:23,200] The D strings get lighter
+- [01:09:23,200 - 01:09:25,200] and lighter.
+- [01:09:25,200 - 01:09:27,200] So we see, again,
+- [01:09:27,200 - 01:09:29,200] this is another way to think
+- [01:09:29,200 - 01:09:31,200] about D strings and F strings.
+- [01:09:31,200 - 01:09:33,200] They're all mathematically
+- [01:09:33,200 - 01:09:35,200] equivalent.
+- [01:09:37,200 - 01:09:39,200] And it's just a small part
+- [01:09:39,200 - 01:09:41,200] of an enormous network of
+- [01:09:41,200 - 01:09:43,200] ideas
+- [01:09:43,200 - 01:09:45,200] that emerge out of string theory.
+- [01:09:45,200 - 01:09:47,200] Sometimes connecting one string
+- [01:09:47,200 - 01:09:49,200] theory with another string theory.
+- [01:09:49,200 - 01:09:51,200] Sometimes connecting
+- [01:09:51,200 - 01:09:53,200] string theory with quantum field theory.
+- [01:09:53,200 - 01:09:55,200] Connecting ideas like
+- [01:09:55,200 - 01:09:57,200] monopoles and charges
+- [01:09:57,200 - 01:09:59,200] with strings and other things.
+- [01:10:03,200 - 01:10:05,200] Most of it
+- [01:10:05,200 - 01:10:07,200] having very little to do with what we see
+- [01:10:07,200 - 01:10:09,200] in the laboratory.
+- [01:10:11,200 - 01:10:13,200] In that picture,
+- [01:10:13,200 - 01:10:15,200] can't you view alpha as the ratio
+- [01:10:15,200 - 01:10:17,200] of the...
+- [01:10:17,200 - 01:10:19,200] In that picture, can you view
+- [01:10:19,200 - 01:10:21,200] alpha as the ratio
+- [01:10:21,200 - 01:10:23,200] of the two dimensions?
+- [01:10:23,200 - 01:10:25,200] Yes.
+- [01:10:25,200 - 01:10:27,200] That's exactly what it is.
+- [01:10:27,200 - 01:10:29,200] That's exactly what it is.
+- [01:10:29,200 - 01:10:31,200] When the ratio,
+- [01:10:31,200 - 01:10:33,200] when this direction is small,
+- [01:10:33,200 - 01:10:35,200] we would normally call it
+- [01:10:35,200 - 01:10:37,200] a small coupling constant
+- [01:10:37,200 - 01:10:39,200] and, yeah,
+- [01:10:39,200 - 01:10:41,200] that's right.
+- [01:10:41,200 - 01:10:43,200] These things do not have
+- [01:10:43,200 - 01:10:45,200] a finite width because
+- [01:10:45,200 - 01:10:47,200] of the cyclical nature.
+- [01:10:47,200 - 01:10:49,200] Well, they're finite
+- [01:10:49,200 - 01:10:51,200] in extent, but they're cyclic.
+- [01:10:51,200 - 01:10:53,200] Right.
+- [01:10:53,200 - 01:10:55,200] So the bottom here is
+- [01:10:55,200 - 01:10:57,200] the same point as the top.
+- [01:10:57,200 - 01:10:59,200] So if you walked along the ribbon
+- [01:10:59,200 - 01:11:01,200] and you came to here,
+- [01:11:01,200 - 01:11:03,200] you would reappear over here.
+- [01:11:03,200 - 01:11:05,200] Likewise over here,
+- [01:11:05,200 - 01:11:07,200] if you went out over here,
+- [01:11:07,200 - 01:11:09,200] you'd reappear over here.
+- [01:11:09,200 - 01:11:11,200] That gives you
+- [01:11:11,200 - 01:11:13,200] a kind of infinity.
+- [01:11:13,200 - 01:11:15,200] Well, you can go...
+- [01:11:15,200 - 01:11:17,200] It's the same kind of infinity
+- [01:11:17,200 - 01:11:19,200] as the Earth, okay?
+- [01:11:19,200 - 01:11:21,200] It's the same kind of infinity
+- [01:11:21,200 - 01:11:23,200] as this circle.
+- [01:11:23,200 - 01:11:25,200] You can go around it
+- [01:11:25,200 - 01:11:27,200] and around it and around it
+- [01:11:27,200 - 01:11:29,200] but never come to the end.
+- [01:11:29,200 - 01:11:31,200] But nevertheless,
+- [01:11:31,200 - 01:11:33,200] you wouldn't say the distance
+- [01:11:33,200 - 01:11:35,200] around you was infinite.
+- [01:11:35,200 - 01:11:37,200] No, but in this case,
+- [01:11:37,200 - 01:11:39,200] you start out,
+- [01:11:39,200 - 01:11:41,200] you go this direction.
+- [01:11:41,200 - 01:11:43,200] And you go up another step.
+- [01:11:43,200 - 01:11:45,200] In other words,
+- [01:11:45,200 - 01:11:47,200] if you add up all the steps...
+- [01:11:47,200 - 01:11:49,200] All that is is going around
+- [01:11:49,200 - 01:11:51,200] and
+- [01:11:51,200 - 01:11:53,200] around and around and around.
+- [01:11:53,200 - 01:11:55,200] It's just, look, it's taking a circle.
+- [01:11:55,200 - 01:11:57,200] This idea of going out the top
+- [01:11:57,200 - 01:11:59,200] and reappearing at the bottom
+- [01:11:59,200 - 01:12:01,200] is nothing but taking a circle
+- [01:12:01,200 - 01:12:03,200] where you just go around
+- [01:12:03,200 - 01:12:05,200] and in order to mathematically
+- [01:12:05,200 - 01:12:07,200] exhibit it,
+- [01:12:07,200 - 01:12:09,200] you cut it, open it up,
+- [01:12:09,200 - 01:12:11,200] draw it on the blackboard,
+- [01:12:11,200 - 01:12:13,200] and the blackboard is a line.
+- [01:12:13,200 - 01:12:15,200] But remember that this point
+- [01:12:15,200 - 01:12:17,200] and this point are really the same point
+- [01:12:17,200 - 01:12:19,200] so that when you go from here
+- [01:12:19,200 - 01:12:21,200] across, you jump across to here.
+- [01:12:21,200 - 01:12:23,200] When you go out here, you come here.
+- [01:12:23,200 - 01:12:25,200] Why isn't this a helix
+- [01:12:25,200 - 01:12:27,200] rather than just a circle?
+- [01:12:29,200 - 01:12:31,200] At each point, this is a circle.
+- [01:12:31,200 - 01:12:33,200] Yes, but we're going
+- [01:12:33,200 - 01:12:35,200] along in this way
+- [01:12:35,200 - 01:12:37,200] and therefore it's kind of a helix.
+- [01:12:37,200 - 01:12:39,200] Well, if
+- [01:12:39,200 - 01:12:41,200] you go around
+- [01:12:41,200 - 01:12:43,200] as you go forward,
+- [01:12:43,200 - 01:12:45,200] then you get a helix.
+- [01:12:45,200 - 01:12:47,200] Is there any...
+- [01:12:47,200 - 01:12:49,200] This is, of course, a geometrical picture.
+- [01:12:49,200 - 01:12:51,200] Is there any useful
+- [01:12:51,200 - 01:12:53,200] story about how the geometry
+- [01:12:53,200 - 01:12:55,200] here connects to the
+- [01:12:55,200 - 01:12:57,200] earlier point you made
+- [01:12:57,200 - 01:12:59,200] that the D-Brain can look like
+- [01:12:59,200 - 01:13:01,200] a collection of F-Brain, so where you look very closely
+- [01:13:01,200 - 01:13:03,200] and scatter the D-Brain, you see a lot of F-Brain.
+- [01:13:03,200 - 01:13:05,200] From this picture,
+- [01:13:05,200 - 01:13:07,200] it's a little bit hard to see.
+- [01:13:11,200 - 01:13:13,200] It is useful,
+- [01:13:13,200 - 01:13:15,200] but you need a little bit more
+- [01:13:15,200 - 01:13:17,200] geometric imagination to see
+- [01:13:17,200 - 01:13:19,200] how a D-Brain
+- [01:13:19,200 - 01:13:21,200] can be connected up with an F-Brain.
+- [01:13:21,200 - 01:13:23,200] I'm reaching a saturation
+- [01:13:23,200 - 01:13:25,200] point of complexity
+- [01:13:25,200 - 01:13:27,200] where I...
+- [01:13:35,200 - 01:13:37,200] If you put the two in the same picture
+- [01:13:37,200 - 01:13:39,200] and then you
+- [01:13:39,200 - 01:13:41,200] oscillate it,
+- [01:13:41,200 - 01:13:43,200] between the thin and the narrow,
+- [01:13:43,200 - 01:13:45,200] then you get those flip-flopping
+- [01:13:45,200 - 01:13:47,200] perpendicular...
+- [01:13:47,200 - 01:13:49,200] You mean oscillating in space?
+- [01:13:49,200 - 01:13:51,200] As you move along...
+- [01:13:51,200 - 01:13:53,200] Well, let's say if you oscillate the long dimension
+- [01:13:53,200 - 01:13:55,200] and the short dimension...
+- [01:13:55,200 - 01:13:57,200] Oscillate in time or space or what?
+- [01:13:57,200 - 01:13:59,200] Either.
+- [01:13:59,200 - 01:14:01,200] Just the shape.
+- [01:14:01,200 - 01:14:03,200] But when you say oscillates,
+- [01:14:03,200 - 01:14:05,200] it's just space, numbers.
+- [01:14:05,200 - 01:14:07,200] You're just going to squish one this way
+- [01:14:07,200 - 01:14:09,200] and the other one pops out.
+- [01:14:09,200 - 01:14:11,200] Yeah, exactly.
+- [01:14:11,200 - 01:14:13,200] If you have the same diagram,
+- [01:14:13,200 - 01:14:15,200] then you've got them changing places.
+- [01:14:15,200 - 01:14:17,200] That's right, exactly.
+- [01:14:17,200 - 01:14:19,200] You can imagine that as you move along space
+- [01:14:19,200 - 01:14:21,200] in this direction,
+- [01:14:21,200 - 01:14:23,200] it squishes horizontally
+- [01:14:23,200 - 01:14:25,200] and broadens vertically.
+- [01:14:25,200 - 01:14:27,200] Right.
+- [01:14:27,200 - 01:14:29,200] So then you would say,
+- [01:14:29,200 - 01:14:31,200] over here, the fundamental
+- [01:14:31,200 - 01:14:33,200] strings are light,
+- [01:14:33,200 - 01:14:35,200] over here, the fundamental strings are heavy.
+- [01:14:35,200 - 01:14:37,200] Now, fundamental is just a name.
+- [01:14:37,200 - 01:14:39,200] It's quite clear that which is fundamental
+- [01:14:39,200 - 01:14:41,200] and which is...
+- [01:14:41,200 - 01:14:45,200] There's no preference for which one is fundamental.
+- [01:14:45,200 - 01:14:47,200] It's just a word.
+- [01:14:47,200 - 01:14:49,200] We call the ones which are arranged vertically here
+- [01:14:49,200 - 01:14:51,200] fundamental.
+- [01:14:51,200 - 01:14:53,200] We call the ones which are arranged horizontal, D.
+- [01:14:53,200 - 01:14:55,200] And that's right.
+- [01:14:55,200 - 01:14:57,200] As you move along here,
+- [01:14:57,200 - 01:14:59,200] you can imagine going back and forth.
+- [01:14:59,200 - 01:15:01,200] Or with time.
+- [01:15:01,200 - 01:15:03,200] You could also imagine that with time,
+- [01:15:03,200 - 01:15:05,200] these...
+- [01:15:05,200 - 01:15:07,200] And that can also happen.
+- [01:15:07,200 - 01:15:09,200] And so you could go back and forth
+- [01:15:09,200 - 01:15:11,200] between the two of them. Absolutely.
+- [01:15:11,200 - 01:15:13,200] Now,
+- [01:15:13,200 - 01:15:15,200] let me just sort of
+- [01:15:15,200 - 01:15:17,200] finish up
+- [01:15:17,200 - 01:15:19,200] these thoughts
+- [01:15:19,200 - 01:15:21,200] by saying these precise
+- [01:15:21,200 - 01:15:23,200] features are features of
+- [01:15:23,200 - 01:15:25,200] an
+- [01:15:25,200 - 01:15:27,200] idealization.
+- [01:15:27,200 - 01:15:29,200] The idealization is the
+- [01:15:29,200 - 01:15:31,200] idealized supersymmetric
+- [01:15:31,200 - 01:15:33,200] string theory.
+- [01:15:33,200 - 01:15:35,200] Supersymmetric means that it has
+- [01:15:35,200 - 01:15:37,200] bosons and fermions of exactly the same
+- [01:15:37,200 - 01:15:39,200] mass, and
+- [01:15:39,200 - 01:15:41,200] it's an
+- [01:15:41,200 - 01:15:43,200] idealization in the sense that
+- [01:15:43,200 - 01:15:45,200] it's not really nature.
+- [01:15:45,200 - 01:15:47,200] In some sense, it's like the
+- [01:15:47,200 - 01:15:49,200] idealization of studying perfectly
+- [01:15:49,200 - 01:15:51,200] circular orbits.
+- [01:15:51,200 - 01:15:53,200] Why do you study circular orbits?
+- [01:15:53,200 - 01:15:55,200] Because they're easy to study.
+- [01:15:55,200 - 01:15:57,200] Undoubtedly the first kind of orbit
+- [01:15:57,200 - 01:15:59,200] that Newton studied.
+- [01:15:59,200 - 01:16:01,200] Circular orbits. They had an extra symmetry,
+- [01:16:01,200 - 01:16:03,200] they were highly symmetric,
+- [01:16:03,200 - 01:16:05,200] and easy to study.
+- [01:16:05,200 - 01:16:07,200] The mathematics was easy.
+- [01:16:07,200 - 01:16:09,200] They weren't the real planetary
+- [01:16:09,200 - 01:16:11,200] orbits, but of course
+- [01:16:11,200 - 01:16:13,200] many of the features of real planetary
+- [01:16:13,200 - 01:16:15,200] orbits
+- [01:16:15,200 - 01:16:17,200] in simplified form
+- [01:16:17,200 - 01:16:19,200] were there
+- [01:16:19,200 - 01:16:21,200] for circular orbits.
+- [01:16:21,200 - 01:16:23,200] Again, the kinds
+- [01:16:23,200 - 01:16:25,200] of string theories that we really know
+- [01:16:25,200 - 01:16:27,200] how to deal with, mathematically,
+- [01:16:27,200 - 01:16:29,200] string theory is infinitely more
+- [01:16:29,200 - 01:16:31,200] complex than the theory
+- [01:16:31,200 - 01:16:33,200] of orbits.
+- [01:16:33,200 - 01:16:35,200] The kind of theories that we know
+- [01:16:35,200 - 01:16:37,200] how to deal with are also especially
+- [01:16:37,200 - 01:16:39,200] symmetric.
+- [01:16:39,200 - 01:16:41,200] Symmetric meaning to say that they
+- [01:16:41,200 - 01:16:43,200] have some mathematical properties
+- [01:16:43,200 - 01:16:45,200] which are idealizations,
+- [01:16:45,200 - 01:16:47,200] makes them easy to understand,
+- [01:16:49,200 - 01:16:51,200] easier to understand,
+- [01:16:51,200 - 01:16:53,200] and
+- [01:16:53,200 - 01:16:55,200] but is
+- [01:16:55,200 - 01:16:57,200] not real nature.
+- [01:16:57,200 - 01:16:59,200] What they show us is the kind
+- [01:16:59,200 - 01:17:01,200] of things that can happen.
+- [01:17:01,200 - 01:17:03,200] The kind of things, all of
+- [01:17:03,200 - 01:17:05,200] these things which happen here
+- [01:17:05,200 - 01:17:07,200] are expected to have a reflection of
+- [01:17:07,200 - 01:17:09,200] one kind or another in a more realistic
+- [01:17:09,200 - 01:17:11,200] theory, but it will be more
+- [01:17:11,200 - 01:17:13,200] complicated and it will be less
+- [01:17:13,200 - 01:17:15,200] tractable and
+- [01:17:15,200 - 01:17:17,200] not so easy to
+- [01:17:17,200 - 01:17:19,200] visualize and certainly not
+- [01:17:19,200 - 01:17:21,200] so easy to prove anything about.
+- [01:17:23,200 - 01:17:25,200] But it does show us the kind of things
+- [01:17:25,200 - 01:17:27,200] that can happen
+- [01:17:27,200 - 01:17:29,200] in a string
+- [01:17:29,200 - 01:17:31,200] theory and very likely the kinds of things
+- [01:17:31,200 - 01:17:33,200] that can happen more generally than just
+- [01:17:33,200 - 01:17:35,200] string theory.
+- [01:17:35,200 - 01:17:37,200] So, as I said, string theory
+- [01:17:37,200 - 01:17:39,200] as we understand it now, the
+- [01:17:39,200 - 01:17:41,200] things that we really understand
+- [01:17:41,200 - 01:17:43,200] mathematically are
+- [01:17:43,200 - 01:17:45,200] over-idealizations.
+- [01:17:45,200 - 01:17:47,200] And so when people
+- [01:17:47,200 - 01:17:49,200] argue in the press and
+- [01:17:49,200 - 01:17:51,200] books and silly books for the
+- [01:17:51,200 - 01:17:53,200] most part about whether string
+- [01:17:53,200 - 01:17:55,200] theory is the right theory of the world
+- [01:17:55,200 - 01:17:57,200] or not,
+- [01:17:57,200 - 01:17:59,200] the answer is it's not.
+- [01:17:59,200 - 01:18:01,200] It's just not.
+- [01:18:01,200 - 01:18:03,200] On the other hand, does it have an enormous amount
+- [01:18:03,200 - 01:18:05,200] to teach us about the way that quantum
+- [01:18:05,200 - 01:18:07,200] mechanics, gravity, microstructure
+- [01:18:07,200 - 01:18:09,200] fits together? Probably
+- [01:18:09,200 - 01:18:11,200] yes. That's my
+- [01:18:11,200 - 01:18:13,200] opinion in any case.
+- [01:18:13,200 - 01:18:15,200] Many of the things
+- [01:18:15,200 - 01:18:17,200] really don't depend on the
+- [01:18:17,200 - 01:18:19,200] details of string theory.
+- [01:18:19,200 - 01:18:21,200] But, okay, enough
+- [01:18:21,200 - 01:18:23,200] of that sermon.
+- [01:18:27,200 - 01:18:29,200] There are other objects besides
+- [01:18:29,200 - 01:18:31,200] D-brains.
+- [01:18:31,200 - 01:18:33,200] I don't
+- [01:18:33,200 - 01:18:35,200] I think I probably saturated you
+- [01:18:35,200 - 01:18:37,200] with ideas for tonight.
+- [01:18:37,200 - 01:18:39,200] There are other objects in the theory.
+- [01:18:41,200 - 01:18:43,200] There are things called fluxes.
+- [01:18:43,200 - 01:18:45,200] There are things called
+- [01:18:45,200 - 01:18:47,200] orbifolds, things called orientafolds,
+- [01:18:47,200 - 01:18:49,200] things, all kinds of structures
+- [01:18:51,200 - 01:18:53,200] which add to the
+- [01:18:53,200 - 01:18:55,200] elements that you can
+- [01:18:55,200 - 01:18:57,200] put together to create a
+- [01:18:57,200 - 01:18:59,200] world.
+- [01:18:59,200 - 01:19:01,200] You can take
+- [01:19:01,200 - 01:19:03,200] a geometry. For example,
+- [01:19:03,200 - 01:19:05,200] this room
+- [01:19:05,200 - 01:19:07,200] with the
+- [01:19:07,200 - 01:19:09,200] floor and the ceiling
+- [01:19:09,200 - 01:19:11,200] being thought of as the
+- [01:19:11,200 - 01:19:13,200] top and bottom of the peanut butter
+- [01:19:13,200 - 01:19:15,200] sandwich, maybe even
+- [01:19:15,200 - 01:19:17,200] periodically identified.
+- [01:19:17,200 - 01:19:19,200] We take that wall,
+- [01:19:19,200 - 01:19:21,200] we can take that, this room,
+- [01:19:21,200 - 01:19:23,200] think of it
+- [01:19:23,200 - 01:19:25,200] really as one compact
+- [01:19:25,200 - 01:19:27,200] direction and two
+- [01:19:27,200 - 01:19:29,200] non-compact directions.
+- [01:19:29,200 - 01:19:31,200] And then we can put a D-2 brain
+- [01:19:31,200 - 01:19:33,200] into it, a D-brain into it
+- [01:19:33,200 - 01:19:35,200] that fills up like a flying carpet
+- [01:19:35,200 - 01:19:37,200] halfway between the floor and the ceiling.
+- [01:19:37,200 - 01:19:39,200] And that's a new structure
+- [01:19:39,200 - 01:19:41,200] that could be there in space
+- [01:19:41,200 - 01:19:43,200] and we shrink
+- [01:19:43,200 - 01:19:45,200] the size from the wall of the floor
+- [01:19:45,200 - 01:19:47,200] to the ceiling, but with that
+- [01:19:47,200 - 01:19:49,200] flying carpet always stuck in between
+- [01:19:49,200 - 01:19:51,200] it changes the character
+- [01:19:51,200 - 01:19:53,200] of physics
+- [01:19:53,200 - 01:19:55,200] in that two-dimensional world.
+- [01:19:55,200 - 01:19:57,200] We can put
+- [01:19:57,200 - 01:19:59,200] one flying carpet in,
+- [01:19:59,200 - 01:20:01,200] we can put two flying carpets in,
+- [01:20:01,200 - 01:20:03,200] we can put three flying carpets in,
+- [01:20:03,200 - 01:20:05,200] and we can make a whole variety
+- [01:20:05,200 - 01:20:07,200] of different worlds
+- [01:20:07,200 - 01:20:09,200] by changing the D-brain
+- [01:20:09,200 - 01:20:11,200] content that we put into the world.
+- [01:20:11,200 - 01:20:13,200] As I said, there are other objects,
+- [01:20:13,200 - 01:20:15,200] there are fluxes, we can change
+- [01:20:15,200 - 01:20:17,200] the nature of
+- [01:20:17,200 - 01:20:19,200] the microscopic world
+- [01:20:19,200 - 01:20:21,200] by adding those things
+- [01:20:21,200 - 01:20:23,200] or subtracting those things.
+- [01:20:23,200 - 01:20:25,200] What string theory
+- [01:20:25,200 - 01:20:27,200] gives us is a
+- [01:20:27,200 - 01:20:29,200] bunch of tinker toy
+- [01:20:29,200 - 01:20:31,200] parts, a lot of
+- [01:20:31,200 - 01:20:33,200] tinker toy parts, that we
+- [01:20:33,200 - 01:20:35,200] can play with, arrange,
+- [01:20:35,200 - 01:20:37,200] rearrange, do complicated things
+- [01:20:37,200 - 01:20:39,200] with, and in the process
+- [01:20:39,200 - 01:20:41,200] change what the
+- [01:20:41,200 - 01:20:43,200] microscopic physics is like, change what
+- [01:20:43,200 - 01:20:45,200] particle physics is like, change
+- [01:20:45,200 - 01:20:47,200] what the parameters of
+- [01:20:47,200 - 01:20:49,200] nature are like.
+- [01:20:51,200 - 01:20:53,200] It gives rise to huge numbers
+- [01:20:53,200 - 01:20:55,200] of possibilities,
+- [01:20:55,200 - 01:20:57,200] permutations and combinations
+- [01:20:57,200 - 01:20:59,200] of how you put these tinker toy pieces
+- [01:20:59,200 - 01:21:01,200] together.
+- [01:21:01,200 - 01:21:03,200] How many possibilities?
+- [01:21:05,200 - 01:21:07,200] Huge number.
+- [01:21:07,200 - 01:21:09,200] Ten to the five hundred is a number
+- [01:21:09,200 - 01:21:11,200] that's often thrown around.
+- [01:21:11,200 - 01:21:13,200] It's not very hard to get to
+- [01:21:13,200 - 01:21:15,200] ten to the five hundred.
+- [01:21:17,200 - 01:21:19,200] Supposing
+- [01:21:21,200 - 01:21:23,200] Yeah.
+- [01:21:23,200 - 01:21:25,200] Really all you need is five hundred.
+- [01:21:25,200 - 01:21:27,200] You don't really need anything.
+- [01:21:27,200 - 01:21:29,200] Five hundred is not such a big
+- [01:21:29,200 - 01:21:31,200] number, right?
+- [01:21:31,200 - 01:21:33,200] Supposing you have a
+- [01:21:33,200 - 01:21:35,200] space
+- [01:21:35,200 - 01:21:37,200] which is like a donut
+- [01:21:37,200 - 01:21:39,200] except it has five hundred holes
+- [01:21:39,200 - 01:21:41,200] and handles in it. Now five hundred holes
+- [01:21:41,200 - 01:21:43,200] and handles is not a large
+- [01:21:43,200 - 01:21:45,200] number for the kind of spaces
+- [01:21:45,200 - 01:21:47,200] that
+- [01:21:47,200 - 01:21:49,200] string theory uses,
+- [01:21:49,200 - 01:21:51,200] Calabi-Yau spaces.
+- [01:21:51,200 - 01:21:53,200] The six dimensional spaces, they're complicated.
+- [01:21:53,200 - 01:21:55,200] Five hundred holes and
+- [01:21:55,200 - 01:21:57,200] handles attached to them is not very
+- [01:21:57,200 - 01:21:59,200] complicated. Now
+- [01:21:59,200 - 01:22:01,200] we can, around each
+- [01:22:01,200 - 01:22:03,200] one of what are called
+- [01:22:03,200 - 01:22:05,200] cycles, we can wrap
+- [01:22:05,200 - 01:22:07,200] brains, we can wrap fluxes.
+- [01:22:07,200 - 01:22:09,200] If around each
+- [01:22:09,200 - 01:22:11,200] one of five hundred cycles
+- [01:22:11,200 - 01:22:13,200] we can wrap a few brains,
+- [01:22:13,200 - 01:22:15,200] three or four brains
+- [01:22:15,200 - 01:22:17,200] more or less, or
+- [01:22:17,200 - 01:22:19,200] we can put in a few fluxes or whatever
+- [01:22:19,200 - 01:22:21,200] a flux is and modify
+- [01:22:21,200 - 01:22:23,200] the geometry for each handle
+- [01:22:23,200 - 01:22:25,200] if we could modify the
+- [01:22:25,200 - 01:22:27,200] structure in ten different
+- [01:22:27,200 - 01:22:29,200] ways, then we would have
+- [01:22:29,200 - 01:22:31,200] ten to the five hundred possibilities.
+- [01:22:31,200 - 01:22:33,200] You know, it's kind of like DNA.
+- [01:22:33,200 - 01:22:35,200] You take a DNA chain.
+- [01:22:37,200 - 01:22:39,200] If the DNA chain
+- [01:22:39,200 - 01:22:41,200] was five hundred units long
+- [01:22:41,200 - 01:22:43,200] how many different creatures,
+- [01:22:43,200 - 01:22:45,200] how many different possibilities are there for a creature?
+- [01:22:47,200 - 01:22:49,200] Four to the five hundred.
+- [01:22:49,200 - 01:22:51,200] Not five hundred, but four to the five hundred.
+- [01:22:51,200 - 01:22:53,200] So
+- [01:22:53,200 - 01:22:55,200] with the permutations and
+- [01:22:55,200 - 01:22:57,200] combinations of
+- [01:22:57,200 - 01:22:59,200] five hundred objects being
+- [01:22:59,200 - 01:23:01,200] rearranged in maybe four,
+- [01:23:01,200 - 01:23:03,200] five, ten ways, you can make
+- [01:23:03,200 - 01:23:05,200] huge numbers of possibilities.
+- [01:23:05,200 - 01:23:07,200] And that's what happens.
+- [01:23:07,200 - 01:23:09,200] How many tinker toy, given
+- [01:23:09,200 - 01:23:11,200] a tinker toy set, how many different
+- [01:23:11,200 - 01:23:13,200] constructions can you make?
+- [01:23:13,200 - 01:23:15,200] Well, you have
+- [01:23:15,200 - 01:23:17,200] how many of those little wheels?
+- [01:23:17,200 - 01:23:19,200] And in each wheel you can
+- [01:23:19,200 - 01:23:21,200] put, you know,
+- [01:23:21,200 - 01:23:23,200] numbers get very, very large.
+- [01:23:23,200 - 01:23:25,200] So
+- [01:23:25,200 - 01:23:27,200] the same is true with string theory.
+- [01:23:29,200 - 01:23:31,200] And
+- [01:23:33,200 - 01:23:35,200] the numbers are large
+- [01:23:35,200 - 01:23:37,200] and any given construction
+- [01:23:37,200 - 01:23:39,200] is likely to be
+- [01:23:39,200 - 01:23:41,200] rather complicated. The generic
+- [01:23:41,200 - 01:23:43,200] construction that you make is likely
+- [01:23:43,200 - 01:23:45,200] to be rather complicated.
+- [01:23:45,200 - 01:23:47,200] Just like the generic construction
+- [01:23:47,200 - 01:23:49,200] you can make with a DNA chain,
+- [01:23:49,200 - 01:23:51,200] well, DNA chains are more than
+- [01:23:51,200 - 01:23:53,200] five hundred units long.
+- [01:23:53,200 - 01:23:55,200] What, a hundred million units long?
+- [01:23:55,200 - 01:23:57,200] A hundred million base pairs long?
+- [01:23:57,200 - 01:23:59,200] Still only about twenty thousand
+- [01:23:59,200 - 01:24:01,200] genes.
+- [01:24:01,200 - 01:24:03,200] How many
+- [01:24:03,200 - 01:24:05,200] kinds of creatures can you make?
+- [01:24:05,200 - 01:24:07,200] A huge number. Are any of them simple?
+- [01:24:07,200 - 01:24:09,200] Well, some of them are simple, but the
+- [01:24:09,200 - 01:24:11,200] generic creature that you make
+- [01:24:11,200 - 01:24:13,200] is very complicated. It has trunks and ears
+- [01:24:13,200 - 01:24:15,200] and all sorts of
+- [01:24:15,200 - 01:24:17,200] appendages.
+- [01:24:19,200 - 01:24:21,200] It could very well be
+- [01:24:21,200 - 01:24:23,200] that that's the reason that particle
+- [01:24:23,200 - 01:24:25,200] physics is so complicated.
+- [01:24:25,200 - 01:24:27,200] Because a lot of moving parts
+- [01:24:27,200 - 01:24:29,200] go into constructing
+- [01:24:29,200 - 01:24:31,200] particular string theory
+- [01:24:31,200 - 01:24:33,200] construction.
+- [01:24:33,200 - 01:24:35,200] I think most string theorists believe
+- [01:24:35,200 - 01:24:37,200] this by now, that the world
+- [01:24:37,200 - 01:24:39,200] is complicated because there's a lot of moving
+- [01:24:39,200 - 01:24:41,200] parts, but not because the rules are
+- [01:24:41,200 - 01:24:43,200] complicated. The rules of DNA are not complicated.
+- [01:24:43,200 - 01:24:45,200] You have a long chain,
+- [01:24:45,200 - 01:24:47,200] and you either put in a T, a G, an A,
+- [01:24:47,200 - 01:24:49,200] a C, whatever the
+- [01:24:49,200 - 01:24:51,200] base pairs are,
+- [01:24:51,200 - 01:24:53,200] and you put them in an arbitrary
+- [01:24:53,200 - 01:24:55,200] sequence of
+- [01:24:55,200 - 01:24:57,200] base pairs, and then
+- [01:24:57,200 - 01:24:59,200] What's that?
+- [01:24:59,200 - 01:25:01,200] Four of them. What did I say?
+- [01:25:01,200 - 01:25:03,200] T, G, C, and A.
+- [01:25:03,200 - 01:25:05,200] They come in pairs
+- [01:25:05,200 - 01:25:07,200] though, you realize.
+- [01:25:07,200 - 01:25:09,200] On the other hand, it is, yeah, yeah, but there's two
+- [01:25:09,200 - 01:25:11,200] strands
+- [01:25:11,200 - 01:25:13,200] so if you focus on one strand and you move
+- [01:25:13,200 - 01:25:15,200] along it, any point along it
+- [01:25:15,200 - 01:25:17,200] could be one of four, so it's four to the five hundred
+- [01:25:17,200 - 01:25:19,200] or whatever, four to the thirty thousand, whatever.
+- [01:25:21,200 - 01:25:23,200] And
+- [01:25:23,200 - 01:25:25,200] none of them are particularly simple,
+- [01:25:25,200 - 01:25:27,200] but the rules, the basic underlying
+- [01:25:27,200 - 01:25:29,200] rules for putting things together
+- [01:25:29,200 - 01:25:31,200] are simple. The same is true of string theory
+- [01:25:31,200 - 01:25:33,200] in very much the same way
+- [01:25:33,200 - 01:25:35,200] that the basic rules for
+- [01:25:35,200 - 01:25:37,200] what you're allowed to do
+- [01:25:37,200 - 01:25:39,200] are pretty simple. The number of
+- [01:25:39,200 - 01:25:41,200] arrangements that you can make
+- [01:25:41,200 - 01:25:43,200] for a particular
+- [01:25:43,200 - 01:25:45,200] setup is very large.
+- [01:25:45,200 - 01:25:47,200] And most of them
+- [01:25:47,200 - 01:25:49,200] will lead to fairly
+- [01:25:49,200 - 01:25:51,200] complicated particle physics.
+- [01:25:51,200 - 01:25:53,200] That's the situation
+- [01:25:53,200 - 01:25:55,200] we're facing, and
+- [01:25:55,200 - 01:25:57,200] string theory, if string theory is
+- [01:25:57,200 - 01:25:59,200] correct, I think
+- [01:25:59,200 - 01:26:01,200] we should expect that
+- [01:26:03,200 - 01:26:05,200] particle physics will be more
+- [01:26:05,200 - 01:26:07,200] complicated, probably
+- [01:26:07,200 - 01:26:09,200] than we'll ever be able to
+- [01:26:09,200 - 01:26:11,200] unravel completely.
+- [01:26:11,200 - 01:26:13,200] Question. Is it thought that
+- [01:26:13,200 - 01:26:15,200] of the four to the, ten to the five hundred
+- [01:26:15,200 - 01:26:17,200] that there are really only a few
+- [01:26:17,200 - 01:26:19,200] that describe this? Ten to the five hundred
+- [01:26:19,200 - 01:26:21,200] incidentally is an underestimate.
+- [01:26:21,200 - 01:26:23,200] That was a, yeah, but go ahead.
+- [01:26:23,200 - 01:26:25,200] But is it thought that
+- [01:26:25,200 - 01:26:27,200] if we had all the information that we would
+- [01:26:27,200 - 01:26:29,200] find that only one or a couple of
+- [01:26:29,200 - 01:26:31,200] I know about the duality that you've
+- [01:26:31,200 - 01:26:33,200] talked about. Yeah, yeah, there are the dualities
+- [01:26:33,200 - 01:26:35,200] but when you sort of
+- [01:26:35,200 - 01:26:37,200] when you divide out the dualities
+- [01:26:37,200 - 01:26:39,200] the ten to the five hundred
+- [01:26:39,200 - 01:26:41,200] is the number that's left over.
+- [01:26:41,200 - 01:26:43,200] And it's not ten to the five hundred,
+- [01:26:43,200 - 01:26:45,200] that's an old number.
+- [01:26:45,200 - 01:26:47,200] But I mean, is it only a few
+- [01:26:47,200 - 01:26:49,200] that would, if we knew
+- [01:26:49,200 - 01:26:51,200] what it was, it would only be one of those
+- [01:26:51,200 - 01:26:53,200] choices? Well, okay.
+- [01:26:55,200 - 01:26:57,200] Presumably so.
+- [01:26:57,200 - 01:26:59,200] Presumably so.
+- [01:26:59,200 - 01:27:01,200] But there may be many which look
+- [01:27:01,200 - 01:27:03,200] very similar. There may be
+- [01:27:03,200 - 01:27:05,200] many, many which look very, very similar.
+- [01:27:05,200 - 01:27:07,200] You know, there may be a lot of junk DNA
+- [01:27:07,200 - 01:27:09,200] in it.
+- [01:27:09,200 - 01:27:11,200] There's a lot of junk DNA in it.
+- [01:27:11,200 - 01:27:13,200] But there's some where, for example
+- [01:27:13,200 - 01:27:15,200] in this picture, the aspect ratio
+- [01:27:15,200 - 01:27:17,200] were one, and therefore
+- [01:27:17,200 - 01:27:19,200] the F and the D's were kind of
+- [01:27:19,200 - 01:27:21,200] the same thing. Right.
+- [01:27:21,200 - 01:27:23,200] Like, are there some
+- [01:27:23,200 - 01:27:25,200] of those ten to the power of five hundred
+- [01:27:25,200 - 01:27:27,200] where the whole thing becomes a lot similar?
+- [01:27:27,200 - 01:27:29,200] There are, I think you're asking
+- [01:27:29,200 - 01:27:31,200] whether there are specially symmetric
+- [01:27:31,200 - 01:27:33,200] points. And there are specially symmetric
+- [01:27:33,200 - 01:27:35,200] points, yeah.
+- [01:27:35,200 - 01:27:37,200] There are specially symmetric points.
+- [01:27:37,200 - 01:27:39,200] Our world does not seem to be one of those
+- [01:27:39,200 - 01:27:41,200] specially symmetric points.
+- [01:27:41,200 - 01:27:43,200] A specially symmetric
+- [01:27:43,200 - 01:27:45,200] point would be one in which
+- [01:27:45,200 - 01:27:47,200] the monopole mass and the electron
+- [01:27:47,200 - 01:27:49,200] mass were the same.
+- [01:27:49,200 - 01:27:51,200] Apparently we don't live in that world.
+- [01:27:51,200 - 01:27:53,200] We live in a lopsided world
+- [01:27:53,200 - 01:27:55,200] more like this.
+- [01:27:55,200 - 01:27:57,200] Do we know why? No.
+- [01:27:57,200 - 01:27:59,200] Long, long ago
+- [01:27:59,200 - 01:28:01,200] I studied communications
+- [01:28:01,200 - 01:28:03,200] engineering here at Stanford, and
+- [01:28:03,200 - 01:28:05,200] at that time, what they
+- [01:28:05,200 - 01:28:07,200] taught us about coding theory
+- [01:28:07,200 - 01:28:09,200] and communication
+- [01:28:09,200 - 01:28:11,200] and direction codes was that,
+- [01:28:11,200 - 01:28:13,200] and this is always hit with a sense of
+- [01:28:13,200 - 01:28:15,200] dire humor, that almost all
+- [01:28:15,200 - 01:28:17,200] the codes you can find are really
+- [01:28:17,200 - 01:28:19,200] very, very good. But
+- [01:28:19,200 - 01:28:21,200] because the only ones you can decode
+- [01:28:21,200 - 01:28:23,200] have mathematical structure, the ones
+- [01:28:23,200 - 01:28:25,200] you can actually decode are universally
+- [01:28:25,200 - 01:28:27,200] bad. Bad in what sense?
+- [01:28:27,200 - 01:28:29,200] In bad in that they don't give you
+- [01:28:29,200 - 01:28:31,200] the, they give you just a fraction
+- [01:28:31,200 - 01:28:33,200] of the performance that you get to.
+- [01:28:33,200 - 01:28:35,200] Now it's turned out
+- [01:28:35,200 - 01:28:37,200] that
+- [01:28:37,200 - 01:28:39,200] in the many years since I've studied this
+- [01:28:39,200 - 01:28:41,200] that they have in fact found codes that are
+- [01:28:41,200 - 01:28:43,200] unbelievably good compared to what we had
+- [01:28:43,200 - 01:28:45,200] back in the 70s.
+- [01:28:45,200 - 01:28:47,200] But it reminds me of this, that
+- [01:28:47,200 - 01:28:49,200] it's the mathematical structure
+- [01:28:49,200 - 01:28:51,200] when, that
+- [01:28:51,200 - 01:28:53,200] if the mathematical structure is
+- [01:28:53,200 - 01:28:55,200] understandable, the complexity is too low
+- [01:28:55,200 - 01:28:57,200] to explain. Yeah, almost
+- [01:28:57,200 - 01:28:59,200] anything you can name is too simple to be
+- [01:28:59,200 - 01:29:01,200] interesting. Like
+- [01:29:01,200 - 01:29:03,200] almost every number is
+- [01:29:03,200 - 01:29:05,200] small, because any number you name
+- [01:29:05,200 - 01:29:07,200] almost all of them are much bigger.
+- [01:29:07,200 - 01:29:09,200] Any
+- [01:29:09,200 - 01:29:11,200] thing you can describe is probably too,
+- [01:29:11,200 - 01:29:13,200] you know, it's described in a
+- [01:29:13,200 - 01:29:15,200] small number of
+- [01:29:15,200 - 01:29:17,200] bits. Yeah,
+- [01:29:17,200 - 01:29:19,200] this is probably true. And
+- [01:29:19,200 - 01:29:21,200] I think
+- [01:29:21,200 - 01:29:23,200] what it means, if true,
+- [01:29:23,200 - 01:29:25,200] if these things are true, is
+- [01:29:25,200 - 01:29:27,200] we've got to learn to ask a new class
+- [01:29:27,200 - 01:29:29,200] of questions. The question is not
+- [01:29:29,200 - 01:29:31,200] exactly what is the set up
+- [01:29:31,200 - 01:29:33,200] which, what
+- [01:29:33,200 - 01:29:35,200] are the common features, what are the
+- [01:29:35,200 - 01:29:37,200] generic features, what the, and
+- [01:29:37,200 - 01:29:39,200] you know, we're
+- [01:29:39,200 - 01:29:41,200] people are wrestling with those questions.
+- [01:29:41,200 - 01:29:45,200] Yeah, yeah, yeah.
+- [01:29:45,200 - 01:29:47,200] Now, will it turn out that way?
+- [01:29:47,200 - 01:29:49,200] We don't know.
+- [01:29:49,200 - 01:29:51,200] This is, this is, this is,
+- [01:29:51,200 - 01:29:53,200] but it doesn't do anybody any
+- [01:29:53,200 - 01:29:55,200] good to have
+- [01:29:55,200 - 01:29:57,200] ideological warfare
+- [01:29:57,200 - 01:29:59,200] in the press over these things.
+- [01:30:01,200 - 01:30:03,200] Okay.
+- [01:30:03,200 - 01:30:05,200] Yes, sir. It seems
+- [01:30:05,200 - 01:30:07,200] that there wouldn't be a big difference
+- [01:30:07,200 - 01:30:09,200] between... Do I have to answer? Yeah, yeah.
+- [01:30:09,200 - 01:30:11,200] Hmm? You want Leonard?
+- [01:30:11,200 - 01:30:13,200] No. No. He's Leonard.
+- [01:30:13,200 - 01:30:15,200] Right. I wasn't.
+- [01:30:15,200 - 01:30:17,200] I wasn't.
+- [01:30:19,200 - 01:30:21,200] It seems that there wouldn't be
+- [01:30:21,200 - 01:30:23,200] a big difference between a
+- [01:30:23,200 - 01:30:25,200] compact
+- [01:30:25,200 - 01:30:27,200] direction that has a very large
+- [01:30:27,200 - 01:30:29,200] size and an
+- [01:30:29,200 - 01:30:31,200] infinite. Well...
+- [01:30:31,200 - 01:30:33,200] And, and so
+- [01:30:33,200 - 01:30:35,200] do we know that we've, that our
+- [01:30:35,200 - 01:30:37,200] three ordinary dimensions
+- [01:30:37,200 - 01:30:39,200] really are infinite? Nope.
+- [01:30:39,200 - 01:30:41,200] We do not.
+- [01:30:41,200 - 01:30:43,200] We do not.
+- [01:30:43,200 - 01:30:45,200] We do not.
+- [01:30:45,200 - 01:30:47,200] As a matter of fact, I mean, you know,
+- [01:30:47,200 - 01:30:49,200] standard old-fashioned cosmological
+- [01:30:49,200 - 01:30:51,200] theory said the three dimensions form
+- [01:30:51,200 - 01:30:53,200] a sphere, a growing sphere
+- [01:30:53,200 - 01:30:55,200] to be sure, but
+- [01:30:55,200 - 01:30:57,200] a three sphere, and so they were all compact.
+- [01:30:59,200 - 01:31:01,200] All compact, but
+- [01:31:01,200 - 01:31:03,200] growing. So, no, we don't.
+- [01:31:05,200 - 01:31:07,200] And there's no way to
+- [01:31:07,200 - 01:31:09,200] actually tell.
+- [01:31:09,200 - 01:31:11,200] We can only say that they're bigger than this or that.
+- [01:31:13,200 - 01:31:15,200] The, the
+- [01:31:15,200 - 01:31:17,200] measured flatness of the
+- [01:31:17,200 - 01:31:19,200] universe, you know, if you wanted to know how big the Earth
+- [01:31:19,200 - 01:31:21,200] was around,
+- [01:31:21,200 - 01:31:23,200] you, going out
+- [01:31:23,200 - 01:31:25,200] in the farmer's field, which is, you know,
+- [01:31:25,200 - 01:31:27,200] a, a
+- [01:31:27,200 - 01:31:29,200] kilometer by a kilometer, and looking around,
+- [01:31:29,200 - 01:31:31,200] all you could do is put a bound
+- [01:31:31,200 - 01:31:33,200] on how big the Earth is. From
+- [01:31:33,200 - 01:31:35,200] looking at triangles and things
+- [01:31:35,200 - 01:31:37,200] and over small distances,
+- [01:31:37,200 - 01:31:39,200] you could say, well,
+- [01:31:39,200 - 01:31:41,200] the Earth is so flat
+- [01:31:41,200 - 01:31:43,200] that I suspect it must be at least
+- [01:31:43,200 - 01:31:45,200] 60 miles big.
+- [01:31:45,200 - 01:31:47,200] Does a little bit better,
+- [01:31:47,200 - 01:31:49,200] measures a little more accurately, triangles
+- [01:31:49,200 - 01:31:51,200] at the surface of the Earth,
+- [01:31:51,200 - 01:31:53,200] assuming the surface of the Earth was nice
+- [01:31:53,200 - 01:31:55,200] and flat and didn't have hills in it,
+- [01:31:55,200 - 01:31:57,200] he might be able to say it's 500 miles
+- [01:31:57,200 - 01:31:59,200] big or bigger.
+- [01:31:59,200 - 01:32:01,200] And that's all he can do until
+- [01:32:01,200 - 01:32:03,200] he starts to detect the
+- [01:32:03,200 - 01:32:05,200] curvature of the Earth, and when he detects
+- [01:32:05,200 - 01:32:07,200] the curvature of the Earth, then
+- [01:32:07,200 - 01:32:09,200] he can say, aha, the Earth looks like a
+- [01:32:09,200 - 01:32:11,200] 24,000 miles in circumference.
+- [01:32:13,200 - 01:32:15,200] Same thing, when we look out
+- [01:32:15,200 - 01:32:17,200] cosmologically,
+- [01:32:17,200 - 01:32:19,200] space looks very flat
+- [01:32:19,200 - 01:32:21,200] on very large scales, so
+- [01:32:21,200 - 01:32:23,200] all we can say is it's at least
+- [01:32:23,200 - 01:32:25,200] this big. It's at least
+- [01:32:29,200 - 01:32:31,200] 40 billion light years on a side,
+- [01:32:31,200 - 01:32:33,200] well, it's bigger than that,
+- [01:32:33,200 - 01:32:35,200] no, no, it's much bigger than that, 400
+- [01:32:35,200 - 01:32:37,200] light years on a side at least, at
+- [01:32:37,200 - 01:32:39,200] minimum, and
+- [01:32:39,200 - 01:32:41,200] but we can't say one way or another
+- [01:32:41,200 - 01:32:43,200] whether it's infinite or not.
+- [01:32:43,200 - 01:32:45,200] If G can vary over space,
+- [01:32:45,200 - 01:32:47,200] how would you be able to detect
+- [01:32:47,200 - 01:32:49,200] whether you are...
+- [01:32:49,200 - 01:32:51,200] In the real world, it can't.
+- [01:32:51,200 - 01:32:53,200] In the real world, which is not as
+- [01:32:53,200 - 01:32:55,200] symmetric and as simple as this,
+- [01:32:55,200 - 01:32:57,200] it can't.
+- [01:32:57,200 - 01:32:59,200] No.
+- [01:32:59,200 - 01:33:01,200] It may be able to vary,
+- [01:33:01,200 - 01:33:03,200] but it'll vary in steps.
+- [01:33:03,200 - 01:33:05,200] We're going to talk about
+- [01:33:05,200 - 01:33:07,200] the whole thing, but
+- [01:33:07,200 - 01:33:09,200] we're going to talk about the whole thing.
+- [01:33:09,200 - 01:33:11,200] We're going to talk about this when we talk about cosmology.
+- [01:33:11,200 - 01:33:13,200] What are the kinds of variations
+- [01:33:13,200 - 01:33:15,200] that the laws of physics
+- [01:33:15,200 - 01:33:17,200] can have from place to place?
+- [01:33:17,200 - 01:33:19,200] Consistent with both theory
+- [01:33:19,200 - 01:33:21,200] and with what we know experimentally.
+- [01:33:21,200 - 01:33:23,200] And from what we know experimentally,
+- [01:33:23,200 - 01:33:25,200] is that these changes
+- [01:33:25,200 - 01:33:27,200] have to take place
+- [01:33:27,200 - 01:33:29,200] in discrete jumps,
+- [01:33:29,200 - 01:33:31,200] more or less in jumps.
+- [01:33:31,200 - 01:33:33,200] Okay, because if it was continuous,
+- [01:33:33,200 - 01:33:35,200] it would seem that you can move along a linear dimension
+- [01:33:35,200 - 01:33:37,200] and then end up in one of the curved dimensions
+- [01:33:37,200 - 01:33:39,200] that's become big.
+- [01:33:39,200 - 01:33:41,200] I think we know
+- [01:33:41,200 - 01:33:43,200] with pretty much certainty
+- [01:33:43,200 - 01:33:45,200] that it can't continuously
+- [01:33:45,200 - 01:33:47,200] smoothly vary.
+- [01:33:47,200 - 01:33:49,200] What we don't know is whether it can vary in jumps.
+- [01:33:49,200 - 01:33:51,200] And there are good reasons to think that it varies in jumps.
+- [01:33:59,200 - 01:34:01,200] Some kinds of black holes, yes.
+- [01:34:01,200 - 01:34:03,200] Other kinds, no.
+- [01:34:03,200 - 01:34:05,200] Ordinary Schwarzschild black hole, no.
+- [01:34:07,200 - 01:34:09,200] Not in the
+- [01:34:09,200 - 01:34:11,200] horizon of a Schwarzschild black hole, no.
+- [01:34:13,200 - 01:34:15,200] The horizon of a Schwarzschild black hole
+- [01:34:15,200 - 01:34:17,200] is a very ordinary place
+- [01:34:17,200 - 01:34:19,200] where nothing special like that happens.
+- [01:34:19,200 - 01:34:21,200] I'm losing my voice.
+- [01:34:23,200 - 01:34:25,200] For more, please visit us at
+- [01:34:25,200 - 01:34:27,200] stanford.edu
