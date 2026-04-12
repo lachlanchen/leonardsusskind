@@ -1,0 +1,2287 @@
+# Transcript
+
+Source: supplementary/quantum_entanglement/2006_fall_part_1/050 - Lecture 3 ｜ Quantum Entanglements, Part 1 (Stanford) [CaTF4QZ94Fk].mp4
+
+- [00:00:00,000 - 00:00:10,520] This program is brought to you by Stanford University.
+- [00:00:10,520 - 00:00:13,240] Please visit us at stanford.edu.
+- [00:00:13,240 - 00:00:16,710] I want to make sure we're all
+- [00:00:16,710 - 00:00:20,180] on the same page with respect to
+- [00:00:20,180 - 00:00:25,040] some very elementary mathematics, complex numbers.
+- [00:00:25,040 - 00:00:32,280] Just one important concept.
+- [00:00:32,280 - 00:00:35,540] So I just want to go
+- [00:00:35,540 - 00:00:38,800] through them very quickly, extremely quickly.
+- [00:00:38,800 - 00:00:41,640] A complex number has a real part and an
+- [00:00:41,640 - 00:00:44,480] imaginary part, and you can plot it on a two-dimensional
+- [00:00:44,480 - 00:00:45,580] surface.
+- [00:00:45,580 - 00:00:48,310] The two-dimensional surface horizontal axis represents
+- [00:00:48,310 - 00:00:51,040] the real part of the function,
+- [00:00:51,040 - 00:00:54,420] not the function, just the real part of the number.
+- [00:00:54,420 - 00:00:54,719] And the imaginary part is
+- [00:00:54,719 - 00:00:55,019] the real part of the number.
+- [00:00:55,020 - 00:00:57,190] The imaginary part of the number is plotted
+- [00:00:57,190 - 00:00:59,360] on the vertical axis, and a point on this
+- [00:00:59,360 - 00:01:03,040] plane is an imaginary number.
+- [00:01:03,040 - 00:01:09,590] If this is x and the height is y, then
+- [00:01:09,590 - 00:01:16,140] the complex number is z, which is x plus iy.
+- [00:01:16,140 - 00:01:17,960] We could also represent it another way.
+- [00:01:17,960 - 00:01:20,680] We could represent it in terms of a distance,
+- [00:01:20,680 - 00:01:23,400] which we can call r, and an angle that we
+- [00:01:23,400 - 00:01:24,400] can call theta.
+- [00:01:24,400 - 00:01:29,960] And now, just from elementary trigonometry, the distance
+- [00:01:29,960 - 00:01:35,520] x is r times the cosine of theta.
+- [00:01:35,520 - 00:01:40,460] So that's x is r cosine theta.
+- [00:01:40,460 - 00:01:45,120] And y is r times sine theta.
+- [00:01:45,120 - 00:01:48,400] So i times r sine theta.
+- [00:01:48,400 - 00:01:51,320] Or in other words, we could take the r out
+- [00:01:51,320 - 00:01:54,240] of it, factor the r out, and write that z
+- [00:01:54,240 - 00:01:54,280] is the cosine of theta.
+- [00:01:54,280 - 00:01:54,380] So that's x times r cosine theta.
+- [00:01:54,400 - 00:01:56,900] So z is equal to r
+- [00:01:56,900 - 00:01:59,400] times cosine theta plus i sine theta.
+- [00:01:59,400 - 00:02:04,280] The combination cosine theta plus i sine
+- [00:02:04,280 - 00:02:09,160] theta is called e to the i theta.
+- [00:02:09,160 - 00:02:12,180] e to the power i theta.
+- [00:02:12,180 - 00:02:15,080] So know that definition.
+- [00:02:15,080 - 00:02:19,680] e to the i theta is
+- [00:02:19,680 - 00:02:24,280] cosine theta plus i sine theta.
+- [00:02:24,280 - 00:02:27,780] The reason we call it e to the i
+- [00:02:27,780 - 00:02:31,280] theta is because it satisfies certain rules of exponentials.
+- [00:02:31,280 - 00:02:34,780] The rules of exponentials is that when
+- [00:02:34,780 - 00:02:38,280] you multiply exponentials, you add the exponents.
+- [00:02:38,280 - 00:02:41,280] e to the 3 times e to the 5
+- [00:02:41,280 - 00:02:44,280] is e to the 8. 3 and 5 is 8.
+- [00:02:44,280 - 00:02:47,280] You can check using elementary trigonometry that
+- [00:02:47,280 - 00:02:50,280] if you have two angles, theta and phi,
+- [00:02:50,280 - 00:02:54,780] and you write e to the i phi, which
+- [00:02:54,780 - 00:02:59,280] is cosine phi plus i sine phi, and multiply them,
+- [00:02:59,280 - 00:03:03,280] you get something with a real and an imaginary part.
+- [00:03:03,280 - 00:03:05,780] The real part is cosine theta cosine
+- [00:03:05,780 - 00:03:08,280] phi minus sine theta times sine phi.
+- [00:03:08,280 - 00:03:12,280] Remember, i times i is minus i, that's minus 1.
+- [00:03:12,280 - 00:03:15,780] So if you multiply these two,
+- [00:03:15,780 - 00:03:19,280] what you get is cosine theta,
+- [00:03:19,280 - 00:03:20,280] well, I'll tell you what you get.
+- [00:03:20,280 - 00:03:22,280] Let's simplify it.
+- [00:03:22,280 - 00:03:23,780] You get cosine theta cosine
+- [00:03:23,780 - 00:03:25,280] phi minus sine theta sine phi.
+- [00:03:25,280 - 00:03:26,280] Anybody know what that is?
+- [00:03:26,280 - 00:03:28,280] Cosine theta plus phi.
+- [00:03:28,280 - 00:03:31,280] Right. Cosine of theta plus phi.
+- [00:03:31,280 - 00:03:35,280] That's, sorry, that's the high school trigonometry formula.
+- [00:03:35,280 - 00:03:37,780] The cosine of the sum of two
+- [00:03:37,780 - 00:03:40,280] angles, cosine cosine minus sine times sine.
+- [00:03:40,280 - 00:03:44,780] And then, plus the imaginary part, and the imaginary part
+- [00:03:44,780 - 00:03:49,280] is cosine theta sine phi plus cosine phi times sine theta,
+- [00:03:49,280 - 00:03:53,280] and that's just sine of theta plus phi.
+- [00:03:53,280 - 00:03:55,780] And by definition, if e to the
+- [00:03:55,780 - 00:03:58,280] i theta is cosine plus i sine,
+- [00:03:58,280 - 00:04:00,780] then this is just cosine, then this is
+- [00:04:00,780 - 00:04:03,280] just e to the i theta plus phi.
+- [00:04:03,280 - 00:04:05,280] So from elementary trigonometry,
+- [00:04:05,280 - 00:04:07,280] we discover that this combination,
+- [00:04:07,280 - 00:04:11,280] cosine theta plus i sine theta, has all
+- [00:04:11,280 - 00:04:15,280] of the properties of the exponential of i theta.
+- [00:04:15,280 - 00:04:16,779] Now, all of trigonometry, anything
+- [00:04:16,779 - 00:04:18,279] you ever wanted to remember,
+- [00:04:18,279 - 00:04:21,279] about trigonometry, couldn't remember, is
+- [00:04:21,279 - 00:04:24,280] all stored in this formula.
+- [00:04:24,280 - 00:04:26,780] For example, if you couldn't remember what the
+- [00:04:26,780 - 00:04:29,280] cosine of the sum of two angles is,
+- [00:04:29,280 - 00:04:33,280] all you need to do is multiply e to the
+- [00:04:33,280 - 00:04:37,280] i theta times e to the i phi in this form,
+- [00:04:37,280 - 00:04:40,280] and you'll discover that cosine theta plus phi is
+- [00:04:40,280 - 00:04:43,280] cosine theta cosine phi minus sine theta sine phi.
+- [00:04:43,280 - 00:04:45,780] So all of trigonometry, I don't know why they
+- [00:04:45,780 - 00:04:48,280] take a year to teach trigonometry in high school,
+- [00:04:48,280 - 00:04:50,780] and then at the end of it, they come
+- [00:04:50,780 - 00:04:53,280] here to Stanford and they don't know this formula.
+- [00:05:01,280 - 00:05:02,280] Okay.
+- [00:05:05,280 - 00:05:09,280] Another fact, let's, we could check this in two ways.
+- [00:05:09,280 - 00:05:13,280] We could just use the formula for multiplying exponentials.
+- [00:05:13,280 - 00:05:15,280] e to the i theta, alright, first
+- [00:05:15,280 - 00:05:17,280] of all, there's e to the i theta,
+- [00:05:18,280 - 00:05:21,280] that's cosine theta plus i sine theta.
+- [00:05:21,280 - 00:05:24,280] Remember what the complex conjugate of a thing is.
+- [00:05:24,280 - 00:05:29,280] The complex conjugate is just the same
+- [00:05:29,280 - 00:05:34,280] number except with the imaginary part changing sign.
+- [00:05:34,280 - 00:05:37,280] So it's the reflected number in the lower half plane.
+- [00:05:37,280 - 00:05:40,780] If the number is in the upper half plane, then
+- [00:05:40,780 - 00:05:44,280] it's reflected into the lower half plane or vice versa.
+- [00:05:44,280 - 00:05:47,280] Um, the complex conjugate of e to the i theta,
+- [00:05:47,280 - 00:05:51,280] is cosine theta minus i sine theta.
+- [00:05:51,280 - 00:05:53,280] Okay.
+- [00:05:53,280 - 00:05:55,780] But that's the same thing, that's
+- [00:05:55,780 - 00:05:58,280] e to the minus i theta,
+- [00:05:58,280 - 00:06:02,280] that's the same thing as e to
+- [00:06:02,280 - 00:06:06,280] the, it's cosine theta minus i sine theta.
+- [00:06:06,280 - 00:06:09,280] And if you remember that the
+- [00:06:09,280 - 00:06:12,280] sine, that minus the sine of theta
+- [00:06:12,280 - 00:06:15,280] is the same thing as sine of minus theta,
+- [00:06:15,280 - 00:06:16,780] then you realize this is just
+- [00:06:16,780 - 00:06:18,280] e to the minus i theta.
+- [00:06:18,280 - 00:06:21,280] So the complex conjugate of e to the i theta,
+- [00:06:21,280 - 00:06:23,280] you just get by changing the
+- [00:06:23,280 - 00:06:25,280] i, the sign of the i here.
+- [00:06:25,280 - 00:06:28,280] And what happens if you multiply these two?
+- [00:06:28,280 - 00:06:32,280] You get one.
+- [00:06:32,280 - 00:06:36,280] I think that it's changing the sign of the theta because that's
+- [00:06:36,280 - 00:06:40,280] what happens when you rotate the clockwise direction instead of the counterclockwise direction.
+- [00:06:40,280 - 00:06:41,280] Right.
+- [00:06:41,280 - 00:06:43,280] True.
+- [00:06:43,280 - 00:06:44,280] This is true.
+- [00:06:44,280 - 00:06:47,280] I don't know if everybody caught that, but.
+- [00:06:47,280 - 00:06:49,780] If you multiply e to the i
+- [00:06:49,780 - 00:06:52,280] theta times e to the minus i theta,
+- [00:06:52,280 - 00:06:54,280] you get one.
+- [00:06:54,280 - 00:06:57,280] So, the class of numbers, which
+- [00:06:57,280 - 00:07:00,280] are the class of complex numbers,
+- [00:07:00,280 - 00:07:04,280] which are of the form e to the i theta,
+- [00:07:04,280 - 00:07:06,280] are numbers which have the special property
+- [00:07:06,280 - 00:07:08,280] that when they're multiplied by the complex conjugate,
+- [00:07:08,280 - 00:07:10,280] the result is one.
+- [00:07:10,280 - 00:07:12,280] And there's another way to say that.
+- [00:07:12,280 - 00:07:15,780] Now, the other way to say it is that
+- [00:07:15,780 - 00:07:19,280] x squared plus y squared is equal to one.
+- [00:07:19,280 - 00:07:20,780] The class of numbers for
+- [00:07:20,780 - 00:07:22,280] which x squared plus y squared,
+- [00:07:22,280 - 00:07:25,780] remember, a number times its complex conjugate is just the
+- [00:07:25,780 - 00:07:29,280] sums of the squares of the real and imaginary part.
+- [00:07:29,280 - 00:07:31,280] And so, the numbers which have
+- [00:07:31,280 - 00:07:33,280] the form e to the i theta,
+- [00:07:33,280 - 00:07:36,280] let's specialize to those,
+- [00:07:36,280 - 00:07:38,280] are numbers for which x squared
+- [00:07:38,280 - 00:07:40,280] plus y squared is equal to one.
+- [00:07:40,280 - 00:07:44,280] In other words, they're numbers on the unit circle,
+- [00:07:44,280 - 00:07:48,280] on the circle of radius one.
+- [00:07:48,280 - 00:07:50,280] They're simply called numbers,
+- [00:07:50,280 - 00:07:51,280] I don't know what to call them,
+- [00:07:51,280 - 00:07:52,280] unitary numbers.
+- [00:07:52,280 - 00:07:56,280] Numbers are of the form e to the i theta,
+- [00:07:56,280 - 00:07:58,280] you can call them unitary numbers,
+- [00:07:58,280 - 00:08:00,280] and they're numbers that have the property
+- [00:08:00,280 - 00:08:02,280] that they lie on the unit circle,
+- [00:08:02,280 - 00:08:04,280] and they times their complex
+- [00:08:04,280 - 00:08:06,280] conjugate is exactly equal to one.
+- [00:08:06,280 - 00:08:08,280] Every complex number,
+- [00:08:08,280 - 00:08:11,280] is a unitary number,
+- [00:08:11,280 - 00:08:13,280] times a real number,
+- [00:08:13,280 - 00:08:15,280] a real positive number,
+- [00:08:15,280 - 00:08:19,280] and the real positive number is just the radius,
+- [00:08:19,280 - 00:08:24,280] or the distance to that point on the complex plane.
+- [00:08:24,280 - 00:08:27,280] Alright, that's all we need to know,
+- [00:08:27,280 - 00:08:28,780] that's all there is to
+- [00:08:28,780 - 00:08:30,280] complex numbers, there is nothing else.
+- [00:08:30,280 - 00:08:32,280] Nothing else I can think of offhand.
+- [00:08:32,280 - 00:08:35,280] I want to make sure everybody knows.
+- [00:08:35,280 - 00:08:38,280] Ah, the other word for a number,
+- [00:08:38,280 - 00:08:41,280] which is of the form e to the i theta,
+- [00:08:41,280 - 00:08:45,280] is that it's called a pure phase.
+- [00:08:45,280 - 00:08:49,280] The angle in here is called the phase angle,
+- [00:08:49,280 - 00:08:51,280] the phase,
+- [00:08:51,280 - 00:08:54,280] and the radius is called the modulus, I guess,
+- [00:08:54,280 - 00:08:56,280] so the modulus means the size of it.
+- [00:08:56,280 - 00:08:57,280] So a number which has
+- [00:08:57,280 - 00:08:58,280] no r in front of it,
+- [00:08:58,280 - 00:09:00,280] or where r is one,
+- [00:09:00,280 - 00:09:03,280] number on the unit circle is called a pure phase,
+- [00:09:03,280 - 00:09:05,280] or just a phase.
+- [00:09:05,280 - 00:09:07,280] So when I,
+- [00:09:07,280 - 00:09:11,280] I swallowed the chocolate chip wrong.
+- [00:09:13,280 - 00:09:15,280] When I refer to a pure phase,
+- [00:09:15,280 - 00:09:19,280] that means a number cosine theta plus i sine theta.
+- [00:09:19,280 - 00:09:21,280] Okay.
+- [00:09:21,280 - 00:09:23,280] Now,
+- [00:09:23,280 - 00:09:25,280] let's see what we have.
+- [00:09:37,280 - 00:09:45,280] Alright, now, the postulates of quantum mechanics.
+- [00:09:45,280 - 00:09:47,280] We want to now, today,
+- [00:09:47,280 - 00:09:49,280] go through the basic postulates of quantum mechanics.
+- [00:09:49,280 - 00:09:51,280] Now, what quantum mechanics is,
+- [00:09:51,280 - 00:09:55,280] is it's a calculus for calculating probabilities.
+- [00:09:55,280 - 00:09:57,280] Ah,
+- [00:09:57,280 - 00:09:59,280] after a while, you get some intuition for it,
+- [00:09:59,280 - 00:10:02,280] and maybe you get some pictures of what's going on,
+- [00:10:02,280 - 00:10:04,280] but think of it as a calculus,
+- [00:10:04,280 - 00:10:07,280] in other words, a calculational procedure,
+- [00:10:07,280 - 00:10:09,280] for calculating probabilities.
+- [00:10:09,280 - 00:10:11,280] Probabilities of what?
+- [00:10:11,280 - 00:10:13,280] Probabilities for different measurements,
+- [00:10:13,280 - 00:10:15,280] different values of measurements.
+- [00:10:15,280 - 00:10:17,280] The things you measure are called observables.
+- [00:10:17,280 - 00:10:21,280] You prepare systems in certain states,
+- [00:10:21,280 - 00:10:23,280] not in California or New York,
+- [00:10:23,280 - 00:10:26,280] but in certain configurations that are called states,
+- [00:10:26,280 - 00:10:29,280] and those states are labeled by,
+- [00:10:29,280 - 00:10:31,280] or described by,
+- [00:10:31,280 - 00:10:35,280] vectors in a complex vector space.
+- [00:10:35,280 - 00:10:37,280] We've called them alpha,
+- [00:10:37,280 - 00:10:41,280] or A, I guess we call them A.
+- [00:10:41,280 - 00:10:43,280] You can add them, you can subtract them,
+- [00:10:43,280 - 00:10:45,280] you can multiply them by numbers,
+- [00:10:45,280 - 00:10:48,280] and they form a complex vector space,
+- [00:10:48,280 - 00:10:49,280] number one.
+- [00:10:49,280 - 00:10:51,280] Number two,
+- [00:10:51,280 - 00:10:54,280] we normalize them.
+- [00:10:54,280 - 00:10:57,280] In fact, in the particular simple case that we studied,
+- [00:10:57,280 - 00:10:59,280] which was the two-level system,
+- [00:10:59,280 - 00:11:02,280] we could describe this as alpha times the up state,
+- [00:11:02,280 - 00:11:05,280] for example, plus beta times the down state,
+- [00:11:05,280 - 00:11:09,280] where alpha and beta are complex numbers.
+- [00:11:09,280 - 00:11:13,280] The coefficients here
+- [00:11:13,280 - 00:11:16,280] are such that
+- [00:11:16,280 - 00:11:19,280] alpha star alpha
+- [00:11:19,280 - 00:11:21,280] and beta star beta
+- [00:11:21,280 - 00:11:24,280] are the probabilities
+- [00:11:24,280 - 00:11:27,280] that if you were to measure up or down,
+- [00:11:27,280 - 00:11:31,280] you would measure up with probability alpha star alpha,
+- [00:11:31,280 - 00:11:33,280] down with beta star beta,
+- [00:11:33,280 - 00:11:34,280] and so,
+- [00:11:35,280 - 00:11:39,280] just to make the probability altogether equal to one,
+- [00:11:39,280 - 00:11:43,280] we require that the coefficients
+- [00:11:43,280 - 00:11:46,280] are such that the sums of the squares,
+- [00:11:46,280 - 00:11:47,280] or the sums of the,
+- [00:11:47,280 - 00:11:49,280] I'll call this just the square,
+- [00:11:49,280 - 00:11:51,280] it's the square of the,
+- [00:11:51,280 - 00:11:53,280] it's just equal to one.
+- [00:11:53,280 - 00:11:56,280] Alright, there's another way to rewrite the same equation.
+- [00:11:56,280 - 00:12:00,280] It's that the inner product of a
+- [00:12:00,280 - 00:12:04,280] real state with itself is just equal to one.
+- [00:12:04,280 - 00:12:06,280] That is equal to alpha
+- [00:12:06,280 - 00:12:08,280] star alpha plus beta star beta,
+- [00:12:08,280 - 00:12:11,280] and so this is the abstract way of writing
+- [00:12:11,280 - 00:12:15,280] that the total probability adds up to one.
+- [00:12:15,280 - 00:12:19,280] So states, state vectors, are normalized,
+- [00:12:19,280 - 00:12:21,280] this is called normalized.
+- [00:12:21,280 - 00:12:24,280] Normalized means that the length of the vector,
+- [00:12:24,280 - 00:12:26,280] in some sense, is equal to one,
+- [00:12:26,280 - 00:12:29,280] and altogether, the sums of the probabilities are one.
+- [00:12:29,280 - 00:12:32,280] That's the basic postulate for states.
+- [00:12:32,280 - 00:12:37,280] This is the example of the two-dimensional space of states.
+- [00:12:37,280 - 00:12:40,280] Two-dimensional doesn't mean the world is two-dimensional,
+- [00:12:40,280 - 00:12:43,280] it just means that there are two independent possibilities,
+- [00:12:43,280 - 00:12:46,280] up and down, heads and tails.
+- [00:12:46,280 - 00:12:49,280] We discussed how you might measure
+- [00:12:49,280 - 00:12:51,280] whether a spin was up or down
+- [00:12:51,280 - 00:12:53,280] by putting it into a magnetic field
+- [00:12:53,280 - 00:12:55,280] and seeing if it emits a photon or not.
+- [00:12:55,280 - 00:13:01,280] So, given an arbitrary state of an electron,
+- [00:13:01,280 - 00:13:03,280] we can measure its spin.
+- [00:13:03,280 - 00:13:05,280] If it gives off a photon,
+- [00:13:05,280 - 00:13:07,280] then we say it's down, I guess.
+- [00:13:07,280 - 00:13:10,280] And if it doesn't give off a photon,
+- [00:13:10,280 - 00:13:12,280] then we say it's up,
+- [00:13:12,280 - 00:13:13,280] and the relative probabilities,
+- [00:13:13,280 - 00:13:15,280] or the probabilities for the two,
+- [00:13:15,280 - 00:13:17,280] are just the coefficients here.
+- [00:13:17,280 - 00:13:19,280] Now those probabilities, of course,
+- [00:13:19,280 - 00:13:21,280] do not completely determine
+- [00:13:21,280 - 00:13:23,280] the complex numbers here.
+- [00:13:23,280 - 00:13:25,280] Why not?
+- [00:13:25,280 - 00:13:29,280] Well, if I multiply any complex number
+- [00:13:29,280 - 00:13:31,280] by a pure phase,
+- [00:13:31,280 - 00:13:35,280] it doesn't change its magnitude.
+- [00:13:35,280 - 00:13:38,280] If I take a complex number
+- [00:13:38,280 - 00:13:41,280] and I multiply it by e to the i theta,
+- [00:13:41,280 - 00:13:45,280] where theta is any angle,
+- [00:13:45,280 - 00:13:47,280] I get a new number
+- [00:13:47,280 - 00:13:49,280] whose magnitude,
+- [00:13:49,280 - 00:13:51,280] whose alpha star alpha,
+- [00:13:51,280 - 00:13:55,280] is exactly the same as the original starting number.
+- [00:13:55,280 - 00:13:57,280] And so knowing the probabilities
+- [00:13:57,280 - 00:14:00,280] is not enough to completely determine
+- [00:14:00,280 - 00:14:02,280] what these coefficients are.
+- [00:14:02,280 - 00:14:05,280] So there's more information in these coefficients
+- [00:14:05,280 - 00:14:07,280] than just the probabilities.
+- [00:14:07,280 - 00:14:08,280] And we're going to find out
+- [00:14:08,280 - 00:14:11,280] what that additional information is.
+- [00:14:11,280 - 00:14:13,280] But for the moment,
+- [00:14:13,280 - 00:14:16,280] this is...
+- [00:14:16,280 - 00:14:18,280] And of course,
+- [00:14:18,280 - 00:14:20,280] if there's more than two possibilities,
+- [00:14:20,280 - 00:14:22,280] up, down, and sideways,
+- [00:14:22,280 - 00:14:26,280] or up, down, and chocolate chip,
+- [00:14:26,280 - 00:14:28,280] then we add another one,
+- [00:14:28,280 - 00:14:30,280] gamma, chocolate chip,
+- [00:14:30,280 - 00:14:32,280] and whatever.
+- [00:14:32,280 - 00:14:34,280] So those are orthonormal...
+- [00:14:34,280 - 00:14:36,280] Those are orthonormal vectors.
+- [00:14:36,280 - 00:14:38,280] And we're going to...
+- [00:14:38,280 - 00:14:40,280] Right.
+- [00:14:40,280 - 00:14:43,280] And we represented them in a particular basis.
+- [00:14:43,280 - 00:14:45,280] The basis of up and down,
+- [00:14:45,280 - 00:14:47,280] we represented them, let's just...
+- [00:14:47,280 - 00:14:52,280] We represented them as...
+- [00:14:52,280 - 00:14:57,280] Up was just one zero.
+- [00:14:57,280 - 00:15:00,280] And down is equal to zero.
+- [00:15:00,280 - 00:15:02,280] And down is equal to one.
+- [00:15:02,280 - 00:15:04,280] They're orthogonal to each other.
+- [00:15:04,280 - 00:15:07,280] They're normalized, both of them.
+- [00:15:07,280 - 00:15:08,780] The sums of the squares
+- [00:15:08,780 - 00:15:10,280] in each individual one is one.
+- [00:15:10,280 - 00:15:13,280] So they're called orthonormal vectors.
+- [00:15:13,280 - 00:15:16,280] Orthogonal and normal.
+- [00:15:16,280 - 00:15:19,280] If we have a higher dimensional vector space
+- [00:15:19,280 - 00:15:21,280] with more possibilities,
+- [00:15:21,280 - 00:15:23,280] chocolate chip,
+- [00:15:23,280 - 00:15:26,280] then we might have three vectors altogether.
+- [00:15:26,280 - 00:15:28,280] Zero, zero, zero.
+- [00:15:28,280 - 00:15:31,280] Zero, zero, one.
+- [00:15:31,280 - 00:15:34,280] They are still orthogonal and normalized.
+- [00:15:34,280 - 00:15:36,280] This zero should go here.
+- [00:15:36,280 - 00:15:39,280] So up and down are at right angles.
+- [00:15:39,280 - 00:15:43,280] Up and down in the space of states.
+- [00:15:43,280 - 00:15:47,280] Not in...
+- [00:15:47,280 - 00:15:50,280] We're going to have to remember the difference
+- [00:15:50,280 - 00:15:52,280] between these vectors,
+- [00:15:52,280 - 00:15:55,280] these abstract vectors which represent states,
+- [00:15:55,280 - 00:15:56,280] and vectors in real space,
+- [00:15:56,280 - 00:15:58,280] because that's going to come up today.
+- [00:15:58,280 - 00:16:01,280] So we're going to have to remember the difference
+- [00:16:01,280 - 00:16:03,280] between these vectors.
+- [00:16:03,280 - 00:16:06,280] And we'll label them slightly differently.
+- [00:16:06,280 - 00:16:08,280] All right, now.
+- [00:16:08,280 - 00:16:12,280] What about the quantities that you measure?
+- [00:16:12,280 - 00:16:14,280] They are called observables.
+- [00:16:14,280 - 00:16:16,280] They're the things that you measure.
+- [00:16:16,280 - 00:16:18,280] And by assumption,
+- [00:16:18,280 - 00:16:20,280] there may be more than one thing
+- [00:16:20,280 - 00:16:25,280] that you can measure about a system.
+- [00:16:25,280 - 00:16:27,280] And you can always reduce them to real numbers.
+- [00:16:27,280 - 00:16:28,280] The results of a measurement
+- [00:16:28,280 - 00:16:33,280] are always a collection of real numbers.
+- [00:16:33,280 - 00:16:36,280] You may combine them together, for example,
+- [00:16:36,280 - 00:16:38,280] into a complex number,
+- [00:16:38,280 - 00:16:40,280] but the results of real measurements,
+- [00:16:40,280 - 00:16:43,280] you know, pointers on a dial or whatever,
+- [00:16:43,280 - 00:16:46,280] are real numbers.
+- [00:16:46,280 - 00:16:49,280] And so observables
+- [00:16:49,280 - 00:16:51,280] are things which, when you measure them,
+- [00:16:51,280 - 00:16:53,280] among other things,
+- [00:16:53,280 - 00:16:56,280] you get real numbers as a result.
+- [00:16:56,280 - 00:17:00,280] They are represented by matrices or operators.
+- [00:17:00,280 - 00:17:01,280] Strictly speaking,
+- [00:17:01,280 - 00:17:04,280] they're represented by linear operators,
+- [00:17:04,280 - 00:17:06,280] which you can take to
+- [00:17:06,280 - 00:17:08,280] just being matrices for our purpose.
+- [00:17:08,280 - 00:17:10,280] But a special class of matrices,
+- [00:17:10,280 - 00:17:12,280] the Hermitian matrices.
+- [00:17:12,280 - 00:17:16,280] Hermitian, H-E-R-M-I-T-I-A-N.
+- [00:17:16,280 - 00:17:18,280] Hermitian for Hermite,
+- [00:17:18,280 - 00:17:21,280] and Hermite was a mathematician.
+- [00:17:21,280 - 00:17:23,280] Hermitian matrices.
+- [00:17:23,280 - 00:17:24,280] And to define them,
+- [00:17:24,280 - 00:17:26,280] let's first define
+- [00:17:26,280 - 00:17:29,280] a couple of concepts about matrices.
+- [00:17:29,280 - 00:17:30,280] First of all,
+- [00:17:30,280 - 00:17:33,280] there's the concept of the transpose of a matrix.
+- [00:17:33,280 - 00:17:36,280] The transpose of a matrix...
+- [00:17:43,280 - 00:17:46,280] You have diagonal elements and off-diagonal elements.
+- [00:17:46,280 - 00:17:48,280] And there's no reason why it has to be 2x2.
+- [00:17:48,280 - 00:17:50,280] Let's take it to be 3x3.
+- [00:17:50,280 - 00:17:55,280] There's M11, M22, M33.
+- [00:17:55,280 - 00:17:58,280] And then there's the off-diagonal elements.
+- [00:17:58,280 - 00:18:00,280] Let's just put one of them over here.
+- [00:18:00,280 - 00:18:03,280] Here's M12.
+- [00:18:03,280 - 00:18:05,280] And here's M21, and so forth.
+- [00:18:05,280 - 00:18:08,280] And there's other ones, other...
+- [00:18:08,280 - 00:18:10,280] They're all there.
+- [00:18:10,280 - 00:18:14,280] The transpose of a matrix is just...
+- [00:18:14,280 - 00:18:19,280] You act on the matrix to interchange rows and columns.
+- [00:18:19,280 - 00:18:23,280] All it means is you reflect it about the diagonal.
+- [00:18:23,280 - 00:18:24,280] You just imagine it's written on a piece of paper,
+- [00:18:24,280 - 00:18:27,280] and you turn over the piece of paper
+- [00:18:27,280 - 00:18:33,280] so that M12 replaces M21, and so forth.
+- [00:18:33,280 - 00:18:35,280] The way to write that,
+- [00:18:35,280 - 00:18:37,280] the transpose...
+- [00:18:37,280 - 00:18:39,280] The transpose is just written
+- [00:18:39,280 - 00:18:41,280] by putting a T up here.
+- [00:18:41,280 - 00:18:43,280] And it's just...
+- [00:18:43,280 - 00:18:46,280] The diagonal elements are unchanged.
+- [00:18:48,280 - 00:18:51,280] But the off-diagonal elements,
+- [00:18:51,280 - 00:18:53,280] M12 becomes M21,
+- [00:18:53,280 - 00:18:58,280] and M12, they just interchange.
+- [00:18:58,280 - 00:19:01,280] And likewise over here and so forth.
+- [00:19:01,280 - 00:19:05,280] Okay, that's called the transpose.
+- [00:19:05,280 - 00:19:07,280] We can write that in the form...
+- [00:19:07,280 - 00:19:10,280] The transpose matrix,
+- [00:19:10,280 - 00:19:13,280] we can call it ij, the ijth element of it,
+- [00:19:13,280 - 00:19:15,780] is just the j i
+- [00:19:15,780 - 00:19:18,280] th element of the original matrix.
+- [00:19:18,280 - 00:19:22,280] Interchange of i and j, of rows and columns.
+- [00:19:22,280 - 00:19:24,280] It's called transpose.
+- [00:19:27,280 - 00:19:31,280] The next concept is the Hermitian conjugate.
+- [00:19:31,280 - 00:19:32,280] I'll write it out.
+- [00:19:32,280 - 00:19:34,280] Hermitian conjugate.
+- [00:19:34,280 - 00:19:39,280] And it's a kind of complex conjugation.
+- [00:19:39,280 - 00:19:42,280] A complex conjugation for matrices.
+- [00:19:42,280 - 00:19:44,280] Hermitian conjugate.
+- [00:19:46,280 - 00:19:48,280] And it involves two operations.
+- [00:19:48,280 - 00:19:51,280] The first is to transpose,
+- [00:19:51,280 - 00:19:54,280] and then to complex conjugate.
+- [00:19:54,280 - 00:19:58,280] And it's represented by a dagger.
+- [00:20:06,280 - 00:20:09,280] It's represented by a dagger.
+- [00:20:09,280 - 00:20:13,280] And it's represented by first of all transposing,
+- [00:20:13,280 - 00:20:17,280] but then complex conjugating everything.
+- [00:20:17,280 - 00:20:19,280] All the elements.
+- [00:20:19,280 - 00:20:21,280] The diagonal elements,
+- [00:20:21,280 - 00:20:23,280] as well as the off-diagonal elements.
+- [00:20:23,280 - 00:20:26,280] And we write it by saying that
+- [00:20:26,280 - 00:20:29,280] the Hermitian conjugate,
+- [00:20:29,280 - 00:20:33,280] the dagger of a matrix,
+- [00:20:33,280 - 00:20:36,280] is you interchange rows and columns,
+- [00:20:36,280 - 00:20:39,280] and then you complex conjugate.
+- [00:20:42,280 - 00:20:45,280] All right, so let's do an example.
+- [00:20:45,280 - 00:20:47,280] Here's an example.
+- [00:20:47,280 - 00:20:50,280] Four plus two i,
+- [00:20:50,280 - 00:20:53,280] seven minus i,
+- [00:20:53,280 - 00:20:56,280] six plus four i,
+- [00:20:56,280 - 00:20:59,280] and nine minus two i.
+- [00:20:59,280 - 00:21:02,280] All right, what's the dagger?
+- [00:21:02,280 - 00:21:05,280] The Hermitian conjugate of that matrix?
+- [00:21:05,280 - 00:21:08,280] Well, the diagonal elements,
+- [00:21:08,280 - 00:21:10,280] they don't move when you transpose.
+- [00:21:10,280 - 00:21:13,280] Transposing a diagonal element stays in the same place,
+- [00:21:13,280 - 00:21:15,280] but we have to complex conjugate it.
+- [00:21:15,280 - 00:21:18,280] So we get four minus two i.
+- [00:21:18,280 - 00:21:20,280] Now, the element up here,
+- [00:21:20,280 - 00:21:22,280] first we have to transpose.
+- [00:21:22,280 - 00:21:24,280] What was this, four?
+- [00:21:24,280 - 00:21:26,280] Four minus two i? Yeah, okay.
+- [00:21:26,280 - 00:21:28,280] We have to transpose, which means we put,
+- [00:21:28,280 - 00:21:31,280] we interchange rows and columns,
+- [00:21:31,280 - 00:21:34,280] and then complex conjugate.
+- [00:21:34,280 - 00:21:37,280] So then we get four plus two i up here.
+- [00:21:37,280 - 00:21:41,280] We put this one complex conjugated.
+- [00:21:41,280 - 00:21:43,280] This one complex conjugated goes down here,
+- [00:21:43,280 - 00:21:45,280] six minus four i.
+- [00:21:45,280 - 00:21:50,280] And the diagonal matrix element stays where it is,
+- [00:21:50,280 - 00:21:52,280] but it gets complex conjugated,
+- [00:21:52,280 - 00:21:54,280] seven plus i.
+- [00:21:54,280 - 00:21:58,280] All right, so that's the idea of
+- [00:21:58,280 - 00:22:00,280] Hermitian conjugation.
+- [00:22:00,280 - 00:22:02,280] Flip the rows and columns,
+- [00:22:02,280 - 00:22:09,280] and then complex conjugate.
+- [00:22:09,280 - 00:22:11,280] A Hermitian matrix,
+- [00:22:11,280 - 00:22:14,280] well, first let's talk about symmetric matrices.
+- [00:22:14,280 - 00:22:16,280] Symmetric matrices,
+- [00:22:16,280 - 00:22:19,280] let's just go back to the idea of transpose,
+- [00:22:19,280 - 00:22:28,280] without the complex conjugation.
+- [00:22:28,280 - 00:22:32,280] Just the transpose.
+- [00:22:32,280 - 00:22:35,280] A symmetric matrix is one that
+- [00:22:35,280 - 00:22:38,280] is equal to its own transpose.
+- [00:22:38,280 - 00:22:40,280] In other words, when you transpose it,
+- [00:22:40,280 - 00:22:42,280] you get back the same thing.
+- [00:22:42,280 - 00:22:44,280] In order for that to be the case,
+- [00:22:44,280 - 00:22:50,280] all that you need is that the elements,
+- [00:22:50,280 - 00:22:54,280] the reflected elements are the same as each other.
+- [00:22:54,280 - 00:22:57,780] So it would say that m to one
+- [00:22:57,780 - 00:23:01,280] has to be equal to m one two.
+- [00:23:01,280 - 00:23:04,280] So put the same m to one here.
+- [00:23:04,280 - 00:23:06,280] That's the idea of a symmetric matrix,
+- [00:23:06,280 - 00:23:09,280] and it just is exactly what it says.
+- [00:23:09,280 - 00:23:12,280] It's sort of symmetric with respect to flipping it
+- [00:23:12,280 - 00:23:15,280] or to reflecting it about the main diagonal.
+- [00:23:15,280 - 00:23:18,280] A symmetric matrix satisfies
+- [00:23:18,280 - 00:23:22,280] m i j equals m j i.
+- [00:23:22,280 - 00:23:24,280] That's a symmetric matrix.
+- [00:23:24,280 - 00:23:26,280] Very simple concept.
+- [00:23:26,280 - 00:23:30,280] A Hermitian matrix is a little more complicated.
+- [00:23:30,280 - 00:23:32,280] And what it says,
+- [00:23:32,280 - 00:23:35,280] a Hermitian matrix is a matrix which
+- [00:23:35,280 - 00:23:38,280] is equal to its own Hermitian conjugate.
+- [00:23:38,280 - 00:23:40,280] So if you have a matrix,
+- [00:23:40,280 - 00:23:43,280] and you Hermitian conjugate it,
+- [00:23:43,280 - 00:23:45,280] if it is equal to the original matrix,
+- [00:23:45,280 - 00:23:47,280] it's called Hermitian.
+- [00:23:47,280 - 00:23:49,280] It's just called Hermitian.
+- [00:23:49,280 - 00:23:52,280] That's the definition of a Hermitian matrix.
+- [00:23:52,280 - 00:23:55,280] Let's write a Hermitian matrix down.
+- [00:23:55,280 - 00:24:00,280] Actually, you could write the formula for it,
+- [00:24:00,280 - 00:24:03,280] and then do the example.
+- [00:24:03,280 - 00:24:06,280] Write the formula for it, yes.
+- [00:24:06,280 - 00:24:08,280] Yes, yes.
+- [00:24:08,280 - 00:24:11,280] There's the formula for it right here.
+- [00:24:11,280 - 00:24:16,280] m i j is m i j complex conjugate.
+- [00:24:16,280 - 00:24:18,280] All right.
+- [00:24:18,280 - 00:24:21,280] Now, say it again.
+- [00:24:21,280 - 00:24:25,280] I think it's written correctly.
+- [00:24:25,280 - 00:24:28,280] m i j is m i m j i conjugate.
+- [00:24:28,280 - 00:24:32,280] It's correct.
+- [00:24:32,280 - 00:24:34,280] What it says, first of all,
+- [00:24:34,280 - 00:24:37,280] is that the diagonal elements are real.
+- [00:24:37,280 - 00:24:39,280] For example, this says,
+- [00:24:39,280 - 00:24:41,280] if you interchange i and j on a diagonal element,
+- [00:24:41,280 - 00:24:44,280] you just get the same diagonal element.
+- [00:24:44,280 - 00:24:46,780] So it says that m i 1
+- [00:24:46,780 - 00:24:49,280] is equal to m i 1 star.
+- [00:24:49,280 - 00:24:52,280] That means that m i 1 is real.
+- [00:24:52,280 - 00:24:58,280] So, real numbers on the diagonal.
+- [00:24:58,280 - 00:25:00,280] Not all is the same real number.
+- [00:25:00,280 - 00:25:03,280] I mean, I just wrote real, real, real, real,
+- [00:25:03,280 - 00:25:06,280] meaning any real number in any one of these places.
+- [00:25:06,280 - 00:25:09,280] And then on the off-diagonal elements over here,
+- [00:25:09,280 - 00:25:13,280] let's suppose that this off-diagonal element over here is z,
+- [00:25:13,280 - 00:25:16,280] the complex number z,
+- [00:25:16,280 - 00:25:19,280] then the reflected off-diagonal element
+- [00:25:19,280 - 00:25:21,280] has to be the complex conjugate.
+- [00:25:21,280 - 00:25:23,280] Then it's called Hermitian.
+- [00:25:23,280 - 00:25:25,280] So,
+- [00:25:25,280 - 00:25:29,780] 2, 7, 1 plus i
+- [00:25:29,780 - 00:25:34,280] and 1 minus i is Hermitian.
+- [00:25:34,280 - 00:25:35,280] Real elements on the diagonal,
+- [00:25:35,280 - 00:25:42,280] and complex conjugates when you reflect.
+- [00:25:42,280 - 00:25:45,280] This is a kind of reality property.
+- [00:25:45,280 - 00:25:48,280] A thing being its own complex conjugate for a number
+- [00:25:48,280 - 00:25:50,280] says that it's real.
+- [00:25:50,280 - 00:25:53,280] For a matrix, the concept of reality
+- [00:25:53,280 - 00:25:56,280] is not that the matrix elements are all real,
+- [00:25:56,280 - 00:25:58,780] not that each matrix element
+- [00:25:58,780 - 00:26:01,280] separately is its own complex conjugate,
+- [00:26:01,280 - 00:26:04,280] but each matrix element is the complex conjugate
+- [00:26:04,280 - 00:26:07,280] of the reflected matrix element.
+- [00:26:07,280 - 00:26:08,280] We'll find out.
+- [00:26:08,280 - 00:26:09,780] We're going to see very shortly
+- [00:26:09,780 - 00:26:11,280] why this is a good definition.
+- [00:26:16,280 - 00:26:18,280] Okay, I'm going to write down some theorems.
+- [00:26:18,280 - 00:26:20,280] These are your homework to prove.
+- [00:26:20,280 - 00:26:22,280] They're very, very simple.
+- [00:26:22,280 - 00:26:26,280] But just,
+- [00:26:26,280 - 00:26:29,280] they don't have names because they're too simple.
+- [00:26:31,280 - 00:26:33,280] Very elementary theorems.
+- [00:26:34,280 - 00:26:36,280] First of all, if you take two vectors,
+- [00:26:36,280 - 00:26:37,280] A and B,
+- [00:26:37,280 - 00:26:43,280] and you take the inner product of A with B,
+- [00:26:43,280 - 00:26:47,280] now remember, when you form the row vector B,
+- [00:26:47,280 - 00:26:50,280] you use the complex conjugate elements.
+- [00:26:50,280 - 00:26:53,780] This is equal to B star,
+- [00:26:53,780 - 00:26:57,280] B star 1, B star 2,
+- [00:26:57,280 - 00:27:01,280] complex conjugate times A1, A2.
+- [00:27:01,280 - 00:27:04,280] The first theorem is that if you integrate,
+- [00:27:04,280 - 00:27:07,280] if you interchange A and B,
+- [00:27:07,280 - 00:27:11,280] that will put the A's here and the B's here.
+- [00:27:11,280 - 00:27:13,280] What do you get?
+- [00:27:15,280 - 00:27:17,280] Is this correct?
+- [00:27:17,280 - 00:27:19,280] No.
+- [00:27:21,280 - 00:27:23,280] Complex conjugate.
+- [00:27:25,280 - 00:27:26,280] The way to think of
+- [00:27:26,280 - 00:27:27,280] it is that the row vector
+- [00:27:27,280 - 00:27:30,280] is like the complex conjugate of a certain column vector,
+- [00:27:30,280 - 00:27:32,280] and if you interchange,
+- [00:27:32,280 - 00:27:33,280] if you interchange,
+- [00:27:34,280 - 00:27:36,280] the order of these,
+- [00:27:36,280 - 00:27:38,280] you're taking the complex conjugate of B
+- [00:27:38,280 - 00:27:40,280] and the complex conjugate of A,
+- [00:27:40,280 - 00:27:42,280] and if you multiply complex conjugates,
+- [00:27:42,280 - 00:27:44,280] it's just complex conjugates.
+- [00:27:44,280 - 00:27:47,280] So the first elementary theorem to check
+- [00:27:47,280 - 00:27:49,280] is that the inner product of B with A
+- [00:27:49,280 - 00:27:51,780] is the complex conjugate of the
+- [00:27:51,780 - 00:27:54,280] inner product of A with B.
+- [00:27:54,280 - 00:27:57,280] Now, that's,
+- [00:27:57,280 - 00:27:59,280] it's extremely elementary.
+- [00:27:59,280 - 00:28:00,780] Anybody who's seen it, of
+- [00:28:00,780 - 00:28:02,280] course, is very familiar with it.
+- [00:28:02,280 - 00:28:03,280] Next statement.
+- [00:28:04,280 - 00:28:06,280] Now, this one is less obvious.
+- [00:28:06,280 - 00:28:08,280] Take any matrix,
+- [00:28:08,280 - 00:28:10,280] her mission or not her mission,
+- [00:28:10,280 - 00:28:12,280] and I'll,
+- [00:28:12,280 - 00:28:14,280] and,
+- [00:28:18,280 - 00:28:20,280] all right, now this is an
+- [00:28:20,280 - 00:28:22,280] operation that I haven't defined yet,
+- [00:28:22,280 - 00:28:24,280] but I'm going to define it for you right now.
+- [00:28:24,280 - 00:28:26,280] It's very simple.
+- [00:28:26,280 - 00:28:28,280] You have a matrix M,
+- [00:28:28,280 - 00:28:30,280] and you multiply it by A.
+- [00:28:30,280 - 00:28:32,280] That gives you a new vector.
+- [00:28:32,280 - 00:28:35,280] And you take that new vector,
+- [00:28:35,280 - 00:28:38,280] and you take the inner product with B.
+- [00:28:38,280 - 00:28:40,280] You can work out what this is
+- [00:28:40,280 - 00:28:43,280] in terms of the matrix elements of M
+- [00:28:43,280 - 00:28:45,280] and the entries that go into A and B.
+- [00:28:45,280 - 00:28:47,280] It's a very definite expression.
+- [00:28:47,280 - 00:28:50,280] First, multiply the matrix by A,
+- [00:28:50,280 - 00:28:53,280] or multiply A by the matrix.
+- [00:28:53,280 - 00:28:55,280] You'll be left over with a new vector
+- [00:28:55,280 - 00:28:57,280] that you can call A prime,
+- [00:28:57,280 - 00:29:00,280] and you take its inner product with B.
+- [00:29:00,280 - 00:29:01,280] All right.
+- [00:29:01,280 - 00:29:04,280] This is related to, but not equal to,
+- [00:29:04,280 - 00:29:06,280] I'm going to write equal,
+- [00:29:06,280 - 00:29:08,280] but then we're going to change it.
+- [00:29:08,280 - 00:29:10,280] Interchange everything.
+- [00:29:10,280 - 00:29:12,280] A, put A on the left.
+- [00:29:12,280 - 00:29:15,280] That's kind of the complex conjugate of A.
+- [00:29:15,280 - 00:29:18,280] Put B on the right,
+- [00:29:18,280 - 00:29:22,280] and put the her mission conjugate of M.
+- [00:29:22,280 - 00:29:25,280] Everybody has been complex conjugated,
+- [00:29:25,280 - 00:29:28,280] and all rows and columns have been interchanged.
+- [00:29:28,280 - 00:29:30,280] When you interchange A and B,
+- [00:29:30,280 - 00:29:33,280] you're interchanging a column vector with a row vector,
+- [00:29:33,280 - 00:29:35,280] and you're complex conjugating.
+- [00:29:35,280 - 00:29:37,280] The same for M.
+- [00:29:37,280 - 00:29:39,280] When you take its her mission conjugate,
+- [00:29:39,280 - 00:29:41,280] you interchange rows and columns,
+- [00:29:41,280 - 00:29:45,280] and you complex conjugate.
+- [00:29:45,280 - 00:29:48,280] This is a number, incidentally.
+- [00:29:48,280 - 00:29:50,280] This quantity is a number,
+- [00:29:50,280 - 00:29:52,280] a complex number in general.
+- [00:29:52,280 - 00:29:55,280] M on A gives you a vector.
+- [00:29:55,280 - 00:29:57,280] The inner product of a vector with another vector
+- [00:29:57,280 - 00:29:59,280] is a number.
+- [00:29:59,280 - 00:30:01,280] A simple number.
+- [00:30:01,280 - 00:30:02,280] It's not a matrix.
+- [00:30:02,280 - 00:30:03,280] It's not a vector.
+- [00:30:03,280 - 00:30:05,280] It's just a number.
+- [00:30:05,280 - 00:30:07,280] This equation is not right.
+- [00:30:07,280 - 00:30:10,280] What do I have to do to it?
+- [00:30:10,280 - 00:30:12,280] Complex conjugate it.
+- [00:30:12,280 - 00:30:14,280] I've complex conjugated A.
+- [00:30:14,280 - 00:30:15,280] I've complex conjugated B.
+- [00:30:15,280 - 00:30:17,280] And I've complex conjugated M.
+- [00:30:17,280 - 00:30:19,280] So I have to take the whole thing
+- [00:30:19,280 - 00:30:21,280] and complex conjugate it.
+- [00:30:21,280 - 00:30:26,280] Okay?
+- [00:30:26,280 - 00:30:28,280] So that's a, um,
+- [00:30:29,280 - 00:30:33,280] a simple fact about,
+- [00:30:33,280 - 00:30:36,280] about, um,
+- [00:30:36,280 - 00:30:40,280] complex conjugation of matrices and vectors.
+- [00:30:40,280 - 00:30:44,280] But let's suppose that our matrix is her mission.
+- [00:30:44,280 - 00:30:48,280] Let's suppose that the matrix in question is her mission.
+- [00:30:48,280 - 00:30:50,280] If it is her mission, I can erase,
+- [00:30:50,280 - 00:30:52,280] I can erase this, uh,
+- [00:30:52,280 - 00:30:54,280] conjugation sign here.
+- [00:30:54,280 - 00:30:56,280] If it's her mission, it's equal
+- [00:30:56,280 - 00:30:58,280] to its own her mission conjugate.
+- [00:30:58,280 - 00:31:00,280] Definition of her mission.
+- [00:31:00,280 - 00:31:02,280] So for a her mission matrix,
+- [00:31:02,280 - 00:31:04,280] and from now on,
+- [00:31:04,280 - 00:31:06,280] let's think about her mission matrices.
+- [00:31:06,280 - 00:31:08,280] For her mission matrices,
+- [00:31:14,280 - 00:31:16,280] for her mission matrices,
+- [00:31:18,280 - 00:31:20,280] the, this is called a matrix element.
+- [00:31:20,280 - 00:31:23,280] This is called the B-A matrix element of M.
+- [00:31:23,280 - 00:31:25,280] The B-A matrix element of M
+- [00:31:25,280 - 00:31:27,280] is the same as the A-B matrix element.
+- [00:31:28,280 - 00:31:31,280] The matrix element of M, complex conjugated.
+- [00:31:31,280 - 00:31:34,280] Okay?
+- [00:31:34,280 - 00:31:36,280] Now, one last thing that
+- [00:31:36,280 - 00:31:38,280] will make the point for you.
+- [00:31:38,280 - 00:31:42,280] If A and B happen to be the same vector,
+- [00:31:42,280 - 00:31:45,280] if A and B happen to be the same vector,
+- [00:31:45,280 - 00:31:48,280] so now let's let B equal A.
+- [00:31:52,280 - 00:31:54,280] Let B equal A.
+- [00:31:54,280 - 00:31:58,280] Let B equal A.
+- [00:31:58,280 - 00:32:00,280] Look what this says.
+- [00:32:00,280 - 00:32:05,280] It says that the matrix element of M,
+- [00:32:05,280 - 00:32:07,280] evaluated between,
+- [00:32:07,280 - 00:32:11,280] sandwiched between two states which are the same,
+- [00:32:11,280 - 00:32:14,280] the same state A on both sides,
+- [00:32:14,280 - 00:32:18,280] is equal to its own complex conjugate.
+- [00:32:18,280 - 00:32:21,280] What does that say about AMA?
+- [00:32:21,280 - 00:32:22,280] That it's real.
+- [00:32:22,280 - 00:32:23,280] That it's real.
+- [00:32:23,280 - 00:32:26,280] So if you have a her mission matrix,
+- [00:32:27,280 - 00:32:28,280] this was the theorem that I
+- [00:32:28,280 - 00:32:29,280] was going to ask you to prove,
+- [00:32:29,280 - 00:32:30,280] but I just proved it.
+- [00:32:34,280 - 00:32:37,280] If you have a her mission matrix,
+- [00:32:39,280 - 00:32:40,280] then,
+- [00:32:41,280 - 00:32:43,280] we should give this object a name.
+- [00:32:44,280 - 00:32:46,280] It's called the expectation value.
+- [00:32:47,280 - 00:32:49,280] Why it's the expectation value will become,
+- [00:32:49,280 - 00:32:50,280] or what that has,
+- [00:32:50,280 - 00:32:52,280] what it has to do with anybody's expectations,
+- [00:32:53,280 - 00:32:54,280] is something else.
+- [00:32:54,280 - 00:32:55,280] It just has a name.
+- [00:32:55,280 - 00:33:00,280] It's the expectation value of M in the state A.
+- [00:33:00,280 - 00:33:03,280] Now remember, just keep in mind,
+- [00:33:03,280 - 00:33:05,780] the way we're going to
+- [00:33:05,780 - 00:33:08,280] be describing states is through vectors.
+- [00:33:08,280 - 00:33:12,280] The way we describe observables is through matrices.
+- [00:33:12,280 - 00:33:14,780] So you can think of this
+- [00:33:14,780 - 00:33:17,280] basically as the average value of M,
+- [00:33:17,280 - 00:33:21,280] when the state of the system is A.
+- [00:33:21,280 - 00:33:22,280] I have a question.
+- [00:33:22,280 - 00:33:23,280] Yeah.
+- [00:33:23,280 - 00:33:25,280] The bracket notation for average,
+- [00:33:25,280 - 00:33:28,280] does it come from bracket notation?
+- [00:33:28,280 - 00:33:29,280] Yeah.
+- [00:33:29,280 - 00:33:30,280] Sure.
+- [00:33:30,280 - 00:33:31,280] Of course.
+- [00:33:31,280 - 00:33:32,280] It comes from Dirac.
+- [00:33:32,280 - 00:33:33,280] Yeah.
+- [00:33:34,280 - 00:33:35,280] All right.
+- [00:33:35,280 - 00:33:36,280] So what do we learn?
+- [00:33:36,280 - 00:33:39,280] We learn that if we have a her mission matrix,
+- [00:33:39,280 - 00:33:42,280] its expectation value is real.
+- [00:33:43,280 - 00:33:44,280] Well,
+- [00:33:44,280 - 00:33:47,280] we haven't gone through the details yet,
+- [00:33:47,280 - 00:33:49,280] but that sounds like a good thing.
+- [00:33:49,280 - 00:33:51,280] If we have an observable,
+- [00:33:51,280 - 00:33:53,280] which is represented in which when you measure it,
+- [00:33:53,280 - 00:33:55,280] always gives you a real number,
+- [00:33:55,280 - 00:33:58,280] then obviously its average value should be real.
+- [00:33:58,280 - 00:34:00,280] And that's what we find,
+- [00:34:00,280 - 00:34:02,280] that for a her mission matrix,
+- [00:34:02,280 - 00:34:06,280] its expectation value in a given state is real.
+- [00:34:06,280 - 00:34:09,279] That's what makes the her mission matrices special,
+- [00:34:09,279 - 00:34:14,279] and what makes the her mission matrices natural candidates
+- [00:34:14,279 - 00:34:17,279] to have something to do with observable quantities,
+- [00:34:17,279 - 00:34:20,279] because their expectation value is real.
+- [00:34:20,280 - 00:34:23,280] Their expectation values in any state,
+- [00:34:23,280 - 00:34:24,280] doesn't have to,
+- [00:34:24,280 - 00:34:26,280] there are many, many states,
+- [00:34:26,280 - 00:34:28,280] any one of them will satisfy this.
+- [00:34:28,280 - 00:34:29,280] Okay.
+- [00:34:29,280 - 00:34:31,280] Any questions up till now?
+- [00:34:31,280 - 00:34:34,280] Is there any physical value
+- [00:34:34,280 - 00:34:37,280] in classical or QM where you,
+- [00:34:37,280 - 00:34:38,280] I mean,
+- [00:34:38,280 - 00:34:39,780] I think of units of time
+- [00:34:39,780 - 00:34:41,280] length and mass and so forth,
+- [00:34:41,280 - 00:34:43,280] where you have an imaginary value,
+- [00:34:43,280 - 00:34:45,280] like that when you use,
+- [00:34:45,280 - 00:34:49,280] Anything that you really measure is always a number.
+- [00:34:49,280 - 00:34:50,280] Right.
+- [00:34:50,280 - 00:34:53,280] Now, you can decide to say,
+- [00:34:53,280 - 00:34:55,280] I will describe points,
+- [00:34:55,280 - 00:34:59,280] locations of particles on the surface of the earth
+- [00:34:59,280 - 00:35:01,280] by giving a complex number.
+- [00:35:01,280 - 00:35:03,280] I'll give you an address in Manhattan,
+- [00:35:03,280 - 00:35:04,280] by giving you a,
+- [00:35:04,280 - 00:35:05,280] you know,
+- [00:35:05,280 - 00:35:06,280] Manhattan is laid out on a grid,
+- [00:35:06,280 - 00:35:08,280] I'll give you a complex number.
+- [00:35:08,280 - 00:35:10,280] But,
+- [00:35:10,280 - 00:35:11,280] You don't have to do that.
+- [00:35:11,280 - 00:35:12,280] You don't have to do that,
+- [00:35:12,280 - 00:35:15,280] you can represent any observable quantity
+- [00:35:15,280 - 00:35:18,280] as a collection of real numbers.
+- [00:35:18,280 - 00:35:19,280] You can always.
+- [00:35:19,280 - 00:35:21,280] You can always represent the results
+- [00:35:21,280 - 00:35:23,280] of a series of an experiment
+- [00:35:23,280 - 00:35:25,280] by a series of real numbers.
+- [00:35:25,280 - 00:35:26,280] Right.
+- [00:35:26,280 - 00:35:28,280] And those real numbers are called observables.
+- [00:35:28,280 - 00:35:30,280] When they're complex,
+- [00:35:30,280 - 00:35:33,280] when you add them together in complex combinations,
+- [00:35:33,280 - 00:35:35,280] just because of the technical historical definition,
+- [00:35:35,280 - 00:35:37,280] we don't call it an observable.
+- [00:35:37,280 - 00:35:42,280] The observables are the collection of real numbers.
+- [00:35:42,280 - 00:35:43,280] Yeah.
+- [00:35:43,280 - 00:35:44,280] To the same question,
+- [00:35:44,280 - 00:35:48,280] what's a good way to think about measuring numbers
+- [00:35:48,280 - 00:35:51,280] when they show up in physical formulas?
+- [00:35:51,280 - 00:35:54,280] Like, is it like these things exist,
+- [00:35:54,280 - 00:35:56,280] but they're not observable?
+- [00:35:56,280 - 00:35:58,280] But then, how do we know that they exist
+- [00:35:58,280 - 00:36:01,280] if they're not observable, sort of?
+- [00:36:01,280 - 00:36:05,280] Uh, I think there's a better,
+- [00:36:05,280 - 00:36:11,280] I think the question that you really want to ask
+- [00:36:11,280 - 00:36:13,280] is why do we get,
+- [00:36:13,280 - 00:36:14,780] why do we have to
+- [00:36:14,780 - 00:36:16,280] use complex numbers in quantum mechanics?
+- [00:36:16,280 - 00:36:18,280] That's, I think, what you really want to ask.
+- [00:36:18,280 - 00:36:21,280] Why is it that we're driven to complex numbers?
+- [00:36:21,280 - 00:36:23,280] This will become clear,
+- [00:36:23,280 - 00:36:28,280] but it has to do with time and reversibility.
+- [00:36:28,280 - 00:36:30,280] And we're not there yet.
+- [00:36:30,280 - 00:36:32,280] We're not ready for it.
+- [00:36:32,280 - 00:36:34,280] We could have thought about doing quantum mechanics
+- [00:36:34,280 - 00:36:36,280] with all real numbers
+- [00:36:36,280 - 00:36:38,280] and never having gotten complex numbers.
+- [00:36:38,280 - 00:36:40,280] We'd miss some very important things,
+- [00:36:40,280 - 00:36:43,280] as you will see, as you will find out.
+- [00:36:43,280 - 00:36:47,280] But, uh, but let's write down the postulates,
+- [00:36:47,280 - 00:36:49,280] examine their consequences,
+- [00:36:49,280 - 00:36:51,280] and then I will tell you what would go wrong
+- [00:36:51,280 - 00:36:54,280] if you restricted yourself to real numbers.
+- [00:36:54,280 - 00:36:55,280] All right?
+- [00:36:55,280 - 00:36:58,280] It would have to do, in particular,
+- [00:36:58,280 - 00:37:02,280] um, with the evolution of state vectors.
+- [00:37:02,280 - 00:37:04,280] What we have not talked about at all
+- [00:37:04,280 - 00:37:06,280] is how things change with time.
+- [00:37:06,280 - 00:37:08,280] And it really has to do
+- [00:37:08,280 - 00:37:10,280] with how things change with time,
+- [00:37:10,280 - 00:37:12,280] that, uh, where that I comes from.
+- [00:37:12,280 - 00:37:14,280] So, hold on.
+- [00:37:14,280 - 00:37:15,280] Hold on to the question,
+- [00:37:15,280 - 00:37:17,280] and, uh, and it'll come up.
+- [00:37:17,280 - 00:37:19,280] It'll come back again.
+- [00:37:19,280 - 00:37:21,280] I realize it's a different question than you asked,
+- [00:37:21,280 - 00:37:24,280] but, uh, but, uh, I think it's the right question.
+- [00:37:24,280 - 00:37:26,280] Why, what complex numbers are,
+- [00:37:26,280 - 00:37:28,280] is it just a mathematical formalism
+- [00:37:28,280 - 00:37:31,280] for describing pairs of real numbers in certain ways?
+- [00:37:31,280 - 00:37:32,280] Okay?
+- [00:37:32,280 - 00:37:34,280] What, uh, why are we driven
+- [00:37:34,280 - 00:37:36,280] to use them in quantum mechanics?
+- [00:37:36,280 - 00:37:38,280] It has to do with time evolution.
+- [00:37:38,280 - 00:37:40,280] So we'll come to it.
+- [00:37:40,280 - 00:37:42,280] Um...
+- [00:37:42,280 - 00:37:44,280] Good.
+- [00:37:44,280 - 00:37:46,280] All right.
+- [00:37:46,280 - 00:37:48,280] We're still doing mathematics.
+- [00:37:48,280 - 00:37:52,280] We cannot do this subject without mathematics.
+- [00:37:57,280 - 00:37:59,280] I mean, I can fake it.
+- [00:37:59,280 - 00:38:01,280] I can tell you lots of stuff about quantum mechanics
+- [00:38:01,280 - 00:38:03,280] and give you all sorts of mystical experiences
+- [00:38:03,280 - 00:38:05,280] about entanglement and, uh,
+- [00:38:05,280 - 00:38:07,280] and, uh, when you walk out of here,
+- [00:38:07,280 - 00:38:09,280] you will know no more about entanglement
+- [00:38:09,280 - 00:38:11,280] than you knew when you walked in,
+- [00:38:11,280 - 00:38:13,280] but you'll have this fuzzy, uh, feeling about it,
+- [00:38:13,280 - 00:38:15,280] and you'll say, ooh, isn't it wonderful,
+- [00:38:15,280 - 00:38:16,280] and you'll be curious,
+- [00:38:16,280 - 00:38:18,280] but you won't have any idea what it is.
+- [00:38:18,280 - 00:38:20,280] So, uh, so if we want to really do it,
+- [00:38:20,280 - 00:38:23,280] honestly, we are forced to do this mathematics.
+- [00:38:23,280 - 00:38:25,280] It's like, oh, wow, look at the moon.
+- [00:38:25,280 - 00:38:27,280] Right.
+- [00:38:27,280 - 00:38:29,280] Right, we want to do better than that.
+- [00:38:29,280 - 00:38:31,280] We want to really do it right.
+- [00:38:31,280 - 00:38:34,280] In the simple, in the simplest possible context,
+- [00:38:34,280 - 00:38:37,280] I mean, I'm giving you the simplest possible context
+- [00:38:37,280 - 00:38:39,280] to discuss quantum mechanics,
+- [00:38:39,280 - 00:38:41,280] basically the two-level system,
+- [00:38:41,280 - 00:38:43,280] and then we'll do two two-level systems,
+- [00:38:43,280 - 00:38:44,780] and we'll talk about the
+- [00:38:44,780 - 00:38:46,280] entanglement of two two-level systems,
+- [00:38:46,280 - 00:38:48,280] and we'll understand it in some detail,
+- [00:38:48,280 - 00:38:53,280] and, uh, and you'll know what the words really mean.
+- [00:38:53,280 - 00:38:55,280] All right, the next concept,
+- [00:38:55,280 - 00:38:57,280] and it's basically the last mathematical concept
+- [00:38:57,280 - 00:38:59,280] that we'll need for today,
+- [00:38:59,280 - 00:39:02,280] and possibly for quite a while,
+- [00:39:02,280 - 00:39:06,280] is the concept of eigenvalues and eigenvectors,
+- [00:39:06,280 - 00:39:08,280] particularly eigenvalues and eigenvectors
+- [00:39:08,280 - 00:39:11,280] of Hermitian operators.
+- [00:39:11,280 - 00:39:13,280] So, what is an eigenvalue?
+- [00:39:13,280 - 00:39:16,280] What is an eigenvalue and an eigenvector?
+- [00:39:16,280 - 00:39:19,280] Well, if I give you a matrix or an operator,
+- [00:39:19,280 - 00:39:24,280] a matrix or an operator, M,
+- [00:39:24,280 - 00:39:26,280] if it's a, in general,
+- [00:39:26,280 - 00:39:30,280] there may or may not be certain vectors
+- [00:39:30,280 - 00:39:33,280] that when I apply the matrix to them
+- [00:39:33,280 - 00:39:36,280] don't change the vector except
+- [00:39:36,280 - 00:39:39,280] to multiply it by a number.
+- [00:39:39,280 - 00:39:42,280] In other words, there may or may not be,
+- [00:39:42,280 - 00:39:45,280] and typically there will be,
+- [00:39:45,280 - 00:39:47,280] and in fact in the case of Hermitian matrices
+- [00:39:47,280 - 00:39:49,280] there always are,
+- [00:39:49,280 - 00:39:52,280] certain vectors, we take a matrix,
+- [00:39:52,280 - 00:39:56,280] there will exist certain vectors
+- [00:39:56,280 - 00:39:59,280] which have the property, not every vector,
+- [00:39:59,280 - 00:40:02,280] there will exist certain vectors
+- [00:40:02,280 - 00:40:04,280] that are associated with that matrix,
+- [00:40:04,280 - 00:40:07,280] which are called its eigenvectors,
+- [00:40:07,280 - 00:40:10,280] which have the property
+- [00:40:10,280 - 00:40:14,280] that you just multiply by a number.
+- [00:40:14,280 - 00:40:18,280] The number depends on the vector.
+- [00:40:18,280 - 00:40:20,780] I will give you a
+- [00:40:20,780 - 00:40:23,280] very, very simple example right now.
+- [00:40:23,280 - 00:40:29,280] Supposing we have a diagonal matrix.
+- [00:40:29,280 - 00:40:32,280] In general, it will be called an eigenvalue
+- [00:40:32,280 - 00:40:34,280] and an eigenvector even if it's complex.
+- [00:40:34,280 - 00:40:38,280] But, if M is a Hermitian matrix,
+- [00:40:38,280 - 00:40:40,280] then it follows that lambda is a vector,
+- [00:40:40,280 - 00:40:42,280] and lambda is real.
+- [00:40:42,280 - 00:40:43,280] Let's prove that.
+- [00:40:43,280 - 00:40:45,280] Let's suppose we have a Hermitian matrix.
+- [00:40:45,280 - 00:40:49,280] We have found an eigenvector and an eigenvalue.
+- [00:40:49,280 - 00:40:51,280] Let's see what we learn
+- [00:40:51,280 - 00:40:54,280] by taking the inner product of this equation
+- [00:40:54,280 - 00:40:57,280] with A itself.
+- [00:40:57,280 - 00:41:01,280] We have M, A, A.
+- [00:41:01,280 - 00:41:05,280] I'm multiplying the equation on the left by A.
+- [00:41:05,280 - 00:41:09,280] Lambda is a number, it just comes on the outside.
+- [00:41:10,280 - 00:41:12,280] It's a vector, it's a vector.
+- [00:41:12,280 - 00:41:14,280] It's a vector of A.
+- [00:41:14,280 - 00:41:16,280] Now, if you go back in your notes
+- [00:41:16,280 - 00:41:18,280] about five and a half minutes,
+- [00:41:18,280 - 00:41:20,280] you'll remember that we proved
+- [00:41:20,280 - 00:41:22,280] that for any Hermitian matrix,
+- [00:41:22,280 - 00:41:25,280] A, M, A, its expectation value is real.
+- [00:41:25,280 - 00:41:27,280] We also proved that the inner
+- [00:41:27,280 - 00:41:29,280] product of A with itself is real.
+- [00:41:29,280 - 00:41:32,280] So we have an equation that a real number
+- [00:41:32,280 - 00:41:36,280] is equal to a real number times an eigenvalue.
+- [00:41:36,280 - 00:41:39,280] Well, that means that the eigenvalue is real.
+- [00:41:39,280 - 00:41:40,780] The only other way to write it
+- [00:41:40,780 - 00:41:42,280] is to divide it by A, A,
+- [00:41:42,280 - 00:41:48,280] and the ratio of two real numbers is certainly real.
+- [00:41:48,280 - 00:41:50,280] So, the first statement is
+- [00:41:50,280 - 00:41:54,280] if we manage to succeed and find
+- [00:41:54,280 - 00:41:59,280] a eigenvector and an eigenvalue
+- [00:41:59,280 - 00:42:02,280] of a Hermitian matrix,
+- [00:42:02,280 - 00:42:06,280] the eigenvalue will be real.
+- [00:42:06,280 - 00:42:08,280] Now I'm going to tell you the secret.
+- [00:42:08,280 - 00:42:13,280] The secret is that if M is an observable,
+- [00:42:13,280 - 00:42:16,280] then the values of it that you can measure
+- [00:42:16,280 - 00:42:20,280] when you do an experiment are its eigenvalues.
+- [00:42:20,280 - 00:42:24,280] That means the result of an experiment to measure M
+- [00:42:24,280 - 00:42:28,280] will be one of the eigenvalues of the matrix M.
+- [00:42:28,280 - 00:42:30,280] That's the significance of eigenvalues.
+- [00:42:30,280 - 00:42:33,280] They're the possible measurable values
+- [00:42:33,280 - 00:42:37,280] of the observable that's represented by M.
+- [00:42:38,280 - 00:42:41,280] Let me give you some examples.
+- [00:42:41,280 - 00:42:46,280] Oh, yes.
+- [00:42:46,280 - 00:42:49,280] The lambdas, the eigenvalues,
+- [00:42:49,280 - 00:42:52,280] are the values that you measure.
+- [00:42:52,280 - 00:42:55,280] The eigenvector that's associated
+- [00:42:55,280 - 00:42:58,280] with that particular eigenvalue,
+- [00:42:58,280 - 00:43:01,280] that eigenvector represents a state
+- [00:43:01,280 - 00:43:04,280] where when you measure the quantity M
+- [00:43:04,280 - 00:43:08,280] with certainty, you get value lambda.
+- [00:43:08,280 - 00:43:12,280] So the eigenvalues and the eigenvectors go together.
+- [00:43:12,280 - 00:43:15,280] There are certain states for any given observable,
+- [00:43:15,280 - 00:43:20,280] there are certain states and certain states
+- [00:43:20,280 - 00:43:23,280] which when you measure that particular observable,
+- [00:43:23,280 - 00:43:26,280] you will, with probability one,
+- [00:43:26,280 - 00:43:28,280] get a particular answer,
+- [00:43:28,280 - 00:43:30,280] and that answer is the eigenvalue.
+- [00:43:30,280 - 00:43:33,280] So let's just do an example or two.
+- [00:43:33,280 - 00:43:37,280] And the easiest examples,
+- [00:43:37,280 - 00:43:39,280] the most easiest examples,
+- [00:43:39,280 - 00:43:42,280] involve diagonal matrices.
+- [00:43:42,280 - 00:43:45,280] Here's a diagonal matrix.
+- [00:43:45,280 - 00:43:47,280] Let's just give it some letters.
+- [00:43:47,280 - 00:43:49,780] M11, 0, just 2 by
+- [00:43:49,780 - 00:43:52,280] 2 is good enough for us.
+- [00:43:52,280 - 00:43:56,280] M22, there's a diagonal matrix.
+- [00:43:56,280 - 00:43:59,280] What are its eigenvectors?
+- [00:43:59,280 - 00:44:02,280] Remember, they're vectors which when you multiply them
+- [00:44:02,280 - 00:44:05,280] by the matrix, you just get the original vector back
+- [00:44:05,280 - 00:44:07,280] times a number.
+- [00:44:07,280 - 00:44:09,280] OK?
+- [00:44:09,280 - 00:44:11,280] I'll just tell you the answer.
+- [00:44:11,280 - 00:44:14,280] There are two eigenvectors of this matrix.
+- [00:44:14,280 - 00:44:15,780] One of them has a
+- [00:44:15,780 - 00:44:17,280] 1 in the upper place here.
+- [00:44:17,280 - 00:44:18,280] Let's check.
+- [00:44:18,280 - 00:44:20,280] What does this matrix do
+- [00:44:20,280 - 00:44:22,280] when it multiplies this vector?
+- [00:44:22,280 - 00:44:25,280] Well, we take the row, multiply it by the column.
+- [00:44:25,280 - 00:44:29,280] That puts in the upper place here M11.
+- [00:44:29,280 - 00:44:32,280] But how about the lower place?
+- [00:44:32,280 - 00:44:36,280] 0 times 1 plus M22 times 0.
+- [00:44:36,280 - 00:44:38,280] Just 0.
+- [00:44:38,280 - 00:44:48,280] But this vector is just M11 times 10.
+- [00:44:48,280 - 00:44:51,280] So you see what's happened.
+- [00:44:51,280 - 00:44:55,280] The matrix times the vector gives you a number
+- [00:44:55,280 - 00:44:58,280] times the original vector.
+- [00:44:58,280 - 00:45:01,280] In other words, in particular, it doesn't change.
+- [00:45:01,280 - 00:45:04,280] Yeah, it just gives you back the original vector
+- [00:45:04,280 - 00:45:06,280] times a numerical number.
+- [00:45:06,280 - 00:45:10,280] In this case, the numerical number happens to be M11.
+- [00:45:10,280 - 00:45:16,280] So the vector is an eigenvector of this matrix
+- [00:45:16,280 - 00:45:20,280] with eigenvalue M11.
+- [00:45:20,280 - 00:45:22,280] There's another eigenvector.
+- [00:45:22,280 - 00:45:27,280] And the other eigenvector is to put a 0 here
+- [00:45:27,280 - 00:45:30,280] and a 1 here.
+- [00:45:30,280 - 00:45:33,280] Let's see what we get.
+- [00:45:33,280 - 00:45:35,280] In the top place, we get M11 times 0.
+- [00:45:36,280 - 00:45:42,280] Plus 0 times 1 is 0.
+- [00:45:42,280 - 00:45:44,280] And then we get 0
+- [00:45:44,280 - 00:45:46,280] times 0 plus M22 times 1.
+- [00:45:46,280 - 00:45:47,280] M22.
+- [00:45:47,280 - 00:45:52,280] And that's just M22 times 0, 1.
+- [00:45:52,280 - 00:45:55,280] So we found another eigenvector.
+- [00:45:55,280 - 00:45:59,280] Matrix times vector equals number times the same vector.
+- [00:45:59,280 - 00:46:03,280] And this time, the eigenvalue is M22.
+- [00:46:03,280 - 00:46:09,280] So the two vectors, 0, 1 and 1, 0,
+- [00:46:09,280 - 00:46:14,280] are both eigenvectors, but with two different eigenvalues.
+- [00:46:14,280 - 00:46:17,280] M11 and M22.
+- [00:46:17,280 - 00:46:19,280] You can see where this is going.
+- [00:46:19,280 - 00:46:23,280] For example, if I'm interested in up, down,
+- [00:46:23,280 - 00:46:25,280] and the spin of an electron,
+- [00:46:25,280 - 00:46:28,280] I might describe it by a matrix
+- [00:46:28,280 - 00:46:31,280] with a 1 and a minus 1.
+- [00:46:33,280 - 00:46:38,280] Then the eigenvalues would just be 1 and minus 1.
+- [00:46:38,280 - 00:46:43,280] The eigenstates would be 1, 0.
+- [00:46:43,280 - 00:46:49,280] That's a correct equation.
+- [00:46:49,280 - 00:46:53,280] So the state with the electron up
+- [00:46:53,280 - 00:46:57,280] is an eigenvector of a certain observable,
+- [00:46:57,280 - 00:46:59,280] which is represented by a matrix.
+- [00:46:59,280 - 00:47:01,280] And the other...
+- [00:47:03,280 - 00:47:08,280] eigenvector is 0, 1.
+- [00:47:08,280 - 00:47:13,280] And that is equal to minus 0, 1.
+- [00:47:13,280 - 00:47:16,280] The minus comes from this minus sign over here.
+- [00:47:16,280 - 00:47:21,280] So the two states of the electron, up and down,
+- [00:47:21,280 - 00:47:25,280] are eigenvectors of the spin operator.
+- [00:47:25,280 - 00:47:29,280] The spin operator, which is usually called sigma 3.
+- [00:47:29,280 - 00:47:31,280] This is definition.
+- [00:47:31,280 - 00:47:33,280] Sigma 3 is just this.
+- [00:47:33,280 - 00:47:39,280] There are eigenvectors with two different eigenvalues.
+- [00:47:39,280 - 00:47:41,280] And you see the pattern
+- [00:47:41,280 - 00:47:43,280] that the value that you measure,
+- [00:47:43,280 - 00:47:46,280] either plus 1 or minus 1,
+- [00:47:46,280 - 00:47:48,280] is the eigenvalue.
+- [00:47:48,280 - 00:47:51,280] The eigenvector is the state
+- [00:47:51,280 - 00:47:56,280] in which the eigenvalue is the desired measured quantity.
+- [00:47:56,280 - 00:47:58,280] Any questions?
+- [00:47:58,280 - 00:48:01,280] And in fact, these are normalized.
+- [00:48:03,280 - 00:48:05,280] Room. Yeah, rule.
+- [00:48:05,280 - 00:48:07,280] We normalize vectors, yes.
+- [00:48:07,280 - 00:48:09,280] Let me give you another example,
+- [00:48:09,280 - 00:48:10,280] which is less...
+- [00:48:10,280 - 00:48:12,280] a little bit less trivial.
+- [00:48:12,280 - 00:48:14,280] Oh, incidentally,
+- [00:48:14,280 - 00:48:15,780] if it were 3 by
+- [00:48:15,780 - 00:48:17,280] 3 or n by n matrices,
+- [00:48:17,280 - 00:48:19,280] the same pattern would be there,
+- [00:48:19,280 - 00:48:21,280] that if the diagonal...
+- [00:48:21,280 - 00:48:23,280] if the matrices are diagonal,
+- [00:48:23,280 - 00:48:26,280] then the diagonal entries are the eigenvalues.
+- [00:48:26,280 - 00:48:29,280] And the eigenvectors are just
+- [00:48:29,280 - 00:48:31,280] vectors with zeros everywhere
+- [00:48:31,280 - 00:48:33,280] except in one place.
+- [00:48:33,280 - 00:48:35,280] So you can check that out for yourself.
+- [00:48:35,280 - 00:48:38,280] Experiment around the diagonal matrix...
+- [00:48:38,280 - 00:48:40,280] matrices.
+- [00:48:47,280 - 00:48:50,280] Let me give you one other example.
+- [00:48:50,280 - 00:48:54,280] The other example involves an off-diagonal matrix.
+- [00:48:56,280 - 00:48:57,280] These matrices, incidentally,
+- [00:48:57,280 - 00:48:59,280] will play an important role
+- [00:48:59,280 - 00:49:01,280] in the ones we're talking about,
+- [00:49:01,280 - 00:49:02,280] but for the time being,
+- [00:49:02,280 - 00:49:04,280] they're just arbitrary matrices.
+- [00:49:04,280 - 00:49:06,280] It's Hermitian.
+- [00:49:06,280 - 00:49:09,280] It has real diagonal elements.
+- [00:49:09,280 - 00:49:11,280] Zero is a real number.
+- [00:49:11,280 - 00:49:13,280] And the off-diagonal elements
+- [00:49:13,280 - 00:49:15,280] are complex conjugates of each other.
+- [00:49:15,280 - 00:49:17,280] One is its own complex conjugate.
+- [00:49:17,280 - 00:49:19,280] It also happens to be symmetric,
+- [00:49:19,280 - 00:49:21,280] but it's both Hermitian and symmetric.
+- [00:49:21,280 - 00:49:26,280] And now let's see if we can find the eigenvectors.
+- [00:49:26,280 - 00:49:28,280] Better than nothing.
+- [00:49:28,280 - 00:49:30,280] Better than nothing.
+- [00:49:30,280 - 00:49:32,280] Better than...
+- [00:49:32,280 - 00:49:33,280] Yeah.
+- [00:49:33,280 - 00:49:39,280] Rather than to do any algebra,
+- [00:49:39,280 - 00:49:41,280] I'm going to show you what they are,
+- [00:49:41,280 - 00:49:44,280] and then we'll see that they are eigenvectors.
+- [00:49:44,280 - 00:49:46,280] The two eigenvectors in this case...
+- [00:49:50,280 - 00:49:53,280] Okay, now what's wrong with this eigenvector?
+- [00:49:55,280 - 00:49:56,280] It's too big.
+- [00:49:56,280 - 00:49:57,280] It's not normalized.
+- [00:49:57,280 - 00:49:59,280] One squared plus one squared is two.
+- [00:49:59,280 - 00:50:01,280] But here's a statement.
+- [00:50:01,280 - 00:50:03,280] If a vector is an eigenvector,
+- [00:50:03,280 - 00:50:06,280] it doesn't matter what its normalization is.
+- [00:50:06,280 - 00:50:08,280] If you double it or triple it or anything else,
+- [00:50:08,280 - 00:50:09,280] it's still an eigenvector.
+- [00:50:09,280 - 00:50:11,280] But if you wanted to normalize it,
+- [00:50:11,280 - 00:50:13,280] you would write one over square root of two,
+- [00:50:13,280 - 00:50:15,280] one over square root of two.
+- [00:50:17,280 - 00:50:19,280] It doesn't really matter
+- [00:50:19,280 - 00:50:22,280] in checking whether it's an eigenvector or not,
+- [00:50:22,280 - 00:50:25,280] but let's normalize it just to...
+- [00:50:25,280 - 00:50:28,280] to remind ourselves to always normalize vectors.
+- [00:50:29,280 - 00:50:32,280] What is this matrix times this vector?
+- [00:50:32,280 - 00:50:34,280] We take the zero, one,
+- [00:50:34,280 - 00:50:40,280] and we multiply it by these two elements,
+- [00:50:40,280 - 00:50:41,280] and what do we get?
+- [00:50:41,280 - 00:50:43,280] We get zero times...
+- [00:50:43,280 - 00:50:44,280] Oh, let me come on the side.
+- [00:50:44,280 - 00:50:47,280] Zero times one over square root of two
+- [00:50:47,280 - 00:50:49,280] plus one over one over square root of two.
+- [00:50:49,280 - 00:50:51,280] One over square root of two,
+- [00:50:51,280 - 00:50:53,280] and likewise in the bottom.
+- [00:50:56,280 - 00:50:59,280] We got back exactly the same vector.
+- [00:50:59,280 - 00:51:02,280] So this is an eigenvector
+- [00:51:02,280 - 00:51:05,280] of this operator
+- [00:51:05,280 - 00:51:08,280] with eigenvalue plus one.
+- [00:51:10,280 - 00:51:11,280] Alright?
+- [00:51:11,280 - 00:51:16,280] What about zero, one, one, zero?
+- [00:51:16,280 - 00:51:18,280] Can I find another eigenvector?
+- [00:51:18,280 - 00:51:19,280] Yes, I can.
+- [00:51:19,280 - 00:51:20,780] The only reason I can find
+- [00:51:20,780 - 00:51:22,280] it is because I know the answer.
+- [00:51:24,280 - 00:51:25,280] But it's not...
+- [00:51:25,280 - 00:51:27,280] It's not hard to find.
+- [00:51:27,280 - 00:51:28,280] It's not hard to find.
+- [00:51:28,280 - 00:51:31,280] I just want to illustrate the idea of eigenvectors.
+- [00:51:31,280 - 00:51:32,780] Another time I can tell you
+- [00:51:32,780 - 00:51:34,280] how you would go about finding them,
+- [00:51:34,280 - 00:51:36,280] but I do want to illustrate it.
+- [00:51:36,280 - 00:51:38,280] The other possibility is one over square root of two
+- [00:51:38,280 - 00:51:41,280] minus one over square root of two.
+- [00:51:41,280 - 00:51:42,780] In other words, instead of having
+- [00:51:42,780 - 00:51:44,280] the same element here and here,
+- [00:51:44,280 - 00:51:46,280] we have opposite sign.
+- [00:51:46,280 - 00:51:48,280] Let's check it out.
+- [00:51:48,280 - 00:51:51,280] Zero times this is zero.
+- [00:51:51,280 - 00:51:54,280] One times this is minus.
+- [00:51:54,280 - 00:51:57,280] Minus one over square root of two.
+- [00:51:57,280 - 00:51:59,280] And then here we have one
+- [00:51:59,280 - 00:52:01,280] over square root of two plus zero.
+- [00:52:01,280 - 00:52:04,280] So we have one over square root of two.
+- [00:52:04,280 - 00:52:06,780] And that's the same thing as
+- [00:52:06,780 - 00:52:09,280] minus the vector that we started with.
+- [00:52:09,280 - 00:52:11,280] We have a minus sign
+- [00:52:11,280 - 00:52:13,280] here and the opposite sign here.
+- [00:52:13,280 - 00:52:16,280] It is minus the original vector.
+- [00:52:16,280 - 00:52:27,280] So we found another eigenvector,
+- [00:52:27,280 - 00:52:31,280] and this time the eigenvalue is minus one.
+- [00:52:31,280 - 00:52:35,280] We found two eigenvectors with eigenvalue
+- [00:52:35,280 - 00:52:39,280] plus one and eigenvalue minus one.
+- [00:52:39,280 - 00:52:42,280] I defy you to find any other eigenvector.
+- [00:52:42,280 - 00:52:44,280] There are none.
+- [00:52:44,280 - 00:52:45,280] There are none.
+- [00:52:45,280 - 00:52:46,280] There are none.
+- [00:52:46,280 - 00:52:48,280] And that's a theorem.
+- [00:52:48,280 - 00:52:53,280] There are no more eigenvalues or eigenvectors.
+- [00:52:53,280 - 00:52:55,280] Right, right, right.
+- [00:52:55,280 - 00:52:57,280] You can always multiply an eigenvector by
+- [00:52:57,280 - 00:52:59,280] a number and it's still an eigenvector.
+- [00:52:59,280 - 00:53:01,780] But no more which are not
+- [00:53:01,780 - 00:53:04,280] just numerical multiples of the same eigenvector.
+- [00:53:04,280 - 00:53:06,280] Right.
+- [00:53:06,280 - 00:53:07,280] All right.
+- [00:53:07,280 - 00:53:09,780] I'm now going to prove
+- [00:53:09,780 - 00:53:12,280] a fundamental theorem of quantum mechanics.
+- [00:53:12,280 - 00:53:13,280] Very fundamental.
+- [00:53:13,280 - 00:53:15,280] About Hermitian matrices.
+- [00:53:15,280 - 00:53:17,280] Am I going too fast?
+- [00:53:17,280 - 00:53:22,280] Well, if I am, yell out.
+- [00:53:22,280 - 00:53:25,280] What did you call the spin matrix?
+- [00:53:25,280 - 00:53:28,280] Okay, this one, say it again.
+- [00:53:28,280 - 00:53:30,280] Sigma matrix or something?
+- [00:53:30,280 - 00:53:31,280] Yeah, yeah, yeah.
+- [00:53:31,280 - 00:53:32,280] Sigma three.
+- [00:53:32,280 - 00:53:35,280] Okay, sigma three.
+- [00:53:35,280 - 00:53:37,280] And this is definition.
+- [00:53:37,280 - 00:53:40,280] One, one, sorry, one minus one, zero, zero.
+- [00:53:40,280 - 00:53:43,280] And it has eigenvalue plus one and minus one.
+- [00:53:43,280 - 00:53:53,280] Sigma one is equal to this one, one, zero, zero.
+- [00:53:53,280 - 00:53:56,280] I'll show you two interesting things or, well,
+- [00:53:56,280 - 00:53:59,280] let's just say one interesting about both of these.
+- [00:53:59,280 - 00:54:01,280] The square of each one of these matrices.
+- [00:54:01,280 - 00:54:03,280] Does everybody know how to square a matrix?
+- [00:54:03,280 - 00:54:06,280] How to multiply a matrix by itself?
+- [00:54:06,280 - 00:54:07,280] Good.
+- [00:54:07,280 - 00:54:11,280] The square of each of these matrices is the same.
+- [00:54:11,280 - 00:54:13,280] It's just plus one.
+- [00:54:13,280 - 00:54:16,780] The square of this matrix, you just square the elements
+- [00:54:16,780 - 00:54:20,280] one squared and minus one squared are both plus one.
+- [00:54:20,280 - 00:54:23,280] The square sigma one, let's square sigma one.
+- [00:54:23,280 - 00:54:26,280] One, one, zero, zero.
+- [00:54:26,280 - 00:54:30,280] And multiply it by one, one, zero, zero.
+- [00:54:30,280 - 00:54:32,780] All right, the first element in the
+- [00:54:32,780 - 00:54:35,280] upper left hand corner is the inner product.
+- [00:54:35,280 - 00:54:37,280] This times this.
+- [00:54:37,280 - 00:54:39,280] The one times the one gives us a one.
+- [00:54:39,280 - 00:54:43,280] Then the zero times one plus one times zero, zero.
+- [00:54:43,280 - 00:54:46,280] One times one plus zero times zero.
+- [00:54:46,280 - 00:54:48,280] No, sorry.
+- [00:54:48,280 - 00:54:52,280] One times zero plus zero times one is zero.
+- [00:54:52,280 - 00:54:56,280] And one times one plus zero times zero is one.
+- [00:54:56,280 - 00:54:58,780] So both sigma one squared and sigma
+- [00:54:58,780 - 00:55:01,280] three squared are both equal to one.
+- [00:55:01,280 - 00:55:03,280] Now that's kind of an interesting fact.
+- [00:55:03,280 - 00:55:05,280] Notice that it's also true
+- [00:55:05,280 - 00:55:07,280] of the eigenvalues of the matrices.
+- [00:55:07,280 - 00:55:09,280] They were both plus and minus one.
+- [00:55:09,280 - 00:55:12,780] If a square of a thing is one, it
+- [00:55:12,780 - 00:55:16,280] stands to reason that it's either plus or minus one.
+- [00:55:16,280 - 00:55:19,280] Well, for matrices, in particular two by
+- [00:55:19,280 - 00:55:22,280] two matrices like this, but matrices in general,
+- [00:55:22,280 - 00:55:26,780] if the square of a matrix is the unit matrix,
+- [00:55:26,780 - 00:55:31,280] this matrix is called, is the unit matrix, it's called one.
+- [00:55:31,280 - 00:55:33,280] All right.
+- [00:55:33,280 - 00:55:37,280] It's just a unit matrix with ones on the diagonal.
+- [00:55:37,280 - 00:55:39,280] Sigma three squared.
+- [00:55:39,280 - 00:55:44,780] Sigma three squared is the same
+- [00:55:44,780 - 00:55:50,280] as sigma one squared equal to one.
+- [00:55:50,280 - 00:55:54,780] And it's not independent of the fact that the
+- [00:55:54,780 - 00:55:59,280] square of each of the eigenvalues is equal to one.
+- [00:55:59,280 - 00:56:02,780] It means that the measured values that you can
+- [00:56:02,780 - 00:56:06,280] measure are such that the square is equal to one.
+- [00:56:06,280 - 00:56:07,280] And it means that you can
+- [00:56:07,280 - 00:56:08,280] only measure plus one or minus one.
+- [00:56:09,280 - 00:56:13,780] There's one more matrix I'll write
+- [00:56:13,780 - 00:56:18,280] down, and it's called sigma two.
+- [00:56:18,280 - 00:56:24,280] And it's equal to minus i i.
+- [00:56:24,280 - 00:56:26,280] We will come back to the sigma matrices.
+- [00:56:26,280 - 00:56:32,280] In fact, we'll probably come back to them tonight.
+- [00:56:32,280 - 00:56:35,280] We found the eigenvectors of sigma one and sigma three.
+- [00:56:35,280 - 00:56:38,280] We have not yet found the eigenvectors of sigma two.
+- [00:56:39,280 - 00:56:41,280] And I will tell you in
+- [00:56:41,280 - 00:56:43,280] due time what their significance is.
+- [00:56:43,280 - 00:56:44,280] Yeah.
+- [00:56:44,280 - 00:56:45,280] Yeah.
+- [00:56:45,280 - 00:56:47,280] You can see all this geometrically, you know.
+- [00:56:47,280 - 00:56:52,280] It's a very simple geometric interpretation.
+- [00:56:52,280 - 00:56:54,280] Okay.
+- [00:56:54,280 - 00:56:55,280] If you're going to say that,
+- [00:56:55,280 - 00:56:56,280] then tell us what it is.
+- [00:56:56,280 - 00:56:57,280] Oh, okay.
+- [00:56:57,280 - 00:56:58,780] Well, I was going to write something up,
+- [00:56:58,780 - 00:57:00,280] but I can put it on the Internet.
+- [00:57:00,280 - 00:57:01,280] Okay.
+- [00:57:01,280 - 00:57:02,280] Tell me how.
+- [00:57:02,280 - 00:57:04,780] But basically, if you look at the
+- [00:57:04,780 - 00:57:07,280] unit vectors, if you look at the...
+- [00:57:07,280 - 00:57:08,280] Unit vector.
+- [00:57:08,280 - 00:57:11,780] Well, think of E1 and E2, like a
+- [00:57:11,780 - 00:57:15,280] zero one and one zero as the unit vectors.
+- [00:57:15,280 - 00:57:18,780] If you look at a matrix, if you look at
+- [00:57:18,780 - 00:57:22,280] the column vectors, those are the images of the unit vectors.
+- [00:57:22,280 - 00:57:23,280] I know what you're saying.
+- [00:57:23,280 - 00:57:27,280] So one of them is a reflect.
+- [00:57:27,280 - 00:57:31,280] You're interchanging E1 with E2.
+- [00:57:31,280 - 00:57:35,280] That's called sigma one.
+- [00:57:35,280 - 00:57:36,280] Right.
+- [00:57:36,280 - 00:57:37,280] Right.
+- [00:57:37,280 - 00:57:40,280] And then the diagonal is fixed.
+- [00:57:40,280 - 00:57:43,280] And also the anti-diagonal is fixed.
+- [00:57:43,280 - 00:57:47,280] When you're reflecting in the main diagonal,
+- [00:57:47,280 - 00:57:51,280] so the normal to it is also reflected.
+- [00:57:51,280 - 00:57:53,280] So those are eigenvectors.
+- [00:57:53,280 - 00:57:57,280] Those directions, I think, and that's what you got.
+- [00:57:57,280 - 00:57:59,280] And then that's the one
+- [00:57:59,280 - 00:58:01,280] over square root of two things.
+- [00:58:01,280 - 00:58:05,280] Those are pointing in the diagonal directions.
+- [00:58:05,280 - 00:58:06,280] So they're fixed.
+- [00:58:06,280 - 00:58:11,280] And then the other one is you're sending...
+- [00:58:11,280 - 00:58:14,280] You're keeping the E1 fixed.
+- [00:58:14,280 - 00:58:17,280] And E2 is going into its negative.
+- [00:58:17,280 - 00:58:20,280] So you're reflecting in the x-axis.
+- [00:58:20,280 - 00:58:22,780] So the vertical vector is
+- [00:58:22,780 - 00:58:25,280] an eigenvector going into its negative.
+- [00:58:25,280 - 00:58:26,280] Right.
+- [00:58:26,280 - 00:58:28,280] And the other one...
+- [00:58:28,280 - 00:58:30,780] And also the squares of these things, if you
+- [00:58:30,780 - 00:58:33,280] apply them twice, they come back to where you said.
+- [00:58:33,280 - 00:58:34,280] Exactly.
+- [00:58:34,280 - 00:58:36,780] So it's also completely obvious for this one,
+- [00:58:36,780 - 00:58:39,280] but the square of this one is also one.
+- [00:58:39,280 - 00:58:40,280] Yeah.
+- [00:58:40,280 - 00:58:43,280] Then when I take the i out in front and then
+- [00:58:43,280 - 00:58:46,280] I have i times something very obvious, it's just a zero, one...
+- [00:58:46,280 - 00:58:48,280] Sigma two squared is also one.
+- [00:58:48,280 - 00:58:50,280] Not minus one, but one.
+- [00:58:50,280 - 00:58:51,280] Yeah.
+- [00:58:51,280 - 00:58:53,280] They all have that property.
+- [00:58:53,280 - 00:58:56,280] They're all, in that sense, they're similar.
+- [00:58:56,280 - 00:58:59,280] That also proves, incidentally, that the eigenvalues of
+- [00:58:59,280 - 00:59:02,280] sigma two are also plus and minus one.
+- [00:59:02,280 - 00:59:05,280] It doesn't tell us what the eigenvectors are,
+- [00:59:05,280 - 00:59:08,280] but it tells us what the eigenvalues are.
+- [00:59:08,280 - 00:59:09,280] All right.
+- [00:59:09,280 - 00:59:13,280] Let me prove to you now the following interesting theorem.
+- [00:59:13,280 - 00:59:14,280] Suppose...
+- [00:59:14,280 - 00:59:20,280] And this theorem is significant.
+- [00:59:20,280 - 00:59:23,280] Highly significant.
+- [00:59:23,280 - 00:59:25,780] Supposing you have an observable and
+- [00:59:25,780 - 00:59:28,280] it has more than one eigenvector.
+- [00:59:28,280 - 00:59:30,280] In general, well.
+- [00:59:30,280 - 00:59:32,280] The number of eigenvectors that it has is
+- [00:59:32,280 - 00:59:34,280] usually equal to the dimensionality of the matrix.
+- [00:59:34,280 - 00:59:37,280] It is the dimensionality of the matrix.
+- [00:59:37,280 - 00:59:41,280] So if you have three by three matrices in their
+- [00:59:41,280 - 00:59:45,280] Hermitian, they will typically have three eigenvalues and three eigenvectors.
+- [00:59:45,280 - 00:59:47,280] Four by four will have
+- [00:59:47,280 - 00:59:49,280] four eigenvectors and four eigenvalues.
+- [00:59:49,280 - 00:59:50,280] But here's a theorem.
+- [00:59:50,280 - 00:59:54,780] If I have a Hermitian matrix
+- [00:59:54,780 - 00:59:59,280] M and it has two different eigenvalues,
+- [00:59:59,280 - 01:00:05,780] that means that there's an
+- [01:00:05,780 - 01:00:12,280] eigenvector A with eigenvalue lambda A,
+- [01:00:12,280 - 01:00:17,780] and there is an eigenvector B
+- [01:00:17,780 - 01:00:23,280] with a different eigenvalue, lambda B B,
+- [01:00:23,280 - 01:00:28,280] then if lambda A and lambda B are different,
+- [01:00:28,280 - 01:00:31,280] what it says is that A and
+- [01:00:31,280 - 01:00:34,280] B will be orthogonal to each other.
+- [01:00:34,280 - 01:00:35,780] And before I prove it,
+- [01:00:35,780 - 01:00:37,280] let me say what it means.
+- [01:00:37,280 - 01:00:40,780] What it means is that if there is
+- [01:00:40,780 - 01:00:44,280] any observable distinct quantity that you can measure,
+- [01:00:44,280 - 01:00:49,780] which will distinguish between two different, well, two
+- [01:00:49,780 - 01:00:55,280] distinctly different possible measurable answers that you can get,
+- [01:00:55,280 - 01:00:57,280] for some observable,
+- [01:00:57,280 - 01:01:01,280] then that's equivalent to saying that the eigenvectors,
+- [01:01:01,280 - 01:01:03,780] remember the eigenvectors are the states
+- [01:01:03,780 - 01:01:06,280] in which you definitely measure lambda A.
+- [01:01:06,280 - 01:01:09,780] The eigenvectors are the states where if you make
+- [01:01:09,780 - 01:01:13,280] a measurement of M, you will get lambda A.
+- [01:01:13,280 - 01:01:16,280] B is the state in which if you
+- [01:01:16,280 - 01:01:19,280] measure M, you will definitely get lambda B.
+- [01:01:19,280 - 01:01:22,280] These states which correspond
+- [01:01:22,280 - 01:01:25,280] to distinctly different measurable quantities,
+- [01:01:25,280 - 01:01:27,280] that's distinctly different measurable quantities,
+- [01:01:27,280 - 01:01:29,280] are the same quantity.
+- [01:01:29,280 - 01:01:31,280] They are orthogonal.
+- [01:01:31,280 - 01:01:35,280] That's the basic idea, is
+- [01:01:35,280 - 01:01:39,280] orthogonal states are distinguishable, measurably distinct,
+- [01:01:39,280 - 01:01:42,280] and you can distinguish between
+- [01:01:42,280 - 01:01:45,280] them by measuring appropriate observables.
+- [01:01:45,280 - 01:01:49,280] For example, we already have some examples.
+- [01:01:49,280 - 01:01:52,280] The two examples that we had,
+- [01:01:52,280 - 01:01:59,280] one of them was and .
+- [01:01:59,280 - 01:02:03,280] These were the two eigenvectors of sigma 3.
+- [01:02:03,280 - 01:02:05,280] Notice that they're orthogonal because
+- [01:02:05,280 - 01:02:07,280] they don't share any elements.
+- [01:02:07,280 - 01:02:10,280] This times this plus this times this is zero.
+- [01:02:10,280 - 01:02:12,780] The orthogonality is the thing that
+- [01:02:12,780 - 01:02:15,280] tells you that in the unique experiment,
+- [01:02:15,280 - 01:02:17,280] you can distinguish between them.
+- [01:02:17,280 - 01:02:20,280] You distinguish between them by measuring the quantity,
+- [01:02:20,280 - 01:02:22,280] which, uh,
+- [01:02:22,280 - 01:02:24,280] which is represented by the Hermitian
+- [01:02:24,280 - 01:02:26,280] operator that has too many words,
+- [01:02:26,280 - 01:02:28,280] but you get the idea.
+- [01:02:28,280 - 01:02:31,780] Let me prove to you that if
+- [01:02:31,780 - 01:02:35,280] this is so with two different lambdas,
+- [01:02:35,280 - 01:02:38,280] then A and B must be orthogonal to each other.
+- [01:02:38,280 - 01:02:40,280] And we do this easily. It's not very hard.
+- [01:02:40,280 - 01:02:43,280] We just have to juggle a few definitions.
+- [01:02:43,280 - 01:02:46,780] We first of all multiply this equation,
+- [01:02:46,780 - 01:02:50,280] the first equation on the left, by B.
+- [01:02:50,280 - 01:02:51,280] So, we have a little bit of a problem here.
+- [01:02:51,280 - 01:02:58,780] So, we'll rewrite it then as B,
+- [01:02:58,780 - 01:03:06,280] M, A equals lambda A times B, A.
+- [01:03:06,280 - 01:03:13,280] I've multiplied both sides by B, by the vector B.
+- [01:03:13,280 - 01:03:15,280] I'm going to do a similar thing here.
+- [01:03:15,280 - 01:03:18,280] I'm going to multiply both sides by A.
+- [01:03:18,280 - 01:03:19,280] And so we get A, M, A.
+- [01:03:19,280 - 01:03:20,280] And so we get A, M, A.
+- [01:03:20,280 - 01:03:26,280] And so we get A, M,
+- [01:03:26,280 - 01:03:32,280] B equals lambda B times A, B.
+- [01:03:32,280 - 01:03:37,280] But now I would like to switch.
+- [01:03:37,280 - 01:03:39,280] Let's see, so what do we have to do next?
+- [01:03:39,280 - 01:03:41,280] This always confuses me.
+- [01:03:41,280 - 01:03:43,280] Yeah, we have the two equations.
+- [01:03:43,280 - 01:03:48,280] Now, let's take this equation.
+- [01:03:48,280 - 01:03:53,280] B, M.
+- [01:03:53,280 - 01:03:54,280] Yeah.
+- [01:03:54,280 - 01:03:56,280] We want to conjugate one of these equations.
+- [01:03:56,280 - 01:03:58,280] We want to take the complex
+- [01:03:58,280 - 01:04:00,280] conjugate of one of these equations.
+- [01:04:00,280 - 01:04:02,280] Which one should we choose?
+- [01:04:02,280 - 01:04:04,280] The second one.
+- [01:04:04,280 - 01:04:09,280] All right, this is B, M,
+- [01:04:09,280 - 01:04:14,280] A, complex conjugated is what it is.
+- [01:04:14,280 - 01:04:15,280] Remember, since M is permission, we
+- [01:04:15,280 - 01:04:16,280] don't have to complex conjugate it.
+- [01:04:16,280 - 01:04:28,280] That's equal to lambda B star times B, A.
+- [01:04:28,280 - 01:04:30,280] Okay.
+- [01:04:30,280 - 01:04:32,280] Now I forgot what to do next.
+- [01:04:32,280 - 01:04:35,280] Ah, yes.
+- [01:04:35,280 - 01:04:37,280] Yes.
+- [01:04:37,280 - 01:04:41,280] Yeah, now we'll just conjugate everything.
+- [01:04:41,280 - 01:04:44,280] Oh, did I do something?
+- [01:04:44,280 - 01:04:45,280] Which?
+- [01:04:45,280 - 01:04:46,280] Lambda.
+- [01:04:46,280 - 01:04:48,280] Did I forget to conjugate something?
+- [01:04:48,280 - 01:04:51,280] What are we doing?
+- [01:04:51,280 - 01:04:53,280] Oh, sorry, this is conjugated, right?
+- [01:04:53,280 - 01:04:54,280] Yes.
+- [01:04:54,280 - 01:04:55,280] Yeah, good.
+- [01:04:55,280 - 01:04:59,280] But before we do that, let's complex.
+- [01:04:59,280 - 01:05:03,280] What I've done here is said if I
+- [01:05:03,280 - 01:05:07,280] interchange, let's see, I'm, ah, this one, this one.
+- [01:05:07,280 - 01:05:10,280] If I interchange A and B, and at
+- [01:05:10,280 - 01:05:13,280] the same time take the Hermitian conjugate of M,
+- [01:05:13,280 - 01:05:15,780] which I don't have to do because
+- [01:05:15,780 - 01:05:18,280] it's Hermitian, and take the complex conjugate,
+- [01:05:18,280 - 01:05:21,280] I get the complex conjugate of the right-hand side.
+- [01:05:21,280 - 01:05:24,280] Now just complex conjugate the whole equation.
+- [01:05:24,280 - 01:05:27,280] That means just throw away the star.
+- [01:05:27,280 - 01:05:29,280] Throw away the star.
+- [01:05:29,280 - 01:05:31,280] Now I have two equations.
+- [01:05:31,280 - 01:05:36,280] Let's get rid of the middle one here.
+- [01:05:36,280 - 01:05:38,280] One of them says B, M,
+- [01:05:38,280 - 01:05:40,280] A equals lambda A times B, A.
+- [01:05:40,280 - 01:05:42,280] The other one says B, M, A equals lambda B.
+- [01:05:42,280 - 01:05:47,280] It will not surprise you that the
+- [01:05:47,280 - 01:05:52,280] conclusion is, there are two possible conclusions.
+- [01:05:52,280 - 01:05:57,280] One conclusion is that lambda A equals lambda B.
+- [01:05:57,280 - 01:05:59,780] But I told you already, I'm talking about
+- [01:05:59,780 - 01:06:02,280] two eigenvalues which are known to be different.
+- [01:06:02,280 - 01:06:04,280] So by assumption, lambda A and
+- [01:06:04,280 - 01:06:06,280] lambda B are not the same.
+- [01:06:06,280 - 01:06:08,780] If lambda A and lambda B are not the
+- [01:06:08,780 - 01:06:11,280] same, there's only one way this can be true.
+- [01:06:11,280 - 01:06:14,280] In other words, and it's that B, A is zero.
+- [01:06:14,280 - 01:06:17,280] In other words, let's subtract these two equations.
+- [01:06:17,280 - 01:06:19,280] We subtract the two equations.
+- [01:06:19,280 - 01:06:21,280] On the left-hand side, we get zero.
+- [01:06:21,280 - 01:06:24,780] On the right-hand side, we get lambda
+- [01:06:24,780 - 01:06:28,280] A minus lambda B times B, A.
+- [01:06:28,280 - 01:06:32,280] B, A.
+- [01:06:32,280 - 01:06:35,780] If a product is equal to zero, that means
+- [01:06:35,780 - 01:06:39,280] one or the other factor is equal to zero.
+- [01:06:39,280 - 01:06:42,280] The product of two things can only be zero
+- [01:06:42,280 - 01:06:45,280] if one or the other factor is equal to zero.
+- [01:06:45,280 - 01:06:47,280] So one possibility is that lambda
+- [01:06:47,280 - 01:06:49,280] A is equal to lambda B.
+- [01:06:49,280 - 01:06:51,280] True. This is true.
+- [01:06:51,280 - 01:06:53,280] It's a possibility.
+- [01:06:53,280 - 01:06:57,780] But I explicitly said, let us consider two
+- [01:06:57,780 - 01:07:02,280] different eigenvalues, two different values of the same observable.
+- [01:07:02,280 - 01:07:04,280] If they're different, then lambda A minus
+- [01:07:04,280 - 01:07:06,280] lambda B is not equal to zero.
+- [01:07:06,280 - 01:07:07,280] And the only possibility is
+- [01:07:07,280 - 01:07:08,280] that B is equal to zero.
+- [01:07:08,280 - 01:07:10,280] The only possibility is that B
+- [01:07:10,280 - 01:07:12,280] and A are orthogonal to each other.
+- [01:07:12,280 - 01:07:14,280] That inner product of B
+- [01:07:14,280 - 01:07:16,280] with A is equal to zero.
+- [01:07:16,280 - 01:07:18,780] So it follows, for Hermitian matrices,
+- [01:07:18,780 - 01:07:21,280] if I have two distinct eigenvalues,
+- [01:07:21,280 - 01:07:25,780] I can immediately conclude
+- [01:07:25,780 - 01:07:30,280] that these are orthogonal vectors.
+- [01:07:30,280 - 01:07:36,280] Let's check it out for the eigenvectors of sigma 2.
+- [01:07:36,280 - 01:07:38,280] Where are the eigenvectors of sigma 2?
+- [01:07:38,280 - 01:07:40,280] Here they are, right here.
+- [01:07:46,280 - 01:07:48,280] No, I'm sorry, sigma 1 is what I meant.
+- [01:07:48,280 - 01:07:50,280] Sigma 1.
+- [01:07:50,280 - 01:07:54,280] Let's check it out for sigma 1.
+- [01:07:54,280 - 01:07:57,780] Notice that the entries here are real,
+- [01:07:57,780 - 01:08:01,280] and we don't have to complex conjugate anything.
+- [01:08:01,280 - 01:08:04,280] All the entries here are real.
+- [01:08:04,280 - 01:08:06,280] To take the inner product of two
+- [01:08:06,280 - 01:08:08,280] vectors, all of whose entries are real,
+- [01:08:08,280 - 01:08:10,280] all we have to do is take
+- [01:08:10,280 - 01:08:12,280] the product of the first two entries,
+- [01:08:12,280 - 01:08:15,280] sorry, the product of this entry with this entry,
+- [01:08:15,280 - 01:08:16,779] and add to it the product
+- [01:08:16,779 - 01:08:18,279] of this one with this one.
+- [01:08:18,279 - 01:08:20,279] So we get 1 over square root of 2
+- [01:08:20,279 - 01:08:22,279] times 1 over square root of 2, that's a half,
+- [01:08:22,279 - 01:08:24,779] and then 1 over square root of 2 times minus
+- [01:08:24,779 - 01:08:27,279] 1 over square root of 2, that's minus a half.
+- [01:08:27,279 - 01:08:30,279] A half plus minus a half is zero.
+- [01:08:30,279 - 01:08:33,279] This vector is orthogonal to this vector.
+- [01:08:33,279 - 01:08:36,279] So there's an example of the orthogonality of eigenvectors,
+- [01:08:36,279 - 01:08:41,279] with different eigenvalues for Hermitian matrices.
+- [01:08:41,279 - 01:08:45,279] As I said, the significance of this is deep,
+- [01:08:45,279 - 01:08:47,779] and it says that whenever there
+- [01:08:47,779 - 01:08:50,279] is an observation that you can do,
+- [01:08:50,279 - 01:08:53,279] that will uniquely distinguish between
+- [01:08:53,279 - 01:08:56,279] two possible states of a system,
+- [01:08:56,279 - 01:09:00,279] or two possible values of an observable,
+- [01:09:00,279 - 01:09:02,779] the states associated with them
+- [01:09:02,779 - 01:09:05,279] are orthogonal to each other.
+- [01:09:05,279 - 01:09:06,779] Or you can say it the
+- [01:09:06,779 - 01:09:08,279] other way, if two states are orthogonal,
+- [01:09:08,279 - 01:09:11,279] it means that there exists some measurement you can do,
+- [01:09:11,279 - 01:09:16,779] which will uniquely tell you which one
+- [01:09:16,779 - 01:09:22,279] of the two is realized in your system.
+- [01:09:22,279 - 01:09:26,279] So that's one of the
+- [01:09:26,279 - 01:09:30,279] fundamental theorems of quantum mechanics,
+- [01:09:30,279 - 01:09:33,279] and let's take a little break.
+- [01:09:33,279 - 01:09:35,279] The eigenvectors of the eigenvectors are the same.
+- [01:09:35,279 - 01:09:37,279] You have sigma 2r, so
+- [01:09:37,279 - 01:09:39,279] that you can check them yourself.
+- [01:09:39,279 - 01:09:42,279] The two eigenvectors of sigma 2
+- [01:09:51,279 - 01:09:57,280] The two eigenvectors of sigma 2 are 1i,
+- [01:09:57,280 - 01:09:59,280] stick a 1 over square root of
+- [01:09:59,280 - 01:10:01,280] 2 to normalize it, in front of it,
+- [01:10:01,280 - 01:10:05,280] and the other one is 1 minus i.
+- [01:10:05,280 - 01:10:08,280] 1 over square root of 2.
+- [01:10:08,280 - 01:10:10,780] One of them has eigenvalue plus 1,
+- [01:10:10,780 - 01:10:13,280] and the other has eigenvalue minus 1.
+- [01:10:13,280 - 01:10:15,780] Alright, so you can check that yourself,
+- [01:10:15,780 - 01:10:18,280] it's a little exercise, please do it.
+- [01:10:18,280 - 01:10:20,780] And you see that sigma 1, sigma 2,
+- [01:10:20,780 - 01:10:23,280] and sigma 3 are all similar to each other,
+- [01:10:23,280 - 01:10:25,280] and that they have the same
+- [01:10:25,280 - 01:10:27,280] eigenvalues, plus 1 and minus 1.
+- [01:10:27,280 - 01:10:31,280] They all square and give 1.
+- [01:10:31,280 - 01:10:32,280] They have a number of
+- [01:10:32,280 - 01:10:33,280] eigenvalues, plus 1 and minus 1.
+- [01:10:33,280 - 01:10:35,780] They have another interesting property that we'll
+- [01:10:35,780 - 01:10:38,280] come to in a moment, I think.
+- [01:10:38,280 - 01:10:44,280] But let me tell you what their physical meaning is.
+- [01:10:44,280 - 01:10:47,280] They are observable quantities, and with
+- [01:10:47,280 - 01:10:50,280] respect, in thinking about the electron spin,
+- [01:10:50,280 - 01:10:52,280] as I told you the first
+- [01:10:52,280 - 01:10:54,280] time, or was it the second time,
+- [01:10:54,280 - 01:10:56,780] the electrons spin classically, in
+- [01:10:56,780 - 01:10:59,280] classical physics, is like a magnet.
+- [01:10:59,280 - 01:11:00,780] It has a north pole and
+- [01:11:00,780 - 01:11:02,280] a south pole, and it's a pointer.
+- [01:11:02,280 - 01:11:05,280] It points along an axis.
+- [01:11:05,280 - 01:11:06,780] If we were talking about, and
+- [01:11:06,780 - 01:11:08,280] it has what's called a magnetic moment,
+- [01:11:08,280 - 01:11:11,280] and that magnetic moment is a,
+- [01:11:11,280 - 01:11:14,280] I hesitate to use the word vector,
+- [01:11:14,280 - 01:11:18,280] but the kind of vector that points in ordinary space.
+- [01:11:18,280 - 01:11:20,280] I guess we called it a pointer, huh?
+- [01:11:20,280 - 01:11:22,280] Right.
+- [01:11:22,280 - 01:11:24,280] The magnetic moment.
+- [01:11:24,280 - 01:11:26,280] Or we can call it the spin.
+- [01:11:26,280 - 01:11:28,780] It's the same, apart from a numerical constant, the
+- [01:11:28,780 - 01:11:31,280] spin and the magnetic moment are the same thing.
+- [01:11:31,280 - 01:11:32,280] It's a vector.
+- [01:11:32,280 - 01:11:34,280] It's a pointer in space.
+- [01:11:34,280 - 01:11:37,280] As such, it has components.
+- [01:11:37,280 - 01:11:40,280] It has components in the vertical axis, for example.
+- [01:11:40,280 - 01:11:42,280] This vector has a component which is
+- [01:11:42,280 - 01:11:44,280] about over here, in the vertical direction.
+- [01:11:44,280 - 01:11:47,280] It has a component in the horizontal direction over here,
+- [01:11:47,280 - 01:11:51,280] and a component over here in the other horizontal direction.
+- [01:11:51,280 - 01:11:56,280] And those components characterize the pointer.
+- [01:11:59,280 - 01:12:02,280] They are measurable quantities for a magnet.
+- [01:12:02,280 - 01:12:05,780] You could decide to measure the
+- [01:12:05,780 - 01:12:09,280] x component of the magnetic moment.
+- [01:12:09,280 - 01:12:11,780] You could decide to measure the y component,
+- [01:12:11,780 - 01:12:14,280] or you could decide to measure the z component.
+- [01:12:14,280 - 01:12:16,780] You might think, classically you'd be right, that
+- [01:12:16,780 - 01:12:19,280] you could measure all three of them simultaneously.
+- [01:12:19,280 - 01:12:22,280] You could do an experiment to measure all
+- [01:12:22,280 - 01:12:25,280] three of the components of the magnetic moment simultaneously,
+- [01:12:25,280 - 01:12:27,780] and in that way figure out
+- [01:12:27,780 - 01:12:30,280] exactly where the magnetic moment is pointing.
+- [01:12:30,280 - 01:12:31,280] All right?
+- [01:12:31,280 - 01:12:33,280] Let's save that question whether you can measure
+- [01:12:33,280 - 01:12:35,280] all of them simultaneously for an electron or not.
+- [01:12:35,280 - 01:12:38,280] But you can't, and the answer is no.
+- [01:12:38,280 - 01:12:41,280] But you can measure any one of them, the
+- [01:12:41,280 - 01:12:44,280] x component, the y component, or the z component.
+- [01:12:44,280 - 01:12:45,280] How do you do it?
+- [01:12:45,280 - 01:12:47,280] Suppose I wanted to measure the x component.
+- [01:12:47,280 - 01:12:49,280] The x is this way.
+- [01:12:49,280 - 01:12:53,280] I put it in a big magnetic field, and
+- [01:12:53,280 - 01:12:57,280] I check whether or not it emits a photon.
+- [01:12:57,280 - 01:13:00,280] If it emits a photon, then it had one component.
+- [01:13:00,280 - 01:13:02,280] One component or the other component.
+- [01:13:02,280 - 01:13:04,280] And the only possible answers
+- [01:13:04,280 - 01:13:06,280] are minus one and plus one.
+- [01:13:06,280 - 01:13:08,280] In other words, you'll either see a
+- [01:13:08,280 - 01:13:10,280] photon or you won't see a photon.
+- [01:13:10,280 - 01:13:13,280] So the components of the electron
+- [01:13:13,280 - 01:13:16,280] spin have only two possible values.
+- [01:13:16,280 - 01:13:18,280] Each of the components, the x component, the
+- [01:13:18,280 - 01:13:20,280] y component, and the z component, and what's more,
+- [01:13:20,280 - 01:13:22,780] we're going to see in a minute, that the
+- [01:13:22,780 - 01:13:25,280] component in any old direction, if you measure it,
+- [01:13:25,280 - 01:13:28,280] will only have two possible values.
+- [01:13:28,280 - 01:13:31,280] Now that's a little hard to think
+- [01:13:31,280 - 01:13:34,280] about, but let me tell you right now,
+- [01:13:34,280 - 01:13:37,280] what sigma one, sigma two, and sigma
+- [01:13:37,280 - 01:13:40,280] three are, is they represent the observable values
+- [01:13:40,280 - 01:13:44,280] of the components of the electron
+- [01:13:44,280 - 01:13:48,280] spin along the three axes of space.
+- [01:13:48,280 - 01:13:51,280] The three axes of ordinary space.
+- [01:13:51,280 - 01:13:54,280] I'll show you how that works, and how we
+- [01:13:54,280 - 01:13:57,280] can construct the component along any direction in a moment.
+- [01:13:58,280 - 01:14:00,780] Notice that they do have sort
+- [01:14:00,780 - 01:14:03,280] of very similar properties, same eigenvalues,
+- [01:14:03,280 - 01:14:05,280] so if you measure the possible values
+- [01:14:05,280 - 01:14:07,280] that you can get in an experiment,
+- [01:14:07,280 - 01:14:10,280] for sigma one, you get one minus one.
+- [01:14:10,280 - 01:14:13,280] For sigma three, you get one and minus one.
+- [01:14:13,280 - 01:14:16,280] For sigma two, you get one and minus one.
+- [01:14:16,280 - 01:14:18,780] That's all you can ever
+- [01:14:18,780 - 01:14:21,280] get when you actually measure them.
+- [01:14:21,280 - 01:14:23,280] And we're going to see the
+- [01:14:23,280 - 01:14:25,280] same is true along any axis.
+- [01:14:25,280 - 01:14:27,280] But before we do, let me tell you,
+- [01:14:28,280 - 01:14:32,280] I think it's the last postulate of quantum mechanics.
+- [01:14:32,280 - 01:14:36,280] And here's, here's, here is the,
+- [01:14:36,280 - 01:14:40,280] that's the probability interpretation.
+- [01:14:40,280 - 01:14:45,280] Suppose you prepare a system in a state,
+- [01:14:45,280 - 01:14:55,280] particular state, and let's see, let's call that state B.
+- [01:14:55,280 - 01:14:57,280] Somebody gave you an electron,
+- [01:14:57,280 - 01:15:00,280] or whatever it happens to be,
+- [01:15:00,280 - 01:15:05,280] in a particular quantum state B.
+- [01:15:05,280 - 01:15:08,280] Now, there is some observable,
+- [01:15:08,280 - 01:15:12,280] let's call it M, some observable,
+- [01:15:12,280 - 01:15:16,280] M, that has an eigenvalue lambda A,
+- [01:15:16,280 - 01:15:19,280] which means that if you measure M,
+- [01:15:19,280 - 01:15:22,280] you can get the value lambda A,
+- [01:15:22,280 - 01:15:23,780] or you may not get the
+- [01:15:23,780 - 01:15:25,280] value, you may get some other lambda.
+- [01:15:25,280 - 01:15:27,280] But if you measure M,
+- [01:15:27,280 - 01:15:29,280] you get one of its eigenvalues,
+- [01:15:29,280 - 01:15:36,280] and the associated eigenvector is A.
+- [01:15:36,280 - 01:15:38,280] Commas between them just to indicate.
+- [01:15:38,280 - 01:15:40,280] M is an observable, meaning
+- [01:15:40,280 - 01:15:42,280] to say it's a Hermitian operator.
+- [01:15:42,280 - 01:15:44,280] Lambda A is one of the
+- [01:15:44,280 - 01:15:46,280] possible values that you can measure,
+- [01:15:46,280 - 01:15:50,280] and the associated eigenvector is lambda A.
+- [01:15:50,280 - 01:15:54,280] B is just any old state, any old state, whatever,
+- [01:15:54,280 - 01:15:57,280] not particularly an eigenstate of,
+- [01:15:57,280 - 01:16:00,280] of M, it could be or not,
+- [01:16:00,280 - 01:16:04,280] alright, it's just any old arbitrary state.
+- [01:16:04,280 - 01:16:06,280] Then we could ask the question,
+- [01:16:06,280 - 01:16:09,280] if the system is prepared in B,
+- [01:16:09,280 - 01:16:11,280] and we measure M,
+- [01:16:11,280 - 01:16:15,280] what's the probability that the answer will be lambda A?
+- [01:16:15,280 - 01:16:19,280] Lambda A are the possible values that you can measure,
+- [01:16:19,280 - 01:16:22,280] M is the thing you're measuring,
+- [01:16:22,280 - 01:16:24,280] and A is the eigenvector
+- [01:16:24,280 - 01:16:26,280] of M with eigenvalue lambda A.
+- [01:16:26,280 - 01:16:32,280] The answer is that the probability
+- [01:16:32,280 - 01:16:35,280] is given by the expression
+- [01:16:35,280 - 01:16:41,280] the inner product of A with B
+- [01:16:41,280 - 01:16:43,280] times its complex conjugate.
+- [01:16:43,280 - 01:16:45,280] One way,
+- [01:16:45,280 - 01:16:47,280] times its complex conjugate,
+- [01:16:47,280 - 01:16:49,280] the easy way to write the complex conjugate
+- [01:16:49,280 - 01:16:51,280] is just to write it times B A.
+- [01:16:56,280 - 01:16:59,280] Which is just the same as
+- [01:16:59,280 - 01:17:02,280] multiplying this by its complex conjugate.
+- [01:17:05,280 - 01:17:06,780] Remember that when you multiply
+- [01:17:06,780 - 01:17:08,280] a number by its complex conjugate,
+- [01:17:08,280 - 01:17:13,280] you always get a real positive number.
+- [01:17:13,280 - 01:17:16,280] If A and B are normalized,
+- [01:17:16,280 - 01:17:17,780] it's an easy theorem to prove
+- [01:17:17,780 - 01:17:19,280] that this is less than one,
+- [01:17:19,280 - 01:17:21,280] less than or equal to one.
+- [01:17:21,280 - 01:17:24,280] If A and B are unit length,
+- [01:17:24,280 - 01:17:26,780] then the inner product between them
+- [01:17:26,780 - 01:17:29,280] has a magnitude less than one.
+- [01:17:29,280 - 01:17:31,280] So this number is always
+- [01:17:31,280 - 01:17:33,280] less than or equal to one,
+- [01:17:33,280 - 01:17:35,280] and it is the probability,
+- [01:17:35,280 - 01:17:37,280] it's the probability,
+- [01:17:37,280 - 01:17:39,280] again, I'll state what it is,
+- [01:17:39,280 - 01:17:41,280] it's the probability
+- [01:17:41,280 - 01:17:43,280] that if you start with an arbitrary state A,
+- [01:17:43,280 - 01:17:46,280] a system prepared in an arbitrary state A,
+- [01:17:46,280 - 01:17:49,280] and you measure the measurable quantity M,
+- [01:17:49,280 - 01:17:53,280] this is the probability that you get lambda A.
+- [01:17:54,280 - 01:17:56,280] Hmm?
+- [01:17:56,280 - 01:17:58,280] Sorry, what did I say? Did I say it wrong?
+- [01:17:58,280 - 01:18:00,280] Oh, sorry.
+- [01:18:00,280 - 01:18:02,280] Okay, let me say it again.
+- [01:18:02,280 - 01:18:03,280] I thought I said it the right
+- [01:18:03,280 - 01:18:04,280] way, but I probably said it wrong.
+- [01:18:04,280 - 01:18:07,280] It's prepared in the state B,
+- [01:18:07,280 - 01:18:10,280] arbitrarily prepared in the state B,
+- [01:18:10,280 - 01:18:14,280] then the probability that you measure lambda A
+- [01:18:14,280 - 01:18:18,280] will be the inner product between B and A squared.
+- [01:18:18,280 - 01:18:20,280] Times its complex conjugate.
+- [01:18:20,280 - 01:18:22,280] So,
+- [01:18:22,280 - 01:18:25,280] squared, times its complex conjugate.
+- [01:18:25,280 - 01:18:27,280] A real positive number
+- [01:18:27,280 - 01:18:31,280] given by the square,
+- [01:18:31,280 - 01:18:33,780] or I call it the square,
+- [01:18:33,780 - 01:18:36,280] but I mean times the complex conjugate,
+- [01:18:36,280 - 01:18:39,280] of A with B.
+- [01:18:39,280 - 01:18:40,280] Okay? That's the probability.
+- [01:18:40,280 - 01:18:43,280] Now notice it's sort of symmetric in A and B.
+- [01:18:43,280 - 01:18:45,280] It is symmetric in A and B.
+- [01:18:45,280 - 01:18:50,280] But, for the moment, think of it asymmetrically.
+- [01:18:50,280 - 01:18:52,280] You prepare the system in A,
+- [01:18:52,280 - 01:18:55,280] you prepare the system in B,
+- [01:18:55,280 - 01:18:57,280] and you measure M
+- [01:18:57,280 - 01:19:00,280] and ask what the probability for lambda A is.
+- [01:19:00,280 - 01:19:01,280] Okay?
+- [01:19:01,280 - 01:19:04,280] That's the basic
+- [01:19:04,280 - 01:19:06,280] postulate of quantum mechanics.
+- [01:19:06,280 - 01:19:11,280] Always assuming that all of your vectors are normalized.
+- [01:19:11,280 - 01:19:14,280] Always assuming that your vectors are normalized,
+- [01:19:14,280 - 01:19:16,280] that your state B is normalized,
+- [01:19:16,280 - 01:19:19,280] and that the eigenvector A is normalized.
+- [01:19:19,280 - 01:19:21,280] Is that the cosine squared of the phase angle?
+- [01:19:21,280 - 01:19:22,780] Is that the cosine squared
+- [01:19:22,780 - 01:19:24,280] of the phase angle between them?
+- [01:19:24,280 - 01:19:29,280] If these were real vectors in a real vector space,
+- [01:19:29,280 - 01:19:31,280] a two-dimensional vector space,
+- [01:19:31,280 - 01:19:33,280] it would be the cosine of an angle.
+- [01:19:33,280 - 01:19:37,280] Since they're both complex vectors,
+- [01:19:37,280 - 01:19:39,280] they have an angle between them.
+- [01:19:39,280 - 01:19:43,280] Is that equal to the cosine squared of that angle?
+- [01:19:43,280 - 01:19:44,780] What do you mean they have
+- [01:19:44,780 - 01:19:46,280] a cosine or angle between them?
+- [01:19:46,280 - 01:19:49,280] No such concept.
+- [01:19:49,280 - 01:19:51,280] No.
+- [01:19:51,280 - 01:19:55,280] What is true is that if
+- [01:19:55,280 - 01:19:59,280] these are just ordinary three-dimensional vectors,
+- [01:19:59,280 - 01:20:03,280] real vectors in ordinary three dimensions,
+- [01:20:03,280 - 01:20:06,280] that the dot product of two vectors, two unit vectors,
+- [01:20:06,280 - 01:20:08,280] is equal to the cosine of the angle between them.
+- [01:20:08,280 - 01:20:10,280] So it's kind of like the cosine of the angle,
+- [01:20:10,280 - 01:20:11,280] but it's not a real thing.
+- [01:20:11,280 - 01:20:12,280] Not real.
+- [01:20:12,280 - 01:20:13,280] In general, this won't be real.
+- [01:20:13,280 - 01:20:16,280] That's why we multiply it by its complex conjugator.
+- [01:20:16,280 - 01:20:18,280] By the theorem you just proved,
+- [01:20:18,280 - 01:20:26,280] if B is the eigenvector of the different eigenvalues...
+- [01:20:26,280 - 01:20:27,280] Yeah.
+- [01:20:27,280 - 01:20:29,280] Good, good, good, good, good, good, good.
+- [01:20:29,280 - 01:20:30,280] Excellent.
+- [01:20:30,280 - 01:20:31,780] If B happens to be
+- [01:20:31,780 - 01:20:33,280] one of the eigenvectors of M
+- [01:20:33,280 - 01:20:37,280] with a different eigenvalue,
+- [01:20:37,280 - 01:20:40,280] then A and B are orthogonal,
+- [01:20:40,280 - 01:20:42,280] and so what it says is
+- [01:20:42,280 - 01:20:44,280] that if you prepare the system
+- [01:20:44,280 - 01:20:47,280] in one eigenvector corresponding to a different eigenvalue,
+- [01:20:47,280 - 01:20:48,280] then you get the same thing.
+- [01:20:48,280 - 01:20:52,280] Then the probability that you get A is zero.
+- [01:20:52,280 - 01:20:54,280] Good. Perfect.
+- [01:20:54,280 - 01:20:57,280] So if you prepare it in one eigenvector,
+- [01:20:57,280 - 01:20:59,280] and you measure,
+- [01:20:59,280 - 01:21:02,280] the probability that you get a different eigenvalue is zero.
+- [01:21:02,280 - 01:21:03,280] Good.
+- [01:21:03,280 - 01:21:08,280] So that's part of the probabilistic interpretation here.
+- [01:21:08,280 - 01:21:10,780] And all it says is if a
+- [01:21:10,780 - 01:21:13,280] quantity is definitely equal to one thing,
+- [01:21:13,280 - 01:21:15,280] it's surely not equal to the other thing,
+- [01:21:15,280 - 01:21:17,280] but expressed in terms of...
+- [01:21:17,280 - 01:21:21,280] inner products.
+- [01:21:21,280 - 01:21:23,280] Pardon.
+- [01:21:23,280 - 01:21:27,280] If you have a quantity that you at best know
+- [01:21:27,280 - 01:21:28,780] that you have a certain certainty
+- [01:21:28,780 - 01:21:30,280] of having compared to anything else,
+- [01:21:30,280 - 01:21:32,280] say, can you still work with that as well?
+- [01:21:32,280 - 01:21:34,280] A little more complicated, but yes.
+- [01:21:34,280 - 01:21:39,280] But...
+- [01:21:39,280 - 01:21:42,280] Yeah, we're going to do many, many such things,
+- [01:21:42,280 - 01:21:44,280] but let's...
+- [01:21:44,280 - 01:21:46,280] This is the simplest of the things we could do.
+- [01:21:47,280 - 01:21:49,280] And...
+- [01:21:49,280 - 01:21:52,780] For the moment, this is
+- [01:21:52,780 - 01:21:56,280] our basic quantum postulative probabilities.
+- [01:21:56,280 - 01:22:00,280] Let's give an example.
+- [01:22:00,280 - 01:22:02,280] What's the probability...
+- [01:22:02,280 - 01:22:06,280] Let's take the case...
+- [01:22:06,280 - 01:22:10,280] where sigma 3 is equal to 1.
+- [01:22:10,280 - 01:22:12,280] Let's see. Let's say it this way.
+- [01:22:12,280 - 01:22:13,280] We prepare...
+- [01:22:13,280 - 01:22:15,280] We prepare B...
+- [01:22:17,280 - 01:22:20,280] is equal to 1, 0,
+- [01:22:20,280 - 01:22:22,280] which means, by the way,
+- [01:22:22,280 - 01:22:24,280] that sigma 3 is equal to plus 1.
+- [01:22:24,280 - 01:22:26,280] But now we're not going to measure sigma 3.
+- [01:22:26,280 - 01:22:30,280] We're going to measure sigma 1.
+- [01:22:30,280 - 01:22:32,280] We're going to measure sigma 1.
+- [01:22:32,280 - 01:22:34,280] And we're going to ask what's the probability
+- [01:22:34,280 - 01:22:36,280] that when we measure sigma 1
+- [01:22:36,280 - 01:22:39,280] that we get plus 1,
+- [01:22:39,280 - 01:22:41,280] or minus 1, as the case may be.
+- [01:22:41,280 - 01:22:42,280] All right?
+- [01:22:42,280 - 01:22:45,280] So let's ask what's the probability that if we prepare...
+- [01:22:45,280 - 01:22:46,280] Here's the experiment.
+- [01:22:46,280 - 01:22:48,280] We prepare the system with the spin up
+- [01:22:48,280 - 01:22:52,280] by putting it in a big magnetic field pointing upward.
+- [01:22:52,280 - 01:22:55,280] And then we measure sigma 1,
+- [01:22:55,280 - 01:22:58,280] which is the component of the spin along the x-axis.
+- [01:22:58,280 - 01:23:00,280] What's the probability that we get plus 1?
+- [01:23:00,280 - 01:23:02,280] What's the probability that we get minus 1?
+- [01:23:02,280 - 01:23:05,280] You can guess, but we'll work it out.
+- [01:23:05,280 - 01:23:08,280] All right. So what is A?
+- [01:23:08,280 - 01:23:12,280] A is an eigenvector of sigma 1
+- [01:23:12,280 - 01:23:15,280] with eigenvalue, let's say, plus 1.
+- [01:23:15,280 - 01:23:21,280] So A is equal to 1 over root 2,
+- [01:23:21,280 - 01:23:25,280] 1 over root 2.
+- [01:23:25,280 - 01:23:28,280] What's the inner product between these?
+- [01:23:28,280 - 01:23:31,280] Quick, quick, quick, quick.
+- [01:23:31,280 - 01:23:34,280] 1 over square root of 2, right?
+- [01:23:34,280 - 01:23:35,780] 1 over square root of
+- [01:23:35,780 - 01:23:37,280] 2. What's the square of it?
+- [01:23:37,280 - 01:23:39,280] 1 half.
+- [01:23:39,280 - 01:23:43,280] So AB
+- [01:23:43,280 - 01:23:46,280] is 1 over square root of 2,
+- [01:23:46,280 - 01:23:48,280] and times its complex conjugate,
+- [01:23:48,280 - 01:23:50,280] that's usually written this way,
+- [01:23:50,280 - 01:23:51,280] times its complex conjugate,
+- [01:23:51,280 - 01:23:53,280] its absolute value squared,
+- [01:23:53,280 - 01:23:56,280] which is the same as multiplied by its complex conjugate,
+- [01:23:56,280 - 01:23:59,280] is 1 half.
+- [01:23:59,280 - 01:24:01,780] So what this tells us is if
+- [01:24:01,780 - 01:24:04,280] we prepare an electron in the upstate,
+- [01:24:04,280 - 01:24:07,280] and we measure the x component of spin,
+- [01:24:07,280 - 01:24:11,280] we have a probability 1 half for getting plus,
+- [01:24:11,280 - 01:24:13,780] and it will also be true that we
+- [01:24:13,780 - 01:24:16,280] will have probability 1 half for getting minus.
+- [01:24:16,280 - 01:24:19,780] To see that, what's the eigenvector that's
+- [01:24:19,780 - 01:24:23,280] associated with minus 1 for sigma 1?
+- [01:24:23,280 - 01:24:25,280] We put a minus in here.
+- [01:24:25,280 - 01:24:27,280] It doesn't change the answer.
+- [01:24:27,280 - 01:24:30,280] Still 1 half.
+- [01:24:30,280 - 01:24:32,280] Okay, so there's an example,
+- [01:24:32,280 - 01:24:34,280] and this is a characteristic example.
+- [01:24:34,280 - 01:24:35,280] You prepare a system.
+- [01:24:35,280 - 01:24:36,780] In this case, the system is
+- [01:24:36,780 - 01:24:38,280] prepared with a spin vertically up,
+- [01:24:38,280 - 01:24:40,280] and it's measured in the horizontal direction.
+- [01:24:41,280 - 01:24:42,280] Let's do the opposite.
+- [01:24:42,280 - 01:24:43,280] We're going to get the same answer.
+- [01:24:43,280 - 01:24:46,280] Oh, let's, yeah, let's do, let's do,
+- [01:24:46,280 - 01:24:48,280] we start B now.
+- [01:24:48,280 - 01:24:53,280] This time we first prepare the electron horizontally,
+- [01:24:53,280 - 01:24:57,280] and we measure the vertical component.
+- [01:24:57,280 - 01:25:00,280] It's going to be the same in a product.
+- [01:25:00,280 - 01:25:03,280] The horizontal, this time B,
+- [01:25:03,280 - 01:25:07,280] just all we've done is interchange B and A.
+- [01:25:07,280 - 01:25:09,280] I forgot which was which now.
+- [01:25:09,280 - 01:25:11,280] B and A.
+- [01:25:11,280 - 01:25:16,280] We've prepared the system with its spin pointing,
+- [01:25:16,280 - 01:25:19,280] with its X component positive,
+- [01:25:19,280 - 01:25:22,280] and we measured the Z component.
+- [01:25:22,280 - 01:25:25,280] It's just exactly the same thing, 1 half.
+- [01:25:25,280 - 01:25:28,280] Let's do a more complicated case.
+- [01:25:28,280 - 01:25:32,280] I've told you what the eigenvectors of sigma 2 are,
+- [01:25:32,280 - 01:25:36,280] so let's ask the most complicated question we can ask.
+- [01:25:36,280 - 01:25:39,280] What's the probability
+- [01:25:41,280 - 01:25:48,280] that if we prepare the state
+- [01:25:48,280 - 01:25:52,280] with sigma 1 equal positive 1,
+- [01:25:52,280 - 01:25:54,780] that means B is equal to
+- [01:25:54,780 - 01:25:57,280] 1 over square root of 2,
+- [01:25:57,280 - 01:26:00,280] 1 over square root of 2,
+- [01:26:00,280 - 01:26:05,280] and this time we measure sigma 2,
+- [01:26:05,280 - 01:26:08,280] not sigma 3, but sigma 2.
+- [01:26:08,280 - 01:26:10,280] So this time B is one of the two eigenvectors,
+- [01:26:10,280 - 01:26:14,280] is one of the two eigenvectors of sigma 2.
+- [01:26:14,280 - 01:26:16,280] Let's take this one.
+- [01:26:16,280 - 01:26:20,280] 1 over square root of 2,
+- [01:26:20,280 - 01:26:25,280] I over square root of 2.
+- [01:26:25,280 - 01:26:27,280] Sorry, this is A now.
+- [01:26:27,280 - 01:26:30,280] This is A.
+- [01:26:30,280 - 01:26:33,280] The eigenvector of sigma 2.
+- [01:26:33,280 - 01:26:35,280] So we start with the
+- [01:26:35,280 - 01:26:37,280] spin pointing along the X axis,
+- [01:26:37,280 - 01:26:39,280] and we measure it along the Y axis.
+- [01:26:40,280 - 01:26:44,280] We start with it pointing along the X axis.
+- [01:26:44,280 - 01:26:47,280] That's an eigenvector of sigma 1,
+- [01:26:47,280 - 01:26:48,280] or along the 1 axis.
+- [01:26:48,280 - 01:26:51,280] And now we measure it along the 2 axis.
+- [01:26:51,280 - 01:26:54,280] Okay, can somebody compute the inner product of these two?
+- [01:26:54,280 - 01:26:56,280] I think I can.
+- [01:26:56,280 - 01:26:59,280] The inner product of these two,
+- [01:26:59,280 - 01:27:01,280] we first of all have to complex conjugate,
+- [01:27:01,280 - 01:27:04,280] so don't forget the complex conjugate.
+- [01:27:04,280 - 01:27:06,280] But it's 1 over the square root of 2
+- [01:27:06,280 - 01:27:08,280] times 1 over square root of 2 is 1 half,
+- [01:27:08,280 - 01:27:12,280] and then plus,
+- [01:27:12,280 - 01:27:14,280] but we have to complex conjugate,
+- [01:27:14,280 - 01:27:19,280] so that means minus I over 2.
+- [01:27:19,280 - 01:27:21,280] 1 over square root of 2 times 1
+- [01:27:21,280 - 01:27:23,280] over square root of 2 is 1 half,
+- [01:27:23,280 - 01:27:24,280] with an I.
+- [01:27:24,280 - 01:27:30,280] This is the inner product of A with B.
+- [01:27:30,280 - 01:27:31,780] I don't know if it's A with B
+- [01:27:31,780 - 01:27:33,280] or B with A, but it doesn't matter.
+- [01:27:33,280 - 01:27:34,280] Okay.
+- [01:27:34,280 - 01:27:36,280] What's the complex conjugate of this with itself?
+- [01:27:36,280 - 01:27:37,280] I don't know.
+- [01:27:38,280 - 01:27:39,280] Let's work it out.
+- [01:27:39,280 - 01:27:46,280] We have to multiply it by
+- [01:27:46,280 - 01:27:53,280] 1 over 2 plus I over 2.
+- [01:27:53,280 - 01:27:54,280] One-half.
+- [01:27:54,280 - 01:27:55,280] Quick answer?
+- [01:27:55,280 - 01:27:56,280] One.
+- [01:27:56,280 - 01:27:57,280] Not one.
+- [01:27:57,280 - 01:27:58,280] What was I?
+- [01:27:58,280 - 01:27:59,280] Mm-hmm.
+- [01:27:59,280 - 01:28:00,280] Okay.
+- [01:28:00,280 - 01:28:02,280] The imaginary parts cancel.
+- [01:28:02,280 - 01:28:03,280] We have a 1 half times
+- [01:28:03,280 - 01:28:04,280] a 1 half with an I,
+- [01:28:04,280 - 01:28:06,280] and then we have a minus 1 half
+- [01:28:06,280 - 01:28:08,280] times a 1 half with a minus I.
+- [01:28:08,280 - 01:28:11,280] So the imaginary parts cancel.
+- [01:28:11,280 - 01:28:14,280] The real parts are 1 half times
+- [01:28:14,280 - 01:28:17,280] 1 half is 1 quarter plus 1 quarter.
+- [01:28:17,280 - 01:28:18,280] 1 half.
+- [01:28:18,280 - 01:28:19,280] Okay.
+- [01:28:19,280 - 01:28:21,280] So we see if we,
+- [01:28:21,280 - 01:28:24,780] the way to say this now is if we line
+- [01:28:24,780 - 01:28:28,280] up the spin in any direction by a strong magnetic field,
+- [01:28:28,280 - 01:28:31,280] and then we measure the spin in a perpendicular direction,
+- [01:28:31,280 - 01:28:36,280] we have a half, in fact, in any perpendicular direction,
+- [01:28:36,280 - 01:28:38,780] we have a probability of a half that it's
+- [01:28:38,780 - 01:28:41,280] this way and a half that it's this way.
+- [01:28:41,280 - 01:28:42,280] Okay.
+- [01:28:42,280 - 01:28:45,280] So any polariz- it's called the spin polarization.
+- [01:28:45,280 - 01:28:48,280] Any spin state, if we start it out with
+- [01:28:48,280 - 01:28:51,280] a strong magnetic field and freeze it into some direction,
+- [01:28:51,280 - 01:28:53,780] if we then remove the magnetic field
+- [01:28:53,780 - 01:28:56,280] and measure an orthogonal component to spin,
+- [01:28:56,280 - 01:29:00,280] it will have equal probability of being up and down.
+- [01:29:00,280 - 01:29:02,780] What about the components of
+- [01:29:02,780 - 01:29:05,280] spin in some arbitrary direction?
+- [01:29:05,280 - 01:29:13,280] Let's discuss the components of spin along some other axis.
+- [01:29:13,280 - 01:29:15,780] Are we- maybe it's a
+- [01:29:15,780 - 01:29:18,280] good time to stop now and-
+- [01:29:18,280 - 01:29:21,280] Well, let's do it.
+- [01:29:21,280 - 01:29:24,280] And I promise to do this again.
+- [01:29:24,280 - 01:29:25,280] Yeah.
+- [01:29:25,280 - 01:29:29,280] Regarding our phago in this case versus classical,
+- [01:29:29,280 - 01:29:31,780] if you have two vectors that
+- [01:29:31,780 - 01:29:34,280] are 90 degrees apart, you would say-
+- [01:29:34,280 - 01:29:35,280] Are we talking about vectors?
+- [01:29:35,280 - 01:29:36,280] Or pointers?
+- [01:29:36,280 - 01:29:39,280] Pointers that are 90 degrees apart,
+- [01:29:39,280 - 01:29:42,280] we often say this, are phago.
+- [01:29:42,280 - 01:29:45,280] And the projection of one and the other equals zero.
+- [01:29:45,280 - 01:29:48,280] Yeah, yeah, yeah, okay, good, good, good, good, good.
+- [01:29:48,280 - 01:29:52,280] Okay, so let's not- so, right, so
+- [01:29:52,280 - 01:29:56,280] we have to distinguish vectors from pointers.
+- [01:29:56,280 - 01:29:57,280] Right.
+- [01:29:57,280 - 01:30:00,280] So here we have a
+- [01:30:00,280 - 01:30:03,280] situation where we have a pointer
+- [01:30:03,280 - 01:30:05,280] which has been forced to point.
+- [01:30:05,280 - 01:30:06,780] So we have a pointer which has
+- [01:30:06,780 - 01:30:08,280] been forced to point in some direction,
+- [01:30:08,280 - 01:30:11,280] and we measure the pointiness in a-
+- [01:30:11,280 - 01:30:14,280] what's called perpendicular direction.
+- [01:30:14,280 - 01:30:17,280] All right, let's not- all right, good.
+- [01:30:17,280 - 01:30:20,280] Or let's just say- yeah, okay, good, good.
+- [01:30:20,280 - 01:30:23,280] Or better yet, let's look at the eigenvector which
+- [01:30:23,280 - 01:30:26,280] corresponds to the pointiness plus one in the x direction
+- [01:30:26,280 - 01:30:29,280] and compare it with the eigenvector that
+- [01:30:29,280 - 01:30:32,280] corresponds with the pointiness in another direction.
+- [01:30:32,280 - 01:30:34,280] They're not orthogonal eigenvectors.
+- [01:30:34,280 - 01:30:39,280] They're not orthogonal vectors in the- in this sense.
+- [01:30:39,280 - 01:30:41,280] Yeah, yeah, right.
+- [01:30:41,280 - 01:30:43,280] Comes out to one half instead of zero.
+- [01:30:43,280 - 01:30:45,280] Right, good.
+- [01:30:45,280 - 01:30:47,780] What is the thing which has
+- [01:30:47,780 - 01:30:50,280] zero probability of pointing up like this?
+- [01:30:50,280 - 01:30:52,280] Yeah, the one that's pointing down.
+- [01:30:52,280 - 01:30:55,280] The one that's pointing down in this
+- [01:30:55,280 - 01:30:58,280] sense is orthogonal to the one pointing up.
+- [01:30:58,280 - 01:31:00,280] So we have to- so let's use
+- [01:31:00,280 - 01:31:02,280] the word perpendicular to mean ordinary space.
+- [01:31:02,280 - 01:31:04,280] And orthogonal- okay.
+- [01:31:04,280 - 01:31:06,280] This is our vocabulary.
+- [01:31:06,280 - 01:31:09,280] Pointers instead of vectors.
+- [01:31:09,280 - 01:31:11,280] Vectors mean states.
+- [01:31:11,280 - 01:31:13,280] Pointers mean pointers.
+- [01:31:13,280 - 01:31:16,780] Orthogonality means states being orthogonal, being
+- [01:31:16,780 - 01:31:20,280] distinctly different from each other, measurably different.
+- [01:31:20,280 - 01:31:22,280] And perpendicular means perpendicular at
+- [01:31:22,280 - 01:31:24,280] 90 degrees in ordinary space.
+- [01:31:24,280 - 01:31:25,280] Okay, good.
+- [01:31:25,280 - 01:31:29,280] Can you say independent instead of orthogonal?
+- [01:31:29,280 - 01:31:32,280] Independent means something a little different.
+- [01:31:32,280 - 01:31:35,280] Independent doesn't mean perpendicular.
+- [01:31:35,280 - 01:31:36,280] So let's stick with the word-
+- [01:31:36,280 - 01:31:39,280] Not perpendicular instead of orthogonal.
+- [01:31:39,280 - 01:31:40,280] No.
+- [01:31:40,280 - 01:31:43,280] Independent simply means it's not
+- [01:31:43,280 - 01:31:46,280] pointing in the same direction.
+- [01:31:46,280 - 01:31:51,780] And the set of vectors- there's a concept of
+- [01:31:51,780 - 01:31:57,280] independence, linear independence, which is different than orthogonal, mutual orthogonality.
+- [01:31:57,280 - 01:32:01,280] So independence and orthogonality are quite different.
+- [01:32:01,280 - 01:32:04,280] Or linear independence, anyway.
+- [01:32:06,280 - 01:32:07,280] Okay.
+- [01:32:07,280 - 01:32:10,280] Now, let's come to classical pointers.
+- [01:32:10,280 - 01:32:12,280] I'm interested in something new.
+- [01:32:12,280 - 01:32:15,280] I'm interested now in the component
+- [01:32:15,280 - 01:32:18,280] of the pointer along an arbitrary direction.
+- [01:32:18,280 - 01:32:21,280] Along an arbitrary direction in real space.
+- [01:32:21,280 - 01:32:22,280] What direction?
+- [01:32:22,280 - 01:32:23,280] Let's pick a direction.
+- [01:32:23,280 - 01:32:25,280] How do we pick a direction?
+- [01:32:25,280 - 01:32:30,280] We pick a direction by picking a set of components.
+- [01:32:31,280 - 01:32:33,280] Of a unit vector.
+- [01:32:33,280 - 01:32:35,280] We take a unit vector and
+- [01:32:35,280 - 01:32:37,280] pick a set of components in-
+- [01:32:37,280 - 01:32:39,280] Let's call the unit vect-
+- [01:32:39,280 - 01:32:40,280] Sorry.
+- [01:32:40,280 - 01:32:41,280] Unit pointer.
+- [01:32:41,280 - 01:32:43,280] My goodness.
+- [01:32:43,280 - 01:32:45,280] A unit pointer.
+- [01:32:45,280 - 01:32:51,280] We take a unit pointer.
+- [01:32:51,280 - 01:32:55,280] Now, this is in real three-dimensional space.
+- [01:32:55,280 - 01:32:58,280] One.
+- [01:32:58,280 - 01:33:00,280] Two.
+- [01:33:00,280 - 01:33:01,280] Three.
+- [01:33:01,280 - 01:33:03,280] One is the same as x.
+- [01:33:03,280 - 01:33:05,280] Two is the same as y.
+- [01:33:05,280 - 01:33:07,280] Three is the same as z.
+- [01:33:07,280 - 01:33:08,280] Same thing.
+- [01:33:08,280 - 01:33:09,280] x, y, z.
+- [01:33:09,280 - 01:33:12,280] And now I pick some arbitrary pointer.
+- [01:33:12,280 - 01:33:14,280] So some arbitrary pointer-
+- [01:33:22,280 - 01:33:26,280] Is pointing along that direction.
+- [01:33:26,280 - 01:33:28,280] And let's take it to be a unit vector.
+- [01:33:28,280 - 01:33:31,280] Which means it's one unit in length.
+- [01:33:31,280 - 01:33:34,280] It's described by a set of three components.
+- [01:33:34,280 - 01:33:36,280] The sums of the squares of the
+- [01:33:36,280 - 01:33:38,280] components have to add up to one.
+- [01:33:38,280 - 01:33:40,280] But here are the three components.
+- [01:33:40,280 - 01:33:42,280] Let's call this vector n.
+- [01:33:42,280 - 01:33:44,280] And a unit vector is usually described by
+- [01:33:44,280 - 01:33:46,280] putting a little hat over it, like that.
+- [01:33:46,280 - 01:33:49,280] n hat means a unit vector.
+- [01:33:49,280 - 01:33:52,280] This is a standard notation for a unit vector.
+- [01:33:52,280 - 01:33:53,280] A unit pointer.
+- [01:33:53,280 - 01:33:54,280] My goodness.
+- [01:33:54,280 - 01:33:55,280] Please, correct me.
+- [01:33:55,280 - 01:33:56,280] Don't let me do that.
+- [01:33:56,280 - 01:33:57,280] A unit pointer.
+- [01:33:57,280 - 01:34:00,280] Is indicated by a little hat.
+- [01:34:00,280 - 01:34:02,280] And it has a set of components.
+- [01:34:02,280 - 01:34:06,280] The components are nx, ny, and nz.
+- [01:34:06,280 - 01:34:09,280] Or n1, n2, and n3.
+- [01:34:11,280 - 01:34:13,280] Those are the components.
+- [01:34:13,280 - 01:34:16,280] And they're basically this component,
+- [01:34:16,280 - 01:34:19,280] this component, and this component.
+- [01:34:19,280 - 01:34:21,280] You add them up.
+- [01:34:21,280 - 01:34:23,280] And you get the pointer
+- [01:34:23,280 - 01:34:25,280] that's pointing in some arbitrary direction.
+- [01:34:25,280 - 01:34:26,280] Okay?
+- [01:34:27,280 - 01:34:31,280] These are the components of the pointer.
+- [01:34:31,280 - 01:34:35,280] Now what about the component of
+- [01:34:35,280 - 01:34:39,280] the spin along the direction n?
+- [01:34:39,280 - 01:34:41,280] How do we calculate that?
+- [01:34:41,280 - 01:34:48,280] That, the component of the spin, or the component of the spin
+- [01:34:48,280 - 01:34:55,280] pointer, along the arbitrary direction n, is given, let's call it the spin.
+- [01:34:55,280 - 01:34:57,280] Now we're thinking classically.
+- [01:34:57,280 - 01:35:00,280] We're thinking about a classical
+- [01:35:00,280 - 01:35:03,280] magnetic moment, a classical spin.
+- [01:35:03,280 - 01:35:08,280] The dot product, sigma dot n, is the
+- [01:35:08,280 - 01:35:13,280] component of sigma along the direction of n.
+- [01:35:13,280 - 01:35:15,280] That's what a dot product is.
+- [01:35:15,280 - 01:35:17,780] It's the component of one vector
+- [01:35:17,780 - 01:35:20,280] along the axis of another vector.
+- [01:35:20,280 - 01:35:23,280] Sorry, pointer.
+- [01:35:23,280 - 01:35:25,280] What is sigma dot n?
+- [01:35:25,280 - 01:35:33,780] It's the first component, or the x component, called sigma 1,
+- [01:35:33,780 - 01:35:42,280] times n1, plus sigma 2, times n2, plus sigma 3, times n3.
+- [01:35:42,280 - 01:35:46,780] Well this gives us an interesting candidate
+- [01:35:46,780 - 01:35:51,280] in the quantum mechanics for the operator,
+- [01:35:51,280 - 01:35:57,280] which is the component of spin along a direction n.
+- [01:35:57,280 - 01:36:01,780] Namely, we take the operator sigma 1, multiply it by
+- [01:36:01,780 - 01:36:06,280] n1, add to it the operator sigma 2 times n2,
+- [01:36:06,280 - 01:36:09,280] add to it the operator sigma
+- [01:36:09,280 - 01:36:12,280] 3, and multiply it by n3.
+- [01:36:12,280 - 01:36:15,780] That's a candidate, and it is, it is the correct candidate,
+- [01:36:15,780 - 01:36:19,280] which we can call sigma dot n, but it's an operator.
+- [01:36:19,280 - 01:36:20,280] Why is it an operator?
+- [01:36:20,280 - 01:36:22,280] The n's are numbers.
+- [01:36:22,280 - 01:36:26,280] They're just numerical numbers that multiply here.
+- [01:36:26,280 - 01:36:29,280] Sigmas are matrices.
+- [01:36:29,280 - 01:36:32,280] If we multiply a matrix by a number, we
+- [01:36:32,280 - 01:36:35,280] just multiply all the entries by the same number,
+- [01:36:35,280 - 01:36:37,280] and then we add them up.
+- [01:36:37,280 - 01:36:39,280] We can write this down, actually.
+- [01:36:39,280 - 01:36:41,280] Given 3, n1, n2, and
+- [01:36:41,280 - 01:36:43,280] n3, we can add them up.
+- [01:36:43,280 - 01:36:45,280] Let's do it.
+- [01:36:45,280 - 01:36:46,280] n1 times sigma 1.
+- [01:36:46,280 - 01:36:47,280] What's sigma 1?
+- [01:36:47,280 - 01:36:48,280] Sigma 1 is 1, 1.
+- [01:36:48,280 - 01:36:50,780] And if I multiply it
+- [01:36:50,780 - 01:36:53,280] by n1, it looks like this.
+- [01:36:53,280 - 01:36:56,280] That's sigma 1 times n1.
+- [01:36:56,280 - 01:36:58,280] What about sigma 2 times n2?
+- [01:36:58,280 - 01:37:02,780] Well, sigma 2 is minus i, i,
+- [01:37:02,780 - 01:37:07,280] and now we multiply it by n2.
+- [01:37:07,280 - 01:37:10,280] Sigma 3 times n3.
+- [01:37:18,280 - 01:37:21,780] We take n3, which is 1 minus
+- [01:37:21,780 - 01:37:25,280] 1, and we multiply it by n3.
+- [01:37:25,280 - 01:37:28,280] So that's just n3, n3.
+- [01:37:30,280 - 01:37:35,280] Now we add them up, and what do we get?
+- [01:37:35,280 - 01:37:39,280] On the diagonal, these have no diagonal elements.
+- [01:37:39,280 - 01:37:41,280] This has diagonal.
+- [01:37:41,280 - 01:37:46,280] So we get n3, n3, minus n3.
+- [01:37:46,280 - 01:37:53,780] We get n1 minus i,
+- [01:37:53,780 - 01:38:01,280] n2, and n1 plus i, n2.
+- [01:38:01,280 - 01:38:05,280] These are three components, n1, n2, and n3.
+- [01:38:05,280 - 01:38:07,780] The sums of the squares should be
+- [01:38:07,780 - 01:38:10,280] equal to 1 because it's a unit vector.
+- [01:38:10,280 - 01:38:13,280] And here is the operator that
+- [01:38:13,280 - 01:38:16,280] corresponds to measuring the components of spin
+- [01:38:16,280 - 01:38:19,280] along the direction n.
+- [01:38:19,280 - 01:38:20,280] So what's the experiment?
+- [01:38:20,280 - 01:38:22,780] The experiment is we take an electron,
+- [01:38:22,780 - 01:38:25,280] and we put it in the magnetic field
+- [01:38:25,280 - 01:38:28,280] pointing along the n direction, and we
+- [01:38:28,280 - 01:38:31,280] see what we get, up or down.
+- [01:38:31,280 - 01:38:34,280] This is the operator that corresponds to that.
+- [01:38:34,280 - 01:38:40,280] n3 on the diagonal, minus n3, n1 minus i, n2.
+- [01:38:40,280 - 01:38:41,280] Is this hermitian?
+- [01:38:41,280 - 01:38:43,280] Yes, it's hermitian.
+- [01:38:43,280 - 01:38:45,280] Real, real.
+- [01:38:45,280 - 01:38:46,280] And this one's the complex complex.
+- [01:38:46,280 - 01:38:48,280] It's conjugate of this.
+- [01:38:48,280 - 01:38:53,280] So it's hermitian.
+- [01:38:53,280 - 01:38:58,280] Is it square equal to 1?
+- [01:38:58,280 - 01:39:00,280] What's that?
+- [01:39:00,280 - 01:39:01,280] Well, n is a unit vector.
+- [01:39:01,280 - 01:39:05,280] n is a unit vector.
+- [01:39:05,280 - 01:39:06,780] Well, I don't expect you to
+- [01:39:06,780 - 01:39:08,280] be able to see it offhand.
+- [01:39:08,280 - 01:39:11,780] So what I'm going to do is
+- [01:39:11,780 - 01:39:15,280] I'm going to show you an important property
+- [01:39:15,280 - 01:39:18,280] and let you check it yourself.
+- [01:39:18,280 - 01:39:27,280] This is an important property of these sigma matrices,
+- [01:39:27,280 - 01:39:31,280] one that you can check, but I'll derive its importance
+- [01:39:31,280 - 01:39:36,280] and then allow you to check it by yourself.
+- [01:39:36,280 - 01:39:39,280] Let's take this sigma 1 plus sigma 2,
+- [01:39:39,280 - 01:39:41,280] sigma 1 n1 plus sigma
+- [01:39:41,280 - 01:39:43,280] 2 n2 plus sigma 3 n3.
+- [01:39:43,280 - 01:39:44,280] Not in this form.
+- [01:39:44,280 - 01:39:46,280] Leave it in this form and square it.
+- [01:39:46,280 - 01:39:47,280] What do we get?
+- [01:39:47,280 - 01:39:50,280] Well, let's write it out.
+- [01:39:50,280 - 01:39:53,780] Sigma 1 n1 plus sigma
+- [01:39:53,780 - 01:39:57,280] 2 n2 plus sigma 3 n3
+- [01:39:57,280 - 01:40:01,780] times sigma 1 n1 plus sigma
+- [01:40:01,780 - 01:40:06,280] 2 n2 plus sigma 3 n3.
+- [01:40:06,280 - 01:40:07,280] Let's multiply.
+- [01:40:07,280 - 01:40:09,280] We're going to get a whole slew of terms.
+- [01:40:09,280 - 01:40:10,280] All right?
+- [01:40:10,280 - 01:40:11,280] The first terms,
+- [01:40:11,280 - 01:40:12,280] the first set of terms,
+- [01:40:12,280 - 01:40:14,280] are going to be things like
+- [01:40:14,280 - 01:40:16,280] sigma 1 squared times n1 squared.
+- [01:40:16,280 - 01:40:18,280] When I multiply this out, I'll get sigma...
+- [01:40:18,280 - 01:40:20,280] What's sigma 1 squared?
+- [01:40:22,280 - 01:40:27,280] So from the n1 squared, sigma 1 squared terms,
+- [01:40:27,280 - 01:40:31,280] we'll get n1 squared, right?
+- [01:40:31,280 - 01:40:36,280] What about from the sigma 2 times sigma 2 term?
+- [01:40:36,280 - 01:40:39,280] Plus n2 squared.
+- [01:40:39,280 - 01:40:42,280] What about from the sigma 3 n3 term?
+- [01:40:42,280 - 01:40:46,280] Plus n3 squared.
+- [01:40:46,280 - 01:40:48,280] But what's that?
+- [01:40:48,280 - 01:40:49,280] That's 1.
+- [01:40:49,280 - 01:40:50,280] All right.
+- [01:40:50,280 - 01:40:53,280] Now let's look at the
+- [01:40:53,280 - 01:40:56,280] thing which multiplies n1 times n2.
+- [01:40:56,280 - 01:40:58,780] Here's the thing which is
+- [01:40:58,780 - 01:41:01,280] going to multiply n1 times n2.
+- [01:41:01,280 - 01:41:02,280] n1, n2.
+- [01:41:02,280 - 01:41:03,280] And what's it going to contain?
+- [01:41:03,280 - 01:41:07,280] It's going to contain sigma 1, sigma 2.
+- [01:41:07,280 - 01:41:09,280] But then there's another term like that,
+- [01:41:09,280 - 01:41:11,280] which is sigma 2, sigma 1.
+- [01:41:12,280 - 01:41:13,280] All right.
+- [01:41:13,280 - 01:41:14,280] You get one term which
+- [01:41:14,280 - 01:41:15,280] is sigma 1 on the left,
+- [01:41:15,280 - 01:41:17,280] sigma 2 on the right.
+- [01:41:17,280 - 01:41:20,280] And the other term has sigma 2 on the left,
+- [01:41:20,280 - 01:41:22,280] sigma 1 on the right.
+- [01:41:24,280 - 01:41:27,280] Why do I bother writing sigma 1, sigma 2,
+- [01:41:27,280 - 01:41:28,280] and sigma 2 and sigma 1,
+- [01:41:28,280 - 01:41:31,280] instead of just calling them both sigma 1, sigma 2?
+- [01:41:34,280 - 01:41:37,280] Because when you multiply matrices,
+- [01:41:37,280 - 01:41:40,280] the order counts.
+- [01:41:40,280 - 01:41:42,280] The order counts when you multiply them.
+- [01:41:42,280 - 01:41:44,280] When you multiply matrices,
+- [01:41:44,280 - 01:41:48,280] matrices in general have different products
+- [01:41:48,280 - 01:41:51,280] when you multiply them in different orders.
+- [01:41:51,280 - 01:41:55,280] The technical term is that they don't commute.
+- [01:41:58,280 - 01:42:00,280] So it's important that these things all,
+- [01:42:00,280 - 01:42:02,280] when you multiply them by themselves,
+- [01:42:02,280 - 01:42:03,280] they give you one?
+- [01:42:03,280 - 01:42:05,280] The unit matrix?
+- [01:42:05,280 - 01:42:06,280] The identity matrix?
+- [01:42:06,280 - 01:42:07,280] Yeah.
+- [01:42:07,280 - 01:42:09,280] Each of the square of these gives the identity.
+- [01:42:09,280 - 01:42:10,280] I know.
+- [01:42:10,280 - 01:42:11,280] But you just kind of proved that for the,
+- [01:42:11,280 - 01:42:13,280] for the sigma dot n.
+- [01:42:13,280 - 01:42:14,280] We're going to prove that.
+- [01:42:14,280 - 01:42:15,280] All right.
+- [01:42:15,280 - 01:42:16,280] No, no, no.
+- [01:42:16,280 - 01:42:20,280] But then we have n2,
+- [01:42:20,280 - 01:42:24,280] n3 times sigma 2, sigma 3,
+- [01:42:24,280 - 01:42:27,280] plus sigma 3, sigma 2.
+- [01:42:27,280 - 01:42:29,280] And then another term similar,
+- [01:42:29,280 - 01:42:31,280] which is n1 times n3.
+- [01:42:31,280 - 01:42:32,280] All right.
+- [01:42:32,280 - 01:42:36,280] Well, this adds up to 1,
+- [01:42:36,280 - 01:42:38,280] which means the unit matrix.
+- [01:42:38,280 - 01:42:40,280] This is the unit matrix.
+- [01:42:42,280 - 01:42:44,280] What's this doing here?
+- [01:42:44,280 - 01:42:45,280] This is bad.
+- [01:42:45,280 - 01:42:46,280] We don't want that there.
+- [01:42:46,280 - 01:42:48,280] We want the square of the component of the spin
+- [01:42:48,280 - 01:42:49,780] in any direction to be the
+- [01:42:49,780 - 01:42:51,280] same as in every other direction.
+- [01:42:51,280 - 01:42:53,280] There's nothing special about any of these directions.
+- [01:42:53,280 - 01:42:55,280] Well, try it out.
+- [01:42:55,280 - 01:42:57,280] Multiply, let's multiply,
+- [01:42:57,280 - 01:42:59,280] let's multiply sigma,
+- [01:42:59,280 - 01:43:02,280] ah, this you go home and do yourself.
+- [01:43:02,280 - 01:43:06,280] Prove to yourself that sigma 1 times sigma 2
+- [01:43:06,280 - 01:43:07,280] is the opposite,
+- [01:43:07,280 - 01:43:09,280] is the negative of sigma 2 times sigma 1.
+- [01:43:09,280 - 01:43:11,280] Hmm?
+- [01:43:11,280 - 01:43:13,280] No, no, no, no.
+- [01:43:13,280 - 01:43:14,280] They anti-commute.
+- [01:43:14,280 - 01:43:15,280] This is a special property.
+- [01:43:15,280 - 01:43:16,280] They anti-commute,
+- [01:43:16,280 - 01:43:19,280] which is to say that when you change the order,
+- [01:43:19,280 - 01:43:21,280] it changes their sign.
+- [01:43:21,280 - 01:43:22,280] This is something to check.
+- [01:43:22,280 - 01:43:24,280] You sit down and do it numerically.
+- [01:43:24,280 - 01:43:26,280] Sigma 1, sigma 2, plus
+- [01:43:26,280 - 01:43:28,280] sigma 2, sigma 1 is 0.
+- [01:43:28,280 - 01:43:30,280] Sigma 2, sigma 3, plus
+- [01:43:30,280 - 01:43:32,280] sigma 3, sigma 2 is 0.
+- [01:43:32,280 - 01:43:33,280] We have five minutes.
+- [01:43:33,280 - 01:43:34,280] We have three minutes.
+- [01:43:34,280 - 01:43:35,280] Let's do one case.
+- [01:43:35,280 - 01:43:37,280] One case for fun.
+- [01:43:37,280 - 01:43:38,280] Let's see.
+- [01:43:39,280 - 01:43:45,280] Let's do,
+- [01:43:45,280 - 01:43:47,780] I'll avoid imaginary numbers by
+- [01:43:47,780 - 01:43:50,280] doing sigma 1 and sigma 3.
+- [01:43:50,280 - 01:43:53,280] Sigma 1 times sigma 3, what's that?
+- [01:43:53,280 - 01:43:57,780] That's equal to 1, 1, 0,
+- [01:43:57,780 - 01:44:02,280] 0, times 1, 0, 0, minus 1.
+- [01:44:02,280 - 01:44:05,280] And that's equal to, let's see,
+- [01:44:05,280 - 01:44:07,280] this time this is 0,
+- [01:44:07,280 - 01:44:10,280] this time this is minus 1,
+- [01:44:10,280 - 01:44:13,280] this time this is 1,
+- [01:44:13,280 - 01:44:15,280] and this times this is 0.
+- [01:44:15,280 - 01:44:17,280] Did I get that right?
+- [01:44:22,280 - 01:44:23,280] I think I did.
+- [01:44:23,280 - 01:44:24,280] Okay.
+- [01:44:24,280 - 01:44:26,280] Now let's do it the other way.
+- [01:44:26,280 - 01:44:32,280] 1, 0, 0, minus 1, 0, 1, 1, 0.
+- [01:44:32,280 - 01:44:33,280] All right.
+- [01:44:33,280 - 01:44:34,280] In the first element,
+- [01:44:34,280 - 01:44:34,780] 1 times 0 plus 0
+- [01:44:34,780 - 01:44:35,280] times 1, 1, 0, 1, 0.
+- [01:44:35,280 - 01:44:36,280] In the second element,
+- [01:44:36,280 - 01:44:40,280] 1 times 0 plus 0 times 1, that's 0 again.
+- [01:44:40,280 - 01:44:46,280] But now let's go to 1 times 1 is 1.
+- [01:44:46,280 - 01:44:48,280] And now we go down to this corner.
+- [01:44:48,280 - 01:44:52,280] That's 0 times 0 minus 1, 0.
+- [01:44:52,280 - 01:44:56,280] So you notice when you multiply them in opposite order,
+- [01:44:56,280 - 01:44:58,780] you get exactly the same
+- [01:44:58,780 - 01:45:01,280] thing except for a minus sign.
+- [01:45:01,280 - 01:45:03,280] When you add these,
+- [01:45:03,280 - 01:45:06,280] sigma 3 and sigma 3, sigma 1,
+- [01:45:06,280 - 01:45:09,280] add them together, you get 0.
+- [01:45:09,280 - 01:45:11,280] Same is true for sigma 1, sigma 2,
+- [01:45:11,280 - 01:45:14,280] and sigma 2, sigma 3.
+- [01:45:14,280 - 01:45:24,280] So these are 0.
+- [01:45:24,280 - 01:45:25,280] So what have we learned?
+- [01:45:25,280 - 01:45:30,280] We've learned that with this particular choice of matrices,
+- [01:45:30,280 - 01:45:32,280] the square
+- [01:45:32,280 - 01:45:35,280] of any component of sigma along any axis,
+- [01:45:35,280 - 01:45:38,280] any axis whatever, is 1.
+- [01:45:38,280 - 01:45:43,280] That means the eigenvalues of such a matrix
+- [01:45:43,280 - 01:45:46,280] are plus and minus 1.
+- [01:45:46,280 - 01:45:48,280] So any matrix, where did I write it?
+- [01:45:48,280 - 01:45:51,280] I had it written down.
+- [01:45:51,280 - 01:45:53,280] Here it is.
+- [01:45:53,280 - 01:45:57,280] The eigenvalues of any matrix of this form
+- [01:45:57,280 - 01:45:59,280] are plus and minus 1.
+- [01:45:59,280 - 01:46:01,280] This we'll check next time.
+- [01:46:01,280 - 01:46:04,280] So what it says is the possible measurable values
+- [01:46:04,280 - 01:46:06,780] of the spin along any
+- [01:46:06,780 - 01:46:09,280] axis are plus or minus 1.
+- [01:46:09,280 - 01:46:12,280] This is a very weird thing in quantum mechanics.
+- [01:46:12,280 - 01:46:14,280] You can only get plus or minus
+- [01:46:14,280 - 01:46:16,280] 1 if you measure it along any axis.
+- [01:46:16,280 - 01:46:18,280] But then take another axis,
+- [01:46:18,280 - 01:46:20,280] you can also only get plus or minus 1,
+- [01:46:20,280 - 01:46:23,280] plus or minus 1.
+- [01:46:23,280 - 01:46:29,280] It's the probabilities which reflect
+- [01:46:29,280 - 01:46:31,280] whether two ends are close.
+- [01:46:31,280 - 01:46:32,280] We'll come to it next time.
+- [01:46:32,280 - 01:46:34,280] That's enough for this time.
+- [01:46:34,280 - 01:46:36,280] I've probably saturated you.
+- [01:46:36,280 - 01:46:38,280] I've certainly saturated myself.
+- [01:46:38,280 - 01:46:39,280] Yeah.
+- [01:46:39,280 - 01:46:49,280] The preceding program is copyrighted by Stanford University.
+- [01:46:49,280 - 01:46:53,280] Please visit us at stanford.edu.
